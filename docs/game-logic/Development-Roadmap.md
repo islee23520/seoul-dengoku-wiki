@@ -1,5 +1,7 @@
 # 개발 로드맵
 
+![개발 단계와 검증 게이트](../assets/wiki/development-gates.svg)
+
 ## 현재 완료
 
 - Unity 6.7 프로젝트 생성

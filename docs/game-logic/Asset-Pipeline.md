@@ -1,5 +1,7 @@
 # 자산 파이프라인
 
+![검증 가능한 자산 생산 흐름](../assets/wiki/asset-pipeline.svg)
+
 ## 전체 흐름
 
 권리가 확인된 입력 → ComfyUI 워크플로 → TRELLIS 출력 → 원본 보존 → Blender 정리 → Unity 임포트 → 인간 검수 → 승인 자산 승격 순서입니다.
