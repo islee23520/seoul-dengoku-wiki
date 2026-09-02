@@ -1,6 +1,6 @@
 # 인물·세력·생업
 
-![인물 생업 세력 성장 구조](../assets/wiki/people-factions.svg)
+![인물과 파티의 타일 점유 및 4방향 페이싱](../assets/wiki/isometric-grammar.svg)
 
 ## 인물
 

@@ -1,6 +1,6 @@
 # 이동과 조우
 
-![4방향 이동과 조우 결정 구조](../assets/wiki/travel-encounters.svg)
+![4방향 이동 타일 점유와 조우 시야 구조](../assets/wiki/isometric-grammar.svg)
 
 ## 4방향 행동
 

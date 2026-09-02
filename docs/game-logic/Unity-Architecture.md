@@ -1,6 +1,6 @@
 # Unity 아키텍처
 
-![Unity와 엔진 독립 규칙 계층](../assets/wiki/unity-architecture.svg)
+![Unity 표현 계층이 구현하는 고정 아이소메트릭 규격](../assets/wiki/isometric-grammar.svg)
 
 ## 기준선
 

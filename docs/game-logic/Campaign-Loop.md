@@ -1,6 +1,6 @@
 # 캠페인 루프
 
-![캠페인 순환](../assets/wiki/campaign-loop.svg)
+![캠페인 전 단계가 공유하는 고정 아이소메트릭 문법](../assets/wiki/isometric-grammar.svg)
 
 ## 여섯 단계
 

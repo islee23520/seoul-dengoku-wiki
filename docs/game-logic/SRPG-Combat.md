@@ -1,6 +1,6 @@
 # SRPG 전투
 
-![고정 아이소메트릭 4방향 전투 문법](../assets/wiki/isometric-combat.svg)
+![고정 아이소메트릭 전투의 점유 페이싱 시야 구조](../assets/wiki/isometric-grammar.svg)
 
 ## 탐색과 같은 문법
 

@@ -1,6 +1,6 @@
 # 캐릭터 미술 방향
 
-![캐릭터 구성 규격](../assets/wiki/character-construction.svg)
+![고정 아이소메트릭 캐릭터 점유와 4방향 페이싱](../assets/wiki/isometric-grammar.svg)
 
 ## 실루엣
 

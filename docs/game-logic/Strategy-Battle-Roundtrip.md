@@ -1,6 +1,6 @@
 # 전략·전투 왕복
 
-![전략과 전투의 상태 왕복](../assets/wiki/strategy-battle.svg)
+![전략과 전투가 공유하는 고정 아이소메트릭 격자 문법](../assets/wiki/isometric-grammar.svg)
 
 ## 단일 영속 상태
 

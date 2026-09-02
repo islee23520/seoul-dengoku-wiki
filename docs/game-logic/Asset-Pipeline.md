@@ -1,6 +1,6 @@
 # 자산 파이프라인
 
-![검증 가능한 자산 생산 흐름](../assets/wiki/asset-pipeline.svg)
+![생산 자산이 맞춰야 하는 고정 아이소메트릭 규격](../assets/wiki/isometric-grammar.svg)
 
 ## 전체 흐름
 

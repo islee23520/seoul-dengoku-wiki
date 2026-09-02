@@ -1,6 +1,6 @@
 # 저장과 결정론
 
-![결정론적 사건 원장과 안전한 저장](../assets/wiki/save-determinism.svg)
+![저장과 재현에서 유지되는 타일 점유 페이싱 시야 상태](../assets/wiki/isometric-grammar.svg)
 
 ## 재현 가능한 세계
 

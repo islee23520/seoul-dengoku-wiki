@@ -1,6 +1,6 @@
 # 개발 로드맵
 
-![개발 단계와 검증 게이트](../assets/wiki/development-gates.svg)
+![모든 개발 단계가 보존해야 하는 고정 아이소메트릭 문법](../assets/wiki/isometric-grammar.svg)
 
 ## 현재 완료
 
