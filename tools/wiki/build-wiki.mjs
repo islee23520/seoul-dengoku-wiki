@@ -7,7 +7,7 @@ const bannedPublicTerms = ['Kenshi', 'Underrail', 'Gunner'];
 export async function buildWiki({ sourceDir, assetDir, outputDir, commitSha }) {
   if (!commitSha) throw new Error('commitSha is required');
 
-  await rm(outputDir, { recursive: true, force: true });
+  await clearOutputDirectory(outputDir);
   await mkdir(join(outputDir, 'assets'), { recursive: true });
 
   const pages = (await readdir(sourceDir)).filter((name) => name.endsWith('.md')).sort();
@@ -15,7 +15,7 @@ export async function buildWiki({ sourceDir, assetDir, outputDir, commitSha }) {
     const source = await readFile(join(sourceDir, page), 'utf8');
     assertPublicTerms(source, page);
 
-    const transformed = rewriteAssetLinks(source);
+    const transformed = normalizeMarkdown(rewriteAssetLinks(source));
     const output = page === '_Sidebar.md'
       ? transformed
       : `${generationBanner(page, commitSha)}\n\n${transformed}`;
@@ -23,6 +23,14 @@ export async function buildWiki({ sourceDir, assetDir, outputDir, commitSha }) {
   }
 
   await cp(assetDir, join(outputDir, 'assets'), { recursive: true });
+}
+
+async function clearOutputDirectory(outputDir) {
+  await mkdir(outputDir, { recursive: true });
+  const entries = await readdir(outputDir);
+  await Promise.all(entries
+    .filter((entry) => entry !== '.git')
+    .map((entry) => rm(join(outputDir, entry), { recursive: true, force: true })));
 }
 
 function generationBanner(page, commitSha) {
@@ -35,6 +43,10 @@ function generationBanner(page, commitSha) {
 
 function rewriteAssetLinks(markdown) {
   return markdown.replaceAll('../assets/wiki/', 'assets/');
+}
+
+function normalizeMarkdown(markdown) {
+  return `${markdown.trimEnd()}\n`;
 }
 
 function assertPublicTerms(markdown, page) {

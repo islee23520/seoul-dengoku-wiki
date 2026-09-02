@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { mkdtemp, mkdir, readFile, writeFile } from 'node:fs/promises';
+import { access, mkdtemp, mkdir, readFile, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 
@@ -11,6 +11,9 @@ const assets = join(root, 'assets');
 const output = join(root, 'wiki');
 await mkdir(source, { recursive: true });
 await mkdir(assets, { recursive: true });
+await mkdir(join(output, '.git'), { recursive: true });
+await writeFile(join(output, '.git', 'HEAD'), 'ref: refs/heads/master\n');
+await writeFile(join(output, 'stale.md'), 'stale');
 await writeFile(join(source, 'Home.md'), '# 홈\n\n![그림](../assets/wiki/figure.svg)\n');
 await writeFile(join(source, '_Sidebar.md'), '* [홈](Home)\n');
 await writeFile(join(assets, 'figure.svg'), '<svg xmlns="http://www.w3.org/2000/svg"/>');
@@ -20,13 +23,18 @@ await buildWiki({ sourceDir: source, assetDir: assets, outputDir: output, commit
 const home = await readFile(join(output, 'Home.md'), 'utf8');
 const sidebar = await readFile(join(output, '_Sidebar.md'), 'utf8');
 const figure = await readFile(join(output, 'assets', 'figure.svg'), 'utf8');
+const gitHead = await readFile(join(output, '.git', 'HEAD'), 'utf8');
 
 assert.match(home, /자동 생성 문서/);
 assert.match(home, /원본: `docs\/game-logic\/Home\.md`/);
 assert.match(home, /커밋: `abc1234`/);
 assert.match(home, /\]\(assets\/figure\.svg\)/);
+assert.equal(home.endsWith('\n\n'), false);
 assert.doesNotMatch(sidebar, /자동 생성 문서/);
+assert.equal(sidebar.endsWith('\n\n'), false);
 assert.match(figure, /<svg/);
+assert.equal(gitHead, 'ref: refs/heads/master\n');
+await assert.rejects(access(join(output, 'stale.md')));
 
 for (const banned of ['Kenshi', 'Underrail', 'Gunner']) {
   assert.equal(home.includes(banned), false);
