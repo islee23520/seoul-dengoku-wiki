@@ -1,0 +1,42 @@
+# macOS
+.DS_Store
+
+# Local credentials
+.env
+.env.*
+!.env.example
+
+# Unity generated state
+Game/[Ll]ibrary/
+Game/[Tt]emp/
+Game/[Oo]bj/
+Game/[Ll]ogs/
+Game/[Uu]ser[Ss]ettings/
+Game/[Mm]emoryCaptures/
+Game/[Rr]ecordings/
+Game/[Bb]uild/
+Game/[Bb]uilds/
+
+# IDE
+.idea/
+.vscode/
+**/.vscode/
+*.csproj
+*.sln
+*.slnx
+*.user
+
+# Local execution evidence
+.omo/evidence/**/*.log
+.omo/evidence/**/*.xml
+
+# Track the approved execution plan only; keep other OMO runtime state local.
+!.omo/
+.omo/*
+!.omo/plans/
+.omo/plans/*
+!.omo/plans/seoul-grand-strategy-srpg.md
+
+# Local evidence/runtime state
+.omo/evidence/**/tmp/
+*.log

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#F6F4EF"/><text x="640" y="65" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="700" fill="#172A46">잔선: 서울 핵심 게임 구조</text>
+  <g font-family="sans-serif" font-size="24" text-anchor="middle">
+    <rect x="70" y="280" width="210" height="110" rx="18" fill="#2E8C87"/><text x="175" y="325" fill="white">인물과 파티</text><text x="175" y="360" fill="white">생업 · 관계 · 직위</text>
+    <rect x="360" y="120" width="230" height="110" rx="18" fill="#356FB6"/><text x="475" y="165" fill="white">지하철 세계</text><text x="475" y="200" fill="white">노선 · 역 · 레이어</text>
+    <rect x="360" y="450" width="230" height="110" rx="18" fill="#356FB6"/><text x="475" y="495" fill="white">4방향 원정</text><text x="475" y="530" fill="white">보급 · 위험 · 조우</text>
+    <rect x="690" y="280" width="230" height="110" rx="18" fill="#C84D4D"/><text x="805" y="325" fill="white">SRPG 전투</text><text x="805" y="360" fill="white">목표 · 부상 · 후퇴</text>
+    <rect x="1000" y="280" width="210" height="110" rx="18" fill="#172A46"/><text x="1105" y="325" fill="white">세계 정산</text><text x="1105" y="360" fill="white">통제 · 평판 · 사건</text>
+  </g>
+  <g stroke="#1E2228" stroke-width="5" fill="none" marker-end="url(#a)"><path d="M280 320 L360 205"/><path d="M280 365 L360 485"/><path d="M590 175 Q805 170 805 280"/><path d="M590 505 Q805 510 805 390"/><path d="M920 335 L1000 335"/><path d="M1105 280 Q1105 80 175 80 Q80 80 80 280"/></g>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#1E2228"/></marker></defs>
+</svg>
