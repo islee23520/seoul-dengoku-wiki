@@ -1,6 +1,6 @@
 # 캐릭터 미술 방향
 
-![고정 아이소메트릭 캐릭터 점유와 4방향 페이싱](../assets/wiki/isometric-grammar.svg)
+![고정 아이소메트릭 캐릭터 점유와 4방향 페이싱](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-grammar.svg?raw=true)
 
 ## 실루엣
 

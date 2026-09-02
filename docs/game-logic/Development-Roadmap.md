@@ -1,6 +1,6 @@
 # 개발 로드맵
 
-![모든 개발 단계가 보존해야 하는 고정 아이소메트릭 문법](../assets/wiki/isometric-grammar.svg)
+![모든 개발 단계가 보존해야 하는 고정 아이소메트릭 문법](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-grammar.svg?raw=true)
 
 ## 현재 완료
 

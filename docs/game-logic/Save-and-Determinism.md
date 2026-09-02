@@ -1,6 +1,6 @@
 # 저장과 결정론
 
-![저장과 재현에서 유지되는 타일 점유 페이싱 시야 상태](../assets/wiki/isometric-grammar.svg)
+![저장과 재현에서 유지되는 타일 점유 페이싱 시야 상태](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-grammar.svg?raw=true)
 
 ## 재현 가능한 세계
 

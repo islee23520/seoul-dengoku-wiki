@@ -1,6 +1,6 @@
 # 전략·전투 왕복
 
-![전략과 전투가 공유하는 고정 아이소메트릭 격자 문법](../assets/wiki/isometric-grammar.svg)
+![전략과 전투가 공유하는 고정 아이소메트릭 격자 문법](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-grammar.svg?raw=true)
 
 ## 단일 영속 상태
 

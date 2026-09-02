@@ -1,6 +1,6 @@
 # Unity 아키텍처
 
-![Unity 표현 계층이 구현하는 고정 아이소메트릭 규격](../assets/wiki/isometric-grammar.svg)
+![Unity 표현 계층이 구현하는 고정 아이소메트릭 규격](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-grammar.svg?raw=true)
 
 ## 기준선
 

@@ -1,6 +1,6 @@
 # 인물·세력·생업
 
-![인물과 파티의 타일 점유 및 4방향 페이싱](../assets/wiki/isometric-grammar.svg)
+![인물과 파티의 타일 점유 및 4방향 페이싱](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-grammar.svg?raw=true)
 
 ## 인물
 

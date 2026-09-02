@@ -1,6 +1,6 @@
-# 《잔선: 서울》 게임 로직 위키
+# 《잔선: 서울》
 
-![붕괴 이후 지하철 거점의 콘셉트](../assets/wiki/janseon-seoul-cover.png)
+![붕괴 이후 지하철 거점의 콘셉트](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/janseon-seoul-cover.png?raw=true)
 
 > **붕괴한 서울의 지하철망에서 무명 인물과 파티를 이끌어 역과 노선의 새로운 질서를 세우는 4방향 대전략 SRPG.**
 

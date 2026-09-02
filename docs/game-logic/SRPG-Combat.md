@@ -1,6 +1,6 @@
 # SRPG 전투
 
-![고정 아이소메트릭 전투의 점유 페이싱 시야 구조](../assets/wiki/isometric-grammar.svg)
+![고정 아이소메트릭 전투의 점유 페이싱 시야 구조](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-grammar.svg?raw=true)
 
 ## 탐색과 같은 문법
 

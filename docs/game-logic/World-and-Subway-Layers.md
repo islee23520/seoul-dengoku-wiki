@@ -1,6 +1,6 @@
 # 서울과 지하철 레이어
 
-![지하철 중심 다층 도시](../assets/wiki/subway-layers.svg)
+![지하철 중심 다층 도시](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/subway-layers.svg?raw=true)
 
 ## 세계의 수직 구조
 
