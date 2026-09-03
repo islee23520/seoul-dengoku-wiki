@@ -2,7 +2,9 @@
   "name": "Janseon.Foundation.Editor",
   "rootNamespace": "Janseon.Foundation.Editor",
   "references": [
-    "Janseon.Foundation"
+    "Janseon.Foundation",
+    "VContainer",
+    "VContainer.Unity"
   ],
   "includePlatforms": [
     "Editor"
