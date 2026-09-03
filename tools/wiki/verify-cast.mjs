@@ -53,7 +53,7 @@ const BANNED_TITLES = [
   'Romance of the Three Kingdoms',
   "Nobunaga's Ambition",
 ];
-const REQUIRE_STAGE_COUNTS = { s1: 95, s2: 190, s3: 110 };
+const REQUIRE_STAGE_COUNTS = { s1: 95, s2: 285, s3: 395 };
 const NAME_RE = /^[가-힣]{2,3}$/;
 const STAGES = new Set(['s0', 's1', 's2', 's3', 'all']);
 const T0_SET = new Set(T0_NAMES);

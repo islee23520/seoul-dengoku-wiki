@@ -193,7 +193,23 @@ test('R12: --require-stage s1 shortfall', async () => {
   const result = run(docs, ['--require-stage', 's1']);
   assert.equal(result.code, 1);
   assert.match(result.stderr, /^R12:/m);
-  assert.match(result.stderr, /95/);
+  assert.match(result.stderr, /required=95/);
+});
+
+test('R12: --require-stage s2 shortfall uses cumulative 285', async () => {
+  const docs = await makeFixture();
+  const result = run(docs, ['--require-stage', 's2']);
+  assert.equal(result.code, 1);
+  assert.match(result.stderr, /^R12:/m);
+  assert.match(result.stderr, /required=285/);
+});
+
+test('R12: --require-stage s3 shortfall uses cumulative 395', async () => {
+  const docs = await makeFixture();
+  const result = run(docs, ['--require-stage', 's3']);
+  assert.equal(result.code, 1);
+  assert.match(result.stderr, /^R12:/m);
+  assert.match(result.stderr, /required=395/);
 });
 
 test('R13: --known-names missing from roster', async () => {
