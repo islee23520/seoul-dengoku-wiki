@@ -1,6 +1,6 @@
 # 인물·세력·생업
 
-![인물과 파티의 타일 점유 및 4방향 페이싱](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-grammar.svg?raw=true)
+![인물과 파티가 어느 칸에 서 있고 어느 쪽을 보며 어디까지 보이는지](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-grammar.svg?raw=true)
 
 ## 인물
 
@@ -29,4 +29,11 @@
 ## 계승
 
 혈통뿐 아니라 양자, 사제, 직능 길드, 선거와 임명이 지도부 계승 경로가 됩니다. 지도자의 죽음은 곧바로 세력 삭제가 아니라 직위 공백, 경쟁 후보와 정책 분기를 만듭니다.
+
+## 십육국과 핵심 인물
+
+- [서울 십육국](Sixteen-States.md): 총16국, 강국5·약소국11의 영토와 기반시설
+- [십육국 핵심 인물](Core-Characters.md): 국가별 지도자와 후계자의 성격, 야망, 공포와 촉발 사건
+- [야망과 관계가 움직이는 정치](Ambitions-and-Relations.md): 인물이 전쟁, 동맹, 배신과 계승을 결정하는 규칙
+- [시나리오 타임라인](Scenario-Timeline.md): 붕괴 이전부터 패권전까지 인물 조건으로 분기하는 연대기
 
