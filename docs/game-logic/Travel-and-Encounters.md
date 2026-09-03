@@ -1,6 +1,6 @@
 # 이동과 조우
 
-![4방향 이동 타일 점유와 조우 시야 구조](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-grammar.svg?raw=true)
+![이동 중 칸에 누가 서 있고 어느 쪽을 보며 어디까지 보이는지](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-grammar.svg?raw=true)
 
 ## 4방향 행동
 

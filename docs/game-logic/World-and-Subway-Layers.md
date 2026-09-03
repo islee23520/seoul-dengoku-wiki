@@ -2,6 +2,8 @@
 
 ![지하철 중심 다층 도시](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/subway-layers.svg?raw=true)
 
+![서울의 각 층에서 칸에 누가 서 있고 어느 쪽을 보며 어디까지 보이는지](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-grammar.svg?raw=true)
+
 ## 세계의 수직 구조
 
 서울은 평면 행정구역 지도가 아니라 서로 다른 위험과 기능을 가진 층의 그래프입니다.
@@ -40,4 +42,6 @@
 ## 동적 연결
 
 연결은 삭제되지 않고 상태가 바뀝니다. 정상, 위험, 통제, 봉쇄, 침수, 붕괴, 임시 복구 상태와 원인을 기록합니다. 그래서 플레이어는 “왜 길이 끊겼는지”와 “무엇을 해결하면 다시 열리는지”를 확인할 수 있습니다.
+
+이 연결이 실제 보급 처리량, 고립과 복구에 미치는 영향은 [물류와 기반 시설](Logistics-and-Infrastructure.md), 연결된 역의 통제와 서비스는 [거점과 영토](Strongholds-and-Territory.md)에서 계산합니다.
 
