@@ -1,6 +1,9 @@
 # macOS
 .DS_Store
 
+# Senpi session state (created by memory reflection / hooks)
+.senpi/
+
 # Local credentials
 .env
 .env.*
@@ -16,6 +19,9 @@ Game/[Mm]emoryCaptures/
 Game/[Rr]ecordings/
 Game/[Bb]uild/
 Game/[Bb]uilds/
+
+# Tooling dependencies (tools/package-lock.json is the tracked source of truth)
+node_modules/
 
 # IDE
 .idea/

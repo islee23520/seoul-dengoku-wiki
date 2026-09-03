@@ -392,3 +392,30 @@ Your next move: Momus가 이 전체 계획을 무조건 승인하기 전에는 U
 15. Genre lock remains exact: exploration, interaction and SRPG combat share one fixed orthographic isometric camera and cardinal grid at 45° yaw/35.264° pitch; no free-camera squad sandbox or second combat loop; 2.5-head-tall four-facing SD silhouette; 1.5 m = 1.5 Unity-unit tile and two-tile standard corridor.
 16. External identity remains exact until owner-approved replacement: 《잔선: 서울》 plus its approved one-line pitch; internal/reference names are absent from store, README product copy, repository description, Wiki, screenshots, builds, marketing and shipped UI.
 17. Art-direction, marketing and adversarial-critic lock receipts are recorded, and the plan's exact hash received unconditional Momus approval before any implementation or external write began.
+
+## Amendment 2026-09-03: owner-authorized GitHub delivery supersedes local-only clauses
+
+This amendment is appended only. No original plan text above is edited, reordered or deleted. The pre-amendment SHA-256 of this file is `37833346cdc8ace8a62408cb0bed2a5dcd205ff624840aad9b2c62db61b194f1`, and the original content remains in Git history at commit `1893a04`.
+
+On 2026-09-02 the owner authorized creating the private GitHub repository `islee23520/seoul-kenshi`, binding it as `origin`, and pushing this repository (recorded in `.omo/evidence/foundation/execution-notepad.md`). On 2026-09-03 the owner approved the remediation plan `.omo/plans/fix-validate-commit-push.md` (Momus receipt `st_01a066c9`), which authorizes the dedicated branch `fix/verified-foundation-wiki-remediation`, one push of that branch, and one pull request.
+
+Accordingly, every local-only delivery clause of this plan is superseded by `docs/adr/ADR-001-repository-delivery-policy.md`, which is now the single current delivery rule. The superseded clauses, each keyed by a clause ID:
+
+| Clause ID | Plan location | Superseded local-only clause |
+| --- | --- | --- |
+| LOC-01 | "What you'll get" (TL;DR) | "GitHub 저장소·remote·push·Wiki 게시에 관한 외부 쓰기는 이 계획에서 수행하지 않습니다." |
+| LOC-02 | TL;DR (machine) | "keep the current local repository as the only repository and GitHub untouched" |
+| LOC-03 | "Decisions I made for you" | "GitHub remote는 미설정 상태로 유지합니다." |
+| LOC-04 | Execution scope | "do not create another repository/worktree or configure a remote under this plan" |
+| LOC-05 | Must have | "GitHub currently has no repository for this project. Do not create one now." |
+| LOC-06 | Must have | "remote Wiki publication is outside this plan." |
+| LOC-07 | Must NOT have | "Do not create any GitHub repository or remote under this plan." |
+| LOC-08 | Surface evidence | "local repository/remote-absence checks" |
+| LOC-09 | Wave 0 | "GitHub state stays untouched" |
+| LOC-10 | Todo 2 / Todo 22 / Todo 25, Success criteria 2, Final verification F3/F4 | every "`git remote -v` remains empty" and "remote absence" expectation |
+| LOC-11 | Todo 2 (docs authority ADR) | "`github_remote: none`" |
+| LOC-12 | Success criteria 12 | "Remote publication is a separate future plan." |
+
+Catch-all: any other clause in this plan that touches delivery, remotes, pushes or Wiki publication — whether or not listed above — is also superseded and defers to ADR-001 as the single current delivery rule. No delivery-related rule in this plan remains in force independently of ADR-001.
+
+Everything not related to delivery stays in force, including the exclusion of the unused private shooter repository, the naming and identity locks, the reviewer locks, and the ban on destructive Git operations. Delivery limits (branch and pull request only, no direct push to `main`, no force-push, no agent merge, revert-based rollback) are defined by ADR-001, not by this amendment.
