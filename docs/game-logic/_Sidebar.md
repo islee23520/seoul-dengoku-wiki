@@ -5,6 +5,7 @@
 * [인물·세력·생업](Characters-Factions-and-Professions)
   * [서울 십육국](Sixteen-States)
   * [십육국 핵심 인물](Core-Characters)
+  * [인물 총람](Cast-Index) · [관계 원장](Cast-Relations)
   * [야망과 관계가 움직이는 정치](Ambitions-and-Relations)
   * [시나리오 타임라인](Scenario-Timeline)
 * [이동과 조우](Travel-and-Encounters)
