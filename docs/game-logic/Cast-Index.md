@@ -2,6 +2,50 @@
 
 붕괴 이후 서울 16국의 이름 있는 인물 412명을 국가·직위·단계·관계 수로 묶는다.
 
+조각 완료 ≠ 세계관 완료
+
+| 페이지 | 상태 | 링크 | 누락 |
+| --- | --- | --- | --- |
+| B001 | confirmed-landed | docs/game-logic/Story-Batch-B001.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab | 세계관 미완 |
+| B002 | confirmed-isolated | docs/game-logic/Story-Batch-B002.md @ b6397adb27eabe3503af3011ffda624bc884b33e (docs/cast-b002) | 허브 미착지 |
+| B003 | confirmed-isolated | docs/game-logic/Story-Batch-B003.md @ 23240675edcb508f327ef903afcb4a56a95d38d0 (docs/cast-b003) | 허브 미착지 |
+| B004 | confirmed-isolated | docs/game-logic/Story-Batch-B004.md @ c3f33a7839748ee1408d8113278f7522b5757441 (docs/cast-b004) | 허브 미착지 |
+| B005 | confirmed-isolated | docs/game-logic/Story-Batch-B005.md @ 406d5e8922450519d847f856f667d2226bb8139f (docs/cast-b005) | 허브 미착지 |
+| B006 | confirmed-isolated | docs/game-logic/Story-Batch-B006.md @ 2da40af520c5498b3f8af910b9f2b44712cade97 (docs/cast-b006) | 허브 미착지 |
+| B007 | confirmed-isolated | docs/game-logic/Story-Batch-B007.md @ fb447e42d0010379bbb20d5ed71b85c5281cc906 (docs/cast-b007) | 허브 미착지 |
+| B008 | confirmed-isolated | docs/game-logic/Story-Batch-B008.md @ 8e1a2d02c450e26c52463e7e08e0b96fb95e5aaa (docs/cast-b008) | 허브 미착지 |
+| B009 | confirmed-isolated | docs/game-logic/Story-Batch-B009.md @ f9e9a9f74736e3181987307b41482b68aee54032 (docs/cast-b009) | 허브 미착지 |
+| B010 | confirmed-isolated | docs/game-logic/Story-Batch-B010.md @ 702c75668c10d26cf05f3d679003239450af3f71 (docs/cast-b010) | 허브 미착지 |
+| B011 | confirmed-isolated | docs/game-logic/Story-Batch-B011.md @ 1feb1084269ce3882a220959eea61b10eaf89ca9 (docs/cast-b011) | 허브 미착지 |
+| B012 | confirmed-isolated | docs/game-logic/Story-Batch-B012.md @ 6e6f958e191969c4e4d2ff5427820249ef73e484 (docs/cast-b012) | 허브 미착지 |
+| G01 | confirmed-isolated | docs/game-logic/Hostile-Group-G01.md @ a683b613d81d9c5a3098e01b26a9316e1c774cc0 (docs/cast-g01-g06) | 허브 미착지 |
+| G02 | confirmed-isolated | docs/game-logic/Hostile-Group-G02.md @ a683b613d81d9c5a3098e01b26a9316e1c774cc0 (docs/cast-g01-g06) | 허브 미착지 |
+| G03 | confirmed-isolated | docs/game-logic/Hostile-Group-G03.md @ a683b613d81d9c5a3098e01b26a9316e1c774cc0 (docs/cast-g01-g06) | 허브 미착지 |
+| G04 | confirmed-isolated | docs/game-logic/Hostile-Group-G04.md @ a683b613d81d9c5a3098e01b26a9316e1c774cc0 (docs/cast-g01-g06) | 허브 미착지 |
+| G05 | confirmed-isolated | docs/game-logic/Hostile-Group-G05.md @ a683b613d81d9c5a3098e01b26a9316e1c774cc0 (docs/cast-g01-g06) | 허브 미착지 |
+| G06 | confirmed-isolated | docs/game-logic/Hostile-Group-G06.md @ a683b613d81d9c5a3098e01b26a9316e1c774cc0 (docs/cast-g01-g06) | 허브 미착지 |
+| G07 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g07-g12 @ 2806eb8e803ad572b0547f9011a62d941fa94120 | Hostile-Group-G07.md |
+| G08 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g07-g12 @ 2806eb8e803ad572b0547f9011a62d941fa94120 | Hostile-Group-G08.md |
+| G09 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g07-g12 @ 2806eb8e803ad572b0547f9011a62d941fa94120 | Hostile-Group-G09.md |
+| G10 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g07-g12 @ 2806eb8e803ad572b0547f9011a62d941fa94120 | Hostile-Group-G10.md |
+| G11 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g07-g12 @ 2806eb8e803ad572b0547f9011a62d941fa94120 | Hostile-Group-G11.md |
+| G12 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g07-g12 @ 2806eb8e803ad572b0547f9011a62d941fa94120 | Hostile-Group-G12.md |
+| G13 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g13-g18 @ 0974a26427d824641872d1dfc7b203f66e682d0c | Hostile-Group-G13.md |
+| G14 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g13-g18 @ 0974a26427d824641872d1dfc7b203f66e682d0c | Hostile-Group-G14.md |
+| G15 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g13-g18 @ 0974a26427d824641872d1dfc7b203f66e682d0c | Hostile-Group-G15.md |
+| G16 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g13-g18 @ 0974a26427d824641872d1dfc7b203f66e682d0c | Hostile-Group-G16.md |
+| G17 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g13-g18 @ 0974a26427d824641872d1dfc7b203f66e682d0c | Hostile-Group-G17.md |
+| G18 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g13-g18 @ 0974a26427d824641872d1dfc7b203f66e682d0c | Hostile-Group-G18.md |
+| G19 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g19-g24 @ f90bf7e0e7200acf1f043b6ac94c45f0f83673fb | Hostile-Group-G19.md |
+| G20 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g19-g24 @ f90bf7e0e7200acf1f043b6ac94c45f0f83673fb | Hostile-Group-G20.md |
+| G21 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g19-g24 @ f90bf7e0e7200acf1f043b6ac94c45f0f83673fb | Hostile-Group-G21.md |
+| G22 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g19-g24 @ f90bf7e0e7200acf1f043b6ac94c45f0f83673fb | Hostile-Group-G22.md |
+| G23 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g19-g24 @ f90bf7e0e7200acf1f043b6ac94c45f0f83673fb | Hostile-Group-G23.md |
+| G24 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g19-g24 @ f90bf7e0e7200acf1f043b6ac94c45f0f83673fb | Hostile-Group-G24.md |
+| ISO-world-atlas | confirmed-isolated | docs/assets/wiki/world-atlas-isometric.svg @ 7b4e27b91510c024e936ed7cc4322714ff280313 (docs/cast-iso-atlas-v2) | 허브 미착지 |
+| ISO-house-influence | confirmed-isolated | docs/assets/wiki/house-influence-isometric.svg @ 7b4e27b91510c024e936ed7cc4322714ff280313 (docs/cast-iso-atlas-v2) | 허브 미착지 |
+| ISO-hostile-ecology | confirmed-isolated | docs/assets/wiki/hostile-ecology-isometric.svg @ 7b4e27b91510c024e936ed7cc4322714ff280313 (docs/cast-iso-atlas-v2) | 허브 미착지 |
+
 ## 국가 01 여의신정수문정부
 
 | 이름 | 직위 | 단계 | 관계 수 |
