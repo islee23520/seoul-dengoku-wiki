@@ -411,6 +411,18 @@ await testCase('CLI --no-push never invokes git push', async () => {
   assert.ok(await exists(join(live, 'Home.md')));
 });
 
+await testCase('CLI invoked through a same-file path alias still runs and rejects unexpected arguments', async () => {
+  const aliasDir = join(root, 'cli-path-alias');
+  await mkdir(aliasDir, { recursive: true });
+  const alias = join(aliasDir, 'publish-wiki.mjs');
+  await symlink(publisher, alias);
+
+  const result = spawnSync(process.execPath, [alias, 'not-a-flag'], { encoding: 'utf8' });
+
+  assert.notEqual(result.status, 0, 'path-alias CLI must not exit 0 without running main');
+  assert.match(`${result.stdout}${result.stderr}`, /unexpected argument not-a-flag/);
+});
+
 await testCase('CLI missing Cast-Index exits nonzero and leaves the live wiki unchanged', async () => {
   const pages = requiredPages();
   delete pages['Cast-Index.md'];
