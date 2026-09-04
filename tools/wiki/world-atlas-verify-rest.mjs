@@ -202,7 +202,8 @@ export function verifyStoryContentBatch(atlas, projections, fail, batchId) {
   const manifestIds = (manifest.actors ?? []).map((a) => a.id);
   const contentIds = actors.map((a) => a.id);
   if (contentIds.join(',') !== manifestIds.join(',')) fail('E_STORY_ID_ORDER', batchId);
-  const seen = new Set();
+  const seenSections = new Set();
+  const seenSentences = new Set();
   for (const actor of actors) {
     for (const key of STORY_SECTION_KEYS) {
       const body = actor.sections?.[key];
@@ -212,12 +213,12 @@ export function verifyStoryContentBatch(atlas, projections, fail, batchId) {
     if (!Array.isArray(actor.outcomes) || actor.outcomes.length < 2) fail('E_STORY_OUTCOME', actor.id);
     for (const key of STORY_SECTION_KEYS) {
       const trimmed = String(actor.sections?.[key] ?? '').trim();
-      if (seen.has(trimmed)) fail('E_DUPLICATE_SENTENCE', `${batchId} ${actor.id} ${key}`);
-      seen.add(trimmed);
+      if (seenSections.has(trimmed)) fail('E_DUPLICATE_SENTENCE', `${batchId} ${actor.id} ${key}`);
+      seenSections.add(trimmed);
       for (const sentence of proseSentences(trimmed)) {
         if (sentence.length < 28) continue;
-        if (seen.has(sentence)) fail('E_DUPLICATE_SENTENCE', `${batchId} ${sentence.slice(0, 40)}`);
-        seen.add(sentence);
+        if (seenSentences.has(sentence)) fail('E_DUPLICATE_SENTENCE', `${batchId} ${sentence.slice(0, 40)}`);
+        seenSentences.add(sentence);
       }
     }
   }

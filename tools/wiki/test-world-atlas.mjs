@@ -7,6 +7,7 @@ import { after, test } from 'node:test';
 import { fileURLToPath } from 'node:url';
 
 import { materializeWorldAtlas } from './materialize-world-atlas.mjs';
+import { extractAtlasJson } from './world-atlas-parse.mjs';
 
 const verifier = fileURLToPath(new URL('./verify-world-expansion.mjs', import.meta.url));
 const materializer = fileURLToPath(new URL('./materialize-world-atlas.mjs', import.meta.url));
@@ -130,7 +131,41 @@ test('Given a mutated projection When materializer --check Then nonzero', async 
   assert.ok(result.hashes['Operating-Houses.md']);
 });
 
-test('Given current repository When story-batch B001 Then ten stories and projection', () => {
-  const result = runVerifier(['--docs', liveDocs, '--stage', 'story-batch', '--batch', 'B001', '--atlas', atlasPath]);
-  assert.equal(result.code, 0, result.output);
+const CONFIRMED_STORY_BATCHES = Object.freeze([
+  'B001', 'B002', 'B003', 'B004', 'B005', 'B006', 'B007', 'B008', 'B009', 'B010',
+  'B011', 'B012', 'B013', 'B014', 'B015', 'B016', 'B018', 'B019', 'B036',
+]);
+
+for (const batchId of CONFIRMED_STORY_BATCHES) {
+  test(`Given current repository When story-batch ${batchId} Then ten stories and projection`, () => {
+    const result = runVerifier(['--docs', liveDocs, '--stage', 'story-batch', '--batch', batchId, '--atlas', atlasPath]);
+    assert.equal(result.code, 0, result.output);
+  });
+}
+
+test('Given two B001 actors sharing a long sentence When story-batch Then E_DUPLICATE_SENTENCE', async () => {
+  const dir = await mkdtemp(join(tmpdir(), 'atlas-story-dup-'));
+  fixtures.push(dir);
+  const docs = join(dir, 'docs', 'game-logic');
+  const { cpSync, mkdirSync } = await import('node:fs');
+  mkdirSync(docs, { recursive: true });
+  mkdirSync(join(dir, '.omo', 'research-private'), { recursive: true });
+  cpSync(liveDocs, docs, { recursive: true });
+  cpSync(
+    join(repositoryRoot, '.omo', 'research-private', 'nippon-sangoku-canon-bridge.md'),
+    join(dir, '.omo', 'research-private', 'nippon-sangoku-canon-bridge.md'),
+  );
+  const atlas = join(docs, 'World-Narrative-Atlas.md');
+  const markdown = await readFile(atlas, 'utf8');
+  const parsed = extractAtlasJson(markdown);
+  assert.equal(parsed.ok, true, parsed.error);
+  const shared = '같은 생존 문장이 두 배우의 서로 다른 장면에 반복되어 붙는다.';
+  const left = parsed.value.story_contents.B001.actors[0];
+  const right = parsed.value.story_contents.B001.actors[1];
+  left.sections['생존 전환점'] = `${left.sections['생존 전환점'].trim()} ${shared}`;
+  right.sections['현재 지위'] = `${right.sections['현재 지위'].trim()} ${shared}`;
+  await writeFile(atlas, markdown.replace(/```json\s*[\s\S]*?```/, `\`\`\`json\n${JSON.stringify(parsed.value, null, 2)}\n\`\`\``));
+  const result = runVerifier(['--docs', docs, '--stage', 'story-batch', '--batch', 'B001', '--atlas', atlas]);
+  assert.equal(result.code, 1, result.output);
+  assert.match(result.stderr, /^E_DUPLICATE_SENTENCE:/m);
 });

@@ -44,21 +44,22 @@ function gitAtlas(sha) {
   return parsed.value;
 }
 
-test('Given integration base When atlas keys are listed Then baseline B001-only world is intact', async () => {
+test('Given confirmed social records When live atlas is checked Then only approved story IDs exist', async () => {
   const manifest = await loadManifest();
   const { atlas, violations } = await verifyLiveDocs({
     repoRoot: repositoryRoot,
     manifest,
-    requireBaselineOnly: true,
+    requireSocial: true,
   });
   assert.equal(violations.length, 0, JSON.stringify(violations));
   const keys = baselineKeys(atlas);
-  assert.deepEqual(keys.top, manifest.baselineAtlasKeys);
-  assert.deepEqual(keys.storyContents, ['B001']);
-  assert.deepEqual(keys.monsterContents, []);
+  assert.deepEqual(keys.storyContents, manifest.social);
+  assert.equal(keys.monsterContents.length, 0);
   assert.equal(keys.diagramCount, 0);
   assert.deepEqual(keys.dossierGroups, []);
-  assert.equal(atlas.story_contents.B001.actors.length, 10);
+  for (const id of manifest.excluded.social) {
+    assert.equal(atlas.story_contents[id], undefined, id);
+  }
 });
 
 test('Given current repository When B001 story-batch stage Then verifier exits 0', () => {
@@ -172,13 +173,7 @@ test('Given ISO blob When diagrams merge Then three diagram records land', async
   assert.equal(target.diagrams.length, 3);
 });
 
-test('Given baseline live atlas When CLI --baseline Then exit 0', () => {
-  const result = runLive(['--baseline']);
-  assert.equal(result.code, 0, result.stderr);
-});
-
-test('Given baseline live atlas When CLI --require-social Then missing fragments fail closed', () => {
+test('Given confirmed social records When CLI --require-social Then exit 0', () => {
   const result = runLive(['--require-social']);
-  assert.equal(result.code, 1);
-  assert.match(result.stderr, /E_MISSING_FRAGMENT: B002/);
+  assert.equal(result.code, 0, result.stderr);
 });
