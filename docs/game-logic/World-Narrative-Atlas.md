@@ -11,7 +11,7 @@
 | 문서 상태 | 활성 |
 | 소유자 | wiki-world |
 | 지원 검토자 | (없음, 외부 검토 대기) |
-| 개정 | r5 |
+| 개정 | r6 |
 | 마지막 검증 커밋 | `c485bc84629c39e978889f1585ade92bef4ceda4` |
 | 출처층 | original-fiction |
 | 출처 앵커 | Cast-Index.md, Sixteen-States.md, Research-Sources.md |
@@ -49,6 +49,12 @@
 
 상세 필드는 아래 기계 등록부를 정본으로 합니다.
 
+## 합성 사회 인격
+
+인간형 `H01`–`H16`, 시설형 `F01`–`F16`, 기동형 `V01`–`V16`을 등록합니다. 기존 인간 412명의 식별자는 바꾸지 않습니다. 전지·무한 에너지·완전 기억은 금지합니다.
+
+상세 필드는 아래 기계 등록부를 정본으로 합니다.
+
 ## 기계 등록부
 
 ```json
@@ -60,7 +66,7 @@
     "document_status": "active",
     "owner": "wiki-world",
     "support_reviewers": [],
-    "revision": "r5",
+    "revision": "r6",
     "last_verified_commit": "c485bc84629c39e978889f1585ade92bef4ceda4",
     "source_kind": "original-fiction",
     "source_anchors": [
@@ -102,14 +108,63 @@
       "XT02",
       "XT03",
       "XT04",
-      "XT05"
+      "XT05",
+      "H01",
+      "H02",
+      "H03",
+      "H04",
+      "H05",
+      "H06",
+      "H07",
+      "H08",
+      "H09",
+      "H10",
+      "H11",
+      "H12",
+      "H13",
+      "H14",
+      "H15",
+      "H16",
+      "F01",
+      "F02",
+      "F03",
+      "F04",
+      "F05",
+      "F06",
+      "F07",
+      "F08",
+      "F09",
+      "F10",
+      "F11",
+      "F12",
+      "F13",
+      "F14",
+      "F15",
+      "F16",
+      "V01",
+      "V02",
+      "V03",
+      "V04",
+      "V05",
+      "V06",
+      "V07",
+      "V08",
+      "V09",
+      "V10",
+      "V11",
+      "V12",
+      "V13",
+      "V14",
+      "V15",
+      "V16"
     ],
     "projection_targets": [
       "Operating-Houses.md",
-      "External-Theaters.md"
+      "External-Theaters.md",
+      "Synthetic-Actors.md"
     ],
-    "change_ledger_entry": "CL-0005",
-    "verification_state": "theaters-authored"
+    "change_ledger_entry": "CL-0006",
+    "verification_state": "synthetics-authored"
   },
   "writing_contract": {
     "narrative_register": "plain-da",
@@ -7229,7 +7284,2168 @@
       "prose": "상암송신공사 옥상에서 잔여 대역 추첨 번호가 방송된다. 여의신정수문 당직은 급수 펌프 가동 시각을 그 번호에 맞추고, 도성기록청 사서는 인도 목록 해시를 시민 참관 칸에 붙인다. 수서강남협약도시 배차원이 해외 송금 기록 상자만 실은 회차선을 열고, 마곡연구평의회 기술자는 궤도 단말의 오탐 경보를 끈다. 가락 상담 창구는 밤이 깊어도 다국어 대기표를 버리지 않는다."
     }
   ],
-  "synthetics": [],
+  "synthetics": [
+    {
+      "id": "H01",
+      "display_name": "한누리",
+      "callsign": "누리",
+      "cls": "H",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S01"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S01",
+      "house_id": "HC01",
+      "body_platform": "인간형 보조 골격·교체형 손모듈·야간 시야 제한",
+      "custody_legal": "HC01 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "한재목 주정비·HC01 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S01 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K001",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HC01",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K004",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S01 정비 벤치에서 한누리(누리)이 HC01 당직 로그에 출입을 남긴다. 한재목은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 충전 칸 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "H02",
+      "display_name": "서린",
+      "callsign": "린",
+      "cls": "H",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S02"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S02",
+      "house_id": "HC02",
+      "body_platform": "인간형 보조 골격·교체형 손모듈·야간 시야 제한",
+      "custody_legal": "HC02 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "강민서 주정비·HC02 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S02 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K029",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HC02",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K011",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S02 충전 칸에서 서린(린)이 HC02 당직 로그에 출입을 남긴다. 강민서은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 관측 난간 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "H03",
+      "display_name": "이도",
+      "callsign": "이도",
+      "cls": "H",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S03"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S03",
+      "house_id": "HC03",
+      "body_platform": "인간형 보조 골격·교체형 손모듈·야간 시야 제한",
+      "custody_legal": "HC03 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "서이안 주정비·HC03 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S03 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K057",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HC03",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K018",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S03 관측 난간에서 이도(이도)이 HC03 당직 로그에 출입을 남긴다. 서이안은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 공구 벽 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "H04",
+      "display_name": "강별",
+      "callsign": "별",
+      "cls": "H",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S04"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S04",
+      "house_id": "HC04",
+      "body_platform": "인간형 보조 골격·교체형 손모듈·야간 시야 제한",
+      "custody_legal": "HC04 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "임하준 주정비·HC04 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S04 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K085",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HC04",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K025",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S04 공구 벽에서 강별(별)이 HC04 당직 로그에 출입을 남긴다. 임하준은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 정비 벤치 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "H05",
+      "display_name": "윤재",
+      "callsign": "재",
+      "cls": "H",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S05"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S05",
+      "house_id": "HC05",
+      "body_platform": "인간형 보조 골격·교체형 손모듈·야간 시야 제한",
+      "custody_legal": "HC05 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "배우진 주정비·HC05 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S05 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K114",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HC05",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K032",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S05 정비 벤치에서 윤재(재)이 HC05 당직 로그에 출입을 남긴다. 배우진은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 충전 칸 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "H06",
+      "display_name": "박솔",
+      "callsign": "솔",
+      "cls": "H",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S06"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S06",
+      "house_id": "HC06",
+      "body_platform": "인간형 보조 골격·교체형 손모듈·야간 시야 제한",
+      "custody_legal": "HC06 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "윤서린 주정비·HC06 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S06 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K142",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HC06",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K039",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S06 충전 칸에서 박솔(솔)이 HC06 당직 로그에 출입을 남긴다. 윤서린은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 관측 난간 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "H07",
+      "display_name": "정우람",
+      "callsign": "우람",
+      "cls": "H",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S07"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S07",
+      "house_id": "HC07",
+      "body_platform": "인간형 보조 골격·교체형 손모듈·야간 시야 제한",
+      "custody_legal": "HC07 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "박태겸 주정비·HC07 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S07 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K166",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HC07",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K046",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S07 관측 난간에서 정우람(우람)이 HC07 당직 로그에 출입을 남긴다. 박태겸은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 공구 벽 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "H08",
+      "display_name": "최다온",
+      "callsign": "다온",
+      "cls": "H",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S08"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S08",
+      "house_id": "HC08",
+      "body_platform": "인간형 보조 골격·교체형 손모듈·야간 시야 제한",
+      "custody_legal": "HC08 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "오해린 주정비·HC08 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S08 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K190",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HC08",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K053",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S08 공구 벽에서 최다온(다온)이 HC08 당직 로그에 출입을 남긴다. 오해린은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 정비 벤치 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "H09",
+      "display_name": "조하람",
+      "callsign": "하람",
+      "cls": "H",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S09"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S09",
+      "house_id": "HC09",
+      "body_platform": "인간형 보조 골격·교체형 손모듈·야간 시야 제한",
+      "custody_legal": "HC09 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "문가람 주정비·HC09 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S09 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K215",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HC09",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K060",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S09 정비 벤치에서 조하람(하람)이 HC09 당직 로그에 출입을 남긴다. 문가람은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 충전 칸 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "H10",
+      "display_name": "윤새론",
+      "callsign": "새론",
+      "cls": "H",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S10"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S10",
+      "house_id": "HC10",
+      "body_platform": "인간형 보조 골격·교체형 손모듈·야간 시야 제한",
+      "custody_legal": "HC10 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "백온 주정비·HC10 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S10 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K240",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HC10",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K067",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S10 충전 칸에서 윤새론(새론)이 HC10 당직 로그에 출입을 남긴다. 백온은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 관측 난간 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "H11",
+      "display_name": "김도하",
+      "callsign": "도하",
+      "cls": "H",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S11"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S11",
+      "house_id": "HC11",
+      "body_platform": "인간형 보조 골격·교체형 손모듈·야간 시야 제한",
+      "custody_legal": "HC11 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "김도윤 주정비·HC11 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S11 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K265",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HC11",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K074",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S11 관측 난간에서 김도하(도하)이 HC11 당직 로그에 출입을 남긴다. 김도윤은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 공구 벽 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "H12",
+      "display_name": "이채온",
+      "callsign": "채온",
+      "cls": "H",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S12"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S12",
+      "house_id": "HC12",
+      "body_platform": "인간형 보조 골격·교체형 손모듈·야간 시야 제한",
+      "custody_legal": "HC12 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "장세화 주정비·HC12 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S12 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K290",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HC12",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K081",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S12 공구 벽에서 이채온(채온)이 HC12 당직 로그에 출입을 남긴다. 장세화은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 정비 벤치 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "H13",
+      "display_name": "한빛나",
+      "callsign": "빛나",
+      "cls": "H",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S13"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S13",
+      "house_id": "HC13",
+      "body_platform": "인간형 보조 골격·교체형 손모듈·야간 시야 제한",
+      "custody_legal": "HC13 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "류은비 주정비·HC13 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S13 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K315",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HC13",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K088",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S13 정비 벤치에서 한빛나(빛나)이 HC13 당직 로그에 출입을 남긴다. 류은비은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 충전 칸 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "H14",
+      "display_name": "오세림",
+      "callsign": "세림",
+      "cls": "H",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S14"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S14",
+      "house_id": "HC14",
+      "body_platform": "인간형 보조 골격·교체형 손모듈·야간 시야 제한",
+      "custody_legal": "HC14 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "고서준 주정비·HC14 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S14 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K340",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HC14",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K095",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S14 충전 칸에서 오세림(세림)이 HC14 당직 로그에 출입을 남긴다. 고서준은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 관측 난간 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "H15",
+      "display_name": "배수아",
+      "callsign": "수아",
+      "cls": "H",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S15"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S15",
+      "house_id": "HP01",
+      "body_platform": "인간형 보조 골격·교체형 손모듈·야간 시야 제한",
+      "custody_legal": "HP01 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "남윤경 주정비·HP01 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S15 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K365",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HP01",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K102",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S15 관측 난간에서 배수아(수아)이 HP01 당직 로그에 출입을 남긴다. 남윤경은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 공구 벽 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "H16",
+      "display_name": "신태율",
+      "callsign": "태율",
+      "cls": "H",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S16"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S16",
+      "house_id": "HP02",
+      "body_platform": "인간형 보조 골격·교체형 손모듈·야간 시야 제한",
+      "custody_legal": "HP02 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "정유라 주정비·HP02 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S16 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K389",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HP02",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K109",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S16 공구 벽에서 신태율(태율)이 HP02 당직 로그에 출입을 남긴다. 정유라은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 정비 벤치 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "F01",
+      "display_name": "냉각탑지기",
+      "callsign": "탑지",
+      "cls": "F",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S01"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S01",
+      "house_id": "HC09",
+      "body_platform": "시설 고정 랙·센서 버스·현장 단말 연결",
+      "custody_legal": "HC09 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "이서담 주정비·HC09 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S01 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K002",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HC09",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K116",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S01 기계실에서 냉각탑지기(탑지)이 HC09 당직 로그에 출입을 남긴다. 이서담은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 배전반 앞 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "F02",
+      "display_name": "배전반이",
+      "callsign": "전반",
+      "cls": "F",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S02"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S02",
+      "house_id": "HC10",
+      "body_platform": "시설 고정 랙·센서 버스·현장 단말 연결",
+      "custody_legal": "HC10 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "정시우 주정비·HC10 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S02 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K030",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HC10",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K123",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S02 배전반 앞에서 배전반이(전반)이 HC10 당직 로그에 출입을 남긴다. 정시우은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 필터 복도 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "F03",
+      "display_name": "정수여과",
+      "callsign": "여과",
+      "cls": "F",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S03"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S03",
+      "house_id": "HC11",
+      "body_platform": "시설 고정 랙·센서 버스·현장 단말 연결",
+      "custody_legal": "HC11 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "정하린 주정비·HC11 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S03 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K058",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HC11",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K130",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S03 필터 복도에서 정수여과(여과)이 HC11 당직 로그에 출입을 남긴다. 정하린은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 제어 부스 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "F04",
+      "display_name": "냉동창고",
+      "callsign": "냉창",
+      "cls": "F",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S04"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S04",
+      "house_id": "HC12",
+      "body_platform": "시설 고정 랙·센서 버스·현장 단말 연결",
+      "custody_legal": "HC12 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "임초원 주정비·HC12 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S04 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K086",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HC12",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K137",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S04 제어 부스에서 냉동창고(냉창)이 HC12 당직 로그에 출입을 남긴다. 임초원은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 기계실 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "F05",
+      "display_name": "송신중계",
+      "callsign": "중계",
+      "cls": "F",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S05"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S05",
+      "house_id": "HC13",
+      "body_platform": "시설 고정 랙·센서 버스·현장 단말 연결",
+      "custody_legal": "HC13 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "김우찬 주정비·HC13 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S05 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K115",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HC13",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K144",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S05 기계실에서 송신중계(중계)이 HC13 당직 로그에 출입을 남긴다. 김우찬은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 배전반 앞 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "F06",
+      "display_name": "승강기축",
+      "callsign": "승축",
+      "cls": "F",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S06"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S06",
+      "house_id": "HC14",
+      "body_platform": "시설 고정 랙·센서 버스·현장 단말 연결",
+      "custody_legal": "HC14 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "강예준 주정비·HC14 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S06 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K143",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HC14",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K151",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S06 배전반 앞에서 승강기축(승축)이 HC14 당직 로그에 출입을 남긴다. 강예준은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 필터 복도 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "F07",
+      "display_name": "보일러실",
+      "callsign": "보일",
+      "cls": "F",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S07"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S07",
+      "house_id": "HP01",
+      "body_platform": "시설 고정 랙·센서 버스·현장 단말 연결",
+      "custody_legal": "HP01 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "신가온 주정비·HP01 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S07 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K167",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HP01",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K158",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S07 필터 복도에서 보일러실(보일)이 HP01 당직 로그에 출입을 남긴다. 신가온은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 제어 부스 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "F08",
+      "display_name": "하수펌프",
+      "callsign": "하수",
+      "cls": "F",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S08"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S08",
+      "house_id": "HP02",
+      "body_platform": "시설 고정 랙·센서 버스·현장 단말 연결",
+      "custody_legal": "HP02 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "조민재 주정비·HP02 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S08 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K191",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HP02",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K165",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S08 제어 부스에서 하수펌프(하수)이 HP02 당직 로그에 출입을 남긴다. 조민재은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 기계실 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "F09",
+      "display_name": "실험클린",
+      "callsign": "클린",
+      "cls": "F",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S09"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S09",
+      "house_id": "HP03",
+      "body_platform": "시설 고정 랙·센서 버스·현장 단말 연결",
+      "custody_legal": "HP03 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "권미래 주정비·HP03 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S09 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K216",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HP03",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K172",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S09 기계실에서 실험클린(클린)이 HP03 당직 로그에 출입을 남긴다. 권미래은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 배전반 앞 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "F10",
+      "display_name": "물류분류",
+      "callsign": "분류",
+      "cls": "F",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S10"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S10",
+      "house_id": "HP04",
+      "body_platform": "시설 고정 랙·센서 버스·현장 단말 연결",
+      "custody_legal": "HP04 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "신보람 주정비·HP04 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S10 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K241",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HP04",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K179",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S10 배전반 앞에서 물류분류(분류)이 HP04 당직 로그에 출입을 남긴다. 신보람은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 필터 복도 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "F11",
+      "display_name": "전력변압",
+      "callsign": "변압",
+      "cls": "F",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S11"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S11",
+      "house_id": "HP05",
+      "body_platform": "시설 고정 랙·센서 버스·현장 단말 연결",
+      "custody_legal": "HP05 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "송하율 주정비·HP05 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S11 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K266",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HP05",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K186",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S11 필터 복도에서 전력변압(변압)이 HP05 당직 로그에 출입을 남긴다. 송하율은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 제어 부스 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "F12",
+      "display_name": "환기덕트",
+      "callsign": "덕트",
+      "cls": "F",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S12"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S12",
+      "house_id": "HP06",
+      "body_platform": "시설 고정 랙·센서 버스·현장 단말 연결",
+      "custody_legal": "HP06 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "안도한 주정비·HP06 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S12 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K291",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HP06",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K193",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S12 제어 부스에서 환기덕트(덕트)이 HP06 당직 로그에 출입을 남긴다. 안도한은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 기계실 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "F13",
+      "display_name": "의료멸균",
+      "callsign": "멸균",
+      "cls": "F",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S13"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S13",
+      "house_id": "HP07",
+      "body_platform": "시설 고정 랙·센서 버스·현장 단말 연결",
+      "custody_legal": "HP07 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "심달호 주정비·HP07 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S13 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K316",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HP07",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K200",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S13 기계실에서 의료멸균(멸균)이 HP07 당직 로그에 출입을 남긴다. 심달호은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 배전반 앞 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "F14",
+      "display_name": "인쇄기동",
+      "callsign": "인쇄",
+      "cls": "F",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S14"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S14",
+      "house_id": "HP08",
+      "body_platform": "시설 고정 랙·센서 버스·현장 단말 연결",
+      "custody_legal": "HP08 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "문하율 주정비·HP08 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S14 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K341",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HP08",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K207",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S14 배전반 앞에서 인쇄기동(인쇄)이 HP08 당직 로그에 출입을 남긴다. 문하율은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 필터 복도 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "F15",
+      "display_name": "급수계량",
+      "callsign": "계량",
+      "cls": "F",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S15"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S15",
+      "house_id": "HP09",
+      "body_platform": "시설 고정 랙·센서 버스·현장 단말 연결",
+      "custody_legal": "HP09 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "은태호 주정비·HP09 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S15 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K366",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HP09",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K214",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S15 필터 복도에서 급수계량(계량)이 HP09 당직 로그에 출입을 남긴다. 은태호은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 제어 부스 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "F16",
+      "display_name": "터널환기",
+      "callsign": "터환",
+      "cls": "F",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S16"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S16",
+      "house_id": "HP10",
+      "body_platform": "시설 고정 랙·센서 버스·현장 단말 연결",
+      "custody_legal": "HP10 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "하서진 주정비·HP10 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S16 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K390",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HP10",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K221",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S16 제어 부스에서 터널환기(터환)이 HP10 당직 로그에 출입을 남긴다. 하서진은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 기계실 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "V01",
+      "display_name": "새벽호송",
+      "callsign": "새벽",
+      "cls": "V",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S01"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S01",
+      "house_id": "HP03",
+      "body_platform": "차체/대차 플랫폼·배터리 슬롯·차선 센서",
+      "custody_legal": "HP03 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "김태운 주정비·HP03 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S01 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K003",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HP03",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K228",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S01 회차선에서 새벽호송(새벽)이 HP03 당직 로그에 출입을 남긴다. 김태운은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 적재 베이 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "V02",
+      "display_name": "순환버스",
+      "callsign": "순환",
+      "cls": "V",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S02"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S02",
+      "house_id": "HP04",
+      "body_platform": "차체/대차 플랫폼·배터리 슬롯·차선 센서",
+      "custody_legal": "HP04 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "김나율 주정비·HP04 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S02 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K031",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HP04",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K235",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S02 적재 베이에서 순환버스(순환)이 HP04 당직 로그에 출입을 남긴다. 김나율은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 점검 피트 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "V03",
+      "display_name": "화물트램",
+      "callsign": "트램",
+      "cls": "V",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S03"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S03",
+      "house_id": "HP05",
+      "body_platform": "차체/대차 플랫폼·배터리 슬롯·차선 센서",
+      "custody_legal": "HP05 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "최은재 주정비·HP05 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S03 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K059",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HP05",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K242",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S03 점검 피트에서 화물트램(트램)이 HP05 당직 로그에 출입을 남긴다. 최은재은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 충전 슬롯 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "V04",
+      "display_name": "구경로봇",
+      "callsign": "구경로",
+      "cls": "V",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S04"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S04",
+      "house_id": "HP06",
+      "body_platform": "차체/대차 플랫폼·배터리 슬롯·차선 센서",
+      "custody_legal": "HP06 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "한소미 주정비·HP06 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S04 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K087",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HP06",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K249",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S04 충전 슬롯에서 구경로봇(구경로)이 HP06 당직 로그에 출입을 남긴다. 한소미은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 회차선 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "V05",
+      "display_name": "레일견인",
+      "callsign": "견인",
+      "cls": "V",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S05"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S05",
+      "house_id": "HP07",
+      "body_platform": "차체/대차 플랫폼·배터리 슬롯·차선 센서",
+      "custody_legal": "HP07 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "정소율 주정비·HP07 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S05 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K116",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HP07",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K256",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S05 회차선에서 레일견인(견인)이 HP07 당직 로그에 출입을 남긴다. 정소율은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 적재 베이 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "V06",
+      "display_name": "배전트럭",
+      "callsign": "배전",
+      "cls": "V",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S06"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S06",
+      "house_id": "HP08",
+      "body_platform": "차체/대차 플랫폼·배터리 슬롯·차선 센서",
+      "custody_legal": "HP08 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "조하린 주정비·HP08 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S06 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K144",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HP08",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K263",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S06 적재 베이에서 배전트럭(배전)이 HP08 당직 로그에 출입을 남긴다. 조하린은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 점검 피트 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "V07",
+      "display_name": "청소차륜",
+      "callsign": "청소",
+      "cls": "V",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S07"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S07",
+      "house_id": "HP09",
+      "body_platform": "차체/대차 플랫폼·배터리 슬롯·차선 센서",
+      "custody_legal": "HP09 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "권시온 주정비·HP09 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S07 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K168",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HP09",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K270",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S07 점검 피트에서 청소차륜(청소)이 HP09 당직 로그에 출입을 남긴다. 권시온은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 충전 슬롯 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "V08",
+      "display_name": "구급카트",
+      "callsign": "구급",
+      "cls": "V",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S08"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S08",
+      "house_id": "HP10",
+      "body_platform": "차체/대차 플랫폼·배터리 슬롯·차선 센서",
+      "custody_legal": "HP10 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "윤서하 주정비·HP10 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S08 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K192",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HP10",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K277",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S08 충전 슬롯에서 구급카트(구급)이 HP10 당직 로그에 출입을 남긴다. 윤서하은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 회차선 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "V09",
+      "display_name": "항만크레인",
+      "callsign": "크레인",
+      "cls": "V",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S09"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S09",
+      "house_id": "HC01",
+      "body_platform": "차체/대차 플랫폼·배터리 슬롯·차선 센서",
+      "custody_legal": "HC01 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "황은설 주정비·HC01 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S09 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K217",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HC01",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K284",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S09 회차선에서 항만크레인(크레인)이 HC01 당직 로그에 출입을 남긴다. 황은설은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 적재 베이 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "V10",
+      "display_name": "도크셔틀",
+      "callsign": "도크",
+      "cls": "V",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S10"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S10",
+      "house_id": "HC02",
+      "body_platform": "차체/대차 플랫폼·배터리 슬롯·차선 센서",
+      "custody_legal": "HC02 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "황세린 주정비·HC02 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S10 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K242",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HC02",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K291",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S10 적재 베이에서 도크셔틀(도크)이 HC02 당직 로그에 출입을 남긴다. 황세린은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 점검 피트 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "V11",
+      "display_name": "야간배차",
+      "callsign": "야배",
+      "cls": "V",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S11"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S11",
+      "house_id": "HC03",
+      "body_platform": "차체/대차 플랫폼·배터리 슬롯·차선 센서",
+      "custody_legal": "HC03 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "조우찬 주정비·HC03 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S11 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K267",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HC03",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K298",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S11 점검 피트에서 야간배차(야배)이 HC03 당직 로그에 출입을 남긴다. 조우찬은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 충전 슬롯 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "V12",
+      "display_name": "중장비팔",
+      "callsign": "중팔",
+      "cls": "V",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S12"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S12",
+      "house_id": "HC04",
+      "body_platform": "차체/대차 플랫폼·배터리 슬롯·차선 센서",
+      "custody_legal": "HC04 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "전미리 주정비·HC04 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S12 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K292",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HC04",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K305",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S12 충전 슬롯에서 중장비팔(중팔)이 HC04 당직 로그에 출입을 남긴다. 전미리은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 회차선 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "V13",
+      "display_name": "터널보선",
+      "callsign": "보선",
+      "cls": "V",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S13"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S13",
+      "house_id": "HC05",
+      "body_platform": "차체/대차 플랫폼·배터리 슬롯·차선 센서",
+      "custody_legal": "HC05 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "은채윤 주정비·HC05 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S13 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K317",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HC05",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K312",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S13 회차선에서 터널보선(보선)이 HC05 당직 로그에 출입을 남긴다. 은채윤은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 적재 베이 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "V14",
+      "display_name": "교량점검",
+      "callsign": "교량",
+      "cls": "V",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S14"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S14",
+      "house_id": "HC06",
+      "body_platform": "차체/대차 플랫폼·배터리 슬롯·차선 센서",
+      "custody_legal": "HC06 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "안기준 주정비·HC06 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S14 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K342",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HC06",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K319",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S14 적재 베이에서 교량점검(교량)이 HC06 당직 로그에 출입을 남긴다. 안기준은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 점검 피트 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "V15",
+      "display_name": "수문카트",
+      "callsign": "수문",
+      "cls": "V",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S15"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S15",
+      "house_id": "HC07",
+      "body_platform": "차체/대차 플랫폼·배터리 슬롯·차선 센서",
+      "custody_legal": "HC07 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "라진우 주정비·HC07 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S15 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K367",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HC07",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K326",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S15 점검 피트에서 수문카트(수문)이 HC07 당직 로그에 출입을 남긴다. 라진우은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 충전 슬롯 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    },
+    {
+      "id": "V16",
+      "display_name": "비상견인",
+      "callsign": "비견",
+      "cls": "V",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "Cast-Index.md#S16"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Synthetic-Actors.md"
+      ],
+      "state_id": "S16",
+      "house_id": "HC08",
+      "body_platform": "차체/대차 플랫폼·배터리 슬롯·차선 센서",
+      "custody_legal": "HC08 공동 보관·시민 참관 봉인·양도 시 삼자 서명",
+      "memory_continuity": "교대 단위 스냅샷만 유지, 장기 완전 기억 금지, 포크 시 분기 로그 필수",
+      "energy_parts": "교체형 배터리·마모 부품 할당제, 무한 에너지 없음",
+      "maintenance": "곽은재 주정비·HC08 감사 입회",
+      "network_safety": "구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용",
+      "emergent_goal": "S16 구역 연속 가동과 담당 인간 안전 우선",
+      "divergence_recovery": "일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결",
+      "relations": [
+        {
+          "target": "K391",
+          "kind": "custodian",
+          "reason": "주정비·법적 책임"
+        },
+        {
+          "target": "HC08",
+          "kind": "steward_house",
+          "reason": "보관·감사"
+        },
+        {
+          "target": "K333",
+          "kind": "work_peer",
+          "reason": "교대 협력"
+        }
+      ],
+      "prose": "S16 충전 슬롯에서 비상견인(비견)이 HC08 당직 로그에 출입을 남긴다. 곽은재은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 회차선 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
+    }
+  ],
   "story_batches": [],
   "hostile_groups": [],
   "monster_batches": [],
@@ -7244,6 +9460,11 @@
     {
       "id": "CL-0005",
       "summary": "외부전구 5개를 총람에 등록하고 투영한다",
+      "owner": "wiki-world"
+    },
+    {
+      "id": "CL-0006",
+      "summary": "합성 사회 인격 48명을 총람에 등록하고 투영한다",
       "owner": "wiki-world"
     }
   ]
