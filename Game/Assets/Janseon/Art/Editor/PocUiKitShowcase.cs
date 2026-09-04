@@ -1,4 +1,6 @@
 using System.IO;
+using System.Security.Cryptography;
+using System.Text;
 using UnityEditor;
 using UnityEngine;
 
@@ -12,9 +14,9 @@ namespace Janseon.Art.Editor
         {
             ApplyImportSettings();
             AssetDatabase.Refresh();
-            var dest = ResolveEvidencePath();
-            RenderShowcase(dest);
-            Debug.Log($"poc ui kit showcase wrote {dest}");
+            var destDir = ResolveEvidenceDir();
+            var receiptPath = RenderShowcase(destDir);
+            Debug.Log($"poc ui kit showcase wrote {receiptPath}");
         }
 
         static void ApplyImportSettings()
@@ -74,37 +76,99 @@ namespace Janseon.Art.Editor
             importer.SaveAndReimport();
         }
 
-        static string ResolveEvidencePath()
+        static string ResolveEvidenceDir()
         {
             var project = Directory.GetParent(Application.dataPath)?.FullName;
             var repo = Directory.GetParent(project ?? ".")?.FullName;
-            var destDir = Path.Combine(repo ?? ".", ".omo", "evidence", "unity-poc-core-loop", "task-13-artsource", "green");
+            var destDir = Path.Combine(repo ?? ".", ".omo", "evidence", "unity-poc-core-loop", "task-13-review-fixes", "showcase");
             Directory.CreateDirectory(destDir);
-            return Path.Combine(destDir, "unity-kit-showcase.png");
+            return destDir;
         }
 
-        static void RenderShowcase(string dest)
+        static string RenderShowcase(string destDir)
         {
-            const int width = 1280;
-            const int height = 720;
+            var shots = new[]
+            {
+                WriteShot(destDir, 1280, 720),
+                WriteShot(destDir, 1920, 1080),
+            };
+            var receipt = new DualResolutionReceipt
+            {
+                schema = "janseon-todo13-showcase-dual-res/1",
+                recorded_at = System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ss.fffZ"),
+                unity_version = Application.unityVersion,
+                execute_method = "Janseon.Art.Editor.PocUiKitShowcase.Run",
+                batchmode = true,
+                shots = shots,
+            };
+            var receiptPath = Path.Combine(destDir, "showcase-receipt.json");
+            File.WriteAllText(receiptPath, JsonUtility.ToJson(receipt, true));
+            return receiptPath;
+        }
+
+        static DualResolutionShot WriteShot(string destDir, int width, int height)
+        {
+            var scale = width / 1280f;
             var surface = new Texture2D(width, height, TextureFormat.RGBA32, false);
             Fill(surface, new Color32(18, 28, 42, 255));
-            Blit(surface, LoadPng($"{ArtRoot}/Title/poc-title-art.png"), 24, 24, 640, 360);
-            BlitNineSlice(surface, LoadPng($"{ArtRoot}/UI/poc-ui-panel-9slice.png"), 688, 24, 360, 360, 48);
-            Blit(surface, LoadPng($"{ArtRoot}/UI/poc-ui-button-normal.png"), 688, 400, 256, 64);
-            Blit(surface, LoadPng($"{ArtRoot}/UI/poc-ui-button-hover.png"), 688, 476, 256, 64);
-            Blit(surface, LoadPng($"{ArtRoot}/UI/poc-ui-button-pressed.png"), 688, 552, 256, 64);
+            Blit(surface, LoadPng($"{ArtRoot}/Title/poc-title-art.png"), Px(24, scale), Px(24, scale), Px(640, scale), Px(360, scale));
+            BlitNineSlice(surface, LoadPng($"{ArtRoot}/UI/poc-ui-panel-9slice.png"), Px(688, scale), Px(24, scale), Px(360, scale), Px(360, scale), Px(48, scale));
+            Blit(surface, LoadPng($"{ArtRoot}/UI/poc-ui-button-normal.png"), Px(688, scale), Px(400, scale), Px(256, scale), Px(64, scale));
+            Blit(surface, LoadPng($"{ArtRoot}/UI/poc-ui-button-hover.png"), Px(688, scale), Px(476, scale), Px(256, scale), Px(64, scale));
+            Blit(surface, LoadPng($"{ArtRoot}/UI/poc-ui-button-pressed.png"), Px(688, scale), Px(552, scale), Px(256, scale), Px(64, scale));
             var icons = new[] { "talk", "detour", "battle", "heal", "party", "station", "crate", "alert" };
             for (var i = 0; i < icons.Length; i++)
             {
-                Blit(surface, LoadPng($"{ArtRoot}/UI/icon-{icons[i]}.png"), 24 + i * 72, 400, 64, 64);
+                Blit(surface, LoadPng($"{ArtRoot}/UI/icon-{icons[i]}.png"), Px(24, scale) + i * Px(72, scale), Px(400, scale), Px(64, scale), Px(64, scale));
             }
 
-            Blit(surface, LoadPng($"{ArtRoot}/Tiles/poc-tile-floor.png"), 24, 500, 160, 160);
-            Blit(surface, LoadPng($"{ArtRoot}/Tiles/poc-tile-wall.png"), 200, 500, 160, 160);
-            Blit(surface, LoadPng($"{ArtRoot}/Tiles/poc-tile-platform.png"), 376, 500, 160, 160);
-            File.WriteAllBytes(dest, surface.EncodeToPNG());
+            Blit(surface, LoadPng($"{ArtRoot}/Tiles/poc-tile-floor.png"), Px(24, scale), Px(500, scale), Px(160, scale), Px(160, scale));
+            Blit(surface, LoadPng($"{ArtRoot}/Tiles/poc-tile-wall.png"), Px(200, scale), Px(500, scale), Px(160, scale), Px(160, scale));
+            Blit(surface, LoadPng($"{ArtRoot}/Tiles/poc-tile-platform.png"), Px(376, scale), Px(500, scale), Px(160, scale), Px(160, scale));
+            var png = surface.EncodeToPNG();
             Object.DestroyImmediate(surface);
+            var dest = Path.Combine(destDir, $"unity-kit-showcase-{width}x{height}.png");
+            File.WriteAllBytes(dest, png);
+            return new DualResolutionShot
+            {
+                width = width,
+                height = height,
+                path = dest,
+                sha256 = Sha256Hex(png),
+            };
+        }
+
+        static int Px(int value, float scale) => Mathf.RoundToInt(value * scale);
+
+        static string Sha256Hex(byte[] bytes)
+        {
+            using (var sha = SHA256.Create())
+            {
+                var hash = sha.ComputeHash(bytes);
+                var sb = new StringBuilder(hash.Length * 2);
+                for (var i = 0; i < hash.Length; i++) sb.Append(hash[i].ToString("x2"));
+                return sb.ToString();
+            }
+        }
+
+        [System.Serializable]
+        class DualResolutionReceipt
+        {
+            public string schema;
+            public string recorded_at;
+            public string unity_version;
+            public string execute_method;
+            public bool batchmode;
+            public DualResolutionShot[] shots;
+        }
+
+        [System.Serializable]
+        class DualResolutionShot
+        {
+            public int width;
+            public int height;
+            public string path;
+            public string sha256;
         }
 
         static Texture2D LoadPng(string assetPath)

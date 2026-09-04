@@ -79,10 +79,6 @@ export function promotedPng(assetId) {
   return join(repoRoot, 'Game', 'Assets', 'Janseon', 'Art', familyOf(assetId), `${assetId}.png`);
 }
 
-export function unityPng(assetId) {
-  return promotedPng(assetId);
-}
-
 export function bomPath(assetId) {
   return join(repoRoot, 'docs', 'assets', 'bom', BOM_FAMILY[familyOf(assetId)], `${assetId}.json`);
 }
@@ -129,9 +125,7 @@ export function collectMissingKitPaths() {
     }
     const promoted = promotedPng(assetId);
     if (!existsSync(promoted)) missing.push(promoted.slice(repoRoot.length + 1));
-    const unity = unityPng(assetId);
-    if (!existsSync(unity)) missing.push(unity.slice(repoRoot.length + 1));
-    if (!existsSync(`${unity}.meta`)) missing.push(`${unity.slice(repoRoot.length + 1)}.meta`);
+    if (!existsSync(`${promoted}.meta`)) missing.push(`${promoted.slice(repoRoot.length + 1)}.meta`);
     if (!existsSync(bomPath(assetId))) missing.push(bomPath(assetId).slice(repoRoot.length + 1));
   }
   for (const name of TILE_VARIANT_FILES) {
@@ -158,7 +152,9 @@ export function validatePromotedBom(document, pngPath) {
   if (document.status !== 'promoted') {
     errors.push({ code: 'status_not_promoted', field: 'status' });
   }
-  if (existsSync(pngPath)) {
+  if (!existsSync(pngPath)) {
+    errors.push({ code: 'promoted_png_missing', field: 'output_hash' });
+  } else {
     const digest = sha256File(pngPath);
     if (document.output_hash !== digest) {
       errors.push({ code: 'output_hash_mismatch', field: 'output_hash' });

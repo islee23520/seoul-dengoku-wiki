@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
+import { existsSync, readFileSync } from 'node:fs';
 import { mkdtemp, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
@@ -15,7 +16,6 @@ import {
   promotedPng,
   readJson,
   repoRoot,
-  unityPng,
   validatePromotedBom,
 } from './poc-ui-kit-contract.mjs';
 import { validateManifest } from './asset-manifest.mjs';
@@ -60,14 +60,35 @@ test('each exclusive asset BOM validates and matches promoted output hash at 0¢
   );
 });
 
-test('Unity promoted copies keep sidecar metas and matching bytes', () => {
+test('promoted PNGs keep TextureImporter sidecar metas', () => {
+  const seenGuids = new Set();
   for (const assetId of REQUIRED_ASSET_IDS) {
     const promoted = promotedPng(assetId);
-    const unity = unityPng(assetId);
-    assert.equal(unity, promoted);
-    const promotedBytes = spawnSync('cmp', ['-s', promoted, unity], { cwd: repoRoot });
-    assert.equal(promotedBytes.status, 0, `${assetId} Art and Unity PNG differ`);
+    const metaPath = `${promoted}.meta`;
+    assert.equal(existsSync(promoted), true, `missing promoted PNG: ${promoted}`);
+    assert.equal(existsSync(metaPath), true, `missing sidecar: ${metaPath}`);
+    const meta = readFileSync(metaPath, 'utf8');
+    assert.match(meta, /^fileFormatVersion: 2$/m, `${assetId} meta fileFormatVersion`);
+    const guidMatch = meta.match(/^guid: ([0-9a-f]{32})$/m);
+    assert.ok(guidMatch, `${assetId} meta missing guid`);
+    assert.equal(seenGuids.has(guidMatch[1]), false, `${assetId} duplicate guid ${guidMatch[1]}`);
+    seenGuids.add(guidMatch[1]);
+    assert.match(meta, /^TextureImporter:/m, `${assetId} meta is not TextureImporter`);
   }
+});
+
+test('promoted BOM validation fails closed when promoted PNG is missing', () => {
+  const document = readJson(bomPath('poc-ui-panel-9slice'));
+  const live = validatePromotedBom(document, promotedPng('poc-ui-panel-9slice'));
+  assert.equal(live.ok, true, JSON.stringify(live.errors));
+  const missingPng = join(tmpdir(), 'janseon-todo13-missing-promoted', 'poc-ui-panel-9slice.png');
+  assert.equal(existsSync(missingPng), false);
+  const result = validatePromotedBom(document, missingPng);
+  assert.equal(result.ok, false, 'missing promoted PNG must not validate');
+  assert.ok(
+    result.errors.some((error) => error.code === 'promoted_png_missing'),
+    JSON.stringify(result.errors),
+  );
 });
 
 test('geometry, alpha, 9-slice, icon 32px and tile seam QA pass', () => {
