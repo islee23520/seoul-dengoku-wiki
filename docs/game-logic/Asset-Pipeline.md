@@ -4,7 +4,7 @@
 
 ## 처음부터 승인까지
 
-사용 권리를 확인한 입력에서 시작해 ComfyUI 작업, TRELLIS 출력, 원본 보존, Blender 정리, Unity 가져오기, 사람의 검수를 거쳐 승인된 에셋이 됩니다. 이 순서는 기본 경로입니다. 초상, 프롭, 타일, 4방향 클립, 시네마틱은 같은 그래프에서 의도에 따라 노드가 켜지거나 건너뛰어집니다.
+사용 권리를 확인한 입력에서 시작해 2D 생성, TRELLIS 출력, 원본 보존, Blender 정리, Unity 가져오기, 사람의 검수를 거쳐 승인된 에셋이 됩니다. 이 순서는 기본 경로입니다. 초상, UI 콘셉트, 타이틀 아트, UI 키트, 프롭, 타일, 4방향 클립, 시네마틱은 같은 그래프에서 의도에 따라 노드가 켜지거나 건너뛰어집니다.
 
 ## 의도에서 그래프가 만들어지는 방식
 
@@ -12,10 +12,10 @@
 
 의도 필드:
 
-- `asset_class`: `portrait` · `character_mesh` · `prop` · `tile` · `animation_clip` · `identity_lock`
+- `asset_class`: `portrait` · `character_mesh` · `prop` · `tile` · `animation_clip` · `identity_lock` · `ui_concept` · `title_art` · `ui_kit`
 - `animation_need`: `none` · `four_dir_clip` · `cinematic_keyframe` · `previs`
 - `dcc`: `auto` · `blender` · `maya`
-- `generation_backend`: `openai_image` · `comfyui_trellis` · `none`
+- `generation_backend`: `nanobanana_gemini` · `grok_imagine` · `openai_image` · `trellis_v1` · `comfyui_trellis` · `none`
 - `rights_status`: `allowed` · `blocked` · `unresolved`
 - `source`: `generate` · `existing`
 
@@ -23,7 +23,8 @@
 
 ```bash
 node tools/art/pipeline-graph.mjs compile --intent tools/art/intents/character-four-dir.json
-node tools/art/pipeline-graph.mjs check --graph graph.json --host blender=1,maya=0,animo=0
+node tools/art/pipeline-graph.mjs check --graph graph.json --host blender=1,trellis=1,maya=0,animo=0
+node tools/art/pipeline-graph.mjs validate-manifest --manifest manifest.json
 ```
 
 컴파일은 구조만 만듭니다. 분기 검사가 호스트와 권리, 사람 검수 노드 존재를 닫힌 실패로 판정합니다. `blocked` 또는 `unresolved` 권리는 권리 확인 노드만 남기고 생성을 진행하지 않습니다.
@@ -36,11 +37,13 @@ node tools/art/pipeline-graph.mjs check --graph graph.json --host blender=1,maya
 
 이 경로에는 Maya나 Animo 노드가 없습니다. Animo는 `animo_not_on_auto_path`로 건너뛴 기록만 남깁니다.
 
-초상은 2D 생성과 보존, 사람 검수까지만 갑니다. 프롭은 TRELLIS와 Blender 정리까지 가되 애니 노드는 켜지 않습니다.
+초상, UI 콘셉트, 타이틀 아트, UI 키트, 타일은 2D 생성과 보존, 사람 검수까지만 갑니다. 프롭은 TRELLIS와 Blender 정리까지 가되 애니 노드는 켜지 않습니다.
 
-## ComfyUI와 TRELLIS
+## 2D 백엔드와 TRELLIS
 
-ComfyUI와 모델, 노드, Python, Torch, CUDA와 외부 휠 버전을 고정합니다. 기본 제공 노드를 우선 사용하며 외부 노드는 필요한 기능이 확인된 경우에만 저장소, 커밋, 라이선스와 배포 파일 해시를 검토합니다.
+2D 생성은 `nanobanana_gemini`, `grok_imagine`, `openai_image`를 각각 다른 노드 메타데이터로 남깁니다. POC 3D는 `trellis_v1`이며 노드는 `tool: trellis`, `model: microsoft/TRELLIS-image-large`입니다. 직접 Python 경로를 ComfyUI로 표기하지 않습니다. `comfyui_trellis`는 기존 의도가 커뮤니티 실행을 요구할 때만 남깁니다.
+
+ComfyUI를 쓸 때는 모델, 노드, Python, Torch, CUDA와 외부 휠 버전을 고정합니다. 기본 제공 노드를 우선 사용하며 외부 노드는 필요한 기능이 확인된 경우에만 저장소, 커밋, 라이선스와 배포 파일 해시를 검토합니다.
 
 ## Blender에서 손보는 것
 
@@ -76,4 +79,4 @@ Animo는 저장소에 넣지 않습니다. 상용 사용은 업스트림 조건(
 
 ## 에셋마다 남기는 기록
 
-출시 후보 에셋마다 입력 자료의 권리와 해시, 작업 순서, 시드, 모델과 노드 버전, 원본 출력, Blender 수정, Unity 설정과 사람의 승인 기록을 남깁니다. 그래프 컴파일 결과와 분기 검사 코드도 함께 남깁니다. `blocked` 또는 `unresolved` 값이 하나라도 있으면 프로젝트 에셋으로 받아들이지 않습니다.
+출시 후보 에셋마다 입력 자료의 권리와 해시, 작업 순서, 시드, 모델과 노드 버전, 원본 출력, Blender 수정, Unity 설정과 사람의 승인 기록을 남깁니다. 필수 필드는 `tools/art/asset-manifest.schema.json`이고 `validate-manifest`가 검사합니다. 그래프 컴파일 결과와 분기 검사 코드도 함께 남깁니다. `blocked` 또는 `unresolved` 값이 하나라도 있으면 프로젝트 에셋으로 받아들이지 않습니다.
