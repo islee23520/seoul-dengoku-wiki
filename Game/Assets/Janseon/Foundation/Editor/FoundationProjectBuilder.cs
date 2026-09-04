@@ -28,6 +28,101 @@ namespace Janseon.Foundation.Editor
             EditorApplication.isPlaying = true;
         }
 
+        /// <summary>
+        /// Batchmode entry: force-import Core + EditMode determinism tests, then refresh.
+        /// Invoked via -executeMethod Janseon.Foundation.Editor.FoundationProjectBuilder.ImportCoreDeterminismAssets
+        /// </summary>
+        public static void ImportCoreDeterminismAssets()
+        {
+            AssetDatabase.ImportAsset(
+                "Assets/Janseon/Core",
+                ImportAssetOptions.ImportRecursive | ImportAssetOptions.ForceUpdate);
+            AssetDatabase.ImportAsset(
+                "Assets/Tests/EditMode/CoreDeterminismTests.cs",
+                ImportAssetOptions.ForceUpdate);
+            AssetDatabase.ImportAsset(
+                "Assets/Tests/EditMode/Janseon.Foundation.EditModeTests.asmdef",
+                ImportAssetOptions.ForceUpdate);
+            AssetDatabase.Refresh(ImportAssetOptions.ForceUpdate);
+            Debug.Log("CORE_IMPORT_OK paths=Assets/Janseon/Core,Assets/Tests/EditMode/CoreDeterminismTests.cs");
+        }
+
+        /// <summary>
+        /// Batchmode entry: force-import Core route domain + EditMode route traversal tests.
+        /// Invoked via -executeMethod Janseon.Foundation.Editor.FoundationProjectBuilder.ImportRouteDomainAssets
+        /// </summary>
+        public static void ImportRouteDomainAssets()
+        {
+            AssetDatabase.ImportAsset(
+                "Assets/Janseon/Core",
+                ImportAssetOptions.ImportRecursive | ImportAssetOptions.ForceUpdate);
+            AssetDatabase.ImportAsset(
+                "Assets/Tests/EditMode/RouteTraversalTests.cs",
+                ImportAssetOptions.ForceUpdate);
+            AssetDatabase.ImportAsset(
+                "Assets/Tests/EditMode/Janseon.Foundation.EditModeTests.asmdef",
+                ImportAssetOptions.ForceUpdate);
+            AssetDatabase.Refresh(ImportAssetOptions.ForceUpdate);
+            Debug.Log("ROUTE_IMPORT_OK paths=Assets/Janseon/Core,Assets/Tests/EditMode/RouteTraversalTests.cs");
+        }
+
+        /// <summary>
+        /// Batchmode entry: force-import Core campaign loop domain + EditMode campaign tests.
+        /// Invoked via -executeMethod Janseon.Foundation.Editor.FoundationProjectBuilder.ImportCampaignDomainAssets
+        /// </summary>
+        public static void ImportCampaignDomainAssets()
+        {
+            AssetDatabase.ImportAsset(
+                "Assets/Janseon/Core",
+                ImportAssetOptions.ImportRecursive | ImportAssetOptions.ForceUpdate);
+            AssetDatabase.ImportAsset(
+                "Assets/Tests/EditMode/CampaignLoopTests.cs",
+                ImportAssetOptions.ForceUpdate);
+            AssetDatabase.ImportAsset(
+                "Assets/Tests/EditMode/Janseon.Foundation.EditModeTests.asmdef",
+                ImportAssetOptions.ForceUpdate);
+            AssetDatabase.Refresh(ImportAssetOptions.ForceUpdate);
+            Debug.Log("CAMPAIGN_IMPORT_OK paths=Assets/Janseon/Core,Assets/Tests/EditMode/CampaignLoopTests.cs");
+        }
+
+        /// <summary>
+        /// Batchmode entry: force-import Core battle SRPG domain + EditMode battle tests.
+        /// Invoked via -executeMethod Janseon.Foundation.Editor.FoundationProjectBuilder.ImportBattleDomainAssets
+        /// </summary>
+        public static void ImportBattleDomainAssets()
+        {
+            AssetDatabase.ImportAsset(
+                "Assets/Janseon/Core",
+                ImportAssetOptions.ImportRecursive | ImportAssetOptions.ForceUpdate);
+            AssetDatabase.ImportAsset(
+                "Assets/Tests/EditMode/BattleSrpgTests.cs",
+                ImportAssetOptions.ForceUpdate);
+            AssetDatabase.ImportAsset(
+                "Assets/Tests/EditMode/Janseon.Foundation.EditModeTests.asmdef",
+                ImportAssetOptions.ForceUpdate);
+            AssetDatabase.Refresh(ImportAssetOptions.ForceUpdate);
+            Debug.Log("BATTLE_IMPORT_OK paths=Assets/Janseon/Core,Assets/Tests/EditMode/BattleSrpgTests.cs");
+        }
+
+        /// <summary>
+        /// Batchmode entry: force-import Core settlement domain + EditMode exact-once settlement tests.
+        /// Invoked via -executeMethod Janseon.Foundation.Editor.FoundationProjectBuilder.ImportSettlementDomainAssets
+        /// </summary>
+        public static void ImportSettlementDomainAssets()
+        {
+            AssetDatabase.ImportAsset(
+                "Assets/Janseon/Core",
+                ImportAssetOptions.ImportRecursive | ImportAssetOptions.ForceUpdate);
+            AssetDatabase.ImportAsset(
+                "Assets/Tests/EditMode/SettlementExactOnceTests.cs",
+                ImportAssetOptions.ForceUpdate);
+            AssetDatabase.ImportAsset(
+                "Assets/Tests/EditMode/Janseon.Foundation.EditModeTests.asmdef",
+                ImportAssetOptions.ForceUpdate);
+            AssetDatabase.Refresh(ImportAssetOptions.ForceUpdate);
+            Debug.Log("SETTLEMENT_IMPORT_OK paths=Assets/Janseon/Core,Assets/Tests/EditMode/SettlementExactOnceTests.cs");
+        }
+
         [MenuItem("Janseon/Build Foundation Scene")]
         public static void BuildFoundationScene()
         {
