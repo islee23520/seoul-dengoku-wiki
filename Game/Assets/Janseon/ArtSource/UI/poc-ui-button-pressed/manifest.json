@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "asset_id": "poc-ui-button-pressed",
+  "asset_class": "ui_kit",
+  "source": "generate",
+  "rights_status": "allowed",
+  "generation_backend": "grok_imagine",
+  "provider": "xai",
+  "model": "grok-imagine-image",
+  "revision": "2026-09-04",
+  "prompt": "Isolated wide blank UI button, 4 to 1 rectangle, dark steel with a thin teal edge highlight, completely blank face, no text, no icon, no label. Flat orthographic. Solid MAGENTA background #FF00FF for cutout. NO watermark. State: pressed. Same silhouette as normal.",
+  "prompt_hash": "64724265f8c7cc4acea37f23a6f482be94559499cf08c08864f06b59272f2bed",
+  "input_hashes": [
+    "aefaa19d6f2d791e5d3e8f9a2e24cdc60486725819b57fc2dc95ff69e6faf686"
+  ],
+  "seed": 13007,
+  "cost_mode": "subscription",
+  "cost_cents": 0,
+  "raw_hash": "aefaa19d6f2d791e5d3e8f9a2e24cdc60486725819b57fc2dc95ff69e6faf686",
+  "output_hash": "65e3634fc30a7e6b506980813a02a3e723aa900816ad0662a14333a151171faa",
+  "tool_versions": {
+    "unity": "6000.7.0a5",
+    "python": "3.13",
+    "node": "22.14.0",
+    "pillow": "12.2.0",
+    "cliproxy": "subscription"
+  },
+  "operations": [
+    "edit_chain_from_normal",
+    "identical_alpha",
+    "archive",
+    "human_review",
+    "bom_promotion"
+  ],
+  "unity_import_settings": {
+    "texture_type": "Sprite",
+    "sprite_mode": "Single",
+    "filter_mode": "Point",
+    "alpha_is_transparency": true,
+    "wrap_mode": "Clamp",
+    "mesh_compression": "Off"
+  },
+  "review_receipts": [
+    {
+      "reviewer": "todo13-art-lead",
+      "verdict": "pass",
+      "receipt_hash": "6390edfe123bc55f9e2eca75501c2399fd0b29020ab47fa43637783d78e66196",
+      "reviewed_at": "2026-09-04T10:16:04.000Z",
+      "notes": "Machine geometry/alpha/9-slice/icon/seam QA plus human visual pass. Design.md absent on p1E; UI Toolkit binding is Todo 16 handoff."
+    }
+  ],
+  "status": "promoted",
+  "created_at": "2026-09-04T10:16:04.000Z",
+  "license": "generated-on-subscription-for-janseon-poc"
+}

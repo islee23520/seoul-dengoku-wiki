@@ -1,0 +1,19 @@
+{
+  "name": "ui_concept",
+  "backend": "gemini",
+  "path": "/tmp/todo13-gen/raw/ui_concept.jpg",
+  "sha256": "f4fca481db4755b40446c5d06b657baf5c889eedf9439c347ddcefd5bfa0b8e2",
+  "size": [
+    1408,
+    768
+  ],
+  "format": "JPEG",
+  "prompt": "Orthographic UI concept sheet for a Korean post-collapse subway strategy game. Dark navy panels with teal hairline borders, empty blank windows, three unlabeled rectangular metal buttons, small circular HUD icons that are pure shapes with no letters. Layout only, not a screenshot of a real OS. NO readable text, NO watermark, NO logos, NO hangul, NO latin words.",
+  "receipt": {
+    "http_status": 200,
+    "endpoint": "/v1/chat/completions",
+    "model": "gemini-3.1-flash-image",
+    "bytes": 623312
+  },
+  "created_at": "2026-09-04T10:10:26.121104Z"
+}
