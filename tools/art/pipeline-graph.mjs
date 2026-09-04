@@ -10,6 +10,7 @@ import {
   BACKEND_3D_NODE,
   BACKENDS,
   DCCS,
+  INVALID_BACKENDS,
   GRAPH_SCHEMA_VERSION,
   MAYA_INCOMPATIBLE_ASSETS,
   MESH_ASSETS,
@@ -35,6 +36,7 @@ function validateIntent(intent) {
   if (!ANIMATION_NEEDS.has(intent.animation_need)) throw new PipelineError('unknown_animation_need');
   if (!DCCS.has(intent.dcc)) throw new PipelineError('unknown_dcc');
   if (!BACKENDS.has(intent.generation_backend)) throw new PipelineError('unknown_backend');
+  if (INVALID_BACKENDS.has(intent.generation_backend)) throw new PipelineError('trellis_invalid');
   if (!RIGHTS.has(intent.rights_status)) throw new PipelineError('unknown_rights');
   if (!SOURCES.has(intent.source)) throw new PipelineError('unknown_source');
   if (intent.source === 'generate' && intent.generation_backend === 'none') {
@@ -71,11 +73,8 @@ function selectStages(intent) {
   const meshLike = MESH_ASSETS.has(intent.asset_class);
   const still2d = STILL_2D_ASSETS.has(intent.asset_class);
   const generating = intent.source === 'generate';
-  const directTrellis = intent.generation_backend === 'trellis_v1';
 
-  if (generating && (still2d || (meshLike && !directTrellis))) stages.push('generate_2d');
-  if (generating && meshLike) stages.push('generate_3d_trellis');
-  if (generating && (still2d || meshLike)) stages.push('archive_raw');
+  if (generating && (still2d || meshLike)) stages.push('generate_2d', 'archive_raw');
 
   if (meshLike) stages.push('blender_cleanup');
   if (intent.asset_class === 'character_mesh') stages.push('blender_rig');
@@ -173,10 +172,12 @@ export function checkGraph(graph, host = {}) {
   const needsBlender = ids.some((id) => id.startsWith('blender_'));
   if (needsBlender && !host.blender_available) codes.push('blender_missing');
 
-  const needsDirectTrellis = nodes.some(
-    (node) => node.id === 'generate_3d_trellis' && node.execution === 'direct_python',
-  );
-  if (needsDirectTrellis && !host.trellis_available) codes.push('trellis_missing');
+  if (
+    nodes.some((node) => node.id === 'generate_3d_trellis')
+    || INVALID_BACKENDS.has(intent.generation_backend)
+  ) {
+    codes.push('trellis_invalid');
+  }
 
   return { ok: codes.length === 0, codes };
 }
