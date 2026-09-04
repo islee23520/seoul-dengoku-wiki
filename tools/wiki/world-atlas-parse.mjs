@@ -52,7 +52,7 @@ export function proseSentences(prose) {
     .trim();
   if (body === '') return [];
   return body
-    .split(/(?<=[.。!?다요다])(?:\s+|$)/)
+    .split(/(?<=다\.)(?:\s+|$)|(?<=[.。!?])(?:\s+|$)/)
     .map((part) => part.trim())
     .filter((part) => part !== '');
 }

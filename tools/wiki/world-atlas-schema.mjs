@@ -104,6 +104,19 @@ export const HOUSE_REQUIRED_FIELDS = Object.freeze([
   'protected_guests', 'ai_stewardship', 'obligations', 'arcs', 'prose',
 ]);
 
+export const STORY_SECTION_KEYS = Object.freeze([
+  '정체성·출신',
+  '붕괴 전 삶',
+  '가문·기업·공동체',
+  '붕괴의 상처',
+  '생존 전환점',
+  '현재 지위',
+  '비밀·빚·죄책감',
+  '관계 공동과거',
+  '3막 개인 서사선',
+  '분기 결말',
+]);
+
 export const PROJECTION_FILES = Object.freeze({
   houses: 'Operating-Houses.md',
   theaters: 'External-Theaters.md',

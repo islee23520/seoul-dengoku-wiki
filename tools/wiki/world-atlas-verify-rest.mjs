@@ -7,7 +7,9 @@ import {
   SOURCE_KINDS,
   STATES,
   THEATERS,
+  STORY_SECTION_KEYS,
 } from './world-atlas-schema.mjs';
+import { proseSentences } from './world-atlas-parse.mjs';
 
 export function verifyTheaters(atlas, projections, fail) {
   const theaters = atlas.theaters ?? [];
@@ -181,4 +183,79 @@ export function verifySeeds(atlas, projections, fail) {
     if (!covered.group.has(group.id)) fail('E_MISSING_ARC', group.id);
   }
   if (!projections[PROJECTION_FILES.chronology]) fail('E_MISSING_PROJECTION', PROJECTION_FILES.chronology);
+}
+
+
+export function verifyStoryContentBatch(atlas, projections, fail, batchId) {
+  const manifest = (atlas.story_batches ?? []).find((b) => b.id === batchId);
+  if (!manifest) {
+    fail('E_BATCH_MISSING', batchId);
+    return;
+  }
+  const content = atlas.story_contents?.[batchId];
+  if (!content) {
+    fail('E_STORY_CONTENT', batchId);
+    return;
+  }
+  const actors = content.actors ?? [];
+  if (actors.length !== 10) fail('E_BATCH_SIZE', `${batchId} content=${actors.length}`);
+  const manifestIds = (manifest.actors ?? []).map((a) => a.id);
+  const contentIds = actors.map((a) => a.id);
+  if (contentIds.join(',') !== manifestIds.join(',')) fail('E_STORY_ID_ORDER', batchId);
+  const seen = new Set();
+  for (const actor of actors) {
+    for (const key of STORY_SECTION_KEYS) {
+      const body = actor.sections?.[key];
+      if (!body || String(body).trim() === '') fail('E_STORY_SECTION', `${actor.id} ${key}`);
+    }
+    if (!Array.isArray(actor.arc) || actor.arc.length < 3) fail('E_STORY_ARC', actor.id);
+    if (!Array.isArray(actor.outcomes) || actor.outcomes.length < 2) fail('E_STORY_OUTCOME', actor.id);
+    for (const key of STORY_SECTION_KEYS) {
+      const trimmed = String(actor.sections?.[key] ?? '').trim();
+      if (seen.has(trimmed)) fail('E_DUPLICATE_SENTENCE', `${batchId} ${actor.id} ${key}`);
+      seen.add(trimmed);
+      for (const sentence of proseSentences(trimmed)) {
+        if (sentence.length < 28) continue;
+        if (seen.has(sentence)) fail('E_DUPLICATE_SENTENCE', `${batchId} ${sentence.slice(0, 40)}`);
+        seen.add(sentence);
+      }
+    }
+  }
+  const projName = `Story-Batch-${batchId}.md`;
+  if (!projections[projName]) fail('E_MISSING_PROJECTION', projName);
+}
+
+export function verifyMonsterContentBatch(atlas, projections, fail, batchId) {
+  const manifest = (atlas.monster_batches ?? []).find((b) => b.id === batchId);
+  if (!manifest) {
+    fail('E_MONSTER_BATCH_MISSING', batchId);
+    return;
+  }
+  const content = atlas.monster_contents?.[batchId];
+  if (!content) {
+    fail('E_MONSTER_CONTENT', batchId);
+    return;
+  }
+  const entries = content.entries ?? [];
+  const expected = manifest.entry_ids ?? [];
+  if (entries.map((e) => e.id).join(',') !== expected.join(',')) fail('E_MONSTER_ID_ORDER', batchId);
+  for (const entry of entries) {
+    for (const field of ['display_name', 'group_id', 'role_class', 'prose']) {
+      if (!entry[field]) fail('E_MONSTER_FIELD', `${entry.id} ${field}`);
+    }
+  }
+  const projName = `Monster-Batch-${batchId}.md`;
+  if (!projections[projName]) fail('E_MISSING_PROJECTION', projName);
+}
+
+export function verifyGroupDossiers(atlas, projections, fail, groupIds) {
+  const set = new Set(groupIds);
+  for (const group of atlas.hostile_groups ?? []) {
+    if (!set.has(group.id)) continue;
+    if (!group.dossier_prose || String(group.dossier_prose).trim() === '') {
+      fail('E_GROUP_DOSSIER', group.id);
+    }
+    const proj = `Hostile-Group-${group.id}.md`;
+    if (!projections[proj]) fail('E_MISSING_PROJECTION', proj);
+  }
 }
