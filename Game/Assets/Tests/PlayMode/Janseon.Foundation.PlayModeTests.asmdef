@@ -1,0 +1,23 @@
+{
+  "name": "Janseon.Foundation.PlayModeTests",
+  "rootNamespace": "Janseon.Foundation.Tests",
+  "references": [
+    "Janseon.Foundation",
+    "VContainer",
+    "VContainer.Unity"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [
+    "UNITY_INCLUDE_TESTS"
+  ],
+  "versionDefines": [],
+  "noEngineReferences": false,
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

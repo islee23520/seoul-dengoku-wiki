@@ -1,7 +1,10 @@
 {
   "name": "Janseon.Foundation",
   "rootNamespace": "Janseon.Foundation",
-  "references": [],
+  "references": [
+    "VContainer",
+    "VContainer.Unity"
+  ],
   "includePlatforms": [],
   "excludePlatforms": [],
   "allowUnsafeCode": false,

@@ -1,0 +1,35 @@
+# 잔선: 서울 — 제품 콘셉트와 기술 기준선
+
+## 제품
+
+《잔선: 서울》은 붕괴 이후 서울의 지하철망을 지상·지하의 다층 전략 그래프로 다루는 인물 중심 대전략 SRPG입니다. 탐색, 상호작용과 전투는 고정 직교 아이소메트릭 카메라와 4방향 타일 격자를 공유합니다.
+
+## 기술 기준선
+
+- Unity `6000.7.0a5`
+- Universal Render Pipeline `17.7.0`
+- Input System `1.20.0`
+- Unity Test Framework `1.8.0`
+- VContainer `1.19.0` — 현재 Foundation 아키텍처 모듈에서 추가할 DI 기준
+
+VContainer 외 Makcha-Unity 패키지는 현재 모듈에 실제 호출자와 실패 테스트가 생기기 전에는 추가하지 않습니다.
+
+## 아키텍처 원칙
+
+- 씬 하나에 앱 수명주기, 화면, 게임 상태와 저장 책임을 모으지 않습니다.
+- `Bootstrap.unity`는 프로세스 수명의 App scope와 FSM만 소유합니다.
+- `Foundation.unity`는 화면 수명의 child scope, 카메라와 조명만 소유합니다.
+- FSM만 scene transition을 승인하며 대상 readiness 이후에 안정 상태를 commit합니다.
+- static mutable Singleton과 service locator를 금지합니다.
+- Repository와 domain contract는 Unity-free 경계를 유지합니다.
+- 같은 seed와 command log는 같은 상태와 원장 hash를 만들어야 합니다.
+
+상세 계약은 [`docs/game-logic/Unity-System-Design.md`](docs/game-logic/Unity-System-Design.md), 실행 순서는 [`docs/game-logic/Unity-Architecture-Implementation-Plan.md`](docs/game-logic/Unity-Architecture-Implementation-Plan.md)를 따릅니다.
+
+## 현재 구현 범위
+
+현재 구현된 것은 단일 Foundation 씬, 장르 계약과 EditMode 테스트입니다. Bootstrap/FSM/VContainer 구조는 이 작업에서 구현할 대상이며 이미 존재한다고 간주하지 않습니다.
+
+## 완료 판단
+
+Wiki 계약, 정적 아키텍처 게이트, Unity compile, EditMode/PlayMode 테스트, 실제 Unity Editor Play Mode 검증과 네 축 시각 리뷰가 모두 통과해야 Foundation 아키텍처 모듈이 완료됩니다.

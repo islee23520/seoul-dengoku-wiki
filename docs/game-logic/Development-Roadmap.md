@@ -1,6 +1,6 @@
 # 개발 로드맵
 
-![모든 개발 단계가 보존해야 하는 고정 아이소메트릭 문법](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-grammar.svg?raw=true)
+![모든 개발 단계에서 칸에 누가 서 있고 어느 쪽을 보며 어디까지 보이는지](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-grammar.svg?raw=true)
 
 ## 현재 완료
 
@@ -13,13 +13,13 @@
 
 1. 엔진 독립 모듈과 의존성 방어
 2. 다층 세계 그래프와 출처 검증
-3. 결정론적 캠페인 스케줄러
+3. 같은 입력에 같은 결과를 내는 원정 일정 처리
 4. 인물, 세력, 생업, 물류와 외교
 5. 동일 격자의 이동과 조우
-6. 전투 컨텍스트·결과와 SRPG 규칙
+6. 전투에 넘기는 정보와 전술 전투 결과
 7. 멱등 정산과 저장
 8. 캐릭터 표현 비교
-9. 자산 BOM과 생성 파이프라인
+9. 에셋 기록표와 생성 과정
 10. 한 노선, 세 역, 두 세력의 통합 슬라이스
 
 ## 검증 게이트

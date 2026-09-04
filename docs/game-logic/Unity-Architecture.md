@@ -1,10 +1,10 @@
-# Unity 아키텍처
+# 유니티 구조
 
-![Unity 표현 계층이 구현하는 고정 아이소메트릭 규격](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-grammar.svg?raw=true)
+![유니티 화면에서 칸에 누가 서 있고 어느 쪽을 보며 어디까지 보이는지](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-grammar.svg?raw=true)
 
 ## 기준선
 
-현재 기반은 Unity `6000.7.0a5`입니다. 알파 채널이므로 편집기 revision과 package lock을 함께 고정하고 업그레이드 전 별도 검증을 수행합니다.
+현재 기반은 Unity `6000.7.0a5`입니다. 시험판이므로 편집기 판본과 패키지 잠금 파일을 함께 고정하고, 판본을 올리기 전에 따로 검증합니다.
 
 현재 생성된 기반은 다음뿐입니다.
 
@@ -13,7 +13,7 @@
 - EditMode 장르 계약 테스트
 - URP, Input System, Test Framework 패키지 기준선
 
-## 목표 모듈
+## 영역별 책임
 
 | 모듈 | 책임 | UnityEngine 참조 |
 |---|---|---|
