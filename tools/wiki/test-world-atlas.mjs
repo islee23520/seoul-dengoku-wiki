@@ -47,6 +47,11 @@ test('Given current repository When synthetics stage Then 48 synthetics and Synt
   assert.equal(result.code, 0, result.output);
 });
 
+test('Given current repository When story-manifest stage Then 46 batches locked', () => {
+  const result = runVerifier(['--docs', liveDocs, '--stage', 'story-manifest', '--atlas', atlasPath]);
+  assert.equal(result.code, 0, result.output);
+});
+
 test('Given a company mark in theater prose When theaters stage Then E_CURRENT_ACTOR_CLAIM', async () => {
   const dir = await mkdtemp(join(tmpdir(), 'atlas-theater-token-'));
   fixtures.push(dir);
