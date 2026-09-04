@@ -9,7 +9,7 @@ import {
   THEATERS,
   STORY_SECTION_KEYS,
 } from './world-atlas-schema.mjs';
-import { proseSentences } from './world-atlas-parse.mjs';
+import { proseSentences, findNearTemplatePairs } from './world-atlas-parse.mjs';
 
 export function verifyTheaters(atlas, projections, fail) {
   const theaters = atlas.theaters ?? [];
@@ -220,6 +220,14 @@ export function verifyStoryContentBatch(atlas, projections, fail, batchId) {
         seen.add(sentence);
       }
     }
+  }
+  const nearHits = findNearTemplatePairs(actors, STORY_SECTION_KEYS);
+  if (nearHits.length) {
+    const hit = nearHits[0];
+    fail(
+      'E_NEAR_TEMPLATE',
+      `${batchId} ${hit.key} ${hit.left}/${hit.right} sim=${hit.similarity.toFixed(3)}`,
+    );
   }
   const projName = `Story-Batch-${batchId}.md`;
   if (!projections[projName]) fail('E_MISSING_PROJECTION', projName);

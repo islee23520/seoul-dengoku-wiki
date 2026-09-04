@@ -3,7 +3,7 @@
 이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.
 
 - 원본 앵커: `docs/game-logic/World-Narrative-Atlas.md`
-- 원본 해시: `018e2477e3ebfdd0c6e0472ed445dbc7e7037bdd1e90f16ca938d1e379346382`
+- 원본 해시: `581bf83466d5f5b56bff79d2d2e498abb49ce7ad62ac95f3986382d974df7ede`
 
 ## XT01 · 임진관문전구
 

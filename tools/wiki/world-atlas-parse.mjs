@@ -62,3 +62,58 @@ export function scanCompanyTokens(text, fail, rule, where) {
     if (String(text).includes(token)) fail(rule, `${where} token=${token}`);
   }
 }
+
+export function normalizeStoryTemplateText(text, batchNames = [], batchIds = []) {
+  let t = String(text ?? '');
+  const ids = [...batchIds].sort((a, b) => b.length - a.length);
+  const names = [...batchNames].sort((a, b) => b.length - a.length);
+  for (const id of ids) t = t.split(id).join('');
+  for (const name of names) t = t.split(name).join('');
+  t = t.replace(/STORY-B\d{3}-[A-Z0-9]+/g, '');
+  t = t.replace(/\b(?:HC|HP|XT|S)\d{2}\b/g, '');
+  t = t.replace(/[A-Z]+-\d+(?:-[A-Z0-9]+)*/g, '');
+  t = t.replace(/\d+/g, '#');
+  t = t.replace(/\s+/g, '');
+  return t;
+}
+
+export function charBigramSet(text) {
+  const out = new Set();
+  const s = String(text ?? '');
+  for (let i = 0; i < s.length - 1; i += 1) out.add(s.slice(i, i + 2));
+  return out;
+}
+
+export function bigramJaccard(a, b) {
+  const A = charBigramSet(a);
+  const B = charBigramSet(b);
+  if (A.size === 0 || B.size === 0) return 0;
+  let inter = 0;
+  for (const g of A) if (B.has(g)) inter += 1;
+  return inter / (A.size + B.size - inter);
+}
+
+/** Near-copy scaffold detector: strip IDs/names/codes then compare section bodies. */
+export function findNearTemplatePairs(actors, sectionKeys, opts = {}) {
+  const threshold = opts.threshold ?? 0.62;
+  const minLen = opts.minLen ?? 48;
+  const names = actors.map((a) => a.name).filter(Boolean);
+  const ids = actors.map((a) => a.id).filter(Boolean);
+  const hits = [];
+  for (const key of sectionKeys) {
+    const norms = actors.map((actor) => ({
+      id: actor.id,
+      text: normalizeStoryTemplateText(actor.sections?.[key] ?? '', names, ids),
+    }));
+    for (let i = 0; i < norms.length; i += 1) {
+      for (let j = i + 1; j < norms.length; j += 1) {
+        if (norms[i].text.length < minLen || norms[j].text.length < minLen) continue;
+        const sim = bigramJaccard(norms[i].text, norms[j].text);
+        if (sim >= threshold) {
+          hits.push({ key, left: norms[i].id, right: norms[j].id, similarity: sim });
+        }
+      }
+    }
+  }
+  return hits;
+}
