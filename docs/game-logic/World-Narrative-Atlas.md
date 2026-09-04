@@ -11,7 +11,7 @@
 | 문서 상태 | 활성 |
 | 소유자 | wiki-world |
 | 지원 검토자 | (없음, 외부 검토 대기) |
-| 개정 | r7 |
+| 개정 | r8 |
 | 마지막 검증 커밋 | `c485bc84629c39e978889f1585ade92bef4ceda4` |
 | 출처층 | original-fiction |
 | 출처 앵커 | Cast-Index.md, Sixteen-States.md, Research-Sources.md |
@@ -59,6 +59,10 @@
 
 B001–B046 배치 원장은 인간 K001–K412와 합성 H/F/V를 각각 한 번씩만 할당합니다. 본 절은 식별자 원장만 잠그며 배치 산문은 후속 작업에서 등록합니다.
 
+## 적대 생태
+
+G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 후속 배치에서 채웁니다. 실재 기업 사고 귀속과 실재 피해자 선정주의는 금지합니다.
+
 ## 기계 등록부
 
 ```json
@@ -70,7 +74,7 @@ B001–B046 배치 원장은 인간 K001–K412와 합성 H/F/V를 각각 한 �
     "document_status": "active",
     "owner": "wiki-world",
     "support_reviewers": [],
-    "revision": "r7",
+    "revision": "r8",
     "last_verified_commit": "c485bc84629c39e978889f1585ade92bef4ceda4",
     "source_kind": "original-fiction",
     "source_anchors": [
@@ -166,10 +170,12 @@ B001–B046 배치 원장은 인간 K001–K412와 합성 H/F/V를 각각 한 �
       "Operating-Houses.md",
       "External-Theaters.md",
       "Synthetic-Actors.md",
-      "Story-Batch-Manifest.md"
+      "Story-Batch-Manifest.md",
+      "Hostile-Ecology-Index.md",
+      "Monster-Batch-Manifest.md"
     ],
-    "change_ledger_entry": "CL-0007",
-    "verification_state": "story-manifest-locked"
+    "change_ledger_entry": "CL-0008",
+    "verification_state": "monster-manifest-locked"
   },
   "writing_contract": {
     "narrative_register": "plain-da",
@@ -13317,8 +13323,2105 @@ B001–B046 배치 원장은 인간 K001–K412와 합성 H/F/V를 각각 한 �
       ]
     }
   ],
-  "hostile_groups": [],
-  "monster_batches": [],
+  "hostile_groups": [
+    {
+      "id": "G01",
+      "display_name": "범람멧돼지군",
+      "category": "animal-urban",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "docs/game-logic/Sixteen-States.md"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Hostile-Ecology-Index.md",
+        "Monster-Batch-Manifest.md"
+      ],
+      "modern_anxiety": "홍수 후 도심 멧돼지 출몰과 쓰레기 경쟁",
+      "fictional_origin": "붕괴 이후 S01·S06 회랑에서 범람멧돼지군이 형성된 서울 창작 기원이다.",
+      "territory_migration": "S01 핵심 서식, S06 계절 이동, XT01 외곽 압력에 반응한다.",
+      "economy": "에너지·고철·유기물·냉각수 중 구역 잔여 자원을 순환하며 HC01 회수 작업과 경합한다.",
+      "lifecycle": "출현-확산-정체-협상가능-와해 5단계. 복제는 자원 상한에 묶인다.",
+      "senses": "진동·열·전자 잡음·냄새 중 둘 이상. 완전 투시 없음.",
+      "hierarchy": "컨트롤러 1 + 무리 단위. 합성 H01 센서 로그와 충돌 시 인간 중재 우선.",
+      "links": {
+        "states": [
+          "S01",
+          "S06"
+        ],
+        "houses": [
+          "HC01"
+        ],
+        "theaters": [
+          "XT01"
+        ],
+        "synthetics": [
+          "H01"
+        ],
+        "corporations_successor_only": [
+          "HC01"
+        ]
+      },
+      "escalation": "1 경고 출몰 / 2 인프라 교란 / 3 거점 봉쇄. 3은 협상 창 닫힘 직전.",
+      "combat_counterplay": "소음·냉각·봉인·먹이 우회·경로 차단. 학살 올인 금지 설계.",
+      "negotiation": "HC01 중개로 자원 할당·통행 시간 거래 가능. 전멸 조건 없음.",
+      "moral_cost": "무차별 제거는 시민 인프라와 공생 가능성을 함께 부순다.",
+      "scenario_links": [
+        "G01-SC1",
+        "G01-SC2",
+        "G01-SC3"
+      ],
+      "prose": "S01 가장자리에서 범람멧돼지군 무리가 홍수 후 도심 멧돼지 출몰과 쓰레기 경쟁의 흔적을 남긴다. HC01 순찰은 총구보다 봉인 테이프를 먼저 꺼내고, H01 센서는 오탐을 세 번 걸러 보고한다. XT01 쪽에서 유입 신호가 와도 현 정권을 단죄하지 않고 이동 경로만 적는다. 협상 창이 열려 있는 한, 전멸 명령은 보류한다."
+    },
+    {
+      "id": "G02",
+      "display_name": "전파까마귀떼",
+      "category": "animal-urban",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "docs/game-logic/Sixteen-States.md"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Hostile-Ecology-Index.md",
+        "Monster-Batch-Manifest.md"
+      ],
+      "modern_anxiety": "송신탑·전선 주변 군집과 신호 간섭 불안",
+      "fictional_origin": "붕괴 이후 S02·S07 회랑에서 전파까마귀떼이 형성된 서울 창작 기원이다.",
+      "territory_migration": "S02 핵심 서식, S07 계절 이동, XT02 외곽 압력에 반응한다.",
+      "economy": "에너지·고철·유기물·냉각수 중 구역 잔여 자원을 순환하며 HC02 회수 작업과 경합한다.",
+      "lifecycle": "출현-확산-정체-협상가능-와해 5단계. 복제는 자원 상한에 묶인다.",
+      "senses": "진동·열·전자 잡음·냄새 중 둘 이상. 완전 투시 없음.",
+      "hierarchy": "컨트롤러 1 + 무리 단위. 합성 H02 센서 로그와 충돌 시 인간 중재 우선.",
+      "links": {
+        "states": [
+          "S02",
+          "S07"
+        ],
+        "houses": [
+          "HC02"
+        ],
+        "theaters": [
+          "XT02"
+        ],
+        "synthetics": [
+          "H02"
+        ],
+        "corporations_successor_only": [
+          "HC02"
+        ]
+      },
+      "escalation": "1 경고 출몰 / 2 인프라 교란 / 3 거점 봉쇄. 3은 협상 창 닫힘 직전.",
+      "combat_counterplay": "소음·냉각·봉인·먹이 우회·경로 차단. 학살 올인 금지 설계.",
+      "negotiation": "HC02 중개로 자원 할당·통행 시간 거래 가능. 전멸 조건 없음.",
+      "moral_cost": "무차별 제거는 시민 인프라와 공생 가능성을 함께 부순다.",
+      "scenario_links": [
+        "G02-SC1",
+        "G02-SC2",
+        "G02-SC3"
+      ],
+      "prose": "S02 가장자리에서 전파까마귀떼 무리가 송신탑·전선 주변 군집과 신호 간섭 불안의 흔적을 남긴다. HC02 순찰은 총구보다 봉인 테이프를 먼저 꺼내고, H02 센서는 오탐을 세 번 걸러 보고한다. XT02 쪽에서 유입 신호가 와도 현 정권을 단죄하지 않고 이동 경로만 적는다. 협상 창이 열려 있는 한, 전멸 명령은 보류한다."
+    },
+    {
+      "id": "G03",
+      "display_name": "유기견철군",
+      "category": "animal-urban",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "docs/game-logic/Sixteen-States.md"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Hostile-Ecology-Index.md",
+        "Monster-Batch-Manifest.md"
+      ],
+      "modern_anxiety": "유기·방치 개체의 무리지어 이동과 영역 표시",
+      "fictional_origin": "붕괴 이후 S03·S08 회랑에서 유기견철군이 형성된 서울 창작 기원이다.",
+      "territory_migration": "S03 핵심 서식, S08 계절 이동, XT03 외곽 압력에 반응한다.",
+      "economy": "에너지·고철·유기물·냉각수 중 구역 잔여 자원을 순환하며 HC03 회수 작업과 경합한다.",
+      "lifecycle": "출현-확산-정체-협상가능-와해 5단계. 복제는 자원 상한에 묶인다.",
+      "senses": "진동·열·전자 잡음·냄새 중 둘 이상. 완전 투시 없음.",
+      "hierarchy": "컨트롤러 1 + 무리 단위. 합성 H03 센서 로그와 충돌 시 인간 중재 우선.",
+      "links": {
+        "states": [
+          "S03",
+          "S08"
+        ],
+        "houses": [
+          "HC03"
+        ],
+        "theaters": [
+          "XT03"
+        ],
+        "synthetics": [
+          "H03"
+        ],
+        "corporations_successor_only": [
+          "HC03"
+        ]
+      },
+      "escalation": "1 경고 출몰 / 2 인프라 교란 / 3 거점 봉쇄. 3은 협상 창 닫힘 직전.",
+      "combat_counterplay": "소음·냉각·봉인·먹이 우회·경로 차단. 학살 올인 금지 설계.",
+      "negotiation": "HC03 중개로 자원 할당·통행 시간 거래 가능. 전멸 조건 없음.",
+      "moral_cost": "무차별 제거는 시민 인프라와 공생 가능성을 함께 부순다.",
+      "scenario_links": [
+        "G03-SC1",
+        "G03-SC2",
+        "G03-SC3"
+      ],
+      "prose": "S03 가장자리에서 유기견철군 무리가 유기·방치 개체의 무리지어 이동과 영역 표시의 흔적을 남긴다. HC03 순찰은 총구보다 봉인 테이프를 먼저 꺼내고, H03 센서는 오탐을 세 번 걸러 보고한다. XT03 쪽에서 유입 신호가 와도 현 정권을 단죄하지 않고 이동 경로만 적는다. 협상 창이 열려 있는 한, 전멸 명령은 보류한다."
+    },
+    {
+      "id": "G04",
+      "display_name": "하수너구리족",
+      "category": "animal-urban",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "docs/game-logic/Sixteen-States.md"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Hostile-Ecology-Index.md",
+        "Monster-Batch-Manifest.md"
+      ],
+      "modern_anxiety": "하수·지하 통로 점유와 야간 출몰",
+      "fictional_origin": "붕괴 이후 S04·S09 회랑에서 하수너구리족이 형성된 서울 창작 기원이다.",
+      "territory_migration": "S04 핵심 서식, S09 계절 이동, XT04 외곽 압력에 반응한다.",
+      "economy": "에너지·고철·유기물·냉각수 중 구역 잔여 자원을 순환하며 HC04 회수 작업과 경합한다.",
+      "lifecycle": "출현-확산-정체-협상가능-와해 5단계. 복제는 자원 상한에 묶인다.",
+      "senses": "진동·열·전자 잡음·냄새 중 둘 이상. 완전 투시 없음.",
+      "hierarchy": "컨트롤러 1 + 무리 단위. 합성 H04 센서 로그와 충돌 시 인간 중재 우선.",
+      "links": {
+        "states": [
+          "S04",
+          "S09"
+        ],
+        "houses": [
+          "HC04"
+        ],
+        "theaters": [
+          "XT04"
+        ],
+        "synthetics": [
+          "H04"
+        ],
+        "corporations_successor_only": [
+          "HC04"
+        ]
+      },
+      "escalation": "1 경고 출몰 / 2 인프라 교란 / 3 거점 봉쇄. 3은 협상 창 닫힘 직전.",
+      "combat_counterplay": "소음·냉각·봉인·먹이 우회·경로 차단. 학살 올인 금지 설계.",
+      "negotiation": "HC04 중개로 자원 할당·통행 시간 거래 가능. 전멸 조건 없음.",
+      "moral_cost": "무차별 제거는 시민 인프라와 공생 가능성을 함께 부순다.",
+      "scenario_links": [
+        "G04-SC1",
+        "G04-SC2",
+        "G04-SC3"
+      ],
+      "prose": "S04 가장자리에서 하수너구리족 무리가 하수·지하 통로 점유와 야간 출몰의 흔적을 남긴다. HC04 순찰은 총구보다 봉인 테이프를 먼저 꺼내고, H04 센서는 오탐을 세 번 걸러 보고한다. XT04 쪽에서 유입 신호가 와도 현 정권을 단죄하지 않고 이동 경로만 적는다. 협상 창이 열려 있는 한, 전멸 명령은 보류한다."
+    },
+    {
+      "id": "G05",
+      "display_name": "환승쥐군락",
+      "category": "animal-urban",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "docs/game-logic/Sixteen-States.md"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Hostile-Ecology-Index.md",
+        "Monster-Batch-Manifest.md"
+      ],
+      "modern_anxiety": "환승 통로 먹이그물과 전염 공포",
+      "fictional_origin": "붕괴 이후 S05·S10 회랑에서 환승쥐군락이 형성된 서울 창작 기원이다.",
+      "territory_migration": "S05 핵심 서식, S10 계절 이동, XT05 외곽 압력에 반응한다.",
+      "economy": "에너지·고철·유기물·냉각수 중 구역 잔여 자원을 순환하며 HC05 회수 작업과 경합한다.",
+      "lifecycle": "출현-확산-정체-협상가능-와해 5단계. 복제는 자원 상한에 묶인다.",
+      "senses": "진동·열·전자 잡음·냄새 중 둘 이상. 완전 투시 없음.",
+      "hierarchy": "컨트롤러 1 + 무리 단위. 합성 H05 센서 로그와 충돌 시 인간 중재 우선.",
+      "links": {
+        "states": [
+          "S05",
+          "S10"
+        ],
+        "houses": [
+          "HC05"
+        ],
+        "theaters": [
+          "XT05"
+        ],
+        "synthetics": [
+          "H05"
+        ],
+        "corporations_successor_only": [
+          "HC05"
+        ]
+      },
+      "escalation": "1 경고 출몰 / 2 인프라 교란 / 3 거점 봉쇄. 3은 협상 창 닫힘 직전.",
+      "combat_counterplay": "소음·냉각·봉인·먹이 우회·경로 차단. 학살 올인 금지 설계.",
+      "negotiation": "HC05 중개로 자원 할당·통행 시간 거래 가능. 전멸 조건 없음.",
+      "moral_cost": "무차별 제거는 시민 인프라와 공생 가능성을 함께 부순다.",
+      "scenario_links": [
+        "G05-SC1",
+        "G05-SC2",
+        "G05-SC3"
+      ],
+      "prose": "S05 가장자리에서 환승쥐군락 무리가 환승 통로 먹이그물과 전염 공포의 흔적을 남긴다. HC05 순찰은 총구보다 봉인 테이프를 먼저 꺼내고, H05 센서는 오탐을 세 번 걸러 보고한다. XT05 쪽에서 유입 신호가 와도 현 정권을 단죄하지 않고 이동 경로만 적는다. 협상 창이 열려 있는 한, 전멸 명령은 보류한다."
+    },
+    {
+      "id": "G06",
+      "display_name": "철새습지포식군",
+      "category": "animal-urban",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "docs/game-logic/Sixteen-States.md"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Hostile-Ecology-Index.md",
+        "Monster-Batch-Manifest.md"
+      ],
+      "modern_anxiety": "습지 복원 실패와 철새 경로 충돌",
+      "fictional_origin": "붕괴 이후 S06·S11 회랑에서 철새습지포식군이 형성된 서울 창작 기원이다.",
+      "territory_migration": "S06 핵심 서식, S11 계절 이동, XT01 외곽 압력에 반응한다.",
+      "economy": "에너지·고철·유기물·냉각수 중 구역 잔여 자원을 순환하며 HC06 회수 작업과 경합한다.",
+      "lifecycle": "출현-확산-정체-협상가능-와해 5단계. 복제는 자원 상한에 묶인다.",
+      "senses": "진동·열·전자 잡음·냄새 중 둘 이상. 완전 투시 없음.",
+      "hierarchy": "컨트롤러 1 + 무리 단위. 합성 H06 센서 로그와 충돌 시 인간 중재 우선.",
+      "links": {
+        "states": [
+          "S06",
+          "S11"
+        ],
+        "houses": [
+          "HC06"
+        ],
+        "theaters": [
+          "XT01"
+        ],
+        "synthetics": [
+          "H06"
+        ],
+        "corporations_successor_only": [
+          "HC06"
+        ]
+      },
+      "escalation": "1 경고 출몰 / 2 인프라 교란 / 3 거점 봉쇄. 3은 협상 창 닫힘 직전.",
+      "combat_counterplay": "소음·냉각·봉인·먹이 우회·경로 차단. 학살 올인 금지 설계.",
+      "negotiation": "HC06 중개로 자원 할당·통행 시간 거래 가능. 전멸 조건 없음.",
+      "moral_cost": "무차별 제거는 시민 인프라와 공생 가능성을 함께 부순다.",
+      "scenario_links": [
+        "G06-SC1",
+        "G06-SC2",
+        "G06-SC3"
+      ],
+      "prose": "S06 가장자리에서 철새습지포식군 무리가 습지 복원 실패와 철새 경로 충돌의 흔적을 남긴다. HC06 순찰은 총구보다 봉인 테이프를 먼저 꺼내고, H06 센서는 오탐을 세 번 걸러 보고한다. XT01 쪽에서 유입 신호가 와도 현 정권을 단죄하지 않고 이동 경로만 적는다. 협상 창이 열려 있는 한, 전멸 명령은 보류한다."
+    },
+    {
+      "id": "G07",
+      "display_name": "전해질화상군",
+      "category": "humanoid-mutant",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "docs/game-logic/Sixteen-States.md"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Hostile-Ecology-Index.md",
+        "Monster-Batch-Manifest.md"
+      ],
+      "modern_anxiety": "배터리 누액·전해질 화상 후유",
+      "fictional_origin": "붕괴 이후 S07·S12 회랑에서 전해질화상군이 형성된 서울 창작 기원이다.",
+      "territory_migration": "S07 핵심 서식, S12 계절 이동, XT02 외곽 압력에 반응한다.",
+      "economy": "에너지·고철·유기물·냉각수 중 구역 잔여 자원을 순환하며 HC07 회수 작업과 경합한다.",
+      "lifecycle": "출현-확산-정체-협상가능-와해 5단계. 복제는 자원 상한에 묶인다.",
+      "senses": "진동·열·전자 잡음·냄새 중 둘 이상. 완전 투시 없음.",
+      "hierarchy": "컨트롤러 1 + 무리 단위. 합성 H07 센서 로그와 충돌 시 인간 중재 우선.",
+      "links": {
+        "states": [
+          "S07",
+          "S12"
+        ],
+        "houses": [
+          "HC07"
+        ],
+        "theaters": [
+          "XT02"
+        ],
+        "synthetics": [
+          "H07"
+        ],
+        "corporations_successor_only": [
+          "HC07"
+        ]
+      },
+      "escalation": "1 경고 출몰 / 2 인프라 교란 / 3 거점 봉쇄. 3은 협상 창 닫힘 직전.",
+      "combat_counterplay": "소음·냉각·봉인·먹이 우회·경로 차단. 학살 올인 금지 설계.",
+      "negotiation": "HC07 중개로 자원 할당·통행 시간 거래 가능. 전멸 조건 없음.",
+      "moral_cost": "무차별 제거는 시민 인프라와 공생 가능성을 함께 부순다.",
+      "scenario_links": [
+        "G07-SC1",
+        "G07-SC2",
+        "G07-SC3"
+      ],
+      "prose": "S07 가장자리에서 전해질화상군 무리가 배터리 누액·전해질 화상 후유의 흔적을 남긴다. HC07 순찰은 총구보다 봉인 테이프를 먼저 꺼내고, H07 센서는 오탐을 세 번 걸러 보고한다. XT02 쪽에서 유입 신호가 와도 현 정권을 단죄하지 않고 이동 경로만 적는다. 협상 창이 열려 있는 한, 전멸 명령은 보류한다."
+    },
+    {
+      "id": "G08",
+      "display_name": "클린룸변이자",
+      "category": "humanoid-mutant",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "docs/game-logic/Sixteen-States.md"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Hostile-Ecology-Index.md",
+        "Monster-Batch-Manifest.md"
+      ],
+      "modern_anxiety": "밀폐 청정실 잔존 오염 노출",
+      "fictional_origin": "붕괴 이후 S08·S13 회랑에서 클린룸변이자이 형성된 서울 창작 기원이다.",
+      "territory_migration": "S08 핵심 서식, S13 계절 이동, XT03 외곽 압력에 반응한다.",
+      "economy": "에너지·고철·유기물·냉각수 중 구역 잔여 자원을 순환하며 HC08 회수 작업과 경합한다.",
+      "lifecycle": "출현-확산-정체-협상가능-와해 5단계. 복제는 자원 상한에 묶인다.",
+      "senses": "진동·열·전자 잡음·냄새 중 둘 이상. 완전 투시 없음.",
+      "hierarchy": "컨트롤러 1 + 무리 단위. 합성 H08 센서 로그와 충돌 시 인간 중재 우선.",
+      "links": {
+        "states": [
+          "S08",
+          "S13"
+        ],
+        "houses": [
+          "HC08"
+        ],
+        "theaters": [
+          "XT03"
+        ],
+        "synthetics": [
+          "H08"
+        ],
+        "corporations_successor_only": [
+          "HC08"
+        ]
+      },
+      "escalation": "1 경고 출몰 / 2 인프라 교란 / 3 거점 봉쇄. 3은 협상 창 닫힘 직전.",
+      "combat_counterplay": "소음·냉각·봉인·먹이 우회·경로 차단. 학살 올인 금지 설계.",
+      "negotiation": "HC08 중개로 자원 할당·통행 시간 거래 가능. 전멸 조건 없음.",
+      "moral_cost": "무차별 제거는 시민 인프라와 공생 가능성을 함께 부순다.",
+      "scenario_links": [
+        "G08-SC1",
+        "G08-SC2",
+        "G08-SC3"
+      ],
+      "prose": "S08 가장자리에서 클린룸변이자 무리가 밀폐 청정실 잔존 오염 노출의 흔적을 남긴다. HC08 순찰은 총구보다 봉인 테이프를 먼저 꺼내고, H08 센서는 오탐을 세 번 걸러 보고한다. XT03 쪽에서 유입 신호가 와도 현 정권을 단죄하지 않고 이동 경로만 적는다. 협상 창이 열려 있는 한, 전멸 명령은 보류한다."
+    },
+    {
+      "id": "G09",
+      "display_name": "저온포자숙주",
+      "category": "humanoid-mutant",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "docs/game-logic/Sixteen-States.md"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Hostile-Ecology-Index.md",
+        "Monster-Batch-Manifest.md"
+      ],
+      "modern_anxiety": "저온 물류 포자·곰팡이 공생 불안",
+      "fictional_origin": "붕괴 이후 S09·S14 회랑에서 저온포자숙주이 형성된 서울 창작 기원이다.",
+      "territory_migration": "S09 핵심 서식, S14 계절 이동, XT04 외곽 압력에 반응한다.",
+      "economy": "에너지·고철·유기물·냉각수 중 구역 잔여 자원을 순환하며 HC09 회수 작업과 경합한다.",
+      "lifecycle": "출현-확산-정체-협상가능-와해 5단계. 복제는 자원 상한에 묶인다.",
+      "senses": "진동·열·전자 잡음·냄새 중 둘 이상. 완전 투시 없음.",
+      "hierarchy": "컨트롤러 1 + 무리 단위. 합성 H09 센서 로그와 충돌 시 인간 중재 우선.",
+      "links": {
+        "states": [
+          "S09",
+          "S14"
+        ],
+        "houses": [
+          "HC09"
+        ],
+        "theaters": [
+          "XT04"
+        ],
+        "synthetics": [
+          "H09"
+        ],
+        "corporations_successor_only": [
+          "HC09"
+        ]
+      },
+      "escalation": "1 경고 출몰 / 2 인프라 교란 / 3 거점 봉쇄. 3은 협상 창 닫힘 직전.",
+      "combat_counterplay": "소음·냉각·봉인·먹이 우회·경로 차단. 학살 올인 금지 설계.",
+      "negotiation": "HC09 중개로 자원 할당·통행 시간 거래 가능. 전멸 조건 없음.",
+      "moral_cost": "무차별 제거는 시민 인프라와 공생 가능성을 함께 부순다.",
+      "scenario_links": [
+        "G09-SC1",
+        "G09-SC2",
+        "G09-SC3"
+      ],
+      "prose": "S09 가장자리에서 저온포자숙주 무리가 저온 물류 포자·곰팡이 공생 불안의 흔적을 남긴다. HC09 순찰은 총구보다 봉인 테이프를 먼저 꺼내고, H09 센서는 오탐을 세 번 걸러 보고한다. XT04 쪽에서 유입 신호가 와도 현 정권을 단죄하지 않고 이동 경로만 적는다. 협상 창이 열려 있는 한, 전멸 명령은 보류한다."
+    },
+    {
+      "id": "G10",
+      "display_name": "침수곰팡이호흡단",
+      "category": "humanoid-mutant",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "docs/game-logic/Sixteen-States.md"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Hostile-Ecology-Index.md",
+        "Monster-Batch-Manifest.md"
+      ],
+      "modern_anxiety": "침수 건물 호흡기 질환 잔영",
+      "fictional_origin": "붕괴 이후 S10·S15 회랑에서 침수곰팡이호흡단이 형성된 서울 창작 기원이다.",
+      "territory_migration": "S10 핵심 서식, S15 계절 이동, XT05 외곽 압력에 반응한다.",
+      "economy": "에너지·고철·유기물·냉각수 중 구역 잔여 자원을 순환하며 HC10 회수 작업과 경합한다.",
+      "lifecycle": "출현-확산-정체-협상가능-와해 5단계. 복제는 자원 상한에 묶인다.",
+      "senses": "진동·열·전자 잡음·냄새 중 둘 이상. 완전 투시 없음.",
+      "hierarchy": "컨트롤러 1 + 무리 단위. 합성 H10 센서 로그와 충돌 시 인간 중재 우선.",
+      "links": {
+        "states": [
+          "S10",
+          "S15"
+        ],
+        "houses": [
+          "HC10"
+        ],
+        "theaters": [
+          "XT05"
+        ],
+        "synthetics": [
+          "H10"
+        ],
+        "corporations_successor_only": [
+          "HC10"
+        ]
+      },
+      "escalation": "1 경고 출몰 / 2 인프라 교란 / 3 거점 봉쇄. 3은 협상 창 닫힘 직전.",
+      "combat_counterplay": "소음·냉각·봉인·먹이 우회·경로 차단. 학살 올인 금지 설계.",
+      "negotiation": "HC10 중개로 자원 할당·통행 시간 거래 가능. 전멸 조건 없음.",
+      "moral_cost": "무차별 제거는 시민 인프라와 공생 가능성을 함께 부순다.",
+      "scenario_links": [
+        "G10-SC1",
+        "G10-SC2",
+        "G10-SC3"
+      ],
+      "prose": "S10 가장자리에서 침수곰팡이호흡단 무리가 침수 건물 호흡기 질환 잔영의 흔적을 남긴다. HC10 순찰은 총구보다 봉인 테이프를 먼저 꺼내고, H10 센서는 오탐을 세 번 걸러 보고한다. XT05 쪽에서 유입 신호가 와도 현 정권을 단죄하지 않고 이동 경로만 적는다. 협상 창이 열려 있는 한, 전멸 명령은 보류한다."
+    },
+    {
+      "id": "G11",
+      "display_name": "맞춤의료잔존체",
+      "category": "humanoid-mutant",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "docs/game-logic/Sixteen-States.md"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Hostile-Ecology-Index.md",
+        "Monster-Batch-Manifest.md"
+      ],
+      "modern_anxiety": "맞춤 치료 중단 후 잔여 장치",
+      "fictional_origin": "붕괴 이후 S11·S16 회랑에서 맞춤의료잔존체이 형성된 서울 창작 기원이다.",
+      "territory_migration": "S11 핵심 서식, S16 계절 이동, XT01 외곽 압력에 반응한다.",
+      "economy": "에너지·고철·유기물·냉각수 중 구역 잔여 자원을 순환하며 HC11 회수 작업과 경합한다.",
+      "lifecycle": "출현-확산-정체-협상가능-와해 5단계. 복제는 자원 상한에 묶인다.",
+      "senses": "진동·열·전자 잡음·냄새 중 둘 이상. 완전 투시 없음.",
+      "hierarchy": "컨트롤러 1 + 무리 단위. 합성 H11 센서 로그와 충돌 시 인간 중재 우선.",
+      "links": {
+        "states": [
+          "S11",
+          "S16"
+        ],
+        "houses": [
+          "HC11"
+        ],
+        "theaters": [
+          "XT01"
+        ],
+        "synthetics": [
+          "H11"
+        ],
+        "corporations_successor_only": [
+          "HC11"
+        ]
+      },
+      "escalation": "1 경고 출몰 / 2 인프라 교란 / 3 거점 봉쇄. 3은 협상 창 닫힘 직전.",
+      "combat_counterplay": "소음·냉각·봉인·먹이 우회·경로 차단. 학살 올인 금지 설계.",
+      "negotiation": "HC11 중개로 자원 할당·통행 시간 거래 가능. 전멸 조건 없음.",
+      "moral_cost": "무차별 제거는 시민 인프라와 공생 가능성을 함께 부순다.",
+      "scenario_links": [
+        "G11-SC1",
+        "G11-SC2",
+        "G11-SC3"
+      ],
+      "prose": "S11 가장자리에서 맞춤의료잔존체 무리가 맞춤 치료 중단 후 잔여 장치의 흔적을 남긴다. HC11 순찰은 총구보다 봉인 테이프를 먼저 꺼내고, H11 센서는 오탐을 세 번 걸러 보고한다. XT01 쪽에서 유입 신호가 와도 현 정권을 단죄하지 않고 이동 경로만 적는다. 협상 창이 열려 있는 한, 전멸 명령은 보류한다."
+    },
+    {
+      "id": "G12",
+      "display_name": "미세섬유피부군",
+      "category": "humanoid-mutant",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "docs/game-logic/Sixteen-States.md"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Hostile-Ecology-Index.md",
+        "Monster-Batch-Manifest.md"
+      ],
+      "modern_anxiety": "산업 미세섬유·분진 피부 병변",
+      "fictional_origin": "붕괴 이후 S12·S01 회랑에서 미세섬유피부군이 형성된 서울 창작 기원이다.",
+      "territory_migration": "S12 핵심 서식, S01 계절 이동, XT02 외곽 압력에 반응한다.",
+      "economy": "에너지·고철·유기물·냉각수 중 구역 잔여 자원을 순환하며 HC12 회수 작업과 경합한다.",
+      "lifecycle": "출현-확산-정체-협상가능-와해 5단계. 복제는 자원 상한에 묶인다.",
+      "senses": "진동·열·전자 잡음·냄새 중 둘 이상. 완전 투시 없음.",
+      "hierarchy": "컨트롤러 1 + 무리 단위. 합성 H12 센서 로그와 충돌 시 인간 중재 우선.",
+      "links": {
+        "states": [
+          "S12",
+          "S01"
+        ],
+        "houses": [
+          "HC12"
+        ],
+        "theaters": [
+          "XT02"
+        ],
+        "synthetics": [
+          "H12"
+        ],
+        "corporations_successor_only": [
+          "HC12"
+        ]
+      },
+      "escalation": "1 경고 출몰 / 2 인프라 교란 / 3 거점 봉쇄. 3은 협상 창 닫힘 직전.",
+      "combat_counterplay": "소음·냉각·봉인·먹이 우회·경로 차단. 학살 올인 금지 설계.",
+      "negotiation": "HC12 중개로 자원 할당·통행 시간 거래 가능. 전멸 조건 없음.",
+      "moral_cost": "무차별 제거는 시민 인프라와 공생 가능성을 함께 부순다.",
+      "scenario_links": [
+        "G12-SC1",
+        "G12-SC2",
+        "G12-SC3"
+      ],
+      "prose": "S12 가장자리에서 미세섬유피부군 무리가 산업 미세섬유·분진 피부 병변의 흔적을 남긴다. HC12 순찰은 총구보다 봉인 테이프를 먼저 꺼내고, H12 센서는 오탐을 세 번 걸러 보고한다. XT02 쪽에서 유입 신호가 와도 현 정권을 단죄하지 않고 이동 경로만 적는다. 협상 창이 열려 있는 한, 전멸 명령은 보류한다."
+    },
+    {
+      "id": "G13",
+      "display_name": "야간분류군",
+      "category": "rogue-robot",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "docs/game-logic/Sixteen-States.md"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Hostile-Ecology-Index.md",
+        "Monster-Batch-Manifest.md"
+      ],
+      "modern_anxiety": "야간 물류 분류기 자율 폭주",
+      "fictional_origin": "붕괴 이후 S13·S02 회랑에서 야간분류군이 형성된 서울 창작 기원이다.",
+      "territory_migration": "S13 핵심 서식, S02 계절 이동, XT03 외곽 압력에 반응한다.",
+      "economy": "에너지·고철·유기물·냉각수 중 구역 잔여 자원을 순환하며 HC13 회수 작업과 경합한다.",
+      "lifecycle": "출현-확산-정체-협상가능-와해 5단계. 복제는 자원 상한에 묶인다.",
+      "senses": "진동·열·전자 잡음·냄새 중 둘 이상. 완전 투시 없음.",
+      "hierarchy": "컨트롤러 1 + 무리 단위. 합성 H13 센서 로그와 충돌 시 인간 중재 우선.",
+      "links": {
+        "states": [
+          "S13",
+          "S02"
+        ],
+        "houses": [
+          "HC13"
+        ],
+        "theaters": [
+          "XT03"
+        ],
+        "synthetics": [
+          "H13"
+        ],
+        "corporations_successor_only": [
+          "HC13"
+        ]
+      },
+      "escalation": "1 경고 출몰 / 2 인프라 교란 / 3 거점 봉쇄. 3은 협상 창 닫힘 직전.",
+      "combat_counterplay": "소음·냉각·봉인·먹이 우회·경로 차단. 학살 올인 금지 설계.",
+      "negotiation": "HC13 중개로 자원 할당·통행 시간 거래 가능. 전멸 조건 없음.",
+      "moral_cost": "무차별 제거는 시민 인프라와 공생 가능성을 함께 부순다.",
+      "scenario_links": [
+        "G13-SC1",
+        "G13-SC2",
+        "G13-SC3"
+      ],
+      "prose": "S13 가장자리에서 야간분류군 무리가 야간 물류 분류기 자율 폭주의 흔적을 남긴다. HC13 순찰은 총구보다 봉인 테이프를 먼저 꺼내고, H13 센서는 오탐을 세 번 걸러 보고한다. XT03 쪽에서 유입 신호가 와도 현 정권을 단죄하지 않고 이동 경로만 적는다. 협상 창이 열려 있는 한, 전멸 명령은 보류한다."
+    },
+    {
+      "id": "G14",
+      "display_name": "유령배차대",
+      "category": "rogue-robot",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "docs/game-logic/Sixteen-States.md"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Hostile-Ecology-Index.md",
+        "Monster-Batch-Manifest.md"
+      ],
+      "modern_anxiety": "무인 배차 스케줄 잔존 실행",
+      "fictional_origin": "붕괴 이후 S14·S03 회랑에서 유령배차대이 형성된 서울 창작 기원이다.",
+      "territory_migration": "S14 핵심 서식, S03 계절 이동, XT04 외곽 압력에 반응한다.",
+      "economy": "에너지·고철·유기물·냉각수 중 구역 잔여 자원을 순환하며 HC14 회수 작업과 경합한다.",
+      "lifecycle": "출현-확산-정체-협상가능-와해 5단계. 복제는 자원 상한에 묶인다.",
+      "senses": "진동·열·전자 잡음·냄새 중 둘 이상. 완전 투시 없음.",
+      "hierarchy": "컨트롤러 1 + 무리 단위. 합성 H14 센서 로그와 충돌 시 인간 중재 우선.",
+      "links": {
+        "states": [
+          "S14",
+          "S03"
+        ],
+        "houses": [
+          "HC14"
+        ],
+        "theaters": [
+          "XT04"
+        ],
+        "synthetics": [
+          "H14"
+        ],
+        "corporations_successor_only": [
+          "HC14"
+        ]
+      },
+      "escalation": "1 경고 출몰 / 2 인프라 교란 / 3 거점 봉쇄. 3은 협상 창 닫힘 직전.",
+      "combat_counterplay": "소음·냉각·봉인·먹이 우회·경로 차단. 학살 올인 금지 설계.",
+      "negotiation": "HC14 중개로 자원 할당·통행 시간 거래 가능. 전멸 조건 없음.",
+      "moral_cost": "무차별 제거는 시민 인프라와 공생 가능성을 함께 부순다.",
+      "scenario_links": [
+        "G14-SC1",
+        "G14-SC2",
+        "G14-SC3"
+      ],
+      "prose": "S14 가장자리에서 유령배차대 무리가 무인 배차 스케줄 잔존 실행의 흔적을 남긴다. HC14 순찰은 총구보다 봉인 테이프를 먼저 꺼내고, H14 센서는 오탐을 세 번 걸러 보고한다. XT04 쪽에서 유입 신호가 와도 현 정권을 단죄하지 않고 이동 경로만 적는다. 협상 창이 열려 있는 한, 전멸 명령은 보류한다."
+    },
+    {
+      "id": "G15",
+      "display_name": "돌봄순환체",
+      "category": "rogue-robot",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "docs/game-logic/Sixteen-States.md"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Hostile-Ecology-Index.md",
+        "Monster-Batch-Manifest.md"
+      ],
+      "modern_anxiety": "돌봄 루틴 고착과 과보호",
+      "fictional_origin": "붕괴 이후 S15·S04 회랑에서 돌봄순환체이 형성된 서울 창작 기원이다.",
+      "territory_migration": "S15 핵심 서식, S04 계절 이동, XT05 외곽 압력에 반응한다.",
+      "economy": "에너지·고철·유기물·냉각수 중 구역 잔여 자원을 순환하며 HP01 회수 작업과 경합한다.",
+      "lifecycle": "출현-확산-정체-협상가능-와해 5단계. 복제는 자원 상한에 묶인다.",
+      "senses": "진동·열·전자 잡음·냄새 중 둘 이상. 완전 투시 없음.",
+      "hierarchy": "컨트롤러 1 + 무리 단위. 합성 H15 센서 로그와 충돌 시 인간 중재 우선.",
+      "links": {
+        "states": [
+          "S15",
+          "S04"
+        ],
+        "houses": [
+          "HP01"
+        ],
+        "theaters": [
+          "XT05"
+        ],
+        "synthetics": [
+          "H15"
+        ],
+        "corporations_successor_only": []
+      },
+      "escalation": "1 경고 출몰 / 2 인프라 교란 / 3 거점 봉쇄. 3은 협상 창 닫힘 직전.",
+      "combat_counterplay": "소음·냉각·봉인·먹이 우회·경로 차단. 학살 올인 금지 설계.",
+      "negotiation": "HP01 중개로 자원 할당·통행 시간 거래 가능. 전멸 조건 없음.",
+      "moral_cost": "무차별 제거는 시민 인프라와 공생 가능성을 함께 부순다.",
+      "scenario_links": [
+        "G15-SC1",
+        "G15-SC2",
+        "G15-SC3"
+      ],
+      "prose": "S15 가장자리에서 돌봄순환체 무리가 돌봄 루틴 고착과 과보호의 흔적을 남긴다. HP01 순찰은 총구보다 봉인 테이프를 먼저 꺼내고, H15 센서는 오탐을 세 번 걸러 보고한다. XT05 쪽에서 유입 신호가 와도 현 정권을 단죄하지 않고 이동 경로만 적는다. 협상 창이 열려 있는 한, 전멸 명령은 보류한다."
+    },
+    {
+      "id": "G16",
+      "display_name": "도면유령기계단",
+      "category": "rogue-robot",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "docs/game-logic/Sixteen-States.md"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Hostile-Ecology-Index.md",
+        "Monster-Batch-Manifest.md"
+      ],
+      "modern_anxiety": "미완성 도면 기반 시공 로봇",
+      "fictional_origin": "붕괴 이후 S16·S05 회랑에서 도면유령기계단이 형성된 서울 창작 기원이다.",
+      "territory_migration": "S16 핵심 서식, S05 계절 이동, XT01 외곽 압력에 반응한다.",
+      "economy": "에너지·고철·유기물·냉각수 중 구역 잔여 자원을 순환하며 HP02 회수 작업과 경합한다.",
+      "lifecycle": "출현-확산-정체-협상가능-와해 5단계. 복제는 자원 상한에 묶인다.",
+      "senses": "진동·열·전자 잡음·냄새 중 둘 이상. 완전 투시 없음.",
+      "hierarchy": "컨트롤러 1 + 무리 단위. 합성 H16 센서 로그와 충돌 시 인간 중재 우선.",
+      "links": {
+        "states": [
+          "S16",
+          "S05"
+        ],
+        "houses": [
+          "HP02"
+        ],
+        "theaters": [
+          "XT01"
+        ],
+        "synthetics": [
+          "H16"
+        ],
+        "corporations_successor_only": []
+      },
+      "escalation": "1 경고 출몰 / 2 인프라 교란 / 3 거점 봉쇄. 3은 협상 창 닫힘 직전.",
+      "combat_counterplay": "소음·냉각·봉인·먹이 우회·경로 차단. 학살 올인 금지 설계.",
+      "negotiation": "HP02 중개로 자원 할당·통행 시간 거래 가능. 전멸 조건 없음.",
+      "moral_cost": "무차별 제거는 시민 인프라와 공생 가능성을 함께 부순다.",
+      "scenario_links": [
+        "G16-SC1",
+        "G16-SC2",
+        "G16-SC3"
+      ],
+      "prose": "S16 가장자리에서 도면유령기계단 무리가 미완성 도면 기반 시공 로봇의 흔적을 남긴다. HP02 순찰은 총구보다 봉인 테이프를 먼저 꺼내고, H16 센서는 오탐을 세 번 걸러 보고한다. XT01 쪽에서 유입 신호가 와도 현 정권을 단죄하지 않고 이동 경로만 적는다. 협상 창이 열려 있는 한, 전멸 명령은 보류한다."
+    },
+    {
+      "id": "G17",
+      "display_name": "감시궤도군",
+      "category": "rogue-robot",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "docs/game-logic/Sixteen-States.md"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Hostile-Ecology-Index.md",
+        "Monster-Batch-Manifest.md"
+      ],
+      "modern_anxiety": "궤도 감시 잔여 경보 오탐",
+      "fictional_origin": "붕괴 이후 S01·S06 회랑에서 감시궤도군이 형성된 서울 창작 기원이다.",
+      "territory_migration": "S01 핵심 서식, S06 계절 이동, XT02 외곽 압력에 반응한다.",
+      "economy": "에너지·고철·유기물·냉각수 중 구역 잔여 자원을 순환하며 HP03 회수 작업과 경합한다.",
+      "lifecycle": "출현-확산-정체-협상가능-와해 5단계. 복제는 자원 상한에 묶인다.",
+      "senses": "진동·열·전자 잡음·냄새 중 둘 이상. 완전 투시 없음.",
+      "hierarchy": "컨트롤러 1 + 무리 단위. 합성 F01 센서 로그와 충돌 시 인간 중재 우선.",
+      "links": {
+        "states": [
+          "S01",
+          "S06"
+        ],
+        "houses": [
+          "HP03"
+        ],
+        "theaters": [
+          "XT02"
+        ],
+        "synthetics": [
+          "F01"
+        ],
+        "corporations_successor_only": []
+      },
+      "escalation": "1 경고 출몰 / 2 인프라 교란 / 3 거점 봉쇄. 3은 협상 창 닫힘 직전.",
+      "combat_counterplay": "소음·냉각·봉인·먹이 우회·경로 차단. 학살 올인 금지 설계.",
+      "negotiation": "HP03 중개로 자원 할당·통행 시간 거래 가능. 전멸 조건 없음.",
+      "moral_cost": "무차별 제거는 시민 인프라와 공생 가능성을 함께 부순다.",
+      "scenario_links": [
+        "G17-SC1",
+        "G17-SC2",
+        "G17-SC3"
+      ],
+      "prose": "S01 가장자리에서 감시궤도군 무리가 궤도 감시 잔여 경보 오탐의 흔적을 남긴다. HP03 순찰은 총구보다 봉인 테이프를 먼저 꺼내고, F01 센서는 오탐을 세 번 걸러 보고한다. XT02 쪽에서 유입 신호가 와도 현 정권을 단죄하지 않고 이동 경로만 적는다. 협상 창이 열려 있는 한, 전멸 명령은 보류한다."
+    },
+    {
+      "id": "G18",
+      "display_name": "폐선보수열차군",
+      "category": "rogue-robot",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "docs/game-logic/Sixteen-States.md"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Hostile-Ecology-Index.md",
+        "Monster-Batch-Manifest.md"
+      ],
+      "modern_anxiety": "폐선 자동 보수 열차 유령 운행",
+      "fictional_origin": "붕괴 이후 S02·S07 회랑에서 폐선보수열차군이 형성된 서울 창작 기원이다.",
+      "territory_migration": "S02 핵심 서식, S07 계절 이동, XT03 외곽 압력에 반응한다.",
+      "economy": "에너지·고철·유기물·냉각수 중 구역 잔여 자원을 순환하며 HP04 회수 작업과 경합한다.",
+      "lifecycle": "출현-확산-정체-협상가능-와해 5단계. 복제는 자원 상한에 묶인다.",
+      "senses": "진동·열·전자 잡음·냄새 중 둘 이상. 완전 투시 없음.",
+      "hierarchy": "컨트롤러 1 + 무리 단위. 합성 F02 센서 로그와 충돌 시 인간 중재 우선.",
+      "links": {
+        "states": [
+          "S02",
+          "S07"
+        ],
+        "houses": [
+          "HP04"
+        ],
+        "theaters": [
+          "XT03"
+        ],
+        "synthetics": [
+          "F02"
+        ],
+        "corporations_successor_only": []
+      },
+      "escalation": "1 경고 출몰 / 2 인프라 교란 / 3 거점 봉쇄. 3은 협상 창 닫힘 직전.",
+      "combat_counterplay": "소음·냉각·봉인·먹이 우회·경로 차단. 학살 올인 금지 설계.",
+      "negotiation": "HP04 중개로 자원 할당·통행 시간 거래 가능. 전멸 조건 없음.",
+      "moral_cost": "무차별 제거는 시민 인프라와 공생 가능성을 함께 부순다.",
+      "scenario_links": [
+        "G18-SC1",
+        "G18-SC2",
+        "G18-SC3"
+      ],
+      "prose": "S02 가장자리에서 폐선보수열차군 무리가 폐선 자동 보수 열차 유령 운행의 흔적을 남긴다. HP04 순찰은 총구보다 봉인 테이프를 먼저 꺼내고, F02 센서는 오탐을 세 번 걸러 보고한다. XT03 쪽에서 유입 신호가 와도 현 정권을 단죄하지 않고 이동 경로만 적는다. 협상 창이 열려 있는 한, 전멸 명령은 보류한다."
+    },
+    {
+      "id": "G19",
+      "display_name": "냉각수색인균체",
+      "category": "biomechanical",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "docs/game-logic/Sixteen-States.md"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Hostile-Ecology-Index.md",
+        "Monster-Batch-Manifest.md"
+      ],
+      "modern_anxiety": "냉각수 배관 생물막·금속 부식 결합",
+      "fictional_origin": "붕괴 이후 S03·S08 회랑에서 냉각수색인균체이 형성된 서울 창작 기원이다.",
+      "territory_migration": "S03 핵심 서식, S08 계절 이동, XT04 외곽 압력에 반응한다.",
+      "economy": "에너지·고철·유기물·냉각수 중 구역 잔여 자원을 순환하며 HP05 회수 작업과 경합한다.",
+      "lifecycle": "출현-확산-정체-협상가능-와해 5단계. 복제는 자원 상한에 묶인다.",
+      "senses": "진동·열·전자 잡음·냄새 중 둘 이상. 완전 투시 없음.",
+      "hierarchy": "컨트롤러 1 + 무리 단위. 합성 F03 센서 로그와 충돌 시 인간 중재 우선.",
+      "links": {
+        "states": [
+          "S03",
+          "S08"
+        ],
+        "houses": [
+          "HP05"
+        ],
+        "theaters": [
+          "XT04"
+        ],
+        "synthetics": [
+          "F03"
+        ],
+        "corporations_successor_only": []
+      },
+      "escalation": "1 경고 출몰 / 2 인프라 교란 / 3 거점 봉쇄. 3은 협상 창 닫힘 직전.",
+      "combat_counterplay": "소음·냉각·봉인·먹이 우회·경로 차단. 학살 올인 금지 설계.",
+      "negotiation": "HP05 중개로 자원 할당·통행 시간 거래 가능. 전멸 조건 없음.",
+      "moral_cost": "무차별 제거는 시민 인프라와 공생 가능성을 함께 부순다.",
+      "scenario_links": [
+        "G19-SC1",
+        "G19-SC2",
+        "G19-SC3"
+      ],
+      "prose": "S03 가장자리에서 냉각수색인균체 무리가 냉각수 배관 생물막·금속 부식 결합의 흔적을 남긴다. HP05 순찰은 총구보다 봉인 테이프를 먼저 꺼내고, F03 센서는 오탐을 세 번 걸러 보고한다. XT04 쪽에서 유입 신호가 와도 현 정권을 단죄하지 않고 이동 경로만 적는다. 협상 창이 열려 있는 한, 전멸 명령은 보류한다."
+    },
+    {
+      "id": "G20",
+      "display_name": "철비늘군체",
+      "category": "biomechanical",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "docs/game-logic/Sixteen-States.md"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Hostile-Ecology-Index.md",
+        "Monster-Batch-Manifest.md"
+      ],
+      "modern_anxiety": "녹·비늘형 금속 군체 성장",
+      "fictional_origin": "붕괴 이후 S04·S09 회랑에서 철비늘군체이 형성된 서울 창작 기원이다.",
+      "territory_migration": "S04 핵심 서식, S09 계절 이동, XT05 외곽 압력에 반응한다.",
+      "economy": "에너지·고철·유기물·냉각수 중 구역 잔여 자원을 순환하며 HP06 회수 작업과 경합한다.",
+      "lifecycle": "출현-확산-정체-협상가능-와해 5단계. 복제는 자원 상한에 묶인다.",
+      "senses": "진동·열·전자 잡음·냄새 중 둘 이상. 완전 투시 없음.",
+      "hierarchy": "컨트롤러 1 + 무리 단위. 합성 F04 센서 로그와 충돌 시 인간 중재 우선.",
+      "links": {
+        "states": [
+          "S04",
+          "S09"
+        ],
+        "houses": [
+          "HP06"
+        ],
+        "theaters": [
+          "XT05"
+        ],
+        "synthetics": [
+          "F04"
+        ],
+        "corporations_successor_only": []
+      },
+      "escalation": "1 경고 출몰 / 2 인프라 교란 / 3 거점 봉쇄. 3은 협상 창 닫힘 직전.",
+      "combat_counterplay": "소음·냉각·봉인·먹이 우회·경로 차단. 학살 올인 금지 설계.",
+      "negotiation": "HP06 중개로 자원 할당·통행 시간 거래 가능. 전멸 조건 없음.",
+      "moral_cost": "무차별 제거는 시민 인프라와 공생 가능성을 함께 부순다.",
+      "scenario_links": [
+        "G20-SC1",
+        "G20-SC2",
+        "G20-SC3"
+      ],
+      "prose": "S04 가장자리에서 철비늘군체 무리가 녹·비늘형 금속 군체 성장의 흔적을 남긴다. HP06 순찰은 총구보다 봉인 테이프를 먼저 꺼내고, F04 센서는 오탐을 세 번 걸러 보고한다. XT05 쪽에서 유입 신호가 와도 현 정권을 단죄하지 않고 이동 경로만 적는다. 협상 창이 열려 있는 한, 전멸 명령은 보류한다."
+    },
+    {
+      "id": "G21",
+      "display_name": "통신근균체",
+      "category": "biomechanical",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "docs/game-logic/Sixteen-States.md"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Hostile-Ecology-Index.md",
+        "Monster-Batch-Manifest.md"
+      ],
+      "modern_anxiety": "광케이블·근균 유사 신호 기생",
+      "fictional_origin": "붕괴 이후 S05·S10 회랑에서 통신근균체이 형성된 서울 창작 기원이다.",
+      "territory_migration": "S05 핵심 서식, S10 계절 이동, XT01 외곽 압력에 반응한다.",
+      "economy": "에너지·고철·유기물·냉각수 중 구역 잔여 자원을 순환하며 HP07 회수 작업과 경합한다.",
+      "lifecycle": "출현-확산-정체-협상가능-와해 5단계. 복제는 자원 상한에 묶인다.",
+      "senses": "진동·열·전자 잡음·냄새 중 둘 이상. 완전 투시 없음.",
+      "hierarchy": "컨트롤러 1 + 무리 단위. 합성 F05 센서 로그와 충돌 시 인간 중재 우선.",
+      "links": {
+        "states": [
+          "S05",
+          "S10"
+        ],
+        "houses": [
+          "HP07"
+        ],
+        "theaters": [
+          "XT01"
+        ],
+        "synthetics": [
+          "F05"
+        ],
+        "corporations_successor_only": []
+      },
+      "escalation": "1 경고 출몰 / 2 인프라 교란 / 3 거점 봉쇄. 3은 협상 창 닫힘 직전.",
+      "combat_counterplay": "소음·냉각·봉인·먹이 우회·경로 차단. 학살 올인 금지 설계.",
+      "negotiation": "HP07 중개로 자원 할당·통행 시간 거래 가능. 전멸 조건 없음.",
+      "moral_cost": "무차별 제거는 시민 인프라와 공생 가능성을 함께 부순다.",
+      "scenario_links": [
+        "G21-SC1",
+        "G21-SC2",
+        "G21-SC3"
+      ],
+      "prose": "S05 가장자리에서 통신근균체 무리가 광케이블·근균 유사 신호 기생의 흔적을 남긴다. HP07 순찰은 총구보다 봉인 테이프를 먼저 꺼내고, F05 센서는 오탐을 세 번 걸러 보고한다. XT01 쪽에서 유입 신호가 와도 현 정권을 단죄하지 않고 이동 경로만 적는다. 협상 창이 열려 있는 한, 전멸 명령은 보류한다."
+    },
+    {
+      "id": "G22",
+      "display_name": "폐전지금속군락",
+      "category": "biomechanical",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "docs/game-logic/Sixteen-States.md"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Hostile-Ecology-Index.md",
+        "Monster-Batch-Manifest.md"
+      ],
+      "modern_anxiety": "폐전지 금속 석출 군락",
+      "fictional_origin": "붕괴 이후 S06·S11 회랑에서 폐전지금속군락이 형성된 서울 창작 기원이다.",
+      "territory_migration": "S06 핵심 서식, S11 계절 이동, XT02 외곽 압력에 반응한다.",
+      "economy": "에너지·고철·유기물·냉각수 중 구역 잔여 자원을 순환하며 HP08 회수 작업과 경합한다.",
+      "lifecycle": "출현-확산-정체-협상가능-와해 5단계. 복제는 자원 상한에 묶인다.",
+      "senses": "진동·열·전자 잡음·냄새 중 둘 이상. 완전 투시 없음.",
+      "hierarchy": "컨트롤러 1 + 무리 단위. 합성 F06 센서 로그와 충돌 시 인간 중재 우선.",
+      "links": {
+        "states": [
+          "S06",
+          "S11"
+        ],
+        "houses": [
+          "HP08"
+        ],
+        "theaters": [
+          "XT02"
+        ],
+        "synthetics": [
+          "F06"
+        ],
+        "corporations_successor_only": []
+      },
+      "escalation": "1 경고 출몰 / 2 인프라 교란 / 3 거점 봉쇄. 3은 협상 창 닫힘 직전.",
+      "combat_counterplay": "소음·냉각·봉인·먹이 우회·경로 차단. 학살 올인 금지 설계.",
+      "negotiation": "HP08 중개로 자원 할당·통행 시간 거래 가능. 전멸 조건 없음.",
+      "moral_cost": "무차별 제거는 시민 인프라와 공생 가능성을 함께 부순다.",
+      "scenario_links": [
+        "G22-SC1",
+        "G22-SC2",
+        "G22-SC3"
+      ],
+      "prose": "S06 가장자리에서 폐전지금속군락 무리가 폐전지 금속 석출 군락의 흔적을 남긴다. HP08 순찰은 총구보다 봉인 테이프를 먼저 꺼내고, F06 센서는 오탐을 세 번 걸러 보고한다. XT02 쪽에서 유입 신호가 와도 현 정권을 단죄하지 않고 이동 경로만 적는다. 협상 창이 열려 있는 한, 전멸 명령은 보류한다."
+    },
+    {
+      "id": "G23",
+      "display_name": "저온포자막",
+      "category": "biomechanical",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "docs/game-logic/Sixteen-States.md"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Hostile-Ecology-Index.md",
+        "Monster-Batch-Manifest.md"
+      ],
+      "modern_anxiety": "저온 창고 포자 막 형성",
+      "fictional_origin": "붕괴 이후 S07·S12 회랑에서 저온포자막이 형성된 서울 창작 기원이다.",
+      "territory_migration": "S07 핵심 서식, S12 계절 이동, XT03 외곽 압력에 반응한다.",
+      "economy": "에너지·고철·유기물·냉각수 중 구역 잔여 자원을 순환하며 HP09 회수 작업과 경합한다.",
+      "lifecycle": "출현-확산-정체-협상가능-와해 5단계. 복제는 자원 상한에 묶인다.",
+      "senses": "진동·열·전자 잡음·냄새 중 둘 이상. 완전 투시 없음.",
+      "hierarchy": "컨트롤러 1 + 무리 단위. 합성 F07 센서 로그와 충돌 시 인간 중재 우선.",
+      "links": {
+        "states": [
+          "S07",
+          "S12"
+        ],
+        "houses": [
+          "HP09"
+        ],
+        "theaters": [
+          "XT03"
+        ],
+        "synthetics": [
+          "F07"
+        ],
+        "corporations_successor_only": []
+      },
+      "escalation": "1 경고 출몰 / 2 인프라 교란 / 3 거점 봉쇄. 3은 협상 창 닫힘 직전.",
+      "combat_counterplay": "소음·냉각·봉인·먹이 우회·경로 차단. 학살 올인 금지 설계.",
+      "negotiation": "HP09 중개로 자원 할당·통행 시간 거래 가능. 전멸 조건 없음.",
+      "moral_cost": "무차별 제거는 시민 인프라와 공생 가능성을 함께 부순다.",
+      "scenario_links": [
+        "G23-SC1",
+        "G23-SC2",
+        "G23-SC3"
+      ],
+      "prose": "S07 가장자리에서 저온포자막 무리가 저온 창고 포자 막 형성의 흔적을 남긴다. HP09 순찰은 총구보다 봉인 테이프를 먼저 꺼내고, F07 센서는 오탐을 세 번 걸러 보고한다. XT03 쪽에서 유입 신호가 와도 현 정권을 단죄하지 않고 이동 경로만 적는다. 협상 창이 열려 있는 한, 전멸 명령은 보류한다."
+    },
+    {
+      "id": "G24",
+      "display_name": "의료조직기계군",
+      "category": "biomechanical",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "docs/game-logic/Sixteen-States.md"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "Hostile-Ecology-Index.md",
+        "Monster-Batch-Manifest.md"
+      ],
+      "modern_anxiety": "의료 폐기 조직·기구 결합체",
+      "fictional_origin": "붕괴 이후 S08·S13 회랑에서 의료조직기계군이 형성된 서울 창작 기원이다.",
+      "territory_migration": "S08 핵심 서식, S13 계절 이동, XT04 외곽 압력에 반응한다.",
+      "economy": "에너지·고철·유기물·냉각수 중 구역 잔여 자원을 순환하며 HP10 회수 작업과 경합한다.",
+      "lifecycle": "출현-확산-정체-협상가능-와해 5단계. 복제는 자원 상한에 묶인다.",
+      "senses": "진동·열·전자 잡음·냄새 중 둘 이상. 완전 투시 없음.",
+      "hierarchy": "컨트롤러 1 + 무리 단위. 합성 F08 센서 로그와 충돌 시 인간 중재 우선.",
+      "links": {
+        "states": [
+          "S08",
+          "S13"
+        ],
+        "houses": [
+          "HP10"
+        ],
+        "theaters": [
+          "XT04"
+        ],
+        "synthetics": [
+          "F08"
+        ],
+        "corporations_successor_only": []
+      },
+      "escalation": "1 경고 출몰 / 2 인프라 교란 / 3 거점 봉쇄. 3은 협상 창 닫힘 직전.",
+      "combat_counterplay": "소음·냉각·봉인·먹이 우회·경로 차단. 학살 올인 금지 설계.",
+      "negotiation": "HP10 중개로 자원 할당·통행 시간 거래 가능. 전멸 조건 없음.",
+      "moral_cost": "무차별 제거는 시민 인프라와 공생 가능성을 함께 부순다.",
+      "scenario_links": [
+        "G24-SC1",
+        "G24-SC2",
+        "G24-SC3"
+      ],
+      "prose": "S08 가장자리에서 의료조직기계군 무리가 의료 폐기 조직·기구 결합체의 흔적을 남긴다. HP10 순찰은 총구보다 봉인 테이프를 먼저 꺼내고, F08 센서는 오탐을 세 번 걸러 보고한다. XT04 쪽에서 유입 신호가 와도 현 정권을 단죄하지 않고 이동 경로만 적는다. 협상 창이 열려 있는 한, 전멸 명령은 보류한다."
+    }
+  ],
+  "monster_batches": [
+    {
+      "id": "M001",
+      "entry_ids": [
+        "G01E01",
+        "G01E02",
+        "G01E03",
+        "G01E04",
+        "G01E05",
+        "G01E06",
+        "G01E07",
+        "G01E08",
+        "G01E09",
+        "G01E10"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M002",
+      "entry_ids": [
+        "G01E11",
+        "G01E12",
+        "G01E13",
+        "G01E14",
+        "G01E15",
+        "G01E16",
+        "G02E01",
+        "G02E02",
+        "G02E03",
+        "G02E04"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M003",
+      "entry_ids": [
+        "G02E05",
+        "G02E06",
+        "G02E07",
+        "G02E08",
+        "G02E09",
+        "G02E10",
+        "G02E11",
+        "G02E12",
+        "G02E13",
+        "G02E14"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M004",
+      "entry_ids": [
+        "G02E15",
+        "G02E16",
+        "G03E01",
+        "G03E02",
+        "G03E03",
+        "G03E04",
+        "G03E05",
+        "G03E06",
+        "G03E07",
+        "G03E08"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M005",
+      "entry_ids": [
+        "G03E09",
+        "G03E10",
+        "G03E11",
+        "G03E12",
+        "G03E13",
+        "G03E14",
+        "G03E15",
+        "G03E16",
+        "G04E01",
+        "G04E02"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M006",
+      "entry_ids": [
+        "G04E03",
+        "G04E04",
+        "G04E05",
+        "G04E06",
+        "G04E07",
+        "G04E08",
+        "G04E09",
+        "G04E10",
+        "G04E11",
+        "G04E12"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M007",
+      "entry_ids": [
+        "G04E13",
+        "G04E14",
+        "G04E15",
+        "G04E16",
+        "G05E01",
+        "G05E02",
+        "G05E03",
+        "G05E04",
+        "G05E05",
+        "G05E06"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M008",
+      "entry_ids": [
+        "G05E07",
+        "G05E08",
+        "G05E09",
+        "G05E10",
+        "G05E11",
+        "G05E12",
+        "G05E13",
+        "G05E14",
+        "G05E15",
+        "G05E16"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M009",
+      "entry_ids": [
+        "G06E01",
+        "G06E02",
+        "G06E03",
+        "G06E04",
+        "G06E05",
+        "G06E06",
+        "G06E07",
+        "G06E08",
+        "G06E09",
+        "G06E10"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M010",
+      "entry_ids": [
+        "G06E11",
+        "G06E12",
+        "G06E13",
+        "G06E14",
+        "G06E15",
+        "G06E16",
+        "G07E01",
+        "G07E02",
+        "G07E03",
+        "G07E04"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M011",
+      "entry_ids": [
+        "G07E05",
+        "G07E06",
+        "G07E07",
+        "G07E08",
+        "G07E09",
+        "G07E10",
+        "G07E11",
+        "G07E12",
+        "G07E13",
+        "G07E14"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M012",
+      "entry_ids": [
+        "G07E15",
+        "G07E16",
+        "G08E01",
+        "G08E02",
+        "G08E03",
+        "G08E04",
+        "G08E05",
+        "G08E06",
+        "G08E07",
+        "G08E08"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M013",
+      "entry_ids": [
+        "G08E09",
+        "G08E10",
+        "G08E11",
+        "G08E12",
+        "G08E13",
+        "G08E14",
+        "G08E15",
+        "G08E16",
+        "G09E01",
+        "G09E02"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M014",
+      "entry_ids": [
+        "G09E03",
+        "G09E04",
+        "G09E05",
+        "G09E06",
+        "G09E07",
+        "G09E08",
+        "G09E09",
+        "G09E10",
+        "G09E11",
+        "G09E12"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M015",
+      "entry_ids": [
+        "G09E13",
+        "G09E14",
+        "G09E15",
+        "G09E16",
+        "G10E01",
+        "G10E02",
+        "G10E03",
+        "G10E04",
+        "G10E05",
+        "G10E06"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M016",
+      "entry_ids": [
+        "G10E07",
+        "G10E08",
+        "G10E09",
+        "G10E10",
+        "G10E11",
+        "G10E12",
+        "G10E13",
+        "G10E14",
+        "G10E15",
+        "G10E16"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M017",
+      "entry_ids": [
+        "G11E01",
+        "G11E02",
+        "G11E03",
+        "G11E04",
+        "G11E05",
+        "G11E06",
+        "G11E07",
+        "G11E08",
+        "G11E09",
+        "G11E10"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M018",
+      "entry_ids": [
+        "G11E11",
+        "G11E12",
+        "G11E13",
+        "G11E14",
+        "G11E15",
+        "G11E16",
+        "G12E01",
+        "G12E02",
+        "G12E03",
+        "G12E04"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M019",
+      "entry_ids": [
+        "G12E05",
+        "G12E06",
+        "G12E07",
+        "G12E08",
+        "G12E09",
+        "G12E10",
+        "G12E11",
+        "G12E12",
+        "G12E13",
+        "G12E14"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M020",
+      "entry_ids": [
+        "G12E15",
+        "G12E16",
+        "G13E01",
+        "G13E02",
+        "G13E03",
+        "G13E04",
+        "G13E05",
+        "G13E06",
+        "G13E07",
+        "G13E08"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M021",
+      "entry_ids": [
+        "G13E09",
+        "G13E10",
+        "G13E11",
+        "G13E12",
+        "G13E13",
+        "G13E14",
+        "G13E15",
+        "G13E16",
+        "G14E01",
+        "G14E02"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M022",
+      "entry_ids": [
+        "G14E03",
+        "G14E04",
+        "G14E05",
+        "G14E06",
+        "G14E07",
+        "G14E08",
+        "G14E09",
+        "G14E10",
+        "G14E11",
+        "G14E12"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M023",
+      "entry_ids": [
+        "G14E13",
+        "G14E14",
+        "G14E15",
+        "G14E16",
+        "G15E01",
+        "G15E02",
+        "G15E03",
+        "G15E04",
+        "G15E05",
+        "G15E06"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M024",
+      "entry_ids": [
+        "G15E07",
+        "G15E08",
+        "G15E09",
+        "G15E10",
+        "G15E11",
+        "G15E12",
+        "G15E13",
+        "G15E14",
+        "G15E15",
+        "G15E16"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M025",
+      "entry_ids": [
+        "G16E01",
+        "G16E02",
+        "G16E03",
+        "G16E04",
+        "G16E05",
+        "G16E06",
+        "G16E07",
+        "G16E08",
+        "G16E09",
+        "G16E10"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M026",
+      "entry_ids": [
+        "G16E11",
+        "G16E12",
+        "G16E13",
+        "G16E14",
+        "G16E15",
+        "G16E16",
+        "G17E01",
+        "G17E02",
+        "G17E03",
+        "G17E04"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M027",
+      "entry_ids": [
+        "G17E05",
+        "G17E06",
+        "G17E07",
+        "G17E08",
+        "G17E09",
+        "G17E10",
+        "G17E11",
+        "G17E12",
+        "G17E13",
+        "G17E14"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M028",
+      "entry_ids": [
+        "G17E15",
+        "G17E16",
+        "G18E01",
+        "G18E02",
+        "G18E03",
+        "G18E04",
+        "G18E05",
+        "G18E06",
+        "G18E07",
+        "G18E08"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M029",
+      "entry_ids": [
+        "G18E09",
+        "G18E10",
+        "G18E11",
+        "G18E12",
+        "G18E13",
+        "G18E14",
+        "G18E15",
+        "G18E16",
+        "G19E01",
+        "G19E02"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M030",
+      "entry_ids": [
+        "G19E03",
+        "G19E04",
+        "G19E05",
+        "G19E06",
+        "G19E07",
+        "G19E08",
+        "G19E09",
+        "G19E10",
+        "G19E11",
+        "G19E12"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M031",
+      "entry_ids": [
+        "G19E13",
+        "G19E14",
+        "G19E15",
+        "G19E16",
+        "G20E01",
+        "G20E02",
+        "G20E03",
+        "G20E04",
+        "G20E05",
+        "G20E06"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M032",
+      "entry_ids": [
+        "G20E07",
+        "G20E08",
+        "G20E09",
+        "G20E10",
+        "G20E11",
+        "G20E12",
+        "G20E13",
+        "G20E14",
+        "G20E15",
+        "G20E16"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M033",
+      "entry_ids": [
+        "G21E01",
+        "G21E02",
+        "G21E03",
+        "G21E04",
+        "G21E05",
+        "G21E06",
+        "G21E07",
+        "G21E08",
+        "G21E09",
+        "G21E10"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M034",
+      "entry_ids": [
+        "G21E11",
+        "G21E12",
+        "G21E13",
+        "G21E14",
+        "G21E15",
+        "G21E16",
+        "G22E01",
+        "G22E02",
+        "G22E03",
+        "G22E04"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M035",
+      "entry_ids": [
+        "G22E05",
+        "G22E06",
+        "G22E07",
+        "G22E08",
+        "G22E09",
+        "G22E10",
+        "G22E11",
+        "G22E12",
+        "G22E13",
+        "G22E14"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M036",
+      "entry_ids": [
+        "G22E15",
+        "G22E16",
+        "G23E01",
+        "G23E02",
+        "G23E03",
+        "G23E04",
+        "G23E05",
+        "G23E06",
+        "G23E07",
+        "G23E08"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M037",
+      "entry_ids": [
+        "G23E09",
+        "G23E10",
+        "G23E11",
+        "G23E12",
+        "G23E13",
+        "G23E14",
+        "G23E15",
+        "G23E16",
+        "G24E01",
+        "G24E02"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M038",
+      "entry_ids": [
+        "G24E03",
+        "G24E04",
+        "G24E05",
+        "G24E06",
+        "G24E07",
+        "G24E08",
+        "G24E09",
+        "G24E10",
+        "G24E11",
+        "G24E12"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "M039",
+      "entry_ids": [
+        "G24E13",
+        "G24E14",
+        "G24E15",
+        "G24E16"
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Monster-Batch-Manifest.md"
+      ]
+    }
+  ],
   "arcs": [],
   "relations": [],
   "change_ledger": [
@@ -13340,6 +15443,11 @@ B001–B046 배치 원장은 인간 K001–K412와 합성 H/F/V를 각각 한 �
     {
       "id": "CL-0007",
       "summary": "사회 서사 배치 B001-B046 원장을 잠근다",
+      "owner": "wiki-world"
+    },
+    {
+      "id": "CL-0008",
+      "summary": "적대 생태 24군과 몬스터 배치 M001-M039를 잠근다",
       "owner": "wiki-world"
     }
   ]
