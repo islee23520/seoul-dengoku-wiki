@@ -37,6 +37,31 @@ test('Given current repository When houses stage Then atlas has 24 houses and Op
   assert.equal(result.code, 0, result.output);
 });
 
+test('Given current repository When theaters stage Then five theaters and External-Theaters projection', () => {
+  const result = runVerifier(['--docs', liveDocs, '--stage', 'theaters', '--atlas', atlasPath]);
+  assert.equal(result.code, 0, result.output);
+});
+
+test('Given a company mark in theater prose When theaters stage Then E_CURRENT_ACTOR_CLAIM', async () => {
+  const dir = await mkdtemp(join(tmpdir(), 'atlas-theater-token-'));
+  fixtures.push(dir);
+  const docs = join(dir, 'docs', 'game-logic');
+  const { cpSync, mkdirSync } = await import('node:fs');
+  mkdirSync(docs, { recursive: true });
+  mkdirSync(join(dir, '.omo', 'research-private'), { recursive: true });
+  cpSync(liveDocs, docs, { recursive: true });
+  cpSync(
+    join(repositoryRoot, '.omo', 'research-private', 'nippon-sangoku-canon-bridge.md'),
+    join(dir, '.omo', 'research-private', 'nippon-sangoku-canon-bridge.md'),
+  );
+  const atlas = join(docs, 'World-Narrative-Atlas.md');
+  const text = await readFile(atlas, 'utf8');
+  await writeFile(atlas, text.replace('귀환 명부를 손전등 빛에 비춘다', '삼성전자 귀환 명부를 손전등 빛에 비춘다'));
+  const result = runVerifier(['--docs', docs, '--stage', 'theaters', '--atlas', atlas]);
+  assert.equal(result.code, 1);
+  assert.match(result.stderr, /^E_CURRENT_ACTOR_CLAIM:/m);
+});
+
 test('Given a company mark in house prose When houses stage Then E_COMPANY_TOKEN', async () => {
   const dir = await mkdtemp(join(tmpdir(), 'atlas-house-token-'));
   fixtures.push(dir);

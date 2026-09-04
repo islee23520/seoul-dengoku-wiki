@@ -3,7 +3,7 @@
 이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.
 
 - 원본 앵커: `docs/game-logic/World-Narrative-Atlas.md`
-- 원본 해시: `9a8e2a704fbc3165cd4d0103f0064c2c0f25cca917ef58531cdb07e2e5ad4602`
+- 원본 해시: `536d2c060597b64f356ec9c87792e7361665a4ddddf308681bbc692ef540756e`
 
 ## HC01 · 청람전자원
 

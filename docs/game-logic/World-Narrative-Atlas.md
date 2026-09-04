@@ -11,7 +11,7 @@
 | 문서 상태 | 활성 |
 | 소유자 | wiki-world |
 | 지원 검토자 | (없음, 외부 검토 대기) |
-| 개정 | r4 |
+| 개정 | r5 |
 | 마지막 검증 커밋 | `c485bc84629c39e978889f1585ade92bef4ceda4` |
 | 출처층 | original-fiction |
 | 출처 앵커 | Cast-Index.md, Sixteen-States.md, Research-Sources.md |
@@ -43,6 +43,12 @@
 
 상세 필드는 아래 기계 등록부를 정본으로 합니다.
 
+## 외부전구
+
+다섯 외부전구(`XT01`–`XT05`)는 서울 16국 슬롯을 대체하지 않습니다. 사실·추론·창작 경계를 분리하고, 현 정권·현직 기관 혐의는 쓰지 않습니다. 일본 정사 연결표는 제거해도 서울 측 서사가 유지됩니다.
+
+상세 필드는 아래 기계 등록부를 정본으로 합니다.
+
 ## 기계 등록부
 
 ```json
@@ -54,7 +60,7 @@
     "document_status": "active",
     "owner": "wiki-world",
     "support_reviewers": [],
-    "revision": "r4",
+    "revision": "r5",
     "last_verified_commit": "c485bc84629c39e978889f1585ade92bef4ceda4",
     "source_kind": "original-fiction",
     "source_anchors": [
@@ -91,13 +97,19 @@
       "HP07",
       "HP08",
       "HP09",
-      "HP10"
+      "HP10",
+      "XT01",
+      "XT02",
+      "XT03",
+      "XT04",
+      "XT05"
     ],
     "projection_targets": [
-      "Operating-Houses.md"
+      "Operating-Houses.md",
+      "External-Theaters.md"
     ],
-    "change_ledger_entry": "CL-0004",
-    "verification_state": "houses-authored"
+    "change_ledger_entry": "CL-0005",
+    "verification_state": "theaters-authored"
   },
   "writing_contract": {
     "narrative_register": "plain-da",
@@ -6961,7 +6973,262 @@
       "prose": "도성 통역석과 수서 세관 창구에서 외교통역문이 언어 쌍 당직을 지킨다. 표시완은 자동번역이 빨라도 인준 문장은 사람이 읽는다. 상암의 자동번역 우선 앞에서는 공동 점검만 열고 키는 넘기지 않는다. 통역을 자백 도구로 돌리지 않는다."
     }
   ],
-  "theaters": [],
+  "theaters": [
+    {
+      "id": "XT01",
+      "display_name": "임진관문전구",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Sixteen-States.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        ".omo/research-private/nippon-sangoku-canon-bridge.md"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "External-Theaters.md"
+      ],
+      "verified": "임진강·한강 합류와 북부 환승·피난 회랑의 공개 지형 위치만 사실 앵커로 둔다. 현 정권·현직 기관의 범죄·정책 주장은 기록하지 않는다.",
+      "inference": "붕괴 이후 개성·평양 방면 물자와 피난 흐름은 단절·우회가 반복된다는 추론만 허용하며 정사로 승격하지 않는다.",
+      "original_fiction": "임진관문전구는 북산·창동·신내·도성이 공동으로 관문 검역과 귀환 명부를 운영하는 서울 창작 회랑이다.",
+      "states": [
+        "S10",
+        "S11",
+        "S12",
+        "S06",
+        "S14"
+      ],
+      "japan_bridge_removable": true,
+      "routes": {
+        "trade": "야간 곡물·의약품 우회 상자",
+        "energy": "북부 비상 축전지 릴레이",
+        "data": "귀환 명부 해시 동기",
+        "refugee": "가족 재결합 대기열",
+        "diaspora": "월경 친족 연락 창구",
+        "security": "관문 이중 검역",
+        "ai_custody": "귀환 안내 단말 공동 보관",
+        "monster_migration": "철새·유기견 철군 북진 감시"
+      },
+      "scenario_chains": [
+        {
+          "id": "XT01-SC1",
+          "summary": "임진 임시 검역소에서 귀환 명부가 훼손되고 북산이 재발급을 요구한다"
+        },
+        {
+          "id": "XT01-SC2",
+          "summary": "창동 차륜 호송이 관문 밖에서 멈춘 뒤 신내가 우회 환승을 연다"
+        },
+        {
+          "id": "XT01-SC3",
+          "summary": "도성 기록청이 위조 혈연 증서를 가려내고 아차 관문이 봉인 키를 나눈다"
+        }
+      ],
+      "prose": "임진 제방 아래 임시 검역소에서 북산피난연맹 안내원이 귀환 명부를 손전등 빛에 비춘다. 창동 차륜 호송은 관문 밖 진흙길에 바퀴를 적시고, 신내 환승 창구는 가족 대기열만 먼저 연다. 도성 기록청 사서가 위조 혈연 증서의 잉크 번짐을 짚고, 아차 관문 초소는 봉인 키를 두 조각으로 나눈다. 어느 쪽도 북녘 정권을 단죄하지 않고, 통행과 명부만 지킨다."
+    },
+    {
+      "id": "XT02",
+      "display_name": "서해곡창전구",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Sixteen-States.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "External-Theaters.md"
+      ],
+      "verified": "서해 연안·한강 하구 물길과 강서·영등포 일대 공개 시장·정수 위치만 사실 앵커로 둔다. 특정 현 국가 기관의 불법 무역 혐의는 쓰지 않는다.",
+      "inference": "서해 쪽 곡물·냉동 화물은 조위와 전력 단절에 민감하다는 추론만 두고, 상대국 공식 정책을 단정하지 않는다.",
+      "original_fiction": "서해곡창전구는 여의·서남·마곡·노량진이 하구 부두와 냉동 신용을 공동 점검하는 창작 무역 회랑이다.",
+      "states": [
+        "S01",
+        "S02",
+        "S03",
+        "S08",
+        "S09"
+      ],
+      "japan_bridge_removable": true,
+      "routes": {
+        "trade": "하구 곡물·냉동 상자 경매",
+        "energy": "부두 비상 발전기 교대",
+        "data": "화물 봉인 해시 장부",
+        "refugee": "선원 가족 임시 숙소",
+        "diaspora": "연안 언어 통역 창구",
+        "security": "부두 야간 순찰 교대",
+        "ai_custody": "하역 크레인 제어 키 분할",
+        "monster_migration": "하수너구리·환승쥐 해안 이동 감시"
+      },
+      "scenario_chains": [
+        {
+          "id": "XT02-SC1",
+          "summary": "여의 수문이 서해 조위에 맞춰 부두 배수 일정을 다시 짠다"
+        },
+        {
+          "id": "XT02-SC2",
+          "summary": "서남 제작창이 냉동 압축기 부품을 나누고 마곡이 계측 로그를 검증한다"
+        },
+        {
+          "id": "XT02-SC3",
+          "summary": "노량진 얼음 신용이 흔들릴 때 상암 송신이 경매 방송만 중계한다"
+        }
+      ],
+      "prose": "한강 하구 임시 부두에서 여의신정수문 당직이 조위표와 배수 밸브를 맞춘다. 서남제작동맹 기술자는 냉동 압축기 소음을 듣고 부품 순번을 바꾸고, 마곡연구평의회 계측원은 봉인 해시가 깨진 상자만 따로 둔다. 노량진남관상회 얼음 장부는 전력 경고등이 켜져도 경매 순번을 지우지 않는다. 상암송신공사는 가격 구호 대신 부두 안전 방송만 내보낸다."
+    },
+    {
+      "id": "XT03",
+      "display_name": "해협삼로전구",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Sixteen-States.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        ".omo/research-private/nippon-sangoku-canon-bridge.md"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "External-Theaters.md"
+      ],
+      "verified": "한반도·일본 열도 사이 해상 거리와 공개 항로 개념만 사실 앵커로 둔다. 원작 고유 국가명·인물·대사·연표 문장은 공개 본문에 넣지 않는다.",
+      "inference": "세 갈래 해상 중계가 생필·부품·통역 수요를 나눈다는 추론은 창작 전제이며, 비공개 연결표를 제거해도 서울 측 서사는 유지된다.",
+      "original_fiction": "해협삼로전구는 용산·수서·가락·뚝도가 세 갈래 중계 부두와 통역 창구를 운영하는 서울 창작 해로이다 정사 연결표는 언제든 뗄 수 있다.",
+      "states": [
+        "S07",
+        "S16",
+        "S15",
+        "S04",
+        "S08"
+      ],
+      "japan_bridge_removable": true,
+      "routes": {
+        "trade": "부품·약품·통조림 삼로 중계",
+        "energy": "부두 충전 슬롯 예약",
+        "data": "통역 용어 사전 동기",
+        "refugee": "귀환 선원 검역 대기",
+        "diaspora": "혼혈·귀환 가족 상담",
+        "security": "중계 부두 무장 최소화 순찰",
+        "ai_custody": "항해 보조 단말 삼자 보관",
+        "monster_migration": "철새습지포식군 연안 우회 감시"
+      },
+      "scenario_chains": [
+        {
+          "id": "XT03-SC1",
+          "summary": "용산 환적창이 삼로 중 한 길을 닫고 수서가 대체 회차선을 연다"
+        },
+        {
+          "id": "XT03-SC2",
+          "summary": "가락 배급이 통조림 할당을 재조정하고 뚝도 공방이 밀봉 공구를 보낸다"
+        },
+        {
+          "id": "XT03-SC3",
+          "summary": "노량진 통역 창구가 용어 충돌을 기록한 뒤 비공개 연결표 없이도 협정을 유지한다"
+        }
+      ],
+      "prose": "용산철도후국 환적 창구 앞에 세 갈래 중계 표지판이 빗물에 번진다. 수서강남협약도시 배차원은 닫힌 항로 대신 내륙 회차 슬롯을 열고, 가락잠실배급국 계원은 통조림 상자에 새 봉인을 붙인다. 뚝도공방연합 직공은 밀봉 공구만 건네고 국경 이야기에 끼어들지 않는다. 노량진 통역 창구는 외래어를 한국어 주석 옆에 적어, 비공개 연결표를 치워도 협정이 남게 한다."
+    },
+    {
+      "id": "XT04",
+      "display_name": "두만극동전구",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Sixteen-States.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "External-Theaters.md"
+      ],
+      "verified": "대륙 철도·극동 에너지 회랑의 지리 개념만 사실 앵커로 둔다. 특정 현 정부·국영기업의 불법 채굴·밀수 혐의는 쓰지 않는다.",
+      "inference": "붕괴 후 희토·연료·레일 부품이 동북 우회로로 들어온다는 추론은 창작 물류 전제에 한정한다.",
+      "original_fiction": "두만극동전구는 암사·신내·창동·약령이 철도 우회와 광물·연료 검수를 나누는 서울 창작 내륙 회랑이다.",
+      "states": [
+        "S05",
+        "S12",
+        "S11",
+        "S13",
+        "S14"
+      ],
+      "japan_bridge_removable": true,
+      "routes": {
+        "trade": "레일 부품·광물 샘플 검수",
+        "energy": "동절 연료 배급 큐",
+        "data": "화차 중량 센서 로그",
+        "refugee": "극동 귀환 노동자 숙소",
+        "diaspora": "중앙아시아·사할린 귀환 상담",
+        "security": "화차 봉인 이중 확인",
+        "ai_custody": "기관차 보조 AI 공동 잠금",
+        "monster_migration": "폐선보수열차군·철비늘 이동 감시"
+      },
+      "scenario_chains": [
+        {
+          "id": "XT04-SC1",
+          "summary": "암사 상수단이 화차 중량 로그를 공개하고 신내가 환승 슬롯을 조정한다"
+        },
+        {
+          "id": "XT04-SC2",
+          "summary": "창동 차륜방이 동절 연료 큐를 나누고 약령이 동상 환자를 받는다"
+        },
+        {
+          "id": "XT04-SC3",
+          "summary": "아차 관문이 광물 샘플 봉인을 검사한 뒤 위조 원산지 표를 폐기한다"
+        }
+      ],
+      "prose": "암사고덕상수단 야적장에서 화차 중량 센서가 한 칸만 과하게 뛴다. 신내망우환승시 배차원은 그 칸을 우회 슬롯에 넣고, 창동차륜방 정비수는 동절 연료 드럼 순번을 다시 쓴다. 약령의정동맹 의무실은 동상에 걸린 귀환 노동자의 장갑을 말리고, 아차구의관문국 검사관은 원산지 위조 표를 난로에 넣지 않고 증빙 봉투에 봉한다. 누구의 정부도 단죄하지 않고 화차와 사람만 검수한다."
+    },
+    {
+      "id": "XT05",
+      "display_name": "원양신탁전구",
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Sixteen-States.md",
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
+        "docs/game-logic/Unofficial-Fan-AU-Notice.md"
+      ],
+      "revision": 1,
+      "projection_targets": [
+        "External-Theaters.md"
+      ],
+      "verified": "위성·인도·방재 협력의 일반 개념과 공개 국제기구 명칭 수준만 사실 앵커로 둔다. 현 미·유엔 당국의 비밀 작전·불법 감시 혐의는 쓰지 않는다.",
+      "inference": "붕괴 후 위성 잔여 대역과 인도 물자가 신탁 창구로 들어온다는 설정은 창작이며 특정 현직 사령부 행위로 단정하지 않는다.",
+      "original_fiction": "원양신탁전구는 상암·여의·도성·수서·마곡이 위성 잔여 대역·인도 목록·디아스포라 연락을 신탁하는 서울 창작 원양 창구이다.",
+      "states": [
+        "S09",
+        "S01",
+        "S06",
+        "S16",
+        "S03",
+        "S15"
+      ],
+      "japan_bridge_removable": true,
+      "routes": {
+        "trade": "인도 물자 할당 목록",
+        "energy": "비상 송신 전력 쿼터",
+        "data": "위성 잔여 대역 예약",
+        "refugee": "해외 가족 재연결 대기",
+        "diaspora": "다국어 상담·송금 기록",
+        "security": "송신 키 시민 참관",
+        "ai_custody": "궤도 중계 단말 다자 보관",
+        "monster_migration": "감시궤도군 잔향 오탐 교정"
+      },
+      "scenario_chains": [
+        {
+          "id": "XT05-SC1",
+          "summary": "상암 송신이 잔여 대역을 공개 추첨하고 여의가 급수 당직과 시간을 맞춘다"
+        },
+        {
+          "id": "XT05-SC2",
+          "summary": "도성 기록청이 인도 목록 해시를 보관하고 수서가 배송 회차선을 연다"
+        },
+        {
+          "id": "XT05-SC3",
+          "summary": "마곡이 궤도 단말 오탐을 교정하고 가락이 이산가족 상담 창구를 연장한다"
+        }
+      ],
+      "prose": "상암송신공사 옥상에서 잔여 대역 추첨 번호가 방송된다. 여의신정수문 당직은 급수 펌프 가동 시각을 그 번호에 맞추고, 도성기록청 사서는 인도 목록 해시를 시민 참관 칸에 붙인다. 수서강남협약도시 배차원이 해외 송금 기록 상자만 실은 회차선을 열고, 마곡연구평의회 기술자는 궤도 단말의 오탐 경보를 끈다. 가락 상담 창구는 밤이 깊어도 다국어 대기표를 버리지 않는다."
+    }
+  ],
   "synthetics": [],
   "story_batches": [],
   "hostile_groups": [],
@@ -6972,6 +7239,11 @@
     {
       "id": "CL-0004",
       "summary": "운영가문 24개를 총람에 등록하고 투영한다",
+      "owner": "wiki-world"
+    },
+    {
+      "id": "CL-0005",
+      "summary": "외부전구 5개를 총람에 등록하고 투영한다",
       "owner": "wiki-world"
     }
   ]
