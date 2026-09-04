@@ -83,11 +83,12 @@ async function makeRepo({ pages, assets = { 'figure.svg': '<svg xmlns="http://ww
 
 function requiredPages(extra = {}) {
   const pages = {
-    'Home.md': '# 홈\n\n![그림](../assets/wiki/figure.svg)\n',
+    'Home.md': '# 홈\n\n![그림](../assets/wiki/figure.svg)\n\n![배너](janseon-seoul-cover.png)\n\n[출격하고 돌아오는 흐름](Campaign-Loop)\n',
     'Cast-Index.md': '# 인물 색인\n',
     'Cast-Relations.md': '# 관계\n',
     'Cast-State-01.md': '# 1국\n',
     'Cast-State-16.md': '# 16국\n',
+    'Campaign-Loop.md': '# 출격하고 돌아오는 흐름\n\n![흐름 SVG](isometric-grammar.svg)\n\n준비, 원정, 복귀 흐름.\n',
   };
   return { ...pages, ...extra };
 }
@@ -239,8 +240,9 @@ await testCase('missing Unofficial-Fan-AU-Notice is required only when the sourc
       buildWiki: async ({ outputDir }) => {
         await mkdir(outputDir, { recursive: true });
         await writeFile(join(outputDir, SENTINEL), SENTINEL_BODY);
+        const validPages = requiredPages();
         for (const page of REQUIRED_PAGES) {
-          await writeFile(join(outputDir, page), '# page\n');
+          await writeFile(join(outputDir, page), validPages[page] ?? '# page\n');
         }
         await mkdir(join(outputDir, 'assets'), { recursive: true });
         await writeFile(join(outputDir, 'assets', 'figure.svg'), '<svg xmlns="http://www.w3.org/2000/svg"/>');
@@ -267,8 +269,9 @@ await testCase('missing published asset exits nonzero before mutating the live w
       buildWiki: async ({ outputDir }) => {
         await mkdir(outputDir, { recursive: true });
         await writeFile(join(outputDir, SENTINEL), SENTINEL_BODY);
+        const validPages = requiredPages();
         for (const page of REQUIRED_PAGES) {
-          await writeFile(join(outputDir, page), '# page\n');
+          await writeFile(join(outputDir, page), validPages[page] ?? '# page\n');
         }
       },
     }),

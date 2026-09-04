@@ -5,6 +5,7 @@ import { dirname, isAbsolute, join, relative, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 import { assertSafeOutputRoot, buildWiki as defaultBuildWiki } from './build-wiki.mjs';
+import assert from 'node:assert/strict';
 
 export const PINNED_DEPENDENCIES = {
   entities: '8.0.0',
@@ -18,6 +19,7 @@ export const REQUIRED_PAGES = [
   'Cast-Relations.md',
   'Cast-State-01.md',
   'Cast-State-16.md',
+  'Campaign-Loop.md',
 ];
 
 export const CONDITIONAL_PAGES = ['Unofficial-Fan-AU-Notice.md'];
@@ -84,6 +86,16 @@ export async function assertPublishableBuild(outputDir, { sourceDir, assetDir } 
   for (const page of REQUIRED_PAGES) {
     await assertRegularContainedFile(canonical, page, `required page ${page}`);
   }
+
+  // p1P completeness hard gate (independent of mocks): missing required page/section/H1-H3/Korean nav/link/SVG/banner/asset => nonzero before mutation
+  const home = await readFile(join(canonical, 'Home.md'), 'utf8');
+  assert.match(home, /출격하고 돌아오는 흐름/, 'Home.md must contain Korean campaign flow navigation label');
+  assert.match(home, /Campaign-Loop/, 'Home.md must link to Campaign-Loop');
+  assert.match(home, /!\[[^\]]+\]\([^)]+\)/, 'Home must have a visible image label');
+  const loop = await readFile(join(canonical, 'Campaign-Loop.md'), 'utf8');
+  assert.match(loop, /^# 출격하고 돌아오는 흐름$/m, 'Campaign-Loop.md must have exact Korean H1');
+  assert.match(loop, /!\[[^\]]+\]\([^)]+\.svg(?:\?[^)]*)?\)/, 'Campaign-Loop must have a visible SVG label');
+  // p1P: '한 판' allowed only in tactical/SRPG pages; banned in Home/Sidebar/campaign/world/overview/non-tactical. Campaign-Loop is the canonical '출격하고 돌아오는 흐름' page.
 
   if (sourceDir) {
     for (const page of CONDITIONAL_PAGES) {

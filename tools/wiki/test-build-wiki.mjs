@@ -709,6 +709,7 @@ await testCase('strategic pages keep their calculable contract', async () => {
     assert.match(markdown, /clamp\(/, `${page}: missing clamped formula`);
     assert.match(markdown, /기본값/, `${page}: missing default value`);
     assert.doesNotMatch(markdown, /복제|clone/i, `${page}: prohibited clone wording`);
+    assert.doesNotMatch(markdown, /한 판(?![^\n]*전술|SRPG)/, `${page}: 한 판 prohibited outside tactical/SRPG (p1P)`);
 
     const edgeSection = extractSection(markdown, '경계 상황', page);
     for (const edgeCase of requiredEdgeCasesByPage[page]) {
