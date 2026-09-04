@@ -6,6 +6,10 @@ export function sha256Text(text) {
   return createHash('sha256').update(text, 'utf8').digest('hex');
 }
 
+export function extractDiagrams(atlas) {
+  return Array.isArray(atlas?.diagrams) ? atlas.diagrams : [];
+}
+
 export function extractAtlasJson(markdown) {
   const matches = [...markdown.matchAll(/```json\s*([\s\S]*?)```/g)];
   const atlasBlock = matches.map((m) => m[1]).find((body) => body.includes(ATLAS_SCHEMA));

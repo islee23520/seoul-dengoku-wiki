@@ -1,18 +1,26 @@
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
+import { existsSync } from 'node:fs';
 import { mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { dirname, join, resolve } from 'node:path';
 import { after, test } from 'node:test';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
 import { materializeWorldAtlas } from './materialize-world-atlas.mjs';
-import { extractAtlasJson } from './world-atlas-parse.mjs';
+import { extractAtlasJson, extractDiagrams } from './world-atlas-parse.mjs';
+import {
+  assertIsometricSvgContracts,
+  collectSvgIds,
+  findGeometryViolations,
+} from './world-atlas-isometric.mjs';
+import { ISOMETRIC_DIAGRAM_ASSETS } from './world-atlas-schema.mjs';
 
 const verifier = fileURLToPath(new URL('./verify-world-expansion.mjs', import.meta.url));
 const materializer = fileURLToPath(new URL('./materialize-world-atlas.mjs', import.meta.url));
 const repositoryRoot = resolve(dirname(verifier), '..', '..');
 const liveDocs = join(repositoryRoot, 'docs', 'game-logic');
+const wikiAssets = join(repositoryRoot, 'docs', 'assets', 'wiki');
 const atlasPath = join(liveDocs, 'World-Narrative-Atlas.md');
 const fixtures = [];
 
@@ -168,4 +176,113 @@ test('Given two B001 actors sharing a long sentence When story-batch Then E_DUPL
   const result = runVerifier(['--docs', docs, '--stage', 'story-batch', '--batch', 'B001', '--atlas', atlas]);
   assert.equal(result.code, 1, result.output);
   assert.match(result.stderr, /^E_DUPLICATE_SENTENCE:/m);
+});
+
+test('Given current G01-G06 When monster-manifest Then dossiers and outlines verify', () => {
+  const result = runVerifier(['--docs', liveDocs, '--stage', 'monster-manifest', '--atlas', atlasPath]);
+  assert.equal(result.code, 0, result.output);
+});
+
+test('Given generated G01-G12 group pages When read Then scenario headings exist', async () => {
+  const atlas = extractAtlasJson(await readFile(atlasPath, 'utf8')).value;
+  for (const group of atlas.hostile_groups.filter((row) => /^G(?:0[1-9]|1[0-2])$/.test(row.id))) {
+    const page = await readFile(join(liveDocs, `Hostile-Group-${group.id}.md`), 'utf8');
+    assert.equal((group.scenario_outlines ?? []).length, 3, group.id);
+    for (const scenario of group.scenario_outlines) {
+      assert.match(page, new RegExp(`^### ${scenario.id} · ${scenario.title}$`, 'm'));
+    }
+  }
+});
+
+test('Given missing G01 adaptation When monster-manifest stage Then E_GROUP_ADAPTATION', async () => {
+  const dir = await mkdtemp(join(tmpdir(), 'atlas-group-adaptation-'));
+  fixtures.push(dir);
+  const docs = join(dir, 'docs', 'game-logic');
+  const { cpSync, mkdirSync } = await import('node:fs');
+  mkdirSync(docs, { recursive: true });
+  mkdirSync(join(dir, '.omo', 'research-private'), { recursive: true });
+  cpSync(liveDocs, docs, { recursive: true });
+  cpSync(
+    join(repositoryRoot, '.omo', 'research-private', 'nippon-sangoku-canon-bridge.md'),
+    join(dir, '.omo', 'research-private', 'nippon-sangoku-canon-bridge.md'),
+  );
+  const atlas = join(docs, 'World-Narrative-Atlas.md');
+  const markdown = await readFile(atlas, 'utf8');
+  const parsed = extractAtlasJson(markdown);
+  assert.equal(parsed.ok, true, parsed.error);
+  delete parsed.value.hostile_groups[0].adaptation;
+  await writeFile(atlas, markdown.replace(/```json\s*[\s\S]*?```/, `\`\`\`json\n${JSON.stringify(parsed.value, null, 2)}\n\`\`\``));
+  const result = runVerifier(['--docs', docs, '--stage', 'monster-manifest', '--atlas', atlas]);
+  assert.equal(result.code, 1);
+  assert.match(result.stderr, /^E_GROUP_ADAPTATION:/m);
+});
+
+test('Given an incomplete G07 scenario When monster-manifest stage Then E_GROUP_SCENARIO', async () => {
+  const dir = await mkdtemp(join(tmpdir(), 'atlas-g07-scenario-'));
+  fixtures.push(dir);
+  const docs = join(dir, 'docs', 'game-logic');
+  const { cpSync, mkdirSync } = await import('node:fs');
+  mkdirSync(docs, { recursive: true });
+  mkdirSync(join(dir, '.omo', 'research-private'), { recursive: true });
+  cpSync(liveDocs, docs, { recursive: true });
+  cpSync(
+    join(repositoryRoot, '.omo', 'research-private', 'nippon-sangoku-canon-bridge.md'),
+    join(dir, '.omo', 'research-private', 'nippon-sangoku-canon-bridge.md'),
+  );
+  const atlas = join(docs, 'World-Narrative-Atlas.md');
+  const markdown = await readFile(atlas, 'utf8');
+  const parsed = extractAtlasJson(markdown);
+  assert.equal(parsed.ok, true, parsed.error);
+  const group = parsed.value.hostile_groups.find((row) => row.id === 'G07');
+  assert.ok(group, 'G07 missing');
+  delete group.scenario_outlines[0].outcomes;
+  await writeFile(atlas, markdown.replace(/```json\s*[\s\S]*?```/, `\`\`\`json\n${JSON.stringify(parsed.value, null, 2)}\n\`\`\``));
+  const result = runVerifier(['--docs', docs, '--stage', 'monster-manifest', '--atlas', atlas]);
+  assert.equal(result.code, 1);
+  assert.match(result.stderr, /^E_GROUP_SCENARIO:/m);
+});
+
+test('Given repository isometric atlas views When files exist Then SVG contracts pass', async () => {
+  const markdown = await readFile(atlasPath, 'utf8');
+  const atlas = extractAtlasJson(markdown).value;
+  const diagrams = extractDiagrams(atlas);
+  assert.equal(diagrams.length, 3);
+  assert.deepEqual(diagrams.map((d) => d.asset), [...ISOMETRIC_DIAGRAM_ASSETS]);
+  for (const asset of ISOMETRIC_DIAGRAM_ASSETS) {
+    const svg = await readFile(join(wikiAssets, asset), 'utf8');
+    const diagram = diagrams.find((item) => item.asset === asset);
+    assertIsometricSvgContracts({ svg, diagram, atlas });
+    assert.equal(findGeometryViolations(svg, diagram).length, 0);
+  }
+});
+
+test('Given isometric SVG hrefs When resolved from asset path Then every external target exists', async () => {
+  const docsRoot = join(repositoryRoot, 'docs');
+  const origin = 'http://127.0.0.1/';
+  let externalCount = 0;
+  let fragmentCount = 0;
+  for (const asset of ISOMETRIC_DIAGRAM_ASSETS) {
+    const svgPath = resolve(join(wikiAssets, asset));
+    const svg = await readFile(svgPath, 'utf8');
+    const ids = new Set(collectSvgIds(svg));
+    const hrefs = [...svg.matchAll(/<a\b[^>]*\bhref="([^"]*)"/g)].map((match) => match[1]);
+    assert.ok(hrefs.length > 0, `${asset}: expected hrefs`);
+    for (const href of hrefs) {
+      const fromAsset = new URL(href, pathToFileURL(svgPath));
+      const fromServer = new URL(href, new URL(`/assets/wiki/${asset}`, origin));
+      if (href.startsWith('#')) {
+        fragmentCount += 1;
+        const id = decodeURIComponent(href.slice(1));
+        assert.ok(ids.has(id), `${asset}: fragment ${href} has no target id`);
+        continue;
+      }
+      externalCount += 1;
+      const assetTarget = fileURLToPath(fromAsset);
+      const serverTarget = resolve(join(docsRoot, decodeURIComponent(fromServer.pathname).replace(/^\//, '')));
+      assert.equal(existsSync(assetTarget), true, `${asset}: href ${href} missing ${assetTarget}`);
+      assert.equal(existsSync(serverTarget), true, `${asset}: served ${fromServer.pathname} missing ${serverTarget}`);
+    }
+  }
+  assert.ok(externalCount > 0, 'expected external isometric wiki hrefs');
+  assert.ok(fragmentCount > 0, 'expected in-document isometric fragment hrefs');
 });

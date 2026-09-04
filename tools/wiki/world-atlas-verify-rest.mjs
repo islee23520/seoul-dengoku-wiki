@@ -148,6 +148,35 @@ export function verifyMonsterManifest(atlas, projections, fail) {
     if (!Array.isArray(group.scenario_links) || group.scenario_links.length < 3) {
       fail('E_GROUP_FIELD', `${group.id} scenario_links`);
     }
+    if (/^G0[1-6]$/.test(group.id)) {
+      if (group.adaptation === undefined || group.adaptation === null || group.adaptation === '') {
+        fail('E_GROUP_ADAPTATION', group.id);
+      }
+    }
+    if (/^G(?:0[1-9]|1[0-2])$/.test(group.id) || (group.scenario_outlines ?? []).length) {
+      const scenarios = group.scenario_outlines ?? [];
+      if (!Array.isArray(scenarios) || scenarios.length !== 3) {
+        fail('E_GROUP_SCENARIO', `${group.id} count=${scenarios.length ?? 0}`);
+      }
+      const scenarioFields = ['id', 'title', 'stage', 'trigger', 'actors', 'mechanism', 'choices', 'outcomes', 'moral_cost', 'dossier_ref'];
+      for (const [index, scenario] of scenarios.entries()) {
+        for (const field of scenarioFields) {
+          const value = scenario?.[field];
+          if (value === undefined || value === null || value === '') {
+            fail('E_GROUP_SCENARIO', `${group.id} scenario=${index + 1} missing ${field}`);
+          }
+        }
+        if (scenario?.id !== group.scenario_links[index]) {
+          fail('E_GROUP_SCENARIO', `${group.id} link=${group.scenario_links[index]} outline=${scenario?.id}`);
+        }
+        if (scenario?.dossier_ref !== group.id || scenario?.stage !== index + 1) {
+          fail('E_GROUP_SCENARIO', `${group.id} ${scenario?.id} backref/stage`);
+        }
+        if (!Array.isArray(scenario?.actors) || scenario.actors.length < 3 || !Array.isArray(scenario?.choices) || scenario.choices.length < 3) {
+          fail('E_GROUP_SCENARIO', `${group.id} ${scenario?.id} actors/choices`);
+        }
+      }
+    }
     scanCompanyTokens(JSON.stringify(group), fail, 'E_COMPANY_TOKEN', group.id);
     for (let i = 1; i <= 16; i += 1) entryIds.push(`${group.id}E${String(i).padStart(2, '0')}`);
   }

@@ -55,8 +55,8 @@ test('Given confirmed social records When live atlas is checked Then only approv
   const keys = baselineKeys(atlas);
   assert.deepEqual(keys.storyContents, manifest.social);
   assert.equal(keys.monsterContents.length, 0);
-  assert.equal(keys.diagramCount, 0);
-  assert.deepEqual(keys.dossierGroups, []);
+  assert.equal(keys.diagramCount, 3);
+  assert.deepEqual(keys.dossierGroups, manifest.groups['G01-G06']);
   for (const id of manifest.excluded.social) {
     assert.equal(atlas.story_contents[id], undefined, id);
   }
@@ -175,5 +175,10 @@ test('Given ISO blob When diagrams merge Then three diagram records land', async
 
 test('Given confirmed social records When CLI --require-social Then exit 0', () => {
   const result = runLive(['--require-social']);
+  assert.equal(result.code, 0, result.stderr);
+});
+
+test('Given confirmed G01-G18 and ISO When CLI --require-groups Then exit 0', () => {
+  const result = runLive(['--require-social', '--require-groups']);
   assert.equal(result.code, 0, result.stderr);
 });

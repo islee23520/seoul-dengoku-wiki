@@ -1,4 +1,5 @@
-import { PROJECTION_FILES, STATE_BY_ID, STORY_SECTION_KEYS } from './world-atlas-schema.mjs';
+import { renderAtlasIsometricSvgs } from './world-atlas-isometric.mjs';
+import { getGroupDossierFilename, PROJECTION_FILES, STATE_BY_ID, STORY_SECTION_KEYS } from './world-atlas-schema.mjs';
 
 function banner(atlasHash) {
   return [
@@ -100,6 +101,7 @@ export function renderHostileIndex(atlas, atlasHash) {
     lines.push(`- 영역: ${group.territory_migration}`);
     lines.push(`- 경제: ${group.economy}`);
     lines.push(`- 생애: ${group.lifecycle}`);
+    if (group.adaptation) lines.push(`- 장기 적응: ${group.adaptation}`);
     lines.push(`- 감각: ${group.senses}`);
     lines.push(`- 위계: ${group.hierarchy}`);
     lines.push(`- 연결: ${JSON.stringify(group.links)}`);
@@ -107,8 +109,23 @@ export function renderHostileIndex(atlas, atlasHash) {
     lines.push(`- 교전: ${group.combat_counterplay}`);
     lines.push(`- 교섭: ${group.negotiation}`);
     lines.push(`- 도덕 비용: ${group.moral_cost}`);
-    lines.push(`- 시나리오: ${(group.scenario_links ?? []).join(', ')}`);
+    const scenarioLinks = (group.scenario_outlines ?? []).length > 0
+      ? group.scenario_outlines.map((scenario) => `[${scenario.id}](Hostile-Group-${group.id}.md#${scenario.id.toLowerCase()}--${scenario.title.replaceAll(' ', '-')})`)
+      : group.scenario_links ?? [];
+    lines.push(`- 시나리오: ${scenarioLinks.join(', ')}`);
     lines.push('');
+    for (const scenario of group.scenario_outlines ?? []) {
+      lines.push(`### ${scenario.id} · ${scenario.title}`, '');
+      lines.push(`- 단계: ${scenario.stage}`);
+      lines.push(`- 촉발: ${scenario.trigger}`);
+      lines.push(`- 관련 세력: ${(scenario.actors ?? []).join(', ')}`);
+      lines.push(`- 생태 기제: ${scenario.mechanism}`);
+      lines.push(`- 선택지: ${(scenario.choices ?? []).join(' / ')}`);
+      lines.push(`- 결과: ${scenario.outcomes}`);
+      lines.push(`- 도덕 비용: ${scenario.moral_cost}`);
+      lines.push(`- 원본 항목: ${scenario.dossier_ref}`);
+      lines.push('');
+    }
   }
   return `${lines.join('\n').trim()}\n`;
 }
@@ -175,11 +192,36 @@ export function projectionsFromAtlas(atlas, atlasHash) {
     out[`Monster-Batch-${batchId}.md`] = renderMonsterBatchPage(batchId, content, atlasHash);
   }
   for (const group of atlas.hostile_groups ?? []) {
-    if (group.dossier_prose) {
-      out[`Hostile-Group-${group.id}.md`] = renderGroupDossierPage(group, atlasHash);
+    const n = Number(String(group.id ?? '').slice(1));
+    if (!Number.isInteger(n) || n >= 19) continue;
+    if ((group.scenario_outlines ?? []).length || group.dossier_prose) {
+      out[getGroupDossierFilename(group.id)] = renderGroupDossier(group, atlasHash);
+    } else {
+      out[getGroupDossierFilename(group.id)] = renderGroupDossierPage(group, atlasHash);
     }
   }
+  if ((atlas.diagrams ?? []).length) Object.assign(out, renderAtlasIsometricSvgs(atlas, atlasHash));
   return out;
+}
+
+export function renderGroupDossier(group, atlasHash) {
+  const lines = [`# ${group.id} · ${group.display_name}`, '', banner(atlasHash), ''];
+  lines.push((group.dossier_prose || group.prose || '').trim());
+  lines.push('');
+  lines.push('## 연결 시나리오', '');
+  for (const scenario of group.scenario_outlines ?? []) {
+    lines.push(`### ${scenario.id} · ${scenario.title}`, '');
+    lines.push(`- 단계: ${scenario.stage}`);
+    lines.push(`- 촉발: ${scenario.trigger}`);
+    lines.push(`- 관련 세력: ${(scenario.actors ?? []).join(', ')}`);
+    lines.push(`- 생태 기제: ${scenario.mechanism}`);
+    lines.push(`- 선택지: ${(scenario.choices ?? []).join(' / ')}`);
+    lines.push(`- 결과: ${scenario.outcomes}`);
+    lines.push(`- 도덕 비용: ${scenario.moral_cost}`);
+    lines.push(`- 원본 항목: ${scenario.dossier_ref}`);
+    lines.push('');
+  }
+  return `${lines.join('\n').trim()}\n`;
 }
 
 export function renderStoryBatchPage(batchId, content, atlasHash) {
