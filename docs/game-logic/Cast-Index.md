@@ -24,24 +24,24 @@
 | G04 | confirmed-isolated | docs/game-logic/Hostile-Group-G04.md @ a683b613d81d9c5a3098e01b26a9316e1c774cc0 (docs/cast-g01-g06) | 허브 미착지 |
 | G05 | confirmed-isolated | docs/game-logic/Hostile-Group-G05.md @ a683b613d81d9c5a3098e01b26a9316e1c774cc0 (docs/cast-g01-g06) | 허브 미착지 |
 | G06 | confirmed-isolated | docs/game-logic/Hostile-Group-G06.md @ a683b613d81d9c5a3098e01b26a9316e1c774cc0 (docs/cast-g01-g06) | 허브 미착지 |
-| G07 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g07-g12 @ 2806eb8e803ad572b0547f9011a62d941fa94120 | Hostile-Group-G07.md |
-| G08 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g07-g12 @ 2806eb8e803ad572b0547f9011a62d941fa94120 | Hostile-Group-G08.md |
-| G09 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g07-g12 @ 2806eb8e803ad572b0547f9011a62d941fa94120 | Hostile-Group-G09.md |
-| G10 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g07-g12 @ 2806eb8e803ad572b0547f9011a62d941fa94120 | Hostile-Group-G10.md |
-| G11 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g07-g12 @ 2806eb8e803ad572b0547f9011a62d941fa94120 | Hostile-Group-G11.md |
-| G12 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g07-g12 @ 2806eb8e803ad572b0547f9011a62d941fa94120 | Hostile-Group-G12.md |
-| G13 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g13-g18 @ 0974a26427d824641872d1dfc7b203f66e682d0c | Hostile-Group-G13.md |
-| G14 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g13-g18 @ 0974a26427d824641872d1dfc7b203f66e682d0c | Hostile-Group-G14.md |
-| G15 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g13-g18 @ 0974a26427d824641872d1dfc7b203f66e682d0c | Hostile-Group-G15.md |
-| G16 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g13-g18 @ 0974a26427d824641872d1dfc7b203f66e682d0c | Hostile-Group-G16.md |
-| G17 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g13-g18 @ 0974a26427d824641872d1dfc7b203f66e682d0c | Hostile-Group-G17.md |
-| G18 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g13-g18 @ 0974a26427d824641872d1dfc7b203f66e682d0c | Hostile-Group-G18.md |
-| G19 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g19-g24 @ f90bf7e0e7200acf1f043b6ac94c45f0f83673fb | Hostile-Group-G19.md |
-| G20 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g19-g24 @ f90bf7e0e7200acf1f043b6ac94c45f0f83673fb | Hostile-Group-G20.md |
-| G21 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g19-g24 @ f90bf7e0e7200acf1f043b6ac94c45f0f83673fb | Hostile-Group-G21.md |
-| G22 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g19-g24 @ f90bf7e0e7200acf1f043b6ac94c45f0f83673fb | Hostile-Group-G22.md |
-| G23 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g19-g24 @ f90bf7e0e7200acf1f043b6ac94c45f0f83673fb | Hostile-Group-G23.md |
-| G24 | missing | Hostile-Ecology-Index.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab (ledger); docs/cast-g19-g24 @ f90bf7e0e7200acf1f043b6ac94c45f0f83673fb | Hostile-Group-G24.md |
+| G07 | confirmed-isolated | docs/game-logic/Hostile-Group-G07.md @ 2806eb8e803ad572b0547f9011a62d941fa94120 (docs/cast-g07-g12) | 허브 미착지 |
+| G08 | confirmed-isolated | docs/game-logic/Hostile-Group-G08.md @ 2806eb8e803ad572b0547f9011a62d941fa94120 (docs/cast-g07-g12) | 허브 미착지 |
+| G09 | confirmed-isolated | docs/game-logic/Hostile-Group-G09.md @ 2806eb8e803ad572b0547f9011a62d941fa94120 (docs/cast-g07-g12) | 허브 미착지 |
+| G10 | confirmed-isolated | docs/game-logic/Hostile-Group-G10.md @ 2806eb8e803ad572b0547f9011a62d941fa94120 (docs/cast-g07-g12) | 허브 미착지 |
+| G11 | confirmed-isolated | docs/game-logic/Hostile-Group-G11.md @ 2806eb8e803ad572b0547f9011a62d941fa94120 (docs/cast-g07-g12) | 허브 미착지 |
+| G12 | confirmed-isolated | docs/game-logic/Hostile-Group-G12.md @ 2806eb8e803ad572b0547f9011a62d941fa94120 (docs/cast-g07-g12) | 허브 미착지 |
+| G13 | confirmed-isolated | docs/game-logic/Hostile-Group-G13.md @ fe644da70821e0205449a7d0530acc9ce7887cdd (docs/cast-g13-g18) | 허브 미착지 |
+| G14 | confirmed-isolated | docs/game-logic/Hostile-Group-G14.md @ fe644da70821e0205449a7d0530acc9ce7887cdd (docs/cast-g13-g18) | 허브 미착지 |
+| G15 | confirmed-isolated | docs/game-logic/Hostile-Group-G15.md @ fe644da70821e0205449a7d0530acc9ce7887cdd (docs/cast-g13-g18) | 허브 미착지 |
+| G16 | confirmed-isolated | docs/game-logic/Hostile-Group-G16.md @ fe644da70821e0205449a7d0530acc9ce7887cdd (docs/cast-g13-g18) | 허브 미착지 |
+| G17 | confirmed-isolated | docs/game-logic/Hostile-Group-G17.md @ fe644da70821e0205449a7d0530acc9ce7887cdd (docs/cast-g13-g18) | 허브 미착지 |
+| G18 | confirmed-isolated | docs/game-logic/Hostile-Group-G18.md @ fe644da70821e0205449a7d0530acc9ce7887cdd (docs/cast-g13-g18) | 허브 미착지 |
+| G19 | confirmed-isolated | docs/game-logic/Hostile-Group-G19.md @ 39abb9f5c5f9835298eab1d518c57059e526c353 (docs/cast-g19-g24) | 허브 미착지 |
+| G20 | confirmed-isolated | docs/game-logic/Hostile-Group-G20.md @ 39abb9f5c5f9835298eab1d518c57059e526c353 (docs/cast-g19-g24) | 허브 미착지 |
+| G21 | confirmed-isolated | docs/game-logic/Hostile-Group-G21.md @ 39abb9f5c5f9835298eab1d518c57059e526c353 (docs/cast-g19-g24) | 허브 미착지 |
+| G22 | confirmed-isolated | docs/game-logic/Hostile-Group-G22.md @ 39abb9f5c5f9835298eab1d518c57059e526c353 (docs/cast-g19-g24) | 허브 미착지 |
+| G23 | confirmed-isolated | docs/game-logic/Hostile-Group-G23.md @ 39abb9f5c5f9835298eab1d518c57059e526c353 (docs/cast-g19-g24) | 허브 미착지 |
+| G24 | confirmed-isolated | docs/game-logic/Hostile-Group-G24.md @ 39abb9f5c5f9835298eab1d518c57059e526c353 (docs/cast-g19-g24) | 허브 미착지 |
 | ISO-world-atlas | confirmed-isolated | docs/assets/wiki/world-atlas-isometric.svg @ 7b4e27b91510c024e936ed7cc4322714ff280313 (docs/cast-iso-atlas-v2) | 허브 미착지 |
 | ISO-house-influence | confirmed-isolated | docs/assets/wiki/house-influence-isometric.svg @ 7b4e27b91510c024e936ed7cc4322714ff280313 (docs/cast-iso-atlas-v2) | 허브 미착지 |
 | ISO-hostile-ecology | confirmed-isolated | docs/assets/wiki/hostile-ecology-isometric.svg @ 7b4e27b91510c024e936ed7cc4322714ff280313 (docs/cast-iso-atlas-v2) | 허브 미착지 |
