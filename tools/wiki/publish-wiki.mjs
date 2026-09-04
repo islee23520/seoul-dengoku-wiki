@@ -353,6 +353,7 @@ function defaultNpmCi(repositoryRoot) {
 
 async function defaultRunTests(repositoryRoot) {
   await runCommand(process.execPath, ['tools/wiki/test-build-wiki.mjs'], repositoryRoot);
+  await runCommand(process.execPath, ['tools/wiki/test-core-isometric-diagrams.mjs'], repositoryRoot);
   await runCommand(process.execPath, ['tools/wiki/test-publish-wiki.mjs'], repositoryRoot);
 }
 

@@ -1,6 +1,8 @@
 # 전술 전투
 
-![전술 전투에서 칸에 누가 서 있고 어느 쪽을 보며 어디까지 보이는지](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-grammar.svg?raw=true)
+![한 판의 전술 위치 방향 시야 규칙](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-srpg-combat.svg?raw=true)
+
+여기서 한 판은 확정된 전투 컨텍스트로 시작해 ResultId 하나로 끝나는 전술/SRPG 세션 한 번을 뜻합니다. 한 판 안에서 위치·방향·시야가 턴제 전술의 핵심 축입니다.
 
 ## 탐색과 같은 문법
 

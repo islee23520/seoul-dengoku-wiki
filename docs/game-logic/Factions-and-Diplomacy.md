@@ -1,5 +1,9 @@
 # 세력과 외교
 
+![세력 협상과 통행권의 아이소 관계](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-factions-diplomacy.svg?raw=true)
+
+세력 간 협상과 통행권 부여를 위치·방향·시야 기반 관계로 결정합니다.
+
 정치는 하나의 호감도가 아니라 개인 신뢰, 대중 평판, 지역별 정통성, 이행 가능한 약속과 집단 불만의 그래프입니다. 아래 수치는 **설계 가정**입니다.
 
 ## 입력과 출력

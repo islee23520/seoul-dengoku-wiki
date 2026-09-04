@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title>한 판의 전술 위치 방향 시야 규칙</title>
+  <desc>전술 전투에서 인물의 칸, 방향, 시야가 게임 규칙에 미치는 영향을 설명하는 아이소메트릭 도표.</desc>
+  <rect width="1280" height="720" fill="#07141b"/>
+  <g font-family="Pretendard, Noto Sans KR, Apple SD Gothic Neo, Malgun Gothic, sans-serif" fill="#e8f6fa">
+    <text x="64" y="70" font-size="34" font-weight="700">전술 전투</text>
+    <text x="64" y="108" font-size="18" fill="#9ec6d2">한 판의 전술 위치 방향 시야 규칙</text>
+    <g transform="translate(180 140)">
+      <path d="M80 80 180 140 80 200 -20 140Z" fill="#102c36" stroke="#315865"/>
+      <path d="M220 80 320 140 220 200 120 140Z" fill="#102c36" stroke="#315865"/>
+      <path d="M80 220 180 280 80 340 -20 280Z" fill="#102c36" stroke="#315865"/>
+      <path d="M220 220 320 280 220 340 120 280Z" fill="#102c36" stroke="#315865"/>
+      <rect x="250" y="150" width="36" height="90" fill="#174555" stroke="#61d4db" stroke-width="3"/>
+      <rect x="430" y="110" width="90" height="36" fill="#174555" stroke="#61d4db" stroke-width="3"/>
+      <circle cx="140" cy="260" r="20" fill="#f1b85b" stroke="#fff4d4" stroke-width="3"/>
+      <circle cx="620" cy="180" r="20" fill="#e94f64" stroke="#fff4d4" stroke-width="3"/>
+      <path d="M140 260 260 200 300 250 180 300Z" fill="hsl(233 70% 58%)" opacity="0.32"/>
+      <path d="M620 180 500 140 470 200 580 230Z" fill="#e94f64" opacity="0.28"/>
+      <path d="M160 250 240 210" stroke="#ffffff" stroke-width="5" marker-end="url(#arrow)"/>
+      <path d="M600 190 520 170" stroke="#ffffff" stroke-width="5" marker-end="url(#arrow)"/>
+      <text x="235" y="130" font-size="20">아군 엄폐</text>
+      <text x="430" y="95" font-size="20">적군 엄폐</text>
+      <text x="40" y="380" font-size="20">아군</text>
+      <text x="600" y="120" font-size="20">적군</text>
+    </g>
+    <text x="64" y="630" font-size="15" fill="#9ec6d2">공통 아이소 문법</text>
+    <g font-size="22" font-weight="650">
+      <text x="64" y="668">칸에 누가 서 있나</text>
+      <text x="430" y="668">어느 쪽을 보나</text>
+      <text x="780" y="668">시야</text>
+    </g>
+  </g>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#fff"/></marker></defs>
+</svg>
