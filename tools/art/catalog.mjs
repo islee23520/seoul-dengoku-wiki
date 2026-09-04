@@ -22,6 +22,8 @@ export const BACKENDS = new Set([
   'comfyui_trellis',
   'none',
 ]);
+export const INVALID_BACKENDS = new Set(['trellis_v1', 'comfyui_trellis']);
+export const STATUSES = new Set(['draft', 'reviewed', 'promoted', 'blocked', 'archived']);
 export const RIGHTS = new Set(['allowed', 'blocked', 'unresolved']);
 export const SOURCES = new Set(['generate', 'existing']);
 export const MAYA_INCOMPATIBLE_ASSETS = new Set([

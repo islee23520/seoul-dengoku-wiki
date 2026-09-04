@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 
-import { BACKENDS } from './catalog.mjs';
+import { BACKENDS, INVALID_BACKENDS, STATUSES } from './catalog.mjs';
 
 const schemaPath = fileURLToPath(new URL('./asset-manifest.schema.json', import.meta.url));
 
@@ -29,6 +29,12 @@ function validateAsset(asset, schema) {
   }
   if (Object.hasOwn(asset, 'generation_backend') && !BACKENDS.has(asset.generation_backend)) {
     errors.push({ code: 'unknown_backend', field: 'generation_backend' });
+  }
+  if (INVALID_BACKENDS.has(asset.generation_backend) && asset.status !== 'archived') {
+    errors.push({ code: 'trellis_invalid', field: 'generation_backend' });
+  }
+  if (Object.hasOwn(asset, 'status') && !STATUSES.has(asset.status)) {
+    errors.push({ code: 'unknown_status', field: 'status' });
   }
   if (asset.rights_status !== 'allowed' && asset.status === 'promoted') {
     errors.push({ code: 'rights_not_allowed', field: 'rights_status' });

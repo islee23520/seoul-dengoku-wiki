@@ -180,9 +180,9 @@ test('cli check blocked rights fixture exits 2 with only rights_check', async ()
     asset_class: 'prop',
     animation_need: 'none',
     dcc: 'auto',
-    generation_backend: 'trellis_v1',
+    generation_backend: 'none',
     rights_status: 'blocked',
-    source: 'generate',
+    source: 'existing',
   });
   const compiled = spawnSync(process.execPath, [cli, 'compile', '--intent', intentPath], {
     cwd: repoRoot,

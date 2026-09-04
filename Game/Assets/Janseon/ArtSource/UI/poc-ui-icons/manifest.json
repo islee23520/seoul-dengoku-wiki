@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "asset_id": "poc-ui-icons",
+  "asset_class": "ui_kit",
+  "source": "generate",
+  "rights_status": "allowed",
+  "generation_backend": "nanobanana_gemini",
+  "provider": "google",
+  "model": "gemini-3.1-flash-image",
+  "revision": "2026-09-04",
+  "prompt": "Text-free HUD icon kit derived from the selected Gemini UI concept: talk, detour, battle, heal, party, station, crate, alert. Teal line icons on transparent, readable at 32px, no letters.",
+  "prompt_hash": "55e9042c7b2f4ced098175dfb2cfa4b7cb23d5960df014486b3bd842722e0a83",
+  "input_hashes": [
+    "f4fca481db4755b40446c5d06b657baf5c889eedf9439c347ddcefd5bfa0b8e2"
+  ],
+  "seed": 13008,
+  "cost_mode": "subscription",
+  "cost_cents": 0,
+  "raw_hash": "f4fca481db4755b40446c5d06b657baf5c889eedf9439c347ddcefd5bfa0b8e2",
+  "output_hash": "6d091037a0d77bb2cc6415b0d84a637a2ff211632b9970c4ba02e7afe6de2aad",
+  "tool_versions": {
+    "unity": "6000.7.0a5",
+    "python": "3.13",
+    "node": "22.14.0",
+    "pillow": "12.2.0",
+    "cliproxy": "subscription"
+  },
+  "operations": [
+    "identity_from_concept",
+    "draw_text_free_icons",
+    "atlas",
+    "archive",
+    "human_review",
+    "bom_promotion"
+  ],
+  "unity_import_settings": {
+    "texture_type": "Sprite",
+    "sprite_mode": "Single",
+    "filter_mode": "Point",
+    "alpha_is_transparency": true,
+    "wrap_mode": "Clamp",
+    "mesh_compression": "Off"
+  },
+  "review_receipts": [
+    {
+      "reviewer": "todo13-art-lead",
+      "verdict": "pass",
+      "receipt_hash": "41da7a29955f1c7362691702eace6fd472c7d36a3fe6b32aac79dd9b65730187",
+      "reviewed_at": "2026-09-04T10:16:04.000Z",
+      "notes": "Machine geometry/alpha/9-slice/icon/seam QA plus human visual pass. Design.md absent on p1E; UI Toolkit binding is Todo 16 handoff."
+    }
+  ],
+  "status": "promoted",
+  "created_at": "2026-09-04T10:16:04.000Z",
+  "license": "generated-on-subscription-for-janseon-poc"
+}

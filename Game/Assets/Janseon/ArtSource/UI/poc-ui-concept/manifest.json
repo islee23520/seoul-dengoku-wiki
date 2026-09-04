@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "asset_id": "poc-ui-concept",
+  "asset_class": "ui_concept",
+  "source": "generate",
+  "rights_status": "allowed",
+  "generation_backend": "nanobanana_gemini",
+  "provider": "google",
+  "model": "gemini-3.1-flash-image",
+  "revision": "2026-09-04",
+  "prompt": "Orthographic UI concept sheet for a Korean post-collapse subway strategy game. Dark navy panels with teal hairline borders, empty blank windows, three unlabeled rectangular metal buttons, small circular HUD icons that are pure shapes with no letters. Layout only, not a screenshot of a real OS. NO readable text, NO watermark, NO logos, NO hangul, NO latin words.",
+  "prompt_hash": "43ce5b307fd77ad9d3c05c9a6bd6b8fcf38057d23780a0c0d8d7177d36253416",
+  "input_hashes": [
+    "f4fca481db4755b40446c5d06b657baf5c889eedf9439c347ddcefd5bfa0b8e2"
+  ],
+  "seed": 13002,
+  "cost_mode": "subscription",
+  "cost_cents": 0,
+  "raw_hash": "f4fca481db4755b40446c5d06b657baf5c889eedf9439c347ddcefd5bfa0b8e2",
+  "output_hash": "e27ad574641affa9ad3af26a87c91ac98acb2edb9e5025d437f156ba7ae57a63",
+  "tool_versions": {
+    "unity": "6000.7.0a5",
+    "python": "3.13",
+    "node": "22.14.0",
+    "pillow": "12.2.0",
+    "cliproxy": "subscription"
+  },
+  "operations": [
+    "generate",
+    "archive",
+    "resize",
+    "human_review",
+    "bom_promotion"
+  ],
+  "unity_import_settings": {
+    "texture_type": "Sprite",
+    "sprite_mode": "Single",
+    "filter_mode": "Bilinear",
+    "alpha_is_transparency": false,
+    "wrap_mode": "Clamp",
+    "mesh_compression": "Off"
+  },
+  "review_receipts": [
+    {
+      "reviewer": "todo13-art-lead",
+      "verdict": "pass",
+      "receipt_hash": "ac14da839cbda38eb4f3494dfa490f71cefa93a82d729e6456512851a0918d69",
+      "reviewed_at": "2026-09-04T10:16:04.000Z",
+      "notes": "Machine geometry/alpha/9-slice/icon/seam QA plus human visual pass. Design.md absent on p1E; UI Toolkit binding is Todo 16 handoff."
+    }
+  ],
+  "status": "promoted",
+  "created_at": "2026-09-04T10:16:04.000Z",
+  "license": "generated-on-subscription-for-janseon-poc"
+}
