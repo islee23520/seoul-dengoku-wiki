@@ -182,3 +182,8 @@ test('Given confirmed G01-G18 and ISO When CLI --require-groups Then exit 0', ()
   const result = runLive(['--require-social', '--require-groups']);
   assert.equal(result.code, 0, result.stderr);
 });
+
+test('Given confirmed monster pages When CLI --require-monsters Then exit 0', () => {
+  const result = runLive(['--require-social', '--require-groups', '--require-monsters']);
+  assert.equal(result.code, 0, result.stderr);
+});
