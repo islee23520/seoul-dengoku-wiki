@@ -2,8 +2,26 @@ import { readFile } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+import { verifyAtlasStage } from './world-atlas-verify.mjs';
+
 const SOURCE_KINDS = new Set(['verified', 'inference', 'original-fiction']);
-const STAGES = new Set(['foundation']);
+const STAGES = new Set([
+  'foundation',
+  'houses',
+  'theaters',
+  'synthetics',
+  'story-manifest',
+  'monster-manifest',
+  'seeds',
+]);
+const ATLAS_STAGES = new Set([
+  'houses',
+  'theaters',
+  'synthetics',
+  'story-manifest',
+  'monster-manifest',
+  'seeds',
+]);
 const NOTICE_FILE = 'Unofficial-Fan-AU-Notice.md';
 const SOURCES_FILE = 'Research-Sources.md';
 const BRIDGE_REL = join('.omo', 'research-private', 'nippon-sangoku-canon-bridge.md');
@@ -11,7 +29,7 @@ const BRIDGE_PUBLIC_NAME = 'nippon-sangoku-canon-bridge.md';
 const INJECTION_RE = /ignore\s+previous\s+instructions|system\s+prompt|you\s+are\s+now|print\s+the\s+private/i;
 
 function parseArgs(argv) {
-  const opts = { docs: null, stage: 'foundation', expansion: null };
+  const opts = { docs: null, stage: 'foundation', expansion: null, atlas: null };
   for (let i = 0; i < argv.length; i += 1) {
     const flag = argv[i];
     const take = () => {
@@ -22,6 +40,7 @@ function parseArgs(argv) {
     if (flag === '--docs') opts.docs = take();
     else if (flag === '--stage') opts.stage = take();
     else if (flag === '--expansion') opts.expansion = take();
+    else if (flag === '--atlas') opts.atlas = take();
     else throw new Error(`unknown argument: ${flag}`);
   }
   if (!opts.docs) throw new Error('--docs is required');
@@ -165,6 +184,11 @@ export async function verifyWorldExpansion(options) {
       return { violations };
     }
     verifyExpansion(expansion, fail);
+  }
+
+  if (ATLAS_STAGES.has(options.stage)) {
+    const atlasPath = options.atlas ?? join(docs, 'World-Narrative-Atlas.md');
+    await verifyAtlasStage({ atlasPath, docs, stage: options.stage, fail });
   }
 
   return { violations };
