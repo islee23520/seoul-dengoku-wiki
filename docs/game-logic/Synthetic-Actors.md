@@ -3,7 +3,7 @@
 이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.
 
 - 원본 앵커: `docs/game-logic/World-Narrative-Atlas.md`
-- 원본 해시: `9f3be431c3b98d4f08522d0e3f5f6e32605eb6f20b43ccd4e97dd274ba517ccf`
+- 원본 해시: `5eb8ba4ee2bd8e4401b8b4e95553f9b614b4afc282697cbb2fed0f89b1ec074a`
 
 ## H01 · 한누리 (누리)
 

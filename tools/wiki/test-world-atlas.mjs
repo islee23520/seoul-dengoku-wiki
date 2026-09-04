@@ -52,6 +52,11 @@ test('Given current repository When story-manifest stage Then 46 batches locked'
   assert.equal(result.code, 0, result.output);
 });
 
+test('Given current repository When monster-manifest stage Then 24 groups and 384 entries', () => {
+  const result = runVerifier(['--docs', liveDocs, '--stage', 'monster-manifest', '--atlas', atlasPath]);
+  assert.equal(result.code, 0, result.output);
+});
+
 test('Given a company mark in theater prose When theaters stage Then E_CURRENT_ACTOR_CLAIM', async () => {
   const dir = await mkdtemp(join(tmpdir(), 'atlas-theater-token-'));
   fixtures.push(dir);
