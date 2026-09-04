@@ -187,3 +187,29 @@ test('Given confirmed monster pages When CLI --require-monsters Then exit 0', ()
   const result = runLive(['--require-social', '--require-groups', '--require-monsters']);
   assert.equal(result.code, 0, result.stderr);
 });
+
+test('Given excluded B017 When story-batch stage Then E_STORY_CONTENT and worldbuilding stays incomplete', () => {
+  const expansion = fileURLToPath(new URL('./verify-world-expansion.mjs', import.meta.url));
+  const result = spawnSync(process.execPath, [
+    expansion,
+    '--docs', join(repositoryRoot, 'docs', 'game-logic'),
+    '--stage', 'story-batch',
+    '--batch', 'B017',
+    '--atlas', atlasPath,
+  ], { cwd: repositoryRoot, encoding: 'utf8' });
+  assert.equal(result.status, 1);
+  assert.match(result.stderr, /^E_STORY_CONTENT: B017/m);
+});
+
+test('Given excluded M003 When monster-batch stage Then E_MONSTER_CONTENT', () => {
+  const expansion = fileURLToPath(new URL('./verify-world-expansion.mjs', import.meta.url));
+  const result = spawnSync(process.execPath, [
+    expansion,
+    '--docs', join(repositoryRoot, 'docs', 'game-logic'),
+    '--stage', 'monster-batch',
+    '--batch', 'M003',
+    '--atlas', atlasPath,
+  ], { cwd: repositoryRoot, encoding: 'utf8' });
+  assert.equal(result.status, 1);
+  assert.match(result.stderr, /^E_MONSTER_CONTENT: M003/m);
+});

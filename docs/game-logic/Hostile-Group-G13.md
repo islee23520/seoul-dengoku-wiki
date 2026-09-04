@@ -3,7 +3,7 @@
 이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.
 
 - 원본 앵커: `docs/game-logic/World-Narrative-Atlas.md`
-- 원본 해시: `88fee0b8b002016fd54e70bf762a77441f6cb0f2f16ada8e14817d8fbd4cacec`
+- 원본 해시: `72e952d78f2fac240c10b0184ee2b3b4ce8067f0315b22153ff1455f42c81896`
 
 ### 현대 불안
 

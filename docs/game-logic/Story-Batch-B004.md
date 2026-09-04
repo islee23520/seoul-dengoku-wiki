@@ -3,7 +3,7 @@
 이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.
 
 - 원본 앵커: `docs/game-logic/World-Narrative-Atlas.md`
-- 원본 해시: `ea38cea4f134eb6fb849c7ee0e7b16cb38d171386a4921ac561a8569b7cb0eac`
+- 원본 해시: `72e952d78f2fac240c10b0184ee2b3b4ce8067f0315b22153ff1455f42c81896`
 
 ## 인물 K150 · 연지우
 

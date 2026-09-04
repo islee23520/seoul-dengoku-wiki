@@ -2,49 +2,45 @@
 
 붕괴 이후 서울 16국의 이름 있는 인물 412명을 국가·직위·단계·관계 수로 묶는다.
 
-조각 완료 ≠ 세계관 완료
+조각 통합 ≠ 세계관 완료. 확인된 조각만 허브에 착지했으며 누락·미검증 조각이 남아 있다.
 
 | 페이지 | 상태 | 링크 | 누락 |
 | --- | --- | --- | --- |
 | B001 | confirmed-landed | docs/game-logic/Story-Batch-B001.md @ 8dd66cc72f11fc2d93b062ce33af6a491a84a7ab | 세계관 미완 |
-| B002 | confirmed-isolated | docs/game-logic/Story-Batch-B002.md @ b6397adb27eabe3503af3011ffda624bc884b33e (docs/cast-b002) | 허브 미착지 |
-| B003 | confirmed-isolated | docs/game-logic/Story-Batch-B003.md @ 23240675edcb508f327ef903afcb4a56a95d38d0 (docs/cast-b003) | 허브 미착지 |
-| B004 | confirmed-isolated | docs/game-logic/Story-Batch-B004.md @ c3f33a7839748ee1408d8113278f7522b5757441 (docs/cast-b004) | 허브 미착지 |
-| B005 | confirmed-isolated | docs/game-logic/Story-Batch-B005.md @ 406d5e8922450519d847f856f667d2226bb8139f (docs/cast-b005) | 허브 미착지 |
-| B006 | confirmed-isolated | docs/game-logic/Story-Batch-B006.md @ 2da40af520c5498b3f8af910b9f2b44712cade97 (docs/cast-b006) | 허브 미착지 |
-| B007 | confirmed-isolated | docs/game-logic/Story-Batch-B007.md @ fb447e42d0010379bbb20d5ed71b85c5281cc906 (docs/cast-b007) | 허브 미착지 |
-| B008 | confirmed-isolated | docs/game-logic/Story-Batch-B008.md @ 8e1a2d02c450e26c52463e7e08e0b96fb95e5aaa (docs/cast-b008) | 허브 미착지 |
-| B009 | confirmed-isolated | docs/game-logic/Story-Batch-B009.md @ f9e9a9f74736e3181987307b41482b68aee54032 (docs/cast-b009) | 허브 미착지 |
-| B010 | confirmed-isolated | docs/game-logic/Story-Batch-B010.md @ 702c75668c10d26cf05f3d679003239450af3f71 (docs/cast-b010) | 허브 미착지 |
-| B011 | confirmed-isolated | docs/game-logic/Story-Batch-B011.md @ 1feb1084269ce3882a220959eea61b10eaf89ca9 (docs/cast-b011) | 허브 미착지 |
-| B012 | confirmed-isolated | docs/game-logic/Story-Batch-B012.md @ 6e6f958e191969c4e4d2ff5427820249ef73e484 (docs/cast-b012) | 허브 미착지 |
-| G01 | confirmed-isolated | docs/game-logic/Hostile-Group-G01.md @ a683b613d81d9c5a3098e01b26a9316e1c774cc0 (docs/cast-g01-g06) | 허브 미착지 |
-| G02 | confirmed-isolated | docs/game-logic/Hostile-Group-G02.md @ a683b613d81d9c5a3098e01b26a9316e1c774cc0 (docs/cast-g01-g06) | 허브 미착지 |
-| G03 | confirmed-isolated | docs/game-logic/Hostile-Group-G03.md @ a683b613d81d9c5a3098e01b26a9316e1c774cc0 (docs/cast-g01-g06) | 허브 미착지 |
-| G04 | confirmed-isolated | docs/game-logic/Hostile-Group-G04.md @ a683b613d81d9c5a3098e01b26a9316e1c774cc0 (docs/cast-g01-g06) | 허브 미착지 |
-| G05 | confirmed-isolated | docs/game-logic/Hostile-Group-G05.md @ a683b613d81d9c5a3098e01b26a9316e1c774cc0 (docs/cast-g01-g06) | 허브 미착지 |
-| G06 | confirmed-isolated | docs/game-logic/Hostile-Group-G06.md @ a683b613d81d9c5a3098e01b26a9316e1c774cc0 (docs/cast-g01-g06) | 허브 미착지 |
-| G07 | confirmed-isolated | docs/game-logic/Hostile-Group-G07.md @ 2806eb8e803ad572b0547f9011a62d941fa94120 (docs/cast-g07-g12) | 허브 미착지 |
-| G08 | confirmed-isolated | docs/game-logic/Hostile-Group-G08.md @ 2806eb8e803ad572b0547f9011a62d941fa94120 (docs/cast-g07-g12) | 허브 미착지 |
-| G09 | confirmed-isolated | docs/game-logic/Hostile-Group-G09.md @ 2806eb8e803ad572b0547f9011a62d941fa94120 (docs/cast-g07-g12) | 허브 미착지 |
-| G10 | confirmed-isolated | docs/game-logic/Hostile-Group-G10.md @ 2806eb8e803ad572b0547f9011a62d941fa94120 (docs/cast-g07-g12) | 허브 미착지 |
-| G11 | confirmed-isolated | docs/game-logic/Hostile-Group-G11.md @ 2806eb8e803ad572b0547f9011a62d941fa94120 (docs/cast-g07-g12) | 허브 미착지 |
-| G12 | confirmed-isolated | docs/game-logic/Hostile-Group-G12.md @ 2806eb8e803ad572b0547f9011a62d941fa94120 (docs/cast-g07-g12) | 허브 미착지 |
-| G13 | confirmed-isolated | docs/game-logic/Hostile-Group-G13.md @ fe644da70821e0205449a7d0530acc9ce7887cdd (docs/cast-g13-g18) | 허브 미착지 |
-| G14 | confirmed-isolated | docs/game-logic/Hostile-Group-G14.md @ fe644da70821e0205449a7d0530acc9ce7887cdd (docs/cast-g13-g18) | 허브 미착지 |
-| G15 | confirmed-isolated | docs/game-logic/Hostile-Group-G15.md @ fe644da70821e0205449a7d0530acc9ce7887cdd (docs/cast-g13-g18) | 허브 미착지 |
-| G16 | confirmed-isolated | docs/game-logic/Hostile-Group-G16.md @ fe644da70821e0205449a7d0530acc9ce7887cdd (docs/cast-g13-g18) | 허브 미착지 |
-| G17 | confirmed-isolated | docs/game-logic/Hostile-Group-G17.md @ fe644da70821e0205449a7d0530acc9ce7887cdd (docs/cast-g13-g18) | 허브 미착지 |
-| G18 | confirmed-isolated | docs/game-logic/Hostile-Group-G18.md @ fe644da70821e0205449a7d0530acc9ce7887cdd (docs/cast-g13-g18) | 허브 미착지 |
-| G19 | confirmed-isolated | docs/game-logic/Hostile-Group-G19.md @ 39abb9f5c5f9835298eab1d518c57059e526c353 (docs/cast-g19-g24) | 허브 미착지 |
-| G20 | confirmed-isolated | docs/game-logic/Hostile-Group-G20.md @ 39abb9f5c5f9835298eab1d518c57059e526c353 (docs/cast-g19-g24) | 허브 미착지 |
-| G21 | confirmed-isolated | docs/game-logic/Hostile-Group-G21.md @ 39abb9f5c5f9835298eab1d518c57059e526c353 (docs/cast-g19-g24) | 허브 미착지 |
-| G22 | confirmed-isolated | docs/game-logic/Hostile-Group-G22.md @ 39abb9f5c5f9835298eab1d518c57059e526c353 (docs/cast-g19-g24) | 허브 미착지 |
-| G23 | confirmed-isolated | docs/game-logic/Hostile-Group-G23.md @ 39abb9f5c5f9835298eab1d518c57059e526c353 (docs/cast-g19-g24) | 허브 미착지 |
-| G24 | confirmed-isolated | docs/game-logic/Hostile-Group-G24.md @ 39abb9f5c5f9835298eab1d518c57059e526c353 (docs/cast-g19-g24) | 허브 미착지 |
-| ISO-world-atlas | confirmed-isolated | docs/assets/wiki/world-atlas-isometric.svg @ 7b4e27b91510c024e936ed7cc4322714ff280313 (docs/cast-iso-atlas-v2) | 허브 미착지 |
-| ISO-house-influence | confirmed-isolated | docs/assets/wiki/house-influence-isometric.svg @ 7b4e27b91510c024e936ed7cc4322714ff280313 (docs/cast-iso-atlas-v2) | 허브 미착지 |
-| ISO-hostile-ecology | confirmed-isolated | docs/assets/wiki/hostile-ecology-isometric.svg @ 7b4e27b91510c024e936ed7cc4322714ff280313 (docs/cast-iso-atlas-v2) | 허브 미착지 |
+| B002 | confirmed-landed | docs/game-logic/Story-Batch-B002.md @ b6397adb27eabe3503af3011ffda624bc884b33e | 세계관 미완 |
+| B003 | confirmed-landed | docs/game-logic/Story-Batch-B003.md @ 23240675edcb508f327ef903afcb4a56a95d38d0 | 세계관 미완 |
+| B004 | confirmed-landed | docs/game-logic/Story-Batch-B004.md @ c3f33a7839748ee1408d8113278f7522b5757441 | 세계관 미완 |
+| B005 | confirmed-landed | docs/game-logic/Story-Batch-B005.md @ 406d5e8922450519d847f856f667d2226bb8139f | 세계관 미완 |
+| B006 | confirmed-landed | docs/game-logic/Story-Batch-B006.md @ 2da40af520c5498b3f8af910b9f2b44712cade97 | 세계관 미완 |
+| B007 | confirmed-landed | docs/game-logic/Story-Batch-B007.md @ fb447e42d0010379bbb20d5ed71b85c5281cc906 | 세계관 미완 |
+| B008 | confirmed-landed | docs/game-logic/Story-Batch-B008.md @ 8e1a2d02c450e26c52463e7e08e0b96fb95e5aaa | 세계관 미완 |
+| B009 | confirmed-landed | docs/game-logic/Story-Batch-B009.md @ f9e9a9f74736e3181987307b41482b68aee54032 | 세계관 미완 |
+| B010 | confirmed-landed | docs/game-logic/Story-Batch-B010.md @ 702c75668c10d26cf05f3d679003239450af3f71 | 세계관 미완 |
+| B011 | confirmed-landed | docs/game-logic/Story-Batch-B011.md @ 1feb1084269ce3882a220959eea61b10eaf89ca9 | 세계관 미완 |
+| B012 | confirmed-landed | docs/game-logic/Story-Batch-B012.md @ 6e6f958e191969c4e4d2ff5427820249ef73e484 | 세계관 미완 |
+| B013 | confirmed-landed | docs/game-logic/Story-Batch-B013.md @ 1abcd3c85469acae43780db0a01a82ddda37365a | 세계관 미완 |
+| B014 | confirmed-landed | docs/game-logic/Story-Batch-B014.md @ 758aaebddaf3020516ba4e4a384c25311fa0df5b | 세계관 미완 |
+| B015 | confirmed-landed | docs/game-logic/Story-Batch-B015.md @ 8dea8a48748d18492eaebae9d78e59655faa8a00 | 세계관 미완 |
+| B016 | confirmed-landed | docs/game-logic/Story-Batch-B016.md @ d44dde580af1f416752e2d14035d51149e1473e0 | 세계관 미완 |
+| B017 | excluded-partial | (없음) | 미검증·부분 |
+| B018 | confirmed-landed | docs/game-logic/Story-Batch-B018.md @ a3c7f99ee862594105a63fa3d642c6a63cf78c0d | 세계관 미완 |
+| B019 | confirmed-landed | docs/game-logic/Story-Batch-B019.md @ c1a80847b083c30ecf697e1941eb1b5628f86e8e | 세계관 미완 |
+| B020-B024 | excluded-missing | (없음) | 미작성·취소 |
+| B025-B035 | excluded-unverified | (없음) | 독립 게이트 없음 |
+| B036 | confirmed-landed | docs/game-logic/Story-Batch-B036.md @ 02cea2d8f8028361a484d4fa47c0bd6159b32c07 | 세계관 미완 |
+| B037-B039 | excluded-unverified | (없음) | 미확인·REJECT |
+| B040-B046 | excluded-missing | (없음) | 미작성 |
+| G01-G06 | confirmed-landed | docs/game-logic/Hostile-Group-G01.md … G06 @ a683b613d81d9c5a3098e01b26a9316e1c774cc0 | 세계관 미완 |
+| G07-G12 | confirmed-landed | docs/game-logic/Hostile-Group-G07.md … G12 @ 2806eb8e803ad572b0547f9011a62d941fa94120 | 세계관 미완 |
+| G13-G18 | confirmed-landed | docs/game-logic/Hostile-Group-G13.md … G18 @ 0974a26427d824641872d1dfc7b203f66e682d0c | 세계관 미완 |
+| G19-G24 | excluded-blocked | (없음) | 부분·차단, 안전 SHA 없음 |
+| ISO | confirmed-landed | docs/assets/wiki/*-isometric.svg @ 7b4e27b91510c024e936ed7cc4322714ff280313 | 세계관 미완 |
+| M001-M002 | confirmed-landed | docs/game-logic/Monster-Batch-M001.md, M002.md | 세계관 미완 |
+| M003 | excluded-unverified | (없음) | 미확인 |
+| M004-M010 | excluded-missing | (없음) | 미작성 |
+| M011-M020 | confirmed-landed | docs/game-logic/Monster-Batch-M011.md … M020.md | 세계관 미완 |
+| M021-M030 | confirmed-landed | docs/game-logic/Monster-Batch-M021.md … M030.md | 세계관 미완 |
+| M031-M039 | confirmed-landed | docs/game-logic/Monster-Batch-M031.md … M039.md | 세계관 미완 |
 
 ## 국가 01 여의신정수문정부
 
