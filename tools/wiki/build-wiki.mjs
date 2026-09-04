@@ -435,8 +435,13 @@ function resolveDestination(node, { page, assetNames }) {
   return internalWikiTarget(url);
 }
 
+const RELATIVE_ASSET_PREFIX = '../assets/wiki/';
+
 /** Recognises the repository's own canonical image URLs via URL parsing, not pattern matching. */
 function repositoryAssetName(url) {
+  if (url.startsWith(RELATIVE_ASSET_PREFIX)) {
+    return url.slice(RELATIVE_ASSET_PREFIX.length);
+  }
   let parsed;
   try {
     parsed = new URL(url);
