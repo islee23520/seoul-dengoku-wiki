@@ -13,6 +13,9 @@ const STAGES = new Set([
   'story-manifest',
   'monster-manifest',
   'seeds',
+  'story-batch',
+  'monster-batch',
+  'group-dossiers',
 ]);
 const ATLAS_STAGES = new Set([
   'houses',
@@ -21,6 +24,9 @@ const ATLAS_STAGES = new Set([
   'story-manifest',
   'monster-manifest',
   'seeds',
+  'story-batch',
+  'monster-batch',
+  'group-dossiers',
 ]);
 const NOTICE_FILE = 'Unofficial-Fan-AU-Notice.md';
 const SOURCES_FILE = 'Research-Sources.md';
@@ -29,7 +35,7 @@ const BRIDGE_PUBLIC_NAME = 'nippon-sangoku-canon-bridge.md';
 const INJECTION_RE = /ignore\s+previous\s+instructions|system\s+prompt|you\s+are\s+now|print\s+the\s+private/i;
 
 function parseArgs(argv) {
-  const opts = { docs: null, stage: 'foundation', expansion: null, atlas: null };
+  const opts = { docs: null, stage: 'foundation', expansion: null, atlas: null, batch: null, groups: null };
   for (let i = 0; i < argv.length; i += 1) {
     const flag = argv[i];
     const take = () => {
@@ -41,6 +47,8 @@ function parseArgs(argv) {
     else if (flag === '--stage') opts.stage = take();
     else if (flag === '--expansion') opts.expansion = take();
     else if (flag === '--atlas') opts.atlas = take();
+    else if (flag === '--batch') opts.batch = take();
+    else if (flag === '--groups') opts.groups = take().split(',');
     else throw new Error(`unknown argument: ${flag}`);
   }
   if (!opts.docs) throw new Error('--docs is required');
@@ -188,7 +196,7 @@ export async function verifyWorldExpansion(options) {
 
   if (ATLAS_STAGES.has(options.stage)) {
     const atlasPath = options.atlas ?? join(docs, 'World-Narrative-Atlas.md');
-    await verifyAtlasStage({ atlasPath, docs, stage: options.stage, fail });
+    await verifyAtlasStage({ atlasPath, docs, stage: options.stage, fail, batch: options.batch, groups: options.groups });
   }
 
   return { violations };

@@ -129,3 +129,8 @@ test('Given a mutated projection When materializer --check Then nonzero', async 
   );
   assert.ok(result.hashes['Operating-Houses.md']);
 });
+
+test('Given current repository When story-batch B001 Then ten stories and projection', () => {
+  const result = runVerifier(['--docs', liveDocs, '--stage', 'story-batch', '--batch', 'B001', '--atlas', atlasPath]);
+  assert.equal(result.code, 0, result.output);
+});

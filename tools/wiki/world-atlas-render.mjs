@@ -1,4 +1,4 @@
-import { PROJECTION_FILES, STATE_BY_ID } from './world-atlas-schema.mjs';
+import { PROJECTION_FILES, STATE_BY_ID, STORY_SECTION_KEYS } from './world-atlas-schema.mjs';
 
 function banner(atlasHash) {
   return [
@@ -168,5 +168,77 @@ export function projectionsFromAtlas(atlas, atlasHash) {
   if ((atlas.arcs ?? []).length) out[PROJECTION_FILES.chronology] = renderChronology(atlas, atlasHash);
   if ((atlas.relations ?? []).length) out[PROJECTION_FILES.relationLedger] = renderRelationLedger(atlas, atlasHash);
   if ((atlas.arcs ?? []).length) out[PROJECTION_FILES.expansionIndex] = renderExpansionIndex(atlas, atlasHash);
+  for (const [batchId, content] of Object.entries(atlas.story_contents ?? {})) {
+    out[`Story-Batch-${batchId}.md`] = renderStoryBatchPage(batchId, content, atlasHash);
+  }
+  for (const [batchId, content] of Object.entries(atlas.monster_contents ?? {})) {
+    out[`Monster-Batch-${batchId}.md`] = renderMonsterBatchPage(batchId, content, atlasHash);
+  }
+  for (const group of atlas.hostile_groups ?? []) {
+    if (group.dossier_prose) {
+      out[`Hostile-Group-${group.id}.md`] = renderGroupDossierPage(group, atlasHash);
+    }
+  }
   return out;
+}
+
+export function renderStoryBatchPage(batchId, content, atlasHash) {
+  const lines = [`# 사회 서사 배치 ${batchId}`, '', banner(atlasHash)];
+  for (const actor of content.actors ?? []) {
+    lines.push(`## 인물 ${actor.id} · ${actor.name}`, '');
+    if (actor.links) {
+      lines.push(`- 연결: house=${actor.links.house ?? ''} theater=${actor.links.theater ?? ''} scenarios=${(actor.links.scenarios ?? []).join(',')}`);
+      lines.push('');
+    }
+    for (const key of STORY_SECTION_KEYS) {
+      lines.push(`### ${key}`, '');
+      lines.push(String(actor.sections?.[key] ?? '').trim(), '');
+    }
+    lines.push('### 3막');
+    for (const act of actor.arc ?? []) {
+      lines.push(`- ${act.act}막: ${act.summary}`);
+    }
+    lines.push('', '### 분기 결말 목록');
+    for (const out of actor.outcomes ?? []) {
+      lines.push(`- ${out.id}: ${out.summary}`);
+    }
+    lines.push('');
+  }
+  return `${lines.join('\n').trim()}\n`;
+}
+
+export function renderMonsterBatchPage(batchId, content, atlasHash) {
+  const lines = [`# 몬스터 배치 ${batchId}`, '', banner(atlasHash)];
+  for (const entry of content.entries ?? []) {
+    lines.push(`## ${entry.id} · ${entry.display_name}`, '');
+    lines.push(`- 그룹: ${entry.group_id}`);
+    lines.push(`- 역할군: ${entry.role_class}`);
+    lines.push(`- 연결: ${JSON.stringify(entry.links ?? {})}`);
+    lines.push('');
+    lines.push(String(entry.prose ?? '').trim(), '');
+  }
+  return `${lines.join('\n').trim()}\n`;
+}
+
+export function renderGroupDossierPage(group, atlasHash) {
+  const lines = [`# 적대 생태 도сье ${group.id} · ${group.display_name}`, '', banner(atlasHash)];
+  for (const [label, key] of [
+    ['현대 불안', 'modern_anxiety'],
+    ['허구 기원', 'fictional_origin'],
+    ['영역·이동', 'territory_migration'],
+    ['경제', 'economy'],
+    ['생애', 'lifecycle'],
+    ['감각', 'senses'],
+    ['위계', 'hierarchy'],
+    ['상승', 'escalation'],
+    ['교전', 'combat_counterplay'],
+    ['교섭', 'negotiation'],
+    ['도덕 비용', 'moral_cost'],
+  ]) {
+    lines.push(`### ${label}`, '', String(group[key] ?? '').trim(), '');
+  }
+  lines.push('### 연결', '', '```json', JSON.stringify(group.links ?? {}, null, 2), '```', '');
+  lines.push('### 시나리오', '', (group.scenario_links ?? []).map((s) => `- ${s}`).join('\n'), '');
+  lines.push('### 본문', '', String(group.dossier_prose ?? group.prose ?? '').trim(), '');
+  return `${lines.join('\n').trim()}\n`;
 }

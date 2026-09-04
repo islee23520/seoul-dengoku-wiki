@@ -8,6 +8,9 @@ import {
   verifyStoryManifest,
   verifySynthetics,
   verifyTheaters,
+  verifyStoryContentBatch,
+  verifyMonsterContentBatch,
+  verifyGroupDossiers,
 } from './world-atlas-verify-rest.mjs';
 import {
   ATLAS_OWNER,
@@ -70,7 +73,7 @@ const STAGE_RUNNERS = Object.freeze({
   seeds: verifySeeds,
 });
 
-export async function verifyAtlasStage({ atlasPath, docs, stage, fail }) {
+export async function verifyAtlasStage({ atlasPath, docs, stage, fail, batch = null, groups = null }) {
   let markdown;
   try {
     markdown = await readFile(atlasPath, 'utf8');
@@ -109,7 +112,29 @@ export async function verifyAtlasStage({ atlasPath, docs, stage, fail }) {
       if (!err || err.code !== 'ENOENT') throw err;
     }
   }
-  const run = STAGE_RUNNERS[stage];
-  if (run) run(parsed.value, projections, fail);
+  try {
+    const { readdir } = await import('node:fs/promises');
+    for (const name of await readdir(docs)) {
+      if (/^(Story-Batch-B\d{3}|Monster-Batch-M\d{3}|Hostile-Group-G\d{2})\.md$/.test(name)) {
+        try {
+          projections[name] = await readFile(join(docs, name), 'utf8');
+        } catch (err) {
+          if (!err || err.code !== 'ENOENT') throw err;
+        }
+      }
+    }
+  } catch (err) {
+    if (!err || err.code !== 'ENOENT') throw err;
+  }
+  if (stage === 'story-batch') {
+    verifyStoryContentBatch(parsed.value, projections, fail, batch);
+  } else if (stage === 'monster-batch') {
+    verifyMonsterContentBatch(parsed.value, projections, fail, batch);
+  } else if (stage === 'group-dossiers') {
+    verifyGroupDossiers(parsed.value, projections, fail, groups ?? []);
+  } else {
+    const run = STAGE_RUNNERS[stage];
+    if (run) run(parsed.value, projections, fail);
+  }
   return parsed.value;
 }
