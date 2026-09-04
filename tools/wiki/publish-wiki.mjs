@@ -459,6 +459,6 @@ async function main() {
   console.log('published wiki checkout');
 }
 
-if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
+if (process.argv[1] && await realpath(process.argv[1]) === await realpath(fileURLToPath(import.meta.url))) {
   await main();
 }
