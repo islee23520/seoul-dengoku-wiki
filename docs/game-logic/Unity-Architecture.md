@@ -6,12 +6,15 @@
 
 현재 기반은 Unity `6000.7.0a5`입니다. 시험판이므로 편집기 판본과 패키지 잠금 파일을 함께 고정하고, 판본을 올리기 전에 따로 검증합니다.
 
-현재 생성된 기반은 다음뿐입니다.
+현재 구현된 기반은 다음입니다.
 
-- Unity 프로젝트
-- 장르 계약 JSON과 상수
-- EditMode 장르 계약 테스트
-- URP, Input System, Test Framework 패키지 기준선
+- Unity `6000.7.0a5` 프로젝트
+- 장르 계약 JSON과 상수, EditMode 장르 계약 테스트
+- URP, Input System, Test Framework, VContainer `1.19.0`
+- `Bootstrap.unity` App scope와 FSM, `Foundation.unity` 화면 child scope
+- 단일 scene-load 권한과 정적 아키텍처 게이트
+
+다음 모듈 `Unity POC 통합 코어 루프`는 MainTitle 화면과 결정론적 세 역 코어 루프를 이 기반 위에 추가합니다. 그 구현은 아직 시작하지 않았습니다.
 
 ## 영역별 책임
 
