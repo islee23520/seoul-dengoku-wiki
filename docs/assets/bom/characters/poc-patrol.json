@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "asset_id": "poc-patrol",
+  "asset_class": "character_mesh",
+  "source": "generate",
+  "rights_status": "allowed",
+  "generation_backend": "nanobanana_gemini",
+  "provider": "google",
+  "model": "gemini-2.5-flash-image",
+  "revision": "2026-09-04",
+  "prompt": "Use case: identity-lock turnaround",
+  "prompt_hash": "8262b4c5d97c95408a66245b406b1b5854ded89c52ae65e9680403820a3911bd",
+  "input_hashes": [
+    "feeb0091106bc38bbea332a6474890c3127e949c6cd8f2fa8eb00a020c569e96"
+  ],
+  "seed": 1503,
+  "cost_mode": "subscription",
+  "cost_cents": 0,
+  "raw_hash": "feeb0091106bc38bbea332a6474890c3127e949c6cd8f2fa8eb00a020c569e96",
+  "output_hash": "431182f0be4d59e2bdd03f667ec32dbd9d575918a672dc2da34dee9920734144",
+  "tool_versions": {
+    "unity": "6000.7.0a5",
+    "blender": "5.1.2",
+    "pillow": "12.2.0",
+    "node": "22"
+  },
+  "operations": [
+    "identity_lock",
+    "trellis_attempt_fail_closed",
+    "sprite_fallback",
+    "atlas",
+    "unity_import",
+    "bom_promotion"
+  ],
+  "unity_import_settings": {
+    "texture_type": "Sprite",
+    "filter_mode": "Point",
+    "mesh_compression": "Off",
+    "sprite_pixels_to_units": 85.333,
+    "alpha_is_transparency": true
+  },
+  "review_receipts": [
+    {
+      "reviewer": "todo15-character-contract",
+      "verdict": "pass",
+      "receipt_hash": "edcd7af7ade1efcd636199e77fd475cec05f706512ca8fc526f7dc9ae93c3842",
+      "reviewed_at": "2026-09-04T11:33:28.000Z"
+    }
+  ],
+  "status": "promoted",
+  "created_at": "2026-09-04T11:33:28.000Z",
+  "fallback_reason": "official_trellis_blender_path_failed_twice",
+  "representation": "four_dir_sprite",
+  "prefab": "Game/Assets/Janseon/Art/Characters/poc-patrol/PocPatrol.prefab",
+  "identity_prompt": "Use case: identity-lock turnaround\nAsset type: four-view character identity sheet for a Korean post-collapse grand-strategy SRPG\nSubject: unnamed station patrol, mid 20s, square visor helmet, compact 2.5-head-tall SD body with oversized head\nEquipment lock: short baton in the character's RIGHT hand, lime hazard bar on the character's LEFT chest, visor lamp on the character's LEFT helmet side. Do not mirror equipment.\nMedium and style: original pixel-readable SD character turnaround, limited palette charcoal #2A2E33 with lime accent #C6D64A\nComposition and camera: single image, four orthographic views left-to-right N, E, S, W, empty background, full body, one-tile footprint\nLighting and color: flat even light\nMood: watchful, impersonal\nBackground: empty\nConstraints: Korean facial identity under visor; salvage patrol gear; no logo, no watermark, no readable text\nAvoid: mirrored hazard bar, mirrored lamp, samurai armor, fantasy rifle",
+  "identity_prompt_hash": "8262b4c5d97c95408a66245b406b1b5854ded89c52ae65e9680403820a3911bd",
+  "identity_sheet": "Game/Assets/Janseon/ArtSource/Characters/poc-patrol/identity/identity-sheet.png",
+  "identity_sheet_gemini": "Game/Assets/Janseon/ArtSource/Characters/poc-patrol/identity/identity-sheet-gemini.png",
+  "side_map": "Game/Assets/Janseon/ArtSource/Characters/poc-patrol/identity/side-map.json",
+  "atlas": "Game/Assets/Janseon/ArtSource/Characters/poc-patrol/poc-patrol-atlas.png",
+  "atlas_hash": "431182f0be4d59e2bdd03f667ec32dbd9d575918a672dc2da34dee9920734144",
+  "trellis_attempts": [
+    {
+      "n": 1,
+      "kind": "host_contract",
+      "path": "trellis_v1_direct_python",
+      "result": "fail",
+      "codes": [
+        "trellis_missing"
+      ],
+      "command": "node tools/art/pipeline-graph.mjs check --graph compiled-poc-character-four-dir.json --host blender=1,trellis=0,maya=0,animo=0",
+      "receipt": ".omo/evidence/unity-poc-core-loop/task-15-characters/trellis-attempt-1-check.json"
+    },
+    {
+      "n": 2,
+      "kind": "mesh_input_missing",
+      "path": "trellis_v1_mesh_rig_silhouette",
+      "result": "fail",
+      "codes": [
+        "mesh_glb_missing"
+      ],
+      "command": "blender --background --python tools/art/blender-character-gate.py -- --glb MISSING",
+      "receipt": ".omo/evidence/unity-poc-core-loop/task-15-characters/trellis-attempt-2-blender.txt"
+    }
+  ],
+  "broken_mesh_retained": false
+}

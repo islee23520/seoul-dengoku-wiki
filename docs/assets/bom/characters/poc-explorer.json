@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "asset_id": "poc-explorer",
+  "asset_class": "character_mesh",
+  "source": "generate",
+  "rights_status": "allowed",
+  "generation_backend": "nanobanana_gemini",
+  "provider": "google",
+  "model": "gemini-2.5-flash-image",
+  "revision": "2026-09-04",
+  "prompt": "Use case: identity-lock turnaround",
+  "prompt_hash": "752cbf4394124fe67bd4d8a16ff2b224354163960eecd6d3d2c4ccbd471b7f47",
+  "input_hashes": [
+    "d73a7a70a2fcd6be214ed2a55448b02880d8b12f768366e46817db5f052bee5d"
+  ],
+  "seed": 1501,
+  "cost_mode": "subscription",
+  "cost_cents": 0,
+  "raw_hash": "d73a7a70a2fcd6be214ed2a55448b02880d8b12f768366e46817db5f052bee5d",
+  "output_hash": "a0fac8847f0e52d192cfed268d7ab54542150eb8428e69ce16f724d038fa9e9b",
+  "tool_versions": {
+    "unity": "6000.7.0a5",
+    "blender": "5.1.2",
+    "pillow": "12.2.0",
+    "node": "22"
+  },
+  "operations": [
+    "identity_lock",
+    "trellis_attempt_fail_closed",
+    "sprite_fallback",
+    "atlas",
+    "unity_import",
+    "bom_promotion"
+  ],
+  "unity_import_settings": {
+    "texture_type": "Sprite",
+    "filter_mode": "Point",
+    "mesh_compression": "Off",
+    "sprite_pixels_to_units": 85.333,
+    "alpha_is_transparency": true
+  },
+  "review_receipts": [
+    {
+      "reviewer": "todo15-character-contract",
+      "verdict": "pass",
+      "receipt_hash": "cee12e5ce5d9745dbcd00b6be744f290f16a966aa5e485cd6fc72abd1a543add",
+      "reviewed_at": "2026-09-04T11:33:28.000Z"
+    }
+  ],
+  "status": "promoted",
+  "created_at": "2026-09-04T11:33:28.000Z",
+  "fallback_reason": "official_trellis_blender_path_failed_twice",
+  "representation": "four_dir_sprite",
+  "prefab": "Game/Assets/Janseon/Art/Characters/poc-explorer/PocExplorer.prefab",
+  "identity_prompt": "Use case: identity-lock turnaround\nAsset type: four-view character identity sheet for a Korean post-collapse grand-strategy SRPG\nSubject: unnamed Korean expedition leader, late 20s, short black hair, tired determined eyes, compact 2.5-head-tall SD body with oversized identity-bearing pixel-readable head\nEquipment lock: prybar held in the character's RIGHT hand, oil lantern clipped on the character's LEFT hip, radio antenna on the character's LEFT shoulder. Do not mirror equipment.\nMedium and style: original pixel-readable SD character turnaround, limited palette teal coat #2F6F73 with burnt-orange lining #C45C32, matte salvage cloth, no painterly blur\nComposition and camera: single image, four orthographic views labeled only by silhouette order left-to-right N, E, S, W, white or transparent background, full body, one-tile footprint, no UI\nLighting and color: flat even light, no drop shadow, no rim light\nMood: practical, cautious, working\nBackground: empty\nConstraints: Korean facial identity; practical modern salvage clothing; profession before combat power; no logo, no watermark, no readable text\nAvoid: generic samurai armor, fantasy oversize weapon, mirrored lantern, mirrored prybar, photoreal 8-head proportions",
+  "identity_prompt_hash": "752cbf4394124fe67bd4d8a16ff2b224354163960eecd6d3d2c4ccbd471b7f47",
+  "identity_sheet": "Game/Assets/Janseon/ArtSource/Characters/poc-explorer/identity/identity-sheet.png",
+  "identity_sheet_gemini": "Game/Assets/Janseon/ArtSource/Characters/poc-explorer/identity/identity-sheet-gemini.png",
+  "side_map": "Game/Assets/Janseon/ArtSource/Characters/poc-explorer/identity/side-map.json",
+  "atlas": "Game/Assets/Janseon/ArtSource/Characters/poc-explorer/poc-explorer-atlas.png",
+  "atlas_hash": "a0fac8847f0e52d192cfed268d7ab54542150eb8428e69ce16f724d038fa9e9b",
+  "trellis_attempts": [
+    {
+      "n": 1,
+      "kind": "host_contract",
+      "path": "trellis_v1_direct_python",
+      "result": "fail",
+      "codes": [
+        "trellis_missing"
+      ],
+      "command": "node tools/art/pipeline-graph.mjs check --graph compiled-poc-character-four-dir.json --host blender=1,trellis=0,maya=0,animo=0",
+      "receipt": ".omo/evidence/unity-poc-core-loop/task-15-characters/trellis-attempt-1-check.json"
+    },
+    {
+      "n": 2,
+      "kind": "mesh_input_missing",
+      "path": "trellis_v1_mesh_rig_silhouette",
+      "result": "fail",
+      "codes": [
+        "mesh_glb_missing"
+      ],
+      "command": "blender --background --python tools/art/blender-character-gate.py -- --glb MISSING",
+      "receipt": ".omo/evidence/unity-poc-core-loop/task-15-characters/trellis-attempt-2-blender.txt"
+    }
+  ],
+  "broken_mesh_retained": false
+}
