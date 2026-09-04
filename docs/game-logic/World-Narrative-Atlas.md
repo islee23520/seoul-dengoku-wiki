@@ -11,7 +11,7 @@
 | 문서 상태 | 활성 |
 | 소유자 | wiki-world |
 | 지원 검토자 | (없음, 외부 검토 대기) |
-| 개정 | r6 |
+| 개정 | r7 |
 | 마지막 검증 커밋 | `c485bc84629c39e978889f1585ade92bef4ceda4` |
 | 출처층 | original-fiction |
 | 출처 앵커 | Cast-Index.md, Sixteen-States.md, Research-Sources.md |
@@ -55,6 +55,10 @@
 
 상세 필드는 아래 기계 등록부를 정본으로 합니다.
 
+## 사회 서사 배치
+
+B001–B046 배치 원장은 인간 K001–K412와 합성 H/F/V를 각각 한 번씩만 할당합니다. 본 절은 식별자 원장만 잠그며 배치 산문은 후속 작업에서 등록합니다.
+
 ## 기계 등록부
 
 ```json
@@ -66,7 +70,7 @@
     "document_status": "active",
     "owner": "wiki-world",
     "support_reviewers": [],
-    "revision": "r6",
+    "revision": "r7",
     "last_verified_commit": "c485bc84629c39e978889f1585ade92bef4ceda4",
     "source_kind": "original-fiction",
     "source_anchors": [
@@ -161,10 +165,11 @@
     "projection_targets": [
       "Operating-Houses.md",
       "External-Theaters.md",
-      "Synthetic-Actors.md"
+      "Synthetic-Actors.md",
+      "Story-Batch-Manifest.md"
     ],
-    "change_ledger_entry": "CL-0006",
-    "verification_state": "synthetics-authored"
+    "change_ledger_entry": "CL-0007",
+    "verification_state": "story-manifest-locked"
   },
   "writing_contract": {
     "narrative_register": "plain-da",
@@ -9446,7 +9451,3872 @@
       "prose": "S16 충전 슬롯에서 비상견인(비견)이 HC08 당직 로그에 출입을 남긴다. 곽은재은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다. 회차선 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다. 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다."
     }
   ],
-  "story_batches": [],
+  "story_batches": [
+    {
+      "id": "B001",
+      "actors": [
+        {
+          "id": "K092",
+          "name": "정가온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S04"
+        },
+        {
+          "id": "K121",
+          "name": "임겨레",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S05"
+        },
+        {
+          "id": "K149",
+          "name": "마도한",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S06"
+        },
+        {
+          "id": "K173",
+          "name": "주서람",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S07"
+        },
+        {
+          "id": "K197",
+          "name": "마솔",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S08"
+        },
+        {
+          "id": "K222",
+          "name": "모봉용",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S09"
+        },
+        {
+          "id": "K001",
+          "name": "한재목",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S01"
+        },
+        {
+          "id": "K029",
+          "name": "강민서",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S02"
+        },
+        {
+          "id": "K242",
+          "name": "황세린",
+          "origin": "multicultural",
+          "subgroup": "chinese-diaspora",
+          "state_id": "S10"
+        },
+        {
+          "id": "H01",
+          "name": "한누리",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S01"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B002",
+      "actors": [
+        {
+          "id": "K247",
+          "name": "모봉",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S10"
+        },
+        {
+          "id": "K272",
+          "name": "모소",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S11"
+        },
+        {
+          "id": "K297",
+          "name": "복봉",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S12"
+        },
+        {
+          "id": "K322",
+          "name": "동늘솔",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S13"
+        },
+        {
+          "id": "K347",
+          "name": "원예나",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S14"
+        },
+        {
+          "id": "K372",
+          "name": "동미온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S15"
+        },
+        {
+          "id": "K057",
+          "name": "서이안",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S03"
+        },
+        {
+          "id": "K085",
+          "name": "임하준",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S04"
+        },
+        {
+          "id": "K267",
+          "name": "조우찬",
+          "origin": "multicultural",
+          "subgroup": "chinese-diaspora",
+          "state_id": "S11"
+        },
+        {
+          "id": "H02",
+          "name": "서린",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S02"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B003",
+      "actors": [
+        {
+          "id": "K396",
+          "name": "선초별",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S16"
+        },
+        {
+          "id": "K009",
+          "name": "유세진",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S01"
+        },
+        {
+          "id": "K037",
+          "name": "한지온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S02"
+        },
+        {
+          "id": "K065",
+          "name": "임시온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S03"
+        },
+        {
+          "id": "K093",
+          "name": "장민재",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S04"
+        },
+        {
+          "id": "K122",
+          "name": "한보라",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S05"
+        },
+        {
+          "id": "K114",
+          "name": "배우진",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S05"
+        },
+        {
+          "id": "K142",
+          "name": "윤서린",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S06"
+        },
+        {
+          "id": "K292",
+          "name": "전미리",
+          "origin": "multicultural",
+          "subgroup": "chinese-diaspora",
+          "state_id": "S12"
+        },
+        {
+          "id": "H03",
+          "name": "이도",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S03"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B004",
+      "actors": [
+        {
+          "id": "K150",
+          "name": "연지우",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S06"
+        },
+        {
+          "id": "K174",
+          "name": "차호민",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S07"
+        },
+        {
+          "id": "K198",
+          "name": "연가온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S08"
+        },
+        {
+          "id": "K223",
+          "name": "봉소",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S09"
+        },
+        {
+          "id": "K248",
+          "name": "봉감",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S10"
+        },
+        {
+          "id": "K273",
+          "name": "봉복",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S11"
+        },
+        {
+          "id": "K166",
+          "name": "박태겸",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S07"
+        },
+        {
+          "id": "K190",
+          "name": "오해린",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S08"
+        },
+        {
+          "id": "K317",
+          "name": "은채윤",
+          "origin": "multicultural",
+          "subgroup": "chinese-diaspora",
+          "state_id": "S13"
+        },
+        {
+          "id": "H04",
+          "name": "강별",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S04"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B005",
+      "actors": [
+        {
+          "id": "K298",
+          "name": "국용",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S12"
+        },
+        {
+          "id": "K323",
+          "name": "방한울",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S13"
+        },
+        {
+          "id": "K348",
+          "name": "영석온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S14"
+        },
+        {
+          "id": "K373",
+          "name": "방늘재",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S15"
+        },
+        {
+          "id": "K397",
+          "name": "원새울",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S16"
+        },
+        {
+          "id": "K010",
+          "name": "허도담",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S01"
+        },
+        {
+          "id": "K215",
+          "name": "문가람",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S09"
+        },
+        {
+          "id": "K240",
+          "name": "백온",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S10"
+        },
+        {
+          "id": "K342",
+          "name": "안기준",
+          "origin": "multicultural",
+          "subgroup": "chinese-diaspora",
+          "state_id": "S14"
+        },
+        {
+          "id": "H05",
+          "name": "윤재",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S05"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B006",
+      "actors": [
+        {
+          "id": "K038",
+          "name": "허다온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S02"
+        },
+        {
+          "id": "K066",
+          "name": "허서겸",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S03"
+        },
+        {
+          "id": "K094",
+          "name": "유하은",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S04"
+        },
+        {
+          "id": "K123",
+          "name": "양필호",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S05"
+        },
+        {
+          "id": "K151",
+          "name": "나선재",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S06"
+        },
+        {
+          "id": "K175",
+          "name": "설민우",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S07"
+        },
+        {
+          "id": "K265",
+          "name": "김도윤",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S11"
+        },
+        {
+          "id": "K290",
+          "name": "장세화",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S12"
+        },
+        {
+          "id": "K367",
+          "name": "라진우",
+          "origin": "multicultural",
+          "subgroup": "chinese-diaspora",
+          "state_id": "S15"
+        },
+        {
+          "id": "H06",
+          "name": "박솔",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S06"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B007",
+      "actors": [
+        {
+          "id": "K199",
+          "name": "나태경",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S08"
+        },
+        {
+          "id": "K224",
+          "name": "용복",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S09"
+        },
+        {
+          "id": "K249",
+          "name": "용국",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S10"
+        },
+        {
+          "id": "K274",
+          "name": "용모",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S11"
+        },
+        {
+          "id": "K299",
+          "name": "감국",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S12"
+        },
+        {
+          "id": "K324",
+          "name": "수초롱",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S13"
+        },
+        {
+          "id": "K315",
+          "name": "류은비",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S13"
+        },
+        {
+          "id": "K340",
+          "name": "고서준",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S14"
+        },
+        {
+          "id": "K391",
+          "name": "곽은재",
+          "origin": "multicultural",
+          "subgroup": "chinese-diaspora",
+          "state_id": "S16"
+        },
+        {
+          "id": "H07",
+          "name": "정우람",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S07"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B008",
+      "actors": [
+        {
+          "id": "K349",
+          "name": "판늘샘",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S14"
+        },
+        {
+          "id": "K374",
+          "name": "수한별",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S15"
+        },
+        {
+          "id": "K398",
+          "name": "영마온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S16"
+        },
+        {
+          "id": "K011",
+          "name": "구태윤",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S01"
+        },
+        {
+          "id": "K039",
+          "name": "구찬솔",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S02"
+        },
+        {
+          "id": "K067",
+          "name": "구연재",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S03"
+        },
+        {
+          "id": "K365",
+          "name": "남윤경",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S15"
+        },
+        {
+          "id": "K389",
+          "name": "정유라",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S16"
+        },
+        {
+          "id": "K004",
+          "name": "박누리",
+          "origin": "multicultural",
+          "subgroup": "chinese-diaspora",
+          "state_id": "S01"
+        },
+        {
+          "id": "H08",
+          "name": "최다온",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S08"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B009",
+      "actors": [
+        {
+          "id": "K095",
+          "name": "허겸",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S04"
+        },
+        {
+          "id": "K124",
+          "name": "주은솔",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S05"
+        },
+        {
+          "id": "K152",
+          "name": "양해온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S06"
+        },
+        {
+          "id": "K176",
+          "name": "지온유",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S07"
+        },
+        {
+          "id": "K200",
+          "name": "양이든",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S08"
+        },
+        {
+          "id": "K225",
+          "name": "소감",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S09"
+        },
+        {
+          "id": "K002",
+          "name": "이서담",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S01"
+        },
+        {
+          "id": "K030",
+          "name": "정시우",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S02"
+        },
+        {
+          "id": "K032",
+          "name": "이강묵",
+          "origin": "multicultural",
+          "subgroup": "chinese-diaspora",
+          "state_id": "S02"
+        },
+        {
+          "id": "H09",
+          "name": "조하람",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S09"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B010",
+      "actors": [
+        {
+          "id": "K250",
+          "name": "소두",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S10"
+        },
+        {
+          "id": "K275",
+          "name": "소봉",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S11"
+        },
+        {
+          "id": "K300",
+          "name": "두복",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S12"
+        },
+        {
+          "id": "K325",
+          "name": "선나휘",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S13"
+        },
+        {
+          "id": "K350",
+          "name": "천초윤",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S14"
+        },
+        {
+          "id": "K375",
+          "name": "선다솜",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S15"
+        },
+        {
+          "id": "K058",
+          "name": "정하린",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S03"
+        },
+        {
+          "id": "K086",
+          "name": "임초원",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S04"
+        },
+        {
+          "id": "K060",
+          "name": "이봄결",
+          "origin": "multicultural",
+          "subgroup": "chinese-diaspora",
+          "state_id": "S03"
+        },
+        {
+          "id": "H10",
+          "name": "윤새론",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S10"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B011",
+      "actors": [
+        {
+          "id": "K399",
+          "name": "판지솔",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S16"
+        },
+        {
+          "id": "K012",
+          "name": "진하겸",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S01"
+        },
+        {
+          "id": "K040",
+          "name": "진우람",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S02"
+        },
+        {
+          "id": "K068",
+          "name": "진채온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S03"
+        },
+        {
+          "id": "K096",
+          "name": "구도영",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S04"
+        },
+        {
+          "id": "K125",
+          "name": "차나루",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S05"
+        },
+        {
+          "id": "K115",
+          "name": "김우찬",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S05"
+        },
+        {
+          "id": "K143",
+          "name": "강예준",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S06"
+        },
+        {
+          "id": "K088",
+          "name": "박세린",
+          "origin": "multicultural",
+          "subgroup": "chinese-diaspora",
+          "state_id": "S04"
+        },
+        {
+          "id": "H11",
+          "name": "김도하",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S11"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B012",
+      "actors": [
+        {
+          "id": "K153",
+          "name": "주리안",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S06"
+        },
+        {
+          "id": "K177",
+          "name": "마하린",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S07"
+        },
+        {
+          "id": "K201",
+          "name": "주나경",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S08"
+        },
+        {
+          "id": "K226",
+          "name": "복두모",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S09"
+        },
+        {
+          "id": "K251",
+          "name": "복모",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S10"
+        },
+        {
+          "id": "K276",
+          "name": "복두",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S11"
+        },
+        {
+          "id": "K167",
+          "name": "신가온",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S07"
+        },
+        {
+          "id": "K191",
+          "name": "조민재",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S08"
+        },
+        {
+          "id": "K117",
+          "name": "장석윤",
+          "origin": "multicultural",
+          "subgroup": "chinese-diaspora",
+          "state_id": "S05"
+        },
+        {
+          "id": "H12",
+          "name": "이채온",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S12"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B013",
+      "actors": [
+        {
+          "id": "K301",
+          "name": "복감",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S12"
+        },
+        {
+          "id": "K326",
+          "name": "원미루",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S13"
+        },
+        {
+          "id": "K351",
+          "name": "동새봄",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S14"
+        },
+        {
+          "id": "K376",
+          "name": "원주온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S15"
+        },
+        {
+          "id": "K400",
+          "name": "천늘우",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S16"
+        },
+        {
+          "id": "K013",
+          "name": "채온결",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S01"
+        },
+        {
+          "id": "K216",
+          "name": "권미래",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S09"
+        },
+        {
+          "id": "K241",
+          "name": "신보람",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S10"
+        },
+        {
+          "id": "K145",
+          "name": "윤지율",
+          "origin": "multicultural",
+          "subgroup": "chinese-diaspora",
+          "state_id": "S06"
+        },
+        {
+          "id": "H13",
+          "name": "한빛나",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S13"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B014",
+      "actors": [
+        {
+          "id": "K041",
+          "name": "채리울",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S02"
+        },
+        {
+          "id": "K069",
+          "name": "채봄",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S03"
+        },
+        {
+          "id": "K097",
+          "name": "진모래",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S04"
+        },
+        {
+          "id": "K126",
+          "name": "설강우",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S05"
+        },
+        {
+          "id": "K154",
+          "name": "차세온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S06"
+        },
+        {
+          "id": "K178",
+          "name": "연시완",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S07"
+        },
+        {
+          "id": "K266",
+          "name": "송하율",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S11"
+        },
+        {
+          "id": "K291",
+          "name": "안도한",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S12"
+        },
+        {
+          "id": "K169",
+          "name": "황지호",
+          "origin": "multicultural",
+          "subgroup": "chinese-diaspora",
+          "state_id": "S07"
+        },
+        {
+          "id": "H14",
+          "name": "오세림",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S14"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B015",
+      "actors": [
+        {
+          "id": "K202",
+          "name": "차진아",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S08"
+        },
+        {
+          "id": "K227",
+          "name": "국두봉",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S09"
+        },
+        {
+          "id": "K252",
+          "name": "국봉",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S10"
+        },
+        {
+          "id": "K277",
+          "name": "국두",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S11"
+        },
+        {
+          "id": "K302",
+          "name": "봉모",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S12"
+        },
+        {
+          "id": "K327",
+          "name": "영늘빛",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S13"
+        },
+        {
+          "id": "K316",
+          "name": "심달호",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S13"
+        },
+        {
+          "id": "K341",
+          "name": "문하율",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S14"
+        },
+        {
+          "id": "K193",
+          "name": "신태산",
+          "origin": "multicultural",
+          "subgroup": "chinese-diaspora",
+          "state_id": "S08"
+        },
+        {
+          "id": "H15",
+          "name": "배수아",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S15"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B016",
+      "actors": [
+        {
+          "id": "K352",
+          "name": "방마름",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S14"
+        },
+        {
+          "id": "K377",
+          "name": "영미결",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S15"
+        },
+        {
+          "id": "K401",
+          "name": "동새결",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S16"
+        },
+        {
+          "id": "K014",
+          "name": "표시완",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S01"
+        },
+        {
+          "id": "K042",
+          "name": "표강호",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S02"
+        },
+        {
+          "id": "K070",
+          "name": "표지안",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S03"
+        },
+        {
+          "id": "K366",
+          "name": "은태호",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S15"
+        },
+        {
+          "id": "K390",
+          "name": "하서진",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S16"
+        },
+        {
+          "id": "K218",
+          "name": "송재민",
+          "origin": "multicultural",
+          "subgroup": "chinese-diaspora",
+          "state_id": "S09"
+        },
+        {
+          "id": "H16",
+          "name": "신태율",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S16"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B017",
+      "actors": [
+        {
+          "id": "K098",
+          "name": "채구름",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S04"
+        },
+        {
+          "id": "K127",
+          "name": "지목현",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S05"
+        },
+        {
+          "id": "K155",
+          "name": "설다흰",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S06"
+        },
+        {
+          "id": "K179",
+          "name": "나길호",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S07"
+        },
+        {
+          "id": "K203",
+          "name": "설초아",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S08"
+        },
+        {
+          "id": "K228",
+          "name": "감봉",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S09"
+        },
+        {
+          "id": "K003",
+          "name": "김태운",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S01"
+        },
+        {
+          "id": "K031",
+          "name": "김나율",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S02"
+        },
+        {
+          "id": "K243",
+          "name": "강태산",
+          "origin": "multicultural",
+          "subgroup": "chinese-diaspora",
+          "state_id": "S10"
+        },
+        {
+          "id": "F01",
+          "name": "냉각탑지기",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S01"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B018",
+      "actors": [
+        {
+          "id": "K253",
+          "name": "감용",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S10"
+        },
+        {
+          "id": "K278",
+          "name": "감두",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S11"
+        },
+        {
+          "id": "K303",
+          "name": "용봉",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S12"
+        },
+        {
+          "id": "K328",
+          "name": "판한들",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S13"
+        },
+        {
+          "id": "K353",
+          "name": "수지완",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S14"
+        },
+        {
+          "id": "K378",
+          "name": "판효담",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S15"
+        },
+        {
+          "id": "K059",
+          "name": "최은재",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S03"
+        },
+        {
+          "id": "K087",
+          "name": "한소미",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S04"
+        },
+        {
+          "id": "K268",
+          "name": "서진아",
+          "origin": "multicultural",
+          "subgroup": "chinese-diaspora",
+          "state_id": "S11"
+        },
+        {
+          "id": "F02",
+          "name": "배전반이",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S02"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B019",
+      "actors": [
+        {
+          "id": "K402",
+          "name": "방마빛",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S16"
+        },
+        {
+          "id": "K015",
+          "name": "명우재",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S01"
+        },
+        {
+          "id": "K043",
+          "name": "명소이",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S02"
+        },
+        {
+          "id": "K071",
+          "name": "명해솔",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S03"
+        },
+        {
+          "id": "K099",
+          "name": "표산하",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S04"
+        },
+        {
+          "id": "K128",
+          "name": "마길상",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S05"
+        },
+        {
+          "id": "K116",
+          "name": "정소율",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S05"
+        },
+        {
+          "id": "K144",
+          "name": "조하린",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S06"
+        },
+        {
+          "id": "K293",
+          "name": "문시온",
+          "origin": "multicultural",
+          "subgroup": "chinese-diaspora",
+          "state_id": "S12"
+        },
+        {
+          "id": "F03",
+          "name": "정수여과",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S03"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B020",
+      "actors": [
+        {
+          "id": "K156",
+          "name": "지한솔",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S06"
+        },
+        {
+          "id": "K180",
+          "name": "양채윤",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S07"
+        },
+        {
+          "id": "K204",
+          "name": "지마루",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S08"
+        },
+        {
+          "id": "K229",
+          "name": "두용",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S09"
+        },
+        {
+          "id": "K254",
+          "name": "두소",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S10"
+        },
+        {
+          "id": "K279",
+          "name": "두국",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S11"
+        },
+        {
+          "id": "K168",
+          "name": "권시온",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S07"
+        },
+        {
+          "id": "K192",
+          "name": "윤서하",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S08"
+        },
+        {
+          "id": "K318",
+          "name": "라세영",
+          "origin": "multicultural",
+          "subgroup": "chinese-diaspora",
+          "state_id": "S13"
+        },
+        {
+          "id": "F04",
+          "name": "냉동창고",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S04"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B021",
+      "actors": [
+        {
+          "id": "K304",
+          "name": "국소",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S12"
+        },
+        {
+          "id": "K329",
+          "name": "천다올",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S13"
+        },
+        {
+          "id": "K354",
+          "name": "선늘봄",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S14"
+        },
+        {
+          "id": "K379",
+          "name": "천솔빛",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S15"
+        },
+        {
+          "id": "K403",
+          "name": "선한솜",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S16"
+        },
+        {
+          "id": "K016",
+          "name": "제윤",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S01"
+        },
+        {
+          "id": "K217",
+          "name": "황은설",
+          "origin": "multicultural",
+          "subgroup": "korea-born-multicultural",
+          "state_id": "S09"
+        },
+        {
+          "id": "K343",
+          "name": "하윤목",
+          "origin": "multicultural",
+          "subgroup": "chinese-diaspora",
+          "state_id": "S14"
+        },
+        {
+          "id": "K368",
+          "name": "전나경",
+          "origin": "multicultural",
+          "subgroup": "southeast-asian",
+          "state_id": "S15"
+        },
+        {
+          "id": "F05",
+          "name": "송신중계",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S05"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B022",
+      "actors": [
+        {
+          "id": "K044",
+          "name": "제하온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S02"
+        },
+        {
+          "id": "K072",
+          "name": "제라온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S03"
+        },
+        {
+          "id": "K100",
+          "name": "명강산",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S04"
+        },
+        {
+          "id": "K129",
+          "name": "연하진",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S05"
+        },
+        {
+          "id": "K157",
+          "name": "마은결",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S06"
+        },
+        {
+          "id": "K181",
+          "name": "주하음",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S07"
+        },
+        {
+          "id": "K392",
+          "name": "심유리",
+          "origin": "multicultural",
+          "subgroup": "southeast-asian",
+          "state_id": "S16"
+        },
+        {
+          "id": "K005",
+          "name": "최한결",
+          "origin": "multicultural",
+          "subgroup": "southeast-asian",
+          "state_id": "S01"
+        },
+        {
+          "id": "K393",
+          "name": "은보람",
+          "origin": "multicultural",
+          "subgroup": "central-asian-koryoin",
+          "state_id": "S16"
+        },
+        {
+          "id": "F06",
+          "name": "승강기축",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S06"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B023",
+      "actors": [
+        {
+          "id": "K205",
+          "name": "마하율",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S08"
+        },
+        {
+          "id": "K230",
+          "name": "모국",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S09"
+        },
+        {
+          "id": "K255",
+          "name": "모감",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S10"
+        },
+        {
+          "id": "K280",
+          "name": "모복",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S11"
+        },
+        {
+          "id": "K305",
+          "name": "복용",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S12"
+        },
+        {
+          "id": "K330",
+          "name": "동주하",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S13"
+        },
+        {
+          "id": "K033",
+          "name": "박소언",
+          "origin": "multicultural",
+          "subgroup": "southeast-asian",
+          "state_id": "S02"
+        },
+        {
+          "id": "K061",
+          "name": "김도하",
+          "origin": "multicultural",
+          "subgroup": "southeast-asian",
+          "state_id": "S03"
+        },
+        {
+          "id": "K006",
+          "name": "정모란",
+          "origin": "multicultural",
+          "subgroup": "central-asian-koryoin",
+          "state_id": "S01"
+        },
+        {
+          "id": "F07",
+          "name": "보일러실",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S07"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B024",
+      "actors": [
+        {
+          "id": "K355",
+          "name": "원다결",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S14"
+        },
+        {
+          "id": "K380",
+          "name": "동예솔",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S15"
+        },
+        {
+          "id": "K404",
+          "name": "원초온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S16"
+        },
+        {
+          "id": "K017",
+          "name": "변고운",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S01"
+        },
+        {
+          "id": "K045",
+          "name": "변시람",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S02"
+        },
+        {
+          "id": "K073",
+          "name": "변태온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S03"
+        },
+        {
+          "id": "K101",
+          "name": "제하율",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S04"
+        },
+        {
+          "id": "K089",
+          "name": "김보람",
+          "origin": "multicultural",
+          "subgroup": "southeast-asian",
+          "state_id": "S04"
+        },
+        {
+          "id": "K118",
+          "name": "이윤서",
+          "origin": "multicultural",
+          "subgroup": "southeast-asian",
+          "state_id": "S05"
+        },
+        {
+          "id": "F08",
+          "name": "하수펌프",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S08"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B025",
+      "actors": [
+        {
+          "id": "K130",
+          "name": "나효원",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S05"
+        },
+        {
+          "id": "K158",
+          "name": "연태솔",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S06"
+        },
+        {
+          "id": "K182",
+          "name": "차라온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S07"
+        },
+        {
+          "id": "K206",
+          "name": "연은재",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S08"
+        },
+        {
+          "id": "K231",
+          "name": "봉용",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S09"
+        },
+        {
+          "id": "K256",
+          "name": "봉두",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S10"
+        },
+        {
+          "id": "K281",
+          "name": "봉국",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S11"
+        },
+        {
+          "id": "K146",
+          "name": "오서율",
+          "origin": "multicultural",
+          "subgroup": "southeast-asian",
+          "state_id": "S06"
+        },
+        {
+          "id": "K170",
+          "name": "송이든",
+          "origin": "multicultural",
+          "subgroup": "southeast-asian",
+          "state_id": "S07"
+        },
+        {
+          "id": "F09",
+          "name": "실험클린",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S09"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B026",
+      "actors": [
+        {
+          "id": "K306",
+          "name": "국감",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S12"
+        },
+        {
+          "id": "K331",
+          "name": "방미산",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S13"
+        },
+        {
+          "id": "K356",
+          "name": "영한뫼",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S14"
+        },
+        {
+          "id": "K381",
+          "name": "방석담",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S15"
+        },
+        {
+          "id": "K405",
+          "name": "천늘샘",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S16"
+        },
+        {
+          "id": "K018",
+          "name": "허은찬",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S01"
+        },
+        {
+          "id": "K046",
+          "name": "표예담",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S02"
+        },
+        {
+          "id": "K194",
+          "name": "서나연",
+          "origin": "multicultural",
+          "subgroup": "southeast-asian",
+          "state_id": "S08"
+        },
+        {
+          "id": "K219",
+          "name": "오하늘",
+          "origin": "multicultural",
+          "subgroup": "southeast-asian",
+          "state_id": "S09"
+        },
+        {
+          "id": "F10",
+          "name": "물류분류",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S10"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B027",
+      "actors": [
+        {
+          "id": "K074",
+          "name": "허미리",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S03"
+        },
+        {
+          "id": "K102",
+          "name": "변오름",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S04"
+        },
+        {
+          "id": "K131",
+          "name": "양기석",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S05"
+        },
+        {
+          "id": "K159",
+          "name": "나봄결",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S06"
+        },
+        {
+          "id": "K183",
+          "name": "설우찬",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S07"
+        },
+        {
+          "id": "K207",
+          "name": "나루희",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S08"
+        },
+        {
+          "id": "K232",
+          "name": "용소",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S09"
+        },
+        {
+          "id": "K244",
+          "name": "윤초아",
+          "origin": "multicultural",
+          "subgroup": "southeast-asian",
+          "state_id": "S10"
+        },
+        {
+          "id": "K269",
+          "name": "권도하",
+          "origin": "multicultural",
+          "subgroup": "southeast-asian",
+          "state_id": "S11"
+        },
+        {
+          "id": "F11",
+          "name": "전력변압",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S11"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B028",
+      "actors": [
+        {
+          "id": "K257",
+          "name": "용두",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S10"
+        },
+        {
+          "id": "K282",
+          "name": "용두봉",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S11"
+        },
+        {
+          "id": "K307",
+          "name": "감모",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S12"
+        },
+        {
+          "id": "K332",
+          "name": "수효은",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S13"
+        },
+        {
+          "id": "K357",
+          "name": "판초담",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S14"
+        },
+        {
+          "id": "K382",
+          "name": "흥예나",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S15"
+        },
+        {
+          "id": "K406",
+          "name": "근주하",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S16"
+        },
+        {
+          "id": "K294",
+          "name": "하세온",
+          "origin": "multicultural",
+          "subgroup": "southeast-asian",
+          "state_id": "S12"
+        },
+        {
+          "id": "K319",
+          "name": "남호성",
+          "origin": "multicultural",
+          "subgroup": "southeast-asian",
+          "state_id": "S13"
+        },
+        {
+          "id": "F12",
+          "name": "환기덕트",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S12"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B029",
+      "actors": [
+        {
+          "id": "K019",
+          "name": "구하온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S01"
+        },
+        {
+          "id": "K047",
+          "name": "명다해",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S02"
+        },
+        {
+          "id": "K075",
+          "name": "구선율",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S03"
+        },
+        {
+          "id": "K103",
+          "name": "표누리",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S04"
+        },
+        {
+          "id": "K132",
+          "name": "주단아",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S05"
+        },
+        {
+          "id": "K160",
+          "name": "홍예준",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S06"
+        },
+        {
+          "id": "K184",
+          "name": "단시온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S07"
+        },
+        {
+          "id": "K344",
+          "name": "곽민재",
+          "origin": "multicultural",
+          "subgroup": "southeast-asian",
+          "state_id": "S14"
+        },
+        {
+          "id": "K369",
+          "name": "남시윤",
+          "origin": "multicultural",
+          "subgroup": "southeast-asian",
+          "state_id": "S15"
+        },
+        {
+          "id": "F13",
+          "name": "의료멸균",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S13"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B030",
+      "actors": [
+        {
+          "id": "K208",
+          "name": "섭다은",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S08"
+        },
+        {
+          "id": "K233",
+          "name": "란세온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S09"
+        },
+        {
+          "id": "K258",
+          "name": "어하은",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S10"
+        },
+        {
+          "id": "K283",
+          "name": "추지훈",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S11"
+        },
+        {
+          "id": "K308",
+          "name": "탁미르",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S12"
+        },
+        {
+          "id": "K333",
+          "name": "매하루",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S13"
+        },
+        {
+          "id": "K358",
+          "name": "매서담",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S14"
+        },
+        {
+          "id": "K034",
+          "name": "최다인",
+          "origin": "multicultural",
+          "subgroup": "central-asian-koryoin",
+          "state_id": "S02"
+        },
+        {
+          "id": "K062",
+          "name": "유민호",
+          "origin": "multicultural",
+          "subgroup": "central-asian-koryoin",
+          "state_id": "S03"
+        },
+        {
+          "id": "F14",
+          "name": "인쇄기동",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S14"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B031",
+      "actors": [
+        {
+          "id": "K383",
+          "name": "매리울",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S15"
+        },
+        {
+          "id": "K407",
+          "name": "흥미리",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S16"
+        },
+        {
+          "id": "K020",
+          "name": "진세빈",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S01"
+        },
+        {
+          "id": "K048",
+          "name": "제문석",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S02"
+        },
+        {
+          "id": "K076",
+          "name": "진마루",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S03"
+        },
+        {
+          "id": "K104",
+          "name": "명우솔",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S04"
+        },
+        {
+          "id": "K133",
+          "name": "차윤목",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S05"
+        },
+        {
+          "id": "K090",
+          "name": "이준택",
+          "origin": "multicultural",
+          "subgroup": "central-asian-koryoin",
+          "state_id": "S04"
+        },
+        {
+          "id": "K119",
+          "name": "박하율",
+          "origin": "multicultural",
+          "subgroup": "central-asian-koryoin",
+          "state_id": "S05"
+        },
+        {
+          "id": "F15",
+          "name": "급수계량",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S15"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B032",
+      "actors": [
+        {
+          "id": "K161",
+          "name": "추서윤",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S06"
+        },
+        {
+          "id": "K185",
+          "name": "순가온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S07"
+        },
+        {
+          "id": "K209",
+          "name": "평서아",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S08"
+        },
+        {
+          "id": "K234",
+          "name": "섭달호",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S09"
+        },
+        {
+          "id": "K259",
+          "name": "란민준",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S10"
+        },
+        {
+          "id": "K284",
+          "name": "어예린",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S11"
+        },
+        {
+          "id": "K309",
+          "name": "범온결",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S12"
+        },
+        {
+          "id": "K147",
+          "name": "서라온",
+          "origin": "multicultural",
+          "subgroup": "central-asian-koryoin",
+          "state_id": "S06"
+        },
+        {
+          "id": "K171",
+          "name": "강다은",
+          "origin": "multicultural",
+          "subgroup": "central-asian-koryoin",
+          "state_id": "S07"
+        },
+        {
+          "id": "F16",
+          "name": "터널환기",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S16"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B033",
+      "actors": [
+        {
+          "id": "K334",
+          "name": "탁은솔",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S13"
+        },
+        {
+          "id": "K359",
+          "name": "탁윤재",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S14"
+        },
+        {
+          "id": "K384",
+          "name": "탁필호",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S15"
+        },
+        {
+          "id": "K408",
+          "name": "매도한",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S16"
+        },
+        {
+          "id": "K021",
+          "name": "채한솔",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S01"
+        },
+        {
+          "id": "K049",
+          "name": "변주아",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S02"
+        },
+        {
+          "id": "K077",
+          "name": "채무진",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S03"
+        },
+        {
+          "id": "K195",
+          "name": "오도윤",
+          "origin": "multicultural",
+          "subgroup": "central-asian-koryoin",
+          "state_id": "S08"
+        },
+        {
+          "id": "K220",
+          "name": "조은우",
+          "origin": "multicultural",
+          "subgroup": "central-asian-koryoin",
+          "state_id": "S09"
+        },
+        {
+          "id": "V01",
+          "name": "새벽호송",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S01"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B034",
+      "actors": [
+        {
+          "id": "K105",
+          "name": "제바름",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S04"
+        },
+        {
+          "id": "K134",
+          "name": "설봄이",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S05"
+        },
+        {
+          "id": "K162",
+          "name": "어태산",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S06"
+        },
+        {
+          "id": "K186",
+          "name": "홍재민",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S07"
+        },
+        {
+          "id": "K210",
+          "name": "단노을",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S08"
+        },
+        {
+          "id": "K235",
+          "name": "평지우",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S09"
+        },
+        {
+          "id": "K260",
+          "name": "섭서연",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S10"
+        },
+        {
+          "id": "K245",
+          "name": "오한결",
+          "origin": "multicultural",
+          "subgroup": "south-asian-me",
+          "state_id": "S10"
+        },
+        {
+          "id": "K270",
+          "name": "황노을",
+          "origin": "multicultural",
+          "subgroup": "south-asian-me",
+          "state_id": "S11"
+        },
+        {
+          "id": "V02",
+          "name": "순환버스",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S02"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B035",
+      "actors": [
+        {
+          "id": "K285",
+          "name": "란진아",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S11"
+        },
+        {
+          "id": "K310",
+          "name": "창다흰",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S12"
+        },
+        {
+          "id": "K335",
+          "name": "범초이",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S13"
+        },
+        {
+          "id": "K360",
+          "name": "범한들",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S14"
+        },
+        {
+          "id": "K385",
+          "name": "범채온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S15"
+        },
+        {
+          "id": "K409",
+          "name": "탁세온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S16"
+        },
+        {
+          "id": "K022",
+          "name": "고늘결",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S01"
+        },
+        {
+          "id": "K295",
+          "name": "곽태산",
+          "origin": "multicultural",
+          "subgroup": "south-asian-me",
+          "state_id": "S12"
+        },
+        {
+          "id": "K320",
+          "name": "전솔",
+          "origin": "multicultural",
+          "subgroup": "south-asian-me",
+          "state_id": "S13"
+        },
+        {
+          "id": "V03",
+          "name": "화물트램",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S03"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B036",
+      "actors": [
+        {
+          "id": "K050",
+          "name": "종마루",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S02"
+        },
+        {
+          "id": "K078",
+          "name": "우다온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S03"
+        },
+        {
+          "id": "K106",
+          "name": "변석훈",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S04"
+        },
+        {
+          "id": "K135",
+          "name": "우지호",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S05"
+        },
+        {
+          "id": "K163",
+          "name": "란지호",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S06"
+        },
+        {
+          "id": "K187",
+          "name": "추한결",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S07"
+        },
+        {
+          "id": "K211",
+          "name": "순재민",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S08"
+        },
+        {
+          "id": "K345",
+          "name": "심가은",
+          "origin": "multicultural",
+          "subgroup": "south-asian-me",
+          "state_id": "S14"
+        },
+        {
+          "id": "K370",
+          "name": "문도윤",
+          "origin": "multicultural",
+          "subgroup": "south-asian-me",
+          "state_id": "S15"
+        },
+        {
+          "id": "V04",
+          "name": "구경로봇",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S04"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B037",
+      "actors": [
+        {
+          "id": "K236",
+          "name": "단보람",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S09"
+        },
+        {
+          "id": "K261",
+          "name": "평은우",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S10"
+        },
+        {
+          "id": "K286",
+          "name": "섭채원",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S11"
+        },
+        {
+          "id": "K311",
+          "name": "초나루",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S12"
+        },
+        {
+          "id": "K336",
+          "name": "창해온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S13"
+        },
+        {
+          "id": "K361",
+          "name": "창지안",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S14"
+        },
+        {
+          "id": "K386",
+          "name": "창고운",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S15"
+        },
+        {
+          "id": "K394",
+          "name": "안태경",
+          "origin": "multicultural",
+          "subgroup": "south-asian-me",
+          "state_id": "S16"
+        },
+        {
+          "id": "K007",
+          "name": "장필규",
+          "origin": "multicultural",
+          "subgroup": "south-asian-me",
+          "state_id": "S01"
+        },
+        {
+          "id": "V05",
+          "name": "레일견인",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S05"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B038",
+      "actors": [
+        {
+          "id": "K410",
+          "name": "범하겸",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S16"
+        },
+        {
+          "id": "K023",
+          "name": "배초담",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S01"
+        },
+        {
+          "id": "K051",
+          "name": "고모래",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S02"
+        },
+        {
+          "id": "K079",
+          "name": "고초윤",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S03"
+        },
+        {
+          "id": "K107",
+          "name": "종나솔",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S04"
+        },
+        {
+          "id": "K136",
+          "name": "종하린",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S05"
+        },
+        {
+          "id": "K164",
+          "name": "섭도윤",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S06"
+        },
+        {
+          "id": "K035",
+          "name": "장우석",
+          "origin": "multicultural",
+          "subgroup": "japanese-returnee",
+          "state_id": "S02"
+        },
+        {
+          "id": "K063",
+          "name": "박진솔",
+          "origin": "multicultural",
+          "subgroup": "japanese-returnee",
+          "state_id": "S03"
+        },
+        {
+          "id": "V06",
+          "name": "배전트럭",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S06"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B039",
+      "actors": [
+        {
+          "id": "K188",
+          "name": "어지율",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S07"
+        },
+        {
+          "id": "K212",
+          "name": "홍지훈",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S08"
+        },
+        {
+          "id": "K237",
+          "name": "순한결",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S09"
+        },
+        {
+          "id": "K262",
+          "name": "단유진",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S10"
+        },
+        {
+          "id": "K287",
+          "name": "평채원",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S11"
+        },
+        {
+          "id": "K312",
+          "name": "석봄우",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S12"
+        },
+        {
+          "id": "K337",
+          "name": "석라온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S13"
+        },
+        {
+          "id": "K091",
+          "name": "최나래",
+          "origin": "multicultural",
+          "subgroup": "japanese-returnee",
+          "state_id": "S04"
+        },
+        {
+          "id": "K120",
+          "name": "최도윤",
+          "origin": "multicultural",
+          "subgroup": "japanese-returnee",
+          "state_id": "S05"
+        },
+        {
+          "id": "V07",
+          "name": "청소차륜",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S07"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B040",
+      "actors": [
+        {
+          "id": "K362",
+          "name": "초태온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S14"
+        },
+        {
+          "id": "K387",
+          "name": "초시람",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S15"
+        },
+        {
+          "id": "K411",
+          "name": "창은찬",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S16"
+        },
+        {
+          "id": "K024",
+          "name": "류한뫼",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S01"
+        },
+        {
+          "id": "K052",
+          "name": "배온결",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S02"
+        },
+        {
+          "id": "K080",
+          "name": "배서율",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S03"
+        },
+        {
+          "id": "K108",
+          "name": "고은하",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S04"
+        },
+        {
+          "id": "K148",
+          "name": "지서윤",
+          "origin": "multicultural",
+          "subgroup": "japanese-returnee",
+          "state_id": "S06"
+        },
+        {
+          "id": "K172",
+          "name": "양건우",
+          "origin": "multicultural",
+          "subgroup": "japanese-returnee",
+          "state_id": "S07"
+        },
+        {
+          "id": "V08",
+          "name": "구급카트",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S08"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B041",
+      "actors": [
+        {
+          "id": "K137",
+          "name": "고재민",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S05"
+        },
+        {
+          "id": "K165",
+          "name": "평예준",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S06"
+        },
+        {
+          "id": "K189",
+          "name": "란하율",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S07"
+        },
+        {
+          "id": "K213",
+          "name": "추보람",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S08"
+        },
+        {
+          "id": "K238",
+          "name": "홍우찬",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S09"
+        },
+        {
+          "id": "K263",
+          "name": "순지민",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S10"
+        },
+        {
+          "id": "K288",
+          "name": "단건우",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S11"
+        },
+        {
+          "id": "K196",
+          "name": "지윤재",
+          "origin": "multicultural",
+          "subgroup": "japanese-returnee",
+          "state_id": "S08"
+        },
+        {
+          "id": "K221",
+          "name": "두봉",
+          "origin": "multicultural",
+          "subgroup": "western-african-other",
+          "state_id": "S09"
+        },
+        {
+          "id": "V09",
+          "name": "항만크레인",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S09"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B042",
+      "actors": [
+        {
+          "id": "K313",
+          "name": "근솔이",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S12"
+        },
+        {
+          "id": "K338",
+          "name": "근우람",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S13"
+        },
+        {
+          "id": "K363",
+          "name": "석주아",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S14"
+        },
+        {
+          "id": "K388",
+          "name": "석오름",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S15"
+        },
+        {
+          "id": "K412",
+          "name": "초진솔",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S16"
+        },
+        {
+          "id": "K025",
+          "name": "엄새울",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S01"
+        },
+        {
+          "id": "K053",
+          "name": "류겨레",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S02"
+        },
+        {
+          "id": "K246",
+          "name": "두감",
+          "origin": "multicultural",
+          "subgroup": "western-african-other",
+          "state_id": "S10"
+        },
+        {
+          "id": "K271",
+          "name": "두모",
+          "origin": "multicultural",
+          "subgroup": "western-african-other",
+          "state_id": "S11"
+        },
+        {
+          "id": "V10",
+          "name": "도크셔틀",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S10"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B043",
+      "actors": [
+        {
+          "id": "K081",
+          "name": "류하늘",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S03"
+        },
+        {
+          "id": "K109",
+          "name": "배나경",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S04"
+        },
+        {
+          "id": "K138",
+          "name": "배은찬",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S05"
+        },
+        {
+          "id": "K214",
+          "name": "어도윤",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S08"
+        },
+        {
+          "id": "K239",
+          "name": "추우찬",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S09"
+        },
+        {
+          "id": "K264",
+          "name": "홍은서",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S10"
+        },
+        {
+          "id": "K289",
+          "name": "순하준",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S11"
+        },
+        {
+          "id": "K296",
+          "name": "소두감",
+          "origin": "multicultural",
+          "subgroup": "western-african-other",
+          "state_id": "S12"
+        },
+        {
+          "id": "K321",
+          "name": "천다움",
+          "origin": "multicultural",
+          "subgroup": "western-african-other",
+          "state_id": "S13"
+        },
+        {
+          "id": "V11",
+          "name": "야간배차",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S11"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B044",
+      "actors": [
+        {
+          "id": "K314",
+          "name": "흥지완",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S12"
+        },
+        {
+          "id": "K339",
+          "name": "흥다온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S13"
+        },
+        {
+          "id": "K364",
+          "name": "근바름",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S14"
+        },
+        {
+          "id": "K026",
+          "name": "여리안",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S01"
+        },
+        {
+          "id": "K054",
+          "name": "엄누리",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S02"
+        },
+        {
+          "id": "K082",
+          "name": "엄도한",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S03"
+        },
+        {
+          "id": "K110",
+          "name": "류다인",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S04"
+        },
+        {
+          "id": "K346",
+          "name": "선솔우",
+          "origin": "multicultural",
+          "subgroup": "western-african-other",
+          "state_id": "S14"
+        },
+        {
+          "id": "K371",
+          "name": "천나솔",
+          "origin": "multicultural",
+          "subgroup": "western-african-other",
+          "state_id": "S15"
+        },
+        {
+          "id": "V12",
+          "name": "중장비팔",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S12"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B045",
+      "actors": [
+        {
+          "id": "K139",
+          "name": "류가온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S05"
+        },
+        {
+          "id": "K027",
+          "name": "기바름",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S01"
+        },
+        {
+          "id": "K055",
+          "name": "여시온",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S02"
+        },
+        {
+          "id": "K083",
+          "name": "여다솜",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S03"
+        },
+        {
+          "id": "K111",
+          "name": "엄미래",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S04"
+        },
+        {
+          "id": "K140",
+          "name": "엄시완",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S05"
+        },
+        {
+          "id": "K395",
+          "name": "수늘결",
+          "origin": "multicultural",
+          "subgroup": "stateless-refugee",
+          "state_id": "S16"
+        },
+        {
+          "id": "K008",
+          "name": "임바다",
+          "origin": "multicultural",
+          "subgroup": "stateless-refugee",
+          "state_id": "S01"
+        },
+        {
+          "id": "V13",
+          "name": "터널보선",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S13"
+        },
+        {
+          "id": "V14",
+          "name": "교량점검",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S14"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    },
+    {
+      "id": "B046",
+      "actors": [
+        {
+          "id": "K028",
+          "name": "우오름",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S01"
+        },
+        {
+          "id": "K056",
+          "name": "기필호",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S02"
+        },
+        {
+          "id": "K084",
+          "name": "기서진",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S03"
+        },
+        {
+          "id": "K112",
+          "name": "여민우",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S04"
+        },
+        {
+          "id": "K141",
+          "name": "여서하",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S05"
+        },
+        {
+          "id": "K113",
+          "name": "기하겸",
+          "origin": "korean-origin",
+          "subgroup": null,
+          "state_id": "S04"
+        },
+        {
+          "id": "K036",
+          "name": "임채원",
+          "origin": "multicultural",
+          "subgroup": "stateless-refugee",
+          "state_id": "S02"
+        },
+        {
+          "id": "K064",
+          "name": "장예린",
+          "origin": "multicultural",
+          "subgroup": "stateless-refugee",
+          "state_id": "S03"
+        },
+        {
+          "id": "V15",
+          "name": "수문카트",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S15"
+        },
+        {
+          "id": "V16",
+          "name": "비상견인",
+          "origin": "synthetic",
+          "subgroup": null,
+          "state_id": "S16"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/Cast-Index.md",
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ],
+      "projection_targets": [
+        "Story-Batch-Manifest.md"
+      ]
+    }
+  ],
   "hostile_groups": [],
   "monster_batches": [],
   "arcs": [],
@@ -9465,6 +13335,11 @@
     {
       "id": "CL-0006",
       "summary": "합성 사회 인격 48명을 총람에 등록하고 투영한다",
+      "owner": "wiki-world"
+    },
+    {
+      "id": "CL-0007",
+      "summary": "사회 서사 배치 B001-B046 원장을 잠근다",
       "owner": "wiki-world"
     }
   ]
