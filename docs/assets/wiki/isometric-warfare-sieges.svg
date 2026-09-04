@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title>공성 접근로와 퇴로의 아이소 전장</title>
+  <desc>전쟁과 공성에서 인물의 칸, 방향, 시야가 게임 규칙에 미치는 영향을 설명하는 아이소메트릭 도표.</desc>
+  <rect width="1280" height="720" fill="#07141b"/>
+  <g font-family="Pretendard, Noto Sans KR, Apple SD Gothic Neo, Malgun Gothic, sans-serif" fill="#e8f6fa">
+    <text x="64" y="70" font-size="34" font-weight="700">전쟁과 공성</text>
+    <text x="64" y="108" font-size="18" fill="#9ec6d2">공성 접근로와 퇴로의 아이소 전장</text>
+    <g transform="translate(90 130)">
+      <rect x="520" y="40" width="28" height="420" fill="#174555" stroke="#61d4db" stroke-width="3"/>
+      <rect x="620" y="70" width="28" height="360" fill="#174555" stroke="#61d4db" stroke-width="3"/>
+      <rect x="720" y="100" width="28" height="300" fill="#174555" stroke="#61d4db" stroke-width="3"/>
+      <path d="M40 160 520 160" stroke="hsl(233 70% 58%)" stroke-width="10"/>
+      <path d="M40 280 520 280" stroke="#315865" stroke-width="10"/>
+      <circle cx="160" cy="160" r="22" fill="#e94f64" stroke="#fff4d4" stroke-width="3"/>
+      <circle cx="860" cy="220" r="22" fill="#f1b85b" stroke="#fff4d4" stroke-width="3"/>
+      <path d="M860 220 760 140 740 260Z" fill="hsl(233 70% 58%)" opacity="0.3"/>
+      <path d="M160 160 280 160" stroke="#ffffff" stroke-width="6" marker-end="url(#arrow)"/>
+      <path d="M140 180 60 260" stroke="#e94f64" stroke-width="6" marker-end="url(#arrow)"/>
+      <text x="200" y="140" font-size="20">공성 접근로</text>
+      <text x="185" y="315" font-size="20">보급선</text>
+      <text x="540" y="30" font-size="20">성벽</text>
+      <text x="810" y="280" font-size="20">수비대</text>
+      <text x="20" y="300" font-size="20">퇴로</text>
+    </g>
+    <text x="64" y="630" font-size="15" fill="#9ec6d2">공통 아이소 문법</text>
+    <g font-size="22" font-weight="650">
+      <text x="64" y="668">칸에 누가 서 있나</text>
+      <text x="430" y="668">어느 쪽을 보나</text>
+      <text x="780" y="668">시야</text>
+    </g>
+  </g>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#fff"/></marker></defs>
+</svg>

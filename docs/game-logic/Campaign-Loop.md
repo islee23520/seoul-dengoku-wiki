@@ -1,6 +1,8 @@
 # 출격하고 돌아오는 흐름
 
-![출격부터 복귀까지 칸에 누가 서 있고 어느 쪽을 보며 어디까지 보이는지](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-grammar.svg?raw=true)
+![출격하고 돌아오는 흐름의 아이소 단계](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-campaign-loop.svg?raw=true)
+
+캠페인 한 사이클에서 준비, 원정, 조우, 전투, 결과 반영 단계를 순서대로 진행합니다.
 
 ## 여섯 단계
 

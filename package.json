@@ -10,7 +10,7 @@
   },
   "packageManager": "npm@12.0.2",
   "scripts": {
-    "test": "node tools/wiki/test-build-wiki.mjs && node tools/wiki/test-publish-wiki.mjs",
+    "test": "node tools/wiki/test-build-wiki.mjs && node tools/wiki/test-core-isometric-diagrams.mjs && node tools/wiki/test-publish-wiki.mjs",
     "wiki:publish": "node tools/wiki/publish-wiki.mjs --no-push"
   },
   "dependencies": {
