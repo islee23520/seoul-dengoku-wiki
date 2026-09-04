@@ -11,7 +11,7 @@
 | 문서 상태 | 활성 |
 | 소유자 | wiki-world |
 | 지원 검토자 | (없음, 외부 검토 대기) |
-| 개정 | r8 |
+| 개정 | r9 |
 | 마지막 검증 커밋 | `c485bc84629c39e978889f1585ade92bef4ceda4` |
 | 출처층 | original-fiction |
 | 출처 앵커 | Cast-Index.md, Sixteen-States.md, Research-Sources.md |
@@ -63,6 +63,10 @@ B001–B046 배치 원장은 인간 K001–K412와 합성 H/F/V를 각각 한 �
 
 G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 후속 배치에서 채웁니다. 실재 기업 사고 귀속과 실재 피해자 선정주의는 금지합니다.
 
+## 서사선 씨앗
+
+24 가문, 5 전구, 합성 3급, 24 생태군의 3막 서사선 ID를 등록합니다. 기존 시나리오 타임라인 사건 문구는 덮어쓰지 않습니다.
+
 ## 기계 등록부
 
 ```json
@@ -74,7 +78,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     "document_status": "active",
     "owner": "wiki-world",
     "support_reviewers": [],
-    "revision": "r8",
+    "revision": "r9",
     "last_verified_commit": "c485bc84629c39e978889f1585ade92bef4ceda4",
     "source_kind": "original-fiction",
     "source_anchors": [
@@ -172,10 +176,13 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "Synthetic-Actors.md",
       "Story-Batch-Manifest.md",
       "Hostile-Ecology-Index.md",
-      "Monster-Batch-Manifest.md"
+      "Monster-Batch-Manifest.md",
+      "Regional-Physical-AI-Arcs.md",
+      "World-Relation-Ledger.md",
+      "World-Expansion-Index.md"
     ],
-    "change_ledger_entry": "CL-0008",
-    "verification_state": "monster-manifest-locked"
+    "change_ledger_entry": "CL-0009",
+    "verification_state": "seeds-authored"
   },
   "writing_contract": {
     "narrative_register": "plain-da",
@@ -15422,8 +15429,1856 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       ]
     }
   ],
-  "arcs": [],
-  "relations": [],
+  "arcs": [
+    {
+      "id": "ARC-H-HC01",
+      "title": "HC01 운영 연속성",
+      "house_ids": [
+        "HC01"
+      ],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "HC01 핵심 의무가 자원 부족으로 흔들린다"
+        },
+        {
+          "act": 2,
+          "summary": "HC01 이사회가 시민 참관 아래 재배분을 협상한다"
+        },
+        {
+          "act": 3,
+          "summary": "HC01 대가 지불 후 최소 연속성만 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-H-HC02",
+      "title": "HC02 운영 연속성",
+      "house_ids": [
+        "HC02"
+      ],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "HC02 핵심 의무가 자원 부족으로 흔들린다"
+        },
+        {
+          "act": 2,
+          "summary": "HC02 이사회가 시민 참관 아래 재배분을 협상한다"
+        },
+        {
+          "act": 3,
+          "summary": "HC02 대가 지불 후 최소 연속성만 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-H-HC03",
+      "title": "HC03 운영 연속성",
+      "house_ids": [
+        "HC03"
+      ],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "HC03 핵심 의무가 자원 부족으로 흔들린다"
+        },
+        {
+          "act": 2,
+          "summary": "HC03 이사회가 시민 참관 아래 재배분을 협상한다"
+        },
+        {
+          "act": 3,
+          "summary": "HC03 대가 지불 후 최소 연속성만 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-H-HC04",
+      "title": "HC04 운영 연속성",
+      "house_ids": [
+        "HC04"
+      ],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "HC04 핵심 의무가 자원 부족으로 흔들린다"
+        },
+        {
+          "act": 2,
+          "summary": "HC04 이사회가 시민 참관 아래 재배분을 협상한다"
+        },
+        {
+          "act": 3,
+          "summary": "HC04 대가 지불 후 최소 연속성만 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-H-HC05",
+      "title": "HC05 운영 연속성",
+      "house_ids": [
+        "HC05"
+      ],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "HC05 핵심 의무가 자원 부족으로 흔들린다"
+        },
+        {
+          "act": 2,
+          "summary": "HC05 이사회가 시민 참관 아래 재배분을 협상한다"
+        },
+        {
+          "act": 3,
+          "summary": "HC05 대가 지불 후 최소 연속성만 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-H-HC06",
+      "title": "HC06 운영 연속성",
+      "house_ids": [
+        "HC06"
+      ],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "HC06 핵심 의무가 자원 부족으로 흔들린다"
+        },
+        {
+          "act": 2,
+          "summary": "HC06 이사회가 시민 참관 아래 재배분을 협상한다"
+        },
+        {
+          "act": 3,
+          "summary": "HC06 대가 지불 후 최소 연속성만 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-H-HC07",
+      "title": "HC07 운영 연속성",
+      "house_ids": [
+        "HC07"
+      ],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "HC07 핵심 의무가 자원 부족으로 흔들린다"
+        },
+        {
+          "act": 2,
+          "summary": "HC07 이사회가 시민 참관 아래 재배분을 협상한다"
+        },
+        {
+          "act": 3,
+          "summary": "HC07 대가 지불 후 최소 연속성만 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-H-HC08",
+      "title": "HC08 운영 연속성",
+      "house_ids": [
+        "HC08"
+      ],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "HC08 핵심 의무가 자원 부족으로 흔들린다"
+        },
+        {
+          "act": 2,
+          "summary": "HC08 이사회가 시민 참관 아래 재배분을 협상한다"
+        },
+        {
+          "act": 3,
+          "summary": "HC08 대가 지불 후 최소 연속성만 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-H-HC09",
+      "title": "HC09 운영 연속성",
+      "house_ids": [
+        "HC09"
+      ],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "HC09 핵심 의무가 자원 부족으로 흔들린다"
+        },
+        {
+          "act": 2,
+          "summary": "HC09 이사회가 시민 참관 아래 재배분을 협상한다"
+        },
+        {
+          "act": 3,
+          "summary": "HC09 대가 지불 후 최소 연속성만 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-H-HC10",
+      "title": "HC10 운영 연속성",
+      "house_ids": [
+        "HC10"
+      ],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "HC10 핵심 의무가 자원 부족으로 흔들린다"
+        },
+        {
+          "act": 2,
+          "summary": "HC10 이사회가 시민 참관 아래 재배분을 협상한다"
+        },
+        {
+          "act": 3,
+          "summary": "HC10 대가 지불 후 최소 연속성만 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-H-HC11",
+      "title": "HC11 운영 연속성",
+      "house_ids": [
+        "HC11"
+      ],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "HC11 핵심 의무가 자원 부족으로 흔들린다"
+        },
+        {
+          "act": 2,
+          "summary": "HC11 이사회가 시민 참관 아래 재배분을 협상한다"
+        },
+        {
+          "act": 3,
+          "summary": "HC11 대가 지불 후 최소 연속성만 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-H-HC12",
+      "title": "HC12 운영 연속성",
+      "house_ids": [
+        "HC12"
+      ],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "HC12 핵심 의무가 자원 부족으로 흔들린다"
+        },
+        {
+          "act": 2,
+          "summary": "HC12 이사회가 시민 참관 아래 재배분을 협상한다"
+        },
+        {
+          "act": 3,
+          "summary": "HC12 대가 지불 후 최소 연속성만 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-H-HC13",
+      "title": "HC13 운영 연속성",
+      "house_ids": [
+        "HC13"
+      ],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "HC13 핵심 의무가 자원 부족으로 흔들린다"
+        },
+        {
+          "act": 2,
+          "summary": "HC13 이사회가 시민 참관 아래 재배분을 협상한다"
+        },
+        {
+          "act": 3,
+          "summary": "HC13 대가 지불 후 최소 연속성만 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-H-HC14",
+      "title": "HC14 운영 연속성",
+      "house_ids": [
+        "HC14"
+      ],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "HC14 핵심 의무가 자원 부족으로 흔들린다"
+        },
+        {
+          "act": 2,
+          "summary": "HC14 이사회가 시민 참관 아래 재배분을 협상한다"
+        },
+        {
+          "act": 3,
+          "summary": "HC14 대가 지불 후 최소 연속성만 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-H-HP01",
+      "title": "HP01 운영 연속성",
+      "house_ids": [
+        "HP01"
+      ],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "HP01 핵심 의무가 자원 부족으로 흔들린다"
+        },
+        {
+          "act": 2,
+          "summary": "HP01 이사회가 시민 참관 아래 재배분을 협상한다"
+        },
+        {
+          "act": 3,
+          "summary": "HP01 대가 지불 후 최소 연속성만 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-H-HP02",
+      "title": "HP02 운영 연속성",
+      "house_ids": [
+        "HP02"
+      ],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "HP02 핵심 의무가 자원 부족으로 흔들린다"
+        },
+        {
+          "act": 2,
+          "summary": "HP02 이사회가 시민 참관 아래 재배분을 협상한다"
+        },
+        {
+          "act": 3,
+          "summary": "HP02 대가 지불 후 최소 연속성만 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-H-HP03",
+      "title": "HP03 운영 연속성",
+      "house_ids": [
+        "HP03"
+      ],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "HP03 핵심 의무가 자원 부족으로 흔들린다"
+        },
+        {
+          "act": 2,
+          "summary": "HP03 이사회가 시민 참관 아래 재배분을 협상한다"
+        },
+        {
+          "act": 3,
+          "summary": "HP03 대가 지불 후 최소 연속성만 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-H-HP04",
+      "title": "HP04 운영 연속성",
+      "house_ids": [
+        "HP04"
+      ],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "HP04 핵심 의무가 자원 부족으로 흔들린다"
+        },
+        {
+          "act": 2,
+          "summary": "HP04 이사회가 시민 참관 아래 재배분을 협상한다"
+        },
+        {
+          "act": 3,
+          "summary": "HP04 대가 지불 후 최소 연속성만 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-H-HP05",
+      "title": "HP05 운영 연속성",
+      "house_ids": [
+        "HP05"
+      ],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "HP05 핵심 의무가 자원 부족으로 흔들린다"
+        },
+        {
+          "act": 2,
+          "summary": "HP05 이사회가 시민 참관 아래 재배분을 협상한다"
+        },
+        {
+          "act": 3,
+          "summary": "HP05 대가 지불 후 최소 연속성만 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-H-HP06",
+      "title": "HP06 운영 연속성",
+      "house_ids": [
+        "HP06"
+      ],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "HP06 핵심 의무가 자원 부족으로 흔들린다"
+        },
+        {
+          "act": 2,
+          "summary": "HP06 이사회가 시민 참관 아래 재배분을 협상한다"
+        },
+        {
+          "act": 3,
+          "summary": "HP06 대가 지불 후 최소 연속성만 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-H-HP07",
+      "title": "HP07 운영 연속성",
+      "house_ids": [
+        "HP07"
+      ],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "HP07 핵심 의무가 자원 부족으로 흔들린다"
+        },
+        {
+          "act": 2,
+          "summary": "HP07 이사회가 시민 참관 아래 재배분을 협상한다"
+        },
+        {
+          "act": 3,
+          "summary": "HP07 대가 지불 후 최소 연속성만 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-H-HP08",
+      "title": "HP08 운영 연속성",
+      "house_ids": [
+        "HP08"
+      ],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "HP08 핵심 의무가 자원 부족으로 흔들린다"
+        },
+        {
+          "act": 2,
+          "summary": "HP08 이사회가 시민 참관 아래 재배분을 협상한다"
+        },
+        {
+          "act": 3,
+          "summary": "HP08 대가 지불 후 최소 연속성만 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-H-HP09",
+      "title": "HP09 운영 연속성",
+      "house_ids": [
+        "HP09"
+      ],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "HP09 핵심 의무가 자원 부족으로 흔들린다"
+        },
+        {
+          "act": 2,
+          "summary": "HP09 이사회가 시민 참관 아래 재배분을 협상한다"
+        },
+        {
+          "act": 3,
+          "summary": "HP09 대가 지불 후 최소 연속성만 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-H-HP10",
+      "title": "HP10 운영 연속성",
+      "house_ids": [
+        "HP10"
+      ],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "HP10 핵심 의무가 자원 부족으로 흔들린다"
+        },
+        {
+          "act": 2,
+          "summary": "HP10 이사회가 시민 참관 아래 재배분을 협상한다"
+        },
+        {
+          "act": 3,
+          "summary": "HP10 대가 지불 후 최소 연속성만 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-T-XT01",
+      "title": "XT01 회랑 압력",
+      "house_ids": [],
+      "theater_ids": [
+        "XT01"
+      ],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "XT01 입구에서 검역·물자 큐가 막힌다"
+        },
+        {
+          "act": 2,
+          "summary": "XT01 연결 16국 대표가 공동 점검을 연다"
+        },
+        {
+          "act": 3,
+          "summary": "XT01 우회 경로 대가와 기록 보존을 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-T-XT02",
+      "title": "XT02 회랑 압력",
+      "house_ids": [],
+      "theater_ids": [
+        "XT02"
+      ],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "XT02 입구에서 검역·물자 큐가 막힌다"
+        },
+        {
+          "act": 2,
+          "summary": "XT02 연결 16국 대표가 공동 점검을 연다"
+        },
+        {
+          "act": 3,
+          "summary": "XT02 우회 경로 대가와 기록 보존을 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-T-XT03",
+      "title": "XT03 회랑 압력",
+      "house_ids": [],
+      "theater_ids": [
+        "XT03"
+      ],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "XT03 입구에서 검역·물자 큐가 막힌다"
+        },
+        {
+          "act": 2,
+          "summary": "XT03 연결 16국 대표가 공동 점검을 연다"
+        },
+        {
+          "act": 3,
+          "summary": "XT03 우회 경로 대가와 기록 보존을 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-T-XT04",
+      "title": "XT04 회랑 압력",
+      "house_ids": [],
+      "theater_ids": [
+        "XT04"
+      ],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "XT04 입구에서 검역·물자 큐가 막힌다"
+        },
+        {
+          "act": 2,
+          "summary": "XT04 연결 16국 대표가 공동 점검을 연다"
+        },
+        {
+          "act": 3,
+          "summary": "XT04 우회 경로 대가와 기록 보존을 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-T-XT05",
+      "title": "XT05 회랑 압력",
+      "house_ids": [],
+      "theater_ids": [
+        "XT05"
+      ],
+      "synthetic_classes": [],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "XT05 입구에서 검역·물자 큐가 막힌다"
+        },
+        {
+          "act": 2,
+          "summary": "XT05 연결 16국 대표가 공동 점검을 연다"
+        },
+        {
+          "act": 3,
+          "summary": "XT05 우회 경로 대가와 기록 보존을 남긴다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-S-H",
+      "title": "인간형 합성 보관 한계",
+      "house_ids": [],
+      "theater_ids": [],
+      "synthetic_classes": [
+        "H"
+      ],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "H급 배터리·기억 포크가 동시에 한계에 닿는다"
+        },
+        {
+          "act": 2,
+          "summary": "보관 가문과 담당 인간이 부분 재연결을 협상한다"
+        },
+        {
+          "act": 3,
+          "summary": "일탈 격리를 남기고 구역 권한만 복구한다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-S-F",
+      "title": "시설형 합성 보관 한계",
+      "house_ids": [],
+      "theater_ids": [],
+      "synthetic_classes": [
+        "F"
+      ],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "F급 배터리·기억 포크가 동시에 한계에 닿는다"
+        },
+        {
+          "act": 2,
+          "summary": "보관 가문과 담당 인간이 부분 재연결을 협상한다"
+        },
+        {
+          "act": 3,
+          "summary": "일탈 격리를 남기고 구역 권한만 복구한다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-S-V",
+      "title": "기동형 합성 보관 한계",
+      "house_ids": [],
+      "theater_ids": [],
+      "synthetic_classes": [
+        "V"
+      ],
+      "group_ids": [],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "V급 배터리·기억 포크가 동시에 한계에 닿는다"
+        },
+        {
+          "act": 2,
+          "summary": "보관 가문과 담당 인간이 부분 재연결을 협상한다"
+        },
+        {
+          "act": 3,
+          "summary": "일탈 격리를 남기고 구역 권한만 복구한다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-G-G01",
+      "title": "G01 생태 교섭",
+      "house_ids": [],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [
+        "G01"
+      ],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "G01 1단계 출몰이 인프라를 스친다"
+        },
+        {
+          "act": 2,
+          "summary": "G01 2단계 교란에서 자원 거래 창이 열린다"
+        },
+        {
+          "act": 3,
+          "summary": "G01 3단계 직전 공존 조건을 남기거나 봉쇄한다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-G-G02",
+      "title": "G02 생태 교섭",
+      "house_ids": [],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [
+        "G02"
+      ],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "G02 1단계 출몰이 인프라를 스친다"
+        },
+        {
+          "act": 2,
+          "summary": "G02 2단계 교란에서 자원 거래 창이 열린다"
+        },
+        {
+          "act": 3,
+          "summary": "G02 3단계 직전 공존 조건을 남기거나 봉쇄한다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-G-G03",
+      "title": "G03 생태 교섭",
+      "house_ids": [],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [
+        "G03"
+      ],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "G03 1단계 출몰이 인프라를 스친다"
+        },
+        {
+          "act": 2,
+          "summary": "G03 2단계 교란에서 자원 거래 창이 열린다"
+        },
+        {
+          "act": 3,
+          "summary": "G03 3단계 직전 공존 조건을 남기거나 봉쇄한다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-G-G04",
+      "title": "G04 생태 교섭",
+      "house_ids": [],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [
+        "G04"
+      ],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "G04 1단계 출몰이 인프라를 스친다"
+        },
+        {
+          "act": 2,
+          "summary": "G04 2단계 교란에서 자원 거래 창이 열린다"
+        },
+        {
+          "act": 3,
+          "summary": "G04 3단계 직전 공존 조건을 남기거나 봉쇄한다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-G-G05",
+      "title": "G05 생태 교섭",
+      "house_ids": [],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [
+        "G05"
+      ],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "G05 1단계 출몰이 인프라를 스친다"
+        },
+        {
+          "act": 2,
+          "summary": "G05 2단계 교란에서 자원 거래 창이 열린다"
+        },
+        {
+          "act": 3,
+          "summary": "G05 3단계 직전 공존 조건을 남기거나 봉쇄한다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-G-G06",
+      "title": "G06 생태 교섭",
+      "house_ids": [],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [
+        "G06"
+      ],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "G06 1단계 출몰이 인프라를 스친다"
+        },
+        {
+          "act": 2,
+          "summary": "G06 2단계 교란에서 자원 거래 창이 열린다"
+        },
+        {
+          "act": 3,
+          "summary": "G06 3단계 직전 공존 조건을 남기거나 봉쇄한다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-G-G07",
+      "title": "G07 생태 교섭",
+      "house_ids": [],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [
+        "G07"
+      ],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "G07 1단계 출몰이 인프라를 스친다"
+        },
+        {
+          "act": 2,
+          "summary": "G07 2단계 교란에서 자원 거래 창이 열린다"
+        },
+        {
+          "act": 3,
+          "summary": "G07 3단계 직전 공존 조건을 남기거나 봉쇄한다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-G-G08",
+      "title": "G08 생태 교섭",
+      "house_ids": [],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [
+        "G08"
+      ],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "G08 1단계 출몰이 인프라를 스친다"
+        },
+        {
+          "act": 2,
+          "summary": "G08 2단계 교란에서 자원 거래 창이 열린다"
+        },
+        {
+          "act": 3,
+          "summary": "G08 3단계 직전 공존 조건을 남기거나 봉쇄한다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-G-G09",
+      "title": "G09 생태 교섭",
+      "house_ids": [],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [
+        "G09"
+      ],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "G09 1단계 출몰이 인프라를 스친다"
+        },
+        {
+          "act": 2,
+          "summary": "G09 2단계 교란에서 자원 거래 창이 열린다"
+        },
+        {
+          "act": 3,
+          "summary": "G09 3단계 직전 공존 조건을 남기거나 봉쇄한다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-G-G10",
+      "title": "G10 생태 교섭",
+      "house_ids": [],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [
+        "G10"
+      ],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "G10 1단계 출몰이 인프라를 스친다"
+        },
+        {
+          "act": 2,
+          "summary": "G10 2단계 교란에서 자원 거래 창이 열린다"
+        },
+        {
+          "act": 3,
+          "summary": "G10 3단계 직전 공존 조건을 남기거나 봉쇄한다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-G-G11",
+      "title": "G11 생태 교섭",
+      "house_ids": [],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [
+        "G11"
+      ],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "G11 1단계 출몰이 인프라를 스친다"
+        },
+        {
+          "act": 2,
+          "summary": "G11 2단계 교란에서 자원 거래 창이 열린다"
+        },
+        {
+          "act": 3,
+          "summary": "G11 3단계 직전 공존 조건을 남기거나 봉쇄한다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-G-G12",
+      "title": "G12 생태 교섭",
+      "house_ids": [],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [
+        "G12"
+      ],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "G12 1단계 출몰이 인프라를 스친다"
+        },
+        {
+          "act": 2,
+          "summary": "G12 2단계 교란에서 자원 거래 창이 열린다"
+        },
+        {
+          "act": 3,
+          "summary": "G12 3단계 직전 공존 조건을 남기거나 봉쇄한다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-G-G13",
+      "title": "G13 생태 교섭",
+      "house_ids": [],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [
+        "G13"
+      ],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "G13 1단계 출몰이 인프라를 스친다"
+        },
+        {
+          "act": 2,
+          "summary": "G13 2단계 교란에서 자원 거래 창이 열린다"
+        },
+        {
+          "act": 3,
+          "summary": "G13 3단계 직전 공존 조건을 남기거나 봉쇄한다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-G-G14",
+      "title": "G14 생태 교섭",
+      "house_ids": [],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [
+        "G14"
+      ],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "G14 1단계 출몰이 인프라를 스친다"
+        },
+        {
+          "act": 2,
+          "summary": "G14 2단계 교란에서 자원 거래 창이 열린다"
+        },
+        {
+          "act": 3,
+          "summary": "G14 3단계 직전 공존 조건을 남기거나 봉쇄한다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-G-G15",
+      "title": "G15 생태 교섭",
+      "house_ids": [],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [
+        "G15"
+      ],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "G15 1단계 출몰이 인프라를 스친다"
+        },
+        {
+          "act": 2,
+          "summary": "G15 2단계 교란에서 자원 거래 창이 열린다"
+        },
+        {
+          "act": 3,
+          "summary": "G15 3단계 직전 공존 조건을 남기거나 봉쇄한다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-G-G16",
+      "title": "G16 생태 교섭",
+      "house_ids": [],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [
+        "G16"
+      ],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "G16 1단계 출몰이 인프라를 스친다"
+        },
+        {
+          "act": 2,
+          "summary": "G16 2단계 교란에서 자원 거래 창이 열린다"
+        },
+        {
+          "act": 3,
+          "summary": "G16 3단계 직전 공존 조건을 남기거나 봉쇄한다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-G-G17",
+      "title": "G17 생태 교섭",
+      "house_ids": [],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [
+        "G17"
+      ],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "G17 1단계 출몰이 인프라를 스친다"
+        },
+        {
+          "act": 2,
+          "summary": "G17 2단계 교란에서 자원 거래 창이 열린다"
+        },
+        {
+          "act": 3,
+          "summary": "G17 3단계 직전 공존 조건을 남기거나 봉쇄한다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-G-G18",
+      "title": "G18 생태 교섭",
+      "house_ids": [],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [
+        "G18"
+      ],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "G18 1단계 출몰이 인프라를 스친다"
+        },
+        {
+          "act": 2,
+          "summary": "G18 2단계 교란에서 자원 거래 창이 열린다"
+        },
+        {
+          "act": 3,
+          "summary": "G18 3단계 직전 공존 조건을 남기거나 봉쇄한다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-G-G19",
+      "title": "G19 생태 교섭",
+      "house_ids": [],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [
+        "G19"
+      ],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "G19 1단계 출몰이 인프라를 스친다"
+        },
+        {
+          "act": 2,
+          "summary": "G19 2단계 교란에서 자원 거래 창이 열린다"
+        },
+        {
+          "act": 3,
+          "summary": "G19 3단계 직전 공존 조건을 남기거나 봉쇄한다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-G-G20",
+      "title": "G20 생태 교섭",
+      "house_ids": [],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [
+        "G20"
+      ],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "G20 1단계 출몰이 인프라를 스친다"
+        },
+        {
+          "act": 2,
+          "summary": "G20 2단계 교란에서 자원 거래 창이 열린다"
+        },
+        {
+          "act": 3,
+          "summary": "G20 3단계 직전 공존 조건을 남기거나 봉쇄한다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-G-G21",
+      "title": "G21 생태 교섭",
+      "house_ids": [],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [
+        "G21"
+      ],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "G21 1단계 출몰이 인프라를 스친다"
+        },
+        {
+          "act": 2,
+          "summary": "G21 2단계 교란에서 자원 거래 창이 열린다"
+        },
+        {
+          "act": 3,
+          "summary": "G21 3단계 직전 공존 조건을 남기거나 봉쇄한다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-G-G22",
+      "title": "G22 생태 교섭",
+      "house_ids": [],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [
+        "G22"
+      ],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "G22 1단계 출몰이 인프라를 스친다"
+        },
+        {
+          "act": 2,
+          "summary": "G22 2단계 교란에서 자원 거래 창이 열린다"
+        },
+        {
+          "act": 3,
+          "summary": "G22 3단계 직전 공존 조건을 남기거나 봉쇄한다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-G-G23",
+      "title": "G23 생태 교섭",
+      "house_ids": [],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [
+        "G23"
+      ],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "G23 1단계 출몰이 인프라를 스친다"
+        },
+        {
+          "act": 2,
+          "summary": "G23 2단계 교란에서 자원 거래 창이 열린다"
+        },
+        {
+          "act": 3,
+          "summary": "G23 3단계 직전 공존 조건을 남기거나 봉쇄한다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    },
+    {
+      "id": "ARC-G-G24",
+      "title": "G24 생태 교섭",
+      "house_ids": [],
+      "theater_ids": [],
+      "synthetic_classes": [],
+      "group_ids": [
+        "G24"
+      ],
+      "acts": [
+        {
+          "act": 1,
+          "summary": "G24 1단계 출몰이 인프라를 스친다"
+        },
+        {
+          "act": 2,
+          "summary": "G24 2단계 교란에서 자원 거래 창이 열린다"
+        },
+        {
+          "act": 3,
+          "summary": "G24 3단계 직전 공존 조건을 남기거나 봉쇄한다"
+        }
+      ],
+      "owner": "wiki-world",
+      "source_kind": "original-fiction",
+      "source_anchors": [
+        "docs/game-logic/World-Narrative-Atlas.md"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "HC01",
+      "kind": "operates_in",
+      "to": "S01",
+      "reason": "가문-국가 운영 연결"
+    },
+    {
+      "from": "HC02",
+      "kind": "operates_in",
+      "to": "S02",
+      "reason": "가문-국가 운영 연결"
+    },
+    {
+      "from": "HC03",
+      "kind": "operates_in",
+      "to": "S03",
+      "reason": "가문-국가 운영 연결"
+    },
+    {
+      "from": "HC04",
+      "kind": "operates_in",
+      "to": "S04",
+      "reason": "가문-국가 운영 연결"
+    },
+    {
+      "from": "HC05",
+      "kind": "operates_in",
+      "to": "S05",
+      "reason": "가문-국가 운영 연결"
+    },
+    {
+      "from": "HC06",
+      "kind": "operates_in",
+      "to": "S06",
+      "reason": "가문-국가 운영 연결"
+    },
+    {
+      "from": "HC07",
+      "kind": "operates_in",
+      "to": "S07",
+      "reason": "가문-국가 운영 연결"
+    },
+    {
+      "from": "HC08",
+      "kind": "operates_in",
+      "to": "S08",
+      "reason": "가문-국가 운영 연결"
+    },
+    {
+      "from": "HC09",
+      "kind": "operates_in",
+      "to": "S09",
+      "reason": "가문-국가 운영 연결"
+    },
+    {
+      "from": "HC10",
+      "kind": "operates_in",
+      "to": "S10",
+      "reason": "가문-국가 운영 연결"
+    },
+    {
+      "from": "HC11",
+      "kind": "operates_in",
+      "to": "S11",
+      "reason": "가문-국가 운영 연결"
+    },
+    {
+      "from": "HC12",
+      "kind": "operates_in",
+      "to": "S12",
+      "reason": "가문-국가 운영 연결"
+    },
+    {
+      "from": "HC13",
+      "kind": "operates_in",
+      "to": "S13",
+      "reason": "가문-국가 운영 연결"
+    },
+    {
+      "from": "HC14",
+      "kind": "operates_in",
+      "to": "S14",
+      "reason": "가문-국가 운영 연결"
+    },
+    {
+      "from": "HP01",
+      "kind": "operates_in",
+      "to": "S15",
+      "reason": "가문-국가 운영 연결"
+    },
+    {
+      "from": "HP02",
+      "kind": "operates_in",
+      "to": "S16",
+      "reason": "가문-국가 운영 연결"
+    },
+    {
+      "from": "XT01",
+      "kind": "pressures",
+      "to": "S01",
+      "reason": "전구-국가 압력"
+    },
+    {
+      "from": "XT02",
+      "kind": "pressures",
+      "to": "S04",
+      "reason": "전구-국가 압력"
+    },
+    {
+      "from": "XT03",
+      "kind": "pressures",
+      "to": "S07",
+      "reason": "전구-국가 압력"
+    },
+    {
+      "from": "XT04",
+      "kind": "pressures",
+      "to": "S10",
+      "reason": "전구-국가 압력"
+    },
+    {
+      "from": "XT05",
+      "kind": "pressures",
+      "to": "S13",
+      "reason": "전구-국가 압력"
+    },
+    {
+      "from": "H01",
+      "kind": "custodied_by",
+      "to": "K001",
+      "reason": "합성-인간 보관"
+    },
+    {
+      "from": "H02",
+      "kind": "custodied_by",
+      "to": "K029",
+      "reason": "합성-인간 보관"
+    },
+    {
+      "from": "H03",
+      "kind": "custodied_by",
+      "to": "K057",
+      "reason": "합성-인간 보관"
+    },
+    {
+      "from": "H04",
+      "kind": "custodied_by",
+      "to": "K085",
+      "reason": "합성-인간 보관"
+    },
+    {
+      "from": "H05",
+      "kind": "custodied_by",
+      "to": "K114",
+      "reason": "합성-인간 보관"
+    },
+    {
+      "from": "H06",
+      "kind": "custodied_by",
+      "to": "K142",
+      "reason": "합성-인간 보관"
+    },
+    {
+      "from": "H07",
+      "kind": "custodied_by",
+      "to": "K166",
+      "reason": "합성-인간 보관"
+    },
+    {
+      "from": "H08",
+      "kind": "custodied_by",
+      "to": "K190",
+      "reason": "합성-인간 보관"
+    },
+    {
+      "from": "H09",
+      "kind": "custodied_by",
+      "to": "K215",
+      "reason": "합성-인간 보관"
+    },
+    {
+      "from": "H10",
+      "kind": "custodied_by",
+      "to": "K240",
+      "reason": "합성-인간 보관"
+    },
+    {
+      "from": "H11",
+      "kind": "custodied_by",
+      "to": "K265",
+      "reason": "합성-인간 보관"
+    },
+    {
+      "from": "H12",
+      "kind": "custodied_by",
+      "to": "K290",
+      "reason": "합성-인간 보관"
+    },
+    {
+      "from": "H13",
+      "kind": "custodied_by",
+      "to": "K315",
+      "reason": "합성-인간 보관"
+    },
+    {
+      "from": "H14",
+      "kind": "custodied_by",
+      "to": "K340",
+      "reason": "합성-인간 보관"
+    },
+    {
+      "from": "H15",
+      "kind": "custodied_by",
+      "to": "K365",
+      "reason": "합성-인간 보관"
+    },
+    {
+      "from": "H16",
+      "kind": "custodied_by",
+      "to": "K389",
+      "reason": "합성-인간 보관"
+    }
+  ],
   "change_ledger": [
     {
       "id": "CL-0004",
@@ -15448,6 +17303,11 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     {
       "id": "CL-0008",
       "summary": "적대 생태 24군과 몬스터 배치 M001-M039를 잠근다",
+      "owner": "wiki-world"
+    },
+    {
+      "id": "CL-0009",
+      "summary": "가문·전구·합성·생태 서사선 씨앗을 등록한다",
       "owner": "wiki-world"
     }
   ]

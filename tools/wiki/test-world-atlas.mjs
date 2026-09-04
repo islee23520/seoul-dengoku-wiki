@@ -57,6 +57,11 @@ test('Given current repository When monster-manifest stage Then 24 groups and 38
   assert.equal(result.code, 0, result.output);
 });
 
+test('Given current repository When seeds stage Then arcs cover houses theaters classes groups', () => {
+  const result = runVerifier(['--docs', liveDocs, '--stage', 'seeds', '--atlas', atlasPath]);
+  assert.equal(result.code, 0, result.output);
+});
+
 test('Given a company mark in theater prose When theaters stage Then E_CURRENT_ACTOR_CLAIM', async () => {
   const dir = await mkdtemp(join(tmpdir(), 'atlas-theater-token-'));
   fixtures.push(dir);
