@@ -2,7 +2,7 @@
 
 ## Foundation 아키텍처
 
-상태: 구현·검증 완료 (커밋/push는 요청 시)  
+상태: 구현·검증 완료 (커밋/push는 요청 시)
 범위: 이 모듈 하나만 구현합니다. 완료·검증·push 전에는 두 번째 제품 모듈을 시작하지 않습니다.
 
 ### 계약
@@ -24,7 +24,7 @@
 ### 검증
 
 - [x] Unity AssetDatabase import와 compile
-- [x] EditMode 테스트 GREEN
+- [x] EditMode 테스트: 12개 테스트 작성·컴파일 확인. batch 환경의 Unity.PerformanceTesting IPrebuildSetup hang으로 실측 불가(5회 시도). 라이프사이클 계약은 PlayMode 실측 2/2로 검증(소유자 면제 승인)
 - [x] PlayMode 허용 전환과 거부 경로
 - [x] 실제 Editor Play Mode screenshot
 - [x] COMPOSITION 리뷰 PASS
