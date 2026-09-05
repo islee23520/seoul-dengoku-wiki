@@ -1,9 +1,10 @@
-import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
-import { dirname, join, resolve } from 'node:path';
+import { mkdir, readdir, readFile, rename, writeFile } from 'node:fs/promises';
+import { basename, dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { extractAtlasJson, sha256Text } from './world-atlas-parse.mjs';
 import { projectionsFromAtlas } from './world-atlas-render.mjs';
+import { ISOMETRIC_DIAGRAM_ASSETS } from './world-atlas-schema.mjs';
 
 function parseArgs(argv) {
   const opts = { atlas: null, out: null, check: false };
@@ -24,6 +25,26 @@ function parseArgs(argv) {
   return opts;
 }
 
+const UNEXPECTED_PROJECTION = /^(Story-Batch-B\d{3}|Monster-Batch-M\d{3}|Hostile-Group-G\d{2})\.md$/;
+
+export function projectionDestination(outDir, name) {
+  if (ISOMETRIC_DIAGRAM_ASSETS.includes(name) && basename(outDir) === 'game-logic') {
+    return join(dirname(outDir), 'assets', 'wiki', name);
+  }
+  return join(outDir, name);
+}
+
+export async function unexpectedProjectionFiles(outDir, files) {
+  let names = [];
+  try {
+    names = await readdir(outDir);
+  } catch (err) {
+    if (err && err.code === 'ENOENT') return [];
+    throw err;
+  }
+  return names.filter((name) => UNEXPECTED_PROJECTION.test(name) && files[name] === undefined).sort();
+}
+
 export async function materializeWorldAtlas({ atlasPath, outDir, check = false }) {
   const markdown = await readFile(atlasPath, 'utf8');
   const parsed = extractAtlasJson(markdown);
@@ -37,7 +58,7 @@ export async function materializeWorldAtlas({ atlasPath, outDir, check = false }
       hashes[name] = sha256Text(body);
       let existing;
       try {
-        existing = await readFile(join(outDir, name), 'utf8');
+        existing = await readFile(projectionDestination(outDir, name), 'utf8');
       } catch (err) {
         if (err && err.code === 'ENOENT') {
           mismatches.push(`missing ${name}`);
@@ -46,6 +67,9 @@ export async function materializeWorldAtlas({ atlasPath, outDir, check = false }
         throw err;
       }
       if (existing !== body) mismatches.push(`stale ${name}`);
+    }
+    for (const name of await unexpectedProjectionFiles(outDir, files)) {
+      mismatches.push(`unexpected ${name}`);
     }
     if (mismatches.length > 0) {
       const error = new Error(mismatches.join('\n'));
@@ -57,8 +81,9 @@ export async function materializeWorldAtlas({ atlasPath, outDir, check = false }
   await mkdir(outDir, { recursive: true });
   for (const [name, body] of Object.entries(files)) {
     hashes[name] = sha256Text(body);
-    const dest = join(outDir, name);
+    const dest = projectionDestination(outDir, name);
     const tmp = `${dest}.tmp`;
+    await mkdir(dirname(dest), { recursive: true });
     await writeFile(tmp, body);
     await rename(tmp, dest);
   }
