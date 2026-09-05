@@ -2,6 +2,59 @@
 
 붕괴 이후 서울 16국의 이름 있는 인물 412명을 국가·직위·단계·관계 수로 묶는다.
 
+## 게시 문서와 조각 현황
+
+조각 완료는 세계관 완료나 Wiki 게시 완료를 뜻하지 않는다. 현재 게시된 인물 원문은 아래 국가별 명부와 [인물 관계](Cast-Relations.md), [주요 인물](Core-Characters.md)에서 확인한다.
+
+아래는 승인된 허브 기록 `fe2d8aa`·`f7521c9`의 39개 항목이다. 게시 기준선 `1872919`에는 이 본문 36개와 그림 3개가 없으므로 모두 **미게시·대기**로 남긴다. 경로와 SHA는 보관 위치를 추적하는 기록이며, 게시 링크나 통합 승인이 아니다. 별도 브랜치의 본문·그림은 이번 인덱스에 포함하지 않는다.
+
+원본 허브에서 B001에 사용한 `confirmed-landed`는 그 브랜치 안의 착지를 뜻하며 main 게시를 뜻하지 않는다. G07–G24는 기록된 SHA에 해당 파일이 없어 완료 확인을 철회한다. 나머지 항목의 파일 존재 확인도 내용 검수나 게시 승인을 뜻하지 않는다.
+
+| 항목 | 게시 상태 | 기록된 경로 · SHA · 브랜치 | 조각 확인 / 남은 일 |
+| --- | --- | --- | --- |
+| B001 | 미게시·대기 | `docs/game-logic/Story-Batch-B001.md` @ `8dd66cc72f11fc2d93b062ce33af6a491a84a7ab` (`docs/cast-backstories-houses-physical-ai`) | 기록된 파일 존재; 게시 승인·통합 미완 |
+| B002 | 미게시·대기 | `docs/game-logic/Story-Batch-B002.md` @ `b6397adb27eabe3503af3011ffda624bc884b33e` (`docs/cast-b002`) | 기록된 파일 존재; 게시 승인·통합 미완 |
+| B003 | 미게시·대기 | `docs/game-logic/Story-Batch-B003.md` @ `23240675edcb508f327ef903afcb4a56a95d38d0` (`docs/cast-b003`) | 기록된 파일 존재; 게시 승인·통합 미완 |
+| B004 | 미게시·대기 | `docs/game-logic/Story-Batch-B004.md` @ `c3f33a7839748ee1408d8113278f7522b5757441` (`docs/cast-b004`) | 기록된 파일 존재; 게시 승인·통합 미완 |
+| B005 | 미게시·대기 | `docs/game-logic/Story-Batch-B005.md` @ `406d5e8922450519d847f856f667d2226bb8139f` (`docs/cast-b005`) | 기록된 파일 존재; 게시 승인·통합 미완 |
+| B006 | 미게시·대기 | `docs/game-logic/Story-Batch-B006.md` @ `2da40af520c5498b3f8af910b9f2b44712cade97` (`docs/cast-b006`) | 기록된 파일 존재; 게시 승인·통합 미완 |
+| B007 | 미게시·대기 | `docs/game-logic/Story-Batch-B007.md` @ `fb447e42d0010379bbb20d5ed71b85c5281cc906` (`docs/cast-b007`) | 기록된 파일 존재; 게시 승인·통합 미완 |
+| B008 | 미게시·대기 | `docs/game-logic/Story-Batch-B008.md` @ `8e1a2d02c450e26c52463e7e08e0b96fb95e5aaa` (`docs/cast-b008`) | 기록된 파일 존재; 게시 승인·통합 미완 |
+| B009 | 미게시·대기 | `docs/game-logic/Story-Batch-B009.md` @ `f9e9a9f74736e3181987307b41482b68aee54032` (`docs/cast-b009`) | 기록된 파일 존재; 게시 승인·통합 미완 |
+| B010 | 미게시·대기 | `docs/game-logic/Story-Batch-B010.md` @ `702c75668c10d26cf05f3d679003239450af3f71` (`docs/cast-b010`) | 기록된 파일 존재; 게시 승인·통합 미완 |
+| B011 | 미게시·대기 | `docs/game-logic/Story-Batch-B011.md` @ `1feb1084269ce3882a220959eea61b10eaf89ca9` (`docs/cast-b011`) | 기록된 파일 존재; 게시 승인·통합 미완 |
+| B012 | 미게시·대기 | `docs/game-logic/Story-Batch-B012.md` @ `6e6f958e191969c4e4d2ff5427820249ef73e484` (`docs/cast-b012`) | 기록된 파일 존재; 게시 승인·통합 미완 |
+| G01 | 미게시·대기 | `docs/game-logic/Hostile-Group-G01.md` @ `a683b613d81d9c5a3098e01b26a9316e1c774cc0` (`docs/cast-g01-g06`) | 기록된 파일 존재; 게시 승인·통합 미완 |
+| G02 | 미게시·대기 | `docs/game-logic/Hostile-Group-G02.md` @ `a683b613d81d9c5a3098e01b26a9316e1c774cc0` (`docs/cast-g01-g06`) | 기록된 파일 존재; 게시 승인·통합 미완 |
+| G03 | 미게시·대기 | `docs/game-logic/Hostile-Group-G03.md` @ `a683b613d81d9c5a3098e01b26a9316e1c774cc0` (`docs/cast-g01-g06`) | 기록된 파일 존재; 게시 승인·통합 미완 |
+| G04 | 미게시·대기 | `docs/game-logic/Hostile-Group-G04.md` @ `a683b613d81d9c5a3098e01b26a9316e1c774cc0` (`docs/cast-g01-g06`) | 기록된 파일 존재; 게시 승인·통합 미완 |
+| G05 | 미게시·대기 | `docs/game-logic/Hostile-Group-G05.md` @ `a683b613d81d9c5a3098e01b26a9316e1c774cc0` (`docs/cast-g01-g06`) | 기록된 파일 존재; 게시 승인·통합 미완 |
+| G06 | 미게시·대기 | `docs/game-logic/Hostile-Group-G06.md` @ `a683b613d81d9c5a3098e01b26a9316e1c774cc0` (`docs/cast-g01-g06`) | 기록된 파일 존재; 게시 승인·통합 미완 |
+| G07 | 미게시·대기 | `docs/game-logic/Hostile-Group-G07.md` @ `2806eb8e803ad572b0547f9011a62d941fa94120` (`docs/cast-g07-g12`) | 기록된 SHA에 파일 없음; 조각 확인·게시 미완 |
+| G08 | 미게시·대기 | `docs/game-logic/Hostile-Group-G08.md` @ `2806eb8e803ad572b0547f9011a62d941fa94120` (`docs/cast-g07-g12`) | 기록된 SHA에 파일 없음; 조각 확인·게시 미완 |
+| G09 | 미게시·대기 | `docs/game-logic/Hostile-Group-G09.md` @ `2806eb8e803ad572b0547f9011a62d941fa94120` (`docs/cast-g07-g12`) | 기록된 SHA에 파일 없음; 조각 확인·게시 미완 |
+| G10 | 미게시·대기 | `docs/game-logic/Hostile-Group-G10.md` @ `2806eb8e803ad572b0547f9011a62d941fa94120` (`docs/cast-g07-g12`) | 기록된 SHA에 파일 없음; 조각 확인·게시 미완 |
+| G11 | 미게시·대기 | `docs/game-logic/Hostile-Group-G11.md` @ `2806eb8e803ad572b0547f9011a62d941fa94120` (`docs/cast-g07-g12`) | 기록된 SHA에 파일 없음; 조각 확인·게시 미완 |
+| G12 | 미게시·대기 | `docs/game-logic/Hostile-Group-G12.md` @ `2806eb8e803ad572b0547f9011a62d941fa94120` (`docs/cast-g07-g12`) | 기록된 SHA에 파일 없음; 조각 확인·게시 미완 |
+| G13 | 미게시·대기 | `docs/game-logic/Hostile-Group-G13.md` @ `fe644da70821e0205449a7d0530acc9ce7887cdd` (`docs/cast-g13-g18`) | 기록된 SHA에 파일 없음; 조각 확인·게시 미완 |
+| G14 | 미게시·대기 | `docs/game-logic/Hostile-Group-G14.md` @ `fe644da70821e0205449a7d0530acc9ce7887cdd` (`docs/cast-g13-g18`) | 기록된 SHA에 파일 없음; 조각 확인·게시 미완 |
+| G15 | 미게시·대기 | `docs/game-logic/Hostile-Group-G15.md` @ `fe644da70821e0205449a7d0530acc9ce7887cdd` (`docs/cast-g13-g18`) | 기록된 SHA에 파일 없음; 조각 확인·게시 미완 |
+| G16 | 미게시·대기 | `docs/game-logic/Hostile-Group-G16.md` @ `fe644da70821e0205449a7d0530acc9ce7887cdd` (`docs/cast-g13-g18`) | 기록된 SHA에 파일 없음; 조각 확인·게시 미완 |
+| G17 | 미게시·대기 | `docs/game-logic/Hostile-Group-G17.md` @ `fe644da70821e0205449a7d0530acc9ce7887cdd` (`docs/cast-g13-g18`) | 기록된 SHA에 파일 없음; 조각 확인·게시 미완 |
+| G18 | 미게시·대기 | `docs/game-logic/Hostile-Group-G18.md` @ `fe644da70821e0205449a7d0530acc9ce7887cdd` (`docs/cast-g13-g18`) | 기록된 SHA에 파일 없음; 조각 확인·게시 미완 |
+| G19 | 미게시·대기 | `docs/game-logic/Hostile-Group-G19.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`) | 기록된 SHA에 파일 없음; 조각 확인·게시 미완 |
+| G20 | 미게시·대기 | `docs/game-logic/Hostile-Group-G20.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`) | 기록된 SHA에 파일 없음; 조각 확인·게시 미완 |
+| G21 | 미게시·대기 | `docs/game-logic/Hostile-Group-G21.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`) | 기록된 SHA에 파일 없음; 조각 확인·게시 미완 |
+| G22 | 미게시·대기 | `docs/game-logic/Hostile-Group-G22.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`) | 기록된 SHA에 파일 없음; 조각 확인·게시 미완 |
+| G23 | 미게시·대기 | `docs/game-logic/Hostile-Group-G23.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`) | 기록된 SHA에 파일 없음; 조각 확인·게시 미완 |
+| G24 | 미게시·대기 | `docs/game-logic/Hostile-Group-G24.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`) | 기록된 SHA에 파일 없음; 조각 확인·게시 미완 |
+| ISO-world-atlas | 미게시·대기 | `docs/assets/wiki/world-atlas-isometric.svg` @ `7b4e27b91510c024e936ed7cc4322714ff280313` (`docs/cast-iso-atlas-v2`) | 기록된 파일 존재; 게시 승인·통합 미완 |
+| ISO-house-influence | 미게시·대기 | `docs/assets/wiki/house-influence-isometric.svg` @ `7b4e27b91510c024e936ed7cc4322714ff280313` (`docs/cast-iso-atlas-v2`) | 기록된 파일 존재; 게시 승인·통합 미완 |
+| ISO-hostile-ecology | 미게시·대기 | `docs/assets/wiki/hostile-ecology-isometric.svg` @ `7b4e27b91510c024e936ed7cc4322714ff280313` (`docs/cast-iso-atlas-v2`) | 기록된 파일 존재; 게시 승인·통합 미완 |
+
+[국가 01 명부](Cast-State-01.md) · [국가 02 명부](Cast-State-02.md) · [국가 03 명부](Cast-State-03.md) · [국가 04 명부](Cast-State-04.md) · [국가 05 명부](Cast-State-05.md) · [국가 06 명부](Cast-State-06.md) · [국가 07 명부](Cast-State-07.md) · [국가 08 명부](Cast-State-08.md) · [국가 09 명부](Cast-State-09.md) · [국가 10 명부](Cast-State-10.md) · [국가 11 명부](Cast-State-11.md) · [국가 12 명부](Cast-State-12.md) · [국가 13 명부](Cast-State-13.md) · [국가 14 명부](Cast-State-14.md) · [국가 15 명부](Cast-State-15.md) · [국가 16 명부](Cast-State-16.md)
+
+
 ## 국가 01 여의신정수문정부
 
 | 이름 | 직위 | 단계 | 관계 수 |
