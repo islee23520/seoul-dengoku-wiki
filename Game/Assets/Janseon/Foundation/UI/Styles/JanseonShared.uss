@@ -1,4 +1,17 @@
 /* Design.md tokens — shared primitives. Dual-resolution via jk-res-720 / jk-res-1080. */
+.jk-slot-status {
+    font-size: var(--type-caption);
+    color: var(--text-secondary);
+    margin-right: var(--space-2);
+    padding: var(--space-1);
+}
+
+.jk-slot-blocked {
+    background-color: var(--bg-panel);
+    border-color: var(--stroke-quiet);
+    border-width: 1px;
+}
+
 :root {
     --bg-void: rgb(11, 17, 28);
     --bg-panel: rgb(20, 28, 42);

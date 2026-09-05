@@ -382,3 +382,16 @@ for (const indirect of [false, true]) {
     assert.ok(audit.violations.some(v => v.code === 'runtime_references_quarantine_asset' && v.target === candidate));
   });
 }
+
+test('runtime slot: catalog cannot claim a blocked slot is bound', t => {
+  const { root, put } = slotFixture(t);
+  put(slotContract.bom_path, JSON.stringify({ schema_version: 1, assets: [] }));
+  const guid = 'abcdef1234567890abcdef1234567890';
+  put(slotContract.catalog_path, 'entries:\n  - slot: title-art\n    bound: 1\n    sourceBindingHash: \n    files: []\n');
+  put(slotContract.catalog_path + '.meta', `guid: ${guid}\n`);
+  const scene = 'Game/Assets/Scenes/MainTitle.unity';
+  put(scene, readFileSync(join(root, scene), 'utf8') + `\nslot: {fileID: 11400000, guid: ${guid}, type: 2}\n`);
+  const audit = auditRuntimeProvenance(root);
+  assert.equal(audit.ok, false);
+  assert.ok(audit.violations.some(v => v.code === 'catalog_slot_unprovenanced'));
+});

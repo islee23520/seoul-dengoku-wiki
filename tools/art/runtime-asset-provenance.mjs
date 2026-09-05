@@ -85,6 +85,8 @@ export function evaluatePromotedAsset(asset, options = {}) {
   const ok = errors.length === 0;
   return { ok, class: ok ? CLASS.A_VALID_PROMOTED : CLASS.E_UNKNOWN, errors,
     asset_id: asset.asset_id ?? null, runtime_slot: asset.runtime_slot ?? null,
+    source_binding_hash: asset.source_binding?.sha256 ?? null,
+    slot_files: asset.runtime_slot_files ?? null,
     generation_backend: asset.generation_backend ?? null,
     paths: paths.map(([p]) => p.startsWith('Assets/') ? 'Game/' + p : p) };
 }
@@ -298,6 +300,7 @@ export function auditRuntimeProvenance(repoRoot = defaultRepoRoot, options = {})
     `${CODE_NATIVE_UI_ROOT}/Styles/JanseonShared.uss`,
     `${CODE_NATIVE_UI_ROOT}/PanelSettings.asset`,
   ];
+  if (existsSync(join(repoRoot, runtimeSlotContract.catalog_path))) scanTargets.push(runtimeSlotContract.catalog_path);
 
   for (const rel of scanTargets) {
     const abs = join(repoRoot, rel);
@@ -308,6 +311,21 @@ export function auditRuntimeProvenance(repoRoot = defaultRepoRoot, options = {})
     }
 
     const text = readFileSync(abs, 'utf8');
+    if (rel === runtimeSlotContract.catalog_path) {
+      for (const match of text.matchAll(/^\s*- slot: ([^\r\n]+)\r?\n([\s\S]*?)(?=^\s*- slot:|$(?![\s\S]))/gm)) {
+        const slot = match[1].trim();
+        const body = match[2];
+        if (!/^\s*bound: 1\s*$/m.test(body)) continue;
+        const row = bomAssets.find(b => b.ok && b.runtime_slot === slot);
+        const bindingHash = /^\s*sourceBindingHash: (\S+)\s*$/m.exec(body)?.[1];
+        const refs = [...body.matchAll(/^\s*- key: ([^\r\n]+)\r?\n\s*asset: \{[^}]*guid: ([a-f0-9]{32})[^}]*\}/gm)];
+        if (!row || row.source_binding_hash !== bindingHash
+          || refs.length !== Object.keys(row.slot_files ?? {}).length
+          || !refs.every(r => row.slot_files[r[1].trim()] === guidMap.get(r[2]))) {
+          violations.push({ code: 'catalog_slot_unprovenanced', path: rel, slot });
+        }
+      }
+    }
     const isUiSource = rel.endsWith('.uxml') || rel.endsWith('.uss');
     classifications.push({
       slot: rel,

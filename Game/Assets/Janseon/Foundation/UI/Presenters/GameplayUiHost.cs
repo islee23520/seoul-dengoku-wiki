@@ -39,6 +39,8 @@ namespace Janseon.Foundation.UI
         public GameplayPresenter Presenter => presenter;
         public IPocCoreLoopSession CoreLoop { get; private set; }
 
+        [Inject] RuntimeSlotView slotView;
+
         /// <summary>Attached by scoped <see cref="PocCoreLoopController"/> on start.</summary>
         public void AttachLoop(IPocCoreLoopSession session)
         {
@@ -118,6 +120,7 @@ namespace Janseon.Foundation.UI
             }
 
             screenRoot = UiResolutionClass.ApplyFromPanel(root, UiElementNames.GameplayRoot, panelSettings);
+            slotView.BindGameplay(screenRoot);
             if (stationCamera != null)
             {
                 stationTexture = new RenderTexture(640, 360, 24);
@@ -150,6 +153,7 @@ namespace Janseon.Foundation.UI
             }
 
             presenter.ApplySnapshot(GameplayUiSnapshot.FromCampaign(campaign, battle));
+            slotView.ApplyBattle(battle);
         }
 
         void OnGeometryChanged(GeometryChangedEvent _)
