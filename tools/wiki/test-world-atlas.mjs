@@ -161,6 +161,33 @@ test('Given extra M999 B099 G99 files When materializer --check Then nonzero nam
   assert.equal(ok.hashes['Monster-Batch-M999.md'], undefined);
 });
 
+test('Given copied confirmed Monster-Batch-M001 When materializer --check Then it is not unexpected', async () => {
+  const dir = await mkdtemp(join(tmpdir(), 'atlas-confirmed-monster-'));
+  fixtures.push(dir);
+  await materializeWorldAtlas({ atlasPath, outDir: dir, check: false });
+  await writeFile(join(dir, 'Monster-Batch-M001.md'), '# copied confirmed incomplete candidate\n');
+  const ok = await materializeWorldAtlas({ atlasPath, outDir: dir, check: true });
+  assert.ok(ok.hashes['Operating-Houses.md']);
+  assert.equal(ok.hashes['Monster-Batch-M001.md'], undefined);
+});
+
+test('Given live docs When materializer --check Then confirmed monster copies are not unexpected', async () => {
+  try {
+    const ok = await materializeWorldAtlas({
+      atlasPath,
+      outDir: liveDocs,
+      check: true,
+    });
+    assert.ok(ok.hashes['Operating-Houses.md']);
+    assert.equal(ok.hashes['Monster-Batch-M001.md'], undefined);
+  } catch (err) {
+    const message = String(err?.message ?? err);
+    assert.doesNotMatch(message, /unexpected Monster-Batch-M001\.md/);
+    assert.doesNotMatch(message, /unexpected Monster-Batch-M039\.md/);
+    throw err;
+  }
+});
+
 test('Given canonical G19 and G24 records When projecting atlas Then group pages are emitted', () => {
   const canonical = (id, name) => ({
     id,
