@@ -2,6 +2,8 @@ using System;
 using System.Globalization;
 using Janseon.Core;
 using Janseon.Foundation.Composition;
+using Janseon.Foundation.Presentation;
+using UnityEngine;
 using VContainer.Unity;
 
 namespace Janseon.Foundation.UI
@@ -27,6 +29,7 @@ namespace Janseon.Foundation.UI
         int commandSeq;
         bool wired;
         bool disposed;
+        PlaceholderVoxelWorld voxelWorld;
 
         public PocCoreLoopController(GameplayPresenter presenter, GameplayUiHost host)
         {
@@ -64,6 +67,7 @@ namespace Janseon.Foundation.UI
 
             host.AttachLoop(this);
             WirePresenter();
+            EnsureVoxelWorld();
             BeginNewRun(DefaultSeed, DefaultCampaignId);
             IsReady = true;
         }
@@ -77,6 +81,11 @@ namespace Janseon.Foundation.UI
 
             disposed = true;
             UnwirePresenter();
+            if (voxelWorld != null)
+            {
+                UnityEngine.Object.Destroy(voxelWorld.gameObject);
+                voxelWorld = null;
+            }
             IsReady = false;
         }
 
@@ -94,6 +103,7 @@ namespace Janseon.Foundation.UI
             LastClickedAction = string.Empty;
             commandSeq = 0;
             campaign = CampaignApi.Start(seed, StationId.Yeongdeungpo, campaignId);
+            voxelWorld?.SyncActor(campaign.Node);
             Publish();
         }
 
@@ -383,7 +393,22 @@ namespace Janseon.Foundation.UI
         void Publish()
         {
             host.ApplyCampaign(campaign, battle);
+            if (campaign != null)
+            {
+                voxelWorld?.SyncActor(campaign.Node);
+            }
             StateChanged?.Invoke();
+        }
+
+        void EnsureVoxelWorld()
+        {
+            if (voxelWorld != null)
+            {
+                return;
+            }
+
+            Camera camera = Camera.main;
+            voxelWorld = PlaceholderVoxelWorld.Create(null, camera);
         }
 
         CommandId NextCommandId(string kind)
