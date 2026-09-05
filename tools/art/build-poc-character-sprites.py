@@ -22,6 +22,17 @@ ACTIONS = {
     "hit": 3,
     "down": 4,
 }
+EXPLORER_ASSET_ID = "poc-explorer"
+EXPLORER_PILOT_FRAMES = (
+    {"role": "idle-N", "facing": "N", "action": "idle", "frame": 0},
+    {"role": "idle-E", "facing": "E", "action": "idle", "frame": 0},
+    {"role": "idle-S", "facing": "S", "action": "idle", "frame": 0},
+    {"role": "idle-W", "facing": "W", "action": "idle", "frame": 0},
+    {"role": "attack-windup", "facing": "S", "action": "attack", "frame": 2},
+    {"role": "attack-contact", "facing": "S", "action": "attack", "frame": 3},
+    {"role": "hit", "facing": "S", "action": "hit", "frame": 1},
+    {"role": "down", "facing": "S", "action": "down", "frame": 3},
+)
 HEAD_H = 36
 BODY_H = 90
 FEET_Y = 117
@@ -302,6 +313,9 @@ def _draw_neck(
     neck: int,
 ) -> None:
     color = pal["coat"] if character["asset_id"] == "poc-patrol" else pal["skin"]
+    if facing == "N":
+        rect(draw, cx - 6, neck, cx + 5, neck + 3, color)
+        return
     rect(draw, cx - 6, neck - 2, cx + 5, neck + 3, color)
 
 
@@ -380,10 +394,14 @@ def _draw_torso(
             right_arm_y1 = arm_y0 + 16 - int(12 * attack) - int(8 * arm)
             left_x = max(4, cx - 18 - int(6 * max(arm, 0)))
             right_x = min(86, cx + 11 + int(10 * attack) + int(6 * max(-arm, 0)))
+            torso_left, torso_right = cx - 12, cx + 11
             rect(draw, left_x, arm_y0, left_x + 6, left_arm_y1, pal["coat"])
             rect(draw, right_x, arm_y0, right_x + 6, right_arm_y1, pal["coat"])
-            rect(draw, left_x, left_arm_y1 - 2, left_x + 6, left_arm_y1 + 5, pal["skin"] if asset != "poc-patrol" else pal["coat"])
-            rect(draw, right_x, right_arm_y1 - 2, right_x + 6, right_arm_y1 + 5, pal["skin"] if asset != "poc-patrol" else pal["coat"])
+            rect(draw, min(left_x, torso_left), arm_y0, max(left_x + 6, torso_left), arm_y0 + 6, pal["coat"])
+            rect(draw, min(right_x, torso_right), arm_y0, max(right_x + 6, torso_right), arm_y0 + 6, pal["coat"])
+            skin = pal["skin"] if asset != "poc-patrol" else pal["coat"]
+            rect(draw, left_x, left_arm_y1 - 2, left_x + 6, left_arm_y1 + 5, skin)
+            rect(draw, right_x, right_arm_y1 - 2, right_x + 6, right_arm_y1 + 5, skin)
             hand_r = (left_x + 2, left_arm_y1 + 2)
             hand_l = (right_x + 3, right_arm_y1 + 2)
         case "N":
@@ -396,8 +414,11 @@ def _draw_torso(
             right_arm_y1 = arm_y0 + 16 + int(8 * arm)
             left_x = max(4, cx - 20 - int(10 * attack) - int(10 * max(-arm, 0)))
             right_x = min(86, cx + 13 + int(10 * max(arm, 0)))
+            torso_left, torso_right = cx - 12, cx + 11
             rect(draw, left_x, arm_y0, left_x + 6, left_arm_y1, pal["coat"])
             rect(draw, right_x, arm_y0, right_x + 6, right_arm_y1, pal["coat"])
+            rect(draw, min(left_x, torso_left), arm_y0, max(left_x + 6, torso_left), arm_y0 + 6, pal["coat"])
+            rect(draw, min(right_x, torso_right), arm_y0, max(right_x + 6, torso_right), arm_y0 + 6, pal["coat"])
             hand_r = (right_x + 3, right_arm_y1 + 2)
             hand_l = (left_x + 2, left_arm_y1 + 2)
         case unreachable:
@@ -731,12 +752,60 @@ def frame_name(asset_id: str, facing: str, action: str, frame: int) -> str:
     return f"{clip_name(asset_id, facing, action)}_{frame:02d}.png"
 
 
-def build(output_dir: Path) -> Path:
-    """명시된 새 디렉터리에 미검수 후보만 조립한다. Unity import는 별도 작업이다."""
+def _prepare_candidate_output_dir(output_dir: Path) -> Path:
     output_dir = output_dir.resolve()
     if any(part.casefold() in {"game", "artsource"} for part in output_dir.parts):
         raise ValueError("Game/ArtSource 경로는 후보 출력으로 사용할 수 없습니다.")
     output_dir.mkdir(parents=True, exist_ok=False)
+    return output_dir
+
+
+def _character_by_id(asset_id: str) -> dict:
+    for character in CHARACTERS:
+        if character["asset_id"] == asset_id:
+            return character
+    raise KeyError(asset_id)
+
+
+def build_explorer_pilot(output_dir: Path) -> Path:
+    """탐사원 8프레임 파일럿만 조립한다. ADR-002 Decision 2."""
+    output_dir = _prepare_candidate_output_dir(output_dir)
+    character = _character_by_id(EXPLORER_ASSET_ID)
+    frames = []
+    for spec in EXPLORER_PILOT_FRAMES:
+        image = draw_character(character, spec["facing"], spec["action"], spec["frame"])
+        relative_path = f"{spec['role']}.png"
+        raw_hash = write_png(output_dir / relative_path, image)
+        frames.append({
+            "role": spec["role"],
+            "facing": spec["facing"],
+            "action": spec["action"],
+            "frame": spec["frame"],
+            "path": relative_path,
+            "raw_hash": raw_hash,
+            "width": W,
+            "height": H,
+        })
+    manifest = {
+        "schema_version": 1,
+        "mode": "explorer-pilot",
+        "asset_id": character["asset_id"],
+        "status": "draft",
+        "rights_status": "unknown",
+        "source": "local_assembly",
+        "seed": character["seed"],
+        "frame_size": [W, H],
+        "frames": frames,
+        "tool_versions": {"pillow": PILLOW_VERSION},
+    }
+    manifest_path = output_dir / "manifest.json"
+    manifest_path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+    return manifest_path
+
+
+def build(output_dir: Path) -> Path:
+    """명시된 새 디렉터리에 미검수 후보만 조립한다. Unity import는 별도 작업이다."""
+    output_dir = _prepare_candidate_output_dir(output_dir)
     capture_matrix = []
     bom_assets = []
     hashes = {}
@@ -804,7 +873,19 @@ def build(output_dir: Path) -> Path:
 def main() -> int:
     parser = argparse.ArgumentParser(description="캐릭터 초안을 새 출력 디렉터리에 로컬 조립합니다.")
     parser.add_argument("--output-dir", type=Path, required=True)
+    parser.add_argument("--explorer-pilot", action="store_true")
     args = parser.parse_args()
+    if args.explorer_pilot:
+        manifest_path = build_explorer_pilot(args.output_dir)
+        print(json.dumps({
+            "ok": True,
+            "status": "draft",
+            "mode": "explorer-pilot",
+            "characters": [EXPLORER_ASSET_ID],
+            "frames": len(EXPLORER_PILOT_FRAMES),
+            "manifest": str(manifest_path),
+        }, indent=2))
+        return 0
     bom_path = build(args.output_dir)
     print(json.dumps({
         "ok": True,

@@ -151,7 +151,7 @@ namespace Janseon.Foundation.Tests
                 }
 
                 lum /= px.Length;
-                Assert.That(lum, Is.InRange(30.0, 120.0), "title must read as a lit but quiet concourse");
+                Assert.That(lum, Is.InRange(14.0, 60.0), "title must read as void + faint route fold (Design.md 5.1)");
                 Assert.That(neon / (double)px.Length, Is.LessThanOrEqualTo(0.005), "title must not carry decorative neon cyan");
                 shots.Add(WriteShot(frame, outDir, "title", width, height, head, fingerprint, CountNonVoid(px)));
                 Object.Destroy(frame);
