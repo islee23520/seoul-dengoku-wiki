@@ -1,4 +1,4 @@
-import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
+import { mkdir, readdir, readFile, rename, writeFile } from 'node:fs/promises';
 import { basename, dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -25,11 +25,24 @@ function parseArgs(argv) {
   return opts;
 }
 
+const UNEXPECTED_PROJECTION = /^(Story-Batch-B\d{3}|Monster-Batch-M\d{3}|Hostile-Group-G\d{2})\.md$/;
+
 export function projectionDestination(outDir, name) {
   if (ISOMETRIC_DIAGRAM_ASSETS.includes(name) && basename(outDir) === 'game-logic') {
     return join(dirname(outDir), 'assets', 'wiki', name);
   }
   return join(outDir, name);
+}
+
+export async function unexpectedProjectionFiles(outDir, files) {
+  let names = [];
+  try {
+    names = await readdir(outDir);
+  } catch (err) {
+    if (err && err.code === 'ENOENT') return [];
+    throw err;
+  }
+  return names.filter((name) => UNEXPECTED_PROJECTION.test(name) && files[name] === undefined).sort();
 }
 
 export async function materializeWorldAtlas({ atlasPath, outDir, check = false }) {
@@ -54,6 +67,9 @@ export async function materializeWorldAtlas({ atlasPath, outDir, check = false }
         throw err;
       }
       if (existing !== body) mismatches.push(`stale ${name}`);
+    }
+    for (const name of await unexpectedProjectionFiles(outDir, files)) {
+      mismatches.push(`unexpected ${name}`);
     }
     if (mismatches.length > 0) {
       const error = new Error(mismatches.join('\n'));

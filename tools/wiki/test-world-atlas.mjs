@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
 import { existsSync } from 'node:fs';
-import { mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
+import { mkdtemp, readFile, rm, unlink, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { dirname, join, resolve } from 'node:path';
 import { after, test } from 'node:test';
@@ -9,6 +9,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 
 import { materializeWorldAtlas } from './materialize-world-atlas.mjs';
 import { extractAtlasJson, extractDiagrams } from './world-atlas-parse.mjs';
+import { projectionsFromAtlas } from './world-atlas-render.mjs';
 import {
   assertIsometricSvgContracts,
   collectSvgIds,
@@ -17,7 +18,6 @@ import {
 import { ISOMETRIC_DIAGRAM_ASSETS } from './world-atlas-schema.mjs';
 
 const verifier = fileURLToPath(new URL('./verify-world-expansion.mjs', import.meta.url));
-const materializer = fileURLToPath(new URL('./materialize-world-atlas.mjs', import.meta.url));
 const repositoryRoot = resolve(dirname(verifier), '..', '..');
 const liveDocs = join(repositoryRoot, 'docs', 'game-logic');
 const wikiAssets = join(repositoryRoot, 'docs', 'assets', 'wiki');
@@ -111,18 +111,15 @@ test('Given a company mark in house prose When houses stage Then E_COMPANY_TOKEN
   assert.match(result.stderr, /^E_COMPANY_TOKEN:/m);
 });
 
-test('Given two materializer --check runs When atlas is unchanged Then hashes match', () => {
-  const first = spawnSync(process.execPath, [materializer, '--atlas', atlasPath, '--check'], {
-    cwd: repositoryRoot,
-    encoding: 'utf8',
-  });
-  const second = spawnSync(process.execPath, [materializer, '--atlas', atlasPath, '--check'], {
-    cwd: repositoryRoot,
-    encoding: 'utf8',
-  });
-  assert.equal(first.status, 0, first.stderr);
-  assert.equal(second.status, 0, second.stderr);
-  assert.equal(first.stdout, second.stdout);
+test('Given two materializer --check runs When generated projections are unchanged Then hashes match', async () => {
+  const dir = await mkdtemp(join(tmpdir(), 'atlas-check-hash-'));
+  fixtures.push(dir);
+  const written = await materializeWorldAtlas({ atlasPath, outDir: dir, check: false });
+  const first = await materializeWorldAtlas({ atlasPath, outDir: dir, check: true });
+  const second = await materializeWorldAtlas({ atlasPath, outDir: dir, check: true });
+  assert.deepEqual(first.hashes, written.hashes);
+  assert.deepEqual(second.hashes, first.hashes);
+  assert.equal(first.atlasHash, written.atlasHash);
 });
 
 test('Given a mutated projection When materializer --check Then nonzero', async () => {
@@ -137,6 +134,72 @@ test('Given a mutated projection When materializer --check Then nonzero', async 
     /stale Operating-Houses.md/,
   );
   assert.ok(result.hashes['Operating-Houses.md']);
+});
+
+test('Given extra M999 B099 G99 files When materializer --check Then nonzero names each unexpected projection', async () => {
+  const dir = await mkdtemp(join(tmpdir(), 'atlas-extra-proj-'));
+  fixtures.push(dir);
+  await materializeWorldAtlas({ atlasPath, outDir: dir, check: false });
+  await writeFile(join(dir, 'Monster-Batch-M999.md'), '# extra monster\n');
+  await writeFile(join(dir, 'Story-Batch-B099.md'), '# extra story\n');
+  await writeFile(join(dir, 'Hostile-Group-G99.md'), '# extra group\n');
+  await assert.rejects(
+    () => materializeWorldAtlas({ atlasPath, outDir: dir, check: true }),
+    (err) => {
+      const message = String(err?.message ?? err);
+      assert.match(message, /unexpected Monster-Batch-M999\.md/);
+      assert.match(message, /unexpected Story-Batch-B099\.md/);
+      assert.match(message, /unexpected Hostile-Group-G99\.md/);
+      return true;
+    },
+  );
+  await unlink(join(dir, 'Monster-Batch-M999.md'));
+  await unlink(join(dir, 'Story-Batch-B099.md'));
+  await unlink(join(dir, 'Hostile-Group-G99.md'));
+  const ok = await materializeWorldAtlas({ atlasPath, outDir: dir, check: true });
+  assert.ok(ok.hashes['Operating-Houses.md']);
+  assert.equal(ok.hashes['Monster-Batch-M999.md'], undefined);
+});
+
+test('Given canonical G19 and G24 records When projecting atlas Then group pages are emitted', () => {
+  const canonical = (id, name) => ({
+    id,
+    display_name: name,
+    dossier_prose: `${id} 정본 도씨에 본문`,
+    scenario_outlines: [
+      {
+        id: `${id}S1`,
+        title: '촉발',
+        stage: 1,
+        trigger: 'trigger',
+        actors: ['HC01', 'K001', 'F01'],
+        mechanism: 'mechanism',
+        choices: ['a', 'b', 'c'],
+        outcomes: 'outcomes',
+        moral_cost: 'cost',
+        dossier_ref: id,
+      },
+    ],
+  });
+  const files = projectionsFromAtlas({
+    hostile_groups: [
+      canonical('G19', '식각수색인균체'),
+      canonical('G24', '의료조직기계군'),
+    ],
+  }, 'canonical-g19');
+  assert.match(files['Hostile-Group-G19.md'], /^# G19 · /m);
+  assert.match(files['Hostile-Group-G24.md'], /^# G24 · /m);
+});
+
+test('Given seed-only G19 When projecting atlas Then Hostile-Group-G19.md is absent', () => {
+  const files = projectionsFromAtlas({
+    hostile_groups: [{
+      id: 'G19',
+      display_name: '식각수색인균체',
+      prose: '식 필드만 있는 개발 레코드',
+    }],
+  }, 'seed-g19');
+  assert.equal(files['Hostile-Group-G19.md'], undefined);
 });
 
 const CONFIRMED_STORY_BATCHES = Object.freeze([

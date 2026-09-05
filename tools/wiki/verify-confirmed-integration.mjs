@@ -122,6 +122,37 @@ export function mergeGroupRecords(targetAtlas, { fragmentId, groupIds, sha, sour
   return targetAtlas;
 }
 
+export function entryIdsFromMonsterContent(content) {
+  return (content?.entries ?? []).map((entry) => entry.id).filter(Boolean);
+}
+
+export function mergeMonsterContent(targetAtlas, { batchId, sha, sourceAtlas, manifest }) {
+  assertApprovedSource(manifest, batchId, sha);
+  if ((manifest.excluded?.monsters ?? []).includes(batchId)) {
+    throw IntegrationError('E_EXCLUDED_ID', batchId);
+  }
+  const incoming = sourceAtlas?.monster_contents?.[batchId];
+  if (!incoming) throw IntegrationError('E_MISSING_FRAGMENT', `${batchId} monster_contents missing at ${sha}`);
+  targetAtlas.monster_contents ??= {};
+  const existing = targetAtlas.monster_contents[batchId];
+  if (existing && !deepEqual(existing, incoming)) {
+    throw IntegrationError('E_DUPLICATE_ID', `${batchId} conflicting monster_contents`);
+  }
+  const owned = new Map();
+  for (const [id, content] of Object.entries(targetAtlas.monster_contents)) {
+    if (id === batchId) continue;
+    for (const entryId of entryIdsFromMonsterContent(content)) {
+      owned.set(entryId, id);
+    }
+  }
+  for (const entryId of entryIdsFromMonsterContent(incoming)) {
+    const owner = owned.get(entryId);
+    if (owner) throw IntegrationError('E_DUPLICATE_ID', `entry ${entryId} in ${owner} and ${batchId}`);
+  }
+  targetAtlas.monster_contents[batchId] = incoming;
+  return targetAtlas;
+}
+
 export function mergeDiagrams(targetAtlas, { sha, sourceAtlas, manifest }) {
   assertApprovedSource(manifest, 'ISO', sha);
   const incoming = sourceAtlas?.diagrams;

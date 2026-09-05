@@ -193,8 +193,10 @@ export function projectionsFromAtlas(atlas, atlasHash) {
   }
   for (const group of atlas.hostile_groups ?? []) {
     const n = Number(String(group.id ?? '').slice(1));
-    if (!Number.isInteger(n) || n >= 19) continue;
-    if ((group.scenario_outlines ?? []).length || group.dossier_prose) {
+    if (!Number.isInteger(n)) continue;
+    const canonical = (group.scenario_outlines ?? []).length > 0 || Boolean(group.dossier_prose);
+    if (n >= 19 && !canonical) continue;
+    if (canonical) {
       out[getGroupDossierFilename(group.id)] = renderGroupDossier(group, atlasHash);
     } else {
       out[getGroupDossierFilename(group.id)] = renderGroupDossierPage(group, atlasHash);

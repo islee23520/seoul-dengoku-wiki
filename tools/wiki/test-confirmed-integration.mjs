@@ -11,6 +11,7 @@ import {
   loadManifest,
   mergeDiagrams,
   mergeGroupRecords,
+  mergeMonsterContent,
   mergeStoryContent,
   verifyLiveDocs,
 } from './verify-confirmed-integration.mjs';
@@ -54,7 +55,6 @@ test('Given confirmed social records When live atlas is checked Then only approv
   assert.equal(violations.length, 0, JSON.stringify(violations));
   const keys = baselineKeys(atlas);
   assert.deepEqual(keys.storyContents, manifest.social);
-  assert.equal(keys.monsterContents.length, 0);
   assert.equal(keys.diagramCount, 3);
   assert.deepEqual(keys.dossierGroups, manifest.groups['G01-G06']);
   for (const id of manifest.excluded.social) {
@@ -163,6 +163,125 @@ test('Given G19 When group merge is attempted Then E_EXCLUDED_ID', async () => {
     }),
     (err) => err.code === 'E_EXCLUDED_ID',
   );
+});
+
+test('Given live partial candidate When monster pages exist without atlas contents Then worldbuilding stays incomplete', async () => {
+  const manifest = await loadManifest();
+  const { atlas, presentMonsterIds } = await verifyLiveDocs({
+    repoRoot: repositoryRoot,
+    manifest,
+  });
+  assert.equal(manifest.incomplete, true);
+  const keys = baselineKeys(atlas);
+  assert.deepEqual(keys.monsterContents, []);
+  assert.ok(presentMonsterIds.includes('M001'));
+  assert.equal(presentMonsterIds.includes('M003'), false);
+  assert.equal(atlas.monster_contents?.M001, undefined);
+});
+
+test('Given an unapproved SHA When merging a monster fragment Then E_UNAPPROVED_SHA', async () => {
+  const manifest = await loadManifest();
+  const target = { monster_contents: {} };
+  assert.throws(
+    () => mergeMonsterContent(target, {
+      batchId: 'M001',
+      sha: 'deadbeefdeadbeefdeadbeefdeadbeefdeadbeef',
+      sourceAtlas: { monster_contents: { M001: { entries: [] } } },
+      manifest,
+    }),
+    (err) => err.code === 'E_UNAPPROVED_SHA',
+  );
+  assert.deepEqual(target.monster_contents, {});
+});
+
+test('Given excluded M003 When monster merge is attempted Then E_EXCLUDED_ID', async () => {
+  const manifest = await loadManifest();
+  const target = { monster_contents: {} };
+  assert.throws(
+    () => mergeMonsterContent(target, {
+      batchId: 'M003',
+      sha: manifest.approved.M001,
+      sourceAtlas: { monster_contents: { M003: { entries: [] } } },
+      manifest,
+    }),
+    (err) => err.code === 'E_EXCLUDED_ID',
+  );
+});
+
+test('Given two different payloads for the same monster ID When merged Then E_DUPLICATE_ID', async () => {
+  const manifest = await loadManifest();
+  const sha = manifest.approved.M001;
+  const first = { entries: [{ id: 'G01E01', display_name: 'one', group_id: 'G01', role_class: 'alpha', prose: 'a' }] };
+  const second = { entries: [{ id: 'G01E01', display_name: 'two', group_id: 'G01', role_class: 'alpha', prose: 'b' }] };
+  const target = { monster_contents: { M001: first } };
+  assert.throws(
+    () => mergeMonsterContent(target, {
+      batchId: 'M001',
+      sha,
+      sourceAtlas: { monster_contents: { M001: second } },
+      manifest,
+    }),
+    (err) => err.code === 'E_DUPLICATE_ID',
+  );
+  assert.deepEqual(target.monster_contents.M001, first);
+});
+
+test('Given overlapping entry IDs from two approved monster batches When merged Then E_DUPLICATE_ID', async () => {
+  const manifest = await loadManifest();
+  const target = {
+    monster_contents: {
+      M002: { entries: [{ id: 'G01E01', display_name: 'kept', group_id: 'G01', role_class: 'alpha', prose: 'kept' }] },
+    },
+  };
+  assert.throws(
+    () => mergeMonsterContent(target, {
+      batchId: 'M001',
+      sha: manifest.approved.M001,
+      sourceAtlas: {
+        monster_contents: {
+          M001: { entries: [{ id: 'G01E01', display_name: 'dup', group_id: 'G01', role_class: 'alpha', prose: 'dup' }] },
+        },
+      },
+      manifest,
+    }),
+    (err) => err.code === 'E_DUPLICATE_ID',
+  );
+  assert.deepEqual(Object.keys(target.monster_contents), ['M002']);
+});
+
+test('Given missing monster_contents When merging an approved batch Then E_MISSING_FRAGMENT', async () => {
+  const manifest = await loadManifest();
+  const target = { monster_contents: {} };
+  assert.throws(
+    () => mergeMonsterContent(target, {
+      batchId: 'M001',
+      sha: manifest.approved.M001,
+      sourceAtlas: { monster_contents: {} },
+      manifest,
+    }),
+    (err) => err.code === 'E_MISSING_FRAGMENT',
+  );
+});
+
+test('Given approved M001 payload When merged Then M001 lands and other sources stay', async () => {
+  const manifest = await loadManifest();
+  const sha = manifest.approved.M001;
+  const incoming = {
+    entries: [{ id: 'G01E01', display_name: 'alpha', group_id: 'G01', role_class: 'alpha', prose: 'body' }],
+  };
+  const kept = {
+    entries: [{ id: 'G01E11', display_name: 'kept', group_id: 'G01', role_class: 'common', prose: 'other' }],
+  };
+  const target = { monster_contents: { M002: kept }, story_contents: { B001: { actors: [] } } };
+  mergeMonsterContent(target, {
+    batchId: 'M001',
+    sha,
+    sourceAtlas: { monster_contents: { M001: incoming } },
+    manifest,
+  });
+  assert.deepEqual(target.monster_contents.M001, incoming);
+  assert.deepEqual(target.monster_contents.M002, kept);
+  assert.deepEqual(Object.keys(target.story_contents), ['B001']);
 });
 
 test('Given ISO blob When diagrams merge Then three diagram records land', async () => {
