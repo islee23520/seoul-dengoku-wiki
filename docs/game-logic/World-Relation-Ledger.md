@@ -3,7 +3,7 @@
 이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.
 
 - 원본 앵커: `docs/game-logic/World-Narrative-Atlas.md`
-- 원본 해시: `e87dd92a9c23672a2210dd80af1e4ca74ffe4eec74dd091c6758a632f61510bb`
+- 원본 해시: `bd899ef991548e75cff54bafa5b7db1f96d38fde1536bdb7187a4673bfc8d118`
 
 | 출발 | 유형 | 도착 | 근거 |
 | --- | --- | --- | --- |
