@@ -1,0 +1,106 @@
+{
+  "task": "todo-14-station-props",
+  "reviewer": "st_01a06c02",
+  "reviewed_at": "2026-09-04T11:35:20Z",
+  "round": "final-435c4fd",
+  "head": "435c4fd906bcb1bdf76323cf956626de86eb0bd5",
+  "parent_promotion_commit": "5f08ebeffdc7b97d8067fd194b79fbcf6f714117",
+  "material_fix_commit": "7b7436a8937ebc67df893249f125b2521cc12b43",
+  "gitattributes_restore_commit": "e32c75fb3ce0cc1b40fbc03f2db103f6450e7685",
+  "mat_whitespace_commit": "435c4fd906bcb1bdf76323cf956626de86eb0bd5",
+  "worktree": "/Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-art-todo14",
+  "verdict": "confirmed",
+  "summary": "HEAD 435c4fd trims trailing spaces in the six generated .mat files only. git diff --check 5f08ebe HEAD is clean. Session cua-driver 92084 is gone and no Todo 14 Unity remains. Prior Node 10/10, architecture PASS, Metal 1920x1080 six-prop shot SHA 152f89155cd2c68ef9c3e0d2b28abfd66a150cdd1becec82d27794906ea40aea, and four nonempty VERDICT: PASS reports are unchanged.",
+  "history": [
+    "5f08ebeffdc7b97d8067fd194b79fbcf6f714117 feat(art): add verified subway prop prefabs",
+    "7b7436a8937ebc67df893249f125b2521cc12b43 fix(art): preserve station prop material fidelity",
+    "e32c75fb3ce0cc1b40fbc03f2db103f6450e7685 chore(art): restore gitattributes after material fix",
+    "435c4fd906bcb1bdf76323cf956626de86eb0bd5 chore(art): trim station prop material yaml whitespace"
+  ],
+  "commands": [
+    {
+      "cmd": "git -C /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-art-todo14 rev-parse HEAD",
+      "exit": 0,
+      "stdout": "435c4fd906bcb1bdf76323cf956626de86eb0bd5"
+    },
+    {
+      "cmd": "git show --name-status 435c4fd906bcb1bdf76323cf956626de86eb0bd5",
+      "exit": 0,
+      "stdout": "M six Game/Assets/Janseon/Art/Props/poc-prop-*/poc-prop-*.mat"
+    },
+    {
+      "cmd": "git diff --check 5f08ebe HEAD",
+      "exit": 0
+    },
+    {
+      "cmd": "git status --short",
+      "exit": 0,
+      "stdout": ""
+    },
+    {
+      "cmd": "cd ... && node --test tools/art/station-props/test-station-props.mjs",
+      "exit": 0,
+      "stdout_summary": "tests 10, pass 10, fail 0, duration_ms 98.7945 (ran on this HEAD)"
+    },
+    {
+      "cmd": "node tools/architecture/check-unity-architecture.mjs",
+      "exit": 0,
+      "stdout": "unity architecture gate passed (12 runtime files, 2 scene scopes verified)"
+    },
+    {
+      "cmd": "ps -p 92084; ps for unity-poc-art-todo14 Unity",
+      "exit": 0,
+      "stdout": "92084 absent; no Todo 14 Unity"
+    }
+  ],
+  "checks": {
+    "mat_only_correction": {
+      "status": "pass",
+      "files": [
+        "Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.mat",
+        "Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.mat",
+        "Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.mat",
+        "Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.mat",
+        "Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.mat",
+        "Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.mat"
+      ]
+    },
+    "git_diff_check": {"status": "pass", "exit": 0},
+    "worktree_clean": {"status": "pass"},
+    "node_station_prop_tests": {"status": "pass", "result": "10/10"},
+    "architecture_gate": {"status": "pass"},
+    "screenshot_unchanged": {
+      "status": "pass",
+      "sha256": "152f89155cd2c68ef9c3e0d2b28abfd66a150cdd1becec82d27794906ea40aea",
+      "dims": "1920x1080",
+      "bytes": 85802
+    },
+    "four_axis_reviews": {
+      "status": "pass",
+      "COMPOSITION": "PASS",
+      "SPRITE_FIDELITY": "PASS",
+      "TYPOGRAPHY": "PASS",
+      "PRODUCT_POLISH": "PASS"
+    },
+    "cleanup": {
+      "status": "pass",
+      "receipt_head": "435c4fd906bcb1bdf76323cf956626de86eb0bd5",
+      "written_at": "2026-09-04T11:34:19Z",
+      "todo14_unity_processes": [],
+      "cuadriver_pid_92084": "absent",
+      "observed_todo14_unity": "none",
+      "observed_pid_92084": "absent",
+      "preexisting_host_cua_driver": {
+        "pid": 62450,
+        "started": "2026-09-01 11:23:31",
+        "note": "host daemon, not Todo 14 session spawn"
+      }
+    }
+  },
+  "blockers": [],
+  "evidence_paths": {
+    "main_repo": "/Users/ilseoblee/workspace/seoul-kenshi/.omo/evidence/unity-poc-core-loop/task-14-props/",
+    "worktree": "/Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-art-todo14/.omo/evidence/unity-poc-core-loop/task-14-props/",
+    "this_review": "/Users/ilseoblee/workspace/seoul-kenshi/.omo/evidence/unity-poc-core-loop/task-14-props/independent-review/"
+  }
+}

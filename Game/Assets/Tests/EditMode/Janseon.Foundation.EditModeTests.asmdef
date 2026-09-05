@@ -2,7 +2,8 @@
   "name": "Janseon.Foundation.EditModeTests",
   "rootNamespace": "Janseon.Foundation.Tests",
   "references": [
-    "Janseon.Foundation"
+    "Janseon.Foundation",
+    "Janseon.Core"
   ],
   "includePlatforms": [
     "Editor"

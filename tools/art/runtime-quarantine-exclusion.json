@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "purpose": "Candidate slots require source-bound evidence; retained provider options do not approve assets.",
+  "provider_policy": "tools/art/catalog.mjs",
+  "required_slots": 12,
+  "slots": [
+    "prop:poc-prop-ticket-gate",
+    "prop:poc-prop-pump-crate",
+    "prop:poc-prop-shutter",
+    "prop:poc-prop-pillar",
+    "prop:poc-prop-bench",
+    "prop:poc-prop-cabinet",
+    "character-explorer",
+    "character-medic",
+    "character-patrol",
+    "title-art",
+    "ui-icon-set",
+    "history-texture"
+  ],
+  "excluded_statuses": [
+    "draft",
+    "blocked",
+    "archived"
+  ],
+  "code_native_is_promoted_art": false
+}

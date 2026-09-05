@@ -28,7 +28,7 @@ VContainer 외 Makcha-Unity 패키지는 현재 모듈에 실제 호출자와 �
 
 ## 현재 구현 범위
 
-현재 구현된 것은 Unity 프로젝트, 장르 계약, `Bootstrap.unity` App scope/FSM, `Foundation.unity` 화면 child scope, VContainer `1.19.0`, 정적 아키텍처 게이트와 EditMode/PlayMode 검증입니다. 현재 모듈 `Unity POC 통합 코어 루프`의 MainTitle 화면과 세 역 코어 루프는 아직 구현하지 않았습니다.
+현재 모듈 `Unity POC 통합 코어 루프`는 `Bootstrap` App scope/FSM, 배타적 `MainTitle`/`Foundation` 화면 lease, UI Toolkit 화면, 세 역 노선과 교섭·우회·전투·정산·복귀를 구현했습니다. 동일 seed 재현과 중복 정산 거부를 실제 batchmode PlayMode에서 검증합니다. 생성 아트 슬롯 승인·연결은 별도 수용 조건이며, 코드 검증만으로 모듈 전체가 완료되지는 않습니다.
 
 ## 완료 판단
 

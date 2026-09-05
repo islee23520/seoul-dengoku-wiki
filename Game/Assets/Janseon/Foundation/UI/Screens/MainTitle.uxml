@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <ui:Style src="../Styles/JanseonShared.uss" />
+    <ui:Style src="../Styles/MainTitle.uss" />
+    <ui:VisualElement name="main-title-root" class="jk-screen jk-motion-off jk-res-720" focusable="false">
+        <ui:VisualElement class="main-title-fold" picking-mode="Ignore" />
+        <ui:Label name="main-title-mark" class="jk-display jk-cjk" text="잔선: 서울" />
+        <ui:Label name="main-title-sub" class="jk-body jk-cjk" text="붕괴 이후 지하철망의 질서를 다시 세운다" />
+        <ui:Button name="main-title-start" class="jk-button jk-button--primary" text="시작" focusable="true" />
+    </ui:VisualElement>
+</ui:UXML>
