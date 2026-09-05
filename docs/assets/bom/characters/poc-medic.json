@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "asset_id": "poc-medic",
+  "asset_class": "character_mesh",
+  "source": "generate",
+  "rights_status": "allowed",
+  "generation_backend": "nanobanana_gemini",
+  "provider": "google",
+  "model": "gemini-2.5-flash-image",
+  "revision": "2026-09-04",
+  "prompt": "Use case: identity-lock turnaround",
+  "prompt_hash": "cc02670d3f5e0b61717d384e31cf0a88f5d9d3e81dd649fd97b65b0671c1c811",
+  "input_hashes": [
+    "6dc471a39888c1e328cff35539093d5d2183b21584f716a04936317f296080d3"
+  ],
+  "seed": 1502,
+  "cost_mode": "subscription",
+  "cost_cents": 0,
+  "raw_hash": "6dc471a39888c1e328cff35539093d5d2183b21584f716a04936317f296080d3",
+  "output_hash": "7a2628497e22f9823e067025678faac1de4e647274ca0f825b7c2ebdfa681dc8",
+  "tool_versions": {
+    "unity": "6000.7.0a5",
+    "blender": "5.1.2",
+    "pillow": "12.2.0",
+    "node": "22"
+  },
+  "operations": [
+    "identity_lock",
+    "trellis_attempt_fail_closed",
+    "sprite_fallback",
+    "atlas",
+    "unity_import",
+    "bom_promotion"
+  ],
+  "unity_import_settings": {
+    "texture_type": "Sprite",
+    "filter_mode": "Point",
+    "mesh_compression": "Off",
+    "sprite_pixels_to_units": 85.333,
+    "alpha_is_transparency": true
+  },
+  "review_receipts": [
+    {
+      "reviewer": "todo15-character-contract",
+      "verdict": "pass",
+      "receipt_hash": "c8ca24bfb73b43a574659b1dc00b2d89a3fce46277ef858bf45b5b58219c8a08",
+      "reviewed_at": "2026-09-04T11:33:28.000Z"
+    }
+  ],
+  "status": "promoted",
+  "created_at": "2026-09-04T11:33:28.000Z",
+  "fallback_reason": "official_trellis_blender_path_failed_twice",
+  "representation": "four_dir_sprite",
+  "prefab": "Game/Assets/Janseon/Art/Characters/poc-medic/PocMedic.prefab",
+  "identity_prompt": "Use case: identity-lock turnaround\nAsset type: four-view character identity sheet for a Korean post-collapse grand-strategy SRPG\nSubject: unnamed Korean field medic, early 30s, tied brown hair, focused compassionate eyes, compact 2.5-head-tall SD body with oversized identity-bearing head\nEquipment lock: splint kit in the character's RIGHT hand, canvas satchel on the character's LEFT hip, red cloth knot on the character's RIGHT upper arm. Do not mirror equipment.\nMedium and style: original pixel-readable SD character turnaround, limited palette olive coat #6E8F6A with cream apron #E7D7B1 and red knot #C43C3C\nComposition and camera: single image, four orthographic views left-to-right N, E, S, W, empty background, full body, one-tile footprint\nLighting and color: flat even light\nMood: tired care, restrained urgency\nBackground: empty\nConstraints: Korean facial identity; medical salvage clothing; no logo, no watermark, no readable text, no red-cross trademark\nAvoid: mirrored satchel, mirrored arm knot, glossy doll skin, fantasy staff",
+  "identity_prompt_hash": "cc02670d3f5e0b61717d384e31cf0a88f5d9d3e81dd649fd97b65b0671c1c811",
+  "identity_sheet": "Game/Assets/Janseon/ArtSource/Characters/poc-medic/identity/identity-sheet.png",
+  "identity_sheet_gemini": "Game/Assets/Janseon/ArtSource/Characters/poc-medic/identity/identity-sheet-gemini.png",
+  "side_map": "Game/Assets/Janseon/ArtSource/Characters/poc-medic/identity/side-map.json",
+  "atlas": "Game/Assets/Janseon/ArtSource/Characters/poc-medic/poc-medic-atlas.png",
+  "atlas_hash": "7a2628497e22f9823e067025678faac1de4e647274ca0f825b7c2ebdfa681dc8",
+  "trellis_attempts": [
+    {
+      "n": 1,
+      "kind": "host_contract",
+      "path": "trellis_v1_direct_python",
+      "result": "fail",
+      "codes": [
+        "trellis_missing"
+      ],
+      "command": "node tools/art/pipeline-graph.mjs check --graph compiled-poc-character-four-dir.json --host blender=1,trellis=0,maya=0,animo=0",
+      "receipt": ".omo/evidence/unity-poc-core-loop/task-15-characters/trellis-attempt-1-check.json"
+    },
+    {
+      "n": 2,
+      "kind": "mesh_input_missing",
+      "path": "trellis_v1_mesh_rig_silhouette",
+      "result": "fail",
+      "codes": [
+        "mesh_glb_missing"
+      ],
+      "command": "blender --background --python tools/art/blender-character-gate.py -- --glb MISSING",
+      "receipt": ".omo/evidence/unity-poc-core-loop/task-15-characters/trellis-attempt-2-blender.txt"
+    }
+  ],
+  "broken_mesh_retained": false
+}
