@@ -99,14 +99,28 @@ function normalizeBody(fieldText) {
     .trim();
 }
 
+// Atlas projections carry the entry fields in one of three shapes:
+//   `- 라벨: 본문`, `- **라벨:** 본문`, or `### 라벨` followed by a paragraph.
+// Projection metadata lines (그룹/역할군/연결) are not entry fields.
+const FIELD_LINE = /^(?:- \*\*([^*:]+):\*\*|- ([^:*]+):|### ([^\n]+))(.*)$/gm;
+
 function parseFields(body) {
   const fields = new Map();
-  for (const label of REQUIRED_FIELDS) {
-    const match = body.match(new RegExp(`^- ${escapeRegExp(label)}:(.*)$`, "m"));
-    if (!match) continue;
-    fields.set(label, match[1].trim());
+  const ordered = [];
+  const matches = [...body.matchAll(FIELD_LINE)];
+  for (let index = 0; index < matches.length; index += 1) {
+    const match = matches[index];
+    const label = (match[1] ?? match[2] ?? match[3]).trim();
+    if (!REQUIRED_FIELDS.includes(label)) continue;
+    let value = (match[4] ?? "").trim();
+    if (match[3] !== undefined) {
+      const start = match.index + match[0].length;
+      const end = matches[index + 1]?.index ?? body.length;
+      value = body.slice(start, end).trim();
+    }
+    ordered.push(label);
+    if (!fields.has(label)) fields.set(label, value);
   }
-  const ordered = [...body.matchAll(/^- ([^:]+):/gm)].map((match) => match[1]);
   return { fields, ordered };
 }
 

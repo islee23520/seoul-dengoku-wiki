@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
+import { readFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { test } from 'node:test';
 import { fileURLToPath } from 'node:url';
@@ -8,6 +9,7 @@ import { extractAtlasJson } from './world-atlas-parse.mjs';
 import {
   assertApprovedSource,
   baselineKeys,
+  gitShow as gitShowAt,
   loadManifest,
   mergeDiagrams,
   mergeGroupRecords,
@@ -31,6 +33,31 @@ function runLive(args) {
     stderr: result.stderr ?? '',
     stdout: result.stdout ?? '',
   };
+}
+
+function gitShow(sha, relPath) {
+  return gitShowAt(repositoryRoot, sha, relPath);
+}
+
+function actorIds(content) {
+  return (content?.actors ?? []).map((actor) => actor.id);
+}
+
+// The public-term gate forbids one word that several approved sources used in
+// its ordinary Korean sense; the landed records carry synonym edits recorded in
+// docs/verification/banned-term-replacements.json. Comparison against the
+// source therefore ignores exactly that word so every other byte must match.
+const BANNED_TERM_EDITS = JSON.parse(
+  readFileSync(join(repositoryRoot, 'docs', 'verification', 'banned-term-replacements.json'), 'utf8'),
+);
+
+function stripBannedTermEdits(value) {
+  let text = JSON.stringify(value);
+  for (const edit of BANNED_TERM_EDITS) {
+    text = text.split(JSON.stringify(edit.new).slice(1, -1)).join('');
+    text = text.split(JSON.stringify(edit.old).slice(1, -1)).join('');
+  }
+  return JSON.parse(text);
 }
 
 function gitAtlas(sha) {
@@ -59,7 +86,9 @@ test('Given confirmed social records When live atlas is checked Then only approv
   assert.deepEqual(keys.dossierGroups.slice(0, 6), manifest.groups['G01-G06']);
   assert.deepEqual(keys.dossierGroups, [
     ...manifest.groups['G01-G06'],
+    ...manifest.groups['G07-G12'],
     ...manifest.groups['G13-G18'],
+    ...manifest.groups['G19-G24'],
   ]);
   for (const id of manifest.excluded.social) {
     assert.equal(atlas.story_contents[id], undefined, id);
@@ -153,34 +182,57 @@ test('Given approved B002 blob When merged into empty story_contents Then only B
   assert.equal(sourceAtlas.story_contents.B001 !== undefined, true);
 });
 
-test('Given G19 When group merge is attempted Then E_EXCLUDED_ID', async () => {
+test('Given an excluded group id When group merge is attempted Then E_EXCLUDED_ID', async () => {
   const manifest = await loadManifest();
-  const sha = manifest.approved['G01-G06'];
+  const excluding = { ...manifest, excluded: { ...manifest.excluded, groups: ['G19'] } };
+  const sha = manifest.approved['G19-G24'];
   const target = { hostile_groups: [{ id: 'G19', prose: 'seed' }] };
   assert.throws(
     () => mergeGroupRecords(target, {
-      fragmentId: 'G01-G06',
+      fragmentId: 'G19-G24',
       groupIds: ['G19'],
       sha,
       sourceAtlas: gitAtlas(sha),
-      manifest,
+      manifest: excluding,
     }),
     (err) => err.code === 'E_EXCLUDED_ID',
   );
+  assert.equal(target.hostile_groups[0].prose, 'seed');
 });
 
-test('Given live partial candidate When monster pages exist without atlas contents Then worldbuilding stays incomplete', async () => {
+test('Given approved G19-G24 blob When merged over seed records Then dossier records land', async () => {
+  const manifest = await loadManifest();
+  const sha = manifest.approved['G19-G24'];
+  const target = { hostile_groups: manifest.groups['G19-G24'].map((id) => ({ id, prose: 'seed' })) };
+  mergeGroupRecords(target, {
+    fragmentId: 'G19-G24',
+    groupIds: manifest.groups['G19-G24'],
+    sha,
+    sourceAtlas: gitAtlas(sha),
+    manifest,
+  });
+  for (const group of target.hostile_groups) {
+    assert.ok(group.dossier_prose, group.id);
+  }
+});
+
+test('Given live candidate When monster pages are atlas projections Then every page has a record and excluded batches stay absent', async () => {
   const manifest = await loadManifest();
   const { atlas, presentMonsterIds } = await verifyLiveDocs({
     repoRoot: repositoryRoot,
     manifest,
   });
-  assert.equal(manifest.incomplete, true);
   const keys = baselineKeys(atlas);
-  assert.deepEqual(keys.monsterContents, []);
-  assert.ok(presentMonsterIds.includes('M001'));
-  assert.equal(presentMonsterIds.includes('M003'), false);
-  assert.equal(atlas.monster_contents?.M001, undefined);
+  assert.deepEqual(keys.monsterContents, manifest.monsters);
+  assert.deepEqual([...presentMonsterIds].sort(), manifest.monsters);
+  for (const id of manifest.excluded.monsters) {
+    assert.equal(atlas.monster_contents[id], undefined, id);
+    assert.equal(presentMonsterIds.includes(id), false, id);
+  }
+  assert.equal(
+    manifest.incomplete,
+    manifest.excluded.social.length + manifest.excluded.groups.length + manifest.excluded.monsters.length > 0,
+  );
 });
 
 test('Given an unapproved SHA When merging a monster fragment Then E_UNAPPROVED_SHA', async () => {
@@ -198,14 +250,14 @@ test('Given an unapproved SHA When merging a monster fragment Then E_UNAPPROVED_
   assert.deepEqual(target.monster_contents, {});
 });
 
-test('Given excluded M003 When monster merge is attempted Then E_EXCLUDED_ID', async () => {
+test('Given excluded M007 When monster merge is attempted Then E_EXCLUDED_ID', async () => {
   const manifest = await loadManifest();
   const target = { monster_contents: {} };
   assert.throws(
     () => mergeMonsterContent(target, {
-      batchId: 'M003',
+      batchId: 'M007',
       sha: manifest.approved.M001,
-      sourceAtlas: { monster_contents: { M003: { entries: [] } } },
+      sourceAtlas: { monster_contents: { M007: { entries: [] } } },
       manifest,
     }),
     (err) => err.code === 'E_EXCLUDED_ID',
@@ -311,37 +363,54 @@ test('Given confirmed monster pages When CLI --require-monsters Then exit 0', ()
   assert.equal(result.code, 0, result.stderr);
 });
 
-test('Given independently specified repaired sources When live atlas is compared Then selected units match and others stay', async () => {
+test('Given approved source SHAs When live atlas is compared Then every landed record matches its source and humans stay', async () => {
   const manifest = await loadManifest();
   const live = extractAtlasJson(await (await import('node:fs/promises')).readFile(atlasPath, 'utf8'));
   assert.equal(live.ok, true, live.error);
   const atlas = live.value;
   const base = gitAtlas('6ef55553ec8e5ed06ff8061a69947ce347eae85a');
-  const b009 = gitAtlas(manifest.approved.B009);
-  const b013 = gitAtlas(manifest.approved.B013);
-  const b015 = gitAtlas(manifest.approved.B015);
-  const groups = gitAtlas(manifest.approved['G13-G18']);
-  assert.deepEqual(atlas.story_contents.B009, b009.story_contents.B009);
-  assert.deepEqual(atlas.story_contents.B013, b013.story_contents.B013);
-  assert.deepEqual(atlas.story_contents.B015, b015.story_contents.B015);
-  for (const id of manifest.groups['G13-G18']) {
-    assert.deepEqual(
-      atlas.hostile_groups.find((group) => group.id === id),
-      groups.hostile_groups.find((group) => group.id === id),
-      id,
-    );
-  }
   assert.equal(atlas.humans.length, 412);
   assert.deepEqual(atlas.humans, base.humans);
-  for (const id of Object.keys(atlas.story_contents)) {
-    if (id === 'B009' || id === 'B013' || id === 'B015') continue;
-    assert.deepEqual(atlas.story_contents[id], base.story_contents[id], id);
+  assert.deepEqual(Object.keys(atlas.story_contents), manifest.social);
+  const sourceCache = new Map();
+  const sourceAtlas = (sha) => {
+    if (!sourceCache.has(sha)) sourceCache.set(sha, gitAtlas(sha));
+    return sourceCache.get(sha);
+  };
+  for (const id of manifest.social) {
+    const expected = sourceAtlas(manifest.approved[id]).story_contents[id];
+    assert.ok(expected, `${id} missing at ${manifest.approved[id]}`);
+    assert.deepEqual(
+      actorIds(atlas.story_contents[id]),
+      actorIds(expected),
+      id,
+    );
+    assert.deepEqual(stripBannedTermEdits(atlas.story_contents[id]), stripBannedTermEdits(expected), id);
   }
-  for (const group of atlas.hostile_groups) {
-    if (manifest.groups['G13-G18'].includes(group.id)) continue;
-    assert.deepEqual(group, base.hostile_groups.find((row) => row.id === group.id), group.id);
+  for (const [fragment, ids] of Object.entries(manifest.groups)) {
+    const source = sourceAtlas(manifest.approved[fragment]);
+    for (const id of ids) {
+      assert.deepEqual(
+        atlas.hostile_groups.find((group) => group.id === id),
+        source.hostile_groups.find((group) => group.id === id),
+        id,
+      );
+    }
   }
-  assert.equal(manifest.incomplete, true);
+  for (const id of manifest.monsters) {
+    const liveBatch = atlas.monster_contents[id];
+    assert.ok(liveBatch, id);
+    if (manifest.monsterSources[id] === 'canonical-branch-record') {
+      const expected = sourceAtlas(manifest.approved[id]).monster_contents[id];
+      assert.deepEqual(stripBannedTermEdits(liveBatch), stripBannedTermEdits(expected), id);
+    } else {
+      const page = gitShow(manifest.approved[id], `docs/game-logic/Monster-Batch-${id}.md`);
+      for (const entry of liveBatch.entries) {
+        assert.ok(page.includes(`${entry.id} · ${entry.display_name}`), `${id} ${entry.id} title`);
+        assert.ok(page.includes(stripBannedTermEdits(entry).prose), `${id} ${entry.id} prose`);
+      }
+    }
+  }
 });
 
 test('Given excluded B017 When story-batch stage Then E_STORY_CONTENT and worldbuilding stays incomplete', () => {
@@ -357,15 +426,15 @@ test('Given excluded B017 When story-batch stage Then E_STORY_CONTENT and worldb
   assert.match(result.stderr, /^E_STORY_CONTENT: B017/m);
 });
 
-test('Given excluded M003 When monster-batch stage Then E_MONSTER_CONTENT', () => {
+test('Given excluded M007 When monster-batch stage Then E_MONSTER_CONTENT', () => {
   const expansion = fileURLToPath(new URL('./verify-world-expansion.mjs', import.meta.url));
   const result = spawnSync(process.execPath, [
     expansion,
     '--docs', join(repositoryRoot, 'docs', 'game-logic'),
     '--stage', 'monster-batch',
-    '--batch', 'M003',
+    '--batch', 'M007',
     '--atlas', atlasPath,
   ], { cwd: repositoryRoot, encoding: 'utf8' });
   assert.equal(result.status, 1);
-  assert.match(result.stderr, /^E_MONSTER_CONTENT: M003/m);
+  assert.match(result.stderr, /^E_MONSTER_CONTENT: M007/m);
 });
