@@ -8,6 +8,7 @@ import sys
 import tempfile
 import unittest
 from hashlib import sha256
+from collections import deque
 from pathlib import Path
 
 from PIL import Image
@@ -157,6 +158,12 @@ def longest_constant_run(values: list[int]) -> int:
     return longest
 
 
+def idle_n_skin_above_collar(image: Image.Image, skin_rgb: tuple[int, int, int]) -> int:
+    top = opaque_rows(image)[0][0]
+    collar = top + measure_heads(image)[2]
+    return count_rgb(image, skin_rgb, top, collar)
+
+
 def limb_span(image: Image.Image, y0: int, y1: int) -> int:
     px = image.load()
     width, _height = image.size
@@ -172,6 +179,65 @@ def limb_span(image: Image.Image, y0: int, y1: int) -> int:
     if right < left:
         return 0
     return right - left + 1
+
+
+def opaque_components(image: Image.Image, alpha_min: int = 1) -> list[list[tuple[int, int]]]:
+    px = image.load()
+    width, height = image.size
+    seen = [[False] * width for _ in range(height)]
+    components: list[list[tuple[int, int]]] = []
+    for y in range(height):
+        for x in range(width):
+            if seen[y][x] or px[x, y][3] < alpha_min:
+                continue
+            queue = deque([(x, y)])
+            seen[y][x] = True
+            cells: list[tuple[int, int]] = []
+            while queue:
+                cx, cy = queue.popleft()
+                cells.append((cx, cy))
+                for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                    nx, ny = cx + dx, cy + dy
+                    if 0 <= nx < width and 0 <= ny < height and not seen[ny][nx] and px[nx, ny][3] >= alpha_min:
+                        seen[ny][nx] = True
+                        queue.append((nx, ny))
+            components.append(cells)
+    components.sort(key=len, reverse=True)
+    return components
+
+
+def chebyshev_to_component(anchor: list[tuple[int, int]], other: list[tuple[int, int]]) -> int:
+    occupied = set(anchor)
+    best = 96 + 128
+    for x, y in other:
+        for dx in range(-2, 3):
+            for dy in range(-2, 3):
+                if (x + dx, y + dy) in occupied:
+                    best = min(best, max(abs(dx), abs(dy)))
+        if best == 0:
+            return 0
+    if best <= 2:
+        return best
+    for x, y in other:
+        for ax, ay in occupied:
+            best = min(best, max(abs(x - ax), abs(y - ay)))
+            if best <= 1:
+                return best
+    return best
+
+
+def detached_opaque_components(image: Image.Image) -> list[tuple[int, tuple[int, int, int, int]]]:
+    components = opaque_components(image)
+    if not components:
+        return []
+    torso = components[0]
+    detached: list[tuple[int, tuple[int, int, int, int]]] = []
+    for component in components[1:]:
+        if chebyshev_to_component(torso, component) > 1:
+            xs = [p[0] for p in component]
+            ys = [p[1] for p in component]
+            detached.append((len(component), (min(xs), min(ys), max(xs), max(ys))))
+    return detached
 
 
 class DraftAssemblyTests(unittest.TestCase):
@@ -288,6 +354,11 @@ class DraftAssemblyTests(unittest.TestCase):
                 self.assertEqual(north_eyes, 0, asset_id)
                 self.assertGreater(count_rgb(north, character["palette"]["hair"][:3], top, neck), 40)
                 self.assertGreater(count_rgb(south, skin, top, neck) + south_eyes, 0)
+                self.assertEqual(
+                    idle_n_skin_above_collar(north, skin),
+                    0,
+                    f"{asset_id} idle-N skin above collar",
+                )
             self.assertNotEqual(south.tobytes(), north.tobytes(), asset_id)
 
     def test_east_west_are_not_horizontal_mirrors_and_gear_stays_attached(self):
@@ -374,6 +445,12 @@ class DraftAssemblyTests(unittest.TestCase):
                 self.assertGreater(contact, 0, f"{asset_id} {facing} attack contact")
                 self.assertLess(contact, 5, f"{asset_id} {facing} attack recovery")
                 self.assertLess(attack_span[-1], max(attack_span), f"{asset_id} {facing} attack recover")
+                for frame in range(builder.ACTIONS["attack"]):
+                    detached = detached_opaque_components(frames[(facing, "attack", frame)])
+                    self.assertEqual(
+                        detached, [],
+                        f"{asset_id} {facing} attack {frame} detached={detached}",
+                    )
                 down_tops = [opaque_bbox(frames[(facing, "down", frame)])[1] for frame in range(4)]
                 down_heights = [
                     opaque_bbox(frames[(facing, "down", frame)])[3] - opaque_bbox(frames[(facing, "down", frame)])[1]
@@ -384,6 +461,20 @@ class DraftAssemblyTests(unittest.TestCase):
                 idle_blobs = [frames[(facing, "idle", frame)].tobytes() for frame in range(4)]
                 self.assertGreaterEqual(len(set(idle_blobs)), 3, f"{asset_id} {facing} idle motion")
                 self.assertEqual(idle_blobs[1], idle_blobs[3], f"{asset_id} {facing} idle loop return")
+
+    def test_attack_frames_have_no_detached_opaque_components(self):
+        # Given: 전 캐릭터 전 방향 attack 프레임.
+        packed = render_all_frames()
+        # When: 불투명 픽셀 4연결 성분을 잰다.
+        for asset_id, (_character, frames) in packed.items():
+            for facing in builder.FACINGS:
+                for frame in range(builder.ACTIONS["attack"]):
+                    image = frames[(facing, "attack", frame)]
+                    # Then: 어떤 성분도 가장 큰 몸통 성분에서 1px 넘게 떨어지지 않는다.
+                    self.assertEqual(
+                        detached_opaque_components(image), [],
+                        f"{asset_id} {facing} attack {frame}",
+                    )
 
     def test_every_frame_stays_inside_the_cell(self):
         # Given: 276 프레임.
@@ -495,6 +586,68 @@ class DraftAssemblyTests(unittest.TestCase):
             # Then: 인자 오류로 종료하며 cwd를 변경하지 않는다.
             self.assertEqual(result.returncode, 2)
             self.assertEqual(list(Path(temporary).iterdir()), [])
+
+    def test_explorer_pilot_emits_eight_contract_frames(self):
+        # Given: ADR-002 Decision 2 파일럿 역할과 두 개의 빈 출력 경로.
+        expected_roles = {
+            "idle-N", "idle-E", "idle-S", "idle-W",
+            "attack-windup", "attack-contact", "hit", "down",
+        }
+        with tempfile.TemporaryDirectory(prefix="explorer-pilot-") as temporary:
+            root = Path(temporary)
+            first = root / "run-a"
+            second = root / "run-b"
+            # When: 탐사원 8프레임 파일럿을 두 번 조립한다.
+            first_manifest_path = builder.build_explorer_pilot(first)
+            builder.build_explorer_pilot(second)
+            pngs = sorted(path for path in first.iterdir() if path.suffix == ".png")
+            manifest = json.loads(first_manifest_path.read_text())
+            role_order = (
+                "idle-N", "idle-E", "idle-S", "idle-W",
+                "attack-windup", "attack-contact", "hit", "down",
+            )
+            # Then: PNG 8장, 각 96x128, 바이트 결정적이며 기하 계약이 프레임마다 유지된다.
+            self.assertEqual(len(pngs), 8)
+            self.assertEqual({path.name for path in first.iterdir()}, {f"{role}.png" for role in expected_roles} | {"manifest.json"})
+            self.assertEqual({path.stem for path in pngs}, expected_roles)
+            self.assertEqual([entry["role"] for entry in manifest["frames"]], list(role_order))
+            self.assertEqual(len(manifest["frames"]), 8)
+            for entry, path in zip(manifest["frames"], [first / f"{role}.png" for role in role_order]):
+                self.assertEqual(entry["role"], path.stem)
+                self.assertEqual(entry["path"], path.name)
+                with Image.open(path) as image:
+                    self.assertEqual(image.size, (96, 128))
+                    self.assertEqual(image.size, (builder.W, builder.H))
+                    self.assertEqual(edge_opaque_count(image), 0, entry["role"])
+                    x0, y0, x1, y1 = opaque_bbox(image)
+                    self.assertGreater(x0, 0, entry["role"])
+                    self.assertGreater(y0, 0, entry["role"])
+                    self.assertLess(x1, builder.W - 1, entry["role"])
+                    self.assertLess(y1, builder.H - 1, entry["role"])
+                    if entry["role"] in {"attack-windup", "attack-contact"}:
+                        self.assertEqual(
+                            detached_opaque_components(image), [],
+                            entry["role"],
+                        )
+                    try:
+                        heads, body_h, head_h, _foot = measure_heads(image)
+                    except AssertionError:
+                        if entry["role"].startswith("idle-"):
+                            raise
+                    else:
+                        self.assertAlmostEqual(
+                            heads, HEADS_TARGET, delta=HEADS_TOLERANCE,
+                            msg=f"{entry['role']} heads={heads} body={body_h} head={head_h}",
+                        )
+                self.assertEqual(
+                    (second / path.name).read_bytes(),
+                    path.read_bytes(),
+                    entry["role"],
+                )
+            self.assertEqual(
+                (second / "manifest.json").read_bytes(),
+                first_manifest_path.read_bytes(),
+            )
 
 
 if __name__ == "__main__":
