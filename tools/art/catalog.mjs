@@ -20,9 +20,12 @@ export const BACKENDS = new Set([
   'openai_image',
   'trellis_v1',
   'comfyui_trellis',
+  'comfyui_texture',
+  'meshygen_plus',
+  'tripo3d',
   'none',
 ]);
-export const INVALID_BACKENDS = new Set(['trellis_v1', 'comfyui_trellis']);
+export const INVALID_BACKENDS = new Set(['comfyui_trellis', 'meshygen_plus', 'tripo3d']);
 export const STATUSES = new Set(['draft', 'reviewed', 'promoted', 'blocked', 'archived']);
 export const RIGHTS = new Set(['allowed', 'blocked', 'unresolved']);
 export const SOURCES = new Set(['generate', 'existing']);
@@ -56,7 +59,6 @@ export const BACKEND_2D_NODE = {
     provider: 'openai',
     model: 'openai-imagegen',
   },
-  comfyui_trellis: { tool: 'comfyui' },
 };
 
 export const BACKEND_3D_NODE = {
@@ -67,11 +69,33 @@ export const BACKEND_3D_NODE = {
     revision: TRELLIS_REVISION,
     execution: 'direct_python',
   },
-  comfyui_trellis: {
-    tool: 'trellis',
-    execution: 'comfyui',
-  },
 };
+
+export function backendPolicyError(selection) {
+  const backend = selection.generation_backend;
+  if (!BACKENDS.has(backend)) return 'unknown_backend';
+  if (selection.auto_fallback === true || selection.fallback_backend != null) {
+    return 'automatic_fallback_forbidden';
+  }
+  if (backend === 'meshygen_plus') return 'provider_identity_unverified';
+  if (backend === 'tripo3d') {
+    return selection.user_explicit === true ? 'provider_not_configured' : 'user_explicit_required';
+  }
+  if (backend === 'comfyui_trellis') return 'backend_disabled';
+  if (backend === 'comfyui_texture'
+    && (selection.source !== 'existing' || selection.asset_class !== 'tile')) {
+    return 'texture_intake_only';
+  }
+  if (backend === 'trellis_v1') {
+    if (!MESH_ASSETS.has(selection.asset_class)) return 'backend_asset_mismatch';
+    for (const field of ['provider', 'model', 'revision']) {
+      if (selection[field] !== undefined && selection[field] !== BACKEND_3D_NODE.trellis_v1[field]) {
+        return 'provider_identity_mismatch';
+      }
+    }
+  }
+  return null;
+}
 
 export const NODE_META = {
   rights_check: { kind: 'gate' },

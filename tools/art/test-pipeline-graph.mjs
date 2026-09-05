@@ -209,7 +209,7 @@ test('prop compile fails closed when backend is TRELLIS', () => {
     generation_backend: 'comfyui_trellis',
     rights_status: 'allowed',
     source: 'generate',
-  }), 'trellis_invalid');
+  }), 'backend_disabled');
 });
 
 test('cli compile four_dir omits animo', async () => {
