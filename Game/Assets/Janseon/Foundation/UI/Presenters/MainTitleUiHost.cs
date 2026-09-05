@@ -31,6 +31,8 @@ namespace Janseon.Foundation.UI
         public Task Ready => ready.Task;
         public UIDocument Document => document;
 
+        [Inject] RuntimeSlotView slotView;
+
         [Inject]
         public void Construct(MainTitlePresenter titlePresenter, UiScreenDocumentLease lease)
         {
@@ -96,6 +98,7 @@ namespace Janseon.Foundation.UI
 
             // Named-root resolution from panel reference dimensions (Design dual-res).
             screenRoot = UiResolutionClass.ApplyFromPanel(root, UiElementNames.MainTitleRoot, panelSettings);
+            slotView.BindTitle(screenRoot);
             if (screenRoot != null)
             {
                 screenRoot.RegisterCallback<GeometryChangedEvent>(OnGeometryChanged);

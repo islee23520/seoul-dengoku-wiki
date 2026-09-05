@@ -39,6 +39,8 @@ namespace Janseon.Foundation.Tests
 
         static readonly string[] QuarantineMarkers =
         {
+            "/ArtCandidates/",
+            "/Quarantine/",
             "/ArtSource/",
             "StationPropValidation",
         };
@@ -169,7 +171,7 @@ namespace Janseon.Foundation.Tests
                 }
 
                 string text = File.ReadAllText(file);
-                if (Regex.IsMatch(text, @"ArtSource|Art/Props|poc-prop-|trellis_v1|StationPropValidation", RegexOptions.IgnoreCase))
+                if (Regex.IsMatch(text, @"ArtCandidates|Quarantine|ArtSource|Art/Props|poc-prop-|trellis_v1|StationPropValidation", RegexOptions.IgnoreCase))
                 {
                     leaks.Add(norm.Substring(Application.dataPath.Length - "Assets".Length));
                 }

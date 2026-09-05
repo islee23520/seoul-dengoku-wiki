@@ -14,6 +14,8 @@ namespace Janseon.Foundation.Editor
 {
     public static class FoundationProjectBuilder
     {
+        public static void WireRuntimeSlotCatalog() => RuntimeSlotCatalogBuilder.Wire();
+
         [System.Serializable]
         sealed class PropCopyManifest { public PropCopyFile[] files; }
         [System.Serializable]

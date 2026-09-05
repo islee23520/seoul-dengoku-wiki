@@ -26,6 +26,7 @@ const summary = {
   runtime_reference_count: audit.runtimeReferences.length,
   bom_invalid_for_runtime: audit.bomEvaluations.filter((b) => !b.ok).length,
   bom_valid_for_runtime: audit.bomEvaluations.filter((b) => b.ok).length,
+  runtime_slot_evaluations: audit.bomEvaluations.filter((b) => b.runtime_slot),
 };
 
 if (process.argv.includes('--json')) {
