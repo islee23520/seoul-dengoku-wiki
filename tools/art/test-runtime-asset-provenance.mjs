@@ -395,3 +395,44 @@ test('runtime slot: catalog cannot claim a blocked slot is bound', t => {
   assert.equal(audit.ok, false);
   assert.ok(audit.violations.some(v => v.code === 'catalog_slot_unprovenanced'));
 });
+
+test('character lineage accepts only reviewed sprite GUID substitution', t => {
+  const slot = slotContract.slots.find(s => s.slot === 'character-explorer');
+  const { root, row, put, bind, save } = slotFixture(t, slot);
+  const sources = {};
+  let index = 1;
+  for (const [key, path] of Object.entries(row.runtime_slot_files)) {
+    const source = `Game/Assets/Janseon/ArtCandidates/TestFixture/${key.replaceAll('/', '-')}.${key.endsWith('/clip') ? 'anim' : 'png'}`;
+    sources[path] = source;
+    if (!key.endsWith('/clip')) {
+      put(source, readFileSync(join(root, path)));
+      if (key !== 'atlas') {
+        put(source + '.meta', `guid: ${index.toString(16).padStart(32, '0')}\n`);
+        put(path + '.meta', `guid: ${(index + 1000).toString(16).padStart(32, '0')}\n`);
+        index++;
+      }
+    }
+  }
+  for (const [key, path] of Object.entries(row.runtime_slot_files)) {
+    if (!key.endsWith('/clip')) continue;
+    const framePath = row.runtime_slot_files[key.slice(0, -4) + '0'];
+    const oldGuid = readFileSync(join(root, sources[framePath] + '.meta'), 'utf8').trim().slice(6);
+    const newGuid = readFileSync(join(root, framePath + '.meta'), 'utf8').trim().slice(6);
+    const before = `time: 0\nvalue: {fileID: 21300000, guid: ${oldGuid}, type: 3}\n`;
+    row.runtime_files[path] = put(sources[path], before);
+    put(path, before.replace(oldGuid, newGuid));
+  }
+  bind();
+  row.generated_from = { kind: 'sprite-guid-retarget-v1', source_binding_hash: row.source_binding.sha256, candidate_files: sources };
+  for (const [key, path] of Object.entries(row.runtime_slot_files))
+    if (key.endsWith('/clip')) row.runtime_files[path] = sha256(readFileSync(join(root, path)));
+  save();
+  assert.equal(evaluatePromotedAsset(row, { repoRoot: root }).ok, true);
+  const clip = row.runtime_slot_files['N/idle/clip'];
+  const original = readFileSync(join(root, clip));
+  row.runtime_files[clip] = put(clip, original.toString().replace('time: 0', 'time: 9'));
+  assert.equal(evaluatePromotedAsset(row, { repoRoot: root }).ok, false, 'rehashed timing change is not approved');
+  row.runtime_files[clip] = put(clip, original);
+  row.generated_from.source_binding_hash = 'f'.repeat(64);
+  assert.equal(evaluatePromotedAsset(row, { repoRoot: root }).ok, false, 'wrong parent binding fails');
+});

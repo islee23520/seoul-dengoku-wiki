@@ -60,7 +60,7 @@ export function evaluatePromotedAsset(asset, options = {}) {
   const hash = bytes => createHash('sha256').update(bytes).digest('hex');
   const fileMatches = (path, expected) => {
     if (typeof path !== 'string' || !isSha256(expected)) return false;
-    const full = resolve(root, path);
+    const full = resolve(root, options.runtimeFileSources?.[path] ?? path);
     if (!existsSync(full) || !statSync(full).isFile()) return false;
     if (asset.runtime_slot && (!canonicalRepoPath(path)
       || !realpathSync(full).startsWith(realpathSync(root) + sep))) return false;
@@ -81,7 +81,7 @@ export function evaluatePromotedAsset(asset, options = {}) {
       && binding.review_hashes.includes(r.receipt_hash))) errors.push({ code: 'review_receipt_unbound' });
   const paths = Object.entries(asset.runtime_files ?? {});
   if (paths.length === 0 || !paths.every(([path, sha]) => fileMatches(path, sha))) errors.push({ code: 'runtime_files_unbound' });
-  if (asset.runtime_slot) errors.push(...evaluateSlotContract(asset, binding));
+  if (asset.runtime_slot) errors.push(...evaluateSlotContract(asset, binding, root));
   const ok = errors.length === 0;
   return { ok, class: ok ? CLASS.A_VALID_PROMOTED : CLASS.E_UNKNOWN, errors,
     asset_id: asset.asset_id ?? null, runtime_slot: asset.runtime_slot ?? null,
@@ -116,7 +116,7 @@ export function runtimeSlotKeys(slot) {
   return keys;
 }
 
-function evaluateSlotContract(asset, binding) {
+function evaluateSlotContract(asset, binding, root) {
   const errors = [];
   const slot = runtimeSlotContract.slots.find(s => s.slot === asset.runtime_slot);
   if (!slot) return [{ code: 'unknown_runtime_slot' }];
@@ -138,9 +138,45 @@ function evaluateSlotContract(asset, binding) {
     || !runtimeSlotContract.source_roots.some(root => asset.raw_path.startsWith(root))) errors.push({ code: 'slot_raw_path_forbidden' });
   if (!binding || binding.runtime_slot !== asset.runtime_slot || binding.raw_hash !== asset.raw_hash
     || !sameFileMap(binding.rights_evidence, asset.rights_evidence)
-    || !sameFileMap(binding.runtime_files, asset.runtime_files)
+    || !(sameFileMap(binding.runtime_files, asset.runtime_files)
+      || verifyRetargetedClips(asset, binding, root))
     || !sameFileMap(binding.runtime_slot_files, files)) errors.push({ code: 'slot_source_binding_mismatch' });
   return errors;
+}
+
+export function verifyRetargetedClips(asset, binding, root) {
+  const lineage = asset.generated_from;
+  if (!lineage || lineage.kind !== 'sprite-guid-retarget-v1'
+    || lineage.source_binding_hash !== asset.source_binding?.sha256
+    || !sameFileMap(binding?.runtime_slot_files, asset.runtime_slot_files)
+    || Object.keys(binding?.runtime_files ?? {}).length !== Object.keys(asset.runtime_files ?? {}).length) return false;
+  const hash = bytes => createHash('sha256').update(bytes).digest('hex');
+  const guidMap = new Map();
+  const clips = [];
+  for (const [key, path] of Object.entries(asset.runtime_slot_files)) {
+    const source = lineage.candidate_files?.[path];
+    if (!canonicalRepoPath(source) || !source.startsWith(runtimeSlotContract.candidate_root)
+      || !existsSync(resolve(root, source)) || !existsSync(resolve(root, path))
+      || hash(readFileSync(resolve(root, source))) !== binding.runtime_files[path]) return false;
+    if (key.endsWith('/clip')) { clips.push([source, path]); continue; }
+    if (asset.runtime_files[path] !== binding.runtime_files[path]) return false;
+    if (key === 'atlas') continue;
+    const sourceMeta = resolve(root, source + '.meta');
+    const runtimeMeta = resolve(root, path + '.meta');
+    if (!existsSync(sourceMeta) || !existsSync(runtimeMeta)) return false;
+    const from = /^guid: ([a-f0-9]{32})$/m.exec(readFileSync(sourceMeta, 'utf8'))?.[1];
+    const to = /^guid: ([a-f0-9]{32})$/m.exec(readFileSync(runtimeMeta, 'utf8'))?.[1];
+    if (!from || !to || guidMap.has(from) && guidMap.get(from) !== to) return false;
+    guidMap.set(from, to);
+  }
+  if (clips.length !== 20) return false;
+  for (const [source, path] of clips) {
+    const before = readFileSync(resolve(root, source), 'utf8');
+    const expected = before.replace(/guid: ([a-f0-9]{32})/g, (token, guid) =>
+      guidMap.has(guid) ? `guid: ${guidMap.get(guid)}` : token);
+    if (readFileSync(resolve(root, path), 'utf8') !== expected) return false;
+  }
+  return true;
 }
 
 export function isSha256(value) {
