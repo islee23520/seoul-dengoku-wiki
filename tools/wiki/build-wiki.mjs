@@ -247,10 +247,31 @@ async function removeTree(path) {
   await rmdir(path);
 }
 
+const FRAGMENT_PAGE = /^(Story-Batch-B\d{3}|Monster-Batch-M\d{3}|Hostile-Group-G\d{2})\.md$/;
+const CAST_INDEX_HUB_ROW = /^\| ([^|]+) \| ([^|]+) \| `docs\/game-logic\/([^`]+)`/gm;
+
+export function publishedFragmentPages(indexMarkdown) {
+  const published = new Set();
+  for (const match of indexMarkdown.matchAll(CAST_INDEX_HUB_ROW)) {
+    const status = match[2].trim();
+    const file = match[3].trim();
+    if (status.includes('미게시')) continue;
+    if (status === '게시' || status.startsWith('게시')) published.add(file);
+  }
+  return published;
+}
+
 async function readSourcePages(canonicalSource) {
   const names = (await readdir(canonicalSource)).filter((name) => name.endsWith('.md')).sort();
+  let publishedFragments = new Set();
+  try {
+    publishedFragments = publishedFragmentPages(await readFile(join(canonicalSource, 'Cast-Index.md'), 'utf8'));
+  } catch (err) {
+    if (err && err.code !== 'ENOENT') throw err;
+  }
   const pages = [];
   for (const page of names) {
+    if (FRAGMENT_PAGE.test(page) && !publishedFragments.has(page)) continue;
     const path = join(canonicalSource, page);
     const stats = await lstat(path);
     if (stats.isSymbolicLink()) {
