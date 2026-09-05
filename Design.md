@@ -248,3 +248,7 @@ return-action
 ```
 
 이 이름 집합이 스냅샷·테스트·캡처의 단일 출처다. 문구 리터럴은 테스트하지 않는다.
+
+## 12. 검수 소품의 현재 연결
+
+Foundation의 여섯 역사 소품은 동일 화면 lease의 카메라가 RenderTexture로 렌더링하고 노선 패널에 표시한다. 프리뷰는 런타임 3D 모델·재질을 사용하며 정적 screenshot 대체물이 아니다. 카메라·프리뷰 RenderTexture는 Foundation unload 시 해제된다. 소품은 보존된 원본 hash, 실제 독립 검수 파일과 현재 import/runtime 증거로 BOM에 연결한다. 캐릭터·타이틀·아이콘·역사 텍스처의 미확인 서비스 경로와 검수는 별도 미완료 상태다.

@@ -40,8 +40,6 @@ namespace Janseon.Foundation.Tests
         static readonly string[] QuarantineMarkers =
         {
             "/ArtSource/",
-            "/Art/Props/",
-            "poc-prop-",
             "StationPropValidation",
         };
 
@@ -80,6 +78,7 @@ namespace Janseon.Foundation.Tests
         [Test]
         public void PlayableScenes_DoNotReferenceQuarantineOrTrellisAssets()
         {
+            Assert.That(RunProvenance("auditRuntimeProvenance()").ok, Is.True, "real provenance gate must accept every scene dependency");
             var leaks = new List<string>();
             foreach (string scenePath in PlayableScenes)
             {
@@ -298,7 +297,7 @@ namespace Janseon.Foundation.Tests
             };
             info.ArgumentList.Add("--input-type=module");
             info.ArgumentList.Add("-e");
-            info.ArgumentList.Add("import {classifyBackend,evaluatePromotedAsset} from './tools/art/runtime-asset-provenance.mjs';"
+            info.ArgumentList.Add("import {classifyBackend,evaluatePromotedAsset,auditRuntimeProvenance} from './tools/art/runtime-asset-provenance.mjs';"
                 + "console.log(JSON.stringify(" + expression + "));");
             using var process = System.Diagnostics.Process.Start(info);
             var stdout = process.StandardOutput.ReadToEndAsync();

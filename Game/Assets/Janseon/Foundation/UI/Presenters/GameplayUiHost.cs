@@ -18,6 +18,8 @@ namespace Janseon.Foundation.UI
         [SerializeField] StyleSheet gameplayStyle;
         [SerializeField] StyleSheet sharedStyle;
         [SerializeField] PanelSettings panelSettings;
+        [SerializeField] Camera stationCamera;
+        RenderTexture stationTexture;
 
         readonly TaskCompletionSource<bool> ready =
             new(TaskCreationOptions.RunContinuationsAsynchronously);
@@ -116,6 +118,15 @@ namespace Janseon.Foundation.UI
             }
 
             screenRoot = UiResolutionClass.ApplyFromPanel(root, UiElementNames.GameplayRoot, panelSettings);
+            if (stationCamera != null)
+            {
+                stationTexture = new RenderTexture(640, 360, 24);
+                stationTexture.Create();
+                stationCamera.targetTexture = stationTexture;
+                var preview = new Image { name = "station-prop-preview", image = stationTexture, scaleMode = ScaleMode.ScaleToFit };
+                preview.style.height = 240;
+                root.Q("route-rail").Add(preview);
+            }
             if (screenRoot != null)
             {
                 screenRoot.UnregisterCallback<GeometryChangedEvent>(OnGeometryChanged);
@@ -154,6 +165,12 @@ namespace Janseon.Foundation.UI
 
         void OnDestroy()
         {
+            if (stationTexture != null)
+            {
+                if (stationCamera != null) stationCamera.targetTexture = null;
+                stationTexture.Release();
+                Destroy(stationTexture);
+            }
             if (screenRoot != null)
             {
                 screenRoot.UnregisterCallback<GeometryChangedEvent>(OnGeometryChanged);

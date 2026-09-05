@@ -14,6 +14,56 @@ namespace Janseon.Foundation.Editor
 {
     public static class FoundationProjectBuilder
     {
+        [System.Serializable]
+        sealed class PropCopyManifest { public PropCopyFile[] files; }
+        [System.Serializable]
+        sealed class PropCopyFile { public string source; public string path; public string sha256; }
+
+        public static void ImportVerifiedStationCandidates()
+        {
+            string manifestPath = System.Environment.GetEnvironmentVariable("JANSEON_PROP_COPY_MANIFEST");
+            var manifest = JsonUtility.FromJson<PropCopyManifest>(File.ReadAllText(manifestPath));
+            foreach (var file in manifest.files)
+            {
+                byte[] bytes = File.ReadAllBytes(file.source);
+                using var sha = System.Security.Cryptography.SHA256.Create();
+                string actual = System.BitConverter.ToString(sha.ComputeHash(bytes)).Replace("-", "").ToLowerInvariant();
+                if (actual != file.sha256) throw new System.InvalidOperationException("Prop source hash mismatch: " + file.source);
+                Directory.CreateDirectory(Path.GetDirectoryName(file.path));
+                if (File.Exists(file.path) && !System.Linq.Enumerable.SequenceEqual(File.ReadAllBytes(file.path), bytes))
+                    throw new System.InvalidOperationException("Refusing to replace different prop bytes: " + file.path);
+                if (!File.Exists(file.path)) File.Copy(file.source, file.path, false);
+            }
+            AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
+            Scene scene = EditorSceneManager.OpenScene(FoundationScenes.Foundation, OpenSceneMode.Single);
+            GameObject root = GameObject.Find("Station Props");
+            if (root == null) root = new GameObject("Station Props");
+            string[] names = { "ticket-gate", "pump-crate", "shutter", "pillar", "bench", "cabinet" };
+            for (int i = 0; i < names.Length; i++)
+            {
+                string id = "poc-prop-" + names[i];
+                string path = "Assets/Janseon/Art/Props/" + id + "/" + id + ".prefab";
+                if (root.transform.Find(id) != null) continue;
+                var prefab = AssetDatabase.LoadAssetAtPath<GameObject>(path);
+                if (prefab == null) throw new System.InvalidOperationException("Prop prefab import failed: " + path);
+                var instance = (GameObject)PrefabUtility.InstantiatePrefab(prefab, scene);
+                instance.name = id;
+                instance.transform.SetParent(root.transform);
+                instance.transform.localPosition = new Vector3((i % 3 - 1) * 2.4f, 0f, (i / 3 - 0.5f) * 2.4f);
+            }
+            Camera camera = Object.FindFirstObjectByType<Camera>();
+            camera.orthographicSize = 3f;
+            camera.transform.position = new Vector3(-9f, 9f, -9f);
+            camera.transform.rotation = Quaternion.Euler(GenreContract.CameraPitchDegrees, GenreContract.CameraYawDegrees, 0f);
+            GameplayUiHost host = Object.FindFirstObjectByType<GameplayUiHost>();
+            SetSerializedField(host, "stationCamera", camera);
+            EditorUtility.SetDirty(host);
+            EditorSceneManager.MarkSceneDirty(scene);
+            EditorSceneManager.SaveScene(scene);
+            AssetDatabase.SaveAssets();
+            Debug.Log("STATION_PROP_IMPORT_OK count=6 sourceHashes=verified");
+        }
+
         [MenuItem("Janseon/Open Bootstrap Scene")]
         public static void OpenBootstrapScene()
         {

@@ -5,9 +5,11 @@ using System.Threading;
 using System.Threading.Tasks;
 using Janseon.Foundation.AppFlow;
 using Janseon.Foundation.Composition;
+using Janseon.Foundation.UI;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 using VContainer;
 using VContainer.Unity;
 
@@ -75,12 +77,66 @@ namespace Janseon.Foundation.Tests
             Assert.That(SceneManager.GetSceneByPath(FoundationScenes.MainTitle).isLoaded, Is.False);
             Assert.That(SceneManager.sceneCount, Is.EqualTo(2), "Bootstrap + Foundation only");
 
+            GameObject stationProps = GameObject.Find("Station Props");
+            Assert.That(stationProps, Is.Not.Null, "six verified station props must be connected to Foundation");
+            Assert.That(stationProps.transform.childCount, Is.EqualTo(6));
+            string[] familyNames = { "ticket-gate", "pump-crate", "shutter", "pillar", "bench", "cabinet" };
+            foreach (string familyName in familyNames)
+            {
+                Transform family = stationProps.transform.Find("poc-prop-" + familyName);
+                Assert.That(family, Is.Not.Null, familyName);
+                MeshRenderer[] renderers = family.GetComponentsInChildren<MeshRenderer>();
+                Assert.That(renderers, Is.Not.Empty, familyName + " needs an active renderer");
+                foreach (MeshRenderer renderer in renderers)
+                {
+                    Assert.That(renderer.enabled && renderer.gameObject.activeInHierarchy, Is.True);
+                    Mesh mesh = renderer.GetComponent<MeshFilter>().sharedMesh;
+                    Assert.That(mesh, Is.Not.Null);
+                    Assert.That(mesh.vertexCount, Is.GreaterThan(0));
+                    Assert.That(renderer.sharedMaterial, Is.Not.Null);
+                    Assert.That(renderer.sharedMaterial.mainTexture, Is.Not.Null);
+                    Assert.That(renderer.sharedMaterial.shader.isSupported, Is.True);
+                    Assert.That(renderer.bounds.min.y, Is.EqualTo(0f).Within(0.02f));
+                }
+            }
+
+            GameplayUiHost host = UnityEngine.Object.FindFirstObjectByType<GameplayUiHost>();
+            Image preview = host.Document.rootVisualElement.Q<Image>("station-prop-preview");
+            Assert.That(preview, Is.Not.Null);
+            var target = preview.image as RenderTexture;
+            Assert.That(target, Is.Not.Null);
+            Camera camera = UnityEngine.Object.FindObjectsByType<Camera>(FindObjectsSortMode.None)
+                .Single(c => c.targetTexture == target);
+            Assert.That(target.IsCreated(), Is.True);
+            camera.Render(); // synchronous render completion, not a timed frame wait
+            var pixels = new Texture2D(target.width, target.height, TextureFormat.RGBA32, false);
+            RenderTexture previous = RenderTexture.active;
+            try
+            {
+                RenderTexture.active = target;
+                pixels.ReadPixels(new Rect(0, 0, target.width, target.height), 0, 0);
+                pixels.Apply();
+                Assert.That(pixels.GetPixels32().Count(p => p.r > 60 || p.g > 60 || p.b > 60),
+                    Is.GreaterThan(300), "live station preview must contain rendered geometry");
+            }
+            finally
+            {
+                RenderTexture.active = previous;
+                UnityEngine.Object.DestroyImmediate(pixels);
+            }
+
             string evidence = BuildEvidence(
                 coordinator,
                 startup.TransitionId,
                 foundationOutcome.TransitionId,
                 duplicateFoundation.TransitionId);
             Debug.Log(evidence);
+
+            Task unloaded = WaitForSceneUnloadedAsync(FoundationScenes.Foundation, TimeSpan.FromSeconds(15));
+            TransitionOutcome returnToTitle = await coordinator.OpenMainTitleAsync(CancellationToken.None);
+            await unloaded;
+            Assert.That(returnToTitle.Status, Is.EqualTo(TransitionStatus.Completed));
+            Assert.That(target == null || !target.IsCreated(), Is.True, "Foundation must release its owned preview texture");
         }
 
         [Test]

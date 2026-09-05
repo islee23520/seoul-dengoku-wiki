@@ -163,7 +163,8 @@ test('production worktree audit: playable slice has no C/D/E runtime refs', () =
   const audit = auditRuntimeProvenance(repoRoot);
   assert.equal(audit.ok, true, formatViolations(audit));
   assert.ok(audit.policy.trellis.ok === true);
-  assert.ok(audit.blockedSlots.some((s) => s.slot.startsWith('prop:')));
+  const expectedOpen = 12 - audit.bomEvaluations.filter(b => b.ok).length;
+  assert.equal(audit.blockedSlots.length, expectedOpen);
   assert.ok(audit.blockedSlots.some((s) => s.slot === 'character-explorer'));
   // Code-native UI surfaces classified B
   const ui = audit.classifications.filter((c) => c.path && c.path.includes('Foundation/UI'));

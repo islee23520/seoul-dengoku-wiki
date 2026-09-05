@@ -1,0 +1,32 @@
+{
+  "ok": true,
+  "asset_id": "poc-prop-pump-crate",
+  "repo": "https://github.com/microsoft/TRELLIS",
+  "commit_expected": "442aa1e1afb9014e80681d3bf604e8d728a86ee7",
+  "commit_observed": "442aa1e1afb9014e80681d3bf604e8d728a86ee7",
+  "model": "microsoft/TRELLIS-image-large",
+  "license": "MIT",
+  "execution": "direct_python",
+  "tool": "trellis",
+  "provider": "microsoft",
+  "host_root": "E:\\git\\janseon-asset-pipeline",
+  "seed": 1402,
+  "cpu_fallback": false,
+  "started_unix": 1788516511.6661994,
+  "input_image": "E:\\git\\janseon-asset-pipeline\\jobs\\todo14-props\\poc-prop-pump-crate\\input.png",
+  "input_sha256": "dfc506dcd366b6471f996c78d4cee4ad557ac57f2714f26994e8c0d50818e214",
+  "input_hashes": [
+    "dfc506dcd366b6471f996c78d4cee4ad557ac57f2714f26994e8c0d50818e214"
+  ],
+  "config_hash": "148785d78e62142bfe0538eb2c79e8e5828567e30f94182b5a1a99ba341cc520",
+  "model_hash": "60940f1148489da029fe89c3c46d06dd0870f73ae39e4b2691dae149c0420889",
+  "model_snapshot": "25e0d31ffbebe4b5a97464dd851910efc3002d96",
+  "identity_rerun": false,
+  "glb_path": "E:\\git\\janseon-asset-pipeline\\jobs\\todo14-props\\poc-prop-pump-crate\\poc-prop-pump-crate.raw.glb",
+  "glb_sha256": "d1b8c0f19a8b2e52c986a07ed6d5514ad7fdafd5e717070665ae2d5d93f5253a",
+  "glb_bytes": 355576,
+  "preview_path": "E:\\git\\janseon-asset-pipeline\\jobs\\todo14-props\\poc-prop-pump-crate\\poc-prop-pump-crate.preview.png",
+  "preview_sha256": "c98839e5386a43a3cc86c03e935621bf0dcf3ef641e95650278cf481fdb9a2ab",
+  "preview_bytes": 15654,
+  "finished_unix": 1788516532.5705328
+}

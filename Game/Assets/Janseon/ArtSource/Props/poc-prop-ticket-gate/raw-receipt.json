@@ -1,0 +1,32 @@
+{
+  "ok": true,
+  "asset_id": "poc-prop-ticket-gate",
+  "repo": "https://github.com/microsoft/TRELLIS",
+  "commit_expected": "442aa1e1afb9014e80681d3bf604e8d728a86ee7",
+  "commit_observed": "442aa1e1afb9014e80681d3bf604e8d728a86ee7",
+  "model": "microsoft/TRELLIS-image-large",
+  "license": "MIT",
+  "execution": "direct_python",
+  "tool": "trellis",
+  "provider": "microsoft",
+  "host_root": "E:\\git\\janseon-asset-pipeline",
+  "seed": 1401,
+  "cpu_fallback": false,
+  "started_unix": 1788516450.6558564,
+  "input_image": "E:\\git\\janseon-asset-pipeline\\jobs\\todo14-props\\poc-prop-ticket-gate\\input.png",
+  "input_sha256": "9ef0e729df497b0f571d93be2670daaae29e5ea4211d6d46ba77fadc82faa139",
+  "input_hashes": [
+    "9ef0e729df497b0f571d93be2670daaae29e5ea4211d6d46ba77fadc82faa139"
+  ],
+  "config_hash": "148785d78e62142bfe0538eb2c79e8e5828567e30f94182b5a1a99ba341cc520",
+  "model_hash": "60940f1148489da029fe89c3c46d06dd0870f73ae39e4b2691dae149c0420889",
+  "model_snapshot": "25e0d31ffbebe4b5a97464dd851910efc3002d96",
+  "identity_rerun": false,
+  "glb_path": "E:\\git\\janseon-asset-pipeline\\jobs\\todo14-props\\poc-prop-ticket-gate\\poc-prop-ticket-gate.raw.glb",
+  "glb_sha256": "c3ec7d2bb06c6059808ce11d16944a4f1e344db3610a507fec584ffd5abe48bb",
+  "glb_bytes": 406024,
+  "preview_path": "E:\\git\\janseon-asset-pipeline\\jobs\\todo14-props\\poc-prop-ticket-gate\\poc-prop-ticket-gate.preview.png",
+  "preview_sha256": "bfadf1b7ceaf5c898231af8e6bbd32fb2291119ee89c1cde3b515eb579c5e613",
+  "preview_bytes": 12417,
+  "finished_unix": 1788516511.6137295
+}

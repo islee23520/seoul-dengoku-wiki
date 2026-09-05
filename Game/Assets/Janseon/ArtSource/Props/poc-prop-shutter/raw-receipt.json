@@ -1,0 +1,32 @@
+{
+  "ok": true,
+  "asset_id": "poc-prop-shutter",
+  "repo": "https://github.com/microsoft/TRELLIS",
+  "commit_expected": "442aa1e1afb9014e80681d3bf604e8d728a86ee7",
+  "commit_observed": "442aa1e1afb9014e80681d3bf604e8d728a86ee7",
+  "model": "microsoft/TRELLIS-image-large",
+  "license": "MIT",
+  "execution": "direct_python",
+  "tool": "trellis",
+  "provider": "microsoft",
+  "host_root": "E:\\git\\janseon-asset-pipeline",
+  "seed": 1403,
+  "cpu_fallback": false,
+  "started_unix": 1788516532.6145384,
+  "input_image": "E:\\git\\janseon-asset-pipeline\\jobs\\todo14-props\\poc-prop-shutter\\input.png",
+  "input_sha256": "66266031a1054a0a77beb50999b8f7ccc1fe9acb67056016ad03398abf2f8ad1",
+  "input_hashes": [
+    "66266031a1054a0a77beb50999b8f7ccc1fe9acb67056016ad03398abf2f8ad1"
+  ],
+  "config_hash": "148785d78e62142bfe0538eb2c79e8e5828567e30f94182b5a1a99ba341cc520",
+  "model_hash": "60940f1148489da029fe89c3c46d06dd0870f73ae39e4b2691dae149c0420889",
+  "model_snapshot": "25e0d31ffbebe4b5a97464dd851910efc3002d96",
+  "identity_rerun": false,
+  "glb_path": "E:\\git\\janseon-asset-pipeline\\jobs\\todo14-props\\poc-prop-shutter\\poc-prop-shutter.raw.glb",
+  "glb_sha256": "c89f0f14fcef1e5b4586ab3c9a3cc3e4198c6429b854c02a3a902a3412978f29",
+  "glb_bytes": 415592,
+  "preview_path": "E:\\git\\janseon-asset-pipeline\\jobs\\todo14-props\\poc-prop-shutter\\poc-prop-shutter.preview.png",
+  "preview_sha256": "ade7d3f4c1f0ec3992f4af865e0630b9930688f4540f96df3034ae56ce902b5f",
+  "preview_bytes": 24540,
+  "finished_unix": 1788516551.5142097
+}
