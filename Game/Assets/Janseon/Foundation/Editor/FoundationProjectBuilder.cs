@@ -557,5 +557,31 @@ namespace Janseon.Foundation.Editor
 
             EditorSceneManager.SaveScene(scene, FoundationScenes.Foundation);
         }
+
+        [MenuItem("Janseon/Build WebGL Player")]
+        public static void BuildWebGlPlayer()
+        {
+            string output = Path.GetFullPath(Path.Combine(Application.dataPath, "..", "Builds", "WebGL"));
+            Directory.CreateDirectory(output);
+            var options = new BuildPlayerOptions
+            {
+                scenes = new[]
+                {
+                    FoundationScenes.Bootstrap,
+                    FoundationScenes.MainTitle,
+                    FoundationScenes.Foundation,
+                },
+                locationPathName = output,
+                target = BuildTarget.WebGL,
+                options = BuildOptions.None,
+            };
+            BuildReport report = BuildPipeline.BuildPlayer(options);
+            if (report.summary.result != BuildResult.Succeeded)
+            {
+                throw new System.InvalidOperationException("WebGL build failed: " + report.summary.result);
+            }
+
+            Debug.Log("BUILD_WEBGL_OK output=" + output);
+        }
     }
 }

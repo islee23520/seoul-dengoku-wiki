@@ -46,3 +46,15 @@ node_modules/
 # Local evidence/runtime state
 .omo/evidence/**/tmp/
 *.log
+
+# Local Unity player output
+Game/Builds/
+
+# UTF performance-test runner droppings
+Game/Assets/Resources/PerformanceTestRunInfo.json
+Game/Assets/Resources/PerformanceTestRunInfo.json.meta
+Game/Assets/Resources/PerformanceTestRunSettings.json
+Game/Assets/Resources/PerformanceTestRunSettings.json.meta
+
+# Burst/WebGL player sidecar from local builds
+Game/Data/
