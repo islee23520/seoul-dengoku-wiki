@@ -3,6 +3,7 @@ export const GRAPH_SCHEMA_VERSION = 1;
 export const ASSET_CLASSES = new Set([
   'portrait',
   'character_mesh',
+  'character_sprite',
   'prop',
   'tile',
   'animation_clip',
@@ -30,6 +31,7 @@ export const STATUSES = new Set(['draft', 'reviewed', 'promoted', 'blocked', 'ar
 export const RIGHTS = new Set(['allowed', 'blocked', 'unresolved']);
 export const SOURCES = new Set(['generate', 'existing']);
 export const MAYA_INCOMPATIBLE_ASSETS = new Set([
+  'character_sprite',
   'portrait',
   'tile',
   'identity_lock',
@@ -37,7 +39,7 @@ export const MAYA_INCOMPATIBLE_ASSETS = new Set([
   'title_art',
   'ui_kit',
 ]);
-export const STILL_2D_ASSETS = new Set(['portrait', 'tile', 'ui_concept', 'title_art', 'ui_kit']);
+export const STILL_2D_ASSETS = new Set(['portrait', 'character_sprite', 'tile', 'ui_concept', 'title_art', 'ui_kit']);
 export const MESH_ASSETS = new Set(['character_mesh', 'prop']);
 
 export const TRELLIS_MODEL = 'microsoft/TRELLIS-image-large';

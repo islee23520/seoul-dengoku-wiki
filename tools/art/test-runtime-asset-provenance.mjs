@@ -38,10 +38,11 @@ function validNonTrellisAsset(overrides = {}) {
     cost_cents: 0,
     raw_hash: 'c'.repeat(64),
     output_hash: 'd'.repeat(64),
+    output_path: '',
     tool_versions: {},
     operations: ['rights_check', 'generate_2d', 'human_review', 'bom_promotion'],
     unity_import_settings: {},
-    review_receipts: [{ reviewer: 't', verdict: 'pass', receipt_hash: 'e'.repeat(64), reviewed_at: '2026-01-01T00:00:00.000Z' }],
+    review_receipts: [{ reviewer: 't', verdict: 'pass', receipt_path: '', receipt_hash: 'e'.repeat(64), reviewed_at: '2026-01-01T00:00:00.000Z' }],
     status: 'promoted',
     created_at: '2026-01-01T00:00:00.000Z',
     ...overrides,
@@ -266,4 +267,118 @@ test('RED mutation: build settings listing StationPropValidation fails', () => {
 
 function formatViolations(audit) {
   return (audit.violations || []).map((v) => JSON.stringify(v)).join('\n');
+}
+
+const slotContract = JSON.parse(readFileSync(join(repoRoot, 'tools/art/runtime-slot-contract.json'), 'utf8'));
+const sha256 = bytes => createHash('sha256').update(bytes).digest('hex');
+
+function slotFixture(t, slot = slotContract.slots[0]) {
+  const root = mkdtempSync(join(tmpdir(), 'runtime-slot-'));
+  t.after(() => rmSync(root, { recursive: true, force: true }));
+  const put = (path, bytes) => {
+    mkdirSync(dirname(join(root, path)), { recursive: true });
+    writeFileSync(join(root, path), bytes);
+    return sha256(bytes);
+  };
+  for (const path of ['Game/ProjectSettings/EditorBuildSettings.asset', 'Game/Assets/Scenes', 'Game/Assets/Janseon/Foundation/UI']) {
+    mkdirSync(dirname(join(root, path)), { recursive: true });
+    cpSync(join(repoRoot, path), join(root, path), { recursive: true });
+  }
+  const keys = [...slot.runtime_keys];
+  if (slot.import === 'character') {
+    for (const facing of slotContract.character_sheet.facings) {
+      for (const action of slotContract.character_sheet.actions) {
+        keys.push(`${facing}/${action.name}/clip`);
+        for (let i = 0; i < action.frames; i++) keys.push(`${facing}/${action.name}/${i}`);
+      }
+    }
+  }
+  const files = {};
+  const slots = {};
+  for (const key of keys) {
+    const path = `${slot.destination}${key.replaceAll('/', '-')}.${key.endsWith('/clip') ? 'anim' : 'png'}`;
+    slots[key] = path;
+    files[path] = put(path, `synthetic test-only ${slot.slot} ${key}`);
+  }
+  const row = validNonTrellisAsset({
+    asset_id: `fixture-${slot.slot}`, runtime_slot: slot.slot, asset_class: slot.asset_class,
+    output_path: slots[slot.primary_key], output_hash: files[slots[slot.primary_key]],
+    raw_path: 'Game/Assets/Janseon/ArtCandidates/TestFixture/raw.png',
+    runtime_files: files, runtime_slot_files: slots,
+  });
+  row.raw_hash = put(row.raw_path, 'test-only raw');
+  row.rights_evidence = { path: 'fixture/rights.txt', sha256: put('fixture/rights.txt', 'Synthetic fixture only; not a real asset approval.') };
+  row.review_receipts[0].receipt_path = 'fixture/review.json';
+  row.review_receipts[0].receipt_hash = put('fixture/review.json', JSON.stringify({ fixture: true, output_hash: row.output_hash }));
+  const bind = () => {
+    const bytes = JSON.stringify({ asset_id: row.asset_id, runtime_slot: row.runtime_slot,
+      output_hash: row.output_hash, raw_hash: row.raw_hash, rights_evidence: row.rights_evidence,
+      runtime_files: row.runtime_files, runtime_slot_files: row.runtime_slot_files,
+      review_hashes: row.review_receipts.map(r => r.receipt_hash) });
+    row.source_binding = { path: 'fixture/binding.json', sha256: put('fixture/binding.json', bytes) };
+  };
+  const save = () => put(slotContract.bom_path, JSON.stringify({ schema_version: 1, assets: [row] }));
+  bind(); save();
+  return { root, row, put, bind, save };
+}
+
+for (const slot of slotContract.slots) {
+  test(`runtime slot: valid source-bound ${slot.slot} unblocks and classifies A`, t => {
+    const { root, row } = slotFixture(t, slot);
+    const audit = auditRuntimeProvenance(root);
+    assert.equal(audit.ok, true, formatViolations(audit));
+    assert.equal(audit.blockedSlots.some(s => s.slot === slot.slot), false);
+    const evaluated = audit.bomEvaluations.find(b => b.asset_id === row.asset_id);
+    assert.equal(evaluated?.class, CLASS.A_VALID_PROMOTED);
+    assert.deepEqual(evaluated.paths.sort(), Object.keys(row.runtime_files).sort());
+  });
+}
+
+for (const mutation of ['rights', 'output', 'review', 'raw', 'binding', 'empty-reviews', 'candidate', 'missing-key', 'unbound-secondary']) {
+  test(`runtime slot: ${mutation} fails closed`, t => {
+    const { root, row, put, bind, save } = slotFixture(t);
+    if (mutation === 'rights') delete row.rights_evidence;
+    if (mutation === 'output') put(row.output_path, 'tampered');
+    if (mutation === 'review') row.review_receipts[0].receipt_hash = put('fixture/review.json', 'unbound receipt');
+    if (mutation === 'raw') put(row.raw_path, 'tampered');
+    if (mutation === 'binding') put(row.source_binding.path, '{}');
+    if (mutation === 'empty-reviews') row.review_receipts = [];
+    if (mutation === 'candidate') {
+      const path = 'Game/Assets/Janseon/ArtCandidates/TestFixture/leak.png';
+      row.runtime_files[path] = put(path, 'candidate');
+      row.runtime_slot_files.backdrop = path;
+      bind();
+    }
+    if (mutation === 'missing-key') { delete row.runtime_slot_files.backdrop; bind(); }
+    if (mutation === 'unbound-secondary') {
+      row.runtime_files['Game/Assets/Janseon/Art/Title/extra.png'] = put('Game/Assets/Janseon/Art/Title/extra.png', 'not reviewed');
+    }
+    save();
+    const audit = auditRuntimeProvenance(root);
+    assert.equal(audit.blockedSlots.some(s => s.slot === 'title-art'), true);
+    const evaluated = audit.bomEvaluations.find(b => b.asset_id === row.asset_id);
+    assert.equal(evaluated?.ok, false, JSON.stringify(evaluated));
+  });
+}
+
+for (const indirect of [false, true]) {
+  test(`runtime slot: candidate GUID leak ${indirect ? 'through catalog' : 'from scene'} fails`, t => {
+    const { root, put } = slotFixture(t);
+    const candidate = 'Game/Assets/Janseon/ArtCandidates/TestFixture/leak.png';
+    const guid = '1234567890abcdef1234567890abcdef';
+    put(candidate, 'candidate');
+    put(candidate + '.meta', `guid: ${guid}\n`);
+    let reference = `{fileID: 2800000, guid: ${guid}, type: 3}`;
+    if (indirect) {
+      const catalogGuid = 'abcdef1234567890abcdef1234567890';
+      put(slotContract.catalog_path, `texture: ${reference}\n`);
+      put(slotContract.catalog_path + '.meta', `guid: ${catalogGuid}\n`);
+      reference = `{fileID: 11400000, guid: ${catalogGuid}, type: 2}`;
+    }
+    const scene = 'Game/Assets/Scenes/MainTitle.unity';
+    put(scene, readFileSync(join(root, scene), 'utf8') + `\nslot: ${reference}\n`);
+    const audit = auditRuntimeProvenance(root);
+    assert.equal(audit.ok, false);
+    assert.ok(audit.violations.some(v => v.code === 'runtime_references_quarantine_asset' && v.target === candidate));
+  });
 }
