@@ -3,7 +3,6 @@ import { existsSync, readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { INVALID_BACKENDS } from './catalog.mjs';
 import { validateManifest } from './asset-manifest.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -139,7 +138,7 @@ export function collectMissingKitPaths() {
 }
 
 export function eligibleForIsoReview(document) {
-  if (INVALID_BACKENDS.has(document.generation_backend)) return false;
+  if (!validateManifest(document).ok) return false;
   if (document.status === 'archived' || document.status === 'blocked') return false;
   if (document.status !== 'promoted' && document.status !== 'reviewed') return false;
   if (document.rights_status !== 'allowed') return false;

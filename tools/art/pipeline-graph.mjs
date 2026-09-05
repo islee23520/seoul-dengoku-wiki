@@ -1,5 +1,6 @@
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
+import { isDeepStrictEqual } from 'node:util';
 import { fileURLToPath } from 'node:url';
 
 import { validateManifest } from './asset-manifest.mjs';
@@ -8,9 +9,8 @@ import {
   ASSET_CLASSES,
   BACKEND_2D_NODE,
   BACKEND_3D_NODE,
-  BACKENDS,
+  backendPolicyError,
   DCCS,
-  INVALID_BACKENDS,
   GRAPH_SCHEMA_VERSION,
   MAYA_INCOMPATIBLE_ASSETS,
   MESH_ASSETS,
@@ -35,8 +35,8 @@ function validateIntent(intent) {
   if (!ASSET_CLASSES.has(intent.asset_class)) throw new PipelineError('unknown_asset_class');
   if (!ANIMATION_NEEDS.has(intent.animation_need)) throw new PipelineError('unknown_animation_need');
   if (!DCCS.has(intent.dcc)) throw new PipelineError('unknown_dcc');
-  if (!BACKENDS.has(intent.generation_backend)) throw new PipelineError('unknown_backend');
-  if (INVALID_BACKENDS.has(intent.generation_backend)) throw new PipelineError('trellis_invalid');
+  const backendError = backendPolicyError(intent);
+  if (backendError) throw new PipelineError(backendError);
   if (!RIGHTS.has(intent.rights_status)) throw new PipelineError('unknown_rights');
   if (!SOURCES.has(intent.source)) throw new PipelineError('unknown_source');
   if (intent.source === 'generate' && intent.generation_backend === 'none') {
@@ -74,7 +74,9 @@ function selectStages(intent) {
   const still2d = STILL_2D_ASSETS.has(intent.asset_class);
   const generating = intent.source === 'generate';
 
-  if (generating && (still2d || meshLike)) stages.push('generate_2d', 'archive_raw');
+  if (generating && (still2d || meshLike)) {
+    stages.push(intent.generation_backend === 'trellis_v1' ? 'generate_3d_trellis' : 'generate_2d', 'archive_raw');
+  }
 
   if (meshLike) stages.push('blender_cleanup');
   if (intent.asset_class === 'character_mesh') stages.push('blender_rig');
@@ -146,6 +148,18 @@ export function checkGraph(graph, host = {}) {
   const ids = nodes.map((node) => node.id);
   const intent = graph.intent ?? {};
 
+  try {
+    const expected = compileGraph(intent);
+    if (!isDeepStrictEqual(nodes, expected.nodes)
+      || !isDeepStrictEqual(edges, expected.edges)
+      || graph.status !== expected.status) {
+      codes.push('graph_plan_mismatch');
+    }
+  } catch (error) {
+    if (!(error instanceof PipelineError)) throw error;
+    codes.push(error.code);
+  }
+
   if (graph.schema_version !== GRAPH_SCHEMA_VERSION) codes.push('schema_version_mismatch');
   if (typeof graph.intent_digest === 'string' && graph.intent_digest !== digestIntent(intent)) {
     codes.push('stale_intent');
@@ -172,11 +186,8 @@ export function checkGraph(graph, host = {}) {
   const needsBlender = ids.some((id) => id.startsWith('blender_'));
   if (needsBlender && !host.blender_available) codes.push('blender_missing');
 
-  if (
-    nodes.some((node) => node.id === 'generate_3d_trellis')
-    || INVALID_BACKENDS.has(intent.generation_backend)
-  ) {
-    codes.push('trellis_invalid');
+  if (nodes.some((node) => node.id === 'generate_3d_trellis') && !host.trellis_available) {
+    codes.push('trellis_missing');
   }
 
   return { ok: codes.length === 0, codes };
@@ -245,5 +256,11 @@ export async function main(argv = process.argv.slice(2)) {
 }
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
-  process.exit(await main());
+  try {
+    process.exit(await main());
+  } catch (error) {
+    if (!(error instanceof PipelineError)) throw error;
+    writeJson({ ok: false, codes: [error.code] });
+    process.exit(2);
+  }
 }

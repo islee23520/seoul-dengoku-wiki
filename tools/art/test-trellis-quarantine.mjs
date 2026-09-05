@@ -53,123 +53,146 @@ function validManifest(overrides = {}) {
   };
 }
 
-test('compileGraph fails closed with trellis_invalid when backend is trellis_v1', () => {
-  assertThrowsCode(() => compileGraph(meshIntent('trellis_v1')), 'trellis_invalid');
+const TRELLIS = {
+  generation_backend: 'trellis_v1', provider: 'microsoft',
+  model: 'microsoft/TRELLIS-image-large',
+  revision: '442aa1e1afb9014e80681d3bf604e8d728a86ee7',
+};
+const PASS = { reviewer: 'art-lead', verdict: 'pass', receipt_hash: HEX, reviewed_at: FIXED_TIME };
+const HOST = { blender_available: true, trellis_available: true };
+
+test('official TRELLIS is selectable without approving an asset', () => {
+  const intent = { ...meshIntent('trellis_v1'), seed: 13042 };
+  const graph = compileGraph(intent);
+  assert.equal(graph.intent.seed, 13042);
+  assert.deepEqual(graph.nodes.filter((node) => node.kind === 'generate').map((node) => node.id), ['generate_3d_trellis']);
+  const node = graph.nodes.find((item) => item.id === 'generate_3d_trellis');
+  assert.equal(node.model, TRELLIS.model);
+  assert.equal(node.revision, TRELLIS.revision);
+  assert.equal(node.execution, 'direct_python');
+  assert.deepEqual(checkGraph(graph, HOST), { ok: true, codes: [] });
+  assert.equal(graph.nodes.at(-2).id, 'human_review');
+  assert.equal(graph.nodes.at(-1).id, 'bom_promotion');
 });
 
-test('compileGraph fails closed with trellis_invalid when backend is comfyui_trellis', () => {
-  assertThrowsCode(() => compileGraph(meshIntent('comfyui_trellis')), 'trellis_invalid');
-});
-
-test('checkGraph fails closed with trellis_invalid when graph has generate_3d_trellis even with host', () => {
-  const result = checkGraph({
-    schema_version: 1,
-    status: 'compiled',
-    intent: { rights_status: 'allowed', generation_backend: 'openai_image' },
-    nodes: [
-      { id: 'rights_check', kind: 'gate' },
-      { id: 'generate_3d_trellis', kind: 'generate', tool: 'trellis', execution: 'direct_python' },
-      { id: 'human_review', kind: 'gate' },
-    ],
-    edges: [
-      ['rights_check', 'generate_3d_trellis'],
-      ['generate_3d_trellis', 'human_review'],
-    ],
-    skipped: [],
-  }, { blender_available: true, trellis_available: true });
-  assert.equal(result.ok, false);
-  assert.ok(result.codes.includes('trellis_invalid'));
-});
-
-test('validateManifest fails closed with trellis_invalid when TRELLIS status is not archived', () => {
-  for (const status of ['draft', 'reviewed', 'promoted', 'blocked']) {
-    const result = validateManifest(validManifest({
-      generation_backend: 'trellis_v1',
-      provider: 'microsoft',
-      model: 'microsoft/TRELLIS-image-large',
-      status,
-    }));
-    assert.equal(result.ok, false, status);
-    assert.ok(
-      result.errors.some((error) => error.code === 'trellis_invalid' && error.field === 'generation_backend'),
-      JSON.stringify(result.errors),
-    );
+test('unverified and unsupported selections cannot silently substitute a provider', () => {
+  const cases = [
+    ['meshygen_plus', {}, 'provider_identity_unverified'],
+    ['tripo3d', {}, 'user_explicit_required'],
+    ['tripo3d', { user_explicit: true }, 'provider_not_configured'],
+    ['tripo', { user_explicit: true }, 'unknown_backend'],
+    ['comfyui_trellis', {}, 'backend_disabled'],
+    ['unknown', {}, 'unknown_backend'],
+    ['trellis_v1', { fallback_backend: 'tripo3d' }, 'automatic_fallback_forbidden'],
+    ['trellis_v1', { auto_fallback: true }, 'automatic_fallback_forbidden'],
+    ['trellis_v1', { model: 'unverified-model' }, 'provider_identity_mismatch'],
+    ['trellis_v1', { revision: 'unverified-revision' }, 'provider_identity_mismatch'],
+  ];
+  for (const [backend, extra, code] of cases) {
+    const intent = { ...meshIntent(backend), ...extra };
+    assertThrowsCode(() => compileGraph(intent), code);
+    const result = checkGraph({ schema_version: 1, status: 'compiled', intent, nodes: [], edges: [] }, HOST);
+    assert.equal(result.ok, false);
+    assert.ok(result.codes.includes(code), JSON.stringify(result));
   }
 });
 
-test('validateManifest fails closed with trellis_invalid when comfyui_trellis is promoted', () => {
-  const result = validateManifest(validManifest({
-    generation_backend: 'comfyui_trellis',
-    status: 'promoted',
-  }));
-  assert.equal(result.ok, false);
-  assert.ok(result.errors.some((error) => error.code === 'trellis_invalid'));
+test('ComfyUI is existing texture intake and not arbitrary inference', () => {
+  const texture = { ...meshIntent('comfyui_texture'), asset_class: 'tile', source: 'existing' };
+  const graph = compileGraph(texture);
+  assert.deepEqual(graph.nodes.map((node) => node.id), ['rights_check', 'human_review', 'bom_promotion']);
+  assert.deepEqual(checkGraph(graph, HOST), { ok: true, codes: [] });
+  assertThrowsCode(() => compileGraph({ ...texture, source: 'generate' }), 'texture_intake_only');
+  assertThrowsCode(() => compileGraph({ ...texture, asset_class: 'prop' }), 'texture_intake_only');
+  assertThrowsCode(() => compileGraph({ ...meshIntent('trellis_v1'), asset_class: 'portrait' }), 'backend_asset_mismatch');
 });
 
-test('validateManifest accepts archived TRELLIS as historical quarantine', () => {
-  const result = validateManifest(validManifest({
-    generation_backend: 'trellis_v1',
-    provider: 'microsoft',
-    model: 'microsoft/TRELLIS-image-large',
-    status: 'archived',
-  }));
-  assert.equal(result.ok, true, JSON.stringify(result.errors));
-  assert.deepEqual(result.errors, []);
+test('TRELLIS rights and host failures do not enable fallback', () => {
+  for (const rights_status of ['blocked', 'unresolved']) {
+    const graph = compileGraph({ ...meshIntent('trellis_v1'), rights_status });
+    assert.deepEqual(graph.nodes.map((node) => node.id), ['rights_check']);
+    assert.deepEqual(checkGraph(graph, HOST), { ok: false, codes: ['rights_' + rights_status] });
+  }
+  const result = checkGraph(compileGraph(meshIntent('trellis_v1')), { blender_available: true });
+  assert.deepEqual(result, { ok: false, codes: ['trellis_missing'] });
 });
 
-test('validateManifest fails closed with unknown_status when status is invalid or quarantined', () => {
+test('stored graph cannot bypass provider selection or remove promotion gates', () => {
+  for (const mutate of [
+    (graph) => { graph.nodes.find((node) => node.id === 'generate_3d_trellis').model = 'wrong-model'; },
+    (graph) => { graph.nodes = graph.nodes.filter((node) => node.id !== 'bom_promotion'); },
+    (graph) => { graph.nodes = graph.nodes.filter((node) => node.id !== 'generate_3d_trellis'); },
+    (graph) => { graph.nodes.push({ id: 'generate_3d_tripo', tool: 'tripo3d' }); },
+    (graph) => { graph.edges = []; },
+  ]) {
+    const graph = compileGraph(meshIntent('trellis_v1'));
+    mutate(graph);
+    const result = checkGraph(graph, HOST);
+    assert.equal(result.ok, false);
+    assert.ok(result.codes.includes('graph_plan_mismatch'), JSON.stringify(result));
+  }
+});
+
+test('TRELLIS historical records and valid reviewed assets are separate', () => {
+  for (const status of ['draft', 'blocked', 'archived']) {
+    const asset = validManifest({ ...TRELLIS, status });
+    const before = JSON.stringify(asset);
+    assert.equal(validateManifest(asset).ok, true);
+    assert.equal(contract.eligibleForIsoReview(asset), false);
+    assert.equal(JSON.stringify(asset), before);
+  }
+  for (const status of ['reviewed', 'promoted']) {
+    const asset = validManifest({ ...TRELLIS, status, review_receipts: [PASS] });
+    assert.deepEqual(validateManifest(asset), { ok: true, errors: [] });
+    assert.equal(contract.eligibleForIsoReview(asset), true);
+  }
+  const historical = validManifest({ ...TRELLIS, revision: 'historical-revision', status: 'archived' });
+  assert.equal(validateManifest(historical).ok, true);
+  assert.equal(contract.eligibleForIsoReview(historical), false);
+});
+
+test('provider allowance never promotes missing failed or malformed review receipts', () => {
+  for (const review_receipts of [[], null, [null], [{}], [{ ...PASS, verdict: 'fail' }], [PASS, { ...PASS, verdict: 'reject' }], [{ ...PASS, receipt_hash: '' }]]) {
+    const asset = validManifest({ ...TRELLIS, status: 'promoted', review_receipts });
+    const result = validateManifest(asset);
+    assert.equal(result.ok, false);
+    assert.ok(result.errors.some((error) => error.code === 'review_not_passed'), JSON.stringify(result));
+    assert.equal(contract.eligibleForIsoReview(asset), false);
+  }
+});
+
+test('reviewed and promoted assets require allowed rights and verified provider identity', () => {
+  for (const overrides of [
+    { rights_status: 'blocked' }, { rights_status: 'unresolved' },
+    { model: 'unknown' }, { revision: 'unknown' }, { provider: 'unknown' },
+    { generation_backend: 'meshygen_plus' }, { generation_backend: 'comfyui_trellis' },
+    { generation_backend: 'tripo3d' }, { generation_backend: 'unknown' },
+  ]) {
+    const asset = validManifest({ ...TRELLIS, status: 'reviewed', review_receipts: [PASS], ...overrides });
+    assert.equal(validateManifest(asset).ok, false, JSON.stringify(overrides));
+    assert.equal(contract.eligibleForIsoReview(asset), false, JSON.stringify(overrides));
+  }
+});
+
+test('promotion gate permits verified TRELLIS provenance but not quarantined or unreviewed assets', () => {
+  const png = contract.promotedPng('poc-ui-panel-9slice');
+  // Preserve the shipped output hash; this tests policy, not whether the fixture is mesh art.
+  const live = contract.readJson(contract.bomPath('poc-ui-panel-9slice'));
+  const asset = { ...live, ...TRELLIS, asset_class: 'prop' };
+  assert.deepEqual(contract.validatePromotedBom(asset, png), { ok: true, errors: [] });
+  for (const overrides of [{ status: 'archived' }, { status: 'blocked' }, { status: 'draft' }, { review_receipts: [] }, { review_receipts: [{ ...PASS, verdict: 'fail' }] }, { rights_status: 'blocked' }]) {
+    assert.equal(contract.validatePromotedBom({ ...asset, ...overrides }, png).ok, false);
+  }
+});
+
+test('invalid and quarantined statuses remain rejected rather than silently approved', () => {
   for (const status of ['invalid', 'quarantined']) {
-    const result = validateManifest(validManifest({ status }));
-    assert.equal(result.ok, false, status);
-    assert.ok(
-      result.errors.some((error) => error.code === 'unknown_status' && error.field === 'status'),
-      JSON.stringify(result.errors),
-    );
+    const asset = validManifest({ ...TRELLIS, status });
+    assert.ok(validateManifest(asset).errors.some((error) => error.code === 'unknown_status'));
+    assert.equal(contract.eligibleForIsoReview(asset), false);
   }
 });
 
-test('validatePromotedBom fails closed with trellis_invalid when backend is TRELLIS', () => {
-  const document = {
-    ...contract.readJson(contract.bomPath('poc-ui-panel-9slice')),
-    generation_backend: 'trellis_v1',
-    asset_class: 'prop',
-    status: 'promoted',
-  };
-  const result = contract.validatePromotedBom(document, contract.promotedPng('poc-ui-panel-9slice'));
-  assert.equal(result.ok, false);
-  assert.ok(result.errors.some((error) => error.code === 'trellis_invalid'));
-});
-
-test('iso-review eligibility accepts promoted allowed 2D kit records', () => {
-  const live = contract.readJson(contract.bomPath('poc-ui-panel-9slice'));
-  assert.equal(contract.eligibleForIsoReview(live), true);
-});
-
-test('iso-review eligibility rejects TRELLIS archived blocked and non-allowed records', () => {
-  const live = contract.readJson(contract.bomPath('poc-ui-panel-9slice'));
-  assert.equal(contract.eligibleForIsoReview({ ...live, generation_backend: 'trellis_v1' }), false);
-  assert.equal(contract.eligibleForIsoReview({ ...live, generation_backend: 'comfyui_trellis' }), false);
-  assert.equal(contract.eligibleForIsoReview({ ...live, status: 'archived' }), false);
-  assert.equal(contract.eligibleForIsoReview({ ...live, status: 'blocked' }), false);
-  assert.equal(contract.eligibleForIsoReview({ ...live, rights_status: 'blocked' }), false);
-  assert.equal(contract.eligibleForIsoReview({
-    ...live,
-    generation_backend: 'trellis_v1',
-    status: 'archived',
-  }), false);
-});
-
-test('compileGraph rejects tripo3d as unknown_backend without user_explicit', () => {
-  assertThrowsCode(() => compileGraph(meshIntent('tripo3d')), 'unknown_backend');
-});
-
-test('compileGraph rejects tripo and tripo3d as unknown_backend when user_explicit is true', () => {
-  assertThrowsCode(() => compileGraph({
-    ...meshIntent('tripo'),
-    user_explicit: true,
-  }), 'unknown_backend');
-  assertThrowsCode(() => compileGraph({
-    ...meshIntent('tripo3d'),
-    user_explicit: true,
-  }), 'unknown_backend');
+test('promoted allowed 2D kit records remain iso-review eligible', () => {
+  assert.equal(contract.eligibleForIsoReview(contract.readJson(contract.bomPath('poc-ui-panel-9slice'))), true);
 });

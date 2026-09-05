@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 
-import { BACKENDS, INVALID_BACKENDS, STATUSES } from './catalog.mjs';
+import { BACKENDS, backendPolicyError, STATUSES } from './catalog.mjs';
 
 const schemaPath = fileURLToPath(new URL('./asset-manifest.schema.json', import.meta.url));
 
@@ -30,14 +30,25 @@ function validateAsset(asset, schema) {
   if (Object.hasOwn(asset, 'generation_backend') && !BACKENDS.has(asset.generation_backend)) {
     errors.push({ code: 'unknown_backend', field: 'generation_backend' });
   }
-  if (INVALID_BACKENDS.has(asset.generation_backend) && asset.status !== 'archived') {
-    errors.push({ code: 'trellis_invalid', field: 'generation_backend' });
+  if (BACKENDS.has(asset.generation_backend) && asset.status !== 'archived') {
+    const code = backendPolicyError(asset);
+    if (code) errors.push({ code, field: 'generation_backend' });
   }
   if (Object.hasOwn(asset, 'status') && !STATUSES.has(asset.status)) {
     errors.push({ code: 'unknown_status', field: 'status' });
   }
-  if (asset.rights_status !== 'allowed' && asset.status === 'promoted') {
-    errors.push({ code: 'rights_not_allowed', field: 'rights_status' });
+  if (asset.status === 'reviewed' || asset.status === 'promoted') {
+    if (asset.rights_status !== 'allowed') {
+      errors.push({ code: 'rights_not_allowed', field: 'rights_status' });
+    }
+    if (!Array.isArray(asset.review_receipts) || asset.review_receipts.length === 0
+      || !asset.review_receipts.every((receipt) => isRecord(receipt)
+        && receipt.verdict === 'pass'
+        && typeof receipt.reviewer === 'string' && receipt.reviewer.trim().length > 0
+        && typeof receipt.receipt_hash === 'string' && /^[a-f0-9]{64}$/.test(receipt.receipt_hash)
+        && typeof receipt.reviewed_at === 'string' && Number.isFinite(Date.parse(receipt.reviewed_at)))) {
+      errors.push({ code: 'review_not_passed', field: 'review_receipts' });
+    }
   }
   return errors;
 }

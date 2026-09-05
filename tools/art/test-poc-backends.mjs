@@ -99,15 +99,19 @@ test('unknown generation backend is rejected', () => {
 });
 
 test('legacy comfyui_trellis compile is invalid', () => {
-  assertThrowsCode(() => compileGraph(meshIntent('comfyui_trellis')), 'trellis_invalid');
+  assertThrowsCode(() => compileGraph(meshIntent('comfyui_trellis')), 'backend_disabled');
 });
 
-test('direct trellis_v1 compile is invalid', () => {
-  assertThrowsCode(() => compileGraph(meshIntent('trellis_v1')), 'trellis_invalid');
+test('direct trellis_v1 compiles official 3D only', () => {
+  const graph = compileGraph(meshIntent('trellis_v1'));
+  assert.deepEqual(graph.nodes.filter((node) => node.kind === 'generate').map((node) => node.id), ['generate_3d_trellis']);
+  assert.equal(graph.nodes[1].model, 'microsoft/TRELLIS-image-large');
+  assert.equal(graph.nodes[1].revision, '442aa1e1afb9014e80681d3bf604e8d728a86ee7');
 });
 
-test('trellis_v1 four_dir compile is invalid', () => {
-  assertThrowsCode(() => compileGraph(fourDirIntent('trellis_v1')), 'trellis_invalid');
+test('trellis_v1 four_dir keeps rig animation and review gates', () => {
+  const graph = compileGraph(fourDirIntent('trellis_v1'));
+  assert.deepEqual(idsOf(graph), ['rights_check', 'generate_3d_trellis', 'archive_raw', 'blender_cleanup', 'blender_rig', 'blender_animation', 'export_fbx', 'unity_import', 'human_review', 'bom_promotion']);
 });
 
 test('parseHostFlag accepts trellis', () => {
@@ -118,51 +122,10 @@ test('parseHostFlag accepts trellis', () => {
   assert.equal(host.animo_available, false);
 });
 
-test('check fail-closed for handcrafted trellis graph even without host', () => {
-  const result = checkGraph({
-    schema_version: 1,
-    status: 'compiled',
-    intent: { rights_status: 'allowed', generation_backend: 'trellis_v1' },
-    nodes: [
-      { id: 'rights_check', kind: 'gate' },
-      { id: 'generate_3d_trellis', kind: 'generate', tool: 'trellis', execution: 'direct_python' },
-      { id: 'human_review', kind: 'gate' },
-    ],
-    edges: [
-      ['rights_check', 'generate_3d_trellis'],
-      ['generate_3d_trellis', 'human_review'],
-    ],
-    skipped: [],
-  }, {
-    blender_available: true,
-    trellis_available: false,
-  });
-  assert.equal(result.ok, false);
-  assert.ok(result.codes.includes('trellis_invalid'));
-});
-
-test('check fail-closed when blender and trellis host are present for trellis_v1', () => {
-  assertThrowsCode(() => compileGraph(meshIntent('trellis_v1')), 'trellis_invalid');
-  const result = checkGraph({
-    schema_version: 1,
-    status: 'compiled',
-    intent: { rights_status: 'allowed', generation_backend: 'trellis_v1' },
-    nodes: [
-      { id: 'rights_check', kind: 'gate' },
-      { id: 'generate_3d_trellis', kind: 'generate', tool: 'trellis', execution: 'direct_python' },
-      { id: 'human_review', kind: 'gate' },
-    ],
-    edges: [
-      ['rights_check', 'generate_3d_trellis'],
-      ['generate_3d_trellis', 'human_review'],
-    ],
-    skipped: [],
-  }, {
-    blender_available: true,
-    trellis_available: true,
-  });
-  assert.equal(result.ok, false);
-  assert.ok(result.codes.includes('trellis_invalid'));
+test('check fails without TRELLIS host and passes with the declared host', () => {
+  const graph = compileGraph(meshIntent('trellis_v1'));
+  assert.deepEqual(checkGraph(graph, { blender_available: true, trellis_available: false }), { ok: false, codes: ['trellis_missing'] });
+  assert.deepEqual(checkGraph(graph, { blender_available: true, trellis_available: true }), { ok: true, codes: [] });
 });
 
 test('unresolved rights compile only rights_check', () => {
@@ -229,7 +192,7 @@ test('poc and existing intent files compile', async () => {
   for (const name of names) {
     const intent = JSON.parse(await readFile(join(intentsDir, name), 'utf8'));
     if (INVALID_BACKENDS.has(intent.generation_backend)) {
-      assertThrowsCode(() => compileGraph(intent), 'trellis_invalid');
+      assertThrowsCode(() => compileGraph(intent), 'backend_disabled');
       continue;
     }
     const graph = compileGraph(intent);
