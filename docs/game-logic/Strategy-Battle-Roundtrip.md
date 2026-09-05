@@ -1,6 +1,8 @@
 # 전략에서 전투로
 
-![전략과 전투에서 칸에 누가 서 있고 어느 쪽을 보며 어디까지 보이는지](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-grammar.svg?raw=true)
+![전략 상태와 전술 결과의 아이소 왕복](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-battle-roundtrip.svg?raw=true)
+
+전략 세계 상태를 전술 전투에 넘기고, 한 번의 결과만 캠페인에 반영하는 왕복 과정을 운영합니다.
 
 ## 세계 상태는 한 곳에서
 

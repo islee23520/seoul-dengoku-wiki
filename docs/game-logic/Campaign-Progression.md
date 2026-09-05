@@ -1,5 +1,9 @@
 # 캠페인 진행과 위기
 
+![캠페인 성장과 위기의 아이소 영향권](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-campaign-progression.svg?raw=true)
+
+캠페인 성장 단계와 위기 영향을 영향권과 연결 그래프로 추적합니다.
+
 진행은 영토 숫자가 아니라 거점의 안정화, 전문화, 연결 투사력과 플레이어가 세운 질서의 정당성으로 측정합니다. 아래 수치는 **설계 가정**입니다.
 
 ## 입력과 출력

@@ -1,0 +1,15 @@
+[
+  {"page":"Home.md","asset":"isometric-home.svg","alt":"잔선 서울의 인물 방향 시야 아이소 개요","required_labels":["칸에 누가 서 있나","어느 쪽을 보나","시야"],"caption":"홈 화면에서 4방향 시야와 인물 위치를 한눈에 파악해 즉시 탐색 방향을 결정합니다."},
+  {"page":"Game-Thesis.md","asset":"isometric-game-thesis.svg","alt":"인물 선택이 세계 결과로 이어지는 아이소 규칙","required_labels":["칸에 누가 서 있나","어느 쪽을 보나","시야"],"caption":"인물의 위치와 방향 선택이 바로 세계 그래프의 사건과 관계 변화로 이어지는 규칙을 확인합니다."},
+  {"page":"Campaign-Loop.md","asset":"isometric-campaign-loop.svg","alt":"출격하고 돌아오는 흐름의 아이소 단계","required_labels":["칸에 누가 서 있나","어느 쪽을 보나","시야"],"caption":"캠페인 한 사이클에서 준비, 원정, 조우, 전투, 결과 반영 단계를 순서대로 진행합니다."},
+  {"page":"World-and-Subway-Layers.md","asset":"isometric-subway-layers.svg","alt":"지하철 다층 공간의 인물 방향 시야 연결","required_labels":["칸에 누가 서 있나","어느 쪽을 보나","시야"],"caption":"지하철 다층 구조에서 인물의 방향과 시야가 층간 이동 경로와 연결되는 방식을 파악합니다."},
+  {"page":"Travel-and-Encounters.md","asset":"isometric-travel-encounters.svg","alt":"원정 이동과 조우의 아이소 판정","required_labels":["칸에 누가 서 있나","어느 쪽을 보나","시야"],"caption":"4방향 이동 중 조우 확률과 유형을 위치·방향·시야에 따라 판단합니다."},
+  {"page":"SRPG-Combat.md","asset":"isometric-srpg-combat.svg","alt":"한 판의 전술 위치 방향 시야 규칙","required_labels":["칸에 누가 서 있나","어느 쪽을 보나","시야"],"caption":"여기서 한 판은 확정된 전투 컨텍스트로 시작해 ResultId 하나로 끝나는 전술/SRPG 세션 한 번을 뜻합니다. 한 판 안에서 위치·방향·시야가 턴제 전술의 핵심 축입니다."},
+  {"page":"Strategy-Battle-Roundtrip.md","asset":"isometric-battle-roundtrip.svg","alt":"전략 상태와 전술 결과의 아이소 왕복","required_labels":["칸에 누가 서 있나","어느 쪽을 보나","시야"],"caption":"전략 세계 상태를 전술 전투에 넘기고, 한 번의 결과만 캠페인에 반영하는 왕복 과정을 운영합니다."},
+  {"page":"Strongholds-and-Territory.md","asset":"isometric-strongholds.svg","alt":"거점 점유와 통합의 아이소 공간","required_labels":["칸에 누가 서 있나","어느 쪽을 보나","시야"],"caption":"거점 점유 후 안정화와 영토 통합을 4방향 시야와 연결로 관리합니다."},
+  {"page":"Economy-and-Production.md","asset":"isometric-economy-production.svg","alt":"생산 시설과 노동 배치의 아이소 흐름","required_labels":["칸에 누가 서 있나","어느 쪽을 보나","시야"],"caption":"생산 시설 주변에 노동을 배치하고 자원 흐름을 방향별로 최적화합니다."},
+  {"page":"Logistics-and-Infrastructure.md","asset":"isometric-logistics.svg","alt":"보급 경로와 병목의 아이소 연결","required_labels":["칸에 누가 서 있나","어느 쪽을 보나","시야"],"caption":"보급 경로의 병목과 처리량을 4방향 연결과 시야로 예측·관리합니다."},
+  {"page":"Factions-and-Diplomacy.md","asset":"isometric-factions-diplomacy.svg","alt":"세력 협상과 통행권의 아이소 관계","required_labels":["칸에 누가 서 있나","어느 쪽을 보나","시야"],"caption":"세력 간 협상과 통행권 부여를 위치·방향·시야 기반 관계로 결정합니다."},
+  {"page":"Warfare-and-Sieges.md","asset":"isometric-warfare-sieges.svg","alt":"공성 접근로와 퇴로의 아이소 전장","required_labels":["칸에 누가 서 있나","어느 쪽을 보나","시야"],"caption":"공성 시 접근로, 보급, 퇴로를 4방향 시야와 공간으로 계획합니다."},
+  {"page":"Campaign-Progression.md","asset":"isometric-campaign-progression.svg","alt":"캠페인 성장과 위기의 아이소 영향권","required_labels":["칸에 누가 서 있나","어느 쪽을 보나","시야"],"caption":"캠페인 성장 단계와 위기 영향을 영향권과 연결 그래프로 추적합니다."}
+]

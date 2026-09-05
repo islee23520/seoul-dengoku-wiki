@@ -118,7 +118,8 @@ await testCase('happy path: banner, link rewrite, asset copy, stale cleanup, .gi
   const figure = await readFile(join(output, 'assets', 'figure.svg'), 'utf8');
   const gitHead = await readFile(join(output, '.git', 'HEAD'), 'utf8');
 
-  assert.match(home, /자동 생성 문서/);
+  assert.match(home, /janseon-unofficial-au/);
+  assert.match(home, /Unofficial-Fan-AU-Notice/);
   assert.match(home, /원본: `docs\/game-logic\/Home\.md`/);
   assert.match(home, /커밋: `abc1234`/);
   assert.match(home, /\]\(assets\/figure\.svg\)/);
@@ -126,7 +127,9 @@ await testCase('happy path: banner, link rewrite, asset copy, stale cleanup, .gi
   assert.doesNotMatch(home, /Game-Thesis\.md/);
   assert.match(home, /\[외부 명세\]\(https:\/\/example\.com\/spec\.md#part\)/, 'external .md URL must not be rewritten');
   assert.equal(home.endsWith('\n\n'), false);
-  assert.doesNotMatch(sidebar, /자동 생성 문서/);
+  assert.doesNotMatch(sidebar, /janseon-unofficial-au/);
+  assert.doesNotMatch(sidebar, /Unofficial-Fan-AU-Notice/);
+  assert.doesNotMatch(sidebar, /원본:/);
   assert.equal(sidebar.endsWith('\n\n'), false);
   assert.match(figure, /<svg/);
   assert.equal(gitHead, 'ref: refs/heads/master\n');
@@ -602,6 +605,27 @@ await testCase('the tools-only parser stack is exactly pinned and lockfile-consi
   }
 });
 
+await testCase('the root parser stack is exactly pinned and lockfile-consistent', async () => {
+  const manifest = JSON.parse(await readFile(join(repositoryRoot, 'package.json'), 'utf8'));
+  const lock = JSON.parse(await readFile(join(repositoryRoot, 'package-lock.json'), 'utf8'));
+  const expected = {
+    entities: '8.0.0',
+    'mdast-util-from-markdown': '2.0.3',
+    parse5: '8.0.1',
+  };
+
+  assert.deepEqual(manifest.dependencies, expected, 'root parser dependencies must be exact versions');
+  assert.equal(manifest.engines?.node, '>=22 <27', 'root engines.node must pin Node >=22 <27');
+  assert.match(String(manifest.engines?.npm ?? ''), /12/, 'root engines.npm must pin npm 12');
+  assert.match(String(manifest.packageManager ?? ''), /^npm@12\b/, 'packageManager must pin npm 12');
+  assert.equal(lock.lockfileVersion, 3, 'package-lock must be npm 12 lockfileVersion 3');
+  assert.deepEqual(lock.packages[''].dependencies, expected, 'root lockfile dependencies must match package.json');
+  assert.equal(lock.packages[''].engines?.node, '>=22 <27', 'root lockfile engines.node must match package.json');
+  for (const [name, version] of Object.entries(expected)) {
+    assert.equal(lock.packages[`node_modules/${name}`]?.version, version, `root ${name} lock entry must match the pin`);
+  }
+});
+
 // ---------------------------------------------------------------------------
 // Repository documentation contract (pre-existing)
 // ---------------------------------------------------------------------------
@@ -688,6 +712,7 @@ await testCase('strategic pages keep their calculable contract', async () => {
     assert.match(markdown, /clamp\(/, `${page}: missing clamped formula`);
     assert.match(markdown, /기본값/, `${page}: missing default value`);
     assert.doesNotMatch(markdown, /복제|clone/i, `${page}: prohibited clone wording`);
+    assert.doesNotMatch(markdown, /한 판(?![^\n]*전술|SRPG)/, `${page}: 한 판 prohibited outside tactical/SRPG (p1P)`);
 
     const edgeSection = extractSection(markdown, '경계 상황', page);
     for (const edgeCase of requiredEdgeCasesByPage[page]) {

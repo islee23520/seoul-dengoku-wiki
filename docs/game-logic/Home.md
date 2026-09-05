@@ -1,8 +1,11 @@
 # 《잔선: 서울》
 
+![잔선 서울의 인물 방향 시야 아이소 개요](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-home.svg?raw=true)
+
+홈 화면에서 4방향 시야와 인물 위치를 한눈에 파악해 즉시 탐색 방향을 결정합니다.
+
 ![붕괴 이후 지하철 거점의 콘셉트](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/janseon-seoul-cover.png?raw=true)
 
-![고정 아이소메트릭에서 칸에 누가 서 있고 어느 쪽을 보며 어디까지 보이는지](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-grammar.svg?raw=true)
 
 > **붕괴한 서울의 지하철망에서 무명 인물과 파티를 이끌어 역과 노선의 새로운 질서를 세우는 4방향 대전략 SRPG.**
 
