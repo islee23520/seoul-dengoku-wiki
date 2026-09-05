@@ -56,7 +56,11 @@ test('Given confirmed social records When live atlas is checked Then only approv
   const keys = baselineKeys(atlas);
   assert.deepEqual(keys.storyContents, manifest.social);
   assert.equal(keys.diagramCount, 3);
-  assert.deepEqual(keys.dossierGroups, manifest.groups['G01-G06']);
+  assert.deepEqual(keys.dossierGroups.slice(0, 6), manifest.groups['G01-G06']);
+  assert.deepEqual(keys.dossierGroups, [
+    ...manifest.groups['G01-G06'],
+    ...manifest.groups['G13-G18'],
+  ]);
   for (const id of manifest.excluded.social) {
     assert.equal(atlas.story_contents[id], undefined, id);
   }
@@ -305,6 +309,39 @@ test('Given confirmed G01-G18 and ISO When CLI --require-groups Then exit 0', ()
 test('Given confirmed monster pages When CLI --require-monsters Then exit 0', () => {
   const result = runLive(['--require-social', '--require-groups', '--require-monsters']);
   assert.equal(result.code, 0, result.stderr);
+});
+
+test('Given independently specified repaired sources When live atlas is compared Then selected units match and others stay', async () => {
+  const manifest = await loadManifest();
+  const live = extractAtlasJson(await (await import('node:fs/promises')).readFile(atlasPath, 'utf8'));
+  assert.equal(live.ok, true, live.error);
+  const atlas = live.value;
+  const base = gitAtlas('6ef55553ec8e5ed06ff8061a69947ce347eae85a');
+  const b009 = gitAtlas(manifest.approved.B009);
+  const b013 = gitAtlas(manifest.approved.B013);
+  const b015 = gitAtlas(manifest.approved.B015);
+  const groups = gitAtlas(manifest.approved['G13-G18']);
+  assert.deepEqual(atlas.story_contents.B009, b009.story_contents.B009);
+  assert.deepEqual(atlas.story_contents.B013, b013.story_contents.B013);
+  assert.deepEqual(atlas.story_contents.B015, b015.story_contents.B015);
+  for (const id of manifest.groups['G13-G18']) {
+    assert.deepEqual(
+      atlas.hostile_groups.find((group) => group.id === id),
+      groups.hostile_groups.find((group) => group.id === id),
+      id,
+    );
+  }
+  assert.equal(atlas.humans.length, 412);
+  assert.deepEqual(atlas.humans, base.humans);
+  for (const id of Object.keys(atlas.story_contents)) {
+    if (id === 'B009' || id === 'B013' || id === 'B015') continue;
+    assert.deepEqual(atlas.story_contents[id], base.story_contents[id], id);
+  }
+  for (const group of atlas.hostile_groups) {
+    if (manifest.groups['G13-G18'].includes(group.id)) continue;
+    assert.deepEqual(group, base.hostile_groups.find((row) => row.id === group.id), group.id);
+  }
+  assert.equal(manifest.incomplete, true);
 });
 
 test('Given excluded B017 When story-batch stage Then E_STORY_CONTENT and worldbuilding stays incomplete', () => {

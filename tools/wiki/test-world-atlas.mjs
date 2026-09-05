@@ -257,6 +257,61 @@ test('Given generated G01-G12 group pages When read Then scenario headings exist
   }
 });
 
+test('Given missing G13 dossier prose When group-dossiers stage Then E_GROUP_DOSSIER', async () => {
+  const dir = await mkdtemp(join(tmpdir(), 'atlas-group-dossier-'));
+  fixtures.push(dir);
+  const docs = join(dir, 'docs', 'game-logic');
+  const { cpSync, mkdirSync } = await import('node:fs');
+  mkdirSync(docs, { recursive: true });
+  mkdirSync(join(dir, '.omo', 'research-private'), { recursive: true });
+  cpSync(liveDocs, docs, { recursive: true });
+  cpSync(
+    join(repositoryRoot, '.omo', 'research-private', 'nippon-sangoku-canon-bridge.md'),
+    join(dir, '.omo', 'research-private', 'nippon-sangoku-canon-bridge.md'),
+  );
+  const atlas = join(docs, 'World-Narrative-Atlas.md');
+  const markdown = await readFile(atlas, 'utf8');
+  const parsed = extractAtlasJson(markdown);
+  assert.equal(parsed.ok, true, parsed.error);
+  const group = parsed.value.hostile_groups.find((row) => row.id === 'G13');
+  assert.ok(group, 'G13 missing');
+  delete group.dossier_prose;
+  await writeFile(atlas, markdown.replace(/```json\s*[\s\S]*?```/, `\`\`\`json\n${JSON.stringify(parsed.value, null, 2)}\n\`\`\``));
+  const result = runVerifier([
+    '--docs', docs,
+    '--stage', 'group-dossiers',
+    '--groups', 'G13,G14,G15,G16,G17,G18',
+    '--atlas', atlas,
+  ]);
+  assert.equal(result.code, 1);
+  assert.match(result.stderr, /^E_GROUP_DOSSIER: G13$/m);
+});
+
+test('Given G13-G18 dossiers When group-dossiers stage Then IDs scenarios and projections are distinct and complete', async () => {
+  const result = runVerifier([
+    '--docs', liveDocs,
+    '--stage', 'group-dossiers',
+    '--groups', 'G13,G14,G15,G16,G17,G18',
+    '--atlas', atlasPath,
+  ]);
+  assert.equal(result.code, 0, result.output);
+  const markdown = await readFile(atlasPath, 'utf8');
+  const parsed = extractAtlasJson(markdown);
+  assert.equal(parsed.ok, true, parsed.error);
+  const groups = parsed.value.hostile_groups.filter((group) => /^G1[3-8]$/.test(group.id));
+  assert.deepEqual(groups.map((group) => group.id), ['G13', 'G14', 'G15', 'G16', 'G17', 'G18']);
+  assert.equal(new Set(groups.map((group) => group.dossier_prose)).size, 6);
+  for (const group of groups) {
+    assert.notEqual(group.dossier_prose, group.prose, `${group.id} dossier must not copy short prose`);
+    for (const scenario of group.scenario_links) {
+      assert.match(group.dossier_prose, new RegExp(`^### ${scenario} · `, 'm'));
+    }
+    const page = await readFile(join(liveDocs, `Hostile-Group-${group.id}.md`), 'utf8');
+    assert.match(page, new RegExp(`^# ${group.id} · ${group.display_name}$`, 'm'));
+    assert.ok(page.includes(group.dossier_prose));
+  }
+});
+
 test('Given missing G01 adaptation When monster-manifest stage Then E_GROUP_ADAPTATION', async () => {
   const dir = await mkdtemp(join(tmpdir(), 'atlas-group-adaptation-'));
   fixtures.push(dir);
