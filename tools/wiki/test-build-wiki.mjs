@@ -626,6 +626,53 @@ await testCase('the root parser stack is exactly pinned and lockfile-consistent'
   }
 });
 
+await testCase('unpublished fragment pages listed in Cast-Index are not emitted', async () => {
+  const sourceDir = await sourceWith('unpublished-fragments', {
+    'Home.md': '# 홈\n',
+    'Cast-State-01.md': '# 국가 01\n',
+    'Cast-Index.md': [
+      '# 인물 총람',
+      '',
+      '| 항목 | 게시 상태 | 기록된 경로 · SHA · 브랜치 | 조각 확인 / 남은 일 |',
+      '| --- | --- | --- | --- |',
+      '| B001 | 미게시·대기 | `docs/game-logic/Story-Batch-B001.md` @ `deadbeef` (`docs/cast-b001`) | 게시 미완 |',
+      '| G01 | 미게시·대기 | `docs/game-logic/Hostile-Group-G01.md` @ `deadbeef` (`docs/cast-g01`) | 게시 미완 |',
+      '',
+    ].join('\n'),
+    'Story-Batch-B001.md': '# B001\n조각',
+    'Hostile-Group-G01.md': '# G01\n조각',
+    'Monster-Batch-M001.md': '# M001\n조각',
+  });
+  const outputDir = await generatedOutput('unpublished-fragments');
+  await buildWiki({ sourceDir, assetDir: assets, outputDir, commitSha: 'abc1234' });
+  const names = await readdir(outputDir);
+  assert.ok(names.includes('Home.md'), 'published Home stays');
+  assert.ok(names.includes('Cast-Index.md'), 'published Cast-Index stays');
+  assert.ok(names.includes('Cast-State-01.md'), 'published Cast-State stays');
+  assert.ok(!names.includes('Story-Batch-B001.md'), 'unpublished story fragment must not emit');
+  assert.ok(!names.includes('Hostile-Group-G01.md'), 'unpublished hostile fragment must not emit');
+  assert.ok(!names.includes('Monster-Batch-M001.md'), 'unpublished monster fragment must not emit');
+});
+
+await testCase('Cast-Index 게시 rows still emit their fragment page', async () => {
+  const sourceDir = await sourceWith('published-fragment', {
+    'Cast-Index.md': [
+      '# 인물 총람',
+      '',
+      '| 항목 | 게시 상태 | 기록된 경로 · SHA · 브랜치 | 조각 확인 / 남은 일 |',
+      '| --- | --- | --- | --- |',
+      '| B001 | 게시 | `docs/game-logic/Story-Batch-B001.md` @ `deadbeef` (`docs/cast-b001`) | 승인 |',
+      '',
+    ].join('\n'),
+    'Story-Batch-B001.md': '# B001\n게시분',
+  });
+  const outputDir = await generatedOutput('published-fragment');
+  await buildWiki({ sourceDir, assetDir: assets, outputDir, commitSha: 'abc1234' });
+  const names = await readdir(outputDir);
+  assert.ok(names.includes('Story-Batch-B001.md'), '게시 fragment must emit');
+  assert.ok(names.includes('Cast-Index.md'));
+});
+
 // ---------------------------------------------------------------------------
 // Repository documentation contract (pre-existing)
 // ---------------------------------------------------------------------------
