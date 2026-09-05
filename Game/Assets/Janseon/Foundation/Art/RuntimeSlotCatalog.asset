@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 900185b5d3d0649ee9e2db7390ec8f94, type: 3}
+  m_Name: RuntimeSlotCatalog
+  m_EditorClassIdentifier: Janseon.Foundation::Janseon.Foundation.Art.RuntimeSlotCatalog
+  entries:
+  - slot: title-art
+    bound: 0
+    sourceBindingHash: 
+    files: []
+  - slot: ui-icon-set
+    bound: 0
+    sourceBindingHash: 
+    files: []
+  - slot: history-texture
+    bound: 0
+    sourceBindingHash: 
+    files: []
+  - slot: character-explorer
+    bound: 0
+    sourceBindingHash: 
+    files: []
+  - slot: character-medic
+    bound: 0
+    sourceBindingHash: 
+    files: []
+  - slot: character-patrol
+    bound: 0
+    sourceBindingHash: 
+    files: []

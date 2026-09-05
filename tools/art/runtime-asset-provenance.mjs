@@ -1,4 +1,4 @@
-import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
+import { readFileSync, readdirSync, statSync, existsSync, realpathSync } from 'node:fs';
 import { dirname, join, relative, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
@@ -7,8 +7,9 @@ import { validateManifest } from './asset-manifest.mjs';
 
 const moduleDir = dirname(fileURLToPath(import.meta.url));
 export const defaultRepoRoot = resolve(moduleDir, '..', '..');
+export const runtimeSlotContract = JSON.parse(readFileSync(join(moduleDir, 'runtime-slot-contract.json'), 'utf8'));
 
-export const QUARANTINE_PATH_MARKERS = ['/ArtSource/', '/Quarantine/', 'StationPropValidation.unity'];
+export const QUARANTINE_PATH_MARKERS = ['/ArtCandidates/', '/ArtSource/', '/Quarantine/', 'StationPropValidation.unity'];
 
 export const PLAYABLE_BUILD_SCENES = [
   'Game/Assets/Scenes/Bootstrap.unity',
@@ -57,8 +58,14 @@ export function evaluatePromotedAsset(asset, options = {}) {
   if (asset.status !== 'promoted') errors.push({ code: 'status_not_promoted' });
   const root = options.repoRoot ?? defaultRepoRoot;
   const hash = bytes => createHash('sha256').update(bytes).digest('hex');
-  const fileMatches = (path, expected) => typeof path === 'string' && isSha256(expected)
-    && existsSync(resolve(root, path)) && hash(readFileSync(resolve(root, path))) === expected;
+  const fileMatches = (path, expected) => {
+    if (typeof path !== 'string' || !isSha256(expected)) return false;
+    const full = resolve(root, options.runtimeFileSources?.[path] ?? path);
+    if (!existsSync(full) || !statSync(full).isFile()) return false;
+    if (asset.runtime_slot && (!canonicalRepoPath(path)
+      || !realpathSync(full).startsWith(realpathSync(root) + sep))) return false;
+    return hash(readFileSync(full)) === expected;
+  };
   if (!fileMatches(asset.output_path, asset.output_hash)) errors.push({ code: 'output_hash_mismatch' });
   if (!fileMatches(asset.raw_path, asset.raw_hash)) errors.push({ code: 'raw_hash_mismatch' });
   if (!fileMatches(asset.rights_evidence?.path, asset.rights_evidence?.sha256)) errors.push({ code: 'rights_evidence_unbound' });
@@ -69,14 +76,107 @@ export function evaluatePromotedAsset(asset, options = {}) {
   const reviews = asset.review_receipts;
   if (!binding || binding.asset_id !== asset.asset_id || binding.output_hash !== asset.output_hash
     || !Array.isArray(reviews) || reviews.length === 0
-    || !reviews.every(r => fileMatches(r.receipt_path, r.receipt_hash)
-      && binding.review_hashes?.includes(r.receipt_hash))) errors.push({ code: 'review_receipt_unbound' });
+    || !Array.isArray(binding.review_hashes)
+    || !reviews.every(r => r && fileMatches(r.receipt_path, r.receipt_hash)
+      && binding.review_hashes.includes(r.receipt_hash))) errors.push({ code: 'review_receipt_unbound' });
   const paths = Object.entries(asset.runtime_files ?? {});
   if (paths.length === 0 || !paths.every(([path, sha]) => fileMatches(path, sha))) errors.push({ code: 'runtime_files_unbound' });
+  if (asset.runtime_slot) errors.push(...evaluateSlotContract(asset, binding, root));
   const ok = errors.length === 0;
   return { ok, class: ok ? CLASS.A_VALID_PROMOTED : CLASS.E_UNKNOWN, errors,
-    asset_id: asset.asset_id ?? null, generation_backend: asset.generation_backend ?? null,
+    asset_id: asset.asset_id ?? null, runtime_slot: asset.runtime_slot ?? null,
+    source_binding_hash: asset.source_binding?.sha256 ?? null,
+    slot_files: asset.runtime_slot_files ?? null,
+    generation_backend: asset.generation_backend ?? null,
     paths: paths.map(([p]) => p.startsWith('Assets/') ? 'Game/' + p : p) };
+}
+
+function canonicalRepoPath(path) {
+  return typeof path === 'string' && path.length > 0 && !path.includes('\\')
+    && !path.includes(':') && path.split('/').every(p => p !== '' && p !== '.' && p !== '..');
+}
+
+function sameFileMap(a, b) {
+  return a !== null && b !== null && typeof a === 'object' && typeof b === 'object'
+    && !Array.isArray(a) && !Array.isArray(b)
+    && Object.keys(a).length === Object.keys(b).length
+    && Object.entries(a).every(([key, value]) => value === b[key]);
+}
+
+export function runtimeSlotKeys(slot) {
+  const keys = [...slot.runtime_keys];
+  if (slot.import === 'character') {
+    for (const facing of runtimeSlotContract.character_sheet.facings) {
+      for (const action of runtimeSlotContract.character_sheet.actions) {
+        keys.push(`${facing}/${action.name}/clip`);
+        for (let i = 0; i < action.frames; i++) keys.push(`${facing}/${action.name}/${i}`);
+      }
+    }
+  }
+  return keys;
+}
+
+function evaluateSlotContract(asset, binding, root) {
+  const errors = [];
+  const slot = runtimeSlotContract.slots.find(s => s.slot === asset.runtime_slot);
+  if (!slot) return [{ code: 'unknown_runtime_slot' }];
+  if (asset.asset_class !== slot.asset_class) errors.push({ code: 'slot_asset_class_mismatch' });
+  const files = asset.runtime_slot_files;
+  const keys = runtimeSlotKeys(slot);
+  if (!files || typeof files !== 'object' || Array.isArray(files)
+    || Object.keys(files).length !== keys.length
+    || !keys.every(key => canonicalRepoPath(files[key]) && files[key].startsWith(slot.destination)
+      && !isQuarantinePath(files[key]) && isSha256(asset.runtime_files?.[files[key]])
+      && (key.endsWith('/clip') ? files[key].endsWith('.anim') : files[key].endsWith('.png')))) {
+    errors.push({ code: 'slot_files_incomplete' });
+  }
+  if (files?.[slot.primary_key] !== asset.output_path
+    || asset.runtime_files?.[asset.output_path] !== asset.output_hash) errors.push({ code: 'slot_output_mismatch' });
+  if (!Object.keys(asset.runtime_files ?? {}).every(path => canonicalRepoPath(path)
+    && path.startsWith(slot.destination) && !isQuarantinePath(path))) errors.push({ code: 'slot_runtime_path_forbidden' });
+  if (!canonicalRepoPath(asset.raw_path)
+    || !runtimeSlotContract.source_roots.some(root => asset.raw_path.startsWith(root))) errors.push({ code: 'slot_raw_path_forbidden' });
+  if (!binding || binding.runtime_slot !== asset.runtime_slot || binding.raw_hash !== asset.raw_hash
+    || !sameFileMap(binding.rights_evidence, asset.rights_evidence)
+    || !(sameFileMap(binding.runtime_files, asset.runtime_files)
+      || verifyRetargetedClips(asset, binding, root))
+    || !sameFileMap(binding.runtime_slot_files, files)) errors.push({ code: 'slot_source_binding_mismatch' });
+  return errors;
+}
+
+export function verifyRetargetedClips(asset, binding, root) {
+  const lineage = asset.generated_from;
+  if (!lineage || lineage.kind !== 'sprite-guid-retarget-v1'
+    || lineage.source_binding_hash !== asset.source_binding?.sha256
+    || !sameFileMap(binding?.runtime_slot_files, asset.runtime_slot_files)
+    || Object.keys(binding?.runtime_files ?? {}).length !== Object.keys(asset.runtime_files ?? {}).length) return false;
+  const hash = bytes => createHash('sha256').update(bytes).digest('hex');
+  const guidMap = new Map();
+  const clips = [];
+  for (const [key, path] of Object.entries(asset.runtime_slot_files)) {
+    const source = lineage.candidate_files?.[path];
+    if (!canonicalRepoPath(source) || !source.startsWith(runtimeSlotContract.candidate_root)
+      || !existsSync(resolve(root, source)) || !existsSync(resolve(root, path))
+      || hash(readFileSync(resolve(root, source))) !== binding.runtime_files[path]) return false;
+    if (key.endsWith('/clip')) { clips.push([source, path]); continue; }
+    if (asset.runtime_files[path] !== binding.runtime_files[path]) return false;
+    if (key === 'atlas') continue;
+    const sourceMeta = resolve(root, source + '.meta');
+    const runtimeMeta = resolve(root, path + '.meta');
+    if (!existsSync(sourceMeta) || !existsSync(runtimeMeta)) return false;
+    const from = /^guid: ([a-f0-9]{32})$/m.exec(readFileSync(sourceMeta, 'utf8'))?.[1];
+    const to = /^guid: ([a-f0-9]{32})$/m.exec(readFileSync(runtimeMeta, 'utf8'))?.[1];
+    if (!from || !to || guidMap.has(from) && guidMap.get(from) !== to) return false;
+    guidMap.set(from, to);
+  }
+  if (clips.length !== 20) return false;
+  for (const [source, path] of clips) {
+    const before = readFileSync(resolve(root, source), 'utf8');
+    const expected = before.replace(/guid: ([a-f0-9]{32})/g, (token, guid) =>
+      guidMap.has(guid) ? `guid: ${guidMap.get(guid)}` : token);
+    if (readFileSync(resolve(root, path), 'utf8') !== expected) return false;
+  }
+  return true;
 }
 
 export function isSha256(value) {
@@ -151,7 +251,7 @@ export function auditRuntimeProvenance(repoRoot = defaultRepoRoot, options = {})
     : '';
 
   // Build settings must only enable playable scenes; StationPropValidation is forbidden.
-  if (/StationPropValidation/i.test(buildSettings) || /Art\/Props/i.test(buildSettings) || /ArtSource/i.test(buildSettings)) {
+  if (/StationPropValidation/i.test(buildSettings) || /Art\/Props/i.test(buildSettings) || /ArtSource|ArtCandidates|Quarantine/i.test(buildSettings)) {
     violations.push({
       code: 'build_settings_quarantine_leak',
       path: 'Game/ProjectSettings/EditorBuildSettings.asset',
@@ -181,27 +281,48 @@ export function auditRuntimeProvenance(repoRoot = defaultRepoRoot, options = {})
   for (const [g, p] of assetsGuidMap) guidMap.set(g, p);
 
   // BOM inventory: eligibility requires actual source-bound files.
-  const bomPath = join(repoRoot, 'docs/assets/bom/props/station-prop-bom.json');
   const bomAssets = [];
-  if (existsSync(bomPath)) {
-    try {
-      const bom = JSON.parse(readFileSync(bomPath, 'utf8'));
-      for (const asset of bom.assets ?? []) {
-        const evaluation = evaluatePromotedAsset(asset, { ...options, repoRoot });
-        bomAssets.push(evaluation);
-        classifications.push({
-          slot: `bom:${asset.asset_id}`,
-          path: bomPathRelative(asset),
-          class: evaluation.class,
-          generation_backend: asset.generation_backend,
-          status: asset.status,
-          ok_for_runtime: evaluation.ok,
-          errors: evaluation.errors,
-        });
-
+  for (const bomRel of ['docs/assets/bom/props/station-prop-bom.json', runtimeSlotContract.bom_path]) {
+    const bomPath = join(repoRoot, bomRel);
+    if (existsSync(bomPath)) {
+      try {
+        const bom = JSON.parse(readFileSync(bomPath, 'utf8'));
+        for (const asset of bom.assets ?? []) {
+          const evaluation = evaluatePromotedAsset(asset, { ...options, repoRoot });
+          if (bomRel === runtimeSlotContract.bom_path && !asset.runtime_slot) {
+            evaluation.ok = false;
+            evaluation.class = CLASS.E_UNKNOWN;
+            evaluation.errors.push({ code: 'missing_runtime_slot' });
+          }
+          bomAssets.push(evaluation);
+          classifications.push({
+            slot: `bom:${asset.asset_id}`,
+            path: bomPathRelative(asset),
+            class: evaluation.class,
+            generation_backend: asset.generation_backend,
+            status: asset.status,
+            ok_for_runtime: evaluation.ok,
+            errors: evaluation.errors,
+          });
+        }
+      } catch (error) {
+        violations.push({ code: 'bom_unreadable', path: bomRel, detail: String(error) });
       }
-    } catch (error) {
-      violations.push({ code: 'bom_unreadable', path: 'docs/assets/bom/props/station-prop-bom.json', detail: String(error) });
+    }
+  }
+  for (const slot of runtimeSlotContract.slots) {
+    const rows = bomAssets.filter(b => b.runtime_slot === slot.slot);
+    if (rows.length > 1) {
+      for (const row of rows) {
+        row.ok = false;
+        row.class = CLASS.E_UNKNOWN;
+        row.errors.push({ code: 'duplicate_runtime_slot' });
+        for (const classification of classifications.filter(c => c.errors === row.errors)) {
+          classification.class = row.class;
+          classification.ok_for_runtime = false;
+        }
+      }
+      violations.push({ code: 'duplicate_runtime_slot', path: runtimeSlotContract.bom_path, slot: slot.slot });
     }
   }
 
@@ -215,6 +336,7 @@ export function auditRuntimeProvenance(repoRoot = defaultRepoRoot, options = {})
     `${CODE_NATIVE_UI_ROOT}/Styles/JanseonShared.uss`,
     `${CODE_NATIVE_UI_ROOT}/PanelSettings.asset`,
   ];
+  if (existsSync(join(repoRoot, runtimeSlotContract.catalog_path))) scanTargets.push(runtimeSlotContract.catalog_path);
 
   for (const rel of scanTargets) {
     const abs = join(repoRoot, rel);
@@ -225,6 +347,21 @@ export function auditRuntimeProvenance(repoRoot = defaultRepoRoot, options = {})
     }
 
     const text = readFileSync(abs, 'utf8');
+    if (rel === runtimeSlotContract.catalog_path) {
+      for (const match of text.matchAll(/^\s*- slot: ([^\r\n]+)\r?\n([\s\S]*?)(?=^\s*- slot:|$(?![\s\S]))/gm)) {
+        const slot = match[1].trim();
+        const body = match[2];
+        if (!/^\s*bound: 1\s*$/m.test(body)) continue;
+        const row = bomAssets.find(b => b.ok && b.runtime_slot === slot);
+        const bindingHash = /^\s*sourceBindingHash: (\S+)\s*$/m.exec(body)?.[1];
+        const refs = [...body.matchAll(/^\s*- key: ([^\r\n]+)\r?\n\s*asset: \{[^}]*guid: ([a-f0-9]{32})[^}]*\}/gm)];
+        if (!row || row.source_binding_hash !== bindingHash
+          || refs.length !== Object.keys(row.slot_files ?? {}).length
+          || !refs.every(r => row.slot_files[r[1].trim()] === guidMap.get(r[2]))) {
+          violations.push({ code: 'catalog_slot_unprovenanced', path: rel, slot });
+        }
+      }
+    }
     const isUiSource = rel.endsWith('.uxml') || rel.endsWith('.uss');
     classifications.push({
       slot: rel,
@@ -254,7 +391,8 @@ export function auditRuntimeProvenance(repoRoot = defaultRepoRoot, options = {})
       }
       if (/\.(png|jpg|jpeg|psd|tga|gif|bmp|tif|tiff|asset)$/i.test(url) || url.includes('Art/') || /trellis/i.test(url)) {
         const resolved = resolveUiUrl(rel, url);
-        if (isQuarantinePath(resolved) || !isCodeNativeUiPath(resolved)) {
+        if (isQuarantinePath(resolved) || (!isCodeNativeUiPath(resolved)
+          && !bomAssets.some(b => b.ok && assetPathsInclude(b, resolved)))) {
           violations.push({
             code: 'raster_without_valid_provenance',
             path: rel,
@@ -275,6 +413,8 @@ export function auditRuntimeProvenance(repoRoot = defaultRepoRoot, options = {})
         continue;
       }
       runtimeReferences.push({ from: rel, guid, to: target });
+      if (!isQuarantinePath(target) && /\.(asset|prefab|mat|anim|uxml|uss)$/.test(target)
+        && !scanTargets.includes(target)) scanTargets.push(target);
       if (isQuarantinePath(target)) {
         violations.push({
           code: 'runtime_references_quarantine_asset',
@@ -290,6 +430,7 @@ export function auditRuntimeProvenance(repoRoot = defaultRepoRoot, options = {})
         || target.endsWith('.glb')
         || target.endsWith('.prefab')
         || target.endsWith('.mat')
+        || target.endsWith('.anim')
       ) {
         // External raster or mesh must resolve to a source-bound promoted BOM entry.
         const bomHit = bomAssets.find((b) => b.ok && assetPathsInclude(b, target));
@@ -324,7 +465,7 @@ export function auditRuntimeProvenance(repoRoot = defaultRepoRoot, options = {})
       if (file.includes(`${sep}Tests${sep}`)) return;
       const rel = relative(repoRoot, file).split(sep).join('/');
       const text = readFileSync(file, 'utf8');
-      if (/ArtSource|StationPropValidation/i.test(text)) {
+      if (/ArtSource|ArtCandidates|Quarantine|StationPropValidation/i.test(text)) {
         violations.push({
           code: 'runtime_source_quarantine_token',
           path: rel,
@@ -383,7 +524,7 @@ function deriveBlockedSlots(bomAssets) {
   const ids = ['prop:poc-prop-ticket-gate', 'prop:poc-prop-pump-crate', 'prop:poc-prop-shutter',
     'prop:poc-prop-pillar', 'prop:poc-prop-bench', 'prop:poc-prop-cabinet',
     'character-explorer', 'character-medic', 'character-patrol', 'title-art', 'ui-icon-set', 'history-texture'];
-  return ids.filter(id => !bomAssets.some(b => b.ok && id === 'prop:' + b.asset_id))
+  return ids.filter(id => !bomAssets.some(b => b.ok && (id === 'prop:' + b.asset_id || id === b.runtime_slot)))
     .map(slot => ({ slot, reason: 'no_source_bound_runtime_asset', replacement: null }));
 }
 

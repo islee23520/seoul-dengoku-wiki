@@ -8,6 +8,7 @@ import json
 import math
 from hashlib import sha256
 from pathlib import Path
+from typing import assert_never
 
 from PIL import Image, ImageDraw, __version__ as PILLOW_VERSION
 
@@ -20,6 +21,19 @@ ACTIONS = {
     "attack": 6,
     "hit": 3,
     "down": 4,
+}
+HEAD_H = 36
+BODY_H = 90
+FEET_Y = 117
+NECK_W = 12
+VISOR = (18, 22, 28, 255)
+HELMET_GLASS = (28, 36, 44, 255)
+FLASH = (255, 255, 255, 60)
+APRON_STRAP = (196, 176, 140, 255)
+COAT_SHADOW = {
+    "poc-explorer": (36, 86, 90, 255),
+    "poc-medic": (84, 112, 80, 255),
+    "poc-patrol": (30, 33, 37, 255),
 }
 
 CHARACTERS = [
@@ -100,53 +114,74 @@ def sha256_file(path: Path) -> str:
     return sha256_bytes(path.read_bytes())
 
 
-def px(draw: ImageDraw.ImageDraw, x: int, y: int, color, size: int = 1) -> None:
-    draw.rectangle((x, y, x + size - 1, y + size - 1), fill=color)
+def _clamp_box(x0: int, y0: int, x1: int, y1: int) -> tuple[int, int, int, int]:
+    return (max(2, min(x0, x1)), max(2, min(y0, y1)), min(W - 3, max(x0, x1)), min(H - 3, max(y0, y1)))
 
 
-def rect(draw: ImageDraw.ImageDraw, x0: int, y0: int, x1: int, y1: int, color) -> None:
-    draw.rectangle((x0, y0, x1, y1), fill=color)
+def px(draw: ImageDraw.ImageDraw, x: int, y: int, color: tuple[int, int, int, int], size: int = 1) -> None:
+    rect(draw, x, y, x + size - 1, y + size - 1, color)
 
 
-def oval(draw: ImageDraw.ImageDraw, box, color) -> None:
-    draw.ellipse(box, fill=color)
+def rect(draw: ImageDraw.ImageDraw, x0: int, y0: int, x1: int, y1: int, color: tuple[int, int, int, int]) -> None:
+    left, top, right, bot = _clamp_box(x0, y0, x1, y1)
+    if right < left or bot < top:
+        return
+    draw.rectangle((left, top, right, bot), fill=color)
+
+
+def oval(draw: ImageDraw.ImageDraw, box: tuple[int, int, int, int], color: tuple[int, int, int, int]) -> None:
+    left, top, right, bot = _clamp_box(*box)
+    if right - left < 1 or bot - top < 1:
+        return
+    draw.ellipse((left, top, right, bot), fill=color)
+
+
+def blit(dst: Image.Image, src: Image.Image, xy: tuple[int, int]) -> None:
+    dst.paste(src, xy)
 
 
 def screen_side(facing: str, slot: str) -> str:
     left = slot.startswith("left_")
-    if facing == "S":
-        return "screen_right" if left else "screen_left"
-    if facing == "N":
-        return "screen_left" if left else "screen_right"
-    if facing == "E":
-        return "screen_left" if left else "screen_right"
-    return "screen_right" if left else "screen_left"
+    match facing:
+        case "S":
+            return "screen_right" if left else "screen_left"
+        case "N":
+            return "screen_left" if left else "screen_right"
+        case "E":
+            return "screen_left" if left else "screen_right"
+        case "W":
+            return "screen_right" if left else "screen_left"
+        case unreachable:
+            assert_never(unreachable)
 
 
 def body_edge_x(facing: str, side: str, width: int, cx: int) -> int:
-    edges = {
-        "E": (cx - 8, cx + 12),
-        "W": (cx - 11, cx + 8),
-        "N": (cx - 12, cx + 11),
-        "S": (cx - 12, cx + 11),
-    }
-    left_edge, right_edge = edges[facing]
+    match facing:
+        case "E":
+            left_edge, right_edge = cx - 8, cx + 12
+        case "W":
+            left_edge, right_edge = cx - 12, cx + 8
+        case "N" | "S":
+            left_edge, right_edge = cx - 12, cx + 11
+        case unreachable:
+            assert_never(unreachable)
     return left_edge - width + 1 if side == "screen_left" else right_edge - 1
 
 
 def head_edge_x(facing: str, side: str, width: int, cx: int) -> int:
-    edges = {
-        "E": (cx - 6, cx + 16),
-        "W": (cx - 16, cx + 6),
-        "N": (cx - 15, cx + 14),
-        "S": (cx - 15, cx + 14),
-    }
-    left_edge, right_edge = edges[facing]
+    match facing:
+        case "E":
+            left_edge, right_edge = cx - 6, cx + 16
+        case "W":
+            left_edge, right_edge = cx - 16, cx + 6
+        case "N" | "S":
+            left_edge, right_edge = cx - 15, cx + 14
+        case unreachable:
+            assert_never(unreachable)
     return left_edge - width + 1 if side == "screen_left" else right_edge - 1
 
 
 def pose(action: str, frame: int, count: int) -> dict[str, float]:
-    t = frame / max(count - 1, 1)
     data = {
         "bob": 0.0,
         "leg": 0.0,
@@ -156,23 +191,29 @@ def pose(action: str, frame: int, count: int) -> dict[str, float]:
         "attack": 0.0,
         "flash": 0.0,
     }
-    if action == "idle":
-        data["bob"] = [0, 1, 0, 1][frame]
-    elif action == "walk":
-        cycle = math.sin(frame / count * math.pi * 2)
-        data["leg"] = cycle
-        data["arm"] = -cycle * 0.6
-        data["bob"] = 1 if frame % 2 else 0
-    elif action == "attack":
-        data["attack"] = [0, 0.35, 0.8, 1.0, 0.7, 0.2][frame]
-        data["arm"] = data["attack"]
-    elif action == "hit":
-        data["recoil"] = [0.4, 1.0, 0.5][frame]
-        data["flash"] = 1 if frame == 1 else 0
-        data["bob"] = 1
-    elif action == "down":
-        data["down"] = [0.45, 0.8, 1.0, 1.0][frame]
-        data["bob"] = 2
+    match action:
+        case "idle":
+            data["bob"] = (0, 1, 2, 1)[frame]
+            data["arm"] = (0.0, 0.45, 0.0, 0.45)[frame]
+        case "walk":
+            cycle = math.sin(frame / count * math.pi * 2)
+            data["leg"] = cycle
+            data["arm"] = -cycle
+            data["bob"] = (0, 1, 2, 1, 0, 1)[frame]
+        case "attack":
+            data["attack"] = (0.0, 0.2, 0.55, 1.0, 0.62, 0.22)[frame]
+            data["arm"] = data["attack"]
+            data["bob"] = (0, 1, 2, 3, 1, 0)[frame]
+        case "hit":
+            data["recoil"] = (0.35, 1.0, 0.5)[frame]
+            data["flash"] = (0.0, 1.0, 0.35)[frame]
+            data["bob"] = (1, 3, 0)[frame]
+        case "down":
+            data["down"] = (0.28, 0.58, 0.86, 1.0)[frame]
+            data["bob"] = (1, 2, 3, 4)[frame]
+            data["arm"] = (0.2, 0.55, 0.9, 1.0)[frame]
+        case unreachable:
+            assert_never(unreachable)
     return data
 
 
@@ -182,171 +223,403 @@ def draw_character(character: dict, facing: str, action: str, frame: int) -> Ima
     pal = character["palette"]
     p = pose(action, frame, ACTIONS[action])
     cx = 48
-    if facing == "E":
-        cx += 2
-    elif facing == "W":
-        cx -= 2
+    match facing:
+        case "E":
+            cx += 2
+        case "W":
+            cx -= 2
+        case "N" | "S":
+            pass
+        case unreachable:
+            assert_never(unreachable)
     if p["recoil"]:
-        if facing == "E":
-            cx -= int(3 * p["recoil"])
-        elif facing == "W":
-            cx += int(3 * p["recoil"])
-        else:
-            cx += int(2 * p["recoil"]) if facing == "S" else -int(2 * p["recoil"])
+        match facing:
+            case "E":
+                cx -= int(4 * p["recoil"])
+            case "W":
+                cx += int(4 * p["recoil"])
+            case "S":
+                cx += int(2 * p["recoil"])
+            case "N":
+                cx -= int(2 * p["recoil"])
+            case unreachable:
+                assert_never(unreachable)
+    if action == "down":
+        return draw_down(character, facing, frame, cx)
 
-    down = p["down"]
     bob = int(p["bob"])
-    feet_y = 118
-    if down >= 0.8:
-        return draw_down(character, facing, img, draw, cx)
+    head_top = FEET_Y - BODY_H + 1 + bob
+    neck = head_top + HEAD_H
+    torso_bot = FEET_Y - 20 + bob
+    coat_hem = FEET_Y - 8 + bob if character["asset_id"] == "poc-explorer" else torso_bot + 4
+    stride = int(10 * p["leg"])
+    left_leg_x, right_leg_x = _leg_x(facing, cx, stride)
+    rect(draw, left_leg_x, neck + 18, left_leg_x + 7, FEET_Y, pal["pants"])
+    rect(draw, right_leg_x, neck + 18, right_leg_x + 7, FEET_Y, pal["pants"])
+    rect(draw, left_leg_x - 1, FEET_Y - 4, left_leg_x + 8, FEET_Y + 1, pal["outline"])
+    rect(draw, right_leg_x - 1, FEET_Y - 4, right_leg_x + 8, FEET_Y + 1, pal["outline"])
 
-    head_y = 18 + bob
-    head_r = 14
-    torso_top = head_y + 26
-    torso_bot = 78 + bob
-    if down:
-        head_y += int(18 * down)
-        torso_top += int(16 * down)
-        torso_bot += int(10 * down)
-
-    # legs
-    stride = int(6 * p["leg"])
-    left_leg_x = cx - 8
-    right_leg_x = cx + 2
-    if facing in ("E", "W"):
-        left_leg_x = cx - 5
-        right_leg_x = cx - 1
-        if facing == "E":
-            right_leg_x += stride
-            left_leg_x -= stride
-        else:
-            right_leg_x -= stride
-            left_leg_x += stride
-    else:
-        left_leg_x -= stride
-        right_leg_x += stride
-    rect(draw, left_leg_x, torso_bot - 2, left_leg_x + 6, feet_y, pal["pants"])
-    rect(draw, right_leg_x, torso_bot - 2, right_leg_x + 6, feet_y, pal["pants"])
-    shoe = pal["outline"]
-    rect(draw, left_leg_x - 1, feet_y - 3, left_leg_x + 7, feet_y + 1, shoe)
-    rect(draw, right_leg_x - 1, feet_y - 3, right_leg_x + 7, feet_y + 1, shoe)
-
-    # torso: S/N full front/back; E is 3/4 front, W is 3/4 back — not a flip.
     attack = p["attack"]
-    arm_y0 = torso_top + 4
-    arm_y1 = torso_top + 22
-    if facing == "E":
-        rect(draw, cx - 8, torso_top, cx + 12, torso_bot, pal["coat"])
-        if character["asset_id"] != "poc-patrol":
-            rect(draw, cx + 1, torso_top, cx + 8, torso_top + 4, pal["accent"])
-        rect(draw, cx - 7, arm_y0 + 6, cx - 3, arm_y1, pal["coat"])
-        extend = 12 + int(14 * attack)
-        rect(draw, cx + 10, arm_y0, cx + extend, arm_y0 + 7, pal["coat"])
-        rect(draw, cx + extend - 1, arm_y0 + 5, cx + extend + 3, arm_y0 + 10, pal["skin"])
-        hand_r = (cx + extend + 2, arm_y0 + 4)
-        hand_l = (cx - 5, arm_y1)
-    elif facing == "W":
-        # 3/4 back: backpack mass, no face, character-right weapon on screen-left.
-        rect(draw, cx - 11, torso_top, cx + 8, torso_bot, pal["coat"])
-        rect(draw, cx + 3, torso_top + 6, cx + 8, torso_bot - 4, pal["pants"])
-        extend = 10 + int(12 * attack)
-        rect(draw, cx - extend, arm_y0 + 4, cx - 8, arm_y0 + 10, pal["coat"])
-        rect(draw, cx - extend - 2, arm_y0 + 6, cx - extend + 2, arm_y0 + 12, pal["skin"])
-        rect(draw, cx + 6, arm_y0 + 10, cx + 10, arm_y1 + 2, pal["coat"])
-        hand_r = (cx - extend - 1, arm_y0 + 6)
-        hand_l = (cx + 8, arm_y1)
-    else:
-        rect(draw, cx - 12, torso_top, cx + 11, torso_bot, pal["coat"])
-        if character["asset_id"] != "poc-patrol":
-            rect(draw, cx - 6, torso_top, cx + 5, torso_top + 4, pal["accent"])
-        if facing == "S":
-            rect(draw, cx - 18, arm_y0, cx - 13, arm_y1 + int(4 * p["arm"]), pal["coat"])
-            rect(draw, cx + 12, arm_y0, cx + 17, arm_y1 - int(8 * attack), pal["coat"])
-            rect(draw, cx - 18, arm_y1 + int(4 * p["arm"]) - 2, cx - 13, arm_y1 + 6 + int(4 * p["arm"]), pal["skin"])
-            hand_r = (cx - 16, arm_y1 + int(4 * p["arm"]) + 2)
-            hand_l = (cx + 14, arm_y1 - int(10 * attack) + 2)
-        else:
-            rect(draw, cx - 18, arm_y0, cx - 13, arm_y1 - int(8 * attack), pal["coat"])
-            rect(draw, cx + 12, arm_y0, cx + 17, arm_y1 + int(4 * p["arm"]), pal["coat"])
-            hand_r = (cx + 14, arm_y1 + int(4 * p["arm"]) + 2)
-            hand_l = (cx - 16, arm_y1 - int(10 * attack) + 2)
-
-    # head
-    if facing == "E":
-        oval(draw, (cx - 8, head_y, cx + 16, head_y + 28), pal["skin"])
-    elif facing == "W":
-        oval(draw, (cx - 16, head_y, cx + 8, head_y + 28), pal["skin"])
-    else:
-        oval(draw, (cx - head_r, head_y, cx + head_r, head_y + 28), pal["skin"])
-    if character["asset_id"] == "poc-patrol":
-        if facing == "E":
-            rect(draw, cx - 8, head_y - 2, cx + 13, head_y + 10, pal["coat"])
-            rect(draw, cx + 8, head_y + 7, cx + 18, head_y + 11, pal["coat"])
-            px(draw, cx + 12, head_y + 15, pal["eye"], 2)
-        elif facing == "W":
-            rect(draw, cx - 13, head_y - 2, cx + 8, head_y + 10, pal["coat"])
-            rect(draw, cx - 18, head_y + 7, cx - 8, head_y + 11, pal["coat"])
-            px(draw, cx - 14, head_y + 15, pal["eye"], 2)
-        else:
-            rect(draw, cx - 15, head_y - 2, cx + 14, head_y + 12, pal["coat"])
-            rect(draw, cx - 13, head_y + 6, cx + 12, head_y + 16, pal["gear_secondary"])
-            if facing != "N":
-                rect(draw, cx - 10, head_y + 8, cx + 9, head_y + 14, (30, 40, 48, 255))
-    else:
-        if facing == "N":
-            oval(draw, (cx - 13, head_y - 4, cx + 13, head_y + 16), pal["hair"])
-        elif facing == "S":
-            oval(draw, (cx - 13, head_y - 6, cx + 13, head_y + 10), pal["hair"])
-            px(draw, cx - 5, head_y + 14, pal["eye"], 2)
-            px(draw, cx + 4, head_y + 14, pal["eye"], 2)
-            rect(draw, cx - 3, head_y + 19, cx + 3, head_y + 21, pal["outline"])
-        elif facing == "E":
-            oval(draw, (cx - 4, head_y - 6, cx + 16, head_y + 10), pal["hair"])
-            px(draw, cx + 8, head_y + 14, pal["eye"], 2)
-            rect(draw, cx + 6, head_y + 19, cx + 11, head_y + 21, pal["outline"])
-        else:
-            oval(draw, (cx - 16, head_y - 8, cx + 6, head_y + 12), pal["hair"])
-
+    arm = p["arm"]
+    shadow = COAT_SHADOW[character["asset_id"]]
+    _draw_head(character, facing, draw, pal, cx, head_top, neck)
+    _draw_neck(character, facing, draw, pal, cx, neck)
+    torso_top = neck + 3
+    hand_r, hand_l = _draw_torso(
+        character, facing, draw, pal, shadow, cx, torso_top, coat_hem, torso_bot, arm, attack,
+    )
     if p["flash"]:
         overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         od = ImageDraw.Draw(overlay)
-        oval(od, (cx - 16, head_y - 2, cx + 16, torso_bot), (255, 255, 255, 60))
+        alpha = int(FLASH[3] * p["flash"])
+        oval(od, (cx - 18, head_top - 2, cx + 18, coat_hem), (255, 255, 255, alpha))
         img = Image.alpha_composite(img, overlay)
         draw = ImageDraw.Draw(img)
-
-    draw_gear(character, facing, draw, cx, head_y, torso_top, torso_bot, hand_r, hand_l, attack)
+    draw_gear(character, facing, draw, cx, head_top, neck, coat_hem, hand_r, hand_l, attack)
     return img
 
 
-def draw_down(character: dict, facing: str, img: Image.Image, draw: ImageDraw.ImageDraw, cx: int) -> Image.Image:
+def _leg_x(facing: str, cx: int, stride: int) -> tuple[int, int]:
+    match facing:
+        case "E":
+            return cx - 6 - stride, cx - 1 + stride
+        case "W":
+            return cx - 2 + stride, cx - 7 - stride
+        case "S":
+            return cx - 9 - stride, cx + 2 + stride
+        case "N":
+            return cx - 9 + stride, cx + 2 - stride
+        case unreachable:
+            assert_never(unreachable)
+
+
+def _draw_neck(
+    character: dict,
+    facing: str,
+    draw: ImageDraw.ImageDraw,
+    pal: dict,
+    cx: int,
+    neck: int,
+) -> None:
+    color = pal["coat"] if character["asset_id"] == "poc-patrol" else pal["skin"]
+    rect(draw, cx - 6, neck - 2, cx + 5, neck + 3, color)
+
+
+def _draw_torso(
+    character: dict,
+    facing: str,
+    draw: ImageDraw.ImageDraw,
+    pal: dict,
+    shadow: tuple[int, int, int, int],
+    cx: int,
+    torso_top: int,
+    coat_hem: int,
+    torso_bot: int,
+    arm: float,
+    attack: float,
+) -> tuple[tuple[int, int], tuple[int, int]]:
+    asset = character["asset_id"]
+    arm_y0 = torso_top + 2
+    match facing:
+        case "E":
+            rect(draw, cx - 8, torso_top, cx + 12, coat_hem, pal["coat"])
+            rect(draw, cx + 8, torso_top + 4, cx + 12, coat_hem - 2, shadow)
+            if asset == "poc-explorer":
+                rect(draw, cx + 2, torso_top, cx + 11, torso_top + 8, pal["accent"])
+                rect(draw, cx - 2, torso_top + 10, cx + 1, coat_hem - 6, pal["pants"])
+                rect(draw, cx - 4, torso_bot - 2, cx + 8, torso_bot + 1, pal["outline"])
+            elif asset == "poc-medic":
+                rect(draw, cx - 4, torso_top + 6, cx + 10, torso_bot + 2, pal["accent"])
+                rect(draw, cx - 2, torso_top + 8, cx + 8, torso_top + 12, APRON_STRAP)
+                rect(draw, cx + 1, torso_top + 16, cx + 8, torso_top + 24, pal["accent"])
+            elif asset == "poc-patrol":
+                rect(draw, cx - 6, torso_top + 4, cx + 8, torso_top + 8, pal["outline"])
+                rect(draw, cx - 4, torso_top + 18, cx + 6, torso_top + 22, pal["outline"])
+            extend = 10 + int(16 * attack) + int(8 * arm)
+            hand_rx = min(88, cx + extend)
+            rect(draw, cx + 10, arm_y0, hand_rx, arm_y0 + 7, pal["coat"])
+            rect(draw, hand_rx - 1, arm_y0 + 4, min(90, hand_rx + 3), arm_y0 + 10, pal["skin"] if asset != "poc-patrol" else pal["coat"])
+            rear = arm_y0 + 8 + int(6 * arm)
+            rect(draw, cx - 14, arm_y0 + 4, cx - 7, rear + 8, pal["coat"])
+            hand_r = (hand_rx + 1, arm_y0 + 6)
+            hand_l = (cx - 12, rear + 6)
+        case "W":
+            rect(draw, cx - 12, torso_top, cx + 8, coat_hem, pal["coat"])
+            rect(draw, cx - 12, torso_top + 4, cx - 8, coat_hem - 2, shadow)
+            if asset == "poc-explorer":
+                rect(draw, cx - 6, torso_top + 8, cx + 4, torso_top + 22, pal["outline"])
+                rect(draw, cx - 4, torso_top + 10, cx + 2, torso_top + 20, pal["gear_secondary"])
+            elif asset == "poc-medic":
+                rect(draw, cx - 10, torso_top + 6, cx + 4, torso_bot, pal["coat"])
+            extend = 10 + int(14 * attack) + int(8 * arm)
+            hand_rx = max(5, cx - extend)
+            rect(draw, hand_rx, arm_y0 + 3, cx - 8, arm_y0 + 10, pal["coat"])
+            rect(draw, max(3, hand_rx - 2), arm_y0 + 6, hand_rx + 2, arm_y0 + 12, pal["skin"] if asset != "poc-patrol" else pal["coat"])
+            rear_x = min(90, cx + 12 + int(14 * max(-arm, 0)))
+            rect(draw, cx + 6, arm_y0 + 8, rear_x, arm_y0 + 22 + int(4 * arm), pal["coat"])
+            hand_r = (hand_rx, arm_y0 + 8)
+            hand_l = (rear_x - 2, arm_y0 + 20)
+        case "S":
+            rect(draw, cx - 12, torso_top, cx + 11, coat_hem, pal["coat"])
+            if asset == "poc-explorer":
+                rect(draw, cx - 8, torso_top, cx + 7, torso_top + 8, pal["accent"])
+                rect(draw, cx - 2, torso_top + 10, cx + 1, coat_hem - 8, pal["pants"])
+                px(draw, cx - 1, torso_top + 18, pal["outline"], 2)
+                px(draw, cx - 1, torso_top + 26, pal["outline"], 2)
+                rect(draw, cx - 8, torso_bot - 2, cx + 7, torso_bot + 1, pal["outline"])
+            elif asset == "poc-medic":
+                rect(draw, cx - 9, torso_top + 4, cx + 8, torso_bot + 4, pal["accent"])
+                rect(draw, cx - 8, torso_top + 4, cx - 6, torso_top + 16, APRON_STRAP)
+                rect(draw, cx + 5, torso_top + 4, cx + 7, torso_top + 16, APRON_STRAP)
+                rect(draw, cx - 5, torso_top + 16, cx + 4, torso_top + 28, pal["accent"])
+                rect(draw, cx - 4, torso_top + 18, cx + 3, torso_top + 24, APRON_STRAP)
+            elif asset == "poc-patrol":
+                rect(draw, cx - 10, torso_top + 4, cx + 9, torso_top + 8, pal["outline"])
+                rect(draw, cx - 8, torso_top + 16, cx + 7, torso_top + 20, pal["outline"])
+            left_arm_y1 = arm_y0 + 16 + int(8 * arm)
+            right_arm_y1 = arm_y0 + 16 - int(12 * attack) - int(8 * arm)
+            left_x = max(4, cx - 18 - int(6 * max(arm, 0)))
+            right_x = min(86, cx + 11 + int(10 * attack) + int(6 * max(-arm, 0)))
+            rect(draw, left_x, arm_y0, left_x + 6, left_arm_y1, pal["coat"])
+            rect(draw, right_x, arm_y0, right_x + 6, right_arm_y1, pal["coat"])
+            rect(draw, left_x, left_arm_y1 - 2, left_x + 6, left_arm_y1 + 5, pal["skin"] if asset != "poc-patrol" else pal["coat"])
+            rect(draw, right_x, right_arm_y1 - 2, right_x + 6, right_arm_y1 + 5, pal["skin"] if asset != "poc-patrol" else pal["coat"])
+            hand_r = (left_x + 2, left_arm_y1 + 2)
+            hand_l = (right_x + 3, right_arm_y1 + 2)
+        case "N":
+            rect(draw, cx - 12, torso_top, cx + 11, coat_hem, pal["coat"])
+            rect(draw, cx - 8, torso_top + 6, cx + 7, coat_hem - 4, shadow)
+            if asset == "poc-explorer":
+                rect(draw, cx - 5, torso_top + 8, cx + 5, torso_top + 22, pal["outline"])
+                rect(draw, cx - 3, torso_top + 10, cx + 3, torso_top + 20, pal["gear_secondary"])
+            left_arm_y1 = arm_y0 + 16 - int(12 * attack) - int(8 * arm)
+            right_arm_y1 = arm_y0 + 16 + int(8 * arm)
+            left_x = max(4, cx - 20 - int(10 * attack) - int(10 * max(-arm, 0)))
+            right_x = min(86, cx + 13 + int(10 * max(arm, 0)))
+            rect(draw, left_x, arm_y0, left_x + 6, left_arm_y1, pal["coat"])
+            rect(draw, right_x, arm_y0, right_x + 6, right_arm_y1, pal["coat"])
+            hand_r = (right_x + 3, right_arm_y1 + 2)
+            hand_l = (left_x + 2, left_arm_y1 + 2)
+        case unreachable:
+            assert_never(unreachable)
+    if asset == "poc-medic":
+        knot_x = body_edge_x(facing, screen_side(facing, "right_arm"), 6, cx)
+        rect(draw, knot_x, torso_top + 2, knot_x + 6, torso_top + 9, pal["gear_primary"])
+        px(draw, knot_x + 1, torso_top + 10, pal["gear_primary"], 3)
+    return hand_r, hand_l
+
+
+def _stamp_spans(
+    draw: ImageDraw.ImageDraw,
+    cx: int,
+    y0: int,
+    spans: tuple[int, ...],
+    color: tuple[int, int, int, int],
+) -> None:
+    for i, half in enumerate(spans):
+        if half < 1:
+            continue
+        rect(draw, cx - half, y0 + i, cx + half - 1, y0 + i, color)
+
+
+def _draw_head(
+    character: dict,
+    facing: str,
+    draw: ImageDraw.ImageDraw,
+    pal: dict,
+    cx: int,
+    head_top: int,
+    neck: int,
+) -> None:
+    asset = character["asset_id"]
+    if asset == "poc-patrol":
+        _draw_patrol_helmet(facing, draw, pal, cx, head_top, neck)
+        return
+    skull = (5, 8, 10, 12, 13, 14, 15, 14, 15, 14, 15, 14, 15, 14, 15, 14, 15, 14, 15, 14, 15, 14, 15, 14, 15, 14, 15, 14, 14, 13, 13, 12, 11, 10, 9, 8)
+    match facing:
+        case "S":
+            _stamp_spans(draw, cx, head_top, skull, pal["skin"])
+            hair = (4, 7, 9, 11, 13, 14, 15, 14, 15, 13, 11, 8, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+            _stamp_spans(draw, cx, head_top, hair, pal["hair"])
+            if asset == "poc-medic":
+                rect(draw, cx - 1, head_top + 3, cx, head_top + 14, pal["skin"])
+                oval(draw, (cx - 14, head_top + 8, cx - 8, head_top + 22), pal["hair"])
+                oval(draw, (cx + 7, head_top + 8, cx + 13, head_top + 22), pal["hair"])
+                rect(draw, cx - 16, neck + 1, cx - 13, neck + 9, pal["hair"])
+                rect(draw, cx + 12, neck + 1, cx + 15, neck + 9, pal["hair"])
+            else:
+                px(draw, cx - 8, head_top + 8, pal["hair"], 3)
+                px(draw, cx + 6, head_top + 7, pal["hair"], 2)
+                px(draw, cx - 3, head_top + 4, pal["hair"], 2)
+            px(draw, cx - 6, head_top + 18, pal["eye"], 2)
+            px(draw, cx + 3, head_top + 18, pal["eye"], 2)
+            rect(draw, cx - 3, head_top + 25, cx + 2, head_top + 26, pal["outline"])
+        case "N":
+            _stamp_spans(draw, cx, head_top, skull, pal["hair"])
+            if asset == "poc-medic":
+                rect(draw, cx - 16, neck + 1, cx - 13, neck + 9, pal["hair"])
+                rect(draw, cx + 12, neck + 1, cx + 15, neck + 9, pal["hair"])
+            else:
+                px(draw, cx - 9, head_top + 8, pal["hair"], 3)
+                px(draw, cx + 7, head_top + 7, pal["hair"], 2)
+        case "E":
+            profile = (5, 7, 9, 11, 12, 13, 12, 13, 12, 13, 12, 13, 12, 13, 12, 13, 12, 13, 12, 13, 12, 13, 12, 12, 12, 11, 11, 11, 10, 10, 9, 9, 8, 8, 8, 8)
+            _stamp_spans(draw, cx + 4, head_top, profile, pal["skin"])
+            hair = (4, 6, 8, 10, 12, 13, 12, 13, 11, 9, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+            _stamp_spans(draw, cx + 4, head_top, hair, pal["hair"])
+            if asset == "poc-medic":
+                rect(draw, cx + 12, neck + 5, cx + 15, neck + 12, pal["hair"])
+            px(draw, cx + 9, head_top + 18, pal["eye"], 2)
+            rect(draw, cx + 11, head_top + 24, cx + 14, head_top + 25, pal["outline"])
+        case "W":
+            profile = (5, 7, 9, 11, 12, 13, 12, 13, 12, 13, 12, 13, 12, 13, 12, 13, 12, 13, 12, 13, 12, 13, 12, 12, 12, 11, 11, 11, 10, 10, 9, 9, 8, 8, 8, 8)
+            _stamp_spans(draw, cx - 4, head_top, profile, pal["skin"])
+            hair = (4, 6, 8, 10, 12, 13, 13, 12, 11, 9, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+            _stamp_spans(draw, cx - 4, head_top, hair, pal["hair"])
+            if asset == "poc-medic":
+                rect(draw, cx - 16, neck + 5, cx - 13, neck + 12, pal["hair"])
+        case unreachable:
+            assert_never(unreachable)
+
+
+def _draw_patrol_helmet(
+    facing: str,
+    draw: ImageDraw.ImageDraw,
+    pal: dict,
+    cx: int,
+    head_top: int,
+    neck: int,
+) -> None:
+    dome = (5, 8, 10, 12, 14, 15, 16, 15, 16, 15, 16, 15, 16, 15, 16, 15, 16, 15, 16, 15, 16, 15, 15, 14, 15, 14, 13, 12, 13, 12, 11, 10, 9, 9, 8, 8)
+    match facing:
+        case "S":
+            _stamp_spans(draw, cx, head_top, dome, pal["coat"])
+            visor = (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 12, 13, 12, 11, 10, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+            _stamp_spans(draw, cx, head_top, visor, VISOR)
+            glass = (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 10, 10, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+            _stamp_spans(draw, cx, head_top, glass, HELMET_GLASS)
+            oval(draw, (cx - 7, neck - 10, cx + 6, neck - 2), pal["coat"])
+            rect(draw, cx - 4, neck - 6, cx + 3, neck - 4, pal["outline"])
+            oval(draw, (cx - 15, head_top + 12, cx - 11, head_top + 18), pal["coat"])
+            oval(draw, (cx + 10, head_top + 12, cx + 14, head_top + 18), pal["coat"])
+        case "N":
+            _stamp_spans(draw, cx, head_top, dome, pal["coat"])
+            oval(draw, (cx - 8, head_top + 10, cx + 7, head_top + 22), pal["outline"])
+            oval(draw, (cx - 16, head_top + 10, cx - 12, head_top + 20), pal["coat"])
+            oval(draw, (cx + 11, head_top + 10, cx + 15, head_top + 20), pal["coat"])
+        case "E":
+            _stamp_spans(draw, cx + 3, head_top, dome, pal["coat"])
+            visor = (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 7, 8, 8, 7, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+            _stamp_spans(draw, cx + 8, head_top, visor, VISOR)
+            oval(draw, (cx + 4, neck - 8, cx + 14, neck - 1), pal["coat"])
+            oval(draw, (cx - 8, head_top + 12, cx - 2, head_top + 24), pal["coat"])
+        case "W":
+            _stamp_spans(draw, cx - 3, head_top, dome, pal["coat"])
+            oval(draw, (cx - 16, head_top + 6, cx - 4, neck - 6), pal["outline"])
+            oval(draw, (cx - 14, neck - 8, cx - 4, neck - 1), pal["coat"])
+            oval(draw, (cx + 2, head_top + 12, cx + 8, head_top + 24), pal["coat"])
+        case unreachable:
+            assert_never(unreachable)
+
+
+def draw_down(character: dict, facing: str, frame: int, cx: int) -> Image.Image:
+    img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(img)
     pal = character["palette"]
-    y = 86
-    if facing in ("E", "W"):
-        body_x0 = 18 if facing == "E" else 28
-        rect(draw, body_x0, y, body_x0 + 52, y + 16, pal["coat"])
-        oval(draw, (body_x0 + (52 if facing == "E" else -10), y - 6, body_x0 + (52 if facing == "E" else -10) + 24, y + 18), pal["skin"])
-        rect(draw, body_x0 + (40 if facing == "E" else 0), y - 2, body_x0 + (54 if facing == "E" else 12), y + 8, pal["hair"] if character["asset_id"] != "poc-patrol" else pal["coat"])
-    else:
-        rect(draw, cx - 22, y, cx + 22, y + 18, pal["coat"])
-        oval(draw, (cx - 10, y - 16, cx + 10, y + 6), pal["skin"])
-        if facing == "S":
-            px(draw, cx - 4, y - 6, pal["eye"], 2)
-            px(draw, cx + 3, y - 6, pal["eye"], 2)
-        oval(draw, (cx - 11, y - 18, cx + 11, y - 6), pal["hair"] if character["asset_id"] != "poc-patrol" else pal["coat"])
-    # keep gear visible on downed body without mirroring
-    if "lantern" in character["gear"].values():
-        side = 58 if facing in ("S", "W") else 28
-        oval(draw, (side, y + 10, side + 10, y + 20), character["palette"]["gear_primary"])
-    if "satchel" in character["gear"].values():
-        side = 60 if facing in ("S", "W") else 22
-        rect(draw, side, y + 8, side + 12, y + 18, character["palette"]["gear_secondary"])
-    if "hazard_bar" in character["gear"].values():
-        side = 58 if screen_side(facing, "left_chest") == "screen_right" else 28
-        rect(draw, side, y + 2, side + 10, y + 8, character["palette"]["accent"])
-    if "prybar" in character["gear"].values() or "baton" in character["gear"].values() or "splint_kit" in character["gear"].values():
-        x = 22 if screen_side(facing, "right_hand") == "screen_left" else 64
-        rect(draw, x, y - 8, x + 4, y + 16, character["palette"]["gear_secondary"])
+    asset = character["asset_id"]
+    head_top = (42, 58, 72, 82)[frame]
+    body_y = (70, 84, 94, 100)[frame]
+    body_h = (28, 22, 16, 14)[frame]
+    match facing:
+        case "E":
+            body_x0, body_x1 = 18, 62 + frame * 4
+            head_cx = body_x1 - 6
+        case "W":
+            body_x0, body_x1 = 30 - frame * 4, 76
+            head_cx = body_x0 + 6
+        case "S" | "N":
+            body_x0, body_x1 = cx - 18 - frame, cx + 17 + frame
+            head_cx = cx
+        case unreachable:
+            assert_never(unreachable)
+    body_x0, body_y, body_x1, body_bot = _clamp_box(body_x0, body_y, body_x1, body_y + body_h)
+    rect(draw, body_x0, body_y, body_x1, body_bot, pal["coat"])
+    if asset == "poc-medic":
+        rect(draw, body_x0 + 4, body_y + 2, body_x1 - 4, body_bot - 2, pal["accent"])
+    if asset == "poc-explorer":
+        rect(draw, body_x0 + 2, body_y, body_x1 - 2, body_y + 4, pal["accent"])
+    if frame == 0:
+        rect(draw, cx - 9, 88, cx + 8, 112, pal["pants"])
+        _draw_head(character, facing, draw, pal, cx, 44, 44 + HEAD_H)
+        draw_gear(character, facing, draw, cx, 44, 44 + HEAD_H, 92, (cx - 16, 88), (cx + 14, 84), 0.0)
+        return img
+    _down_head(character, facing, draw, pal, head_cx, head_top, standing=False)
+    _down_gear(character, facing, draw, pal, cx, body_y, stage=frame)
     return img
+
+
+def _down_head(
+    character: dict,
+    facing: str,
+    draw: ImageDraw.ImageDraw,
+    pal: dict,
+    cx: int,
+    head_top: int,
+    standing: bool,
+) -> None:
+    if standing:
+        _draw_head(character, facing, draw, pal, cx, head_top, head_top + HEAD_H)
+        return
+    box = _clamp_box(cx - 12, head_top, cx + 11, head_top + 22)
+    if character["asset_id"] == "poc-patrol":
+        oval(draw, box, pal["coat"])
+        if facing == "S":
+            oval(draw, (box[0] + 3, box[1] + 6, box[2] - 3, box[3] - 4), VISOR)
+        return
+    oval(draw, box, pal["skin"])
+    oval(draw, (box[0], box[1] - 2, box[2], box[1] + 12), pal["hair"])
+    if facing == "S":
+        px(draw, cx - 4, head_top + 12, pal["eye"], 2)
+        px(draw, cx + 2, head_top + 12, pal["eye"], 2)
+
+
+def _down_gear(
+    character: dict,
+    facing: str,
+    draw: ImageDraw.ImageDraw,
+    pal: dict,
+    cx: int,
+    y: int,
+    stage: int,
+) -> None:
+    gear = character["gear"]
+    left = screen_side(facing, "left_hip" if "left_hip" in gear else "left_chest")
+    right = screen_side(facing, "right_hand")
+    left_x = 18 if left == "screen_left" else 60
+    right_x = 16 if right == "screen_left" else 64
+    if "lantern" in gear.values():
+        oval(draw, _clamp_box(left_x, y + 4, left_x + 10, y + 14), pal["gear_primary"])
+    if "satchel" in gear.values():
+        rect(draw, *_clamp_box(left_x, y + 4, left_x + 12, y + 14), pal["gear_secondary"])
+    if "hazard_bar" in gear.values():
+        bar_x = 22 if screen_side(facing, "left_chest") == "screen_left" else 58
+        rect(draw, *_clamp_box(bar_x, y + 2, bar_x + 10, y + 8), pal["accent"])
+    if "visor_lamp" in gear.values():
+        lamp_x = 22 if screen_side(facing, "left_helmet") == "screen_left" else 60
+        oval(draw, _clamp_box(lamp_x, y - 8, lamp_x + 7, y - 1), pal["gear_primary"])
+    if any(item in gear.values() for item in ("prybar", "baton", "splint_kit")):
+        rect(draw, *_clamp_box(right_x, y - 4, right_x + 4, y + 14), pal["gear_secondary"])
+        if "splint_kit" in gear.values():
+            rect(draw, *_clamp_box(right_x - 2, y, right_x + 8, y + 8), pal["accent"])
+        if "prybar" in gear.values():
+            hook_x = right_x if right == "screen_right" else right_x - 4
+            rect(draw, *_clamp_box(hook_x, y - 4, hook_x + 7, y - 1), pal["accent"])
+    if "red_cloth_knot" in gear.values():
+        knot_x = 24 if screen_side(facing, "right_arm") == "screen_left" else 58
+        rect(draw, *_clamp_box(knot_x, y + 1, knot_x + 6, y + 7), pal["gear_primary"])
+    if "radio_antenna" in gear.values():
+        ant_x = 28 if screen_side(facing, "left_shoulder") == "screen_left" else 58
+        rect(draw, *_clamp_box(ant_x, y - 12, ant_x + 2, y + 2), pal["gear_secondary"])
 
 
 def draw_gear(character, facing, draw, cx, head_y, torso_top, torso_bot, hand_r, hand_l, attack):
@@ -354,63 +627,57 @@ def draw_gear(character, facing, draw, cx, head_y, torso_top, torso_bot, hand_r,
     gear = character["gear"]
     for slot, item in gear.items():
         side = screen_side(facing, slot)
-        if item == "lantern":
-            x = body_edge_x(facing, side, 10, cx)
-            y = torso_bot - 10
-            oval(draw, (x, y, x + 10, y + 10), pal["gear_primary"])
-            rect(draw, x + 3, y - 4, x + 6, y, pal["gear_secondary"])
-        elif item == "radio_antenna":
-            x = body_edge_x(facing, side, 3, cx)
-            rect(draw, x, head_y - 10, x + 2, torso_top + 8, pal["gear_secondary"])
-            px(draw, x - 1, head_y - 14, pal["gear_primary"], 4)
-        elif item == "satchel":
-            x = body_edge_x(facing, side, 12, cx)
-            rect(draw, x, torso_bot - 16, x + 12, torso_bot - 4, pal["gear_secondary"])
-        elif item == "red_cloth_knot":
-            x = body_edge_x(facing, side, 6, cx)
-            rect(draw, x, torso_top + 2, x + 6, torso_top + 8, pal["gear_primary"])
-        elif item == "hazard_bar":
-            x = body_edge_x(facing, side, 8, cx)
-            rect(draw, x, torso_top + 8, x + 8, torso_top + 14, pal["accent"])
-        elif item == "visor_lamp":
-            if facing == "E":
-                rect(draw, cx + 14, head_y + 3, cx + 23, head_y + 12, pal["outline"])
-                rect(draw, cx + 16, head_y + 5, cx + 24, head_y + 10, pal["gear_primary"])
-                draw.polygon(
-                    [(cx + 24, head_y + 4), (cx + 40, head_y + 1), (cx + 40, head_y + 14), (cx + 24, head_y + 11)],
-                    fill=(230, 240, 120, 255),
-                )
-            elif facing == "W":
-                rect(draw, cx - 23, head_y + 3, cx - 14, head_y + 12, pal["outline"])
-                rect(draw, cx - 24, head_y + 5, cx - 16, head_y + 10, pal["gear_primary"])
-                draw.polygon(
-                    [(cx - 24, head_y + 4), (cx - 40, head_y + 1), (cx - 40, head_y + 14), (cx - 24, head_y + 11)],
-                    fill=(230, 240, 120, 255),
-                )
-            else:
-                x = head_edge_x(facing, side, 6, cx)
-                oval(draw, (x, head_y + 4, x + 6, head_y + 10), pal["gear_primary"])
-        elif item in ("prybar", "baton", "splint_kit"):
-            hx, hy = hand_r
-            if item == "prybar":
-                top = hy - 2 - int(6 * attack)
-                rect(draw, hx, top, hx + 3, hy + 16, pal["gear_secondary"])
-                hook_x = hx if screen_side(facing, "right_hand") == "screen_right" else hx - 4
-                rect(draw, hook_x, top, hook_x + 7, top + 3, pal["accent"])
-            elif item == "baton":
-                top = hy - int(8 * attack)
-                baton_x = hx + 1 if side == "screen_right" else hx - 3
-                rect(draw, baton_x, top, baton_x + 3, hy + 22, pal["gear_secondary"])
-                oval(draw, (hx - 5, hy - 2, hx + 6, hy + 9), pal["skin"])
-            else:
-                rect(draw, hx - 3, hy - 1, hx + 9, hy + 10, pal["gear_secondary"])
-                rect(draw, hx - 1, hy + 1, hx + 7, hy + 7, pal["accent"])
+        match item:
+            case "lantern":
+                x = body_edge_x(facing, side, 10, cx)
+                y = torso_bot - 12
+                oval(draw, (x, y, x + 10, y + 10), pal["gear_primary"])
+                rect(draw, x + 3, y - 4, x + 6, y, pal["gear_secondary"])
+                px(draw, x + 4, y + 3, (250, 230, 140, 255), 2)
+            case "radio_antenna":
+                x = (cx - 7) if side == "screen_left" else (cx + 5)
+                rect(draw, x, head_y - 4, x + 2, head_y + 12, pal["gear_secondary"])
+                rect(draw, x, torso_top + 4, x + 2, torso_top + 14, pal["gear_secondary"])
+                px(draw, x - 1, head_y - 8, pal["gear_primary"], 4)
+            case "satchel":
+                x = body_edge_x(facing, side, 12, cx)
+                rect(draw, x, torso_bot - 16, x + 12, torso_bot - 4, pal["gear_secondary"])
+                rect(draw, x + 2, torso_bot - 14, x + 10, torso_bot - 8, pal["outline"])
+            case "red_cloth_knot":
+                x = body_edge_x(facing, side, 6, cx)
+                rect(draw, x, torso_top + 2, x + 6, torso_top + 9, pal["gear_primary"])
+            case "hazard_bar":
+                x = body_edge_x(facing, side, 10, cx)
+                rect(draw, x, torso_top + 10, x + 10, torso_top + 16, pal["accent"])
+            case "visor_lamp":
+                x = head_edge_x(facing, side, 7, cx)
+                oval(draw, (x, head_y + 6, x + 7, head_y + 13), pal["outline"])
+                oval(draw, (x + 1, head_y + 7, x + 6, head_y + 12), pal["gear_primary"])
+            case "prybar" | "baton" | "splint_kit":
+                hx, hy = hand_r
+                if item == "prybar":
+                    top = hy - 4 - int(8 * attack)
+                    rect(draw, hx, top, hx + 3, hy + 16, pal["gear_secondary"])
+                    hook_x = hx if side == "screen_right" else hx - 4
+                    rect(draw, hook_x, top, hook_x + 7, top + 3, pal["accent"])
+                    oval(draw, (hx - 3, hy, hx + 5, hy + 8), pal["skin"])
+                elif item == "baton":
+                    top = hy - 2 - int(10 * attack)
+                    baton_x = hx + 1 if side == "screen_right" else hx - 3
+                    rect(draw, baton_x, top, baton_x + 3, hy + 20, pal["gear_secondary"])
+                    oval(draw, (hx - 4, hy, hx + 5, hy + 9), pal["coat"])
+                else:
+                    rect(draw, hx - 3, hy - 1, hx + 9, hy + 10, pal["outline"])
+                    rect(draw, hx - 1, hy + 1, hx + 7, hy + 7, pal["accent"])
+                    oval(draw, (hx - 4, hy + 6, hx + 4, hy + 12), pal["skin"])
+            case unreachable:
+                assert_never(unreachable)
 
 
 def identity_sheet(character: dict, frames: dict) -> Image.Image:
     sheet = Image.new("RGBA", (W * 4 + 12, H + 12), (0, 0, 0, 0))
     for i, facing in enumerate(FACINGS):
-        sheet.paste(frames[(facing, "idle", 0)], (6 + i * W, 6), frames[(facing, "idle", 0)])
+        blit(sheet, frames[(facing, "idle", 0)], (6 + i * W, 6))
     return sheet
 
 
@@ -422,8 +689,7 @@ def atlas_image(frames: dict) -> Image.Image:
     for facing in FACINGS:
         for action in ACTIONS:
             for frame in range(ACTIONS[action]):
-                col = frame
-                atlas.paste(frames[(facing, action, frame)], (col * W, row * H), frames[(facing, action, frame)])
+                blit(atlas, frames[(facing, action, frame)], (frame * W, row * H))
             row += 1
     return atlas
 

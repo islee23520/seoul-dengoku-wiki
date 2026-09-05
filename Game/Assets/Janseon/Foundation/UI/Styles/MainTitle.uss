@@ -45,3 +45,18 @@
     height: 2px;
     background-color: rgb(42, 53, 72);
 }
+
+.jk-slot-backdrop {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#main-title-slot-status {
+    position: absolute;
+    bottom: 12%;
+    align-self: center;
+    padding: var(--space-3);
+}
