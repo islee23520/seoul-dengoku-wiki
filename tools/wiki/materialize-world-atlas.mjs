@@ -2,9 +2,14 @@ import { mkdir, readdir, readFile, rename, writeFile } from 'node:fs/promises';
 import { basename, dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+import confirmedManifest from './confirmed-integration-manifest.json' with { type: 'json' };
 import { extractAtlasJson, sha256Text } from './world-atlas-parse.mjs';
 import { projectionsFromAtlas } from './world-atlas-render.mjs';
 import { ISOMETRIC_DIAGRAM_ASSETS } from './world-atlas-schema.mjs';
+
+const CONFIRMED_MONSTER_PAGES = new Set(
+  (confirmedManifest.monsters ?? []).map((id) => `Monster-Batch-${id}.md`),
+);
 
 function parseArgs(argv) {
   const opts = { atlas: null, out: null, check: false };
@@ -42,7 +47,9 @@ export async function unexpectedProjectionFiles(outDir, files) {
     if (err && err.code === 'ENOENT') return [];
     throw err;
   }
-  return names.filter((name) => UNEXPECTED_PROJECTION.test(name) && files[name] === undefined).sort();
+  return names
+    .filter((name) => UNEXPECTED_PROJECTION.test(name) && files[name] === undefined && !CONFIRMED_MONSTER_PAGES.has(name))
+    .sort();
 }
 
 export async function materializeWorldAtlas({ atlasPath, outDir, check = false }) {
