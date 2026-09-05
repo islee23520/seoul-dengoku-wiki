@@ -128,3 +128,49 @@ export const PROJECTION_FILES = Object.freeze({
   relationLedger: 'World-Relation-Ledger.md',
   expansionIndex: 'World-Expansion-Index.md',
 });
+
+export const getGroupDossierFilename = (id) => `Hostile-Group-${id}.md`;
+
+export const ISOMETRIC_DIAGRAM_ASSETS = Object.freeze([
+  'world-atlas-isometric.svg',
+  'house-influence-isometric.svg',
+  'hostile-ecology-isometric.svg',
+]);
+
+export const WIKI_PALETTE = Object.freeze({
+  paper: '#F6F4EF',
+  ink: '#172A46',
+  blue: '#356FB6',
+  teal: '#2E8C87',
+  red: '#C84D4D',
+});
+
+export const ISOMETRIC_CAMERA = Object.freeze({
+  projection: 'orthographic',
+  yawDegrees: 45,
+  pitchDegrees: 35.264,
+  tileMeters: 1.5,
+  cardinals: Object.freeze(['북', '동', '남', '서']),
+});
+
+export const SUBWAY_SURFACE_LAYERS = Object.freeze([
+  ['LY01', '지상 폐허'],
+  ['LY02', '역사 대합실'],
+  ['LY03', '승강장·선로'],
+  ['LY04', '환승 통로'],
+  ['LY05', '심층 터널'],
+  ['LY06', '차량기지 인접 거점'],
+].map(([id, name]) => Object.freeze({ id, name })));
+
+export const DIAGRAM_REQUIRED_FIELDS = Object.freeze([
+  'id', 'asset', 'title', 'desc', 'tile_px', 'content_box', 'callout_zones',
+  'layers', 'nodes', 'edges', 'legend', 'wiki_links', 'camera', 'source_kind',
+]);
+
+export const DIAGRAM_NODE_FIELDS = Object.freeze([
+  'id', 'kind', 'ref', 'grid', 'layer', 'label_priority', 'callout', 'source_kind',
+]);
+
+export const DIAGRAM_EDGE_FIELDS = Object.freeze([
+  'id', 'from', 'to', 'kind', 'relation', 'source_kind',
+]);
