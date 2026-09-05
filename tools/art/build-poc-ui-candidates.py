@@ -5,12 +5,11 @@ from __future__ import annotations
 
 import argparse
 import json
-import math
 from hashlib import sha256
 from pathlib import Path
 
 import numpy as np
-from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageStat, __version__ as PILLOW_VERSION
+from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont, ImageStat, __version__ as PILLOW_VERSION
 
 REPO = Path(__file__).resolve().parents[2]
 ART = REPO / "Game" / "Assets" / "Janseon" / "Art"
@@ -387,264 +386,119 @@ def render_buttons() -> dict[str, Image.Image]:
 
 # ---------------------------------------------------------------- title
 
-def compose_title(tiles: dict[str, Image.Image]) -> Image.Image:
-    """일점 투시 역사 콘코스: 실제 후보 타일로 바닥/벽 재질, 비상등 청백 조명, 꺼진 안내판, 개찰구, 벤치."""
-    W, H = 1920, 1080
-    F, cx, horizon = 1150.0, 960.0, 462.0
-    h, c, w, D = 1.65, 2.35, 6.2, 24.0
-    S = 64 / 0.6  # px per metre
-    void = np.array(TOKENS["bg-void"], dtype=np.float64)
+_TITLE_FONT = Path("/System/Library/Fonts/AppleSDGothicNeo.ttc")
+_TITLE_MARK = "《잔선: 서울》"
+_TITLE_SUB = "붕괴 이후 지하철망의 질서를 다시 세운다"
 
-    xs = (np.arange(W) + 0.5)[None, :]
-    ys = (np.arange(H) + 0.5)[:, None]
-    dirx = np.broadcast_to((xs - cx) / F, (H, W))
-    diry = np.broadcast_to((horizon - ys) / F, (H, W))
-    big = 1e9
-    z_floor = np.where(diry < -1e-6, h / np.maximum(-diry, 1e-6), big)
-    z_ceil = np.where(diry > 1e-6, c / np.maximum(diry, 1e-6), big)
-    z_left = np.where(dirx < -1e-6, w / np.maximum(-dirx, 1e-6), big)
-    z_right = np.where(dirx > 1e-6, w / np.maximum(dirx, 1e-6), big)
-    stack = np.stack([z_floor, z_ceil, z_left, z_right])
-    plane = stack.argmin(0)
-    z = stack.min(0)
-    back = z > D
-    z = np.where(back, D, z)
-    plane = np.where(back, 4, plane)
-    X, Y, Z = dirx * z, diry * z, z
 
-    def mips(image: Image.Image):
-        arr = np.asarray(image.convert("RGB")).astype(np.float64)
-        return [arr] + [np.asarray(image.convert("RGB").filter(ImageFilter.GaussianBlur(r))).astype(np.float64) for r in (1.2, 2.5, 5.0)]
+def _cjk_font(size: int, *, medium: bool = False) -> ImageFont.FreeTypeFont:
+    return ImageFont.truetype(str(_TITLE_FONT), size, index=2 if medium else 0)
 
-    def sample(levels, u, v):
-        ui = np.floor(u).astype(np.int64) % 256
-        vi = np.floor(v).astype(np.int64) % 256
-        level = np.clip(np.floor(np.log2(np.maximum(Z, 1.0) / 3.0)), 0, 3).astype(int)
-        out = np.zeros((H, W, 3), dtype=np.float64)
-        for index, arr in enumerate(levels):
-            sel = level == index
-            out[sel] = arr[vi[sel], ui[sel]]
-        return out
 
-    floor_m = mips(tiles["floor"])
-    wall_m = mips(tiles["wall"])
-    ceiling_noise = fbm(256, 71, ((4, 0.5), (16, 0.3), (64, 0.2)))
-    ceiling_arr = np.array(mix(TOKENS["bg-panel-raised"], TOKENS["text-muted"], 0.25), dtype=np.float64)[None, None, :] * (0.8 + 0.4 * ceiling_noise)[..., None]
-    ceiling_m = [ceiling_arr] * 4
+def _cubic(p0, p1, p2, p3, steps: int = 72) -> list[tuple[float, float]]:
+    points = []
+    for i in range(steps + 1):
+        t = i / steps
+        u = 1.0 - t
+        x = u * u * u * p0[0] + 3 * u * u * t * p1[0] + 3 * u * t * t * p2[0] + t * t * t * p3[0]
+        y = u * u * u * p0[1] + 3 * u * u * t * p1[1] + 3 * u * t * t * p2[1] + t * t * t * p3[1]
+        points.append((x, y))
+    return points
 
-    albedo = np.zeros((H, W, 3), dtype=np.float64)
-    for p, (levels, u, v) in {
-        0: (floor_m, X * S, Z * S),
-        1: (ceiling_m, X * S, Z * S),
-        2: (wall_m, Z * S, (c - Y) * S),
-        3: (wall_m, Z * S, (c - Y) * S),
-        4: (wall_m, X * S, (c - Y) * S),
-    }.items():
-        sel = plane == p
-        albedo[sel] = sample(levels, u, v)[sel]
 
-    # 벽면은 바닥보다 어둡게(그을음), 천장 더 어둡게
-    albedo[plane == 1] *= 0.55
-    albedo[(plane >= 2)] *= 0.72
+def compose_title(_tiles: dict[str, Image.Image] | None = None) -> Image.Image:
+    """void 필드 + 희미한 노선 폴드: 순수 기하 폴리라인, 이미지 텍스처 없음."""
+    width, height = 1920, 1080
+    scale = 2
+    canvas = Image.new("RGBA", (width * scale, height * scale), rgb("bg-void"))
+    layer = Image.new("RGBA", (width * scale, height * scale), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(layer)
 
-    # 조명: 벽/천장 접합부 비상등 스트립(청백, 연속) + 천장 중앙선 비상 luminaire 4m 간격 + 거리 안개.
-    light_col = np.array([0.82, 0.90, 1.0])
-    lamp_z = (3.0, 7.0, 11.0, 15.0, 19.0, 23.0)
-    lamp_size = (0.6, 0.22)
-    ambient = 0.24
+    def scaled(points):
+        return [(x * scale, y * scale) for x, y in points]
 
-    def strip_term(Xw, Yw):
-        d2 = (np.abs(Xw) - w) ** 2 + (Yw - c) ** 2
-        return 1.1 / (1.0 + d2 / 6.0)
+    def stroke(points, token: str, alpha: int, width_px: float):
+        draw.line(
+            scaled(points),
+            fill=rgb(token, alpha),
+            width=max(1, int(round(width_px * scale))),
+            joint="curve",
+        )
 
-    def lamp_term(Xw, Yw, Zw):
-        total = 0.0
-        for zk in lamp_z:
-            d2 = Xw ** 2 + (Yw - c) ** 2 + (Zw - zk) ** 2
-            total = total + 1.6 / (1.0 + d2 / 5.0)
-        return total
+    def station(x: float, y: float, radius: float = 4.5, token: str = "stroke-quiet", alpha: int = 80):
+        r = radius * scale
+        cx, cy = x * scale, y * scale
+        draw.ellipse((cx - r, cy - r, cx + r, cy + r), outline=rgb(token, alpha), width=max(1, scale))
+        inner = r * 0.35
+        if inner >= 1:
+            draw.ellipse((cx - inner, cy - inner, cx + inner, cy + inner), fill=rgb(token, max(1, alpha // 2)))
 
-    strip = strip_term(X, Y)
-    lamps = lamp_term(X, Y, Z)
-    is_ceiling = plane == 1
-    lamps = np.where(is_ceiling, lamps * 0.6, lamps)
-    intensity = ambient + strip + lamps
-    junction = np.exp(-((np.abs(X) - w) ** 2) / 0.35) * np.exp(-((Y + h) ** 2) / 0.45)
-    ao = 1 - 0.45 * junction
-    color = albedo * intensity[..., None] * light_col[None, None, :] * ao[..., None]
+    for x in range(160, width, 160):
+        stroke([(x, 0), (x, height)], "grid-line", 22, 1)
+    for y in range(120, height, 120):
+        stroke([(0, y), (width, y)], "grid-line", 22, 1)
 
-    # 젖은 바닥: 램프/스트립 반사를 웅덩이 마스크로 제한(한 스톱)
-    wet = np.clip((wrapped_noise(256, 3, 77)[(np.floor(Z * 20).astype(int) % 256), (np.floor((X + 40) * 12).astype(int) % 256)] - 0.45) * 2.4, 0, 1)
-    is_floor = plane == 0
-    refl = np.zeros_like(Z)
-    for zk in lamp_z:
-        refl = refl + np.exp(-(X ** 2) / 0.9) * np.exp(-((Z - zk) ** 2) / 1.2)
-    refl = refl + 0.5 * np.exp(-((np.abs(X) - w) ** 2) / 1.6)
-    color += (is_floor * wet * np.clip(refl, 0, 1) * 0.30)[..., None] * light_col[None, None, :] * 255 * 0.55
-    fog = 1 - np.exp(-Z / 22.0)
-    color = color * (1 - fog)[..., None] + void[None, None, :] * fog[..., None]
+    fold = (960.0, 332.0)
+    routes = [
+        ("grid-line", 40, 1.25, _cubic((40, 980), (420, 940), (720, 560), fold)),
+        ("grid-line", 36, 1.15, _cubic((1880, 980), (1500, 940), (1200, 560), fold)),
+        ("stroke-quiet", 58, 1.6, _cubic((40, 220), (380, 160), (700, 280), fold)),
+        ("stroke-quiet", 54, 1.5, _cubic((1880, 220), (1540, 160), (1220, 280), fold)),
+        ("stroke-quiet", 50, 1.4, _cubic((40, 540), (280, 520), (640, 400), fold)),
+        ("stroke-quiet", 50, 1.4, _cubic((1880, 540), (1640, 520), (1280, 400), fold)),
+        ("accent-line", 72, 2.0, _cubic((120, 860), (480, 780), (760, 480), fold)),
+        ("accent-line", 64, 1.75, _cubic((1800, 860), (1440, 780), (1160, 480), fold)),
+        ("accent-line", 48, 1.35, _cubic((960, 1040), (960, 760), (960, 520), fold)),
+        ("grid-line", 34, 1.1, _cubic((240, 80), (480, 180), (760, 280), fold)),
+        ("grid-line", 34, 1.1, _cubic((1680, 80), (1440, 180), (1160, 280), fold)),
+        ("stroke-quiet", 44, 1.25, [(80, 760), (280, 760), (440, 600), (640, 600)]),
+        ("stroke-quiet", 44, 1.25, [(1840, 760), (1640, 760), (1480, 600), (1280, 600)]),
+        ("grid-line", 32, 1.1, [(320, 1000), (520, 800), (720, 800)]),
+        ("grid-line", 32, 1.1, [(1600, 1000), (1400, 800), (1200, 800)]),
+    ]
+    for token, alpha, line_width, points in routes:
+        stroke(points, token, alpha, line_width)
 
-    image = to_image(color)
-    draw = ImageDraw.Draw(image, "RGBA")
+    nodes = [
+        (80, 760), (280, 760), (440, 600), (640, 600),
+        (1840, 760), (1640, 760), (1480, 600), (1280, 600),
+        (120, 860), (1800, 860), (960, 1040),
+        (40, 540), (1880, 540), (240, 80), (1680, 80),
+        (320, 1000), (1600, 1000), fold,
+    ]
+    for x, y in nodes:
+        hub = (x, y) == fold
+        station(x, y, radius=7.0 if hub else 4.5, token="accent-line" if hub else "stroke-quiet", alpha=110 if hub else 80)
 
-    def proj(Xw: float, Yw: float, Zw: float) -> tuple[float, float]:
-        return (cx + F * Xw / Zw, horizon - F * Yw / Zw)
+    mark_font = _cjk_font(96 * scale, medium=True)
+    sub_font = _cjk_font(22 * scale, medium=False)
+    tracking = 96 * scale * 0.02
 
-    def light_at(Xw: float, Yw: float, Zw: float) -> tuple[float, float]:
-        i = ambient + float(strip_term(np.array(Xw), np.array(Yw))) + float(lamp_term(np.array(Xw), np.array(Yw), np.array(Zw)))
-        f = 1 - math.exp(-Zw / 22.0)
-        return i, f
+    def glyph_width(text: str, font) -> float:
+        box = draw.textbbox((0, 0), text, font=font)
+        return float(box[2] - box[0])
 
-    def shade(base: tuple, Xw: float, Yw: float, Zw: float, k: float = 1.0) -> tuple[int, int, int, int]:
-        i, f = light_at(Xw, Yw, Zw)
-        out = []
-        for ch, lc, fc in zip(base, light_col, void):
-            v = ch * i * lc * k
-            out.append(int(np.clip(v * (1 - f) + fc * f, 0, 255)))
-        return (out[0], out[1], out[2], 255)
+    def tracked_width(text: str, font, extra: float) -> float:
+        return sum(glyph_width(ch, font) for ch in text) + extra * (len(text) - 1)
 
-    # 뒷벽: 꺼진 안내판 두 개와 통로 입구(깊이)
-    def rect_on_back(x0, y0, x1, y1, fill, outline=None):
-        a = proj(x0, y1, D)
-        b = proj(x1, y0, D)
-        draw.rectangle((a[0], a[1], b[0], b[1]), fill=fill, outline=outline, width=2)
+    def draw_tracked(text: str, y: float, font, fill, extra: float = 0.0):
+        total = tracked_width(text, font, extra) if extra else glyph_width(text, font)
+        x = (width * scale - total) / 2.0
+        if extra == 0.0:
+            draw.text((x, y * scale), text, font=font, fill=fill)
+            return
+        cursor = x
+        for ch in text:
+            draw.text((cursor, y * scale), ch, font=font, fill=fill)
+            cursor += glyph_width(ch, font) + extra
 
-    pa = proj(0.9, 1.7, D)
-    pb = proj(4.3, -h, D)
-    passage_h = max(1, int(pb[1] - pa[1]))
-    passage = Image.new("RGB", (max(1, int(pb[0] - pa[0])), passage_h))
-    grad = np.linspace(0.35, 1.0, passage_h)[:, None, None]
-    passage_arr = void[None, None, :] * 0.5 * (1 - grad) + np.array(mix(TOKENS["bg-well"], TOKENS["text-muted"], 0.3), dtype=np.float64)[None, None, :] * grad * 0.8
-    passage = to_image(np.broadcast_to(passage_arr, (passage_h, passage.size[0], 3)))
-    image.paste(passage, (int(pa[0]), int(pa[1])))
-    rect_on_back(0.9, -h, 1.15, 1.7, shade(TOKENS["stroke-quiet"], 1.0, 0.0, D, 0.9))
-    rect_on_back(4.05, -h, 4.3, 1.7, shade(TOKENS["stroke-quiet"], 4.2, 0.0, D, 0.9))
-    for x0, x1 in ((-4.6, -2.2), (-1.6, 0.2)):
-        rect_on_back(x0, 1.05, x1, 1.75, shade(TOKENS["bg-well"], (x0 + x1) / 2, 1.4, D, 0.7), shade(TOKENS["stroke-quiet"], (x0 + x1) / 2, 1.4, D))
+    draw_tracked(_TITLE_MARK, 456, mark_font, rgb("text-primary"), tracking)
+    mark_w = tracked_width(_TITLE_MARK, mark_font, tracking) / scale
+    stroke([(width / 2 - mark_w / 2, 572), (width / 2 + mark_w / 2, 572)], "accent-line", 70, 2)
+    draw_tracked(_TITLE_SUB, 600, sub_font, rgb("text-secondary"))
 
-    # 천장 배관 3줄(소실점으로 수렴)
-    for xp, yp, tone in ((-2.4, c - 0.12, 0.55), (-2.05, c - 0.16, 0.5), (2.6, c - 0.1, 0.55)):
-        near = proj(xp, yp, 1.05)
-        far = proj(xp, yp, D)
-        width = int(max(2, 14 / 1.05))
-        draw.line((near, far), fill=shade(TOKENS["text-muted"], xp, yp, 4.0, tone), width=6)
-        draw.line((near, far), fill=shade(TOKENS["text-secondary"], xp, yp, 4.0, tone * 0.6), width=2)
-
-    # 깊이 순서로 소품: 기둥, 매달린 꺼진 안내판, 개찰구, 벤치
-    props = []
-    for Zp in (21.5, 16.5, 11.5, 6.5):
-        for Xp in (-3.4, 3.4):
-            props.append((Zp, "pillar", Xp))
-    props.append((6.6, "sign", 0.0))
-    for index in range(6):
-        props.append((9.0, "gate", -3.1 + index * 0.72))
-    props.append((12.4, "bench", -5.0))
-    props.append((5.2, "bench", -5.0))
-    props.append((14.8, "bench", 5.0))
-    props.sort(key=lambda item: -item[0])
-    pillar_col = mix(TOKENS["text-muted"], TOKENS["bg-panel-raised"], 0.35)
-    gate_col = mix(TOKENS["text-muted"], TOKENS["bg-panel-raised"], 0.5)
-    gate_top = TOKENS["text-muted"]
-    bench_col = (110, 88, 62)
-    for Zp, kind, Xp in props:
-        if kind == "pillar":
-            width = 0.5
-            x0, x1 = Xp - width / 2, Xp + width / 2
-            a = proj(x0, c, Zp)
-            b = proj(x1, -h, Zp)
-            pw, ph = max(1, int(b[0] - a[0])), max(1, int(b[1] - a[1]))
-            face_rgb = np.array(shade(pillar_col, Xp, 0.3, Zp)[:3], dtype=np.float64)
-            tex = fbm(256, int(Zp * 10 + (7 if Xp < 0 else 3)), ((4, 0.4), (16, 0.35), (64, 0.25)))
-            tex = np.asarray(Image.fromarray((tex * 255).astype(np.uint8), "L").resize((pw, ph), Image.Resampling.BILINEAR)).astype(np.float64) / 255.0
-            vertical = np.linspace(1.0, 0.82, ph)[:, None]
-            base_dirt = 1 - 0.28 * np.clip((np.linspace(0, 1, ph)[:, None] - 0.82) / 0.18, 0, 1)
-            column = face_rgb[None, None, :] * (0.88 + 0.24 * tex)[..., None] * (vertical * base_dirt)[..., None]
-            image.paste(to_image(column), (int(a[0]), int(a[1])))
-            draw = ImageDraw.Draw(image, "RGBA")
-            side_x = x1 if Xp < 0 else x0
-            s0 = proj(side_x, c, Zp)
-            s1 = proj(side_x, -h, Zp)
-            s2 = proj(side_x, -h, Zp + 0.5)
-            s3 = proj(side_x, c, Zp + 0.5)
-            draw.polygon([s0, s1, s2, s3], fill=shade(pillar_col, Xp, 0.3, Zp, 0.7))
-            top = proj(x0, c, Zp)
-            draw.line((top, proj(x1, c, Zp)), fill=shade(TOKENS["text-secondary"], Xp, c, Zp, 0.5), width=2)
-            if Zp == 11.5 and Xp < 0:
-                lamp_pt = proj(x1 + 0.02, 1.85, Zp)
-                r = 5
-                draw.ellipse((lamp_pt[0] - r * 2.4, lamp_pt[1] - r * 2.4, lamp_pt[0] + r * 2.4, lamp_pt[1] + r * 2.4), fill=(201, 162, 39, 40))
-                draw.ellipse((lamp_pt[0] - r, lamp_pt[1] - r, lamp_pt[0] + r, lamp_pt[1] + r), fill=(201, 162, 39, 255))
-        elif kind == "sign":
-            a = proj(-1.5, 2.05, Zp)
-            b = proj(1.5, 1.5, Zp)
-            frame = shade(TOKENS["text-muted"], 0, 1.8, Zp, 0.45)
-            draw.rectangle((a[0], a[1], b[0], b[1]), fill=frame)
-            glass = shade(TOKENS["bg-well"], 0, 1.8, Zp, 0.55)
-            draw.rectangle((a[0] + 3, a[1] + 3, b[0] - 3, b[1] - 3), fill=glass)
-            sheen_a = proj(-1.45, 2.0, Zp)
-            sheen_b = proj(1.45, 1.93, Zp)
-            draw.rectangle((sheen_a[0], sheen_a[1], sheen_b[0], sheen_b[1]), fill=(196, 212, 232, 22))
-            for hx in (-1.2, 1.2):
-                draw.line((proj(hx, c, Zp), proj(hx, 2.05, Zp)), fill=shade(TOKENS["text-muted"], hx, 2.2, Zp), width=2)
-        elif kind == "gate":
-            width, depth, height = 0.16, 0.7, 1.05
-            x0, x1 = Xp - width / 2, Xp + width / 2
-            t0 = proj(x0, -h + height, Zp)
-            t1 = proj(x1, -h + height, Zp)
-            t2 = proj(x1, -h + height, Zp + depth)
-            t3 = proj(x0, -h + height, Zp + depth)
-            draw.polygon([t0, t1, t2, t3], fill=shade(gate_top, Xp, -0.6, Zp, 1.1))
-            a = proj(x0, -h + height, Zp)
-            b = proj(x1, -h, Zp)
-            draw.rectangle((a[0], a[1], b[0], b[1]), fill=shade(gate_col, Xp, -1.0, Zp, 0.95), outline=shade(TOKENS["bg-well"], Xp, -1.0, Zp), width=1)
-            panel_a = proj(x0 + 0.03, -h + height - 0.06, Zp - 0.001)
-            panel_b = proj(x1 - 0.03, -h + height - 0.34, Zp - 0.001)
-            draw.rectangle((panel_a[0], panel_a[1], panel_b[0], panel_b[1]), fill=shade(TOKENS["bg-well"], Xp, -0.8, Zp, 0.8))
-            led = proj(Xp, -h + height - 0.2, Zp - 0.002)
-            r = max(2.0, 4.0 * 9.0 / Zp)
-            draw.ellipse((led[0] - r, led[1] - r, led[0] + r, led[1] + r), fill=(150, 48, 44, 255))
-        elif kind == "bench":
-            length, depth, top_y, seat_h = 1.9, 0.5, -h + 0.45, 0.08
-            x0, x1 = Xp - length / 2, Xp + length / 2
-            q = [proj(x0, top_y, Zp), proj(x1, top_y, Zp), proj(x1, top_y, Zp + depth), proj(x0, top_y, Zp + depth)]
-            draw.polygon(q, fill=shade(bench_col, Xp, top_y, Zp, 1.1))
-            a = proj(x0, top_y, Zp)
-            b = proj(x1, top_y - seat_h, Zp)
-            draw.rectangle((a[0], a[1], b[0], b[1]), fill=shade(bench_col, Xp, top_y, Zp, 0.8))
-            for lx in (x0 + 0.15, x1 - 0.25):
-                la = proj(lx, top_y - seat_h, Zp)
-                lb = proj(lx + 0.1, -h, Zp)
-                draw.rectangle((la[0], la[1], lb[0], lb[1]), fill=shade(TOKENS["bg-panel-raised"], lx, -1.2, Zp, 0.9))
-
-    # 비상등 기구: 벽/천장 접합부 스트립 밴드(벽면 상단 0.1m) + 천장 중앙 luminaire, 블러 halo 한 겹
-    glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    gd = ImageDraw.Draw(glow)
-    z_near = 1.15
-    for side in (-1, 1):
-        band = [proj(side * w, c - 0.02, z_near), proj(side * w, c - 0.02, D), proj(side * w, c - 0.14, D), proj(side * w, c - 0.14, z_near)]
-        gd.polygon(band, fill=(188, 204, 224, 215))
-        cover = [proj(side * w, c - 0.14, z_near), proj(side * w, c - 0.14, D), proj(side * w, c - 0.20, D), proj(side * w, c - 0.20, z_near)]
-        gd.polygon(cover, fill=(120, 132, 150, 255))
-    for zk in lamp_z:
-        half_w, half_d = lamp_size[0] / 2, lamp_size[1] / 2
-        quad = [proj(-half_w, c - 0.001, zk - half_d), proj(half_w, c - 0.001, zk - half_d), proj(half_w, c - 0.001, zk + half_d), proj(-half_w, c - 0.001, zk + half_d)]
-        gd.polygon(quad, fill=(214, 226, 242, 255))
-    blurred = glow.filter(ImageFilter.GaussianBlur(18))
-    blurred.putalpha(blurred.split()[3].point(lambda v: int(v * 0.5)))
-    image = Image.alpha_composite(image.convert("RGBA"), blurred)
-    image = Image.alpha_composite(image, glow)
-
-    # 마무리: 비네트, 상단 1스톱 어둡게, 필름 그레인
-    arr = np.asarray(image.convert("RGB")).astype(np.float64)
-    ny = (ys - H / 2) / (H / 2)
-    nx = (xs - W / 2) / (W / 2)
-    r2 = nx ** 2 + ny ** 2
-    vignette = 1 - 0.22 * np.clip(r2 / 1.6, 0, 1)
-    top_shade = 1 - 0.10 * np.clip((H * 0.35 - ys) / (H * 0.35), 0, 1)
-    arr = arr * (vignette * top_shade)[..., None]
-    grain = np.tile(wrapped_noise(256, 128, 99), (H // 256 + 1, W // 256 + 1))[:H, :W]
-    arr = arr + ((grain - 0.5) * 6)[..., None]
-    return to_image(arr)
+    composed = Image.alpha_composite(canvas, layer)
+    return composed.reduce(scale).convert("RGB")
 
 
 # ---------------------------------------------------------------- contract
