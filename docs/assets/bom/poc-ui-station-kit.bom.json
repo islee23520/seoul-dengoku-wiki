@@ -1,0 +1,508 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "schema_version": 1,
+      "asset_id": "poc-title-art",
+      "asset_class": "title_art",
+      "source": "generate",
+      "rights_status": "allowed",
+      "generation_backend": "grok_imagine",
+      "provider": "xai",
+      "model": "grok-imagine-image",
+      "revision": "2026-09-04",
+      "prompt": "Title screen BACKGROUND ONLY for a Korean post-collapse subway grand-strategy game. Wide cinematic 16:9 view of an abandoned Seoul subway concourse inspired by Yeongdeungpo: wet dark concrete, teal emergency strip lights, rusted pipes, empty ticket hall, distant tunnel glow, isometric pixel-art painting, navy and cyan palette. NO people, NO UI, NO HUD, NO buttons, NO logos, NO watermark, NO readable text, NO letters, NO hangul, NO signage.",
+      "prompt_hash": "28113ce845221379d5ae447394e3a074f67a836bbcc9a5086b6b64f2e62da9f0",
+      "input_hashes": [
+        "0a5717dadd56b7e3b6a0c0a00d877f1b9876918925a2d9d9532444c42f441340"
+      ],
+      "seed": 13001,
+      "cost_mode": "subscription",
+      "cost_cents": 0,
+      "raw_hash": "0a5717dadd56b7e3b6a0c0a00d877f1b9876918925a2d9d9532444c42f441340",
+      "output_hash": "b51ecd9e5e17611dbe351ce8991515080def7e8f30bd2f106808f6add2d30e47",
+      "tool_versions": {
+        "unity": "6000.7.0a5",
+        "python": "3.13",
+        "node": "22.14.0",
+        "pillow": "12.2.0",
+        "cliproxy": "subscription"
+      },
+      "operations": [
+        "generate",
+        "archive",
+        "crop_16x9",
+        "human_review",
+        "bom_promotion"
+      ],
+      "unity_import_settings": {
+        "texture_type": "Sprite",
+        "sprite_mode": "Single",
+        "filter_mode": "Bilinear",
+        "alpha_is_transparency": false,
+        "wrap_mode": "Clamp",
+        "mesh_compression": "Off"
+      },
+      "review_receipts": [
+        {
+          "reviewer": "todo13-art-lead",
+          "verdict": "pass",
+          "receipt_hash": "528fab546697191d66bd5ee5e48bffb0a3bdda3284ddd705e56f48dddd7e05d3",
+          "reviewed_at": "2026-09-04T10:16:04.000Z",
+          "notes": "Machine geometry/alpha/9-slice/icon/seam QA plus human visual pass. Design.md absent on p1E; UI Toolkit binding is Todo 16 handoff."
+        }
+      ],
+      "status": "promoted",
+      "created_at": "2026-09-04T10:16:04.000Z",
+      "license": "generated-on-subscription-for-janseon-poc"
+    },
+    {
+      "schema_version": 1,
+      "asset_id": "poc-ui-concept",
+      "asset_class": "ui_concept",
+      "source": "generate",
+      "rights_status": "allowed",
+      "generation_backend": "nanobanana_gemini",
+      "provider": "google",
+      "model": "gemini-3.1-flash-image",
+      "revision": "2026-09-04",
+      "prompt": "Orthographic UI concept sheet for a Korean post-collapse subway strategy game. Dark navy panels with teal hairline borders, empty blank windows, three unlabeled rectangular metal buttons, small circular HUD icons that are pure shapes with no letters. Layout only, not a screenshot of a real OS. NO readable text, NO watermark, NO logos, NO hangul, NO latin words.",
+      "prompt_hash": "43ce5b307fd77ad9d3c05c9a6bd6b8fcf38057d23780a0c0d8d7177d36253416",
+      "input_hashes": [
+        "f4fca481db4755b40446c5d06b657baf5c889eedf9439c347ddcefd5bfa0b8e2"
+      ],
+      "seed": 13002,
+      "cost_mode": "subscription",
+      "cost_cents": 0,
+      "raw_hash": "f4fca481db4755b40446c5d06b657baf5c889eedf9439c347ddcefd5bfa0b8e2",
+      "output_hash": "e27ad574641affa9ad3af26a87c91ac98acb2edb9e5025d437f156ba7ae57a63",
+      "tool_versions": {
+        "unity": "6000.7.0a5",
+        "python": "3.13",
+        "node": "22.14.0",
+        "pillow": "12.2.0",
+        "cliproxy": "subscription"
+      },
+      "operations": [
+        "generate",
+        "archive",
+        "resize",
+        "human_review",
+        "bom_promotion"
+      ],
+      "unity_import_settings": {
+        "texture_type": "Sprite",
+        "sprite_mode": "Single",
+        "filter_mode": "Bilinear",
+        "alpha_is_transparency": false,
+        "wrap_mode": "Clamp",
+        "mesh_compression": "Off"
+      },
+      "review_receipts": [
+        {
+          "reviewer": "todo13-art-lead",
+          "verdict": "pass",
+          "receipt_hash": "ac14da839cbda38eb4f3494dfa490f71cefa93a82d729e6456512851a0918d69",
+          "reviewed_at": "2026-09-04T10:16:04.000Z",
+          "notes": "Machine geometry/alpha/9-slice/icon/seam QA plus human visual pass. Design.md absent on p1E; UI Toolkit binding is Todo 16 handoff."
+        }
+      ],
+      "status": "promoted",
+      "created_at": "2026-09-04T10:16:04.000Z",
+      "license": "generated-on-subscription-for-janseon-poc"
+    },
+    {
+      "schema_version": 1,
+      "asset_id": "poc-ui-kit",
+      "asset_class": "ui_kit",
+      "source": "generate",
+      "rights_status": "allowed",
+      "generation_backend": "nanobanana_gemini",
+      "provider": "google",
+      "model": "gemini-3.1-flash-image",
+      "revision": "2026-09-04",
+      "prompt": "Contact sheet of the selected POC UI kit: blank 9-slice panel, geometry-identical button states, text-free HUD icons, title crop and station tiles. No baked UI text.",
+      "prompt_hash": "20651d55a4671d02bbb050e2582caa50541fa7c14b9e926f7629c85c70e32a33",
+      "input_hashes": [
+        "f4fca481db4755b40446c5d06b657baf5c889eedf9439c347ddcefd5bfa0b8e2"
+      ],
+      "seed": 13003,
+      "cost_mode": "subscription",
+      "cost_cents": 0,
+      "raw_hash": "f4fca481db4755b40446c5d06b657baf5c889eedf9439c347ddcefd5bfa0b8e2",
+      "output_hash": "146dc1c7efcc12d352d88e4373dad99a5241dda5016044ba4ede25f97ed6c9ae",
+      "tool_versions": {
+        "unity": "6000.7.0a5",
+        "python": "3.13",
+        "node": "22.14.0",
+        "pillow": "12.2.0",
+        "cliproxy": "subscription"
+      },
+      "operations": [
+        "compose_contact_sheet",
+        "archive",
+        "human_review",
+        "bom_promotion"
+      ],
+      "unity_import_settings": {
+        "texture_type": "Sprite",
+        "sprite_mode": "Single",
+        "filter_mode": "Bilinear",
+        "alpha_is_transparency": false,
+        "wrap_mode": "Clamp",
+        "mesh_compression": "Off"
+      },
+      "review_receipts": [
+        {
+          "reviewer": "todo13-art-lead",
+          "verdict": "pass",
+          "receipt_hash": "d34514866f5905637c4fb1c9dbe8b0522098d6963740ad94efac3b49cd986236",
+          "reviewed_at": "2026-09-04T10:16:04.000Z",
+          "notes": "Machine geometry/alpha/9-slice/icon/seam QA plus human visual pass. Design.md absent on p1E; UI Toolkit binding is Todo 16 handoff."
+        }
+      ],
+      "status": "promoted",
+      "created_at": "2026-09-04T10:16:04.000Z",
+      "license": "generated-on-subscription-for-janseon-poc"
+    },
+    {
+      "schema_version": 1,
+      "asset_id": "poc-ui-panel-9slice",
+      "asset_class": "ui_kit",
+      "source": "generate",
+      "rights_status": "allowed",
+      "generation_backend": "grok_imagine",
+      "provider": "xai",
+      "model": "grok-imagine-image",
+      "revision": "2026-09-04",
+      "prompt": "Isolated blank UI window FRAME only, even thickness rounded rectangle, dark brushed steel with a thin teal inlay, completely empty center, no glass shine covering the hole, no text, no icons, no buttons, no screws with logos. Flat orthographic, even 9-slice borders. Solid MAGENTA background #FF00FF for cutout. NO watermark.",
+      "prompt_hash": "bd597f9f3791ad3e7f0fb7c67ff08b723c81064f3124040de6e2787bfc424131",
+      "input_hashes": [
+        "3c28edc1352bf093fad342717e5d5c8497b5c660e0be75b0b4b5a61ff44a5ac4"
+      ],
+      "seed": 13004,
+      "cost_mode": "subscription",
+      "cost_cents": 0,
+      "raw_hash": "3c28edc1352bf093fad342717e5d5c8497b5c660e0be75b0b4b5a61ff44a5ac4",
+      "output_hash": "ab506d0b3ec0f1f63246db5d4892eb4c273d61d7ad88e2085b63344e52564893",
+      "tool_versions": {
+        "unity": "6000.7.0a5",
+        "python": "3.13",
+        "node": "22.14.0",
+        "pillow": "12.2.0",
+        "cliproxy": "subscription"
+      },
+      "operations": [
+        "generate",
+        "chroma_key",
+        "rebuild_9slice",
+        "archive",
+        "human_review",
+        "bom_promotion"
+      ],
+      "unity_import_settings": {
+        "texture_type": "Sprite",
+        "sprite_mode": "Single",
+        "filter_mode": "Point",
+        "alpha_is_transparency": true,
+        "wrap_mode": "Clamp",
+        "mesh_compression": "Off",
+        "sprite_border": {
+          "x": 48,
+          "y": 48,
+          "z": 48,
+          "w": 48
+        },
+        "nine_slice": true
+      },
+      "review_receipts": [
+        {
+          "reviewer": "todo13-art-lead",
+          "verdict": "pass",
+          "receipt_hash": "2e95291b5185997e8aa43a4ac0937448a5adcabc600470ff51c381fe7ff56e43",
+          "reviewed_at": "2026-09-04T10:16:04.000Z",
+          "notes": "Machine geometry/alpha/9-slice/icon/seam QA plus human visual pass. Design.md absent on p1E; UI Toolkit binding is Todo 16 handoff."
+        }
+      ],
+      "status": "promoted",
+      "created_at": "2026-09-04T10:16:04.000Z",
+      "license": "generated-on-subscription-for-janseon-poc"
+    },
+    {
+      "schema_version": 1,
+      "asset_id": "poc-ui-button-normal",
+      "asset_class": "ui_kit",
+      "source": "generate",
+      "rights_status": "allowed",
+      "generation_backend": "grok_imagine",
+      "provider": "xai",
+      "model": "grok-imagine-image",
+      "revision": "2026-09-04",
+      "prompt": "Isolated wide blank UI button, 4 to 1 rectangle, dark steel with a thin teal edge highlight, completely blank face, no text, no icon, no label. Flat orthographic. Solid MAGENTA background #FF00FF for cutout. NO watermark. State: normal.",
+      "prompt_hash": "87b2a6569ea806e980759ca8e3adbe689f66e77419a05aa6c0db87e69a75cffc",
+      "input_hashes": [
+        "aefaa19d6f2d791e5d3e8f9a2e24cdc60486725819b57fc2dc95ff69e6faf686"
+      ],
+      "seed": 13005,
+      "cost_mode": "subscription",
+      "cost_cents": 0,
+      "raw_hash": "aefaa19d6f2d791e5d3e8f9a2e24cdc60486725819b57fc2dc95ff69e6faf686",
+      "output_hash": "3f473d1aadfc4c23ea271961a7fc3792883ff5cd5ebfa10e03035976dbcf870c",
+      "tool_versions": {
+        "unity": "6000.7.0a5",
+        "python": "3.13",
+        "node": "22.14.0",
+        "pillow": "12.2.0",
+        "cliproxy": "subscription"
+      },
+      "operations": [
+        "generate",
+        "chroma_key",
+        "fit_256x64",
+        "archive",
+        "human_review",
+        "bom_promotion"
+      ],
+      "unity_import_settings": {
+        "texture_type": "Sprite",
+        "sprite_mode": "Single",
+        "filter_mode": "Point",
+        "alpha_is_transparency": true,
+        "wrap_mode": "Clamp",
+        "mesh_compression": "Off"
+      },
+      "review_receipts": [
+        {
+          "reviewer": "todo13-art-lead",
+          "verdict": "pass",
+          "receipt_hash": "9f8b0fe23eb913fe7f77ffa033819b6a8cfbec270d31882fb3387afb6080cb2a",
+          "reviewed_at": "2026-09-04T10:16:04.000Z",
+          "notes": "Machine geometry/alpha/9-slice/icon/seam QA plus human visual pass. Design.md absent on p1E; UI Toolkit binding is Todo 16 handoff."
+        }
+      ],
+      "status": "promoted",
+      "created_at": "2026-09-04T10:16:04.000Z",
+      "license": "generated-on-subscription-for-janseon-poc"
+    },
+    {
+      "schema_version": 1,
+      "asset_id": "poc-ui-button-hover",
+      "asset_class": "ui_kit",
+      "source": "generate",
+      "rights_status": "allowed",
+      "generation_backend": "grok_imagine",
+      "provider": "xai",
+      "model": "grok-imagine-image",
+      "revision": "2026-09-04",
+      "prompt": "Isolated wide blank UI button, 4 to 1 rectangle, dark steel with a thin teal edge highlight, completely blank face, no text, no icon, no label. Flat orthographic. Solid MAGENTA background #FF00FF for cutout. NO watermark. State: hover. Same silhouette as normal.",
+      "prompt_hash": "e3ea99b5adf3b8456a8345d676717440a4b8b9385d9cf7eb8055990ab5e483fe",
+      "input_hashes": [
+        "aefaa19d6f2d791e5d3e8f9a2e24cdc60486725819b57fc2dc95ff69e6faf686"
+      ],
+      "seed": 13006,
+      "cost_mode": "subscription",
+      "cost_cents": 0,
+      "raw_hash": "aefaa19d6f2d791e5d3e8f9a2e24cdc60486725819b57fc2dc95ff69e6faf686",
+      "output_hash": "9abedbc15e01ba730617f71607e9662761a5e9d4402c1ce103cb35c8ee3bf73e",
+      "tool_versions": {
+        "unity": "6000.7.0a5",
+        "python": "3.13",
+        "node": "22.14.0",
+        "pillow": "12.2.0",
+        "cliproxy": "subscription"
+      },
+      "operations": [
+        "edit_chain_from_normal",
+        "identical_alpha",
+        "archive",
+        "human_review",
+        "bom_promotion"
+      ],
+      "unity_import_settings": {
+        "texture_type": "Sprite",
+        "sprite_mode": "Single",
+        "filter_mode": "Point",
+        "alpha_is_transparency": true,
+        "wrap_mode": "Clamp",
+        "mesh_compression": "Off"
+      },
+      "review_receipts": [
+        {
+          "reviewer": "todo13-art-lead",
+          "verdict": "pass",
+          "receipt_hash": "4b160d7fc08164e67e4abe2658a19389c40d403cb39d634694301323c4157f35",
+          "reviewed_at": "2026-09-04T10:16:04.000Z",
+          "notes": "Machine geometry/alpha/9-slice/icon/seam QA plus human visual pass. Design.md absent on p1E; UI Toolkit binding is Todo 16 handoff."
+        }
+      ],
+      "status": "promoted",
+      "created_at": "2026-09-04T10:16:04.000Z",
+      "license": "generated-on-subscription-for-janseon-poc"
+    },
+    {
+      "schema_version": 1,
+      "asset_id": "poc-ui-button-pressed",
+      "asset_class": "ui_kit",
+      "source": "generate",
+      "rights_status": "allowed",
+      "generation_backend": "grok_imagine",
+      "provider": "xai",
+      "model": "grok-imagine-image",
+      "revision": "2026-09-04",
+      "prompt": "Isolated wide blank UI button, 4 to 1 rectangle, dark steel with a thin teal edge highlight, completely blank face, no text, no icon, no label. Flat orthographic. Solid MAGENTA background #FF00FF for cutout. NO watermark. State: pressed. Same silhouette as normal.",
+      "prompt_hash": "64724265f8c7cc4acea37f23a6f482be94559499cf08c08864f06b59272f2bed",
+      "input_hashes": [
+        "aefaa19d6f2d791e5d3e8f9a2e24cdc60486725819b57fc2dc95ff69e6faf686"
+      ],
+      "seed": 13007,
+      "cost_mode": "subscription",
+      "cost_cents": 0,
+      "raw_hash": "aefaa19d6f2d791e5d3e8f9a2e24cdc60486725819b57fc2dc95ff69e6faf686",
+      "output_hash": "65e3634fc30a7e6b506980813a02a3e723aa900816ad0662a14333a151171faa",
+      "tool_versions": {
+        "unity": "6000.7.0a5",
+        "python": "3.13",
+        "node": "22.14.0",
+        "pillow": "12.2.0",
+        "cliproxy": "subscription"
+      },
+      "operations": [
+        "edit_chain_from_normal",
+        "identical_alpha",
+        "archive",
+        "human_review",
+        "bom_promotion"
+      ],
+      "unity_import_settings": {
+        "texture_type": "Sprite",
+        "sprite_mode": "Single",
+        "filter_mode": "Point",
+        "alpha_is_transparency": true,
+        "wrap_mode": "Clamp",
+        "mesh_compression": "Off"
+      },
+      "review_receipts": [
+        {
+          "reviewer": "todo13-art-lead",
+          "verdict": "pass",
+          "receipt_hash": "6390edfe123bc55f9e2eca75501c2399fd0b29020ab47fa43637783d78e66196",
+          "reviewed_at": "2026-09-04T10:16:04.000Z",
+          "notes": "Machine geometry/alpha/9-slice/icon/seam QA plus human visual pass. Design.md absent on p1E; UI Toolkit binding is Todo 16 handoff."
+        }
+      ],
+      "status": "promoted",
+      "created_at": "2026-09-04T10:16:04.000Z",
+      "license": "generated-on-subscription-for-janseon-poc"
+    },
+    {
+      "schema_version": 1,
+      "asset_id": "poc-ui-icons",
+      "asset_class": "ui_kit",
+      "source": "generate",
+      "rights_status": "allowed",
+      "generation_backend": "nanobanana_gemini",
+      "provider": "google",
+      "model": "gemini-3.1-flash-image",
+      "revision": "2026-09-04",
+      "prompt": "Text-free HUD icon kit derived from the selected Gemini UI concept: talk, detour, battle, heal, party, station, crate, alert. Teal line icons on transparent, readable at 32px, no letters.",
+      "prompt_hash": "55e9042c7b2f4ced098175dfb2cfa4b7cb23d5960df014486b3bd842722e0a83",
+      "input_hashes": [
+        "f4fca481db4755b40446c5d06b657baf5c889eedf9439c347ddcefd5bfa0b8e2"
+      ],
+      "seed": 13008,
+      "cost_mode": "subscription",
+      "cost_cents": 0,
+      "raw_hash": "f4fca481db4755b40446c5d06b657baf5c889eedf9439c347ddcefd5bfa0b8e2",
+      "output_hash": "6d091037a0d77bb2cc6415b0d84a637a2ff211632b9970c4ba02e7afe6de2aad",
+      "tool_versions": {
+        "unity": "6000.7.0a5",
+        "python": "3.13",
+        "node": "22.14.0",
+        "pillow": "12.2.0",
+        "cliproxy": "subscription"
+      },
+      "operations": [
+        "identity_from_concept",
+        "draw_text_free_icons",
+        "atlas",
+        "archive",
+        "human_review",
+        "bom_promotion"
+      ],
+      "unity_import_settings": {
+        "texture_type": "Sprite",
+        "sprite_mode": "Single",
+        "filter_mode": "Point",
+        "alpha_is_transparency": true,
+        "wrap_mode": "Clamp",
+        "mesh_compression": "Off"
+      },
+      "review_receipts": [
+        {
+          "reviewer": "todo13-art-lead",
+          "verdict": "pass",
+          "receipt_hash": "41da7a29955f1c7362691702eace6fd472c7d36a3fe6b32aac79dd9b65730187",
+          "reviewed_at": "2026-09-04T10:16:04.000Z",
+          "notes": "Machine geometry/alpha/9-slice/icon/seam QA plus human visual pass. Design.md absent on p1E; UI Toolkit binding is Todo 16 handoff."
+        }
+      ],
+      "status": "promoted",
+      "created_at": "2026-09-04T10:16:04.000Z",
+      "license": "generated-on-subscription-for-janseon-poc"
+    },
+    {
+      "schema_version": 1,
+      "asset_id": "poc-tile-texture",
+      "asset_class": "tile",
+      "source": "generate",
+      "rights_status": "allowed",
+      "generation_backend": "grok_imagine",
+      "provider": "xai",
+      "model": "grok-imagine-image",
+      "revision": "2026-09-04",
+      "prompt": "Seamless repeating top-down texture of wet Seoul subway platform concrete tiles, 1.5 meter square tiles, thin grout, teal light sheen, dirt in corners, no unique landmark, no crack that only appears once, no text, no arrows, no signage, tileable. Also wall and platform variants from the same identity.",
+      "prompt_hash": "6ab0afc90e1be94e315f0a338c0c3e20e85ba8b07750eed5b875096c5b7d81ec",
+      "input_hashes": [
+        "6cce899b17ebbe84076188f13e7111f1aba4e224ee0ab5f6bba6ae09a4cd96ea"
+      ],
+      "seed": 13009,
+      "cost_mode": "subscription",
+      "cost_cents": 0,
+      "raw_hash": "6cce899b17ebbe84076188f13e7111f1aba4e224ee0ab5f6bba6ae09a4cd96ea",
+      "output_hash": "0338ad1e3258e5dccfff56f7fc4dd31877423c3f6ea8f5da147f29b10d3638df",
+      "tool_versions": {
+        "unity": "6000.7.0a5",
+        "python": "3.13",
+        "node": "22.14.0",
+        "pillow": "12.2.0",
+        "cliproxy": "subscription"
+      },
+      "operations": [
+        "generate",
+        "seamless_wrap",
+        "archive",
+        "human_review",
+        "bom_promotion"
+      ],
+      "unity_import_settings": {
+        "texture_type": "Default",
+        "filter_mode": "Bilinear",
+        "wrap_mode": "Repeat",
+        "alpha_is_transparency": false,
+        "mesh_compression": "Off"
+      },
+      "review_receipts": [
+        {
+          "reviewer": "todo13-art-lead",
+          "verdict": "pass",
+          "receipt_hash": "0cd7dfcaeaf114369e81e87199176357cc57cf7a0ba2ecb77fa4c1b4f20fcaaa",
+          "reviewed_at": "2026-09-04T10:16:04.000Z",
+          "notes": "Machine geometry/alpha/9-slice/icon/seam QA plus human visual pass. Design.md absent on p1E; UI Toolkit binding is Todo 16 handoff."
+        }
+      ],
+      "status": "promoted",
+      "created_at": "2026-09-04T10:16:04.000Z",
+      "license": "generated-on-subscription-for-janseon-poc"
+    }
+  ]
+}

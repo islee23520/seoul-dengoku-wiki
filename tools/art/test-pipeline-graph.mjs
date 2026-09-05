@@ -17,9 +17,9 @@ function fourDirIntent() {
     asset_class: 'character_mesh',
     animation_need: 'four_dir_clip',
     dcc: 'auto',
-    generation_backend: 'comfyui_trellis',
+    generation_backend: 'none',
     rights_status: 'allowed',
-    source: 'generate',
+    source: 'existing',
   };
 }
 
@@ -29,9 +29,9 @@ function cinematicMayaIntent() {
     asset_class: 'character_mesh',
     animation_need: 'cinematic_keyframe',
     dcc: 'maya',
-    generation_backend: 'comfyui_trellis',
+    generation_backend: 'none',
     rights_status: 'allowed',
-    source: 'generate',
+    source: 'existing',
   };
 }
 
@@ -52,9 +52,6 @@ test('four_dir_clip uses blender animation not animo', () => {
   const ids = idsOf(graph);
   for (const required of [
     'rights_check',
-    'generate_2d',
-    'generate_3d_trellis',
-    'archive_raw',
     'blender_cleanup',
     'blender_rig',
     'blender_animation',
@@ -203,8 +200,8 @@ test('portrait stays on 2d path', () => {
   ]);
 });
 
-test('prop uses trellis without animation', () => {
-  const graph = compileGraph({
+test('prop compile fails closed when backend is TRELLIS', () => {
+  assertThrowsCode(() => compileGraph({
     asset_id: 'ticket-gate',
     asset_class: 'prop',
     animation_need: 'none',
@@ -212,12 +209,7 @@ test('prop uses trellis without animation', () => {
     generation_backend: 'comfyui_trellis',
     rights_status: 'allowed',
     source: 'generate',
-  });
-  const ids = idsOf(graph);
-  assert.ok(ids.includes('generate_3d_trellis'));
-  assert.ok(ids.includes('blender_cleanup'));
-  assert.equal(ids.includes('blender_animation'), false);
-  assert.equal(ids.includes('maya_animo_polish'), false);
+  }), 'backend_disabled');
 });
 
 test('cli compile four_dir omits animo', async () => {

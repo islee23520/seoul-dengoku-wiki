@@ -1,0 +1,19 @@
+{
+  "asset_id": "poc-ui-button-normal",
+  "backend": "grok_imagine",
+  "provider": "xai",
+  "model": "grok-imagine-image",
+  "cost_mode": "subscription",
+  "cost_cents": 0,
+  "http": {
+    "http_status": 200,
+    "endpoint": "/v1/images/generations",
+    "model": "grok-imagine-image",
+    "bytes": 136963
+  },
+  "created_at": "2026-09-04T10:16:04.000Z",
+  "openai_image": {
+    "available": false,
+    "reason": "cliproxy /v1/images/generations lists gpt-image-2 but Todo 13 used subscription Grok Imagine and Gemini flash-image only; OpenAI ImageGen left as recorded backend gap with 0\u00a2 and no paid fallback."
+  }
+}

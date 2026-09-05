@@ -24,6 +24,12 @@ const expectedScopes = [
     editorClassIdentifier: 'Janseon.Foundation::Janseon.Foundation.Composition.AppLifetimeScope',
   },
   {
+    scene: 'MainTitle.unity',
+    typeName: 'MainTitleLifetimeScope',
+    scriptPath: 'Game/Assets/Janseon/Foundation/Composition/MainTitleLifetimeScope.cs',
+    editorClassIdentifier: 'Janseon.Foundation::Janseon.Foundation.Composition.MainTitleLifetimeScope',
+  },
+  {
     scene: 'Foundation.unity',
     typeName: 'FoundationLifetimeScope',
     scriptPath: 'Game/Assets/Janseon/Foundation/Composition/FoundationLifetimeScope.cs',
@@ -76,7 +82,11 @@ async function verifyBuildOrder() {
 
   const entries = [...source.matchAll(/^\s+- enabled:\s+(\S+)\r?\n\s+path:\s+(.+?)\r?$/gm)]
     .map((match) => ({ enabled: match[1], path: match[2].trim() }));
-  const expected = ['Assets/Scenes/Bootstrap.unity', 'Assets/Scenes/Foundation.unity'];
+  const expected = [
+    'Assets/Scenes/Bootstrap.unity',
+    'Assets/Scenes/MainTitle.unity',
+    'Assets/Scenes/Foundation.unity',
+  ];
   const actual = entries.map((entry) => `${entry.path} (${entry.enabled === '1' ? 'enabled' : 'disabled'})`);
 
   if (

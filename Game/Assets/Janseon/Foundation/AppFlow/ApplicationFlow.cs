@@ -4,16 +4,24 @@ namespace Janseon.Foundation.AppFlow
     {
         Booting,
         Transitioning,
+        MainTitle,
         Foundation,
         Faulted,
     }
 
     public enum ApplicationFlowTrigger
     {
+        OpenMainTitle,
         OpenFoundation,
         SceneLoadSucceeded,
         SceneLoadFailed,
         Retry,
+    }
+
+    public enum ContentScreenId
+    {
+        MainTitle,
+        Foundation,
     }
 
     public enum TransitionRejection
@@ -43,11 +51,21 @@ namespace Janseon.Foundation.AppFlow
     {
         public ApplicationFlowState CurrentState { get; private set; } = ApplicationFlowState.Booting;
 
+        /// <summary>
+        /// Destination retained across Transitioning/Faulted until a successful commit clears it.
+        /// </summary>
+        public ApplicationFlowState? PendingTarget { get; private set; }
+
         public TransitionDecision TryDispatch(ApplicationFlowTrigger trigger)
         {
-            if (TryGetNextState(CurrentState, trigger, out ApplicationFlowState next))
+            if (TryGetNextState(CurrentState, trigger, out ApplicationFlowState next, out ApplicationFlowState? pending))
             {
                 CurrentState = next;
+                if (pending.HasValue)
+                {
+                    PendingTarget = pending;
+                }
+
                 return TransitionDecision.Allow();
             }
 
@@ -57,20 +75,47 @@ namespace Janseon.Foundation.AppFlow
                     : TransitionRejection.IllegalTransition);
         }
 
+        /// <summary>
+        /// Commits PendingTarget as the stable content state after readiness and exclusive lease swap.
+        /// </summary>
+        public bool TryCommitPendingTarget()
+        {
+            if (CurrentState != ApplicationFlowState.Transitioning || !PendingTarget.HasValue)
+            {
+                return false;
+            }
+
+            CurrentState = PendingTarget.Value;
+            PendingTarget = null;
+            return true;
+        }
+
         private static bool TryGetNextState(
             ApplicationFlowState current,
             ApplicationFlowTrigger trigger,
-            out ApplicationFlowState next)
+            out ApplicationFlowState next,
+            out ApplicationFlowState? pendingTarget)
         {
-            if (current == ApplicationFlowState.Booting && trigger == ApplicationFlowTrigger.OpenFoundation)
+            pendingTarget = null;
+
+            if (current == ApplicationFlowState.Booting && trigger == ApplicationFlowTrigger.OpenMainTitle)
             {
                 next = ApplicationFlowState.Transitioning;
+                pendingTarget = ApplicationFlowState.MainTitle;
                 return true;
             }
 
-            if (current == ApplicationFlowState.Transitioning && trigger == ApplicationFlowTrigger.SceneLoadSucceeded)
+            if (current == ApplicationFlowState.MainTitle && trigger == ApplicationFlowTrigger.OpenFoundation)
             {
-                next = ApplicationFlowState.Foundation;
+                next = ApplicationFlowState.Transitioning;
+                pendingTarget = ApplicationFlowState.Foundation;
+                return true;
+            }
+
+            if (current == ApplicationFlowState.Foundation && trigger == ApplicationFlowTrigger.OpenMainTitle)
+            {
+                next = ApplicationFlowState.Transitioning;
+                pendingTarget = ApplicationFlowState.MainTitle;
                 return true;
             }
 

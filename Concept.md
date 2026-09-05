@@ -10,7 +10,7 @@
 - Universal Render Pipeline `17.7.0`
 - Input System `1.20.0`
 - Unity Test Framework `1.8.0`
-- VContainer `1.19.0` — 현재 Foundation 아키텍처 모듈에서 추가할 DI 기준
+- VContainer `1.19.0` — Foundation 아키텍처 모듈에서 고정한 DI 기준
 
 VContainer 외 Makcha-Unity 패키지는 현재 모듈에 실제 호출자와 실패 테스트가 생기기 전에는 추가하지 않습니다.
 
@@ -28,8 +28,8 @@ VContainer 외 Makcha-Unity 패키지는 현재 모듈에 실제 호출자와 �
 
 ## 현재 구현 범위
 
-현재 구현된 것은 단일 Foundation 씬, 장르 계약과 EditMode 테스트입니다. Bootstrap/FSM/VContainer 구조는 이 작업에서 구현할 대상이며 이미 존재한다고 간주하지 않습니다.
+현재 모듈 `Unity POC 통합 코어 루프`는 `Bootstrap` App scope/FSM, 배타적 `MainTitle`/`Foundation` 화면 lease, UI Toolkit 화면, 세 역 노선과 교섭·우회·전투·정산·복귀를 구현했습니다. 동일 seed 재현과 중복 정산 거부를 실제 batchmode PlayMode에서 검증합니다. 생성 아트 슬롯 승인·연결은 별도 수용 조건이며, 코드 검증만으로 모듈 전체가 완료되지는 않습니다.
 
 ## 완료 판단
 
-Wiki 계약, 정적 아키텍처 게이트, Unity compile, EditMode/PlayMode 테스트, 실제 Unity Editor Play Mode 검증과 네 축 시각 리뷰가 모두 통과해야 Foundation 아키텍처 모듈이 완료됩니다.
+Foundation 아키텍처 모듈은 Wiki 계약, 정적 아키텍처 게이트, Unity compile, EditMode/PlayMode, 실제 Editor Play Mode와 네 축 시각 리뷰를 통과한 기준선입니다. 현재 모듈 `Unity POC 통합 코어 루프`는 타이틀→거점→원정→조우→전투/비전투→정산→복귀 한 바퀴와 검수된 생성 에셋이 실제 화면에 연결된 뒤에만 완료됩니다.

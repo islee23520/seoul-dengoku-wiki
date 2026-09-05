@@ -1,0 +1,19 @@
+{
+  "name": "button",
+  "backend": "grok",
+  "path": "/tmp/todo13-gen/raw/button.jpg",
+  "sha256": "aefaa19d6f2d791e5d3e8f9a2e24cdc60486725819b57fc2dc95ff69e6faf686",
+  "size": [
+    1024,
+    1024
+  ],
+  "format": "JPEG",
+  "prompt": "Isolated wide blank UI button, 4 to 1 rectangle, dark steel with a thin teal edge highlight, completely blank face, no text, no icon, no label. Flat orthographic. Solid MAGENTA background #FF00FF for cutout. NO watermark.",
+  "receipt": {
+    "http_status": 200,
+    "endpoint": "/v1/images/generations",
+    "model": "grok-imagine-image",
+    "bytes": 136963
+  },
+  "created_at": "2026-09-04T10:10:25.246628Z"
+}

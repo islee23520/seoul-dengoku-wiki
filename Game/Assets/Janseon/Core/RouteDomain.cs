@@ -1,0 +1,304 @@
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Text;
+
+namespace Janseon.Core
+{
+    /// <summary>
+    /// Stable station identity. Value is the sole equality carrier.
+    /// </summary>
+    public readonly struct StationId : IEquatable<StationId>
+    {
+        public static readonly StationId Yeongdeungpo = new StationId("Yeongdeungpo");
+        public static readonly StationId Sindorim = new StationId("Sindorim");
+        public static readonly StationId Guro = new StationId("Guro");
+
+        public readonly string Value;
+
+        public StationId(string value)
+        {
+            Value = value ?? string.Empty;
+        }
+
+        public bool Equals(StationId other) => string.Equals(Value, other.Value, StringComparison.Ordinal);
+        public override bool Equals(object obj) => obj is StationId other && Equals(other);
+        public override int GetHashCode() => Value == null ? 0 : StringComparer.Ordinal.GetHashCode(Value);
+        public override string ToString() => Value;
+
+        public static bool operator ==(StationId left, StationId right) => left.Equals(right);
+        public static bool operator !=(StationId left, StationId right) => !left.Equals(right);
+    }
+
+    public enum TravelRejectReason
+    {
+        None = 0,
+        NotAdjacent = 1,
+        SameNode = 2,
+        UnknownNode = 3
+    }
+
+    public sealed class TravelRejection
+    {
+        public readonly TravelRejectReason Reason;
+        public readonly StationId From;
+        public readonly StationId To;
+
+        public TravelRejection(TravelRejectReason reason, StationId from, StationId to)
+        {
+            Reason = reason;
+            From = from;
+            To = to;
+        }
+    }
+
+    public sealed class TravelCommand
+    {
+        public CommandId Id;
+        public StationId Destination;
+    }
+
+    /// <summary>
+    /// Immutable-style route position. Successful travel returns a new instance.
+    /// </summary>
+    public sealed class RouteState
+    {
+        public StationId Current;
+        public Tick Tick;
+        public int HopCount;
+    }
+
+    /// <summary>
+    /// Deterministic undirected station graph. Adjacency lists are ordinal-sorted.
+    /// </summary>
+    public sealed class RouteGraph
+    {
+        readonly Dictionary<string, List<string>> _adjacency;
+
+        RouteGraph(Dictionary<string, List<string>> adjacency)
+        {
+            _adjacency = adjacency;
+        }
+
+        /// <summary>
+        /// POC three-station line: Yeongdeungpo—Sindorim—Guro (bidirectional, no direct Y—G).
+        /// </summary>
+        public static RouteGraph CreateYeongdeungpoSindorimGuro()
+        {
+            var adjacency = new Dictionary<string, List<string>>(StringComparer.Ordinal);
+            AddUndirected(adjacency, StationId.Yeongdeungpo.Value, StationId.Sindorim.Value);
+            AddUndirected(adjacency, StationId.Sindorim.Value, StationId.Guro.Value);
+            // Sort each adjacency list ordinal for deterministic iteration.
+            var keys = new List<string>(adjacency.Keys);
+            keys.Sort(StringComparer.Ordinal);
+            for (var i = 0; i < keys.Count; i++)
+            {
+                adjacency[keys[i]].Sort(StringComparer.Ordinal);
+            }
+
+            return new RouteGraph(adjacency);
+        }
+
+        static void AddUndirected(Dictionary<string, List<string>> adjacency, string a, string b)
+        {
+            if (!adjacency.TryGetValue(a, out var fromA))
+            {
+                fromA = new List<string>();
+                adjacency[a] = fromA;
+            }
+
+            if (!adjacency.TryGetValue(b, out var fromB))
+            {
+                fromB = new List<string>();
+                adjacency[b] = fromB;
+            }
+
+            if (!ContainsOrdinal(fromA, b))
+            {
+                fromA.Add(b);
+            }
+
+            if (!ContainsOrdinal(fromB, a))
+            {
+                fromB.Add(a);
+            }
+        }
+
+        static bool ContainsOrdinal(List<string> list, string value)
+        {
+            for (var i = 0; i < list.Count; i++)
+            {
+                if (string.Equals(list[i], value, StringComparison.Ordinal))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        public bool Contains(StationId id)
+        {
+            var key = id.Value ?? string.Empty;
+            return _adjacency.ContainsKey(key);
+        }
+
+        public bool AreAdjacent(StationId a, StationId b)
+        {
+            var left = a.Value ?? string.Empty;
+            var right = b.Value ?? string.Empty;
+            if (string.Equals(left, right, StringComparison.Ordinal))
+            {
+                return false;
+            }
+
+            if (!_adjacency.TryGetValue(left, out var neighbors))
+            {
+                return false;
+            }
+
+            for (var i = 0; i < neighbors.Count; i++)
+            {
+                if (string.Equals(neighbors[i], right, StringComparison.Ordinal))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        internal static RouteGraph FromAdjacency(Dictionary<string, List<string>> adjacency)
+        {
+            return new RouteGraph(adjacency);
+        }
+    }
+
+    public static class RouteApi
+    {
+        public static RouteState StartAt(StationId station, Tick tick)
+        {
+            return new RouteState
+            {
+                Current = station,
+                Tick = tick,
+                HopCount = 0
+            };
+        }
+
+        /// <summary>
+        /// Attempt a single hop. Success returns a new RouteState and appends one ledger event.
+        /// Failure returns TravelRejection and mutates neither state, tick, nor ledger.
+        /// </summary>
+        public static object TryTravel(RouteGraph graph, RouteState state, Ledger ledger, TravelCommand cmd)
+        {
+            if (graph == null)
+            {
+                throw new ArgumentNullException(nameof(graph));
+            }
+
+            if (state == null)
+            {
+                throw new ArgumentNullException(nameof(state));
+            }
+
+            if (ledger == null)
+            {
+                throw new ArgumentNullException(nameof(ledger));
+            }
+
+            if (cmd == null)
+            {
+                throw new ArgumentNullException(nameof(cmd));
+            }
+
+            var from = state.Current;
+            var to = cmd.Destination;
+
+            if (from.Equals(to))
+            {
+                return new TravelRejection(TravelRejectReason.SameNode, from, to);
+            }
+
+            if (!graph.Contains(from) || !graph.Contains(to))
+            {
+                return new TravelRejection(TravelRejectReason.UnknownNode, from, to);
+            }
+
+            if (!graph.AreAdjacent(from, to))
+            {
+                return new TravelRejection(TravelRejectReason.NotAdjacent, from, to);
+            }
+
+            // RED skeleton never reaches success because the graph has no edges.
+            var nextTick = state.Tick.Next();
+            var hop = checked(state.HopCount + 1);
+            var summary = CoreApi.StableHashHex(
+                "travel=" + (from.Value ?? string.Empty)
+                + "->" + (to.Value ?? string.Empty)
+                + ";cmd=" + (cmd.Id.Value ?? string.Empty)
+                + ";at=" + nextTick.Value.ToString(CultureInfo.InvariantCulture)
+                + ";hop=" + hop.ToString(CultureInfo.InvariantCulture));
+
+            ledger.Events.Add(new TypedEvent
+            {
+                Id = new EventId(
+                    "travel-" + nextTick.Value.ToString(CultureInfo.InvariantCulture)
+                    + "-" + (cmd.Id.Value ?? "none")),
+                CauseId = cmd.Id,
+                Value = hop,
+                At = nextTick,
+                SummaryHash = summary
+            });
+
+            return new RouteState
+            {
+                Current = to,
+                Tick = nextTick,
+                HopCount = hop
+            };
+        }
+
+        public static string ComputeRouteHash(RouteState state, Ledger ledger)
+        {
+            var sb = new StringBuilder(128);
+            if (state == null)
+            {
+                sb.Append("route:null");
+            }
+            else
+            {
+                sb.Append("node=").Append(state.Current.Value ?? string.Empty);
+                sb.Append(";tick=").Append(state.Tick.Value.ToString(CultureInfo.InvariantCulture));
+                sb.Append(";hops=").Append(state.HopCount.ToString(CultureInfo.InvariantCulture));
+            }
+
+            if (ledger == null)
+            {
+                sb.Append(";ledger=null");
+            }
+            else
+            {
+                sb.Append(";events=").Append(ledger.Events.Count.ToString(CultureInfo.InvariantCulture));
+                for (var i = 0; i < ledger.Events.Count; i++)
+                {
+                    var e = ledger.Events[i];
+                    sb.Append('|')
+                        .Append(i.ToString(CultureInfo.InvariantCulture))
+                        .Append(':')
+                        .Append(e.Id.Value ?? string.Empty)
+                        .Append(',')
+                        .Append(e.CauseId.Value ?? string.Empty)
+                        .Append(',')
+                        .Append(e.Value.ToString(CultureInfo.InvariantCulture))
+                        .Append(',')
+                        .Append(e.At.Value.ToString(CultureInfo.InvariantCulture))
+                        .Append(',')
+                        .Append(e.SummaryHash ?? string.Empty);
+                }
+            }
+
+            return CoreApi.StableHashHex(sb.ToString());
+        }
+    }
+}

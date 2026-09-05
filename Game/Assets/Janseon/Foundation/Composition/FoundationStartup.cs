@@ -17,14 +17,23 @@ namespace Janseon.Foundation.Composition
 
         public async Awaitable StartAsync(CancellationToken cancellation = default)
         {
-            TransitionOutcome outcome = await coordinator.OpenFoundationAsync(cancellation);
+            TransitionOutcome outcome = await coordinator.OpenMainTitleAsync(cancellation);
             if (outcome.Status == TransitionStatus.Cancelled)
             {
                 throw new OperationCanceledException(cancellation);
             }
+
             if (outcome.Status != TransitionStatus.Completed)
             {
-                throw new InvalidOperationException($"FoundationStartup Failed: transition {outcome.TransitionId}, status {outcome.Status}, rejection {outcome.Rejection}");
+                throw new InvalidOperationException(
+                    $"FoundationStartup Failed: transition {outcome.TransitionId}, status {outcome.Status}, rejection {outcome.Rejection}");
+            }
+
+            Debug.Log("JANSEON_STARTUP_READY screen=MainTitle");
+            if (!Application.isEditor && Debug.isDebugBuild && Application.isBatchMode
+                && Array.IndexOf(Environment.GetCommandLineArgs(), "-janseon-smoke") >= 0)
+            {
+                Application.Quit(0);
             }
         }
     }
