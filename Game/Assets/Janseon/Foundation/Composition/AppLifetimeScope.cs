@@ -9,7 +9,7 @@ namespace Janseon.Foundation.Composition
         protected override void Configure(IContainerBuilder builder)
         {
             builder.Register<UnityFoundationSceneLoader>(Lifetime.Singleton)
-                .As<IFoundationSceneLoader>();
+                .As<IContentSceneLoader>();
             builder.Register<ApplicationFlowCoordinator>(Lifetime.Singleton);
             builder.RegisterEntryPoint<FoundationStartup>();
         }

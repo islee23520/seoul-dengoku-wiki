@@ -1,0 +1,92 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <ui:Style src="../Styles/JanseonShared.uss" />
+    <ui:Style src="../Styles/Gameplay.uss" />
+    <ui:VisualElement name="gameplay-root" class="jk-screen jk-motion-off jk-res-720" focusable="false">
+        <ui:VisualElement name="stage-rail" class="jk-rail">
+            <ui:Label name="stage-base-prep" class="jk-chip" text="거점 준비" />
+            <ui:Label name="stage-expedition" class="jk-chip" text="원정" />
+            <ui:Label name="stage-encounter" class="jk-chip" text="조우" />
+            <ui:Label name="stage-resolution" class="jk-chip" text="해결" />
+            <ui:Label name="stage-settlement" class="jk-chip" text="정산" />
+            <ui:Label name="stage-base-ready" class="jk-chip" text="복귀" />
+        </ui:VisualElement>
+        <ui:VisualElement name="gameplay-body">
+            <ui:VisualElement name="route-rail" class="jk-route">
+                <ui:Button name="station-Yeongdeungpo" class="jk-route-node jk-button" text="영등포" focusable="true" />
+                <ui:Button name="station-Sindorim" class="jk-route-node jk-button" text="신도림" focusable="true" />
+                <ui:Button name="station-Guro" class="jk-route-node jk-button" text="구로" focusable="true" />
+                <ui:Button name="action-depart" class="jk-button jk-button--primary" text="출정" focusable="true" />
+                <ui:Button name="action-face-encounter" class="jk-button" text="조우" focusable="true" />
+                <ui:Button name="action-enter-resolution" class="jk-button" text="해결 진입" focusable="true" />
+            </ui:VisualElement>
+            <ui:VisualElement name="gameplay-detail">
+                <ui:VisualElement name="encounter-choices" class="jk-panel">
+                    <ui:Label class="jk-section" text="조우 선택" />
+                    <ui:Button name="choice-negotiate" class="jk-card jk-button" text="교섭" focusable="true" />
+                    <ui:Button name="choice-bypass" class="jk-card jk-button" text="우회" focusable="true" />
+                    <ui:Button name="choice-combat" class="jk-card jk-button jk-button--danger" text="전투" focusable="true" />
+                </ui:VisualElement>
+                <ui:VisualElement name="battle-row">
+                    <ui:VisualElement name="battle-hud" class="jk-panel">
+                        <ui:Label class="jk-section" text="전투" />
+                        <ui:Label name="battle-hp" class="jk-meta" text="HP" />
+                        <ui:VisualElement name="battle-hp-meter" class="jk-meter">
+                            <ui:VisualElement name="battle-hp-fill" class="jk-meter__fill jk-meter__fill--hp" />
+                        </ui:VisualElement>
+                        <ui:Label name="battle-ap" class="jk-meta" text="AP" />
+                        <ui:VisualElement name="battle-ap-meter" class="jk-meter">
+                            <ui:VisualElement name="battle-ap-fill" class="jk-meter__fill jk-meter__fill--ap" />
+                        </ui:VisualElement>
+                        <ui:Button name="battle-advance" class="jk-button jk-button--primary" text="전투 명령" focusable="true" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="battle-grid" class="jk-grid">
+                        <ui:VisualElement class="jk-grid-row">
+                            <ui:VisualElement name="battle-cell-0-0" class="jk-grid-cell" />
+                            <ui:VisualElement name="battle-cell-1-0" class="jk-grid-cell" />
+                            <ui:VisualElement name="battle-cell-2-0" class="jk-grid-cell" />
+                            <ui:VisualElement name="battle-cell-3-0" class="jk-grid-cell" />
+                            <ui:VisualElement name="battle-cell-4-0" class="jk-grid-cell" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="jk-grid-row">
+                            <ui:VisualElement name="battle-cell-0-1" class="jk-grid-cell" />
+                            <ui:VisualElement name="battle-cell-1-1" class="jk-grid-cell" />
+                            <ui:VisualElement name="battle-cell-2-1" class="jk-grid-cell" />
+                            <ui:VisualElement name="battle-cell-3-1" class="jk-grid-cell" />
+                            <ui:VisualElement name="battle-cell-4-1" class="jk-grid-cell" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="jk-grid-row">
+                            <ui:VisualElement name="battle-cell-0-2" class="jk-grid-cell" />
+                            <ui:VisualElement name="battle-cell-1-2" class="jk-grid-cell" />
+                            <ui:VisualElement name="battle-cell-2-2" class="jk-grid-cell" />
+                            <ui:VisualElement name="battle-cell-3-2" class="jk-grid-cell" />
+                            <ui:VisualElement name="battle-cell-4-2" class="jk-grid-cell" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="jk-grid-row">
+                            <ui:VisualElement name="battle-cell-0-3" class="jk-grid-cell" />
+                            <ui:VisualElement name="battle-cell-1-3" class="jk-grid-cell" />
+                            <ui:VisualElement name="battle-cell-2-3" class="jk-grid-cell" />
+                            <ui:VisualElement name="battle-cell-3-3" class="jk-grid-cell" />
+                            <ui:VisualElement name="battle-cell-4-3" class="jk-grid-cell" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="jk-grid-row">
+                            <ui:VisualElement name="battle-cell-0-4" class="jk-grid-cell" />
+                            <ui:VisualElement name="battle-cell-1-4" class="jk-grid-cell" />
+                            <ui:VisualElement name="battle-cell-2-4" class="jk-grid-cell" />
+                            <ui:VisualElement name="battle-cell-3-4" class="jk-grid-cell" />
+                            <ui:VisualElement name="battle-cell-4-4" class="jk-grid-cell" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:ScrollView name="battle-log" class="jk-log jk-panel">
+                        <ui:Label class="jk-section" text="전투 기록" />
+                    </ui:ScrollView>
+                </ui:VisualElement>
+                <ui:VisualElement name="settlement-panel" class="jk-panel">
+                    <ui:Label class="jk-section" text="정산" />
+                    <ui:Label name="settlement-outcome" class="jk-body" text="" />
+                    <ui:Button name="action-settle" class="jk-button jk-button--primary" text="정산 적용" focusable="true" />
+                    <ui:Button name="return-action" class="jk-button jk-button--primary" text="복귀" focusable="true" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

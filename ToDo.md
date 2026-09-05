@@ -2,7 +2,7 @@
 
 ## Unity POC 통합 코어 루프
 
-상태: 선택됨, 미구현
+상태: 코어 구현·PlayMode 검증 완료, 생성 아트 통합과 최종 수용 게이트 미완료
 범위: 이 모듈 하나만 구현합니다. 완료·검증 전에는 두 번째 제품 모듈을 시작하지 않습니다.
 기준선: 이전 Foundation 아키텍처 모듈(Bootstrap App scope/FSM, Foundation 화면 child scope, VContainer `1.19.0`, 정적 아키텍처 게이트)은 완료된 기반이며 현재 활성 모듈이 아닙니다.
 
@@ -12,14 +12,14 @@
 - [ ] 2. 2D/3D 생성 백엔드와 fail-closed 자산 BOM 계약을 확장한다
 - [ ] 3. NanoBanana/Gemini, Grok Imagine, OpenAI ImageGen 경로를 유료 대체 없이 검증한다
 - [ ] 4. 공식 Microsoft TRELLIS v1 호스트를 고정하고 수신 계약을 증명한다
-- [ ] 5. 결정론적 Core ID, tick, command, RNG stream, ledger hash를 만든다
-- [ ] 6. 영등포-신도림-구로 세 역 노선과 통행 규칙을 저작한다
-- [ ] 7. 여섯 단계 캠페인 루프와 교섭·우회 비전투 경로를 구현한다
-- [ ] 8. 불변 BattleContext와 동일 격자 결정론 SRPG 규칙을 구현한다
-- [ ] 9. 조우·전투 결과를 정확히 한 번만 정산한다
-- [ ] 10. MainTitle을 배타적 화면 lease로 추가하고 아키텍처 게이트를 갱신한다
-- [ ] 11. Design.md 시각 계약을 고정하고 실제 UI Toolkit 화면을 구현한다
-- [ ] 12. 아트 제작 전에 PlayMode에서 코어 루프 한 바퀴를 닫는다
+- [x] 5. 결정론적 Core ID, tick, command, RNG stream, ledger hash를 만든다
+- [x] 6. 영등포-신도림-구로 세 역 노선과 통행 규칙을 저작한다
+- [x] 7. 여섯 단계 캠페인 루프와 교섭·우회 비전투 경로를 구현한다
+- [x] 8. 불변 BattleContext와 동일 격자 결정론 SRPG 규칙을 구현한다
+- [x] 9. 조우·전투 결과를 정확히 한 번만 정산한다
+- [x] 10. MainTitle을 배타적 화면 lease로 추가하고 아키텍처 게이트를 갱신한다
+- [x] 11. Design.md 시각 계약을 고정하고 실제 UI Toolkit 화면을 구현한다
+- [x] 12. 아트 제작 전에 PlayMode에서 코어 루프 한 바퀴를 닫는다
 - [ ] 13. 타이틀·UI kit·아이콘·역사 텍스처를 생성·검수한다
 - [ ] 14. TRELLIS→Blender로 역사 프롭 키트를 생성·승격한다
 - [ ] 15. 탐사원·의무원·순찰대 캐릭터를 생성·리그·애니메이션한다

@@ -9,9 +9,11 @@ import { fileURLToPath } from 'node:url';
 const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..');
 const gatePath = join('tools', 'architecture', 'check-unity-architecture.mjs');
 const bootstrapScene = join('Game', 'Assets', 'Scenes', 'Bootstrap.unity');
+const mainTitleScene = join('Game', 'Assets', 'Scenes', 'MainTitle.unity');
 const foundationScene = join('Game', 'Assets', 'Scenes', 'Foundation.unity');
 const compositionDir = join('Game', 'Assets', 'Janseon', 'Foundation', 'Composition');
 const appScopeMeta = join(compositionDir, 'AppLifetimeScope.cs.meta');
+const mainTitleScopeMeta = join(compositionDir, 'MainTitleLifetimeScope.cs.meta');
 const foundationScopeMeta = join(compositionDir, 'FoundationLifetimeScope.cs.meta');
 const buildSettings = join('Game', 'ProjectSettings', 'EditorBuildSettings.asset');
 
@@ -26,6 +28,7 @@ const fixtureSources = [
 
 const decoyGuid = 'deadbeefdeadbeefdeadbeefdeadbeef';
 const appScopeGuid = await readGuid(join(repositoryRoot, appScopeMeta));
+const mainTitleScopeGuid = await readGuid(join(repositoryRoot, mainTitleScopeMeta));
 const foundationScopeGuid = await readGuid(join(repositoryRoot, foundationScopeMeta));
 
 const scenarios = [
@@ -155,6 +158,15 @@ const scenarios = [
     expectedRule: 'SCOPE_SCRIPT_META',
     async mutate(root) {
       await rm(join(root, appScopeMeta));
+    },
+  },
+  {
+    id: 'main-title-scope-removed',
+    description: 'MainTitle scene loses its MainTitleLifetimeScope component',
+    expectedExit: 1,
+    expectedRule: 'SCENE_SCOPE_OWNERSHIP',
+    async mutate(root) {
+      await editFile(root, mainTitleScene, (source) => removeDocumentContaining(source, mainTitleScopeGuid));
     },
   },
   {
