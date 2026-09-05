@@ -16,6 +16,7 @@ namespace Janseon.Art.Editor
             AssetDatabase.Refresh();
             var destDir = ResolveEvidenceDir();
             var receiptPath = RenderShowcase(destDir);
+            WriteImporterSnapshot(destDir);
             Debug.Log($"poc ui kit showcase wrote {receiptPath}");
         }
 
@@ -48,16 +49,17 @@ namespace Janseon.Art.Editor
                 throw new FileNotFoundException(path);
             }
 
-            importer.textureType = TextureImporterType.Sprite;
-            importer.spriteImportMode = SpriteImportMode.Single;
-            importer.spritePixelsPerUnit = 100f;
-            importer.spriteBorder = border;
-            importer.mipmapEnabled = false;
-            importer.alphaIsTransparency = pointAlpha;
-            importer.filterMode = filter;
-            importer.wrapMode = TextureWrapMode.Clamp;
-            importer.npotScale = TextureImporterNPOTScale.None;
-            importer.SaveAndReimport();
+            var dirty = false;
+            if (importer.textureType != TextureImporterType.Sprite) { importer.textureType = TextureImporterType.Sprite; dirty = true; }
+            if (importer.spriteImportMode != SpriteImportMode.Single) { importer.spriteImportMode = SpriteImportMode.Single; dirty = true; }
+            if (!Mathf.Approximately(importer.spritePixelsPerUnit, 100f)) { importer.spritePixelsPerUnit = 100f; dirty = true; }
+            if (importer.spriteBorder != border) { importer.spriteBorder = border; dirty = true; }
+            if (importer.mipmapEnabled) { importer.mipmapEnabled = false; dirty = true; }
+            if (importer.alphaIsTransparency != pointAlpha) { importer.alphaIsTransparency = pointAlpha; dirty = true; }
+            if (importer.filterMode != filter) { importer.filterMode = filter; dirty = true; }
+            if (importer.wrapMode != TextureWrapMode.Clamp) { importer.wrapMode = TextureWrapMode.Clamp; dirty = true; }
+            if (importer.npotScale != TextureImporterNPOTScale.None) { importer.npotScale = TextureImporterNPOTScale.None; dirty = true; }
+            if (dirty) importer.SaveAndReimport();
         }
 
         static void SetTile(string path)
@@ -68,19 +70,25 @@ namespace Janseon.Art.Editor
                 throw new FileNotFoundException(path);
             }
 
-            importer.textureType = TextureImporterType.Default;
-            importer.mipmapEnabled = true;
-            importer.filterMode = FilterMode.Bilinear;
-            importer.wrapMode = TextureWrapMode.Repeat;
-            importer.alphaIsTransparency = false;
-            importer.SaveAndReimport();
+            var dirty = false;
+            if (importer.textureType != TextureImporterType.Default) { importer.textureType = TextureImporterType.Default; dirty = true; }
+            if (!importer.mipmapEnabled) { importer.mipmapEnabled = true; dirty = true; }
+            if (importer.filterMode != FilterMode.Bilinear) { importer.filterMode = FilterMode.Bilinear; dirty = true; }
+            if (importer.wrapMode != TextureWrapMode.Repeat) { importer.wrapMode = TextureWrapMode.Repeat; dirty = true; }
+            if (importer.alphaIsTransparency) { importer.alphaIsTransparency = false; dirty = true; }
+            if (dirty) importer.SaveAndReimport();
+        }
+
+        internal static string BuildEvidenceDir(string repoRoot)
+        {
+            return Path.Combine(repoRoot, ".omo", "evidence", "gateway-ui-quality", "showcase");
         }
 
         static string ResolveEvidenceDir()
         {
             var project = Directory.GetParent(Application.dataPath)?.FullName;
             var repo = Directory.GetParent(project ?? ".")?.FullName;
-            var destDir = Path.Combine(repo ?? ".", ".omo", "evidence", "unity-poc-core-loop", "task-13-review-fixes", "showcase");
+            var destDir = BuildEvidenceDir(repo ?? ".");
             Directory.CreateDirectory(destDir);
             return destDir;
         }
@@ -94,11 +102,12 @@ namespace Janseon.Art.Editor
             };
             var receipt = new DualResolutionReceipt
             {
-                schema = "janseon-todo13-showcase-dual-res/1",
+                schema = "janseon-gateway-ui-quality-showcase-dual-res/1",
                 recorded_at = System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ss.fffZ"),
                 unity_version = Application.unityVersion,
                 execute_method = "Janseon.Art.Editor.PocUiKitShowcase.Run",
                 batchmode = true,
+                load_path = "AssetDatabase imported Texture2D",
                 shots = shots,
             };
             var receiptPath = Path.Combine(destDir, "showcase-receipt.json");
@@ -159,6 +168,7 @@ namespace Janseon.Art.Editor
             public string unity_version;
             public string execute_method;
             public bool batchmode;
+            public string load_path;
             public DualResolutionShot[] shots;
         }
 
@@ -173,19 +183,37 @@ namespace Janseon.Art.Editor
 
         static Texture2D LoadPng(string assetPath)
         {
-            var absolute = Path.Combine(Application.dataPath, assetPath.Substring("Assets/".Length));
-            if (!File.Exists(absolute))
+            var imported = AssetDatabase.LoadAssetAtPath<Texture2D>(assetPath);
+            if (imported == null)
             {
-                throw new FileNotFoundException(absolute);
+                throw new FileNotFoundException(assetPath);
             }
 
-            var texture = new Texture2D(2, 2, TextureFormat.RGBA32, false);
-            if (!texture.LoadImage(File.ReadAllBytes(absolute)))
+            var copy = new Texture2D(imported.width, imported.height, TextureFormat.RGBA32, false);
+            copy.filterMode = imported.filterMode;
+            copy.wrapMode = imported.wrapMode;
+            if (imported.isReadable)
             {
-                throw new InvalidDataException(absolute);
+                copy.SetPixels(imported.GetPixels());
+                copy.Apply();
+                return copy;
             }
 
-            return texture;
+            var rt = RenderTexture.GetTemporary(imported.width, imported.height, 0, RenderTextureFormat.ARGB32);
+            var previous = RenderTexture.active;
+            try
+            {
+                Graphics.Blit(imported, rt);
+                RenderTexture.active = rt;
+                copy.ReadPixels(new Rect(0, 0, imported.width, imported.height), 0, 0);
+                copy.Apply();
+                return copy;
+            }
+            finally
+            {
+                RenderTexture.active = previous;
+                RenderTexture.ReleaseTemporary(rt);
+            }
         }
 
         static void Fill(Texture2D surface, Color32 color)
@@ -198,7 +226,7 @@ namespace Janseon.Art.Editor
         static void Blit(Texture2D dest, Texture2D src, int x, int y, int width, int height)
         {
             var scaled = Scale(src, width, height);
-            dest.SetPixels(x, dest.height - y - height, width, height, scaled.GetPixels());
+            Composite(dest, scaled, x, y);
             Object.DestroyImmediate(src);
             Object.DestroyImmediate(scaled);
         }
@@ -225,9 +253,114 @@ namespace Janseon.Art.Editor
         static void BlitNineSlice(Texture2D dest, Texture2D src, int x, int y, int width, int height, int border)
         {
             var scaled = NineSlice(src, width, height, border);
-            dest.SetPixels(x, dest.height - y - height, width, height, scaled.GetPixels());
+            Composite(dest, scaled, x, y);
             Object.DestroyImmediate(src);
             Object.DestroyImmediate(scaled);
+        }
+
+        static void Composite(Texture2D dest, Texture2D src, int x, int y)
+        {
+            var destY = dest.height - y - src.height;
+            var destPixels = dest.GetPixels(x, destY, src.width, src.height);
+            var srcPixels = src.GetPixels();
+            for (var i = 0; i < destPixels.Length; i++)
+            {
+                destPixels[i] = SourceOver(destPixels[i], srcPixels[i]);
+            }
+
+            dest.SetPixels(x, destY, src.width, src.height, destPixels);
+            dest.Apply();
+        }
+
+        static Color SourceOver(Color dst, Color src)
+        {
+            var outA = src.a + dst.a * (1f - src.a);
+            if (outA <= 0f) return Color.clear;
+            var inv = 1f - src.a;
+            return new Color(
+                (src.r * src.a + dst.r * dst.a * inv) / outA,
+                (src.g * src.a + dst.g * dst.a * inv) / outA,
+                (src.b * src.a + dst.b * dst.a * inv) / outA,
+                outA);
+        }
+
+        static void WriteImporterSnapshot(string destDir)
+        {
+            var paths = new[]
+            {
+                $"{ArtRoot}/Title/poc-title-art.png",
+                $"{ArtRoot}/UI/poc-ui-concept.png",
+                $"{ArtRoot}/UI/poc-ui-kit.png",
+                $"{ArtRoot}/UI/poc-ui-panel-9slice.png",
+                $"{ArtRoot}/UI/poc-ui-button-normal.png",
+                $"{ArtRoot}/UI/poc-ui-button-hover.png",
+                $"{ArtRoot}/UI/poc-ui-button-pressed.png",
+                $"{ArtRoot}/UI/poc-ui-icons.png",
+                $"{ArtRoot}/UI/icon-talk.png",
+                $"{ArtRoot}/UI/icon-detour.png",
+                $"{ArtRoot}/UI/icon-battle.png",
+                $"{ArtRoot}/UI/icon-heal.png",
+                $"{ArtRoot}/UI/icon-party.png",
+                $"{ArtRoot}/UI/icon-station.png",
+                $"{ArtRoot}/UI/icon-crate.png",
+                $"{ArtRoot}/UI/icon-alert.png",
+                $"{ArtRoot}/Tiles/poc-tile-floor.png",
+                $"{ArtRoot}/Tiles/poc-tile-wall.png",
+                $"{ArtRoot}/Tiles/poc-tile-platform.png",
+            };
+            var snapshot = new ImporterSnapshot
+            {
+                schema = "janseon-gateway-ui-quality-importer-snapshot/1",
+                recorded_at = System.DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ss.fffZ"),
+                unity_version = Application.unityVersion,
+                entries = new ImporterSnapshotEntry[paths.Length],
+            };
+            for (var i = 0; i < paths.Length; i++)
+            {
+                var importer = (TextureImporter)AssetImporter.GetAtPath(paths[i]);
+                if (importer == null) throw new FileNotFoundException(paths[i]);
+                snapshot.entries[i] = new ImporterSnapshotEntry
+                {
+                    path = paths[i],
+                    textureType = importer.textureType.ToString(),
+                    filterMode = importer.filterMode.ToString(),
+                    wrapMode = importer.wrapMode.ToString(),
+                    mipmapEnabled = importer.mipmapEnabled,
+                    alphaIsTransparency = importer.alphaIsTransparency,
+                    npotScale = importer.npotScale.ToString(),
+                    isReadable = importer.isReadable,
+                    maxTextureSize = importer.maxTextureSize,
+                    spriteBorder = importer.spriteBorder.ToString(),
+                    spritePixelsPerUnit = importer.spritePixelsPerUnit,
+                };
+            }
+
+            File.WriteAllText(Path.Combine(destDir, "importer-snapshot.json"), JsonUtility.ToJson(snapshot, true));
+        }
+
+        [System.Serializable]
+        class ImporterSnapshot
+        {
+            public string schema;
+            public string recorded_at;
+            public string unity_version;
+            public ImporterSnapshotEntry[] entries;
+        }
+
+        [System.Serializable]
+        class ImporterSnapshotEntry
+        {
+            public string path;
+            public string textureType;
+            public string filterMode;
+            public string wrapMode;
+            public bool mipmapEnabled;
+            public bool alphaIsTransparency;
+            public string npotScale;
+            public bool isReadable;
+            public int maxTextureSize;
+            public string spriteBorder;
+            public float spritePixelsPerUnit;
         }
 
         static Texture2D NineSlice(Texture2D src, int width, int height, int border)
