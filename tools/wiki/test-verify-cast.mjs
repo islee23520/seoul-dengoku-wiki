@@ -40,11 +40,22 @@ function relationsMd(rows) {
   ].join('\n');
 }
 
+function castIndexMd(rows) {
+  return [
+    '# 인물 총람', '',
+    '| 이름 | 직위 | 단계 | 관계 수 |',
+    '| --- | --- | --- | --- |',
+    ...rows.map(([name, position, stage, count]) => `| ${name} | ${position} | ${stage} | ${count} |`),
+    '',
+  ].join('\n');
+}
+
 async function makeFixture({
   coreNames = T0,
   omit = {},
   stateProfiles = {},
   relations = null,
+  castIndex = null,
 } = {}) {
   const dir = await mkdtemp(join(tmpdir(), 'verify-cast-'));
   fixtures.push(dir);
@@ -55,6 +66,7 @@ async function makeFixture({
     await writeFile(join(dir, file), body);
   }
   if (relations !== null) await writeFile(join(dir, 'Cast-Relations.md'), relations);
+  if (castIndex !== null) await writeFile(join(dir, 'Cast-Index.md'), castIndex);
   return dir;
 }
 
@@ -218,6 +230,28 @@ test('R13: --known-names missing from roster', async () => {
   assert.equal(result.code, 1);
   assert.match(result.stderr, /^R13:/m);
   assert.match(result.stderr, /한소미/);
+});
+
+test('R14: Cast-Index 관계 수 must equal outgoing edge count (송신 간선 수, 수신 제외)', async () => {
+  const chain = T0.slice(0, -1).map((name, index) => [name, '계약', T0[index + 1], 'x']);
+  const counts = new Map(T0.map((name) => [name, 0]));
+  for (const [from] of chain) counts.set(from, 1);
+  const rows = T0.map((name) => [name, '직위', '주요', String(counts.get(name))]);
+
+  const consistent = await makeFixture({ relations: relationsMd(chain), castIndex: castIndexMd(rows) });
+  const ok = run(consistent);
+  assert.equal(ok.code, 0);
+  assert.doesNotMatch(ok.output, /R14/);
+
+  // 계약 위반 mutation: 정유라는 outgoing 0·incoming 1 — 수신 간선을 세어 적은 값은 실패해야 한다.
+  const mutated = rows.map(([name, position, stage, count]) => (
+    name === '정유라' ? [name, position, stage, '1'] : [name, position, stage, count]
+  ));
+  const broken = await makeFixture({ relations: relationsMd(chain), castIndex: castIndexMd(mutated) });
+  const bad = run(broken);
+  assert.equal(bad.code, 1);
+  assert.match(bad.stderr, /^R14:/m);
+  assert.match(bad.stderr, /정유라/);
 });
 
 test('stale state: running the checker twice yields identical output', async () => {

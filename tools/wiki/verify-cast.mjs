@@ -105,6 +105,36 @@ function parseRelations(text, fail) {
   return relations;
 }
 
+// Cast-Index 국가 표에서 '관계 수' 열을 읽는다.
+// 계약(Issue #19): '관계 수'는 송신 간선 수다(수신 간선 제외). T0 핵심 인물은 수신
+// 간선으로만 연결될 수 있어 관계 수가 0이 될 수 있으며, 고립 판정은 R9의 무향 연결
+// 기준으로 별도로 이루어진다.
+function parseCastIndexCounts(text) {
+  const counts = new Map();
+  let inCastTable = false;
+  for (const raw of text.split(/\r?\n/)) {
+    const line = raw.trim();
+    if (!line.startsWith('|')) {
+      inCastTable = false;
+      continue;
+    }
+    const cells = line.split('|').slice(1, -1).map((cell) => cell.trim());
+    if (cells.length !== 4) {
+      inCastTable = false;
+      continue;
+    }
+    if (cells[0] === '이름') {
+      inCastTable = cells[3] === '관계 수';
+      continue;
+    }
+    if (!inCastTable) continue;
+    if (cells.every((cell) => cell === '' || /^:?-+:?$/.test(cell))) continue;
+    const count = Number(cells[3]);
+    if (Number.isInteger(count)) counts.set(cells[0], count);
+  }
+  return counts;
+}
+
 function parseArgs(argv) {
   const opts = {
     docs: null,
@@ -220,6 +250,17 @@ export async function verifyCast(options) {
   for (const [name, count] of outgoing) {
     const cap = T0_SET.has(name) ? 12 : 6;
     if (count > cap) fail('R8', `${name} outgoing=${count} cap=${cap}`);
+  }
+
+  // R14 — Cast-Index '관계 수'는 송신 간선 수와 일치해야 한다(수신 제외).
+  const indexText = await readOptional(join(docs, 'Cast-Index.md'));
+  if (indexText !== null) {
+    for (const [name, tableCount] of parseCastIndexCounts(indexText)) {
+      const expected = outgoing.get(name) || 0;
+      if (tableCount !== expected) {
+        fail('R14', `Cast-Index ${name} 관계 수=${tableCount} outgoing=${expected}`);
+      }
+    }
   }
 
   const skipIsolates = relations.length === 0 && min <= names.length;
