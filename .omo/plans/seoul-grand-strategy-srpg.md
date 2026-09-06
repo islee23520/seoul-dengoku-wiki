@@ -79,7 +79,7 @@ Your next move: Momus가 이 전체 계획을 무조건 승인하기 전에는 U
 > Zero human intervention - all verification is agent-executed.
 - Test decision: TDD for every gameplay, persistence, tooling, and publishing behavior. Unity Test Framework/NUnit for EditMode and PlayMode; pure C# deterministic harness tests for Core/WorldGraph/Battle/Sim; `pytest` for Python asset tools; Node tests for docs/Wiki scripts. Visual-only choices use preregistered capture comparisons rather than prose-pinning tests.
 - RED evidence: every behavior todo first captures the named failing test/scenario before production work. Existing-correct Makcha changes use mutation proof if no natural RED remains.
-- Surface evidence: Unity Editor Play Mode screenshots via `uloop screenshot`, built player smoke, local repository/remote-absence checks, local Wiki-tree hash comparison, and actual ComfyUI/Blender/Unity artifact lineage.
+- Surface evidence: `-batchmode` Unity Play Mode가 생성한 PNG/JSON receipt, built player smoke, local repository/remote-absence checks, local Wiki-tree hash comparison, and actual ComfyUI/Blender/Unity artifact lineage. Interactive Editor와 uLoop는 사용하지 않습니다.
 - Evidence: `<attemptDir>/task-<N>-seoul-grand-strategy-srpg.*` where `attemptDir` is the current attempt from `omo-agent-toolkit ulw-loop status --json`; outside ulw-loop use `.omo/evidence/`.
 - Full gates: exact Unity compile, EditMode, PlayMode, Windows build, macOS smoke build, Python/Node tests, repository/Wiki round trip, and manual use of the integrated campaign slice.
 
@@ -231,7 +231,7 @@ Your next move: Momus가 이 전체 계획을 무조건 승인하기 전에는 U
   Parallelization: Wave 2 | Blocked by: 7, 9–11 | Blocks: 23
   References: `wave-2-skeptic.md` C-SK-02/G3; `wave-3-architecture-defense.md` VS-2; `SYNTHESIS.md` terrain; `design-spec.md` palette.
   Acceptance criteria: automated input scenarios locate party/objective, select a legal transfer+vertical route, explain a blockade cut and compare time/danger; selected prototype meets preregistered completion/time/confusion thresholds; CJK labels do not clip; rejected implementation is deleted.
-  QA scenarios: real Unity Play Mode via `uloop` plus screenshots at both resolutions and color-blind simulation; failure — blocked edge/layer ambiguity scenario must visibly prevent invalid route and explain why. Evidence `<attemptDir>/task-12-seoul-grand-strategy-srpg/` including screenshots and action transcript.
+  QA scenarios: real Unity Play Mode via a dedicated `-batchmode` background process, producing screenshots at both resolutions and color-blind simulation plus JSON receipts; failure — blocked edge/layer ambiguity scenario must visibly prevent invalid route and explain why. Evidence `<attemptDir>/task-12-seoul-grand-strategy-srpg/` including screenshots and action transcript.
   Commit: Y | `feat(map): select legible subway strategy presentation`
 
 - [ ] 13. Implement four-direction travel, layer transitions, and deterministic encounters
@@ -293,7 +293,7 @@ Your next move: Momus가 이 전체 계획을 무조건 승인하기 전에는 U
   Recommended task executor category: `visual-engineering` with `unity`, `game-assets`, and `visual-qa` skills — real Unity visual comparison is decisive.
   Parallelization: Wave 3 | Blocked by: 3, 4 | Blocks: 23
   References: `SYNTHESIS.md` character section; `wave-2-skeptic.md` C-SK-04; `wave-1` hybrid research; project AGENTS Unity visual verification rule.
-  Acceptance criteria: live Play Mode screenshots via `uloop screenshot` cover four directions × idle/walk/attack/hit/death × bright/dark/colored light × occlusion × 1280×720/1920×1080; four independent `agy --print --model gemini-pro-agent` reviewers evaluate COMPOSITION/SPRITE_FIDELITY/TYPOGRAPHY/PRODUCT_POLISH; chosen path has zero class-A seam/depth/sorting/direction defects and beats/safely ties alternatives.
+  Acceptance criteria: `-batchmode` Play Mode screenshots and JSON receipts cover four directions × idle/walk/attack/hit/death × bright/dark/colored light × occlusion × 1280×720/1920×1080; four independent `agy --print --model gemini-pro-agent` reviewers evaluate COMPOSITION/SPRITE_FIDELITY/TYPOGRAPHY/PRODUCT_POLISH; chosen path has zero class-A seam/depth/sorting/direction defects and beats/safely ties alternatives.
   QA scenarios: real Unity Play Mode only; failure — force non-integer zoom, mirrored asymmetric gear and foreground occlusion to expose artifacts. Evidence `<attemptDir>/task-19-seoul-grand-strategy-srpg/` with screenshots, action log and four reviews.
   Commit: Y | `feat(character): select verified SD rendering pipeline`
 

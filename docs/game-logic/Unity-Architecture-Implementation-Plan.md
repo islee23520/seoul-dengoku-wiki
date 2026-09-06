@@ -124,25 +124,23 @@ Foundation 구현은 아직 저장하지 않지만 향후 경계를 침범하지
 파일 변경 후 실제 Unity Editor에서 다음을 실행합니다.
 
 ```text
-UNICLI_PROJECT=Game unicli exec AssetDatabase.Import --path "Assets/Janseon" --json
-UNICLI_PROJECT=Game unicli exec AssetDatabase.Import --path "Assets/Tests" --json
-UNICLI_PROJECT=Game unicli exec Compile --json
-UNICLI_PROJECT=Game unicli exec TestRunner.RunEditMode --json
-UNICLI_PROJECT=Game unicli exec TestRunner.RunPlayMode --json
+unity run Game --editor-version 6000.7.0a5 -- -nographics -executeMethod Janseon.Foundation.Editor.FoundationProjectBuilder.BuildFoundationScene -logFile -
+unity test Game --editor-version 6000.7.0a5 --mode EditMode --report-format junit --output .omo/evidence/unity/editmode.xml --timeout 600
+unity test Game --editor-version 6000.7.0a5 --mode PlayMode --report-format junit --output .omo/evidence/unity/playmode.xml --timeout 600
 ```
 
 Play Mode에서 Bootstrap이 Foundation을 열고 App/child scope가 각각 하나인지 확인합니다. public flow API로 이미 Foundation인 상태의 요청이나 불법 trigger를 보내 typed rejection과 추가 load 0회를 관찰합니다.
 
 ## 시각 검증
 
-실제 Unity Editor Play Mode 화면을 `uloop screenshot`으로 캡처합니다. 다음 네 축을 독립 검토하며 하나라도 명시적 PASS가 아니면 완료가 아닙니다.
+실제 Unity Play Mode를 `-batchmode`로 실행하고 고정 카메라의 RenderTexture 또는 ScreenCapture 결과를 PNG와 JSON receipt로 기록합니다. 다음 네 축을 독립 검토하며 하나라도 명시적 PASS가 아니면 완료가 아닙니다.
 
 - COMPOSITION
 - SPRITE_FIDELITY
 - TYPOGRAPHY
 - PRODUCT_POLISH
 
-`uloop`이나 Editor 연결이 없으면 정적 검증으로 대체하지 않고 미검증으로 기록합니다.
+batchmode PlayMode 캡처나 receipt가 없으면 정적 검증으로 대체하지 않고 미검증으로 기록합니다. 대화형 Editor와 uLoop는 사용하지 않습니다.
 
 ## 최종 품질 게이트
 
