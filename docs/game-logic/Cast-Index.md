@@ -16,20 +16,18 @@
 
 | 항목 | 게시 상태 | 기록된 경로 · SHA · 브랜치 | 조각 확인 / 남은 일 |
 | --- | --- | --- | --- |
-AD
-AD
-| B001 | 게시 | `docs/game-logic/Story-Batch-B001.md` @ `8dd66cc72f11fc2d93b062ce33af6a491a84a7ab` (`docs/cast-backstories-houses-physical-ai`) | 이 worktree 본문 존재; Cast-State 이름 일치; 금지 토큰 0; Wiki 페이지 링크는 #28 |
-| B002 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B002.md` @ `b6397adb27eabe3503af3011ffda624bc884b33e` (`docs/cast-b002`) | 기록 SHA 본문 이름·금지토큰 통과; #14로 본문 미병합; 게시 링크 없음 |
-| B003 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B003.md` @ `23240675edcb508f327ef903afcb4a56a95d38d0` (`docs/cast-b003`) | 기록 SHA 본문 이름·금지토큰 통과; #14로 본문 미병합; 게시 링크 없음 |
-| B004 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B004.md` @ `c3f33a7839748ee1408d8113278f7522b5757441` (`docs/cast-b004`) | 기록 SHA 본문 이름·금지토큰 통과; #14로 본문 미병합; 게시 링크 없음 |
-| B005 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B005.md` @ `406d5e8922450519d847f856f667d2226bb8139f` (`docs/cast-b005`) | 기록 SHA 본문 이름·금지토큰 통과; #14로 본문 미병합; 게시 링크 없음 |
-| B006 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B006.md` @ `2da40af520c5498b3f8af910b9f2b44712cade97` (`docs/cast-b006`) | 기록 SHA 본문 이름·금지토큰 통과; #14로 본문 미병합; 게시 링크 없음 |
-| B007 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B007.md` @ `fb447e42d0010379bbb20d5ed71b85c5281cc906` (`docs/cast-b007`) | 기록 SHA 본문 이름·금지토큰 통과; #14로 본문 미병합; 게시 링크 없음 |
-| B008 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B008.md` @ `8e1a2d02c450e26c52463e7e08e0b96fb95e5aaa` (`docs/cast-b008`) | 기록 SHA 본문 이름·금지토큰 통과; #14로 본문 미병합; 게시 링크 없음 |
-| B009 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B009.md` @ `f9e9a9f74736e3181987307b41482b68aee54032` (`docs/cast-b009`) | 기록 SHA 본문 이름·금지토큰 통과; #14로 본문 미병합; 게시 링크 없음 |
-| B010 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B010.md` @ `702c75668c10d26cf05f3d679003239450af3f71` (`docs/cast-b010`) | 기록 SHA 본문 이름·금지토큰 통과; #14로 본문 미병합; 게시 링크 없음 |
-| B011 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B011.md` @ `1feb1084269ce3882a220959eea61b10eaf89ca9` (`docs/cast-b011`) | 기록 SHA 본문 이름·금지토큰 통과; #14로 본문 미병합; 게시 링크 없음 |
-| B012 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B012.md` @ `6e6f958e191969c4e4d2ff5427820249ef73e484` (`docs/cast-b012`) | 기록 SHA 본문 이름·금지토큰 통과; #14로 본문 미병합; 게시 링크 없음 |
+| B001 | 게시 | `docs/game-logic/Story-Batch-B001.md` @ `8dd66cc72f11fc2d93b062ce33af6a491a84a7ab` (`docs/cast-backstories-houses-physical-ai`) | 게시 확인. K-인물 소속·직위·촉발 사건 Cast-State/Core 일치. H01 한누리는 합성(총람 비등재). 금지 토큰 0 |
+| B002 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B002.md` @ `b6397adb27eabe3503af3011ffda624bc884b33e` (`docs/cast-b002`) | K-인물 Cast-State 이름·소속 일치. H02 서린은 합성(총람 비등재, 윤서린과 비동일). #14로 미게시 |
+| B003 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B003.md` @ `23240675edcb508f327ef903afcb4a56a95d38d0` (`docs/cast-b003`) | K-인물 Cast-State 이름·소속 일치. H03 이도는 합성(총람 비등재). #14로 미게시 |
+| B004 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B004.md` @ `c3f33a7839748ee1408d8113278f7522b5757441` (`docs/cast-b004`) | K-인물 Cast-State 이름·소속 일치. H04 강별은 합성(총람 비등재). #14로 미게시 |
+| B005 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B005.md` @ `406d5e8922450519d847f856f667d2226bb8139f` (`docs/cast-b005`) | K-인물 Cast-State 이름·소속 일치. H05 윤재는 합성(총람 비등재, 지윤재·탁윤재와 비동일). #14로 미게시 |
+| B006 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B006.md` @ `2da40af520c5498b3f8af910b9f2b44712cade97` (`docs/cast-b006`) | K-인물 Cast-State 이름·소속 일치. H06 박솔은 합성(총람 비등재). #14로 미게시 |
+| B007 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B007.md` @ `fb447e42d0010379bbb20d5ed71b85c5281cc906` (`docs/cast-b007`) | K-인물 Cast-State 이름·소속 일치. H07 정우람은 합성(총람 비등재). 본문이 Cast-Index.md#S07 앵커를 잘못 주장. #14로 미게시 |
+| B008 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B008.md` @ `8e1a2d02c450e26c52463e7e08e0b96fb95e5aaa` (`docs/cast-b008`) | K-인물 Cast-State 이름·소속 일치. H08 최다온은 합성(총람 비등재). #14로 미게시 |
+| B009 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B009.md` @ `f9e9a9f74736e3181987307b41482b68aee54032` (`docs/cast-b009`) | K-인물 Cast-State 이름·소속 일치. H09 조하람은 합성(총람 비등재). #14로 미게시 |
+| B010 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B010.md` @ `702c75668c10d26cf05f3d679003239450af3f71` (`docs/cast-b010`) | K-인물 Cast-State 이름·소속 일치. H10 윤새론은 합성(총람 비등재). #14로 미게시 |
+| B011 | 폐기(사유: H11 합성 김도하가 국가03 주민대표 김도하와 동명) | `docs/game-logic/Story-Batch-B011.md` @ `1feb1084269ce3882a220959eea61b10eaf89ca9` (`docs/cast-b011`) | 폐기 확인·사유 정정. 인간 김도하(마곡·방화 주민대표)와 H11 합성 인격이 같은 표시 이름. K-인물 소속은 일치하나 동명 충돌로 게시 불가 |
+| B012 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B012.md` @ `6e6f958e191969c4e4d2ff5427820249ef73e484` (`docs/cast-b012`) | K-인물 Cast-State 이름·소속 일치. H12 이채온은 합성(총람 비등재). #14로 미게시 |
 | G01 | 게시 | `docs/game-logic/Hostile-Group-G01.md` @ `a683b613d81d9c5a3098e01b26a9316e1c774cc0` (`docs/cast-g01-g06`) | Cast-State SoT 대조 완; 이슈 #16 큐레이션 승인 |
 | G02 | 게시 | `docs/game-logic/Hostile-Group-G02.md` @ `a683b613d81d9c5a3098e01b26a9316e1c774cc0` (`docs/cast-g01-g06`) | Cast-State SoT 대조 완; 이슈 #16 큐레이션 승인 |
 | G03 | 게시 | `docs/game-logic/Hostile-Group-G03.md` @ `a683b613d81d9c5a3098e01b26a9316e1c774cc0` (`docs/cast-g01-g06`) | Cast-State SoT 대조 완; 이슈 #16 큐레이션 승인 |
