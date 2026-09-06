@@ -77,6 +77,12 @@ Animo는 저장소에 넣지 않습니다. 상용 사용은 업스트림 조건(
 - 실제 크기, 피벗, 충돌체와 LOD 확인
 - 고정 아이소메트릭 카메라에서 가독성 캡처
 
+## UI 아트 임포트와 합성
+
+UI 아트는 원본 바이트를 `Texture2D.LoadImage`로 우회하지 않고 `AssetDatabase`가 가져온 텍스처를 씁니다. 임포터의 `maxTextureSize`를 포함한 설정을 존중하며, 그 한도가 실제로 적용됐는지를 검증합니다.
+
+합성은 source-over입니다. 알파 식은 `outA = srcA + dstA * (1 - srcA)`이며, 색은 premultiplied 알파로 섞습니다. `SetPixels`로 목적지를 통째로 덮어쓰지 않습니다. 완전 투명 소스가 목적지에 구멍을 뚫으면 계약 위반입니다.
+
 ## 에셋마다 남기는 기록
 
 출시 후보 에셋마다 입력 자료의 권리와 해시, 작업 순서, 시드, 모델과 노드 버전, 원본 출력, Blender 수정, Unity 설정과 사람의 승인 기록을 남깁니다. 필수 필드는 `tools/art/asset-manifest.schema.json`이고 `validate-manifest`가 검사합니다. 그래프 컴파일 결과와 분기 검사 코드도 함께 남깁니다. `blocked` 또는 `unresolved` 값이 하나라도 있으면 프로젝트 에셋으로 받아들이지 않습니다.

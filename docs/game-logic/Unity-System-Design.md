@@ -186,6 +186,8 @@ EditMode FSM 테스트:
 6. load 실패는 staging을 폐기하고 Faulted와 retry 정보를 남깁니다.
 7. Retry는 새 transition ID로 복구합니다.
 
+EditMode `GenreContractTests`는 장르 계약을 검증합니다. 카메라 yaw 45°·pitch 35.264°, 1.5m 타일, 2.5등신 실루엣이 계약 JSON과 Foundation 씬 카메라에 잠겨 있는지를 확인합니다.
+
 PlayMode 테스트와 수동 QA는 실제 Bootstrap에서 Foundation으로 진입하고 public flow 표면에서 허용 전환과 거부 결과를 관찰합니다. 테스트는 fixed sleep을 쓰지 않고 fake completion source나 실제 readiness signal을 먼저 구독합니다.
 
 ## 품질 게이트
