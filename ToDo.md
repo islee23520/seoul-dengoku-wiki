@@ -8,10 +8,10 @@
 
 ### 구현 증분
 
-- [ ] 1. 병렬 작업 트리를 보존하고 현재 모듈을 Unity POC 통합 코어 루프로 선택한다
-- [ ] 2. 2D/3D 생성 백엔드와 fail-closed 자산 BOM 계약을 확장한다
-- [ ] 3. NanoBanana/Gemini, Grok Imagine, OpenAI ImageGen 경로를 유료 대체 없이 검증한다
-- [ ] 4. 공식 Microsoft TRELLIS v1 호스트를 고정하고 수신 계약을 증명한다
+- [x] 1. 병렬 작업 트리를 보존하고 현재 모듈을 Unity POC 통합 코어 루프로 선택한다 (`b871045`)
+- [x] 2. 2D/3D 생성 백엔드와 fail-closed 자산 BOM 계약을 확장한다 (`5004699`)
+- [x] 3. NanoBanana/Gemini, Grok Imagine, OpenAI ImageGen 경로를 유료 대체 없이 검증한다 (`5004699` 백엔드 메타데이터 테스트, BOM `generation_backend` 실사용)
+- [x] 4. 공식 Microsoft TRELLIS v1 호스트를 고정하고 수신 계약을 증명한다 (`c5637b4` 호스트 핀·수신 계약 테스트; PR #2 격리 후 PR #4에서 명시적 옵션으로 복원)
 - [x] 5. 결정론적 Core ID, tick, command, RNG stream, ledger hash를 만든다
 - [x] 6. 영등포-신도림-구로 세 역 노선과 통행 규칙을 저작한다
 - [x] 7. 여섯 단계 캠페인 루프와 교섭·우회 비전투 경로를 구현한다
