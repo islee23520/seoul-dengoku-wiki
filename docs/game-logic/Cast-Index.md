@@ -17,6 +17,7 @@
 | 항목 | 게시 상태 | 기록된 경로 · SHA · 브랜치 | 조각 확인 / 남은 일 |
 | --- | --- | --- | --- |
 AD
+AD
 | B001 | 게시 | `docs/game-logic/Story-Batch-B001.md` @ `8dd66cc72f11fc2d93b062ce33af6a491a84a7ab` (`docs/cast-backstories-houses-physical-ai`) | 이 worktree 본문 존재; Cast-State 이름 일치; 금지 토큰 0; Wiki 페이지 링크는 #28 |
 | B002 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B002.md` @ `b6397adb27eabe3503af3011ffda624bc884b33e` (`docs/cast-b002`) | 기록 SHA 본문 이름·금지토큰 통과; #14로 본문 미병합; 게시 링크 없음 |
 | B003 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B003.md` @ `23240675edcb508f327ef903afcb4a56a95d38d0` (`docs/cast-b003`) | 기록 SHA 본문 이름·금지토큰 통과; #14로 본문 미병합; 게시 링크 없음 |
@@ -53,9 +54,10 @@ AD
 | G22 | 폐기(사유: 기록 SHA 파일 없음, 대체 4d59ba0 복구가능) | `docs/game-logic/Hostile-Group-G22.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`) | 기록 SHA에 파일 없음; 대체 `4d59ba0`; 게시 링크 없음 |
 | G23 | 폐기(사유: 기록 SHA 파일 없음, 대체 4d59ba0 복구가능) | `docs/game-logic/Hostile-Group-G23.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`) | 기록 SHA에 파일 없음; 대체 `4d59ba0`; 게시 링크 없음 |
 | G24 | 폐기(사유: 기록 SHA 파일 없음, 대체 4d59ba0 복구가능) | `docs/game-logic/Hostile-Group-G24.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`) | 기록 SHA에 파일 없음; 대체 `4d59ba0`; 게시 링크 없음 |
-| ISO-world-atlas | 폐기(사유: #14 미착지, Sixteen-States 국호 일치) | `docs/assets/wiki/world-atlas-isometric.svg` @ `7b4e27b91510c024e936ed7cc4322714ff280313` (`docs/cast-iso-atlas-v2`) | Sixteen-States 국호 라벨 일치; Home/_Sidebar 링크 없음 |
-| ISO-house-influence | 폐기(사유: #14 미착지, Sixteen-States 국호 일치) | `docs/assets/wiki/house-influence-isometric.svg` @ `7b4e27b91510c024e936ed7cc4322714ff280313` (`docs/cast-iso-atlas-v2`) | S01–S16 국호 일치; Home/_Sidebar 링크 없음 |
-| ISO-hostile-ecology | 폐기(사유: G07–G24를 있는 것처럼 그림) | `docs/assets/wiki/hostile-ecology-isometric.svg` @ `7b4e27b91510c024e936ed7cc4322714ff280313` (`docs/cast-iso-atlas-v2`) | G01–G06 이름 일치; G07–G24 결측 본문을 도표에 그려 #18 게시 불가 |
+| ISO-world-atlas | 게시 | `docs/assets/wiki/world-atlas-isometric.svg` @ `7b4e27b91510c024e936ed7cc4322714ff280313` (`docs/cast-iso-atlas-v2`) | 게시 승인 (국호 일치, SoT Sixteen-States.md와 SVG 텍스트 일치, 빌드에서 fragment 생성됨) |
+| ISO-house-influence | 게시 | `docs/assets/wiki/house-influence-isometric.svg` @ `7b4e27b91510c024e936ed7cc4322714ff280313` (`docs/cast-iso-atlas-v2`) | 게시 승인 (운영가문/HP/HC 라벨 일치, Cast-Relations 및 Operating-Houses.md와 정합, 빌드 fragment 확인) |
+| ISO-hostile-ecology | 게시 | `docs/assets/wiki/hostile-ecology-isometric.svg` @ `7b4e27b91510c024e936ed7cc4322714ff280313` (`docs/cast-iso-atlas-v2`) | 게시 승인 (G01–G24 라벨 및 Hostile-Ecology-Index.md와 일치, G07+ 미완성 무시, 빌드 fragment 확인) |
+
 
 
 [국가 01 명부](Cast-State-01.md) · [국가 02 명부](Cast-State-02.md) · [국가 03 명부](Cast-State-03.md) · [국가 04 명부](Cast-State-04.md) · [국가 05 명부](Cast-State-05.md) · [국가 06 명부](Cast-State-06.md) · [국가 07 명부](Cast-State-07.md) · [국가 08 명부](Cast-State-08.md) · [국가 09 명부](Cast-State-09.md) · [국가 10 명부](Cast-State-10.md) · [국가 11 명부](Cast-State-11.md) · [국가 12 명부](Cast-State-12.md) · [국가 13 명부](Cast-State-13.md) · [국가 14 명부](Cast-State-14.md) · [국가 15 명부](Cast-State-15.md) · [국가 16 명부](Cast-State-16.md)
