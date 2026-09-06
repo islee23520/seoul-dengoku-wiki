@@ -14,6 +14,7 @@ Repository-only ESM/Python tooling, not shipped with Unity; score 8, distinct bu
 | Unity architecture gate | `architecture/check-unity-architecture.mjs` | C# scans plus scene YAML/build order |
 | Delivery-policy consistency | `policy/check-repo-delivery-policy.mjs` | Approved plan, ADR-001, live origin |
 | Capture evidence validation | `unity/validate-ui-captures.mjs` | PNG content and source-bound receipts |
+| LFS hydration gate | `check-lfs-hydration.mjs` | Pointers in `Game/Assets` or `docs/assets` fail closed |
 | Art planning and provenance | `art/AGENTS.md` | Separate domain guide |
 
 ## CONVENTIONS
@@ -30,6 +31,8 @@ Repository-only ESM/Python tooling, not shipped with Unity; score 8, distinct bu
 Run from repository root; install tooling dependencies with `npm ci --prefix tools`.
 
 ```bash
+git lfs pull && git lfs checkout && node tools/check-lfs-hydration.mjs
+node tools/test-check-lfs-hydration.mjs
 npm --prefix tools test
 node tools/wiki/test-verify-cast.mjs
 node tools/wiki/test-strategy-formulas.mjs

@@ -18,3 +18,16 @@
 
 이슈를 열거나 작업을 추적할 때는 [`CONTRIBUTING.md`](CONTRIBUTING.md)를 따릅니다. 웹에서는 YAML 이슈 폼만 열고, 빈 이슈는 쓰지 않습니다.
 
+## 클론과 Git LFS
+
+이미지·메시·오디오는 Git LFS로 저장합니다. 클론 전에 `git lfs install`을 한 뒤 받습니다. 이 저장소의 로컬 설정에 `filter.lfs.smudge --skip`을 두지 않습니다. 포인터만 받아진 작업 사본에서는 Unity·아트 검사를 하지 않습니다.
+
+```bash
+git lfs install
+git clone https://github.com/islee23520/seoul-kenshi.git
+cd seoul-kenshi
+git lfs pull
+git lfs checkout
+node tools/check-lfs-hydration.mjs
+```
+
