@@ -161,14 +161,20 @@ test('Given extra M999 B099 G99 files When materializer --check Then nonzero nam
   assert.equal(ok.hashes['Monster-Batch-M999.md'], undefined);
 });
 
-test('Given copied confirmed Monster-Batch-M001 When materializer --check Then it is not unexpected', async () => {
+test('Given an altered projected confirmed Monster-Batch-M001 When materializer --check Then it is stale, not unexpected', async () => {
   const dir = await mkdtemp(join(tmpdir(), 'atlas-confirmed-monster-'));
   fixtures.push(dir);
   await materializeWorldAtlas({ atlasPath, outDir: dir, check: false });
-  await writeFile(join(dir, 'Monster-Batch-M001.md'), '# copied confirmed incomplete candidate\n');
-  const ok = await materializeWorldAtlas({ atlasPath, outDir: dir, check: true });
-  assert.ok(ok.hashes['Operating-Houses.md']);
-  assert.equal(ok.hashes['Monster-Batch-M001.md'], undefined);
+  await writeFile(join(dir, 'Monster-Batch-M001.md'), '# altered confirmed projection\n');
+  await assert.rejects(
+    () => materializeWorldAtlas({ atlasPath, outDir: dir, check: true }),
+    (err) => {
+      const message = String(err?.message ?? err);
+      assert.match(message, /stale Monster-Batch-M001\.md/);
+      assert.doesNotMatch(message, /unexpected Monster-Batch-M001\.md/);
+      return true;
+    },
+  );
 });
 
 test('Given live docs When materializer --check Then confirmed monster copies are not unexpected', async () => {
@@ -179,7 +185,8 @@ test('Given live docs When materializer --check Then confirmed monster copies ar
       check: true,
     });
     assert.ok(ok.hashes['Operating-Houses.md']);
-    assert.equal(ok.hashes['Monster-Batch-M001.md'], undefined);
+    assert.match(ok.hashes['Monster-Batch-M001.md'] ?? '', /^[0-9a-f]{64}$/);
+    assert.match(ok.hashes['Monster-Batch-M039.md'] ?? '', /^[0-9a-f]{64}$/);
   } catch (err) {
     const message = String(err?.message ?? err);
     assert.doesNotMatch(message, /unexpected Monster-Batch-M001\.md/);
@@ -231,7 +238,10 @@ test('Given seed-only G19 When projecting atlas Then Hostile-Group-G19.md is abs
 
 const CONFIRMED_STORY_BATCHES = Object.freeze([
   'B001', 'B002', 'B003', 'B004', 'B005', 'B006', 'B007', 'B008', 'B009', 'B010',
-  'B011', 'B012', 'B013', 'B014', 'B015', 'B016', 'B018', 'B019', 'B036',
+  'B011', 'B012', 'B013', 'B014', 'B015', 'B016', 'B018', 'B019', 'B021', 'B022',
+  'B023', 'B024', 'B025', 'B026', 'B027', 'B028', 'B029', 'B030', 'B031', 'B032',
+  'B033', 'B034', 'B035', 'B036', 'B037', 'B038', 'B039', 'B040', 'B041', 'B042',
+  'B043', 'B044', 'B045', 'B046',
 ]);
 
 for (const batchId of CONFIRMED_STORY_BATCHES) {
