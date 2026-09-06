@@ -11,6 +11,32 @@
       "type": "string",
       "pattern": "^[a-f0-9]{64}$"
     },
+    "look": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["palette", "materials", "references", "owner_verdict"],
+      "properties": {
+        "palette": { "type": "object" },
+        "materials": { "type": "object" },
+        "references": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["kind", "source"],
+            "properties": {
+              "kind": { "type": "string", "minLength": 1 },
+              "source": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        "owner_verdict": {
+          "type": "string",
+          "enum": ["pending", "accepted", "rejected"]
+        },
+        "owner_notes": { "type": "string" }
+      }
+    },
     "asset": {
       "type": "object",
       "additionalProperties": true,
@@ -37,7 +63,8 @@
         "unity_import_settings",
         "review_receipts",
         "status",
-        "created_at"
+        "created_at",
+        "look"
       ],
       "properties": {
         "schema_version": { "const": 1 },
@@ -98,7 +125,8 @@
           "type": "string",
           "enum": ["draft", "reviewed", "promoted", "blocked", "archived"]
         },
-        "created_at": { "type": "string" }
+        "created_at": { "type": "string" },
+        "look": { "$ref": "#/$defs/look" }
       }
     },
     "bom": {

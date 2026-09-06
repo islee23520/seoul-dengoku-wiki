@@ -59,5 +59,36 @@
   ],
   "status": "promoted",
   "created_at": "2026-09-04T10:16:04.000Z",
-  "license": "generated-on-subscription-for-janseon-poc"
+  "license": "generated-on-subscription-for-janseon-poc",
+  "look": {
+    "palette": {
+      "panel": "#141C2A",
+      "stroke_quiet": "#2A3548",
+      "accent_line": "#3D7EA6",
+      "void": "#0B111C"
+    },
+    "materials": {
+      "finish": "matte-steel-frame",
+      "roughness": 0.8,
+      "metalness": 0.2,
+      "slice": "9-slice",
+      "center": "empty"
+    },
+    "references": [
+      {
+        "kind": "design-token",
+        "source": "Design.md#2.1"
+      },
+      {
+        "kind": "primitive",
+        "source": "Design.md#4"
+      },
+      {
+        "kind": "owner-html",
+        "source": ".omo/evidence/issue8-23-visual-review.html"
+      }
+    ],
+    "owner_verdict": "pending",
+    "owner_notes": "Owner accepted title/icons/buttons from the HTML review. Panel frame was shown but not judged."
+  }
 }

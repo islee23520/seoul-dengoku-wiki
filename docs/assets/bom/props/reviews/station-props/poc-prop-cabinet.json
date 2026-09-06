@@ -46,5 +46,39 @@
     "grounded_bounds",
     "live_camera_texture_pixels",
     "unload_releases_texture"
-  ]
+  ],
+  "look": {
+    "palette": {
+      "steel": "#8A93A0",
+      "concrete": "#2A3548",
+      "hazard": "#C9A227",
+      "void": "#0B111C",
+      "accent_line": "#3D7EA6"
+    },
+    "materials": {
+      "finish": "scratched-station-metal",
+      "albedo": "basecolor",
+      "normal": "required",
+      "roughness": 0.65,
+      "metalness": 0.55,
+      "ao": "optional",
+      "scale_m": 1.5
+    },
+    "references": [
+      {
+        "kind": "visual-thesis",
+        "source": "Design.md#1"
+      },
+      {
+        "kind": "pipeline-material",
+        "source": "docs/game-logic/Asset-Pipeline.md"
+      },
+      {
+        "kind": "design-token",
+        "source": "Design.md#2.1"
+      }
+    ],
+    "owner_verdict": "pending",
+    "owner_notes": "Station props were not in the HTML review. Material channels required before any new prop generation."
+  }
 }

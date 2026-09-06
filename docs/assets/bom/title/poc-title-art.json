@@ -51,5 +51,42 @@
   ],
   "status": "promoted",
   "created_at": "2026-09-04T10:16:04.000Z",
-  "license": "generated-on-subscription-for-janseon-poc"
+  "license": "generated-on-subscription-for-janseon-poc",
+  "look": {
+    "palette": {
+      "void": "#0B111C",
+      "text_primary": "#E6EAF0",
+      "text_secondary": "#9AA6B2",
+      "accent_line": "#3D7EA6",
+      "signal_live": "#C9A227"
+    },
+    "materials": {
+      "finish": "matte-void",
+      "roughness": 0.85,
+      "metalness": 0.0,
+      "lighting": "flat-emergency-teal",
+      "geometry": "void-plus-route-fold",
+      "specular": "none"
+    },
+    "references": [
+      {
+        "kind": "visual-thesis",
+        "source": "Design.md#1"
+      },
+      {
+        "kind": "design-token",
+        "source": "Design.md#2.1"
+      },
+      {
+        "kind": "screen-contract",
+        "source": "Design.md#5.1"
+      },
+      {
+        "kind": "owner-html",
+        "source": ".omo/evidence/issue8-23-visual-review.html"
+      }
+    ],
+    "owner_verdict": "accepted",
+    "owner_notes": "2026-09-06 owner: title as shown in the HTML review is usable."
+  }
 }

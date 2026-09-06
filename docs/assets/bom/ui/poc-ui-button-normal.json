@@ -52,5 +52,39 @@
   ],
   "status": "promoted",
   "created_at": "2026-09-04T10:16:04.000Z",
-  "license": "generated-on-subscription-for-janseon-poc"
+  "license": "generated-on-subscription-for-janseon-poc",
+  "look": {
+    "palette": {
+      "face": "#141C2A",
+      "face_hover": "#1B2536",
+      "face_pressed": "#0E1622",
+      "stroke_quiet": "#2A3548",
+      "accent_line": "#3D7EA6",
+      "stroke_focus": "#C9A227"
+    },
+    "materials": {
+      "finish": "matte-steel",
+      "roughness": 0.75,
+      "metalness": 0.15,
+      "edge": "thin-teal",
+      "face": "blank-no-baked-text",
+      "filter": "point"
+    },
+    "references": [
+      {
+        "kind": "design-token",
+        "source": "Design.md#2.1"
+      },
+      {
+        "kind": "primitive",
+        "source": "Design.md#4"
+      },
+      {
+        "kind": "owner-html",
+        "source": ".omo/evidence/issue8-23-visual-review.html"
+      }
+    ],
+    "owner_verdict": "accepted",
+    "owner_notes": "2026-09-06 owner: blank button states in the HTML review may be used."
+  }
 }

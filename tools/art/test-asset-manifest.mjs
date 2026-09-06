@@ -40,6 +40,7 @@ const REQUIRED_FIELDS = [
   'review_receipts',
   'status',
   'created_at',
+  'look',
 ];
 
 function validManifest(overrides = {}) {
@@ -76,6 +77,12 @@ function validManifest(overrides = {}) {
     }],
     status: 'reviewed',
     created_at: FIXED_TIME,
+    look: {
+      palette: { void: '#0B111C', line: '#3D7EA6' },
+      materials: { finish: 'matte', roughness: 0.7 },
+      references: [{ kind: 'design-token', source: 'Design.md#2.1' }],
+      owner_verdict: 'pending',
+    },
     ...overrides,
   };
 }
@@ -122,6 +129,25 @@ for (const field of REQUIRED_FIELDS) {
     );
   });
 }
+
+test('validate-manifest rejects empty look references', async () => {
+  const filePath = await writeTemp('empty-look-refs.json', validManifest({
+    look: {
+      palette: { void: '#0B111C' },
+      materials: { finish: 'matte' },
+      references: [],
+      owner_verdict: 'pending',
+    },
+  }));
+  const completed = runValidate(filePath);
+  assert.equal(completed.status, 2, completed.stderr + completed.stdout);
+  const payload = JSON.parse(completed.stdout);
+  assert.equal(payload.ok, false);
+  assert.ok(
+    payload.errors.some((error) => error.code === 'look_malformed' && error.field === 'look.references'),
+    JSON.stringify(payload.errors),
+  );
+});
 
 test('validate-manifest rejects unknown backend', async () => {
   const filePath = await writeTemp('unknown-backend.json', validManifest({
