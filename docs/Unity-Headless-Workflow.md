@@ -113,6 +113,19 @@ GUI 작업은 아래와 같이 코드로 저작합니다.
 
 ## 4. Compile, test, visual evidence
 
+### 검증 전 LFS 사전 검사 (#34)
+
+모든 worktree에서 Node·아트 검사와 Unity compile/test/build를 시작하기 전에 저장소 루트에서 아래 단계를 실행합니다. 브랜치를 바꾸거나 새 에셋을 받은 뒤에도 다시 검사합니다.
+
+```bash
+git lfs checkout
+node tools/check-lfs-hydration.mjs
+```
+
+각 명령의 종료 코드가 0일 때만 다음 단계로 진행합니다. 사전 검사는 `Game/Assets`와 `docs/assets`를 재귀적으로 읽고, 파일 시작부터 LFS 포인터 형식인 입력을 찾습니다. 일반 문서의 문자열 언급은 포인터로 취급하지 않습니다. JSON 출력의 `filesScanned`는 읽은 파일 수, `pointers`는 미스머지 경로, `errors`는 필수 루트 누락·읽기 오류·지원하지 않는 파일 유형(심볼릭 링크 포함)입니다. 포인터나 오류가 하나라도 있으면 종료 코드 1로 검증을 차단합니다. 다른 작업 사본은 `node tools/check-lfs-hydration.mjs /absolute/path/to/worktree`로 검사할 수 있습니다.
+
+검사기는 다운로드나 에셋 변경을 하지 않습니다. `git lfs checkout`은 로컬 LFS 객체를 작업 파일로 펼치며, 객체가 없으면 먼저 `git lfs pull`로 받은 뒤 checkout과 사전 검사를 다시 실행합니다. `git lfs fsck` 성공만으로 작업 파일의 hydration을 보장하지 않습니다. 포인터 상태의 PNG로 발생한 sprite null·BOM 해시 불일치·UI kit 실패를 제품 결함으로 판정하지 않습니다. 이 명령은 `npm test`와 별개인 필수 준비 단계입니다.
+
 ### 비시각 검증
 
 - compile, EditMode, non-rendering PlayMode에는 `-nographics`를 사용할 수 있습니다.
@@ -174,6 +187,8 @@ Unity 관련 작업은 최소한 다음을 보고해야 완료입니다.
 ```bash
 git lfs pull
 git lfs fsck
+git lfs checkout
+node tools/check-lfs-hydration.mjs
 npm ci --prefix tools
 export UNITY_EDITOR=/Applications/Unity/Hub/Editor/6000.7.0a5/Unity.app/Contents/MacOS/Unity
 mkdir -p .omo/evidence/fresh-playmode
