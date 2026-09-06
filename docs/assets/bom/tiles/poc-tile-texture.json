@@ -50,5 +50,36 @@
   ],
   "status": "promoted",
   "created_at": "2026-09-04T10:16:04.000Z",
-  "license": "generated-on-subscription-for-janseon-poc"
+  "license": "generated-on-subscription-for-janseon-poc",
+  "look": {
+    "palette": {
+      "concrete": "#2A3548",
+      "grout": "#0B111C",
+      "wet_sheen": "#3D7EA6",
+      "hazard": "#C9A227"
+    },
+    "materials": {
+      "finish": "wet-concrete",
+      "roughness": 0.7,
+      "metalness": 0.0,
+      "repeat": "seamless-1.5m",
+      "normal_strength": 0.35
+    },
+    "references": [
+      {
+        "kind": "visual-thesis",
+        "source": "Design.md#1"
+      },
+      {
+        "kind": "pipeline-material",
+        "source": "docs/game-logic/Asset-Pipeline.md"
+      },
+      {
+        "kind": "owner-html",
+        "source": ".omo/evidence/issue8-23-visual-review.html"
+      }
+    ],
+    "owner_verdict": "pending",
+    "owner_notes": "Owner accepted title/icons/buttons from the HTML review. Floor/wall/platform tiles were shown but not judged."
+  }
 }

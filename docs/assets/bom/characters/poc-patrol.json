@@ -83,5 +83,32 @@
       "receipt": ".omo/evidence/unity-poc-core-loop/task-15-characters/trellis-attempt-2-blender.txt"
     }
   ],
-  "broken_mesh_retained": false
+  "broken_mesh_retained": false,
+  "look": {
+    "palette": {
+      "coat": "#2A2E33",
+      "accent": "#C6D64A",
+      "pants": "#1B1E22",
+      "skin": "#C4A484",
+      "hair": "#111111"
+    },
+    "materials": {
+      "finish": "rejected-placeholder",
+      "roughness": 1.0,
+      "metalness": 0.0,
+      "silhouette_heads": 2.5
+    },
+    "references": [
+      {
+        "kind": "character-direction",
+        "source": "docs/game-logic/Character-Art-Direction.md"
+      },
+      {
+        "kind": "owner-html",
+        "source": ".omo/evidence/issue8-23-visual-review.html"
+      }
+    ],
+    "owner_verdict": "rejected",
+    "owner_notes": "2026-09-06 owner: explorer/medic/patrol placeholders are unusable. Do not ship. Rebuild from material+reference lock."
+  }
 }

@@ -17,6 +17,38 @@ function isRecord(value) {
   return value !== null && typeof value === 'object' && !Array.isArray(value);
 }
 
+const OWNER_VERDICTS = new Set(['pending', 'accepted', 'rejected']);
+
+function validateLook(look) {
+  const errors = [];
+  if (!isRecord(look)) {
+    return [{ code: 'look_malformed', field: 'look' }];
+  }
+  for (const field of ['palette', 'materials', 'references', 'owner_verdict']) {
+    if (!Object.hasOwn(look, field)) {
+      errors.push({ code: 'missing_field', field: `look.${field}` });
+    }
+  }
+  if (Object.hasOwn(look, 'palette') && !isRecord(look.palette)) {
+    errors.push({ code: 'look_malformed', field: 'look.palette' });
+  }
+  if (Object.hasOwn(look, 'materials') && !isRecord(look.materials)) {
+    errors.push({ code: 'look_malformed', field: 'look.materials' });
+  }
+  if (Object.hasOwn(look, 'references')) {
+    if (!Array.isArray(look.references) || look.references.length === 0
+      || !look.references.every((item) => isRecord(item)
+        && typeof item.kind === 'string' && item.kind.trim().length > 0
+        && typeof item.source === 'string' && item.source.trim().length > 0)) {
+      errors.push({ code: 'look_malformed', field: 'look.references' });
+    }
+  }
+  if (Object.hasOwn(look, 'owner_verdict') && !OWNER_VERDICTS.has(look.owner_verdict)) {
+    errors.push({ code: 'unknown_owner_verdict', field: 'look.owner_verdict' });
+  }
+  return errors;
+}
+
 function validateAsset(asset, schema) {
   const errors = [];
   if (!isRecord(asset)) {
@@ -36,6 +68,9 @@ function validateAsset(asset, schema) {
   }
   if (Object.hasOwn(asset, 'status') && !STATUSES.has(asset.status)) {
     errors.push({ code: 'unknown_status', field: 'status' });
+  }
+  if (Object.hasOwn(asset, 'look')) {
+    errors.push(...validateLook(asset.look));
   }
   if (asset.status === 'reviewed' || asset.status === 'promoted') {
     if (asset.rights_status !== 'allowed') {

@@ -80,3 +80,5 @@ Animo는 저장소에 넣지 않습니다. 상용 사용은 업스트림 조건(
 ## 에셋마다 남기는 기록
 
 출시 후보 에셋마다 입력 자료의 권리와 해시, 작업 순서, 시드, 모델과 노드 버전, 원본 출력, Blender 수정, Unity 설정과 사람의 승인 기록을 남깁니다. 필수 필드는 `tools/art/asset-manifest.schema.json`이고 `validate-manifest`가 검사합니다. 그래프 컴파일 결과와 분기 검사 코드도 함께 남깁니다. `blocked` 또는 `unresolved` 값이 하나라도 있으면 프로젝트 에셋으로 받아들이지 않습니다.
+
+생성 전에 에셋마다 `look`을 적습니다. `palette`(색 값), `materials`(거칠기·금속·마감), `references`(근거 문서나 사진 경로)가 비어 있으면 검수·승격을 진행하지 않습니다. 프롬프트만으로 재질을 대신하지 않습니다. 소유자 판정은 `look.owner_verdict`의 `pending` · `accepted` · `rejected`입니다.

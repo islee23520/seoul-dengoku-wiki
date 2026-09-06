@@ -54,7 +54,34 @@
       "created_at": "2026-09-04T12:43:29.000Z",
       "fallback_reason": "official_trellis_blender_path_failed_twice",
       "representation": "four_dir_sprite",
-      "prefab": "Game/Assets/Janseon/Art/Characters/poc-explorer/PocExplorer.prefab"
+      "prefab": "Game/Assets/Janseon/Art/Characters/poc-explorer/PocExplorer.prefab",
+      "look": {
+        "palette": {
+          "coat": "#2F6F73",
+          "accent": "#C45C32",
+          "pants": "#2B3038",
+          "skin": "#D4A574",
+          "hair": "#1A1A1A"
+        },
+        "materials": {
+          "finish": "rejected-placeholder",
+          "roughness": 1.0,
+          "metalness": 0.0,
+          "silhouette_heads": 2.5
+        },
+        "references": [
+          {
+            "kind": "character-direction",
+            "source": "docs/game-logic/Character-Art-Direction.md"
+          },
+          {
+            "kind": "owner-html",
+            "source": ".omo/evidence/issue8-23-visual-review.html"
+          }
+        ],
+        "owner_verdict": "rejected",
+        "owner_notes": "2026-09-06 owner: explorer/medic/patrol placeholders are unusable. Do not ship. Rebuild from material+reference lock."
+      }
     },
     {
       "schema_version": 1,
@@ -109,7 +136,34 @@
       "created_at": "2026-09-04T12:43:29.000Z",
       "fallback_reason": "official_trellis_blender_path_failed_twice",
       "representation": "four_dir_sprite",
-      "prefab": "Game/Assets/Janseon/Art/Characters/poc-medic/PocMedic.prefab"
+      "prefab": "Game/Assets/Janseon/Art/Characters/poc-medic/PocMedic.prefab",
+      "look": {
+        "palette": {
+          "coat": "#6E8F6A",
+          "accent": "#E7D7B1",
+          "pants": "#4A5248",
+          "skin": "#C99572",
+          "hair": "#3B2A22"
+        },
+        "materials": {
+          "finish": "rejected-placeholder",
+          "roughness": 1.0,
+          "metalness": 0.0,
+          "silhouette_heads": 2.5
+        },
+        "references": [
+          {
+            "kind": "character-direction",
+            "source": "docs/game-logic/Character-Art-Direction.md"
+          },
+          {
+            "kind": "owner-html",
+            "source": ".omo/evidence/issue8-23-visual-review.html"
+          }
+        ],
+        "owner_verdict": "rejected",
+        "owner_notes": "2026-09-06 owner: explorer/medic/patrol placeholders are unusable. Do not ship. Rebuild from material+reference lock."
+      }
     },
     {
       "schema_version": 1,
@@ -164,7 +218,34 @@
       "created_at": "2026-09-04T12:43:29.000Z",
       "fallback_reason": "official_trellis_blender_path_failed_twice",
       "representation": "four_dir_sprite",
-      "prefab": "Game/Assets/Janseon/Art/Characters/poc-patrol/PocPatrol.prefab"
+      "prefab": "Game/Assets/Janseon/Art/Characters/poc-patrol/PocPatrol.prefab",
+      "look": {
+        "palette": {
+          "coat": "#2A2E33",
+          "accent": "#C6D64A",
+          "pants": "#1B1E22",
+          "skin": "#C4A484",
+          "hair": "#111111"
+        },
+        "materials": {
+          "finish": "rejected-placeholder",
+          "roughness": 1.0,
+          "metalness": 0.0,
+          "silhouette_heads": 2.5
+        },
+        "references": [
+          {
+            "kind": "character-direction",
+            "source": "docs/game-logic/Character-Art-Direction.md"
+          },
+          {
+            "kind": "owner-html",
+            "source": ".omo/evidence/issue8-23-visual-review.html"
+          }
+        ],
+        "owner_verdict": "rejected",
+        "owner_notes": "2026-09-06 owner: explorer/medic/patrol placeholders are unusable. Do not ship. Rebuild from material+reference lock."
+      }
     }
   ]
 }
