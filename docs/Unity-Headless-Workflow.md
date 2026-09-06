@@ -164,3 +164,45 @@ Unity 관련 작업은 최소한 다음을 보고해야 완료입니다.
 7. persistent worker를 시작했다면 종료 확인.
 
 위 증거가 없으면 정적 코드가 맞아 보여도 Unity 작업은 미검증 상태입니다.
+
+## 8. 신규 클론의 전체 PlayMode 준비 (#33)
+
+전체 PlayMode에는 runtime scene 검사뿐 아니라 **격리 후보의 import/render 검사**가 포함됩니다. `Library`를 처음 만드는 것만으로는 UI 후보와 파일럿이 생성되지 않으며, 캐릭터 캡처는 원본 후보 PNG의 해시도 기록합니다. 따라서 기존 작업 사본의 `.omo`를 복사하지 말고 아래 저장소 생성기와 Unity 임포터를 먼저 실행합니다.
+
+전제: Git LFS, Node.js 20 이상, Python 3와 Pillow/NumPy, Unity `6000.7.0a5`. 검증 환경의 Python 패키지는 Pillow `12.2.0`, NumPy `2.4.4`입니다. 필요한 경우 별도 Python 가상환경에서 `python -m pip install Pillow==12.2.0 numpy==2.4.4`로 준비합니다. 아래는 새 클론 루트에서 실행하며, `UNITY_EDITOR`는 실제 Editor 실행 파일의 절대 경로입니다. 모든 Unity 명령은 전용 background worker에서 순차 실행합니다.
+
+```bash
+git lfs pull
+git lfs fsck
+npm ci --prefix tools
+export UNITY_EDITOR=/Applications/Unity/Hub/Editor/6000.7.0a5/Unity.app/Contents/MacOS/Unity
+mkdir -p .omo/evidence/fresh-playmode
+
+python3 tools/art/build-poc-ui-candidates.py \
+  --output-dir .omo/evidence/gateway-ui-candidates/candidate-v1
+python3 tools/art/build-poc-character-sprites.py \
+  --output-dir .omo/evidence/gateway-character-candidates/candidate-v2
+python3 tools/art/build-poc-character-sprites.py --explorer-pilot \
+  --output-dir .omo/evidence/gateway-character-candidates/explorer-pilot-v3
+
+"$UNITY_EDITOR" -batchmode -quit -projectPath "$PWD/Game" \
+  -executeMethod Janseon.Art.Editor.UiCandidateShowcase.Import \
+  -logFile "$PWD/.omo/evidence/fresh-playmode/ui-import.log"
+"$UNITY_EDITOR" -batchmode -quit -projectPath "$PWD/Game" \
+  -executeMethod Janseon.Art.Editor.CharacterCandidateBuilder.Import \
+  -logFile "$PWD/.omo/evidence/fresh-playmode/character-import.log"
+"$UNITY_EDITOR" -batchmode -quit -projectPath "$PWD/Game" \
+  -executeMethod Janseon.Art.Editor.CharacterCandidatePilotCapture.Import \
+  -logFile "$PWD/.omo/evidence/fresh-playmode/pilot-import.log"
+
+"$UNITY_EDITOR" -batchmode -projectPath "$PWD/Game" \
+  -runTests -testPlatform PlayMode \
+  -testResults "$PWD/.omo/evidence/fresh-playmode/playmode.xml" \
+  -logFile "$PWD/.omo/evidence/fresh-playmode/playmode.log"
+node --test tools/art/test-*.mjs
+python3 -m unittest discover -s tools/art -p 'test_*.py'
+```
+
+각 명령의 종료 코드가 0일 때만 다음 명령으로 진행합니다. PlayMode는 `-quit`이나 `-nographics`를 붙이지 않습니다. NUnit XML의 실패·skip 수와 실제 후보 capture receipt를 함께 확인합니다. UI는 `gateway-ui-candidates/unity-render`, 캐릭터 276프레임은 `gateway-character-candidates/playmode-v2`, 파일럿 8프레임은 `gateway-character-candidates/pilot-capture` 아래에 기록됩니다. XML/log/PNG 및 receipt를 실행별 디렉터리에 보존하고, 실행한 Git HEAD와 dirty-source fingerprint에 연결합니다.
+
+생성기는 이미 존재하는 출력 디렉터리를 거부합니다. 재검증은 별도 새 클론에서 수행하여 이전 실패 증거와 후보 입력을 덮어쓰지 않습니다. 임포터가 만드는 `ArtCandidates` 변경은 검증용이며 runtime 승격 커밋에 포함하지 않습니다. 생성 manifest의 draft/unknown-rights/빈 review 상태는 그대로 유지합니다. 이 절차의 통과는 입력 재현성과 import/render 계약의 증명이며, #8의 타이틀 구도 승인이나 캐릭터 전체 프레임의 시각 품질 승인을 대신하지 않습니다.
