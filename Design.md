@@ -1,7 +1,7 @@
 # 《잔선: 서울》 Design.md — POC UI 시각 계약
 
-상태: Todo 11 고정 계약. 구현·캡처·검수는 이 문서를 기준으로 한다.
-대상 해상도: `1280×720`, `1920×1080` (16:9). UI Toolkit only. TMP 금지.
+상태: 2026-09-06 개정 — UI 프레임워크를 uGUI로 고정(소유자 결정, [Intent](Intent.md) 참조). 구현·캡처·검수는 이 문서를 기준으로 한다.
+대상 해상도: `1280×720`, `1920×1080` (16:9). uGUI(Canvas) 전용. 텍스트는 TextMeshPro(TMP).
 
 ---
 
@@ -21,7 +21,7 @@
 
 ## 2. 디자인 토큰
 
-### 2.1 색 (sRGB hex, USS 변수명)
+### 2.1 색 (sRGB hex, uGUI 스타일 토큰)
 
 | 토큰 | 값 | 용도 |
 |---|---|---|
@@ -128,11 +128,11 @@
 - 필수 이름: `main-title-root`, `main-title-mark`, `main-title-start`.
 - Start는 기존 공개 FSM `ApplicationFlowCoordinator.OpenFoundationAsync`만 호출. 씬 직접 로드 금지.
 - 카피: 제품명 《잔선: 서울》, 한 줄 피치(짧은 보조). 테스트는 문구를 고정하지 않고 **요소 존재·액션·FSM**만 검증.
-- 배경: void + 희미한 노선 폴드(USS 기하, 이미지 텍스처 의존 없음).
+- 배경: void + 희미한 노선 폴드(uGUI 기하, 이미지 텍스처 의존 없음).
 
 ### 5.2 Gameplay document (`gameplay-root`) — Foundation lease
 
-한 active lease당 **UIDocument 하나**. 패널 visibility로 단계 표현.
+한 active lease당 **Canvas 하나**. 패널 활성 전환으로 단계 표현.
 
 | 패널 | 이름 | 스냅샷 소스 |
 |---|---|---|
@@ -172,15 +172,15 @@
 
 - 허용: 120–180ms ease-out 페이드/슬라이드(패널 전환), 포커스 링 즉시.
 - 금지: 루프 네온 펄스, 카메라 흔들림, 전투 이펙트 파티클(Todo 13+).
-- 결정론 캡처 중에는 모션 0 (USS transition 비활성 클래스 `jk-motion-off`).
+- 결정론 캡처 중에는 모션 0 (uGUI 애니메이션 비활성 상태 `jk-motion-off`).
 
 ---
 
 ## 8. 에셋 규칙
 
-- UI 기하·색은 USS 토큰. 래스터 필수 시에만 승격 텍스처, BOM fail-closed.
+- UI 기하·색은 2절 토큰. 래스터 필수 시에만 승격 텍스처, BOM fail-closed.
 - 프로그래머 placeholder 텍스처·임시 이모지 폰트 금지.
-- UXML/USS 경로는 `Assets/Janseon/Foundation/UI/` 고정. 누락 시 lease readiness 실패.
+- 프리팹·스타일 경로는 `Assets/Janseon/Foundation/UI/` 고정. 누락 시 lease readiness 실패.
 - 씬 YAML 손편집 금지. Builder/`AssetDatabase`만.
 
 ---

@@ -7,7 +7,7 @@
 ## 현재 완료 (POC 슬라이스)
 
 - Foundation 기반: Bootstrap App scope/FSM, 배타적 화면 lease, VContainer 정적 계약, 아키텍처 게이트
-- 코어 루프(ToDo 5–12): 결정론 Core ID·tick·명령·RNG 스트림·원장 해시, 영등포–신도림–구로 세 역 노선, 교섭·우회를 포함한 여섯 단계 캠페인, 동일 격자 SRPG 전투, 정확히 한 번 정산, MainTitle 포함 UI Toolkit 화면 — batchmode PlayMode로 동일 seed 재현·중복 정산 거부 검증
+- 코어 루프(ToDo 5–12): 결정론 Core ID·tick·명령·RNG 스트림·원장 해시, 영등포–신도림–구로 세 역 노선, 교섭·우회를 포함한 여섯 단계 캠페인, 동일 격자 SRPG 전투, 정확히 한 번 정산, MainTitle 포함 UI Toolkit 화면 — batchmode PlayMode로 동일 seed 재현·중복 정산 거부 검증 (※ 2026-09-06 UI 계약이 uGUI로 개정됨([Intent](Intent.md)) — 기존 UI Toolkit 화면은 마이그레이션 대상)
 - 생성 아트 기반: 역사 소품 6종 source-bound BOM 승격·런타임 연결, 3역할(탐사원·의무원·순찰대) 캐릭터 승격, UI kit 9종 후보(시각 수용 대기), TRELLIS v1 옵션 호스트 계약 고정
 - 세계관·인물 원본: 국가별 명부(Cast-State-01–16, 412인)와 관계 원장, 적대 집단 G01–G24 게시, 서사 B001 배치, ISO 세계·가문·적대 도표, 몬스터 배치 원장(38/39), World-Narrative-Atlas 통합
 - 공개 Wiki: docs/game-logic 원본의 자동 생성 미러가 원본 커밋과 동기(81페이지, 미게시 조각은 표로만 추적)
@@ -15,11 +15,12 @@
 
 ## 다음 검증 단계 (순서 의존)
 
-1. 시각 수용 — 타이틀(#8)과 UI kit·아이콘·타일(#23)의 4축 독립 재심사와 소유자 육안 승인. COMPOSITION·PRODUCT_POLISH raw FAIL은 면제 없음
-2. 슬롯 연결(ToDo 16, #26) — 승격된 에셋만 UI/캐릭터 런타임 슬롯에 연결하고 임시 비주얼 제거
-3. 최종 수용 게이트(ToDo 17, #27) — 아키텍처 게이트, batchmode PlayMode 전 경로, 4축 시각 PASS, BOM fail-closed, 동일 Unity revision macOS Development player smoke, 임시 리소스 cleanup receipt를 한 번에 통과
-4. 서사·협업 후속(#41) — 외부 기여자와의 서사 디렉션 역할·경계 합의
-5. 다음 모듈 선택 — 전체 16국·412인 캠페인, 저장·외교·공성 등은 POC 완료 후 별도 모듈로만 착수
+1. 시각 수용 — 타이틀(#8)과 UI kit·아이콘·타일(#23)의 4축 독립 재심사와 소유자 육안 승인. COMPOSITION·PRODUCT_POLISH raw FAIL은 면제 없음. 캐릭터는 기존 placeholder가 폐기됐으므로 TOS식 SD 재작업(#56)이 선행된다
+2. UI 전환 — UI Toolkit 구현을 uGUI로 마이그레이션(#55, Design.md 2026-09-06 개정). 안정 요소 이름·씬 흐름·결정론 계약 유지
+3. 슬롯 연결(ToDo 16, #26) — 승격된 에셋만 uGUI 런타임 슬롯에 연결하고 임시 비주얼 제거
+4. 최종 수용 게이트(ToDo 17, #27) — 아키텍처 게이트, batchmode PlayMode 전 경로, 4축 시각 PASS, BOM fail-closed, 동일 Unity revision macOS Development player smoke, 임시 리소스 cleanup receipt를 한 번에 통과
+5. 서사·협업 후속(#41) — 외부 기여자와의 서사 디렉션 역할·경계 합의
+6. 다음 모듈 선택 — 전체 16국·412인 캠페인, 저장·외교·공성 등은 POC 완료 후 별도 모듈로만 착수
 
 각 단계는 실패하면 다음 단계로 넘어가지 않는다.
 
