@@ -1,0 +1,160 @@
+runtime asset provenance gate failed with 24 violation(s)
+- generated_asset_not_valid_promoted: Game/Assets/Scenes/Foundation.unity -> Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.prefab
+- generated_asset_not_valid_promoted: Game/Assets/Scenes/Foundation.unity -> Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.prefab
+- generated_asset_not_valid_promoted: Game/Assets/Scenes/Foundation.unity -> Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.prefab
+- generated_asset_not_valid_promoted: Game/Assets/Scenes/Foundation.unity -> Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.prefab
+- generated_asset_not_valid_promoted: Game/Assets/Scenes/Foundation.unity -> Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.prefab
+- generated_asset_not_valid_promoted: Game/Assets/Scenes/Foundation.unity -> Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.prefab
+- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.fbx
+- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.mat
+- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.fbx
+- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.mat
+- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.fbx
+- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.mat
+- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.fbx
+- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.mat
+- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.fbx
+- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.mat
+- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.fbx
+- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.mat
+- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.mat -> Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate_basecolor.png
+- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.mat -> Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench_basecolor.png
+- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.mat -> Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate_basecolor.png
+- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.mat -> Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter_basecolor.png
+- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.mat -> Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet_basecolor.png
+- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.mat -> Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar_basecolor.png
+✔ classifyBackend: disabled or unknown TRELLIS alternatives fail closed (0.42725ms)
+✔ classifyBackend: Tripo fails with tripo_agent_forbidden regardless of flags (0.053834ms)
+✔ classifyBackend: MeshyGen fails with meshygen_unverified (0.038416ms)
+✔ classifyBackend: allowlisted 2D backends pass classification (0.030375ms)
+✔ classifyBackend: retained TRELLIS remains eligible option (0.057416ms)
+✔ evaluatePromotedAsset: synthetic unbound review receipt is rejected (0.338708ms)
+✔ evaluatePromotedAsset: unbound TRELLIS BOM row is not runtime-valid (0.140667ms)
+✔ evaluatePromotedAsset: source-bound bytes and review pass, mutations fail (2.668458ms)
+✔ evaluatePromotedAsset: missing hash fails (0.094375ms)
+✔ isQuarantinePath detects ArtSource and poc-prop paths (0.095292ms)
+✔ extractGuids skips built-in zero guids (0.350333ms)
+✖ production worktree audit: playable slice has no C/D/E runtime refs (64.364916ms)
+✖ gate CLI exits 0 on production worktree (86.541208ms)
+✔ RED mutation: injecting TRELLIS prefab guid into MainTitle scene fails the gate (18.112333ms)
+✔ RED mutation: build settings listing StationPropValidation fails (12.65175ms)
+✔ runtime slot: valid source-bound title-art unblocks and classifies A (14.243042ms)
+✔ runtime slot: valid source-bound ui-icon-set unblocks and classifies A (13.549625ms)
+✔ runtime slot: valid source-bound history-texture unblocks and classifies A (13.934875ms)
+✔ runtime slot: valid source-bound character-explorer unblocks and classifies A (29.44175ms)
+✔ runtime slot: valid source-bound character-medic unblocks and classifies A (27.994667ms)
+✔ runtime slot: valid source-bound character-patrol unblocks and classifies A (28.116625ms)
+✔ runtime slot: rights fails closed (13.221416ms)
+✔ runtime slot: output fails closed (12.1655ms)
+✔ runtime slot: review fails closed (13.5425ms)
+✔ runtime slot: raw fails closed (13.3785ms)
+✔ runtime slot: binding fails closed (14.929833ms)
+✔ runtime slot: empty-reviews fails closed (13.798459ms)
+✔ runtime slot: candidate fails closed (14.711292ms)
+✔ runtime slot: missing-key fails closed (13.590542ms)
+✔ runtime slot: unbound-secondary fails closed (14.519166ms)
+✔ runtime slot: candidate GUID leak from scene fails (12.845ms)
+✔ runtime slot: candidate GUID leak through catalog fails (14.454167ms)
+✔ runtime slot: catalog cannot claim a blocked slot is bound (13.453667ms)
+✔ character lineage accepts only reviewed sprite GUID substitution (76.58225ms)
+ℹ tests 34
+ℹ suites 0
+ℹ pass 32
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 593.393791
+
+✖ failing tests:
+
+test at tools/art/test-runtime-asset-provenance.mjs:163:1
+✖ production worktree audit: playable slice has no C/D/E runtime refs (64.364916ms)
+  AssertionError [ERR_ASSERTION]: {"code":"generated_asset_not_valid_promoted","path":"Game/Assets/Scenes/Foundation.unity","target":"Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.prefab","class":"E_unknown"}
+  {"code":"generated_asset_not_valid_promoted","path":"Game/Assets/Scenes/Foundation.unity","target":"Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.prefab","class":"E_unknown"}
+  {"code":"generated_asset_not_valid_promoted","path":"Game/Assets/Scenes/Foundation.unity","target":"Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.prefab","class":"E_unknown"}
+  {"code":"generated_asset_not_valid_promoted","path":"Game/Assets/Scenes/Foundation.unity","target":"Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.prefab","class":"E_unknown"}
+  {"code":"generated_asset_not_valid_promoted","path":"Game/Assets/Scenes/Foundation.unity","target":"Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.prefab","class":"E_unknown"}
+  {"code":"generated_asset_not_valid_promoted","path":"Game/Assets/Scenes/Foundation.unity","target":"Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.prefab","class":"E_unknown"}
+  {"code":"generated_asset_not_valid_promoted","path":"Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.prefab","target":"Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.fbx","class":"E_unknown"}
+  {"code":"generated_asset_not_valid_promoted","path":"Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.prefab","target":"Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.mat","class":"E_unknown"}
+  {"code":"generated_asset_not_valid_promoted","path":"Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.prefab","target":"Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.fbx","class":"E_unknown"}
+  {"code":"generated_asset_not_valid_promoted","path":"Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.prefab","target":"Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.mat","class":"E_unknown"}
+  {"code":"generated_asset_not_valid_promoted","path":"Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.prefab","target":"Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.fbx","class":"E_unknown"}
+  {"code":"generated_asset_not_valid_promoted","path":"Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.prefab","target":"Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.mat","class":"E_unknown"}
+  {"code":"generated_asset_not_valid_promoted","path":"Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.prefab","target":"Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.fbx","class":"E_unknown"}
+  {"code":"generated_asset_not_valid_promoted","path":"Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.prefab","target":"Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.mat","class":"E_unknown"}
+  {"code":"generated_asset_not_valid_promoted","path":"Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.prefab","target":"Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.fbx","class":"E_unknown"}
+  {"code":"generated_asset_not_valid_promoted","path":"Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.prefab","target":"Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.mat","class":"E_unknown"}
+  {"code":"generated_asset_not_valid_promoted","path":"Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.prefab","target":"Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.fbx","class":"E_unknown"}
+  {"code":"generated_asset_not_valid_promoted","path":"Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.prefab","target":"Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.mat","class":"E_unknown"}
+  {"code":"generated_asset_not_valid_promoted","path":"Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.mat","target":"Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate_basecolor.png","class":"E_unknown"}
+  {"code":"generated_asset_not_valid_promoted","path":"Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.mat","target":"Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench_basecolor.png","class":"E_unknown"}
+  {"code":"generated_asset_not_valid_promoted","path":"Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.mat","target":"Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate_basecolor.png","class":"E_unknown"}
+  {"code":"generated_asset_not_valid_promoted","path":"Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.mat","target":"Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter_basecolor.png","class":"E_unknown"}
+  {"code":"generated_asset_not_valid_promoted","path":"Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.mat","target":"Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet_basecolor.png","class":"E_unknown"}
+  {"code":"generated_asset_not_valid_promoted","path":"Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.mat","target":"Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar_basecolor.png","class":"E_unknown"}
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-art-todo15/tools/art/test-runtime-asset-provenance.mjs:165:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tools/art/test-runtime-asset-provenance.mjs:176:1
+✖ gate CLI exits 0 on production worktree (86.541208ms)
+  Error: Command failed: /opt/homebrew/Cellar/node/26.4.0/bin/node /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-art-todo15/tools/art/check-runtime-asset-provenance.mjs
+  runtime asset provenance gate failed with 24 violation(s)
+  - generated_asset_not_valid_promoted: Game/Assets/Scenes/Foundation.unity -> Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.prefab
+  - generated_asset_not_valid_promoted: Game/Assets/Scenes/Foundation.unity -> Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.prefab
+  - generated_asset_not_valid_promoted: Game/Assets/Scenes/Foundation.unity -> Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.prefab
+  - generated_asset_not_valid_promoted: Game/Assets/Scenes/Foundation.unity -> Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.prefab
+  - generated_asset_not_valid_promoted: Game/Assets/Scenes/Foundation.unity -> Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.prefab
+  - generated_asset_not_valid_promoted: Game/Assets/Scenes/Foundation.unity -> Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.prefab
+  - generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.fbx
+  - generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.mat
+  - generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.fbx
+  - generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.mat
+  - generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.fbx
+  - generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.mat
+  - generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.fbx
+  - generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.mat
+  - generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.fbx
+  - generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.mat
+  - generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.fbx
+  - generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.mat
+  - generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.mat -> Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate_basecolor.png
+  - generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.mat -> Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench_basecolor.png
+  - generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.mat -> Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate_basecolor.png
+  - generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.mat -> Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter_basecolor.png
+  - generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.mat -> Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet_basecolor.png
+  - generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.mat -> Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar_basecolor.png
+  
+      at genericNodeError (node:internal/errors:998:15)
+      at wrappedFn (node:internal/errors:543:14)
+      at checkExecSyncError (node:child_process:926:11)
+      at execFileSync (node:child_process:962:15)
+      at TestContext.<anonymous> (file:///Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-art-todo15/tools/art/test-runtime-asset-provenance.mjs:177:15)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12) {
+    status: 1,
+    signal: null,
+    output: [ null, '', 'runtime asset provenance gate failed with 24 violation(s)\n- generated_asset_not_valid_promoted: Game/Assets/Scenes/Foundation.unity -> Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.prefab\n- generated_asset_not_valid_promoted: Game/Assets/Scenes/Foundation.unity -> Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.prefab\n- generated_asset_not_valid_promoted: Game/Assets/Scenes/Foundation.unity -> Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.prefab\n- generated_asset_not_valid_promoted: Game/Assets/Scenes/Foundation.unity -> Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.prefab\n- generated_asset_not_valid_promoted: Game/Assets/Scenes/Foundation.unity -> Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.prefab\n- generated_asset_not_valid_promoted: Game/Assets/Scenes/Foundation.unity -> Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.prefab\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.fbx\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.mat\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.fbx\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.mat\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.fbx\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.mat\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.fbx\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.mat\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.fbx\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.mat\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.fbx\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.mat\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.mat -> Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate_basecolor.png\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.mat -> Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench_basecolor.png\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.mat -> Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate_basecolor.png\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.mat -> Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter_basecolor.png\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.mat -> Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet_basecolor.png\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.mat -> Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar_basecolor.png\n' ],
+    pid: 78431,
+    stdout: '',
+    stderr: 'runtime asset provenance gate failed with 24 violation(s)\n- generated_asset_not_valid_promoted: Game/Assets/Scenes/Foundation.unity -> Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.prefab\n- generated_asset_not_valid_promoted: Game/Assets/Scenes/Foundation.unity -> Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.prefab\n- generated_asset_not_valid_promoted: Game/Assets/Scenes/Foundation.unity -> Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.prefab\n- generated_asset_not_valid_promoted: Game/Assets/Scenes/Foundation.unity -> Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.prefab\n- generated_asset_not_valid_promoted: Game/Assets/Scenes/Foundation.unity -> Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.prefab\n- generated_asset_not_valid_promoted: Game/Assets/Scenes/Foundation.unity -> Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.prefab\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.fbx\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.mat\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.fbx\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.mat\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.fbx\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.mat\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.fbx\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.mat\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.fbx\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.mat\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.fbx\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.prefab -> Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.mat\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.mat -> Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate_basecolor.png\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.mat -> Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench_basecolor.png\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.mat -> Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate_basecolor.png\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.mat -> Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter_basecolor.png\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.mat -> Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet_basecolor.png\n- generated_asset_not_valid_promoted: Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.mat -> Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar_basecolor.png\n'
+  }
