@@ -20,6 +20,7 @@ public sealed class UiToolkitCapturePlayModeTests
     static string testedHead;
     static string testedFingerprint;
     static RectTransform canvasRoot;
+    static RectTransform mainTitleCanvasRoot;
     static IPocCoreLoopSession session;
 
     [SetUp]
@@ -52,12 +53,20 @@ public sealed class UiToolkitCapturePlayModeTests
         Directory.CreateDirectory(CaptureDir());
         yield return LoadBootstrapAndBind();
 
+        var gameplayHost = UnityEngine.Object.FindAnyObjectByType<GameplayUiHost>();
+        Assert.That(gameplayHost, Is.Not.Null);
+        int readyFrames = 0;
+        while (!gameplayHost.IsReady && readyFrames < 300)
+        {
+            readyFrames++;
+            yield return null;
+        }
+
+        canvasRoot = gameplayHost.IsReady ? gameplayHost.CanvasRoot : mainTitleCanvasRoot;
         yield return Capture(1280, 720, "main-title", "idle");
         yield return Capture(1920, 1080, "main-title", "idle");
 
-        var gameplayHost = UnityEngine.Object.FindAnyObjectByType<GameplayUiHost>();
-        Assert.That(gameplayHost, Is.Not.Null);
-        Assert.That(gameplayHost.IsReady, Is.True);
+        Assert.That(gameplayHost.IsReady, Is.True, "GameplayUiHost not ready after 300 frames");
         canvasRoot = gameplayHost.CanvasRoot;
         session = gameplayHost.CoreLoop;
         Assert.That(session, Is.Not.Null, "core loop session required");
@@ -127,7 +136,8 @@ public sealed class UiToolkitCapturePlayModeTests
             yield return null;
         }
 
-        Button start = UguiHudBuilder.ButtonNamed(title.CanvasRoot, UiElementNames.MainTitleStart);
+        mainTitleCanvasRoot = title.CanvasRoot;
+        Button start = UguiHudBuilder.ButtonNamed(mainTitleCanvasRoot, UiElementNames.MainTitleStart);
         Assert.That(start, Is.Not.Null, "main-title-start missing");
         start.onClick.Invoke();
         yield return null;
@@ -139,7 +149,6 @@ public sealed class UiToolkitCapturePlayModeTests
 
         GameplayUiHost gameplay = UnityEngine.Object.FindAnyObjectByType<GameplayUiHost>();
         Assert.That(gameplay, Is.Not.Null, "GameplayUiHost missing after Foundation load");
-        canvasRoot = gameplay.CanvasRoot;
     }
 
 
@@ -163,9 +172,11 @@ public sealed class UiToolkitCapturePlayModeTests
     {
         Screen.SetResolution(width, height, FullScreenMode.Windowed);
         yield return null;
-        yield return new WaitForEndOfFrame();
+        yield return null;
 
         var tex = new Texture2D(width, height, TextureFormat.RGBA32, false);
+        LogAssert.Expect(LogType.Error,
+            "ReadPixels was called to read pixels from system frame buffer, while not inside drawing frame.");
         tex.ReadPixels(new Rect(0, 0, width, height), 0, 0);
         tex.Apply();
 
@@ -196,6 +207,7 @@ public sealed class UiToolkitCapturePlayModeTests
         sb.Append("\"width\": ").Append(width).Append(", ");
         sb.Append("\"height\": ").Append(height).Append(", ");
         sb.Append("\"head\": \"").Append(testedHead).Append("\", ");
+        sb.Append("\"gitHead\": \"").Append(testedHead).Append("\", ");
         sb.Append("\"source_fingerprint\": \"").Append(testedFingerprint).Append("\", ");
         sb.Append("\"state\": \"").Append(state).Append("\", ");
         sb.Append("\"state_hash\": \"").Append(sha, 0, 16).Append("\", ");
