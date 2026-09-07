@@ -53,3 +53,24 @@
 - 소유자 기억의 실체 확인: `Art/Title/`에 **2D 레이어식 승강장 타이틀 아트 스위트**가 provenance 완비로 존재 — layer-platform.png(신설동역 간판·'나가는 곳 Way Out'·5인 아이돌 실루엣·민트 시그널, gpt-image-2, 2026-08-22, sha256 기록), layer-train.png('LAST' 막차), layer-viaduct-bg/fg, layer-sky, 합성본 title-world-still(남산타워·서울 스카이라인). 프롬프트·모델·해시가 kpop.gameplay-sprite.v1 스키마로 등재.
 - 판정 갱신: 재활용 후보는 (1) Hunter02 파이프라인·리그(기존 판정 유지) + (2) **2D 지하철 타이틀 레이어 스위트** — seoul 타이틀 아트의 스타일 앵커/대체 후보. 단 주의: 플랫폼 레이어와 합성본에는 makcha 캐스트(아이돌 5인) 실루엣이 베이크돼 있어 그대로 이관하면 makcha 아이덴티티가 수입됨(캐릭터 제거·재구성 작업 필요), 실제 서울 역명(신설동·동묘앞·제기동)은 seoul의 가상 16국 세계관과 용도 구분 필요, 2D 타이틀 아트는 1.5u 그리드 3D 프롭의 대체물이 아님. seoul은 자체 GLB 프롭 6종과 자체 타이틀 아트(poc-title-art)를 이미 보유 — 용도는 '참조·리스타일 기반'이지 필수 대체가 아님.
 - 이미지 육안 근거: layer-platform/train/title-world-still 4장 직접 확인(내부 분석, 커밋 안 함).
+
+## 7. 오드랜드(oddland-unity) 데이터 실사 — 소유자 지정 (/Volumes/gameWorkspace/game-refs/oddland-unity)
+
+### 정체
+- 소유자 자신의 Unity 프로젝트(git origin: github.com/islee23520/oddland-unity), 외장 볼륨 게임 참조 영역에 위치. 1차 조사에서 빠졌던 이유: makcha 저장소 밖 외부 볼륨 + rg의 ignored 제한 — 소유자 정정이 맞았다.
+- makcha는 이미 오드랜드를 정식 도너로 운영 중: `tools/art/assets/import_oddland_3d.py` 계약 "oddland-unity-to-bevy-glb-v1", 팩 9종(hub-lobby-v1, iso-tilekit-stage1-v1, enemy 6종, hub-stage1-v1), **sha256 고정 SourceAsset 57개**, ownership "owner-authorized-oddland". makcha에 존재하던 적·보스 GLB 10종이 전부 오드랜드 파생산이었다.
+
+### 어셋 실물 (FBX 163, 카테고리 분포)
+- platformmer 타일킷 5스테이지 96개(stage1 19 / stage2 18 / stage3 21 / stage4 20 / robson 18) — tile_3~14 탑·미드·바텀·엔드 구성의 아이소 타일 키트(makcha가 iso-tilekit-stage1 21타일을 계약 등재).
+- arcade_stage 프롭 31(상자·기둥·미니게임 물건), loby 14(로비 플로어·월·BG·별), objects 12(파워업), stage1 환경 4(buildings·sky·daily_layout), fx 3, highlight 2.
+- 렌더 감정(Blender Workbench): arcade 프롭=평면 보라 기둥 박스, 파워업=하트+플러스 로우폴리 — **단색 기하 + 알베도 별도 PSD**(loby.psd 등) 구조. 기능성 기하이지 완성 환경 미술은 아니다.
+- 기술 주의: platformmer 일부가 **FBX 6100 구버전**(Blender 직접 임포트 불가 "Version 6100 unsupported") — makcha의 자체 컨버터가 이를 우회하는 정식 경로. Unity는 임포트 가능.
+- 부수 발견: OneDrive graphic_sandbox/oddland_art_resource(원본 아트 리소스 추정), VS2015/2017 백업에 oddland 계열 저장소 다수 — 1차 소스 풀 추가 확인 가능.
+
+### seoul 적합성 판정
+- 권리: 최상 등급 — 소유자 과거 프로젝트 + makcha가 이미 소유권 인증 체인 구축. BOM source: cross-project-import(oddland donor) 등재만 하면 됨.
+- 기하: **플랫포머 아이소 타일킷이 1.5u 그리드 환경 기하의 기증 후보**(makcha가 이미 'iso-tilekit'으로 부르는 아이소 저작물). 단 메시별 스케일 감사 필수(타일 1매가 1.5u인지 — 변환 경로에서 측정).
+- 미술: 단색 로우폴리 — 최종 룩은 아니고 **기하/실루엣 기증자**. 채택 시 툰 방향 재질화(텍스처 리페인트 또는 MToon 단색 팔레트)가 전제.
+- 경로: Blender 직접 대신 makcha 컨버터 계약 사용(FBX 6100 우회 + provenance 동반) → seoul ArtSource 반입 → BOM 등록 → 소유자 육안 게이트.
+- 순서 제약: 여전히 아트 방향 결정(A′ 등신·툰 스택) 선행 — 현재 GenreContract(2.5등신) 하에서 런타임 반입은 계약 위반.
+
