@@ -438,7 +438,12 @@ namespace Janseon.Foundation.Editor
         {
             Scene scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
             GameObject scopeObject = new("MainTitle Lifetime Scope");
-            scopeObject.AddComponent<MainTitleLifetimeScope>();
+            MainTitleLifetimeScope scope = scopeObject.AddComponent<MainTitleLifetimeScope>();
+            AssignRuntimeSlotCatalog(scope);
+
+            GameObject hostObject = new("MainTitle UI Host");
+            hostObject.AddComponent<MainTitleUiHost>();
+
             EditorSceneManager.SaveScene(scene, FoundationScenes.MainTitle);
         }
 
@@ -446,7 +451,11 @@ namespace Janseon.Foundation.Editor
         {
             Scene scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
             GameObject scopeObject = new("Foundation Lifetime Scope");
-            scopeObject.AddComponent<FoundationLifetimeScope>();
+            FoundationLifetimeScope scope = scopeObject.AddComponent<FoundationLifetimeScope>();
+            AssignRuntimeSlotCatalog(scope);
+
+            GameObject hostObject = new("Gameplay UI Host");
+            GameplayUiHost host = hostObject.AddComponent<GameplayUiHost>();
 
             GameObject cameraObject = new("Isometric Camera");
             Camera camera = cameraObject.AddComponent<Camera>();
@@ -459,6 +468,7 @@ namespace Janseon.Foundation.Editor
                 0f);
             camera.clearFlags = CameraClearFlags.SolidColor;
             camera.backgroundColor = new Color(0.043f, 0.067f, 0.118f, 1f);
+            SetSerializedField(host, "stationCamera", camera);
 
             GameObject lightObject = new("Foundation Light");
             Light light = lightObject.AddComponent<Light>();
@@ -467,6 +477,21 @@ namespace Janseon.Foundation.Editor
             light.transform.rotation = Quaternion.Euler(50f, -30f, 0f);
 
             EditorSceneManager.SaveScene(scene, FoundationScenes.Foundation);
+        }
+
+        private static void AssignRuntimeSlotCatalog(MonoBehaviour scope)
+        {
+            const string catalogPath = "Assets/Janseon/Foundation/Art/RuntimeSlotCatalog.asset";
+            Janseon.Foundation.Art.RuntimeSlotCatalog catalog =
+                AssetDatabase.LoadAssetAtPath<Janseon.Foundation.Art.RuntimeSlotCatalog>(catalogPath);
+            if (catalog == null)
+            {
+                throw new System.InvalidOperationException("RuntimeSlotCatalog asset missing at " + catalogPath);
+            }
+
+            SerializedObject serializedScope = new(scope);
+            serializedScope.FindProperty("runtimeSlots").objectReferenceValue = catalog;
+            serializedScope.ApplyModifiedPropertiesWithoutUndo();
         }
 
         [MenuItem("Janseon/Build WebGL Player")]
