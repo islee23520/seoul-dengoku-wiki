@@ -151,7 +151,7 @@ namespace Janseon.Foundation.Tests
         }
 
         [Test]
-        public void ResponsiveStyles_EnforceDesignSizes_For720And1080()
+        public void CanvasScalers_EnforceDesignSizes_For720And1080()
         {
             // uGUI contract: CanvasScaler owns resolution on both screens.
             RectTransform title = UguiHudBuilder.BuildMainTitle(null);
@@ -190,7 +190,7 @@ namespace Janseon.Foundation.Tests
         }
 
         [Test]
-        public void ProductionHosts_UseScopedUiScreenDocumentLease_AndRejectSecondDocument()
+        public void ProductionCanvasHosts_UseScopedScreenLease_AndRejectSecondScreen()
         {
             MethodInfo mainConstruct = typeof(MainTitleUiHost).GetMethod(
                 "Construct",
@@ -219,7 +219,7 @@ namespace Janseon.Foundation.Tests
             Assert.That(foundationScope, Does.Contain("UiScreenDocumentLease"),
                 "FoundationLifetimeScope must register scoped UiScreenDocumentLease");
 
-            // Lease still rejects a second active document (production invariant).
+            // Lease still rejects a second active Canvas screen (production invariant).
             var lease = new UiScreenDocumentLease();
             Assert.That(lease.TryAttach("main-title-doc"), Is.True);
             Assert.That(lease.TryAttach("second-doc"), Is.False);

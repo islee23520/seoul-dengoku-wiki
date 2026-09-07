@@ -14,13 +14,13 @@ using UnityEngine;
 namespace Janseon.Foundation.Tests
 {
     /// <summary>
-    /// Todo 11 RED-first UI Toolkit behavior contracts (Design.md). Asserts structure,
-    /// FSM action, snapshot determinism, readiness — not user-visible prose.
+    /// Canvas behavior contracts (Design.md). Asserts structure, FSM action,
+    /// snapshot determinism, and readiness — not user-visible prose.
     /// </summary>
     public sealed class UiToolkitScreenTests
     {
         [Test]
-        public void MainTitle_BuildMainTitleCanvas_ExposesRequiredElementNames()
+        public void MainTitle_BuildMainTitleCanvas_ExposesRequiredNames()
         {
             RectTransform root = UguiHudBuilder.BuildMainTitle(null);
             Assert.That(root, Is.Not.Null, "canvas root must build");
@@ -86,7 +86,7 @@ namespace Janseon.Foundation.Tests
         }
 
         [Test]
-        public void Gameplay_Document_ExposesRequiredStableElementNames()
+        public void Gameplay_Canvas_ExposesRequiredStableNames()
         {
             RectTransform gameplayRoot = UguiHudBuilder.BuildGameplay(null);
             Assert.That(gameplayRoot.name == UiElementNames.GameplayRoot
@@ -101,7 +101,7 @@ namespace Janseon.Foundation.Tests
                     continue;
                 }
 
-                Assert.That(UguiHudBuilder.Find(gameplayRoot, name), Is.Not.Null, "missing element name " + name);
+                Assert.That(UguiHudBuilder.Find(gameplayRoot, name), Is.Not.Null, "missing Canvas object name " + name);
             }
 
             for (int y = 0; y < BattleApi.GridHeight; y++)
@@ -272,7 +272,7 @@ namespace Janseon.Foundation.Tests
         }
 
         [Test]
-        public void Gameplay_Presenter_AppliesSnapshot_ToStableElementClasses()
+        public void Gameplay_Presenter_AppliesSnapshot_ToNamedCanvasControls()
         {
             RectTransform root = UguiHudBuilder.BuildGameplay(null);
             var presenter = new GameplayPresenter();
@@ -365,12 +365,12 @@ namespace Janseon.Foundation.Tests
         }
 
         [Test]
-        public void ActiveLease_AllowsExactlyOneScreenDocument()
+        public void ActiveLease_RejectsSecondCanvasScreen()
         {
             Assert.That(UiScreenDocumentLease.MaxDocumentsPerLease, Is.EqualTo(1));
             var lease = new UiScreenDocumentLease();
             Assert.That(lease.TryAttach("main-title"), Is.True);
-            Assert.That(lease.TryAttach("gameplay-second"), Is.False, "second document on same lease must be rejected");
+            Assert.That(lease.TryAttach("gameplay-second"), Is.False, "second Canvas screen on same lease must be rejected");
             Assert.That(lease.AttachedCount, Is.EqualTo(1));
             lease.Detach();
             Assert.That(lease.TryAttach("gameplay"), Is.True);
@@ -419,6 +419,7 @@ namespace Janseon.Foundation.Tests
                 "why-tooltip must show the anchored reason");
         }
 
+        [Test]
         public void Gameplay_BuildGameplayCanvas_ExposesAllRequiredNames()
         {
             RectTransform root = UguiHudBuilder.BuildGameplay(null);
