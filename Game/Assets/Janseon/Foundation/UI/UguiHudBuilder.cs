@@ -182,6 +182,31 @@ namespace Janseon.Foundation.UI
 
             if (cachedTmpFont == null)
             {
+                // Try to load the bundled asset
+                try
+                {
+                    Font font = Resources.Load<Font>(\"NanumGothic-Regular\");
+                    if (font == null)
+                    {
+                        // Fallback to explicit bundle path load
+                        #if UNITY_EDITOR
+                        font = UnityEditor.AssetDatabase.LoadAssetAtPath<Font>(\"Assets/Janseon/Foundation/UI/Fonts/NanumGothic-Regular.ttf\");
+                        #endif
+                    }
+
+                    if (font != null)
+                    {
+                        cachedTmpFont = TMP_FontAsset.CreateFontAsset(font);
+                    }
+                }
+                catch (System.Exception ex)
+                {
+                    Debug.LogWarning(\"TmpFont bundle asset creation failed: \" + ex.Message);
+                }
+            }
+
+            if (cachedTmpFont == null)
+            {
                 // Direct font file paths bypass the OS registry and yield real glyphs.
                 string[] fontFiles =
                 {
