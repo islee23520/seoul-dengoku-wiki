@@ -52,7 +52,8 @@ namespace Janseon.Core
         ChooseBypass = 6,
         ChooseCombat = 7,
         ApplySettlement = 8,
-        CompleteReturn = 9
+        CompleteReturn = 9,
+        Rest = 10
     }
 
     public sealed class CampaignCommand
@@ -427,6 +428,9 @@ namespace Janseon.Core
         public const int BypassResourceDelta = -2;
         public const int BypassReputationDelta = -1;
         public const string RulesVersion = "poc-campaign-loop-v1";
+        public const int ConfirmedMoveTicks = 1;
+        public const int ConfirmedMoveResourceDelta = -2;
+        public const int RestTicks = 2;
 
         public static CampaignState Start(int seed, StationId homeBase, string campaignId)
         {
@@ -502,8 +506,7 @@ namespace Janseon.Core
             next.PendingResourceDelta = 0;
             next.PendingReputationDelta = 0;
             next.SettlementApplied = false;
-            next.Tick = state.Tick.Next();
-            // Stage remains Resolution — settlement advances it.
+            // Stage remains Resolution — settlement advances it. Battle setup does not consume campaign time.
             var cmd = new CampaignCommand { Id = cmdId, Kind = CampaignCommandKind.ChooseCombat };
             AppendEvent(ledger, cmd, next, "attach-battle:" + (context.BattleId ?? string.Empty), 0);
             return next;
@@ -551,6 +554,8 @@ namespace Janseon.Core
                     return ApplySettlement(state, ledger, cmd);
                 case CampaignCommandKind.CompleteReturn:
                     return CompleteReturn(state, ledger, cmd);
+                case CampaignCommandKind.Rest:
+                    return Rest(state, ledger, cmd);
                 default:
                     return new CampaignRejection(CampaignRejectReason.WrongStage, state.Stage, cmd.Kind);
             }
@@ -565,7 +570,6 @@ namespace Janseon.Core
 
             var next = state.Clone();
             next.Stage = CampaignStage.ExpeditionTravel;
-            next.Tick = state.Tick.Next();
             next.Choice = EncounterChoice.None;
             next.ChoiceLocked = false;
             next.SettlementApplied = false;
@@ -609,6 +613,7 @@ namespace Janseon.Core
             var next = state.Clone();
             next.Node = routeNext.Current;
             next.Tick = routeNext.Tick;
+            next.Resources = checked(state.Resources + ConfirmedMoveResourceDelta);
             // Fold hop ledger event into campaign ledger with campaign-scoped summary.
             AppendEvent(ledger, cmd, next, "travel:" + (routeState.Current.Value ?? string.Empty) + "->" + (routeNext.Current.Value ?? string.Empty), routeNext.HopCount);
             return next;
@@ -629,7 +634,6 @@ namespace Janseon.Core
 
             var next = state.Clone();
             next.Stage = CampaignStage.Encounter;
-            next.Tick = state.Tick.Next();
             // Deterministic encounter salt from Encounter stream (does not touch World/Battle).
             if (next.Rng != null)
             {
@@ -649,7 +653,6 @@ namespace Janseon.Core
 
             var next = state.Clone();
             next.Stage = CampaignStage.Resolution;
-            next.Tick = state.Tick.Next();
             AppendEvent(ledger, cmd, next, "enter-resolution", (int)next.Stage);
             return next;
         }
@@ -685,7 +688,6 @@ namespace Janseon.Core
             next.PendingResourceDelta = resourceDelta;
             next.PendingReputationDelta = reputationDelta;
             next.Stage = CampaignStage.Settlement;
-            next.Tick = state.Tick.Next();
             next.SettlementApplied = false;
             next.PendingBattle = null;
             AppendEvent(ledger, cmd, next, "resolve:" + consequenceId, resourceDelta);
@@ -745,7 +747,6 @@ namespace Janseon.Core
             next.PendingResourceDelta = 0;
             next.PendingReputationDelta = 0;
             next.SettlementApplied = true;
-            next.Tick = state.Tick.Next();
             AppendEvent(ledger, cmd, next, "settle:" + (next.ConsequenceId ?? string.Empty), next.Resources);
             return next;
         }
@@ -770,8 +771,21 @@ namespace Janseon.Core
             var next = state.Clone();
             next.Node = state.HomeBase;
             next.Stage = CampaignStage.BaseReady;
-            next.Tick = state.Tick.Next();
             AppendEvent(ledger, cmd, next, "return-base", (int)next.Stage);
+            return next;
+        }
+
+        static object Rest(CampaignState state, Ledger ledger, CampaignCommand cmd)
+        {
+            if ((state.Stage != CampaignStage.BasePreparation && state.Stage != CampaignStage.BaseReady)
+                || !state.Node.Equals(state.HomeBase))
+            {
+                return Reject(state, cmd, CampaignRejectReason.WrongStage);
+            }
+
+            var next = state.Clone();
+            next.Tick = state.Tick.Next().Next();
+            AppendEvent(ledger, cmd, next, "rest", RestTicks);
             return next;
         }
 

@@ -11,6 +11,7 @@ namespace Janseon.Foundation.UI
         public const string MainTitleStart = "main-title-start";
 
         public const string GameplayRoot = "gameplay-root";
+        public const string ClockLabel = "clock-label";
         public const string StageRail = "stage-rail";
         public const string StageBasePrep = "stage-base-prep";
         public const string StageExpedition = "stage-expedition";
@@ -67,6 +68,7 @@ namespace Janseon.Foundation.UI
         public static readonly string[] GameplayRequired =
         {
             GameplayRoot,
+            ClockLabel,
             StageRail,
             StageBasePrep,
             StageExpedition,

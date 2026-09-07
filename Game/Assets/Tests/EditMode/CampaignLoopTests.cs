@@ -4,6 +4,7 @@ using System.Globalization;
 using System.IO;
 using System.Text;
 using Janseon.Core;
+using Janseon.Foundation.UI;
 using NUnit.Framework;
 using UnityEngine;
 
@@ -103,6 +104,96 @@ namespace Janseon.Tests.EditMode
         }
 
         [Test]
+        public void CampaignClock_InspectCancelStayStill_ConfirmedMoveAndRestAdvance()
+        {
+            var graph = Graph();
+            var state = Fresh();
+            var ledger = new Ledger();
+
+            var inspect = GameplayUiSnapshot.FromCampaign(state, null);
+            var cancel = GameplayUiSnapshot.FromCampaign(state, null);
+            Assert.AreEqual(0, state.Tick.Value, "opening/closing the S-map must not advance campaign time");
+            Assert.AreEqual(100, state.Resources, "inspection/cancel must not spend supply");
+            Assert.AreEqual(inspect.ClockText, cancel.ClockText, "cancelled inspection must leave the HUD clock unchanged");
+
+            state = MustState(
+                CampaignApi.Apply(graph, state, ledger, Cmd("clock-depart", CampaignCommandKind.Depart)),
+                "Depart");
+            Assert.AreEqual(0, state.Tick.Value, "departing into the travel surface is not confirmed movement");
+
+            var beforeMoveTick = state.Tick.Value;
+            var beforeMoveSupply = state.Resources;
+            state = MustState(
+                CampaignApi.Apply(
+                    graph,
+                    state,
+                    ledger,
+                    Cmd("clock-move", CampaignCommandKind.Travel, StationId.Sindorim)),
+                "confirmed move");
+            Assert.AreEqual(beforeMoveTick + CampaignApi.ConfirmedMoveTicks, state.Tick.Value);
+            Assert.AreEqual(beforeMoveSupply + CampaignApi.ConfirmedMoveResourceDelta, state.Resources);
+
+            var beforeRestTick = state.Tick.Value;
+            var beforeRestSupply = state.Resources;
+            var rejectedAwayFromHub = CampaignApi.Apply(
+                graph,
+                state,
+                ledger,
+                Cmd("clock-rest-away", CampaignCommandKind.Rest));
+            Assert.IsInstanceOf<CampaignRejection>(rejectedAwayFromHub);
+            Assert.AreEqual(beforeRestTick, state.Tick.Value, "rejected rest must not advance time");
+            Assert.AreEqual(beforeRestSupply, state.Resources, "rejected rest must not spend supply");
+
+            state = MustState(
+                CampaignApi.Apply(graph, state, ledger, Cmd("clock-face", CampaignCommandKind.FaceEncounter)),
+                "face encounter");
+            state = MustState(
+                CampaignApi.Apply(graph, state, ledger, Cmd("clock-enter", CampaignCommandKind.EnterResolution)),
+                "enter resolution");
+            var required = (BattleRequired)CampaignApi.Apply(
+                graph,
+                state,
+                ledger,
+                Cmd("clock-combat", CampaignCommandKind.ChooseCombat));
+            state = MustState(
+                CampaignApi.AttachPendingBattle(state, ledger, required.Context, new CommandId("clock-attach")),
+                "attach battle");
+            var campaignTickBeforeBattleCommand = state.Tick.Value;
+            var battle = BattleApi.Open(required.Context);
+            var battleTickBefore = battle.BattleTick.Value;
+            var battleResult = BattleApi.Apply(battle, new Ledger(), new BattleCommand
+            {
+                Id = new CommandId("clock-battle-end"),
+                Kind = BattleCommandKind.EndTurn,
+                ActorId = battle.ActiveUnit.UnitId,
+            });
+            Assert.IsInstanceOf<BattleState>(battleResult);
+            Assert.AreEqual(battleTickBefore + 1, ((BattleState)battleResult).BattleTick.Value);
+            Assert.AreEqual(campaignTickBeforeBattleCommand, state.Tick.Value,
+                "battle commands must advance only BattleTick, never the campaign clock");
+
+            var hub = Fresh();
+            var rested = MustState(
+                CampaignApi.Apply(graph, hub, new Ledger(), Cmd("clock-rest", CampaignCommandKind.Rest)),
+                "hub rest");
+            Assert.AreEqual(hub.Tick.Value + CampaignApi.RestTicks, rested.Tick.Value);
+            Assert.AreEqual(hub.Resources, rested.Resources);
+
+            TestContext.WriteLine("TASK21_INSPECT_BEFORE=0");
+            TestContext.WriteLine("TASK21_INSPECT_AFTER=" + cancel.ClockTick);
+            TestContext.WriteLine("TASK21_MOVE_BEFORE=" + beforeMoveTick);
+            TestContext.WriteLine("TASK21_MOVE_AFTER=" + state.Tick.Value);
+            TestContext.WriteLine("TASK21_MOVE_SUPPLY_BEFORE=" + beforeMoveSupply);
+            TestContext.WriteLine("TASK21_MOVE_SUPPLY_AFTER=" + state.Resources);
+            TestContext.WriteLine("TASK21_BATTLE_CAMPAIGN_BEFORE=" + campaignTickBeforeBattleCommand);
+            TestContext.WriteLine("TASK21_BATTLE_CAMPAIGN_AFTER=" + state.Tick.Value);
+            TestContext.WriteLine("TASK21_BATTLE_LOCAL_BEFORE=" + battleTickBefore);
+            TestContext.WriteLine("TASK21_BATTLE_LOCAL_AFTER=" + ((BattleState)battleResult).BattleTick.Value);
+            TestContext.WriteLine("TASK21_REST_BEFORE=" + hub.Tick.Value);
+            TestContext.WriteLine("TASK21_REST_AFTER=" + rested.Tick.Value);
+        }
+
+        [Test]
         public void SixStages_NegotiationPath_ReachesBaseReadyWithoutBattle()
         {
             var state = RunNegotiationLoop(out var ledger);
@@ -110,7 +201,9 @@ namespace Janseon.Tests.EditMode
             Assert.AreEqual(CampaignStage.BaseReady, state.Stage);
             Assert.AreEqual(StationId.Yeongdeungpo, state.Node);
             Assert.AreEqual(CampaignApi.ConsequenceNegotiate, state.ConsequenceId);
-            Assert.AreEqual(100 + CampaignApi.NegotiateResourceDelta, state.Resources);
+            Assert.AreEqual(
+                100 + CampaignApi.ConfirmedMoveResourceDelta + CampaignApi.NegotiateResourceDelta,
+                state.Resources);
             Assert.AreEqual(0 + CampaignApi.NegotiateReputationDelta, state.Reputation);
             Assert.IsNull(state.PendingBattle);
             Assert.IsTrue(state.SettlementApplied);
@@ -126,7 +219,9 @@ namespace Janseon.Tests.EditMode
 
             Assert.AreEqual(CampaignStage.BaseReady, bypass.Stage);
             Assert.AreEqual(CampaignApi.ConsequenceBypass, bypass.ConsequenceId);
-            Assert.AreEqual(100 + CampaignApi.BypassResourceDelta, bypass.Resources);
+            Assert.AreEqual(
+                100 + CampaignApi.ConfirmedMoveResourceDelta + CampaignApi.BypassResourceDelta,
+                bypass.Resources);
             Assert.AreEqual(0 + CampaignApi.BypassReputationDelta, bypass.Reputation);
             Assert.IsNull(bypass.PendingBattle);
 

@@ -46,6 +46,7 @@ namespace Janseon.Foundation.UI
             Chip(rail, UiElementNames.StageSettlement, "정산");
             Chip(rail, UiElementNames.StageBaseReady, "복귀");
             Chip(rail, "layer-chip", "B1");
+            Label(rail, UiElementNames.ClockLabel, GameplayUiSnapshot.FormatClock(new Janseon.Core.Tick(0)));
 
             RectTransform party = Band(root, "party-strip", new Vector2(0f, 1f), new Vector2(0.46f, 1f), new Vector2(12f, -100f), new Vector2(0f, -52f));
             Party(party, "party-slot-0", "탐험가");

@@ -272,6 +272,43 @@ namespace Janseon.Foundation.Tests
         }
 
         [Test]
+        public void Gameplay_ClockLabel_MatchesCoreTick_AfterInspectCancelAndMove()
+        {
+            RectTransform root = UguiHudBuilder.BuildGameplay(null);
+            var presenter = new GameplayPresenter();
+            Assert.That(presenter.BindForTest(root), Is.True);
+
+            var graph = RouteGraph.CreateYeongdeungpoSindorimGuro();
+            var ledger = new Ledger();
+            CampaignState state = CampaignApi.Start(21, StationId.Yeongdeungpo, "clock-hud");
+            presenter.ApplySnapshot(GameplayUiSnapshot.FromCampaign(state, null));
+
+            var clock = UguiHudBuilder.TextNamed(root, UiElementNames.ClockLabel);
+            Assert.That(clock, Is.Not.Null, "clock-label must be present on the gameplay HUD");
+            Assert.That(clock.text, Is.EqualTo(GameplayUiSnapshot.FormatClock(state.Tick)));
+
+            string inspected = clock.text;
+            presenter.ApplySnapshot(GameplayUiSnapshot.FromCampaign(state, null));
+            Assert.That(clock.text, Is.EqualTo(inspected), "inspect/cancel repaint must not tick the clock");
+
+            state = (CampaignState)CampaignApi.Apply(graph, state, ledger, new CampaignCommand
+            {
+                Id = new CommandId("clock-depart"),
+                Kind = CampaignCommandKind.Depart,
+            });
+            state = (CampaignState)CampaignApi.Apply(graph, state, ledger, new CampaignCommand
+            {
+                Id = new CommandId("clock-move"),
+                Kind = CampaignCommandKind.Travel,
+                TravelDestination = StationId.Sindorim,
+            });
+            presenter.ApplySnapshot(GameplayUiSnapshot.FromCampaign(state, null));
+
+            Assert.That(clock.text, Is.EqualTo(GameplayUiSnapshot.FormatClock(state.Tick)));
+            Assert.That(clock.text, Is.Not.EqualTo(inspected), "confirmed movement must repaint the advanced Core clock");
+        }
+
+        [Test]
         public void Gameplay_Presenter_AppliesSnapshot_ToNamedCanvasControls()
         {
             RectTransform root = UguiHudBuilder.BuildGameplay(null);

@@ -68,6 +68,7 @@ namespace Janseon.Foundation.UI
             SetActive(UiElementNames.BattleAdvance, snapshot.ShowBattleAdvanceAction);
             SetActive(UiElementNames.ReturnAction, snapshot.ShowReturnAction);
 
+            SetText(UiElementNames.ClockLabel, snapshot.ClockText);
             SetText("encounter-context", snapshot.EncounterContext);
             SetText("battle-forecast", snapshot.BattleForecast);
             SetText("why-tooltip", snapshot.WhyText);

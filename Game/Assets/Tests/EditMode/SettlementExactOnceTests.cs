@@ -372,14 +372,15 @@ namespace Janseon.Tests.EditMode
             var applied = MustSuccess(SettlementApi.Apply(campaign, ledger, book, result), "apply");
             var next = applied.State;
 
-            // Documented order ends with resources+reputation applied, stage advanced, tick moved, battle cleared.
+            // Documented order ends with resources+reputation applied, stage advanced, campaign clock frozen, battle cleared.
             Assert.AreEqual(CampaignStage.Settlement, next.Stage);
             Assert.IsTrue(next.SettlementApplied);
             Assert.IsNull(next.PendingBattle);
             Assert.AreEqual(SettlementApi.ConsequencePlayerVictory, next.ConsequenceId);
             Assert.AreEqual(beforeRes + SettlementApi.PlayerVictoryResourceDelta, next.Resources);
             Assert.AreEqual(beforeRep + SettlementApi.PlayerVictoryReputationDelta, next.Reputation);
-            Assert.Greater(next.Tick.Value, beforeTick);
+            Assert.AreEqual(beforeTick, next.Tick.Value,
+                "settlement must not advance campaign time; only confirmed move/rest do");
             Assert.Greater(ledger.Events.Count, beforeEvents);
             Assert.AreEqual(result.ResultId.Value, next.SettledResultId);
             Assert.AreEqual(applied.Receipt.ReceiptHash, next.LastReceiptHash);

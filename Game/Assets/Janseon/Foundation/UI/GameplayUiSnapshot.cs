@@ -40,6 +40,8 @@ namespace Janseon.Foundation.UI
         public string EncounterContext { get; private set; } = string.Empty;
         public string WhyText { get; private set; } = string.Empty;
         public string BattleForecast { get; private set; } = string.Empty;
+        public int ClockTick { get; private set; }
+        public string ClockText { get; private set; } = string.Empty;
 
         public bool ShowDepartAction { get; private set; }
         public bool ShowTravelActions { get; private set; }
@@ -61,6 +63,8 @@ namespace Janseon.Foundation.UI
 
             snap.CurrentStageElement = StageElement(campaign.Stage);
             snap.CurrentStationElement = StationElement(campaign.Node);
+            snap.ClockTick = campaign.Tick.Value;
+            snap.ClockText = FormatClock(campaign.Tick);
             snap.EncounterContext = campaign.Node.Value
                 + " · "
                 + campaign.Stage.ToString()
@@ -336,6 +340,11 @@ namespace Janseon.Foundation.UI
             return v;
         }
 
+        public static string FormatClock(Tick tick)
+        {
+            return "T+" + tick.Value.ToString(CultureInfo.InvariantCulture);
+        }
+
         public static string StageElement(CampaignStage stage)
         {
             switch (stage)
@@ -387,6 +396,7 @@ namespace Janseon.Foundation.UI
             sb.Append(";hp=").Append(BattleHp.ToString(CultureInfo.InvariantCulture));
             sb.Append(";ap=").Append(BattleAp.ToString(CultureInfo.InvariantCulture));
             sb.Append(";out=").Append(SettlementOutcomeCode ?? string.Empty);
+            sb.Append(";clock=").Append(ClockTick.ToString(CultureInfo.InvariantCulture));
             if (campaign != null)
             {
                 sb.Append(";stage=").Append(((int)campaign.Stage).ToString(CultureInfo.InvariantCulture));

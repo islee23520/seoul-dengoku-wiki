@@ -277,6 +277,7 @@ namespace Janseon.Foundation.Composition
             ApplyBattleLog(snapshot);
             ApplySettlement(snapshot);
             ApplyContext(snapshot);
+            ApplyClock(snapshot);
 
             for (var y = 0; y < 5; y++)
             {
@@ -413,6 +414,15 @@ namespace Janseon.Foundation.Composition
 
             outcome.text = snapshot.SettlementOutcomeText ?? string.Empty;
             // Outcome code is carried by the snapshot hash contract, not UI.
+        }
+
+        void ApplyClock(GameplayUiSnapshot snapshot)
+        {
+            Text clock = FindText(root, UiElementNames.ClockLabel);
+            if (clock != null)
+            {
+                clock.text = snapshot.ClockText ?? string.Empty;
+            }
         }
 
         void ApplyContext(GameplayUiSnapshot snapshot)

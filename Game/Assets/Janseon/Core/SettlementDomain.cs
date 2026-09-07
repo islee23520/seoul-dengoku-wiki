@@ -419,7 +419,7 @@ namespace Janseon.Core
             }
 
             // ---- first apply: fixed documented order ----
-            // 1) fate  2) supplies  3) party location  4) time  5) control  6) reputation
+            // 1) fate  2) supplies  3) party location  4) campaign time unchanged  5) control  6) reputation
             var beforeHash = CampaignApi.ComputeCampaignHash(state, ledger);
             ResolveConsequences(result.Outcome, out var consequenceId, out var resourceDelta, out var reputationDelta);
 
@@ -438,8 +438,7 @@ namespace Janseon.Core
             // return-action / CompleteReturn command moves the party home.
             next.Node = state.Node;
 
-            // 4. Time
-            next.Tick = state.Tick.Next();
+            // 4. Campaign time — settlement is an inspect/apply operation, not move or rest.
 
             // 5. Stronghold/route control — no POC control graph mutation.
 
@@ -531,7 +530,7 @@ namespace Janseon.Core
                 + ";dRes=" + resourceDelta.ToString(CultureInfo.InvariantCulture)
                 + ";dRep=" + reputationDelta.ToString(CultureInfo.InvariantCulture)
                 + ";cons=" + (next.ConsequenceId ?? string.Empty)
-                + ";order=fate,supplies,location,time,control,reputation");
+                + ";order=fate,supplies,location,time-unchanged,control,reputation");
 
             ledger.Events.Add(new TypedEvent
             {
