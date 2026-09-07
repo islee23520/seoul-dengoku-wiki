@@ -1,6 +1,11 @@
-✔ catalog contract and manifest coverage (12.267417ms)
-✖ classification samples (5.747083ms)
-✔ markdown totals agree (2.435875ms)
+RED2 (재캡처) — 부모 커밋 97d693e 카탈로그에 대한 현재 테스트 실행; rule other 3행이 zero-other 단정을 실패시킴
+
+배경: 1차 캡처(red.txt/red2.txt 구버전)의 postfx.length>0 실패는 테스트 선택자 버그였음 — 부모 커밋 97d693e 카탈로그에는 postfx 5행이 이미 존재. 실제 결함은 부모 카탈로그의 rule other 3행이며, 현재 테스트의 zero-other 단정(test-oddland-catalog.mjs:39)이 이를 잡음.
+
+--- node --test tools/art/test-oddland-catalog.mjs (exit 1) ---
+✔ catalog contract and manifest coverage (12.47125ms)
+✖ classification samples (4.730167ms)
+✔ markdown totals agree (2.486209ms)
 ℹ tests 3
 ℹ suites 0
 ℹ pass 2
@@ -8,17 +13,17 @@
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 60.91025
+ℹ duration_ms 59.042666
 
 ✖ failing tests:
 
 test at tools/art/test-oddland-catalog.mjs:22:1
-✖ classification samples (5.747083ms)
-  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+✖ classification samples (4.730167ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
   
-    assert.ok(postfx.length > 0)
+  3 !== 0
   
-      at TestContext.<anonymous> (file:///Users/ilseoblee/workspace/seoul-kenshi-wt/rtfc-phase-a/tools/art/test-oddland-catalog.mjs:37:9)
+      at TestContext.<anonymous> (file:///Users/ilseoblee/workspace/seoul-kenshi-wt/rtfc-phase-a/tools/art/test-oddland-catalog.mjs:39:9)
       at Test.runInAsyncScope (node:async_hooks:226:14)
       at Test.run (node:internal/test_runner/test:1382:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
@@ -27,8 +32,8 @@ test at tools/art/test-oddland-catalog.mjs:22:1
       at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
     generatedMessage: true,
     code: 'ERR_ASSERTION',
-    actual: false,
-    expected: true,
-    operator: '==',
+    actual: 3,
+    expected: 0,
+    operator: 'strictEqual',
     diff: 'simple'
   }
