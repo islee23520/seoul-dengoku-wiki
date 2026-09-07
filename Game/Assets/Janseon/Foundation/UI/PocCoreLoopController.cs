@@ -68,11 +68,6 @@ namespace Janseon.Foundation.UI
             host.AttachLoop(this);
             WirePresenter();
             BeginNewRun(DefaultSeed, DefaultCampaignId);
-            EnsureVoxelWorld();
-            if (campaign != null)
-            {
-                voxelWorld?.SyncActor(campaign.Node);
-            }
 
             IsReady = true;
         }
@@ -86,11 +81,6 @@ namespace Janseon.Foundation.UI
 
             disposed = true;
             UnwirePresenter();
-            if (voxelWorld != null)
-            {
-                UnityEngine.Object.Destroy(voxelWorld.gameObject);
-                voxelWorld = null;
-            }
             IsReady = false;
         }
 
@@ -108,7 +98,6 @@ namespace Janseon.Foundation.UI
             LastClickedAction = string.Empty;
             commandSeq = 0;
             campaign = CampaignApi.Start(seed, StationId.Yeongdeungpo, campaignId);
-            voxelWorld?.SyncActor(campaign.Node);
             Publish();
         }
 
@@ -516,42 +505,10 @@ namespace Janseon.Foundation.UI
         void Publish()
         {
             host.ApplyCampaign(campaign, battle);
-            if (campaign != null)
-            {
-                voxelWorld?.SyncActor(campaign.Node);
-            }
             StateChanged?.Invoke();
         }
 
-        void EnsureVoxelWorld()
-        {
-            if (voxelWorld != null)
-            {
-                return;
-            }
 
-            Camera camera = host != null ? host.StationCamera : null;
-            if (camera == null)
-            {
-                camera = Camera.main;
-            }
-
-            if (camera == null)
-            {
-                throw new InvalidOperationException(
-                    "Foundation Main Camera missing: assign the scene camera in the builder or tag it MainCamera.");
-            }
-
-            LayerId layer = campaign != null && campaign.Node.Equals(StationId.Sindorim)
-                ? LayerId.B2
-                : LayerId.B1;
-            voxelWorld = HeightmapVoxelWorld.Create(
-                null,
-                camera,
-                campaign != null ? campaign.Seed : DefaultSeed,
-                layer);
-            voxelWorld.PlaceStationProps(host != null ? host.StationPropsRoot : null);
-        }
 
         CommandId NextCommandId(string kind)
         {

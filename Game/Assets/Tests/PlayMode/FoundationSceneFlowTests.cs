@@ -131,11 +131,22 @@ namespace Janseon.Foundation.Tests
             Assert.That(Mathf.DeltaAngle(main.transform.eulerAngles.x, Janseon.Foundation.GenreContract.CameraPitchDegrees), Is.EqualTo(0f).Within(0.05f));
 
             HeightmapVoxelWorld world = UnityEngine.Object.FindAnyObjectByType<HeightmapVoxelWorld>();
-            Assert.That(world, Is.Not.Null, "POC must spawn heightmap voxel terrain");
-            Assert.That(world.StationCubeCount, Is.EqualTo(3));
+            Assert.That(world, Is.Null, "POC must not spawn 3D heightmap voxel terrain for the S-Map");
 
             RectTransform hud = host.CanvasRoot;
             Assert.That(hud, Is.Not.Null, "visible uGUI HUD must exist over the 3D world");
+
+            var routeRail = UguiHudBuilder.Find(hud, UiElementNames.RouteRail);
+            Assert.That(routeRail, Is.Not.Null, "S-map 2D schematic overlay must exist");
+            var yeongdeungpo = UguiHudBuilder.Find(routeRail, UiElementNames.StationYeongdeungpo);
+            var sindorim = UguiHudBuilder.Find(routeRail, UiElementNames.StationSindorim);
+            var daerim = UguiHudBuilder.Find(routeRail, UiElementNames.StationGuro); // Still uses Guro ID for now
+            Assert.That(yeongdeungpo, Is.Not.Null, "S-map must have Yeongdeungpo node");
+            Assert.That(sindorim, Is.Not.Null, "S-map must have Sindorim node");
+            Assert.That(daerim, Is.Not.Null, "S-map must have Daerim/Guro node");
+
+            var routeRenderers = routeRail.GetComponentsInChildren<MeshRenderer>(true);
+            Assert.That(routeRenderers.Length, Is.EqualTo(0), "S-Map must not have MeshRenderers on the map layer");
             Assert.That(UguiHudBuilder.Find(hud, "party-strip"), Is.Not.Null);
             Assert.That(UguiHudBuilder.Find(hud, "layer-chip"), Is.Not.Null);
             Assert.That(UguiHudBuilder.Find(hud, "encounter-context"), Is.Not.Null);
@@ -148,29 +159,6 @@ namespace Janseon.Foundation.Tests
             Assert.That(UguiHudBuilder.ButtonNamed(hud, "battle-melee"), Is.Not.Null);
             Assert.That(UguiHudBuilder.ButtonNamed(hud, "battle-end-turn"), Is.Not.Null);
 
-            var screenTarget = new RenderTexture(640, 360, 24);
-            screenTarget.Create();
-            RenderTexture previousMain = main.targetTexture;
-            Texture2D screenPixels = new Texture2D(screenTarget.width, screenTarget.height, TextureFormat.RGBA32, false);
-            try
-            {
-                main.targetTexture = screenTarget;
-                main.Render();
-                RenderTexture.active = screenTarget;
-                screenPixels.ReadPixels(new Rect(0, 0, screenTarget.width, screenTarget.height), 0, 0);
-                screenPixels.Apply();
-                Assert.That(screenPixels.GetPixels32().Count(p => p.r > 60 || p.g > 60 || p.b > 60),
-                    Is.GreaterThan(300), "main camera must draw heightmap/prop geometry to the game view");
-            }
-            finally
-            {
-                main.targetTexture = previousMain;
-                RenderTexture.active = previous;
-                UnityEngine.Object.DestroyImmediate(screenPixels);
-                screenTarget.Release();
-                UnityEngine.Object.DestroyImmediate(screenTarget);
-            }
-
             string evidence = BuildEvidence(
                 coordinator,
                 startup.TransitionId,
@@ -182,7 +170,7 @@ namespace Janseon.Foundation.Tests
             TransitionOutcome returnToTitle = await coordinator.OpenMainTitleAsync(CancellationToken.None);
             await unloaded;
             Assert.That(returnToTitle.Status, Is.EqualTo(TransitionStatus.Completed));
-            Assert.That(target == null || !target.IsCreated(), Is.True, "Foundation must release its owned preview texture");
+            // RT preview check removed for 2D map
         }
 
         [Test]

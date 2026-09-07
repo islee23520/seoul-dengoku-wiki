@@ -52,10 +52,42 @@ namespace Janseon.Foundation.UI
             Party(party, "party-slot-1", "의무병");
             Party(party, "party-slot-2", "순찰대");
 
-            RectTransform route = Panel(root, UiElementNames.RouteRail, new Vector2(0f, 0f), new Vector2(0f, 1f), new Vector2(12f, 12f), new Vector2(236f, -112f));
-            HudButton(route, UiElementNames.StationYeongdeungpo, "영등포");
-            HudButton(route, UiElementNames.StationSindorim, "신도림");
-            HudButton(route, UiElementNames.StationGuro, "구로");
+            RectTransform route = Panel(root, UiElementNames.RouteRail, new Vector2(0f, 0f), new Vector2(0f, 1f), new Vector2(12f, 12f), new Vector2(360f, -112f));
+            
+            // 2D S-Map overlay (Line 2-like graph)
+            RectTransform sMapGraph = new GameObject("s-map-graph").AddComponent<RectTransform>();
+            sMapGraph.SetParent(route, false);
+            HorizontalLayoutGroup graphLayout = sMapGraph.gameObject.AddComponent<HorizontalLayoutGroup>();
+            graphLayout.spacing = 16f;
+            graphLayout.childAlignment = TextAnchor.MiddleCenter;
+            LayoutElement graphLe = sMapGraph.gameObject.AddComponent<LayoutElement>();
+            graphLe.preferredHeight = 48f;
+            graphLe.minHeight = 48f;
+
+            HudButton(sMapGraph, UiElementNames.StationYeongdeungpo, "영등포");
+            
+            // Line segment
+            GameObject link1 = new GameObject("link1");
+            link1.transform.SetParent(sMapGraph, false);
+            Image img1 = link1.AddComponent<Image>();
+            img1.color = new Color(0.2f, 0.7f, 0.3f, 1f); // Line 2 green
+            LayoutElement le1 = link1.AddComponent<LayoutElement>();
+            le1.preferredWidth = 24f;
+            le1.preferredHeight = 4f;
+
+            HudButton(sMapGraph, UiElementNames.StationSindorim, "신도림");
+
+            // Line segment
+            GameObject link2 = new GameObject("link2");
+            link2.transform.SetParent(sMapGraph, false);
+            Image img2 = link2.AddComponent<Image>();
+            img2.color = new Color(0.2f, 0.7f, 0.3f, 1f); // Line 2 green
+            LayoutElement le2 = link2.AddComponent<LayoutElement>();
+            le2.preferredWidth = 24f;
+            le2.preferredHeight = 4f;
+
+            HudButton(sMapGraph, UiElementNames.StationGuro, "대림"); // Task 20 calls for Daerim
+
             HudButton(route, UiElementNames.ActionDepart, "출정");
             HudButton(route, UiElementNames.ActionFaceEncounter, "조우");
             HudButton(route, UiElementNames.ActionEnterResolution, "해결 진입");
