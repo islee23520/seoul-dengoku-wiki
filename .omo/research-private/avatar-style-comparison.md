@@ -140,3 +140,56 @@
 - FF9 SD 채택의 폴리곤 예산 설: 출처 없음(오해 표기 권장).
 - PZ "실루엣 우선" 선언문, Mixamo 사용, 현재 애니 클립 수.
 
+## C1+. VRM/VRoid 팩 — "VRM 메이커 어셋" 경로 검증 (2026-09-07)
+
+### 라이선스(최중요 — 공식 문구 확인)
+- 권리 귀속: VRoid Studio로 만든 아바타·아이템·3D 모델의 저작권 등 권리는 **모델을 만든 사용자에게 귀속**(개별 약관 제11조: "All Intellectual Property Rights and other rights to avatars, items, and other 3D models created using Software will belong to the Users that created such models"). 단, 회사/제3자 제공 콘텐츠(기본 신체 메시·프리셋)가 포함되면 그 부분 권리는 pixiv 등에 귀속. [policies.pixiv.net]
+- 상업 이용: 제12조 "Users will be licensed to use Output Items for any purpose, as long as they do not breach the license conditions specified for any Provided Content used" + 공식 FAQ 명문: "The models created with VRoid Studio Stable Ver. can be used for commercial purposes" / "You can sell data and use it for commercial purposes, regardless of whether you're an individual or corporate body". [policies.pixiv.net, vroid.pixiv.help FAQ]
+- 금지선: ① 제13조 3항 — 메시 변형·조합으로 3D 모델을 생성하는 앱(=경쟁 캐릭터 메이커) 제작 금지(게임 표시 용도는 해당 없음), ② 제3자 텍스처·BOOTH 아이템은 각자 라이선스 따름, ③ Studio 앱 자체의 상업 이용은 별개 금지(모델 출력물과 무관), ④ 특수 조항 프리셋(CLCT 등) 주의. [policies.pixiv.net 제13조, FAQ]
+- AI 학습: Studio 자체 조항엔 출력물 AI 학습 조항 없음. pixiv 공통규약 제14조는 '서비스에 게시된 정보' 대상 — 디스크에만 있던 자체 .vrm엔 미적용(UNVERIFIED). Hub 게시 제3자 모델 학습은 금지 방향. [policies.pixiv.net]
+- VRM 1.0 파일 메타(수출자가 설정, 기본값 제한적): avatarPermission 기본 onlyAuthor, commercialUsage 기본 personalNonProfit — **회사 배포는 `corporation` 직접 설정 필요**("Corporate organization users cannot use this model unless the property is corporation"), creditNotation 기본 required, 재배포·수정 기본 금지. 자체 캐릭터라도 수출 시 메타를 정직하게 설정하는 규율 필요. [VRM 1.0 meta 스키마]
+
+### 기능·파이프라인 사실
+- 파라미터 범위: 얼굴 17카테고리(눈·홍채·하이라이트·속눈썹·표정 에디터 등) + 신체 슬라이더(키·어깨너비 등). **두상 수(등신) 범위 수치는 공식 미공개 — 5~6.5등신 스타일라이즈드 성인이 슬라이더 범위 안인지 UNVERIFIED**(실측 필요). [vroid.pixiv.help 공식 도움말]
+- 커스터마이즈 한계: 텍스처 직접 페인트·레이어·UV 텍스처 편집 공식 지원, BOOTH 의상 텍스처 임포트 가능. 그러나 **임의 DCC 메시(Blender/OBJ/FBX) 옷·머리 임포트는 미지원** — `.vroidcustomitem`(파라메트릭 아이템)만. 의상은 Studio 프리셋+텍스처 교체 중심.
+- 내보내기: **VRM 0.0/1.0 전용 — FBX·일반 glTF 내보내기는 공식 문서상 부재**(v2.8.0 노트까지 확인 못함, UNVERIFIED 아님 '미문서화'). → Blender 정합 경로가 없고, Unity로는 UniVRM 에디터 임포트가 정석 경로.
+- Unity 통합: UniVRM v0.131.2(2026-07-24), "supports Unity 2022.3 LTS or later from v0.128.0". **Unity 6 URP는 진행 중**: RenderGraph 대응 #2529, MToon10 리팩터 #2713, Unity 6.3 임포트 릴링 #2823 모두 오픈 — "Unity 6 공식 지원" 배지는 없음. 우리 에디터 6000.7.0a5(알파)에서의 실측이 선행 과제. URP MToon10은 VRM 1.0에서 지원 — **VRM 0.x MToon은 URP 미지원(unlit 폴백)**이므로 1.0 수출 필수. 에디터 임포트(드래그→프리팹)와 런타임 임포트 모두 공식 경로. [UniVRM README/releases, vrm.dev material 매트릭스]
+- 선행 사례: VRM 소비 게임 존재(Craftopia가 VRM 대응으로 목록 등재, cluster·VirtualCast). 그러나 **"VRoid로 제작한 NPC를 실제 상용 Unity 게임에 쓴" 공식 등재 사례: UNVERIFIED** — 플랫폼 아바타 용도 사례가 대부분. [vrm.dev applications/showcase]
+
+### 서울 프로젝트 대응 (inference)
+- 라이선스 관문은 통과 가능(사용자 IP+상업 허용 명문) — 저장소 권리 규율(추측 라이선스 금지)도 공식 인용으로 충족. 다만 BOM 프로비넌스 스키마가 `source: generate`(생성 백엔드) 전제라, VRoid류 `source: authoring-tool` 클래스 확장이 필요(파라미터 덤프·스튜디오 버전·사용 프리셋/아이템 목록을 input_hashes 대신 기록하는 새 등재 양식).
+- 아키텍처 비용: UniVRM은 Game/에 들어가는 **신규 패키지 의존** — Intent 게이트(의존 추가 승인) + Unity 6.0.7a5 실측 스파이크가 선행. FBX 부재로 Blender 정합 계약(Asset-Pipeline.md)과 충돌 — VRM 경로는 '정합 없이 Studio 매개변수로만 변형'하거나, VRM→Blender 임포트 후 처리(비공식 경로)를 감수해야.
+- 16국 캐스트 개성: 파라미터 슬라이더+텍스처 페인트로 다양화 가능하나 애니메 스타일 동질화(같은 얼굴 증후군) 위험 — 얼굴 17카테고리·표정 에디터로 어느 정도 완화, 실측 목업으로 검증 필요.
+
+## C2. 툰 렌더 예제 조사 — 얼굴 판독 기준 (2026-09-07)
+
+### 후보 요약 (각 2~4 출처, 정확 두상 수는 전부 육안 추정 UNVERIFIED)
+| 후보 | 등신(육안) | 카메라 | 얼굴 판독 기법 |
+|---|---|---|---|
+| Genshin Impact | ~7-8 | 자유 3인칭 | SDF/스레숄드 페이스맵, 역헐 아웃라인, 얼굴 순방향 광원 |
+| Ni no Kuni | ~5-6(아동 주인공) | 자유 3인칭 | 지브리풍 일러스트 우선 얼굴, 큰 눈 — 셰이더 문서 없음 |
+| 아틀리에(라이자 이후) | ~7-8 | 자유 3인칭 | 리트/셰이드+아웃라인 통상 구성, 공개 셰이더 문서 없음 |
+| FE 엥게이지/풍화설월 | ~6-7 | 지도 탑다운+전투 줌 3인칭 | 전투 줌에서 얼굴 확보 — 맵 폰은 약하게 설계 |
+| GG Xrd/Strive | ~7-8 | 2D 평면+연출 스윙 | 손제작 페이스 노멀, 캐릭터별 광원 벡터, 정점 폭 제어 역헐 — 상한선 |
+| ZZZ | ~7 혼합 | 자유 3인칭 | Genshin 계열(HoyoToon 동일 지원) |
+
+주요 출처: Genshin SDF 커뮤니티 재구성(ReefSnax blender-sdf-face-shadow-baker "each pixel stores the light angle at which that pixel falls into shadow", kaze-mio/Gaolingx 셰이더 리포), GG Xrd Motomura GDC 2015 PDF("faces of the Characters especially needed to be hand crafted"), UTS2 매뉴얼(Angel Ring "fixed position from the camera's perspective"), MToon 문서(Shading Shift 음수·Shadow Receive Multiplier 0으로 얼굴 클린), NiloToon(페이스 얼라이닝 자동 보정·눈/속눈썹 ZOffset·고정폭 림). 자식 원문에 URL 24건(접근일 2026-09-07). miHoYo/Gust 공식 셰이더 강연은 미확보 — 커뮤니티 재구성은 1차 사양 아님.
+
+### 고정 각도 선례 — 핵심 발견
+**고정 45°/35.264° 아이소에서 풀스케일 애니 3D의 얼굴 판독은 실제 선례가 사실상 없다**(조사 결과, 검색 실패가 아닌 결과). 선례는 3패턴: ① 전투 줌으로 이탈(FE 풍화설월/엥게이지), ② 그리드 위 칙비 3D(Disgaea 6 "first time in the series' history... 3D graphics", P5 Tactica), ③ 카메라 부정(GFL2 "grid levels, similar to XCOM, Disgaea" — 실제로는 더 가까움). VRM/MToon은 VR 아바타 스택으로 쓰였지 아이소 타일 SRPG 유닛 렌더 선례 미발견.
+
+### 소형 화면 얼굴 판독 기술(문서화된 것만)
+A. SDF 페이스맵(Genshin식) — 정점 노멀로 얼굴을 광원 계산하지 않고 광원 각도→그림자 저장맵. B. 얼굴 광원 분리(GG 캐릭터별 광원, MToon Shading Shift/Shadow Multiplier, NiloToon 얼굴 자동 보정). C. 카메라 고정 눈 하이라이트(UTS2 Angel Ring)+눈/속눈썹 ZOffset. D. 아웃라인 폭 제어(역헐 정점 폭, MToon WorldCoordinates). E. 두상 과장 — "아이소용 머리 1.3배" 문서는 없으나(UNVERIFIED) Disgaea 6가 칙비로 3D 전환한 것이 제품 선택의 증거. F. NiloToon FOV 왜곡 제거(원근 제거로 얼굴 왜곡 방지).
+
+## 최종 권안 (갱신 — 옵션 A′)
+
+**옵션 A′(권안): 중간 등신(4.5~5.5등신 "heads-up") + VRM(MToon 1.0) 툰 스택 + 얼굴 판독 3종 세트.**
+- 근거: 사용자 요구 4개(풀스케일감·얼굴 판독·툰 렌더·저디테일)를 동시에 만족하는 유일한 조합. 선례상 고정 아이소에서 얼굴을 살리는 길은 두상 과장뿐(Disgaea 6·P5 Tactica·FF9·TOS 3~4등신 가족 모두 같은 선택) — 2.5등신보다 인체형이고 7등신보다 얼굴이 살아 있는 중간 지점. VRoid 슬라이더가 이 범위를 커버하는지는 실측 필요(공식 수치 미공개).
+- 얼굴 스택: SDF 페이스맵(또는 MToon Shading Shift/Shadow Receive 0 단순 구성으로 시작) + 카메라 고정 눈 하이라이트 + 아웃라인 폭 제어. VRM 생태계가 이 스택의 절반을 기본 제공.
+- VRM 채택 조건(순서대로): ① UniVRM을 Unity 6000.7.0a5에서 실측 스파이크(오픈 이슈 3건 — 실패 시 폴백: VRM을 에셋 소스로만 쓰고 렌더는 자체 툰 셰이더), ② VRM 1.0 수출 강제(0.x MToon은 URP 미지원), ③ BOM 프로비넌스 source 클래스 확장(authoring-tool: 스튜디오 버전·파라미터 덤프·사용 프리셋/아이템 등재), ④ VRM 1.0 메타 commercialUsage: corporation 설정 규율, ⑤ 3역할 목업으로 동질화(같은 얼굴 증후군) 실측, ⑥ UniVRM 패키지 의존 추가는 Intent 게이트 승인 필요.
+- 등신 계약: GenreContract.silhouette.headsTall 2.5 → 4.5~5.5(실측으로 확정), pixelHead false 여부 포함. facings:4는 유지 가능(이동 4스냅) — 자유 요 요구는 전투 연출에서만 검토.
+- 대안 비교: 전투 줌 추가(FE식)는 고정 카메라 계약 위반(2번째 카메라 모드) — 소유자가 계약을 여는 게 아니면 제외. PZ식 풀스케일 유지는 얼굴 포기와 동의어(이번 요구 "얼굴도 사용"과 충돌).
+
+## 남은 UNVERIFIED 등기부 (이번 조사분)
+- VRoid 슬라이더의 등신 범위 수치, FBX/일반 glTF 내보내기(공식 문서 부재 — 부재 자체는 확인), UniVRM의 Unity 6 인증(이슈 3건 오픈), VRoid 제작 NPC의 상용 게임 등재 사례, Genshin SDF의 1차 공식 강연, 각 후보의 정확 두상 수(전부 육안).
+
