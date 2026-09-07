@@ -185,12 +185,12 @@ namespace Janseon.Foundation.UI
                 // Try to load the bundled asset
                 try
                 {
-                    Font font = Resources.Load<Font>(\"NanumGothic-Regular\");
+                    Font font = Resources.Load<Font>("NanumGothic-Regular");
                     if (font == null)
                     {
                         // Fallback to explicit bundle path load
                         #if UNITY_EDITOR
-                        font = UnityEditor.AssetDatabase.LoadAssetAtPath<Font>(\"Assets/Janseon/Foundation/UI/Fonts/NanumGothic-Regular.ttf\");
+                        font = UnityEditor.AssetDatabase.LoadAssetAtPath<Font>("Assets/Janseon/Foundation/UI/Fonts/NanumGothic-Regular.ttf");
                         #endif
                     }
 
@@ -201,7 +201,7 @@ namespace Janseon.Foundation.UI
                 }
                 catch (System.Exception ex)
                 {
-                    Debug.LogWarning(\"TmpFont bundle asset creation failed: \" + ex.Message);
+                    Debug.LogWarning("TmpFont bundle asset creation failed: " + ex.Message);
                 }
             }
 
