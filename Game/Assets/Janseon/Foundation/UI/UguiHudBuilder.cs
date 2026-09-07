@@ -13,6 +13,7 @@ namespace Janseon.Foundation.UI
     {
         static Font cachedFont;
         static TMP_FontAsset cachedTmpFont;
+        static bool tmpFontInitialized;
 
         public static EventSystem LastEnsuredEventSystem { get; private set; }
 
@@ -209,10 +210,12 @@ namespace Janseon.Foundation.UI
 
         static TMP_FontAsset TmpFont()
         {
-            if (cachedTmpFont != null)
+            if (tmpFontInitialized)
             {
                 return cachedTmpFont;
             }
+
+            tmpFontInitialized = true;
 
             // TMP creates runtime assets with its mobile SDF shader. Do not reject
             // graphics hosts just because the desktop Distance Field shader is absent.
@@ -298,13 +301,29 @@ namespace Janseon.Foundation.UI
             rt.anchorMax = aMax;
             rt.offsetMin = oMin;
             rt.offsetMax = oMax;
-            TextMeshProUGUI label = go.AddComponent<TextMeshProUGUI>();
-            label.font = TmpFont();
-            label.text = text;
-            label.fontSize = size;
-            label.color = color;
-            label.alignment = align;
-            label.raycastTarget = false;
+            TMP_FontAsset font = TmpFont();
+            if (font != null)
+            {
+                TextMeshProUGUI label = go.AddComponent<TextMeshProUGUI>();
+                label.font = font;
+                label.text = text;
+                label.fontSize = size;
+                label.color = color;
+                label.alignment = align;
+                label.raycastTarget = false;
+            }
+            else
+            {
+                Text label = go.AddComponent<Text>();
+                label.font = CjkFont();
+                label.text = text;
+                label.fontSize = size;
+                label.color = color;
+                label.alignment = align == TextAlignmentOptions.MidlineLeft
+                    ? TextAnchor.MiddleLeft
+                    : TextAnchor.UpperCenter;
+                label.raycastTarget = false;
+            }
             return rt;
         }
 
@@ -329,14 +348,30 @@ namespace Janseon.Foundation.UI
             button.colors = colors;
             GameObject labelGo = new GameObject("label");
             labelGo.transform.SetParent(go.transform, false);
-            TextMeshProUGUI label = labelGo.AddComponent<TextMeshProUGUI>();
-            label.font = TmpFont();
-            label.text = text;
-            label.fontSize = 24;
-            label.color = new Color(0.906f, 0.918f, 0.941f);
-            label.alignment = TextAlignmentOptions.Center;
-            label.raycastTarget = false;
-            RectTransform labelRt = label.rectTransform;
+            TMP_FontAsset font = TmpFont();
+            RectTransform labelRt;
+            if (font != null)
+            {
+                TextMeshProUGUI label = labelGo.AddComponent<TextMeshProUGUI>();
+                label.font = font;
+                label.text = text;
+                label.fontSize = 24;
+                label.color = new Color(0.906f, 0.918f, 0.941f);
+                label.alignment = TextAlignmentOptions.Center;
+                label.raycastTarget = false;
+                labelRt = label.rectTransform;
+            }
+            else
+            {
+                Text label = labelGo.AddComponent<Text>();
+                label.font = CjkFont();
+                label.text = text;
+                label.fontSize = 24;
+                label.color = new Color(0.906f, 0.918f, 0.941f);
+                label.alignment = TextAnchor.MiddleCenter;
+                label.raycastTarget = false;
+                labelRt = label.rectTransform;
+            }
             labelRt.anchorMin = Vector2.zero;
             labelRt.anchorMax = Vector2.one;
             labelRt.offsetMin = Vector2.zero;
