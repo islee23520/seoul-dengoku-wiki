@@ -1,0 +1,48 @@
+# makcha-unity 어셋 재활용 실사 — Hunter02 캐릭터·승강장 프롭 (2026-09-07, 읽기 전용)
+
+- 배경: 소유자 제안 — makcha-unity(막차)에서 쓰던 Hunter02 캐릭터와 승강장 프롭을 seoul-kenshi에 사용하는 방안.
+- 본 문서는 조사 기록이지 반입 승인이 아니다. 반입은 마스터 플랜의 blank-environment extraction gate + seoul BOM 재등록을 통과해야 한다.
+
+## 1. 실물 목록 (파일 나열 기반, 2026-09-07)
+
+- 캐릭터: `MakchaEncore/Assets/Makcha/Art/Hunters/hunter_02/` — hunter_02-runtime.fbx, hunter_02-game-v1.glb(정식), `Handoff/Hunter02Motion-2026-08-26/approved-37bone/hunter_02-rigged-approved-37bone.glb`(리그 승인본), candidates/33-bone WIP GLB. 의상 blend 1(gym-outfit-character-base.blend).
+- 적대: shadow 계열 5색 + 보스 5종(stage1~4, robson, ttukseom) — GLB 14개 중 대부분.
+- 모션: Handoff 패키지 — Mixamo FBX 6종(female-idle/walk, 댄스 4), 리타깃·스킨웨이트·QA 스크립트, SHA256SUMS, UNITY_HANDOFF.md.
+- 파이프라인: tools/Hunter02/(prepare_tripo_candidate.py — Lee Youngseob ARP 좌표 컨트랙트: Tripo +X front → Z-90 → -Y front, 1.7m 발 접지, Tripo 아머처 제거 강제), tripo_arp_orientation.py, tools/art/hunter02_pipeline.py(유료 호출 게이트 TRIPO_CREDITS_APPROVED).
+- **승강장 프롭: 없음.** station/metro/train/platform 메시 0건. `PlatformBuildContractTests`는 배포 플랫폼(Android 주·WebGL 보조) 계약 테스트로 물리적 승강장과 무관. seoul에는 이미 자체 승강장 프롭 6종 승격 완료(ticket-gate·bench·cabinet·pillar·pump-crate·shutter — docs/assets/bom/props/).
+- 모델 합계: fbx 7 · glb 14 · blend 1.
+
+## 2. 출처·권리 (makcha 자체 기록 판독)
+
+- Hunter02 파이프라인: 클립로xy 컨셉 T포즈 턴테이블 → Tripo image-to-multiview → Tripo multiview-to-mesh → Tripo biped 리그 → 리타깃. task_id·sha256이 provenance.json 1.0 체인으로 전부 기록됨(license 필드: "owner-authorized Tripo output").
+- identity-lock.json: "adult compact **5.0 to 5.5 head proportion**" 불변 항목 명시, license "project-owned". 상태 design-locked-production-candidate.
+- 리그: Auto-Rig Pro가 최종 권위(37본 승인). Tripo 자동 리그는 폐기 가능. 모션: Mixamo Y-Bot 리타깃("no hunter upload, no auto-rig") — Mixamo 클립 라이선스는 makcha 기록에 별도 표기 없음(UNVERIFIED — 채택 시 Adobe Mixamo 약관 공식 확인 필요).
+- 모션 품질: UNITY_HANDOFF.md 명시 — 33본 WIP 후보는 idle만 PASS, walk/attack 4종 FAIL(발 부유·몸 티어링·리본 파편). "work-in-progress handoff, not an approved runtime replacement. Do not overwrite hunter_02-game-v1.glb."
+- Tripo 출력 권리: makcha는 project-owned 취급. seoul 채택 시 Tripo 상업 약관 공식 확인을 BOM에 별도 등기(현재 UNVERIFIED).
+- 주의 기록: makcha 파이프라인 자체에 TOS restricted-reference gate("Tree of Savior files stay outside the repository and outside every generator request") — Hunter02는 TOS 파일 미사용 오리지널.
+
+## 3. 기술 적합성 (seoul 계약 대조)
+
+| 항목 | Hunter02 | seoul 계약/방향 | 판정 |
+|---|---|---|---|
+| 등신 | 5.0~5.5 (identity-lock 불변) | 현재 잠금 2.5등신 SD / 검토 중 A′ 4.5~5.5 | **현재 계약 위반, A′ 채택 시 정합** — reuse는 아트 방향 결정의 하위 문제 |
+| 스케일 | 1.7m, 발 Z=0 컨트랙트 | 타일 1.5u (인간 ≈ 1.13타일) | 정합 |
+| 리그/애니 | ARP 37본 + Mixamo 리타깃 절차 | 4방향 이동+23클립 계약 | 절차 이식 가능, 클립 품질은 FAIL 상태(재작업 필요) |
+| 스타일 | 애니 툰(짙은 청록 트윈테일 전술 아이돌) | 툰 렌더 방향(검토 중) | 렌더 정합, 단 캐릭터 자체는 makcha 제품 아이덴티티 |
+| 포맷 | GLB/FBX | GLB/FBX + Blender 정합 | 정합 |
+| 위키 게이트 | — | makcha 명칭 신규 산출물 사용 금지(플랜) | 반입 시 파일명·라벨에서 'hunter/makcha' 용어 처리 주의 |
+
+## 4. 판정
+
+- **승강장 프롭 재활용: 기각(실물 부재).** makcha에는 승강장 프롭이 없고, seoul은 이미 자체 프롭 6종을 BOM 승격으로 보유. 이 절반은 원래 성립하지 않았던 전제.
+- **헌터 캐릭터 "그대로 캐스팅": 비추천.** Hunter02는 makcha의 제품 아이덴티티(전술 아이돌)이지 서울 주민이 아니다. 서울 캐스트의 최종 룩으로 쓰면 두 게임의 정체성이 겹친다.
+- **헌터 파이프라인·리그 자산의 이식: 강력 권장.** (a) Tripo 다중뷰→ARP 37본→Mixamo 리타깃→1.7m 컨트랙트는 A′(4.5~5.5등신 툰 풀스케일형) 방향에서 TRELLIS 단독보다 검증된 인체 경로, (b) QA 도구(프레임별 GIF QA, SHA256SUMS, GLB 컨트랙트 테스트) 그대로 재사용 가능, (c) Hunter02 GLB는 서울 그리드 위 **애니메이션/전술 스터브 액터**(플레이서버)로 즉시 유용 — 캐스트 룩 확정 전 이동·전투 검증에 쓰고 버리는 용도.
+- 선행 조건: 아트 방향 결정(A′ 등신 확정)이 선행돼야 현재 GenreContract(2.5등신) 위반 없이 런타임 반입 가능. 도구 이식은 blank-environment extraction gate(플랜 명시)로.
+
+## 5. 도입 경로 (소유자 결정 후, 순서대로)
+
+1. 소유자 결정: 용도 선택 — (a) 스터브 액터(권장), (b) 파이프라인·도구만 추출, (c) 캐릭터 룩 이관(비추천).
+2. Extraction gate: 대상 파일(GLB 1~2 + Handoff 패키지 + tools/Hunter02 스크립트)을 SHA256SUMS·provenance.json 첨부로 seoul ArtSource에 복사 — makcha는 수정하지 않음.
+3. BOM 재등록: seoul BOM 신규 클래스(source: cross-project-import, makcha provenance 체인 첨부, Mixamo/Tripo 라이선스 등기, owner_verdict: pending → 소유자 육안 승격).
+4. 모션: idle만 이용하거나 walk/attack 재작업 후 QA 재통과.
+5. 런타임 반입은 아트 방향 결정(GenreContract 개정) 이후로 순서 확정.
