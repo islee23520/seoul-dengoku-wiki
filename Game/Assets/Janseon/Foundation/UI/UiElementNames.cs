@@ -49,6 +49,8 @@ namespace Janseon.Foundation.UI
         public const string ActionEnterResolution = "action-enter-resolution";
         public const string ActionSettle = "action-settle";
         public const string BattleAdvance = "battle-advance";
+        public const string BattleWait = "battle-wait";
+        public const string MissionConsole = "mission-console";
 
         public const string Res720Class = "jk-res-720";
         public const string Res1080Class = "jk-res-1080";

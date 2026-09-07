@@ -29,7 +29,7 @@ namespace Janseon.Foundation.UI
         int commandSeq;
         bool wired;
         bool disposed;
-        PlaceholderVoxelWorld voxelWorld;
+        HeightmapVoxelWorld voxelWorld;
 
         public PocCoreLoopController(GameplayPresenter presenter, GameplayUiHost host)
         {
@@ -67,8 +67,13 @@ namespace Janseon.Foundation.UI
 
             host.AttachLoop(this);
             WirePresenter();
-            EnsureVoxelWorld();
             BeginNewRun(DefaultSeed, DefaultCampaignId);
+            EnsureVoxelWorld();
+            if (campaign != null)
+            {
+                voxelWorld?.SyncActor(campaign.Node);
+            }
+
             IsReady = true;
         }
 
@@ -122,6 +127,11 @@ namespace Janseon.Foundation.UI
             presenter.BypassChosen += OnBypass;
             presenter.CombatChosen += OnCombat;
             presenter.BattleAdvanceChosen += OnBattleAdvance;
+            presenter.BattleMoveChosen += OnBattleMove;
+            presenter.BattleMeleeChosen += OnBattleMelee;
+            presenter.BattleRangedChosen += OnBattleRanged;
+            presenter.BattleWaitChosen += OnBattleWait;
+            presenter.BattleEndTurnChosen += OnBattleEndTurn;
             presenter.SettleChosen += OnSettle;
             presenter.ReturnChosen += OnReturn;
             wired = true;
@@ -142,6 +152,11 @@ namespace Janseon.Foundation.UI
             presenter.BypassChosen -= OnBypass;
             presenter.CombatChosen -= OnCombat;
             presenter.BattleAdvanceChosen -= OnBattleAdvance;
+            presenter.BattleMoveChosen -= OnBattleMove;
+            presenter.BattleMeleeChosen -= OnBattleMelee;
+            presenter.BattleRangedChosen -= OnBattleRanged;
+            presenter.BattleWaitChosen -= OnBattleWait;
+            presenter.BattleEndTurnChosen -= OnBattleEndTurn;
             presenter.SettleChosen -= OnSettle;
             presenter.ReturnChosen -= OnReturn;
             wired = false;
@@ -282,6 +297,98 @@ namespace Janseon.Foundation.UI
                    ?? new BattleRejection(BattleRejectReason.InvalidTarget, string.Empty, BattleCommandKind.EndTurn));
         }
 
+        void OnBattleMove(int dx, int dy)
+        {
+            LastClickedAction = "battle-move";
+            ApplyBattle(new BattleCommand
+            {
+                Id = NextCommandId("move"),
+                Kind = BattleCommandKind.Move,
+                ActorId = battle != null && battle.ActiveUnit != null ? battle.ActiveUnit.UnitId : string.Empty,
+                Dx = dx,
+                Dy = dy,
+            });
+        }
+
+        void OnBattleMelee()
+        {
+            LastClickedAction = "battle-melee";
+            ApplyBattle(AttackCommand(BattleCommandKind.MeleeAttack, "melee"));
+        }
+
+        void OnBattleRanged()
+        {
+            LastClickedAction = "battle-ranged";
+            ApplyBattle(AttackCommand(BattleCommandKind.RangedAttack, "ranged"));
+        }
+
+        void OnBattleWait()
+        {
+            LastClickedAction = "battle-wait";
+            ApplyBattle(new BattleCommand
+            {
+                Id = NextCommandId("wait"),
+                Kind = BattleCommandKind.Wait,
+                ActorId = battle != null && battle.ActiveUnit != null ? battle.ActiveUnit.UnitId : string.Empty,
+            });
+        }
+
+        void OnBattleEndTurn()
+        {
+            LastClickedAction = "battle-end-turn";
+            ApplyBattle(new BattleCommand
+            {
+                Id = NextCommandId("end"),
+                Kind = BattleCommandKind.EndTurn,
+                ActorId = battle != null && battle.ActiveUnit != null ? battle.ActiveUnit.UnitId : string.Empty,
+            });
+        }
+
+        BattleCommand AttackCommand(BattleCommandKind kind, string tag)
+        {
+            string actorId = battle != null && battle.ActiveUnit != null ? battle.ActiveUnit.UnitId : string.Empty;
+            string targetId = string.Empty;
+            if (battle != null && battle.Units != null)
+            {
+                for (var i = 0; i < battle.Units.Count; i++)
+                {
+                    BattleUnit u = battle.Units[i];
+                    if (u != null && !u.IsDowned && !string.Equals(u.UnitId, actorId, StringComparison.Ordinal))
+                    {
+                        targetId = u.UnitId;
+                        break;
+                    }
+                }
+            }
+
+            return new BattleCommand
+            {
+                Id = NextCommandId(tag),
+                Kind = kind,
+                ActorId = actorId,
+                TargetId = targetId,
+            };
+        }
+
+        void ApplyBattle(BattleCommand cmd)
+        {
+            if (battle == null || battleLedger == null || cmd == null)
+            {
+                return;
+            }
+
+            object result = BattleApi.Apply(battle, battleLedger, cmd);
+            if (result is BattleState next)
+            {
+                battle = next;
+                LastRejection = null;
+                Publish();
+                return;
+            }
+
+            Reject(result);
+        }
+
         void OnSettle()
         {
             LastClickedAction = UiElementNames.ActionSettle;
@@ -386,8 +493,24 @@ namespace Janseon.Foundation.UI
         void Reject(object rejection)
         {
             LastRejection = rejection;
+            host.ApplyWhy(FormatWhy(rejection));
             CommandRejected?.Invoke(rejection);
             StateChanged?.Invoke();
+        }
+
+        static string FormatWhy(object rejection)
+        {
+            switch (rejection)
+            {
+                case BattleRejection battle:
+                    return "왜 불가: " + battle.Reason + " · " + battle.Attempted;
+                case CampaignRejection campaign:
+                    return "왜 불가: " + campaign.Reason + " · 단계 " + campaign.Stage;
+                case SettlementRejection settle:
+                    return "왜 불가: " + settle.Reason;
+                default:
+                    return rejection == null ? string.Empty : rejection.ToString();
+            }
         }
 
         void Publish()
@@ -407,8 +530,27 @@ namespace Janseon.Foundation.UI
                 return;
             }
 
-            Camera camera = Camera.main;
-            voxelWorld = PlaceholderVoxelWorld.Create(null, camera);
+            Camera camera = host != null ? host.StationCamera : null;
+            if (camera == null)
+            {
+                camera = Camera.main;
+            }
+
+            if (camera == null)
+            {
+                throw new InvalidOperationException(
+                    "Foundation Main Camera missing: assign the scene camera in the builder or tag it MainCamera.");
+            }
+
+            LayerId layer = campaign != null && campaign.Node.Equals(StationId.Sindorim)
+                ? LayerId.B2
+                : LayerId.B1;
+            voxelWorld = HeightmapVoxelWorld.Create(
+                null,
+                camera,
+                campaign != null ? campaign.Seed : DefaultSeed,
+                layer);
+            voxelWorld.PlaceStationProps(host != null ? host.StationPropsRoot : null);
         }
 
         CommandId NextCommandId(string kind)
@@ -431,6 +573,8 @@ namespace Janseon.Foundation.UI
                 BattleId = source.BattleId,
                 Outcome = source.Outcome,
                 ResultHash = source.ResultHash,
+                // Immutable snapshot — reference copy keeps the exact-once payload identical.
+                UnitHp = source.UnitHp,
             };
         }
 

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Text;
@@ -260,6 +261,75 @@ namespace Janseon.Tests.EditMode
             var h2 = Run();
             Assert.AreEqual(h1, h2);
             Assert.IsFalse(string.IsNullOrEmpty(h1));
+        }
+
+        [Test]
+        public void ChooseCombat_CarriesPartyHpIntoBattleContext()
+        {
+            var graph = Graph();
+            var ledger = new Ledger();
+
+            CampaignState ReachResolutionWith(int allyHp)
+            {
+                var state = Fresh();
+                state = MustState(CampaignApi.Apply(graph, state, ledger, Cmd("hp-depart", CampaignCommandKind.Depart)), "Depart");
+                state = MustState(
+                    CampaignApi.Apply(graph, state, ledger, Cmd("hp-travel", CampaignCommandKind.Travel, StationId.Sindorim)),
+                    "Travel");
+                state = MustState(CampaignApi.Apply(graph, state, ledger, Cmd("hp-face", CampaignCommandKind.FaceEncounter)), "Face");
+                state = MustState(CampaignApi.Apply(graph, state, ledger, Cmd("hp-enter", CampaignCommandKind.EnterResolution)), "Enter");
+                state.PartyHp = new UnitHpSnapshot(new Dictionary<string, int> { [BattleApi.AllyId] = allyHp });
+                return state;
+            }
+
+            var wounded = (BattleRequired)CampaignApi.Apply(
+                graph,
+                ReachResolutionWith(7),
+                ledger,
+                Cmd("hp-combat", CampaignCommandKind.ChooseCombat));
+            Assert.IsTrue(wounded.Context.StartHp.TryGet(BattleApi.AllyId, out var seven));
+            Assert.AreEqual(7, seven, "combat handoff must carry the persistent party HP");
+
+            var unwounded = (BattleRequired)CampaignApi.Apply(
+                graph,
+                ReachResolutionWith(BattleApi.DefaultMaxHp),
+                ledger,
+                Cmd("hp-combat", CampaignCommandKind.ChooseCombat));
+            Assert.IsTrue(unwounded.Context.StartHp.TryGet(BattleApi.AllyId, out var ten));
+            Assert.AreEqual(BattleApi.DefaultMaxHp, ten, "default party opens full through the same seam");
+            Assert.AreNotEqual(
+                wounded.Context.ContextHash,
+                unwounded.Context.ContextHash,
+                "immutable context integrity must bind the party HP snapshot");
+            Assert.AreNotEqual(
+                wounded.Context.BattleId,
+                unwounded.Context.BattleId,
+                "battle identity must distinguish handoffs that differ only in party HP");
+            Assert.AreEqual(
+                wounded.Context.SeedIdentityHash,
+                unwounded.Context.SeedIdentityHash,
+                "party condition changes content integrity, not the deterministic initiative stream");
+            Assert.AreEqual(
+                BattleApi.FindUnit(BattleApi.Open(wounded.Context), BattleApi.AllyId).Initiative,
+                BattleApi.FindUnit(BattleApi.Open(unwounded.Context), BattleApi.AllyId).Initiative,
+                "HP integrity changes must not reroll established initiative");
+            Assert.AreNotEqual(
+                BattleApi.Open(wounded.Context).OpeningHash,
+                BattleApi.Open(unwounded.Context).OpeningHash,
+                "opening hash must distinguish battles that differ only in party HP");
+        }
+
+        [Test]
+        public void CampaignHash_IncludesPartyHp()
+        {
+            var a = Fresh();
+            var b = Fresh();
+            Assert.AreEqual(CampaignApi.ComputeStateHash(a), CampaignApi.ComputeStateHash(b));
+            b.PartyHp = new UnitHpSnapshot(new Dictionary<string, int> { [BattleApi.AllyId] = 7 });
+            Assert.AreNotEqual(
+                CampaignApi.ComputeStateHash(a),
+                CampaignApi.ComputeStateHash(b),
+                "campaign state hash must include the party HP store");
         }
 
         /// <summary>

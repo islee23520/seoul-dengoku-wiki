@@ -1,0 +1,512 @@
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
+using TMPro;
+
+namespace Janseon.Foundation.UI
+{
+    /// <summary>
+    /// Visible emergency-console HUD (research grammar). Names match UiElementNames.
+    /// </summary>
+    public static class UguiHudBuilder
+    {
+        static Font cachedFont;
+        static TMP_FontAsset cachedTmpFont;
+
+        public static EventSystem LastEnsuredEventSystem { get; private set; }
+
+        public static RectTransform BuildGameplay(Transform parent)
+        {
+            EnsureEventSystem();
+            GameObject canvasGo = new GameObject("GameplayCanvas");
+            if (parent != null)
+            {
+                canvasGo.transform.SetParent(parent, false);
+            }
+
+            Canvas canvas = canvasGo.AddComponent<Canvas>();
+            canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+            canvas.sortingOrder = 80;
+            CanvasScaler scaler = canvasGo.AddComponent<CanvasScaler>();
+            scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+            scaler.referenceResolution = new Vector2(1280f, 720f);
+            scaler.matchWidthOrHeight = 0.5f;
+            canvasGo.AddComponent<GraphicRaycaster>();
+
+            RectTransform root = Stretch(canvasGo.transform, UiElementNames.GameplayRoot);
+            Image rootBg = root.gameObject.AddComponent<Image>();
+            rootBg.color = new Color(0f, 0f, 0f, 0f);
+            rootBg.raycastTarget = false;
+
+            RectTransform rail = Band(root, UiElementNames.StageRail, new Vector2(0f, 1f), new Vector2(1f, 1f), new Vector2(12f, -44f), new Vector2(-12f, -8f));
+            Chip(rail, UiElementNames.StageBasePrep, "거점 준비");
+            Chip(rail, UiElementNames.StageExpedition, "원정");
+            Chip(rail, UiElementNames.StageEncounter, "조우");
+            Chip(rail, UiElementNames.StageResolution, "해결");
+            Chip(rail, UiElementNames.StageSettlement, "정산");
+            Chip(rail, UiElementNames.StageBaseReady, "복귀");
+            Chip(rail, "layer-chip", "B1");
+
+            RectTransform party = Band(root, "party-strip", new Vector2(0f, 1f), new Vector2(0.46f, 1f), new Vector2(12f, -100f), new Vector2(0f, -52f));
+            Party(party, "party-slot-0", "탐험가");
+            Party(party, "party-slot-1", "의무병");
+            Party(party, "party-slot-2", "순찰대");
+
+            RectTransform route = Panel(root, UiElementNames.RouteRail, new Vector2(0f, 0f), new Vector2(0f, 1f), new Vector2(12f, 12f), new Vector2(236f, -112f));
+            HudButton(route, UiElementNames.StationYeongdeungpo, "영등포");
+            HudButton(route, UiElementNames.StationSindorim, "신도림");
+            HudButton(route, UiElementNames.StationGuro, "구로");
+            HudButton(route, UiElementNames.ActionDepart, "출정");
+            HudButton(route, UiElementNames.ActionFaceEncounter, "조우");
+            HudButton(route, UiElementNames.ActionEnterResolution, "해결 진입");
+            Label(route, UiElementNames.MissionConsole, "임무 · 신도림 B2 보급선 확보 | 실패 시 보급 -10");
+            Label(route, "encounter-context", "");
+
+            RectTransform encounter = Panel(root, UiElementNames.EncounterChoices, new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(-190f, -110f), new Vector2(190f, 130f));
+            Label(encounter, "encounter-heading", "조우 선택");
+            HudButton(encounter, UiElementNames.ChoiceNegotiate, "교섭  ·  자원 -5 / 평판 +3");
+            HudButton(encounter, UiElementNames.ChoiceBypass, "우회  ·  자원 -2 / 평판 -1");
+            HudButton(encounter, UiElementNames.ChoiceCombat, "전투  ·  격자 교전");
+
+            RectTransform battle = Panel(root, UiElementNames.BattleHud, new Vector2(1f, 0f), new Vector2(1f, 1f), new Vector2(-280f, 12f), new Vector2(-12f, -112f));
+            Label(battle, UiElementNames.BattleHp, "HP");
+            Meter(battle, UiElementNames.BattleHpMeter, UiElementNames.BattleHpFill, new Color(0.90f, 0.42f, 0.38f));
+            Label(battle, UiElementNames.BattleAp, "AP");
+            Meter(battle, UiElementNames.BattleApMeter, UiElementNames.BattleApFill, new Color(0.39f, 0.72f, 0.69f));
+            HudButton(battle, "battle-move-n", "이동 북  ·  AP1");
+            HudButton(battle, "battle-move-e", "이동 동  ·  AP1");
+            HudButton(battle, "battle-move-s", "이동 남  ·  AP1");
+            HudButton(battle, "battle-move-w", "이동 서  ·  AP1");
+            HudButton(battle, "battle-melee", "근접  ·  AP2 / 5");
+            HudButton(battle, "battle-ranged", "원거리  ·  AP2 / 3");
+            HudButton(battle, UiElementNames.BattleWait, "대기");
+            RectTransform battleGrid = new GameObject(UiElementNames.BattleGrid).AddComponent<RectTransform>();
+            battleGrid.SetParent(battle, false);
+            battleGrid.anchorMin = new Vector2(0f, 0f);
+            battleGrid.anchorMax = new Vector2(1f, 1f);
+            battleGrid.offsetMin = new Vector2(220f, 0f);
+            battleGrid.offsetMax = new Vector2(-320f, -56f);
+            var gridLayout = battleGrid.gameObject.AddComponent<UnityEngine.UI.GridLayoutGroup>();
+            gridLayout.cellSize = new Vector2(72f, 72f);
+            gridLayout.spacing = new Vector2(4f, 4f);
+            gridLayout.constraint = UnityEngine.UI.GridLayoutGroup.Constraint.FixedColumnCount;
+            gridLayout.constraintCount = 5;
+            for (int y = 0; y < 5; y++)
+            {
+                for (int x = 0; x < 5; x++)
+                {
+                    RectTransform cell = new GameObject(UiElementNames.BattleCell(x, y)).AddComponent<RectTransform>();
+                    cell.SetParent(battleGrid, false);
+                    Image cellBg = cell.gameObject.AddComponent<Image>();
+                    cellBg.color = new Color(0.09f, 0.13f, 0.14f, 0.45f);
+                    cellBg.raycastTarget = true;
+                }
+            }
+
+            Label(battle, UiElementNames.BattleLog, "");
+            HudButton(battle, "battle-end-turn", "턴 종료");
+            HudButton(battle, UiElementNames.BattleAdvance, "자동");
+            Label(battle, "battle-forecast", "");
+            Label(battle, "why-tooltip", "");
+
+            RectTransform settle = Panel(root, UiElementNames.SettlementPanel, new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(-210f, -90f), new Vector2(210f, 90f));
+            Image ticket = settle.GetComponent<Image>();
+            ticket.color = new Color(0.835f, 0.800f, 0.710f, 0.96f);
+            Label(settle, "settlement-heading", "정산");
+            Label(settle, UiElementNames.SettlementOutcome, "");
+            HudButton(settle, UiElementNames.ActionSettle, "정산 적용");
+            HudButton(settle, UiElementNames.ReturnAction, "복귀");
+
+            return root;
+        }
+
+        public static RectTransform BuildMainTitle(Transform parent)
+        {
+            EnsureEventSystem();
+            GameObject canvasGo = new GameObject("MainTitleCanvas");
+            if (parent != null)
+            {
+                canvasGo.transform.SetParent(parent, false);
+            }
+
+            Canvas canvas = canvasGo.AddComponent<Canvas>();
+            canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+            canvas.sortingOrder = 70;
+            CanvasScaler scaler = canvasGo.AddComponent<CanvasScaler>();
+            scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+            scaler.referenceResolution = new Vector2(1280f, 720f);
+            scaler.matchWidthOrHeight = 0.5f;
+            canvasGo.AddComponent<GraphicRaycaster>();
+
+            RectTransform root = Stretch(canvasGo.transform, UiElementNames.MainTitleRoot);
+            Image bg = root.gameObject.AddComponent<Image>();
+            bg.color = new Color(0.043f, 0.067f, 0.11f, 1f);
+            bg.raycastTarget = false;
+
+            TmpLabel(root, UiElementNames.MainTitleMark, "잔선: 서울", 72,
+                new Vector2(0f, 0.5f), new Vector2(1f, 0.5f), new Vector2(0f, 48f), new Vector2(0f, 148f),
+                TextAlignmentOptions.Top, new Color(0.906f, 0.918f, 0.941f));
+            TmpLabel(root, "main-title-sub", "붕괴한 서울의 지하철망에서 무명 인물과 파티로 노선의 질서를 세운다", 20,
+                new Vector2(0f, 0.5f), new Vector2(1f, 0.5f), new Vector2(0f, -32f), new Vector2(0f, 32f),
+                TextAlignmentOptions.Top, new Color(0.604f, 0.651f, 0.698f));
+            TmpButton(root, UiElementNames.MainTitleStart, "원정 시작",
+                new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(-140f, 64f), new Vector2(140f, 128f));
+
+            return root;
+        }
+
+        static TMP_FontAsset TmpFont()
+        {
+            if (cachedTmpFont != null)
+            {
+                return cachedTmpFont;
+            }
+
+            // Any usable font asset requires the TMP Distance Field shader (material
+            // creation). In -nographics hosts it is absent, so labels legitimately
+            // carry no font there; task 40 bundles a licensed CJK ttf for renders.
+            if (Shader.Find("TextMeshPro/Distance Field") == null)
+            {
+                return null;
+            }
+
+            try
+            {
+                cachedTmpFont = TMP_FontAsset.CreateFontAsset(CjkFont());
+            }
+            catch (System.Exception ex)
+            {
+                Debug.LogWarning("TmpFont OS-font asset creation failed: " + ex.Message);
+                cachedTmpFont = null;
+            }
+
+            if (cachedTmpFont == null)
+            {
+                // Direct font file paths bypass the OS registry and yield real glyphs.
+                string[] fontFiles =
+                {
+                    "C:/Windows/Fonts/malgun.ttf",
+                    "C:/Windows/Fonts/gulim.ttc",
+                };
+                for (var i = 0; i < fontFiles.Length && cachedTmpFont == null; i++)
+                {
+                    if (!System.IO.File.Exists(fontFiles[i]))
+                    {
+                        continue;
+                    }
+
+                    try
+                    {
+                        cachedTmpFont = TMP_FontAsset.CreateFontAsset(
+                            fontFiles[i], 0, 90, 9,
+                            UnityEngine.TextCore.LowLevel.GlyphRenderMode.SDFAA, 1024, 1024);
+                    }
+                    catch (System.Exception ex)
+                    {
+                        Debug.LogWarning("TmpFont file-path asset creation failed: " + ex.Message);
+                        cachedTmpFont = null;
+                    }
+                }
+            }
+
+            return cachedTmpFont;
+        }
+
+        static RectTransform TmpLabel(RectTransform parent, string name, string text, int size,
+            Vector2 aMin, Vector2 aMax, Vector2 oMin, Vector2 oMax, TextAlignmentOptions align, Color color)
+        {
+            GameObject go = new GameObject(name);
+            go.transform.SetParent(parent, false);
+            RectTransform rt = go.AddComponent<RectTransform>();
+            rt.anchorMin = aMin;
+            rt.anchorMax = aMax;
+            rt.offsetMin = oMin;
+            rt.offsetMax = oMax;
+            TextMeshProUGUI label = go.AddComponent<TextMeshProUGUI>();
+            label.font = TmpFont();
+            label.text = text;
+            label.fontSize = size;
+            label.color = color;
+            label.alignment = align;
+            label.raycastTarget = false;
+            return rt;
+        }
+
+        static RectTransform TmpButton(RectTransform parent, string name, string text,
+            Vector2 aMin, Vector2 aMax, Vector2 oMin, Vector2 oMax)
+        {
+            GameObject go = new GameObject(name);
+            go.transform.SetParent(parent, false);
+            RectTransform rt = go.AddComponent<RectTransform>();
+            rt.anchorMin = aMin;
+            rt.anchorMax = aMax;
+            rt.offsetMin = oMin;
+            rt.offsetMax = oMax;
+            Image img = go.AddComponent<Image>();
+            img.color = new Color(0.149f, 0.212f, 0.227f, 1f);
+            UnityEngine.UI.Button button = go.AddComponent<UnityEngine.UI.Button>();
+            button.targetGraphic = img;
+            ColorBlock colors = button.colors;
+            colors.highlightedColor = new Color(0.835f, 0.929f, 0.765f, 1f);
+            colors.pressedColor = new Color(0.835f, 0.929f, 0.765f, 1f);
+            colors.selectedColor = new Color(0.835f, 0.929f, 0.765f, 1f);
+            button.colors = colors;
+            GameObject labelGo = new GameObject("label");
+            labelGo.transform.SetParent(go.transform, false);
+            TextMeshProUGUI label = labelGo.AddComponent<TextMeshProUGUI>();
+            label.font = TmpFont();
+            label.text = text;
+            label.fontSize = 24;
+            label.color = new Color(0.906f, 0.918f, 0.941f);
+            label.alignment = TextAlignmentOptions.Center;
+            label.raycastTarget = false;
+            RectTransform labelRt = label.rectTransform;
+            labelRt.anchorMin = Vector2.zero;
+            labelRt.anchorMax = Vector2.one;
+            labelRt.offsetMin = Vector2.zero;
+            labelRt.offsetMax = Vector2.zero;
+            return rt;
+        }
+
+        public static Transform Find(Transform root, string name)
+        {
+            if (root == null || string.IsNullOrEmpty(name))
+            {
+                return null;
+            }
+
+            if (root.name == name)
+            {
+                return root;
+            }
+
+            for (var i = 0; i < root.childCount; i++)
+            {
+                Transform hit = Find(root.GetChild(i), name);
+                if (hit != null)
+                {
+                    return hit;
+                }
+            }
+
+            return null;
+        }
+
+        public static UnityEngine.UI.Button ButtonNamed(Transform root, string name)
+        {
+            Transform found = Find(root, name);
+            return found != null ? found.GetComponent<UnityEngine.UI.Button>() : null;
+        }
+
+        public static Text TextNamed(Transform root, string name)
+        {
+            Transform found = Find(root, name);
+            if (found == null)
+            {
+                return null;
+            }
+
+            Text self = found.GetComponent<Text>();
+            return self != null ? self : found.GetComponentInChildren<Text>(true);
+        }
+
+        static void EnsureEventSystem()
+        {
+            if (EventSystem.current != null)
+            {
+                return;
+            }
+
+            GameObject go = new GameObject("EventSystem");
+            EventSystem created = go.AddComponent<EventSystem>();
+            go.AddComponent<StandaloneInputModule>();
+
+            LastEnsuredEventSystem = EventSystem.current != null ? EventSystem.current : created;
+        }
+
+        static RectTransform Stretch(Transform parent, string name)
+        {
+            GameObject go = new GameObject(name);
+            go.transform.SetParent(parent, false);
+            RectTransform rt = go.AddComponent<RectTransform>();
+            rt.anchorMin = Vector2.zero;
+            rt.anchorMax = Vector2.one;
+            rt.offsetMin = Vector2.zero;
+            rt.offsetMax = Vector2.zero;
+            return rt;
+        }
+
+        static RectTransform Band(RectTransform parent, string name, Vector2 aMin, Vector2 aMax, Vector2 oMin, Vector2 oMax)
+        {
+            RectTransform rt = Box(parent, name, aMin, aMax, oMin, oMax, new Color(0.094f, 0.137f, 0.149f, 0.94f));
+            HorizontalLayoutGroup layout = rt.gameObject.AddComponent<HorizontalLayoutGroup>();
+            layout.spacing = 8f;
+            layout.padding = new RectOffset(8, 8, 6, 6);
+            layout.childForceExpandHeight = true;
+            layout.childForceExpandWidth = false;
+            layout.childAlignment = TextAnchor.MiddleLeft;
+            return rt;
+        }
+
+        static RectTransform Panel(RectTransform parent, string name, Vector2 aMin, Vector2 aMax, Vector2 oMin, Vector2 oMax)
+        {
+            RectTransform rt = Box(parent, name, aMin, aMax, oMin, oMax, new Color(0.094f, 0.137f, 0.149f, 0.94f));
+            VerticalLayoutGroup layout = rt.gameObject.AddComponent<VerticalLayoutGroup>();
+            layout.spacing = 6f;
+            layout.padding = new RectOffset(10, 10, 10, 10);
+            layout.childForceExpandHeight = false;
+            layout.childForceExpandWidth = true;
+            return rt;
+        }
+
+        static RectTransform Box(RectTransform parent, string name, Vector2 aMin, Vector2 aMax, Vector2 oMin, Vector2 oMax, Color fill)
+        {
+            GameObject go = new GameObject(name);
+            go.transform.SetParent(parent, false);
+            RectTransform rt = go.AddComponent<RectTransform>();
+            rt.anchorMin = aMin;
+            rt.anchorMax = aMax;
+            rt.offsetMin = oMin;
+            rt.offsetMax = oMax;
+            Image img = go.AddComponent<Image>();
+            img.color = fill;
+            img.raycastTarget = false;
+            return rt;
+        }
+
+        static void Chip(RectTransform parent, string name, string text)
+        {
+            GameObject go = new GameObject(name);
+            go.transform.SetParent(parent, false);
+            Image img = go.AddComponent<Image>();
+            img.color = new Color(0.031f, 0.055f, 0.063f, 1f);
+            LayoutElement le = go.AddComponent<LayoutElement>();
+            le.preferredWidth = 88f;
+            le.preferredHeight = 28f;
+            Label(go.GetComponent<RectTransform>(), name + "-label", text, 13);
+        }
+
+        static void Party(RectTransform parent, string name, string role)
+        {
+            GameObject go = new GameObject(name);
+            go.transform.SetParent(parent, false);
+            Image img = go.AddComponent<Image>();
+            img.color = new Color(0.031f, 0.055f, 0.063f, 1f);
+            VerticalLayoutGroup layout = go.AddComponent<VerticalLayoutGroup>();
+            layout.padding = new RectOffset(8, 6, 4, 4);
+            layout.childForceExpandWidth = true;
+            RectTransform rt = go.GetComponent<RectTransform>();
+            Label(rt, name + "-name", role, 13);
+            Label(rt, name + "-hp", "HP", 12);
+            LayoutElement le = go.AddComponent<LayoutElement>();
+            le.preferredWidth = 148f;
+            le.preferredHeight = 40f;
+        }
+
+        static void Label(RectTransform parent, string name, string text, int size = 13)
+        {
+            GameObject go = new GameObject(name);
+            go.transform.SetParent(parent, false);
+            Text label = go.AddComponent<Text>();
+            label.font = CjkFont();
+            label.text = text;
+            label.fontSize = size;
+            label.color = parent.name == UiElementNames.SettlementPanel
+                ? new Color(0.094f, 0.137f, 0.149f)
+                : new Color(0.91f, 0.90f, 0.85f);
+            label.alignment = TextAnchor.MiddleLeft;
+            label.raycastTarget = false;
+            LayoutElement le = go.AddComponent<LayoutElement>();
+            le.preferredHeight = size + 8;
+            le.minHeight = size + 6;
+        }
+
+        static void HudButton(RectTransform parent, string name, string text)
+        {
+            GameObject go = new GameObject(name);
+            go.transform.SetParent(parent, false);
+            Image img = go.AddComponent<Image>();
+            img.color = new Color(0.149f, 0.212f, 0.227f, 1f);
+            UnityEngine.UI.Button button = go.AddComponent<UnityEngine.UI.Button>();
+            button.targetGraphic = img;
+            ColorBlock colors = button.colors;
+            colors.highlightedColor = new Color(0.835f, 0.929f, 0.765f, 1f);
+            colors.pressedColor = new Color(0.835f, 0.929f, 0.765f, 1f);
+            colors.selectedColor = new Color(0.835f, 0.929f, 0.765f, 1f);
+            colors.disabledColor = new Color(0.25f, 0.28f, 0.30f, 0.7f);
+            button.colors = colors;
+            GameObject labelGo = new GameObject("label");
+            labelGo.transform.SetParent(go.transform, false);
+            Text label = labelGo.AddComponent<Text>();
+            label.font = CjkFont();
+            label.text = text;
+            label.alignment = TextAnchor.MiddleCenter;
+            label.color = new Color(0.91f, 0.90f, 0.85f);
+            label.fontSize = 13;
+            label.raycastTarget = false;
+            RectTransform labelRt = label.rectTransform;
+            labelRt.anchorMin = Vector2.zero;
+            labelRt.anchorMax = Vector2.one;
+            labelRt.offsetMin = Vector2.zero;
+            labelRt.offsetMax = Vector2.zero;
+            LayoutElement le = go.AddComponent<LayoutElement>();
+            le.preferredHeight = 32f;
+            le.minHeight = 28f;
+        }
+
+        static void Meter(RectTransform parent, string meterName, string fillName, Color fillColor)
+        {
+            GameObject meterGo = new GameObject(meterName);
+            meterGo.transform.SetParent(parent, false);
+            Image well = meterGo.AddComponent<Image>();
+            well.color = new Color(0.031f, 0.055f, 0.063f, 1f);
+            well.raycastTarget = false;
+            LayoutElement le = meterGo.AddComponent<LayoutElement>();
+            le.preferredHeight = 10f;
+            le.minHeight = 10f;
+            GameObject fillGo = new GameObject(fillName);
+            fillGo.transform.SetParent(meterGo.transform, false);
+            RectTransform fill = fillGo.AddComponent<RectTransform>();
+            fill.anchorMin = Vector2.zero;
+            fill.anchorMax = Vector2.one;
+            fill.offsetMin = Vector2.zero;
+            fill.offsetMax = Vector2.zero;
+            Image img = fillGo.AddComponent<Image>();
+            img.color = fillColor;
+            img.raycastTarget = false;
+        }
+
+        static Font CjkFont()
+        {
+            if (cachedFont != null)
+            {
+                return cachedFont;
+            }
+
+            try
+            {
+                string[] names = Font.GetOSInstalledFontNames() ?? System.Array.Empty<string>();
+                string[] prefer = { "Malgun Gothic", "맑은 고딕", "Noto Sans CJK KR", "Noto Sans KR" };
+                for (var i = 0; i < prefer.Length; i++)
+                {
+                    if (System.Array.IndexOf(names, prefer[i]) >= 0)
+                    {
+                        cachedFont = Font.CreateDynamicFontFromOSFont(prefer[i], 16);
+                        if (cachedFont != null)
+                        {
+                            return cachedFont;
+                        }
+                    }
+                }
+            }
+            catch (System.Exception)
+            {
+            }
+
+            cachedFont = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf")
+                         ?? Resources.GetBuiltinResource<Font>("Arial.ttf")
+                         ?? Font.CreateDynamicFontFromOSFont("Arial", 16);
+            return cachedFont;
+        }
+    }
+}

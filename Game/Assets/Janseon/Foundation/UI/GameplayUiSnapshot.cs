@@ -34,6 +34,12 @@ namespace Janseon.Foundation.UI
         public string SettlementOutcomeCode { get; private set; } = string.Empty;
         public string SettlementOutcomeText { get; private set; } = string.Empty;
         public List<string> BattleLogEntries { get; } = new List<string>();
+        public List<string> PartyNames { get; } = new List<string>();
+        public List<int> PartyHp { get; } = new List<int>();
+        public List<int> PartyMaxHp { get; } = new List<int>();
+        public string EncounterContext { get; private set; } = string.Empty;
+        public string WhyText { get; private set; } = string.Empty;
+        public string BattleForecast { get; private set; } = string.Empty;
 
         public bool ShowDepartAction { get; private set; }
         public bool ShowTravelActions { get; private set; }
@@ -55,6 +61,13 @@ namespace Janseon.Foundation.UI
 
             snap.CurrentStageElement = StageElement(campaign.Stage);
             snap.CurrentStationElement = StationElement(campaign.Node);
+            snap.EncounterContext = campaign.Node.Value
+                + " · "
+                + campaign.Stage.ToString()
+                + " · 자원 "
+                + campaign.Resources.ToString(CultureInfo.InvariantCulture)
+                + " · 평판 "
+                + campaign.Reputation.ToString(CultureInfo.InvariantCulture);
             snap.NamedFlags[snap.CurrentStageElement + ":current"] = true;
             snap.NamedFlags[snap.CurrentStationElement + ":current"] = true;
 
@@ -232,6 +245,14 @@ namespace Janseon.Foundation.UI
             snap.NamedFlags[UiElementNames.BattleLog + ":visible"] = true;
             snap.NamedFlags[UiElementNames.BattleHpMeter + ":visible"] = true;
             snap.NamedFlags[UiElementNames.BattleApMeter + ":visible"] = true;
+            snap.BattleForecast = "근접 AP"
+                + BattleApi.MeleeApCost.ToString(CultureInfo.InvariantCulture)
+                + " · 피해 "
+                + BattleApi.MeleeDamage.ToString(CultureInfo.InvariantCulture)
+                + " / 원거리 AP"
+                + BattleApi.RangedApCost.ToString(CultureInfo.InvariantCulture)
+                + " · 피해 "
+                + BattleApi.RangedDamage.ToString(CultureInfo.InvariantCulture);
             if (battle.Units == null)
             {
                 return;
@@ -284,6 +305,19 @@ namespace Janseon.Foundation.UI
             if (snap.BattleLogEntries.Count > 0)
             {
                 snap.NamedFlags[UiElementNames.BattleLog + ":bound"] = true;
+            }
+
+            for (var i = 0; i < battle.Units.Count; i++)
+            {
+                BattleUnit unit = battle.Units[i];
+                if (unit == null || !unit.IsPlayer)
+                {
+                    continue;
+                }
+
+                snap.PartyNames.Add(unit.UnitId);
+                snap.PartyHp.Add(unit.Hp);
+                snap.PartyMaxHp.Add(unit.MaxHp);
             }
         }
 

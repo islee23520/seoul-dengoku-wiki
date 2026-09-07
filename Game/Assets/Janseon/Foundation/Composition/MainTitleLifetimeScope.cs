@@ -17,7 +17,6 @@ namespace Janseon.Foundation.Composition
         {
             if (runtimeSlots == null) throw new System.InvalidOperationException("MainTitle runtime slot catalog missing");
             builder.RegisterInstance<IRuntimeSlotCatalog>(runtimeSlots);
-            builder.Register<RuntimeSlotView>(Lifetime.Scoped);
             builder.Register<UiScreenDocumentLease>(Lifetime.Scoped).AsSelf();
             builder.Register<MainTitlePresenter>(Lifetime.Scoped).AsSelf();
             builder.RegisterComponentInHierarchy<MainTitleUiHost>();

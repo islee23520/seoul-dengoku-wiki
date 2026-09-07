@@ -14,7 +14,6 @@ namespace Janseon.Foundation.Composition
         {
             if (runtimeSlots == null) throw new System.InvalidOperationException("Foundation runtime slot catalog missing");
             builder.RegisterInstance<IRuntimeSlotCatalog>(runtimeSlots);
-            builder.Register<RuntimeSlotView>(Lifetime.Scoped);
             builder.Register<UiScreenDocumentLease>(Lifetime.Scoped).AsSelf();
             builder.Register<GameplayPresenter>(Lifetime.Scoped).AsSelf();
             builder.RegisterComponentInHierarchy<GameplayUiHost>();

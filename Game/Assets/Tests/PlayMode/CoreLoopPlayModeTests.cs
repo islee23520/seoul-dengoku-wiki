@@ -11,8 +11,8 @@ using Janseon.Foundation.Composition;
 using Janseon.Foundation.UI;
 using NUnit.Framework;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
 using VContainer;
 using VContainer.Unity;
 
@@ -60,14 +60,14 @@ namespace Janseon.Foundation.Tests
             Assert.That(session.Campaign.Node, Is.EqualTo(StationId.Yeongdeungpo));
             Assert.That(session.Campaign.Seed, Is.EqualTo(Seed));
 
-            VisualElement root = host.Document.rootVisualElement;
+            RectTransform root = host.CanvasRoot;
             Assert.That(root, Is.Not.Null);
-            VisualElement prep = root.Q(UiElementNames.StageBasePrep);
+            Transform prep = UguiHudBuilder.Find(root, UiElementNames.StageBasePrep);
             Assert.That(prep, Is.Not.Null);
-            Assert.That(prep.ClassListContains("jk-chip--current"), Is.True,
+            Assert.That(prep.GetComponentInChildren<UnityEngine.UI.Text>(true).color, Is.EqualTo(new Color(0.835f, 0.929f, 0.765f)),
                 "BasePreparation chip must be current after Start→Foundation");
 
-            Button depart = root.Q<Button>(ActionDepart);
+            Button depart = UguiHudBuilder.ButtonNamed(root, ActionDepart);
             Assert.That(depart, Is.Not.Null, "action-depart must exist for prepare/dispatch");
             Assert.That(changed, Is.Not.Null);
         }
@@ -79,7 +79,7 @@ namespace Janseon.Foundation.Tests
             GameplayUiHost host = FindGameplayHost();
             IPocCoreLoopSession session = ResolveSession(host);
             Assert.That(session, Is.Not.Null, "IPocCoreLoopSession required");
-            VisualElement root = RequireRoot(host);
+            RectTransform root = RequireRoot(host);
 
             await ClickAndAwait(session, root, ActionDepart, s =>
                 s.Campaign.Stage == CampaignStage.ExpeditionTravel);
@@ -100,12 +100,13 @@ namespace Janseon.Foundation.Tests
 
             Assert.That(session.Campaign.Stage, Is.EqualTo(CampaignStage.Resolution));
             Assert.That(session.Campaign.Node, Is.EqualTo(StationId.Sindorim));
-            Assert.That(root.Q(UiElementNames.EncounterChoices), Is.Not.Null);
-            Assert.That(root.Q<Button>(UiElementNames.ChoiceNegotiate), Is.Not.Null);
-            Assert.That(root.Q<Button>(UiElementNames.ChoiceBypass), Is.Not.Null);
-            Assert.That(root.Q<Button>(UiElementNames.ChoiceCombat), Is.Not.Null);
-            VisualElement stageRes = root.Q(UiElementNames.StageResolution);
-            Assert.That(stageRes.ClassListContains("jk-chip--current"), Is.True);
+            Assert.That(UguiHudBuilder.Find(root, UiElementNames.EncounterChoices), Is.Not.Null);
+            Assert.That(UguiHudBuilder.ButtonNamed(root, UiElementNames.ChoiceNegotiate), Is.Not.Null);
+            Assert.That(UguiHudBuilder.ButtonNamed(root, UiElementNames.ChoiceBypass), Is.Not.Null);
+            Assert.That(UguiHudBuilder.ButtonNamed(root, UiElementNames.ChoiceCombat), Is.Not.Null);
+            Transform stageRes = UguiHudBuilder.Find(root, UiElementNames.StageResolution);
+            Assert.That(stageRes.GetComponentInChildren<UnityEngine.UI.Text>(true).color,
+                Is.EqualTo(new Color(0.835f, 0.929f, 0.765f)), "resolution chip current color");
         }
 
         [Test]
@@ -198,7 +199,7 @@ namespace Janseon.Foundation.Tests
             GameplayUiHost host = FindGameplayHost();
             IPocCoreLoopSession session = ResolveSession(host);
             Assert.That(session, Is.Not.Null, "IPocCoreLoopSession required");
-            VisualElement root = RequireRoot(host);
+            RectTransform root = RequireRoot(host);
 
             // ---- Depart: first UI success ----
             await ClickAndAwait(session, root, ActionDepart, s =>
@@ -209,9 +210,9 @@ namespace Janseon.Foundation.Tests
             object rejectionBefore = session.LastRejection;
 
             // (1) Actual UI button disabled / second click ignored — zero command/event/hash change.
-            Button departBtn = root.Q<Button>(ActionDepart);
+            Button departBtn = UguiHudBuilder.ButtonNamed(root, ActionDepart);
             Assert.That(departBtn, Is.Not.Null);
-            Assert.That(departBtn.enabledInHierarchy, Is.False,
+            Assert.That(departBtn.interactable, Is.False,
                 "action-depart must disable after successful depart");
             AttemptClickNamed(root, ActionDepart);
             Assert.That(session.CampaignHash, Is.EqualTo(hashAfterDepart), "UI double-depart hash");
@@ -252,9 +253,9 @@ namespace Janseon.Foundation.Tests
             SettlementReceipt dupBefore = session.LastDuplicateReceipt;
 
             // (1) Settle button disabled after apply — second UI click ignored, zero side effect.
-            Button settleBtn = root.Q<Button>(ActionSettle);
+            Button settleBtn = UguiHudBuilder.ButtonNamed(root, ActionSettle);
             Assert.That(settleBtn, Is.Not.Null);
-            Assert.That(settleBtn.enabledInHierarchy, Is.False,
+            Assert.That(settleBtn.interactable, Is.False,
                 "action-settle must disable after successful settle (return takes over)");
             AttemptClickNamed(root, ActionSettle);
             Assert.That(session.CampaignHash, Is.EqualTo(settledHash), "UI double-settle hash");
@@ -310,7 +311,7 @@ namespace Janseon.Foundation.Tests
             GameplayUiHost host = FindGameplayHost();
             IPocCoreLoopSession session = ResolveSession(host);
             Assert.That(session, Is.Not.Null, "IPocCoreLoopSession required for branch " + choice);
-            VisualElement root = RequireRoot(host);
+            RectTransform root = RequireRoot(host);
             var clicks = new List<string>();
             var result = new BranchResult { Session = session };
 
@@ -377,9 +378,9 @@ namespace Janseon.Foundation.Tests
             string hashBeforeDup = session.CampaignHash;
             int eventsBeforeDup = session.CampaignLedger.Events.Count;
             SettlementReceipt firstReceipt = session.LastReceipt;
-            Button settleBtn = root.Q<Button>(ActionSettle);
+            Button settleBtn = UguiHudBuilder.ButtonNamed(root, ActionSettle);
             Assert.That(settleBtn, Is.Not.Null);
-            Assert.That(settleBtn.enabledInHierarchy, Is.False, "settle disabled after apply");
+            Assert.That(settleBtn.interactable, Is.False, "settle disabled after apply");
             AttemptClickNamed(root, ActionSettle);
             Assert.That(session.CampaignHash, Is.EqualTo(hashBeforeDup), "UI dup settle ignored");
             Assert.That(session.CampaignLedger.Events.Count, Is.EqualTo(eventsBeforeDup));
@@ -404,7 +405,7 @@ namespace Janseon.Foundation.Tests
 
         static async Task ClickAndAwait(
             IPocCoreLoopSession session,
-            VisualElement root,
+            RectTransform root,
             string elementName,
             Func<IPocCoreLoopSession, bool> predicate)
         {
@@ -418,33 +419,23 @@ namespace Janseon.Foundation.Tests
                 + " rejection=" + (session.LastRejection?.GetType().Name ?? "none"));
         }
 
-        static void ClickNamed(VisualElement root, string name)
+        static void ClickNamed(RectTransform root, string name)
         {
-            Button button = root.Q<Button>(name);
+            Button button = UguiHudBuilder.ButtonNamed(root, name);
             Assert.That(button, Is.Not.Null, "missing clickable button " + name);
-            Assert.That(button.enabledInHierarchy, Is.True, name + " must be enabled");
-            button.Focus();
-            using (var evt = NavigationSubmitEvent.GetPooled())
-            {
-                evt.target = button;
-                button.SendEvent(evt);
-            }
+            Assert.That(button.interactable, Is.True, name + " must be enabled");
+            button.onClick.Invoke();
         }
 
         /// <summary>
         /// Sends the same NavigationSubmit the production path uses even when the control is
         /// disabled — used to prove disabled UI ignores the second click (no domain dispatch).
         /// </summary>
-        static void AttemptClickNamed(VisualElement root, string name)
+        static void AttemptClickNamed(RectTransform root, string name)
         {
-            Button button = root.Q<Button>(name);
+            Button button = UguiHudBuilder.ButtonNamed(root, name);
             Assert.That(button, Is.Not.Null, "missing button for attempt-click " + name);
-            button.Focus();
-            using (var evt = NavigationSubmitEvent.GetPooled())
-            {
-                evt.target = button;
-                button.SendEvent(evt);
-            }
+            button.onClick.Invoke();
         }
 
         static Task WaitSignal(IPocCoreLoopSession session)
@@ -480,10 +471,9 @@ namespace Janseon.Foundation.Tests
             await task;
         }
 
-        static VisualElement RequireRoot(GameplayUiHost host)
+        static RectTransform RequireRoot(GameplayUiHost host)
         {
-            Assert.That(host.Document, Is.Not.Null);
-            VisualElement root = host.Document.rootVisualElement;
+            RectTransform root = host.CanvasRoot;
             Assert.That(root, Is.Not.Null);
             return root;
         }
@@ -570,8 +560,8 @@ namespace Janseon.Foundation.Tests
             Assert.That(titleOutcome.Status, Is.EqualTo(TransitionStatus.Completed));
             Assert.That(coordinator.CurrentState, Is.EqualTo(ApplicationFlowState.MainTitle));
 
-            VisualElement titleRoot = titleHost.Document.rootVisualElement;
-            Button start = titleRoot.Q<Button>(UiElementNames.MainTitleStart);
+            RectTransform titleRoot = titleHost.CanvasRoot;
+            Button start = UguiHudBuilder.ButtonNamed(titleRoot, UiElementNames.MainTitleStart);
             Assert.That(start, Is.Not.Null, "main-title-start missing");
 
             var presenterField = typeof(MainTitleUiHost).GetField(
@@ -587,12 +577,7 @@ namespace Janseon.Foundation.Tests
             Task<TransitionOutcome> foundationCommit = null;
 
             // Drive production Start button (same handler as main-title-start).
-            start.Focus();
-            using (var evt = NavigationSubmitEvent.GetPooled())
-            {
-                evt.target = start;
-                start.SendEvent(evt);
-            }
+            start.onClick.Invoke();
 
             // Capture the coordinator transition task; if NavigationSubmit did not start it,
             // invoke the production presenter Start seam (identical OpenFoundationAsync path).

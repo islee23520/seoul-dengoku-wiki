@@ -1,16 +1,18 @@
-using System;
-using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
-using Janseon.Foundation.AppFlow;
-using Janseon.Foundation.UI;
-using UnityEngine.UIElements;
-
 namespace Janseon.Foundation.Composition
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Threading;
+    using System.Threading.Tasks;
+    using Janseon.Foundation.AppFlow;
+    using Janseon.Foundation.UI;
+    using UnityEngine;
+    using UnityEngine.EventSystems;
+    using UnityEngine.UI;
+
     /// <summary>
-    /// MainTitle UI presenter: binds Design.md element names and Start → OpenFoundation.
-    /// ApplicationFlowCoordinator is constructor-injected from the parent App scope.
+    /// uGUI MainTitle presenter. Binds the runtime canvas built by
+    /// UguiHudBuilder.BuildMainTitle and forwards Start to the public FSM.
     /// </summary>
     public sealed class MainTitlePresenter
     {
@@ -27,9 +29,12 @@ namespace Janseon.Foundation.Composition
 
         public IReadOnlyList<string> FocusOrderNames => focusOrder;
 
-        public bool BindForTest(VisualElement root) => Bind(root);
+        public bool BindForTest(Transform root)
+        {
+            return Bind(root);
+        }
 
-        public bool Bind(VisualElement root)
+        public bool Bind(Transform root)
         {
             focusOrder.Clear();
             startButton = null;
@@ -40,35 +45,34 @@ namespace Janseon.Foundation.Composition
                 return false;
             }
 
-            VisualElement titleRoot = root.name == UiElementNames.MainTitleRoot
+            Transform titleRoot = root.name == UiElementNames.MainTitleRoot
                 ? root
-                : root.Q(UiElementNames.MainTitleRoot);
-            if (titleRoot == null || titleRoot.Q(UiElementNames.MainTitleMark) == null)
+                : root.Find(UiElementNames.MainTitleRoot);
+            if (titleRoot == null)
             {
                 return false;
             }
 
-            startButton = titleRoot.Q<Button>(UiElementNames.MainTitleStart);
+            Transform mark = titleRoot.Find(UiElementNames.MainTitleMark);
+            if (mark == null)
+            {
+                return false;
+            }
+
+            Transform start = titleRoot.Find(UiElementNames.MainTitleStart);
+            startButton = start != null ? start.GetComponent<Button>() : null;
             if (startButton == null)
             {
                 return false;
             }
 
-            startButton.UnregisterCallback<FocusInEvent>(OnStartFocusIn);
-            startButton.UnregisterCallback<FocusOutEvent>(OnStartFocusOut);
-            startButton.clicked -= OnStartClicked;
-            startButton.clicked += OnStartClicked;
-            startButton.RegisterCallback<FocusInEvent>(OnStartFocusIn);
-            startButton.RegisterCallback<FocusOutEvent>(OnStartFocusOut);
+            startButton.onClick.RemoveListener(PressStart);
+            startButton.onClick.AddListener(PressStart);
             focusOrder.Add(UiElementNames.MainTitleStart);
             IsReady = true;
             return true;
         }
 
-        /// <summary>
-        /// Drive Start focus through the real VisualElement focus API (Design.md C1/C2).
-        /// FocusIn/Out toggles production jk-focused class (mirrors :focus stroke-focus tokens).
-        /// </summary>
         public bool FocusStart()
         {
             if (startButton == null)
@@ -76,29 +80,31 @@ namespace Janseon.Foundation.Composition
                 return false;
             }
 
-            startButton.focusable = true;
-            startButton.tabIndex = 0;
-            startButton.Focus();
-            // FocusIn may not fire under batchmode panel; ensure class matches focused state.
-            startButton.AddToClassList("jk-focused");
+            EventSystem current = EventSystem.current != null
+                ? EventSystem.current
+                : UguiHudBuilder.LastEnsuredEventSystem;
+            if (current == null)
+            {
+                return false;
+            }
+
+            current.SetSelectedGameObject(startButton.gameObject);
             return true;
         }
 
-        void OnStartFocusIn(FocusInEvent _)
+        public Task<TransitionOutcome> TriggerStartForTest()
         {
-            startButton?.AddToClassList("jk-focused");
+            return StartAsync(CancellationToken.None);
         }
 
-        void OnStartFocusOut(FocusOutEvent _)
+        public void PressStart()
         {
-            startButton?.RemoveFromClassList("jk-focused");
+            StartAsync(CancellationToken.None);
         }
 
-        public Task<TransitionOutcome> TriggerStartForTest() => StartAsync();
-
-        public Task<TransitionOutcome> StartAsync()
-            => coordinator.OpenFoundationAsync(CancellationToken.None);
-
-        void OnStartClicked() => _ = StartAsync();
+        public Task<TransitionOutcome> StartAsync(CancellationToken cancellationToken = default)
+        {
+            return coordinator.OpenFoundationAsync(cancellationToken);
+        }
     }
 }

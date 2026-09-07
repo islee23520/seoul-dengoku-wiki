@@ -63,7 +63,8 @@ namespace Janseon.Core
         Move = 1,
         MeleeAttack = 2,
         RangedAttack = 3,
-        EndTurn = 4
+        EndTurn = 4,
+        Wait = 5
     }
 
     public enum BattleRejectReason
@@ -162,6 +163,8 @@ namespace Janseon.Core
         public BattleOutcomeKind Outcome;
         public PurposeRng Rng;
         public string OpeningHash;
+        /// <summary>Owned immutable terrain snapshot; null for the flat POC grid.</summary>
+        public Heightmap Terrain;
 
         public BattleUnit ActiveUnit
         {
@@ -203,7 +206,8 @@ namespace Janseon.Core
                 BattleTick = BattleTick,
                 Outcome = Outcome,
                 Rng = Rng != null ? Rng.Clone() : null,
-                OpeningHash = OpeningHash
+                OpeningHash = OpeningHash,
+                Terrain = Terrain != null ? Terrain.Snapshot() : null
             };
         }
     }
@@ -226,23 +230,50 @@ namespace Janseon.Core
         public const int RangedDamage = 3;
         public const string AllyId = "ally-0";
         public const string FoeId = "foe-0";
-        public const string RulesVersion = "poc-srpg-v1";
+        public const string RulesVersion = "poc-srpg-v2";
 
         /// <summary>
         /// Open a battle from an immutable campaign handoff. Does not touch campaign state.
         /// </summary>
         public static BattleState Open(BattleContext context)
         {
+            return OpenCore(context, null);
+        }
+
+        /// <summary>
+        /// Open a battle on an owned snapshot of the caller's terrain: the opened battle never
+        /// aliases the input map, grid dims come from the map and cardinal moves price via
+        /// <see cref="Heightmap.MoveCost"/> (water impassable).
+        /// </summary>
+        public static BattleState Open(BattleContext context, Heightmap terrain)
+        {
+            if (terrain == null)
+            {
+                throw new ArgumentNullException(nameof(terrain));
+            }
+
+            return OpenCore(context, terrain.Snapshot());
+        }
+
+        static BattleState OpenCore(BattleContext context, Heightmap terrain)
+        {
             if (context == null)
             {
                 throw new ArgumentNullException(nameof(context));
             }
 
-            // Battle seed is content-derived from the handoff hash + world seed (no wall clock).
+            context.ValidateIntegrity();
+            var allyHp = ResolveStartHp(context, AllyId, requiredPersistent: true);
+            var foeHp = ResolveStartHp(context, FoeId, requiredPersistent: false);
+
+            // Seed identity is deliberately separate from complete context integrity. Rebuilding
+            // the pre-HP battle id preserves the established initiative/RNG stream while StartHp
+            // remains authenticated by ContextHash and the public BattleId.
+            var seedIdentityHash = context.SeedIdentityHash ?? string.Empty;
             var seedMaterial = "battle-open"
-                + ";ctx=" + (context.ContextHash ?? string.Empty)
+                + ";ctx=" + seedIdentityHash
                 + ";seed=" + context.WorldSeed.ToString(CultureInfo.InvariantCulture)
-                + ";id=" + (context.BattleId ?? string.Empty)
+                + ";id=" + (context.SeedIdentityBattleId ?? string.Empty)
                 + ";loc=" + (context.Location.Value ?? string.Empty);
             var seedHash = CoreApi.StableHashHex(seedMaterial);
             // Take first 8 hex digits as signed seed.
@@ -263,7 +294,7 @@ namespace Janseon.Core
                 UnitId = AllyId,
                 IsPlayer = true,
                 Position = new GridCoord(1, 2),
-                Hp = DefaultMaxHp,
+                Hp = allyHp,
                 MaxHp = DefaultMaxHp,
                 Ap = DefaultMaxAp,
                 MaxAp = DefaultMaxAp,
@@ -274,7 +305,7 @@ namespace Janseon.Core
                 UnitId = FoeId,
                 IsPlayer = false,
                 Position = new GridCoord(3, 2),
-                Hp = DefaultMaxHp,
+                Hp = foeHp,
                 MaxHp = DefaultMaxHp,
                 Ap = DefaultMaxAp,
                 MaxAp = DefaultMaxAp,
@@ -296,8 +327,9 @@ namespace Janseon.Core
             var state = new BattleState
             {
                 Context = context,
-                Width = GridWidth,
-                Height = GridHeight,
+                Width = terrain != null ? terrain.Width : GridWidth,
+                Height = terrain != null ? terrain.Height : GridHeight,
+                Terrain = terrain,
                 Units = units,
                 ActiveIndex = 0,
                 TurnNumber = 1,
@@ -306,8 +338,40 @@ namespace Janseon.Core
                 Rng = rng,
                 OpeningHash = string.Empty
             };
+            state.Outcome = EvaluateOutcome(state);
             state.OpeningHash = ComputeBattleHash(state, null);
             return state;
+        }
+
+        /// <summary>
+        /// Opening HP for a unit: the persistent ally is required; the non-persistent foe may be
+        /// absent and then uses the initial default. Zero is a valid downed value. Other values
+        /// outside 0..DefaultMaxHp are corrupt and throw rather than silently healing.
+        /// </summary>
+        static int ResolveStartHp(BattleContext context, string unitId, bool requiredPersistent)
+        {
+            if (context == null || context.StartHp == null || !context.StartHp.TryGet(unitId, out var hp))
+            {
+                if (requiredPersistent)
+                {
+                    throw new ArgumentException(
+                        "Missing required persistent start HP for unit '" + unitId + "'.",
+                        nameof(context));
+                }
+
+                return DefaultMaxHp;
+            }
+
+            if (hp < 0 || hp > DefaultMaxHp)
+            {
+                throw new ArgumentException(
+                    "Corrupt start HP for unit '" + unitId + "': "
+                    + hp.ToString(CultureInfo.InvariantCulture)
+                    + " (expected 0.." + DefaultMaxHp.ToString(CultureInfo.InvariantCulture) + ").",
+                    nameof(context));
+            }
+
+            return hp;
         }
 
         public static object Apply(BattleState state, Ledger ledger, BattleCommand cmd)
@@ -339,9 +403,11 @@ namespace Janseon.Core
                 case BattleCommandKind.MeleeAttack:
                     return ApplyAttack(state, ledger, cmd, MeleeRange, MeleeDamage, MeleeApCost, "melee");
                 case BattleCommandKind.RangedAttack:
-                    return ApplyAttack(state, ledger, cmd, RangedRange, RangedDamage, RangedApCost, "ranged");
+                    return ApplyAttack(state, ledger, cmd, RangedRange, RangedDamage, RangedApCost, "ranged", allowHighGroundBonus: true);
                 case BattleCommandKind.EndTurn:
                     return ApplyEndTurn(state, ledger, cmd);
+                case BattleCommandKind.Wait:
+                    return ApplyWait(state, ledger, cmd);
                 default:
                     return new BattleRejection(BattleRejectReason.UnknownActor, cmd.ActorId, cmd.Kind);
             }
@@ -365,12 +431,23 @@ namespace Janseon.Core
                 return new BattleRejection(BattleRejectReason.DiagonalOrInvalidStep, cmd.ActorId, cmd.Kind);
             }
 
-            if (actor.Ap < MoveApCost)
+            var nextPos = new GridCoord(checked(actor.Position.X + cmd.Dx), checked(actor.Position.Y + cmd.Dy));
+            var cost = MoveApCost;
+            if (state.Terrain != null)
+            {
+                // Terrain prices the cardinal step; -1 marks water (impassable) like off-grid.
+                cost = state.Terrain.MoveCost(actor.Position, nextPos);
+                if (cost < 0)
+                {
+                    return new BattleRejection(BattleRejectReason.OutOfBounds, cmd.ActorId, cmd.Kind);
+                }
+            }
+
+            if (actor.Ap < cost)
             {
                 return new BattleRejection(BattleRejectReason.InsufficientAp, cmd.ActorId, cmd.Kind);
             }
 
-            var nextPos = new GridCoord(checked(actor.Position.X + cmd.Dx), checked(actor.Position.Y + cmd.Dy));
             if (!InBounds(state, nextPos))
             {
                 return new BattleRejection(BattleRejectReason.OutOfBounds, cmd.ActorId, cmd.Kind);
@@ -384,7 +461,7 @@ namespace Janseon.Core
             var next = state.Clone();
             var nextActor = FindUnit(next, actor.UnitId);
             nextActor.Position = nextPos;
-            nextActor.Ap = checked(nextActor.Ap - MoveApCost);
+            nextActor.Ap = checked(nextActor.Ap - cost);
             next.BattleTick = state.BattleTick.Next();
             AppendEvent(ledger, cmd, next, "move:" + nextPos, nextActor.Ap);
             return next;
@@ -397,7 +474,8 @@ namespace Janseon.Core
             int range,
             int damage,
             int apCost,
-            string kindLabel)
+            string kindLabel,
+            bool allowHighGroundBonus = false)
         {
             var actorCheck = RequireActiveActor(state, cmd);
             if (actorCheck is BattleRejection)
@@ -429,8 +507,16 @@ namespace Janseon.Core
                 return new BattleRejection(BattleRejectReason.InsufficientAp, cmd.ActorId, cmd.Kind);
             }
 
+            var effectiveRange = range;
+            if (allowHighGroundBonus && state.Terrain != null
+                && state.Terrain.Get(actor.Position) > state.Terrain.Get(target.Position))
+            {
+                // High ground reaches one tile further (BBM53); no hit or damage bonus (FFT §6.8).
+                effectiveRange++;
+            }
+
             var distance = actor.Position.ManhattanTo(target.Position);
-            if (distance > range || distance < 1)
+            if (distance > effectiveRange || distance < 1)
             {
                 return new BattleRejection(BattleRejectReason.OutOfRange, cmd.ActorId, cmd.Kind);
             }
@@ -453,6 +539,41 @@ namespace Janseon.Core
                 next,
                 kindLabel + ":" + (cmd.TargetId ?? string.Empty) + ":dmg=" + damage.ToString(CultureInfo.InvariantCulture),
                 nextTarget.Hp);
+            return next;
+        }
+
+        static object ApplyWait(BattleState state, Ledger ledger, BattleCommand cmd)
+        {
+            var actorCheck = RequireActiveActor(state, cmd);
+            if (actorCheck is BattleRejection)
+            {
+                return actorCheck;
+            }
+
+            var actor = (BattleUnit)actorCheck;
+            var next = state.Clone();
+
+            var startIndex = -1;
+            for (var i = 0; i < next.Units.Count; i++)
+            {
+                if (next.Units[i].UnitId == actor.UnitId)
+                {
+                    startIndex = i;
+                    break;
+                }
+            }
+
+            for (var offset = 1; offset < next.Units.Count; offset++)
+            {
+                var candidateIndex = (startIndex + offset) % next.Units.Count;
+                if (next.Units[candidateIndex].Hp > 0)
+                {
+                    next.ActiveIndex = candidateIndex;
+                    break;
+                }
+            }
+
+            AppendEvent(ledger, cmd, next, "wait", actor.Ap);
             return next;
         }
 
@@ -709,6 +830,11 @@ namespace Janseon.Core
                 sb.Append(";tick=").Append(state.BattleTick.Value.ToString(CultureInfo.InvariantCulture));
                 sb.Append(";out=").Append(((int)state.Outcome).ToString(CultureInfo.InvariantCulture));
                 sb.Append(";units=").Append(UnitsFingerprint(state));
+                if (state.Terrain != null)
+                {
+                    sb.Append(";map=").Append(state.Terrain.Fingerprint());
+                }
+
                 if (state.Rng != null)
                 {
                     sb.Append(";rng=").Append(state.Rng.Fingerprint());
