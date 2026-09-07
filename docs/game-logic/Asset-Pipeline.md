@@ -86,6 +86,7 @@ Animo는 저장소에 넣지 않습니다. 상용 사용은 업스트림 조건(
 - **재현**: `node tools/art/import-oddland-donor.mjs`가 외부 볼륨의 오드랜드 체크아웃에서 결정론적으로 복사하고 `docs/assets/bom/donor/oddland-donor-import.json`과 SHA-256 목록을 씁니다. `--verify`가 페이로드를 목록과 대조합니다 — 에디터가 임포트 때 다시 직렬화하는 YAML(.meta·.mat 등)은 업그레이드로 보고만 하고, FBX·PNG·PSD·WAV 같은 바이너리 원본의 불일치만 실패로 판정합니다. 페이로드(약 1.6GB)는 LFS 할당량을 넘어 git에 넣지 않고 매니페스트만 추적합니다.
 - **권리**: BOM `rights_status: allowed`, 근거는 2026-09-07 소유자 선언과 기증자 커밋 해시입니다. spine-unity 런타임은 Esoteric Software 런타임 라이선스를 따르며 소유자의 Spine 에디터 라이선스가 전제입니다 — 이것은 그래픽 에셋 권리가 아니라 도구 라이선스입니다.
 - **승격**: 기증 페이로드에서 런타임 슬롯으로 올리는 것은 여전히 아래 「에셋마다 남기는 기록」의 BOM·`look.owner_verdict: accepted`·소스 바인딩 영수증을 거칩니다. 기증은 승격이 아닙니다.
+- **카탈로그**: `docs/assets/bom/donor/oddland-asset-catalog.json`·`.md`가 비-.meta 7,712개 전량을 kind·family·처분으로 분류한다(미분류 0). `node tools/art/catalog-oddland-donor.mjs`로 재생성, `--check`로 멱등 검증, `--summary`로 요약. 분류는 사용 준비도 판정이 아니며 승격은 아래 승격 절차를 그대로 따른다.
 
 ## UI 아트 임포트와 합성
 
