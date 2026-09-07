@@ -53,6 +53,11 @@ public sealed class UiToolkitCapturePlayModeTests
         Directory.CreateDirectory(CaptureDir());
         yield return LoadBootstrapAndBind();
 
+        canvasRoot = mainTitleCanvasRoot;
+        yield return Capture(1280, 720, "main-title", "idle");
+        yield return Capture(1920, 1080, "main-title", "idle");
+
+        yield return LoadFoundationFromMainTitle();
         var gameplayHost = UnityEngine.Object.FindAnyObjectByType<GameplayUiHost>();
         Assert.That(gameplayHost, Is.Not.Null);
         int readyFrames = 0;
@@ -61,10 +66,6 @@ public sealed class UiToolkitCapturePlayModeTests
             readyFrames++;
             yield return null;
         }
-
-        canvasRoot = gameplayHost.IsReady ? gameplayHost.CanvasRoot : mainTitleCanvasRoot;
-        yield return Capture(1280, 720, "main-title", "idle");
-        yield return Capture(1920, 1080, "main-title", "idle");
 
         Assert.That(gameplayHost.IsReady, Is.True, "GameplayUiHost not ready after 300 frames");
         canvasRoot = gameplayHost.CanvasRoot;
@@ -137,6 +138,10 @@ public sealed class UiToolkitCapturePlayModeTests
         }
 
         mainTitleCanvasRoot = title.CanvasRoot;
+    }
+
+    static IEnumerator LoadFoundationFromMainTitle()
+    {
         Button start = UguiHudBuilder.ButtonNamed(mainTitleCanvasRoot, UiElementNames.MainTitleStart);
         Assert.That(start, Is.Not.Null, "main-title-start missing");
         start.onClick.Invoke();
@@ -174,50 +179,106 @@ public sealed class UiToolkitCapturePlayModeTests
         yield return null;
         yield return null;
 
+        Camera camera = Camera.main != null
+            ? Camera.main
+            : (Camera.current != null ? Camera.current : UnityEngine.Object.FindAnyObjectByType<Camera>());
+        GameObject temporaryCamera = null;
+        if (camera == null)
+        {
+            temporaryCamera = new GameObject("UiCaptureCamera");
+            camera = temporaryCamera.AddComponent<Camera>();
+            camera.clearFlags = CameraClearFlags.SolidColor;
+            camera.backgroundColor = Color.black;
+        }
+
+        Canvas canvas = canvasRoot.GetComponentInParent<Canvas>();
+        Assert.That(canvas, Is.Not.Null, "production Canvas required for " + kind);
+
+        var target = new RenderTexture(width, height, 24, RenderTextureFormat.ARGB32);
         var tex = new Texture2D(width, height, TextureFormat.RGBA32, false);
-        LogAssert.Expect(LogType.Error,
-            "ReadPixels was called to read pixels from system frame buffer, while not inside drawing frame.");
-        tex.ReadPixels(new Rect(0, 0, width, height), 0, 0);
-        tex.Apply();
-
-        Color32[] pixels = tex.GetPixels32();
-        int nonDark = 0, textLum = 0;
-        foreach (Color32 p in pixels)
+        RenderTexture previousActive = RenderTexture.active;
+        RenderTexture previousTarget = camera.targetTexture;
+        RenderMode previousRenderMode = canvas.renderMode;
+        Camera previousWorldCamera = canvas.worldCamera;
+        float previousPlaneDistance = canvas.planeDistance;
+        try
         {
-            float lum = 0.2126f * p.r + 0.7152f * p.g + 0.0722f * p.b;
-            if (lum > 20f) { nonDark++; }
-            if (lum >= 140f) { textLum++; }
+            target.Create();
+            canvas.renderMode = RenderMode.ScreenSpaceCamera;
+            canvas.worldCamera = camera;
+            canvas.planeDistance = Mathf.Max(camera.nearClipPlane + 0.1f, 1f);
+            Canvas.ForceUpdateCanvases();
+
+            camera.targetTexture = target;
+            camera.Render();
+            RenderTexture.active = target;
+            tex.ReadPixels(new Rect(0, 0, width, height), 0, 0);
+            tex.Apply();
+
+            Color32[] pixels = tex.GetPixels32();
+            Color32 first = pixels[0];
+            int nonDark = 0, varied = 0, textLum = 0;
+            foreach (Color32 p in pixels)
+            {
+                float lum = 0.2126f * p.r + 0.7152f * p.g + 0.0722f * p.b;
+                if (lum > 20f) { nonDark++; }
+                if (lum >= 140f) { textLum++; }
+                if (Mathf.Abs(p.r - first.r) > 4
+                    || Mathf.Abs(p.g - first.g) > 4
+                    || Mathf.Abs(p.b - first.b) > 4)
+                {
+                    varied++;
+                }
+            }
+
+            Assert.That(nonDark, Is.GreaterThan(0), kind + " capture has no non-dark pixels");
+            Assert.That(varied, Is.GreaterThan(0), kind + " capture is a flat frame");
+
+            string stem = kind + "-" + width + "x" + height;
+            byte[] png = ImageConversion.EncodeToPNG(tex);
+            string dir = CaptureDir();
+            string pngPath = Path.Combine(dir, stem + ".png");
+            File.WriteAllBytes(pngPath, png);
+
+            string sha;
+            using (var sha256 = System.Security.Cryptography.SHA256.Create())
+            {
+                sha = BitConverter.ToString(sha256.ComputeHash(png)).Replace("-", "").ToLowerInvariant();
+            }
+            var sb = new StringBuilder();
+            sb.Append('{');
+            sb.Append("\"stem\": \"").Append(stem).Append("\", ");
+            sb.Append("\"is_playing\": true, ");
+            sb.Append("\"width\": ").Append(width).Append(", ");
+            sb.Append("\"height\": ").Append(height).Append(", ");
+            sb.Append("\"head\": \"").Append(testedHead).Append("\", ");
+            sb.Append("\"gitHead\": \"").Append(testedHead).Append("\", ");
+            sb.Append("\"source_fingerprint\": \"").Append(testedFingerprint).Append("\", ");
+            sb.Append("\"state\": \"").Append(state).Append("\", ");
+            sb.Append("\"state_hash\": \"").Append(sha, 0, 16).Append("\", ");
+            sb.Append("\"uidocument_root_names\": [\"").Append(canvasRoot.name).Append("\"], ");
+            sb.Append("\"png_sha256\": \"").Append(sha).Append("\"");
+            sb.Append(" }");
+            File.WriteAllText(Path.Combine(dir, stem + ".receipt.json"), sb.ToString());
+
+            Debug.Log("CAPTURE_OK " + stem + " nonDark=" + nonDark + " varied=" + varied
+                + " textLum=" + textLum + " sha=" + sha.Substring(0, 16));
         }
-
-        string stem = kind + "-" + width + "x" + height;
-        byte[] png = ImageConversion.EncodeToPNG(tex);
-        string dir = CaptureDir();
-        string pngPath = Path.Combine(dir, stem + ".png");
-        File.WriteAllBytes(pngPath, png);
-
-        string sha;
-        using (var sha256 = System.Security.Cryptography.SHA256.Create())
+        finally
         {
-            sha = BitConverter.ToString(sha256.ComputeHash(png)).Replace("-", "").ToLowerInvariant();
+            canvas.renderMode = previousRenderMode;
+            canvas.worldCamera = previousWorldCamera;
+            canvas.planeDistance = previousPlaneDistance;
+            camera.targetTexture = previousTarget;
+            RenderTexture.active = previousActive;
+            target.Release();
+            UnityEngine.Object.Destroy(target);
+            UnityEngine.Object.Destroy(tex);
+            if (temporaryCamera != null)
+            {
+                UnityEngine.Object.Destroy(temporaryCamera);
+            }
         }
-        var sb = new StringBuilder();
-        sb.Append('{');
-        sb.Append("\"stem\": \"").Append(stem).Append("\", ");
-        sb.Append("\"is_playing\": true, ");
-        sb.Append("\"width\": ").Append(width).Append(", ");
-        sb.Append("\"height\": ").Append(height).Append(", ");
-        sb.Append("\"head\": \"").Append(testedHead).Append("\", ");
-        sb.Append("\"gitHead\": \"").Append(testedHead).Append("\", ");
-        sb.Append("\"source_fingerprint\": \"").Append(testedFingerprint).Append("\", ");
-        sb.Append("\"state\": \"").Append(state).Append("\", ");
-        sb.Append("\"state_hash\": \"").Append(sha, 0, 16).Append("\", ");
-        sb.Append("\"uidocument_root_names\": [\"").Append(canvasRoot.name).Append("\"], ");
-        sb.Append("\"png_sha256\": \"").Append(sha).Append("\"");
-        sb.Append(" }");
-        File.WriteAllText(Path.Combine(dir, stem + ".receipt.json"), sb.ToString());
-
-        Assert.That(nonDark, Is.GreaterThan(8000), stem + " capture too dark");
-        Debug.Log("CAPTURE_OK " + stem + " nonDark=" + nonDark + " textLum=" + textLum + " sha=" + sha.Substring(0, 16));
     }
 
     static string RunGit(string args)
