@@ -46,3 +46,10 @@
 3. BOM 재등록: seoul BOM 신규 클래스(source: cross-project-import, makcha provenance 체인 첨부, Mixamo/Tripo 라이선스 등기, owner_verdict: pending → 소유자 육안 승격).
 4. 모션: idle만 이용하거나 walk/attack 재작업 후 QA 재통과.
 5. 런타임 반입은 아트 방향 결정(GenreContract 개정) 이후로 순서 확정.
+
+## 6. 2차 확인 (2026-09-07, 소유자 재요청 — find 전수 재고 포함)
+
+- 전 모델 파일 전수 재고(ignored 포함 find): **glb 14 · fbx 7 · blend 2 — 전부 캐릭터·적·모션. 3D GLB 프롭 0건 재확정.** k-pop-diablo는 이미 존재하지 않음(핸드오프 문서의 원본 프로젝트).
+- 소유자 기억의 실체 확인: `Art/Title/`에 **2D 레이어식 승강장 타이틀 아트 스위트**가 provenance 완비로 존재 — layer-platform.png(신설동역 간판·'나가는 곳 Way Out'·5인 아이돌 실루엣·민트 시그널, gpt-image-2, 2026-08-22, sha256 기록), layer-train.png('LAST' 막차), layer-viaduct-bg/fg, layer-sky, 합성본 title-world-still(남산타워·서울 스카이라인). 프롬프트·모델·해시가 kpop.gameplay-sprite.v1 스키마로 등재.
+- 판정 갱신: 재활용 후보는 (1) Hunter02 파이프라인·리그(기존 판정 유지) + (2) **2D 지하철 타이틀 레이어 스위트** — seoul 타이틀 아트의 스타일 앵커/대체 후보. 단 주의: 플랫폼 레이어와 합성본에는 makcha 캐스트(아이돌 5인) 실루엣이 베이크돼 있어 그대로 이관하면 makcha 아이덴티티가 수입됨(캐릭터 제거·재구성 작업 필요), 실제 서울 역명(신설동·동묘앞·제기동)은 seoul의 가상 16국 세계관과 용도 구분 필요, 2D 타이틀 아트는 1.5u 그리드 3D 프롭의 대체물이 아님. seoul은 자체 GLB 프롭 6종과 자체 타이틀 아트(poc-title-art)를 이미 보유 — 용도는 '참조·리스타일 기반'이지 필수 대체가 아님.
+- 이미지 육안 근거: layer-platform/train/title-world-still 4장 직접 확인(내부 분석, 커밋 안 함).
