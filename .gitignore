@@ -61,3 +61,11 @@ Game/Assets/Resources/PerformanceTestRunSettings.json.meta
 # Burst/WebGL player sidecar from local builds
 Game/Data/
 .omo/
+
+# Restored whitelist: the .omo catch-all above prunes even whitelisted paths,
+# because gitignore cannot re-include a file whose parent stays excluded.
+# Re-include the .omo directory itself, let the earlier .omo/* re-ignore every
+# direct child, then un-ignore the private research folder. Keep this block
+# AFTER the catch-all line.
+!.omo/
+!.omo/research-private/
