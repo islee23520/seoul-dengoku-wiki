@@ -193,3 +193,30 @@ A. SDF 페이스맵(Genshin식) — 정점 노멀로 얼굴을 광원 계산하�
 ## 남은 UNVERIFIED 등기부 (이번 조사분)
 - VRoid 슬라이더의 등신 범위 수치, FBX/일반 glTF 내보내기(공식 문서 부재 — 부재 자체는 확인), UniVRM의 Unity 6 인증(이슈 3건 오픈), VRoid 제작 NPC의 상용 게임 등재 사례, Genshin SDF의 1차 공식 강연, 각 후보의 정확 두상 수(전부 육안).
 
+## 참조 추가 — floor796 (2026-09-07, aside 라이브 캡처)
+
+- 실물: floor796.com/#t5l3,723,209 라이브 스크린샷 2장(1.2초 간격 — 프레임 간 캐릭터 포즈 변화로 루프 애니메이션 확인). 단일 canvas, 리소스 엔트리에 PNG 노출 없음(스프라이트 패킹/지연 로드).
+- 스타일: 인형집 컷어웨이 아이소메트릭 다중 방(벽 절단으로 내부 가시 — 심즈식), 방 단위 테마(드라큘라 바·헌팅숍·도서관 층), **밀집 군중 전부 루프 애니메이션**, 잉크 아웃라인 플랫 2D, 뮤트 파스텔+네온 악센트 팔레트, 캐릭터 화면 기준 약 4~5등신 대두.
+- seoul 채택 가치: (1) 역 내부 방의 컷어웨이 가시성 처리, (2) 배경 인구의 루프 경제(적은 프레임으로 많은 인원), (3) 잉크 아웃라인+팔레트 절제. 권리: 사이트에 별도 라이선스 표기 미확인 — 참조 전용, 복제 금지.
+- 미검증: 캔버스 내부 스프라이트 구조(패킹 방식) — 시각 참조로 충분해 심층 역공학은 생략.
+
+## 시스템 초안 — "베이스 헤드/바디 조립" 캐릭터 시스템 (소유자 지시: 이것이 시스템의 일부)
+
+### 1차 확인 제품 (페이지 전문 판독 2026-09-07)
+| 제품 | 내용 | 라이선스 핵심(원문) | 게임 수록 판정 |
+|---|---|---|---|
+| Riceballer3D "Anime base" (BOOTH 3673097, 무료) | 애니메 풀바디 베이스, 체형 3·피부톤 3, 바디+페이스 22k tris | "Use her however you like! ... stream/make videos, make commissions/edit/etc, but the actual base is not allowed to be sold unless as part of a finished model" | 게임 수록 가능(베이스 단독 판매 금지는 수록과 별개), 단 **헤드 내 크레딧 플레인 오브젝트 유지** 요건 |
+| MinnaHead (Gumroad, saltedtrailmix) | 스크래치 제작 헤드, shape keys·아이트래킹·비젬 포함, 핸드드로운 텍스처 8종+눈 1종, FBX+PNG, 5.2k poly | "You can use this head both commercially and privately!" + "You must always give credit if used" | 게임 수록 가능(상업 명문) + **크레딧 필수**(게임 크레딧 화면에 기재) |
+
+### 아키텍처 (4층)
+1. **베이스 메시층**: 마켓 라이선스 베이스(바디: Riceballer 3체형 / 헤드: MinnaHead shape keys) — 인간형·Unity 준비. BOM에 제품별 rights_status + 라이선스 원문 + 크레딧 의무 등기.
+2. **개별화층**: 헤드 shape keys/블렌드셰이프 변형 + 캐릭터별 텍스처 리페인트(MinnaHead 8페이스 텍스처가 변형 기반) + 헤어·의상 레이어(BOOTH 아이템·오드랜드 기하 기증자·마켓 의상).
+3. **리그·애니층**: 공용 휴머노이드 리그 → Mixamo/ARP 리타깃(Hunter02 절차) → 4방향 idle/walk/attack 셋.
+4. **셰이더층**: MToon 1.0(UniVRM, Unity 6 스파이크 선행) + 얼굴 판독(MToon 페이스 설정 또는 SDF 페이스맵) — pilgrimage의 뎁스 아틀라스는 3D 풀메시 경로에선 불필요(표준 뎁스 버퍼).
+
+### 위험·조건
+- VRChat 생태계 베이스의 출처 품질 편차 — "made from scratch" 명시 제품 우선(BOM에 제작자 원문 인용 등기). Riceballer/MinnaHead 모두 오리지널 주장 확인.
+- 크레딧 의무(Riceballer 플레인, MinnaHead 필수 크레딧) → 게임 크레딧 화면 체계와 통합.
+- 22k tris 전신은 풀 캐스트엔 과다 — LOD/리덕션 절차 필요(POC 3역할은 무관).
+- UniVRM Unity 6 스파이크와 병행(기존 조건 유지). 카테고리 확장 조사(6+ 제품 라이선스 클래스) 진행 중 — 결과 수합 후 최종 판정.
+
