@@ -65,6 +65,12 @@ namespace Janseon.Foundation.UI
 
             // Presenter binds the uGUI gameplay canvas (single UI surface).
             canvasRoot = UguiHudBuilder.BuildGameplay(transform);
+            if (canvasRoot == null)
+            {
+                Fail("Gameplay canvas build failed");
+                return;
+            }
+
             if (!presenter.Bind(canvasRoot))
             {
                 Fail("GameplayPresenter bind failed");
@@ -111,6 +117,30 @@ namespace Janseon.Foundation.UI
         public void ApplyWhy(string why)
         {
             presenter?.ApplyWhy(why);
+        }
+
+        void OnDestroy()
+        {
+            canvasRoot = null;
+
+            if (previewCamera != null)
+            {
+                previewCamera.targetTexture = null;
+                previewCamera = null;
+            }
+
+            if (stationTexture != null)
+            {
+                stationTexture.Release();
+                Destroy(stationTexture);
+                stationTexture = null;
+            }
+
+            if (leaseAttached)
+            {
+                documentLease?.Detach();
+                leaseAttached = false;
+            }
         }
 
         void Fail(string reason)
