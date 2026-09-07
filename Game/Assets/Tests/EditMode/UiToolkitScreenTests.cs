@@ -86,6 +86,58 @@ namespace Janseon.Foundation.Tests
         }
 
         [Test]
+        public void MainTitle_P0PresetToggle_DefaultsWanderer_AndSelectsStationMaster()
+        {
+            var coordinator = new ApplicationFlowCoordinator(new RecordingLoader());
+            RectTransform root = UguiHudBuilder.BuildMainTitle(null);
+            var presenter = new MainTitlePresenter(coordinator);
+
+            Assert.That(presenter.BindForTest(root), Is.True);
+            Assert.That(coordinator.SelectedStartingPreset, Is.EqualTo(StartingPreset.Wanderer));
+            Assert.That(
+                UguiHudBuilder.ToggleNamed(root, UiElementNames.MainTitleStationMasterPreset).isOn,
+                Is.False,
+                "떠돌이 삼인조 must be the default new-game preset");
+
+            UguiHudBuilder.ToggleNamed(root, UiElementNames.MainTitleStationMasterPreset).isOn = true;
+
+            Assert.That(coordinator.SelectedStartingPreset, Is.EqualTo(StartingPreset.StationMaster));
+        }
+
+        [Test]
+        public void A_P0StartingPresets_DivergeOnSupplyAndYeongdeungpoBulletinOnly()
+        {
+            CampaignState wanderer = CampaignApi.StartNewGame(
+                22, StationId.Yeongdeungpo, "wanderer", StartingPreset.Wanderer);
+            CampaignState stationMaster = CampaignApi.StartNewGame(
+                22, StationId.Yeongdeungpo, "station-master", StartingPreset.StationMaster);
+
+            Assert.That(wanderer.PartyMemberCount, Is.EqualTo(3));
+            Assert.That(wanderer.Resources, Is.EqualTo(30));
+            Assert.That(wanderer.HasStronghold, Is.False);
+            Assert.That(wanderer.HasBulletin, Is.False);
+            Assert.That(wanderer.OvernightCopy, Is.Not.Empty);
+
+            Assert.That(stationMaster.PartyMemberCount, Is.EqualTo(3));
+            Assert.That(stationMaster.Resources, Is.EqualTo(40));
+            Assert.That(stationMaster.HasStronghold, Is.True);
+            Assert.That(stationMaster.HasBulletin, Is.True);
+            Assert.That(stationMaster.HomeBase, Is.EqualTo(StationId.Yeongdeungpo));
+
+            RectTransform root = UguiHudBuilder.BuildGameplay(null);
+            var presenter = new GameplayPresenter();
+            Assert.That(presenter.BindForTest(root), Is.True);
+
+            presenter.ApplySnapshot(GameplayUiSnapshot.FromCampaign(wanderer, null));
+            Assert.That(UguiHudBuilder.Find(root, UiElementNames.HubOvernightCopy).gameObject.activeInHierarchy, Is.True);
+            Assert.That(UguiHudBuilder.Find(root, UiElementNames.HubBulletinPanel).gameObject.activeInHierarchy, Is.False);
+
+            presenter.ApplySnapshot(GameplayUiSnapshot.FromCampaign(stationMaster, null));
+            Assert.That(UguiHudBuilder.Find(root, UiElementNames.HubOvernightCopy).gameObject.activeInHierarchy, Is.False);
+            Assert.That(UguiHudBuilder.Find(root, UiElementNames.HubBulletinPanel).gameObject.activeInHierarchy, Is.True);
+        }
+
+        [Test]
         public void Gameplay_Canvas_ExposesRequiredStableNames()
         {
             RectTransform gameplayRoot = UguiHudBuilder.BuildGameplay(null);

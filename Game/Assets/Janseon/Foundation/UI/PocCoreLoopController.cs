@@ -1,6 +1,7 @@
 using System;
 using System.Globalization;
 using Janseon.Core;
+using Janseon.Foundation.AppFlow;
 using Janseon.Foundation.Composition;
 using Janseon.Foundation.Presentation;
 using UnityEngine;
@@ -19,6 +20,7 @@ namespace Janseon.Foundation.UI
 
         readonly GameplayPresenter presenter;
         readonly GameplayUiHost host;
+        readonly ApplicationFlowCoordinator coordinator;
 
         RouteGraph graph;
         CampaignState campaign;
@@ -31,10 +33,14 @@ namespace Janseon.Foundation.UI
         bool disposed;
         HeightmapVoxelWorld voxelWorld;
 
-        public PocCoreLoopController(GameplayPresenter presenter, GameplayUiHost host)
+        public PocCoreLoopController(
+            GameplayPresenter presenter,
+            GameplayUiHost host,
+            ApplicationFlowCoordinator coordinator)
         {
             this.presenter = presenter ?? throw new ArgumentNullException(nameof(presenter));
             this.host = host ?? throw new ArgumentNullException(nameof(host));
+            this.coordinator = coordinator ?? throw new ArgumentNullException(nameof(coordinator));
         }
 
         public CampaignState Campaign => campaign;
@@ -107,7 +113,11 @@ namespace Janseon.Foundation.UI
             LastRejection = null;
             LastClickedAction = string.Empty;
             commandSeq = 0;
-            campaign = CampaignApi.Start(seed, StationId.Yeongdeungpo, campaignId);
+            campaign = CampaignApi.StartNewGame(
+                seed,
+                StationId.Yeongdeungpo,
+                campaignId,
+                coordinator.SelectedStartingPreset);
             voxelWorld?.SyncActor(campaign.Node);
             Publish();
         }

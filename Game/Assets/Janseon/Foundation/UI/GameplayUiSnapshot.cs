@@ -42,6 +42,8 @@ namespace Janseon.Foundation.UI
         public string BattleForecast { get; private set; } = string.Empty;
         public int ClockTick { get; private set; }
         public string ClockText { get; private set; } = string.Empty;
+        public bool ShowOvernightCopy { get; private set; }
+        public bool ShowBulletinPanel { get; private set; }
 
         public bool ShowDepartAction { get; private set; }
         public bool ShowTravelActions { get; private set; }
@@ -65,6 +67,11 @@ namespace Janseon.Foundation.UI
             snap.CurrentStationElement = StationElement(campaign.Node);
             snap.ClockTick = campaign.Tick.Value;
             snap.ClockText = FormatClock(campaign.Tick);
+            snap.ShowOvernightCopy = !string.IsNullOrEmpty(campaign.OvernightCopy);
+            snap.ShowBulletinPanel = campaign.HasBulletin
+                && campaign.HomeBase.Equals(StationId.Yeongdeungpo);
+            snap.NamedFlags[UiElementNames.HubOvernightCopy + ":visible"] = snap.ShowOvernightCopy;
+            snap.NamedFlags[UiElementNames.HubBulletinPanel + ":visible"] = snap.ShowBulletinPanel;
             snap.EncounterContext = campaign.Node.Value
                 + " · "
                 + campaign.Stage.ToString()
@@ -403,6 +410,10 @@ namespace Janseon.Foundation.UI
                 sb.Append(";node=").Append(campaign.Node.Value ?? string.Empty);
                 sb.Append(";tick=").Append(campaign.Tick.Value.ToString(CultureInfo.InvariantCulture));
                 sb.Append(";seed=").Append(campaign.Seed.ToString(CultureInfo.InvariantCulture));
+                sb.Append(";preset=").Append(((int)campaign.StartingPreset).ToString(CultureInfo.InvariantCulture));
+                sb.Append(";party=").Append(campaign.PartyMemberCount.ToString(CultureInfo.InvariantCulture));
+                sb.Append(";stronghold=").Append(campaign.HasStronghold ? "1" : "0");
+                sb.Append(";bulletin=").Append(campaign.HasBulletin ? "1" : "0");
                 sb.Append(";choice=").Append(((int)campaign.Choice).ToString(CultureInfo.InvariantCulture));
                 sb.Append(";settled=").Append(campaign.SettlementApplied ? "1" : "0");
             }

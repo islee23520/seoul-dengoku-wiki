@@ -74,6 +74,37 @@ namespace Janseon.Foundation.Tests
         }
 
         [Test]
+        public async Task MainTitle_DefaultWanderer_HasThreeSupply30AndOvernightOnly()
+        {
+            await BootstrapToFoundationAsync();
+
+            GameplayUiHost host = FindGameplayHost();
+            IPocCoreLoopSession session = ResolveSession(host);
+            Assert.That(session.Campaign.StartingPreset, Is.EqualTo(StartingPreset.Wanderer));
+            Assert.That(session.Campaign.PartyMemberCount, Is.EqualTo(3));
+            Assert.That(session.Campaign.Resources, Is.EqualTo(30));
+            Assert.That(session.Campaign.HasStronghold, Is.False);
+            Assert.That(UguiHudBuilder.Find(host.CanvasRoot, UiElementNames.HubOvernightCopy).gameObject.activeInHierarchy, Is.True);
+            Assert.That(UguiHudBuilder.Find(host.CanvasRoot, UiElementNames.HubBulletinPanel).gameObject.activeInHierarchy, Is.False);
+        }
+
+        [Test]
+        public async Task MainTitle_StationMasterToggle_HasThreeSupply40AndYeongdeungpoBulletin()
+        {
+            await BootstrapToFoundationAsync(StartingPreset.StationMaster);
+
+            GameplayUiHost host = FindGameplayHost();
+            IPocCoreLoopSession session = ResolveSession(host);
+            Assert.That(session.Campaign.StartingPreset, Is.EqualTo(StartingPreset.StationMaster));
+            Assert.That(session.Campaign.PartyMemberCount, Is.EqualTo(3));
+            Assert.That(session.Campaign.Resources, Is.EqualTo(40));
+            Assert.That(session.Campaign.HomeBase, Is.EqualTo(StationId.Yeongdeungpo));
+            Assert.That(session.Campaign.HasStronghold, Is.True);
+            Assert.That(UguiHudBuilder.Find(host.CanvasRoot, UiElementNames.HubOvernightCopy).gameObject.activeInHierarchy, Is.False);
+            Assert.That(UguiHudBuilder.Find(host.CanvasRoot, UiElementNames.HubBulletinPanel).gameObject.activeInHierarchy, Is.True);
+        }
+
+        [Test]
         public async Task ExpeditionTravel_UI_MovesYeongdeungpoToSindorim_ExposesEncounter()
         {
             await BootstrapToFoundationAsync();
@@ -153,7 +184,7 @@ namespace Janseon.Foundation.Tests
             Assert.That(branch.Session.Campaign.Node, Is.EqualTo(StationId.Yeongdeungpo));
             Assert.That(branch.Session.Campaign.ConsequenceId, Is.EqualTo(CampaignApi.ConsequenceNegotiate));
             Assert.That(branch.Session.Campaign.Resources,
-                Is.EqualTo(100 + CampaignApi.NegotiateResourceDelta));
+                Is.EqualTo(30 + CampaignApi.ConfirmedMoveResourceDelta + CampaignApi.NegotiateResourceDelta));
             Assert.That(branch.Session.Campaign.Reputation,
                 Is.EqualTo(0 + CampaignApi.NegotiateReputationDelta));
             Assert.That(branch.Session.Campaign.SettlementApplied, Is.True);
@@ -176,7 +207,7 @@ namespace Janseon.Foundation.Tests
             Assert.That(bypass.Session.Campaign.Stage, Is.EqualTo(CampaignStage.BaseReady));
             Assert.That(bypass.Session.Campaign.ConsequenceId, Is.EqualTo(CampaignApi.ConsequenceBypass));
             Assert.That(bypass.Session.Campaign.Resources,
-                Is.EqualTo(100 + CampaignApi.BypassResourceDelta));
+                Is.EqualTo(30 + CampaignApi.ConfirmedMoveResourceDelta + CampaignApi.BypassResourceDelta));
             Assert.That(bypass.Session.Campaign.Reputation,
                 Is.EqualTo(0 + CampaignApi.BypassReputationDelta));
             Assert.That(bypass.Session.LastReceipt.Outcome, Is.EqualTo(SettlementOutcomeKind.Bypass));
@@ -198,7 +229,7 @@ namespace Janseon.Foundation.Tests
             Assert.That(branch.Session.Campaign.ConsequenceId,
                 Is.EqualTo(SettlementApi.ConsequencePlayerVictory));
             Assert.That(branch.Session.Campaign.Resources,
-                Is.EqualTo(100 + SettlementApi.PlayerVictoryResourceDelta));
+                Is.EqualTo(30 + CampaignApi.ConfirmedMoveResourceDelta + SettlementApi.PlayerVictoryResourceDelta));
             Assert.That(branch.Session.Campaign.Reputation,
                 Is.EqualTo(0 + SettlementApi.PlayerVictoryReputationDelta));
             Assert.That(branch.Session.LastReceipt, Is.Not.Null);
@@ -574,7 +605,7 @@ namespace Janseon.Foundation.Tests
             return null;
         }
 
-        async Task BootstrapToFoundationAsync()
+        async Task BootstrapToFoundationAsync(StartingPreset preset = StartingPreset.Wanderer)
         {
             await UnloadContentScenesAsync();
 
@@ -603,6 +634,12 @@ namespace Janseon.Foundation.Tests
             RectTransform titleRoot = titleHost.CanvasRoot;
             Button start = UguiHudBuilder.ButtonNamed(titleRoot, UiElementNames.MainTitleStart);
             Assert.That(start, Is.Not.Null, "main-title-start missing");
+            if (preset == StartingPreset.StationMaster)
+            {
+                Toggle stationMaster = UguiHudBuilder.ToggleNamed(titleRoot, UiElementNames.MainTitleStationMasterPreset);
+                Assert.That(stationMaster, Is.Not.Null, "station-master preset toggle missing");
+                stationMaster.isOn = true;
+            }
 
             var presenterField = typeof(MainTitleUiHost).GetField(
                 "presenter",

@@ -48,7 +48,10 @@ namespace Janseon.Foundation.UI
         }
 
         [Inject]
-        public void Construct(GameplayPresenter gameplayPresenter, UiScreenDocumentLease lease)
+        public void Construct(
+            GameplayPresenter gameplayPresenter,
+            UiScreenDocumentLease lease,
+            Janseon.Foundation.AppFlow.ApplicationFlowCoordinator coordinator)
         {
             presenter = gameplayPresenter ?? throw new ArgumentNullException(nameof(gameplayPresenter));
             documentLease = lease ?? throw new ArgumentNullException(nameof(lease));
@@ -96,7 +99,11 @@ namespace Janseon.Foundation.UI
 
             // Initial campaign snapshot is owned by PocCoreLoopController (scoped session).
             // Apply a deterministic BasePreparation placeholder until controller Start runs.
-            ApplyCampaign(CampaignApi.Start(PocCoreLoopController.DefaultSeed, StationId.Yeongdeungpo, PocCoreLoopController.DefaultCampaignId), null);
+            ApplyCampaign(CampaignApi.StartNewGame(
+                PocCoreLoopController.DefaultSeed,
+                StationId.Yeongdeungpo,
+                PocCoreLoopController.DefaultCampaignId,
+                coordinator.SelectedStartingPreset), null);
 
             IsReady = true;
             signaled = true;

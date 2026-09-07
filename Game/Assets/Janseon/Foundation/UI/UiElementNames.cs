@@ -8,6 +8,7 @@ namespace Janseon.Foundation.UI
     {
         public const string MainTitleRoot = "main-title-root";
         public const string MainTitleMark = "main-title-mark";
+        public const string MainTitleStationMasterPreset = "main-title-preset-station-master";
         public const string MainTitleStart = "main-title-start";
 
         public const string GameplayRoot = "gameplay-root";
@@ -52,6 +53,8 @@ namespace Janseon.Foundation.UI
         public const string BattleAdvance = "battle-advance";
         public const string BattleWait = "battle-wait";
         public const string MissionConsole = "mission-console";
+        public const string HubOvernightCopy = "hub-overnight-copy";
+        public const string HubBulletinPanel = "hub-bulletin-panel";
 
         public const string Res720Class = "jk-res-720";
         public const string Res1080Class = "jk-res-1080";
@@ -62,6 +65,7 @@ namespace Janseon.Foundation.UI
         {
             MainTitleRoot,
             MainTitleMark,
+            MainTitleStationMasterPreset,
             MainTitleStart,
         };
 
@@ -80,6 +84,8 @@ namespace Janseon.Foundation.UI
             StationYeongdeungpo,
             StationSindorim,
             StationGuro,
+            HubOvernightCopy,
+            HubBulletinPanel,
             ActionDepart,
             ActionFaceEncounter,
             ActionEnterResolution,

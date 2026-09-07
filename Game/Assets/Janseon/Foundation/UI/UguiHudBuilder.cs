@@ -92,6 +92,11 @@ namespace Janseon.Foundation.UI
             HudButton(route, UiElementNames.ActionDepart, "출정");
             HudButton(route, UiElementNames.ActionFaceEncounter, "조우");
             HudButton(route, UiElementNames.ActionEnterResolution, "해결 진입");
+            Label(route, UiElementNames.HubOvernightCopy, "임시 잠자리 · 영등포 대합실 하룻밤");
+            RectTransform bulletin = Panel(root, UiElementNames.HubBulletinPanel,
+                new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(-180f, 12f), new Vector2(180f, 140f));
+            Label(bulletin, "hub-bulletin-heading", "영등포 B1 게시판");
+            Label(bulletin, "hub-bulletin-copy", "역내 의뢰와 수리 공지를 확인한다.");
             Label(route, UiElementNames.MissionConsole, "임무 · 신도림 B2 보급선 확보 | 실패 시 보급 -10");
             Label(route, "encounter-context", "");
 
@@ -182,6 +187,9 @@ namespace Janseon.Foundation.UI
             TmpLabel(root, "main-title-sub", "붕괴한 서울의 지하철망에서 무명 인물과 파티로 노선의 질서를 세운다", 20,
                 new Vector2(0f, 0.5f), new Vector2(1f, 0.5f), new Vector2(0f, -32f), new Vector2(0f, 32f),
                 TextAlignmentOptions.Top, new Color(0.604f, 0.651f, 0.698f));
+            PresetToggle(root, UiElementNames.MainTitleStationMasterPreset,
+                "☀ 떠돌이 삼인조  ·  보급 30  ·  거점 없음\n📜 마지막 역장  ·  보급 40  ·  영등포 B1 게시판",
+                new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(-300f, 148f), new Vector2(300f, 230f));
             TmpButton(root, UiElementNames.MainTitleStart, "원정 시작",
                 new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(-140f, 64f), new Vector2(140f, 128f));
 
@@ -380,6 +388,45 @@ namespace Janseon.Foundation.UI
             go.AddComponent<StandaloneInputModule>();
 
             LastEnsuredEventSystem = EventSystem.current != null ? EventSystem.current : created;
+        }
+
+        public static Toggle ToggleNamed(Transform root, string name)
+        {
+            Transform found = Find(root, name);
+            return found != null ? found.GetComponent<Toggle>() : null;
+        }
+
+        static void PresetToggle(
+            RectTransform parent,
+            string name,
+            string text,
+            Vector2 anchorMin,
+            Vector2 anchorMax,
+            Vector2 offsetMin,
+            Vector2 offsetMax)
+        {
+            RectTransform rt = Box(parent, name, anchorMin, anchorMax, offsetMin, offsetMax,
+                new Color(0.149f, 0.212f, 0.227f, 1f));
+            Toggle toggle = rt.gameObject.AddComponent<Toggle>();
+            Image background = rt.GetComponent<Image>();
+            toggle.targetGraphic = background;
+
+            GameObject checkGo = new GameObject("checkmark");
+            checkGo.transform.SetParent(rt, false);
+            Image checkmark = checkGo.AddComponent<Image>();
+            checkmark.color = new Color(0.835f, 0.929f, 0.765f, 0.28f);
+            checkmark.raycastTarget = false;
+            RectTransform checkRt = checkmark.rectTransform;
+            checkRt.anchorMin = Vector2.zero;
+            checkRt.anchorMax = Vector2.one;
+            checkRt.offsetMin = Vector2.zero;
+            checkRt.offsetMax = Vector2.zero;
+            toggle.graphic = checkmark;
+            toggle.isOn = false;
+
+            TmpLabel(rt, name + "-label", text, 18,
+                Vector2.zero, Vector2.one, new Vector2(14f, 8f), new Vector2(-14f, -8f),
+                TextAlignmentOptions.MidlineLeft, new Color(0.906f, 0.918f, 0.941f));
         }
 
         static RectTransform Stretch(Transform parent, string name)

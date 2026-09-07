@@ -18,6 +18,7 @@ namespace Janseon.Foundation.Composition
     {
         readonly ApplicationFlowCoordinator coordinator;
         Button startButton;
+        Toggle stationMasterToggle;
         readonly List<string> focusOrder = new List<string>();
 
         public MainTitlePresenter(ApplicationFlowCoordinator coordinator)
@@ -38,6 +39,7 @@ namespace Janseon.Foundation.Composition
         {
             focusOrder.Clear();
             startButton = null;
+            stationMasterToggle = null;
             IsReady = false;
 
             if (root == null)
@@ -59,13 +61,19 @@ namespace Janseon.Foundation.Composition
                 return false;
             }
 
+            Transform preset = titleRoot.Find(UiElementNames.MainTitleStationMasterPreset);
+            stationMasterToggle = preset != null ? preset.GetComponent<Toggle>() : null;
             Transform start = titleRoot.Find(UiElementNames.MainTitleStart);
             startButton = start != null ? start.GetComponent<Button>() : null;
-            if (startButton == null)
+            if (stationMasterToggle == null || startButton == null)
             {
                 return false;
             }
 
+            stationMasterToggle.SetIsOnWithoutNotify(
+                coordinator.SelectedStartingPreset == Janseon.Core.StartingPreset.StationMaster);
+            stationMasterToggle.onValueChanged.RemoveListener(OnStationMasterChanged);
+            stationMasterToggle.onValueChanged.AddListener(OnStationMasterChanged);
             startButton.onClick.RemoveListener(PressStart);
             startButton.onClick.AddListener(PressStart);
             focusOrder.Add(UiElementNames.MainTitleStart);
@@ -105,6 +113,13 @@ namespace Janseon.Foundation.Composition
         public Task<TransitionOutcome> StartAsync(CancellationToken cancellationToken = default)
         {
             return coordinator.OpenFoundationAsync(cancellationToken);
+        }
+
+        void OnStationMasterChanged(bool selected)
+        {
+            coordinator.SelectedStartingPreset = selected
+                ? Janseon.Core.StartingPreset.StationMaster
+                : Janseon.Core.StartingPreset.Wanderer;
         }
     }
 }

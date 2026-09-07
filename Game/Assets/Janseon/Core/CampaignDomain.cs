@@ -24,6 +24,12 @@ namespace Janseon.Core
         BaseReady = 5
     }
 
+    public enum StartingPreset
+    {
+        Wanderer = 0,
+        StationMaster = 1
+    }
+
     public enum CampaignRejectReason
     {
         None = 0,
@@ -370,6 +376,11 @@ namespace Janseon.Core
         public Tick Tick;
         public StationId Node;
         public StationId HomeBase;
+        public StartingPreset StartingPreset;
+        public int PartyMemberCount;
+        public bool HasStronghold;
+        public bool HasBulletin;
+        public string OvernightCopy;
         public int Resources;
         public int Reputation;
         public int Seed;
@@ -401,6 +412,11 @@ namespace Janseon.Core
                 Tick = Tick,
                 Node = Node,
                 HomeBase = HomeBase,
+                StartingPreset = StartingPreset,
+                PartyMemberCount = PartyMemberCount,
+                HasStronghold = HasStronghold,
+                HasBulletin = HasBulletin,
+                OvernightCopy = OvernightCopy,
                 Resources = Resources,
                 Reputation = Reputation,
                 Seed = Seed,
@@ -434,6 +450,39 @@ namespace Janseon.Core
 
         public static CampaignState Start(int seed, StationId homeBase, string campaignId)
         {
+            return CreateStart(seed, homeBase, campaignId, 100, StartingPreset.Wanderer, 1, false, false, string.Empty);
+        }
+
+        public static CampaignState StartNewGame(
+            int seed,
+            StationId homeBase,
+            string campaignId,
+            StartingPreset preset)
+        {
+            switch (preset)
+            {
+                case StartingPreset.Wanderer:
+                    return CreateStart(
+                        seed, homeBase, campaignId, 30, preset, 3, false, false,
+                        "영등포 대합실에서 하룻밤 잠자리만 허락받았다.");
+                case StartingPreset.StationMaster:
+                    return CreateStart(seed, homeBase, campaignId, 40, preset, 3, true, true, string.Empty);
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(preset));
+            }
+        }
+
+        static CampaignState CreateStart(
+            int seed,
+            StationId homeBase,
+            string campaignId,
+            int resources,
+            StartingPreset preset,
+            int partyMemberCount,
+            bool hasStronghold,
+            bool hasBulletin,
+            string overnightCopy)
+        {
             return new CampaignState
             {
                 CampaignId = campaignId ?? "campaign-0",
@@ -441,7 +490,12 @@ namespace Janseon.Core
                 Tick = new Tick(0),
                 Node = homeBase,
                 HomeBase = homeBase,
-                Resources = 100,
+                StartingPreset = preset,
+                PartyMemberCount = partyMemberCount,
+                HasStronghold = hasStronghold,
+                HasBulletin = hasBulletin,
+                OvernightCopy = overnightCopy ?? string.Empty,
+                Resources = resources,
                 Reputation = 0,
                 Seed = seed,
                 Rng = new PurposeRng(seed),
@@ -833,6 +887,11 @@ namespace Janseon.Core
                 sb.Append(";tick=").Append(state.Tick.Value.ToString(CultureInfo.InvariantCulture));
                 sb.Append(";node=").Append(state.Node.Value ?? string.Empty);
                 sb.Append(";home=").Append(state.HomeBase.Value ?? string.Empty);
+                sb.Append(";preset=").Append(((int)state.StartingPreset).ToString(CultureInfo.InvariantCulture));
+                sb.Append(";party=").Append(state.PartyMemberCount.ToString(CultureInfo.InvariantCulture));
+                sb.Append(";stronghold=").Append(state.HasStronghold ? "1" : "0");
+                sb.Append(";bulletin=").Append(state.HasBulletin ? "1" : "0");
+                sb.Append(";overnight=").Append(state.OvernightCopy ?? string.Empty);
                 sb.Append(";res=").Append(state.Resources.ToString(CultureInfo.InvariantCulture));
                 sb.Append(";rep=").Append(state.Reputation.ToString(CultureInfo.InvariantCulture));
                 sb.Append(";seed=").Append(state.Seed.ToString(CultureInfo.InvariantCulture));
