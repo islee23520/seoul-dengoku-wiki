@@ -11,6 +11,7 @@ using Janseon.Foundation.Composition;
 using Janseon.Foundation.UI;
 using NUnit.Framework;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using VContainer;
@@ -214,7 +215,7 @@ namespace Janseon.Foundation.Tests
             Assert.That(departBtn, Is.Not.Null);
             Assert.That(departBtn.interactable, Is.False,
                 "action-depart must disable after successful depart");
-            AttemptClickNamed(root, ActionDepart);
+            ExecutePointerClick(root, ActionDepart);
             Assert.That(session.CampaignHash, Is.EqualTo(hashAfterDepart), "UI double-depart hash");
             Assert.That(session.Campaign.Tick.Value, Is.EqualTo(tick), "UI double-depart tick");
             Assert.That(session.CampaignLedger.Events.Count, Is.EqualTo(events), "UI double-depart events");
@@ -257,7 +258,7 @@ namespace Janseon.Foundation.Tests
             Assert.That(settleBtn, Is.Not.Null);
             Assert.That(settleBtn.interactable, Is.False,
                 "action-settle must disable after successful settle (return takes over)");
-            AttemptClickNamed(root, ActionSettle);
+            ExecutePointerClick(root, ActionSettle);
             Assert.That(session.CampaignHash, Is.EqualTo(settledHash), "UI double-settle hash");
             Assert.That(session.CampaignLedger.Events.Count, Is.EqualTo(settledEvents));
             Assert.That(session.Campaign.Resources, Is.EqualTo(settledRes));
@@ -381,7 +382,7 @@ namespace Janseon.Foundation.Tests
             Button settleBtn = UguiHudBuilder.ButtonNamed(root, ActionSettle);
             Assert.That(settleBtn, Is.Not.Null);
             Assert.That(settleBtn.interactable, Is.False, "settle disabled after apply");
-            AttemptClickNamed(root, ActionSettle);
+            ExecutePointerClick(root, ActionSettle);
             Assert.That(session.CampaignHash, Is.EqualTo(hashBeforeDup), "UI dup settle ignored");
             Assert.That(session.CampaignLedger.Events.Count, Is.EqualTo(eventsBeforeDup));
             Assert.That(session.LastDuplicateReceipt, Is.Null);
@@ -410,7 +411,7 @@ namespace Janseon.Foundation.Tests
             Func<IPocCoreLoopSession, bool> predicate)
         {
             Task signal = WaitSignal(session);
-            ClickNamed(root, elementName);
+            InvokeButton(root, elementName);
             await AwaitTask(signal, TimeSpan.FromSeconds(8), "state after " + elementName);
             Assert.That(predicate(session), Is.True,
                 "predicate failed after click " + elementName
@@ -419,7 +420,7 @@ namespace Janseon.Foundation.Tests
                 + " rejection=" + (session.LastRejection?.GetType().Name ?? "none"));
         }
 
-        static void ClickNamed(RectTransform root, string name)
+        static void InvokeButton(RectTransform root, string name)
         {
             Button button = UguiHudBuilder.ButtonNamed(root, name);
             Assert.That(button, Is.Not.Null, "missing clickable button " + name);
@@ -428,14 +429,18 @@ namespace Janseon.Foundation.Tests
         }
 
         /// <summary>
-        /// Sends the same NavigationSubmit the production path uses even when the control is
-        /// disabled — used to prove disabled UI ignores the second click (no domain dispatch).
+        /// Executes the uGUI pointer-click path so a disabled Button rejects the click before
+        /// invoking listeners, proving the second click cannot dispatch a domain command.
         /// </summary>
-        static void AttemptClickNamed(RectTransform root, string name)
+        static void ExecutePointerClick(RectTransform root, string name)
         {
             Button button = UguiHudBuilder.ButtonNamed(root, name);
-            Assert.That(button, Is.Not.Null, "missing button for attempt-click " + name);
-            button.onClick.Invoke();
+            Assert.That(button, Is.Not.Null, "missing button for pointer click " + name);
+            var eventData = new PointerEventData(EventSystem.current)
+            {
+                button = PointerEventData.InputButton.Left,
+            };
+            ExecuteEvents.Execute(button.gameObject, eventData, ExecuteEvents.pointerClickHandler);
         }
 
         static Task WaitSignal(IPocCoreLoopSession session)
