@@ -434,8 +434,9 @@ namespace Janseon.Core
             next.Resources = checked(state.Resources + resourceDelta);
             next.PendingResourceDelta = 0;
 
-            // 3. Party location — POC keeps expedition node until CompleteReturn.
-            // (no location mutation here)
+            // 3. Party location — settlement stays at the expedition node. Only the explicit
+            // return-action / CompleteReturn command moves the party home.
+            next.Node = state.Node;
 
             // 4. Time
             next.Tick = state.Tick.Next();

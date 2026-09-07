@@ -111,6 +111,41 @@ namespace Janseon.Foundation.Tests
         }
 
         [Test]
+        public async Task SettlementApply_StaysAtSindorim_UntilReturnAction()
+        {
+            await BootstrapToFoundationAsync();
+            GameplayUiHost host = FindGameplayHost();
+            IPocCoreLoopSession session = ResolveSession(host);
+            Assert.That(session, Is.Not.Null, "IPocCoreLoopSession required");
+            RectTransform root = RequireRoot(host);
+
+            await ClickAndAwait(session, root, ActionDepart, s =>
+                s.Campaign.Stage == CampaignStage.ExpeditionTravel);
+            await ClickAndAwait(session, root, UiElementNames.StationSindorim, s =>
+                s.Campaign.Node.Equals(StationId.Sindorim));
+            await ClickAndAwait(session, root, ActionFaceEncounter, s =>
+                s.Campaign.Stage == CampaignStage.Encounter);
+            await ClickAndAwait(session, root, ActionEnterResolution, s =>
+                s.Campaign.Stage == CampaignStage.Resolution);
+            await ClickAndAwait(session, root, UiElementNames.ChoiceNegotiate, s =>
+                s.Campaign.Stage == CampaignStage.Settlement
+                && s.Campaign.Choice == EncounterChoice.Negotiate);
+            await ClickAndAwait(session, root, ActionSettle, s =>
+                s.Campaign.SettlementApplied);
+
+            Assert.That(session.Campaign.Stage, Is.EqualTo(CampaignStage.Settlement));
+            Assert.That(session.Campaign.Node, Is.EqualTo(StationId.Sindorim),
+                "settlement apply must not auto-load the home station");
+            Assert.That(UguiHudBuilder.ButtonNamed(root, UiElementNames.ReturnAction).gameObject.activeInHierarchy,
+                Is.True, "return-action must be the explicit transition back to home");
+
+            await ClickAndAwait(session, root, UiElementNames.ReturnAction, s =>
+                s.Campaign.Stage == CampaignStage.BaseReady);
+
+            Assert.That(session.Campaign.Node, Is.EqualTo(StationId.Yeongdeungpo));
+        }
+
+        [Test]
         public async Task NegotiationBranch_ExactOnceSettlement_ReturnsBaseReady()
         {
             BranchResult branch = await RunBranchAsync(EncounterChoice.Negotiate);

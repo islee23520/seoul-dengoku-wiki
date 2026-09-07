@@ -527,6 +527,8 @@ namespace Janseon.Tests.EditMode
             Assert.AreEqual(CampaignStage.Settlement, applied.State.Stage);
             Assert.IsTrue(applied.State.SettlementApplied);
             Assert.IsNull(applied.State.PendingBattle);
+            Assert.AreEqual(StationId.Sindorim, applied.State.Node,
+                "settlement must stay at the encounter station until explicit return");
 
             var returned = MustCampaign(
                 CampaignApi.Apply(

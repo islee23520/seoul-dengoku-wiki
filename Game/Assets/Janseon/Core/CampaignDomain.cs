@@ -737,6 +737,9 @@ namespace Janseon.Core
             }
 
             var next = state.Clone();
+            // Settlement resolves consequences at the expedition station. Location changes only
+            // when CompleteReturn is explicitly dispatched by return-action.
+            next.Node = state.Node;
             next.Resources = checked(state.Resources + state.PendingResourceDelta);
             next.Reputation = checked(state.Reputation + state.PendingReputationDelta);
             next.PendingResourceDelta = 0;
