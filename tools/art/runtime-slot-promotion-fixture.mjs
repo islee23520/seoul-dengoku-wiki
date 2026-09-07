@@ -26,6 +26,13 @@ const row = {
   output_path: destination, output_hash: pngHash, tool_versions: { fixture: '1' },
   operations: ['test_fixture'], unity_import_settings: {}, status: 'promoted',
   created_at: '2026-09-05T00:00:00Z',
+  look: {
+    palette: { red: '#ff0000', green: '#00ff00', blue: '#0000ff', white: '#ffffff' },
+    materials: { medium: 'synthetic-rgba-test-sprite', finish: 'unlit' },
+    references: [{ kind: 'test-contract', source: 'Game/Assets/Tests/EditMode/RuntimeSlotPromotionTests.cs' }],
+    owner_verdict: 'accepted',
+    owner_notes: 'Synthetic fixture appearance only; never approves a real candidate.',
+  },
   review_receipts: [{ reviewer: 'synthetic-fixture-only', verdict: 'pass', receipt_path: reviewPath,
     receipt_hash: reviewHash, reviewed_at: '2026-09-05T00:00:00Z' }],
   rights_evidence: { path: rightsPath, sha256: put(rightsPath, 'Synthetic test fixture, not real asset rights.') },
