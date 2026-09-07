@@ -1,4 +1,9 @@
-> [!NOTE]\n> 자동 생성 문서입니다 — 원본은 저장소 내부 조사 문서(`crusader-kings-3.md`)에서 파생했으며 금지 용어는 위키 공개 기준에 맞게 치환했다.\n\n# Crusader Kings III 게임 메커니즘 레퍼런스
+> [!NOTE]
+
+> 출처 인계: [공유 조사 색인](https://github.com/islee23520/seoul-kenshi/blob/docs/reference-context-sync-st_01a079f1/.omo/research/README.md). 로컬 sources.json·원문 패킷 언급은 조사 당시 기록이며 이 전달에 원시 자료가 포함된다는 뜻이 아니다. 누락된 ID는 미확인으로 남긴다.
+> 자동 생성 문서입니다 — 원본은 저장소 내부 조사 문서(`crusader-kings-3.md`)에서 파생했으며 금지 용어는 위키 공개 기준에 맞게 치환했다.
+
+# Crusader Kings III 게임 메커니즘 레퍼런스
 
 - 작성일: 2026-09-06. 작업 ID: `st_01a078b9`.
 - 대상: PC판의 왕조 중심 대전략 게임. 봉건·씨족·부족의 기본 통치 구조를 중심으로 설명하고, Royal Court의 문화 분화·혼합과 Fate of Iberia의 이베리아 투쟁은 확장 규칙으로 구별한다.
@@ -488,7 +493,7 @@ Fate of Iberia의 고유 지역 체계다. 정복 횟수만 세는 임무가 아
 
 | S-ID | 자료 | 이 문서에서의 상태·용도 |
 |---|---|---|
-| S-CK3-M01 | [로컬 CK3 UI 레퍼런스](../../../.omo/evidence/gameplay-rubric-6d3fe97/ui-reference/ck3-ui-reference.md) | **직접 읽음.** 18개 원출처 기록과 공개 화면 관찰을 계승. 인물 중심성, 다섯 기량·건강의 구별, 자문회, 계책의 성공/발각, 의견 방향, 지도, 스트레스, 이벤트 정보 공개 범위의 근거. |
+| S-CK3-M01 | [로컬 CK3 UI 레퍼런스](https://github.com/islee23520/seoul-kenshi/blob/docs/reference-context-sync-st_01a079f1/.omo/research/ck3-ui-reference.md) | **직접 읽음.** 18개 원출처 기록과 공개 화면 관찰을 계승. 인물 중심성, 다섯 기량·건강의 구별, 자문회, 계책의 성공/발각, 의견 방향, 지도, 스트레스, 이벤트 정보 공개 범위의 근거. |
 | S19·S20·S21 | [Beginner's guide](https://ck3.paradoxwikis.com/Beginner%27s_guide), [Character](https://ck3.paradoxwikis.com/Character), [Attributes](https://ck3.paradoxwikis.com/Attributes) | **선행 문서 경유.** 이번 원문 재조회 없음. 상세 수치 확인으로 확장하지 않음. |
 | S23·S27·S28 | 지도 개발일지 공식 공지, [Council](https://ck3.paradoxwikis.com/Council), [Schemes](https://ck3.paradoxwikis.com/Schemes) | **선행 문서 경유.** 지도 기능 주제, 기량-과업 연결, 계책 구조. 최신 과업·계책 수치 근거 아님. |
 | S25 | [Event modding](https://ck3.paradoxwikis.com/Event_modding) | **선행 문서 경유.** 옵션 수 비고정, 조건부·숨은 효과, AI 선택 가중치의 의미. |

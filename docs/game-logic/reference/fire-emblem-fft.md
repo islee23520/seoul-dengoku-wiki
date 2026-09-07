@@ -1,5 +1,7 @@
 # Fire Emblem Awakening / Final Fantasy Tactics 시스템 대전
 
+> 출처 인계: [공유 조사 색인](../../../.omo/research/README.md). 로컬 sources.json·원문 패킷 언급은 조사 당시 기록이며 이 전달에 원시 자료가 포함된다는 뜻이 아니다. 누락된 ID는 미확인으로 남긴다.
+
 > **독립 게임 규칙 참조 문서.** 다른 프로젝트의 평가, 개선안, 구현 요구사항을 포함하지 않는다. 조사 기준일: 2026-09-06.
 >
 > **판본:** FE는 Nintendo 3DS용 **Awakening**. FFT는 **PlayStation 원작**, 수치표는 별도 표시가 없으면 **북미 PS판**이다. 일본 PS판의 매뉴얼은 공통 조작·진행의 1차 자료로 사용한다. 일본 PS/PSP **The War of the Lions(WotL)**의 직업 조건은 별도 열에 병기한다. **The Ivalice Chronicles의 Enhanced 모드, FFTA/FFTA2, FE Fates의 규칙은 원작 규칙에 합치지 않는다.** [문서][S01][S02][FEFFT-FFT02][FEFFT-FFT52]
@@ -1162,4 +1164,3 @@ Ramza의 완전한 사망, 부대가 행동 불가능한 전멸/석화, 임무�
 - **FEFFT-PS18** [FFT 북미 PS Bard](https://www.cavesofnarshe.com/fft/jobs.php?fftmode=psx&job=Bard)
 - **FEFFT-PS19** [FFT 북미 PS Dancer](https://www.cavesofnarshe.com/fft/jobs.php?fftmode=psx&job=Dancer)
 - **FEFFT-PS20** [FFT 북미 PS Mime](https://www.cavesofnarshe.com/fft/jobs.php?fftmode=psx&job=Mime)
-

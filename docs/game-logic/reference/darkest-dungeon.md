@@ -1,5 +1,7 @@
 # Darkest Dungeon (2016) — 게임 로직 백과사전
 
+> 출처 인계: [공유 조사 색인](../../../.omo/research/README.md). 로컬 sources.json·원문 패킷 언급은 조사 당시 기록이며 이 전달에 원시 자료가 포함된다는 뜻이 아니다. 누락된 ID는 미확인으로 남긴다.
+
 > Red Hook Studios, 2016. 1월 (DLC: The Crimson Court / The Shieldbreaker / The Color of Madness / Butcher's Circus). 고딕 호러 로그라이트 턴제 RPG. 모든 수치는 Radiant/Darkest 난이도 기준.
 >
 > **출처 표기**: [S-01]~[S-09]는 문서 말미 출처 목록 참조. [문서]/[추론]/[미확인]으로 신뢰도 표기.

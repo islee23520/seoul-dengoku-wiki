@@ -1,4 +1,9 @@
-> [!NOTE]\n> 자동 생성 문서입니다 — 원본은 저장소 내부 조사 문서(`battle-brothers.md`)에서 파생했으며 금지 용어는 위키 공개 기준에 맞게 치환했다.\n\n# Battle Brothers 게임 시스템 레퍼런스
+> [!NOTE]
+
+> 출처 인계: [공유 조사 색인](https://github.com/islee23520/seoul-kenshi/blob/docs/reference-context-sync-st_01a079f1/.omo/research/README.md). 로컬 sources.json·원문 패킷 언급은 조사 당시 기록이며 이 전달에 원시 자료가 포함된다는 뜻이 아니다. 누락된 ID는 미확인으로 남긴다.
+> 자동 생성 문서입니다 — 원본은 저장소 내부 조사 문서(`battle-brothers.md`)에서 파생했으며 금지 용어는 위키 공개 기준에 맞게 치환했다.
+
+# Battle Brothers 게임 시스템 레퍼런스
 
 > 조사 기준일: 2026-09-06. 대상: 모드 없는 기본 게임과 공식 확장 콘텐츠. PC 위키에 반영된 1.5.1 계열 추가 무기·전설 장소도 별도 포함한다. 콘솔의 동일 패치 적용 여부는 [미확인]이다. 이 문서는 다른 프로젝트에 대한 분석·적용 제안이 아니라 독립적인 규칙 참조서다. [BBM01][BBM31][BBM34]
 >

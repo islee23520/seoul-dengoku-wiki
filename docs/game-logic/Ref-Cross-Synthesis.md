@@ -1,4 +1,9 @@
-> [!NOTE]\n> 자동 생성 문서입니다 — 원본은 저장소 내부 조사 문서(`CROSS-GAME-SYNTHESIS.md`)에서 파생했으며 금지 용어는 위키 공개 기준에 맞게 치환했다.\n\n# 크로스 게임 종합: 치 디멘션 비교 매트릭스 — 잔선: 서울 설계용
+> [!NOTE]
+
+> 출처 인계: [공유 조사 색인](https://github.com/islee23520/seoul-kenshi/blob/docs/reference-context-sync-st_01a079f1/.omo/research/README.md). 로컬 sources.json·원문 패킷 언급은 조사 당시 기록이며 이 전달에 원시 자료가 포함된다는 뜻이 아니다. 누락된 ID는 미확인으로 남긴다.
+> 자동 생성 문서입니다 — 원본은 저장소 내부 조사 문서(`CROSS-GAME-SYNTHESIS.md`)에서 파생했으며 금지 용어는 위키 공개 기준에 맞게 치환했다.
+
+# 크로스 게임 종합: 치 디멘션 비교 매트릭스 — 잔선: 서울 설계용
 
 - 작성일: 2026-09-06 / 작업: st_01a0778b (Grok-4)
 - 근거: 로컬 문서 재사용 전용(REPORT.md [S01–S14], ck3-ui-reference.md [S19–S33], bb-ui-reference.md [S40–S50·S70], 내부 종합 조사 문서 [S80–S108], genre-map-structure.md [S60–S74]). 이 문서는 새 웹 페치를 하지 않았다.

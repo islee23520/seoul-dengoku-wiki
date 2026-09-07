@@ -1,4 +1,9 @@
-> [!NOTE]\n> 자동 생성 문서입니다 — 원본은 저장소 내부 조사 문서(`nobunagas-ambition.md`)에서 파생했으며 금지 용어는 위키 공개 기준에 맞게 치환했다.\n\n# 노부나가의 야망 게임 메커니즘 백과: 신생과 천상기
+> [!NOTE]
+
+> 출처 인계: [공유 조사 색인](https://github.com/islee23520/seoul-kenshi/blob/docs/reference-context-sync-st_01a079f1/.omo/research/README.md). 로컬 sources.json·원문 패킷 언급은 조사 당시 기록이며 이 전달에 원시 자료가 포함된다는 뜻이 아니다. 누락된 ID는 미확인으로 남긴다.
+> 자동 생성 문서입니다 — 원본은 저장소 내부 조사 문서(`nobunagas-ambition.md`)에서 파생했으며 금지 용어는 위키 공개 기준에 맞게 치환했다.
+
+# 노부나가의 야망 게임 메커니즘 백과: 신생과 천상기
 
 > 범위: **『信長の野望・新生』(신생, 2022) 본편**을 중심으로, **2023년 with 파워업키트/Awakening** 및 **2025년 추가 규칙**을 구분한다. 고전 비교 대상은 **『天翔記』(천상기, 1994), 주로 Windows PC판과 PC with PK**다. 프로젝트 적용안이 아닌 독립적인 게임 규칙 참고서다. [문서][S-NA-RELEASE][S-NA-KSH][S-NA-T20]
 >

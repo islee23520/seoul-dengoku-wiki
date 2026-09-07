@@ -1,4 +1,9 @@
-> [!NOTE]\n> 자동 생성 문서입니다 — 원본은 저장소 내부 조사 문서(`darkest-dungeon.md`)에서 파생했으며 금지 용어는 위키 공개 기준에 맞게 치환했다.\n\n# Darkest Dungeon (2016) — 게임 로직 백과사전
+> [!NOTE]
+
+> 출처 인계: [공유 조사 색인](https://github.com/islee23520/seoul-kenshi/blob/docs/reference-context-sync-st_01a079f1/.omo/research/README.md). 로컬 sources.json·원문 패킷 언급은 조사 당시 기록이며 이 전달에 원시 자료가 포함된다는 뜻이 아니다. 누락된 ID는 미확인으로 남긴다.
+> 자동 생성 문서입니다 — 원본은 저장소 내부 조사 문서(`darkest-dungeon.md`)에서 파생했으며 금지 용어는 위키 공개 기준에 맞게 치환했다.
+
+# Darkest Dungeon (2016) — 게임 로직 백과사전
 
 > Red Hook Studios, 2016. 1월 (DLC: The Crimson Court / The Shieldbreaker / The Color of Madness / Butcher's Circus). 고딕 호러 로그라이트 턴제 RPG. 모든 수치는 Radiant/Darkest 난이도 기준.
 >

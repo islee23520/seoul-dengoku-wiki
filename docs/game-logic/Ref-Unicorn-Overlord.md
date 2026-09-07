@@ -1,4 +1,9 @@
-> [!NOTE]\n> 자동 생성 문서입니다 — 원본은 저장소 내부 조사 문서(`unicorn-overlord.md`)에서 파생했으며 금지 용어는 위키 공개 기준에 맞게 치환했다.\n\n# Unicorn Overlord (2024) — 게임 로직 백과사전
+> [!NOTE]
+
+> 출처 인계: [공유 조사 색인](https://github.com/islee23520/seoul-kenshi/blob/docs/reference-context-sync-st_01a079f1/.omo/research/README.md). 로컬 sources.json·원문 패킷 언급은 조사 당시 기록이며 이 전달에 원시 자료가 포함된다는 뜻이 아니다. 누락된 ID는 미확인으로 남긴다.
+> 자동 생성 문서입니다 — 원본은 저장소 내부 조사 문서(`unicorn-overlord.md`)에서 파생했으며 금지 용어는 위키 공개 기준에 맞게 치환했다.
+
+# Unicorn Overlord (2024) — 게임 로직 백과사전
 
 > Vanillaware / ATLUS, 2024. PS5·PS4·Xbox·Switch·PC. 판타지 대륙 페브리스에서 제국 제노이라에 점령된 코르니아 왕국을 해방하는 부대 단위 시뮬레이션 RPG. 본편 2024년판 기준, DLC 및 모드 제외.
 >
@@ -53,7 +58,7 @@
 | 천조각(Divine Shards) | 채집·보물 | 교환소 |
 | 콜리세움 코인 | 투기장 | 투기장 상품 |
 
-[문서: S-03, S-04, S-05, S-10, S-12, S-13]
+[문서: S-03, S-04, S-05, S-10, S-12]
 
 ### 4.2 승격 비용 (훈장) [S-03][문서]
 - 하급 → 상급: 대부분 25~35 (파이터→뱅가드 25, 나이트→그레이트 나이트 35)
