@@ -7,7 +7,7 @@ Total assets: 7712
 - animation-clip: 457 (18343916 bytes)
 - animator-controller: 192 (4812478 bytes)
 - audio-sfx: 416 (104810755 bytes)
-- doc: 4 (2934 bytes)
+- doc: 5 (2934 bytes)
 - font: 11 (38815692 bytes)
 - material: 629 (2409722 bytes)
 - model: 400 (203429732 bytes)
@@ -22,13 +22,13 @@ Total assets: 7712
 - spine-skeleton: 299 (16438604 bytes)
 - sprite-atlas: 40 (426974 bytes)
 - text-data: 2 (1671 bytes)
-- texture: 3672 (824320750 bytes)
+- texture: 3671 (824320750 bytes)
 
 ## Family x count
 
 - arcade: 6
 - boss: 17
-- common: 1624
+- common: 1623
 - font: 11
 - fx: 1534
 - grenade: 4
@@ -68,7 +68,7 @@ Total assets: 7712
 - postfx: 5
 - powershot: 3
 - robson: 4
-- runtime: 242
+- runtime: 243
 - scene: 42
 - shader: 29
 - sound-10_lobby_xmas_bgm: 1
@@ -123,11 +123,11 @@ Total assets: 7712
 
 ## Disposition x count
 
-- blockout-geometry: 2170
+- blockout-geometry: 2169
 - character-poc-only: 538
 - excluded-artifact: 1035
 - sfx-candidate: 416
-- tooling-runtime: 242
+- tooling-runtime: 243
 - ui-reference-only: 1734
 - vfx-candidate: 1577
 

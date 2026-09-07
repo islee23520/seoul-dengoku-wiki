@@ -1,0 +1,34 @@
+✔ catalog contract and manifest coverage (12.267417ms)
+✖ classification samples (5.747083ms)
+✔ markdown totals agree (2.435875ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 2
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 60.91025
+
+✖ failing tests:
+
+test at tools/art/test-oddland-catalog.mjs:22:1
+✖ classification samples (5.747083ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(postfx.length > 0)
+  
+      at TestContext.<anonymous> (file:///Users/ilseoblee/workspace/seoul-kenshi-wt/rtfc-phase-a/tools/art/test-oddland-catalog.mjs:37:9)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

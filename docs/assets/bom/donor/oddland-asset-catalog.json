@@ -54626,8 +54626,8 @@
       "kind": "doc",
       "family": "common",
       "disposition": "excluded-artifact",
-      "note": "other",
-      "rule": "other"
+      "note": "bridge-labels",
+      "rule": "bridge-labels"
     },
     {
       "path": "Res/XResource/3d/fbx/Main/Materials/bullet_machine.mat",
@@ -75834,8 +75834,8 @@
       "kind": "doc",
       "family": "common",
       "disposition": "excluded-artifact",
-      "note": "other",
-      "rule": "other"
+      "note": "bridge-labels",
+      "rule": "bridge-labels"
     },
     {
       "path": "Res/XResource/SpineAssets/Common/Player/bomber/bomber.atlas.txt",
@@ -83059,10 +83059,10 @@
       "bytes": 701,
       "sha256": "b676dff9eea70e9bb34be98125a726432bc8e876d1f21f02c0aa6dd158e19fb5",
       "kind": "text-data",
-      "family": "common",
-      "disposition": "excluded-artifact",
-      "note": "other",
-      "rule": "other"
+      "family": "runtime",
+      "disposition": "tooling-runtime",
+      "note": "spine-runtime-asset",
+      "rule": "spine-runtime-asset"
     },
     {
       "path": "Spine/Runtime/spine-unity/SkeletonDataModifierAssets/BlendModeMaterials/SkeletonPMAAdditive.mat",
@@ -83344,11 +83344,11 @@
       "ext": ".bridgelabelsandratings",
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "kind": "texture",
+      "kind": "doc",
       "family": "common",
-      "disposition": "blockout-geometry",
-      "note": "texture",
-      "rule": "texture"
+      "disposition": "excluded-artifact",
+      "note": "bridge-labels",
+      "rule": "bridge-labels"
     },
     {
       "path": "XResource/3d/textures/Arcade Stage/arcade_stage_props.psd",

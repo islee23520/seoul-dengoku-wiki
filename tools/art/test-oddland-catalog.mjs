@@ -33,6 +33,13 @@ test('classification samples', () => {
  assert.equal(pigAtlas.family, 'spine-stage1');
  assert.equal(by('Res/XResource/Scenes/Union.unity').disposition,'excluded-artifact');
  assert.equal(by('Spine/Runtime/spine-unity.asmdef').kind,'spine-runtime-code');
+ const postfx = c.rows.filter(r => r.path.startsWith('Post Processing Profiles/') && r.ext === '.asset');
+ assert.ok(postfx.length > 0);
+ for (const r of postfx) assert.deepEqual([r.kind, r.family, r.disposition], ['post-process-profile','postfx','vfx-candidate']);
+ assert.equal(c.rows.filter(r => r.rule === 'other' || r.rule === 'fallback').length, 0);
+ const spineAssets = c.rows.filter(r => r.path.startsWith('Spine/Runtime/') && r.ext === '.asset');
+ assert.ok(spineAssets.length > 0);
+ for (const r of spineAssets) assert.deepEqual([r.kind, r.family, r.disposition], ['text-data','runtime','tooling-runtime']);
  assert.equal(by('Res/Font/BrandGrade/BrandGrade.txt').kind,'text-data');
 });
 test('markdown totals agree', () => { const c=catalog(); const md=readFileSync(out.replace('.json','.md'),'utf8'); assert.match(md,new RegExp(`Total assets[^\\n]*${c.total}`)); });
