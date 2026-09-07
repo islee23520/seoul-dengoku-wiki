@@ -6,7 +6,7 @@
 
 ## 목표 형태 (2026-09-07 소유자 결정)
 
-이 게임이 도달하려는 형태는 **4X + RPG**이며, 전투는 **실시간 진형·카드 전투**다([Intent](https://github.com/islee23520/seoul-kenshi/blob/main/Intent.md) 결정 3). 기준 레퍼런스는 [Songs of Silence](Ref-Songs-of-Silence.md)(지도 턴 4X + 실시간 자동 전투 + 영웅 카드)이고, 턴제 SRPG 쪽의 정밀 참조는 [라벨렌 전기](Ref-Ravelen-Chronicles.md)다. 이 결정은 카메라(45/35.264 고정 직교 아이소)·격자(1.5m 4방향)·결정론(동일 seed + 명령 기록) 계약을 바꾸지 않고 **전투 안에서 플레이어가 하는 일**만 바꾼다.
+이 게임이 도달하려는 형태는 **4X + RPG**이며 전투는 **실시간 진형·카드 전투**다([Intent](https://github.com/islee23520/seoul-kenshi/blob/main/Intent.md) 결정 3). 기준 레퍼런스는 [Songs of Silence](Ref-Songs-of-Silence.md)(지도 턴 4X + 실시간 자동 전투 + 영웅 카드)이고, 턴제 SRPG 쪽의 정밀 참조는 [라벨렌 전기](Ref-Ravelen-Chronicles.md)다. 계약은 그대로다. 카메라(45/35.264 고정 직교 아이소)·격자(1.5m 4방향)·결정론(동일 seed + 명령 기록)이 유지되고, 바뀌는 것은 **전투 안에서 플레이어가 하는 일**뿐이다.
 
 | 층 | 목표 | 상태 |
 |---|---|---|
