@@ -15,7 +15,7 @@
   * [야망과 관계가 움직이는 정치](Ambitions-and-Relations)
   * [시나리오 타임라인](Scenario-Timeline)
 * [이동과 조우](Travel-and-Encounters)
-* [전술 전투](SRPG-Combat)
+* [실시간 진형·카드 전투](SRPG-Combat)
 * [전략에서 전투로](Strategy-Battle-Roundtrip)
 * [캐릭터 미술](Character-Art-Direction)
 * [에셋이 들어오는 길](Asset-Pipeline)
@@ -40,5 +40,7 @@
   * [XCOM 2](Ref-XCOM-2)
   * [다키스트 던전](Ref-Darkest-Dungeon)
   * [인투 더 브리치](Ref-Into-The-Breach)
+  * [Songs of Silence](Ref-Songs-of-Silence)
+  * [라벨렌 전기](Ref-Ravelen-Chronicles)
 * [개발 로드맵](Development-Roadmap)
 

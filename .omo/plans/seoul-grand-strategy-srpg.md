@@ -1,5 +1,7 @@
 # seoul-grand-strategy-srpg - Work Plan
 
+> **방향 개정 예고 (2026-09-07, Intent.md 결정 3)**: 소유자가 목표 형태를 **4X + RPG, 전투는 실시간 진형·카드 전투**(기준 레퍼런스 Songs of Silence)로 재규정했다. 이 계획의 "4방향 SRPG 전투"·턴제 전술 서술은 현재 POC 모듈까지의 과도 상태로 읽고, 다음 모듈(실시간 진형·카드 전투 코어) 계획에서 전투 절을 개정한다. 카메라·격자·결정론·저장 계약은 그대로다. 상세: `docs/game-logic/SRPG-Combat.md`, `docs/game-logic/Development-Roadmap.md` 목표 형태 절.
+
 ## TL;DR (For humans)
 <!-- Fill this LAST, after the detailed plan below is written, so it summarizes the REAL plan. -->
 <!-- Plain English for a non-engineer: NO file paths, NO todo numbers, NO wave/agent/tool names. -->

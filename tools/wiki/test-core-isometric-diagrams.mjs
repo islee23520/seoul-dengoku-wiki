@@ -103,10 +103,10 @@ for (const [index, entry] of manifest.entries()) {
   assert.equal(/url\((?!#)/.test(svg), false, `${asset}: 외부 url()을 참조하면 안 된다`);
   assert.equal(/<image\b/.test(svg), false, `${asset}: 외부 image를 참조하면 안 된다`);
 
-// SRPG terminology contract (fail-closed)
+// Battle terminology contract (fail-closed) — 2026-09-07 real-time formation/card direction (Intent.md decision 3)
 const srpgMarkdown = await readFile(join(gameLogicDir, "SRPG-Combat.md"), "utf8");
-assert.match(srpgMarkdown, /한 판은 확정된 전투 컨텍스트로 시작해 ResultId 하나로 끝나는 전술\/SRPG 세션 한 번을 뜻합니다/, "SRPG-Combat.md must contain the exact contract");
-assert.match(srpgMarkdown, /위치·방향·시야가 턴제 전술의 핵심 축입니다/, "SRPG-Combat.md must mention position/facing/vision");
+assert.match(srpgMarkdown, /한 판은 확정된 전투 컨텍스트로 시작해 ResultId 하나로 끝나는 실시간 진형·카드 전투 세션 한 번을 뜻합니다/, "SRPG-Combat.md must contain the exact contract");
+assert.match(srpgMarkdown, /진형·사기·카드 타이밍이 실시간 전술의 핵심 축이며, 위치·방향·시야는 진형 규칙으로 이어집니다/, "SRPG-Combat.md must mention formation/morale/card timing and position/facing/vision");
 
 const allMarkdown = {};
 for (const page of requiredPages) {
