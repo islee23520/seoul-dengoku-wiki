@@ -92,3 +92,9 @@ Game/Assets/Resources/PerformanceTestRunSettings.json.meta
 
 # Burst/WebGL player sidecar from local builds
 Game/Data/
+
+# Oddland donor payload: owner-authorized graphic/SFX/VFX import reproduced by
+# tools/art/import-oddland-donor.mjs from the external volume; ~1.6 GB exceeds the LFS quota,
+# so only the manifest under docs/assets/bom/donor/ is tracked.
+Game/Assets/Quarantine/
+Game/Assets/Quarantine.meta
