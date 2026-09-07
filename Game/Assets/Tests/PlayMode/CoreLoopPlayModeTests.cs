@@ -343,6 +343,114 @@ namespace Janseon.Foundation.Tests
             Assert.That(session.Campaign.Resources, Is.EqualTo(settledRes));
         }
 
+        [Test]
+        [Category("Task26Keyboard")]
+        public void Task26Keyboard_TabShiftTabEnterEsc_UsesUguiEventSystem()
+        {
+            EventSystem eventSystem = EventSystem.current;
+            GameObject ownedEventSystem = null;
+            if (eventSystem == null)
+            {
+                ownedEventSystem = new GameObject("task-26-event-system");
+                eventSystem = ownedEventSystem.AddComponent<EventSystem>();
+            }
+
+            var root = new GameObject("task-26-keyboard-root");
+            var overlay = new GameObject("task-26-overlay");
+            overlay.transform.SetParent(root.transform, false);
+            KeyboardCancelOverlay cancelOverlay = overlay.AddComponent<KeyboardCancelOverlay>();
+            Button first = new GameObject("keyboard-first").AddComponent<Button>();
+            first.transform.SetParent(overlay.transform, false);
+            Button second = new GameObject("keyboard-second").AddComponent<Button>();
+            second.transform.SetParent(overlay.transform, false);
+            var activations = 0;
+            first.onClick.AddListener(() => activations++);
+
+            try
+            {
+                eventSystem.SetSelectedGameObject(null);
+                UguiKeyboardPlayModeHelper.Tab(root.transform);
+                Assert.That(eventSystem.currentSelectedGameObject, Is.SameAs(first.gameObject));
+
+                UguiKeyboardPlayModeHelper.Tab(root.transform);
+                Assert.That(eventSystem.currentSelectedGameObject, Is.SameAs(second.gameObject));
+
+                UguiKeyboardPlayModeHelper.ShiftTab(root.transform);
+                Assert.That(eventSystem.currentSelectedGameObject, Is.SameAs(first.gameObject));
+
+                UguiKeyboardPlayModeHelper.Enter();
+                Assert.That(activations, Is.EqualTo(1), "Enter must submit the focused uGUI Button");
+
+                UguiKeyboardPlayModeHelper.Escape();
+                Assert.That(cancelOverlay.CancelCount, Is.EqualTo(1));
+                Assert.That(overlay.activeSelf, Is.False, "Esc must cancel the selected control's overlay");
+            }
+            finally
+            {
+                UnityEngine.Object.DestroyImmediate(root);
+                if (ownedEventSystem != null)
+                {
+                    UnityEngine.Object.DestroyImmediate(ownedEventSystem);
+                }
+            }
+        }
+
+        [Test]
+        [Category("Task26Keyboard")]
+        public void Task26Keyboard_SourceRejectsDirectClickVisualElementSubmitAndCuaDriver()
+        {
+            string helperPath = System.IO.Path.Combine(
+                Application.dataPath,
+                "Tests",
+                "PlayMode",
+                "UguiKeyboardPlayModeHelper.cs");
+            Assert.That(System.IO.File.Exists(helperPath), Is.True, "tracked task-26 helper source missing");
+            string source = System.IO.File.ReadAllText(helperPath);
+            Assert.That(source, Does.Contain("EventSystem"));
+            Assert.That(source, Does.Contain("ExecuteEvents"));
+            Assert.That(source, Does.Not.Contain("onClick.Invoke"));
+            Assert.That(source, Does.Not.Contain("NavigationSubmitEvent"));
+            Assert.That(source, Does.Not.Contain("CuaDriver"));
+        }
+
+        [Test]
+        [Category("Task26Keyboard")]
+        public async Task Task26Keyboard_CombatWaitThenTerminalSettlement_ReturnsBaseReady()
+        {
+            await BootstrapToFoundationKeyboardAsync();
+            GameplayUiHost host = FindGameplayHost();
+            IPocCoreLoopSession session = ResolveSession(host);
+            Assert.That(session, Is.Not.Null, "IPocCoreLoopSession required for keyboard loop");
+            RectTransform root = RequireRoot(host);
+
+            await UguiKeyboardPlayModeHelper.EnterNamedAndAwaitAsync(
+                session, root, ActionDepart,
+                s => s.Campaign.Stage == CampaignStage.ExpeditionTravel);
+            await UguiKeyboardPlayModeHelper.EnterNamedAndAwaitAsync(
+                session, root, UiElementNames.StationSindorim,
+                s => s.Campaign.Node.Equals(StationId.Sindorim));
+            await UguiKeyboardPlayModeHelper.EnterNamedAndAwaitAsync(
+                session, root, ActionFaceEncounter,
+                s => s.Campaign.Stage == CampaignStage.Encounter);
+            await UguiKeyboardPlayModeHelper.EnterNamedAndAwaitAsync(
+                session, root, ActionEnterResolution,
+                s => s.Campaign.Stage == CampaignStage.Resolution);
+            await UguiKeyboardPlayModeHelper.EnterNamedAndAwaitAsync(
+                session, root, UiElementNames.ChoiceCombat,
+                s => s.Battle != null && s.Battle.Outcome == BattleOutcomeKind.Ongoing);
+
+            BattleOutcomeKind outcome = await UguiKeyboardPlayModeHelper.FinishCombatKeyboard(session, root);
+            Assert.That(outcome, Is.EqualTo(BattleOutcomeKind.PlayerVictory)
+                .Or.EqualTo(BattleOutcomeKind.EnemyVictory));
+            Assert.That(session.Campaign.SettlementApplied, Is.True,
+                "FinishCombatKeyboard must submit action-settle only after terminal outcome");
+
+            await UguiKeyboardPlayModeHelper.EnterNamedAndAwaitAsync(
+                session, root, UiElementNames.ReturnAction,
+                s => s.Campaign.Stage == CampaignStage.BaseReady);
+            Assert.That(session.Campaign.Node, Is.EqualTo(StationId.Yeongdeungpo));
+        }
+
         // ---- helpers ----
 
         sealed class BranchResult
@@ -603,6 +711,56 @@ namespace Janseon.Foundation.Tests
             }
 
             return null;
+        }
+
+        async Task BootstrapToFoundationKeyboardAsync()
+        {
+            await UnloadContentScenesAsync();
+
+            Task mainTitleLoaded = WaitForSceneAsync(FoundationScenes.MainTitle, TimeSpan.FromSeconds(15));
+            await AwaitAsyncOperation(SceneManager.LoadSceneAsync(
+                FoundationScenes.Bootstrap,
+                LoadSceneMode.Single));
+            await mainTitleLoaded;
+
+            MainTitleUiHost titleHost = UnityEngine.Object.FindAnyObjectByType<MainTitleUiHost>();
+            Assert.That(titleHost, Is.Not.Null, "MainTitleUiHost required");
+            await AwaitTask(titleHost.Ready, TimeSpan.FromSeconds(10), "MainTitle ready");
+
+            AppLifetimeScope appScope = UnityEngine.Object.FindObjectsByType<AppLifetimeScope>(FindObjectsSortMode.None)
+                .FirstOrDefault();
+            Assert.That(appScope, Is.Not.Null);
+            ApplicationFlowCoordinator coordinator =
+                appScope.Container.Resolve<ApplicationFlowCoordinator>();
+            TransitionOutcome titleOutcome = await AwaitTaskResult(
+                coordinator.CurrentTransition, TimeSpan.FromSeconds(15), "MainTitle commit");
+            Assert.That(titleOutcome.Status, Is.EqualTo(TransitionStatus.Completed));
+            Assert.That(coordinator.CurrentState, Is.EqualTo(ApplicationFlowState.MainTitle));
+
+            Task foundationLoaded = WaitForSceneAsync(FoundationScenes.Foundation, TimeSpan.FromSeconds(15));
+            Task titleUnloaded = WaitForSceneUnloadedAsync(FoundationScenes.MainTitle, TimeSpan.FromSeconds(15));
+            UguiKeyboardPlayModeHelper.FocusNamed(titleHost.CanvasRoot, UiElementNames.MainTitleStart);
+            UguiKeyboardPlayModeHelper.Enter();
+            Task<TransitionOutcome> foundationCommit = coordinator.CurrentTransition;
+            Assert.That(foundationCommit, Is.Not.Null, "Enter on focused Start must begin Foundation transition");
+
+            await foundationLoaded;
+            await titleUnloaded;
+            TransitionOutcome foundationOutcome =
+                await AwaitTaskResult(foundationCommit, TimeSpan.FromSeconds(15), "Foundation commit");
+            Assert.That(foundationOutcome.Status, Is.EqualTo(TransitionStatus.Completed));
+            Assert.That(coordinator.CurrentState, Is.EqualTo(ApplicationFlowState.Foundation));
+
+            GameplayUiHost gameplayHost = UnityEngine.Object.FindAnyObjectByType<GameplayUiHost>();
+            Assert.That(gameplayHost, Is.Not.Null, "GameplayUiHost missing after keyboard Start");
+            await AwaitTask(gameplayHost.Ready, TimeSpan.FromSeconds(10), "Gameplay ready");
+            await AwaitTask(gameplayHost.CoreLoopReady, TimeSpan.FromSeconds(10), "CoreLoop attach");
+            Assert.That(gameplayHost.CoreLoop, Is.Not.Null);
+            Assert.That(gameplayHost.CoreLoop.IsReady, Is.True);
+
+            string head = RunGit("rev-parse HEAD").Trim();
+            Assert.That(head, Is.EqualTo(testedHead), "HEAD must remain unchanged during the scenario");
+            Debug.Log("CORE_LOOP_KEYBOARD_TESTED_HEAD " + head);
         }
 
         async Task BootstrapToFoundationAsync(StartingPreset preset = StartingPreset.Wanderer)
