@@ -214,14 +214,8 @@ namespace Janseon.Foundation.UI
                 return cachedTmpFont;
             }
 
-            // Any usable font asset requires the TMP Distance Field shader (material
-            // creation). In -nographics hosts it is absent, so labels legitimately
-            // carry no font there; task 40 bundles a licensed CJK ttf for renders.
-            if (Shader.Find("TextMeshPro/Distance Field") == null)
-            {
-                return null;
-            }
-
+            // TMP creates runtime assets with its mobile SDF shader. Do not reject
+            // graphics hosts just because the desktop Distance Field shader is absent.
             try
             {
                 cachedTmpFont = TMP_FontAsset.CreateFontAsset(CjkFont());
@@ -284,6 +278,11 @@ namespace Janseon.Foundation.UI
                         cachedTmpFont = null;
                     }
                 }
+            }
+
+            if (cachedTmpFont == null)
+            {
+                cachedTmpFont = TMP_Settings.defaultFontAsset;
             }
 
             return cachedTmpFont;
