@@ -3,6 +3,7 @@ using System.Collections;
 using System.IO;
 using System.Text;
 using Janseon.Core;
+using Janseon.Foundation.AppFlow;
 using Janseon.Foundation.Composition;
 using Janseon.Foundation.UI;
 using NUnit.Framework;
@@ -10,6 +11,7 @@ using UnityEngine.TestTools;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using VContainer;
 
 public sealed class UiToolkitCapturePlayModeTests
 {
@@ -116,9 +118,19 @@ public sealed class UiToolkitCapturePlayModeTests
             yield return null;
         }
 
+        AppLifetimeScope appScope = UnityEngine.Object.FindAnyObjectByType<AppLifetimeScope>();
+        Assert.That(appScope, Is.Not.Null, "AppLifetimeScope required");
+        ApplicationFlowCoordinator coordinator =
+            appScope.Container.Resolve<ApplicationFlowCoordinator>();
+        while (coordinator.CurrentState != ApplicationFlowState.MainTitle)
+        {
+            yield return null;
+        }
+
         Button start = UguiHudBuilder.ButtonNamed(title.CanvasRoot, UiElementNames.MainTitleStart);
         Assert.That(start, Is.Not.Null, "main-title-start missing");
         start.onClick.Invoke();
+        yield return null;
 
         while (!SceneManager.GetSceneByPath(FoundationScenes.Foundation).isLoaded)
         {
