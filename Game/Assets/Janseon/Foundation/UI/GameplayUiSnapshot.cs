@@ -37,6 +37,10 @@ namespace Janseon.Foundation.UI
         public List<string> PartyNames { get; } = new List<string>();
         public List<int> PartyHp { get; } = new List<int>();
         public List<int> PartyMaxHp { get; } = new List<int>();
+        public List<string> DeployUnitIds { get; } = new List<string>();
+        public List<int> DeployHp { get; } = new List<int>();
+        public List<bool> DeployParticipating { get; } = new List<bool>();
+        public List<bool> DeployWounded { get; } = new List<bool>();
         public string EncounterContext { get; private set; } = string.Empty;
         public string WhyText { get; private set; } = string.Empty;
         public string BattleForecast { get; private set; } = string.Empty;
@@ -72,6 +76,7 @@ namespace Janseon.Foundation.UI
                 && campaign.HomeBase.Equals(StationId.Yeongdeungpo);
             snap.NamedFlags[UiElementNames.HubOvernightCopy + ":visible"] = snap.ShowOvernightCopy;
             snap.NamedFlags[UiElementNames.HubBulletinPanel + ":visible"] = snap.ShowBulletinPanel;
+            FillDeployment(snap, campaign);
             snap.EncounterContext = campaign.Node.Value
                 + " · "
                 + campaign.Stage.ToString()
@@ -183,6 +188,19 @@ namespace Janseon.Foundation.UI
 
             snap.Fingerprint = snap.ComputeFingerprint(campaign, battle);
             return snap;
+        }
+
+        static void FillDeployment(GameplayUiSnapshot snap, CampaignState campaign)
+        {
+            DeploymentState deployment = campaign.Deployment
+                ?? DeploymentApi.Create(campaign.PartyMemberCount, campaign.PartyHp);
+            for (var i = 0; i < deployment.RosterCount; i++)
+            {
+                snap.DeployUnitIds.Add(deployment.UnitIdAt(i));
+                snap.DeployHp.Add(deployment.HpAt(i));
+                snap.DeployParticipating.Add(deployment.IsParticipatingAt(i));
+                snap.DeployWounded.Add(deployment.IsWoundedAt(i));
+            }
         }
 
         static void FillSettlement(GameplayUiSnapshot snap, CampaignState campaign)
@@ -412,6 +430,7 @@ namespace Janseon.Foundation.UI
                 sb.Append(";seed=").Append(campaign.Seed.ToString(CultureInfo.InvariantCulture));
                 sb.Append(";preset=").Append(((int)campaign.StartingPreset).ToString(CultureInfo.InvariantCulture));
                 sb.Append(";party=").Append(campaign.PartyMemberCount.ToString(CultureInfo.InvariantCulture));
+                sb.Append(";deploy=").Append(campaign.Deployment != null ? campaign.Deployment.Fingerprint() : string.Empty);
                 sb.Append(";stronghold=").Append(campaign.HasStronghold ? "1" : "0");
                 sb.Append(";bulletin=").Append(campaign.HasBulletin ? "1" : "0");
                 sb.Append(";choice=").Append(((int)campaign.Choice).ToString(CultureInfo.InvariantCulture));

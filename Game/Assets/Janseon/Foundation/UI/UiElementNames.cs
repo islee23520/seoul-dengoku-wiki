@@ -55,6 +55,10 @@ namespace Janseon.Foundation.UI
         public const string MissionConsole = "mission-console";
         public const string HubOvernightCopy = "hub-overnight-copy";
         public const string HubBulletinPanel = "hub-bulletin-panel";
+        public const string DeployPanel = "deploy-panel";
+        public const string DeployHeading = "deploy-heading";
+
+        public static string DeployToggle(int rosterIndex) => "deploy-toggle-" + rosterIndex;
 
         public const string Res720Class = "jk-res-720";
         public const string Res1080Class = "jk-res-1080";
@@ -86,6 +90,7 @@ namespace Janseon.Foundation.UI
             StationGuro,
             HubOvernightCopy,
             HubBulletinPanel,
+            DeployPanel,
             ActionDepart,
             ActionFaceEncounter,
             ActionEnterResolution,
@@ -116,6 +121,9 @@ namespace Janseon.Foundation.UI
 
         public static readonly string[] GameplayFocusOrder =
         {
+            DeployToggle(0),
+            DeployToggle(1),
+            DeployToggle(2),
             ActionDepart,
             StationYeongdeungpo,
             StationSindorim,

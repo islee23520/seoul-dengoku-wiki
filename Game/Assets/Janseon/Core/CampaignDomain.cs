@@ -167,6 +167,194 @@ namespace Janseon.Core
         }
     }
 
+    public enum DeploymentRejectReason
+    {
+        None = 0,
+        UnknownUnit = 1,
+        DeployCapReached = 2,
+        WoundedOverrideRequired = 3
+    }
+
+    public sealed class DeploymentRejection
+    {
+        public readonly DeploymentRejectReason Reason;
+        public readonly string UnitId;
+
+        public DeploymentRejection(DeploymentRejectReason reason, string unitId)
+        {
+            Reason = reason;
+            UnitId = unitId ?? string.Empty;
+        }
+    }
+
+    /// <summary>
+    /// Immutable roster-to-deployment decision. Roster membership and battle participation are
+    /// separate: at most three members participate, while wounded members default to rest.
+    /// </summary>
+    public sealed class DeploymentState
+    {
+        readonly string[] unitIds;
+        readonly int[] hp;
+        readonly bool[] participating;
+
+        internal DeploymentState(string[] unitIds, int[] hp, bool[] participating)
+        {
+            this.unitIds = (string[])unitIds.Clone();
+            this.hp = (int[])hp.Clone();
+            this.participating = (bool[])participating.Clone();
+        }
+
+        public int RosterCount => unitIds.Length;
+
+        public int ParticipantCount
+        {
+            get
+            {
+                var count = 0;
+                for (var i = 0; i < participating.Length; i++)
+                {
+                    if (participating[i])
+                    {
+                        count++;
+                    }
+                }
+
+                return count;
+            }
+        }
+
+        public string UnitIdAt(int index) => unitIds[index];
+        public int HpAt(int index) => hp[index];
+        public bool IsParticipatingAt(int index) => participating[index];
+        public bool IsWoundedAt(int index) => hp[index] < BattleApi.DefaultMaxHp;
+
+        public bool IsParticipating(string unitId)
+        {
+            var index = IndexOf(unitId);
+            return index >= 0 && participating[index];
+        }
+
+        public bool IsWounded(string unitId)
+        {
+            var index = IndexOf(unitId);
+            return index >= 0 && hp[index] < BattleApi.DefaultMaxHp;
+        }
+
+        internal int IndexOf(string unitId)
+        {
+            for (var i = 0; i < unitIds.Length; i++)
+            {
+                if (string.Equals(unitIds[i], unitId, StringComparison.Ordinal))
+                {
+                    return i;
+                }
+            }
+
+            return -1;
+        }
+
+        internal DeploymentState WithParticipation(int index, bool value)
+        {
+            var next = (bool[])participating.Clone();
+            next[index] = value;
+            return new DeploymentState(unitIds, hp, next);
+        }
+
+        public string Fingerprint()
+        {
+            var sb = new StringBuilder();
+            for (var i = 0; i < unitIds.Length; i++)
+            {
+                if (i > 0)
+                {
+                    sb.Append('|');
+                }
+
+                sb.Append(unitIds[i])
+                    .Append('=')
+                    .Append(hp[i].ToString(CultureInfo.InvariantCulture))
+                    .Append(participating[i] ? ":in" : ":out");
+            }
+
+            return CoreApi.StableHashHex(sb.ToString());
+        }
+    }
+
+    public static class DeploymentApi
+    {
+        public const int DeployCap = 3;
+
+        public static string UnitId(int rosterIndex) => "ally-" + rosterIndex.ToString(CultureInfo.InvariantCulture);
+
+        public static DeploymentState Create(int rosterCount, UnitHpSnapshot partyHp)
+        {
+            if (rosterCount < 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(rosterCount));
+            }
+
+            var ids = new string[rosterCount];
+            var hp = new int[rosterCount];
+            var participating = new bool[rosterCount];
+            var selected = 0;
+            for (var i = 0; i < rosterCount; i++)
+            {
+                ids[i] = UnitId(i);
+                hp[i] = partyHp != null && partyHp.TryGet(ids[i], out var storedHp)
+                    ? storedHp
+                    : BattleApi.DefaultMaxHp;
+                if (hp[i] < 0 || hp[i] > BattleApi.DefaultMaxHp)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(partyHp), "Deployment HP must be within battle HP bounds.");
+                }
+
+                // Wounded leftovers rest by default; healthy members fill up to the deploy cap.
+                participating[i] = hp[i] == BattleApi.DefaultMaxHp && selected < DeployCap;
+                if (participating[i])
+                {
+                    selected++;
+                }
+            }
+
+            return new DeploymentState(ids, hp, participating);
+        }
+
+        public static object SetParticipation(
+            DeploymentState state,
+            string unitId,
+            bool participating,
+            bool explicitWoundedOverride)
+        {
+            if (state == null)
+            {
+                throw new ArgumentNullException(nameof(state));
+            }
+
+            var index = state.IndexOf(unitId);
+            if (index < 0)
+            {
+                return new DeploymentRejection(DeploymentRejectReason.UnknownUnit, unitId);
+            }
+
+            if (state.IsParticipatingAt(index) == participating)
+            {
+                return state;
+            }
+
+            if (participating && state.IsWoundedAt(index) && !explicitWoundedOverride)
+            {
+                return new DeploymentRejection(DeploymentRejectReason.WoundedOverrideRequired, unitId);
+            }
+
+            if (participating && state.ParticipantCount >= DeployCap)
+            {
+                return new DeploymentRejection(DeploymentRejectReason.DeployCapReached, unitId);
+            }
+
+            return state.WithParticipation(index, participating);
+        }
+    }
+
     /// <summary>
     /// Immutable battle handoff for Todo 8. Campaign must not mutate fields after issue.
     /// </summary>
@@ -398,6 +586,8 @@ namespace Janseon.Core
         /// result payload. Immutable snapshot type — Clone may share the reference safely.
         /// </summary>
         public UnitHpSnapshot PartyHp;
+        /// <summary>Current roster participation decision; immutable and capped at three.</summary>
+        public DeploymentState Deployment;
         /// <summary>ResultId last applied via SettlementApi (exact-once). Empty if none.</summary>
         public string SettledResultId;
         /// <summary>ReceiptHash of last SettlementReceipt. Empty if none.</summary>
@@ -429,6 +619,7 @@ namespace Janseon.Core
                 PendingReputationDelta = PendingReputationDelta,
                 PendingBattle = PendingBattle,
                 PartyHp = PartyHp,
+                Deployment = Deployment,
                 SettledResultId = SettledResultId,
                 LastReceiptHash = LastReceiptHash
             };
@@ -507,9 +698,37 @@ namespace Janseon.Core
                 PendingReputationDelta = 0,
                 PendingBattle = null,
                 PartyHp = UnitHpSnapshot.DefaultParty(),
+                Deployment = DeploymentApi.Create(partyMemberCount, UnitHpSnapshot.DefaultParty()),
                 SettledResultId = string.Empty,
                 LastReceiptHash = string.Empty
             };
+        }
+
+        public static object SetDeploymentParticipation(
+            CampaignState state,
+            string unitId,
+            bool participating,
+            bool explicitWoundedOverride = false)
+        {
+            if (state == null)
+            {
+                throw new ArgumentNullException(nameof(state));
+            }
+
+            DeploymentState current = state.Deployment ?? DeploymentApi.Create(state.PartyMemberCount, state.PartyHp);
+            object changed = DeploymentApi.SetParticipation(
+                current,
+                unitId,
+                participating,
+                explicitWoundedOverride);
+            if (changed is DeploymentRejection)
+            {
+                return changed;
+            }
+
+            var next = state.Clone();
+            next.Deployment = (DeploymentState)changed;
+            return next;
         }
 
         /// <summary>
@@ -896,6 +1115,7 @@ namespace Janseon.Core
                 sb.Append(";rep=").Append(state.Reputation.ToString(CultureInfo.InvariantCulture));
                 sb.Append(";seed=").Append(state.Seed.ToString(CultureInfo.InvariantCulture));
                 sb.Append(";hp=").Append(state.PartyHp != null ? state.PartyHp.Fingerprint() : string.Empty);
+                sb.Append(";deploy=").Append(state.Deployment != null ? state.Deployment.Fingerprint() : string.Empty);
                 sb.Append(";choice=").Append(((int)state.Choice).ToString(CultureInfo.InvariantCulture));
                 sb.Append(";locked=").Append(state.ChoiceLocked ? "1" : "0");
                 sb.Append(";settled=").Append(state.SettlementApplied ? "1" : "0");

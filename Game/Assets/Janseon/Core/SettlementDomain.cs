@@ -453,6 +453,9 @@ namespace Janseon.Core
             // Canonical persistent HP: campaign adopts the leftover HP from the result payload.
             // Immutable snapshot — assignment cannot alias mutable caller storage.
             next.PartyHp = result.UnitHp != null ? result.UnitHp : state.PartyHp;
+            // A newly wounded leftover must return to the deploy panel as resting. Rebuild the
+            // default decision from canonical HP; an explicit wounded override is per-decision.
+            next.Deployment = DeploymentApi.Create(next.PartyMemberCount, next.PartyHp);
 
             var cmd = new CampaignCommand
             {

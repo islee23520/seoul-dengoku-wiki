@@ -131,6 +131,7 @@ namespace Janseon.Foundation.UI
 
             presenter.DepartChosen += OnDepart;
             presenter.TravelChosen += OnTravel;
+            presenter.DeploymentParticipationChosen += OnDeploymentParticipation;
             presenter.FaceEncounterChosen += OnFace;
             presenter.EnterResolutionChosen += OnEnterResolution;
             presenter.NegotiateChosen += OnNegotiate;
@@ -156,6 +157,7 @@ namespace Janseon.Foundation.UI
 
             presenter.DepartChosen -= OnDepart;
             presenter.TravelChosen -= OnTravel;
+            presenter.DeploymentParticipationChosen -= OnDeploymentParticipation;
             presenter.FaceEncounterChosen -= OnFace;
             presenter.EnterResolutionChosen -= OnEnterResolution;
             presenter.NegotiateChosen -= OnNegotiate;
@@ -191,6 +193,32 @@ namespace Janseon.Foundation.UI
                 Kind = CampaignCommandKind.Travel,
                 TravelDestination = destination,
             });
+        }
+
+        void OnDeploymentParticipation(int rosterIndex, bool participating)
+        {
+            LastClickedAction = UiElementNames.DeployToggle(rosterIndex);
+            if (campaign == null || rosterIndex < 0 || rosterIndex >= campaign.PartyMemberCount)
+            {
+                return;
+            }
+
+            object result = CampaignApi.SetDeploymentParticipation(
+                campaign,
+                DeploymentApi.UnitId(rosterIndex),
+                participating,
+                explicitWoundedOverride: false);
+            if (result is CampaignState next)
+            {
+                campaign = next;
+                LastRejection = null;
+                Publish();
+                return;
+            }
+
+            Reject(result);
+            // Restore the rejected toggle from canonical deployment state.
+            Publish();
         }
 
         void OnFace()
@@ -518,6 +546,8 @@ namespace Janseon.Foundation.UI
                     return "왜 불가: " + campaign.Reason + " · 단계 " + campaign.Stage;
                 case SettlementRejection settle:
                     return "왜 불가: " + settle.Reason;
+                case DeploymentRejection deploy:
+                    return "왜 불가: " + deploy.Reason + " · " + deploy.UnitId;
                 default:
                     return rejection == null ? string.Empty : rejection.ToString();
             }

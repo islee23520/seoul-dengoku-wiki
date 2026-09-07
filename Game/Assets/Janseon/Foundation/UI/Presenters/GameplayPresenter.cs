@@ -37,6 +37,7 @@ namespace Janseon.Foundation.Composition
         Button stationYeongdeungpo;
         Button stationSindorim;
         Button stationGuro;
+        readonly Toggle[] deployToggles = new Toggle[DeploymentApi.DeployCap + 1];
 
         static readonly string[] StageNames =
         {
@@ -74,6 +75,7 @@ namespace Janseon.Foundation.Composition
         public event Action CombatChosen;
         public event Action ReturnChosen;
         public event Action<StationId> TravelChosen;
+        public event Action<int, bool> DeploymentParticipationChosen;
 
         public bool BindForTest(RectTransform visualRoot) => Bind(visualRoot);
 
@@ -130,6 +132,10 @@ namespace Janseon.Foundation.Composition
             stationYeongdeungpo = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.StationYeongdeungpo);
             stationSindorim = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.StationSindorim);
             stationGuro = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.StationGuro);
+            for (var i = 0; i < deployToggles.Length; i++)
+            {
+                deployToggles[i] = UguiHudBuilder.ToggleNamed(gameplayRoot, UiElementNames.DeployToggle(i));
+            }
 
             if (actionDepart == null || actionFace == null || actionEnter == null || actionSettle == null
                 || battleAdvance == null || choiceNegotiate == null || choiceBypass == null
@@ -159,6 +165,10 @@ namespace Janseon.Foundation.Composition
             stationYeongdeungpo.onClick.AddListener(OnYeongdeungpoClicked);
             stationSindorim.onClick.AddListener(OnSindorimClicked);
             stationGuro.onClick.AddListener(OnGuroClicked);
+            if (deployToggles[0] != null) deployToggles[0].onValueChanged.AddListener(OnDeploy0Changed);
+            if (deployToggles[1] != null) deployToggles[1].onValueChanged.AddListener(OnDeploy1Changed);
+            if (deployToggles[2] != null) deployToggles[2].onValueChanged.AddListener(OnDeploy2Changed);
+            if (deployToggles[3] != null) deployToggles[3].onValueChanged.AddListener(OnDeploy3Changed);
 
             root = gameplayRoot;
             for (var i = 0; i < UiElementNames.GameplayFocusOrder.Length; i++)
@@ -193,6 +203,9 @@ namespace Janseon.Foundation.Composition
         public void TriggerBypassForTest() => OnBypassClicked();
         public void TriggerCombatForTest() => OnCombatClicked();
         public void TriggerReturnForTest() => OnReturnClicked();
+        public void TriggerDeploymentForTest(int rosterIndex, bool participating)
+            => DeploymentParticipationChosen?.Invoke(rosterIndex, participating);
+
         public void TriggerTravelForTest(StationId station)
         {
             if (station.Equals(StationId.Yeongdeungpo))
@@ -274,6 +287,7 @@ namespace Janseon.Foundation.Composition
 
             ApplyMeters(snapshot);
             ApplyParty(snapshot);
+            ApplyDeployment(snapshot);
             ApplyBattleLog(snapshot);
             ApplySettlement(snapshot);
             ApplyContext(snapshot);
@@ -373,6 +387,60 @@ namespace Janseon.Foundation.Composition
             {
                 bool sindorim = snapshot.CurrentStationElement == UiElementNames.StationSindorim;
                 layer.text = sindorim ? "B2" : "B1";
+            }
+        }
+
+        void ApplyDeployment(GameplayUiSnapshot snapshot)
+        {
+            Text heading = FindText(root, UiElementNames.DeployHeading);
+            var participating = 0;
+            for (var i = 0; i < snapshot.DeployParticipating.Count; i++)
+            {
+                if (snapshot.DeployParticipating[i])
+                {
+                    participating++;
+                }
+            }
+
+            if (heading != null)
+            {
+                heading.text = "참가 "
+                    + participating.ToString(CultureInfo.InvariantCulture)
+                    + "/"
+                    + snapshot.DeployUnitIds.Count.ToString(CultureInfo.InvariantCulture)
+                    + " · 배치 상한 "
+                    + DeploymentApi.DeployCap.ToString(CultureInfo.InvariantCulture);
+            }
+
+            for (var i = 0; i <= DeploymentApi.DeployCap; i++)
+            {
+                Toggle toggle = UguiHudBuilder.ToggleNamed(root, UiElementNames.DeployToggle(i));
+                if (toggle == null)
+                {
+                    continue;
+                }
+
+                bool exists = i < snapshot.DeployUnitIds.Count;
+                toggle.gameObject.SetActive(exists);
+                if (!exists)
+                {
+                    continue;
+                }
+
+                toggle.SetIsOnWithoutNotify(snapshot.DeployParticipating[i]);
+                Text label = toggle.GetComponentInChildren<Text>(true);
+                if (label != null)
+                {
+                    label.text = snapshot.DeployUnitIds[i]
+                        + " · HP "
+                        + snapshot.DeployHp[i].ToString(CultureInfo.InvariantCulture)
+                        + "/"
+                        + BattleApi.DefaultMaxHp.ToString(CultureInfo.InvariantCulture)
+                        + " · "
+                        + (snapshot.DeployParticipating[i]
+                            ? "참가"
+                            : snapshot.DeployWounded[i] ? "미참가 — 휴식" : "미참가");
+                }
             }
         }
 
@@ -562,6 +630,10 @@ namespace Janseon.Foundation.Composition
         void OnYeongdeungpoClicked() => TravelChosen?.Invoke(StationId.Yeongdeungpo);
         void OnSindorimClicked() => TravelChosen?.Invoke(StationId.Sindorim);
         void OnGuroClicked() => TravelChosen?.Invoke(StationId.Guro);
+        void OnDeploy0Changed(bool participating) => DeploymentParticipationChosen?.Invoke(0, participating);
+        void OnDeploy1Changed(bool participating) => DeploymentParticipationChosen?.Invoke(1, participating);
+        void OnDeploy2Changed(bool participating) => DeploymentParticipationChosen?.Invoke(2, participating);
+        void OnDeploy3Changed(bool participating) => DeploymentParticipationChosen?.Invoke(3, participating);
 
         static Text FindText(Transform root, string name)
         {
@@ -616,6 +688,10 @@ namespace Janseon.Foundation.Composition
             if (stationYeongdeungpo != null) stationYeongdeungpo.onClick.RemoveListener(OnYeongdeungpoClicked);
             if (stationSindorim != null) stationSindorim.onClick.RemoveListener(OnSindorimClicked);
             if (stationGuro != null) stationGuro.onClick.RemoveListener(OnGuroClicked);
+            if (deployToggles[0] != null) deployToggles[0].onValueChanged.RemoveListener(OnDeploy0Changed);
+            if (deployToggles[1] != null) deployToggles[1].onValueChanged.RemoveListener(OnDeploy1Changed);
+            if (deployToggles[2] != null) deployToggles[2].onValueChanged.RemoveListener(OnDeploy2Changed);
+            if (deployToggles[3] != null) deployToggles[3].onValueChanged.RemoveListener(OnDeploy3Changed);
 
             actionDepart = null;
             actionFace = null;
@@ -637,6 +713,10 @@ namespace Janseon.Foundation.Composition
             stationYeongdeungpo = null;
             stationSindorim = null;
             stationGuro = null;
+            for (var i = 0; i < deployToggles.Length; i++)
+            {
+                deployToggles[i] = null;
+            }
         }
     }
 }

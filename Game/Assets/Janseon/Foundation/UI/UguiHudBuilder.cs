@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
+using Janseon.Core;
 
 namespace Janseon.Foundation.UI
 {
@@ -52,6 +53,16 @@ namespace Janseon.Foundation.UI
             Party(party, "party-slot-0", "탐험가");
             Party(party, "party-slot-1", "의무병");
             Party(party, "party-slot-2", "순찰대");
+
+            RectTransform deploy = Panel(root, UiElementNames.DeployPanel,
+                new Vector2(0.46f, 1f), new Vector2(0.72f, 1f), new Vector2(8f, -190f), new Vector2(-8f, -52f));
+            Label(deploy, UiElementNames.DeployHeading, "참가 3/3 · 배치 상한 3");
+            // P0 starts with three, but retain a fourth hidden row so an attempted fourth
+            // participation is a real toggle interaction that Core can reject at the cap.
+            for (var i = 0; i <= DeploymentApi.DeployCap; i++)
+            {
+                DeployToggle(deploy, i);
+            }
 
             RectTransform route = Panel(root, UiElementNames.RouteRail, new Vector2(0f, 0f), new Vector2(0f, 1f), new Vector2(12f, 12f), new Vector2(360f, -112f));
             
@@ -394,6 +405,38 @@ namespace Janseon.Foundation.UI
         {
             Transform found = Find(root, name);
             return found != null ? found.GetComponent<Toggle>() : null;
+        }
+
+        internal static void DeployToggle(RectTransform parent, int rosterIndex)
+        {
+            string name = UiElementNames.DeployToggle(rosterIndex);
+            GameObject go = new GameObject(name);
+            go.transform.SetParent(parent, false);
+            Image background = go.AddComponent<Image>();
+            background.color = new Color(0.031f, 0.055f, 0.063f, 1f);
+            Toggle toggle = go.AddComponent<Toggle>();
+            toggle.targetGraphic = background;
+            toggle.graphic = background;
+            toggle.isOn = true;
+
+            GameObject labelGo = new GameObject(name + "-label");
+            labelGo.transform.SetParent(go.transform, false);
+            Text label = labelGo.AddComponent<Text>();
+            label.font = CjkFont();
+            label.text = "참가";
+            label.fontSize = 13;
+            label.alignment = TextAnchor.MiddleLeft;
+            label.color = new Color(0.91f, 0.90f, 0.85f);
+            label.raycastTarget = false;
+            RectTransform labelRt = label.rectTransform;
+            labelRt.anchorMin = Vector2.zero;
+            labelRt.anchorMax = Vector2.one;
+            labelRt.offsetMin = new Vector2(8f, 0f);
+            labelRt.offsetMax = new Vector2(-8f, 0f);
+
+            LayoutElement layout = go.AddComponent<LayoutElement>();
+            layout.preferredHeight = 28f;
+            layout.minHeight = 26f;
         }
 
         static void PresetToggle(
