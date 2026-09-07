@@ -17,6 +17,20 @@ const mainTitleScopeMeta = join(compositionDir, 'MainTitleLifetimeScope.cs.meta'
 const foundationScopeMeta = join(compositionDir, 'FoundationLifetimeScope.cs.meta');
 const buildSettings = join('Game', 'ProjectSettings', 'EditorBuildSettings.asset');
 
+// Non-Editor production scripts that still reference UI Toolkit at this
+// integration base. The repository gate is expected to fail on them until
+// migration task 17 lands; fixtures drop them so scenarios isolate the rule
+// against the post-migration clean baseline.
+const productionUitkResidualFiles = [
+  join('Game', 'Assets', 'Janseon', 'Foundation', 'UI', 'Presenters', 'GameplayPresenter.cs'),
+  join('Game', 'Assets', 'Janseon', 'Foundation', 'UI', 'Presenters', 'GameplayUiHost.cs'),
+  join('Game', 'Assets', 'Janseon', 'Foundation', 'UI', 'Presenters', 'MainTitlePresenter.cs'),
+  join('Game', 'Assets', 'Janseon', 'Foundation', 'UI', 'Presenters', 'MainTitleUiHost.cs'),
+  join('Game', 'Assets', 'Janseon', 'Foundation', 'UI', 'RuntimeSlotView.cs'),
+  join('Game', 'Assets', 'Janseon', 'Foundation', 'UI', 'UiResolutionClass.cs'),
+  join('Game', 'Assets', 'Janseon', 'Foundation', 'UI', 'UiScreenReadiness.cs'),
+];
+
 // The gate resolves its repository root from its own module URL, so a fixture that
 // contains a copy of the gate is checked as if the fixture were the repository.
 const fixtureSources = [
@@ -211,6 +225,27 @@ const scenarios = [
           + '}\n');
     },
   },
+  {
+    id: 'ui-toolkit-runtime-usage',
+    description: 'a runtime script uses UI Toolkit types outside any Editor path',
+    expectedExit: 1,
+    expectedRule: 'UI_TOOLKIT_BANNED',
+    async mutate(root) {
+      await writeFile(
+        join(root, compositionDir, 'ToolkitPresenter.cs'),
+        'using UnityEngine.UIElements;\n'
+          + '\n'
+          + 'namespace Janseon.Foundation.Composition\n'
+          + '{\n'
+          + '    internal sealed class ToolkitPresenter\n'
+          + '    {\n'
+          + '        private readonly UIDocument document;\n'
+          + '\n'
+          + '        internal VisualElement Root => document.rootVisualElement;\n'
+          + '    }\n'
+          + '}\n');
+    },
+  },
 ];
 
 const temporaryRoot = await mkdtemp(join(tmpdir(), 'janseon-architecture-gate-'));
@@ -275,8 +310,11 @@ try {
     assert.equal(row.status, 'OK', `${row.id}: ${row.problems.join('; ')}`);
   }
 
-  assert.equal(repositoryResult.exitCode, 0, `repository gate must pass:\n${repositoryResult.stderr}`);
-  assert.match(repositoryResult.stdout, /unity architecture gate passed/);
+  // The production tree still carries non-Editor UI Toolkit usage at this base, so the
+  // repository gate must report it; migration task 17 removes the residual and restores
+  // the exit-0 expectation below.
+  assert.equal(repositoryResult.exitCode, 1, 'repository gate must fail on the known UI Toolkit residual');
+  assert.match(repositoryResult.stderr, /UI_TOOLKIT_BANNED: /);
 
   console.log(`unity architecture gate tests passed (${rows.length} scenarios)`);
 } finally {
@@ -317,6 +355,10 @@ async function createFixture(name) {
     const destination = join(root, relativePath);
     await mkdir(dirname(destination), { recursive: true });
     await cp(join(repositoryRoot, relativePath), destination, { recursive: true });
+  }
+
+  for (const residualPath of productionUitkResidualFiles) {
+    await rm(join(root, residualPath), { force: true });
   }
 
   return root;
