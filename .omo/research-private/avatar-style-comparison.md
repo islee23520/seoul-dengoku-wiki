@@ -214,9 +214,29 @@ A. SDF 페이스맵(Genshin식) — 정점 노멀로 얼굴을 광원 계산하�
 3. **리그·애니층**: 공용 휴머노이드 리그 → Mixamo/ARP 리타깃(Hunter02 절차) → 4방향 idle/walk/attack 셋.
 4. **셰이더층**: MToon 1.0(UniVRM, Unity 6 스파이크 선행) + 얼굴 판독(MToon 페이스 설정 또는 SDF 페이스맵) — pilgrimage의 뎁스 아틀라스는 3D 풀메시 경로에선 불필요(표준 뎁스 버퍼).
 
-### 위험·조건
-- VRChat 생태계 베이스의 출처 품질 편차 — "made from scratch" 명시 제품 우선(BOM에 제작자 원문 인용 등기). Riceballer/MinnaHead 모두 오리지널 주장 확인.
-- 크레딧 의무(Riceballer 플레인, MinnaHead 필수 크레딧) → 게임 크레딧 화면 체계와 통합.
-- 22k tris 전신은 풀 캐스트엔 과다 — LOD/리덕션 절차 필요(POC 3역할은 무관).
-- UniVRM Unity 6 스파이크와 병행(기존 조건 유지). 카테고리 확장 조사(6+ 제품 라이선스 클래스) 진행 중 — 결과 수합 후 최종 판정.
+### 카테고리 조사 최종 (8제품, 페이지 원문 인용, 2026-09-07 — 자식 레인 32도구)
+
+| 제품 | 가격 | 내용 | 라이선스 클래스(원문) | 게임 수록 |
+|---|---|---|---|---|
+| TORIBASE (とりにゃん, BOOTH) | 1,700엔 | 풀바디 DIY 킷 51k poly, **페이스 키 100+·바디 키 17**, Unity+Blender | "use it in your games or videos as long as it has been added to or modified by you" | **YES — 명시적 게임 조항(유일)** |
+| MinnaHead V2 (saltedtrailmix, Gumroad) | $0 | 헤드 5.2k, shape keys·비젬·아이트래킹, FBX+PNG | "You can use this in any VR game" | VR 게임만 명문 — 비VR UNVERIFIED |
+| Riceballer3D (BOOTH) | 0엔 | 풀바디 22k, 체형 3·피부톤 3 | "however you like" + 베이스 단독 판매 금지 | UNVERIFIED(게임 명문 없음 — 서면 확인 경로) |
+| Winter Female Head 2.0 (BOOTH) | 2,800엔 | 헤드, 블렌드셰이프 109, .blend+Unity 예시 | "made for VRChat or other social VR games" | 사회성 VR 한정 |
+| YoruBase (BOOTH) | 2,300/5,300엔(상업 SKU) | 남성 바디 17k, from scratch, .blend/FBX/Unity pkg | "part of a larger package commercially, but not on it's own" | 애포 패키지 스코프 UNVERIFIED |
+| itch OHS 체ubsy/애슬레틱 ×2 | $2 | Blender+스타터 텍스처(재질화 전제) | "Commercial use of any new characters created from this model is allowed" | 파생 캐릭터 명문, "game" 명문 없음 |
+| KZE FREE (BOOTH) | 0엔 | 풀베이스 FBX, PC+Quest | "completely free to use, even commercially" | UNVERIFIED + **TDA remake provenance 위험** |
+
+### 시장 조사 핵심 결론
+- VRChat 생태계 약관의 "commercially"는 **아바타 판매** 의미지 게임 수록이 아니다 — 게임 조항을 페이지에 명시한 제품 전 조査 중 **TORIBASE 1개**. 옜 두 베이스라인(Riceballer "however you like")은 서면 확인 경로로 강 등급.
+- 공통 제약: 베이스-as-베이스 재판매 금지, 크레адit 기제(스토 링크/Discord/credit shapekey/plane), 하후 구买자 의무(Winter·Toribase), SKU 분리(YoruBase).
+- 출처 품질 위험: "from scratch"가 리퍼만 의미하는 경우·TDA/VRoid/MMD kitbash·lookalike remake(KZE 자dTDA 고백) — 체크리스트: 오리지널 mesh 명시·텍스처 크ere dit 별도·기명 base 호환이 Clain 제품 회旝.
+
+### 최종 판정 — 베이스 조립 시스템 채택안
+1. **바odies: TORIBASE** — 유일한 명시 게임 조항 + 페이스 키 100+로 개별화 엔진의 이상적 기반(51k poly는 LOD/리덕션 절차 전제).
+2. **헤드: (a) MinnaHead 비VR 게임 사용 서면 확인(진행 중 제작자 컨택) 또는 (b) 자체 헤드(VRoid Studio 파라매트릭 —Pixiv 약관상 모델 상업 사용 명문, 단 앱 사용 스코프 조항 재확인) 또는 (c) Winter 서면 확인.**
+3. Riceballer는 서면 확인 시 스터브/액세서리 후보로 유지.
+4. 크레딧 레지스트리: 게임 크레딧 화면에 베이스 제작자·스토어 링크 표기 체계(Toribase credit shapekey 유지 포함) — BOM 등기 항목.
+5. 대안 비교: 마켓 베이스 대신 **자체 베이스 제작**(oddland 권리 정선+Hunter02 파이프라인) — 라이선스 표면 0이 장점, 초기 제作 비용이 단점. 권안: TORIBASE 바디(또는 서면 확인 성공 제품) + 자체 텍스처/의상 재질화로 시작, 병 Warwick 자체 베이스 제작 병행.
+6. 모든 베이스 BOM 등기: creator·URL·라이선스 원문·access date·ownership 체인 — 소유자 육안 게이트 섬식 기존 게 규칙 유지.
+
 
