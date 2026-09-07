@@ -9,7 +9,8 @@
   "loop": {
     "explorationAndCombatShareGrid": true,
     "allowedDirections": 4,
-    "separateRealtimeCombatMode": false
+    "combatResolution": "realtime-formation-card",
+    "combatPauseAllowed": true
   },
   "silhouette": {
     "headsTall": 2.5,

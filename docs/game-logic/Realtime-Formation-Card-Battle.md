@@ -1,10 +1,10 @@
 # 실시간 진형·카드 전투
 
-![한 판의 전술 위치 방향 시야 규칙](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-srpg-combat.svg?raw=true)
+![한 판의 실시간 진형 카드 전투 위치 방향 시야 규칙](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-realtime-formation-card-battle.svg?raw=true)
 
 여기서 한 판은 확정된 전투 컨텍스트로 시작해 ResultId 하나로 끝나는 실시간 진형·카드 전투 세션 한 번을 뜻합니다. 한 판 안에서 진형·사기·카드 타이밍이 실시간 전술의 핵심 축이며, 위치·방향·시야는 진형 규칙으로 이어집니다.
 
-> 2026-09-07 소유자 결정([Intent](https://github.com/islee23520/seoul-kenshi/blob/main/Intent.md) 결정 3)으로 전투는 턴제 SRPG에서 **실시간 진형·카드 전투**로 바뀌었습니다. 페이지 파일명 `SRPG-Combat`은 링크 안정성을 위해 유지합니다. 현재 POC 런타임의 동일 격자 턴제 규칙은 이 계약이 구현되기 전까지의 과도 상태이며, 이 페이지의 설계가 구현 완료를 뜻하지 않습니다. 목표 형태의 근거는 [Songs of Silence](Ref-Songs-of-Silence.md)와 [라벨렌 전기](Ref-Ravelen-Chronicles.md) 조사입니다.
+> 2026-09-07 소유자 결정([Intent](https://github.com/islee23520/seoul-kenshi/blob/main/Intent.md) 결정 3)으로 전투는 턴제 SRPG에서 **실시간 진형·카드 전투**로 바뀌었습니다. 이 페이지는 옛 `SRPG-Combat` 페이지를 대체합니다. 현재 POC 런타임의 동일 격자 턴제 규칙은 이 계약이 구현되기 전까지의 과도 상태이며, 이 페이지의 설계가 구현 완료를 뜻하지 않습니다. 목표 형태의 근거는 [Songs of Silence](Ref-Songs-of-Silence.md)와 [라벨렌 전기](Ref-Ravelen-Chronicles.md) 조사입니다.
 
 ## 탐색과 같은 문법
 

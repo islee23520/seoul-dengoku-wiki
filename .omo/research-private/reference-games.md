@@ -152,7 +152,7 @@
 - Fire Emblem: Three Houses (Intelligent Systems, 2019): 격자 기반 턴제 전투, 고정 유닛 운용, 3개 가문(house) 지도자 중심 서사 구조 — 가문 단위 캐스트 조직의 선례. [Wikipedia: https://en.wikipedia.org/wiki/Fire_Emblem:_Three_Houses]
 
 ### 서울 프로젝트 대응 (inference)
-- 우리 SRPG 계약(`docs/game-logic/SRPG-Combat.md`, `Strategy-Battle-Roundtrip.md`): 조우는 제한된 전장+명시적 승패로 풀고, 결과(부상·포획·사기·자원·통제)는 캠페인 상태로 되돌아간다. ItB의 "목표+고정 턴"은 전투 종결 조건 설계의 참조, FE3H의 가문 조직은 Cast-Relations·가문 문서의 참조.
+- 우리 SRPG 계약(`docs/game-logic/Realtime-Formation-Card-Battle.md`, `Strategy-Battle-Roundtrip.md`): 조우는 제한된 전장+명시적 승패로 풀고, 결과(부상·포획·사기·자원·통제)는 캠페인 상태로 되돌아간다. ItB의 "목표+고정 턴"은 전투 종결 조건 설계의 참조, FE3H의 가문 조직은 Cast-Relations·가문 문서의 참조.
 
 ## 출처 등록부
 

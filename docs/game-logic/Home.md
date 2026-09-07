@@ -31,7 +31,7 @@
 | [야망과 관계가 움직이는 정치](Ambitions-and-Relations.md) | 이름 있는 인물이 동맹, 배신, 전쟁과 계승을 만드는 규칙 |
 | [시나리오 타임라인](Scenario-Timeline.md) | 붕괴 이전부터 패권전까지 조건에 따라 갈라지는 연대기 |
 | [이동과 조우](Travel-and-Encounters.md) | 4방향 행동과 원정 위험 |
-| [실시간 진형·카드 전투](SRPG-Combat.md) | 같은 격자에서 이어지는 실시간 진형·카드 전투 (2026-09-07 방향 전환) |
+| [실시간 진형·카드 전투](Realtime-Formation-Card-Battle.md) | 같은 격자에서 이어지는 실시간 진형·카드 전투 (2026-09-07 방향 전환) |
 | [전략에서 전투로](Strategy-Battle-Roundtrip.md) | 세계 상태를 전투에 넘기고 결과를 한 번만 반영하는 법 |
 | [캐릭터 미술](Character-Art-Direction.md) | 2.5등신 전술 실루엣과 인물 프로필 초상 규칙 |
 | [에셋이 들어오는 길](Asset-Pipeline.md) | 의도 JSON을 그래프로 컴파일·검사하고 생성부터 승인까지 가는 설명서 |
