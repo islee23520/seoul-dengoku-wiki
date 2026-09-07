@@ -15,6 +15,13 @@ const put = (path, bytes) => {
   return hash(bytes);
 };
 const pngHash = hash(readFileSync(join(root, source)));
+const syntheticLook = kind => ({
+  palette: { red: '#ff0000', green: '#00ff00', blue: '#0000ff', white: '#ffffff' },
+  materials: { medium: 'synthetic-rgba-test-sprite', finish: 'unlit' },
+  references: [{ kind: 'test-contract', source: 'Game/Assets/Tests/EditMode/RuntimeSlotPromotionTests.cs' }],
+  owner_verdict: 'accepted',
+  owner_notes: `Synthetic ${kind} fixture appearance only; never approves a real candidate.`,
+});
 const reviewPath = `${evidence}/review.json`;
 const reviewHash = put(reviewPath, JSON.stringify({ fixture: true, output_hash: pngHash, verdict: 'pass' }));
 const rightsPath = `${evidence}/rights.txt`;
@@ -26,13 +33,7 @@ const row = {
   output_path: destination, output_hash: pngHash, tool_versions: { fixture: '1' },
   operations: ['test_fixture'], unity_import_settings: {}, status: 'promoted',
   created_at: '2026-09-05T00:00:00Z',
-  look: {
-    palette: { red: '#ff0000', green: '#00ff00', blue: '#0000ff', white: '#ffffff' },
-    materials: { medium: 'synthetic-rgba-test-sprite', finish: 'unlit' },
-    references: [{ kind: 'test-contract', source: 'Game/Assets/Tests/EditMode/RuntimeSlotPromotionTests.cs' }],
-    owner_verdict: 'accepted',
-    owner_notes: 'Synthetic fixture appearance only; never approves a real candidate.',
-  },
+  look: syntheticLook('title-art'),
   review_receipts: [{ reviewer: 'synthetic-fixture-only', verdict: 'pass', receipt_path: reviewPath,
     receipt_hash: reviewHash, reviewed_at: '2026-09-05T00:00:00Z' }],
   rights_evidence: { path: rightsPath, sha256: put(rightsPath, 'Synthetic test fixture, not real asset rights.') },
@@ -43,6 +44,7 @@ if (mutation === 'character') {
   const slot = runtimeSlotContract.slots.find(s => s.slot === 'character-explorer');
   row.runtime_slot = slot.slot;
   row.asset_class = slot.asset_class;
+  row.look = syntheticLook('character');
   row.runtime_files = {};
   row.runtime_slot_files = {};
   delete candidateFiles[destination];
