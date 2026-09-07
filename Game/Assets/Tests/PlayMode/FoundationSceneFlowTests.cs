@@ -131,7 +131,8 @@ namespace Janseon.Foundation.Tests
             Assert.That(Mathf.DeltaAngle(main.transform.eulerAngles.x, Janseon.Foundation.GenreContract.CameraPitchDegrees), Is.EqualTo(0f).Within(0.05f));
 
             HeightmapVoxelWorld world = UnityEngine.Object.FindAnyObjectByType<HeightmapVoxelWorld>();
-            Assert.That(world, Is.Null, "POC must not spawn 3D heightmap voxel terrain for the S-Map");
+            Assert.That(world, Is.Not.Null, "POC must spawn heightmap voxel terrain");
+            Assert.That(world.StationCubeCount, Is.EqualTo(3));
 
             RectTransform hud = host.CanvasRoot;
             Assert.That(hud, Is.Not.Null, "visible uGUI HUD must exist over the 3D world");
@@ -159,6 +160,29 @@ namespace Janseon.Foundation.Tests
             Assert.That(UguiHudBuilder.ButtonNamed(hud, "battle-melee"), Is.Not.Null);
             Assert.That(UguiHudBuilder.ButtonNamed(hud, "battle-end-turn"), Is.Not.Null);
 
+            var screenTarget = new RenderTexture(640, 360, 24);
+            screenTarget.Create();
+            RenderTexture previousMain = main.targetTexture;
+            Texture2D screenPixels = new Texture2D(screenTarget.width, screenTarget.height, TextureFormat.RGBA32, false);
+            try
+            {
+                main.targetTexture = screenTarget;
+                main.Render();
+                RenderTexture.active = screenTarget;
+                screenPixels.ReadPixels(new Rect(0, 0, screenTarget.width, screenTarget.height), 0, 0);
+                screenPixels.Apply();
+                Assert.That(screenPixels.GetPixels32().Count(p => p.r > 60 || p.g > 60 || p.b > 60),
+                    Is.GreaterThan(300), "main camera must draw heightmap/prop geometry to the game view");
+            }
+            finally
+            {
+                main.targetTexture = previousMain;
+                RenderTexture.active = previous;
+                UnityEngine.Object.DestroyImmediate(screenPixels);
+                screenTarget.Release();
+                UnityEngine.Object.DestroyImmediate(screenTarget);
+            }
+
             string evidence = BuildEvidence(
                 coordinator,
                 startup.TransitionId,
@@ -170,7 +194,7 @@ namespace Janseon.Foundation.Tests
             TransitionOutcome returnToTitle = await coordinator.OpenMainTitleAsync(CancellationToken.None);
             await unloaded;
             Assert.That(returnToTitle.Status, Is.EqualTo(TransitionStatus.Completed));
-            // RT preview check removed for 2D map
+            Assert.That(target == null || !target.IsCreated(), Is.True, "Foundation must release its owned preview texture");
         }
 
         [Test]
