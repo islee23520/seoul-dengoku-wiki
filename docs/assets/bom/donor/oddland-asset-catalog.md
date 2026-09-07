@@ -12,8 +12,8 @@ Total assets: 7712
 - material: 629 (2409722 bytes)
 - model: 400 (203429732 bytes)
 - post-process-profile: 5 (13029 bytes)
-- prefab-character: 72 (54825795 bytes)
-- prefab-other: 484 (89381308 bytes)
+- prefab-character: 78 (54874957 bytes)
+- prefab-other: 478 (89332146 bytes)
 - prefab-projectile: 159 (3109401 bytes)
 - prefab-vfx: 627 (275709408 bytes)
 - scene: 37 (419809 bytes)
@@ -28,7 +28,7 @@ Total assets: 7712
 
 - arcade: 6
 - boss: 17
-- common: 1630
+- common: 1624
 - font: 11
 - fx: 1534
 - grenade: 4
@@ -108,12 +108,12 @@ Total assets: 7712
 - sound-sfx_union: 14
 - sound-ui_sfx: 34
 - spine-npc: 13
-- spine-player: 285
-- spine-robson: 40
-- spine-stage1: 48
-- spine-stage2: 49
-- spine-stage3: 44
-- spine-stage4: 48
+- spine-player: 177
+- spine-robson: 60
+- spine-stage1: 72
+- spine-stage2: 73
+- spine-stage3: 66
+- spine-stage4: 72
 - spine-tutorial: 5
 - stage1: 7
 - stage2: 4
@@ -123,8 +123,8 @@ Total assets: 7712
 
 ## Disposition x count
 
-- blockout-geometry: 2176
-- character-poc-only: 532
+- blockout-geometry: 2170
+- character-poc-only: 538
 - excluded-artifact: 1035
 - sfx-candidate: 416
 - tooling-runtime: 242

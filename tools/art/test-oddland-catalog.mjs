@@ -25,6 +25,12 @@ test('classification samples', () => {
  assert.equal(by('Res/XResource/SpineAssets/Stage1/Pig/City_pigzombie_SkeletonData.asset').kind,'spine-skeleton');
  assert.equal(by('Res/Atlas/BMDOHYEON_HUD_Atlas.asset').kind,'sprite-atlas');
  assert.equal(by('Res/GameAssets/Prefabs/Fx/FX_Assassin_Skill.prefab').kind,'prefab-vfx');
+ const characterPrefab = by('Res/Prefabs/Character/CharPlayer.prefab');
+ assert.deepEqual([characterPrefab.kind, characterPrefab.family, characterPrefab.disposition], ['prefab-character','spine-player','character-poc-only']);
+ const characterSpinePrefab = by('Res/Prefabs/CharacterSpines/Town/NPC/Merchant_Upgrade.prefab');
+ assert.equal(characterSpinePrefab.kind, 'prefab-character');
+ const pigAtlas = by('Res/XResource/SpineAssets/Stage1/Pig/City_pigzombie.atlas.txt');
+ assert.equal(pigAtlas.family, 'spine-stage1');
  assert.equal(by('Res/XResource/Scenes/Union.unity').disposition,'excluded-artifact');
  assert.equal(by('Spine/Runtime/spine-unity.asmdef').kind,'spine-runtime-code');
  assert.equal(by('Res/Font/BrandGrade/BrandGrade.txt').kind,'text-data');
