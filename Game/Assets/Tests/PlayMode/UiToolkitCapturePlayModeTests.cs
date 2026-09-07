@@ -6,12 +6,15 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using Janseon.Core;
+using Janseon.Foundation.AppFlow;
+using Janseon.Foundation.Composition;
 using Janseon.Foundation.UI;
 using NUnit.Framework;
 using UnityEngine.TestTools;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using VContainer;
 
 public sealed class UiToolkitCapturePlayModeTests
 {
@@ -97,30 +100,133 @@ public sealed class UiToolkitCapturePlayModeTests
 
     static IEnumerator LoadBootstrapAndBind()
     {
-        yield return SceneManager.LoadSceneAsync("Bootstrap", LoadSceneMode.Single);
-        int guard = 0;
-        MainTitleUiHost title = null;
-        while (title == null && guard < 600)
-        {
-            title = UnityEngine.Object.FindFirstObjectByType<MainTitleUiHost>();
-            if (title == null || !title.IsReady) { guard++; yield return null; }
-        }
-        Assert.That(title, Is.Not.Null);
-        Assert.That(title.IsReady, Is.True, "MainTitle must become ready");
+        yield return new TaskYield(LoadBootstrapAndBindAsync());
+    }
 
-        var start = UguiHudBuilder.ButtonNamed(title.CanvasRoot, UiElementNames.MainTitleStart);
-        Assert.That(start, Is.Not.Null);
+    static async Task LoadBootstrapAndBindAsync()
+    {
+        Task mainTitleLoaded = WaitForSceneAsync(FoundationScenes.MainTitle, TimeSpan.FromSeconds(15));
+        await AwaitAsyncOperation(SceneManager.LoadSceneAsync(
+            FoundationScenes.Bootstrap,
+            LoadSceneMode.Single));
+        await mainTitleLoaded;
+
+        MainTitleUiHost title = UnityEngine.Object.FindAnyObjectByType<MainTitleUiHost>();
+        Assert.That(title, Is.Not.Null, "MainTitleUiHost required");
+        await AwaitTask(title.Ready, TimeSpan.FromSeconds(10), "MainTitle ready");
+
+        AppLifetimeScope appScope = UnityEngine.Object.FindAnyObjectByType<AppLifetimeScope>();
+        Assert.That(appScope, Is.Not.Null, "AppLifetimeScope required");
+        ApplicationFlowCoordinator coordinator =
+            appScope.Container.Resolve<ApplicationFlowCoordinator>();
+        TransitionOutcome titleOutcome = await AwaitTaskResult(
+            coordinator.CurrentTransition, TimeSpan.FromSeconds(15), "MainTitle commit");
+        Assert.That(titleOutcome.Status, Is.EqualTo(TransitionStatus.Completed));
+        Assert.That(coordinator.CurrentState, Is.EqualTo(ApplicationFlowState.MainTitle));
+
+        Button start = UguiHudBuilder.ButtonNamed(title.CanvasRoot, UiElementNames.MainTitleStart);
+        Assert.That(start, Is.Not.Null, "main-title-start missing");
+
+        Task foundationLoaded = WaitForSceneAsync(FoundationScenes.Foundation, TimeSpan.FromSeconds(15));
+        Task titleUnloaded = WaitForSceneUnloadedAsync(FoundationScenes.MainTitle, TimeSpan.FromSeconds(15));
         start.onClick.Invoke();
-        guard = 0;
-        GameplayUiHost gameplay = null;
-        while (gameplay == null && guard < 600)
-        {
-            gameplay = UnityEngine.Object.FindFirstObjectByType<GameplayUiHost>();
-            if (gameplay == null || !gameplay.IsReady) { guard++; yield return null; }
-        }
-        Assert.That(gameplay, Is.Not.Null);
-        Assert.That(gameplay.IsReady, Is.True, "gameplay must become ready");
+        Task<TransitionOutcome> foundationCommit = coordinator.CurrentTransition;
+        Assert.That(foundationCommit, Is.Not.Null, "Start must begin Foundation transition");
+
+        await foundationLoaded;
+        await titleUnloaded;
+        TransitionOutcome foundationOutcome = await AwaitTaskResult(
+            foundationCommit, TimeSpan.FromSeconds(15), "Foundation commit");
+        Assert.That(foundationOutcome.Status, Is.EqualTo(TransitionStatus.Completed));
+        Assert.That(coordinator.CurrentState, Is.EqualTo(ApplicationFlowState.Foundation));
+
+        GameplayUiHost gameplay = UnityEngine.Object.FindAnyObjectByType<GameplayUiHost>();
+        Assert.That(gameplay, Is.Not.Null, "GameplayUiHost missing after Foundation commit");
+        await AwaitTask(gameplay.Ready, TimeSpan.FromSeconds(10), "Gameplay ready");
+        await AwaitTask(gameplay.CoreLoopReady, TimeSpan.FromSeconds(10), "CoreLoop attach");
+        Assert.That(gameplay.CoreLoop, Is.Not.Null);
+        Assert.That(gameplay.CoreLoop.IsReady, Is.True);
         canvasRoot = gameplay.CanvasRoot;
+    }
+
+    static Task AwaitAsyncOperation(AsyncOperation operation)
+    {
+        Assert.That(operation, Is.Not.Null, "scene load operation required");
+        var completion = new TaskCompletionSource<bool>(TaskCreationOptions.RunContinuationsAsynchronously);
+        operation.completed += _ => completion.TrySetResult(true);
+        if (operation.isDone)
+        {
+            completion.TrySetResult(true);
+        }
+        return completion.Task;
+    }
+
+    static async Task WaitForSceneAsync(string path, TimeSpan timeout)
+    {
+        var loaded = new TaskCompletionSource<bool>(TaskCreationOptions.RunContinuationsAsynchronously);
+        void OnLoaded(Scene scene, LoadSceneMode _)
+        {
+            if (scene.path == path)
+            {
+                loaded.TrySetResult(true);
+            }
+        }
+
+        SceneManager.sceneLoaded += OnLoaded;
+        try
+        {
+            if (SceneManager.GetSceneByPath(path).isLoaded)
+            {
+                loaded.TrySetResult(true);
+            }
+            await AwaitTask(loaded.Task, timeout, "scene " + path);
+        }
+        finally
+        {
+            SceneManager.sceneLoaded -= OnLoaded;
+        }
+    }
+
+    static async Task WaitForSceneUnloadedAsync(string path, TimeSpan timeout)
+    {
+        var unloaded = new TaskCompletionSource<bool>(TaskCreationOptions.RunContinuationsAsynchronously);
+        void OnUnloaded(Scene scene)
+        {
+            if (scene.path == path)
+            {
+                unloaded.TrySetResult(true);
+            }
+        }
+
+        SceneManager.sceneUnloaded += OnUnloaded;
+        try
+        {
+            if (!SceneManager.GetSceneByPath(path).isLoaded)
+            {
+                unloaded.TrySetResult(true);
+            }
+            await AwaitTask(unloaded.Task, timeout, "unload " + path);
+        }
+        finally
+        {
+            SceneManager.sceneUnloaded -= OnUnloaded;
+        }
+    }
+
+    static async Task AwaitTask(Task task, TimeSpan timeout, string label)
+    {
+        Assert.That(task, Is.Not.Null, label + " task missing");
+        Task winner = await Task.WhenAny(task, Task.Delay(timeout));
+        Assert.That(winner, Is.SameAs(task), "Timed out waiting " + label);
+        await task;
+    }
+
+    static async Task<T> AwaitTaskResult<T>(Task<T> task, TimeSpan timeout, string label)
+    {
+        Assert.That(task, Is.Not.Null, label + " task missing");
+        Task winner = await Task.WhenAny(task, Task.Delay(timeout));
+        Assert.That(winner, Is.SameAs(task), "Timed out waiting " + label);
+        return await task;
     }
 
 
@@ -203,6 +309,29 @@ public sealed class UiToolkitCapturePlayModeTests
         string output = proc.StandardOutput.ReadToEnd();
         proc.WaitForExit();
         return output;
+    }
+}
+
+public sealed class TaskYield : CustomYieldInstruction
+{
+    readonly Task task;
+
+    public TaskYield(Task task)
+    {
+        this.task = task;
+    }
+
+    public override bool keepWaiting
+    {
+        get
+        {
+            if (!task.IsCompleted)
+            {
+                return true;
+            }
+            task.GetAwaiter().GetResult();
+            return false;
+        }
     }
 }
 
