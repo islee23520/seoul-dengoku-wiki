@@ -6,7 +6,7 @@ using System.Text;
 namespace Janseon.Core
 {
     /// <summary>
-    /// Cardinal step on the shared 4-direction integer grid (Concept + SRPG-Combat).
+    /// Cardinal step on the shared 4-direction integer grid (Concept + Realtime-Formation-Card-Battle).
     /// </summary>
     public enum CardinalDirection
     {

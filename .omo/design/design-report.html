@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>잔선: 서울 — POC 게임성 판정 & UI 설계 리포트</title>
+<style>
+:root{--void:#101719;--panel:#182326;--frame:#657579;--edge-l:#AAB7B3;--edge-d:#080E10;--text:#E8E5D8;--muted:#AFB8B4;--rA:#63B7AF;--rB:#D7AF58;--rC:#9CAAC4;--focus:#D5EDC3;--warn:#F0BA58;--danger:#E66C62;--ticket:#D5CCB5;--tink:#182326}
+*{box-sizing:border-box;margin:0}
+body{background:#05080a;color:var(--text);font-family:"Noto Sans KR","Malgun Gothic",sans-serif;font-size:16px;line-height:1.6}
+.wrap{max-width:1320px;margin:0 auto;padding:40px 24px 80px}
+header.masthead{border:2px solid var(--frame);clip-path:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,16px 100%,0 calc(100% - 16px));background:var(--panel);padding:28px 32px;margin-bottom:28px;background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 1px,transparent 1px 3px)}
+header h1{font-size:34px;font-weight:800;letter-spacing:.02em}
+header .sub{color:var(--muted);margin-top:6px;font-size:15px}
+h2.sec{display:flex;align-items:center;gap:12px;font-size:24px;font-weight:700;margin:44px 0 14px}
+h2.sec::before{content:"";width:4px;height:26px;background:var(--rA)}
+h2.sec.b::before{background:var(--rB)}h2.sec.d::before{background:var(--danger)}h2.sec.f::before{background:var(--focus)}
+.panel{background:var(--panel);border:2px solid var(--frame);clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px));padding:16px 20px;margin-bottom:16px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th{border-bottom:2px solid var(--frame);color:var(--muted);font-weight:600;text-align:left;padding:6px 10px;font-size:13px;letter-spacing:.04em}
+td{border-bottom:1px solid rgba(8,14,16,.7);padding:7px 10px;vertical-align:top}
+td b{color:var(--text)}
+.P{color:var(--focus);font-weight:700}.PA{color:var(--rB);font-weight:700}.F{color:var(--danger);font-weight:700}.N{color:var(--muted)}
+.shot{width:100%;border:2px solid var(--frame);margin:8px 0 4px;display:block}
+.cap{font-size:13px;color:var(--muted);margin-bottom:18px}
+.cap b{color:var(--text)}
+.tag{display:inline-block;font-size:12px;padding:2px 8px;border:1px solid var(--frame);color:var(--muted);margin:2px 4px 2px 0}
+.tag.up{border-color:var(--focus);color:var(--focus)}.tag.dn{border-color:var(--danger);color:var(--danger)}.tag.w{border-color:var(--warn);color:var(--warn)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+ul.tight{padding-left:18px}ul.tight li{margin:4px 0}
+.kv{display:flex;gap:10px}.kv .k{color:var(--muted);min-width:130px}
+.verdict{border:2px solid var(--danger);clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px));background:rgba(230,108,98,.06);padding:18px 22px;margin-bottom:16px}
+.verdict h3{color:var(--danger);font-size:22px;margin-bottom:8px}
+.ticket{background:var(--ticket);color:var(--tink);padding:16px 20px;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px));margin-bottom:16px}
+.ticket::before{content:"";display:block;height:5px;background:var(--frame);margin:-16px -20px 10px}
+.ticket h3{font-size:20px;margin:6px 0 4px}.ticket .s{font-size:13px;opacity:.7}
+footer{color:#5c6a66;font-size:13px;margin-top:50px;border-top:1px solid rgba(101,117,121,.3);padding-top:16px}
+a{color:var(--rA)}
+</style>
+</head>
+<body><div class="wrap">
+
+<header class="masthead">
+<h1>잔선: 서울 — POC 게임성 판정 & UI 설계 리포트</h1>
+<div class="sub">검증 SHA 6d3fe971 · 2026-09-06 · 실측: Windows64 빌드(194 해시 검증) + 키보드 전용 CUA 3루프(43입력·111캡처) + DLL 프로브 469단언 + 독립 검토 2건(54·74장 직접 열람)</div>
+<div style="margin-top:10px"><span class="tag">전술 RPG 기준: 파랜드 택틱스·창세기전</span><span class="tag">인물·선택: CK3</span><span class="tag">지형·부상: Battle Brothers</span><span class="tag up">시각문법: interfaceingame 24장</span></div>
+</header>
+
+<div class="verdict">
+<h3>최종 판정: 게임성 미충족 — PASS 2 / PARTIAL 3 / FAIL 3</h3>
+<p>기술 루프(결정론·정산·연속 원정)는 통과했으나, <b>플레이어가 내리는 결정이 전투에 없고(자동 명령 버튼 하나) 선택 비용이 보이지 않으며(비용·보상 미표시) 세계·인물이 전달되지 않는다(아트 차단 슬롯).</b> 아래 설계는 이 3개 FAIL과 3개 PARTIAL의 처방이다.</p>
+</div>
+
+<h2 class="sec d">1 · 영역별 판정 (8영역 루브릭)</h2>
+<div class="panel"><table>
+<tr><th>영역</th><th>판정</th><th>핵심 근거 (720p/1080p 캡처 · 로그)</th></tr>
+<tr><td><b>1 루프 완결성</b></td><td class="P">PASS</td><td>단일 PID, 키보드만으로 협상→우회→전투 3루프 정산·복귀 완료 (cua/043·053·077)</td></tr>
+<tr><td><b>2 선택 의미</b></td><td class="PA">PARTIAL</td><td>분기별 결과 ID·Core 수치(100/0→95/3→93/2→103/7→88/2)는 다르나 UI에 비용·보상·위험 없음</td></tr>
+<tr><td><b>3 전투 결정</b></td><td class="F">FAIL</td><td>"전투 명령" 단일 버튼 = 코드가 첫 합법 명령 자동 선택. 수동 이동·공격·대상 선택·턴 순서 전무 (cua/060)</td></tr>
+<tr><td><b>4 상태 연속성</b></td><td class="PA">PARTIAL</td><td>자원·평판·중복 정산 방지는 DLL 프로브(469단언)로 검증. 단 <b>파티 HP가 다음 전투 10으로 초기화</b>(HP7→10) — 부상 미이행</td></tr>
+<tr><td><b>5 목표와 긴장</b></td><td class="F">FAIL</td><td>출정 목적·의뢰·실패 비용·다음 준비가 화면에 없음 (cua/010·013)</td></tr>
+<tr><td><b>6 세계/인물</b></td><td class="F">FAIL</td><td>타이틀·인물·아이콘·환경 5슬롯 "아트 차단", 전투 칸도 역할명+차단 문구 (cua/001·060)</td></tr>
+<tr><td><b>7 조작/UX</b></td><td class="PA">PARTIAL</td><td>키보드 도달 OK·잘림 없음. 그러나 영등포→구로 직접 이동 <b>거부 피드백 없음</b>(cua/020), 미리보기 마커 잘림, HP/AP 저대비 3.70:1, 정산 카드 폭 계약 위반</td></tr>
+<tr><td><b>8 안정성/결정론</b></td><td class="P">PASS</td><td>빌드 exit 0, 세션 예외 0, 동일 seed/input 전체 replay hash 동일</td></tr>
+</table></div>
+
+<h2 class="sec">2 · 확정된 설계 방향 (사용자 결정)</h2>
+<div class="panel">
+<div class="kv"><span class="k">렌더링</span><span><b>3D 하이트맵 복셀 타일</b> — 레퍼런스 iso_botw_rain_sim 구조(상면+절벽 측면·높이별 재질·(x+y) 정렬·픽셀 룩). 2D 스프라이트 대안 금지</span></div>
+<div class="kv"><span class="k">카메라</span><span>고정 직교 <b>yaw 45° / pitch 26.57°(2:1)</b> — GenreContract 35.264°에서 변경. 시점 조작 UI 금지</span></div>
+<div class="kv"><span class="k">수직 구조</span><span><b>Z-레이어(지상/B1/B2/B3) × 층내 하이트맵(0~8)</b> 2축. 계단 등 연결 타일에서만 층 이동(정상/막힘/침수). LayerId는 Core 결정론 hash 포함</span></div>
+<div class="kv"><span class="k">규칙</span><span>하이트맵은 <b>Janseon.Core</b>에 — 오르막 +1AP, 고지 원거리 사거리 +1 (BB 문법)</span></div>
+<div class="kv"><span class="k">UI 스택</span><span><b>uGUI(Canvas) + TextMeshPro. UI Toolkit 금지</b> (기존 UXML/USS 교체)</span></div>
+<div class="kv"><span class="k">UI 구조</span><span><b>풀스크린 게임뷰 + 오버레이</b> — 뷰포트/컬럼 분할 금지, 유닛 정보 월드 부착, 툴팁은 대상 앵커</span></div>
+<div class="kv"><span class="k">POC 범위</span><span>3역 × B1+B2. 신도림 B2 침수→정산 확보. 지상·건물·B3 비목표</span></div>
+</div>
+
+<h2 class="sec b">3 · 재질 시스템: 잔선 비상운영판</h2>
+<div class="panel">
+<p style="margin-bottom:10px">폐쇄역 운영 표지판·정비 단말·승차권이 비상전력으로 연결된 은유. interfaceingame 24장에서 도출한 13개 문법 규칙 기반 — <b>웹 룩(플랫 카드·rounded-2xl·부유 그림자·pill) 금지.</b></p>
+<table>
+<tr><th>요소</th><th>규격</th></tr>
+<tr><td><b>금속 패널</b></td><td>반경 0 · 우상/좌하 8px 45° 컷 · 외곽 2px 강철 + 2px 안쪽 1px 접합선 · 한 대상 한 외피 + 내부 분할선(카드 나열 금지)</td></tr>
+<tr><td><b>명령 버튼</b></td><td>≥168×54 · 4px 컷 · 상단 밝게/하단 어둡게 베벨 · 내장 키캡(28×24) · 불가=사선 해치+<b>사유 유지</b></td></tr>
+<tr><td><b>HP/AP</b></td><td>트록 18px+2px 틀 · HP=연속+1px 노치+수치 · AP=<b>이산 셀</b> · 빈 트록 잔존</td></tr>
+<tr><td><b>초상 홀더</b></td><td>96×112 + 4px 매트 + 이름판 + 우상단 22px 상태 아이콘 + HP 부착 · 아트 없어도 동일 프레임 실루엣(art-blocked 라벨 금지)</td></tr>
+<tr><td><b>툴팁</b></td><td>소유 대상에 8px 부착 + 연결선 · 제목→종류→비용/효과 · <b>"왜 불가?" 직접 사유</b> (CK3 문법)</td></tr>
+<tr><td><b>정산 승차권</b></td><td>밝은 종이+금속 클립+펀치+절취선 · result-id가 아니라 <b>±증감·후유증·세계 변화</b></td></tr>
+<tr><td><b>전장 레이어</b></td><td>이동=route-A / 공격=danger 사선 / 위협=warn / 선택=focus 브래킷 — 색+형태 이중 코딩</td></tr>
+<tr><td><b>지도</b></td><td>연결 4px 실선 / 미리보기 6px+목적지 브래킷 / 불가 2px 점선 · 현재 토큰≠목적지 표시</td></tr>
+</table></div>
+
+<h2 class="sec f">4 · 승인된 목업 v4 — 풀스크린 월드 + 오버레이</h2>
+
+<div class="panel"><p><a href="ui-mockup-v4.html#s1">화면 1 목업 원본 열기</a> — 생성 캡처 대신 공유 HTML 원본을 참조한다.</p>
+<div class="cap"><b>1 · 거점 준비(영등포 B1)</b> — 풀스크린 월드. 좌하단 파티 스트립(초상 홀더·HP 노치바), 우하단 임무 콘솔, 부상 콜아웃은 초상에 직접 부착, 월드 내 역명 명판+파티 토큰, 상단 자원 스트립(카드 없음)+층 칩 B1.</div></div>
+
+<div class="panel"><p><a href="ui-mockup-v4.html#s2">화면 2 목업 원본 열기</a> — 생성 캡처 대신 공유 HTML 원본을 참조한다.</p>
+<div class="cap"><b>2 · 원정 지도</b> — 노선 연결 4px / 신도림 미리보기 6px+목적지 브래킷(route-B) / 구로 2px 점선 도달불가. 콘솔: 경로·비용(−2)·예상 조우·<b>B2 침수 상태</b>. "왜 불가?" 콜아웃이 구로 노드에 앵커. 현재 위치는 채운 토큰으로 목적지와 구분.</div></div>
+
+<div class="panel"><p><a href="ui-mockup-v4.html#s3">화면 3 목업 원본 열기</a> — 생성 캡처 대신 공유 HTML 원본을 참조한다.</p>
+<div class="cap"><b>3 · 조우</b> — 하단 중앙 이벤트판이 월드 씬(승강장·순찰대) 위에 오버레이. 상대 초상+상황+3 선택 행이 <b>한 외피의 내부 분할</b>(카드 아님). 각 행: 비용·효과·위험 표시 — 선택만으로 비용 없음, 확정 1회.</div></div>
+
+<div class="panel"><p><a href="ui-mockup-v4.html#s4">화면 4 목업 원본 열기</a> — 생성 캡처 대신 공유 HTML 원본을 참조한다.</p>
+<div class="cap"><b>4 · 전투(신도림 B2)</b> — 풀스크린 5×5 하이트맵(승강장 단 h+1). <b>유닛 이름+HP 바가 월드에 부착</b>(BB식). 상단 페이즈판, 좌측 순서 레일(AP 포함), 대상 옆 공격 예상 콜아웃(피해 −5·<b>고도 보정 +1 사거리</b>·반격·AP 후), 우하단 명령 콘솔(스킬 소켓·HP/AP·확정/취소/<b>대기</b>). 지형 정보: 이동 2AP·사거리 +1. 이동(청)/공격(적)/위협(황) 레이어 분리.</div></div>
+
+<div class="panel"><p><a href="ui-mockup-v4.html#s5">화면 5 목업 원본 열기</a> — 생성 캡처 대신 공유 HTML 원본을 참조한다.</p>
+<div class="cap"><b>5 · 정산</b> — 월드(확보된 승강장) 지속 + 우측 <b>승차권 영수증</b>: 승패·자원 증감(±)·<b>인물 후유증(중상 HP 3/10 → 다음 원정 이행)</b>·세계 변화(구로 도달 가능). 파티 스트립 상태 동기화.</div></div>
+
+<h2 class="sec">5 · 게임성 처방 매핑 (FAIL → 설계)</h2>
+<div class="panel"><table>
+<tr><th>판정 결함</th><th>처방 (v4 화면)</th><th>문법 출처</th></tr>
+<tr><td class="F">전투 자동 명령</td><td>수동 소켓(이동/공격/대기) + 공격 예상 + 대기/턴종료 분리 + 턴 순서 레일</td><td>FE/FFT + BB</td></tr>
+<tr><td class="F">목표·실패 비용 없음</td><td>임무 콘솔(목적·실패 −10) + 조우 카드 비용/위험 + 승차권 ±증감</td><td>CK3 이벤트 + BB 계약</td></tr>
+<tr><td class="F">세계/인물 차단</td><td>초상 홀더(실루엣+이름+역할+HP) · 층 칩(B1/B2) · 침수 상태 · 역명 명판</td><td>IIG G08 + Z-레이어</td></tr>
+<tr><td class="PA">HP 초기화(7→10)</td><td>부상 후유증이 거점·다음 전투 HP·명중에 이행, 정산 표시</td><td>BB 영구 부상</td></tr>
+<tr><td class="PA">거부 피드백 없음</td><td>도달불가 점선 + "왜 불가?" 앵커 콜아웃</td><td>CK3 why-tooltips</td></tr>
+<tr><td class="PA">HP/AP 저대비</td><td>18px 트록+2px 틀+노치/셀 — focus/warn/danger 상태색</td><td>IIG G05</td></tr>
+</table></div>
+
+<h2 class="sec">6 · 증거·문서 인덱스</h2>
+<div class="panel"><ul class="tight">
+<li><b>게임성 판정</b> · .omo/evidence/gameplay-rubric-6d3fe97/ — FINAL-VERDICT.md · REPORT.md · rubric-scores.json · independent-review-functional.md · independent-review-visual.md</li>
+<li><b>시각 문법</b> · ui-reference/iig-grammar/ — game-ui-grammar.md(13규칙) · iig-findings.md(24장) · grammar-sources.json</li>
+<li><b>기능 문법</b> · ui-reference/ — REPORT.md(FE/FFT 갭표) · ck3-ui-reference.md(우선순위 10) · bb-ui-reference.md</li>
+<li><b>타일 렌더링</b> · ui-reference/tile-rendering-reference.md + iso_botw_rain_sim.html</li>
+<li><b>설계 계약</b> · Design.md v2 (uGUI+TMP · 오버레이 구조 · 요소 규격 · 화면 계약 · 수용 기준)</li>
+<li><b>목업</b> · .omo/design/ui-mockup-v4.html</li>
+</ul></div>
+
+<footer>잔선: 서울 POC — 2026-09-06 · 검증 대상 SHA 6d3fe971abf3ce6a11320d313694cf29c7ce37a3 · 무단 게임 자산 복제 없음(모든 참조는 URL 인용) · 이 리포트 자체도 잔선 비상운영판 토큰으로 제작</footer>
+</div></body></html>
