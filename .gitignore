@@ -32,21 +32,53 @@ node_modules/
 *.slnx
 *.user
 
-# Local execution evidence
-.omo/evidence/**/*.log
-.omo/evidence/**/*.xml
+# Shared OMO context: policy/decisions/research are source, not session state.
+# Categories admit future documents normally; stage reviewed paths only.
+/.omo/*
+!/.omo/README.md
+!/.omo/policies/
+!/.omo/rules/
+!/.omo/contracts/
+!/.omo/decisions/
+!/.omo/plans/
+!/.omo/design/
+!/.omo/research/
+!/.omo/research-private/
+!/.omo/evidence/
+/.omo/evidence/*
+!/.omo/evidence/summaries/
+!/.omo/evidence/receipts/
 
-# Track the approved execution plan only; keep other OMO runtime state local.
-!.omo/
-.omo/*
-!.omo/plans/
-.omo/plans/*
-!.omo/plans/seoul-grand-strategy-srpg.md
-!.omo/research-private/
-!.omo/research-private/nippon-sangoku-canon-bridge.md
-
-# Local evidence/runtime state
-.omo/evidence/**/tmp/
+# Machine/runtime data stays local even inside shared categories.
+/.omo/**/sessions/
+/.omo/**/tasks/
+/.omo/**/locks/
+/.omo/**/cache/
+/.omo/**/tmp/
+/.omo/**/temp/
+/.omo/**/raw/
+/.omo/**/captures/
+/.omo/**/archives/
+/.omo/**/*-profile/
+/.omo/**/*-prof*/
+/.omo/**/auth.json
+/.omo/**/credentials*
+/.omo/**/cookies*
+/.omo/**/.env*
+/.omo/**/*.log
+/.omo/**/*.xml
+/.omo/**/*.jsonl
+/.omo/**/*.lock
+/.omo/**/*.tmp
+/.omo/**/*.partial.*
+/.omo/**/*.png
+/.omo/**/*.jpg
+/.omo/**/*.jpeg
+/.omo/**/*.webp
+/.omo/**/*.mp4
+/.omo/**/*.zip
+/.omo/**/*.tar
+/.omo/**/*.gz
 *.log
 
 # Local Unity player output
@@ -60,12 +92,3 @@ Game/Assets/Resources/PerformanceTestRunSettings.json.meta
 
 # Burst/WebGL player sidecar from local builds
 Game/Data/
-.omo/
-
-# Restored whitelist: the .omo catch-all above prunes even whitelisted paths,
-# because gitignore cannot re-include a file whose parent stays excluded.
-# Re-include the .omo directory itself, let the earlier .omo/* re-ignore every
-# direct child, then un-ignore the private research folder. Keep this block
-# AFTER the catch-all line.
-!.omo/
-!.omo/research-private/
