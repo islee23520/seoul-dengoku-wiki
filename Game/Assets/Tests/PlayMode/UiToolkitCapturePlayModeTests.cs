@@ -111,6 +111,11 @@ public sealed class UiToolkitCapturePlayModeTests
 
         MainTitleUiHost title = UnityEngine.Object.FindAnyObjectByType<MainTitleUiHost>();
         Assert.That(title, Is.Not.Null, "MainTitleUiHost required");
+        while (!title.IsReady)
+        {
+            yield return null;
+        }
+
         Button start = UguiHudBuilder.ButtonNamed(title.CanvasRoot, UiElementNames.MainTitleStart);
         Assert.That(start, Is.Not.Null, "main-title-start missing");
         start.onClick.Invoke();
