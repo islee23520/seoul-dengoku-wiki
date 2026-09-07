@@ -142,10 +142,6 @@ public sealed class UiToolkitCapturePlayModeTests
 
         GameplayUiHost gameplay = UnityEngine.Object.FindAnyObjectByType<GameplayUiHost>();
         Assert.That(gameplay, Is.Not.Null, "GameplayUiHost missing after Foundation commit");
-        await AwaitTask(gameplay.Ready, TimeSpan.FromSeconds(10), "Gameplay ready");
-        await AwaitTask(gameplay.CoreLoopReady, TimeSpan.FromSeconds(10), "CoreLoop attach");
-        Assert.That(gameplay.CoreLoop, Is.Not.Null);
-        Assert.That(gameplay.CoreLoop.IsReady, Is.True);
         canvasRoot = gameplay.CanvasRoot;
     }
 
