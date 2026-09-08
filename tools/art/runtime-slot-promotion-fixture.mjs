@@ -34,7 +34,7 @@ const row = {
     palette: { fixture: true },
     materials: { fixture: true },
     references: [{ kind: 'fixture', source: source }],
-    owner_verdict: 'synthetic-test-only',
+    owner_verdict: 'pending',
   },
 };
 const candidateFiles = { [destination]: source };
