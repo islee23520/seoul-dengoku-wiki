@@ -4,7 +4,7 @@ using System.Globalization;
 using Janseon.Core;
 using Janseon.Foundation.UI;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 namespace Janseon.Foundation.Composition
 {
@@ -14,7 +14,7 @@ namespace Janseon.Foundation.Composition
     /// </summary>
     public sealed class GameplayPresenter
     {
-        VisualElement root;
+        RectTransform root;
         readonly List<string> focusOrder = new List<string>();
 
         Button actionDepart;
@@ -22,6 +22,14 @@ namespace Janseon.Foundation.Composition
         Button actionEnter;
         Button actionSettle;
         Button battleAdvance;
+        Button battleMoveN;
+        Button battleMoveE;
+        Button battleMoveS;
+        Button battleMoveW;
+        Button battleMelee;
+        Button battleRanged;
+        Button battleEndTurn;
+        Button battleWait;
         Button choiceNegotiate;
         Button choiceBypass;
         Button choiceCombat;
@@ -29,6 +37,7 @@ namespace Janseon.Foundation.Composition
         Button stationYeongdeungpo;
         Button stationSindorim;
         Button stationGuro;
+        readonly Toggle[] deployToggles = new Toggle[DeploymentApi.DeployCap + 1];
 
         static readonly string[] StageNames =
         {
@@ -56,15 +65,21 @@ namespace Janseon.Foundation.Composition
         public event Action EnterResolutionChosen;
         public event Action SettleChosen;
         public event Action BattleAdvanceChosen;
+        public event Action<int, int> BattleMoveChosen;
+        public event Action BattleMeleeChosen;
+        public event Action BattleRangedChosen;
+        public event Action BattleEndTurnChosen;
+        public event Action BattleWaitChosen;
         public event Action NegotiateChosen;
         public event Action BypassChosen;
         public event Action CombatChosen;
         public event Action ReturnChosen;
         public event Action<StationId> TravelChosen;
+        public event Action<int, bool> DeploymentParticipationChosen;
 
-        public bool BindForTest(VisualElement visualRoot) => Bind(visualRoot);
+        public bool BindForTest(RectTransform visualRoot) => Bind(visualRoot);
 
-        public bool Bind(VisualElement visualRoot)
+        public bool Bind(RectTransform visualRoot)
         {
             Unwire();
             root = null;
@@ -76,9 +91,9 @@ namespace Janseon.Foundation.Composition
                 return false;
             }
 
-            VisualElement gameplayRoot = visualRoot.name == UiElementNames.GameplayRoot
+            RectTransform gameplayRoot = visualRoot.name == UiElementNames.GameplayRoot
                 ? visualRoot
-                : visualRoot.Q(UiElementNames.GameplayRoot);
+                : UguiHudBuilder.Find(visualRoot, UiElementNames.GameplayRoot) as RectTransform;
             if (gameplayRoot == null)
             {
                 return false;
@@ -91,24 +106,36 @@ namespace Janseon.Foundation.Composition
                     continue;
                 }
 
-                if (gameplayRoot.Q(name) == null)
+                if (UguiHudBuilder.Find(gameplayRoot, name) == null)
                 {
                     return false;
                 }
             }
 
-            actionDepart = gameplayRoot.Q<Button>(UiElementNames.ActionDepart);
-            actionFace = gameplayRoot.Q<Button>(UiElementNames.ActionFaceEncounter);
-            actionEnter = gameplayRoot.Q<Button>(UiElementNames.ActionEnterResolution);
-            actionSettle = gameplayRoot.Q<Button>(UiElementNames.ActionSettle);
-            battleAdvance = gameplayRoot.Q<Button>(UiElementNames.BattleAdvance);
-            choiceNegotiate = gameplayRoot.Q<Button>(UiElementNames.ChoiceNegotiate);
-            choiceBypass = gameplayRoot.Q<Button>(UiElementNames.ChoiceBypass);
-            choiceCombat = gameplayRoot.Q<Button>(UiElementNames.ChoiceCombat);
-            returnAction = gameplayRoot.Q<Button>(UiElementNames.ReturnAction);
-            stationYeongdeungpo = gameplayRoot.Q<Button>(UiElementNames.StationYeongdeungpo);
-            stationSindorim = gameplayRoot.Q<Button>(UiElementNames.StationSindorim);
-            stationGuro = gameplayRoot.Q<Button>(UiElementNames.StationGuro);
+            actionDepart = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.ActionDepart);
+            actionFace = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.ActionFaceEncounter);
+            actionEnter = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.ActionEnterResolution);
+            actionSettle = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.ActionSettle);
+            battleAdvance = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.BattleAdvance);
+            battleMoveN = UguiHudBuilder.ButtonNamed(gameplayRoot, "battle-move-n");
+            battleMoveE = UguiHudBuilder.ButtonNamed(gameplayRoot, "battle-move-e");
+            battleMoveS = UguiHudBuilder.ButtonNamed(gameplayRoot, "battle-move-s");
+            battleMoveW = UguiHudBuilder.ButtonNamed(gameplayRoot, "battle-move-w");
+            battleMelee = UguiHudBuilder.ButtonNamed(gameplayRoot, "battle-melee");
+            battleRanged = UguiHudBuilder.ButtonNamed(gameplayRoot, "battle-ranged");
+            battleWait = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.BattleWait);
+            battleEndTurn = UguiHudBuilder.ButtonNamed(gameplayRoot, "battle-end-turn");
+            choiceNegotiate = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.ChoiceNegotiate);
+            choiceBypass = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.ChoiceBypass);
+            choiceCombat = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.ChoiceCombat);
+            returnAction = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.ReturnAction);
+            stationYeongdeungpo = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.StationYeongdeungpo);
+            stationSindorim = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.StationSindorim);
+            stationGuro = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.StationGuro);
+            for (var i = 0; i < deployToggles.Length; i++)
+            {
+                deployToggles[i] = UguiHudBuilder.ToggleNamed(gameplayRoot, UiElementNames.DeployToggle(i));
+            }
 
             if (actionDepart == null || actionFace == null || actionEnter == null || actionSettle == null
                 || battleAdvance == null || choiceNegotiate == null || choiceBypass == null
@@ -118,18 +145,30 @@ namespace Janseon.Foundation.Composition
                 return false;
             }
 
-            actionDepart.clicked += OnDepartClicked;
-            actionFace.clicked += OnFaceClicked;
-            actionEnter.clicked += OnEnterClicked;
-            actionSettle.clicked += OnSettleClicked;
-            battleAdvance.clicked += OnBattleAdvanceClicked;
-            choiceNegotiate.clicked += OnNegotiateClicked;
-            choiceBypass.clicked += OnBypassClicked;
-            choiceCombat.clicked += OnCombatClicked;
-            returnAction.clicked += OnReturnClicked;
-            stationYeongdeungpo.clicked += OnYeongdeungpoClicked;
-            stationSindorim.clicked += OnSindorimClicked;
-            stationGuro.clicked += OnGuroClicked;
+            actionDepart.onClick.AddListener(OnDepartClicked);
+            actionFace.onClick.AddListener(OnFaceClicked);
+            actionEnter.onClick.AddListener(OnEnterClicked);
+            actionSettle.onClick.AddListener(OnSettleClicked);
+            battleAdvance.onClick.AddListener(OnBattleAdvanceClicked);
+            if (battleMoveN != null) battleMoveN.onClick.AddListener(OnBattleMoveNClicked);
+            if (battleMoveE != null) battleMoveE.onClick.AddListener(OnBattleMoveEClicked);
+            if (battleMoveS != null) battleMoveS.onClick.AddListener(OnBattleMoveSClicked);
+            if (battleMoveW != null) battleMoveW.onClick.AddListener(OnBattleMoveWClicked);
+            if (battleMelee != null) battleMelee.onClick.AddListener(OnBattleMeleeClicked);
+            if (battleRanged != null) battleRanged.onClick.AddListener(OnBattleRangedClicked);
+            if (battleWait != null) battleWait.onClick.AddListener(OnBattleWaitClicked);
+            if (battleEndTurn != null) battleEndTurn.onClick.AddListener(OnBattleEndTurnClicked);
+            choiceNegotiate.onClick.AddListener(OnNegotiateClicked);
+            choiceBypass.onClick.AddListener(OnBypassClicked);
+            choiceCombat.onClick.AddListener(OnCombatClicked);
+            returnAction.onClick.AddListener(OnReturnClicked);
+            stationYeongdeungpo.onClick.AddListener(OnYeongdeungpoClicked);
+            stationSindorim.onClick.AddListener(OnSindorimClicked);
+            stationGuro.onClick.AddListener(OnGuroClicked);
+            if (deployToggles[0] != null) deployToggles[0].onValueChanged.AddListener(OnDeploy0Changed);
+            if (deployToggles[1] != null) deployToggles[1].onValueChanged.AddListener(OnDeploy1Changed);
+            if (deployToggles[2] != null) deployToggles[2].onValueChanged.AddListener(OnDeploy2Changed);
+            if (deployToggles[3] != null) deployToggles[3].onValueChanged.AddListener(OnDeploy3Changed);
 
             root = gameplayRoot;
             for (var i = 0; i < UiElementNames.GameplayFocusOrder.Length; i++)
@@ -143,12 +182,8 @@ namespace Janseon.Foundation.Composition
 
         public void ApplyResolutionClass(int width)
         {
-            if (root == null)
-            {
-                return;
-            }
-
-            UiResolutionClass.Apply(root, UiElementNames.GameplayRoot, width);
+            // uGUI contract: CanvasScaler (1280x720 reference) owns resolution.
+            // Retained as a no-op for existing callers until task 13 removes the UITK path.
         }
 
         public void TriggerDepartForTest() => OnDepartClicked();
@@ -156,10 +191,21 @@ namespace Janseon.Foundation.Composition
         public void TriggerEnterResolutionForTest() => OnEnterClicked();
         public void TriggerSettleForTest() => OnSettleClicked();
         public void TriggerBattleAdvanceForTest() => OnBattleAdvanceClicked();
+        public void TriggerBattleMoveNForTest() => OnBattleMoveNClicked();
+        public void TriggerBattleMoveEForTest() => OnBattleMoveEClicked();
+        public void TriggerBattleMoveSForTest() => OnBattleMoveSClicked();
+        public void TriggerBattleMoveWForTest() => OnBattleMoveWClicked();
+        public void TriggerBattleMeleeForTest() => OnBattleMeleeClicked();
+        public void TriggerBattleRangedForTest() => OnBattleRangedClicked();
+        public void TriggerBattleWaitForTest() => OnBattleWaitClicked();
+        public void TriggerBattleEndTurnForTest() => OnBattleEndTurnClicked();
         public void TriggerNegotiateForTest() => OnNegotiateClicked();
         public void TriggerBypassForTest() => OnBypassClicked();
         public void TriggerCombatForTest() => OnCombatClicked();
         public void TriggerReturnForTest() => OnReturnClicked();
+        public void TriggerDeploymentForTest(int rosterIndex, bool participating)
+            => DeploymentParticipationChosen?.Invoke(rosterIndex, participating);
+
         public void TriggerTravelForTest(StationId station)
         {
             if (station.Equals(StationId.Yeongdeungpo))
@@ -185,26 +231,26 @@ namespace Janseon.Foundation.Composition
 
             for (var i = 0; i < StageNames.Length; i++)
             {
-                VisualElement chip = root.Q(StageNames[i]);
+                Transform chip = UguiHudBuilder.Find(root, StageNames[i]);
                 if (chip == null)
                 {
                     continue;
                 }
 
-                chip.EnableInClassList("jk-chip--current", StageNames[i] == snapshot.CurrentStageElement);
+                SetStateColor(chip, StageNames[i] == snapshot.CurrentStageElement);
             }
 
             for (var i = 0; i < StationNames.Length; i++)
             {
-                VisualElement node = root.Q(StationNames[i]);
+                Transform node = UguiHudBuilder.Find(root, StationNames[i]);
                 if (node == null)
                 {
                     continue;
                 }
 
                 bool current = StationNames[i] == snapshot.CurrentStationElement;
-                node.EnableInClassList("jk-route-node--current", current);
-                node.EnableInClassList("jk-route-node--dim", !current);
+                SetStateColor(node, current);
+
             }
 
             SetVisible(UiElementNames.EncounterChoices, snapshot.VisiblePanel == GameplayPanelId.Encounter);
@@ -213,10 +259,10 @@ namespace Janseon.Foundation.Composition
             SetVisible(UiElementNames.BattleHud, battle);
             SetVisible(UiElementNames.BattleGrid, battle);
             SetVisible(UiElementNames.BattleLog, battle);
-            VisualElement battleRow = root.Q("battle-row");
+            Transform battleRow = UguiHudBuilder.Find(root, "battle-row");
             if (battleRow != null)
             {
-                battleRow.EnableInClassList("jk-hidden", !battle);
+                battleRow.gameObject.SetActive(battle);
             }
 
             SetVisible(
@@ -240,33 +286,37 @@ namespace Janseon.Foundation.Composition
             ApplyNamedVisibleFlags(snapshot);
 
             ApplyMeters(snapshot);
+            ApplyParty(snapshot);
+            ApplyDeployment(snapshot);
             ApplyBattleLog(snapshot);
             ApplySettlement(snapshot);
+            ApplyContext(snapshot);
+            ApplyClock(snapshot);
 
             for (var y = 0; y < 5; y++)
             {
                 for (var x = 0; x < 5; x++)
                 {
                     string cellName = UiElementNames.BattleCell(x, y);
-                    VisualElement cell = root.Q(cellName);
+                    Transform cell = UguiHudBuilder.Find(root, cellName);
                     if (cell == null)
                     {
                         continue;
                     }
 
-                    cell.EnableInClassList("jk-grid-cell--ally", false);
-                    cell.EnableInClassList("jk-grid-cell--foe", false);
-                    cell.Clear();
-                    if (snapshot.BattleCellOccupancy.TryGetValue(cellName, out string side))
+                    var cellImage = cell.GetComponent<Image>();
+                    bool hasSide = snapshot.BattleCellOccupancy.TryGetValue(cellName, out string side);
+                    if (cellImage != null)
                     {
-                        if (side == "ally")
-                        {
-                            cell.EnableInClassList("jk-grid-cell--ally", true);
-                        }
-                        else if (side == "foe")
-                        {
-                            cell.EnableInClassList("jk-grid-cell--foe", true);
-                        }
+                        cellImage.color = !hasSide
+                            ? new Color(0.09f, 0.13f, 0.14f, 0.45f)
+                            : side == "ally"
+                                ? new Color(0.208f, 0.349f, 0.412f, 0.8f)
+                                : new Color(0.42f, 0.18f, 0.18f, 0.8f);
+                    }
+                    if (hasSide)
+                    {
+                        SetStateColor(cell, side == "ally");
                     }
                 }
             }
@@ -274,8 +324,8 @@ namespace Janseon.Foundation.Composition
 
         void ApplyMeters(GameplayUiSnapshot snapshot)
         {
-            Label hp = root.Q<Label>(UiElementNames.BattleHp);
-            Label ap = root.Q<Label>(UiElementNames.BattleAp);
+            Text hp = FindText(root, UiElementNames.BattleHp);
+            Text ap = FindText(root, UiElementNames.BattleAp);
             if (hp != null)
             {
                 hp.text = "HP "
@@ -296,104 +346,226 @@ namespace Janseon.Foundation.Composition
             SetFill(UiElementNames.BattleApFill, snapshot.ApFill01);
         }
 
+        void ApplyParty(GameplayUiSnapshot snapshot)
+        {
+            string[] fallback = { "탐험가", "의무병", "순찰대" };
+            for (var i = 0; i < 3; i++)
+            {
+                Text name = FindText(root, "party-slot-" + i + "-name");
+                Text hp = FindText(root, "party-slot-" + i + "-hp");
+                if (i < snapshot.PartyNames.Count)
+                {
+                    if (name != null)
+                    {
+                        name.text = fallback[i];
+                    }
+
+                    if (hp != null)
+                    {
+                        hp.text = "HP "
+                            + snapshot.PartyHp[i].ToString(CultureInfo.InvariantCulture)
+                            + "/"
+                            + snapshot.PartyMaxHp[i].ToString(CultureInfo.InvariantCulture);
+                    }
+                }
+                else
+                {
+                    if (name != null)
+                    {
+                        name.text = fallback[i];
+                    }
+
+                    if (hp != null)
+                    {
+                        hp.text = "HP";
+                    }
+                }
+            }
+
+            Text layer = FindText(root, "layer-chip");
+            if (layer != null)
+            {
+                bool sindorim = snapshot.CurrentStationElement == UiElementNames.StationSindorim;
+                layer.text = sindorim ? "B2" : "B1";
+            }
+        }
+
+        void ApplyDeployment(GameplayUiSnapshot snapshot)
+        {
+            Text heading = FindText(root, UiElementNames.DeployHeading);
+            var participating = 0;
+            for (var i = 0; i < snapshot.DeployParticipating.Count; i++)
+            {
+                if (snapshot.DeployParticipating[i])
+                {
+                    participating++;
+                }
+            }
+
+            if (heading != null)
+            {
+                heading.text = "참가 "
+                    + participating.ToString(CultureInfo.InvariantCulture)
+                    + "/"
+                    + snapshot.DeployUnitIds.Count.ToString(CultureInfo.InvariantCulture)
+                    + " · 배치 상한 "
+                    + DeploymentApi.DeployCap.ToString(CultureInfo.InvariantCulture);
+            }
+
+            for (var i = 0; i <= DeploymentApi.DeployCap; i++)
+            {
+                Toggle toggle = UguiHudBuilder.ToggleNamed(root, UiElementNames.DeployToggle(i));
+                if (toggle == null)
+                {
+                    continue;
+                }
+
+                bool exists = i < snapshot.DeployUnitIds.Count;
+                toggle.gameObject.SetActive(exists);
+                if (!exists)
+                {
+                    continue;
+                }
+
+                toggle.SetIsOnWithoutNotify(snapshot.DeployParticipating[i]);
+                Text label = toggle.GetComponentInChildren<Text>(true);
+                if (label != null)
+                {
+                    label.text = snapshot.DeployUnitIds[i]
+                        + " · HP "
+                        + snapshot.DeployHp[i].ToString(CultureInfo.InvariantCulture)
+                        + "/"
+                        + BattleApi.DefaultMaxHp.ToString(CultureInfo.InvariantCulture)
+                        + " · "
+                        + (snapshot.DeployParticipating[i]
+                            ? "참가"
+                            : snapshot.DeployWounded[i] ? "미참가 — 휴식" : "미참가");
+                }
+            }
+        }
+
         void SetFill(string fillName, float fill01)
         {
-            VisualElement fill = root.Q(fillName);
+            Transform fill = UguiHudBuilder.Find(root, fillName);
             if (fill == null)
             {
                 return;
             }
 
-            float pct = Mathf.Clamp01(fill01) * 100f;
-            fill.style.width = new Length(pct, LengthUnit.Percent);
-            fill.EnableInClassList("jk-meter__fill--empty", fill01 <= 0.0001f);
-            fill.EnableInClassList("jk-meter__fill--full", fill01 >= 0.999f);
+            var rect = fill as RectTransform;
+            if (rect != null)
+            {
+                float pct = Mathf.Clamp01(fill01);
+                rect.anchorMax = new Vector2(pct, 1f);
+                rect.offsetMax = new Vector2(0f, rect.offsetMax.y);
+            }
         }
 
         void ApplyBattleLog(GameplayUiSnapshot snapshot)
         {
-            VisualElement log = root.Q(UiElementNames.BattleLog);
+            Text log = FindText(root, UiElementNames.BattleLog);
             if (log == null)
             {
                 return;
             }
 
-            VisualElement content = log.contentContainer ?? log;
-            var toRemove = new List<VisualElement>();
-            for (var i = 0; i < content.childCount; i++)
-            {
-                VisualElement child = content[i];
-                if (child.ClassListContains("jk-log-entry"))
-                {
-                    toRemove.Add(child);
-                }
-            }
-
-            for (var i = 0; i < toRemove.Count; i++)
-            {
-                toRemove[i].RemoveFromHierarchy();
-            }
-
-            for (var i = 0; i < snapshot.BattleLogEntries.Count; i++)
-            {
-                var entry = new Label(snapshot.BattleLogEntries[i]);
-                entry.AddToClassList("jk-log-entry");
-                entry.name = "battle-log-entry-" + i.ToString(CultureInfo.InvariantCulture);
-                content.Add(entry);
-            }
+            log.text = string.Join("\n", snapshot.BattleLogEntries);
         }
 
         void ApplySettlement(GameplayUiSnapshot snapshot)
         {
-            Label outcome = root.Q<Label>(UiElementNames.SettlementOutcome);
+            Text outcome = FindText(root, UiElementNames.SettlementOutcome);
             if (outcome == null)
             {
                 return;
             }
 
             outcome.text = snapshot.SettlementOutcomeText ?? string.Empty;
-            if (!string.IsNullOrEmpty(snapshot.SettlementOutcomeCode))
+            // Outcome code is carried by the snapshot hash contract, not UI.
+        }
+
+        void ApplyClock(GameplayUiSnapshot snapshot)
+        {
+            Text clock = FindText(root, UiElementNames.ClockLabel);
+            if (clock != null)
             {
-                outcome.viewDataKey = snapshot.SettlementOutcomeCode;
+                clock.text = snapshot.ClockText ?? string.Empty;
+            }
+        }
+
+        void ApplyContext(GameplayUiSnapshot snapshot)
+        {
+            Text context = FindText(root, "encounter-context");
+            if (context != null)
+            {
+                context.text = snapshot.EncounterContext ?? string.Empty;
+            }
+
+            Text forecast = FindText(root, "battle-forecast");
+            if (forecast != null)
+            {
+                forecast.text = snapshot.BattleForecast ?? string.Empty;
+            }
+
+            Text why = FindText(root, "why-tooltip");
+            if (why != null)
+            {
+                why.text = snapshot.WhyText ?? string.Empty;
+            }
+        }
+
+        public void ApplyWhy(string why)
+        {
+            if (root == null)
+            {
+                return;
+            }
+
+            Text label = FindText(root, "why-tooltip");
+            if (label != null)
+            {
+                label.text = why ?? string.Empty;
             }
         }
 
         void SetVisible(string name, bool visible)
         {
-            VisualElement el = root.Q(name);
+            Transform el = UguiHudBuilder.Find(root, name);
             if (el == null)
             {
                 return;
             }
 
-            el.EnableInClassList("jk-hidden", !visible);
+            el.gameObject.SetActive(visible);
         }
 
         void SetActionVisible(string name, bool visible)
         {
-            VisualElement el = root.Q(name);
+            Transform el = UguiHudBuilder.Find(root, name);
             if (el == null)
             {
                 return;
             }
 
-            el.EnableInClassList("jk-hidden", !visible);
-            el.SetEnabled(visible);
+            el.gameObject.SetActive(visible);
+            var button = el.GetComponent<Button>();
+            if (button != null)
+            {
+                button.interactable = visible;
+            }
         }
 
         void SetStationTravelEnabled(string name, bool travelEnabled)
         {
-            VisualElement el = root.Q(name);
+            Transform el = UguiHudBuilder.Find(root, name);
             if (el == null)
             {
                 return;
             }
 
-            // Keep labels enabled so :disabled muted color does not crush route textLum.
-            // Gate interaction via pickingMode; NamedFlags ":visible" owns display.
-            el.SetEnabled(true);
-            el.pickingMode = travelEnabled ? PickingMode.Position : PickingMode.Ignore;
-            el.focusable = travelEnabled;
+            // uGUI contract: labels stay bright (capture textLum guard). Non-adjacent
+            // travel is rejected by Core with a why-tooltip (task 12), not by muted buttons.
+            _ = travelEnabled;
         }
 
         /// <summary>
@@ -428,13 +600,13 @@ namespace Janseon.Foundation.Composition
                     continue;
                 }
 
-                VisualElement el = root.Q(elementName);
+                Transform el = UguiHudBuilder.Find(root, elementName);
                 if (el == null)
                 {
                     continue;
                 }
 
-                el.EnableInClassList("jk-hidden", !pair.Value);
+                el.gameObject.SetActive(pair.Value);
             }
         }
 
@@ -443,6 +615,14 @@ namespace Janseon.Foundation.Composition
         void OnEnterClicked() => EnterResolutionChosen?.Invoke();
         void OnSettleClicked() => SettleChosen?.Invoke();
         void OnBattleAdvanceClicked() => BattleAdvanceChosen?.Invoke();
+        void OnBattleMoveNClicked() => BattleMoveChosen?.Invoke(0, 1);
+        void OnBattleMoveEClicked() => BattleMoveChosen?.Invoke(1, 0);
+        void OnBattleMoveSClicked() => BattleMoveChosen?.Invoke(0, -1);
+        void OnBattleMoveWClicked() => BattleMoveChosen?.Invoke(-1, 0);
+        void OnBattleMeleeClicked() => BattleMeleeChosen?.Invoke();
+        void OnBattleRangedClicked() => BattleRangedChosen?.Invoke();
+        void OnBattleWaitClicked() => BattleWaitChosen?.Invoke();
+        void OnBattleEndTurnClicked() => BattleEndTurnChosen?.Invoke();
         void OnNegotiateClicked() => NegotiateChosen?.Invoke();
         void OnBypassClicked() => BypassChosen?.Invoke();
         void OnCombatClicked() => CombatChosen?.Invoke();
@@ -450,27 +630,82 @@ namespace Janseon.Foundation.Composition
         void OnYeongdeungpoClicked() => TravelChosen?.Invoke(StationId.Yeongdeungpo);
         void OnSindorimClicked() => TravelChosen?.Invoke(StationId.Sindorim);
         void OnGuroClicked() => TravelChosen?.Invoke(StationId.Guro);
+        void OnDeploy0Changed(bool participating) => DeploymentParticipationChosen?.Invoke(0, participating);
+        void OnDeploy1Changed(bool participating) => DeploymentParticipationChosen?.Invoke(1, participating);
+        void OnDeploy2Changed(bool participating) => DeploymentParticipationChosen?.Invoke(2, participating);
+        void OnDeploy3Changed(bool participating) => DeploymentParticipationChosen?.Invoke(3, participating);
+
+        static Text FindText(Transform root, string name)
+        {
+            Transform el = UguiHudBuilder.Find(root, name);
+            if (el == null)
+            {
+                return null;
+            }
+
+            var own = el.GetComponent<Text>();
+            return own != null ? own : el.GetComponentInChildren<Text>(true);
+        }
+
+        static void SetStateColor(Transform el, bool positive)
+        {
+            var image = el.GetComponent<Image>();
+            if (image != null)
+            {
+                image.color = positive
+                    ? new Color(0.835f, 0.929f, 0.765f, 1f)
+                    : new Color(0.149f, 0.212f, 0.227f, 1f);
+            }
+
+            var text = el.GetComponentInChildren<Text>();
+            if (text != null)
+            {
+                text.color = positive
+                    ? new Color(0.835f, 0.929f, 0.765f, 1f)
+                    : new Color(0.604f, 0.651f, 0.698f, 1f);
+            }
+        }
 
         void Unwire()
         {
-            if (actionDepart != null) actionDepart.clicked -= OnDepartClicked;
-            if (actionFace != null) actionFace.clicked -= OnFaceClicked;
-            if (actionEnter != null) actionEnter.clicked -= OnEnterClicked;
-            if (actionSettle != null) actionSettle.clicked -= OnSettleClicked;
-            if (battleAdvance != null) battleAdvance.clicked -= OnBattleAdvanceClicked;
-            if (choiceNegotiate != null) choiceNegotiate.clicked -= OnNegotiateClicked;
-            if (choiceBypass != null) choiceBypass.clicked -= OnBypassClicked;
-            if (choiceCombat != null) choiceCombat.clicked -= OnCombatClicked;
-            if (returnAction != null) returnAction.clicked -= OnReturnClicked;
-            if (stationYeongdeungpo != null) stationYeongdeungpo.clicked -= OnYeongdeungpoClicked;
-            if (stationSindorim != null) stationSindorim.clicked -= OnSindorimClicked;
-            if (stationGuro != null) stationGuro.clicked -= OnGuroClicked;
+            if (actionDepart != null) actionDepart.onClick.RemoveListener(OnDepartClicked);
+            if (actionFace != null) actionFace.onClick.RemoveListener(OnFaceClicked);
+            if (actionEnter != null) actionEnter.onClick.RemoveListener(OnEnterClicked);
+            if (actionSettle != null) actionSettle.onClick.RemoveListener(OnSettleClicked);
+            if (battleAdvance != null) battleAdvance.onClick.RemoveListener(OnBattleAdvanceClicked);
+            if (battleMoveN != null) battleMoveN.onClick.RemoveListener(OnBattleMoveNClicked);
+            if (battleMoveE != null) battleMoveE.onClick.RemoveListener(OnBattleMoveEClicked);
+            if (battleMoveS != null) battleMoveS.onClick.RemoveListener(OnBattleMoveSClicked);
+            if (battleMoveW != null) battleMoveW.onClick.RemoveListener(OnBattleMoveWClicked);
+            if (battleMelee != null) battleMelee.onClick.RemoveListener(OnBattleMeleeClicked);
+            if (battleRanged != null) battleRanged.onClick.RemoveListener(OnBattleRangedClicked);
+            if (battleWait != null) battleWait.onClick.RemoveListener(OnBattleWaitClicked);
+            if (battleEndTurn != null) battleEndTurn.onClick.RemoveListener(OnBattleEndTurnClicked);
+            if (choiceNegotiate != null) choiceNegotiate.onClick.RemoveListener(OnNegotiateClicked);
+            if (choiceBypass != null) choiceBypass.onClick.RemoveListener(OnBypassClicked);
+            if (choiceCombat != null) choiceCombat.onClick.RemoveListener(OnCombatClicked);
+            if (returnAction != null) returnAction.onClick.RemoveListener(OnReturnClicked);
+            if (stationYeongdeungpo != null) stationYeongdeungpo.onClick.RemoveListener(OnYeongdeungpoClicked);
+            if (stationSindorim != null) stationSindorim.onClick.RemoveListener(OnSindorimClicked);
+            if (stationGuro != null) stationGuro.onClick.RemoveListener(OnGuroClicked);
+            if (deployToggles[0] != null) deployToggles[0].onValueChanged.RemoveListener(OnDeploy0Changed);
+            if (deployToggles[1] != null) deployToggles[1].onValueChanged.RemoveListener(OnDeploy1Changed);
+            if (deployToggles[2] != null) deployToggles[2].onValueChanged.RemoveListener(OnDeploy2Changed);
+            if (deployToggles[3] != null) deployToggles[3].onValueChanged.RemoveListener(OnDeploy3Changed);
 
             actionDepart = null;
             actionFace = null;
             actionEnter = null;
             actionSettle = null;
             battleAdvance = null;
+            battleMoveN = null;
+            battleMoveE = null;
+            battleMoveS = null;
+            battleMoveW = null;
+            battleMelee = null;
+            battleRanged = null;
+            battleWait = null;
+        battleEndTurn = null;
             choiceNegotiate = null;
             choiceBypass = null;
             choiceCombat = null;
@@ -478,6 +713,10 @@ namespace Janseon.Foundation.Composition
             stationYeongdeungpo = null;
             stationSindorim = null;
             stationGuro = null;
+            for (var i = 0; i < deployToggles.Length; i++)
+            {
+                deployToggles[i] = null;
+            }
         }
     }
 }

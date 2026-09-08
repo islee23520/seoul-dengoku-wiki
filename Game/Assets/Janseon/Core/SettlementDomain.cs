@@ -73,6 +73,11 @@ namespace Janseon.Core
         public BattleId BattleId;
         public SettlementOutcomeKind Outcome;
         public string ResultHash;
+        /// <summary>
+        /// Leftover per-unit party HP at battle terminal (Strategy-Battle-Roundtrip 부상 왕복).
+        /// Required payload for combat results; part of the exact-once payload hash.
+        /// </summary>
+        public UnitHpSnapshot UnitHp;
     }
 
     /// <summary>
@@ -399,8 +404,22 @@ namespace Janseon.Core
                 return new SettlementRejection(SettlementRejectReason.InvalidResult, state.Stage, result.ResultId);
             }
 
+            // Result payload HP (Strategy-Battle-Roundtrip 부상 왕복): combat results must carry
+            // the leftover party HP snapshot, and a present snapshot outside 0..DefaultMaxHp is
+            // corrupt input — rejected, never clamped or silently defaulted.
+            if (result.UnitHp != null && !result.UnitHp.IsWithinRange(0, BattleApi.DefaultMaxHp))
+            {
+                return new SettlementRejection(SettlementRejectReason.InvalidResult, state.Stage, result.ResultId);
+            }
+
+            if (isCombat
+                && (result.UnitHp == null || !result.UnitHp.TryGet(BattleApi.AllyId, out _)))
+            {
+                return new SettlementRejection(SettlementRejectReason.InvalidResult, state.Stage, result.ResultId);
+            }
+
             // ---- first apply: fixed documented order ----
-            // 1) fate  2) supplies  3) party location  4) time  5) control  6) reputation
+            // 1) fate  2) supplies  3) party location  4) campaign time unchanged  5) control  6) reputation
             var beforeHash = CampaignApi.ComputeCampaignHash(state, ledger);
             ResolveConsequences(result.Outcome, out var consequenceId, out var resourceDelta, out var reputationDelta);
 
@@ -415,11 +434,11 @@ namespace Janseon.Core
             next.Resources = checked(state.Resources + resourceDelta);
             next.PendingResourceDelta = 0;
 
-            // 3. Party location — POC keeps expedition node until CompleteReturn.
-            // (no location mutation here)
+            // 3. Party location — settlement stays at the expedition node. Only the explicit
+            // return-action / CompleteReturn command moves the party home.
+            next.Node = state.Node;
 
-            // 4. Time
-            next.Tick = state.Tick.Next();
+            // 4. Campaign time — settlement is an inspect/apply operation, not move or rest.
 
             // 5. Stronghold/route control — no POC control graph mutation.
 
@@ -430,6 +449,13 @@ namespace Janseon.Core
             next.Stage = CampaignStage.Settlement;
             next.SettlementApplied = true;
             next.PendingBattle = null;
+
+            // Canonical persistent HP: campaign adopts the leftover HP from the result payload.
+            // Immutable snapshot — assignment cannot alias mutable caller storage.
+            next.PartyHp = result.UnitHp != null ? result.UnitHp : state.PartyHp;
+            // A newly wounded leftover must return to the deploy panel as resting. Rebuild the
+            // default decision from canonical HP; an explicit wounded override is per-decision.
+            next.Deployment = DeploymentApi.Create(next.PartyMemberCount, next.PartyHp);
 
             var cmd = new CampaignCommand
             {
@@ -507,7 +533,7 @@ namespace Janseon.Core
                 + ";dRes=" + resourceDelta.ToString(CultureInfo.InvariantCulture)
                 + ";dRep=" + reputationDelta.ToString(CultureInfo.InvariantCulture)
                 + ";cons=" + (next.ConsequenceId ?? string.Empty)
-                + ";order=fate,supplies,location,time,control,reputation");
+                + ";order=fate,supplies,location,time-unchanged,control,reputation");
 
             ledger.Events.Add(new TypedEvent
             {
@@ -534,12 +560,26 @@ namespace Janseon.Core
             var resultHash = BattleApi.ComputeResultHash(battle);
             var resultId = new ResultId("result-" + resultHash.Substring(0, 16));
             var battleIdValue = battle.Context != null ? battle.Context.BattleId : string.Empty;
+            var partyHp = new Dictionary<string, int>();
+            if (battle.Units != null)
+            {
+                for (var i = 0; i < battle.Units.Count; i++)
+                {
+                    var unit = battle.Units[i];
+                    if (unit.IsPlayer && unit.UnitId != null)
+                    {
+                        partyHp[unit.UnitId] = unit.Hp;
+                    }
+                }
+            }
+
             return new EncounterResult
             {
                 ResultId = resultId,
                 BattleId = new BattleId(battleIdValue),
                 Outcome = MapBattleOutcome(battle.Outcome),
-                ResultHash = resultHash
+                ResultHash = resultHash,
+                UnitHp = new UnitHpSnapshot(partyHp)
             };
         }
 
@@ -597,6 +637,7 @@ namespace Janseon.Core
             sb.Append(";bid=").Append(result.BattleId.Value ?? string.Empty);
             sb.Append(";out=").Append(((int)result.Outcome).ToString(CultureInfo.InvariantCulture));
             sb.Append(";rh=").Append(result.ResultHash ?? string.Empty);
+            sb.Append(";hp=").Append(result.UnitHp != null ? result.UnitHp.Fingerprint() : string.Empty);
             return CoreApi.StableHashHex(sb.ToString());
         }
 

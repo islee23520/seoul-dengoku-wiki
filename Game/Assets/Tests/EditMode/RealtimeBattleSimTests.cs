@@ -14,9 +14,16 @@ namespace Janseon.Foundation.Tests
     {
         static BattleSetup Setup()
         {
-            return BattleSetup.FromContext(new BattleContext(
-                "rtfc-b0", "campaign", default(StationId), 314159,
-                new Tick(0), 0, 0, BattleRules.RulesVersion, "context-hash"));
+            return BattleSetup.FromContext(BattleContext.Create(
+                "campaign",
+                default(StationId),
+                314159,
+                new Tick(0),
+                0,
+                0,
+                BattleRules.RulesVersion,
+                "rtfc-b0",
+                UnitHpSnapshot.DefaultParty()));
         }
 
         static BattleTickCommand Command(string id, int seq, int tick, BattleTickCommandKind kind)

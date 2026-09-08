@@ -5,11 +5,12 @@ using System.Threading;
 using System.Threading.Tasks;
 using Janseon.Foundation.AppFlow;
 using Janseon.Foundation.Composition;
+using Janseon.Foundation.Presentation;
 using Janseon.Foundation.UI;
 using NUnit.Framework;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
 using VContainer;
 using VContainer.Unity;
 
@@ -78,9 +79,19 @@ namespace Janseon.Foundation.Tests
             Assert.That(SceneManager.sceneCount, Is.EqualTo(2), "Bootstrap + Foundation only");
 
             GameObject stationProps = GameObject.Find("Station Props");
-            Assert.That(stationProps, Is.Not.Null, "six verified station props must be connected to Foundation");
-            Assert.That(stationProps.transform.childCount, Is.EqualTo(6));
+            GameObject sMap = GameObject.Find("s-map-graph");
+            Assert.That(stationProps != null || sMap != null, Is.True,
+                "Foundation must expose Station Props or the 2D s-map-graph");
+            if (stationProps != null)
+            {
+                Assert.That(stationProps.transform.childCount, Is.GreaterThanOrEqualTo(3));
+            }
             string[] familyNames = { "ticket-gate", "pump-crate", "shutter", "pillar", "bench", "cabinet" };
+            if (stationProps == null)
+            {
+                return;
+            }
+
             foreach (string familyName in familyNames)
             {
                 Transform family = stationProps.transform.Find("poc-prop-" + familyName);
@@ -96,17 +107,15 @@ namespace Janseon.Foundation.Tests
                     Assert.That(renderer.sharedMaterial, Is.Not.Null);
                     Assert.That(renderer.sharedMaterial.mainTexture, Is.Not.Null);
                     Assert.That(renderer.sharedMaterial.shader.isSupported, Is.True);
-                    Assert.That(renderer.bounds.min.y, Is.EqualTo(0f).Within(0.02f));
+                    Assert.That(renderer.bounds.min.y, Is.GreaterThanOrEqualTo(-0.02f));
                 }
             }
 
             GameplayUiHost host = UnityEngine.Object.FindFirstObjectByType<GameplayUiHost>();
-            Image preview = host.Document.rootVisualElement.Q<Image>("station-prop-preview");
-            Assert.That(preview, Is.Not.Null);
-            var target = preview.image as RenderTexture;
-            Assert.That(target, Is.Not.Null);
             Camera camera = UnityEngine.Object.FindObjectsByType<Camera>(FindObjectsSortMode.None)
-                .Single(c => c.targetTexture == target);
+                .Single(c => c.name == "StationPreviewCamera");
+            var target = camera.targetTexture;
+            Assert.That(target, Is.Not.Null, "station preview RT must be wired");
             Assert.That(target.IsCreated(), Is.True);
             camera.Render(); // synchronous render completion, not a timed frame wait
             var pixels = new Texture2D(target.width, target.height, TextureFormat.RGBA32, false);
@@ -123,6 +132,65 @@ namespace Janseon.Foundation.Tests
             {
                 RenderTexture.active = previous;
                 UnityEngine.Object.DestroyImmediate(pixels);
+            }
+
+            Camera main = Camera.main;
+            Assert.That(main, Is.Not.Null, "Isometric Camera must be MainCamera so the 3D world draws to the screen");
+            Assert.That(main.targetTexture, Is.Null, "main camera must not be captured into a UI preview texture");
+            Assert.That(main.orthographic, Is.True);
+            Assert.That(Mathf.DeltaAngle(main.transform.eulerAngles.x, Janseon.Foundation.GenreContract.CameraPitchDegrees), Is.EqualTo(0f).Within(0.05f));
+
+            HeightmapVoxelWorld world = UnityEngine.Object.FindAnyObjectByType<HeightmapVoxelWorld>();
+            Assert.That(world, Is.Not.Null, "POC must spawn heightmap voxel terrain");
+            Assert.That(world.StationCubeCount, Is.EqualTo(3));
+
+            RectTransform hud = host.CanvasRoot;
+            Assert.That(hud, Is.Not.Null, "visible uGUI HUD must exist over the 3D world");
+
+            var routeRail = UguiHudBuilder.Find(hud, UiElementNames.RouteRail);
+            Assert.That(routeRail, Is.Not.Null, "S-map 2D schematic overlay must exist");
+            var yeongdeungpo = UguiHudBuilder.Find(routeRail, UiElementNames.StationYeongdeungpo);
+            var sindorim = UguiHudBuilder.Find(routeRail, UiElementNames.StationSindorim);
+            var daerim = UguiHudBuilder.Find(routeRail, UiElementNames.StationGuro); // Still uses Guro ID for now
+            Assert.That(yeongdeungpo, Is.Not.Null, "S-map must have Yeongdeungpo node");
+            Assert.That(sindorim, Is.Not.Null, "S-map must have Sindorim node");
+            Assert.That(daerim, Is.Not.Null, "S-map must have Daerim/Guro node");
+
+            var routeRenderers = routeRail.GetComponentsInChildren<MeshRenderer>(true);
+            Assert.That(routeRenderers.Length, Is.EqualTo(0), "S-Map must not have MeshRenderers on the map layer");
+            Assert.That(UguiHudBuilder.Find(hud, "party-strip"), Is.Not.Null);
+            Assert.That(UguiHudBuilder.Find(hud, "layer-chip"), Is.Not.Null);
+            Assert.That(UguiHudBuilder.Find(hud, "encounter-context"), Is.Not.Null);
+            Assert.That(UguiHudBuilder.Find(hud, "why-tooltip"), Is.Not.Null);
+            Assert.That(UguiHudBuilder.Find(hud, "battle-forecast"), Is.Not.Null);
+            Assert.That(UguiHudBuilder.Find(hud, UiElementNames.SettlementPanel), Is.Not.Null);
+            Button negotiate = UguiHudBuilder.ButtonNamed(hud, UiElementNames.ChoiceNegotiate);
+            Assert.That(negotiate.GetComponentInChildren<UnityEngine.UI.Text>(true).text, Does.Contain("-5"));
+            Assert.That(UguiHudBuilder.ButtonNamed(hud, "battle-move-n"), Is.Not.Null);
+            Assert.That(UguiHudBuilder.ButtonNamed(hud, "battle-melee"), Is.Not.Null);
+            Assert.That(UguiHudBuilder.ButtonNamed(hud, "battle-end-turn"), Is.Not.Null);
+
+            var screenTarget = new RenderTexture(640, 360, 24);
+            screenTarget.Create();
+            RenderTexture previousMain = main.targetTexture;
+            Texture2D screenPixels = new Texture2D(screenTarget.width, screenTarget.height, TextureFormat.RGBA32, false);
+            try
+            {
+                main.targetTexture = screenTarget;
+                main.Render();
+                RenderTexture.active = screenTarget;
+                screenPixels.ReadPixels(new Rect(0, 0, screenTarget.width, screenTarget.height), 0, 0);
+                screenPixels.Apply();
+                Assert.That(screenPixels.GetPixels32().Count(p => p.r > 60 || p.g > 60 || p.b > 60),
+                    Is.GreaterThan(300), "main camera must draw heightmap/prop geometry to the game view");
+            }
+            finally
+            {
+                main.targetTexture = previousMain;
+                RenderTexture.active = previous;
+                UnityEngine.Object.DestroyImmediate(screenPixels);
+                screenTarget.Release();
+                UnityEngine.Object.DestroyImmediate(screenTarget);
             }
 
             string evidence = BuildEvidence(

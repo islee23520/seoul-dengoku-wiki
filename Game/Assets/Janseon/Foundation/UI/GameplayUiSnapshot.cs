@@ -34,6 +34,20 @@ namespace Janseon.Foundation.UI
         public string SettlementOutcomeCode { get; private set; } = string.Empty;
         public string SettlementOutcomeText { get; private set; } = string.Empty;
         public List<string> BattleLogEntries { get; } = new List<string>();
+        public List<string> PartyNames { get; } = new List<string>();
+        public List<int> PartyHp { get; } = new List<int>();
+        public List<int> PartyMaxHp { get; } = new List<int>();
+        public List<string> DeployUnitIds { get; } = new List<string>();
+        public List<int> DeployHp { get; } = new List<int>();
+        public List<bool> DeployParticipating { get; } = new List<bool>();
+        public List<bool> DeployWounded { get; } = new List<bool>();
+        public string EncounterContext { get; private set; } = string.Empty;
+        public string WhyText { get; private set; } = string.Empty;
+        public string BattleForecast { get; private set; } = string.Empty;
+        public int ClockTick { get; private set; }
+        public string ClockText { get; private set; } = string.Empty;
+        public bool ShowOvernightCopy { get; private set; }
+        public bool ShowBulletinPanel { get; private set; }
 
         public bool ShowDepartAction { get; private set; }
         public bool ShowTravelActions { get; private set; }
@@ -55,6 +69,21 @@ namespace Janseon.Foundation.UI
 
             snap.CurrentStageElement = StageElement(campaign.Stage);
             snap.CurrentStationElement = StationElement(campaign.Node);
+            snap.ClockTick = campaign.Tick.Value;
+            snap.ClockText = FormatClock(campaign.Tick);
+            snap.ShowOvernightCopy = !string.IsNullOrEmpty(campaign.OvernightCopy);
+            snap.ShowBulletinPanel = campaign.HasBulletin
+                && campaign.HomeBase.Equals(StationId.Yeongdeungpo);
+            snap.NamedFlags[UiElementNames.HubOvernightCopy + ":visible"] = snap.ShowOvernightCopy;
+            snap.NamedFlags[UiElementNames.HubBulletinPanel + ":visible"] = snap.ShowBulletinPanel;
+            FillDeployment(snap, campaign);
+            snap.EncounterContext = campaign.Node.Value
+                + " · "
+                + campaign.Stage.ToString()
+                + " · 자원 "
+                + campaign.Resources.ToString(CultureInfo.InvariantCulture)
+                + " · 평판 "
+                + campaign.Reputation.ToString(CultureInfo.InvariantCulture);
             snap.NamedFlags[snap.CurrentStageElement + ":current"] = true;
             snap.NamedFlags[snap.CurrentStationElement + ":current"] = true;
 
@@ -161,6 +190,19 @@ namespace Janseon.Foundation.UI
             return snap;
         }
 
+        static void FillDeployment(GameplayUiSnapshot snap, CampaignState campaign)
+        {
+            DeploymentState deployment = campaign.Deployment
+                ?? DeploymentApi.Create(campaign.PartyMemberCount, campaign.PartyHp);
+            for (var i = 0; i < deployment.RosterCount; i++)
+            {
+                snap.DeployUnitIds.Add(deployment.UnitIdAt(i));
+                snap.DeployHp.Add(deployment.HpAt(i));
+                snap.DeployParticipating.Add(deployment.IsParticipatingAt(i));
+                snap.DeployWounded.Add(deployment.IsWoundedAt(i));
+            }
+        }
+
         static void FillSettlement(GameplayUiSnapshot snap, CampaignState campaign)
         {
             string code;
@@ -232,6 +274,14 @@ namespace Janseon.Foundation.UI
             snap.NamedFlags[UiElementNames.BattleLog + ":visible"] = true;
             snap.NamedFlags[UiElementNames.BattleHpMeter + ":visible"] = true;
             snap.NamedFlags[UiElementNames.BattleApMeter + ":visible"] = true;
+            snap.BattleForecast = "근접 AP"
+                + BattleApi.MeleeApCost.ToString(CultureInfo.InvariantCulture)
+                + " · 피해 "
+                + BattleApi.MeleeDamage.ToString(CultureInfo.InvariantCulture)
+                + " / 원거리 AP"
+                + BattleApi.RangedApCost.ToString(CultureInfo.InvariantCulture)
+                + " · 피해 "
+                + BattleApi.RangedDamage.ToString(CultureInfo.InvariantCulture);
             if (battle.Units == null)
             {
                 return;
@@ -285,6 +335,19 @@ namespace Janseon.Foundation.UI
             {
                 snap.NamedFlags[UiElementNames.BattleLog + ":bound"] = true;
             }
+
+            for (var i = 0; i < battle.Units.Count; i++)
+            {
+                BattleUnit unit = battle.Units[i];
+                if (unit == null || !unit.IsPlayer)
+                {
+                    continue;
+                }
+
+                snap.PartyNames.Add(unit.UnitId);
+                snap.PartyHp.Add(unit.Hp);
+                snap.PartyMaxHp.Add(unit.MaxHp);
+            }
         }
 
         static float Clamp01(float v)
@@ -300,6 +363,11 @@ namespace Janseon.Foundation.UI
             }
 
             return v;
+        }
+
+        public static string FormatClock(Tick tick)
+        {
+            return "T+" + tick.Value.ToString(CultureInfo.InvariantCulture);
         }
 
         public static string StageElement(CampaignStage stage)
@@ -353,12 +421,18 @@ namespace Janseon.Foundation.UI
             sb.Append(";hp=").Append(BattleHp.ToString(CultureInfo.InvariantCulture));
             sb.Append(";ap=").Append(BattleAp.ToString(CultureInfo.InvariantCulture));
             sb.Append(";out=").Append(SettlementOutcomeCode ?? string.Empty);
+            sb.Append(";clock=").Append(ClockTick.ToString(CultureInfo.InvariantCulture));
             if (campaign != null)
             {
                 sb.Append(";stage=").Append(((int)campaign.Stage).ToString(CultureInfo.InvariantCulture));
                 sb.Append(";node=").Append(campaign.Node.Value ?? string.Empty);
                 sb.Append(";tick=").Append(campaign.Tick.Value.ToString(CultureInfo.InvariantCulture));
                 sb.Append(";seed=").Append(campaign.Seed.ToString(CultureInfo.InvariantCulture));
+                sb.Append(";preset=").Append(((int)campaign.StartingPreset).ToString(CultureInfo.InvariantCulture));
+                sb.Append(";party=").Append(campaign.PartyMemberCount.ToString(CultureInfo.InvariantCulture));
+                sb.Append(";deploy=").Append(campaign.Deployment != null ? campaign.Deployment.Fingerprint() : string.Empty);
+                sb.Append(";stronghold=").Append(campaign.HasStronghold ? "1" : "0");
+                sb.Append(";bulletin=").Append(campaign.HasBulletin ? "1" : "0");
                 sb.Append(";choice=").Append(((int)campaign.Choice).ToString(CultureInfo.InvariantCulture));
                 sb.Append(";settled=").Append(campaign.SettlementApplied ? "1" : "0");
             }

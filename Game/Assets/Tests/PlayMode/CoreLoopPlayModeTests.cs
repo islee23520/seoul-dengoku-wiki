@@ -11,8 +11,9 @@ using Janseon.Foundation.Composition;
 using Janseon.Foundation.UI;
 using NUnit.Framework;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
 using VContainer;
 using VContainer.Unity;
 
@@ -60,16 +61,47 @@ namespace Janseon.Foundation.Tests
             Assert.That(session.Campaign.Node, Is.EqualTo(StationId.Yeongdeungpo));
             Assert.That(session.Campaign.Seed, Is.EqualTo(Seed));
 
-            VisualElement root = host.Document.rootVisualElement;
+            RectTransform root = host.CanvasRoot;
             Assert.That(root, Is.Not.Null);
-            VisualElement prep = root.Q(UiElementNames.StageBasePrep);
+            Transform prep = UguiHudBuilder.Find(root, UiElementNames.StageBasePrep);
             Assert.That(prep, Is.Not.Null);
-            Assert.That(prep.ClassListContains("jk-chip--current"), Is.True,
+            Assert.That(prep.GetComponentInChildren<UnityEngine.UI.Text>(true).color, Is.EqualTo(new Color(0.835f, 0.929f, 0.765f)),
                 "BasePreparation chip must be current after Start→Foundation");
 
-            Button depart = root.Q<Button>(ActionDepart);
+            Button depart = UguiHudBuilder.ButtonNamed(root, ActionDepart);
             Assert.That(depart, Is.Not.Null, "action-depart must exist for prepare/dispatch");
             Assert.That(changed, Is.Not.Null);
+        }
+
+        [Test]
+        public async Task MainTitle_DefaultWanderer_HasThreeSupply30AndOvernightOnly()
+        {
+            await BootstrapToFoundationAsync();
+
+            GameplayUiHost host = FindGameplayHost();
+            IPocCoreLoopSession session = ResolveSession(host);
+            Assert.That(session.Campaign.StartingPreset, Is.EqualTo(StartingPreset.Wanderer));
+            Assert.That(session.Campaign.PartyMemberCount, Is.EqualTo(3));
+            Assert.That(session.Campaign.Resources, Is.EqualTo(30));
+            Assert.That(session.Campaign.HasStronghold, Is.False);
+            Assert.That(UguiHudBuilder.Find(host.CanvasRoot, UiElementNames.HubOvernightCopy).gameObject.activeInHierarchy, Is.True);
+            Assert.That(UguiHudBuilder.Find(host.CanvasRoot, UiElementNames.HubBulletinPanel).gameObject.activeInHierarchy, Is.False);
+        }
+
+        [Test]
+        public async Task MainTitle_StationMasterToggle_HasThreeSupply40AndYeongdeungpoBulletin()
+        {
+            await BootstrapToFoundationAsync(StartingPreset.StationMaster);
+
+            GameplayUiHost host = FindGameplayHost();
+            IPocCoreLoopSession session = ResolveSession(host);
+            Assert.That(session.Campaign.StartingPreset, Is.EqualTo(StartingPreset.StationMaster));
+            Assert.That(session.Campaign.PartyMemberCount, Is.EqualTo(3));
+            Assert.That(session.Campaign.Resources, Is.EqualTo(40));
+            Assert.That(session.Campaign.HomeBase, Is.EqualTo(StationId.Yeongdeungpo));
+            Assert.That(session.Campaign.HasStronghold, Is.True);
+            Assert.That(UguiHudBuilder.Find(host.CanvasRoot, UiElementNames.HubOvernightCopy).gameObject.activeInHierarchy, Is.False);
+            Assert.That(UguiHudBuilder.Find(host.CanvasRoot, UiElementNames.HubBulletinPanel).gameObject.activeInHierarchy, Is.True);
         }
 
         [Test]
@@ -79,7 +111,7 @@ namespace Janseon.Foundation.Tests
             GameplayUiHost host = FindGameplayHost();
             IPocCoreLoopSession session = ResolveSession(host);
             Assert.That(session, Is.Not.Null, "IPocCoreLoopSession required");
-            VisualElement root = RequireRoot(host);
+            RectTransform root = RequireRoot(host);
 
             await ClickAndAwait(session, root, ActionDepart, s =>
                 s.Campaign.Stage == CampaignStage.ExpeditionTravel);
@@ -100,12 +132,48 @@ namespace Janseon.Foundation.Tests
 
             Assert.That(session.Campaign.Stage, Is.EqualTo(CampaignStage.Resolution));
             Assert.That(session.Campaign.Node, Is.EqualTo(StationId.Sindorim));
-            Assert.That(root.Q(UiElementNames.EncounterChoices), Is.Not.Null);
-            Assert.That(root.Q<Button>(UiElementNames.ChoiceNegotiate), Is.Not.Null);
-            Assert.That(root.Q<Button>(UiElementNames.ChoiceBypass), Is.Not.Null);
-            Assert.That(root.Q<Button>(UiElementNames.ChoiceCombat), Is.Not.Null);
-            VisualElement stageRes = root.Q(UiElementNames.StageResolution);
-            Assert.That(stageRes.ClassListContains("jk-chip--current"), Is.True);
+            Assert.That(UguiHudBuilder.Find(root, UiElementNames.EncounterChoices), Is.Not.Null);
+            Assert.That(UguiHudBuilder.ButtonNamed(root, UiElementNames.ChoiceNegotiate), Is.Not.Null);
+            Assert.That(UguiHudBuilder.ButtonNamed(root, UiElementNames.ChoiceBypass), Is.Not.Null);
+            Assert.That(UguiHudBuilder.ButtonNamed(root, UiElementNames.ChoiceCombat), Is.Not.Null);
+            Transform stageRes = UguiHudBuilder.Find(root, UiElementNames.StageResolution);
+            Assert.That(stageRes.GetComponentInChildren<UnityEngine.UI.Text>(true).color,
+                Is.EqualTo(new Color(0.835f, 0.929f, 0.765f)), "resolution chip current color");
+        }
+
+        [Test]
+        public async Task SettlementApply_StaysAtSindorim_UntilReturnAction()
+        {
+            await BootstrapToFoundationAsync();
+            GameplayUiHost host = FindGameplayHost();
+            IPocCoreLoopSession session = ResolveSession(host);
+            Assert.That(session, Is.Not.Null, "IPocCoreLoopSession required");
+            RectTransform root = RequireRoot(host);
+
+            await ClickAndAwait(session, root, ActionDepart, s =>
+                s.Campaign.Stage == CampaignStage.ExpeditionTravel);
+            await ClickAndAwait(session, root, UiElementNames.StationSindorim, s =>
+                s.Campaign.Node.Equals(StationId.Sindorim));
+            await ClickAndAwait(session, root, ActionFaceEncounter, s =>
+                s.Campaign.Stage == CampaignStage.Encounter);
+            await ClickAndAwait(session, root, ActionEnterResolution, s =>
+                s.Campaign.Stage == CampaignStage.Resolution);
+            await ClickAndAwait(session, root, UiElementNames.ChoiceNegotiate, s =>
+                s.Campaign.Stage == CampaignStage.Settlement
+                && s.Campaign.Choice == EncounterChoice.Negotiate);
+            await ClickAndAwait(session, root, ActionSettle, s =>
+                s.Campaign.SettlementApplied);
+
+            Assert.That(session.Campaign.Stage, Is.EqualTo(CampaignStage.Settlement));
+            Assert.That(session.Campaign.Node, Is.EqualTo(StationId.Sindorim),
+                "settlement apply must not auto-load the home station");
+            Assert.That(UguiHudBuilder.ButtonNamed(root, UiElementNames.ReturnAction).gameObject.activeInHierarchy,
+                Is.True, "return-action must be the explicit transition back to home");
+
+            await ClickAndAwait(session, root, UiElementNames.ReturnAction, s =>
+                s.Campaign.Stage == CampaignStage.BaseReady);
+
+            Assert.That(session.Campaign.Node, Is.EqualTo(StationId.Yeongdeungpo));
         }
 
         [Test]
@@ -116,7 +184,7 @@ namespace Janseon.Foundation.Tests
             Assert.That(branch.Session.Campaign.Node, Is.EqualTo(StationId.Yeongdeungpo));
             Assert.That(branch.Session.Campaign.ConsequenceId, Is.EqualTo(CampaignApi.ConsequenceNegotiate));
             Assert.That(branch.Session.Campaign.Resources,
-                Is.EqualTo(100 + CampaignApi.NegotiateResourceDelta));
+                Is.EqualTo(30 + CampaignApi.ConfirmedMoveResourceDelta + CampaignApi.NegotiateResourceDelta));
             Assert.That(branch.Session.Campaign.Reputation,
                 Is.EqualTo(0 + CampaignApi.NegotiateReputationDelta));
             Assert.That(branch.Session.Campaign.SettlementApplied, Is.True);
@@ -139,7 +207,7 @@ namespace Janseon.Foundation.Tests
             Assert.That(bypass.Session.Campaign.Stage, Is.EqualTo(CampaignStage.BaseReady));
             Assert.That(bypass.Session.Campaign.ConsequenceId, Is.EqualTo(CampaignApi.ConsequenceBypass));
             Assert.That(bypass.Session.Campaign.Resources,
-                Is.EqualTo(100 + CampaignApi.BypassResourceDelta));
+                Is.EqualTo(30 + CampaignApi.ConfirmedMoveResourceDelta + CampaignApi.BypassResourceDelta));
             Assert.That(bypass.Session.Campaign.Reputation,
                 Is.EqualTo(0 + CampaignApi.BypassReputationDelta));
             Assert.That(bypass.Session.LastReceipt.Outcome, Is.EqualTo(SettlementOutcomeKind.Bypass));
@@ -161,7 +229,7 @@ namespace Janseon.Foundation.Tests
             Assert.That(branch.Session.Campaign.ConsequenceId,
                 Is.EqualTo(SettlementApi.ConsequencePlayerVictory));
             Assert.That(branch.Session.Campaign.Resources,
-                Is.EqualTo(100 + SettlementApi.PlayerVictoryResourceDelta));
+                Is.EqualTo(30 + CampaignApi.ConfirmedMoveResourceDelta + SettlementApi.PlayerVictoryResourceDelta));
             Assert.That(branch.Session.Campaign.Reputation,
                 Is.EqualTo(0 + SettlementApi.PlayerVictoryReputationDelta));
             Assert.That(branch.Session.LastReceipt, Is.Not.Null);
@@ -198,7 +266,7 @@ namespace Janseon.Foundation.Tests
             GameplayUiHost host = FindGameplayHost();
             IPocCoreLoopSession session = ResolveSession(host);
             Assert.That(session, Is.Not.Null, "IPocCoreLoopSession required");
-            VisualElement root = RequireRoot(host);
+            RectTransform root = RequireRoot(host);
 
             // ---- Depart: first UI success ----
             await ClickAndAwait(session, root, ActionDepart, s =>
@@ -209,11 +277,11 @@ namespace Janseon.Foundation.Tests
             object rejectionBefore = session.LastRejection;
 
             // (1) Actual UI button disabled / second click ignored — zero command/event/hash change.
-            Button departBtn = root.Q<Button>(ActionDepart);
+            Button departBtn = UguiHudBuilder.ButtonNamed(root, ActionDepart);
             Assert.That(departBtn, Is.Not.Null);
-            Assert.That(departBtn.enabledInHierarchy, Is.False,
+            Assert.That(departBtn.interactable, Is.False,
                 "action-depart must disable after successful depart");
-            AttemptClickNamed(root, ActionDepart);
+            ExecutePointerClick(root, ActionDepart);
             Assert.That(session.CampaignHash, Is.EqualTo(hashAfterDepart), "UI double-depart hash");
             Assert.That(session.Campaign.Tick.Value, Is.EqualTo(tick), "UI double-depart tick");
             Assert.That(session.CampaignLedger.Events.Count, Is.EqualTo(events), "UI double-depart events");
@@ -252,11 +320,11 @@ namespace Janseon.Foundation.Tests
             SettlementReceipt dupBefore = session.LastDuplicateReceipt;
 
             // (1) Settle button disabled after apply — second UI click ignored, zero side effect.
-            Button settleBtn = root.Q<Button>(ActionSettle);
+            Button settleBtn = UguiHudBuilder.ButtonNamed(root, ActionSettle);
             Assert.That(settleBtn, Is.Not.Null);
-            Assert.That(settleBtn.enabledInHierarchy, Is.False,
+            Assert.That(settleBtn.interactable, Is.False,
                 "action-settle must disable after successful settle (return takes over)");
-            AttemptClickNamed(root, ActionSettle);
+            ExecutePointerClick(root, ActionSettle);
             Assert.That(session.CampaignHash, Is.EqualTo(settledHash), "UI double-settle hash");
             Assert.That(session.CampaignLedger.Events.Count, Is.EqualTo(settledEvents));
             Assert.That(session.Campaign.Resources, Is.EqualTo(settledRes));
@@ -273,6 +341,114 @@ namespace Janseon.Foundation.Tests
             Assert.That(session.CampaignHash, Is.EqualTo(settledHash));
             Assert.That(session.CampaignLedger.Events.Count, Is.EqualTo(settledEvents));
             Assert.That(session.Campaign.Resources, Is.EqualTo(settledRes));
+        }
+
+        [Test]
+        [Category("Task26Keyboard")]
+        public void Task26Keyboard_TabShiftTabEnterEsc_UsesUguiEventSystem()
+        {
+            EventSystem eventSystem = EventSystem.current;
+            GameObject ownedEventSystem = null;
+            if (eventSystem == null)
+            {
+                ownedEventSystem = new GameObject("task-26-event-system");
+                eventSystem = ownedEventSystem.AddComponent<EventSystem>();
+            }
+
+            var root = new GameObject("task-26-keyboard-root");
+            var overlay = new GameObject("task-26-overlay");
+            overlay.transform.SetParent(root.transform, false);
+            KeyboardCancelOverlay cancelOverlay = overlay.AddComponent<KeyboardCancelOverlay>();
+            Button first = new GameObject("keyboard-first").AddComponent<Button>();
+            first.transform.SetParent(overlay.transform, false);
+            Button second = new GameObject("keyboard-second").AddComponent<Button>();
+            second.transform.SetParent(overlay.transform, false);
+            var activations = 0;
+            first.onClick.AddListener(() => activations++);
+
+            try
+            {
+                eventSystem.SetSelectedGameObject(null);
+                UguiKeyboardPlayModeHelper.Tab(root.transform);
+                Assert.That(eventSystem.currentSelectedGameObject, Is.SameAs(first.gameObject));
+
+                UguiKeyboardPlayModeHelper.Tab(root.transform);
+                Assert.That(eventSystem.currentSelectedGameObject, Is.SameAs(second.gameObject));
+
+                UguiKeyboardPlayModeHelper.ShiftTab(root.transform);
+                Assert.That(eventSystem.currentSelectedGameObject, Is.SameAs(first.gameObject));
+
+                UguiKeyboardPlayModeHelper.Enter();
+                Assert.That(activations, Is.EqualTo(1), "Enter must submit the focused uGUI Button");
+
+                UguiKeyboardPlayModeHelper.Escape();
+                Assert.That(cancelOverlay.CancelCount, Is.EqualTo(1));
+                Assert.That(overlay.activeSelf, Is.False, "Esc must cancel the selected control's overlay");
+            }
+            finally
+            {
+                UnityEngine.Object.DestroyImmediate(root);
+                if (ownedEventSystem != null)
+                {
+                    UnityEngine.Object.DestroyImmediate(ownedEventSystem);
+                }
+            }
+        }
+
+        [Test]
+        [Category("Task26Keyboard")]
+        public void Task26Keyboard_SourceRejectsDirectClickVisualElementSubmitAndCuaDriver()
+        {
+            string helperPath = System.IO.Path.Combine(
+                Application.dataPath,
+                "Tests",
+                "PlayMode",
+                "UguiKeyboardPlayModeHelper.cs");
+            Assert.That(System.IO.File.Exists(helperPath), Is.True, "tracked task-26 helper source missing");
+            string source = System.IO.File.ReadAllText(helperPath);
+            Assert.That(source, Does.Contain("EventSystem"));
+            Assert.That(source, Does.Contain("ExecuteEvents"));
+            Assert.That(source, Does.Not.Contain("onClick.Invoke"));
+            Assert.That(source, Does.Not.Contain("NavigationSubmitEvent"));
+            Assert.That(source, Does.Not.Contain("CuaDriver"));
+        }
+
+        [Test]
+        [Category("Task26Keyboard")]
+        public async Task Task26Keyboard_CombatWaitThenTerminalSettlement_ReturnsBaseReady()
+        {
+            await BootstrapToFoundationKeyboardAsync();
+            GameplayUiHost host = FindGameplayHost();
+            IPocCoreLoopSession session = ResolveSession(host);
+            Assert.That(session, Is.Not.Null, "IPocCoreLoopSession required for keyboard loop");
+            RectTransform root = RequireRoot(host);
+
+            await UguiKeyboardPlayModeHelper.EnterNamedAndAwaitAsync(
+                session, root, ActionDepart,
+                s => s.Campaign.Stage == CampaignStage.ExpeditionTravel);
+            await UguiKeyboardPlayModeHelper.EnterNamedAndAwaitAsync(
+                session, root, UiElementNames.StationSindorim,
+                s => s.Campaign.Node.Equals(StationId.Sindorim));
+            await UguiKeyboardPlayModeHelper.EnterNamedAndAwaitAsync(
+                session, root, ActionFaceEncounter,
+                s => s.Campaign.Stage == CampaignStage.Encounter);
+            await UguiKeyboardPlayModeHelper.EnterNamedAndAwaitAsync(
+                session, root, ActionEnterResolution,
+                s => s.Campaign.Stage == CampaignStage.Resolution);
+            await UguiKeyboardPlayModeHelper.EnterNamedAndAwaitAsync(
+                session, root, UiElementNames.ChoiceCombat,
+                s => s.Battle != null && s.Battle.Outcome == BattleOutcomeKind.Ongoing);
+
+            BattleOutcomeKind outcome = await UguiKeyboardPlayModeHelper.FinishCombatKeyboard(session, root);
+            Assert.That(outcome, Is.EqualTo(BattleOutcomeKind.PlayerVictory)
+                .Or.EqualTo(BattleOutcomeKind.EnemyVictory));
+            Assert.That(session.Campaign.SettlementApplied, Is.True,
+                "FinishCombatKeyboard must submit action-settle only after terminal outcome");
+
+            await UguiKeyboardPlayModeHelper.EnterNamedAndAwaitAsync(
+                session, root, UiElementNames.ReturnAction,
+                s => s.Campaign.Stage == CampaignStage.BaseReady);
+            Assert.That(session.Campaign.Node, Is.EqualTo(StationId.Yeongdeungpo));
         }
 
         // ---- helpers ----
@@ -310,7 +486,7 @@ namespace Janseon.Foundation.Tests
             GameplayUiHost host = FindGameplayHost();
             IPocCoreLoopSession session = ResolveSession(host);
             Assert.That(session, Is.Not.Null, "IPocCoreLoopSession required for branch " + choice);
-            VisualElement root = RequireRoot(host);
+            RectTransform root = RequireRoot(host);
             var clicks = new List<string>();
             var result = new BranchResult { Session = session };
 
@@ -351,36 +527,29 @@ namespace Janseon.Foundation.Tests
                     && s.Battle != null
                     && s.Battle.Outcome == BattleOutcomeKind.Ongoing);
                 result.BattleContextHash = session.Campaign.PendingBattle.ContextHash;
-                int guard = 0;
-                while (session.Battle != null
-                       && session.Battle.Outcome == BattleOutcomeKind.Ongoing
-                       && guard < 64)
+                BattleOutcomeKind combatOutcome =
+                    await UguiKeyboardPlayModeHelper.FinishCombatKeyboard(session, root);
+                result.BattleCommands++;
+                Assert.That(combatOutcome, Is.EqualTo(BattleOutcomeKind.PlayerVictory));
+                if (session.Battle != null)
                 {
-                    int tickBefore = session.Battle.BattleTick.Value;
-                    string battleHashBefore = session.BattleHash;
-                    await Step(BattleAdvance, s =>
-                        s.Battle != null
-                        && (s.Battle.Outcome != BattleOutcomeKind.Ongoing
-                            || s.Battle.BattleTick.Value != tickBefore
-                            || s.BattleHash != battleHashBefore));
-                    result.BattleCommands++;
-                    guard++;
+                    Assert.That(session.Battle.Outcome, Is.EqualTo(BattleOutcomeKind.PlayerVictory));
                 }
-
-                Assert.That(session.Battle, Is.Not.Null);
-                Assert.That(session.Battle.Outcome, Is.EqualTo(BattleOutcomeKind.PlayerVictory));
             }
 
-            await Step(ActionSettle, s => s.Campaign.SettlementApplied && s.LastReceipt != null);
+            if (!session.Campaign.SettlementApplied || session.LastReceipt == null)
+            {
+                await Step(ActionSettle, s => s.Campaign.SettlementApplied && s.LastReceipt != null);
+            }
 
             // Dual exact-once observables: disabled UI ignore + presenter seam duplicate receipt.
             string hashBeforeDup = session.CampaignHash;
             int eventsBeforeDup = session.CampaignLedger.Events.Count;
             SettlementReceipt firstReceipt = session.LastReceipt;
-            Button settleBtn = root.Q<Button>(ActionSettle);
+            Button settleBtn = UguiHudBuilder.ButtonNamed(root, ActionSettle);
             Assert.That(settleBtn, Is.Not.Null);
-            Assert.That(settleBtn.enabledInHierarchy, Is.False, "settle disabled after apply");
-            AttemptClickNamed(root, ActionSettle);
+            Assert.That(settleBtn.interactable, Is.False, "settle disabled after apply");
+            ExecutePointerClick(root, ActionSettle);
             Assert.That(session.CampaignHash, Is.EqualTo(hashBeforeDup), "UI dup settle ignored");
             Assert.That(session.CampaignLedger.Events.Count, Is.EqualTo(eventsBeforeDup));
             Assert.That(session.LastDuplicateReceipt, Is.Null);
@@ -404,12 +573,12 @@ namespace Janseon.Foundation.Tests
 
         static async Task ClickAndAwait(
             IPocCoreLoopSession session,
-            VisualElement root,
+            RectTransform root,
             string elementName,
             Func<IPocCoreLoopSession, bool> predicate)
         {
             Task signal = WaitSignal(session);
-            ClickNamed(root, elementName);
+            InvokeButton(root, elementName);
             await AwaitTask(signal, TimeSpan.FromSeconds(8), "state after " + elementName);
             Assert.That(predicate(session), Is.True,
                 "predicate failed after click " + elementName
@@ -418,33 +587,27 @@ namespace Janseon.Foundation.Tests
                 + " rejection=" + (session.LastRejection?.GetType().Name ?? "none"));
         }
 
-        static void ClickNamed(VisualElement root, string name)
+        static void InvokeButton(RectTransform root, string name)
         {
-            Button button = root.Q<Button>(name);
+            Button button = UguiHudBuilder.ButtonNamed(root, name);
             Assert.That(button, Is.Not.Null, "missing clickable button " + name);
-            Assert.That(button.enabledInHierarchy, Is.True, name + " must be enabled");
-            button.Focus();
-            using (var evt = NavigationSubmitEvent.GetPooled())
-            {
-                evt.target = button;
-                button.SendEvent(evt);
-            }
+            Assert.That(button.interactable, Is.True, name + " must be enabled");
+            button.onClick.Invoke();
         }
 
         /// <summary>
-        /// Sends the same NavigationSubmit the production path uses even when the control is
-        /// disabled — used to prove disabled UI ignores the second click (no domain dispatch).
+        /// Executes the uGUI pointer-click path so a disabled Button rejects the click before
+        /// invoking listeners, proving the second click cannot dispatch a domain command.
         /// </summary>
-        static void AttemptClickNamed(VisualElement root, string name)
+        static void ExecutePointerClick(RectTransform root, string name)
         {
-            Button button = root.Q<Button>(name);
-            Assert.That(button, Is.Not.Null, "missing button for attempt-click " + name);
-            button.Focus();
-            using (var evt = NavigationSubmitEvent.GetPooled())
+            Button button = UguiHudBuilder.ButtonNamed(root, name);
+            Assert.That(button, Is.Not.Null, "missing button for pointer click " + name);
+            var eventData = new PointerEventData(EventSystem.current)
             {
-                evt.target = button;
-                button.SendEvent(evt);
-            }
+                button = PointerEventData.InputButton.Left,
+            };
+            ExecuteEvents.Execute(button.gameObject, eventData, ExecuteEvents.pointerClickHandler);
         }
 
         static Task WaitSignal(IPocCoreLoopSession session)
@@ -480,10 +643,9 @@ namespace Janseon.Foundation.Tests
             await task;
         }
 
-        static VisualElement RequireRoot(GameplayUiHost host)
+        static RectTransform RequireRoot(GameplayUiHost host)
         {
-            Assert.That(host.Document, Is.Not.Null);
-            VisualElement root = host.Document.rootVisualElement;
+            RectTransform root = host.CanvasRoot;
             Assert.That(root, Is.Not.Null);
             return root;
         }
@@ -544,7 +706,57 @@ namespace Janseon.Foundation.Tests
             return null;
         }
 
-        async Task BootstrapToFoundationAsync()
+        async Task BootstrapToFoundationKeyboardAsync()
+        {
+            await UnloadContentScenesAsync();
+
+            Task mainTitleLoaded = WaitForSceneAsync(FoundationScenes.MainTitle, TimeSpan.FromSeconds(15));
+            await AwaitAsyncOperation(SceneManager.LoadSceneAsync(
+                FoundationScenes.Bootstrap,
+                LoadSceneMode.Single));
+            await mainTitleLoaded;
+
+            MainTitleUiHost titleHost = UnityEngine.Object.FindAnyObjectByType<MainTitleUiHost>();
+            Assert.That(titleHost, Is.Not.Null, "MainTitleUiHost required");
+            await AwaitTask(titleHost.Ready, TimeSpan.FromSeconds(10), "MainTitle ready");
+
+            AppLifetimeScope appScope = UnityEngine.Object.FindObjectsByType<AppLifetimeScope>(FindObjectsSortMode.None)
+                .FirstOrDefault();
+            Assert.That(appScope, Is.Not.Null);
+            ApplicationFlowCoordinator coordinator =
+                appScope.Container.Resolve<ApplicationFlowCoordinator>();
+            TransitionOutcome titleOutcome = await AwaitTaskResult(
+                coordinator.CurrentTransition, TimeSpan.FromSeconds(15), "MainTitle commit");
+            Assert.That(titleOutcome.Status, Is.EqualTo(TransitionStatus.Completed));
+            Assert.That(coordinator.CurrentState, Is.EqualTo(ApplicationFlowState.MainTitle));
+
+            Task foundationLoaded = WaitForSceneAsync(FoundationScenes.Foundation, TimeSpan.FromSeconds(15));
+            Task titleUnloaded = WaitForSceneUnloadedAsync(FoundationScenes.MainTitle, TimeSpan.FromSeconds(15));
+            UguiKeyboardPlayModeHelper.FocusNamed(titleHost.CanvasRoot, UiElementNames.MainTitleStart);
+            UguiKeyboardPlayModeHelper.Enter();
+            Task<TransitionOutcome> foundationCommit = coordinator.CurrentTransition;
+            Assert.That(foundationCommit, Is.Not.Null, "Enter on focused Start must begin Foundation transition");
+
+            await foundationLoaded;
+            await titleUnloaded;
+            TransitionOutcome foundationOutcome =
+                await AwaitTaskResult(foundationCommit, TimeSpan.FromSeconds(15), "Foundation commit");
+            Assert.That(foundationOutcome.Status, Is.EqualTo(TransitionStatus.Completed));
+            Assert.That(coordinator.CurrentState, Is.EqualTo(ApplicationFlowState.Foundation));
+
+            GameplayUiHost gameplayHost = UnityEngine.Object.FindAnyObjectByType<GameplayUiHost>();
+            Assert.That(gameplayHost, Is.Not.Null, "GameplayUiHost missing after keyboard Start");
+            await AwaitTask(gameplayHost.Ready, TimeSpan.FromSeconds(10), "Gameplay ready");
+            await AwaitTask(gameplayHost.CoreLoopReady, TimeSpan.FromSeconds(10), "CoreLoop attach");
+            Assert.That(gameplayHost.CoreLoop, Is.Not.Null);
+            Assert.That(gameplayHost.CoreLoop.IsReady, Is.True);
+
+            string head = RunGit("rev-parse HEAD").Trim();
+            Assert.That(head, Is.EqualTo(testedHead), "HEAD must remain unchanged during the scenario");
+            Debug.Log("CORE_LOOP_KEYBOARD_TESTED_HEAD " + head);
+        }
+
+        async Task BootstrapToFoundationAsync(StartingPreset preset = StartingPreset.Wanderer)
         {
             await UnloadContentScenesAsync();
 
@@ -570,9 +782,15 @@ namespace Janseon.Foundation.Tests
             Assert.That(titleOutcome.Status, Is.EqualTo(TransitionStatus.Completed));
             Assert.That(coordinator.CurrentState, Is.EqualTo(ApplicationFlowState.MainTitle));
 
-            VisualElement titleRoot = titleHost.Document.rootVisualElement;
-            Button start = titleRoot.Q<Button>(UiElementNames.MainTitleStart);
+            RectTransform titleRoot = titleHost.CanvasRoot;
+            Button start = UguiHudBuilder.ButtonNamed(titleRoot, UiElementNames.MainTitleStart);
             Assert.That(start, Is.Not.Null, "main-title-start missing");
+            if (preset == StartingPreset.StationMaster)
+            {
+                Toggle stationMaster = UguiHudBuilder.ToggleNamed(titleRoot, UiElementNames.MainTitleStationMasterPreset);
+                Assert.That(stationMaster, Is.Not.Null, "station-master preset toggle missing");
+                stationMaster.isOn = true;
+            }
 
             var presenterField = typeof(MainTitleUiHost).GetField(
                 "presenter",
@@ -587,12 +805,7 @@ namespace Janseon.Foundation.Tests
             Task<TransitionOutcome> foundationCommit = null;
 
             // Drive production Start button (same handler as main-title-start).
-            start.Focus();
-            using (var evt = NavigationSubmitEvent.GetPooled())
-            {
-                evt.target = start;
-                start.SendEvent(evt);
-            }
+            start.onClick.Invoke();
 
             // Capture the coordinator transition task; if NavigationSubmit did not start it,
             // invoke the production presenter Start seam (identical OpenFoundationAsync path).

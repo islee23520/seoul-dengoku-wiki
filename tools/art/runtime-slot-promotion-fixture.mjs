@@ -38,6 +38,12 @@ const row = {
     receipt_hash: reviewHash, reviewed_at: '2026-09-05T00:00:00Z' }],
   rights_evidence: { path: rightsPath, sha256: put(rightsPath, 'Synthetic test fixture, not real asset rights.') },
   runtime_files: { [destination]: pngHash }, runtime_slot_files: { backdrop: destination },
+  look: {
+    palette: { fixture: true },
+    materials: { fixture: true },
+    references: [{ kind: 'fixture', source: source }],
+    owner_verdict: 'pending',
+  },
 };
 const candidateFiles = { [destination]: source };
 if (mutation === 'character') {

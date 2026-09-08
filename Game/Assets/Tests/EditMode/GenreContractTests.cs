@@ -18,7 +18,7 @@ namespace Janseon.Foundation.Tests
 
             Assert.That(contract.camera.projection, Is.EqualTo("orthographic"));
             Assert.That(contract.camera.yawDegrees, Is.EqualTo(45f).Within(0.001f));
-            Assert.That(contract.camera.pitchDegrees, Is.EqualTo(35.264f).Within(0.001f));
+            Assert.That(contract.camera.pitchDegrees, Is.EqualTo(26.57f).Within(0.001f));
             Assert.That(contract.camera.allowOrbit, Is.False);
             Assert.That(contract.camera.allowPerspective, Is.False);
             Assert.That(contract.loop.explorationAndCombatShareGrid, Is.True);

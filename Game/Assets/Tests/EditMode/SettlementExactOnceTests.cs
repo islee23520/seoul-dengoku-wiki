@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Text;
@@ -162,6 +163,92 @@ namespace Janseon.Tests.EditMode
         }
 
         /// <summary>
+        /// Task 4 failing-first driver: the foe lands exactly one ranged hit on the ally
+        /// (10 - RangedDamage = 7) through public commands, then only passes while the ally
+        /// wins the ranged exchange. Deterministic regardless of initiative order: nobody moves,
+        /// so every attack stays at Manhattan distance 2 (inside ranged range, outside melee).
+        /// </summary>
+        static BattleState PlayToVictoryWithAllyDamagedToSeven(BattleState state, Ledger ledger, int budget)
+        {
+            for (var i = 0; i < budget && state.Outcome == BattleOutcomeKind.Ongoing; i++)
+            {
+                var actor = state.ActiveUnit;
+                Assert.IsNotNull(actor);
+                var foe = OtherUnit(state, actor.UnitId);
+                Assert.IsNotNull(foe);
+                var ally = actor.IsPlayer ? actor : foe;
+
+                object result;
+                if (!actor.IsPlayer)
+                {
+                    if (ally.Hp == BattleApi.DefaultMaxHp
+                        && actor.Position.ManhattanTo(ally.Position) <= BattleApi.RangedRange
+                        && actor.Ap >= BattleApi.RangedApCost)
+                    {
+                        result = BattleApi.Apply(
+                            state,
+                            ledger,
+                            RangedCmd("hp-foe-ranged-" + i, actor.UnitId, ally.UnitId));
+                    }
+                    else
+                    {
+                        result = BattleApi.Apply(state, ledger, EndCmd("hp-foe-end-" + i, actor.UnitId));
+                    }
+                }
+                else if (!foe.IsDowned
+                         && actor.Position.ManhattanTo(foe.Position) <= BattleApi.RangedRange
+                         && actor.Ap >= BattleApi.RangedApCost)
+                {
+                    result = BattleApi.Apply(
+                        state,
+                        ledger,
+                        RangedCmd("hp-ally-ranged-" + i, actor.UnitId, foe.UnitId));
+                }
+                else
+                {
+                    result = BattleApi.Apply(state, ledger, EndCmd("hp-ally-end-" + i, actor.UnitId));
+                }
+
+                state = MustBattle(result, "scripted leftover-hp step " + i);
+            }
+
+            Assert.AreNotEqual(BattleOutcomeKind.Ongoing, state.Outcome, "budget exhausted without terminal outcome");
+            return state;
+        }
+
+        static BattleState PlayToNaturalEnemyVictory(BattleState state, Ledger ledger, int budget)
+        {
+            for (var i = 0; i < budget && state.Outcome == BattleOutcomeKind.Ongoing; i++)
+            {
+                var actor = state.ActiveUnit;
+                Assert.IsNotNull(actor);
+                var opponent = OtherUnit(state, actor.UnitId);
+                Assert.IsNotNull(opponent);
+
+                object result;
+                if (!actor.IsPlayer
+                    && actor.Position.ManhattanTo(opponent.Position) <= BattleApi.RangedRange
+                    && actor.Ap >= BattleApi.RangedApCost)
+                {
+                    result = BattleApi.Apply(
+                        state,
+                        ledger,
+                        RangedCmd("hp-enemy-victory-ranged-" + i, actor.UnitId, opponent.UnitId));
+                }
+                else
+                {
+                    result = BattleApi.Apply(state, ledger, EndCmd("hp-enemy-victory-end-" + i, actor.UnitId));
+                }
+
+                state = MustBattle(result, "natural enemy-victory step " + i);
+            }
+
+            Assert.AreEqual(BattleOutcomeKind.EnemyVictory, state.Outcome, "public battle commands must produce the terminal loss");
+            Assert.AreEqual(0, BattleApi.FindUnit(state, BattleApi.AllyId).Hp);
+            return state;
+        }
+
+        /// <summary>
         /// Campaign at Resolution with PendingBattle attached after Todo 7 combat choice + Todo 8 handoff.
         /// </summary>
         static void ReachPendingCombat(
@@ -285,14 +372,15 @@ namespace Janseon.Tests.EditMode
             var applied = MustSuccess(SettlementApi.Apply(campaign, ledger, book, result), "apply");
             var next = applied.State;
 
-            // Documented order ends with resources+reputation applied, stage advanced, tick moved, battle cleared.
+            // Documented order ends with resources+reputation applied, stage advanced, campaign clock frozen, battle cleared.
             Assert.AreEqual(CampaignStage.Settlement, next.Stage);
             Assert.IsTrue(next.SettlementApplied);
             Assert.IsNull(next.PendingBattle);
             Assert.AreEqual(SettlementApi.ConsequencePlayerVictory, next.ConsequenceId);
             Assert.AreEqual(beforeRes + SettlementApi.PlayerVictoryResourceDelta, next.Resources);
             Assert.AreEqual(beforeRep + SettlementApi.PlayerVictoryReputationDelta, next.Reputation);
-            Assert.Greater(next.Tick.Value, beforeTick);
+            Assert.AreEqual(beforeTick, next.Tick.Value,
+                "settlement must not advance campaign time; only confirmed move/rest do");
             Assert.Greater(ledger.Events.Count, beforeEvents);
             Assert.AreEqual(result.ResultId.Value, next.SettledResultId);
             Assert.AreEqual(applied.Receipt.ReceiptHash, next.LastReceiptHash);
@@ -440,6 +528,8 @@ namespace Janseon.Tests.EditMode
             Assert.AreEqual(CampaignStage.Settlement, applied.State.Stage);
             Assert.IsTrue(applied.State.SettlementApplied);
             Assert.IsNull(applied.State.PendingBattle);
+            Assert.AreEqual(StationId.Sindorim, applied.State.Node,
+                "settlement must stay at the encounter station until explicit return");
 
             var returned = MustCampaign(
                 CampaignApi.Apply(
@@ -451,7 +541,7 @@ namespace Janseon.Tests.EditMode
             Assert.AreEqual(CampaignStage.BaseReady, returned.Stage);
             Assert.AreEqual(StationId.Yeongdeungpo, returned.Node);
             Assert.AreEqual(SettlementApi.ConsequencePlayerVictory, returned.ConsequenceId);
-            Assert.AreEqual(100 + SettlementApi.PlayerVictoryResourceDelta, returned.Resources);
+            Assert.AreEqual(100 + SettlementApi.PlayerVictoryResourceDelta + CampaignApi.ConfirmedMoveResourceDelta, returned.Resources);
             Assert.AreEqual(0 + SettlementApi.PlayerVictoryReputationDelta, returned.Reputation);
         }
 
@@ -497,6 +587,270 @@ namespace Janseon.Tests.EditMode
             Assert.AreEqual(postHash, CampaignApi.ComputeCampaignHash(postState, ledger));
             Assert.AreEqual(postEvents, ledger.Events.Count);
             Assert.AreEqual(retainedReceipt.ResultId.Value, postState.SettledResultId);
+        }
+
+        [Test]
+        public void LeftoverHp_RoundTrip_BattleSevenSettlesIntoNextBattleOpen()
+        {
+            ReachPendingCombat(out var campaign, out var campaignLedger, out var firstContext);
+            var book = new SettlementBook();
+
+            // Actual damage to exactly 7 through public commands, then battle terminal result.
+            var battle = PlayToVictoryWithAllyDamagedToSeven(BattleApi.Open(firstContext), new Ledger(), 64);
+            Assert.AreEqual(BattleOutcomeKind.PlayerVictory, battle.Outcome);
+            var ally = BattleApi.FindUnit(battle, BattleApi.AllyId);
+            Assert.AreEqual(7, ally.Hp, "ally must have taken exactly one ranged hit (10-3) before victory");
+
+            // Battle terminal result settlement → campaign state.
+            var result = SettlementApi.FromBattle(battle);
+            var applied = MustSuccess(
+                SettlementApi.Apply(campaign, campaignLedger, book, result),
+                "settle leftover 7");
+
+            // Next loop: return → depart → travel → encounter → resolution → new immutable BattleContext.
+            var graph = Graph();
+            var state = MustCampaign(
+                CampaignApi.Apply(
+                    graph,
+                    applied.State,
+                    campaignLedger,
+                    CampCmd("hp-return", CampaignCommandKind.CompleteReturn)),
+                "Return");
+            state = MustCampaign(
+                CampaignApi.Apply(graph, state, campaignLedger, CampCmd("hp-depart", CampaignCommandKind.Depart)),
+                "Depart");
+            state = MustCampaign(
+                CampaignApi.Apply(
+                    graph,
+                    state,
+                    campaignLedger,
+                    CampCmd("hp-travel", CampaignCommandKind.Travel, StationId.Sindorim)),
+                "Travel");
+            state = MustCampaign(
+                CampaignApi.Apply(graph, state, campaignLedger, CampCmd("hp-face", CampaignCommandKind.FaceEncounter)),
+                "Face");
+            state = MustCampaign(
+                CampaignApi.Apply(graph, state, campaignLedger, CampCmd("hp-enter", CampaignCommandKind.EnterResolution)),
+                "Enter");
+            var handoff = CampaignApi.Apply(
+                graph,
+                state,
+                campaignLedger,
+                CampCmd("hp-combat", CampaignCommandKind.ChooseCombat));
+            Assert.IsInstanceOf<BattleRequired>(handoff, "second combat choice must yield a handoff");
+            var nextContext = ((BattleRequired)handoff).Context;
+            Assert.AreNotSame(firstContext, nextContext, "next battle must open from a new immutable BattleContext");
+            Assert.AreNotEqual(
+                firstContext.BattleId,
+                nextContext.BattleId,
+                "advanced campaign time must change the battle identity");
+
+            // The next battle opens the ally at the leftover 7, not DefaultMaxHp 10.
+            var nextBattle = BattleApi.Open(nextContext);
+            var nextAlly = BattleApi.FindUnit(nextBattle, BattleApi.AllyId);
+            Assert.AreEqual(7, nextAlly.Hp, "ally must open the next battle at the leftover 7");
+            Assert.AreEqual(BattleApi.DefaultMaxHp, nextAlly.MaxHp);
+            var nextFoe = BattleApi.FindUnit(nextBattle, BattleApi.FoeId);
+            Assert.AreEqual(BattleApi.DefaultMaxHp, nextFoe.Hp, "foe is not party-persistent and opens at default");
+        }
+
+        [Test]
+        public void SettledCampaign_OwnsPersistentPartyHp_FromResultPayload()
+        {
+            ReachPendingCombat(out var campaign, out var ledger, out var context);
+            var book = new SettlementBook();
+            var battle = PlayToVictoryWithAllyDamagedToSeven(BattleApi.Open(context), new Ledger(), 64);
+            Assert.AreEqual(BattleOutcomeKind.PlayerVictory, battle.Outcome);
+
+            var result = SettlementApi.FromBattle(battle);
+            Assert.IsTrue(result.UnitHp.TryGet(BattleApi.AllyId, out var payloadHp), "payload must carry party HP");
+            Assert.AreEqual(7, payloadHp);
+            Assert.IsFalse(result.UnitHp.TryGet(BattleApi.FoeId, out _), "payload carries party units only");
+
+            var applied = MustSuccess(SettlementApi.Apply(campaign, ledger, book, result), "settle");
+            Assert.IsTrue(applied.State.PartyHp.TryGet(BattleApi.AllyId, out var ownedHp));
+            Assert.AreEqual(7, ownedHp, "campaign owns the persistent leftover HP");
+
+            // Campaign hash observably includes the party HP store.
+            var twin = applied.State.Clone();
+            twin.PartyHp = UnitHpSnapshot.DefaultParty();
+            Assert.AreNotEqual(
+                CampaignApi.ComputeStateHash(applied.State),
+                CampaignApi.ComputeStateHash(twin),
+                "campaign hash must include party HP");
+        }
+
+        [Test]
+        public void SameReceiptReplay_WithHpPayload_ChangesNothing()
+        {
+            ReachPendingCombat(out var campaign, out var ledger, out var context);
+            var book = new SettlementBook();
+            var battle = PlayToVictoryWithAllyDamagedToSeven(BattleApi.Open(context), new Ledger(), 64);
+            var result = SettlementApi.FromBattle(battle);
+            var first = MustSuccess(SettlementApi.Apply(campaign, ledger, book, result), "first");
+            var settled = first.State;
+
+            var hash = CampaignApi.ComputeCampaignHash(settled, ledger);
+            var events = ledger.Events.Count;
+            Assert.IsTrue(settled.PartyHp.TryGet(BattleApi.AllyId, out var hpBefore));
+            Assert.AreEqual(7, hpBefore);
+
+            var replay = SettlementApi.Apply(settled, ledger, book, result);
+            Assert.IsInstanceOf<SettlementReceipt>(replay, "identical ResultId+payload must return the stored receipt");
+            Assert.IsTrue(first.Receipt.Equals((SettlementReceipt)replay));
+
+            Assert.AreEqual(hash, CampaignApi.ComputeCampaignHash(settled, ledger));
+            Assert.AreEqual(events, ledger.Events.Count);
+            Assert.IsTrue(settled.PartyHp.TryGet(BattleApi.AllyId, out var hpAfter));
+            Assert.AreEqual(hpBefore, hpAfter, "same receipt replay must not touch persistent HP");
+        }
+
+        [Test]
+        public void DistinctHpPayload_SameResultId_IsConflict_ZeroMutation()
+        {
+            ReachPendingCombat(out var campaign, out var ledger, out var context);
+            var book = new SettlementBook();
+            var battle = PlayToVictoryWithAllyDamagedToSeven(BattleApi.Open(context), new Ledger(), 64);
+            var result = SettlementApi.FromBattle(battle);
+            var first = MustSuccess(SettlementApi.Apply(campaign, ledger, book, result), "first");
+            var settled = first.State;
+            var hash = CampaignApi.ComputeCampaignHash(settled, ledger);
+            var events = ledger.Events.Count;
+
+            var alteredHp = new EncounterResult
+            {
+                ResultId = result.ResultId,
+                BattleId = result.BattleId,
+                Outcome = result.Outcome,
+                ResultHash = result.ResultHash,
+                UnitHp = new UnitHpSnapshot(new Dictionary<string, int> { [BattleApi.AllyId] = 9 })
+            };
+
+            var second = SettlementApi.Apply(settled, ledger, book, alteredHp);
+            Assert.IsInstanceOf<SettlementConflict>(second, "same ResultId with a distinct HP payload must conflict");
+            var conflict = (SettlementConflict)second;
+            Assert.IsFalse(string.Equals(conflict.StoredPayloadHash, conflict.IncomingPayloadHash, StringComparison.Ordinal));
+            Assert.AreEqual(hash, CampaignApi.ComputeCampaignHash(settled, ledger));
+            Assert.AreEqual(events, ledger.Events.Count);
+        }
+
+        [Test]
+        public void CombatResult_MissingHpPayload_IsInvalidResult_ZeroMutation()
+        {
+            ReachPendingCombat(out var campaign, out var ledger, out var context);
+            var book = new SettlementBook();
+            var battle = PlayToVictoryWithAllyDamagedToSeven(BattleApi.Open(context), new Ledger(), 64);
+            var reference = SettlementApi.FromBattle(battle);
+            Assert.IsNotNull(reference.UnitHp, "FromBattle must produce the HP payload");
+
+            var noHp = new EncounterResult
+            {
+                ResultId = reference.ResultId,
+                BattleId = reference.BattleId,
+                Outcome = reference.Outcome,
+                ResultHash = reference.ResultHash,
+                UnitHp = null
+            };
+
+            var beforeHash = CampaignApi.ComputeCampaignHash(campaign, ledger);
+            var beforeEvents = ledger.Events.Count;
+            var rejected = SettlementApi.Apply(campaign, ledger, book, noHp);
+            Assert.IsInstanceOf<SettlementRejection>(rejected, "combat result without HP payload is invalid, not defaulted");
+            Assert.AreEqual(SettlementRejectReason.InvalidResult, ((SettlementRejection)rejected).Reason);
+            Assert.AreEqual(beforeHash, CampaignApi.ComputeCampaignHash(campaign, ledger));
+            Assert.AreEqual(beforeEvents, ledger.Events.Count);
+        }
+
+        [Test]
+        public void CombatResult_MissingPersistentAlly_IsInvalidResult_ZeroMutation()
+        {
+            ReachPendingCombat(out var campaign, out var ledger, out var context);
+            var book = new SettlementBook();
+            var battle = PlayToVictoryWithAllyDamagedToSeven(BattleApi.Open(context), new Ledger(), 64);
+            var reference = SettlementApi.FromBattle(battle);
+            var missingAlly = new EncounterResult
+            {
+                ResultId = reference.ResultId,
+                BattleId = reference.BattleId,
+                Outcome = reference.Outcome,
+                ResultHash = reference.ResultHash,
+                UnitHp = new UnitHpSnapshot(Array.Empty<KeyValuePair<string, int>>())
+            };
+
+            var beforeHash = CampaignApi.ComputeCampaignHash(campaign, ledger);
+            var beforeEvents = ledger.Events.Count;
+            var rejected = SettlementApi.Apply(campaign, ledger, book, missingAlly);
+            Assert.IsInstanceOf<SettlementRejection>(rejected, "missing persistent ally must not become canonical campaign HP");
+            Assert.AreEqual(SettlementRejectReason.InvalidResult, ((SettlementRejection)rejected).Reason);
+            Assert.AreEqual(beforeHash, CampaignApi.ComputeCampaignHash(campaign, ledger));
+            Assert.AreEqual(beforeEvents, ledger.Events.Count);
+            Assert.IsFalse(book.TryGetByResultId(reference.ResultId, out _, out _), "rejection must not mutate the exact-once book");
+        }
+
+        [Test]
+        public void NaturalEnemyVictory_ZeroHpPersists_AndNextBattleOpensTerminal()
+        {
+            ReachPendingCombat(out var campaign, out var ledger, out var context);
+            var battle = PlayToNaturalEnemyVictory(BattleApi.Open(context), new Ledger(), 64);
+            var result = SettlementApi.FromBattle(battle);
+            Assert.AreEqual(SettlementOutcomeKind.EnemyVictory, result.Outcome);
+            Assert.IsTrue(result.UnitHp.TryGet(BattleApi.AllyId, out var resultHp));
+            Assert.AreEqual(0, resultHp);
+
+            var applied = MustSuccess(SettlementApi.Apply(campaign, ledger, new SettlementBook(), result), "settle natural loss");
+            Assert.IsTrue(applied.State.PartyHp.TryGet(BattleApi.AllyId, out var persistedHp));
+            Assert.AreEqual(0, persistedHp, "settlement must preserve the natural downed value");
+
+            var graph = Graph();
+            var state = MustCampaign(
+                CampaignApi.Apply(graph, applied.State, ledger, CampCmd("zero-return", CampaignCommandKind.CompleteReturn)),
+                "Return");
+            state = MustCampaign(CampaignApi.Apply(graph, state, ledger, CampCmd("zero-depart", CampaignCommandKind.Depart)), "Depart");
+            state = MustCampaign(
+                CampaignApi.Apply(graph, state, ledger, CampCmd("zero-travel", CampaignCommandKind.Travel, StationId.Sindorim)),
+                "Travel");
+            state = MustCampaign(CampaignApi.Apply(graph, state, ledger, CampCmd("zero-face", CampaignCommandKind.FaceEncounter)), "Face");
+            state = MustCampaign(CampaignApi.Apply(graph, state, ledger, CampCmd("zero-enter", CampaignCommandKind.EnterResolution)), "Enter");
+            var handoff = (BattleRequired)CampaignApi.Apply(
+                graph,
+                state,
+                ledger,
+                CampCmd("zero-combat", CampaignCommandKind.ChooseCombat));
+
+            var nextBattle = BattleApi.Open(handoff.Context);
+            Assert.AreEqual(0, BattleApi.FindUnit(nextBattle, BattleApi.AllyId).Hp);
+            Assert.AreEqual(BattleOutcomeKind.EnemyVictory, nextBattle.Outcome, "downed party cannot enter an actionable battle");
+        }
+
+        [Test]
+        public void CorruptHpPayload_OutOfRange_IsInvalidResult_ZeroMutation()
+        {
+            ReachPendingCombat(out var campaign, out var ledger, out var context);
+            var book = new SettlementBook();
+            var battle = PlayToVictoryWithAllyDamagedToSeven(BattleApi.Open(context), new Ledger(), 64);
+            var reference = SettlementApi.FromBattle(battle);
+
+            var beforeHash = CampaignApi.ComputeCampaignHash(campaign, ledger);
+            var beforeEvents = ledger.Events.Count;
+
+            foreach (var corruptHp in new[] { -1, BattleApi.DefaultMaxHp + 1 })
+            {
+                var corrupt = new EncounterResult
+                {
+                    ResultId = reference.ResultId,
+                    BattleId = reference.BattleId,
+                    Outcome = reference.Outcome,
+                    ResultHash = reference.ResultHash,
+                    UnitHp = new UnitHpSnapshot(new Dictionary<string, int> { [BattleApi.AllyId] = corruptHp })
+                };
+
+                var rejected = SettlementApi.Apply(campaign, ledger, book, corrupt);
+                Assert.IsInstanceOf<SettlementRejection>(rejected, "corrupt HP " + corruptHp + " must be rejected, not clamped");
+                Assert.AreEqual(SettlementRejectReason.InvalidResult, ((SettlementRejection)rejected).Reason);
+            }
+
+            Assert.AreEqual(beforeHash, CampaignApi.ComputeCampaignHash(campaign, ledger));
+            Assert.AreEqual(beforeEvents, ledger.Events.Count);
         }
 
         [Test]
@@ -550,7 +904,7 @@ namespace Janseon.Tests.EditMode
 
             Assert.AreNotEqual(beforeHash, afterHash);
             Assert.AreEqual(CampaignStage.Settlement, settled.Stage);
-            Assert.AreEqual(100 + SettlementApi.PlayerVictoryResourceDelta, settled.Resources);
+            Assert.AreEqual(100 + SettlementApi.PlayerVictoryResourceDelta + CampaignApi.ConfirmedMoveResourceDelta, settled.Resources);
             Assert.AreEqual(0 + SettlementApi.PlayerVictoryReputationDelta, settled.Reputation);
 
             var dup = SettlementApi.Apply(settled, ledger, book, result);

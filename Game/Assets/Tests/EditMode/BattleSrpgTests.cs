@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Text;
@@ -268,30 +269,503 @@ namespace Janseon.Tests.EditMode
             var beforePos = actor.Position;
             var beforeAp = actor.Ap;
 
-            // Move east one step (cardinal)
-            var result = BattleApi.Apply(state, ledger, MoveCmd("m-east", actorId, 1, 0));
-            // If east is occupied/oob, try west/north/south until one legal
-            if (result is BattleRejection)
-            {
-                result = BattleApi.Apply(state, ledger, MoveCmd("m-west", actorId, -1, 0));
-            }
-
-            if (result is BattleRejection)
-            {
-                result = BattleApi.Apply(state, ledger, MoveCmd("m-north", actorId, 0, 1));
-            }
-
-            if (result is BattleRejection)
-            {
-                result = BattleApi.Apply(state, ledger, MoveCmd("m-south", actorId, 0, -1));
-            }
-
-            state = MustBattle(result, "At least one cardinal step must be legal from open");
+            // Both opening units have a free north cell, regardless of initiative order.
+            var result = BattleApi.Apply(state, ledger, MoveCmd("m-north", actorId, 0, 1));
+            state = MustBattle(result, "North step from the flat opening grid");
             var moved = BattleApi.FindUnit(state, actorId);
-            Assert.AreEqual(beforeAp - BattleApi.MoveApCost, moved.Ap);
-            Assert.AreEqual(1, beforePos.ManhattanTo(moved.Position));
+            TestContext.WriteLine("FLAT_MOVE position=" + beforePos + "->" + moved.Position
+                + ";ap=" + beforeAp + "->" + moved.Ap);
+            Assert.AreEqual(beforeAp - 1, moved.Ap);
+            Assert.AreEqual(new GridCoord(beforePos.X, beforePos.Y + 1), moved.Position);
             Assert.AreEqual(1, ledger.Events.Count);
             Assert.AreEqual(1, state.BattleTick.Value);
+        }
+
+        // Terrain input is a shipped public overload — tests invoke the real API directly.
+        static BattleState OpenWithTerrain(BattleContext context, Heightmap terrain)
+        {
+            return MustBattle(BattleApi.Open(context, terrain), "Open with terrain");
+        }
+
+        static int[] FlatCells(int height)
+        {
+            var cells = new int[25];
+            for (var i = 0; i < cells.Length; i++)
+            {
+                cells[i] = height;
+            }
+
+            return cells;
+        }
+
+        [Test]
+        public void CardinalMove_OneLevelHigher_ConsumesTwoAp_AndUpdatesPosition()
+        {
+            var context = SindorimBattleHandoff(out var campaign, out var campaignLedger);
+            var campaignBefore = CampaignApi.ComputeCampaignHash(campaign, campaignLedger);
+            var cells = new int[25];
+            for (var i = 0; i < cells.Length; i++)
+            {
+                cells[i] = i / 5 == 3 ? 4 : 3;
+            }
+
+            var terrain = new Heightmap(5, 5, 8, 2, Seed, LayerId.B1, cells);
+            var state = OpenWithTerrain(context, terrain);
+            var ledger = new Ledger();
+            var actorId = ActiveId(state);
+            var beforePos = state.ActiveUnit.Position;
+            var beforeAp = state.ActiveUnit.Ap;
+            var beforeStateHash = BattleApi.ComputeBattleHash(state, null);
+            var destination = new GridCoord(beforePos.X, beforePos.Y + 1);
+            Assert.AreEqual(3, terrain.Get(beforePos));
+            Assert.AreEqual(4, terrain.Get(destination));
+
+            var movedState = MustBattle(
+                BattleApi.Apply(state, ledger, MoveCmd("height-north", actorId, 0, 1)),
+                "Cardinal uphill step with sufficient AP");
+            var moved = BattleApi.FindUnit(movedState, actorId);
+            TestContext.WriteLine("HEIGHT_MOVE dh=1;position=" + beforePos + "->" + moved.Position
+                + ";ap=" + beforeAp + "->" + moved.Ap);
+            Assert.AreEqual(beforeAp - 2, moved.Ap, "A one-level cardinal climb spends 2 AP");
+            Assert.AreEqual(destination, moved.Position);
+            Assert.AreEqual(state.BattleTick.Value + 1, movedState.BattleTick.Value);
+            Assert.AreEqual(1, ledger.Events.Count);
+            Assert.AreEqual(beforeStateHash, BattleApi.ComputeBattleHash(state, null));
+            Assert.AreEqual(campaignBefore, CampaignApi.ComputeCampaignHash(campaign, campaignLedger));
+        }
+
+        [Test]
+        public void CardinalMove_IntoWater_IsOutOfBoundsRejection_WithoutStateApOrLedgerMutation()
+        {
+            var context = SindorimBattleHandoff(out var campaign, out var campaignLedger);
+            var campaignBefore = CampaignApi.ComputeCampaignHash(campaign, campaignLedger);
+            var cells = new int[25];
+            for (var i = 0; i < cells.Length; i++)
+            {
+                cells[i] = i / 5 == 4 ? 2 : 3;
+            }
+
+            var terrain = new Heightmap(5, 5, 8, 2, Seed, LayerId.B1, cells);
+            var state = OpenWithTerrain(context, terrain);
+            var ledger = new Ledger();
+            var actorId = ActiveId(state);
+            // Populate the real ledger first, so rejection must preserve existing events too.
+            state = MustBattle(
+                BattleApi.Apply(state, ledger, MoveCmd("dry-north", actorId, 0, 1)),
+                "Dry approach to water");
+            Assert.AreEqual(1, ledger.Events.Count);
+            var beforePos = BattleApi.FindUnit(state, actorId).Position;
+            var beforeAp = BattleApi.FindUnit(state, actorId).Ap;
+            var beforeTick = state.BattleTick.Value;
+            var beforeEvents = ledger.Events.Count;
+            var beforeHash = BattleApi.ComputeBattleHash(state, ledger);
+            var beforeRng = state.Rng.Fingerprint();
+            var destination = new GridCoord(beforePos.X, beforePos.Y + 1);
+            Assert.IsTrue(terrain.InBounds(destination.X, destination.Y));
+            Assert.IsTrue(terrain.IsWater(destination.X, destination.Y));
+            Assert.Greater(beforeAp, 0);
+
+            var result = BattleApi.Apply(state, ledger, MoveCmd("water-north", actorId, 0, 1));
+            var afterHash = BattleApi.ComputeBattleHash(state, ledger);
+            TestContext.WriteLine("WATER_MOVE position=" + beforePos + "->"
+                + BattleApi.FindUnit(state, actorId).Position + ";ap=" + beforeAp + "->"
+                + BattleApi.FindUnit(state, actorId).Ap + ";hash=" + beforeHash + "->" + afterHash);
+            Assert.IsInstanceOf<BattleRejection>(result, "Water is impassable");
+            var rejection = (BattleRejection)result;
+            Assert.AreEqual(BattleRejectReason.OutOfBounds, rejection.Reason);
+            Assert.AreEqual(BattleCommandKind.Move, rejection.Attempted);
+            Assert.AreEqual(actorId, rejection.ActorId);
+            Assert.AreEqual(beforePos, BattleApi.FindUnit(state, actorId).Position);
+            Assert.AreEqual(beforeAp, BattleApi.FindUnit(state, actorId).Ap);
+            Assert.AreEqual(beforeTick, state.BattleTick.Value);
+            Assert.AreEqual(beforeEvents, ledger.Events.Count);
+            Assert.AreEqual(beforeRng, state.Rng.Fingerprint());
+            Assert.AreEqual(beforeHash, afterHash);
+            Assert.AreEqual(campaignBefore, CampaignApi.ComputeCampaignHash(campaign, campaignLedger));
+        }
+
+        [Test]
+        public void TerrainSnapshot_IsOwned_InputMapMutationCannotRewriteOpenedBattle()
+        {
+            var context = SindorimBattleHandoff(out var campaign, out var campaignLedger);
+            var campaignBefore = CampaignApi.ComputeCampaignHash(campaign, campaignLedger);
+            var cells = new int[25];
+            for (var i = 0; i < cells.Length; i++)
+            {
+                cells[i] = i / 5 == 3 ? 4 : 3;
+            }
+
+            var terrain = new Heightmap(5, 5, 8, 2, Seed, LayerId.B1, cells);
+            var state = OpenWithTerrain(context, terrain);
+            var actorId = ActiveId(state);
+            var beforeHash = BattleApi.ComputeBattleHash(state, null);
+            var beforeAp = state.ActiveUnit.Ap;
+            var dest = new GridCoord(state.ActiveUnit.Position.X, state.ActiveUnit.Position.Y + 1);
+
+            // Caller mutates the input map AFTER Open: destination would cost 6 AP if the
+            // battle aliased the caller array, and (0,0) becomes water.
+            cells[3 * 5 + dest.X] = 8;
+            cells[0] = 0;
+            Assert.AreEqual(8, terrain.Get(dest), "Input map must actually be mutated for this proof");
+            Assert.IsTrue(terrain.IsWater(0, 0), "Input map must actually be mutated for this proof");
+
+            // Owned snapshot: opening hash unchanged and the climb still prices at dh=1 (2 AP).
+            Assert.AreEqual(beforeHash, BattleApi.ComputeBattleHash(state, null),
+                "Mutating the input map must not rewrite the opened battle hash");
+            var ledger = new Ledger();
+            var moved = MustBattle(
+                BattleApi.Apply(state, ledger, MoveCmd("snapshot-north", actorId, 0, 1)),
+                "Move must price against the owned snapshot, not the mutated input map");
+            var movedUnit = BattleApi.FindUnit(moved, actorId);
+            TestContext.WriteLine("SNAPSHOT_MOVE mutatedInputCost=6;actualAp=" + beforeAp + "->" + movedUnit.Ap);
+            Assert.AreEqual(beforeAp - 2, movedUnit.Ap, "Snapshot dh=1 must cost 2 AP despite input mutation");
+            Assert.AreEqual(dest, movedUnit.Position);
+            Assert.AreEqual(campaignBefore, CampaignApi.ComputeCampaignHash(campaign, campaignLedger));
+        }
+
+        [Test]
+        public void TerrainFingerprint_ParticipatesInOpeningHash_RulesVersionIsV2()
+        {
+            var context = SindorimBattleHandoff(out _, out _);
+            var baseCells = new int[25];
+            for (var i = 0; i < baseCells.Length; i++)
+            {
+                baseCells[i] = 3;
+            }
+
+            var terrainA = new Heightmap(5, 5, 8, 2, Seed, LayerId.B1, (int[])baseCells.Clone());
+            var terrainA2 = new Heightmap(5, 5, 8, 2, Seed, LayerId.B1, (int[])baseCells.Clone());
+            var differentCells = (int[])baseCells.Clone();
+            differentCells[2 * 5 + 2] = 7;
+            var terrainB = new Heightmap(5, 5, 8, 2, Seed, LayerId.B1, differentCells);
+
+            Assert.AreNotEqual(terrainA.Fingerprint(), terrainB.Fingerprint(),
+                "Fixture guard: the two maps must differ");
+            var hashA = OpenWithTerrain(context, terrainA).OpeningHash;
+            var hashA2 = OpenWithTerrain(context, terrainA2).OpeningHash;
+            var hashB = OpenWithTerrain(context, terrainB).OpeningHash;
+            TestContext.WriteLine("TERRAIN_HASH a=" + hashA + ";a2=" + hashA2 + ";b=" + hashB);
+
+            Assert.AreEqual(hashA, hashA2, "Independent equal maps must open identically");
+            Assert.AreNotEqual(hashA, hashB, "Different terrain fingerprint must change the opening hash");
+            Assert.AreEqual("poc-srpg-v2", BattleApi.RulesVersion, "Terrain rules must be versioned v2");
+        }
+
+        [Test]
+        public void TerrainBattle_EqualIndependentReplays_ProduceIdenticalHashes()
+        {
+            string Run()
+            {
+                var context = SindorimBattleHandoff(out _, out _);
+                var cells = new int[25];
+                for (var i = 0; i < cells.Length; i++)
+                {
+                    cells[i] = i / 5 == 3 ? 4 : 3;
+                }
+
+                var terrain = new Heightmap(5, 5, 8, 2, Seed, LayerId.B1, cells);
+                var state = OpenWithTerrain(context, terrain);
+                var ledger = new Ledger();
+
+                var first = ActiveId(state);
+                state = MustBattle(
+                    BattleApi.Apply(state, ledger, MoveCmd("rep-up-1", first, 0, 1)),
+                    "Replay first uphill move");
+                Assert.AreEqual(BattleApi.DefaultMaxAp - 2, BattleApi.FindUnit(state, first).Ap);
+                state = MustBattle(
+                    BattleApi.Apply(state, ledger, EndCmd("rep-end-1", first)),
+                    "Replay first end turn");
+                var second = ActiveId(state);
+                Assert.AreNotEqual(first, second);
+                state = MustBattle(
+                    BattleApi.Apply(state, ledger, MoveCmd("rep-up-2", second, 0, 1)),
+                    "Replay second uphill move");
+
+                // Deterministic rejection probe on the terrain battle.
+                var beforeHash = BattleApi.ComputeBattleHash(state, ledger);
+                var oot = BattleApi.Apply(state, ledger, MoveCmd("rep-oot", first, 0, 1));
+                Assert.IsInstanceOf<BattleRejection>(oot);
+                Assert.AreEqual(BattleRejectReason.OutOfTurn, ((BattleRejection)oot).Reason);
+                Assert.AreEqual(beforeHash, BattleApi.ComputeBattleHash(state, ledger));
+
+                state = PlayToOutcome(state, ledger, 64, out var used);
+                Assert.AreNotEqual(BattleOutcomeKind.Ongoing, state.Outcome);
+                TestContext.WriteLine("TERRAIN_REPLAY used=" + used + ";outcome=" + state.Outcome);
+                return BattleApi.ComputeBattleHash(state, ledger) + ":" + BattleApi.ComputeResultHash(state);
+            }
+
+            var h1 = Run();
+            var h2 = Run();
+            Assert.AreEqual(h1, h2, "Independent terrain replays must produce identical hashes");
+            Assert.IsFalse(string.IsNullOrEmpty(h1));
+        }
+
+        /// <summary>
+        /// Drives the foe two flat steps away so the ally shoots at Manhattan distance 4,
+        /// exactly one tile beyond the base ranged range of 3.
+        /// </summary>
+        static BattleState FoeTwoStepsAway(BattleState state, Ledger ledger, string label)
+        {
+            var guard = 0;
+            while (guard++ < 6 && !string.Equals(ActiveId(state), BattleApi.FoeId, StringComparison.Ordinal))
+            {
+                state = MustBattle(
+                    BattleApi.Apply(state, ledger, EndCmd(label + "-wait-" + guard, ActiveId(state))),
+                    "wait for foe turn");
+            }
+
+            Assert.AreEqual(BattleApi.FoeId, ActiveId(state));
+            state = MustBattle(
+                BattleApi.Apply(state, ledger, MoveCmd(label + "-foe-east", BattleApi.FoeId, 1, 0)),
+                "foe east to (4,2)");
+            state = MustBattle(
+                BattleApi.Apply(state, ledger, MoveCmd(label + "-foe-north", BattleApi.FoeId, 0, 1)),
+                "foe north to (4,3)");
+            state = MustBattle(
+                BattleApi.Apply(state, ledger, EndCmd(label + "-foe-end", BattleApi.FoeId)),
+                "foe end turn");
+            Assert.AreEqual(BattleApi.AllyId, ActiveId(state), "Ally must act again with refilled AP");
+            return state;
+        }
+
+        /// <summary>
+        /// Given: a ranged attacker standing one level above its target.
+        /// When: ranged attack at Manhattan distance 4 (one beyond base range 3).
+        /// Then: accepted — high ground extends ranged reach by exactly one tile (BBM53)
+        /// and still deals the standard RangedDamage with no extra modifier (FFT §6.8).
+        /// </summary>
+        [Test]
+        public void HighGroundRangedAttack_ReachesDistance4_AndDealsStandardDamage()
+        {
+            var context = SindorimBattleHandoff(out _, out _);
+            var cells = FlatCells(3);
+            cells[2 * 5 + 1] = 4; // ally spawn (1,2) one level above the grid
+            var terrain = new Heightmap(5, 5, 8, 2, Seed, LayerId.B1, cells);
+            var state = OpenWithTerrain(context, terrain);
+            var ledger = new Ledger();
+
+            state = FoeTwoStepsAway(state, ledger, "hg");
+            var ally = BattleApi.FindUnit(state, BattleApi.AllyId);
+            var foe = BattleApi.FindUnit(state, BattleApi.FoeId);
+            Assert.Greater(terrain.Get(ally.Position), terrain.Get(foe.Position),
+                "Fixture guard: attacker must stand higher than the target");
+            Assert.AreEqual(BattleApi.RangedRange + 1, ally.Position.ManhattanTo(foe.Position),
+                "Fixture guard: target sits exactly one tile beyond base ranged range");
+
+            var foeBefore = foe.Hp;
+            state = MustBattle(
+                BattleApi.Apply(state, ledger, RangedCmd("hg-ranged-4", BattleApi.AllyId, BattleApi.FoeId)),
+                "Ranged from high ground must reach Manhattan distance 4");
+            var foeAfter = BattleApi.FindUnit(state, BattleApi.FoeId).Hp;
+            TestContext.WriteLine("HIGH_GROUND_RANGED dist=4;foeHp=" + foeBefore + "->" + foeAfter
+                + ";allyAp=" + BattleApi.FindUnit(state, BattleApi.AllyId).Ap);
+            Assert.AreEqual(foeBefore - BattleApi.RangedDamage, foeAfter,
+                "High ground extends range only; damage stays RangedDamage");
+            Assert.AreEqual(
+                BattleApi.DefaultMaxAp - BattleApi.RangedApCost,
+                BattleApi.FindUnit(state, BattleApi.AllyId).Ap,
+                "Ranged from high ground still spends the standard ranged AP");
+        }
+
+        [Test]
+        public void EqualHeight_RangedDistance4_IsStillOutOfRange()
+        {
+            var context = SindorimBattleHandoff(out _, out _);
+            var terrain = new Heightmap(5, 5, 8, 2, Seed, LayerId.B1, FlatCells(3));
+            var state = OpenWithTerrain(context, terrain);
+            var ledger = new Ledger();
+
+            state = FoeTwoStepsAway(state, ledger, "eq");
+            var ally = BattleApi.FindUnit(state, BattleApi.AllyId);
+            var foe = BattleApi.FindUnit(state, BattleApi.FoeId);
+            Assert.AreEqual(terrain.Get(ally.Position), terrain.Get(foe.Position),
+                "Fixture guard: equal heights");
+            Assert.AreEqual(BattleApi.RangedRange + 1, ally.Position.ManhattanTo(foe.Position),
+                "Fixture guard: distance 4");
+
+            var beforeHash = BattleApi.ComputeBattleHash(state, ledger);
+            var beforeEvents = ledger.Events.Count;
+            var result = BattleApi.Apply(state, ledger, RangedCmd("eq-ranged-4", BattleApi.AllyId, BattleApi.FoeId));
+            TestContext.WriteLine("EQUAL_HEIGHT_RANGED dist=4;result=" + result);
+            Assert.IsInstanceOf<BattleRejection>(result, "Equal height must not extend ranged range");
+            Assert.AreEqual(BattleRejectReason.OutOfRange, ((BattleRejection)result).Reason);
+            Assert.AreEqual(beforeHash, BattleApi.ComputeBattleHash(state, ledger));
+            Assert.AreEqual(beforeEvents, ledger.Events.Count);
+        }
+
+        [Test]
+        public void LowerAttacker_RangedDistance4_IsStillOutOfRange()
+        {
+            var context = SindorimBattleHandoff(out _, out _);
+            var cells = FlatCells(4);
+            cells[2 * 5 + 1] = 3; // ally spawn below the rest of the grid
+            var terrain = new Heightmap(5, 5, 8, 2, Seed, LayerId.B1, cells);
+            var state = OpenWithTerrain(context, terrain);
+            var ledger = new Ledger();
+
+            state = FoeTwoStepsAway(state, ledger, "lo");
+            var ally = BattleApi.FindUnit(state, BattleApi.AllyId);
+            var foe = BattleApi.FindUnit(state, BattleApi.FoeId);
+            Assert.Less(terrain.Get(ally.Position), terrain.Get(foe.Position),
+                "Fixture guard: attacker must stand lower than the target");
+            Assert.AreEqual(BattleApi.RangedRange + 1, ally.Position.ManhattanTo(foe.Position),
+                "Fixture guard: distance 4");
+
+            var beforeHash = BattleApi.ComputeBattleHash(state, ledger);
+            var beforeEvents = ledger.Events.Count;
+            var result = BattleApi.Apply(state, ledger, RangedCmd("lo-ranged-4", BattleApi.AllyId, BattleApi.FoeId));
+            TestContext.WriteLine("LOWER_ATTACKER_RANGED dist=4;result=" + result);
+            Assert.IsInstanceOf<BattleRejection>(result, "Attacking uphill must not extend ranged range");
+            Assert.AreEqual(BattleRejectReason.OutOfRange, ((BattleRejection)result).Reason);
+            Assert.AreEqual(beforeHash, BattleApi.ComputeBattleHash(state, ledger));
+            Assert.AreEqual(beforeEvents, ledger.Events.Count);
+        }
+
+        [Test]
+        public void HighGround_MeleeRangeStaysOne_DamageUnchanged()
+        {
+            var context = SindorimBattleHandoff(out _, out _);
+            var cells = FlatCells(3);
+            cells[2 * 5 + 1] = 4; // ally spawn (1,2)
+            cells[2 * 5 + 2] = 4; // (2,2): flat step for the ally approach
+            var terrain = new Heightmap(5, 5, 8, 2, Seed, LayerId.B1, cells);
+            var state = OpenWithTerrain(context, terrain);
+            var ledger = new Ledger();
+            var guard = 0;
+            while (guard++ < 6 && !string.Equals(ActiveId(state), BattleApi.AllyId, StringComparison.Ordinal))
+            {
+                state = MustBattle(
+                    BattleApi.Apply(state, ledger, EndCmd("hm-wait-" + guard, ActiveId(state))),
+                    "wait for ally turn");
+            }
+
+            Assert.AreEqual(BattleApi.AllyId, ActiveId(state));
+            Assert.Greater(
+                terrain.Get(BattleApi.FindUnit(state, BattleApi.AllyId).Position),
+                terrain.Get(BattleApi.FindUnit(state, BattleApi.FoeId).Position),
+                "Fixture guard: melee attacker stands higher");
+
+            // Distance 2 melee must stay out of range even from high ground.
+            var meleeOor = BattleApi.Apply(state, ledger, MeleeCmd("hm-oor", BattleApi.AllyId, BattleApi.FoeId));
+            Assert.IsInstanceOf<BattleRejection>(meleeOor, "High ground must not extend melee range");
+            Assert.AreEqual(BattleRejectReason.OutOfRange, ((BattleRejection)meleeOor).Reason);
+
+            // Adjacent melee from high ground deals exactly MeleeDamage.
+            state = MustBattle(
+                BattleApi.Apply(state, ledger, MoveCmd("hm-close", BattleApi.AllyId, 1, 0)),
+                "flat step east to (2,2)");
+            var foeBefore = BattleApi.FindUnit(state, BattleApi.FoeId).Hp;
+            state = MustBattle(
+                BattleApi.Apply(state, ledger, MeleeCmd("hm-hit", BattleApi.AllyId, BattleApi.FoeId)),
+                "adjacent melee");
+            var foeAfter = BattleApi.FindUnit(state, BattleApi.FoeId).Hp;
+            TestContext.WriteLine("HIGH_GROUND_MELEE dmg=" + (foeBefore - foeAfter)
+                + ";allyAp=" + BattleApi.FindUnit(state, BattleApi.AllyId).Ap);
+            Assert.AreEqual(BattleApi.MeleeDamage, foeBefore - foeAfter, "Height grants no melee damage bonus");
+            Assert.AreEqual(
+                BattleApi.DefaultMaxAp - BattleApi.MoveApCost - BattleApi.MeleeApCost,
+                BattleApi.FindUnit(state, BattleApi.AllyId).Ap,
+                "Melee from high ground still spends the standard melee AP");
+        }
+
+        [Test]
+        public void HeightAdvantage_AddsNoHitOrDamageModifier_WithinBaseRange()
+        {
+            void RunRanged(Heightmap map, out int damage, out int apSpent, out int events)
+            {
+                var context = SindorimBattleHandoff(out _, out _);
+                var state = OpenWithTerrain(context, map);
+                var battleLedger = new Ledger();
+                var guard = 0;
+                while (guard++ < 6 && !string.Equals(ActiveId(state), BattleApi.AllyId, StringComparison.Ordinal))
+                {
+                    state = MustBattle(
+                        BattleApi.Apply(state, battleLedger, EndCmd("mod-wait-" + guard, ActiveId(state))),
+                        "wait for ally turn");
+                }
+
+                var foeBefore = BattleApi.FindUnit(state, BattleApi.FoeId).Hp;
+                state = MustBattle(
+                    BattleApi.Apply(state, battleLedger, RangedCmd("mod-ranged", BattleApi.AllyId, BattleApi.FoeId)),
+                    "ranged within base range");
+                damage = foeBefore - BattleApi.FindUnit(state, BattleApi.FoeId).Hp;
+                apSpent = BattleApi.DefaultMaxAp - BattleApi.FindUnit(state, BattleApi.AllyId).Ap;
+                events = battleLedger.Events.Count;
+            }
+
+            var highCells = FlatCells(3);
+            highCells[2 * 5 + 1] = 4;
+            RunRanged(new Heightmap(5, 5, 8, 2, Seed, LayerId.B1, FlatCells(3)), out var flatDamage, out var flatAp, out var flatEvents);
+            RunRanged(new Heightmap(5, 5, 8, 2, Seed, LayerId.B1, highCells), out var highDamage, out var highAp, out var highEvents);
+            TestContext.WriteLine("HEIGHT_MODIFIER flat=" + flatDamage + "d/" + flatAp + "ap;"
+                + "high=" + highDamage + "d/" + highAp + "ap");
+            Assert.AreEqual(BattleApi.RangedDamage, flatDamage, "Flat fixture guard");
+            Assert.AreEqual(BattleApi.RangedDamage, highDamage,
+                "Height advantage must not modify ranged damage within base range");
+            Assert.AreEqual(flatAp, highAp, "Height advantage must not change ranged AP cost");
+            Assert.AreEqual(flatEvents, highEvents, "Height advantage must not add extra resolution events");
+        }
+
+        /// <summary>
+        /// Two successive accepted terrain-priced moves must price from the terrain carried
+        /// by each cloned state; dropping terrain propagation in BattleState.Clone must
+        /// fail here (plan todo 35, task-2 verification note N1).
+        /// </summary>
+        [Test]
+        public void SuccessiveTerrainPricedMoves_RetainTerrainAcrossClonedStates()
+        {
+            var context = SindorimBattleHandoff(out _, out _);
+            var cells = new int[25];
+            for (var i = 0; i < cells.Length; i++)
+            {
+                var row = i / 5;
+                cells[i] = row == 3 ? 4 : (row == 4 ? 5 : 3);
+            }
+
+            var terrain = new Heightmap(5, 5, 8, 2, Seed, LayerId.B1, cells);
+            var state = OpenWithTerrain(context, terrain);
+            var ledger = new Ledger();
+            var mapFingerprint = state.Terrain.Fingerprint();
+            var guard = 0;
+            while (guard++ < 6 && !string.Equals(ActiveId(state), BattleApi.AllyId, StringComparison.Ordinal))
+            {
+                state = MustBattle(
+                    BattleApi.Apply(state, ledger, EndCmd("cl-wait-" + guard, ActiveId(state))),
+                    "wait for ally turn");
+            }
+
+            var eventsAfterWait = ledger.Events.Count;
+            var actorId = BattleApi.AllyId;
+
+            // First uphill move: (1,2)h3 -> (1,3)h4 costs 2 AP.
+            var first = MustBattle(
+                BattleApi.Apply(state, ledger, MoveCmd("cl-up-1", actorId, 0, 1)),
+                "First uphill move");
+            var firstUnit = BattleApi.FindUnit(first, actorId);
+            Assert.IsNotNull(first.Terrain, "Accepted move must carry the terrain snapshot into the cloned state");
+            Assert.AreEqual(mapFingerprint, first.Terrain.Fingerprint(), "Cloned terrain must equal the opened map");
+            Assert.AreEqual(BattleApi.DefaultMaxAp - 2, firstUnit.Ap, "First climb costs 2 AP");
+            Assert.AreEqual(new GridCoord(1, 3), firstUnit.Position);
+
+            // Turn cycles back so the same actor can move again with refilled AP.
+            first = MustBattle(BattleApi.Apply(first, ledger, EndCmd("cl-end-1", actorId)), "ally end turn");
+            first = MustBattle(BattleApi.Apply(first, ledger, EndCmd("cl-end-2", ActiveId(first))), "foe end turn");
+            Assert.AreEqual(actorId, ActiveId(first));
+
+            // Second uphill move prices from the CLONED state's terrain: (1,3)h4 -> (1,4)h5 costs 2 AP.
+            var second = MustBattle(
+                BattleApi.Apply(first, ledger, MoveCmd("cl-up-2", actorId, 0, 1)),
+                "Second uphill move must price against the cloned terrain");
+            var secondUnit = BattleApi.FindUnit(second, actorId);
+            TestContext.WriteLine("TERRAIN_CLONE move1Ap=2;move2Ap="
+                + (BattleApi.DefaultMaxAp - secondUnit.Ap));
+            Assert.IsNotNull(second.Terrain, "Second accepted move must still carry terrain");
+            Assert.AreEqual(mapFingerprint, second.Terrain.Fingerprint(),
+                "Terrain surviving one clone must survive the next");
+            Assert.AreEqual(BattleApi.DefaultMaxAp - 2, secondUnit.Ap,
+                "A flat reprice (1 AP) would mean the clone dropped its terrain");
+            Assert.AreEqual(new GridCoord(1, 4), secondUnit.Position);
+            Assert.AreEqual(eventsAfterWait + 4, ledger.Events.Count, "two moves plus two end turns");
         }
 
         [Test]
@@ -308,6 +782,10 @@ namespace Janseon.Tests.EditMode
             var beforeAp = BattleApi.FindUnit(state, actorId).Ap;
 
             var result = BattleApi.Apply(state, ledger, MoveCmd("diag", actorId, 1, 1));
+            TestContext.WriteLine("DIAGONAL_MOVE position=" + beforePos + "->"
+                + BattleApi.FindUnit(state, actorId).Position + ";ap=" + beforeAp + "->"
+                + BattleApi.FindUnit(state, actorId).Ap + ";hash=" + beforeHash + "->"
+                + BattleApi.ComputeBattleHash(state, ledger));
             Assert.IsInstanceOf<BattleRejection>(result);
             var rejection = (BattleRejection)result;
             Assert.AreEqual(BattleRejectReason.DiagonalOrInvalidStep, rejection.Reason);
@@ -860,5 +1338,243 @@ namespace Janseon.Tests.EditMode
             File.WriteAllText(outPath, sb.ToString(), Encoding.UTF8);
             TestContext.WriteLine("BATTLE_QA_ARTIFACT=" + outPath);
         }
+
+        // ---- Task 4: persistent leftover HP opens the next battle ----
+
+        static BattleContext TaskHpContext(string identityKey, int allyHp)
+        {
+            return BattleContext.Create(
+                CampaignId,
+                StationId.Sindorim,
+                Seed,
+                new Tick(3),
+                100,
+                0,
+                CampaignApi.RulesVersion,
+                identityKey,
+                new UnitHpSnapshot(new Dictionary<string, int> { [BattleApi.AllyId] = allyHp }));
+        }
+
+        [Test]
+        public void Open_WithStartHpSnapshot_SeedsAllySeven_FoeDefaultsToMax()
+        {
+            var state = BattleApi.Open(TaskHpContext("task-4-hp-ctx", 7));
+            var ally = BattleApi.FindUnit(state, BattleApi.AllyId);
+            var foe = BattleApi.FindUnit(state, BattleApi.FoeId);
+            Assert.AreEqual(7, ally.Hp, "context start HP must seed the opening HP");
+            Assert.AreEqual(BattleApi.DefaultMaxHp, ally.MaxHp, "start HP is damage carry, not a max change");
+            Assert.AreEqual(BattleApi.DefaultMaxHp, foe.Hp, "absent entry is the initial default, not corrupt");
+            Assert.AreEqual(BattleApi.DefaultMaxHp, foe.MaxHp);
+            Assert.AreEqual(BattleApi.DefaultMaxAp, ally.Ap);
+        }
+
+        [Test]
+        public void Open_CorruptStartHp_ThrowsExplicitError_NotSilentDefault()
+        {
+            foreach (var corruptHp in new[] { -2, BattleApi.DefaultMaxHp + 1 })
+            {
+                var context = TaskHpContext("task-4-hp-corrupt", corruptHp);
+                Assert.Throws<ArgumentException>(
+                    () => BattleApi.Open(context),
+                    "corrupt start HP " + corruptHp + " must throw, not default to " + BattleApi.DefaultMaxHp);
+            }
+        }
+
+        [Test]
+        public void Open_MissingPersistentAlly_ThrowsExplicitError_NotSilentDefault()
+        {
+            var context = BattleContext.Create(
+                CampaignId,
+                StationId.Sindorim,
+                Seed,
+                new Tick(3),
+                100,
+                0,
+                CampaignApi.RulesVersion,
+                "task-4-missing-ally",
+                new UnitHpSnapshot(Array.Empty<KeyValuePair<string, int>>()));
+
+            Assert.Throws<ArgumentException>(
+                () => BattleApi.Open(context),
+                "a context missing its required persistent ally must fail, not heal to default HP");
+        }
+
+        [Test]
+        public void BattleContext_SameClaimedIdentityWithDifferentHp_Throws()
+        {
+            const string identityKey = "task-4-claimed-identity";
+            var canonical = TaskHpContext(identityKey, 7);
+            var alteredHp = new UnitHpSnapshot(
+                new Dictionary<string, int> { [BattleApi.AllyId] = BattleApi.DefaultMaxHp });
+
+            Assert.Throws<ArgumentException>(
+                () => new BattleContext(
+                    canonical.BattleId,
+                    canonical.CampaignId,
+                    canonical.Location,
+                    canonical.WorldSeed,
+                    canonical.WorldTick,
+                    canonical.PartyResources,
+                    canonical.Reputation,
+                    canonical.RulesVersion,
+                    identityKey,
+                    canonical.ContextHash,
+                    alteredHp,
+                    canonical.SeedIdentityHash,
+                    canonical.SeedIdentityBattleId),
+                "same claimed public identity must not accept different opening HP");
+        }
+
+        [Test]
+        public void BattleContext_MismatchedSeedIdentities_Throw()
+        {
+            const string identityKey = "task-4-seed-integrity";
+            var canonical = TaskHpContext(identityKey, 7);
+            var forgedSeedHash = CoreApi.StableHashHex("unrelated-seed-identity");
+            var forgedSeedBattleId = "battle-" + forgedSeedHash.Substring(0, 16);
+
+            Assert.Throws<ArgumentException>(
+                () => new BattleContext(
+                    canonical.BattleId,
+                    canonical.CampaignId,
+                    canonical.Location,
+                    canonical.WorldSeed,
+                    canonical.WorldTick,
+                    canonical.PartyResources,
+                    canonical.Reputation,
+                    canonical.RulesVersion,
+                    identityKey,
+                    canonical.ContextHash,
+                    canonical.StartHp,
+                    forgedSeedHash,
+                    forgedSeedBattleId),
+                "seed identity must be derived from the canonical battle material");
+
+            Assert.Throws<ArgumentException>(
+                () => new BattleContext(
+                    canonical.BattleId,
+                    canonical.CampaignId,
+                    canonical.Location,
+                    canonical.WorldSeed,
+                    canonical.WorldTick,
+                    canonical.PartyResources,
+                    canonical.Reputation,
+                    canonical.RulesVersion,
+                    identityKey,
+                    canonical.ContextHash,
+                    canonical.StartHp,
+                    canonical.SeedIdentityHash,
+                    "battle-unrelated-seed"),
+                "seed battle id must be paired with the canonical seed identity hash");
+        }
+
+        [Test]
+        public void Open_DownedPersistentAlly_IsTerminalEnemyVictory_AndCannotAct()
+        {
+            var state = BattleApi.Open(TaskHpContext("task-4-hp-zero", 0));
+            var ally = BattleApi.FindUnit(state, BattleApi.AllyId);
+            Assert.AreEqual(0, ally.Hp, "zero is a valid persisted downed value");
+            Assert.IsTrue(ally.IsDowned);
+            Assert.AreEqual(BattleOutcomeKind.EnemyVictory, state.Outcome);
+
+            var ledger = new Ledger();
+            var before = BattleApi.ComputeBattleHash(state, ledger);
+            var rejected = BattleApi.Apply(state, ledger, EndCmd("downed-cannot-act", ally.UnitId));
+            Assert.IsInstanceOf<BattleRejection>(rejected);
+            Assert.AreEqual(BattleRejectReason.BattleEnded, ((BattleRejection)rejected).Reason);
+            Assert.AreEqual(before, BattleApi.ComputeBattleHash(state, ledger));
+            Assert.AreEqual(0, ledger.Events.Count);
+        }
+
+        [Test]
+        public void OpeningHash_IncludesStartHp_AndReplaysIdentically()
+        {
+            var atSeven = BattleApi.Open(TaskHpContext("task-4-hash-ctx", 7));
+            var atTen = BattleApi.Open(TaskHpContext("task-4-hash-ctx", BattleApi.DefaultMaxHp));
+            var atSevenReplay = BattleApi.Open(TaskHpContext("task-4-hash-ctx", 7));
+
+            Assert.AreNotEqual(atSeven.OpeningHash, atTen.OpeningHash, "opening hash must include start HP");
+            Assert.AreEqual(atSeven.OpeningHash, atSevenReplay.OpeningHash, "same start HP must replay identically");
+        }
+
+        [Test]
+        public void StartHpSnapshot_CopiesCallerStorage_NoMutableAlias()
+        {
+            var source = new Dictionary<string, int> { [BattleApi.AllyId] = 7 };
+            var context = BattleContext.Create(
+                CampaignId,
+                StationId.Sindorim,
+                Seed,
+                new Tick(3),
+                100,
+                0,
+                CampaignApi.RulesVersion,
+                "task-4-alias",
+                new UnitHpSnapshot(source));
+
+            source[BattleApi.AllyId] = 9; // mutate caller storage after construction
+
+            var state = BattleApi.Open(context);
+            Assert.AreEqual(
+                7,
+                BattleApi.FindUnit(state, BattleApi.AllyId).Hp,
+                "snapshot must copy caller storage, not alias it");
+        }
+
+        [Test]
+        public void Wait_DefersToNextLivingUnit_WithoutAdvancingTurn()
+        {
+            var context = SindorimBattleHandoff(out _, out _);
+            var state = BattleApi.Open(context);
+            var actorId = ActiveId(state);
+            var turnBefore = state.TurnNumber;
+            var ledger = new Ledger();
+
+            var afterWait = MustBattle(
+                BattleApi.Apply(state, ledger, new BattleCommand { Kind = BattleCommandKind.Wait, ActorId = actorId }),
+                "wait defers");
+
+            Assert.AreNotEqual(actorId, ActiveId(afterWait), "wait hands the turn to the next living unit");
+            Assert.AreEqual(turnBefore, afterWait.TurnNumber, "wait is an in-round deferral and must not advance the turn");
+            var before = BattleApi.FindUnit(state, actorId);
+            var after = BattleApi.FindUnit(afterWait, actorId);
+            Assert.AreEqual(before.Ap, after.Ap, "wait must not change the waiting actor's AP");
+        }
+
+        [Test]
+        public void Wait_IsDistinctFromEndTurn_ForIdenticalOpening()
+        {
+            var first = BattleApi.Open(SindorimBattleHandoff(out _, out _));
+            var second = BattleApi.Open(SindorimBattleHandoff(out _, out _));
+            var ledgerA = new Ledger();
+            var ledgerB = new Ledger();
+            var idA = ActiveId(first);
+            var idB = ActiveId(second);
+
+            var afterWait = MustBattle(BattleApi.Apply(first, ledgerA, new BattleCommand { Kind = BattleCommandKind.Wait, ActorId = idA }), "wait");
+            var afterEnd = MustBattle(BattleApi.Apply(second, ledgerB, EndCmd("end", idB)), "end turn");
+
+            Assert.AreNotEqual(
+                BattleApi.ComputeBattleHash(afterWait, ledgerA),
+                BattleApi.ComputeBattleHash(afterEnd, ledgerB),
+                "wait and end-turn must produce different deterministic outcomes");
+            Assert.AreEqual(first.TurnNumber, afterWait.TurnNumber, "wait must not advance the turn");
+            Assert.AreEqual(second.TurnNumber + 1, afterEnd.TurnNumber, "end-turn advances the turn");
+        }
+
+        [Test]
+        public void Wait_AfterTerminalOutcome_IsTypedRejection()
+        {
+            var context = SindorimBattleHandoff(out _, out _);
+            var state = BattleApi.Open(context);
+            var ledger = new Ledger();
+            var first = ActiveId(state);
+            state = PlayToOutcome(state, ledger, 64, out _);
+
+            var rejected = BattleApi.Apply(state, ledger, new BattleCommand { Kind = BattleCommandKind.Wait, ActorId = first });
+
+            Assert.IsInstanceOf<BattleRejection>(rejected, "wait after a terminal outcome must be rejected");
+        }
+
     }
 }

@@ -1,7 +1,7 @@
 namespace Janseon.Foundation.UI
 {
     /// <summary>
-    /// Exactly one UI Toolkit document may attach per active content-screen lease.
+    /// Exactly one uGUI screen surface may attach per active content-screen lease.
     /// </summary>
     public sealed class UiScreenDocumentLease
     {

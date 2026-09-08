@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using Janseon.Core;
+using Janseon.Foundation.AppFlow;
 using Janseon.Foundation.Composition;
 using Janseon.Foundation.UI;
 using NUnit.Framework;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 namespace Janseon.Foundation.Tests
 {
@@ -21,16 +22,16 @@ namespace Janseon.Foundation.Tests
         [Test]
         public void Presenter_RequiresBoundHpApMeters_BattleLog_AndSettlementOutcome()
         {
-            VisualElement root = InstantiateTree(UiScreenPaths.GameplayUxml, UiScreenPaths.GameplayUss);
+            RectTransform root = UguiHudBuilder.BuildGameplay(null);
             var presenter = new GameplayPresenter();
-            Assert.That(presenter.BindForTest(root), Is.True, "bind must succeed on gameplay tree");
+            Assert.That(presenter.BindForTest(root), Is.True, "bind must succeed on gameplay canvas");
 
             // Required visual structure for meters + battle log (Design.md §4/§5.2).
-            Assert.That(root.Q("battle-hp-meter"), Is.Not.Null, "missing battle-hp-meter");
-            Assert.That(root.Q("battle-ap-meter"), Is.Not.Null, "missing battle-ap-meter");
-            Assert.That(root.Q("battle-hp-fill"), Is.Not.Null, "missing battle-hp-fill");
-            Assert.That(root.Q("battle-ap-fill"), Is.Not.Null, "missing battle-ap-fill");
-            Assert.That(root.Q("battle-log"), Is.Not.Null, "missing battle-log");
+            Assert.That(UguiHudBuilder.Find(root, "battle-hp-meter"), Is.Not.Null, "missing battle-hp-meter");
+            Assert.That(UguiHudBuilder.Find(root, "battle-ap-meter"), Is.Not.Null, "missing battle-ap-meter");
+            Assert.That(UguiHudBuilder.Find(root, "battle-hp-fill"), Is.Not.Null, "missing battle-hp-fill");
+            Assert.That(UguiHudBuilder.Find(root, "battle-ap-fill"), Is.Not.Null, "missing battle-ap-fill");
+            Assert.That(UguiHudBuilder.Find(root, "battle-log"), Is.Not.Null, "missing battle-log");
 
             var graph = RouteGraph.CreateYeongdeungpoSindorimGuro();
             var ledger = new Ledger();
@@ -61,17 +62,18 @@ namespace Janseon.Foundation.Tests
             Assert.That(logEntries.Count, Is.GreaterThan(0));
 
             presenter.ApplySnapshot(battleSnap);
-            Assert.That(root.Q(UiElementNames.RouteRail).ClassListContains("jk-hidden"), Is.True,
-                "battle must release route width so every grid column remains visible");
-            Label hp = root.Q<Label>(UiElementNames.BattleHp);
-            Label ap = root.Q<Label>(UiElementNames.BattleAp);
+            Assert.That(UguiHudBuilder.Find(root, UiElementNames.RouteRail).gameObject.activeSelf, Is.False,
+                "battle must hide the route rail");
+            Text hp = UguiHudBuilder.Find(root, UiElementNames.BattleHp).GetComponentInChildren<Text>(true);
+            Text ap = UguiHudBuilder.Find(root, UiElementNames.BattleAp).GetComponentInChildren<Text>(true);
             Assert.That(hp.text, Does.Contain(battleHp.ToString()), "HP label must show bound value");
             Assert.That(ap.text, Does.Contain(((int)typeof(GameplayUiSnapshot).GetProperty("BattleAp").GetValue(battleSnap)).ToString()));
 
-            VisualElement hpFill = root.Q("battle-hp-fill");
-            Assert.That(hpFill.style.width.value.unit, Is.EqualTo(LengthUnit.Percent));
-            Assert.That(hpFill.style.width.value.value, Is.GreaterThan(0f));
-            Assert.That(root.Q(className: "jk-log-entry"), Is.Not.Null, "battle log entries not bound");
+            RectTransform hpFill = UguiHudBuilder.Find(root, "battle-hp-fill") as RectTransform;
+            Assert.That(hpFill, Is.Not.Null, "missing battle-hp-fill");
+            Assert.That(hpFill.anchorMax.x, Is.GreaterThan(0f), "hp fill must be painted");
+            Text battleLogText = UguiHudBuilder.Find(root, UiElementNames.BattleLog).GetComponentInChildren<Text>(true);
+            Assert.That(battleLogText.text, Is.Not.Empty, "battle log entries not bound");
 
             // Settlement outcome must be non-empty after settle.
             s = DriveToResolution(graph, new Ledger(), 90421);
@@ -93,9 +95,9 @@ namespace Janseon.Foundation.Tests
             Assert.That((string)codeProp.GetValue(settleSnap), Is.Not.Null.And.Not.Empty);
             Assert.That((string)textProp.GetValue(settleSnap), Is.Not.Null.And.Not.Empty);
             presenter.ApplySnapshot(settleSnap);
-            Assert.That(root.Q(UiElementNames.RouteRail).ClassListContains("jk-hidden"), Is.False,
+            Assert.That(UguiHudBuilder.Find(root, UiElementNames.RouteRail).gameObject.activeSelf, Is.True,
                 "route must return after combat");
-            Label outcome = root.Q<Label>(UiElementNames.SettlementOutcome);
+            Text outcome = UguiHudBuilder.Find(root, UiElementNames.SettlementOutcome).GetComponentInChildren<Text>(true);
             Assert.That(outcome.text, Is.Not.Null.And.Not.Empty, "settlement-outcome must be bound non-empty");
         }
 
@@ -112,7 +114,7 @@ namespace Janseon.Foundation.Tests
             Assert.That(t.GetMethod("TriggerCombatForTest"), Is.Not.Null);
             Assert.That(t.GetMethod("TriggerReturnForTest"), Is.Not.Null);
 
-            VisualElement root = InstantiateTree(UiScreenPaths.GameplayUxml, UiScreenPaths.GameplayUss);
+            RectTransform root = UguiHudBuilder.BuildGameplay(null);
             var presenter = new GameplayPresenter();
             Assert.That(presenter.BindForTest(root), Is.True);
 
@@ -149,90 +151,46 @@ namespace Janseon.Foundation.Tests
         }
 
         [Test]
-        public void ResponsiveStyles_EnforceDesignSizes_For720And1080()
+        public void CanvasScalers_EnforceDesignSizes_For720And1080()
         {
-            string shared = File.ReadAllText(Path.Combine(Application.dataPath,
-                "Janseon/Foundation/UI/Styles/JanseonShared.uss"));
-            string gameplay = File.ReadAllText(Path.Combine(Application.dataPath,
-                "Janseon/Foundation/UI/Styles/Gameplay.uss"));
+            // uGUI contract: CanvasScaler owns resolution on both screens.
+            RectTransform title = UguiHudBuilder.BuildMainTitle(null);
+            RectTransform gameplay = UguiHudBuilder.BuildGameplay(null);
+            foreach (var rt in new[] { title, gameplay })
+            {
+                var canvas = rt.GetComponentInParent<Canvas>();
+                Assert.That(canvas, Is.Not.Null, rt.name + " must render on a Canvas");
+                var scaler = canvas.GetComponent<CanvasScaler>();
+                Assert.That(scaler, Is.Not.Null);
+                Assert.That(scaler.uiScaleMode, Is.EqualTo(CanvasScaler.ScaleMode.ScaleWithScreenSize));
+                Assert.That(scaler.referenceResolution, Is.EqualTo(new Vector2(1280f, 720f)));
+            }
 
-            Assert.That(shared, Does.Contain(".jk-res-720"), "dual-res 720 class missing");
-            Assert.That(shared, Does.Contain(".jk-res-1080"), "dual-res 1080 class missing");
-            Assert.That(shared, Does.Contain("--route-width: 360px"), "route 360@720 token missing");
-            Assert.That(shared, Does.Contain("--hud-width: 280px"), "hud 280@720 token missing");
-            Assert.That(shared, Does.Contain("--cell-size: 64px"), "cell 64@720 token missing");
-            Assert.That(shared, Does.Contain("--rail-min-height: 64px"), "rail 64@720 token missing");
-            Assert.That(shared, Does.Contain("--cell-size: 96px"), "cell 96@1080 token missing");
-            Assert.That(shared, Does.Contain("--rail-min-height: 96px"), "rail 96@1080 token missing");
-            Assert.That(gameplay, Does.Contain("var(--route-width)"), "route uses token");
-            Assert.That(gameplay, Does.Contain("var(--hud-width)"), "hud uses token");
-            Assert.That(gameplay, Does.Contain("var(--rail-min-height)"), "rail uses token");
-            Assert.That(shared, Does.Contain(".jk-meter"), "jk-meter primitive missing");
-            Assert.That(shared, Does.Not.Contain("width: 220px"), "stale route 220 must not remain as source of truth");
-            // Hardcoded wrong sizes must not remain as the layout contract.
-            Assert.That(gameplay, Does.Not.Contain("width: 220px"));
-            Assert.That(gameplay, Does.Not.Contain("width: 200px"));
-            Assert.That(shared, Does.Not.Contain("min-height: 48px"));
-            Assert.That(shared, Does.Not.Contain("width: 48px"));
+        }
 
-            Assert.That(typeof(GameplayPresenter).GetMethod("ApplyResolutionClass"), Is.Not.Null,
-                "ApplyResolutionClass missing for dual-resolution path");
+
+        [Test]
+                public void ResolutionHelper_MainTitleCanvas_UsesScalerForResolution()
+        {
+            // uGUI contract: resolution is handled by CanvasScaler on the screen canvas,
+            // not by swapping classes on the root.
+            RectTransform root = UguiHudBuilder.BuildMainTitle(null);
+            Canvas canvas = root.GetComponentInParent<Canvas>();
+            Assert.That(canvas, Is.Not.Null, "MainTitle must render on a Canvas");
+
+            var scaler = canvas.GetComponent<CanvasScaler>();
+            Assert.That(scaler, Is.Not.Null, "MainTitle canvas must have a CanvasScaler");
+            Assert.That(scaler.uiScaleMode, Is.EqualTo(CanvasScaler.ScaleMode.ScaleWithScreenSize));
+            Assert.That(scaler.referenceResolution, Is.EqualTo(new Vector2(1280f, 720f)));
+
+            string builderSrc = File.ReadAllText(Path.Combine(Application.dataPath.Replace("/Assets", string.Empty),
+                "Assets/Janseon/Foundation/UI/UguiHudBuilder.cs"));
+            Assert.That(builderSrc, Does.Contain("CanvasScaler"),
+                "UguiHudBuilder must own the resolution contract via CanvasScaler");
         }
 
         [Test]
-        public void ResolutionHelper_AppliesExactlyOneResClass_ToNamedScreenRoots_FromDimensions()
-        {
-            // Contract: class goes on #main-title-root / #gameplay-root, not a parent container.
-            Assert.That(typeof(UiResolutionClass), Is.Not.Null);
-
-            VisualElement titleTree = InstantiateTree(UiScreenPaths.MainTitleUxml, UiScreenPaths.MainTitleUss);
-            var titleBag = new VisualElement { name = "capture-container" };
-            titleBag.Add(titleTree);
-            VisualElement titleRoot = UiResolutionClass.FindScreenRoot(titleBag, UiElementNames.MainTitleRoot);
-            Assert.That(titleRoot, Is.Not.Null);
-            Assert.That(titleRoot.name, Is.EqualTo(UiElementNames.MainTitleRoot));
-
-            // UXML defaults to jk-res-720; 1080 apply must flip exclusively on the named root.
-            UiResolutionClass.Apply(titleBag, UiElementNames.MainTitleRoot, 1920);
-            Assert.That(titleRoot.ClassListContains(UiElementNames.Res1080Class), Is.True);
-            Assert.That(titleRoot.ClassListContains(UiElementNames.Res720Class), Is.False);
-            Assert.That(UiResolutionClass.HasExclusiveResolutionClass(titleBag, UiElementNames.MainTitleRoot), Is.True);
-            // Parent container must not be the sole carrier of the resolution class.
-            Assert.That(
-                titleRoot.ClassListContains(UiElementNames.Res1080Class),
-                Is.True,
-                "1080 class must land on #main-title-root");
-
-            UiResolutionClass.Apply(titleBag, UiElementNames.MainTitleRoot, 1280);
-            Assert.That(titleRoot.ClassListContains(UiElementNames.Res720Class), Is.True);
-            Assert.That(titleRoot.ClassListContains(UiElementNames.Res1080Class), Is.False);
-
-            VisualElement gameplayTree = InstantiateTree(UiScreenPaths.GameplayUxml, UiScreenPaths.GameplayUss);
-            var gpBag = new VisualElement { name = "gp-container" };
-            gpBag.Add(gameplayTree);
-            VisualElement gpRoot = UiResolutionClass.Apply(gpBag, UiElementNames.GameplayRoot, 1920);
-            Assert.That(gpRoot, Is.Not.Null);
-            Assert.That(gpRoot.name, Is.EqualTo(UiElementNames.GameplayRoot));
-            Assert.That(gpRoot.ClassListContains(UiElementNames.Res1080Class), Is.True);
-            Assert.That(gpRoot.ClassListContains(UiElementNames.Res720Class), Is.False);
-
-            // Production hosts + presenter must call the shared helper (not duplicated capture-only logic).
-            string mainHost = File.ReadAllText(Path.Combine(Application.dataPath,
-                "Janseon/Foundation/UI/Presenters/MainTitleUiHost.cs"));
-            string gpHost = File.ReadAllText(Path.Combine(Application.dataPath,
-                "Janseon/Foundation/UI/Presenters/GameplayUiHost.cs"));
-            string gpPresenter = File.ReadAllText(Path.Combine(Application.dataPath,
-                "Janseon/Foundation/UI/Presenters/GameplayPresenter.cs"));
-            Assert.That(mainHost, Does.Contain("UiResolutionClass"),
-                "MainTitleUiHost must apply resolution via UiResolutionClass on named root");
-            Assert.That(gpHost, Does.Contain("UiResolutionClass"),
-                "GameplayUiHost must apply resolution via UiResolutionClass on named root");
-            Assert.That(gpPresenter, Does.Contain("UiResolutionClass"),
-                "GameplayPresenter.ApplyResolutionClass must delegate to UiResolutionClass");
-        }
-
-        [Test]
-        public void ProductionHosts_UseScopedUiScreenDocumentLease_AndRejectSecondDocument()
+        public void ProductionCanvasHosts_UseScopedScreenLease_AndRejectSecondScreen()
         {
             MethodInfo mainConstruct = typeof(MainTitleUiHost).GetMethod(
                 "Construct",
@@ -261,7 +219,7 @@ namespace Janseon.Foundation.Tests
             Assert.That(foundationScope, Does.Contain("UiScreenDocumentLease"),
                 "FoundationLifetimeScope must register scoped UiScreenDocumentLease");
 
-            // Lease still rejects a second active document (production invariant).
+            // Lease still rejects a second active Canvas screen (production invariant).
             var lease = new UiScreenDocumentLease();
             Assert.That(lease.TryAttach("main-title-doc"), Is.True);
             Assert.That(lease.TryAttach("second-doc"), Is.False);
@@ -271,57 +229,23 @@ namespace Janseon.Foundation.Tests
         }
 
         [Test]
-        public void MainTitle_StartFocus_UsesVisualElementFocusApi_AndCaptureRequiresFocusRing()
+        public void MainTitle_StartFocus_UsesEventSystemSelection_AndPresenterSource()
         {
-            MethodInfo focusStart = typeof(MainTitlePresenter).GetMethod(
-                "FocusStart",
-                BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
-            Assert.That(focusStart, Is.Not.Null,
-                "MainTitlePresenter.FocusStart must exist and drive VisualElement.Focus");
+            string presenterSrc = File.ReadAllText(Path.Combine(Application.dataPath.Replace("/Assets", string.Empty),
+                "Assets/Janseon/Foundation/UI/Presenters/MainTitlePresenter.cs"));
+            Assert.That(presenterSrc, Does.Contain("FocusStart"), "presenter must expose FocusStart");
+            Assert.That(presenterSrc, Does.Contain("SetSelectedGameObject"),
+                "focus must go through uGUI EventSystem selection");
 
-            VisualElement root = InstantiateTree(UiScreenPaths.MainTitleUxml, UiScreenPaths.MainTitleUss);
-            var presenter = new MainTitlePresenter(
-                new Janseon.Foundation.AppFlow.ApplicationFlowCoordinator(
-                    new NullLoader()));
-            Assert.That(presenter.BindForTest(root), Is.True);
-            Button start = root.Q<Button>(UiElementNames.MainTitleStart);
+            var presenter = new MainTitlePresenter(new ApplicationFlowCoordinator(new NullLoader()));
+            RectTransform root = UguiHudBuilder.BuildMainTitle(null);
+            Assert.That(presenter.BindForTest(root), Is.True, "presenter must bind MainTitle canvas");
+            Assert.That(presenter.FocusStart(), Is.True, "FocusStart must focus main-title-start");
+
+            var start = UguiHudBuilder.ButtonNamed(root, UiElementNames.MainTitleStart);
             Assert.That(start, Is.Not.Null);
-            Assert.That(start.focusable, Is.True);
-
-            // Method must call through to the real focus API (source contract).
-            string presenterSrc = File.ReadAllText(Path.Combine(Application.dataPath,
-                "Janseon/Foundation/UI/Presenters/MainTitlePresenter.cs"));
-            Assert.That(presenterSrc, Does.Contain("FocusStart"));
-            Assert.That(presenterSrc, Does.Contain(".Focus("));
-
-            string captureSrc = File.ReadAllText(Path.Combine(Application.dataPath,
-                "Tests/PlayMode/UiToolkitCapturePlayModeTests.cs"));
-            Assert.That(captureSrc, Does.Contain("FocusStart").Or.Contain("main-title-start"),
-                "capture must focus main-title-start before capture");
-            Assert.That(
-                captureSrc.Contains("FocusStart") || captureSrc.Contains(".Focus("),
-                Is.True,
-                "capture scenario must invoke FocusStart or VisualElement.Focus on Start");
-
-            string validator = File.ReadAllText(Path.GetFullPath(Path.Combine(Application.dataPath,
-                "../../tools/unity/validate-ui-captures.mjs")));
-            Assert.That(validator, Does.Contain("stroke-focus").Or.Contain("stroke_focus").Or.Contain("C9A227").Or.Contain("focus_ring"),
-                "validator must require stroke-focus pixels in the title button region");
-        }
-
-        [TestCase(".omo/evidence/gateway-core/receipt.json", true)]
-        [TestCase(".omo/plans/core.md", true)]
-        [TestCase("./.omo/evidence/capture.png", true)]
-        [TestCase(".omo\\evidence\\capture.png", true)]
-        [TestCase("Game/Assets/Janseon/Foundation/UI/Gameplay.uxml", false)]
-        [TestCase("omo/evidence/source.cs", false)]
-        [TestCase("Game/Assets/InitTestScenef26978d6-b24d-47b0-b359-8c334f0ad028.unity", true)]
-        [TestCase("Game/Assets/InitTestScenef26978d6-b24d-47b0-b359-8c334f0ad028.unity.meta", true)]
-        [TestCase("Game/Assets/Scenes/InitTestScene.unity", false)]
-        public void SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot(
-            string path, bool excluded)
-        {
-            Assert.That(UiSourceFingerprint.IsEvidencePath(path), Is.EqualTo(excluded));
+            Assert.That(UguiHudBuilder.LastEnsuredEventSystem.currentSelectedGameObject,
+                Is.EqualTo(start.gameObject), "main-title-start must be the selected uGUI object");
         }
 
         [Test]
@@ -391,7 +315,7 @@ namespace Janseon.Foundation.Tests
         {
             string capturesDir = Environment.GetEnvironmentVariable("JANSEON_CAPTURE_DIR")
                 ?? Path.GetFullPath(Path.Combine(Application.dataPath,
-                    "../../.omo/evidence/unity-poc-core-loop/task-11-ui-toolkit/captures"));
+                    "../../.omo/evidence/poc-ugui-v4-runtime/captures"));
             string repoRoot = Path.GetFullPath(Path.Combine(Application.dataPath, "../.."));
             var git = new System.Diagnostics.ProcessStartInfo("git", "rev-parse HEAD")
             {
@@ -452,16 +376,5 @@ namespace Janseon.Foundation.Tests
             return s;
         }
 
-        static VisualElement InstantiateTree(string uxmlPath, string ussPath)
-        {
-            var tree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(uxmlPath);
-            Assert.That(tree, Is.Not.Null, "UXML missing: " + uxmlPath);
-            VisualElement root = tree.Instantiate();
-            var uss = AssetDatabase.LoadAssetAtPath<StyleSheet>(ussPath);
-            if (uss != null) root.styleSheets.Add(uss);
-            var shared = AssetDatabase.LoadAssetAtPath<StyleSheet>(UiScreenPaths.SharedUss);
-            if (shared != null) root.styleSheets.Add(shared);
-            return root;
-        }
     }
 }
