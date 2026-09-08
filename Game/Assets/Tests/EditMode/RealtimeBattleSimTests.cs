@@ -3,6 +3,9 @@ using Janseon.Core;
 using Janseon.Core.Battle.Contracts;
 using Janseon.Core.Battle.Sim;
 using NUnit.Framework;
+using BattleOutcomeKind = Janseon.Core.Battle.Contracts.BattleOutcomeKind;
+using BattleRejection = Janseon.Core.Battle.Contracts.BattleRejection;
+using BattleRejectReason = Janseon.Core.Battle.Contracts.BattleRejectReason;
 
 namespace Janseon.Foundation.Tests
 {
@@ -71,15 +74,18 @@ namespace Janseon.Foundation.Tests
         [Test] public void Telegraph_ArrivesAtPlannedTickAndResolvesOccupiedCell() { Assert.AreEqual(12, Setup().Telegraphs.Length); }
         [Test] public void Replay_IsDeterministicForSameSetupAndCommands()
         {
-            var replay = BattleSim.Replay(Setup(), new List<BattleTickCommand>(), 1);
-            Assert.IsNotNull(replay.Item1); Assert.IsNotNull(replay.Item2);
-            Assert.AreEqual(BattleSim.Open(Setup()).Fingerprint(), replay.Item1.Fingerprint());
+            var setup=Setup(); var deploy=Command("deploy",0,0,BattleTickCommandKind.Deploy); deploy.Formation=setup.PlayerFormation;
+            var cmds=new List<BattleTickCommand>{deploy};
+            var r1=BattleSim.Replay(setup,cmds,64); var r2=BattleSim.Replay(setup,cmds,64);
+            Assert.AreEqual(r1.Item1.Fingerprint(),r2.Item1.Fingerprint());
+            Assert.AreEqual(Janseon.Core.CoreApi.ComputeLedgerHash(r1.Item2),Janseon.Core.CoreApi.ComputeLedgerHash(r2.Item2));
         }
         [Test] public void PauseHasNoSimulationMeaning() { Assert.AreEqual(BattleRules.TicksPerSecond, 30); }
         [Test] public void MaxTicks_EndsAsDraw_AndRoutingCanProduceRout()
         {
-            Assert.AreEqual(9000, BattleRules.MaxTicks);
-            Assert.AreEqual(BattleOutcomeKind.Draw, BattleSim.Snapshot(BattleSim.Open(Setup())).Outcome);
+            var state=BattleSim.Open(Setup()); var ledger=new Ledger();
+            for(int i=0;i<BattleRules.MaxTicks;i++) BattleSim.Step(state, ledger);
+            Assert.AreEqual(BattleOutcomeKind.Draw, BattleSim.Snapshot(state).Outcome);
         }
     }
 }
