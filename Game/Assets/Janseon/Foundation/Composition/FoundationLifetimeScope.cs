@@ -1,3 +1,5 @@
+using System;
+using Janseon.Foundation.Battle;
 using Janseon.Foundation.UI;
 using Janseon.Foundation.Art;
 using UnityEngine;
@@ -18,6 +20,8 @@ namespace Janseon.Foundation.Composition
             builder.Register<GameplayPresenter>(Lifetime.Scoped).AsSelf();
             builder.RegisterComponentInHierarchy<GameplayUiHost>();
             builder.RegisterEntryPoint<PocCoreLoopController>(Lifetime.Scoped).AsSelf();
+            builder.RegisterInstance<Func<double>>(() => Time.realtimeSinceStartupAsDouble);
+            builder.RegisterEntryPoint<BattleSessionDriver>(Lifetime.Scoped).AsSelf();
         }
     }
 }
