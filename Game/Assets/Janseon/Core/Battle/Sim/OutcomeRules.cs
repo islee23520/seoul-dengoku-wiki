@@ -6,7 +6,6 @@ namespace Janseon.Core.Battle.Sim
  {
   public static bool RetreatCovered(BattleSimState s)
   {
-   if (s.Sides != null && s.Sides.Length > 1 && s.Sides[1].RetreatCovered) return true;
    if (s.Arena == null || s.Arena.EnemyRetreatEdge == null) return false;
    foreach (var edge in s.Arena.EnemyRetreatEdge) { var covered=false; foreach(var u in s.Units) if(u.Side==0 && u.State!="Down" && u.State!="Routing" && u.Cell.ManhattanTo(edge)==1) { covered=true; break; } if(!covered) return false; }
    return true;

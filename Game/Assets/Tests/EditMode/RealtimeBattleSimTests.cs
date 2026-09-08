@@ -98,7 +98,7 @@ namespace Janseon.Foundation.Tests
             var setup = Setup(); var state = BattleSim.Open(setup); var ledger = new Ledger();
             state.Sides[1].Morale = BattleRules.SurrenderMoraleMax;
             state.Sides[1].CommanderHpPercent = BattleRules.SurrenderCommanderHpPercentMax;
-            state.Sides[1].RetreatCovered = true;
+            for (var i = 0; i < 6; i++) state.Units[i].Cell = new GridCoord(state.Arena.Width - 2, i + 1);
             var demand = Command("surrender", 0, 0, BattleTickCommandKind.DemandSurrender);
             Assert.IsNull(BattleSim.Submit(state, ledger, demand)); BattleSim.Step(state, ledger);
             Assert.AreEqual(BattleOutcomeKind.EnemySurrender, BattleSim.Snapshot(state).Outcome);

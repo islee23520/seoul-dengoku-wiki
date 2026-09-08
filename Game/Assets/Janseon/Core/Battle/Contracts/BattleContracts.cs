@@ -43,8 +43,8 @@ namespace Janseon.Core.Battle.Contracts
         static FormationSlot[] Formation(RosterUnit[] units) { var a = new FormationSlot[units.Length]; for (var i = 0; i < a.Length; i++) a[i] = new FormationSlot { Unit = units[i].Id, Row = i / 2, Column = i % 2 - 1, Facing = CardinalDirection.East }; return a; }
     }
 
-    public enum BattleTickCommandKind { Deploy, PlayCard, OrderRetreat, DemandSurrender }
-    public sealed class BattleTickCommand { public CommandId Id; public int Seq; public Tick At; public BattleTickCommandKind Kind; public FormationSlot[] Formation; public string CardId; public GridCoord Target; }
+    public enum BattleTickCommandKind { Deploy, PlayCard, OrderRetreat, DemandSurrender, SetFacing }
+    public sealed class BattleTickCommand { public CommandId Id; public int Seq; public Tick At; public BattleTickCommandKind Kind; public FormationSlot[] Formation; public string CardId; public GridCoord Target; public CardinalDirection Facing; }
     public enum BattleRejectReason { TickMismatch, BattleStarted, NotDeployed, CardUnknown, CardRecharging, CardOutOfRadius, CommandsLocked, SurrenderConditionsUnmet, BattleEnded, UnknownActor, MalformedCommand }
     public sealed class BattleRejection { public BattleRejectReason Reason; public string Detail; }
     public sealed class BattleRules { public const int TicksPerSecond=30, MoveTicksPerCell=10, AttackCooldownTicks=30, MoraleBase=60, MoraleWarn=40, MoraleRecoverCap=80, MoraleRecoveryPerSecond=5, MoraleLossPerDeath=5, MoraleLossCommanderBelowHalf=10, SurrenderMoraleMax=20, SurrenderCommanderHpPercentMax=50, StrongholdCardSlots=2, MaxTicks=9000, CommandRadius=3; public const string RulesVersion="poc-rtfc-v1"; }

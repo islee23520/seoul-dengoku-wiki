@@ -1,0 +1,8 @@
+total=132 passed=130 failed=2 skipped=0
+RealtimeBattleSimTests=12/12
+BattleSrpgTests=9/9
+파싱 결과 실패 2건은 baseline 2종과 이름이 정확히 일치한다.
+- RuntimeAssetProvenanceTests.PlayableScenes_DoNotReferenceQuarantineOrTrellisAssets
+- UiToolkitVisualQaDefectTests.CaptureReceipts_RequireIsPlayingTrue_Roots_State_Head
+r2 3결함 해소: 퇴로 기하 실계산, 지휘관 사기 1회 규칙, SetFacing 계약을 반영했다.
+k2 2건 해소: RealtimeBattleSimTests 12/12 및 BattleSrpgTests 9/9를 확인했다.
