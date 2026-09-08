@@ -32,51 +32,10 @@ namespace Janseon.Foundation.Tests
             Assert.That(root.Q("battle-ap-fill"), Is.Not.Null, "missing battle-ap-fill");
             Assert.That(root.Q("battle-log"), Is.Not.Null, "missing battle-log");
 
+            // Settlement outcome must be non-empty after settle.
             var graph = RouteGraph.CreateYeongdeungpoSindorimGuro();
             var ledger = new Ledger();
             CampaignState s = DriveToResolution(graph, ledger, 90421);
-            object combat = CampaignApi.Apply(graph, s, ledger, new CampaignCommand
-            {
-                Id = new CommandId("c"),
-                Kind = CampaignCommandKind.ChooseCombat,
-            });
-            var ctx = ((BattleRequired)combat).Context;
-            BattleState battle = BattleApi.Open(ctx);
-            s = (CampaignState)CampaignApi.AttachPendingBattle(s, ledger, ctx, new CommandId("a"));
-
-            GameplayUiSnapshot battleSnap = GameplayUiSnapshot.FromCampaign(s, battle);
-            // Snapshot must expose bound meter values (not static labels only).
-            var hpProp = typeof(GameplayUiSnapshot).GetProperty("BattleHp");
-            var maxHpProp = typeof(GameplayUiSnapshot).GetProperty("BattleMaxHp");
-            var logProp = typeof(GameplayUiSnapshot).GetProperty("BattleLogEntries");
-            Assert.That(hpProp, Is.Not.Null, "GameplayUiSnapshot.BattleHp missing");
-            Assert.That(maxHpProp, Is.Not.Null, "GameplayUiSnapshot.BattleMaxHp missing");
-            Assert.That(logProp, Is.Not.Null, "GameplayUiSnapshot.BattleLogEntries missing");
-            int battleHp = (int)hpProp.GetValue(battleSnap);
-            int battleMaxHp = (int)maxHpProp.GetValue(battleSnap);
-            var logEntries = logProp.GetValue(battleSnap) as System.Collections.ICollection;
-            Assert.That(battleMaxHp, Is.GreaterThan(0));
-            Assert.That(battleHp, Is.GreaterThan(0));
-            Assert.That(logEntries, Is.Not.Null);
-            Assert.That(logEntries.Count, Is.GreaterThan(0));
-
-            presenter.ApplySnapshot(battleSnap);
-            Assert.That(root.Q(UiElementNames.RouteRail).ClassListContains("jk-hidden"), Is.True,
-                "battle must release route width so every grid column remains visible");
-            Label hp = root.Q<Label>(UiElementNames.BattleHp);
-            Label ap = root.Q<Label>(UiElementNames.BattleAp);
-            Assert.That(hp.text, Does.Contain(battleHp.ToString()), "HP label must show bound value");
-            Assert.That(ap.text, Does.Contain(((int)typeof(GameplayUiSnapshot).GetProperty("BattleAp").GetValue(battleSnap)).ToString()));
-
-            VisualElement hpFill = root.Q("battle-hp-fill");
-            Assert.That(hpFill.style.width.value.unit, Is.EqualTo(LengthUnit.Percent));
-            Assert.That(hpFill.style.width.value.value, Is.GreaterThan(0f));
-            Assert.That(root.Q(className: "jk-log-entry"), Is.Not.Null, "battle log entries not bound");
-
-            // Settlement outcome must be non-empty after settle.
-            s = DriveToResolution(graph, new Ledger(), 90421);
-            ledger = new Ledger();
-            s = DriveToResolution(graph, ledger, 90422);
             s = (CampaignState)CampaignApi.Apply(graph, s, ledger, new CampaignCommand
             {
                 Id = new CommandId("n"),

@@ -1,6 +1,7 @@
 using System;
 using System.Threading.Tasks;
 using Janseon.Core;
+using Janseon.Core.Battle.Sim;
 using Janseon.Foundation.Composition;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -145,7 +146,7 @@ namespace Janseon.Foundation.UI
             ready.TrySetResult(true);
         }
 
-        public void ApplyCampaign(CampaignState campaign, BattleState battle)
+        public void ApplyCampaign(CampaignState campaign, BattleSimState battle)
         {
             if (presenter == null || !presenter.IsReady)
             {

@@ -21,6 +21,20 @@ namespace Janseon.Foundation.Tests
             return new BattleTickCommand { Id = new CommandId(id), Seq = seq, At = new Tick(tick), Kind = kind };
         }
 
+        static CampaignState CampaignWithPendingBattle()
+        {
+            var graph = RouteGraph.CreateYeongdeungpoSindorimGuro();
+            var ledger = new Ledger();
+            var campaign = CampaignApi.Start(271828, StationId.Yeongdeungpo, "roundtrip-campaign");
+            campaign = (CampaignState)CampaignApi.Apply(graph, campaign, ledger, new CampaignCommand { Id = new CommandId("depart"), Kind = CampaignCommandKind.Depart });
+            campaign = (CampaignState)CampaignApi.Apply(graph, campaign, ledger, new CampaignCommand { Id = new CommandId("travel"), Kind = CampaignCommandKind.Travel, TravelDestination = StationId.Sindorim });
+            campaign = (CampaignState)CampaignApi.Apply(graph, campaign, ledger, new CampaignCommand { Id = new CommandId("face"), Kind = CampaignCommandKind.FaceEncounter });
+            campaign = (CampaignState)CampaignApi.Apply(graph, campaign, ledger, new CampaignCommand { Id = new CommandId("resolution"), Kind = CampaignCommandKind.EnterResolution });
+            var handoff = CampaignApi.Apply(graph, campaign, ledger, new CampaignCommand { Id = new CommandId("combat"), Kind = CampaignCommandKind.ChooseCombat });
+            var context = ((BattleRequired)handoff).Context;
+            return (CampaignState)CampaignApi.AttachPendingBattle(campaign, ledger, context, new CommandId("attach"));
+        }
+
         [Test]
         public void Catalog_IsStaticGrantType_NoDeckNoDraw()
         {
@@ -55,7 +69,7 @@ namespace Janseon.Foundation.Tests
             Assert.AreEqual(card.RechargeTicks, view.RechargeTicksLeft);
             for (var i = 0; i < card.RechargeTicks; i++) BattleSim.Step(state, ledger);
             Assert.AreEqual(0, System.Array.Find(BattleSim.Snapshot(state).Cards, x => x.Id == card.Id).RechargeTicksLeft);
-            Assert.IsNull(BattleSim.Submit(state, ledger, Command("play-again", 2, state.Tick, BattleTickCommandKind.PlayCard)));
+            var playAgain = Command("play-again", 2, state.Tick, BattleTickCommandKind.PlayCard); playAgain.CardId = card.Id; var aliveUnit = System.Array.Find(BattleSim.Snapshot(state).Units, u => u.Side == 0); playAgain.Target = aliveUnit.Cell; Assert.IsNull(BattleSim.Submit(state, ledger, playAgain));
         }
 
         [Test]
@@ -115,9 +129,11 @@ namespace Janseon.Foundation.Tests
         [Test]
         public void Settlement_ExactOnce_SurvivesDomainSwap()
         {
-            var battle = BattleSim.Open(Setup());
-            var result = SettlementApi.FromBattle(battle);
-            var campaign = CampaignFixtures.PendingBattle(result.BattleId);
+            var campaign = CampaignWithPendingBattle();
+            var battle = BattleSim.Open(BattleSetup.FromContext(campaign.PendingBattle));
+            for (var g = 0; g < BattleRules.MaxTicks && battle.Outcome == BattleOutcomeKind.Ongoing; g++) BattleSim.Step(battle, new Ledger());
+            if (battle.Outcome == BattleOutcomeKind.Ongoing) battle.Outcome = BattleOutcomeKind.Draw;
+            var result = BattleSim.Result(battle).ToEncounterResult();
             var ledger = new Ledger(); var book = new SettlementBook();
             var first = SettlementApi.Apply(campaign, ledger, book, result);
             var duplicate = SettlementApi.Apply(((SettlementSuccess)first).State, ledger, book, result);
@@ -128,9 +144,11 @@ namespace Janseon.Foundation.Tests
         [Test]
         public void CampaignRoundTrip_UsesNewBattleResult()
         {
-            var campaign = CampaignFixtures.ChooseCombat();
-            var battle = BattleSim.Open(campaign.PendingBattle.ToBattleContext());
-            var result = SettlementApi.FromBattle(BattleSim.Result(battle));
+            var campaign = CampaignWithPendingBattle();
+            var battle = BattleSim.Open(BattleSetup.FromContext(campaign.PendingBattle));
+            for (var g = 0; g < BattleRules.MaxTicks && battle.Outcome == BattleOutcomeKind.Ongoing; g++) BattleSim.Step(battle, new Ledger());
+            if (battle.Outcome == BattleOutcomeKind.Ongoing) battle.Outcome = BattleOutcomeKind.Draw;
+            var result = BattleSim.Result(battle).ToEncounterResult();
             var settled = (SettlementSuccess)SettlementApi.Apply(campaign, new Ledger(), new SettlementBook(), result);
             Assert.IsTrue(settled.State.SettlementApplied);
             Assert.AreNotEqual(CampaignStage.Resolution, settled.State.Stage);

@@ -21,6 +21,9 @@ namespace Janseon.Core.Battle.Sim
         public int[] PreviousHp;
         public string[] PreviousStates;
         public bool[] CommanderBelowHalf;
+        public CardState[] Cards;
+        public string[] StrongholdCardIds;
+        public BattleContext Context;
 
 
         public BattleSimState Clone()
@@ -34,6 +37,9 @@ namespace Janseon.Core.Battle.Sim
             c.PreviousHp = PreviousHp == null ? null : (int[])PreviousHp.Clone();
             c.PreviousStates = PreviousStates == null ? null : (string[])PreviousStates.Clone();
             c.CommanderBelowHalf = CommanderBelowHalf == null ? null : (bool[])CommanderBelowHalf.Clone();
+            c.Cards = Cards == null ? null : System.Array.ConvertAll(Cards, x => x.Clone());
+            c.StrongholdCardIds = StrongholdCardIds == null ? null : (string[])StrongholdCardIds.Clone();
+            c.Context = Context;
             return c;
         }
         public string Fingerprint()
@@ -43,6 +49,11 @@ namespace Janseon.Core.Battle.Sim
             if (Sides != null) for (var i=0; i<Sides.Length; i++) { var x=Sides[i]; s += ";m" + x.Morale + ":" + x.CommandsLocked; }
             return CoreApi.StableHashHex(s);
         }
+    }
+    public sealed class CardState
+    {
+        public string Id; public int RechargeTicksLeft;
+        public CardState Clone() { return (CardState)MemberwiseClone(); }
     }
     public sealed class UnitState
     {

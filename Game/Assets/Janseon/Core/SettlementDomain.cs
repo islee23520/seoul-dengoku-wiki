@@ -50,7 +50,11 @@ namespace Janseon.Core
         PlayerVictory = 1,
         EnemyVictory = 2,
         Negotiate = 3,
-        Bypass = 4
+        Bypass = 4,
+        Draw = 5,
+        PlayerRetreat = 6,
+        EnemySurrender = 7,
+        PlayerRout = 8
     }
 
     public enum SettlementRejectReason
@@ -338,7 +342,11 @@ namespace Janseon.Core
             }
 
             var isCombat = result.Outcome == SettlementOutcomeKind.PlayerVictory
-                || result.Outcome == SettlementOutcomeKind.EnemyVictory;
+                || result.Outcome == SettlementOutcomeKind.EnemyVictory
+                || result.Outcome == SettlementOutcomeKind.Draw
+                || result.Outcome == SettlementOutcomeKind.PlayerRetreat
+                || result.Outcome == SettlementOutcomeKind.EnemySurrender
+                || result.Outcome == SettlementOutcomeKind.PlayerRout;
             var isNonCombat = result.Outcome == SettlementOutcomeKind.Negotiate
                 || result.Outcome == SettlementOutcomeKind.Bypass;
 
@@ -349,12 +357,7 @@ namespace Janseon.Core
                     return new SettlementRejection(SettlementRejectReason.WrongStage, state.Stage, result.ResultId);
                 }
 
-                if (state.PendingBattle == null)
-                {
-                    return new SettlementRejection(SettlementRejectReason.NoPendingBattle, state.Stage, result.ResultId);
-                }
-
-                if (!string.Equals(state.PendingBattle.BattleId, result.BattleId.Value, StringComparison.Ordinal))
+                if (state.PendingBattle != null && !string.Equals(state.PendingBattle.BattleId, result.BattleId.Value, StringComparison.Ordinal))
                 {
                     return new SettlementRejection(SettlementRejectReason.BattleIdMismatch, state.Stage, result.ResultId);
                 }
@@ -524,28 +527,16 @@ namespace Janseon.Core
         /// <summary>
         /// Build a combat EncounterResult from a terminal battle state. Does not mutate battle.
         /// </summary>
-        public static EncounterResult FromBattle(BattleState battle)
+        public static EncounterResult FromRealtimeResult(Janseon.Core.Battle.Contracts.BattleResult battle)
         {
-            if (battle == null)
-            {
-                throw new ArgumentNullException(nameof(battle));
-            }
-
-            var resultHash = BattleApi.ComputeResultHash(battle);
-            var resultId = new ResultId("result-" + resultHash.Substring(0, 16));
-            var battleIdValue = battle.Context != null ? battle.Context.BattleId : string.Empty;
-            return new EncounterResult
-            {
-                ResultId = resultId,
-                BattleId = new BattleId(battleIdValue),
-                Outcome = MapBattleOutcome(battle.Outcome),
-                ResultHash = resultHash
-            };
+            if (battle == null) throw new ArgumentNullException(nameof(battle));
+            return battle.ToEncounterResult();
         }
 
         /// <summary>
         /// Build a non-combat EncounterResult from a locked campaign choice at Settlement stage.
         /// </summary>
+
         public static EncounterResult FromNonCombat(CampaignState state)
         {
             if (state == null)
@@ -600,19 +591,6 @@ namespace Janseon.Core
             return CoreApi.StableHashHex(sb.ToString());
         }
 
-        static SettlementOutcomeKind MapBattleOutcome(BattleOutcomeKind outcome)
-        {
-            switch (outcome)
-            {
-                case BattleOutcomeKind.PlayerVictory:
-                    return SettlementOutcomeKind.PlayerVictory;
-                case BattleOutcomeKind.EnemyVictory:
-                    return SettlementOutcomeKind.EnemyVictory;
-                default:
-                    return SettlementOutcomeKind.None;
-            }
-        }
-
         // GREEN implementation helpers live below once RED is proven.
         internal static void ResolveConsequences(
             SettlementOutcomeKind outcome,
@@ -623,11 +601,14 @@ namespace Janseon.Core
             switch (outcome)
             {
                 case SettlementOutcomeKind.PlayerVictory:
+                case SettlementOutcomeKind.EnemySurrender:
                     consequenceId = ConsequencePlayerVictory;
                     resourceDelta = PlayerVictoryResourceDelta;
                     reputationDelta = PlayerVictoryReputationDelta;
                     break;
                 case SettlementOutcomeKind.EnemyVictory:
+                case SettlementOutcomeKind.PlayerRetreat:
+                case SettlementOutcomeKind.PlayerRout:
                     consequenceId = ConsequenceEnemyVictory;
                     resourceDelta = EnemyVictoryResourceDelta;
                     reputationDelta = EnemyVictoryReputationDelta;
@@ -636,6 +617,11 @@ namespace Janseon.Core
                     consequenceId = CampaignApi.ConsequenceNegotiate;
                     resourceDelta = CampaignApi.NegotiateResourceDelta;
                     reputationDelta = CampaignApi.NegotiateReputationDelta;
+                    break;
+                case SettlementOutcomeKind.Draw:
+                    consequenceId = "draw";
+                    resourceDelta = 0;
+                    reputationDelta = 0;
                     break;
                 case SettlementOutcomeKind.Bypass:
                     consequenceId = CampaignApi.ConsequenceBypass;

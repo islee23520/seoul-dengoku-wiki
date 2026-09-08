@@ -1,6 +1,8 @@
 using System;
 using System.Globalization;
 using Janseon.Core;
+using Janseon.Core.Battle.Contracts;
+using Janseon.Core.Battle.Sim;
 using Janseon.Foundation.Composition;
 using Janseon.Foundation.Presentation;
 using UnityEngine;
@@ -25,7 +27,7 @@ namespace Janseon.Foundation.UI
         Ledger campaignLedger;
         Ledger battleLedger;
         SettlementBook book;
-        BattleState battle;
+        BattleSimState battle;
         int commandSeq;
         bool wired;
         bool disposed;
@@ -38,7 +40,7 @@ namespace Janseon.Foundation.UI
         }
 
         public CampaignState Campaign => campaign;
-        public BattleState Battle => battle;
+        public BattleSimState Battle => battle;
         public Ledger CampaignLedger => campaignLedger;
         public SettlementBook Book => book;
         public SettlementReceipt LastReceipt { get; private set; }
@@ -53,7 +55,7 @@ namespace Janseon.Foundation.UI
             => campaign == null ? string.Empty : CampaignApi.ComputeCampaignHash(campaign, campaignLedger);
 
         public string BattleHash
-            => battle == null ? string.Empty : BattleApi.ComputeBattleHash(battle, battleLedger);
+            => battle == null ? string.Empty : battle == null ? string.Empty : battle.Fingerprint();
 
         public event Action StateChanged;
         public event Action<object> CommandRejected;
@@ -211,38 +213,17 @@ namespace Janseon.Foundation.UI
         void OnCombat()
         {
             LastClickedAction = UiElementNames.ChoiceCombat;
-            if (campaign == null || graph == null || campaignLedger == null)
-            {
-                return;
-            }
-
-            var cmd = new CampaignCommand
-            {
-                Id = NextCommandId("combat"),
-                Kind = CampaignCommandKind.ChooseCombat,
-            };
-            object result = CampaignApi.Apply(graph, campaign, campaignLedger, cmd);
+            if (campaign == null || graph == null || campaignLedger == null) return;
+            object result = CampaignApi.Apply(graph, campaign, campaignLedger, new CampaignCommand { Id = NextCommandId("combat"), Kind = CampaignCommandKind.ChooseCombat });
             if (result is BattleRequired required)
             {
-                object attached = CampaignApi.AttachPendingBattle(
-                    campaign,
-                    campaignLedger,
-                    required.Context,
-                    NextCommandId("attach"));
+                object attached = CampaignApi.AttachPendingBattle(campaign, campaignLedger, required.Context, NextCommandId("attach"));
                 if (attached is CampaignState next)
                 {
-                    campaign = next;
-                    battleLedger = new Ledger();
-                    battle = BattleApi.Open(required.Context);
-                    LastRejection = null;
-                    Publish();
-                    return;
+                    campaign = next; battleLedger = new Ledger(); battle = BattleSim.Open(BattleSetup.FromContext(required.Context)); LastRejection = null; Publish(); return;
                 }
-
-                Reject(attached);
-                return;
+                Reject(attached); return;
             }
-
             Reject(result);
         }
 
@@ -250,107 +231,23 @@ namespace Janseon.Foundation.UI
         {
             LastClickedAction = UiElementNames.BattleAdvance;
             if (battle == null || battle.Outcome != BattleOutcomeKind.Ongoing)
-            {
-                Reject(new BattleRejection(BattleRejectReason.BattleEnded, string.Empty, BattleCommandKind.EndTurn));
-                return;
-            }
-
-            object lastReject = null;
-            BattleCommand[] candidates = BuildDeterministicBattleCandidates(battle, commandSeq);
-            for (var i = 0; i < candidates.Length; i++)
-            {
-                BattleCommand cmd = candidates[i];
-                if (cmd == null)
-                {
-                    continue;
-                }
-
-                object result = BattleApi.Apply(battle, battleLedger, cmd);
-                if (result is BattleState next)
-                {
-                    battle = next;
-                    commandSeq++;
-                    LastRejection = null;
-                    Publish();
-                    return;
-                }
-
-                lastReject = result;
-            }
-
-            Reject(lastReject
-                   ?? new BattleRejection(BattleRejectReason.InvalidTarget, string.Empty, BattleCommandKind.EndTurn));
+            { Reject(new BattleRejection { Reason = BattleRejectReason.BattleEnded }); return; }
+            for (var i = 0; i < 8 && battle.Outcome == BattleOutcomeKind.Ongoing; i++) BattleSim.Step(battle, battleLedger);
+            commandSeq++; LastRejection = null; Publish();
         }
 
         void OnSettle()
         {
             LastClickedAction = UiElementNames.ActionSettle;
-            if (campaign == null || campaignLedger == null || book == null)
-            {
-                return;
-            }
-
+            if (campaign == null || campaignLedger == null || book == null) return;
             EncounterResult resultPayload = null;
-            if (campaign.SettlementApplied && LastSettledResult != null)
-            {
-                resultPayload = CloneResult(LastSettledResult);
-            }
-            else if (campaign.PendingBattle != null && battle != null
-                     && battle.Outcome != BattleOutcomeKind.Ongoing)
-            {
-                resultPayload = SettlementApi.FromBattle(battle);
-            }
-            else if (campaign.Stage == CampaignStage.Settlement
-                     && campaign.Choice != EncounterChoice.None
-                     && campaign.Choice != EncounterChoice.Combat
-                     && !campaign.SettlementApplied)
-            {
-                resultPayload = SettlementApi.FromNonCombat(campaign);
-            }
-
-            if (resultPayload == null)
-            {
-                Reject(new SettlementRejection(
-                    SettlementRejectReason.MissingResolution,
-                    campaign.Stage,
-                    default));
-                return;
-            }
-
-            string beforeHash = CampaignHash;
-            int beforeRes = campaign.Resources;
-            int beforeRep = campaign.Reputation;
-            int beforeEvents = campaignLedger.Events.Count;
-
+            if (campaign.SettlementApplied && LastSettledResult != null) resultPayload = CloneResult(LastSettledResult);
+            else if (campaign.PendingBattle != null && battle != null && battle.Outcome != BattleOutcomeKind.Ongoing) resultPayload = BattleSim.Result(battle).ToEncounterResult();
+            else if (campaign.Stage == CampaignStage.Settlement && campaign.Choice != EncounterChoice.None && campaign.Choice != EncounterChoice.Combat && !campaign.SettlementApplied) resultPayload = SettlementApi.FromNonCombat(campaign);
+            if (resultPayload == null) { Reject(new SettlementRejection(SettlementRejectReason.MissingResolution, campaign.Stage, default)); return; }
             object applied = SettlementApi.Apply(campaign, campaignLedger, book, resultPayload);
-            if (applied is SettlementSuccess success)
-            {
-                campaign = success.State;
-                LastReceipt = success.Receipt;
-                LastSettledResult = CloneResult(resultPayload);
-                LastDuplicateReceipt = null;
-                LastRejection = null;
-                battle = null;
-                Publish();
-                return;
-            }
-
-            if (applied is SettlementReceipt duplicate)
-            {
-                LastDuplicateReceipt = duplicate;
-                LastRejection = null;
-                if (!string.Equals(beforeHash, CampaignHash, StringComparison.Ordinal)
-                    || beforeRes != campaign.Resources
-                    || beforeRep != campaign.Reputation
-                    || beforeEvents != campaignLedger.Events.Count)
-                {
-                    throw new InvalidOperationException("exact-once duplicate mutated campaign state");
-                }
-
-                Publish();
-                return;
-            }
-
+            if (applied is SettlementSuccess success) { campaign = success.State; LastReceipt = success.Receipt; LastSettledResult = CloneResult(resultPayload); LastDuplicateReceipt = null; LastRejection = null; battle = null; Publish(); return; }
+            if (applied is SettlementReceipt duplicate) { LastDuplicateReceipt = duplicate; LastRejection = null; Publish(); return; }
             Reject(applied);
         }
 
@@ -434,123 +331,6 @@ namespace Janseon.Foundation.UI
             };
         }
 
-        static BattleCommand[] BuildDeterministicBattleCandidates(BattleState state, int seq)
-        {
-            var actor = state.ActiveUnit;
-            if (actor == null)
-            {
-                return System.Array.Empty<BattleCommand>();
-            }
 
-            BattleUnit foe = null;
-            for (var i = 0; i < state.Units.Count; i++)
-            {
-                var u = state.Units[i];
-                if (u != null && !string.Equals(u.UnitId, actor.UnitId, StringComparison.Ordinal))
-                {
-                    foe = u;
-                    break;
-                }
-            }
-
-            string tag = seq.ToString(CultureInfo.InvariantCulture);
-            var list = new System.Collections.Generic.List<BattleCommand>(6);
-            if (foe != null && !foe.IsDowned)
-            {
-                int dist = actor.Position.ManhattanTo(foe.Position);
-                if (dist <= BattleApi.MeleeRange && actor.Ap >= BattleApi.MeleeApCost)
-                {
-                    list.Add(new BattleCommand
-                    {
-                        Id = new CommandId("b-melee-" + tag),
-                        Kind = BattleCommandKind.MeleeAttack,
-                        ActorId = actor.UnitId,
-                        TargetId = foe.UnitId,
-                    });
-                }
-
-                if (dist <= BattleApi.RangedRange && actor.Ap >= BattleApi.RangedApCost)
-                {
-                    list.Add(new BattleCommand
-                    {
-                        Id = new CommandId("b-ranged-" + tag),
-                        Kind = BattleCommandKind.RangedAttack,
-                        ActorId = actor.UnitId,
-                        TargetId = foe.UnitId,
-                    });
-                }
-
-                if (actor.Ap >= BattleApi.MoveApCost)
-                {
-                    int dx = Math.Sign(foe.Position.X - actor.Position.X);
-                    int dy = Math.Sign(foe.Position.Y - actor.Position.Y);
-                    if (dx != 0)
-                    {
-                        list.Add(new BattleCommand
-                        {
-                            Id = new CommandId("b-mx-" + tag),
-                            Kind = BattleCommandKind.Move,
-                            ActorId = actor.UnitId,
-                            Dx = dx,
-                            Dy = 0,
-                        });
-                    }
-
-                    if (dy != 0)
-                    {
-                        list.Add(new BattleCommand
-                        {
-                            Id = new CommandId("b-my-" + tag),
-                            Kind = BattleCommandKind.Move,
-                            ActorId = actor.UnitId,
-                            Dx = 0,
-                            Dy = dy,
-                        });
-                    }
-
-                    // Cardinal fallbacks if direct axis blocked.
-                    list.Add(new BattleCommand
-                    {
-                        Id = new CommandId("b-mn-" + tag),
-                        Kind = BattleCommandKind.Move,
-                        ActorId = actor.UnitId,
-                        Dx = 0,
-                        Dy = 1,
-                    });
-                    list.Add(new BattleCommand
-                    {
-                        Id = new CommandId("b-me-" + tag),
-                        Kind = BattleCommandKind.Move,
-                        ActorId = actor.UnitId,
-                        Dx = 1,
-                        Dy = 0,
-                    });
-                    list.Add(new BattleCommand
-                    {
-                        Id = new CommandId("b-ms-" + tag),
-                        Kind = BattleCommandKind.Move,
-                        ActorId = actor.UnitId,
-                        Dx = 0,
-                        Dy = -1,
-                    });
-                    list.Add(new BattleCommand
-                    {
-                        Id = new CommandId("b-mw-" + tag),
-                        Kind = BattleCommandKind.Move,
-                        ActorId = actor.UnitId,
-                        Dx = -1,
-                        Dy = 0,
-                    });
-                }
-            }
-
-            list.Add(new BattleCommand
-            {
-                Id = new CommandId("b-end-" + tag),
-                Kind = BattleCommandKind.EndTurn,
-                ActorId = actor.UnitId,
-            });
-            return list.ToArray();
-        }
     }
 }

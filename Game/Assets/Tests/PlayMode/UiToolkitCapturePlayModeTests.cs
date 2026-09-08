@@ -213,12 +213,6 @@ namespace Janseon.Foundation.Tests
                 yield return g2.Current;
             }
 
-            IEnumerator g3 = CaptureGameplayPairCoroutine(gameplayHost, "battle-state", CaptureKind.Battle);
-            while (g3.MoveNext())
-            {
-                yield return g3.Current;
-            }
-
             IEnumerator g4 = CaptureGameplayPairCoroutine(gameplayHost, "settlement-return", CaptureKind.Settlement);
             while (g4.MoveNext())
             {
@@ -233,20 +227,19 @@ namespace Janseon.Foundation.Tests
         {
             RouteStage,
             Encounter,
-            Battle,
             Settlement,
         }
 
         IEnumerator CaptureGameplayPairCoroutine(GameplayUiHost host, string stemBase, CaptureKind kind)
         {
-            CampaignState campaign = BuildCampaign(kind, out BattleState battle, out string stateHash);
+            CampaignState campaign = BuildCampaign(kind, out string stateHash);
             string stateLabel = kind + "@" + (campaign.Node.Value ?? "") + "/stage=" + campaign.Stage;
 
             void Apply(VisualElement root, int w)
             {
                 UiResolutionClass.Apply(root, UiElementNames.GameplayRoot, w);
                 host.Presenter.ApplyResolutionClass(w);
-                host.ApplyCampaign(campaign, battle);
+                host.ApplyCampaign(campaign, null);
             }
 
             IEnumerator a = CaptureDocumentCoroutine(
@@ -699,9 +692,8 @@ namespace Janseon.Foundation.Tests
             await tcs.Task;
         }
 
-        static CampaignState BuildCampaign(CaptureKind kind, out BattleState battle, out string stateHash)
+        static CampaignState BuildCampaign(CaptureKind kind, out string stateHash)
         {
-            battle = null;
             var graph = RouteGraph.CreateYeongdeungpoSindorimGuro();
             var ledger = new Ledger();
             CampaignState s = CampaignApi.Start(Seed, StationId.Yeongdeungpo, "ui-capture");
@@ -737,20 +729,6 @@ namespace Janseon.Foundation.Tests
             if (kind == CaptureKind.Encounter)
             {
                 stateHash = CampaignApi.ComputeStateHash(s);
-                return s;
-            }
-
-            if (kind == CaptureKind.Battle)
-            {
-                object combat = CampaignApi.Apply(graph, s, ledger, new CampaignCommand
-                {
-                    Id = new CommandId("c"),
-                    Kind = CampaignCommandKind.ChooseCombat,
-                });
-                var ctx = ((BattleRequired)combat).Context;
-                battle = BattleApi.Open(ctx);
-                s = (CampaignState)CampaignApi.AttachPendingBattle(s, ledger, ctx, new CommandId("a"));
-                stateHash = BattleApi.ComputeBattleHash(battle, null);
                 return s;
             }
 

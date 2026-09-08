@@ -1,6 +1,7 @@
 using System;
 using Janseon.Foundation.Art;
 using Janseon.Core;
+using Janseon.Core.Battle.Sim;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -11,7 +12,7 @@ namespace Janseon.Foundation.UI
         readonly IRuntimeSlotCatalog catalog;
 
         VisualElement gameplayRoot;
-        BattleState previousBattle;
+        BattleSimState previousBattle;
 
         public RuntimeSlotView(IRuntimeSlotCatalog catalog)
             => this.catalog = catalog ?? throw new ArgumentNullException(nameof(catalog));
@@ -51,7 +52,7 @@ namespace Janseon.Foundation.UI
             medic.tooltip = "의무병 · 대기";
         }
 
-        public void ApplyBattle(BattleState battle)
+        public void ApplyBattle(BattleSimState battle)
         {
             if (gameplayRoot == null) return;
             for (int y = 0; y < 5; y++)
@@ -63,34 +64,36 @@ namespace Janseon.Foundation.UI
                 cell.style.backgroundImage = new StyleBackground(catalog.Get<Texture2D>("history-texture", tile));
             }
             if (battle != null)
-            foreach (BattleUnit unit in battle.Units)
+            foreach (UnitState unit in battle.Units)
             {
-                string slot = unit.IsPlayer ? "character-explorer" : "character-patrol";
-                VisualElement cell = gameplayRoot.Q(UiElementNames.BattleCell(unit.Position.X, unit.Position.Y));
+                string slot = unit.Side == 0 ? "character-explorer" : "character-patrol";
+                VisualElement cell = gameplayRoot.Q(UiElementNames.BattleCell(unit.Cell.X, unit.Cell.Y));
                 if (cell == null) continue;
-                BattleUnit previous = previousBattle?.Units.Find(u => u.UnitId == unit.UnitId);
-                string facing = unit.IsPlayer ? "E" : "W";
-                string action = unit.IsDowned ? "down" : "idle";
-                if (!unit.IsDowned && previous != null)
+                UnitState previous = previousBattle == null || previousBattle.Units == null
+                    ? null
+                    : System.Array.Find(previousBattle.Units, u => u != null && u.Id.Equals(unit.Id));
+                string facing = unit.Side == 0 ? "E" : "W";
+                string action = unit.State == "Down" ? "down" : "idle";
+                if (unit.State != "Down" && previous != null)
                 {
-                    int dx = unit.Position.X - previous.Position.X;
-                    int dy = unit.Position.Y - previous.Position.Y;
+                    int dx = unit.Cell.X - previous.Cell.X;
+                    int dy = unit.Cell.Y - previous.Cell.Y;
                     if (dx != 0 || dy != 0)
                     {
                         facing = dx > 0 ? "E" : dx < 0 ? "W" : dy > 0 ? "N" : "S";
                         action = "walk";
                     }
                     else if (unit.Hp < previous.Hp) action = "hit";
-                    else if (unit.Ap < previous.Ap) action = "attack";
+                    else if (unit.Hp < previous.Hp) action = "hit";
                 }
-                var image = Ensure<Image>(cell, "unit-" + unit.UnitId, "jk-slot-unit");
+                var image = Ensure<Image>(cell, "unit-" + unit.Id.ToString(), "jk-slot-unit");
                 string prefix = facing + "/" + action + "/";
                 image.sprite = catalog.Get<Sprite>(slot, prefix + "0");
                 image.tooltip = slot + "/" + prefix;
                 if (image.sprite == null)
                 {
-                    var label = Ensure<Label>(cell, "unit-blocked-" + unit.UnitId, "jk-slot-unit-label");
-                    label.text = unit.IsPlayer ? "탐험가\n아트 차단" : "순찰대\n아트 차단";
+                    var label = Ensure<Label>(cell, "unit-blocked-" + unit.Id.ToString(), "jk-slot-unit-label");
+                    label.text = unit.Side == 0 ? "탐험가\n아트 차단" : "순찰대\n아트 차단";
                 }
                 else if (!gameplayRoot.ClassListContains("jk-motion-off"))
                 {

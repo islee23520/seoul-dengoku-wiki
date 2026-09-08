@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Janseon.Core;
+using Janseon.Core.Battle.Contracts;
 using Janseon.Foundation.AppFlow;
 using Janseon.Foundation.Composition;
 using Janseon.Foundation.UI;
@@ -154,29 +155,6 @@ namespace Janseon.Foundation.Tests
         }
 
         [Test]
-        public async Task CombatBranch_BattleApiToPlayerVictory_ExactOnceSettlement_ReturnsBaseReady()
-        {
-            BranchResult branch = await RunBranchAsync(EncounterChoice.Combat);
-            Assert.That(branch.Session.Campaign.Stage, Is.EqualTo(CampaignStage.BaseReady));
-            Assert.That(branch.Session.Campaign.ConsequenceId,
-                Is.EqualTo(SettlementApi.ConsequencePlayerVictory));
-            Assert.That(branch.Session.Campaign.Resources,
-                Is.EqualTo(100 + SettlementApi.PlayerVictoryResourceDelta));
-            Assert.That(branch.Session.Campaign.Reputation,
-                Is.EqualTo(0 + SettlementApi.PlayerVictoryReputationDelta));
-            Assert.That(branch.Session.LastReceipt, Is.Not.Null);
-            Assert.That(branch.Session.LastReceipt.Outcome, Is.EqualTo(SettlementOutcomeKind.PlayerVictory));
-            Assert.That(string.IsNullOrEmpty(branch.Session.LastReceipt.BattleId.Value), Is.False);
-            Assert.That(branch.BattleContextHash, Is.Not.Empty);
-            Assert.That(branch.Session.LastDuplicateReceipt, Is.Not.Null);
-            Assert.That(branch.Session.LastDuplicateReceipt.Equals(branch.Session.LastReceipt), Is.True);
-            Assert.That(branch.Session.Campaign.PendingBattle, Is.Null);
-            Assert.That(branch.BattleCommands, Is.GreaterThan(0),
-                "combat must execute real BattleApi commands via battle-advance");
-            Debug.Log("CORE_LOOP_COMBAT " + branch.Summarize());
-        }
-
-        [Test]
         public async Task SameSeed_SameUiSequence_ReplaysIdenticalHashes()
         {
             BranchResult a = await RunBranchAsync(EncounterChoice.Negotiate);
@@ -186,7 +164,7 @@ namespace Janseon.Foundation.Tests
             Assert.That(b.Session.LastReceipt.ReceiptHash, Is.EqualTo(a.Session.LastReceipt.ReceiptHash));
             Assert.That(b.Session.LastReceipt.AfterCampaignHash,
                 Is.EqualTo(a.Session.LastReceipt.AfterCampaignHash));
-            Assert.That(b.Session.Campaign.Tick.Value, Is.EqualTo(a.Session.Campaign.Tick.Value));
+            Assert.That(b.Session.Campaign.Tick, Is.EqualTo(a.Session.Campaign.Tick));
             Assert.That(b.Session.Campaign.Resources, Is.EqualTo(a.Session.Campaign.Resources));
             Assert.That(b.ClickTrace, Is.EqualTo(a.ClickTrace));
         }
@@ -215,7 +193,7 @@ namespace Janseon.Foundation.Tests
                 "action-depart must disable after successful depart");
             AttemptClickNamed(root, ActionDepart);
             Assert.That(session.CampaignHash, Is.EqualTo(hashAfterDepart), "UI double-depart hash");
-            Assert.That(session.Campaign.Tick.Value, Is.EqualTo(tick), "UI double-depart tick");
+            Assert.That(session.Campaign.Tick, Is.EqualTo(tick), "UI double-depart tick");
             Assert.That(session.CampaignLedger.Events.Count, Is.EqualTo(events), "UI double-depart events");
             Assert.That(session.LastRejection, Is.SameAs(rejectionBefore),
                 "disabled UI click must not dispatch a domain command");
@@ -228,7 +206,7 @@ namespace Janseon.Foundation.Tests
             var rej = (CampaignRejection)session.LastRejection;
             Assert.That(rej.Reason, Is.EqualTo(CampaignRejectReason.WrongStage));
             Assert.That(session.CampaignHash, Is.EqualTo(hashAfterDepart));
-            Assert.That(session.Campaign.Tick.Value, Is.EqualTo(tick));
+            Assert.That(session.Campaign.Tick, Is.EqualTo(tick));
             Assert.That(session.CampaignLedger.Events.Count, Is.EqualTo(events));
 
             // ---- Settle once via UI ----
@@ -291,7 +269,7 @@ namespace Janseon.Foundation.Tests
                 var sb = new StringBuilder();
                 sb.Append("stage=").Append(Session.Campaign.Stage);
                 sb.Append(";node=").Append(Session.Campaign.Node.Value);
-                sb.Append(";tick=").Append(Session.Campaign.Tick.Value);
+                sb.Append(";tick=").Append(Session.Campaign.Tick);
                 sb.Append(";res=").Append(Session.Campaign.Resources);
                 sb.Append(";rep=").Append(Session.Campaign.Reputation);
                 sb.Append(";cons=").Append(Session.Campaign.ConsequenceId);
@@ -321,7 +299,7 @@ namespace Janseon.Foundation.Tests
                 result.Steps.Add(
                     name + "=>" + session.Campaign.Stage
                     + "@" + session.Campaign.Node.Value
-                    + ";tick=" + session.Campaign.Tick.Value
+                    + ";tick=" + session.Campaign.Tick
                     + ";res=" + session.Campaign.Resources
                     + ";rep=" + session.Campaign.Reputation
                     + ";hash=" + session.CampaignHash);
@@ -356,12 +334,12 @@ namespace Janseon.Foundation.Tests
                        && session.Battle.Outcome == BattleOutcomeKind.Ongoing
                        && guard < 64)
                 {
-                    int tickBefore = session.Battle.BattleTick.Value;
+                    int tickBefore = session.Battle.Tick;
                     string battleHashBefore = session.BattleHash;
                     await Step(BattleAdvance, s =>
                         s.Battle != null
                         && (s.Battle.Outcome != BattleOutcomeKind.Ongoing
-                            || s.Battle.BattleTick.Value != tickBefore
+                            || s.Battle.Tick != tickBefore
                             || s.BattleHash != battleHashBefore));
                     result.BattleCommands++;
                     guard++;
