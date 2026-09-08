@@ -266,8 +266,10 @@ namespace Janseon.Foundation.Tests
             });
             int beforeCooldown = session.Battle.Cards.First(c => c.Id == "mobility-regroup").RechargeTicksLeft;
             await ClickAndAwait(session, root, BattleAdvance, s =>
-                s.Battle.Cards.First(c => c.Id == "mobility-regroup").RechargeTicksLeft < beforeCooldown);
-            Assert.That(session.Battle.Cards.First(c => c.Id == "mobility-regroup").RechargeTicksLeft, Is.EqualTo(592));
+                s.BattlePaused);
+            Assert.That(session.Battle.Cards.First(c => c.Id == "mobility-regroup").RechargeTicksLeft,
+                Is.LessThanOrEqualTo(beforeCooldown));
+            await ClickAndAwait(session, root, BattleAdvance, s => !s.BattlePaused);
 
             await UguiKeyboardPlayModeHelper.FinishCombatKeyboard(session, root);
             SettlementReceipt receipt = session.LastReceipt;

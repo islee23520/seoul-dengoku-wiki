@@ -1,0 +1,88 @@
+{
+  "task": "RTFC Phase D production BattleSessionDriver integration",
+  "base_head": "f6438aa2622aef54792e994832cc611a2017d9da",
+  "branch": "rtfc/phase-d",
+  "worktree": "E:/git/seoul-kenshi-wt/rtfc-phase-d",
+  "unity": "6000.7.0a5",
+  "source_sha256": {
+    "Game/Assets/Janseon/Foundation/Battle/BattleSessionDriver.cs": "596eaf10c5482ad4e6fa1b2dc23225cf8377d5812da1e0da493223609d1679ce",
+    "Game/Assets/Janseon/Foundation/UI/IPocCoreLoopSession.cs": "80fe6cbd6653280013ed509260b521bc956d55a58f9ec3dec9676e519a048e10",
+    "Game/Assets/Janseon/Foundation/UI/PocCoreLoopController.cs": "3243cbf76a556a8f2bbe0a1e2b380b572749f861f2374c16efe2ecb6b3f03e8b",
+    "Game/Assets/Tests/EditMode/BattleSessionDriverTests.cs": "3e99d1cb1ec95396342f35fe7ea15da9bfbde6f74c481e93e65ba74b88a902ad",
+    "Game/Assets/Tests/PlayMode/BattleSessionDriverPlayModeTests.cs": "201125b15e752f086eb5a0039417f879a196963d051b891b085e0aa3bf889e12",
+    "Game/Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs": "cb7e3cb9be07692854354c2a9c245db6a1980a0d2840d71494a18b9fd7e46ecb",
+    "Game/Assets/Tests/PlayMode/UguiKeyboardPlayModeHelper.cs": "c08f84cacee703731e532101d9368e4f6ab7523c59cfc79c6ad47aab62f6bed4"
+  },
+  "red": {
+    "production": {
+      "result": "Failed(Child)",
+      "total": "1",
+      "passed": "0",
+      "failed": "1",
+      "skipped": "0",
+      "inconclusive": "0",
+      "duration": "0.4307251"
+    },
+    "driver_regressions": {
+      "result": "Failed(Child)",
+      "total": "8",
+      "passed": "6",
+      "failed": "2",
+      "skipped": "0",
+      "inconclusive": "0",
+      "duration": "0.05859"
+    }
+  },
+  "green": {
+    "editmode": {
+      "result": "Passed",
+      "total": "8",
+      "passed": "8",
+      "failed": "0",
+      "skipped": "0",
+      "inconclusive": "0",
+      "duration": "0.0592439"
+    },
+    "production_e2e": {
+      "result": "Passed",
+      "total": "1",
+      "passed": "1",
+      "failed": "0",
+      "skipped": "0",
+      "inconclusive": "0",
+      "duration": "10.5660172"
+    },
+    "controller_consumer": {
+      "result": "Passed",
+      "total": "1",
+      "passed": "1",
+      "failed": "0",
+      "skipped": "0",
+      "inconclusive": "0",
+      "duration": "10.6202192"
+    }
+  },
+  "lfs": {
+    "filesScanned": 2593,
+    "pointers": [],
+    "errors": []
+  },
+  "build": {
+    "exit": "1",
+    "status": "PRE_EXISTING_ENVIRONMENT_FAILURE",
+    "reason": "WebGL build target unsupported; TMP MalgunGothicDynamic atlas is invalid before player compilation. Focused Unity tests compile and pass."
+  },
+  "diagnostics": {
+    "lsp": "UNAVAILABLE: local macOS LSP cannot open the authorized Windows-only path; Unity compilation is evidenced by test XML/logs."
+  },
+  "commands": {
+    "red_playmode": "E:/Unity/Editor/6000.7.0a5/Editor/Unity.exe -batchmode -nographics -projectPath E:/git/seoul-kenshi-wt/rtfc-phase-d/Game -runTests -testPlatform PlayMode -testFilter Janseon.Foundation.Tests.BattleSessionDriverPlayModeTests.ProductionCoreLoop_AttachesItsBattleToDriver -testResults .../red-playmode.xml -logFile .../red-playmode.log.txt",
+    "red_editmode": "E:/Unity/Editor/6000.7.0a5/Editor/Unity.exe -batchmode -nographics -projectPath E:/git/seoul-kenshi-wt/rtfc-phase-d/Game -runTests -testPlatform EditMode -testFilter Janseon.Foundation.Tests.BattleSessionDriverTests -testResults .../red-editmode.xml -logFile .../red-editmode.log.txt",
+    "final_editmode": "E:/Unity/Editor/6000.7.0a5/Editor/Unity.exe -batchmode -nographics -projectPath E:/git/seoul-kenshi-wt/rtfc-phase-d/Game -runTests -testPlatform EditMode -testFilter Janseon.Foundation.Tests.BattleSessionDriverTests -testResults .../final-editmode.xml -logFile .../final-editmode.log.txt",
+    "final_playmode": "E:/Unity/Editor/6000.7.0a5/Editor/Unity.exe -batchmode -nographics -projectPath E:/git/seoul-kenshi-wt/rtfc-phase-d/Game -runTests -testPlatform PlayMode -testFilter Janseon.Foundation.Tests.BattleSessionDriverPlayModeTests.ProductionCoreLoop_DriverOwnsLiveBattleLifecycle_EndToEnd -testResults .../final-playmode.xml -logFile .../final-playmode.log.txt",
+    "final_controller": "E:/Unity/Editor/6000.7.0a5/Editor/Unity.exe -batchmode -nographics -projectPath E:/git/seoul-kenshi-wt/rtfc-phase-d/Game -runTests -testPlatform PlayMode -testFilter Janseon.Foundation.Tests.CoreLoopPlayModeTests.CombatUi_SelectsAndPlaysMobilityCard_ThenTicksCooldown -testResults .../final-controller-playmode.xml -logFile .../final-controller-playmode.log.txt",
+    "build": "E:/Unity/Editor/6000.7.0a5/Editor/Unity.exe -batchmode -nographics -quit -projectPath E:/git/seoul-kenshi-wt/rtfc-phase-d/Game -executeMethod Janseon.Foundation.Editor.FoundationProjectBuilder.BuildWebGlPlayer -logFile .../build.log.txt"
+  },
+  "scope_note": "No scene/assets/geography/HUD redesign. Production controller, driver, session interface, directly related tests/helpers only.",
+  "protected_foreign_file": "diff.txt remained untracked and untouched."
+}

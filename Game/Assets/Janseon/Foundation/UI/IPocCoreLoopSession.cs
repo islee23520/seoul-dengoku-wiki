@@ -14,6 +14,8 @@ namespace Janseon.Foundation.UI
         CampaignState Campaign { get; }
         BattleSimState Battle { get; }
         Ledger CampaignLedger { get; }
+        Ledger BattleLedger { get; }
+        bool BattlePaused { get; }
         SettlementBook Book { get; }
         SettlementReceipt LastReceipt { get; }
         SettlementReceipt LastDuplicateReceipt { get; }

@@ -4,6 +4,7 @@ using Janseon.Core;
 using Janseon.Core.Battle.Contracts;
 using Janseon.Core.Battle.Sim;
 using Janseon.Foundation.AppFlow;
+using Janseon.Foundation.Battle;
 using Janseon.Foundation.Composition;
 using Janseon.Foundation.Presentation;
 using UnityEngine;
@@ -23,6 +24,7 @@ namespace Janseon.Foundation.UI
         readonly GameplayPresenter presenter;
         readonly GameplayUiHost host;
         readonly ApplicationFlowCoordinator coordinator;
+        readonly BattleSessionDriver battleDriver;
 
         RouteGraph graph;
         CampaignState campaign;
@@ -38,16 +40,20 @@ namespace Janseon.Foundation.UI
         public PocCoreLoopController(
             GameplayPresenter presenter,
             GameplayUiHost host,
-            ApplicationFlowCoordinator coordinator)
+            ApplicationFlowCoordinator coordinator,
+            BattleSessionDriver battleDriver)
         {
             this.presenter = presenter ?? throw new ArgumentNullException(nameof(presenter));
             this.host = host ?? throw new ArgumentNullException(nameof(host));
             this.coordinator = coordinator ?? throw new ArgumentNullException(nameof(coordinator));
+            this.battleDriver = battleDriver ?? throw new ArgumentNullException(nameof(battleDriver));
         }
 
         public CampaignState Campaign => campaign;
         public BattleSimState Battle => battle;
         public Ledger CampaignLedger => campaignLedger;
+        public Ledger BattleLedger => battleLedger;
+        public bool BattlePaused => battleDriver.Paused;
         public SettlementBook Book => book;
         public SettlementReceipt LastReceipt { get; private set; }
         public SettlementReceipt LastDuplicateReceipt { get; private set; }
@@ -74,6 +80,8 @@ namespace Janseon.Foundation.UI
             }
 
             host.AttachLoop(this);
+            battleDriver.CommandRejected += OnDriverCommandRejected;
+            battleDriver.StateAdvanced += OnBattleStateAdvanced;
             WirePresenter();
             BeginNewRun(DefaultSeed, DefaultCampaignId);
             EnsureVoxelWorld();
@@ -90,6 +98,9 @@ namespace Janseon.Foundation.UI
 
             disposed = true;
             UnwirePresenter();
+            battleDriver.CommandRejected -= OnDriverCommandRejected;
+            battleDriver.StateAdvanced -= OnBattleStateAdvanced;
+            battleDriver.Detach();
             if (voxelWorld != null)
             {
                 UnityEngine.Object.Destroy(voxelWorld.gameObject);
@@ -105,6 +116,7 @@ namespace Janseon.Foundation.UI
             battleLedger = new Ledger();
             book = new SettlementBook();
             battle = null;
+            battleDriver.Detach();
             LastReceipt = null;
             LastDuplicateReceipt = null;
             LastSettledResult = null;
@@ -257,17 +269,20 @@ namespace Janseon.Foundation.UI
                 {
                     campaign = next;
                     battleLedger = new Ledger();
-                    battle = BattleSim.Open(BattleSetup.FromContext(required.Context));
+                    var setup = BattleSetup.FromContext(required.Context);
+                    battle = BattleSim.Open(setup);
+                    battleDriver.Attach(battle, battleLedger);
                     var deploy = new BattleTickCommand
                     {
                         Id = NextCommandId("deploy"),
                         Seq = commandSeq,
                         At = new Tick(battle.Tick),
                         Kind = BattleTickCommandKind.Deploy,
-                        Formation = BattleSetup.FromContext(required.Context).PlayerFormation,
+                        Formation = setup.PlayerFormation,
                     };
-                    object deployed = BattleSim.Submit(battle, battleLedger, deploy);
-                    if (deployed != null) { Reject(deployed); return; }
+                    battleDriver.Enqueue(deploy);
+                    battleDriver.SubmitCurrentCommands();
+                    if (LastRejection is BattleRejection) return;
                     LastRejection = null;
                     Publish();
                     return;
@@ -285,7 +300,7 @@ namespace Janseon.Foundation.UI
             for (var i = 0; i < battle.Units.Length; i++)
                 if (battle.Units[i].Id.Equals(battle.PlayerCommanderId)) { commander = battle.Units[i]; break; }
             if (commander == null) return;
-            object result = BattleSim.Submit(battle, battleLedger, new BattleTickCommand
+            var command = new BattleTickCommand
             {
                 Id = NextCommandId("mobility-regroup"),
                 Seq = commandSeq,
@@ -294,8 +309,10 @@ namespace Janseon.Foundation.UI
                 CardId = "mobility-regroup",
                 Target = commander.Cell,
                 Facing = CardinalDirection.South,
-            });
-            if (result != null) { Reject(result); return; }
+            };
+            battleDriver.Enqueue(command);
+            battleDriver.SubmitCurrentCommands();
+            if (LastRejection is BattleRejection) return;
             LastRejection = null;
             Publish();
         }
@@ -305,8 +322,9 @@ namespace Janseon.Foundation.UI
             LastClickedAction = UiElementNames.BattleAdvance;
             if (battle == null || battle.Outcome != BattleOutcomeKind.Ongoing)
             { Reject(new BattleRejection { Reason = BattleRejectReason.BattleEnded }); return; }
-            for (var i = 0; i < 8 && battle.Outcome == BattleOutcomeKind.Ongoing; i++) BattleSim.Step(battle, battleLedger);
-            commandSeq++; LastRejection = null; Publish();
+            battleDriver.Paused = !battleDriver.Paused;
+            LastRejection = null;
+            Publish();
         }
 
         void OnSettle()
@@ -319,7 +337,7 @@ namespace Janseon.Foundation.UI
             else if (campaign.Stage == CampaignStage.Settlement && campaign.Choice != EncounterChoice.None && campaign.Choice != EncounterChoice.Combat && !campaign.SettlementApplied) resultPayload = SettlementApi.FromNonCombat(campaign);
             if (resultPayload == null) { Reject(new SettlementRejection(SettlementRejectReason.MissingResolution, campaign.Stage, default)); return; }
             object applied = SettlementApi.Apply(campaign, campaignLedger, book, resultPayload);
-            if (applied is SettlementSuccess success) { campaign = success.State; LastReceipt = success.Receipt; LastSettledResult = CloneResult(resultPayload); LastDuplicateReceipt = null; LastRejection = null; battle = null; Publish(); return; }
+            if (applied is SettlementSuccess success) { campaign = success.State; LastReceipt = success.Receipt; LastSettledResult = CloneResult(resultPayload); LastDuplicateReceipt = null; LastRejection = null; battleDriver.Detach(); battle = null; Publish(); return; }
             if (applied is SettlementReceipt duplicate) { LastDuplicateReceipt = duplicate; LastRejection = null; Publish(); return; }
             Reject(applied);
         }
@@ -359,6 +377,13 @@ namespace Janseon.Foundation.UI
             host.ApplyWhy(FormatWhy(rejection));
             CommandRejected?.Invoke(rejection);
             StateChanged?.Invoke();
+        }
+
+        void OnDriverCommandRejected(object rejection) => Reject(rejection);
+
+        void OnBattleStateAdvanced()
+        {
+            if (battle != null) Publish();
         }
 
         static string FormatWhy(object rejection)

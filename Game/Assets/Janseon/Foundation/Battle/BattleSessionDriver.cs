@@ -33,7 +33,6 @@ namespace Janseon.Foundation.Battle
         bool clockPrimed;
         double lastSeconds;
         double accumulator;
-        int nextCommand;
 
         public BattleSessionDriver(Func<double> realtimeSeconds)
         {
@@ -49,27 +48,50 @@ namespace Janseon.Foundation.Battle
         public int MaxTicks { get; set; } = BattleRules.MaxTicks;
 
         public event Action<object> CommandRejected;
+        public event Action StateAdvanced;
+        public event Action<int> FrameProcessed;
 
         public void Attach(BattleSimState state, Ledger ledger)
         {
             State = state ?? throw new ArgumentNullException(nameof(state));
             Ledger = ledger ?? throw new ArgumentNullException(nameof(ledger));
             inbox.Clear();
-            nextCommand = 0;
             accumulator = 0.0;
             lastSeconds = realtimeSeconds();
             clockPrimed = true;
             TotalSteps = 0;
+            Paused = false;
+        }
+
+        public void Detach()
+        {
+            State = null;
+            Ledger = null;
+            inbox.Clear();
+            accumulator = 0.0;
+            Paused = false;
         }
 
         public void Enqueue(BattleTickCommand command)
         {
             if (command == null) throw new ArgumentNullException(nameof(command));
             if (State == null) throw new InvalidOperationException("Attach a battle session before enqueueing commands.");
+            if (command.At.Value < State.Tick)
+            {
+                Reject(BattleSim.Submit(State, Ledger, command));
+                return;
+            }
             inbox.Add(command);
             inbox.Sort((a, b) => a.At.Value != b.At.Value
                 ? a.At.Value.CompareTo(b.At.Value)
                 : a.Seq.CompareTo(b.Seq));
+        }
+
+        public void SubmitCurrentCommands()
+        {
+            if (State == null || Ledger == null) return;
+            SubmitDueCommands();
+            if (State.Outcome != BattleOutcomeKind.Ongoing) Detach();
         }
 
         public void Tick()
@@ -78,33 +100,52 @@ namespace Janseon.Foundation.Battle
             var delta = clockPrimed ? now - lastSeconds : 0.0;
             lastSeconds = now;
             clockPrimed = true;
-            if (Paused || State == null || Ledger == null) return;
+            if (Paused || State == null || Ledger == null)
+            {
+                FrameProcessed?.Invoke(0);
+                return;
+            }
             if (delta > 0.0) accumulator += delta;
             if (State.Outcome != BattleOutcomeKind.Ongoing || State.Tick >= MaxTicks)
             {
                 accumulator = 0.0;
+                Detach();
+                FrameProcessed?.Invoke(0);
                 return;
             }
             var steps = 0;
-            while (steps < MaxStepsPerFrame && State.Tick < MaxTicks && accumulator + Epsilon >= TickInterval)
+            while (State != null
+                   && steps < MaxStepsPerFrame
+                   && State.Tick < MaxTicks
+                   && State.Outcome == BattleOutcomeKind.Ongoing
+                   && accumulator + Epsilon >= TickInterval)
             {
                 SubmitDueCommands();
+                if (State == null || State.Outcome != BattleOutcomeKind.Ongoing) break;
                 BattleSim.Step(State, Ledger);
                 TotalSteps++;
                 steps++;
                 accumulator -= TickInterval;
+                StateAdvanced?.Invoke();
             }
+            if (State != null && (State.Outcome != BattleOutcomeKind.Ongoing || State.Tick >= MaxTicks)) Detach();
             if (accumulator > TickInterval) accumulator = 0.0;
+            FrameProcessed?.Invoke(steps);
         }
 
         void SubmitDueCommands()
         {
-            while (nextCommand < inbox.Count && inbox[nextCommand].At.Value == State.Tick)
+            while (inbox.Count > 0 && inbox[0].At.Value <= State.Tick)
             {
-                var result = BattleSim.Submit(State, Ledger, inbox[nextCommand]);
-                if (result != null && CommandRejected != null) CommandRejected(result);
-                nextCommand++;
+                var command = inbox[0];
+                inbox.RemoveAt(0);
+                Reject(BattleSim.Submit(State, Ledger, command));
             }
+        }
+
+        void Reject(object rejection)
+        {
+            if (rejection != null) CommandRejected?.Invoke(rejection);
         }
     }
 }

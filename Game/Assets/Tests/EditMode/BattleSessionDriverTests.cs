@@ -225,5 +225,68 @@ namespace Janseon.Foundation.Tests
             Assert.That(state.Tick, Is.EqualTo(7));
             Assert.That(state.Outcome, Is.EqualTo(BattleOutcomeKind.Ongoing));
         }
+
+        [Test]
+        public void StaleEnqueue_IsRejectedWithoutBlockingTheNextDueCommand()
+        {
+            var clock = new ManualClock();
+            var setup = Setup();
+            var state = BattleSim.Open(setup);
+            var ledger = new Ledger();
+            var driver = new BattleSessionDriver(clock.Read);
+            var rejections = 0;
+            driver.CommandRejected += _ => rejections++;
+            driver.Attach(state, ledger);
+            driver.Enqueue(new BattleTickCommand
+            {
+                Id = new CommandId("deploy"), Seq = 0, At = new Tick(0),
+                Kind = BattleTickCommandKind.Deploy, Formation = setup.PlayerFormation,
+            });
+            clock.Now += Interval;
+            driver.Tick();
+
+            driver.Enqueue(new BattleTickCommand
+            {
+                Id = new CommandId("future-facing"), Seq = 2, At = new Tick(2),
+                Kind = BattleTickCommandKind.SetFacing,
+                Target = new GridCoord(0, 2), Facing = CardinalDirection.North,
+            });
+            driver.Enqueue(new BattleTickCommand
+            {
+                Id = new CommandId("stale-facing"), Seq = 1, At = new Tick(0),
+                Kind = BattleTickCommandKind.SetFacing,
+                Target = new GridCoord(0, 2), Facing = CardinalDirection.South,
+            });
+            for (var i = 0; i < 2; i++)
+            {
+                clock.Now += Interval;
+                driver.Tick();
+            }
+
+            Assert.That(rejections, Is.EqualTo(1), "the stale command must be rejected exactly once");
+            Assert.That(state.Units[0].Facing, Is.EqualTo(CardinalDirection.North),
+                "the stale insertion must not strand the next due command behind the consumed cursor");
+        }
+
+        [Test]
+        public void TerminalStep_StopsWithinTheFrame_AndDetachesTheSession()
+        {
+            var clock = new ManualClock();
+            var state = BattleSim.Open(Setup());
+            var ledger = new Ledger();
+            var driver = new BattleSessionDriver(clock.Read);
+            driver.Attach(state, ledger);
+            for (var i = 0; i < state.Units.Length; i++)
+                if (state.Units[i].Side == 1) state.Units[i].Hp = 0;
+
+            clock.Now += 4 * Interval;
+            driver.Tick();
+
+            Assert.That(state.Outcome, Is.EqualTo(BattleOutcomeKind.PlayerVictory));
+            Assert.That(driver.TotalSteps, Is.EqualTo(1),
+                "the frame must not count no-op Steps after the first terminal Step");
+            Assert.That(driver.State, Is.Null, "terminal sessions must detach from the live pump");
+            Assert.That(driver.Ledger, Is.Null);
+        }
     }
 }

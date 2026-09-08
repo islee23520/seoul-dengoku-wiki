@@ -7,6 +7,7 @@ using Janseon.Core.Battle.Sim;
 using Janseon.Foundation.AppFlow;
 using Janseon.Foundation.Battle;
 using Janseon.Foundation.Composition;
+using Janseon.Foundation.UI;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -23,7 +24,7 @@ namespace Janseon.Foundation.Tests
     public sealed class BattleSessionDriverPlayModeTests
     {
         [Test]
-        public async Task FoundationScope_ResolvesDriver_PlayerLoopPump_ReplaysIdentically()
+        public async Task ProductionCoreLoop_DriverOwnsLiveBattleLifecycle_EndToEnd()
         {
             await UnloadContentScenesAsync();
 
@@ -53,53 +54,156 @@ namespace Janseon.Foundation.Tests
             Assert.That(driver, Is.InstanceOf<VContainer.Unity.ITickable>(), "driver must be a VContainer entry point");
             Assert.That(driver.Paused, Is.False, "driver must start unpaused");
 
-            BattleSetup setup = BattleSetup.FromContext(BattleContext.Create(
-                "campaign",
-                default(StationId),
-                314159,
-                new Tick(0),
-                0,
-                0,
-                BattleRules.RulesVersion,
-                "rtfc-d1-playmode",
-                UnitHpSnapshot.DefaultParty()));
-            BattleTickCommand[] schedule =
+            GameplayUiHost host = UnityEngine.Object.FindAnyObjectByType<GameplayUiHost>();
+            Assert.That(host, Is.Not.Null, "production GameplayUiHost missing");
+            await AwaitTask(host.CoreLoopReady, TimeSpan.FromSeconds(10), "production core-loop attach");
+            IPocCoreLoopSession session = host.CoreLoop;
+            Assert.That(session, Is.Not.Null);
+
+            await TriggerAndAwait(session, host.Presenter.TriggerDepartForTest,
+                s => s.Campaign.Stage == CampaignStage.ExpeditionTravel, "depart");
+            await TriggerAndAwait(session, () => host.Presenter.TriggerTravelForTest(StationId.Sindorim),
+                s => s.Campaign.Node.Equals(StationId.Sindorim), "travel");
+            await TriggerAndAwait(session, host.Presenter.TriggerFaceEncounterForTest,
+                s => s.Campaign.Stage == CampaignStage.Encounter, "face encounter");
+            await TriggerAndAwait(session, host.Presenter.TriggerEnterResolutionForTest,
+                s => s.Campaign.Stage == CampaignStage.Resolution, "enter resolution");
+            await TriggerAndAwait(session, host.Presenter.TriggerCombatForTest,
+                s => s.Battle != null && s.Battle.Deployed, "open production battle");
+
+            Assert.That(driver.State, Is.SameAs(session.Battle),
+                "production controller must attach the actual campaign battle to the scoped driver");
+            Assert.That(driver.Ledger, Is.SameAs(session.BattleLedger));
+            BattleSetup setup = BattleSetup.FromContext(session.Battle.Context);
+            var schedule = new System.Collections.Generic.List<BattleTickCommand>
             {
                 new BattleTickCommand
                 {
-                    Id = new CommandId("pm-deploy"), Seq = 0, At = new Tick(0),
+                    Id = new CommandId("poc-deploy-7"), Seq = 7, At = new Tick(0),
                     Kind = BattleTickCommandKind.Deploy, Formation = setup.PlayerFormation,
                 },
             };
-            BattleSimState state = BattleSim.Open(setup);
-            Ledger ledger = new Ledger();
-            driver.Attach(state, ledger);
-            foreach (BattleTickCommand command in schedule) driver.Enqueue(command);
 
-            // Player-loop pump: bounded wait to 60 ticks at 30 Hz (~2s wall). No fixed
-            // sleeps; the loop exits on the exact state change or the deadline fails it.
-            float pumpDeadline = Time.realtimeSinceStartup + 20f;
-            while (state.Tick < 60 && Time.realtimeSinceStartup < pumpDeadline) await Task.Yield();
+            await TriggerAndAwait(session, host.Presenter.TriggerBattleAdvanceForTest,
+                s => s.BattlePaused, "pause live battle");
+            int pausedTick = session.Battle.Tick;
+            string pausedHash = session.BattleHash;
+            long pausedSteps = driver.TotalSteps;
 
-            Assert.That(state.Tick, Is.GreaterThanOrEqualTo(60), "player loop must pump the driver to 60 ticks");
-            Assert.That(state.Tick, Is.LessThanOrEqualTo(60 + BattleSessionDriver.MaxStepsPerFrame),
-                "per-frame clamp must bound the overshoot past the wait horizon");
+            UnitState commander = Array.Find(session.Battle.Units,
+                unit => unit.Id.Equals(session.Battle.PlayerCommanderId));
+            Assert.That(commander, Is.Not.Null);
+            GridCoord beforeCard = commander.Cell;
+            int commandTick = session.Battle.Tick;
+            await TriggerAndAwait(session, host.Presenter.TriggerMobilityRegroupForTest,
+                s => commander.Cell.Equals(beforeCard.Step(CardinalDirection.South)),
+                "accept card while paused");
+            schedule.Add(new BattleTickCommand
+            {
+                Id = new CommandId("poc-mobility-regroup-8"), Seq = 8, At = new Tick(commandTick),
+                Kind = BattleTickCommandKind.PlayCard, CardId = "mobility-regroup",
+                Target = beforeCard, Facing = CardinalDirection.South,
+            });
+            Assert.That(session.Battle.Tick, Is.EqualTo(pausedTick), "paused command must not advance ticks");
 
-            driver.Paused = true;
-            long stepsAtPause = driver.TotalSteps;
-            float pauseDeadline = Time.realtimeSinceStartup + 1.5f;
-            while (Time.realtimeSinceStartup < pauseDeadline) await Task.Yield();
-            Assert.That(driver.TotalSteps, Is.EqualTo(stepsAtPause), "pause must freeze the live pump");
+            await AwaitProcessedFrames(driver, 5, "paused player-loop frames");
+            Assert.That(driver.TotalSteps, Is.EqualTo(pausedSteps), "pause must freeze production ticks");
+            Assert.That(session.Battle.Tick, Is.EqualTo(pausedTick));
+            Assert.That(session.BattleHash, Is.Not.EqualTo(pausedHash),
+                "the accepted card mutates battle state while the tick timeline remains frozen");
 
-            var (directState, directLedger) = BattleSim.Replay(setup, schedule, state.Tick);
-            Assert.That(state.Fingerprint(), Is.EqualTo(directState.Fingerprint()),
-                "live driver run must replay identically to direct Core replay");
-            Assert.That(BattleSim.Result(state).ResultHash,
-                Is.EqualTo(BattleSim.Result(directState).ResultHash));
-            Assert.That(LedgerSignatures(ledger), Is.EqualTo(LedgerSignatures(directLedger)),
-                "ledger event ids, order, and summary hashes must match the direct replay");
+            Task<int> liveFrame = WaitForSteppedFrame(driver, TimeSpan.FromSeconds(8));
+            await TriggerAndAwait(session, host.Presenter.TriggerBattleAdvanceForTest,
+                s => !s.BattlePaused, "resume live battle");
+            int liveSteps = await liveFrame;
+            Assert.That(liveSteps, Is.InRange(1, BattleSessionDriver.MaxStepsPerFrame),
+                "production player-loop consumption must stay within the max-4 frame budget");
+
+            await WaitUntil(session,
+                s => s.Battle != null && s.Battle.Outcome != BattleOutcomeKind.Ongoing,
+                TimeSpan.FromSeconds(60), "terminal production battle");
+            BattleSimState terminal = session.Battle;
+            Ledger terminalLedger = session.BattleLedger;
+            Assert.That(driver.State, Is.Null, "terminal battle must detach from the scoped driver");
+            Assert.That(driver.Ledger, Is.Null);
+            long terminalSteps = driver.TotalSteps;
+
+            var (replayState, replayLedger) = BattleSim.Replay(setup, schedule, terminal.Tick);
+            Assert.That(terminal.Fingerprint(), Is.EqualTo(replayState.Fingerprint()),
+                "production battle must replay deterministically from its real command schedule");
+            Assert.That(LedgerSignatures(terminalLedger), Is.EqualTo(LedgerSignatures(replayLedger)));
+
+            await TriggerAndAwait(session, host.Presenter.TriggerSettleForTest,
+                s => s.Campaign.SettlementApplied && s.Battle == null, "settle terminal battle");
+            await TriggerAndAwait(session, host.Presenter.TriggerReturnForTest,
+                s => s.Campaign.Stage == CampaignStage.BaseReady, "return to base");
+            await AwaitProcessedFrames(driver, 3, "post-return player-loop frames");
+            Assert.That(driver.TotalSteps, Is.EqualTo(terminalSteps),
+                "terminal/return must not revive the old battle session");
 
             await UnloadContentScenesAsync();
+        }
+
+        static async Task TriggerAndAwait(
+            IPocCoreLoopSession session,
+            Action trigger,
+            Func<IPocCoreLoopSession, bool> predicate,
+            string label)
+        {
+            var changed = new TaskCompletionSource<bool>(TaskCreationOptions.RunContinuationsAsynchronously);
+            void OnChanged() { session.StateChanged -= OnChanged; changed.TrySetResult(true); }
+            session.StateChanged += OnChanged;
+            trigger();
+            await AwaitTask(changed.Task, TimeSpan.FromSeconds(8), label);
+            Assert.That(predicate(session), Is.True, "production state predicate failed after " + label);
+        }
+
+        static async Task WaitUntil(
+            IPocCoreLoopSession session,
+            Func<IPocCoreLoopSession, bool> predicate,
+            TimeSpan timeout,
+            string label)
+        {
+            if (predicate(session)) return;
+            var changed = new TaskCompletionSource<bool>(TaskCreationOptions.RunContinuationsAsynchronously);
+            void OnChanged()
+            {
+                if (!predicate(session)) return;
+                session.StateChanged -= OnChanged;
+                changed.TrySetResult(true);
+            }
+            session.StateChanged += OnChanged;
+            try { await AwaitTask(changed.Task, timeout, label); }
+            finally { session.StateChanged -= OnChanged; }
+        }
+
+        static async Task AwaitProcessedFrames(BattleSessionDriver driver, int count, string label)
+        {
+            var processed = new TaskCompletionSource<bool>(TaskCreationOptions.RunContinuationsAsynchronously);
+            var remaining = count;
+            void OnFrame(int _)
+            {
+                if (--remaining > 0) return;
+                driver.FrameProcessed -= OnFrame;
+                processed.TrySetResult(true);
+            }
+            driver.FrameProcessed += OnFrame;
+            try { await AwaitTask(processed.Task, TimeSpan.FromSeconds(8), label); }
+            finally { driver.FrameProcessed -= OnFrame; }
+        }
+
+        static async Task<int> WaitForSteppedFrame(BattleSessionDriver driver, TimeSpan timeout)
+        {
+            var processed = new TaskCompletionSource<int>(TaskCreationOptions.RunContinuationsAsynchronously);
+            void OnFrame(int steps)
+            {
+                if (steps <= 0) return;
+                driver.FrameProcessed -= OnFrame;
+                processed.TrySetResult(steps);
+            }
+            driver.FrameProcessed += OnFrame;
+            try { return await AwaitTaskResult(processed.Task, timeout, "stepped production frame"); }
+            finally { driver.FrameProcessed -= OnFrame; }
         }
 
         static string[] LedgerSignatures(Ledger ledger)

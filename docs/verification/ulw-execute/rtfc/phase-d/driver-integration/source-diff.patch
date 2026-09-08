@@ -1,0 +1,681 @@
+diff --git a/Game/Assets/Janseon/Foundation/Battle/BattleSessionDriver.cs b/Game/Assets/Janseon/Foundation/Battle/BattleSessionDriver.cs
+index 8d94f57..c55fdfd 100644
+--- a/Game/Assets/Janseon/Foundation/Battle/BattleSessionDriver.cs
++++ b/Game/Assets/Janseon/Foundation/Battle/BattleSessionDriver.cs
+@@ -33,7 +33,6 @@ namespace Janseon.Foundation.Battle
+         bool clockPrimed;
+         double lastSeconds;
+         double accumulator;
+-        int nextCommand;
+ 
+         public BattleSessionDriver(Func<double> realtimeSeconds)
+         {
+@@ -49,62 +48,104 @@ namespace Janseon.Foundation.Battle
+         public int MaxTicks { get; set; } = BattleRules.MaxTicks;
+ 
+         public event Action<object> CommandRejected;
++        public event Action StateAdvanced;
++        public event Action<int> FrameProcessed;
+ 
+         public void Attach(BattleSimState state, Ledger ledger)
+         {
+             State = state ?? throw new ArgumentNullException(nameof(state));
+             Ledger = ledger ?? throw new ArgumentNullException(nameof(ledger));
+             inbox.Clear();
+-            nextCommand = 0;
+             accumulator = 0.0;
+             lastSeconds = realtimeSeconds();
+             clockPrimed = true;
+             TotalSteps = 0;
++            Paused = false;
++        }
++
++        public void Detach()
++        {
++            State = null;
++            Ledger = null;
++            inbox.Clear();
++            accumulator = 0.0;
++            Paused = false;
+         }
+ 
+         public void Enqueue(BattleTickCommand command)
+         {
+             if (command == null) throw new ArgumentNullException(nameof(command));
+             if (State == null) throw new InvalidOperationException("Attach a battle session before enqueueing commands.");
++            if (command.At.Value < State.Tick)
++            {
++                Reject(BattleSim.Submit(State, Ledger, command));
++                return;
++            }
+             inbox.Add(command);
+             inbox.Sort((a, b) => a.At.Value != b.At.Value
+                 ? a.At.Value.CompareTo(b.At.Value)
+                 : a.Seq.CompareTo(b.Seq));
+         }
+ 
++        public void SubmitCurrentCommands()
++        {
++            if (State == null || Ledger == null) return;
++            SubmitDueCommands();
++            if (State.Outcome != BattleOutcomeKind.Ongoing) Detach();
++        }
++
+         public void Tick()
+         {
+             var now = realtimeSeconds();
+             var delta = clockPrimed ? now - lastSeconds : 0.0;
+             lastSeconds = now;
+             clockPrimed = true;
+-            if (Paused || State == null || Ledger == null) return;
++            if (Paused || State == null || Ledger == null)
++            {
++                FrameProcessed?.Invoke(0);
++                return;
++            }
+             if (delta > 0.0) accumulator += delta;
+             if (State.Outcome != BattleOutcomeKind.Ongoing || State.Tick >= MaxTicks)
+             {
+                 accumulator = 0.0;
++                Detach();
++                FrameProcessed?.Invoke(0);
+                 return;
+             }
+             var steps = 0;
+-            while (steps < MaxStepsPerFrame && State.Tick < MaxTicks && accumulator + Epsilon >= TickInterval)
++            while (State != null
++                   && steps < MaxStepsPerFrame
++                   && State.Tick < MaxTicks
++                   && State.Outcome == BattleOutcomeKind.Ongoing
++                   && accumulator + Epsilon >= TickInterval)
+             {
+                 SubmitDueCommands();
++                if (State == null || State.Outcome != BattleOutcomeKind.Ongoing) break;
+                 BattleSim.Step(State, Ledger);
+                 TotalSteps++;
+                 steps++;
+                 accumulator -= TickInterval;
++                StateAdvanced?.Invoke();
+             }
++            if (State != null && (State.Outcome != BattleOutcomeKind.Ongoing || State.Tick >= MaxTicks)) Detach();
+             if (accumulator > TickInterval) accumulator = 0.0;
++            FrameProcessed?.Invoke(steps);
+         }
+ 
+         void SubmitDueCommands()
+         {
+-            while (nextCommand < inbox.Count && inbox[nextCommand].At.Value == State.Tick)
++            while (inbox.Count > 0 && inbox[0].At.Value <= State.Tick)
+             {
+-                var result = BattleSim.Submit(State, Ledger, inbox[nextCommand]);
+-                if (result != null && CommandRejected != null) CommandRejected(result);
+-                nextCommand++;
++                var command = inbox[0];
++                inbox.RemoveAt(0);
++                Reject(BattleSim.Submit(State, Ledger, command));
+             }
+         }
++
++        void Reject(object rejection)
++        {
++            if (rejection != null) CommandRejected?.Invoke(rejection);
++        }
+     }
+ }
+diff --git a/Game/Assets/Janseon/Foundation/UI/IPocCoreLoopSession.cs b/Game/Assets/Janseon/Foundation/UI/IPocCoreLoopSession.cs
+index a327f96..304156e 100644
+--- a/Game/Assets/Janseon/Foundation/UI/IPocCoreLoopSession.cs
++++ b/Game/Assets/Janseon/Foundation/UI/IPocCoreLoopSession.cs
+@@ -14,6 +14,8 @@ namespace Janseon.Foundation.UI
+         CampaignState Campaign { get; }
+         BattleSimState Battle { get; }
+         Ledger CampaignLedger { get; }
++        Ledger BattleLedger { get; }
++        bool BattlePaused { get; }
+         SettlementBook Book { get; }
+         SettlementReceipt LastReceipt { get; }
+         SettlementReceipt LastDuplicateReceipt { get; }
+diff --git a/Game/Assets/Janseon/Foundation/UI/PocCoreLoopController.cs b/Game/Assets/Janseon/Foundation/UI/PocCoreLoopController.cs
+index 63438d1..3fa5d0a 100644
+--- a/Game/Assets/Janseon/Foundation/UI/PocCoreLoopController.cs
++++ b/Game/Assets/Janseon/Foundation/UI/PocCoreLoopController.cs
+@@ -4,6 +4,7 @@ using Janseon.Core;
+ using Janseon.Core.Battle.Contracts;
+ using Janseon.Core.Battle.Sim;
+ using Janseon.Foundation.AppFlow;
++using Janseon.Foundation.Battle;
+ using Janseon.Foundation.Composition;
+ using Janseon.Foundation.Presentation;
+ using UnityEngine;
+@@ -23,6 +24,7 @@ namespace Janseon.Foundation.UI
+         readonly GameplayPresenter presenter;
+         readonly GameplayUiHost host;
+         readonly ApplicationFlowCoordinator coordinator;
++        readonly BattleSessionDriver battleDriver;
+ 
+         RouteGraph graph;
+         CampaignState campaign;
+@@ -38,16 +40,20 @@ namespace Janseon.Foundation.UI
+         public PocCoreLoopController(
+             GameplayPresenter presenter,
+             GameplayUiHost host,
+-            ApplicationFlowCoordinator coordinator)
++            ApplicationFlowCoordinator coordinator,
++            BattleSessionDriver battleDriver)
+         {
+             this.presenter = presenter ?? throw new ArgumentNullException(nameof(presenter));
+             this.host = host ?? throw new ArgumentNullException(nameof(host));
+             this.coordinator = coordinator ?? throw new ArgumentNullException(nameof(coordinator));
++            this.battleDriver = battleDriver ?? throw new ArgumentNullException(nameof(battleDriver));
+         }
+ 
+         public CampaignState Campaign => campaign;
+         public BattleSimState Battle => battle;
+         public Ledger CampaignLedger => campaignLedger;
++        public Ledger BattleLedger => battleLedger;
++        public bool BattlePaused => battleDriver.Paused;
+         public SettlementBook Book => book;
+         public SettlementReceipt LastReceipt { get; private set; }
+         public SettlementReceipt LastDuplicateReceipt { get; private set; }
+@@ -74,6 +80,8 @@ namespace Janseon.Foundation.UI
+             }
+ 
+             host.AttachLoop(this);
++            battleDriver.CommandRejected += OnDriverCommandRejected;
++            battleDriver.StateAdvanced += OnBattleStateAdvanced;
+             WirePresenter();
+             BeginNewRun(DefaultSeed, DefaultCampaignId);
+             EnsureVoxelWorld();
+@@ -90,6 +98,9 @@ namespace Janseon.Foundation.UI
+ 
+             disposed = true;
+             UnwirePresenter();
++            battleDriver.CommandRejected -= OnDriverCommandRejected;
++            battleDriver.StateAdvanced -= OnBattleStateAdvanced;
++            battleDriver.Detach();
+             if (voxelWorld != null)
+             {
+                 UnityEngine.Object.Destroy(voxelWorld.gameObject);
+@@ -105,6 +116,7 @@ namespace Janseon.Foundation.UI
+             battleLedger = new Ledger();
+             book = new SettlementBook();
+             battle = null;
++            battleDriver.Detach();
+             LastReceipt = null;
+             LastDuplicateReceipt = null;
+             LastSettledResult = null;
+@@ -257,17 +269,20 @@ namespace Janseon.Foundation.UI
+                 {
+                     campaign = next;
+                     battleLedger = new Ledger();
+-                    battle = BattleSim.Open(BattleSetup.FromContext(required.Context));
++                    var setup = BattleSetup.FromContext(required.Context);
++                    battle = BattleSim.Open(setup);
++                    battleDriver.Attach(battle, battleLedger);
+                     var deploy = new BattleTickCommand
+                     {
+                         Id = NextCommandId("deploy"),
+                         Seq = commandSeq,
+                         At = new Tick(battle.Tick),
+                         Kind = BattleTickCommandKind.Deploy,
+-                        Formation = BattleSetup.FromContext(required.Context).PlayerFormation,
++                        Formation = setup.PlayerFormation,
+                     };
+-                    object deployed = BattleSim.Submit(battle, battleLedger, deploy);
+-                    if (deployed != null) { Reject(deployed); return; }
++                    battleDriver.Enqueue(deploy);
++                    battleDriver.SubmitCurrentCommands();
++                    if (LastRejection is BattleRejection) return;
+                     LastRejection = null;
+                     Publish();
+                     return;
+@@ -285,7 +300,7 @@ namespace Janseon.Foundation.UI
+             for (var i = 0; i < battle.Units.Length; i++)
+                 if (battle.Units[i].Id.Equals(battle.PlayerCommanderId)) { commander = battle.Units[i]; break; }
+             if (commander == null) return;
+-            object result = BattleSim.Submit(battle, battleLedger, new BattleTickCommand
++            var command = new BattleTickCommand
+             {
+                 Id = NextCommandId("mobility-regroup"),
+                 Seq = commandSeq,
+@@ -294,8 +309,10 @@ namespace Janseon.Foundation.UI
+                 CardId = "mobility-regroup",
+                 Target = commander.Cell,
+                 Facing = CardinalDirection.South,
+-            });
+-            if (result != null) { Reject(result); return; }
++            };
++            battleDriver.Enqueue(command);
++            battleDriver.SubmitCurrentCommands();
++            if (LastRejection is BattleRejection) return;
+             LastRejection = null;
+             Publish();
+         }
+@@ -305,8 +322,9 @@ namespace Janseon.Foundation.UI
+             LastClickedAction = UiElementNames.BattleAdvance;
+             if (battle == null || battle.Outcome != BattleOutcomeKind.Ongoing)
+             { Reject(new BattleRejection { Reason = BattleRejectReason.BattleEnded }); return; }
+-            for (var i = 0; i < 8 && battle.Outcome == BattleOutcomeKind.Ongoing; i++) BattleSim.Step(battle, battleLedger);
+-            commandSeq++; LastRejection = null; Publish();
++            battleDriver.Paused = !battleDriver.Paused;
++            LastRejection = null;
++            Publish();
+         }
+ 
+         void OnSettle()
+@@ -319,7 +337,7 @@ namespace Janseon.Foundation.UI
+             else if (campaign.Stage == CampaignStage.Settlement && campaign.Choice != EncounterChoice.None && campaign.Choice != EncounterChoice.Combat && !campaign.SettlementApplied) resultPayload = SettlementApi.FromNonCombat(campaign);
+             if (resultPayload == null) { Reject(new SettlementRejection(SettlementRejectReason.MissingResolution, campaign.Stage, default)); return; }
+             object applied = SettlementApi.Apply(campaign, campaignLedger, book, resultPayload);
+-            if (applied is SettlementSuccess success) { campaign = success.State; LastReceipt = success.Receipt; LastSettledResult = CloneResult(resultPayload); LastDuplicateReceipt = null; LastRejection = null; battle = null; Publish(); return; }
++            if (applied is SettlementSuccess success) { campaign = success.State; LastReceipt = success.Receipt; LastSettledResult = CloneResult(resultPayload); LastDuplicateReceipt = null; LastRejection = null; battleDriver.Detach(); battle = null; Publish(); return; }
+             if (applied is SettlementReceipt duplicate) { LastDuplicateReceipt = duplicate; LastRejection = null; Publish(); return; }
+             Reject(applied);
+         }
+@@ -361,6 +379,13 @@ namespace Janseon.Foundation.UI
+             StateChanged?.Invoke();
+         }
+ 
++        void OnDriverCommandRejected(object rejection) => Reject(rejection);
++
++        void OnBattleStateAdvanced()
++        {
++            if (battle != null) Publish();
++        }
++
+         static string FormatWhy(object rejection)
+         {
+             switch (rejection)
+diff --git a/Game/Assets/Tests/EditMode/BattleSessionDriverTests.cs b/Game/Assets/Tests/EditMode/BattleSessionDriverTests.cs
+index 0e491c9..9b10b2b 100644
+--- a/Game/Assets/Tests/EditMode/BattleSessionDriverTests.cs
++++ b/Game/Assets/Tests/EditMode/BattleSessionDriverTests.cs
+@@ -225,5 +225,68 @@ namespace Janseon.Foundation.Tests
+             Assert.That(state.Tick, Is.EqualTo(7));
+             Assert.That(state.Outcome, Is.EqualTo(BattleOutcomeKind.Ongoing));
+         }
++
++        [Test]
++        public void StaleEnqueue_IsRejectedWithoutBlockingTheNextDueCommand()
++        {
++            var clock = new ManualClock();
++            var setup = Setup();
++            var state = BattleSim.Open(setup);
++            var ledger = new Ledger();
++            var driver = new BattleSessionDriver(clock.Read);
++            var rejections = 0;
++            driver.CommandRejected += _ => rejections++;
++            driver.Attach(state, ledger);
++            driver.Enqueue(new BattleTickCommand
++            {
++                Id = new CommandId("deploy"), Seq = 0, At = new Tick(0),
++                Kind = BattleTickCommandKind.Deploy, Formation = setup.PlayerFormation,
++            });
++            clock.Now += Interval;
++            driver.Tick();
++
++            driver.Enqueue(new BattleTickCommand
++            {
++                Id = new CommandId("future-facing"), Seq = 2, At = new Tick(2),
++                Kind = BattleTickCommandKind.SetFacing,
++                Target = new GridCoord(0, 2), Facing = CardinalDirection.North,
++            });
++            driver.Enqueue(new BattleTickCommand
++            {
++                Id = new CommandId("stale-facing"), Seq = 1, At = new Tick(0),
++                Kind = BattleTickCommandKind.SetFacing,
++                Target = new GridCoord(0, 2), Facing = CardinalDirection.South,
++            });
++            for (var i = 0; i < 2; i++)
++            {
++                clock.Now += Interval;
++                driver.Tick();
++            }
++
++            Assert.That(rejections, Is.EqualTo(1), "the stale command must be rejected exactly once");
++            Assert.That(state.Units[0].Facing, Is.EqualTo(CardinalDirection.North),
++                "the stale insertion must not strand the next due command behind the consumed cursor");
++        }
++
++        [Test]
++        public void TerminalStep_StopsWithinTheFrame_AndDetachesTheSession()
++        {
++            var clock = new ManualClock();
++            var state = BattleSim.Open(Setup());
++            var ledger = new Ledger();
++            var driver = new BattleSessionDriver(clock.Read);
++            driver.Attach(state, ledger);
++            for (var i = 0; i < state.Units.Length; i++)
++                if (state.Units[i].Side == 1) state.Units[i].Hp = 0;
++
++            clock.Now += 4 * Interval;
++            driver.Tick();
++
++            Assert.That(state.Outcome, Is.EqualTo(BattleOutcomeKind.PlayerVictory));
++            Assert.That(driver.TotalSteps, Is.EqualTo(1),
++                "the frame must not count no-op Steps after the first terminal Step");
++            Assert.That(driver.State, Is.Null, "terminal sessions must detach from the live pump");
++            Assert.That(driver.Ledger, Is.Null);
++        }
+     }
+ }
+diff --git a/Game/Assets/Tests/PlayMode/BattleSessionDriverPlayModeTests.cs b/Game/Assets/Tests/PlayMode/BattleSessionDriverPlayModeTests.cs
+index a55a3d7..a11f690 100644
+--- a/Game/Assets/Tests/PlayMode/BattleSessionDriverPlayModeTests.cs
++++ b/Game/Assets/Tests/PlayMode/BattleSessionDriverPlayModeTests.cs
+@@ -7,6 +7,7 @@ using Janseon.Core.Battle.Sim;
+ using Janseon.Foundation.AppFlow;
+ using Janseon.Foundation.Battle;
+ using Janseon.Foundation.Composition;
++using Janseon.Foundation.UI;
+ using NUnit.Framework;
+ using UnityEngine;
+ using UnityEngine.SceneManagement;
+@@ -23,7 +24,7 @@ namespace Janseon.Foundation.Tests
+     public sealed class BattleSessionDriverPlayModeTests
+     {
+         [Test]
+-        public async Task FoundationScope_ResolvesDriver_PlayerLoopPump_ReplaysIdentically()
++        public async Task ProductionCoreLoop_DriverOwnsLiveBattleLifecycle_EndToEnd()
+         {
+             await UnloadContentScenesAsync();
+ 
+@@ -53,55 +54,158 @@ namespace Janseon.Foundation.Tests
+             Assert.That(driver, Is.InstanceOf<VContainer.Unity.ITickable>(), "driver must be a VContainer entry point");
+             Assert.That(driver.Paused, Is.False, "driver must start unpaused");
+ 
+-            BattleSetup setup = BattleSetup.FromContext(BattleContext.Create(
+-                "campaign",
+-                default(StationId),
+-                314159,
+-                new Tick(0),
+-                0,
+-                0,
+-                BattleRules.RulesVersion,
+-                "rtfc-d1-playmode",
+-                UnitHpSnapshot.DefaultParty()));
+-            BattleTickCommand[] schedule =
++            GameplayUiHost host = UnityEngine.Object.FindAnyObjectByType<GameplayUiHost>();
++            Assert.That(host, Is.Not.Null, "production GameplayUiHost missing");
++            await AwaitTask(host.CoreLoopReady, TimeSpan.FromSeconds(10), "production core-loop attach");
++            IPocCoreLoopSession session = host.CoreLoop;
++            Assert.That(session, Is.Not.Null);
++
++            await TriggerAndAwait(session, host.Presenter.TriggerDepartForTest,
++                s => s.Campaign.Stage == CampaignStage.ExpeditionTravel, "depart");
++            await TriggerAndAwait(session, () => host.Presenter.TriggerTravelForTest(StationId.Sindorim),
++                s => s.Campaign.Node.Equals(StationId.Sindorim), "travel");
++            await TriggerAndAwait(session, host.Presenter.TriggerFaceEncounterForTest,
++                s => s.Campaign.Stage == CampaignStage.Encounter, "face encounter");
++            await TriggerAndAwait(session, host.Presenter.TriggerEnterResolutionForTest,
++                s => s.Campaign.Stage == CampaignStage.Resolution, "enter resolution");
++            await TriggerAndAwait(session, host.Presenter.TriggerCombatForTest,
++                s => s.Battle != null && s.Battle.Deployed, "open production battle");
++
++            Assert.That(driver.State, Is.SameAs(session.Battle),
++                "production controller must attach the actual campaign battle to the scoped driver");
++            Assert.That(driver.Ledger, Is.SameAs(session.BattleLedger));
++            BattleSetup setup = BattleSetup.FromContext(session.Battle.Context);
++            var schedule = new System.Collections.Generic.List<BattleTickCommand>
+             {
+                 new BattleTickCommand
+                 {
+-                    Id = new CommandId("pm-deploy"), Seq = 0, At = new Tick(0),
++                    Id = new CommandId("poc-deploy-7"), Seq = 7, At = new Tick(0),
+                     Kind = BattleTickCommandKind.Deploy, Formation = setup.PlayerFormation,
+                 },
+             };
+-            BattleSimState state = BattleSim.Open(setup);
+-            Ledger ledger = new Ledger();
+-            driver.Attach(state, ledger);
+-            foreach (BattleTickCommand command in schedule) driver.Enqueue(command);
+-
+-            // Player-loop pump: bounded wait to 60 ticks at 30 Hz (~2s wall). No fixed
+-            // sleeps; the loop exits on the exact state change or the deadline fails it.
+-            float pumpDeadline = Time.realtimeSinceStartup + 20f;
+-            while (state.Tick < 60 && Time.realtimeSinceStartup < pumpDeadline) await Task.Yield();
+-
+-            Assert.That(state.Tick, Is.GreaterThanOrEqualTo(60), "player loop must pump the driver to 60 ticks");
+-            Assert.That(state.Tick, Is.LessThanOrEqualTo(60 + BattleSessionDriver.MaxStepsPerFrame),
+-                "per-frame clamp must bound the overshoot past the wait horizon");
+-
+-            driver.Paused = true;
+-            long stepsAtPause = driver.TotalSteps;
+-            float pauseDeadline = Time.realtimeSinceStartup + 1.5f;
+-            while (Time.realtimeSinceStartup < pauseDeadline) await Task.Yield();
+-            Assert.That(driver.TotalSteps, Is.EqualTo(stepsAtPause), "pause must freeze the live pump");
+-
+-            var (directState, directLedger) = BattleSim.Replay(setup, schedule, state.Tick);
+-            Assert.That(state.Fingerprint(), Is.EqualTo(directState.Fingerprint()),
+-                "live driver run must replay identically to direct Core replay");
+-            Assert.That(BattleSim.Result(state).ResultHash,
+-                Is.EqualTo(BattleSim.Result(directState).ResultHash));
+-            Assert.That(LedgerSignatures(ledger), Is.EqualTo(LedgerSignatures(directLedger)),
+-                "ledger event ids, order, and summary hashes must match the direct replay");
++
++            await TriggerAndAwait(session, host.Presenter.TriggerBattleAdvanceForTest,
++                s => s.BattlePaused, "pause live battle");
++            int pausedTick = session.Battle.Tick;
++            string pausedHash = session.BattleHash;
++            long pausedSteps = driver.TotalSteps;
++
++            UnitState commander = Array.Find(session.Battle.Units,
++                unit => unit.Id.Equals(session.Battle.PlayerCommanderId));
++            Assert.That(commander, Is.Not.Null);
++            GridCoord beforeCard = commander.Cell;
++            int commandTick = session.Battle.Tick;
++            await TriggerAndAwait(session, host.Presenter.TriggerMobilityRegroupForTest,
++                s => commander.Cell.Equals(beforeCard.Step(CardinalDirection.South)),
++                "accept card while paused");
++            schedule.Add(new BattleTickCommand
++            {
++                Id = new CommandId("poc-mobility-regroup-8"), Seq = 8, At = new Tick(commandTick),
++                Kind = BattleTickCommandKind.PlayCard, CardId = "mobility-regroup",
++                Target = beforeCard, Facing = CardinalDirection.South,
++            });
++            Assert.That(session.Battle.Tick, Is.EqualTo(pausedTick), "paused command must not advance ticks");
++
++            await AwaitProcessedFrames(driver, 5, "paused player-loop frames");
++            Assert.That(driver.TotalSteps, Is.EqualTo(pausedSteps), "pause must freeze production ticks");
++            Assert.That(session.Battle.Tick, Is.EqualTo(pausedTick));
++            Assert.That(session.BattleHash, Is.Not.EqualTo(pausedHash),
++                "the accepted card mutates battle state while the tick timeline remains frozen");
++
++            Task<int> liveFrame = WaitForSteppedFrame(driver, TimeSpan.FromSeconds(8));
++            await TriggerAndAwait(session, host.Presenter.TriggerBattleAdvanceForTest,
++                s => !s.BattlePaused, "resume live battle");
++            int liveSteps = await liveFrame;
++            Assert.That(liveSteps, Is.InRange(1, BattleSessionDriver.MaxStepsPerFrame),
++                "production player-loop consumption must stay within the max-4 frame budget");
++
++            await WaitUntil(session,
++                s => s.Battle != null && s.Battle.Outcome != BattleOutcomeKind.Ongoing,
++                TimeSpan.FromSeconds(60), "terminal production battle");
++            BattleSimState terminal = session.Battle;
++            Ledger terminalLedger = session.BattleLedger;
++            Assert.That(driver.State, Is.Null, "terminal battle must detach from the scoped driver");
++            Assert.That(driver.Ledger, Is.Null);
++            long terminalSteps = driver.TotalSteps;
++
++            var (replayState, replayLedger) = BattleSim.Replay(setup, schedule, terminal.Tick);
++            Assert.That(terminal.Fingerprint(), Is.EqualTo(replayState.Fingerprint()),
++                "production battle must replay deterministically from its real command schedule");
++            Assert.That(LedgerSignatures(terminalLedger), Is.EqualTo(LedgerSignatures(replayLedger)));
++
++            await TriggerAndAwait(session, host.Presenter.TriggerSettleForTest,
++                s => s.Campaign.SettlementApplied && s.Battle == null, "settle terminal battle");
++            await TriggerAndAwait(session, host.Presenter.TriggerReturnForTest,
++                s => s.Campaign.Stage == CampaignStage.BaseReady, "return to base");
++            await AwaitProcessedFrames(driver, 3, "post-return player-loop frames");
++            Assert.That(driver.TotalSteps, Is.EqualTo(terminalSteps),
++                "terminal/return must not revive the old battle session");
+ 
+             await UnloadContentScenesAsync();
+         }
+ 
++        static async Task TriggerAndAwait(
++            IPocCoreLoopSession session,
++            Action trigger,
++            Func<IPocCoreLoopSession, bool> predicate,
++            string label)
++        {
++            var changed = new TaskCompletionSource<bool>(TaskCreationOptions.RunContinuationsAsynchronously);
++            void OnChanged() { session.StateChanged -= OnChanged; changed.TrySetResult(true); }
++            session.StateChanged += OnChanged;
++            trigger();
++            await AwaitTask(changed.Task, TimeSpan.FromSeconds(8), label);
++            Assert.That(predicate(session), Is.True, "production state predicate failed after " + label);
++        }
++
++        static async Task WaitUntil(
++            IPocCoreLoopSession session,
++            Func<IPocCoreLoopSession, bool> predicate,
++            TimeSpan timeout,
++            string label)
++        {
++            if (predicate(session)) return;
++            var changed = new TaskCompletionSource<bool>(TaskCreationOptions.RunContinuationsAsynchronously);
++            void OnChanged()
++            {
++                if (!predicate(session)) return;
++                session.StateChanged -= OnChanged;
++                changed.TrySetResult(true);
++            }
++            session.StateChanged += OnChanged;
++            try { await AwaitTask(changed.Task, timeout, label); }
++            finally { session.StateChanged -= OnChanged; }
++        }
++
++        static async Task AwaitProcessedFrames(BattleSessionDriver driver, int count, string label)
++        {
++            var processed = new TaskCompletionSource<bool>(TaskCreationOptions.RunContinuationsAsynchronously);
++            var remaining = count;
++            void OnFrame(int _)
++            {
++                if (--remaining > 0) return;
++                driver.FrameProcessed -= OnFrame;
++                processed.TrySetResult(true);
++            }
++            driver.FrameProcessed += OnFrame;
++            try { await AwaitTask(processed.Task, TimeSpan.FromSeconds(8), label); }
++            finally { driver.FrameProcessed -= OnFrame; }
++        }
++
++        static async Task<int> WaitForSteppedFrame(BattleSessionDriver driver, TimeSpan timeout)
++        {
++            var processed = new TaskCompletionSource<int>(TaskCreationOptions.RunContinuationsAsynchronously);
++            void OnFrame(int steps)
++            {
++                if (steps <= 0) return;
++                driver.FrameProcessed -= OnFrame;
++                processed.TrySetResult(steps);
++            }
++            driver.FrameProcessed += OnFrame;
++            try { return await AwaitTaskResult(processed.Task, timeout, "stepped production frame"); }
++            finally { driver.FrameProcessed -= OnFrame; }
++        }
++
+         static string[] LedgerSignatures(Ledger ledger)
+         {
+             var signatures = new string[ledger.Events.Count];
+diff --git a/Game/Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs b/Game/Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs
+index 3ffb725..0572d38 100644
+--- a/Game/Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs
++++ b/Game/Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs
+@@ -266,8 +266,10 @@ namespace Janseon.Foundation.Tests
+             });
+             int beforeCooldown = session.Battle.Cards.First(c => c.Id == "mobility-regroup").RechargeTicksLeft;
+             await ClickAndAwait(session, root, BattleAdvance, s =>
+-                s.Battle.Cards.First(c => c.Id == "mobility-regroup").RechargeTicksLeft < beforeCooldown);
+-            Assert.That(session.Battle.Cards.First(c => c.Id == "mobility-regroup").RechargeTicksLeft, Is.EqualTo(592));
++                s.BattlePaused);
++            Assert.That(session.Battle.Cards.First(c => c.Id == "mobility-regroup").RechargeTicksLeft,
++                Is.LessThanOrEqualTo(beforeCooldown));
++            await ClickAndAwait(session, root, BattleAdvance, s => !s.BattlePaused);
+ 
+             await UguiKeyboardPlayModeHelper.FinishCombatKeyboard(session, root);
+             SettlementReceipt receipt = session.LastReceipt;
+diff --git a/Game/Assets/Tests/PlayMode/UguiKeyboardPlayModeHelper.cs b/Game/Assets/Tests/PlayMode/UguiKeyboardPlayModeHelper.cs
+index 3ff2a92..d2ce355 100644
+--- a/Game/Assets/Tests/PlayMode/UguiKeyboardPlayModeHelper.cs
++++ b/Game/Assets/Tests/PlayMode/UguiKeyboardPlayModeHelper.cs
+@@ -71,33 +71,9 @@ namespace Janseon.Foundation.Tests
+             Assert.That(session.Battle.Outcome, Is.EqualTo(BattleOutcomeKind.Ongoing));
+             AssertSettleUnavailableDuringOngoing(session, root);
+ 
+-            await EnterNamedAndAwaitAsync(
+-                session,
+-                root,
+-                UiElementNames.BattleAdvance,
+-                s => s.Battle != null && (s.Battle.Tick > 0 || s.Battle.Outcome != BattleOutcomeKind.Ongoing));
+-
+-            var commands = 1;
+-            while (session.Battle != null
+-                   && session.Battle.Outcome == BattleOutcomeKind.Ongoing
+-                   && commands < 1200)
+-            {
+-                int beforeTick = session.Battle.Tick;
+-                string beforeHash = session.BattleHash;
+-                await EnterNamedAndAwaitAsync(
+-                    session,
+-                    root,
+-                    UiElementNames.BattleAdvance,
+-                    s => s.Battle != null
+-                         && (s.Battle.Tick != beforeTick
+-                             || s.BattleHash != beforeHash
+-                             || s.Battle.Outcome != BattleOutcomeKind.Ongoing));
+-                commands++;
+-                if (session.Battle.Outcome == BattleOutcomeKind.Ongoing)
+-                    AssertSettleUnavailableDuringOngoing(session, root);
+-            }
+-
+-            Assert.That(commands, Is.LessThan(1200), "realtime combat exceeded the bounded command cap");
++            await WaitUntil(session,
++                s => s.Battle != null && s.Battle.Outcome != BattleOutcomeKind.Ongoing,
++                "automatic realtime battle terminal outcome");
+             BattleOutcomeKind outcome = session.Battle.Outcome;
+             Assert.That(outcome, Is.Not.EqualTo(BattleOutcomeKind.Ongoing));
+             await EnterNamedAndAwaitAsync(
+@@ -108,6 +84,30 @@ namespace Janseon.Foundation.Tests
+             return outcome;
+         }
+ 
++        static async Task WaitUntil(
++            IPocCoreLoopSession session,
++            Func<IPocCoreLoopSession, bool> predicate,
++            string label)
++        {
++            if (predicate(session)) return;
++            var completion = new TaskCompletionSource<bool>(TaskCreationOptions.RunContinuationsAsynchronously);
++            void Handler()
++            {
++                if (!predicate(session)) return;
++                session.StateChanged -= Handler;
++                completion.TrySetResult(true);
++            }
++            session.StateChanged += Handler;
++            try
++            {
++                await AwaitSignal(completion.Task, label, TimeSpan.FromSeconds(60));
++            }
++            finally
++            {
++                session.StateChanged -= Handler;
++            }
++        }
++
+         static GameObject MoveSelection(Transform root, bool reverse)
+         {
+             EventSystem eventSystem = RequireEventSystem();
+@@ -152,9 +152,9 @@ namespace Janseon.Foundation.Tests
+             return completion.Task;
+         }
+ 
+-        static async Task AwaitSignal(Task signal, string label)
++        static async Task AwaitSignal(Task signal, string label, TimeSpan? timeout = null)
+         {
+-            Task winner = await Task.WhenAny(signal, Task.Delay(SignalTimeout));
++            Task winner = await Task.WhenAny(signal, Task.Delay(timeout ?? SignalTimeout));
+             Assert.That(winner, Is.SameAs(signal), "Timed out waiting for " + label);
+             await signal;
+         }
