@@ -3,6 +3,7 @@ using System.Globalization;
 using Janseon.Core;
 using Janseon.Core.Battle.Contracts;
 using Janseon.Core.Battle.Sim;
+using Janseon.Foundation.AppFlow;
 using Janseon.Foundation.Composition;
 using Janseon.Foundation.Presentation;
 using UnityEngine;
@@ -21,6 +22,7 @@ namespace Janseon.Foundation.UI
 
         readonly GameplayPresenter presenter;
         readonly GameplayUiHost host;
+        readonly ApplicationFlowCoordinator coordinator;
 
         RouteGraph graph;
         CampaignState campaign;
@@ -31,12 +33,16 @@ namespace Janseon.Foundation.UI
         int commandSeq;
         bool wired;
         bool disposed;
-        PlaceholderVoxelWorld voxelWorld;
+        HeightmapVoxelWorld voxelWorld;
 
-        public PocCoreLoopController(GameplayPresenter presenter, GameplayUiHost host)
+        public PocCoreLoopController(
+            GameplayPresenter presenter,
+            GameplayUiHost host,
+            ApplicationFlowCoordinator coordinator)
         {
             this.presenter = presenter ?? throw new ArgumentNullException(nameof(presenter));
             this.host = host ?? throw new ArgumentNullException(nameof(host));
+            this.coordinator = coordinator ?? throw new ArgumentNullException(nameof(coordinator));
         }
 
         public CampaignState Campaign => campaign;
@@ -69,8 +75,9 @@ namespace Janseon.Foundation.UI
 
             host.AttachLoop(this);
             WirePresenter();
-            EnsureVoxelWorld();
             BeginNewRun(DefaultSeed, DefaultCampaignId);
+            EnsureVoxelWorld();
+            voxelWorld?.SyncActor(campaign.Node);
             IsReady = true;
         }
 
@@ -104,7 +111,11 @@ namespace Janseon.Foundation.UI
             LastRejection = null;
             LastClickedAction = string.Empty;
             commandSeq = 0;
-            campaign = CampaignApi.Start(seed, StationId.Yeongdeungpo, campaignId);
+            campaign = CampaignApi.StartNewGame(
+                seed,
+                StationId.Yeongdeungpo,
+                campaignId,
+                coordinator.SelectedStartingPreset);
             voxelWorld?.SyncActor(campaign.Node);
             Publish();
         }
@@ -118,12 +129,14 @@ namespace Janseon.Foundation.UI
 
             presenter.DepartChosen += OnDepart;
             presenter.TravelChosen += OnTravel;
+            presenter.DeploymentParticipationChosen += OnDeploymentParticipation;
             presenter.FaceEncounterChosen += OnFace;
             presenter.EnterResolutionChosen += OnEnterResolution;
             presenter.NegotiateChosen += OnNegotiate;
             presenter.BypassChosen += OnBypass;
             presenter.CombatChosen += OnCombat;
             presenter.BattleAdvanceChosen += OnBattleAdvance;
+            presenter.MobilityRegroupChosen += OnMobilityRegroup;
             presenter.SettleChosen += OnSettle;
             presenter.ReturnChosen += OnReturn;
             wired = true;
@@ -138,12 +151,14 @@ namespace Janseon.Foundation.UI
 
             presenter.DepartChosen -= OnDepart;
             presenter.TravelChosen -= OnTravel;
+            presenter.DeploymentParticipationChosen -= OnDeploymentParticipation;
             presenter.FaceEncounterChosen -= OnFace;
             presenter.EnterResolutionChosen -= OnEnterResolution;
             presenter.NegotiateChosen -= OnNegotiate;
             presenter.BypassChosen -= OnBypass;
             presenter.CombatChosen -= OnCombat;
             presenter.BattleAdvanceChosen -= OnBattleAdvance;
+            presenter.MobilityRegroupChosen -= OnMobilityRegroup;
             presenter.SettleChosen -= OnSettle;
             presenter.ReturnChosen -= OnReturn;
             wired = false;
@@ -168,6 +183,26 @@ namespace Janseon.Foundation.UI
                 Kind = CampaignCommandKind.Travel,
                 TravelDestination = destination,
             });
+        }
+
+        void OnDeploymentParticipation(int rosterIndex, bool participating)
+        {
+            LastClickedAction = UiElementNames.DeployToggle(rosterIndex);
+            if (campaign == null || rosterIndex < 0 || rosterIndex >= campaign.PartyMemberCount) return;
+            object result = CampaignApi.SetDeploymentParticipation(
+                campaign,
+                DeploymentApi.UnitId(rosterIndex),
+                participating,
+                explicitWoundedOverride: false);
+            if (result is CampaignState next)
+            {
+                campaign = next;
+                LastRejection = null;
+                Publish();
+                return;
+            }
+            Reject(result);
+            Publish();
         }
 
         void OnFace()
@@ -220,11 +255,49 @@ namespace Janseon.Foundation.UI
                 object attached = CampaignApi.AttachPendingBattle(campaign, campaignLedger, required.Context, NextCommandId("attach"));
                 if (attached is CampaignState next)
                 {
-                    campaign = next; battleLedger = new Ledger(); battle = BattleSim.Open(BattleSetup.FromContext(required.Context)); LastRejection = null; Publish(); return;
+                    campaign = next;
+                    battleLedger = new Ledger();
+                    battle = BattleSim.Open(BattleSetup.FromContext(required.Context));
+                    var deploy = new BattleTickCommand
+                    {
+                        Id = NextCommandId("deploy"),
+                        Seq = commandSeq,
+                        At = new Tick(battle.Tick),
+                        Kind = BattleTickCommandKind.Deploy,
+                        Formation = BattleSetup.FromContext(required.Context).PlayerFormation,
+                    };
+                    object deployed = BattleSim.Submit(battle, battleLedger, deploy);
+                    if (deployed != null) { Reject(deployed); return; }
+                    LastRejection = null;
+                    Publish();
+                    return;
                 }
                 Reject(attached); return;
             }
             Reject(result);
+        }
+
+        void OnMobilityRegroup()
+        {
+            LastClickedAction = UiElementNames.MobilityRegroup;
+            if (battle == null) return;
+            UnitState commander = null;
+            for (var i = 0; i < battle.Units.Length; i++)
+                if (battle.Units[i].Id.Equals(battle.PlayerCommanderId)) { commander = battle.Units[i]; break; }
+            if (commander == null) return;
+            object result = BattleSim.Submit(battle, battleLedger, new BattleTickCommand
+            {
+                Id = NextCommandId("mobility-regroup"),
+                Seq = commandSeq,
+                At = new Tick(battle.Tick),
+                Kind = BattleTickCommandKind.PlayCard,
+                CardId = "mobility-regroup",
+                Target = commander.Cell,
+                Facing = CardinalDirection.South,
+            });
+            if (result != null) { Reject(result); return; }
+            LastRejection = null;
+            Publish();
         }
 
         void OnBattleAdvance()
@@ -283,8 +356,26 @@ namespace Janseon.Foundation.UI
         void Reject(object rejection)
         {
             LastRejection = rejection;
+            host.ApplyWhy(FormatWhy(rejection));
             CommandRejected?.Invoke(rejection);
             StateChanged?.Invoke();
+        }
+
+        static string FormatWhy(object rejection)
+        {
+            switch (rejection)
+            {
+                case BattleRejection battleRejection:
+                    return "왜 불가: " + battleRejection.Reason;
+                case CampaignRejection campaignRejection:
+                    return "왜 불가: " + campaignRejection.Reason + " · 단계 " + campaignRejection.Stage;
+                case SettlementRejection settlementRejection:
+                    return "왜 불가: " + settlementRejection.Reason;
+                case DeploymentRejection deploymentRejection:
+                    return "왜 불가: " + deploymentRejection.Reason + " · " + deploymentRejection.UnitId;
+                default:
+                    return rejection == null ? string.Empty : rejection.ToString();
+            }
         }
 
         void Publish()
@@ -304,8 +395,12 @@ namespace Janseon.Foundation.UI
                 return;
             }
 
-            Camera camera = Camera.main;
-            voxelWorld = PlaceholderVoxelWorld.Create(null, camera);
+            Camera camera = host != null ? host.StationCamera : null;
+            if (camera == null) camera = Camera.main;
+            if (camera == null) throw new InvalidOperationException("Foundation Main Camera missing.");
+            LayerId layer = campaign != null && campaign.Node.Equals(StationId.Sindorim) ? LayerId.B2 : LayerId.B1;
+            voxelWorld = HeightmapVoxelWorld.Create(null, camera, campaign != null ? campaign.Seed : DefaultSeed, layer);
+            voxelWorld.PlaceStationProps(host != null ? host.StationPropsRoot : null);
         }
 
         CommandId NextCommandId(string kind)
@@ -328,6 +423,7 @@ namespace Janseon.Foundation.UI
                 BattleId = source.BattleId,
                 Outcome = source.Outcome,
                 ResultHash = source.ResultHash,
+                UnitHp = source.UnitHp,
             };
         }
 

@@ -19,6 +19,8 @@ namespace Janseon.Foundation.UI
             ".omo/evidence/",
             ".omo/evidence\\",
             ".omo/",
+            "docs/verification/",
+            "Game/Logs/",
         };
 
         public static string Compute(string repoRoot)
@@ -41,7 +43,7 @@ namespace Janseon.Foundation.UI
                     }
 
                     string path = ExtractPath(line);
-                    if (IsEvidencePath(path))
+                    if (IsGeneratedDirectoryMeta(repoRoot, path) || IsEvidencePath(path))
                     {
                         continue;
                     }
@@ -77,6 +79,17 @@ namespace Janseon.Foundation.UI
             }
 
             return Sha256Hex(Encoding.UTF8.GetBytes(sb.ToString()));
+        }
+
+        static bool IsGeneratedDirectoryMeta(string repoRoot, string path)
+        {
+            if (string.IsNullOrEmpty(path) || !path.EndsWith(".meta", StringComparison.Ordinal))
+            {
+                return false;
+            }
+
+            string assetPath = path.Substring(0, path.Length - 5);
+            return Directory.Exists(Path.Combine(repoRoot, assetPath.Replace('/', Path.DirectorySeparatorChar)));
         }
 
         public static bool IsEvidencePath(string path)

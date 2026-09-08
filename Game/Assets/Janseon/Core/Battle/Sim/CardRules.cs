@@ -13,6 +13,7 @@ namespace Janseon.Core.Battle.Sim
                 new CardDefinition { Id="guard-shieldwall", Kind=CardKind.Character, RechargeTicks=300, Effect=-3, EffectKey="front_damage" },
                 new CardDefinition { Id="encourage-morale", Kind=CardKind.Character, RechargeTicks=600, Effect=10, EffectKey="morale" },
                 new CardDefinition { Id="pincer-focus", Kind=CardKind.Character, RechargeTicks=450, Effect=1, EffectKey="front_damage" },
+                new CardDefinition { Id="mobility-regroup", Kind=CardKind.Character, RechargeTicks=600, Effect=1, EffectKey="cardinal_reposition" },
                 new CardDefinition { Id="supply-heal", Kind=CardKind.Stronghold, RechargeTicks=900, Effect=5, EffectKey="front_heal" },
                 new CardDefinition { Id="passage-retreat", Kind=CardKind.Stronghold, RechargeTicks=750, Effect=1, EffectKey="retreat" }
             };

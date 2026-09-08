@@ -11,9 +11,10 @@ namespace Janseon.Foundation.Tests
     {
         static BattleSetup Setup()
         {
-            return BattleSetup.FromContext(new BattleContext(
-                "rtfc-c0", "campaign", default(StationId), 271828,
-                new Tick(0), 0, 0, BattleRules.RulesVersion, "context-hash"));
+            return BattleSetup.FromContext(BattleContext.Create(
+                "campaign", default(StationId), 271828,
+                new Tick(0), 0, 0, BattleRules.RulesVersion, "rtfc-c0",
+                UnitHpSnapshot.DefaultParty()));
         }
 
         static BattleTickCommand Command(string id, int seq, int tick, BattleTickCommandKind kind)
@@ -74,6 +75,18 @@ namespace Janseon.Foundation.Tests
             state.Units[6].CooldownTicksLeft = 10000;
         }
 
+        static void KeepAllUnitsAliveAndIdle(BattleSimState state)
+        {
+            for (var i = 0; i < state.Units.Length; i++)
+            {
+                var unit = state.Units[i];
+                unit.State = "Active";
+                unit.Hp = System.Math.Max(1, unit.Hp);
+                unit.MoveTicksLeft = 10000;
+                unit.CooldownTicksLeft = 10000;
+            }
+        }
+
         static CampaignState CampaignWithPendingBattle()
         {
             Ledger ledger;
@@ -113,6 +126,83 @@ namespace Janseon.Foundation.Tests
         }
 
         [Test]
+        public void MobilityRegroup_RepositionsOneLivingPlayerUnit_AndConsumesRecharge()
+        {
+            var state = BattleSim.Open(Setup());
+            var ledger = new Ledger();
+            Deploy(state, ledger);
+            var target = System.Array.Find(state.Units, u => u.Id.Equals(state.PlayerCommanderId));
+            var beforeCell = target.Cell;
+            var beforeHash = state.Fingerprint();
+            var play = Command("mobility-east", 1, state.Tick, BattleTickCommandKind.PlayCard);
+            play.CardId = "mobility-regroup";
+            play.Target = target.Cell;
+            play.Facing = CardinalDirection.South;
+
+            Assert.IsNull(BattleSim.Submit(state, ledger, play));
+            Assert.AreEqual(beforeCell.Step(CardinalDirection.South), target.Cell);
+            Assert.AreEqual(CardinalDirection.South, target.Facing);
+            Assert.AreEqual(600, System.Array.Find(state.Cards, c => c.Id == "mobility-regroup").RechargeTicksLeft);
+            Assert.AreNotEqual(beforeHash, state.Fingerprint(), "position and cooldown must change replay state");
+        }
+
+        [Test]
+        public void MobilityRegroup_InvalidDeadBlockedAndOutOfBoundsTargets_AreZeroMutation()
+        {
+            void AssertRejected(BattleSimState state, BattleRejectReason expected, GridCoord targetCell, CardinalDirection facing)
+            {
+                var ledger = new Ledger();
+                var before = state.Fingerprint();
+                var events = ledger.Events.Count;
+                var play = Command("mobility-reject-" + expected, 1, state.Tick, BattleTickCommandKind.PlayCard);
+                play.CardId = "mobility-regroup";
+                play.Target = targetCell;
+                play.Facing = facing;
+                var rejected = BattleSim.Submit(state, ledger, play);
+                Assert.IsInstanceOf<BattleRejection>(rejected);
+                Assert.AreEqual(expected, ((BattleRejection)rejected).Reason);
+                Assert.AreEqual(before, state.Fingerprint());
+                Assert.AreEqual(events, ledger.Events.Count);
+                Assert.AreEqual(0, System.Array.Find(state.Cards, c => c.Id == "mobility-regroup").RechargeTicksLeft);
+            }
+
+            var dead = BattleSim.Open(Setup());
+            Deploy(dead, new Ledger());
+            var deadTarget = System.Array.Find(dead.Units, u => u.Id.Equals(dead.PlayerCommanderId));
+            deadTarget.Hp = 0; deadTarget.State = "Down";
+            AssertRejected(dead, BattleRejectReason.CardOutOfRadius, deadTarget.Cell, CardinalDirection.East);
+
+            var blocked = BattleSim.Open(Setup());
+            Deploy(blocked, new Ledger());
+            var blockedCommander = System.Array.Find(blocked.Units, u => u.Id.Equals(blocked.PlayerCommanderId));
+            var blockedTarget = blocked.Units[1];
+            blockedCommander.Cell = new GridCoord(4, 3);
+            blockedTarget.Cell = new GridCoord(5, 4);
+            blocked.Units[2].Cell = new GridCoord(6, 4);
+            AssertRejected(blocked, BattleRejectReason.CardDestinationBlocked, blockedTarget.Cell, CardinalDirection.East);
+
+            var edge = BattleSim.Open(Setup());
+            Deploy(edge, new Ledger());
+            var edgeCommander = System.Array.Find(edge.Units, u => u.Id.Equals(edge.PlayerCommanderId));
+            var edgeTarget = edge.Units[1];
+            edgeCommander.Cell = new GridCoord(edge.Arena.Width - 3, 4);
+            edgeTarget.Cell = new GridCoord(edge.Arena.Width - 1, 4);
+            AssertRejected(edge, BattleRejectReason.CardDestinationOutOfBounds, edgeTarget.Cell, CardinalDirection.East);
+        }
+
+        [Test]
+        public void Catalog_HasSixCards_AndPreservesOriginalIds()
+        {
+            var cards = CardCatalog.All();
+            Assert.AreEqual(6, cards.Count);
+            foreach (var id in new[] { "guard-shieldwall", "encourage-morale", "pincer-focus", "supply-heal", "passage-retreat", "mobility-regroup" })
+                Assert.IsNotNull(CardCatalog.Find(id), id);
+            var mobility = CardCatalog.Find("mobility-regroup");
+            Assert.AreEqual(CardKind.Character, mobility.Kind);
+            Assert.AreEqual(600, mobility.RechargeTicks);
+        }
+
+        [Test]
         public void PlayCard_RechargesOverTicks()
         {
             var state = BattleSim.Open(Setup());
@@ -126,9 +216,10 @@ namespace Janseon.Foundation.Tests
             Assert.IsNull(BattleSim.Submit(state, ledger, play));
             var view = System.Array.Find(BattleSim.Snapshot(state).Cards, x => x.Id == card.Id);
             Assert.AreEqual(card.RechargeTicks, view.RechargeTicksLeft);
+            KeepAllUnitsAliveAndIdle(state);
             for (var i = 0; i < card.RechargeTicks; i++) BattleSim.Step(state, ledger);
             Assert.AreEqual(0, System.Array.Find(BattleSim.Snapshot(state).Cards, x => x.Id == card.Id).RechargeTicksLeft);
-            var playAgain = Command("play-again", 2, state.Tick, BattleTickCommandKind.PlayCard); playAgain.CardId = card.Id; var aliveUnit = System.Array.Find(BattleSim.Snapshot(state).Units, u => u.Side == 0); playAgain.Target = aliveUnit.Cell; Assert.IsNull(BattleSim.Submit(state, ledger, playAgain));
+            var playAgain = Command("play-again", 2, state.Tick, BattleTickCommandKind.PlayCard); playAgain.CardId = card.Id; var livingCommander = System.Array.Find(BattleSim.Snapshot(state).Units, u => u.Id.Equals(state.PlayerCommanderId)); playAgain.Target = livingCommander.Cell; Assert.IsNull(BattleSim.Submit(state, ledger, playAgain));
         }
 
         [Test]
@@ -397,12 +488,14 @@ namespace Janseon.Foundation.Tests
         {
             var campaign = CampaignWithPendingBattle();
             var battle = BattleSim.Open(BattleSetup.FromContext(campaign.PendingBattle));
+            KeepAllUnitsAliveAndIdle(battle);
             battle.Tick = BattleRules.MaxTicks - 1;
             BattleSim.Step(battle, new Ledger());
             Assert.AreEqual(BattleOutcomeKind.Draw, battle.Outcome, "fixture must reach a real terminal outcome");
             var result = BattleSim.Result(battle).ToEncounterResult();
             var ledger = new Ledger(); var book = new SettlementBook();
             var first = SettlementApi.Apply(campaign, ledger, book, result);
+            Assert.IsInstanceOf<SettlementSuccess>(first, first is SettlementRejection rejected ? rejected.Reason.ToString() : first?.GetType().Name);
             var duplicate = SettlementApi.Apply(((SettlementSuccess)first).State, ledger, book, result);
             Assert.IsInstanceOf<SettlementReceipt>(duplicate);
             Assert.AreEqual(((SettlementSuccess)first).Receipt.ReceiptHash, ((SettlementReceipt)duplicate).ReceiptHash);
@@ -482,11 +575,14 @@ namespace Janseon.Foundation.Tests
         {
             var campaign = CampaignWithPendingBattle();
             var battle = BattleSim.Open(BattleSetup.FromContext(campaign.PendingBattle));
+            KeepAllUnitsAliveAndIdle(battle);
             battle.Tick = BattleRules.MaxTicks - 1;
             BattleSim.Step(battle, new Ledger());
             Assert.AreEqual(BattleOutcomeKind.Draw, battle.Outcome, "fixture must reach a real terminal outcome");
             var result = BattleSim.Result(battle).ToEncounterResult();
-            var settled = (SettlementSuccess)SettlementApi.Apply(campaign, new Ledger(), new SettlementBook(), result);
+            var applied = SettlementApi.Apply(campaign, new Ledger(), new SettlementBook(), result);
+            Assert.IsInstanceOf<SettlementSuccess>(applied, applied is SettlementRejection rejected ? rejected.Reason.ToString() : applied?.GetType().Name);
+            var settled = (SettlementSuccess)applied;
             Assert.IsTrue(settled.State.SettlementApplied);
             Assert.AreNotEqual(CampaignStage.Resolution, settled.State.Stage);
         }

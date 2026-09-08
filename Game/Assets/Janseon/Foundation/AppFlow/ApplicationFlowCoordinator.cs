@@ -1,6 +1,7 @@
 using System;
 using System.Threading;
 using System.Threading.Tasks;
+using Janseon.Core;
 
 namespace Janseon.Foundation.AppFlow
 {
@@ -69,6 +70,7 @@ namespace Janseon.Foundation.AppFlow
 
         public ApplicationFlowState CurrentState => machine.CurrentState;
         public IContentSceneLease CurrentLease => committedLease;
+        public StartingPreset SelectedStartingPreset { get; set; } = StartingPreset.Wanderer;
         public Task<TransitionOutcome> CurrentTransition { get; private set; }
 
         public Task<TransitionOutcome> OpenMainTitleAsync(CancellationToken cancellationToken)

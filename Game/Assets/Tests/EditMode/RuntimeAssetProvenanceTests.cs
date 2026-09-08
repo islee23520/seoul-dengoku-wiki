@@ -26,12 +26,10 @@ namespace Janseon.Foundation.Tests
 
         static readonly string[] CodeNativeUiAssets =
         {
-            "Assets/Janseon/Foundation/UI/Screens/MainTitle.uxml",
-            "Assets/Janseon/Foundation/UI/Screens/Gameplay.uxml",
-            "Assets/Janseon/Foundation/UI/Styles/MainTitle.uss",
-            "Assets/Janseon/Foundation/UI/Styles/Gameplay.uss",
-            "Assets/Janseon/Foundation/UI/Styles/JanseonShared.uss",
-            "Assets/Janseon/Foundation/UI/PanelSettings.asset",
+            "Assets/Janseon/Foundation/UI/UguiHudBuilder.cs",
+            "Assets/Janseon/Foundation/UI/Presenters/MainTitleUiHost.cs",
+            "Assets/Janseon/Foundation/UI/Presenters/GameplayUiHost.cs",
+            "Assets/Janseon/Foundation/UI/Fonts/NanumGothic-Regular.ttf",
         };
 
         static readonly Regex GuidRegex = new(@"guid:\s*([0-9a-f]{32})", RegexOptions.IgnoreCase | RegexOptions.Compiled);
@@ -122,12 +120,10 @@ namespace Janseon.Foundation.Tests
         [Test]
         public void CodeNativeUiAssets_LoadAsImportedAssets()
         {
-            Assert.That(AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(CodeNativeUiAssets[0]), Is.Not.Null);
-            Assert.That(AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(CodeNativeUiAssets[1]), Is.Not.Null);
-            Assert.That(AssetDatabase.LoadAssetAtPath<StyleSheet>(CodeNativeUiAssets[2]), Is.Not.Null);
-            Assert.That(AssetDatabase.LoadAssetAtPath<StyleSheet>(CodeNativeUiAssets[3]), Is.Not.Null);
-            Assert.That(AssetDatabase.LoadAssetAtPath<StyleSheet>(CodeNativeUiAssets[4]), Is.Not.Null);
-            Assert.That(AssetDatabase.LoadAssetAtPath<PanelSettings>(CodeNativeUiAssets[5]), Is.Not.Null);
+            Assert.That(AssetDatabase.LoadAssetAtPath<MonoScript>(CodeNativeUiAssets[0]), Is.Not.Null);
+            Assert.That(AssetDatabase.LoadAssetAtPath<MonoScript>(CodeNativeUiAssets[1]), Is.Not.Null);
+            Assert.That(AssetDatabase.LoadAssetAtPath<MonoScript>(CodeNativeUiAssets[2]), Is.Not.Null);
+            Assert.That(AssetDatabase.LoadAssetAtPath<Font>(CodeNativeUiAssets[3]), Is.Not.Null);
         }
 
         [Test]

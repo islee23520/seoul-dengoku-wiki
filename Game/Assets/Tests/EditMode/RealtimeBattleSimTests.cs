@@ -14,9 +14,16 @@ namespace Janseon.Foundation.Tests
     {
         static BattleSetup Setup()
         {
-            return BattleSetup.FromContext(new BattleContext(
-                "rtfc-b0", "campaign", default(StationId), 314159,
-                new Tick(0), 0, 0, BattleRules.RulesVersion, "context-hash"));
+            return BattleSetup.FromContext(BattleContext.Create(
+                "campaign",
+                default(StationId),
+                314159,
+                new Tick(0),
+                0,
+                0,
+                BattleRules.RulesVersion,
+                "rtfc-b0",
+                UnitHpSnapshot.DefaultParty()));
         }
 
         static BattleTickCommand Command(string id, int seq, int tick, BattleTickCommandKind kind)
@@ -63,8 +70,8 @@ namespace Janseon.Foundation.Tests
             var cmd = Command("deploy", 0, 0, BattleTickCommandKind.Deploy); cmd.Formation = setup.PlayerFormation;
             Assert.IsNull(BattleSim.Submit(state, ledger, cmd));
             var snapshot = BattleSim.Snapshot(state);
-            var front = System.Array.Find(snapshot.Units, u => u.Id.ToString() == "p-0");
-            var rear = System.Array.Find(snapshot.Units, u => u.Id.ToString() == "p-2");
+            var front = System.Array.Find(snapshot.Units, u => u.Id.ToString() == "ally-0");
+            var rear = System.Array.Find(snapshot.Units, u => u.Id.ToString() == "ally-2");
             Assert.AreNotEqual(front.Cell, rear.Cell, "formation rows must resolve to distinct cells");
             Assert.AreEqual(CardinalDirection.East, front.Facing);
             Assert.AreEqual(setup.PlayerFormation[0].Facing, front.Facing);
@@ -73,9 +80,9 @@ namespace Janseon.Foundation.Tests
         [Test] public void Movement_AdvancesOneIntegerCellAfterTenTicks()
         {
             var state = BattleSim.Open(Setup()); var ledger = new Ledger();
-            var before = BattleSim.Snapshot(state); var unit = System.Array.Find(before.Units, u => u.Id.ToString() == "p-0");
+            var before = BattleSim.Snapshot(state); var unit = System.Array.Find(before.Units, u => u.Id.ToString() == "ally-0");
             for (var i = 0; i < BattleRules.MoveTicksPerCell; i++) BattleSim.Step(state, ledger);
-            var after = System.Array.Find(BattleSim.Snapshot(state).Units, u => u.Id.ToString() == "p-0");
+            var after = System.Array.Find(BattleSim.Snapshot(state).Units, u => u.Id.ToString() == "ally-0");
             Assert.AreEqual(before.Tick + BattleRules.MoveTicksPerCell, BattleSim.Snapshot(state).Tick);
             Assert.AreEqual(unit.Cell.X + 1, after.Cell.X);
             Assert.AreEqual(unit.Cell.Y, after.Cell.Y);
@@ -116,6 +123,27 @@ namespace Janseon.Foundation.Tests
             Assert.Greater(state.Units.Length, 12);
             Assert.IsTrue(System.Array.Exists(BattleSim.Snapshot(state).Units, u => u.Side == 1 && u.Cell.X == plan.Cell.X && u.Cell.Y == plan.Cell.Y));
         }
+        [Test] public void Heightmap_SnapshotFingerprintAndImpassableWater_ArePreservedInRealtimeState()
+        {
+            var cells = new int[12 * 8];
+            for (var i = 0; i < cells.Length; i++) cells[i] = 3;
+            cells[1 * 12 + 2] = 2;
+            var map = new Heightmap(12, 8, 8, 2, 99, LayerId.B1, cells);
+            var setup = Setup(); setup.Terrain = map;
+            var state = BattleSim.Open(setup);
+            Assert.AreEqual(map.Fingerprint(), state.Terrain.Fingerprint());
+            var clone = state.Clone();
+            Assert.AreEqual(state.Fingerprint(), clone.Fingerprint());
+
+            var mover = state.Units[0];
+            mover.Cell = new GridCoord(1, 1);
+            var before = mover.Cell;
+            mover.MoveTicksLeft = 0;
+            for (var i = 1; i < state.Units.Length; i++) state.Units[i].MoveTicksLeft = 10000;
+            BattleSim.Step(state, new Ledger());
+            Assert.AreEqual(before, mover.Cell, "water destination must be impassable to realtime intent movement");
+        }
+
         [Test] public void Replay_IsDeterministicForSameSetupAndCommands()
         {
             var setup=Setup(); var deploy=Command("deploy",0,0,BattleTickCommandKind.Deploy); deploy.Formation=setup.PlayerFormation;
