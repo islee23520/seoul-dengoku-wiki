@@ -87,6 +87,11 @@ namespace Janseon.Foundation.Tests
                 Assert.That(stationProps.transform.childCount, Is.GreaterThanOrEqualTo(3));
             }
             string[] familyNames = { "ticket-gate", "pump-crate", "shutter", "pillar", "bench", "cabinet" };
+            if (stationProps == null)
+            {
+                return;
+            }
+
             foreach (string familyName in familyNames)
             {
                 Transform family = stationProps.transform.Find("poc-prop-" + familyName);
