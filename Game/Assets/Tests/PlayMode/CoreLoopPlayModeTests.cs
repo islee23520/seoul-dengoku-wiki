@@ -10,6 +10,7 @@ using System.IO;
 using Janseon.Core;
 using Janseon.Core.Battle.Contracts;
 using Janseon.Foundation.AppFlow;
+using Janseon.Foundation.Battle;
 using Janseon.Foundation.Composition;
 using Janseon.Foundation.UI;
 using NUnit.Framework;
@@ -256,6 +257,10 @@ namespace Janseon.Foundation.Tests
             await ClickAndAwait(session, root, ActionEnterResolution, s => s.Campaign.Stage == CampaignStage.Resolution);
             await ClickAndAwait(session, root, UiElementNames.ChoiceCombat, s => s.Battle != null && s.Battle.Deployed);
 
+            FoundationLifetimeScope scope = UnityEngine.Object.FindAnyObjectByType<FoundationLifetimeScope>();
+            Assert.That(scope, Is.Not.Null, "FoundationLifetimeScope required for live driver proof");
+            BattleSessionDriver driver = scope.Container.Resolve<BattleSessionDriver>();
+
             var commander = session.Battle.Units.First(u => u.Id.Equals(session.Battle.PlayerCommanderId));
             GridCoord beforeCell = commander.Cell;
             await ClickAndAwait(session, root, UiElementNames.MobilityRegroup, s =>
@@ -264,12 +269,18 @@ namespace Janseon.Foundation.Tests
                 return commander.Cell.Equals(beforeCell.Step(CardinalDirection.South))
                     && card.RechargeTicksLeft == 600;
             });
-            int beforeCooldown = session.Battle.Cards.First(c => c.Id == "mobility-regroup").RechargeTicksLeft;
             await ClickAndAwait(session, root, BattleAdvance, s =>
                 s.BattlePaused);
-            Assert.That(session.Battle.Cards.First(c => c.Id == "mobility-regroup").RechargeTicksLeft,
-                Is.LessThanOrEqualTo(beforeCooldown));
+            int pausedCooldown = session.Battle.Cards.First(c => c.Id == "mobility-regroup").RechargeTicksLeft;
+
+            Task<int> resumedFrame = WaitForSteppedFrame(driver, TimeSpan.FromSeconds(8));
             await ClickAndAwait(session, root, BattleAdvance, s => !s.BattlePaused);
+            int resumedSteps = await resumedFrame;
+            Assert.That(resumedSteps, Is.InRange(1, BattleSessionDriver.MaxStepsPerFrame),
+                "resumed production frame must consume live simulation steps");
+            Assert.That(session.Battle.Cards.First(c => c.Id == "mobility-regroup").RechargeTicksLeft,
+                Is.LessThan(pausedCooldown),
+                "a resumed stepped frame must strictly progress the accepted card cooldown");
 
             await UguiKeyboardPlayModeHelper.FinishCombatKeyboard(session, root);
             SettlementReceipt receipt = session.LastReceipt;
@@ -713,6 +724,31 @@ namespace Janseon.Foundation.Tests
 
             session.StateChanged += Handler;
             return tcs.Task;
+        }
+
+        static async Task<int> WaitForSteppedFrame(BattleSessionDriver driver, TimeSpan timeout)
+        {
+            var processed = new TaskCompletionSource<int>(TaskCreationOptions.RunContinuationsAsynchronously);
+            void OnFrame(int steps)
+            {
+                if (steps <= 0)
+                {
+                    return;
+                }
+
+                driver.FrameProcessed -= OnFrame;
+                processed.TrySetResult(steps);
+            }
+
+            driver.FrameProcessed += OnFrame;
+            try
+            {
+                return await AwaitTaskResult(processed.Task, timeout, "resumed stepped production frame");
+            }
+            finally
+            {
+                driver.FrameProcessed -= OnFrame;
+            }
         }
 
         static Task WaitRejection(IPocCoreLoopSession session)
