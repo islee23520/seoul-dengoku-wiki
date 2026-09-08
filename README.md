@@ -31,3 +31,7 @@ git lfs checkout
 node tools/check-lfs-hydration.mjs
 ```
 
+## Unity 개발 도구
+
+Unity Remote는 `tools/unity-remote` Git 서브모듈로 관리합니다. 브로커 준비, 프로젝트별 인증 토큰, CLI 및 batchmode Editor 연결은 [Unity Remote 개발 안내](docs/Unity-Remote-Development.md)를 따릅니다.
+
