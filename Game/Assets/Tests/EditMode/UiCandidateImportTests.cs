@@ -141,11 +141,9 @@ namespace Janseon.Foundation.Tests
 
             foreach (string uiAsset in new[]
             {
-                "Assets/Janseon/Foundation/UI/Screens/MainTitle.uxml",
-                "Assets/Janseon/Foundation/UI/Screens/Gameplay.uxml",
-                "Assets/Janseon/Foundation/UI/Styles/MainTitle.uss",
-                "Assets/Janseon/Foundation/UI/Styles/Gameplay.uss",
-                "Assets/Janseon/Foundation/UI/Styles/JanseonShared.uss",
+                "Assets/Janseon/Foundation/UI/UguiHudBuilder.cs",
+                "Assets/Janseon/Foundation/UI/Presenters/MainTitleUiHost.cs",
+                "Assets/Janseon/Foundation/UI/Presenters/GameplayUiHost.cs",
             })
             {
                 Assert.That(File.ReadAllText(uiAsset), Does.Not.Contain("ArtCandidates"), uiAsset);

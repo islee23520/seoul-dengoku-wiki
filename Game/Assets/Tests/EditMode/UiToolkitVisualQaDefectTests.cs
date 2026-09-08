@@ -315,7 +315,7 @@ namespace Janseon.Foundation.Tests
         {
             string capturesDir = Environment.GetEnvironmentVariable("JANSEON_CAPTURE_DIR")
                 ?? Path.GetFullPath(Path.Combine(Application.dataPath,
-                    "../../.omo/evidence/unity-poc-core-loop/task-11-ui-toolkit/captures"));
+                    "../../.omo/evidence/poc-ugui-v4-runtime/captures"));
             string repoRoot = Path.GetFullPath(Path.Combine(Application.dataPath, "../.."));
             var git = new System.Diagnostics.ProcessStartInfo("git", "rev-parse HEAD")
             {

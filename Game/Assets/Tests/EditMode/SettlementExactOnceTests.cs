@@ -541,7 +541,7 @@ namespace Janseon.Tests.EditMode
             Assert.AreEqual(CampaignStage.BaseReady, returned.Stage);
             Assert.AreEqual(StationId.Yeongdeungpo, returned.Node);
             Assert.AreEqual(SettlementApi.ConsequencePlayerVictory, returned.ConsequenceId);
-            Assert.AreEqual(100 + SettlementApi.PlayerVictoryResourceDelta, returned.Resources);
+            Assert.AreEqual(100 + SettlementApi.PlayerVictoryResourceDelta + CampaignApi.ConfirmedMoveResourceDelta, returned.Resources);
             Assert.AreEqual(0 + SettlementApi.PlayerVictoryReputationDelta, returned.Reputation);
         }
 
@@ -904,7 +904,7 @@ namespace Janseon.Tests.EditMode
 
             Assert.AreNotEqual(beforeHash, afterHash);
             Assert.AreEqual(CampaignStage.Settlement, settled.Stage);
-            Assert.AreEqual(100 + SettlementApi.PlayerVictoryResourceDelta, settled.Resources);
+            Assert.AreEqual(100 + SettlementApi.PlayerVictoryResourceDelta + CampaignApi.ConfirmedMoveResourceDelta, settled.Resources);
             Assert.AreEqual(0 + SettlementApi.PlayerVictoryReputationDelta, settled.Reputation);
 
             var dup = SettlementApi.Apply(settled, ledger, book, result);

@@ -527,22 +527,10 @@ namespace Janseon.Foundation.Tests
                     && s.Battle != null
                     && s.Battle.Outcome == BattleOutcomeKind.Ongoing);
                 result.BattleContextHash = session.Campaign.PendingBattle.ContextHash;
-                int guard = 0;
-                while (session.Battle != null
-                       && session.Battle.Outcome == BattleOutcomeKind.Ongoing
-                       && guard < 64)
-                {
-                    int tickBefore = session.Battle.BattleTick.Value;
-                    string battleHashBefore = session.BattleHash;
-                    await Step(BattleAdvance, s =>
-                        s.Battle != null
-                        && (s.Battle.Outcome != BattleOutcomeKind.Ongoing
-                            || s.Battle.BattleTick.Value != tickBefore
-                            || s.BattleHash != battleHashBefore));
-                    result.BattleCommands++;
-                    guard++;
-                }
-
+                BattleOutcomeKind combatOutcome =
+                    await UguiKeyboardPlayModeHelper.FinishCombatKeyboard(session, root);
+                result.BattleCommands++;
+                Assert.That(combatOutcome, Is.EqualTo(BattleOutcomeKind.PlayerVictory));
                 Assert.That(session.Battle, Is.Not.Null);
                 Assert.That(session.Battle.Outcome, Is.EqualTo(BattleOutcomeKind.PlayerVictory));
             }

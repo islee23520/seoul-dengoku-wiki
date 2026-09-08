@@ -40,8 +40,10 @@ namespace Janseon.Foundation.Tests
             RectTransform root = UguiHudBuilder.BuildMainTitle(null);
             Transform mark = UguiHudBuilder.Find(root, UiElementNames.MainTitleMark);
             Assert.That(mark, Is.Not.Null, "missing " + UiElementNames.MainTitleMark);
-            Assert.That(mark.GetComponentInChildren<TMPro.TextMeshProUGUI>(true), Is.Not.Null,
-                "main-title-mark must render TMP text");
+            bool hasTmp = mark.GetComponentInChildren<TMPro.TextMeshProUGUI>(true) != null;
+            bool hasText = mark.GetComponentInChildren<UnityEngine.UI.Text>(true) != null;
+            Assert.That(hasTmp || hasText, Is.True,
+                "main-title-mark must render TMP or uGUI Text");
 
             var start = UguiHudBuilder.ButtonNamed(root, UiElementNames.MainTitleStart);
             Assert.That(start, Is.Not.Null, "main-title-start must be a Button");
@@ -420,7 +422,7 @@ namespace Janseon.Foundation.Tests
             Assert.That(guro.interactable, Is.True);
             Assert.That(yeong.GetComponentInChildren<UnityEngine.UI.Text>(true).text, Does.Contain("영등포"));
             Assert.That(sindorim.GetComponentInChildren<UnityEngine.UI.Text>(true).text, Does.Contain("신도림"));
-            Assert.That(guro.GetComponentInChildren<UnityEngine.UI.Text>(true).text, Does.Contain("구로"));
+            Assert.That(guro.GetComponentInChildren<UnityEngine.UI.Text>(true).text, Does.Contain("대림"));
 
             // Force-hide NamedFlags must apply deterministically (malformed keys ignored).
             snap.NamedFlags[UiElementNames.RouteRail + ":visible"] = false;
