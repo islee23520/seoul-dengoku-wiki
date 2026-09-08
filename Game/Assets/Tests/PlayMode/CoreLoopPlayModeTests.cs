@@ -537,7 +537,10 @@ namespace Janseon.Foundation.Tests
                 }
             }
 
-            await Step(ActionSettle, s => s.Campaign.SettlementApplied && s.LastReceipt != null);
+            if (!session.Campaign.SettlementApplied || session.LastReceipt == null)
+            {
+                await Step(ActionSettle, s => s.Campaign.SettlementApplied && s.LastReceipt != null);
+            }
 
             // Dual exact-once observables: disabled UI ignore + presenter seam duplicate receipt.
             string hashBeforeDup = session.CampaignHash;
