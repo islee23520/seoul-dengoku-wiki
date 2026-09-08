@@ -6,3 +6,5 @@ BattleSrpgTests=9/9
 - UiToolkitVisualQaDefectTests.CaptureReceipts_RequireIsPlayingTrue_Roots_State_Head
 r2 3결함 해소: 퇴로 기하 실계산, 지휘관 사기 1회 규칙, SetFacing 계약을 반영했다.
 k2 2건 해소: RealtimeBattleSimTests 12/12 및 BattleSrpgTests 9/9를 확인했다.
+
+r4 결함 해소: 지휘관 hp<=0 시 CommanderBelowHalf 플래그 소비(MoraleRules.cs) — 실행 결과 동일 132/130/2/0(baseline 2종)
