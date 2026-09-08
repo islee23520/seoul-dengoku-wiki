@@ -357,7 +357,12 @@ namespace Janseon.Core
                     return new SettlementRejection(SettlementRejectReason.WrongStage, state.Stage, result.ResultId);
                 }
 
-                if (state.PendingBattle != null && !string.Equals(state.PendingBattle.BattleId, result.BattleId.Value, StringComparison.Ordinal))
+                if (state.PendingBattle == null)
+                {
+                    return new SettlementRejection(SettlementRejectReason.NoPendingBattle, state.Stage, result.ResultId);
+                }
+
+                if (!string.Equals(state.PendingBattle.BattleId, result.BattleId.Value, StringComparison.Ordinal))
                 {
                     return new SettlementRejection(SettlementRejectReason.BattleIdMismatch, state.Stage, result.ResultId);
                 }
@@ -530,6 +535,8 @@ namespace Janseon.Core
         public static EncounterResult FromRealtimeResult(Janseon.Core.Battle.Contracts.BattleResult battle)
         {
             if (battle == null) throw new ArgumentNullException(nameof(battle));
+            if (battle.Outcome == Janseon.Core.Battle.Contracts.BattleOutcomeKind.Ongoing)
+                throw new ArgumentException("Battle result must be terminal.", nameof(battle));
             return battle.ToEncounterResult();
         }
 

@@ -38,7 +38,20 @@ namespace Janseon.Core.Battle.Sim
             if (cmd.Kind == BattleTickCommandKind.DemandSurrender) { if (!OutcomeRules.CanEnemySurrender(state)) return new ContractRejection { Reason=ContractRejectReason.SurrenderConditionsUnmet }; state.Outcome=ContractOutcome.EnemySurrender; ledger.Events.Add(new TypedEvent { Id=new EventId("bcmd-"+cmd.At.Value.ToString(CultureInfo.InvariantCulture)+"-"+cmd.Seq.ToString(CultureInfo.InvariantCulture)), At=cmd.At, CauseId=cmd.Id, SummaryHash=state.Fingerprint() }); return null; }
             if (cmd.Kind == BattleTickCommandKind.PlayCard && !string.IsNullOrEmpty(cmd.CardId))
             {
-                var near = false; for (var i = 0; i < state.Units.Length; i++) if (state.Units[i].Side == 0 && System.Math.Abs(state.Units[i].Cell.X - cmd.Target.X) + System.Math.Abs(state.Units[i].Cell.Y - cmd.Target.Y) <= BattleRules.CommandRadius) { near = true; break; }
+                var near = false;
+                for (var i = 0; i < state.Units.Length; i++)
+                {
+                    var commander = state.Units[i];
+                    if (commander.Id.Equals(state.PlayerCommanderId)
+                        && commander.Side == 0
+                        && commander.State == "Active"
+                        && commander.Hp > 0
+                        && commander.Cell.ManhattanTo(cmd.Target) <= BattleRules.CommandRadius)
+                    {
+                        near = true;
+                        break;
+                    }
+                }
                 if (!near) return new ContractRejection { Reason=ContractRejectReason.CardOutOfRadius };
             }
             if (!state.Deployed && cmd.Kind != BattleTickCommandKind.Deploy) return new ContractRejection { Reason=ContractRejectReason.NotDeployed };
@@ -52,17 +65,38 @@ namespace Janseon.Core.Battle.Sim
             {
                 var strongholds = cmd.StrongholdCardIds ?? cmd.StrongholdCards;
                 if (strongholds != null && strongholds.Length > BattleRules.StrongholdCardSlots) return new ContractRejection { Reason=ContractRejectReason.MalformedCommand };
+                if (strongholds != null) for (var i = 0; i < strongholds.Length; i++)
+                {
+                    var selected = CardCatalog.Find(strongholds[i]);
+                    if (selected == null || selected.Kind != CardKind.Stronghold) return new ContractRejection { Reason=ContractRejectReason.MalformedCommand };
+                }
                 state.StrongholdCardIds = strongholds;
             }
             if (cmd.Kind == BattleTickCommandKind.PlayCard)
             {
                 if (string.IsNullOrEmpty(cmd.CardId)) return new ContractRejection { Reason=ContractRejectReason.MalformedCommand };
                 var card = CardCatalog.Find(cmd.CardId); if (card == null) return new ContractRejection { Reason=ContractRejectReason.CardUnknown };
+                if (card.Kind == CardKind.Stronghold && !Contains(state.StrongholdCardIds, card.Id)) return new ContractRejection { Reason=ContractRejectReason.CardUnknown };
                 for (var i = 0; i < state.Cards.Length; i++) if (state.Cards[i].Id == card.Id && state.Cards[i].RechargeTicksLeft > 0) return new ContractRejection { Reason=ContractRejectReason.CardRecharging };
-                for (var i = 0; i < state.Cards.Length; i++) if (state.Cards[i].Id == card.Id) state.Cards[i].RechargeTicksLeft = card.RechargeTicks;
+                for (var i = 0; i < state.Cards.Length; i++) if (state.Cards[i].Id == card.Id)
+                {
+                    state.Cards[i].RechargeTicksLeft = card.RechargeTicks;
+                    if (card.EffectKey == "front_damage" || card.EffectKey == "retreat") state.Cards[i].ActiveTicksLeft = BattleRules.CardEffectTicks;
+                }
                 if (card.EffectKey == "morale") state.Sides[0].Morale += card.Effect;
-                if (card.EffectKey == "front_heal") for (var i = 0; i < state.Units.Length; i++) if (state.Units[i].Side == 0) { state.Units[i].Hp = System.Math.Min(state.Units[i].MaxHp, state.Units[i].Hp + card.Effect); break; }
+                if (card.EffectKey == "front_heal")
+                {
+                    for (var i = 0; i < state.Units.Length; i++)
+                    {
+                        var unit = state.Units[i];
+                        if (unit.Side != 0 || unit.State != "Active" || unit.Hp <= 0) continue;
+                        unit.Hp = System.Math.Min(unit.MaxHp, unit.Hp + card.Effect);
+                        break;
+                    }
+                }
             }
+            if (cmd.Kind == BattleTickCommandKind.OrderRetreat && !IsActive(state, "passage-retreat"))
+                return new ContractRejection { Reason=ContractRejectReason.RetreatUnavailable };
             state.Pending.Add(cmd); state.Pending.Sort((a,b) => a.At.Value != b.At.Value ? a.At.Value.CompareTo(b.At.Value) : a.Seq.CompareTo(b.Seq));
             if (cmd.Kind == BattleTickCommandKind.Deploy) { state.Deployed=true; FormationResolver.Resolve(state, cmd.Formation); }
             ledger.Events.Add(new TypedEvent { Id=new EventId("bcmd-"+cmd.At.Value.ToString(CultureInfo.InvariantCulture)+"-"+cmd.Seq.ToString(CultureInfo.InvariantCulture)), At=cmd.At, CauseId=cmd.Id, SummaryHash=state.Fingerprint() }); return null;
@@ -70,7 +104,6 @@ namespace Janseon.Core.Battle.Sim
         public static void Step(BattleSimState state, Ledger ledger)
         {
             if (state == null || ledger == null || state.Outcome != ContractOutcome.Ongoing) return;
-            if (state.Cards != null) for (var i = 0; i < state.Cards.Length; i++) if (state.Cards[i].RechargeTicksLeft > 0) state.Cards[i].RechargeTicksLeft--;
             state.Pending.Sort((a,b) => a.At.Value != b.At.Value ? a.At.Value.CompareTo(b.At.Value) : a.Seq.CompareTo(b.Seq));
             while (state.Pending.Count > 0 && state.Pending[0].At.Value == state.Tick)
             {
@@ -89,8 +122,31 @@ namespace Janseon.Core.Battle.Sim
                     default: throw new ArgumentOutOfRangeException();
                 }
             }
-            ReinforcementRules.Resolve(state); if (state.Outcome != ContractOutcome.Ongoing) { ledger.Events.Add(new TypedEvent { Id=new EventId("btick-"+state.Tick.ToString(CultureInfo.InvariantCulture)), At=new Tick(state.Tick), SummaryHash=state.Fingerprint() }); state.Tick++; return; } IntentPlanner.Resolve(state); CombatRules.Resolve(state); MoraleRules.Resolve(state); state.Sides[1].RetreatCovered = OutcomeRules.RetreatCovered(state); OutcomeRules.Resolve(state);
+            ReinforcementRules.Resolve(state); if (state.Outcome != ContractOutcome.Ongoing) { TickCards(state); ledger.Events.Add(new TypedEvent { Id=new EventId("btick-"+state.Tick.ToString(CultureInfo.InvariantCulture)), At=new Tick(state.Tick), SummaryHash=state.Fingerprint() }); state.Tick++; return; } IntentPlanner.Resolve(state); CombatRules.Resolve(state); MoraleRules.Resolve(state); state.Sides[1].RetreatCovered = OutcomeRules.RetreatCovered(state); OutcomeRules.Resolve(state);
+            TickCards(state);
             ledger.Events.Add(new TypedEvent { Id=new EventId("btick-"+state.Tick.ToString(CultureInfo.InvariantCulture)), At=new Tick(state.Tick), SummaryHash=state.Fingerprint() }); state.Tick++;
+        }
+        static void TickCards(BattleSimState state)
+        {
+            if (state.Cards == null) return;
+            for (var i = 0; i < state.Cards.Length; i++)
+            {
+                if (state.Cards[i].RechargeTicksLeft > 0) state.Cards[i].RechargeTicksLeft--;
+                if (state.Cards[i].ActiveTicksLeft > 0) state.Cards[i].ActiveTicksLeft--;
+            }
+        }
+        static bool Contains(string[] values, string value)
+        {
+            if (values == null) return false;
+            for (var i = 0; i < values.Length; i++) if (values[i] == value) return true;
+            return false;
+        }
+        static bool IsActive(BattleSimState state, string cardId)
+        {
+            if (state.Cards == null) return false;
+            for (var i = 0; i < state.Cards.Length; i++)
+                if (state.Cards[i].Id == cardId) return state.Cards[i].ActiveTicksLeft > 0;
+            return false;
         }
         public static BattleSnapshot Snapshot(BattleSimState s) { var x=new BattleSnapshot { Tick=s.Tick, Outcome=s.Outcome, Sides=new BattleSnapshot.SideSnapshot[s.Sides.Length], Units=new BattleSnapshot.UnitSnapshot[s.Units.Length], Telegraphs=new BattleSnapshot.TelegraphView[s.Telegraphs.Length], Cards=new BattleSnapshot.CardView[s.Cards == null ? 0 : s.Cards.Length] }; for(var i=0;i<x.Cards.Length;i++) x.Cards[i]=new BattleSnapshot.CardView {Id=s.Cards[i].Id,RechargeTicksLeft=s.Cards[i].RechargeTicksLeft}; for(var i=0;i<s.Telegraphs.Length;i++) x.Telegraphs[i]=new BattleSnapshot.TelegraphView {Cell=s.Telegraphs[i].Cell, ArrivalTick=s.Telegraphs[i].ArrivalTick, Count=s.Telegraphs[i].Count}; for(var i=0;i<s.Sides.Length;i++) x.Sides[i]=new BattleSnapshot.SideSnapshot {Morale=s.Sides[i].Morale,CommanderHpPercent=s.Sides[i].CommanderHpPercent,RetreatCovered=s.Sides[i].RetreatCovered,CommandsLocked=s.Sides[i].CommandsLocked}; for(var i=0;i<s.Units.Length;i++) x.Units[i]=new BattleSnapshot.UnitSnapshot {Id=s.Units[i].Id,Side=s.Units[i].Side,Cell=s.Units[i].Cell,Facing=s.Units[i].Facing,Hp=s.Units[i].Hp,State=s.Units[i].State}; return x; }
         public static BattleResult Result(BattleSimState s) { if (s == null) throw new ArgumentNullException(nameof(s)); return new BattleResult {Outcome=s.Outcome,FinalTick=s.Tick,BattleId=s.Context != null ? s.Context.BattleId : string.Empty,ResultHash=CoreApi.StableHashHex((int)s.Outcome+";"+s.Tick+";"+s.Fingerprint()+";" )}; }

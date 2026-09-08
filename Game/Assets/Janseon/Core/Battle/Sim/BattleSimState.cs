@@ -47,12 +47,14 @@ namespace Janseon.Core.Battle.Sim
             var s = Tick + ";" + (int)Outcome + ";" + Deployed;
             if (Units != null) for (var i=0; i<Units.Length; i++) { var u=Units[i]; s += ";" + u.Id + ":" + u.Cell + ":" + u.Hp + ":" + u.State + ":" + u.CooldownTicksLeft; }
             if (Sides != null) for (var i=0; i<Sides.Length; i++) { var x=Sides[i]; s += ";m" + x.Morale + ":" + x.CommandsLocked; }
+            if (Cards != null) for (var i=0; i<Cards.Length; i++) { var card=Cards[i]; s += ";c" + card.Id + ":" + card.RechargeTicksLeft + ":" + card.ActiveTicksLeft; }
+            if (StrongholdCardIds != null) for (var i=0; i<StrongholdCardIds.Length; i++) s += ";sh" + StrongholdCardIds[i];
             return CoreApi.StableHashHex(s);
         }
     }
     public sealed class CardState
     {
-        public string Id; public int RechargeTicksLeft;
+        public string Id; public int RechargeTicksLeft; public int ActiveTicksLeft;
         public CardState Clone() { return (CardState)MemberwiseClone(); }
     }
     public sealed class UnitState

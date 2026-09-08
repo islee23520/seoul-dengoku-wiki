@@ -45,14 +45,14 @@ namespace Janseon.Core.Battle.Contracts
 
     public enum BattleTickCommandKind { Deploy, PlayCard, OrderRetreat, DemandSurrender, SetFacing }
     public sealed class BattleTickCommand { public CommandId Id; public int Seq; public Tick At; public BattleTickCommandKind Kind; public FormationSlot[] Formation; public string CardId; public GridCoord Target; public CardinalDirection Facing; public string[] StrongholdCardIds; public string[] StrongholdCards; }
-    public enum BattleRejectReason { TickMismatch, BattleStarted, NotDeployed, CardUnknown, CardRecharging, CardOutOfRadius, CommandsLocked, SurrenderConditionsUnmet, BattleEnded, UnknownActor, MalformedCommand }
+    public enum BattleRejectReason { TickMismatch, BattleStarted, NotDeployed, CardUnknown, CardRecharging, CardOutOfRadius, CommandsLocked, SurrenderConditionsUnmet, BattleEnded, UnknownActor, MalformedCommand, RetreatUnavailable }
     public enum CardKind { Character, Stronghold }
     public sealed class CardDefinition
     {
         public string Id; public CardKind Kind; public int RechargeTicks; public int Effect; public string EffectKey;
     }
     public sealed class BattleRejection { public BattleRejectReason Reason; public string Detail; }
-    public sealed class BattleRules { public const int TicksPerSecond=30, MoveTicksPerCell=10, AttackCooldownTicks=30, MoraleBase=60, MoraleWarn=40, MoraleRecoverCap=80, MoraleRecoveryPerSecond=5, MoraleLossPerDeath=5, MoraleLossCommanderBelowHalf=10, SurrenderMoraleMax=20, SurrenderCommanderHpPercentMax=50, StrongholdCardSlots=2, MaxTicks=9000, CommandRadius=3; public const string RulesVersion="poc-rtfc-v1"; }
+    public sealed class BattleRules { public const int TicksPerSecond=30, MoveTicksPerCell=10, AttackCooldownTicks=30, MoraleBase=60, MoraleWarn=40, MoraleRecoverCap=80, MoraleRecoveryPerSecond=5, MoraleLossPerDeath=5, MoraleLossCommanderBelowHalf=10, SurrenderMoraleMax=20, SurrenderCommanderHpPercentMax=50, StrongholdCardSlots=2, CardEffectTicks=150, MaxTicks=9000, CommandRadius=3; public const string RulesVersion="poc-rtfc-v1"; }
 
     public sealed class BattleSnapshot { public int Tick; public BattleOutcomeKind Outcome; public SideSnapshot[] Sides; public UnitSnapshot[] Units; public TelegraphView[] Telegraphs; public CardView[] Cards; public sealed class SideSnapshot { public int Morale; public int CommanderHpPercent; public bool RetreatCovered; public bool CommandsLocked; } public sealed class UnitSnapshot { public UnitId Id; public int Side; public GridCoord Cell; public CardinalDirection Facing; public int Hp; public string State; } public sealed class TelegraphView { public GridCoord Cell; public int ArrivalTick; public int Count; } public sealed class CardView { public string Id; public int RechargeTicksLeft; } }
     public sealed class BattleResult
