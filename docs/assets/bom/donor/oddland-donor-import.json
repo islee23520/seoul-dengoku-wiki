@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "donor": "oddland-unity",
+  "donor_repository": "islee23520/oddland-unity",
+  "donor_commit": "c6e5bd79f5f5d01b1fbb72942e8f70f4410bc646",
+  "donor_editor_version": "6000.5.4f1",
+  "source_root": "/Volumes/gameWorkspace/game-refs/oddland-unity/Assets",
+  "destination_root": "Game/Assets/Quarantine/Oddland",
+  "rights": {
+    "status": "allowed",
+    "basis": "owner declaration 2026-09-07: all Oddland graphic assets are owner-owned and free to use in this project",
+    "spine_runtime": "spine-unity 4.2.113 (Esoteric Software Spine Runtimes License) — owner Spine editor license required; not a graphic-asset right"
+  },
+  "scope": "graphic assets, SFX, VFX, shaders, fonts, Spine skeleton data and runtime; no scenes, UI screens, gameplay scripts or metadata",
+  "includes": [
+    {
+      "from": "Resources/XResource",
+      "to": "Res/XResource"
+    },
+    {
+      "from": "XResource",
+      "to": "XResource"
+    },
+    {
+      "from": "Resources/Textures",
+      "to": "Res/Textures"
+    },
+    {
+      "from": "Resources/Texture",
+      "to": "Res/Texture"
+    },
+    {
+      "from": "Resources/Icons",
+      "to": "Res/Icons"
+    },
+    {
+      "from": "Resources/Atlas",
+      "to": "Res/Atlas"
+    },
+    {
+      "from": "Resources/MailAttachments",
+      "to": "Res/MailAttachments"
+    },
+    {
+      "from": "Resources/MailAttachmentEmpties",
+      "to": "Res/MailAttachmentEmpties"
+    },
+    {
+      "from": "Resources/Sound",
+      "to": "Res/Sound"
+    },
+    {
+      "from": "Resources/UIFx",
+      "to": "Res/UIFx"
+    },
+    {
+      "from": "Resources/Font",
+      "to": "Res/Font"
+    },
+    {
+      "from": "Resources/Shaders",
+      "to": "Res/Shaders"
+    },
+    {
+      "from": "Resources/GameAssets/Equipment",
+      "to": "Res/GameAssets/Equipment"
+    },
+    {
+      "from": "Resources/GameAssets/Materials",
+      "to": "Res/GameAssets/Materials"
+    },
+    {
+      "from": "Resources/GameAssets/Prefabs/Fx",
+      "to": "Res/GameAssets/Prefabs/Fx"
+    },
+    {
+      "from": "Resources/GameAssets/Prefabs/CharacterSpines",
+      "to": "Res/GameAssets/Prefabs/CharacterSpines"
+    },
+    {
+      "from": "Resources/GameAssets/Prefabs/Weapons",
+      "to": "Res/GameAssets/Prefabs/Weapons"
+    },
+    {
+      "from": "Resources/GameAssets/Prefabs/Helmets",
+      "to": "Res/GameAssets/Prefabs/Helmets"
+    },
+    {
+      "from": "Resources/GameAssets/Prefabs/Bags",
+      "to": "Res/GameAssets/Prefabs/Bags"
+    },
+    {
+      "from": "Resources/GameAssets/Prefabs/Obstacles",
+      "to": "Res/GameAssets/Prefabs/Obstacles"
+    },
+    {
+      "from": "Resources/GameAssets/Prefabs/Shadow",
+      "to": "Res/GameAssets/Prefabs/Shadow"
+    },
+    {
+      "from": "Resources/GameAssets/Prefabs/Equipments",
+      "to": "Res/GameAssets/Prefabs/Equipments"
+    },
+    {
+      "from": "Resources/GameAssets/Prefabs/ControllerProjectile",
+      "to": "Res/GameAssets/Prefabs/ControllerProjectile"
+    },
+    {
+      "from": "Resources/Prefabs/Character",
+      "to": "Res/Prefabs/Character"
+    },
+    {
+      "from": "Resources/Prefabs/CharacterSpines",
+      "to": "Res/Prefabs/CharacterSpines"
+    },
+    {
+      "from": "Resources/Prefabs/Environment",
+      "to": "Res/Prefabs/Environment"
+    },
+    {
+      "from": "Resources/Prefabs/EnvironmentCollider",
+      "to": "Res/Prefabs/EnvironmentCollider"
+    },
+    {
+      "from": "Resources/Prefabs/Equipments",
+      "to": "Res/Prefabs/Equipments"
+    },
+    {
+      "from": "Resources/Prefabs/Platformers",
+      "to": "Res/Prefabs/Platformers"
+    },
+    {
+      "from": "Resources/Prefabs/MiniGame",
+      "to": "Res/Prefabs/MiniGame"
+    },
+    {
+      "from": "Shader",
+      "to": "Shader"
+    },
+    {
+      "from": "Post Processing Profiles",
+      "to": "Post Processing Profiles"
+    },
+    {
+      "from": "CharacterMecanimController",
+      "to": "CharacterMecanimController"
+    },
+    {
+      "from": "Spine/Runtime",
+      "to": "Spine/Runtime"
+    },
+    {
+      "from": "Spine/Editor",
+      "to": "Spine/Editor"
+    },
+    {
+      "from": "spine - unity(Custom)",
+      "to": "SpineCustom"
+    }
+  ],
+  "excludes": [
+    "Resources/xStageScene",
+    "StreamingAssets",
+    "Resources/MetaData",
+    "Scripts",
+    "NGUI",
+    "3rd Party Tool",
+    "Plugins",
+    "ProCamera2D",
+    "PC2D",
+    "Editor",
+    "Tests",
+    "GoogleMobileAds",
+    "Gizmos",
+    "AddressableAssetsData",
+    "Scenes",
+    "Resources/Scenes",
+    "OddlandData",
+    "Resources/Localiztion",
+    "Resources/XStageEditor",
+    "Resources/Persistent",
+    "Resources/GameAssets/Prefabs/Popup",
+    "Resources/GameAssets/Prefabs/Popup_UGUI",
+    "Resources/Prefabs/Popup",
+    "Resources/Prefabs/Popup_UGUI",
+    "Resources/Prefabs/PopupRoot",
+    "Resources/Prefabs/Managers",
+    "Spine/.Editor"
+  ],
+  "post_copy_patches": [
+    {
+      "file": "Spine/Runtime/spine-unity.asmdef",
+      "reason": "declare the UnityEngine.UI reference SkeletonGraphic needs (com.unity.ugui, Intent decision 2)"
+    }
+  ],
+  "file_count": 15942,
+  "bytes": 1657210705,
+  "hash_list": "docs/assets/bom/donor/oddland-donor-import.sha256",
+  "payload_tracked_in_git": false,
+  "imported_at": "2026-09-07T15:46:45.286Z"
+}

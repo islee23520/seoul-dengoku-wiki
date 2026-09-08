@@ -1,0 +1,83 @@
+main c753e0b 선행 실패 2건(Phase B 외) — 원문:
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="2" result="Failed(Child)" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-07 18:14:27Z" end-time="2026-09-07 18:14:28Z" duration="1.1238769">
+  <test-suite type="TestSuite" id="1000" name="잔선: 서울" fullname="잔선: 서울" runstate="Runnable" testcasecount="120" result="Failed" site="Child" start-time="2026-09-07 18:14:27Z" end-time="2026-09-07 18:14:28Z" duration="1.123877" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1139" name="Janseon.Foundation.EditModeTests.dll" fullname="/Users/ilseoblee/workspace/seoul-kenshi/Game/Library/ScriptAssemblies/Janseon.Foundation.EditModeTests.dll" runstate="Runnable" testcasecount="120" result="Failed" site="Child" start-time="2026-09-07 18:14:27Z" end-time="2026-09-07 18:14:28Z" duration="1.120309" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="70185" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1140" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="120" result="Failed" site="Child" start-time="2026-09-07 18:14:27Z" end-time="2026-09-07 18:14:28Z" duration="1.119604" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1143" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="82" result="Failed" site="Child" start-time="2026-09-07 18:14:27Z" end-time="2026-09-07 18:14:28Z" duration="1.118738" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="1144" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="82" result="Failed" site="Child" start-time="2026-09-07 18:14:27Z" end-time="2026-09-07 18:14:28Z" duration="1.118170" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestFixture" id="1076" name="RuntimeAssetProvenanceTests" fullname="Janseon.Foundation.Tests.RuntimeAssetProvenanceTests" classname="Janseon.Foundation.Tests.RuntimeAssetProvenanceTests" runstate="Runnable" testcasecount="8" result="Failed" site="Child" start-time="2026-09-07 18:14:27Z" end-time="2026-09-07 18:14:28Z" duration="1.062845" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="1078" name="PlayableScenes_DoNotReferenceQuarantineOrTrellisAssets" fullname="Janseon.Foundation.Tests.RuntimeAssetProvenanceTests.PlayableScenes_DoNotReferenceQuarantineOrTrellisAssets" methodname="PlayableScenes_DoNotReferenceQuarantineOrTrellisAssets" classname="Janseon.Foundation.Tests.RuntimeAssetProvenanceTests" runstate="Runnable" seed="1954155072" result="Failed" start-time="2026-09-07 18:14:27Z" end-time="2026-09-07 18:14:28Z" duration="1.057223" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  real provenance gate must accept every scene dependency
+  Expected: True
+  But was:  False
+]]></message>
+                  <stack-trace><![CDATA[at Janseon.Foundation.Tests.RuntimeAssetProvenanceTests.PlayableScenes_DoNotReferenceQuarantineOrTrellisAssets () [0x00000] in /Users/ilseoblee/workspace/seoul-kenshi/Game/Assets/Tests/EditMode/RuntimeAssetProvenanceTests.cs:83
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1120" name="UiToolkitVisualQaDefectTests" fullname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests" classname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests" runstate="Runnable" testcasecount="17" result="Failed" site="Child" start-time="2026-09-07 18:14:28Z" end-time="2026-09-07 18:14:28Z" duration="0.051177" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="1138" name="CaptureReceipts_RequireIsPlayingTrue_Roots_State_Head" fullname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests.CaptureReceipts_RequireIsPlayingTrue_Roots_State_Head" methodname="CaptureReceipts_RequireIsPlayingTrue_Roots_State_Head" classname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests" runstate="Runnable" seed="30142069" result="Failed" start-time="2026-09-07 18:14:28Z" end-time="2026-09-07 18:14:28Z" duration="0.049152" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  captures dir missing
+  Expected: True
+  But was:  False
+]]></message>
+                  <stack-trace><![CDATA[at Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests.CaptureReceipts_RequireIsPlayingTrue_Roots_State_Head () [0x00098] in /Users/ilseoblee/workspace/seoul-kenshi/Game/Assets/Tests/EditMode/UiToolkitVisualQaDefectTests.cs:408
+]]></stack-trace>
+                </failure>
+                <output><![CDATA[Saving results to: /Users/ilseoblee/Library/Application Support/Janseon Studio/잔선_ 서울/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

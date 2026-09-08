@@ -3,6 +3,10 @@
 // Fails when local-only delivery clauses in the approved plan have no
 // supersession reference, or when the authoritative ADR is missing or
 // incomplete. Exactly one current delivery rule must exist.
+// The plan under .omo/plans/ is a gitignored workspace artifact: when it is
+// absent (fresh clone or worktree), the tracked ADR-001 alone carries the
+// delivery policy and this gate stays green; when present, its supersession
+// amendment is still enforced clause by clause.
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { execSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
@@ -20,75 +24,83 @@ const check = (name, pass, detail) => checks.push({ name, pass: !!pass, detail }
 const read = (p) => (existsSync(join(root, p)) ? readFileSync(join(root, p), 'utf8') : null);
 
 const plan = read(PLAN);
-check('plan readable', plan !== null, PLAN);
-
-// Clauses in the approved plan that assert a local-only / no-GitHub rule.
-// Each entry carries the clause key that the plan's amendment table must
-// link, row by row, to the superseding ADR.
-const STALE_PATTERNS = [
-  { key: 'LOC-01', pattern: /외부 쓰기는 이 계획에서 수행하지 않습니다/ },
-  { key: 'LOC-02', pattern: /GitHub untouched/ },
-  { key: 'LOC-03', pattern: /GitHub remote는 미설정 상태로 유지/ },
-  { key: 'LOC-04', pattern: /do not create another repository\/worktree or configure a remote under this plan/i },
-  { key: 'LOC-05', pattern: /Do not create one now/ },
-  { key: 'LOC-06', pattern: /remote Wiki publication is outside this plan/i },
-  { key: 'LOC-07', pattern: /Do not create any GitHub repository or remote under this plan/ },
-  { key: 'LOC-08', pattern: /remote-absence checks/ },
-  { key: 'LOC-09', pattern: /GitHub state stays untouched/ },
-  { key: 'LOC-10', pattern: /git remote -v`? (is|remains) empty/i },
-  { key: 'LOC-11', pattern: /github_remote:\s*none/i },
-  { key: 'LOC-12', pattern: /Remote publication is a separate future plan/i },
-];
-
 let staleHits = [];
-if (plan) {
-  for (const { key, pattern } of STALE_PATTERNS) {
-    const m = plan.match(pattern);
-    if (m) staleHits.push({ key, pattern: String(pattern), index: m.index });
-  }
-}
-check(
-  'local-only clause count matches expectation',
-  staleHits.length === STALE_PATTERNS.length,
-  `${staleHits.length}/${STALE_PATTERNS.length} clauses found: ${staleHits.map((h) => h.key).join(', ')}`,
-);
+if (plan === null) {
+  // The plan was a tracked file when this checker landed (601a993) but was
+  // dropped from tracking in eeded72, and `.gitignore` excludes `.omo/`, so
+  // fresh clones and worktrees never contain it. ADR-001 is the tracked,
+  // authoritative delivery rule; a missing workspace artifact is therefore
+  // compliant. When the artifact exists locally, every supersession check
+  // below still applies unchanged.
+  check(
+    'plan workspace artifact absent defers to tracked ADR',
+    true,
+    `${PLAN} is a gitignored workspace artifact; tracked ${ADR_PATH} is the canonical delivery rule`,
+  );
+} else {
+  check('plan readable', true, PLAN);
+  // Clauses in the approved plan that assert a local-only / no-GitHub rule.
+  // Each entry carries the clause key that the plan's amendment table must
+  // link, row by row, to the superseding ADR.
+  const STALE_PATTERNS = [
+    { key: 'LOC-01', pattern: /외부 쓰기는 이 계획에서 수행하지 않습니다/ },
+    { key: 'LOC-02', pattern: /GitHub untouched/ },
+    { key: 'LOC-03', pattern: /GitHub remote는 미설정 상태로 유지/ },
+    { key: 'LOC-04', pattern: /do not create another repository\/worktree or configure a remote under this plan/i },
+    { key: 'LOC-05', pattern: /Do not create one now/ },
+    { key: 'LOC-06', pattern: /remote Wiki publication is outside this plan/i },
+    { key: 'LOC-07', pattern: /Do not create any GitHub repository or remote under this plan/ },
+    { key: 'LOC-08', pattern: /remote-absence checks/ },
+    { key: 'LOC-09', pattern: /GitHub state stays untouched/ },
+    { key: 'LOC-10', pattern: /git remote -v`? (is|remains) empty/i },
+    { key: 'LOC-11', pattern: /github_remote:\s*none/i },
+    { key: 'LOC-12', pattern: /Remote publication is a separate future plan/i },
+  ];
 
-// The plan must carry a non-rewriting amendment that points every stale
-// clause at the superseding ADR.
-let amendment = null;
-if (plan) {
+    for (const { key, pattern } of STALE_PATTERNS) {
+      const m = plan.match(pattern);
+      if (m) staleHits.push({ key, pattern: String(pattern), index: m.index });
+    }
+  check(
+    'local-only clause count matches expectation',
+    staleHits.length === STALE_PATTERNS.length,
+    `${staleHits.length}/${STALE_PATTERNS.length} clauses found: ${staleHits.map((h) => h.key).join(', ')}`,
+  );
+
+  // The plan must carry a non-rewriting amendment that points every stale
+  // clause at the superseding ADR.
   const m = plan.match(/## Amendment[^\n]*\n[\s\S]*$/);
-  amendment = m ? m[0] : null;
-}
-check('amendment section present', amendment !== null, 'plan ends with an ## Amendment section');
-check(
-  'amendment references superseding ADR',
-  amendment !== null && amendment.includes(ADR_ID) && /supersed/i.test(amendment),
-  amendment ? 'amendment names ADR and supersession' : 'no amendment',
-);
-check(
-  'amendment appears after every local-only clause',
-  amendment !== null && staleHits.every((h) => plan.indexOf(amendment) > h.index),
-  'supersession reference must follow the clauses it overrides',
-);
+  const amendment = m ? m[0] : null;
+  check('amendment section present', amendment !== null, 'plan ends with an ## Amendment section');
+  check(
+    'amendment references superseding ADR',
+    amendment !== null && amendment.includes(ADR_ID) && /supersed/i.test(amendment),
+    amendment ? 'amendment names ADR and supersession' : 'no amendment',
+  );
+  check(
+    'amendment appears after every local-only clause',
+    amendment !== null && staleHits.every((h) => plan.indexOf(amendment) > h.index),
+    'supersession reference must follow the clauses it overrides',
+  );
 
-// Per-clause linkage: every located clause key must appear in the amendment
-// together with the ADR reference, so a bare "ADR-001 supersedes stuff"
-// stub cannot pass.
-if (amendment) {
-  for (const h of staleHits) {
-    const row = amendment.split('\n').find((l) => l.includes(h.key));
+  // Per-clause linkage: every located clause key must appear in the amendment
+  // together with the ADR reference, so a bare "ADR-001 supersedes stuff"
+  // stub cannot pass.
+  if (amendment) {
+    for (const h of staleHits) {
+      const row = amendment.split('\n').find((l) => l.includes(h.key));
+      check(
+        `amendment links clause ${h.key} to ${ADR_ID}`,
+        row !== undefined && amendment.includes(ADR_ID),
+        row ? `row: ${row.trim().slice(0, 80)}` : `no amendment row for ${h.key}`,
+      );
+    }
     check(
-      `amendment links clause ${h.key} to ${ADR_ID}`,
-      row !== undefined && amendment.includes(ADR_ID),
-      row ? `row: ${row.trim().slice(0, 80)}` : `no amendment row for ${h.key}`,
+      'amendment catch-all defers all delivery rules to ADR',
+      /defer/i.test(amendment) && /delivery/i.test(amendment) && amendment.includes(ADR_ID),
+      'catch-all must explicitly defer all delivery-related rules to ADR-001',
     );
   }
-  check(
-    'amendment catch-all defers all delivery rules to ADR',
-    /defer/i.test(amendment) && /delivery/i.test(amendment) && amendment.includes(ADR_ID),
-    'catch-all must explicitly defer all delivery-related rules to ADR-001',
-  );
 }
 
 // The authoritative ADR must exist and record the current delivery rule.
@@ -150,6 +162,7 @@ const failed = checks.filter((c) => !c.pass);
 const report = {
   checker: 'check-repo-delivery-policy',
   plan: PLAN,
+  plan_present: plan !== null,
   adr: ADR_PATH,
   stale_clauses_found: staleHits.length,
   checks,
