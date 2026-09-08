@@ -16,6 +16,12 @@ namespace Janseon.Core.Battle.Sim
         public Janseon.Core.Battle.Contracts.BattleOutcomeKind Outcome;
         public PurposeRng Rng;
         public ArenaState Arena;
+        public UnitId PlayerCommanderId;
+        public UnitId EnemyCommanderId;
+        public int[] PreviousHp;
+        public string[] PreviousStates;
+        public bool[] CommanderBelowHalf;
+
 
         public BattleSimState Clone()
         {
@@ -24,6 +30,10 @@ namespace Janseon.Core.Battle.Sim
             c.Sides = Sides == null ? null : Array.ConvertAll(Sides, x => x.Clone());
             c.Telegraphs = Telegraphs == null ? null : Array.ConvertAll(Telegraphs, x => x.Clone());
             c.Pending = new List<BattleTickCommand>(Pending ?? new List<BattleTickCommand>());
+            c.PlayerCommanderId = PlayerCommanderId; c.EnemyCommanderId = EnemyCommanderId;
+            c.PreviousHp = PreviousHp == null ? null : (int[])PreviousHp.Clone();
+            c.PreviousStates = PreviousStates == null ? null : (string[])PreviousStates.Clone();
+            c.CommanderBelowHalf = CommanderBelowHalf == null ? null : (bool[])CommanderBelowHalf.Clone();
             return c;
         }
         public string Fingerprint()
@@ -38,7 +48,7 @@ namespace Janseon.Core.Battle.Sim
     {
         public UnitId Id; public int Side; public GridCoord Cell; public CardinalDirection Facing;
         public int Hp; public int MaxHp; public int Power; public int RangeMin; public int RangeMax;
-        public int MoveTicksPerCell; public int AttackCooldownTicks; public int CooldownTicksLeft; public string State = "Active";
+        public int MoveTicksPerCell; public int MoveTicksLeft; public int AttackCooldownTicks; public int CooldownTicksLeft; public string State = "Active";
         public UnitState Clone() { return (UnitState)MemberwiseClone(); }
     }
     public sealed class SideState

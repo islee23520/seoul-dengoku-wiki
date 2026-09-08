@@ -32,7 +32,12 @@ namespace Janseon.Core.Battle.Contracts
                 if (side == 0) player[i] = u; else enemy[i] = u;
             }
             var telegraphs = new TelegraphPlan[12];
-            for (var i = 0; i < telegraphs.Length; i++) telegraphs[i] = new TelegraphPlan { Cell = new GridCoord(5 + i % 2, 1 + i / 2), ArrivalTick = 30 + i, Count = 1 };
+            for (var i = 0; i < telegraphs.Length; i++)
+            {
+                var side = i < 6 ? 1 : 0;
+                var slot = i % 6;
+                telegraphs[i] = new TelegraphPlan { Cell = new GridCoord(side == 1 ? 9 : 2, 1 + slot), ArrivalTick = 30 + i, Count = 1 };
+            }
             return new BattleSetup { Context = ctx, PlayerUnits = player, EnemyUnits = enemy, PlayerFormation = Formation(player), EnemyFormation = Formation(enemy), EnemyCommanderId = enemy[0].Id, Telegraphs = telegraphs };
         }
         static FormationSlot[] Formation(RosterUnit[] units) { var a = new FormationSlot[units.Length]; for (var i = 0; i < a.Length; i++) a[i] = new FormationSlot { Unit = units[i].Id, Row = i / 2, Column = i % 2 - 1, Facing = CardinalDirection.East }; return a; }

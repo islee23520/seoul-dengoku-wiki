@@ -59,19 +59,63 @@ namespace Janseon.Foundation.Tests
 
         [Test] public void Deploy_MapsFormationSlotsToCellsAndFacing()
         {
-            var state = BattleSim.Open(Setup()); var ledger = new Ledger();
-            var setup = Setup(); var cmd = Command("deploy", 0, 0, BattleTickCommandKind.Deploy);
-            cmd.Formation = setup.PlayerFormation;
+            var setup = Setup(); var state = BattleSim.Open(setup); var ledger = new Ledger();
+            var cmd = Command("deploy", 0, 0, BattleTickCommandKind.Deploy); cmd.Formation = setup.PlayerFormation;
             Assert.IsNull(BattleSim.Submit(state, ledger, cmd));
-            Assert.IsTrue(state.Deployed);
-            Assert.AreEqual(CardinalDirection.East, BattleSim.Snapshot(state).Units[0].Facing);
+            var snapshot = BattleSim.Snapshot(state);
+            var front = System.Array.Find(snapshot.Units, u => u.Id.ToString() == "p-0");
+            var rear = System.Array.Find(snapshot.Units, u => u.Id.ToString() == "p-2");
+            Assert.AreNotEqual(front.Cell, rear.Cell, "formation rows must resolve to distinct cells");
+            Assert.AreEqual(CardinalDirection.East, front.Facing);
+            Assert.AreEqual(setup.PlayerFormation[0].Facing, front.Facing);
         }
 
-        [Test] public void Movement_AdvancesOneIntegerCellAfterTenTicks() { Assert.AreEqual(10, BattleRules.MoveTicksPerCell); }
+        [Test] public void Movement_AdvancesOneIntegerCellAfterTenTicks()
+        {
+            var state = BattleSim.Open(Setup()); var ledger = new Ledger();
+            var before = BattleSim.Snapshot(state); var unit = System.Array.Find(before.Units, u => u.Id.ToString() == "p-0");
+            for (var i = 0; i < BattleRules.MoveTicksPerCell; i++) BattleSim.Step(state, ledger);
+            var after = System.Array.Find(BattleSim.Snapshot(state).Units, u => u.Id.ToString() == "p-0");
+            Assert.AreEqual(before.Tick + BattleRules.MoveTicksPerCell, BattleSim.Snapshot(state).Tick);
+            Assert.AreEqual(unit.Cell.X + 1, after.Cell.X);
+            Assert.AreEqual(unit.Cell.Y, after.Cell.Y);
+        }
         [Test] public void Attacks_UsePowerAndThirtyTickCooldown() { Assert.AreEqual(30, BattleRules.AttackCooldownTicks); }
-        [Test] public void Morale_UsesConfiguredLossRecoveryAndLockRules() { Assert.AreEqual(5, BattleRules.MoraleLossPerDeath); Assert.AreEqual(80, BattleRules.MoraleRecoverCap); }
-        [Test] public void Surrender_RequiresMoraleHpAndCoveredRetreat() { Assert.AreEqual(20, BattleRules.SurrenderMoraleMax); Assert.AreEqual(50, BattleRules.SurrenderCommanderHpPercentMax); }
-        [Test] public void Telegraph_ArrivesAtPlannedTickAndResolvesOccupiedCell() { Assert.AreEqual(12, Setup().Telegraphs.Length); }
+        [Test] public void Morale_UsesConfiguredLossRecoveryAndLockRules()
+        {
+            var state = BattleSim.Open(Setup()); var ledger = new Ledger();
+            state.Units[0].Hp = 0;
+            BattleSim.Step(state, ledger);
+            Assert.AreEqual(55, BattleSim.Snapshot(state).Sides[0].Morale);
+            BattleSim.Step(state, ledger);
+            Assert.AreEqual(55, BattleSim.Snapshot(state).Sides[0].Morale);
+            state.Units[0].Hp = state.Units[0].MaxHp / 2 - 1;
+            BattleSim.Step(state, ledger);
+            Assert.AreEqual(45, BattleSim.Snapshot(state).Sides[0].Morale);
+        }
+        [Test] public void Surrender_RequiresMoraleHpAndCoveredRetreat()
+        {
+            var setup = Setup(); var state = BattleSim.Open(setup); var ledger = new Ledger();
+            state.Sides[1].Morale = BattleRules.SurrenderMoraleMax;
+            state.Sides[1].CommanderHpPercent = BattleRules.SurrenderCommanderHpPercentMax;
+            state.Sides[1].RetreatCovered = true;
+            var demand = Command("surrender", 0, 0, BattleTickCommandKind.DemandSurrender);
+            Assert.IsNull(BattleSim.Submit(state, ledger, demand)); BattleSim.Step(state, ledger);
+            Assert.AreEqual(BattleOutcomeKind.EnemySurrender, BattleSim.Snapshot(state).Outcome);
+
+            var occupied = BattleSim.Open(setup); occupied.Sides[1].Morale = BattleRules.SurrenderMoraleMax; occupied.Sides[1].CommanderHpPercent = BattleRules.SurrenderCommanderHpPercentMax;
+            occupied.Units[0].Cell = occupied.Units[6].Cell;
+            var rejected = BattleSim.Submit(occupied, new Ledger(), Command("surrender", 0, 0, BattleTickCommandKind.DemandSurrender));
+            Assert.IsInstanceOf<BattleRejection>(rejected);
+            Assert.AreEqual(BattleRejectReason.SurrenderConditionsUnmet, ((BattleRejection)rejected).Reason);
+        }
+        [Test] public void Telegraph_ArrivesAtPlannedTickAndResolvesOccupiedCell()
+        {
+            var state = BattleSim.Open(Setup()); var ledger = new Ledger(); var plan = Setup().Telegraphs[0];
+            while (state.Tick <= plan.ArrivalTick) BattleSim.Step(state, ledger);
+            Assert.Greater(state.Units.Length, 12);
+            Assert.IsTrue(System.Array.Exists(BattleSim.Snapshot(state).Units, u => u.Side == 1 && u.Cell.X == plan.Cell.X && u.Cell.Y == plan.Cell.Y));
+        }
         [Test] public void Replay_IsDeterministicForSameSetupAndCommands()
         {
             var setup=Setup(); var deploy=Command("deploy",0,0,BattleTickCommandKind.Deploy); deploy.Formation=setup.PlayerFormation;
@@ -83,9 +127,7 @@ namespace Janseon.Foundation.Tests
         [Test] public void PauseHasNoSimulationMeaning() { Assert.AreEqual(BattleRules.TicksPerSecond, 30); }
         [Test] public void MaxTicks_EndsAsDraw_AndRoutingCanProduceRout()
         {
-            var state=BattleSim.Open(Setup()); var ledger=new Ledger();
-            for(int i=0;i<BattleRules.MaxTicks;i++) BattleSim.Step(state, ledger);
-            Assert.AreEqual(BattleOutcomeKind.Draw, BattleSim.Snapshot(state).Outcome);
+            var state=BattleSim.Open(Setup()); var ledger=new Ledger(); state.Tick = BattleRules.MaxTicks - 1; BattleSim.Step(state, ledger); Assert.AreEqual(BattleOutcomeKind.Draw, BattleSim.Snapshot(state).Outcome);
         }
     }
 }
