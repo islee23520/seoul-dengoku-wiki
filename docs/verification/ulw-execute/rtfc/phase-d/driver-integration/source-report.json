@@ -9,7 +9,7 @@
     "Game/Assets/Janseon/Foundation/UI/IPocCoreLoopSession.cs": "80fe6cbd6653280013ed509260b521bc956d55a58f9ec3dec9676e519a048e10",
     "Game/Assets/Janseon/Foundation/UI/PocCoreLoopController.cs": "3243cbf76a556a8f2bbe0a1e2b380b572749f861f2374c16efe2ecb6b3f03e8b",
     "Game/Assets/Tests/EditMode/BattleSessionDriverTests.cs": "3e99d1cb1ec95396342f35fe7ea15da9bfbde6f74c481e93e65ba74b88a902ad",
-    "Game/Assets/Tests/PlayMode/BattleSessionDriverPlayModeTests.cs": "201125b15e752f086eb5a0039417f879a196963d051b891b085e0aa3bf889e12",
+    "Game/Assets/Tests/PlayMode/BattleSessionDriverPlayModeTests.cs": "3f6914bc5d19c9e44a3781ff51f92afeac7d0a1f5f21cdbe1978fb24104a7e9f",
     "Game/Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs": "cb7e3cb9be07692854354c2a9c245db6a1980a0d2840d71494a18b9fd7e46ecb",
     "Game/Assets/Tests/PlayMode/UguiKeyboardPlayModeHelper.cs": "c08f84cacee703731e532101d9368e4f6ab7523c59cfc79c6ad47aab62f6bed4"
   },
@@ -60,6 +60,15 @@
       "skipped": "0",
       "inconclusive": "0",
       "duration": "10.6202192"
+    },
+    "readiness_clarified_production_e2e": {
+      "result": "Passed",
+      "total": "1",
+      "passed": "1",
+      "failed": "0",
+      "skipped": "0",
+      "inconclusive": "0",
+      "duration": "10.5747776"
     }
   },
   "lfs": {
@@ -81,8 +90,16 @@
     "final_editmode": "E:/Unity/Editor/6000.7.0a5/Editor/Unity.exe -batchmode -nographics -projectPath E:/git/seoul-kenshi-wt/rtfc-phase-d/Game -runTests -testPlatform EditMode -testFilter Janseon.Foundation.Tests.BattleSessionDriverTests -testResults .../final-editmode.xml -logFile .../final-editmode.log.txt",
     "final_playmode": "E:/Unity/Editor/6000.7.0a5/Editor/Unity.exe -batchmode -nographics -projectPath E:/git/seoul-kenshi-wt/rtfc-phase-d/Game -runTests -testPlatform PlayMode -testFilter Janseon.Foundation.Tests.BattleSessionDriverPlayModeTests.ProductionCoreLoop_DriverOwnsLiveBattleLifecycle_EndToEnd -testResults .../final-playmode.xml -logFile .../final-playmode.log.txt",
     "final_controller": "E:/Unity/Editor/6000.7.0a5/Editor/Unity.exe -batchmode -nographics -projectPath E:/git/seoul-kenshi-wt/rtfc-phase-d/Game -runTests -testPlatform PlayMode -testFilter Janseon.Foundation.Tests.CoreLoopPlayModeTests.CombatUi_SelectsAndPlaysMobilityCard_ThenTicksCooldown -testResults .../final-controller-playmode.xml -logFile .../final-controller-playmode.log.txt",
-    "build": "E:/Unity/Editor/6000.7.0a5/Editor/Unity.exe -batchmode -nographics -quit -projectPath E:/git/seoul-kenshi-wt/rtfc-phase-d/Game -executeMethod Janseon.Foundation.Editor.FoundationProjectBuilder.BuildWebGlPlayer -logFile .../build.log.txt"
+    "build": "E:/Unity/Editor/6000.7.0a5/Editor/Unity.exe -batchmode -nographics -quit -projectPath E:/git/seoul-kenshi-wt/rtfc-phase-d/Game -executeMethod Janseon.Foundation.Editor.FoundationProjectBuilder.BuildWebGlPlayer -logFile .../build.log.txt",
+    "readiness_final_playmode": "E:/Unity/Editor/6000.7.0a5/Editor/Unity.exe -batchmode -nographics -projectPath E:/git/seoul-kenshi-wt/rtfc-phase-d/Game -runTests -testPlatform PlayMode -testFilter Janseon.Foundation.Tests.BattleSessionDriverPlayModeTests.ProductionCoreLoop_DriverOwnsLiveBattleLifecycle_EndToEnd -testResults .../readiness-final-playmode.xml -logFile .../readiness-final-playmode.log.txt"
   },
   "scope_note": "No scene/assets/geography/HUD redesign. Production controller, driver, session interface, directly related tests/helpers only.",
-  "protected_foreign_file": "diff.txt remained untracked and untouched."
+  "protected_foreign_file": "diff.txt remained untracked and untouched.",
+  "readiness_reconciliation": {
+    "reports": "/Users/ilseoblee/workspace/seoul-kenshi/.omo/ulw-execute/phase-d-readiness/",
+    "production_consumer_required": true,
+    "synthetic_attach_insufficient": true,
+    "pause_acceptance": "Pause-only intervals preserve Core tick/hash/card cooldown/battle ledger. A valid accepted card may change state/hash/ledger while paused; the test snapshots again after acceptance and proves continued pause preserves that resulting state.",
+    "excluded_scope": "D2/D3 formation/morale/reinforcement/pause presentation, historical AP/end-turn overlay requirements, assets, and capture matrix are not D1 production-driver scope."
+  }
 }

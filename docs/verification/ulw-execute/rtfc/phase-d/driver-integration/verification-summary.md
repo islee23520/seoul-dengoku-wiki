@@ -11,3 +11,10 @@
 - Build attempt: exit 1 due pre-existing environment/content gate before player compilation: unsupported WebGL module and invalid pre-existing `MalgunGothicDynamic` TMP atlas. Raw log retained; no scoped build fix attempted.
 - LSP: unavailable for Windows-only checkout; Unity test compilation/runtime is the source-bound diagnostic evidence.
 - `diff.txt`: preserved untouched and untracked.
+
+## Readiness reconciliation
+
+- Read the four readiness reports; they do not supersede the production-consumer acceptance delivered here.
+- Refined the live E2E assertion boundary: pause-only frames preserve tick, hash, cooldown, steps, and battle ledger; the accepted card is separately asserted to change state/hash/ledger without changing ticks; continued pause then preserves that post-command state.
+- Readiness-cl clarified production PlayMode: 1/1, failed=0, skipped=0, exit 0.
+- D2/D3 UI, historical AP/end-turn, asset, and capture-matrix requirements remain explicitly outside this bounded D1 integration.

@@ -89,6 +89,19 @@ namespace Janseon.Foundation.Tests
             int pausedTick = session.Battle.Tick;
             string pausedHash = session.BattleHash;
             long pausedSteps = driver.TotalSteps;
+            int pausedCooldown = Array.Find(session.Battle.Cards,
+                card => card.Id == "mobility-regroup").RechargeTicksLeft;
+            string[] pausedLedger = LedgerSignatures(session.BattleLedger);
+
+            await AwaitProcessedFrames(driver, 5, "pause-only player-loop frames");
+            Assert.That(driver.TotalSteps, Is.EqualTo(pausedSteps), "pause alone must freeze production steps");
+            Assert.That(session.Battle.Tick, Is.EqualTo(pausedTick), "pause alone must freeze Core ticks");
+            Assert.That(session.BattleHash, Is.EqualTo(pausedHash), "pause alone must preserve the Core hash");
+            Assert.That(Array.Find(session.Battle.Cards,
+                card => card.Id == "mobility-regroup").RechargeTicksLeft, Is.EqualTo(pausedCooldown),
+                "pause alone must freeze card cooldowns");
+            Assert.That(LedgerSignatures(session.BattleLedger), Is.EqualTo(pausedLedger),
+                "pause alone must not append battle ledger events");
 
             UnitState commander = Array.Find(session.Battle.Units,
                 unit => unit.Id.Equals(session.Battle.PlayerCommanderId));
@@ -105,12 +118,26 @@ namespace Janseon.Foundation.Tests
                 Target = beforeCard, Facing = CardinalDirection.South,
             });
             Assert.That(session.Battle.Tick, Is.EqualTo(pausedTick), "paused command must not advance ticks");
+            Assert.That(session.BattleHash, Is.Not.EqualTo(pausedHash),
+                "a valid accepted card may mutate Core state while paused");
+            Assert.That(LedgerSignatures(session.BattleLedger), Is.Not.EqualTo(pausedLedger),
+                "an accepted card must retain its command ledger event while paused");
 
-            await AwaitProcessedFrames(driver, 5, "paused player-loop frames");
+            string acceptedCardHash = session.BattleHash;
+            string[] acceptedCardLedger = LedgerSignatures(session.BattleLedger);
+            int acceptedCardCooldown = Array.Find(session.Battle.Cards,
+                card => card.Id == "mobility-regroup").RechargeTicksLeft;
+
+            await AwaitProcessedFrames(driver, 5, "post-command paused player-loop frames");
             Assert.That(driver.TotalSteps, Is.EqualTo(pausedSteps), "pause must freeze production ticks");
             Assert.That(session.Battle.Tick, Is.EqualTo(pausedTick));
-            Assert.That(session.BattleHash, Is.Not.EqualTo(pausedHash),
-                "the accepted card mutates battle state while the tick timeline remains frozen");
+            Assert.That(session.BattleHash, Is.EqualTo(acceptedCardHash),
+                "after command acceptance, continued pause must preserve the resulting Core state");
+            Assert.That(Array.Find(session.Battle.Cards,
+                card => card.Id == "mobility-regroup").RechargeTicksLeft, Is.EqualTo(acceptedCardCooldown),
+                "continued pause must freeze the accepted card cooldown");
+            Assert.That(LedgerSignatures(session.BattleLedger), Is.EqualTo(acceptedCardLedger),
+                "continued pause must not append ledger events after command acceptance");
 
             Task<int> liveFrame = WaitForSteppedFrame(driver, TimeSpan.FromSeconds(8));
             await TriggerAndAwait(session, host.Presenter.TriggerBattleAdvanceForTest,
