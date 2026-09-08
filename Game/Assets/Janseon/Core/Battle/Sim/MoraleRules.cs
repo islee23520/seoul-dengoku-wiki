@@ -22,7 +22,6 @@ namespace Janseon.Core.Battle.Sim
     for (var i=0;i<s.Units.Length;i++) if (s.Units[i].Side==side && s.Units[i].Id.Equals(commanderId)) { hp=s.Units[i].MaxHp==0?0:s.Units[i].Hp*100/s.Units[i].MaxHp; break; }
     x.CommanderHpPercent=hp;
     if (hp>0 && hp<50 && !s.CommanderBelowHalf[side]) { x.Morale-=BattleRules.MoraleLossCommanderBelowHalf; s.CommanderBelowHalf[side]=true; }
-    else if (hp<=0) s.CommanderBelowHalf[side]=true;
     if (s.Tick>0 && s.Tick%BattleRules.TicksPerSecond==0 && x.Morale<BattleRules.MoraleRecoverCap) x.Morale=Math.Min(BattleRules.MoraleRecoverCap,x.Morale+BattleRules.MoraleRecoveryPerSecond);
     if (x.Morale<0) x.Morale=0;
     if (x.Morale==0) { x.CommandsLocked=true; foreach(var u in s.Units) if(u.Side==side && u.State=="Active") u.State="Routing"; }
