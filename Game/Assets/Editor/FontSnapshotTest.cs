@@ -12,7 +12,7 @@ public class FontSnapshotTest
     {
         var root = UguiHudBuilder.BuildGameplay(null);
         Assert.IsNotNull(root);
-        
+
         bool hasCJK = false;
         foreach (var txt in root.GetComponentsInChildren<TextMeshProUGUI>(true))
         {

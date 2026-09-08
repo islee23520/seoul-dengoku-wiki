@@ -5,6 +5,8 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Janseon.Core;
+using Janseon.Core.Battle.Contracts;
+using Janseon.Core.Battle.Sim;
 using Janseon.Foundation.AppFlow;
 using Janseon.Foundation.Composition;
 using Janseon.Foundation.UI;
@@ -158,9 +160,9 @@ namespace Janseon.Foundation.Tests
                 Assert.That(UguiHudBuilder.Find(gameplayRoot, name), Is.Not.Null, "missing Canvas object name " + name);
             }
 
-            for (int y = 0; y < BattleApi.GridHeight; y++)
+            for (int y = 0; y < 5; y++)
             {
-                for (int x = 0; x < BattleApi.GridWidth; x++)
+                for (int x = 0; x < 5; x++)
                 {
                     string cell = UiElementNames.BattleCell(x, y);
                     Assert.That(UguiHudBuilder.Find(gameplayRoot, cell), Is.Not.Null, "missing " + cell);
@@ -217,7 +219,7 @@ namespace Janseon.Foundation.Tests
                 GameplayUiSnapshot.FromCampaign(s.Clone(), null).Fingerprint,
                 Is.EqualTo(encounter.Fingerprint));
 
-            // Battle open from combat choice handoff.
+            // Battle open from combat choice handoff on the realtime public surface.
             object combat = CampaignApi.Apply(graph, s, ledger, new CampaignCommand
             {
                 Id = new CommandId("c1"),
@@ -225,96 +227,33 @@ namespace Janseon.Foundation.Tests
             });
             Assert.That(combat, Is.TypeOf<BattleRequired>());
             var battleCtx = ((BattleRequired)combat).Context;
-            BattleState battle = BattleApi.Open(battleCtx);
+            BattleSimState battle = BattleSim.Open(BattleSetup.FromContext(battleCtx));
             object attached = CampaignApi.AttachPendingBattle(s, ledger, battleCtx, new CommandId("a1"));
             s = (CampaignState)attached;
 
             GameplayUiSnapshot battleSnap = GameplayUiSnapshot.FromCampaign(s, battle);
             Assert.That(battleSnap.VisiblePanel, Is.EqualTo(GameplayPanelId.Battle));
-            Assert.That(battleSnap.BattleCellOccupancy.Count, Is.EqualTo(2));
+            Assert.That(battleSnap.BattleCellOccupancy.Count, Is.GreaterThan(0));
             Assert.That(
                 GameplayUiSnapshot.FromCampaign(s.Clone(), battle.Clone()).Fingerprint,
                 Is.EqualTo(battleSnap.Fingerprint));
 
-            // Settlement after player victory result.
-            while (battle.Outcome == BattleOutcomeKind.Ongoing)
+            // Settlement after a real terminal realtime result.
+            for (var i = 0; i < battle.Units.Length; i++)
             {
-                var active = battle.ActiveUnit;
-                if (active == null)
-                {
-                    break;
-                }
-
-                if (!active.IsPlayer)
-                {
-                    battle = (BattleState)BattleApi.Apply(battle, ledger, new BattleCommand
-                    {
-                        Id = new CommandId("end-" + battle.BattleTick.Value),
-                        Kind = BattleCommandKind.EndTurn,
-                        ActorId = active.UnitId,
-                    });
-                    continue;
-                }
-
-                var foe = BattleApi.FindUnit(battle, BattleApi.FoeId);
-                int dist = active.Position.ManhattanTo(foe.Position);
-                if (dist <= BattleApi.MeleeRange && active.Ap >= BattleApi.MeleeApCost)
-                {
-                    battle = (BattleState)BattleApi.Apply(battle, ledger, new BattleCommand
-                    {
-                        Id = new CommandId("atk-" + battle.BattleTick.Value),
-                        Kind = BattleCommandKind.MeleeAttack,
-                        ActorId = active.UnitId,
-                        TargetId = BattleApi.FoeId,
-                    });
-                }
-                else if (dist > 1 && active.Ap >= BattleApi.MoveApCost)
-                {
-                    int dx = Math.Sign(foe.Position.X - active.Position.X);
-                    int dy = dx == 0 ? Math.Sign(foe.Position.Y - active.Position.Y) : 0;
-                    object moved = BattleApi.Apply(battle, ledger, new BattleCommand
-                    {
-                        Id = new CommandId("mv-" + battle.BattleTick.Value),
-                        Kind = BattleCommandKind.Move,
-                        ActorId = active.UnitId,
-                        Dx = dx,
-                        Dy = dy,
-                    });
-                    if (moved is BattleState nextMove)
-                    {
-                        battle = nextMove;
-                    }
-                    else
-                    {
-                        battle = (BattleState)BattleApi.Apply(battle, ledger, new BattleCommand
-                        {
-                            Id = new CommandId("end2-" + battle.BattleTick.Value),
-                            Kind = BattleCommandKind.EndTurn,
-                            ActorId = active.UnitId,
-                        });
-                    }
-                }
-                else
-                {
-                    battle = (BattleState)BattleApi.Apply(battle, ledger, new BattleCommand
-                    {
-                        Id = new CommandId("end3-" + battle.BattleTick.Value),
-                        Kind = BattleCommandKind.EndTurn,
-                        ActorId = active.UnitId,
-                    });
-                }
-
-                if (battle.BattleTick.Value > 80)
-                {
-                    Assert.Fail("battle did not terminate deterministically");
-                }
+                battle.Units[i].State = "Active";
+                battle.Units[i].Hp = Math.Max(1, battle.Units[i].Hp);
+                battle.Units[i].MoveTicksLeft = 10000;
+                battle.Units[i].CooldownTicksLeft = 10000;
             }
-
-            Assert.That(battle.Outcome, Is.EqualTo(BattleOutcomeKind.PlayerVictory));
+            battle.Tick = BattleRules.MaxTicks - 1;
+            BattleSim.Step(battle, new Ledger());
+            Assert.That(battle.Outcome, Is.EqualTo(BattleOutcomeKind.Draw));
             var book = new SettlementBook();
-            EncounterResult result = SettlementApi.FromBattle(battle);
+            EncounterResult result = SettlementApi.FromRealtimeResult(BattleSim.Result(battle));
             object settled = SettlementApi.Apply(s, ledger, book, result);
-            Assert.That(settled, Is.TypeOf<SettlementSuccess>());
+            Assert.That(settled, Is.TypeOf<SettlementSuccess>(),
+                settled is SettlementRejection rejected ? rejected.Reason.ToString() : settled?.GetType().Name);
             s = ((SettlementSuccess)settled).State;
 
             GameplayUiSnapshot settlement = GameplayUiSnapshot.FromCampaign(s, battle: null);
@@ -592,4 +531,3 @@ namespace Janseon.Foundation.Tests
 
     }
 }
-

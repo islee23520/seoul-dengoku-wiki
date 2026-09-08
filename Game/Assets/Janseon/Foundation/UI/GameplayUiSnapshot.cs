@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 using Janseon.Core;
+using Janseon.Core.Battle.Contracts;
+using Janseon.Core.Battle.Sim;
 
 namespace Janseon.Foundation.UI
 {
@@ -57,7 +59,7 @@ namespace Janseon.Foundation.UI
         public bool ShowBattleAdvanceAction { get; private set; }
         public bool ShowReturnAction { get; private set; }
 
-        public static GameplayUiSnapshot FromCampaign(CampaignState campaign, BattleState battle)
+        public static GameplayUiSnapshot FromCampaign(CampaignState campaign, BattleSimState battle)
         {
             var snap = new GameplayUiSnapshot();
             if (campaign == null)
@@ -265,7 +267,7 @@ namespace Janseon.Foundation.UI
             snap.NamedFlags[UiElementNames.SettlementOutcome + ":bound"] = true;
         }
 
-        static void FillBattle(GameplayUiSnapshot snap, BattleState battle)
+        static void FillBattle(GameplayUiSnapshot snap, BattleSimState battle)
         {
             snap.NamedFlags[UiElementNames.BattleHud + ":visible"] = true;
             snap.NamedFlags[UiElementNames.BattleGrid + ":visible"] = true;
@@ -274,25 +276,20 @@ namespace Janseon.Foundation.UI
             snap.NamedFlags[UiElementNames.BattleLog + ":visible"] = true;
             snap.NamedFlags[UiElementNames.BattleHpMeter + ":visible"] = true;
             snap.NamedFlags[UiElementNames.BattleApMeter + ":visible"] = true;
-            snap.BattleForecast = "근접 AP"
-                + BattleApi.MeleeApCost.ToString(CultureInfo.InvariantCulture)
-                + " · 피해 "
-                + BattleApi.MeleeDamage.ToString(CultureInfo.InvariantCulture)
-                + " / 원거리 AP"
-                + BattleApi.RangedApCost.ToString(CultureInfo.InvariantCulture)
-                + " · 피해 "
-                + BattleApi.RangedDamage.ToString(CultureInfo.InvariantCulture);
+            snap.BattleForecast = "실시간 진형 전투 · 30 tick/s · 카드 재충전";
             if (battle.Units == null)
             {
                 return;
             }
 
-            BattleUnit active = battle.ActiveUnit;
+            UnitState active = null;
+            for (var i = 0; i < battle.Units.Length; i++)
+                if (battle.Units[i] != null && battle.Units[i].Side == 0 && battle.Units[i].State != "Down") { active = battle.Units[i]; break; }
             if (active == null)
             {
-                for (var i = 0; i < battle.Units.Count; i++)
+                for (var i = 0; i < battle.Units.Length; i++)
                 {
-                    if (battle.Units[i] != null && battle.Units[i].IsPlayer && !battle.Units[i].IsDowned)
+                    if (battle.Units[i] != null && battle.Units[i].Side == 0 && battle.Units[i].State != "Down")
                     {
                         active = battle.Units[i];
                         break;
@@ -304,31 +301,31 @@ namespace Janseon.Foundation.UI
             {
                 snap.BattleHp = active.Hp;
                 snap.BattleMaxHp = active.MaxHp > 0 ? active.MaxHp : 1;
-                snap.BattleAp = active.Ap;
-                snap.BattleMaxAp = active.MaxAp > 0 ? active.MaxAp : 1;
+                snap.BattleAp = 0;
+                snap.BattleMaxAp = 1;
                 snap.HpFill01 = Clamp01((float)snap.BattleHp / snap.BattleMaxHp);
                 snap.ApFill01 = Clamp01((float)snap.BattleAp / snap.BattleMaxAp);
                 snap.NamedFlags[UiElementNames.BattleHp + ":bound"] = true;
                 snap.NamedFlags[UiElementNames.BattleAp + ":bound"] = true;
             }
 
-            for (var i = 0; i < battle.Units.Count; i++)
+            for (var i = 0; i < battle.Units.Length; i++)
             {
                 var unit = battle.Units[i];
-                if (unit == null || unit.IsDowned)
+                if (unit == null || unit.State == "Down")
                 {
                     continue;
                 }
 
-                var key = UiElementNames.BattleCell(unit.Position.X, unit.Position.Y);
-                snap.BattleCellOccupancy[key] = unit.IsPlayer ? "ally" : "foe";
+                var key = UiElementNames.BattleCell(unit.Cell.X, unit.Cell.Y);
+                snap.BattleCellOccupancy[key] = unit.Side == 0 ? "ally" : "foe";
                 snap.BattleLogEntries.Add(
-                    (unit.IsPlayer ? "ally" : "foe")
-                    + "@" + unit.Position.X.ToString(CultureInfo.InvariantCulture)
-                    + "," + unit.Position.Y.ToString(CultureInfo.InvariantCulture)
+                    (unit.Side == 0 ? "ally" : "foe")
+                    + "@" + unit.Cell.X.ToString(CultureInfo.InvariantCulture)
+                    + "," + unit.Cell.Y.ToString(CultureInfo.InvariantCulture)
                     + " hp=" + unit.Hp.ToString(CultureInfo.InvariantCulture)
                     + "/" + unit.MaxHp.ToString(CultureInfo.InvariantCulture)
-                    + " ap=" + unit.Ap.ToString(CultureInfo.InvariantCulture));
+                    + " ap=" + 0.ToString(CultureInfo.InvariantCulture));
             }
 
             if (snap.BattleLogEntries.Count > 0)
@@ -336,15 +333,15 @@ namespace Janseon.Foundation.UI
                 snap.NamedFlags[UiElementNames.BattleLog + ":bound"] = true;
             }
 
-            for (var i = 0; i < battle.Units.Count; i++)
+            for (var i = 0; i < battle.Units.Length; i++)
             {
-                BattleUnit unit = battle.Units[i];
-                if (unit == null || !unit.IsPlayer)
+                UnitState unit = battle.Units[i];
+                if (unit == null || unit.Side != 0)
                 {
                     continue;
                 }
 
-                snap.PartyNames.Add(unit.UnitId);
+                snap.PartyNames.Add(unit.Id.ToString());
                 snap.PartyHp.Add(unit.Hp);
                 snap.PartyMaxHp.Add(unit.MaxHp);
             }
@@ -412,7 +409,7 @@ namespace Janseon.Foundation.UI
             return "station-" + value;
         }
 
-        string ComputeFingerprint(CampaignState campaign, BattleState battle)
+        string ComputeFingerprint(CampaignState campaign, BattleSimState battle)
         {
             var sb = new StringBuilder(128);
             sb.Append("panel=").Append(((int)VisiblePanel).ToString(CultureInfo.InvariantCulture));
@@ -439,7 +436,7 @@ namespace Janseon.Foundation.UI
 
             if (battle != null)
             {
-                sb.Append(";btick=").Append(battle.BattleTick.Value.ToString(CultureInfo.InvariantCulture));
+                sb.Append(";btick=").Append(battle.Tick.ToString(CultureInfo.InvariantCulture));
                 sb.Append(";bout=").Append(((int)battle.Outcome).ToString(CultureInfo.InvariantCulture));
             }
 

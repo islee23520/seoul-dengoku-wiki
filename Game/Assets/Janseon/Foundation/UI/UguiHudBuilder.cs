@@ -66,7 +66,7 @@ namespace Janseon.Foundation.UI
             }
 
             RectTransform route = Panel(root, UiElementNames.RouteRail, new Vector2(0f, 0f), new Vector2(0f, 1f), new Vector2(12f, 12f), new Vector2(360f, -112f));
-            
+
             // 2D S-Map overlay (Line 2-like graph)
             RectTransform sMapGraph = new GameObject("s-map-graph").AddComponent<RectTransform>();
             sMapGraph.SetParent(route, false);
@@ -78,7 +78,7 @@ namespace Janseon.Foundation.UI
             graphLe.minHeight = 48f;
 
             HudButton(sMapGraph, UiElementNames.StationYeongdeungpo, "영등포");
-            
+
             // Line segment
             GameObject link1 = new GameObject("link1");
             link1.transform.SetParent(sMapGraph, false);
@@ -130,6 +130,7 @@ namespace Janseon.Foundation.UI
             HudButton(battle, "battle-melee", "근접  ·  AP2 / 5");
             HudButton(battle, "battle-ranged", "원거리  ·  AP2 / 3");
             HudButton(battle, UiElementNames.BattleWait, "대기");
+            HudButton(battle, UiElementNames.MobilityRegroup, "기동 재집결 · 남쪽 1칸");
             RectTransform battleGrid = new GameObject(UiElementNames.BattleGrid).AddComponent<RectTransform>();
             battleGrid.SetParent(battle, false);
             battleGrid.anchorMin = new Vector2(0f, 0f);

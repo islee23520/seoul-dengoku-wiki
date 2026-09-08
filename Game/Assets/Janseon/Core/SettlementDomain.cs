@@ -50,7 +50,11 @@ namespace Janseon.Core
         PlayerVictory = 1,
         EnemyVictory = 2,
         Negotiate = 3,
-        Bypass = 4
+        Bypass = 4,
+        Draw = 5,
+        PlayerRetreat = 6,
+        EnemySurrender = 7,
+        PlayerRout = 8
     }
 
     public enum SettlementRejectReason
@@ -343,7 +347,11 @@ namespace Janseon.Core
             }
 
             var isCombat = result.Outcome == SettlementOutcomeKind.PlayerVictory
-                || result.Outcome == SettlementOutcomeKind.EnemyVictory;
+                || result.Outcome == SettlementOutcomeKind.EnemyVictory
+                || result.Outcome == SettlementOutcomeKind.Draw
+                || result.Outcome == SettlementOutcomeKind.PlayerRetreat
+                || result.Outcome == SettlementOutcomeKind.EnemySurrender
+                || result.Outcome == SettlementOutcomeKind.PlayerRout;
             var isNonCombat = result.Outcome == SettlementOutcomeKind.Negotiate
                 || result.Outcome == SettlementOutcomeKind.Bypass;
 
@@ -407,13 +415,13 @@ namespace Janseon.Core
             // Result payload HP (Strategy-Battle-Roundtrip 부상 왕복): combat results must carry
             // the leftover party HP snapshot, and a present snapshot outside 0..DefaultMaxHp is
             // corrupt input — rejected, never clamped or silently defaulted.
-            if (result.UnitHp != null && !result.UnitHp.IsWithinRange(0, BattleApi.DefaultMaxHp))
+            if (result.UnitHp != null && !result.UnitHp.IsWithinRange(0, Battle.Contracts.RealtimeBattleApi.PersistentMaxHp))
             {
                 return new SettlementRejection(SettlementRejectReason.InvalidResult, state.Stage, result.ResultId);
             }
 
             if (isCombat
-                && (result.UnitHp == null || !result.UnitHp.TryGet(BattleApi.AllyId, out _)))
+                && (result.UnitHp == null || !result.UnitHp.TryGet(Battle.Contracts.RealtimeBattleApi.PersistentAllyId, out _)))
             {
                 return new SettlementRejection(SettlementRejectReason.InvalidResult, state.Stage, result.ResultId);
             }
@@ -550,42 +558,18 @@ namespace Janseon.Core
         /// <summary>
         /// Build a combat EncounterResult from a terminal battle state. Does not mutate battle.
         /// </summary>
-        public static EncounterResult FromBattle(BattleState battle)
+        public static EncounterResult FromRealtimeResult(Janseon.Core.Battle.Contracts.BattleResult battle)
         {
-            if (battle == null)
-            {
-                throw new ArgumentNullException(nameof(battle));
-            }
-
-            var resultHash = BattleApi.ComputeResultHash(battle);
-            var resultId = new ResultId("result-" + resultHash.Substring(0, 16));
-            var battleIdValue = battle.Context != null ? battle.Context.BattleId : string.Empty;
-            var partyHp = new Dictionary<string, int>();
-            if (battle.Units != null)
-            {
-                for (var i = 0; i < battle.Units.Count; i++)
-                {
-                    var unit = battle.Units[i];
-                    if (unit.IsPlayer && unit.UnitId != null)
-                    {
-                        partyHp[unit.UnitId] = unit.Hp;
-                    }
-                }
-            }
-
-            return new EncounterResult
-            {
-                ResultId = resultId,
-                BattleId = new BattleId(battleIdValue),
-                Outcome = MapBattleOutcome(battle.Outcome),
-                ResultHash = resultHash,
-                UnitHp = new UnitHpSnapshot(partyHp)
-            };
+            if (battle == null) throw new ArgumentNullException(nameof(battle));
+            if (battle.Outcome == Janseon.Core.Battle.Contracts.BattleOutcomeKind.Ongoing)
+                throw new ArgumentException("Battle result must be terminal.", nameof(battle));
+            return battle.ToEncounterResult();
         }
 
         /// <summary>
         /// Build a non-combat EncounterResult from a locked campaign choice at Settlement stage.
         /// </summary>
+
         public static EncounterResult FromNonCombat(CampaignState state)
         {
             if (state == null)
@@ -641,19 +625,6 @@ namespace Janseon.Core
             return CoreApi.StableHashHex(sb.ToString());
         }
 
-        static SettlementOutcomeKind MapBattleOutcome(BattleOutcomeKind outcome)
-        {
-            switch (outcome)
-            {
-                case BattleOutcomeKind.PlayerVictory:
-                    return SettlementOutcomeKind.PlayerVictory;
-                case BattleOutcomeKind.EnemyVictory:
-                    return SettlementOutcomeKind.EnemyVictory;
-                default:
-                    return SettlementOutcomeKind.None;
-            }
-        }
-
         // GREEN implementation helpers live below once RED is proven.
         internal static void ResolveConsequences(
             SettlementOutcomeKind outcome,
@@ -664,11 +635,14 @@ namespace Janseon.Core
             switch (outcome)
             {
                 case SettlementOutcomeKind.PlayerVictory:
+                case SettlementOutcomeKind.EnemySurrender:
                     consequenceId = ConsequencePlayerVictory;
                     resourceDelta = PlayerVictoryResourceDelta;
                     reputationDelta = PlayerVictoryReputationDelta;
                     break;
                 case SettlementOutcomeKind.EnemyVictory:
+                case SettlementOutcomeKind.PlayerRetreat:
+                case SettlementOutcomeKind.PlayerRout:
                     consequenceId = ConsequenceEnemyVictory;
                     resourceDelta = EnemyVictoryResourceDelta;
                     reputationDelta = EnemyVictoryReputationDelta;
@@ -677,6 +651,11 @@ namespace Janseon.Core
                     consequenceId = CampaignApi.ConsequenceNegotiate;
                     resourceDelta = CampaignApi.NegotiateResourceDelta;
                     reputationDelta = CampaignApi.NegotiateReputationDelta;
+                    break;
+                case SettlementOutcomeKind.Draw:
+                    consequenceId = "draw";
+                    resourceDelta = 0;
+                    reputationDelta = 0;
                     break;
                 case SettlementOutcomeKind.Bypass:
                     consequenceId = CampaignApi.ConsequenceBypass;

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using Janseon.Core;
+using Janseon.Core.Battle.Contracts;
+using Janseon.Core.Battle.Sim;
 using Janseon.Foundation.AppFlow;
 using Janseon.Foundation.Composition;
 using Janseon.Foundation.UI;
@@ -42,7 +44,7 @@ namespace Janseon.Foundation.Tests
                 Kind = CampaignCommandKind.ChooseCombat,
             });
             var ctx = ((BattleRequired)combat).Context;
-            BattleState battle = BattleApi.Open(ctx);
+            BattleSimState battle = BattleSim.Open(BattleSetup.FromContext(ctx));
             s = (CampaignState)CampaignApi.AttachPendingBattle(s, ledger, ctx, new CommandId("a"));
 
             GameplayUiSnapshot battleSnap = GameplayUiSnapshot.FromCampaign(s, battle);

@@ -19,16 +19,32 @@ namespace Janseon.Core.Battle.Contracts
     {
         public BattleContext Context; public RosterUnit[] PlayerUnits; public RosterUnit[] EnemyUnits;
         public FormationSlot[] PlayerFormation; public FormationSlot[] EnemyFormation; public UnitId EnemyCommanderId;
-        public TelegraphPlan[] Telegraphs;
+        public TelegraphPlan[] Telegraphs; public Heightmap Terrain;
         public static BattleSetup FromContext(BattleContext ctx)
         {
+            return FromContext(ctx, null);
+        }
+        public static BattleSetup FromContext(BattleContext ctx, Heightmap terrain)
+        {
             if (ctx == null) throw new ArgumentNullException(nameof(ctx));
+            ctx.ValidateIntegrity();
             var roles = new[] { "근위", "돌격", "궁수" };
             var hp = new[] { 30, 20, 14 }; var power = new[] { 4, 6, 3 }; var range = new[] { 1, 1, 3 };
             var player = new RosterUnit[6]; var enemy = new RosterUnit[6];
             for (var side = 0; side < 2; side++) for (var i = 0; i < 6; i++)
             {
-                var r = i / 2; var u = new RosterUnit { Id = new UnitId((side == 0 ? "p-" : "e-") + i.ToString(CultureInfo.InvariantCulture)), Side = side, Role = roles[r], Hp = hp[r], MaxHp = hp[r], Power = power[r], RangeMin = 1, RangeMax = range[r], MoveTicksPerCell = BattleRules.MoveTicksPerCell, AttackCooldownTicks = BattleRules.AttackCooldownTicks };
+                var r = i / 2;
+                var id = (side == 0 ? RealtimeBattleApi.PlayerUnitPrefix : RealtimeBattleApi.EnemyUnitPrefix)
+                    + i.ToString(CultureInfo.InvariantCulture);
+                var maxHp = side == 0 ? RealtimeBattleApi.PersistentMaxHp : hp[r];
+                var startHp = maxHp;
+                if (side == 0 && ctx.StartHp != null && ctx.StartHp.TryGet(id, out var storedHp))
+                {
+                    if (storedHp < 0 || storedHp > maxHp)
+                        throw new ArgumentException("Corrupt start HP for unit '" + id + "'.", nameof(ctx));
+                    startHp = storedHp;
+                }
+                var u = new RosterUnit { Id = new UnitId(id), Side = side, Role = roles[r], Hp = startHp, MaxHp = maxHp, Power = power[r], RangeMin = 1, RangeMax = range[r], MoveTicksPerCell = BattleRules.MoveTicksPerCell, AttackCooldownTicks = BattleRules.AttackCooldownTicks };
                 if (side == 0) player[i] = u; else enemy[i] = u;
             }
             var telegraphs = new TelegraphPlan[12];
@@ -38,17 +54,57 @@ namespace Janseon.Core.Battle.Contracts
                 var slot = i % 6;
                 telegraphs[i] = new TelegraphPlan { Cell = new GridCoord(side == 1 ? 9 : 2, 1 + slot), ArrivalTick = 30 + i, Count = 1 };
             }
-            return new BattleSetup { Context = ctx, PlayerUnits = player, EnemyUnits = enemy, PlayerFormation = Formation(player), EnemyFormation = Formation(enemy), EnemyCommanderId = enemy[0].Id, Telegraphs = telegraphs };
+            return new BattleSetup { Context = ctx, PlayerUnits = player, EnemyUnits = enemy, PlayerFormation = Formation(player), EnemyFormation = Formation(enemy), EnemyCommanderId = enemy[0].Id, Telegraphs = telegraphs, Terrain = terrain != null ? terrain.Snapshot() : null };
         }
         static FormationSlot[] Formation(RosterUnit[] units) { var a = new FormationSlot[units.Length]; for (var i = 0; i < a.Length; i++) a[i] = new FormationSlot { Unit = units[i].Id, Row = i / 2, Column = i % 2 - 1, Facing = CardinalDirection.East }; return a; }
     }
 
     public enum BattleTickCommandKind { Deploy, PlayCard, OrderRetreat, DemandSurrender, SetFacing }
-    public sealed class BattleTickCommand { public CommandId Id; public int Seq; public Tick At; public BattleTickCommandKind Kind; public FormationSlot[] Formation; public string CardId; public GridCoord Target; public CardinalDirection Facing; }
-    public enum BattleRejectReason { TickMismatch, BattleStarted, NotDeployed, CardUnknown, CardRecharging, CardOutOfRadius, CommandsLocked, SurrenderConditionsUnmet, BattleEnded, UnknownActor, MalformedCommand }
+    public sealed class BattleTickCommand { public CommandId Id; public int Seq; public Tick At; public BattleTickCommandKind Kind; public FormationSlot[] Formation; public string CardId; public GridCoord Target; public CardinalDirection Facing; public string[] StrongholdCardIds; public string[] StrongholdCards; }
+    public enum BattleRejectReason { TickMismatch, BattleStarted, NotDeployed, CardUnknown, CardRecharging, CardOutOfRadius, CommandsLocked, SurrenderConditionsUnmet, BattleEnded, UnknownActor, MalformedCommand, RetreatUnavailable, CardInvalidTarget, CardDestinationBlocked, CardDestinationOutOfBounds }
+    public enum CardKind { Character, Stronghold }
+    public sealed class CardDefinition
+    {
+        public string Id; public CardKind Kind; public int RechargeTicks; public int Effect; public string EffectKey;
+    }
     public sealed class BattleRejection { public BattleRejectReason Reason; public string Detail; }
-    public sealed class BattleRules { public const int TicksPerSecond=30, MoveTicksPerCell=10, AttackCooldownTicks=30, MoraleBase=60, MoraleWarn=40, MoraleRecoverCap=80, MoraleRecoveryPerSecond=5, MoraleLossPerDeath=5, MoraleLossCommanderBelowHalf=10, SurrenderMoraleMax=20, SurrenderCommanderHpPercentMax=50, StrongholdCardSlots=2, MaxTicks=9000, CommandRadius=3; public const string RulesVersion="poc-rtfc-v1"; }
+    public sealed class BattleRules { public const int TicksPerSecond=30, MoveTicksPerCell=10, AttackCooldownTicks=30, MoraleBase=60, MoraleWarn=40, MoraleRecoverCap=80, MoraleRecoveryPerSecond=5, MoraleLossPerDeath=5, MoraleLossCommanderBelowHalf=10, SurrenderMoraleMax=20, SurrenderCommanderHpPercentMax=50, StrongholdCardSlots=2, CardEffectTicks=150, MaxTicks=9000, CommandRadius=3; public const string RulesVersion="poc-rtfc-v1"; }
+
+    public static class RealtimeBattleApi
+    {
+        public const string PlayerUnitPrefix = "ally-";
+        public const string EnemyUnitPrefix = "foe-";
+        public const string PersistentAllyId = "ally-0";
+        public const int PersistentMaxHp = 10;
+    }
 
     public sealed class BattleSnapshot { public int Tick; public BattleOutcomeKind Outcome; public SideSnapshot[] Sides; public UnitSnapshot[] Units; public TelegraphView[] Telegraphs; public CardView[] Cards; public sealed class SideSnapshot { public int Morale; public int CommanderHpPercent; public bool RetreatCovered; public bool CommandsLocked; } public sealed class UnitSnapshot { public UnitId Id; public int Side; public GridCoord Cell; public CardinalDirection Facing; public int Hp; public string State; } public sealed class TelegraphView { public GridCoord Cell; public int ArrivalTick; public int Count; } public sealed class CardView { public string Id; public int RechargeTicksLeft; } }
-    public sealed class BattleResult { public BattleOutcomeKind Outcome; public int FinalTick; public string ResultHash; public EncounterResult ToEncounterResult() { return new EncounterResult { ResultHash = ResultHash }; } }
+    public sealed class BattleResult
+    {
+        public BattleOutcomeKind Outcome;
+        public int FinalTick;
+        public string ResultHash;
+        public string BattleId;
+        public UnitHpSnapshot UnitHp;
+
+        /// <summary>Maps every terminal realtime outcome without collapsing retreat/rout/surrender/draw into victory.</summary>
+        public EncounterResult ToEncounterResult()
+        {
+            var hash = ResultHash ?? string.Empty;
+            return new EncounterResult
+            {
+                ResultId = new ResultId("result-" + (hash.Length >= 16 ? hash.Substring(0, 16) : hash)),
+                BattleId = new BattleId(BattleId),
+                Outcome = Outcome == BattleOutcomeKind.PlayerVictory ? SettlementOutcomeKind.PlayerVictory
+                    : Outcome == BattleOutcomeKind.EnemyVictory ? SettlementOutcomeKind.EnemyVictory
+                    : Outcome == BattleOutcomeKind.Draw ? SettlementOutcomeKind.Draw
+                    : Outcome == BattleOutcomeKind.PlayerRetreat ? SettlementOutcomeKind.PlayerRetreat
+                    : Outcome == BattleOutcomeKind.EnemySurrender ? SettlementOutcomeKind.EnemySurrender
+                    : Outcome == BattleOutcomeKind.PlayerRout ? SettlementOutcomeKind.PlayerRout
+                    : SettlementOutcomeKind.None,
+                ResultHash = hash,
+                UnitHp = UnitHp
+            };
+        }
+    }
 }

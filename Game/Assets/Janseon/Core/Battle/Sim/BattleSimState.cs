@@ -16,16 +16,20 @@ namespace Janseon.Core.Battle.Sim
         public Janseon.Core.Battle.Contracts.BattleOutcomeKind Outcome;
         public PurposeRng Rng;
         public ArenaState Arena;
+        public Heightmap Terrain;
         public UnitId PlayerCommanderId;
         public UnitId EnemyCommanderId;
         public int[] PreviousHp;
         public string[] PreviousStates;
         public bool[] CommanderBelowHalf;
+        public CardState[] Cards;
+        public string[] StrongholdCardIds;
+        public BattleContext Context;
 
 
         public BattleSimState Clone()
         {
-            var c = new BattleSimState { Tick=Tick, Deployed=Deployed, Outcome=Outcome, Rng=Rng == null ? null : Rng.Clone(), Arena=Arena == null ? null : Arena.Clone() };
+            var c = new BattleSimState { Tick=Tick, Deployed=Deployed, Outcome=Outcome, Rng=Rng == null ? null : Rng.Clone(), Arena=Arena == null ? null : Arena.Clone(), Terrain=Terrain == null ? null : Terrain.Snapshot() };
             c.Units = Units == null ? null : Array.ConvertAll(Units, x => x.Clone());
             c.Sides = Sides == null ? null : Array.ConvertAll(Sides, x => x.Clone());
             c.Telegraphs = Telegraphs == null ? null : Array.ConvertAll(Telegraphs, x => x.Clone());
@@ -34,15 +38,26 @@ namespace Janseon.Core.Battle.Sim
             c.PreviousHp = PreviousHp == null ? null : (int[])PreviousHp.Clone();
             c.PreviousStates = PreviousStates == null ? null : (string[])PreviousStates.Clone();
             c.CommanderBelowHalf = CommanderBelowHalf == null ? null : (bool[])CommanderBelowHalf.Clone();
+            c.Cards = Cards == null ? null : System.Array.ConvertAll(Cards, x => x.Clone());
+            c.StrongholdCardIds = StrongholdCardIds == null ? null : (string[])StrongholdCardIds.Clone();
+            c.Context = Context;
             return c;
         }
         public string Fingerprint()
         {
             var s = Tick + ";" + (int)Outcome + ";" + Deployed;
-            if (Units != null) for (var i=0; i<Units.Length; i++) { var u=Units[i]; s += ";" + u.Id + ":" + u.Cell + ":" + u.Hp + ":" + u.State + ":" + u.CooldownTicksLeft; }
+            if (Units != null) for (var i=0; i<Units.Length; i++) { var u=Units[i]; s += ";" + u.Id + ":" + u.Cell + ":" + (int)u.Facing + ":" + u.Hp + ":" + u.State + ":" + u.CooldownTicksLeft; }
+            if (Terrain != null) s += ";terrain=" + Terrain.Fingerprint();
             if (Sides != null) for (var i=0; i<Sides.Length; i++) { var x=Sides[i]; s += ";m" + x.Morale + ":" + x.CommandsLocked; }
+            if (Cards != null) for (var i=0; i<Cards.Length; i++) { var card=Cards[i]; s += ";c" + card.Id + ":" + card.RechargeTicksLeft + ":" + card.ActiveTicksLeft; }
+            if (StrongholdCardIds != null) for (var i=0; i<StrongholdCardIds.Length; i++) s += ";sh" + StrongholdCardIds[i];
             return CoreApi.StableHashHex(s);
         }
+    }
+    public sealed class CardState
+    {
+        public string Id; public int RechargeTicksLeft; public int ActiveTicksLeft;
+        public CardState Clone() { return (CardState)MemberwiseClone(); }
     }
     public sealed class UnitState
     {

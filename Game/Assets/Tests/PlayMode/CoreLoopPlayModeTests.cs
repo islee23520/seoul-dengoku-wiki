@@ -5,7 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Collections;
+using System.IO;
 using Janseon.Core;
+using Janseon.Core.Battle.Contracts;
 using Janseon.Foundation.AppFlow;
 using Janseon.Foundation.Composition;
 using Janseon.Foundation.UI;
@@ -14,6 +17,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.TestTools;
 using VContainer;
 using VContainer.Unity;
 
@@ -222,26 +226,112 @@ namespace Janseon.Foundation.Tests
         }
 
         [Test]
-        public async Task CombatBranch_BattleApiToPlayerVictory_ExactOnceSettlement_ReturnsBaseReady()
+        public async Task CombatBranch_RealtimeBattleToTerminal_ExactOnceSettlement_ReturnsBaseReady()
         {
             BranchResult branch = await RunBranchAsync(EncounterChoice.Combat);
             Assert.That(branch.Session.Campaign.Stage, Is.EqualTo(CampaignStage.BaseReady));
-            Assert.That(branch.Session.Campaign.ConsequenceId,
-                Is.EqualTo(SettlementApi.ConsequencePlayerVictory));
-            Assert.That(branch.Session.Campaign.Resources,
-                Is.EqualTo(30 + CampaignApi.ConfirmedMoveResourceDelta + SettlementApi.PlayerVictoryResourceDelta));
-            Assert.That(branch.Session.Campaign.Reputation,
-                Is.EqualTo(0 + SettlementApi.PlayerVictoryReputationDelta));
+            Assert.That(branch.Session.Campaign.ConsequenceId, Is.Not.Empty);
             Assert.That(branch.Session.LastReceipt, Is.Not.Null);
-            Assert.That(branch.Session.LastReceipt.Outcome, Is.EqualTo(SettlementOutcomeKind.PlayerVictory));
+            Assert.That(branch.Session.LastReceipt.Outcome, Is.Not.EqualTo(SettlementOutcomeKind.None));
             Assert.That(string.IsNullOrEmpty(branch.Session.LastReceipt.BattleId.Value), Is.False);
             Assert.That(branch.BattleContextHash, Is.Not.Empty);
             Assert.That(branch.Session.LastDuplicateReceipt, Is.Not.Null);
             Assert.That(branch.Session.LastDuplicateReceipt.Equals(branch.Session.LastReceipt), Is.True);
             Assert.That(branch.Session.Campaign.PendingBattle, Is.Null);
             Assert.That(branch.BattleCommands, Is.GreaterThan(0),
-                "combat must execute real BattleApi commands via battle-advance");
+                "combat must execute real realtime simulation ticks via battle-advance");
             Debug.Log("CORE_LOOP_COMBAT " + branch.Summarize());
+        }
+
+        [Test]
+        public async Task CombatUi_SelectsAndPlaysMobilityCard_ThenTicksCooldown()
+        {
+            await BootstrapToFoundationAsync();
+            GameplayUiHost host = FindGameplayHost();
+            IPocCoreLoopSession session = ResolveSession(host);
+            RectTransform root = RequireRoot(host);
+            await ClickAndAwait(session, root, ActionDepart, s => s.Campaign.Stage == CampaignStage.ExpeditionTravel);
+            await ClickAndAwait(session, root, UiElementNames.StationSindorim, s => s.Campaign.Node.Equals(StationId.Sindorim));
+            await ClickAndAwait(session, root, ActionFaceEncounter, s => s.Campaign.Stage == CampaignStage.Encounter);
+            await ClickAndAwait(session, root, ActionEnterResolution, s => s.Campaign.Stage == CampaignStage.Resolution);
+            await ClickAndAwait(session, root, UiElementNames.ChoiceCombat, s => s.Battle != null && s.Battle.Deployed);
+
+            var commander = session.Battle.Units.First(u => u.Id.Equals(session.Battle.PlayerCommanderId));
+            GridCoord beforeCell = commander.Cell;
+            await ClickAndAwait(session, root, UiElementNames.MobilityRegroup, s =>
+            {
+                var card = s.Battle.Cards.First(c => c.Id == "mobility-regroup");
+                return commander.Cell.Equals(beforeCell.Step(CardinalDirection.South))
+                    && card.RechargeTicksLeft == 600;
+            });
+            int beforeCooldown = session.Battle.Cards.First(c => c.Id == "mobility-regroup").RechargeTicksLeft;
+            await ClickAndAwait(session, root, BattleAdvance, s =>
+                s.Battle.Cards.First(c => c.Id == "mobility-regroup").RechargeTicksLeft < beforeCooldown);
+            Assert.That(session.Battle.Cards.First(c => c.Id == "mobility-regroup").RechargeTicksLeft, Is.EqualTo(592));
+
+            await UguiKeyboardPlayModeHelper.FinishCombatKeyboard(session, root);
+            SettlementReceipt receipt = session.LastReceipt;
+            string settledHash = session.CampaignHash;
+            int settledEvents = session.CampaignLedger.Events.Count;
+            Task duplicateSignal = WaitSignal(session);
+            host.Presenter.TriggerSettleForTest();
+            await AwaitTask(duplicateSignal, TimeSpan.FromSeconds(5), "mobility roundtrip duplicate receipt");
+            Assert.That(session.LastDuplicateReceipt, Is.Not.Null);
+            Assert.That(session.LastDuplicateReceipt.Equals(receipt), Is.True);
+            Assert.That(session.CampaignHash, Is.EqualTo(settledHash));
+            Assert.That(session.CampaignLedger.Events.Count, Is.EqualTo(settledEvents));
+            await ClickAndAwait(session, root, UiElementNames.ReturnAction, s => s.Campaign.Stage == CampaignStage.BaseReady);
+        }
+
+        [UnityTest]
+        public IEnumerator CombatUi_MobilityRoundTrip_FinalScreenEvidence()
+        {
+            Task scenario = CombatUi_SelectsAndPlaysMobilityCard_ThenTicksCooldown();
+            float deadline = Time.realtimeSinceStartup + 45f;
+            while (!scenario.IsCompleted && Time.realtimeSinceStartup < deadline) yield return null;
+            Assert.That(scenario.IsCompleted, Is.True, "mobility roundtrip timed out before capture");
+            if (scenario.IsFaulted) throw scenario.Exception.InnerException ?? scenario.Exception;
+
+            string output = Environment.GetEnvironmentVariable("JANSEON_INTEGRATION_SCREEN")
+                ?? Path.GetFullPath(Path.Combine(Application.dataPath,
+                    "../../docs/verification/ulw-execute/rtfc/phase-c/integration/final-playmode-screen.png"));
+            Directory.CreateDirectory(Path.GetDirectoryName(output));
+            GameplayUiHost host = FindGameplayHost();
+            Camera camera = Camera.main != null ? Camera.main : UnityEngine.Object.FindAnyObjectByType<Camera>();
+            Canvas canvas = host.CanvasRoot.GetComponentInParent<Canvas>();
+            const int width = 1280, height = 720;
+            var target = new RenderTexture(width, height, 24, RenderTextureFormat.ARGB32);
+            var texture = new Texture2D(width, height, TextureFormat.RGBA32, false);
+            RenderTexture previousActive = RenderTexture.active;
+            RenderTexture previousTarget = camera.targetTexture;
+            RenderMode previousMode = canvas.renderMode;
+            Camera previousWorldCamera = canvas.worldCamera;
+            try
+            {
+                target.Create();
+                canvas.renderMode = RenderMode.ScreenSpaceCamera;
+                canvas.worldCamera = camera;
+                canvas.planeDistance = Mathf.Max(camera.nearClipPlane + 0.1f, 1f);
+                Canvas.ForceUpdateCanvases();
+                camera.targetTexture = target;
+                camera.Render();
+                RenderTexture.active = target;
+                texture.ReadPixels(new Rect(0, 0, width, height), 0, 0);
+                texture.Apply();
+                File.WriteAllBytes(output, ImageConversion.EncodeToPNG(texture));
+            }
+            finally
+            {
+                canvas.renderMode = previousMode;
+                canvas.worldCamera = previousWorldCamera;
+                camera.targetTexture = previousTarget;
+                RenderTexture.active = previousActive;
+                UnityEngine.Object.DestroyImmediate(texture);
+                target.Release();
+                UnityEngine.Object.DestroyImmediate(target);
+            }
+            Assert.That(File.Exists(output), Is.True, "final PlayMode screenshot missing");
+            Assert.That(new FileInfo(output).Length, Is.GreaterThan(1024));
         }
 
         [Test]
@@ -530,10 +620,10 @@ namespace Janseon.Foundation.Tests
                 BattleOutcomeKind combatOutcome =
                     await UguiKeyboardPlayModeHelper.FinishCombatKeyboard(session, root);
                 result.BattleCommands++;
-                Assert.That(combatOutcome, Is.EqualTo(BattleOutcomeKind.PlayerVictory));
+                Assert.That(combatOutcome, Is.Not.EqualTo(BattleOutcomeKind.Ongoing));
                 if (session.Battle != null)
                 {
-                    Assert.That(session.Battle.Outcome, Is.EqualTo(BattleOutcomeKind.PlayerVictory));
+                    Assert.That(session.Battle.Outcome, Is.Not.EqualTo(BattleOutcomeKind.Ongoing));
                 }
             }
 

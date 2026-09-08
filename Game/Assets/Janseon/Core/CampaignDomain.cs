@@ -111,12 +111,12 @@ namespace Janseon.Core
             }
         }
 
-        /// <summary>Default opening party: one ally at <see cref="BattleApi.DefaultMaxHp"/>.</summary>
+        /// <summary>Default opening party keyed by the stable realtime unit id.</summary>
         public static UnitHpSnapshot DefaultParty()
         {
             return new UnitHpSnapshot(new Dictionary<string, int>
             {
-                [BattleApi.AllyId] = BattleApi.DefaultMaxHp
+                [Battle.Contracts.RealtimeBattleApi.PersistentAllyId] = Battle.Contracts.RealtimeBattleApi.PersistentMaxHp
             });
         }
 
@@ -226,7 +226,7 @@ namespace Janseon.Core
         public string UnitIdAt(int index) => unitIds[index];
         public int HpAt(int index) => hp[index];
         public bool IsParticipatingAt(int index) => participating[index];
-        public bool IsWoundedAt(int index) => hp[index] < BattleApi.DefaultMaxHp;
+        public bool IsWoundedAt(int index) => hp[index] < Battle.Contracts.RealtimeBattleApi.PersistentMaxHp;
 
         public bool IsParticipating(string unitId)
         {
@@ -237,7 +237,7 @@ namespace Janseon.Core
         public bool IsWounded(string unitId)
         {
             var index = IndexOf(unitId);
-            return index >= 0 && hp[index] < BattleApi.DefaultMaxHp;
+            return index >= 0 && hp[index] < Battle.Contracts.RealtimeBattleApi.PersistentMaxHp;
         }
 
         internal int IndexOf(string unitId)
@@ -302,14 +302,14 @@ namespace Janseon.Core
                 ids[i] = UnitId(i);
                 hp[i] = partyHp != null && partyHp.TryGet(ids[i], out var storedHp)
                     ? storedHp
-                    : BattleApi.DefaultMaxHp;
-                if (hp[i] < 0 || hp[i] > BattleApi.DefaultMaxHp)
+                    : Battle.Contracts.RealtimeBattleApi.PersistentMaxHp;
+                if (hp[i] < 0 || hp[i] > Battle.Contracts.RealtimeBattleApi.PersistentMaxHp)
                 {
                     throw new ArgumentOutOfRangeException(nameof(partyHp), "Deployment HP must be within battle HP bounds.");
                 }
 
                 // Wounded leftovers rest by default; healthy members fill up to the deploy cap.
-                participating[i] = hp[i] == BattleApi.DefaultMaxHp && selected < DeployCap;
+                participating[i] = hp[i] == Battle.Contracts.RealtimeBattleApi.PersistentMaxHp && selected < DeployCap;
                 if (participating[i])
                 {
                     selected++;
@@ -380,7 +380,7 @@ namespace Janseon.Core
         public readonly string SeedIdentityBattleId;
         /// <summary>
         /// Opening HP per stable unit id. The persistent ally entry is required; zero means downed.
-        /// The non-persistent foe may be absent and then opens at <see cref="BattleApi.DefaultMaxHp"/>.
+        /// Units absent from the snapshot open at their realtime roster default.
         /// </summary>
         public readonly UnitHpSnapshot StartHp;
 

@@ -3,6 +3,7 @@ using System.Collections;
 using System.IO;
 using System.Text;
 using Janseon.Core;
+using Janseon.Core.Battle.Contracts;
 using Janseon.Foundation.AppFlow;
 using Janseon.Foundation.Composition;
 using Janseon.Foundation.UI;

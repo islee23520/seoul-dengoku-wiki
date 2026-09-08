@@ -24,7 +24,14 @@ namespace Janseon.Core.Battle.Sim
                 var dy = target.Cell.Y - a.Cell.Y;
                 var direction = dx != 0 ? (dx > 0 ? CardinalDirection.East : CardinalDirection.West) : (dy > 0 ? CardinalDirection.North : CardinalDirection.South);
                 var next = a.Cell.Step(direction);
-                if (!Occupied(s, next)) { a.Cell = next; a.Facing = direction; a.MoveTicksLeft = 10; }
+                if (s.Arena.InBounds(next)
+                    && (s.Terrain == null || s.Terrain.MoveCost(a.Cell, next) >= 0)
+                    && !Occupied(s, next))
+                {
+                    a.Cell = next;
+                    a.Facing = direction;
+                    a.MoveTicksLeft = 10;
+                }
             }
         }
         static UnitState Nearest(BattleSimState s, UnitState a)

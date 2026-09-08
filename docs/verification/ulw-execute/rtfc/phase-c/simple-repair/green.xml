@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="17" result="Passed" total="17" passed="17" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-08 06:56:37Z" end-time="2026-09-08 06:56:37Z" duration="0.0553145">
+  <test-suite type="TestSuite" id="1000" name="잔선: 서울" fullname="잔선: 서울" runstate="Runnable" testcasecount="129" result="Passed" start-time="2026-09-08 06:56:37Z" end-time="2026-09-08 06:56:37Z" duration="0.055315" total="17" passed="17" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1148" name="Janseon.Foundation.EditModeTests.dll" fullname="/Users/ilseoblee/workspace/seoul-kenshi-wt/rtfc-phase-c/Game/Library/ScriptAssemblies/Janseon.Foundation.EditModeTests.dll" runstate="Runnable" testcasecount="129" result="Passed" start-time="2026-09-08 06:56:37Z" end-time="2026-09-08 06:56:37Z" duration="0.052238" total="17" passed="17" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="35805" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1149" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="129" result="Passed" start-time="2026-09-08 06:56:37Z" end-time="2026-09-08 06:56:37Z" duration="0.051680" total="17" passed="17" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1152" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="110" result="Passed" start-time="2026-09-08 06:56:37Z" end-time="2026-09-08 06:56:37Z" duration="0.051107" total="17" passed="17" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1153" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="110" result="Passed" start-time="2026-09-08 06:56:37Z" end-time="2026-09-08 06:56:37Z" duration="0.047835" total="17" passed="17" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1068" name="RealtimeCardSettlementTests" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" testcasecount="17" result="Passed" start-time="2026-09-08 06:56:37Z" end-time="2026-09-08 06:56:37Z" duration="0.046702" total="17" passed="17" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1085" name="CampaignRoundTrip_UsesNewBattleResult" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.CampaignRoundTrip_UsesNewBattleResult" methodname="CampaignRoundTrip_UsesNewBattleResult" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="98294939" result="Passed" start-time="2026-09-08 06:56:37Z" end-time="2026-09-08 06:56:37Z" duration="0.011417" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1076" name="CardRadius_RequiresLivingCommander_NotNearbyDeadUnit" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.CardRadius_RequiresLivingCommander_NotNearbyDeadUnit" methodname="CardRadius_RequiresLivingCommander_NotNearbyDeadUnit" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="267650641" result="Passed" start-time="2026-09-08 06:56:37Z" end-time="2026-09-08 06:56:37Z" duration="0.001188" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1069" name="Catalog_IsStaticGrantType_NoDeckNoDraw" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.Catalog_IsStaticGrantType_NoDeckNoDraw" methodname="Catalog_IsStaticGrantType_NoDeckNoDraw" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="449712093" result="Passed" start-time="2026-09-08 06:56:37Z" end-time="2026-09-08 06:56:37Z" duration="0.001009" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1078" name="CloneAndFingerprint_IncludeActiveModifiersRechargeAndEligibility" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.CloneAndFingerprint_IncludeActiveModifiersRechargeAndEligibility" methodname="CloneAndFingerprint_IncludeActiveModifiersRechargeAndEligibility" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="207886112" result="Passed" start-time="2026-09-08 06:56:37Z" end-time="2026-09-08 06:56:37Z" duration="0.000739" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1083" name="CombatSettlement_NoPendingBattle_RejectsWithoutStateLedgerOrBookMutation" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.CombatSettlement_NoPendingBattle_RejectsWithoutStateLedgerOrBookMutation" methodname="CombatSettlement_NoPendingBattle_RejectsWithoutStateLedgerOrBookMutation" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="856449541" result="Passed" start-time="2026-09-08 06:56:37Z" end-time="2026-09-08 06:56:37Z" duration="0.000206" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1072" name="GuardShieldwall_ReducesActualReceivedDamageByThreeFor150Ticks_ThenExpires" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.GuardShieldwall_ReducesActualReceivedDamageByThreeFor150Ticks_ThenExpires" methodname="GuardShieldwall_ReducesActualReceivedDamageByThreeFor150Ticks_ThenExpires" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="212291341" result="Passed" start-time="2026-09-08 06:56:37Z" end-time="2026-09-08 06:56:37Z" duration="0.005927" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1074" name="PassageRetreat_SelectedStronghold_EnablesFriendlyRetreatPath" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.PassageRetreat_SelectedStronghold_EnablesFriendlyRetreatPath" methodname="PassageRetreat_SelectedStronghold_EnablesFriendlyRetreatPath" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="2038149457" result="Passed" start-time="2026-09-08 06:56:37Z" end-time="2026-09-08 06:56:37Z" duration="0.000269" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1073" name="PincerFocus_AddsOneActualOutgoingDamageFor150Ticks_ThenExpires" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.PincerFocus_AddsOneActualOutgoingDamageFor150Ticks_ThenExpires" methodname="PincerFocus_AddsOneActualOutgoingDamageFor150Ticks_ThenExpires" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="1275519969" result="Passed" start-time="2026-09-08 06:56:37Z" end-time="2026-09-08 06:56:37Z" duration="0.005255" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1079" name="PlayCard_OutOfCommandRadius_Fails" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.PlayCard_OutOfCommandRadius_Fails" methodname="PlayCard_OutOfCommandRadius_Fails" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="1555732245" result="Passed" start-time="2026-09-08 06:56:37Z" end-time="2026-09-08 06:56:37Z" duration="0.000101" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1070" name="PlayCard_RechargesOverTicks" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.PlayCard_RechargesOverTicks" methodname="PlayCard_RechargesOverTicks" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="452280989" result="Passed" start-time="2026-09-08 06:56:37Z" end-time="2026-09-08 06:56:37Z" duration="0.009087" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1071" name="PlayCard_RejectedWhileRecharging" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.PlayCard_RejectedWhileRecharging" methodname="PlayCard_RejectedWhileRecharging" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="663012268" result="Passed" start-time="2026-09-08 06:56:37Z" end-time="2026-09-08 06:56:37Z" duration="0.000171" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1081" name="Replay_WithDeployAndPlayCard_IsDeterministicWithoutPauseTicks" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.Replay_WithDeployAndPlayCard_IsDeterministicWithoutPauseTicks" methodname="Replay_WithDeployAndPlayCard_IsDeterministicWithoutPauseTicks" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="1444817374" result="Passed" start-time="2026-09-08 06:56:37Z" end-time="2026-09-08 06:56:37Z" duration="0.004846" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1084" name="Settlement_ExactOnce_SurvivesDomainSwap" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.Settlement_ExactOnce_SurvivesDomainSwap" methodname="Settlement_ExactOnce_SurvivesDomainSwap" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="1533948017" result="Passed" start-time="2026-09-08 06:56:37Z" end-time="2026-09-08 06:56:37Z" duration="0.000259" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1075" name="StrongholdCard_MustBeSelectedAtDeploy" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.StrongholdCard_MustBeSelectedAtDeploy" methodname="StrongholdCard_MustBeSelectedAtDeploy" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="1559650718" result="Passed" start-time="2026-09-08 06:56:37Z" end-time="2026-09-08 06:56:37Z" duration="0.000123" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1080" name="StrongholdCardSlots_LimitedToTwo" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.StrongholdCardSlots_LimitedToTwo" methodname="StrongholdCardSlots_LimitedToTwo" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="446087460" result="Passed" start-time="2026-09-08 06:56:37Z" end-time="2026-09-08 06:56:37Z" duration="0.000066" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1077" name="SupplyHeal_DoesNotReviveDownFrontUnit" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.SupplyHeal_DoesNotReviveDownFrontUnit" methodname="SupplyHeal_DoesNotReviveDownFrontUnit" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="1096155086" result="Passed" start-time="2026-09-08 06:56:37Z" end-time="2026-09-08 06:56:37Z" duration="0.000116" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1082" name="ToEncounterResult_MapsRetreatSurrenderDistinctly" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.ToEncounterResult_MapsRetreatSurrenderDistinctly" methodname="ToEncounterResult_MapsRetreatSurrenderDistinctly" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="1433339003" result="Passed" start-time="2026-09-08 06:56:37Z" end-time="2026-09-08 06:56:37Z" duration="0.000046" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: /Users/ilseoblee/Library/Application Support/Janseon Studio/잔선_ 서울/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

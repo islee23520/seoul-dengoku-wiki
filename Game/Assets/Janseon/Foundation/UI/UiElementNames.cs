@@ -51,6 +51,7 @@ namespace Janseon.Foundation.UI
         public const string ActionEnterResolution = "action-enter-resolution";
         public const string ActionSettle = "action-settle";
         public const string BattleAdvance = "battle-advance";
+        public const string MobilityRegroup = "card-mobility-regroup";
         public const string BattleWait = "battle-wait";
         public const string MissionConsole = "mission-console";
         public const string HubOvernightCopy = "hub-overnight-copy";

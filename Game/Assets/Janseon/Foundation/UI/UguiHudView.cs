@@ -41,6 +41,7 @@ namespace Janseon.Foundation.UI
             Wire("battle-melee", presenter.TriggerBattleMeleeForTest);
             Wire("battle-ranged", presenter.TriggerBattleRangedForTest);
             Wire(UiElementNames.BattleWait, presenter.TriggerBattleWaitForTest);
+            Wire(UiElementNames.MobilityRegroup, presenter.TriggerMobilityRegroupForTest);
             Wire("battle-end-turn", presenter.TriggerBattleEndTurnForTest);
             return true;
         }
@@ -66,6 +67,7 @@ namespace Janseon.Foundation.UI
             SetActive(UiElementNames.ActionEnterResolution, snapshot.ShowEnterResolutionAction);
             SetActive(UiElementNames.ActionSettle, snapshot.ShowSettleAction);
             SetActive(UiElementNames.BattleAdvance, snapshot.ShowBattleAdvanceAction);
+            SetActive(UiElementNames.MobilityRegroup, battle);
             SetActive(UiElementNames.ReturnAction, snapshot.ShowReturnAction);
 
             SetText(UiElementNames.ClockLabel, snapshot.ClockText);

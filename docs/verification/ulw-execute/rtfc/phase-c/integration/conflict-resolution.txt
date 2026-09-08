@@ -1,0 +1,17 @@
+Merge integration record
+feature tip before merge: 550a612fb903b60031c2d360f8fba1cfff884e9c
+merge base: aef3bd8410cb827fcab9f5563f29efbc3bc400ac
+origin/main merged: 6c6396bf6304728812e900a67ee0f489533a9308
+
+Conflict policy applied:
+- BattleDomain.cs: retained deletion; migrated landed heightmap ownership, fingerprinting, bounds/water movement behavior, immutable BattleContext validation, persistent HP handoff, and settlement payload into BattleSetup/BattleSim/BattleSimState/IntentPlanner.
+- SettlementDomain.cs: preserved Phase C terminal outcome mapping, NoPendingBattle/BattleId/terminal-result checks, duplicate/conflict zero mutation, and added main persistent HP payload validation.
+- PocCoreLoopController.cs: retained realtime BattleSim and Phase C settlement, integrated main StartingPreset, deployment panel, HeightmapVoxelWorld, uGUI host, and current scenes.
+- RuntimeSlotView.cs and Gameplay.uxml: retained latest-main deletion; no UI Toolkit resurrection.
+- UI tests and capture consumer: retained latest-main Canvas/uGUI surfaces and ported removed turn-based mechanics to realtime BattleSim behavior.
+- BattleSrpgTests.cs and SettlementExactOnceTests.cs: removed with obsolete turn domain; meaningful terrain/persistent-HP/settlement behavior is covered by RealtimeBattleSimTests, RealtimeCardSettlementTests, CampaignLoopTests, HeightmapTests, and uGUI PlayMode roundtrip.
+- AGENTS.md.meta conflict: preserved latest-main GUID.
+- Untracked AGENTS/UI metas: archived outside worktree under /Users/ilseoblee/workspace/seoul-kenshi-archives/st_01a07ff2-premerge-20260908 before overwrite; generated UI.meta recurrences were archived and removed.
+
+Scope boundary:
+The uGUI roundtrip is Phase C integration smoke only. It does not claim Phase D formation/card HUD, driver redesign, or approved donor integration completion.

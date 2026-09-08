@@ -30,6 +30,7 @@ namespace Janseon.Foundation.Composition
         Button battleRanged;
         Button battleEndTurn;
         Button battleWait;
+        Button mobilityRegroup;
         Button choiceNegotiate;
         Button choiceBypass;
         Button choiceCombat;
@@ -70,6 +71,7 @@ namespace Janseon.Foundation.Composition
         public event Action BattleRangedChosen;
         public event Action BattleEndTurnChosen;
         public event Action BattleWaitChosen;
+        public event Action MobilityRegroupChosen;
         public event Action NegotiateChosen;
         public event Action BypassChosen;
         public event Action CombatChosen;
@@ -124,6 +126,7 @@ namespace Janseon.Foundation.Composition
             battleMelee = UguiHudBuilder.ButtonNamed(gameplayRoot, "battle-melee");
             battleRanged = UguiHudBuilder.ButtonNamed(gameplayRoot, "battle-ranged");
             battleWait = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.BattleWait);
+            mobilityRegroup = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.MobilityRegroup);
             battleEndTurn = UguiHudBuilder.ButtonNamed(gameplayRoot, "battle-end-turn");
             choiceNegotiate = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.ChoiceNegotiate);
             choiceBypass = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.ChoiceBypass);
@@ -157,6 +160,7 @@ namespace Janseon.Foundation.Composition
             if (battleMelee != null) battleMelee.onClick.AddListener(OnBattleMeleeClicked);
             if (battleRanged != null) battleRanged.onClick.AddListener(OnBattleRangedClicked);
             if (battleWait != null) battleWait.onClick.AddListener(OnBattleWaitClicked);
+            if (mobilityRegroup != null) mobilityRegroup.onClick.AddListener(OnMobilityRegroupClicked);
             if (battleEndTurn != null) battleEndTurn.onClick.AddListener(OnBattleEndTurnClicked);
             choiceNegotiate.onClick.AddListener(OnNegotiateClicked);
             choiceBypass.onClick.AddListener(OnBypassClicked);
@@ -198,6 +202,7 @@ namespace Janseon.Foundation.Composition
         public void TriggerBattleMeleeForTest() => OnBattleMeleeClicked();
         public void TriggerBattleRangedForTest() => OnBattleRangedClicked();
         public void TriggerBattleWaitForTest() => OnBattleWaitClicked();
+        public void TriggerMobilityRegroupForTest() => OnMobilityRegroupClicked();
         public void TriggerBattleEndTurnForTest() => OnBattleEndTurnClicked();
         public void TriggerNegotiateForTest() => OnNegotiateClicked();
         public void TriggerBypassForTest() => OnBypassClicked();
@@ -435,7 +440,7 @@ namespace Janseon.Foundation.Composition
                         + " · HP "
                         + snapshot.DeployHp[i].ToString(CultureInfo.InvariantCulture)
                         + "/"
-                        + BattleApi.DefaultMaxHp.ToString(CultureInfo.InvariantCulture)
+                        + Janseon.Core.Battle.Contracts.RealtimeBattleApi.PersistentMaxHp.ToString(CultureInfo.InvariantCulture)
                         + " · "
                         + (snapshot.DeployParticipating[i]
                             ? "참가"
@@ -622,6 +627,7 @@ namespace Janseon.Foundation.Composition
         void OnBattleMeleeClicked() => BattleMeleeChosen?.Invoke();
         void OnBattleRangedClicked() => BattleRangedChosen?.Invoke();
         void OnBattleWaitClicked() => BattleWaitChosen?.Invoke();
+        void OnMobilityRegroupClicked() => MobilityRegroupChosen?.Invoke();
         void OnBattleEndTurnClicked() => BattleEndTurnChosen?.Invoke();
         void OnNegotiateClicked() => NegotiateChosen?.Invoke();
         void OnBypassClicked() => BypassChosen?.Invoke();
@@ -680,6 +686,7 @@ namespace Janseon.Foundation.Composition
             if (battleMelee != null) battleMelee.onClick.RemoveListener(OnBattleMeleeClicked);
             if (battleRanged != null) battleRanged.onClick.RemoveListener(OnBattleRangedClicked);
             if (battleWait != null) battleWait.onClick.RemoveListener(OnBattleWaitClicked);
+            if (mobilityRegroup != null) mobilityRegroup.onClick.RemoveListener(OnMobilityRegroupClicked);
             if (battleEndTurn != null) battleEndTurn.onClick.RemoveListener(OnBattleEndTurnClicked);
             if (choiceNegotiate != null) choiceNegotiate.onClick.RemoveListener(OnNegotiateClicked);
             if (choiceBypass != null) choiceBypass.onClick.RemoveListener(OnBypassClicked);
@@ -705,7 +712,8 @@ namespace Janseon.Foundation.Composition
             battleMelee = null;
             battleRanged = null;
             battleWait = null;
-        battleEndTurn = null;
+            mobilityRegroup = null;
+            battleEndTurn = null;
             choiceNegotiate = null;
             choiceBypass = null;
             choiceCombat = null;
