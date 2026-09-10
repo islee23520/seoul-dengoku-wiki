@@ -114,7 +114,7 @@
 | `jk-rail` | 가로 스테이지 레일 | — |
 | `jk-route` | 세로/가로 역 연결 | node current/adjacent/dim |
 | `jk-grid` | 전투 격자 | cell empty/ally/foe/focus |
-| `jk-meter` | HP/AP | fill 0–100% |
+| `jk-meter` | HP/사기/재충전 | fill 0–100% 또는 Core tick 값 |
 | `jk-meta` | tick·hash | mono |
 
 포커스: 항상 `stroke-focus` 링. 키보드만으로 모든 1차 액션 도달.
@@ -139,7 +139,7 @@
 | 스테이지 레일 | `stage-rail`, `stage-base-prep` … `stage-base-ready` | `CampaignStage` 6단 |
 | 노선 | `route-rail`, `station-Yeongdeungpo`, `station-Sindorim`, `station-Guro` | `RouteGraph` + `CampaignState.Node` |
 | 조우 선택 | `encounter-choices`, `choice-negotiate`, `choice-bypass`, `choice-combat` | `CampaignStage.Resolution` |
-| 전투 | `battle-hud`, `battle-grid`, `battle-cell-{x}-{y}`, `battle-hp`, `battle-ap` | `BattleState` |
+| 전투 | `battle-hud`, `battle-grid`, `battle-cell-{x}-{y}`, `battle-hp`, `battle-morale`, `battle-reinforcement-forecast`, `card-general-recharge`, `battle-play-pause` | `BattleSimState` + `BattleSessionDriver.Paused` |
 | 정산·복귀 | `settlement-panel`, `settlement-outcome`, `return-action` | settlement receipt fields |
 
 스냅샷은 동일 seed/state에 대해 요소 이름 집합·current 표시·그리드 점유가 결정론적이어야 한다.
@@ -159,7 +159,7 @@
 | 1 | `main-title-start` | `stage-rail` 내 current chip (표시만, 탭 스킵 가능) |
 | 2 | — | 가시 역 노드 (current 우선) |
 | 3 | — | 가시 조우 카드  Neg → Bypass → Combat |
-| 4 | — | `battle-advance` 결정론 전투 명령 |
+| 4 | — | `formation-swap-front` → `edit-formation` → 카드 → `battle-play-pause` |
 | 5 | — | `return-action` |
 
 - Tab / Shift+Tab 순환. Enter·Space 활성화.
@@ -188,7 +188,7 @@
 ## 9. 수용된 부채 (Accepted Debt)
 
 - 커스텀 한글 폰트·아이콘 세트는 Todo 13.
-- 전투 입력은 결정론적 다음 명령 버튼으로 제한한다. 개별 전투 칸 선택 입력은 현재 POC 범위가 아니다.
+- 전투 입력은 전투 전 진형 교대, 카드 사용, 일시정지/재개로 제한한다. 개별 유닛 직접 이동과 턴/AP 입력은 현재 계약이 아니다.
 - 역사 3D/캐릭터 메시는 Todo 14–16. 본 계약은 UI 평면만.
 - PanelSettings는 단일 공유 에셋. 테마 런타임 스위치 없음.
 
@@ -241,7 +241,14 @@ battle-hud
 battle-grid
 battle-cell-{x}-{y}   # x,y in 0..4
 battle-hp
-battle-ap
+battle-morale
+battle-reinforcement-forecast
+card-general-recharge
+card-general-use
+formation-swap-front
+formation-selection
+edit-formation
+battle-play-pause
 settlement-panel
 settlement-outcome
 return-action
