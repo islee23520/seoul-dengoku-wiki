@@ -97,6 +97,9 @@ export const HOSTILE_GROUPS = Object.freeze([
   ['G22', '폐전지금속군락', 'biomechanical'],
   ['G23', '저온포자막', 'biomechanical'],
   ['G24', '의료조직기계군', 'biomechanical'],
+  ['G25', '등불개미군', 'rogue-robot'],
+  ['G26', '화석포효군', 'rogue-robot'],
+  ['G27', '심층삼엽군', 'rogue-robot'],
 ].map(([id, name, category]) => Object.freeze({ id, name, category })));
 
 export const COMPANY_TOKENS = Object.freeze([

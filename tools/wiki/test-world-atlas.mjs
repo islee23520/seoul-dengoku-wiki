@@ -61,7 +61,7 @@ test('Given current repository When story-manifest stage Then 47 batches locked'
   assert.equal(result.code, 0, result.output);
 });
 
-test('Given current repository When monster-manifest stage Then 24 groups and 384 entries', () => {
+test('Given current repository When monster-manifest stage Then 27 groups and 432 entries', () => {
   const result = runVerifier(['--docs', liveDocs, '--stage', 'monster-manifest', '--atlas', atlasPath]);
   assert.equal(result.code, 0, result.output);
 });

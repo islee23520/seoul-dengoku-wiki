@@ -3,7 +3,7 @@
 이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.
 
 - 원본 앵커: `docs/game-logic/World-Narrative-Atlas.md`
-- 원본 해시: `48da6812c18a89772e7f0b7ff7836681f7fe5b94616f4b6535d76eee687186c3`
+- 원본 해시: `ffecb908fb8d982df846a464a5314dde1fbddeaaf44b3ab23e9341b78644e044`
 
 ## G01E01 · 범람멧돼지 대왕 '철갑'
 

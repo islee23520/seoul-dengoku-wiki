@@ -127,7 +127,7 @@ export function verifyStoryManifest(atlas, projections, fail) {
 
 export function verifyMonsterManifest(atlas, projections, fail) {
   const groups = atlas.hostile_groups ?? [];
-  if (groups.length !== 24) fail('E_GROUP_COUNT', `actual=${groups.length}`);
+  if (groups.length !== 27) fail('E_GROUP_COUNT', `actual=${groups.length}`);
   const locked = new Map(HOSTILE_GROUPS.map((g) => [g.id, g]));
   const entryIds = [];
   for (const group of groups) {
@@ -178,9 +178,9 @@ export function verifyMonsterManifest(atlas, projections, fail) {
     for (let i = 1; i <= 16; i += 1) entryIds.push(`${group.id}E${String(i).padStart(2, '0')}`);
   }
   const batches = atlas.monster_batches ?? [];
-  if (batches.length !== 39) fail('E_MONSTER_BATCH_COUNT', `actual=${batches.length}`);
+  if (batches.length !== 42) fail('E_MONSTER_BATCH_COUNT', `actual=${batches.length}`);
   const flat = batches.flatMap((b) => b.entry_ids ?? []);
-  if (flat.length !== 384) fail('E_ENTRY_COUNT', `actual=${flat.length}`);
+  if (flat.length !== 432) fail('E_ENTRY_COUNT', `actual=${flat.length}`);
   if (flat.join(',') !== entryIds.join(',')) fail('E_ENTRY_ORDER', 'row-major mismatch');
   if (!projections[PROJECTION_FILES.hostileIndex]) fail('E_MISSING_PROJECTION', PROJECTION_FILES.hostileIndex);
   if (!projections[PROJECTION_FILES.monsterManifest]) fail('E_MISSING_PROJECTION', PROJECTION_FILES.monsterManifest);
