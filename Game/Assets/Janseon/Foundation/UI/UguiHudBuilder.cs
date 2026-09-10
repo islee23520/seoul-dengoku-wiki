@@ -455,6 +455,14 @@ namespace Janseon.Foundation.UI
             LayoutElement titleLayout = title.gameObject.AddComponent<LayoutElement>();
             titleLayout.preferredHeight = 28f;
             titleLayout.minHeight = 28f;
+
+            RectTransform provenance = TmpLabel(battle, UiElementNames.LocalReviewProvenanceBanner,
+                "로컬 리뷰 파생물 · 원본 아틀라스 미수록", 13,
+                Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero,
+                TextAlignmentOptions.MidlineLeft, new Color(0.835f, 0.800f, 0.710f));
+            LayoutElement provenanceLayout = provenance.gameObject.AddComponent<LayoutElement>();
+            provenanceLayout.preferredHeight = 20f;
+            provenanceLayout.minHeight = 20f;
             // Keep the component awake but out of layout rebuild so TryAddCharacters still
             // has Hangul to rasterize (TMP returns false when the atlas already contains them).
             TextMeshProUGUI titleTmp = title.GetComponent<TextMeshProUGUI>();

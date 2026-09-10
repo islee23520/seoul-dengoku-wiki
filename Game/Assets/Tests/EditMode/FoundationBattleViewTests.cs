@@ -134,5 +134,48 @@ namespace Janseon.Foundation.Tests
             Assert.AreEqual(FoundationBattleView.HoverGold, north.GetComponent<Renderer>().sharedMaterial.color);
             Assert.AreEqual(before, battle.Fingerprint());
         }
+
+        [Test]
+        public void AlliedCommanderUsesLocalReviewSprite_OthersStayPlaceholderMeshes()
+        {
+            view.Refresh();
+            var commander = Array.Find(battle.Units, unit => unit.Id.Equals(battle.PlayerCommanderId));
+            Assert.IsNotNull(commander);
+            foreach (var unit in battle.Units)
+            {
+                Transform token = view.Units[unit.Id];
+                var sprite = token.GetComponentInChildren<SpriteRenderer>(true);
+                if (unit.Id.Equals(battle.PlayerCommanderId))
+                {
+                    Assert.IsNotNull(sprite);
+                    Assert.IsNotNull(sprite.sprite);
+                    Assert.AreEqual(0, token.GetComponentsInChildren<MeshFilter>(true).Length);
+                }
+                else
+                {
+                    Assert.IsNull(sprite);
+                    Assert.Greater(token.GetComponentsInChildren<MeshFilter>(true).Length, 0);
+                }
+            }
+            Assert.AreEqual(0, view.GetComponentsInChildren<TMPro.TMP_Text>(true).Length);
+        }
+
+        [Test]
+        public void GameplayHudShowsLocalReviewProvenanceBanner_WorldViewDoesNot()
+        {
+            RectTransform hud = UguiHudBuilder.BuildGameplay(null);
+            try
+            {
+                var banner = UguiHudBuilder.Find(hud, UiElementNames.LocalReviewProvenanceBanner);
+                Assert.IsNotNull(banner);
+                Assert.AreEqual("로컬 리뷰 파생물 · 원본 아틀라스 미수록", banner.GetComponent<TMPro.TMP_Text>().text);
+                Assert.IsNotNull(banner.GetComponentInParent<Canvas>());
+                Assert.AreEqual(0, view.GetComponentsInChildren<TMPro.TMP_Text>(true).Length);
+            }
+            finally
+            {
+                UnityEngine.Object.DestroyImmediate(hud.parent.gameObject);
+            }
+        }
     }
 }

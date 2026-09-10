@@ -14,6 +14,9 @@ namespace Janseon.Foundation.Battle
         public static readonly Color Cyan = new Color32(0x86, 0xbe, 0xd0, 0xff);
         public static readonly Color HoverGold = new Color32(0xff, 0xe4, 0x9b, 0xff);
         public static readonly Color IllegalRed = new Color32(0xcf, 0x62, 0x58, 0xff);
+        public const string LocalReviewSpriteResource = "LocalReview/ally-guard-1-local-review";
+        public const string LocalReviewCommanderUnitId = "ally-guard-1";
+        const float LocalReviewCellPixels = 128f;
         readonly Dictionary<UnitId, Transform> units = new Dictionary<UnitId, Transform>();
         readonly List<UnityEngine.Object> owned = new List<UnityEngine.Object>();
         readonly Transform[] arrows = new Transform[4];
@@ -118,14 +121,20 @@ namespace Janseon.Foundation.Battle
                 {
                     token = new GameObject("Unit_" + unit.Id.Value).transform;
                     token.SetParent(transform, false);
-                    var material = unit.Side == 0 ? allyMaterial : enemyMaterial;
-                    Box(token, "Body", material, new Vector3(0, 0.48f, 0), new Vector3(0.48f, 0.66f, 0.34f));
-                    Box(token, "Head", goldMaterial, new Vector3(0, 1f, 0), Vector3.one * 0.4f);
-                    Box(token, "Facing", material, new Vector3(0, 0.72f, 0.28f), new Vector3(0.16f, 0.15f, 0.3f));
+                    if (!TryBindLocalReviewSprite(token, unit))
+                    {
+                        var material = unit.Side == 0 ? allyMaterial : enemyMaterial;
+                        Box(token, "Body", material, new Vector3(0, 0.48f, 0), new Vector3(0.48f, 0.66f, 0.34f));
+                        Box(token, "Head", goldMaterial, new Vector3(0, 1f, 0), Vector3.one * 0.4f);
+                        Box(token, "Facing", material, new Vector3(0, 0.72f, 0.28f), new Vector3(0.16f, 0.15f, 0.3f));
+                    }
                     units.Add(unit.Id, token);
                 }
                 token.position = CellWorld(unit.Cell);
                 token.rotation = Quaternion.LookRotation(Direction(unit.Facing));
+                Transform localReview = token.Find("LocalReviewSprite");
+                if (localReview != null && ViewCamera != null)
+                    localReview.rotation = Quaternion.LookRotation(-ViewCamera.transform.forward, Vector3.up);
                 token.gameObject.SetActive(unit.Hp > 0 && unit.State != "Down");
             }
             var currentIds = new HashSet<UnitId>();
@@ -207,6 +216,34 @@ namespace Janseon.Foundation.Battle
         }
 
         public void ClearHover() { hoveredUnit = null; hoveredDirection = -1; Refresh(); }
+
+        bool UsesLocalReviewSprite(UnitState unit)
+        {
+            if (unit == null || unit.Side != 0) return false;
+            string id = unit.Id.Value ?? string.Empty;
+            return unit.Id.Equals(battle.PlayerCommanderId)
+                || id == LocalReviewCommanderUnitId
+                || id.IndexOf("서윤", StringComparison.Ordinal) >= 0;
+        }
+
+        bool TryBindLocalReviewSprite(Transform token, UnitState unit)
+        {
+            if (!UsesLocalReviewSprite(unit)) return false;
+            Texture2D texture = Resources.Load<Texture2D>(LocalReviewSpriteResource);
+            if (texture == null) return false;
+            Rect rect = texture.width >= LocalReviewCellPixels && texture.height >= LocalReviewCellPixels
+                ? new Rect(0f, texture.height - LocalReviewCellPixels, LocalReviewCellPixels, LocalReviewCellPixels)
+                : new Rect(0f, 0f, texture.width, texture.height);
+            Sprite sprite = Sprite.Create(texture, rect, new Vector2(0.5f, 0f), LocalReviewCellPixels / 1.2f);
+            owned.Add(sprite);
+            var spriteObject = new GameObject("LocalReviewSprite", typeof(SpriteRenderer));
+            spriteObject.transform.SetParent(token, false);
+            spriteObject.transform.localPosition = new Vector3(0f, 0.02f, 0f);
+            var renderer = spriteObject.GetComponent<SpriteRenderer>();
+            renderer.sprite = sprite;
+            renderer.color = Color.white;
+            return true;
+        }
 
         bool Anchor(Transform ring, UnitId id)
         {

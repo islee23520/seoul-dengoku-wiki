@@ -33,6 +33,7 @@ namespace Janseon.Foundation.UI
 
         public const string BattleHud = "battle-hud";
         public const string BattleHudTitle = "battle-hud-title";
+        public const string LocalReviewProvenanceBanner = "local-review-provenance-banner";
         public const string BattleDock = "battle-dock";
         public const string BattleGrid = "battle-grid";
         public const string BattleHp = "battle-hp";
