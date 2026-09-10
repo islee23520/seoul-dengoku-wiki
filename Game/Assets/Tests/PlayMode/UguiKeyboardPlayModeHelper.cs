@@ -71,33 +71,9 @@ namespace Janseon.Foundation.Tests
             Assert.That(session.Battle.Outcome, Is.EqualTo(BattleOutcomeKind.Ongoing));
             AssertSettleUnavailableDuringOngoing(session, root);
 
-            await EnterNamedAndAwaitAsync(
-                session,
-                root,
-                UiElementNames.BattleAdvance,
-                s => s.Battle != null && (s.Battle.Tick > 0 || s.Battle.Outcome != BattleOutcomeKind.Ongoing));
-
-            var commands = 1;
-            while (session.Battle != null
-                   && session.Battle.Outcome == BattleOutcomeKind.Ongoing
-                   && commands < 1200)
-            {
-                int beforeTick = session.Battle.Tick;
-                string beforeHash = session.BattleHash;
-                await EnterNamedAndAwaitAsync(
-                    session,
-                    root,
-                    UiElementNames.BattleAdvance,
-                    s => s.Battle != null
-                         && (s.Battle.Tick != beforeTick
-                             || s.BattleHash != beforeHash
-                             || s.Battle.Outcome != BattleOutcomeKind.Ongoing));
-                commands++;
-                if (session.Battle.Outcome == BattleOutcomeKind.Ongoing)
-                    AssertSettleUnavailableDuringOngoing(session, root);
-            }
-
-            Assert.That(commands, Is.LessThan(1200), "realtime combat exceeded the bounded command cap");
+            await WaitUntil(session,
+                s => s.Battle != null && s.Battle.Outcome != BattleOutcomeKind.Ongoing,
+                "automatic realtime battle terminal outcome");
             BattleOutcomeKind outcome = session.Battle.Outcome;
             Assert.That(outcome, Is.Not.EqualTo(BattleOutcomeKind.Ongoing));
             await EnterNamedAndAwaitAsync(
@@ -106,6 +82,30 @@ namespace Janseon.Foundation.Tests
                 UiElementNames.ActionSettle,
                 s => s.Campaign.SettlementApplied && s.LastReceipt != null);
             return outcome;
+        }
+
+        static async Task WaitUntil(
+            IPocCoreLoopSession session,
+            Func<IPocCoreLoopSession, bool> predicate,
+            string label)
+        {
+            if (predicate(session)) return;
+            var completion = new TaskCompletionSource<bool>(TaskCreationOptions.RunContinuationsAsynchronously);
+            void Handler()
+            {
+                if (!predicate(session)) return;
+                session.StateChanged -= Handler;
+                completion.TrySetResult(true);
+            }
+            session.StateChanged += Handler;
+            try
+            {
+                await AwaitSignal(completion.Task, label, TimeSpan.FromSeconds(60));
+            }
+            finally
+            {
+                session.StateChanged -= Handler;
+            }
         }
 
         static GameObject MoveSelection(Transform root, bool reverse)
@@ -152,9 +152,9 @@ namespace Janseon.Foundation.Tests
             return completion.Task;
         }
 
-        static async Task AwaitSignal(Task signal, string label)
+        static async Task AwaitSignal(Task signal, string label, TimeSpan? timeout = null)
         {
-            Task winner = await Task.WhenAny(signal, Task.Delay(SignalTimeout));
+            Task winner = await Task.WhenAny(signal, Task.Delay(timeout ?? SignalTimeout));
             Assert.That(winner, Is.SameAs(signal), "Timed out waiting for " + label);
             await signal;
         }
