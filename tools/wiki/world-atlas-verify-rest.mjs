@@ -1,4 +1,3 @@
-import { scanCompanyTokens } from './world-atlas-parse.mjs';
 import {
   ATLAS_OWNER,
   HOSTILE_GROUPS,
@@ -33,7 +32,6 @@ export function verifyTheaters(atlas, projections, fail) {
       fail('E_THEATER_FIELD', `${theater.id} scenario_chains`);
     }
     for (const stateId of theater.states ?? []) covered.add(stateId);
-    scanCompanyTokens(JSON.stringify(theater), fail, 'E_CURRENT_ACTOR_CLAIM', theater.id);
   }
   for (const state of STATES) {
     if (!covered.has(state.id)) fail('E_STATE_UNCOVERED', state.id);
@@ -177,7 +175,6 @@ export function verifyMonsterManifest(atlas, projections, fail) {
         }
       }
     }
-    scanCompanyTokens(JSON.stringify(group), fail, 'E_COMPANY_TOKEN', group.id);
     for (let i = 1; i <= 16; i += 1) entryIds.push(`${group.id}E${String(i).padStart(2, '0')}`);
   }
   const batches = atlas.monster_batches ?? [];

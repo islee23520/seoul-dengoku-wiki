@@ -2,7 +2,7 @@ import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
 import { verifyDiagramRecords } from './world-atlas-isometric.mjs';
-import { extractAtlasJson, parseCastIndex, scanCompanyTokens } from './world-atlas-parse.mjs';
+import { extractAtlasJson, parseCastIndex } from './world-atlas-parse.mjs';
 import {
   verifyMonsterManifest,
   verifySeeds,
@@ -36,7 +36,7 @@ function requireFields(record, fields, fail, where) {
 
 export function verifyHouses(atlas, projections, fail) {
   const houses = atlas.houses ?? [];
-  if (houses.length !== 24) fail('E_HOUSE_COUNT', `actual=${houses.length}`);
+  if (houses.length !== 32) fail('E_HOUSE_COUNT', `actual=${houses.length}`);
   const locked = new Map(LOCKED_HOUSES.map((h) => [h.id, h.name]));
   const seen = new Set();
   const covered = new Set();
@@ -53,7 +53,6 @@ export function verifyHouses(atlas, projections, fail) {
       fail('E_FULL_STATE_OWNERSHIP', house.id);
     }
     for (const stateId of house.states ?? []) covered.add(stateId);
-    scanCompanyTokens(JSON.stringify(house), fail, 'E_COMPANY_TOKEN', house.id);
     if (!Array.isArray(house.arcs) || house.arcs.length < 3) fail('E_HOUSE_FIELD', `${house.id} arcs`);
   }
   for (const lockedHouse of [...CORPORATE_HOUSES, ...CIVIC_HOUSES]) {

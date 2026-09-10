@@ -3,7 +3,7 @@
 이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.
 
 - 원본 앵커: `docs/game-logic/World-Narrative-Atlas.md`
-- 원본 해시: `69e8b9e5be6112fd47770091de1c29b7e461d30414c09a46a31af937324e7767`
+- 원본 해시: `82054a41b7c6ab4e100238833d228155d91bc8d84f50d1a5decfec4c172b806e`
 
 ## 인물 K161 · 추서윤
 

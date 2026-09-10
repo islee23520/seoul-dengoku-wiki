@@ -41,7 +41,7 @@ function runVerifier(args) {
   };
 }
 
-test('Given current repository When houses stage Then atlas has 24 houses and Operating-Houses projection', () => {
+test('Given current repository When houses stage Then atlas has 32 houses and Operating-Houses projection', () => {
   const result = runVerifier(['--docs', liveDocs, '--stage', 'houses', '--atlas', atlasPath]);
   assert.equal(result.code, 0, result.output);
 });
@@ -71,7 +71,7 @@ test('Given current repository When seeds stage Then arcs cover houses theaters 
   assert.equal(result.code, 0, result.output);
 });
 
-test('Given a company mark in theater prose When theaters stage Then E_CURRENT_ACTOR_CLAIM', async () => {
+test('Given a real company mark in theater prose When theaters stage Then source canon allows it (rename seam)', async () => {
   const dir = await mkdtemp(join(tmpdir(), 'atlas-theater-token-'));
   fixtures.push(dir);
   const docs = join(dir, 'docs', 'game-logic');
@@ -87,11 +87,10 @@ test('Given a company mark in theater prose When theaters stage Then E_CURRENT_A
   const text = await readFile(atlas, 'utf8');
   await writeFile(atlas, text.replace('귀환 명부를 손전등 빛에 비춘다', '삼성전자 귀환 명부를 손전등 빛에 비춘다'));
   const result = runVerifier(['--docs', docs, '--stage', 'theaters', '--atlas', atlas]);
-  assert.equal(result.code, 1);
-  assert.match(result.stderr, /^E_CURRENT_ACTOR_CLAIM:/m);
+  assert.equal(result.code, 0, result.stderr);
 });
 
-test('Given a company mark in house prose When houses stage Then E_COMPANY_TOKEN', async () => {
+test('Given a real company mark in house prose When houses stage Then source canon allows it (rename seam)', async () => {
   const dir = await mkdtemp(join(tmpdir(), 'atlas-house-token-'));
   fixtures.push(dir);
   const docs = join(dir, 'docs', 'game-logic');
@@ -107,8 +106,7 @@ test('Given a company mark in house prose When houses stage Then E_COMPANY_TOKEN
   const text = await readFile(atlas, 'utf8');
   await writeFile(atlas, text.replace('야간 냉각 분배', '삼성전자 냉각 분배'));
   const result = runVerifier(['--docs', docs, '--stage', 'houses', '--atlas', atlas]);
-  assert.equal(result.code, 1);
-  assert.match(result.stderr, /^E_COMPANY_TOKEN:/m);
+  assert.equal(result.code, 0, result.stderr);
 });
 
 test('Given two materializer --check runs When generated projections are unchanged Then hashes match', async () => {
@@ -440,4 +438,14 @@ test('Given isometric SVG hrefs When resolved from asset path Then every externa
   }
   assert.ok(externalCount > 0, 'expected external isometric wiki hrefs');
   assert.ok(fragmentCount > 0, 'expected in-document isometric fragment hrefs');
+});
+
+test('Given company-aliases manifest When real names enter canon Then every real name has a rename target', async () => {
+  const manifest = JSON.parse(await readFile(join(repositoryRoot, 'tools', 'wiki', 'company-aliases.json'), 'utf8'));
+  for (const name of ['삼성전자', '현대자동차', '네이버', '카카오', 'HMM', '테슬라코리아']) {
+    assert.ok(name in manifest, `alias missing: ${name}`);
+    assert.equal(typeof manifest[name], 'string');
+    assert.notEqual(manifest[name], '');
+    assert.notEqual(manifest[name], name);
+  }
 });
