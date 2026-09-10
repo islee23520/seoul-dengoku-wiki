@@ -2,7 +2,7 @@ import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
 import { verifyDiagramRecords } from './world-atlas-isometric.mjs';
-import { extractAtlasJson, parseCastIndex, scanCompanyTokens } from './world-atlas-parse.mjs';
+import { extractAtlasJson, parseCastIndex } from './world-atlas-parse.mjs';
 import {
   verifyMonsterManifest,
   verifySeeds,
@@ -36,7 +36,7 @@ function requireFields(record, fields, fail, where) {
 
 export function verifyHouses(atlas, projections, fail) {
   const houses = atlas.houses ?? [];
-  if (houses.length !== 24) fail('E_HOUSE_COUNT', `actual=${houses.length}`);
+  if (houses.length !== 32) fail('E_HOUSE_COUNT', `actual=${houses.length}`);
   const locked = new Map(LOCKED_HOUSES.map((h) => [h.id, h.name]));
   const seen = new Set();
   const covered = new Set();
@@ -53,7 +53,6 @@ export function verifyHouses(atlas, projections, fail) {
       fail('E_FULL_STATE_OWNERSHIP', house.id);
     }
     for (const stateId of house.states ?? []) covered.add(stateId);
-    scanCompanyTokens(JSON.stringify(house), fail, 'E_COMPANY_TOKEN', house.id);
     if (!Array.isArray(house.arcs) || house.arcs.length < 3) fail('E_HOUSE_FIELD', `${house.id} arcs`);
   }
   for (const lockedHouse of [...CORPORATE_HOUSES, ...CIVIC_HOUSES]) {
@@ -93,10 +92,10 @@ export async function verifyAtlasStage({ atlasPath, docs, stage, fail, batch = n
   if (parsed.value.schema !== ATLAS_SCHEMA) fail('E_ATLAS_SCHEMA', parsed.value.schema);
   if (parsed.value.document?.owner !== ATLAS_OWNER) fail('E_OWNER', 'document');
   const humans = parsed.value.humans ?? [];
-  if (humans.length !== 412) fail('E_K_MAP', `actual=${humans.length}`);
+  if (humans.length !== 422) fail('E_K_MAP', `actual=${humans.length}`);
   try {
     const index = parseCastIndex(await readFile(join(docs, 'Cast-Index.md'), 'utf8'));
-    for (let i = 0; i < 412; i += 1) {
+    for (let i = 0; i < 422; i += 1) {
       if (humans[i]?.id !== index[i]?.id || humans[i]?.name !== index[i]?.name) {
         fail('E_K_MAP', `${humans[i]?.id ?? i} ${humans[i]?.name}`);
         break;

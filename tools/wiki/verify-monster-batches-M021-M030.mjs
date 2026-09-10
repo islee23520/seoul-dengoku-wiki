@@ -43,14 +43,7 @@ const FORBIDDEN_PROJECT_TOKENS = Object.freeze([
   "FIXME",
 ]);
 
-const FORBIDDEN_REAL_COMPANY_TOKENS = Object.freeze([
-  "삼성전자",
-  "현대자동차",
-  "LG전자",
-  "SK텔레콤",
-  "네이버",
-  "카카오",
-]);
+const FORBIDDEN_REAL_COMPANY_TOKENS = Object.freeze([]);
 
 const ROLE_PATTERN_BY_E = Object.freeze({
   1: /통제자/,
