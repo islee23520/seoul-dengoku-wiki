@@ -79,7 +79,13 @@ namespace Janseon.Foundation.Battle
             string[] cards = { "guard-shieldwall", "encourage-morale", "pincer-focus", "mobility-regroup" };
             foreach (string card in cards)
                 Bind(UiElementNames.BattleCard(card), () => { controller.Targeting?.BeginCard(card); Synchronize(); });
-            Bind(UiElementNames.BattleCardCancel, () => { controller.Targeting?.Cancel(); Synchronize(); });
+            Bind(UiElementNames.BattleCardCancel, CancelTargeting);
+            // Keep cancel reachable on the battlefield even when the legacy dock overflows.
+            // It remains a HUD raycast target, never a world selection.
+            var cancel = (RectTransform)UguiHudBuilder.Find(host.CanvasRoot, UiElementNames.BattleCardCancel);
+            cancel.SetParent(viewport, false);
+            cancel.anchorMin = cancel.anchorMax = cancel.pivot = Vector2.one;
+            cancel.anchoredPosition = new Vector2(-8f, -8f);
             // Direction and ring placeholders in the dock must never masquerade as world graphics.
             string[] graphics = { UiElementNames.BattleCardTargetRing, UiElementNames.BattleCardDirectionNorth,
                 UiElementNames.BattleCardDirectionEast, UiElementNames.BattleCardDirectionSouth, UiElementNames.BattleCardDirectionWest };
@@ -102,11 +108,32 @@ namespace Janseon.Foundation.Battle
 
         void Point(PointerEventData data, bool click)
         {
-            if (View == null || !RectTransformUtility.ScreenPointToLocalPointInRectangle(
-                viewport, data.position, data.pressEventCamera, out Vector2 local)) return;
+            if (View == null || !viewport.gameObject.activeInHierarchy
+                || (click && data.button != PointerEventData.InputButton.Left)
+                || !RectTransformUtility.ScreenPointToLocalPointInRectangle(
+                    viewport, data.position, data.pressEventCamera, out Vector2 local)) return;
             Rect rect = viewport.rect;
+            if (!rect.Contains(local)) { View.ClearHover(); return; }
             var normalized = new Vector3((local.x - rect.xMin) / rect.width, (local.y - rect.yMin) / rect.height, 0);
+            // View selection runs the owner-card machine; only its fresh Confirm preview
+            // can reach PocCoreLoopController -> BattleSessionDriver.Enqueue/Submit.
             View.Point(View.ViewCamera.ViewportPointToRay(normalized), click);
+            Synchronize();
+        }
+
+        void CancelTargeting()
+        {
+            controller.Targeting?.Cancel();
+            Synchronize();
+        }
+
+        void Update()
+        {
+            // Use the production input module's Cancel mapping (Escape), independent of
+            // which HUD button has keyboard focus. Pausing gates ticks, not this input.
+            if (controller?.Targeting == null || controller.Targeting.Stage == CardTargetingStage.Idle) return;
+            if (EventSystem.current?.currentInputModule is StandaloneInputModule input
+                && input.input.GetButtonDown(input.cancelButton)) CancelTargeting();
         }
 
         public void Synchronize()
@@ -130,6 +157,8 @@ namespace Janseon.Foundation.Battle
                 float aspect = viewport.rect.height > 0 ? viewport.rect.width / viewport.rect.height : 16f / 9f;
                 View.FrameCamera(aspect);
             }
+            UguiHudBuilder.Find(host.CanvasRoot, UiElementNames.BattleCardCancel).gameObject.SetActive(
+                controller.Targeting != null && controller.Targeting.Stage != CardTargetingStage.Idle);
             Presented?.Invoke();
         }
 
