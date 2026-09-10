@@ -1,0 +1,108 @@
+Mono path[0] = '/Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/.omo/evidence/unity-html-poc-ui-parity/task-07/player/Targeting.app/Contents/Resources/Data/Managed'
+Mono config path = '/Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/.omo/evidence/unity-html-poc-ui-parity/task-07/player/Targeting.app/Contents/MonoBleedingEdge/etc'
+CodeReloadManager initialized
+Found 3 interfaces on host : 0) 192.168.0.218 1) 192.168.0.205 2) 100.71.30.111
+Player connection [8286970240]  Target information:
+
+Player connection [8286970240]  * "[IP] 192.168.0.218 [Port] 55000 [Flags] 2 [Guid] 692100943 [EditorId] 2685892380 [Version] 1048832 [Id] OSXPlayer(1,MacBook-Pro-2.local) [Debug] 0 [PackageName] OSXPlayer [ProjectName] 잔선: 서울" 
+
+Player connection [8286970240]  * "[IP] 192.168.0.205 [Port] 55000 [Flags] 2 [Guid] 692100943 [EditorId] 2685892380 [Version] 1048832 [Id] OSXPlayer(1,MacBook-Pro-2.local) [Debug] 0 [PackageName] OSXPlayer [ProjectName] 잔선: 서울" 
+
+Player connection [8286970240]  * "[IP] 100.71.30.111 [Port] 55000 [Flags] 2 [Guid] 692100943 [EditorId] 2685892380 [Version] 1048832 [Id] OSXPlayer(1,MacBook-Pro-2.local) [Debug] 0 [PackageName] OSXPlayer [ProjectName] 잔선: 서울" 
+
+Player connection [8286970240] Started UDP target info broadcast (1) on [225.0.0.222:54997].
+
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Initialize engine version: 6000.7.0a5 (a15235a53881)
+[EntityIdStore] init: VM path (explicit commit), pageSize=16384, blockCount=262144, entitiesPerBlock=1024, slots reserved=4294967296 bytes
+[Subsystems] Discovering subsystems at path /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/.omo/evidence/unity-html-poc-ui-parity/task-07/player/Targeting.app/Contents/Resources/Data/UnitySubsystems
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Finished resetting the current domain, in  0.004 seconds
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+UnloadTime: 0.319500 ms
+JANSEON_STARTUP_READY screen=MainTitle
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:133)
+Janseon.Foundation.Composition.FoundationStartup/<StartAsync>d__2:MoveNext () (at /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Janseon/Foundation/Composition/FoundationStartup.cs:32)
+UnityEngine.Awaitable/AwaitableAsyncMethodBuilder/StateMachineBox`1<Janseon.Foundation.Composition.FoundationStartup/<StartAsync>d__2>:DoMoveNext () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/Awaitable.AsyncMethodBuilder.cs:49)
+System.Threading.Tasks.AwaitTaskContinuation:InvokeAction (object)
+System.Threading.Tasks.AwaitTaskContinuation:RunCallback (System.Threading.ContextCallback,object,System.Threading.Tasks.Task&)
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation:Run (System.Threading.Tasks.Task,bool)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task`1<Janseon.Foundation.AppFlow.TransitionOutcome>:TrySetResult (Janseon.Foundation.AppFlow.TransitionOutcome)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Janseon.Foundation.AppFlow.TransitionOutcome>:SetResult (Janseon.Foundation.AppFlow.TransitionOutcome)
+Janseon.Foundation.AppFlow.ApplicationFlowCoordinator/<RunTransitionAsync>d__23:MoveNext () (at /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Janseon/Foundation/AppFlow/ApplicationFlowCoordinator.cs:206)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.AwaitTaskContinuation:InvokeAction (object)
+System.Threading.Tasks.AwaitTaskContinuation:RunCallback (System.Threading.ContextCallback,object,System.Threading.Tasks.Task&)
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation:Run (System.Threading.Tasks.Task,bool)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task`1<Janseon.Foundation.AppFlow.IContentSceneLease>:TrySetResult (Janseon.Foundation.AppFlow.IContentSceneLease)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Janseon.Foundation.AppFlow.IContentSceneLease>:SetResult (Janseon.Foundation.AppFlow.IContentSceneLease)
+Janseon.Foundation.Composition.UnityFoundationSceneLoader/<LoadAsync>d__2:MoveNext () (at /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Janseon/Foundation/Composition/UnityFoundationSceneLoader.cs:47)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation/<>c:<.cctor>b__7_0 (object)
+UnityEngine.UnitySynchronizationContext/WorkRequest:Invoke () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnitySynchronizationContext.cs:155)
+UnityEngine.UnitySynchronizationContext:Exec () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnitySynchronizationContext.cs:83)
+UnityEngine.UnitySynchronizationContext:ExecuteTasks () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnitySynchronizationContext.cs:109)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 133)
+
+The character with Unicode value \u2600 was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:66)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:229)
+TMPro.TextMeshProUGUI:SetArraySizes (TMPro.TMP_Text/TextProcessingElement[]) (at ./Library/PackageCache/com.unity.ugui@8e276752998c/Runtime/TMP/TextMeshProUGUI.cs:1978)
+TMPro.TMP_Text:ParseInputText () (at ./Library/PackageCache/com.unity.ugui@8e276752998c/Runtime/TMP/TMP_Text.cs:2087)
+TMPro.TextMeshProUGUI:OnPreRenderCanvas () (at ./Library/PackageCache/com.unity.ugui@8e276752998c/Runtime/TMP/TextMeshProUGUI.cs:2463)
+TMPro.TextMeshProUGUI:Rebuild (UnityEngine.UI.CanvasUpdate) (at ./Library/PackageCache/com.unity.ugui@8e276752998c/Runtime/TMP/TextMeshProUGUI.cs:226)
+UnityEngine.UI.CanvasUpdateRegistry:PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@8e276752998c/Runtime/UGUI/UI/Core/CanvasUpdateRegistry.cs:251)
+UnityEngine.Canvas:SendWillRenderCanvases () (at /Users/bokken/build/output/unity/unity/Modules/UI/ScriptBindings/UICanvas.bindings.cs:583)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 229)
+
+The character with Unicode value \U0001F4DC was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:66)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:229)
+TMPro.TextMeshProUGUI:SetArraySizes (TMPro.TMP_Text/TextProcessingElement[]) (at ./Library/PackageCache/com.unity.ugui@8e276752998c/Runtime/TMP/TextMeshProUGUI.cs:1978)
+TMPro.TMP_Text:ParseInputText () (at ./Library/PackageCache/com.unity.ugui@8e276752998c/Runtime/TMP/TMP_Text.cs:2087)
+TMPro.TextMeshProUGUI:OnPreRenderCanvas () (at ./Library/PackageCache/com.unity.ugui@8e276752998c/Runtime/TMP/TextMeshProUGUI.cs:2463)
+TMPro.TextMeshProUGUI:Rebuild (UnityEngine.UI.CanvasUpdate) (at ./Library/PackageCache/com.unity.ugui@8e276752998c/Runtime/TMP/TextMeshProUGUI.cs:226)
+UnityEngine.UI.CanvasUpdateRegistry:PerformUpdate () (at ./Library/PackageCache/com.unity.ugui@8e276752998c/Runtime/UGUI/UI/Core/CanvasUpdateRegistry.cs:251)
+UnityEngine.Canvas:SendWillRenderCanvases () (at /Users/bokken/build/output/unity/unity/Modules/UI/ScriptBindings/UICanvas.bindings.cs:583)
+
+(Filename: /Users/bokken/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 229)
+

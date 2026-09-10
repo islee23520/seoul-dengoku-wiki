@@ -52,6 +52,7 @@ namespace Janseon.Foundation.UI
 
         public CampaignState Campaign => campaign;
         public BattleSimState Battle => battle;
+        public OwnerCardTargetingMachine Targeting { get; private set; }
         public Ledger CampaignLedger => campaignLedger;
         public Ledger BattleLedger => battleLedger;
         public bool BattlePaused => battleDriver.Paused;
@@ -117,6 +118,8 @@ namespace Janseon.Foundation.UI
             battleLedger = new Ledger();
             book = new SettlementBook();
             battle = null;
+            Targeting?.Cancel();
+            Targeting = null;
             pendingFormation = null;
             battleDriver.Detach();
             LastReceipt = null;
@@ -321,6 +324,9 @@ namespace Janseon.Foundation.UI
             battle = BattleSim.Open(setup);
             battleDriver.Attach(battle, battleLedger);
             battleDriver.Paused = true;
+            Targeting?.Cancel();
+            Targeting = new OwnerCardTargetingMachine(battle, SubmitBattleCommand, () => ++commandSeq);
+            Targeting.SelectOwner(battle.PlayerCommanderId);
         }
 
         void OnFormationSwapFront()
@@ -380,40 +386,15 @@ namespace Janseon.Foundation.UI
         void OnCardGeneralUse()
         {
             LastClickedAction = UiElementNames.CardGeneralUse;
-            UnitState commander = FindPlayerCommander();
-            if (commander == null) return;
-            SubmitBattleCommand(new BattleTickCommand
-            {
-                Id = NextCommandId("encourage-morale"),
-                Seq = commandSeq,
-                At = new Tick(battle.Tick),
-                Kind = BattleTickCommandKind.PlayCard,
-                CardId = "encourage-morale",
-                OwnerUnitId = commander.Id,
-                TargetUnitId = commander.Id,
-            });
+            Targeting?.BeginCard("encourage-morale");
+            Publish();
         }
 
         void OnMobilityRegroup()
         {
             LastClickedAction = UiElementNames.MobilityRegroup;
-            if (battle == null) return;
-            UnitState commander = null;
-            for (var i = 0; i < battle.Units.Length; i++)
-                if (battle.Units[i].Id.Equals(battle.PlayerCommanderId)) { commander = battle.Units[i]; break; }
-            if (commander == null) return;
-            var command = new BattleTickCommand
-            {
-                Id = NextCommandId("mobility-regroup"),
-                Seq = commandSeq,
-                At = new Tick(battle.Tick),
-                Kind = BattleTickCommandKind.PlayCard,
-                CardId = "mobility-regroup",
-                OwnerUnitId = commander.Id,
-                TargetUnitId = commander.Id,
-                Facing = CardinalDirection.South,
-            };
-            SubmitBattleCommand(command);
+            Targeting?.BeginCard("mobility-regroup");
+            Publish();
         }
 
         void OnBattlePlayPause()
@@ -434,17 +415,6 @@ namespace Janseon.Foundation.UI
             battleDriver.SubmitCurrentCommands();
             if (LastRejection is BattleRejection) return;
             Publish();
-        }
-
-        UnitState FindPlayerCommander()
-        {
-            if (battle?.Units == null) return null;
-            for (var i = 0; i < battle.Units.Length; i++)
-            {
-                UnitState unit = battle.Units[i];
-                if (unit.Id.Equals(battle.PlayerCommanderId)) return unit;
-            }
-            return null;
         }
 
         static FormationSlot[] CloneFormation(FormationSlot[] source)
