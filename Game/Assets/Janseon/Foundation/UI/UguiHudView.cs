@@ -4,9 +4,6 @@ using UnityEngine.UI;
 
 namespace Janseon.Foundation.UI
 {
-    /// <summary>
-    /// Visible uGUI HUD bound to the same presenter events as the UITK document.
-    /// </summary>
     public sealed class UguiHudView
     {
         Transform root;
@@ -17,16 +14,17 @@ namespace Janseon.Foundation.UI
             Unwire();
             root = hudRoot;
             presenter = owner;
-            if (root == null || presenter == null)
-            {
-                return false;
-            }
-
+            if (root == null || presenter == null) return false;
             Wire(UiElementNames.ActionDepart, presenter.TriggerDepartForTest);
             Wire(UiElementNames.ActionFaceEncounter, presenter.TriggerFaceEncounterForTest);
             Wire(UiElementNames.ActionEnterResolution, presenter.TriggerEnterResolutionForTest);
             Wire(UiElementNames.ActionSettle, presenter.TriggerSettleForTest);
-            Wire(UiElementNames.BattleAdvance, presenter.TriggerBattleAdvanceForTest);
+            Wire(UiElementNames.BattlePlayPause, presenter.TriggerBattlePlayPauseForTest);
+            Wire(UiElementNames.BattleReset, presenter.TriggerBattleResetForTest);
+            Wire(UiElementNames.CardGeneralUse, presenter.TriggerCardGeneralUseForTest);
+            Wire(UiElementNames.FormationSwapFront, presenter.TriggerFormationSwapFrontForTest);
+            Wire(UiElementNames.EditFormation, presenter.TriggerEditFormationForTest);
+            Wire(UiElementNames.MobilityRegroup, presenter.TriggerMobilityRegroupForTest);
             Wire(UiElementNames.ChoiceNegotiate, presenter.TriggerNegotiateForTest);
             Wire(UiElementNames.ChoiceBypass, presenter.TriggerBypassForTest);
             Wire(UiElementNames.ChoiceCombat, presenter.TriggerCombatForTest);
@@ -34,70 +32,17 @@ namespace Janseon.Foundation.UI
             Wire(UiElementNames.StationYeongdeungpo, () => presenter.TriggerTravelForTest(Janseon.Core.StationId.Yeongdeungpo));
             Wire(UiElementNames.StationSindorim, () => presenter.TriggerTravelForTest(Janseon.Core.StationId.Sindorim));
             Wire(UiElementNames.StationGuro, () => presenter.TriggerTravelForTest(Janseon.Core.StationId.Guro));
-            Wire("battle-move-n", presenter.TriggerBattleMoveNForTest);
-            Wire("battle-move-e", presenter.TriggerBattleMoveEForTest);
-            Wire("battle-move-s", presenter.TriggerBattleMoveSForTest);
-            Wire("battle-move-w", presenter.TriggerBattleMoveWForTest);
-            Wire("battle-melee", presenter.TriggerBattleMeleeForTest);
-            Wire("battle-ranged", presenter.TriggerBattleRangedForTest);
-            Wire(UiElementNames.BattleWait, presenter.TriggerBattleWaitForTest);
-            Wire(UiElementNames.MobilityRegroup, presenter.TriggerMobilityRegroupForTest);
-            Wire("battle-end-turn", presenter.TriggerBattleEndTurnForTest);
             return true;
         }
 
         public void Apply(GameplayUiSnapshot snapshot)
         {
-            if (root == null || snapshot == null)
-            {
-                return;
-            }
-
-            SetActive(UiElementNames.EncounterChoices, snapshot.VisiblePanel == GameplayPanelId.Encounter);
-            bool battle = snapshot.VisiblePanel == GameplayPanelId.Battle;
-            SetActive(UiElementNames.RouteRail, !battle);
-            SetActive(UiElementNames.BattleHud, battle);
-            SetActive(
-                UiElementNames.SettlementPanel,
-                snapshot.VisiblePanel == GameplayPanelId.Settlement
-                || snapshot.ShowSettleAction
-                || snapshot.ShowReturnAction);
-            SetActive(UiElementNames.ActionDepart, snapshot.ShowDepartAction);
-            SetActive(UiElementNames.ActionFaceEncounter, snapshot.ShowFaceAction);
-            SetActive(UiElementNames.ActionEnterResolution, snapshot.ShowEnterResolutionAction);
-            SetActive(UiElementNames.ActionSettle, snapshot.ShowSettleAction);
-            SetActive(UiElementNames.BattleAdvance, snapshot.ShowBattleAdvanceAction);
-            SetActive(UiElementNames.MobilityRegroup, battle);
-            SetActive(UiElementNames.ReturnAction, snapshot.ShowReturnAction);
-
-            SetText(UiElementNames.ClockLabel, snapshot.ClockText);
-            SetText("encounter-context", snapshot.EncounterContext);
-            SetText("battle-forecast", snapshot.BattleForecast);
-            SetText("why-tooltip", snapshot.WhyText);
-            SetText(UiElementNames.SettlementOutcome, snapshot.SettlementOutcomeText);
-
-            string[] fallback = { "탐험가", "의무병", "순찰대" };
-            for (var i = 0; i < 3; i++)
-            {
-                SetText("party-slot-" + i + "-name", fallback[i]);
-                if (i < snapshot.PartyHp.Count)
-                {
-                    SetText(
-                        "party-slot-" + i + "-hp",
-                        "HP " + snapshot.PartyHp[i] + "/" + snapshot.PartyMaxHp[i]);
-                }
-                else
-                {
-                    SetText("party-slot-" + i + "-hp", "HP");
-                }
-            }
-
-            SetText("layer-chip", snapshot.CurrentStationElement == UiElementNames.StationSindorim ? "B2" : "B1");
+            presenter?.ApplySnapshot(snapshot);
         }
 
         public void ApplyWhy(string why)
         {
-            SetText("why-tooltip", why);
+            presenter?.ApplyWhy(why);
         }
 
         public void Unwire()
@@ -109,31 +54,9 @@ namespace Janseon.Foundation.UI
         void Wire(string name, UnityEngine.Events.UnityAction action)
         {
             Button button = UguiHudBuilder.ButtonNamed(root, name);
-            if (button == null)
-            {
-                return;
-            }
-
+            if (button == null) return;
             button.onClick.RemoveAllListeners();
             button.onClick.AddListener(action);
-        }
-
-        void SetActive(string name, bool active)
-        {
-            Transform found = UguiHudBuilder.Find(root, name);
-            if (found != null)
-            {
-                found.gameObject.SetActive(active);
-            }
-        }
-
-        void SetText(string name, string value)
-        {
-            Text label = UguiHudBuilder.TextNamed(root, name);
-            if (label != null)
-            {
-                label.text = value ?? string.Empty;
-            }
         }
     }
 }

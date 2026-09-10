@@ -2,9 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using Janseon.Core;
+using Janseon.Core.Data;
 using Janseon.Foundation.UI;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using VContainer;
 
 namespace Janseon.Foundation.Composition
 {
@@ -16,20 +19,46 @@ namespace Janseon.Foundation.Composition
     {
         RectTransform root;
         readonly List<string> focusOrder = new List<string>();
+        readonly IReadOnlyCardCatalog cards;
+        readonly IReadOnlyUnitRoleCatalog unitRoles;
+        readonly IReadOnlyFormationCatalog formations;
+        readonly IReadOnlyStationCatalog stations;
+        readonly IContentFingerprint contentFingerprint;
+
+        public GameplayPresenter()
+        {
+        }
+
+        [Inject]
+        public GameplayPresenter(
+            IReadOnlyCardCatalog cards,
+            IReadOnlyUnitRoleCatalog unitRoles,
+            IReadOnlyFormationCatalog formations,
+            IReadOnlyStationCatalog stations,
+            IContentFingerprint contentFingerprint)
+        {
+            this.cards = cards ?? throw new ArgumentNullException(nameof(cards));
+            this.unitRoles = unitRoles ?? throw new ArgumentNullException(nameof(unitRoles));
+            this.formations = formations ?? throw new ArgumentNullException(nameof(formations));
+            this.stations = stations ?? throw new ArgumentNullException(nameof(stations));
+            this.contentFingerprint = contentFingerprint ?? throw new ArgumentNullException(nameof(contentFingerprint));
+        }
 
         Button actionDepart;
         Button actionFace;
         Button actionEnter;
         Button actionSettle;
-        Button battleAdvance;
-        Button battleMoveN;
-        Button battleMoveE;
-        Button battleMoveS;
-        Button battleMoveW;
-        Button battleMelee;
-        Button battleRanged;
-        Button battleEndTurn;
-        Button battleWait;
+        Button battlePlayPause;
+        Button battleReset;
+        Button cardGeneralUse;
+        Button formationSwapFront;
+        Button editFormation;
+        Button formationEditConfirm;
+        Button formationEditCancel;
+        Button formationEditFacingN;
+        Button formationEditFacingE;
+        Button formationEditFacingS;
+        Button formationEditFacingW;
         Button mobilityRegroup;
         Button choiceNegotiate;
         Button choiceBypass;
@@ -65,12 +94,14 @@ namespace Janseon.Foundation.Composition
         public event Action FaceEncounterChosen;
         public event Action EnterResolutionChosen;
         public event Action SettleChosen;
-        public event Action BattleAdvanceChosen;
-        public event Action<int, int> BattleMoveChosen;
-        public event Action BattleMeleeChosen;
-        public event Action BattleRangedChosen;
-        public event Action BattleEndTurnChosen;
-        public event Action BattleWaitChosen;
+        public event Action BattlePlayPauseChosen;
+        public event Action BattleResetChosen;
+        public event Action CardGeneralUseChosen;
+        public event Action FormationSwapFrontChosen;
+        public event Action EditFormationChosen;
+        public event Action FormationEditConfirmChosen;
+        public event Action FormationEditCancelChosen;
+        public event Action<CardinalDirection> FormationEditFacingChosen;
         public event Action MobilityRegroupChosen;
         public event Action NegotiateChosen;
         public event Action BypassChosen;
@@ -118,16 +149,18 @@ namespace Janseon.Foundation.Composition
             actionFace = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.ActionFaceEncounter);
             actionEnter = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.ActionEnterResolution);
             actionSettle = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.ActionSettle);
-            battleAdvance = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.BattleAdvance);
-            battleMoveN = UguiHudBuilder.ButtonNamed(gameplayRoot, "battle-move-n");
-            battleMoveE = UguiHudBuilder.ButtonNamed(gameplayRoot, "battle-move-e");
-            battleMoveS = UguiHudBuilder.ButtonNamed(gameplayRoot, "battle-move-s");
-            battleMoveW = UguiHudBuilder.ButtonNamed(gameplayRoot, "battle-move-w");
-            battleMelee = UguiHudBuilder.ButtonNamed(gameplayRoot, "battle-melee");
-            battleRanged = UguiHudBuilder.ButtonNamed(gameplayRoot, "battle-ranged");
-            battleWait = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.BattleWait);
+            battlePlayPause = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.BattlePlayPause);
+            battleReset = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.BattleReset);
+            cardGeneralUse = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.CardGeneralUse);
+            formationSwapFront = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.FormationSwapFront);
+            editFormation = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.EditFormation);
+            formationEditConfirm = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.FormationEditConfirm);
+            formationEditCancel = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.FormationEditCancel);
+            formationEditFacingN = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.FormationEditFacingN);
+            formationEditFacingE = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.FormationEditFacingE);
+            formationEditFacingS = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.FormationEditFacingS);
+            formationEditFacingW = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.FormationEditFacingW);
             mobilityRegroup = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.MobilityRegroup);
-            battleEndTurn = UguiHudBuilder.ButtonNamed(gameplayRoot, "battle-end-turn");
             choiceNegotiate = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.ChoiceNegotiate);
             choiceBypass = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.ChoiceBypass);
             choiceCombat = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.ChoiceCombat);
@@ -141,7 +174,12 @@ namespace Janseon.Foundation.Composition
             }
 
             if (actionDepart == null || actionFace == null || actionEnter == null || actionSettle == null
-                || battleAdvance == null || choiceNegotiate == null || choiceBypass == null
+                || battlePlayPause == null || battleReset == null || cardGeneralUse == null
+                || formationSwapFront == null || editFormation == null
+                || formationEditConfirm == null || formationEditCancel == null
+                || formationEditFacingN == null || formationEditFacingE == null
+                || formationEditFacingS == null || formationEditFacingW == null
+                || mobilityRegroup == null || choiceNegotiate == null || choiceBypass == null
                 || choiceCombat == null || returnAction == null
                 || stationYeongdeungpo == null || stationSindorim == null || stationGuro == null)
             {
@@ -152,16 +190,18 @@ namespace Janseon.Foundation.Composition
             actionFace.onClick.AddListener(OnFaceClicked);
             actionEnter.onClick.AddListener(OnEnterClicked);
             actionSettle.onClick.AddListener(OnSettleClicked);
-            battleAdvance.onClick.AddListener(OnBattleAdvanceClicked);
-            if (battleMoveN != null) battleMoveN.onClick.AddListener(OnBattleMoveNClicked);
-            if (battleMoveE != null) battleMoveE.onClick.AddListener(OnBattleMoveEClicked);
-            if (battleMoveS != null) battleMoveS.onClick.AddListener(OnBattleMoveSClicked);
-            if (battleMoveW != null) battleMoveW.onClick.AddListener(OnBattleMoveWClicked);
-            if (battleMelee != null) battleMelee.onClick.AddListener(OnBattleMeleeClicked);
-            if (battleRanged != null) battleRanged.onClick.AddListener(OnBattleRangedClicked);
-            if (battleWait != null) battleWait.onClick.AddListener(OnBattleWaitClicked);
-            if (mobilityRegroup != null) mobilityRegroup.onClick.AddListener(OnMobilityRegroupClicked);
-            if (battleEndTurn != null) battleEndTurn.onClick.AddListener(OnBattleEndTurnClicked);
+            battlePlayPause.onClick.AddListener(OnBattlePlayPauseClicked);
+            battleReset.onClick.AddListener(OnBattleResetClicked);
+            cardGeneralUse.onClick.AddListener(OnCardGeneralUseClicked);
+            formationSwapFront.onClick.AddListener(OnFormationSwapFrontClicked);
+            editFormation.onClick.AddListener(OnEditFormationClicked);
+            formationEditConfirm.onClick.AddListener(OnFormationEditConfirmClicked);
+            formationEditCancel.onClick.AddListener(OnFormationEditCancelClicked);
+            formationEditFacingN.onClick.AddListener(OnFormationEditFacingNClicked);
+            formationEditFacingE.onClick.AddListener(OnFormationEditFacingEClicked);
+            formationEditFacingS.onClick.AddListener(OnFormationEditFacingSClicked);
+            formationEditFacingW.onClick.AddListener(OnFormationEditFacingWClicked);
+            mobilityRegroup.onClick.AddListener(OnMobilityRegroupClicked);
             choiceNegotiate.onClick.AddListener(OnNegotiateClicked);
             choiceBypass.onClick.AddListener(OnBypassClicked);
             choiceCombat.onClick.AddListener(OnCombatClicked);
@@ -180,6 +220,7 @@ namespace Janseon.Foundation.Composition
                 focusOrder.Add(UiElementNames.GameplayFocusOrder[i]);
             }
 
+            ApplyContentReceipt();
             IsReady = true;
             return true;
         }
@@ -194,16 +235,16 @@ namespace Janseon.Foundation.Composition
         public void TriggerFaceEncounterForTest() => OnFaceClicked();
         public void TriggerEnterResolutionForTest() => OnEnterClicked();
         public void TriggerSettleForTest() => OnSettleClicked();
-        public void TriggerBattleAdvanceForTest() => OnBattleAdvanceClicked();
-        public void TriggerBattleMoveNForTest() => OnBattleMoveNClicked();
-        public void TriggerBattleMoveEForTest() => OnBattleMoveEClicked();
-        public void TriggerBattleMoveSForTest() => OnBattleMoveSClicked();
-        public void TriggerBattleMoveWForTest() => OnBattleMoveWClicked();
-        public void TriggerBattleMeleeForTest() => OnBattleMeleeClicked();
-        public void TriggerBattleRangedForTest() => OnBattleRangedClicked();
-        public void TriggerBattleWaitForTest() => OnBattleWaitClicked();
+        public void TriggerBattlePlayPauseForTest() => OnBattlePlayPauseClicked();
+        public void TriggerBattleResetForTest() => OnBattleResetClicked();
+        public void TriggerCardGeneralUseForTest() => OnCardGeneralUseClicked();
+        public void TriggerFormationSwapFrontForTest() => OnFormationSwapFrontClicked();
+        public void TriggerEditFormationForTest() => OnEditFormationClicked();
+        public void TriggerFormationEditConfirmForTest() => OnFormationEditConfirmClicked();
+        public void TriggerFormationEditCancelForTest() => OnFormationEditCancelClicked();
+        public void TriggerFormationEditFacingForTest(CardinalDirection facing) => FormationEditFacingChosen?.Invoke(facing);
+        public void SetFormationEditVisible(bool visible) => SetVisible(UiElementNames.FormationEdit, visible);
         public void TriggerMobilityRegroupForTest() => OnMobilityRegroupClicked();
-        public void TriggerBattleEndTurnForTest() => OnBattleEndTurnClicked();
         public void TriggerNegotiateForTest() => OnNegotiateClicked();
         public void TriggerBypassForTest() => OnBypassClicked();
         public void TriggerCombatForTest() => OnCombatClicked();
@@ -234,6 +275,8 @@ namespace Janseon.Foundation.Composition
                 return;
             }
 
+            ApplyContentReceipt();
+
             for (var i = 0; i < StageNames.Length; i++)
             {
                 Transform chip = UguiHudBuilder.Find(root, StageNames[i]);
@@ -261,6 +304,8 @@ namespace Janseon.Foundation.Composition
             SetVisible(UiElementNames.EncounterChoices, snapshot.VisiblePanel == GameplayPanelId.Encounter);
             bool battle = snapshot.VisiblePanel == GameplayPanelId.Battle;
             SetVisible(UiElementNames.RouteRail, !battle);
+            SetVisible(UiElementNames.DeployPanel, !battle);
+            SetVisible("party-strip", !battle);
             SetVisible(UiElementNames.BattleHud, battle);
             SetVisible(UiElementNames.BattleGrid, battle);
             SetVisible(UiElementNames.BattleLog, battle);
@@ -280,7 +325,12 @@ namespace Janseon.Foundation.Composition
             SetActionVisible(UiElementNames.ActionFaceEncounter, snapshot.ShowFaceAction);
             SetActionVisible(UiElementNames.ActionEnterResolution, snapshot.ShowEnterResolutionAction);
             SetActionVisible(UiElementNames.ActionSettle, snapshot.ShowSettleAction);
-            SetActionVisible(UiElementNames.BattleAdvance, snapshot.ShowBattleAdvanceAction);
+            SetActionVisible(UiElementNames.BattlePlayPause, snapshot.ShowBattlePlayPauseAction);
+            SetActionVisible(UiElementNames.BattleReset, snapshot.ShowBattleResetAction);
+            SetActionVisible(UiElementNames.FormationSwapFront, snapshot.ShowEditFormationAction);
+            SetActionVisible(UiElementNames.EditFormation, snapshot.ShowEditFormationAction);
+            SetActionState(UiElementNames.CardGeneralUse, snapshot.ShowCardGeneralUseAction, snapshot.CanUseGeneralCard);
+            SetActionState(UiElementNames.MobilityRegroup, snapshot.ShowCardMobilityRegroupAction, snapshot.CanUseMobilityCard);
             SetActionVisible(UiElementNames.ReturnAction, snapshot.ShowReturnAction);
 
             // Station nodes are route-map labels: keep painted; interactivity follows travel stage.
@@ -330,25 +380,32 @@ namespace Janseon.Foundation.Composition
         void ApplyMeters(GameplayUiSnapshot snapshot)
         {
             Text hp = FindText(root, UiElementNames.BattleHp);
-            Text ap = FindText(root, UiElementNames.BattleAp);
             if (hp != null)
             {
-                hp.text = "HP "
-                    + snapshot.BattleHp.ToString(CultureInfo.InvariantCulture)
-                    + "/"
-                    + snapshot.BattleMaxHp.ToString(CultureInfo.InvariantCulture);
+                hp.text = "HP " + snapshot.BattleHp.ToString(CultureInfo.InvariantCulture)
+                    + "/" + snapshot.BattleMaxHp.ToString(CultureInfo.InvariantCulture);
             }
-
-            if (ap != null)
+            Text formation = FindText(root, UiElementNames.FormationSelection);
+            if (formation != null) formation.text = snapshot.FormationSelectionText ?? string.Empty;
+            Text morale = FindText(root, UiElementNames.BattleMorale);
+            if (morale != null)
             {
-                ap.text = "AP "
-                    + snapshot.BattleAp.ToString(CultureInfo.InvariantCulture)
-                    + "/"
-                    + snapshot.BattleMaxAp.ToString(CultureInfo.InvariantCulture);
+                morale.text = "사기 " + snapshot.PlayerMorale.ToString(CultureInfo.InvariantCulture)
+                    + " / 적 " + snapshot.EnemyMorale.ToString(CultureInfo.InvariantCulture);
             }
-
+            Text recharge = FindText(root, UiElementNames.CardGeneralRecharge);
+            if (recharge != null)
+            {
+                recharge.text = "재충전 " + snapshot.GeneralRechargeTicksLeft.ToString(CultureInfo.InvariantCulture) + " tick";
+            }
+            Text flow = FindText(root, UiElementNames.BattlePlayPause);
+            if (flow != null) flow.text = snapshot.BattlePaused ? "전투 재개" : "일시정지";
             SetFill(UiElementNames.BattleHpFill, snapshot.HpFill01);
-            SetFill(UiElementNames.BattleApFill, snapshot.ApFill01);
+            SetTmpText(UiElementNames.BattleCardOwner, snapshot.ActingCardOwnerText);
+            SetTmpText(UiElementNames.BattleCardCooldownText, "재충전 " + snapshot.ActingCardCooldownTicksLeft.ToString(CultureInfo.InvariantCulture));
+            SetTmpText(UiElementNames.BattleMoralePlayer, "아군 사기 " + snapshot.PlayerMorale.ToString(CultureInfo.InvariantCulture));
+            SetTmpText(UiElementNames.BattleMoraleEnemy, "적 사기 " + snapshot.EnemyMorale.ToString(CultureInfo.InvariantCulture));
+            SetTmpText(UiElementNames.BattleReinforcement, snapshot.BattleForecast ?? string.Empty);
         }
 
         void ApplyParty(GameplayUiSnapshot snapshot)
@@ -506,7 +563,7 @@ namespace Janseon.Foundation.Composition
                 context.text = snapshot.EncounterContext ?? string.Empty;
             }
 
-            Text forecast = FindText(root, "battle-forecast");
+            Text forecast = FindText(root, UiElementNames.BattleReinforcementForecast);
             if (forecast != null)
             {
                 forecast.text = snapshot.BattleForecast ?? string.Empty;
@@ -558,6 +615,15 @@ namespace Janseon.Foundation.Composition
             {
                 button.interactable = visible;
             }
+        }
+
+        void SetActionState(string name, bool visible, bool interactable)
+        {
+            Transform el = UguiHudBuilder.Find(root, name);
+            if (el == null) return;
+            el.gameObject.SetActive(visible);
+            Button button = el.GetComponent<Button>();
+            if (button != null) button.interactable = visible && interactable;
         }
 
         void SetStationTravelEnabled(string name, bool travelEnabled)
@@ -619,16 +685,18 @@ namespace Janseon.Foundation.Composition
         void OnFaceClicked() => FaceEncounterChosen?.Invoke();
         void OnEnterClicked() => EnterResolutionChosen?.Invoke();
         void OnSettleClicked() => SettleChosen?.Invoke();
-        void OnBattleAdvanceClicked() => BattleAdvanceChosen?.Invoke();
-        void OnBattleMoveNClicked() => BattleMoveChosen?.Invoke(0, 1);
-        void OnBattleMoveEClicked() => BattleMoveChosen?.Invoke(1, 0);
-        void OnBattleMoveSClicked() => BattleMoveChosen?.Invoke(0, -1);
-        void OnBattleMoveWClicked() => BattleMoveChosen?.Invoke(-1, 0);
-        void OnBattleMeleeClicked() => BattleMeleeChosen?.Invoke();
-        void OnBattleRangedClicked() => BattleRangedChosen?.Invoke();
-        void OnBattleWaitClicked() => BattleWaitChosen?.Invoke();
+        void OnBattlePlayPauseClicked() => BattlePlayPauseChosen?.Invoke();
+        void OnBattleResetClicked() => BattleResetChosen?.Invoke();
+        void OnCardGeneralUseClicked() => CardGeneralUseChosen?.Invoke();
+        void OnFormationSwapFrontClicked() => FormationSwapFrontChosen?.Invoke();
+        void OnEditFormationClicked() => EditFormationChosen?.Invoke();
+        void OnFormationEditConfirmClicked() => FormationEditConfirmChosen?.Invoke();
+        void OnFormationEditCancelClicked() => FormationEditCancelChosen?.Invoke();
+        void OnFormationEditFacingNClicked() => FormationEditFacingChosen?.Invoke(CardinalDirection.North);
+        void OnFormationEditFacingEClicked() => FormationEditFacingChosen?.Invoke(CardinalDirection.East);
+        void OnFormationEditFacingSClicked() => FormationEditFacingChosen?.Invoke(CardinalDirection.South);
+        void OnFormationEditFacingWClicked() => FormationEditFacingChosen?.Invoke(CardinalDirection.West);
         void OnMobilityRegroupClicked() => MobilityRegroupChosen?.Invoke();
-        void OnBattleEndTurnClicked() => BattleEndTurnChosen?.Invoke();
         void OnNegotiateClicked() => NegotiateChosen?.Invoke();
         void OnBypassClicked() => BypassChosen?.Invoke();
         void OnCombatClicked() => CombatChosen?.Invoke();
@@ -640,6 +708,33 @@ namespace Janseon.Foundation.Composition
         void OnDeploy1Changed(bool participating) => DeploymentParticipationChosen?.Invoke(1, participating);
         void OnDeploy2Changed(bool participating) => DeploymentParticipationChosen?.Invoke(2, participating);
         void OnDeploy3Changed(bool participating) => DeploymentParticipationChosen?.Invoke(3, participating);
+
+        void ApplyContentReceipt()
+        {
+            if (cards == null || unitRoles == null || formations == null || stations == null || contentFingerprint == null)
+            {
+                return;
+            }
+
+            SetTmpText(UiElementNames.DataContentVersion,
+                "DATA " + contentFingerprint.Version.ContentVersion);
+            SetTmpText(UiElementNames.DataContentCounts,
+                "cards " + cards.All.Count.ToString(CultureInfo.InvariantCulture)
+                + " | roles " + unitRoles.All.Count.ToString(CultureInfo.InvariantCulture)
+                + " | formations " + formations.All.Count.ToString(CultureInfo.InvariantCulture)
+                + " | stations " + stations.All.Count.ToString(CultureInfo.InvariantCulture));
+            SetTmpText(UiElementNames.DataContentFingerprint,
+                "SHA-256 " + contentFingerprint.Sha256.Substring(0, 12));
+        }
+
+        void SetTmpText(string name, string value)
+        {
+            Transform element = UguiHudBuilder.Find(root, name);
+            if (element == null) return;
+            TMP_Text label = element == null ? null : element.GetComponent<TMP_Text>();
+            if (label == null && element != null) label = element.GetComponentInChildren<TMP_Text>(true);
+            if (label != null) label.text = value ?? string.Empty;
+        }
 
         static Text FindText(Transform root, string name)
         {
@@ -678,16 +773,18 @@ namespace Janseon.Foundation.Composition
             if (actionFace != null) actionFace.onClick.RemoveListener(OnFaceClicked);
             if (actionEnter != null) actionEnter.onClick.RemoveListener(OnEnterClicked);
             if (actionSettle != null) actionSettle.onClick.RemoveListener(OnSettleClicked);
-            if (battleAdvance != null) battleAdvance.onClick.RemoveListener(OnBattleAdvanceClicked);
-            if (battleMoveN != null) battleMoveN.onClick.RemoveListener(OnBattleMoveNClicked);
-            if (battleMoveE != null) battleMoveE.onClick.RemoveListener(OnBattleMoveEClicked);
-            if (battleMoveS != null) battleMoveS.onClick.RemoveListener(OnBattleMoveSClicked);
-            if (battleMoveW != null) battleMoveW.onClick.RemoveListener(OnBattleMoveWClicked);
-            if (battleMelee != null) battleMelee.onClick.RemoveListener(OnBattleMeleeClicked);
-            if (battleRanged != null) battleRanged.onClick.RemoveListener(OnBattleRangedClicked);
-            if (battleWait != null) battleWait.onClick.RemoveListener(OnBattleWaitClicked);
+            if (battlePlayPause != null) battlePlayPause.onClick.RemoveListener(OnBattlePlayPauseClicked);
+            if (battleReset != null) battleReset.onClick.RemoveListener(OnBattleResetClicked);
+            if (cardGeneralUse != null) cardGeneralUse.onClick.RemoveListener(OnCardGeneralUseClicked);
+            if (formationSwapFront != null) formationSwapFront.onClick.RemoveListener(OnFormationSwapFrontClicked);
+            if (editFormation != null) editFormation.onClick.RemoveListener(OnEditFormationClicked);
+            if (formationEditConfirm != null) formationEditConfirm.onClick.RemoveListener(OnFormationEditConfirmClicked);
+            if (formationEditCancel != null) formationEditCancel.onClick.RemoveListener(OnFormationEditCancelClicked);
+            if (formationEditFacingN != null) formationEditFacingN.onClick.RemoveListener(OnFormationEditFacingNClicked);
+            if (formationEditFacingE != null) formationEditFacingE.onClick.RemoveListener(OnFormationEditFacingEClicked);
+            if (formationEditFacingS != null) formationEditFacingS.onClick.RemoveListener(OnFormationEditFacingSClicked);
+            if (formationEditFacingW != null) formationEditFacingW.onClick.RemoveListener(OnFormationEditFacingWClicked);
             if (mobilityRegroup != null) mobilityRegroup.onClick.RemoveListener(OnMobilityRegroupClicked);
-            if (battleEndTurn != null) battleEndTurn.onClick.RemoveListener(OnBattleEndTurnClicked);
             if (choiceNegotiate != null) choiceNegotiate.onClick.RemoveListener(OnNegotiateClicked);
             if (choiceBypass != null) choiceBypass.onClick.RemoveListener(OnBypassClicked);
             if (choiceCombat != null) choiceCombat.onClick.RemoveListener(OnCombatClicked);
@@ -704,16 +801,18 @@ namespace Janseon.Foundation.Composition
             actionFace = null;
             actionEnter = null;
             actionSettle = null;
-            battleAdvance = null;
-            battleMoveN = null;
-            battleMoveE = null;
-            battleMoveS = null;
-            battleMoveW = null;
-            battleMelee = null;
-            battleRanged = null;
-            battleWait = null;
+            battlePlayPause = null;
+            battleReset = null;
+            cardGeneralUse = null;
+            formationSwapFront = null;
+            editFormation = null;
+            formationEditConfirm = null;
+            formationEditCancel = null;
+            formationEditFacingN = null;
+            formationEditFacingE = null;
+            formationEditFacingS = null;
+            formationEditFacingW = null;
             mobilityRegroup = null;
-            battleEndTurn = null;
             choiceNegotiate = null;
             choiceBypass = null;
             choiceCombat = null;

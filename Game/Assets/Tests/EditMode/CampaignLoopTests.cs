@@ -254,7 +254,7 @@ namespace Janseon.Tests.EditMode
             Assert.AreEqual(StationId.Sindorim, required.Context.Location);
             Assert.AreEqual(Seed, required.Context.WorldSeed);
             Assert.IsFalse(string.IsNullOrEmpty(required.Context.ContextHash));
-            Assert.AreEqual(CampaignApi.RulesVersion, required.Context.RulesVersion);
+            Assert.AreEqual(BattleRules.RulesVersion, required.Context.RulesVersion);
 
             // Caller state unchanged until it adopts the returned handoff snapshot.
             Assert.AreEqual(beforeHash, CampaignApi.ComputeCampaignHash(state, ledger));

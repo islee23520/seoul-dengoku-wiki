@@ -22,7 +22,7 @@ namespace Janseon.Foundation.Tests
     public sealed class UiToolkitVisualQaDefectTests
     {
         [Test]
-        public void Presenter_RequiresBoundHpApMeters_BattleLog_AndSettlementOutcome()
+        public void Presenter_RequiresBoundHpMoraleCards_BattleLog_AndSettlementOutcome()
         {
             RectTransform root = UguiHudBuilder.BuildGameplay(null);
             var presenter = new GameplayPresenter();
@@ -30,9 +30,10 @@ namespace Janseon.Foundation.Tests
 
             // Required visual structure for meters + battle log (Design.md §4/§5.2).
             Assert.That(UguiHudBuilder.Find(root, "battle-hp-meter"), Is.Not.Null, "missing battle-hp-meter");
-            Assert.That(UguiHudBuilder.Find(root, "battle-ap-meter"), Is.Not.Null, "missing battle-ap-meter");
             Assert.That(UguiHudBuilder.Find(root, "battle-hp-fill"), Is.Not.Null, "missing battle-hp-fill");
-            Assert.That(UguiHudBuilder.Find(root, "battle-ap-fill"), Is.Not.Null, "missing battle-ap-fill");
+            Assert.That(UguiHudBuilder.Find(root, UiElementNames.BattleMorale), Is.Not.Null);
+            Assert.That(UguiHudBuilder.Find(root, UiElementNames.CardGeneralRecharge), Is.Not.Null);
+            Assert.That(UguiHudBuilder.Find(root, "battle-ap"), Is.Null);
             Assert.That(UguiHudBuilder.Find(root, "battle-log"), Is.Not.Null, "missing battle-log");
 
             var graph = RouteGraph.CreateYeongdeungpoSindorimGuro();
@@ -67,9 +68,9 @@ namespace Janseon.Foundation.Tests
             Assert.That(UguiHudBuilder.Find(root, UiElementNames.RouteRail).gameObject.activeSelf, Is.False,
                 "battle must hide the route rail");
             Text hp = UguiHudBuilder.Find(root, UiElementNames.BattleHp).GetComponentInChildren<Text>(true);
-            Text ap = UguiHudBuilder.Find(root, UiElementNames.BattleAp).GetComponentInChildren<Text>(true);
+            Text morale = UguiHudBuilder.Find(root, UiElementNames.BattleMorale).GetComponentInChildren<Text>(true);
             Assert.That(hp.text, Does.Contain(battleHp.ToString()), "HP label must show bound value");
-            Assert.That(ap.text, Does.Contain(((int)typeof(GameplayUiSnapshot).GetProperty("BattleAp").GetValue(battleSnap)).ToString()));
+            Assert.That(morale.text, Does.Contain(battle.Sides[0].Morale.ToString()));
 
             RectTransform hpFill = UguiHudBuilder.Find(root, "battle-hp-fill") as RectTransform;
             Assert.That(hpFill, Is.Not.Null, "missing battle-hp-fill");

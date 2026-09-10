@@ -111,14 +111,19 @@ namespace Janseon.Foundation.UI
             ready.TrySetResult(true);
         }
 
-        public void ApplyCampaign(CampaignState campaign, BattleSimState battle)
+        public void ApplyCampaign(
+            CampaignState campaign,
+            BattleSimState battle,
+            bool battlePaused = false,
+            Janseon.Core.Battle.Contracts.FormationSlot[] pendingFormation = null)
         {
             if (presenter == null || !presenter.IsReady)
             {
                 return;
             }
 
-            GameplayUiSnapshot snapshot = GameplayUiSnapshot.FromCampaign(campaign, battle);
+            GameplayUiSnapshot snapshot = GameplayUiSnapshot.FromCampaign(
+                campaign, battle, battlePaused, pendingFormation);
             presenter.ApplySnapshot(snapshot);
         }
 

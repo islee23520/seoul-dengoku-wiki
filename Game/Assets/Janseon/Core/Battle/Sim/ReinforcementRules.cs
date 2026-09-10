@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Globalization;
 using Janseon.Core.Battle.Contracts;
 namespace Janseon.Core.Battle.Sim
@@ -20,8 +21,17 @@ namespace Janseon.Core.Battle.Sim
                     if (!s.Arena.InBounds(cell) || Occupied(s, cell)) break;
                     var role = (i + n) % Roles.Length;
                     var side = cell.X >= s.Arena.Width / 2 ? 1 : 0;
-                    var unit = new UnitState { Id = new UnitId("reinforce-" + i.ToString(CultureInfo.InvariantCulture) + "-" + n.ToString(CultureInfo.InvariantCulture)), Side = side, State = "Active", Cell = cell, Facing = side == 0 ? CardinalDirection.East : CardinalDirection.West, Hp = Hp[role], MaxHp = Hp[role], Power = Power[role], RangeMin = 1, RangeMax = Range[role], MoveTicksPerCell = BattleRules.MoveTicksPerCell, MoveTicksLeft = BattleRules.MoveTicksPerCell, AttackCooldownTicks = BattleRules.AttackCooldownTicks };
+                    var unit = new UnitState { Id = new UnitId("reinforce-" + i.ToString(CultureInfo.InvariantCulture) + "-" + n.ToString(CultureInfo.InvariantCulture)), Side = side, State = "Active", Cell = cell, Facing = side == 0 ? CardinalDirection.East : CardinalDirection.West, Hp = Hp[role], MaxHp = Hp[role], SurvivorCount = AggregateSurvivorRules.FromHp(Hp[role], Hp[role]), Power = Power[role], RangeMin = 1, RangeMax = Range[role], MoveTicksPerCell = BattleRules.MoveTicksPerCell, MoveTicksLeft = BattleRules.MoveTicksPerCell, AttackCooldownTicks = BattleRules.AttackCooldownTicks };
                     var old = s.Units; s.Units = new UnitState[old.Length + 1]; Array.Copy(old, s.Units, old.Length); s.Units[old.Length] = unit; added++;
+                    if (side == 0)
+                    {
+                        var cards = new List<CardState>(s.Cards ?? new CardState[0]);
+                        var definitions = CardCatalog.All();
+                        for (var definitionIndex = 0; definitionIndex < definitions.Count; definitionIndex++)
+                            if (definitions[definitionIndex].Kind == CardKind.Character)
+                                cards.Add(new CardState { OwnerUnitId = unit.Id, Id = definitions[definitionIndex].Id });
+                        s.Cards = cards.ToArray();
+                    }
                 }
                 if (added == t.Count) t.Arrived = true;
             }

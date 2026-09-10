@@ -69,7 +69,11 @@ namespace Janseon.Foundation.Tests
             await TriggerAndAwait(session, host.Presenter.TriggerEnterResolutionForTest,
                 s => s.Campaign.Stage == CampaignStage.Resolution, "enter resolution");
             await TriggerAndAwait(session, host.Presenter.TriggerCombatForTest,
-                s => s.Battle != null && s.Battle.Deployed, "open production battle");
+                s => s.Battle != null && s.BattlePaused && !s.Battle.Deployed, "open predeployment battle");
+            await TriggerAndAwait(session, host.Presenter.TriggerFormationSwapFrontForTest,
+                s => s.LastClickedAction == UiElementNames.FormationSwapFront && !s.Battle.Deployed, "choose front-slot swap");
+            await TriggerAndAwait(session, host.Presenter.TriggerEditFormationForTest,
+                s => s.Battle.Deployed, "commit edited formation");
 
             Assert.That(driver.State, Is.SameAs(session.Battle),
                 "production controller must attach the actual campaign battle to the scoped driver");
@@ -79,13 +83,12 @@ namespace Janseon.Foundation.Tests
             {
                 new BattleTickCommand
                 {
-                    Id = new CommandId("poc-deploy-7"), Seq = 7, At = new Tick(0),
-                    Kind = BattleTickCommandKind.Deploy, Formation = setup.PlayerFormation,
+                    Id = new CommandId("poc-deploy-edited-7"), Seq = 7, At = new Tick(0),
+                    Kind = BattleTickCommandKind.Deploy, Formation = EditedFormation(setup.PlayerFormation),
                 },
             };
 
-            await TriggerAndAwait(session, host.Presenter.TriggerBattleAdvanceForTest,
-                s => s.BattlePaused, "pause live battle");
+            Assert.That(session.BattlePaused, Is.True, "predeployment pause must remain after Deploy");
             int pausedTick = session.Battle.Tick;
             string pausedHash = session.BattleHash;
             long pausedSteps = driver.TotalSteps;
@@ -115,7 +118,7 @@ namespace Janseon.Foundation.Tests
             {
                 Id = new CommandId("poc-mobility-regroup-8"), Seq = 8, At = new Tick(commandTick),
                 Kind = BattleTickCommandKind.PlayCard, CardId = "mobility-regroup",
-                Target = beforeCard, Facing = CardinalDirection.South,
+                OwnerUnitId = commander.Id, TargetUnitId = commander.Id, Facing = CardinalDirection.South,
             });
             Assert.That(session.Battle.Tick, Is.EqualTo(pausedTick), "paused command must not advance ticks");
             Assert.That(session.BattleHash, Is.Not.EqualTo(pausedHash),
@@ -140,7 +143,7 @@ namespace Janseon.Foundation.Tests
                 "continued pause must not append ledger events after command acceptance");
 
             Task<int> liveFrame = WaitForSteppedFrame(driver, TimeSpan.FromSeconds(8));
-            await TriggerAndAwait(session, host.Presenter.TriggerBattleAdvanceForTest,
+            await TriggerAndAwait(session, host.Presenter.TriggerBattlePlayPauseForTest,
                 s => !s.BattlePaused, "resume live battle");
             int liveSteps = await liveFrame;
             Assert.That(liveSteps, Is.InRange(1, BattleSessionDriver.MaxStepsPerFrame),
@@ -169,6 +172,18 @@ namespace Janseon.Foundation.Tests
                 "terminal/return must not revive the old battle session");
 
             await UnloadContentScenesAsync();
+        }
+
+        static FormationSlot[] EditedFormation(FormationSlot[] source)
+        {
+            var edited = new FormationSlot[source.Length];
+            for (var i = 0; i < source.Length; i++)
+            {
+                FormationSlot slot = source[i];
+                FormationSlot position = source.Length > 1 && i < 2 ? source[1 - i] : slot;
+                edited[i] = new FormationSlot { Unit = slot.Unit, Row = position.Row, Column = position.Column, Facing = slot.Facing };
+            }
+            return edited;
         }
 
         static async Task TriggerAndAwait(

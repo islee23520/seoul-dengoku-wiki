@@ -5,6 +5,15 @@ using Janseon.Core.Battle.Contracts;
 
 namespace Janseon.Core.Battle.Sim
 {
+    internal static class AggregateSurvivorRules
+    {
+        public static int FromHp(int hp, int maxHp)
+        {
+            if (hp <= 0 || maxHp <= 0) return 0;
+            return System.Math.Min(4, (int)((4L * hp + maxHp - 1L) / maxHp));
+        }
+    }
+
     public sealed class BattleSimState
     {
         public int Tick;
@@ -33,7 +42,7 @@ namespace Janseon.Core.Battle.Sim
             c.Units = Units == null ? null : Array.ConvertAll(Units, x => x.Clone());
             c.Sides = Sides == null ? null : Array.ConvertAll(Sides, x => x.Clone());
             c.Telegraphs = Telegraphs == null ? null : Array.ConvertAll(Telegraphs, x => x.Clone());
-            c.Pending = new List<BattleTickCommand>(Pending ?? new List<BattleTickCommand>());
+            c.Pending = Pending == null ? new List<BattleTickCommand>() : new List<BattleTickCommand>(Pending.ConvertAll(x => x.Clone()));
             c.PlayerCommanderId = PlayerCommanderId; c.EnemyCommanderId = EnemyCommanderId;
             c.PreviousHp = PreviousHp == null ? null : (int[])PreviousHp.Clone();
             c.PreviousStates = PreviousStates == null ? null : (string[])PreviousStates.Clone();
@@ -45,25 +54,27 @@ namespace Janseon.Core.Battle.Sim
         }
         public string Fingerprint()
         {
-            var s = Tick + ";" + (int)Outcome + ";" + Deployed;
-            if (Units != null) for (var i=0; i<Units.Length; i++) { var u=Units[i]; s += ";" + u.Id + ":" + u.Cell + ":" + (int)u.Facing + ":" + u.Hp + ":" + u.State + ":" + u.CooldownTicksLeft; }
+            var s = "rules=" + (Context == null ? string.Empty : Context.RulesVersion) + ";" + Tick + ";" + (int)Outcome + ";" + Deployed;
+            if (Units != null) for (var i=0; i<Units.Length; i++) { var u=Units[i]; s += ";" + u.Id + ":" + u.Cell + ":" + (int)u.Facing + ":" + u.Hp + ":" + u.SurvivorCount + ":" + u.State + ":" + u.MoveTicksLeft + ":" + u.CooldownTicksLeft + ":" + (int)u.OrderKind + ":" + u.OrderDestination + ":" + u.OrderTargetUnitId; }
             if (Terrain != null) s += ";terrain=" + Terrain.Fingerprint();
             if (Sides != null) for (var i=0; i<Sides.Length; i++) { var x=Sides[i]; s += ";m" + x.Morale + ":" + x.CommandsLocked; }
-            if (Cards != null) for (var i=0; i<Cards.Length; i++) { var card=Cards[i]; s += ";c" + card.Id + ":" + card.RechargeTicksLeft + ":" + card.ActiveTicksLeft; }
+            if (Cards != null) for (var i=0; i<Cards.Length; i++) { var card=Cards[i]; s += ";c" + card.OwnerUnitId + ":" + card.Id + ":" + card.RechargeTicksLeft + ":" + card.ActiveTicksLeft; }
             if (StrongholdCardIds != null) for (var i=0; i<StrongholdCardIds.Length; i++) s += ";sh" + StrongholdCardIds[i];
+            if (Pending != null) for (var i=0; i<Pending.Count; i++) { var command=Pending[i]; s += ";p" + command.At + ":" + command.Seq + ":" + (int)command.Kind + ":" + command.CardId + ":" + command.ActorUnitId + ":" + command.OwnerUnitId + ":" + command.TargetUnitId + ":" + command.Target + ":" + (int)command.Facing; }
             return CoreApi.StableHashHex(s);
         }
     }
     public sealed class CardState
     {
-        public string Id; public int RechargeTicksLeft; public int ActiveTicksLeft;
+        public UnitId OwnerUnitId; public string Id; public int RechargeTicksLeft; public int ActiveTicksLeft;
         public CardState Clone() { return (CardState)MemberwiseClone(); }
     }
     public sealed class UnitState
     {
         public UnitId Id; public int Side; public GridCoord Cell; public CardinalDirection Facing;
-        public int Hp; public int MaxHp; public int Power; public int RangeMin; public int RangeMax;
+        public int Hp; public int MaxHp; public int SurvivorCount; public int Power; public int RangeMin; public int RangeMax;
         public int MoveTicksPerCell; public int MoveTicksLeft; public int AttackCooldownTicks; public int CooldownTicksLeft; public string State = "Active";
+        public BattleOrderKind OrderKind; public GridCoord OrderDestination; public UnitId OrderTargetUnitId;
         public UnitState Clone() { return (UnitState)MemberwiseClone(); }
     }
     public sealed class SideState

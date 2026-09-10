@@ -987,7 +987,7 @@ namespace Janseon.Core
                 state.Tick,
                 state.Resources,
                 state.Reputation,
-                RulesVersion,
+                Battle.Contracts.BattleRules.RulesVersion,
                 cmd.Id.Value,
                 // Seed opening HP from the canonical campaign store (leftover HP roundtrip).
                 state.PartyHp);

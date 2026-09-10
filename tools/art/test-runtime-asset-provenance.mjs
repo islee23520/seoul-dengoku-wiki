@@ -15,6 +15,7 @@ import {
   extractGuids,
   isQuarantinePath,
 } from './runtime-asset-provenance.mjs';
+import * as provenance from './runtime-asset-provenance.mjs';
 
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..');
 const gateCli = join(repoRoot, 'tools/art/check-runtime-asset-provenance.mjs');
@@ -45,6 +46,12 @@ function validNonTrellisAsset(overrides = {}) {
     review_receipts: [{ reviewer: 't', verdict: 'pass', receipt_path: '', receipt_hash: 'e'.repeat(64), reviewed_at: '2026-01-01T00:00:00.000Z' }],
     status: 'promoted',
     created_at: '2026-01-01T00:00:00.000Z',
+    look: {
+      palette: { steel: '#8A93A0' },
+      materials: { finish: 'test-only' },
+      references: [{ kind: 'test-contract', source: 'tools/art/test-runtime-asset-provenance.mjs' }],
+      owner_verdict: 'accepted',
+    },
     ...overrides,
   };
 }
@@ -130,7 +137,18 @@ test('evaluatePromotedAsset: source-bound bytes and review pass, mutations fail'
     writeFileSync(join(root,'binding.json'),binding);
     asset.source_binding={path:'binding.json',sha256:hash(binding)};
     asset.runtime_files={'output.bin':asset.output_hash};
-    assert.equal(evaluatePromotedAsset(asset,{repoRoot:root}).ok,true);
+    assert.equal(evaluatePromotedAsset(asset,{repoRoot:root}).ok,true, 'accepted fully bound asset passes');
+    for (const owner_verdict of ['pending', 'rejected']) {
+      const result = evaluatePromotedAsset({
+        ...asset,
+        look: { ...asset.look, owner_verdict },
+      }, { repoRoot: root });
+      assert.equal(result.ok, false, `${owner_verdict} look must not be runtime-eligible`);
+      assert.ok(
+        result.errors.some(error => error.code === 'owner_verdict_not_accepted'),
+        JSON.stringify(result),
+      );
+    }
     for (const path of ['output.bin','raw.bin','rights.txt','review.md','binding.json']) {
       const original=readFileSync(join(root,path)); writeFileSync(join(root,path),'changed');
       assert.equal(evaluatePromotedAsset(asset,{repoRoot:root}).ok,false,path);
@@ -394,6 +412,18 @@ test('runtime slot: catalog cannot claim a blocked slot is bound', t => {
   const audit = auditRuntimeProvenance(root);
   assert.equal(audit.ok, false);
   assert.ok(audit.violations.some(v => v.code === 'catalog_slot_unprovenanced'));
+});
+
+test('original station props bind runtime slots to their BOM provenance sources without promotion', () => {
+  const bom = JSON.parse(readFileSync(join(repoRoot, 'docs/assets/bom/props/station-prop-bom.json'), 'utf8'));
+  assert.equal(bom.assets.length, 6);
+  for (const asset of bom.assets) {
+    assert.equal(provenance.runtimeSlotForAsset(asset), `prop:${asset.asset_id}`);
+    const evaluated = evaluatePromotedAsset({ ...asset, look: { ...asset.look, owner_verdict: 'accepted' } });
+    assert.equal(evaluated.ok, true, `${asset.asset_id}: ${JSON.stringify(evaluated.errors)}`);
+    assert.equal(evaluated.source_binding_hash, asset.source_binding.sha256);
+    assert.deepEqual(evaluated.paths.sort(), Object.keys(asset.runtime_files).sort());
+  }
 });
 
 test('character lineage accepts only reviewed sprite GUID substitution', t => {

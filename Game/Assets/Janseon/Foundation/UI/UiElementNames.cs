@@ -34,11 +34,25 @@ namespace Janseon.Foundation.UI
         public const string BattleHud = "battle-hud";
         public const string BattleGrid = "battle-grid";
         public const string BattleHp = "battle-hp";
-        public const string BattleAp = "battle-ap";
         public const string BattleHpMeter = "battle-hp-meter";
-        public const string BattleApMeter = "battle-ap-meter";
         public const string BattleHpFill = "battle-hp-fill";
-        public const string BattleApFill = "battle-ap-fill";
+        public const string BattleMorale = "battle-morale";
+        public const string BattleMoralePlayer = "battle-morale-player";
+        public const string BattleMoraleEnemy = "battle-morale-enemy";
+        public const string BattleReinforcementForecast = "battle-reinforcement-forecast";
+        public const string BattleReinforcement = "battle-reinforcement";
+        public const string BattleCardTray = "battle-card-tray";
+        public const string BattleCardOwner = "battle-card-owner";
+        public const string BattleCardCooldown = "battle-card-cooldown";
+        public const string BattleCardCooldownMask = "battle-card-cooldown-mask";
+        public const string BattleCardCooldownText = "battle-card-cooldown-text";
+        public const string BattleCardTargetRing = "battle-card-target-ring";
+        public const string BattleCardDirectionNorth = "battle-card-direction-n";
+        public const string BattleCardDirectionEast = "battle-card-direction-e";
+        public const string BattleCardDirectionSouth = "battle-card-direction-s";
+        public const string BattleCardDirectionWest = "battle-card-direction-w";
+        public const string BattleCardCancel = "battle-card-cancel";
+        public const string BattleCardCancelPath = "battle-card-cancel-path";
         public const string BattleLog = "battle-log";
 
         public const string SettlementPanel = "settlement-panel";
@@ -50,14 +64,31 @@ namespace Janseon.Foundation.UI
         public const string ActionFaceEncounter = "action-face-encounter";
         public const string ActionEnterResolution = "action-enter-resolution";
         public const string ActionSettle = "action-settle";
-        public const string BattleAdvance = "battle-advance";
+        public const string BattlePlayPause = "battle-play-pause";
+        public const string BattleReset = "battle-reset";
+        public const string CardGeneralRecharge = "card-general-recharge";
+        public const string CardGeneralUse = "card-general-use";
+        public const string FormationSwapFront = "formation-swap-front";
+        public const string FormationSelection = "formation-selection";
+        public const string EditFormation = "edit-formation";
+        public const string FormationEdit = "formation-edit";
+        public const string FormationEditConfirm = "formation-edit-confirm";
+        public const string FormationEditCancel = "formation-edit-cancel";
+        public const string FormationEditFacingN = "formation-edit-facing-n";
+        public const string FormationEditFacingE = "formation-edit-facing-e";
+        public const string FormationEditFacingS = "formation-edit-facing-s";
+        public const string FormationEditFacingW = "formation-edit-facing-w";
         public const string MobilityRegroup = "card-mobility-regroup";
-        public const string BattleWait = "battle-wait";
         public const string MissionConsole = "mission-console";
         public const string HubOvernightCopy = "hub-overnight-copy";
         public const string HubBulletinPanel = "hub-bulletin-panel";
         public const string DeployPanel = "deploy-panel";
         public const string DeployHeading = "deploy-heading";
+
+        public const string DataContractPanel = "data-contract-panel";
+        public const string DataContentVersion = "data-content-version";
+        public const string DataContentCounts = "data-content-counts";
+        public const string DataContentFingerprint = "data-content-fingerprint";
 
         public static string DeployToggle(int rosterIndex) => "deploy-toggle-" + rosterIndex;
 
@@ -92,6 +123,10 @@ namespace Janseon.Foundation.UI
             HubOvernightCopy,
             HubBulletinPanel,
             DeployPanel,
+            DataContractPanel,
+            DataContentVersion,
+            DataContentCounts,
+            DataContentFingerprint,
             ActionDepart,
             ActionFaceEncounter,
             ActionEnterResolution,
@@ -102,13 +137,41 @@ namespace Janseon.Foundation.UI
             BattleHud,
             BattleGrid,
             BattleHp,
-            BattleAp,
             BattleHpMeter,
-            BattleApMeter,
             BattleHpFill,
-            BattleApFill,
+            BattleMorale,
+            BattleMoralePlayer,
+            BattleMoraleEnemy,
+            BattleReinforcementForecast,
+            BattleReinforcement,
+            BattleCardTray,
+            BattleCardOwner,
+            BattleCardCooldown,
+            BattleCardCooldownMask,
+            BattleCardCooldownText,
+            BattleCardTargetRing,
+            BattleCardDirectionNorth,
+            BattleCardDirectionEast,
+            BattleCardDirectionSouth,
+            BattleCardDirectionWest,
+            BattleCardCancel,
+            BattleCardCancelPath,
             BattleLog,
-            BattleAdvance,
+            BattlePlayPause,
+            BattleReset,
+            CardGeneralRecharge,
+            CardGeneralUse,
+            FormationSwapFront,
+            FormationSelection,
+            EditFormation,
+            FormationEdit,
+            FormationEditConfirm,
+            FormationEditCancel,
+            FormationEditFacingN,
+            FormationEditFacingE,
+            FormationEditFacingS,
+            FormationEditFacingW,
+            MobilityRegroup,
             SettlementPanel,
             SettlementOutcome,
             ActionSettle,
@@ -134,7 +197,12 @@ namespace Janseon.Foundation.UI
             ChoiceNegotiate,
             ChoiceBypass,
             ChoiceCombat,
-            BattleAdvance,
+            FormationSwapFront,
+            EditFormation,
+            CardGeneralUse,
+            MobilityRegroup,
+            BattlePlayPause,
+            BattleReset,
             ActionSettle,
             ReturnAction,
         };

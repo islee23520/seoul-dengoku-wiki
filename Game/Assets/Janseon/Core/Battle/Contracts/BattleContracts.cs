@@ -59,16 +59,34 @@ namespace Janseon.Core.Battle.Contracts
         static FormationSlot[] Formation(RosterUnit[] units) { var a = new FormationSlot[units.Length]; for (var i = 0; i < a.Length; i++) a[i] = new FormationSlot { Unit = units[i].Id, Row = i / 2, Column = i % 2 - 1, Facing = CardinalDirection.East }; return a; }
     }
 
-    public enum BattleTickCommandKind { Deploy, PlayCard, OrderRetreat, DemandSurrender, SetFacing }
-    public sealed class BattleTickCommand { public CommandId Id; public int Seq; public Tick At; public BattleTickCommandKind Kind; public FormationSlot[] Formation; public string CardId; public GridCoord Target; public CardinalDirection Facing; public string[] StrongholdCardIds; public string[] StrongholdCards; }
-    public enum BattleRejectReason { TickMismatch, BattleStarted, NotDeployed, CardUnknown, CardRecharging, CardOutOfRadius, CommandsLocked, SurrenderConditionsUnmet, BattleEnded, UnknownActor, MalformedCommand, RetreatUnavailable, CardInvalidTarget, CardDestinationBlocked, CardDestinationOutOfBounds }
+    public enum BattleTickCommandKind { Deploy, PlayCard, OrderRetreat, DemandSurrender, SetFacing, Move, Attack }
+    public enum BattleOrderKind { None, Move, Attack }
+    public sealed class BattleTickCommand
+    {
+        public CommandId Id; public int Seq; public Tick At; public BattleTickCommandKind Kind;
+        public FormationSlot[] Formation; public string CardId; public UnitId ActorUnitId; public UnitId OwnerUnitId; public UnitId TargetUnitId;
+        public GridCoord Target; public CardinalDirection Facing; public string[] StrongholdCardIds; public string[] StrongholdCards;
+        public BattleTickCommand Clone()
+        {
+            return new BattleTickCommand
+            {
+                Id=Id, Seq=Seq, At=At, Kind=Kind,
+                Formation=Formation == null ? null : Array.ConvertAll(Formation, x => new FormationSlot { Unit=x.Unit, Row=x.Row, Column=x.Column, Facing=x.Facing }),
+                CardId=CardId, ActorUnitId=ActorUnitId, OwnerUnitId=OwnerUnitId, TargetUnitId=TargetUnitId, Target=Target, Facing=Facing,
+                StrongholdCardIds=StrongholdCardIds == null ? null : (string[])StrongholdCardIds.Clone(),
+                StrongholdCards=StrongholdCards == null ? null : (string[])StrongholdCards.Clone(),
+            };
+        }
+    }
+    public enum BattleRejectReason { TickMismatch, BattleStarted, NotDeployed, CardUnknown, CardRecharging, CardOutOfRadius, CommandsLocked, SurrenderConditionsUnmet, BattleEnded, UnknownActor, MalformedCommand, RetreatUnavailable, CardOwnerRequired, CardInvalidOwner, CardInvalidTarget, CardDestinationBlocked, CardDestinationOutOfBounds }
     public enum CardKind { Character, Stronghold }
     public sealed class CardDefinition
     {
         public string Id; public CardKind Kind; public int RechargeTicks; public int Effect; public string EffectKey;
     }
     public sealed class BattleRejection { public BattleRejectReason Reason; public string Detail; }
-    public sealed class BattleRules { public const int TicksPerSecond=30, MoveTicksPerCell=10, AttackCooldownTicks=30, MoraleBase=60, MoraleWarn=40, MoraleRecoverCap=80, MoraleRecoveryPerSecond=5, MoraleLossPerDeath=5, MoraleLossCommanderBelowHalf=10, SurrenderMoraleMax=20, SurrenderCommanderHpPercentMax=50, StrongholdCardSlots=2, CardEffectTicks=150, MaxTicks=9000, CommandRadius=3; public const string RulesVersion="poc-rtfc-v1"; }
+    public sealed class BattleRules { public const int TicksPerSecond=30, MoveTicksPerCell=10, AttackCooldownTicks=30, MoraleBase=60, MoraleWarn=40, MoraleRecoverCap=80, MoraleRecoveryPerSecond=5, MoraleLossPerDeath=5, MoraleLossCommanderBelowHalf=10, SurrenderMoraleMax=20, SurrenderCommanderHpPercentMax=50, StrongholdCardSlots=2, CardEffectTicks=150, MaxTicks=9000, CommandRadius=3, MoraleLock=0, FormationRows=3, FormationColumns=3, CardRechargeMinTicks=300, CardRechargeMaxTicks=900; public const string LegacyRulesVersion="poc-rtfc-v1", RulesVersion="rtfc-owner-cards-v2"; }
+    public static class BattleRoleRules { public static readonly string[] Roles={"근위","돌격","궁수"}; public static readonly int[] MaxHp={30,20,14}; public static readonly int[] Power={4,6,3}; public static readonly int[] RangeMax={1,1,3}; }
 
     public static class RealtimeBattleApi
     {
@@ -78,7 +96,7 @@ namespace Janseon.Core.Battle.Contracts
         public const int PersistentMaxHp = 10;
     }
 
-    public sealed class BattleSnapshot { public int Tick; public BattleOutcomeKind Outcome; public SideSnapshot[] Sides; public UnitSnapshot[] Units; public TelegraphView[] Telegraphs; public CardView[] Cards; public sealed class SideSnapshot { public int Morale; public int CommanderHpPercent; public bool RetreatCovered; public bool CommandsLocked; } public sealed class UnitSnapshot { public UnitId Id; public int Side; public GridCoord Cell; public CardinalDirection Facing; public int Hp; public string State; } public sealed class TelegraphView { public GridCoord Cell; public int ArrivalTick; public int Count; } public sealed class CardView { public string Id; public int RechargeTicksLeft; } }
+    public sealed class BattleSnapshot { public string RulesVersion; public int Tick; public BattleOutcomeKind Outcome; public SideSnapshot[] Sides; public UnitSnapshot[] Units; public TelegraphView[] Telegraphs; public CardView[] Cards; public sealed class SideSnapshot { public int Morale; public int CommanderHpPercent; public bool RetreatCovered; public bool CommandsLocked; } public sealed class UnitSnapshot { public UnitId Id; public int Side; public GridCoord Cell; public CardinalDirection Facing; public int Hp; public int SurvivorCount; public string State; public BattleOrderKind OrderKind; public GridCoord OrderDestination; public UnitId OrderTargetUnitId; public int MoveTicksLeft; public int AttackCooldownTicksLeft; } public sealed class TelegraphView { public GridCoord Cell; public int ArrivalTick; public int Count; } public sealed class CardView { public UnitId OwnerUnitId; public string Id; public int RechargeTicksLeft; public int ActiveTicksLeft; } }
     public sealed class BattleResult
     {
         public BattleOutcomeKind Outcome;
