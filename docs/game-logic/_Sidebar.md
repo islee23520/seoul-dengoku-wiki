@@ -14,6 +14,7 @@
   * [인물 총람](Cast-Index) · [관계 원장](Cast-Relations)
   * [야망과 관계가 움직이는 정치](Ambitions-and-Relations)
   * [시나리오 타임라인](Scenario-Timeline)
+* [로스트 테크 계보](Lost-Technology-Lineage)
 * [이동과 조우](Travel-and-Encounters)
 * [실시간 진형·카드 전투](Realtime-Formation-Card-Battle)
 * [전략에서 전투로](Strategy-Battle-Roundtrip)

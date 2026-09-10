@@ -1,4 +1,3 @@
-import { scanCompanyTokens } from './world-atlas-parse.mjs';
 import {
   ATLAS_OWNER,
   HOSTILE_GROUPS,
@@ -33,7 +32,6 @@ export function verifyTheaters(atlas, projections, fail) {
       fail('E_THEATER_FIELD', `${theater.id} scenario_chains`);
     }
     for (const stateId of theater.states ?? []) covered.add(stateId);
-    scanCompanyTokens(JSON.stringify(theater), fail, 'E_CURRENT_ACTOR_CLAIM', theater.id);
   }
   for (const state of STATES) {
     if (!covered.has(state.id)) fail('E_STATE_UNCOVERED', state.id);
@@ -82,7 +80,7 @@ export function verifySynthetics(atlas, projections, fail) {
 
 export function verifyStoryManifest(atlas, projections, fail) {
   const batches = atlas.story_batches ?? [];
-  if (batches.length !== 46) fail('E_BATCH_COUNT', `actual=${batches.length}`);
+  if (batches.length !== 47) fail('E_BATCH_COUNT', `actual=${batches.length}`);
   const seen = new Set();
   const origin = { 'korean-origin': 0, multicultural: 0, synthetic: 0 };
   const subgroups = {
@@ -114,7 +112,7 @@ export function verifyStoryManifest(atlas, projections, fail) {
       if (count > 2) fail('E_SUBGROUP_CONCENTRATION', `${batch.id} ${sub}=${count}`);
     }
   }
-  if (origin['korean-origin'] !== 297 || origin.multicultural !== 115 || origin.synthetic !== 48) {
+  if (origin['korean-origin'] !== 307 || origin.multicultural !== 115 || origin.synthetic !== 48) {
     fail('E_QUOTA_DRIFT', JSON.stringify(origin));
   }
   const expectedSub = [41, 21, 17, 10, 8, 7, 7, 4];
@@ -129,7 +127,7 @@ export function verifyStoryManifest(atlas, projections, fail) {
 
 export function verifyMonsterManifest(atlas, projections, fail) {
   const groups = atlas.hostile_groups ?? [];
-  if (groups.length !== 24) fail('E_GROUP_COUNT', `actual=${groups.length}`);
+  if (groups.length !== 27) fail('E_GROUP_COUNT', `actual=${groups.length}`);
   const locked = new Map(HOSTILE_GROUPS.map((g) => [g.id, g]));
   const entryIds = [];
   for (const group of groups) {
@@ -177,13 +175,12 @@ export function verifyMonsterManifest(atlas, projections, fail) {
         }
       }
     }
-    scanCompanyTokens(JSON.stringify(group), fail, 'E_COMPANY_TOKEN', group.id);
     for (let i = 1; i <= 16; i += 1) entryIds.push(`${group.id}E${String(i).padStart(2, '0')}`);
   }
   const batches = atlas.monster_batches ?? [];
-  if (batches.length !== 39) fail('E_MONSTER_BATCH_COUNT', `actual=${batches.length}`);
+  if (batches.length !== 42) fail('E_MONSTER_BATCH_COUNT', `actual=${batches.length}`);
   const flat = batches.flatMap((b) => b.entry_ids ?? []);
-  if (flat.length !== 384) fail('E_ENTRY_COUNT', `actual=${flat.length}`);
+  if (flat.length !== 432) fail('E_ENTRY_COUNT', `actual=${flat.length}`);
   if (flat.join(',') !== entryIds.join(',')) fail('E_ENTRY_ORDER', 'row-major mismatch');
   if (!projections[PROJECTION_FILES.hostileIndex]) fail('E_MISSING_PROJECTION', PROJECTION_FILES.hostileIndex);
   if (!projections[PROJECTION_FILES.monsterManifest]) fail('E_MISSING_PROJECTION', PROJECTION_FILES.monsterManifest);

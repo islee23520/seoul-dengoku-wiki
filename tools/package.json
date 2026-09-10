@@ -8,7 +8,11 @@
     "node": ">=20"
   },
   "scripts": {
-    "test": "node wiki/test-build-wiki.mjs && node wiki/test-unity-architecture-docs.mjs"
+    "test": "node wiki/test-build-wiki.mjs && node wiki/test-unity-architecture-docs.mjs",
+    "remote:setup": "node unity/setup-unity-remote.mjs",
+    "remote:start": "node unity/start-unity-remote.mjs",
+    "remote:cli": "node unity/run-unity-remote-cli.mjs",
+    "test:unity-remote": "node --test unity/test-unity-remote.mjs"
   },
   "dependencies": {
     "entities": "8.0.0",

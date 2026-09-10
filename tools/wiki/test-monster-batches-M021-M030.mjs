@@ -210,13 +210,15 @@ test("상승 단계 표기 누락을 거부한다", () => {
   assert.ok(report.errors.some((error) => error.includes("1단계") || error.includes("2단계") || error.includes("3단계") || error.includes("상승")));
 });
 
-test("금지 토큰을 거부한다", () => {
+test("실재 기업 토큰은 원천 캐논에서 허용된다(개명 이음새)", () => {
   const text = fixtureBatch("M021", {
     G13E09: { fields: { "기원": "삼성전자 창고에서 깨어났다. 표식M021n0c1" } },
   });
   const report = verifyBatchText(text, "M021");
-  assert.equal(report.status, "FAIL");
-  assert.ok(report.errors.some((error) => error.includes("삼성전자") || error.includes("금지")));
+  assert.ok(
+    !report.errors.some((error) => error.includes("삼성전자") || error.includes("실재 기업")),
+    JSON.stringify(report.errors),
+  );
 });
 
 test("범위 밖 Monster-Batch 파일을 거부한다", async () => {

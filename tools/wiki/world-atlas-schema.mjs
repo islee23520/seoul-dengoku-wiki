@@ -25,20 +25,28 @@ export const STATE_BY_ID = Object.freeze(Object.fromEntries(STATES.map((s) => [s
 export const STATE_BY_NAME = Object.freeze(Object.fromEntries(STATES.map((s) => [s.name, s])));
 
 export const CORPORATE_HOUSES = Object.freeze([
-  ['HC01', '청람전자원'],
-  ['HC02', '해륜기동문'],
-  ['HC03', '백광생활과학가'],
-  ['HC04', '통맥에너지연합'],
+  ['HC01', '삼성전자'],
+  ['HC02', '현대자동차'],
+  ['HC03', 'LG생활건강'],
+  ['HC04', 'SK에너지'],
   ['HC05', '북문지식원'],
-  ['HC06', '골목연결국'],
-  ['HC07', '해동제철성'],
-  ['HC08', '성화궤도방위문'],
-  ['HC09', '도성생활유통가'],
-  ['HC10', '서부식문화동맹'],
-  ['HC11', '백야배송단'],
-  ['HC12', '거도중공회'],
-  ['HC13', '도성건축연맹'],
-  ['HC14', '여의장부원'],
+  ['HC06', '쿠팡'],
+  ['HC07', '포스코'],
+  ['HC08', '한화에어로스페이스'],
+  ['HC09', '롯데쇼핑'],
+  ['HC10', 'CJ제일제당'],
+  ['HC11', 'CJ대한통운'],
+  ['HC12', '현대중공업'],
+  ['HC13', 'HD현대건설'],
+  ['HC14', '신한지주'],
+  ['HC15', '네이버'],
+  ['HC16', 'KT'],
+  ['HC17', 'LG에너지솔루션'],
+  ['HC18', 'HMM'],
+  ['HC19', '호텔신라'],
+  ['HC20', 'HYBE'],
+  ['HC21', '카카오'],
+  ['HC22', '테슬라코리아'],
 ].map(([id, name]) => Object.freeze({ id, name })));
 
 export const CIVIC_HOUSES = Object.freeze([
@@ -89,6 +97,9 @@ export const HOSTILE_GROUPS = Object.freeze([
   ['G22', '폐전지금속군락', 'biomechanical'],
   ['G23', '저온포자막', 'biomechanical'],
   ['G24', '의료조직기계군', 'biomechanical'],
+  ['G25', '등불개미군', 'rogue-robot'],
+  ['G26', '화석포효군', 'rogue-robot'],
+  ['G27', '심층삼엽군', 'rogue-robot'],
 ].map(([id, name, category]) => Object.freeze({ id, name, category })));
 
 export const COMPANY_TOKENS = Object.freeze([

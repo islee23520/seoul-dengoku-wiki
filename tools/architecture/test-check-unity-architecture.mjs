@@ -211,6 +211,27 @@ const scenarios = [
           + '}\n');
     },
   },
+  {
+    id: 'ui-toolkit-runtime-usage',
+    description: 'a runtime script uses UI Toolkit types outside any Editor path',
+    expectedExit: 1,
+    expectedRule: 'UI_TOOLKIT_BANNED',
+    async mutate(root) {
+      await writeFile(
+        join(root, compositionDir, 'ToolkitPresenter.cs'),
+        'using UnityEngine.UIElements;\n'
+          + '\n'
+          + 'namespace Janseon.Foundation.Composition\n'
+          + '{\n'
+          + '    internal sealed class ToolkitPresenter\n'
+          + '    {\n'
+          + '        private readonly UIDocument document;\n'
+          + '\n'
+          + '        internal VisualElement Root => document.rootVisualElement;\n'
+          + '    }\n'
+          + '}\n');
+    },
+  },
 ];
 
 const temporaryRoot = await mkdtemp(join(tmpdir(), 'janseon-architecture-gate-'));
