@@ -56,7 +56,7 @@ test('Given current repository When synthetics stage Then 48 synthetics and Synt
   assert.equal(result.code, 0, result.output);
 });
 
-test('Given current repository When story-manifest stage Then 46 batches locked', () => {
+test('Given current repository When story-manifest stage Then 47 batches locked', () => {
   const result = runVerifier(['--docs', liveDocs, '--stage', 'story-manifest', '--atlas', atlasPath]);
   assert.equal(result.code, 0, result.output);
 });
@@ -239,7 +239,7 @@ const CONFIRMED_STORY_BATCHES = Object.freeze([
   'B011', 'B012', 'B013', 'B014', 'B015', 'B016', 'B018', 'B019', 'B021', 'B022',
   'B023', 'B024', 'B025', 'B026', 'B027', 'B028', 'B029', 'B030', 'B031', 'B032',
   'B033', 'B034', 'B035', 'B036', 'B037', 'B038', 'B039', 'B040', 'B041', 'B042',
-  'B043', 'B044', 'B045', 'B046',
+  'B043', 'B044', 'B045', 'B046', 'B047',
 ]);
 
 for (const batchId of CONFIRMED_STORY_BATCHES) {

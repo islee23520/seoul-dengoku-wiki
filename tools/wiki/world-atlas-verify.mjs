@@ -92,10 +92,10 @@ export async function verifyAtlasStage({ atlasPath, docs, stage, fail, batch = n
   if (parsed.value.schema !== ATLAS_SCHEMA) fail('E_ATLAS_SCHEMA', parsed.value.schema);
   if (parsed.value.document?.owner !== ATLAS_OWNER) fail('E_OWNER', 'document');
   const humans = parsed.value.humans ?? [];
-  if (humans.length !== 412) fail('E_K_MAP', `actual=${humans.length}`);
+  if (humans.length !== 422) fail('E_K_MAP', `actual=${humans.length}`);
   try {
     const index = parseCastIndex(await readFile(join(docs, 'Cast-Index.md'), 'utf8'));
-    for (let i = 0; i < 412; i += 1) {
+    for (let i = 0; i < 422; i += 1) {
       if (humans[i]?.id !== index[i]?.id || humans[i]?.name !== index[i]?.name) {
         fail('E_K_MAP', `${humans[i]?.id ?? i} ${humans[i]?.name}`);
         break;

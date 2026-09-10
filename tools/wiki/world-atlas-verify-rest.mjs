@@ -80,7 +80,7 @@ export function verifySynthetics(atlas, projections, fail) {
 
 export function verifyStoryManifest(atlas, projections, fail) {
   const batches = atlas.story_batches ?? [];
-  if (batches.length !== 46) fail('E_BATCH_COUNT', `actual=${batches.length}`);
+  if (batches.length !== 47) fail('E_BATCH_COUNT', `actual=${batches.length}`);
   const seen = new Set();
   const origin = { 'korean-origin': 0, multicultural: 0, synthetic: 0 };
   const subgroups = {
@@ -112,7 +112,7 @@ export function verifyStoryManifest(atlas, projections, fail) {
       if (count > 2) fail('E_SUBGROUP_CONCENTRATION', `${batch.id} ${sub}=${count}`);
     }
   }
-  if (origin['korean-origin'] !== 297 || origin.multicultural !== 115 || origin.synthetic !== 48) {
+  if (origin['korean-origin'] !== 307 || origin.multicultural !== 115 || origin.synthetic !== 48) {
     fail('E_QUOTA_DRIFT', JSON.stringify(origin));
   }
   const expectedSub = [41, 21, 17, 10, 8, 7, 7, 4];

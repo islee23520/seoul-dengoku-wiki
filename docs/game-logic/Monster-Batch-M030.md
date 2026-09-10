@@ -3,7 +3,7 @@
 이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.
 
 - 원본 앵커: `docs/game-logic/World-Narrative-Atlas.md`
-- 원본 해시: `82054a41b7c6ab4e100238833d228155d91bc8d84f50d1a5decfec4c172b806e`
+- 원본 해시: `48da6812c18a89772e7f0b7ff7836681f7fe5b94616f4b6535d76eee687186c3`
 
 ## G19E03 · 철맛포자띠
 
