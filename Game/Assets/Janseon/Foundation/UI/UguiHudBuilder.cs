@@ -138,17 +138,7 @@ namespace Janseon.Foundation.UI
 
             BuildBattleHud(root);
 
-            RectTransform formationEdit = Panel(root, UiElementNames.FormationEdit,
-                new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(-210f, -130f), new Vector2(210f, 130f));
-            formationEdit.gameObject.SetActive(false);
-            Label(formationEdit, "formation-edit-heading", "진형 편집");
-            Label(formationEdit, "formation-edit-copy", "배치 방향을 선택한 뒤 적용한다.");
-            HudButton(formationEdit, UiElementNames.FormationEditFacingN, "북쪽");
-            HudButton(formationEdit, UiElementNames.FormationEditFacingE, "동쪽");
-            HudButton(formationEdit, UiElementNames.FormationEditFacingS, "남쪽");
-            HudButton(formationEdit, UiElementNames.FormationEditFacingW, "서쪽");
-            HudButton(formationEdit, UiElementNames.FormationEditConfirm, "적용");
-            HudButton(formationEdit, UiElementNames.FormationEditCancel, "취소");
+            BuildFormationEditor(root);
 
             RectTransform settle = Panel(root, UiElementNames.SettlementPanel, new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(-210f, -90f), new Vector2(210f, 90f));
             Image ticket = settle.GetComponent<Image>();
@@ -225,6 +215,227 @@ namespace Janseon.Foundation.UI
             "협공 집중",
             "기동 재집결",
         };
+
+        const float FormationRailWidth = 370f;
+        static readonly Color FormationPanelFill = new Color(0.067f, 0.102f, 0.149f, 0.95f);
+        static readonly Color FormationWellFill = new Color(0.043f, 0.075f, 0.114f, 1f);
+        static readonly Color FormationEmptyFill = new Color(0.063f, 0.106f, 0.153f, 1f);
+        static readonly Color FormationOccupiedFill = new Color(0.094f, 0.141f, 0.200f, 1f);
+        static readonly Color FormationSelectedFill = new Color(0.094f, 0.133f, 0.173f, 1f);
+        static readonly Color FormationTextColor = new Color(0.902f, 0.918f, 0.941f, 1f);
+        static readonly Color FormationMutedColor = new Color(0.420f, 0.463f, 0.518f, 1f);
+
+        static readonly string[] FormationUnitNames =
+        {
+            "서윤",
+            "민재",
+            "하린",
+            "도윤",
+            "지우",
+            "은호",
+        };
+
+        static readonly string[] FormationUnitRoles =
+        {
+            "근위",
+            "근위",
+            "돌격",
+            "돌격",
+            "궁수",
+            "궁수",
+        };
+
+        static readonly string[] FormationUnitCallsigns =
+        {
+            "방벽 01",
+            "방벽 02",
+            "쇄도 01",
+            "쇄도 02",
+            "조준 01",
+            "조준 02",
+        };
+
+        static readonly string[] FormationInitialOccupants =
+        {
+            "ally-guard-1",
+            "ally-assault-1",
+            "ally-guard-2",
+            null,
+            "ally-assault-2",
+            null,
+            "ally-archer-1",
+            null,
+            "ally-archer-2",
+        };
+
+        static void BuildFormationEditor(RectTransform root)
+        {
+            RectTransform formationEdit = Box(root, UiElementNames.FormationEdit,
+                new Vector2(1f, 0f), new Vector2(1f, 1f),
+                new Vector2(-12f - FormationRailWidth, 12f), new Vector2(-12f, -8f),
+                FormationPanelFill);
+            Image railImage = formationEdit.GetComponent<Image>();
+            railImage.raycastTarget = true;
+            LayoutElement railLayout = formationEdit.gameObject.AddComponent<LayoutElement>();
+            railLayout.preferredWidth = FormationRailWidth;
+            railLayout.minWidth = FormationRailWidth;
+            railLayout.flexibleWidth = 0f;
+            VerticalLayoutGroup railStack = formationEdit.gameObject.AddComponent<VerticalLayoutGroup>();
+            railStack.spacing = 8f;
+            railStack.padding = new RectOffset(12, 12, 10, 10);
+            railStack.childForceExpandHeight = false;
+            railStack.childForceExpandWidth = true;
+            railStack.childControlWidth = true;
+            railStack.childControlHeight = false;
+            railStack.childAlignment = TextAnchor.UpperLeft;
+
+            RectTransform heading = TmpLabel(formationEdit, "formation-edit-heading", "배치 명령", 18,
+                Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero,
+                TextAlignmentOptions.MidlineLeft, FormationTextColor);
+            LayoutElement headingLayout = heading.gameObject.AddComponent<LayoutElement>();
+            headingLayout.preferredHeight = 24f;
+            headingLayout.minHeight = 24f;
+
+            RectTransform unitList = Box(formationEdit, "formation-edit-unit-list",
+                Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero, Color.clear);
+            unitList.GetComponent<Image>().raycastTarget = false;
+            GridLayoutGroup unitGrid = unitList.gameObject.AddComponent<GridLayoutGroup>();
+            unitGrid.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
+            unitGrid.constraintCount = 2;
+            unitGrid.cellSize = new Vector2(164f, 40f);
+            unitGrid.spacing = new Vector2(5f, 5f);
+            unitGrid.childAlignment = TextAnchor.UpperLeft;
+            LayoutElement unitListLayout = unitList.gameObject.AddComponent<LayoutElement>();
+            unitListLayout.preferredHeight = 130f;
+            unitListLayout.minHeight = 130f;
+
+            for (var i = 0; i < UiElementNames.FormationEditUnitIds.Length; i++)
+            {
+                bool selected = i == 0;
+                RectTransform unit = TmpSizedButton(
+                    unitList,
+                    UiElementNames.FormationEditUnit(UiElementNames.FormationEditUnitIds[i]),
+                    FormationUnitNames[i],
+                    164f,
+                    40f);
+                Image unitImage = unit.GetComponent<Image>();
+                unitImage.color = selected ? FormationSelectedFill : FormationWellFill;
+                unitImage.raycastTarget = true;
+                if (selected)
+                {
+                    Outline outline = unit.gameObject.AddComponent<Outline>();
+                    outline.effectColor = GoldFrame;
+                    outline.effectDistance = new Vector2(2f, -2f);
+                }
+            }
+
+            RectTransform slotGrid = Box(formationEdit, "formation-edit-slot-grid",
+                Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero, Color.clear);
+            slotGrid.GetComponent<Image>().raycastTarget = false;
+            GridLayoutGroup slots = slotGrid.gameObject.AddComponent<GridLayoutGroup>();
+            slots.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
+            slots.constraintCount = 3;
+            slots.cellSize = new Vector2(108f, 43f);
+            slots.spacing = new Vector2(4f, 4f);
+            LayoutElement slotGridLayout = slotGrid.gameObject.AddComponent<LayoutElement>();
+            slotGridLayout.preferredHeight = 137f;
+            slotGridLayout.minHeight = 137f;
+
+            for (var i = 0; i < UiElementNames.FormationEditSlotIds.Length; i++)
+            {
+                string occupantId = FormationInitialOccupants[i];
+                string label = occupantId == null ? string.Empty : NameForUnit(occupantId);
+                RectTransform slot = TmpSizedButton(
+                    slotGrid,
+                    UiElementNames.FormationEditSlot(UiElementNames.FormationEditSlotIds[i]),
+                    string.IsNullOrEmpty(label) ? " " : label,
+                    108f,
+                    43f);
+                Image slotImage = slot.GetComponent<Image>();
+                slotImage.raycastTarget = true;
+                bool selected = occupantId == UiElementNames.FormationEditUnitIds[0];
+                if (occupantId == null)
+                {
+                    slotImage.color = FormationEmptyFill;
+                    Outline dash = slot.gameObject.AddComponent<Outline>();
+                    dash.effectColor = new Color(0.271f, 0.329f, 0.420f, 0.85f);
+                    dash.effectDistance = new Vector2(1f, -1f);
+                    TextMeshProUGUI emptyLabel = slot.GetComponentInChildren<TextMeshProUGUI>(true);
+                    if (emptyLabel != null)
+                    {
+                        emptyLabel.color = FormationMutedColor;
+                    }
+                }
+                else if (selected)
+                {
+                    slotImage.color = FormationSelectedFill;
+                    Outline selectedOutline = slot.gameObject.AddComponent<Outline>();
+                    selectedOutline.effectColor = GoldFrame;
+                    selectedOutline.effectDistance = new Vector2(2f, -2f);
+                }
+                else
+                {
+                    slotImage.color = FormationOccupiedFill;
+                }
+            }
+
+            RectTransform report = Box(formationEdit, "formation-edit-selected-report",
+                Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero, FormationWellFill);
+            VerticalLayoutGroup reportStack = report.gameObject.AddComponent<VerticalLayoutGroup>();
+            reportStack.spacing = 4f;
+            reportStack.padding = new RectOffset(10, 10, 8, 8);
+            reportStack.childForceExpandHeight = false;
+            reportStack.childForceExpandWidth = true;
+            LayoutElement reportLayout = report.gameObject.AddComponent<LayoutElement>();
+            reportLayout.preferredHeight = 86f;
+            reportLayout.minHeight = 86f;
+            TmpLabel(report, UiElementNames.FormationEditSelectedRole, FormationUnitRoles[0], 12,
+                Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero,
+                TextAlignmentOptions.MidlineLeft, new Color(0.561f, 0.773f, 0.863f, 1f));
+            TmpLabel(report, UiElementNames.FormationEditSelectedName, FormationUnitNames[0], 16,
+                Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero,
+                TextAlignmentOptions.MidlineLeft, FormationTextColor);
+            TmpLabel(report, UiElementNames.FormationEditSelectedCallsign, FormationUnitCallsigns[0], 12,
+                Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero,
+                TextAlignmentOptions.MidlineLeft, FormationMutedColor);
+
+            RectTransform facing = new GameObject("formation-edit-facing").AddComponent<RectTransform>();
+            facing.SetParent(formationEdit, false);
+            HorizontalLayoutGroup facingRow = facing.gameObject.AddComponent<HorizontalLayoutGroup>();
+            facingRow.spacing = 6f;
+            facingRow.childForceExpandWidth = false;
+            facingRow.childForceExpandHeight = false;
+            facingRow.childControlWidth = false;
+            facingRow.childControlHeight = false;
+            facingRow.childAlignment = TextAnchor.MiddleLeft;
+            LayoutElement facingLayout = facing.gameObject.AddComponent<LayoutElement>();
+            facingLayout.preferredHeight = 32f;
+            facingLayout.minHeight = 32f;
+            TmpSizedButton(facing, UiElementNames.FormationEditFacingN, "북쪽", 78f, 32f);
+            TmpSizedButton(facing, UiElementNames.FormationEditFacingE, "동쪽", 78f, 32f);
+            TmpSizedButton(facing, UiElementNames.FormationEditFacingS, "남쪽", 78f, 32f);
+            TmpSizedButton(facing, UiElementNames.FormationEditFacingW, "서쪽", 78f, 32f);
+
+            TmpSizedButton(formationEdit, UiElementNames.FormationEditConfirm, "배치 확정", 330f, 36f);
+            TmpSizedButton(formationEdit, UiElementNames.FormationEditReedit, "배치 다시 편집", 330f, 32f);
+            TmpSizedButton(formationEdit, UiElementNames.FormationEditReset, "초기 진형", 330f, 32f);
+            TmpSizedButton(formationEdit, UiElementNames.FormationEditCancel, "취소", 330f, 32f);
+
+            formationEdit.gameObject.SetActive(false);
+        }
+
+        static string NameForUnit(string unitId)
+        {
+            for (var i = 0; i < UiElementNames.FormationEditUnitIds.Length; i++)
+            {
+                if (UiElementNames.FormationEditUnitIds[i] == unitId)
+                {
+                    return FormationUnitNames[i];
+                }
+            }
+
+            return unitId;
+        }
 
         static void BuildBattleHud(RectTransform root)
         {

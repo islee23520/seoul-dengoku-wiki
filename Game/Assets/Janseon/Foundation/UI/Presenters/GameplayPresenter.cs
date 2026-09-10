@@ -55,10 +55,14 @@ namespace Janseon.Foundation.Composition
         Button editFormation;
         Button formationEditConfirm;
         Button formationEditCancel;
+        Button formationEditReedit;
+        Button formationEditReset;
         Button formationEditFacingN;
         Button formationEditFacingE;
         Button formationEditFacingS;
         Button formationEditFacingW;
+        readonly Button[] formationEditUnits = new Button[UiElementNames.FormationEditUnitIds.Length];
+        readonly Button[] formationEditSlots = new Button[UiElementNames.FormationEditSlotIds.Length];
         Button mobilityRegroup;
         Button choiceNegotiate;
         Button choiceBypass;
@@ -101,6 +105,10 @@ namespace Janseon.Foundation.Composition
         public event Action EditFormationChosen;
         public event Action FormationEditConfirmChosen;
         public event Action FormationEditCancelChosen;
+        public event Action FormationEditReeditChosen;
+        public event Action FormationEditResetChosen;
+        public event Action<string> FormationEditUnitChosen;
+        public event Action<string> FormationEditSlotChosen;
         public event Action<CardinalDirection> FormationEditFacingChosen;
         public event Action MobilityRegroupChosen;
         public event Action NegotiateChosen;
@@ -156,6 +164,20 @@ namespace Janseon.Foundation.Composition
             editFormation = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.EditFormation);
             formationEditConfirm = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.FormationEditConfirm);
             formationEditCancel = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.FormationEditCancel);
+            formationEditReedit = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.FormationEditReedit);
+            formationEditReset = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.FormationEditReset);
+            for (var i = 0; i < formationEditUnits.Length; i++)
+            {
+                formationEditUnits[i] = UguiHudBuilder.ButtonNamed(
+                    gameplayRoot, UiElementNames.FormationEditUnit(UiElementNames.FormationEditUnitIds[i]));
+            }
+
+            for (var i = 0; i < formationEditSlots.Length; i++)
+            {
+                formationEditSlots[i] = UguiHudBuilder.ButtonNamed(
+                    gameplayRoot, UiElementNames.FormationEditSlot(UiElementNames.FormationEditSlotIds[i]));
+            }
+
             formationEditFacingN = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.FormationEditFacingN);
             formationEditFacingE = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.FormationEditFacingE);
             formationEditFacingS = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.FormationEditFacingS);
@@ -177,6 +199,7 @@ namespace Janseon.Foundation.Composition
                 || battlePlayPause == null || battleReset == null || cardGeneralUse == null
                 || formationSwapFront == null || editFormation == null
                 || formationEditConfirm == null || formationEditCancel == null
+                || formationEditReedit == null || formationEditReset == null
                 || formationEditFacingN == null || formationEditFacingE == null
                 || formationEditFacingS == null || formationEditFacingW == null
                 || mobilityRegroup == null || choiceNegotiate == null || choiceBypass == null
@@ -184,6 +207,22 @@ namespace Janseon.Foundation.Composition
                 || stationYeongdeungpo == null || stationSindorim == null || stationGuro == null)
             {
                 return false;
+            }
+
+            for (var i = 0; i < formationEditUnits.Length; i++)
+            {
+                if (formationEditUnits[i] == null)
+                {
+                    return false;
+                }
+            }
+
+            for (var i = 0; i < formationEditSlots.Length; i++)
+            {
+                if (formationEditSlots[i] == null)
+                {
+                    return false;
+                }
             }
 
             actionDepart.onClick.AddListener(OnDepartClicked);
@@ -197,6 +236,23 @@ namespace Janseon.Foundation.Composition
             editFormation.onClick.AddListener(OnEditFormationClicked);
             formationEditConfirm.onClick.AddListener(OnFormationEditConfirmClicked);
             formationEditCancel.onClick.AddListener(OnFormationEditCancelClicked);
+            formationEditReedit.onClick.AddListener(OnFormationEditReeditClicked);
+            formationEditReset.onClick.AddListener(OnFormationEditResetClicked);
+            if (formationEditUnits[0] != null) formationEditUnits[0].onClick.AddListener(OnFormationEditUnit0Clicked);
+            if (formationEditUnits[1] != null) formationEditUnits[1].onClick.AddListener(OnFormationEditUnit1Clicked);
+            if (formationEditUnits[2] != null) formationEditUnits[2].onClick.AddListener(OnFormationEditUnit2Clicked);
+            if (formationEditUnits[3] != null) formationEditUnits[3].onClick.AddListener(OnFormationEditUnit3Clicked);
+            if (formationEditUnits[4] != null) formationEditUnits[4].onClick.AddListener(OnFormationEditUnit4Clicked);
+            if (formationEditUnits[5] != null) formationEditUnits[5].onClick.AddListener(OnFormationEditUnit5Clicked);
+            if (formationEditSlots[0] != null) formationEditSlots[0].onClick.AddListener(OnFormationEditSlot0Clicked);
+            if (formationEditSlots[1] != null) formationEditSlots[1].onClick.AddListener(OnFormationEditSlot1Clicked);
+            if (formationEditSlots[2] != null) formationEditSlots[2].onClick.AddListener(OnFormationEditSlot2Clicked);
+            if (formationEditSlots[3] != null) formationEditSlots[3].onClick.AddListener(OnFormationEditSlot3Clicked);
+            if (formationEditSlots[4] != null) formationEditSlots[4].onClick.AddListener(OnFormationEditSlot4Clicked);
+            if (formationEditSlots[5] != null) formationEditSlots[5].onClick.AddListener(OnFormationEditSlot5Clicked);
+            if (formationEditSlots[6] != null) formationEditSlots[6].onClick.AddListener(OnFormationEditSlot6Clicked);
+            if (formationEditSlots[7] != null) formationEditSlots[7].onClick.AddListener(OnFormationEditSlot7Clicked);
+            if (formationEditSlots[8] != null) formationEditSlots[8].onClick.AddListener(OnFormationEditSlot8Clicked);
             formationEditFacingN.onClick.AddListener(OnFormationEditFacingNClicked);
             formationEditFacingE.onClick.AddListener(OnFormationEditFacingEClicked);
             formationEditFacingS.onClick.AddListener(OnFormationEditFacingSClicked);
@@ -251,6 +307,10 @@ namespace Janseon.Foundation.Composition
         public void TriggerEditFormationForTest() => OnEditFormationClicked();
         public void TriggerFormationEditConfirmForTest() => OnFormationEditConfirmClicked();
         public void TriggerFormationEditCancelForTest() => OnFormationEditCancelClicked();
+        public void TriggerFormationEditReeditForTest() => OnFormationEditReeditClicked();
+        public void TriggerFormationEditResetForTest() => OnFormationEditResetClicked();
+        public void TriggerFormationEditUnitForTest(string unitId) => FormationEditUnitChosen?.Invoke(unitId);
+        public void TriggerFormationEditSlotForTest(string slotId) => FormationEditSlotChosen?.Invoke(slotId);
         public void TriggerFormationEditFacingForTest(CardinalDirection facing) => FormationEditFacingChosen?.Invoke(facing);
         public void SetFormationEditVisible(bool visible) => SetVisible(UiElementNames.FormationEdit, visible);
         public void TriggerMobilityRegroupForTest() => OnMobilityRegroupClicked();
@@ -701,6 +761,23 @@ namespace Janseon.Foundation.Composition
         void OnEditFormationClicked() => EditFormationChosen?.Invoke();
         void OnFormationEditConfirmClicked() => FormationEditConfirmChosen?.Invoke();
         void OnFormationEditCancelClicked() => FormationEditCancelChosen?.Invoke();
+        void OnFormationEditReeditClicked() => FormationEditReeditChosen?.Invoke();
+        void OnFormationEditResetClicked() => FormationEditResetChosen?.Invoke();
+        void OnFormationEditUnit0Clicked() => FormationEditUnitChosen?.Invoke(UiElementNames.FormationEditUnitIds[0]);
+        void OnFormationEditUnit1Clicked() => FormationEditUnitChosen?.Invoke(UiElementNames.FormationEditUnitIds[1]);
+        void OnFormationEditUnit2Clicked() => FormationEditUnitChosen?.Invoke(UiElementNames.FormationEditUnitIds[2]);
+        void OnFormationEditUnit3Clicked() => FormationEditUnitChosen?.Invoke(UiElementNames.FormationEditUnitIds[3]);
+        void OnFormationEditUnit4Clicked() => FormationEditUnitChosen?.Invoke(UiElementNames.FormationEditUnitIds[4]);
+        void OnFormationEditUnit5Clicked() => FormationEditUnitChosen?.Invoke(UiElementNames.FormationEditUnitIds[5]);
+        void OnFormationEditSlot0Clicked() => FormationEditSlotChosen?.Invoke(UiElementNames.FormationEditSlotIds[0]);
+        void OnFormationEditSlot1Clicked() => FormationEditSlotChosen?.Invoke(UiElementNames.FormationEditSlotIds[1]);
+        void OnFormationEditSlot2Clicked() => FormationEditSlotChosen?.Invoke(UiElementNames.FormationEditSlotIds[2]);
+        void OnFormationEditSlot3Clicked() => FormationEditSlotChosen?.Invoke(UiElementNames.FormationEditSlotIds[3]);
+        void OnFormationEditSlot4Clicked() => FormationEditSlotChosen?.Invoke(UiElementNames.FormationEditSlotIds[4]);
+        void OnFormationEditSlot5Clicked() => FormationEditSlotChosen?.Invoke(UiElementNames.FormationEditSlotIds[5]);
+        void OnFormationEditSlot6Clicked() => FormationEditSlotChosen?.Invoke(UiElementNames.FormationEditSlotIds[6]);
+        void OnFormationEditSlot7Clicked() => FormationEditSlotChosen?.Invoke(UiElementNames.FormationEditSlotIds[7]);
+        void OnFormationEditSlot8Clicked() => FormationEditSlotChosen?.Invoke(UiElementNames.FormationEditSlotIds[8]);
         void OnFormationEditFacingNClicked() => FormationEditFacingChosen?.Invoke(CardinalDirection.North);
         void OnFormationEditFacingEClicked() => FormationEditFacingChosen?.Invoke(CardinalDirection.East);
         void OnFormationEditFacingSClicked() => FormationEditFacingChosen?.Invoke(CardinalDirection.South);
@@ -789,6 +866,23 @@ namespace Janseon.Foundation.Composition
             if (editFormation != null) editFormation.onClick.RemoveListener(OnEditFormationClicked);
             if (formationEditConfirm != null) formationEditConfirm.onClick.RemoveListener(OnFormationEditConfirmClicked);
             if (formationEditCancel != null) formationEditCancel.onClick.RemoveListener(OnFormationEditCancelClicked);
+            if (formationEditReedit != null) formationEditReedit.onClick.RemoveListener(OnFormationEditReeditClicked);
+            if (formationEditReset != null) formationEditReset.onClick.RemoveListener(OnFormationEditResetClicked);
+            if (formationEditUnits[0] != null) formationEditUnits[0].onClick.RemoveListener(OnFormationEditUnit0Clicked);
+            if (formationEditUnits[1] != null) formationEditUnits[1].onClick.RemoveListener(OnFormationEditUnit1Clicked);
+            if (formationEditUnits[2] != null) formationEditUnits[2].onClick.RemoveListener(OnFormationEditUnit2Clicked);
+            if (formationEditUnits[3] != null) formationEditUnits[3].onClick.RemoveListener(OnFormationEditUnit3Clicked);
+            if (formationEditUnits[4] != null) formationEditUnits[4].onClick.RemoveListener(OnFormationEditUnit4Clicked);
+            if (formationEditUnits[5] != null) formationEditUnits[5].onClick.RemoveListener(OnFormationEditUnit5Clicked);
+            if (formationEditSlots[0] != null) formationEditSlots[0].onClick.RemoveListener(OnFormationEditSlot0Clicked);
+            if (formationEditSlots[1] != null) formationEditSlots[1].onClick.RemoveListener(OnFormationEditSlot1Clicked);
+            if (formationEditSlots[2] != null) formationEditSlots[2].onClick.RemoveListener(OnFormationEditSlot2Clicked);
+            if (formationEditSlots[3] != null) formationEditSlots[3].onClick.RemoveListener(OnFormationEditSlot3Clicked);
+            if (formationEditSlots[4] != null) formationEditSlots[4].onClick.RemoveListener(OnFormationEditSlot4Clicked);
+            if (formationEditSlots[5] != null) formationEditSlots[5].onClick.RemoveListener(OnFormationEditSlot5Clicked);
+            if (formationEditSlots[6] != null) formationEditSlots[6].onClick.RemoveListener(OnFormationEditSlot6Clicked);
+            if (formationEditSlots[7] != null) formationEditSlots[7].onClick.RemoveListener(OnFormationEditSlot7Clicked);
+            if (formationEditSlots[8] != null) formationEditSlots[8].onClick.RemoveListener(OnFormationEditSlot8Clicked);
             if (formationEditFacingN != null) formationEditFacingN.onClick.RemoveListener(OnFormationEditFacingNClicked);
             if (formationEditFacingE != null) formationEditFacingE.onClick.RemoveListener(OnFormationEditFacingEClicked);
             if (formationEditFacingS != null) formationEditFacingS.onClick.RemoveListener(OnFormationEditFacingSClicked);
@@ -817,6 +911,18 @@ namespace Janseon.Foundation.Composition
             editFormation = null;
             formationEditConfirm = null;
             formationEditCancel = null;
+            formationEditReedit = null;
+            formationEditReset = null;
+            for (var i = 0; i < formationEditUnits.Length; i++)
+            {
+                formationEditUnits[i] = null;
+            }
+
+            for (var i = 0; i < formationEditSlots.Length; i++)
+            {
+                formationEditSlots[i] = null;
+            }
+
             formationEditFacingN = null;
             formationEditFacingE = null;
             formationEditFacingS = null;

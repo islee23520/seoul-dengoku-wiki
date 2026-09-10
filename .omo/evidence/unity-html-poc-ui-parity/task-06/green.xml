@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="4" result="Passed" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-10 18:11:28Z" end-time="2026-09-10 18:11:29Z" duration="0.3549653">
+  <test-suite type="TestSuite" id="1000" name="잔선: 서울" fullname="잔선: 서울" runstate="Runnable" testcasecount="223" result="Passed" start-time="2026-09-10 18:11:28Z" end-time="2026-09-10 18:11:29Z" duration="0.354965" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1260" name="Janseon.Foundation.EditModeTests.dll" fullname="/Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Library/ScriptAssemblies/Janseon.Foundation.EditModeTests.dll" runstate="Runnable" testcasecount="222" result="Passed" start-time="2026-09-10 18:11:28Z" end-time="2026-09-10 18:11:29Z" duration="0.351192" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="65731" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1261" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="221" result="Passed" start-time="2026-09-10 18:11:28Z" end-time="2026-09-10 18:11:29Z" duration="0.350227" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1264" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="195" result="Passed" start-time="2026-09-10 18:11:28Z" end-time="2026-09-10 18:11:29Z" duration="0.349211" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1265" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="195" result="Passed" start-time="2026-09-10 18:11:28Z" end-time="2026-09-10 18:11:29Z" duration="0.348272" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1089" name="FormationEditScreenTests" fullname="Janseon.Foundation.Tests.FormationEditScreenTests" classname="Janseon.Foundation.Tests.FormationEditScreenTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-09-10 18:11:28Z" end-time="2026-09-10 18:11:29Z" duration="0.343460" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1091" name="BuildGameplay_FormationEditor_HasNineSlotControlsAnd370Rail" fullname="Janseon.Foundation.Tests.FormationEditScreenTests.BuildGameplay_FormationEditor_HasNineSlotControlsAnd370Rail" methodname="BuildGameplay_FormationEditor_HasNineSlotControlsAnd370Rail" classname="Janseon.Foundation.Tests.FormationEditScreenTests" runstate="Runnable" seed="454550349" result="Passed" start-time="2026-09-10 18:11:28Z" end-time="2026-09-10 18:11:29Z" duration="0.265334" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1092" name="BuildGameplay_FormationEditor_HasSelectedReportAndConfirmReeditReset" fullname="Janseon.Foundation.Tests.FormationEditScreenTests.BuildGameplay_FormationEditor_HasSelectedReportAndConfirmReeditReset" methodname="BuildGameplay_FormationEditor_HasSelectedReportAndConfirmReeditReset" classname="Janseon.Foundation.Tests.FormationEditScreenTests" runstate="Runnable" seed="1547742643" result="Passed" start-time="2026-09-10 18:11:29Z" end-time="2026-09-10 18:11:29Z" duration="0.020350" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1090" name="BuildGameplay_FormationEditor_HasSixNamedUnitControls" fullname="Janseon.Foundation.Tests.FormationEditScreenTests.BuildGameplay_FormationEditor_HasSixNamedUnitControls" methodname="BuildGameplay_FormationEditor_HasSixNamedUnitControls" classname="Janseon.Foundation.Tests.FormationEditScreenTests" runstate="Runnable" seed="134790059" result="Passed" start-time="2026-09-10 18:11:29Z" end-time="2026-09-10 18:11:29Z" duration="0.019710" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1093" name="FormationEdit_DoesNotDeployUntilConfirm" fullname="Janseon.Foundation.Tests.FormationEditScreenTests.FormationEdit_DoesNotDeployUntilConfirm" methodname="FormationEdit_DoesNotDeployUntilConfirm" classname="Janseon.Foundation.Tests.FormationEditScreenTests" runstate="Runnable" seed="1362474434" result="Passed" start-time="2026-09-10 18:11:29Z" end-time="2026-09-10 18:11:29Z" duration="0.028876" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: /Users/ilseoblee/Library/Application Support/Janseon Studio/잔선_ 서울/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

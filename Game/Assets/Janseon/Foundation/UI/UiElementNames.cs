@@ -84,10 +84,42 @@ namespace Janseon.Foundation.UI
         public const string FormationEdit = "formation-edit";
         public const string FormationEditConfirm = "formation-edit-confirm";
         public const string FormationEditCancel = "formation-edit-cancel";
+        public const string FormationEditReedit = "formation-edit-reedit";
+        public const string FormationEditReset = "formation-edit-reset";
+        public const string FormationEditSelectedName = "formation-edit-selected-name";
+        public const string FormationEditSelectedRole = "formation-edit-selected-role";
+        public const string FormationEditSelectedCallsign = "formation-edit-selected-callsign";
         public const string FormationEditFacingN = "formation-edit-facing-n";
         public const string FormationEditFacingE = "formation-edit-facing-e";
         public const string FormationEditFacingS = "formation-edit-facing-s";
         public const string FormationEditFacingW = "formation-edit-facing-w";
+
+        public static string FormationEditUnit(string unitId) => "formation-edit-unit-" + unitId;
+
+        public static string FormationEditSlot(string slotId) => "formation-edit-slot-" + slotId;
+
+        public static readonly string[] FormationEditUnitIds =
+        {
+            "ally-guard-1",
+            "ally-guard-2",
+            "ally-assault-1",
+            "ally-assault-2",
+            "ally-archer-1",
+            "ally-archer-2",
+        };
+
+        public static readonly string[] FormationEditSlotIds =
+        {
+            "front-left",
+            "front-center",
+            "front-right",
+            "middle-left",
+            "middle-center",
+            "middle-right",
+            "rear-left",
+            "rear-center",
+            "rear-right",
+        };
         public const string MobilityRegroup = "card-mobility-regroup";
         public const string MissionConsole = "mission-console";
         public const string HubOvernightCopy = "hub-overnight-copy";
@@ -193,6 +225,26 @@ namespace Janseon.Foundation.UI
             FormationEdit,
             FormationEditConfirm,
             FormationEditCancel,
+            FormationEditReedit,
+            FormationEditReset,
+            FormationEditSelectedName,
+            FormationEditSelectedRole,
+            FormationEditSelectedCallsign,
+            FormationEditUnit("ally-guard-1"),
+            FormationEditUnit("ally-guard-2"),
+            FormationEditUnit("ally-assault-1"),
+            FormationEditUnit("ally-assault-2"),
+            FormationEditUnit("ally-archer-1"),
+            FormationEditUnit("ally-archer-2"),
+            FormationEditSlot("front-left"),
+            FormationEditSlot("front-center"),
+            FormationEditSlot("front-right"),
+            FormationEditSlot("middle-left"),
+            FormationEditSlot("middle-center"),
+            FormationEditSlot("middle-right"),
+            FormationEditSlot("rear-left"),
+            FormationEditSlot("rear-center"),
+            FormationEditSlot("rear-right"),
             FormationEditFacingN,
             FormationEditFacingE,
             FormationEditFacingS,
