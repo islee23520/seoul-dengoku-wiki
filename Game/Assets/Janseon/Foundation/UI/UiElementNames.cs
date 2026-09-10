@@ -32,6 +32,8 @@ namespace Janseon.Foundation.UI
         public const string ChoiceCombat = "choice-combat";
 
         public const string BattleHud = "battle-hud";
+        public const string BattleHudTitle = "battle-hud-title";
+        public const string BattleDock = "battle-dock";
         public const string BattleGrid = "battle-grid";
         public const string BattleHp = "battle-hp";
         public const string BattleHpMeter = "battle-hp-meter";
@@ -43,6 +45,14 @@ namespace Janseon.Foundation.UI
         public const string BattleReinforcement = "battle-reinforcement";
         public const string BattleCardTray = "battle-card-tray";
         public const string BattleCardOwner = "battle-card-owner";
+        public const string BattleCardOwnerPortrait = "battle-card-owner-portrait";
+        public const string BattleStrongholdSwitch = "battle-card-stronghold-switch";
+        public const string BattleZoomOut = "battle-zoom-out";
+        public const string BattleZoomValue = "battle-zoom-value";
+        public const string BattleZoomIn = "battle-zoom-in";
+        public const string BattleZoomReset = "battle-zoom-reset";
+        public const string DataContractDisclosure = "data-contract-disclosure";
+        public const string DataContractBody = "data-contract-body";
         public const string BattleCardCooldown = "battle-card-cooldown";
         public const string BattleCardCooldownMask = "battle-card-cooldown-mask";
         public const string BattleCardCooldownText = "battle-card-cooldown-text";
@@ -91,6 +101,8 @@ namespace Janseon.Foundation.UI
         public const string DataContentFingerprint = "data-content-fingerprint";
 
         public static string DeployToggle(int rosterIndex) => "deploy-toggle-" + rosterIndex;
+
+        public static string BattleCard(string cardId) => "battle-card-" + cardId;
 
         public const string Res720Class = "jk-res-720";
         public const string Res1080Class = "jk-res-1080";
@@ -146,6 +158,20 @@ namespace Janseon.Foundation.UI
             BattleReinforcement,
             BattleCardTray,
             BattleCardOwner,
+            BattleCardOwnerPortrait,
+            BattleHudTitle,
+            BattleDock,
+            BattleStrongholdSwitch,
+            BattleZoomOut,
+            BattleZoomValue,
+            BattleZoomIn,
+            BattleZoomReset,
+            DataContractDisclosure,
+            DataContractBody,
+            "battle-card-guard-shieldwall",
+            "battle-card-encourage-morale",
+            "battle-card-pincer-focus",
+            "battle-card-mobility-regroup",
             BattleCardCooldown,
             BattleCardCooldownMask,
             BattleCardCooldownText,

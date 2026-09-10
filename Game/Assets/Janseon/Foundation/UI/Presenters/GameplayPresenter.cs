@@ -215,6 +215,15 @@ namespace Janseon.Foundation.Composition
             if (deployToggles[3] != null) deployToggles[3].onValueChanged.AddListener(OnDeploy3Changed);
 
             root = gameplayRoot;
+            Transform title = UguiHudBuilder.Find(gameplayRoot, UiElementNames.BattleHudTitle);
+            if (title != null)
+            {
+                TextMeshProUGUI titleTmp = title.GetComponent<TextMeshProUGUI>();
+                if (titleTmp != null)
+                {
+                    titleTmp.enabled = true;
+                }
+            }
             for (var i = 0; i < UiElementNames.GameplayFocusOrder.Length; i++)
             {
                 focusOrder.Add(UiElementNames.GameplayFocusOrder[i]);
