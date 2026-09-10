@@ -1,5 +1,6 @@
 using System;
 using Janseon.Core;
+using Janseon.Core.Battle.Sim;
 
 namespace Janseon.Foundation.UI
 {
@@ -11,7 +12,7 @@ namespace Janseon.Foundation.UI
     {
         bool IsReady { get; }
         CampaignState Campaign { get; }
-        BattleState Battle { get; }
+        BattleSimState Battle { get; }
         Ledger CampaignLedger { get; }
         SettlementBook Book { get; }
         SettlementReceipt LastReceipt { get; }

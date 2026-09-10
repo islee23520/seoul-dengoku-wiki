@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 
@@ -21,6 +22,12 @@ namespace Janseon.Core
         Settlement = 4,
         /// <summary>복귀 후 거점 준비 완료 — return/base-ready.</summary>
         BaseReady = 5
+    }
+
+    public enum StartingPreset
+    {
+        Wanderer = 0,
+        StationMaster = 1
     }
 
     public enum CampaignRejectReason
@@ -51,7 +58,8 @@ namespace Janseon.Core
         ChooseBypass = 6,
         ChooseCombat = 7,
         ApplySettlement = 8,
-        CompleteReturn = 9
+        CompleteReturn = 9,
+        Rest = 10
     }
 
     public sealed class CampaignCommand
@@ -76,6 +84,278 @@ namespace Janseon.Core
     }
 
     /// <summary>
+    /// Immutable per-unit HP snapshot keyed by stable unit id (Strategy-Battle-Roundtrip 부상 왕복).
+    /// Copies caller storage on construction and exposes no mutation, so sharing a snapshot
+    /// reference can never alias mutable state. Keys are stable battle unit ids ("ally-0").
+    /// </summary>
+    public sealed class UnitHpSnapshot
+    {
+        readonly Dictionary<string, int> _hp;
+
+        public UnitHpSnapshot(IEnumerable<KeyValuePair<string, int>> entries)
+        {
+            _hp = new Dictionary<string, int>(StringComparer.Ordinal);
+            if (entries == null)
+            {
+                return;
+            }
+
+            foreach (var entry in entries)
+            {
+                if (entry.Key == null)
+                {
+                    throw new ArgumentException("Unit id must not be null.", nameof(entries));
+                }
+
+                _hp[entry.Key] = entry.Value;
+            }
+        }
+
+        /// <summary>Default opening party keyed by the stable realtime unit id.</summary>
+        public static UnitHpSnapshot DefaultParty()
+        {
+            return new UnitHpSnapshot(new Dictionary<string, int>
+            {
+                [Battle.Contracts.RealtimeBattleApi.PersistentAllyId] = Battle.Contracts.RealtimeBattleApi.PersistentMaxHp
+            });
+        }
+
+        public bool TryGet(string unitId, out int hp)
+        {
+            if (unitId != null && _hp.TryGetValue(unitId, out hp))
+            {
+                return true;
+            }
+
+            hp = 0;
+            return false;
+        }
+
+        /// <summary>True when every stored HP is inside [minInclusive, maxInclusive].</summary>
+        public bool IsWithinRange(int minInclusive, int maxInclusive)
+        {
+            foreach (var value in _hp.Values)
+            {
+                if (value < minInclusive || value > maxInclusive)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        /// <summary>Stable content hash: keys sorted ordinal, invariant numbers.</summary>
+        public string Fingerprint()
+        {
+            var keys = new List<string>(_hp.Keys);
+            keys.Sort(StringComparer.Ordinal);
+            var sb = new StringBuilder();
+            for (var i = 0; i < keys.Count; i++)
+            {
+                if (i > 0)
+                {
+                    sb.Append('|');
+                }
+
+                sb.Append(keys[i])
+                    .Append('=')
+                    .Append(_hp[keys[i]].ToString(CultureInfo.InvariantCulture));
+            }
+
+            return CoreApi.StableHashHex(sb.ToString());
+        }
+    }
+
+    public enum DeploymentRejectReason
+    {
+        None = 0,
+        UnknownUnit = 1,
+        DeployCapReached = 2,
+        WoundedOverrideRequired = 3
+    }
+
+    public sealed class DeploymentRejection
+    {
+        public readonly DeploymentRejectReason Reason;
+        public readonly string UnitId;
+
+        public DeploymentRejection(DeploymentRejectReason reason, string unitId)
+        {
+            Reason = reason;
+            UnitId = unitId ?? string.Empty;
+        }
+    }
+
+    /// <summary>
+    /// Immutable roster-to-deployment decision. Roster membership and battle participation are
+    /// separate: at most three members participate, while wounded members default to rest.
+    /// </summary>
+    public sealed class DeploymentState
+    {
+        readonly string[] unitIds;
+        readonly int[] hp;
+        readonly bool[] participating;
+
+        internal DeploymentState(string[] unitIds, int[] hp, bool[] participating)
+        {
+            this.unitIds = (string[])unitIds.Clone();
+            this.hp = (int[])hp.Clone();
+            this.participating = (bool[])participating.Clone();
+        }
+
+        public int RosterCount => unitIds.Length;
+
+        public int ParticipantCount
+        {
+            get
+            {
+                var count = 0;
+                for (var i = 0; i < participating.Length; i++)
+                {
+                    if (participating[i])
+                    {
+                        count++;
+                    }
+                }
+
+                return count;
+            }
+        }
+
+        public string UnitIdAt(int index) => unitIds[index];
+        public int HpAt(int index) => hp[index];
+        public bool IsParticipatingAt(int index) => participating[index];
+        public bool IsWoundedAt(int index) => hp[index] < Battle.Contracts.RealtimeBattleApi.PersistentMaxHp;
+
+        public bool IsParticipating(string unitId)
+        {
+            var index = IndexOf(unitId);
+            return index >= 0 && participating[index];
+        }
+
+        public bool IsWounded(string unitId)
+        {
+            var index = IndexOf(unitId);
+            return index >= 0 && hp[index] < Battle.Contracts.RealtimeBattleApi.PersistentMaxHp;
+        }
+
+        internal int IndexOf(string unitId)
+        {
+            for (var i = 0; i < unitIds.Length; i++)
+            {
+                if (string.Equals(unitIds[i], unitId, StringComparison.Ordinal))
+                {
+                    return i;
+                }
+            }
+
+            return -1;
+        }
+
+        internal DeploymentState WithParticipation(int index, bool value)
+        {
+            var next = (bool[])participating.Clone();
+            next[index] = value;
+            return new DeploymentState(unitIds, hp, next);
+        }
+
+        public string Fingerprint()
+        {
+            var sb = new StringBuilder();
+            for (var i = 0; i < unitIds.Length; i++)
+            {
+                if (i > 0)
+                {
+                    sb.Append('|');
+                }
+
+                sb.Append(unitIds[i])
+                    .Append('=')
+                    .Append(hp[i].ToString(CultureInfo.InvariantCulture))
+                    .Append(participating[i] ? ":in" : ":out");
+            }
+
+            return CoreApi.StableHashHex(sb.ToString());
+        }
+    }
+
+    public static class DeploymentApi
+    {
+        public const int DeployCap = 3;
+
+        public static string UnitId(int rosterIndex) => "ally-" + rosterIndex.ToString(CultureInfo.InvariantCulture);
+
+        public static DeploymentState Create(int rosterCount, UnitHpSnapshot partyHp)
+        {
+            if (rosterCount < 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(rosterCount));
+            }
+
+            var ids = new string[rosterCount];
+            var hp = new int[rosterCount];
+            var participating = new bool[rosterCount];
+            var selected = 0;
+            for (var i = 0; i < rosterCount; i++)
+            {
+                ids[i] = UnitId(i);
+                hp[i] = partyHp != null && partyHp.TryGet(ids[i], out var storedHp)
+                    ? storedHp
+                    : Battle.Contracts.RealtimeBattleApi.PersistentMaxHp;
+                if (hp[i] < 0 || hp[i] > Battle.Contracts.RealtimeBattleApi.PersistentMaxHp)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(partyHp), "Deployment HP must be within battle HP bounds.");
+                }
+
+                // Wounded leftovers rest by default; healthy members fill up to the deploy cap.
+                participating[i] = hp[i] == Battle.Contracts.RealtimeBattleApi.PersistentMaxHp && selected < DeployCap;
+                if (participating[i])
+                {
+                    selected++;
+                }
+            }
+
+            return new DeploymentState(ids, hp, participating);
+        }
+
+        public static object SetParticipation(
+            DeploymentState state,
+            string unitId,
+            bool participating,
+            bool explicitWoundedOverride)
+        {
+            if (state == null)
+            {
+                throw new ArgumentNullException(nameof(state));
+            }
+
+            var index = state.IndexOf(unitId);
+            if (index < 0)
+            {
+                return new DeploymentRejection(DeploymentRejectReason.UnknownUnit, unitId);
+            }
+
+            if (state.IsParticipatingAt(index) == participating)
+            {
+                return state;
+            }
+
+            if (participating && state.IsWoundedAt(index) && !explicitWoundedOverride)
+            {
+                return new DeploymentRejection(DeploymentRejectReason.WoundedOverrideRequired, unitId);
+            }
+
+            if (participating && state.ParticipantCount >= DeployCap)
+            {
+                return new DeploymentRejection(DeploymentRejectReason.DeployCapReached, unitId);
+            }
+
+            return state.WithParticipation(index, participating);
+        }
+    }
+
+    /// <summary>
     /// Immutable battle handoff for Todo 8. Campaign must not mutate fields after issue.
     /// </summary>
     public sealed class BattleContext
@@ -88,7 +368,21 @@ namespace Janseon.Core
         public readonly int PartyResources;
         public readonly int Reputation;
         public readonly string RulesVersion;
+        /// <summary>Stable encounter command identity included in canonical battle material.</summary>
+        public readonly string IdentityKey;
         public readonly string ContextHash;
+        /// <summary>
+        /// Deterministic battle-opening seed identity. This intentionally excludes mutable party
+        /// condition while <see cref="ContextHash"/> binds the complete immutable handoff.
+        /// </summary>
+        public readonly string SeedIdentityHash;
+        /// <summary>Battle id paired with <see cref="SeedIdentityHash"/> for the opening RNG contract.</summary>
+        public readonly string SeedIdentityBattleId;
+        /// <summary>
+        /// Opening HP per stable unit id. The persistent ally entry is required; zero means downed.
+        /// Units absent from the snapshot open at their realtime roster default.
+        /// </summary>
+        public readonly UnitHpSnapshot StartHp;
 
         public BattleContext(
             string battleId,
@@ -99,9 +393,12 @@ namespace Janseon.Core
             int partyResources,
             int reputation,
             string rulesVersion,
-            string contextHash)
+            string identityKey,
+            string contextHash,
+            UnitHpSnapshot startHp,
+            string seedIdentityHash,
+            string seedIdentityBattleId)
         {
-            BattleId = battleId ?? string.Empty;
             CampaignId = campaignId ?? string.Empty;
             Location = location;
             WorldSeed = worldSeed;
@@ -109,7 +406,141 @@ namespace Janseon.Core
             PartyResources = partyResources;
             Reputation = reputation;
             RulesVersion = rulesVersion ?? string.Empty;
-            ContextHash = contextHash ?? string.Empty;
+            IdentityKey = identityKey ?? string.Empty;
+            StartHp = startHp;
+
+            DeriveIdentity(
+                CampaignId,
+                Location,
+                WorldSeed,
+                WorldTick,
+                PartyResources,
+                Reputation,
+                RulesVersion,
+                IdentityKey,
+                StartHp,
+                out var expectedBattleId,
+                out var expectedContextHash,
+                out var expectedSeedIdentityHash,
+                out var expectedSeedIdentityBattleId);
+
+            RequireClaim(battleId, expectedBattleId, nameof(battleId));
+            RequireClaim(contextHash, expectedContextHash, nameof(contextHash));
+            RequireClaim(seedIdentityHash, expectedSeedIdentityHash, nameof(seedIdentityHash));
+            RequireClaim(seedIdentityBattleId, expectedSeedIdentityBattleId, nameof(seedIdentityBattleId));
+
+            BattleId = expectedBattleId;
+            ContextHash = expectedContextHash;
+            SeedIdentityHash = expectedSeedIdentityHash;
+            SeedIdentityBattleId = expectedSeedIdentityBattleId;
+        }
+
+        public static BattleContext Create(
+            string campaignId,
+            StationId location,
+            int worldSeed,
+            Tick worldTick,
+            int partyResources,
+            int reputation,
+            string rulesVersion,
+            string identityKey,
+            UnitHpSnapshot startHp)
+        {
+            DeriveIdentity(
+                campaignId,
+                location,
+                worldSeed,
+                worldTick,
+                partyResources,
+                reputation,
+                rulesVersion,
+                identityKey,
+                startHp,
+                out var battleId,
+                out var contextHash,
+                out var seedIdentityHash,
+                out var seedIdentityBattleId);
+
+            return new BattleContext(
+                battleId,
+                campaignId,
+                location,
+                worldSeed,
+                worldTick,
+                partyResources,
+                reputation,
+                rulesVersion,
+                identityKey,
+                contextHash,
+                startHp,
+                seedIdentityHash,
+                seedIdentityBattleId);
+        }
+
+        internal void ValidateIntegrity()
+        {
+            DeriveIdentity(
+                CampaignId,
+                Location,
+                WorldSeed,
+                WorldTick,
+                PartyResources,
+                Reputation,
+                RulesVersion,
+                IdentityKey,
+                StartHp,
+                out var battleId,
+                out var contextHash,
+                out var seedIdentityHash,
+                out var seedIdentityBattleId);
+
+            RequireClaim(BattleId, battleId, nameof(BattleId));
+            RequireClaim(ContextHash, contextHash, nameof(ContextHash));
+            RequireClaim(SeedIdentityHash, seedIdentityHash, nameof(SeedIdentityHash));
+            RequireClaim(SeedIdentityBattleId, seedIdentityBattleId, nameof(SeedIdentityBattleId));
+        }
+
+        static void DeriveIdentity(
+            string campaignId,
+            StationId location,
+            int worldSeed,
+            Tick worldTick,
+            int partyResources,
+            int reputation,
+            string rulesVersion,
+            string identityKey,
+            UnitHpSnapshot startHp,
+            out string battleId,
+            out string contextHash,
+            out string seedIdentityHash,
+            out string seedIdentityBattleId)
+        {
+            var material =
+                "battle"
+                + ";campaign=" + (campaignId ?? string.Empty)
+                + ";node=" + (location.Value ?? string.Empty)
+                + ";seed=" + worldSeed.ToString(CultureInfo.InvariantCulture)
+                + ";tick=" + worldTick.Value.ToString(CultureInfo.InvariantCulture)
+                + ";res=" + partyResources.ToString(CultureInfo.InvariantCulture)
+                + ";rep=" + reputation.ToString(CultureInfo.InvariantCulture)
+                + ";rules=" + (rulesVersion ?? string.Empty)
+                + ";cmd=" + (identityKey ?? string.Empty);
+            seedIdentityHash = CoreApi.StableHashHex(material);
+            seedIdentityBattleId = "battle-" + seedIdentityHash.Substring(0, 16);
+            var contextMaterial = material
+                + ";hp=" + (startHp != null ? startHp.Fingerprint() : string.Empty);
+            contextHash = CoreApi.StableHashHex(contextMaterial);
+            battleId = "battle-" + contextHash.Substring(0, 16);
+        }
+
+        static void RequireClaim(string claimed, string expected, string paramName)
+        {
+            if (!string.Equals(claimed ?? string.Empty, expected, StringComparison.Ordinal))
+            {
+                throw new ArgumentException(
+                    "Battle context identity claim does not match canonical immutable material.",
+                    paramName);
+            }
         }
     }
 
@@ -133,6 +564,11 @@ namespace Janseon.Core
         public Tick Tick;
         public StationId Node;
         public StationId HomeBase;
+        public StartingPreset StartingPreset;
+        public int PartyMemberCount;
+        public bool HasStronghold;
+        public bool HasBulletin;
+        public string OvernightCopy;
         public int Resources;
         public int Reputation;
         public int Seed;
@@ -144,6 +580,14 @@ namespace Janseon.Core
         public int PendingResourceDelta;
         public int PendingReputationDelta;
         public BattleContext PendingBattle;
+        /// <summary>
+        /// Canonical persistent party HP keyed by stable unit id (Strategy-Battle-Roundtrip).
+        /// Campaign owns this store; battle seeds from it and settlement rewrites it from the
+        /// result payload. Immutable snapshot type — Clone may share the reference safely.
+        /// </summary>
+        public UnitHpSnapshot PartyHp;
+        /// <summary>Current roster participation decision; immutable and capped at three.</summary>
+        public DeploymentState Deployment;
         /// <summary>ResultId last applied via SettlementApi (exact-once). Empty if none.</summary>
         public string SettledResultId;
         /// <summary>ReceiptHash of last SettlementReceipt. Empty if none.</summary>
@@ -158,6 +602,11 @@ namespace Janseon.Core
                 Tick = Tick,
                 Node = Node,
                 HomeBase = HomeBase,
+                StartingPreset = StartingPreset,
+                PartyMemberCount = PartyMemberCount,
+                HasStronghold = HasStronghold,
+                HasBulletin = HasBulletin,
+                OvernightCopy = OvernightCopy,
                 Resources = Resources,
                 Reputation = Reputation,
                 Seed = Seed,
@@ -169,6 +618,8 @@ namespace Janseon.Core
                 PendingResourceDelta = PendingResourceDelta,
                 PendingReputationDelta = PendingReputationDelta,
                 PendingBattle = PendingBattle,
+                PartyHp = PartyHp,
+                Deployment = Deployment,
                 SettledResultId = SettledResultId,
                 LastReceiptHash = LastReceiptHash
             };
@@ -184,8 +635,44 @@ namespace Janseon.Core
         public const int BypassResourceDelta = -2;
         public const int BypassReputationDelta = -1;
         public const string RulesVersion = "poc-campaign-loop-v1";
+        public const int ConfirmedMoveTicks = 1;
+        public const int ConfirmedMoveResourceDelta = -2;
+        public const int RestTicks = 2;
 
         public static CampaignState Start(int seed, StationId homeBase, string campaignId)
+        {
+            return CreateStart(seed, homeBase, campaignId, 100, StartingPreset.Wanderer, 1, false, false, string.Empty);
+        }
+
+        public static CampaignState StartNewGame(
+            int seed,
+            StationId homeBase,
+            string campaignId,
+            StartingPreset preset)
+        {
+            switch (preset)
+            {
+                case StartingPreset.Wanderer:
+                    return CreateStart(
+                        seed, homeBase, campaignId, 30, preset, 3, false, false,
+                        "영등포 대합실에서 하룻밤 잠자리만 허락받았다.");
+                case StartingPreset.StationMaster:
+                    return CreateStart(seed, homeBase, campaignId, 40, preset, 3, true, true, string.Empty);
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(preset));
+            }
+        }
+
+        static CampaignState CreateStart(
+            int seed,
+            StationId homeBase,
+            string campaignId,
+            int resources,
+            StartingPreset preset,
+            int partyMemberCount,
+            bool hasStronghold,
+            bool hasBulletin,
+            string overnightCopy)
         {
             return new CampaignState
             {
@@ -194,7 +681,12 @@ namespace Janseon.Core
                 Tick = new Tick(0),
                 Node = homeBase,
                 HomeBase = homeBase,
-                Resources = 100,
+                StartingPreset = preset,
+                PartyMemberCount = partyMemberCount,
+                HasStronghold = hasStronghold,
+                HasBulletin = hasBulletin,
+                OvernightCopy = overnightCopy ?? string.Empty,
+                Resources = resources,
                 Reputation = 0,
                 Seed = seed,
                 Rng = new PurposeRng(seed),
@@ -205,9 +697,38 @@ namespace Janseon.Core
                 PendingResourceDelta = 0,
                 PendingReputationDelta = 0,
                 PendingBattle = null,
+                PartyHp = UnitHpSnapshot.DefaultParty(),
+                Deployment = DeploymentApi.Create(partyMemberCount, UnitHpSnapshot.DefaultParty()),
                 SettledResultId = string.Empty,
                 LastReceiptHash = string.Empty
             };
+        }
+
+        public static object SetDeploymentParticipation(
+            CampaignState state,
+            string unitId,
+            bool participating,
+            bool explicitWoundedOverride = false)
+        {
+            if (state == null)
+            {
+                throw new ArgumentNullException(nameof(state));
+            }
+
+            DeploymentState current = state.Deployment ?? DeploymentApi.Create(state.PartyMemberCount, state.PartyHp);
+            object changed = DeploymentApi.SetParticipation(
+                current,
+                unitId,
+                participating,
+                explicitWoundedOverride);
+            if (changed is DeploymentRejection)
+            {
+                return changed;
+            }
+
+            var next = state.Clone();
+            next.Deployment = (DeploymentState)changed;
+            return next;
         }
 
         /// <summary>
@@ -258,8 +779,7 @@ namespace Janseon.Core
             next.PendingResourceDelta = 0;
             next.PendingReputationDelta = 0;
             next.SettlementApplied = false;
-            next.Tick = state.Tick.Next();
-            // Stage remains Resolution — settlement advances it.
+            // Stage remains Resolution — settlement advances it. Battle setup does not consume campaign time.
             var cmd = new CampaignCommand { Id = cmdId, Kind = CampaignCommandKind.ChooseCombat };
             AppendEvent(ledger, cmd, next, "attach-battle:" + (context.BattleId ?? string.Empty), 0);
             return next;
@@ -307,6 +827,8 @@ namespace Janseon.Core
                     return ApplySettlement(state, ledger, cmd);
                 case CampaignCommandKind.CompleteReturn:
                     return CompleteReturn(state, ledger, cmd);
+                case CampaignCommandKind.Rest:
+                    return Rest(state, ledger, cmd);
                 default:
                     return new CampaignRejection(CampaignRejectReason.WrongStage, state.Stage, cmd.Kind);
             }
@@ -321,7 +843,6 @@ namespace Janseon.Core
 
             var next = state.Clone();
             next.Stage = CampaignStage.ExpeditionTravel;
-            next.Tick = state.Tick.Next();
             next.Choice = EncounterChoice.None;
             next.ChoiceLocked = false;
             next.SettlementApplied = false;
@@ -365,6 +886,7 @@ namespace Janseon.Core
             var next = state.Clone();
             next.Node = routeNext.Current;
             next.Tick = routeNext.Tick;
+            next.Resources = checked(state.Resources + ConfirmedMoveResourceDelta);
             // Fold hop ledger event into campaign ledger with campaign-scoped summary.
             AppendEvent(ledger, cmd, next, "travel:" + (routeState.Current.Value ?? string.Empty) + "->" + (routeNext.Current.Value ?? string.Empty), routeNext.HopCount);
             return next;
@@ -385,7 +907,6 @@ namespace Janseon.Core
 
             var next = state.Clone();
             next.Stage = CampaignStage.Encounter;
-            next.Tick = state.Tick.Next();
             // Deterministic encounter salt from Encounter stream (does not touch World/Battle).
             if (next.Rng != null)
             {
@@ -405,7 +926,6 @@ namespace Janseon.Core
 
             var next = state.Clone();
             next.Stage = CampaignStage.Resolution;
-            next.Tick = state.Tick.Next();
             AppendEvent(ledger, cmd, next, "enter-resolution", (int)next.Stage);
             return next;
         }
@@ -441,7 +961,6 @@ namespace Janseon.Core
             next.PendingResourceDelta = resourceDelta;
             next.PendingReputationDelta = reputationDelta;
             next.Stage = CampaignStage.Settlement;
-            next.Tick = state.Tick.Next();
             next.SettlementApplied = false;
             next.PendingBattle = null;
             AppendEvent(ledger, cmd, next, "resolve:" + consequenceId, resourceDelta);
@@ -461,29 +980,17 @@ namespace Janseon.Core
             }
 
             // Battle handoff is pure: no caller state/ledger mutation; immutable context returned.
-            var battleTick = state.Tick;
-            var material =
-                "battle"
-                + ";campaign=" + (state.CampaignId ?? string.Empty)
-                + ";node=" + (state.Node.Value ?? string.Empty)
-                + ";seed=" + state.Seed.ToString(CultureInfo.InvariantCulture)
-                + ";tick=" + battleTick.Value.ToString(CultureInfo.InvariantCulture)
-                + ";res=" + state.Resources.ToString(CultureInfo.InvariantCulture)
-                + ";rep=" + state.Reputation.ToString(CultureInfo.InvariantCulture)
-                + ";rules=" + RulesVersion
-                + ";cmd=" + (cmd.Id.Value ?? string.Empty);
-            var contextHash = CoreApi.StableHashHex(material);
-            var battleId = "battle-" + contextHash.Substring(0, 16);
-            var context = new BattleContext(
-                battleId,
+            var context = BattleContext.Create(
                 state.CampaignId,
                 state.Node,
                 state.Seed,
-                battleTick,
+                state.Tick,
                 state.Resources,
                 state.Reputation,
                 RulesVersion,
-                contextHash);
+                cmd.Id.Value,
+                // Seed opening HP from the canonical campaign store (leftover HP roundtrip).
+                state.PartyHp);
             return new BattleRequired(context);
         }
 
@@ -505,12 +1012,14 @@ namespace Janseon.Core
             }
 
             var next = state.Clone();
+            // Settlement resolves consequences at the expedition station. Location changes only
+            // when CompleteReturn is explicitly dispatched by return-action.
+            next.Node = state.Node;
             next.Resources = checked(state.Resources + state.PendingResourceDelta);
             next.Reputation = checked(state.Reputation + state.PendingReputationDelta);
             next.PendingResourceDelta = 0;
             next.PendingReputationDelta = 0;
             next.SettlementApplied = true;
-            next.Tick = state.Tick.Next();
             AppendEvent(ledger, cmd, next, "settle:" + (next.ConsequenceId ?? string.Empty), next.Resources);
             return next;
         }
@@ -535,8 +1044,21 @@ namespace Janseon.Core
             var next = state.Clone();
             next.Node = state.HomeBase;
             next.Stage = CampaignStage.BaseReady;
-            next.Tick = state.Tick.Next();
             AppendEvent(ledger, cmd, next, "return-base", (int)next.Stage);
+            return next;
+        }
+
+        static object Rest(CampaignState state, Ledger ledger, CampaignCommand cmd)
+        {
+            if ((state.Stage != CampaignStage.BasePreparation && state.Stage != CampaignStage.BaseReady)
+                || !state.Node.Equals(state.HomeBase))
+            {
+                return Reject(state, cmd, CampaignRejectReason.WrongStage);
+            }
+
+            var next = state.Clone();
+            next.Tick = state.Tick.Next().Next();
+            AppendEvent(ledger, cmd, next, "rest", RestTicks);
             return next;
         }
 
@@ -584,9 +1106,16 @@ namespace Janseon.Core
                 sb.Append(";tick=").Append(state.Tick.Value.ToString(CultureInfo.InvariantCulture));
                 sb.Append(";node=").Append(state.Node.Value ?? string.Empty);
                 sb.Append(";home=").Append(state.HomeBase.Value ?? string.Empty);
+                sb.Append(";preset=").Append(((int)state.StartingPreset).ToString(CultureInfo.InvariantCulture));
+                sb.Append(";party=").Append(state.PartyMemberCount.ToString(CultureInfo.InvariantCulture));
+                sb.Append(";stronghold=").Append(state.HasStronghold ? "1" : "0");
+                sb.Append(";bulletin=").Append(state.HasBulletin ? "1" : "0");
+                sb.Append(";overnight=").Append(state.OvernightCopy ?? string.Empty);
                 sb.Append(";res=").Append(state.Resources.ToString(CultureInfo.InvariantCulture));
                 sb.Append(";rep=").Append(state.Reputation.ToString(CultureInfo.InvariantCulture));
                 sb.Append(";seed=").Append(state.Seed.ToString(CultureInfo.InvariantCulture));
+                sb.Append(";hp=").Append(state.PartyHp != null ? state.PartyHp.Fingerprint() : string.Empty);
+                sb.Append(";deploy=").Append(state.Deployment != null ? state.Deployment.Fingerprint() : string.Empty);
                 sb.Append(";choice=").Append(((int)state.Choice).ToString(CultureInfo.InvariantCulture));
                 sb.Append(";locked=").Append(state.ChoiceLocked ? "1" : "0");
                 sb.Append(";settled=").Append(state.SettlementApplied ? "1" : "0");

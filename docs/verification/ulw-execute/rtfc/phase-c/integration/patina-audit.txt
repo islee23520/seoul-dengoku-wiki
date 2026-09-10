@@ -1,0 +1,7 @@
+[patina] batch safety: files=2, backend=codex-cli, prompt_mode=minimal, max_concurrency=2, max_retries=0, timeout_ms=600000, worst_case_requests=2, max_prompt_chars=83946, avg_prompt_chars=83747
+[patina] codex-cli is a local agent CLI, not a stateless batch completion API. Large batches should prefer an OpenAI-compatible HTTP provider when possible.
+[patina] largest prompt is ~83,946 chars; failed attempts still send the full prompt.
+| Pattern | Category | Severity | Location |
+|---------|----------|----------|----------|
+| Pattern | Category | Severity | Location |
+|---------|----------|----------|----------|

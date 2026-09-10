@@ -329,12 +329,10 @@ export function auditRuntimeProvenance(repoRoot = defaultRepoRoot, options = {})
   // Scan playable scenes + referenced UI trees for GUID/path leaks.
   const scanTargets = [
     ...PLAYABLE_BUILD_SCENES,
-    `${CODE_NATIVE_UI_ROOT}/Screens/MainTitle.uxml`,
-    `${CODE_NATIVE_UI_ROOT}/Screens/Gameplay.uxml`,
-    `${CODE_NATIVE_UI_ROOT}/Styles/MainTitle.uss`,
-    `${CODE_NATIVE_UI_ROOT}/Styles/Gameplay.uss`,
-    `${CODE_NATIVE_UI_ROOT}/Styles/JanseonShared.uss`,
-    `${CODE_NATIVE_UI_ROOT}/PanelSettings.asset`,
+    `${CODE_NATIVE_UI_ROOT}/UguiHudBuilder.cs`,
+    `${CODE_NATIVE_UI_ROOT}/Presenters/MainTitleUiHost.cs`,
+    `${CODE_NATIVE_UI_ROOT}/Presenters/GameplayUiHost.cs`,
+    `${CODE_NATIVE_UI_ROOT}/Fonts/NanumGothic-Regular.ttf`,
   ];
   if (existsSync(join(repoRoot, runtimeSlotContract.catalog_path))) scanTargets.push(runtimeSlotContract.catalog_path);
 

@@ -1,8 +1,12 @@
 using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Text;
 using Janseon.Core;
+using Janseon.Core.Battle.Contracts;
+using Janseon.Core.Battle.Sim;
+using Janseon.Foundation.UI;
 using NUnit.Framework;
 using UnityEngine;
 
@@ -102,6 +106,90 @@ namespace Janseon.Tests.EditMode
         }
 
         [Test]
+        public void CampaignClock_InspectCancelStayStill_ConfirmedMoveAndRestAdvance()
+        {
+            var graph = Graph();
+            var state = Fresh();
+            var ledger = new Ledger();
+
+            var inspect = GameplayUiSnapshot.FromCampaign(state, null);
+            var cancel = GameplayUiSnapshot.FromCampaign(state, null);
+            Assert.AreEqual(0, state.Tick.Value, "opening/closing the S-map must not advance campaign time");
+            Assert.AreEqual(100, state.Resources, "inspection/cancel must not spend supply");
+            Assert.AreEqual(inspect.ClockText, cancel.ClockText, "cancelled inspection must leave the HUD clock unchanged");
+
+            state = MustState(
+                CampaignApi.Apply(graph, state, ledger, Cmd("clock-depart", CampaignCommandKind.Depart)),
+                "Depart");
+            Assert.AreEqual(0, state.Tick.Value, "departing into the travel surface is not confirmed movement");
+
+            var beforeMoveTick = state.Tick.Value;
+            var beforeMoveSupply = state.Resources;
+            state = MustState(
+                CampaignApi.Apply(
+                    graph,
+                    state,
+                    ledger,
+                    Cmd("clock-move", CampaignCommandKind.Travel, StationId.Sindorim)),
+                "confirmed move");
+            Assert.AreEqual(beforeMoveTick + CampaignApi.ConfirmedMoveTicks, state.Tick.Value);
+            Assert.AreEqual(beforeMoveSupply + CampaignApi.ConfirmedMoveResourceDelta, state.Resources);
+
+            var beforeRestTick = state.Tick.Value;
+            var beforeRestSupply = state.Resources;
+            var rejectedAwayFromHub = CampaignApi.Apply(
+                graph,
+                state,
+                ledger,
+                Cmd("clock-rest-away", CampaignCommandKind.Rest));
+            Assert.IsInstanceOf<CampaignRejection>(rejectedAwayFromHub);
+            Assert.AreEqual(beforeRestTick, state.Tick.Value, "rejected rest must not advance time");
+            Assert.AreEqual(beforeRestSupply, state.Resources, "rejected rest must not spend supply");
+
+            state = MustState(
+                CampaignApi.Apply(graph, state, ledger, Cmd("clock-face", CampaignCommandKind.FaceEncounter)),
+                "face encounter");
+            state = MustState(
+                CampaignApi.Apply(graph, state, ledger, Cmd("clock-enter", CampaignCommandKind.EnterResolution)),
+                "enter resolution");
+            var required = (BattleRequired)CampaignApi.Apply(
+                graph,
+                state,
+                ledger,
+                Cmd("clock-combat", CampaignCommandKind.ChooseCombat));
+            state = MustState(
+                CampaignApi.AttachPendingBattle(state, ledger, required.Context, new CommandId("clock-attach")),
+                "attach battle");
+            var campaignTickBeforeBattleCommand = state.Tick.Value;
+            var battle = BattleSim.Open(BattleSetup.FromContext(required.Context));
+            var battleTickBefore = battle.Tick;
+            BattleSim.Step(battle, new Ledger());
+            Assert.AreEqual(battleTickBefore + 1, battle.Tick);
+            Assert.AreEqual(campaignTickBeforeBattleCommand, state.Tick.Value,
+                "realtime battle ticks must never advance the campaign clock");
+
+            var hub = Fresh();
+            var rested = MustState(
+                CampaignApi.Apply(graph, hub, new Ledger(), Cmd("clock-rest", CampaignCommandKind.Rest)),
+                "hub rest");
+            Assert.AreEqual(hub.Tick.Value + CampaignApi.RestTicks, rested.Tick.Value);
+            Assert.AreEqual(hub.Resources, rested.Resources);
+
+            TestContext.WriteLine("TASK21_INSPECT_BEFORE=0");
+            TestContext.WriteLine("TASK21_INSPECT_AFTER=" + cancel.ClockTick);
+            TestContext.WriteLine("TASK21_MOVE_BEFORE=" + beforeMoveTick);
+            TestContext.WriteLine("TASK21_MOVE_AFTER=" + state.Tick.Value);
+            TestContext.WriteLine("TASK21_MOVE_SUPPLY_BEFORE=" + beforeMoveSupply);
+            TestContext.WriteLine("TASK21_MOVE_SUPPLY_AFTER=" + state.Resources);
+            TestContext.WriteLine("TASK21_BATTLE_CAMPAIGN_BEFORE=" + campaignTickBeforeBattleCommand);
+            TestContext.WriteLine("TASK21_BATTLE_CAMPAIGN_AFTER=" + state.Tick.Value);
+            TestContext.WriteLine("TASK21_BATTLE_LOCAL_BEFORE=" + battleTickBefore);
+            TestContext.WriteLine("TASK21_BATTLE_LOCAL_AFTER=" + battle.Tick);
+            TestContext.WriteLine("TASK21_REST_BEFORE=" + hub.Tick.Value);
+            TestContext.WriteLine("TASK21_REST_AFTER=" + rested.Tick.Value);
+        }
+
+        [Test]
         public void SixStages_NegotiationPath_ReachesBaseReadyWithoutBattle()
         {
             var state = RunNegotiationLoop(out var ledger);
@@ -109,7 +197,9 @@ namespace Janseon.Tests.EditMode
             Assert.AreEqual(CampaignStage.BaseReady, state.Stage);
             Assert.AreEqual(StationId.Yeongdeungpo, state.Node);
             Assert.AreEqual(CampaignApi.ConsequenceNegotiate, state.ConsequenceId);
-            Assert.AreEqual(100 + CampaignApi.NegotiateResourceDelta, state.Resources);
+            Assert.AreEqual(
+                100 + CampaignApi.ConfirmedMoveResourceDelta + CampaignApi.NegotiateResourceDelta,
+                state.Resources);
             Assert.AreEqual(0 + CampaignApi.NegotiateReputationDelta, state.Reputation);
             Assert.IsNull(state.PendingBattle);
             Assert.IsTrue(state.SettlementApplied);
@@ -125,7 +215,9 @@ namespace Janseon.Tests.EditMode
 
             Assert.AreEqual(CampaignStage.BaseReady, bypass.Stage);
             Assert.AreEqual(CampaignApi.ConsequenceBypass, bypass.ConsequenceId);
-            Assert.AreEqual(100 + CampaignApi.BypassResourceDelta, bypass.Resources);
+            Assert.AreEqual(
+                100 + CampaignApi.ConfirmedMoveResourceDelta + CampaignApi.BypassResourceDelta,
+                bypass.Resources);
             Assert.AreEqual(0 + CampaignApi.BypassReputationDelta, bypass.Reputation);
             Assert.IsNull(bypass.PendingBattle);
 
@@ -260,6 +352,77 @@ namespace Janseon.Tests.EditMode
             var h2 = Run();
             Assert.AreEqual(h1, h2);
             Assert.IsFalse(string.IsNullOrEmpty(h1));
+        }
+
+        [Test]
+        public void ChooseCombat_CarriesPartyHpIntoBattleContext()
+        {
+            var graph = Graph();
+            var ledger = new Ledger();
+
+            CampaignState ReachResolutionWith(int allyHp)
+            {
+                var state = Fresh();
+                state = MustState(CampaignApi.Apply(graph, state, ledger, Cmd("hp-depart", CampaignCommandKind.Depart)), "Depart");
+                state = MustState(
+                    CampaignApi.Apply(graph, state, ledger, Cmd("hp-travel", CampaignCommandKind.Travel, StationId.Sindorim)),
+                    "Travel");
+                state = MustState(CampaignApi.Apply(graph, state, ledger, Cmd("hp-face", CampaignCommandKind.FaceEncounter)), "Face");
+                state = MustState(CampaignApi.Apply(graph, state, ledger, Cmd("hp-enter", CampaignCommandKind.EnterResolution)), "Enter");
+                state.PartyHp = new UnitHpSnapshot(new Dictionary<string, int> { [RealtimeBattleApi.PersistentAllyId] = allyHp });
+                return state;
+            }
+
+            var wounded = (BattleRequired)CampaignApi.Apply(
+                graph,
+                ReachResolutionWith(7),
+                ledger,
+                Cmd("hp-combat", CampaignCommandKind.ChooseCombat));
+            Assert.IsTrue(wounded.Context.StartHp.TryGet(RealtimeBattleApi.PersistentAllyId, out var seven));
+            Assert.AreEqual(7, seven, "combat handoff must carry the persistent party HP");
+
+            var unwounded = (BattleRequired)CampaignApi.Apply(
+                graph,
+                ReachResolutionWith(RealtimeBattleApi.PersistentMaxHp),
+                ledger,
+                Cmd("hp-combat", CampaignCommandKind.ChooseCombat));
+            Assert.IsTrue(unwounded.Context.StartHp.TryGet(RealtimeBattleApi.PersistentAllyId, out var ten));
+            Assert.AreEqual(RealtimeBattleApi.PersistentMaxHp, ten, "default party opens full through the same seam");
+            Assert.AreNotEqual(
+                wounded.Context.ContextHash,
+                unwounded.Context.ContextHash,
+                "immutable context integrity must bind the party HP snapshot");
+            Assert.AreNotEqual(
+                wounded.Context.BattleId,
+                unwounded.Context.BattleId,
+                "battle identity must distinguish handoffs that differ only in party HP");
+            Assert.AreEqual(
+                wounded.Context.SeedIdentityHash,
+                unwounded.Context.SeedIdentityHash,
+                "party condition changes content integrity, not the deterministic initiative stream");
+            var woundedBattle = BattleSim.Open(BattleSetup.FromContext(wounded.Context));
+            var unwoundedBattle = BattleSim.Open(BattleSetup.FromContext(unwounded.Context));
+            Assert.AreEqual(
+                woundedBattle.Rng.Fingerprint(),
+                unwoundedBattle.Rng.Fingerprint(),
+                "HP integrity changes must not reroll established realtime RNG");
+            Assert.AreNotEqual(
+                woundedBattle.Fingerprint(),
+                unwoundedBattle.Fingerprint(),
+                "opening fingerprint must distinguish battles that differ only in party HP");
+        }
+
+        [Test]
+        public void CampaignHash_IncludesPartyHp()
+        {
+            var a = Fresh();
+            var b = Fresh();
+            Assert.AreEqual(CampaignApi.ComputeStateHash(a), CampaignApi.ComputeStateHash(b));
+            b.PartyHp = new UnitHpSnapshot(new Dictionary<string, int> { [RealtimeBattleApi.PersistentAllyId] = 7 });
+            Assert.AreNotEqual(
+                CampaignApi.ComputeStateHash(a),
+                CampaignApi.ComputeStateHash(b),
+                "campaign state hash must include the party HP store");
         }
 
         /// <summary>

@@ -8,9 +8,11 @@ namespace Janseon.Foundation.UI
     {
         public const string MainTitleRoot = "main-title-root";
         public const string MainTitleMark = "main-title-mark";
+        public const string MainTitleStationMasterPreset = "main-title-preset-station-master";
         public const string MainTitleStart = "main-title-start";
 
         public const string GameplayRoot = "gameplay-root";
+        public const string ClockLabel = "clock-label";
         public const string StageRail = "stage-rail";
         public const string StageBasePrep = "stage-base-prep";
         public const string StageExpedition = "stage-expedition";
@@ -49,6 +51,15 @@ namespace Janseon.Foundation.UI
         public const string ActionEnterResolution = "action-enter-resolution";
         public const string ActionSettle = "action-settle";
         public const string BattleAdvance = "battle-advance";
+        public const string MobilityRegroup = "card-mobility-regroup";
+        public const string BattleWait = "battle-wait";
+        public const string MissionConsole = "mission-console";
+        public const string HubOvernightCopy = "hub-overnight-copy";
+        public const string HubBulletinPanel = "hub-bulletin-panel";
+        public const string DeployPanel = "deploy-panel";
+        public const string DeployHeading = "deploy-heading";
+
+        public static string DeployToggle(int rosterIndex) => "deploy-toggle-" + rosterIndex;
 
         public const string Res720Class = "jk-res-720";
         public const string Res1080Class = "jk-res-1080";
@@ -59,12 +70,14 @@ namespace Janseon.Foundation.UI
         {
             MainTitleRoot,
             MainTitleMark,
+            MainTitleStationMasterPreset,
             MainTitleStart,
         };
 
         public static readonly string[] GameplayRequired =
         {
             GameplayRoot,
+            ClockLabel,
             StageRail,
             StageBasePrep,
             StageExpedition,
@@ -76,6 +89,9 @@ namespace Janseon.Foundation.UI
             StationYeongdeungpo,
             StationSindorim,
             StationGuro,
+            HubOvernightCopy,
+            HubBulletinPanel,
+            DeployPanel,
             ActionDepart,
             ActionFaceEncounter,
             ActionEnterResolution,
@@ -106,6 +122,9 @@ namespace Janseon.Foundation.UI
 
         public static readonly string[] GameplayFocusOrder =
         {
+            DeployToggle(0),
+            DeployToggle(1),
+            DeployToggle(2),
             ActionDepart,
             StationYeongdeungpo,
             StationSindorim,

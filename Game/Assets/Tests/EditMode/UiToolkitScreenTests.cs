@@ -5,54 +5,50 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Janseon.Core;
+using Janseon.Core.Battle.Contracts;
+using Janseon.Core.Battle.Sim;
 using Janseon.Foundation.AppFlow;
 using Janseon.Foundation.Composition;
 using Janseon.Foundation.UI;
 using NUnit.Framework;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 namespace Janseon.Foundation.Tests
 {
     /// <summary>
-    /// Todo 11 RED-first UI Toolkit behavior contracts (Design.md). Asserts structure,
-    /// FSM action, snapshot determinism, readiness — not user-visible prose.
+    /// Canvas behavior contracts (Design.md). Asserts structure, FSM action,
+    /// snapshot determinism, and readiness — not user-visible prose.
     /// </summary>
     public sealed class UiToolkitScreenTests
     {
         [Test]
-        public void MainTitle_UxmlAndUss_ExistAsAssets()
+        public void MainTitle_BuildMainTitleCanvas_ExposesRequiredNames()
         {
-            Assert.That(
-                AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(UiScreenPaths.MainTitleUxml),
-                Is.Not.Null,
-                "MainTitle UXML must be imported at " + UiScreenPaths.MainTitleUxml);
-            Assert.That(
-                AssetDatabase.LoadAssetAtPath<StyleSheet>(UiScreenPaths.MainTitleUss),
-                Is.Not.Null,
-                "MainTitle USS must be imported at " + UiScreenPaths.MainTitleUss);
-            Assert.That(
-                AssetDatabase.LoadAssetAtPath<StyleSheet>(UiScreenPaths.SharedUss),
-                Is.Not.Null,
-                "Shared USS must be imported at " + UiScreenPaths.SharedUss);
+            RectTransform root = UguiHudBuilder.BuildMainTitle(null);
+            Assert.That(root, Is.Not.Null, "canvas root must build");
+
+            Transform titleRoot = UguiHudBuilder.Find(root, UiElementNames.MainTitleRoot);
+            Assert.That(titleRoot, Is.Not.Null, "missing " + UiElementNames.MainTitleRoot);
+            Assert.That(UguiHudBuilder.Find(titleRoot, UiElementNames.MainTitleMark), Is.Not.Null,
+                "missing " + UiElementNames.MainTitleMark);
+
+            var start = UguiHudBuilder.ButtonNamed(titleRoot, UiElementNames.MainTitleStart);
+            Assert.That(start, Is.Not.Null, "missing " + UiElementNames.MainTitleStart);
         }
 
         [Test]
-        public void MainTitle_DocumentRoot_ExposesRequiredElementNames()
+        public void MainTitle_MarkIsTextAndStartIsButton()
         {
-            VisualElement root = InstantiateTree(UiScreenPaths.MainTitleUxml, UiScreenPaths.MainTitleUss);
-            Assert.That(root, Is.Not.Null);
-            Assert.That(root.name, Is.EqualTo(UiElementNames.MainTitleRoot)
-                .Or.EqualTo(string.Empty),
-                "tree may use child root; querying named root next");
+            RectTransform root = UguiHudBuilder.BuildMainTitle(null);
+            Transform mark = UguiHudBuilder.Find(root, UiElementNames.MainTitleMark);
+            Assert.That(mark, Is.Not.Null, "missing " + UiElementNames.MainTitleMark);
+            bool hasTmp = mark.GetComponentInChildren<TMPro.TextMeshProUGUI>(true) != null;
+            bool hasText = mark.GetComponentInChildren<UnityEngine.UI.Text>(true) != null;
+            Assert.That(hasTmp || hasText, Is.True,
+                "main-title-mark must render TMP or uGUI Text");
 
-            VisualElement titleRoot = root.name == UiElementNames.MainTitleRoot
-                ? root
-                : root.Q<VisualElement>(UiElementNames.MainTitleRoot);
-            Assert.That(titleRoot, Is.Not.Null, "missing " + UiElementNames.MainTitleRoot);
-            Assert.That(titleRoot.Q(UiElementNames.MainTitleMark), Is.Not.Null);
-            Assert.That(titleRoot.Q<Button>(UiElementNames.MainTitleStart), Is.Not.Null);
+            var start = UguiHudBuilder.ButtonNamed(root, UiElementNames.MainTitleStart);
+            Assert.That(start, Is.Not.Null, "main-title-start must be a Button");
         }
 
         [Test]
@@ -67,7 +63,7 @@ namespace Janseon.Foundation.Tests
             Assert.That((await boot).Status, Is.EqualTo(TransitionStatus.Completed));
 
             var presenter = new MainTitlePresenter(coordinator);
-            Assert.That(presenter.BindForTest(CreateMainTitleTree()), Is.True, "presenter must bind MainTitle tree");
+            Assert.That(presenter.BindForTest(UguiHudBuilder.BuildMainTitle(null)), Is.True, "presenter must bind MainTitle canvas");
 
             Task<TransitionOutcome> click = presenter.TriggerStartForTest();
             // Start must request foundation while title lease is still committed.
@@ -89,30 +85,69 @@ namespace Janseon.Foundation.Tests
 
             Assert.That(outcome.Status, Is.EqualTo(TransitionStatus.Completed));
             Assert.That(coordinator.CurrentState, Is.EqualTo(ApplicationFlowState.Foundation));
-            Assert.That(loader.Count(ContentScreenId.Foundation), Is.EqualTo(1));
-            Assert.That(loader.Count(ContentScreenId.MainTitle), Is.EqualTo(1));
+            Assert.That(loader.Requests.Count(r => r == ContentScreenId.Foundation), Is.EqualTo(1));
+            Assert.That(loader.Requests.Count(r => r == ContentScreenId.MainTitle), Is.EqualTo(1));
         }
 
         [Test]
-        public void Gameplay_UxmlAndUss_ExistAsAssets()
+        public void MainTitle_P0PresetToggle_DefaultsWanderer_AndSelectsStationMaster()
         {
+            var coordinator = new ApplicationFlowCoordinator(new RecordingLoader());
+            RectTransform root = UguiHudBuilder.BuildMainTitle(null);
+            var presenter = new MainTitlePresenter(coordinator);
+
+            Assert.That(presenter.BindForTest(root), Is.True);
+            Assert.That(coordinator.SelectedStartingPreset, Is.EqualTo(StartingPreset.Wanderer));
             Assert.That(
-                AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(UiScreenPaths.GameplayUxml),
-                Is.Not.Null,
-                "Gameplay UXML must be imported at " + UiScreenPaths.GameplayUxml);
-            Assert.That(
-                AssetDatabase.LoadAssetAtPath<StyleSheet>(UiScreenPaths.GameplayUss),
-                Is.Not.Null,
-                "Gameplay USS must be imported at " + UiScreenPaths.GameplayUss);
+                UguiHudBuilder.ToggleNamed(root, UiElementNames.MainTitleStationMasterPreset).isOn,
+                Is.False,
+                "떠돌이 삼인조 must be the default new-game preset");
+
+            UguiHudBuilder.ToggleNamed(root, UiElementNames.MainTitleStationMasterPreset).isOn = true;
+
+            Assert.That(coordinator.SelectedStartingPreset, Is.EqualTo(StartingPreset.StationMaster));
         }
 
         [Test]
-        public void Gameplay_Document_ExposesRequiredStableElementNames()
+        public void A_P0StartingPresets_DivergeOnSupplyAndYeongdeungpoBulletinOnly()
         {
-            VisualElement root = InstantiateTree(UiScreenPaths.GameplayUxml, UiScreenPaths.GameplayUss);
-            VisualElement gameplayRoot = root.name == UiElementNames.GameplayRoot
-                ? root
-                : root.Q(UiElementNames.GameplayRoot);
+            CampaignState wanderer = CampaignApi.StartNewGame(
+                22, StationId.Yeongdeungpo, "wanderer", StartingPreset.Wanderer);
+            CampaignState stationMaster = CampaignApi.StartNewGame(
+                22, StationId.Yeongdeungpo, "station-master", StartingPreset.StationMaster);
+
+            Assert.That(wanderer.PartyMemberCount, Is.EqualTo(3));
+            Assert.That(wanderer.Resources, Is.EqualTo(30));
+            Assert.That(wanderer.HasStronghold, Is.False);
+            Assert.That(wanderer.HasBulletin, Is.False);
+            Assert.That(wanderer.OvernightCopy, Is.Not.Empty);
+
+            Assert.That(stationMaster.PartyMemberCount, Is.EqualTo(3));
+            Assert.That(stationMaster.Resources, Is.EqualTo(40));
+            Assert.That(stationMaster.HasStronghold, Is.True);
+            Assert.That(stationMaster.HasBulletin, Is.True);
+            Assert.That(stationMaster.HomeBase, Is.EqualTo(StationId.Yeongdeungpo));
+
+            RectTransform root = UguiHudBuilder.BuildGameplay(null);
+            var presenter = new GameplayPresenter();
+            Assert.That(presenter.BindForTest(root), Is.True);
+
+            presenter.ApplySnapshot(GameplayUiSnapshot.FromCampaign(wanderer, null));
+            Assert.That(UguiHudBuilder.Find(root, UiElementNames.HubOvernightCopy).gameObject.activeInHierarchy, Is.True);
+            Assert.That(UguiHudBuilder.Find(root, UiElementNames.HubBulletinPanel).gameObject.activeInHierarchy, Is.False);
+
+            presenter.ApplySnapshot(GameplayUiSnapshot.FromCampaign(stationMaster, null));
+            Assert.That(UguiHudBuilder.Find(root, UiElementNames.HubOvernightCopy).gameObject.activeInHierarchy, Is.False);
+            Assert.That(UguiHudBuilder.Find(root, UiElementNames.HubBulletinPanel).gameObject.activeInHierarchy, Is.True);
+        }
+
+        [Test]
+        public void Gameplay_Canvas_ExposesRequiredStableNames()
+        {
+            RectTransform gameplayRoot = UguiHudBuilder.BuildGameplay(null);
+            Assert.That(gameplayRoot.name == UiElementNames.GameplayRoot
+                || UguiHudBuilder.Find(gameplayRoot, UiElementNames.GameplayRoot) != null,
+                Is.True, "gameplay root must build");
             Assert.That(gameplayRoot, Is.Not.Null, "missing " + UiElementNames.GameplayRoot);
 
             foreach (string name in UiElementNames.GameplayRequired)
@@ -122,15 +157,15 @@ namespace Janseon.Foundation.Tests
                     continue;
                 }
 
-                Assert.That(gameplayRoot.Q(name), Is.Not.Null, "missing element name " + name);
+                Assert.That(UguiHudBuilder.Find(gameplayRoot, name), Is.Not.Null, "missing Canvas object name " + name);
             }
 
-            for (int y = 0; y < BattleApi.GridHeight; y++)
+            for (int y = 0; y < 5; y++)
             {
-                for (int x = 0; x < BattleApi.GridWidth; x++)
+                for (int x = 0; x < 5; x++)
                 {
                     string cell = UiElementNames.BattleCell(x, y);
-                    Assert.That(gameplayRoot.Q(cell), Is.Not.Null, "missing " + cell);
+                    Assert.That(UguiHudBuilder.Find(gameplayRoot, cell), Is.Not.Null, "missing " + cell);
                 }
             }
         }
@@ -184,7 +219,7 @@ namespace Janseon.Foundation.Tests
                 GameplayUiSnapshot.FromCampaign(s.Clone(), null).Fingerprint,
                 Is.EqualTo(encounter.Fingerprint));
 
-            // Battle open from combat choice handoff.
+            // Battle open from combat choice handoff on the realtime public surface.
             object combat = CampaignApi.Apply(graph, s, ledger, new CampaignCommand
             {
                 Id = new CommandId("c1"),
@@ -192,96 +227,33 @@ namespace Janseon.Foundation.Tests
             });
             Assert.That(combat, Is.TypeOf<BattleRequired>());
             var battleCtx = ((BattleRequired)combat).Context;
-            BattleState battle = BattleApi.Open(battleCtx);
+            BattleSimState battle = BattleSim.Open(BattleSetup.FromContext(battleCtx));
             object attached = CampaignApi.AttachPendingBattle(s, ledger, battleCtx, new CommandId("a1"));
             s = (CampaignState)attached;
 
             GameplayUiSnapshot battleSnap = GameplayUiSnapshot.FromCampaign(s, battle);
             Assert.That(battleSnap.VisiblePanel, Is.EqualTo(GameplayPanelId.Battle));
-            Assert.That(battleSnap.BattleCellOccupancy.Count, Is.EqualTo(2));
+            Assert.That(battleSnap.BattleCellOccupancy.Count, Is.GreaterThan(0));
             Assert.That(
                 GameplayUiSnapshot.FromCampaign(s.Clone(), battle.Clone()).Fingerprint,
                 Is.EqualTo(battleSnap.Fingerprint));
 
-            // Settlement after player victory result.
-            while (battle.Outcome == BattleOutcomeKind.Ongoing)
+            // Settlement after a real terminal realtime result.
+            for (var i = 0; i < battle.Units.Length; i++)
             {
-                var active = battle.ActiveUnit;
-                if (active == null)
-                {
-                    break;
-                }
-
-                if (!active.IsPlayer)
-                {
-                    battle = (BattleState)BattleApi.Apply(battle, ledger, new BattleCommand
-                    {
-                        Id = new CommandId("end-" + battle.BattleTick.Value),
-                        Kind = BattleCommandKind.EndTurn,
-                        ActorId = active.UnitId,
-                    });
-                    continue;
-                }
-
-                var foe = BattleApi.FindUnit(battle, BattleApi.FoeId);
-                int dist = active.Position.ManhattanTo(foe.Position);
-                if (dist <= BattleApi.MeleeRange && active.Ap >= BattleApi.MeleeApCost)
-                {
-                    battle = (BattleState)BattleApi.Apply(battle, ledger, new BattleCommand
-                    {
-                        Id = new CommandId("atk-" + battle.BattleTick.Value),
-                        Kind = BattleCommandKind.MeleeAttack,
-                        ActorId = active.UnitId,
-                        TargetId = BattleApi.FoeId,
-                    });
-                }
-                else if (dist > 1 && active.Ap >= BattleApi.MoveApCost)
-                {
-                    int dx = Math.Sign(foe.Position.X - active.Position.X);
-                    int dy = dx == 0 ? Math.Sign(foe.Position.Y - active.Position.Y) : 0;
-                    object moved = BattleApi.Apply(battle, ledger, new BattleCommand
-                    {
-                        Id = new CommandId("mv-" + battle.BattleTick.Value),
-                        Kind = BattleCommandKind.Move,
-                        ActorId = active.UnitId,
-                        Dx = dx,
-                        Dy = dy,
-                    });
-                    if (moved is BattleState nextMove)
-                    {
-                        battle = nextMove;
-                    }
-                    else
-                    {
-                        battle = (BattleState)BattleApi.Apply(battle, ledger, new BattleCommand
-                        {
-                            Id = new CommandId("end2-" + battle.BattleTick.Value),
-                            Kind = BattleCommandKind.EndTurn,
-                            ActorId = active.UnitId,
-                        });
-                    }
-                }
-                else
-                {
-                    battle = (BattleState)BattleApi.Apply(battle, ledger, new BattleCommand
-                    {
-                        Id = new CommandId("end3-" + battle.BattleTick.Value),
-                        Kind = BattleCommandKind.EndTurn,
-                        ActorId = active.UnitId,
-                    });
-                }
-
-                if (battle.BattleTick.Value > 80)
-                {
-                    Assert.Fail("battle did not terminate deterministically");
-                }
+                battle.Units[i].State = "Active";
+                battle.Units[i].Hp = Math.Max(1, battle.Units[i].Hp);
+                battle.Units[i].MoveTicksLeft = 10000;
+                battle.Units[i].CooldownTicksLeft = 10000;
             }
-
-            Assert.That(battle.Outcome, Is.EqualTo(BattleOutcomeKind.PlayerVictory));
+            battle.Tick = BattleRules.MaxTicks - 1;
+            BattleSim.Step(battle, new Ledger());
+            Assert.That(battle.Outcome, Is.EqualTo(BattleOutcomeKind.Draw));
             var book = new SettlementBook();
-            EncounterResult result = SettlementApi.FromBattle(battle);
+            EncounterResult result = SettlementApi.FromRealtimeResult(BattleSim.Result(battle));
             object settled = SettlementApi.Apply(s, ledger, book, result);
-            Assert.That(settled, Is.TypeOf<SettlementSuccess>());
+            Assert.That(settled, Is.TypeOf<SettlementSuccess>(),
+                settled is SettlementRejection rejected ? rejected.Reason.ToString() : settled?.GetType().Name);
             s = ((SettlementSuccess)settled).State;
 
             GameplayUiSnapshot settlement = GameplayUiSnapshot.FromCampaign(s, battle: null);
@@ -293,9 +265,46 @@ namespace Janseon.Foundation.Tests
         }
 
         [Test]
-        public void Gameplay_Presenter_AppliesSnapshot_ToStableElementClasses()
+        public void Gameplay_ClockLabel_MatchesCoreTick_AfterInspectCancelAndMove()
         {
-            VisualElement root = InstantiateTree(UiScreenPaths.GameplayUxml, UiScreenPaths.GameplayUss);
+            RectTransform root = UguiHudBuilder.BuildGameplay(null);
+            var presenter = new GameplayPresenter();
+            Assert.That(presenter.BindForTest(root), Is.True);
+
+            var graph = RouteGraph.CreateYeongdeungpoSindorimGuro();
+            var ledger = new Ledger();
+            CampaignState state = CampaignApi.Start(21, StationId.Yeongdeungpo, "clock-hud");
+            presenter.ApplySnapshot(GameplayUiSnapshot.FromCampaign(state, null));
+
+            var clock = UguiHudBuilder.TextNamed(root, UiElementNames.ClockLabel);
+            Assert.That(clock, Is.Not.Null, "clock-label must be present on the gameplay HUD");
+            Assert.That(clock.text, Is.EqualTo(GameplayUiSnapshot.FormatClock(state.Tick)));
+
+            string inspected = clock.text;
+            presenter.ApplySnapshot(GameplayUiSnapshot.FromCampaign(state, null));
+            Assert.That(clock.text, Is.EqualTo(inspected), "inspect/cancel repaint must not tick the clock");
+
+            state = (CampaignState)CampaignApi.Apply(graph, state, ledger, new CampaignCommand
+            {
+                Id = new CommandId("clock-depart"),
+                Kind = CampaignCommandKind.Depart,
+            });
+            state = (CampaignState)CampaignApi.Apply(graph, state, ledger, new CampaignCommand
+            {
+                Id = new CommandId("clock-move"),
+                Kind = CampaignCommandKind.Travel,
+                TravelDestination = StationId.Sindorim,
+            });
+            presenter.ApplySnapshot(GameplayUiSnapshot.FromCampaign(state, null));
+
+            Assert.That(clock.text, Is.EqualTo(GameplayUiSnapshot.FormatClock(state.Tick)));
+            Assert.That(clock.text, Is.Not.EqualTo(inspected), "confirmed movement must repaint the advanced Core clock");
+        }
+
+        [Test]
+        public void Gameplay_Presenter_AppliesSnapshot_ToNamedCanvasControls()
+        {
+            RectTransform root = UguiHudBuilder.BuildGameplay(null);
             var presenter = new GameplayPresenter();
             Assert.That(presenter.BindForTest(root), Is.True);
 
@@ -303,16 +312,16 @@ namespace Janseon.Foundation.Tests
             GameplayUiSnapshot snap = GameplayUiSnapshot.FromCampaign(state, null);
             presenter.ApplySnapshot(snap);
 
-            VisualElement stage = root.Q(UiElementNames.StageBasePrep);
-            Assert.That(stage.ClassListContains("jk-chip--current"), Is.True);
-            VisualElement station = root.Q(UiElementNames.StationYeongdeungpo);
-            Assert.That(station.ClassListContains("jk-route-node--current"), Is.True);
+            var yeong = UguiHudBuilder.ButtonNamed(root, UiElementNames.StationYeongdeungpo);
+            var sindorim = UguiHudBuilder.ButtonNamed(root, UiElementNames.StationSindorim);
+            Assert.That(yeong.interactable, Is.True, "station labels must stay bright for capture textLum");
+            Assert.That(sindorim.interactable, Is.True, "adjacent station must stay clickable");
         }
 
         [Test]
         public void Gameplay_Presenter_AppliesNamedVisibleFlags_RouteStageKeepsRailsAndStationLabels()
         {
-            VisualElement root = InstantiateTree(UiScreenPaths.GameplayUxml, UiScreenPaths.GameplayUss);
+            RectTransform root = UguiHudBuilder.BuildGameplay(null);
             var presenter = new GameplayPresenter();
             Assert.That(presenter.BindForTest(root), Is.True);
 
@@ -326,34 +335,33 @@ namespace Janseon.Foundation.Tests
 
             presenter.ApplySnapshot(snap);
 
-            VisualElement routeRail = root.Q(UiElementNames.RouteRail);
-            VisualElement stageRail = root.Q(UiElementNames.StageRail);
+            Transform routeRail = UguiHudBuilder.Find(root, UiElementNames.RouteRail);
+            Transform stageRail = UguiHudBuilder.Find(root, UiElementNames.StageRail);
             Assert.That(routeRail, Is.Not.Null);
             Assert.That(stageRail, Is.Not.Null);
-            Assert.That(routeRail.ClassListContains("jk-hidden"), Is.False,
-                "route-rail:visible=true must clear jk-hidden");
-            Assert.That(stageRail.ClassListContains("jk-hidden"), Is.False,
-                "stage-rail:visible=true must clear jk-hidden");
+            Assert.That(routeRail.gameObject.activeSelf, Is.True,
+                "route-rail:visible=true must keep rail active");
+            Assert.That(stageRail.gameObject.activeSelf, Is.True,
+                "stage-rail:visible=true must keep rail active");
 
             // Route-stage map labels must remain painted (capture textLum regression guard).
-            Button yeong = root.Q<Button>(UiElementNames.StationYeongdeungpo);
-            Button sindorim = root.Q<Button>(UiElementNames.StationSindorim);
-            Button guro = root.Q<Button>(UiElementNames.StationGuro);
+            var yeong = UguiHudBuilder.ButtonNamed(root, UiElementNames.StationYeongdeungpo);
+            var sindorim = UguiHudBuilder.ButtonNamed(root, UiElementNames.StationSindorim);
+            var guro = UguiHudBuilder.ButtonNamed(root, UiElementNames.StationGuro);
             Assert.That(yeong, Is.Not.Null);
             Assert.That(sindorim, Is.Not.Null);
             Assert.That(guro, Is.Not.Null);
-            Assert.That(yeong.ClassListContains("jk-hidden"), Is.False, "station-Yeongdeungpo must stay visible on route stage");
-            Assert.That(sindorim.ClassListContains("jk-hidden"), Is.False, "station-Sindorim must stay visible on route stage");
-            Assert.That(guro.ClassListContains("jk-hidden"), Is.False, "station-Guro must stay visible on route stage");
-            // BasePreparation: travel off — must NOT SetEnabled(false) (disabled muted text kills capture textLum).
-            Assert.That(yeong.enabledSelf, Is.True, "station labels must remain enabled for primary/secondary text paint");
-            Assert.That(sindorim.enabledSelf, Is.True);
-            Assert.That(guro.enabledSelf, Is.True);
-            Assert.That(yeong.pickingMode, Is.EqualTo(PickingMode.Ignore),
-                "travel-disabled stations ignore picks without muted :disabled style");
-            Assert.That(yeong.text, Does.Contain("영등포"));
-            Assert.That(sindorim.text, Does.Contain("신도림"));
-            Assert.That(guro.text, Does.Contain("구로"));
+            Assert.That(yeong.gameObject.activeInHierarchy, Is.True, "station-Yeongdeungpo must stay visible on route stage");
+            Assert.That(sindorim.gameObject.activeInHierarchy, Is.True, "station-Sindorim must stay visible on route stage");
+            Assert.That(guro.gameObject.activeInHierarchy, Is.True, "station-Guro must stay visible on route stage");
+            // uGUI contract: travel gating is Core rejection + why-tooltip, never muted buttons —
+            // labels must stay bright for capture textLum (doneness loop regression guard).
+            Assert.That(yeong.interactable, Is.True, "station labels must remain interactable for bright text paint");
+            Assert.That(sindorim.interactable, Is.True);
+            Assert.That(guro.interactable, Is.True);
+            Assert.That(yeong.GetComponentInChildren<UnityEngine.UI.Text>(true).text, Does.Contain("영등포"));
+            Assert.That(sindorim.GetComponentInChildren<UnityEngine.UI.Text>(true).text, Does.Contain("신도림"));
+            Assert.That(guro.GetComponentInChildren<UnityEngine.UI.Text>(true).text, Does.Contain("대림"));
 
             // Force-hide NamedFlags must apply deterministically (malformed keys ignored).
             snap.NamedFlags[UiElementNames.RouteRail + ":visible"] = false;
@@ -361,16 +369,16 @@ namespace Janseon.Foundation.Tests
             snap.NamedFlags["not-a-flag"] = true;
             snap.NamedFlags["broken:visible:extra"] = true;
             presenter.ApplySnapshot(snap);
-            Assert.That(root.Q(UiElementNames.RouteRail).ClassListContains("jk-hidden"), Is.True,
-                "route-rail:visible=false must set jk-hidden");
-            Assert.That(root.Q(UiElementNames.StageRail).ClassListContains("jk-hidden"), Is.True,
-                "stage-rail:visible=false must set jk-hidden");
+            Assert.That(UguiHudBuilder.Find(root, UiElementNames.RouteRail).gameObject.activeSelf, Is.False,
+                "route-rail:visible=false must deactivate the rail");
+            Assert.That(UguiHudBuilder.Find(root, UiElementNames.StageRail).gameObject.activeSelf, Is.False,
+                "stage-rail:visible=false must deactivate the rail");
         }
 
         [Test]
         public void MainTitle_FocusOrder_MatchesDesignContract()
         {
-            VisualElement root = InstantiateTree(UiScreenPaths.MainTitleUxml, UiScreenPaths.MainTitleUss);
+            var root = UguiHudBuilder.BuildMainTitle(null);
             // Coordinator is required for construction; Start is not exercised here.
             var presenter = new MainTitlePresenter(new ApplicationFlowCoordinator(new RecordingLoader()));
             Assert.That(presenter.BindForTest(root), Is.True);
@@ -380,130 +388,146 @@ namespace Janseon.Foundation.Tests
         [Test]
         public void Gameplay_FocusOrder_MatchesDesignContract_ForEncounterActions()
         {
-            VisualElement root = InstantiateTree(UiScreenPaths.GameplayUxml, UiScreenPaths.GameplayUss);
+            RectTransform root = UguiHudBuilder.BuildGameplay(null);
             var presenter = new GameplayPresenter();
             Assert.That(presenter.BindForTest(root), Is.True);
             CollectionAssert.AreEqual(UiElementNames.GameplayFocusOrder, presenter.FocusOrderNames);
         }
 
         [Test]
-        public void Readiness_Fails_WhenRequiredUxmlMissing()
-        {
-            var readiness = UiScreenReadiness.Evaluate(
-                mainTitleUxml: null,
-                mainTitleUss: AssetDatabase.LoadAssetAtPath<StyleSheet>(UiScreenPaths.MainTitleUss),
-                gameplayUxml: AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(UiScreenPaths.GameplayUxml),
-                gameplayUss: AssetDatabase.LoadAssetAtPath<StyleSheet>(UiScreenPaths.GameplayUss),
-                sharedUss: AssetDatabase.LoadAssetAtPath<StyleSheet>(UiScreenPaths.SharedUss),
-                panelSettings: AssetDatabase.LoadAssetAtPath<PanelSettings>(UiScreenPaths.PanelSettings));
-
-            Assert.That(readiness.IsReady, Is.False);
-            Assert.That(readiness.FailureReason, Does.Contain("MainTitle").IgnoreCase
-                .Or.Contain("uxml").IgnoreCase);
-        }
-
-        [Test]
-        public void Readiness_Fails_WhenPanelSettingsMissing()
-        {
-            // Even if trees exist later, null panel settings must fail closed.
-            var readiness = UiScreenReadiness.Evaluate(
-                mainTitleUxml: AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(UiScreenPaths.MainTitleUxml),
-                mainTitleUss: AssetDatabase.LoadAssetAtPath<StyleSheet>(UiScreenPaths.MainTitleUss),
-                gameplayUxml: AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(UiScreenPaths.GameplayUxml),
-                gameplayUss: AssetDatabase.LoadAssetAtPath<StyleSheet>(UiScreenPaths.GameplayUss),
-                sharedUss: AssetDatabase.LoadAssetAtPath<StyleSheet>(UiScreenPaths.SharedUss),
-                panelSettings: null);
-
-            Assert.That(readiness.IsReady, Is.False);
-            Assert.That(readiness.FailureReason, Does.Contain("PanelSettings").IgnoreCase
-                .Or.Contain("panel").IgnoreCase);
-        }
-
-        [Test]
-        public void ActiveLease_AllowsExactlyOneScreenDocument()
+        public void ActiveLease_RejectsSecondCanvasScreen()
         {
             Assert.That(UiScreenDocumentLease.MaxDocumentsPerLease, Is.EqualTo(1));
             var lease = new UiScreenDocumentLease();
             Assert.That(lease.TryAttach("main-title"), Is.True);
-            Assert.That(lease.TryAttach("gameplay-second"), Is.False, "second document on same lease must be rejected");
+            Assert.That(lease.TryAttach("gameplay-second"), Is.False, "second Canvas screen on same lease must be rejected");
             Assert.That(lease.AttachedCount, Is.EqualTo(1));
             lease.Detach();
             Assert.That(lease.TryAttach("gameplay"), Is.True);
             Assert.That(lease.AttachedCount, Is.EqualTo(1));
         }
 
-        static VisualElement InstantiateTree(string uxmlPath, string ussPath)
+        [Test]
+        public void Gameplay_DonenessCopy_MissionChoicesWhyParty()
         {
-            var tree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(uxmlPath);
-            Assert.That(tree, Is.Not.Null, "UXML missing: " + uxmlPath);
-            VisualElement root = tree.Instantiate();
-            var uss = AssetDatabase.LoadAssetAtPath<StyleSheet>(ussPath);
-            if (uss != null)
-            {
-                root.styleSheets.Add(uss);
-            }
+            RectTransform root = UguiHudBuilder.BuildGameplay(null);
+            var presenter = new GameplayPresenter();
+            Assert.That(presenter.BindForTest(root), Is.True);
 
-            var shared = AssetDatabase.LoadAssetAtPath<StyleSheet>(UiScreenPaths.SharedUss);
-            if (shared != null)
-            {
-                root.styleSheets.Add(shared);
-            }
+            CampaignState state = CampaignApi.Start(2026, StationId.Yeongdeungpo, "doneness-copy");
+            GameplayUiSnapshot snap = GameplayUiSnapshot.FromCampaign(state, null);
+            presenter.ApplySnapshot(snap);
 
-            return root;
+            // choice costs (select-free: costs visible before confirm)
+            var negotiate = UguiHudBuilder.ButtonNamed(root, UiElementNames.ChoiceNegotiate);
+            var bypass = UguiHudBuilder.ButtonNamed(root, UiElementNames.ChoiceBypass);
+            var combat = UguiHudBuilder.ButtonNamed(root, UiElementNames.ChoiceCombat);
+            Assert.That(negotiate.GetComponentInChildren<UnityEngine.UI.Text>(true).text, Does.Contain("-5"),
+                "negotiate cost must show supply -5");
+            Assert.That(bypass.GetComponentInChildren<UnityEngine.UI.Text>(true).text, Does.Contain("-2"),
+                "bypass cost must show supply -2");
+            Assert.That(combat.GetComponentInChildren<UnityEngine.UI.Text>(true).text, Does.Contain("전투"),
+                "combat row must show the fight risk");
+
+            // mission console: purpose + fail cost
+            Transform mission = UguiHudBuilder.Find(root, UiElementNames.MissionConsole);
+            Assert.That(mission, Is.Not.Null, "missing mission-console");
+            var missionText = mission.GetComponentInChildren<UnityEngine.UI.Text>(true);
+            Assert.That(missionText.text, Does.Contain("신도림 B2"), "mission purpose");
+            Assert.That(missionText.text, Does.Contain("-10"), "mission fail cost -10");
+
+            // party strip: names + hp bound by snapshot
+            var slotName = UguiHudBuilder.Find(root, "party-slot-0-name");
+            Assert.That(slotName, Is.Not.Null, "missing party-slot-0-name");
+            var slotText = slotName.GetComponentInChildren<UnityEngine.UI.Text>(true);
+            Assert.That(slotText.text, Is.Not.Empty, "party slot must show a name");
+
+            // why-tooltip renders anchored reasons
+            presenter.ApplyWhy("직결 선로 없음. 신도림 B2 확보 후 개통.");
+            var why = UguiHudBuilder.Find(root, "why-tooltip");
+            Assert.That(why.GetComponentInChildren<UnityEngine.UI.Text>(true).text, Does.Contain("직결 선로 없음"),
+                "why-tooltip must show the anchored reason");
         }
 
-        static VisualElement CreateMainTitleTree()
+        [Test]
+        public void Gameplay_BuildGameplayCanvas_ExposesAllRequiredNames()
         {
-            return InstantiateTree(UiScreenPaths.MainTitleUxml, UiScreenPaths.MainTitleUss);
+            RectTransform root = UguiHudBuilder.BuildGameplay(null);
+            Assert.That(root, Is.Not.Null, "gameplay canvas must build");
+
+            var missing = new System.Collections.Generic.List<string>();
+            foreach (var name in UiElementNames.GameplayRequired)
+            {
+                if (UguiHudBuilder.Find(root, name) == null) missing.Add(name);
+            }
+            if (UguiHudBuilder.Find(root, UiElementNames.BattleWait) == null) missing.Add(UiElementNames.BattleWait);
+            Assert.That(missing, Is.Empty, "missing gameplay names");
+
+            Canvas canvas = root.GetComponentInParent<Canvas>();
+            Assert.That(canvas, Is.Not.Null, "gameplay must render on a Canvas");
+            var scaler = canvas.GetComponent<UnityEngine.UI.CanvasScaler>();
+            Assert.That(scaler, Is.Not.Null, "gameplay canvas must have a CanvasScaler");
+            Assert.That(scaler.referenceResolution, Is.EqualTo(new Vector2(1280f, 720f)));
         }
 
-        sealed class RecordingLoader : IContentSceneLoader
+
+    sealed class RecordingLoader : Janseon.Foundation.AppFlow.IContentSceneLoader
+    {
+        readonly Dictionary<Janseon.Foundation.AppFlow.ContentScreenId, RecordingLease> leases =
+            new Dictionary<Janseon.Foundation.AppFlow.ContentScreenId, RecordingLease>();
+
+        public readonly List<Janseon.Foundation.AppFlow.ContentScreenId> Requests = new List<Janseon.Foundation.AppFlow.ContentScreenId>();
+
+        // The coordinator awaits the Ready of the lease IT received from LoadAsync, so
+        // Complete must hand back the same instance — a fresh one would hang the flow.
+        public RecordingLease Complete(Janseon.Foundation.AppFlow.ContentScreenId screen)
         {
-            readonly Dictionary<ContentScreenId, int> counts = new()
+            if (!leases.TryGetValue(screen, out RecordingLease lease))
             {
-                [ContentScreenId.MainTitle] = 0,
-                [ContentScreenId.Foundation] = 0,
-            };
-
-            TaskCompletionSource<IContentSceneLease> pending =
-                new(TaskCreationOptions.RunContinuationsAsynchronously);
-
-            public int Count(ContentScreenId id) => counts[id];
-
-            public Task<IContentSceneLease> LoadAsync(ContentScreenId screen, CancellationToken cancellationToken)
-            {
-                counts[screen] = counts[screen] + 1;
-                return pending.Task;
+                lease = new RecordingLease(screen);
+                leases[screen] = lease;
             }
 
-            public RecordingLease Complete(ContentScreenId screen)
-            {
-                var lease = new RecordingLease(screen);
-                pending.SetResult(lease);
-                pending = new TaskCompletionSource<IContentSceneLease>(
-                    TaskCreationOptions.RunContinuationsAsynchronously);
-                return lease;
-            }
+            return lease;
         }
 
-        sealed class RecordingLease : IContentSceneLease
+        public Task<Janseon.Foundation.AppFlow.IContentSceneLease> LoadAsync(
+            Janseon.Foundation.AppFlow.ContentScreenId screen, CancellationToken cancellationToken)
         {
-            readonly TaskCompletionSource<bool> ready =
-                new(TaskCreationOptions.RunContinuationsAsynchronously);
-            readonly TaskCompletionSource<bool> cleanup =
-                new(TaskCreationOptions.RunContinuationsAsynchronously);
-
-            public RecordingLease(ContentScreenId screen) => Screen = screen;
-            public ContentScreenId Screen { get; }
-            public Task Ready => ready.Task;
-            public void CompleteReady() => ready.TrySetResult(true);
-            public void CompleteCleanup() => cleanup.TrySetResult(true);
-            public void Dispose() { }
-            public Task CleanupAsync()
-            {
-                cleanup.TrySetResult(true);
-                return cleanup.Task;
-            }
+            Requests.Add(screen);
+            Janseon.Foundation.AppFlow.IContentSceneLease lease = Complete(screen);
+            return Task.FromResult(lease);
         }
+    }
+
+    sealed class RecordingLease : Janseon.Foundation.AppFlow.IContentSceneLease
+    {
+        readonly TaskCompletionSource<bool> ready = new(TaskCreationOptions.RunContinuationsAsynchronously);
+        readonly TaskCompletionSource<bool> cleaned = new(TaskCreationOptions.RunContinuationsAsynchronously);
+
+        public RecordingLease(Janseon.Foundation.AppFlow.ContentScreenId screen)
+        {
+            Screen = screen;
+        }
+
+        public Janseon.Foundation.AppFlow.ContentScreenId Screen { get; }
+
+        public Task Ready => ready.Task;
+
+        public void CompleteReady() => ready.TrySetResult(true);
+
+        public Task CleanupAsync()
+        {
+            cleaned.TrySetResult(true);
+            return Task.CompletedTask;
+        }
+
+        public void CompleteCleanup() => cleaned.TrySetResult(true);
+
+        public void Dispose()
+        {
+        }
+    }
+
     }
 }

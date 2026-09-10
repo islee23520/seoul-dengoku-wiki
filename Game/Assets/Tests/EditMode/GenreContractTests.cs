@@ -18,12 +18,13 @@ namespace Janseon.Foundation.Tests
 
             Assert.That(contract.camera.projection, Is.EqualTo("orthographic"));
             Assert.That(contract.camera.yawDegrees, Is.EqualTo(45f).Within(0.001f));
-            Assert.That(contract.camera.pitchDegrees, Is.EqualTo(35.264f).Within(0.001f));
+            Assert.That(contract.camera.pitchDegrees, Is.EqualTo(26.57f).Within(0.001f));
             Assert.That(contract.camera.allowOrbit, Is.False);
             Assert.That(contract.camera.allowPerspective, Is.False);
             Assert.That(contract.loop.explorationAndCombatShareGrid, Is.True);
             Assert.That(contract.loop.allowedDirections, Is.EqualTo(4));
-            Assert.That(contract.loop.separateRealtimeCombatMode, Is.False);
+            Assert.That(contract.loop.combatResolution, Is.EqualTo("realtime-formation-card"));
+            Assert.That(contract.loop.combatPauseAllowed, Is.True);
         }
 
         [Test]
@@ -90,7 +91,8 @@ namespace Janseon.Foundation.Tests
         {
             public bool explorationAndCombatShareGrid;
             public int allowedDirections;
-            public bool separateRealtimeCombatMode;
+            public string combatResolution = string.Empty;
+            public bool combatPauseAllowed;
         }
 
         [Serializable]

@@ -8,7 +8,6 @@ using UnityEditor.Build.Reporting;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
 
 namespace Janseon.Foundation.Editor
 {
@@ -218,163 +217,73 @@ namespace Janseon.Foundation.Editor
         }
 
         /// <summary>
-        /// Batchmode: create PanelSettings, wire UIDocuments into MainTitle/Foundation scenes.
-        /// Invoked via -executeMethod Janseon.Foundation.Editor.FoundationProjectBuilder.BuildUiToolkitScreens
+        /// <summary>
+        /// uGUI cutover (task 13): scenes no longer carry UIDocument/UXML/PanelSettings.
+        /// Both hosts build runtime Canvases via UguiHudBuilder; the builder only owns
+        /// camera, lights, station props and serialized references.
         /// </summary>
         public static void BuildUiToolkitScreens()
         {
-            Directory.CreateDirectory("Assets/Janseon/Foundation/UI/Screens");
-            Directory.CreateDirectory("Assets/Janseon/Foundation/UI/Styles");
+            EnsureTmpSettings();
+            BuildFoundationScene();
+            Debug.Log("UGUI_SCENES_OK: hosts build runtime canvases; no UIDocument wiring needed.");
+        }
 
-            AssetDatabase.ImportAsset(
-                UiScreenPaths.RootFolder,
-                ImportAssetOptions.ImportRecursive | ImportAssetOptions.ForceUpdate);
-
-            PanelSettings panel = EnsurePanelSettings();
-            VisualTreeAsset mainTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(UiScreenPaths.MainTitleUxml);
-            StyleSheet mainUss = AssetDatabase.LoadAssetAtPath<StyleSheet>(UiScreenPaths.MainTitleUss);
-            StyleSheet sharedUss = AssetDatabase.LoadAssetAtPath<StyleSheet>(UiScreenPaths.SharedUss);
-            VisualTreeAsset gameplayTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(UiScreenPaths.GameplayUxml);
-            StyleSheet gameplayUss = AssetDatabase.LoadAssetAtPath<StyleSheet>(UiScreenPaths.GameplayUss);
-
-            if (mainTree == null || mainUss == null || sharedUss == null || gameplayTree == null || gameplayUss == null || panel == null)
+        /// <summary>
+        /// TMP essentials: without a TMP Settings asset, ugui's delayed importer window
+        /// logs an Error in -nographics batchmode and log-checked tests fail. Create the
+        /// default TMP Settings asset at the documented default path.
+        /// </summary>
+        static void EnsureTmpSettings()
+        {
+            const string dir = "Assets/TextMesh Resources";
+            const string path = dir + "/TMP Settings.asset";
+            if (System.IO.File.Exists(path) && AssetDatabase.LoadAssetAtPath<TMPro.TMP_Settings>(path) != null)
             {
-                throw new System.InvalidOperationException(
-                    "BuildUiToolkitScreens missing UXML/USS/PanelSettings under " + UiScreenPaths.RootFolder);
+                return;
             }
 
-            WireMainTitleScene(panel, mainTree, mainUss, sharedUss);
-            WireFoundationScene(panel, gameplayTree, gameplayUss, sharedUss);
+            const string fontsDir = "Assets/Janseon/Foundation/UI/Fonts";
+            const string fontAssetPath = fontsDir + "/MalgunGothicDynamic.asset";
+            const string spriteAssetPath = fontsDir + "/DefaultSpriteAsset.asset";
+            _ = System.IO.Directory.CreateDirectory(fontsDir);
 
+            TMPro.TMP_FontAsset fontAsset = AssetDatabase.LoadAssetAtPath<TMPro.TMP_FontAsset>(fontAssetPath);
+            if (fontAsset == null)
+            {
+                // Malgun Gothic face data is unavailable in batchmode; the dynamic asset
+                // still satisfies TMP's non-null default-font requirement (task 40 bundles a real ttf).
+                var osFont = Font.CreateDynamicFontFromOSFont("Malgun Gothic", 24);
+                fontAsset = TMPro.TMP_FontAsset.CreateFontAsset(osFont);
+                fontAsset.name = "MalgunGothicDynamic";
+                AssetDatabase.CreateAsset(fontAsset, fontAssetPath);
+                Debug.Log("TMP_FONT_OK created " + fontAssetPath);
+            }
+
+            TMPro.TMP_SpriteAsset spriteAsset = AssetDatabase.LoadAssetAtPath<TMPro.TMP_SpriteAsset>(spriteAssetPath);
+            if (spriteAsset == null)
+            {
+                spriteAsset = TMPro.TMP_SpriteAsset.CreateInstance<TMPro.TMP_SpriteAsset>();
+                spriteAsset.name = "DefaultSpriteAsset";
+                AssetDatabase.CreateAsset(spriteAsset, spriteAssetPath);
+                Debug.Log("TMP_SPRITE_OK created " + spriteAssetPath);
+            }
+
+            TMPro.TMP_Settings settings = AssetDatabase.LoadAssetAtPath<TMPro.TMP_Settings>(path);
+            if (settings == null)
+            {
+                settings = TMPro.TMP_Settings.CreateInstance<TMPro.TMP_Settings>();
+                AssetDatabase.CreateAsset(settings, path);
+            }
+
+            var so = new UnityEditor.SerializedObject(settings);
+            so.FindProperty("m_defaultFontAsset").objectReferenceValue = fontAsset;
+            so.FindProperty("m_defaultSpriteAsset").objectReferenceValue = spriteAsset;
+            so.ApplyModifiedPropertiesWithoutUndo();
             AssetDatabase.SaveAssets();
-            AssetDatabase.Refresh();
-            Debug.Log("UI_TOOLKIT_SCENES_OK PanelSettings + MainTitle/Foundation UIDocuments wired.");
+            Debug.Log("TMP_SETTINGS_OK wired " + path);
         }
 
-        static PanelSettings EnsurePanelSettings()
-        {
-            PanelSettings existing = AssetDatabase.LoadAssetAtPath<PanelSettings>(UiScreenPaths.PanelSettings);
-            if (existing != null)
-            {
-                existing.scaleMode = PanelScaleMode.ScaleWithScreenSize;
-                existing.referenceResolution = new Vector2Int(1280, 720);
-                existing.screenMatchMode = PanelScreenMatchMode.MatchWidthOrHeight;
-                existing.match = 0.5f;
-                EditorUtility.SetDirty(existing);
-                return existing;
-            }
-
-            var panel = ScriptableObject.CreateInstance<PanelSettings>();
-            panel.scaleMode = PanelScaleMode.ScaleWithScreenSize;
-            panel.referenceResolution = new Vector2Int(1280, 720);
-            panel.screenMatchMode = PanelScreenMatchMode.MatchWidthOrHeight;
-            panel.match = 0.5f;
-            AssetDatabase.CreateAsset(panel, UiScreenPaths.PanelSettings);
-            return panel;
-        }
-
-        static void WireMainTitleScene(
-            PanelSettings panel,
-            VisualTreeAsset tree,
-            StyleSheet mainUss,
-            StyleSheet sharedUss)
-        {
-            Scene scene = EditorSceneManager.OpenScene(FoundationScenes.MainTitle, OpenSceneMode.Single);
-            MainTitleLifetimeScope scope = Object.FindFirstObjectByType<MainTitleLifetimeScope>();
-            if (scope == null)
-            {
-                GameObject scopeObject = new("MainTitle Lifetime Scope");
-                scope = scopeObject.AddComponent<MainTitleLifetimeScope>();
-            }
-
-            GameObject go = scope.gameObject;
-            UIDocument doc = go.GetComponent<UIDocument>();
-            if (doc == null)
-            {
-                doc = go.AddComponent<UIDocument>();
-            }
-
-            doc.panelSettings = panel;
-            doc.visualTreeAsset = tree;
-
-            MainTitleUiHost existingHost = go.GetComponent<MainTitleUiHost>();
-            if (existingHost != null)
-            {
-                Object.DestroyImmediate(existingHost);
-            }
-
-            MainTitleUiHost host = go.AddComponent<MainTitleUiHost>();
-            SetSerializedField(host, "document", doc);
-            SetSerializedField(host, "visualTree", tree);
-            SetSerializedField(host, "mainStyle", mainUss);
-            SetSerializedField(host, "sharedStyle", sharedUss);
-            SetSerializedField(host, "panelSettings", panel);
-            EditorUtility.SetDirty(host);
-            EditorUtility.SetDirty(go);
-
-            EditorSceneManager.MarkSceneDirty(scene);
-            if (!EditorSceneManager.SaveScene(scene, FoundationScenes.MainTitle))
-            {
-                throw new System.InvalidOperationException("Failed to save MainTitle scene with UI host refs.");
-            }
-        }
-
-        static void WireFoundationScene(
-            PanelSettings panel,
-            VisualTreeAsset tree,
-            StyleSheet gameplayUss,
-            StyleSheet sharedUss)
-        {
-            Scene scene = EditorSceneManager.OpenScene(FoundationScenes.Foundation, OpenSceneMode.Single);
-            FoundationLifetimeScope scope = Object.FindFirstObjectByType<FoundationLifetimeScope>();
-            if (scope == null)
-            {
-                GameObject scopeObject = new("Foundation Lifetime Scope");
-                scope = scopeObject.AddComponent<FoundationLifetimeScope>();
-            }
-
-            GameObject go = scope.gameObject;
-            UIDocument doc = go.GetComponent<UIDocument>();
-            if (doc == null)
-            {
-                doc = go.AddComponent<UIDocument>();
-            }
-
-            doc.panelSettings = panel;
-            doc.visualTreeAsset = tree;
-
-            GameplayUiHost existingHost = go.GetComponent<GameplayUiHost>();
-            if (existingHost != null)
-            {
-                Object.DestroyImmediate(existingHost);
-            }
-
-            GameplayUiHost host = go.AddComponent<GameplayUiHost>();
-            SetSerializedField(host, "document", doc);
-            SetSerializedField(host, "visualTree", tree);
-            SetSerializedField(host, "gameplayStyle", gameplayUss);
-            SetSerializedField(host, "sharedStyle", sharedUss);
-            SetSerializedField(host, "panelSettings", panel);
-            EditorUtility.SetDirty(host);
-            EditorUtility.SetDirty(go);
-
-            // Fail closed if reflection assignment did not stick before save.
-            var so = new SerializedObject(host);
-            so.Update();
-            if (so.FindProperty("visualTree").objectReferenceValue == null
-                || so.FindProperty("gameplayStyle").objectReferenceValue == null)
-            {
-                throw new System.InvalidOperationException(
-                    "Foundation GameplayUiHost visualTree/gameplayStyle still null after assignment. "
-                    + "tree=" + (tree != null) + " uss=" + (gameplayUss != null));
-            }
-
-            EditorSceneManager.MarkSceneDirty(scene);
-            if (!EditorSceneManager.SaveScene(scene, FoundationScenes.Foundation))
-            {
-                throw new System.InvalidOperationException("Failed to save Foundation scene with UI host refs.");
-            }
-        }
 
         static void SetSerializedField(object target, string fieldName, UnityEngine.Object value)
         {
@@ -529,7 +438,12 @@ namespace Janseon.Foundation.Editor
         {
             Scene scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
             GameObject scopeObject = new("MainTitle Lifetime Scope");
-            scopeObject.AddComponent<MainTitleLifetimeScope>();
+            MainTitleLifetimeScope scope = scopeObject.AddComponent<MainTitleLifetimeScope>();
+            AssignRuntimeSlotCatalog(scope);
+
+            GameObject hostObject = new("MainTitle UI Host");
+            hostObject.AddComponent<MainTitleUiHost>();
+
             EditorSceneManager.SaveScene(scene, FoundationScenes.MainTitle);
         }
 
@@ -537,7 +451,11 @@ namespace Janseon.Foundation.Editor
         {
             Scene scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
             GameObject scopeObject = new("Foundation Lifetime Scope");
-            scopeObject.AddComponent<FoundationLifetimeScope>();
+            FoundationLifetimeScope scope = scopeObject.AddComponent<FoundationLifetimeScope>();
+            AssignRuntimeSlotCatalog(scope);
+
+            GameObject hostObject = new("Gameplay UI Host");
+            GameplayUiHost host = hostObject.AddComponent<GameplayUiHost>();
 
             GameObject cameraObject = new("Isometric Camera");
             Camera camera = cameraObject.AddComponent<Camera>();
@@ -550,6 +468,7 @@ namespace Janseon.Foundation.Editor
                 0f);
             camera.clearFlags = CameraClearFlags.SolidColor;
             camera.backgroundColor = new Color(0.043f, 0.067f, 0.118f, 1f);
+            SetSerializedField(host, "stationCamera", camera);
 
             GameObject lightObject = new("Foundation Light");
             Light light = lightObject.AddComponent<Light>();
@@ -558,6 +477,21 @@ namespace Janseon.Foundation.Editor
             light.transform.rotation = Quaternion.Euler(50f, -30f, 0f);
 
             EditorSceneManager.SaveScene(scene, FoundationScenes.Foundation);
+        }
+
+        private static void AssignRuntimeSlotCatalog(MonoBehaviour scope)
+        {
+            const string catalogPath = "Assets/Janseon/Foundation/Art/RuntimeSlotCatalog.asset";
+            Janseon.Foundation.Art.RuntimeSlotCatalog catalog =
+                AssetDatabase.LoadAssetAtPath<Janseon.Foundation.Art.RuntimeSlotCatalog>(catalogPath);
+            if (catalog == null)
+            {
+                throw new System.InvalidOperationException("RuntimeSlotCatalog asset missing at " + catalogPath);
+            }
+
+            SerializedObject serializedScope = new(scope);
+            serializedScope.FindProperty("runtimeSlots").objectReferenceValue = catalog;
+            serializedScope.ApplyModifiedPropertiesWithoutUndo();
         }
 
         [MenuItem("Janseon/Build WebGL Player")]

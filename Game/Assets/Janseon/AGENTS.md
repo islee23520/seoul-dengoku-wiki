@@ -9,7 +9,7 @@ Production domains, Unity composition, and art import boundary; score 8, distinc
 | Typed IDs, RNG, replay primitives | `Core/DeterministicCore.cs` | `CoreApi`, `PurposeRng`, request index and ledger |
 | Travel graph | `Core/RouteDomain.cs` | `RouteApi`, station identifiers and traversal |
 | Campaign stages | `Core/CampaignDomain.cs` | `CampaignApi`, encounter choices and battle handoff |
-| Grid combat | `Core/BattleDomain.cs` | `BattleApi`, cardinal commands, battle state |
+| Realtime formation/card combat | `Core/Battle/` | `BattleSim`, tick commands, cards, terrain-aware arena state |
 | Exact-once settlement | `Core/SettlementDomain.cs` | `SettlementApi`, result IDs and receipts |
 | Screen transitions | `Foundation/AppFlow/` | State machine, coordinator, loader/lease interfaces |
 | DI and scene lifetime | `Foundation/Composition/` | App scope, content scopes, Unity loader |

@@ -43,8 +43,9 @@
 - 전체 16국·412인 캠페인, 하루/주간 경제·외교·공성
 - 파일 저장/불러오기, 시네마틱, 음성·음악
 - 네 번째 gameplay scene, Title+Foundation 동시 유지, 두 번째 scene-load 권한
-- 카메라 회전·원근·대각 이동·실시간 전투
+- 카메라 회전·원근·대각 이동
+- 실시간 진형·카드 전투 구현 — 2026-09-07 결정(Intent.md 결정 3)으로 **다음 모듈**로 지정됐으나 이 모듈의 범위가 아니다. 현재 POC의 턴제 격자 규칙(8번)은 그때까지 과도 상태로 유지한다
 - Addressables, Entities, Cinemachine, LitMotion, TMP, uLoop
 - 무검수 생성 에셋, 공식 TRELLIS v1 외 임의 유료 3D 대체
 
-다음 모듈은 위 체크리스트가 모두 끝나고 현재 변경이 테스트된 뒤에만 선택합니다.
+다음 모듈은 위 체크리스트가 모두 끝나고 현재 변경이 테스트된 뒤에만 착수합니다. 다음 모듈은 `실시간 진형·카드 전투 코어`로 지정되어 있습니다([개발 로드맵](docs/game-logic/Development-Roadmap.md) 6번, [Intent.md](Intent.md) 결정 3).

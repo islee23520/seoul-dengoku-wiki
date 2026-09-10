@@ -2,14 +2,15 @@
   "camera": {
     "projection": "orthographic",
     "yawDegrees": 45.0,
-    "pitchDegrees": 35.264,
+    "pitchDegrees": 26.57,
     "allowOrbit": false,
     "allowPerspective": false
   },
   "loop": {
     "explorationAndCombatShareGrid": true,
     "allowedDirections": 4,
-    "separateRealtimeCombatMode": false
+    "combatResolution": "realtime-formation-card",
+    "combatPauseAllowed": true
   },
   "silhouette": {
     "headsTall": 2.5,
