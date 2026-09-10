@@ -27,8 +27,8 @@
 
 ## 다음 검증 단계 (순서 의존)
 
-1. 시각 수용 — 타이틀(#8)과 UI kit·아이콘·타일(#23)의 4축 독립 재심사와 소유자 육안 승인. COMPOSITION·PRODUCT_POLISH raw FAIL은 면제 없음. 캐릭터는 기존 placeholder가 폐기됐으므로 TOS식 SD 재작업(#56)이 선행된다
-2. UI 전환 — UI Toolkit 구현을 uGUI로 마이그레이션(#55, Design.md 2026-09-06 개정). 안정 요소 이름·씬 흐름·결정론 계약 유지
+1. 시각 수용 — 타이틀(#8)과 UI kit·아이콘·타일(#23)의 4축 독립 재심사와 소유자 육안 승인. COMPOSITION·PRODUCT_POLISH raw FAIL은 면제 없음. 캐릭터는 기존 placeholder가 폐기됐으므로 TOS식 SD 재작업(#58)이 선행된다
+2. UI 전환 — UI Toolkit 구현을 uGUI로 마이그레이션(#59, Design.md 2026-09-06 개정). 안정 요소 이름·씬 흐름·결정론 계약 유지
 3. 슬롯 연결(ToDo 16, #26) — 승격된 에셋만 uGUI 런타임 슬롯에 연결하고 임시 비주얼 제거
 4. 최종 수용 게이트(ToDo 17, #27) — 아키텍처 게이트, batchmode PlayMode 전 경로, 4축 시각 PASS, BOM fail-closed, 동일 Unity revision macOS Development player smoke, 임시 리소스 cleanup receipt를 한 번에 통과
 5. 서사·협업 후속(#41) — 외부 기여자와의 서사 디렉션 역할·경계 합의
