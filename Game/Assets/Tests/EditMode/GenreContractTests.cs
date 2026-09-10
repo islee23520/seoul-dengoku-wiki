@@ -18,7 +18,7 @@ namespace Janseon.Foundation.Tests
 
             Assert.That(contract.camera.projection, Is.EqualTo("orthographic"));
             Assert.That(contract.camera.yawDegrees, Is.EqualTo(45f).Within(0.001f));
-            Assert.That(contract.camera.pitchDegrees, Is.EqualTo(26.57f).Within(0.001f));
+            Assert.That(contract.camera.pitchDegrees, Is.EqualTo(35.264f).Within(0.001f));
             Assert.That(contract.camera.allowOrbit, Is.False);
             Assert.That(contract.camera.allowPerspective, Is.False);
             Assert.That(contract.loop.explorationAndCombatShareGrid, Is.True);
@@ -54,6 +54,12 @@ namespace Janseon.Foundation.Tests
             Assert.That(Mathf.DeltaAngle(camera.transform.eulerAngles.y, Janseon.Foundation.GenreContract.CameraYawDegrees), Is.EqualTo(0f).Within(0.01f));
             Assert.That(Mathf.DeltaAngle(camera.transform.eulerAngles.x, Janseon.Foundation.GenreContract.CameraPitchDegrees), Is.EqualTo(0f).Within(0.01f));
             Assert.That(scene.path, Is.EqualTo(scenePath));
+        }
+
+        [Test]
+        public void CameraPitchDegreesIsLockedAtTrueIsometric35_264()
+        {
+            Assert.That(Janseon.Foundation.GenreContract.CameraPitchDegrees, Is.EqualTo(35.264f).Within(0.001f));
         }
 
         private static GenreContract ReadContract()
