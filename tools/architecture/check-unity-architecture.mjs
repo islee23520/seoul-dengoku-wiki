@@ -52,6 +52,7 @@ for (const absolutePath of runtimeFiles) {
     forbid(source, /\b(?:GameObject\.Find|FindObjectOfType|FindFirstObjectByType|FindAnyObjectByType)\s*\(/g, path, 'RUNTIME_OBJECT_SEARCH');
     forbid(source, /\bstatic\s+(?!class\b)(?!readonly\b)[^;=\n]+\b(?:Instance|Current)\b/g, path, 'MUTABLE_STATIC_SERVICE_LOCATOR');
     forbid(source, /\bContainer\.Resolve\s*</g, path, 'SERVICE_LOCATOR_RESOLVE');
+    forbid(source, /using\s+UnityEngine\.UIElements\b|\bUIDocument\b|\bVisualElement\b/g, path, 'UI_TOOLKIT_BANNED');
   }
 
   if (engineFreeSegments.some((segment) => path.includes(segment))) {
