@@ -29,6 +29,7 @@
 | [십육국 핵심 인물](Core-Characters.md) | 국가별 핵심 인물의 성격, 야망, 공포와 촉발 사건 |
 | [인물 총람](Cast-Index.md) · [관계 원장](Cast-Relations.md) | 16국 인물 412명과 인물 사이 관계 원장 |
 | [야망과 관계가 움직이는 정치](Ambitions-and-Relations.md) | 이름 있는 인물이 동맹, 배신, 전쟁과 계승을 만드는 규칙 |
+| [후계, 이름 로스터, 세계 원장](Heirs-Names-and-World-Ledger.md) | 문화 성명 풀에서 후계를 만들고, 면담·거래가 세계 사건에 쌓이는 규칙 |
 | [시나리오 타임라인](Scenario-Timeline.md) | 붕괴 이전부터 패권전까지 조건에 따라 갈라지는 연대기 |
 | [이동과 조우](Travel-and-Encounters.md) | 4방향 행동과 원정 위험 |
 | [실시간 진형·카드 전투](Realtime-Formation-Card-Battle.md) | 같은 격자에서 이어지는 실시간 진형·카드 전투 (2026-09-07 방향 전환) |
