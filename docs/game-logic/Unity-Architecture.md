@@ -14,20 +14,18 @@
 - `Bootstrap.unity` App scope와 FSM, `Foundation.unity` 화면 child scope
 - 단일 scene-load 권한과 정적 아키텍처 게이트
 
-다음 모듈 `Unity POC 통합 코어 루프`는 MainTitle 화면과 결정론적 세 역 코어 루프를 이 기반 위에 추가합니다. 그 구현은 아직 시작하지 않았습니다.
+이 기반 위에 `Unity POC 통합 코어 루프`가 실렸습니다. `MainTitle` 화면 lease, 세 역 노선, 교섭·우회, 30Hz 실시간 진형·카드 전투(`rtfc-owner-cards-v2`), 정확히 한 번 정산, uGUI HUD가 `Janseon.Core`와 `Janseon.Foundation`에 있습니다. 생성 아트 슬롯·16국 캠페인·집계 사상자 표현은 아직 완료가 아닙니다.
 
 ## 영역별 책임
 
+현재 저장소 어셈블리는 `Janseon.Core`(엔진 금지), `Janseon.Foundation`, `Janseon.Data`, `Janseon.Art`입니다. 전투 계약과 시뮬레이션은 Core 안의 `Battle.Contracts`·`Battle.Sim` 네임스페이스이고, 별도 `Janseon.Battle` 어셈블리는 없습니다.
+
 | 모듈 | 책임 | UnityEngine 참조 |
 |---|---|---|
-| `Janseon.Core` | ID, 시간, 명령, 사건 | 금지 |
-| `Janseon.WorldGraph` | 다층 지도와 출처 | 금지 |
-| `Janseon.Battle.Contracts` | 전투 입력·결과 | 금지 |
-| `Janseon.Battle` | SRPG 규칙 | 금지 |
-| `Janseon.Sim` | 캠페인 시뮬레이션 | 금지 |
+| `Janseon.Core` | ID, 시간, 명령, 사건, 노선, 캠페인, 정산, 실시간 진형·카드 전투 | 금지 |
 | `Janseon.Data` | Unity 저작 데이터 | 허용 |
-| `Janseon.Presentation` | 화면, 입력, 사운드 | 허용 |
-| `Janseon.App` | 조립, 씬, 저장 연결 | 허용 |
+| `Janseon.Foundation` | 씬 흐름, 화면, uGUI, 전투 드라이버 | 허용 |
+| `Janseon.Art` | 런타임 슬롯·후보 | 허용 |
 
 ## 규칙
 

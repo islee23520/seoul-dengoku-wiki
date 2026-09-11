@@ -16,8 +16,11 @@ namespace Janseon.Foundation.Battle
         public static readonly Color IllegalRed = new Color32(0xcf, 0x62, 0x58, 0xff);
         public const string LocalReviewSpriteResource = "LocalReview/ally-guard-1-local-review";
         public const string LocalReviewCommanderUnitId = "ally-guard-1";
-        const float LocalReviewCellPixels = 128f;
+        const float LocalReviewCellPixels = 64f;
+        const int LocalReviewWalkFrames = 8;
+        const int LocalReviewIdleRows = 4;
         readonly Dictionary<UnitId, Transform> units = new Dictionary<UnitId, Transform>();
+        readonly Dictionary<int, Sprite> localReviewSprites = new Dictionary<int, Sprite>();
         readonly List<UnityEngine.Object> owned = new List<UnityEngine.Object>();
         readonly Transform[] arrows = new Transform[4];
         readonly bool[] legalDirections = new bool[4];
@@ -152,10 +155,20 @@ namespace Janseon.Foundation.Battle
                     units.Add(unit.Id, token);
                 }
                 token.position = CellWorld(unit.Cell);
-                token.rotation = Quaternion.LookRotation(Direction(unit.Facing));
                 Transform localReview = token.Find("LocalReviewSprite");
-                if (localReview != null && ViewCamera != null)
-                    localReview.rotation = Quaternion.LookRotation(-ViewCamera.transform.forward, Vector3.up);
+                if (localReview != null)
+                {
+                    token.rotation = Quaternion.identity;
+                    if (ViewCamera != null)
+                        localReview.rotation = Quaternion.LookRotation(-ViewCamera.transform.forward, Vector3.up);
+                    var renderer = localReview.GetComponent<SpriteRenderer>();
+                    if (renderer != null)
+                        renderer.sprite = LocalReviewFrame(unit, battle.Tick);
+                }
+                else
+                {
+                    token.rotation = Quaternion.LookRotation(Direction(unit.Facing));
+                }
                 token.gameObject.SetActive(unit.Hp > 0 && unit.State != "Down");
             }
             var currentIds = new HashSet<UnitId>();
@@ -250,20 +263,49 @@ namespace Janseon.Foundation.Battle
         bool TryBindLocalReviewSprite(Transform token, UnitState unit)
         {
             if (!UsesLocalReviewSprite(unit)) return false;
-            Texture2D texture = Resources.Load<Texture2D>(LocalReviewSpriteResource);
-            if (texture == null) return false;
-            Rect rect = texture.width >= LocalReviewCellPixels && texture.height >= LocalReviewCellPixels
-                ? new Rect(0f, texture.height - LocalReviewCellPixels, LocalReviewCellPixels, LocalReviewCellPixels)
-                : new Rect(0f, 0f, texture.width, texture.height);
-            Sprite sprite = Sprite.Create(texture, rect, new Vector2(0.5f, 0f), LocalReviewCellPixels / 1.2f);
-            owned.Add(sprite);
+            if (!EnsureLocalReviewSprites()) return false;
             var spriteObject = new GameObject("LocalReviewSprite", typeof(SpriteRenderer));
             spriteObject.transform.SetParent(token, false);
             spriteObject.transform.localPosition = new Vector3(0f, 0.02f, 0f);
             var renderer = spriteObject.GetComponent<SpriteRenderer>();
-            renderer.sprite = sprite;
+            renderer.sprite = LocalReviewFrame(unit, 0);
             renderer.color = Color.white;
             return true;
+        }
+
+        bool EnsureLocalReviewSprites()
+        {
+            if (localReviewSprites.Count > 0) return true;
+            Texture2D texture = Resources.Load<Texture2D>(LocalReviewSpriteResource);
+            if (texture == null) return false;
+            float pixelsPerUnit = LocalReviewCellPixels / 1.2f;
+            Vector2 pivot = new Vector2(0.5f, 48.5f / LocalReviewCellPixels);
+            for (int row = 0; row < 8; row++)
+            {
+                int frames = row < LocalReviewIdleRows ? 1 : LocalReviewWalkFrames;
+                for (int col = 0; col < frames; col++)
+                {
+                    float y = texture.height - (row + 1) * LocalReviewCellPixels;
+                    var rect = new Rect(col * LocalReviewCellPixels, y, LocalReviewCellPixels, LocalReviewCellPixels);
+                    Sprite sprite = Sprite.Create(texture, rect, pivot, pixelsPerUnit);
+                    owned.Add(sprite);
+                    localReviewSprites[row * LocalReviewWalkFrames + col] = sprite;
+                }
+            }
+            return true;
+        }
+
+        Sprite LocalReviewFrame(UnitState unit, int walkPhase)
+        {
+            int facingRow = unit.Facing == CardinalDirection.East ? 1
+                : unit.Facing == CardinalDirection.North ? 2
+                : unit.Facing == CardinalDirection.West ? 3
+                : 0;
+            bool walking = unit.OrderKind == BattleOrderKind.Move;
+            int row = walking ? facingRow + LocalReviewIdleRows : facingRow;
+            int col = walking ? ((walkPhase % LocalReviewWalkFrames) + LocalReviewWalkFrames) % LocalReviewWalkFrames : 0;
+            Sprite sprite;
+            return localReviewSprites.TryGetValue(row * LocalReviewWalkFrames + col, out sprite) ? sprite : null;
         }
 
         bool Anchor(Transform ring, UnitId id)

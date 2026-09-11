@@ -807,7 +807,7 @@ namespace Janseon.Foundation.UI
                 return null;
             }
 
-            const float cell = 128f;
+            const float cell = 64f;
             Rect rect = texture.width >= cell && texture.height >= cell
                 ? new Rect(0f, texture.height - cell, cell, cell)
                 : new Rect(0f, 0f, texture.width, texture.height);
