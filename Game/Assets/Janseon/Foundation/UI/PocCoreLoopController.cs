@@ -32,6 +32,7 @@ namespace Janseon.Foundation.UI
         Ledger battleLedger;
         SettlementBook book;
         BattleSimState battle;
+        FormationSlot[] pendingFormation;
         int commandSeq;
         bool wired;
         bool disposed;
@@ -51,6 +52,7 @@ namespace Janseon.Foundation.UI
 
         public CampaignState Campaign => campaign;
         public BattleSimState Battle => battle;
+        public OwnerCardTargetingMachine Targeting { get; private set; }
         public Ledger CampaignLedger => campaignLedger;
         public Ledger BattleLedger => battleLedger;
         public bool BattlePaused => battleDriver.Paused;
@@ -116,6 +118,9 @@ namespace Janseon.Foundation.UI
             battleLedger = new Ledger();
             book = new SettlementBook();
             battle = null;
+            Targeting?.Cancel();
+            Targeting = null;
+            pendingFormation = null;
             battleDriver.Detach();
             LastReceipt = null;
             LastDuplicateReceipt = null;
@@ -147,7 +152,14 @@ namespace Janseon.Foundation.UI
             presenter.NegotiateChosen += OnNegotiate;
             presenter.BypassChosen += OnBypass;
             presenter.CombatChosen += OnCombat;
-            presenter.BattleAdvanceChosen += OnBattleAdvance;
+            presenter.BattlePlayPauseChosen += OnBattlePlayPause;
+            presenter.BattleResetChosen += OnBattleReset;
+            presenter.CardGeneralUseChosen += OnCardGeneralUse;
+            presenter.FormationSwapFrontChosen += OnFormationSwapFront;
+            presenter.EditFormationChosen += OnEditFormation;
+            presenter.FormationEditConfirmChosen += OnFormationEditConfirm;
+            presenter.FormationEditCancelChosen += OnFormationEditCancel;
+            presenter.FormationEditFacingChosen += OnFormationEditFacing;
             presenter.MobilityRegroupChosen += OnMobilityRegroup;
             presenter.SettleChosen += OnSettle;
             presenter.ReturnChosen += OnReturn;
@@ -169,7 +181,14 @@ namespace Janseon.Foundation.UI
             presenter.NegotiateChosen -= OnNegotiate;
             presenter.BypassChosen -= OnBypass;
             presenter.CombatChosen -= OnCombat;
-            presenter.BattleAdvanceChosen -= OnBattleAdvance;
+            presenter.BattlePlayPauseChosen -= OnBattlePlayPause;
+            presenter.BattleResetChosen -= OnBattleReset;
+            presenter.CardGeneralUseChosen -= OnCardGeneralUse;
+            presenter.FormationSwapFrontChosen -= OnFormationSwapFront;
+            presenter.EditFormationChosen -= OnEditFormation;
+            presenter.FormationEditConfirmChosen -= OnFormationEditConfirm;
+            presenter.FormationEditCancelChosen -= OnFormationEditCancel;
+            presenter.FormationEditFacingChosen -= OnFormationEditFacing;
             presenter.MobilityRegroupChosen -= OnMobilityRegroup;
             presenter.SettleChosen -= OnSettle;
             presenter.ReturnChosen -= OnReturn;
@@ -268,21 +287,7 @@ namespace Janseon.Foundation.UI
                 if (attached is CampaignState next)
                 {
                     campaign = next;
-                    battleLedger = new Ledger();
-                    var setup = BattleSetup.FromContext(required.Context);
-                    battle = BattleSim.Open(setup);
-                    battleDriver.Attach(battle, battleLedger);
-                    var deploy = new BattleTickCommand
-                    {
-                        Id = NextCommandId("deploy"),
-                        Seq = commandSeq,
-                        At = new Tick(battle.Tick),
-                        Kind = BattleTickCommandKind.Deploy,
-                        Formation = setup.PlayerFormation,
-                    };
-                    battleDriver.Enqueue(deploy);
-                    battleDriver.SubmitCurrentCommands();
-                    if (LastRejection is BattleRejection) return;
+                    OpenBattle(required.Context);
                     LastRejection = null;
                     Publish();
                     return;
@@ -292,39 +297,142 @@ namespace Janseon.Foundation.UI
             Reject(result);
         }
 
-        void OnMobilityRegroup()
+        void OnBattleReset()
         {
-            LastClickedAction = UiElementNames.MobilityRegroup;
-            if (battle == null) return;
-            UnitState commander = null;
-            for (var i = 0; i < battle.Units.Length; i++)
-                if (battle.Units[i].Id.Equals(battle.PlayerCommanderId)) { commander = battle.Units[i]; break; }
-            if (commander == null) return;
-            var command = new BattleTickCommand
+            LastClickedAction = UiElementNames.BattleReset;
+            if (campaign == null
+                || campaign.Stage != CampaignStage.Resolution
+                || campaign.SettlementApplied
+                || campaign.PendingBattle == null
+                || battle == null
+                || battle.Outcome != BattleOutcomeKind.Ongoing)
             {
-                Id = NextCommandId("mobility-regroup"),
-                Seq = commandSeq,
-                At = new Tick(battle.Tick),
-                Kind = BattleTickCommandKind.PlayCard,
-                CardId = "mobility-regroup",
-                Target = commander.Cell,
-                Facing = CardinalDirection.South,
-            };
-            battleDriver.Enqueue(command);
-            battleDriver.SubmitCurrentCommands();
-            if (LastRejection is BattleRejection) return;
+                return;
+            }
+
+            OpenBattle(campaign.PendingBattle);
             LastRejection = null;
             Publish();
         }
 
-        void OnBattleAdvance()
+        void OpenBattle(BattleContext context)
         {
-            LastClickedAction = UiElementNames.BattleAdvance;
+            battleDriver.Detach();
+            battleLedger = new Ledger();
+            BattleSetup setup = BattleSetup.FromContext(context);
+            pendingFormation = CloneFormation(setup.PlayerFormation);
+            battle = BattleSim.Open(setup);
+            battleDriver.Attach(battle, battleLedger);
+            battleDriver.Paused = true;
+            Targeting?.Cancel();
+            Targeting = new OwnerCardTargetingMachine(battle, SubmitBattleCommand, () => ++commandSeq);
+            Targeting.SelectOwner(battle.PlayerCommanderId);
+        }
+
+        void OnFormationSwapFront()
+        {
+            LastClickedAction = UiElementNames.FormationSwapFront;
+            if (battle == null || battle.Deployed || pendingFormation == null || pendingFormation.Length < 2) return;
+            FormationSlot first = pendingFormation[0];
+            FormationSlot second = pendingFormation[1];
+            int row = first.Row;
+            int column = first.Column;
+            first.Row = second.Row;
+            first.Column = second.Column;
+            second.Row = row;
+            second.Column = column;
+            Publish();
+        }
+
+        void OnEditFormation()
+        {
+            LastClickedAction = UiElementNames.EditFormation;
+            if (battle == null || battle.Outcome != BattleOutcomeKind.Ongoing || battle.Deployed) return;
+            presenter.SetFormationEditVisible(true);
+        }
+
+        void OnFormationEditFacing(CardinalDirection facing)
+        {
+            if (battle == null || battle.Outcome != BattleOutcomeKind.Ongoing || battle.Deployed || pendingFormation == null) return;
+            LastClickedAction = "formation-edit-facing-" + facing.ToString().Substring(0, 1).ToLowerInvariant();
+            for (var i = 0; i < pendingFormation.Length; i++)
+            {
+                pendingFormation[i].Facing = facing;
+            }
+            Publish();
+        }
+
+        void OnFormationEditCancel()
+        {
+            LastClickedAction = UiElementNames.FormationEditCancel;
+            presenter.SetFormationEditVisible(false);
+        }
+
+        void OnFormationEditConfirm()
+        {
+            LastClickedAction = UiElementNames.FormationEditConfirm;
+            if (battle == null || battle.Outcome != BattleOutcomeKind.Ongoing || battle.Deployed) return;
+            presenter.SetFormationEditVisible(false);
+            SubmitBattleCommand(new BattleTickCommand
+            {
+                Id = NextCommandId("deploy-edited"),
+                Seq = commandSeq,
+                At = new Tick(battle.Tick),
+                Kind = BattleTickCommandKind.Deploy,
+                Formation = CloneFormation(pendingFormation),
+            });
+        }
+
+        void OnCardGeneralUse()
+        {
+            LastClickedAction = UiElementNames.CardGeneralUse;
+            Targeting?.BeginCard("encourage-morale");
+            Publish();
+        }
+
+        void OnMobilityRegroup()
+        {
+            LastClickedAction = UiElementNames.MobilityRegroup;
+            Targeting?.BeginCard("mobility-regroup");
+            Publish();
+        }
+
+        void OnBattlePlayPause()
+        {
+            LastClickedAction = UiElementNames.BattlePlayPause;
             if (battle == null || battle.Outcome != BattleOutcomeKind.Ongoing)
             { Reject(new BattleRejection { Reason = BattleRejectReason.BattleEnded }); return; }
             battleDriver.Paused = !battleDriver.Paused;
             LastRejection = null;
             Publish();
+        }
+
+        void SubmitBattleCommand(BattleTickCommand command)
+        {
+            if (battle == null || battle.Outcome != BattleOutcomeKind.Ongoing) return;
+            LastRejection = null;
+            battleDriver.Enqueue(command);
+            battleDriver.SubmitCurrentCommands();
+            if (LastRejection is BattleRejection) return;
+            Publish();
+        }
+
+        static FormationSlot[] CloneFormation(FormationSlot[] source)
+        {
+            if (source == null) return null;
+            FormationSlot[] clone = new FormationSlot[source.Length];
+            for (var i = 0; i < source.Length; i++)
+            {
+                FormationSlot slot = source[i];
+                clone[i] = new FormationSlot
+                {
+                    Unit = slot.Unit,
+                    Row = slot.Row,
+                    Column = slot.Column,
+                    Facing = slot.Facing,
+                };
+            }
+            return clone;
         }
 
         void OnSettle()
@@ -405,7 +513,7 @@ namespace Janseon.Foundation.UI
 
         void Publish()
         {
-            host.ApplyCampaign(campaign, battle);
+            host.ApplyCampaign(campaign, battle, battleDriver.Paused, pendingFormation);
             if (campaign != null)
             {
                 voxelWorld?.SyncActor(campaign.Node);

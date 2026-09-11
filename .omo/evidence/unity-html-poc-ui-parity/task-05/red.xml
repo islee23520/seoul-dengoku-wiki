@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="4" result="Failed(Child)" total="4" passed="0" failed="4" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-10 17:05:47Z" end-time="2026-09-10 17:05:47Z" duration="0.1936082">
+  <test-suite type="TestSuite" id="1000" name="잔선: 서울" fullname="잔선: 서울" runstate="Runnable" testcasecount="220" result="Failed" site="Child" start-time="2026-09-10 17:05:47Z" end-time="2026-09-10 17:05:47Z" duration="0.193608" total="4" passed="0" failed="4" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1257" name="Janseon.Foundation.EditModeTests.dll" fullname="/Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Library/ScriptAssemblies/Janseon.Foundation.EditModeTests.dll" runstate="Runnable" testcasecount="219" result="Failed" site="Child" start-time="2026-09-10 17:05:47Z" end-time="2026-09-10 17:05:47Z" duration="0.189810" total="4" passed="0" failed="4" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="63173" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1258" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="218" result="Failed" site="Child" start-time="2026-09-10 17:05:47Z" end-time="2026-09-10 17:05:47Z" duration="0.188583" total="4" passed="0" failed="4" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1261" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="192" result="Failed" site="Child" start-time="2026-09-10 17:05:47Z" end-time="2026-09-10 17:05:47Z" duration="0.187434" total="4" passed="0" failed="4" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="1262" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="192" result="Failed" site="Child" start-time="2026-09-10 17:05:47Z" end-time="2026-09-10 17:05:47Z" duration="0.186437" total="4" passed="0" failed="4" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestFixture" id="1131" name="PortraitCommanderCardDockTests" fullname="Janseon.Foundation.Tests.PortraitCommanderCardDockTests" classname="Janseon.Foundation.Tests.PortraitCommanderCardDockTests" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2026-09-10 17:05:47Z" end-time="2026-09-10 17:05:47Z" duration="0.181444" total="4" passed="0" failed="4" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="1132" name="BuildGameplay_CharacterOfferingCards_Are132By180At720pConstantPixelSize" fullname="Janseon.Foundation.Tests.PortraitCommanderCardDockTests.BuildGameplay_CharacterOfferingCards_Are132By180At720pConstantPixelSize" methodname="BuildGameplay_CharacterOfferingCards_Are132By180At720pConstantPixelSize" classname="Janseon.Foundation.Tests.PortraitCommanderCardDockTests" runstate="Runnable" seed="901016422" result="Failed" start-time="2026-09-10 17:05:47Z" end-time="2026-09-10 17:05:47Z" duration="0.140452" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  missing commander card guard-shieldwall (current builder is a 250px HudButton column, not 132×180 portraits)
+  Expected: not null
+  But was:  null
+]]></message>
+                  <stack-trace><![CDATA[at Janseon.Foundation.Tests.PortraitCommanderCardDockTests.BuildGameplay_CharacterOfferingCards_Are132By180At720pConstantPixelSize () [0x00028] in /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Tests/EditMode/PortraitCommanderCardDockTests.cs:38
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1134" name="BuildGameplay_DoesNotUseDirectionNorthAsOnlyTargetingUi" fullname="Janseon.Foundation.Tests.PortraitCommanderCardDockTests.BuildGameplay_DoesNotUseDirectionNorthAsOnlyTargetingUi" methodname="BuildGameplay_DoesNotUseDirectionNorthAsOnlyTargetingUi" classname="Janseon.Foundation.Tests.PortraitCommanderCardDockTests" runstate="Runnable" seed="1270068751" result="Failed" start-time="2026-09-10 17:05:47Z" end-time="2026-09-10 17:05:47Z" duration="0.013835" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  cancel must be a 44×44 Button, not a TMP direction label
+  Expected: not null
+  But was:  null
+]]></message>
+                  <stack-trace><![CDATA[at Janseon.Foundation.Tests.PortraitCommanderCardDockTests.BuildGameplay_DoesNotUseDirectionNorthAsOnlyTargetingUi () [0x0002b] in /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Tests/EditMode/PortraitCommanderCardDockTests.cs:79
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1135" name="BuildGameplay_KoreanTitleRendersWithoutTofu" fullname="Janseon.Foundation.Tests.PortraitCommanderCardDockTests.BuildGameplay_KoreanTitleRendersWithoutTofu" methodname="BuildGameplay_KoreanTitleRendersWithoutTofu" classname="Janseon.Foundation.Tests.PortraitCommanderCardDockTests" runstate="Runnable" seed="1021513014" result="Failed" start-time="2026-09-10 17:05:47Z" end-time="2026-09-10 17:05:47Z" duration="0.010422" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  missing battle HUD title
+  Expected: not null
+  But was:  null
+]]></message>
+                  <stack-trace><![CDATA[at Janseon.Foundation.Tests.PortraitCommanderCardDockTests.BuildGameplay_KoreanTitleRendersWithoutTofu () [0x00011] in /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Tests/EditMode/PortraitCommanderCardDockTests.cs:115
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1133" name="BuildGameplay_OwnerPortrait_Is32By32" fullname="Janseon.Foundation.Tests.PortraitCommanderCardDockTests.BuildGameplay_OwnerPortrait_Is32By32" methodname="BuildGameplay_OwnerPortrait_Is32By32" classname="Janseon.Foundation.Tests.PortraitCommanderCardDockTests" runstate="Runnable" seed="302746240" result="Failed" start-time="2026-09-10 17:05:47Z" end-time="2026-09-10 17:05:47Z" duration="0.010786" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  missing 32×32 owner portrait
+  Expected: not null
+  But was:  null
+]]></message>
+                  <stack-trace><![CDATA[at Janseon.Foundation.Tests.PortraitCommanderCardDockTests.BuildGameplay_OwnerPortrait_Is32By32 () [0x00011] in /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Tests/EditMode/PortraitCommanderCardDockTests.cs:60
+]]></stack-trace>
+                </failure>
+                <output><![CDATA[Saving results to: /Users/ilseoblee/Library/Application Support/Janseon Studio/잔선_ 서울/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

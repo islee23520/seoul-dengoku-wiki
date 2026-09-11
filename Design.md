@@ -140,7 +140,10 @@
 | 노선 | `route-rail`, `station-Yeongdeungpo`, `station-Sindorim`, `station-Guro` | `RouteGraph` + `CampaignState.Node` |
 | 조우 선택 | `encounter-choices`, `choice-negotiate`, `choice-bypass`, `choice-combat` | `CampaignStage.Resolution` |
 | 전투 | `battle-hud`, `battle-grid`, `battle-cell-{x}-{y}`, `battle-hp`, `battle-morale`, `battle-reinforcement-forecast`, `card-general-recharge`, `battle-play-pause` | `BattleSimState` + `BattleSessionDriver.Paused` |
+| 진형 편집 | `edit-formation`, `formation-edit`, `formation-edit-confirm`, `formation-edit-cancel`, `formation-edit-facing-n`, `formation-edit-facing-e`, `formation-edit-facing-s`, `formation-edit-facing-w` | 보류 진형(pending formation) 상태 |
 | 정산·복귀 | `settlement-panel`, `settlement-outcome`, `return-action` | settlement receipt fields |
+
+`edit-formation`은 `formation-edit` 패널을 연다. `formation-edit-confirm`은 보류 진형을 확정 배치하고, `formation-edit-cancel`은 패널을 닫는다. facing 네 버튼(`formation-edit-facing-n/e/s/w`)은 보류 진형의 방향을 지정한다.
 
 스냅샷은 동일 seed/state에 대해 요소 이름 집합·current 표시·그리드 점유가 결정론적이어야 한다.
 
@@ -159,7 +162,7 @@
 | 1 | `main-title-start` | `stage-rail` 내 current chip (표시만, 탭 스킵 가능) |
 | 2 | — | 가시 역 노드 (current 우선) |
 | 3 | — | 가시 조우 카드  Neg → Bypass → Combat |
-| 4 | — | `formation-swap-front` → `edit-formation` → 카드 → `battle-play-pause` |
+| 4 | — | `formation-swap-front` → `edit-formation` → (`formation-edit` 패널 가시 시 `formation-edit-facing-n`→`-e`→`-s`→`-w` → `formation-edit-confirm`/`formation-edit-cancel`) → 카드 → `battle-play-pause` |
 | 5 | — | `return-action` |
 
 - Tab / Shift+Tab 순환. Enter·Space 활성화.
@@ -248,6 +251,13 @@ card-general-use
 formation-swap-front
 formation-selection
 edit-formation
+formation-edit
+formation-edit-confirm
+formation-edit-cancel
+formation-edit-facing-n
+formation-edit-facing-e
+formation-edit-facing-s
+formation-edit-facing-w
 battle-play-pause
 settlement-panel
 settlement-outcome
