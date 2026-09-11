@@ -6,13 +6,31 @@
 
 ## 게시 문서와 조각 현황
 
-조각 완료는 세계관 완료나 Wiki 게시 완료를 뜻하지 않는다. 현재 게시된 인물 원문은 아래 국가별 명부와 [인물 관계](Cast-Relations.md), [주요 인물](Core-Characters.md)에서 확인한다.
+조각 완료는 세계관 완료나 Wiki 게시 완료를 뜻하지 않는다.
 
-구세대 `docs/cast-*` 브랜치와 조각은 기계 병합(브랜치별 자동 merge·rerere·ours/theirs 일괄 적용)으로 main에 넣지 않는다. 게시 인물 원본은 `Cast-State-01`–`16`, 이 총람, [인물 관계](Cast-Relations.md), [주요 인물](Core-Characters.md)이며, 조각은 이 원본에 맞춰 큐레이션한 뒤에만 게시한다. 조각 파일이 존재한다는 사실은 게시 승인이 아니다.
+현재 게시된 인물 원문은 아래 국가별 명부와 [인물 관계](Cast-Relations.md) [주요 인물](Core-Characters.md)에서 확인한다.
 
-아래는 승인된 허브 기록 `fe2d8aa`·`f7521c9`의 39개 항목이다. 게시 기준선 `1872919`에는 이 본문 36개와 그림 3개가 없으므로 모두 **미게시·대기**로 남긴다. 경로와 SHA는 보관 위치를 추적하는 기록이며, 게시 링크나 통합 승인이 아니다. 별도 브랜치의 본문·그림은 이번 인덱스에 포함하지 않는다. 2026-09-05 `docs/cast-backstories-houses-physical-ai` @ `4e204e8` 큐레이션(#15–#18) 결과는 아래 게시 상태 칸이다. #14 기계 병합 금지로 Story-Batch/Hostile-Group 본문은 이 브랜치에 일괄 추가하지 않는다.
+구세대 `docs/cast-*` 브랜치와 조각은 기계 병합(브랜치별 자동 merge·rerere·ours/theirs 일괄 적용)으로 main에 넣지 않는다.
 
-원본 허브에서 B001에 사용한 `confirmed-landed`는 그 브랜치 안의 착지를 뜻하며 main 게시를 뜻하지 않는다. G07–G24는 기록된 SHA에는 파일이 없었으나 `ea81bb9` 착지 본문이 main에 있으며, 이슈 #17 큐레이션 결과는 아래 게시 상태 칸이다.
+게시 인물 원본은 `Cast-State-01`–`16` 이 총람 [인물 관계](Cast-Relations.md) [주요 인물](Core-Characters.md)이며 조각은 이 원본에 맞춰 큐레이션한 뒤에만 게시한다.
+
+조각 파일이 존재한다는 사실은 게시 승인이 아니다.
+
+아래는 승인된 허브 기록 `fe2d8aa`·`f7521c9`의 39개 항목이다.
+
+게시 기준선 `1872919`에는 이 본문 36개와 그림 3개가 없으므로 모두 **미게시·대기**로 남긴다.
+
+경로와 SHA는 보관 위치를 추적하는 기록이며, 게시 링크나 통합 승인이 아니다.
+
+별도 브랜치의 본문·그림은 이번 인덱스에 포함하지 않는다.
+
+2026-09-05 `docs/cast-backstories-houses-physical-ai` @ `4e204e8` 큐레이션(#15–#18) 결과는 아래 게시 상태 칸이다.
+
+#14 기계 병합 금지로 Story-Batch/Hostile-Group 본문은 이 브랜치에 일괄 추가하지 않는다.
+
+원본 허브에서 B001에 사용한 `confirmed-landed`는 그 브랜치 안의 착지를 뜻하며 main 게시를 뜻하지 않는다.
+
+G07–G24는 기록된 SHA에는 파일이 없었으나 `ea81bb9` 착지 본문이 main에 있으며, 이슈 #17 큐레이션 결과는 아래 게시 상태 칸이다.
 
 | 항목 | 게시 상태 | 기록된 경로 · SHA · 브랜치 | 조각 확인 / 남은 일 |
 | --- | --- | --- | --- |
@@ -56,9 +74,7 @@
 | ISO-house-influence | 게시 | `docs/assets/wiki/house-influence-isometric.svg` @ `7b4e27b91510c024e936ed7cc4322714ff280313` (`docs/cast-iso-atlas-v2`) | 게시 승인 (운영가문/HP/HC 라벨 일치, Cast-Relations 및 Operating-Houses.md와 정합, 빌드 fragment 확인) |
 | ISO-hostile-ecology | 게시 | `docs/assets/wiki/hostile-ecology-isometric.svg` @ `7b4e27b91510c024e936ed7cc4322714ff280313` (`docs/cast-iso-atlas-v2`) | 게시 승인 (G01–G24 라벨 및 Hostile-Ecology-Index.md와 일치, G07+ 미완성 무시, 빌드 fragment 확인) |
 
-
 [국가 01 명부](Cast-State-01.md) · [국가 02 명부](Cast-State-02.md) · [국가 03 명부](Cast-State-03.md) · [국가 04 명부](Cast-State-04.md) · [국가 05 명부](Cast-State-05.md) · [국가 06 명부](Cast-State-06.md) · [국가 07 명부](Cast-State-07.md) · [국가 08 명부](Cast-State-08.md) · [국가 09 명부](Cast-State-09.md) · [국가 10 명부](Cast-State-10.md) · [국가 11 명부](Cast-State-11.md) · [국가 12 명부](Cast-State-12.md) · [국가 13 명부](Cast-State-13.md) · [국가 14 명부](Cast-State-14.md) · [국가 15 명부](Cast-State-15.md) · [국가 16 명부](Cast-State-16.md)
-
 
 ## 국가 01 여의신정수문정부
 
