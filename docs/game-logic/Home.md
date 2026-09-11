@@ -28,9 +28,14 @@
 | [서울 십육국](Sixteen-States.md) | 총16국, 강국5·약소국11의 지리와 기반시설 |
 | [십육국 핵심 인물](Core-Characters.md) | 국가별 핵심 인물의 성격, 야망, 공포와 촉발 사건 |
 | [인물 총람](Cast-Index.md) · [관계 원장](Cast-Relations.md) | 16국 인물 412명과 인물 사이 관계 원장 |
+| [인물 카드 계약](Cast-Profile-Contract.md) | 이름 있는 인물의 필수 칸. 출신·언어·징집·무장 접근 |
+| [본관과 항렬](Hangnyeol-and-Bon-gwan.md) · [랜덤 추가 로스터](Random-Cast-Roster.md) | 성·남·여 풀 분리, 본관 항렬, Nemotron 100명 롤 |
+| [징집 잔존과 군 장부](Conscription-Remnants.md) | 징병제 명부가 동원잔존·무기고·탈영으로 쪼개지는 방식 |
+| [이주민 회랑](Diaspora-Corridors.md) · [회랑 인물](Cast-Corridors-Index.md) | 대림·구로공단·이태원·용산 위에 얹는 다국적 회랑과 시드 인물 |
 | [야망과 관계가 움직이는 정치](Ambitions-and-Relations.md) | 이름 있는 인물이 동맹, 배신, 전쟁과 계승을 만드는 규칙 |
 | [후계, 이름 로스터, 세계 원장](Heirs-Names-and-World-Ledger.md) | 문화 성명 풀에서 후계를 만들고, 면담·거래가 세계 사건에 쌓이는 규칙 |
 | [시나리오 타임라인](Scenario-Timeline.md) | 붕괴 이전부터 패권전까지 조건에 따라 갈라지는 연대기 |
+| [이 시대의 기술과 무구](Era-Arms-and-Tech-Level.md) | 2026 기술에서 붕괴 이후 생업 공구·제식·군용 잔존·로스트 회수 |
 | [세계 서사 지도](World-Narrative-Atlas.md) | 가문·적대 생태·몬스터·서사 배치의 원본 |
 | [이동과 조우](Travel-and-Encounters.md) | 4방향 행동과 원정 위험 |
 | [실시간 진형·카드 전투](Realtime-Formation-Card-Battle.md) | 같은 격자에서 이어지는 실시간 진형·카드 전투 (Core 규칙 버전 `rtfc-owner-cards-v2`) |

@@ -35,6 +35,9 @@
 - [서울 십육국](Sixteen-States.md): 총16국, 강국5·약소국11의 영토와 기반시설
 - [십육국 핵심 인물](Core-Characters.md): 국가별 지도자와 후계자의 성격, 야망, 공포와 촉발 사건
 - [인물 총람](Cast-Index.md) · [관계 원장](Cast-Relations.md): 16국 인물 412명과 인물 사이 관계 원장
+- [인물 카드 계약](Cast-Profile-Contract.md): 새 인물의 필수 칸. 출신 공동체, 언어, 징집 이력, 무장 접근
+- [징집 잔존과 군 장부](Conscription-Remnants.md): 징병제 명부가 동원잔존으로 남는 방식
+- [이주민 회랑](Diaspora-Corridors.md) · [회랑 인물](Cast-Corridors-Index.md): 한국 국적만 기본값이 아닌 회랑과 시드 인물
 - [야망과 관계가 움직이는 정치](Ambitions-and-Relations.md): 인물이 전쟁, 동맹, 배신과 계승을 결정하는 규칙
 - [시나리오 타임라인](Scenario-Timeline.md): 붕괴 이전부터 패권전까지 인물 조건으로 분기하는 연대기
 

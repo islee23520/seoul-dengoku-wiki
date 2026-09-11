@@ -14,7 +14,7 @@
 - `Bootstrap.unity` App scope와 FSM, `Foundation.unity` 화면 child scope
 - 단일 scene-load 권한과 정적 아키텍처 게이트
 
-이 기반 위에 `Unity POC 통합 코어 루프`가 실렸습니다. `MainTitle` 화면 lease, 세 역 노선, 교섭·우회, 30Hz 실시간 진형·카드 전투(`rtfc-owner-cards-v2`), 정확히 한 번 정산, uGUI HUD가 `Janseon.Core`와 `Janseon.Foundation`에 있습니다. 생성 아트 슬롯·16국 캠페인·집계 사상자 표현은 아직 완료가 아닙니다.
+이 기반 위에 `Unity POC 통합 코어 루프`가 실렸습니다. `MainTitle` 화면 lease, 세 역 노선, 교섭·우회, 30Hz 실시간 진형·카드 전투(`rtfc-owner-cards-v2`), 정확히 한 번 정산, uGUI HUD가 `Janseon.Core`와 `Janseon.Foundation`에 있습니다. 화면은 [UI가 코드로 들어오는 길](Ui-Implementation-Pipeline.md)을 따릅니다. HTML 목업을 동결한 뒤에 uGUI로 옮기고, 클릭 대상은 목업과 같은 그림입니다. 생성 아트 슬롯·16국 캠페인·집계 사상자 표현은 아직 완료가 아닙니다.
 
 ## 영역별 책임
 
