@@ -4,7 +4,7 @@
 
 상태: 코어 구현·PlayMode 검증 완료, 생성 아트 통합과 최종 수용 게이트 미완료
 범위: 이 모듈 하나만 구현합니다. 완료·검증 전에는 두 번째 제품 모듈을 시작하지 않습니다.
-기준선: 이전 Foundation 아키텍처 모듈(Bootstrap App scope/FSM, Foundation 화면 child scope, VContainer `1.19.0`, 정적 아키텍처 게이트)은 완료된 기반이며 현재 활성 모듈이 아닙니다.
+기준선: Foundation 아키텍처, uGUI 전환(#59), RTFC Core `rtfc-owner-cards-v2`(#77), Area 1 데이터 코어(#75), 진형 편집 PlayMode(#76)는 들어온 기반입니다. 현재 활성 잔여는 시각 수용·슬롯 연결·수용 게이트(#8·#23·#58·#26·#27·#78)입니다.
 
 ### 구현 증분
 
@@ -20,7 +20,7 @@
 - [x] 10. MainTitle을 배타적 화면 lease로 추가하고 아키텍처 게이트를 갱신한다
 - [x] 11. Design.md 시각 계약을 고정하고 실제 UI Toolkit 화면을 구현한다
 - [x] 12. 아트 제작 전에 PlayMode에서 코어 루프 한 바퀴를 닫는다
-- [ ] 18. UI Toolkit 구현을 uGUI로 전환한다 (Design.md 2026-09-06 개정, 이슈 #59)
+- [x] 18. UI Toolkit 구현을 uGUI로 전환한다 (Design.md 2026-09-06 개정, 이슈 #59, PR #81)
 - [ ] 13. 타이틀·UI kit·아이콘·역사 텍스처를 생성·검수한다
 - [ ] 14. TRELLIS→Blender로 역사 프롭 키트를 생성·승격한다
 - [ ] 15. 탐사원·의무원·순찰대 캐릭터를 생성·리그·애니메이션한다
@@ -44,8 +44,8 @@
 - 파일 저장/불러오기, 시네마틱, 음성·음악
 - 네 번째 gameplay scene, Title+Foundation 동시 유지, 두 번째 scene-load 권한
 - 카메라 회전·원근·대각 이동
-- 실시간 진형·카드 전투 구현 — 2026-09-07 결정(Intent.md 결정 3)으로 **다음 모듈**로 지정됐으나 이 모듈의 범위가 아니다. 현재 POC의 턴제 격자 규칙(8번)은 그때까지 과도 상태로 유지한다
-- Addressables, Entities, Cinemachine, LitMotion, TMP, uLoop
+- 16국 캠페인 규모의 분대 명령·집계 사상자 표현 완료 검증. Core 규칙 `rtfc-owner-cards-v2` 자체는 이 모듈에 들어왔다(#77)
+- Addressables, Entities, Cinemachine, LitMotion, uLoop
 - 무검수 생성 에셋, 공식 TRELLIS v1 외 임의 유료 3D 대체
 
-다음 모듈은 위 체크리스트가 모두 끝나고 현재 변경이 테스트된 뒤에만 착수합니다. 다음 모듈은 `실시간 진형·카드 전투 코어`로 지정되어 있습니다([개발 로드맵](docs/game-logic/Development-Roadmap.md) 6번, [Intent.md](Intent.md) 결정 3).
+위 체크리스트가 모두 끝나고 현재 변경이 테스트된 뒤에만 다음 제품 모듈을 착수합니다. 실시간 진형·카드 전투 Core는 이미 들어왔으므로, 남은 순서는 시각 수용 → 슬롯 연결 → 수용 게이트다([개발 로드맵](docs/game-logic/Development-Roadmap.md), [Intent.md](Intent.md) 결정 3).

@@ -1,16 +1,37 @@
 # 잔선: 서울
 
-**붕괴한 서울의 지하철망에서 무명 인물과 파티를 이끌어 역과 노선의 새로운 질서를 세우는 4방향 대전략 SRPG.**
+**붕괴한 서울의 지하철망에서 무명 인물과 파티를 이끌어 역과 노선의 새로운 질서를 세우는 4X + RPG. 전투는 4방향 격자 위의 실시간 진형·카드 전투입니다.**
 
 이 저장소는 Unity 6.7 기반 프로젝트와 게임 로직 문서의 원본을 관리합니다.
 
 ## 현재 상태
 
-- Unity `6000.7.0a5` 프로젝트 생성
-- 고정 직교 아이소메트릭 장르 계약과 EditMode 테스트 추가
-- 상세 게임 로직 문서 및 Wiki 도판 작성
-- Foundation 아키텍처(`Bootstrap.unity` App scope/FSM, `Foundation.unity` 화면 child scope, VContainer `1.19.0`) 구현·검증 완료
-- 현재 모듈은 `Unity POC 통합 코어 루프`이며, 캠페인 코어 루프·전투·생성 에셋 구현은 이 모듈의 예정 범위입니다
+2026-09-11 기준입니다. 지금 모듈은 `Unity POC 통합 코어 루프`입니다.
+
+들어온 구현:
+
+- Unity `6000.7.0a5`, 고정 직교 아이소메트릭 장르 계약
+- Foundation: `Bootstrap.unity` App scope/FSM, 배타적 `MainTitle`/`Foundation` 화면, VContainer `1.19.0`
+- POC 코어 루프: 영등포–신도림–구로 세 역, 교섭·우회·전투·정산·복귀. batchmode PlayMode에서 동일 seed 재현과 중복 정산 거부
+- 전투 Core: 30Hz 실시간 진형·카드 규칙 `rtfc-owner-cards-v2` ([#77](https://github.com/islee23520/seoul-kenshi/issues/77))
+- 화면: uGUI(Canvas)+TMP ([#59](https://github.com/islee23520/seoul-kenshi/issues/59)). 제품 경로에 UI Toolkit 없음
+- Area 1 데이터 코어(ScriptableObject + VContainer) ([#75](https://github.com/islee23520/seoul-kenshi/issues/75))
+- 진형 편집 PlayMode 경로 ([#76](https://github.com/islee23520/seoul-kenshi/issues/76))
+
+남은 열린 이슈:
+
+| 이슈 | 지금 상태 |
+|---|---|
+| [#8](https://github.com/islee23520/seoul-kenshi/issues/8) 타이틀 시각 수용 | 코드는 들어갔고 소유자 육안 승인 대기 |
+| [#23](https://github.com/islee23520/seoul-kenshi/issues/23) UI kit·아이콘·타일 | 기술 검사는 됐고 화면 승인은 남음 |
+| [#58](https://github.com/islee23520/seoul-kenshi/issues/58) TOS식 SD 캐릭터 | 기존 placeholder 폐기, 재작업 미착수 |
+| [#26](https://github.com/islee23520/seoul-kenshi/issues/26) 승격 에셋만 슬롯 연결 | #8·#23·#58·#78에 막힘 |
+| [#27](https://github.com/islee23520/seoul-kenshi/issues/27) 최종 수용 게이트 | #26 이후 |
+| [#78](https://github.com/islee23520/seoul-kenshi/issues/78) 오드랜드 연결 금지 | 소유자 육안 승인 0건 |
+| [#41](https://github.com/islee23520/seoul-kenshi/issues/41) 서사 디렉션 합의 | 제안만, 구현 아님 |
+| [#13](https://github.com/islee23520/seoul-kenshi/issues/13) 에픽 | 위 잔여가 닫힌 뒤에만 닫힘 |
+
+생성 아트 슬롯은 아직 런타임 화면에 연결되지 않았습니다. 16국 캠페인, 저장, 외교, 공성은 이 모듈 밖입니다.
 
 ## 문서
 
