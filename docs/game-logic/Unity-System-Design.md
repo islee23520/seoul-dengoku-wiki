@@ -1,6 +1,6 @@
 # Unity 시스템 설계 계약
 
-이 문서는 코드를 만들기 전에 고정하는 아키텍처 계약입니다. 현재 구현 완료를 뜻하지 않습니다. 현재 저장소에는 `Foundation.unity`와 장르 계약 기반만 있으며, 첫 구현 증분에서 Bootstrap과 Foundation 화면의 책임을 분리합니다.
+이 문서는 코드를 만들기 전에 고정한 아키텍처 계약입니다. 계약 키워드(FSM, VContainer, Singleton, Repository, 저장과 결정성, 실패와 취소, 품질 게이트)는 그대로입니다. 현재 저장소에는 Bootstrap App scope, Foundation 화면 child scope, MainTitle lease, 세 역 POC 루프, uGUI HUD, 실시간 진형·카드 Core가 있습니다. 이 문서의 증분 표는 Foundation 분리 계약을 설명하며, 그 계약 이후에 올린 코어·전투·uGUI를 무효화하지 않습니다.
 
 ## 설계 목표와 비목표
 

@@ -1,361 +1,323 @@
 {
   "characterId": "ally-guard-1",
-  "engine": "component-row",
-  "game_input": "sprite-sheet-alpha.png",
-  "degraded_static_fallback": false,
-  "curation_applied": false,
-  "frame_variant": "pixel",
-  "sprite_sheet_alpha": "sprite-sheet-alpha.png",
-  "sprite_sheet_alpha_report": "sprite-sheet-alpha.report.json",
-  "base_image": "base-source.png",
+  "engine": "pilgrimage-bake",
+  "calling": "knight",
+  "profile": 0,
+  "sourceRepository": "https://github.com/islee23520/pilgrimage",
+  "sourceCommit": "de04a116bdf388cf9ecb9b9a0ad2ec79a025a139",
+  "sourceIdle": "public/textures/characters/population/v23/knight-idle.png",
+  "sourceWalk": "public/textures/characters/population/v23/knight-walk.png",
+  "sourceIdleSha256": "9124ac3ee2c2c43abdafc6e906f0188d7562230e844be338813969fac4c04328",
+  "sourceWalkSha256": "6e47f780284f012d2e461218fbb5fcae4b414b9f0ff7574ac936e7b643ab593a",
+  "sheetSha256": "92b2333ae58d2c2e351a5a81cf2800f52a85aceea92d2571f47f489586b4949d",
   "cell": {
     "shape": "square",
-    "width": 128,
-    "height": 128,
-    "safe_margin_x": 12,
-    "safe_margin_y": 12,
-    "size": 128,
-    "safe_margin": 12
+    "width": 64,
+    "height": 64,
+    "size": 64
   },
-  "chroma_key": {
-    "name": "green",
-    "hex": "#00FF00",
-    "rgb": [
-      0,
-      255,
-      0
-    ],
-    "selection": "manual"
+  "anchor": [
+    32,
+    48.5
+  ],
+  "directions": {
+    "south": "S",
+    "east": "E",
+    "north": "N",
+    "west": "W"
   },
+  "notes": "Local-review pack of pilgrimage population v23 bake cells. Opposite facings are authored, not mirrored. Not sprite-gen. Source atlas is not in RuntimeSlotCatalog.",
   "animation": {
-    "cellWidth": 128,
-    "cellHeight": 128,
+    "cellWidth": 64,
+    "cellHeight": 64,
     "columns": 8,
     "rows": {
       "down_idle": {
         "row": 0,
-        "frames": 4,
-        "fps": 4,
-        "durations_ms": [
-          250,
-          250,
-          250,
-          250
-        ],
-        "loop": true,
-        "frame_variant": "pixel"
+        "frames": 1,
+        "fps": 1,
+        "loop": true
       },
-      "side_idle": {
+      "east_idle": {
         "row": 1,
-        "frames": 4,
-        "fps": 4,
-        "durations_ms": [
-          250,
-          250,
-          250,
-          250
-        ],
-        "loop": true,
-        "frame_variant": "pixel"
+        "frames": 1,
+        "fps": 1,
+        "loop": true
       },
       "up_idle": {
         "row": 2,
-        "frames": 4,
-        "fps": 4,
-        "durations_ms": [
-          250,
-          250,
-          250,
-          250
-        ],
-        "loop": true,
-        "frame_variant": "pixel"
+        "frames": 1,
+        "fps": 1,
+        "loop": true
+      },
+      "west_idle": {
+        "row": 3,
+        "frames": 1,
+        "fps": 1,
+        "loop": true
       },
       "down_walk": {
-        "row": 3,
-        "frames": 8,
-        "fps": 8,
-        "durations_ms": [
-          125,
-          125,
-          125,
-          125,
-          125,
-          125,
-          125,
-          125
-        ],
-        "loop": true,
-        "frame_variant": "pixel"
-      },
-      "side_walk": {
         "row": 4,
         "frames": 8,
         "fps": 8,
-        "durations_ms": [
-          125,
-          125,
-          125,
-          125,
-          125,
-          125,
-          125,
-          125
-        ],
-        "loop": true,
-        "frame_variant": "pixel"
+        "loop": true
       },
-      "up_walk": {
+      "east_walk": {
         "row": 5,
         "frames": 8,
         "fps": 8,
-        "durations_ms": [
-          125,
-          125,
-          125,
-          125,
-          125,
-          125,
-          125,
-          125
-        ],
-        "loop": true,
-        "frame_variant": "pixel"
+        "loop": true
+      },
+      "up_walk": {
+        "row": 6,
+        "frames": 8,
+        "fps": 8,
+        "loop": true
+      },
+      "west_walk": {
+        "row": 7,
+        "frames": 8,
+        "fps": 8,
+        "loop": true
       }
     }
   },
   "frame_layout": {
-    "sheetWidth": 1024,
-    "sheetHeight": 768,
-    "cellWidth": 128,
-    "cellHeight": 128,
+    "sheetWidth": 512,
+    "sheetHeight": 512,
+    "cellWidth": 64,
+    "cellHeight": 64,
     "rows": {
       "down_idle": [
         {
           "x": 0,
           "y": 0,
-          "w": 128,
-          "h": 128
-        },
-        {
-          "x": 128,
-          "y": 0,
-          "w": 128,
-          "h": 128
-        },
-        {
-          "x": 256,
-          "y": 0,
-          "w": 128,
-          "h": 128
-        },
-        {
-          "x": 384,
-          "y": 0,
-          "w": 128,
-          "h": 128
+          "w": 64,
+          "h": 64
         }
       ],
-      "side_idle": [
+      "east_idle": [
         {
           "x": 0,
-          "y": 128,
-          "w": 128,
-          "h": 128
-        },
-        {
-          "x": 128,
-          "y": 128,
-          "w": 128,
-          "h": 128
-        },
-        {
-          "x": 256,
-          "y": 128,
-          "w": 128,
-          "h": 128
-        },
-        {
-          "x": 384,
-          "y": 128,
-          "w": 128,
-          "h": 128
+          "y": 64,
+          "w": 64,
+          "h": 64
         }
       ],
       "up_idle": [
         {
           "x": 0,
-          "y": 256,
-          "w": 128,
-          "h": 128
-        },
+          "y": 128,
+          "w": 64,
+          "h": 64
+        }
+      ],
+      "west_idle": [
         {
-          "x": 128,
-          "y": 256,
-          "w": 128,
-          "h": 128
-        },
-        {
-          "x": 256,
-          "y": 256,
-          "w": 128,
-          "h": 128
-        },
-        {
-          "x": 384,
-          "y": 256,
-          "w": 128,
-          "h": 128
+          "x": 0,
+          "y": 192,
+          "w": 64,
+          "h": 64
         }
       ],
       "down_walk": [
         {
           "x": 0,
-          "y": 384,
-          "w": 128,
-          "h": 128
+          "y": 256,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 256,
+          "w": 64,
+          "h": 64
         },
         {
           "x": 128,
-          "y": 384,
-          "w": 128,
-          "h": 128
+          "y": 256,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "x": 192,
+          "y": 256,
+          "w": 64,
+          "h": 64
         },
         {
           "x": 256,
-          "y": 384,
-          "w": 128,
-          "h": 128
+          "y": 256,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "x": 320,
+          "y": 256,
+          "w": 64,
+          "h": 64
         },
         {
           "x": 384,
-          "y": 384,
-          "w": 128,
-          "h": 128
+          "y": 256,
+          "w": 64,
+          "h": 64
         },
         {
-          "x": 512,
-          "y": 384,
-          "w": 128,
-          "h": 128
-        },
-        {
-          "x": 640,
-          "y": 384,
-          "w": 128,
-          "h": 128
-        },
-        {
-          "x": 768,
-          "y": 384,
-          "w": 128,
-          "h": 128
-        },
-        {
-          "x": 896,
-          "y": 384,
-          "w": 128,
-          "h": 128
+          "x": 448,
+          "y": 256,
+          "w": 64,
+          "h": 64
         }
       ],
-      "side_walk": [
+      "east_walk": [
         {
           "x": 0,
-          "y": 512,
-          "w": 128,
-          "h": 128
+          "y": 320,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 320,
+          "w": 64,
+          "h": 64
         },
         {
           "x": 128,
-          "y": 512,
-          "w": 128,
-          "h": 128
+          "y": 320,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "x": 192,
+          "y": 320,
+          "w": 64,
+          "h": 64
         },
         {
           "x": 256,
-          "y": 512,
-          "w": 128,
-          "h": 128
+          "y": 320,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "x": 320,
+          "y": 320,
+          "w": 64,
+          "h": 64
         },
         {
           "x": 384,
-          "y": 512,
-          "w": 128,
-          "h": 128
+          "y": 320,
+          "w": 64,
+          "h": 64
         },
         {
-          "x": 512,
-          "y": 512,
-          "w": 128,
-          "h": 128
-        },
-        {
-          "x": 640,
-          "y": 512,
-          "w": 128,
-          "h": 128
-        },
-        {
-          "x": 768,
-          "y": 512,
-          "w": 128,
-          "h": 128
-        },
-        {
-          "x": 896,
-          "y": 512,
-          "w": 128,
-          "h": 128
+          "x": 448,
+          "y": 320,
+          "w": 64,
+          "h": 64
         }
       ],
       "up_walk": [
         {
           "x": 0,
-          "y": 640,
-          "w": 128,
-          "h": 128
+          "y": 384,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 384,
+          "w": 64,
+          "h": 64
         },
         {
           "x": 128,
-          "y": 640,
-          "w": 128,
-          "h": 128
+          "y": 384,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "x": 192,
+          "y": 384,
+          "w": 64,
+          "h": 64
         },
         {
           "x": 256,
-          "y": 640,
-          "w": 128,
-          "h": 128
+          "y": 384,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "x": 320,
+          "y": 384,
+          "w": 64,
+          "h": 64
         },
         {
           "x": 384,
-          "y": 640,
-          "w": 128,
-          "h": 128
+          "y": 384,
+          "w": 64,
+          "h": 64
         },
         {
-          "x": 512,
-          "y": 640,
-          "w": 128,
-          "h": 128
+          "x": 448,
+          "y": 384,
+          "w": 64,
+          "h": 64
+        }
+      ],
+      "west_walk": [
+        {
+          "x": 0,
+          "y": 448,
+          "w": 64,
+          "h": 64
         },
         {
-          "x": 640,
-          "y": 640,
-          "w": 128,
-          "h": 128
+          "x": 64,
+          "y": 448,
+          "w": 64,
+          "h": 64
         },
         {
-          "x": 768,
-          "y": 640,
-          "w": 128,
-          "h": 128
+          "x": 128,
+          "y": 448,
+          "w": 64,
+          "h": 64
         },
         {
-          "x": 896,
-          "y": 640,
-          "w": 128,
-          "h": 128
+          "x": 192,
+          "y": 448,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "x": 256,
+          "y": 448,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "x": 320,
+          "y": 448,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "x": 384,
+          "y": 448,
+          "w": 64,
+          "h": 64
+        },
+        {
+          "x": 448,
+          "y": 448,
+          "w": 64,
+          "h": 64
         }
       ]
     }

@@ -161,6 +161,28 @@ namespace Janseon.Foundation.Tests
         }
 
         [Test]
+        public void LocalReviewSprite_UsesPilgrimageBakeCellAndWalkRows()
+        {
+            view.Refresh();
+            var commander = Array.Find(battle.Units, unit => unit.Id.Equals(battle.PlayerCommanderId));
+            Assert.IsNotNull(commander);
+            var renderer = view.Units[commander.Id].GetComponentInChildren<SpriteRenderer>(true);
+            Assert.IsNotNull(renderer);
+            Assert.IsNotNull(renderer.sprite);
+            Assert.AreEqual(64f, renderer.sprite.rect.width);
+            Assert.AreEqual(64f, renderer.sprite.rect.height);
+            Rect idle = renderer.sprite.rect;
+            commander.OrderKind = BattleOrderKind.Move;
+            view.Refresh();
+            Assert.AreEqual(64f, renderer.sprite.rect.width);
+            Assert.AreNotEqual(idle.y, renderer.sprite.rect.y);
+            Rect walkingSouth = renderer.sprite.rect;
+            commander.Facing = CardinalDirection.West;
+            view.Refresh();
+            Assert.AreNotEqual(walkingSouth.y, renderer.sprite.rect.y);
+        }
+
+        [Test]
         public void ZoomFactor_ScalesOrthographicSize_AndDoesNotMutateCore()
         {
             view.FrameCamera(16f / 9f);

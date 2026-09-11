@@ -2,22 +2,17 @@ Identity: 서윤 / ally-guard-1 / guard / knight. HTML commander profile 0, sout
 Source repository: https://github.com/islee23520/pilgrimage
 Source commit SHA: de04a116bdf388cf9ecb9b9a0ad2ec79a025a139
 Source disk path: /Volumes/gameWorkspace/game-refs/pilgrimage/public/textures/characters/population/v23/knight-idle.png
-Source atlas SHA-256: 9124ac3ee2c2c43abdafc6e906f0188d7562230e844be338813969fac4c04328
-Source dimensions: 64 x 3072. Source portrait rectangle: x=0,y=0,w=64,h=64.
+Source walk path: /Volumes/gameWorkspace/game-refs/pilgrimage/public/textures/characters/population/v23/knight-walk.png
+Source idle SHA-256: 9124ac3ee2c2c43abdafc6e906f0188d7562230e844be338813969fac4c04328
+Source walk SHA-256: 6e47f780284f012d2e461218fbb5fcae4b414b9f0ff7574ac936e7b643ab593a
+Source idle dimensions: 64 x 3072. Source walk dimensions: 1280 x 3072. Cell 64, origin (32, 48.5).
 HTML authority: html-formation-step1/poc/avatar-preview/avatar-render-model.js and app.js:953-961. Executed commanderPresentation confirms profile 0 and name 서윤.
 Rights: no declared LICENSE; local review only. Public visibility is not a production license.
-local-review generated derivative, source atlas not shipped
-Source atlas is retained here ONLY as audit input. No source or generated assets installed in Game/Assets or RuntimeSlotCatalog.
+local-review pack of pilgrimage bake cells, source atlas not shipped
+Source atlas is retained here ONLY as audit input. No source or generated assets installed in Game/Assets/Janseon/Art or RuntimeSlotCatalog.
 
-Engine source SHA: 27791177526217403a9987f7084ec607a7d7e1da
-Engine: component-row; isolated git archive of that exact commit at /tmp/st_01a08c31-sprite-gen-2779117, because the original checkout had unrelated uncommitted provider changes.
-Interpreter: /tmp/st_01a08c31-sprite-gen-2779117/.venv/bin/python
-Base: source portrait crop html-portrait.png, copied by prepare to character.base_image=base-source.png. Source cropping is identity input ONLY, not atlas production.
-Pipeline: source base lock -> generated down/side/up idle rows -> deterministic extract -> accepted default frame-zero idle anchors -> DROP base -> generated down/side/up walk rows -> deterministic extract -> compose-atlas.
-Walk refs: only references/anchors/<direction>-anchor-x8.png and references/layout-guides/<direction>/walk.png; generation reports and command JSON prove attachments.
-No attack or additional commanders generated. Left is declared runtime mirror of side by the requested recipe; not a faithful import of Pilgrimage's eight separately authored directions.
-Provider: explicit Grok after Codex capability failure. Clean session-local GROK_HOME avoids global grokomo heartbeat hooks; original global settings unchanged.
-Chroma: green #00FF00 chosen away from burgundy tunic. Raw green is dark; final RGB key radius 120. Frame reports retain extraction args. Rejected YCbCr attempt erased material and is NOT used. Final verification confirms burgundy pixels, helmet/legs, binary alpha, zero green residue.
-Final pixels: AI raw -> chroma/components -> pitch/grid snap -> kCentroid/shared palette -> transparent cells -> composed atlas. Never copied source atlas or resized raw into final output.
-
-IMPORTANT QUALITY RESULT: artifact/extraction/compose checks PASS; Motion Continuity FAIL. Experimental walk rows repeat stride poses and fail motion-presence warnings. This is evidence only, NOT sprite_gen_done, NOT production approval.
+Engine: pilgrimage parametric rig bake (`npm run assets:population`, lib/game/base-person). Not sprite-gen. Not image-gen motion.
+Toolkit: /Volumes/gameWorkspace/game-refs/pilgrimage — BASE_PERSON.md, WALKING.md, scripts/export-population.mjs.
+Packed sheet: 512 x 512, 64px cells. Rows S/E/N/W idle then S/E/N/W walk (8 gait samples from the authored 20). Opposite facings are authored; not mirrored.
+Sheet SHA-256: 92b2333ae58d2c2e351a5a81cf2800f52a85aceea92d2571f47f489586b4949d
+Final pixels: cropped from the v23 knight bake. Never sprite-gen chroma, never AI walk rows, never resized raw into a new identity.
