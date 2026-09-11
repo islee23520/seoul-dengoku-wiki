@@ -4,6 +4,7 @@ using System.IO;
 using System.Text;
 using Janseon.Core;
 using Janseon.Core.Battle.Contracts;
+using Janseon.Core.Battle.Sim;
 using Janseon.Foundation.AppFlow;
 using Janseon.Foundation.Composition;
 using Janseon.Foundation.UI;
@@ -14,7 +15,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using VContainer;
 
-public sealed class UiToolkitCapturePlayModeTests
+public sealed class UguiCapturePlayModeTests
 {
     const string CapturesRel = "../../.omo/evidence/poc-ugui-v4-runtime/captures";
     const int Seed = 90421;
@@ -82,9 +83,9 @@ public sealed class UiToolkitCapturePlayModeTests
 
         yield return ClickAwait(UiElementNames.ChoiceCombat, s => s.Battle != null && s.BattlePaused);
         yield return ClickAwait(UiElementNames.FormationSwapFront, s => s.LastClickedAction == UiElementNames.FormationSwapFront);
-        yield return ClickAwait(UiElementNames.EditFormation, s => s.Battle.Deployed);
-        yield return ClickAwait(UiElementNames.CardGeneralUse, s =>
-            Array.Find(s.Battle.Cards, card => card.Id == "encourage-morale").RechargeTicksLeft == 600);
+        OpenFormationEditor();
+        yield return ClickAwait(UiElementNames.FormationEditConfirm, s => s.Battle != null && s.Battle.Deployed);
+        yield return PlayGeneralCardAwait();
         yield return Capture(1280, 720, "battle-state", "battle-paused-card-recharging");
         yield return Capture(1920, 1080, "battle-state", "battle-paused-card-recharging");
         yield return ClickAwait(UiElementNames.BattlePlayPause, s => !s.BattlePaused);
@@ -147,6 +148,51 @@ public sealed class UiToolkitCapturePlayModeTests
         var completion = new ClickYield(session, done);
         button.onClick.Invoke();
         return completion;
+    }
+
+    static void OpenFormationEditor()
+    {
+        Button button = UguiHudBuilder.ButtonNamed(canvasRoot, UiElementNames.EditFormation);
+        Assert.That(button, Is.Not.Null, "missing " + UiElementNames.EditFormation);
+        button.onClick.Invoke();
+        Transform editor = UguiHudBuilder.Find(canvasRoot, UiElementNames.FormationEdit);
+        Assert.That(editor, Is.Not.Null, "formation-edit rail missing after edit-formation");
+        Assert.That(editor.gameObject.activeInHierarchy, Is.True,
+            "edit-formation must open the formation editor, not deploy");
+        Assert.That(session.Battle, Is.Not.Null);
+        Assert.That(session.Battle.Deployed, Is.False, "opening the editor must not deploy");
+    }
+
+    static IEnumerator PlayGeneralCardAwait()
+    {
+        var controller = session as PocCoreLoopController;
+        Assert.That(controller, Is.Not.Null, "production IPocCoreLoopSession must be PocCoreLoopController");
+        Button button = UguiHudBuilder.ButtonNamed(canvasRoot, UiElementNames.CardGeneralUse);
+        Assert.That(button, Is.Not.Null, "missing " + UiElementNames.CardGeneralUse);
+        button.onClick.Invoke();
+        OwnerCardTargetingMachine targeting = controller.Targeting;
+        Assert.That(targeting, Is.Not.Null, "owner-card targeting machine missing");
+        Assert.That(targeting.Stage, Is.EqualTo(CardTargetingStage.ChoosingAlly),
+            "HUD card click must begin targeting, not play the card");
+        Assert.That(targeting.CardId, Is.EqualTo("encourage-morale"));
+
+        UnitState owner = Array.Find(session.Battle.Units, unit => unit.Id.Equals(session.Battle.PlayerCommanderId));
+        Assert.That(owner, Is.Not.Null, "player commander missing");
+        UnitState ally = Array.Find(session.Battle.Units, unit =>
+            unit.Side == 0
+            && !unit.Id.Equals(owner.Id)
+            && unit.Hp > 0
+            && unit.State != "Down"
+            && Math.Abs(unit.Cell.X - owner.Cell.X) + Math.Abs(unit.Cell.Y - owner.Cell.Y) <= 2);
+        Assert.That(ally, Is.Not.Null, "no living ally within targeting radius");
+        Assert.That(targeting.SelectTarget(ally.Id), Is.True,
+            "SelectTarget failed: " + (targeting.LastRejection?.GetType().Name ?? "none"));
+
+        var completion = new ClickYield(session, s =>
+            Array.Find(s.Battle.Cards, card => card.Id == "encourage-morale").RechargeTicksLeft == 600);
+        Assert.That(targeting.Confirm(), Is.True,
+            "Confirm failed: " + (targeting.LastRejection?.GetType().Name ?? "none"));
+        yield return completion;
     }
 
     static IEnumerator WaitBattleTerminal()
@@ -475,7 +521,15 @@ public sealed class ClickYield : CustomYieldInstruction
             if (!complete && Time.realtimeSinceStartup >= deadline)
             {
                 session.StateChanged -= OnChanged;
-                Assert.Fail("timed out awaiting state after UI click");
+                object rejection = session.LastRejection;
+                Assert.Fail(
+                    "timed out awaiting state after UI click"
+                    + " lastClicked=" + (session.LastClickedAction ?? "null")
+                    + " rejectionType=" + (rejection == null ? "none" : rejection.GetType().FullName)
+                    + " rejection=" + (rejection == null ? "none" : rejection.ToString())
+                    + " stage=" + (session.Campaign == null ? "null" : session.Campaign.Stage.ToString())
+                    + " battleNull=" + (session.Battle == null)
+                    + " battlePaused=" + session.BattlePaused);
             }
             return !complete;
         }

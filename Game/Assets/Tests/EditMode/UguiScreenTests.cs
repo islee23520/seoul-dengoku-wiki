@@ -19,7 +19,7 @@ namespace Janseon.Foundation.Tests
     /// Canvas behavior contracts (Design.md). Asserts structure, FSM action,
     /// snapshot determinism, and readiness — not user-visible prose.
     /// </summary>
-    public sealed class UiToolkitScreenTests
+    public sealed class UguiScreenTests
     {
         [Test]
         public void MainTitle_BuildMainTitleCanvas_ExposesRequiredNames()

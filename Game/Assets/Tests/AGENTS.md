@@ -11,10 +11,10 @@ EditMode contracts and real-scene PlayMode evidence; score 8, distinct validatio
 | Battle handoff | `EditMode/BattleSrpgTests.cs` | Large deterministic SRPG fixture |
 | Settlement retries/conflicts | `EditMode/SettlementExactOnceTests.cs` | Receipts and exact-once effects |
 | Transition rejection/retry | `EditMode/ApplicationFlowTests.cs` | Recording scene-loader seams |
-| UI structure and regressions | `EditMode/UiToolkitScreenTests.cs`, `UiToolkitVisualQaDefectTests.cs` | Selectors, UXML/USS, resolution contracts |
+| UI structure and regressions | `EditMode/UguiScreenTests.cs`, `UguiVisualQaDefectTests.cs` | Canvas, `UiElementNames`, capture receipts |
 | Actual scene ownership | `PlayMode/FoundationSceneFlowTests.cs` | Bootstrap/content scopes, cancellation, disposal |
 | Gameplay integration | `PlayMode/CoreLoopPlayModeTests.cs` | Presenter actions through the live scoped session |
-| Capture matrix | `PlayMode/UiToolkitCapturePlayModeTests.cs` | PNGs plus machine-readable provenance receipts |
+| Capture matrix | `PlayMode/UguiCapturePlayModeTests.cs` | PNGs plus machine-readable provenance receipts |
 
 ## CONVENTIONS
 - Both asmdefs use `Janseon.Foundation.Tests`, `UNITY_INCLUDE_TESTS`, and `TestAssemblies`.
