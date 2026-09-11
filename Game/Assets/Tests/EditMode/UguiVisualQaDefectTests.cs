@@ -19,7 +19,7 @@ namespace Janseon.Foundation.Tests
     /// RED-first machine contracts for Todo 11 visual QA defects (capture + presentation).
     /// Asserts structure/values only — no user-visible prose pins.
     /// </summary>
-    public sealed class UiToolkitVisualQaDefectTests
+    public sealed class UguiVisualQaDefectTests
     {
         [Test]
         public void Presenter_RequiresBoundHpMoraleCards_BattleLog_AndSettlementOutcome()
@@ -298,7 +298,7 @@ namespace Janseon.Foundation.Tests
 
             // Capture harness must use the source-only helper (not raw full porcelain).
             string captureSrc = File.ReadAllText(Path.Combine(Application.dataPath,
-                "Tests/PlayMode/UiToolkitCapturePlayModeTests.cs"));
+                "Tests/PlayMode/UguiCapturePlayModeTests.cs"));
             Assert.That(captureSrc, Does.Contain("UiSourceFingerprint"),
                 "PlayMode capture receipts must use UiSourceFingerprint");
         }

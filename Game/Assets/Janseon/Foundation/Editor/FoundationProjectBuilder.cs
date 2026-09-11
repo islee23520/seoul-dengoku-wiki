@@ -198,22 +198,22 @@ namespace Janseon.Foundation.Editor
         }
 
         /// <summary>
-        /// Batchmode entry: force-import UI Toolkit screens/tests for Todo 11.
-        /// Invoked via -executeMethod Janseon.Foundation.Editor.FoundationProjectBuilder.ImportUiToolkitAssets
+        /// Batchmode entry: force-import uGUI screens/tests.
+        /// Invoked via -executeMethod Janseon.Foundation.Editor.FoundationProjectBuilder.ImportUguiAssets
         /// </summary>
-        public static void ImportUiToolkitAssets()
+        public static void ImportUguiAssets()
         {
             AssetDatabase.ImportAsset(
                 "Assets/Janseon/Foundation",
                 ImportAssetOptions.ImportRecursive | ImportAssetOptions.ForceUpdate);
             AssetDatabase.ImportAsset(
-                "Assets/Tests/EditMode/UiToolkitScreenTests.cs",
+                "Assets/Tests/EditMode/UguiScreenTests.cs",
                 ImportAssetOptions.ForceUpdate);
             AssetDatabase.ImportAsset(
                 "Assets/Tests/EditMode/Janseon.Foundation.EditModeTests.asmdef",
                 ImportAssetOptions.ForceUpdate);
             AssetDatabase.Refresh(ImportAssetOptions.ForceUpdate);
-            Debug.Log("UI_TOOLKIT_IMPORT_OK paths=Assets/Janseon/Foundation/UI,Assets/Tests/EditMode/UiToolkitScreenTests.cs");
+            Debug.Log("UGUI_IMPORT_OK paths=Assets/Janseon/Foundation/UI,Assets/Tests/EditMode/UguiScreenTests.cs");
         }
 
         /// <summary>
