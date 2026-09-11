@@ -1,0 +1,56 @@
+[PASS] node --test tools/wiki/test-world-atlas.mjs
+ resolved from asset path Then every external target exists [90m(4.0572ms)[39m[39m
+[32m✔ Given company-aliases manifest When real names enter canon Then every real name has a rename target [90m(0.4133ms)[39m[39m
+[34mℹ tests 69[39m
+[34mℹ suites 0[39m
+[34mℹ pass 69[39m
+[34mℹ fail 0[39m
+[34mℹ cancelled 0[39m
+[34mℹ skipped 0[39m
+[34mℹ todo 0[39m
+[34mℹ duration_ms 11936.8586[39m
+
+
+[PASS] node tools/wiki/verify-world-expansion.mjs --docs docs/game-logic --stage houses --atlas docs/game-logic/World-Narrative-Atlas.md
+
+
+[PASS] node tools/wiki/verify-world-expansion.mjs --docs docs/game-logic --stage seeds --atlas docs/game-logic/World-Narrative-Atlas.md
+
+
+[PASS] node tools/wiki/verify-world-expansion.mjs --docs docs/game-logic --stage theaters --atlas docs/game-logic/World-Narrative-Atlas.md
+
+
+[PASS] node tools/wiki/verify-world-expansion.mjs --docs docs/game-logic --stage synthetics --atlas docs/game-logic/World-Narrative-Atlas.md
+
+
+[PASS] node tools/wiki/verify-world-expansion.mjs --docs docs/game-logic --stage story-manifest --atlas docs/game-logic/World-Narrative-Atlas.md
+
+
+[PASS] node tools/wiki/verify-world-expansion.mjs --docs docs/game-logic --stage monster-manifest --atlas docs/game-logic/World-Narrative-Atlas.md
+
+
+[PASS] node tools/wiki/verify-world-expansion.mjs --docs docs/game-logic --stage foundation --atlas docs/game-logic/World-Narrative-Atlas.md
+
+
+[PASS] node --test tools/wiki/test-monster-batches-M021-M030.mjs
+다 [90m(1.1549ms)[39m[39m
+[32m✔ 실재 기업 토큰은 원천 캐논에서 허용된다(개명 이음새) [90m(1.2323ms)[39m[39m
+[32m✔ 범위 밖 Monster-Batch 파일을 거부한다 [90m(22.6019ms)[39m[39m
+[32m✔ 잘못된 CLI 인자는 nonzero clean error [90m(105.6644ms)[39m[39m
+[34mℹ tests 14[39m
+[34mℹ suites 0[39m
+[34mℹ pass 14[39m
+[34mℹ fail 0[39m
+[34mℹ cancelled 0[39m
+[34mℹ skipped 0[39m
+[34mℹ todo 0[39m
+[34mℹ duration_ms 261.1429[39m
+
+
+[PASS] node tools/wiki/materialize-world-atlas.mjs --check --atlas docs/game-logic/World-Narrative-Atlas.md --out docs/game-logic
+557da372d04b1bb33e6258013cd4c8ffbe669e4f6068225
+world-atlas-isometric.svg 5f48d7872569ae3b4d8ed0ccb5fe95971b90fa12f204b3b131346e5ebd4cb88d
+house-influence-isometric.svg 1a2a23fcd514c13a6763f57e71e25db0ab6f58dbea25279d2f3deff33ef7d792
+hostile-ecology-isometric.svg 324aa453ca9c928d171b39abef0cc5e45929b15452bafa901bd40d309f8e852d
+atlas 82054a41b7c6ab4e100238833d228155d91bc8d84f50d1a5decfec4c172b806e
+

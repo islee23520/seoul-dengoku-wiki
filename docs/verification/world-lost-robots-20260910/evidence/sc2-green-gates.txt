@@ -1,0 +1,54 @@
+[PASS] node tools/wiki/materialize-world-atlas.mjs --atlas docs/game-logic/World-Narrative-Atlas.md --out docs/game-logic
+21afc1a254f1ed25e69640ff5bfdadf868872cace53e904fe58c5db9976e4
+Hostile-Group-G24.md b8c75cc341431061a8e13eb0e293e14c22169257c8dc7adc8b65f670fce32485
+world-atlas-isometric.svg 59b6d9034cb26a4d55dd196ed435cdfd066eaa11bae229cd2bdc798dc9021caa
+house-influence-isometric.svg 79eb7df955366f728da91e3b6bf9ce581c024a1c3e0b8fc49831c3a0a257c326
+hostile-ecology-isometric.svg 18b67a453888130b1a9c0d5537fafd4ed84c0d36403a7589c79cad5e0e877975
+atlas bfb61146b6f0857cfeae4b50ea3644897eb688a9bae63dd344be8a383def7211
+
+
+[FAIL] node tools/wiki/verify-world-expansion.mjs --docs docs/game-logic --stage story-manifest --atlas docs/game-logic/World-Narrative-Atlas.md
+E_K_MAP: K413 송별하
+
+
+[FAIL] node tools/wiki/verify-world-expansion.mjs --docs docs/game-logic --stage story-batch --batch B047 --atlas docs/game-logic/World-Narrative-Atlas.md
+E_K_MAP: K413 송별하
+
+
+[PASS] node tools/wiki/verify-world-expansion.mjs --docs docs/game-logic --stage foundation --atlas docs/game-logic/World-Narrative-Atlas.md
+
+
+[FAIL] node tools/wiki/verify-world-expansion.mjs --docs docs/game-logic --stage seeds --atlas docs/game-logic/World-Narrative-Atlas.md
+E_K_MAP: K413 송별하
+
+
+[FAIL] node --test tools/wiki/test-world-atlas.mjs
+essPendingSubtests (node:internal/test_runner/test:785:18)[39m
+  [90m    at Test.postRun (node:internal/test_runner/test:1232:19)[39m
+  [90m    at Test.run (node:internal/test_runner/test:1160:12)[39m
+  [90m    at async Test.processPendingSubtests (node:internal/test_runner/test:785:7)[39m {
+    generatedMessage: [33mfalse[39m,
+    code: [32m'ERR_ASSERTION'[39m,
+    actual: [33m1[39m,
+    expected: [33m0[39m,
+    operator: [32m'strictEqual'[39m,
+    diff: [32m'simple'[39m
+  }
+
+
+[PASS] node --test tools/wiki/test-verify-cast.mjs
+st-r9BOTC
+cleaned C:\Users\oliver\AppData\Local\Temp\verify-cast-2iPQID
+cleaned C:\Users\oliver\AppData\Local\Temp\verify-cast-R4XBI5
+cleaned C:\Users\oliver\AppData\Local\Temp\verify-cast-Cr62xz
+cleaned C:\Users\oliver\AppData\Local\Temp\verify-cast-QPHscQ
+cleaned C:\Users\oliver\AppData\Local\Temp\verify-cast-ccbJvE
+[34mℹ tests 21[39m
+[34mℹ suites 0[39m
+[34mℹ pass 21[39m
+[34mℹ fail 0[39m
+[34mℹ cancelled 0[39m
+[34mℹ skipped 0[39m
+[34mℹ todo 0[39m
+[34mℹ duration_ms 1331.6508[39m
+
