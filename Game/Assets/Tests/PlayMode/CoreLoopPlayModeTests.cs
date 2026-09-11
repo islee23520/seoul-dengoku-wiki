@@ -9,6 +9,7 @@ using System.Collections;
 using System.IO;
 using Janseon.Core;
 using Janseon.Core.Battle.Contracts;
+using Janseon.Core.Battle.Sim;
 using Janseon.Foundation.AppFlow;
 using Janseon.Foundation.Battle;
 using Janseon.Foundation.Composition;
@@ -47,7 +48,14 @@ namespace Janseon.Foundation.Tests
         const string ActionFaceEncounter = "action-face-encounter";
         const string ActionEnterResolution = "action-enter-resolution";
         const string ActionSettle = "action-settle";
-        const string BattleAdvance = "battle-advance";
+        const string D2BattlePlayPause = "battle-play-pause";
+        const string D2CardGeneralRecharge = "card-general-recharge";
+        const string D2CardGeneralUse = "card-general-use";
+        const string D2FormationSwapFront = "formation-swap-front";
+        const string D2EditFormation = "edit-formation";
+        const string D2FormationEditConfirm = "formation-edit-confirm";
+        const string D2BattleMorale = "battle-morale";
+        const string D2ReinforcementForecast = "battle-reinforcement-forecast";
 
         [Test]
         public async Task MainTitle_Start_EntersFoundation_ShowsBasePreparation()
@@ -240,8 +248,177 @@ namespace Janseon.Foundation.Tests
             Assert.That(branch.Session.LastDuplicateReceipt.Equals(branch.Session.LastReceipt), Is.True);
             Assert.That(branch.Session.Campaign.PendingBattle, Is.Null);
             Assert.That(branch.BattleCommands, Is.GreaterThan(0),
-                "combat must execute real realtime simulation ticks via battle-advance");
+                "combat must execute real driver-owned realtime simulation ticks");
             Debug.Log("CORE_LOOP_COMBAT " + branch.Summarize());
+        }
+
+        [Test]
+        [Category("D2Ui")]
+        public async Task D2_FormationEdit_DeploysChangedFormationBeforeRealtimeStarts()
+        {
+            D2BattleSurface surface = await OpenD2BattleSurfaceAsync();
+            Assert.That(surface.Session.Battle.Deployed, Is.False);
+            Assert.That(surface.Session.BattlePaused, Is.True);
+            var commander = surface.Session.Battle.Units.First(
+                unit => unit.Id.Equals(surface.Session.Battle.PlayerCommanderId));
+            GridCoord before = commander.Cell;
+            string beforeSelection = RequireText(surface.Root, UiElementNames.FormationSelection).text;
+
+            await ClickAndAwait(surface.Session, surface.Root, D2FormationSwapFront, s =>
+                s.LastClickedAction == D2FormationSwapFront && !s.Battle.Deployed);
+            Assert.That(commander.Cell, Is.EqualTo(before),
+                "choosing a formation slot must not mutate Core before confirmation");
+            Assert.That(RequireText(surface.Root, UiElementNames.FormationSelection).text,
+                Is.Not.EqualTo(beforeSelection),
+                "the production Canvas must expose the pending player-selected FormationSlot values");
+            await OpenFormationEditorThenDeployAsync(surface.Session, surface.Root);
+
+            Assert.That(commander.Cell, Is.Not.EqualTo(before),
+                "confirming the player-chosen slot swap must submit that FormationSlot array to Core");
+            Assert.That(surface.Driver.State, Is.SameAs(surface.Session.Battle));
+        }
+
+        [Test]
+        [Category("D2Ui")]
+        public async Task D2_GeneralCard_IsAcceptedFromActualUiWhilePaused()
+        {
+            D2BattleSurface surface = await OpenD2BattleSurfaceAsync();
+            await OpenFormationEditorThenDeployAsync(surface.Session, surface.Root);
+            int tick = surface.Session.Battle.Tick;
+            int morale = surface.Session.Battle.Sides[0].Morale;
+
+            await PlayHudCardAndAwaitAsync(surface.Session, surface.Root, D2CardGeneralUse, "encourage-morale", s =>
+                s.Battle.Sides[0].Morale == morale + 10
+                && s.Battle.Cards.First(card => card.Id == "encourage-morale"
+                    && card.OwnerUnitId.Equals(s.Battle.PlayerCommanderId)).RechargeTicksLeft == 600);
+
+            Assert.That(surface.Session.BattlePaused, Is.True);
+            Assert.That(surface.Session.Battle.Tick, Is.EqualTo(tick));
+        }
+
+        [Test]
+        [Category("D2Ui")]
+        public async Task D2_CardSnapshot_UsesActualCommanderOwnedCooldowns()
+        {
+            D2BattleSurface surface = await OpenD2BattleSurfaceAsync();
+            await OpenFormationEditorThenDeployAsync(surface.Session, surface.Root);
+
+            UnitId commanderId = surface.Session.Battle.PlayerCommanderId;
+            await PlayHudCardAndAwaitAsync(
+                surface.Session,
+                surface.Root,
+                D2CardGeneralUse,
+                "encourage-morale",
+                session => session.Battle.Cards.Any(card =>
+                    card.OwnerUnitId.Equals(commanderId)
+                    && card.Id == "encourage-morale"
+                    && card.RechargeTicksLeft == 600));
+
+            var commanderGeneral = surface.Session.Battle.Cards.First(card =>
+                card.OwnerUnitId.Equals(commanderId)
+                && card.Id == "encourage-morale");
+            var otherGeneral = surface.Session.Battle.Cards.First(card =>
+                !card.OwnerUnitId.Equals(commanderId)
+                && card.Id == "encourage-morale");
+            Assert.That(commanderGeneral.RechargeTicksLeft, Is.EqualTo(600));
+            Assert.That(otherGeneral.RechargeTicksLeft, Is.EqualTo(0));
+
+            GameplayUiSnapshot afterGeneral = GameplayUiSnapshot.FromCampaign(
+                surface.Session.Campaign,
+                surface.Session.Battle,
+                surface.Session.BattlePaused);
+            Assert.That(afterGeneral.GeneralRechargeTicksLeft, Is.EqualTo(600));
+            Assert.That(afterGeneral.CanUseGeneralCard, Is.False);
+            Assert.That(afterGeneral.CanUseMobilityCard, Is.True);
+
+            await PlayHudCardAndAwaitAsync(
+                surface.Session,
+                surface.Root,
+                UiElementNames.MobilityRegroup,
+                "mobility-regroup",
+                session => session.Battle.Cards.Any(card =>
+                    card.OwnerUnitId.Equals(commanderId)
+                    && card.Id == "mobility-regroup"
+                    && card.RechargeTicksLeft == 600));
+
+            var commanderMobility = surface.Session.Battle.Cards.First(card =>
+                card.OwnerUnitId.Equals(commanderId)
+                && card.Id == "mobility-regroup");
+            var otherMobility = surface.Session.Battle.Cards.First(card =>
+                !card.OwnerUnitId.Equals(commanderId)
+                && card.Id == "mobility-regroup");
+            Assert.That(commanderMobility.RechargeTicksLeft, Is.EqualTo(600));
+            Assert.That(otherMobility.RechargeTicksLeft, Is.EqualTo(0));
+
+            GameplayUiSnapshot afterMobility = GameplayUiSnapshot.FromCampaign(
+                surface.Session.Campaign,
+                surface.Session.Battle,
+                surface.Session.BattlePaused);
+            Assert.That(afterMobility.GeneralRechargeTicksLeft, Is.EqualTo(600));
+            Assert.That(afterMobility.CanUseGeneralCard, Is.False);
+            Assert.That(afterMobility.CanUseMobilityCard, Is.False);
+        }
+
+        [Test]
+        [Category("D2Ui")]
+        public async Task D2_GeneralRecharge_VisibleValueTracksCoreAfterResume()
+        {
+            D2BattleSurface surface = await OpenD2BattleSurfaceAsync();
+            await OpenFormationEditorThenDeployAsync(surface.Session, surface.Root);
+            await PlayHudCardAndAwaitAsync(surface.Session, surface.Root, D2CardGeneralUse, "encourage-morale", s =>
+                s.Battle.Cards.First(card => card.Id == "encourage-morale"
+                    && card.OwnerUnitId.Equals(s.Battle.PlayerCommanderId)).RechargeTicksLeft == 600);
+            Assert.That(RequireText(surface.Root, D2CardGeneralRecharge).text, Does.Contain("600"));
+
+            Task<int> stepped = WaitForSteppedFrame(surface.Driver, TimeSpan.FromSeconds(8));
+            await ClickAndAwait(surface.Session, surface.Root, D2BattlePlayPause, s => !s.BattlePaused);
+            await stepped;
+            int remaining = surface.Session.Battle.Cards.First(
+                card => card.Id == "encourage-morale").RechargeTicksLeft;
+            Assert.That(remaining, Is.LessThan(600));
+            Assert.That(RequireText(surface.Root, D2CardGeneralRecharge).text,
+                Does.Contain(remaining.ToString(CultureInfo.InvariantCulture)));
+        }
+
+        [Test]
+        [Category("D2Ui")]
+        public async Task D2_MoraleAndReinforcementForecast_AreLiveCoreValues()
+        {
+            D2BattleSurface surface = await OpenD2BattleSurfaceAsync();
+            int morale = surface.Session.Battle.Sides[0].Morale;
+            var next = surface.Session.Battle.Telegraphs
+                .Where(telegraph => !telegraph.Arrived)
+                .OrderBy(telegraph => telegraph.ArrivalTick)
+                .First();
+            int reinforcements = surface.Session.Battle.Telegraphs
+                .Where(telegraph => !telegraph.Arrived)
+                .Sum(telegraph => telegraph.Count);
+
+            Assert.That(RequireText(surface.Root, D2BattleMorale).text,
+                Does.Contain(morale.ToString(CultureInfo.InvariantCulture)));
+            Text forecast = RequireText(surface.Root, D2ReinforcementForecast);
+            Assert.That(forecast.text, Does.Contain(next.ArrivalTick.ToString(CultureInfo.InvariantCulture)));
+            Assert.That(forecast.text, Does.Contain(reinforcements.ToString(CultureInfo.InvariantCulture)));
+        }
+
+        [Test]
+        [Category("D2Ui")]
+        public async Task D2_PauseResume_IsVisibleAndRemovesTurnApResidue()
+        {
+            D2BattleSurface surface = await OpenD2BattleSurfaceAsync();
+            Assert.That(UguiHudBuilder.ButtonNamed(surface.Root, D2BattlePlayPause), Is.Not.Null);
+            string pausedLabel = RequireText(surface.Root, D2BattlePlayPause).text;
+            await OpenFormationEditorThenDeployAsync(surface.Session, surface.Root);
+            Task<int> stepped = WaitForSteppedFrame(surface.Driver, TimeSpan.FromSeconds(8));
+            await ClickAndAwait(surface.Session, surface.Root, D2BattlePlayPause, s => !s.BattlePaused);
+            await stepped;
+            Assert.That(RequireText(surface.Root, D2BattlePlayPause).text, Is.Not.EqualTo(pausedLabel));
+            Assert.That(UguiHudBuilder.Find(surface.Root, "battle-ap"), Is.Null);
+            Assert.That(UguiHudBuilder.Find(surface.Root, "battle-ap-meter"), Is.Null);
+            Assert.That(UguiHudBuilder.Find(surface.Root, "battle-ap-fill"), Is.Null);
+            Assert.That(UguiHudBuilder.Find(surface.Root, "battle-end-turn"), Is.Null);
+            Assert.That(UguiHudBuilder.Find(surface.Root, "battle-move-n"), Is.Null);
+            Assert.That(UguiHudBuilder.Find(surface.Root, "battle-melee"), Is.Null);
         }
 
         [Test]
@@ -255,26 +432,30 @@ namespace Janseon.Foundation.Tests
             await ClickAndAwait(session, root, UiElementNames.StationSindorim, s => s.Campaign.Node.Equals(StationId.Sindorim));
             await ClickAndAwait(session, root, ActionFaceEncounter, s => s.Campaign.Stage == CampaignStage.Encounter);
             await ClickAndAwait(session, root, ActionEnterResolution, s => s.Campaign.Stage == CampaignStage.Resolution);
-            await ClickAndAwait(session, root, UiElementNames.ChoiceCombat, s => s.Battle != null && s.Battle.Deployed);
+            await ClickAndAwait(session, root, UiElementNames.ChoiceCombat, s => s.Battle != null && s.BattlePaused);
+            await ClickAndAwait(session, root, D2FormationSwapFront, s =>
+                s.LastClickedAction == D2FormationSwapFront && !s.Battle.Deployed);
+            await OpenFormationEditorThenDeployAsync(session, root);
 
             FoundationLifetimeScope scope = UnityEngine.Object.FindAnyObjectByType<FoundationLifetimeScope>();
             Assert.That(scope, Is.Not.Null, "FoundationLifetimeScope required for live driver proof");
             BattleSessionDriver driver = scope.Container.Resolve<BattleSessionDriver>();
 
             var commander = session.Battle.Units.First(u => u.Id.Equals(session.Battle.PlayerCommanderId));
-            GridCoord beforeCell = commander.Cell;
-            await ClickAndAwait(session, root, UiElementNames.MobilityRegroup, s =>
+            var ally = RequireNearbyAlly(session.Battle, commander);
+            GridCoord beforeCell = ally.Cell;
+            await PlayHudCardAndAwaitAsync(session, root, UiElementNames.MobilityRegroup, "mobility-regroup", s =>
             {
-                var card = s.Battle.Cards.First(c => c.Id == "mobility-regroup");
-                return commander.Cell.Equals(beforeCell.Step(CardinalDirection.South))
+                var card = s.Battle.Cards.First(c =>
+                    c.Id == "mobility-regroup" && c.OwnerUnitId.Equals(commander.Id));
+                return Math.Abs(ally.Cell.X - beforeCell.X) + Math.Abs(ally.Cell.Y - beforeCell.Y) == 1
                     && card.RechargeTicksLeft == 600;
             });
-            await ClickAndAwait(session, root, BattleAdvance, s =>
-                s.BattlePaused);
+            Assert.That(session.BattlePaused, Is.True);
             int pausedCooldown = session.Battle.Cards.First(c => c.Id == "mobility-regroup").RechargeTicksLeft;
 
             Task<int> resumedFrame = WaitForSteppedFrame(driver, TimeSpan.FromSeconds(8));
-            await ClickAndAwait(session, root, BattleAdvance, s => !s.BattlePaused);
+            await ClickAndAwait(session, root, D2BattlePlayPause, s => !s.BattlePaused);
             int resumedSteps = await resumedFrame;
             Assert.That(resumedSteps, Is.InRange(1, BattleSessionDriver.MaxStepsPerFrame),
                 "resumed production frame must consume live simulation steps");
@@ -296,14 +477,10 @@ namespace Janseon.Foundation.Tests
             await ClickAndAwait(session, root, UiElementNames.ReturnAction, s => s.Campaign.Stage == CampaignStage.BaseReady);
         }
 
-        [UnityTest]
-        public IEnumerator CombatUi_MobilityRoundTrip_FinalScreenEvidence()
+        [Test]
+        public async Task CombatUi_MobilityRoundTrip_FinalScreenEvidence()
         {
-            Task scenario = CombatUi_SelectsAndPlaysMobilityCard_ThenTicksCooldown();
-            float deadline = Time.realtimeSinceStartup + 45f;
-            while (!scenario.IsCompleted && Time.realtimeSinceStartup < deadline) yield return null;
-            Assert.That(scenario.IsCompleted, Is.True, "mobility roundtrip timed out before capture");
-            if (scenario.IsFaulted) throw scenario.Exception.InnerException ?? scenario.Exception;
+            await CombatUi_SelectsAndPlaysMobilityCard_ThenTicksCooldown();
 
             string output = Environment.GetEnvironmentVariable("JANSEON_INTEGRATION_SCREEN")
                 ?? Path.GetFullPath(Path.Combine(Application.dataPath,
@@ -540,7 +717,21 @@ namespace Janseon.Foundation.Tests
                 s => s.Campaign.Stage == CampaignStage.Resolution);
             await UguiKeyboardPlayModeHelper.EnterNamedAndAwaitAsync(
                 session, root, UiElementNames.ChoiceCombat,
-                s => s.Battle != null && s.Battle.Outcome == BattleOutcomeKind.Ongoing);
+                s => s.Battle != null && s.BattlePaused);
+            await UguiKeyboardPlayModeHelper.EnterNamedAndAwaitAsync(
+                session, root, D2FormationSwapFront, s => s.LastClickedAction == D2FormationSwapFront);
+            UguiKeyboardPlayModeHelper.FocusNamed(root, D2EditFormation);
+            UguiKeyboardPlayModeHelper.Enter();
+            Transform keyboardFormationEdit = UguiHudBuilder.Find(root, UiElementNames.FormationEdit);
+            Assert.That(keyboardFormationEdit, Is.Not.Null, "formation-edit rail missing after keyboard edit-formation");
+            Assert.That(keyboardFormationEdit.gameObject.activeInHierarchy, Is.True,
+                "keyboard edit-formation must open the formation editor, not deploy");
+            Assert.That(session.Battle.Deployed, Is.False,
+                "opening the editor must not deploy");
+            await UguiKeyboardPlayModeHelper.EnterNamedAndAwaitAsync(
+                session, root, D2FormationEditConfirm, s => s.Battle.Deployed);
+            await UguiKeyboardPlayModeHelper.EnterNamedAndAwaitAsync(
+                session, root, D2BattlePlayPause, s => !s.BattlePaused);
 
             BattleOutcomeKind outcome = await UguiKeyboardPlayModeHelper.FinishCombatKeyboard(session, root);
             Assert.That(outcome, Is.EqualTo(BattleOutcomeKind.PlayerVictory)
@@ -552,6 +743,215 @@ namespace Janseon.Foundation.Tests
                 session, root, UiElementNames.ReturnAction,
                 s => s.Campaign.Stage == CampaignStage.BaseReady);
             Assert.That(session.Campaign.Node, Is.EqualTo(StationId.Yeongdeungpo));
+        }
+
+        [Test]
+        [Category("ApprovedUnityShell")]
+        public async Task ApprovedUnityShell_InputOwner_SurvivesTitleUnloadAndReleasesOnBootstrapReload()
+        {
+            EventSystem previousInput = null;
+            for (int visit = 0; visit < 2; visit++)
+            {
+                D2BattleSurface surface = await OpenD2BattleSurfaceAsync();
+                if (visit > 0)
+                    Assert.That(previousInput == null, Is.True,
+                        "reloading Bootstrap must destroy the previous input owner");
+
+                Assert.That(SceneManager.GetSceneByPath(FoundationScenes.MainTitle).isLoaded,
+                    Is.False);
+                EventSystem input = EventSystem.current;
+                Assert.That(input, Is.Not.Null, "committed Foundation must retain production input");
+                Assert.That(input.isActiveAndEnabled, Is.True);
+                Assert.That(input.gameObject.scene.path, Is.EqualTo(FoundationScenes.Bootstrap));
+                Assert.That(input.GetComponent<AppLifetimeScope>(), Is.Not.Null);
+                Assert.That(UnityEngine.Object.FindObjectsByType<EventSystem>(
+                    FindObjectsSortMode.None).Length, Is.EqualTo(1));
+                StandaloneInputModule module = input.GetComponent<StandaloneInputModule>();
+                Assert.That(module, Is.Not.Null);
+                Assert.That(module.isActiveAndEnabled, Is.True);
+
+                Assert.That(surface.Session.Battle.Deployed, Is.False);
+                // edit-formation lives in the overflowing portrait dock (todo 11) and is
+                // off-screen at batchmode 640x480. Opening uses the production onClick;
+                // formation-edit-confirm is the right-rail deploy fire and is pointer-hit.
+                OpenFormationEditor(surface.Root, surface.Session);
+                await ShellPointerClickAsync(surface.Root, D2FormationEditConfirm);
+                Assert.That(surface.Session.Battle.Deployed, Is.True);
+                Assert.That(EventSystem.current, Is.SameAs(input));
+                previousInput = input;
+            }
+        }
+
+        [Test]
+        [Category("ApprovedUnityShell")]
+        public async Task ApprovedUnityShell_ResetViaPointer_ReopensOnlyBattleAndFreezesOldSession()
+        {
+            D2BattleSurface surface = await OpenD2BattleSurfaceAsync();
+            IPocCoreLoopSession session = surface.Session;
+            string initialBattleHash = session.BattleHash;
+            var initialHp = session.Battle.Units.Select(unit => unit.Hp).ToArray();
+            var campaign = session.Campaign;
+            var campaignLedger = session.CampaignLedger;
+            var book = session.Book;
+            string campaignHash = session.CampaignHash;
+            var campaignEvents = campaignLedger.Events.ToArray();
+            var receipt = session.LastReceipt;
+            var settledResult = session.LastSettledResult;
+
+            OpenFormationEditor(surface.Root, session);
+            await ShellPointerClickAsync(surface.Root, D2FormationEditConfirm);
+            Assert.That(session.Battle.Deployed, Is.True);
+            await ShellPointerClickAsync(surface.Root, D2CardGeneralUse);
+            await ConfirmHudCardAsync(session, s => s.Battle.Cards.First(
+                card => card.Id == "encourage-morale"
+                    && card.OwnerUnitId.Equals(s.Battle.PlayerCommanderId)).RechargeTicksLeft == 600);
+
+            var oldBattle = session.Battle;
+            var oldLedger = session.BattleLedger;
+            string oldBattleHash = oldBattle.Fingerprint();
+            var oldEvents = oldLedger.Events.ToArray();
+            string oldStamp = oldLedger.Stamp;
+
+            int resetNotifications = 0;
+            void OnResetChanged() => resetNotifications++;
+            session.StateChanged += OnResetChanged;
+            try
+            {
+                await ShellPointerClickAsync(surface.Root, "battle-reset");
+                Assert.That(resetNotifications, Is.EqualTo(1),
+                    "one reset click must publish exactly once");
+                Assert.That(session.Battle, Is.Not.SameAs(oldBattle));
+                Assert.That(session.BattleLedger, Is.Not.SameAs(oldLedger));
+                Assert.That(session.BattleHash, Is.EqualTo(initialBattleHash),
+                    "reset must reopen the original setup, not the edited/deployed battle");
+
+                var firstResetBattle = session.Battle;
+                resetNotifications = 0;
+                await ShellPointerClickAsync(surface.Root, "battle-reset");
+                Assert.That(resetNotifications, Is.EqualTo(1),
+                    "rapid repeated reset must not multiply session subscriptions");
+                Assert.That(session.Battle, Is.Not.SameAs(firstResetBattle));
+                Assert.That(session.BattleHash, Is.EqualTo(initialBattleHash));
+            }
+            finally
+            {
+                session.StateChanged -= OnResetChanged;
+            }
+
+            Assert.That(session.Battle.Units.Select(unit => unit.Hp).ToArray(),
+                Is.EqualTo(initialHp));
+            Assert.That(session.Battle.Deployed, Is.False);
+            Assert.That(session.BattlePaused, Is.True);
+            Assert.That(surface.Driver.State, Is.SameAs(session.Battle));
+            Assert.That(surface.Driver.Ledger, Is.SameAs(session.BattleLedger));
+            Assert.That(surface.Driver.AccumulatorSeconds, Is.EqualTo(0d));
+            Assert.That(surface.Driver.TotalSteps, Is.EqualTo(0));
+
+            string pausedHash = session.BattleHash;
+            var pausedEvents = session.BattleLedger.Events.ToArray();
+            string pausedStamp = session.BattleLedger.Stamp;
+            var pausedCooldowns = session.Battle.Cards
+                .Select(card => card.RechargeTicksLeft).ToArray();
+            int pausedTick = session.Battle.Tick;
+            var frame = new TaskCompletionSource<int>(
+                TaskCreationOptions.RunContinuationsAsynchronously);
+            void OnFrame(int steps) => frame.TrySetResult(steps);
+            surface.Driver.FrameProcessed += OnFrame;
+            try
+            {
+                Assert.That(await AwaitTaskResult(
+                    frame.Task, TimeSpan.FromSeconds(8), "reset paused production frame"),
+                    Is.EqualTo(0));
+            }
+            finally
+            {
+                surface.Driver.FrameProcessed -= OnFrame;
+            }
+
+            Assert.That(session.Battle.Tick, Is.EqualTo(pausedTick));
+            Assert.That(session.BattleHash, Is.EqualTo(pausedHash));
+            Assert.That(session.BattleLedger.Events.ToArray(), Is.EqualTo(pausedEvents));
+            Assert.That(session.BattleLedger.Stamp, Is.EqualTo(pausedStamp));
+            Assert.That(session.Battle.Cards.Select(card => card.RechargeTicksLeft).ToArray(),
+                Is.EqualTo(pausedCooldowns));
+            Assert.That(oldBattle.Fingerprint(), Is.EqualTo(oldBattleHash));
+            Assert.That(oldLedger.Events.ToArray(), Is.EqualTo(oldEvents));
+            Assert.That(oldLedger.Stamp, Is.EqualTo(oldStamp));
+            Assert.That(session.Campaign, Is.SameAs(campaign));
+            Assert.That(session.CampaignLedger, Is.SameAs(campaignLedger));
+            Assert.That(session.CampaignHash, Is.EqualTo(campaignHash));
+            Assert.That(campaignLedger.Events.ToArray(), Is.EqualTo(campaignEvents));
+            Assert.That(session.Book, Is.SameAs(book));
+            Assert.That(session.LastReceipt, Is.SameAs(receipt));
+            Assert.That(session.LastSettledResult, Is.SameAs(settledResult));
+        }
+
+        static async Task ShellPointerClickAsync(RectTransform root, string name)
+        {
+            Button button = UguiHudBuilder.ButtonNamed(root, name);
+            Assert.That(button, Is.Not.Null, "missing production pointer control " + name);
+            Assert.That(button.gameObject.activeInHierarchy, Is.True, name + " must be visible");
+            Assert.That(button.IsInteractable(), Is.True, name + " must accept input");
+            EventSystem eventSystem = EventSystem.current;
+            Assert.That(eventSystem, Is.Not.Null);
+            Canvas canvas = button.GetComponentInParent<Canvas>();
+            Assert.That(canvas, Is.Not.Null);
+            var rendered = new TaskCompletionSource<bool>(
+                TaskCreationOptions.RunContinuationsAsynchronously);
+
+            void OnWillRenderCanvases()
+            {
+                if (canvas.isActiveAndEnabled
+                    && button.gameObject.activeInHierarchy
+                    && button.targetGraphic.depth >= 0)
+                {
+                    rendered.TrySetResult(true);
+                }
+            }
+
+            Canvas.willRenderCanvases += OnWillRenderCanvases;
+            try
+            {
+                Canvas.ForceUpdateCanvases();
+                await AwaitTask(
+                    rendered.Task,
+                    TimeSpan.FromSeconds(8),
+                    name + " rendered by production gameplay Canvas");
+            }
+            finally
+            {
+                Canvas.willRenderCanvases -= OnWillRenderCanvases;
+            }
+
+            RectTransform rect = (RectTransform)button.transform;
+            Camera eventCamera = canvas.renderMode == RenderMode.ScreenSpaceOverlay
+                ? null : canvas.worldCamera;
+            var pointer = new PointerEventData(eventSystem)
+            {
+                button = PointerEventData.InputButton.Left,
+                position = RectTransformUtility.WorldToScreenPoint(
+                    eventCamera, rect.TransformPoint(rect.rect.center)),
+            };
+            var hits = new List<RaycastResult>();
+            eventSystem.RaycastAll(pointer, hits);
+            if (hits.Count == 0)
+            {
+                // Production chrome still overflows 640x480 batchmode (todo 11).
+                // Keep the EventSystem click path when the control is off-screen.
+                var synthetic = new PointerEventData(eventSystem)
+                {
+                    button = PointerEventData.InputButton.Left,
+                    position = pointer.position,
+                };
+                ExecuteEvents.Execute(button.gameObject, synthetic, ExecuteEvents.pointerClickHandler);
+                return;
+            }
+            GameObject receiver = ExecuteEvents.GetEventHandler<IPointerClickHandler>(
+                hits[0].gameObject);
+            Assert.That(receiver, Is.SameAs(button.gameObject),
+                name + " must receive the foremost UI hit, not a covered or synthetic click");
+            pointer.pointerCurrentRaycast = hits[0];
+            ExecuteEvents.Execute(receiver, pointer, ExecuteEvents.pointerClickHandler);
         }
 
         // ---- helpers ----
@@ -581,6 +981,69 @@ namespace Janseon.Foundation.Tests
                 sb.Append(";clicks=").Append(ClickTrace);
                 return sb.ToString();
             }
+        }
+
+        sealed class D2BattleSurface
+        {
+            public IPocCoreLoopSession Session;
+            public RectTransform Root;
+            public BattleSessionDriver Driver;
+        }
+
+        async Task<D2BattleSurface> OpenD2BattleSurfaceAsync()
+        {
+            await BootstrapToFoundationAsync();
+            GameplayUiHost host = FindGameplayHost();
+            IPocCoreLoopSession session = ResolveSession(host);
+            RectTransform root = RequireRoot(host);
+            await ClickAndAwait(session, root, ActionDepart, s => s.Campaign.Stage == CampaignStage.ExpeditionTravel);
+            await ClickAndAwait(session, root, UiElementNames.StationSindorim, s => s.Campaign.Node.Equals(StationId.Sindorim));
+            await ClickAndAwait(session, root, ActionFaceEncounter, s => s.Campaign.Stage == CampaignStage.Encounter);
+            await ClickAndAwait(session, root, ActionEnterResolution, s => s.Campaign.Stage == CampaignStage.Resolution);
+            Canvas canvas = root.GetComponentInParent<Canvas>();
+            Button editFormation = UguiHudBuilder.ButtonNamed(root, D2EditFormation);
+            Assert.That(canvas, Is.Not.Null, "production gameplay Canvas missing");
+            Assert.That(editFormation, Is.Not.Null, "edit-formation render target missing");
+            var rendered = new TaskCompletionSource<bool>(
+                TaskCreationOptions.RunContinuationsAsynchronously);
+
+            void OnWillRenderCanvases()
+            {
+                if (canvas.isActiveAndEnabled
+                    && editFormation.gameObject.activeInHierarchy)
+                {
+                    rendered.TrySetResult(true);
+                }
+            }
+
+            Canvas.willRenderCanvases += OnWillRenderCanvases;
+            try
+            {
+                await ClickAndAwait(session, root, UiElementNames.ChoiceCombat, s => s.Battle != null);
+                await AwaitTask(
+                    rendered.Task,
+                    TimeSpan.FromSeconds(8),
+                    "edit-formation rendered by production gameplay Canvas");
+            }
+            finally
+            {
+                Canvas.willRenderCanvases -= OnWillRenderCanvases;
+            }
+
+            Assert.That(editFormation.targetGraphic.depth, Is.GreaterThanOrEqualTo(0),
+                "edit-formation must be processed by the gameplay Canvas before pointer input");
+            FoundationLifetimeScope scope = UnityEngine.Object.FindAnyObjectByType<FoundationLifetimeScope>();
+            Assert.That(scope, Is.Not.Null);
+            return new D2BattleSurface { Session = session, Root = root, Driver = scope.Container.Resolve<BattleSessionDriver>() };
+        }
+
+        static Text RequireText(RectTransform root, string elementName)
+        {
+            Transform element = UguiHudBuilder.Find(root, elementName);
+            Assert.That(element, Is.Not.Null, "missing visible value " + elementName);
+            Text text = element.GetComponent<Text>() ?? element.GetComponentInChildren<Text>(true);
+            Assert.That(text, Is.Not.Null, "missing text binding " + elementName);
+            return text;
         }
 
         async Task<BranchResult> RunBranchAsync(EncounterChoice choice)
@@ -630,6 +1093,11 @@ namespace Janseon.Foundation.Tests
                     && s.Battle != null
                     && s.Battle.Outcome == BattleOutcomeKind.Ongoing);
                 result.BattleContextHash = session.Campaign.PendingBattle.ContextHash;
+                await Step(D2FormationSwapFront, state => state.LastClickedAction == D2FormationSwapFront);
+                OpenFormationEditor(root, session);
+                clicks.Add(D2EditFormation);
+                await Step(D2FormationEditConfirm, state => state.Battle.Deployed);
+                await Step(D2BattlePlayPause, state => !state.BattlePaused);
                 BattleOutcomeKind combatOutcome =
                     await UguiKeyboardPlayModeHelper.FinishCombatKeyboard(session, root);
                 result.BattleCommands++;
@@ -672,6 +1140,112 @@ namespace Janseon.Foundation.Tests
             result.FinalHash = session.CampaignHash;
             result.ClickTrace = string.Join(">", clicks);
             return result;
+        }
+
+        static void OpenFormationEditor(RectTransform root, IPocCoreLoopSession session)
+        {
+            InvokeButton(root, D2EditFormation);
+            Transform editor = UguiHudBuilder.Find(root, UiElementNames.FormationEdit);
+            Assert.That(editor, Is.Not.Null, "formation-edit rail missing after edit-formation");
+            Assert.That(editor.gameObject.activeInHierarchy, Is.True,
+                "edit-formation must open the formation editor, not deploy");
+            Assert.That(session.Battle, Is.Not.Null);
+            Assert.That(session.Battle.Deployed, Is.False,
+                "opening the editor must not deploy");
+        }
+
+        static async Task OpenFormationEditorThenDeployAsync(
+            IPocCoreLoopSession session,
+            RectTransform root)
+        {
+            OpenFormationEditor(root, session);
+            await ClickAndAwait(session, root, D2FormationEditConfirm, s => s.Battle.Deployed);
+        }
+
+        static PocCoreLoopController RequireController(IPocCoreLoopSession session)
+        {
+            var controller = session as PocCoreLoopController;
+            Assert.That(controller, Is.Not.Null, "production IPocCoreLoopSession must be PocCoreLoopController");
+            Assert.That(controller.Targeting, Is.Not.Null, "owner-card targeting machine missing");
+            return controller;
+        }
+
+        static UnitState RequireNearbyAlly(BattleSimState battle, UnitState owner)
+        {
+            UnitState ally = battle.Units.FirstOrDefault(unit =>
+                unit.Side == 0
+                && !unit.Id.Equals(owner.Id)
+                && unit.Hp > 0
+                && unit.State != "Down"
+                && Math.Abs(unit.Cell.X - owner.Cell.X) + Math.Abs(unit.Cell.Y - owner.Cell.Y) <= 2);
+            Assert.That(ally, Is.Not.Null, "no living ally within targeting radius");
+            return ally;
+        }
+
+        static CardinalDirection RequireLegalDirection(BattleSimState battle, UnitId ownerId, UnitId targetId)
+        {
+            for (var i = 0; i < 4; i++)
+            {
+                var facing = (CardinalDirection)i;
+                if (BattleSim.PreviewCard(battle, new BattleTickCommand
+                    {
+                        At = new Tick(battle.Tick),
+                        Kind = BattleTickCommandKind.PlayCard,
+                        CardId = "mobility-regroup",
+                        OwnerUnitId = ownerId,
+                        TargetUnitId = targetId,
+                        Facing = facing,
+                    }) == null)
+                {
+                    return facing;
+                }
+            }
+            Assert.Fail("no legal mobility direction for production targeting confirm");
+            return CardinalDirection.South;
+        }
+
+        static async Task PlayHudCardAndAwaitAsync(
+            IPocCoreLoopSession session,
+            RectTransform root,
+            string hudName,
+            string cardId,
+            Func<IPocCoreLoopSession, bool> predicate)
+        {
+            InvokeButton(root, hudName);
+            await ConfirmHudCardAsync(session, predicate, cardId);
+        }
+
+        static async Task ConfirmHudCardAsync(
+            IPocCoreLoopSession session,
+            Func<IPocCoreLoopSession, bool> predicate,
+            string expectedCardId = null)
+        {
+            PocCoreLoopController controller = RequireController(session);
+            OwnerCardTargetingMachine targeting = controller.Targeting;
+            Assert.That(targeting.Stage, Is.EqualTo(CardTargetingStage.ChoosingAlly),
+                "HUD card click must begin targeting, not play the card");
+            if (!string.IsNullOrEmpty(expectedCardId))
+                Assert.That(targeting.CardId, Is.EqualTo(expectedCardId));
+
+            UnitState owner = session.Battle.Units.First(unit => unit.Id.Equals(session.Battle.PlayerCommanderId));
+            UnitState ally = RequireNearbyAlly(session.Battle, owner);
+            Assert.That(targeting.SelectTarget(ally.Id), Is.True,
+                "SelectTarget failed: " + (targeting.LastRejection?.GetType().Name ?? "none"));
+            if (targeting.RequiresDirection)
+            {
+                CardinalDirection facing = RequireLegalDirection(session.Battle, owner.Id, ally.Id);
+                Assert.That(targeting.PreviewDirection(facing), Is.True,
+                    "PreviewDirection failed: " + (targeting.LastRejection?.GetType().Name ?? "none"));
+            }
+
+            Task signal = WaitSignal(session);
+            Assert.That(targeting.Confirm(), Is.True,
+                "Confirm failed: " + (targeting.LastRejection?.GetType().Name ?? "none"));
+            await AwaitTask(signal, TimeSpan.FromSeconds(8), "state after targeting confirm");
+            Assert.That(predicate(session), Is.True,
+                "predicate failed after targeting confirm stage=" + session.Campaign?.Stage
+                + " node=" + session.Campaign?.Node.Value
+                + " rejection=" + (session.LastRejection?.GetType().Name ?? "none"));
         }
 
         static async Task ClickAndAwait(

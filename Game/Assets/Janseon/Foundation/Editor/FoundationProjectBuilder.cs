@@ -222,6 +222,135 @@ namespace Janseon.Foundation.Editor
         /// Both hosts build runtime Canvases via UguiHudBuilder; the builder only owns
         /// camera, lights, station props and serialized references.
         /// </summary>
+        const string TmpImportPendingKey = "Janseon.Foundation.TmpImportPending";
+        const string TmpPackageName = "TMP Essential Resources";
+        const string TmpSettingsPath = "Assets/TextMesh Pro/Resources/TMP Settings.asset";
+        const string TmpSourceFontPath = "Assets/Janseon/Foundation/UI/Fonts/NanumGothic-Regular.ttf";
+        const string TmpFontAssetPath = "Assets/TextMesh Pro/Resources/Fonts & Materials/NanumGothic SDF.asset";
+
+        public static void PrepareTmpResources()
+        {
+            try
+            {
+                if (TryValidateTmpResources(out _))
+                {
+                    Debug.Log("TMP_PREPARE_OK resources already valid");
+                    EditorApplication.Exit(0);
+                    return;
+                }
+
+                UnityEditor.PackageManager.PackageInfo package =
+                    UnityEditor.PackageManager.PackageInfo.FindForAssetPath("Packages/com.unity.ugui");
+                if (package == null || string.IsNullOrEmpty(package.resolvedPath))
+                {
+                    throw new System.InvalidOperationException(
+                        "Installed com.unity.ugui package path is unavailable.");
+                }
+
+                string archivePath = System.IO.Path.Combine(
+                    package.resolvedPath,
+                    "Package Resources",
+                    "TMP Essential Resources.unitypackage");
+                if (!System.IO.File.Exists(archivePath))
+                {
+                    throw new System.InvalidOperationException(
+                        "Installed TMP Essential Resources archive is missing: " + archivePath);
+                }
+
+                SessionState.SetBool(TmpImportPendingKey, true);
+                RegisterTmpImportCallbacks();
+                UnityEditor.AssetPackage.Package.Import(archivePath, false);
+            }
+            catch (System.Exception ex)
+            {
+                FailTmpPreparation(ex.Message);
+            }
+        }
+
+        [InitializeOnLoadMethod]
+        static void ResumeTmpPreparationAfterReload()
+        {
+            if (!SessionState.GetBool(TmpImportPendingKey, false))
+            {
+                return;
+            }
+
+            RegisterTmpImportCallbacks();
+            if (Shader.Find("TextMeshPro/Distance Field") != null
+                && AssetDatabase.LoadAssetAtPath<TMPro.TMP_Settings>(TmpSettingsPath) != null)
+            {
+                UnregisterTmpImportCallbacks();
+                EditorApplication.delayCall += CompleteTmpPreparation;
+            }
+        }
+
+        static void RegisterTmpImportCallbacks()
+        {
+            UnregisterTmpImportCallbacks();
+            AssetDatabase.importPackageCompleted += OnTmpImportCompleted;
+            AssetDatabase.importPackageCancelled += OnTmpImportCancelled;
+            AssetDatabase.importPackageFailed += OnTmpImportFailed;
+        }
+
+        static void UnregisterTmpImportCallbacks()
+        {
+            AssetDatabase.importPackageCompleted -= OnTmpImportCompleted;
+            AssetDatabase.importPackageCancelled -= OnTmpImportCancelled;
+            AssetDatabase.importPackageFailed -= OnTmpImportFailed;
+        }
+
+        static void OnTmpImportCompleted(string packageName)
+        {
+            if (packageName != TmpPackageName)
+            {
+                return;
+            }
+
+            UnregisterTmpImportCallbacks();
+            EditorApplication.delayCall += CompleteTmpPreparation;
+        }
+
+        static void OnTmpImportCancelled(string packageName)
+        {
+            if (packageName == TmpPackageName)
+            {
+                FailTmpPreparation("TMP Essential Resources import was cancelled.");
+            }
+        }
+
+        static void OnTmpImportFailed(string packageName, string error)
+        {
+            if (packageName == TmpPackageName)
+            {
+                FailTmpPreparation("TMP Essential Resources import failed: " + error);
+            }
+        }
+
+        static void CompleteTmpPreparation()
+        {
+            try
+            {
+                CreateAndWireTmpFont();
+                EnsureTmpSettings();
+                SessionState.EraseBool(TmpImportPendingKey);
+                Debug.Log("TMP_PREPARE_OK " + TmpFontAssetPath);
+                EditorApplication.Exit(0);
+            }
+            catch (System.Exception ex)
+            {
+                FailTmpPreparation(ex.Message);
+            }
+        }
+
+        static void FailTmpPreparation(string reason)
+        {
+            UnregisterTmpImportCallbacks();
+            EditorApplication.delayCall -= CompleteTmpPreparation;
+            SessionState.EraseBool(TmpImportPendingKey);
+            Debug.LogError("TMP_PREPARE_FAILED " + reason);
+            EditorApplication.Exit(1);
+        }
+
         public static void BuildUiToolkitScreens()
         {
             EnsureTmpSettings();
@@ -229,59 +358,109 @@ namespace Janseon.Foundation.Editor
             Debug.Log("UGUI_SCENES_OK: hosts build runtime canvases; no UIDocument wiring needed.");
         }
 
-        /// <summary>
-        /// TMP essentials: without a TMP Settings asset, ugui's delayed importer window
-        /// logs an Error in -nographics batchmode and log-checked tests fail. Create the
-        /// default TMP Settings asset at the documented default path.
-        /// </summary>
-        static void EnsureTmpSettings()
+        static void CreateAndWireTmpFont()
         {
-            const string dir = "Assets/TextMesh Resources";
-            const string path = dir + "/TMP Settings.asset";
-            if (System.IO.File.Exists(path) && AssetDatabase.LoadAssetAtPath<TMPro.TMP_Settings>(path) != null)
+            Shader shader = Shader.Find("TextMeshPro/Distance Field");
+            if (shader == null)
             {
-                return;
+                throw new System.InvalidOperationException(
+                    "TMP Essential Resources did not install TextMeshPro/Distance Field.");
             }
 
-            const string fontsDir = "Assets/Janseon/Foundation/UI/Fonts";
-            const string fontAssetPath = fontsDir + "/MalgunGothicDynamic.asset";
-            const string spriteAssetPath = fontsDir + "/DefaultSpriteAsset.asset";
-            _ = System.IO.Directory.CreateDirectory(fontsDir);
+            Font sourceFont = AssetDatabase.LoadAssetAtPath<Font>(TmpSourceFontPath);
+            if (sourceFont == null)
+            {
+                throw new System.InvalidOperationException("Bundled NanumGothic source font missing.");
+            }
 
-            TMPro.TMP_FontAsset fontAsset = AssetDatabase.LoadAssetAtPath<TMPro.TMP_FontAsset>(fontAssetPath);
+            TMPro.TMP_FontAsset fontAsset =
+                AssetDatabase.LoadAssetAtPath<TMPro.TMP_FontAsset>(TmpFontAssetPath);
             if (fontAsset == null)
             {
-                // Malgun Gothic face data is unavailable in batchmode; the dynamic asset
-                // still satisfies TMP's non-null default-font requirement (task 40 bundles a real ttf).
-                var osFont = Font.CreateDynamicFontFromOSFont("Malgun Gothic", 24);
-                fontAsset = TMPro.TMP_FontAsset.CreateFontAsset(osFont);
-                fontAsset.name = "MalgunGothicDynamic";
-                AssetDatabase.CreateAsset(fontAsset, fontAssetPath);
-                Debug.Log("TMP_FONT_OK created " + fontAssetPath);
+                _ = System.IO.Directory.CreateDirectory(
+                    System.IO.Path.GetDirectoryName(TmpFontAssetPath));
+                fontAsset = TMPro.TMP_FontAsset.CreateFontAsset(sourceFont);
+                if (fontAsset == null
+                    || fontAsset.sourceFontFile == null
+                    || fontAsset.atlasTextures == null
+                    || fontAsset.atlasTextures.Length == 0
+                    || fontAsset.atlasTexture == null
+                    || fontAsset.material == null
+                    || fontAsset.material.shader == null)
+                {
+                    throw new System.InvalidOperationException(
+                        "TMP failed to create a complete NanumGothic SDF asset.");
+                }
+
+                fontAsset.name = "NanumGothic SDF";
+                Texture2D atlas = fontAsset.atlasTexture;
+                Material material = fontAsset.material;
+                AssetDatabase.CreateAsset(fontAsset, TmpFontAssetPath);
+                AssetDatabase.AddObjectToAsset(atlas, fontAsset);
+                AssetDatabase.AddObjectToAsset(material, fontAsset);
+                EditorUtility.SetDirty(fontAsset);
             }
 
-            TMPro.TMP_SpriteAsset spriteAsset = AssetDatabase.LoadAssetAtPath<TMPro.TMP_SpriteAsset>(spriteAssetPath);
-            if (spriteAsset == null)
-            {
-                spriteAsset = TMPro.TMP_SpriteAsset.CreateInstance<TMPro.TMP_SpriteAsset>();
-                spriteAsset.name = "DefaultSpriteAsset";
-                AssetDatabase.CreateAsset(spriteAsset, spriteAssetPath);
-                Debug.Log("TMP_SPRITE_OK created " + spriteAssetPath);
-            }
-
-            TMPro.TMP_Settings settings = AssetDatabase.LoadAssetAtPath<TMPro.TMP_Settings>(path);
+            TMPro.TMP_Settings settings =
+                AssetDatabase.LoadAssetAtPath<TMPro.TMP_Settings>(TmpSettingsPath);
             if (settings == null)
             {
-                settings = TMPro.TMP_Settings.CreateInstance<TMPro.TMP_Settings>();
-                AssetDatabase.CreateAsset(settings, path);
+                throw new System.InvalidOperationException(
+                    "TMP Essential Resources did not install TMP Settings.");
             }
 
-            var so = new UnityEditor.SerializedObject(settings);
-            so.FindProperty("m_defaultFontAsset").objectReferenceValue = fontAsset;
-            so.FindProperty("m_defaultSpriteAsset").objectReferenceValue = spriteAsset;
-            so.ApplyModifiedPropertiesWithoutUndo();
+            var serialized = new SerializedObject(settings);
+            serialized.FindProperty("m_defaultFontAsset").objectReferenceValue = fontAsset;
+            serialized.ApplyModifiedPropertiesWithoutUndo();
             AssetDatabase.SaveAssets();
-            Debug.Log("TMP_SETTINGS_OK wired " + path);
+        }
+
+        static void EnsureTmpSettings()
+        {
+            if (!TryValidateTmpResources(out string reason))
+            {
+                throw new System.InvalidOperationException(
+                    reason + " Run FoundationProjectBuilder.PrepareTmpResources first.");
+            }
+        }
+
+        static bool TryValidateTmpResources(out string reason)
+        {
+            if (Shader.Find("TextMeshPro/Distance Field") == null)
+            {
+                reason = "TextMeshPro/Distance Field is missing.";
+                return false;
+            }
+
+            TMPro.TMP_Settings settings =
+                AssetDatabase.LoadAssetAtPath<TMPro.TMP_Settings>(TmpSettingsPath);
+            TMPro.TMP_FontAsset fontAsset =
+                AssetDatabase.LoadAssetAtPath<TMPro.TMP_FontAsset>(TmpFontAssetPath);
+            if (settings == null || fontAsset == null)
+            {
+                reason = "Prepared TMP settings or NanumGothic SDF is missing.";
+                return false;
+            }
+            if (fontAsset.sourceFontFile == null
+                || fontAsset.atlasTextures == null
+                || fontAsset.atlasTextures.Length == 0
+                || fontAsset.atlasTexture == null
+                || fontAsset.material == null
+                || fontAsset.material.shader == null)
+            {
+                reason = "NanumGothic SDF source, atlas, material, or shader is invalid.";
+                return false;
+            }
+
+            var serialized = new SerializedObject(settings);
+            if (serialized.FindProperty("m_defaultFontAsset").objectReferenceValue != fontAsset)
+            {
+                reason = "TMP Settings does not reference NanumGothic SDF.";
+                return false;
+            }
+
+            reason = string.Empty;
+            return true;
         }
 
 

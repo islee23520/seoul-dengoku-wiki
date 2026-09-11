@@ -166,9 +166,14 @@ namespace Janseon.Foundation.Tests
             Assert.That(UguiHudBuilder.Find(hud, UiElementNames.SettlementPanel), Is.Not.Null);
             Button negotiate = UguiHudBuilder.ButtonNamed(hud, UiElementNames.ChoiceNegotiate);
             Assert.That(negotiate.GetComponentInChildren<UnityEngine.UI.Text>(true).text, Does.Contain("-5"));
-            Assert.That(UguiHudBuilder.ButtonNamed(hud, "battle-move-n"), Is.Not.Null);
-            Assert.That(UguiHudBuilder.ButtonNamed(hud, "battle-melee"), Is.Not.Null);
-            Assert.That(UguiHudBuilder.ButtonNamed(hud, "battle-end-turn"), Is.Not.Null);
+            Assert.That(UguiHudBuilder.ButtonNamed(hud, UiElementNames.FormationSwapFront), Is.Not.Null);
+            Assert.That(UguiHudBuilder.ButtonNamed(hud, UiElementNames.EditFormation), Is.Not.Null);
+            Assert.That(UguiHudBuilder.ButtonNamed(hud, UiElementNames.CardGeneralUse), Is.Not.Null);
+            Assert.That(UguiHudBuilder.ButtonNamed(hud, UiElementNames.BattlePlayPause), Is.Not.Null);
+            Assert.That(UguiHudBuilder.Find(hud, UiElementNames.BattleMorale), Is.Not.Null);
+            Assert.That(UguiHudBuilder.Find(hud, UiElementNames.BattleReinforcementForecast), Is.Not.Null);
+            Assert.That(UguiHudBuilder.Find(hud, "battle-ap"), Is.Null);
+            Assert.That(UguiHudBuilder.Find(hud, "battle-end-turn"), Is.Null);
 
             var screenTarget = new RenderTexture(640, 360, 24);
             screenTarget.Create();

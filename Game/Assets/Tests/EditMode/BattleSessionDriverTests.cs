@@ -44,14 +44,12 @@ namespace Janseon.Foundation.Tests
 
         static BattleTickCommand[] Schedule(BattleSetup setup)
         {
-            // ally-0 deploys to (0,2) per FormationResolver.Cell for slot 0 and
-            // advances one cell on tick 10; the late SetFacing lands on the vacated
-            // cell and is deterministically rejected on both replay paths.
+            // SetFacing follows ally-0 by identity after automatic movement changes its cell.
             return new[]
             {
                 new BattleTickCommand { Id = new CommandId("cmd-deploy"), Seq = 0, At = new Tick(0), Kind = BattleTickCommandKind.Deploy, Formation = setup.PlayerFormation },
-                new BattleTickCommand { Id = new CommandId("cmd-face-5"), Seq = 1, At = new Tick(5), Kind = BattleTickCommandKind.SetFacing, Target = new GridCoord(0, 2), Facing = CardinalDirection.North },
-                new BattleTickCommand { Id = new CommandId("cmd-face-15"), Seq = 2, At = new Tick(15), Kind = BattleTickCommandKind.SetFacing, Target = new GridCoord(0, 2), Facing = CardinalDirection.South },
+                new BattleTickCommand { Id = new CommandId("cmd-face-5"), Seq = 1, At = new Tick(5), Kind = BattleTickCommandKind.SetFacing, ActorUnitId = setup.PlayerUnits[0].Id, Facing = CardinalDirection.North },
+                new BattleTickCommand { Id = new CommandId("cmd-face-15"), Seq = 2, At = new Tick(15), Kind = BattleTickCommandKind.SetFacing, ActorUnitId = setup.PlayerUnits[0].Id, Facing = CardinalDirection.South },
             };
         }
 
@@ -97,8 +95,8 @@ namespace Janseon.Foundation.Tests
             for (var i = 0; i < ledger.Events.Count; i++)
                 if (ledger.Events[i].Id.Value.StartsWith("btick-")) bticks++;
             Assert.That(bticks, Is.EqualTo(30), "one btick event per Step");
-            Assert.That(ledger.Events.Count, Is.EqualTo(32),
-                "30 btick events + accepted deploy and face-5 bcmd events; the face-15 rejection adds none");
+            Assert.That(ledger.Events.Count, Is.EqualTo(33),
+                "30 btick events + deploy and two actor-addressed SetFacing command events");
             Assert.That(driver.AccumulatorSeconds, Is.LessThan(Interval + Epsilon), "no unbounded carry at exact cadence");
         }
 
@@ -206,6 +204,88 @@ namespace Janseon.Foundation.Tests
         }
 
         [Test]
+        public void Enqueue_OwnsRootAndNestedCommandInput_BeforeDueSubmission()
+        {
+            void AssertOwnedInput(bool useLegacyStrongholdField)
+            {
+                var clock = new ManualClock();
+                var setup = Setup();
+                var state = BattleSim.Open(setup);
+                var ledger = new Ledger();
+                var driver = new BattleSessionDriver(clock.Read);
+                driver.Attach(state, ledger);
+
+                var formation = Array.ConvertAll(
+                    setup.PlayerFormation,
+                    slot => new FormationSlot
+                    {
+                        Unit = slot.Unit,
+                        Row = slot.Row,
+                        Column = slot.Column,
+                        Facing = slot.Facing,
+                    });
+                var deploy = new BattleTickCommand
+                {
+                    Id = new CommandId(useLegacyStrongholdField ? "legacy-deploy" : "deploy"),
+                    Seq = 0,
+                    At = new Tick(0),
+                    Kind = BattleTickCommandKind.Deploy,
+                    Formation = formation,
+                    StrongholdCardIds = useLegacyStrongholdField ? null : new[] { "supply-heal" },
+                    StrongholdCards = useLegacyStrongholdField ? new[] { "supply-heal" } : null,
+                };
+                var facing = new BattleTickCommand
+                {
+                    Id = new CommandId(useLegacyStrongholdField ? "legacy-facing" : "facing"),
+                    Seq = 1,
+                    At = new Tick(1),
+                    Kind = BattleTickCommandKind.SetFacing,
+                    ActorUnitId = setup.PlayerUnits[0].Id,
+                    Facing = CardinalDirection.North,
+                };
+
+                driver.Enqueue(deploy);
+                driver.Enqueue(facing);
+
+                deploy.Formation[0].Row = 3;
+                deploy.Formation[0].Column = 2;
+                deploy.Formation[0].Facing = CardinalDirection.West;
+                if (useLegacyStrongholdField)
+                    deploy.StrongholdCards[0] = "passage-retreat";
+                else
+                    deploy.StrongholdCardIds[0] = "passage-retreat";
+                facing.Kind = BattleTickCommandKind.OrderRetreat;
+
+                clock.Now += Interval;
+                driver.Tick();
+                clock.Now += Interval;
+                driver.Tick();
+
+                Assert.That(state.Deployed, Is.True);
+                Assert.That(
+                    state.StrongholdCardIds,
+                    Is.EqualTo(new[] { "supply-heal" }),
+                    useLegacyStrongholdField
+                        ? "the legacy stronghold array must be copied at Enqueue"
+                        : "the stronghold id array must be copied at Enqueue");
+                Assert.That(
+                    state.Units[0].Cell,
+                    Is.EqualTo(new GridCoord(0, 2)),
+                    "nested FormationSlot mutation must not alter the enqueued deployment");
+                Assert.That(
+                    state.Units[0].Facing,
+                    Is.EqualTo(CardinalDirection.North),
+                    "mutating the caller's future command kind must not replace the enqueued SetFacing");
+                Assert.That(
+                    state.Outcome,
+                    Is.EqualTo(BattleOutcomeKind.Ongoing));
+            }
+
+            AssertOwnedInput(useLegacyStrongholdField: false);
+            AssertOwnedInput(useLegacyStrongholdField: true);
+        }
+
+        [Test]
         public void TickBudget_StopsSteppingAtMaxTicks()
         {
             var clock = new ManualClock();
@@ -249,13 +329,13 @@ namespace Janseon.Foundation.Tests
             {
                 Id = new CommandId("future-facing"), Seq = 2, At = new Tick(2),
                 Kind = BattleTickCommandKind.SetFacing,
-                Target = new GridCoord(0, 2), Facing = CardinalDirection.North,
+                ActorUnitId = setup.PlayerUnits[0].Id, Facing = CardinalDirection.North,
             });
             driver.Enqueue(new BattleTickCommand
             {
                 Id = new CommandId("stale-facing"), Seq = 1, At = new Tick(0),
                 Kind = BattleTickCommandKind.SetFacing,
-                Target = new GridCoord(0, 2), Facing = CardinalDirection.South,
+                ActorUnitId = setup.PlayerUnits[0].Id, Facing = CardinalDirection.South,
             });
             for (var i = 0; i < 2; i++)
             {
@@ -266,6 +346,64 @@ namespace Janseon.Foundation.Tests
             Assert.That(rejections, Is.EqualTo(1), "the stale command must be rejected exactly once");
             Assert.That(state.Units[0].Facing, Is.EqualTo(CardinalDirection.North),
                 "the stale insertion must not strand the next due command behind the consumed cursor");
+        }
+
+        [Test, Category("ApprovedUnityOrders")]
+        public void PausedOrderSubmission_AcceptsPendingIntentWithoutExecution_UntilTheNextStep()
+        {
+            var clock = new ManualClock();
+            var setup = Setup();
+            var state = BattleSim.Open(setup);
+            var ledger = new Ledger();
+            var driver = new BattleSessionDriver(clock.Read);
+            driver.Attach(state, ledger);
+            driver.Enqueue(new BattleTickCommand
+            {
+                Id = new CommandId("pause-deploy"), Seq = 0, At = new Tick(0),
+                Kind = BattleTickCommandKind.Deploy, Formation = setup.PlayerFormation,
+            });
+            clock.Now += Interval;
+            driver.Tick();
+
+            var actor = Array.Find(state.Units, unit => unit.Id.Equals(setup.PlayerUnits[0].Id));
+            actor.MoveTicksLeft = 0;
+            var tickBefore = state.Tick;
+            var cellBefore = actor.Cell;
+            var hpBefore = actor.Hp;
+            var eventsBefore = ledger.Events.Count;
+            driver.Paused = true;
+            driver.Enqueue(new BattleTickCommand
+            {
+                Id = new CommandId("paused-move"), Seq = 1, At = new Tick(state.Tick),
+                Kind = BattleTickCommandKind.Move,
+                ActorUnitId = actor.Id,
+                Target = cellBefore.Step(CardinalDirection.South),
+            });
+            driver.SubmitCurrentCommands();
+
+            Assert.That(state.Tick, Is.EqualTo(tickBefore));
+            Assert.That(actor.Cell, Is.EqualTo(cellBefore));
+            Assert.That(actor.Hp, Is.EqualTo(hpBefore));
+            Assert.That(state.Pending.Count, Is.EqualTo(1),
+                "paused submission is accepted into the Core pending command queue");
+            Assert.That(ledger.Events.Count, Is.EqualTo(eventsBefore + 1));
+            var acceptedFingerprint = state.Fingerprint();
+            var acceptedEvents = LedgerEventSignatures(ledger);
+
+            clock.Now += 5 * Interval;
+            driver.Tick();
+            Assert.That(state.Tick, Is.EqualTo(tickBefore));
+            Assert.That(actor.Cell, Is.EqualTo(cellBefore));
+            Assert.That(actor.Hp, Is.EqualTo(hpBefore));
+            Assert.That(state.Fingerprint(), Is.EqualTo(acceptedFingerprint));
+            Assert.That(LedgerEventSignatures(ledger), Is.EqualTo(acceptedEvents));
+
+            driver.Paused = false;
+            clock.Now += Interval;
+            driver.Tick();
+            Assert.That(state.Tick, Is.EqualTo(tickBefore + 1));
+            Assert.That(actor.Cell, Is.EqualTo(cellBefore.Step(CardinalDirection.South)),
+                "the accepted paused order executes only when the driver runs Step");
         }
 
         [Test]

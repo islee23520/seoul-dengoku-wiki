@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="6" result="Passed" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-10 18:49:27Z" end-time="2026-09-10 18:49:28Z" duration="0.6600644">
+  <test-suite type="TestSuite" id="1062" name="잔선: 서울" fullname="잔선: 서울" runstate="Runnable" testcasecount="41" result="Passed" start-time="2026-09-10 18:49:27Z" end-time="2026-09-10 18:49:28Z" duration="0.660064" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1055" name="Janseon.Foundation.PlayModeTests.dll" fullname="/Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Library/ScriptAssemblies/Janseon.Foundation.PlayModeTests.dll" runstate="Runnable" testcasecount="41" result="Passed" start-time="2026-09-10 18:49:27Z" end-time="2026-09-10 18:49:28Z" duration="0.656081" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="22383" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1056" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="40" result="Passed" start-time="2026-09-10 18:49:27Z" end-time="2026-09-10 18:49:28Z" duration="0.655120" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1057" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="40" result="Passed" start-time="2026-09-10 18:49:27Z" end-time="2026-09-10 18:49:28Z" duration="0.654310" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1058" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="40" result="Passed" start-time="2026-09-10 18:49:27Z" end-time="2026-09-10 18:49:28Z" duration="0.653694" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1046" name="OwnerCardPointerPlayModeTests" fullname="Janseon.Foundation.Tests.OwnerCardPointerPlayModeTests" classname="Janseon.Foundation.Tests.OwnerCardPointerPlayModeTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-09-10 18:49:27Z" end-time="2026-09-10 18:49:28Z" duration="0.652520" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1049" name="Confirm_RevalidatesNewlyBlockedDestination_WithoutMovementOrRecharge" fullname="Janseon.Foundation.Tests.OwnerCardPointerPlayModeTests.Confirm_RevalidatesNewlyBlockedDestination_WithoutMovementOrRecharge" methodname="Confirm_RevalidatesNewlyBlockedDestination_WithoutMovementOrRecharge" classname="Janseon.Foundation.Tests.OwnerCardPointerPlayModeTests" runstate="Runnable" seed="1991609456" result="Passed" start-time="2026-09-10 18:49:27Z" end-time="2026-09-10 18:49:28Z" duration="0.313204" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[JANSEON_STARTUP_READY screen=MainTitle
+The character with Unicode value \u2600 was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \U0001F4DC was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \u2600 was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \U0001F4DC was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+]]></output>
+              </test-case>
+              <test-case id="1050" name="EscapeAfterTargetSelection_CancelsWithoutEnqueue" fullname="Janseon.Foundation.Tests.OwnerCardPointerPlayModeTests.EscapeAfterTargetSelection_CancelsWithoutEnqueue" methodname="EscapeAfterTargetSelection_CancelsWithoutEnqueue" classname="Janseon.Foundation.Tests.OwnerCardPointerPlayModeTests" runstate="Runnable" seed="370955447" result="Passed" start-time="2026-09-10 18:49:28Z" end-time="2026-09-10 18:49:28Z" duration="0.060299" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[JANSEON_STARTUP_READY screen=MainTitle
+The character with Unicode value \u2600 was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \U0001F4DC was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \u2600 was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \U0001F4DC was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+]]></output>
+              </test-case>
+              <test-case id="1051" name="HudRaycast_ConsumesCardAndCancel_WithoutWorldSelection" fullname="Janseon.Foundation.Tests.OwnerCardPointerPlayModeTests.HudRaycast_ConsumesCardAndCancel_WithoutWorldSelection" methodname="HudRaycast_ConsumesCardAndCancel_WithoutWorldSelection" classname="Janseon.Foundation.Tests.OwnerCardPointerPlayModeTests" runstate="Runnable" seed="342187416" result="Passed" start-time="2026-09-10 18:49:28Z" end-time="2026-09-10 18:49:28Z" duration="0.058435" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[JANSEON_STARTUP_READY screen=MainTitle
+The character with Unicode value \u2600 was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \U0001F4DC was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \u2600 was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \U0001F4DC was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+]]></output>
+              </test-case>
+              <test-case id="1048" name="Morale_FromChoosingAlly_ConfirmsWithoutDirection" fullname="Janseon.Foundation.Tests.OwnerCardPointerPlayModeTests.Morale_FromChoosingAlly_ConfirmsWithoutDirection" methodname="Morale_FromChoosingAlly_ConfirmsWithoutDirection" classname="Janseon.Foundation.Tests.OwnerCardPointerPlayModeTests" runstate="Runnable" seed="1093331034" result="Passed" start-time="2026-09-10 18:49:28Z" end-time="2026-09-10 18:49:28Z" duration="0.056385" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[JANSEON_STARTUP_READY screen=MainTitle
+The character with Unicode value \u2600 was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \U0001F4DC was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \u2600 was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \U0001F4DC was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+]]></output>
+              </test-case>
+              <test-case id="1047" name="PausedMobility_PointerConfirm_MovesOneCardinalCellAndRechargesOnlyOwner" fullname="Janseon.Foundation.Tests.OwnerCardPointerPlayModeTests.PausedMobility_PointerConfirm_MovesOneCardinalCellAndRechargesOnlyOwner" methodname="PausedMobility_PointerConfirm_MovesOneCardinalCellAndRechargesOnlyOwner" classname="Janseon.Foundation.Tests.OwnerCardPointerPlayModeTests" runstate="Runnable" seed="836477820" result="Passed" start-time="2026-09-10 18:49:28Z" end-time="2026-09-10 18:49:28Z" duration="0.104062" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[JANSEON_STARTUP_READY screen=MainTitle
+The character with Unicode value \u2600 was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \U0001F4DC was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \u2600 was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \U0001F4DC was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+]]></output>
+              </test-case>
+              <test-case id="1052" name="RightClickOnWorldTarget_DoesNotSelectOrConfirm" fullname="Janseon.Foundation.Tests.OwnerCardPointerPlayModeTests.RightClickOnWorldTarget_DoesNotSelectOrConfirm" methodname="RightClickOnWorldTarget_DoesNotSelectOrConfirm" classname="Janseon.Foundation.Tests.OwnerCardPointerPlayModeTests" runstate="Runnable" seed="108953680" result="Passed" start-time="2026-09-10 18:49:28Z" end-time="2026-09-10 18:49:28Z" duration="0.054026" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[JANSEON_STARTUP_READY screen=MainTitle
+The character with Unicode value \u2600 was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \U0001F4DC was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \u2600 was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \U0001F4DC was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+Saving results to: /Users/ilseoblee/Library/Application Support/Janseon Studio/잔선_ 서울/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

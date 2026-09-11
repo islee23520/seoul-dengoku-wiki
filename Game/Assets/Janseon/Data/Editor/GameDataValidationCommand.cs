@@ -1,0 +1,2 @@
+using UnityEditor;using Janseon.Data.Authoring;using Janseon.Data.Validation;
+namespace Janseon.Data.Editor { public static class GameDataValidationCommand { [MenuItem("Janseon/Data/Validate Area 1 Catalog")] public static void MenuValidate(){RunBatchmode();} public static void RunBatchmode(){var c=AssetDatabase.LoadAssetAtPath<GameDataCatalogAsset>("Assets/Janseon/Data/Assets/Area1GameDataCatalog.asset");GameDataCatalogIndexBuilder.Build(c);}}}

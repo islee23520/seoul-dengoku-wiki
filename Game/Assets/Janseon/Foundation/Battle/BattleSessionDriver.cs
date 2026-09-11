@@ -81,7 +81,7 @@ namespace Janseon.Foundation.Battle
                 Reject(BattleSim.Submit(State, Ledger, command));
                 return;
             }
-            inbox.Add(command);
+            inbox.Add(command.Clone());
             inbox.Sort((a, b) => a.At.Value != b.At.Value
                 ? a.At.Value.CompareTo(b.At.Value)
                 : a.Seq.CompareTo(b.Seq));

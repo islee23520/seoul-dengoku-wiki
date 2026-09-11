@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bab1e2881ccc455fad904cf02d3fbc3, type: 3}
+  m_Name: Area1GameDataCatalog
+  m_EditorClassIdentifier: Janseon.Data::Janseon.Data.Authoring.GameDataCatalogAsset
+  contentSchema: 1
+  contentVersion: area1-static-content-v1
+  fingerprintVersion: content-fingerprint-v1
+  cards:
+  - {fileID: 11400000, guid: 811034e0acc3e4c33adfbffbfd52a6a3, type: 2}
+  - {fileID: 11400000, guid: d4a9bb7b69f47449aab09a474541e74a, type: 2}
+  - {fileID: 11400000, guid: f7a274b11dc5245b9ac7a1ed80700e2a, type: 2}
+  - {fileID: 11400000, guid: d4be6c73b0d354fd1aec779182315590, type: 2}
+  - {fileID: 11400000, guid: 243add208c5f64838bec381262e2518d, type: 2}
+  - {fileID: 11400000, guid: b11c7627fea8147d5bc9cf270e4bdd75, type: 2}
+  unitRoles:
+  - {fileID: 11400000, guid: 6847a1614d56645ba86057839ce979ea, type: 2}
+  - {fileID: 11400000, guid: 0e167a1feb873466ab8801c36af0084d, type: 2}
+  - {fileID: 11400000, guid: 16ee43b215cdf4b75a0b1cc1dce3b8e6, type: 2}
+  formations:
+  - {fileID: 11400000, guid: 4e3475c5b03fa403b9478cfa3a891366, type: 2}
+  stations:
+  - {fileID: 11400000, guid: 78654f67a33954c17ad070be904bdc62, type: 2}
+  - {fileID: 11400000, guid: 244a2eacb5dfd44e8ba81e28055f3372, type: 2}
+  - {fileID: 11400000, guid: 496214e2ccc824728a5dce2685708fe6, type: 2}

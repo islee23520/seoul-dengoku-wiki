@@ -61,37 +61,34 @@ public sealed class UiToolkitCapturePlayModeTests
         yield return LoadFoundationFromMainTitle();
         var gameplayHost = UnityEngine.Object.FindAnyObjectByType<GameplayUiHost>();
         Assert.That(gameplayHost, Is.Not.Null);
-        int readyFrames = 0;
-        while (!gameplayHost.IsReady && readyFrames < 300)
-        {
-            readyFrames++;
-            yield return null;
-        }
-
-        Assert.That(gameplayHost.IsReady, Is.True, "GameplayUiHost not ready after 300 frames");
+        yield return new TaskYield(gameplayHost.Ready, 10f, "Gameplay ready after Foundation load");
+        yield return new TaskYield(gameplayHost.CoreLoopReady, 10f, "Core loop ready after Foundation load");
+        Assert.That(gameplayHost.IsReady, Is.True, "GameplayUiHost readiness task completed without ready state");
         canvasRoot = gameplayHost.CanvasRoot;
         session = gameplayHost.CoreLoop;
         Assert.That(session, Is.Not.Null, "core loop session required");
 
-        yield return ClickAwait(UiElementNames.ActionDepart, s => s.Campaign.Stage == CampaignStage.ExpeditionTravel);
-        yield return Capture(1280, 720, "campaign-route-stage", "route");
-        yield return Capture(1920, 1080, "campaign-route-stage", "route");
+        Assert.That(session.Campaign.Stage, Is.EqualTo(CampaignStage.BasePreparation));
+        Assert.That(session.Campaign.Node, Is.EqualTo(StationId.Yeongdeungpo));
+        yield return Capture(1280, 720, "campaign-route-stage", "route-stage");
+        yield return Capture(1920, 1080, "campaign-route-stage", "route-stage");
 
+        yield return ClickAwait(UiElementNames.ActionDepart, s => s.Campaign.Stage == CampaignStage.ExpeditionTravel);
         yield return ClickAwait(UiElementNames.StationSindorim, s => s.Campaign.Node.Equals(StationId.Sindorim));
         yield return ClickAwait(UiElementNames.ActionFaceEncounter, s => s.Campaign.Stage == CampaignStage.Encounter);
         yield return ClickAwait(UiElementNames.ActionEnterResolution, s => s.Campaign.Stage == CampaignStage.Resolution);
         yield return Capture(1280, 720, "encounter-choices", "encounter");
         yield return Capture(1920, 1080, "encounter-choices", "encounter");
 
-        yield return ClickAwait(UiElementNames.ChoiceCombat, s => s.Battle != null);
-        int guard = 0;
-        while (session.Battle != null && session.Battle.Outcome == BattleOutcomeKind.Ongoing && guard < 80)
-        {
-            guard++;
-            yield return Click(UiElementNames.BattleAdvance);
-        }
-        yield return Capture(1280, 720, "battle-state", "battle");
-        yield return Capture(1920, 1080, "battle-state", "battle");
+        yield return ClickAwait(UiElementNames.ChoiceCombat, s => s.Battle != null && s.BattlePaused);
+        yield return ClickAwait(UiElementNames.FormationSwapFront, s => s.LastClickedAction == UiElementNames.FormationSwapFront);
+        yield return ClickAwait(UiElementNames.EditFormation, s => s.Battle.Deployed);
+        yield return ClickAwait(UiElementNames.CardGeneralUse, s =>
+            Array.Find(s.Battle.Cards, card => card.Id == "encourage-morale").RechargeTicksLeft == 600);
+        yield return Capture(1280, 720, "battle-state", "battle-paused-card-recharging");
+        yield return Capture(1920, 1080, "battle-state", "battle-paused-card-recharging");
+        yield return ClickAwait(UiElementNames.BattlePlayPause, s => !s.BattlePaused);
+        yield return WaitBattleTerminal();
 
         yield return ClickAwait(UiElementNames.ActionSettle, s => s.Campaign.SettlementApplied && s.LastReceipt != null);
         yield return Capture(1280, 720, "settlement-return", "settlement");
@@ -108,78 +105,58 @@ public sealed class UiToolkitCapturePlayModeTests
 
     static IEnumerator LoadBootstrapAndBind()
     {
+        var mainTitleLoaded = new SceneLoadedYield(FoundationScenes.MainTitle, 15f);
         AsyncOperation bootstrapLoad = SceneManager.LoadSceneAsync(
             FoundationScenes.Bootstrap,
             LoadSceneMode.Single);
         Assert.That(bootstrapLoad, Is.Not.Null, "Bootstrap scene load operation required");
-        while (!bootstrapLoad.isDone)
-        {
-            yield return null;
-        }
-
-        while (!SceneManager.GetSceneByPath(FoundationScenes.MainTitle).isLoaded)
-        {
-            yield return null;
-        }
+        yield return new AsyncOperationYield(bootstrapLoad, 15f);
+        yield return mainTitleLoaded;
 
         MainTitleUiHost title = UnityEngine.Object.FindAnyObjectByType<MainTitleUiHost>();
         Assert.That(title, Is.Not.Null, "MainTitleUiHost required");
-        while (!title.IsReady)
-        {
-            yield return null;
-        }
+        yield return new TaskYield(title.Ready, 10f, "MainTitle ready");
 
         AppLifetimeScope appScope = UnityEngine.Object.FindAnyObjectByType<AppLifetimeScope>();
         Assert.That(appScope, Is.Not.Null, "AppLifetimeScope required");
-        ApplicationFlowCoordinator coordinator =
-            appScope.Container.Resolve<ApplicationFlowCoordinator>();
-        while (coordinator.CurrentState != ApplicationFlowState.MainTitle)
-        {
-            yield return null;
-        }
-
+        ApplicationFlowCoordinator coordinator = appScope.Container.Resolve<ApplicationFlowCoordinator>();
+        Assert.That(coordinator.CurrentTransition, Is.Not.Null);
+        yield return new TaskYield(coordinator.CurrentTransition, 15f, "MainTitle commit");
+        Assert.That(coordinator.CurrentState, Is.EqualTo(ApplicationFlowState.MainTitle));
         mainTitleCanvasRoot = title.CanvasRoot;
     }
 
     static IEnumerator LoadFoundationFromMainTitle()
     {
+        var foundationLoaded = new SceneLoadedYield(FoundationScenes.Foundation, 15f);
         Button start = UguiHudBuilder.ButtonNamed(mainTitleCanvasRoot, UiElementNames.MainTitleStart);
         Assert.That(start, Is.Not.Null, "main-title-start missing");
         start.onClick.Invoke();
-        yield return null;
-
-        while (!SceneManager.GetSceneByPath(FoundationScenes.Foundation).isLoaded)
-        {
-            yield return null;
-        }
+        yield return foundationLoaded;
 
         GameplayUiHost gameplay = UnityEngine.Object.FindAnyObjectByType<GameplayUiHost>();
         Assert.That(gameplay, Is.Not.Null, "GameplayUiHost missing after Foundation load");
+        yield return new TaskYield(gameplay.Ready, 10f, "Gameplay ready");
+        yield return new TaskYield(gameplay.CoreLoopReady, 10f, "Core loop ready");
     }
-
 
     static ClickYield ClickAwait(string name, Func<IPocCoreLoopSession, bool> done)
     {
         var button = UguiHudBuilder.ButtonNamed(canvasRoot, name);
         Assert.That(button, Is.Not.Null, "missing " + name);
+        var completion = new ClickYield(session, done);
         button.onClick.Invoke();
-        return new ClickYield(session, done);
+        return completion;
     }
 
-    static IEnumerator Click(string name)
+    static IEnumerator WaitBattleTerminal()
     {
-        var button = UguiHudBuilder.ButtonNamed(canvasRoot, name);
-        Assert.That(button, Is.Not.Null, "missing " + name);
-        button.onClick.Invoke();
-        yield return null;
+        var completion = new BattleTerminalYield(session);
+        yield return completion;
     }
 
     static IEnumerator Capture(int width, int height, string kind, string state)
     {
-        Screen.SetResolution(width, height, FullScreenMode.Windowed);
-        yield return null;
-        yield return null;
-
         Camera camera = Camera.main != null
             ? Camera.main
             : (Camera.current != null ? Camera.current : UnityEngine.Object.FindAnyObjectByType<Camera>());
@@ -205,12 +182,11 @@ public sealed class UiToolkitCapturePlayModeTests
         try
         {
             target.Create();
+            camera.targetTexture = target;
             canvas.renderMode = RenderMode.ScreenSpaceCamera;
             canvas.worldCamera = camera;
             canvas.planeDistance = Mathf.Max(camera.nearClipPlane + 0.1f, 1f);
             Canvas.ForceUpdateCanvases();
-
-            camera.targetTexture = target;
             camera.Render();
             RenderTexture.active = target;
             tex.ReadPixels(new Rect(0, 0, width, height), 0, 0);
@@ -249,15 +225,22 @@ public sealed class UiToolkitCapturePlayModeTests
             var sb = new StringBuilder();
             sb.Append('{');
             sb.Append("\"stem\": \"").Append(stem).Append("\", ");
-            sb.Append("\"is_playing\": true, ");
+            sb.Append("\"kind\": \"").Append(kind).Append("\", ");
+            sb.Append("\"unity\": \"").Append(Application.unityVersion).Append("\", ");
             sb.Append("\"width\": ").Append(width).Append(", ");
             sb.Append("\"height\": ").Append(height).Append(", ");
-            sb.Append("\"head\": \"").Append(testedHead).Append("\", ");
-            sb.Append("\"gitHead\": \"").Append(testedHead).Append("\", ");
-            sb.Append("\"source_fingerprint\": \"").Append(testedFingerprint).Append("\", ");
+            sb.Append("\"seed\": ").Append(Seed).Append(", ");
             sb.Append("\"state\": \"").Append(state).Append("\", ");
-            sb.Append("\"state_hash\": \"").Append(sha, 0, 16).Append("\", ");
+            sb.Append("\"state_hash\": \"").Append(ComputeStateHash(state)).Append("\", ");
+            sb.Append("\"head\": \"").Append(testedHead).Append("\", ");
+            sb.Append("\"dirty_tree_fingerprint\": \"").Append(testedFingerprint).Append("\", ");
+            sb.Append("\"active_scene\": \"").Append(SceneManager.GetActiveScene().path.Replace("\\", "/")).Append("\", ");
             sb.Append("\"uidocument_root_names\": [\"").Append(canvasRoot.name).Append("\"], ");
+            sb.Append("\"capture_api\": \"PlayMode Camera.targetTexture+Camera.Render+ReadPixels\", ");
+            sb.Append("\"is_playing\": true, ");
+            sb.Append("\"png\": \"").Append(stem).Append(".png\", ");
+            sb.Append("\"tested_route\": \"").Append(TestedRoute(state)).Append("\", ");
+            sb.Append("\"captured_at_utc\": \"").Append(DateTime.UtcNow.ToString("o")).Append("\", ");
             sb.Append("\"png_sha256\": \"").Append(sha).Append("\"");
             sb.Append(" }");
             File.WriteAllText(Path.Combine(dir, stem + ".receipt.json"), sb.ToString());
@@ -280,6 +263,32 @@ public sealed class UiToolkitCapturePlayModeTests
                 UnityEngine.Object.Destroy(temporaryCamera);
             }
         }
+        yield break;
+    }
+
+    static string ComputeStateHash(string state)
+    {
+        string scene = SceneManager.GetActiveScene().path.Replace("\\", "/");
+        string machineState = session == null
+            ? "title|" + state + "|" + scene + "|" + (mainTitleCanvasRoot?.name ?? string.Empty)
+            : "gameplay|" + state + "|" + scene + "|" + session.CampaignHash + "|"
+                + session.BattleHash + "|paused=" + session.BattlePaused;
+        using var sha256 = System.Security.Cryptography.SHA256.Create();
+        byte[] hash = sha256.ComputeHash(Encoding.UTF8.GetBytes(machineState));
+        return BitConverter.ToString(hash).Replace("-", "").ToLowerInvariant();
+    }
+
+    static string TestedRoute(string state)
+    {
+        return state switch
+        {
+            "idle" => "Bootstrap>MainTitle",
+            "route-stage" => "Bootstrap>MainTitle>Start>Foundation:BasePreparation@Yeongdeungpo",
+            "encounter" => "Depart>Travel:Sindorim>FaceEncounter>EnterResolution",
+            "battle-paused-card-recharging" => "ChooseCombat>SwapFormation>Deploy>PlayGeneralCard:Paused",
+            "settlement" => "Resume>Terminal>Settle",
+            _ => state,
+        };
     }
 
     static string RunGit(string args)
@@ -299,30 +308,176 @@ public sealed class UiToolkitCapturePlayModeTests
     }
 }
 
-public sealed class ClickYield : CustomYieldInstruction
+public sealed class SceneLoadedYield : CustomYieldInstruction
 {
-    readonly Func<IPocCoreLoopSession, bool> done;
-    readonly IPocCoreLoopSession session;
-    int guard;
+    readonly string path;
+    readonly float deadline;
+    bool complete;
 
-    public ClickYield(IPocCoreLoopSession session, Func<IPocCoreLoopSession, bool> done)
+    public SceneLoadedYield(string path, float timeoutSeconds)
     {
-        this.session = session;
-        this.done = done;
+        this.path = path;
+        deadline = Time.realtimeSinceStartup + timeoutSeconds;
+        SceneManager.sceneLoaded += OnLoaded;
+        if (SceneManager.GetSceneByPath(path).isLoaded) Complete();
+    }
+
+    void OnLoaded(Scene scene, LoadSceneMode _)
+    {
+        if (scene.path == path) Complete();
+    }
+
+    void Complete()
+    {
+        complete = true;
+        SceneManager.sceneLoaded -= OnLoaded;
     }
 
     public override bool keepWaiting
     {
         get
         {
-            guard++;
-            bool reached = done(session);
-            if (reached || guard > 600)
+            if (!complete && Time.realtimeSinceStartup >= deadline)
             {
-                Assert.That(reached, Is.True, "state not reached after click");
-                return false;
+                SceneManager.sceneLoaded -= OnLoaded;
+                Assert.Fail("timed out awaiting scene " + path);
             }
-            return true;
+            return !complete;
+        }
+    }
+}
+
+public sealed class AsyncOperationYield : CustomYieldInstruction
+{
+    readonly AsyncOperation operation;
+    readonly float deadline;
+    bool complete;
+
+    public AsyncOperationYield(AsyncOperation operation, float timeoutSeconds)
+    {
+        this.operation = operation;
+        deadline = Time.realtimeSinceStartup + timeoutSeconds;
+        operation.completed += OnCompleted;
+        if (operation.isDone) Complete();
+    }
+
+    void OnCompleted(AsyncOperation _) => Complete();
+
+    void Complete()
+    {
+        complete = true;
+        operation.completed -= OnCompleted;
+    }
+
+    public override bool keepWaiting
+    {
+        get
+        {
+            if (!complete && Time.realtimeSinceStartup >= deadline)
+            {
+                operation.completed -= OnCompleted;
+                Assert.Fail("timed out awaiting AsyncOperation");
+            }
+            return !complete;
+        }
+    }
+}
+
+public sealed class TaskYield : CustomYieldInstruction
+{
+    readonly System.Threading.Tasks.Task task;
+    readonly float deadline;
+    readonly string label;
+    bool complete;
+
+    public TaskYield(System.Threading.Tasks.Task task, float timeoutSeconds, string label)
+    {
+        this.task = task;
+        this.label = label;
+        deadline = Time.realtimeSinceStartup + timeoutSeconds;
+        task.GetAwaiter().OnCompleted(() => complete = true);
+        if (task.IsCompleted) complete = true;
+    }
+
+    public override bool keepWaiting
+    {
+        get
+        {
+            if (!complete && Time.realtimeSinceStartup >= deadline) Assert.Fail("timed out awaiting " + label);
+            if (complete) task.GetAwaiter().GetResult();
+            return !complete;
+        }
+    }
+}
+
+public sealed class BattleTerminalYield : CustomYieldInstruction
+{
+    readonly IPocCoreLoopSession session;
+    readonly float deadline;
+    bool complete;
+
+    public BattleTerminalYield(IPocCoreLoopSession session)
+    {
+        this.session = session;
+        deadline = Time.realtimeSinceStartup + 60f;
+        session.StateChanged += OnChanged;
+        OnChanged();
+    }
+
+    void OnChanged()
+    {
+        if (session.Battle == null || session.Battle.Outcome == BattleOutcomeKind.Ongoing) return;
+        complete = true;
+        session.StateChanged -= OnChanged;
+    }
+
+    public override bool keepWaiting
+    {
+        get
+        {
+            if (!complete && Time.realtimeSinceStartup >= deadline)
+            {
+                session.StateChanged -= OnChanged;
+                Assert.Fail("timed out awaiting terminal realtime battle");
+            }
+            return !complete;
+        }
+    }
+}
+
+public sealed class ClickYield : CustomYieldInstruction
+{
+    readonly Func<IPocCoreLoopSession, bool> done;
+    readonly IPocCoreLoopSession session;
+    readonly float deadline;
+    bool complete;
+
+    public ClickYield(IPocCoreLoopSession session, Func<IPocCoreLoopSession, bool> done)
+    {
+        this.session = session;
+        this.done = done;
+        deadline = Time.realtimeSinceStartup + 8f;
+        session.StateChanged += OnChanged;
+        OnChanged();
+    }
+
+    void OnChanged()
+    {
+        if (!done(session)) return;
+        complete = true;
+        session.StateChanged -= OnChanged;
+    }
+
+    public override bool keepWaiting
+    {
+        get
+        {
+            if (!complete && Time.realtimeSinceStartup >= deadline)
+            {
+                session.StateChanged -= OnChanged;
+                Assert.Fail("timed out awaiting state after UI click");
+            }
+            return !complete;
         }
     }
 }

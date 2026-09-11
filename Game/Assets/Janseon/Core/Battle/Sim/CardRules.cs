@@ -9,7 +9,7 @@ namespace Janseon.Core.Battle.Sim
         public static bool HasDraw { get { return false; } }
         public static IReadOnlyList<CardDefinition> All()
         {
-            return new[] {
+            return new CardDefinition[] {
                 new CardDefinition { Id="guard-shieldwall", Kind=CardKind.Character, RechargeTicks=300, Effect=-3, EffectKey="front_damage" },
                 new CardDefinition { Id="encourage-morale", Kind=CardKind.Character, RechargeTicks=600, Effect=10, EffectKey="morale" },
                 new CardDefinition { Id="pincer-focus", Kind=CardKind.Character, RechargeTicks=450, Effect=1, EffectKey="front_damage" },

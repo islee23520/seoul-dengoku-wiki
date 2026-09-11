@@ -19,6 +19,17 @@ export const PLAYABLE_BUILD_SCENES = [
 
 export const CODE_NATIVE_UI_ROOT = 'Game/Assets/Janseon/Foundation/UI';
 
+const ORIGINAL_PROP_IDS = new Set([
+  'poc-prop-ticket-gate', 'poc-prop-pump-crate', 'poc-prop-shutter',
+  'poc-prop-pillar', 'poc-prop-bench', 'poc-prop-cabinet',
+]);
+
+/** Return the existing provenance vocabulary key for an original station prop. */
+export function runtimeSlotForAsset(asset) {
+  const assetId = asset?.asset_id;
+  return ORIGINAL_PROP_IDS.has(assetId) ? `prop:${assetId}` : null;
+}
+
 export const CLASS = {
   A_VALID_PROMOTED: 'A_valid_promoted',
   B_CODE_NATIVE: 'B_code_native_ui_geometry',
@@ -56,6 +67,9 @@ export function evaluatePromotedAsset(asset, options = {}) {
 
   errors.push(...validateManifest(asset).errors);
   if (asset.status !== 'promoted') errors.push({ code: 'status_not_promoted' });
+  if (asset.look?.owner_verdict !== 'accepted') {
+    errors.push({ code: 'owner_verdict_not_accepted', field: 'look.owner_verdict' });
+  }
   const root = options.repoRoot ?? defaultRepoRoot;
   const hash = bytes => createHash('sha256').update(bytes).digest('hex');
   const fileMatches = (path, expected) => {
@@ -360,7 +374,7 @@ export function auditRuntimeProvenance(repoRoot = defaultRepoRoot, options = {})
         }
       }
     }
-    const isUiSource = rel.endsWith('.uxml') || rel.endsWith('.uss');
+    const isUiSource = isCodeNativeUiPath(rel);
     classifications.push({
       slot: rel,
       path: rel,
@@ -370,7 +384,7 @@ export function auditRuntimeProvenance(repoRoot = defaultRepoRoot, options = {})
       ok_for_runtime: true,
       promoted_art: false,
       note: isUiSource
-        ? 'Design.md §9 accepted debt: code-native UXML/USS geometry/tokens — NOT promoted generated art'
+        ? 'Code-native Foundation/scene surface — NOT promoted generated art'
         : 'playable scene shell (scopes/UIDocument wiring only) — NOT promoted generated art',
     });
 

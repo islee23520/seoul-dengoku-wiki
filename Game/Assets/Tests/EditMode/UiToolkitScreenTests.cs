@@ -42,10 +42,19 @@ namespace Janseon.Foundation.Tests
             RectTransform root = UguiHudBuilder.BuildMainTitle(null);
             Transform mark = UguiHudBuilder.Find(root, UiElementNames.MainTitleMark);
             Assert.That(mark, Is.Not.Null, "missing " + UiElementNames.MainTitleMark);
-            bool hasTmp = mark.GetComponentInChildren<TMPro.TextMeshProUGUI>(true) != null;
-            bool hasText = mark.GetComponentInChildren<UnityEngine.UI.Text>(true) != null;
-            Assert.That(hasTmp || hasText, Is.True,
-                "main-title-mark must render TMP or uGUI Text");
+            var title = mark.GetComponentInChildren<TMPro.TextMeshProUGUI>(true);
+            Assert.That(title, Is.Not.Null, "main-title-mark must render TMP");
+            Assert.That(title.font, Is.Not.Null);
+            Assert.That(title.font.name, Is.EqualTo("NanumGothic SDF"));
+            Assert.That(title.font.sourceFontFile, Is.Not.Null);
+            Assert.That(title.font.sourceFontFile.name, Does.Contain("NanumGothic"));
+            Assert.That(title.font.atlasTextures, Is.Not.Empty);
+            Assert.That(title.font.atlasTexture, Is.Not.Null);
+            Assert.That(title.font.material, Is.Not.Null);
+            Assert.That(title.font.material.shader, Is.Not.Null);
+            Assert.That(title.font.TryAddCharacters("잔선서울"), Is.True);
+            title.ForceMeshUpdate(true, true);
+            Assert.That(title.textInfo.characterCount, Is.GreaterThanOrEqualTo(4));
 
             var start = UguiHudBuilder.ButtonNamed(root, UiElementNames.MainTitleStart);
             Assert.That(start, Is.Not.Null, "main-title-start must be a Button");
@@ -168,6 +177,81 @@ namespace Janseon.Foundation.Tests
                     Assert.That(UguiHudBuilder.Find(gameplayRoot, cell), Is.Not.Null, "missing " + cell);
                 }
             }
+        }
+
+        [Test]
+        public void Gameplay_RealtimeBattleHud_ExposesStableTmpCardMoraleAndReinforcementElements()
+        {
+            RectTransform root = UguiHudBuilder.BuildGameplay(null);
+            Assert.That(UguiHudBuilder.Find(root, UiElementNames.BattleHud), Is.Not.Null);
+            Assert.That(UguiHudBuilder.Find(root, "battle-ap"), Is.Null);
+
+            string[] required =
+            {
+                UiElementNames.BattleCardTray,
+                UiElementNames.BattleCardOwner,
+                UiElementNames.BattleCardCooldown,
+                UiElementNames.BattleCardCooldownMask,
+                UiElementNames.BattleCardCooldownText,
+                UiElementNames.BattleCardTargetRing,
+                UiElementNames.BattleCardDirectionNorth,
+                UiElementNames.BattleCardDirectionEast,
+                UiElementNames.BattleCardDirectionSouth,
+                UiElementNames.BattleCardDirectionWest,
+                UiElementNames.BattleCardCancel,
+                UiElementNames.BattleCardCancelPath,
+                UiElementNames.BattleMoralePlayer,
+                UiElementNames.BattleMoraleEnemy,
+                UiElementNames.BattleReinforcement,
+            };
+            foreach (string name in required)
+            {
+                Transform element = UguiHudBuilder.Find(root, name);
+                Assert.That(element, Is.Not.Null, "missing " + name);
+                if (name != UiElementNames.BattleCardCooldownMask)
+                {
+                    Assert.That(element.GetComponentInChildren<TMPro.TextMeshProUGUI>(true), Is.Not.Null,
+                        name + " must use TMP");
+                    Assert.That(element.GetComponentInChildren<UnityEngine.UI.Text>(true), Is.Null,
+                        name + " must not use native Text");
+                }
+            }
+        }
+
+        [Test]
+        public void Gameplay_RealtimeBattleHud_BindsActingCardMoraleSidesAndTelegraph()
+        {
+            RectTransform root = UguiHudBuilder.BuildGameplay(null);
+            var presenter = new GameplayPresenter();
+            Assert.That(presenter.BindForTest(root), Is.True);
+
+            var graph = RouteGraph.CreateYeongdeungpoSindorimGuro();
+            var ledger = new Ledger();
+            CampaignState state = CampaignApi.Start(90421, StationId.Yeongdeungpo, "realtime-hud");
+            state = (CampaignState)CampaignApi.Apply(graph, state, ledger, new CampaignCommand { Id = new CommandId("d"), Kind = CampaignCommandKind.Depart });
+            state = (CampaignState)CampaignApi.Apply(graph, state, ledger, new CampaignCommand { Id = new CommandId("t"), Kind = CampaignCommandKind.Travel, TravelDestination = StationId.Sindorim });
+            state = (CampaignState)CampaignApi.Apply(graph, state, ledger, new CampaignCommand { Id = new CommandId("f"), Kind = CampaignCommandKind.FaceEncounter });
+            state = (CampaignState)CampaignApi.Apply(graph, state, ledger, new CampaignCommand { Id = new CommandId("r"), Kind = CampaignCommandKind.EnterResolution });
+            var combat = (BattleRequired)CampaignApi.Apply(graph, state, ledger, new CampaignCommand { Id = new CommandId("c"), Kind = CampaignCommandKind.ChooseCombat });
+            var battle = BattleSim.Open(BattleSetup.FromContext(combat.Context));
+            state = (CampaignState)CampaignApi.AttachPendingBattle(state, ledger, combat.Context, new CommandId("a"));
+            var commanderCard = System.Array.Find(battle.Cards, card => card.OwnerUnitId.Equals(battle.PlayerCommanderId) && card.Id == "encourage-morale");
+            Assert.That(commanderCard, Is.Not.Null);
+            commanderCard.RechargeTicksLeft = 17;
+
+            GameplayUiSnapshot snapshot = GameplayUiSnapshot.FromCampaign(state, battle);
+            presenter.ApplySnapshot(snapshot);
+
+            Assert.That(UguiHudBuilder.Find(root, UiElementNames.BattleCardOwner).GetComponentInChildren<TMPro.TextMeshProUGUI>(true).text,
+                Does.Contain(battle.PlayerCommanderId.ToString()));
+            Assert.That(UguiHudBuilder.Find(root, UiElementNames.BattleCardCooldownText).GetComponentInChildren<TMPro.TextMeshProUGUI>(true).text,
+                Does.Contain("17"));
+            Assert.That(UguiHudBuilder.Find(root, UiElementNames.BattleMoralePlayer).GetComponentInChildren<TMPro.TextMeshProUGUI>(true).text,
+                Does.Contain(battle.Sides[0].Morale.ToString()));
+            Assert.That(UguiHudBuilder.Find(root, UiElementNames.BattleMoraleEnemy).GetComponentInChildren<TMPro.TextMeshProUGUI>(true).text,
+                Does.Contain(battle.Sides[1].Morale.ToString()));
+            Assert.That(UguiHudBuilder.Find(root, UiElementNames.BattleReinforcement).GetComponentInChildren<TMPro.TextMeshProUGUI>(true).text,
+                Does.Contain("증원"));
         }
 
         [Test]
@@ -460,7 +544,6 @@ namespace Janseon.Foundation.Tests
             {
                 if (UguiHudBuilder.Find(root, name) == null) missing.Add(name);
             }
-            if (UguiHudBuilder.Find(root, UiElementNames.BattleWait) == null) missing.Add(UiElementNames.BattleWait);
             Assert.That(missing, Is.Empty, "missing gameplay names");
 
             Canvas canvas = root.GetComponentInParent<Canvas>();
