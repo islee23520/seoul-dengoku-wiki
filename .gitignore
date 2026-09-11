@@ -9,6 +9,8 @@
 .env.*
 !.env.example
 Game/.unity-remote-token
+.vercel/
+.env.vercel.local
 
 # Unity generated state
 Game/[Ll]ibrary/
@@ -99,3 +101,7 @@ Game/Data/
 # so only the manifest under docs/assets/bom/donor/ is tracked.
 Game/Assets/Quarantine/
 Game/Assets/Quarantine.meta
+
+# Local pilgrimage bake attempts (receipts stay tracked)
+art-process/node_modules/
+art-process/out/**/*.png
