@@ -286,7 +286,7 @@ namespace Janseon.Foundation.UI
             railStack.childForceExpandHeight = false;
             railStack.childForceExpandWidth = true;
             railStack.childControlWidth = true;
-            railStack.childControlHeight = false;
+            railStack.childControlHeight = true;
             railStack.childAlignment = TextAnchor.UpperLeft;
 
             RectTransform heading = TmpLabel(formationEdit, "formation-edit-heading", "배치 명령", 18,
@@ -308,6 +308,7 @@ namespace Janseon.Foundation.UI
             LayoutElement unitListLayout = unitList.gameObject.AddComponent<LayoutElement>();
             unitListLayout.preferredHeight = 130f;
             unitListLayout.minHeight = 130f;
+            unitListLayout.preferredWidth = 346f;
 
             for (var i = 0; i < UiElementNames.FormationEditUnitIds.Length; i++)
             {
@@ -614,6 +615,7 @@ namespace Janseon.Foundation.UI
                 Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero,
                 TextAlignmentOptions.MidlineLeft, new Color(0.604f, 0.651f, 0.698f));
             Label(guidance, "why-tooltip", string.Empty);
+            BindLocalReviewPortraits(battle);
 
             RectTransform cancel = TmpSizedButton(guidance, UiElementNames.BattleCardCancel, "취소", TargetingCancelSize, TargetingCancelSize);
             cancel.gameObject.SetActive(false);
@@ -673,25 +675,144 @@ namespace Janseon.Foundation.UI
                 new Vector2(0f, 0f), new Vector2(1f, 0f), new Vector2(6f, 8f), new Vector2(-6f, 50f),
                 TextAlignmentOptions.Center, new Color(0.91f, 0.90f, 0.85f));
 
+            string cooldownName = hostSharedCooldown ? UiElementNames.BattleCardCooldown : "card-cooldown-" + cardId;
+            RectTransform cooldown = Box(inner, cooldownName, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero, Color.clear);
+            cooldown.GetComponent<Image>().raycastTarget = false;
+            GameObject maskGo = new GameObject("battle-card-cooldown-mask-" + cardId);
+            maskGo.transform.SetParent(cooldown, false);
+            Image mask = maskGo.AddComponent<Image>();
+            mask.color = VeilFill;
+            mask.raycastTarget = false;
+            RectTransform maskRt = mask.rectTransform;
+            maskRt.pivot = new Vector2(0.5f, 0f);
+            maskRt.anchorMin = Vector2.zero;
+            maskRt.anchorMax = new Vector2(1f, 0f);
+            maskRt.anchoredPosition = Vector2.zero;
+            maskRt.sizeDelta = new Vector2(0f, 0f);
             if (hostSharedCooldown)
             {
-                RectTransform cooldown = Box(inner, UiElementNames.BattleCardCooldown, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero, Color.clear);
-                cooldown.GetComponent<Image>().raycastTarget = false;
-                GameObject maskGo = new GameObject(UiElementNames.BattleCardCooldownMask);
-                maskGo.transform.SetParent(cooldown, false);
-                Image mask = maskGo.AddComponent<Image>();
-                mask.color = VeilFill;
-                mask.raycastTarget = false;
-                RectTransform maskRt = mask.rectTransform;
-                maskRt.pivot = new Vector2(0.5f, 0f);
-                maskRt.anchorMin = Vector2.zero;
-                maskRt.anchorMax = new Vector2(1f, 0f);
-                maskRt.anchoredPosition = Vector2.zero;
-                maskRt.sizeDelta = new Vector2(0f, 0f);
-                TmpLabel(cooldown, UiElementNames.BattleCardCooldownText, "재충전 0", 12,
-                    new Vector2(1f, 1f), new Vector2(1f, 1f), new Vector2(-58f, -28f), new Vector2(-6f, -6f),
-                    TextAlignmentOptions.Center, new Color(1f, 0.894f, 0.608f));
+                GameObject alias = new GameObject(UiElementNames.BattleCardCooldownMask);
+                alias.transform.SetParent(cooldown, false);
             }
+            string cooldownTextName = hostSharedCooldown ? UiElementNames.BattleCardCooldownText : "card-cooldown-text-" + cardId;
+            TmpLabel(cooldown, cooldownTextName, "재충전 0", 12,
+                new Vector2(1f, 1f), new Vector2(1f, 1f), new Vector2(-58f, -28f), new Vector2(-6f, -6f),
+                TextAlignmentOptions.Center, new Color(1f, 0.894f, 0.608f));
+        }
+
+        public static void BindLocalReviewPortraits(RectTransform root)
+        {
+            Sprite sprite = LocalReviewPortraitSprite();
+            if (sprite == null || root == null)
+            {
+                return;
+            }
+
+            Transform portrait = Find(root, "battle-card-owner-portrait-fill");
+            if (portrait != null)
+            {
+                Image portraitImage = portrait.GetComponent<Image>();
+                if (portraitImage != null)
+                {
+                    portraitImage.sprite = sprite;
+                    portraitImage.color = Color.white;
+                    portraitImage.preserveAspect = true;
+                }
+            }
+
+            for (var i = 0; i < CharacterOfferingIds.Length; i++)
+            {
+                Transform art = Find(root, "card-art-" + CharacterOfferingIds[i]);
+                if (art == null)
+                {
+                    continue;
+                }
+
+                Image artImage = art.GetComponent<Image>();
+                if (artImage == null)
+                {
+                    continue;
+                }
+
+                artImage.sprite = sprite;
+                artImage.color = Color.white;
+                artImage.preserveAspect = true;
+            }
+        }
+
+        public static void SetSelectedCard(RectTransform root, string cardId)
+        {
+            if (root == null)
+            {
+                return;
+            }
+
+            for (var i = 0; i < CharacterOfferingIds.Length; i++)
+            {
+                string id = CharacterOfferingIds[i];
+                Transform card = Find(root, UiElementNames.BattleCard(id));
+                if (card == null)
+                {
+                    continue;
+                }
+
+                float height = PortraitCardHeight + (id == cardId ? 7f : 0f);
+                LayoutElement layout = card.GetComponent<LayoutElement>();
+                if (layout != null)
+                {
+                    layout.preferredHeight = height;
+                    layout.minHeight = height;
+                }
+
+                ((RectTransform)card).sizeDelta = new Vector2(PortraitCardWidth, height);
+            }
+        }
+
+        public static void SetCardRechargeVeil(RectTransform root, string cardId, int remaining, int total)
+        {
+            if (root == null || string.IsNullOrEmpty(cardId))
+            {
+                return;
+            }
+
+            Transform card = Find(root, UiElementNames.BattleCard(cardId));
+            if (card == null)
+            {
+                return;
+            }
+
+            Transform mask = Find(card, "battle-card-cooldown-mask-" + cardId);
+            if (mask == null)
+            {
+                return;
+            }
+
+            float height = total <= 0 ? 0f : PortraitCardHeight * Mathf.Clamp01((float)remaining / total);
+            RectTransform maskRt = (RectTransform)mask;
+            maskRt.sizeDelta = new Vector2(0f, height);
+        }
+
+        static Sprite cachedLocalReviewSprite;
+
+        static Sprite LocalReviewPortraitSprite()
+        {
+            if (cachedLocalReviewSprite != null)
+            {
+                return cachedLocalReviewSprite;
+            }
+
+            Texture2D texture = Resources.Load<Texture2D>(Janseon.Foundation.Battle.FoundationBattleView.LocalReviewSpriteResource);
+            if (texture == null)
+            {
+                return null;
+            }
+
+            const float cell = 128f;
+            Rect rect = texture.width >= cell && texture.height >= cell
+                ? new Rect(0f, texture.height - cell, cell, cell)
+                : new Rect(0f, 0f, texture.width, texture.height);
+            cachedLocalReviewSprite = Sprite.Create(texture, rect, new Vector2(0.5f, 0.5f), cell);
+            return cachedLocalReviewSprite;
         }
 
         static RectTransform TmpSizedButton(RectTransform parent, string name, string text, float width, float height)

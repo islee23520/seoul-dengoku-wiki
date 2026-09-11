@@ -27,6 +27,8 @@ namespace Janseon.Foundation.Battle
         Transform selectionRing, targetRing, hoverRing;
         UnitId? hoveredUnit;
         int hoveredDirection = -1;
+        float zoom = 1f;
+        float baseOrthographicSize;
 
         public IReadOnlyDictionary<UnitId, Transform> Units => units;
         public Transform SelectionRing => selectionRing;
@@ -109,8 +111,27 @@ namespace Janseon.Foundation.Battle
             float width = battle.Arena.Width * GenreContract.TileUnityUnits;
             float depth = battle.Arena.Height * GenreContract.TileUnityUnits;
             ViewCamera.aspect = aspect;
-            ViewCamera.orthographicSize = Mathf.Max((width + depth) * 0.205f + 1f,
+            baseOrthographicSize = Mathf.Max((width + depth) * 0.205f + 1f,
                 (width + depth) * 0.354f / aspect + 1f);
+            ApplyZoom();
+        }
+
+        public void SetZoom(float value)
+        {
+            zoom = Mathf.Clamp(value, 0.72f, 1.75f);
+            ApplyZoom();
+        }
+
+        public float Zoom => zoom;
+
+        void ApplyZoom()
+        {
+            if (ViewCamera == null || baseOrthographicSize <= 0f)
+            {
+                return;
+            }
+
+            ViewCamera.orthographicSize = baseOrthographicSize / zoom;
         }
 
         public void Refresh()

@@ -161,6 +161,21 @@ namespace Janseon.Foundation.Tests
         }
 
         [Test]
+        public void ZoomFactor_ScalesOrthographicSize_AndDoesNotMutateCore()
+        {
+            view.FrameCamera(16f / 9f);
+            float baseSize = view.ViewCamera.orthographicSize;
+            string before = battle.Fingerprint();
+            view.SetZoom(0.72f);
+            Assert.AreEqual(baseSize / 0.72f, view.ViewCamera.orthographicSize, 0.01f);
+            view.SetZoom(1.75f);
+            Assert.AreEqual(baseSize / 1.75f, view.ViewCamera.orthographicSize, 0.01f);
+            view.SetZoom(1f);
+            Assert.AreEqual(baseSize, view.ViewCamera.orthographicSize, 0.01f);
+            Assert.AreEqual(before, battle.Fingerprint());
+        }
+
+        [Test]
         public void GameplayHudShowsLocalReviewProvenanceBanner_WorldViewDoesNot()
         {
             RectTransform hud = UguiHudBuilder.BuildGameplay(null);

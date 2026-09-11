@@ -312,7 +312,11 @@ namespace Janseon.Foundation.Composition
         public void TriggerFormationEditUnitForTest(string unitId) => FormationEditUnitChosen?.Invoke(unitId);
         public void TriggerFormationEditSlotForTest(string slotId) => FormationEditSlotChosen?.Invoke(slotId);
         public void TriggerFormationEditFacingForTest(CardinalDirection facing) => FormationEditFacingChosen?.Invoke(facing);
-        public void SetFormationEditVisible(bool visible) => SetVisible(UiElementNames.FormationEdit, visible);
+        public void SetFormationEditVisible(bool visible)
+        {
+            SetVisible(UiElementNames.FormationEdit, visible);
+            SetVisible(UiElementNames.BattleDock, !visible);
+        }
         public void TriggerMobilityRegroupForTest() => OnMobilityRegroupClicked();
         public void TriggerNegotiateForTest() => OnNegotiateClicked();
         public void TriggerBypassForTest() => OnBypassClicked();

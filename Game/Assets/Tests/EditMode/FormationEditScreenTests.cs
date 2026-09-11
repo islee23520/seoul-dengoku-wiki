@@ -132,6 +132,64 @@ namespace Janseon.Foundation.Tests
         }
 
         [Test]
+        public void BuildGameplay_FormationEditor_UnitListSlotsReportAndFacingDoNotOverlap()
+        {
+            RectTransform root = BuildAt720pConstantPixelSize();
+            try
+            {
+                Transform formationEdit = RequireFormationEdit(root);
+                formationEdit.gameObject.SetActive(true);
+                Rebuild((RectTransform)formationEdit);
+
+                RectTransform unitList = FindRect(formationEdit, "formation-edit-unit-list");
+                RectTransform slotGrid = FindRect(formationEdit, "formation-edit-slot-grid");
+                RectTransform report = FindRect(formationEdit, "formation-edit-selected-report");
+                RectTransform facing = FindRect(formationEdit, "formation-edit-facing");
+                RectTransform[] parts = { unitList, slotGrid, report, facing };
+                for (var i = 0; i < parts.Length; i++)
+                {
+                    Assert.That(parts[i], Is.Not.Null, "missing formation section " + i);
+                    Assert.That(parts[i].rect.height, Is.GreaterThan(8f),
+                        parts[i].name + " collapsed; height=" + parts[i].rect.height);
+                }
+
+                for (var i = 0; i < parts.Length; i++)
+                {
+                    for (var j = i + 1; j < parts.Length; j++)
+                    {
+                        Assert.That(VerticalOverlap(parts[i], parts[j]), Is.LessThan(1f),
+                            parts[i].name + " overlaps " + parts[j].name);
+                    }
+                }
+            }
+            finally
+            {
+                DestroyBuilt(root);
+            }
+        }
+
+        [Test]
+        public void SetFormationEditVisible_HidesBattleDock()
+        {
+            RectTransform root = BuildAt720pConstantPixelSize();
+            var presenter = new GameplayPresenter();
+            try
+            {
+                Assert.That(presenter.BindForTest(root), Is.True);
+                presenter.SetFormationEditVisible(true);
+                Transform dock = UguiHudBuilder.Find(root, UiElementNames.BattleDock);
+                Transform formationEdit = UguiHudBuilder.Find(root, UiElementNames.FormationEdit);
+                Assert.That(formationEdit.gameObject.activeSelf, Is.True);
+                Assert.That(dock.gameObject.activeSelf, Is.False,
+                    "formation editor must hide the card dock so the rail does not sit on the cards");
+            }
+            finally
+            {
+                DestroyBuilt(root);
+            }
+        }
+
+        [Test]
         public void FormationEdit_DoesNotDeployUntilConfirm()
         {
             RectTransform root = BuildAt720pConstantPixelSize();
@@ -224,6 +282,24 @@ namespace Janseon.Foundation.Tests
             canvas.renderMode = RenderMode.ScreenSpaceOverlay;
             Rebuild(root);
             return root;
+        }
+
+        static RectTransform FindRect(Transform parent, string name)
+        {
+            return UguiHudBuilder.Find(parent, name) as RectTransform;
+        }
+
+        static float VerticalOverlap(RectTransform a, RectTransform b)
+        {
+            Vector3[] ac = new Vector3[4];
+            Vector3[] bc = new Vector3[4];
+            a.GetWorldCorners(ac);
+            b.GetWorldCorners(bc);
+            float aMin = Mathf.Min(ac[0].y, ac[1].y, ac[2].y, ac[3].y);
+            float aMax = Mathf.Max(ac[0].y, ac[1].y, ac[2].y, ac[3].y);
+            float bMin = Mathf.Min(bc[0].y, bc[1].y, bc[2].y, bc[3].y);
+            float bMax = Mathf.Max(bc[0].y, bc[1].y, bc[2].y, bc[3].y);
+            return Mathf.Max(0f, Mathf.Min(aMax, bMax) - Mathf.Max(aMin, bMin));
         }
 
         static Vector2 MeasuredSize(RectTransform rt)

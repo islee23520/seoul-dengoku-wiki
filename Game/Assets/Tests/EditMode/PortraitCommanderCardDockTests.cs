@@ -106,6 +106,71 @@ namespace Janseon.Foundation.Tests
         }
 
         [Test]
+        public void BuildGameplay_OwnerPortraitAndCardArt_BindLocalReviewSprite()
+        {
+            RectTransform root = BuildAt720pConstantPixelSize();
+            try
+            {
+                UguiHudBuilder.BindLocalReviewPortraits(root);
+                Image portrait = FindRect(root, "battle-card-owner-portrait-fill").GetComponent<Image>();
+                Assert.That(portrait.sprite, Is.Not.Null, "owner portrait fill must show the local-review Seoyun sprite");
+                foreach (string cardId in CharacterOfferings)
+                {
+                    Image art = FindRect(root, "card-art-" + cardId).GetComponent<Image>();
+                    Assert.That(art.sprite, Is.Not.Null, cardId + " art well must not be an empty square");
+                }
+            }
+            finally
+            {
+                DestroyBuilt(root);
+            }
+        }
+
+        [Test]
+        public void BuildGameplay_SelectedCard_LiftsSevenPixels()
+        {
+            RectTransform root = BuildAt720pConstantPixelSize();
+            try
+            {
+                RectTransform idle = FindRect(root, "battle-card-guard-shieldwall");
+                RectTransform selected = FindRect(root, "battle-card-mobility-regroup");
+                UguiHudBuilder.SetSelectedCard(root, "mobility-regroup");
+                Rebuild(root);
+                float lift = WorldMaxY(selected) - WorldMaxY(idle);
+                Assert.That(lift, Is.EqualTo(7f).Within(1f),
+                    "selected mobility card must lift 7px vs idle sibling. actual=" + lift);
+            }
+            finally
+            {
+                DestroyBuilt(root);
+            }
+        }
+
+        [Test]
+        public void BuildGameplay_EachCharacterCard_HasBottomUpCooldownVeil()
+        {
+            RectTransform root = BuildAt720pConstantPixelSize();
+            try
+            {
+                foreach (string cardId in CharacterOfferings)
+                {
+                    RectTransform card = FindRect(root, "battle-card-" + cardId);
+                    Transform mask = UguiHudBuilder.Find(card, "battle-card-cooldown-mask-" + cardId);
+                    Assert.That(mask, Is.Not.Null, cardId + " missing bottom-up veil mask");
+                    UguiHudBuilder.SetCardRechargeVeil(root, cardId, 600, 600);
+                    Rebuild(root);
+                    RectTransform maskRt = mask as RectTransform;
+                    Assert.That(maskRt.sizeDelta.y, Is.GreaterThan(8f),
+                        cardId + " veil height must grow when recharge is nonzero. actual=" + maskRt.sizeDelta.y);
+                }
+            }
+            finally
+            {
+                DestroyBuilt(root);
+            }
+        }
+
+        [Test]
         public void BuildGameplay_KoreanTitleRendersWithoutTofu()
         {
             RectTransform root = BuildAt720pConstantPixelSize();
@@ -164,6 +229,13 @@ namespace Janseon.Foundation.Tests
         {
             Transform found = UguiHudBuilder.Find(root, name);
             return found as RectTransform;
+        }
+
+        static float WorldMaxY(RectTransform rt)
+        {
+            Vector3[] corners = new Vector3[4];
+            rt.GetWorldCorners(corners);
+            return Mathf.Max(corners[0].y, corners[1].y, corners[2].y, corners[3].y);
         }
 
         static Vector2 MeasuredSize(RectTransform rt)

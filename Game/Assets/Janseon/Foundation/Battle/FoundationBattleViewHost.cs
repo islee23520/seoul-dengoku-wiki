@@ -22,6 +22,7 @@ namespace Janseon.Foundation.Battle
         UnityEngine.UI.RawImage image;
         RenderTexture texture;
         readonly List<(UnityEngine.UI.Button button, UnityAction action)> bindings = new();
+        float zoom = 1f;
         public FoundationBattleView View { get; private set; }
         public RectTransform Viewport => viewport;
         public event Action Presented;
@@ -80,6 +81,10 @@ namespace Janseon.Foundation.Battle
             foreach (string card in cards)
                 Bind(UiElementNames.BattleCard(card), () => { controller.Targeting?.BeginCard(card); Synchronize(); });
             Bind(UiElementNames.BattleCardCancel, CancelTargeting);
+            Bind(UiElementNames.BattleZoomOut, () => StepZoom(-0.05f));
+            Bind(UiElementNames.BattleZoomIn, () => StepZoom(0.05f));
+            Bind(UiElementNames.BattleZoomReset, () => { zoom = 1f; ApplyZoom(); });
+            UguiHudBuilder.BindLocalReviewPortraits(host.CanvasRoot);
             // Keep cancel reachable on the battlefield even when the legacy dock overflows.
             // It remains a HUD raycast target, never a world selection.
             var cancel = (RectTransform)UguiHudBuilder.Find(host.CanvasRoot, UiElementNames.BattleCardCancel);
@@ -156,10 +161,42 @@ namespace Janseon.Foundation.Battle
                 View.Refresh();
                 float aspect = viewport.rect.height > 0 ? viewport.rect.width / viewport.rect.height : 16f / 9f;
                 View.FrameCamera(aspect);
+                View.SetZoom(zoom);
+                ApplyHudChrome();
             }
             UguiHudBuilder.Find(host.CanvasRoot, UiElementNames.BattleCardCancel).gameObject.SetActive(
                 controller.Targeting != null && controller.Targeting.Stage != CardTargetingStage.Idle);
             Presented?.Invoke();
+        }
+
+        void StepZoom(float delta)
+        {
+            zoom = Mathf.Clamp(zoom + delta, 0.72f, 1.75f);
+            ApplyZoom();
+        }
+
+        void ApplyZoom()
+        {
+            if (View != null) View.SetZoom(zoom);
+            ApplyHudChrome();
+        }
+
+        void ApplyHudChrome()
+        {
+            if (host?.CanvasRoot == null) return;
+            UguiHudBuilder.BindLocalReviewPortraits(host.CanvasRoot);
+            if (controller?.Targeting == null) return;
+            UguiHudBuilder.SetSelectedCard(host.CanvasRoot, controller.Targeting.CardId);
+            string[] cards = { "guard-shieldwall", "encourage-morale", "pincer-focus", "mobility-regroup" };
+            int[] totals = { 300, 600, 450, 600 };
+            for (int i = 0; i < cards.Length; i++)
+            {
+                int remaining = controller.Targeting.RechargeTicksLeft(cards[i]) ?? 0;
+                UguiHudBuilder.SetCardRechargeVeil(host.CanvasRoot, cards[i], remaining, totals[i]);
+            }
+            Transform zoomValue = UguiHudBuilder.Find(host.CanvasRoot, UiElementNames.BattleZoomValue);
+            var zoomLabel = zoomValue != null ? zoomValue.GetComponent<TMPro.TextMeshProUGUI>() : null;
+            if (zoomLabel != null) zoomLabel.text = Mathf.RoundToInt(zoom * 100f) + "%";
         }
 
         void LateUpdate() => Synchronize();
