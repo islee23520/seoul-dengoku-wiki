@@ -13,6 +13,7 @@
   * [십육국 핵심 인물](Core-Characters)
   * [인물 총람](Cast-Index) · [관계 원장](Cast-Relations)
   * [야망과 관계가 움직이는 정치](Ambitions-and-Relations)
+  * [후계, 이름 로스터, 세계 원장](Heirs-Names-and-World-Ledger)
   * [시나리오 타임라인](Scenario-Timeline)
 * [세계 서사 지도](World-Narrative-Atlas)
   * [세계 확장 색인](World-Expansion-Index)
