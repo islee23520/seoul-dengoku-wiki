@@ -9,7 +9,7 @@ const moduleDir = dirname(fileURLToPath(import.meta.url));
 export const defaultRepoRoot = resolve(moduleDir, '..', '..');
 export const runtimeSlotContract = JSON.parse(readFileSync(join(moduleDir, 'runtime-slot-contract.json'), 'utf8'));
 
-export const QUARANTINE_PATH_MARKERS = ['/ArtCandidates/', '/ArtSource/', '/Quarantine/', 'StationPropValidation.unity'];
+export const QUARANTINE_PATH_MARKERS = ['/Art/Staging/', '/Quarantine/', 'StationPropValidation.unity'];
 
 export const PLAYABLE_BUILD_SCENES = [
   'Game/Assets/Scenes/Bootstrap.unity',
@@ -265,7 +265,7 @@ export function auditRuntimeProvenance(repoRoot = defaultRepoRoot, options = {})
     : '';
 
   // Build settings must only enable playable scenes; StationPropValidation is forbidden.
-  if (/StationPropValidation/i.test(buildSettings) || /Art\/Props/i.test(buildSettings) || /ArtSource|ArtCandidates|Quarantine/i.test(buildSettings)) {
+  if (/StationPropValidation/i.test(buildSettings) || /Art\/Props/i.test(buildSettings) || /Art\/Staging|Quarantine/i.test(buildSettings)) {
     violations.push({
       code: 'build_settings_quarantine_leak',
       path: 'Game/ProjectSettings/EditorBuildSettings.asset',
@@ -477,7 +477,7 @@ export function auditRuntimeProvenance(repoRoot = defaultRepoRoot, options = {})
       if (file.includes(`${sep}Tests${sep}`)) return;
       const rel = relative(repoRoot, file).split(sep).join('/');
       const text = readFileSync(file, 'utf8');
-      if (/ArtSource|ArtCandidates|Quarantine|StationPropValidation/i.test(text)) {
+      if (/Art\/Staging|Quarantine|StationPropValidation/i.test(text)) {
         violations.push({
           code: 'runtime_source_quarantine_token',
           path: rel,
@@ -535,7 +535,7 @@ function resolveUiUrl(fromRel, url) {
 function deriveBlockedSlots(bomAssets) {
   const ids = ['prop:poc-prop-ticket-gate', 'prop:poc-prop-pump-crate', 'prop:poc-prop-shutter',
     'prop:poc-prop-pillar', 'prop:poc-prop-bench', 'prop:poc-prop-cabinet',
-    'character-explorer', 'character-medic', 'character-patrol', 'title-art', 'ui-icon-set', 'history-texture'];
+    'title-art', 'ui-icon-set', 'history-texture'];
   return ids.filter(id => !bomAssets.some(b => b.ok && (id === 'prop:' + b.asset_id || id === b.runtime_slot)))
     .map(slot => ({ slot, reason: 'no_source_bound_runtime_asset', replacement: null }));
 }

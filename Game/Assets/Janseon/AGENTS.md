@@ -19,7 +19,7 @@ Production domains, Unity composition, and art import boundary; score 8, distinc
 | Stable UI selectors | `Foundation/UI/UiElementNames.cs` | Machine names, not user-visible copy |
 | Reviewed runtime references | `Foundation/Art/RuntimeSlotCatalog.cs` | Injectable catalog, not candidate-path lookup |
 | Slot import and wiring | `Foundation/Editor/RuntimeSlotPromoter.cs`, `RuntimeSlotCatalogBuilder.cs` | Node preflight plus actual Unity imports |
-| Source vs imported art | `ArtSource/`, `Art/` | Raw authoring evidence vs imported assets; neither name alone grants approval |
+| Runtime art tree | `Art/` | Receipts, meshes, and imported assets live here; drafts go under `Art/Staging/` and are not runtime-reachable |
 
 ## CONVENTIONS
 - `Core/Core.asmdef` defines `Janseon.Core` with `noEngineReferences: true` and no assembly dependencies.
@@ -39,7 +39,7 @@ Production domains, Unity composition, and art import boundary; score 8, distinc
 
 ## ANTI-PATTERNS
 - Do not add UnityEngine dependencies to Core or static/SceneManager state to the scoped core-loop controller.
-- Do not embed ArtSource, ArtCandidates, quarantine, or provider-specific asset paths in runtime scripts.
+- Do not embed `Art/Staging`, quarantine, or provider-specific asset paths in runtime scripts.
 - Do not treat provider eligibility as asset provenance; approval is enforced by the Node-backed import boundary.
 - Do not bypass Unity import with a catalog entry pointing at missing or unreviewed objects.
 - Do not let animation clips retain candidate sprite references after runtime promotion.

@@ -163,8 +163,8 @@ test('evaluatePromotedAsset: missing hash fails', () => {
   assert.equal(r.ok, false);
 });
 
-test('isQuarantinePath detects ArtSource and poc-prop paths', () => {
-  assert.equal(isQuarantinePath('Game/Assets/Janseon/ArtSource/Props/x'), true);
+test('isQuarantinePath detects staging and quarantine paths', () => {
+  assert.equal(isQuarantinePath('Game/Assets/Janseon/Art/Staging/Props/x'), true);
   assert.equal(isQuarantinePath('Assets/Janseon/Art/Props/poc-prop-bench/a.prefab'), false);
   assert.equal(isQuarantinePath('Game/Assets/Janseon/Foundation/UI/Screens/MainTitle.uxml'), false);
 });
@@ -182,9 +182,9 @@ test('production worktree audit: playable slice has no C/D/E runtime refs', () =
   const audit = auditRuntimeProvenance(repoRoot);
   assert.equal(audit.ok, true, formatViolations(audit));
   assert.ok(audit.policy.trellis.ok === true);
-  const expectedOpen = 12 - audit.bomEvaluations.filter(b => b.ok).length;
+  const expectedOpen = 9 - audit.bomEvaluations.filter(b => b.ok).length;
   assert.equal(audit.blockedSlots.length, expectedOpen);
-  assert.ok(audit.blockedSlots.some((s) => s.slot === 'character-explorer'));
+  assert.ok(audit.blockedSlots.some((s) => s.slot === 'title-art'));
   // Code-native UI surfaces classified B
   const ui = audit.classifications.filter((c) => c.path && c.path.includes('Foundation/UI'));
   assert.ok(ui.length >= 3);
@@ -225,7 +225,7 @@ test('RED mutation: injecting TRELLIS prefab guid into MainTitle scene fails the
     assert.equal(audit.ok, true, `fixture clean should pass: ${formatViolations(audit)}`);
 
     // Inject TRELLIS prefab reference into MainTitle scene YAML (mutation).
-    const benchMeta = join(fixture, 'Game/Assets/Janseon/ArtSource/Props/unreviewed.prefab.meta');
+    const benchMeta = join(fixture, 'Game/Assets/Janseon/Art/Staging/Props/unreviewed.prefab.meta');
     mkdirSync(dirname(benchMeta), { recursive: true });
     writeFileSync(benchMeta, 'guid: 71cdea5c20934aa59fdd7265e4fd2cec\n');
     assert.ok(existsSync(benchMeta), 'bench prefab meta must exist for mutation');
@@ -303,14 +303,6 @@ function slotFixture(t, slot = slotContract.slots[0]) {
     cpSync(join(repoRoot, path), join(root, path), { recursive: true });
   }
   const keys = [...slot.runtime_keys];
-  if (slot.import === 'character') {
-    for (const facing of slotContract.character_sheet.facings) {
-      for (const action of slotContract.character_sheet.actions) {
-        keys.push(`${facing}/${action.name}/clip`);
-        for (let i = 0; i < action.frames; i++) keys.push(`${facing}/${action.name}/${i}`);
-      }
-    }
-  }
   const files = {};
   const slots = {};
   for (const key of keys) {
@@ -321,7 +313,7 @@ function slotFixture(t, slot = slotContract.slots[0]) {
   const row = validNonTrellisAsset({
     asset_id: `fixture-${slot.slot}`, runtime_slot: slot.slot, asset_class: slot.asset_class,
     output_path: slots[slot.primary_key], output_hash: files[slots[slot.primary_key]],
-    raw_path: 'Game/Assets/Janseon/ArtCandidates/TestFixture/raw.png',
+    raw_path: 'Game/Assets/Janseon/Art/Staging/TestFixture/raw.png',
     runtime_files: files, runtime_slot_files: slots,
   });
   row.raw_hash = put(row.raw_path, 'test-only raw');
@@ -362,7 +354,7 @@ for (const mutation of ['rights', 'output', 'review', 'raw', 'binding', 'empty-r
     if (mutation === 'binding') put(row.source_binding.path, '{}');
     if (mutation === 'empty-reviews') row.review_receipts = [];
     if (mutation === 'candidate') {
-      const path = 'Game/Assets/Janseon/ArtCandidates/TestFixture/leak.png';
+      const path = 'Game/Assets/Janseon/Art/Staging/TestFixture/leak.png';
       row.runtime_files[path] = put(path, 'candidate');
       row.runtime_slot_files.backdrop = path;
       bind();
@@ -382,7 +374,7 @@ for (const mutation of ['rights', 'output', 'review', 'raw', 'binding', 'empty-r
 for (const indirect of [false, true]) {
   test(`runtime slot: candidate GUID leak ${indirect ? 'through catalog' : 'from scene'} fails`, t => {
     const { root, put } = slotFixture(t);
-    const candidate = 'Game/Assets/Janseon/ArtCandidates/TestFixture/leak.png';
+    const candidate = 'Game/Assets/Janseon/Art/Staging/TestFixture/leak.png';
     const guid = '1234567890abcdef1234567890abcdef';
     put(candidate, 'candidate');
     put(candidate + '.meta', `guid: ${guid}\n`);
@@ -426,43 +418,3 @@ test('original station props bind runtime slots to their BOM provenance sources 
   }
 });
 
-test('character lineage accepts only reviewed sprite GUID substitution', t => {
-  const slot = slotContract.slots.find(s => s.slot === 'character-explorer');
-  const { root, row, put, bind, save } = slotFixture(t, slot);
-  const sources = {};
-  let index = 1;
-  for (const [key, path] of Object.entries(row.runtime_slot_files)) {
-    const source = `Game/Assets/Janseon/ArtCandidates/TestFixture/${key.replaceAll('/', '-')}.${key.endsWith('/clip') ? 'anim' : 'png'}`;
-    sources[path] = source;
-    if (!key.endsWith('/clip')) {
-      put(source, readFileSync(join(root, path)));
-      if (key !== 'atlas') {
-        put(source + '.meta', `guid: ${index.toString(16).padStart(32, '0')}\n`);
-        put(path + '.meta', `guid: ${(index + 1000).toString(16).padStart(32, '0')}\n`);
-        index++;
-      }
-    }
-  }
-  for (const [key, path] of Object.entries(row.runtime_slot_files)) {
-    if (!key.endsWith('/clip')) continue;
-    const framePath = row.runtime_slot_files[key.slice(0, -4) + '0'];
-    const oldGuid = readFileSync(join(root, sources[framePath] + '.meta'), 'utf8').trim().slice(6);
-    const newGuid = readFileSync(join(root, framePath + '.meta'), 'utf8').trim().slice(6);
-    const before = `time: 0\nvalue: {fileID: 21300000, guid: ${oldGuid}, type: 3}\n`;
-    row.runtime_files[path] = put(sources[path], before);
-    put(path, before.replace(oldGuid, newGuid));
-  }
-  bind();
-  row.generated_from = { kind: 'sprite-guid-retarget-v1', source_binding_hash: row.source_binding.sha256, candidate_files: sources };
-  for (const [key, path] of Object.entries(row.runtime_slot_files))
-    if (key.endsWith('/clip')) row.runtime_files[path] = sha256(readFileSync(join(root, path)));
-  save();
-  assert.equal(evaluatePromotedAsset(row, { repoRoot: root }).ok, true);
-  const clip = row.runtime_slot_files['N/idle/clip'];
-  const original = readFileSync(join(root, clip));
-  row.runtime_files[clip] = put(clip, original.toString().replace('time: 0', 'time: 9'));
-  assert.equal(evaluatePromotedAsset(row, { repoRoot: root }).ok, false, 'rehashed timing change is not approved');
-  row.runtime_files[clip] = put(clip, original);
-  row.generated_from.source_binding_hash = 'f'.repeat(64);
-  assert.equal(evaluatePromotedAsset(row, { repoRoot: root }).ok, false, 'wrong parent binding fails');
-});

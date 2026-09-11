@@ -14,7 +14,7 @@ Asset planning, candidate assembly, and fail-closed runtime provenance; score 8,
 | UI kit file families and BOM checks | `poc-ui-kit-contract.mjs` | Required IDs, paths, source files |
 | Runtime reachability and evidence | `runtime-asset-provenance.mjs` | `auditRuntimeProvenance`, `evaluatePromotedAsset` |
 | Runtime audit CLI | `check-runtime-asset-provenance.mjs` | JSON and evidence-output options |
-| Slot layout and sprite-sheet contract | `runtime-slot-contract.json` | Six non-prop slots, exact semantic keys |
+| Slot layout | `runtime-slot-contract.json` | Title, UI icon set, and history-texture slots |
 | Promotion preparation/finalization | `runtime-slot-promotion.mjs` | `prepare`/`commit` JSON request phases |
 | Verified slot export | `export-runtime-slots.mjs` | Runtime catalog export boundary |
 | Local character/UI draft generation | `build-poc-character-sprites.py`, `build-poc-ui-candidates.py` | Explicit new `--output-dir` |
@@ -25,9 +25,8 @@ Asset planning, candidate assembly, and fail-closed runtime provenance; score 8,
 - Graph compilation describes work; host capability flags do not execute or prove backend generation.
 - Reviewed/promoted manifests require allowed rights and passing, named, hashed, timestamped review receipts.
 - Runtime promotion additionally binds real raw/output/runtime bytes, rights evidence, review files, and source-binding JSON by SHA-256.
-- Slot files must match contract keys and destination directories; character slots expand every facing/action frame and clip.
+- Slot files must match contract keys and destination directories under `Game/Assets/Janseon/Art/`.
 - `prepare` validates candidate inputs and refuses destination overwrites; `commit` validates imported runtime files before appending the BOM row.
-- Character commit records `sprite-guid-retarget-v1` lineage and refreshes imported clip hashes; this is not permission to accept arbitrary altered clips.
 - The slot contract names the runtime BOM under `docs/assets/bom/runtime/` and Unity catalog under `Game/Assets/Janseon/Foundation/Art/`.
 - Python assemblers emit draft assets with unknown rights and empty reviews; successful assembly is not promotion.
 - Python image tools require Pillow; UI candidate assembly also imports NumPy.
@@ -46,7 +45,7 @@ python3 -m unittest discover -s tools/art -p 'test_*.py'
 - No automatic backend fallback; `fallback_backend` and `auto_fallback: true` are rejected.
 - `comfyui_trellis`, `meshygen_plus`, and `tripo3d` are not usable substitutes; `comfyui_texture` is existing-tile intake only.
 - Do not infer TRELLIS availability from the local machine: the pinned direct-Python host is a separate Windows RTX 4080 environment, with CPU/community fallback forbidden.
-- Do not promote candidate/ArtSource/Quarantine content by merely setting `status: promoted`; runtime bytes and source-bound receipts must verify.
+- Do not promote `Art/Staging` or Quarantine content by merely setting `status: promoted`; runtime bytes and source-bound receipts must verify.
 - Do not overwrite existing runtime slots or asset IDs; promotion refuses replacement, path traversal, symlink escape, and non-candidate sources.
 - Alternate promotion BOM paths are fixture-only, not a production bypass.
-- Do not write UI draft assembly into Game/ArtSource or reuse an existing output directory; the generator rejects both.
+- Do not write UI draft assembly into `Game/Assets` or reuse an existing output directory; the generator rejects both.

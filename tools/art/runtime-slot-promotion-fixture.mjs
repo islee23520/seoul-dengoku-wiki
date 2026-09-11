@@ -2,10 +2,10 @@
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { createHash } from 'node:crypto';
-import { runtimeSlotContract, runtimeSlotKeys } from './runtime-asset-provenance.mjs';
+import { runtimeSlotContract } from './runtime-asset-provenance.mjs';
 
 const [root, id, mutation = 'none'] = process.argv.slice(2);
-const source = `Game/Assets/Janseon/ArtCandidates/TestPromotion-${id}/fixture.png`;
+const source = `Game/Assets/Janseon/Art/Staging/TestPromotion-${id}/fixture.png`;
 const destination = `Game/Assets/Janseon/Art/Title/TestPromotion-${id}/fixture.png`;
 const evidence = `.omo/evidence/gateway-slot-wiring/fixtures/${id}`;
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
@@ -46,25 +46,6 @@ const row = {
   },
 };
 const candidateFiles = { [destination]: source };
-if (mutation === 'character') {
-  const slot = runtimeSlotContract.slots.find(s => s.slot === 'character-explorer');
-  row.runtime_slot = slot.slot;
-  row.asset_class = slot.asset_class;
-  row.look = syntheticLook('character');
-  row.runtime_files = {};
-  row.runtime_slot_files = {};
-  delete candidateFiles[destination];
-  for (const key of runtimeSlotKeys(slot)) {
-    const filename = key.replaceAll('/', '-') + (key.endsWith('/clip') ? '.anim' : '.png');
-    const input = `Game/Assets/Janseon/ArtCandidates/TestPromotion-${id}/${filename}`;
-    const output = `${slot.destination}TestPromotion-${id}/${filename}`;
-    row.runtime_slot_files[key] = output;
-    row.runtime_files[output] = hash(readFileSync(join(root, input)));
-    candidateFiles[output] = input;
-  }
-  row.output_path = row.runtime_slot_files.atlas;
-  row.output_hash = row.runtime_files[row.output_path];
-}
 const bindingPath = `${evidence}/binding.json`;
 row.source_binding = { path: bindingPath, sha256: put(bindingPath, JSON.stringify({
   asset_id: row.asset_id, runtime_slot: row.runtime_slot, raw_hash: row.raw_hash,

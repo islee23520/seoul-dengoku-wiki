@@ -95,11 +95,11 @@ export const POC_CHARACTERS = Object.freeze([
 ]);
 
 export function artSourceRoot() {
-  return join(REPO_ROOT, 'Game', 'Assets', 'Janseon', 'ArtSource', 'Characters');
+  return join(REPO_ROOT, 'Game', 'Assets', 'Janseon', 'Art', 'Staging', 'Characters');
 }
 
 export function archiveSourceRoot() {
-  return join(REPO_ROOT, 'ArtSource', 'characters');
+  return join(REPO_ROOT, 'Art', 'characters');
 }
 
 export function promotedArtRoot() {
@@ -268,7 +268,7 @@ export function framesAreHorizontalMirrors(eastPath, westPath) {
 
 export function validateCharacterPromotion(root = REPO_ROOT) {
   const codes = [];
-  const sourceRoot = join(root, 'Game', 'Assets', 'Janseon', 'ArtSource', 'Characters');
+  const sourceRoot = join(root, 'Game', 'Assets', 'Janseon', 'Art', 'Staging', 'Characters');
   const artRoot = join(root, 'Game', 'Assets', 'Janseon', 'Art', 'Characters');
   const bomFile = join(sourceRoot, 'poc-characters.bom.json');
   const docsBomDir = join(root, 'docs', 'assets', 'bom', 'characters');

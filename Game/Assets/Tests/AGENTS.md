@@ -12,13 +12,9 @@ EditMode contracts and real-scene PlayMode evidence; score 8, distinct validatio
 | Settlement retries/conflicts | `EditMode/SettlementExactOnceTests.cs` | Receipts and exact-once effects |
 | Transition rejection/retry | `EditMode/ApplicationFlowTests.cs` | Recording scene-loader seams |
 | UI structure and regressions | `EditMode/UiToolkitScreenTests.cs`, `UiToolkitVisualQaDefectTests.cs` | Selectors, UXML/USS, resolution contracts |
-| Scene and asset provenance | `EditMode/RuntimeAssetProvenanceTests.cs` | Real Node gate and Unity dependency checks |
-| Runtime slot contracts | `EditMode/RuntimeSlotBindingTests.cs`, `RuntimeSlotPromotionTests.cs` | Reviewed asset binding and promotion |
-| Candidate imports | `EditMode/UiCandidateImportTests.cs`, `PocUiKitShowcaseImportRenderTests.cs` | Editor-only showcase import contracts |
 | Actual scene ownership | `PlayMode/FoundationSceneFlowTests.cs` | Bootstrap/content scopes, cancellation, disposal |
 | Gameplay integration | `PlayMode/CoreLoopPlayModeTests.cs` | Presenter actions through the live scoped session |
 | Capture matrix | `PlayMode/UiToolkitCapturePlayModeTests.cs` | PNGs plus machine-readable provenance receipts |
-| Candidate rendering | `PlayMode/UiCandidateRenderPlayModeTests.cs` | Imported showcase rendering evidence |
 
 ## CONVENTIONS
 - Both asmdefs use `Janseon.Foundation.Tests`, `UNITY_INCLUDE_TESTS`, and `TestAssemblies`.

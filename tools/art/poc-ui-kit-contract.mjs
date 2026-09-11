@@ -66,7 +66,7 @@ export function familyOf(assetId) {
 }
 
 export function artSourceDir(assetId) {
-  return join(repoRoot, 'Game', 'Assets', 'Janseon', 'ArtSource', familyOf(assetId), assetId);
+  return join(repoRoot, 'Game', 'Assets', 'Janseon', 'Art', familyOf(assetId), assetId);
 }
 
 export function promotedPng(assetId) {
@@ -107,12 +107,16 @@ export function expectedSourceFiles(assetId) {
     join(dir, 'manifest.json'),
   ];
   if (assetId === 'poc-tile-texture') {
-    for (const name of TILE_VARIANT_FILES) files.push(join(dir, name));
+    for (const name of TILE_VARIANT_FILES) {
+      files.push(join(repoRoot, 'Game', 'Assets', 'Janseon', 'Art', 'Tiles', name));
+    }
   } else if (assetId === 'poc-ui-icons') {
-    files.push(join(dir, 'poc-ui-icons.png'));
-    for (const name of ICON_NAMES) files.push(join(dir, `icon-${name}.png`));
+    files.push(join(repoRoot, 'Game', 'Assets', 'Janseon', 'Art', 'UI', 'poc-ui-icons.png'));
+    for (const name of ICON_NAMES) {
+      files.push(join(repoRoot, 'Game', 'Assets', 'Janseon', 'Art', 'UI', `icon-${name}.png`));
+    }
   } else {
-    files.push(join(dir, `${assetId}.png`));
+    files.push(promotedPng(assetId));
   }
   return files;
 }

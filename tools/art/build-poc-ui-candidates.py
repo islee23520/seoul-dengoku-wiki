@@ -66,10 +66,10 @@ for _name in ICON_NAMES:
     ORIGINAL_INPUTS[f"icon-{_name}"] = ART / "UI" / f"icon-{_name}.png"
 
 REFERENCE_INPUTS = {
-    "raw:floor": REPO / "Game/Assets/Janseon/ArtSource/Tiles/poc-tile-texture/raw/floor.jpg",
-    "raw:wall": REPO / "Game/Assets/Janseon/ArtSource/Tiles/poc-tile-texture/raw/wall.jpg",
-    "raw:platform": REPO / "Game/Assets/Janseon/ArtSource/Tiles/poc-tile-texture/raw/platform.jpg",
-    "raw:title": REPO / "Game/Assets/Janseon/ArtSource/Title/poc-title-art/raw/title.jpg",
+    "raw:floor": REPO / "Game/Assets/Janseon/Art/Tiles/poc-tile-texture/raw/floor.jpg",
+    "raw:wall": REPO / "Game/Assets/Janseon/Art/Tiles/poc-tile-texture/raw/wall.jpg",
+    "raw:platform": REPO / "Game/Assets/Janseon/Art/Tiles/poc-tile-texture/raw/platform.jpg",
+    "raw:title": REPO / "Game/Assets/Janseon/Art/Title/poc-title-art/raw/title.jpg",
 }
 
 
@@ -719,10 +719,10 @@ def write_png(path: Path, image: Image.Image) -> str:
 
 
 def build(output_dir: Path) -> Path:
-    """명시 후보 디렉터리에 draft만 조립한다. 원본/ArtSource/Game 경로에는 쓰지 않는다."""
+    """명시 후보 디렉터리에 draft만 조립한다. Game 경로에는 쓰지 않는다."""
     output_dir = output_dir.resolve()
-    if any(part.casefold() in {"game", "artsource"} for part in output_dir.parts):
-        raise ValueError("Game/ArtSource 경로는 후보 출력으로 사용할 수 없습니다.")
+    if any(part.casefold() == "game" for part in output_dir.parts):
+        raise ValueError("Game 경로는 후보 출력으로 사용할 수 없습니다.")
     output_dir.mkdir(parents=True, exist_ok=False)
     rendered = render_all()
     report = evaluate_candidates(rendered["title"], rendered["icons"], rendered["tiles"], rendered["panel"], rendered["buttons"])

@@ -8,12 +8,12 @@ using UnityEngine;
 namespace Janseon.Art.Editor
 {
     /// <summary>
-    /// UI 수정 후보를 격리 경로 Assets/Janseon/ArtCandidates/UI 로만 Unity API import한다.
-    /// 승격/런타임 연결이 아니며 Assets/Janseon/Art, ArtSource 및 playable scene은 건드리지 않는다.
+    /// UI 수정 후보를 격리 경로 Assets/Janseon/Art/Staging/UI 로만 Unity API import한다.
+    /// 승격/런타임 연결이 아니며 playable scene은 건드리지 않는다.
     /// </summary>
     public static class UiCandidateShowcase
     {
-        public const string CandidateRoot = "Assets/Janseon/ArtCandidates/UI";
+        public const string CandidateRoot = "Assets/Janseon/Art/Staging/UI";
         const string SourceRel = ".omo/evidence/gateway-ui-candidates/candidate-v1";
         static readonly string[] IconNames = { "talk", "detour", "battle", "heal", "party", "station", "crate", "alert" };
         static readonly string[] TileKinds = { "floor", "wall", "platform" };

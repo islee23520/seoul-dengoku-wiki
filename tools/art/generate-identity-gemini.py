@@ -13,7 +13,7 @@ from hashlib import sha256
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-OUT_ROOT = ROOT / "Game" / "Assets" / "Janseon" / "ArtSource" / "Characters"
+OUT_ROOT = ROOT / "Game" / "Assets" / "Janseon" / "Art" / "Staging" / "Characters"
 EVIDENCE = ROOT / ".omo" / "evidence" / "unity-poc-core-loop" / "task-15-characters"
 MODEL = "gemini-2.5-flash-image"
 ENDPOINT = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"

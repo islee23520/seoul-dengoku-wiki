@@ -754,8 +754,8 @@ def frame_name(asset_id: str, facing: str, action: str, frame: int) -> str:
 
 def _prepare_candidate_output_dir(output_dir: Path) -> Path:
     output_dir = output_dir.resolve()
-    if any(part.casefold() in {"game", "artsource"} for part in output_dir.parts):
-        raise ValueError("Game/ArtSource 경로는 후보 출력으로 사용할 수 없습니다.")
+    if any(part.casefold() == "game" for part in output_dir.parts):
+        raise ValueError("Game 경로는 후보 출력으로 사용할 수 없습니다.")
     output_dir.mkdir(parents=True, exist_ok=False)
     return output_dir
 
