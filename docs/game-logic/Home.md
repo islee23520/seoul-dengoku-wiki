@@ -17,6 +17,9 @@
 |---|---|
 | [이 게임이 뭔지](Game-Thesis.md) | 어떤 인물로 시작해 무엇을 이루는 게임인지 |
 | [서울과 지하철 레이어](World-and-Subway-Layers.md) | 다층 세계 그래프와 데이터 출처 |
+| [월드맵을 어떻게 구성하나](World-Map-Construction.md) | 구 25·역 목록·시설을 그래프로 조립하는 순서. 런타임은 세 역 |
+| [서울 역 카탈로그](Seoul-Station-Catalog.md) | OSM에서 뽑은 서울 안 이름 있는 역 334곳 |
+| [역 내부에 들어가면](Station-Interior-Construction.md) | 입장 시 층·격자·시설 슬롯. 조우 정산 API와 별개 |
 | [출격하고 돌아오는 흐름](Campaign-Loop.md) | 준비, 원정, 마주침, 전투, 복귀와 결과 반영 |
 | [거점과 영토](Strongholds-and-Territory.md) | 점령, 안정화, 통합, 시설과 영토 과확장 |
 | [경제와 생산](Economy-and-Production.md) | 생존 자원, 노동, 전력, 생산과 시장 가격 |

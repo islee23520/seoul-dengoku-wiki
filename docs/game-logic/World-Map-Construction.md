@@ -6,7 +6,7 @@
 
 **설계 데이터.** 서울 25개 자치구, 이름 있는 역 목록, 주변 시설, 십육국 권역을 빠짐없이 카탈로그로 둔다.
 
-**런타임.** `RouteGraph`는 영등포—신도림—구로 세 역만 있다. 영등포와 구로는 맞닿지 않는다. Unity `Assets`에 지리 번들을 넣지 않았다. 문서에 적힌 서울 전역이 게임에 로드된다는 뜻이 아니다.
+**런타임.** `RouteGraph.CreateSeoul()`은 카탈로그 역 334와 OSM 인접 435를 로드한다. 영등포—신도림, 신도림—구로는 유지하고 영등포—구로는 없다. `CreateYeongdeungpoSindorimGuro()`는 Area 1 세 역 POC·테스트용으로 남긴다. Unity에 OSM PBF를 넣지 않았다. 내부 격자·시설 슬롯·16국 캠페인은 아직 없다.
 
 관련 문서: [서울과 지하철 레이어](World-and-Subway-Layers.md), [서울 십육국](Sixteen-States.md), [서울 역 카탈로그](Seoul-Station-Catalog.md), [역 내부에 들어가면](Station-Interior-Construction.md), [이동과 조우](Travel-and-Encounters.md).
 
@@ -107,12 +107,13 @@ OSM 참고 집계(설계 데이터, 거점 슬롯 아님): 병원·클리닉, �
 
 ## 지금 코드가 아는 그래프
 
-파일: `Game/Assets/Janseon/Core/RouteDomain.cs` `CreateYeongdeungpoSindorimGuro`.
+파일: `Game/Assets/Janseon/Core/RouteDomain.cs` `CreateSeoul()`, 카탈로그 `SeoulWorldGraphCatalog` / `Game/Assets/Janseon/Data/Content/SeoulWorldGraph.json`.
 
-- 역: Yeongdeungpo, Sindorim, Guro.
-- 변: 영등포—신도림, 신도림—구로. 영등포—구로 없음.
-- 거절: SameNode, UnknownNode, NotAdjacent.
-- 확인된 이동: 틱 +1, 자원 -2.
+- 구 25, 역 334, OSM 노선 관계에서 뽑은 무방향 인접 435.
+- POC 인접 유지: 영등포—신도림, 신도림—구로. 영등포—구로 없음.
+- 거절: SameNode, UnknownNode, NotAdjacent. 카탈로그에 없는 이름은 UnknownNode. 빈 카탈로그는 세 역으로 폴백하지 않고 예외.
+- 확인된 이동: 틱 +1, 자원 -2. 캠페인 호스트는 `CreateSeoul()`을 쓴다.
+- Area 1 콘텐츠 카탈로그는 여전히 역 3개다. 월드 그래프와 섞지 않는다.
 
 캠페인 단계: 거점 준비 → 원정 → 조우 → 해결 → 정산 → 복귀. `CampaignDomain.cs`. 정산은 조우 결과를 한 번만 반영한다. 역 내부를 짓지 않는다.
 
@@ -126,7 +127,7 @@ OSM 참고 집계(설계 데이터, 거점 슬롯 아님): 병원·클리닉, �
 4. 정수장·차량기지·시장을 `StrategicSite`로 붙인다. 가장 가까운 역과 수직 연결을 적는다.
 5. 각 `Station`에 여섯 `StationLayer`를 단다. 없는 층은 비활성이지 삭제 아니다.
 6. 연결 기본값은 정상. 봉쇄·침수는 사건으로만 바뀐다.
-7. POC 세 역만 `RouteGraph`에 넣는다. 나머지는 데이터로 두고 화면에 안 연다. 전 서울을 한 번에 메시로 올리지 않는다.
+7. `RouteGraph.CreateSeoul()`에 카탈로그 전 역을 넣는다. 원정 화면은 현재 역의 인접 전부를 클릭 버튼으로 띄운다(`GameplayPresenter.SyncDynamicTravel`). 전 서울을 한 번에 메시로 올리지 않는다.
 
 화면은 지금 필요한 노선만 그린다. 역을 고르면 같은 그래프에서 4방향 격자를 펼친다. [Travel-and-Encounters.md](Travel-and-Encounters.md).
 
