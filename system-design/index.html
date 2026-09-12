@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>잔선: 서울 — 디자인을 코드 구조로</title>
+  <style>
+    :root {
+      --ink: #1a1714;
+      --paper: #f4efe4;
+      --paper-2: #ebe4d4;
+      --line: #c9b896;
+      --amber: #d97706;
+      --metro: #0f6b4c;
+      --metro-2: #1d4e89;
+      --rust: #9b2c2c;
+      --mute: #6b6256;
+      --ship: #0f6b4c;
+      --plan: #9b2c2c;
+      --card: #fffdf8;
+      --shadow: 0 12px 40px rgba(26, 23, 20, .08);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font: 16px/1.55 "Apple SD Gothic Neo", "Noto Sans KR", Pretendard, sans-serif;
+      color: var(--ink);
+      background:
+        linear-gradient(180deg, #efe8d8 0, var(--paper) 220px);
+    }
+    a { color: var(--metro-2); }
+    code, .path {
+      font-family: ui-monospace, "SF Mono", Menlo, monospace;
+      font-size: .82em;
+      background: #efe6d2;
+      padding: .08em .35em;
+      border-radius: 3px;
+    }
+    header.hero {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 36px 24px 18px;
+    }
+    .kicker {
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      font-size: 11px;
+      color: var(--mute);
+    }
+    h1 {
+      font-family: "Song Myung", "Apple Myungjo", serif;
+      font-weight: 700;
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.2;
+      margin: 8px 0 12px;
+    }
+    .lede { max-width: 46em; color: #3b342c; }
+    nav.toc {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      background: rgba(244, 239, 228, .92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    nav.toc ul {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 10px 24px;
+      display: flex;
+      gap: 18px;
+      list-style: none;
+      overflow-x: auto;
+      font-size: 13px;
+    }
+    nav.toc a { color: var(--ink); text-decoration: none; white-space: nowrap; }
+    nav.toc a:hover { color: var(--amber); }
+    main { max-width: 1120px; margin: 0 auto; padding: 12px 24px 80px; }
+    section { margin: 42px 0; }
+    h2 {
+      font-size: 22px;
+      margin: 0 0 8px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid var(--ink);
+      display: inline-block;
+    }
+    h3 { font-size: 16px; margin: 18px 0 8px; }
+    .filters {
+      display: flex;
+      gap: 8px;
+      margin: 12px 0 20px;
+    }
+    .filters button, .stage-btn, .layer {
+      border: 1px solid var(--ink);
+      background: var(--card);
+      padding: 6px 12px;
+      cursor: pointer;
+      font: inherit;
+    }
+    .filters button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      letter-spacing: .04em;
+      padding: 2px 7px;
+      border-radius: 999px;
+      vertical-align: middle;
+    }
+    .badge.ship { background: #d7efe4; color: var(--ship); }
+    .badge.plan { background: #f6d5d5; color: var(--plan); }
+    .badge.partial { background: #fce7c4; color: #92400e; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+    @media (max-width: 860px) {
+      .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 14px 16px;
+      box-shadow: var(--shadow);
+    }
+    .card h3 { margin-top: 0; }
+    .layers { display: grid; gap: 8px; }
+    .layer {
+      text-align: left;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 160px 1fr auto;
+      gap: 12px;
+      align-items: center;
+    }
+    .layer .name { font-weight: 700; }
+    .layer .meta { color: var(--mute); font-size: 13px; }
+    .layer[data-open="true"] { background: #fff7e8; }
+    .layer-detail {
+      display: none;
+      margin: 0 0 10px;
+      padding: 12px 14px;
+      border: 1px dashed var(--line);
+      background: #fffaf0;
+      font-size: 14px;
+    }
+    .layer-detail.open { display: block; }
+    .loop {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 8px;
+    }
+    @media (max-width: 900px) { .loop { grid-template-columns: 1fr 1fr; } }
+    .stage-btn {
+      min-height: 92px;
+      text-align: left;
+    }
+    .stage-btn small { display: block; color: var(--mute); font-size: 12px; }
+    .stage-btn[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+    .stage-btn[aria-pressed="true"] small { color: #e7d9b8; }
+    .stage-panel {
+      margin-top: 12px;
+      min-height: 88px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 14px 16px;
+    }
+    .fsm {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+    .state {
+      border: 2px solid var(--ink);
+      padding: 10px 14px;
+      min-width: 108px;
+      text-align: center;
+      background: var(--card);
+      cursor: pointer;
+    }
+    .state.active { background: var(--amber); }
+    .arrow { color: var(--mute); }
+    .wiki {
+      width: 100%;
+      max-height: 280px;
+      object-fit: contain;
+      background: #ddd4c0;
+      border: 1px solid var(--line);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--card);
+      font-size: 14px;
+    }
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 8px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: var(--paper-2); font-size: 12px; letter-spacing: .04em; }
+    tr.plan-row { display: none; }
+    body.show-all tr.plan-row, body.show-plan tr.plan-row { display: table-row; }
+    body.show-plan tr.ship-row { display: none; }
+    footer {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px 48px;
+      color: var(--mute);
+      font-size: 13px;
+    }
+    .callout {
+      border-left: 4px solid var(--amber);
+      padding: 10px 14px;
+      background: #fff7e8;
+      margin: 12px 0;
+    }
+    ul.tight { margin: 6px 0; padding-left: 1.2em; }
+    .src { font-size: 12px; color: var(--mute); margin-top: 8px; }
+    svg.arch { width: 100%; height: auto; background: var(--card); border: 1px solid var(--line); }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="kicker">system-design · 읽기 전용 구조</div>
+    <h1>정의된 디자인을 어떤 구조로 만드는가</h1>
+    <p class="lede">
+      《잔선: 서울》은 붕괴 이후 지하철망을 영토로 쓰는 인물 중심 4X+RPG다.
+      규칙(세계가 어떻게 바뀌는지)은 Unity 없이 <code>Janseon.Core</code>에 두고,
+      화면·씬·입력은 <code>Janseon.Foundation</code>이 명령을 보낼 뿐이다.
+      지금 돌아가는 것은 세 역 POC 코어 루프이고, 16국·경제·파일 저장은 설계만 있다.
+    </p>
+    <p class="src">
+      근거:
+      <code>docs/game-logic/Home.md</code>,
+      <code>Game-Thesis.md</code>,
+      <code>Unity-Architecture.md</code>,
+      <code>Unity-System-Design.md</code>,
+      <code>Concept.md</code>
+    </p>
+  </header>
+
+  <nav class="toc">
+    <ul>
+      <li><a href="#map">한 장 지도</a></li>
+      <li><a href="#assemblies">조립</a></li>
+      <li><a href="#scenes">씬·FSM</a></li>
+      <li><a href="#loop">캠페인 루프</a></li>
+      <li><a href="#world">월드맵</a></li>
+      <li><a href="#domains">도메인 API</a></li>
+      <li><a href="#battle">전투장</a></li>
+      <li><a href="#save">세이브·결정론</a></li>
+      <li><a href="#status">구현 / 설계</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="map">
+      <h2>한 장 지도</h2>
+      <p>플레이어가 하는 일(거점 → 원정 → 조우 → 전투/교섭 → 정산 → 복귀)은 캠페인 명령이 되고, 화면은 그 명령을 보낼 뿐 상태를 직접 고치지 않는다.</p>
+      <svg class="arch" viewBox="0 0 980 420" role="img" aria-label="Core와 Foundation 의존 방향">
+        <rect x="20" y="20" width="940" height="70" fill="#1a1714"/>
+        <text x="40" y="48" fill="#f4efe4" font-size="16" font-family="sans-serif">플레이어 화면 (uGUI) — 명령을 보낸다. 상태를 고치지 않는다.</text>
+        <text x="40" y="70" fill="#c9b896" font-size="12" font-family="ui-monospace,monospace">Foundation/UI/PocCoreLoopController.cs · Presenters</text>
+
+        <rect x="20" y="110" width="450" height="90" fill="#0f6b4c"/>
+        <text x="40" y="140" fill="#fff" font-size="16">Bootstrap 씬 · App scope</text>
+        <text x="40" y="162" fill="#d7efe4" font-size="12">FSM · scene loader · logger</text>
+        <text x="40" y="182" fill="#d7efe4" font-size="12">ApplicationFlowCoordinator</text>
+
+        <rect x="510" y="110" width="450" height="90" fill="#1d4e89"/>
+        <text x="530" y="140" fill="#fff" font-size="16">MainTitle / Foundation 씬</text>
+        <text x="530" y="162" fill="#dbe7f6" font-size="12">배타적 child scope · 카메라 · HUD</text>
+        <text x="530" y="182" fill="#dbe7f6" font-size="12">화면 lease는 한 번에 하나</text>
+
+        <rect x="20" y="220" width="940" height="170" fill="#fffdf8" stroke="#1a1714"/>
+        <text x="40" y="248" font-size="16">Janseon.Core — UnityEngine 금지 · noEngineReferences</text>
+        <text x="40" y="272" font-size="13" fill="#6b6256">DeterministicCore · RouteDomain · CampaignDomain · Battle/ · SettlementDomain</text>
+        <rect x="40" y="292" width="160" height="72" fill="#efe6d2" stroke="#1a1714"/>
+        <text x="52" y="322" font-size="13">RouteApi</text>
+        <text x="52" y="342" font-size="11" fill="#6b6256">세 역 그래프</text>
+        <rect x="220" y="292" width="160" height="72" fill="#efe6d2" stroke="#1a1714"/>
+        <text x="232" y="322" font-size="13">CampaignApi</text>
+        <text x="232" y="342" font-size="11" fill="#6b6256">여섯 단계</text>
+        <rect x="400" y="292" width="160" height="72" fill="#efe6d2" stroke="#1a1714"/>
+        <text x="412" y="322" font-size="13">BattleSim</text>
+        <text x="412" y="342" font-size="11" fill="#6b6256">30Hz 고정 틱</text>
+        <rect x="580" y="292" width="160" height="72" fill="#efe6d2" stroke="#1a1714"/>
+        <text x="592" y="322" font-size="13">SettlementApi</text>
+        <text x="592" y="342" font-size="11" fill="#6b6256">정확히 한 번</text>
+        <rect x="760" y="292" width="170" height="72" fill="#efe6d2" stroke="#1a1714"/>
+        <text x="772" y="322" font-size="13">PurposeRng</text>
+        <text x="772" y="342" font-size="11" fill="#6b6256">World/Battle/Encounter/Loot</text>
+      </svg>
+      <p class="src">의존 방향은 Foundation → Core 한 쪽이다. Core는 Unity·VContainer를 모른다. <code>Game/Assets/Janseon/AGENTS.md</code>, <code>Core/Core.asmdef</code>.</p>
+    </section>
+
+    <section id="assemblies">
+      <h2>조립 — 누가 무엇을 소유하나</h2>
+      <p>저장소 어셈블리는 네 개다. 전투는 별도 어셈블리가 아니라 Core 안의 <code>Battle.Contracts</code>·<code>Battle.Sim</code>이다.</p>
+      <div class="layers">
+        <button class="layer" data-layer="core" type="button">
+          <span class="name">Janseon.Core</span>
+          <span class="meta">ID, tick, 명령, 원장, 노선, 캠페인, 전투 규칙, 정산</span>
+          <span class="badge ship">Unity 금지</span>
+        </button>
+        <div class="layer-detail" id="d-core">
+          엔진 없는 규칙이다. 전역 가변 상태를 두지 않는다. 화면이 상태를 직접 고치지 않고 명령을 보내면, 결과는 사건 원장에 남는다.
+          파일: <span class="path">Game/Assets/Janseon/Core/DeterministicCore.cs</span>,
+          <span class="path">RouteDomain.cs</span>,
+          <span class="path">CampaignDomain.cs</span>,
+          <span class="path">SettlementDomain.cs</span>,
+          <span class="path">Core/Battle/</span>.
+        </div>
+        <button class="layer" data-layer="data" type="button">
+          <span class="name">Janseon.Data</span>
+          <span class="meta">Unity 저작 데이터</span>
+          <span class="badge partial">Unity 허용</span>
+        </button>
+        <div class="layer-detail" id="d-data">
+          규칙이 아니라 에디터에서 찍는 데이터다. Repository 인터페이스와 DTO는 Core 쪽에 두고, 파일·Unity API 구현만 어댑터가 갖는다.
+          근거: <span class="path">docs/game-logic/Unity-Architecture.md</span> 영역별 책임 표,
+          <span class="path">Unity-System-Design.md</span> Repository 경계.
+        </div>
+        <button class="layer" data-layer="foundation" type="button">
+          <span class="name">Janseon.Foundation</span>
+          <span class="meta">씬 흐름, 화면, uGUI, 전투 드라이버, VContainer</span>
+          <span class="badge ship">Unity 허용</span>
+        </button>
+        <div class="layer-detail" id="d-foundation">
+          App scope는 Bootstrap만 소유한다. 콘텐츠 씬은 배타적 child scope다.
+          세션을 Core에 붙이는 곳은 <span class="path">Foundation/UI/PocCoreLoopController.cs</span>.
+          전환은 <span class="path">Foundation/AppFlow/ApplicationFlowCoordinator.cs</span>만 승인한다.
+          <code>SceneManager.LoadScene*</code>는 scene loader adapter만 호출한다.
+        </div>
+        <button class="layer" data-layer="art" type="button">
+          <span class="name">Janseon.Art</span>
+          <span class="meta">런타임 슬롯·검수된 에셋</span>
+          <span class="badge plan">화면 미연결</span>
+        </button>
+        <div class="layer-detail" id="d-art">
+          런타임 슬롯 카탈로그는 있다. Home에 적혀 있다: 생성 아트 슬롯은 아직 런타임 화면에 연결되지 않았다.
+          초안은 <span class="path">Art/Staging/</span>에 두고 런타임이 읽지 않는다.
+          파일: <span class="path">Foundation/Art/RuntimeSlotCatalog.cs</span>.
+        </div>
+      </div>
+      <div class="callout">
+        시스템 설계 문서의 목표 조립도(<code>Janseon.App</code> / <code>Presentation</code> / <code>Sim</code>)는 첫 증분의 그림이다.
+        지금 코드는 Foundation 한 모듈에서 시작해, 두 번째 책임과 호출자가 생기기 전에는 빈 어셈블리를 만들지 않는다.
+        <span class="path">Unity-System-Design.md</span> 「모듈 의존성」.
+      </div>
+    </section>
+
+    <section id="scenes">
+      <h2>씬과 앱 FSM</h2>
+      <div class="grid-2">
+        <div>
+          <p>플레이 가능 빌드 순서는 Bootstrap → MainTitle → Foundation이다. Bootstrap만 프로세스 root다. 콘텐츠 화면은 동시에 둘을 열지 않는다.</p>
+          <table>
+            <thead><tr><th>씬</th><th>가져도 되는 것</th><th>가지면 안 되는 것</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><code>Bootstrap.unity</code></td>
+                <td>App FSM, scene catalog, loader, logger, App LifetimeScope</td>
+                <td>화면 카메라, HUD, 월드·전투 상태</td>
+              </tr>
+              <tr>
+                <td><code>MainTitle.unity</code> / <code>Foundation.unity</code></td>
+                <td>카메라, 조명, presenter, child LifetimeScope</td>
+                <td>전역 앱 상태, 저장 구현, 다른 씬 객체</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="src"><code>Game/AGENTS.md</code> · <code>ProjectSettings/EditorBuildSettings.asset</code> · <code>Unity-System-Design.md</code> 씬 소유권.</p>
+        </div>
+        <div>
+          <p>설계 초안 표는 Booting→Foundation 직행이었다. 코드는 타이틀 lease가 생겨 <strong>Booting에서 OpenMainTitle만</strong> 받는다. SceneLoadSucceeded enum은 있으나 전이표는 쓰지 않고, ready 뒤 <code>TryCommitPendingTarget()</code>가 안정 상태로 옮긴다.</p>
+          <div class="fsm" id="fsm">
+            <div class="state" data-state="Booting">Booting</div>
+            <span class="arrow">→</span>
+            <div class="state" data-state="Transitioning">Transitioning</div>
+            <span class="arrow">→</span>
+            <div class="state" data-state="MainTitle">MainTitle</div>
+            <span class="arrow">/</span>
+            <div class="state" data-state="Foundation">Foundation</div>
+            <span class="arrow">·</span>
+            <div class="state" data-state="Faulted">Faulted</div>
+          </div>
+          <div class="stage-panel" id="fsm-panel">상태를 누르면 코드 전이표 기준 허용 트리거가 나온다.</div>
+        </div>
+      </div>
+      <ul class="tight">
+        <li>표에 없는 전이는 <code>Rejected(IllegalTransition)</code> — 상태·씬·저장을 바꾸지 않는다.</li>
+        <li>전환 중 두 번째 요청은 <code>Rejected(Busy)</code> — 두 번째 load를 시작하지 않는다.</li>
+        <li>이미 도착한 같은 목적지 요청은 저장된 receipt만 돌려준다.</li>
+        <li>ready signal 전에는 안정 상태를 commit하지 않는다. 고정 sleep 금지.</li>
+        <li>제품 코드에서 <code>Container.Resolve</code> 금지. constructor injection.</li>
+        <li>mutable static <code>Instance</code>/<code>Current</code> 금지. Singleton은 “현재 VContainer scope의 단일 인스턴스”다.</li>
+      </ul>
+    </section>
+
+    <section id="loop">
+      <h2>캠페인 루프를 코드 단계로 옮기는 방식</h2>
+      <img class="wiki" src="../docs/assets/wiki/isometric-campaign-loop.svg" alt="출격하고 돌아오는 여섯 단계 아이소 그림">
+      <p>디자인 여섯 단계(<code>Campaign-Loop.md</code>)는 <code>CampaignStage</code> enum과 명령 종류로 그대로 옮겼다. 규모(16국, 하루/주 경제)는 아직 없다.</p>
+      <div class="loop" id="loop-stages">
+        <button class="stage-btn" type="button" data-stage="0" aria-pressed="true">1 거점 준비<small>BasePreparation · Depart / Rest</small></button>
+        <button class="stage-btn" type="button" data-stage="1">2 원정<small>ExpeditionTravel · Travel</small></button>
+        <button class="stage-btn" type="button" data-stage="2">3 조우<small>Encounter · FaceEncounter</small></button>
+        <button class="stage-btn" type="button" data-stage="3">4 해결<small>Resolution · 교섭/우회/전투</small></button>
+        <button class="stage-btn" type="button" data-stage="4">5 정산<small>Settlement · ApplySettlement</small></button>
+        <button class="stage-btn" type="button" data-stage="5">6 복귀<small>BaseReady · CompleteReturn</small></button>
+      </div>
+      <div class="stage-panel" id="loop-panel"></div>
+      <p class="src"><code>Game/Assets/Janseon/Core/CampaignDomain.cs</code> <code>CampaignStage</code>, <code>CampaignCommandKind</code>, <code>CampaignApi</code>. 규칙 버전 <code>poc-campaign-loop-v1</code>.</p>
+    </section>
+
+    <section id="world">
+      <h2>월드맵 — 노선 그래프, 층, 격자</h2>
+      <p>세계 진실은 역과 연결의 그래프다. 화면은 지금 필요한 노선만 보여 주고, 역을 고르면 같은 그래프에서 4방향 격자를 펼친다. 대각 입력은 행동을 쓰지 않고 거절한다.</p>
+      <img class="wiki" src="../docs/assets/wiki/isometric-subway-layers.svg" alt="지하철 다층 공간의 층과 시야">
+      <div class="grid-2">
+        <article class="card">
+          <h3>지금 코드에 있는 지도</h3>
+          <p><span class="badge ship">세 역 그래프</span></p>
+          <p>POC 노선은 영등포—신도림—구로, 양방향. 영등포와 구로는 맞닿지 않는다.</p>
+          <svg class="arch" viewBox="0 0 440 120" role="img" aria-label="영등포 신도림 구로 인접">
+            <circle cx="70" cy="60" r="28" fill="#0f6b4c"/>
+            <text x="70" y="64" text-anchor="middle" fill="#fff" font-size="12">영등포</text>
+            <line x1="98" y1="60" x2="182" y2="60" stroke="#1a1714" stroke-width="3"/>
+            <circle cx="210" cy="60" r="28" fill="#1d4e89"/>
+            <text x="210" y="64" text-anchor="middle" fill="#fff" font-size="12">신도림</text>
+            <line x1="238" y1="60" x2="322" y2="60" stroke="#1a1714" stroke-width="3"/>
+            <circle cx="350" cy="60" r="28" fill="#0f6b4c"/>
+            <text x="350" y="64" text-anchor="middle" fill="#fff" font-size="12">구로</text>
+          </svg>
+          <ul class="tight">
+            <li>이동 거절: SameNode, UnknownNode, NotAdjacent.</li>
+            <li>칸 문법: <code>GridCoord</code>와 <code>CardinalDirection</code> (북·동·남·서). 한 칸은 1.5m / 1.5 Unity 유닛. 이 숫자는 <code>Grid.cs</code>가 아니라 <code>GenreContract.json</code>에 있다.</li>
+            <li>탐색과 전투가 같은 격자를 쓴다. <code>loop.explorationAndCombatShareGrid</code>.</li>
+          </ul>
+          <p class="src"><code>Core/RouteDomain.cs</code> <code>CreateYeongdeungpoSindorimGuro</code> · <code>Core/Grid.cs</code> · <code>Game/ProjectSettings/GenreContract.json</code></p>
+        </article>
+        <article class="card">
+          <h3>문서에만 있는 서울</h3>
+          <p><span class="badge plan">설계 그래프</span></p>
+          <p>위키의 서울은 행정 평면이 아니라 층 그래프다. 런타임 노선 API는 아직 이 노드 종류를 갖지 않는다.</p>
+          <table>
+            <thead><tr><th>층</th><th>하는 일</th><th>위험</th></tr></thead>
+            <tbody>
+              <tr><td>지상 폐허</td><td>채집, 태양광, 관측</td><td>기후, 붕괴</td></tr>
+              <tr><td>역사 대합실</td><td>시장, 주거, 행정</td><td>과밀, 화재</td></tr>
+              <tr><td>승강장·선로</td><td>이동, 방어, 화물</td><td>병목, 매복</td></tr>
+              <tr><td>환승 통로</td><td>노선 사이 정치·물류</td><td>봉쇄, 통행세</td></tr>
+              <tr><td>심층 터널</td><td>은밀 이동, 정비</td><td>침수, 통신 단절</td></tr>
+              <tr><td>차량기지 인접</td><td>수리, 대형 저장</td><td>공성, 화재</td></tr>
+            </tbody>
+          </table>
+          <p>노드 이름: Station, StationLayer, SurfaceDistrict, TunnelSegment, VerticalConnector, Interchange, StrategicSite. 연결은 지워지지 않고 정상·위험·봉쇄·침수로 바뀐다.</p>
+          <p><code>HeightmapDomain</code>의 <code>LayerId</code>(지상/B1/B2/B3)는 전투 지형 높이 필드다. 위 여섯 층을 세계 그래프로 돌리는 코드가 아니다. <code>ConnectionKind</code>·<code>ConnectionState</code> enum은 선언만 있고 Core에서 안 쓴다.</p>
+          <p class="src"><code>World-and-Subway-Layers.md</code> · <code>Travel-and-Encounters.md</code> · <code>Core/HeightmapDomain.cs</code></p>
+        </article>
+      </div>
+      <article class="card" style="margin-top:12px">
+        <h3>서울 전역 카탈로그 — 아직 데이터</h3>
+        <p><span class="badge plan">설계 데이터</span> 구 25, 서울 안 이름 있는 역 334, 정수·차량기지·시장 이름. Unity가 이 목록을 로드하지 않는다.</p>
+        <ul class="tight">
+          <li>구 25는 KOSTAT 2013 GeoJSON. 종로부터 강동까지 빠짐없다.</li>
+          <li>역 334는 OSM PBF에서 뽑아 구 폴리곤에 붙인 작업 목록이다. 공식 전수가 아니다.</li>
+          <li>정수 4+시외 2, 차량기지 서울 안 8+바깥 4, 시장 4는 십육국 문서의 측정 이름만 반복한다. OSM 편의점 수천 개는 거점 슬롯이 아니다.</li>
+          <li>조립 순서와 입장 시 층·격자·시설 슬롯은 <code>World-Map-Construction.md</code>, <code>Seoul-Station-Catalog.md</code>, <code>Station-Interior-Construction.md</code>.</li>
+          <li>조우 정산 API는 대합실을 짓지 않는다.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="domains">
+      <h2>도메인 API</h2>
+      <p>도메인 파일은 타입을 파일당 하나로 쪼개지 않는다. ID·명령·상태·거절·API를 한 파일에 둔다.</p>
+      <div class="grid-2">
+        <article class="card">
+          <h3>CoreApi · PurposeRng</h3>
+          <p><span class="badge ship">POC에 있음</span></p>
+          <p>정수 <code>Tick</code>만 세계 시간이다. 벽시계·프레임·instance id·GetHashCode는 규칙 입력이 아니다.</p>
+          <ul class="tight">
+            <li>RNG 목적: World, Battle, Encounter, Loot. 한 스트림을 소비해도 다른 커서는 안 움직인다.</li>
+            <li><code>Peek</code>은 상태를 바꾸지 않는다. <code>Consume</code>만 해당 목적을 전진한다.</li>
+            <li>같은 요청 ID + 같은 payload → 기존 receipt. 같은 ID + 다른 payload → conflict.</li>
+          </ul>
+          <p class="src"><code>Core/DeterministicCore.cs</code> · <code>Save-and-Determinism.md</code></p>
+        </article>
+        <article class="card">
+          <h3>RouteApi</h3>
+          <p><span class="badge ship">세 역만</span></p>
+          <p>POC 그래프는 영등포—신도림—구로, 무방향, 영등포↔구로 직행 없음. 인접 리스트는 ordinal 정렬.</p>
+          <ul class="tight">
+            <li>거절: SameNode, UnknownNode, NotAdjacent.</li>
+            <li>성공 이동은 새 <code>RouteState</code>와 원장 사건을 만든다.</li>
+          </ul>
+          <p class="src"><code>Core/RouteDomain.cs</code> <code>StationId</code>, <code>RouteGraph.CreateYeongdeungpoSindorimGuro</code></p>
+        </article>
+        <article class="card">
+          <h3>CampaignApi</h3>
+          <p><span class="badge ship">여섯 단계 POC</span></p>
+          <p>시작 프리셋 Wanderer / StationMaster. 조우 선택 Negotiate, Bypass, Combat.</p>
+          <ul class="tight">
+            <li>전투로 들어가면 불변 <code>BattleContext</code>만 넘긴다. 전투가 캠페인 Repository를 다시 조회하지 않는다.</li>
+            <li>파티 HP는 <code>UnitHpSnapshot</code>. 공유 참조로 원본을 고치지 못한다.</li>
+            <li>잘못된 단계 명령은 <code>CampaignRejection</code> (WrongStage, BattlePending, …).</li>
+          </ul>
+          <p class="src"><code>Core/CampaignDomain.cs</code> · <code>Strategy-Battle-Roundtrip.md</code></p>
+        </article>
+        <article class="card">
+          <h3>SettlementApi</h3>
+          <p><span class="badge ship">exact-once</span></p>
+          <p>같은 <code>ResultId</code>가 다시 오면 이전 영수증만 돌려준다. 같은 전투에 다른 결과가 오면 상태를 바꾸지 않는다.</p>
+          <ul class="tight">
+            <li>문서화된 정산 순서: 운명 → 물자 → 파티 위치 → 시간 → 통제 → 평판.</li>
+            <li>규칙 버전 <code>poc-settlement-v1</code>.</li>
+          </ul>
+          <p class="src"><code>Core/SettlementDomain.cs</code> · Home 「현재 구현 범위」</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="battle">
+      <h2>전투장 — 같은 격자, 다른 시계</h2>
+      <p>카메라를 바꾸지 않는다. 탐색에 쓰던 고정 직교 아이소(yaw 45°, pitch 35.264°)와 1.5m 칸 위에서 시간만 30Hz 틱으로 흐른다. 병사 한 명을 한 칸씩 옮기는 턴제가 아니다.</p>
+      <img class="wiki" src="../docs/assets/wiki/isometric-realtime-formation-card-battle.svg" alt="실시간 진형·카드 전투 아이소">
+      <div class="grid-2">
+        <article class="card">
+          <h3>한 판이 시작될 때</h3>
+          <p><span class="badge ship">BattleContext 동결</span></p>
+          <p>캠페인이 넘기는 묶음: 캠페인 ID, 역(<code>StationId</code>), 세계 시드, 틱, 물자, 평판, 규칙 버전, 조우 identity, 시작 HP. 여기서 <code>BattleId</code>와 컨텍스트 해시를 만든다. 전투가 시작된 뒤 바깥 세계를 다시 읽지 않는다.</p>
+          <ul class="tight">
+            <li>기본 전장 <code>ArenaState</code>: 가로 12, 세로 8. 지형 <code>Heightmap</code>이 있으면 그 너비·높이를 쓴다. Core에 전장 원형 enum은 없다.</li>
+            <li>진형 격자 계약: 행 3, 열 3. 지휘 반경 3칸.</li>
+            <li>역할 표(근위·돌격·궁수) HP 30/20/14, 위력 4/6/3, 사거리 1/1/3.</li>
+            <li>규칙 버전 <code>rtfc-owner-cards-v2</code>. 예전 ownerless replay는 변환하지 않고 거절.</li>
+          </ul>
+          <p class="src"><code>CampaignDomain.cs</code> <code>BattleContext</code> · <code>Battle/Sim/BattleSimState.cs</code> · <code>BattleContracts.cs</code> <code>BattleRules</code></p>
+        </article>
+        <article class="card">
+          <h3>플레이어가 하는 일 / 안 하는 일</h3>
+          <p><span class="badge partial">규칙 있음, 분대 명령 미완</span></p>
+          <ul class="tight">
+            <li>하는 일: 전투 전 전열·후열·측면과 4방향 정면. 전투 중 인물 카드 <code>(OwnerUnitId, CardId)</code>와 거점 카드 최대 2장. 재충전 300~900틱. 덱 구축·무작위 드로우 없음.</li>
+            <li>안 하는 일: 개별 병사 한 칸 조작. UI Transform으로 Core 이동을 대신하기.</li>
+            <li>시계: 30틱/초, 칸 이동 10틱, 공격 쿨 30틱, 한 판 상한 9000틱. D1 드라이버만 프레임당 최대 4스텝.</li>
+            <li>사기 기본 60, 경고 40, 회복 상한 80. 항복은 사기 20 이하·지휘관 HP 50% 이하·퇴로가 모두 참일 때만. 지휘관 타일 점거는 퇴로 차단이 아니다.</li>
+          </ul>
+          <p>문서의 전장 원형(작은 역사, 환승역, 종착역, 터널, 지상 폐허, 차량기지, 한강 횡단)은 설계다. 런타임은 12×8 또는 Heightmap 크기만 연다.</p>
+          <p><span class="badge plan">설계만</span> 분대 Move/Attack/SetFacing 완료 검증, 0..4 집계 생존수 표시. 정산은 논리 UnitId와 남은 HP만 본다.</p>
+          <p class="src"><code>Realtime-Formation-Card-Battle.md</code> · <code>Strategy-Battle-Roundtrip.md</code> · <code>Intent.md</code> 결정 3</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="save">
+      <h2>세이브와 결정론 — 계약은 있고 파일 저장은 없다</h2>
+      <div class="grid-2">
+        <article class="card">
+          <h3>이미 지키는 것</h3>
+          <p><span class="badge ship">해시·원장·RNG</span></p>
+          <ul class="tight">
+            <li>같은 seed + canonical command log → 같은 state/ledger hash.</li>
+            <li>모든 상태 변화는 원인 ID, 세계 시간, 전후 요약 해시를 원장에 남긴다.</li>
+            <li>씬 load 완료 시점은 도메인 결과에 영향을 주지 않는다.</li>
+            <li>동일 seed 재현과 중복 정산 거부를 batchmode PlayMode에서 검증했다고 Home에 적혀 있다.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>아직 만들지 않은 것</h3>
+          <p><span class="badge plan">파일 저장 비목표</span></p>
+          <ul class="tight">
+            <li><code>ICampaignRepository</code>는 설계 계약이다. Foundation 첫 증분은 구현하지 않고 경계 게이트만 둔다.</li>
+            <li>저장 envelope(판본, seed, tick, RNG 커서, pending battle, checksum)은 문서에만 있다.</li>
+            <li>temp 작성 → flush → 재읽기 → backup → 원자 교체. 깨진 세이브는 조용히 복구하지 않는다.</li>
+            <li><code>ToDo.md</code> 비목표: 파일 저장/불러오기.</li>
+          </ul>
+        </article>
+      </div>
+      <p class="src"><code>docs/game-logic/Save-and-Determinism.md</code> · <code>Unity-System-Design.md</code> 저장과 결정성 · <code>ToDo.md</code> 비목표</p>
+    </section>
+
+    <section id="status">
+      <h2>구현된 것 / 설계만 있는 것</h2>
+      <p>문서에 적힌 세계(16국, 412인, 경제, 공성)를 런타임이 돌린다고 쓰지 않는다. Home에도 같은 경고가 있다.</p>
+      <div class="filters" role="group" aria-label="구현 상태 필터">
+        <button type="button" data-filter="ship" aria-pressed="true">구현됨</button>
+        <button type="button" data-filter="plan">설계만</button>
+        <button type="button" data-filter="all">전부</button>
+      </div>
+      <table>
+        <thead>
+          <tr><th>플레이/시스템</th><th>코드 자리</th><th>상태</th></tr>
+        </thead>
+        <tbody>
+          <tr class="ship-row">
+            <td>타이틀 → 거점 → 세 역 원정 → 교섭/우회/전투 → 한 번 정산 → 복귀</td>
+            <td><code>CampaignApi</code> + <code>PocCoreLoopController</code></td>
+            <td><span class="badge ship">POC 루프</span></td>
+          </tr>
+          <tr class="ship-row">
+            <td>Bootstrap FSM, 배타적 화면 lease, VContainer App/child</td>
+            <td><code>Foundation/AppFlow</code>, <code>Composition</code></td>
+            <td><span class="badge ship">아키텍처 기준선</span></td>
+          </tr>
+          <tr class="ship-row">
+            <td>영등포—신도림—구로 그래프, GridCoord 4방향, 타일 1.5</td>
+            <td><code>RouteGraph</code> · <code>Grid.cs</code> · <code>GenreContract.json</code></td>
+            <td><span class="badge ship">POC 지도</span></td>
+          </tr>
+          <tr class="ship-row">
+            <td>BattleContext 동결, 전장 12×8 또는 Heightmap, 30Hz 진형·카드</td>
+            <td><code>BattleContext</code> · <code>ArenaState</code> · <code>rtfc-owner-cards-v2</code></td>
+            <td><span class="badge ship">전투 Core</span></td>
+          </tr>
+          <tr class="ship-row">
+            <td>장르 계약: 카메라 45/35.264, 타일 1.5, 2.5등신</td>
+            <td><code>ProjectSettings/GenreContract.json</code></td>
+            <td><span class="badge ship">잠금</span></td>
+          </tr>
+          <tr class="plan-row">
+            <td>생성 아트 슬롯을 실제 HUD/월드에 연결</td>
+            <td><code>RuntimeSlotCatalog</code> · ToDo 13–16</td>
+            <td><span class="badge plan">미연결</span></td>
+          </tr>
+          <tr class="plan-row">
+            <td>위키 여섯 층·StationLayer 세계 그래프를 런타임 노선으로</td>
+            <td>World-and-Subway-Layers.md · Heightmap LayerId는 전투 지형</td>
+            <td><span class="badge plan">설계만</span></td>
+          </tr>
+          <tr class="plan-row">
+            <td>서울 25개 구·역 334·정수·차량기지·시장을 RouteGraph에 넣기</td>
+            <td>World-Map-Construction.md · Seoul-Station-Catalog.md</td>
+            <td><span class="badge plan">설계 데이터</span></td>
+          </tr>
+          <tr class="plan-row">
+            <td>역 입장 시 대합실 격자·시설 슬롯 스폰</td>
+            <td>Station-Interior-Construction.md · SettlementApi와 별개</td>
+            <td><span class="badge plan">설계만</span></td>
+          </tr>
+          <tr class="plan-row">
+            <td>16국 캠페인, 412인, 하루/주 경제·외교·공성</td>
+            <td>위키 세계관 문서</td>
+            <td><span class="badge plan">설계만</span></td>
+          </tr>
+          <tr class="plan-row">
+            <td>파일 저장/불러오기</td>
+            <td>Repository 계약만</td>
+            <td><span class="badge plan">비목표</span></td>
+          </tr>
+          <tr class="plan-row">
+            <td>분대 명령·집계 사상자 표현 완료 검증</td>
+            <td>전투 표시 계약 0..4</td>
+            <td><span class="badge plan">미완료</span></td>
+          </tr>
+          <tr class="plan-row">
+            <td>카메라 회전, 원근, 대각 이동, 네 번째 gameplay 씬</td>
+            <td>—</td>
+            <td><span class="badge plan">금지</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="build">
+      <h2>구조를 늘릴 때 지키는 규칙</h2>
+      <ol>
+        <li>새 게임 규칙은 Core에 순수 함수/API로 넣는다. Unity 타입을 넣지 않는다.</li>
+        <li>화면은 presenter가 명령을 만들고, 거절은 typed result로 보여 준다.</li>
+        <li>영속 상태가 필요해지면 <code>ICampaignRepository</code>를 Core 쪽에 정의하고 Foundation 어댑터가 파일을 쓴다. 도메인에서 <code>File.*</code>/<code>PlayerPrefs</code> 직접 호출 금지.</li>
+        <li>빈 미래 어셈블리를 미리 만들지 않는다. 두 번째 실제 호출자가 생긴 뒤에 가른다.</li>
+        <li>고급 패키지(Addressables, Entities, Cinemachine, LitMotion)는 호출자와 실패 테스트가 생기기 전엔 추가하지 않는다.</li>
+        <li>현재 모듈(<code>ToDo.md</code> Unity POC 통합 코어 루프)이 시각 수용·슬롯 연결·수용 게이트를 끝내기 전에 두 번째 제품 모듈을 시작하지 않는다.</li>
+      </ol>
+      <p class="src"><code>Unity-Architecture.md</code> 규칙 · <code>Unity-Architecture-Implementation-Plan.md</code> · <code>ToDo.md</code></p>
+    </section>
+  </main>
+
+  <footer>
+    근거를 읽은 날짜 기준 작업 사본. 제품 코드를 이 폴더가 바꾸지 않는다.
+    위키 그림은 <code>docs/assets/wiki/</code>의 기존 SVG를 상대 경로로 연다.
+  </footer>
+
+  <script>
+    const layers = {
+      core: "d-core",
+      data: "d-data",
+      foundation: "d-foundation",
+      art: "d-art"
+    };
+    document.querySelectorAll(".layer").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const id = layers[btn.dataset.layer];
+        const panel = document.getElementById(id);
+        const open = panel.classList.toggle("open");
+        btn.dataset.open = open ? "true" : "false";
+      });
+    });
+
+    const stages = {
+      0: "거점에서 의뢰·관계를 고른 뒤 Depart. Rest는 홈 거점에서만, 틱을 2 앞으로 밀고 자원은 안 깎는다. 코드: CampaignCommandKind.Depart / Rest. 시작 프리셋 Wanderer는 자원 30, StationMaster는 40.",
+      1: "인접 역만 이동. 영등포↔신도림↔구로. 직행 영등포-구로는 TravelRejected(NotAdjacent). 확인된 이동은 틱 +1, 자원 -2.",
+      2: "조우 단계. FaceEncounter 없이 해결로 건너뛰면 MissingResolution.",
+      3: "ChooseNegotiate / ChooseBypass / ChooseCombat. 교섭은 자원 -5 평판 +3, 우회는 자원 -2 평판 -1. 전투는 BattleContext를 발행하고 BattlePending이 된다.",
+      4: "SettlementApi가 ResultId로 exact-once 적용. 이미 처리한 ID는 영수증만, 같은 전투의 다른 결과는 거절.",
+      5: "CompleteReturn 후 BaseReady. 한 사이클이 거점 준비로 돌아간다. 16국 주간 정산은 이 enum에 없다."
+    };
+    const loopPanel = document.getElementById("loop-panel");
+    loopPanel.textContent = stages[0];
+    document.querySelectorAll(".stage-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".stage-btn").forEach((b) => {
+          b.setAttribute("aria-pressed", "false");
+        });
+        btn.setAttribute("aria-pressed", "true");
+        loopPanel.textContent = stages[btn.dataset.stage];
+      });
+    });
+
+    const fsmText = {
+      Booting: "허용: OpenMainTitle → Transitioning, PendingTarget=MainTitle. OpenFoundation은 여기서 IllegalTransition. 코드: ApplicationFlow.cs TryGetNextState.",
+      Transitioning: "허용: SceneLoadFailed → Faulted. 성공 커밋은 SceneLoadSucceeded 트리거가 아니라 coordinator의 TryCommitPendingTarget() — PendingTarget을 안정 상태로 옮긴다. 전환 중 Open* 는 Busy.",
+      MainTitle: "허용: OpenFoundation → Transitioning, PendingTarget=Foundation. 이미 타이틀이면 coordinator가 저장된 receipt를 돌려준다.",
+      Foundation: "허용: OpenMainTitle → Transitioning, PendingTarget=MainTitle. 같은 Foundation 재요청은 receipt. 그 외 트리거는 IllegalTransition.",
+      Faulted: "허용: Retry → Transitioning (PendingTarget 유지, 새 transition ID). PendingTarget이 없으면 IllegalTransition."
+    };
+    const fsmPanel = document.getElementById("fsm-panel");
+    document.querySelectorAll(".state").forEach((el) => {
+      el.addEventListener("click", () => {
+        document.querySelectorAll(".state").forEach((s) => {
+          s.classList.remove("active");
+        });
+        el.classList.add("active");
+        fsmPanel.textContent = fsmText[el.dataset.state];
+      });
+    });
+
+    const filters = document.querySelectorAll(".filters button");
+    filters.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        filters.forEach((b) => {
+          b.setAttribute("aria-pressed", "false");
+        });
+        btn.setAttribute("aria-pressed", "true");
+        document.body.classList.remove("show-all", "show-plan");
+        if (btn.dataset.filter === "all") document.body.classList.add("show-all");
+        if (btn.dataset.filter === "plan") document.body.classList.add("show-plan");
+      });
+    });
+  </script>
+</body>
+</html>
