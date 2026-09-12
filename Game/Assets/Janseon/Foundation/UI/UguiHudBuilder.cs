@@ -576,8 +576,6 @@ namespace Janseon.Foundation.UI
             HudButton(roster, UiElementNames.EditFormation, "선택한 진형 배치");
             HudButton(roster, UiElementNames.BattleReset, "전투 초기화");
             Label(roster, UiElementNames.CardGeneralRecharge, "재충전 0 tick");
-            HudButton(roster, UiElementNames.CardGeneralUse, "사기 고무 사용");
-            HudButton(roster, UiElementNames.MobilityRegroup, "기동 재집결");
             TmpSizedButton(roster, UiElementNames.BattleStrongholdSwitch, "거점 카드", 148f, TargetingCancelSize);
 
             RectTransform cardTray = Box(dock, UiElementNames.BattleCardTray, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero,
@@ -960,6 +958,50 @@ namespace Janseon.Foundation.UI
         {
             Transform found = Find(root, name);
             return found != null ? found.GetComponent<UnityEngine.UI.Button>() : null;
+        }
+
+        /// <summary>
+        /// Find-or-create a horizontal row container for presenter-managed dynamic buttons.
+        /// </summary>
+        public static RectTransform EnsureRow(Transform parent, string name)
+        {
+            Transform found = Find(parent, name);
+            if (found != null)
+            {
+                return found as RectTransform;
+            }
+
+            var go = new GameObject(name);
+            RectTransform rt = go.AddComponent<RectTransform>();
+            rt.SetParent(parent, false);
+            HorizontalLayoutGroup layout = go.AddComponent<HorizontalLayoutGroup>();
+            layout.spacing = 8f;
+            layout.childAlignment = TextAnchor.MiddleCenter;
+            LayoutElement le = go.AddComponent<LayoutElement>();
+            le.preferredHeight = 36f;
+            le.minHeight = 36f;
+            return rt;
+        }
+
+        /// <summary>
+        /// Find-or-create a labeled button. Existing objects are reused so listener wiring stays stable.
+        /// </summary>
+        public static UnityEngine.UI.Button EnsureButton(Transform parent, string name, string text)
+        {
+            UnityEngine.UI.Button found = ButtonNamed(parent, name);
+            if (found != null)
+            {
+                return found;
+            }
+
+            var row = parent as RectTransform;
+            if (row == null)
+            {
+                return null;
+            }
+
+            HudButton(row, name, text);
+            return ButtonNamed(parent, name);
         }
 
         public static Text TextNamed(Transform root, string name)

@@ -63,6 +63,7 @@ namespace Janseon.Foundation.Composition
         Button formationEditFacingW;
         readonly Button[] formationEditUnits = new Button[UiElementNames.FormationEditUnitIds.Length];
         readonly Button[] formationEditSlots = new Button[UiElementNames.FormationEditSlotIds.Length];
+        readonly Button[] characterCards = new Button[UiElementNames.CharacterOfferingIds.Length];
         Button mobilityRegroup;
         Button choiceNegotiate;
         Button choiceBypass;
@@ -71,6 +72,8 @@ namespace Janseon.Foundation.Composition
         Button stationYeongdeungpo;
         Button stationSindorim;
         Button stationGuro;
+        readonly Dictionary<string, Button> dynamicTravelButtons = new Dictionary<string, Button>();
+        RectTransform dynamicTravelRow;
         readonly Toggle[] deployToggles = new Toggle[DeploymentApi.DeployCap + 1];
 
         static readonly string[] StageNames =
@@ -101,6 +104,7 @@ namespace Janseon.Foundation.Composition
         public event Action BattlePlayPauseChosen;
         public event Action BattleResetChosen;
         public event Action CardGeneralUseChosen;
+        public event Action<string> CharacterCardChosen;
         public event Action FormationSwapFrontChosen;
         public event Action EditFormationChosen;
         public event Action FormationEditConfirmChosen;
@@ -160,6 +164,12 @@ namespace Janseon.Foundation.Composition
             battlePlayPause = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.BattlePlayPause);
             battleReset = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.BattleReset);
             cardGeneralUse = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.CardGeneralUse);
+            for (var i = 0; i < characterCards.Length; i++)
+            {
+                characterCards[i] = UguiHudBuilder.ButtonNamed(
+                    gameplayRoot, UiElementNames.BattleCard(UiElementNames.CharacterOfferingIds[i]));
+            }
+
             formationSwapFront = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.FormationSwapFront);
             editFormation = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.EditFormation);
             formationEditConfirm = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.FormationEditConfirm);
@@ -202,7 +212,8 @@ namespace Janseon.Foundation.Composition
                 || formationEditReedit == null || formationEditReset == null
                 || formationEditFacingN == null || formationEditFacingE == null
                 || formationEditFacingS == null || formationEditFacingW == null
-                || mobilityRegroup == null || choiceNegotiate == null || choiceBypass == null
+                || mobilityRegroup == null || characterCards[0] == null || characterCards[2] == null
+                || choiceNegotiate == null || choiceBypass == null
                 || choiceCombat == null || returnAction == null
                 || stationYeongdeungpo == null || stationSindorim == null || stationGuro == null)
             {
@@ -232,6 +243,8 @@ namespace Janseon.Foundation.Composition
             battlePlayPause.onClick.AddListener(OnBattlePlayPauseClicked);
             battleReset.onClick.AddListener(OnBattleResetClicked);
             cardGeneralUse.onClick.AddListener(OnCardGeneralUseClicked);
+            if (characterCards[0] != null) characterCards[0].onClick.AddListener(OnGuardShieldwallClicked);
+            if (characterCards[2] != null) characterCards[2].onClick.AddListener(OnPincerFocusClicked);
             formationSwapFront.onClick.AddListener(OnFormationSwapFrontClicked);
             editFormation.onClick.AddListener(OnEditFormationClicked);
             formationEditConfirm.onClick.AddListener(OnFormationEditConfirmClicked);
@@ -303,6 +316,7 @@ namespace Janseon.Foundation.Composition
         public void TriggerBattlePlayPauseForTest() => OnBattlePlayPauseClicked();
         public void TriggerBattleResetForTest() => OnBattleResetClicked();
         public void TriggerCardGeneralUseForTest() => OnCardGeneralUseClicked();
+        public void TriggerCharacterCardForTest(string cardId) => CharacterCardChosen?.Invoke(cardId);
         public void TriggerFormationSwapFrontForTest() => OnFormationSwapFrontClicked();
         public void TriggerEditFormationForTest() => OnEditFormationClicked();
         public void TriggerFormationEditConfirmForTest() => OnFormationEditConfirmClicked();
@@ -403,6 +417,8 @@ namespace Janseon.Foundation.Composition
             SetActionVisible(UiElementNames.FormationSwapFront, snapshot.ShowEditFormationAction);
             SetActionVisible(UiElementNames.EditFormation, snapshot.ShowEditFormationAction);
             SetActionState(UiElementNames.CardGeneralUse, snapshot.ShowCardGeneralUseAction, snapshot.CanUseGeneralCard);
+            SetActionState(UiElementNames.BattleCard("guard-shieldwall"), snapshot.ShowCardGeneralUseAction, snapshot.CanUseGuardCard);
+            SetActionState(UiElementNames.BattleCard("pincer-focus"), snapshot.ShowCardGeneralUseAction, snapshot.CanUsePincerCard);
             SetActionState(UiElementNames.MobilityRegroup, snapshot.ShowCardMobilityRegroupAction, snapshot.CanUseMobilityCard);
             SetActionVisible(UiElementNames.ReturnAction, snapshot.ShowReturnAction);
 
@@ -410,6 +426,7 @@ namespace Janseon.Foundation.Composition
             SetStationTravelEnabled(UiElementNames.StationYeongdeungpo, snapshot.ShowTravelActions);
             SetStationTravelEnabled(UiElementNames.StationSindorim, snapshot.ShowTravelActions);
             SetStationTravelEnabled(UiElementNames.StationGuro, snapshot.ShowTravelActions);
+            SyncDynamicTravel(snapshot);
 
             ApplyNamedVisibleFlags(snapshot);
 
@@ -713,6 +730,77 @@ namespace Janseon.Foundation.Composition
         }
 
         /// <summary>
+        /// One clickable button per graph neighbor of the current station (full Seoul catalog).
+        /// Static POC labels already fire TravelChosen, so those elements are skipped here.
+        /// Outside the travel stage the whole row hides.
+        /// </summary>
+        void SyncDynamicTravel(GameplayUiSnapshot snapshot)
+        {
+            if (root == null)
+            {
+                return;
+            }
+
+            Transform route = UguiHudBuilder.Find(root, UiElementNames.RouteRail);
+            if (route == null)
+            {
+                return;
+            }
+
+            if (dynamicTravelRow == null)
+            {
+                dynamicTravelRow = UguiHudBuilder.EnsureRow(route, "dynamic-travel-row");
+            }
+
+            var keep = new HashSet<string>();
+            if (snapshot.ShowTravelActions && snapshot.TravelNeighbors != null)
+            {
+                foreach (var neighbor in snapshot.TravelNeighbors)
+                {
+                    string value = neighbor.Value ?? string.Empty;
+                    if (value.Length == 0)
+                    {
+                        continue;
+                    }
+
+                    string element = GameplayUiSnapshot.StationElement(neighbor);
+                    if (element == UiElementNames.StationYeongdeungpo
+                        || element == UiElementNames.StationSindorim
+                        || element == UiElementNames.StationGuro)
+                    {
+                        continue;
+                    }
+
+                    if (!dynamicTravelButtons.TryGetValue(element, out Button button) || button == null)
+                    {
+                        button = UguiHudBuilder.EnsureButton(dynamicTravelRow, element, value);
+                        if (button == null)
+                        {
+                            continue;
+                        }
+
+                        var captured = neighbor;
+                        button.onClick.AddListener(() => TravelChosen?.Invoke(captured));
+                        dynamicTravelButtons[element] = button;
+                    }
+
+                    button.gameObject.SetActive(true);
+                    keep.Add(element);
+                }
+            }
+
+            foreach (var pair in dynamicTravelButtons)
+            {
+                if (!keep.Contains(pair.Key) && pair.Value != null)
+                {
+                    pair.Value.gameObject.SetActive(false);
+                }
+            }
+
+            dynamicTravelRow.gameObject.SetActive(keep.Count > 0);
+        }
+
+        /// <summary>
         /// Applies only exact "{elementName}:visible" NamedFlags. Ignores malformed keys
         /// (missing suffix, extra colon segments, empty name) without swallowing unknowns into display.
         /// </summary>
@@ -761,6 +849,8 @@ namespace Janseon.Foundation.Composition
         void OnBattlePlayPauseClicked() => BattlePlayPauseChosen?.Invoke();
         void OnBattleResetClicked() => BattleResetChosen?.Invoke();
         void OnCardGeneralUseClicked() => CardGeneralUseChosen?.Invoke();
+        void OnGuardShieldwallClicked() => CharacterCardChosen?.Invoke("guard-shieldwall");
+        void OnPincerFocusClicked() => CharacterCardChosen?.Invoke("pincer-focus");
         void OnFormationSwapFrontClicked() => FormationSwapFrontChosen?.Invoke();
         void OnEditFormationClicked() => EditFormationChosen?.Invoke();
         void OnFormationEditConfirmClicked() => FormationEditConfirmChosen?.Invoke();
@@ -866,6 +956,8 @@ namespace Janseon.Foundation.Composition
             if (battlePlayPause != null) battlePlayPause.onClick.RemoveListener(OnBattlePlayPauseClicked);
             if (battleReset != null) battleReset.onClick.RemoveListener(OnBattleResetClicked);
             if (cardGeneralUse != null) cardGeneralUse.onClick.RemoveListener(OnCardGeneralUseClicked);
+            if (characterCards[0] != null) characterCards[0].onClick.RemoveListener(OnGuardShieldwallClicked);
+            if (characterCards[2] != null) characterCards[2].onClick.RemoveListener(OnPincerFocusClicked);
             if (formationSwapFront != null) formationSwapFront.onClick.RemoveListener(OnFormationSwapFrontClicked);
             if (editFormation != null) editFormation.onClick.RemoveListener(OnEditFormationClicked);
             if (formationEditConfirm != null) formationEditConfirm.onClick.RemoveListener(OnFormationEditConfirmClicked);
@@ -911,6 +1003,11 @@ namespace Janseon.Foundation.Composition
             battlePlayPause = null;
             battleReset = null;
             cardGeneralUse = null;
+            for (var i = 0; i < characterCards.Length; i++)
+            {
+                characterCards[i] = null;
+            }
+
             formationSwapFront = null;
             editFormation = null;
             formationEditConfirm = null;

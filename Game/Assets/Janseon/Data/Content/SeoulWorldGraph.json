@@ -1,0 +1,4452 @@
+{
+  "schema": "seoul-world-graph-v1",
+  "districts": [
+    "강남구",
+    "강동구",
+    "강북구",
+    "강서구",
+    "관악구",
+    "광진구",
+    "구로구",
+    "금천구",
+    "노원구",
+    "도봉구",
+    "동대문구",
+    "동작구",
+    "마포구",
+    "서대문구",
+    "서초구",
+    "성동구",
+    "성북구",
+    "송파구",
+    "양천구",
+    "영등포구",
+    "용산구",
+    "은평구",
+    "종로구",
+    "중구",
+    "중랑구"
+  ],
+  "stations": [
+    {
+      "id": "4.19민주묘지",
+      "nameKo": "4.19민주묘지",
+      "nameEn": "April 19th National Cemetery",
+      "district": "강북구",
+      "lat": 37.6493408,
+      "lon": 127.0136861
+    },
+    {
+      "id": "Guro",
+      "nameKo": "구로",
+      "nameEn": "Guro",
+      "district": "구로구",
+      "lat": 37.5034468,
+      "lon": 126.8825086
+    },
+    {
+      "id": "Sindorim",
+      "nameKo": "신도림",
+      "nameEn": "Sindorim",
+      "district": "구로구",
+      "lat": 37.5089397,
+      "lon": 126.8912262
+    },
+    {
+      "id": "Yeongdeungpo",
+      "nameKo": "영등포",
+      "nameEn": "Yeongdeungpo",
+      "district": "영등포구",
+      "lat": 37.515363,
+      "lon": 126.9069345
+    },
+    {
+      "id": "가락시장",
+      "nameKo": "가락시장",
+      "nameEn": "Garak Market",
+      "district": "송파구",
+      "lat": 37.4925324,
+      "lon": 127.1186382
+    },
+    {
+      "id": "가산디지털단지",
+      "nameKo": "가산디지털단지",
+      "nameEn": "Gasan Digital Complex",
+      "district": "금천구",
+      "lat": 37.4815947,
+      "lon": 126.8826166
+    },
+    {
+      "id": "가양",
+      "nameKo": "가양",
+      "nameEn": "Gayang",
+      "district": "강서구",
+      "lat": 37.5611423,
+      "lon": 126.8550997
+    },
+    {
+      "id": "가오리",
+      "nameKo": "가오리",
+      "nameEn": "Gaori",
+      "district": "강북구",
+      "lat": 37.6419736,
+      "lon": 127.0165705
+    },
+    {
+      "id": "가좌",
+      "nameKo": "가좌",
+      "nameEn": "Gajwa",
+      "district": "서대문구",
+      "lat": 37.5686792,
+      "lon": 126.915063
+    },
+    {
+      "id": "강남",
+      "nameKo": "강남",
+      "nameEn": "Gangnam",
+      "district": "서초구",
+      "lat": 37.4979497,
+      "lon": 127.0275574
+    },
+    {
+      "id": "강남구청",
+      "nameKo": "강남구청",
+      "nameEn": "Gangnam-gu Office",
+      "district": "강남구",
+      "lat": 37.5171756,
+      "lon": 127.0412865
+    },
+    {
+      "id": "강동",
+      "nameKo": "강동",
+      "nameEn": "Gangdong",
+      "district": "강동구",
+      "lat": 37.5357969,
+      "lon": 127.1325955
+    },
+    {
+      "id": "강동구청",
+      "nameKo": "강동구청",
+      "nameEn": "Gangdong-gu Office",
+      "district": "송파구",
+      "lat": 37.5306942,
+      "lon": 127.1206234
+    },
+    {
+      "id": "강변",
+      "nameKo": "강변",
+      "nameEn": "Gangbyeon",
+      "district": "광진구",
+      "lat": 37.5351109,
+      "lon": 127.0947415
+    },
+    {
+      "id": "강변(동서울터미널)",
+      "nameKo": "강변(동서울터미널)",
+      "nameEn": "Gangbyeon(Dongseoul Bus Terminal)",
+      "district": "광진구",
+      "lat": 37.5359606,
+      "lon": 127.0941802
+    },
+    {
+      "id": "강일",
+      "nameKo": "강일",
+      "nameEn": "Gangil",
+      "district": "강동구",
+      "lat": 37.5574822,
+      "lon": 127.1757633
+    },
+    {
+      "id": "개롱",
+      "nameKo": "개롱",
+      "nameEn": "Gaerong",
+      "district": "송파구",
+      "lat": 37.4980749,
+      "lon": 127.1348432
+    },
+    {
+      "id": "개봉",
+      "nameKo": "개봉",
+      "nameEn": "Gaebong",
+      "district": "구로구",
+      "lat": 37.4945934,
+      "lon": 126.8587536
+    },
+    {
+      "id": "개포동",
+      "nameKo": "개포동",
+      "nameEn": "Gaepo-dong",
+      "district": "강남구",
+      "lat": 37.4891009,
+      "lon": 127.0660428
+    },
+    {
+      "id": "개화",
+      "nameKo": "개화",
+      "nameEn": "Gaehwa",
+      "district": "강서구",
+      "lat": 37.5785381,
+      "lon": 126.7976654
+    },
+    {
+      "id": "개화산",
+      "nameKo": "개화산",
+      "nameEn": "Gaehwasan",
+      "district": "강서구",
+      "lat": 37.5728758,
+      "lon": 126.8082601
+    },
+    {
+      "id": "거여",
+      "nameKo": "거여",
+      "nameEn": "Geoyeo",
+      "district": "송파구",
+      "lat": 37.4933453,
+      "lon": 127.1437709
+    },
+    {
+      "id": "건대입구",
+      "nameKo": "건대입구",
+      "nameEn": "Konkuk Univ.",
+      "district": "광진구",
+      "lat": 37.5404436,
+      "lon": 127.0708644
+    },
+    {
+      "id": "경복궁",
+      "nameKo": "경복궁",
+      "nameEn": "Gyeongbokgung",
+      "district": "종로구",
+      "lat": 37.5757873,
+      "lon": 126.973526
+    },
+    {
+      "id": "경복궁(정부서울청사)",
+      "nameKo": "경복궁(정부서울청사)",
+      "nameEn": "Gyeongbokgung (Government Complex Seoul)",
+      "district": "종로구",
+      "lat": 37.5757585,
+      "lon": 126.9735668
+    },
+    {
+      "id": "경찰병원",
+      "nameKo": "경찰병원",
+      "nameEn": "National Police Hospital",
+      "district": "송파구",
+      "lat": 37.495401,
+      "lon": 127.1239038
+    },
+    {
+      "id": "고덕",
+      "nameKo": "고덕",
+      "nameEn": "Godeok",
+      "district": "강동구",
+      "lat": 37.5553414,
+      "lon": 127.1563831
+    },
+    {
+      "id": "고려대",
+      "nameKo": "고려대",
+      "nameEn": "Korea Univ.",
+      "district": "성북구",
+      "lat": 37.5903784,
+      "lon": 127.0360133
+    },
+    {
+      "id": "고속터미널",
+      "nameKo": "고속터미널",
+      "nameEn": "Express Bus Terminal",
+      "district": "서초구",
+      "lat": 37.5050371,
+      "lon": 127.0049222
+    },
+    {
+      "id": "공덕",
+      "nameKo": "공덕",
+      "nameEn": "Gongdeok",
+      "district": "마포구",
+      "lat": 37.5436538,
+      "lon": 126.9508061
+    },
+    {
+      "id": "공릉",
+      "nameKo": "공릉",
+      "nameEn": "Gongneung",
+      "district": "노원구",
+      "lat": 37.6256358,
+      "lon": 127.0730437
+    },
+    {
+      "id": "공항시장",
+      "nameKo": "공항시장",
+      "nameEn": "Airport Market",
+      "district": "강서구",
+      "lat": 37.5636577,
+      "lon": 126.8106016
+    },
+    {
+      "id": "관악산",
+      "nameKo": "관악산",
+      "nameEn": "Gwanaksan",
+      "district": "관악구",
+      "lat": 37.4687357,
+      "lon": 126.945328
+    },
+    {
+      "id": "광나루",
+      "nameKo": "광나루",
+      "nameEn": "Gwangnaru",
+      "district": "광진구",
+      "lat": 37.5453014,
+      "lon": 127.103527
+    },
+    {
+      "id": "광명사거리",
+      "nameKo": "광명사거리",
+      "nameEn": "Gwangmyeongsageori",
+      "district": "구로구",
+      "lat": 37.4794207,
+      "lon": 126.8544598
+    },
+    {
+      "id": "광운대",
+      "nameKo": "광운대",
+      "nameEn": "Kwangwoon University",
+      "district": "노원구",
+      "lat": 37.6236987,
+      "lon": 127.0618193
+    },
+    {
+      "id": "광화문",
+      "nameKo": "광화문",
+      "nameEn": "Gwanghwamun",
+      "district": "종로구",
+      "lat": 37.5716162,
+      "lon": 126.9769026
+    },
+    {
+      "id": "광흥창",
+      "nameKo": "광흥창",
+      "nameEn": "Gwangheungchang",
+      "district": "마포구",
+      "lat": 37.5474717,
+      "lon": 126.9319609
+    },
+    {
+      "id": "교대",
+      "nameKo": "교대",
+      "nameEn": "Seoul Nat'l Univ. of Education",
+      "district": "서초구",
+      "lat": 37.4936592,
+      "lon": 127.0137025
+    },
+    {
+      "id": "교대(법원·검찰청)",
+      "nameKo": "교대(법원·검찰청)",
+      "nameEn": "Seoul Nat'l Univ. of Education (Court & Public Prosecutors' Office)",
+      "district": "서초구",
+      "lat": 37.4928812,
+      "lon": 127.0138064
+    },
+    {
+      "id": "구로디지털단지",
+      "nameKo": "구로디지털단지",
+      "nameEn": "Guro Digital Complex",
+      "district": "영등포구",
+      "lat": 37.4852761,
+      "lon": 126.9015916
+    },
+    {
+      "id": "구룡",
+      "nameKo": "구룡",
+      "nameEn": "Guryong",
+      "district": "강남구",
+      "lat": 37.4869265,
+      "lon": 127.0594609
+    },
+    {
+      "id": "구반포",
+      "nameKo": "구반포",
+      "nameEn": "Gubanpo",
+      "district": "서초구",
+      "lat": 37.5012899,
+      "lon": 126.9867849
+    },
+    {
+      "id": "구산",
+      "nameKo": "구산",
+      "nameEn": "Gusan",
+      "district": "은평구",
+      "lat": 37.6112496,
+      "lon": 126.9172191
+    },
+    {
+      "id": "구의",
+      "nameKo": "구의",
+      "nameEn": "Guui",
+      "district": "광진구",
+      "lat": 37.5371676,
+      "lon": 127.0862214
+    },
+    {
+      "id": "구의(광진구청)",
+      "nameKo": "구의(광진구청)",
+      "nameEn": "Guui(Gwangjin-gu Office)",
+      "district": "광진구",
+      "lat": 37.5374052,
+      "lon": 127.0872498
+    },
+    {
+      "id": "구일",
+      "nameKo": "구일",
+      "nameEn": "Guil",
+      "district": "구로구",
+      "lat": 37.4962071,
+      "lon": 126.8697062
+    },
+    {
+      "id": "구파발",
+      "nameKo": "구파발",
+      "nameEn": "Gupabal",
+      "district": "은평구",
+      "lat": 37.6368919,
+      "lon": 126.9188046
+    },
+    {
+      "id": "국회의사당",
+      "nameKo": "국회의사당",
+      "nameEn": "National Assembly",
+      "district": "영등포구",
+      "lat": 37.5280157,
+      "lon": 126.9179639
+    },
+    {
+      "id": "군자",
+      "nameKo": "군자",
+      "nameEn": "Gunja",
+      "district": "광진구",
+      "lat": 37.5572448,
+      "lon": 127.0795575
+    },
+    {
+      "id": "굽은다리",
+      "nameKo": "굽은다리",
+      "nameEn": "Gubeundari",
+      "district": "강동구",
+      "lat": 37.5456375,
+      "lon": 127.1429622
+    },
+    {
+      "id": "금천구청",
+      "nameKo": "금천구청",
+      "nameEn": "Geumcheon-gu Office",
+      "district": "금천구",
+      "lat": 37.4558132,
+      "lon": 126.8939002
+    },
+    {
+      "id": "금호",
+      "nameKo": "금호",
+      "nameEn": "Geumho",
+      "district": "중구",
+      "lat": 37.5479735,
+      "lon": 127.0159247
+    },
+    {
+      "id": "길동",
+      "nameKo": "길동",
+      "nameEn": "Gil-dong",
+      "district": "강동구",
+      "lat": 37.5383683,
+      "lon": 127.1402049
+    },
+    {
+      "id": "길음",
+      "nameKo": "길음",
+      "nameEn": "Gireum",
+      "district": "성북구",
+      "lat": 37.6031599,
+      "lon": 127.0248525
+    },
+    {
+      "id": "김포공항",
+      "nameKo": "김포공항",
+      "nameEn": "Gimpo Int'l Airport",
+      "district": "강서구",
+      "lat": 37.5619247,
+      "lon": 126.8013934
+    },
+    {
+      "id": "까치산",
+      "nameKo": "까치산",
+      "nameEn": "Kkachisan",
+      "district": "강서구",
+      "lat": 37.5321119,
+      "lon": 126.8465265
+    },
+    {
+      "id": "낙성대",
+      "nameKo": "낙성대",
+      "nameEn": "Nakseongdae",
+      "district": "관악구",
+      "lat": 37.4770623,
+      "lon": 126.9634876
+    },
+    {
+      "id": "남구로",
+      "nameKo": "남구로",
+      "nameEn": "Namguro",
+      "district": "구로구",
+      "lat": 37.4853612,
+      "lon": 126.8866651
+    },
+    {
+      "id": "남부터미널",
+      "nameKo": "남부터미널",
+      "nameEn": "Nambu Bus Terminal",
+      "district": "서초구",
+      "lat": 37.484943,
+      "lon": 127.0163445
+    },
+    {
+      "id": "남부터미널(예술의전당)",
+      "nameKo": "남부터미널(예술의전당)",
+      "nameEn": "Nambu Bus Terminal (Seoul Arts Center)",
+      "district": "서초구",
+      "lat": 37.4849718,
+      "lon": 127.0162904
+    },
+    {
+      "id": "남성",
+      "nameKo": "남성",
+      "nameEn": "Namseong",
+      "district": "동작구",
+      "lat": 37.4843545,
+      "lon": 126.9718936
+    },
+    {
+      "id": "남영",
+      "nameKo": "남영",
+      "nameEn": "Namyeong",
+      "district": "용산구",
+      "lat": 37.540538,
+      "lon": 126.9713213
+    },
+    {
+      "id": "남태령",
+      "nameKo": "남태령",
+      "nameEn": "Namtaeryeong",
+      "district": "관악구",
+      "lat": 37.4646556,
+      "lon": 126.9886975
+    },
+    {
+      "id": "내방",
+      "nameKo": "내방",
+      "nameEn": "Naebang",
+      "district": "서초구",
+      "lat": 37.4876455,
+      "lon": 126.9935544
+    },
+    {
+      "id": "노들",
+      "nameKo": "노들",
+      "nameEn": "Nodeul",
+      "district": "동작구",
+      "lat": 37.5129744,
+      "lon": 126.9535497
+    },
+    {
+      "id": "노량진",
+      "nameKo": "노량진",
+      "nameEn": "Noryangjin",
+      "district": "동작구",
+      "lat": 37.5142381,
+      "lon": 126.94204
+    },
+    {
+      "id": "노원",
+      "nameKo": "노원",
+      "nameEn": "Nowon",
+      "district": "노원구",
+      "lat": 37.6545911,
+      "lon": 127.0604932
+    },
+    {
+      "id": "녹번",
+      "nameKo": "녹번",
+      "nameEn": "Nokbeon",
+      "district": "은평구",
+      "lat": 37.6009733,
+      "lon": 126.9357307
+    },
+    {
+      "id": "녹사평",
+      "nameKo": "녹사평",
+      "nameEn": "Noksapyeong",
+      "district": "용산구",
+      "lat": 37.53492,
+      "lon": 126.9865773
+    },
+    {
+      "id": "녹천",
+      "nameKo": "녹천",
+      "nameEn": "Nokcheon",
+      "district": "도봉구",
+      "lat": 37.6446274,
+      "lon": 127.0513984
+    },
+    {
+      "id": "논현",
+      "nameKo": "논현",
+      "nameEn": "Nonhyeon",
+      "district": "서초구",
+      "lat": 37.5109791,
+      "lon": 127.0213641
+    },
+    {
+      "id": "답십리",
+      "nameKo": "답십리",
+      "nameEn": "Dapsipri",
+      "district": "동대문구",
+      "lat": 37.5668136,
+      "lon": 127.0526992
+    },
+    {
+      "id": "당곡",
+      "nameKo": "당곡",
+      "nameEn": "Danggok",
+      "district": "동작구",
+      "lat": 37.4896958,
+      "lon": 126.9278008
+    },
+    {
+      "id": "당산",
+      "nameKo": "당산",
+      "nameEn": "Dangsan",
+      "district": "영등포구",
+      "lat": 37.5345964,
+      "lon": 126.902478
+    },
+    {
+      "id": "대림",
+      "nameKo": "대림",
+      "nameEn": "Daerim",
+      "district": "구로구",
+      "lat": 37.4934375,
+      "lon": 126.8949325
+    },
+    {
+      "id": "대림(구로구청)",
+      "nameKo": "대림(구로구청)",
+      "nameEn": "Daerim(Guro-gu Office)",
+      "district": "구로구",
+      "lat": 37.4932804,
+      "lon": 126.8949584
+    },
+    {
+      "id": "대모산입구",
+      "nameKo": "대모산입구",
+      "nameEn": "Daemosan",
+      "district": "강남구",
+      "lat": 37.491389,
+      "lon": 127.0727494
+    },
+    {
+      "id": "대방",
+      "nameKo": "대방",
+      "nameEn": "Daebang",
+      "district": "영등포구",
+      "lat": 37.5133577,
+      "lon": 126.9264784
+    },
+    {
+      "id": "대청",
+      "nameKo": "대청",
+      "nameEn": "Daecheong",
+      "district": "강남구",
+      "lat": 37.4936283,
+      "lon": 127.0795515
+    },
+    {
+      "id": "대치",
+      "nameKo": "대치",
+      "nameEn": "Daechi",
+      "district": "강남구",
+      "lat": 37.4944743,
+      "lon": 127.0631933
+    },
+    {
+      "id": "대현산배수지공원 모노레일 대현산배수지공원승강장",
+      "nameKo": "대현산배수지공원 모노레일 대현산배수지공원승강장",
+      "nameEn": "",
+      "district": "중구",
+      "lat": 37.5586955,
+      "lon": 127.0214177
+    },
+    {
+      "id": "대현산배수지공원 모노레일 시점승강장",
+      "nameKo": "대현산배수지공원 모노레일 시점승강장",
+      "nameEn": "",
+      "district": "중구",
+      "lat": 37.5594056,
+      "lon": 127.0205117
+    },
+    {
+      "id": "대흥",
+      "nameKo": "대흥",
+      "nameEn": "Daeheung",
+      "district": "마포구",
+      "lat": 37.5476992,
+      "lon": 126.9423451
+    },
+    {
+      "id": "도곡",
+      "nameKo": "도곡",
+      "nameEn": "Dogok",
+      "district": "강남구",
+      "lat": 37.4909056,
+      "lon": 127.0554679
+    },
+    {
+      "id": "도림천",
+      "nameKo": "도림천",
+      "nameEn": "Dorimcheon",
+      "district": "영등포구",
+      "lat": 37.5144539,
+      "lon": 126.882684
+    },
+    {
+      "id": "도봉",
+      "nameKo": "도봉",
+      "nameEn": "Dobong",
+      "district": "도봉구",
+      "lat": 37.6792077,
+      "lon": 127.0455468
+    },
+    {
+      "id": "도봉산",
+      "nameKo": "도봉산",
+      "nameEn": "Dobongsan",
+      "district": "도봉구",
+      "lat": 37.6898359,
+      "lon": 127.0460783
+    },
+    {
+      "id": "독립문",
+      "nameKo": "독립문",
+      "nameEn": "Dongnimmun",
+      "district": "종로구",
+      "lat": 37.5745584,
+      "lon": 126.9578361
+    },
+    {
+      "id": "독바위",
+      "nameKo": "독바위",
+      "nameEn": "Dokbawi",
+      "district": "은평구",
+      "lat": 37.6183371,
+      "lon": 126.9330214
+    },
+    {
+      "id": "독산",
+      "nameKo": "독산",
+      "nameEn": "Doksan",
+      "district": "금천구",
+      "lat": 37.4660736,
+      "lon": 126.8894844
+    },
+    {
+      "id": "돌곶이",
+      "nameKo": "돌곶이",
+      "nameEn": "Dolgoji",
+      "district": "성북구",
+      "lat": 37.6105663,
+      "lon": 127.0564932
+    },
+    {
+      "id": "동대문",
+      "nameKo": "동대문",
+      "nameEn": "Dongdaemun",
+      "district": "종로구",
+      "lat": 37.5718616,
+      "lon": 127.0114887
+    },
+    {
+      "id": "동대문역사문화공원",
+      "nameKo": "동대문역사문화공원",
+      "nameEn": "Dongdaemun History & Culture Park Station (DDP)",
+      "district": "중구",
+      "lat": 37.5652615,
+      "lon": 127.0081233
+    },
+    {
+      "id": "동대입구",
+      "nameKo": "동대입구",
+      "nameEn": "Dongguk Univ.",
+      "district": "중구",
+      "lat": 37.5590607,
+      "lon": 127.005727
+    },
+    {
+      "id": "동묘앞",
+      "nameKo": "동묘앞",
+      "nameEn": "Dongmyo",
+      "district": "종로구",
+      "lat": 37.5735084,
+      "lon": 127.0174344
+    },
+    {
+      "id": "동작",
+      "nameKo": "동작",
+      "nameEn": "Dongjak",
+      "district": "동작구",
+      "lat": 37.5029705,
+      "lon": 126.978203
+    },
+    {
+      "id": "둔촌동",
+      "nameKo": "둔촌동",
+      "nameEn": "Dunchon-dong",
+      "district": "강동구",
+      "lat": 37.5278024,
+      "lon": 127.1362433
+    },
+    {
+      "id": "둔촌오륜",
+      "nameKo": "둔촌오륜",
+      "nameEn": "Dunchon Oryun",
+      "district": "강동구",
+      "lat": 37.5198411,
+      "lon": 127.1384179
+    },
+    {
+      "id": "등촌",
+      "nameKo": "등촌",
+      "nameEn": "Deungchon",
+      "district": "강서구",
+      "lat": 37.5511518,
+      "lon": 126.864574
+    },
+    {
+      "id": "디지털미디어시티",
+      "nameKo": "디지털미디어시티",
+      "nameEn": "Digital Media City",
+      "district": "마포구",
+      "lat": 37.5773957,
+      "lon": 126.8980769
+    },
+    {
+      "id": "뚝섬",
+      "nameKo": "뚝섬",
+      "nameEn": "Ttukseom",
+      "district": "성동구",
+      "lat": 37.5472351,
+      "lon": 127.04741
+    },
+    {
+      "id": "마곡",
+      "nameKo": "마곡",
+      "nameEn": "Magok",
+      "district": "강서구",
+      "lat": 37.5602492,
+      "lon": 126.8247463
+    },
+    {
+      "id": "마곡나루",
+      "nameKo": "마곡나루",
+      "nameEn": "Magongnaru",
+      "district": "강서구",
+      "lat": 37.5662179,
+      "lon": 126.827917
+    },
+    {
+      "id": "마들",
+      "nameKo": "마들",
+      "nameEn": "Madeul",
+      "district": "노원구",
+      "lat": 37.665038,
+      "lon": 127.0577205
+    },
+    {
+      "id": "마장",
+      "nameKo": "마장",
+      "nameEn": "Majang",
+      "district": "성동구",
+      "lat": 37.5660982,
+      "lon": 127.042881
+    },
+    {
+      "id": "마천",
+      "nameKo": "마천",
+      "nameEn": "Macheon",
+      "district": "송파구",
+      "lat": 37.4949531,
+      "lon": 127.1527241
+    },
+    {
+      "id": "마포",
+      "nameKo": "마포",
+      "nameEn": "Mapo",
+      "district": "마포구",
+      "lat": 37.5396369,
+      "lon": 126.9459929
+    },
+    {
+      "id": "마포구청",
+      "nameKo": "마포구청",
+      "nameEn": "Mapo-gu Office",
+      "district": "마포구",
+      "lat": 37.5635586,
+      "lon": 126.9033645
+    },
+    {
+      "id": "망우",
+      "nameKo": "망우",
+      "nameEn": "Mangu",
+      "district": "중랑구",
+      "lat": 37.5996345,
+      "lon": 127.0918581
+    },
+    {
+      "id": "망원",
+      "nameKo": "망원",
+      "nameEn": "Mangwon",
+      "district": "마포구",
+      "lat": 37.5560254,
+      "lon": 126.9101277
+    },
+    {
+      "id": "매봉",
+      "nameKo": "매봉",
+      "nameEn": "Maebong",
+      "district": "강남구",
+      "lat": 37.4870692,
+      "lon": 127.046978
+    },
+    {
+      "id": "먹골",
+      "nameKo": "먹골",
+      "nameEn": "Meokgol",
+      "district": "중랑구",
+      "lat": 37.6114417,
+      "lon": 127.0776518
+    },
+    {
+      "id": "메트로호텔",
+      "nameKo": "메트로호텔",
+      "nameEn": "Metro Hotel Myeongdong",
+      "district": "중구",
+      "lat": 37.5651052,
+      "lon": 126.983621
+    },
+    {
+      "id": "면목",
+      "nameKo": "면목",
+      "nameEn": "Myeonmok",
+      "district": "중랑구",
+      "lat": 37.5884004,
+      "lon": 127.0876041
+    },
+    {
+      "id": "명동",
+      "nameKo": "명동",
+      "nameEn": "Myeongdong",
+      "district": "중구",
+      "lat": 37.5608977,
+      "lon": 126.9863762
+    },
+    {
+      "id": "명일",
+      "nameKo": "명일",
+      "nameEn": "Myeongil",
+      "district": "강동구",
+      "lat": 37.5519533,
+      "lon": 127.1440847
+    },
+    {
+      "id": "목동",
+      "nameKo": "목동",
+      "nameEn": "Mok-dong",
+      "district": "양천구",
+      "lat": 37.5261241,
+      "lon": 126.8645174
+    },
+    {
+      "id": "몽촌토성",
+      "nameKo": "몽촌토성",
+      "nameEn": "Mongchontoseong",
+      "district": "송파구",
+      "lat": 37.5175329,
+      "lon": 127.11267
+    },
+    {
+      "id": "무악재",
+      "nameKo": "무악재",
+      "nameEn": "Muakjae",
+      "district": "서대문구",
+      "lat": 37.5823172,
+      "lon": 126.9503501
+    },
+    {
+      "id": "문래",
+      "nameKo": "문래",
+      "nameEn": "Mullae",
+      "district": "영등포구",
+      "lat": 37.5183839,
+      "lon": 126.8948726
+    },
+    {
+      "id": "문정",
+      "nameKo": "문정",
+      "nameEn": "Munjeong",
+      "district": "송파구",
+      "lat": 37.4858358,
+      "lon": 127.1225184
+    },
+    {
+      "id": "미아",
+      "nameKo": "미아",
+      "nameEn": "Mia",
+      "district": "강북구",
+      "lat": 37.6264941,
+      "lon": 127.0261091
+    },
+    {
+      "id": "미아사거리",
+      "nameKo": "미아사거리",
+      "nameEn": "Miasageori",
+      "district": "강북구",
+      "lat": 37.613185,
+      "lon": 127.0300915
+    },
+    {
+      "id": "반포",
+      "nameKo": "반포",
+      "nameEn": "Banpo",
+      "district": "서초구",
+      "lat": 37.5081748,
+      "lon": 127.0116346
+    },
+    {
+      "id": "발산",
+      "nameKo": "발산",
+      "nameEn": "Balsan",
+      "district": "강서구",
+      "lat": 37.5584951,
+      "lon": 126.8374653
+    },
+    {
+      "id": "방배",
+      "nameKo": "방배",
+      "nameEn": "Bangbae",
+      "district": "서초구",
+      "lat": 37.4814662,
+      "lon": 126.9977072
+    },
+    {
+      "id": "방배 (백석예술대)",
+      "nameKo": "방배 (백석예술대)",
+      "nameEn": "Bangbae",
+      "district": "서초구",
+      "lat": 37.4814811,
+      "lon": 126.9976616
+    },
+    {
+      "id": "방이",
+      "nameKo": "방이",
+      "nameEn": "Bangi",
+      "district": "송파구",
+      "lat": 37.5086429,
+      "lon": 127.1260388
+    },
+    {
+      "id": "방학",
+      "nameKo": "방학",
+      "nameEn": "Banghak",
+      "district": "도봉구",
+      "lat": 37.6676904,
+      "lon": 127.0443033
+    },
+    {
+      "id": "방화",
+      "nameKo": "방화",
+      "nameEn": "Banghwa",
+      "district": "강서구",
+      "lat": 37.5774043,
+      "lon": 126.812732
+    },
+    {
+      "id": "버티고개",
+      "nameKo": "버티고개",
+      "nameEn": "Beotigogae",
+      "district": "중구",
+      "lat": 37.5482323,
+      "lon": 127.0065879
+    },
+    {
+      "id": "보라매",
+      "nameKo": "보라매",
+      "nameEn": "Boramae",
+      "district": "영등포구",
+      "lat": 37.4999284,
+      "lon": 126.9203764
+    },
+    {
+      "id": "보라매공원",
+      "nameKo": "보라매공원",
+      "nameEn": "Boramae Park",
+      "district": "영등포구",
+      "lat": 37.4952932,
+      "lon": 126.9181903
+    },
+    {
+      "id": "보라매병원",
+      "nameKo": "보라매병원",
+      "nameEn": "Boramae Medical Center",
+      "district": "동작구",
+      "lat": 37.4929641,
+      "lon": 126.9242732
+    },
+    {
+      "id": "보문",
+      "nameKo": "보문",
+      "nameEn": "Bomun",
+      "district": "성북구",
+      "lat": 37.5852743,
+      "lon": 127.0193736
+    },
+    {
+      "id": "복정",
+      "nameKo": "복정",
+      "nameEn": "Bokjeong",
+      "district": "송파구",
+      "lat": 37.4705773,
+      "lon": 127.1267127
+    },
+    {
+      "id": "봉은사",
+      "nameKo": "봉은사",
+      "nameEn": "Bongeunsa",
+      "district": "강남구",
+      "lat": 37.5141869,
+      "lon": 127.0602411
+    },
+    {
+      "id": "봉천",
+      "nameKo": "봉천",
+      "nameEn": "Bongcheon",
+      "district": "관악구",
+      "lat": 37.4823889,
+      "lon": 126.9419387
+    },
+    {
+      "id": "봉화산",
+      "nameKo": "봉화산",
+      "nameEn": "Bonghwasan",
+      "district": "노원구",
+      "lat": 37.6174165,
+      "lon": 127.0910968
+    },
+    {
+      "id": "북한산보국문",
+      "nameKo": "북한산보국문",
+      "nameEn": "Bukhansan Bogungmun",
+      "district": "성북구",
+      "lat": 37.6121803,
+      "lon": 127.0081741
+    },
+    {
+      "id": "북한산우이",
+      "nameKo": "북한산우이",
+      "nameEn": "Bukhansan Ui",
+      "district": "강북구",
+      "lat": 37.6633242,
+      "lon": 127.0124123
+    },
+    {
+      "id": "불광",
+      "nameKo": "불광",
+      "nameEn": "Bulgwang",
+      "district": "은평구",
+      "lat": 37.6108807,
+      "lon": 126.9296307
+    },
+    {
+      "id": "불암산",
+      "nameKo": "불암산",
+      "nameEn": "Buramsan",
+      "district": "노원구",
+      "lat": 37.670098,
+      "lon": 127.0789245
+    },
+    {
+      "id": "사가정",
+      "nameKo": "사가정",
+      "nameEn": "Sagajeong",
+      "district": "중랑구",
+      "lat": 37.5806971,
+      "lon": 127.0884106
+    },
+    {
+      "id": "사당",
+      "nameKo": "사당",
+      "nameEn": "Sadang",
+      "district": "동작구",
+      "lat": 37.4765828,
+      "lon": 126.9816682
+    },
+    {
+      "id": "사평",
+      "nameKo": "사평",
+      "nameEn": "Sapyeong",
+      "district": "서초구",
+      "lat": 37.5042952,
+      "lon": 127.0151398
+    },
+    {
+      "id": "삼각지",
+      "nameKo": "삼각지",
+      "nameEn": "Samgakji",
+      "district": "용산구",
+      "lat": 37.535478,
+      "lon": 126.9738885
+    },
+    {
+      "id": "삼성",
+      "nameKo": "삼성",
+      "nameEn": "Samseong",
+      "district": "강남구",
+      "lat": 37.5088402,
+      "lon": 127.063143
+    },
+    {
+      "id": "삼성(무역센터)",
+      "nameKo": "삼성(무역센터)",
+      "nameEn": "Samseong(World Trade Center Seoul)",
+      "district": "강남구",
+      "lat": 37.5085899,
+      "lon": 127.062061
+    },
+    {
+      "id": "삼성중앙",
+      "nameKo": "삼성중앙",
+      "nameEn": "Samseong Jungang",
+      "district": "강남구",
+      "lat": 37.5130955,
+      "lon": 127.0534747
+    },
+    {
+      "id": "삼양",
+      "nameKo": "삼양",
+      "nameEn": "Samyang",
+      "district": "강북구",
+      "lat": 37.6269234,
+      "lon": 127.0181757
+    },
+    {
+      "id": "삼양사거리",
+      "nameKo": "삼양사거리",
+      "nameEn": "Samyang Sageori",
+      "district": "강북구",
+      "lat": 37.6211991,
+      "lon": 127.0204924
+    },
+    {
+      "id": "삼전",
+      "nameKo": "삼전",
+      "nameEn": "Samjeon",
+      "district": "송파구",
+      "lat": 37.5045347,
+      "lon": 127.0872078
+    },
+    {
+      "id": "상계",
+      "nameKo": "상계",
+      "nameEn": "Sanggye",
+      "district": "노원구",
+      "lat": 37.6607649,
+      "lon": 127.073439
+    },
+    {
+      "id": "상도",
+      "nameKo": "상도",
+      "nameEn": "Sangdo",
+      "district": "동작구",
+      "lat": 37.503216,
+      "lon": 126.9476726
+    },
+    {
+      "id": "상봉",
+      "nameKo": "상봉",
+      "nameEn": "Sangbong",
+      "district": "중랑구",
+      "lat": 37.5960832,
+      "lon": 127.0855918
+    },
+    {
+      "id": "상수",
+      "nameKo": "상수",
+      "nameEn": "Sangsu",
+      "district": "마포구",
+      "lat": 37.5477577,
+      "lon": 126.9228923
+    },
+    {
+      "id": "상왕십리",
+      "nameKo": "상왕십리",
+      "nameEn": "Sangwangsimni",
+      "district": "성동구",
+      "lat": 37.564391,
+      "lon": 127.0292513
+    },
+    {
+      "id": "상월곡",
+      "nameKo": "상월곡",
+      "nameEn": "Sangwolgok",
+      "district": "성북구",
+      "lat": 37.6062379,
+      "lon": 127.0482722
+    },
+    {
+      "id": "상일동",
+      "nameKo": "상일동",
+      "nameEn": "Sangil-dong",
+      "district": "강동구",
+      "lat": 37.5567762,
+      "lon": 127.1667789
+    },
+    {
+      "id": "새절",
+      "nameKo": "새절",
+      "nameEn": "Saejeol",
+      "district": "은평구",
+      "lat": 37.5916491,
+      "lon": 126.9137922
+    },
+    {
+      "id": "샛강",
+      "nameKo": "샛강",
+      "nameEn": "Saetgang",
+      "district": "영등포구",
+      "lat": 37.517362,
+      "lon": 126.928282
+    },
+    {
+      "id": "생태공원앞",
+      "nameKo": "생태공원앞",
+      "nameEn": "",
+      "district": "강동구",
+      "lat": 37.5381107,
+      "lon": 127.1523456
+    },
+    {
+      "id": "서강대",
+      "nameKo": "서강대",
+      "nameEn": "Sogang Univ.",
+      "district": "마포구",
+      "lat": 37.552353,
+      "lon": 126.9351841
+    },
+    {
+      "id": "서대문",
+      "nameKo": "서대문",
+      "nameEn": "Seodaemun",
+      "district": "종로구",
+      "lat": 37.5657953,
+      "lon": 126.9666351
+    },
+    {
+      "id": "서빙고",
+      "nameKo": "서빙고",
+      "nameEn": "Seobinggo",
+      "district": "용산구",
+      "lat": 37.5195744,
+      "lon": 126.9883182
+    },
+    {
+      "id": "서울",
+      "nameKo": "서울",
+      "nameEn": "Seoul",
+      "district": "중구",
+      "lat": 37.5545547,
+      "lon": 126.9707793
+    },
+    {
+      "id": "서울대벤처타운",
+      "nameKo": "서울대벤처타운",
+      "nameEn": "Seoul Nat'l Univ. Venture Town",
+      "district": "관악구",
+      "lat": 37.4720025,
+      "lon": 126.9337059
+    },
+    {
+      "id": "서울대입구",
+      "nameKo": "서울대입구",
+      "nameEn": "Seoul Nat'l Univ.",
+      "district": "관악구",
+      "lat": 37.481223,
+      "lon": 126.9527151
+    },
+    {
+      "id": "서울대입구(관악구청)",
+      "nameKo": "서울대입구(관악구청)",
+      "nameEn": "Seoul Nat'l University (Gwanak-gu Office)",
+      "district": "관악구",
+      "lat": 37.4812236,
+      "lon": 126.9527534
+    },
+    {
+      "id": "서울숲",
+      "nameKo": "서울숲",
+      "nameEn": "Seoul-forest",
+      "district": "성동구",
+      "lat": 37.5435916,
+      "lon": 127.0447397
+    },
+    {
+      "id": "서울역",
+      "nameKo": "서울역",
+      "nameEn": "Seoul Station",
+      "district": "중구",
+      "lat": 37.5528527,
+      "lon": 126.9725721
+    },
+    {
+      "id": "서울지방병무청",
+      "nameKo": "서울지방병무청",
+      "nameEn": "Seoul Regional Office of Military Manpower",
+      "district": "영등포구",
+      "lat": 37.5059628,
+      "lon": 126.9227236
+    },
+    {
+      "id": "서원",
+      "nameKo": "서원",
+      "nameEn": "Seowon",
+      "district": "관악구",
+      "lat": 37.4782105,
+      "lon": 126.9330119
+    },
+    {
+      "id": "서초",
+      "nameKo": "서초",
+      "nameEn": "Seocho",
+      "district": "서초구",
+      "lat": 37.4917747,
+      "lon": 127.007681
+    },
+    {
+      "id": "석계",
+      "nameKo": "석계",
+      "nameEn": "Seokgye",
+      "district": "노원구",
+      "lat": 37.6148083,
+      "lon": 127.0658393
+    },
+    {
+      "id": "석수",
+      "nameKo": "석수",
+      "nameEn": "Seoksu",
+      "district": "금천구",
+      "lat": 37.4351332,
+      "lon": 126.9023059
+    },
+    {
+      "id": "석촌",
+      "nameKo": "석촌",
+      "nameEn": "Seokchon",
+      "district": "송파구",
+      "lat": 37.5052954,
+      "lon": 127.1071105
+    },
+    {
+      "id": "석촌고분",
+      "nameKo": "석촌고분",
+      "nameEn": "Seokchon Gobun",
+      "district": "송파구",
+      "lat": 37.5024441,
+      "lon": 127.0966143
+    },
+    {
+      "id": "선릉",
+      "nameKo": "선릉",
+      "nameEn": "Seolleung",
+      "district": "강남구",
+      "lat": 37.5044746,
+      "lon": 127.0489508
+    },
+    {
+      "id": "선유도",
+      "nameKo": "선유도",
+      "nameEn": "Seonyudo",
+      "district": "영등포구",
+      "lat": 37.5378593,
+      "lon": 126.8939823
+    },
+    {
+      "id": "선정릉",
+      "nameKo": "선정릉",
+      "nameEn": "Seonjeongneung",
+      "district": "강남구",
+      "lat": 37.510253,
+      "lon": 127.0438586
+    },
+    {
+      "id": "성수",
+      "nameKo": "성수",
+      "nameEn": "Seongsu",
+      "district": "성동구",
+      "lat": 37.5445688,
+      "lon": 127.0561016
+    },
+    {
+      "id": "성신여대입구",
+      "nameKo": "성신여대입구",
+      "nameEn": "Sungshin Women's University",
+      "district": "성북구",
+      "lat": 37.5926755,
+      "lon": 127.0164764
+    },
+    {
+      "id": "솔밭공원",
+      "nameKo": "솔밭공원",
+      "nameEn": "Solbat Park",
+      "district": "강북구",
+      "lat": 37.6560698,
+      "lon": 127.0132485
+    },
+    {
+      "id": "솔샘",
+      "nameKo": "솔샘",
+      "nameEn": "Solsaem",
+      "district": "강북구",
+      "lat": 37.6201661,
+      "lon": 127.0138408
+    },
+    {
+      "id": "송정",
+      "nameKo": "송정",
+      "nameEn": "Songjeong",
+      "district": "강서구",
+      "lat": 37.5612772,
+      "lon": 126.8119428
+    },
+    {
+      "id": "송파",
+      "nameKo": "송파",
+      "nameEn": "Songpa",
+      "district": "송파구",
+      "lat": 37.4997247,
+      "lon": 127.1121822
+    },
+    {
+      "id": "송파나루",
+      "nameKo": "송파나루",
+      "nameEn": "Songpanaru",
+      "district": "송파구",
+      "lat": 37.511245,
+      "lon": 127.1127954
+    },
+    {
+      "id": "수락산",
+      "nameKo": "수락산",
+      "nameEn": "Suraksan",
+      "district": "노원구",
+      "lat": 37.6778035,
+      "lon": 127.0553431
+    },
+    {
+      "id": "수색",
+      "nameKo": "수색",
+      "nameEn": "Susaek",
+      "district": "은평구",
+      "lat": 37.5807582,
+      "lon": 126.8955531
+    },
+    {
+      "id": "수서",
+      "nameKo": "수서",
+      "nameEn": "Suseo",
+      "district": "강남구",
+      "lat": 37.4874159,
+      "lon": 127.1018399
+    },
+    {
+      "id": "수유",
+      "nameKo": "수유",
+      "nameEn": "Suyu",
+      "district": "강북구",
+      "lat": 37.6379932,
+      "lon": 127.0257229
+    },
+    {
+      "id": "수유(강북구청)",
+      "nameKo": "수유(강북구청)",
+      "nameEn": "Suyu (Gangbuk-gu Office)",
+      "district": "강북구",
+      "lat": 37.6379893,
+      "lon": 127.0256914
+    },
+    {
+      "id": "숙대입구",
+      "nameKo": "숙대입구",
+      "nameEn": "Sookmyung Women's Univ.",
+      "district": "용산구",
+      "lat": 37.5451337,
+      "lon": 126.9719573
+    },
+    {
+      "id": "숭실대입구",
+      "nameKo": "숭실대입구",
+      "nameEn": "Soongsil Univ.",
+      "district": "동작구",
+      "lat": 37.4956862,
+      "lon": 126.9541334
+    },
+    {
+      "id": "시청",
+      "nameKo": "시청",
+      "nameEn": "City Hall",
+      "district": "중구",
+      "lat": 37.5654798,
+      "lon": 126.977114
+    },
+    {
+      "id": "신금호",
+      "nameKo": "신금호",
+      "nameEn": "Singeumho",
+      "district": "중구",
+      "lat": 37.554429,
+      "lon": 127.0202485
+    },
+    {
+      "id": "신길",
+      "nameKo": "신길",
+      "nameEn": "Singil",
+      "district": "영등포구",
+      "lat": 37.5166485,
+      "lon": 126.9187443
+    },
+    {
+      "id": "신내",
+      "nameKo": "신내",
+      "nameEn": "Sinnae",
+      "district": "중랑구",
+      "lat": 37.6125508,
+      "lon": 127.1040904
+    },
+    {
+      "id": "신논현",
+      "nameKo": "신논현",
+      "nameEn": "Sinnonhyeon",
+      "district": "서초구",
+      "lat": 37.5043224,
+      "lon": 127.0245306
+    },
+    {
+      "id": "신답",
+      "nameKo": "신답",
+      "nameEn": "Sindap",
+      "district": "동대문구",
+      "lat": 37.5697194,
+      "lon": 127.0471268
+    },
+    {
+      "id": "신당",
+      "nameKo": "신당",
+      "nameEn": "Sindang",
+      "district": "중구",
+      "lat": 37.5653839,
+      "lon": 127.016252
+    },
+    {
+      "id": "신대방",
+      "nameKo": "신대방",
+      "nameEn": "Sindaebang",
+      "district": "동작구",
+      "lat": 37.4875949,
+      "lon": 126.9133919
+    },
+    {
+      "id": "신대방삼거리",
+      "nameKo": "신대방삼거리",
+      "nameEn": "Sindaebangsamgeori",
+      "district": "동작구",
+      "lat": 37.499706,
+      "lon": 126.9282246
+    },
+    {
+      "id": "신림",
+      "nameKo": "신림",
+      "nameEn": "Sillim",
+      "district": "관악구",
+      "lat": 37.4842316,
+      "lon": 126.9296803
+    },
+    {
+      "id": "신목동",
+      "nameKo": "신목동",
+      "nameEn": "Sinmokdong",
+      "district": "양천구",
+      "lat": 37.544211,
+      "lon": 126.8831758
+    },
+    {
+      "id": "신반포",
+      "nameKo": "신반포",
+      "nameEn": "Sinbanpo",
+      "district": "서초구",
+      "lat": 37.5036014,
+      "lon": 126.996418
+    },
+    {
+      "id": "신방화",
+      "nameKo": "신방화",
+      "nameEn": "Sinbanghwa",
+      "district": "강서구",
+      "lat": 37.5674973,
+      "lon": 126.8165921
+    },
+    {
+      "id": "신사",
+      "nameKo": "신사",
+      "nameEn": "Sinsa",
+      "district": "서초구",
+      "lat": 37.5161089,
+      "lon": 127.0195159
+    },
+    {
+      "id": "신설동",
+      "nameKo": "신설동",
+      "nameEn": "Sinseol-dong",
+      "district": "성북구",
+      "lat": 37.5760544,
+      "lon": 127.0246657
+    },
+    {
+      "id": "신용산",
+      "nameKo": "신용산",
+      "nameEn": "Sinyongsan",
+      "district": "용산구",
+      "lat": 37.5291744,
+      "lon": 126.9678569
+    },
+    {
+      "id": "신이문",
+      "nameKo": "신이문",
+      "nameEn": "Sinimun",
+      "district": "동대문구",
+      "lat": 37.6016378,
+      "lon": 127.0672904
+    },
+    {
+      "id": "신정",
+      "nameKo": "신정",
+      "nameEn": "Sinjeong",
+      "district": "양천구",
+      "lat": 37.5250413,
+      "lon": 126.8559699
+    },
+    {
+      "id": "신정네거리",
+      "nameKo": "신정네거리",
+      "nameEn": "Sinjeongnegeori",
+      "district": "양천구",
+      "lat": 37.5199831,
+      "lon": 126.8530463
+    },
+    {
+      "id": "신촌",
+      "nameKo": "신촌",
+      "nameEn": "Sinchon",
+      "district": "서대문구",
+      "lat": 37.5551517,
+      "lon": 126.9369084
+    },
+    {
+      "id": "신촌(지하)",
+      "nameKo": "신촌(지하)",
+      "nameEn": "Sinchon",
+      "district": "서대문구",
+      "lat": 37.5551312,
+      "lon": 126.9369069
+    },
+    {
+      "id": "신풍",
+      "nameKo": "신풍",
+      "nameEn": "Sinpung",
+      "district": "영등포구",
+      "lat": 37.5001667,
+      "lon": 126.9088751
+    },
+    {
+      "id": "쌍문",
+      "nameKo": "쌍문",
+      "nameEn": "Ssangmun",
+      "district": "도봉구",
+      "lat": 37.6484028,
+      "lon": 127.0345788
+    },
+    {
+      "id": "아차산",
+      "nameKo": "아차산",
+      "nameEn": "Achasan",
+      "district": "광진구",
+      "lat": 37.5516981,
+      "lon": 127.0897955
+    },
+    {
+      "id": "아현",
+      "nameKo": "아현",
+      "nameEn": "Ahyeon",
+      "district": "서대문구",
+      "lat": 37.5574309,
+      "lon": 126.9561209
+    },
+    {
+      "id": "아현(추계예술대)",
+      "nameKo": "아현(추계예술대)",
+      "nameEn": "Ahyeon",
+      "district": "서대문구",
+      "lat": 37.5574022,
+      "lon": 126.9561329
+    },
+    {
+      "id": "안국",
+      "nameKo": "안국",
+      "nameEn": "Anguk",
+      "district": "종로구",
+      "lat": 37.5768279,
+      "lon": 126.9861709
+    },
+    {
+      "id": "안암",
+      "nameKo": "안암",
+      "nameEn": "Anam",
+      "district": "성북구",
+      "lat": 37.5862688,
+      "lon": 127.0292777
+    },
+    {
+      "id": "암사",
+      "nameKo": "암사",
+      "nameEn": "Amsa",
+      "district": "강동구",
+      "lat": 37.5501059,
+      "lon": 127.1275385
+    },
+    {
+      "id": "암사역사공원",
+      "nameKo": "암사역사공원",
+      "nameEn": "Amsa History Park",
+      "district": "강동구",
+      "lat": 37.5570469,
+      "lon": 127.1374318
+    },
+    {
+      "id": "압구정",
+      "nameKo": "압구정",
+      "nameEn": "Apgujeong",
+      "district": "강남구",
+      "lat": 37.5261847,
+      "lon": 127.0284989
+    },
+    {
+      "id": "압구정로데오",
+      "nameKo": "압구정로데오",
+      "nameEn": "Apgujeong Rodeo",
+      "district": "강남구",
+      "lat": 37.5278128,
+      "lon": 127.0407094
+    },
+    {
+      "id": "애오개",
+      "nameKo": "애오개",
+      "nameEn": "Aeogae",
+      "district": "마포구",
+      "lat": 37.553428,
+      "lon": 126.9566976
+    },
+    {
+      "id": "약수",
+      "nameKo": "약수",
+      "nameEn": "Yaksu",
+      "district": "중구",
+      "lat": 37.5547501,
+      "lon": 127.010623
+    },
+    {
+      "id": "양원",
+      "nameKo": "양원",
+      "nameEn": "Yangwon",
+      "district": "중랑구",
+      "lat": 37.6065818,
+      "lon": 127.1079346
+    },
+    {
+      "id": "양재",
+      "nameKo": "양재",
+      "nameEn": "Yangjae",
+      "district": "서초구",
+      "lat": 37.4844005,
+      "lon": 127.0341455
+    },
+    {
+      "id": "양재시민의숲",
+      "nameKo": "양재시민의숲",
+      "nameEn": "Yangjae Citizen's Forest",
+      "district": "서초구",
+      "lat": 37.4697097,
+      "lon": 127.0384772
+    },
+    {
+      "id": "양천구청",
+      "nameKo": "양천구청",
+      "nameEn": "Yangcheon-gu Office",
+      "district": "양천구",
+      "lat": 37.512295,
+      "lon": 126.865945
+    },
+    {
+      "id": "양천향교",
+      "nameKo": "양천향교",
+      "nameEn": "Yangcheon Hyanggyo",
+      "district": "강서구",
+      "lat": 37.5684524,
+      "lon": 126.8412958
+    },
+    {
+      "id": "양평",
+      "nameKo": "양평",
+      "nameEn": "Yangpyeong",
+      "district": "양천구",
+      "lat": 37.5256329,
+      "lon": 126.8861176
+    },
+    {
+      "id": "어린이대공원",
+      "nameKo": "어린이대공원",
+      "nameEn": "Children's Grand Park",
+      "district": "광진구",
+      "lat": 37.5475998,
+      "lon": 127.0743915
+    },
+    {
+      "id": "언주",
+      "nameKo": "언주",
+      "nameEn": "Eonju",
+      "district": "강남구",
+      "lat": 37.507321,
+      "lon": 127.0338746
+    },
+    {
+      "id": "여의나루",
+      "nameKo": "여의나루",
+      "nameEn": "Yeouinaru",
+      "district": "영등포구",
+      "lat": 37.5268526,
+      "lon": 126.9325288
+    },
+    {
+      "id": "여의도",
+      "nameKo": "여의도",
+      "nameEn": "Yeouido",
+      "district": "영등포구",
+      "lat": 37.5216685,
+      "lon": 126.9243018
+    },
+    {
+      "id": "역삼",
+      "nameKo": "역삼",
+      "nameEn": "Yeoksam",
+      "district": "강남구",
+      "lat": 37.5008221,
+      "lon": 127.03696
+    },
+    {
+      "id": "역촌",
+      "nameKo": "역촌",
+      "nameEn": "Yeokchon",
+      "district": "은평구",
+      "lat": 37.6060733,
+      "lon": 126.9227556
+    },
+    {
+      "id": "연신내",
+      "nameKo": "연신내",
+      "nameEn": "Yeonsinnae",
+      "district": "은평구",
+      "lat": 37.6189247,
+      "lon": 126.9211838
+    },
+    {
+      "id": "염창",
+      "nameKo": "염창",
+      "nameEn": "Yeomchang",
+      "district": "강서구",
+      "lat": 37.5470335,
+      "lon": 126.8753972
+    },
+    {
+      "id": "영등포구청",
+      "nameKo": "영등포구청",
+      "nameEn": "Yeongdeungpo-gu Office",
+      "district": "영등포구",
+      "lat": 37.5240181,
+      "lon": 126.8963369
+    },
+    {
+      "id": "영등포시장",
+      "nameKo": "영등포시장",
+      "nameEn": "Yeongdeungpo Market",
+      "district": "영등포구",
+      "lat": 37.5226934,
+      "lon": 126.9051415
+    },
+    {
+      "id": "오금",
+      "nameKo": "오금",
+      "nameEn": "Ogeum",
+      "district": "송파구",
+      "lat": 37.5019815,
+      "lon": 127.1281525
+    },
+    {
+      "id": "오류동",
+      "nameKo": "오류동",
+      "nameEn": "Oryu-dong",
+      "district": "구로구",
+      "lat": 37.4943466,
+      "lon": 126.8445367
+    },
+    {
+      "id": "오목교",
+      "nameKo": "오목교",
+      "nameEn": "Omokgyo",
+      "district": "양천구",
+      "lat": 37.5245648,
+      "lon": 126.8751222
+    },
+    {
+      "id": "옥수",
+      "nameKo": "옥수",
+      "nameEn": "Oksu",
+      "district": "성동구",
+      "lat": 37.5413731,
+      "lon": 127.0175496
+    },
+    {
+      "id": "온수",
+      "nameKo": "온수",
+      "nameEn": "Onsu",
+      "district": "구로구",
+      "lat": 37.4922986,
+      "lon": 126.823534
+    },
+    {
+      "id": "올림픽공원",
+      "nameKo": "올림픽공원",
+      "nameEn": "Olympic Park",
+      "district": "송파구",
+      "lat": 37.5161479,
+      "lon": 127.1309298
+    },
+    {
+      "id": "왕십리",
+      "nameKo": "왕십리",
+      "nameEn": "Wangsimni",
+      "district": "성동구",
+      "lat": 37.5612078,
+      "lon": 127.0371526
+    },
+    {
+      "id": "왕십리(성동구청)",
+      "nameKo": "왕십리(성동구청)",
+      "nameEn": "Wangsimni(Seongdong-Gu Office)",
+      "district": "성동구",
+      "lat": 37.561196,
+      "lon": 127.0371344
+    },
+    {
+      "id": "외대앞",
+      "nameKo": "외대앞",
+      "nameEn": "Hankuk Univ. of Foreign Studies",
+      "district": "동대문구",
+      "lat": 37.5963062,
+      "lon": 127.0637429
+    },
+    {
+      "id": "용답",
+      "nameKo": "용답",
+      "nameEn": "Yongdap",
+      "district": "성동구",
+      "lat": 37.56209,
+      "lon": 127.0508609
+    },
+    {
+      "id": "용두",
+      "nameKo": "용두",
+      "nameEn": "Yongdu",
+      "district": "동대문구",
+      "lat": 37.5740737,
+      "lon": 127.0380657
+    },
+    {
+      "id": "용마산",
+      "nameKo": "용마산",
+      "nameEn": "Yongmasan",
+      "district": "중랑구",
+      "lat": 37.573993,
+      "lon": 127.0865798
+    },
+    {
+      "id": "용산",
+      "nameKo": "용산",
+      "nameEn": "Yongsan",
+      "district": "용산구",
+      "lat": 37.5299526,
+      "lon": 126.9648271
+    },
+    {
+      "id": "우장산",
+      "nameKo": "우장산",
+      "nameEn": "Ujangsan",
+      "district": "강서구",
+      "lat": 37.5488943,
+      "lon": 126.8363227
+    },
+    {
+      "id": "월계",
+      "nameKo": "월계",
+      "nameEn": "Wolgye",
+      "district": "노원구",
+      "lat": 37.6330633,
+      "lon": 127.0588653
+    },
+    {
+      "id": "월곡",
+      "nameKo": "월곡",
+      "nameEn": "Wolgok",
+      "district": "성북구",
+      "lat": 37.60192,
+      "lon": 127.0414554
+    },
+    {
+      "id": "월드컵경기장",
+      "nameKo": "월드컵경기장",
+      "nameEn": "World Cup Stadium",
+      "district": "마포구",
+      "lat": 37.5701918,
+      "lon": 126.8993179
+    },
+    {
+      "id": "을지로3가",
+      "nameKo": "을지로3가",
+      "nameEn": "Euljiro 3(sam)-ga",
+      "district": "종로구",
+      "lat": 37.5663363,
+      "lon": 126.9925305
+    },
+    {
+      "id": "을지로4가",
+      "nameKo": "을지로4가",
+      "nameEn": "Euljiro 4(sa)-ga",
+      "district": "종로구",
+      "lat": 37.5666425,
+      "lon": 126.9981685
+    },
+    {
+      "id": "을지로입구",
+      "nameKo": "을지로입구",
+      "nameEn": "Euljiro 1(il)-ga",
+      "district": "중구",
+      "lat": 37.5659494,
+      "lon": 126.9826171
+    },
+    {
+      "id": "응봉",
+      "nameKo": "응봉",
+      "nameEn": "Eungbong",
+      "district": "성동구",
+      "lat": 37.5502759,
+      "lon": 127.0347279
+    },
+    {
+      "id": "응암",
+      "nameKo": "응암",
+      "nameEn": "Eungam",
+      "district": "은평구",
+      "lat": 37.5984296,
+      "lon": 126.9155283
+    },
+    {
+      "id": "이대",
+      "nameKo": "이대",
+      "nameEn": "Ewha Womans Univ.",
+      "district": "서대문구",
+      "lat": 37.5567733,
+      "lon": 126.9458346
+    },
+    {
+      "id": "이수",
+      "nameKo": "이수",
+      "nameEn": "Isu",
+      "district": "동작구",
+      "lat": 37.4854491,
+      "lon": 126.9821095
+    },
+    {
+      "id": "이촌",
+      "nameKo": "이촌",
+      "nameEn": "Ichon",
+      "district": "용산구",
+      "lat": 37.5227123,
+      "lon": 126.9733678
+    },
+    {
+      "id": "이태원",
+      "nameKo": "이태원",
+      "nameEn": "Itaewon",
+      "district": "용산구",
+      "lat": 37.5345026,
+      "lon": 126.9943705
+    },
+    {
+      "id": "일원",
+      "nameKo": "일원",
+      "nameEn": "Ilwon",
+      "district": "강남구",
+      "lat": 37.4836919,
+      "lon": 127.0843766
+    },
+    {
+      "id": "자양",
+      "nameKo": "자양",
+      "nameEn": "Jayang",
+      "district": "광진구",
+      "lat": 37.5315323,
+      "lon": 127.0667418
+    },
+    {
+      "id": "잠실",
+      "nameKo": "잠실",
+      "nameEn": "Jamsil",
+      "district": "송파구",
+      "lat": 37.5132169,
+      "lon": 127.1001365
+    },
+    {
+      "id": "잠실(송파구청)",
+      "nameKo": "잠실(송파구청)",
+      "nameEn": "Jamsil(Songpa-gu Office)",
+      "district": "송파구",
+      "lat": 37.5129192,
+      "lon": 127.0989099
+    },
+    {
+      "id": "잠실나루",
+      "nameKo": "잠실나루",
+      "nameEn": "Jamsillaru",
+      "district": "송파구",
+      "lat": 37.520691,
+      "lon": 127.1038301
+    },
+    {
+      "id": "잠실새내",
+      "nameKo": "잠실새내",
+      "nameEn": "Jamsilsaenae",
+      "district": "송파구",
+      "lat": 37.5115881,
+      "lon": 127.085571
+    },
+    {
+      "id": "잠원",
+      "nameKo": "잠원",
+      "nameEn": "Jamwon",
+      "district": "서초구",
+      "lat": 37.5127513,
+      "lon": 127.0111504
+    },
+    {
+      "id": "장승배기",
+      "nameKo": "장승배기",
+      "nameEn": "Jangseungbaegi",
+      "district": "동작구",
+      "lat": 37.5050172,
+      "lon": 126.9392793
+    },
+    {
+      "id": "장지",
+      "nameKo": "장지",
+      "nameEn": "Jangji",
+      "district": "송파구",
+      "lat": 37.4788881,
+      "lon": 127.126067
+    },
+    {
+      "id": "장한평",
+      "nameKo": "장한평",
+      "nameEn": "Janghanpyeong",
+      "district": "동대문구",
+      "lat": 37.5614909,
+      "lon": 127.0645666
+    },
+    {
+      "id": "정릉",
+      "nameKo": "정릉",
+      "nameEn": "Jeongneung",
+      "district": "성북구",
+      "lat": 37.6028286,
+      "lon": 127.0133551
+    },
+    {
+      "id": "제기동",
+      "nameKo": "제기동",
+      "nameEn": "Jegi-dong",
+      "district": "동대문구",
+      "lat": 37.5783784,
+      "lon": 127.0344672
+    },
+    {
+      "id": "종각",
+      "nameKo": "종각",
+      "nameEn": "Jonggak",
+      "district": "종로구",
+      "lat": 37.5701745,
+      "lon": 126.9831831
+    },
+    {
+      "id": "종로3가",
+      "nameKo": "종로3가",
+      "nameEn": "Jongno 3(sam)-ga",
+      "district": "종로구",
+      "lat": 37.5704405,
+      "lon": 126.9923242
+    },
+    {
+      "id": "종로5가",
+      "nameKo": "종로5가",
+      "nameEn": "Jongno 5(o)-ga",
+      "district": "종로구",
+      "lat": 37.5709867,
+      "lon": 127.0020222
+    },
+    {
+      "id": "종합운동장",
+      "nameKo": "종합운동장",
+      "nameEn": "Sports Complex",
+      "district": "송파구",
+      "lat": 37.5110581,
+      "lon": 127.0737204
+    },
+    {
+      "id": "중계",
+      "nameKo": "중계",
+      "nameEn": "Junggye",
+      "district": "노원구",
+      "lat": 37.6455373,
+      "lon": 127.0638733
+    },
+    {
+      "id": "중곡",
+      "nameKo": "중곡",
+      "nameEn": "Junggok",
+      "district": "광진구",
+      "lat": 37.5663055,
+      "lon": 127.0845155
+    },
+    {
+      "id": "중랑",
+      "nameKo": "중랑",
+      "nameEn": "Jungnang",
+      "district": "중랑구",
+      "lat": 37.5949759,
+      "lon": 127.0763112
+    },
+    {
+      "id": "중앙보훈병원",
+      "nameKo": "중앙보훈병원",
+      "nameEn": "VHS Medical Center",
+      "district": "강동구",
+      "lat": 37.5282799,
+      "lon": 127.1482582
+    },
+    {
+      "id": "중화",
+      "nameKo": "중화",
+      "nameEn": "Junghwa",
+      "district": "중랑구",
+      "lat": 37.6016267,
+      "lon": 127.0795172
+    },
+    {
+      "id": "증미",
+      "nameKo": "증미",
+      "nameEn": "Jeungmi",
+      "district": "강서구",
+      "lat": 37.5575102,
+      "lon": 126.8618185
+    },
+    {
+      "id": "증산",
+      "nameKo": "증산",
+      "nameEn": "Jeungsan",
+      "district": "은평구",
+      "lat": 37.5841441,
+      "lon": 126.9099118
+    },
+    {
+      "id": "창동",
+      "nameKo": "창동",
+      "nameEn": "Chang-Dong",
+      "district": "도봉구",
+      "lat": 37.6525981,
+      "lon": 127.047978
+    },
+    {
+      "id": "창신",
+      "nameKo": "창신",
+      "nameEn": "Changsin",
+      "district": "성북구",
+      "lat": 37.5798042,
+      "lon": 127.0152468
+    },
+    {
+      "id": "천왕",
+      "nameKo": "천왕",
+      "nameEn": "Cheonwang",
+      "district": "구로구",
+      "lat": 37.4863668,
+      "lon": 126.8389218
+    },
+    {
+      "id": "천호",
+      "nameKo": "천호",
+      "nameEn": "Cheonho",
+      "district": "강동구",
+      "lat": 37.5385225,
+      "lon": 127.1234021
+    },
+    {
+      "id": "청계산입구",
+      "nameKo": "청계산입구",
+      "nameEn": "Cheonggyesan",
+      "district": "서초구",
+      "lat": 37.4483106,
+      "lon": 127.0546427
+    },
+    {
+      "id": "청구",
+      "nameKo": "청구",
+      "nameEn": "Cheonggu",
+      "district": "중구",
+      "lat": 37.5602311,
+      "lon": 127.0137776
+    },
+    {
+      "id": "청담",
+      "nameKo": "청담",
+      "nameEn": "Cheongdam",
+      "district": "강남구",
+      "lat": 37.5190912,
+      "lon": 127.0516784
+    },
+    {
+      "id": "청량리",
+      "nameKo": "청량리",
+      "nameEn": "Cheongnyangni",
+      "district": "동대문구",
+      "lat": 37.5799754,
+      "lon": 127.0446284
+    },
+    {
+      "id": "총신대입구 (이수)",
+      "nameKo": "총신대입구 (이수)",
+      "nameEn": "Chongsin Univ. (Isu)",
+      "district": "동작구",
+      "lat": 37.487026,
+      "lon": 126.9822046
+    },
+    {
+      "id": "총신대입구(이수)",
+      "nameKo": "총신대입구(이수)",
+      "nameEn": "Chongshin Univ. (Isu)",
+      "district": "동작구",
+      "lat": 37.48678,
+      "lon": 126.9822371
+    },
+    {
+      "id": "충무로",
+      "nameKo": "충무로",
+      "nameEn": "Chungmuro",
+      "district": "중구",
+      "lat": 37.5612019,
+      "lon": 126.9941091
+    },
+    {
+      "id": "충정로",
+      "nameKo": "충정로",
+      "nameEn": "Chungjeongno",
+      "district": "서대문구",
+      "lat": 37.5593715,
+      "lon": 126.9629108
+    },
+    {
+      "id": "충정로(경기대입구)",
+      "nameKo": "충정로(경기대입구)",
+      "nameEn": "Chungjeongno(Kyonggi University)",
+      "district": "서대문구",
+      "lat": 37.5593252,
+      "lon": 126.963698
+    },
+    {
+      "id": "태릉입구",
+      "nameKo": "태릉입구",
+      "nameEn": "Taereung",
+      "district": "노원구",
+      "lat": 37.6176924,
+      "lon": 127.0756723
+    },
+    {
+      "id": "하계",
+      "nameKo": "하계",
+      "nameEn": "Hagye",
+      "district": "노원구",
+      "lat": 37.6360179,
+      "lon": 127.068252
+    },
+    {
+      "id": "학동",
+      "nameKo": "학동",
+      "nameEn": "Hak-dong",
+      "district": "강남구",
+      "lat": 37.5139566,
+      "lon": 127.03075
+    },
+    {
+      "id": "학여울",
+      "nameKo": "학여울",
+      "nameEn": "Hangnyeoul",
+      "district": "강남구",
+      "lat": 37.4964975,
+      "lon": 127.0698841
+    },
+    {
+      "id": "한강진",
+      "nameKo": "한강진",
+      "nameEn": "Hangangjin",
+      "district": "용산구",
+      "lat": 37.5397964,
+      "lon": 127.0017506
+    },
+    {
+      "id": "한남",
+      "nameKo": "한남",
+      "nameEn": "Hannam",
+      "district": "용산구",
+      "lat": 37.5294452,
+      "lon": 127.0092424
+    },
+    {
+      "id": "한성대입구",
+      "nameKo": "한성대입구",
+      "nameEn": "Hansung University",
+      "district": "성북구",
+      "lat": 37.5885141,
+      "lon": 127.0059624
+    },
+    {
+      "id": "한성대입구(삼선교)",
+      "nameKo": "한성대입구(삼선교)",
+      "nameEn": "Hansung Univ. (Samseongyo)",
+      "district": "성북구",
+      "lat": 37.588201,
+      "lon": 127.0053156
+    },
+    {
+      "id": "한성백제",
+      "nameKo": "한성백제",
+      "nameEn": "Hanseong Baekje",
+      "district": "송파구",
+      "lat": 37.5166702,
+      "lon": 127.1162125
+    },
+    {
+      "id": "한양대",
+      "nameKo": "한양대",
+      "nameEn": "Hanyang Univ.",
+      "district": "성동구",
+      "lat": 37.5557271,
+      "lon": 127.0436642
+    },
+    {
+      "id": "한티",
+      "nameKo": "한티",
+      "nameEn": "Hanti",
+      "district": "강남구",
+      "lat": 37.4962709,
+      "lon": 127.0528661
+    },
+    {
+      "id": "합정",
+      "nameKo": "합정",
+      "nameEn": "Hapjeong",
+      "district": "마포구",
+      "lat": 37.5493558,
+      "lon": 126.9136561
+    },
+    {
+      "id": "행당",
+      "nameKo": "행당",
+      "nameEn": "Haengdang",
+      "district": "성동구",
+      "lat": 37.5576063,
+      "lon": 127.0299929
+    },
+    {
+      "id": "혜화",
+      "nameKo": "혜화",
+      "nameEn": "Hyehwa",
+      "district": "종로구",
+      "lat": 37.5821381,
+      "lon": 127.0019525
+    },
+    {
+      "id": "혜화(서울대학교병원)",
+      "nameKo": "혜화(서울대학교병원)",
+      "nameEn": "Hyehwa",
+      "district": "종로구",
+      "lat": 37.5821434,
+      "lon": 127.0019312
+    },
+    {
+      "id": "홍대입구",
+      "nameKo": "홍대입구",
+      "nameEn": "Hongik Univ.",
+      "district": "마포구",
+      "lat": 37.5573487,
+      "lon": 126.926908
+    },
+    {
+      "id": "홍제",
+      "nameKo": "홍제",
+      "nameEn": "Hongje",
+      "district": "서대문구",
+      "lat": 37.5886894,
+      "lon": 126.9442528
+    },
+    {
+      "id": "화계",
+      "nameKo": "화계",
+      "nameEn": "Hwagye",
+      "district": "강북구",
+      "lat": 37.6340274,
+      "lon": 127.0174887
+    },
+    {
+      "id": "화곡",
+      "nameKo": "화곡",
+      "nameEn": "Hwagok",
+      "district": "강서구",
+      "lat": 37.5416728,
+      "lon": 126.840397
+    },
+    {
+      "id": "화랑대",
+      "nameKo": "화랑대",
+      "nameEn": "Hwarangdae",
+      "district": "노원구",
+      "lat": 37.6197841,
+      "lon": 127.0837122
+    },
+    {
+      "id": "회기",
+      "nameKo": "회기",
+      "nameEn": "Hoegi",
+      "district": "동대문구",
+      "lat": 37.5894974,
+      "lon": 127.0576239
+    },
+    {
+      "id": "회현",
+      "nameKo": "회현",
+      "nameEn": "Hoehyeon",
+      "district": "중구",
+      "lat": 37.5586981,
+      "lon": 126.9784167
+    },
+    {
+      "id": "회현(남대문시장)",
+      "nameKo": "회현(남대문시장)",
+      "nameEn": "Hoehyeon (Namdaemun Market)",
+      "district": "중구",
+      "lat": 37.5587614,
+      "lon": 126.978436
+    },
+    {
+      "id": "효창공원앞",
+      "nameKo": "효창공원앞",
+      "nameEn": "Hyochang Park",
+      "district": "용산구",
+      "lat": 37.5393413,
+      "lon": 126.9613324
+    },
+    {
+      "id": "흑석",
+      "nameKo": "흑석",
+      "nameEn": "Heukseok",
+      "district": "동작구",
+      "lat": 37.5083823,
+      "lon": 126.9639489
+    }
+  ],
+  "edges": [
+    {
+      "a": "4.19민주묘지",
+      "b": "가오리"
+    },
+    {
+      "a": "4.19민주묘지",
+      "b": "솔밭공원"
+    },
+    {
+      "a": "Guro",
+      "b": "Sindorim"
+    },
+    {
+      "a": "Guro",
+      "b": "가산디지털단지"
+    },
+    {
+      "a": "Guro",
+      "b": "개봉"
+    },
+    {
+      "a": "Guro",
+      "b": "구일"
+    },
+    {
+      "a": "Sindorim",
+      "b": "Yeongdeungpo"
+    },
+    {
+      "a": "Sindorim",
+      "b": "대림(구로구청)"
+    },
+    {
+      "a": "Sindorim",
+      "b": "도림천"
+    },
+    {
+      "a": "Sindorim",
+      "b": "문래"
+    },
+    {
+      "a": "Yeongdeungpo",
+      "b": "금천구청"
+    },
+    {
+      "a": "Yeongdeungpo",
+      "b": "노량진"
+    },
+    {
+      "a": "Yeongdeungpo",
+      "b": "대방"
+    },
+    {
+      "a": "Yeongdeungpo",
+      "b": "서울역"
+    },
+    {
+      "a": "Yeongdeungpo",
+      "b": "신길"
+    },
+    {
+      "a": "가락시장",
+      "b": "경찰병원"
+    },
+    {
+      "a": "가락시장",
+      "b": "문정"
+    },
+    {
+      "a": "가락시장",
+      "b": "송파"
+    },
+    {
+      "a": "가락시장",
+      "b": "수서"
+    },
+    {
+      "a": "가산디지털단지",
+      "b": "광명사거리"
+    },
+    {
+      "a": "가산디지털단지",
+      "b": "금천구청"
+    },
+    {
+      "a": "가산디지털단지",
+      "b": "남구로"
+    },
+    {
+      "a": "가산디지털단지",
+      "b": "독산"
+    },
+    {
+      "a": "가양",
+      "b": "마곡나루"
+    },
+    {
+      "a": "가양",
+      "b": "양천향교"
+    },
+    {
+      "a": "가양",
+      "b": "염창"
+    },
+    {
+      "a": "가양",
+      "b": "증미"
+    },
+    {
+      "a": "가오리",
+      "b": "화계"
+    },
+    {
+      "a": "가좌",
+      "b": "디지털미디어시티"
+    },
+    {
+      "a": "가좌",
+      "b": "신촌"
+    },
+    {
+      "a": "가좌",
+      "b": "홍대입구"
+    },
+    {
+      "a": "강남",
+      "b": "교대"
+    },
+    {
+      "a": "강남",
+      "b": "교대(법원·검찰청)"
+    },
+    {
+      "a": "강남",
+      "b": "신논현"
+    },
+    {
+      "a": "강남",
+      "b": "양재"
+    },
+    {
+      "a": "강남",
+      "b": "역삼"
+    },
+    {
+      "a": "강남구청",
+      "b": "서울숲"
+    },
+    {
+      "a": "강남구청",
+      "b": "선정릉"
+    },
+    {
+      "a": "강남구청",
+      "b": "압구정로데오"
+    },
+    {
+      "a": "강남구청",
+      "b": "청담"
+    },
+    {
+      "a": "강남구청",
+      "b": "학동"
+    },
+    {
+      "a": "강동",
+      "b": "길동"
+    },
+    {
+      "a": "강동",
+      "b": "둔촌동"
+    },
+    {
+      "a": "강동",
+      "b": "천호"
+    },
+    {
+      "a": "강동구청",
+      "b": "몽촌토성"
+    },
+    {
+      "a": "강동구청",
+      "b": "천호"
+    },
+    {
+      "a": "강변",
+      "b": "구의"
+    },
+    {
+      "a": "강변",
+      "b": "잠실나루"
+    },
+    {
+      "a": "강변(동서울터미널)",
+      "b": "구의(광진구청)"
+    },
+    {
+      "a": "강변(동서울터미널)",
+      "b": "잠실나루"
+    },
+    {
+      "a": "강일",
+      "b": "상일동"
+    },
+    {
+      "a": "개롱",
+      "b": "거여"
+    },
+    {
+      "a": "개롱",
+      "b": "오금"
+    },
+    {
+      "a": "개봉",
+      "b": "구일"
+    },
+    {
+      "a": "개봉",
+      "b": "오류동"
+    },
+    {
+      "a": "개포동",
+      "b": "구룡"
+    },
+    {
+      "a": "개포동",
+      "b": "대모산입구"
+    },
+    {
+      "a": "개화",
+      "b": "김포공항"
+    },
+    {
+      "a": "개화산",
+      "b": "김포공항"
+    },
+    {
+      "a": "개화산",
+      "b": "방화"
+    },
+    {
+      "a": "거여",
+      "b": "마천"
+    },
+    {
+      "a": "건대입구",
+      "b": "구의"
+    },
+    {
+      "a": "건대입구",
+      "b": "구의(광진구청)"
+    },
+    {
+      "a": "건대입구",
+      "b": "성수"
+    },
+    {
+      "a": "건대입구",
+      "b": "어린이대공원"
+    },
+    {
+      "a": "건대입구",
+      "b": "자양"
+    },
+    {
+      "a": "경복궁",
+      "b": "독립문"
+    },
+    {
+      "a": "경복궁",
+      "b": "안국"
+    },
+    {
+      "a": "경찰병원",
+      "b": "오금"
+    },
+    {
+      "a": "고덕",
+      "b": "명일"
+    },
+    {
+      "a": "고덕",
+      "b": "상일동"
+    },
+    {
+      "a": "고려대",
+      "b": "안암"
+    },
+    {
+      "a": "고려대",
+      "b": "월곡"
+    },
+    {
+      "a": "고속터미널",
+      "b": "교대(법원·검찰청)"
+    },
+    {
+      "a": "고속터미널",
+      "b": "내방"
+    },
+    {
+      "a": "고속터미널",
+      "b": "동작"
+    },
+    {
+      "a": "고속터미널",
+      "b": "반포"
+    },
+    {
+      "a": "고속터미널",
+      "b": "사평"
+    },
+    {
+      "a": "고속터미널",
+      "b": "신논현"
+    },
+    {
+      "a": "고속터미널",
+      "b": "신반포"
+    },
+    {
+      "a": "고속터미널",
+      "b": "잠원"
+    },
+    {
+      "a": "공덕",
+      "b": "대흥"
+    },
+    {
+      "a": "공덕",
+      "b": "마곡나루"
+    },
+    {
+      "a": "공덕",
+      "b": "마포"
+    },
+    {
+      "a": "공덕",
+      "b": "서강대"
+    },
+    {
+      "a": "공덕",
+      "b": "서울역"
+    },
+    {
+      "a": "공덕",
+      "b": "애오개"
+    },
+    {
+      "a": "공덕",
+      "b": "효창공원앞"
+    },
+    {
+      "a": "공릉",
+      "b": "태릉입구"
+    },
+    {
+      "a": "공릉",
+      "b": "하계"
+    },
+    {
+      "a": "공항시장",
+      "b": "김포공항"
+    },
+    {
+      "a": "공항시장",
+      "b": "신방화"
+    },
+    {
+      "a": "관악산",
+      "b": "서울대벤처타운"
+    },
+    {
+      "a": "광나루",
+      "b": "아차산"
+    },
+    {
+      "a": "광나루",
+      "b": "천호"
+    },
+    {
+      "a": "광명사거리",
+      "b": "천왕"
+    },
+    {
+      "a": "광운대",
+      "b": "상봉"
+    },
+    {
+      "a": "광운대",
+      "b": "석계"
+    },
+    {
+      "a": "광운대",
+      "b": "월계"
+    },
+    {
+      "a": "광운대",
+      "b": "창동"
+    },
+    {
+      "a": "광화문",
+      "b": "서대문"
+    },
+    {
+      "a": "광화문",
+      "b": "종로3가"
+    },
+    {
+      "a": "광흥창",
+      "b": "대흥"
+    },
+    {
+      "a": "광흥창",
+      "b": "상수"
+    },
+    {
+      "a": "교대",
+      "b": "서초"
+    },
+    {
+      "a": "교대(법원·검찰청)",
+      "b": "남부터미널(예술의전당)"
+    },
+    {
+      "a": "교대(법원·검찰청)",
+      "b": "서초"
+    },
+    {
+      "a": "구로디지털단지",
+      "b": "대림(구로구청)"
+    },
+    {
+      "a": "구로디지털단지",
+      "b": "신대방"
+    },
+    {
+      "a": "구룡",
+      "b": "도곡"
+    },
+    {
+      "a": "구반포",
+      "b": "동작"
+    },
+    {
+      "a": "구반포",
+      "b": "신반포"
+    },
+    {
+      "a": "구산",
+      "b": "연신내"
+    },
+    {
+      "a": "구산",
+      "b": "응암"
+    },
+    {
+      "a": "구파발",
+      "b": "연신내"
+    },
+    {
+      "a": "국회의사당",
+      "b": "당산"
+    },
+    {
+      "a": "국회의사당",
+      "b": "여의도"
+    },
+    {
+      "a": "군자",
+      "b": "아차산"
+    },
+    {
+      "a": "군자",
+      "b": "어린이대공원"
+    },
+    {
+      "a": "군자",
+      "b": "장한평"
+    },
+    {
+      "a": "군자",
+      "b": "중곡"
+    },
+    {
+      "a": "굽은다리",
+      "b": "길동"
+    },
+    {
+      "a": "굽은다리",
+      "b": "명일"
+    },
+    {
+      "a": "금천구청",
+      "b": "독산"
+    },
+    {
+      "a": "금천구청",
+      "b": "석수"
+    },
+    {
+      "a": "금호",
+      "b": "약수"
+    },
+    {
+      "a": "금호",
+      "b": "옥수"
+    },
+    {
+      "a": "길음",
+      "b": "미아사거리"
+    },
+    {
+      "a": "길음",
+      "b": "성신여대입구"
+    },
+    {
+      "a": "김포공항",
+      "b": "마곡나루"
+    },
+    {
+      "a": "김포공항",
+      "b": "송정"
+    },
+    {
+      "a": "까치산",
+      "b": "신정"
+    },
+    {
+      "a": "까치산",
+      "b": "신정네거리"
+    },
+    {
+      "a": "까치산",
+      "b": "화곡"
+    },
+    {
+      "a": "낙성대",
+      "b": "사당"
+    },
+    {
+      "a": "낙성대",
+      "b": "서울대입구"
+    },
+    {
+      "a": "낙성대",
+      "b": "서울대입구(관악구청)"
+    },
+    {
+      "a": "남구로",
+      "b": "대림"
+    },
+    {
+      "a": "남부터미널(예술의전당)",
+      "b": "양재"
+    },
+    {
+      "a": "남성",
+      "b": "숭실대입구"
+    },
+    {
+      "a": "남성",
+      "b": "이수"
+    },
+    {
+      "a": "남영",
+      "b": "서울역"
+    },
+    {
+      "a": "남영",
+      "b": "용산"
+    },
+    {
+      "a": "남태령",
+      "b": "사당"
+    },
+    {
+      "a": "내방",
+      "b": "이수"
+    },
+    {
+      "a": "노들",
+      "b": "노량진"
+    },
+    {
+      "a": "노들",
+      "b": "흑석"
+    },
+    {
+      "a": "노량진",
+      "b": "대방"
+    },
+    {
+      "a": "노량진",
+      "b": "동작"
+    },
+    {
+      "a": "노량진",
+      "b": "샛강"
+    },
+    {
+      "a": "노량진",
+      "b": "여의도"
+    },
+    {
+      "a": "노량진",
+      "b": "용산"
+    },
+    {
+      "a": "노원",
+      "b": "마들"
+    },
+    {
+      "a": "노원",
+      "b": "상계"
+    },
+    {
+      "a": "노원",
+      "b": "중계"
+    },
+    {
+      "a": "노원",
+      "b": "창동"
+    },
+    {
+      "a": "녹번",
+      "b": "불광"
+    },
+    {
+      "a": "녹번",
+      "b": "홍제"
+    },
+    {
+      "a": "녹사평",
+      "b": "삼각지"
+    },
+    {
+      "a": "녹사평",
+      "b": "이태원"
+    },
+    {
+      "a": "녹천",
+      "b": "월계"
+    },
+    {
+      "a": "녹천",
+      "b": "창동"
+    },
+    {
+      "a": "논현",
+      "b": "반포"
+    },
+    {
+      "a": "논현",
+      "b": "신논현"
+    },
+    {
+      "a": "논현",
+      "b": "신사"
+    },
+    {
+      "a": "논현",
+      "b": "학동"
+    },
+    {
+      "a": "답십리",
+      "b": "마장"
+    },
+    {
+      "a": "답십리",
+      "b": "장한평"
+    },
+    {
+      "a": "당곡",
+      "b": "보라매병원"
+    },
+    {
+      "a": "당곡",
+      "b": "신림"
+    },
+    {
+      "a": "당산",
+      "b": "선유도"
+    },
+    {
+      "a": "당산",
+      "b": "여의도"
+    },
+    {
+      "a": "당산",
+      "b": "염창"
+    },
+    {
+      "a": "당산",
+      "b": "영등포구청"
+    },
+    {
+      "a": "당산",
+      "b": "합정"
+    },
+    {
+      "a": "대림",
+      "b": "신풍"
+    },
+    {
+      "a": "대모산입구",
+      "b": "수서"
+    },
+    {
+      "a": "대방",
+      "b": "샛강"
+    },
+    {
+      "a": "대방",
+      "b": "서울지방병무청"
+    },
+    {
+      "a": "대방",
+      "b": "신길"
+    },
+    {
+      "a": "대청",
+      "b": "일원"
+    },
+    {
+      "a": "대청",
+      "b": "학여울"
+    },
+    {
+      "a": "대치",
+      "b": "도곡"
+    },
+    {
+      "a": "대치",
+      "b": "학여울"
+    },
+    {
+      "a": "도곡",
+      "b": "매봉"
+    },
+    {
+      "a": "도곡",
+      "b": "한티"
+    },
+    {
+      "a": "도림천",
+      "b": "양천구청"
+    },
+    {
+      "a": "도봉",
+      "b": "도봉산"
+    },
+    {
+      "a": "도봉",
+      "b": "방학"
+    },
+    {
+      "a": "도봉산",
+      "b": "수락산"
+    },
+    {
+      "a": "도봉산",
+      "b": "창동"
+    },
+    {
+      "a": "독립문",
+      "b": "무악재"
+    },
+    {
+      "a": "독바위",
+      "b": "불광"
+    },
+    {
+      "a": "독바위",
+      "b": "연신내"
+    },
+    {
+      "a": "돌곶이",
+      "b": "상월곡"
+    },
+    {
+      "a": "돌곶이",
+      "b": "석계"
+    },
+    {
+      "a": "동대문",
+      "b": "동대문역사문화공원"
+    },
+    {
+      "a": "동대문",
+      "b": "동묘앞"
+    },
+    {
+      "a": "동대문",
+      "b": "종로5가"
+    },
+    {
+      "a": "동대문",
+      "b": "혜화"
+    },
+    {
+      "a": "동대문",
+      "b": "혜화(서울대학교병원)"
+    },
+    {
+      "a": "동대문역사문화공원",
+      "b": "신당"
+    },
+    {
+      "a": "동대문역사문화공원",
+      "b": "을지로4가"
+    },
+    {
+      "a": "동대문역사문화공원",
+      "b": "청구"
+    },
+    {
+      "a": "동대문역사문화공원",
+      "b": "충무로"
+    },
+    {
+      "a": "동대입구",
+      "b": "약수"
+    },
+    {
+      "a": "동대입구",
+      "b": "충무로"
+    },
+    {
+      "a": "동묘앞",
+      "b": "신당"
+    },
+    {
+      "a": "동묘앞",
+      "b": "신설동"
+    },
+    {
+      "a": "동묘앞",
+      "b": "창신"
+    },
+    {
+      "a": "동작",
+      "b": "이촌"
+    },
+    {
+      "a": "동작",
+      "b": "총신대입구 (이수)"
+    },
+    {
+      "a": "동작",
+      "b": "흑석"
+    },
+    {
+      "a": "둔촌동",
+      "b": "올림픽공원"
+    },
+    {
+      "a": "둔촌오륜",
+      "b": "올림픽공원"
+    },
+    {
+      "a": "둔촌오륜",
+      "b": "중앙보훈병원"
+    },
+    {
+      "a": "등촌",
+      "b": "염창"
+    },
+    {
+      "a": "등촌",
+      "b": "증미"
+    },
+    {
+      "a": "디지털미디어시티",
+      "b": "수색"
+    },
+    {
+      "a": "디지털미디어시티",
+      "b": "월드컵경기장"
+    },
+    {
+      "a": "디지털미디어시티",
+      "b": "증산"
+    },
+    {
+      "a": "뚝섬",
+      "b": "성수"
+    },
+    {
+      "a": "뚝섬",
+      "b": "한양대"
+    },
+    {
+      "a": "마곡",
+      "b": "발산"
+    },
+    {
+      "a": "마곡",
+      "b": "송정"
+    },
+    {
+      "a": "마곡나루",
+      "b": "신방화"
+    },
+    {
+      "a": "마곡나루",
+      "b": "양천향교"
+    },
+    {
+      "a": "마들",
+      "b": "수락산"
+    },
+    {
+      "a": "마장",
+      "b": "왕십리"
+    },
+    {
+      "a": "마포",
+      "b": "여의나루"
+    },
+    {
+      "a": "마포구청",
+      "b": "망원"
+    },
+    {
+      "a": "마포구청",
+      "b": "월드컵경기장"
+    },
+    {
+      "a": "망우",
+      "b": "상봉"
+    },
+    {
+      "a": "망우",
+      "b": "신내"
+    },
+    {
+      "a": "망우",
+      "b": "양원"
+    },
+    {
+      "a": "망원",
+      "b": "합정"
+    },
+    {
+      "a": "매봉",
+      "b": "양재"
+    },
+    {
+      "a": "먹골",
+      "b": "중화"
+    },
+    {
+      "a": "먹골",
+      "b": "태릉입구"
+    },
+    {
+      "a": "면목",
+      "b": "사가정"
+    },
+    {
+      "a": "면목",
+      "b": "상봉"
+    },
+    {
+      "a": "명동",
+      "b": "충무로"
+    },
+    {
+      "a": "명동",
+      "b": "회현"
+    },
+    {
+      "a": "명동",
+      "b": "회현(남대문시장)"
+    },
+    {
+      "a": "목동",
+      "b": "신정"
+    },
+    {
+      "a": "목동",
+      "b": "오목교"
+    },
+    {
+      "a": "몽촌토성",
+      "b": "잠실"
+    },
+    {
+      "a": "무악재",
+      "b": "홍제"
+    },
+    {
+      "a": "문래",
+      "b": "영등포구청"
+    },
+    {
+      "a": "문정",
+      "b": "장지"
+    },
+    {
+      "a": "미아",
+      "b": "미아사거리"
+    },
+    {
+      "a": "미아",
+      "b": "수유"
+    },
+    {
+      "a": "미아",
+      "b": "수유(강북구청)"
+    },
+    {
+      "a": "발산",
+      "b": "우장산"
+    },
+    {
+      "a": "방배",
+      "b": "사당"
+    },
+    {
+      "a": "방배",
+      "b": "서초"
+    },
+    {
+      "a": "방배 (백석예술대)",
+      "b": "사당"
+    },
+    {
+      "a": "방배 (백석예술대)",
+      "b": "서초"
+    },
+    {
+      "a": "방이",
+      "b": "오금"
+    },
+    {
+      "a": "방이",
+      "b": "올림픽공원"
+    },
+    {
+      "a": "방학",
+      "b": "창동"
+    },
+    {
+      "a": "버티고개",
+      "b": "약수"
+    },
+    {
+      "a": "버티고개",
+      "b": "한강진"
+    },
+    {
+      "a": "보라매",
+      "b": "보라매공원"
+    },
+    {
+      "a": "보라매",
+      "b": "서울지방병무청"
+    },
+    {
+      "a": "보라매",
+      "b": "신대방삼거리"
+    },
+    {
+      "a": "보라매",
+      "b": "신풍"
+    },
+    {
+      "a": "보라매공원",
+      "b": "보라매병원"
+    },
+    {
+      "a": "보문",
+      "b": "성신여대입구"
+    },
+    {
+      "a": "보문",
+      "b": "신설동"
+    },
+    {
+      "a": "보문",
+      "b": "안암"
+    },
+    {
+      "a": "보문",
+      "b": "창신"
+    },
+    {
+      "a": "복정",
+      "b": "수서"
+    },
+    {
+      "a": "복정",
+      "b": "장지"
+    },
+    {
+      "a": "봉은사",
+      "b": "삼성중앙"
+    },
+    {
+      "a": "봉은사",
+      "b": "선정릉"
+    },
+    {
+      "a": "봉은사",
+      "b": "종합운동장"
+    },
+    {
+      "a": "봉천",
+      "b": "서울대입구"
+    },
+    {
+      "a": "봉천",
+      "b": "서울대입구(관악구청)"
+    },
+    {
+      "a": "봉천",
+      "b": "신림"
+    },
+    {
+      "a": "봉화산",
+      "b": "신내"
+    },
+    {
+      "a": "봉화산",
+      "b": "화랑대"
+    },
+    {
+      "a": "북한산보국문",
+      "b": "솔샘"
+    },
+    {
+      "a": "북한산보국문",
+      "b": "정릉"
+    },
+    {
+      "a": "북한산우이",
+      "b": "솔밭공원"
+    },
+    {
+      "a": "불광",
+      "b": "역촌"
+    },
+    {
+      "a": "불광",
+      "b": "연신내"
+    },
+    {
+      "a": "불암산",
+      "b": "상계"
+    },
+    {
+      "a": "사가정",
+      "b": "용마산"
+    },
+    {
+      "a": "사당",
+      "b": "총신대입구 (이수)"
+    },
+    {
+      "a": "사평",
+      "b": "신논현"
+    },
+    {
+      "a": "삼각지",
+      "b": "숙대입구"
+    },
+    {
+      "a": "삼각지",
+      "b": "신용산"
+    },
+    {
+      "a": "삼각지",
+      "b": "효창공원앞"
+    },
+    {
+      "a": "삼성",
+      "b": "선릉"
+    },
+    {
+      "a": "삼성",
+      "b": "종합운동장"
+    },
+    {
+      "a": "삼성(무역센터)",
+      "b": "선릉"
+    },
+    {
+      "a": "삼성(무역센터)",
+      "b": "종합운동장"
+    },
+    {
+      "a": "삼성중앙",
+      "b": "선정릉"
+    },
+    {
+      "a": "삼양",
+      "b": "삼양사거리"
+    },
+    {
+      "a": "삼양",
+      "b": "솔샘"
+    },
+    {
+      "a": "삼양",
+      "b": "화계"
+    },
+    {
+      "a": "삼양사거리",
+      "b": "솔샘"
+    },
+    {
+      "a": "삼전",
+      "b": "석촌고분"
+    },
+    {
+      "a": "삼전",
+      "b": "종합운동장"
+    },
+    {
+      "a": "상도",
+      "b": "숭실대입구"
+    },
+    {
+      "a": "상도",
+      "b": "장승배기"
+    },
+    {
+      "a": "상봉",
+      "b": "중랑"
+    },
+    {
+      "a": "상봉",
+      "b": "중화"
+    },
+    {
+      "a": "상수",
+      "b": "합정"
+    },
+    {
+      "a": "상왕십리",
+      "b": "신당"
+    },
+    {
+      "a": "상왕십리",
+      "b": "왕십리"
+    },
+    {
+      "a": "상왕십리",
+      "b": "왕십리(성동구청)"
+    },
+    {
+      "a": "상월곡",
+      "b": "월곡"
+    },
+    {
+      "a": "새절",
+      "b": "응암"
+    },
+    {
+      "a": "새절",
+      "b": "증산"
+    },
+    {
+      "a": "샛강",
+      "b": "여의도"
+    },
+    {
+      "a": "서강대",
+      "b": "홍대입구"
+    },
+    {
+      "a": "서대문",
+      "b": "충정로"
+    },
+    {
+      "a": "서빙고",
+      "b": "이촌"
+    },
+    {
+      "a": "서빙고",
+      "b": "한남"
+    },
+    {
+      "a": "서울대벤처타운",
+      "b": "서원"
+    },
+    {
+      "a": "서울숲",
+      "b": "압구정로데오"
+    },
+    {
+      "a": "서울숲",
+      "b": "왕십리"
+    },
+    {
+      "a": "서울역",
+      "b": "숙대입구"
+    },
+    {
+      "a": "서울역",
+      "b": "시청"
+    },
+    {
+      "a": "서울역",
+      "b": "신촌"
+    },
+    {
+      "a": "서울역",
+      "b": "회현"
+    },
+    {
+      "a": "서울역",
+      "b": "회현(남대문시장)"
+    },
+    {
+      "a": "서원",
+      "b": "신림"
+    },
+    {
+      "a": "석계",
+      "b": "신이문"
+    },
+    {
+      "a": "석계",
+      "b": "태릉입구"
+    },
+    {
+      "a": "석촌",
+      "b": "석촌고분"
+    },
+    {
+      "a": "석촌",
+      "b": "송파"
+    },
+    {
+      "a": "석촌",
+      "b": "송파나루"
+    },
+    {
+      "a": "석촌",
+      "b": "올림픽공원"
+    },
+    {
+      "a": "석촌",
+      "b": "잠실"
+    },
+    {
+      "a": "석촌",
+      "b": "종합운동장"
+    },
+    {
+      "a": "선릉",
+      "b": "선정릉"
+    },
+    {
+      "a": "선릉",
+      "b": "역삼"
+    },
+    {
+      "a": "선릉",
+      "b": "한티"
+    },
+    {
+      "a": "선유도",
+      "b": "신목동"
+    },
+    {
+      "a": "선정릉",
+      "b": "신논현"
+    },
+    {
+      "a": "선정릉",
+      "b": "언주"
+    },
+    {
+      "a": "성수",
+      "b": "용답"
+    },
+    {
+      "a": "성신여대입구",
+      "b": "정릉"
+    },
+    {
+      "a": "성신여대입구",
+      "b": "한성대입구"
+    },
+    {
+      "a": "성신여대입구",
+      "b": "한성대입구(삼선교)"
+    },
+    {
+      "a": "송파나루",
+      "b": "한성백제"
+    },
+    {
+      "a": "수서",
+      "b": "일원"
+    },
+    {
+      "a": "수유",
+      "b": "쌍문"
+    },
+    {
+      "a": "수유(강북구청)",
+      "b": "쌍문"
+    },
+    {
+      "a": "시청",
+      "b": "을지로입구"
+    },
+    {
+      "a": "시청",
+      "b": "종각"
+    },
+    {
+      "a": "시청",
+      "b": "충정로"
+    },
+    {
+      "a": "시청",
+      "b": "충정로(경기대입구)"
+    },
+    {
+      "a": "신금호",
+      "b": "청구"
+    },
+    {
+      "a": "신금호",
+      "b": "행당"
+    },
+    {
+      "a": "신길",
+      "b": "여의도"
+    },
+    {
+      "a": "신길",
+      "b": "영등포시장"
+    },
+    {
+      "a": "신논현",
+      "b": "언주"
+    },
+    {
+      "a": "신답",
+      "b": "용답"
+    },
+    {
+      "a": "신답",
+      "b": "용두"
+    },
+    {
+      "a": "신당",
+      "b": "청구"
+    },
+    {
+      "a": "신대방",
+      "b": "신림"
+    },
+    {
+      "a": "신대방삼거리",
+      "b": "장승배기"
+    },
+    {
+      "a": "신목동",
+      "b": "염창"
+    },
+    {
+      "a": "신사",
+      "b": "압구정"
+    },
+    {
+      "a": "신사",
+      "b": "잠원"
+    },
+    {
+      "a": "신설동",
+      "b": "용두"
+    },
+    {
+      "a": "신설동",
+      "b": "제기동"
+    },
+    {
+      "a": "신용산",
+      "b": "이촌"
+    },
+    {
+      "a": "신이문",
+      "b": "외대앞"
+    },
+    {
+      "a": "신정네거리",
+      "b": "양천구청"
+    },
+    {
+      "a": "신촌",
+      "b": "이대"
+    },
+    {
+      "a": "신촌",
+      "b": "홍대입구"
+    },
+    {
+      "a": "신촌(지하)",
+      "b": "이대"
+    },
+    {
+      "a": "신촌(지하)",
+      "b": "홍대입구"
+    },
+    {
+      "a": "쌍문",
+      "b": "창동"
+    },
+    {
+      "a": "아현",
+      "b": "이대"
+    },
+    {
+      "a": "아현",
+      "b": "충정로"
+    },
+    {
+      "a": "아현(추계예술대)",
+      "b": "이대"
+    },
+    {
+      "a": "아현(추계예술대)",
+      "b": "충정로(경기대입구)"
+    },
+    {
+      "a": "안국",
+      "b": "종로3가"
+    },
+    {
+      "a": "암사",
+      "b": "암사역사공원"
+    },
+    {
+      "a": "암사",
+      "b": "천호"
+    },
+    {
+      "a": "압구정",
+      "b": "옥수"
+    },
+    {
+      "a": "애오개",
+      "b": "충정로"
+    },
+    {
+      "a": "약수",
+      "b": "청구"
+    },
+    {
+      "a": "양재",
+      "b": "양재시민의숲"
+    },
+    {
+      "a": "양재시민의숲",
+      "b": "청계산입구"
+    },
+    {
+      "a": "양평",
+      "b": "영등포구청"
+    },
+    {
+      "a": "양평",
+      "b": "오목교"
+    },
+    {
+      "a": "여의나루",
+      "b": "여의도"
+    },
+    {
+      "a": "역촌",
+      "b": "응암"
+    },
+    {
+      "a": "영등포구청",
+      "b": "영등포시장"
+    },
+    {
+      "a": "오류동",
+      "b": "온수"
+    },
+    {
+      "a": "옥수",
+      "b": "왕십리"
+    },
+    {
+      "a": "옥수",
+      "b": "응봉"
+    },
+    {
+      "a": "옥수",
+      "b": "한남"
+    },
+    {
+      "a": "온수",
+      "b": "천왕"
+    },
+    {
+      "a": "올림픽공원",
+      "b": "중앙보훈병원"
+    },
+    {
+      "a": "올림픽공원",
+      "b": "한성백제"
+    },
+    {
+      "a": "왕십리",
+      "b": "응봉"
+    },
+    {
+      "a": "왕십리",
+      "b": "청량리"
+    },
+    {
+      "a": "왕십리",
+      "b": "한양대"
+    },
+    {
+      "a": "왕십리",
+      "b": "행당"
+    },
+    {
+      "a": "왕십리(성동구청)",
+      "b": "한양대"
+    },
+    {
+      "a": "외대앞",
+      "b": "회기"
+    },
+    {
+      "a": "용마산",
+      "b": "중곡"
+    },
+    {
+      "a": "용산",
+      "b": "이촌"
+    },
+    {
+      "a": "용산",
+      "b": "효창공원앞"
+    },
+    {
+      "a": "우장산",
+      "b": "화곡"
+    },
+    {
+      "a": "을지로3가",
+      "b": "을지로4가"
+    },
+    {
+      "a": "을지로3가",
+      "b": "을지로입구"
+    },
+    {
+      "a": "을지로3가",
+      "b": "종로3가"
+    },
+    {
+      "a": "을지로3가",
+      "b": "충무로"
+    },
+    {
+      "a": "을지로4가",
+      "b": "종로3가"
+    },
+    {
+      "a": "이태원",
+      "b": "한강진"
+    },
+    {
+      "a": "자양",
+      "b": "청담"
+    },
+    {
+      "a": "잠실",
+      "b": "잠실나루"
+    },
+    {
+      "a": "잠실",
+      "b": "잠실새내"
+    },
+    {
+      "a": "잠실(송파구청)",
+      "b": "잠실나루"
+    },
+    {
+      "a": "잠실(송파구청)",
+      "b": "잠실새내"
+    },
+    {
+      "a": "잠실새내",
+      "b": "종합운동장"
+    },
+    {
+      "a": "제기동",
+      "b": "청량리"
+    },
+    {
+      "a": "종각",
+      "b": "종로3가"
+    },
+    {
+      "a": "종로3가",
+      "b": "종로5가"
+    },
+    {
+      "a": "중계",
+      "b": "하계"
+    },
+    {
+      "a": "중랑",
+      "b": "회기"
+    },
+    {
+      "a": "청량리",
+      "b": "회기"
+    },
+    {
+      "a": "태릉입구",
+      "b": "화랑대"
+    },
+    {
+      "a": "한성대입구",
+      "b": "혜화"
+    },
+    {
+      "a": "한성대입구(삼선교)",
+      "b": "혜화(서울대학교병원)"
+    },
+    {
+      "a": "합정",
+      "b": "홍대입구"
+    }
+  ],
+  "aliases": {
+    "구로": "Guro",
+    "신도림": "Sindorim",
+    "영등포": "Yeongdeungpo"
+  },
+  "source": "OSM BBBike Seoul.osm.pbf route relations (subway/light_rail/tram/train) consecutive stop members; stations filtered to KOSTAT 2013 Seoul polygons"
+}

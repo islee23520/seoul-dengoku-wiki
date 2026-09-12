@@ -115,7 +115,8 @@ namespace Janseon.Foundation.UI
             CampaignState campaign,
             BattleSimState battle,
             bool battlePaused = false,
-            Janseon.Core.Battle.Contracts.FormationSlot[] pendingFormation = null)
+            Janseon.Core.Battle.Contracts.FormationSlot[] pendingFormation = null,
+            RouteGraph graph = null)
         {
             if (presenter == null || !presenter.IsReady)
             {
@@ -123,7 +124,7 @@ namespace Janseon.Foundation.UI
             }
 
             GameplayUiSnapshot snapshot = GameplayUiSnapshot.FromCampaign(
-                campaign, battle, battlePaused, pendingFormation);
+                campaign, battle, battlePaused, pendingFormation, graph);
             presenter.ApplySnapshot(snapshot);
         }
 

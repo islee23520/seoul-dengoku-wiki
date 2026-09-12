@@ -113,7 +113,7 @@ namespace Janseon.Foundation.UI
 
         public void BeginNewRun(int seed, string campaignId)
         {
-            graph = RouteGraph.CreateYeongdeungpoSindorimGuro();
+            graph = RouteGraph.CreateSeoul();
             campaignLedger = new Ledger();
             battleLedger = new Ledger();
             book = new SettlementBook();
@@ -155,6 +155,7 @@ namespace Janseon.Foundation.UI
             presenter.BattlePlayPauseChosen += OnBattlePlayPause;
             presenter.BattleResetChosen += OnBattleReset;
             presenter.CardGeneralUseChosen += OnCardGeneralUse;
+            presenter.CharacterCardChosen += OnCharacterCard;
             presenter.FormationSwapFrontChosen += OnFormationSwapFront;
             presenter.EditFormationChosen += OnEditFormation;
             presenter.FormationEditConfirmChosen += OnFormationEditConfirm;
@@ -184,6 +185,7 @@ namespace Janseon.Foundation.UI
             presenter.BattlePlayPauseChosen -= OnBattlePlayPause;
             presenter.BattleResetChosen -= OnBattleReset;
             presenter.CardGeneralUseChosen -= OnCardGeneralUse;
+            presenter.CharacterCardChosen -= OnCharacterCard;
             presenter.FormationSwapFrontChosen -= OnFormationSwapFront;
             presenter.EditFormationChosen -= OnEditFormation;
             presenter.FormationEditConfirmChosen -= OnFormationEditConfirm;
@@ -390,6 +392,13 @@ namespace Janseon.Foundation.UI
             Publish();
         }
 
+        void OnCharacterCard(string cardId)
+        {
+            LastClickedAction = UiElementNames.BattleCard(cardId);
+            Targeting?.BeginCard(cardId);
+            Publish();
+        }
+
         void OnMobilityRegroup()
         {
             LastClickedAction = UiElementNames.MobilityRegroup;
@@ -513,7 +522,7 @@ namespace Janseon.Foundation.UI
 
         void Publish()
         {
-            host.ApplyCampaign(campaign, battle, battleDriver.Paused, pendingFormation);
+            host.ApplyCampaign(campaign, battle, battleDriver.Paused, pendingFormation, graph);
             if (campaign != null)
             {
                 voxelWorld?.SyncActor(campaign.Node);

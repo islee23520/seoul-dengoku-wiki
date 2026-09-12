@@ -59,6 +59,7 @@ namespace Janseon.Foundation.UI
 
         public bool ShowDepartAction { get; private set; }
         public bool ShowTravelActions { get; private set; }
+        public StationId[] TravelNeighbors { get; private set; } = System.Array.Empty<StationId>();
         public bool ShowFaceAction { get; private set; }
         public bool ShowEnterResolutionAction { get; private set; }
         public bool ShowSettleAction { get; private set; }
@@ -68,6 +69,8 @@ namespace Janseon.Foundation.UI
         public bool ShowEditFormationAction { get; private set; }
         public bool ShowCardMobilityRegroupAction { get; private set; }
         public bool CanUseGeneralCard { get; private set; }
+        public bool CanUseGuardCard { get; private set; }
+        public bool CanUsePincerCard { get; private set; }
         public bool CanUseMobilityCard { get; private set; }
         public bool ShowReturnAction { get; private set; }
 
@@ -75,7 +78,8 @@ namespace Janseon.Foundation.UI
             CampaignState campaign,
             BattleSimState battle,
             bool battlePaused = false,
-            FormationSlot[] pendingFormation = null)
+            FormationSlot[] pendingFormation = null,
+            RouteGraph graph = null)
         {
             var snap = new GameplayUiSnapshot { BattlePaused = battlePaused };
             if (campaign == null)
@@ -177,6 +181,10 @@ namespace Janseon.Foundation.UI
             {
                 snap.VisiblePanel = GameplayPanelId.RouteStage;
                 snap.ShowTravelActions = true;
+                if (graph != null)
+                {
+                    snap.TravelNeighbors = graph.Neighbors(campaign.Node);
+                }
                 snap.ShowFaceAction = !campaign.Node.Equals(campaign.HomeBase);
                 snap.NamedFlags[UiElementNames.RouteRail + ":visible"] = true;
                 snap.NamedFlags[UiElementNames.StageRail + ":visible"] = true;
@@ -198,7 +206,7 @@ namespace Janseon.Foundation.UI
                 snap.NamedFlags[UiElementNames.StageRail + ":visible"] = true;
             }
 
-            snap.Fingerprint = snap.ComputeFingerprint(campaign, battle);
+            snap.Fingerprint = snap.ComputeFingerprint(campaign, battle, graph);
             return snap;
         }
 
@@ -345,6 +353,14 @@ namespace Janseon.Foundation.UI
                         snap.ActingCardOwnerText = battle.PlayerCommanderId.ToString();
                         snap.CanUseGeneralCard = battle.Deployed && card.RechargeTicksLeft == 0;
                     }
+                    else if (card.Id == "guard-shieldwall")
+                    {
+                        snap.CanUseGuardCard = battle.Deployed && card.RechargeTicksLeft == 0;
+                    }
+                    else if (card.Id == "pincer-focus")
+                    {
+                        snap.CanUsePincerCard = battle.Deployed && card.RechargeTicksLeft == 0;
+                    }
                     else if (card.Id == "mobility-regroup")
                     {
                         snap.CanUseMobilityCard = battle.Deployed && card.RechargeTicksLeft == 0;
@@ -480,7 +496,7 @@ namespace Janseon.Foundation.UI
             return "station-" + value;
         }
 
-        string ComputeFingerprint(CampaignState campaign, BattleSimState battle)
+        string ComputeFingerprint(CampaignState campaign, BattleSimState battle, RouteGraph graph = null)
         {
             var sb = new StringBuilder(128);
             sb.Append("panel=").Append(((int)VisiblePanel).ToString(CultureInfo.InvariantCulture));
@@ -511,6 +527,20 @@ namespace Janseon.Foundation.UI
                 sb.Append(";bulletin=").Append(campaign.HasBulletin ? "1" : "0");
                 sb.Append(";choice=").Append(((int)campaign.Choice).ToString(CultureInfo.InvariantCulture));
                 sb.Append(";settled=").Append(campaign.SettlementApplied ? "1" : "0");
+            }
+
+            if (TravelNeighbors != null && TravelNeighbors.Length > 0)
+            {
+                sb.Append(";neighbors=");
+                for (var i = 0; i < TravelNeighbors.Length; i++)
+                {
+                    if (i > 0)
+                    {
+                        sb.Append(',');
+                    }
+
+                    sb.Append(TravelNeighbors[i].Value ?? string.Empty);
+                }
             }
 
             if (battle != null)

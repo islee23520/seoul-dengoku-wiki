@@ -99,6 +99,74 @@ namespace Janseon.Core
             return new RouteGraph(adjacency);
         }
 
+        /// <summary>
+        /// Full Seoul catalog: 25 districts, every catalog station, OSM route-relation edges.
+        /// Isolated stations are present with empty adjacency. Empty or mismatched arrays throw.
+        /// </summary>
+        public static RouteGraph CreateSeoul()
+        {
+            return CreateFromCatalog(
+                SeoulWorldGraphCatalog.StationIds,
+                SeoulWorldGraphCatalog.EdgeA,
+                SeoulWorldGraphCatalog.EdgeB);
+        }
+
+        public static RouteGraph CreateFromCatalog(string[] stationIds, string[] edgeA, string[] edgeB)
+        {
+            if (stationIds == null || stationIds.Length == 0)
+            {
+                throw new ArgumentException("station catalog is empty", nameof(stationIds));
+            }
+
+            if (edgeA == null || edgeB == null || edgeA.Length != edgeB.Length)
+            {
+                throw new ArgumentException("edge arrays mismatch");
+            }
+
+            var adjacency = new Dictionary<string, List<string>>(StringComparer.Ordinal);
+            for (var i = 0; i < stationIds.Length; i++)
+            {
+                var id = stationIds[i] ?? string.Empty;
+                if (id.Length == 0)
+                {
+                    throw new ArgumentException("station id is empty", nameof(stationIds));
+                }
+
+                if (!adjacency.ContainsKey(id))
+                {
+                    adjacency[id] = new List<string>();
+                }
+            }
+
+            for (var i = 0; i < edgeA.Length; i++)
+            {
+                var a = edgeA[i] ?? string.Empty;
+                var b = edgeB[i] ?? string.Empty;
+                if (a.Length == 0 || b.Length == 0)
+                {
+                    throw new ArgumentException("edge endpoint is empty");
+                }
+
+                if (!adjacency.ContainsKey(a) || !adjacency.ContainsKey(b))
+                {
+                    throw new ArgumentException("edge endpoint is not a catalog station");
+                }
+
+                AddUndirected(adjacency, a, b);
+            }
+
+            var keys = new List<string>(adjacency.Keys);
+            keys.Sort(StringComparer.Ordinal);
+            for (var i = 0; i < keys.Count; i++)
+            {
+                adjacency[keys[i]].Sort(StringComparer.Ordinal);
+            }
+
+            return new RouteGraph(adjacency);
+        }
+
+        public int StationCount => _adjacency.Count;
+
         static void AddUndirected(Dictionary<string, List<string>> adjacency, string a, string b)
         {
             if (!adjacency.TryGetValue(a, out var fromA))
@@ -141,6 +209,23 @@ namespace Janseon.Core
         {
             var key = id.Value ?? string.Empty;
             return _adjacency.ContainsKey(key);
+        }
+
+        public StationId[] Neighbors(StationId id)
+        {
+            var key = id.Value ?? string.Empty;
+            if (!_adjacency.TryGetValue(key, out var neighbors) || neighbors.Count == 0)
+            {
+                return Array.Empty<StationId>();
+            }
+
+            var result = new StationId[neighbors.Count];
+            for (var i = 0; i < neighbors.Count; i++)
+            {
+                result[i] = new StationId(neighbors[i]);
+            }
+
+            return result;
         }
 
         public bool AreAdjacent(StationId a, StationId b)
