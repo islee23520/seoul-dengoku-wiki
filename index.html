@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="잔선: 서울 서비스 레이어 — 하위 서비스 목록" />
-<title>잔선: 서울 · 서비스 레이어</title>
+<meta name="description" content="잔선: 서울 — 서비스 인덱스" />
+<title>잔선: 서울</title>
 <style>
 :root{
-  --bg-void:#0B111C; --bg-panel:#141C2A; --bg-panel-raised:#1B2536; --bg-well:#0E1622;
+  --bg-void:#0B111C; --bg-panel:#141C2A; --bg-well:#0E1622;
   --stroke-quiet:#2A3548; --stroke-focus:#C9A227; --text-primary:#E6EAF0;
   --text-secondary:#9AA6B2; --text-muted:#6B7684; --accent-line:#3D7EA6; --signal-live:#C9A227;
 }
@@ -31,6 +31,14 @@ a.card img{width:220px;height:124px;object-fit:cover;border:1px solid var(--stro
 a.card .t{font-size:17px;font-weight:600}
 a.card .u{font-family:ui-monospace,Menlo,monospace;font-size:12.5px;color:var(--accent-line);margin:2px 0 8px}
 a.card .d{font-size:13.5px;color:var(--text-secondary)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+a.tile{display:block;background:var(--bg-panel);border:1px solid var(--stroke-quiet);
+  border-radius:4px;padding:14px 16px;text-decoration:none;color:var(--text-primary)}
+a.tile:hover{border-color:var(--stroke-focus)}
+a.tile b{font-weight:600}
+a.tile .u{font-family:ui-monospace,Menlo,monospace;font-size:11.5px;color:var(--accent-line);
+  display:block;margin-top:2px}
+a.tile .d{font-size:12.5px;color:var(--text-muted);margin-top:4px}
 .chips{display:flex;gap:10px;flex-wrap:wrap}
 .chip{border:1px solid var(--stroke-quiet);border-radius:2px;padding:10px 14px;
   background:var(--bg-panel);font-size:13px;color:var(--text-muted);min-width:220px}
@@ -39,39 +47,47 @@ a.card .d{font-size:13.5px;color:var(--text-secondary)}
 footer{margin-top:56px;border-top:1px solid var(--stroke-quiet);padding-top:18px;
   font-size:12.5px;color:var(--text-muted);line-height:2}
 footer code{font-family:ui-monospace,Menlo,monospace}
-@media(max-width:640px){a.card{grid-template-columns:1fr}a.card img{width:100%;height:150px}}
+@media(max-width:640px){a.card{grid-template-columns:1fr}a.card img{width:100%;height:150px}.row{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <main>
-  <p class="kicker">JANSEON: SEOUL / SERVICES</p>
-  <h1>서비스 레이어 — 하위 서비스 목록</h1>
-  <p class="lead">이 저장소가 내보내는 대화형 HTML 표면의 입구다. 각 서비스는 자립형 단일 디렉터리로
-    아래 서브 경로에서 열린다. 등록과 제외는 <code>services/README.md</code> 계약을 따른다.</p>
+  <p class="kicker">JANSEON: SEOUL</p>
+  <h1>잔선: 서울 — 서비스 인덱스</h1>
+  <p class="lead">붕괴 이후 서울 지하철을 무대로 하는 그랜드 전략 SRPG. 이 주소는 저장소가
+    내보내는 대화형 표면의 입구다 — 각 서비스는 루트 바로 아래 서브 경로로 열린다.</p>
 
-  <h2>등록됨</h2>
+  <h2>서비스</h2>
   <a class="card" href="ui-layout-moodboard/">
     <img src="ui-layout-moodboard/images/frozen/formation-step1-final-1280x720.png"
       alt="진형 편집 화면 썸네일" loading="lazy" />
     <span>
       <span class="t">UI 레이아웃 무드보드</span>
-      <span class="u">/services/ui-layout-moodboard/</span>
+      <span class="u">/ui-layout-moodboard/</span>
       <span class="d">UI 레이아웃 설계를 영역 11개로 정리한 무드보드 — 시각 언어·앱 흐름·타이틀·캠페인·
         조우·전투 HUD·진형 편집·지휘관 카드·정산·공간 문법·구현 파이프라인. 동결 캡처·Unity 구현
         캡처·위키 다이어그램만으로 구성. 2026-09-11.</span>
     </span>
   </a>
 
+  <h2>문서 사이트 (VitePress)</h2>
+  <div class="row">
+    <a class="tile" href="design/"><b>설계</b><span class="u">/design/</span>
+      <span class="d">UI 파이프라인·아키텍처·시스템 설계 계약</span></a>
+    <a class="tile" href="world/"><b>세계관</b><span class="u">/world/</span>
+      <span class="d">세계 총람·십육국·인물 원장</span></a>
+    <a class="tile" href="rules/"><b>규칙</b><span class="u">/rules/</span>
+      <span class="d">전투·캠페인 규칙 계약</span></a>
+  </div>
+
   <h2>대기 — 소유자 큐레이션 중</h2>
   <div class="chips">
     <span class="chip"><b>system-design/</b>시스템 설계 인터랙티브 보고서 — 아직 프로덕션에 미포함</span>
-    <span class="chip"><b>docs-site/</b>VitePress 문서 사이트 — 루트 <code>/</code>, <code>/design/</code>,
-      <code>/world/</code>, <code>/rules/</code>에서 이미 서비스 중 (레이어 편입 대기)</span>
   </div>
 
   <footer>
     등록 기준 — 자립형 index.html · 실제 산출물만 · 금지 공개 용어 기준은 위키 빌더와 동일 ·
-    patina 오프라인 게이트 통과. 규약 전문은 저장소 <code>services/README.md</code>.
+    patina 오프라인 게이트 통과. 규약 전문은 저장소 <code>SERVICES.md</code>.
   </footer>
 </main>
 </body>
