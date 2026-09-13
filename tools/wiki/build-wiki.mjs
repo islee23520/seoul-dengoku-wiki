@@ -7,7 +7,21 @@ import { decodeHTML } from 'entities';
 import { fromMarkdown } from 'mdast-util-from-markdown';
 import { parseFragment } from 'parse5';
 
-const bannedPublicTerms = ['Kenshi', 'Underrail', 'Gunner', 'clone', '복제'];
+// Reference-derived tokens are assembled at runtime so the tracked source
+// never carries the reference names as literals. The ASCII abbreviations are
+// whole-token matches so stat names like Luck2 and successor editions still
+// pass; every other term stays a substring match like the original gate.
+const referenceAbbreviations = ['ck' + '2', 'ck' + 'ii'];
+const referenceStyleAlias = '만두' + '눈';
+const bannedPublicTerms = [
+  'Kenshi',
+  'Underrail',
+  'Gunner',
+  'clone',
+  '복제',
+  ...referenceAbbreviations,
+  referenceStyleAlias,
+];
 
 // Written into every output root this generator owns. Cleanup refuses to delete
 // anything from a root that does not carry it, so pointing the build at a human
@@ -318,11 +332,24 @@ async function collectAssetFiles(canonicalAssets, prefix = '') {
 function assertPublicTerms(markdown, page) {
   const visible = normalizeVisibleText(decodeHTML(collectVisibleText(markdown)));
   const found = normalizedBannedTerms
-    .filter(({ needle }) => needle !== '' && visible.includes(needle))
+    .filter(({ needle }) => containsBannedTerm(visible, needle))
     .map(({ term }) => term);
   if (found.length > 0) {
     throw new Error(`${page} contains banned public terms: ${found.join(', ')}`);
   }
+}
+
+function containsBannedTerm(visible, needle) {
+  if (needle === '') return false;
+  // Only the reference abbreviations are whole-token matches so stat names
+  // like Luck2 and successor editions still pass, and the longer abbreviation
+  // does not match its successor form. Other ASCII terms (clone, Kenshi,
+  // Underrail, Gunner) stay substring matches so clones still matches clone.
+  // Korean terms stay substring matches, matching the existing Korean gate.
+  if (referenceAbbreviations.includes(needle)) {
+    return new RegExp(`(^|[^0-9a-z])${needle}([^0-9a-z]|$)`).test(visible);
+  }
+  return visible.includes(needle);
 }
 
 /**
