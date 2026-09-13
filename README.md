@@ -6,7 +6,9 @@
 
 ## 현재 상태
 
-2026-09-11 기준입니다. 지금 모듈은 `Unity POC 통합 코어 루프`입니다.
+2026-09-14 기준입니다. 지금 모듈은 `Unity POC 통합 코어 루프`입니다. Unity 쪽은 코어와 PlayMode 검증까지이며, 생성 아트 연결과 최종 수용 게이트는 열려 있습니다.
+
+브라우저에서 코어 루프를 직접 돌리는 웹 POC는 [`play/`](play/)입니다. 거점 → 427동 목적지 → 조우(협상·우회·전투) → 진형 → 실시간 카드 전투 → 정산 한 번 → 귀환. 주소는 `https://seoul-kenshi.vercel.app/play/`입니다. 이동 비용은 직선 거리 웹 규칙이고 Unity 코어 전체가 아닙니다. PR [#90](https://github.com/islee23520/seoul-kenshi/pull/90)으로 main에 들어왔습니다.
 
 들어온 구현:
 
@@ -17,6 +19,7 @@
 - 화면: uGUI(Canvas)+TMP ([#59](https://github.com/islee23520/seoul-kenshi/issues/59)). 제품 경로에 UI Toolkit 없음
 - Area 1 데이터 코어(ScriptableObject + VContainer) ([#75](https://github.com/islee23520/seoul-kenshi/issues/75))
 - 진형 편집 PlayMode 경로 ([#76](https://github.com/islee23520/seoul-kenshi/issues/76))
+- 웹 코어 루프 POC: `play/` (2026-09-14, [#90](https://github.com/islee23520/seoul-kenshi/pull/90))
 
 남은 열린 이슈:
 

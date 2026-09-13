@@ -20,6 +20,7 @@
 
 - Foundation 기반: Bootstrap App scope/FSM, 배타적 화면 lease, VContainer 정적 계약, 아키텍처 게이트
 - 코어 루프(ToDo 5–12): 결정론 Core ID·tick·명령·RNG 스트림·원장 해시, 영등포–신도림–구로 세 역 노선, 교섭·우회를 포함한 여섯 단계 캠페인, 30Hz 실시간 진형·카드 전투(`rtfc-owner-cards-v2`), 정확히 한 번 정산, MainTitle 포함 uGUI 화면 — batchmode PlayMode로 동일 seed 재현·중복 정산 거부 검증
+- 웹 코어 루프 POC(`play/`, 2026-09-14, PR #90): 영등포 거점에서 서울 427동을 고르고 조우·진형·실시간 카드 전투·정산 한 번·귀환까지 브라우저에서 조작한다. 캠페인 루프 설계를 손으로 확인하는 축소판이며 Unity 모듈 완료가 아니다. 이동은 직선 거리 웹 규칙이다
 - 생성 아트 기반: 역사 소품 6종 source-bound BOM 승격·런타임 연결, 3역할(탐사원·의무원·순찰대) 캐릭터 승격, UI kit 9종 후보(시각 수용 대기), TRELLIS v1 옵션 호스트 계약 고정
 - 세계관·인물 원본: 국가별 명부(Cast-State-01–16, 412인)와 관계 원장, 적대 집단 G01–G27 게시, 서사 배치 B001–B047, ISO 세계·가문·적대 도표, 몬스터 배치 원장 M001–M042, World-Narrative-Atlas 통합
 - 공개 Wiki: docs/game-logic 원본의 자동 생성 미러가 원본 커밋과 동기(소스 페이지 188, 미게시 조각은 표로만 추적)
