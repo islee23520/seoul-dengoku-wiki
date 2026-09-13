@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101d25">
+  <meta name="description" content="서울의 다음 지역을 고르고, 협상하거나 진형과 카드로 싸우며 거점으로 돌아오는 플레이 가능한 잔선 웹 POC.">
+  <title>잔선 — 다음 역까지</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%23101d25'/%3E%3Cpath d='M12 12h24v24H12zM12 24h24M24 12v24' stroke='%23c5daac' fill='none' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="world-data.js"></script>
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="../" aria-label="서울켄시 서비스 홈"><span class="brand-symbol" aria-hidden="true">井</span><span>잔선<small>SEOUL · PLAYABLE POC</small></span></a>
+    <div id="resources" class="resources" aria-label="원정 자원"></div>
+    <div class="header-actions"><button id="rules" class="quiet" type="button">플레이 방법</button><button id="reset-game" class="quiet" type="button">새 게임</button></div>
+  </header>
+  <main>
+    <section class="intro" id="intro">
+      <div class="intro-copy"><p class="eyebrow"><span class="signal-dot"></span> 영등포 거점 · 첫 원정</p><h1>다음 역까지,<br>버틸 수 있을까.</h1><p>물자는 줄고 길은 막혔다. 무너진 세계의 잔해는 이제 숭배의 대상이 되었고, 노선마다 다른 신앙과 문화가 부딪힌다. 세 사람의 분대를 이끌고 서울로 나간다.<br class="wide-only">협상할지, 돌아갈지, 싸울지. 당신의 선택이 다음 원정에 남는다.</p><button id="start-game" type="button" class="primary">분대와 원정 준비 <span aria-hidden="true">→</span></button><span class="session-note">설치 없이 플레이 · 한 원정 약 2분</span></div>
+      <div class="briefing"><p class="eyebrow">오늘의 임무</p><h2>나가서, 해결하고,<br>살아서 돌아온다.</h2><ol><li><b>01</b><div>지역을 고른다<small>427개 동, 서로 다른 장소와 위험</small></div></li><li><b>02</b><div>막힌 길을 해결한다<small>잔해를 지키는 공동체와 협상 · 우회 · 전투</small></div></li><li><b>03</b><div>결과를 가지고 돌아온다<small>물자 · 평판 · 분대 체력이 이어진다</small></div></li></ol></div>
+    </section>
+    <nav id="flow" class="flow" aria-label="플레이 진행 단계"></nav>
+    <div id="error" class="error" role="alert" hidden></div>
+    <div class="game-layout">
+      <section class="world-panel" id="world-panel">
+        <div class="panel-title"><div><p class="eyebrow">CAMPAIGN MAP</p><h2>서울, 당신의 다음 목적지</h2></div><span class="data-tag">25구 / 427동</span></div>
+        <div class="map-controls"><label><span class="sr-only">구 선택</span><select id="district-filter"><option value="">서울 전체</option></select></label><label class="search-field"><span aria-hidden="true">⌕</span><input id="region-search" type="search" placeholder="동 이름 검색…" aria-label="동 이름 검색" autocomplete="off"></label><button id="clear-search" class="quiet" type="button">초기화</button></div>
+        <div class="map-wrap"><svg id="world-map" viewBox="0 0 760 610" role="img" aria-label="서울 427개 동의 실제 지역 경계 지도"></svg><div id="map-hint" class="map-hint">밝은 지역을 선택해 원정 비용을 확인하세요.</div><div class="map-legend"><span><i class="legend-home"></i>거점</span><span><i class="legend-dest"></i>목적지</span><span>점선은 실제 이동 경로가 아닙니다.</span></div></div>
+        <div class="destinations"><div class="destination-heading"><h3 id="destinations-title">가까운 곳부터 시작해 보세요</h3><span id="region-count"></span></div><div id="region-list" class="region-list"></div></div>
+      </section>
+      <section class="battle-panel" id="battle-panel" hidden>
+        <div class="panel-title"><div><p class="eyebrow">TACTICAL ENCOUNTER</p><h2 id="battle-title">진형을 정하고 전투에 대비하세요</h2></div><span id="battle-clock" class="data-tag">00:00</span></div>
+        <div class="battle-toolbar"><span><i class="ally-dot"></i>우리 분대</span><span><i class="enemy-dot"></i>길을 막은 적</span><span id="battle-energy"></span></div>
+        <div class="arena-wrap"><canvas id="arena" width="1200" height="750" aria-label="12 곱하기 8 격자의 실시간 전투장"></canvas><div id="arena-message"></div></div>
+        <div id="formation-editor" class="formation-editor"></div>
+        <div id="battle-controls" class="battle-controls"></div>
+        <div id="cards" class="cards"></div>
+      </section>
+      <aside class="command-panel">
+        <section id="situation" class="situation"></section>
+        <section class="squad-section"><div class="section-label"><h3>당신의 분대</h3><span>3인 소규모 원정대</span></div><div id="squad"></div></section>
+        <section class="log-section"><div class="section-label"><h3>원정 기록</h3><span id="log-count"></span></div><ol id="event-log" aria-live="polite" aria-relevant="additions"></ol></section>
+      </aside>
+    </div>
+    <footer><span>직접 해보는 게임 코어 루프 · 웹 체험 규칙</span><a href="../system-design/regions/">지역 설정 총람 ↗</a><a href="../system-design/">시스템 구조 ↗</a><span>지도 기준 2026-07-01 · 자료 확인 2026-09-12</span></footer>
+  </main>
+  <dialog id="rules-dialog"><form method="dialog"><button class="dialog-close quiet" aria-label="설명 닫기">닫기 ×</button></form><p class="eyebrow">HOW TO PLAY</p><h2>선택이 다음 원정에 남는다</h2><ol class="instructions"><li><b>준비:</b> 거점에서 분대 체력을 회복하고 목적지를 선택하세요. 멀수록 원정 물자가 더 필요합니다.</li><li><b>조우:</b> 비용과 성공 확률을 보고 협상하거나, 대가를 치르고 우회하거나, 전투를 선택합니다.</li><li><b>전투:</b> 전투 전 3×3 진형을 바꾸고 시작하세요. 병사는 자동으로 이동·공격합니다. 당신은 일시정지와 소유 카드로 개입합니다.</li><li><b>정산:</b> 결과는 정산을 눌러야 적용됩니다. 한 결과를 두 번 받을 수 없습니다. 거점에 돌아오면 줄어든 체력과 물자가 다음 원정으로 이어집니다.</li></ol><div class="rules-note"><h3>이 POC의 범위</h3><p>실제 서울 427개 동의 경계와 지역 설정을 사용합니다. 이동 비용은 직선 거리에서 유도한 <b>웹용 추상 원정</b>이며 현실 철도 운행이나 실제 보행 경로가 아닙니다. 위험도는 지형을 바탕으로 정한 체험용 값입니다.</p><p>전투는 30Hz의 시드 기반 웹 모델입니다. Unity 코어 전체 이식, 모든 역의 내부 공간, 경제·16국 시뮬레이션의 완성을 뜻하지 않습니다. 진행은 현재 브라우저 세션에만 유지됩니다.</p><p>경계: SGIS / vuski-admdongkor · 지역 원자료: © OpenStreetMap contributors. 캐릭터·분대 역할과 조우는 게임을 위한 창작입니다.</p></div></dialog>
+</body>
+</html>
