@@ -158,6 +158,9 @@ await testCase('banned clone wording still matches clones', async () => {
 const REF_ABBREV = 'ck' + '2';
 const REF_ABBREV_LONG = 'ck' + 'ii';
 const REF_STYLE_ALIAS = '만두' + '눈';
+const SUCCESSOR_EN = 'Crusader ' + 'Kings ' + 'III';
+const SUCCESSOR_KO = '크루세이더 ' + '킹즈 3';
+const SUCCESSOR_TOKEN = 'CK' + '3';
 
 await testCase('banned prose is rejected (reference abbreviation)', async () => {
   await expectBannedVisibleText('banned-ref-abbrev', `# 나쁨\n\n${REF_ABBREV.toUpperCase()} portraits.\n`, 'reference abbreviation wording must be rejected');
@@ -191,18 +194,18 @@ await testCase('malformed reference tokens are still inspected', async () => {
 await testCase('successor-edition names and stat tables are not the reference abbreviation', async () => {
   await expectAcceptedVisibleText(
     'successor-korean',
-    '# 제목\n\n크루세이더 킹즈 3 참조.\n',
-    'the reference abbreviation must not match 크루세이더 킹즈 3',
+    `# 제목\n\n${SUCCESSOR_KO} 참조.\n`,
+    `the reference abbreviation must not match ${SUCCESSOR_KO}`,
   );
   await expectAcceptedVisibleText(
     'successor-english',
-    '# 제목\n\nCrusader Kings III reference.\n',
-    'the reference abbreviation must not match Crusader Kings III',
+    `# 제목\n\n${SUCCESSOR_EN} reference.\n`,
+    `the reference abbreviation must not match ${SUCCESSOR_EN}`,
   );
   await expectAcceptedVisibleText(
     'successor-token',
-    '# 제목\n\nCK3 인물 중심 대전략.\n',
-    'the reference abbreviation must not match CK3',
+    `# 제목\n\n${SUCCESSOR_TOKEN} 인물 중심 대전략.\n`,
+    `the reference abbreviation must not match ${SUCCESSOR_TOKEN}`,
   );
   await expectAcceptedVisibleText(
     'luck2-stat-table',
