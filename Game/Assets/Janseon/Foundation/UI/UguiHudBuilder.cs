@@ -105,11 +105,20 @@ namespace Janseon.Foundation.UI
             HudButton(route, UiElementNames.ActionFaceEncounter, "조우");
             HudButton(route, UiElementNames.ActionEnterResolution, "해결 진입");
             Label(route, UiElementNames.HubOvernightCopy, "임시 잠자리 · 영등포 대합실 하룻밤");
+            Label(route, UiElementNames.RelationsHeading, "관계 — 정산 회복 · 인접 협공에 반영");
+            Label(route, UiElementNames.RelationsRowExplorerMedic, "탐험가 ↔ 의무병 ●●○");
+            Label(route, UiElementNames.RelationsRowExplorerPatrol, "탐험가 ↔ 순찰대 ●○○");
+            Label(route, UiElementNames.RelationsRowMedicPatrol, "의무병 ↔ 순찰대 ○○○");
             RectTransform bulletin = Panel(root, UiElementNames.HubBulletinPanel,
                 new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(-180f, 12f), new Vector2(180f, 140f));
             Label(bulletin, "hub-bulletin-heading", "영등포 B1 게시판");
             Label(bulletin, "hub-bulletin-copy", "역내 의뢰와 수리 공지를 확인한다.");
             Label(route, UiElementNames.MissionConsole, "임무 · 신도림 B2 보급선 확보 | 실패 시 보급 -10");
+            Label(route, UiElementNames.TravelDetailHeading, "이동 — 신도림 B2 승강장");
+            Label(route, UiElementNames.TravelPath, "경로 — B1 계단 → B2 · 반나절");
+            Label(route, UiElementNames.TravelCost, "비용 — 보급 -2");
+            Label(route, UiElementNames.TravelForecast, "예상 조우 — 순찰대 · 불확실");
+            Label(route, UiElementNames.TravelState, "B2 상태 — 침수 40%");
             Label(route, "encounter-context", "");
 
             RectTransform dataPanel = Panel(root, UiElementNames.DataContractPanel,
@@ -129,6 +138,14 @@ namespace Janseon.Foundation.UI
             dataBody.gameObject.SetActive(false);
             UnityEngine.UI.Button disclosureButton = disclosure.GetComponent<UnityEngine.UI.Button>();
             disclosureButton.onClick.AddListener(() => dataBody.gameObject.SetActive(!dataBody.gameObject.activeSelf));
+
+            // Campaign-only S-map territory panel (HTML POC §5). Hidden during battle.
+            RectTransform territory = Panel(root, UiElementNames.TerritoryPanel,
+                new Vector2(0.72f, 1f), new Vector2(1f, 1f), new Vector2(8f, -400f), new Vector2(-12f, -210f));
+            Label(territory, UiElementNames.TerritoryHeading, "영토 · 관계 · 통행권", 13);
+            Label(territory, UiElementNames.TerritoryRowYeongdeungpo, "영등포 — 본거지 · 아군", 12);
+            Label(territory, UiElementNames.TerritoryRowSindorim, "신도림 — 인접 · 통행 협상", 12);
+            Label(territory, UiElementNames.TerritoryRowGuro, "대림 — 미개통 · B2 확보 후 개통", 12);
 
             RectTransform encounter = Panel(root, UiElementNames.EncounterChoices, new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(-190f, -110f), new Vector2(190f, 130f));
             Label(encounter, "encounter-heading", "조우 선택");
@@ -200,13 +217,7 @@ namespace Janseon.Foundation.UI
         static readonly Color ArtFill = new Color(0.078f, 0.169f, 0.208f, 1f);
         static readonly Color VeilFill = new Color(0.012f, 0.035f, 0.063f, 0.737f);
 
-        static readonly string[] CharacterOfferingIds =
-        {
-            "guard-shieldwall",
-            "encourage-morale",
-            "pincer-focus",
-            "mobility-regroup",
-        };
+        static readonly string[] CharacterOfferingIds = UiElementNames.CharacterOfferingIds;
 
         static readonly string[] CharacterOfferingTitles =
         {
@@ -576,6 +587,8 @@ namespace Janseon.Foundation.UI
             HudButton(roster, UiElementNames.EditFormation, "선택한 진형 배치");
             HudButton(roster, UiElementNames.BattleReset, "전투 초기화");
             Label(roster, UiElementNames.CardGeneralRecharge, "재충전 0 tick");
+            HudButton(roster, UiElementNames.CardGeneralUse, "사기 고무 사용");
+            HudButton(roster, UiElementNames.MobilityRegroup, "기동 재집결");
             TmpSizedButton(roster, UiElementNames.BattleStrongholdSwitch, "거점 카드", 148f, TargetingCancelSize);
 
             RectTransform cardTray = Box(dock, UiElementNames.BattleCardTray, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero,

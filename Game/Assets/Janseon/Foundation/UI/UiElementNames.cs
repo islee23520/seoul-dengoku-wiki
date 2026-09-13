@@ -128,6 +128,23 @@ namespace Janseon.Foundation.UI
         public const string DeployPanel = "deploy-panel";
         public const string DeployHeading = "deploy-heading";
 
+        // Campaign-only chrome: HTML POC hub relations / territory / travel detail.
+        // Battle stays isometric; none of these may move under the battle HUD.
+        public const string TerritoryPanel = "territory-panel";
+        public const string TerritoryHeading = "territory-heading";
+        public const string TerritoryRowYeongdeungpo = "territory-row-Yeongdeungpo";
+        public const string TerritoryRowSindorim = "territory-row-Sindorim";
+        public const string TerritoryRowGuro = "territory-row-Guro";
+        public const string RelationsHeading = "relations-heading";
+        public const string RelationsRowExplorerMedic = "relations-row-explorer-medic";
+        public const string RelationsRowExplorerPatrol = "relations-row-explorer-patrol";
+        public const string RelationsRowMedicPatrol = "relations-row-medic-patrol";
+        public const string TravelDetailHeading = "travel-detail-heading";
+        public const string TravelPath = "travel-path";
+        public const string TravelCost = "travel-cost";
+        public const string TravelForecast = "travel-forecast";
+        public const string TravelState = "travel-state";
+
         public const string DataContractPanel = "data-contract-panel";
         public const string DataContentVersion = "data-content-version";
         public const string DataContentCounts = "data-content-counts";
@@ -136,6 +153,16 @@ namespace Janseon.Foundation.UI
         public static string DeployToggle(int rosterIndex) => "deploy-toggle-" + rosterIndex;
 
         public static string BattleCard(string cardId) => "battle-card-" + cardId;
+
+        // Shared card offering selectors (bf615e4 accidentally moved this private and left
+        // GameplayPresenter referencing it; centralized here again).
+        public static readonly string[] CharacterOfferingIds =
+        {
+            "guard-shieldwall",
+            "encourage-morale",
+            "pincer-focus",
+            "mobility-regroup",
+        };
 
         public const string Res720Class = "jk-res-720";
         public const string Res1080Class = "jk-res-1080";
@@ -255,6 +282,20 @@ namespace Janseon.Foundation.UI
             SettlementOutcome,
             ActionSettle,
             ReturnAction,
+            TerritoryPanel,
+            TerritoryHeading,
+            TerritoryRowYeongdeungpo,
+            TerritoryRowSindorim,
+            TerritoryRowGuro,
+            RelationsHeading,
+            RelationsRowExplorerMedic,
+            RelationsRowExplorerPatrol,
+            RelationsRowMedicPatrol,
+            TravelDetailHeading,
+            TravelPath,
+            TravelCost,
+            TravelForecast,
+            TravelState,
         };
 
         public static readonly string[] MainTitleFocusOrder =
