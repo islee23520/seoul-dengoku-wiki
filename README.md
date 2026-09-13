@@ -10,6 +10,8 @@
 
 브라우저에서 코어 루프를 직접 돌리는 웹 POC는 [`play/`](play/)입니다. 거점 → 427동 목적지 → 조우(협상·우회·전투) → 진형 → 실시간 카드 전투 → 정산 한 번 → 귀환. 주소는 `https://seoul-kenshi.vercel.app/play/`입니다. 이동 비용은 직선 거리 웹 규칙이고 Unity 코어 전체가 아닙니다. PR [#90](https://github.com/islee23520/seoul-kenshi/pull/90)으로 main에 들어왔습니다.
 
+서울 지역 총람은 [`docs/game-logic/regions/`](docs/game-logic/regions/README.md)와 [`system-design/regions/`](system-design/regions/)입니다. 선택 경계는 2026-07-01 행정동 25구·427동입니다. OSM 스냅샷은 2026-09-04T23:00:00Z입니다. 역 334는 이동 그래프이지 서울 면적의 증명이 아닙니다.
+
 들어온 구현:
 
 - Unity `6000.7.0a5`, 고정 직교 아이소메트릭 장르 계약
@@ -20,6 +22,7 @@
 - Area 1 데이터 코어(ScriptableObject + VContainer) ([#75](https://github.com/islee23520/seoul-kenshi/issues/75))
 - 진형 편집 PlayMode 경로 ([#76](https://github.com/islee23520/seoul-kenshi/issues/76))
 - 웹 코어 루프 POC: `play/` (2026-09-14, [#90](https://github.com/islee23520/seoul-kenshi/pull/90))
+- 서울 지역 총람: 행정동 427동 저작·검증 파이프라인 `tools/regions/` (2026-09-13). Unity 내부 공간 아님
 
 남은 열린 이슈:
 

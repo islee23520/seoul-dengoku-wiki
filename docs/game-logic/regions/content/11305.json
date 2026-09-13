@@ -1,0 +1,1061 @@
+{
+  "schema": "seoul-region-content.v1",
+  "district_id": "gu:11305",
+  "district_name": "강북구",
+  "as_of": "2026-09-12",
+  "regions": [
+    {
+      "region_id": "region:1130553400",
+      "name": "삼양동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "인수봉로 경사와 삼양 승강장",
+        "summary": "삼양동은 우이신설 삼양 승강장과 인수봉로 계단이 한 골목에서 만난다. 동 전체 지형의 기복이 관측되지만 특정 계단·경로의 높이 차는 별도 현장 확인이 필요하다. 개막일 삼양동 주민센터 칠판에는 임하준 실종과 중앙 급수·부품 계약 만료만 붙고, 미양중·삼양초 운동장은 하룻밤 단열 자리 후보지다. 산지 숙영의 세를 여기서 걷지 않는다.",
+        "anchor_refs": [
+          "osm:node:9459739614",
+          "osm:node:7808176108",
+          "osm:node:4637577451",
+          "osm:node:12241199432",
+          "osm:way:1137552050"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md",
+          "docs/game-logic/Cast-State-10.md",
+          "docs/game-logic/Seoul-Station-Catalog.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "삼양 승강장 야간 단열 당직",
+          "인수봉로 경사 횃불 인부",
+          "벽산아파트 옥상 물통 당번"
+        ],
+        "livelihood": "삼양 승강장에서 가벼운 등짐을 받아 인수봉로 계단으로 올린다. 거대한 나무 아래에서 교대를 맞추고, 수유 저울이나 우이 숙영 안내를 직업으로 하지 않는다.",
+        "production": {
+          "outputs": [
+            "경사통과 횃불",
+            "승강장 야간 단열자리",
+            "골목 급수순번"
+          ],
+          "requires": [
+            "난방연료",
+            "제한급수",
+            "경사노동"
+          ]
+        },
+        "shortages": [
+          "단열재",
+          "횃불기름",
+          "옥상 물통 여유"
+        ],
+        "hazard": {
+          "kind": "slope",
+          "description": "인수봉로 횃불을 끄면 벽산아파트 쪽 미끄럼이 늘고, 사람을 삼양 승강장에 모으면 단열은 되나 경사 당번이 빠진다."
+        },
+        "opening_state": "삼양동 주민센터는 급수 재계약 대기만 적어 두었다. 북산 연방회의는 산지와 입구 배급을 한 줄로 묶지 말라는 안건을 올렸으나 표결하지 못했다. 세 유언장과 가을 행렬은 개막 사실이 아니다.",
+        "connections": "미아동·송천동·삼각산동·수유1동과 골목으로 맞닿되 공유 경계가 곧바로 통행로는 아니다. 성북 쪽 경계는 정릉 산길 안내를 겹치지 않고 호각만 맞춘다.",
+        "action": {
+          "id": "1130553400-samyang-night-warm",
+          "label": "삼양 승강장을 하룻밤 단열자리로 연다",
+          "target_ref": "osm:node:9459739614",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 5,
+              "unit": "shift"
+            },
+            {
+              "resource": "fuel",
+              "amount": 4,
+              "unit": "점"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "벽산아파트 경사 20가구가 삼양 승강장에서 밤을 난다."
+            }
+          ],
+          "tradeoff": "인수봉로 횃불 3교대가 승강장으로 빠져 거대한 나무 아래 대기줄이 미끄럼에 노출된다."
+        },
+        "uncertainty": "삼양 승강장·삼양동 주민센터·거대한 나무·벽산아파트·인수봉로 위치는 OSM 스냅샷(PBF 2026-09-04, 경계 2026-07-01)이다. 조회 기준 2026-09-12와 창작 개막일은 별개다. 단열 가동·급수량·통제는 창작이며 실기관 운영을 적지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1130553500",
+      "name": "미아동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "미아 칠판과 수유프라자 저울",
+        "summary": "미아동의 개막 풍경은 미아 승강장 칠판과 수유프라자 저울 사이다. 수유사거리 보행은 멈추지 않았고, 성신여대 운정그린캠퍼스와 개신대학원대학교 강의동은 필경 자리 후보지로만 거론된다. 현대아파트 옥상 물통이 제한 급수의 마지막 몫이고, 미아동 주민센터에는 임하준 실종과 계약 만료 전갈만 붙는다. 정자 그늘은 순번 대기석이지 산악 숙영이 아니다.",
+        "anchor_refs": [
+          "osm:node:6036160315",
+          "osm:node:368898818",
+          "osm:way:475332792",
+          "osm:way:470113116",
+          "osm:node:357821496",
+          "osm:way:475332778"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md",
+          "docs/game-logic/Cast-State-10.md",
+          "docs/game-logic/Seoul-Station-Catalog.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "미아 승강장 순번 서기",
+          "수유프라자 저울 견습",
+          "현대아파트 옥상 물통 당번"
+        ],
+        "livelihood": "골목 식량을 수유프라자에 모으고 미아 승강장 칠판에 급수 순번을 적는다. 운정그린캠퍼스 필경은 계약 사본용이며, 우이 숙영 안내나 수유 세 징수를 여기서 하지 않는다.",
+        "production": {
+          "outputs": [
+            "급수순번표",
+            "골목중개식량",
+            "계약 필경사본"
+          ],
+          "requires": [
+            "제한급수",
+            "필경노동",
+            "교환권"
+          ]
+        },
+        "shortages": [
+          "공정저울",
+          "필경용지",
+          "옥상 물통 여유"
+        ],
+        "hazard": {
+          "kind": "water",
+          "description": "현대아파트 옥상 물통을 수유사거리 통과인용으로 열면 주거 음용이 하루 비고, 잠그면 프라자 대기줄이 승강장으로 밀려 든다."
+        },
+        "opening_state": "미아동 주민센터는 새 급수계약 서명을 보류한 채 칠판만 닦아 두었다. 수유 교차 세는 아직 안 걸렸다. 세 유언장·북산 행렬·겨울 배차 조작은 개막 사실이 아니다.",
+        "connections": "삼양동·송중동·송천동·번1동·번2동·수유1동과 맞닿는다. 수유사거리는 수유3동 세권과 보행이 이어질 수 있으나 공유 경계 자체가 통행 허가는 아니다.",
+        "action": {
+          "id": "1130553500-mia-contract-board",
+          "label": "미아 승강장 칠판을 새 급수계약 순번판으로 연다",
+          "target_ref": "osm:node:6036160315",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 3,
+              "unit": "shift"
+            },
+            {
+              "resource": "authority",
+              "amount": 6,
+              "unit": "A"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "현대아파트 90가구 급수 순번이 당일 확정된다."
+            }
+          ],
+          "tradeoff": "수유프라자 저울 3교대가 승강장으로 빠져 골목 중개식량이 반나절 멈춘다."
+        },
+        "uncertainty": "미아 승강장·미아동 주민센터·운정그린캠퍼스·수유프라자·수유사거리 위치는 OSM 스냅샷(PBF 2026-09-04, 경계 2026-07-01)이다. 조회 기준 2026-09-12와 창작 개막일은 별개다. 순번·저울·급수량은 창작이며 실기관 운영을 적지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1130554500",
+      "name": "송중동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "미아사거리 대합실의 하룻밤",
+        "summary": "송중동은 미아사거리 승강장 대합실이 계곡 입구 잠자리 후보지로 거론되는 자리다. 한일유엔아이아파트 쪽 골목은 이미 과밀하고, 창문여중여고·서울송중초 운동장은 들것 대기석이다. 햇빛여성병원 신관 복도는 세척수를 기다리며, 삼양입구사거리 보행이 대합실 입구와 겹친다. 개막일 송중동 주민센터 칠판에는 계약 만료와 임하준 실종만 있다.",
+        "anchor_refs": [
+          "osm:node:6036160316",
+          "osm:node:368898880",
+          "osm:way:474076244",
+          "osm:way:380249173",
+          "osm:node:9816151144"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md",
+          "docs/game-logic/Cast-State-10.md",
+          "docs/game-logic/Seoul-Station-Catalog.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "미아사거리 대합실 쉘 관리",
+          "한일유엔아이 골목반장",
+          "햇빛여성병원 신관 세척 당번"
+        ],
+        "livelihood": "대합실 순번과 아파트 잠자리를 나누고, 신관 들것을 삼양입구사거리 쪽으로 돌린다. 산길 안내와 수유 저울은 만지지 않는다.",
+        "production": {
+          "outputs": [
+            "입구주거 잠자리",
+            "신관 들것대기",
+            "골목급수"
+          ],
+          "requires": [
+            "식량",
+            "세척수",
+            "대합실노동"
+          ]
+        },
+        "shortages": [
+          "단열재",
+          "세척수",
+          "대합실 대기공간"
+        ],
+        "hazard": {
+          "kind": "fire",
+          "description": "미아사거리 대합실에 하룻밤 잠자리를 열면 한일유엔아이 과밀은 줄지만 난로 연기가 신관 복도까지 밀린다."
+        },
+        "opening_state": "송중동 주민센터는 대합실 개방을 협의 중이고 아직 열쇠를 넘기지 않았다. 연방회의는 입구 주거와 산지 숙영 숫자를 합치지 말라는 주의만 회람했다. 가을 행렬은 도착하지 않았다.",
+        "connections": "미아동·송천동·번2동·번3동과 골목으로 이어지고, 성북 쪽 여러 동과 공유 경계를 가진다. 경계선 자체가 들것 통로는 아니다.",
+        "action": {
+          "id": "1130554500-miasageori-night-shell",
+          "label": "미아사거리 대합실을 하룻밤 주거 쉘로 연다",
+          "target_ref": "osm:node:6036160316",
+          "costs": [
+            {
+              "resource": "food",
+              "amount": 20,
+              "unit": "점"
+            },
+            {
+              "resource": "water",
+              "amount": 15,
+              "unit": "점"
+            },
+            {
+              "resource": "labor",
+              "amount": 5,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "한일유엔아이 과밀 20자리가 대합실로 옮겨지고 골목 난로가 한 줄 줄어든다."
+            }
+          ],
+          "tradeoff": "대합실 과밀로 화재 위험도가 한 단계 오르고, 햇빛여성병원 신관 복도가 막혀 다음날 골목 급수 8점이 더 든다."
+        },
+        "uncertainty": "미아사거리 승강장·송중동 주민센터·햇빛여성병원 신관·한일유엔아이아파트·삼양입구사거리 위치는 OSM 스냅샷(PBF 2026-09-04, 경계 2026-07-01)이다. 조회 기준 2026-09-12와 창작 개막일은 별개다. 쉘 개방·급수량·화재 위험은 창작이며 실병원 운영을 적지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1130555500",
+      "name": "송천동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "숭인시장 쌀뜨물과 햇빛병원",
+        "summary": "송천동은 삼양사거리 가벼운 화물과 숭인시장 좌석이 같은 골목을 쓴다. 햇빛여성병원 마당은 세척수를 시장 우물 차례에 기대고, 미아동부센트레빌 205동 옥상 물통은 이미 순번이 밀렸다. 성암국제무역고 실습실은 저울 교정 후보지이고, 송천동 주민센터 칠판에는 임하준 실종과 계약 만료만 적혀 있다. 산지 약초 세를 여기서 걷지 않는다.",
+        "anchor_refs": [
+          "osm:node:9459739612",
+          "osm:node:368740958",
+          "osm:way:1346575090",
+          "osm:node:368899734",
+          "osm:way:1346554741"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md",
+          "docs/game-logic/Cast-State-10.md",
+          "docs/game-logic/Economy-and-Production.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "숭인시장 좌석 중개",
+          "햇빛여성병원 마당 세척",
+          "삼양사거리 경화물 지게"
+        ],
+        "livelihood": "숭인시장에서 골목 식량을 나누고 삼양사거리 가벼운 화물을 병원 마당까지 민다. 우이 숙영 난방 지게와 수유 무역세는 이 동의 생업이 아니다.",
+        "production": {
+          "outputs": [
+            "시장식량 좌석",
+            "병원 세척수",
+            "경화물 상자"
+          ],
+          "requires": [
+            "반입곡물",
+            "우물차례",
+            "지게노동"
+          ]
+        },
+        "shortages": [
+          "세척수",
+          "공정저울",
+          "옥상 물통"
+        ],
+        "hazard": {
+          "kind": "supply",
+          "description": "숭인시장 쌀뜨물을 병원 마당에 주면 들것 세척은 되나 205동 저녁 죽이 한 솥 비고, 시장을 지키면 마당 세척이 멈춘다."
+        },
+        "opening_state": "송천동 주민센터는 시장 우물 차례와 병원 세척 순서를 같은 장부에 적지 않기로만 합의했다. 새 급수계약은 서명되지 않았고, 세 유언장과 겨울 베어링 사건은 아직 없다.",
+        "connections": "삼양동·미아동·송중동·삼각산동과 골목으로 맞닿고 성북 쪽 공유 경계에서는 화물 호각만 맞춘다. 삼양입구사거리 이름은 송중동 쪽 교차와 겹치나 한 줄 통제가 아니다.",
+        "action": {
+          "id": "1130555500-sungin-hospital-wash",
+          "label": "숭인시장 우물 차례를 햇빛여성병원 마당 세척에 돌린다",
+          "target_ref": "osm:way:1346575090",
+          "costs": [
+            {
+              "resource": "water",
+              "amount": 12,
+              "unit": "점"
+            },
+            {
+              "resource": "labor",
+              "amount": 4,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "햇빛여성병원 마당 들것 10대를 당일 세척·대기 가능하게 한다."
+            }
+          ],
+          "tradeoff": "숭인시장 저녁 좌석 8곳이 닫히고 센트레빌 205동 죽 한 솥이 비어 경화물 지게가 반나절 쉰다."
+        },
+        "uncertainty": "삼양사거리 승강장·햇빛여성병원·숭인시장·송천동 주민센터·205동 위치는 OSM 스냅샷(PBF 2026-09-04, 경계 2026-07-01)이다. 조회 기준 2026-09-12와 창작 개막일은 별개다. 우물 차례·세척·시장 좌석은 창작이며 실시장·실병원 운영을 적지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1130557500",
+      "name": "삼각산동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "솔샘 제동과 동북시장 지게",
+        "summary": "삼각산동은 우이신설 솔샘 승강장의 가벼운 화물과 동북시장 지게가 같은 등을 쓴다. 삼성 래미안 트리베라 109동 식량은 시장 지게로 오르고, 솔샘로 경사는 창동 차륜 자산이 아니다. 삼각산고·삼각산중 운동장은 침목 임시 적재 후보지이며, 개막일 삼각산동 주민센터에는 계약 만료와 임하준 실종만 공지된다. 궤도 부품 교환 제안은 거절 상태로 남아 있다.",
+        "anchor_refs": [
+          "osm:node:9459739609",
+          "osm:node:4643512521",
+          "osm:relation:6927351",
+          "osm:node:13132894386",
+          "osm:way:218681381",
+          "osm:way:468471917"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md",
+          "docs/game-logic/Cast-State-10.md",
+          "docs/game-logic/Seoul-Station-Catalog.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "솔샘 경사선로 보수",
+          "동북시장 지게꾼",
+          "트리베라 109동 식량 당번"
+        ],
+        "livelihood": "솔샘 가벼운 화물만 궤도에 올리고, 고치지 않는 날은 동북시장 지게로 트리베라 식량을 나른다. 창동 기지 차륜과 맞바꾸라는 제안은 이 동의 생업이 아니다.",
+        "production": {
+          "outputs": [
+            "경화물 상자",
+            "시장 지게운반",
+            "단지 식량배달"
+          ],
+          "requires": [
+            "제동슈",
+            "침목",
+            "보수노동"
+          ]
+        },
+        "shortages": [
+          "제동슈",
+          "침목",
+          "지게 교대"
+        ],
+        "hazard": {
+          "kind": "access",
+          "description": "솔샘 선로를 방치하면 트리베라 식량이 동북시장 지게에만 의존하고, 고치면 그날 시장 인력이 궤도에 묶인다."
+        },
+        "opening_state": "삼각산동 주민센터는 선로 보수와 지게 유지를 같은 날 하지 않기로만 적었다. 창동 쪽 차륜 부품 교환은 우이 선로와 맞바꾸라는 조건이 붙어 거절 상태다. 무기열차 사건은 겨울의 조건부이며 개막 사실이 아니다.",
+        "connections": "삼양동·송천동과 골목으로 이어지고 성북 쪽 공유 경계로 솔샘로가 넘어간다. 도로 이름이 공유되어도 그날의 통행 허가는 아니다.",
+        "action": {
+          "id": "1130557500-solsaem-brake-shoe",
+          "label": "솔샘 경사 제동슈를 갈아 가벼운 화물을 하루 살린다",
+          "target_ref": "osm:node:9459739609",
+          "costs": [
+            {
+              "resource": "parts",
+              "amount": 12,
+              "unit": "점"
+            },
+            {
+              "resource": "labor",
+              "amount": 7,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "connection",
+              "effect": "솔샘 경화물 10상자가 당일 오르고 선로 상태가 한 구간 버틴다."
+            }
+          ],
+          "tradeoff": "동북시장 지게 7교대가 궤도에 묶여 트리베라 109동 식량 배달이 하루 멈춘다."
+        },
+        "uncertainty": "솔샘 승강장·삼각산동 주민센터·래미안 트리베라·동북시장·솔샘로 위치는 OSM 스냅샷(PBF 2026-09-04, 경계 2026-07-01)이다. 조회 기준 2026-09-12와 창작 개막일은 별개다. 제동슈·선로 상태·지게 배정은 창작이며 실제 경전철 운행을 적지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1130559500",
+      "name": "번1동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "북부시장 통로와 새한빛 들것",
+        "summary": "번1동은 강북북부시장 통로가 새한빛병원 들것과 같은 골목을 다툰다. 번동삼성아파트와 도봉로 96가길·96다길 주거는 시장 좌석에 저녁을 기대고, 우이천 둔치는 세척 후보지다. 번동사거리와 수유사거리동단 사이 보행이 막히면 보람빌딩 앞이 임시 대기석이 된다. 개막일 번1동 주민센터 칠판에는 임하준 실종과 급수계약 만료만 있다.",
+        "anchor_refs": [
+          "osm:node:4646474319",
+          "osm:node:4646478793",
+          "osm:way:471382886",
+          "osm:way:168369222",
+          "osm:way:469634158",
+          "osm:node:414687913"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md",
+          "docs/game-logic/Cast-State-10.md",
+          "docs/game-logic/Economy-and-Production.md"
+        ],
+        "polity_contexts": [
+          "S10",
+          "S11"
+        ],
+        "inhabitants": [
+          "강북북부시장 좌석 중개",
+          "새한빛병원 들것 대기",
+          "번동삼성아파트 저녁솥 당번"
+        ],
+        "livelihood": "북부시장 좌석에서 골목 식량을 나누고, 우이천 둔치 물로 새한빛병원 들것 손잡이만 닦는다. 창동 차륜 교역은 번동사거리에서 호각만 맞출 뿐 기지 소유가 넘어오지 않는다.",
+        "production": {
+          "outputs": [
+            "시장식량 좌석",
+            "들것대기석",
+            "아파트 저녁솥"
+          ],
+          "requires": [
+            "반입곡물",
+            "우이천 세척수",
+            "시장노동"
+          ]
+        },
+        "shortages": [
+          "통로 대기공간",
+          "들것 세척수",
+          "저녁곡물"
+        ],
+        "hazard": {
+          "kind": "fire",
+          "description": "북부시장 통로에 들것을 들이면 난로와 들것이 한 줄이 되어 연기가 번동삼성아파트 쪽으로 밀린다."
+        },
+        "opening_state": "번1동 주민센터는 시장 통로를 병원 들것에 내줄지 표결하지 못했다. 도봉 쪽 차륜방은 교차 호각만 제안한 상태다. 가을 북산 행렬은 도착하지 않았다.",
+        "connections": "미아동·번2동·수유3동·인수동과 맞닿고 도봉 쪽 두 동과 공유 경계를 가진다. 우이천은 경계를 가로지르나 음용 허가는 아니다.",
+        "action": {
+          "id": "1130559500-bukbu-market-stretcher",
+          "label": "강북북부시장 통로를 새한빛병원 들것 대기에 내준다",
+          "target_ref": "osm:node:4646474319",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 4,
+              "unit": "shift"
+            },
+            {
+              "resource": "food",
+              "amount": 8,
+              "unit": "점"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "새한빛병원 들것 8대가 시장 통로에서 당일 대기·이동한다."
+            }
+          ],
+          "tradeoff": "북부시장 좌석 12곳이 닫혀 번동삼성아파트 저녁솥이 한 줄 비고, 우이천 둔치 세척 당번이 통로로 빠져 난로 연기가 남는다."
+        },
+        "uncertainty": "강북북부시장·새한빛병원·번1동 주민센터·우이천·번동삼성아파트·번동사거리 위치는 OSM 스냅샷(PBF 2026-09-04, 경계 2026-07-01)이다. 조회 기준 2026-09-12와 창작 개막일은 별개다. 들것 배정·시장 좌석·하천 사용은 창작이며 실병원·실시장 운영을 적지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1130560300",
+      "name": "번2동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "오동 잔디와 주공 난방",
+        "summary": "번2동은 번동주공 4단지·5단지 난방 연료가 오동골프클럽 잔디밭 방풍림과 같은 지게에 실린다. 우이천 둔치 정자는 보건소 앞 야외 진료의 바람막이 후보지이고, 402동 옥상 물통은 제한 급수의 마지막 몫이다. 북부고용노동지청 모퉁이와 강북구장애인종합복지관 담장은 교대 명단을 붙이는 벽이다. 개막일 번2동 주민센터에는 임하준 실종과 계약 만료만 공지된다.",
+        "anchor_refs": [
+          "osm:node:368899045",
+          "osm:way:536406783",
+          "osm:way:380123852",
+          "osm:way:380240664",
+          "osm:node:436847053",
+          "osm:node:10214616320"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md",
+          "docs/game-logic/Cast-State-10.md"
+        ],
+        "polity_contexts": [
+          "S10",
+          "S11"
+        ],
+        "inhabitants": [
+          "주공5단지 난방 지게",
+          "오동 잔디 방풍 당번",
+          "강북보건소 앞 야외진료"
+        ],
+        "livelihood": "주공 4·5단지 난방을 위해 마른 풀과 잔가지를 나누고, 우이천 정자 그늘에서 보건소 앞 대기를 돌린다. 산지 약초 채집과 수유 세 징수는 이 동의 일이 아니다.",
+        "production": {
+          "outputs": [
+            "단지 난방단",
+            "야외진료 대기석",
+            "둔치 바람막이"
+          ],
+          "requires": [
+            "마른풀·잔가지",
+            "지게노동",
+            "제한급수"
+          ]
+        },
+        "shortages": [
+          "난방연료",
+          "바람막이",
+          "야외진료 교대"
+        ],
+        "hazard": {
+          "kind": "supply",
+          "description": "오동골프클럽 방풍림을 베면 주공5단지 밤은 버틴다. 베지 않으면 보건소 앞 대기는 가려지지만 402동 난로가 먼저 꺼진다."
+        },
+        "opening_state": "번2동 주민센터는 잔디밭 방풍림을 단지 연료로 쓸지 보건소 바람막이로 둘지 표결하지 못했다. 도봉·노원 쪽 공유 경계로 차륜 교환 제안이 왔으나 주공 난방을 넘기라는 뜻은 거절 상태다. 세 유언장은 다음 봄의 일이다.",
+        "connections": "미아동·송중동·번1동·번3동과 맞닿고 도봉·노원 쪽 경계와 우이천을 공유한다. 공유 하천이 통행 허가는 아니다.",
+        "action": {
+          "id": "1130560300-odong-windbreak-fuel",
+          "label": "오동골프클럽 방풍 잔가지를 주공5단지 난방에 벤다",
+          "target_ref": "osm:way:536406783",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 6,
+              "unit": "shift"
+            },
+            {
+              "resource": "authority",
+              "amount": 4,
+              "unit": "A"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "stock",
+              "effect": "주공5단지 난방단 18묶음이 당일 확보되어 402동 난로가 밤을 버틴다."
+            }
+          ],
+          "tradeoff": "오동 쪽 바람막이가 사라져 강북보건소 앞 야외진료와 우이천 정자 대기가 찬바람에 노출된다."
+        },
+        "uncertainty": "번2동 주민센터·오동골프클럽·주공4·5단지·강북보건소·정자 위치는 OSM 스냅샷(PBF 2026-09-04, 경계 2026-07-01)이다. 조회 기준 2026-09-12와 창작 개막일은 별개다. 벌채·난방량·야외진료는 창작이며 실보건소·실복지 운영을 적지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1130560800",
+      "name": "번3동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "꿈의숲 동문과 주공3단지 당번",
+        "summary": "번3동은 북서울꿈의숲 동문이 번동주공3단지 밤 당번과 같은 인원을 다툰다. 기산그린·한양아파트 쪽 오솔길은 동문 낙엽 지게의 지름길 후보지이고, 우이천 후문은 물길 감시석이다. 서울번동초·오현초 운동장은 낙엽 건조 자리로만 거론된다. 개막일 번3동주민센터 칠판에는 계약 만료와 임하준 실종만 있다. 숲 출입은 창작 채집이지 공원 운영 승계가 아니다.",
+        "anchor_refs": [
+          "osm:node:368899717",
+          "osm:node:11633697974",
+          "osm:node:3835970746",
+          "osm:way:1013680623",
+          "osm:way:168369222",
+          "osm:node:13801675095"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md",
+          "docs/game-logic/Cast-State-10.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "꿈의숲 동문 낙엽 지게",
+          "주공3단지 밤 당번",
+          "우이천 후문 물길 감시"
+        ],
+        "livelihood": "동문 낙엽과 마른 가지를 주공3단지 난로에 나누고, 후문 물길을 낮에만 살핀다. 우이 계곡 숙영 안내와 수유 저울은 맡지 않는다.",
+        "production": {
+          "outputs": [
+            "낙엽 난방단",
+            "단지 밤순찰",
+            "물길 감시보고"
+          ],
+          "requires": [
+            "동문 출입노동",
+            "건조자리",
+            "횃불기름"
+          ]
+        },
+        "shortages": [
+          "난방단",
+          "밤 당번",
+          "동문 열쇠 교대"
+        ],
+        "hazard": {
+          "kind": "slope",
+          "description": "번3동의 지형 자료에는 동 전체의 기복이 관측된다. 이 수치를 특정 계단이나 운반 경로의 높이·경사로 단정하지 않으며, 북서울꿈의숲 동문을 열어 낙엽 난방단을 내린다에 필요한 실제 접근 상태는 현장에서 따로 확인한다."
+        },
+        "opening_state": "번3동주민센터는 동문 열쇠를 채집조에 넘기지 않은 협의 상태다. 성북·노원 쪽 공유 경계로는 호각만 맞춘다. 가을 행렬과 세 유언장은 개막 사실이 아니다.",
+        "connections": "송중동·번2동과 골목으로 이어지고 성북·노원 쪽 동과 경계를 공유한다. 꿈의숲 동문이 이웃 동 통행로는 아니다.",
+        "action": {
+          "id": "1130560800-dreamforest-eastgate-fuel",
+          "label": "북서울꿈의숲 동문을 열어 낙엽 난방단을 내린다",
+          "target_ref": "osm:node:3835970746",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 6,
+              "unit": "shift"
+            },
+            {
+              "resource": "fuel",
+              "amount": 2,
+              "unit": "점"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "stock",
+              "effect": "주공3단지 난로용 낙엽 난방단 14묶음이 당일 들어온다."
+            }
+          ],
+          "tradeoff": "단지 밤 당번 4교대가 동문으로 빠져 우이천 후문 물길과 한양아파트 오솔길이 표시 없이 남는다."
+        },
+        "uncertainty": "번3동주민센터·북서울꿈의숲·동문·주공3단지·우이천·후문 위치는 OSM 스냅샷(PBF 2026-09-04, 경계 2026-07-01)이다. 조회 기준 2026-09-12와 창작 개막일은 별개다. 동문 개방·채집량·당번은 창작이며 실공원 운영을 적지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1130561500",
+      "name": "수유1동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "빨래골 밧줄과 화계 등짐",
+        "summary": "수유1동의 지형 자료에는 동 전체의 기복이 관측된다. 이 수치를 특정 계단이나 운반 경로의 높이·경사로 단정하지 않으며, 화계 등짐 심사를 빨래골입구 밧줄 고정에 돌린다에 필요한 실제 접근 상태는 현장에서 따로 확인한다.",
+        "anchor_refs": [
+          "osm:node:9459739616",
+          "osm:node:11932294625",
+          "osm:node:11177878339",
+          "osm:node:414687859",
+          "osm:way:1069110524"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md",
+          "docs/game-logic/Cast-State-10.md",
+          "docs/game-logic/Seoul-Station-Catalog.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "화계 등짐 심사",
+          "빨래골입구 밧줄 당번",
+          "튤립바위 약초 표지"
+        ],
+        "livelihood": "화계 승강장에서 가벼운 등짐만 확인하고, 빨래골입구 밧줄을 낮에만 탄다. 수유 교차 세와 우이 숙영 난방을 여기서 걷거나 대신하지 않는다.",
+        "production": {
+          "outputs": [
+            "등짐 통과증",
+            "밧줄 고정",
+            "약초 표지 5점"
+          ],
+          "requires": [
+            "밧줄·말뚝",
+            "경사노동",
+            "심사 교대"
+          ]
+        },
+        "shortages": [
+          "밧줄",
+          "말뚝",
+          "등짐 대기공간"
+        ],
+        "hazard": {
+          "kind": "slope",
+          "description": "빨래골 밧줄을 화계 인력으로 고정하면 튤립바위 미끄럼은 줄지만 도봉로 수레가 승강장에 쌓인다. 밧줄을 비우면 채집조가 바위에 묶인다."
+        },
+        "opening_state": "화계 승강장 심사는 열려 있으나 빨래골 밧줄은 낮 한 줄만 허용된 협의 상태다. 연방회의는 산지 채집과 입구 등짐을 한 배급으로 묶지 말라는 안건만 올렸다. 가을 행렬은 도착하지 않았다.",
+        "connections": "삼양동·미아동·인수동과 골목·산길로 맞닿고 성북 쪽 공유 경계는 회랑 안내만 겹친다. 도봉로는 경계를 가로지르나 수레 통행 허가는 별개다.",
+        "action": {
+          "id": "1130561500-ppallaegol-rope",
+          "label": "화계 등짐 심사를 빨래골입구 밧줄 고정에 돌린다",
+          "target_ref": "osm:node:414687859",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 5,
+              "unit": "shift"
+            },
+            {
+              "resource": "parts",
+              "amount": 6,
+              "unit": "점"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "빨래골입구~튤립바위 밧줄이 낮 동안 고정되어 약초 표지 5점이 내려온다."
+            }
+          ],
+          "tradeoff": "화계 등짐 심사 5교대가 비어 도봉로 수레가 승강장에 적체되고 한신대·화계사 표지 앞 대기가 멈춘다."
+        },
+        "uncertainty": "화계 승강장·튤립바위·빨래골입구·한신대·화계사 표지·도봉로 위치는 OSM 스냅샷(PBF 2026-09-04, 경계 2026-07-01)이다. 조회 기준 2026-09-12와 창작 개막일은 별개다. 밧줄·채집량·심사는 창작이며 실사찰·실학교 운영을 적지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1130562500",
+      "name": "수유2동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "쌍문교 모래주머니와 온누리 약창",
+        "summary": "수유2동은 쌍문교가 우이천을 건너는 골목 입구다. 벽산1차·2차아파트 저녁 물은 다리 위 물지게에 기대고, 꿈이있는온누리약국 야간창은 국립4.19묘지입구 사거리 대기줄의 열 가림이다. 수유동성당 마당은 모래주머니 적재 후보지이고, 삼각산로 보행이 다리와 겹친다. 개막일 수유2동주민센터에는 임하준 실종과 급수계약 만료만 붙는다. 묘역 운영을 창작 소유로 적지 않는다.",
+        "anchor_refs": [
+          "osm:node:11663232554",
+          "osm:way:168369222",
+          "osm:node:10248759158",
+          "osm:way:380782786",
+          "osm:way:469485279",
+          "osm:node:414688020"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md",
+          "docs/game-logic/Cast-State-10.md"
+        ],
+        "polity_contexts": [
+          "S10",
+          "S11"
+        ],
+        "inhabitants": [
+          "쌍문교 모래주머니 당번",
+          "온누리약국 야간창",
+          "벽산아파트 물지게"
+        ],
+        "livelihood": "쌍문교 위 물지게로 벽산 단지 저녁 물을 나르고, 약국 야간창에서 사거리 대기줄의 열만 가린다. 우이 숙영 의료 교대와 수유 무역세를 여기서 대신하지 않는다.",
+        "production": {
+          "outputs": [
+            "교량 보행유지",
+            "단지 저녁물",
+            "야간 해열 가림"
+          ],
+          "requires": [
+            "모래주머니",
+            "우이천 길물",
+            "약창 교대"
+          ]
+        },
+        "shortages": [
+          "모래",
+          "야간약",
+          "교량 난간"
+        ],
+        "hazard": {
+          "kind": "water",
+          "description": "쌍문교 모래를 쌓으면 벽산 물지게는 건넌다. 쌓지 않으면 약국 야간창은 열리지만 다리가 흔들려 사거리 대기줄이 우이천 쪽으로 밀린다."
+        },
+        "opening_state": "수유2동주민센터는 다리 보강과 약창 야간 개방을 같은 교대로 하지 않기로만 적었다. 4.19 입구 사거리는 집결 여백이지 묘역 통제가 아니다. 가을 행렬은 도착하지 않았다.",
+        "connections": "수유3동·우이동·인수동과 맞닿고 도봉 쪽 공유 경계로 쌍문교가 이어질 수 있다. 다리 이름이 통행 허가는 아니다.",
+        "action": {
+          "id": "1130562500-ssangmun-bridge-sandbag",
+          "label": "쌍문교에 모래주머니를 쌓아 벽산 물지게를 건넌다",
+          "target_ref": "osm:node:11663232554",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 6,
+              "unit": "shift"
+            },
+            {
+              "resource": "water",
+              "amount": 5,
+              "unit": "점"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "connection",
+              "effect": "쌍문교 보행이 당일 유지되어 벽산1·2차 물지게 16통이 건넌다."
+            }
+          ],
+          "tradeoff": "온누리약국 야간창 3교대가 다리로 빠져 4.19묘지입구 사거리 대기줄에 해열 가림이 없고, 성당 마당 모래 더미가 비다."
+        },
+        "uncertainty": "쌍문교·우이천·온누리약국·벽산아파트·수유동성당·4.19묘지입구 사거리 위치는 OSM 스냅샷(PBF 2026-09-04, 경계 2026-07-01)이다. 조회 기준 2026-09-12와 창작 개막일은 별개다. 교량 보강·약창·집결은 창작이며 실약국·실묘역 운영을 적지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1130563500",
+      "name": "수유3동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "수유사거리 저울과 구청 장부",
+        "summary": "수유3동은 수유 승강장과 수유사거리가 산지 화물과 골목 식량이 가격을 만나는 입구다. 강북종합시장·수유중앙시장 좌석이 저울을 다투고, 강북구청 민원 홀은 새 급수계약 서식만 쌓여 있다. 쌍문교 쪽 우이천은 세척 후보지이고, 우이초등교앞 보행이 시장 줄과 겹친다. 개막일 수유3동주민센터와 구청 칠판에는 임하준 실종과 중앙 계약 만료만 있다. 우이 숙영 자리에는 세를 매기지 않는다.",
+        "anchor_refs": [
+          "osm:node:6036160306",
+          "osm:node:1968205544",
+          "osm:node:8355681117",
+          "osm:way:415326584",
+          "osm:node:3834241939"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md",
+          "docs/game-logic/Cast-State-10.md",
+          "docs/game-logic/Economy-and-Production.md",
+          "docs/game-logic/Seoul-Station-Catalog.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "수유 교차 중개상",
+          "종합시장 저울지기",
+          "구청 급수 서식 서기"
+        ],
+        "livelihood": "수유사거리에서 산지 약초·목재를 골목 식량과 바꾸고, 구청 홀에 새 계약 서식만 받는다. 세율은 교차 입구에만 논의되며 우이 숙영과 솔밭 자리는 같은 세에 묶지 않는다.",
+        "production": {
+          "outputs": [
+            "중개식량",
+            "약초대금",
+            "계약서식 접수"
+          ],
+          "requires": [
+            "반입식량",
+            "교환권",
+            "시장노동"
+          ]
+        },
+        "shortages": [
+          "공정저울",
+          "통행대기공간",
+          "서식용지"
+        ],
+        "hazard": {
+          "kind": "governance",
+          "description": "산지와 입구를 같은 세율로 묶으면 숙영 행렬이 수유 대합실에 쌓여 시장 화재와 소요가 같이 난다. 교차에만 세를 걸면 통과가 늦다."
+        },
+        "opening_state": "수유 세는 아직 안 걸렸다. 강북구청 홀은 만료된 중앙 급수·부품 계약의 빈 서식만 받아 두고, 연방회의는 산지와 입구를 한 배급으로 묶지 말라는 안건을 표결하지 못했다. 세 유언장과 가을 행렬은 개막 사실이 아니다.",
+        "connections": "번1동·수유2동·인수동과 골목으로 이어지고 도봉 쪽 공유 경계로 쌍문교 보행이 겹칠 수 있다. 수유사거리가 우이 숙영 통행로는 아니다.",
+        "action": {
+          "id": "1130563500-suyu-cross-toll",
+          "label": "수유사거리에만 무역세 10을 건다",
+          "target_ref": "osm:node:3834241939",
+          "costs": [
+            {
+              "resource": "authority",
+              "amount": 10,
+              "unit": "A"
+            },
+            {
+              "resource": "labor",
+              "amount": 3,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "stock",
+              "effect": "강북종합시장·수유중앙시장 교환권이 하루 돌아 입구 식량 15점이 비축된다."
+            }
+          ],
+          "tradeoff": "수유 승강장 통과가 2시간 늦고 구청 서식 줄이 시장까지 늘어 협력 서약이 얇아진다. 우이 숙영에는 같은 세를 복사하지 않는다."
+        },
+        "uncertainty": "수유 승강장·강북구청·강북종합시장·수유중앙시장·수유사거리 위치는 OSM 스냅샷(PBF 2026-09-04, 경계 2026-07-01)이다. 조회 기준 2026-09-12와 창작 개막일은 별개다. 세율·저울·서식 접수는 창작이며 실구청·실시장 운영을 적지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1130564500",
+      "name": "우이동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "북한산우이 숙영과 왕관봉 온기",
+        "summary": "우이동은 북한산우이 승강장 창작 숙영과 솔밭공원 쪽 난방 지게가 계곡 위에 열린 자리다. 샘물은 취사 솥에만 나누고, 왕관봉·상투바위 정찰은 비법정탐방로를 낮에만 표시한다. 4.19민주묘지 승강장 앞 공터는 집결 여백이지 묘역 운영이 아니다. 개막일 우이동 주민센터 칠판에는 임하준 실종과 중앙 계약 만료만 있다. 수유 세를 숙영 자리에 매기지 않는다.",
+        "anchor_refs": [
+          "osm:node:9459739627",
+          "osm:node:9459739626",
+          "osm:node:10052719728",
+          "osm:node:10940152869",
+          "osm:way:1124073435",
+          "osm:node:9459739623"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md",
+          "docs/game-logic/Cast-State-10.md",
+          "docs/game-logic/Seoul-Station-Catalog.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "북한산우이 숙영 취사",
+          "왕관봉 야간 정찰",
+          "솔밭 난방 지게"
+        ],
+        "livelihood": "우이·솔밭 창작 숙영에서 난방과 약초, 야간 정찰을 한다. 샘물로 취사하고 비법정탐방로는 낮 표지만 한다. 수유 교차 세를 여기서 걷지 않는다.",
+        "production": {
+          "outputs": [
+            "숙영 잠자리",
+            "약초 점",
+            "정찰보고"
+          ],
+          "requires": [
+            "난방연료",
+            "취사 샘물",
+            "의료키트"
+          ]
+        },
+        "shortages": [
+          "난방연료",
+          "의료교대",
+          "취사 샘물 여유"
+        ],
+        "hazard": {
+          "kind": "supply",
+          "description": "숙영 의무 교대를 계곡 아래로 보내면 응급 이송은 지원하지만 그날 연료 운반 인력이 줄어 밤 난방이 부족해진다. 노동 배정이 실제 외기 온도를 바꾸지는 않는다."
+        },
+        "opening_state": "개막일 우이 숙영은 열려 있고 수유 세는 안 걸렸다. 4.19 승강장 앞은 집결 여백만 비워 두었다. 연방회의는 산지와 입구를 한 배급으로 묶지 말라는 안건만 올렸다. 가을 북산 행렬과 세 유언장은 아직 오지 않았다.",
+        "connections": "수유2동·인수동과 계곡 입구로 이어지고 도봉 쪽 여러 동과 능선 경계를 공유한다. 비법정탐방로가 이웃 통행 허가는 아니다. 창동 차륜 소유는 넘어오지 않는다.",
+        "action": {
+          "id": "1130564500-ui-medic-downvalley",
+          "label": "북한산우이 숙영 의료 4교대를 계곡 아래로 보낸다",
+          "target_ref": "osm:node:9459739627",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 4,
+              "unit": "shift"
+            },
+            {
+              "resource": "fuel",
+              "amount": 3,
+              "unit": "점"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "계곡 입구 응급 이송 6건이 당일 가능하다."
+            }
+          ],
+          "tradeoff": "솔밭 난방 반입이 3상자 줄어 왕관봉 밤 기온 방어가 빠지고, 샘물 취사 솥이 한 끼 늦다."
+        },
+        "uncertainty": "북한산우이·솔밭공원·4.19민주묘지 승강장·샘·왕관봉·비법정탐방로 위치는 OSM 스냅샷(PBF 2026-09-04, 경계 2026-07-01)이다. 조회 기준 2026-09-12와 창작 개막일은 별개다. 숙영 가동·의료 교대·샘물 사용은 창작이며 실묘역·실국립공원 운영을 적지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1130566000",
+      "name": "인수동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "대한병원 등과 석가봉 정찰",
+        "summary": "인수동은 가오리 승강장 가벼운 화물과 대한병원 야간 등이 같은 기름을 쓴다. 석가봉 정찰은 화계사입구·한신대 표지에서 교대를 맞추고, 수유현대빌라 골목은 들것 우회 후보지다. 사회혁신경영대학원·신학대학원 강의동은 필경 자리일 뿐 숙영이 아니다. 개막일 인수동 주민센터 칠판에는 임하준 실종과 중앙 급수·부품 계약 만료만 있다. 해발 차 530m의 능선과 입구 주거를 한 배급으로 합치지 않는다.",
+        "anchor_refs": [
+          "osm:node:9459739618",
+          "osm:node:4639296578",
+          "osm:node:10252985150",
+          "osm:node:11177878338",
+          "osm:node:368899754"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md",
+          "docs/game-logic/Cast-State-10.md",
+          "docs/game-logic/Seoul-Station-Catalog.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "대한병원 야간등 당번",
+          "가오리 경화물 지게",
+          "석가봉 능선 정찰"
+        ],
+        "livelihood": "가오리에서 가벼운 화물과 들것을 나누고, 화계사입구 표지에서 석가봉 낮 정찰을 교대한다. 수유사거리 세와 우이 숙영 난방을 여기서 걷거나 대신하지 않는다.",
+        "production": {
+          "outputs": [
+            "병원 야간등",
+            "경화물 상자",
+            "능선 정찰보고"
+          ],
+          "requires": [
+            "등유",
+            "지게노동",
+            "밧줄"
+          ]
+        },
+        "shortages": [
+          "등유",
+          "들것 교대",
+          "능선 횃불"
+        ],
+        "hazard": {
+          "kind": "power",
+          "description": "대한병원 야간등에 등유를 모으면 가오리 승강장 조명이 꺼져 화물 심사가 멈추고, 승강장을 밝히면 병상 복도가 한 시각 암전된다."
+        },
+        "opening_state": "인수동 주민센터는 병원 등과 가오리 조명을 같은 통에서 쓰지 말라는 주의만 회람했다. 새 급수·부품 계약은 서명되지 않았다. 세 유언장·가을 행렬·겨울 베어링 조작은 개막 사실이 아니다.",
+        "connections": "번1동·수유1동·수유2동·수유3동·우이동과 맞닿고 성북 쪽 공유 경계는 화계사입구 안내만 겹친다. 수유사거리 이름은 수유3동 교차와 겹치나 한 세권이 아니다.",
+        "action": {
+          "id": "1130566000-daehan-night-lamp",
+          "label": "가오리 등유를 대한병원 야간등에 모은다",
+          "target_ref": "osm:node:4639296578",
+          "costs": [
+            {
+              "resource": "fuel",
+              "amount": 8,
+              "unit": "점"
+            },
+            {
+              "resource": "labor",
+              "amount": 4,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "대한병원 야간 병상 12자리가 당일 등을 유지한다."
+            }
+          ],
+          "tradeoff": "가오리 승강장 조명이 꺼져 경화물 8상자가 멈추고, 석가봉 정찰 횃불이 비어 화계사입구 밧줄 당번이 빠진다."
+        },
+        "uncertainty": "가오리 승강장·대한병원·석가봉·화계사입구·인수동 주민센터 위치는 OSM 스냅샷(PBF 2026-09-04, 경계 2026-07-01)이다. 조회 기준 2026-09-12와 창작 개막일은 별개다. 등유 배정·병상·정찰은 창작이며 실병원·실대학 운영을 적지 않는다."
+      }
+    }
+  ]
+}

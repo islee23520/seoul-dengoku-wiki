@@ -2,6 +2,7 @@
 * [이 게임이 뭔지](Game-Thesis)
 * [서울과 지하철 레이어](World-and-Subway-Layers)
 * [월드맵을 어떻게 구성하나](World-Map-Construction)
+* [서울 지역 설정 데이터](regions/README)
 * [서울 역 카탈로그](Seoul-Station-Catalog)
 * [역 내부에 들어가면](Station-Interior-Construction)
 * [출격하고 돌아오는 흐름](Campaign-Loop)

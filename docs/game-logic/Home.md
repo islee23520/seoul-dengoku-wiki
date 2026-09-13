@@ -17,8 +17,9 @@
 |---|---|
 | [이 게임이 뭔지](Game-Thesis.md) | 어떤 인물로 시작해 무엇을 이루는 게임인지 |
 | [서울과 지하철 레이어](World-and-Subway-Layers.md) | 다층 세계 그래프와 데이터 출처 |
-| [월드맵을 어떻게 구성하나](World-Map-Construction.md) | 구 25·역 목록·시설을 그래프로 조립하는 순서. 런타임은 세 역 |
-| [서울 역 카탈로그](Seoul-Station-Catalog.md) | OSM에서 뽑은 서울 안 이름 있는 역 334곳 |
+| [월드맵을 어떻게 구성하나](World-Map-Construction.md) | 구 25·역 목록·시설을 그래프로 조립하는 순서. Unity 이동 그래프는 334역 |
+| [서울 지역 설정 데이터](regions/README.md) | 2026-07-01 행정동 25구·427동 저작. 역 목록이 면적 전수가 아님 |
+| [서울 역 카탈로그](Seoul-Station-Catalog.md) | OSM에서 뽑은 서울 안 이름 있는 역 334곳. 공식 전수 아님 |
 | [역 내부에 들어가면](Station-Interior-Construction.md) | 입장 시 층·격자·시설 슬롯. 조우 정산 API와 별개 |
 | [출격하고 돌아오는 흐름](Campaign-Loop.md) | 준비, 원정, 마주침, 전투, 복귀와 결과 반영 |
 | [거점과 영토](Strongholds-and-Territory.md) | 점령, 안정화, 통합, 시설과 영토 과확장 |
@@ -54,7 +55,9 @@
 
 ## 현재 구현 범위
 
-현재 모듈 `Unity POC 통합 코어 루프`까지 구현되어 있습니다. 이 모듈은 `Bootstrap` App scope/FSM, 배타적 `MainTitle`/`Foundation` 화면 lease, uGUI 화면, 세 역 노선과 교섭·우회·전투·정산·복귀를 구현했고, 전투 Core는 30Hz 고정 틱의 실시간 진형·카드 규칙(`rtfc-owner-cards-v2`)입니다. 동일 seed 재현과 중복 정산 거부를 실제 batchmode PlayMode에서 검증했습니다.
+현재 모듈 `Unity POC 통합 코어 루프`까지 구현되어 있습니다. 이 모듈은 `Bootstrap` App scope/FSM, 배타적 `MainTitle`/`Foundation` 화면 lease, uGUI 화면, 세 역 노선과 교섭·우회·전투·정산·복귀를 구현했고, 전투 Core는 30Hz 고정 틱의 실시간 진형·카드 규칙(`rtfc-owner-cards-v2`)입니다. 동일 seed 재현과 중복 정산 거부를 실제 batchmode PlayMode에서 검증했습니다. 캠페인 호스트의 이동 그래프는 `RouteGraph.CreateSeoul()`의 334역·OSM 인접 435입니다. Area 1 콘텐츠 카탈로그는 영등포–신도림–구로 세 역입니다.
+
+서울 지역 총람은 날짜 고정 행정동 427개의 저작 데이터와 열람 화면입니다. 웹 POC `play/`는 그 동을 목적지로 고를 수 있습니다. 둘 다 Unity 역 내부 격자나 16국 캠페인이 아닙니다.
 
 생성 아트 슬롯은 아직 런타임 화면에 연결되지 않았습니다. 아트 슬롯 승인·연결은 별도 수용 조건이며, 코드 검증만으로 모듈 전체가 완료되지는 않습니다. 16국 캠페인 시뮬레이션, 집계 사상자 표현, `ToDo.md`의 13–17 항목은 아직 완료가 아니며 이 문서에 정의된 검증 게이트를 따라 이후 구현합니다. 문서에 적힌 설계는 구현 완료를 의미하지 않습니다.
 

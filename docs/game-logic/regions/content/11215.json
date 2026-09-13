@@ -1,0 +1,1372 @@
+{
+  "schema": "seoul-region-content.v1",
+  "district_id": "gu:11215",
+  "district_name": "광진구",
+  "as_of": "2026-09-12",
+  "regions": [
+    {
+      "region_id": "region:1121571000",
+      "name": "화양동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "일감호 양수와 한아름 저울",
+        "summary": "한아름시장 상인과 일감호 주변 창작 양수조는 같은 인력을 나눠 쓰며 생활 물자 배분과 물 공급의 시간을 협의한다. 개막일 건대입구 인계가 붐비자 주민센터는 시장 운영과 통로 안내를 함께 조정해야 한다.",
+        "anchor_refs": [
+          "osm:node:5863378580",
+          "osm:node:7856245647",
+          "osm:node:12074542746",
+          "osm:node:368898900",
+          "osm:node:9910869010",
+          "osm:relation:7885627"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md",
+          "docs/game-logic/Cast-State-14.md",
+          "docs/game-logic/Cast-State-04.md"
+        ],
+        "polity_contexts": [
+          "S14",
+          "S04"
+        ],
+        "inhabitants": [
+          "일감호 양수조",
+          "한아름시장 저울 서기",
+          "건대입구 대합실 안내",
+          "장례식장 냉칸 지기"
+        ],
+        "livelihood": "양수조가 캠퍼스 물 저장통을 관리하는 동안 상인은 한아름시장 저울로 부식을 나누고 안내조는 건대입구 통과 순번을 맡는다.",
+        "production": {
+          "outputs": [
+            "주간양수",
+            "골목시세",
+            "대합실순번"
+          ],
+          "requires": [
+            "양수노동",
+            "저울추",
+            "대합실조명"
+          ]
+        },
+        "shortages": [
+          "야간잔압",
+          "냉칸얼음",
+          "중립증인"
+        ],
+        "hazard": {
+          "kind": "water",
+          "description": "일감호를 밤새 퍼내면 호안이 무너지고 화양 독이 흙탕으로 바뀐다. 한아름 저울이 먼저 멈추고 대합실 순번이 시장 줄로 새 나온다."
+        },
+        "opening_state": "임하준 실종과 중앙 계약 만료가 알려진 개막일, 주민센터는 일감호 양수 교대와 한아름시장 운영에 필요한 인력을 먼저 협의한다.",
+        "connections": "군자동·능동·자양1동·자양3동·자양4동·구의1동과 맞닿으나 공유 경계가 동일로 통행을 보장하지 않는다. 성동 쪽 경계로 뚝도 나사를 받으러 가는 줄은 별도 허가가 필요하다.",
+        "action": {
+          "id": "gwangjin-hwayang-ilgam-daypump",
+          "label": "일감호 주간 양수 두 줄을 열고 야간 양수를 당일 반려한다",
+          "target_ref": "osm:relation:7885627",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 6,
+              "unit": "shift"
+            },
+            {
+              "resource": "power",
+              "amount": 5,
+              "unit": "전력점"
+            },
+            {
+              "resource": "parts",
+              "amount": 3,
+              "unit": "물자점"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "캠퍼스 쪽 주간 음용 두 줄을 호안 독에 채운다."
+            },
+            {
+              "kind": "authority",
+              "effect": "화양동 주민센터가 야간 양수 청구를 당일 반려한다."
+            }
+          ],
+          "tradeoff": "한아름시장 서기 여섯 교대를 양수 작업에 배정하면 골목 부식 상자 배분이 하루 멈춰 건대입구 대기 인원이 시장 쪽으로 밀려든다."
+        },
+        "uncertainty": "건대입구·한아름시장·일감호·주민센터 위치는 OSM 스냅샷(PBF 2026-09-04, 경계 2026-07-01)이다. 양수 허가, 냉칸 사용, 대합실 순번은 창작 개막일 설정이며 실측 가동이 아니다. 실제 대학·병원 운영을 OSM에서 추론하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1121573000",
+      "name": "군자동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "아사달 연못과 공업사 나사",
+        "summary": "군자동 공동체는 세종대학교 아사달 연못 주변의 물 관리와 천우자동차공업사의 부품 수리를 함께 운영하는 개막 설정이다. 이 스냅샷에 배정된 역 객체는 없으므로 지상 작업장과 보행 인계를 중심으로 생업을 정한다.",
+        "anchor_refs": [
+          "osm:node:5529039117",
+          "osm:way:965940829",
+          "osm:way:101293867",
+          "osm:way:1120339476",
+          "osm:way:1120381335",
+          "osm:way:1043613041"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md",
+          "docs/game-logic/Cast-State-14.md",
+          "docs/game-logic/Cast-State-04.md"
+        ],
+        "polity_contexts": [
+          "S14",
+          "S04"
+        ],
+        "inhabitants": [
+          "아사달 양수조",
+          "천우 선반 도제",
+          "세종 캠퍼스 독지기",
+          "군자동주민센터 원장 서기"
+        ],
+        "livelihood": "양수조와 선반 도제는 연못 주변 관리와 호환 나사 제작에 필요한 교대를 나누며 동부상사의 반출 주문은 별도로 확인한다.",
+        "production": {
+          "outputs": [
+            "캠퍼스음용",
+            "호환나사",
+            "상자출고날인"
+          ],
+          "requires": [
+            "연못원수",
+            "선반공구",
+            "절삭유"
+          ]
+        },
+        "shortages": [
+          "세정용원수",
+          "양품육각",
+          "절삭유"
+        ],
+        "hazard": {
+          "kind": "supply",
+          "description": "선반을 뚝도 나사에만 묶으면 연못 양수조가 비고, 캠퍼스 독이 먼저 마른다. 나사를 거절하면 성동 쪽 펌프 청구가 군자 생활권 보호계약으로 바뀐다."
+        },
+        "opening_state": "개막일 군자동 공동체는 중앙 부품 계약 공백 속에서 아사달 연못 주변 관리와 천우 공업사 선반 작업 중 어디에 교대를 먼저 보낼지 정한다.",
+        "connections": "화양동·중곡1동·능동과 맞닿고 성동 쪽과도 경계를 나눈다. 동일로 구간이 있어도 공유 경계가 성동 공방 출입을 허가하지는 않는다. 군자 대합실 창구는 능동에 있고 이 동 일로 합치지 않는다.",
+        "action": {
+          "id": "gwangjin-gunja-cheonwoo-screws",
+          "label": "천우자동차공업사 선반을 뚝도 펌프 나사 전용으로 하루 묶는다",
+          "target_ref": "osm:way:1120381335",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 7,
+              "unit": "shift"
+            },
+            {
+              "resource": "parts",
+              "amount": 8,
+              "unit": "물자점"
+            },
+            {
+              "resource": "power",
+              "amount": 6,
+              "unit": "전력점"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "호환 육각 한 상자분량을 깎아 성동 쪽 청구 칸에만 올린다."
+            },
+            {
+              "kind": "authority",
+              "effect": "도장 없는 군수 개조 나사를 공업사 밖으로 밀어낸다."
+            }
+          ],
+          "tradeoff": "아사달 양수조 일곱 교대가 빠져 캠퍼스 음용이 주간 한 줄로 줄어든다. 세종대 독지기가 주민센터 날인을 거부한다."
+        },
+        "uncertainty": "세종대·아사달 연못·천우자동차공업사·동일로 위치는 OSM 스냅샷이다. 나사 호환, 출고 날인, 연못 양수는 창작이다. 역·차량기지 객체는 이 동 입력 앵커에 없으므로 이곳에 두지 않는다. 실제 대학·공업사 영업을 추론하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1121574000",
+      "name": "중곡1동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "중랑천 제방 아래 골목 독",
+        "summary": "샤인빌15차와 명성타운빌라 주민은 골목 물 저장통의 배분 순서를 주민센터와 협의한다. 영화데이케어센터 마당을 인계 장소로 쓰려는 돌봄조와 짐꾼은 사용 시간을 다르게 요구한다.",
+        "anchor_refs": [
+          "osm:node:5534465436",
+          "osm:relation:16259781",
+          "osm:way:1113105745",
+          "osm:way:1113380127",
+          "osm:node:10183834298",
+          "osm:node:10183834315",
+          "osm:node:414685386"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md",
+          "docs/game-logic/Cast-State-14.md"
+        ],
+        "polity_contexts": [
+          "S14"
+        ],
+        "inhabitants": [
+          "샤인빌 골목 반장",
+          "데이케어 마당 저수 서기",
+          "상상퀵 짐꾼",
+          "중랑천 제방 구경꾼"
+        ],
+        "livelihood": "물 운반자는 가구별 저장통을 관리하고 돌봄 담당자는 데이케어 마당의 대기 시간을 짐 인계와 나누어 운영한다.",
+        "production": {
+          "outputs": [
+            "골목저수순번",
+            "근거리상자"
+          ],
+          "requires": [
+            "양수노동",
+            "손수레",
+            "주간잔압표"
+          ]
+        },
+        "shortages": [
+          "원수",
+          "양수기",
+          "제방너머증인"
+        ],
+        "hazard": {
+          "kind": "water",
+          "description": "중랑천이 불면 샤인빌 독이 흙탕이 되고 명성타운 반지하가 먼저 잠긴다. 제방을 길로 쓰면 차용 급수 이야기도 같이 끊긴다."
+        },
+        "opening_state": "중곡1동의 창작 주민 회의는 계약 공백으로 물 공급이 불안정해지자 데이케어 마당의 물 인계와 골목 짐 운반에 쓸 인력을 나누려 한다.",
+        "connections": "군자동·중곡2동·중곡3동·능동과 맞닿고 성동·동대문과도 경계를 나눈다. 중랑천 공유 수면은 중랑·동대문 차용 급수의 이야기판일 뿐 도하 간선이 아니다.",
+        "action": {
+          "id": "gwangjin-junggok1-daycare-cistern",
+          "label": "영화데이케어센터 마당에 주거 저수를 주간만 연다",
+          "target_ref": "osm:node:10183834298",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 8,
+              "unit": "shift"
+            },
+            {
+              "resource": "water",
+              "amount": 22,
+              "unit": "급수점"
+            },
+            {
+              "resource": "food",
+              "amount": 6,
+              "unit": "배급점"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "샤인빌·명성타운 쪽 주간 음용 순번 여든 가구를 마당에 예약한다."
+            },
+            {
+              "kind": "cooperation",
+              "effect": "골목 반장이 제방 야간 퍼올림을 하루 거절한다."
+            }
+          ],
+          "tradeoff": "상상퀵 짐꾼 여덟 교대가 빠져 중곡동사거리 상자가 하루 늦는다. 능동 방향 근거리 부식이 빈다."
+        },
+        "uncertainty": "중랑천·샤인빌·데이케어·중곡동사거리 위치는 OSM 스냅샷이다. 저수 순번과 차용 급수 이야기는 창작이다. 중랑물재생센터는 이 동 앵커가 아니다. 실제 사회복지시설 운영을 추론하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1121575000",
+      "name": "중곡2동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "구의교통차고지의 물지게",
+        "summary": "구의교통차고지를 생활 수레 보관소로 쓰려는 창작 작업반과 용마사거리 취사조가 같은 연료와 마당을 요구한다. 주민센터는 용마초 운동장을 모두 물자 대기에 내주지 않으려 한다.",
+        "anchor_refs": [
+          "osm:node:7808597950",
+          "osm:way:417059447",
+          "osm:node:12475508270",
+          "osm:node:414688093",
+          "osm:node:12073535141",
+          "osm:node:8033318685"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md",
+          "docs/game-logic/Cast-State-14.md"
+        ],
+        "polity_contexts": [
+          "S14"
+        ],
+        "inhabitants": [
+          "차고 배차 반장",
+          "물지게 짐꾼",
+          "용마사거리 골목 솥지기",
+          "용마초 운동장 안내"
+        ],
+        "livelihood": "차고지 작업반이 수레를 점검하고 취사조가 식사를 준비하는 동안 주민 대표는 운동장의 생활 이용 시간을 남겨 둔다.",
+        "production": {
+          "outputs": [
+            "물지게출고",
+            "골목식사",
+            "교차로순번"
+          ],
+          "requires": [
+            "차고노동",
+            "연료",
+            "양수통"
+          ]
+        },
+        "shortages": [
+          "연료",
+          "양수통",
+          "교차로대기석"
+        ],
+        "hazard": {
+          "kind": "access",
+          "description": "물지게가 차고에서 한꺼번에 나가 용마사거리를 막으면 중곡 골목 상자가 능동으로 넘어가지 못한다. 운동장을 대기열로 열면 배급 줄이 학교 담까지 밀린다."
+        },
+        "opening_state": "중앙 부품 계약이 만료된 개막일, 중곡2동 작업반은 구의교통차고지의 생활 수레 보관과 용마사거리 취사 일정의 우선순위를 정한다.",
+        "connections": "중곡1동·중곡3동·중곡4동·능동과 맞닿는다. 용마사거리는 교차로이지 중랑 능선이나 구의 펌프실로 가는 허가증이 아니다. 공유 경계로 이웃 동 독을 합치지 않는다.",
+        "action": {
+          "id": "gwangjin-junggok2-busyard-cisterncart",
+          "label": "구의교통차고지 베이 셋을 주간 물지게 출고로 바꾼다",
+          "target_ref": "osm:node:12475508270",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 7,
+              "unit": "shift"
+            },
+            {
+              "resource": "fuel",
+              "amount": 5,
+              "unit": "연료점"
+            },
+            {
+              "resource": "water",
+              "amount": 18,
+              "unit": "급수점"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "주간 물지게 세 대를 중곡 골목 독으로만 내보낸다."
+            },
+            {
+              "kind": "connection",
+              "effect": "용마사거리 통과를 물지게 순번 뒤로 하루 고정한다."
+            }
+          ],
+          "tradeoff": "골목 솥 연료 다섯 점을 차고 야간 조명에서 빼 쓴다. 용마사거리 식사가 하루 줄고 운동장 대기를 요구하는 목소리가 커진다."
+        },
+        "uncertainty": "구의교통차고지·용마사거리·용마초 위치는 OSM 스냅샷이다. 물지게 출고와 골목 솥 배급은 창작이다. 역을 만들지 않았고, 실제 차고·병원 영업을 추론하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1121576000",
+      "name": "중곡3동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "장평교 주간 대조와 중곡 대합실",
+        "summary": "중곡역과 장평교 사이 인계 기록을 맞추려는 창작 안내조는 주거지 급수표와 통행표를 분리하려 한다. 보건행정복지타운 건물의 돌봄 공간도 같은 인력을 필요로 한다.",
+        "anchor_refs": [
+          "osm:node:6046633862",
+          "osm:node:368899709",
+          "osm:way:416822238",
+          "osm:way:1416232102",
+          "osm:way:1153270697",
+          "osm:node:436833476",
+          "osm:relation:16259781"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md",
+          "docs/game-logic/Cast-State-14.md"
+        ],
+        "polity_contexts": [
+          "S14"
+        ],
+        "inhabitants": [
+          "중곡 대합실 서기",
+          "장평교 통과 기록원",
+          "중곡아파트 반장",
+          "복지타운 병상 당번"
+        ],
+        "livelihood": "인계 서기는 급수표와 통행 기록을 대조하고 돌봄조는 복지타운 건물의 대기 구획을 별도로 운영한다.",
+        "production": {
+          "outputs": [
+            "급수표사본",
+            "교량통과기록",
+            "야간대기병상"
+          ],
+          "requires": [
+            "대합실조명",
+            "기록노동",
+            "세척수"
+          ]
+        },
+        "shortages": [
+          "잔압게시",
+          "중립증인",
+          "야간조명"
+        ],
+        "hazard": {
+          "kind": "governance",
+          "description": "장평교에 보호 창구가 먼저 열리면 대합실 급수표가 통행세로 바뀐다. 병상 당번과 아파트 반장이 같은 날 갈라선다."
+        },
+        "opening_state": "개막일 중곡3동 주민센터는 임하준 실종과 계약 만료 공지를 붙인 뒤 장평교 통과 기록과 주거 급수표를 별도로 관리하는 방안을 협의한다.",
+        "connections": "중곡1동·중곡2동·중곡4동과 맞닿고 동대문·중랑과도 경계를 나눈다. 장평교와 중랑천은 공유 수면·교량 객체이지 중랑 환승시로 가는 자동 통행이 아니다.",
+        "action": {
+          "id": "gwangjin-junggok3-jangpyeong-daybook",
+          "label": "장평교를 주간 급수표 대조만 열고 중무장은 거절한다",
+          "target_ref": "osm:node:436833476",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 6,
+              "unit": "shift"
+            },
+            {
+              "resource": "scrip",
+              "amount": 7,
+              "unit": "교환권"
+            },
+            {
+              "resource": "power",
+              "amount": 4,
+              "unit": "전력점"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "connection",
+              "effect": "주간 경통과 네 편성의 급수표 사본만 남기고 중무장 통과를 기록 거절로 남긴다."
+            },
+            {
+              "kind": "legitimacy",
+              "effect": "중곡3동 주민센터 날인이 보호 창구보다 앞에 붙는다."
+            }
+          ],
+          "tradeoff": "대합실 조명 네 점을 교량으로 돌려 중곡아파트 야간 게시가 끊긴다. 병상 당번이 세척수 순번을 아파트에 양보하지 않는다."
+        },
+        "uncertainty": "중곡역·장평교·중랑천·센터 건물 위치는 OSM 스냅샷이다. 급수표 대조와 병상 배정은 창작이며 실제 의료기관 운영이 아니다. 관측일 2026-09-12와 개막일은 별개다."
+      }
+    },
+    {
+      "region_id": "region:1121577000",
+      "name": "중곡4동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "용곡삼거리 위 능선 집결",
+        "summary": "기복이 큰 중곡4동의 창작 공동체는 대원고등학교 운동장을 주간 집결지로 삼아 사면 이동을 준비한다. 주민센터는 순찰 안내와 배급을 같은 교대로 처리하기 어렵다.",
+        "anchor_refs": [
+          "osm:node:368623115",
+          "osm:node:368899706",
+          "osm:way:1350598648",
+          "osm:node:357834546",
+          "osm:node:414685894",
+          "osm:node:3708064718"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md",
+          "docs/game-logic/Cast-State-14.md"
+        ],
+        "polity_contexts": [
+          "S14"
+        ],
+        "inhabitants": [
+          "능선 주간 척후",
+          "대원 운동장 집결 안내",
+          "동도택시 들것조",
+          "중곡4동 배급 서기"
+        ],
+        "livelihood": "사면 안내조와 들것 운반조는 운동장 집결 인원을 나누어 받으며 안전이 확인된 보행 구간부터 점검한다.",
+        "production": {
+          "outputs": [
+            "고지관측",
+            "들것이송",
+            "낙석안내"
+          ],
+          "requires": [
+            "경사노동",
+            "횃불",
+            "식량"
+          ]
+        },
+        "shortages": [
+          "야간광학",
+          "난방연료",
+          "들것"
+        ],
+        "hazard": {
+          "kind": "slope",
+          "description": "고지가 뚫리면 용곡삼거리와 구의 쪽 시장 게시가 같은 밤에 열린다. 낙석이 중곡동입구를 막으면 아래 골목 독으로 들것이 내려가지 못한다."
+        },
+        "opening_state": "중곡4동 주민들은 중앙 계약 공백 속에서도 대원고 운동장 집결과 사면 점검을 유지하기 위해 순찰·배급 교대를 나누는 중이다.",
+        "connections": "중곡2동·중곡3동·능동·구의2동과 맞닿고 중랑 쪽과도 능선을 나눈다. 공유 능선이 중랑 환승이나 구의 대합실로 가는 길이 아니며, 야간 봉쇄가 기본이다.",
+        "action": {
+          "id": "gwangjin-junggok4-daewon-ridge-muster",
+          "label": "대원고등학교 운동장을 주간 능선 집결로 열고 동도택시 들것 한 대를 묶는다",
+          "target_ref": "osm:node:368623115",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 8,
+              "unit": "shift"
+            },
+            {
+              "resource": "food",
+              "amount": 10,
+              "unit": "배급점"
+            },
+            {
+              "resource": "fuel",
+              "amount": 4,
+              "unit": "연료점"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "hazard",
+              "effect": "주간 무단 사면 접근을 막고 들것 한 대를 용곡삼거리까지 예약한다."
+            },
+            {
+              "kind": "authority",
+              "effect": "물 기술자의 초소 차단 요청을 당일 운동장에서 반려한다."
+            }
+          ],
+          "tradeoff": "주민센터 배급 여덟 교대가 빠져 아래 골목 독이 오후면 마른다. 고서준의 단독 지휘 명분이 사면에서만 세진다."
+        },
+        "uncertainty": "대원고·동도택시·용곡삼거리와 지형 기복은 입력 프로필이다. 능선 봉쇄·들것 배정은 창작이다. 역을 만들지 않았고, 실제 학교 수업을 추론하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1121578000",
+      "name": "능동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "군자 대합실과 환경연못",
+        "summary": "군자역 인계조와 어린이대공원 주변 작업반은 통로 안내와 환경연못 관리에 같은 교대를 요구한다. 개막일 주민센터는 급수 서명과 정비 청구를 한 창구에서 처리하려다 다시 나눈다.",
+        "anchor_refs": [
+          "osm:node:6046633858",
+          "osm:node:6046633861",
+          "osm:node:368898871",
+          "osm:way:629022507",
+          "osm:way:629022593",
+          "osm:node:436832681"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md",
+          "docs/game-logic/Cast-State-14.md",
+          "docs/game-logic/Cast-State-04.md"
+        ],
+        "polity_contexts": [
+          "S14",
+          "S04"
+        ],
+        "inhabitants": [
+          "군자 대합실 서기",
+          "환경연못 세정조",
+          "평화동산 채집 당번",
+          "어린이대공원 후문 안내"
+        ],
+        "livelihood": "안내조는 군자역 인계 순번을 관리하고 환경연못 주변 작업반은 확인된 물의 용도와 작업 구획을 따로 기록한다.",
+        "production": {
+          "outputs": [
+            "이중창구서명",
+            "세정수",
+            "낙엽연료"
+          ],
+          "requires": [
+            "대합실조명",
+            "퍼올리는노동",
+            "건조장"
+          ]
+        },
+        "shortages": [
+          "대기석",
+          "세정용원수",
+          "중립증인"
+        ],
+        "hazard": {
+          "kind": "governance",
+          "description": "강국 사절이 군자 대합실에 보호 창구를 먼저 열면 연못 세정조와 정비 도장이 같은 날 갈라선다. 후문 대기열이 동산 채집까지 밀려 횃불이 끊긴다."
+        },
+        "opening_state": "개막일 능동 주민센터는 군자역 안내와 환경연못 관리에 같은 인력이 필요하다는 요청을 받고 두 작업의 순서를 다시 정한다.",
+        "connections": "화양동·군자동·중곡1동·중곡2동·중곡4동·구의1동·구의2동과 맞닿는다. 군자역 이름과 군자동은 다르고, 공유 경계가 정비 출고를 허가하지 않는다. 아차산 사면 통행은 중곡4동·구의2동 허가가 따로다.",
+        "action": {
+          "id": "gwangjin-neungdong-gunja-split-window",
+          "label": "군자 대합실에서 급수 서명과 정비 도장을 창구 둘로 가른다",
+          "target_ref": "osm:node:6046633861",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 5,
+              "unit": "shift"
+            },
+            {
+              "resource": "power",
+              "amount": 4,
+              "unit": "전력점"
+            },
+            {
+              "resource": "scrip",
+              "amount": 6,
+              "unit": "교환권"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "legitimacy",
+              "effect": "제한 급수 서명이 정비 도장보다 앞에 남고 보호 창구가 하루 열리지 않는다."
+            },
+            {
+              "kind": "connection",
+              "effect": "어린이대공원 후문 통과 세 줄을 급수표와 한 칠판에 적지 않는다."
+            }
+          ],
+          "tradeoff": "환경연못 세정 다섯 교대가 빠져 세정수가 하루 끊긴다. 평화동산 채집이 늦어 야간 횃불 한 구간이 꺼진다."
+        },
+        "uncertainty": "군자역·어린이대공원역·환경연못·UN평화동산 위치는 OSM 스냅샷이다. 이중 창구와 세정 허가는 창작이다. 실제 공원·역 운영을 추론하지 않으며 차량기지를 이 동에 두지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1121581000",
+      "name": "광장동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "천호대교 북단의 경화물",
+        "summary": "광나루역 주변의 창작 통과 담당자와 천호대교 북단 점검조는 경화물 인계 시간을 맞추려 한다. 낙타고개 주변의 사면 접근은 별도 확인이 필요해 교량 일정만으로 운반을 약속할 수 없다.",
+        "anchor_refs": [
+          "osm:node:6039313609",
+          "osm:node:368898895",
+          "osm:node:2461170292",
+          "osm:node:13076502873",
+          "osm:node:999136481",
+          "osm:way:1046426574"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md",
+          "docs/game-logic/Cast-State-14.md"
+        ],
+        "polity_contexts": [
+          "S14"
+        ],
+        "inhabitants": [
+          "천호대교 북단 척후",
+          "광나루 통과 서기",
+          "낙타고개 횃불 당번",
+          "광장 단지 양수조"
+        ],
+        "livelihood": "북단 점검조가 경화물 상태와 봉인을 확인하면 광나루 안내조가 주민에게 인계 일정을 알리고 사면 담당자는 고개 접근을 따로 살핀다.",
+        "production": {
+          "outputs": [
+            "교량통과표",
+            "경화물순번",
+            "고개예고"
+          ],
+          "requires": [
+            "감시노동",
+            "조명전력",
+            "봉인끈"
+          ]
+        },
+        "shortages": [
+          "야간조명",
+          "중량저울",
+          "중립증인"
+        ],
+        "hazard": {
+          "kind": "access",
+          "description": "순찰열차가 북단에 임의 정차하면 통과표가 보호비 창구로 바뀐다. 낙타고개 횃불이 꺼지면 단지 옥상과 교량이 같은 밤에 열린다."
+        },
+        "opening_state": "광장동의 창작 안내조는 중앙 계약이 만료된 개막일에 광나루역 인계와 천호대교 북단 점검의 시간을 먼저 맞추려 한다.",
+        "connections": "구의2동·구의3동과 맞닿고 한강 너머 송파·강동과 경계를 나눈다. 공유 수면과 교량 북단이 잠실·천호 생활권 간선이 아니며, 도하 허가는 관문국 일정표가 따로다.",
+        "action": {
+          "id": "gwangjin-gwangjang-cheonho-north-toll",
+          "label": "천호대교 북단을 관문국 주간 경화물 일정표로만 열고 중무장은 거절한다",
+          "target_ref": "osm:node:999136481",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 6,
+              "unit": "shift"
+            },
+            {
+              "resource": "power",
+              "amount": 6,
+              "unit": "전력점"
+            },
+            {
+              "resource": "scrip",
+              "amount": 8,
+              "unit": "교환권"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "connection",
+              "effect": "주간 경화물 네 편성만 통과시키고 임의 정차를 기록칸에 남긴다."
+            },
+            {
+              "kind": "authority",
+              "effect": "교량 통행을 관문국 주간 일정표로 하루 고정한다."
+            }
+          ],
+          "tradeoff": "낙타고개 횃불 여섯 교대가 빠져 고개 한 구간이 꺼진다. 광나루 대합실 야간 봉쇄가 약해져 단지 양수조가 대기열에 밀린다."
+        },
+        "uncertainty": "광나루역·천호대교 북단·낙타고개 위치는 OSM 스냅샷이다. 통과 일정표와 중무장 거절은 창작이다. 한강 공유 경계를 이동 간선으로 적지 않았고, 실제 교량 통제를 추론하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1121582000",
+      "name": "자양1동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "자양골목시장 저울과 혜민 들것",
+        "summary": "자양골목시장의 창작 배급조는 혜민병원 건물의 돌봄 공간과 같은 세척수·운반 인력을 나눠 쓴다. 주민센터는 시장 출하가 돌봄 인계를 계속 밀어내지 않도록 일정을 조정한다.",
+        "anchor_refs": [
+          "osm:node:1924799908",
+          "osm:node:5529686465",
+          "osm:way:174866915",
+          "osm:node:10829592344",
+          "osm:node:12324620064",
+          "osm:way:1193259435"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md",
+          "docs/game-logic/Cast-State-14.md"
+        ],
+        "polity_contexts": [
+          "S14"
+        ],
+        "inhabitants": [
+          "골목시장 저울 서기",
+          "자양 물지게",
+          "혜민 들것조",
+          "보광슈퍼 재고 당번"
+        ],
+        "livelihood": "시장 상인과 들것조가 부식 상자·물통·의무 물자의 인계 순서를 나누어 받는다.",
+        "production": {
+          "outputs": [
+            "골목시세",
+            "주거부식상자",
+            "들것순번"
+          ],
+          "requires": [
+            "부식재고",
+            "양수노동",
+            "세척수"
+          ]
+        },
+        "shortages": [
+          "원수",
+          "근거리부식",
+          "세척수"
+        ],
+        "hazard": {
+          "kind": "supply",
+          "description": "시장 저울을 주거 전용으로 묶으면 혜민 마당 세척수가 끊기고 들것이 자양로에 쌓인다. 물을 병원으로만 보내면 골목 독이 군자 세정 이야기보다 먼저 마른다."
+        },
+        "opening_state": "개막일 자양1동 주민 회의는 중앙 공급 협의가 흔들리자 골목시장 출하와 혜민병원 건물의 돌봄 인계를 같은 작업표에서 조정한다.",
+        "connections": "화양동·자양2동·자양3동·구의1동과 맞닿는다. 건국대 캠퍼스 객체는 경계를 걸치나 화양 일감호 양수를 이 동 산출로 적지 않는다. 공유 골목이 건대입구 대합실 출입은 아니다.",
+        "action": {
+          "id": "gwangjin-jayang1-market-scale",
+          "label": "자양골목시장 저울을 주거 부식 전용으로 하루 고정한다",
+          "target_ref": "osm:way:174866915",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 8,
+              "unit": "shift"
+            },
+            {
+              "resource": "food",
+              "amount": 9,
+              "unit": "배급점"
+            },
+            {
+              "resource": "water",
+              "amount": 16,
+              "unit": "급수점"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "골목 백십 가구의 당일 부식 상자를 저울에 예약한다."
+            },
+            {
+              "kind": "cooperation",
+              "effect": "반장이 능선 야간 차출과 병원 마당 우선 급수를 하루 거절한다."
+            }
+          ],
+          "tradeoff": "혜민 들것조 세척수 열여섯 점이 빠져 마당 대기가 자양로로 새 나온다. 보광슈퍼 뒷줄이 하루 빈다."
+        },
+        "uncertainty": "자양골목시장·혜민병원·자양로 위치는 OSM 스냅샷이다. 저울 전용과 들것 순번은 창작이다. 역을 만들지 않았고 실제 병원·시장 영업을 추론하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1121583000",
+      "name": "자양2동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "구의 대합실 잔압과 잠실대교 북단",
+        "summary": "구의역이 포함된 자양2동의 창작 주민들은 대합실 안내와 단지 양수, 잠실대교 북단 점검에 필요한 전력을 나눈다. 어느 한쪽 일정만 늘리면 나머지 작업이 멈춘다.",
+        "anchor_refs": [
+          "osm:node:5933687039",
+          "osm:node:368899147",
+          "osm:relation:3769500",
+          "osm:way:1240382557",
+          "osm:node:436839042",
+          "osm:node:414683223"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md",
+          "docs/game-logic/Cast-State-14.md",
+          "docs/game-logic/Cast-State-04.md"
+        ],
+        "polity_contexts": [
+          "S14",
+          "S04"
+        ],
+        "inhabitants": [
+          "구의 대합실 잔압 서기",
+          "잠실대교 북단 척후",
+          "안틸리아 단지 양수조",
+          "자양2동사거리 통과 안내"
+        ],
+        "livelihood": "역 안내조가 인계 시간을 게시하고 단지 물 운반조와 북단 점검조는 각각 확인된 작업 구획을 관리한다.",
+        "production": {
+          "outputs": [
+            "잔압게시",
+            "대교기록",
+            "단지양수"
+          ],
+          "requires": [
+            "대합실조명",
+            "감시노동",
+            "양수노동"
+          ]
+        },
+        "shortages": [
+          "잔압게시칸",
+          "야간조명",
+          "중립증인"
+        ],
+        "hazard": {
+          "kind": "access",
+          "description": "북단 감시가 빠지면 순찰열차가 강변에 붙고 대합실 잔압칸이 보호 도장으로 덮인다. 강을 길로 삼으면 송파 쪽 청구가 생활 통과로 위장한다."
+        },
+        "opening_state": "중앙 급수·부품 계약이 만료된 개막일, 자양2동 안내조와 양수조는 구의역 안내·단지 물 운반·북단 점검에 나눌 전력을 협의한다.",
+        "connections": "자양1동·자양3동·구의1동·구의3동과 맞닿고 한강 너머 송파와 경계를 나눈다. 공유 수면이 잠실 배급국 출입이 아니며, 구의역 창구를 구의1동 사거리 소유로 적지 않는다.",
+        "action": {
+          "id": "gwangjin-jayang2-gui-pressure-board",
+          "label": "구의 대합실 칠판에 잔압만 먼저 적고 정비 도장을 오후로 민다",
+          "target_ref": "osm:node:5933687039",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 5,
+              "unit": "shift"
+            },
+            {
+              "resource": "power",
+              "amount": 4,
+              "unit": "전력점"
+            },
+            {
+              "resource": "scrip",
+              "amount": 5,
+              "unit": "교환권"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "legitimacy",
+              "effect": "주간 잔압 서명이 정비 도장보다 앞에 남고 보호 창구가 오전까지 열리지 않는다."
+            },
+            {
+              "kind": "service",
+              "effect": "안틸리아 단지 주간 양수 한 줄을 게시된 숫자 위에만 허용한다."
+            }
+          ],
+          "tradeoff": "잠실대교북단 감시 다섯 교대가 빠져 야간 기록칸이 빈다. 순찰 그림자가 강변에 붙을 구멍이 생긴다."
+        },
+        "uncertainty": "구의역·잠실대교북단·한강 위치는 OSM 스냅샷이다. 잔압 게시 순서와 도하 거절은 창작이다. 구의정수장 객체를 이 동에 두지 않았고 실제 역 운영을 추론하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1121584000",
+      "name": "자양3동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "우성 옥상 독과 아쿠아링 지붕",
+        "summary": "우성아파트 주변 주민들은 옥상 저장통과 아쿠아링 지붕 빗물받이를 점검하는 창작 공동체를 이룬다. 출입구 이름의 접근점이 있어도 이 스냅샷에서 역 중심 객체가 배정되지 않았다는 점을 보존하며 지상 물 운반을 설정한다.",
+        "anchor_refs": [
+          "osm:node:7808597955",
+          "osm:node:7844945485",
+          "osm:node:9894521686",
+          "osm:node:9894521687",
+          "osm:relation:14670864",
+          "osm:node:12324620054",
+          "osm:way:174699401"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md",
+          "docs/game-logic/Cast-State-14.md"
+        ],
+        "polity_contexts": [
+          "S14"
+        ],
+        "inhabitants": [
+          "우성 옥상 독지기",
+          "아쿠아링 빗물조",
+          "계단 양수 노동",
+          "자양중 건조대 당번"
+        ],
+        "livelihood": "양수조와 계단 운반자는 저장통의 용도·상태를 구분하고 자양중 건조대 담당자와 교대를 맞춘다.",
+        "production": {
+          "outputs": [
+            "옥상음용",
+            "지붕세척수",
+            "계단양수"
+          ],
+          "requires": [
+            "양수노동",
+            "지붕포집",
+            "봉인끈"
+          ]
+        },
+        "shortages": [
+          "원수",
+          "양수기",
+          "지붕포집천"
+        ],
+        "hazard": {
+          "kind": "water",
+          "description": "옥상 독을 열면 지붕 빗물이 비고 자양중 건조대가 멈춘다. 빗물만 모으면 3차 음용이 오후면 끊기고 골목 입구에 물지게가 쌓인다."
+        },
+        "opening_state": "자양3동의 창작 주민 작업반은 개막일 공급 공백에 대응해 우성아파트 저장통과 아쿠아링 빗물받이 점검에 같은 교대를 번갈아 배정하려 한다.",
+        "connections": "화양동·자양1동·자양2동·자양4동과 맞닿고 한강 너머 강남·송파와 경계를 나눈다. 공유 수면이 청담·잠실 도하를 허가하지 않으며, 자양역 정차는 이웃 자양4동의 일이다.",
+        "action": {
+          "id": "gwangjin-jayang3-woosung-roof-seal",
+          "label": "우성아파트 3차 옥상 독을 주간 음용으로 봉인한다",
+          "target_ref": "osm:node:7844945485",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 7,
+              "unit": "shift"
+            },
+            {
+              "resource": "water",
+              "amount": 20,
+              "unit": "급수점"
+            },
+            {
+              "resource": "parts",
+              "amount": 4,
+              "unit": "물자점"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "3차 옥상 주간 음용 한 줄을 봉인끈 아래 예약한다."
+            },
+            {
+              "kind": "cooperation",
+              "effect": "2차·4차 계단조가 지붕 무단 포집을 하루 막는다."
+            }
+          ],
+          "tradeoff": "아쿠아링 빗물조가 비워져 자양중 건조대 세척수가 끊긴다. 골목 입구 물지게가 오후 대기열을 만든다."
+        },
+        "uncertainty": "우성 단지·아쿠아링·출구 이름 객체는 OSM 스냅샷 근거다. station_count=0은 이 자료에서 배정된 역 중심 객체가 없다는 뜻이며 실제 열차·승강장 부재를 확정하지 않는다. 옥상 봉인과 빗물 배분·가동은 창작이다."
+      }
+    },
+    {
+      "region_id": "region:1121584700",
+      "name": "자양4동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "커먼그라운드 봉인과 조양시장",
+        "summary": "커먼그라운드와 조양시장 주변의 창작 상인들은 포장·보관·취사 공간을 함께 쓴다. 리안요양병원 건물의 돌봄조도 같은 부식을 기다려 야시장 운영 시간을 무작정 늘릴 수 없다.",
+        "anchor_refs": [
+          "osm:node:6048955198",
+          "osm:node:368739954",
+          "osm:node:368898863",
+          "osm:way:1280867354",
+          "osm:way:357623771",
+          "osm:way:1081310368",
+          "osm:node:597233255"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md",
+          "docs/game-logic/Cast-State-14.md",
+          "docs/game-logic/Cast-State-04.md"
+        ],
+        "polity_contexts": [
+          "S14",
+          "S04"
+        ],
+        "inhabitants": [
+          "커먼그라운드 봉인 서기",
+          "조양시장 화기 당번",
+          "리안 죽솥 지기",
+          "청담대교 북단 기록원"
+        ],
+        "livelihood": "상인과 돌봄 배급조가 취사 재고를 나누고 보관 담당자는 컨테이너 구획의 봉인과 인계를 확인한다.",
+        "production": {
+          "outputs": [
+            "근거리부식",
+            "봉인부품상자",
+            "대교기록"
+          ],
+          "requires": [
+            "화기연료",
+            "봉인끈",
+            "감시노동"
+          ]
+        },
+        "shortages": [
+          "소화모래",
+          "근거리부식",
+          "야간조명"
+        ],
+        "hazard": {
+          "kind": "fire",
+          "description": "야시 화기가 컨테이너 지붕으로 옮기면 조양시장과 맛의거리가 같은 불에 탄다. 봉인을 풀면 부품 상자가 야시 저울로 새고 죽 솥이 빈다."
+        },
+        "opening_state": "임하준 실종과 계약 만료가 알려진 개막일, 자양4동 상인과 돌봄조는 시장 운영 시간을 늘리기 전에 포장·취사·돌봄 재고를 나누려 한다.",
+        "connections": "화양동·자양3동과 맞닿고 성동·강남과도 경계를 나눈다. 성수사거리 이름과 청담대교 북단이 성수 공방·강남 생활권 출입을 허가하지 않는다. 건대 맛의거리는 경계를 걸친 골목이지 화양 대합실이 아니다.",
+        "action": {
+          "id": "gwangjin-jayang4-commonground-seal",
+          "label": "커먼그라운드를 주간 부품 창고로 봉인하고 야시 화기를 끈다",
+          "target_ref": "osm:way:357623771",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 6,
+              "unit": "shift"
+            },
+            {
+              "resource": "parts",
+              "amount": 7,
+              "unit": "물자점"
+            },
+            {
+              "resource": "scrip",
+              "amount": 9,
+              "unit": "교환권"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "호환 나사 상자를 별도 보관하고 야시장 화기는 일몰부터 금지해 컨테이너와 포장재의 야간 화재 위험을 줄인다."
+            },
+            {
+              "kind": "hazard",
+              "effect": "주간 세 차례 화기·지붕 점검과 일몰 전 소등 확인을 실시하며 금지 후 불씨를 발견하면 현장 안내조에 알린다."
+            }
+          ],
+          "tradeoff": "조양시장 부식 저울이 하루 멈추고 리안 죽 솥이 빈다. 자양역 대기열이 맛의거리로 새 나와 북단 기록원이 빠진다."
+        },
+        "uncertainty": "자양역·커먼그라운드·조양시장·청담대교 북단 위치는 OSM 스냅샷이다. 봉인과 야시 소화는 창작이다. 실제 상업시설 영업과 요양병원 운영을 추론하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1121585000",
+      "name": "구의1동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "구의사거리 두 창구",
+        "summary": "구의1동 주민센터의 창작 접수조는 급수와 정비 요청을 지상 창구에서 따로 받는다. 사거리와 새한아파트 인계는 주변 지역의 실제 통행 확인이 필요하며 역이나 정수장 이름으로 소유를 추정하지 않는다. 구의1동은 가구 급수 요청과 작업장 정비 청구가 같은 창구에 몰리는 만큼 수리 우선순위의 공개가 필요하다.",
+        "anchor_refs": [
+          "osm:node:368899052",
+          "osm:way:468753269",
+          "osm:node:357834266",
+          "osm:node:414683263",
+          "osm:node:10927683785",
+          "osm:way:1198651834"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md",
+          "docs/game-logic/Cast-State-14.md",
+          "docs/game-logic/Cast-State-04.md"
+        ],
+        "polity_contexts": [
+          "S14",
+          "S04"
+        ],
+        "inhabitants": [
+          "구의1동 창구 서기",
+          "새한아파트 양수조",
+          "사거리 통과 안내",
+          "자양로26길 상자 짐꾼"
+        ],
+        "livelihood": "접수 서기는 가구 요청과 작업장 청구를 분리 기록하고 짐꾼은 확인된 지상 인계 구획으로 상자를 옮긴다.",
+        "production": {
+          "outputs": [
+            "이중창구서명",
+            "사거리순번",
+            "단지양수"
+          ],
+          "requires": [
+            "행정노동",
+            "조명전력",
+            "양수노동"
+          ]
+        },
+        "shortages": [
+          "대기석",
+          "중립증인",
+          "잔압게시"
+        ],
+        "hazard": {
+          "kind": "governance",
+          "description": "사거리에 보호 창구가 먼저 열리면 급수 서명과 정비 도장이 같은 날 갈라선다. 표지 앞 소문이 새한 독을 봉인 핑계로 닫는다. 수리 접수 업무를 배정하지 않으면 주민이 선택의 결과를 확인하기 어렵다."
+        },
+        "opening_state": "개막일 구의1동 접수조는 중앙 계약 공백에 따른 가구 급수 요청과 작업장 부품 청구를 다른 장부에서 확인하는 방안을 협의한다.",
+        "connections": "화양동·능동·자양1동·자양2동·구의2동·구의3동과 맞닿는다. 구의사거리 이름이 구의역·아차산역 출입을 의미하지 않으며, 건국대 캠퍼스 걸침은 화양 양수 주권이 아니다.",
+        "action": {
+          "id": "gwangjin-gui1-townhall-split-window",
+          "label": "구의1동 생활 수리 청구의 순서를 공개한다",
+          "target_ref": "osm:node:368899052",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 5,
+              "unit": "shift"
+            },
+            {
+              "resource": "power",
+              "amount": 3,
+              "unit": "전력점"
+            },
+            {
+              "resource": "scrip",
+              "amount": 6,
+              "unit": "교환권"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "생활 유지에 필요한 가구 수리를 다른 청구와 구분해 주민에게 공개한다."
+            }
+          ],
+          "tradeoff": "대량 부품을 제공한 작업장 주문이 늦어져 별도 협상을 해야 한다."
+        },
+        "uncertainty": "구의1동 주민센터·구의사거리·새한아파트 위치는 OSM 스냅샷이다. 창구 분리와 보호 거절은 창작이다. 역·정수장 객체를 이 동에 두지 않았고 실제 경찰·학교 운영을 추론하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1121586000",
+      "name": "구의2동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "아차산 주간 순찰과 구의시장 게시",
+        "summary": "아차산역과 주변 사면의 창작 안내조는 능선 점검과 래미안구의파크스위트 주민의 물 운반을 같은 교대로 감당하기 어렵다. 주민센터는 주간에 확인한 통로를 우선 사용하려 한다.",
+        "anchor_refs": [
+          "osm:node:6039313612",
+          "osm:node:368899079",
+          "osm:way:790201429",
+          "osm:node:355173375",
+          "osm:node:414685187",
+          "osm:way:175320279"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md",
+          "docs/game-logic/Cast-State-14.md"
+        ],
+        "polity_contexts": [
+          "S14"
+        ],
+        "inhabitants": [
+          "아차산 주간 척후",
+          "구의시장앞 게시 서기",
+          "래미안 옥상 양수조",
+          "광진초 운동장 낙석 안내"
+        ],
+        "livelihood": "사면 안내자와 단지 양수조가 작업 시간을 나누고 구의시장앞 게시 담당자는 확인된 인계 일정만 주민에게 알린다.",
+        "production": {
+          "outputs": [
+            "고지관측",
+            "시장게시",
+            "옥상양수"
+          ],
+          "requires": [
+            "경사노동",
+            "횃불",
+            "게시노동"
+          ]
+        },
+        "shortages": [
+          "야간광학",
+          "난방연료",
+          "들것"
+        ],
+        "hazard": {
+          "kind": "slope",
+          "description": "고지 안내가 끊기면 구의시장앞과 광장 방향 접근 상태를 확인하기 어렵고 낙석으로 단지 계단이 막힐 수 있다. 배관 점검 인력이 줄면 저온에 취약한 구간의 동파를 늦게 발견해 물 인계가 중단된다."
+        },
+        "opening_state": "중앙 공급 협의가 흔들리는 개막일, 구의2동 주민들은 능선 점검과 단지 물 운반을 유지할 최소 교대를 우선 배정하려 한다.",
+        "connections": "중곡4동·능동·광장동·구의1동·구의3동과 맞닿는다. 아차산 이름 역이 중곡4동 사면 집결이나 광나루 교량 열쇠를 겸하지 않으며, 공유 능선은 야간 봉쇄가 기본이다.",
+        "action": {
+          "id": "gwangjin-gui2-achasan-daywatch",
+          "label": "아차산역 밖 주간 순찰을 고정하고 야간 사면은 봉쇄한다",
+          "target_ref": "osm:node:6039313612",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 8,
+              "unit": "shift"
+            },
+            {
+              "resource": "food",
+              "amount": 10,
+              "unit": "배급점"
+            },
+            {
+              "resource": "fuel",
+              "amount": 5,
+              "unit": "연료점"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "hazard",
+              "effect": "주간 무단 사면 접근을 막고 횃불 예고를 세 구간 유지한다."
+            },
+            {
+              "kind": "authority",
+              "effect": "펌프실 열쇠 청구를 당일 역 밖에서 반려한다."
+            }
+          ],
+          "tradeoff": "구의시장앞 게시 서기 여덟 교대가 빠져 래미안 옥상 양수가 오후에 끊긴다. 고서준의 단독 지휘 명분이 역 밖 사면에서만 세진다."
+        },
+        "uncertainty": "아차산역·구의시장앞·래미안 단지와 지형 기복은 입력 프로필이다. 순찰 봉쇄와 열쇠 반려는 창작이다. 구의정수장 객체를 이 동 앵커로 쓰지 않았고 실제 역 운영을 추론하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1121587000",
+      "name": "구의3동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "동서울 순번과 테크노마트 나사",
+        "summary": "동서울터미널의 창작 인계조와 테크노마트 부품 수리조는 경화물 검수와 나사 선별의 시간을 나누려 한다. 현대2단지 양수와 올림픽대교 북단 조명도 한정된 전력을 요구한다.",
+        "anchor_refs": [
+          "osm:node:5933687056",
+          "osm:node:368900044",
+          "osm:relation:3769500",
+          "osm:way:903231083",
+          "osm:node:10211907672",
+          "osm:way:175320352",
+          "osm:node:1019336044"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md",
+          "docs/game-logic/Cast-State-14.md",
+          "docs/game-logic/Cast-State-04.md"
+        ],
+        "polity_contexts": [
+          "S14",
+          "S04"
+        ],
+        "inhabitants": [
+          "동서울 짐꾼",
+          "터미널 통과 서기",
+          "테크노마트 부품 저울",
+          "올림픽대교 북단 척후"
+        ],
+        "livelihood": "인계조는 터미널의 물품 무게와 봉인을 확인하고 수리공은 실제 규격을 확인한 부품만 생활 설비에 배정한다.",
+        "production": {
+          "outputs": [
+            "외곽경화물순번",
+            "호환나사선별",
+            "대교기록"
+          ],
+          "requires": [
+            "짐꾼노동",
+            "저울추",
+            "조명전력"
+          ]
+        },
+        "shortages": [
+          "야간조명",
+          "중량저울",
+          "양품나사"
+        ],
+        "hazard": {
+          "kind": "access",
+          "description": "중무장이 터미널 순번에 끼면 일정표가 보호비 창구로 바뀐다. 마트 저울을 비우면 북단 조명이 남아도 펌프 나사가 고르지지 않는다."
+        },
+        "opening_state": "구의3동의 창작 인계조와 수리조는 중앙 부품 계약이 끝난 개막일에 터미널 검수와 테크노마트 선별 작업의 시간을 나누려 한다.",
+        "connections": "광장동·자양2동·구의1동·구의2동과 맞닿고 한강 너머 송파·강동과 경계를 나눈다. 터미널과 북단이 잠실·강동 생활권 간선이 아니며, 강변역 대합실을 광나루 통과표와 합치지 않는다.",
+        "action": {
+          "id": "gwangjin-gui3-dongseoul-dayqueue",
+          "label": "동서울터미널 주간 경화물 네 편성만 통과시키고 중무장은 거절한다",
+          "target_ref": "osm:node:10211907672",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 6,
+              "unit": "shift"
+            },
+            {
+              "resource": "power",
+              "amount": 6,
+              "unit": "전력점"
+            },
+            {
+              "resource": "scrip",
+              "amount": 8,
+              "unit": "교환권"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "connection",
+              "effect": "주간 경화물 네 편성만 봉인끈 아래 통과시키고 중무장 청구를 기록 거절로 남긴다."
+            },
+            {
+              "kind": "authority",
+              "effect": "터미널 순번을 관문국 주간 일정표로 하루 고정한다."
+            }
+          ],
+          "tradeoff": "테크노마트 저울 여섯 교대가 빠져 호환 나사가 하루 안 골라진다. 올림픽대교 북단 조명이 약해져 현대2단지 옥상 양수가 오후 끊긴다."
+        },
+        "uncertainty": "강변역·동서울터미널·테크노마트·올림픽대교 북단 위치는 OSM 스냅샷이다. 경화물 순번과 중무장 거절은 창작이다. 실제 터미널·쇼핑몰 영업을 추론하지 않으며 한강 공유 경계를 이동 간선으로 적지 않는다."
+      }
+    }
+  ]
+}

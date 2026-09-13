@@ -9,8 +9,9 @@
 | `/` | `index.html` | 서비스 인덱스(허브) |
 | `/play/` | `play/` | 코어 루프 웹 POC. 2026-09-14. 자립형 HTML |
 | `/ui-layout-moodboard/` | `ui-layout-moodboard/` | UI 레이아웃 무드보드. 2026-09-11 작성, 2026-09-12 루트로 승격 |
+| `/system-design/` | `system-design/` | 시스템 구조 보고 HTML |
+| `/system-design/regions/` | `system-design/regions/` | 서울 25구·427동 지역 총람. 2026-09-13 |
 | `/design/` `/world/` `/rules/` | `docs-site/`(VitePress 빌드) | 문서 사이트 영역 |
-| 대기: `system-design/` | 루트 `system-design/` | 소유자 큐레이션 후 편입 |
 
 ## 등록 기준
 
@@ -28,7 +29,8 @@ cp -R docs-site/dist/. /tmp/prod-stage/          # 문서 사이트 영역
 rm /tmp/prod-stage/index.html                    # VitePress 홈 제거 — 허브가 루트를 가져간다
 cp index.html /tmp/prod-stage/index.html
 cp -R play /tmp/prod-stage/
-cp -R ui-layout-moodboard /tmp/prod-stage/       # 서비스 디렉터리들
+cp -R ui-layout-moodboard /tmp/prod-stage/
+cp -R system-design /tmp/prod-stage/
 cp -R .vercel /tmp/prod-stage/.vercel
 cd /tmp/prod-stage && npx --yes vercel@59.16.0 deploy --prod --yes
 ```
