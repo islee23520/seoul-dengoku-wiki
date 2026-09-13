@@ -9,6 +9,7 @@
 .env.*
 !.env.example
 Game/.unity-remote-token
+.env.vercel.local
 
 # Unity generated state
 Game/[Ll]ibrary/
