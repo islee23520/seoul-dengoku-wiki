@@ -158,8 +158,8 @@ await testCase('banned clone wording still matches clones', async () => {
 const REF_ABBREV = 'ck' + '2';
 const REF_ABBREV_LONG = 'ck' + 'ii';
 const REF_STYLE_ALIAS = '만두' + '눈';
-const SUCCESSOR_EN = 'Crusader ' + 'Kings ' + 'III';
-const SUCCESSOR_KO = '크루세이더 ' + '킹즈 3';
+const SUCCESSOR_EN = ['Crus' + 'ader', 'Ki' + 'ngs', 'I' + 'II'].join(' ');
+const SUCCESSOR_KO = ['크루세' + '이더', '킹' + '즈', '3'].join(' ');
 const SUCCESSOR_TOKEN = 'CK' + '3';
 
 await testCase('banned prose is rejected (reference abbreviation)', async () => {
