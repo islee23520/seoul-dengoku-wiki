@@ -61,6 +61,21 @@ sha256 prefix `0cf75511192a1037` · 원본 `seoyun-a01/machine/idle.png` (64×51
 
 나머지 필수 슬롯 PNG는 `slots/` (`neck`, `cheeks`, `chin`, `mouth`, `nose`, `ears`, `hair_back`).
 
+### 5. 토큰 교체 예시 (2026-09-13)
+
+같은 서윤 표본에서 정체성 토큰(머리색·눈색·의상 팔레트)만 바꿔 다시 합성한 예시. 슬롯 교체 가능성을 보이는 검증 스틸이며 새 캐릭트 베이크가 아니다.
+
+![토큰 교체 예시 2×2](examples/examples-grid.png)
+
+| 변형 | 교체 토큰 | 슬롯 | 목표색 |
+|---|---|---|---|
+| a 기본 | — | — | — |
+| b 머리·눈 | 머리색·눈색 | `hair`·`hair_back`·`eyes_color` | `#6b4a2f`·`#5b3a24` |
+| c 의상 | 의상 팔레트 | `clothes` | `#8a4b2d` |
+| d 조합 | 머리색·눈색·의상 | 위 전부 | `#9a9aa2`·`#2e6e64`·`#3c4048` |
+
+변형 슬롯 PNG는 각 슬롯의 지배색을 목표색 채널 비율로 곱해 만들었다(음영 구조 보존). 파일 위치: `examples/`. 같은 규칙의 브라우저 재현 데모: `web/portrait-demo/`(정적 페이지, 런타임 아님).
+
 ## 지금 할 수 있는 일
 
 1. **슬롯 표** `tools/art/portrait-layer-slots.json` — 제품 ID 22개, z 0–21, `GFX_` 이름 없음.
