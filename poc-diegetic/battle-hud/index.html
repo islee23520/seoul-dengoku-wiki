@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>잔선: 서울 · 다이제틱 전투 콘솔 — 후보 시안 1</title>
+<style>
+/* 다이제틱 앵커 시안 — 임시 관제 콘솔. 웹 카드·칩·스크롤 목록 금지. 수치 계약(카드 132×180, 격자 5×5) 유지. */
+:root{
+  --void:#07090e; --metal-hi:#3c4453; --metal:#2a3140; --metal-lo:#171c26;
+  --emerg:#9fb8cc; --emerg-dim:#5a7183; --lamp:#c9a227; --danger:#8b3a3a;
+  --paper:#d6cfbf; --paper-shade:#b8b09e; --ink:#20242c;
+  --phos:#79d6c1; --phos-dim:#2c5a52; --red-stencil:#a04038;
+  --mono:"SF Mono",ui-monospace,Menlo,Consolas,monospace;
+  --sans:"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{background:var(--void);font-family:var(--sans);color:var(--paper);
+  display:flex;align-items:center;justify-content:center;min-height:100vh;padding:0}
+
+.console{position:relative;width:1280px;height:720px;overflow:hidden;
+  background:
+    radial-gradient(1200px 300px at 50% -80px, rgba(159,184,204,.16), transparent 60%),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.015) 0 2px, transparent 2px 7px),
+    linear-gradient(180deg, var(--metal) 0%, var(--metal-lo) 55%, #10141c 100%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.07), inset 0 -3px 8px rgba(0,0,0,.55)}
+
+/* 데스크 상단 비상등 레일 */
+.lightrail{position:absolute;top:0;left:0;right:0;height:14px;
+  background:linear-gradient(180deg,#0b0f16,#1a2230);
+  box-shadow:inset 0 -1px 0 rgba(159,184,204,.25)}
+.lightrail::after{content:"";position:absolute;left:0;right:0;bottom:-26px;height:26px;
+  background:radial-gradient(60% 100% at 30% 0, rgba(159,184,204,.20), transparent 70%)}
+
+/* 스텐실 명판 */
+.plate{position:absolute;top:22px;left:26px;font-family:var(--mono);font-size:11px;
+  letter-spacing:.34em;color:var(--emerg-dim);text-transform:uppercase}
+.plate b{display:block;color:var(--emerg);font-size:13px;letter-spacing:.28em}
+.tickcounter{position:absolute;top:22px;right:196px;font-family:var(--mono);
+  display:flex;gap:3px}
+.tickcounter i{font-style:normal;background:#0a0e14;color:var(--phos);
+  border:1px solid #22303a;border-bottom-color:#0a0e14;border-right-color:#0a0e14;
+  padding:3px 6px;font-size:16px;text-shadow:0 0 7px rgba(121,214,193,.8)}
+
+/* 비상 정지 레버 (일시정지) */
+.estop{position:absolute;top:20px;right:26px;width:118px;cursor:pointer;user-select:none}
+.estop .cover{height:30px;border:2px solid #4a4234;border-radius:3px;
+  background:repeating-linear-gradient(45deg,#3a3630 0 6px,#2c2a26 6px 12px);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--mono);font-size:9px;letter-spacing:.22em;color:#c9b98a}
+.estop .lever{margin:4px auto 0;width:54px;height:16px;border-radius:8px 8px 2px 2px;
+  background:linear-gradient(180deg,#a04038,#6e2b26);
+  box-shadow:0 2px 4px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.25);transition:transform .12s ease-out}
+.estop.on .lever{transform:translateY(5px)}
+.estop .cap{margin:2px auto 0;width:70px;height:6px;background:#23262e;border-radius:2px}
+
+/* ── 좌측 계기 클러스터 ─────────────────── */
+.gauges{position:absolute;left:26px;top:64px;width:264px;bottom:212px;
+  display:flex;flex-direction:column;gap:14px}
+
+.meterbox{background:linear-gradient(180deg,#1b212c,#12161f);
+  border-radius:6px;padding:12px 12px 8px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.06), 0 2px 6px rgba(0,0,0,.5),
+    inset 0 0 26px rgba(0,0,0,.5)}
+.meterlabel{font-family:var(--mono);font-size:10px;letter-spacing:.3em;
+  color:var(--emerg-dim);margin-bottom:6px;display:flex;justify-content:space-between}
+.meterlabel em{font-style:normal;color:var(--lamp)}
+
+/* 사기 아날로그 게이지 */
+.morale{position:relative;height:118px}
+.morale svg{display:block;margin:0 auto}
+.morale .readout{position:absolute;bottom:0;left:50%;transform:translateX(-50%);
+  font-family:var(--mono);font-size:15px;color:var(--phos);text-shadow:0 0 8px rgba(121,214,193,.7)}
+
+/* HP 모세관 게이지 (분대 4) */
+.capillaries{display:flex;gap:12px;justify-content:space-between;padding:2px 4px 4px}
+.cap{width:44px;text-align:center}
+.tube{height:86px;border-radius:5px 5px 3px 3px;position:relative;overflow:hidden;
+  background:linear-gradient(180deg,#0a0e14,#101722);
+  box-shadow:inset 0 0 0 2px #232b38, inset 0 6px 10px rgba(0,0,0,.7)}
+.tube .fluid{position:absolute;left:0;right:0;bottom:0;
+  background:linear-gradient(180deg, rgba(159,184,204,.85), rgba(90,113,131,.9));
+  box-shadow:0 -1px 3px rgba(159,184,204,.5)}
+.tube .min{position:absolute;left:0;right:0;bottom:34%;height:1px;background:var(--danger)}
+.cap .sqname{font-family:var(--mono);font-size:9px;letter-spacing:.12em;color:var(--emerg-dim);margin-top:5px}
+
+/* 지휘 반경 다이얼 */
+.dialrow{display:flex;align-items:center;gap:14px}
+.dial{width:64px;height:64px;border-radius:50%;position:relative;flex:none;
+  background:radial-gradient(circle at 35% 30%, #39424f, #12161f 70%);
+  box-shadow:0 2px 5px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.1)}
+.dial::before{content:"";position:absolute;inset:14px;border-radius:50%;
+  border:1px dashed #39424f}
+.dial .pin{position:absolute;left:50%;top:50%;width:2px;height:24px;background:var(--lamp);
+  transform-origin:50% 100%;transform:translate(-50%,-100%) rotate(48deg);
+  box-shadow:0 0 5px rgba(201,162,39,.7)}
+.dialtext{font-family:var(--mono);font-size:11px;color:var(--emerg-dim);line-height:1.9}
+.dialtext b{color:var(--paper);letter-spacing:.18em}
+
+/* ── 중앙 반발광 지도판 ─────────────────── */
+.map{position:absolute;left:312px;top:64px;width:656px;height:404px;border-radius:8px;
+  background:
+    radial-gradient(140% 90% at 50% 40%, rgba(44,90,82,.35), transparent 70%),
+    linear-gradient(180deg,#0a1210,#0a0e14);
+  box-shadow:inset 0 0 0 2px #1d2b28, inset 0 0 60px rgba(0,0,0,.75), 0 3px 10px rgba(0,0,0,.55)}
+.map::after{content:"";position:absolute;inset:0;border-radius:8px;pointer-events:none;
+  background:repeating-linear-gradient(0deg, rgba(121,214,193,.028) 0 1px, transparent 1px 3px)}
+.map .corner{position:absolute;width:14px;height:14px;border:2px solid var(--phos-dim)}
+.map .corner.tl{top:8px;left:8px;border-right:none;border-bottom:none}
+.map .corner.tr{top:8px;right:8px;border-left:none;border-bottom:none}
+.map .corner.bl{bottom:8px;left:8px;border-right:none;border-top:none}
+.map .corner.br{bottom:8px;right:8px;border-left:none;border-top:none}
+.map .arealabel{position:absolute;top:14px;left:50%;transform:translateX(-50%);
+  font-family:var(--mono);font-size:10px;letter-spacing:.4em;color:var(--phos-dim);text-transform:uppercase}
+
+.grid{position:absolute;left:88px;top:56px;display:grid;
+  grid-template-columns:repeat(5,96px);grid-template-rows:repeat(5,56px)}
+.cell{border:1px solid rgba(121,214,193,.14);position:relative}
+.cell.dark{background:rgba(121,214,193,.03)}
+.u{position:absolute;inset:8px;display:flex;align-items:center;justify-content:center;
+  font-family:var(--mono);font-size:20px;letter-spacing:2px}
+.u.ally{color:var(--phos);text-shadow:0 0 9px rgba(121,214,193,.65)}
+.u.foe{color:var(--red-stencil);text-shadow:0 0 9px rgba(160,64,56,.6)}
+.u small{position:absolute;bottom:-16px;left:50%;transform:translateX(-50%);
+  font-size:8px;letter-spacing:.18em;color:inherit;opacity:.75}
+.facing{position:absolute;top:6px;right:8px;color:var(--lamp);font-size:11px;text-shadow:0 0 6px rgba(201,162,39,.7)}
+.range3{position:absolute;left:112px;top:80px;width:352px;height:224px;border:1px dashed rgba(201,162,39,.35);border-radius:50%;
+  pointer-events:none}
+
+/* ── 우측 티커 프린터 ─────────────────── */
+.ticker{position:absolute;right:26px;top:64px;width:264px;bottom:212px;display:flex;flex-direction:column}
+.slit{height:14px;border-radius:4px;background:linear-gradient(180deg,#39424f,#171c26);
+  box-shadow:inset 0 2px 4px rgba(0,0,0,.8), 0 1px 0 rgba(255,255,255,.06);flex:none}
+.tape{flex:1;margin:0 8px;overflow:hidden;position:relative;
+  background:
+    repeating-linear-gradient(0deg, rgba(0,0,0,.05) 0 1px, transparent 1px 26px),
+    linear-gradient(180deg,#d6cfbf,#c4bcab);
+  box-shadow:0 3px 8px rgba(0,0,0,.5);border-radius:0 0 3px 3px}
+.tape .feed{position:absolute;left:0;right:0;bottom:0;padding:10px 12px;
+  font-family:var(--mono);font-size:11px;line-height:26px;color:var(--ink)}
+.tape .feed div{border-bottom:1px dotted rgba(32,36,44,.25)}
+.tape .feed .t{color:#6e2b26;font-weight:700}
+.tape .fresh{background:rgba(255,255,255,.28)}
+
+/* ── 하단 카드 랙 ─────────────────── */
+.rack{position:absolute;left:0;right:0;bottom:0;height:196px;
+  background:linear-gradient(180deg,transparent, rgba(0,0,0,.35));
+  display:flex;align-items:flex-start;justify-content:center;gap:26px;padding-top:14px}
+.cardwrap{position:relative;width:132px;height:180px;transition:transform .12s ease-out;cursor:pointer}
+.cardwrap.sel{transform:translateY(-7px)}
+.cardwrap .clip{position:absolute;top:-8px;left:50%;transform:translateX(-50%);width:44px;height:16px;
+  background:linear-gradient(180deg,#8f97a6,#4a5261);border-radius:4px 4px 2px 2px;
+  box-shadow:0 2px 3px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.3);z-index:2}
+.card{width:132px;height:180px;border-radius:4px;padding:9px;position:relative;
+  background:
+    repeating-linear-gradient(45deg, rgba(0,0,0,.02) 0 3px, transparent 3px 7px),
+    linear-gradient(180deg,var(--paper),var(--paper-shade));
+  box-shadow:0 4px 9px rgba(0,0,0,.55), inset 0 0 0 1px rgba(32,36,44,.25);
+  color:var(--ink)}
+.card .photo{height:107px;background:
+    radial-gradient(80% 70% at 50% 38%, #454d5a, #232833 75%);
+  box-shadow:inset 0 0 0 2px #39424f, inset 0 10px 16px rgba(0,0,0,.5);
+  display:flex;align-items:flex-end;justify-content:center;padding-bottom:4px;
+  font-family:var(--mono);font-size:9px;color:var(--emerg-dim);letter-spacing:.2em}
+.card .cname{margin-top:6px;font-family:var(--sans);font-weight:800;font-size:13px;letter-spacing:.34em}
+.card .crole{font-family:var(--mono);font-size:9px;letter-spacing:.2em;color:#5a5142;margin-top:2px}
+.card .recharge{position:absolute;left:9px;right:9px;bottom:26px;height:7px;
+  border:1px solid #6a6152;overflow:hidden;background:rgba(255,255,255,.25)}
+.card .recharge i{display:block;height:100%;background:repeating-linear-gradient(90deg,#3a3630 0 4px,#584f3d 4px 8px)}
+.card .owner{position:absolute;left:9px;bottom:8px;font-family:var(--mono);font-size:8px;letter-spacing:.18em;color:#6a6152}
+.card .stamp{position:absolute;right:7px;bottom:7px;width:26px;height:26px;border:2px solid var(--red-stencil);
+  border-radius:50%;transform:rotate(-14deg);color:var(--red-stencil);
+  font-family:var(--mono);font-size:7px;display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.1}
+.racklabel{position:absolute;left:26px;bottom:16px;font-family:var(--mono);font-size:10px;
+  letter-spacing:.3em;color:var(--emerg-dim);text-transform:uppercase}
+</style>
+</head>
+<body>
+<div class="console" id="console">
+  <div class="lightrail"></div>
+
+  <div class="plate">JANSEON FIELD CONSOLE<b>영등포 동측 승강장 · 관제 콘솔 B-2</b></div>
+  <div class="tickcounter" title="tick counter"><i>0</i><i>0</i><i>4</i><i>2</i><i>7</i></div>
+  <div class="estop" id="estop" title="비상 정지 — 일시정지">
+    <div class="cover">EMERGENCY&nbsp;STOP</div><div class="lever"></div><div class="cap"></div>
+  </div>
+
+  <div class="gauges">
+    <div class="meterbox">
+      <div class="meterlabel"><span>사기 MORALE</span><em>경고 40</em></div>
+      <div class="morale">
+        <svg width="220" height="104" viewBox="0 0 220 104">
+          <path d="M20 96 A90 90 0 0 1 200 96" fill="none" stroke="#232b38" stroke-width="10"/>
+          <path d="M20 96 A90 90 0 0 1 47 31" fill="none" stroke="#8b3a3a" stroke-width="10"/>
+          <g stroke="#39424f" stroke-width="2">
+            <line x1="30" y1="90" x2="42" y2="86"/><line x1="55" y1="60" x2="66" y2="66"/>
+            <line x1="110" y1="14" x2="110" y2="26"/><line x1="165" y1="60" x2="176" y2="66"/>
+            <line x1="178" y1="90" x2="190" y2="86"/>
+          </g>
+          <line x1="110" y1="96" x2="152" y2="42" stroke="#c9a227" stroke-width="3.5" style="filter:drop-shadow(0 0 4px rgba(201,162,39,.8))"/>
+          <circle cx="110" cy="96" r="7" fill="#232833" stroke="#4a5261" stroke-width="2"/>
+        </svg>
+        <div class="readout">062</div>
+      </div>
+    </div>
+
+    <div class="meterbox">
+      <div class="meterlabel"><span>분대 HP</span><em>4분대</em></div>
+      <div class="capillaries">
+        <div class="cap"><div class="tube"><div class="fluid" style="height:92%"></div><div class="min"></div></div><div class="sqname">근위1</div></div>
+        <div class="cap"><div class="tube"><div class="fluid" style="height:74%"></div><div class="min"></div></div><div class="sqname">돌격1</div></div>
+        <div class="cap"><div class="tube"><div class="fluid" style="height:58%"></div><div class="min"></div></div><div class="sqname">궁수1</div></div>
+        <div class="cap"><div class="tube"><div class="fluid" style="height:81%"></div><div class="min"></div></div><div class="sqname">근위2</div></div>
+      </div>
+    </div>
+
+    <div class="meterbox">
+      <div class="meterlabel"><span>지휘 반경</span><em>3칸</em></div>
+      <div class="dialrow">
+        <div class="dial"><div class="pin"></div></div>
+        <div class="dialtext"><b>망루-서윤</b><br />카드 · 협공 유효 범위<br />재집결 사이클 600틱</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="map">
+    <div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div>
+    <div class="arealabel">반발광 구역도 · 1.5m 격자</div>
+    <div class="range3"></div>
+    <div class="grid">
+      <div class="cell"></div><div class="cell dark"><div class="u ally">▲<small>근위1</small></div></div><div class="cell"></div><div class="cell"></div><div class="cell dark"><div class="u foe">▽<small>적 근위</small></div></div>
+      <div class="cell dark"><div class="u ally">◆<small>돌격1</small></div><div class="facing">▲N</div></div><div class="cell"></div><div class="cell dark"><div class="u ally">●<small>궁수1</small></div></div><div class="cell"></div><div class="cell"></div>
+      <div class="cell"></div><div class="cell"></div><div class="cell dark"><div class="u ally">▲<small>근위2</small></div></div><div class="cell"></div><div class="cell dark"><div class="u foe">◆<small>적 돌격</small></div></div>
+      <div class="cell dark"></div><div class="cell"></div><div class="cell"></div><div class="cell dark"></div><div class="cell"></div>
+      <div class="cell"></div><div class="cell dark"><div class="u foe">●<small>적 궁수</small></div></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+    </div>
+  </div>
+
+  <div class="ticker">
+    <div class="slit"></div>
+    <div class="tape">
+      <div class="feed">
+        <div class="fresh"><span class="t">T+0427</span> 돌격1 전진 1칸 · 북</div>
+        <div><span class="t">T+0426</span> 적 궁수 재장전 완료</div>
+        <div><span class="t">T+0419</span> 근위2 방벽 유지 · 사기 +0</div>
+        <div><span class="t">T+0402</span> 협공 카드 준비 — 궁수1</div>
+        <div><span class="t">T+0388</span> 망루-서윤 지휘 반경 진입 확인</div>
+        <div><span class="t">T+0371</span> 틱 동기 — 30Hz 정상</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rack">
+    <div class="cardwrap sel" onclick="pick(this)">
+      <div class="clip"></div>
+      <div class="card">
+        <div class="photo">WELL 107</div>
+        <div class="cname">방벽 수호</div>
+        <div class="crole">근위1 · SHIELDWALL</div>
+        <div class="recharge"><i style="width:100%"></i></div>
+        <div class="owner">OWnr 근위1</div>
+        <div class="stamp">대기<br />인</div>
+      </div>
+    </div>
+    <div class="cardwrap" onclick="pick(this)">
+      <div class="clip"></div>
+      <div class="card">
+        <div class="photo">WELL 107</div>
+        <div class="cname">사기 고무</div>
+        <div class="crole">근위2 · MORALE</div>
+        <div class="recharge"><i style="width:41%"></i></div>
+        <div class="owner">OWnr 근위2</div>
+        <div class="stamp">재충<br />전</div>
+      </div>
+    </div>
+    <div class="cardwrap" onclick="pick(this)">
+      <div class="clip"></div>
+      <div class="card">
+        <div class="photo">WELL 107</div>
+        <div class="cname">협공 지시</div>
+        <div class="crole">궁수1 · PINCER</div>
+        <div class="recharge"><i style="width:78%"></i></div>
+        <div class="owner">OWnr 궁수1</div>
+        <div class="stamp">대기<br />인</div>
+      </div>
+    </div>
+    <div class="cardwrap" onclick="pick(this)">
+      <div class="clip"></div>
+      <div class="card">
+        <div class="photo">WELL 107</div>
+        <div class="cname">기동 재집결</div>
+        <div class="crole">돌격1 · REGROUP</div>
+        <div class="recharge"><i style="width:12%"></i></div>
+        <div class="owner">OWnr 돌격1</div>
+        <div class="stamp">재충<br />전</div>
+      </div>
+    </div>
+  </div>
+  <div class="racklabel">지시 카드 랙 · 132×180 · 선택 카드 인출</div>
+</div>
+
+<script>
+const rack = document.querySelector('.rack');
+function pick(el){
+  rack.querySelectorAll('.cardwrap').forEach(w => w.classList.remove('sel'));
+  el.classList.add('sel');
+}
+document.getElementById('estop').addEventListener('click', function(){ this.classList.toggle('on'); });
+</script>
+</body>
+</html>
