@@ -1,6 +1,6 @@
 # 월드맵을 어떻게 구성하나
 
-![지하철 다층 공간의 층과 시야](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-subway-layers.svg?raw=true)
+![지하철 다층 공간의 층과 시야](https://github.com/islee23520/seoul-kenshi/blob/main/Reference/assets/wiki/isometric-subway-layers.svg?raw=true)
 
 세계 진실은 행정 평면이 아니라 역·층·터널의 그래프다. 이 문서는 그 그래프를 **무엇을 재료로, 어떤 순서로, 어디까지 런타임이 갖고 있는지** 적는다.
 
@@ -16,7 +16,7 @@
 
 | 재료 | 경로 | 쓰는 일 | 넣지 않는 일 |
 |---|---|---|---|
-| KOSTAT 2013 자치구 25 | [KOSTAT GeoJSON](seoul-kenshi-data/seoul-geography-20260830/boundaries-kostat-2013/seoul_municipalities_geo.json) | 구 폴리곤, 역을 구에 붙이기 | 현재 행정 경계로 단정하지 않는다. 기준년 2013. |
+| KOSTAT 2013 자치구 25 | [KOSTAT GeoJSON](../../../../seoul-kenshi-data/seoul-geography-20260830/boundaries-kostat-2013/seoul_municipalities_geo.json) | 구 폴리곤, 역을 구에 붙이기 | 현재 행정 경계로 단정하지 않는다. 기준년 2013. |
 | OSM PBF | `…/osm-current-bbbike/Seoul.osm.pbf` | 역·시설 점 | GTFS가 없다. 공식 노선도와 1:1이라고 쓰지 않는다. |
 | OpenFreeMap MVT z14 | `…/openfreemap/mvt/20260830_080001_pt/14/` | 도로·철도 타일 357장, bbox `126.76,37.42,127.19,37.70` | 역 내부 격자 에셋이 아니다. |
 | Mapzen 지형 | `…/terrain-mapzen-geotiff/` | 고도 | 세계 그래프 노드가 아니다. |

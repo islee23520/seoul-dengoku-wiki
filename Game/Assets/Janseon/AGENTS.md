@@ -32,8 +32,8 @@ Production domains, Unity composition, and art import boundary; score 8, distinc
 - Content leases expose readiness and asynchronous cleanup; transitions distinguish cancellation from failure.
 - `PocCoreLoopController` publishes `StateChanged` and `CommandRejected` and unwires presenter events on disposal.
 - UI resolution selectors use `jk-res-720` / `jk-res-1080`; stable IDs are centralized in `UiElementNames`.
-- Runtime slot wiring invokes repo `tools/art/export-runtime-slots.mjs` in batchmode and resolves imported Unity objects.
-- Promotion invokes `tools/art/runtime-slot-promotion.mjs` for prepare/commit and verifies source hashes before writes.
+- Runtime slot wiring invokes repo `Tool/art/export-runtime-slots.mjs` in batchmode and resolves imported Unity objects.
+- Promotion invokes `Tool/art/runtime-slot-promotion.mjs` for prepare/commit and verifies source hashes before writes.
 - Promotion copies reviewed files, remaps animation references, and deletes newly created assets if import/commit fails.
 - `RuntimeSlotPromoter.Run` reads `JANSEON_SLOT_PROMOTION_REQUEST`; non-fixture promotion rewires the catalog.
 

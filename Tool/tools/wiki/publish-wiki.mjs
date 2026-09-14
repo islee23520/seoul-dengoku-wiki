@@ -27,7 +27,7 @@ export const CONDITIONAL_PAGES = ['Unofficial-Fan-AU-Notice.md'];
 const GENERATED_SENTINEL = '.janseon-wiki-generated';
 const VCS_DIRECTORY = '.git';
 const PUBLISHED_ASSET_DIRECTORY = 'assets';
-const repositoryRootFromScript = resolve(fileURLToPath(new URL('../..', import.meta.url)));
+const repositoryRootFromScript = resolve(fileURLToPath(new URL('../../..', import.meta.url)));
 
 export async function assertPinnedManifest(repositoryRoot) {
   const manifestPath = join(repositoryRoot, 'package.json');
@@ -155,8 +155,8 @@ export async function publishWiki({
 
   const repo = resolve(repositoryRoot);
   const live = assertSafeOutputRoot(wikiDir);
-  const source = resolve(sourceDir ?? join(repo, 'docs', 'game-logic'));
-  const assets = resolve(assetDir ?? join(repo, 'docs', 'assets', 'wiki'));
+  const source = resolve(sourceDir ?? join(repo, 'GDD', 'game-logic'));
+  const assets = resolve(assetDir ?? join(repo, 'Reference', 'assets', 'wiki'));
 
   if (live === repo || live === source || live === assets) {
     throw new Error('refusing to use the repository, source, or asset directory as the live wiki checkout');
@@ -352,9 +352,9 @@ function defaultNpmCi(repositoryRoot) {
 }
 
 async function defaultRunTests(repositoryRoot) {
-  await runCommand(process.execPath, ['tools/wiki/test-build-wiki.mjs'], repositoryRoot);
-  await runCommand(process.execPath, ['tools/wiki/test-core-isometric-diagrams.mjs'], repositoryRoot);
-  await runCommand(process.execPath, ['tools/wiki/test-publish-wiki.mjs'], repositoryRoot);
+  await runCommand(process.execPath, ['Tool/tools/wiki/test-build-wiki.mjs'], repositoryRoot);
+  await runCommand(process.execPath, ['Tool/tools/wiki/test-core-isometric-diagrams.mjs'], repositoryRoot);
+  await runCommand(process.execPath, ['Tool/tools/wiki/test-publish-wiki.mjs'], repositoryRoot);
 }
 
 function defaultGitPush(wikiDir) {

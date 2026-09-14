@@ -1,6 +1,6 @@
 # Unicorn Overlord (2024) — 게임 로직 백과사전
 
-> 출처 인계: [공유 조사 색인](../../../.omo/research/README.md). 로컬 sources.json·원문 패킷 언급은 조사 당시 기록이며 이 전달에 원시 자료가 포함된다는 뜻이 아니다. 누락된 ID는 미확인으로 남긴다.
+> 출처 인계: [공유 조사 색인](../../.omo/research/README.md). 로컬 sources.json·원문 패킷 언급은 조사 당시 기록이며 이 전달에 원시 자료가 포함된다는 뜻이 아니다. 누락된 ID는 미확인으로 남긴다.
 
 > Vanillaware / ATLUS, 2024. PS5·PS4·Xbox·Switch·PC. 판타지 대륙 페브리스에서 제국 제노이라에 점령된 코르니아 왕국을 해방하는 부대 단위 시뮬레이션 RPG. 본편 2024년판 기준, DLC 및 모드 제외.
 >

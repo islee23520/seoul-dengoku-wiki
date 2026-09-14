@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>tcp_template 비동기 경계 설계 (P0) — 2026-08-24</title>
+<style>
+  :root{
+    --bg:#fff; --fg:#1a1d21; --muted:#5c6672; --line:#dde2e8;
+    --accent:#1f6feb; --good:#15803d; --bad:#b91c1c;
+    --code-bg:#f6f8fa; --head-bg:#f0f4f9;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;padding:0 0 80px;background:var(--bg);color:var(--fg);
+       font-family:"Malgun Gothic","맑은 고딕",-apple-system,Segoe UI,sans-serif;
+       font-size:15px;line-height:1.75}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+  header{border-bottom:3px solid var(--fg);padding:36px 0 20px;margin-bottom:30px}
+  h1{margin:0 0 10px;font-size:26px;letter-spacing:-.4px}
+  .sub{color:var(--muted);font-size:14px}
+  .meta{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
+  .chip{background:var(--head-bg);border:1px solid var(--line);border-radius:999px;
+        padding:3px 12px;font-size:12.5px;color:var(--muted)}
+  h2{margin:42px 0 14px;font-size:19.5px;padding-bottom:8px;border-bottom:2px solid var(--line)}
+  h3{margin:26px 0 10px;font-size:16px}
+  p{margin:10px 0}
+  table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:var(--head-bg);font-weight:600}
+  th.nw{white-space:nowrap}
+  code{background:var(--code-bg);border:1px solid var(--line);border-radius:4px;
+       padding:1px 5px;font-family:Consolas,"D2Coding",monospace;font-size:12.5px}
+  pre{background:var(--code-bg);border:1px solid var(--line);border-radius:6px;
+      padding:14px 16px;overflow-x:auto;font-family:Consolas,"D2Coding",monospace;
+      font-size:12.5px;line-height:1.6}
+  pre code{background:none;border:none;padding:0}
+  .note{border:1px solid var(--line);border-left:4px solid var(--accent);
+        background:#f8fafc;border-radius:0 6px 6px 0;padding:13px 18px;margin:16px 0}
+  .note .t{font-weight:700;margin-bottom:5px}
+  .ok{color:var(--good);font-weight:600}
+  .ng{color:var(--bad);font-weight:600}
+  .muted{color:var(--muted)}
+  ul,ol{margin:10px 0;padding-left:22px}
+  li{margin:5px 0}
+  figure{margin:20px 0;text-align:center}
+  figcaption{color:var(--muted);font-size:12.5px;margin-top:8px}
+  .toc{background:var(--head-bg);border:1px solid var(--line);border-radius:8px;padding:14px 22px}
+  footer{margin-top:52px;padding-top:18px;border-top:1px solid var(--line);
+         color:var(--muted);font-size:12.5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>tcp_template 비동기 경계 설계 (P0)</h1>
+  <div class="sub">Storage · DB 계층의 읽기 I/O 경계를 비동기로 확정하기 위한 설계 — 구현 착수 전 승인 대상</div>
+  <div class="meta">
+    <span class="chip">2026-08-24 재작성</span>
+    <span class="chip">작성 클로</span>
+    <span class="chip">기준 커밋 d08a8dd + 미커밋 변경</span>
+    <span class="chip">빌드 오류 0 · 경고 0</span>
+    <span class="chip">상태 승인 대기</span>
+  </div>
+</header>
+
+<div class="toc">
+  <b>목차</b>
+  <ol>
+    <li>범위</li>
+    <li>실측 — 현재 동기 / 비동기 분포</li>
+    <li>설계 판단 3건과 그 근거</li>
+    <li>전환 단계 S-A ~ S-E</li>
+    <li>이번 범위에서 제외한 것</li>
+    <li>검증 방법</li>
+    <li>승인이 필요한 항목</li>
+  </ol>
+</div>
+
+<h2>1. 범위</h2>
+
+<p>Storage · DB 계층의 <b>읽기 I/O 경계를 비동기로 확정</b>하기 위한 설계다. 근거는 이 문서 안에 모두 담았다.</p>
+
+<table>
+<tr><th class="nw" style="width:110px">다룬다</th><td><b>읽기 경로</b>의 비동기 경계 — Redis 조회 → DB 조회 → <code>UserDataProvider</code> 공개 API → 패킷 처리기까지 4개 층</td></tr>
+<tr><th class="nw">제외</th><td><b>쓰기 경로</b> — 5장에 제외 사유와 범위를 적는다</td></tr>
+<tr><th class="nw">제외</th><td>컨텐츠 처리기 10종 이식 순서 — 별건</td></tr>
+<tr><th class="nw">연동</th><td><b>신규유저 NRE</b> — 캐시 미스 후 <code>UserDataProvider.cs:85</code> 의 <code>UserDataLoadFromDB</code> 가 null 을 돌려주면 <code>:87 MergeData(temp, true)</code> → <code>UserData.cs:129 foreach(newData.Data)</code> 에서 NRE. 계약 통일 방향이 이 설계와 같은 지점을 건드린다. 7장 승인 항목에 포함</td></tr>
+</table>
+
+<div class="note">
+  <div class="t">사실 기준</div>
+  파일·라인·건수는 <b>2026-08-24 23시 기준 디스크 실측값</b>이다.
+  탐색은 <code>Get-ChildItem -Force</code> + <code>Select-String</code>으로 했다.
+  빌드는 <code>dotnet build Template.sln -c Local</code> → 오류 0 / 경고 0 (13개 프로젝트).
+  <b>"판단"이라고 적은 것은 측정값이 아니라 설계 선택이며, 3장에 근거와 함께 분리해 두었다.</b>
+</div>
+
+<h2>2. 실측 — 현재 동기 / 비동기 분포</h2>
+
+<figure>
+<svg viewBox="0 0 920 250" width="100%" style="max-width:920px" role="img" aria-label="계층별 동기 비동기 현황">
+  <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+    <path d="M0,0 L9,4.5 L0,9 z" fill="#5c6672"/></marker></defs>
+  <style>
+    .l{font:12.5px "Malgun Gothic",sans-serif;fill:#1a1d21}
+    .s{font:11.5px "Malgun Gothic",sans-serif;fill:#5c6672}
+    .g{font:11.5px "Malgun Gothic",sans-serif;font-weight:700;fill:#15803d}
+    .r{font:11.5px "Malgun Gothic",sans-serif;font-weight:700;fill:#b91c1c}
+    .bg{fill:#f0fdf4;stroke:#86efac;stroke-width:1.4}
+    .br{fill:#fef2f2;stroke:#fca5a5;stroke-width:1.4}
+  </style>
+  <rect class="br" x="12" y="16" width="250" height="50" rx="6"/>
+  <text x="24" y="36" class="s">패킷 처리기 2개</text>
+  <text x="24" y="54" class="r">ValueTask 이지만 return default</text>
+
+  <path d="M137,68 L137,92" stroke="#5c6672" stroke-width="1.4" marker-end="url(#ar)"/>
+
+  <rect class="br" x="12" y="94" width="250" height="50" rx="6"/>
+  <text x="24" y="114" class="s">UserDataProvider 공개 API 5개</text>
+  <text x="24" y="132" class="r">전부 동기</text>
+
+  <path d="M262,119 L306,119" stroke="#5c6672" stroke-width="1.4" marker-end="url(#ar)"/>
+
+  <rect class="bg" x="308" y="94" width="270" height="50" rx="6"/>
+  <text x="320" y="114" class="s">CacheDataProvider *Async</text>
+  <text x="320" y="132" class="g">진짜 비동기 구현</text>
+
+  <rect class="br" x="308" y="158" width="270" height="50" rx="6"/>
+  <text x="320" y="178" class="s">DbDataProvider.GetDataAsync</text>
+  <text x="320" y="196" class="r">Task.FromResult(GetData(param))</text>
+
+  <path d="M578,119 L622,119" stroke="#5c6672" stroke-width="1.4" marker-end="url(#ar)"/>
+  <path d="M578,183 L622,183" stroke="#5c6672" stroke-width="1.4" marker-end="url(#ar)"/>
+
+  <rect class="bg" x="624" y="94" width="284" height="50" rx="6"/>
+  <text x="636" y="114" class="s">Redis — CacheClient *Async 11개</text>
+  <text x="636" y="132" class="g">진짜 비동기</text>
+
+  <rect class="br" x="624" y="158" width="284" height="50" rx="6"/>
+  <text x="636" y="178" class="s">MySQL — 열기 / 읽기 / 쓰기 / 커밋</text>
+  <text x="636" y="196" class="r">전 구간 동기</text>
+
+  <text x="12" y="236" class="s">진짜 비동기 계약을 가진 계층은 Redis 한 층뿐이고, 그 위 계층의 계약이 전부 동기다.</text>
+</svg>
+<figcaption>계층별 현황 (2026-08-24 실측)</figcaption>
+</figure>
+
+<table>
+<tr><th style="width:250px">대상</th><th class="nw" style="width:80px">현재</th><th>실측 근거</th></tr>
+<tr><td>Redis 읽기·쓰기</td><td class="ok">비동기</td><td><code>Y2K Cache/Redis/CacheClient.cs</code> — 공개 <code>*Async</code> 11개</td></tr>
+<tr><td><code>CacheDataProvider.GetDataAsync</code></td><td class="ok">비동기</td><td><code>CacheDataProvider.cs:84-163</code> — Json / Bytes 두 조회를 병렬로 await 한다. S-D 가 그대로 쓴다</td></tr>
+<tr><td><code>CacheDataProvider.SetCacheAsync</code></td><td class="ok">비동기</td><td><code>CacheDataProvider.cs:200-238</code> — <code>Task.WhenAll</code>. S-D 가 그대로 쓴다</td></tr>
+<tr><td><code>DbDataProvider.GetDataAsync</code></td><td class="ng">동기</td><td><code>DbDataProvider.cs:44-47</code> — <code>Task.FromResult(GetData(param))</code></td></tr>
+<tr><td><code>IDataStorage</code></td><td class="ng">동기</td><td><code>Storage/Interface.cs:37</code> — <code>ICacheObject GetData(...)</code> 하나뿐</td></tr>
+<tr><td><code>IDataStorage</code> 구현체</td><td>10개</td><td>Cache 5 / DB 5</td></tr>
+<tr><td>엔티티 읽기 <code>LoadFromDB</code></td><td class="ng">동기</td><td>선언 19건 / <code>LoadFromDBAsync</code> <b>0건</b></td></tr>
+<tr><td>엔티티 쓰기 <code>*ToDBAsync</code></td><td class="ng">동기</td><td>15건 — Account·Cash·Energy·Gold·Hero × Insert/Save/Delete, 전부 동기 래핑</td></tr>
+<tr><td><code>DBConnector&lt;T&gt;</code> 연결 열기</td><td class="ng">동기</td><td><code>DBConnector.cs:27-38</code> — 생성자에서 <code>Connection.Open()</code></td></tr>
+<tr><td><code>DBConnector&lt;T&gt;</code> 쿼리 실행</td><td>규약</td><td><code>Attach</code>로 쌓아 두고 <code>Dispose</code>(:75-95) / <code>DisposeAsync</code>(:97-139)에서 순서대로 일괄 실행한다. <code>Commit()</code>(:64-67)은 롤백 여부를 지정한다</td></tr>
+</table>
+
+<h3>2.1 전환 대상 계약</h3>
+<p>바꿔야 할 것은 <b>계약(시그니처)</b> 이다. <code>UserDataProvider</code> 공개 API 5개와 그 아래 스토리지 · 엔티티 계약이 동기로 고정돼 있어, 위에서 무엇을 부르든 동기로 내려간다. 아래는 이번에 손댈 자리 목록이며, <b>이식이 진행 중이므로 지금 보이는 자리가 전부는 아니다.</b></p>
+<pre><code>Server.Core\Network\Processor\LoginProcessor.cs:70   ExpireCache(...)
+Server.Core\Network\Processor\LoginProcessor.cs:76   UserDataLoadFromDB(...)
+Server.Core\Network\Processor\LoginProcessor.cs:88   MakeNewbieData(...)
+Server.Core\Network\Processor\LoginProcessor.cs:96   SetCache(...)
+Storage\UserData.cs:122                              GetData(...)</code></pre>
+
+<h2>3. 설계 판단 3건과 그 근거</h2>
+
+<h3>판단 ① 비동기 계약이 필요한 것은 DB 스토리지 5개다</h3>
+<p><b>근거(측정).</b> Cache 스토리지의 <code>GetData</code>는 Redis를 부르지 않는다. Redis 왕복은 <code>CacheDataProvider</code>가
+먼저 끝내고 <code>param.SourceData</code>에 담아 둔다(<code>CacheDataProvider.cs:154</code>). 스토리지는 그 딕셔너리를 역직렬화한다.</p>
+<pre><code>// AccountCacheStorage.cs:17-35 — 메모리 작업만 한다
+string cacheKey = MetaClass.GetCacheMetaData(param.Key).Key;
+if (param.SourceData.ContainsKey(cacheKey) == false || param.SourceData[cacheKey] == null)
+    return null;
+var result = JsonSerializer.Deserialize&lt;Account&gt;((string)param.SourceData[cacheKey]);
+
+// HeroInventoryDbStorage.cs:21-41 — 실제 쿼리를 친다
+var entities = HeroEntity.LoadFromDB(db.Connection, param.AuthInfo.UID);</code></pre>
+<p><b>선택.</b> <code>IDataStorage</code>를 통째로 바꾸지 않고 <b>비동기 계약을 별도 인터페이스로 신설</b>해 DB 5개만 구현한다.
+전환 대상이 10개 → 5개가 된다.</p>
+<p><b>대안과 비교.</b> <code>IDataStorage</code> 자체에 <code>GetDataAsync</code>를 추가하면 Cache 5개도 구현해야 하는데,
+그 구현은 동기 코드를 <code>ValueTask</code>로 감싼 형태가 된다. 지금 <code>DbDataProvider</code>가 가진 것과 같은 모양이 5개 더 생긴다.</p>
+
+<h3>판단 ② 원본 무수정으로 비동기 연결이 가능하다</h3>
+<p><b>제약.</b> <code>DBConnector&lt;T&gt;</code>는 생성자에서 동기로 연결을 연다. 생성자는 <code>await</code>를 못 하므로 파생 클래스로는 바꿀 수 없다.
+그리고 <code>Y2K.Core</code>는 수정 금지다.</p>
+<p><b>근거(측정).</b> <code>DataBaseStorageParameter.DbConnector</code>의 타입이 구체 클래스가 아니라 인터페이스다.</p>
+<pre><code>// Y2K\.core\source\DataBase\Interface.cs:38-49
+public interface IY2KDbConnector : IDisposable
+{
+    IDbConnection Connection { get; set; }
+    List&lt;Entity&gt; AttachEntities { get; }
+    void Attach&lt;T&gt;(T entity) where T : Entity;
+    void AttachList&lt;T&gt;(T entities) where T : IEnumerable&lt;Entity&gt;;
+    void Commit();
+    ValueTask CommitAsync();
+}
+
+// Storage\Interface.cs:72
+public IY2KDbConnector DbConnector { get; set; }</code></pre>
+<p><b>선택.</b> <code>tcp_template</code> 안에 <code>IY2KDbConnector</code> + <code>IAsyncDisposable</code>을 <b>독립 구현</b>한
+비동기 커넥터를 만들어 끼운다. 상속이 아니라 같은 계약을 따로 구현하는 방식이며,
+2026-08-22에 네트워크 계층에서 채택한 방식과 같다. <b>원본 수정 0바이트</b>이므로 별도 승인이 필요 없다.</p>
+<pre><code>public sealed class GameDbAsyncConnector : IY2KDbConnector, IAsyncDisposable
+{
+    // 생성자에서 열지 않는다. 정적 팩토리에서 비동기로 연다.
+    public static async ValueTask&lt;GameDbAsyncConnector&gt; CreateAsync(string connectionString, bool useTransaction = false)
+    {
+        var conn = new MySqlConnection(connectionString);
+        await conn.OpenAsync().ConfigureAwait(false);
+
+        DbTransaction tx = null;
+        if (useTransaction == true)
+        {
+            tx = await conn.BeginTransactionAsync().ConfigureAwait(false);
+        }
+
+        return new GameDbAsyncConnector(conn, tx);
+    }
+
+    // 원본과 같은 규약: Attach 로 쌓고 여기서 순서대로 일괄 실행한 뒤 커밋한다.
+    public async ValueTask DisposeAsync() { ... }
+}</code></pre>
+<p><code>IY2KDbConnector</code>는 <code>IAsyncDisposable</code>을 포함하지 않으므로, 이 커넥터를 받는 쪽은
+<code>await using</code>으로 받는다. 기존 동기 <code>GameDBConnector</code>는 그대로 두고 병행한다.</p>
+
+<h3>판단 ③ 아래층부터 전환한다</h3>
+<p>위층을 먼저 비동기로 바꾸면 아래가 동기라서 <code>Task.FromResult</code> 형태의 래핑이 다시 생긴다.
+지금 <code>DbDataProvider.GetDataAsync</code>가 그렇게 만들어진 상태다. 따라서 스토리지 → 엔티티 → 제공자 → 파사드 → 처리기 순서로 올라간다.</p>
+
+<h2>4. 전환 단계 S-A ~ S-E</h2>
+
+<table>
+<tr><th class="nw" style="width:60px">단계</th><th style="width:230px">대상</th><th>변경 내용</th></tr>
+<tr><td><b>S-A</b></td><td><code>Storage\Interface.cs</code><br>DB 스토리지 5개</td>
+    <td>비동기 계약 인터페이스 신설 후 DB 스토리지 5개가 함께 구현.<br>
+    <code>ValueTask&lt;ICacheObject&gt; GetDataAsync(StorageParameter param)</code><br>
+    Cache 5개는 무변경. 기존 동기 <code>GetData</code>도 남긴다</td></tr>
+<tr><td><b>S-B</b></td><td>DB 스토리지 5개가 부르는 엔티티</td>
+    <td><code>LoadFromDBAsync</code> 신설. Dapper 코어 <code>QueryAsync</code> 계열 사용.<br>
+    <span class="muted">19건 전부가 아니다. Spec 계열은 기동 시 1회 로딩이라 패킷 경로에 없다</span></td></tr>
+<tr><td><b>S-C</b></td><td><code>GameDbAsyncConnector</code> 신설<br><code>DbDataProvider.GetDataAsync</code></td>
+    <td><code>Task.FromResult(GetData(param))</code> 제거 →
+    <code>await using</code> + <code>await storage.GetDataAsync(...)</code></td></tr>
+<tr><td><b>S-D</b></td><td><code>UserDataProvider</code></td>
+    <td>비동기 API 노출. <code>CacheDataProvider</code> 의 기존 비동기 메서드 2개를 그대로 쓴다</td></tr>
+<tr><td><b>S-E</b></td><td>처리기 2개</td>
+    <td><code>GetAuthInfoProcessor.cs:39-71</code> / <code>LoginProcessor.cs:46-62</code>의
+    <code>return default</code> 제거 → <code>await ... .ConfigureAwait(false)</code>.<br>
+    <b>시그니처 변경 없음</b> — <code>AbstractProcessor.OnRequestAsync</code>가 이미 <code>ValueTask</code>다</td></tr>
+</table>
+
+<h3>4.1 S-D 에서 노출할 API</h3>
+<table>
+<tr><th style="width:280px">신설</th><th>내부 호출</th></tr>
+<tr><td><code>GetDataAsync(accountIdx, types, isAutoLoad)</code></td><td><code>cacheProvider.GetDataAsync</code> → 미스분만 DB 비동기 조회</td></tr>
+<tr><td><code>SetCacheAsync(data, types)</code></td><td><code>cacheProvider.SetCacheAsync</code></td></tr>
+<tr><td><code>UserDataLoadFromDBAsync(authInfo, types)</code></td><td><code>dbProvider.GetDataAsync</code></td></tr>
+</table>
+<p class="muted"><code>MakeNewbieData</code>는 쓰기 경로라 5장으로 미룬다.
+<code>ExpireCache</code>는 <code>CacheClient</code>에 대응 비동기 메서드가 없어 이번 범위에서 제외한다.</p>
+
+<h2>5. 이번 범위에서 제외한 것</h2>
+
+<h3>쓰기 경계 (P0-2)</h3>
+<table>
+<tr><th class="nw" style="width:110px">대상</th><td><code>*ToDBAsync</code> 15건 · <code>MakeNewbieData</code> · <code>DBConnector.RunDbCommandAsync</code></td></tr>
+<tr><th class="nw">제약</th><td>Dapper.Contrib <code>InsertAsync</code>가 auto-increment 키를 돌려주지 않아
+    <code>[Key]</code>를 쓰는 Energy·Hero의 <code>PrimaryKeyCallback</code>이 성립하지 않는다.
+    Account·Cash·Gold는 <code>[ExplicitKey]</code>라 무관하다.
+    <b>전환 방법은 이미 확정되어 있다</b>(Dapper 코어 사용) — 재조사 대상이 아니다</td></tr>
+<tr><th class="nw">제외 사유</th><td>검증 방법이 읽기와 다르다(생성된 키 회수 확인이 필요하다).
+    읽기 전환의 동작을 확인한 뒤 착수하는 편이 실패 지점을 좁힌다</td></tr>
+</table>
+
+<h2>6. 검증 방법</h2>
+
+<table>
+<tr><th class="nw" style="width:70px">단계</th><th style="width:250px">항목</th><th>통과 기준</th></tr>
+<tr><td>공통</td><td><code>dotnet build Template.sln -c Local</code></td><td>오류 0 / 경고 0</td></tr>
+<tr><td>공통</td><td>VS 빌드</td><td>새 csproj 추가 시 <code>&lt;Configurations&gt;</code> 선언 확인. CLI 통과만으로 판단하지 않는다</td></tr>
+<tr><td>S-A·B</td><td>동기 경로 회귀</td><td>기존 동기 <code>GetData</code> 를 쓰던 코드가 그대로 동작. 동기 계약을 남기므로 깨질 자리가 없다</td></tr>
+<tr><td>S-C</td><td>비동기 커넥터 수령 방식</td><td>비동기 커넥터를 <code>using</code>으로 받은 곳 0건 (Grep)</td></tr>
+<tr><td>S-D</td><td>동기 래핑 잔존</td><td>동기 결과를 <code>Task.FromResult</code> / <code>new ValueTask&lt;&gt;</code>로 감싼 곳 0건</td></tr>
+<tr><td>S-E</td><td>E2E 실행</td><td>TestClient <code>login</code> 모드 — Auth Ok / Login Ok, 오류 0</td></tr>
+<tr><td>S-E</td><td>스레드 점유 비교</td><td>동일 부하에서 <code>[Monitor] Threads:</code> 값이 전환 전보다 낮거나 같을 것</td></tr>
+</table>
+
+<h2>7. 승인이 필요한 항목</h2>
+
+<table>
+<tr><th style="width:36px">#</th><th style="width:230px">항목</th><th>선택지와 클로 의견</th></tr>
+<tr><td>1</td><td>동기 API 병행 유지 여부</td>
+    <td>(a) 동기·비동기 병행 &nbsp;/&nbsp; (b) 비동기로 일원화<br>
+    <span class="muted">의견 <b>(a)</b>. 미이식 처리기 10종이 어느 쪽으로 붙을지 미정이고, 남기는 비용이 없다. 일원화는 이식이 끝난 뒤 판단해도 된다</span></td></tr>
+<tr><td>2</td><td><code>AuthInfoProvider</code>(GlobalDB) 포함 여부</td>
+    <td><code>GetAuthInfoProcessor</code>가 이 경로로 Redis와 GlobalDB를 왕복한다. <code>new GlobalDBConnector()</code> 6곳<br>
+    <span class="muted">의견 <b>포함</b>. 빼면 인증 처리기는 계속 동기로 블로킹한다</span></td></tr>
+<tr><td>3</td><td>신규유저 NRE 계약 방향</td>
+    <td>(a) <code>UserDataProvider.GetData</code>에서 <code>temp == null</code>을 신규 생성 분기로 &nbsp;/&nbsp;
+    (b) <code>SYSTEM_NOT_FOUND_USER_DATA</code>를 던지도록 통일<br>
+    <span class="muted">의견 <b>(b)</b>. 신규 생성은 <code>LoginProcessor.cs:77-92</code>가 이미 명시적으로 처리한다</span></td></tr>
+<tr><td>4</td><td>쓰기 경계(P0-2) 착수 시점</td>
+    <td>(a) 읽기 전환 직후 &nbsp;/&nbsp; (b) 컨텐츠 이식 일부 진행 후<br>
+    <span class="muted">의견 <b>(a)</b>. 쓰기 계약(<code>*ToDBAsync</code> 15건)이 이미 가짜 비동기로 선언돼 있어, 읽기와 같은 시점에 바로잡지 않으면 진짜/가짜 비동기 계약이 한 클래스 안에 섞인 채로 남는다</span></td></tr>
+</table>
+
+<footer>
+  tcp_template 비동기 경계 설계 (P0) · 2026-08-24 재작성 · 클로<br>
+  상태: 승인 대기 — 7장 4건 확정 후 S-A 착수
+</footer>
+
+</div>
+</body>
+</html>

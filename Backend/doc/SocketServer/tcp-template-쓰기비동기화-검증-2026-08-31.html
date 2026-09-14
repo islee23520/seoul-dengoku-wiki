@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>DB 쓰기 비동기화 검증 — 현행 유지 결론</title>
+<style>
+:root{--bg:#fff;--fg:#1f2328;--muted:#57606a;--line:#d0d7de;--accent:#0969da;--warn:#9a6700;--warnbg:#fff8c5;--bad:#cf222e;--badbg:#ffebe9;--ok:#1a7f37;--okbg:#dafbe1;--code:#f6f8fa;}
+*{box-sizing:border-box}
+body{margin:0;padding:40px 24px;font-family:"Malgun Gothic","맑은 고딕",-apple-system,Segoe UI,sans-serif;font-size:15px;line-height:1.75;color:var(--fg);background:var(--bg);}
+.wrap{max-width:1000px;margin:0 auto}
+h1{font-size:28px;margin:0 0 6px;letter-spacing:-.02em}
+.sub{color:var(--muted);font-size:14px;margin-bottom:28px;padding-bottom:16px;border-bottom:2px solid var(--line)}
+h2{font-size:20px;margin:38px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+h3{font-size:16px;margin:22px 0 8px}
+p,li{margin:8px 0}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--code);font-weight:600}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+code{background:var(--code);padding:1px 5px;border-radius:4px;font-family:Consolas,"D2Coding",monospace;font-size:13px}
+pre{background:var(--code);border:1px solid var(--line);border-radius:6px;padding:14px;overflow-x:auto;font-family:Consolas,"D2Coding",monospace;font-size:13px;line-height:1.6}
+pre code{background:none;padding:0}
+.box{border-left:4px solid var(--accent);background:#eef7ff;padding:12px 16px;margin:14px 0;border-radius:0 6px 6px 0}
+.warn{border-left-color:var(--warn);background:var(--warnbg)}
+.bad{border-left-color:var(--bad);background:var(--badbg)}
+.ok{border-left-color:var(--ok);background:var(--okbg)}
+.verdict{border:2px solid var(--ok);background:var(--okbg);border-radius:8px;padding:16px 20px;margin:18px 0}
+.verdict h2{border:0;margin:0 0 8px;padding:0;font-size:19px;color:#0b5c26}
+.good{color:var(--ok);font-weight:700}
+.bar{display:inline-block;height:11px;background:var(--accent);border-radius:2px;vertical-align:middle}
+.bar.b2{background:#8250df}
+.bar.b3{background:#bf3989}
+.foot{margin-top:44px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+</style>
+</head>
+<body><div class="wrap">
+
+<h1>DB 쓰기 비동기화 검증</h1>
+<div class="sub">tcp_template / Y2K.Core.DataBase · 2026-08-31 · 작성 클로 · 검증 대상 커밋 <code>ServerTemplate d08a8dd</code> · <code>Y2K 100ef56</code></div>
+
+<div class="verdict">
+<h2>결론 — 현행 동기 쓰기 유지 (미채택)</h2>
+<p style="margin:0">기술적으로는 가능하고 <b>정확성도 동일</b>하지만, <b>고동시성에서 현행보다 나쁘고 손실까지 발생</b>한다.
+현행 동기 구조의 안정성이 비동기 전환의 이득보다 크다고 판단해 <b>채택하지 않는다.</b>
+읽기(SELECT) 비동기는 별개이며 이 문서의 범위가 아니다.</p>
+</div>
+
+<h2>1. 배경</h2>
+
+<p>쓰기 경로를 동기로 강제한 결정의 근거는 <b>키 취득–후속삽입 순서 의존성</b>이었다.</p>
+
+<div class="box">
+UPDATE 자체는 비동기로 처리해도 무방하다. 그러나 <code>DBConnector.Attach</code> 로 쌓인 엔티티 목록에는 Insert 와 Update 가 함께 존재할 수 있고,
+Insert 로 생성된 auto increment key 를 후속 Update 가 다른 테이블에 써야 하는 경우가 있다.
+이 순서 의존성 때문에 개별 연산이 아니라 <b>쓰기 배치 전체</b>를 동기로 묶는다. <span style="color:var(--muted)">— 팀장, 2026-08-31</span>
+</div>
+
+<p>다만 코드를 읽어보면 <code>RunDbCommandAsync</code> 는 <code>foreach</code> 안에서 <code>await</code> 하므로 <b>순서 자체는 비동기에서도 유지</b>된다(<code>DBConnector.cs:156-174</code>).
+그렇다면 실제 제약은 순서가 아니라 <b>auto-key 취득 API</b>가 아닌가 — 이 가설을 검증하기 위해 예제 프로젝트를 만들어 실측했다.</p>
+
+<h2>2. 검증 방법</h2>
+
+<table>
+<tr><th style="width:150px">항목</th><th>내용</th></tr>
+<tr><td>프로젝트</td><td><code>AsyncWritePoC</code> (net8.0 콘솔)</td></tr>
+<tr><td>참조</td><td><b><code>Y2K.Core.DataBase.dll</code></b> + Dapper 2.1 + Dapper.Contrib 2.0 + MySqlConnector 2.3 — <code>DB.csproj</code> 와 동일 버전</td></tr>
+<tr><td>대상 DB</td><td>맥미니 MySQL 9.6.0. 실제 게임 DB 를 건드리지 않도록 별도 임시 테이블 사용, 종료 시 삭제</td></tr>
+<tr><td>연결 옵션</td><td>프로덕션 <code>GAME_DB</code>(<code>global_db.tbl_connection_info</code>) 옵션을 그대로 본뜸</td></tr>
+<tr><td>비교 대상</td><td>① 현행 동기(Contrib <code>Insert</code>) ② 비동기 2왕복(<code>ExecuteAsync</code> + <code>SELECT LAST_INSERT_ID()</code>) ③ 비동기 1왕복(두 문장을 한 번에)</td></tr>
+</table>
+
+<p>실제 사용 패턴을 그대로 본떴다 — 도메인 객체가 <code>PrimaryKeyCallback</code> 을 구독하고, 엔티티 Insert 가 실행되면 그 콜백으로 키를 되돌려받는다.
+자식 엔티티는 <b>실행 시점에</b> 부모 도메인 객체에서 키를 읽는다. 템플릿의 <code>Energy</code> / <code>Hero</code> 구조와 동일하다.</p>
+
+<h2>3. 정확성 — 동기와 비동기가 동일하다</h2>
+
+<p>14개 판정 전부 통과.</p>
+
+<table>
+<tr><th style="width:60px">케이스</th><th>검증 내용</th><th style="width:90px">결과</th></tr>
+<tr><td>1</td><td>동기 기준선 — auto-key 전파, 자식이 그 키를 저장</td><td class="good">통과</td></tr>
+<tr><td>2</td><td>비동기 — <code>ExecuteAsync</code> + <code>LAST_INSERT_ID()</code> 로 <b>동기와 동일한 결과</b></td><td class="good">통과</td></tr>
+<tr><td>3a</td><td>동기 + 트랜잭션 (템플릿 현행 조건)</td><td class="good">통과</td></tr>
+<tr><td>3b</td><td>비동기 + 트랜잭션</td><td class="good">통과</td></tr>
+<tr><td>3d</td><td>자식 Update 실패 시 <b>부모 Insert 롤백</b></td><td class="good">통과</td></tr>
+<tr><td>4</td><td><code>LAST_INSERT_ID()</code> 세션 종속 — 같은 커넥션 유효, 다른 커넥션은 0</td><td class="good">통과</td></tr>
+<tr><td>5</td><td>반례 — auto_increment 없는 테이블에서 예외 아닌 0 반환</td><td class="good">통과</td></tr>
+<tr><td>6</td><td>실행 순서 — Attach 순서대로 auto-key 증가</td><td class="good">통과</td></tr>
+</table>
+
+<div class="box ok">
+<b>가설은 맞았다.</b> 순서는 비동기에서도 유지되고, 같은 커넥션에서 순차 <code>await</code> 하면 auto-key 취득과 콜백 전파가 동기와 완전히 같다.
+즉 <b>정확성은 비동기 전환의 장애물이 아니다.</b>
+</div>
+
+<h2>4. 순차 성능 — 비동기 자체로는 빨라지지 않는다</h2>
+
+<p>각 2만건 / 배치 1,000건 / 배치당 트랜잭션 1개.</p>
+
+<table>
+<tr><th>방식</th><th class="n">저장</th><th class="n">손실</th><th class="n">초</th><th class="n">건/초</th><th>현행 대비</th></tr>
+<tr><td>현행 동기 (Contrib Insert)</td><td class="n">20,000</td><td class="n">0</td><td class="n">270.2</td><td class="n">74</td><td>기준</td></tr>
+<tr><td>비동기 2왕복</td><td class="n">20,000</td><td class="n">0</td><td class="n">274.1</td><td class="n">73</td><td>1.4% <b>느림</b></td></tr>
+<tr><td>비동기 1왕복 통합</td><td class="n">20,000</td><td class="n">0</td><td class="n">144.4</td><td class="n">138</td><td class="good">46.5% 빠름</td></tr>
+</table>
+
+<div class="box warn">
+<b>비동기로 바꾸는 것만으로는 빨라지지 않는다.</b> 왕복 횟수가 같기 때문이다(오히려 상태머신 오버헤드로 1.4% 느림).
+이득은 비동기가 열어주는 <b>왕복 축소</b>에서 나온다 — <code>INSERT ...; SELECT LAST_INSERT_ID();</code> 를 한 번에 보내
+행당 왕복을 2회에서 1회로 줄이면 절반 가까이 빨라진다.
+</div>
+
+<h2>5. 동시 세션 부하 — 여기서 갈린다</h2>
+
+<p>순차 측정으로는 동기/비동기 차이가 드러나지 않는다(위에서 1.4%). 실제 서버 조건인 <b>동시 세션</b>으로 측정했다.<br>
+배치 50건 = 커넥터 1개 + 트랜잭션 1개 / 커넥션 풀 상한 100 / 서버 <code>max_connections=151</code>.</p>
+
+<h3>동시 64 세션 — 비동기 우세</h3>
+<table>
+<tr><th>방식</th><th class="n">건수</th><th class="n">저장</th><th class="n">손실</th><th class="n">건/초</th><th class="n">최대<br>스레드</th><th class="n">스레드풀<br>대기 최대</th><th class="n">P95 ms</th></tr>
+<tr><td>현행 동기</td><td class="n">10,000</td><td class="n">10,000</td><td class="n good">0</td><td class="n">1,275</td><td class="n">33</td><td class="n">56</td><td class="n">1,353</td></tr>
+<tr><td>비동기 2왕복</td><td class="n">20,000</td><td class="n">20,000</td><td class="n good">0</td><td class="n">2,244</td><td class="n">34</td><td class="n">14</td><td class="n">1,939</td></tr>
+<tr><td>비동기 1왕복</td><td class="n">20,000</td><td class="n">20,000</td><td class="n good">0</td><td class="n">3,953</td><td class="n">52</td><td class="n">2</td><td class="n">988</td></tr>
+</table>
+
+<p>처리량 <b>1.76x / 3.10x</b>. 스레드풀 대기열이 <b>56 → 14 → 2</b> 로 줄어드는 것이 비동기가 스레드를 놓아준다는 직접 증거다.</p>
+
+<h3>동시 256 세션 — 역전된다</h3>
+<p>부하 비대칭 영향을 배제하려고 <b>동일 1만건</b>으로 재측정한 결과다.</p>
+<table>
+<tr><th>방식</th><th class="n">건수</th><th class="n">저장</th><th class="n">손실</th><th class="n">건/초</th><th class="n">최대<br>스레드</th><th class="n">P95 ms</th></tr>
+<tr><td>현행 동기</td><td class="n">10,000</td><td class="n">10,000</td><td class="n good">0</td><td class="n"><b>1,341</b></td><td class="n">34</td><td class="n">1,247</td></tr>
+<tr><td>비동기 2왕복</td><td class="n">10,000</td><td class="n">7,950</td><td class="n" style="color:var(--bad);font-weight:700">2,050 (20.5%)</td><td class="n">445</td><td class="n">71</td><td class="n">21,461</td></tr>
+<tr><td>비동기 1왕복</td><td class="n">10,000</td><td class="n">5,800</td><td class="n" style="color:var(--bad);font-weight:700">4,200 (42%)</td><td class="n">609</td><td class="n">101</td><td class="n">15,989</td></tr>
+</table>
+
+<p>처리량 <b>0.33x / 0.45x</b> 로 뒤집히고, <b>비동기에서만 손실이 발생</b>한다.
+실패는 전량 <code>Connect Timeout expired. All pooled connections are in use.</code></p>
+
+<div class="box">
+<b>데이터는 깨지지 않았다.</b> 손실 2,050 = 41배치 × 50 으로 정확히 배치 단위이고, 실패한 배치는 트랜잭션이 커밋되지 않아 부분 쓰기가 없다.
+<b>"요청 실패"이지 "데이터 손상"이 아니다.</b>
+</div>
+
+<h2>6. 원인 — 사라진 제동장치</h2>
+
+<p>예외가 터진 위치가 원인을 정확히 가리킨다.</p>
+
+<pre><code>MySqlConnector.MySqlException: Connect Timeout expired. All pooled connections are in use.
+   at MySqlConnector.MySqlConnection.Open()
+   at Y2K.Core.DataBase.DBConnector`1..ctor(String connectionString, Boolean useTransaction)
+      in DBConnector.cs:line 31</code></pre>
+
+<p><b><code>DBConnector</code> 는 생성자에서 <code>Connection.Open()</code> 을 동기로 호출한다</b>(<code>DBConnector.cs:30-38</code>). <code>OpenAsync</code> 경로가 없다.
+따라서 쓰기 본문을 비동기로 바꿔도 <b>커넥션 획득 구간은 여전히 스레드를 블로킹</b>하고, 풀이 고갈되면 그 자리에서 예외를 던진다.</p>
+
+<svg viewBox="0 0 720 210" width="100%" height="210" role="img" aria-label="동기와 비동기의 제동 지점 비교">
+  <rect x="8" y="8" width="700" height="90" rx="6" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="20" y="30" font-size="14" font-weight="700" fill="#0b5c26">현행 동기 — 스레드풀이 제동을 건다</text>
+  <rect x="24" y="44" width="120" height="36" rx="4" fill="#fff" stroke="#1a7f37"/><text x="36" y="67" font-size="13">세션 256</text>
+  <text x="152" y="67" font-size="16" fill="#1a7f37">→</text>
+  <rect x="172" y="44" width="150" height="36" rx="4" fill="#fff" stroke="#1a7f37"/><text x="184" y="67" font-size="13">스레드풀 최대 34</text>
+  <text x="330" y="67" font-size="16" fill="#1a7f37">→</text>
+  <rect x="350" y="44" width="150" height="36" rx="4" fill="#fff" stroke="#1a7f37"/><text x="362" y="67" font-size="13">커넥션 풀 100</text>
+  <text x="508" y="67" font-size="16" fill="#1a7f37">→</text>
+  <rect x="528" y="44" width="160" height="36" rx="4" fill="#fff" stroke="#1a7f37"/><text x="540" y="67" font-size="13" font-weight="700" fill="#0b5c26">손실 0</text>
+
+  <rect x="8" y="110" width="700" height="90" rx="6" fill="#ffebe9" stroke="#cf222e"/>
+  <text x="20" y="132" font-size="14" font-weight="700" fill="#8b1a1a">비동기 — 제동이 사라져 풀을 고갈시킨다</text>
+  <rect x="24" y="146" width="120" height="36" rx="4" fill="#fff" stroke="#cf222e"/><text x="36" y="169" font-size="13">세션 256</text>
+  <text x="152" y="169" font-size="16" fill="#cf222e">→</text>
+  <rect x="172" y="146" width="150" height="36" rx="4" fill="#fff" stroke="#cf222e" stroke-dasharray="4 3"/><text x="184" y="169" font-size="13" fill="#8b1a1a">제동 없음</text>
+  <text x="330" y="169" font-size="16" fill="#cf222e">→</text>
+  <rect x="350" y="146" width="150" height="36" rx="4" fill="#fff" stroke="#cf222e"/><text x="362" y="169" font-size="13">커넥션 풀 100</text>
+  <text x="508" y="169" font-size="16" fill="#cf222e">→</text>
+  <rect x="528" y="146" width="160" height="36" rx="4" fill="#fff" stroke="#cf222e"/><text x="540" y="169" font-size="13" font-weight="700" fill="#8b1a1a">손실 20~42%</text>
+</svg>
+
+<div class="box bad">
+<b>동기 경로에서는 스레드풀(32~34개)이 사실상 admission control 로 작동한다.</b> 의도된 설계는 아니지만 결과적으로 커넥션 풀을 고갈시키지 않는다.
+비동기는 그 제동이 사라져 하류(커넥션 풀)를 그대로 때린다. 이것이 256 세션에서 역전이 일어난 이유다.
+</div>
+
+<h2>7. 전환하려면 필요한 것 (재검토 조건)</h2>
+
+<p>아래 <b>세 가지가 모두</b> 갖춰진 설계 제안이 있을 때만 다시 논의한다. 하나라도 빠지면 이득이 없거나 역효과다.</p>
+
+<table>
+<tr><th style="width:40px">#</th><th>조건</th><th>없을 때</th></tr>
+<tr><td>1</td><td><b>비동기 커넥션 획득</b> — <code>DBConnector</code> 생성자의 동기 <code>Open()</code> 제거 (Y2K 원본 수정 필요)</td><td>커넥션 대기가 스레드를 계속 붙잡아 비동기 이점이 상쇄된다</td></tr>
+<tr><td>2</td><td><b>명시적 동시성 제한</b> — 세마포어 등. 지금은 스레드풀이 우연히 대신하던 역할</td><td>고동시성에서 풀 고갈 → 손실 20~42%</td></tr>
+<tr><td>3</td><td><b>1왕복 통합쿼리</b> — <code>INSERT ...; SELECT LAST_INSERT_ID();</code></td><td>비동기 전환만으로는 1.4% 느려진다</td></tr>
+</table>
+
+<h2>8. 부수 발견 — <code>IgnoreCommandTransaction</code></h2>
+
+<p>검증 중 별개의 사실을 확인했다. 앞으로 같은 함정에 걸리지 않도록 남긴다.</p>
+
+<p><code>DBConnector</code> 는 <code>_transaction</code> 을 private 로만 갖고 <code>IY2KDbConnector</code> 에도 접근자가 없다(<code>Interface.cs:38-51</code>).
+따라서 엔티티가 Dapper 를 호출할 때 <code>command.Transaction</code> 을 지정할 방법이 없고, MySqlConnector 는 이 경우 예외를 던진다.</p>
+
+<table>
+<tr><th style="width:210px">위치</th><th>옵션</th></tr>
+<tr><td><code>global_db.tbl_connection_info</code> 의 <code>GAME_DB</code></td><td><code>IgnoreCommandTransaction=true</code> <b>있음</b> → 트랜잭션 쓰기가 정상 동작</td></tr>
+<tr><td><code>appsettings.json</code> 의 <code>GlobalDB</code></td><td><b>없음</b></td></tr>
+</table>
+
+<div class="box warn">
+게임 DB 연결문자열은 <code>appsettings.json</code> 이 아니라 <b>DB 테이블에서 온다</b>(<code>DBConfig.Init</code>).
+이 옵션은 비동기 때문에 새로 필요한 것이 아니라 <b>현행 동기 경로도 이미 의존하고 있는 조건</b>이다.
+appsettings 만 보고 "옵션이 없다" 고 판단하면 오진한다.
+</div>
+
+<h2>9. 측정하지 않은 것</h2>
+<ul>
+<li><b>1,000,000건 순차 측정</b> — 실측 74건/초 기준 3방식 합계 약 9시간 35분으로 판단돼 동시 세션 측정으로 대체했다. 순차 측정은 동기/비동기 차이를 구조적으로 드러내지 못한다(위 4장에서 1.4%로 확인).</li>
+<li><b>읽기(SELECT) 비동기화</b> — 이 문서의 범위가 아니다. 별도 논점으로 남아 있다.</li>
+<li><b>실제 게임 DB 대상 측정</b> — 프로덕션 데이터를 건드리지 않기 위해 별도 임시 테이블을 사용했다. 스키마·부하 특성이 실제와 다를 수 있다.</li>
+</ul>
+
+<div class="foot">
+DB 쓰기 비동기화 검증 · 2026-08-31 · 클로<br>
+결론: <b>현행 동기 유지 (미채택)</b> — 재검토는 7장 3조건을 갖춘 제안이 있을 때만
+</div>
+
+</div></body></html>

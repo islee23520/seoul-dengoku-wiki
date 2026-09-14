@@ -1,6 +1,6 @@
 # 거점과 영토
 
-![거점 점유와 통합의 아이소 공간](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-strongholds.svg?raw=true)
+![거점 점유와 통합의 아이소 공간](https://github.com/islee23520/seoul-kenshi/blob/main/Reference/assets/wiki/isometric-strongholds.svg?raw=true)
 
 거점 점유 후 안정화와 영토 통합을 4방향 시야와 연결로 관리합니다.
 

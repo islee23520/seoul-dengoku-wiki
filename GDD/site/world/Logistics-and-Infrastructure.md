@@ -1,6 +1,6 @@
 # 물류와 기반 시설
 
-![보급 경로와 병목의 아이소 연결](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-logistics.svg?raw=true)
+![보급 경로와 병목의 아이소 연결](https://github.com/islee23520/seoul-kenshi/blob/main/Reference/assets/wiki/isometric-logistics.svg?raw=true)
 
 보급 경로의 병목과 처리량을 4방향 연결과 시야로 예측·관리합니다.
 

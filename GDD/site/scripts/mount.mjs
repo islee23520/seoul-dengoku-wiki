@@ -4,12 +4,12 @@ import { fileURLToPath } from 'node:url'
 
 const scriptDir = dirname(fileURLToPath(import.meta.url))
 const docsSiteRoot = join(scriptDir, '..')
-const repoRoot = join(docsSiteRoot, '..')
-const gameLogicRoot = join(repoRoot, 'docs', 'game-logic')
-const referenceDir = join(gameLogicRoot, 'reference')
+const repoRoot = join(docsSiteRoot, '..', '..')
+const gameLogicRoot = join(repoRoot, 'GDD', 'game-logic')
+const referenceDir = join(repoRoot, 'Research', 'canon-reference')
 
 const GITHUB_WIKI =
-  'https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/'
+  'https://github.com/islee23520/seoul-kenshi/blob/main/Reference/assets/wiki/'
 
 const DESIGN_EXACT = new Set([
   'Game-Thesis.md',
@@ -122,7 +122,9 @@ function rewriteHref(href, pageByFile, pageByStem) {
     return href
   }
 
-  const assetsMatch = pathPart.match(/^(?:\.\.\/)+assets\/wiki\/(.+)$/)
+  const assetsMatch =
+    pathPart.match(/^(?:\.\.\/)+assets\/wiki\/(.+)$/) ||
+    pathPart.match(/^(?:\.\.\/)+Reference\/assets\/wiki\/(.+)$/)
   if (assetsMatch) {
     return `${GITHUB_WIKI}${assetsMatch[1]}?raw=true${hash}`
   }

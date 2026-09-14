@@ -1,6 +1,6 @@
 # 전쟁과 공성
 
-![공성 접근로와 퇴로의 아이소 전장](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-warfare-sieges.svg?raw=true)
+![공성 접근로와 퇴로의 아이소 전장](https://github.com/islee23520/seoul-kenshi/blob/main/Reference/assets/wiki/isometric-warfare-sieges.svg?raw=true)
 
 공성 시 접근로, 보급, 퇴로를 4방향 시야와 공간으로 계획합니다.
 

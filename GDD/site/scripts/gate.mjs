@@ -4,9 +4,9 @@ import { fileURLToPath } from 'node:url'
 
 const scriptDir = dirname(fileURLToPath(import.meta.url))
 const docsSiteRoot = join(scriptDir, '..')
-const repoRoot = join(docsSiteRoot, '..')
+const repoRoot = join(docsSiteRoot, '..', '..')
 const distDir = join(docsSiteRoot, 'dist')
-const referenceDir = join(repoRoot, 'docs', 'game-logic', 'reference')
+const referenceDir = join(repoRoot, 'Research', 'canon-reference')
 
 const BANNED_TERMS = ['Kenshi', 'Underrail', 'Gunner', 'clone', '복제']
 const EXPECTED_REFERENCE_EXCLUSIONS = 18
@@ -140,7 +140,7 @@ function main() {
 
   const { stems, referenceFiles } = excludedStems()
   if (!existsSync(referenceDir)) {
-    failures.push('FAIL exclusion: docs/game-logic/reference/ is missing')
+    failures.push('FAIL exclusion: Research/canon-reference/ is missing')
   } else if (referenceFiles.length !== EXPECTED_REFERENCE_EXCLUSIONS) {
     failures.push(
       `FAIL exclusion: expected ${EXPECTED_REFERENCE_EXCLUSIONS} reference/*.md files, found ${referenceFiles.length}`

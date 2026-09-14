@@ -1,10 +1,10 @@
 # 서울과 지하철 레이어
 
-![지하철 다층 공간의 인물 방향 시야 연결](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-subway-layers.svg?raw=true)
+![지하철 다층 공간의 인물 방향 시야 연결](https://github.com/islee23520/seoul-kenshi/blob/main/Reference/assets/wiki/isometric-subway-layers.svg?raw=true)
 
 지하철 다층 구조에서 인물의 방향과 시야가 층간 이동 경로와 연결되는 방식을 파악합니다.
 
-![지하철 중심 다층 도시](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/subway-layers.svg?raw=true)
+![지하철 중심 다층 도시](https://github.com/islee23520/seoul-kenshi/blob/main/Reference/assets/wiki/subway-layers.svg?raw=true)
 
 
 ## 세계의 수직 구조

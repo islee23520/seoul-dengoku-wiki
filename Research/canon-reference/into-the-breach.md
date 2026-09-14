@@ -1,6 +1,6 @@
 # Into the Breach — 게임 로직 백과사전
 
-> 출처 인계: [공유 조사 색인](../../../.omo/research/README.md). 로컬 sources.json·원문 패킷 언급은 조사 당시 기록이며 이 전달에 원시 자료가 포함된다는 뜻이 아니다. 누락된 ID는 미확인으로 남긴다.
+> 출처 인계: [공유 조사 색인](../../.omo/research/README.md). 로컬 sources.json·원문 패킷 언급은 조사 당시 기록이며 이 전달에 원시 자료가 포함된다는 뜻이 아니다. 누락된 ID는 미확인으로 남긴다.
 
 - 개발: Subset Games(FTL 제작진), 2018-02-27 출시, Windows/macOS/Linux, 2022년 무료 대규모 업데이트 "Advanced Edition(AE)" [S-STEAM]
 - 장르: 턴제 전술 + 런 기반 로그라이트. 90 Metacritic [S-STEAM]

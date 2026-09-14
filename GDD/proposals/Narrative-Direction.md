@@ -76,7 +76,7 @@
 
 첫 패킷은 이 방향서와 [대표 사건 설계서](Scenario-Hold-the-Gate.md) 두 문서다. 사건 설계서에는 사전 정보, 배역의 동기, 출발 선택, 귀환 조건, 전술 목표, 보상, 실패와 비개입, 추가 구현 목록을 둔다.
 
-[캠페인 루프](../game-logic/Campaign-Loop.md), [전술 전투](../game-logic/SRPG-Combat.md), [전략·전투 왕복](../game-logic/Strategy-Battle-Roundtrip.md)의 설계와 현재 구현을 구별한다. 특히 수리·호송이 장르 문서에 있다는 이유만으로 현재 POC에 구체적인 문 상호작용, 수송대, 관계 지속이 구현됐다고 쓰지 않는다.
+[캠페인 루프](../game-logic/Campaign-Loop.md), [전술 전투](../game-logic/Realtime-Formation-Card-Battle.md), [전략·전투 왕복](../game-logic/Strategy-Battle-Roundtrip.md)의 설계와 현재 구현을 구별한다. 특히 수리·호송이 장르 문서에 있다는 이유만으로 현재 POC에 구체적인 문 상호작용, 수송대, 관계 지속이 구현됐다고 쓰지 않는다.
 
 검토 후 구현으로 전환하려면 대표 사건 하나의 가설, 필요한 최소 기능, 비용과 일정, 정본 캐스트 연결, 상태의 소유권, 종료와 정산을 오너와 개발팀이 합의한다. 문서 수용, 종이 실험, 기술 프로토타입, 제품 통합을 각각 다른 완료 상태로 기록한다.
 

@@ -1,0 +1,35 @@
+# .NET / Visual Studio
+**/bin/
+**/obj/
+**/out/
+**/.vs/
+*.user
+*.suo
+*.userprefs
+*.pdb
+
+# JetBrains Rider / VS Code
+.idea/
+.vscode/
+
+# Build artifacts
+*.dll.config
+*.exe.config
+
+# Runtime logs (포트폴리오에 개발 로그 포함 방지)
+**/Log/
+**/GameLog/
+**/RandomLogs/
+*.log
+
+# Secrets — 로컬 개발 자격증명 보호
+appsettings.QA.json
+appsettings.Live.json
+appsettings.Development.json
+appsettings.*.local.json
+
+# OS / Misc
+.DS_Store
+Thumbs.db
+*.swp
+*~

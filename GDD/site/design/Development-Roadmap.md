@@ -1,6 +1,6 @@
 # 개발 로드맵
 
-![모든 개발 단계에서 칸에 누가 서 있고 어느 쪽을 보며 어디까지 보이는지](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-grammar.svg?raw=true)
+![모든 개발 단계에서 칸에 누가 서 있고 어느 쪽을 보며 어디까지 보이는지](https://github.com/islee23520/seoul-kenshi/blob/main/Reference/assets/wiki/isometric-grammar.svg?raw=true)
 
 이 로드맵은 [Concept.md](/design/Concept)의 현재 모듈 `Unity POC 통합 코어 루프`와 [ToDo.md](/design/ToDo)의 실측 상태를 반영한다. 일정 약속이 아니라 의존성과 실패 기준을 설명한다.
 

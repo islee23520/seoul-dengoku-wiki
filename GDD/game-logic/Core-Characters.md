@@ -15,7 +15,7 @@
 
 ### 인물 한재목
 
-![급수총재 한재목의 흉상 초상](../assets/wiki/portraits/hanjaemok.png)
+![급수총재 한재목의 흉상 초상](../../Reference/assets/wiki/portraits/hanjaemok.png)
 
 - 소속: 여의신정수문정부
 - 직위: 급수총재
@@ -29,7 +29,7 @@
 
 ### 인물 강민서
 
-![제작평의회 중재자 강민서의 흉상 초상](../assets/wiki/portraits/gangminseo.png)
+![제작평의회 중재자 강민서의 흉상 초상](../../Reference/assets/wiki/portraits/gangminseo.png)
 
 - 소속: 서남제작동맹
 - 직위: 제작평의회 중재자
@@ -43,7 +43,7 @@
 
 ### 인물 서이안
 
-![생명안전 연구책임자 서이안의 흉상 초상](../assets/wiki/portraits/seoian.png)
+![생명안전 연구책임자 서이안의 흉상 초상](../../Reference/assets/wiki/portraits/seoian.png)
 
 - 소속: 마곡연구평의회
 - 직위: 생명안전 연구책임자
@@ -57,7 +57,7 @@
 
 ### 인물 임하준
 
-![펌프기술 총관 임하준의 흉상 초상](../assets/wiki/portraits/imhajun.png)
+![펌프기술 총관 임하준의 흉상 초상](../../Reference/assets/wiki/portraits/imhajun.png)
 
 - 소속: 뚝도공방연합
 - 직위: 펌프기술 총관, 현재 실종
@@ -71,7 +71,7 @@
 
 ### 인물 배우진
 
-![상수호위사령 배우진의 흉상 초상](../assets/wiki/portraits/baeujin.png)
+![상수호위사령 배우진의 흉상 초상](../../Reference/assets/wiki/portraits/baeujin.png)
 
 - 소속: 암사고덕상수단
 - 직위: 상수호위사령
@@ -85,7 +85,7 @@
 
 ### 인물 임초원
 
-![펌프기술자 임초원의 흉상 초상](../assets/wiki/portraits/imchowon.png)
+![펌프기술자 임초원의 흉상 초상](../../Reference/assets/wiki/portraits/imchowon.png)
 
 - 소속: 뚝도공방연합·마곡연구평의회 사이
 - 직위: 펌프기술자, 임하준의 양자
@@ -101,7 +101,7 @@
 
 ### 인물 윤서린
 
-![기록총재 윤서린의 흉상 초상](../assets/wiki/portraits/yunseorin.png)
+![기록총재 윤서린의 흉상 초상](../../Reference/assets/wiki/portraits/yunseorin.png)
 
 - 소속: 도성기록청
 - 직위: 기록청장

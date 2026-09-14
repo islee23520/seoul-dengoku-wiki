@@ -6,7 +6,7 @@ summary: 역 입장 이후 층·격자와 시설이 열리는 절차
 
 # 역 내부에 들어가면
 
-![거점 점유와 통합](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-strongholds.svg?raw=true)
+![거점 점유와 통합](https://github.com/islee23520/seoul-kenshi/blob/main/Reference/assets/wiki/isometric-strongholds.svg?raw=true)
 
 이 문서는 **역에 들어갔을 때 무엇이 열리는지**, 그리고 **시설을 어떻게 돌리는지**를 적는다. 캠페인 조우를 한 번만 반영하는 `SettlementApi`와 다른 일이다.
 

@@ -17,8 +17,8 @@
 
 | 말 | 뜻 |
 |---|---|
-| 게시 SoT | main의 `docs/game-logic/Cast-State-01.md`–`16.md`, `Cast-Index.md`, `Cast-Relations.md`, `Core-Characters.md`. 위키 원본이다. |
-| GitHub Wiki | `docs/game-logic/`의 생성 미러. 손으로 고치지 않는다. 원본을 고치고 빌더로 다시 게시한다. |
+| 게시 SoT | main의 `GDD/game-logic/Cast-State-01.md`–`16.md`, `Cast-Index.md`, `Cast-Relations.md`, `Core-Characters.md`. 위키 원본이다. |
+| GitHub Wiki | `GDD/game-logic/`의 생성 미러. 손으로 고치지 않는다. 원본을 고치고 빌더로 다시 게시한다. |
 | 미게시·대기 | Cast-Index 보관 표의 상태. 파일 존재나 SHA가 게시 승인이 아니다. |
 | 큐레이션 | 구세대 `docs/cast-*` 조각을 Cast-State SoT와 대조해 게시하거나 폐기하는 일. `git merge` 일괄 적용이 아니다. |
 | 승격 | 권리·BOM·4축 검수와 리드 승인을 통과한 에셋만 런타임 경로에 넣는 일. |
@@ -108,14 +108,14 @@ gh issue create --repo islee23520/seoul-kenshi \
 Wiki:
 
 ```bash
-node tools/wiki/test-build-wiki.mjs
-node tools/wiki/verify-cast.mjs --docs docs/game-logic --stage all
-node tools/wiki/build-wiki.mjs docs/game-logic docs/assets/wiki <tmp> "$(git rev-parse HEAD)"
+node Tool/wiki/test-build-wiki.mjs
+node Tool/wiki/verify-cast.mjs --docs GDD/game-logic --stage all
+node Tool/wiki/build-wiki.mjs GDD/game-logic Reference/assets/wiki <tmp> "$(git rev-parse HEAD)"
 ```
 
 빌드가 실패하면 공개 Wiki에 push하지 않는다. 게시 전에 마지막 정상 위키 커밋을 적는다.
 
-Unity: [`docs/Unity-Headless-Workflow.md`](docs/Unity-Headless-Workflow.md). `6000.7.0a5` `-batchmode`, 전용 백그라운드 세션, GUI/`unicli`/uLoop/CuaDriver 금지. 증거는 NUnit XML과 PNG/해시와 cleanup 영수증이다.
+Unity: [`Tool/docs/Unity-Headless-Workflow.md`](Tool/docs/Unity-Headless-Workflow.md). `6000.7.0a5` `-batchmode`, 전용 백그라운드 세션, GUI/`unicli`/uLoop/CuaDriver 금지. 증거는 NUnit XML과 PNG/해시와 cleanup 영수증이다.
 
 아트: 권리·BOM fail-closed. 4축 raw 보존. 리드 승인 전 런타임 승격 금지. ComfyUI 신규 설치는 소유자 인터뷰 없이 이슈 범위에 넣지 않는다.
 

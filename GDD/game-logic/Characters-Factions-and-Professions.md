@@ -1,6 +1,6 @@
 # 인물·세력·생업
 
-![인물과 파티가 어느 칸에 서 있고 어느 쪽을 보며 어디까지 보이는지](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-grammar.svg?raw=true)
+![인물과 파티가 어느 칸에 서 있고 어느 쪽을 보며 어디까지 보이는지](https://github.com/islee23520/seoul-kenshi/blob/main/Reference/assets/wiki/isometric-grammar.svg?raw=true)
 
 ## 인물
 

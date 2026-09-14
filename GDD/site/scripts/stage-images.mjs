@@ -5,12 +5,12 @@ import { fileURLToPath } from 'node:url'
 
 const scriptDir = dirname(fileURLToPath(import.meta.url))
 const docsSiteRoot = join(scriptDir, '..')
-const repoRoot = join(docsSiteRoot, '..')
-const src = join(repoRoot, 'docs', 'assets', 'wiki')
+const repoRoot = join(docsSiteRoot, '..', '..')
+const src = join(repoRoot, 'Reference', 'assets', 'wiki')
 const dest = join(docsSiteRoot, 'public', 'assets', 'wiki')
 
 function runLfsGate() {
-  const result = spawnSync(process.execPath, ['tools/check-lfs-hydration.mjs'], {
+  const result = spawnSync(process.execPath, ['Tool/tools/check-lfs-hydration.mjs'], {
     cwd: repoRoot,
     encoding: 'utf8'
   })
