@@ -17,7 +17,7 @@
 * [인물·세력·생업](Characters-Factions-and-Professions)
   * [서울 십육국](Sixteen-States)
   * [십육국 핵심 인물](Core-Characters)
-  * [인물 총람](Cast-Index) · [관계 원장](Cast-Relations)
+  * [인물 총람](Cast-Index) · [S4 당직 명부](Cast-Index-S4) · [관계 원장](Cast-Relations)
   * [인물 카드 계약](Cast-Profile-Contract)
   * [가치관과 정책 척도](Values-and-Policy-Scales)
   * [징집 잔존과 군 장부](Conscription-Remnants)
