@@ -48,6 +48,8 @@ namespace SeoulKenshi.GameServer
             RegistService(typeof(Service.Auth.CService), typeof(Service.Auth.IService), "Auth");
             RegistService(typeof(Service.Hero.CService), typeof(Service.Hero.IService), "Hero");
             RegistService(typeof(Service.Lobby.CService), typeof(Service.Lobby.IService), "Lobby");
+            RegistService(typeof(Service.Station.CService), typeof(Service.Station.IService), "Station");
+            RegistService(typeof(Service.Social.CService), typeof(Service.Social.IService), "Social");
         }
     }
 }
