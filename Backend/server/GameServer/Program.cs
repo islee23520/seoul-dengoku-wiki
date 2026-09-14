@@ -32,11 +32,16 @@ namespace SeoulKenshi.GameServer
             FileInfo finfo = new FileInfo(logFilePath);
             log4net.Config.XmlConfigurator.ConfigureAndWatch(finfo);
 
-            var host = Host.CreateDefaultBuilder(args)
-                .UseWindowsService(options =>
+            var hostBuilder = Host.CreateDefaultBuilder(args);
+            if (OperatingSystem.IsWindows())
+            {
+                hostBuilder = hostBuilder.UseWindowsService(options =>
                 {
                     options.ServiceName = "GameServer";
-                })
+                });
+            }
+
+            var host = hostBuilder
                 .ConfigureAppConfiguration((context, config) =>
                 {
                     var env = context.HostingEnvironment.EnvironmentName;
@@ -198,7 +203,12 @@ namespace SeoulKenshi.GameServer
 
             timeCheckingLog.AddDays(1);
 
-            var logFilePath = AppDomain.CurrentDomain.BaseDirectory + folder;
+            var logFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, folder);
+            if (Directory.Exists(logFilePath) == false)
+            {
+                return;
+            }
+
             var expireDate = DateTime.Now.AddDays(-1 * expireDays);
             var files = Directory.GetFiles(logFilePath, "*");
 

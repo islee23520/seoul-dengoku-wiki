@@ -72,8 +72,40 @@ socket_server/.net.core/
 ## Requirements
 
 - .NET 8.0 SDK
+- Docker (local MySQL 8 + Redis 7)
 - MySQL (GameDB, SpecDB, GlobalDB, CommonDB)
 - Redis
+
+## Local boot (macOS)
+
+GameServer listens on **port 1219** (`GameServer.GamePort` in `server/GameServer/appsettings.json`). Auth routes are CoreWCF WebHttp under `/Auth`.
+
+```bash
+cd Backend/docker
+docker compose up -d
+
+cd ../server
+dotnet run --project GameServer/GameServer.csproj -c Debug --no-launch-profile
+```
+
+Auth curl (headers `TimeStamp` and `SessionKey` are required by `AbstractService`):
+
+```bash
+# Register
+curl -i -X POST http://127.0.0.1:1219/Auth/Register \
+  -H 'Content-Type: application/json' \
+  -H 'TimeStamp: 1' \
+  -d '{"VID":"dev-user-1","VenderType":0,"DeviceModel":"mac","StoreType":0,"Region":"LOCAL","Version":"0.0.1"}'
+
+# Login (SessionKey from Register JSON)
+curl -i -X POST http://127.0.0.1:1219/Auth/Login \
+  -H 'Content-Type: application/json' \
+  -H 'TimeStamp: 2' \
+  -H 'SessionKey: <session>' \
+  -d '{"AccountIdx":1,"Version":"0.0.1"}'
+```
+
+Docker mapping: `sk-backend-mysql` 13306→3306 (root / `sk1234!`), `sk-backend-redis` 16379→6379. Schema is applied from `docker/init/01-schema.sql` on first MySQL start.
 
 ## Y2K Core Dependencies
 

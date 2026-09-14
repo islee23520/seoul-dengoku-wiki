@@ -76,7 +76,18 @@ namespace SeoulKenshi.GameServer
             UserDataProvider.Region = settings.Region;
 
             LocalIp = IpHelper.GetLocalIP();
-            PublicIp = IpHelper.GetPublicIP();
+            PublicIp = LocalIp;
+            if (settings.Region != "LOCAL")
+            {
+                try
+                {
+                    PublicIp = IpHelper.GetPublicIP();
+                }
+                catch
+                {
+                    PublicIp = LocalIp;
+                }
+            }
 
             var ip = settings.Region == "LOCAL" ? LocalIp : PublicIp;
 

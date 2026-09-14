@@ -8,6 +8,10 @@ namespace SeoulKenshi.GameServer.Service.Auth
     [ServiceContract]
     public interface IService
     {
+        [Description("회원가입")]
+        [WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, UriTemplate = "Register")]
+        ReqRegisterResult RegisterProcessor(ReqRegister req);
+
         [Description("인증 정보 요청")]
         [WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, UriTemplate = "GetAuthInfo")]
         ReqGetAuthInfoResult GetAuthInfoProcessor(ReqGetAuthInfo req);
