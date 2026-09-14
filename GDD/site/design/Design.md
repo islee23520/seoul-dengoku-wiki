@@ -85,19 +85,36 @@
 - 안전 여백: 24px.
 - 타이틀: 세로 중앙 스택 (로고 영역 280×120, 액션 열 320).
 - 캠페인: 상단 스테이지 레일 64px, 좌 노선 360, 우 상세 860.
-- 전투: 좌 HUD 280, 중앙 격자 최대 5×5 셀(셀 64), 우 로그 280.
+- 전투: 게임뷰는 고정 아이소 승강장을 채운다. HUD는 그 위 오버레이(상단 미터, 하단 카드 독 높이 214, 카드 132×180). 중앙 5×5 셀 HUD·칸 클릭 SRPG 보드가 아니다. 시간은 30Hz 실시간 진형·카드.
 - 정산: 중앙 카드 520 폭.
 
 ### 3.2 1920×1080
 
 - 안전 여백: 40px.
-- 동일 비율 스케일. 격자는 셀 96. 레일 96px.
+- 동일 비율 스케일. 레일 96px. 전투 게임뷰는 승강장 스케일만 키우고 셀 보드를 그리지 않는다.
 - 가로 확장은 여백·카드 max-width로 흡수하고 본문 줄길이는 68자에 가깝게 유지.
 
 ### 3.3 공통
 
 - 루트는 `flex-grow: 1`, 전체 화면. 스크롤은 조우 카드 목록·전투 로그만.
 - 모달은 쓰지 않는다. 조우/정산은 같은 gameplay document 내 패널 전환.
+
+### 3.4 HUD 영역 문법 (진형과 전투가 같은 뼈대)
+
+진형(배치 명령)과 전투(카드 독)는 다른 화면이 아니다. **슬롯은 고정**하고 **내용만 교체**한다. 근거: interfaceingame.com의 실시간 전술 HUD — Clash Royale(하단 4카드), StarCraft II / Company of Heroes 2(하단 커맨드 그리드), Desperados III(계획·실행이 같은 하단 능력 바), Northgard / Stellaris(우측은 인스펙터이지 주 동사가 아님).
+
+| 영역 | 고정 역할 | 진형에서 | 전투에서 |
+|---|---|---|---|
+| 중앙 | 게임뷰. 전장 승강장이 카메라를 채움 | 같은 전장. 적은 참고 실루엣 | 같은 전장. 분대 교전 |
+| 상단 | 미터·일시정지 | 사기/HP 자리 + 일시정지(비활성 가능) | HP·사기·증원·일시정지 |
+| 하단 | **주 동사 독** 높이 214 | 3×3 슬롯 + facing + 확정/취소 | 지휘관 카드 4장 132×180 |
+| 하단 좌 | 선택 지휘관 초상 | 배치 중인 분대 | 카드 소유자 |
+| 우측 | 인스펙터만. 주 동사 금지 | 선택 분대 상세(접을 수 있음) | 접거나 적 정보만 |
+| 좌측 | 명단 축약 | 6분대 칩 | 초상만으로 축소 가능 |
+
+하지 말 것: 진형 주 동사를 우측 370 레일에만 두기. 전투만 하단 독으로 바꾸기. 우측을 “커맨드 레일”이라고 부르기.
+
+캠페인·거점·월드 맵은 이 전장 HUD가 아니다. 그 화면은 각자 다른 게임뷰를 쓰고, 상단 스테이지 칩만 공통이다.
 
 ---
 
@@ -113,7 +130,7 @@
 | `jk-card` | 조우 선택 | idle / focus / selected |
 | `jk-rail` | 가로 스테이지 레일 | — |
 | `jk-route` | 세로/가로 역 연결 | node current/adjacent/dim |
-| `jk-grid` | 전투 격자 | cell empty/ally/foe/focus |
+| `jk-grid` | 논리 점유(디버그) | 플레이어 HUD가 아님. 전투 화면은 분대 실루엣 |
 | `jk-meter` | HP/사기/재충전 | fill 0–100% 또는 Core tick 값 |
 | `jk-meta` | tick·hash | mono |
 
@@ -139,7 +156,7 @@
 | 스테이지 레일 | `stage-rail`, `stage-base-prep` … `stage-base-ready` | `CampaignStage` 6단 |
 | 노선 | `route-rail`, `station-Yeongdeungpo`, `station-Sindorim`, `station-Guro` | `RouteGraph` + `CampaignState.Node` |
 | 조우 선택 | `encounter-choices`, `choice-negotiate`, `choice-bypass`, `choice-combat` | `CampaignStage.Resolution` |
-| 전투 | `battle-hud`, `battle-grid`, `battle-cell-{x}-{y}`, `battle-hp`, `battle-morale`, `battle-reinforcement-forecast`, `card-general-recharge`, `battle-card-guard-shieldwall`, `battle-card-encourage-morale`, `battle-card-pincer-focus`, `battle-card-mobility-regroup`, `battle-play-pause` | `BattleSimState` + `BattleSessionDriver.Paused` |
+| 전투 | `battle-hud`, `battle-hp`, `battle-morale`, `battle-reinforcement-forecast`, `card-general-recharge`, `battle-card-guard-shieldwall`, `battle-card-encourage-morale`, `battle-card-pincer-focus`, `battle-card-mobility-regroup`, `battle-play-pause`, `battle-dock` | `BattleSimState` + `BattleSessionDriver.Paused`. 게임뷰는 승강장 위 분대(6v6, 분대당 병사 4+리더). `battle-grid`/`battle-cell`은 플레이어 HUD가 아니다. |
 | 진형 편집 | `edit-formation`, `formation-edit`, `formation-edit-confirm`, `formation-edit-cancel`, `formation-edit-facing-n`, `formation-edit-facing-e`, `formation-edit-facing-s`, `formation-edit-facing-w` | 보류 진형(pending formation) 상태 |
 | 정산·복귀 | `settlement-panel`, `settlement-outcome`, `return-action` | settlement receipt fields |
 

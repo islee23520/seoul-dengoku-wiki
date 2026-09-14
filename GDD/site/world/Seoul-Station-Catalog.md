@@ -6,7 +6,7 @@ summary: 서울 안 이름 있는 역 334곳의 설계 데이터 카탈로그
 
 # 서울 역 카탈로그 (설계 데이터)
 
-상태: 설계 데이터. 런타임 RouteGraph는 영등포—신도림—구로 세 역만 있다.
+상태: 설계 데이터이자 `RouteGraph.CreateSeoul()` 입력. 한글 이름 세 역(영등포·신도림·구로)은 런타임 id Yeongdeungpo/Sindorim/Guro로 별칭한다.
 출처: OSM BBBike Seoul.osm.pbf에서 railway=station/halt 또는 station=subway를 뽑고, KOSTAT 2013 자치구 폴리곤으로 구를 붙였다.
 라이선스 표시: © OpenStreetMap contributors (ODbL 1.0). 구 경계는 Statistics Korea (KOSTAT) 2013.
 Unity Assets에 넣지 않았다.

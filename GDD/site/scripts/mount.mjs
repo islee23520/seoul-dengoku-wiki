@@ -13,6 +13,7 @@ const GITHUB_WIKI =
 
 const DESIGN_EXACT = new Set([
   'Game-Thesis.md',
+  'Online-User-Journey.md',
   'Home.md',
   'Asset-Pipeline.md',
   'Ui-Implementation-Pipeline.md',

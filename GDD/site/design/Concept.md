@@ -2,7 +2,7 @@
 
 ## 제품
 
-《잔선: 서울》은 붕괴 이후 서울의 지하철망을 지상·지하 다층 전략 그래프로 다루는, 인물 중심 **4X + RPG**입니다. 전투는 턴제 SRPG가 아닙니다. 2026-09-07 소유자 결정으로 **실시간 진형·카드 전투**로 확정됐고 기준 레퍼런스는 Songs of Silence입니다([Intent.md](/design/Intent) 결정 3). 탐색·상호작용·전투는 고정 직교 아이소메트릭 카메라와 4방향 타일 격자를 공유합니다.
+《잔선: 서울》은 붕괴 이후 **후세 서울**의 지하철망을 지상·지하 다층 전략 그래프로 다루는, 인물 중심 **4X + RPG**입니다. 전투는 턴제 SRPG가 아닙니다. 2026-09-07 소유자 결정으로 **실시간 진형·카드 전투**로 확정됐고 기준 레퍼런스는 Songs of Silence입니다([Intent.md](/design/Intent) 결정 3). 탐색·상호작용·전투는 고정 직교 아이소메트릭 카메라와 4방향 타일 격자를 공유합니다.
 
 ## 기술 기준선
 
@@ -24,7 +24,7 @@ VContainer 외 Makcha-Unity 패키지는 현재 모듈에 실제 호출자와 �
 - Repository와 domain contract는 Unity-free 경계를 유지합니다.
 - 같은 seed와 command log는 같은 상태와 원장 hash를 만들어야 합니다.
 
-상세 계약은 [`docs/game-logic/Unity-System-Design.md`](/rules/Unity-System-Design), 실행 순서는 [`docs/game-logic/Unity-Architecture-Implementation-Plan.md`](/rules/Unity-Architecture-Implementation-Plan)를 따릅니다.
+상세 계약은 [`GDD/system-design/Unity-System-Design.md`](/rules/Unity-System-Design), 실행 순서는 [`GDD/game-logic/Unity-Architecture-Implementation-Plan.md`](/rules/Unity-Architecture-Implementation-Plan)를 따릅니다.
 
 ## 현재 구현 범위
 

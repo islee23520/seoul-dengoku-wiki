@@ -29,7 +29,7 @@
 
 ### 필수 게이트
 
-- [ ] `node tools/architecture/check-unity-architecture.mjs`가 `unity architecture gate passed`로 종료 0
+- [ ] `node Tool/architecture/check-unity-architecture.mjs`가 `unity architecture gate passed`로 종료 0
 - [ ] `git diff --check` 종료 0
 - [ ] 행동 변경은 RED-first EditMode/PlayMode/Node 테스트
 - [ ] 실제 Unity `6000.7.0a5` Editor Play Mode로 타이틀·교섭·우회·전투·정산 경로 검증
