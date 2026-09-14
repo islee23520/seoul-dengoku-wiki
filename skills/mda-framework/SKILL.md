@@ -39,4 +39,6 @@ Every `body` must be a substring of an existing canon file (`Concept.md`, `Desig
 
 Never fill a slot with “not X”, “없습니다”, “아닌”, missing lists, or isometric-as-required. If canon has no positive sentence, omit the slot.
 
+MDA layers are vocabulary, not sprint tickets. Each filled slot must name a GitHub requirements issue when the slot is still open work (`docs/game-logic/Design-Requirements.md`). Do not treat a mechanics paragraph as a Unity module.
+
 Then `node tools/design-store/mda-store.mjs put --db <db> --json <instance.json>`.

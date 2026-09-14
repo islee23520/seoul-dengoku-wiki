@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>물류와 기반 시설 — 설계 문서</title>
+<style>
+:root { --ink:#1a1714; --paper:#f4efe4; --line:#c9b896; --metro:#1d4e89; --mute:#6b6256; }
+body { margin:0; font:16px/1.55 "Apple SD Gothic Neo","Noto Sans KR",sans-serif; color:var(--ink); background:var(--paper); }
+main { max-width:880px; margin:0 auto; padding:36px 24px 80px; }
+.kicker { letter-spacing:.14em; font-size:11px; color:var(--mute); }
+h1 { font-family:"Song Myung","Apple Myungjo",serif; font-size:32px; margin:8px 0 12px; }
+section { margin:28px 0; padding:18px; background:#fffdf8; border:1px solid var(--line); }
+h2 { font-size:18px; margin:0 0 8px; }
+.layer { font-size:13px; color:var(--mute); margin:0 0 12px; }
+.src { font-size:12px; color:var(--mute); }
+li { margin:6px 0; }
+</style>
+</head>
+<body>
+<main>
+<p class="kicker">MDA + one-page · SQLite · 전략</p>
+<p><a href="../" style="color:var(--metro)">설계 목차</a></p>
+<h1>물류와 기반 시설</h1>
+<p>허가된 경로로 제때 도착 · designers</p>
+<section>
+<h2>한 장</h2>
+<p class="layer">각 칸은 그 요소가 무엇인지.</p>
+<h3>물류</h3><p>물류는 재고가 있다는 사실이 아니라 필요한 종류의 물자가 허가된 경로를 통해 제때 도착하는 능력입니다.</p><p class="src">docs/game-logic/Logistics-and-Infrastructure.md</p>
+<h3>과확장</h3><p>`과확장`은 여섯 전략 문서가 공유하는 0~2 척도이며 이 문서의 정의가 기준입니다.</p><p class="src">docs/game-logic/Logistics-and-Infrastructure.md</p>
+</section>
+
+<section>
+<h2>Mechanics</h2>
+<p class="layer">규칙·동사·수치. 시스템이 가진 데이터와 알고리즘.</p>
+<ul><li><b>처리량</b> — 구간 기본 처리량 `B` <span class="src">docs/game-logic/Logistics-and-Infrastructure.md</span></li>
+<li><b>접근권</b> — 통행 허용 여부 <span class="src">docs/game-logic/Logistics-and-Infrastructure.md</span></li>
+<li><b>위험</b> — 호송 손실과 지연 <span class="src">docs/game-logic/Logistics-and-Infrastructure.md</span></li>
+<li><b>고립 단계</b> — 모든 합법 주 경로가 정상이면 0, 일부 경로가 봉쇄되어 우회·경화물만 가능하면 1, 모든 합법 경로가 차단되면 2 <span class="src">docs/game-logic/Logistics-and-Infrastructure.md</span></li></ul>
+</section>
+<section>
+<h2>Dynamics</h2>
+<p class="layer">그 규칙이 플레이어 입력과 만나 시간에 따라 만드는 런타임.</p>
+<ul><li><b>부하</b> — 0~24 준비는 물류 특화 효과가 없고, 25~49 긴장은 준비도 감소와 여유 용량이 필요한 임의 행동 제한을 적용하며, 50~74 임계는 구간 진입 시 미치료 부상 하나 악화 <span class="src">docs/game-logic/Logistics-and-Infrastructure.md</span></li>
+<li><b>봉쇄</b> — 봉쇄 연결은 삭제하지 않고 원인, 수리 자원과 예상 시간을 표시합니다. <span class="src">docs/game-logic/Logistics-and-Infrastructure.md</span></li></ul>
+</section>
+<section>
+<h2>Aesthetics</h2>
+<p class="layer">플레이어가 느끼는 반응. Sensation, Fantasy, Narrative, Challenge, Fellowship, Discovery, Expression, Submission.</p>
+<ul><li><b>Challenge</b> — 노선은 영토이자 물류입니다. <span class="src">docs/game-logic/Game-Thesis.md</span></li>
+<li><b>Discovery</b> — 필요한 종류의 물자가 허가된 경로를 통해 제때 도착하는 능력입니다. <span class="src">docs/game-logic/Logistics-and-Infrastructure.md</span></li></ul>
+</section>
+</main>
+</body>
+</html>

@@ -9,6 +9,7 @@ import {
   AESTHETIC_KINDS,
   DB_NAME,
   exportDocumentPage,
+  exportIndexPage,
   putDocument,
   validateDocument,
   verifyStore,
@@ -31,12 +32,14 @@ const SAMPLE = {
   },
   mechanics: [
     {
+      name: '시야',
       body: '시야와 카메라는 용사주식회사 채널의 2.5D 전투 화면을 따른다.',
       sourcePath: 'Intent.md',
     },
   ],
   dynamics: [
     {
+      name: '전투 형태',
       body: '전투 형태는 Songs of Silence와 같은 실시간 진형·카드 전투다.',
       sourcePath: 'Intent.md',
     },
@@ -106,7 +109,7 @@ test('verify FAILS when an extra document row exists', () => {
     putDocument({ dbPath, document: SAMPLE });
     const db = new DatabaseSync(dbPath);
     db.prepare(
-      "INSERT INTO documents (id, title, one_page_title, audience, picture_note, source_git) VALUES ('ghost','x','x','x','x','')",
+      "INSERT INTO documents (id, title, one_page_title, audience, picture_note, section, source_git) VALUES ('ghost','x','x','x','x','설계','')",
     ).run();
     db.close();
     const res = verifyStore({ dbPath });
@@ -133,6 +136,13 @@ test('verify FAILS when stored DB bytes are mutated', () => {
   }
 });
 
+test('mechanics without a name are rejected', () => {
+  const bad = structuredClone(SAMPLE);
+  delete bad.mechanics[0].name;
+  const err = validateDocument(bad);
+  assert.ok(err.some((e) => e.includes('name')), JSON.stringify(err));
+});
+
 test('export page HTML contains a mechanics string from SQLite', () => {
   const dir = freshDir();
   try {
@@ -146,6 +156,74 @@ test('export page HTML contains a mechanics string from SQLite', () => {
     const row = db.prepare('SELECT body FROM mechanics WHERE document_id = ?').get('janseon-core');
     db.close();
     assert.ok(html.includes(row.body));
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
+});
+
+test('schema keeps foreign keys and lookup tables', () => {
+  const dir = freshDir();
+  try {
+    const dbPath = join(dir, DB_NAME);
+    putDocument({ dbPath, document: SAMPLE });
+    const db = new DatabaseSync(dbPath);
+    db.exec('PRAGMA foreign_keys = ON');
+    const version = db.prepare('PRAGMA user_version').get().user_version;
+    assert.equal(version, 2);
+    const fks = db.prepare("PRAGMA foreign_key_list('mechanics')").all();
+    assert.ok(fks.some((fk) => fk.table === 'documents'), JSON.stringify(fks));
+    const kinds = db.prepare('SELECT kind FROM aesthetic_kinds ORDER BY kind').all().map((r) => r.kind);
+    assert.ok(kinds.includes('Sensation'));
+    db.close();
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
+});
+
+test('orphan mechanic row is rejected by foreign key', () => {
+  const dir = freshDir();
+  try {
+    const dbPath = join(dir, DB_NAME);
+    putDocument({ dbPath, document: SAMPLE });
+    const db = new DatabaseSync(dbPath);
+    db.exec('PRAGMA foreign_keys = ON');
+    assert.throws(() => {
+      db.prepare(
+        'INSERT INTO mechanics (document_id, seq, name, body, source_path) VALUES (?, ?, ?, ?, ?)',
+      ).run('no-such', 0, '시야', 'x', 'Intent.md');
+    });
+    db.close();
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
+});
+
+test('deleting a document cascades child rows', () => {
+  const dir = freshDir();
+  try {
+    const dbPath = join(dir, DB_NAME);
+    putDocument({ dbPath, document: SAMPLE });
+    const db = new DatabaseSync(dbPath);
+    db.exec('PRAGMA foreign_keys = ON');
+    db.prepare("DELETE FROM documents WHERE id = 'janseon-core'").run();
+    assert.equal(db.prepare('SELECT COUNT(*) AS n FROM mechanics').get().n, 0);
+    assert.equal(db.prepare('SELECT COUNT(*) AS n FROM one_page_panels').get().n, 0);
+    db.close();
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
+});
+
+test('export index lists the document title from SQLite', () => {
+  const dir = freshDir();
+  try {
+    const dbPath = join(dir, DB_NAME);
+    putDocument({ dbPath, document: SAMPLE });
+    const htmlPath = join(dir, 'hub.html');
+    exportIndexPage({ dbPath, outPath: htmlPath });
+    const html = readFileSync(htmlPath, 'utf8');
+    assert.match(html, /잔선: 서울/);
+    assert.match(html, /janseon-core\//);
   } finally {
     rmSync(dir, { recursive: true, force: true });
   }

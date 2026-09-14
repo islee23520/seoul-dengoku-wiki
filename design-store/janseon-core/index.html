@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>잔선: 서울 — 설계 문서</title>
+<style>
+:root { --ink:#1a1714; --paper:#f4efe4; --line:#c9b896; --metro:#1d4e89; --mute:#6b6256; }
+body { margin:0; font:16px/1.55 "Apple SD Gothic Neo","Noto Sans KR",sans-serif; color:var(--ink); background:var(--paper); }
+main { max-width:880px; margin:0 auto; padding:36px 24px 80px; }
+.kicker { letter-spacing:.14em; font-size:11px; color:var(--mute); }
+h1 { font-family:"Song Myung","Apple Myungjo",serif; font-size:32px; margin:8px 0 12px; }
+section { margin:28px 0; padding:18px; background:#fffdf8; border:1px solid var(--line); }
+h2 { font-size:18px; margin:0 0 8px; }
+.layer { font-size:13px; color:var(--mute); margin:0 0 12px; }
+.src { font-size:12px; color:var(--mute); }
+li { margin:6px 0; }
+</style>
+</head>
+<body>
+<main>
+<p class="kicker">MDA + one-page · SQLite · 제품</p>
+<p><a href="../" style="color:var(--metro)">설계 목차</a></p>
+<h1>잔선: 서울</h1>
+<p>인물 중심 4X + RPG, 2.5D 시야, 실시간 진형·카드 · production</p>
+<section>
+<h2>한 장</h2>
+<p class="layer">각 칸은 그 요소가 무엇인지.</p>
+<h3>제품</h3><p>인물 중심 **4X + RPG**입니다</p><p class="src">Concept.md</p>
+<h3>시작</h3><p>한 역 사회에 흘러든 무명 인물이며, 작은 파티를 꾸리고 생업과 의뢰를 수행하면서 이름을 얻습니다.</p><p class="src">docs/game-logic/Game-Thesis.md</p>
+<h3>시야</h3><p>시야와 카메라는 용사주식회사 채널의 2.5D 전투 화면을 따른다.</p><p class="src">Intent.md</p>
+<h3>격자</h3><p>한 타일은 1.5m이며 일반 통로는 최소 두 타일 폭입니다.</p><p class="src">docs/game-logic/Game-Thesis.md</p>
+<h3>루프</h3><p>교섭, 거래, 작업, 은신, 회피 또는 전투를 선택합니다.</p><p class="src">docs/game-logic/Campaign-Loop.md</p>
+<h3>전투</h3><p>전투 형태는 Songs of Silence와 같은 실시간 진형·카드 전투다.</p><p class="src">Intent.md</p>
+<h3>정산</h3><p>부상, 포획, 사망, 물자 손실과 관계 악화가 정산됩니다.</p><p class="src">docs/game-logic/Game-Thesis.md</p>
+<h3>화면</h3><p>UI는 **uGUI(Canvas)** 로 만든다.</p><p class="src">Intent.md</p>
+<h3>인물 표현</h3><p>Spine 에셋은 POC 사람 표현으로 쓴다.</p><p class="src">Intent.md</p>
+<h3>구현 순서</h3><p>아래 검증 단계는 시각 수용·슬롯 연결·시각 게이트를 끝내는 순서다.</p><p class="src">docs/game-logic/Development-Roadmap.md</p>
+</section>
+<section>
+<h2>요구 티켓</h2>
+<p class="layer">MDA 층은 설계 어휘다. 개발 단위는 GitHub 이슈다.</p>
+<h3>요구 시야 #97</h3><p>시야와 카메라는 용사주식회사 채널의 2.5D 전투 화면을 따른다.</p><p class="src">Intent.md</p>
+<h3>요구 카드 부여 #98</h3><p>보급, 동맹, 퇴로와 거점 상태가 카드와 사기로 전장에 들어옵니다.</p><p class="src">docs/game-logic/Game-Thesis.md</p>
+<h3>요구 분대 명령 #99</h3><p>actor 기반 분대 이동(Move), 목표 적 지정 공격(Attack), 방향 전환(SetFacing)을 내립니다.</p><p class="src">docs/game-logic/Realtime-Formation-Card-Battle.md</p>
+<h3>요구 사상자 #100</h3><p>초기 생존수는 `ceil(4 * 시작Hp / MaxHp)`로 정합니다(Hp가 0이면 0).</p><p class="src">docs/game-logic/Realtime-Formation-Card-Battle.md</p>
+</section>
+<section>
+<h2>Mechanics</h2>
+<p class="layer">규칙·동사·수치. 시스템이 가진 데이터와 알고리즘.</p>
+<ul><li><b>시야</b> — 시야와 카메라는 용사주식회사 채널의 2.5D 전투 화면을 따른다. <span class="src">Intent.md</span></li>
+<li><b>세계 그래프</b> — 지하철망을 지상·지하 다층 전략 그래프로 다루는 <span class="src">Concept.md</span></li>
+<li><b>격자</b> — 탐색, 상호작용과 전투는 같은 4방향 타일 격자에서 이어집니다. <span class="src">docs/game-logic/Game-Thesis.md</span></li>
+<li><b>타일</b> — 한 타일은 1.5m이며 일반 통로는 최소 두 타일 폭입니다. <span class="src">docs/game-logic/Game-Thesis.md</span></li>
+<li><b>틱</b> — 시뮬레이션은 30Hz 고정 간격으로 진행됩니다. <span class="src">docs/game-logic/Realtime-Formation-Card-Battle.md</span></li>
+<li><b>거점 카드</b> — 거점 카드는 최대 2슬롯이며 아군 분대 전체가 공유합니다. <span class="src">docs/game-logic/Realtime-Formation-Card-Battle.md</span></li>
+<li><b>결정론</b> — 같은 seed와 command log는 같은 상태와 원장 hash를 만들어야 합니다. <span class="src">Concept.md</span></li>
+<li><b>UI</b> — UI는 **uGUI(Canvas)** 로 만든다. <span class="src">Intent.md</span></li>
+<li><b>텍스트</b> — 텍스트 스택은 uGUI 표준인 TextMeshPro(TMP)를 따른다. <span class="src">Intent.md</span></li>
+<li><b>실루엣</b> — 캐릭터는 해당 시점에 맞춘 2.5등신 SD 실루엣과 네 방향 표현을 사용합니다. <span class="src">docs/game-logic/Game-Thesis.md</span></li>
+<li><b>인물 표현</b> — Spine 에셋은 POC 사람 표현으로 쓴다. <span class="src">Intent.md</span></li></ul>
+</section>
+<section>
+<h2>Dynamics</h2>
+<p class="layer">그 규칙이 플레이어 입력과 만나 시간에 따라 만드는 런타임.</p>
+<ul><li><b>전투 형태</b> — 전투 형태는 Songs of Silence와 같은 실시간 진형·카드 전투다. <span class="src">Intent.md</span></li>
+<li><b>거점 할 일</b> — 정보, 의뢰, 계약과 관계 문제를 살핍니다. <span class="src">docs/game-logic/Campaign-Loop.md</span></li>
+<li><b>원정 준비</b> — 파티, 장비, 식량, 의약품, 경로와 통행권을 준비합니다. <span class="src">docs/game-logic/Campaign-Loop.md</span></li>
+<li><b>조우 선택</b> — 교섭, 거래, 작업, 은신, 회피 또는 전투를 선택합니다. <span class="src">docs/game-logic/Campaign-Loop.md</span></li>
+<li><b>진형</b> — 전열, 후열, 측면에 분대를 배치하고 4방향 정면을 정합니다. <span class="src">docs/game-logic/Realtime-Formation-Card-Battle.md</span></li>
+<li><b>분대 명령</b> — actor 기반 분대 이동(Move), 목표 적 지정 공격(Attack), 방향 전환(SetFacing)을 내립니다. <span class="src">docs/game-logic/Realtime-Formation-Card-Battle.md</span></li>
+<li><b>카드 소유</b> — 인물 카드는 `(OwnerUnitId, CardId)` 쌍으로 상태를 관리하며 소유자마다 독립된 재충전 타이머를 가집니다. <span class="src">docs/game-logic/Realtime-Formation-Card-Battle.md</span></li>
+<li><b>결과 반영</b> — 부상, 시간, 물자, 관계, 평판, 거점과 노선 상태가 바뀝니다. <span class="src">docs/game-logic/Campaign-Loop.md</span></li>
+<li><b>전략 결과</b> — 보급, 동맹, 퇴로와 거점 상태가 카드와 사기로 전장에 들어옵니다. <span class="src">docs/game-logic/Game-Thesis.md</span></li></ul>
+</section>
+<section>
+<h2>Aesthetics</h2>
+<p class="layer">플레이어가 느끼는 반응. Sensation, Fantasy, Narrative, Challenge, Fellowship, Discovery, Expression, Submission.</p>
+<ul><li><b>Sensation</b> — 젖은 콘크리트, 꺼진 안내판, 비상 전원, 녹슨 선로, 손때 묻은 노선도 <span class="src">Design.md</span></li>
+<li><b>Fantasy</b> — 한 역 사회에 흘러든 무명 인물이며, 작은 파티를 꾸리고 생업과 의뢰를 수행하면서 이름을 얻습니다. <span class="src">docs/game-logic/Game-Thesis.md</span></li>
+<li><b>Narrative</b> — 노선 연합, 독립 역 사회, 지상·지하 공동체, 교역망 패권, 기술 복구 체제처럼 플레이 과정에서 형성된 정통성에 따라 여러 질서가 등장합니다. <span class="src">docs/game-logic/Game-Thesis.md</span></li>
+<li><b>Challenge</b> — 보급, 동맹, 퇴로와 거점 상태가 카드와 사기로 전장에 들어옵니다. <span class="src">docs/game-logic/Game-Thesis.md</span></li>
+<li><b>Fellowship</b> — 수리, 의료, 운송, 경비, 교섭과 탐사도 전투만큼 중요한 성장 경로입니다. <span class="src">docs/game-logic/Game-Thesis.md</span></li>
+<li><b>Discovery</b> — 지하철망을 지상·지하 다층 전략 그래프로 다루는 <span class="src">Concept.md</span></li>
+<li><b>Expression</b> — 직위, 관계, 기억과 계승이 세력의 행동을 바꿉니다. <span class="src">docs/game-logic/Game-Thesis.md</span></li>
+<li><b>Submission</b> — 살아남기 위한 행정 <span class="src">Design.md</span></li></ul>
+</section>
+</main>
+</body>
+</html>
