@@ -1,6 +1,6 @@
 # 같은 선택이 같은 결과가 되나
 
-![저장 뒤에도 칸에 누가 서 있고 어느 쪽을 보며 어디까지 보이는지 그대로 이어지는지](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-grammar.svg?raw=true)
+![저장 뒤에도 칸에 누가 서 있고 어느 쪽을 보며 어디까지 보이는지 그대로 이어지는지](https://github.com/islee23520/seoul-kenshi/blob/main/Reference/assets/wiki/isometric-grammar.svg?raw=true)
 
 ## 다시 돌려도 같은 세계
 

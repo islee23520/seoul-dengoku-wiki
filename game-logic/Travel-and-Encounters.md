@@ -1,6 +1,6 @@
 # 이동과 조우
 
-![원정 이동과 조우의 아이소 판정](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-travel-encounters.svg?raw=true)
+![원정 이동과 조우의 아이소 판정](https://github.com/islee23520/seoul-kenshi/blob/main/Reference/assets/wiki/isometric-travel-encounters.svg?raw=true)
 
 4방향 이동 중 조우 확률과 유형을 위치·방향·시야에 따라 판단합니다.
 

@@ -1,6 +1,6 @@
 # 캐릭터 미술 방향
 
-![캐릭터가 어느 칸에 서 있고 어느 쪽을 보며 시야 안에서 어떻게 보이는지](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-grammar.svg?raw=true)
+![캐릭터가 어느 칸에 서 있고 어느 쪽을 보며 시야 안에서 어떻게 보이는지](https://github.com/islee23520/seoul-kenshi/blob/main/Reference/assets/wiki/isometric-grammar.svg?raw=true)
 
 POC 사람 표현은 오드랜드 Spine이다([Intent.md](../../Intent.md) 결정 1·4). 실행 티켓 #58.
 

@@ -1,6 +1,6 @@
 # 경제와 생산
 
-![생산 시설과 노동 배치의 아이소 흐름](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-economy-production.svg?raw=true)
+![생산 시설과 노동 배치의 아이소 흐름](https://github.com/islee23520/seoul-kenshi/blob/main/Reference/assets/wiki/isometric-economy-production.svg?raw=true)
 
 생산 시설 주변에 노동을 배치하고 자원 흐름을 방향별로 최적화합니다.
 

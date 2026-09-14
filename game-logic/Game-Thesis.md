@@ -1,6 +1,6 @@
 # 이 게임이 뭔지
 
-![인물 선택이 세계 결과로 이어지는 아이소 규칙](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-game-thesis.svg?raw=true)
+![인물 선택이 세계 결과로 이어지는 아이소 규칙](https://github.com/islee23520/seoul-kenshi/blob/main/Reference/assets/wiki/isometric-game-thesis.svg?raw=true)
 
 인물의 위치와 방향 선택이 바로 세계 그래프의 사건과 관계 변화로 이어지는 규칙을 확인합니다.
 

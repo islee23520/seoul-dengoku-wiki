@@ -1,12 +1,12 @@
 # 랜덤 추가 로스터
 
-[roster-100.json](https://github.com/islee23520/seoul-kenshi/blob/main/docs/game-logic/name-pools/roster-100.json)은 인물 후보 100명을 담은 생성 실험 결과다. 완성 캐스트나 게임에 연결된 모집 명부가 아니다. 기존 [인물 총람](Cast-Index.md)의 422명을 대체하지 않는다. 2026-09-12 감사에서 파일 생성과 설정 검증이 섞여 보고된 점을 확인했으며, 이 문서는 그 상태를 바로잡는다.
+[roster-100.json](https://github.com/islee23520/seoul-kenshi/blob/main/GDD/game-logic/name-pools/roster-100.json)은 인물 후보 100명을 담은 생성 실험 결과다. 완성 캐스트나 게임에 연결된 모집 명부가 아니다. 기존 [인물 총람](Cast-Index.md)의 422명을 대체하지 않는다. 2026-09-12 감사에서 파일 생성과 설정 검증이 섞여 보고된 점을 확인했으며, 이 문서는 그 상태를 바로잡는다.
 
 ## 생성에 사용한 자료
 
 Windows 작업 호스트에서 [NVIDIA Nemotron-Personas-Korea](https://huggingface.co/datasets/nvidia/Nemotron-Personas-Korea)를 샘플링했다. 다운로드한 첫 parquet 조각은 111,112행이며 전체 100만 행을 설치한 것은 아니다. 데이터 저장 위치는 `E:\git\huggingface\datasets\nvidia\Nemotron-Personas-Korea\train-00000.parquet`, 생성기는 저장소의 `tools/cast/generate_nemotron_roster.py`, 시드는 `90421`이다.
 
-공개 스키마에는 성·이름을 분리한 열이 없지만 페르소나 문장에는 합성된 인명이 들어 있다. 따라서 “이름이 없는 데이터”로 처리할 수 없다. 생성기는 [성씨](https://github.com/islee23520/seoul-kenshi/blob/main/docs/game-logic/name-pools/surnames.json)·[남성 이름](https://github.com/islee23520/seoul-kenshi/blob/main/docs/game-logic/name-pools/given-male.json)·[여성 이름](https://github.com/islee23520/seoul-kenshi/blob/main/docs/game-logic/name-pools/given-female.json)을 조합하면서 원래 페르소나의 인명을 함께 바꾸지 않았다.
+공개 스키마에는 성·이름을 분리한 열이 없지만 페르소나 문장에는 합성된 인명이 들어 있다. 따라서 “이름이 없는 데이터”로 처리할 수 없다. 생성기는 [성씨](https://github.com/islee23520/seoul-kenshi/blob/main/GDD/game-logic/name-pools/surnames.json)·[남성 이름](https://github.com/islee23520/seoul-kenshi/blob/main/GDD/game-logic/name-pools/given-male.json)·[여성 이름](https://github.com/islee23520/seoul-kenshi/blob/main/GDD/game-logic/name-pools/given-female.json)을 조합하면서 원래 페르소나의 인명을 함께 바꾸지 않았다.
 
 데이터 라이선스는 CC BY 4.0이다. 후보를 재배포할 때는 NVIDIA와 데이터셋 주소, 사용 버전, 원본 행 UUID, 가공 내용을 남겨야 한다. 현재 JSON의 `source_uuid`만으로는 다운로드 조각의 리비전·해시와 모든 변환 내역까지 입증되지 않는다. 이름·성격·병역·출신을 실존 인물의 사실로 취급하지 않는다.
 

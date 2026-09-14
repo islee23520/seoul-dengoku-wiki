@@ -1,6 +1,6 @@
 # 실시간 진형·카드 전투
 
-![한 판의 실시간 진형 카드 전투 위치 방향 시야 규칙](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-realtime-formation-card-battle.svg?raw=true)
+![한 판의 실시간 진형 카드 전투 위치 방향 시야 규칙](https://github.com/islee23520/seoul-kenshi/blob/main/Reference/assets/wiki/isometric-realtime-formation-card-battle.svg?raw=true)
 
 여기서 한 판은 확정된 전투 컨텍스트로 시작해 ResultId 하나로 끝나는 실시간 진형·카드 전투 세션 한 번을 뜻합니다. 한 판 안에서 진형·사기·카드 타이밍이 실시간 전술의 핵심 축이며, 위치·방향·시야는 진형 규칙으로 이어집니다.
 

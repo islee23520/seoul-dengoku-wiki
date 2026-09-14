@@ -1,6 +1,6 @@
 # 세력과 외교
 
-![세력 협상과 통행권의 아이소 관계](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-factions-diplomacy.svg?raw=true)
+![세력 협상과 통행권의 아이소 관계](https://github.com/islee23520/seoul-kenshi/blob/main/Reference/assets/wiki/isometric-factions-diplomacy.svg?raw=true)
 
 세력 간 협상과 통행권 부여를 위치·방향·시야 기반 관계로 결정합니다.
 

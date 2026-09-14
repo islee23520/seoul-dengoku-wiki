@@ -1,6 +1,6 @@
 # 에셋이 들어오는 길
 
-![에셋에서 칸에 누가 서 있고 어느 쪽을 보며 어디까지 보이는지 확인하는 기준](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-grammar.svg?raw=true)
+![에셋에서 칸에 누가 서 있고 어느 쪽을 보며 어디까지 보이는지 확인하는 기준](https://github.com/islee23520/seoul-kenshi/blob/main/Reference/assets/wiki/isometric-grammar.svg?raw=true)
 
 ## 처음부터 승인까지
 
