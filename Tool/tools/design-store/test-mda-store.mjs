@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { tmpdir } from 'node:os';
 import { DatabaseSync } from 'node:sqlite';
@@ -10,6 +10,7 @@ import {
   DB_NAME,
   exportDocumentPage,
   exportIndexPage,
+  ingestCanonDir,
   putDocument,
   validateDocument,
   verifyStore,
@@ -169,7 +170,7 @@ test('schema keeps foreign keys and lookup tables', () => {
     const db = new DatabaseSync(dbPath);
     db.exec('PRAGMA foreign_keys = ON');
     const version = db.prepare('PRAGMA user_version').get().user_version;
-    assert.equal(version, 2);
+    assert.equal(version, 3);
     const fks = db.prepare("PRAGMA foreign_key_list('mechanics')").all();
     assert.ok(fks.some((fk) => fk.table === 'documents'), JSON.stringify(fks));
     const kinds = db.prepare('SELECT kind FROM aesthetic_kinds ORDER BY kind').all().map((r) => r.kind);
@@ -224,6 +225,73 @@ test('export index lists the document title from SQLite', () => {
     const html = readFileSync(htmlPath, 'utf8');
     assert.match(html, /잔선: 서울/);
     assert.match(html, /janseon-core\//);
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
+});
+
+test('ingestCanonDir stores one row per markdown file and hub lists it', () => {
+  const dir = freshDir();
+  try {
+    const canonRoot = join(dir, 'canon');
+    mkdirSync(join(canonRoot, 'regions'), { recursive: true });
+    writeFileSync(join(canonRoot, 'Alpha.md'), '# 알파\n\n본문\n');
+    writeFileSync(join(canonRoot, 'regions', 'README.md'), '# 지역\n\n## 구\n');
+    const dbPath = join(dir, DB_NAME);
+    putDocument({ dbPath, document: SAMPLE });
+    const ingested = ingestCanonDir({ dbPath, canonRoot, pathPrefix: 'GDD/game-logic' });
+    assert.equal(ingested.files, 2);
+    const db = new DatabaseSync(dbPath, { readOnly: true });
+    const n = db.prepare('SELECT COUNT(*) AS n FROM canon_files').get().n;
+    assert.equal(n, 2);
+    const headings = db.prepare('SELECT COUNT(*) AS n FROM canon_headings').get().n;
+    assert.ok(headings >= 3, String(headings));
+    db.close();
+    const htmlPath = join(dir, 'hub.html');
+    exportIndexPage({ dbPath, outPath: htmlPath });
+    const html = readFileSync(htmlPath, 'utf8');
+    assert.match(html, /canon\/alpha\//);
+    assert.match(html, /canon\/regions--readme\//);
+    const res = verifyStore({ dbPath });
+    assert.equal(res.pass, true, JSON.stringify(res));
+    assert.equal(res.canon, 2);
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
+});
+
+test('verify FAILS when a canon_files row is deleted', () => {
+  const dir = freshDir();
+  try {
+    const canonRoot = join(dir, 'canon');
+    mkdirSync(canonRoot, { recursive: true });
+    writeFileSync(join(canonRoot, 'Alpha.md'), '# 알파\n');
+    const dbPath = join(dir, DB_NAME);
+    putDocument({ dbPath, document: SAMPLE });
+    ingestCanonDir({ dbPath, canonRoot, pathPrefix: 'GDD/game-logic' });
+    const db = new DatabaseSync(dbPath);
+    db.prepare("DELETE FROM canon_files WHERE id = 'alpha'").run();
+    db.close();
+    const res = verifyStore({ dbPath });
+    assert.equal(res.pass, false);
+    assert.ok(res.canonMissing.includes('alpha'), JSON.stringify(res));
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
+});
+
+test('schema version 3 exposes canon_files', () => {
+  const dir = freshDir();
+  try {
+    const dbPath = join(dir, DB_NAME);
+    putDocument({ dbPath, document: SAMPLE });
+    const db = new DatabaseSync(dbPath, { readOnly: true });
+    const version = db.prepare('PRAGMA user_version').get().user_version;
+    assert.equal(version, 3);
+    const tables = db.prepare("SELECT name FROM sqlite_master WHERE type = 'table'").all().map((r) => r.name);
+    assert.ok(tables.includes('canon_files'), JSON.stringify(tables));
+    assert.ok(tables.includes('canon_headings'), JSON.stringify(tables));
+    db.close();
   } finally {
     rmSync(dir, { recursive: true, force: true });
   }

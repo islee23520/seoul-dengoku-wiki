@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>몬스터 배치 M017 — 정본</title>
+<style>
+:root { --ink:#1a1714; --paper:#f4efe4; --line:#c9b896; --metro:#1d4e89; --mute:#6b6256; }
+body { margin:0; font:16px/1.55 "Apple SD Gothic Neo","Noto Sans KR",sans-serif; color:var(--ink); background:var(--paper); }
+main { max-width:880px; margin:0 auto; padding:36px 24px 80px; }
+.kicker { letter-spacing:.14em; font-size:11px; color:var(--mute); }
+h1 { font-family:"Song Myung","Apple Myungjo",serif; font-size:32px; margin:8px 0 12px; }
+section { margin:28px 0; padding:18px; background:#fffdf8; border:1px solid var(--line); }
+.src { font-size:12px; color:var(--mute); }
+</style>
+</head>
+<body>
+<main>
+<p class="kicker">정본 파일 · SQLite</p>
+<p><a href="../" style="color:var(--metro)">설계 목차</a></p>
+<h1>몬스터 배치 M017</h1>
+<p class="src">GDD/game-logic/Monster-Batch-M017.md · 33325 bytes · 97917083ea016909fe09ffff440018db2ced6018ec64ac19e92c60d58772d2cf</p>
+<section>
+<h2>머리글</h2>
+<ul><li>H1 몬스터 배치 M017</li>
+<li>H2 G11E01 · 봉합로 개척자</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식처</li>
+<li>H3 필요·욕구</li>
+<li>H3 생명주기·유지</li>
+<li>H3 행동·계급</li>
+<li>H3 단계별 위협</li>
+<li>H3 대항·전투</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li>
+<li>H2 G11E02 · 냉맥 방열목동</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식처</li>
+<li>H3 필요·욕구</li>
+<li>H3 생명주기·유지</li>
+<li>H3 행동·계급</li>
+<li>H3 단계별 위협</li>
+<li>H3 대항·전투</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li>
+<li>H2 G11E03 · 유품골 회수관</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식처</li>
+<li>H3 필요·욕구</li>
+<li>H3 생명주기·유지</li>
+<li>H3 행동·계급</li>
+<li>H3 단계별 위협</li>
+<li>H3 대항·전투</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li>
+<li>H2 G11E04 · 맥압문 판정자</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식처</li>
+<li>H3 필요·욕구</li>
+<li>H3 생명주기·유지</li>
+<li>H3 행동·계급</li>
+<li>H3 단계별 위협</li>
+<li>H3 대항·전투</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li>
+<li>H2 G11E05 · 공생육 정원사</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식처</li>
+<li>H3 필요·욕구</li>
+<li>H3 생명주기·유지</li>
+<li>H3 행동·계급</li>
+<li>H3 단계별 위협</li>
+<li>H3 대항·전투</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li>
+<li>H2 G11E06 · 편린감각 중계자</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식처</li>
+<li>H3 필요·욕구</li>
+<li>H3 생명주기·유지</li>
+<li>H3 행동·계급</li>
+<li>H3 단계별 위협</li>
+<li>H3 대항·전투</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li>
+<li>H2 G11E07 · 용량율 투약재판관</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식처</li>
+<li>H3 필요·욕구</li>
+<li>H3 생명주기·유지</li>
+<li>H3 행동·계급</li>
+<li>H3 단계별 위협</li>
+<li>H3 대항·전투</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li>
+<li>H2 G11E08 · 계절각 운반성체</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식처</li>
+<li>H3 필요·욕구</li>
+<li>H3 생명주기·유지</li>
+<li>H3 행동·계급</li>
+<li>H3 단계별 위협</li>
+<li>H3 대항·전투</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li>
+<li>H2 G11E09 · 잔향록 해독사</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식처</li>
+<li>H3 필요·욕구</li>
+<li>H3 생명주기·유지</li>
+<li>H3 행동·계급</li>
+<li>H3 단계별 위협</li>
+<li>H3 대항·전투</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li>
+<li>H2 G11E10 · 외압담지 희생자</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식처</li>
+<li>H3 필요·욕구</li>
+<li>H3 생명주기·유지</li>
+<li>H3 행동·계급</li>
+<li>H3 단계별 위협</li>
+<li>H3 대항·전투</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li></ul>
+</section>
+</main>
+</body>
+</html>

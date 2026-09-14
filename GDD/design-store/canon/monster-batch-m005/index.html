@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>몬스터 배치 M005 — 정본</title>
+<style>
+:root { --ink:#1a1714; --paper:#f4efe4; --line:#c9b896; --metro:#1d4e89; --mute:#6b6256; }
+body { margin:0; font:16px/1.55 "Apple SD Gothic Neo","Noto Sans KR",sans-serif; color:var(--ink); background:var(--paper); }
+main { max-width:880px; margin:0 auto; padding:36px 24px 80px; }
+.kicker { letter-spacing:.14em; font-size:11px; color:var(--mute); }
+h1 { font-family:"Song Myung","Apple Myungjo",serif; font-size:32px; margin:8px 0 12px; }
+section { margin:28px 0; padding:18px; background:#fffdf8; border:1px solid var(--line); }
+.src { font-size:12px; color:var(--mute); }
+</style>
+</head>
+<body>
+<main>
+<p class="kicker">정본 파일 · SQLite</p>
+<p><a href="../" style="color:var(--metro)">설계 목차</a></p>
+<h1>몬스터 배치 M005</h1>
+<p class="src">GDD/game-logic/Monster-Batch-M005.md · 31210 bytes · bad1f516b17c19c1c0b8266e7bd632de538a02136bdd4fc62426312f6934ff44</p>
+<section>
+<h2>머리글</h2>
+<ul><li>H1 몬스터 배치 M005</li>
+<li>H2 G03E09 · 녹고리호위</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식</li>
+<li>H3 필요</li>
+<li>H3 생애·정비</li>
+<li>H3 행동·위계</li>
+<li>H3 상승</li>
+<li>H3 교전·대응</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li>
+<li>H2 G03E10 · 하역그늘지기</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식</li>
+<li>H3 필요</li>
+<li>H3 생애·정비</li>
+<li>H3 행동·위계</li>
+<li>H3 상승</li>
+<li>H3 교전·대응</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li>
+<li>H2 G03E11 · 고가밑잠자리</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식</li>
+<li>H3 필요</li>
+<li>H3 생애·정비</li>
+<li>H3 행동·위계</li>
+<li>H3 상승</li>
+<li>H3 교전·대응</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li>
+<li>H2 G03E12 · 찢긴이름표</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식</li>
+<li>H3 필요</li>
+<li>H3 생애·정비</li>
+<li>H3 행동·위계</li>
+<li>H3 상승</li>
+<li>H3 교전·대응</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li>
+<li>H2 G03E13 · 느린선도성체</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식</li>
+<li>H3 필요</li>
+<li>H3 생애·정비</li>
+<li>H3 행동·위계</li>
+<li>H3 상승</li>
+<li>H3 교전·대응</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li>
+<li>H2 G03E14 · 수레곁들개</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식</li>
+<li>H3 필요</li>
+<li>H3 생애·정비</li>
+<li>H3 행동·위계</li>
+<li>H3 상승</li>
+<li>H3 교전·대응</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li>
+<li>H2 G03E15 · 환승재결속핵</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식</li>
+<li>H3 필요</li>
+<li>H3 생애·정비</li>
+<li>H3 행동·위계</li>
+<li>H3 상승</li>
+<li>H3 교전·대응</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li>
+<li>H2 G03E16 · 해협하역개</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식</li>
+<li>H3 필요</li>
+<li>H3 생애·정비</li>
+<li>H3 행동·위계</li>
+<li>H3 상승</li>
+<li>H3 교전·대응</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li>
+<li>H2 G04E01 · 마른굴연장암컷</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식</li>
+<li>H3 필요</li>
+<li>H3 생애·정비</li>
+<li>H3 행동·위계</li>
+<li>H3 상승</li>
+<li>H3 교전·대응</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li>
+<li>H2 G04E02 · 관로순회너구리</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식</li>
+<li>H3 필요</li>
+<li>H3 생애·정비</li>
+<li>H3 행동·위계</li>
+<li>H3 상승</li>
+<li>H3 교전·대응</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li></ul>
+</section>
+</main>
+</body>
+</html>

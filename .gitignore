@@ -105,6 +105,8 @@ Game/Assets/Quarantine.meta
 # Regenerable SQLite replica (HTML is tracked)
 design-store/*.sqlite
 design-store/*.receipt.json
+GDD/design-store/*.sqlite
+GDD/design-store/*.receipt.json
 
 # Local pilgrimage bake attempts (receipts stay tracked)
 art-process/node_modules/

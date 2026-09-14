@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { createHash } from 'node:crypto';
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { DatabaseSync } from 'node:sqlite';
@@ -18,7 +18,7 @@ export const AESTHETIC_KINDS = [
   'Submission',
 ];
 export const SECTION_ORDER = ['제품', '캠페인', '전투', '세계', '전략', '정치', '인물', '구현'];
-export const SCHEMA_VERSION = 2;
+export const SCHEMA_VERSION = 3;
 const SCHEMA_SQL = readFileSync(join(dirname(fileURLToPath(import.meta.url)), 'schema.sql'), 'utf8');
 
 function sha256Bytes(buf) {
@@ -85,6 +85,8 @@ function openSchema(dbPath) {
   if (version < SCHEMA_VERSION) {
     db.exec('PRAGMA foreign_keys = OFF');
     db.exec(`
+      DROP TABLE IF EXISTS canon_headings;
+      DROP TABLE IF EXISTS canon_files;
       DROP TABLE IF EXISTS aesthetics;
       DROP TABLE IF EXISTS dynamics;
       DROP TABLE IF EXISTS mechanics;
@@ -155,15 +157,41 @@ export function putDocument({ dbPath, document, sourceGit = '' }) {
   );
   document.aesthetics.forEach((row, i) => insertAes.run(document.id, i, row.kind, row.body, row.sourcePath));
   db.exec('COMMIT');
-  const ids = db.prepare('SELECT id FROM documents ORDER BY id').all().map((r) => r.id);
   db.close();
+  writeReceipt(dbPath);
+  return { id: document.id, documents: readReceiptIds(dbPath).documents.length };
+}
+
+function readReceiptIds(dbPath) {
+  const db = new DatabaseSync(dbPath, { readOnly: true });
+  const documents = db.prepare('SELECT id FROM documents ORDER BY id').all().map((r) => r.id);
+  let canon = [];
+  try {
+    canon = db.prepare('SELECT id FROM canon_files ORDER BY id').all().map((r) => r.id);
+  } catch {
+    canon = [];
+  }
+  db.close();
+  return { documents, canon };
+}
+
+function writeReceipt(dbPath) {
+  const ids = readReceiptIds(dbPath);
   const dbSha = sha256Bytes(readFileSync(dbPath));
-  writeFileSync(receiptPath(dbPath), `${JSON.stringify({ dbSha256: dbSha, documents: ids }, null, 2)}\n`);
-  return { id: document.id, documents: ids.length };
+  writeFileSync(receiptPath(dbPath), `${JSON.stringify({ dbSha256: dbSha, ...ids }, null, 2)}\n`);
 }
 
 export function verifyStore({ dbPath }) {
-  const result = { pass: false, documents: 0, missing: [], mutated: [], extras: [] };
+  const result = {
+    pass: false,
+    documents: 0,
+    canon: 0,
+    missing: [],
+    extras: [],
+    canonMissing: [],
+    canonExtras: [],
+    mutated: [],
+  };
   let receipt;
   try {
     receipt = JSON.parse(readFileSync(receiptPath(dbPath), 'utf8'));
@@ -180,14 +208,108 @@ export function verifyStore({ dbPath }) {
   }
   if (actualSha !== receipt.dbSha256) result.mutated.push('db-bytes');
   const expected = new Set(receipt.documents || []);
+  const expectedCanon = new Set(receipt.canon || []);
   const db = new DatabaseSync(dbPath, { readOnly: true });
   const actualIds = db.prepare('SELECT id FROM documents ORDER BY id').all().map((r) => r.id);
+  let actualCanon = [];
+  try {
+    actualCanon = db.prepare('SELECT id FROM canon_files ORDER BY id').all().map((r) => r.id);
+  } catch {
+    actualCanon = [];
+  }
   db.close();
   result.documents = actualIds.length;
+  result.canon = actualCanon.length;
   for (const id of expected) if (!actualIds.includes(id)) result.missing.push(id);
   for (const id of actualIds) if (!expected.has(id)) result.extras.push(id);
-  result.pass = result.missing.length === 0 && result.mutated.length === 0 && result.extras.length === 0;
+  for (const id of expectedCanon) if (!actualCanon.includes(id)) result.canonMissing.push(id);
+  for (const id of actualCanon) if (!expectedCanon.has(id)) result.canonExtras.push(id);
+  result.pass =
+    result.missing.length === 0 &&
+    result.mutated.length === 0 &&
+    result.extras.length === 0 &&
+    result.canonMissing.length === 0 &&
+    result.canonExtras.length === 0;
   return result;
+}
+
+export function listMarkdownFiles(rootDir) {
+  const out = [];
+  function walk(dir, prefix) {
+    for (const name of readdirSync(dir).sort()) {
+      if (name.startsWith('.')) continue;
+      const rel = prefix ? `${prefix}/${name}` : name;
+      const full = join(dir, name);
+      const st = statSync(full);
+      if (st.isDirectory()) walk(full, rel);
+      else if (name.endsWith('.md')) out.push(rel);
+    }
+  }
+  walk(rootDir, '');
+  return out;
+}
+
+function slugFromRel(rel) {
+  return rel.replace(/\.md$/i, '').replaceAll('/', '--').toLowerCase();
+}
+
+function titleFromMarkdown(text, rel) {
+  const m = text.match(/^#\s+(.+)$/m);
+  if (m) return m[1].replace(/[*_`]/g, '').trim();
+  return rel.replace(/\.md$/i, '');
+}
+
+function headingsFromMarkdown(text) {
+  const rows = [];
+  const re = /^(#{1,6})\s+(.+)$/gm;
+  let match;
+  let seq = 0;
+  while ((match = re.exec(text))) {
+    rows.push({ seq, level: match[1].length, text: match[2].trim() });
+    seq += 1;
+  }
+  return rows;
+}
+
+export function ingestCanonDir({ dbPath, canonRoot, pathPrefix = 'GDD/game-logic' }) {
+  const files = listMarkdownFiles(canonRoot);
+  const db = openSchema(dbPath);
+  db.exec('BEGIN');
+  db.exec('PRAGMA foreign_keys = ON');
+  db.exec('DELETE FROM canon_files');
+  const insertFile = db.prepare(
+    'INSERT INTO canon_files (id, path, title, sha256, bytes) VALUES (?, ?, ?, ?, ?)',
+  );
+  const insertHeading = db.prepare(
+    'INSERT INTO canon_headings (file_id, seq, level, text) VALUES (?, ?, ?, ?)',
+  );
+  for (const rel of files) {
+    const sourcePath = `${pathPrefix}/${rel}`;
+    ensureSource(db, sourcePath);
+    const buf = readFileSync(join(canonRoot, rel));
+    const text = buf.toString('utf8');
+    const id = slugFromRel(rel);
+    insertFile.run(id, sourcePath, titleFromMarkdown(text, rel), sha256Bytes(buf), buf.length);
+    for (const h of headingsFromMarkdown(text)) {
+      insertHeading.run(id, h.seq, h.level, h.text);
+    }
+  }
+  db.exec('COMMIT');
+  db.close();
+  writeReceipt(dbPath);
+  return { files: files.length };
+}
+
+export function listCanonFiles({ dbPath }) {
+  const db = new DatabaseSync(dbPath, { readOnly: true });
+  let rows = [];
+  try {
+    rows = db.prepare('SELECT id, path, title, bytes FROM canon_files ORDER BY path').all();
+  } catch {
+    rows = [];
+  }
+  db.close();
+  return rows;
 }
 
 export function listDocuments({ dbPath }) {
@@ -290,8 +412,54 @@ ${reqSection}
   return outPath;
 }
 
+export function exportCanonPage({ dbPath, outPath, fileId }) {
+  const db = new DatabaseSync(dbPath, { readOnly: true });
+  const file = db.prepare('SELECT * FROM canon_files WHERE id = ?').get(fileId);
+  if (!file) {
+    db.close();
+    throw new Error(`canon file not found: ${fileId}`);
+  }
+  const headings = db.prepare('SELECT seq, level, text FROM canon_headings WHERE file_id = ? ORDER BY seq').all(fileId);
+  db.close();
+  const headingList = headings.map((h) => `<li>H${h.level} ${escapeHtml(h.text)}</li>`).join('\n');
+  const html = `<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${escapeHtml(file.title)} — 정본</title>
+<style>
+:root { --ink:#1a1714; --paper:#f4efe4; --line:#c9b896; --metro:#1d4e89; --mute:#6b6256; }
+body { margin:0; font:16px/1.55 "Apple SD Gothic Neo","Noto Sans KR",sans-serif; color:var(--ink); background:var(--paper); }
+main { max-width:880px; margin:0 auto; padding:36px 24px 80px; }
+.kicker { letter-spacing:.14em; font-size:11px; color:var(--mute); }
+h1 { font-family:"Song Myung","Apple Myungjo",serif; font-size:32px; margin:8px 0 12px; }
+section { margin:28px 0; padding:18px; background:#fffdf8; border:1px solid var(--line); }
+.src { font-size:12px; color:var(--mute); }
+</style>
+</head>
+<body>
+<main>
+<p class="kicker">정본 파일 · SQLite</p>
+<p><a href="../" style="color:var(--metro)">설계 목차</a></p>
+<h1>${escapeHtml(file.title)}</h1>
+<p class="src">${escapeHtml(file.path)} · ${file.bytes} bytes · ${escapeHtml(file.sha256)}</p>
+<section>
+<h2>머리글</h2>
+<ul>${headingList || '<li>머리글 없음</li>'}</ul>
+</section>
+</main>
+</body>
+</html>
+`;
+  mkdirSync(dirname(outPath), { recursive: true });
+  writeFileSync(outPath, html);
+  return outPath;
+}
+
 export function exportIndexPage({ dbPath, outPath }) {
   const rows = listDocuments({ dbPath });
+  const canon = listCanonFiles({ dbPath });
   const groups = new Map();
   for (const row of rows) {
     const section = row.section || '설계';
@@ -302,6 +470,10 @@ export function exportIndexPage({ dbPath, outPath }) {
     const cards = docs.map((d) => `<li><a href="${escapeHtml(d.id)}/"><b>${escapeHtml(d.title)}</b></a><p>${escapeHtml(d.picture_note)}</p></li>`).join('\n');
     return `<section><h2>${escapeHtml(section)}</h2><ul class="toc">${cards}</ul></section>`;
   }).join('\n');
+  const canonCards = canon.map((f) => `<li><a href="canon/${escapeHtml(f.id)}/"><b>${escapeHtml(f.title)}</b></a><p>${escapeHtml(f.path)}</p></li>`).join('\n');
+  const canonSection = canon.length
+    ? `<section><h2>정본 전체</h2><p class="layer">GDD/game-logic 마크다운 ${canon.length}개</p><ul class="toc">${canonCards}</ul></section>`
+    : '';
   const html = `<!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -316,6 +488,7 @@ main { max-width:880px; margin:0 auto; padding:36px 24px 80px; }
 h1 { font-family:"Song Myung","Apple Myungjo",serif; font-size:32px; margin:8px 0 12px; }
 section { margin:28px 0; padding:18px; background:#fffdf8; border:1px solid var(--line); }
 h2 { font-size:18px; margin:0 0 8px; }
+.layer { font-size:13px; color:var(--mute); margin:0 0 12px; }
 .toc { list-style:none; padding:0; margin:0; }
 .toc li { margin:0 0 14px; padding:0 0 12px; border-bottom:1px solid var(--line); }
 .toc a { color:var(--metro); text-decoration:none; }
@@ -324,17 +497,18 @@ h2 { font-size:18px; margin:0 0 8px; }
 </head>
 <body>
 <main>
-<p class="kicker">MDA + one-page · SQLite · docs/game-logic 정본</p>
+<p class="kicker">MDA + one-page · SQLite · GDD/game-logic 정본</p>
 <h1>잔선: 서울 — 설계 문서</h1>
 <p>한 장이 아니라 정본 문서를 층별로 채운 목차다. 각 칸은 그 요소가 무엇인지.</p>
 ${sections}
+${canonSection}
 </main>
 </body>
 </html>
 `;
   mkdirSync(dirname(outPath), { recursive: true });
   writeFileSync(outPath, html);
-  return { path: outPath, documents: rows.length };
+  return { path: outPath, documents: rows.length, canon: canon.length };
 }
 
 function parseArgs(argv) {
