@@ -1,7 +1,7 @@
 # ART TOOLING KNOWLEDGE BASE
 
 ## OVERVIEW
-Asset planning, candidate assembly, and fail-closed runtime provenance; score 8, distinct schema/contract domain.
+Asset planning, candidate assembly, and fail-closed runtime provenance; score 8, distinct schema/contract domain (file count, own schemas, dense exports).
 
 ## WHERE TO LOOK
 | Task | Location | Notes |
@@ -28,6 +28,7 @@ Asset planning, candidate assembly, and fail-closed runtime provenance; score 8,
 - Slot files must match contract keys and destination directories under `Game/Assets/Janseon/Art/`.
 - `prepare` validates candidate inputs and refuses destination overwrites; `commit` validates imported runtime files before appending the BOM row.
 - The slot contract names the runtime BOM under `Reference/assets/bom/runtime/` and Unity catalog under `Game/Assets/Janseon/Foundation/Art/`.
+- Unity bridge callers still contain old `tools/art/...` arguments; the current scripts live here under `Tool/tools/art/`. Audit success alone does not prove that import boundary executes.
 - Python assemblers emit draft assets with unknown rights and empty reviews; successful assembly is not promotion.
 - Python image tools require Pillow; UI candidate assembly also imports NumPy.
 
