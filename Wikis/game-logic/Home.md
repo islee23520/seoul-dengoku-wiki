@@ -20,6 +20,7 @@
 | [서울과 지하철 레이어](World-and-Subway-Layers.md) | 다층 세계 그래프와 데이터 출처 |
 | [월드맵을 어떻게 구성하나](World-Map-Construction.md) | 구 25·역 목록·시설을 그래프로 조립하는 순서. Unity 이동 그래프는 334역 |
 | [서울 지역 설정 데이터](regions/README.md) | 2026-07-01 행정동 25구·427동 저작. 역 목록이 면적 전수가 아님 |
+| [강·구·동 건물 재사용](Building-Reuse-Geography.md) | 한강·지천·25구 위에 관측 건물의 개막 쓰임을 얹는다. OSM 태그는 가동이 아님 |
 | [서울 역 카탈로그](Seoul-Station-Catalog.md) | OSM에서 뽑은 서울 안 이름 있는 역 334곳. 공식 전수 아님 |
 | [역 내부에 들어가면](Station-Interior-Construction.md) | 입장 시 층·격자·시설 슬롯. 조우 정산 API와 별개 |
 | [출격하고 돌아오는 흐름](Campaign-Loop.md) | 준비, 원정, 마주침, 전투, 복귀와 결과 반영 |

@@ -25,7 +25,10 @@
           "docs/game-logic/Scenario-Timeline.md",
           "docs/game-logic/Seoul-Station-Catalog.md"
         ],
-        "polity_contexts": ["S06", "S09"],
+        "polity_contexts": [
+          "S06",
+          "S09"
+        ],
         "inhabitants": [
           "영천 저울손",
           "독립문 쪽지 서기",
@@ -33,8 +36,15 @@
         ],
         "livelihood": "영천시장에서 식량과 생활재를 저울로 나누고, 독립문 대합실에서 도성 쪽 기록 왕래 쪽지를 받아 통일로로 넘긴다. 세란병원 로비는 시장 줄과 다른 침상 순번만 받는다.",
         "production": {
-          "outputs": ["아침 시세", "왕래 쪽지 사본"],
-          "requires": ["저울 노동", "먹지", "낮 조명"]
+          "outputs": [
+            "아침 시세",
+            "왕래 쪽지 사본"
+          ],
+          "requires": [
+            "저울 노동",
+            "먹지",
+            "낮 조명"
+          ]
         },
         "shortages": [
           "냉장 얼음",
@@ -52,15 +62,60 @@
           "label": "영천시장 아침 저울을 독립문 왕래 줄과 가르고 세란 로비에 침상 순번만 넘긴다",
           "target_ref": "osm:way:303313567",
           "costs": [
-            {"resource": "labor", "amount": 4, "unit": "shift"},
-            {"resource": "food", "amount": 6, "unit": "점"}
+            {
+              "resource": "labor",
+              "amount": 4,
+              "unit": "shift"
+            },
+            {
+              "resource": "food",
+              "amount": 6,
+              "unit": "점"
+            }
           ],
           "outcomes": [
-            {"kind": "service", "effect": "시장 시세와 왕래 쪽지를 칠판 두 장으로 갈라 세란 침상 열두 자리를 지킨다."}
+            {
+              "kind": "service",
+              "effect": "시장 시세와 왕래 쪽지를 칠판 두 장으로 갈라 세란 침상 열두 자리를 지킨다."
+            }
           ],
           "tradeoff": "식량 여섯 점은 시장 저녁 재고에서 뺀다. 극동아파트입구 저녁 배급이 한 차례 줄고 통일로 수레가 한 시간 밀린다."
         },
-        "uncertainty": "독립문·영천시장·세란병원·통일로 위치는 OSM 스냅샷(PBF 2026-09-04T23:00:00Z, 경계 2026-07-01)이다. 조회 기준 2026-09-12와 창작 개막일은 별개다. 대합실 쪽지, 저울 시간, 침상 순번은 창작이며 역·시장·병원의 현재 운영을 태그에서 추론하지 않는다."
+        "uncertainty": "독립문·영천시장·세란병원·통일로 위치는 OSM 스냅샷(PBF 2026-09-04T23:00:00Z, 경계 2026-07-01)이다. 조회 기준 2026-09-12와 창작 개막일은 별개다. 대합실 쪽지, 저울 시간, 침상 순번은 창작이며 역·시장·병원의 현재 운영을 태그에서 추론하지 않는다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:6033544434",
+            "name": "독립문",
+            "observed_use": "역",
+            "river": "hangang-north",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+          },
+          {
+            "anchor_ref": "osm:node:368898944",
+            "name": "천연동 주민센터",
+            "observed_use": "주민센터",
+            "river": "hangang-north",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+          },
+          {
+            "anchor_ref": "osm:node:9169245217",
+            "name": "세란병원",
+            "observed_use": "병원",
+            "river": "hangang-north",
+            "opening_use": "야전 의무. 수술실 대신 교대 침상을 둔다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+          },
+          {
+            "anchor_ref": "osm:way:1493084016",
+            "name": "독립문총신사회교육원 사회복지학과",
+            "observed_use": "대학",
+            "river": "hangang-north",
+            "opening_use": "기록 사본 공방. 실험동은 봉인하거나 부품을 분해한다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+          }
+        ]
       }
     },
     {
@@ -85,7 +140,10 @@
           "docs/game-logic/Scenario-Timeline.md",
           "docs/game-logic/Economy-and-Production.md"
         ],
-        "polity_contexts": ["S06", "S09"],
+        "polity_contexts": [
+          "S06",
+          "S09"
+        ],
         "inhabitants": [
           "두산 저층 반장",
           "푸르지오 난방 당번",
@@ -93,8 +151,15 @@
         ],
         "livelihood": "두산아파트 저층에서 충현 쪽 왕래 인원의 잠자리를 팔고, 푸르지오 쪽은 마포대로 식량 수레의 하룻밤 보관만 맡는다. 한성중고등학교 운동장은 낮에만 짐을 내려놓는다.",
         "production": {
-          "outputs": ["저층 잠자리", "하룻밤 보관"],
-          "requires": ["난방 나무", "이불", "명부용 먹지"]
+          "outputs": [
+            "저층 잠자리",
+            "하룻밤 보관"
+          ],
+          "requires": [
+            "난방 나무",
+            "이불",
+            "명부용 먹지"
+          ]
         },
         "shortages": [
           "단열 천",
@@ -112,15 +177,60 @@
           "label": "두산아파트 저층 여덟 곳의 단열을 먼저 막고 푸르지오 난방 나무를 하루 미룬다",
           "target_ref": "osm:way:463988049",
           "costs": [
-            {"resource": "labor", "amount": 5, "unit": "shift"},
-            {"resource": "parts", "amount": 8, "unit": "점"}
+            {
+              "resource": "labor",
+              "amount": 5,
+              "unit": "shift"
+            },
+            {
+              "resource": "parts",
+              "amount": 8,
+              "unit": "점"
+            }
           ],
           "outcomes": [
-            {"kind": "supply", "effect": "두산 저층 잠자리 여덟 곳을 하룻밤 유지해 충현 왕래 인원이 아침에 떠날 수 있다."}
+            {
+              "kind": "supply",
+              "effect": "두산 저층 잠자리 여덟 곳을 하룻밤 유지해 충현 왕래 인원이 아침에 떠날 수 있다."
+            }
           ],
           "tradeoff": "단열 천과 나무는 푸르지오 난로에서 뺀다. 마포대로 보관 수레가 식어 공덕 쪽 아침 인분이 줄어든다."
         },
-        "uncertainty": "주민센터·두산아파트·푸르지오·아현삼거리·마포대로 위치는 OSM 스냅샷이다. 잠자리 장사, 난방 나무 분배, 숙영 명부는 창작 개막일이며 아파트·학교의 현재 운영을 태그에서 추론하지 않는다. 조회 기준 2026-09-12와 개막일은 별개다."
+        "uncertainty": "주민센터·두산아파트·푸르지오·아현삼거리·마포대로 위치는 OSM 스냅샷이다. 잠자리 장사, 난방 나무 분배, 숙영 명부는 창작 개막일이며 아파트·학교의 현재 운영을 태그에서 추론하지 않는다. 조회 기준 2026-09-12와 개막일은 별개다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:way:1429721529",
+            "name": "아현산업정보학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:way:463988048",
+            "name": "한성중고등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:way:463988052",
+            "name": "서울북성초등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:way:472113204",
+            "name": "북아현동 주민센터",
+            "observed_use": "주민센터",
+            "river": "hangang-north",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+          }
+        ]
       }
     },
     {
@@ -146,7 +256,10 @@
           "docs/game-logic/Seoul-Station-Catalog.md",
           "docs/game-logic/Cast-State-06.md"
         ],
-        "polity_contexts": ["S06", "S09"],
+        "polity_contexts": [
+          "S06",
+          "S09"
+        ],
         "inhabitants": [
           "충정로 창구 서기",
           "서대문 대합실 안내",
@@ -154,8 +267,15 @@
         ],
         "livelihood": "충정로 대합실에서 도성 기록 왕래만 받고, 서대문 대합실에서는 사람 무게와 통행 쪽지만 확인한다. 서소문아파트는 두 대합실 사이 저녁 물통 줄을 따로 세운다.",
         "production": {
-          "outputs": ["왕래 접수 장부", "통행 쪽지"],
-          "requires": ["먹지", "주간 전력", "저울 노동"]
+          "outputs": [
+            "왕래 접수 장부",
+            "통행 쪽지"
+          ],
+          "requires": [
+            "먹지",
+            "주간 전력",
+            "저울 노동"
+          ]
         },
         "shortages": [
           "유효 도장 잉크",
@@ -173,15 +293,60 @@
           "label": "충정로 대합실을 기록 왕래 전용으로 봉인하고 서대문 대합실의 빈 도장 게시를 내린다",
           "target_ref": "osm:node:3278844468",
           "costs": [
-            {"resource": "labor", "amount": 6, "unit": "shift"},
-            {"resource": "authority", "amount": 10, "unit": "A"}
+            {
+              "resource": "labor",
+              "amount": 6,
+              "unit": "shift"
+            },
+            {
+              "resource": "authority",
+              "amount": 10,
+              "unit": "A"
+            }
           ],
           "outcomes": [
-            {"kind": "legitimacy", "effect": "충정로 창구를 기록 왕래만 받는 장부로 고정하고 당일 급수 청구 여덟 건을 무효로 돌린다."}
+            {
+              "kind": "legitimacy",
+              "effect": "충정로 창구를 기록 왕래만 받는 장부로 고정하고 당일 급수 청구 여덟 건을 무효로 돌린다."
+            }
           ],
           "tradeoff": "서대문 대합실 저녁 접수가 네 시간 줄고 서소문아파트 물통 순번이 하루 밀린다."
         },
-        "uncertainty": "충정로·서대문 대합실·풍산빌딩·서소문아파트 위치는 OSM 스냅샷이다. 빈 도장, 왕래 전용 봉인, 물통 순번은 창작이며 역·대학의 현재 운영을 태그에서 추론하지 않는다. 조회 기준 2026-09-12와 개막일은 별개다."
+        "uncertainty": "충정로·서대문 대합실·풍산빌딩·서소문아파트 위치는 OSM 스냅샷이다. 빈 도장, 왕래 전용 봉인, 물통 순번은 창작이며 역·대학의 현재 운영을 태그에서 추론하지 않는다. 조회 기준 2026-09-12와 개막일은 별개다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:3278844468",
+            "name": "충정로",
+            "observed_use": "역",
+            "river": "hangang-north",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+          },
+          {
+            "anchor_ref": "osm:node:6039313652",
+            "name": "서대문",
+            "observed_use": "역",
+            "river": "hangang-north",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+          },
+          {
+            "anchor_ref": "osm:node:13055792473",
+            "name": "중앙여자고등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:node:13055792474",
+            "name": "중앙여자중학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          }
+        ]
       }
     },
     {
@@ -207,7 +372,9 @@
           "docs/game-logic/Seoul-Station-Catalog.md",
           "docs/game-logic/Cast-State-09.md"
         ],
-        "polity_contexts": ["S09"],
+        "polity_contexts": [
+          "S09"
+        ],
         "inhabitants": [
           "대합실 중개인",
           "의학도서관 전등 당번",
@@ -215,8 +382,15 @@
         ],
         "livelihood": "지하철 대합실에서 식량과 전언을 갈아 태우고, 지상 철도 대합실은 무거운 상자만 낮에 받는다. 의학도서관 자습실은 헬스케어센터 당직의 쪽지를 베끼는 자리로 쓰인다.",
         "production": {
-          "outputs": ["중개 식량", "전언 사본"],
-          "requires": ["저녁 전력", "반입 식량", "용지"]
+          "outputs": [
+            "중개 식량",
+            "전언 사본"
+          ],
+          "requires": [
+            "저녁 전력",
+            "반입 식량",
+            "용지"
+          ]
         },
         "shortages": [
           "저녁 전력",
@@ -234,15 +408,60 @@
           "label": "신촌 지하철 대합실 야간 조명을 끄고 의학도서관과 병원앞 안내 회로만 남긴다",
           "target_ref": "osm:node:5937884691",
           "costs": [
-            {"resource": "power", "amount": 12, "unit": "전력점"},
-            {"resource": "labor", "amount": 3, "unit": "shift"}
+            {
+              "resource": "power",
+              "amount": 12,
+              "unit": "전력점"
+            },
+            {
+              "resource": "labor",
+              "amount": 3,
+              "unit": "shift"
+            }
           ],
           "outcomes": [
-            {"kind": "service", "effect": "상암 교차검증 수신이 하룻밤 맑아져 지도 갱신 쪽지 세 장이 의학도서관에서 베껴진다."}
+            {
+              "kind": "service",
+              "effect": "상암 교차검증 수신이 하룻밤 맑아져 지도 갱신 쪽지 세 장이 의학도서관에서 베껴진다."
+            }
           ],
           "tradeoff": "대합실 야간 중개가 줄어 이화포스코관 쪽 저녁 배급 아홉 인분이 빠진다. 지상 철도 대합실 상자 접수도 한 편성 미룬다."
         },
-        "uncertainty": "신촌 지하철·지상 철도 대합실, 의학도서관, 세브란스병원앞, 복주산 위치는 OSM 스냅샷이다. 야간 정전 선택과 전언 중개는 창작이며 역·병원·대학의 현재 운영을 태그에서 추론하지 않는다. 조회 기준 2026-09-12와 개막일은 별개다."
+        "uncertainty": "신촌 지하철·지상 철도 대합실, 의학도서관, 세브란스병원앞, 복주산 위치는 OSM 스냅샷이다. 야간 정전 선택과 전언 중개는 창작이며 역·병원·대학의 현재 운영을 태그에서 추론하지 않는다. 조회 기준 2026-09-12와 개막일은 별개다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:5937884691",
+            "name": "신촌",
+            "observed_use": "역",
+            "river": "hangang-north",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+          },
+          {
+            "anchor_ref": "osm:node:2346858838",
+            "name": "신촌",
+            "observed_use": "역",
+            "river": "hangang-north",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+          },
+          {
+            "anchor_ref": "osm:node:10960666056",
+            "name": "의학도서관 4층 자습실",
+            "observed_use": "대학",
+            "river": "hangang-north",
+            "opening_use": "기록 사본 공방. 실험동은 봉인하거나 부품을 분해한다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+          },
+          {
+            "anchor_ref": "osm:node:11625038275",
+            "name": "윤인배홀",
+            "observed_use": "대학",
+            "river": "hangang-north",
+            "opening_use": "기록 사본 공방. 실험동은 봉인하거나 부품을 분해한다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+          }
+        ]
       }
     },
     {
@@ -267,7 +486,10 @@
           "docs/game-logic/Scenario-Timeline.md",
           "docs/game-logic/Strongholds-and-Territory.md"
         ],
-        "polity_contexts": ["S09", "S10"],
+        "polity_contexts": [
+          "S09",
+          "S10"
+        ],
         "inhabitants": [
           "구청 장부 서기",
           "사천교 물통 지기",
@@ -275,8 +497,15 @@
         ],
         "livelihood": "구청 로비에서 동별 명부와 만료 계약의 빈 칸을 고치고, 사천교에서는 홍제천 쪽으로 물통을 넘긴다. 궁동산 사면은 계단 낙석만 알리고 숙영을 새로 열지 않는다.",
         "production": {
-          "outputs": ["동별 명부", "물통 순번"],
-          "requires": ["먹지", "물지게 노동", "계단 목재"]
+          "outputs": [
+            "동별 명부",
+            "물통 순번"
+          ],
+          "requires": [
+            "먹지",
+            "물지게 노동",
+            "계단 목재"
+          ]
         },
         "shortages": [
           "유효 급수 문안",
@@ -294,15 +523,60 @@
           "label": "구청 로비에서 사천교 물통과 궁동산 사면 명부를 두 장부로 가르고 빈 급수란을 점선으로만 남긴다",
           "target_ref": "osm:node:1968205555",
           "costs": [
-            {"resource": "labor", "amount": 5, "unit": "shift"},
-            {"resource": "authority", "amount": 8, "unit": "A"}
+            {
+              "resource": "labor",
+              "amount": 5,
+              "unit": "shift"
+            },
+            {
+              "resource": "authority",
+              "amount": 8,
+              "unit": "A"
+            }
           ],
           "outcomes": [
-            {"kind": "legitimacy", "effect": "구청 벽에 점선 급수란과 사면 명부를 따로 붙여 요양병원 침상 순번이 교차로 수레와 분리된다."}
+            {
+              "kind": "legitimacy",
+              "effect": "구청 벽에 점선 급수란과 사면 명부를 따로 붙여 요양병원 침상 순번이 교차로 수레와 분리된다."
+            }
           ],
           "tradeoff": "장부 노동 다섯 교대는 신원아파트 저녁 물지게에서 뺀다. 사천교 저녁 물통이 한 차례 늦어진다."
         },
-        "uncertainty": "서대문구청·연희교차로·사천교·궁동산 위치는 OSM 스냅샷이다. 빈 급수란, 이중 장부, 사면 명부는 창작이며 청사·병원의 현재 운영을 태그에서 추론하지 않는다. 조회 기준 2026-09-12와 개막일은 별개다."
+        "uncertainty": "서대문구청·연희교차로·사천교·궁동산 위치는 OSM 스냅샷이다. 빈 급수란, 이중 장부, 사면 명부는 창작이며 청사·병원의 현재 운영을 태그에서 추론하지 않는다. 조회 기준 2026-09-12와 개막일은 별개다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:1968205555",
+            "name": "서대문구청",
+            "observed_use": "주민센터",
+            "river": "hangang-north",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+          },
+          {
+            "anchor_ref": "osm:node:368921927",
+            "name": "신연중학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:node:5529686458",
+            "name": "연희동 주민센터",
+            "observed_use": "주민센터",
+            "river": "hangang-north",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+          },
+          {
+            "anchor_ref": "osm:relation:18619603",
+            "name": "연세대학교 신촌캠퍼스",
+            "observed_use": "대학",
+            "river": "hangang-north",
+            "opening_use": "기록 사본 공방. 실험동은 봉인하거나 부품을 분해한다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+          }
+        ]
       }
     },
     {
@@ -328,7 +602,10 @@
           "docs/game-logic/Seoul-Station-Catalog.md",
           "docs/game-logic/Cast-State-10.md"
         ],
-        "polity_contexts": ["S09", "S10"],
+        "polity_contexts": [
+          "S09",
+          "S10"
+        ],
         "inhabitants": [
           "고개 안내인",
           "성원아파트 난로 당번",
@@ -336,8 +613,15 @@
         ],
         "livelihood": "무악재 대합실에서 낮 통행 시각만 알리고, 금화산 사면 계단을 버팀목으로 묶는다. 홍제성원아파트는 고개 통행 인원의 잠자리를 팔되 숙영을 새로 열지 않는다.",
         "production": {
-          "outputs": ["낮 통행 안내", "낙석 경보"],
-          "requires": ["보수 목재", "운반 노동", "난로 연료"]
+          "outputs": [
+            "낮 통행 안내",
+            "낙석 경보"
+          ],
+          "requires": [
+            "보수 목재",
+            "운반 노동",
+            "난로 연료"
+          ]
         },
         "shortages": [
           "계단 목재",
@@ -355,15 +639,60 @@
           "label": "무악재 대합실 앞 계단을 목재로 묶어 낮 통행만 남긴다",
           "target_ref": "osm:node:6033544440",
           "costs": [
-            {"resource": "labor", "amount": 8, "unit": "shift"},
-            {"resource": "parts", "amount": 10, "unit": "점"}
+            {
+              "resource": "labor",
+              "amount": 8,
+              "unit": "shift"
+            },
+            {
+              "resource": "parts",
+              "amount": 10,
+              "unit": "점"
+            }
           ],
           "outcomes": [
-            {"kind": "connection", "effect": "낮 고개 통행이 유지되어 안내 여섯 교대가 다음날도 선다."}
+            {
+              "kind": "connection",
+              "effect": "낮 고개 통행이 유지되어 안내 여섯 교대가 다음날도 선다."
+            }
           ],
           "tradeoff": "목재 열 점은 홍제성원아파트 난로에서 뺀다. 저녁 잠자리 여섯 곳이 춥고 고은초 운동장 짐 보관이 하루 쉰다."
         },
-        "uncertainty": "무악재 대합실·금화산·홍제성원아파트·봉수대 위치는 OSM 스냅샷이다. 계단 버팀, 낮 통행, 난로 목재 분배는 창작이며 역·아파트의 현재 운영을 태그에서 추론하지 않는다. 조회 기준 2026-09-12와 개막일은 별개다."
+        "uncertainty": "무악재 대합실·금화산·홍제성원아파트·봉수대 위치는 OSM 스냅샷이다. 계단 버팀, 낮 통행, 난로 목재 분배는 창작이며 역·아파트의 현재 운영을 태그에서 추론하지 않는다. 조회 기준 2026-09-12와 개막일은 별개다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:6033544440",
+            "name": "무악재",
+            "observed_use": "역",
+            "river": "hangang-north",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+          },
+          {
+            "anchor_ref": "osm:node:368652222",
+            "name": "디지털서울문화예술대학교",
+            "observed_use": "대학",
+            "river": "hangang-north",
+            "opening_use": "기록 사본 공방. 실험동은 봉인하거나 부품을 분해한다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+          },
+          {
+            "anchor_ref": "osm:node:368899572",
+            "name": "홍제1동 주민센터",
+            "observed_use": "주민센터",
+            "river": "hangang-north",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+          },
+          {
+            "anchor_ref": "osm:relation:6384813",
+            "name": "이화여자대학교",
+            "observed_use": "대학",
+            "river": "hangang-north",
+            "opening_use": "기록 사본 공방. 실험동은 봉인하거나 부품을 분해한다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+          }
+        ]
       }
     },
     {
@@ -388,7 +717,10 @@
           "docs/game-logic/Seoul-Station-Catalog.md",
           "docs/game-logic/Economy-and-Production.md"
         ],
-        "polity_contexts": ["S09", "S10"],
+        "polity_contexts": [
+          "S09",
+          "S10"
+        ],
         "inhabitants": [
           "약수 물지게",
           "대합실 통행증 서기",
@@ -396,8 +728,15 @@
         ],
         "livelihood": "홍심약수터에서 물통을 채워 사면 주거에 나르고, 홍제 대합실에서는 통행증을 상암 검증 도장과 북산 인장 중 그날의 유효만 받는다. 간호대 실습실은 물을 끓여 마실 수만 있게 한다.",
         "production": {
-          "outputs": ["약수 물통", "통행증 사본"],
-          "requires": ["물지게 노동", "땔감", "용지"]
+          "outputs": [
+            "약수 물통",
+            "통행증 사본"
+          ],
+          "requires": [
+            "물지게 노동",
+            "땔감",
+            "용지"
+          ]
         },
         "shortages": [
           "끓일 땔감",
@@ -415,15 +754,60 @@
           "label": "홍심약수터 물길을 대합실 배수와 떼고 간호대 실습실에서만 끓인다",
           "target_ref": "osm:node:7617383419",
           "costs": [
-            {"resource": "labor", "amount": 6, "unit": "shift"},
-            {"resource": "parts", "amount": 7, "unit": "점"}
+            {
+              "resource": "labor",
+              "amount": 6,
+              "unit": "shift"
+            },
+            {
+              "resource": "parts",
+              "amount": 7,
+              "unit": "점"
+            }
           ],
           "outcomes": [
-            {"kind": "supply", "effect": "약수 물통 스무 점을 사면 주거에 나누고 섞인 물을 폐기하지 않아도 된다."}
+            {
+              "kind": "supply",
+              "effect": "약수 물통 스무 점을 사면 주거에 나누고 섞인 물을 폐기하지 않아도 된다."
+            }
           ],
           "tradeoff": "떼는 노동은 통행증 창구에서 뺀다. 홍제 대합실 접수가 반나절 줄어 북산 인장 대기열이 길어진다."
         },
-        "uncertainty": "홍제 대합실·홍심약수터·서울여자간호대학교 위치는 OSM 스냅샷이다. 물길 분리, 끓임, 통행증 유효 선택은 창작이며 약수·대학의 현재 수질·운영을 태그에서 추론하지 않는다. 조회 기준 2026-09-12와 개막일은 별개다."
+        "uncertainty": "홍제 대합실·홍심약수터·서울여자간호대학교 위치는 OSM 스냅샷이다. 물길 분리, 끓임, 통행증 유효 선택은 창작이며 약수·대학의 현재 수질·운영을 태그에서 추론하지 않는다. 조회 기준 2026-09-12와 개막일은 별개다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:6033544444",
+            "name": "홍제",
+            "observed_use": "역",
+            "river": "hangang-north",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+          },
+          {
+            "anchor_ref": "osm:node:2671078340",
+            "name": "서울여자간호대학교",
+            "observed_use": "대학",
+            "river": "hangang-north",
+            "opening_use": "기록 사본 공방. 실험동은 봉인하거나 부품을 분해한다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+          },
+          {
+            "anchor_ref": "osm:node:368928825",
+            "name": "서울인왕초등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:node:368929369",
+            "name": "서울홍은초등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          }
+        ]
       }
     },
     {
@@ -448,7 +832,9 @@
           "docs/game-logic/Scenario-Timeline.md",
           "docs/game-logic/Strongholds-and-Territory.md"
         ],
-        "polity_contexts": ["S10"],
+        "polity_contexts": [
+          "S10"
+        ],
         "inhabitants": [
           "인왕약수 물지게",
           "범바위 사면 감시",
@@ -456,8 +842,15 @@
         ],
         "livelihood": "인왕약수에서 물통을 채워 인왕아파트 저층에 나르고, 범바위 바위턱의 낙석만 알린다. 청구1차아파트는 로프를 빌려 주고 저녁 물을 받는다.",
         "production": {
-          "outputs": ["약수 물통", "낙석 경보"],
-          "requires": ["로프", "물지게 노동", "버팀 목재"]
+          "outputs": [
+            "약수 물통",
+            "낙석 경보"
+          ],
+          "requires": [
+            "로프",
+            "물지게 노동",
+            "버팀 목재"
+          ]
         },
         "shortages": [
           "로프",
@@ -475,15 +868,60 @@
           "label": "범바위 바위턱을 로프로 묶어 인왕약수 앞길을 낮에만 연다",
           "target_ref": "osm:way:1162303159",
           "costs": [
-            {"resource": "labor", "amount": 7, "unit": "shift"},
-            {"resource": "parts", "amount": 9, "unit": "점"}
+            {
+              "resource": "labor",
+              "amount": 7,
+              "unit": "shift"
+            },
+            {
+              "resource": "parts",
+              "amount": 9,
+              "unit": "점"
+            }
           ],
           "outcomes": [
-            {"kind": "connection", "effect": "약수 앞길이 낮 네 시간 유지되어 물통 열다섯 점이 인왕아파트에 닿는다."}
+            {
+              "kind": "connection",
+              "effect": "약수 앞길이 낮 네 시간 유지되어 물통 열다섯 점이 인왕아파트에 닿는다."
+            }
           ],
           "tradeoff": "로프 아홉 점은 청구1차아파트 난간에서 뺀다. 그 단지 저녁 출입이 한 층 막힌다."
         },
-        "uncertainty": "인왕약수·범바위·인왕아파트·통일로 가장자리 위치는 OSM 스냅샷이다. 로프 고정과 물통 운반은 창작이며 약수 음용·사면 안전을 태그에서 추론하지 않는다. 조회 기준 2026-09-12와 개막일은 별개다."
+        "uncertainty": "인왕약수·범바위·인왕아파트·통일로 가장자리 위치는 OSM 스냅샷이다. 로프 고정과 물통 운반은 창작이며 약수 음용·사면 안전을 태그에서 추론하지 않는다. 조회 기준 2026-09-12와 개막일은 별개다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:368900038",
+            "name": "홍제2동 주민센터",
+            "observed_use": "주민센터",
+            "river": "hangang-north",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+          },
+          {
+            "anchor_ref": "osm:way:1074236986",
+            "name": "103",
+            "observed_use": "아파트",
+            "river": "hangang-north",
+            "opening_use": "3층 이상만 거주. 1–2층은 침수 창고이거나 포기한다.",
+            "how": "3층 이상 출입, 1–2층 창호는 판자로 막는다."
+          },
+          {
+            "anchor_ref": "osm:node:14055752830",
+            "name": "인왕약수",
+            "observed_use": "공원·녹지",
+            "river": "hangang-north",
+            "opening_use": "얕은 경작과 우기 배수. 묘지로 쓰지 않는다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+          },
+          {
+            "anchor_ref": "osm:way:1074236983",
+            "name": "홍제역해링턴플레이스",
+            "observed_use": "공원·녹지",
+            "river": "hangang-north",
+            "opening_use": "얕은 경작과 우기 배수. 묘지로 쓰지 않는다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+          }
+        ]
       }
     },
     {
@@ -508,7 +946,10 @@
           "docs/game-logic/Scenario-Timeline.md",
           "docs/game-logic/Cast-State-10.md"
         ],
-        "polity_contexts": ["S10", "S09"],
+        "polity_contexts": [
+          "S10",
+          "S09"
+        ],
         "inhabitants": [
           "둔치 물수레",
           "풍림 저녁 반장",
@@ -516,8 +957,15 @@
         ],
         "livelihood": "홍제천 둔치에서 물통을 퍼 풍림·벽산 저층에 나르고, 세검정로에서는 녹번 쪽으로 사람만 낮에 넘긴다. 홍제초 운동장은 물통을 내려놓는 공터다.",
         "production": {
-          "outputs": ["둔치 물통", "사람 낮 안내"],
-          "requires": ["물수레 노동", "거름천", "연료"]
+          "outputs": [
+            "둔치 물통",
+            "사람 낮 안내"
+          ],
+          "requires": [
+            "물수레 노동",
+            "거름천",
+            "연료"
+          ]
         },
         "shortages": [
           "거름천",
@@ -535,15 +983,60 @@
           "label": "홍제천 둔치에 거름천을 치고 풍림 저층 물통만 낮에 채운다",
           "target_ref": "osm:way:1214479818",
           "costs": [
-            {"resource": "labor", "amount": 6, "unit": "shift"},
-            {"resource": "parts", "amount": 8, "unit": "점"}
+            {
+              "resource": "labor",
+              "amount": 6,
+              "unit": "shift"
+            },
+            {
+              "resource": "parts",
+              "amount": 8,
+              "unit": "점"
+            }
           ],
           "outcomes": [
-            {"kind": "supply", "effect": "풍림 저층 물통 열여덟 점을 거름천 너머로 채운다."}
+            {
+              "kind": "supply",
+              "effect": "풍림 저층 물통 열여덟 점을 거름천 너머로 채운다."
+            }
           ],
           "tradeoff": "거름천과 노동은 세검정로 안내에서 뺀다. 녹번 쪽 낮 사람 통과가 반나절 줄고 벽산 저녁 물은 하루 미뤄진다."
         },
-        "uncertainty": "홍제천·세검정로·풍림아이원·벽산아파트 위치는 OSM 스냅샷이다. 둔치 물퍼기와 거름천은 창작이며 하천 수질·아파트 급수를 태그에서 추론하지 않는다. 조회 기준 2026-09-12와 개막일은 별개다."
+        "uncertainty": "홍제천·세검정로·풍림아이원·벽산아파트 위치는 OSM 스냅샷이다. 둔치 물퍼기와 거름천은 창작이며 하천 수질·아파트 급수를 태그에서 추론하지 않는다. 조회 기준 2026-09-12와 개막일은 별개다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:way:221502708",
+            "name": "상명대학교",
+            "observed_use": "대학",
+            "river": "hangang-north",
+            "opening_use": "기록 사본 공방. 실험동은 봉인하거나 부품을 분해한다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+          },
+          {
+            "anchor_ref": "osm:way:463337314",
+            "name": "서울홍제초등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:way:463356544",
+            "name": "홍은1동 주민센터",
+            "observed_use": "주민센터",
+            "river": "hangang-north",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+          },
+          {
+            "anchor_ref": "osm:relation:20085080",
+            "name": "4동",
+            "observed_use": "아파트",
+            "river": "hangang-north",
+            "opening_use": "3층 이상만 거주. 1–2층은 침수 창고이거나 포기한다.",
+            "how": "3층 이상 출입, 1–2층 창호는 판자로 막는다."
+          }
+        ]
       }
     },
     {
@@ -568,7 +1061,10 @@
           "docs/game-logic/Scenario-Timeline.md",
           "docs/game-logic/Economy-and-Production.md"
         ],
-        "polity_contexts": ["S10", "S09"],
+        "polity_contexts": [
+          "S10",
+          "S09"
+        ],
         "inhabitants": [
           "병원 난로 당직",
           "사회교육관 잠자리 관리",
@@ -576,8 +1072,15 @@
         ],
         "livelihood": "동신병원 로비에서 열과 붕대 순번만 받고, 사회교육관은 응암 쪽 왕래 인원의 하룻밤 잠자리를 판다. 홍은중 운동장은 낮 짐만 받는다.",
         "production": {
-          "outputs": ["로비 열 순번", "하룻밤 잠자리"],
-          "requires": ["난로 연료", "붕대", "이불"]
+          "outputs": [
+            "로비 열 순번",
+            "하룻밤 잠자리"
+          ],
+          "requires": [
+            "난로 연료",
+            "붕대",
+            "이불"
+          ]
         },
         "shortages": [
           "난로 연료",
@@ -595,15 +1098,60 @@
           "label": "동신병원 난로 굴뚝을 사회교육관 취사와 떼고 로비 열 순번만 유지한다",
           "target_ref": "osm:way:472492628",
           "costs": [
-            {"resource": "labor", "amount": 5, "unit": "shift"},
-            {"resource": "parts", "amount": 6, "unit": "점"}
+            {
+              "resource": "labor",
+              "amount": 5,
+              "unit": "shift"
+            },
+            {
+              "resource": "parts",
+              "amount": 6,
+              "unit": "점"
+            }
           ],
           "outcomes": [
-            {"kind": "service", "effect": "병원 로비 열 순번 열 자리를 하룻밤 지키고 교육관 쪽 불씨를 차단한다."}
+            {
+              "kind": "service",
+              "effect": "병원 로비 열 순번 열 자리를 하룻밤 지키고 교육관 쪽 불씨를 차단한다."
+            }
           ],
           "tradeoff": "굴뚝 부품과 노동은 금호빌리지 저녁 난로에서 뺀다. 그 단지 잠자리가 춥고 사거리 저녁 안내가 한 시간 짧아진다."
         },
-        "uncertainty": "동신병원·명지 인문캠퍼스·사회교육관·홍은사거리 위치는 OSM 스냅샷이다. 난로 굴뚝 분리와 잠자리 장사는 창작이며 병원·대학의 현재 운영을 태그에서 추론하지 않는다. 조회 기준 2026-09-12와 개막일은 별개다."
+        "uncertainty": "동신병원·명지 인문캠퍼스·사회교육관·홍은사거리 위치는 OSM 스냅샷이다. 난로 굴뚝 분리와 잠자리 장사는 창작이며 병원·대학의 현재 운영을 태그에서 추론하지 않는다. 조회 기준 2026-09-12와 개막일은 별개다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:368922312",
+            "name": "홍은중학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:node:4666837598",
+            "name": "홍은2동 주민센터",
+            "observed_use": "주민센터",
+            "river": "hangang-north",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+          },
+          {
+            "anchor_ref": "osm:way:378665425",
+            "name": "서울홍연초등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:way:462886441",
+            "name": "명지대학교 인문캠퍼스",
+            "observed_use": "대학",
+            "river": "hangang-north",
+            "opening_use": "기록 사본 공방. 실험동은 봉인하거나 부품을 분해한다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+          }
+        ]
       }
     },
     {
@@ -628,7 +1176,9 @@
           "docs/game-logic/Scenario-Timeline.md",
           "docs/game-logic/Economy-and-Production.md"
         ],
-        "polity_contexts": ["S09"],
+        "polity_contexts": [
+          "S09"
+        ],
         "inhabitants": [
           "모래내 저울손",
           "파크뷰 저녁 대표",
@@ -636,8 +1186,15 @@
         ],
         "livelihood": "모래내시장에서 식량과 생활재를 저울로 나누고, 사천교에서는 연희 쪽 물수레를 시장 얼음 자리와 섞지 않는다. 아파트 저층은 시장 아침 인분을 저녁에 나눠 받는다.",
         "production": {
-          "outputs": ["아침 시세", "부분 배급"],
-          "requires": ["반입 식량", "저울 노동", "얼음"]
+          "outputs": [
+            "아침 시세",
+            "부분 배급"
+          ],
+          "requires": [
+            "반입 식량",
+            "저울 노동",
+            "얼음"
+          ]
         },
         "shortages": [
           "냉장 얼음",
@@ -655,15 +1212,60 @@
           "label": "모래내시장 아침 저울을 사천교 물수레 자리와 떼고 파크뷰 저녁 인분만 남긴다",
           "target_ref": "osm:node:4581738308",
           "costs": [
-            {"resource": "labor", "amount": 4, "unit": "shift"},
-            {"resource": "food", "amount": 10, "unit": "점"}
+            {
+              "resource": "labor",
+              "amount": 4,
+              "unit": "shift"
+            },
+            {
+              "resource": "food",
+              "amount": 10,
+              "unit": "점"
+            }
           ],
           "outcomes": [
-            {"kind": "supply", "effect": "파크뷰 저녁 인분 열두 자리를 시장 시세와 분리해 지킨다."}
+            {
+              "kind": "supply",
+              "effect": "파크뷰 저녁 인분 열두 자리를 시장 시세와 분리해 지킨다."
+            }
           ],
           "tradeoff": "식량 열 점은 래미안남가좌2차 아침 줄에서 뺀다. 사천교 물수레가 시장 안으로 못 들어와 연희 쪽 교환이 반나절 미뤄진다."
         },
-        "uncertainty": "모래내시장·사천교·홍제천·파크뷰자이 위치는 OSM 스냅샷이다. 아침 저울과 저녁 인분 분리는 창작이며 시장 현재 영업을 태그에서 추론하지 않는다. 조회 기준 2026-09-12와 개막일은 별개다."
+        "uncertainty": "모래내시장·사천교·홍제천·파크뷰자이 위치는 OSM 스냅샷이다. 아침 저울과 저녁 인분 분리는 창작이며 시장 현재 영업을 태그에서 추론하지 않는다. 조회 기준 2026-09-12와 개막일은 별개다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:4581738308",
+            "name": "모래내시장",
+            "observed_use": "시장",
+            "river": "hangang-north",
+            "opening_use": "허가 장터. 예약 배급분과 판매 재고를 나눈다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+          },
+          {
+            "anchor_ref": "osm:node:5529686460",
+            "name": "남가좌1동 주민센터",
+            "observed_use": "주민센터",
+            "river": "hangang-north",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+          },
+          {
+            "anchor_ref": "osm:way:462845576",
+            "name": "가재울초등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:way:1132398555",
+            "name": "DMC금호리첸시아",
+            "observed_use": "아파트",
+            "river": "hangang-north",
+            "opening_use": "3층 이상만 거주. 1–2층은 침수 창고이거나 포기한다.",
+            "how": "3층 이상 출입, 1–2층 창호는 판자로 막는다."
+          }
+        ]
       }
     },
     {
@@ -688,7 +1290,9 @@
           "docs/game-logic/Scenario-Timeline.md",
           "docs/game-logic/Cast-State-09.md"
         ],
-        "polity_contexts": ["S09"],
+        "polity_contexts": [
+          "S09"
+        ],
         "inhabitants": [
           "운수 마당 수레꾼",
           "캠퍼스 상자 필경사",
@@ -696,8 +1300,15 @@
         ],
         "livelihood": "상록운수 마당에서 전언상자를 마포 방면 수레에 싣고, 명지 인문캠퍼스 로비에서 암호 사본을 베낀다. 해담하우스는 수레꾼의 하룻밤 잠자리만 판다.",
         "production": {
-          "outputs": ["전언 중계", "암호 사본"],
-          "requires": ["마당 전력", "용지", "수레 바퀴"]
+          "outputs": [
+            "전언 중계",
+            "암호 사본"
+          ],
+          "requires": [
+            "마당 전력",
+            "용지",
+            "수레 바퀴"
+          ]
         },
         "shortages": [
           "마당 전력",
@@ -715,15 +1326,60 @@
           "label": "상록운수 마당 전력을 상자 중계에 붙이고 해담하우스 저녁 조명을 끈다",
           "target_ref": "osm:way:1125438912",
           "costs": [
-            {"resource": "power", "amount": 6, "unit": "전력점"},
-            {"resource": "labor", "amount": 4, "unit": "shift"}
+            {
+              "resource": "power",
+              "amount": 6,
+              "unit": "전력점"
+            },
+            {
+              "resource": "labor",
+              "amount": 4,
+              "unit": "shift"
+            }
           ],
           "outcomes": [
-            {"kind": "connection", "effect": "마포 방면 전언상자 열 건이 낮 안에 마당을 떠난다."}
+            {
+              "kind": "connection",
+              "effect": "마포 방면 전언상자 열 건이 낮 안에 마당을 떠난다."
+            }
           ],
           "tradeoff": "전력 여섯 점은 해담하우스 저녁 조명에서 뺀다. 잠자리 일곱 곳이 어둡고 연희중 운동장 짐 보관이 하루 쉰다."
         },
-        "uncertainty": "상록운수·가재울사거리·명지 인문캠퍼스·해담하우스 위치는 OSM 스냅샷이다. 전언 중계와 마당 전력 배분은 창작이며 운수 회사·대학의 현재 영업을 태그에서 추론하지 않는다. 조회 기준 2026-09-12와 개막일은 별개다."
+        "uncertainty": "상록운수·가재울사거리·명지 인문캠퍼스·해담하우스 위치는 OSM 스냅샷이다. 전언 중계와 마당 전력 배분은 창작이며 운수 회사·대학의 현재 영업을 태그에서 추론하지 않는다. 조회 기준 2026-09-12와 개막일은 별개다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:7806083035",
+            "name": "남가좌2동 주민센터",
+            "observed_use": "주민센터",
+            "river": "hangang-north",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+          },
+          {
+            "anchor_ref": "osm:way:462845576",
+            "name": "가재울초등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:way:462886441",
+            "name": "명지대학교 인문캠퍼스",
+            "observed_use": "대학",
+            "river": "hangang-north",
+            "opening_use": "기록 사본 공방. 실험동은 봉인하거나 부품을 분해한다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+          },
+          {
+            "anchor_ref": "osm:way:462890261",
+            "name": "연희중학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          }
+        ]
       }
     },
     {
@@ -748,7 +1404,9 @@
           "docs/game-logic/Scenario-Timeline.md",
           "docs/game-logic/World-and-Subway-Layers.md"
         ],
-        "polity_contexts": ["S09"],
+        "polity_contexts": [
+          "S09"
+        ],
         "inhabitants": [
           "요양 난로 당직",
           "공터 적재 일꾼",
@@ -756,8 +1414,15 @@
         ],
         "livelihood": "사랑요양병원 로비에서 난로와 침상 순번을 받고, 차량사업소 공터에서는 손으로 옮기는 상자만 내린다. 증산교앞은 상암 전언과 불광천 물수레를 두 줄로 가른다.",
         "production": {
-          "outputs": ["로비 열 순번", "부품 상자 하역"],
-          "requires": ["난로 연료", "공터 전력", "운반 노동"]
+          "outputs": [
+            "로비 열 순번",
+            "부품 상자 하역"
+          ],
+          "requires": [
+            "난로 연료",
+            "공터 전력",
+            "운반 노동"
+          ]
         },
         "shortages": [
           "난로 연료",
@@ -775,15 +1440,60 @@
           "label": "사랑요양병원 난로 회로를 차량사업소 공터 조명과 떼고 로비 열 순번만 살린다",
           "target_ref": "osm:node:368740906",
           "costs": [
-            {"resource": "labor", "amount": 5, "unit": "shift"},
-            {"resource": "power", "amount": 7, "unit": "전력점"}
+            {
+              "resource": "labor",
+              "amount": 5,
+              "unit": "shift"
+            },
+            {
+              "resource": "power",
+              "amount": 7,
+              "unit": "전력점"
+            }
           ],
           "outcomes": [
-            {"kind": "service", "effect": "요양 로비 난로 여덟 자리를 하룻밤 유지한다."}
+            {
+              "kind": "service",
+              "effect": "요양 로비 난로 여덟 자리를 하룻밤 유지한다."
+            }
           ],
           "tradeoff": "전력 일곱 점은 공터 조명에서 뺀다. 부품 상자 하역이 저녁에 멈추고 상암 쪽 전언 세 건이 다음날로 밀린다."
         },
-        "uncertainty": "사랑요양병원·서울차량사업소·증산교앞·불광천 위치는 OSM 스냅샷이다. 난로 회로와 공터 적재는 창작이며 병원·철도 부지의 현재 운영을 태그에서 추론하지 않는다. 조회 기준 2026-09-12와 개막일은 별개다."
+        "uncertainty": "사랑요양병원·서울차량사업소·증산교앞·불광천 위치는 OSM 스냅샷이다. 난로 회로와 공터 적재는 창작이며 병원·철도 부지의 현재 운영을 태그에서 추론하지 않는다. 조회 기준 2026-09-12와 개막일은 별개다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:368740906",
+            "name": "사랑요양병원",
+            "observed_use": "병원",
+            "river": "hangang-north",
+            "opening_use": "야전 의무. 수술실 대신 교대 침상을 둔다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+          },
+          {
+            "anchor_ref": "osm:node:5529932324",
+            "name": "북가좌1동 주민센터",
+            "observed_use": "주민센터",
+            "river": "hangang-north",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+          },
+          {
+            "anchor_ref": "osm:way:462844384",
+            "name": "가재울중학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:way:462844385",
+            "name": "가재울고등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          }
+        ]
       }
     },
     {
@@ -808,7 +1518,10 @@
           "docs/game-logic/Scenario-Timeline.md",
           "docs/game-logic/Economy-and-Production.md"
         ],
-        "polity_contexts": ["S09", "S10"],
+        "polity_contexts": [
+          "S09",
+          "S10"
+        ],
         "inhabitants": [
           "사거리 물수레",
           "삼호아파트 저녁 반장",
@@ -816,8 +1529,15 @@
         ],
         "livelihood": "불광천에서 물통을 퍼 북가좌사거리를 지나 삼호·아이파크 저층에 나르고, 거북골로에서는 응암·증산 쪽 사람만 낮에 통과시킨다. 주민센터는 물 순번과 사람 명부를 따로 적는다.",
         "production": {
-          "outputs": ["사거리 물통", "사람 낮 통과"],
-          "requires": ["물수레 노동", "거름천", "골목 조명"]
+          "outputs": [
+            "사거리 물통",
+            "사람 낮 통과"
+          ],
+          "requires": [
+            "물수레 노동",
+            "거름천",
+            "골목 조명"
+          ]
         },
         "shortages": [
           "거름천",
@@ -835,15 +1555,60 @@
           "label": "불광천 물길을 북가좌사거리 배수와 떼고 삼호아파트 저녁 물통만 채운다",
           "target_ref": "osm:relation:12746169",
           "costs": [
-            {"resource": "labor", "amount": 6, "unit": "shift"},
-            {"resource": "parts", "amount": 7, "unit": "점"}
+            {
+              "resource": "labor",
+              "amount": 6,
+              "unit": "shift"
+            },
+            {
+              "resource": "parts",
+              "amount": 7,
+              "unit": "점"
+            }
           ],
           "outcomes": [
-            {"kind": "supply", "effect": "삼호아파트 저녁 물통 열여섯 점을 사거리 배수와 섞지 않고 채운다."}
+            {
+              "kind": "supply",
+              "effect": "삼호아파트 저녁 물통 열여섯 점을 사거리 배수와 섞지 않고 채운다."
+            }
           ],
           "tradeoff": "떼는 노동은 거북골로 사람 안내에서 뺀다. 증산 쪽 낮 통과가 줄어 아이파크 저녁 물은 하루 미뤄진다."
         },
-        "uncertainty": "불광천·북가좌사거리·거북골로·삼호아파트 위치는 OSM 스냅샷이다. 물길 분리와 사거리 명부는 창작이며 하천 수질·아파트 급수를 태그에서 추론하지 않는다. 조회 기준 2026-09-12와 개막일은 별개다."
+        "uncertainty": "불광천·북가좌사거리·거북골로·삼호아파트 위치는 OSM 스냅샷이다. 물길 분리와 사거리 명부는 창작이며 하천 수질·아파트 급수를 태그에서 추론하지 않는다. 조회 기준 2026-09-12와 개막일은 별개다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:way:1158184228",
+            "name": "북가좌2동 주민센터",
+            "observed_use": "주민센터",
+            "river": "hangang-north",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+          },
+          {
+            "anchor_ref": "osm:way:551445636",
+            "name": "서울연가초등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:way:1145241756",
+            "name": "102동",
+            "observed_use": "아파트",
+            "river": "hangang-north",
+            "opening_use": "3층 이상만 거주. 1–2층은 침수 창고이거나 포기한다.",
+            "how": "3층 이상 출입, 1–2층 창호는 판자로 막는다."
+          },
+          {
+            "anchor_ref": "osm:relation:12746169",
+            "name": "불광천",
+            "observed_use": "공원·녹지",
+            "river": "hangang-north",
+            "opening_use": "얕은 경작과 우기 배수. 묘지로 쓰지 않는다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+          }
+        ]
       }
     }
   ]

@@ -88,7 +88,41 @@
         },
         "uncertainty": "무학초·무학봉길·단지 위치의 근거는 OSM 스냅샷(PBF 2026-09-04)과 경계 2026-07-01이다. 이 스냅샷에 배정된 역 객체가 없어 왕십리 대합실 접근은 행당1동을 통해 설정했다. 저수 용량·순번·인물 통제는 개막일 창작이다. 각 동의 장소 태그는 원본 스냅샷을 설명하며 현재 운영이나 시설의 물리적 부재를 뜻하지 않는다. 공유 경계 자체가 도로를 뜻하지 않으며, OSM이나 끓이기만으로 실제 수질을 보증할 수 없다.",
         "source_kind": "original-fiction",
-        "fictional_epoch": "opening-day"
+        "fictional_epoch": "opening-day",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:368898833",
+            "name": "왕십리2동 주민센터",
+            "observed_use": "주민센터",
+            "river": "hangang-north",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+          },
+          {
+            "anchor_ref": "osm:way:379962859",
+            "name": "서울무학초등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:way:1131914204",
+            "name": "지영할린마트",
+            "observed_use": "건물",
+            "river": "hangang-north",
+            "opening_use": "1층은 우기 창고, 거주와 배급은 제방 안쪽에서 한다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+          },
+          {
+            "anchor_ref": "osm:way:229028637",
+            "name": "풍림아이원아파트",
+            "observed_use": "공원·녹지",
+            "river": "hangang-north",
+            "opening_use": "얕은 경작과 우기 배수. 묘지로 쓰지 않는다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+          }
+        ]
       }
     },
     {
@@ -175,7 +209,41 @@
         },
         "uncertainty": "상왕십리·청계천·정릉천·병원 건물 태그는 OSM이며 병원 건물 위치는 관측 정보다. 붕괴 뒤 수술실 당직 시간, 수위 숫자, 들것 대수, 계약 만료 효과는 개막일 창작이다.",
         "source_kind": "original-fiction",
-        "fictional_epoch": "opening-day"
+        "fictional_epoch": "opening-day",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:5935738290",
+            "name": "상왕십리",
+            "observed_use": "역",
+            "river": "hangang-north",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+          },
+          {
+            "anchor_ref": "osm:way:612506390",
+            "name": "도선고등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:way:612506391",
+            "name": "서울숭신초등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:way:641456444",
+            "name": "왕십리도선동 주민센터",
+            "observed_use": "주민센터",
+            "river": "hangang-north",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+          }
+        ]
       }
     },
     {
@@ -262,7 +330,41 @@
         },
         "uncertainty": "마장 축산물시장·마장역 위치는 관측 정보이며, 계근량·얼음 재고·봉인 효력은 개막일 창작이다.",
         "source_kind": "original-fiction",
-        "fictional_epoch": "opening-day"
+        "fictional_epoch": "opening-day",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:6039313633",
+            "name": "마장",
+            "observed_use": "역",
+            "river": "hangang-north",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+          },
+          {
+            "anchor_ref": "osm:node:1836400116",
+            "name": "동마중학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:node:368898983",
+            "name": "마장동 주민센터",
+            "observed_use": "주민센터",
+            "river": "hangang-north",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+          },
+          {
+            "anchor_ref": "osm:node:7832838187",
+            "name": "중앙한의원",
+            "observed_use": "병원",
+            "river": "hangang-north",
+            "opening_use": "야전 의무와 탁수 격리. 1층 대기실은 쓰지 않는다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+          }
+        ]
       }
     },
     {
@@ -349,7 +451,41 @@
         },
         "uncertainty": "한양대·한양대학교의료원·한양대역·중랑천 위치는 OSM 관측 정보다. 발전기 용량과 수술 건수는 개막일 창작이다.",
         "source_kind": "original-fiction",
-        "fictional_epoch": "opening-day"
+        "fictional_epoch": "opening-day",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:5935554444",
+            "name": "한양대",
+            "observed_use": "역",
+            "river": "hangang-north",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+          },
+          {
+            "anchor_ref": "osm:node:368898976",
+            "name": "사근동 주민센터",
+            "observed_use": "주민센터",
+            "river": "hangang-north",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+          },
+          {
+            "anchor_ref": "osm:node:368928345",
+            "name": "서울사근초등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:way:172788730",
+            "name": "한양대학교사범대학부속중고등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          }
+        ]
       }
     },
     {
@@ -436,7 +572,41 @@
         },
         "uncertainty": "왕십리 역 표지·성동구청·10번 출구는 OSM이다. 차량 분류·도장·호송 순번은 개막일 창작이다.",
         "source_kind": "original-fiction",
-        "fictional_epoch": "opening-day"
+        "fictional_epoch": "opening-day",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:7916699664",
+            "name": "왕십리",
+            "observed_use": "역",
+            "river": "hangang-north",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+          },
+          {
+            "anchor_ref": "osm:node:7916699665",
+            "name": "왕십리",
+            "observed_use": "역",
+            "river": "hangang-north",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+          },
+          {
+            "anchor_ref": "osm:node:5225311374",
+            "name": "왕십리",
+            "observed_use": "역",
+            "river": "hangang-north",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+          },
+          {
+            "anchor_ref": "osm:node:2546485945",
+            "name": "사랑의 안과",
+            "observed_use": "병원",
+            "river": "hangang-north",
+            "opening_use": "야전 의무와 탁수 격리. 1층 대기실은 쓰지 않는다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+          }
+        ]
       }
     },
     {
@@ -522,7 +692,41 @@
         },
         "uncertainty": "행당역·대현산·행당대림 위치는 관측 정보다. 옥상 펌프 가동과 교대 명부는 개막일 창작이다.",
         "source_kind": "original-fiction",
-        "fictional_epoch": "opening-day"
+        "fictional_epoch": "opening-day",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:6039313637",
+            "name": "행당",
+            "observed_use": "역",
+            "river": "hangang-north",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+          },
+          {
+            "anchor_ref": "osm:node:368899526",
+            "name": "행당2동 주민센터",
+            "observed_use": "주민센터",
+            "river": "hangang-north",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+          },
+          {
+            "anchor_ref": "osm:node:368921902",
+            "name": "무학중학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:way:379966028",
+            "name": "무학여자고등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          }
+        ]
       }
     },
     {
@@ -603,7 +807,41 @@
         },
         "uncertainty": "응봉역·중랑천·독서당로·리버그린 위치는 OSM이다. 수위·물막이 효과·하역량은 개막일 창작이다.",
         "source_kind": "original-fiction",
-        "fictional_epoch": "opening-day"
+        "fictional_epoch": "opening-day",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:5273293497",
+            "name": "응봉",
+            "observed_use": "역",
+            "river": "hangang-north",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+          },
+          {
+            "anchor_ref": "osm:node:5529686464",
+            "name": "응봉동 주민센터",
+            "observed_use": "주민센터",
+            "river": "hangang-north",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+          },
+          {
+            "anchor_ref": "osm:way:781731992",
+            "name": "응봉초등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:way:883291544",
+            "name": "광희중학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          }
+        ]
       }
     },
     {
@@ -690,7 +928,41 @@
         },
         "uncertainty": "주민센터·벽산단지·공영주차장·독서당로57길 위치는 OSM이다. 이 스냅샷에 배정된 역 객체가 없어 역 접근은 이 동 내부 역을 전제로 하지 않는다. 저수량과 교대는 개막일 창작이다.",
         "source_kind": "original-fiction",
-        "fictional_epoch": "opening-day"
+        "fictional_epoch": "opening-day",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:368899660",
+            "name": "금호1가동 주민센터",
+            "observed_use": "주민센터",
+            "river": "hangang-north",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+          },
+          {
+            "anchor_ref": "osm:node:368929829",
+            "name": "금북초등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:way:420089387",
+            "name": "금호여자중학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:way:807015122",
+            "name": "금북초등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          }
+        ]
       }
     },
     {
@@ -777,7 +1049,41 @@
         },
         "uncertainty": "신금호역·주민센터·푸르지오·독서당로 위치는 OSM이다. 옥상 수량과 봉인 효과는 개막일 창작이다.",
         "source_kind": "original-fiction",
-        "fictional_epoch": "opening-day"
+        "fictional_epoch": "opening-day",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:6039313638",
+            "name": "신금호",
+            "observed_use": "역",
+            "river": "hangang-north",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+          },
+          {
+            "anchor_ref": "osm:node:368928044",
+            "name": "서울금호초등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:node:368929737",
+            "name": "서울금호초등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:way:266255486",
+            "name": "금호초등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          }
+        ]
       }
     },
     {
@@ -863,7 +1169,41 @@
         },
         "uncertainty": "금호역·응봉산·금옥초 위치는 OSM이다. 샘 수량과 여과 효과는 개막일 창작이다.",
         "source_kind": "original-fiction",
-        "fictional_epoch": "opening-day"
+        "fictional_epoch": "opening-day",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:6033544412",
+            "name": "금호",
+            "observed_use": "역",
+            "river": "hangang-north",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+          },
+          {
+            "anchor_ref": "osm:node:368899657",
+            "name": "금호4가동 주민센터",
+            "observed_use": "주민센터",
+            "river": "hangang-north",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+          },
+          {
+            "anchor_ref": "osm:node:368930664",
+            "name": "서울옥수초등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:way:1153446523",
+            "name": "금호4가동주민센터",
+            "observed_use": "주민센터",
+            "river": "hangang-north",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+          }
+        ]
       }
     },
     {
@@ -951,7 +1291,41 @@
         },
         "uncertainty": "옥수 역 표지·매봉·미타사입구 위치는 OSM이다. 선석·우회 허가는 개막일 창작이다.",
         "source_kind": "original-fiction",
-        "fictional_epoch": "opening-day"
+        "fictional_epoch": "opening-day",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:11164853360",
+            "name": "옥수",
+            "observed_use": "역",
+            "river": "hangang-north",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+          },
+          {
+            "anchor_ref": "osm:node:5933896994",
+            "name": "옥수",
+            "observed_use": "역",
+            "river": "hangang-north",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+          },
+          {
+            "anchor_ref": "osm:node:368922061",
+            "name": "옥정중학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:node:414685115",
+            "name": "옥정중학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          }
+        ]
       }
     },
     {
@@ -1038,7 +1412,41 @@
         },
         "uncertainty": "뚝도아리수·서울숲역·성수대교분기점 위치는 관측 정보다. 펌프 가동률·출입 금지·송수 줄은 개막일 창작이다.",
         "source_kind": "original-fiction",
-        "fictional_epoch": "opening-day"
+        "fictional_epoch": "opening-day",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:6312484234",
+            "name": "서울숲",
+            "observed_use": "역",
+            "river": "hangang-north",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+          },
+          {
+            "anchor_ref": "osm:node:368899452",
+            "name": "성수1가1동 주민센터",
+            "observed_use": "주민센터",
+            "river": "hangang-north",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+          },
+          {
+            "anchor_ref": "osm:way:417339941",
+            "name": "경일중고등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:way:417377415",
+            "name": "서울경일초등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          }
+        ]
       }
     },
     {
@@ -1124,7 +1532,41 @@
         },
         "uncertainty": "뚝섬역·체육문화센터·우성아파트·상원삼거리 위치는 OSM이다. 숙영 인원과 마대 수량은 개막일 창작이다.",
         "source_kind": "original-fiction",
-        "fictional_epoch": "opening-day"
+        "fictional_epoch": "opening-day",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:12969391184",
+            "name": "뚝섬",
+            "observed_use": "역",
+            "river": "hangang-north",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+          },
+          {
+            "anchor_ref": "osm:node:368651947",
+            "name": "한국방송통신대학교 서울지역대학",
+            "observed_use": "대학",
+            "river": "hangang-north",
+            "opening_use": "기록 사본 공방. 실험동은 봉인하거나 부품을 분해한다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+          },
+          {
+            "anchor_ref": "osm:node:368899594",
+            "name": "성수1가2동 주민센터",
+            "observed_use": "주민센터",
+            "river": "hangang-north",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+          },
+          {
+            "anchor_ref": "osm:way:417329984",
+            "name": "성수중고등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          }
+        ]
       }
     },
     {
@@ -1211,7 +1653,41 @@
         },
         "uncertainty": "한강·영동대교 북단·시그마밸리 태그는 OSM이다. 이 스냅샷에 배정된 역 객체가 없어 이 동의 운반 설정은 내부 역을 전제로 하지 않는다. 창가 전력과 출고량은 개막일 창작이다.",
         "source_kind": "original-fiction",
-        "fictional_epoch": "opening-day"
+        "fictional_epoch": "opening-day",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:368899034",
+            "name": "성수2가1동 주민센터",
+            "observed_use": "주민센터",
+            "river": "hangang-north",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+          },
+          {
+            "anchor_ref": "osm:node:368922333",
+            "name": "성원중학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:node:10234919785",
+            "name": "Tom N Toms",
+            "observed_use": "상점",
+            "river": "hangang-north",
+            "opening_use": "공방이거나 셔터 봉인. 간판 상호는 장부에 올리지 않는다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+          },
+          {
+            "anchor_ref": "osm:node:10234919787",
+            "name": "KB국민은행",
+            "observed_use": "건물",
+            "river": "hangang-north",
+            "opening_use": "1층은 우기 창고, 거주와 배급은 제방 안쪽에서 한다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+          }
+        ]
       }
     },
     {
@@ -1299,7 +1775,41 @@
         },
         "uncertainty": "성수역·4번 출구·성수초·아차산로 위치는 OSM이다. 출고량·연서·금고는 개막일 창작이다.",
         "source_kind": "original-fiction",
-        "fictional_epoch": "opening-day"
+        "fictional_epoch": "opening-day",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:5935554450",
+            "name": "성수",
+            "observed_use": "역",
+            "river": "hangang-north",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+          },
+          {
+            "anchor_ref": "osm:node:368899591",
+            "name": "성수2가3동 주민센터",
+            "observed_use": "주민센터",
+            "river": "hangang-north",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+          },
+          {
+            "anchor_ref": "osm:way:1000976770",
+            "name": "연세 바로 척 병원",
+            "observed_use": "병원",
+            "river": "hangang-north",
+            "opening_use": "야전 의무와 탁수 격리. 1층 대기실은 쓰지 않는다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+          },
+          {
+            "anchor_ref": "osm:way:473267061",
+            "name": "서울성수초등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          }
+        ]
       }
     },
     {
@@ -1386,7 +1896,41 @@
         },
         "uncertainty": "군자교·송원초·아이파크·페인트 점포 위치는 OSM이다. 이 스냅샷에 배정된 역 객체가 없어 군자발 보수차는 광진 배차 구간의 설정으로 다룬다. 교량 통제와 페인트 재고는 개막일 창작이다.",
         "source_kind": "original-fiction",
-        "fictional_epoch": "opening-day"
+        "fictional_epoch": "opening-day",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:368899020",
+            "name": "송정동 주민센터",
+            "observed_use": "주민센터",
+            "river": "hangang-north",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+          },
+          {
+            "anchor_ref": "osm:way:781727746",
+            "name": "서울송원초등학교",
+            "observed_use": "학교",
+            "river": "hangang-north",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+          },
+          {
+            "anchor_ref": "osm:node:10246830578",
+            "name": "KCC페인트 대성아이디",
+            "observed_use": "상점",
+            "river": "hangang-north",
+            "opening_use": "공방이거나 셔터 봉인. 간판 상호는 장부에 올리지 않는다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+          },
+          {
+            "anchor_ref": "osm:node:10246830590",
+            "name": "스카이환경개발",
+            "observed_use": "건물",
+            "river": "hangang-north",
+            "opening_use": "1층은 우기 창고, 거주와 배급은 제방 안쪽에서 한다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+          }
+        ]
       }
     },
     {
@@ -1474,7 +2018,41 @@
         },
         "uncertainty": "용답·답십리·신답 역 표지·푸르미르 시장·천호대로·중랑천 위치는 OSM이다. 봉인 효력·수위 숫자는 개막일 창작이다.",
         "source_kind": "original-fiction",
-        "fictional_epoch": "opening-day"
+        "fictional_epoch": "opening-day",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:2246104056",
+            "name": "용답",
+            "observed_use": "역",
+            "river": "hangang-north",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+          },
+          {
+            "anchor_ref": "osm:node:6039313619",
+            "name": "답십리",
+            "observed_use": "역",
+            "river": "hangang-north",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+          },
+          {
+            "anchor_ref": "osm:node:6049150843",
+            "name": "신답",
+            "observed_use": "역",
+            "river": "hangang-north",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+          },
+          {
+            "anchor_ref": "osm:node:11788439152",
+            "name": "연세가정의원",
+            "observed_use": "병원",
+            "river": "hangang-north",
+            "opening_use": "야전 의무와 탁수 격리. 1층 대기실은 쓰지 않는다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+          }
+        ]
       }
     }
   ]

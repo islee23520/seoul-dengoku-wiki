@@ -16,6 +16,8 @@ class ContentAssemblyTests(unittest.TestCase):
             "production": {"outputs": ["급수"], "requires": ["부품"]}, "shortages": ["부품"],
             "hazard": {"kind": "supply", "description": "밸브 고장"},
             "opening_state": "교대 협의", "connections": "이웃과 부품 교환", "uncertainty": "창작 상태",
+            "buildings": [{"anchor_ref": "osm:node:1", "name": "점검소", "observed_use": "주민센터",
+                            "river": "inland", "opening_use": "배급 창구", "how": "1층만 연다"}],
             "action": {"id": "region-1-check", "label": "점검", "target_ref": "osm:node:1",
                        "costs": [{"resource": "labor", "amount": 2, "unit": "shift"}],
                        "outcomes": [{"kind": "service", "effect": "급수 재개"}], "tradeoff": "운반 교대 감소"}

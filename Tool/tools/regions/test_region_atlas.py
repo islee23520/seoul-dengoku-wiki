@@ -109,6 +109,9 @@ class ContentTests(unittest.TestCase):
                 "opening_state": "급수 교대를 협의 중이다.",
                 "connections": "이웃 구역과 부품 운송을 협의한다.",
                 "uncertainty": "재난 이후의 상태와 수치는 창작이다.",
+                "buildings": [{"anchor_ref": "osm:node:42", "name": "저수조 옆 주민센터",
+                               "observed_use": "주민센터", "river": "inland",
+                               "opening_use": "배급 창구", "how": "1층만 연다"}],
                 "action": {"id": "1111053000-valve", "label": "밸브 점검",
                            "target_ref": "osm:node:42",
                            "costs": [{"resource": "labor", "amount": 2, "unit": "shift"}],
@@ -136,6 +139,14 @@ class ContentTests(unittest.TestCase):
     def test_observed_fact_cannot_masquerade_as_fictional_opening_state(self):
         self.region["content"]["source_kind"] = "observed-source"
         self.assertTrue(content_errors(self.region))
+
+    def test_missing_buildings_rejected(self):
+        del self.region["content"]["buildings"]
+        self.assertTrue(any(e.startswith("invalid_buildings:") for e in content_errors(self.region)))
+
+    def test_building_anchor_must_be_local(self):
+        self.region["content"]["buildings"][0]["anchor_ref"] = "osm:node:999"
+        self.assertTrue(any(e.startswith("invalid_building_anchor:") for e in content_errors(self.region)))
 
     def test_calendar_date_is_not_a_fictional_epoch(self):
         self.region["content"]["fictional_epoch"] = "2026-09-12"

@@ -76,6 +76,22 @@ def content_errors(region):
             if not canonical.is_relative_to(repo) or not canonical.is_file():
                 errors.append("invalid_canon_reference:" + region["id"])
     local_anchors = {a["source_object_id"] for a in region.get("profile", {}).get("anchors", [])}
+    buildings = content.get("buildings")
+    if not isinstance(buildings, list) or not buildings or len(buildings) > 4:
+        errors.append("invalid_buildings:" + region["id"])
+    else:
+        allowed_river = {"hangang-north", "hangang-south", "tributary", "inland"}
+        for building in buildings:
+            if not isinstance(building, dict):
+                errors.append("invalid_building_row:" + region["id"])
+                continue
+            for key in ("anchor_ref", "name", "observed_use", "river", "opening_use", "how"):
+                if not text_value(building.get(key)):
+                    errors.append("missing_building_" + key + ":" + region["id"])
+            if building.get("river") not in allowed_river:
+                errors.append("invalid_building_river:" + region["id"])
+            if building.get("anchor_ref") not in local_anchors:
+                errors.append("invalid_building_anchor:" + region["id"])
     refs = content.get("anchor_refs", [])
     if not isinstance(refs, list) or not refs or any(ref not in local_anchors for ref in refs):
         errors.append("invalid_local_content_anchor:" + region["id"])
