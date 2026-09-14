@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>서울과 지하철 레이어 — 설계 문서</title>
+<style>
+:root { --ink:#1a1714; --paper:#f4efe4; --line:#c9b896; --metro:#1d4e89; --mute:#6b6256; }
+body { margin:0; font:16px/1.55 "Apple SD Gothic Neo","Noto Sans KR",sans-serif; color:var(--ink); background:var(--paper); }
+main { max-width:880px; margin:0 auto; padding:36px 24px 80px; }
+.kicker { letter-spacing:.14em; font-size:11px; color:var(--mute); }
+h1 { font-family:"Song Myung","Apple Myungjo",serif; font-size:32px; margin:8px 0 12px; }
+section { margin:28px 0; padding:18px; background:#fffdf8; border:1px solid var(--line); }
+h2 { font-size:18px; margin:0 0 8px; }
+.layer { font-size:13px; color:var(--mute); margin:0 0 12px; }
+.src { font-size:12px; color:var(--mute); }
+li { margin:6px 0; }
+</style>
+</head>
+<body>
+<main>
+<p class="kicker">MDA + one-page · SQLite · 세계</p>
+<p><a href="../" style="color:var(--metro)">설계 목차</a></p>
+<h1>서울과 지하철 레이어</h1>
+<p>지상·지하 다층 그래프 · designers</p>
+<section>
+<h2>한 장</h2>
+<p class="layer">각 칸은 그 요소가 무엇인지.</p>
+<h3>그래프</h3><p>서울은 평면 행정구역 지도가 아니라 서로 다른 위험과 기능을 가진 층의 그래프입니다.</p><p class="src">docs/game-logic/World-and-Subway-Layers.md</p>
+<h3>진실</h3><p>세계 진실 그래프는 역, 구역과 연결을 모두 저장합니다.</p><p class="src">docs/game-logic/World-and-Subway-Layers.md</p>
+<h3>연결</h3><p>연결은 삭제되지 않고 상태가 바뀝니다.</p><p class="src">docs/game-logic/World-and-Subway-Layers.md</p>
+</section>
+
+<section>
+<h2>Mechanics</h2>
+<p class="layer">규칙·동사·수치. 시스템이 가진 데이터와 알고리즘.</p>
+<ul><li><b>역</b> — `Station`: 역 사회와 전략 거점 <span class="src">docs/game-logic/World-and-Subway-Layers.md</span></li>
+<li><b>층</b> — `StationLayer`: 대합실, 승강장, 심층 구역 <span class="src">docs/game-logic/World-and-Subway-Layers.md</span></li>
+<li><b>지상</b> — `SurfaceDistrict`: 역과 연결된 지상 권역 <span class="src">docs/game-logic/World-and-Subway-Layers.md</span></li>
+<li><b>터널</b> — `TunnelSegment`: 역 사이의 이동 구간 <span class="src">docs/game-logic/World-and-Subway-Layers.md</span></li>
+<li><b>수직</b> — `VerticalConnector`: 계단, 승강기, 환기구 <span class="src">docs/game-logic/World-and-Subway-Layers.md</span></li>
+<li><b>환승</b> — `Interchange`: 노선 사이의 환승 연결 <span class="src">docs/game-logic/World-and-Subway-Layers.md</span></li></ul>
+</section>
+<section>
+<h2>Dynamics</h2>
+<p class="layer">그 규칙이 플레이어 입력과 만나 시간에 따라 만드는 런타임.</p>
+<ul><li><b>동적 연결</b> — 정상, 위험, 통제, 봉쇄, 침수, 붕괴, 임시 복구 상태와 원인을 기록합니다. <span class="src">docs/game-logic/World-and-Subway-Layers.md</span></li>
+<li><b>화면</b> — 화면은 그중 현재 필요한 노선과 선택한 역의 상세만 보여 줍니다. <span class="src">docs/game-logic/World-and-Subway-Layers.md</span></li></ul>
+</section>
+<section>
+<h2>Aesthetics</h2>
+<p class="layer">플레이어가 느끼는 반응. Sensation, Fantasy, Narrative, Challenge, Fellowship, Discovery, Expression, Submission.</p>
+<ul><li><b>Discovery</b> — 지하철망을 지상·지하 다층 전략 그래프로 다루는 <span class="src">Concept.md</span></li>
+<li><b>Fantasy</b> — 자원 수집, 태양광, 장거리 관측 <span class="src">docs/game-logic/World-and-Subway-Layers.md</span></li></ul>
+</section>
+</main>
+</body>
+</html>

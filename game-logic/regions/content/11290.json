@@ -1,0 +1,1248 @@
+{
+  "schema": "seoul-region-content.v1",
+  "district_id": "gu:11290",
+  "district_name": "성북구",
+  "as_of": "2026-09-12",
+  "regions": [
+    {
+      "region_id": "region:1129052500",
+      "name": "성북동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "사찰 강의실의 겨울 준비",
+        "summary": "길상사 불교대학 건물을 공동 학습실로 쓰는 주민들은 피난민에게 난방과 기록 복구 기술을 가르친다. 땔감 창고를 넓히자는 숙영조와 강의실을 지키려는 교사들이 같은 공간을 요구한다.",
+        "anchor_refs": [
+          "osm:node:11917197000"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "성북동 주민 작업반",
+          "기초 교육과 숙영 담당자"
+        ],
+        "livelihood": "교사와 숙영조가 수업 시간과 잠자리를 번갈아 배정한다.",
+        "production": {
+          "outputs": [
+            "기초 교육과 숙영"
+          ],
+          "requires": [
+            "장작과 교사 교대"
+          ]
+        },
+        "shortages": [
+          "장작과 교사 교대의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "fire",
+          "description": "임시 난로를 늘리면 종이 기록과 침구가 함께 놓인 실내의 화재 위험이 커진다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 성북동 주민들은 다음 선택의 비용을 협의한다: 별도 난방 구획을 마련한다.",
+        "connections": "삼선동·동선동·돈암2동·정릉2동·정릉3동과 경계를 맞대지만 성북동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1129052500-local-choice",
+          "label": "별도 난방 구획을 마련한다",
+          "target_ref": "osm:node:11917197000",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 4,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "수업을 유지하면서 숙영실 난방을 분리한다."
+            }
+          ],
+          "tradeoff": "보수에 쓴 장작 운반 인력 때문에 당일 연료 비축이 줄어든다."
+        },
+        "uncertainty": "길상사 불교대학의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1129055500",
+      "name": "삼선동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "구청 마당의 대표 회의",
+        "summary": "성북구청 마당에서는 각 골목 대표가 공동 배급 명단을 맞춘다. 새로 온 가구를 즉시 등록할지 기존 주민의 확인을 기다릴지에 따라 오늘 배급받을 사람이 달라진다.",
+        "anchor_refs": [
+          "osm:node:1968205556"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "삼선동 주민 작업반",
+          "배급 명부와 분쟁 조정 담당자"
+        ],
+        "livelihood": "기록 담당자와 주민 대표가 대조 가능한 임시 가구 명부를 만든다.",
+        "production": {
+          "outputs": [
+            "배급 명부와 분쟁 조정"
+          ],
+          "requires": [
+            "종이와 확인 인력"
+          ]
+        },
+        "shortages": [
+          "종이와 확인 인력의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "governance",
+          "description": "중복 등록을 막겠다는 이유로 확인되지 않은 가구를 제외하면 구호가 필요한 사람이 대기열에 남는다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 삼선동 주민들은 다음 선택의 비용을 협의한다: 임시 등록과 사후 확인을 분리한다.",
+        "connections": "성북동·동선동·안암동·보문동과 경계를 맞대지만 삼선동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1129055500-local-choice",
+          "label": "임시 등록과 사후 확인을 분리한다",
+          "target_ref": "osm:node:1968205556",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 3,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "서류가 없는 가구도 임시 배급을 받고 다음 교대에 확인한다."
+            }
+          ],
+          "tradeoff": "확인 인력이 배급 창구에서 빠져 일반 민원 처리가 늦어진다."
+        },
+        "uncertainty": "성북구청의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1129057500",
+      "name": "동선동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "성신여대입구 수선 장터",
+        "summary": "성신여대입구 주변의 수선공들은 낡은 옷과 가방을 고쳐 통행객에게 판다. 역 통로에 좌판을 더 놓으면 장사는 늘지만 들것이 빠져나갈 폭이 줄어든다.",
+        "anchor_refs": [
+          "osm:node:6734894972"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "동선동 주민 작업반",
+          "의류 수선 담당자"
+        ],
+        "livelihood": "수선공과 통로 안내조가 좌판 크기와 운영 시간을 협의한다.",
+        "production": {
+          "outputs": [
+            "의류 수선"
+          ],
+          "requires": [
+            "천과 바늘"
+          ]
+        },
+        "shortages": [
+          "천과 바늘의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "access",
+          "description": "좌판이 출입구를 막으면 짐 운반자와 응급 이송조가 같은 좁은 길에서 멈춘다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 동선동 주민들은 다음 선택의 비용을 협의한다: 통로를 비우고 교대 좌판제를 연다.",
+        "connections": "성북동·삼선동·돈암1동·돈암2동·안암동과 경계를 맞대지만 동선동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1129057500-local-choice",
+          "label": "통로를 비우고 교대 좌판제를 연다",
+          "target_ref": "osm:node:6734894972",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 3,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "수선 장터를 유지하며 응급 통로를 확보한다."
+            }
+          ],
+          "tradeoff": "동시에 영업할 수 있는 좌판 수가 줄어 일부 상인의 하루 수입이 감소한다."
+        },
+        "uncertainty": "성신여대입구의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1129058000",
+      "name": "돈암1동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "고명 교실의 식량 계량",
+        "summary": "고명경영고등학교에 모인 배급조는 남은 곡물의 무게를 가구별로 나눈다. 인근 단지의 공동 취사 요청을 받으면 교실 숙영자 몫을 먼저 떼어 둘지 결정해야 한다.",
+        "anchor_refs": [
+          "osm:node:368621766"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "돈암1동 주민 작업반",
+          "식량 계량과 공동 취사 담당자"
+        ],
+        "livelihood": "계량 담당자와 공동 취사조가 재고와 예약분을 함께 기록한다.",
+        "production": {
+          "outputs": [
+            "식량 계량과 공동 취사"
+          ],
+          "requires": [
+            "곡물과 연료"
+          ]
+        },
+        "shortages": [
+          "곡물과 연료의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "supply",
+          "description": "같은 곡물을 숙영 배급과 외부 취사 주문에 중복 예약하면 저녁 식사가 부족해진다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 돈암1동 주민들은 다음 선택의 비용을 협의한다: 재고를 공개하고 예약분을 분리한다.",
+        "connections": "동선동·돈암2동·정릉1동·길음1동·길음2동·종암동과 경계를 맞대지만 돈암1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1129058000-local-choice",
+          "label": "재고를 공개하고 예약분을 분리한다",
+          "target_ref": "osm:node:368621766",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 2,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "가구 배급과 취사 주문이 같은 재고를 두 번 쓰지 않는다."
+            }
+          ],
+          "tradeoff": "계량이 끝날 때까지 외부 취사 주문의 출발이 늦어진다."
+        },
+        "uncertainty": "고명경영고등학교의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1129059000",
+      "name": "돈암2동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "매원초 돌봄 교대",
+        "summary": "매원초등학교를 돌봄 공간으로 쓰는 주민들은 아이를 맡겨야 물 운반과 보수 일을 나갈 수 있다. 돌봄 교대를 늘리면 현장 작업자는 늘지만 교사들의 휴식이 줄어든다.",
+        "anchor_refs": [
+          "osm:node:368928286"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "돈암2동 주민 작업반",
+          "공동 돌봄 담당자"
+        ],
+        "livelihood": "돌봄 담당자와 운반조가 보호자 일정에 맞춰 교실을 운영한다.",
+        "production": {
+          "outputs": [
+            "공동 돌봄"
+          ],
+          "requires": [
+            "돌봄 교대와 식량"
+          ]
+        },
+        "shortages": [
+          "돌봄 교대와 식량의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "supply",
+          "description": "장시간 돌봄을 소수 인력에 맡기면 야간 보호가 비는 시간이 생긴다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 돈암2동 주민들은 다음 선택의 비용을 협의한다: 보호자 순환 교대를 편성한다.",
+        "connections": "성북동·동선동·돈암1동·정릉1동·정릉2동과 경계를 맞대지만 돈암2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1129059000-local-choice",
+          "label": "보호자 순환 교대를 편성한다",
+          "target_ref": "osm:node:368928286",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 4,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "돌봄 공백을 줄이고 운반 작업에 나갈 시간을 배정한다."
+            }
+          ],
+          "tradeoff": "새 교대에 참여한 가구는 그날 개인 수리 일을 미뤄야 한다."
+        },
+        "uncertainty": "매원초등학교의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1129060000",
+      "name": "안암동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "응급실 앞 부품 우선권",
+        "summary": "안암병원 응급의료센터로 표시된 건물 앞에서 의무조가 조명과 세척 설비를 점검한다. 수리공들은 같은 부품으로 인근 숙영지 펌프도 고칠 수 있어 우선순위를 두고 의견이 갈린다.",
+        "anchor_refs": [
+          "osm:node:5235757246"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "안암동 주민 작업반",
+          "응급 처치 지원 담당자"
+        ],
+        "livelihood": "의무조와 기술자가 응급 처치 공간의 최소 설비를 유지한다.",
+        "production": {
+          "outputs": [
+            "응급 처치 지원"
+          ],
+          "requires": [
+            "소독 물자와 전기 부품"
+          ]
+        },
+        "shortages": [
+          "소독 물자와 전기 부품의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "power",
+          "description": "예비 전력이 끊기면 야간 처치가 멈추지만 펌프 보수를 미루면 세척수도 부족해진다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 안암동 주민들은 다음 선택의 비용을 협의한다: 응급 조명부터 수리한다.",
+        "connections": "삼선동·동선동·보문동·종암동과 경계를 맞대지만 안암동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1129060000-local-choice",
+          "label": "응급 조명부터 수리한다",
+          "target_ref": "osm:node:5235757246",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 5,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "야간 처치에 필요한 조명 회로를 복구한다."
+            }
+          ],
+          "tradeoff": "숙영지 펌프 수리가 다음 교대로 넘어가 물 운반 부담이 늘어난다."
+        },
+        "uncertainty": "고려대의료원 안암병원 응급의료센터의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1129061000",
+      "name": "보문동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "보문 통로의 인계표",
+        "summary": "보문역을 오가는 짐꾼은 다른 운반조에게 상자를 넘길 때 봉인과 무게를 확인한다. 확인을 생략하면 통로는 빨라지지만 분실 책임을 가릴 수 없다.",
+        "anchor_refs": [
+          "osm:node:5747397250"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "보문동 주민 작업반",
+          "화물 인계 담당자"
+        ],
+        "livelihood": "인계 서기와 짐꾼이 상자 단위의 수령 기록을 맞춘다.",
+        "production": {
+          "outputs": [
+            "화물 인계"
+          ],
+          "requires": [
+            "저울과 기록 교대"
+          ]
+        },
+        "shortages": [
+          "저울과 기록 교대의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "governance",
+          "description": "서명 없는 인계가 쌓이면 분실 비용을 통행객에게 일괄 청구하는 갈등이 생긴다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 보문동 주민들은 다음 선택의 비용을 협의한다: 공동 저울과 인계 당번을 둔다.",
+        "connections": "삼선동·안암동과 경계를 맞대지만 보문동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1129061000-local-choice",
+          "label": "공동 저울과 인계 당번을 둔다",
+          "target_ref": "osm:node:5747397250",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 3,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "분실 책임을 상자별 기록으로 확인할 수 있다."
+            }
+          ],
+          "tradeoff": "무게를 재는 동안 출근 통행 대기 시간이 늘어난다."
+        },
+        "uncertainty": "보문의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1129062000",
+      "name": "정릉1동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "숭덕초 보행 안내",
+        "summary": "숭덕초등학교에 모인 주민들은 기복이 큰 주거지의 안전한 보행 구간을 확인한다. 난간을 고칠 목재를 들것 제작에도 써야 해서 운반조와 의무조가 수량을 나눈다.",
+        "anchor_refs": [
+          "osm:way:415667222"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "정릉1동 주민 작업반",
+          "보행로 보수 담당자"
+        ],
+        "livelihood": "주민 점검반이 난간과 계단 상태를 기록하고 보수한다.",
+        "production": {
+          "outputs": [
+            "보행로 보수"
+          ],
+          "requires": [
+            "목재와 작업 교대"
+          ]
+        },
+        "shortages": [
+          "목재와 작업 교대의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "slope",
+          "description": "손상된 난간을 붙잡고 무거운 짐을 나르면 사람이 넘어질 때 뒤의 행렬도 멈춘다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 정릉1동 주민들은 다음 선택의 비용을 협의한다: 통행량이 많은 난간을 먼저 보수한다.",
+        "connections": "돈암1동·돈암2동·정릉2동·정릉4동·길음1동과 경계를 맞대지만 정릉1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1129062000-local-choice",
+          "label": "통행량이 많은 난간을 먼저 보수한다",
+          "target_ref": "osm:way:415667222",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 5,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "확인된 생활 보행 구간의 추락 위험을 줄인다."
+            }
+          ],
+          "tradeoff": "새 들것 제작량이 줄어 의무 이송조가 기존 장비를 더 오래 써야 한다."
+        },
+        "uncertainty": "서울숭덕초등학교의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1129063000",
+      "name": "정릉2동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "노인 돌봄의 이동 시간",
+        "summary": "성북참노인전문병원 건물을 돌봄 거점으로 쓰는 공동체는 움직이기 어려운 주민의 식사와 진료를 조정한다. 정릉역 쪽으로 한 번에 이송할지 방문 돌봄을 늘릴지가 쟁점이다.",
+        "anchor_refs": [
+          "osm:node:4650466098"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "정릉2동 주민 작업반",
+          "방문 돌봄 담당자"
+        ],
+        "livelihood": "돌봄 인력과 운반조가 거동이 어려운 가구를 방문한다.",
+        "production": {
+          "outputs": [
+            "방문 돌봄"
+          ],
+          "requires": [
+            "의약품과 운반 시간"
+          ]
+        },
+        "shortages": [
+          "의약품과 운반 시간의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "access",
+          "description": "모든 주민을 역 쪽으로 옮기려 하면 계단 구간의 이송 인력이 부족해진다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 정릉2동 주민들은 다음 선택의 비용을 협의한다: 방문 돌봄 교대를 늘린다.",
+        "connections": "성북동·돈암2동·정릉1동·정릉3동·정릉4동과 경계를 맞대지만 정릉2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1129063000-local-choice",
+          "label": "방문 돌봄 교대를 늘린다",
+          "target_ref": "osm:node:4650466098",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 4,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "장거리 이동 없이 가구별 처치와 식사를 지원한다."
+            }
+          ],
+          "tradeoff": "거점에 남는 인력이 줄어 새 환자를 받을 수 있는 수가 감소한다."
+        },
+        "uncertainty": "성북참노인전문병원의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1129064000",
+      "name": "정릉3동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "국민대 실습 장비 공유",
+        "summary": "국민대학교 부지와 접한 지역에서 기술자들은 남은 실습 장비를 빌려 생활 도구를 수리한다. 주변 숙영조는 장비실을 잠자리로 바꾸려 하지만 정비조는 작업 공간을 지키려 한다.",
+        "anchor_refs": [
+          "osm:way:173018858"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "정릉3동 주민 작업반",
+          "공구 수리와 기술 교육 담당자"
+        ],
+        "livelihood": "기술자와 도제들이 생활 공구 수리 시간을 예약한다.",
+        "production": {
+          "outputs": [
+            "공구 수리와 기술 교육"
+          ],
+          "requires": [
+            "소형 부품과 전력"
+          ]
+        },
+        "shortages": [
+          "소형 부품과 전력의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "governance",
+          "description": "숙영 수요가 장비실을 채우면 다음 날 수리할 공구를 꺼낼 수 없어진다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 정릉3동 주민들은 다음 선택의 비용을 협의한다: 장비실을 유지하고 인접 교실을 숙영에 배정한다.",
+        "connections": "성북동·정릉2동·정릉4동과 경계를 맞대지만 정릉3동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1129064000-local-choice",
+          "label": "장비실을 유지하고 인접 교실을 숙영에 배정한다",
+          "target_ref": "osm:way:173018858",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 4,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "생활 공구 수리가 중단되지 않는다."
+            }
+          ],
+          "tradeoff": "숙영 공간 확장에 쓸 교실을 비워야 해 교육 시간이 줄어든다."
+        },
+        "uncertainty": "국민대학교의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1129065000",
+      "name": "정릉4동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "보국문 들머리의 기상 판단",
+        "summary": "북한산보국문역 주변 안내조는 산지로 향하는 보행자의 준비 상태를 확인한다. 높은 기복이 관측되는 지역이라 같은 날에도 계곡과 능선의 통행 조건을 따로 살펴야 한다.",
+        "anchor_refs": [
+          "osm:node:5774833137"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "정릉4동 주민 작업반",
+          "산지 통행 안내 담당자"
+        ],
+        "livelihood": "산악 안내자와 귀환 확인조가 출발·복귀 기록을 관리한다.",
+        "production": {
+          "outputs": [
+            "산지 통행 안내"
+          ],
+          "requires": [
+            "무전기 전력과 방한 물자"
+          ]
+        },
+        "shortages": [
+          "무전기 전력과 방한 물자의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "slope",
+          "description": "젖은 사면을 평지 일정으로 통과하려 하면 귀환 시간 전에 체력과 조명이 떨어진다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 정릉4동 주민들은 다음 선택의 비용을 협의한다: 현장 확인 전 능선 출발을 늦춘다.",
+        "connections": "정릉1동·정릉2동·정릉3동·길음1동과 경계를 맞대지만 정릉4동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1129065000-local-choice",
+          "label": "현장 확인 전 능선 출발을 늦춘다",
+          "target_ref": "osm:node:5774833137",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 3,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "확인되지 않은 사면에 인원을 보내는 일을 줄인다."
+            }
+          ],
+          "tradeoff": "출발이 늦어진 운반조는 당일 도시 물자 인계 시각을 놓칠 수 있다."
+        },
+        "uncertainty": "북한산보국문의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1129066000",
+      "name": "길음1동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "길음역 공동 짐 보관",
+        "summary": "길음역 주변 주민들은 잠시 맡길 짐을 한곳에 모아 통로를 비운다. 보관료 대신 경비 교대를 받을지 물자로 받을지를 두고 자경조와 상인이 다툰다.",
+        "anchor_refs": [
+          "osm:node:6036160319"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "길음1동 주민 작업반",
+          "임시 짐 보관 담당자"
+        ],
+        "livelihood": "짐 보관 담당자와 자경조가 보관증과 반환 기록을 운영한다.",
+        "production": {
+          "outputs": [
+            "임시 짐 보관"
+          ],
+          "requires": [
+            "잠금 부품과 경비 교대"
+          ]
+        },
+        "shortages": [
+          "잠금 부품과 경비 교대의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "governance",
+          "description": "보관증 없이 짐을 맡기면 반환 때 물건의 주인을 가리기 어려워진다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 길음1동 주민들은 다음 선택의 비용을 협의한다: 노동 교대로 보관료를 대신할 수 있게 한다.",
+        "connections": "돈암1동·정릉1동·정릉4동·길음2동과 경계를 맞대지만 길음1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1129066000-local-choice",
+          "label": "노동 교대로 보관료를 대신할 수 있게 한다",
+          "target_ref": "osm:node:6036160319",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 2,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "물자가 부족한 통행객도 짐을 맡길 수 있다."
+            }
+          ],
+          "tradeoff": "현금성 물자 수입이 줄어 보관함 수리가 늦어진다."
+        },
+        "uncertainty": "길음의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1129068500",
+      "name": "길음2동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "어린이 진료의 공동 대기실",
+        "summary": "우리아이들병원으로 표시된 건물 앞에 보호자와 아이가 모이자 주민들은 대기와 배급을 한 장소에서 처리하려 한다. 돌봄조는 혼잡을 줄이기 위해 시간대를 나누자고 제안한다.",
+        "anchor_refs": [
+          "osm:node:7558553290"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "길음2동 주민 작업반",
+          "진료 대기 지원 담당자"
+        ],
+        "livelihood": "돌봄조가 보호자 확인과 방문 순서를 조정한다.",
+        "production": {
+          "outputs": [
+            "진료 대기 지원"
+          ],
+          "requires": [
+            "세척 물자와 안내 교대"
+          ]
+        },
+        "shortages": [
+          "세척 물자와 안내 교대의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "fire",
+          "description": "좁은 실내에 취사용 화기와 대기 인원이 함께 몰리면 대피가 어려워진다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 길음2동 주민들은 다음 선택의 비용을 협의한다: 취사와 대기 장소를 분리한다.",
+        "connections": "돈암1동·길음1동·종암동·월곡1동과 경계를 맞대지만 길음2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1129068500-local-choice",
+          "label": "취사와 대기 장소를 분리한다",
+          "target_ref": "osm:node:7558553290",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 3,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "진료 대기 인원의 대피 통로를 확보한다."
+            }
+          ],
+          "tradeoff": "식사를 옮기는 운반 일이 추가돼 배급 시간이 길어진다."
+        },
+        "uncertainty": "우리아이들병원의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1129070500",
+      "name": "종암동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "종암 수리 주문의 분쟁",
+        "summary": "종암동주민센터를 공동 접수처로 쓰는 주민들은 집수리와 공공 보수 주문의 순서를 공개한다. 큰 단지는 부품을 먼저 제공할 수 있지만 작은 골목은 긴급한 누수를 해결하지 못한다.",
+        "anchor_refs": [
+          "osm:node:368899953"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "종암동 주민 작업반",
+          "생활 수리 배정 담당자"
+        ],
+        "livelihood": "접수 서기와 수리공이 위험도에 따라 주문을 조정한다.",
+        "production": {
+          "outputs": [
+            "생활 수리 배정"
+          ],
+          "requires": [
+            "부품과 숙련 교대"
+          ]
+        },
+        "shortages": [
+          "부품과 숙련 교대의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "governance",
+          "description": "물자를 많이 내는 가구만 우선하면 긴급한 골목 누수가 방치된다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 종암동 주민들은 다음 선택의 비용을 협의한다: 위험도 우선 배정표를 공개한다.",
+        "connections": "돈암1동·안암동·길음2동·월곡1동·월곡2동과 경계를 맞대지만 종암동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1129070500-local-choice",
+          "label": "위험도 우선 배정표를 공개한다",
+          "target_ref": "osm:node:368899953",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 2,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "작은 가구의 긴급 수리도 같은 기준으로 접수한다."
+            }
+          ],
+          "tradeoff": "대량 부품을 제공한 단지의 비긴급 공사가 늦어져 협상이 필요해진다."
+        },
+        "uncertainty": "종암동주민센터의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1129071500",
+      "name": "월곡1동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "기술고 작업대의 안전 교육",
+        "summary": "서울도시과학기술고등학교의 작업대를 쓰려는 초보 수리공이 늘었다. 도제 교육을 생략하면 당장 생산은 늘지만 잘못 만든 장비가 주거지로 나갈 수 있다.",
+        "anchor_refs": [
+          "osm:way:548932209"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "월곡1동 주민 작업반",
+          "수리 기술 교육 담당자"
+        ],
+        "livelihood": "숙련공이 생활 장비를 수리하며 도제에게 안전 점검을 가르친다.",
+        "production": {
+          "outputs": [
+            "수리 기술 교육"
+          ],
+          "requires": [
+            "보호구와 숙련 시간"
+          ]
+        },
+        "shortages": [
+          "보호구와 숙련 시간의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "fire",
+          "description": "익숙하지 않은 전기 수리가 반복되면 충전 설비에 단락과 과열이 생긴다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 월곡1동 주민들은 다음 선택의 비용을 협의한다: 출고 전에 공동 안전 점검을 실시한다.",
+        "connections": "길음2동·종암동·월곡2동·장위1동과 경계를 맞대지만 월곡1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1129071500-local-choice",
+          "label": "출고 전에 공동 안전 점검을 실시한다",
+          "target_ref": "osm:way:548932209",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 4,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "불량 수리 장비가 주민에게 전달되는 일을 줄인다."
+            }
+          ],
+          "tradeoff": "검사에 쓴 시간만큼 당일 수리 완료 건수가 줄어든다."
+        },
+        "uncertainty": "서울도시과학기술고등학교의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1129072500",
+      "name": "월곡2동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "연구원 자료실의 공개 범위",
+        "summary": "한국과학기술연구원으로 표시된 부지와 접한 지역에서 주민들은 남은 기술 문서를 생활 수리에 활용하려 한다. 문서 보관조는 원본 훼손을 막기 위해 열람과 복제를 구분한다.",
+        "anchor_refs": [
+          "osm:way:330548322"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "월곡2동 주민 작업반",
+          "수리 문서 열람 담당자"
+        ],
+        "livelihood": "자료 보관자와 기술 번역자가 필요한 수리 지식을 정리한다.",
+        "production": {
+          "outputs": [
+            "수리 문서 열람"
+          ],
+          "requires": [
+            "종이와 기록 보관 물자"
+          ]
+        },
+        "shortages": [
+          "종이와 기록 보관 물자의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "governance",
+          "description": "원본을 무제한 반출하면 다음 수리조가 필요한 도면을 찾지 못한다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 월곡2동 주민들은 다음 선택의 비용을 협의한다: 원본 보관과 현장용 사본 배포를 분리한다.",
+        "connections": "종암동·월곡1동·장위1동·장위2동·석관동과 경계를 맞대지만 월곡2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1129072500-local-choice",
+          "label": "원본 보관과 현장용 사본 배포를 분리한다",
+          "target_ref": "osm:way:330548322",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 3,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "여러 수리조가 같은 도면을 잃지 않고 활용한다."
+            }
+          ],
+          "tradeoff": "사본 제작에 전력을 써 자료실의 난방 시간이 줄어든다."
+        },
+        "uncertainty": "한국과학기술연구원의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1129076000",
+      "name": "장위1동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "장위 골목의 폐재 분류",
+        "summary": "장위1동 주민센터 앞에서는 집을 고치고 남은 목재와 철물을 공동으로 모은다. 바로 나눠 주자는 주민과 상태를 검사한 뒤 배정하자는 수리공의 의견이 다르다.",
+        "anchor_refs": [
+          "osm:node:368899266"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "장위1동 주민 작업반",
+          "재사용 건축 부재 담당자"
+        ],
+        "livelihood": "회수조와 수리공이 재사용 가능한 폐재를 분류한다.",
+        "production": {
+          "outputs": [
+            "재사용 건축 부재"
+          ],
+          "requires": [
+            "운반 교대와 검사 도구"
+          ]
+        },
+        "shortages": [
+          "운반 교대와 검사 도구의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "supply",
+          "description": "젖거나 부식된 부재를 서둘러 쓰면 새 보수가 다시 무너질 수 있다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 장위1동 주민들은 다음 선택의 비용을 협의한다: 구조 보수용 부재부터 검사한다.",
+        "connections": "월곡1동·월곡2동·장위2동·장위3동과 경계를 맞대지만 장위1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1129076000-local-choice",
+          "label": "구조 보수용 부재부터 검사한다",
+          "target_ref": "osm:node:368899266",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 4,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "위험한 폐재가 난간과 지붕 받침에 쓰이지 않게 한다."
+            }
+          ],
+          "tradeoff": "분류가 끝날 때까지 가구별 작은 수리가 대기한다."
+        },
+        "uncertainty": "장위1동 주민센터의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1129077000",
+      "name": "장위2동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "재개발 부지의 통행 협약",
+        "summary": "장위10주택재개발로 표시된 구역과 접한 주민들은 잔해 반출과 생활 통행을 함께 해결해야 한다. 길을 빨리 내자는 운반조와 거주 흔적을 확인하자는 기록조가 반출 속도를 두고 다툰다.",
+        "anchor_refs": [
+          "osm:relation:13902748"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "장위2동 주민 작업반",
+          "잔해 정리와 임시 통행 담당자"
+        ],
+        "livelihood": "잔해 정리조가 안전 구획을 표시하고 주민 물품을 분리 보관한다.",
+        "production": {
+          "outputs": [
+            "잔해 정리와 임시 통행"
+          ],
+          "requires": [
+            "표지 자재와 노동"
+          ]
+        },
+        "shortages": [
+          "표지 자재와 노동의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "access",
+          "description": "확인 없이 잔해를 밀어내면 주민 소유 물품과 통행 표지가 함께 사라진다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 장위2동 주민들은 다음 선택의 비용을 협의한다: 반출 전 물품 확인 구획을 둔다.",
+        "connections": "월곡2동·장위1동·장위3동·석관동과 경계를 맞대지만 장위2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1129077000-local-choice",
+          "label": "반출 전 물품 확인 구획을 둔다",
+          "target_ref": "osm:relation:13902748",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 5,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "거주 흔적과 회수 물품을 보존하며 통로를 정리한다."
+            }
+          ],
+          "tradeoff": "당일 확보할 수 있는 통행 폭이 줄어 화물 반출이 늦어진다."
+        },
+        "uncertainty": "장위10주택재개발의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1129078000",
+      "name": "장위3동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "장월초 공동 취사의 연료",
+        "summary": "장월초등학교를 공동 취사 공간으로 쓰는 가구들은 남은 연료를 난방과 조리에 나눠 쓴다. 음식을 한 번에 만들어 배분하면 연료는 절약되지만 일하는 사람의 식사 시각을 맞추기 어렵다.",
+        "anchor_refs": [
+          "osm:way:643766109"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "장위3동 주민 작업반",
+          "공동 식사 담당자"
+        ],
+        "livelihood": "취사조와 배달조가 교대별 식사를 배분한다.",
+        "production": {
+          "outputs": [
+            "공동 식사"
+          ],
+          "requires": [
+            "곡물과 취사 연료"
+          ]
+        },
+        "shortages": [
+          "곡물과 취사 연료의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "supply",
+          "description": "취사 시간을 줄이는 과정에서 늦게 돌아온 작업자의 몫이 빠질 수 있다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 장위3동 주민들은 다음 선택의 비용을 협의한다: 교대 인원용 보온 배급을 따로 둔다.",
+        "connections": "장위1동·장위2동·석관동과 경계를 맞대지만 장위3동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1129078000-local-choice",
+          "label": "교대 인원용 보온 배급을 따로 둔다",
+          "target_ref": "osm:way:643766109",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 3,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "귀환이 늦은 작업자도 예약한 식사를 받는다."
+            }
+          ],
+          "tradeoff": "보온에 쓴 연료만큼 숙영실 난방 시간이 짧아진다."
+        },
+        "uncertainty": "장월초등학교의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1129081000",
+      "name": "석관동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "예술학교 창고의 재료",
+        "summary": "한국예술종합학교 석관동캠퍼스의 남은 재료는 표지 제작과 생활 수리에 쓰일 수 있다. 보관자들은 작품과 기록을 지키려 하고 주민 수리조는 당장 필요한 목재를 요구한다.",
+        "anchor_refs": [
+          "osm:way:330535350"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S10"
+        ],
+        "inhabitants": [
+          "석관동 주민 작업반",
+          "통행 표지와 생활 수선 담당자"
+        ],
+        "livelihood": "제작자와 보관자가 재료 사용 범위를 합의한다.",
+        "production": {
+          "outputs": [
+            "통행 표지와 생활 수선"
+          ],
+          "requires": [
+            "목재와 도료"
+          ]
+        },
+        "shortages": [
+          "목재와 도료의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "governance",
+          "description": "급한 수리라는 이유로 기록물을 연료나 부재로 사용하면 되돌릴 수 없다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 석관동 주민들은 다음 선택의 비용을 협의한다: 기록 보존 목록을 만든 뒤 잉여 재료를 나눈다.",
+        "connections": "월곡2동·장위2동·장위3동과 경계를 맞대지만 석관동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1129081000-local-choice",
+          "label": "기록 보존 목록을 만든 뒤 잉여 재료를 나눈다",
+          "target_ref": "osm:way:330535350",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 3,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "중요 기록을 남기고 확인된 재료만 수리에 사용한다."
+            }
+          ],
+          "tradeoff": "분류 동안 돌곶이 쪽 표지 보수 주문이 늦어진다."
+        },
+        "uncertainty": "한국예술종합학교 석관동캠퍼스의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    }
+  ]
+}

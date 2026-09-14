@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>캐릭터 미술 방향 — 설계 문서</title>
+<style>
+:root { --ink:#1a1714; --paper:#f4efe4; --line:#c9b896; --metro:#1d4e89; --mute:#6b6256; }
+body { margin:0; font:16px/1.55 "Apple SD Gothic Neo","Noto Sans KR",sans-serif; color:var(--ink); background:var(--paper); }
+main { max-width:880px; margin:0 auto; padding:36px 24px 80px; }
+.kicker { letter-spacing:.14em; font-size:11px; color:var(--mute); }
+h1 { font-family:"Song Myung","Apple Myungjo",serif; font-size:32px; margin:8px 0 12px; }
+section { margin:28px 0; padding:18px; background:#fffdf8; border:1px solid var(--line); }
+h2 { font-size:18px; margin:0 0 8px; }
+.layer { font-size:13px; color:var(--mute); margin:0 0 12px; }
+.src { font-size:12px; color:var(--mute); }
+li { margin:6px 0; }
+</style>
+</head>
+<body>
+<main>
+<p class="kicker">MDA + one-page · SQLite · 구현</p>
+<p><a href="../" style="color:var(--metro)">설계 목차</a></p>
+<h1>캐릭터 미술 방향</h1>
+<p>TOS식 SD, 2.5등신 · art</p>
+<section>
+<h2>한 장</h2>
+<p class="layer">각 칸은 그 요소가 무엇인지.</p>
+<h3>비율</h3><p>2.5등신 SD 비율</p><p class="src">docs/game-logic/Character-Art-Direction.md</p>
+<h3>하이브리드</h3><p>POC 사람 표현은 오드랜드 Spine이다.</p><p class="src">Intent.md</p>
+</section>
+
+<section>
+<h2>Mechanics</h2>
+<p class="layer">규칙·동사·수치. 시스템이 가진 데이터와 알고리즘.</p>
+<ul><li><b>머리</b> — 큰 머리와 분명한 얼굴 면 <span class="src">docs/game-logic/Character-Art-Direction.md</span></li>
+<li><b>방향</b> — 동, 서, 남, 북 네 방향 전용 표현 <span class="src">docs/game-logic/Character-Art-Direction.md</span></li></ul>
+</section>
+<section>
+<h2>Dynamics</h2>
+<p class="layer">그 규칙이 플레이어 입력과 만나 시간에 따라 만드는 런타임.</p>
+<ul><li><b>결합</b> — 전신 전술 모델은 오드랜드 Spine이다. <span class="src">docs/game-logic/Character-Art-Direction.md</span></li>
+<li><b>계약</b> — Spine 에셋은 POC 사람 표현으로 쓴다. <span class="src">Intent.md</span></li></ul>
+</section>
+<section>
+<h2>Aesthetics</h2>
+<p class="layer">플레이어가 느끼는 반응. Sensation, Fantasy, Narrative, Challenge, Fellowship, Discovery, Expression, Submission.</p>
+<ul><li><b>Sensation</b> — 젖은 콘크리트, 꺼진 안내판, 비상 전원, 녹슨 선로, 손때 묻은 노선도 <span class="src">Design.md</span></li>
+<li><b>Fantasy</b> — POC 사람 표현은 오드랜드 Spine이다. <span class="src">Intent.md</span></li></ul>
+</section>
+</main>
+</body>
+</html>

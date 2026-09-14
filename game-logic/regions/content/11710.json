@@ -1,0 +1,1682 @@
+{
+  "schema": "seoul-region-content.v1",
+  "district_id": "gu:11710",
+  "district_name": "송파구",
+  "as_of": "2026-09-12",
+  "regions": [
+    {
+      "region_id": "region:1171051000",
+      "name": "풍납1동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "한강변 배급 보관",
+        "summary": "풍납1동의 창작 배급조는 물가에 놓은 재고를 더 높은 보관 구획으로 옮기려 하지만 오늘 가구 배달도 처리해야 한다.",
+        "anchor_refs": [
+          "osm:relation:3769500"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S15"
+        ],
+        "inhabitants": [
+          "풍납1동 주민 작업반",
+          "배급 재고 보전 담당자"
+        ],
+        "livelihood": "운반조가 침수 위험 재고를 먼저 옮긴다.",
+        "production": {
+          "outputs": [
+            "배급 재고 보전"
+          ],
+          "requires": [
+            "운반 장비와 덮개"
+          ]
+        },
+        "shortages": [
+          "운반 장비와 덮개의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "water",
+          "description": "낮은 곳의 비축이 젖으면 여러 가구의 당일 식량을 잃는다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 풍납1동 주민들은 다음 선택의 비용을 협의한다: 필수 재고 이전을 먼저 한다.",
+        "connections": "풍납2동과 경계를 맞대지만 풍납1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1171051000-local-choice",
+          "label": "필수 재고 이전을 먼저 한다",
+          "target_ref": "osm:relation:3769500",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 4,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "주민 소비용 물자를 위험 구획에서 보호한다."
+            }
+          ],
+          "tradeoff": "비긴급 가구 배달 시간이 늦어진다."
+        },
+        "uncertainty": "한강의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1171052000",
+      "name": "풍납2동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "풍납중 대피 순서",
+        "summary": "풍납중학교를 창작 대피 집결지로 쓰는 주민들은 가족과 돌봄 가구가 흩어지지 않게 인계 명단을 만든다.",
+        "anchor_refs": [
+          "osm:way:418851260"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S15"
+        ],
+        "inhabitants": [
+          "풍납2동 주민 작업반",
+          "대피 인계 담당자"
+        ],
+        "livelihood": "안내조가 가구별 동행자를 확인한다.",
+        "production": {
+          "outputs": [
+            "대피 인계"
+          ],
+          "requires": [
+            "기록지와 안내 교대"
+          ]
+        },
+        "shortages": [
+          "기록지와 안내 교대의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "access",
+          "description": "짐부터 옮기면 늦게 온 가구의 인원이 기록에서 빠진다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 풍납2동 주민들은 다음 선택의 비용을 협의한다: 사람 인계를 먼저 확인한다.",
+        "connections": "풍납1동·오륜동·잠실4동과 경계를 맞대지만 풍납2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1171052000-local-choice",
+          "label": "사람 인계를 먼저 확인한다",
+          "target_ref": "osm:way:418851260",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 3,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "가구가 함께 이동했는지 확인한다."
+            }
+          ],
+          "tradeoff": "개인 짐 반입이 다음 순서로 밀린다."
+        },
+        "uncertainty": "풍납중학교의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1171053100",
+      "name": "거여1동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "인공지능고의 장비 수리",
+        "summary": "서울인공지능고등학교 작업 공간의 창작 기술조는 남은 전자 장비를 생활 연락 도구로 고치려 한다.",
+        "anchor_refs": [
+          "osm:way:418649440"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S15"
+        ],
+        "inhabitants": [
+          "거여1동 주민 작업반",
+          "연락 도구 수리 담당자"
+        ],
+        "livelihood": "기술자와 도제가 재사용 가능한 장비를 검사한다.",
+        "production": {
+          "outputs": [
+            "연락 도구 수리"
+          ],
+          "requires": [
+            "소형 부품과 전력"
+          ]
+        },
+        "shortages": [
+          "소형 부품과 전력의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "power",
+          "description": "검사하지 않은 충전 장비를 함께 쓰면 다른 도구도 손상될 수 있다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 거여1동 주민들은 다음 선택의 비용을 협의한다: 공용 충전 장비를 먼저 검사한다.",
+        "connections": "거여2동·마천2동·오금동·가락2동·장지동·위례동과 경계를 맞대지만 거여1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1171053100-local-choice",
+          "label": "공용 충전 장비를 먼저 검사한다",
+          "target_ref": "osm:way:418649440",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 4,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "생활 연락에 필요한 장비를 안전하게 돌려쓴다."
+            }
+          ],
+          "tradeoff": "개인 기기 수리 주문은 늦어진다."
+        },
+        "uncertainty": "서울인공지능고등학교의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1171053200",
+      "name": "거여2동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "거원초 공동 식사",
+        "summary": "거원초등학교의 창작 취사조는 가구별 곡물을 모아 식사를 준비하지만 교대마다 돌아오는 시간이 다르다.",
+        "anchor_refs": [
+          "osm:way:693284516"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S15"
+        ],
+        "inhabitants": [
+          "거여2동 주민 작업반",
+          "공동 취사 담당자"
+        ],
+        "livelihood": "취사조와 가구 대표가 식사 몫을 예약한다.",
+        "production": {
+          "outputs": [
+            "공동 취사"
+          ],
+          "requires": [
+            "식량과 연료"
+          ]
+        },
+        "shortages": [
+          "식량과 연료의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "supply",
+          "description": "정해진 시각에 오지 못한 가구의 몫이 일반 배분에 섞일 수 있다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 거여2동 주민들은 다음 선택의 비용을 협의한다: 귀환이 늦은 교대의 식사를 따로 남긴다.",
+        "connections": "거여1동·마천1동·마천2동·위례동과 경계를 맞대지만 거여2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1171053200-local-choice",
+          "label": "귀환이 늦은 교대의 식사를 따로 남긴다",
+          "target_ref": "osm:way:693284516",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 3,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "늦게 돌아온 작업자도 배급을 받는다."
+            }
+          ],
+          "tradeoff": "보온에 쓸 연료만큼 숙영 난방 시간이 짧아진다."
+        },
+        "uncertainty": "서울거원초등학교의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1171054000",
+      "name": "마천1동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "마천역 운반 도구",
+        "summary": "마천역 주변 창작 짐꾼들은 손수레의 고장 난 바퀴를 함께 고치려 하지만 교환할 부품도 부족하다.",
+        "anchor_refs": [
+          "osm:node:6039313042"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S15"
+        ],
+        "inhabitants": [
+          "마천1동 주민 작업반",
+          "생활 운반 장비 수선 담당자"
+        ],
+        "livelihood": "수리공과 운반조가 공용 수레 상태를 확인한다.",
+        "production": {
+          "outputs": [
+            "생활 운반 장비 수선"
+          ],
+          "requires": [
+            "바퀴 부품과 공구"
+          ]
+        },
+        "shortages": [
+          "바퀴 부품과 공구의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "supply",
+          "description": "고장 수레를 계속 쓰면 배급 인계가 중간에서 멈춘다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 마천1동 주민들은 다음 선택의 비용을 협의한다: 공용 배급 수레부터 수리한다.",
+        "connections": "거여2동·마천2동·위례동과 경계를 맞대지만 마천1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1171054000-local-choice",
+          "label": "공용 배급 수레부터 수리한다",
+          "target_ref": "osm:node:6039313042",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 4,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "필수 생활 물자 운반을 유지한다."
+            }
+          ],
+          "tradeoff": "개인 운송 주문은 다음 교대로 밀린다."
+        },
+        "uncertainty": "마천의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1171055000",
+      "name": "마천2동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "마천시장 상자 반환",
+        "summary": "마천시장 상인들은 빈 상자를 공동 회수해 배급 운반에 쓰려 하지만 반환 담당자가 없다.",
+        "anchor_refs": [
+          "osm:way:695573540"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S15"
+        ],
+        "inhabitants": [
+          "마천2동 주민 작업반",
+          "포장재 회수 담당자"
+        ],
+        "livelihood": "상인과 짐꾼이 포장재 인계표를 운영한다.",
+        "production": {
+          "outputs": [
+            "포장재 회수"
+          ],
+          "requires": [
+            "끈과 기록지"
+          ]
+        },
+        "shortages": [
+          "끈과 기록지의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "governance",
+          "description": "반환 책임이 없으면 다음 출하에 쓸 상자가 사라진다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 마천2동 주민들은 다음 선택의 비용을 협의한다: 공동 상자 반환대를 연다.",
+        "connections": "거여1동·거여2동·마천1동·오금동과 경계를 맞대지만 마천2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1171055000-local-choice",
+          "label": "공동 상자 반환대를 연다",
+          "target_ref": "osm:way:695573540",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 2,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "배급 출하용 상자를 다시 모은다."
+            }
+          ],
+          "tradeoff": "시장 좌판 일부를 반환 구획으로 비워야 한다."
+        },
+        "uncertainty": "마천시장의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1171056100",
+      "name": "방이1동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "방산고 도제 실습",
+        "summary": "방산고등학교의 창작 실습조는 생활 수리 교육을 이어가려 하지만 긴급 현장 차출로 수업이 자주 끊긴다.",
+        "anchor_refs": [
+          "osm:way:169800632"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S15"
+        ],
+        "inhabitants": [
+          "방이1동 주민 작업반",
+          "생활 수리 교육 담당자"
+        ],
+        "livelihood": "교사와 수리 반장이 실습 교대를 예약한다.",
+        "production": {
+          "outputs": [
+            "생활 수리 교육"
+          ],
+          "requires": [
+            "공구와 보호구"
+          ]
+        },
+        "shortages": [
+          "공구와 보호구의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "supply",
+          "description": "교육을 미루면 숙련자에게 주문이 계속 몰린다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 방이1동 주민들은 다음 선택의 비용을 협의한다: 도제 실습 시간을 작업표에 남긴다.",
+        "connections": "방이2동·오륜동·오금동·송파2동·가락본동과 경계를 맞대지만 방이1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1171056100-local-choice",
+          "label": "도제 실습 시간을 작업표에 남긴다",
+          "target_ref": "osm:way:169800632",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 3,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "새 작업자가 기본 보수를 맡을 수 있다."
+            }
+          ],
+          "tradeoff": "숙련공의 현장 주문 처리 시간이 줄어든다."
+        },
+        "uncertainty": "방산고등학교의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1171056200",
+      "name": "방이2동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "송파나루의 생활 연락",
+        "summary": "송파나루역 창작 연락조는 배급 일정 변경을 가구에게 전달하려 하지만 서로 다른 게시가 남아 있다.",
+        "anchor_refs": [
+          "osm:node:6102706785"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S15"
+        ],
+        "inhabitants": [
+          "방이2동 주민 작업반",
+          "생활 일정 안내 담당자"
+        ],
+        "livelihood": "연락 당번이 확인된 시간표를 대조한다.",
+        "production": {
+          "outputs": [
+            "생활 일정 안내"
+          ],
+          "requires": [
+            "종이와 통신 전력"
+          ]
+        },
+        "shortages": [
+          "종이와 통신 전력의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "access",
+          "description": "오래된 게시를 믿은 주민이 닫힌 배급처로 향한다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 방이2동 주민들은 다음 선택의 비용을 협의한다: 배급 시간표를 같은 교대에 갱신한다.",
+        "connections": "방이1동·오륜동·송파1동·잠실4동·잠실6동과 경계를 맞대지만 방이2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1171056200-local-choice",
+          "label": "배급 시간표를 같은 교대에 갱신한다",
+          "target_ref": "osm:node:6102706785",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 2,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "주민이 확인된 일정으로 물자를 받으러 간다."
+            }
+          ],
+          "tradeoff": "연락조가 일반 화물 검수에서 빠진다."
+        },
+        "uncertainty": "송파나루의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1171056600",
+      "name": "오륜동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "공원 집결의 물 사용",
+        "summary": "올림픽공원역 주변 창작 집결조는 넓은 대기 공간을 운영하면서 식사와 세척용 물을 나눠 쓴다.",
+        "anchor_refs": [
+          "osm:node:6039313054"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S15"
+        ],
+        "inhabitants": [
+          "오륜동 주민 작업반",
+          "집결지 운영 담당자"
+        ],
+        "livelihood": "취사조와 안내조가 용도별 물 배정을 기록한다.",
+        "production": {
+          "outputs": [
+            "집결지 운영"
+          ],
+          "requires": [
+            "물과 안내 교대"
+          ]
+        },
+        "shortages": [
+          "물과 안내 교대의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "water",
+          "description": "넓은 장소라고 수용 인원을 무제한 늘리면 필수 물이 먼저 부족하다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 오륜동 주민들은 다음 선택의 비용을 협의한다: 확보한 물량에 맞춰 집결 시간을 나눈다.",
+        "connections": "풍납2동·방이1동·방이2동·오금동·잠실4동과 경계를 맞대지만 오륜동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1171056600-local-choice",
+          "label": "확보한 물량에 맞춰 집결 시간을 나눈다",
+          "target_ref": "osm:node:6039313054",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 3,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "집결 인원의 필수 소비를 배정 가능한 범위로 유지한다."
+            }
+          ],
+          "tradeoff": "늦게 도착한 단체는 다음 인계를 기다려야 한다."
+        },
+        "uncertainty": "올림픽공원의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1171057000",
+      "name": "오금동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "개롱역의 수령 확인",
+        "summary": "개롱역 주변 창작 배급조는 가구가 여러 인계처에서 중복 수령하지 않도록 표를 맞춘다.",
+        "anchor_refs": [
+          "osm:node:6039313048"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S15"
+        ],
+        "inhabitants": [
+          "오금동 주민 작업반",
+          "배급 수령 관리 담당자"
+        ],
+        "livelihood": "수령 서기와 가구 대표가 전달 여부를 확인한다.",
+        "production": {
+          "outputs": [
+            "배급 수령 관리"
+          ],
+          "requires": [
+            "기록지와 안내 인력"
+          ]
+        },
+        "shortages": [
+          "기록지와 안내 인력의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "governance",
+          "description": "중복 수령을 막겠다며 확인되지 않은 가구를 모두 제외하면 필수 소비를 놓친다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 오금동 주민들은 다음 선택의 비용을 협의한다: 임시 수령과 사후 확인을 분리한다.",
+        "connections": "거여1동·마천2동·방이1동·오륜동·가락본동·가락2동과 경계를 맞대지만 오금동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1171057000-local-choice",
+          "label": "임시 수령과 사후 확인을 분리한다",
+          "target_ref": "osm:node:6039313048",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 2,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "서류가 부족한 가구도 배급을 받을 수 있다."
+            }
+          ],
+          "tradeoff": "추가 확인 업무로 일반 접수가 늦어진다."
+        },
+        "uncertainty": "개롱의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1171058000",
+      "name": "송파1동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "문화회관의 공동 돌봄",
+        "summary": "송파여성문화회관 공간의 창작 돌봄조는 보호자가 운반 일을 나가는 동안 아이와 노약자의 머무를 자리를 운영한다. 송파1동의 돌봄 선택은 교대 인력을 더 넣는 것보다 보호자 인계 시각을 배급 대기와 조정하는 일이다.",
+        "anchor_refs": [
+          "osm:node:4658416351"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S15"
+        ],
+        "inhabitants": [
+          "송파1동 주민 작업반",
+          "가구 돌봄 담당자"
+        ],
+        "livelihood": "돌봄 담당자와 보호자가 교대를 나눈다.",
+        "production": {
+          "outputs": [
+            "가구 돌봄"
+          ],
+          "requires": [
+            "식량과 돌봄 인력"
+          ]
+        },
+        "shortages": [
+          "식량과 돌봄 인력의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "supply",
+          "description": "같은 담당자가 긴 교대를 맡으면 야간 보호가 비는 시간이 생긴다. 보호자 인계 업무를 배정하지 않으면 주민이 선택의 결과를 확인하기 어렵다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 송파1동 주민들은 다음 선택의 비용을 협의한다: 보호자 순환 돌봄을 편성한다.",
+        "connections": "방이2동·송파2동·석촌동·잠실6동과 경계를 맞대지만 송파1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1171058000-local-choice",
+          "label": "송파1동 보호자 인계 시간을 이웃 배급 시간과 맞춘다",
+          "target_ref": "osm:node:4658416351",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 3,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "보호자가 배급과 돌봄 인계를 한 번의 이동으로 처리하도록 시간을 나눈다."
+            }
+          ],
+          "tradeoff": "정해진 시각 밖에 온 보호자는 다른 작업을 미루고 다시 방문해야 한다."
+        },
+        "uncertainty": "송파여성문화회관의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1171059000",
+      "name": "송파2동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "가락고 공동 부재",
+        "summary": "가락고등학교 마당의 창작 수리조는 회수 목재를 지붕 보수와 운반 상자에 나누어 쓴다.",
+        "anchor_refs": [
+          "osm:way:169803364"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S15"
+        ],
+        "inhabitants": [
+          "송파2동 주민 작업반",
+          "생활 보수 부재 담당자"
+        ],
+        "livelihood": "부재 검사자와 주민 대표가 용도를 정한다.",
+        "production": {
+          "outputs": [
+            "생활 보수 부재"
+          ],
+          "requires": [
+            "목재와 검사 공구"
+          ]
+        },
+        "shortages": [
+          "목재와 검사 공구의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "supply",
+          "description": "약한 목재를 구조 보수에 쓰면 수리 뒤에도 사고 위험이 남는다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 송파2동 주민들은 다음 선택의 비용을 협의한다: 지붕 받침용 부재부터 검사한다.",
+        "connections": "방이1동·송파1동·석촌동·가락본동·가락1동과 경계를 맞대지만 송파2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1171059000-local-choice",
+          "label": "지붕 받침용 부재부터 검사한다",
+          "target_ref": "osm:way:169803364",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 4,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "위험한 부재를 구조 보수에서 제외한다."
+            }
+          ],
+          "tradeoff": "새 운반 상자를 만드는 일정이 늦어진다."
+        },
+        "uncertainty": "가락 고등학교의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1171060000",
+      "name": "석촌동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "수리센터의 공용 장비",
+        "summary": "Hyundai Repair Center로 표시된 장소의 창작 수리공들은 남은 장비를 생활 수레에 맞춰 사용하려 한다.",
+        "anchor_refs": [
+          "osm:way:471124448"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S15"
+        ],
+        "inhabitants": [
+          "석촌동 주민 작업반",
+          "수레 보수 담당자"
+        ],
+        "livelihood": "수리공과 도제가 부품 호환을 확인한다.",
+        "production": {
+          "outputs": [
+            "수레 보수"
+          ],
+          "requires": [
+            "부품과 공구"
+          ]
+        },
+        "shortages": [
+          "부품과 공구의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "supply",
+          "description": "크기만 비슷한 부품을 끼우면 운반 중 고장이 반복된다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 석촌동 주민들은 다음 선택의 비용을 협의한다: 공용 수레 부품의 규격을 확인한다.",
+        "connections": "송파1동·송파2동·삼전동·가락1동·잠실3동과 경계를 맞대지만 석촌동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1171060000-local-choice",
+          "label": "공용 수레 부품의 규격을 확인한다",
+          "target_ref": "osm:way:471124448",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 3,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "반환 장비가 실제 생활 운반에 맞도록 수리한다."
+            }
+          ],
+          "tradeoff": "검사에 시간이 걸려 단기 수리량이 줄어든다."
+        },
+        "uncertainty": "Hyundai Repair Center의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1171061000",
+      "name": "삼전동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "의무 거점의 배달 예약",
+        "summary": "강남수병원 건물의 창작 의무조는 주변 가구 방문과 거점 처치 지원을 함께 배정한다.",
+        "anchor_refs": [
+          "osm:node:368741527"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S15"
+        ],
+        "inhabitants": [
+          "삼전동 주민 작업반",
+          "가구 의무 지원 담당자"
+        ],
+        "livelihood": "의무 보조자와 운반조가 방문 일정을 조정한다.",
+        "production": {
+          "outputs": [
+            "가구 의무 지원"
+          ],
+          "requires": [
+            "의약품과 이동 시간"
+          ]
+        },
+        "shortages": [
+          "의약품과 이동 시간의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "access",
+          "description": "거점에 올 수 없는 주민은 방문 요청이 기록되지 않으면 대기에서 빠진다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 삼전동 주민들은 다음 선택의 비용을 협의한다: 방문 요청을 배급 인계 때 함께 받는다.",
+        "connections": "석촌동·가락1동·잠실본동·잠실3동과 경계를 맞대지만 삼전동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1171061000-local-choice",
+          "label": "방문 요청을 배급 인계 때 함께 받는다",
+          "target_ref": "osm:node:368741527",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 3,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "거동이 어려운 가구의 필요를 확인한다."
+            }
+          ],
+          "tradeoff": "일반 물품 인계 업무가 느려진다."
+        },
+        "uncertainty": "강남수병원의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1171062000",
+      "name": "가락본동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "경찰병원 주변 처치 물자",
+        "summary": "국립 경찰병원으로 표시된 건물의 창작 의무조는 소속을 따지지 않고 처치 준비 물자를 배분하려 한다.",
+        "anchor_refs": [
+          "osm:node:1810749002"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S15"
+        ],
+        "inhabitants": [
+          "가락본동 주민 작업반",
+          "중립 처치 지원 담당자"
+        ],
+        "livelihood": "의무 담당자와 주민 대표가 배정 기록을 확인한다.",
+        "production": {
+          "outputs": [
+            "중립 처치 지원"
+          ],
+          "requires": [
+            "의약품과 세척 물자"
+          ]
+        },
+        "shortages": [
+          "의약품과 세척 물자의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "governance",
+          "description": "물자를 제공한 집단만 우선하면 다른 주민이 처치를 받지 못한다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 가락본동 주민들은 다음 선택의 비용을 협의한다: 긴급도 기준으로 물자를 배정한다.",
+        "connections": "방이1동·오금동·송파2동·가락1동·가락2동·문정1동·문정2동과 경계를 맞대지만 가락본동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1171062000-local-choice",
+          "label": "긴급도 기준으로 물자를 배정한다",
+          "target_ref": "osm:node:1810749002",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 4,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "필요한 주민이 소속과 무관하게 처치 준비를 받는다."
+            }
+          ],
+          "tradeoff": "기부 물자 제공자와 기존 우선권을 다시 협의해야 한다."
+        },
+        "uncertainty": "국립 경찰병원의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1171063100",
+      "name": "가락1동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "도매시장의 냉장 시간",
+        "summary": "가락농수산물종합도매시장의 창작 상인과 배급조는 남은 냉장 전력을 부패하기 쉬운 물건에 우선 배정하려 한다. 시장 자체가 식량을 생산하지는 않는다.",
+        "anchor_refs": [
+          "osm:way:169915116"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S15"
+        ],
+        "inhabitants": [
+          "가락1동 주민 작업반",
+          "저온 보관과 배급 중계 담당자"
+        ],
+        "livelihood": "저온 보관조가 입고 시각과 상태를 확인한다.",
+        "production": {
+          "outputs": [
+            "저온 보관과 배급 중계"
+          ],
+          "requires": [
+            "전력과 외부 식량"
+          ]
+        },
+        "shortages": [
+          "전력과 외부 식량의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "power",
+          "description": "전력 부족을 숨기면 물건을 저장한 가구가 손실을 늦게 안다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 가락1동 주민들은 다음 선택의 비용을 협의한다: 냉장 가능한 시간과 재고를 공개한다.",
+        "connections": "송파2동·석촌동·삼전동·가락본동·문정2동과 경계를 맞대지만 가락1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1171063100-local-choice",
+          "label": "냉장 가능한 시간과 재고를 공개한다",
+          "target_ref": "osm:way:169915116",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 4,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "위험한 재고를 먼저 출하하거나 배분한다."
+            }
+          ],
+          "tradeoff": "예정된 판매 시각이 바뀌어 거래 조건을 재협의해야 한다."
+        },
+        "uncertainty": "가락농수산물종합도매시장의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1171063200",
+      "name": "가락2동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "경찰병원역의 다중 표기",
+        "summary": "경찰병원역의 여러 원자료 객체를 별도 역 수로 세지 않는 창작 인계조는 실제 출입구와 짐 수령자를 함께 적는다.",
+        "anchor_refs": [
+          "osm:node:6033544227"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S15"
+        ],
+        "inhabitants": [
+          "가락2동 주민 작업반",
+          "역 인계 확인 담당자"
+        ],
+        "livelihood": "인계 담당자가 객체 이름과 현장 구획을 대조한다.",
+        "production": {
+          "outputs": [
+            "역 인계 확인"
+          ],
+          "requires": [
+            "기록지와 안내 교대"
+          ]
+        },
+        "shortages": [
+          "기록지와 안내 교대의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "access",
+          "description": "같은 이름의 기록을 잘못 합치면 짐이 다른 구획으로 간다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 가락2동 주민들은 다음 선택의 비용을 협의한다: 현장 구획을 인계표에 표시한다.",
+        "connections": "거여1동·오금동·가락본동·문정1동·장지동과 경계를 맞대지만 가락2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1171063200-local-choice",
+          "label": "현장 구획을 인계표에 표시한다",
+          "target_ref": "osm:node:6033544227",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 2,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "인계처를 이름만이 아니라 실제 장소로 확인한다."
+            }
+          ],
+          "tradeoff": "검수가 길어져 일부 화물이 대기한다."
+        },
+        "uncertainty": "경찰병원의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1171064100",
+      "name": "문정1동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "문정고 생활 수선",
+        "summary": "문정고등학교의 창작 수선조는 작업복과 공동 침구를 같은 재료로 고치며 우선순위를 주민과 정한다. 문정2동의 보관 선택은 포장재·연료·생활품이 같은 구획에 쌓이는 일을 줄이는 것으로 구별된다.",
+        "anchor_refs": [
+          "osm:node:2111844405"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S15"
+        ],
+        "inhabitants": [
+          "문정1동 주민 작업반",
+          "생활 천 제품 수선 담당자"
+        ],
+        "livelihood": "수선공과 숙영 당번이 손상 정도를 확인한다.",
+        "production": {
+          "outputs": [
+            "생활 천 제품 수선"
+          ],
+          "requires": [
+            "천과 바늘"
+          ]
+        },
+        "shortages": [
+          "천과 바늘의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "supply",
+          "description": "개인 주문을 모두 먼저 받으면 공동 숙영 물품이 계속 손상된 채 남는다. 보관 분류 업무를 배정하지 않으면 주민이 선택의 결과를 확인하기 어렵다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 문정1동 주민들은 다음 선택의 비용을 협의한다: 공동 침구 수리 시간을 예약한다.",
+        "connections": "가락본동·가락2동·문정2동·장지동과 경계를 맞대지만 문정1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1171064100-local-choice",
+          "label": "문정2동의 보관 물품을 화재 취약도별로 나눈다",
+          "target_ref": "osm:node:2111844405",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 3,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "취약한 물품을 분리해 대피 통로와 보관 기록을 함께 유지한다."
+            }
+          ],
+          "tradeoff": "따로 보관할 구획을 늘려 전체 수용 물량이 감소한다."
+        },
+        "uncertainty": "문정고등학교의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1171064200",
+      "name": "문정2동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "가든파이브 보관 구획",
+        "summary": "가든파이브 라이프의 창작 보관조는 생활품과 큰 출하 화물을 같은 복도에 쌓지 않도록 구획을 나누려 한다.",
+        "anchor_refs": [
+          "osm:way:170052586"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S15"
+        ],
+        "inhabitants": [
+          "문정2동 주민 작업반",
+          "생활품 보관 담당자"
+        ],
+        "livelihood": "보관 담당자와 상인이 물자 위치를 기록한다.",
+        "production": {
+          "outputs": [
+            "생활품 보관"
+          ],
+          "requires": [
+            "표지와 잠금장치"
+          ]
+        },
+        "shortages": [
+          "표지와 잠금장치의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "fire",
+          "description": "복도에 물자가 쌓이면 실내 대피와 긴급 인계가 어려워진다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 문정2동 주민들은 다음 선택의 비용을 협의한다: 통행 복도를 비우고 보관 구획을 정한다.",
+        "connections": "가락본동·가락1동·문정1동·장지동·위례동과 경계를 맞대지만 문정2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1171064200-local-choice",
+          "label": "통행 복도를 비우고 보관 구획을 정한다",
+          "target_ref": "osm:way:170052586",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 4,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "생활 물자의 위치와 대피 경로를 함께 확인한다."
+            }
+          ],
+          "tradeoff": "사용할 수 있는 보관 면적이 줄어든다."
+        },
+        "uncertainty": "가든파이브 라이프의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1171064600",
+      "name": "장지동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "장지역의 도착 순번",
+        "summary": "장지역의 창작 안내조는 외부에서 도착한 가구와 기존 주민의 인계 시간을 나누어 혼잡을 줄인다.",
+        "anchor_refs": [
+          "osm:node:6094326927"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S15"
+        ],
+        "inhabitants": [
+          "장지동 주민 작업반",
+          "신규 가구 인계 담당자"
+        ],
+        "livelihood": "안내자와 배급조가 도착 확인을 맡는다.",
+        "production": {
+          "outputs": [
+            "신규 가구 인계"
+          ],
+          "requires": [
+            "기록지와 안내 교대"
+          ]
+        },
+        "shortages": [
+          "기록지와 안내 교대의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "governance",
+          "description": "도착 가구의 기록을 미루면 임시 배급에서 빠지는 사람이 생긴다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 장지동 주민들은 다음 선택의 비용을 협의한다: 임시 도착 기록을 먼저 발급한다.",
+        "connections": "거여1동·가락2동·문정1동·문정2동·위례동과 경계를 맞대지만 장지동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1171064600-local-choice",
+          "label": "임시 도착 기록을 먼저 발급한다",
+          "target_ref": "osm:node:6094326927",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 2,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "새로 온 가구도 인계 절차를 시작한다."
+            }
+          ],
+          "tradeoff": "일반 통행 확인 시간이 늦어진다."
+        },
+        "uncertainty": "장지의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1171064700",
+      "name": "위례동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "복정 경계 인계",
+        "summary": "복정역 객체와 여러 구역의 경계가 만나는 지역의 창작 인계조는 외부 물자를 서울 내부 재고와 구분하려 한다.",
+        "anchor_refs": [
+          "osm:node:5408273777"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S15"
+        ],
+        "inhabitants": [
+          "위례동 주민 작업반",
+          "경계 물자 인계 담당자"
+        ],
+        "livelihood": "통행 서기가 출발지와 실제 수령 구획을 기록한다.",
+        "production": {
+          "outputs": [
+            "경계 물자 인계"
+          ],
+          "requires": [
+            "기록지와 검수 인력"
+          ]
+        },
+        "shortages": [
+          "기록지와 검수 인력의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "governance",
+          "description": "역 이름만 보고 외부 주문을 내부 배급으로 합치면 책임과 재고가 섞인다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 위례동 주민들은 다음 선택의 비용을 협의한다: 출발지와 수령 지역을 함께 확인한다.",
+        "connections": "거여1동·거여2동·마천1동·문정2동·장지동과 경계를 맞대지만 위례동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1171064700-local-choice",
+          "label": "출발지와 수령 지역을 함께 확인한다",
+          "target_ref": "osm:node:5408273777",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 3,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "경계를 넘는 물자도 실제 책임자를 남긴다."
+            }
+          ],
+          "tradeoff": "추가 검수로 반입 시간이 길어진다."
+        },
+        "uncertainty": "복정의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1171065000",
+      "name": "잠실본동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "새마을시장 장비 대여",
+        "summary": "새마을시장의 창작 상인들은 저울과 포장 도구를 공동으로 쓰며 고장 비용을 나누려 한다.",
+        "anchor_refs": [
+          "osm:node:7518281760"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S15"
+        ],
+        "inhabitants": [
+          "잠실본동 주민 작업반",
+          "시장 장비 대여 담당자"
+        ],
+        "livelihood": "도구 관리조가 사용 시간과 손상을 기록한다.",
+        "production": {
+          "outputs": [
+            "시장 장비 대여"
+          ],
+          "requires": [
+            "부품과 관리 교대"
+          ]
+        },
+        "shortages": [
+          "부품과 관리 교대의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "governance",
+          "description": "공용 장비 손상을 기록하지 않으면 다음 상인이 비용을 떠안는다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 잠실본동 주민들은 다음 선택의 비용을 협의한다: 사용 전후 상태를 공동 확인한다.",
+        "connections": "삼전동·잠실2동·잠실3동·잠실7동과 경계를 맞대지만 잠실본동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1171065000-local-choice",
+          "label": "사용 전후 상태를 공동 확인한다",
+          "target_ref": "osm:node:7518281760",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 2,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "장비 보수의 책임과 비용을 나눈다."
+            }
+          ],
+          "tradeoff": "확인 시간만큼 대여 횟수가 줄어든다."
+        },
+        "uncertainty": "새마을시장의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1171067000",
+      "name": "잠실2동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "잠신중의 배급 예약",
+        "summary": "잠신중학교 마당의 창작 배급조는 가구별로 필요한 물자를 예약해 한꺼번에 몰리는 대기를 줄이려 한다.",
+        "anchor_refs": [
+          "osm:way:129600528"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S15"
+        ],
+        "inhabitants": [
+          "잠실2동 주민 작업반",
+          "가구 배급 예약 담당자"
+        ],
+        "livelihood": "배급 서기와 주민 대표가 가구 인계 시각을 정한다.",
+        "production": {
+          "outputs": [
+            "가구 배급 예약"
+          ],
+          "requires": [
+            "기록지와 안내 교대"
+          ]
+        },
+        "shortages": [
+          "기록지와 안내 교대의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "access",
+          "description": "모든 가구가 같은 시각에 오면 취약 주민이 뒤로 밀린다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 잠실2동 주민들은 다음 선택의 비용을 협의한다: 인계 시각을 가구별로 나눈다.",
+        "connections": "잠실본동·잠실3동·잠실7동과 경계를 맞대지만 잠실2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1171067000-local-choice",
+          "label": "인계 시각을 가구별로 나눈다",
+          "target_ref": "osm:way:129600528",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 2,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "대기 시간을 줄이고 느린 이동 가구도 받는다."
+            }
+          ],
+          "tradeoff": "정해진 시각을 놓친 가구는 별도 확인이 필요하다."
+        },
+        "uncertainty": "잠신중학교의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1171068000",
+      "name": "잠실3동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "한강변 생활 보관",
+        "summary": "한강을 접한 잠실3동 창작 운반조는 비축 물자를 물가 인계와 주거 보관으로 나누려 한다.",
+        "anchor_refs": [
+          "osm:relation:3769500"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S15"
+        ],
+        "inhabitants": [
+          "잠실3동 주민 작업반",
+          "비축 물자 관리 담당자"
+        ],
+        "livelihood": "수위 당번과 주민 보관조가 위험 구획을 확인한다.",
+        "production": {
+          "outputs": [
+            "비축 물자 관리"
+          ],
+          "requires": [
+            "덮개와 운반 장비"
+          ]
+        },
+        "shortages": [
+          "덮개와 운반 장비의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "water",
+          "description": "물가의 큰 재고를 방치하면 수위 변화 때 손실을 옮길 시간이 없다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 잠실3동 주민들은 다음 선택의 비용을 협의한다: 필수 물자를 작은 단위로 분산 보관한다.",
+        "connections": "석촌동·삼전동·잠실본동·잠실2동·잠실6동과 경계를 맞대지만 잠실3동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1171068000-local-choice",
+          "label": "필수 물자를 작은 단위로 분산 보관한다",
+          "target_ref": "osm:relation:3769500",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 4,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "위험 구획의 한 번 손실을 줄인다."
+            }
+          ],
+          "tradeoff": "보관 장소가 나뉘어 인계 확인 일이 늘어난다."
+        },
+        "uncertainty": "한강의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1171069000",
+      "name": "잠실4동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "성내천 배수 표지",
+        "summary": "성내천 주변 창작 점검조는 물 빠짐과 보행 상태를 주민에게 같은 표지로 알리려 한다.",
+        "anchor_refs": [
+          "osm:way:222074695"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S15"
+        ],
+        "inhabitants": [
+          "잠실4동 주민 작업반",
+          "생활 배수 안내 담당자"
+        ],
+        "livelihood": "점검자가 배수와 통행 위험을 따로 기록한다.",
+        "production": {
+          "outputs": [
+            "생활 배수 안내"
+          ],
+          "requires": [
+            "표지와 방수 물자"
+          ]
+        },
+        "shortages": [
+          "표지와 방수 물자의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "water",
+          "description": "물길이 보인다는 이유로 통과를 허용하면 막힌 구간에서 주민이 돌아서야 한다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 잠실4동 주민들은 다음 선택의 비용을 협의한다: 점검한 배수·보행 정보를 분리 게시한다.",
+        "connections": "풍납2동·방이2동·오륜동·잠실6동과 경계를 맞대지만 잠실4동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1171069000-local-choice",
+          "label": "점검한 배수·보행 정보를 분리 게시한다",
+          "target_ref": "osm:way:222074695",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 3,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "확인된 상태를 주민이 구별해 읽는다."
+            }
+          ],
+          "tradeoff": "정리 작업에 참여할 인력이 줄어든다."
+        },
+        "uncertainty": "성내천의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1171071000",
+      "name": "잠실6동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "장미단지의 공동 저수",
+        "summary": "장미1차아파트의 창작 주민 대표는 저장된 생활 물을 단지 안 가구와 주변 돌봄 지원에 나누려 한다.",
+        "anchor_refs": [
+          "osm:relation:11845098"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S15"
+        ],
+        "inhabitants": [
+          "잠실6동 주민 작업반",
+          "생활 물 배정 담당자"
+        ],
+        "livelihood": "저수 담당자와 돌봄조가 사용량을 예약한다.",
+        "production": {
+          "outputs": [
+            "생활 물 배정"
+          ],
+          "requires": [
+            "물과 기록지"
+          ]
+        },
+        "shortages": [
+          "물과 기록지의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "supply",
+          "description": "지원 물량을 기록하지 않으면 단지 가구의 당일 소비가 부족해진다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 잠실6동 주민들은 다음 선택의 비용을 협의한다: 가구 소비와 지원 물량을 따로 예약한다.",
+        "connections": "방이2동·송파1동·잠실3동·잠실4동과 경계를 맞대지만 잠실6동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1171071000-local-choice",
+          "label": "가구 소비와 지원 물량을 따로 예약한다",
+          "target_ref": "osm:relation:11845098",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 2,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "필수 소비를 남긴 뒤 확인된 지원을 내보낸다."
+            }
+          ],
+          "tradeoff": "돌봄 지원량이 일부 줄어 외부 조달이 필요하다."
+        },
+        "uncertainty": "장미1차아파트의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    },
+    {
+      "region_id": "region:1171072000",
+      "name": "잠실7동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "운동장역 집결의 책임",
+        "summary": "종합운동장역 주변 창작 집결조는 넓은 장소에서 서로 다른 안내자가 같은 인원을 중복 인계하지 않도록 확인한다.",
+        "anchor_refs": [
+          "osm:node:13051385207"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S15"
+        ],
+        "inhabitants": [
+          "잠실7동 주민 작업반",
+          "대규모 집결 인계 담당자"
+        ],
+        "livelihood": "구획 안내조가 인원 이동과 수령을 기록한다.",
+        "production": {
+          "outputs": [
+            "대규모 집결 인계"
+          ],
+          "requires": [
+            "통신 전력과 안내 교대"
+          ]
+        },
+        "shortages": [
+          "통신 전력과 안내 교대의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "access",
+          "description": "넓은 구획에 책임자가 없으면 가족 인계와 물자 반환을 확인하기 어렵다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 잠실7동 주민들은 다음 선택의 비용을 협의한다: 구획별 인계 책임자를 정한다.",
+        "connections": "잠실본동·잠실2동과 경계를 맞대지만 잠실7동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1171072000-local-choice",
+          "label": "구획별 인계 책임자를 정한다",
+          "target_ref": "osm:node:13051385207",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 4,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "집결 인원이 어느 안내조로 넘어갔는지 확인한다."
+            }
+          ],
+          "tradeoff": "안내 교대가 늘어 다른 생활 운반 인력이 줄어든다."
+        },
+        "uncertainty": "종합운동장의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다."
+      }
+    }
+  ]
+}
