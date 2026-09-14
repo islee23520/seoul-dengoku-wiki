@@ -1,6 +1,6 @@
 # 랜덤 추가 로스터
 
-[roster-100.json](https://github.com/islee23520/seoul-kenshi/blob/main/Wikis/game-logic/name-pools/roster-100.json)은 인물 후보 100명을 담은 생성 실험 결과다. 완성 캐스트나 게임에 연결된 모집 명부가 아니다. 기존 [인물 총람](Cast-Index.md)의 422명을 대체하지 않는다. 2026-09-12 감사에서 파일 생성과 설정 검증이 섞여 보고된 점을 확인했으며, 이 문서는 그 상태를 바로잡는다.
+[roster-100.json](https://github.com/islee23520/seoul-kenshi/blob/main/Wikis/game-logic/name-pools/roster-100.json)은 인물 후보 100명을 담은 생성 실험 결과다. 완성 캐스트나 게임에 연결된 모집 명부가 아니다. 기존 [인물 총람](Cast-Index.md)의 422명을 대체하지 않는다. 이름 있는 인물 목표 규모는 1000명이다. 한 명을 올릴 때마다 [인물 카드 계약](Cast-Profile-Contract.md)과 [가치관과 정책 척도](Values-and-Policy-Scales.md) 10칸을 채운다. 시드만 돌리고 공포 문장을 그대로 베끼면 완료가 아니다. 2026-09-12 감사에서 파일 생성과 설정 검증이 섞여 보고된 점을 확인했으며, 이 문서는 그 상태를 바로잡는다.
 
 ## 생성에 사용한 자료
 

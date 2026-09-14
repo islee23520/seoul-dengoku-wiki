@@ -31,6 +31,7 @@
 | [전쟁과 공성](Warfare-and-Sieges.md) | 접근로, 보급, 봉쇄, 철수와 점령 후 유지 |
 | [캠페인 진행과 위기](Campaign-Progression.md) | 안정화, 전문화, 긴장도, 회복과 다중 결말 |
 | [인물·세력·생업](Characters-Factions-and-Professions.md) | 관계, 직위, 정통성과 성장 |
+| [가치관과 정책 척도](Values-and-Policy-Scales.md) | 인물 10칸, 조직 가치관·정책. 1000명 생성 경로 |
 | [서울 십육국](Sixteen-States.md) | 총16국, 강국5·약소국11의 지리와 기반시설 |
 | [십육국 핵심 인물](Core-Characters.md) | 국가별 핵심 인물의 성격, 야망, 공포와 촉발 사건 |
 | [인물 총람](Cast-Index.md) · [관계 원장](Cast-Relations.md) | 16국 인물 412명과 인물 사이 관계 원장 |
