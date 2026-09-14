@@ -27,6 +27,32 @@ namespace Janseon.Foundation.Tests
         };
 
         [Test]
+        public void BuildGameplay_PortraitCards_AreTheClickTargetsAndDebugButtonsAreGone()
+        {
+            RectTransform root = BuildAt720pConstantPixelSize();
+            try
+            {
+                Assert.That(UguiHudBuilder.Find(root, "card-general-use"), Is.Null,
+                    "debug morale button must not remain beside the portrait cards");
+                Assert.That(UguiHudBuilder.Find(root, "card-mobility-regroup"), Is.Null,
+                    "debug mobility button must not remain beside the portrait cards");
+                Assert.That(UiElementNames.CardGeneralUse, Is.EqualTo("battle-card-encourage-morale"));
+                Assert.That(UiElementNames.MobilityRegroup, Is.EqualTo("battle-card-mobility-regroup"));
+                foreach (string cardId in CharacterOfferings)
+                {
+                    Button card = UguiHudBuilder.ButtonNamed(root, UiElementNames.BattleCard(cardId));
+                    Assert.That(card, Is.Not.Null, cardId + " portrait must be the production click target");
+                    Assert.That(card.GetComponent<UnityEngine.UI.Image>().raycastTarget, Is.True,
+                        cardId + " must accept pointer hits");
+                }
+            }
+            finally
+            {
+                DestroyBuilt(root);
+            }
+        }
+
+        [Test]
         public void BuildGameplay_CharacterOfferingCards_Are132By180At720pConstantPixelSize()
         {
             RectTransform root = BuildAt720pConstantPixelSize();

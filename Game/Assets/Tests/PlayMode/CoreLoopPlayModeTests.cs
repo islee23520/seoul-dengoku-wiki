@@ -50,7 +50,7 @@ namespace Janseon.Foundation.Tests
         const string ActionSettle = "action-settle";
         const string D2BattlePlayPause = "battle-play-pause";
         const string D2CardGeneralRecharge = "card-general-recharge";
-        const string D2CardGeneralUse = "card-general-use";
+        const string D2CardGeneralUse = "battle-card-encourage-morale";
         const string D2FormationSwapFront = "formation-swap-front";
         const string D2EditFormation = "edit-formation";
         const string D2FormationEditConfirm = "formation-edit-confirm";

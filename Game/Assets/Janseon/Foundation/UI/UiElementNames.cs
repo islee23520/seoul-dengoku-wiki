@@ -78,7 +78,7 @@ namespace Janseon.Foundation.UI
         public const string BattlePlayPause = "battle-play-pause";
         public const string BattleReset = "battle-reset";
         public const string CardGeneralRecharge = "card-general-recharge";
-        public const string CardGeneralUse = "card-general-use";
+        public const string CardGeneralUse = "battle-card-encourage-morale";
         public const string FormationSwapFront = "formation-swap-front";
         public const string FormationSelection = "formation-selection";
         public const string EditFormation = "edit-formation";
@@ -121,7 +121,7 @@ namespace Janseon.Foundation.UI
             "rear-center",
             "rear-right",
         };
-        public const string MobilityRegroup = "card-mobility-regroup";
+        public const string MobilityRegroup = "battle-card-mobility-regroup";
         public const string MissionConsole = "mission-console";
         public const string HubOvernightCopy = "hub-overnight-copy";
         public const string HubBulletinPanel = "hub-bulletin-panel";
@@ -136,6 +136,14 @@ namespace Janseon.Foundation.UI
         public static string DeployToggle(int rosterIndex) => "deploy-toggle-" + rosterIndex;
 
         public static string BattleCard(string cardId) => "battle-card-" + cardId;
+
+        public static readonly string[] CharacterOfferingIds =
+        {
+            "guard-shieldwall",
+            "encourage-morale",
+            "pincer-focus",
+            "mobility-regroup",
+        };
 
         public const string Res720Class = "jk-res-720";
         public const string Res1080Class = "jk-res-1080";
@@ -219,7 +227,6 @@ namespace Janseon.Foundation.UI
             BattlePlayPause,
             BattleReset,
             CardGeneralRecharge,
-            CardGeneralUse,
             FormationSwapFront,
             FormationSelection,
             EditFormation,
@@ -250,7 +257,6 @@ namespace Janseon.Foundation.UI
             FormationEditFacingE,
             FormationEditFacingS,
             FormationEditFacingW,
-            MobilityRegroup,
             SettlementPanel,
             SettlementOutcome,
             ActionSettle,
@@ -278,7 +284,9 @@ namespace Janseon.Foundation.UI
             ChoiceCombat,
             FormationSwapFront,
             EditFormation,
+            BattleCard("guard-shieldwall"),
             CardGeneralUse,
+            BattleCard("pincer-focus"),
             MobilityRegroup,
             BattlePlayPause,
             BattleReset,
