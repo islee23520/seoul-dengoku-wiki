@@ -10,6 +10,7 @@
   "scripts": {
     "test": "node wiki/test-build-wiki.mjs && node wiki/test-unity-architecture-docs.mjs",
     "test:design-store": "node --test store/test-design-store-capture.mjs",
+    "test:mda-store": "node --test design-store/test-mda-store.mjs",
     "remote:setup": "node unity/setup-unity-remote.mjs",
     "remote:start": "node unity/start-unity-remote.mjs",
     "remote:cli": "node unity/run-unity-remote-cli.mjs",

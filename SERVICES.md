@@ -11,6 +11,7 @@
 | `/ui-layout-moodboard/` | `ui-layout-moodboard/` | UI 레이아웃 무드보드. 2026-09-11 작성, 2026-09-12 루트로 승격 |
 | `/system-design/` | `system-design/` | 시스템 구조 보고 HTML |
 | `/system-design/regions/` | `system-design/regions/` | 서울 25구·427동 지역 총람. 2026-09-13 |
+| `/design-store/` | `design-store/` | MDA+원페이지 설계 문서. SQLite에서 렌더한 HTML |
 | `/design/` `/world/` `/rules/` | `docs-site/`(VitePress 빌드) | 문서 사이트 영역 |
 
 ## 등록 기준
