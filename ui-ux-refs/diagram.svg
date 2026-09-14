@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 640" role="img" aria-labelledby="t d">
+  <title id="t">잔선 화면 소유 노선도</title>
+  <desc id="d">시야는 용사주식회사, 전투 입력은 Songs of Silence, 사람 POC는 오드랜드 Spine, 초상은 크루세이더 킹즈 3. 화면 목표는 poc-complete 열 면.</desc>
+  <rect width="1120" height="640" fill="#0B111C"/>
+  <g fill="none" stroke="#2A3548" stroke-width="1">
+    <path d="M80 320 H1040"/>
+    <path d="M80 180 H1040" stroke-dasharray="4 8"/>
+    <path d="M80 460 H1040" stroke-dasharray="4 8"/>
+  </g>
+  <circle cx="80" cy="320" r="7" fill="#3D7EA6"/>
+  <circle cx="1040" cy="320" r="7" fill="#C9A227"/>
+  <text x="80" y="52" fill="#C9A227" font-family="ui-monospace, Menlo, monospace" font-size="12" letter-spacing="3">JANSEON SCREEN LINE</text>
+  <text x="80" y="78" fill="#E6EAF0" font-family="Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="22" font-weight="600">누가 어느 화면을 소유하나</text>
+  <text x="80" y="104" fill="#9AA6B2" font-family="Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="13">한 칸은 그 게임이 화면에 남기는 일. 시스템만 빌려 온 항목은 아래 점선.</text>
+
+  <g font-family="Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+    <rect x="56" y="150" width="200" height="88" rx="4" fill="#141C2A" stroke="#C9A227"/>
+    <text x="72" y="176" fill="#C9A227" font-size="11">시야 · #97</text>
+    <text x="72" y="198" fill="#E6EAF0" font-size="16" font-weight="600">용사주식회사</text>
+    <text x="72" y="220" fill="#9AA6B2" font-size="12">2.5D 전투 화면</text>
+
+    <rect x="280" y="150" width="220" height="88" rx="4" fill="#141C2A" stroke="#8B4A3A"/>
+    <text x="296" y="176" fill="#c98a8a" font-size="11">전투 입력 · #76 #98 #99</text>
+    <text x="296" y="198" fill="#E6EAF0" font-size="16" font-weight="600">Songs of Silence</text>
+    <text x="296" y="220" fill="#9AA6B2" font-size="12">진형 편집 · 카드 타이밍</text>
+
+    <rect x="524" y="150" width="220" height="88" rx="4" fill="#141C2A" stroke="#3D7EA6"/>
+    <text x="540" y="176" fill="#3D7EA6" font-size="11">사람 POC · #58</text>
+    <text x="540" y="198" fill="#E6EAF0" font-size="16" font-weight="600">오드랜드 Spine</text>
+    <text x="540" y="220" fill="#9AA6B2" font-size="12">POC 사람 표현</text>
+
+    <rect x="768" y="150" width="220" height="88" rx="4" fill="#141C2A" stroke="#2A3548"/>
+    <text x="784" y="176" fill="#9AA6B2" font-size="11">초상 · 이슈 없음</text>
+    <text x="784" y="198" fill="#E6EAF0" font-size="16" font-weight="600">크루세이더 킹즈 3</text>
+    <text x="784" y="220" fill="#9AA6B2" font-size="12">초상 · 경고 배지 · 정보 모드</text>
+  </g>
+
+  <g font-family="Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+    <rect x="56" y="276" width="188" height="88" rx="4" fill="#141C2A" stroke="#2A3548"/>
+    <text x="72" y="302" fill="#9AA6B2" font-size="11">예보 · 이슈 없음</text>
+    <text x="72" y="324" fill="#E6EAF0" font-size="15" font-weight="600">인투 더 브리치</text>
+    <text x="72" y="346" fill="#9AA6B2" font-size="12">위협 칸 · 적 의도</text>
+
+    <rect x="268" y="276" width="188" height="88" rx="4" fill="#141C2A" stroke="#2A3548"/>
+    <text x="284" y="302" fill="#9AA6B2" font-size="11">편성판 · #76</text>
+    <text x="284" y="324" fill="#E6EAF0" font-size="15" font-weight="600">유니콘 오버로드</text>
+    <text x="284" y="346" fill="#9AA6B2" font-size="12">리더 토큰 · 전후열</text>
+
+    <rect x="480" y="276" width="188" height="88" rx="4" fill="#141C2A" stroke="#2A3548"/>
+    <text x="496" y="302" fill="#9AA6B2" font-size="11">사기 HUD · #77 #100</text>
+    <text x="496" y="324" fill="#E6EAF0" font-size="15" font-weight="600">라벨렌 전기</text>
+    <text x="496" y="346" fill="#9AA6B2" font-size="12">게이지 · 지휘 반경</text>
+
+    <rect x="692" y="276" width="188" height="88" rx="4" fill="#141C2A" stroke="#2A3548"/>
+    <text x="708" y="302" fill="#9AA6B2" font-size="11">투명성 · Design.md</text>
+    <text x="708" y="324" fill="#E6EAF0" font-size="15" font-weight="600">파이어 엠블렘·FFT</text>
+    <text x="708" y="346" fill="#9AA6B2" font-size="12">확정 / 취소 · 예상</text>
+
+    <rect x="904" y="276" width="160" height="88" rx="4" fill="#141C2A" stroke="#2A3548"/>
+    <text x="916" y="302" fill="#9AA6B2" font-size="11">거점 허브</text>
+    <text x="916" y="324" fill="#E6EAF0" font-size="14" font-weight="600">창세기전</text>
+    <text x="916" y="346" fill="#9AA6B2" font-size="12">stage-base-prep</text>
+  </g>
+
+  <text x="80" y="430" fill="#6B7684" font-family="ui-monospace, Menlo, monospace" font-size="11">SYSTEM LOAN — HUD 주인이 아님</text>
+  <g font-family="Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="12" fill="#9AA6B2">
+    <rect x="56" y="448" width="1008" height="64" rx="4" fill="#0E1622" stroke="#2A3548"/>
+    <text x="76" y="476">배틀 브라더즈  시간=비용</text>
+    <text x="260" y="476">배너로드  정치 자격</text>
+    <text x="444" y="476">신장·삼국지  세력권</text>
+    <text x="628" y="476">태합  생업 성장</text>
+    <text x="780" y="476">XCOM 2  양층 압박</text>
+    <text x="76" y="498">다키스트 던전  마모</text>
+    <text x="260" y="498">K-시스템  결핍 프리셋</text>
+    <text x="444" y="498">이슈 없음 — 규칙 대출</text>
+  </g>
+
+  <text x="80" y="560" fill="#6B7684" font-family="Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="12">화면 목표: poc-complete.html 열 면 · uGUI #59 · 시각 테제 #8 #23</text>
+  <text x="80" y="584" fill="#6B7684" font-family="ui-monospace, Menlo, monospace" font-size="11">정본 Game-References.md · Intent 결정 1·2·3·5·6 · 이슈 #101</text>
+</svg>

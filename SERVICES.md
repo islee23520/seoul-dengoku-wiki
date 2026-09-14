@@ -11,6 +11,8 @@
 | `/ui-layout-moodboard/` | `ui-layout-moodboard/` | UI 레이아웃 무드보드. 2026-09-11 작성, 2026-09-12 루트로 승격 |
 | `/system-design/` | `system-design/` | 시스템 구조 보고 HTML |
 | `/system-design/regions/` | `system-design/regions/` | 서울 25구·427동 지역 총람. 2026-09-13 |
+| `/design-store/` | `design-store/` | MDA 설계 목차. 정본 docs를 SQLite 문서로 렌더한 HTML |
+| `/ui-ux-refs/` | `ui-ux-refs/` | UI/UX 레퍼런스 취합. 이슈 #101. 2026-09-14 |
 | `/design/` `/world/` `/rules/` | `docs-site/`(VitePress 빌드) | 문서 사이트 영역 |
 
 ## 등록 기준
@@ -31,6 +33,7 @@ cp index.html /tmp/prod-stage/index.html
 cp -R play /tmp/prod-stage/
 cp -R ui-layout-moodboard /tmp/prod-stage/
 cp -R system-design /tmp/prod-stage/
+cp -R ui-ux-refs /tmp/prod-stage/
 cp -R .vercel /tmp/prod-stage/.vercel
 cd /tmp/prod-stage && npx --yes vercel@59.16.0 deploy --prod --yes
 ```

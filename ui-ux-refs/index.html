@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="잔선: 서울 UI/UX 레퍼런스 게임 취합 — 이슈 #101" />
+<title>잔선: 서울 · UI/UX 레퍼런스</title>
+<style>
+:root{
+  --bg-void:#0B111C; --bg-panel:#141C2A; --bg-panel-raised:#1B2536; --bg-well:#0E1622;
+  --stroke-quiet:#2A3548; --stroke-focus:#C9A227; --stroke-danger:#8B3A3A;
+  --text-primary:#E6EAF0; --text-secondary:#9AA6B2; --text-muted:#6B7684;
+  --accent-line:#3D7EA6; --accent-safe:#3F6B54; --accent-fight:#8B4A3A;
+  --signal-live:#C9A227;
+  --radius-sm:2px; --radius-md:4px;
+  --font-stack:"Pretendard","Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;
+  --mono-stack:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg-void);color:var(--text-primary);font-family:var(--font-stack);
+  font-size:15px;line-height:1.75;word-break:keep-all;overflow-wrap:break-word}
+a{color:var(--accent-line);text-decoration:none;border-bottom:1px solid var(--stroke-quiet)}
+a:hover{color:var(--signal-live);border-bottom-color:var(--signal-live)}
+code{font-family:var(--mono-stack);font-size:.86em;color:var(--text-secondary);
+  background:var(--bg-well);border:1px solid var(--stroke-quiet);border-radius:var(--radius-sm);
+  padding:1px 5px;white-space:nowrap}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{border:1px solid var(--stroke-quiet);padding:6px 10px;text-align:left;vertical-align:top}
+th{background:var(--bg-panel-raised);color:var(--text-secondary);font-weight:600}
+nav.toc{position:sticky;top:0;z-index:50;background:rgba(11,17,28,.94);
+  border-bottom:1px solid var(--stroke-quiet);backdrop-filter:blur(6px)}
+nav.toc .in{max-width:1120px;margin:0 auto;padding:10px 24px;display:flex;gap:14px;
+  flex-wrap:wrap;align-items:center}
+nav.toc .brand{font-weight:600;letter-spacing:.06em;color:var(--text-muted);font-size:12px}
+nav.toc a{font-size:12.5px;border:none;color:var(--text-secondary);padding:2px 4px}
+nav.toc a:hover{color:var(--signal-live)}
+main{max-width:1120px;margin:0 auto;padding:0 24px 80px}
+section{margin-top:56px;scroll-margin-top:64px}
+.sec-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;
+  border-bottom:1px solid var(--stroke-quiet);padding-bottom:10px;margin-bottom:20px}
+.sec-no{font-family:var(--mono-stack);color:var(--signal-live);font-size:13px}
+h1{font-size:28px;font-weight:600;margin:28px 0 10px}
+h2{font-size:22px;font-weight:600}
+p.lead{color:var(--text-secondary);margin-bottom:14px;max-width:76ch}
+p{margin-bottom:12px;max-width:76ch}
+figure{margin:14px 0}
+figure img,figure svg{display:block;width:100%;height:auto;border:1px solid var(--stroke-quiet);
+  border-radius:var(--radius-md);background:var(--bg-panel)}
+figcaption{font-size:12px;color:var(--text-muted);margin-top:6px;line-height:1.6}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:800px){.grid{grid-template-columns:1fr}}
+.card{background:var(--bg-panel);border:1px solid var(--stroke-quiet);border-radius:var(--radius-md);overflow:hidden}
+.card img{width:100%;height:180px;object-fit:cover;display:block;border-bottom:1px solid var(--stroke-quiet)}
+.card .b{padding:12px 14px}
+.card .k{font-family:var(--mono-stack);font-size:11px;color:var(--signal-live)}
+.card h3{font-size:16px;margin:4px 0 6px}
+.card p{font-size:13px;color:var(--text-secondary);margin:0;max-width:none}
+.note{background:var(--bg-well);border:1px solid var(--stroke-quiet);border-left:3px solid var(--accent-line);
+  border-radius:var(--radius-md);padding:12px 16px;font-size:13.5px;color:var(--text-secondary);
+  margin:14px 0;max-width:76ch}
+.src{font-size:12px;color:var(--text-muted);border-top:1px dashed var(--stroke-quiet);
+  margin-top:22px;padding-top:10px;line-height:2}
+footer{margin-top:56px;border-top:1px solid var(--stroke-quiet);padding-top:18px;
+  font-size:12.5px;color:var(--text-muted)}
+</style>
+</head>
+<body>
+<nav class="toc"><div class="in">
+  <span class="brand">JANSEON · UI/UX REFS</span>
+  <a href="#map">노선도</a>
+  <a href="#shots">실측 화면</a>
+  <a href="#owners">화면 소유</a>
+  <a href="#loan">시스템 대출</a>
+  <a href="#contract">게임이 아닌 계약</a>
+</div></nav>
+<main>
+  <p class="kicker" style="font-family:var(--mono-stack);font-size:12px;color:var(--signal-live);letter-spacing:.14em;margin-top:28px">ISSUE #101</p>
+  <h1>누가 어느 화면을 소유하나</h1>
+  <p class="lead">잔선 화면이 누구에게서 무엇을 빌리는지 한 장으로 고정한다. 이 보고서는 구현 모듈이 아니다. GitHub 이슈 <a href="https://github.com/islee23520/seoul-kenshi/issues/101">#101</a>의 그림판이다.</p>
+  <p class="note">노선도 SVG, 동결 POC 캡처, 다이제틱 앵커, <code>poc-complete.html</code> 열 면. 정본은 <code>Game-References.md</code>, 각 <code>Ref-*.md</code>, Intent 결정 1·2·3·5·6.</p>
+
+  <section id="map">
+    <div class="sec-head"><span class="sec-no">01</span><h2>화면 소유 노선도</h2></div>
+    <figure>
+      <img src="diagram.svg" alt="시야는 용사주식회사, 전투 입력은 Songs of Silence, 사람 POC는 오드랜드 Spine, 초상은 크루세이더 킹즈 3" />
+      <figcaption>노선 한 줄. 실선 위는 화면에 남는 게임, 점선 아래는 규칙만 빌려 온 항목.</figcaption>
+    </figure>
+  </section>
+
+  <section id="shots">
+    <div class="sec-head"><span class="sec-no">02</span><h2>이미 있는 화면</h2></div>
+    <p class="lead">화면 목표는 <code>.omo/design/poc-complete.html</code> 열 면이다. 아래는 그 샷과 동결 캡처다.</p>
+    <div class="grid">
+      <article class="card">
+        <img src="images/poc-complete.png" alt="poc-complete 열 면 샷" style="height:auto;max-height:360px;object-fit:contain;background:#05080a" />
+        <div class="b">
+          <div class="k">화면 목표 · Intent 결정 6</div>
+          <h3>poc-complete 열 면</h3>
+          <p>시작 프리셋, 캐릭터 생성, 모집, 거점 허브, 대화, 전략 노선도, 역간 여행, 조우, 전투, 정산. <a href="poc-complete.html">열 면 HTML</a>.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="images/title.png" alt="타이틀 동결 캡처" />
+        <div class="b">
+          <div class="k">타이틀 · #8</div>
+          <h3>젖은 콘크리트 테제</h3>
+          <p>시각 테제 계약. 타이틀 COMPOSITION은 #8이 소유한다.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="images/encounter.png" alt="조우 선택 동결 캡처" />
+        <div class="b">
+          <div class="k">조우 · CK3 투명성</div>
+          <h3>비용·효과·위험을 미리 보여 준다</h3>
+          <p>크루세이더 킹즈 3의 선택 공개. 화면 이름은 Design.md 조우 패널.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="images/formation.png" alt="진형 편집 동결 캡처" />
+        <div class="b">
+          <div class="k">진형 · Songs of Silence · #76</div>
+          <h3>전투 전 배치가 입력이다</h3>
+          <p>전열·후열·측면, 4방향 정면. 유니콘 오버로드의 편성판과 겹친다. 시야는 용사주식회사(#97).</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="images/battle.png" alt="전투 일시정지 동결 캡처" />
+        <div class="b">
+          <div class="k">전투 · Songs of Silence · 라벨렌</div>
+          <h3>카드 타이밍과 사기 게이지</h3>
+          <p>전투 전 진형과 전투 중 카드 타이밍. 예보 칸은 인투 더 브리치, 사기 수치는 라벨렌(#77·#100).</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="images/diegetic-hud.png" alt="다이제틱 전투 HUD 앵커" />
+        <div class="b">
+          <div class="k">문법 · 다이제틱</div>
+          <h3>관제 콘솔로 읽히게</h3>
+          <p>2026-09-12 소유자 결정. 안내판·계기·노선도·관제 콘솔. 앵커는 <code>poc-diegetic/battle-hud/</code>.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="owners">
+    <div class="sec-head"><span class="sec-no">03</span><h2>화면에 남는 게임</h2></div>
+    <table>
+      <thead><tr><th>레퍼런스</th><th>화면에 남기는 일</th><th>이슈</th></tr></thead>
+      <tbody>
+        <tr><td>용사주식회사</td><td>시야와 카메라. 2.5D 전투 화면</td><td><a href="https://github.com/islee23520/seoul-kenshi/issues/97">#97</a></td></tr>
+        <tr><td>Songs of Silence</td><td>진형 편집, 카드 타이밍, 일시정지</td><td><a href="https://github.com/islee23520/seoul-kenshi/issues/76">#76</a> <a href="https://github.com/islee23520/seoul-kenshi/issues/77">#77</a> <a href="https://github.com/islee23520/seoul-kenshi/issues/98">#98</a> <a href="https://github.com/islee23520/seoul-kenshi/issues/99">#99</a> <a href="https://github.com/islee23520/seoul-kenshi/issues/100">#100</a></td></tr>
+        <tr><td>오드랜드 Spine</td><td>POC 사람 표현. 2.5등신, 네 방향</td><td><a href="https://github.com/islee23520/seoul-kenshi/issues/58">#58</a></td></tr>
+        <tr><td>크루세이더 킹즈 3</td><td>초상·관계·경고 배지, 지도 정보 모드</td><td>이슈 없음</td></tr>
+        <tr><td>인투 더 브리치</td><td>위협 칸·적 의도 사전 공개</td><td>이슈 없음</td></tr>
+        <tr><td>유니콘 오버로드</td><td>리더 토큰, 전열·후열 편성판</td><td><a href="https://github.com/islee23520/seoul-kenshi/issues/76">#76</a></td></tr>
+        <tr><td>라벨렌 전기</td><td>사기 게이지, 지휘 반경, 항복 3조건</td><td><a href="https://github.com/islee23520/seoul-kenshi/issues/77">#77</a> <a href="https://github.com/islee23520/seoul-kenshi/issues/100">#100</a></td></tr>
+        <tr><td>파이어 엠블렘·FFT</td><td>확정/취소, 공격 예상</td><td>Design.md, 이슈 없음</td></tr>
+        <tr><td>창세기전·트라이앵글</td><td>거점 허브</td><td><code>stage-base-prep</code>, 이슈 없음</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="loan">
+    <div class="sec-head"><span class="sec-no">04</span><h2>시스템 대출</h2></div>
+    <p>아래는 규칙·경제·성장을 빌려 온 항목이다. HUD 레이아웃의 주인이 아니다.</p>
+    <table>
+      <thead><tr><th>레퍼런스</th><th>빌린 것</th><th>이슈</th></tr></thead>
+      <tbody>
+        <tr><td>배틀 브라더즈</td><td>시간=비용, 로스터≠배치, 지형 비용</td><td>이슈 없음</td></tr>
+        <tr><td>배너로드</td><td>클랜 티어 → 정치 자격</td><td>이슈 없음</td></tr>
+        <tr><td>신장의야망·삼국지</td><td>영토 내정, 전략 노선도의 세력권</td><td>이슈 없음</td></tr>
+        <tr><td>태합입지전</td><td>생업 = 성장 경로</td><td>이슈 없음</td></tr>
+        <tr><td>XCOM 2</td><td>전략 보급 고갈 × 전술 압박</td><td>이슈 없음</td></tr>
+        <tr><td>다키스트 던전</td><td>부상자 로테이션, 마모가 난이도</td><td>이슈 없음</td></tr>
+        <tr><td>K-시스템</td><td>결핍의 종류가 난이도, 6종 시작 프리셋</td><td>이슈 없음</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="contract">
+    <div class="sec-head"><span class="sec-no">05</span><h2>게임이 아닌 화면 계약</h2></div>
+    <table>
+      <thead><tr><th>계약</th><th>내용</th><th>이슈</th></tr></thead>
+      <tbody>
+        <tr><td>uGUI + TMP</td><td>Canvas 전용, 텍스트 TMP</td><td><a href="https://github.com/islee23520/seoul-kenshi/issues/59">#59</a> 닫힘</td></tr>
+        <tr><td>시각 테제</td><td>젖은 콘크리트, 꺼진 안내판, 비상 전원</td><td><a href="https://github.com/islee23520/seoul-kenshi/issues/8">#8</a> <a href="https://github.com/islee23520/seoul-kenshi/issues/23">#23</a></td></tr>
+        <tr><td>다이제틱 방향</td><td>안내판·계기·노선도·관제 콘솔</td><td>이슈 없음</td></tr>
+        <tr><td>화면 파이프라인</td><td>HTML 목업 → 안정 이름 → uGUI</td><td>타이틀 0 … 정산 7</td></tr>
+        <tr><td>레이아웃 무드보드</td><td>영역별 동결 캡처 색인</td><td><a href="../ui-layout-moodboard/">/ui-layout-moodboard/</a></td></tr>
+      </tbody>
+    </table>
+    <p class="src">정본: docs/game-logic/Game-References.md · Intent.md 결정 1·2·3·5 · Design.md · Character-Art-Direction.md · Ui-Implementation-Pipeline.md. 캡처는 ui-layout-moodboard/images/frozen과 poc-diegetic/battle-hud/anchor-capture.png.</p>
+  </section>
+</main>
+<footer>
+  자립형 HTML. 실제 산출물만. 금지 공개 용어 기준은 위키 빌더와 같다. 이슈 <a href="https://github.com/islee23520/seoul-kenshi/issues/101">#101</a>.
+</footer>
+</body>
+</html>
