@@ -15,7 +15,7 @@ Unity project and its serialized runtime contract; score 8, distinct engine/buil
 | Scene authoring/build entry points | `Assets/Janseon/Foundation/Editor/FoundationProjectBuilder.cs` | Batchmode authoring and development-player build |
 | Browser-only prototype | `play/model.mjs`, `play/app.js`, `play/Design.md` | Separate vanilla-JS experiment, not Unity runtime authority |
 | Headless execution contract | `../Tool/docs/Unity-Headless-Workflow.md` | Mandatory batchmode-only workflow |
-| Windows Unity quality gateway | `E:\git\minimoo\OneMoreShelter-PC\AGENTS.md` | Completion bar below; not Janseon gameplay rules |
+| Unity quality gateway | this file | Procedure, regressions and done-means below |
 
 ## CONVENTIONS
 - Target `Game/` as the Unity project; Unity asset paths start at `Assets/`, not `Game/Assets/`.
@@ -42,25 +42,39 @@ Run from the repository root; `UNITY_EDITOR` denotes the installed pinned Unity 
 - `Packages/manifest.json` still points Unity Remote at old `../../tools/unity-remote/unity-package`; the checkout is under `Tool/unity-remote`. Verify package resolution before claiming compile success.
 
 ## QUALITY GATEWAY
-User path: `E:\git\minimoo\one-more-shelter`.
-Observed 2026-09-14 checkout: `E:\git\minimoo\OneMoreShelter-PC` on `desktop-bo514et` (`ssh desktop`).
-Authoritative guidance: `E:\git\minimoo\OneMoreShelter-PC\AGENTS.md` and `E:\git\minimoo\OneMoreShelter-PC\Packages\com.minimumstudio.minimoo\AGENTS.md`.
-Use its Unity work bar, adapted to this repo's pinned editor and batchmode-only contract:
-> - Requested behavior matches the confirmed scope of the current design.
-> - Undecided numbers or content have not been unnecessarily fixed.
-> - Legacy predecessor rules have not been mistaken for this game's rules.
-> - Editor compilation has no errors; every new warning is explained or resolved.
-> - Relevant automated tests and necessary PlayMode/visual verification were performed.
-> - Scenes, prefabs, asset references and `.meta` files remain intact.
-> - Save-data and target-platform impacts were reviewed.
-> - Remaining assumptions, unverified areas and decisions needing design input are stated in the result.
 
-- Inspect the owning scenes, prefabs, ScriptableObjects and callers before changing a system.
-- Recompile in `6000.7.0a5`; run touched-system EditMode tests, then PlayMode tests where applicable.
-- Play or UI changes require actual batchmode PlayMode reproduction and inspected captured Game View evidence, not only static tests.
-- Preserve graphics for captures (no `-nographics`); retain source-bound receipts and state omitted coverage.
-- Check non-target-platform compilation guards for platform-specific code.
-- Transfer quality procedures only: OneMoreShelter's zombies, shelter loop and regression rules are not Janseon design.
+### Unity work procedure
+- Before changing a system, inspect the owning scenes, prefabs, ScriptableObjects and callers.
+- Edit scenes, prefabs and serialized references through Unity APIs / `SerializedObject`. If YAML must be touched, verify references separately.
+- After C# changes, recompile in `6000.7.0a5` and resolve or explain every new console error and warning.
+- Prefer EditMode tests for logic. Use PlayMode when the change depends on frames, physics, input or scene lifetime.
+- Play or UI changes require actual batchmode PlayMode reproduction and inspected Game View captures (no `-nographics`), with receipts bound to HEAD and the dirty-source fingerprint.
+- If the full suite is too heavy, run the touched slice and state omitted coverage in the result.
+- For platform-specific code, check non-target-platform compile guards.
+
+### Core regressions
+When the change touches that system, verify the matching items:
+- A combat choice yields `BattleRequired`; caller state stays unchanged until it adopts the handoff.
+- Battle identity distinguishes handoffs that differ only in party HP.
+- Settlement is exact-once; replay or resubmit must not apply twice.
+- Unsupported or corrupt saves fail explicitly; never silent recovery.
+- Bootstrap is build-index 0 and owns the app VContainer scope; MainTitle then Foundation; content scenes use exclusive child scopes.
+- `SceneManager.LoadScene*` runs only through the App scene-loader adapter.
+- Runtime has no `FindObject*` / `GameObject.Find` and no mutable static `Instance` / `Current`.
+- `Janseon.Core` stays engine-free.
+- Genre contract stays locked: yaw 45, pitch 35.264, 1.5-unit tiles, 2.5-head silhouette; JSON and C# move together.
+- New runtime UI is uGUI; do not add UI Toolkit surfaces.
+- Runtime art slots require Node provenance plus Unity import; `Art/Staging` and quarantine paths are not runtime-reachable.
+
+### Done means
+- Requested behavior matches the confirmed scope of the current design.
+- Undecided numbers or content were not invented to close the task.
+- Reference-game or older draft rules were not mistaken for this game's rules.
+- Editor compilation has no errors; every new warning is explained or resolved.
+- Relevant automated tests and needed PlayMode / visual verification were performed.
+- Scenes, prefabs, asset references and `.meta` files remain intact.
+- Save-data and target-platform impacts were reviewed.
+- Remaining assumptions, unverified areas and design decisions still needed are stated in the result.
 
 ## ANTI-PATTERNS
 - Do not launch interactive Editor/Test Runner, `unity open`, manual Play, GUI automation or `unicli`.

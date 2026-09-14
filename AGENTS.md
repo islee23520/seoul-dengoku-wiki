@@ -52,7 +52,7 @@ seoul-kenshi/
 | Architecture and rollout | `GDD/game-logic/Unity-Architecture.md`, `GDD/game-logic/Unity-System-Design.md` | Design contracts; implementation must be checked separately |
 | Save and randomness contracts | `GDD/game-logic/Save-and-Determinism.md` | Versioning, event records, separated RNG streams |
 | Cast corpus | `GDD/game-logic/Cast-Index.md`, `GDD/game-logic/Cast-Relations.md`, `GDD/game-logic/Cast-State-01.md` through `GDD/game-logic/Cast-State-16.md` | Sixteen-state organization |
-| Unity setup and quality gateway | `Game/AGENTS.md` | Points at Windows OneMoreShelter gateway `E:\git\minimoo\one-more-shelter`; observed checkout `E:\git\minimoo\OneMoreShelter-PC` on `desktop-bo514et` |
+| Unity setup and quality gateway | `Game/AGENTS.md` | Pinned editor, batchmode contract, work procedure, regressions and done-means |
 | Domain and runtime integration | `Game/Assets/Janseon/AGENTS.md` | Core/Data/Foundation boundaries and art import seams |
 | Unity tests and captures | `Game/Assets/Tests/AGENTS.md` | Test-mode ownership and evidence receipts |
 | Tooling and checks | `Tool/AGENTS.md`, `Tool/tools/AGENTS.md` | Repo scripts versus independent submodule packages; separate domain gates |
@@ -96,7 +96,7 @@ Digest LSP/ast-grep findings plus retained root symbol locations; C# LSP coverag
 - Do not silently recover unsupported/corrupt saves: the documented save contract requires explicit errors.
 - Do not substitute a backend when TRELLIS is unavailable; its designated execution host is separate from this macOS checkout.
 - Unity execution is batchmode-only in a background session, one Editor per `Game` path: no GUI, Test Runner, manual Play or unicli. Author serialized assets with Unity APIs/SerializedObject, not hand-edited YAML.
-- The OneMoreShelter gateway supplies quality criteria, not zombies, shelter gameplay or permission to invent undecided content.
+- Do not invent undecided numbers or content, and do not treat design pages as shipped implementation.
 - Do not turn region surface adjacency into movement edges, merge same-name facilities, or advance later narrative events to opening day. Geometry-only validation is intermediate.
 
 ## UNIQUE STYLES
@@ -130,4 +130,4 @@ dotnet run --project Backend/server/GameServer/GameServer.csproj -c Debug --no-l
 - TRELLIS targets a Windows RTX 4080 direct-Python host; local `probeHost()` reports it unavailable.
 - Capture validation requires ten state/resolution PNGs plus matching receipts; image dimensions alone do not establish valid evidence.
 - The Wiki public-term gate checks visible rendered content, not raw Markdown alone; it is not a source-wide naming ban.
-- This root guide synthesizes writer digests and retained root guidance. Commands were not executed here; the Windows gateway observation was task-supplied, not independently re-probed.
+- This root guide synthesizes writer digests and retained root guidance. Commands listed here were not executed as part of writing it.
