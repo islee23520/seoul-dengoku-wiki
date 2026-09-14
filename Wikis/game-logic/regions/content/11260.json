@@ -88,7 +88,8 @@
             "observed_use": "병원",
             "river": "tributary",
             "opening_use": "야전 의무. 수술실 대신 교대 침상을 둔다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:3298391861",
@@ -96,7 +97,8 @@
             "observed_use": "학교",
             "river": "tributary",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:368930419",
@@ -104,7 +106,8 @@
             "observed_use": "학교",
             "river": "tributary",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:7806083029",
@@ -112,9 +115,24 @@
             "observed_use": "주민센터",
             "river": "tributary",
             "opening_use": "동 장부와 배급 창구. 야간만 연다.",
-            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "contested",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 57
+            },
+            {
+              "polity": "S14",
+              "control": 43
+            }
+          ]
+        },
+        "core_station": false
       }
     },
     {
@@ -201,7 +219,8 @@
             "observed_use": "역",
             "river": "tributary",
             "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
-            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station"
           },
           {
             "anchor_ref": "osm:node:368921836",
@@ -209,7 +228,8 @@
             "observed_use": "학교",
             "river": "tributary",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:368928275",
@@ -217,7 +237,8 @@
             "observed_use": "학교",
             "river": "tributary",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:1108373978",
@@ -225,9 +246,20 @@
             "observed_use": "학교",
             "river": "tributary",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": true
       }
     },
     {
@@ -314,7 +346,8 @@
             "observed_use": "주민센터",
             "river": "tributary",
             "opening_use": "동 장부와 배급 창구. 야간만 연다.",
-            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:1055786360",
@@ -322,7 +355,8 @@
             "observed_use": "사무실",
             "river": "tributary",
             "opening_use": "공방이거나 셔터 봉인. 간판 상호는 장부에 올리지 않는다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:relation:16259781",
@@ -330,7 +364,8 @@
             "observed_use": "공원·녹지",
             "river": "tributary",
             "opening_use": "얕은 경작과 우기 배수. 묘지로 쓰지 않는다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:1085029637",
@@ -338,9 +373,24 @@
             "observed_use": "공원·녹지",
             "river": "tributary",
             "opening_use": "얕은 경작과 우기 배수. 묘지로 쓰지 않는다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "contested",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 57
+            },
+            {
+              "polity": "S14",
+              "control": 43
+            }
+          ]
+        },
+        "core_station": false
       }
     },
     {
@@ -427,7 +477,8 @@
             "observed_use": "역",
             "river": "tributary",
             "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
-            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station"
           },
           {
             "anchor_ref": "osm:node:368899817",
@@ -435,7 +486,8 @@
             "observed_use": "주민센터",
             "river": "tributary",
             "opening_use": "동 장부와 배급 창구. 야간만 연다.",
-            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:368928800",
@@ -443,7 +495,8 @@
             "observed_use": "학교",
             "river": "tributary",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:368929125",
@@ -451,9 +504,20 @@
             "observed_use": "학교",
             "river": "tributary",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": true
       }
     },
     {
@@ -541,7 +605,8 @@
             "observed_use": "역",
             "river": "tributary",
             "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
-            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station"
           },
           {
             "anchor_ref": "osm:node:368928195",
@@ -549,7 +614,8 @@
             "observed_use": "학교",
             "river": "tributary",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:1473893429",
@@ -557,7 +623,8 @@
             "observed_use": "학교",
             "river": "tributary",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:1101775048",
@@ -565,9 +632,24 @@
             "observed_use": "아파트",
             "river": "tributary",
             "opening_use": "3층 이상만 거주. 1–2층은 침수 창고이거나 포기한다.",
-            "how": "3층 이상 출입, 1–2층 창호는 판자로 막는다."
+            "how": "3층 이상 출입, 1–2층 창호는 판자로 막는다.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "contested",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 57
+            },
+            {
+              "polity": "S14",
+              "control": 43
+            }
+          ]
+        },
+        "core_station": true
       }
     },
     {
@@ -654,7 +736,8 @@
             "observed_use": "병원",
             "river": "tributary",
             "opening_use": "야전 의무. 수술실 대신 교대 침상을 둔다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:368922262",
@@ -662,7 +745,8 @@
             "observed_use": "학교",
             "river": "tributary",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:7806083028",
@@ -670,7 +754,8 @@
             "observed_use": "주민센터",
             "river": "tributary",
             "opening_use": "동 장부와 배급 창구. 야간만 연다.",
-            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:1079180617",
@@ -678,9 +763,24 @@
             "observed_use": "학교",
             "river": "tributary",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "contested",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 57
+            },
+            {
+              "polity": "S13",
+              "control": 43
+            }
+          ]
+        },
+        "core_station": false
       }
     },
     {
@@ -768,7 +868,8 @@
             "observed_use": "역",
             "river": "tributary",
             "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
-            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station"
           },
           {
             "anchor_ref": "osm:node:8233698788",
@@ -776,7 +877,8 @@
             "observed_use": "역",
             "river": "tributary",
             "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
-            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station"
           },
           {
             "anchor_ref": "osm:node:368921904",
@@ -784,7 +886,8 @@
             "observed_use": "학교",
             "river": "tributary",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:368922543",
@@ -792,9 +895,24 @@
             "observed_use": "학교",
             "river": "tributary",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "contested",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 57
+            },
+            {
+              "polity": "S13",
+              "control": 43
+            }
+          ]
+        },
+        "core_station": true
       }
     },
     {
@@ -882,7 +1000,8 @@
             "observed_use": "역",
             "river": "tributary",
             "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
-            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station"
           },
           {
             "anchor_ref": "osm:node:10138442018",
@@ -890,7 +1009,8 @@
             "observed_use": "학교",
             "river": "tributary",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:1024679471",
@@ -898,7 +1018,8 @@
             "observed_use": "아파트",
             "river": "tributary",
             "opening_use": "3층 이상만 거주. 1–2층은 침수 창고이거나 포기한다.",
-            "how": "3층 이상 출입, 1–2층 창호는 판자로 막는다."
+            "how": "3층 이상 출입, 1–2층 창호는 판자로 막는다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:relation:16259781",
@@ -906,9 +1027,24 @@
             "observed_use": "공원·녹지",
             "river": "tributary",
             "opening_use": "얕은 경작과 우기 배수. 묘지로 쓰지 않는다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "contested",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 57
+            },
+            {
+              "polity": "S15",
+              "control": 43
+            }
+          ]
+        },
+        "core_station": true
       }
     },
     {
@@ -996,7 +1132,8 @@
             "observed_use": "역",
             "river": "tributary",
             "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
-            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station"
           },
           {
             "anchor_ref": "osm:way:370304375",
@@ -1004,7 +1141,8 @@
             "observed_use": "학교",
             "river": "tributary",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:370304460",
@@ -1012,7 +1150,8 @@
             "observed_use": "학교",
             "river": "tributary",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:371643415",
@@ -1020,9 +1159,24 @@
             "observed_use": "학교",
             "river": "tributary",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "contested",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 57
+            },
+            {
+              "polity": "S11",
+              "control": 43
+            }
+          ]
+        },
+        "core_station": true
       }
     },
     {
@@ -1109,7 +1263,8 @@
             "observed_use": "역",
             "river": "tributary",
             "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
-            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station"
           },
           {
             "anchor_ref": "osm:node:5965511185",
@@ -1117,7 +1272,8 @@
             "observed_use": "시장",
             "river": "tributary",
             "opening_use": "허가 장터. 예약 배급분과 판매 재고를 나눈다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:9612049943",
@@ -1125,7 +1281,8 @@
             "observed_use": "주민센터",
             "river": "tributary",
             "opening_use": "동 장부와 배급 창구. 야간만 연다.",
-            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:1456459308",
@@ -1133,9 +1290,20 @@
             "observed_use": "주민센터",
             "river": "tributary",
             "opening_use": "동 장부와 배급 창구. 야간만 연다.",
-            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": true
       }
     },
     {
@@ -1223,7 +1391,8 @@
             "observed_use": "역",
             "river": "tributary",
             "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
-            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station"
           },
           {
             "anchor_ref": "osm:node:368899929",
@@ -1231,7 +1400,8 @@
             "observed_use": "주민센터",
             "river": "tributary",
             "opening_use": "동 장부와 배급 창구. 야간만 연다.",
-            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:368922460",
@@ -1239,7 +1409,8 @@
             "observed_use": "학교",
             "river": "tributary",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:414687757",
@@ -1247,9 +1418,24 @@
             "observed_use": "학교",
             "river": "tributary",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "contested",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 57
+            },
+            {
+              "polity": "S14",
+              "control": 43
+            }
+          ]
+        },
+        "core_station": true
       }
     },
     {
@@ -1335,7 +1521,8 @@
             "observed_use": "주민센터",
             "river": "tributary",
             "opening_use": "동 장부와 배급 창구. 야간만 연다.",
-            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:370202138",
@@ -1343,7 +1530,8 @@
             "observed_use": "학교",
             "river": "tributary",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:370287192",
@@ -1351,7 +1539,8 @@
             "observed_use": "학교",
             "river": "tributary",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:1417549513",
@@ -1359,9 +1548,20 @@
             "observed_use": "건물",
             "river": "tributary",
             "opening_use": "1층은 우기 창고, 거주와 배급은 제방 안쪽에서 한다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": false
       }
     },
     {
@@ -1448,7 +1648,8 @@
             "observed_use": "역",
             "river": "tributary",
             "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
-            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station"
           },
           {
             "anchor_ref": "osm:node:355173626",
@@ -1456,7 +1657,8 @@
             "observed_use": "역",
             "river": "tributary",
             "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
-            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station"
           },
           {
             "anchor_ref": "osm:node:5447336160",
@@ -1464,7 +1666,8 @@
             "observed_use": "역",
             "river": "tributary",
             "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
-            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station"
           },
           {
             "anchor_ref": "osm:node:2460030394",
@@ -1472,9 +1675,20 @@
             "observed_use": "학교",
             "river": "tributary",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": true
       }
     },
     {
@@ -1561,7 +1775,8 @@
             "observed_use": "학교",
             "river": "tributary",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:368929050",
@@ -1569,7 +1784,8 @@
             "observed_use": "학교",
             "river": "tributary",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:7806083031",
@@ -1577,7 +1793,8 @@
             "observed_use": "주민센터",
             "river": "tributary",
             "opening_use": "동 장부와 배급 창구. 야간만 연다.",
-            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:8147061917",
@@ -1585,9 +1802,24 @@
             "observed_use": "병원",
             "river": "tributary",
             "opening_use": "야전 의무. 수술실 대신 교대 침상을 둔다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "contested",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 57
+            },
+            {
+              "polity": "S13",
+              "control": 43
+            }
+          ]
+        },
+        "core_station": false
       }
     },
     {
@@ -1675,7 +1907,8 @@
             "observed_use": "역",
             "river": "tributary",
             "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
-            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station"
           },
           {
             "anchor_ref": "osm:node:368928306",
@@ -1683,7 +1916,8 @@
             "observed_use": "학교",
             "river": "tributary",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:9810804197",
@@ -1691,7 +1925,8 @@
             "observed_use": "주민센터",
             "river": "tributary",
             "opening_use": "동 장부와 배급 창구. 야간만 연다.",
-            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:369788217",
@@ -1699,9 +1934,24 @@
             "observed_use": "병원",
             "river": "tributary",
             "opening_use": "야전 의무. 수술실 대신 교대 침상을 둔다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "contested",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 57
+            },
+            {
+              "polity": "S13",
+              "control": 43
+            }
+          ]
+        },
+        "core_station": true
       }
     },
     {
@@ -1793,7 +2043,8 @@
             "observed_use": "학교",
             "river": "tributary",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:368928230",
@@ -1801,7 +2052,8 @@
             "observed_use": "학교",
             "river": "tributary",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:414686146",
@@ -1809,7 +2061,8 @@
             "observed_use": "학교",
             "river": "tributary",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:relation:7226925",
@@ -1817,9 +2070,24 @@
             "observed_use": "주민센터",
             "river": "tributary",
             "opening_use": "동 장부와 배급 창구. 야간만 연다.",
-            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "contested",
+          "holders": [
+            {
+              "polity": "S12",
+              "control": 57
+            },
+            {
+              "polity": "S14",
+              "control": 43
+            }
+          ]
+        },
+        "core_station": false
       }
     }
   ]

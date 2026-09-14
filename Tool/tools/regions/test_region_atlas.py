@@ -111,7 +111,10 @@ class ContentTests(unittest.TestCase):
                 "uncertainty": "재난 이후의 상태와 수치는 창작이다.",
                 "buildings": [{"anchor_ref": "osm:node:42", "name": "저수조 옆 주민센터",
                                "observed_use": "주민센터", "river": "inland",
-                               "opening_use": "배급 창구", "how": "1층만 연다"}],
+                               "opening_use": "배급 창구", "how": "1층만 연다",
+                               "role": "support"}],
+                "core_station": False,
+                "territory": {"status": "held", "holders": [{"polity": "S06", "control": 70}]},
                 "action": {"id": "1111053000-valve", "label": "밸브 점검",
                            "target_ref": "osm:node:42",
                            "costs": [{"resource": "labor", "amount": 2, "unit": "shift"}],
@@ -147,6 +150,14 @@ class ContentTests(unittest.TestCase):
     def test_building_anchor_must_be_local(self):
         self.region["content"]["buildings"][0]["anchor_ref"] = "osm:node:999"
         self.assertTrue(any(e.startswith("invalid_building_anchor:") for e in content_errors(self.region)))
+
+    def test_missing_territory_rejected(self):
+        del self.region["content"]["territory"]
+        self.assertTrue(any(e.startswith("invalid_territory:") for e in content_errors(self.region)))
+
+    def test_held_requires_majority_control(self):
+        self.region["content"]["territory"] = {"status": "held", "holders": [{"polity": "S06", "control": 40}]}
+        self.assertTrue(any(e.startswith("held_requires_majority:") for e in content_errors(self.region)))
 
     def test_calendar_date_is_not_a_fictional_epoch(self):
         self.region["content"]["fictional_epoch"] = "2026-09-12"

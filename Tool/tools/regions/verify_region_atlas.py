@@ -85,13 +85,51 @@ def content_errors(region):
             if not isinstance(building, dict):
                 errors.append("invalid_building_row:" + region["id"])
                 continue
-            for key in ("anchor_ref", "name", "observed_use", "river", "opening_use", "how"):
+            for key in ("anchor_ref", "name", "observed_use", "river", "opening_use", "how", "role"):
                 if not text_value(building.get(key)):
                     errors.append("missing_building_" + key + ":" + region["id"])
             if building.get("river") not in allowed_river:
                 errors.append("invalid_building_river:" + region["id"])
             if building.get("anchor_ref") not in local_anchors:
                 errors.append("invalid_building_anchor:" + region["id"])
+            if building.get("role") not in {"core-station", "support"}:
+                errors.append("invalid_building_role:" + region["id"])
+            if building.get("observed_use") == "역" and building.get("role") != "core-station":
+                errors.append("station_must_be_core:" + region["id"])
+            if building.get("observed_use") != "역" and building.get("role") == "core-station":
+                errors.append("non_station_core:" + region["id"])
+    has_core = any(isinstance(b, dict) and b.get("role") == "core-station" for b in (buildings or []))
+    if content.get("core_station") is not has_core:
+        errors.append("core_station_mismatch:" + region["id"])
+    territory = content.get("territory")
+    if not isinstance(territory, dict) or territory.get("status") not in {"held", "contested", "vacant"}:
+        errors.append("invalid_territory:" + region["id"])
+    else:
+        holders = territory.get("holders")
+        if not isinstance(holders, list):
+            errors.append("invalid_territory_holders:" + region["id"])
+        else:
+            allowed_polities = {f"S{i:02d}" for i in range(1, 17)}
+            total = 0
+            for holder in holders:
+                if not isinstance(holder, dict) or holder.get("polity") not in allowed_polities:
+                    errors.append("invalid_territory_polity:" + region["id"])
+                    continue
+                control = holder.get("control")
+                if not isinstance(control, (int, float)) or isinstance(control, bool) or control < 0 or control > 100:
+                    errors.append("invalid_territory_control:" + region["id"])
+                    continue
+                total += control
+            if total > 100:
+                errors.append("territory_control_overflow:" + region["id"])
+            status = territory["status"]
+            strongest = max((h.get("control") or 0) for h in holders) if holders else 0
+            if status == "vacant" and holders:
+                errors.append("vacant_has_holders:" + region["id"])
+            if status == "held" and (len(holders) != 1 or strongest < 50):
+                errors.append("held_requires_majority:" + region["id"])
+            if status == "contested" and (not holders or (len(holders) == 1 and strongest >= 50)):
+                errors.append("contested_requires_split:" + region["id"])
     refs = content.get("anchor_refs", [])
     if not isinstance(refs, list) or not refs or any(ref not in local_anchors for ref in refs):
         errors.append("invalid_local_content_anchor:" + region["id"])

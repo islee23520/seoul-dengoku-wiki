@@ -87,7 +87,8 @@
             "observed_use": "주민센터",
             "river": "hangang-north",
             "opening_use": "동 장부와 배급 창구. 야간만 연다.",
-            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:222963542",
@@ -95,7 +96,8 @@
             "observed_use": "학교",
             "river": "hangang-north",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:222963607",
@@ -103,7 +105,8 @@
             "observed_use": "학교",
             "river": "hangang-north",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:222963663",
@@ -111,9 +114,20 @@
             "observed_use": "학교",
             "river": "hangang-north",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S06",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": false
       }
     },
     {
@@ -199,7 +213,8 @@
             "observed_use": "역",
             "river": "hangang-north",
             "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
-            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station"
           },
           {
             "anchor_ref": "osm:node:6039313647",
@@ -207,7 +222,8 @@
             "observed_use": "역",
             "river": "hangang-north",
             "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
-            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station"
           },
           {
             "anchor_ref": "osm:way:228470767",
@@ -215,7 +231,8 @@
             "observed_use": "주민센터",
             "river": "hangang-north",
             "opening_use": "동 장부와 배급 창구. 야간만 연다.",
-            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:245137008",
@@ -223,9 +240,20 @@
             "observed_use": "학교",
             "river": "hangang-north",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S06",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": true
       }
     },
     {
@@ -317,7 +345,8 @@
             "observed_use": "학교",
             "river": "hangang-north",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:237615587",
@@ -325,7 +354,8 @@
             "observed_use": "학교",
             "river": "hangang-north",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:316516033",
@@ -333,7 +363,8 @@
             "observed_use": "주민센터",
             "river": "hangang-north",
             "opening_use": "동 장부와 배급 창구. 야간만 연다.",
-            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:612603165",
@@ -341,9 +372,24 @@
             "observed_use": "대학",
             "river": "hangang-north",
             "opening_use": "기록 사본 공방. 실험동은 봉인하거나 부품을 분해한다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "contested",
+          "holders": [
+            {
+              "polity": "S06",
+              "control": 57
+            },
+            {
+              "polity": "S10",
+              "control": 43
+            }
+          ]
+        },
+        "core_station": false
       }
     },
     {
@@ -430,7 +476,8 @@
             "observed_use": "학교",
             "river": "hangang-north",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:368622407",
@@ -438,7 +485,8 @@
             "observed_use": "학교",
             "river": "hangang-north",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:368650195",
@@ -446,7 +494,8 @@
             "observed_use": "대학",
             "river": "hangang-north",
             "opening_use": "기록 사본 공방. 실험동은 봉인하거나 부품을 분해한다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:368899919",
@@ -454,9 +503,24 @@
             "observed_use": "주민센터",
             "river": "hangang-north",
             "opening_use": "동 장부와 배급 창구. 야간만 연다.",
-            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "contested",
+          "holders": [
+            {
+              "polity": "S06",
+              "control": 57
+            },
+            {
+              "polity": "S10",
+              "control": 43
+            }
+          ]
+        },
+        "core_station": false
       }
     },
     {
@@ -543,7 +607,8 @@
             "observed_use": "병원",
             "river": "hangang-north",
             "opening_use": "야전 의무. 수술실 대신 교대 침상을 둔다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:221499970",
@@ -551,7 +616,8 @@
             "observed_use": "학교",
             "river": "hangang-north",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:221502708",
@@ -559,7 +625,8 @@
             "observed_use": "대학",
             "river": "hangang-north",
             "opening_use": "기록 사본 공방. 실험동은 봉인하거나 부품을 분해한다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:244952013",
@@ -567,9 +634,24 @@
             "observed_use": "학교",
             "river": "hangang-north",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "contested",
+          "holders": [
+            {
+              "polity": "S10",
+              "control": 57
+            },
+            {
+              "polity": "S06",
+              "control": 43
+            }
+          ]
+        },
+        "core_station": false
       }
     },
     {
@@ -661,7 +743,8 @@
             "observed_use": "주민센터",
             "river": "hangang-north",
             "opening_use": "동 장부와 배급 창구. 야간만 연다.",
-            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:464147033",
@@ -669,7 +752,8 @@
             "observed_use": "학교",
             "river": "hangang-north",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:474261385",
@@ -677,7 +761,8 @@
             "observed_use": "주민센터",
             "river": "hangang-north",
             "opening_use": "동 장부와 배급 창구. 야간만 연다.",
-            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:1493087408",
@@ -685,9 +770,24 @@
             "observed_use": "건물",
             "river": "hangang-north",
             "opening_use": "1층은 우기 창고, 거주와 배급은 제방 안쪽에서 한다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "contested",
+          "holders": [
+            {
+              "polity": "S06",
+              "control": 57
+            },
+            {
+              "polity": "S10",
+              "control": 43
+            }
+          ]
+        },
+        "core_station": false
       }
     },
     {
@@ -778,7 +878,8 @@
             "observed_use": "대학",
             "river": "hangang-north",
             "opening_use": "기록 사본 공방. 실험동은 봉인하거나 부품을 분해한다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:368623187",
@@ -786,7 +887,8 @@
             "observed_use": "학교",
             "river": "hangang-north",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:368922767",
@@ -794,7 +896,8 @@
             "observed_use": "학교",
             "river": "hangang-north",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:463187627",
@@ -802,9 +905,20 @@
             "observed_use": "병원",
             "river": "hangang-north",
             "opening_use": "야전 의무. 수술실 대신 교대 침상을 둔다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S06",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": false
       }
     },
     {
@@ -890,7 +1004,8 @@
             "observed_use": "대학",
             "river": "hangang-north",
             "opening_use": "기록 사본 공방. 실험동은 봉인하거나 부품을 분해한다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:9367123190",
@@ -898,7 +1013,8 @@
             "observed_use": "학교",
             "river": "hangang-north",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:9367123191",
@@ -906,7 +1022,8 @@
             "observed_use": "학교",
             "river": "hangang-north",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:233636255",
@@ -914,9 +1031,20 @@
             "observed_use": "학교",
             "river": "hangang-north",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S06",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": false
       }
     },
     {
@@ -1008,7 +1136,8 @@
             "observed_use": "역",
             "river": "hangang-north",
             "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
-            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station"
           },
           {
             "anchor_ref": "osm:node:5863335699",
@@ -1016,7 +1145,8 @@
             "observed_use": "역",
             "river": "hangang-north",
             "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
-            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station"
           },
           {
             "anchor_ref": "osm:node:7207442616",
@@ -1024,7 +1154,8 @@
             "observed_use": "역",
             "river": "hangang-north",
             "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
-            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station"
           },
           {
             "anchor_ref": "osm:node:9454775468",
@@ -1032,9 +1163,20 @@
             "observed_use": "역",
             "river": "hangang-north",
             "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
-            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station"
           }
-        ]
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S06",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": true
       }
     },
     {
@@ -1124,7 +1266,8 @@
             "observed_use": "역",
             "river": "hangang-north",
             "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
-            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station"
           },
           {
             "anchor_ref": "osm:node:9454775467",
@@ -1132,7 +1275,8 @@
             "observed_use": "역",
             "river": "hangang-north",
             "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
-            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station"
           },
           {
             "anchor_ref": "osm:node:7808597954",
@@ -1140,7 +1284,8 @@
             "observed_use": "주민센터",
             "river": "hangang-north",
             "opening_use": "동 장부와 배급 창구. 야간만 연다.",
-            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:relation:17478193",
@@ -1148,9 +1293,20 @@
             "observed_use": "시장",
             "river": "hangang-north",
             "opening_use": "허가 장터. 예약 배급분과 판매 재고를 나눈다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S06",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": true
       }
     },
     {
@@ -1245,7 +1401,8 @@
             "observed_use": "역",
             "river": "hangang-north",
             "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
-            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station"
           },
           {
             "anchor_ref": "osm:node:13816386393",
@@ -1253,7 +1410,8 @@
             "observed_use": "병원",
             "river": "hangang-north",
             "opening_use": "야전 의무. 수술실 대신 교대 침상을 둔다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:223434837",
@@ -1261,7 +1419,8 @@
             "observed_use": "대학",
             "river": "hangang-north",
             "opening_use": "기록 사본 공방. 실험동은 봉인하거나 부품을 분해한다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:223434838",
@@ -1269,9 +1428,20 @@
             "observed_use": "대학",
             "river": "hangang-north",
             "opening_use": "기록 사본 공방. 실험동은 봉인하거나 부품을 분해한다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S06",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": true
       }
     },
     {
@@ -1359,7 +1529,8 @@
             "observed_use": "대학",
             "river": "hangang-north",
             "opening_use": "기록 사본 공방. 실험동은 봉인하거나 부품을 분해한다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:13959693135",
@@ -1367,7 +1538,8 @@
             "observed_use": "대학",
             "river": "hangang-north",
             "opening_use": "기록 사본 공방. 실험동은 봉인하거나 부품을 분해한다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:7808597947",
@@ -1375,7 +1547,8 @@
             "observed_use": "주민센터",
             "river": "hangang-north",
             "opening_use": "동 장부와 배급 창구. 야간만 연다.",
-            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:223434837",
@@ -1383,9 +1556,24 @@
             "observed_use": "대학",
             "river": "hangang-north",
             "opening_use": "기록 사본 공방. 실험동은 봉인하거나 부품을 분해한다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "contested",
+          "holders": [
+            {
+              "polity": "S06",
+              "control": 57
+            },
+            {
+              "polity": "S10",
+              "control": 43
+            }
+          ]
+        },
+        "core_station": false
       }
     },
     {
@@ -1471,7 +1659,8 @@
             "observed_use": "역",
             "river": "hangang-north",
             "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
-            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station"
           },
           {
             "anchor_ref": "osm:node:9454775466",
@@ -1479,7 +1668,8 @@
             "observed_use": "역",
             "river": "hangang-north",
             "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
-            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station"
           },
           {
             "anchor_ref": "osm:node:368899336",
@@ -1487,7 +1677,8 @@
             "observed_use": "주민센터",
             "river": "hangang-north",
             "opening_use": "동 장부와 배급 창구. 야간만 연다.",
-            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:6482121989",
@@ -1495,9 +1686,20 @@
             "observed_use": "시장",
             "river": "hangang-north",
             "opening_use": "허가 장터. 예약 배급분과 판매 재고를 나눈다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S06",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": true
       }
     },
     {
@@ -1583,7 +1785,8 @@
             "observed_use": "주민센터",
             "river": "hangang-north",
             "opening_use": "동 장부와 배급 창구. 야간만 연다.",
-            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:11463437432",
@@ -1591,7 +1794,8 @@
             "observed_use": "상점",
             "river": "hangang-north",
             "opening_use": "공방이거나 셔터 봉인. 간판 상호는 장부에 올리지 않는다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:12073058275",
@@ -1599,7 +1803,8 @@
             "observed_use": "상점",
             "river": "hangang-north",
             "opening_use": "공방이거나 셔터 봉인. 간판 상호는 장부에 올리지 않는다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:12073060123",
@@ -1607,9 +1812,20 @@
             "observed_use": "상점",
             "river": "hangang-north",
             "opening_use": "공방이거나 셔터 봉인. 간판 상호는 장부에 올리지 않는다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S06",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": false
       }
     },
     {
@@ -1695,7 +1911,8 @@
             "observed_use": "학교",
             "river": "hangang-north",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:416195954",
@@ -1703,7 +1920,8 @@
             "observed_use": "학교",
             "river": "hangang-north",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:416204693",
@@ -1711,7 +1929,8 @@
             "observed_use": "학교",
             "river": "hangang-north",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:12192229880",
@@ -1719,9 +1938,20 @@
             "observed_use": "상점",
             "river": "hangang-north",
             "opening_use": "공방이거나 셔터 봉인. 간판 상호는 장부에 올리지 않는다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S06",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": false
       }
     },
     {
@@ -1812,7 +2042,8 @@
             "observed_use": "역",
             "river": "hangang-north",
             "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
-            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station"
           },
           {
             "anchor_ref": "osm:node:6041673049",
@@ -1820,7 +2051,8 @@
             "observed_use": "역",
             "river": "hangang-north",
             "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
-            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station"
           },
           {
             "anchor_ref": "osm:node:368900108",
@@ -1828,7 +2060,8 @@
             "observed_use": "주민센터",
             "river": "hangang-north",
             "opening_use": "동 장부와 배급 창구. 야간만 연다.",
-            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:way:416204693",
@@ -1836,9 +2069,20 @@
             "observed_use": "학교",
             "river": "hangang-north",
             "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
-            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루."
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S06",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": true
       }
     },
     {
@@ -1925,7 +2169,8 @@
             "observed_use": "역",
             "river": "hangang-north",
             "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
-            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다."
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station"
           },
           {
             "anchor_ref": "osm:node:368652190",
@@ -1933,7 +2178,8 @@
             "observed_use": "대학",
             "river": "hangang-north",
             "opening_use": "기록 사본 공방. 실험동은 봉인하거나 부품을 분해한다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:368899321",
@@ -1941,7 +2187,8 @@
             "observed_use": "주민센터",
             "river": "hangang-north",
             "opening_use": "동 장부와 배급 창구. 야간만 연다.",
-            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다."
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support"
           },
           {
             "anchor_ref": "osm:node:5694115664",
@@ -1949,9 +2196,20 @@
             "observed_use": "시장",
             "river": "hangang-north",
             "opening_use": "허가 장터. 예약 배급분과 판매 재고를 나눈다.",
-            "how": "관측된 출입구만 쓰고 나머지는 막는다."
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support"
           }
-        ]
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S06",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": true
       }
     }
   ]
