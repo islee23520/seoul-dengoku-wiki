@@ -206,7 +206,9 @@
                 "contents": "에이스하이엔드타워7차 1층. 공방이거나 셔터 봉인. 가산동.",
                 "condition": "간판 상호는 장부에 올리지 않는다."
               }
-            ]
+            ],
+            "observed_levels": 20,
+            "observed_levels_source": "osm-way:1018411914"
           }
         ],
         "territory": {
@@ -1325,7 +1327,9 @@
                 "contents": "금천구청 옥상 망루. 시흥1동 방향 관측.",
                 "condition": "난간은 철사. 출입은 초소 암호패."
               }
-            ]
+            ],
+            "observed_levels": 12,
+            "observed_levels_source": "osm-way:385824308"
           },
           {
             "anchor_ref": "osm:way:384633132",
@@ -2216,7 +2220,9 @@
                 "contents": "한국SGI금천희망문화회관 옥상.",
                 "condition": "난간만 남았거나 없다."
               }
-            ]
+            ],
+            "observed_levels": 4,
+            "observed_levels_source": "osm-way:1120481133"
           }
         ],
         "territory": {
