@@ -19,7 +19,7 @@
 | [온라인 유저 여정](/design/Online-User-Journey) | 계정·착생·공유 월드 입장부터 사망·후계까지. 캠페인 루프의 바깥 순서 |
 | [서울과 지하철 레이어](/world/World-and-Subway-Layers) | 다층 세계 그래프와 데이터 출처 |
 | [월드맵을 어떻게 구성하나](/world/World-Map-Construction) | 구 25·역 목록·시설을 그래프로 조립하는 순서. Unity 이동 그래프는 334역 |
-| [서울 지역 설정 데이터](regions/README.md) | 2026-07-01 행정동 25구·427동 저작. 역 목록이 면적 전수가 아님 |
+| [서울 지역 설정 데이터](../../game-logic/regions/README.md) | 2026-07-01 행정동 25구·427동 저작. 역 목록이 면적 전수가 아님 |
 | [서울 역 카탈로그](/world/Seoul-Station-Catalog) | OSM에서 뽑은 서울 안 이름 있는 역 334곳. 공식 전수 아님 |
 | [역 내부에 들어가면](/world/Station-Interior-Construction) | 입장 시 층·격자·시설 슬롯. 조우 정산 API와 별개 |
 | [출격하고 돌아오는 흐름](/rules/Campaign-Loop) | 준비, 원정, 마주침, 전투, 복귀와 결과 반영 |
@@ -44,7 +44,7 @@
 | [세계 서사 지도](/world/World-Narrative-Atlas) | 가문·적대 생태·몬스터·서사 배치의 원본 |
 | [이동과 조우](/rules/Travel-and-Encounters) | 4방향 행동과 원정 위험 |
 | [실시간 진형·카드 전투](/rules/Realtime-Formation-Card-Battle) | 같은 격자에서 이어지는 실시간 진형·카드 전투 (Core 규칙 버전 `rtfc-owner-cards-v2`) |
-| [설계 요구 티켓](Design-Requirements.md) | MDA 층은 설계 어휘. 개발 단위는 GitHub 요구 티켓 |
+| [설계 요구 티켓](../../game-logic/Design-Requirements.md) | MDA 층은 설계 어휘. 개발 단위는 GitHub 요구 티켓 |
 | [전략에서 전투로](/rules/Strategy-Battle-Roundtrip) | 세계 상태를 전투에 넘기고 결과를 한 번만 반영하는 법 |
 | [캐릭터 미술](/rules/Character-Art-Direction) | 2.5등신 전술 실루엣과 인물 프로필 초상 규칙 |
 | [에셋이 들어오는 길](/design/Asset-Pipeline) | 의도 JSON을 그래프로 컴파일·검사하고 생성부터 승인까지 가는 설명서 |

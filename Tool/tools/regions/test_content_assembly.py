@@ -11,7 +11,7 @@ class ContentAssemblyTests(unittest.TestCase):
         self.content = {
             "source_kind": "original-fiction", "fictional_epoch": "opening-day",
             "title": "점검 교대", "summary": "골목의 정비 교대를 조정한다.",
-            "anchor_refs": ["osm:node:1"], "canon_refs": ["GDD/game-logic/Sixteen-States.md"],
+            "anchor_refs": ["osm:node:1"], "canon_refs": ["Wikis/game-logic/Sixteen-States.md"],
             "polity_contexts": ["S06"], "inhabitants": ["정비조"], "livelihood": "급수 점검",
             "production": {"outputs": ["급수"], "requires": ["부품"]}, "shortages": ["부품"],
             "hazard": {"kind": "supply", "description": "밸브 고장"},

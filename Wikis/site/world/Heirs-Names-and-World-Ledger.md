@@ -22,11 +22,11 @@
 
 성, 남성 이름, 여성 이름은 파일을 나눈다. 권역 키는 문화 키 표를 따른다.
 
-- [surnames.json](https://github.com/islee23520/seoul-kenshi/blob/main/GDD/game-logic/name-pools/surnames.json) — 성. 한 글자
-- [given-male.json](https://github.com/islee23520/seoul-kenshi/blob/main/GDD/game-logic/name-pools/given-male.json) — 남성 이름
-- [given-female.json](https://github.com/islee23520/seoul-kenshi/blob/main/GDD/game-logic/name-pools/given-female.json) — 여성 이름
+- [surnames.json](https://github.com/islee23520/seoul-kenshi/blob/main/Wikis/game-logic/name-pools/surnames.json) — 성. 한 글자
+- [given-male.json](https://github.com/islee23520/seoul-kenshi/blob/main/Wikis/game-logic/name-pools/given-male.json) — 남성 이름
+- [given-female.json](https://github.com/islee23520/seoul-kenshi/blob/main/Wikis/game-logic/name-pools/given-female.json) — 여성 이름
 - `given-open` — 성별을 가리지 않을 때만. 후계 생성 기본
-- [clans-hangnyeol.json](https://github.com/islee23520/seoul-kenshi/blob/main/GDD/game-logic/name-pools/clans-hangnyeol.json) — 본관명과 창작 글자 순서를 붙인 실험용 시드. 실존 문중 항렬표가 아닙니다. 목표 계약과 현재 구현의 차이는 [본관과 항렬](/world/Hangnyeol-and-Bon-gwan)에 둡니다.
+- [clans-hangnyeol.json](https://github.com/islee23520/seoul-kenshi/blob/main/Wikis/game-logic/name-pools/clans-hangnyeol.json) — 본관명과 창작 글자 순서를 붙인 실험용 시드. 실존 문중 항렬표가 아닙니다. 목표 계약과 현재 구현의 차이는 [본관과 항렬](/world/Hangnyeol-and-Bon-gwan)에 둡니다.
 
 한국어 이름 후보의 기본 표기는 `성 + 이름`입니다. 다른 작명 전통은 해당 문화의 원표기와 읽는 법을 보존합니다. 항렬 적용은 가족관계에서 확인한 세수와 글자·위치 규칙을 따르며 연령대로 계산하지 않습니다. 현재 생성기의 앞글자 덮어쓰기는 이 목표 계약을 충족하지 못합니다. 실존 인물이나 원작 인물을 그대로 옮긴 이름·전기를 새 창작 인물로 등록하지 않습니다.
 

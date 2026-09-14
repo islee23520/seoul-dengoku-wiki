@@ -4,11 +4,11 @@
 
 세계 진실은 행정 평면이 아니라 역·층·터널의 그래프다. 이 문서는 그 그래프를 **무엇을 재료로, 어떤 순서로, 어디까지 런타임이 갖고 있는지** 적는다.
 
-**설계 데이터.** 서울 25개 자치구, 이름 있는 역 목록, 주변 시설, 십육국 권역을 카탈로그로 둔다. 면적·시설·동별 내용은 [서울 지역 설정 데이터](regions/README.md)가 분모다. 분모는 2026-07-01 행정동 427개이며, 역 334는 그 전수가 아니다.
+**설계 데이터.** 서울 25개 자치구, 이름 있는 역 목록, 주변 시설, 십육국 권역을 카탈로그로 둔다. 면적·시설·동별 내용은 [서울 지역 설정 데이터](../../game-logic/regions/README.md)가 분모다. 분모는 2026-07-01 행정동 427개이며, 역 334는 그 전수가 아니다.
 
 **런타임.** `RouteGraph.CreateSeoul()`은 카탈로그 역 334와 OSM 인접 435를 로드한다. 영등포—신도림, 신도림—구로는 유지하고 영등포—구로는 없다. `CreateYeongdeungpoSindorimGuro()`는 Area 1 세 역 POC·테스트용으로 남긴다. Unity에 OSM PBF를 넣지 않았다. 내부 격자·시설 슬롯·16국 캠페인은 아직 없다.
 
-관련 문서: [서울과 지하철 레이어](/world/World-and-Subway-Layers), [서울 십육국](/world/Sixteen-States), [서울 지역 설정 데이터](regions/README.md), [서울 역 카탈로그](/world/Seoul-Station-Catalog), [역 내부에 들어가면](/world/Station-Interior-Construction), [이동과 조우](/rules/Travel-and-Encounters).
+관련 문서: [서울과 지하철 레이어](/world/World-and-Subway-Layers), [서울 십육국](/world/Sixteen-States), [서울 지역 설정 데이터](../../game-logic/regions/README.md), [서울 역 카탈로그](/world/Seoul-Station-Catalog), [역 내부에 들어가면](/world/Station-Interior-Construction), [이동과 조우](/rules/Travel-and-Encounters).
 
 ## 재료
 

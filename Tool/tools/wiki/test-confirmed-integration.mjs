@@ -21,7 +21,7 @@ import {
 const here = dirname(fileURLToPath(import.meta.url));
 const repositoryRoot = resolve(here, '..', '..', '..');
 const verifier = fileURLToPath(new URL('./verify-confirmed-integration.mjs', import.meta.url));
-const atlasPath = join(repositoryRoot, 'docs', 'game-logic', 'World-Narrative-Atlas.md');
+const atlasPath = join(repositoryRoot, 'Wikis', 'game-logic', 'World-Narrative-Atlas.md');
 
 function runLive(args) {
   const result = spawnSync(process.execPath, [verifier, ...args], {
@@ -101,7 +101,7 @@ test('Given current repository When B001 story-batch stage Then verifier exits 0
     [
       fileURLToPath(new URL('./verify-world-expansion.mjs', import.meta.url)),
       '--docs',
-      join(repositoryRoot, 'GDD', 'game-logic'),
+      join(repositoryRoot, 'Wikis', 'game-logic'),
       '--stage',
       'story-batch',
       '--batch',
@@ -417,7 +417,7 @@ test('Given excluded B017 When story-batch stage Then E_STORY_CONTENT and worldb
   const expansion = fileURLToPath(new URL('./verify-world-expansion.mjs', import.meta.url));
   const result = spawnSync(process.execPath, [
     expansion,
-    '--docs', join(repositoryRoot, 'GDD', 'game-logic'),
+    '--docs', join(repositoryRoot, 'Wikis', 'game-logic'),
     '--stage', 'story-batch',
     '--batch', 'B017',
     '--atlas', atlasPath,
@@ -430,7 +430,7 @@ test('Given excluded M007 When monster-batch stage Then E_MONSTER_CONTENT', () =
   const expansion = fileURLToPath(new URL('./verify-world-expansion.mjs', import.meta.url));
   const result = spawnSync(process.execPath, [
     expansion,
-    '--docs', join(repositoryRoot, 'GDD', 'game-logic'),
+    '--docs', join(repositoryRoot, 'Wikis', 'game-logic'),
     '--stage', 'monster-batch',
     '--batch', 'M007',
     '--atlas', atlasPath,

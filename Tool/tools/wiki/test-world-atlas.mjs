@@ -19,7 +19,7 @@ import { ISOMETRIC_DIAGRAM_ASSETS } from './world-atlas-schema.mjs';
 
 const verifier = fileURLToPath(new URL('./verify-world-expansion.mjs', import.meta.url));
 const repositoryRoot = resolve(dirname(verifier), '..', '..', '..');
-const liveDocs = join(repositoryRoot, 'GDD', 'game-logic');
+const liveDocs = join(repositoryRoot, 'Wikis', 'game-logic');
 const wikiAssets = join(repositoryRoot, 'Reference', 'assets', 'wiki');
 const atlasPath = join(liveDocs, 'World-Narrative-Atlas.md');
 const fixtures = [];

@@ -2,7 +2,7 @@
 """Emit contract-field DRAFTS for the 16-state named cast.
 
 Reads Cast-State-01..16, Cast-Index, and Core-Characters. Writes review
-artifacts under GDD/game-logic/name-pools/. Does not modify source corpus
+artifacts under Wikis/game-logic/name-pools/. Does not modify source corpus
 files. Python 3 stdlib only. Same inputs → same outputs.
 """
 from __future__ import annotations
@@ -404,7 +404,7 @@ def main() -> int:
         "--docs",
         type=Path,
         default=None,
-        help="GDD/game-logic directory (default: repo GDD/game-logic)",
+        help="Wikis/game-logic directory (default: repo Wikis/game-logic)",
     )
     args = ap.parse_args()
     root = repo_root()

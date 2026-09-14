@@ -24,11 +24,11 @@ VContainer 외 Makcha-Unity 패키지는 현재 모듈에 실제 호출자와 �
 - Repository와 domain contract는 Unity-free 경계를 유지합니다.
 - 같은 seed와 command log는 같은 상태와 원장 hash를 만들어야 합니다.
 
-상세 계약은 [`GDD/system-design/Unity-System-Design.md`](GDD/system-design/Unity-System-Design.md), 실행 순서는 [`GDD/game-logic/Unity-Architecture-Implementation-Plan.md`](GDD/game-logic/Unity-Architecture-Implementation-Plan.md)를 따릅니다.
+상세 계약은 [`GDD/system-design/Unity-System-Design.md`](Wikis/game-logic/Unity-System-Design.md), 실행 순서는 [`Wikis/game-logic/Unity-Architecture-Implementation-Plan.md`](Wikis/game-logic/Unity-Architecture-Implementation-Plan.md)를 따릅니다.
 
 ## 현재 구현 범위
 
-현재 모듈 `Unity POC 통합 코어 루프`는 `Bootstrap` App scope/FSM, 배타적 `MainTitle`/`Foundation` 화면 lease, uGUI 화면, 세 역 노선과 교섭·우회·전투·정산·복귀를 구현했습니다. 전투 Core는 30Hz 고정 틱의 실시간 진형·카드 규칙(`rtfc-owner-cards-v2`)이며, 분대 명령·집계 사상자 표현의 완료 검증은 남아 있습니다([실시간 진형·카드 전투](GDD/game-logic/Realtime-Formation-Card-Battle.md)). 동일 seed 재현과 중복 정산 거부를 실제 batchmode PlayMode에서 검증합니다. 생성 아트 슬롯 승인·연결은 별도 수용 조건이며, 코드 검증만으로 모듈 전체가 완료되지는 않습니다.
+현재 모듈 `Unity POC 통합 코어 루프`는 `Bootstrap` App scope/FSM, 배타적 `MainTitle`/`Foundation` 화면 lease, uGUI 화면, 세 역 노선과 교섭·우회·전투·정산·복귀를 구현했습니다. 전투 Core는 30Hz 고정 틱의 실시간 진형·카드 규칙(`rtfc-owner-cards-v2`)이며, 분대 명령·집계 사상자 표현의 완료 검증은 남아 있습니다([실시간 진형·카드 전투](Wikis/game-logic/Realtime-Formation-Card-Battle.md)). 동일 seed 재현과 중복 정산 거부를 실제 batchmode PlayMode에서 검증합니다. 생성 아트 슬롯 승인·연결은 별도 수용 조건이며, 코드 검증만으로 모듈 전체가 완료되지는 않습니다.
 
 ## 완료 판단
 

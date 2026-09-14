@@ -27,10 +27,10 @@
 
 | 파일 | 현재 내용 | 검토 상태 |
 |---|---|---|
-| [surnames.json](https://github.com/islee23520/seoul-kenshi/blob/main/GDD/game-logic/name-pools/surnames.json) | 한 글자 성씨 후보 | 분리 저장됨. 복성·다른 언어 표기까지 포괄하지 않음 |
-| [given-male.json](https://github.com/islee23520/seoul-kenshi/blob/main/GDD/game-logic/name-pools/given-male.json) | 남성 이름 후보 | 분리 저장됨. 성별 전용 사용이 보편적 사실이라는 뜻은 아님 |
-| [given-female.json](https://github.com/islee23520/seoul-kenshi/blob/main/GDD/game-logic/name-pools/given-female.json) | 여성 이름 후보 | 분리 저장됨. 공유 이름이 있을 수 있음 |
-| [clans-hangnyeol.json](https://github.com/islee23520/seoul-kenshi/blob/main/GDD/game-logic/name-pools/clans-hangnyeol.json) | 성씨별 본관 하나와 창작 글자 순서 | 실존 족보 자료가 아닌 검토용 시드 |
+| [surnames.json](https://github.com/islee23520/seoul-kenshi/blob/main/Wikis/game-logic/name-pools/surnames.json) | 한 글자 성씨 후보 | 분리 저장됨. 복성·다른 언어 표기까지 포괄하지 않음 |
+| [given-male.json](https://github.com/islee23520/seoul-kenshi/blob/main/Wikis/game-logic/name-pools/given-male.json) | 남성 이름 후보 | 분리 저장됨. 성별 전용 사용이 보편적 사실이라는 뜻은 아님 |
+| [given-female.json](https://github.com/islee23520/seoul-kenshi/blob/main/Wikis/game-logic/name-pools/given-female.json) | 여성 이름 후보 | 분리 저장됨. 공유 이름이 있을 수 있음 |
+| [clans-hangnyeol.json](https://github.com/islee23520/seoul-kenshi/blob/main/Wikis/game-logic/name-pools/clans-hangnyeol.json) | 성씨별 본관 하나와 창작 글자 순서 | 실존 족보 자료가 아닌 검토용 시드 |
 
 `given-open`은 [후계 문서](Heirs-Names-and-World-Ledger.md)에 남은 목표 칸이며 별도 구현 완료로 보지 않는다. 항렬 JSON에 실존 본관명이 있어도 그 글자 순서가 해당 문중의 사실이라는 뜻은 아니다. 실존 문중의 확인된 표와 창작 가계의 표는 출처·식별자를 분리해야 한다.
 

@@ -10,7 +10,7 @@
 
 브라우저에서 코어 루프를 직접 돌리는 웹 POC는 [`Game/play/`](Game/play/)입니다. 거점 → 427동 목적지 → 조우(협상·우회·전투) → 진형 → 실시간 카드 전투 → 정산 한 번 → 귀환. 주소는 `https://seoul-kenshi.vercel.app/play/`입니다. 이동 비용은 직선 거리 웹 규칙이고 Unity 코어 전체가 아닙니다. PR [#90](https://github.com/islee23520/seoul-kenshi/pull/90)으로 main에 들어왔습니다.
 
-서울 지역 총람은 [`GDD/game-logic/regions/`](GDD/game-logic/regions/README.md)와 [`GDD/system-design/regions/`](GDD/system-design/regions/)입니다. 선택 경계는 2026-07-01 행정동 25구·427동입니다. OSM 스냅샷은 2026-09-04T23:00:00Z입니다. 역 334는 이동 그래프이지 서울 면적의 증명이 아닙니다.
+서울 지역 총람은 [`Wikis/game-logic/regions/`](Wikis/game-logic/regions/README.md)와 [`GDD/system-design/regions/`](GDD/system-design/regions/)입니다. 선택 경계는 2026-07-01 행정동 25구·427동입니다. OSM 스냅샷은 2026-09-04T23:00:00Z입니다. 역 334는 이동 그래프이지 서울 면적의 증명이 아닙니다.
 
 들어온 구현:
 
@@ -41,7 +41,7 @@
 
 ## 문서
 
-게임 설계 원본은 [`GDD/game-logic/`](GDD/game-logic/Home.md)에 있습니다. GitHub Wiki는 이 문서의 읽기 전용 미러로 게시합니다.
+게임 설계 원본은 [`Wikis/game-logic/`](Wikis/game-logic/Home.md)에 있습니다. GitHub Wiki는 이 문서의 읽기 전용 미러로 게시합니다.
 
 이슈를 열거나 작업을 추적할 때는 [`CONTRIBUTING.md`](CONTRIBUTING.md)를 따릅니다. 웹에서는 YAML 이슈 폼만 열고, 빈 이슈는 쓰지 않습니다.
 

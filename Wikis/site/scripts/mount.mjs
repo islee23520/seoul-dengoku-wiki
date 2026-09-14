@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url'
 const scriptDir = dirname(fileURLToPath(import.meta.url))
 const docsSiteRoot = join(scriptDir, '..')
 const repoRoot = join(docsSiteRoot, '..', '..')
-const gameLogicRoot = join(repoRoot, 'GDD', 'game-logic')
+const gameLogicRoot = join(repoRoot, 'Wikis', 'game-logic')
 const referenceDir = join(repoRoot, 'Research', 'canon-reference')
 
 const GITHUB_WIKI =
