@@ -45,7 +45,7 @@
 | [전략에서 전투로](/rules/Strategy-Battle-Roundtrip) | 세계 상태를 전투에 넘기고 결과를 한 번만 반영하는 법 |
 | [캐릭터 미술](/rules/Character-Art-Direction) | 2.5등신 전술 실루엣과 인물 프로필 초상 규칙 |
 | [에셋이 들어오는 길](/design/Asset-Pipeline) | 의도 JSON을 그래프로 컴파일·검사하고 생성부터 승인까지 가는 설명서 |
-| [UI가 코드로 들어오는 길](/design/Ui-Implementation-Pipeline) | HTML 시안을 고르고 동작 목업을 동결한 뒤에야 uGUI로 옮기는 순서 |
+| [UI가 코드로 들어오는 길](/design/Ui-Implementation-Pipeline) | HTML 목업을 먼저 고정한 뒤 uGUI로 옮기는 화면 경로 |
 | [유니티 구조](/rules/Unity-Architecture) | 규칙과 화면을 나누는 영역별 책임 |
 | [Unity 시스템 설계 계약](/rules/Unity-System-Design) | FSM, VContainer, Singleton과 Repository의 구현 전 계약 |
 | [Unity 아키텍처 구현 계획](/rules/Unity-Architecture-Implementation-Plan) | 계약을 RED→GREEN으로 적용하고 검증하는 순서 |

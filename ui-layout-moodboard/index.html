@@ -160,6 +160,7 @@ footer{border-top:1px solid var(--stroke-quiet);margin-top:70px;padding-top:24px
     <a href="#s9">정산</a>
     <a href="#s10">공간 문법</a>
     <a href="#s11">파이프라인</a>
+    <a href="./preview.html">실측 미리보기</a>
   </div>
 </nav>
 
@@ -387,32 +388,9 @@ footer{border-top:1px solid var(--stroke-quiet);margin-top:70px;padding-top:24px
 <!-- 06 전투 -->
 <section id="s6">
   <div class="sec-head"><span class="sec-no">06</span><h2>전투 HUD — 3분할과 카드 독</h2></div>
-  <p class="lead">좌측 HUD 280, 중앙 5×5 격자(셀 64), 우측 로그 280. 아래쪽에 132×180 카드 독이 붙고
-    시간은 30Hz 고정 틱으로 흐른다. 카메라와 격자 규칙은 탐색과 같은 문법을 그대로 쓴다.</p>
-  <div class="wf-viewport" style="height:396px">
-    <div class="wf">
-      <div class="box" style="left:24px;top:24px;width:280px;height:400px">
-        HUD<br />battle-hp · battle-morale<br />재충전 게이지<span class="px">280</span></div>
-      <div class="box" style="left:320px;top:24px;width:640px;height:400px;padding:8px">
-        <div style="display:grid;grid-template-columns:repeat(5,64px);grid-template-rows:repeat(5,64px);gap:4px">
-          <div class="cell ally"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell foe"></div>
-          <div class="cell"></div><div class="cell ally"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
-          <div class="cell"></div><div class="cell"></div><div class="cell ally"></div><div class="cell"></div><div class="cell foe"></div>
-          <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
-          <div class="cell"></div><div class="cell foe"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
-        </div>
-        battle-grid · 셀 64<span class="px">5 × 5 · 1.5m</span>
-      </div>
-      <div class="box" style="left:976px;top:24px;width:280px;height:400px">
-        전투 기록 · 재증원 예보<br />battle-reinforcement-forecast<span class="px">280</span></div>
-      <div class="box hi" style="left:320px;top:440px;width:600px;height:180px;flex-direction:row;gap:18px">
-        <div style="width:132px;height:180px;margin-top:-40px;border:2px solid var(--stroke-focus);border-radius:4px;display:flex;align-items:flex-end;justify-content:center;padding-bottom:6px;font-size:11px;color:var(--signal-live)">카드 132×180</div>
-        <div style="width:132px;height:173px;border:1.5px dashed var(--stroke-quiet);border-radius:4px;display:flex;align-items:flex-end;justify-content:center;padding-bottom:6px;font-size:11px;color:var(--text-muted)">선택 시 +7px 상승</div>
-        <div style="align-self:center;font-size:12px;color:var(--text-secondary)">재충전 베일은 아래에서 위로 걷힌다</div>
-      </div>
-      <span class="name" style="left:24px;top:650px">battle-play-pause · 일시정지는 해시 입력 제외</span>
-    </div>
-  </div>
+  <p class="lead">전투는 턴제 타일 SRPG가 아니다. 게임뷰는 고정 아이소 승강장을 채우고, 분대(6대 6, 분대당 병사 4 + 리더)가
+    실시간으로 움직인다. HUD는 그 위 오버레이 — 상단 미터, 하단 132×180 카드 독. 중앙 5×5 셀 보드는 계약이 아니다.</p>
+  <p><a href="./preview.html">게임뷰 HUD 미리보기</a>에서 승강장 위 분대와 카드 독을 본다.</p>
   <h3>카드와 판정 수치</h3>
   <table>
     <tr><th>항목</th><th>값</th><th>비고</th></tr>
