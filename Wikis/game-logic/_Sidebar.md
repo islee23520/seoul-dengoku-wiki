@@ -25,6 +25,7 @@
   * [본관과 항렬](Hangnyeol-and-Bon-gwan)
   * [랜덤 추가 로스터](Random-Cast-Roster)
   * [시나리오 타임라인](Scenario-Timeline)
+  * [재벌 가문과 세기의 세력](Chaebol-Houses-and-Century-Factions)
 * [세계 서사 지도](World-Narrative-Atlas)
   * [세계 확장 색인](World-Expansion-Index)
   * [적대 생태 색인](Hostile-Ecology-Index)
