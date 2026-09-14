@@ -112,7 +112,11 @@ class ContentTests(unittest.TestCase):
                 "buildings": [{"anchor_ref": "osm:node:42", "name": "저수조 옆 주민센터",
                                "observed_use": "주민센터", "river": "inland",
                                "opening_use": "배급 창구", "how": "1층만 연다",
-                               "role": "support"}],
+                               "role": "support",
+                               "floors": [{"level": 1, "label": "민원 창구", "state": "occupied",
+                                            "contents": "배급 창구", "condition": "야간만 연다"},
+                                           {"level": 2, "label": "서고", "state": "sealed",
+                                            "contents": "동 장부", "condition": "철문"}]}],
                 "core_station": False,
                 "territory": {"status": "held", "holders": [{"polity": "S06", "control": 70}]},
                 "action": {"id": "1111053000-valve", "label": "밸브 점검",
@@ -158,6 +162,10 @@ class ContentTests(unittest.TestCase):
     def test_held_requires_majority_control(self):
         self.region["content"]["territory"] = {"status": "held", "holders": [{"polity": "S06", "control": 40}]}
         self.assertTrue(any(e.startswith("held_requires_majority:") for e in content_errors(self.region)))
+
+    def test_missing_floors_rejected(self):
+        del self.region["content"]["buildings"][0]["floors"]
+        self.assertTrue(any(e.startswith("missing_floors:") for e in content_errors(self.region)))
 
     def test_calendar_date_is_not_a_fictional_epoch(self):
         self.region["content"]["fictional_epoch"] = "2026-09-12"

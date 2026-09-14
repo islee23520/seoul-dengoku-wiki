@@ -98,6 +98,26 @@ def content_errors(region):
                 errors.append("station_must_be_core:" + region["id"])
             if building.get("observed_use") != "역" and building.get("role") == "core-station":
                 errors.append("non_station_core:" + region["id"])
+            floors = building.get("floors")
+            if not isinstance(floors, list) or not floors:
+                errors.append("missing_floors:" + region["id"])
+            else:
+                allowed_state = {"flooded", "sealed", "occupied", "abandoned", "yard"}
+                for storey in floors:
+                    if not isinstance(storey, dict):
+                        errors.append("invalid_floor_row:" + region["id"])
+                        continue
+                    if storey.get("level") in (None, ""):
+                        errors.append("missing_floor_level:" + region["id"])
+                    for key in ("label", "state", "contents", "condition"):
+                        if not text_value(storey.get(key)):
+                            errors.append("missing_floor_" + key + ":" + region["id"])
+                    if storey.get("state") not in allowed_state:
+                        errors.append("invalid_floor_state:" + region["id"])
+                if building.get("observed_use") == "역" and not any(
+                    isinstance(s, dict) and s.get("label") in {"선로", "승강장", "대합실"} for s in floors
+                ):
+                    errors.append("station_missing_layer:" + region["id"])
     has_core = any(isinstance(b, dict) and b.get("role") == "core-station" for b in (buildings or []))
     if content.get("core_station") is not has_core:
         errors.append("core_station_mismatch:" + region["id"])
