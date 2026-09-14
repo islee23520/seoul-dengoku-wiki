@@ -149,6 +149,71 @@ await testCase('banned prose is rejected case-insensitively', async () => {
   await expectBannedVisibleText('banned-case', '# 나쁨\n\nClone this system.\n', 'the gate must be case-insensitive');
 });
 
+await testCase('banned clone wording still matches clones', async () => {
+  await expectBannedVisibleText('banned-clones', '# 나쁨\n\nclones of this system.\n', 'clone must still match clones as a substring');
+});
+
+// Reference-derived tokens, assembled the same way as the gate so this file
+// never carries the reference names as literals either.
+const REF_ABBREV = 'ck' + '2';
+const REF_ABBREV_LONG = 'ck' + 'ii';
+const REF_STYLE_ALIAS = '만두' + '눈';
+const SUCCESSOR_EN = ['Crus' + 'ader', 'Ki' + 'ngs', 'I' + 'II'].join(' ');
+const SUCCESSOR_KO = ['크루세' + '이더', '킹' + '즈', '3'].join(' ');
+const SUCCESSOR_TOKEN = 'CK' + '3';
+
+await testCase('banned prose is rejected (reference abbreviation)', async () => {
+  await expectBannedVisibleText('banned-ref-abbrev', `# 나쁨\n\n${REF_ABBREV.toUpperCase()} portraits.\n`, 'reference abbreviation wording must be rejected');
+});
+
+await testCase('banned prose is rejected (long reference abbreviation)', async () => {
+  await expectBannedVisibleText('banned-ref-abbrev-long', `# 나쁨\n\n${REF_ABBREV_LONG.toUpperCase()} portraits.\n`, 'long reference abbreviation wording must be rejected');
+});
+
+await testCase('banned prose is rejected (reference style alias)', async () => {
+  await expectBannedVisibleText('banned-ref-style-alias', `# 나쁨\n\n${REF_STYLE_ALIAS} 스타일입니다.\n`, 'reference style alias wording must be rejected');
+});
+
+await testCase('banned reference abbreviation is rejected case-insensitively', async () => {
+  await expectBannedVisibleText('banned-ref-abbrev-case', `# 나쁨\n\n${REF_ABBREV} portraits.\n`, 'the reference abbreviation gate must be case-insensitive');
+});
+
+await testCase('malformed reference tokens are still inspected', async () => {
+  await expectBannedVisibleText(
+    'ref-abbrev-zero-width',
+    `# 제목\n\n${REF_ABBREV.toUpperCase().slice(0, 1)}\u200B${REF_ABBREV.toUpperCase().slice(1)} portraits.\n`,
+    'a zero-width space must not split the reference abbreviation',
+  );
+  await expectBannedVisibleText(
+    'ref-style-alias-html',
+    `# 제목\n\n<span>${REF_STYLE_ALIAS}</span>\n`,
+    'the reference style alias inside raw HTML must be rejected',
+  );
+});
+
+await testCase('successor-edition names and stat tables are not the reference abbreviation', async () => {
+  await expectAcceptedVisibleText(
+    'successor-korean',
+    `# 제목\n\n${SUCCESSOR_KO} 참조.\n`,
+    `the reference abbreviation must not match ${SUCCESSOR_KO}`,
+  );
+  await expectAcceptedVisibleText(
+    'successor-english',
+    `# 제목\n\n${SUCCESSOR_EN} reference.\n`,
+    `the reference abbreviation must not match ${SUCCESSOR_EN}`,
+  );
+  await expectAcceptedVisibleText(
+    'successor-token',
+    `# 제목\n\n${SUCCESSOR_TOKEN} 인물 중심 대전략.\n`,
+    `the reference abbreviation must not match ${SUCCESSOR_TOKEN}`,
+  );
+  await expectAcceptedVisibleText(
+    'luck2-stat-table',
+    '# 제목\n\n| Myrmidon / Swordmaster | Spd4·Luck2 / Spd5·Luck3 |\n',
+    'the reference abbreviation must not match Luck2',
+  );
+});
+
 // ---------------------------------------------------------------------------
 // Filesystem boundary
 // ---------------------------------------------------------------------------
