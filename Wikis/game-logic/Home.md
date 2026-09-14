@@ -39,7 +39,7 @@
 | [이주민 회랑](Diaspora-Corridors.md) · [회랑 인물](Cast-Corridors-Index.md) | 대림·구로공단·이태원·용산 위에 얹는 다국적 회랑과 시드 인물 |
 | [야망과 관계가 움직이는 정치](Ambitions-and-Relations.md) | 이름 있는 인물이 동맹, 배신, 전쟁과 계승을 만드는 규칙 |
 | [후계, 이름 로스터, 세계 원장](Heirs-Names-and-World-Ledger.md) | 문화 성명 풀에서 후계를 만들고, 면담·거래가 세계 사건에 쌓이는 규칙 |
-| [시나리오 타임라인](Scenario-Timeline.md) | 붕괴 이전부터 패권전까지 조건에 따라 갈라지는 연대기 |
+| [시나리오 타임라인](Scenario-Timeline.md) | 붕괴 이전·건국기·공백의 세기·개막 이후. 조건에 따라 갈라지는 연대기 |
 | [이 시대의 기술과 무구](Era-Arms-and-Tech-Level.md) | 2026 기술에서 붕괴 이후 생업 공구·제식·군용 잔존·로스트 회수 |
 | [세계 서사 지도](World-Narrative-Atlas.md) | 가문·적대 생태·몬스터·서사 배치의 원본 |
 | [이동과 조우](Travel-and-Encounters.md) | 4방향 행동과 원정 위험 |
