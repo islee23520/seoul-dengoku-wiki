@@ -1,5 +1,6 @@
 * [홈](Home)
 * [이 게임이 뭔지](Game-Thesis)
+* [온라인 유저 여정](Online-User-Journey)
 * [서울과 지하철 레이어](World-and-Subway-Layers)
 * [월드맵을 어떻게 구성하나](World-Map-Construction)
 * [서울 지역 설정 데이터](regions/README)
