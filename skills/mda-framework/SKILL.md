@@ -31,6 +31,12 @@ Write into `tools/design-store` documents:
 - `dynamics[].body` + `sourcePath`
 - `aesthetics[].kind` + `body` + `sourcePath`
 
-Every `body` must be a substring of an existing canon file (`Concept.md`, `Design.md`, `Intent.md`, or `docs/game-logic/*.md`). If the canon has no sentence, leave the field empty and fail the document. Do not paraphrase new lore.
+Every `body` must be a substring of an existing canon file (`Concept.md`, `Design.md`, `Intent.md`, or `docs/game-logic/*.md`). Fill a slot with what that layer **is**:
+
+- Mechanics: verbs, numbers, camera as owned (Intent 결정 5: 2.5D / 용사주식회사), map graph.
+- Dynamics: runtime loops (Songs of Silence realtime formation + cards).
+- Aesthetics: felt response from Design.md (wet concrete, dead signage).
+
+Never fill a slot with “not X”, “없습니다”, “아닌”, missing lists, or isometric-as-required. If canon has no positive sentence, omit the slot.
 
 Then `node tools/design-store/mda-store.mjs put --db <db> --json <instance.json>`.

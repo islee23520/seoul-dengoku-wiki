@@ -31,21 +31,21 @@ const SAMPLE = {
   },
   mechanics: [
     {
-      body: '고정 직교 아이소메트릭 카메라와 4방향 타일 격자를 공유합니다',
-      sourcePath: 'Concept.md',
+      body: '시야와 카메라는 용사주식회사 채널의 2.5D 전투 화면을 따른다.',
+      sourcePath: 'Intent.md',
     },
   ],
   dynamics: [
     {
-      body: '실시간 진형·카드 전투',
-      sourcePath: 'Concept.md',
+      body: '전투 형태는 Songs of Silence와 같은 실시간 진형·카드 전투다.',
+      sourcePath: 'Intent.md',
     },
   ],
   aesthetics: [
     {
-      kind: 'Challenge',
-      body: '전투는 턴제 SRPG가 아닙니다',
-      sourcePath: 'Concept.md',
+      kind: 'Sensation',
+      body: '젖은 콘크리트, 꺼진 안내판, 비상 전원, 녹슨 선로, 손때 묻은 노선도',
+      sourcePath: 'Design.md',
     },
   ],
 };
@@ -141,7 +141,7 @@ test('export page HTML contains a mechanics string from SQLite', () => {
     const htmlPath = join(dir, 'index.html');
     exportDocumentPage({ dbPath, outPath: htmlPath, documentId: 'janseon-core' });
     const html = readFileSync(htmlPath, 'utf8');
-    assert.match(html, /4방향 타일 격자/);
+    assert.match(html, /2\.5D 전투 화면/);
     const db = new DatabaseSync(dbPath, { readOnly: true });
     const row = db.prepare('SELECT body FROM mechanics WHERE document_id = ?').get('janseon-core');
     db.close();
