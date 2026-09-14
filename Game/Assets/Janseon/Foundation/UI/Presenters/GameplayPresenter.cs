@@ -93,6 +93,13 @@ namespace Janseon.Foundation.Composition
             UiElementNames.StationGuro,
         };
 
+        static readonly string[] TerritoryRows =
+        {
+            UiElementNames.TerritoryRowYeongdeungpo,
+            UiElementNames.TerritoryRowSindorim,
+            UiElementNames.TerritoryRowGuro,
+        };
+
         public bool IsReady { get; private set; }
 
         public IReadOnlyList<string> FocusOrderNames => focusOrder;
@@ -388,10 +395,22 @@ namespace Janseon.Foundation.Composition
 
             }
 
+            for (var i = 0; i < StationNames.Length && i < TerritoryRows.Length; i++)
+            {
+                Transform row = UguiHudBuilder.Find(root, TerritoryRows[i]);
+                if (row == null)
+                {
+                    continue;
+                }
+
+                SetStateColor(row, StationNames[i] == snapshot.CurrentStationElement);
+            }
+
             SetVisible(UiElementNames.EncounterChoices, snapshot.VisiblePanel == GameplayPanelId.Encounter);
             bool battle = snapshot.VisiblePanel == GameplayPanelId.Battle;
             SetVisible(UiElementNames.RouteRail, !battle);
             SetVisible(UiElementNames.DeployPanel, !battle);
+            SetVisible(UiElementNames.TerritoryPanel, !battle);
             SetVisible("party-strip", !battle);
             SetVisible(UiElementNames.BattleHud, battle);
             SetVisible(UiElementNames.BattleGrid, battle);

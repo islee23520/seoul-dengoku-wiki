@@ -151,6 +151,53 @@ namespace Janseon.Foundation.Tests
         }
 
         [Test]
+        public void Gameplay_CampaignChrome_TerritoryRelationsTravelDetail_ExistOutsideBattleHud()
+        {
+            RectTransform root = UguiHudBuilder.BuildGameplay(null);
+
+            string[] campaignChrome =
+            {
+                UiElementNames.TerritoryPanel,
+                UiElementNames.TerritoryHeading,
+                UiElementNames.TerritoryRowYeongdeungpo,
+                UiElementNames.TerritoryRowSindorim,
+                UiElementNames.TerritoryRowGuro,
+                UiElementNames.RelationsHeading,
+                UiElementNames.RelationsRowExplorerMedic,
+                UiElementNames.RelationsRowExplorerPatrol,
+                UiElementNames.RelationsRowMedicPatrol,
+                UiElementNames.TravelDetailHeading,
+                UiElementNames.TravelPath,
+                UiElementNames.TravelCost,
+                UiElementNames.TravelForecast,
+                UiElementNames.TravelState,
+            };
+
+            Transform battleHud = UguiHudBuilder.Find(root, UiElementNames.BattleHud);
+            Assert.That(battleHud, Is.Not.Null, "battle HUD must exist for the isolation check");
+            foreach (string name in campaignChrome)
+            {
+                Transform element = UguiHudBuilder.Find(root, name);
+                Assert.That(element, Is.Not.Null, "missing campaign chrome " + name);
+                for (Transform ancestor = element.parent; ancestor != null; ancestor = ancestor.parent)
+                {
+                    Assert.That(ancestor != battleHud, Is.True, name + " must stay outside the battle HUD");
+                }
+            }
+
+            CampaignState stationMaster = CampaignApi.StartNewGame(
+                22, StationId.Yeongdeungpo, "station-master", StartingPreset.StationMaster);
+            var presenter = new GameplayPresenter();
+            Assert.That(presenter.BindForTest(root), Is.True,
+                "presenter bind must succeed once all campaign chrome names are built");
+            presenter.ApplySnapshot(GameplayUiSnapshot.FromCampaign(stationMaster, null));
+            Assert.That(
+                UguiHudBuilder.Find(root, UiElementNames.TerritoryPanel).gameObject.activeInHierarchy,
+                Is.True,
+                "territory panel is campaign chrome and must be visible outside battle");
+        }
+
+        [Test]
         public void Gameplay_Canvas_ExposesRequiredStableNames()
         {
             RectTransform gameplayRoot = UguiHudBuilder.BuildGameplay(null);
