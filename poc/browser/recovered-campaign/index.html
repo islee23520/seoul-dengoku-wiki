@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Windows .omo HTML에서 회수한 잔선: 서울 캠페인 루프를 현재 실시간 브라우저 POC에 연결한 통합 화면"
+    />
+    <title>잔선: 서울 · 회수 캠페인 통합 POC</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="campaign-shell">
+      <header class="campaign-header">
+        <a class="brand" href="../">
+          <span>JANSEON: SEOUL</span>
+          <strong>회수 캠페인 통합</strong>
+        </a>
+        <div class="resources" aria-label="캠페인 자원">
+          <span><small>보급</small><b id="supplies">100</b></span>
+          <span><small>평판</small><b id="reputation">0</b></span>
+          <span><small>경과</small><b id="day">1일</b></span>
+          <span><small>층</small><b id="layer">B1</b></span>
+        </div>
+      </header>
+
+      <nav class="stage-rail" aria-label="회수 게임 루프">
+        <span data-rail="hub">관리</span>
+        <span data-rail="route">원정</span>
+        <span data-rail="encounter">조우</span>
+        <span data-rail="formation">진형</span>
+        <span data-rail="battle">실시간 전투</span>
+        <span data-rail="settlement">정산</span>
+      </nav>
+
+      <main id="campaign-view" tabindex="-1"></main>
+
+      <footer class="campaign-footer">
+        <span>Windows 원본 <code>fullgame-example-v3.html</code> 기반</span>
+        <a href="./SOURCE-COMPARISON.md">소스 비교·적용 범위</a>
+        <a href="../">모든 POC 표면</a>
+      </footer>
+    </div>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

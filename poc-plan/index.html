@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="잔선: 서울 — 레퍼런스 게임 조사 기반 POC 플랜. 차용·거부·잠긴 코어와 다음 슬라이스를 한 화면에서 가른다." />
+<title>잔선: 서울 · 레퍼런스 POC 플랜</title>
+<style>
+:root{
+  --bg-void:#0B111C; --bg-panel:#141C2A; --bg-panel-raised:#1B2536; --bg-well:#0E1622;
+  --stroke-quiet:#2A3548; --stroke-focus:#C9A227; --stroke-danger:#8B3A3A;
+  --text-primary:#E6EAF0; --text-secondary:#9AA6B2; --text-muted:#6B7684;
+  --accent-line:#3D7EA6; --accent-safe:#3F6B54; --accent-talk:#5B6B8A; --accent-fight:#8B4A3A;
+  --signal-live:#C9A227; --grid-line:#243044;
+  --radius-sm:2px; --radius-md:4px;
+  --font-stack:"Pretendard","Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;
+  --mono-stack:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg-void);color:var(--text-primary);font-family:var(--font-stack);
+  font-size:15px;line-height:1.7;word-break:keep-all;overflow-wrap:break-word}
+a{color:var(--accent-line);text-decoration:none;border-bottom:1px solid var(--stroke-quiet)}
+a:hover{color:var(--signal-live);border-bottom-color:var(--signal-live)}
+code{font-family:var(--mono-stack);font-size:.86em;color:var(--text-secondary);
+  background:var(--bg-well);border:1px solid var(--stroke-quiet);border-radius:var(--radius-sm);
+  padding:1px 5px}
+button{font:inherit;color:inherit;cursor:pointer}
+nav.toc{position:sticky;top:0;z-index:50;background:rgba(11,17,28,.94);
+  border-bottom:1px solid var(--stroke-quiet);backdrop-filter:blur(6px)}
+nav.toc .in{max-width:1180px;margin:0 auto;padding:10px 24px;display:flex;gap:14px;
+  flex-wrap:wrap;align-items:center}
+nav.toc .brand{font-weight:600;letter-spacing:.06em;color:var(--text-muted);font-size:12px}
+nav.toc a{font-size:12.5px;border:none;color:var(--text-secondary);padding:2px 4px}
+nav.toc a:hover{color:var(--signal-live)}
+main{max-width:1180px;margin:0 auto;padding:28px 24px 80px}
+.kicker{font-family:var(--mono-stack);font-size:12px;color:var(--signal-live);
+  letter-spacing:.14em;margin-bottom:8px}
+h1{font-size:28px;font-weight:600;margin-bottom:8px}
+p.lead{color:var(--text-secondary);max-width:72ch;margin-bottom:18px}
+.note{background:var(--bg-well);border:1px solid var(--stroke-quiet);
+  border-left:3px solid var(--accent-line);border-radius:var(--radius-md);
+  padding:12px 16px;font-size:13.5px;color:var(--text-secondary);margin:14px 0;max-width:84ch}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0 8px}
+.stat{background:var(--bg-panel);border:1px solid var(--stroke-quiet);border-radius:var(--radius-md);
+  padding:12px 14px}
+.stat b{display:block;font-family:var(--mono-stack);font-size:20px;color:var(--signal-live);font-weight:600}
+.stat span{font-size:12px;color:var(--text-muted)}
+section{margin-top:48px;scroll-margin-top:56px}
+.sec-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
+  border-bottom:1px solid var(--stroke-quiet);padding-bottom:10px;margin-bottom:18px}
+.sec-no{font-family:var(--mono-stack);color:var(--signal-live);font-size:13px}
+h2{font-size:22px;font-weight:600}
+h3{font-size:15px;font-weight:600;margin:18px 0 8px;color:var(--text-primary);
+  border-left:3px solid var(--accent-line);padding-left:10px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 14px}
+.filter{border:1px solid var(--stroke-quiet);background:var(--bg-panel);border-radius:var(--radius-sm);
+  padding:5px 11px;font-size:12.5px;color:var(--text-secondary)}
+.filter:hover,.filter[aria-pressed="true"]{border-color:var(--stroke-focus);color:var(--signal-live)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.card{background:var(--bg-panel);border:1px solid var(--stroke-quiet);border-radius:var(--radius-md);
+  padding:14px 14px 12px;text-align:left;width:100%}
+.card:hover,.card.active{border-color:var(--stroke-focus)}
+.card .tag{font-family:var(--mono-stack);font-size:11px;color:var(--accent-line);letter-spacing:.04em}
+.card h3{border:none;padding:0;margin:4px 0 6px;font-size:16px}
+.card p{font-size:13px;color:var(--text-secondary);max-width:none}
+.verdict{display:inline-block;font-size:11px;border:1px solid var(--stroke-quiet);
+  border-radius:var(--radius-sm);padding:1px 7px;margin-right:4px;margin-top:8px}
+.verdict.take{border-color:var(--accent-safe);color:#7fae8f}
+.verdict.part{border-color:var(--signal-live);color:var(--signal-live)}
+.verdict.drop{border-color:var(--stroke-danger);color:#c98a8a}
+.detail{margin-top:14px;background:var(--bg-well);border:1px solid var(--stroke-quiet);
+  border-radius:var(--radius-md);padding:16px 18px;min-height:8rem}
+.detail h3{margin-top:0}
+.detail ul{margin:6px 0 10px 18px;color:var(--text-secondary);font-size:13.5px}
+.detail li{margin:3px 0}
+.loop{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin:12px 0}
+.stage{background:var(--bg-panel);border:1px solid var(--stroke-quiet);border-radius:var(--radius-md);
+  padding:10px 8px;text-align:center;font-size:12.5px}
+.stage .n{display:block;font-family:var(--mono-stack);color:var(--accent-line);font-size:11px;margin-bottom:4px}
+.stage.active{border-color:var(--stroke-focus);box-shadow:inset 0 -2px 0 var(--signal-live)}
+.stage.done{border-color:var(--accent-safe)}
+.slice{display:grid;grid-template-columns:92px 1fr auto;gap:12px;align-items:start;
+  background:var(--bg-panel);border:1px solid var(--stroke-quiet);border-radius:var(--radius-md);
+  padding:12px 14px;margin:8px 0;width:100%;text-align:left}
+.slice:hover,.slice.active{border-color:var(--stroke-focus)}
+.slice .id{font-family:var(--mono-stack);font-size:12px;color:var(--signal-live)}
+.slice h3{margin:0;border:none;padding:0;font-size:15px}
+.slice p{margin:4px 0 0;font-size:13px;color:var(--text-secondary);max-width:none}
+.status{font-size:11.5px;border:1px solid var(--stroke-quiet);border-radius:var(--radius-sm);
+  padding:3px 8px;white-space:nowrap}
+.status.locked{border-color:var(--accent-safe);color:#7fae8f}
+.status.poc{border-color:var(--signal-live);color:var(--signal-live)}
+.status.contract{border-color:var(--accent-talk);color:#9aa8c4}
+.status.open{border-color:var(--stroke-danger);color:#c98a8a}
+.status.assume{border-color:var(--stroke-quiet);color:var(--text-muted)}
+.matrix{width:100%;border-collapse:collapse;font-size:13px}
+.matrix th,.matrix td{border:1px solid var(--stroke-quiet);padding:7px 9px;text-align:left;vertical-align:top}
+.matrix th{background:var(--bg-panel-raised);color:var(--text-secondary);font-weight:600}
+.matrix td.num{font-family:var(--mono-stack);text-align:right}
+.hidden{display:none}
+.play{display:grid;grid-template-columns:1fr 280px;gap:16px;align-items:start}
+.board{background:var(--bg-panel);border:1px solid var(--stroke-quiet);border-radius:var(--radius-md);
+  padding:16px;min-height:220px}
+.board .route{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:10px 0 14px}
+.node{width:86px;height:54px;border:1px solid var(--stroke-quiet);border-radius:var(--radius-md);
+  display:flex;align-items:center;justify-content:center;font-size:12.5px;background:var(--bg-well)}
+.node.here{border-color:var(--stroke-focus);color:var(--signal-live)}
+.edge{color:var(--text-muted);font-family:var(--mono-stack);font-size:12px}
+.actions{display:flex;gap:8px;flex-wrap:wrap}
+.act{border:1px solid var(--stroke-quiet);background:var(--bg-panel-raised);border-radius:var(--radius-sm);
+  padding:6px 12px;font-size:13px}
+.act:hover:not(:disabled){border-color:var(--stroke-focus)}
+.act:disabled{opacity:.4;cursor:not-allowed}
+.act.talk{border-color:var(--accent-talk)}
+.act.safe{border-color:var(--accent-safe)}
+.act.fight{border-color:var(--accent-fight)}
+.log{background:var(--bg-well);border:1px solid var(--stroke-quiet);border-radius:var(--radius-md);
+  padding:12px;font-size:12.5px;color:var(--text-secondary);min-height:220px;
+  font-family:var(--mono-stack);white-space:pre-wrap}
+footer{margin-top:56px;border-top:1px solid var(--stroke-quiet);padding-top:16px;
+  font-size:12.5px;color:var(--text-muted);line-height:1.9}
+.empty{color:var(--text-muted);font-size:13.5px}
+@media(max-width:900px){
+  .stats{grid-template-columns:1fr 1fr}
+  .loop,.play{grid-template-columns:1fr}
+  .slice{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<nav class="toc">
+  <div class="in">
+    <a class="brand" href="../">잔선: 서울</a>
+    <a href="#refs">레퍼런스</a>
+    <a href="#borrow">차용 매트릭스</a>
+    <a href="#plan">POC 슬라이스</a>
+    <a href="#loop">루프 시뮬</a>
+    <a href="#lock">잠긴 수치</a>
+  </div>
+</nav>
+<main>
+  <p class="kicker">REFERENCE → POC PLAN · 2026-09-13</p>
+  <h1>레퍼런스 조사로 짠 POC 플랜</h1>
+  <p class="lead">조사한 전략·전술 게임에서 무엇을 가져오고 무엇을 버렸는지가 먼저다.
+    그 선택이 세 역 POC와 실시간 진형·카드 전투로 어떻게 접히는지, 다음 슬라이스는 어디서 멈추는지를
+    이 화면에서 가른다. 문서는 설계이고, 여기 상태 칩은 런타임 확정과 가정을 섞지 않는다.</p>
+  <p class="note">공개 표면은 K-시스템이라는 내부 별칭을 쓴다. 목표 형태는 2026-09-07 소유자 결정:
+    <strong>4X + RPG</strong>, 전투는 <strong>실시간 진형·카드</strong>. 기준은 Songs of Silence,
+    전투 바깥 계약의 정밀 참조는 라벨렌 전기.</p>
+  <div class="stats">
+    <div class="stat"><b>16</b><span>조사 레퍼런스</span></div>
+    <div class="stat"><b>rtfc-v2</b><span>전투 규칙 버전</span></div>
+    <div class="stat"><b>3역</b><span>POC 지도</span></div>
+    <div class="stat"><b>6단계</b><span>캠페인 루프</span></div>
+  </div>
+
+  <section id="refs">
+    <div class="sec-head"><span class="sec-no">01</span><h2>레퍼런스</h2></div>
+    <p class="lead">카드를 누르면 그 게임에서 잔선이 가져간 것, 버린 것, 어느 POC 슬라이스에 붙는지가 열린다.</p>
+    <div class="filters" id="ref-filters"></div>
+    <div class="grid" id="ref-grid"></div>
+    <div class="detail" id="ref-detail"><p class="empty">레퍼런스를 고르면 차용·거부·POC 연결이 여기 쌓인다.</p></div>
+  </section>
+
+  <section id="borrow">
+    <div class="sec-head"><span class="sec-no">02</span><h2>차용 매트릭스</h2></div>
+    <p class="lead">필터는 층(4X / RPG / 전투 / 루프)이다. 표는 Game-References의 대출 매트릭스를
+      POC 상태로 다시 읽는다.</p>
+    <div class="filters" id="layer-filters"></div>
+    <div style="overflow:auto">
+      <table class="matrix" id="borrow-table"></table>
+    </div>
+  </section>
+
+  <section id="plan">
+    <div class="sec-head"><span class="sec-no">03</span><h2>POC 슬라이스</h2></div>
+    <p class="lead">의존 순서다. 잠긴 코어를 다시 열지 않고, 가정 문서를 구현 완료로 읽지 않는다.
+      슬라이스를 누르면 근거 레퍼런스와 완료 조건이 열린다.</p>
+    <div id="slice-list"></div>
+    <div class="detail" id="slice-detail"><p class="empty">슬라이스를 고르면 근거와 완료 조건이 열린다.</p></div>
+  </section>
+
+  <section id="loop">
+    <div class="sec-head"><span class="sec-no">04</span><h2>세 역 루프 시뮬</h2></div>
+    <p class="lead">현재 런타임이 허용하는 한 바퀴다. 영등포–신도림–구로, 교섭·우회·전투, 정산은 한 번만.
+      주사위 연출이 아니라 확정 명령의 스케치.</p>
+    <div class="loop" id="loop-stages"></div>
+    <div class="play">
+      <div class="board">
+        <div class="route" id="route"></div>
+        <p id="loop-copy" style="color:var(--text-secondary);font-size:13.5px;margin-bottom:12px"></p>
+        <div class="actions" id="loop-actions"></div>
+      </div>
+      <pre class="log" id="loop-log"></pre>
+    </div>
+  </section>
+
+  <section id="lock">
+    <div class="sec-head"><span class="sec-no">05</span><h2>잠긴 수치와 열린 칸</h2></div>
+    <div style="overflow:auto">
+      <table class="matrix">
+        <thead><tr><th>층</th><th>잠긴 값</th><th>상태</th><th>아직 열리지 않은 것</th></tr></thead>
+        <tbody>
+          <tr><td>문법</td><td>카메라 45 / 35.264, 타일 1.5m, 4방향만</td><td>소유자 확정</td><td>회전·원근·대각</td></tr>
+          <tr><td>전투</td><td>30Hz, 사기 60/40/80, 항복 20·50%, 지휘 반경 3, 거점 카드 2</td><td>Core <code>rtfc-owner-cards-v2</code></td><td>분대 명령 검증, 집계 사상자 표현</td></tr>
+          <tr><td>카드</td><td>덱·드로우 없음. 인물 카드는 소유자 쌍, 재충전 300–900틱</td><td>카탈로그 6장 잠금</td><td>인물·생업이 카드를 주는 규칙</td></tr>
+          <tr><td>캠페인</td><td>여섯 단계, 세 역, 교섭 −5/+3, 우회 −2/−1, 정산 1회</td><td><code>poc-campaign-loop-v1</code></td><td>16국, 하루·주간 경제</td></tr>
+          <tr><td>시작</td><td>떠돌이 / 역장 두 프리셋</td><td>런타임 2종</td><td>문서의 나머지 4종</td></tr>
+          <tr><td>4X</td><td>탐사·확장·개발·정복 골격만</td><td>설계 가정</td><td>경제·외교·공성 수치 잠금</td></tr>
+          <tr><td>저장</td><td>침묵 복구 금지, 동일 seed 재현</td><td>결정론 계약</td><td>파일 저장/불러오기</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    출처 — <a href="../design/Game-References.html">Game-References</a>,
+    <a href="../rules/Ref-Cross-Synthesis.html">교차 종합</a>,
+    <a href="../rules/Ref-Songs-of-Silence.html">Songs of Silence</a>,
+    <a href="../rules/Ref-Ravelen-Chronicles.html">라벨렌 전기</a>,
+    <a href="../rules/Realtime-Formation-Card-Battle.html">실시간 진형·카드 전투</a>,
+    Intent 결정 3, 이슈 #77. 이 페이지는 구현 완료 주장이 아니라 조사→POC 접힘의 읽기 전용 표면이다.
+    단일 HTML, 외부 의존 없음.
+  </footer>
+</main>
+<script>
+const LAYERS = [
+  {id:"all", label:"전체"},
+  {id:"form", label:"목표 형태"},
+  {id:"loop", label:"루프"},
+  {id:"battle", label:"전투"},
+  {id:"rpg", label:"RPG"},
+  {id:"fourx", label:"4X"}
+];
+
+const GAMES = [
+  {
+    id:"songs", layer:"form", name:"Songs of Silence", year:"2024",
+    role:"목표 형태의 기준",
+    take:"지도 턴 + 실시간 자동 전투. 전투 전 배치가 주 입력. 영웅·장소가 카드를 부여. 일시정지 후 타이밍.",
+    drop:"카드 랜덤 드로우, 카드로 쓰러진 병사 부활, 격자 없는 광역 4X 단순화 전부를 그대로 옮기지 않음.",
+    poc:["p0","p2","p3"],
+    verdicts:["take","part","drop"]
+  },
+  {
+    id:"ravelen", layer:"battle", name:"라벨렌 전기", year:"웹 빌드",
+    role:"턴제 쪽 마지막 정밀 참조",
+    take:"사기 60/40/80/0, 항복 3조건, 지휘 반경, 인연이 전술 자원, 병참 준비안 2, 예고된 증원.",
+    drop:"턴·페이즈·되감기·유닛 한 칸 명령. 9스탯 전투 공식은 압축 후보로만 남김.",
+    poc:["p2","p3"],
+    verdicts:["take","drop"]
+  },
+  {
+    id:"ksys", layer:"rpg", name:"K-시스템", year:"내부 별칭",
+    role:"무에서 시작",
+    take:"결핍의 종류가 난이도. 쓰러짐은 사망이 아님. 정착은 선택. 핵심 인물 상태가 지역을 바꿈.",
+    drop:"초반 반복 노동으로 흥미 곡선을 깎지 않음.",
+    poc:["p1","p5"],
+    verdicts:["take","drop"]
+  },
+  {
+    id:"bb", layer:"loop", name:"배틀 브라더즈", year:"2017",
+    role:"시간이 비용",
+    take:"확정한 이동·휴식만 캠페인 시간. 식량·수당·회복의 3중 압박. 부상은 정산 화면에 남김. 로스터와 배치는 다름.",
+    drop:"육각 격자, 9AP, 대규모 용병단 수치.",
+    poc:["p1","p4"],
+    verdicts:["take","drop"]
+  },
+  {
+    id:"ck3", layer:"rpg", name:"크루세이더 킹즈 3", year:"2020",
+    role:"선택이 계산 가능해야 함",
+    take:"조우 비용·효과·위험을 미리 공개. 인물 초상·관계 상시 표시. 같은 지도의 정보 모드.",
+    drop:"전투 추상화, 봉건 계승 전체를 이 게임의 전투 계약으로 쓰지 않음.",
+    poc:["p1"],
+    verdicts:["take","drop"]
+  },
+  {
+    id:"fe", layer:"battle", name:"파이어 엠블렘 · FFT", year:"전술 문법",
+    role:"투명한 확정/취소",
+    take:"예측을 보고 확정하거나 무소모 취소. 고도와 전투 시간을 세계 시간과 분리.",
+    drop:"유닛 단위 턴 명령, 자동 원상복구.",
+    poc:["p2","p3"],
+    verdicts:["part","drop"]
+  },
+  {
+    id:"wog", layer:"loop", name:"창세기전 · 트라이앵글", year:"인터미션",
+    role:"거점 허브",
+    take:"비지도 관리면. 선택이 관계에 누적. 실패해도 진척을 보존하는 선택지.",
+    drop:"챕터 강제 서사만으로 세계를 닫지 않음.",
+    poc:["p1"],
+    verdicts:["take"]
+  },
+  {
+    id:"uo", layer:"battle", name:"유니콘 오버로드", year:"2024",
+    role:"리더가 이동을 결정",
+    take:"파티 편성 후 대표 토큰. 최강 개인이 최적 리더는 아님.",
+    drop:"전술 프로그래밍 전체를 첫 POC에 넣지 않음.",
+    poc:["p3"],
+    verdicts:["take"]
+  },
+  {
+    id:"banner", layer:"fourx", name:"배너로드", year:"2022",
+    role:"성장이 권한",
+    take:"평판 티어가 시설 접근과 운영권을 연다.",
+    drop:"전면 샌드박스 왕국 시뮬레이션.",
+    poc:["p5"],
+    verdicts:["part"]
+  },
+  {
+    id:"na", layer:"fourx", name:"신장의 야망 · 삼국지", year:"내정",
+    role:"영토 내정",
+    take:"역 시설 수리·운영은 정착 이후 심화. 노선은 영토이자 물류.",
+    drop:"전면 시뮬레이션형 4X.",
+    poc:["p5"],
+    verdicts:["part","drop"]
+  },
+  {
+    id:"taikou", layer:"rpg", name:"태합입지전", year:"생업",
+    role:"전투만이 성장이 아님",
+    take:"수리·의료·운송·교섭도 전투만큼 성장 경로.",
+    drop:"라이프심 일일 루틴 전부를 캠페인에 심지 않음.",
+    poc:["p5"],
+    verdicts:["take"]
+  },
+  {
+    id:"xcom", layer:"loop", name:"XCOM 2", year:"2016",
+    role:"양층 시간 압박",
+    take:"전략의 보급 고갈과 전술의 시간 제한이 겹친다. 선공이 유일한 방어.",
+    drop:"지구 규모 둠 타이머를 서울 노선 POC에 그대로 올리지 않음.",
+    poc:["p1","p2"],
+    verdicts:["part"]
+  },
+  {
+    id:"dd", layer:"rpg", name:"다키스트 던전", year:"2016",
+    role:"마모가 난이도",
+    take:"부상자 로테이션. 영웅을 소모품처럼 굴리지 않되 마모는 남긴다.",
+    drop:"스트레스 이중의 HP와 광원 전체를 첫 전투 코어에 넣지 않음.",
+    poc:["p4"],
+    verdicts:["part"]
+  },
+  {
+    id:"itb", layer:"battle", name:"인투 더 브리치", year:"2018",
+    role:"예고된 위협",
+    take:"적이 어디로 오는지 미리 보여 계산 가능한 전술.",
+    drop:"완전 무확률 설계로 전투 RNG 스트림을 지우지 않음. 결정론은 시드와 명령 기록으로 지킨다.",
+    poc:["p2"],
+    verdicts:["take"]
+  }
+];
+
+const SLICES = [
+  {
+    id:"p0", code:"P0", name:"공유 문법", status:"locked", statusLabel:"잠김",
+    why:"탐색과 전투가 같은 카메라·격자를 쓰지 않으면 Songs of Silence의 두 층이 서로 다른 게임이 된다.",
+    do:"고정 직교 아이소 45/35.264, 1.5m 4방향 타일, 동일 seed + 명령 기록.",
+    gate:"장르 계약 직렬화. 대각 입력 거부.",
+    refs:["songs","fe"]
+  },
+  {
+    id:"p1", code:"P1", name:"세 역 캠페인 루프", status:"poc", statusLabel:"POC 완료",
+    why:"CK3의 공개된 조우와 창세기전의 허브, 배틀 브라더즈의 시간=비용이 한 바퀴로 접혀야 한다.",
+    do:"거점 → 원정 → 조우 → 교섭/우회/전투 → 정산 1회 → 복귀. 영등포–신도림–구로.",
+    gate:"PlayMode 동일 seed 재현, 중복 정산 거부. 규칙 버전 poc-campaign-loop-v1.",
+    refs:["ck3","wog","bb","ksys","xcom"]
+  },
+  {
+    id:"p2", code:"P2", name:"실시간 진형·카드 코어", status:"poc", statusLabel:"Core 잠김",
+    why:"Songs of Silence가 전투 입력을 배치와 카드 타이밍으로 바꿨고, 라벨렌이 사기·항복을 수치로 남겼다.",
+    do:"30Hz 틱, 인물 카드 소유권, 거점 카드 2, 사기 60/40/80, 항복 3조건, 증원 예고.",
+    gate:"이슈 #77. BattleRules와 문서 표가 같아야 함. ownerless 리플레이 거부.",
+    refs:["songs","ravelen","itb","fe","xcom"]
+  },
+  {
+    id:"p3", code:"P3", name:"진형 편집과 전투 HUD", status:"contract", statusLabel:"계약 승인",
+    why:"배치가 주 입력이면 화면이 그 결정을 실수 없이 받아들여야 한다. 유니콘 오버로드의 리더 토큰이 여기 붙는다.",
+    do:"전열·후열·측면, 4방향 정면, 카드 Preview/Submit, 일시정지는 해시 제외.",
+    gate:"진형 PlayMode(#76)는 들어왔다. 첫 버튼 Raycast와 depth −1은 아직 부채.",
+    refs:["songs","uo","fe"]
+  },
+  {
+    id:"p4", code:"P4", name:"부상·로스터·정산 표현", status:"contract", statusLabel:"계약만",
+    why:"배틀 브라더즈는 결과가 인물에 남고, K-시스템은 쓰러짐을 사망과 가른다. 집계 생존 0..4는 승인됐다.",
+    do:"치료로 부활하지 않음. 정산은 UnitId와 남은 HP만. 리더는 연출용.",
+    gate:"작업 7 미완료. 작업 6 분대 명령 검증 pending.",
+    refs:["bb","ksys","dd","ravelen"]
+  },
+  {
+    id:"p5", code:"P5", name:"RPG 카드 부여", status:"open", statusLabel:"미설계",
+    why:"Songs of Silence의 영웅 카드와 라벨렌의 인연을 잔선 인물 412명에 붙이는 규칙이 없다.",
+    do:"생업·관계·직위가 어떤 카드를 켜는지. 덱 구축 없이 부여만.",
+    gate:"로드맵이 명시적으로 미설계. 다음 모듈 전에 소유자 잠금이 필요.",
+    refs:["songs","ravelen","taikou"]
+  },
+  {
+    id:"p6", code:"P6", name:"경량 4X 가정", status:"assume", statusLabel:"설계 가정",
+    why:"4X 골격은 채택하되 전면 시뮬레이션은 버린다. 경제·외교·거점 수치는 프로토타입 가정.",
+    do:"세 역 너머의 노선 경제, 시설 슬롯, 신뢰·평판은 문서만. 현재 모듈 비목표.",
+    gate:"POC 수용 게이트 통과 전에는 두 번째 제품 모듈을 시작하지 않음.",
+    refs:["songs","na","banner","taikou","ksys"]
+  },
+  {
+    id:"p7", code:"P7", name:"시각 수용과 슬롯 연결", status:"open", statusLabel:"현재 잔여",
+    why:"코어 루프는 닫혔다. 남은 것은 그림이 계약 슬롯에 들어가는 일이다.",
+    do:"타이틀·UI kit 육안 승인, TOS식 SD, 승격 에셋만 연결, 수용 게이트 한 번에.",
+    gate:"ToDo 13–17, 이슈 #8 #23 #58 #26 #27 #78.",
+    refs:[]
+  }
+];
+
+const LOOP_STAGES = [
+  {id:"base", name:"거점 준비"},
+  {id:"travel", name:"원정"},
+  {id:"encounter", name:"조우"},
+  {id:"resolve", name:"해결"},
+  {id:"settle", name:"정산"},
+  {id:"return", name:"복귀"}
+];
+
+const STATIONS = ["영등포","신도림","구로"];
+
+let refFilter = "all";
+let layerFilter = "all";
+let selectedGame = null;
+let selectedSlice = null;
+let sim;
+
+function $(id){ return document.getElementById(id); }
+
+function renderFilters(el, items, current, onPick){
+  el.innerHTML = "";
+  items.forEach(item => {
+    const b = document.createElement("button");
+    b.className = "filter";
+    b.type = "button";
+    b.textContent = item.label;
+    b.setAttribute("aria-pressed", item.id === current ? "true" : "false");
+    b.addEventListener("click", () => onPick(item.id));
+    el.appendChild(b);
+  });
+}
+
+function renderGames(){
+  renderFilters($("ref-filters"), LAYERS, refFilter, id => { refFilter = id; renderGames(); });
+  const grid = $("ref-grid");
+  grid.innerHTML = "";
+  GAMES.filter(g => refFilter === "all" || g.layer === refFilter).forEach(g => {
+    const b = document.createElement("button");
+    b.className = "card" + (selectedGame === g.id ? " active" : "");
+    b.type = "button";
+    b.innerHTML = '<div class="tag">'+g.year+' · '+layerLabel(g.layer)+'</div><h3>'+g.name+'</h3><p>'+g.role+'</p>'+
+      g.verdicts.map(v => '<span class="verdict '+cssVerdict(v)+'">'+labelVerdict(v)+'</span>').join("");
+    b.addEventListener("click", () => { selectedGame = g.id; renderGames(); showGame(g); hashWrite(); });
+    grid.appendChild(b);
+  });
+  if (selectedGame){
+    const g = GAMES.find(x => x.id === selectedGame);
+    if (g && (refFilter === "all" || g.layer === refFilter)) showGame(g);
+  }
+}
+
+function layerLabel(id){
+  return ({form:"목표 형태", loop:"루프", battle:"전투", rpg:"RPG", fourx:"4X"})[id] || id;
+}
+function cssVerdict(v){ return v === "take" ? "take" : v === "drop" ? "drop" : "part"; }
+function labelVerdict(v){ return v === "take" ? "채택" : v === "drop" ? "거부" : "부분"; }
+
+function showGame(g){
+  const slices = SLICES.filter(s => g.poc.indexOf(s.id) >= 0)
+    .map(s => s.code + " " + s.name).join(" · ") || "직접 슬라이스 없음";
+  $("ref-detail").innerHTML =
+    "<h3>"+g.name+"</h3>"+
+    "<p>"+g.role+"</p>"+
+    "<h3>가져간 것</h3><p>"+g.take+"</p>"+
+    "<h3>버린 것</h3><p>"+g.drop+"</p>"+
+    "<h3>붙는 POC</h3><p>"+slices+"</p>";
+}
+
+function renderMatrix(){
+  const layers = [{id:"all",label:"전체층"}, ...LAYERS.slice(1)];
+  renderFilters($("layer-filters"), layers, layerFilter, id => { layerFilter = id; renderMatrix(); });
+  const rows = GAMES.filter(g => layerFilter === "all" || g.layer === layerFilter);
+  $("borrow-table").innerHTML =
+    "<thead><tr><th>레퍼런스</th><th>층</th><th>잔선에서의 형태</th><th>POC</th></tr></thead><tbody>"+
+    rows.map(g => "<tr><td>"+g.name+"</td><td>"+layerLabel(g.layer)+"</td><td>"+g.take+
+      "</td><td>"+g.poc.map(id => SLICES.find(s=>s.id===id).code).join(" ")+"</td></tr>").join("")+
+    "</tbody>";
+}
+
+function renderSlices(){
+  const box = $("slice-list");
+  box.innerHTML = "";
+  SLICES.forEach(s => {
+    const b = document.createElement("button");
+    b.className = "slice" + (selectedSlice === s.id ? " active" : "");
+    b.type = "button";
+    b.innerHTML = '<div class="id">'+s.code+'</div><div><h3>'+s.name+'</h3><p>'+s.why+'</p></div>'+
+      '<span class="status '+s.status+'">'+s.statusLabel+'</span>';
+    b.addEventListener("click", () => { selectedSlice = s.id; renderSlices(); showSlice(s); hashWrite(); });
+    box.appendChild(b);
+  });
+  if (selectedSlice){
+    const s = SLICES.find(x => x.id === selectedSlice);
+    if (s) showSlice(s);
+  }
+}
+
+function showSlice(s){
+  const refs = s.refs.map(id => GAMES.find(g => g.id === id).name).join(" · ") || "문법 계약";
+  $("slice-detail").innerHTML =
+    "<h3>"+s.code+" · "+s.name+"</h3>"+
+    "<p>"+s.why+"</p>"+
+    "<h3>이 슬라이스가 하는 일</h3><p>"+s.do+"</p>"+
+    "<h3>게이트</h3><p>"+s.gate+"</p>"+
+    "<h3>근거</h3><p>"+refs+"</p>";
+}
+
+function resetSim(){
+  sim = {
+    stage:0,
+    station:0,
+    resources:30,
+    reputation:0,
+    settled:false,
+    battle:false,
+    log:["시드 7 · 떠돌이 삼인조 · 영등포 대합실 하룻밤."]
+  };
+  paintSim();
+}
+
+function paintSim(){
+  $("loop-stages").innerHTML = LOOP_STAGES.map((st,i) =>
+    '<div class="stage'+(i===sim.stage?' active':'')+(i<sim.stage?' done':'')+'"><span class="n">0'+(i+1)+'</span>'+st.name+'</div>'
+  ).join("");
+  $("route").innerHTML = STATIONS.map((name,i) => {
+    const edge = i < STATIONS.length-1 ? '<span class="edge">——</span>' : '';
+    return '<div class="node'+(i===sim.station?' here':'')+'">'+name+'</div>'+edge;
+  }).join("");
+  const copy = [
+    "거점에서 의뢰와 통행권을 고른다. 시간은 아직 흐르지 않는다.",
+    "인접 역으로만 이동. 한 칸 −2 보급. 대각은 거부.",
+    "조우가 생겼다. 비용과 평판 변화가 미리 보인다.",
+    "교섭·우회·전투 중 하나. 전투는 실시간 진형·카드.",
+    "ResultId 하나. 이미 처리한 결과는 영수증만 돌려준다.",
+    "거점으로 돌아온다. 부상이 다음 출격 시작 HP로 남는다."
+  ][sim.stage];
+  $("loop-copy").textContent = copy + "  보급 "+sim.resources+" · 평판 "+sim.reputation+".";
+  const actions = $("loop-actions");
+  actions.innerHTML = "";
+  const add = (label, cls, fn, disabled) => {
+    const b = document.createElement("button");
+    b.className = "act "+(cls||"");
+    b.type = "button";
+    b.textContent = label;
+    b.disabled = !!disabled;
+    b.addEventListener("click", fn);
+    actions.appendChild(b);
+  };
+  add("처음으로", "", resetSim);
+  if (sim.stage === 0) add("출격", "", () => { push("출격. 원정 단계."); sim.stage = 1; paintSim(); });
+  if (sim.stage === 1){
+    add("신도림으로", "", () => moveTo(1), sim.station === 1);
+    add("구로로", "", () => moveTo(2), sim.station !== 1);
+    add("조우 직면", "", () => { push("조우. 세 선택 비용이 공개된다."); sim.stage = 2; paintSim(); }, sim.station === 0);
+  }
+  if (sim.stage === 2) add("해결로", "", () => { sim.stage = 3; paintSim(); });
+  if (sim.stage === 3){
+    add("교섭 −5 / +3", "talk", () => resolve("negotiate"));
+    add("우회 −2 / −1", "safe", () => resolve("bypass"));
+    add("전투", "fight", () => resolve("combat"));
+  }
+  if (sim.stage === 4) add("정산 확정", "", settle, sim.settled);
+  if (sim.stage === 5) add("다음 출격", "", () => { sim.stage = 0; sim.settled = false; sim.battle = false; push("거점 준비로 돌아왔다."); paintSim(); });
+  $("loop-log").textContent = sim.log.join("\n");
+}
+
+function push(line){ sim.log.push(line); }
+
+function moveTo(i){
+  if (Math.abs(i - sim.station) !== 1){ push("거부. 인접하지 않은 역."); paintSim(); return; }
+  sim.resources -= 2;
+  sim.station = i;
+  push("이동 "+STATIONS[i]+". 보급 −2.");
+  paintSim();
+}
+
+function resolve(kind){
+  if (kind === "negotiate"){ sim.resources -= 5; sim.reputation += 3; push("교섭. 보급 −5, 평판 +3."); }
+  if (kind === "bypass"){ sim.resources -= 2; sim.reputation -= 1; push("우회. 보급 −2, 평판 −1."); }
+  if (kind === "combat"){ sim.battle = true; push("전투 컨텍스트 발행. 30Hz, 카드는 소유자 쌍."); }
+  sim.stage = 4;
+  paintSim();
+}
+
+function settle(){
+  if (sim.settled){ push("이미 정산됨. 영수증만 반환."); paintSim(); return; }
+  sim.settled = true;
+  push(sim.battle ? "전투 결과 1회 반영. ResultId 고정." : "비전투 결과 1회 반영.");
+  sim.stage = 5;
+  paintSim();
+}
+
+function hashWrite(){
+  const q = [];
+  if (selectedGame) q.push("game="+selectedGame);
+  if (selectedSlice) q.push("slice="+selectedSlice);
+  if (refFilter !== "all") q.push("layer="+refFilter);
+  const next = q.length ? "#"+q.join("&") : "#refs";
+  if (location.hash !== next) history.replaceState(null, "", next);
+}
+
+function hashRead(){
+  const raw = location.hash.replace(/^#/, "");
+  const map = {};
+  raw.split("&").forEach(part => {
+    const i = part.indexOf("=");
+    if (i > 0) map[part.slice(0,i)] = decodeURIComponent(part.slice(i+1));
+  });
+  if (map.layer && LAYERS.some(l => l.id === map.layer)) refFilter = map.layer;
+  if (map.game && GAMES.some(g => g.id === map.game)) selectedGame = map.game;
+  if (map.slice && SLICES.some(s => s.id === map.slice)) selectedSlice = map.slice;
+}
+
+hashRead();
+renderGames();
+renderMatrix();
+renderSlices();
+resetSim();
+</script>
+</body>
+</html>
