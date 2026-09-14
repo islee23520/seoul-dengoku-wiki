@@ -4,8 +4,9 @@ import { fileURLToPath } from 'node:url';
 
 const unityToolsRoot = dirname(fileURLToPath(import.meta.url));
 const toolsRoot = resolve(unityToolsRoot, '..');
-const gameTokenPath = resolve(toolsRoot, '..', 'Game', '.unity-remote-token');
-const upstreamCli = join(toolsRoot, 'unity-remote', 'dist', 'cli', 'index.js');
+const repoRoot = resolve(toolsRoot, '..', '..');
+const gameTokenPath = join(repoRoot, 'Game', '.unity-remote-token');
+const upstreamCli = join(repoRoot, 'Tool', 'unity-remote', 'dist', 'cli', 'index.js');
 
 const { runCli } = await import(upstreamCli);
 // The repository command deliberately uses the project token file regardless of

@@ -11,10 +11,10 @@ const { buildWiki } = wiki;
 // Marker written by the generator into every output root it owns. Cleanup must
 // refuse to delete anything from a root that does not carry it.
 const SENTINEL = '.janseon-wiki-generated';
-const REPO_IMAGE_BASE = 'https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki';
-const RAW_IMAGE_BASE = 'https://raw.githubusercontent.com/islee23520/seoul-kenshi/main/docs/assets/wiki';
+const REPO_IMAGE_BASE = 'https://github.com/islee23520/seoul-kenshi/blob/main/Reference/assets/wiki';
+const RAW_IMAGE_BASE = 'https://raw.githubusercontent.com/islee23520/seoul-kenshi/main/Reference/assets/wiki';
 const SECRET = 'TOPSECRET-DO-NOT-PUBLISH-8f2a1c';
-const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..');
+const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
 
 const root = await mkdtemp(join(tmpdir(), 'janseon-wiki-test-'));
 const source = join(root, 'docs');
@@ -120,7 +120,7 @@ await testCase('happy path: banner, link rewrite, asset copy, stale cleanup, .gi
 
   assert.match(home, /janseon-unofficial-au/);
   assert.match(home, /Unofficial-Fan-AU-Notice/);
-  assert.match(home, /원본: `docs\/game-logic\/Home\.md`/);
+  assert.match(home, /원본: `GDD\/game-logic\/Home\.md`/);
   assert.match(home, /커밋: `abc1234`/);
   assert.match(home, /\]\(assets\/figure\.svg\)/);
   assert.match(home, /\[게임 설명\]\(Game-Thesis\)/);
@@ -602,11 +602,11 @@ await testCase('unrelated external URLs are preserved', async () => {
 });
 
 await testCase('every generated image path in the real repository wiki resolves on disk', async () => {
-  const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..');
+  const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
   const outputDir = await generatedOutput('repo-full');
   await buildWiki({
-    sourceDir: join(repositoryRoot, 'docs', 'game-logic'),
-    assetDir: join(repositoryRoot, 'docs', 'assets', 'wiki'),
+    sourceDir: join(repositoryRoot, 'GDD', 'game-logic'),
+    assetDir: join(repositoryRoot, 'Reference', 'assets', 'wiki'),
     outputDir,
     commitSha: 'assetcheck',
   });
@@ -655,8 +655,8 @@ await testCase('commitSha remains mandatory', async () => {
 });
 
 await testCase('the tools-only parser stack is exactly pinned and lockfile-consistent', async () => {
-  const manifest = JSON.parse(await readFile(join(repositoryRoot, 'tools', 'package.json'), 'utf8'));
-  const lock = JSON.parse(await readFile(join(repositoryRoot, 'tools', 'package-lock.json'), 'utf8'));
+  const manifest = JSON.parse(await readFile(join(repositoryRoot, 'Tool', 'tools', 'package.json'), 'utf8'));
+  const lock = JSON.parse(await readFile(join(repositoryRoot, 'Tool', 'tools', 'package-lock.json'), 'utf8'));
   const expected = {
     entities: '8.0.0',
     'mdast-util-from-markdown': '2.0.3',
@@ -742,7 +742,7 @@ await testCase('Cast-Index 게시 rows still emit their fragment page', async ()
 // Repository documentation contract (pre-existing)
 // ---------------------------------------------------------------------------
 
-const gameLogicDir = join(repositoryRoot, 'docs', 'game-logic');
+const gameLogicDir = join(repositoryRoot, 'GDD', 'game-logic');
 const strategicPages = [
   'Strongholds-and-Territory.md',
   'Economy-and-Production.md',

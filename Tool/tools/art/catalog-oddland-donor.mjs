@@ -3,7 +3,7 @@ import { createHash } from 'node:crypto';
 import { readFileSync, statSync, writeFileSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-const root=join(dirname(fileURLToPath(import.meta.url)),'..','..'), payload=join(root,'Game/Assets/Quarantine/Oddland'), list=join(root,'docs/assets/bom/donor/oddland-donor-import.sha256'), json=join(root,'docs/assets/bom/donor/oddland-asset-catalog.json'), md=json.replace('.json','.md');
+const root=join(dirname(fileURLToPath(import.meta.url)),'..','..','..'), payload=join(root,'Game/Assets/Quarantine/Oddland'), list=join(root,'Reference/assets/bom/donor/oddland-donor-import.sha256'), json=join(root,'Reference/assets/bom/donor/oddland-asset-catalog.json'), md=json.replace('.json','.md');
 const hash=p=>createHash('sha256').update(readFileSync(join(payload,p))).digest('hex');
 const norm=s=>s.toLowerCase().replace('arcade stage','arcade').replace('platformmer','platformer').replace('arcade_stage','arcade').replace('stage_robson','robson').replace('skymap','common').replace('shaderforge_textures','fx').replace('dropitem','objects').replace('stage1','stage1');
 function classify(p){const e=p.slice(p.lastIndexOf('.')).toLowerCase(), low=p.toLowerCase(), parts=p.split('/'); let kind,family,disposition,note='',rule='';

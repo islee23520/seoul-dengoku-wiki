@@ -69,7 +69,7 @@ def content_errors(region):
     allowed_polities = {f"S{i:02d}" for i in range(1, 17)}
     if text_list(content.get("polity_contexts")) and any(p not in allowed_polities for p in content["polity_contexts"]):
         errors.append("unknown_polity:" + region["id"])
-    repo = Path(__file__).resolve().parents[2]
+    repo = Path(__file__).resolve().parents[3]
     if text_list(content.get("canon_refs")):
         for reference in content["canon_refs"]:
             canonical = (repo / reference).resolve()

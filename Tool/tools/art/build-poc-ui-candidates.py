@@ -11,7 +11,7 @@ from pathlib import Path
 import numpy as np
 from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont, ImageStat, __version__ as PILLOW_VERSION
 
-REPO = Path(__file__).resolve().parents[2]
+REPO = Path(__file__).resolve().parents[3]
 ART = REPO / "Game" / "Assets" / "Janseon" / "Art"
 DESIGN_MD = REPO / "Design.md"
 GENERATOR = Path(__file__).resolve()

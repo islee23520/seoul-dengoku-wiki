@@ -5,8 +5,8 @@ import { fileURLToPath } from 'node:url';
 
 const unityToolsRoot = dirname(fileURLToPath(import.meta.url));
 const toolsRoot = resolve(unityToolsRoot, '..');
-const repoRoot = resolve(toolsRoot, '..');
-const upstreamRoot = join(toolsRoot, 'unity-remote');
+const repoRoot = resolve(toolsRoot, '..', '..');
+const upstreamRoot = join(repoRoot, 'Tool', 'unity-remote');
 
 function runChecked(command, args, cwd) {
   const env = { ...process.env };
@@ -31,7 +31,7 @@ function runChecked(command, args, cwd) {
 }
 
 export function setupUnityRemote(run = runChecked) {
-  run('git', ['submodule', 'update', '--init', '--', 'tools/unity-remote'], repoRoot);
+  run('git', ['submodule', 'update', '--init', '--', 'Tool/unity-remote'], repoRoot);
   run('npm', ['ci'], upstreamRoot);
   run('npm', ['run', 'build'], upstreamRoot);
 }

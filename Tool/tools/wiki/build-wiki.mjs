@@ -29,13 +29,13 @@ const bannedPublicTerms = [
 const GENERATED_SENTINEL = '.janseon-wiki-generated';
 const SENTINEL_BODY = [
   '# janseon wiki generated output',
-  '# Everything in this directory except .git is rebuilt by tools/wiki/build-wiki.mjs.',
+  '# Everything in this directory except .git is rebuilt by Tool/tools/wiki/build-wiki.mjs.',
   '# Deleting this file makes the next build refuse to clean the directory.',
   '',
 ].join('\n');
 const VCS_DIRECTORY = '.git';
 const PUBLISHED_ASSET_DIRECTORY = 'assets';
-const REPOSITORY_ASSET_SEGMENTS = ['docs', 'assets', 'wiki'];
+const REPOSITORY_ASSET_SEGMENTS = ['Reference', 'assets', 'wiki'];
 
 // Blocks are joined with a newline so a banned term can never be assembled
 // across two separately rendered regions; everything inline is concatenated with
@@ -146,7 +146,7 @@ export function assertSafeOutputRoot(outputDir) {
     throw new Error(`refusing ${resolved} as the wiki output root: it contains the home directory`);
   }
 
-  const repositoryRoot = resolve(fileURLToPath(new URL('../..', import.meta.url)));
+  const repositoryRoot = resolve(fileURLToPath(new URL('../../..', import.meta.url)));
   if (resolved === repositoryRoot) {
     throw new Error(`refusing ${resolved} as the wiki output root: it is the repository root`);
   }
@@ -474,7 +474,7 @@ function resolveDestination(node, { page, assetNames }) {
   if (assetName !== null) {
     if (!assetNames.has(assetName)) {
       throw new Error(
-        `${page}: ${assetName} is published as a local wiki asset but docs/assets/wiki/${assetName} does not exist`,
+        `${page}: ${assetName} is published as a local wiki asset but Reference/assets/wiki/${assetName} does not exist`,
       );
     }
     return `${PUBLISHED_ASSET_DIRECTORY}/${assetName}`;
@@ -519,9 +519,9 @@ function repositoryAssetName(url) {
     return null;
   }
 
-  if (path.length !== REPOSITORY_ASSET_SEGMENTS.length + 1) return null;
+  if (path.length <= REPOSITORY_ASSET_SEGMENTS.length) return null;
   if (REPOSITORY_ASSET_SEGMENTS.some((expected, index) => path[index] !== expected)) return null;
-  return path.at(-1);
+  return path.slice(REPOSITORY_ASSET_SEGMENTS.length).join('/');
 }
 
 function relativeAssetName(url) {
@@ -530,8 +530,8 @@ function relativeAssetName(url) {
   const segments = path.split('/').filter((segment) => segment !== '' && segment !== '.');
 
   const wiki = segments.indexOf('wiki');
-  if (wiki > 0 && segments[wiki - 1] === 'assets' && segments.length === wiki + 2) {
-    return segments[wiki + 1];
+  if (wiki > 0 && segments[wiki - 1] === 'assets' && segments.length > wiki + 1) {
+    return segments.slice(wiki + 1).join('/');
   }
   if (segments.length === 2 && segments[0] === PUBLISHED_ASSET_DIRECTORY) return segments[1];
   return null;
@@ -622,7 +622,7 @@ function generationBanner(page, commitSha) {
   return [
     '> [!NOTE]',
     '> 자동 생성 문서입니다. GitHub Wiki에서 직접 수정하지 마세요.',
-    `> 원본: \`docs/game-logic/${page}\` · 커밋: \`${commitSha}\``,
+    `> 원본: \`GDD/game-logic/${page}\` · 커밋: \`${commitSha}\``,
     '> <span class="janseon-unofficial-au">비공식·비상업 팬 AU</span> · [비공식 팬 AU 고지](Unofficial-Fan-AU-Notice)',
   ].join('\n');
 }

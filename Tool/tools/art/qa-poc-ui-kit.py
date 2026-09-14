@@ -11,7 +11,7 @@ from pathlib import Path
 
 from PIL import Image, ImageChops, ImageFilter, ImageStat
 
-REPO = Path(__file__).resolve().parents[2]
+REPO = Path(__file__).resolve().parents[3]
 ART_UI = REPO / "Game" / "Assets" / "Janseon" / "Art" / "UI"
 ART_TITLE = REPO / "Game" / "Assets" / "Janseon" / "Art" / "Title"
 ART_TILES = REPO / "Game" / "Assets" / "Janseon" / "Art" / "Tiles"

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "purpose": "Non-prop runtime art slots. Each slot is unblocked only by a source-bound promoted BOM row; the catalog asset may bind only such rows.",
-  "bom_path": "docs/assets/bom/runtime/runtime-slot-bom.json",
+  "bom_path": "Reference/assets/bom/runtime/runtime-slot-bom.json",
   "catalog_path": "Game/Assets/Janseon/Foundation/Art/RuntimeSlotCatalog.asset",
   "runtime_root": "Game/Assets/Janseon/Art/",
   "source_roots": [

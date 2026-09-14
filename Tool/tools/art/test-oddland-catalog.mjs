@@ -6,11 +6,11 @@ import { spawnSync } from 'node:child_process';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const root = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
-const out = join(root, 'docs/assets/bom/donor/oddland-asset-catalog.json');
+const root = join(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
+const out = join(root, 'Reference/assets/bom/donor/oddland-asset-catalog.json');
 const markdown = out.replace('.json', '.md');
-const generator = join(root, 'tools/art/catalog-oddland-donor.mjs');
-const hashList = join(root, 'docs/assets/bom/donor/oddland-donor-import.sha256');
+const generator = join(root, 'Tool/tools/art/catalog-oddland-donor.mjs');
+const hashList = join(root, 'Reference/assets/bom/donor/oddland-donor-import.sha256');
 const kinds = new Set(['model','texture','material','animation-clip','animator-controller','prefab-vfx','prefab-character','prefab-equipment','prefab-environment','prefab-projectile','prefab-other','audio-sfx','shader','font','sprite-atlas','spine-skeleton','spine-runtime-code','scene','post-process-profile','physics-material','text-data','doc']);
 const families = /^(stage[1-4]|robson|arcade|loby|main|boss|pet|platformer|obstacles|objects|fx|grenade|portal|powershot|highlight|common|runtime|shader|postfx|scene|mail|font|ui|spine-(player|npc|tutorial|stage[1-4]|robson|common)|mecanim-[a-z0-9_-]+|sound-[a-z0-9_-]+|icon-[a-z0-9_-]+)$/;
 const dispositions = new Set(['blockout-geometry','vfx-candidate','sfx-candidate','ui-reference-only','character-poc-only','tooling-runtime','excluded-artifact']);

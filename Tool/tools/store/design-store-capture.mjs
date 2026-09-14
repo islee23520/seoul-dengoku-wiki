@@ -13,7 +13,7 @@ export const DB_NAME = 'design-store.sqlite';
 export const ORIGINALS_DIR = 'originals';
 export const CAPTURE_RECEIPT = 'capture-receipt.json';
 export const VERIFY_RECEIPT = 'verify-receipt.json';
-export const TOOL = 'tools/store/design-store-capture.mjs@1';
+export const TOOL = 'Tool/tools/store/design-store-capture.mjs@1';
 
 export const ROOT_PLANNING_FILES = Object.freeze(['Concept.md', 'Design.md', 'ToDo.md', 'Intent.md']);
 
@@ -31,7 +31,7 @@ function listFiles(dir, ext) {
 }
 
 /** 코퍼스 규칙: 루트 설계문서, game-logic 최상위 MD, reference, name-pools JSON, site 전용 규칙.
- * 마운트 사본(docs-site/rules 중 game-logic 최상위와同名)은 정본이 아니므로 제외한다. */
+ * 마운트 사본(GDD/site/rules 중 game-logic 최상위와同名)은 정본이 아니므로 제외한다. */
 export function enumerateCorpus(repoRoot) {
   const entries = [];
   for (const name of ROOT_PLANNING_FILES) {
@@ -43,19 +43,19 @@ export function enumerateCorpus(repoRoot) {
     }
     if (isFile) entries.push({ path: name, fileSet: 'root-planning' });
   }
-  const topDir = join(repoRoot, 'docs/game-logic');
+  const topDir = join(repoRoot, 'GDD/game-logic');
   const topMd = listFiles(topDir, '.md');
-  for (const name of topMd) entries.push({ path: `docs/game-logic/${name}`, fileSet: 'game-logic-top' });
+  for (const name of topMd) entries.push({ path: `GDD/game-logic/${name}`, fileSet: 'game-logic-top' });
   const topBasenames = new Set(topMd);
-  for (const name of listFiles(join(repoRoot, 'docs/game-logic/reference'), '.md')) {
-    entries.push({ path: `docs/game-logic/reference/${name}`, fileSet: 'game-logic-reference' });
+  for (const name of listFiles(join(repoRoot, 'Research/canon-reference'), '.md')) {
+    entries.push({ path: `Research/canon-reference/${name}`, fileSet: 'game-logic-reference' });
   }
-  for (const name of listFiles(join(repoRoot, 'docs/game-logic/name-pools'), '.json')) {
-    entries.push({ path: `docs/game-logic/name-pools/${name}`, fileSet: 'name-pools' });
+  for (const name of listFiles(join(repoRoot, 'GDD/game-logic/name-pools'), '.json')) {
+    entries.push({ path: `GDD/game-logic/name-pools/${name}`, fileSet: 'name-pools' });
   }
-  for (const name of listFiles(join(repoRoot, 'docs-site/rules'), '.md')) {
+  for (const name of listFiles(join(repoRoot, 'GDD/site/rules'), '.md')) {
     if (topBasenames.has(name)) continue; // 마운트 사본 제외
-    entries.push({ path: `docs-site/rules/${name}`, fileSet: 'site-rules-authored' });
+    entries.push({ path: `GDD/site/rules/${name}`, fileSet: 'site-rules-authored' });
   }
   entries.sort((a, b) => (a.path < b.path ? -1 : a.path > b.path ? 1 : 0));
   return entries;

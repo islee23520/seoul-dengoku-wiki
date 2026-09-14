@@ -11,14 +11,14 @@ import { fileURLToPath } from 'node:url';
 // cannot leak from a parent checkout), copies the real checker in, and runs
 // it exactly the way tools/AGENTS.md documents: as a CLI with its own exit
 // code. Plan fixtures are byte-for-byte historical blobs; see
-// tools/policy/fixtures/README.md for provenance.
+// Tool/tools/policy/fixtures/README.md for provenance.
 
-const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..');
-const checkerPath = join('tools', 'policy', 'check-repo-delivery-policy.mjs');
-const adrPath = join('docs', 'adr', 'ADR-001-repository-delivery-policy.md');
+const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
+const checkerPath = join('Tool', 'tools', 'policy', 'check-repo-delivery-policy.mjs');
+const adrPath = join('GDD', 'adr', 'ADR-001-repository-delivery-policy.md');
 const planPath = join('.omo', 'plans', 'seoul-grand-strategy-srpg.md');
-const preAmendmentFixture = join('tools', 'policy', 'fixtures', 'seoul-grand-strategy-srpg-pre-amendment.md');
-const amendedFixture = join('tools', 'policy', 'fixtures', 'seoul-grand-strategy-srpg-amended.md');
+const preAmendmentFixture = join('Tool', 'tools', 'policy', 'fixtures', 'seoul-grand-strategy-srpg-pre-amendment.md');
+const amendedFixture = join('Tool', 'tools', 'policy', 'fixtures', 'seoul-grand-strategy-srpg-amended.md');
 const authorizedOrigin = 'https://github.com/islee23520/seoul-kenshi.git';
 
 function runChecker(root) {
@@ -46,9 +46,9 @@ async function createFixture(options = {}) {
   const { plan = 'none', origin = 'authorized', adr = 'tracked', competingAdr = false } = options;
   const root = await mkdtemp(join(tmpdir(), 'janseon-policy-gate-'));
 
-  await mkdir(join(root, 'tools', 'policy'), { recursive: true });
+  await mkdir(join(root, 'Tool', 'tools', 'policy'), { recursive: true });
   await cp(join(repositoryRoot, checkerPath), join(root, checkerPath));
-  await mkdir(join(root, 'docs', 'adr'), { recursive: true });
+  await mkdir(join(root, 'GDD', 'adr'), { recursive: true });
 
   if (adr !== 'missing') {
     let text = await readFile(join(repositoryRoot, adrPath), 'utf8');
@@ -81,7 +81,7 @@ async function createFixture(options = {}) {
 
   if (competingAdr) {
     await writeFile(
-      join(root, 'docs', 'adr', 'ADR-009-competing.md'),
+      join(root, 'GDD', 'adr', 'ADR-009-competing.md'),
       '# ADR-009: Competing delivery rule\n\nAll delivery pushes straight to a second remote.\n',
     );
   }

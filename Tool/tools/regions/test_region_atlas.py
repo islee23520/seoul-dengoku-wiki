@@ -100,7 +100,7 @@ class ContentTests(unittest.TestCase):
                 "source_kind": "original-fiction", "fictional_epoch": "opening-day",
                 "title": "저수조 교대", "summary": "골목 주민과 정비조가 저수조 교대를 나눈다.",
                 "anchor_refs": ["osm:node:42"],
-                "canon_refs": ["docs/game-logic/Sixteen-States.md"],
+                "canon_refs": ["GDD/game-logic/Sixteen-States.md"],
                 "polity_contexts": ["S06"], "inhabitants": ["정비조"],
                 "livelihood": "주민이 물 운반과 밸브 점검을 나눠 맡는다.",
                 "production": {"outputs": ["급수 서비스"], "requires": ["부품"]},
@@ -154,7 +154,7 @@ class ContentTests(unittest.TestCase):
         self.assertTrue(content_errors(self.region))
 
     def test_nonexistent_canon_reference_rejected(self):
-        self.region["content"]["canon_refs"] = ["docs/game-logic/does-not-exist.md"]
+        self.region["content"]["canon_refs"] = ["GDD/game-logic/does-not-exist.md"]
         self.assertTrue(content_errors(self.region))
 
     def test_inhabitants_must_be_a_list(self):

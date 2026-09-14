@@ -14,11 +14,11 @@ Repository-only ESM/Python tooling, not shipped with Unity; score 8, distinct bu
 | Unity architecture gate | `architecture/check-unity-architecture.mjs` | C# scans plus scene YAML/build order |
 | Delivery-policy consistency | `policy/check-repo-delivery-policy.mjs` | Approved plan, ADR-001, live origin |
 | Capture evidence validation | `unity/validate-ui-captures.mjs` | PNG content and source-bound receipts |
-| LFS hydration gate | `check-lfs-hydration.mjs` | Pointers in `Game/Assets` or `docs/assets` fail closed |
+| LFS hydration gate | `check-lfs-hydration.mjs` | Pointers in `Game/Assets` or `Reference/assets` fail closed |
 | Art planning and provenance | `art/AGENTS.md` | Separate domain guide |
 
 ## CONVENTIONS
-- `npm --prefix tools test` runs only wiki build and Unity architecture-doc tests.
+- `npm --prefix Tool/tools test` runs only wiki build and Unity architecture-doc tests.
 - Other gates/tests are explicit script entry points; npm test is not the full tooling suite.
 - `entities`, `mdast-util-from-markdown`, and `parse5` belong to wiki parsing; no game bundle is produced.
 - Wiki generation takes source directory, asset directory, output directory, and commit SHA as positional arguments.
@@ -28,18 +28,18 @@ Repository-only ESM/Python tooling, not shipped with Unity; score 8, distinct bu
 - Architecture validation checks serialized lifetime scopes as well as C#; changing only a code allowlist does not update scene expectations.
 
 ## COMMANDS
-Run from repository root; install tooling dependencies with `npm ci --prefix tools`.
+Run from repository root; install tooling dependencies with `npm ci --prefix Tool/tools`.
 
 ```bash
-git lfs pull && git lfs checkout && node tools/check-lfs-hydration.mjs
-node tools/test-check-lfs-hydration.mjs
-npm --prefix tools test
-node tools/wiki/test-verify-cast.mjs
-node tools/wiki/test-strategy-formulas.mjs
-node tools/architecture/check-unity-architecture.mjs
-node tools/architecture/test-check-unity-architecture.mjs
-node tools/policy/check-repo-delivery-policy.mjs
-node tools/unity/test-validate-ui-captures.mjs
+git lfs pull && git lfs checkout && node Tool/tools/check-lfs-hydration.mjs
+node Tool/tools/test-check-lfs-hydration.mjs
+npm --prefix Tool/tools test
+node Tool/tools/wiki/test-verify-cast.mjs
+node Tool/tools/wiki/test-strategy-formulas.mjs
+node Tool/tools/architecture/check-unity-architecture.mjs
+node Tool/tools/architecture/test-check-unity-architecture.mjs
+node Tool/tools/policy/check-repo-delivery-policy.mjs
+node Tool/tools/unity/test-validate-ui-captures.mjs
 ```
 
 ## ANTI-PATTERNS

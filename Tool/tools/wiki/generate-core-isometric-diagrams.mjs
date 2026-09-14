@@ -2,9 +2,9 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..');
-const manifestPath = join(repositoryRoot, 'tools', 'wiki', 'core-isometric-diagrams.json');
-const assetDir = join(repositoryRoot, 'docs', 'assets', 'wiki');
+const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
+const manifestPath = join(repositoryRoot, 'Tool', 'tools', 'wiki', 'core-isometric-diagrams.json');
+const assetDir = join(repositoryRoot, 'Reference', 'assets', 'wiki');
 const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
 
 const scenes = { 'Home.md': sceneHome,

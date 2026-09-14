@@ -2,7 +2,7 @@
 
 The two files in this directory are byte-for-byte copies of
 `.omo/plans/seoul-grand-strategy-srpg.md` recovered from actual git history.
-They let `tools/policy/test-check-repo-delivery-policy.mjs` exercise the
+They let `Tool/tools/policy/test-check-repo-delivery-policy.mjs` exercise the
 checker's supersession checks against the real historical plan text instead of
 invented content.
 

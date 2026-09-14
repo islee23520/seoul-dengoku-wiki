@@ -40,7 +40,7 @@ if (outIdx >= 0) {
     : join(repoRoot, '.omo/evidence/unity-poc-core-loop/task-16-assets');
   mkdirSync(evidenceDir, { recursive: true });
   writeFileSync(join(evidenceDir, 'runtime-asset-reference-manifest.json'), `${JSON.stringify({
-    generated_by: 'tools/art/check-runtime-asset-provenance.mjs',
+    generated_by: 'Tool/tools/art/check-runtime-asset-provenance.mjs',
     repo_root: repoRoot,
     ...summary,
     classifications: audit.classifications,

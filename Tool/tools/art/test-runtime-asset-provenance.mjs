@@ -17,8 +17,8 @@ import {
 } from './runtime-asset-provenance.mjs';
 import * as provenance from './runtime-asset-provenance.mjs';
 
-const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..');
-const gateCli = join(repoRoot, 'tools/art/check-runtime-asset-provenance.mjs');
+const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
+const gateCli = join(repoRoot, 'Tool/tools/art/check-runtime-asset-provenance.mjs');
 
 function validNonTrellisAsset(overrides = {}) {
   return {
@@ -49,7 +49,7 @@ function validNonTrellisAsset(overrides = {}) {
     look: {
       palette: { steel: '#8A93A0' },
       materials: { finish: 'test-only' },
-      references: [{ kind: 'test-contract', source: 'tools/art/test-runtime-asset-provenance.mjs' }],
+      references: [{ kind: 'test-contract', source: 'Tool/tools/art/test-runtime-asset-provenance.mjs' }],
       owner_verdict: 'accepted',
     },
     ...overrides,
@@ -204,8 +204,8 @@ test('RED mutation: injecting TRELLIS prefab guid into MainTitle scene fails the
   try {
     // Minimal fixture: copy gate modules + playable scenes + UI + build settings + BOM + metas for props.
     const copies = [
-      'tools/art/runtime-asset-provenance.mjs',
-      'tools/art/check-runtime-asset-provenance.mjs',
+      'Tool/tools/art/runtime-asset-provenance.mjs',
+      'Tool/tools/art/check-runtime-asset-provenance.mjs',
       'Game/ProjectSettings/EditorBuildSettings.asset',
       'Game/Assets/Scenes/Bootstrap.unity',
       'Game/Assets/Scenes/MainTitle.unity',
@@ -255,7 +255,7 @@ test('RED mutation: build settings listing StationPropValidation fails', () => {
   const fixture = mkdtempSync(join(tmpdir(), 'todo16-build-'));
   try {
     for (const rel of [
-      'tools/art/runtime-asset-provenance.mjs',
+      'Tool/tools/art/runtime-asset-provenance.mjs',
       'Game/ProjectSettings/EditorBuildSettings.asset',
       'Game/Assets/Scenes/Bootstrap.unity',
       'Game/Assets/Scenes/MainTitle.unity',
@@ -287,7 +287,7 @@ function formatViolations(audit) {
   return (audit.violations || []).map((v) => JSON.stringify(v)).join('\n');
 }
 
-const slotContract = JSON.parse(readFileSync(join(repoRoot, 'tools/art/runtime-slot-contract.json'), 'utf8'));
+const slotContract = JSON.parse(readFileSync(join(repoRoot, 'Tool/tools/art/runtime-slot-contract.json'), 'utf8'));
 const sha256 = bytes => createHash('sha256').update(bytes).digest('hex');
 
 function slotFixture(t, slot = slotContract.slots[0]) {
@@ -407,7 +407,7 @@ test('runtime slot: catalog cannot claim a blocked slot is bound', t => {
 });
 
 test('original station props bind runtime slots to their BOM provenance sources without promotion', () => {
-  const bom = JSON.parse(readFileSync(join(repoRoot, 'docs/assets/bom/props/station-prop-bom.json'), 'utf8'));
+  const bom = JSON.parse(readFileSync(join(repoRoot, 'Reference/assets/bom/props/station-prop-bom.json'), 'utf8'));
   assert.equal(bom.assets.length, 6);
   for (const asset of bom.assets) {
     assert.equal(provenance.runtimeSlotForAsset(asset), `prop:${asset.asset_id}`);

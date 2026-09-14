@@ -3,7 +3,7 @@ import { readFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const repositoryRoot = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
+const repositoryRoot = join(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
 const economyPath = process.env.JANSEON_ECONOMY_PATH
   || join(repositoryRoot, 'docs', 'game-logic', 'Economy-and-Production.md');
 const markdown = await readFile(economyPath, 'utf8');

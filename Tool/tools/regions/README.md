@@ -7,10 +7,10 @@ package installation is required.
 ## Commands
 
 ```sh
-python3 -m unittest discover -s tools/regions -p 'test_*.py'
-python3 tools/regions/build_region_atlas.py --as-of 2026-09-12 --source-root ../seoul-kenshi-data/seoul-geography-20260830 --boundary .omo/evidence/seoul-regions/sources/admdongkor-20260701.geojson --output .omo/evidence/seoul-regions/atlas.json
-python3 tools/regions/verify_region_atlas.py --atlas .omo/evidence/seoul-regions/atlas.json --geometry-only
-python3 tools/regions/verify_region_atlas.py --atlas .omo/evidence/seoul-regions/atlas.json
+python3 -m unittest discover -s Tool/tools/regions -p 'test_*.py'
+python3 Tool/tools/regions/build_region_atlas.py --as-of 2026-09-12 --source-root ../seoul-kenshi-data/seoul-geography-20260830 --boundary .omo/evidence/seoul-regions/sources/admdongkor-20260701.geojson --output .omo/evidence/seoul-regions/atlas.json
+python3 Tool/tools/regions/verify_region_atlas.py --atlas .omo/evidence/seoul-regions/atlas.json --geometry-only
+python3 Tool/tools/regions/verify_region_atlas.py --atlas .omo/evidence/seoul-regions/atlas.json
 ```
 
 The final command intentionally exits 1 while dong content is null. Geometry-only
@@ -75,5 +75,5 @@ PendingDeprecationWarning messages in the raster fixture; these are not suppress
 `summary.json` records exact counts and command exits.
 
 The host LSP returned stale snapshots for newly created imports and old Window
-calls; `pyright tools/regions` was run directly on the final files and reports zero
+calls; `pyright Tool/tools/regions` was run directly on the final files and reports zero
 errors, warnings, or informations. No diagnostics or tests are disabled.

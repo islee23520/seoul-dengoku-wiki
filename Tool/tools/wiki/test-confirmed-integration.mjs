@@ -19,7 +19,7 @@ import {
 } from './verify-confirmed-integration.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
-const repositoryRoot = resolve(here, '..', '..');
+const repositoryRoot = resolve(here, '..', '..', '..');
 const verifier = fileURLToPath(new URL('./verify-confirmed-integration.mjs', import.meta.url));
 const atlasPath = join(repositoryRoot, 'docs', 'game-logic', 'World-Narrative-Atlas.md');
 
@@ -45,10 +45,10 @@ function actorIds(content) {
 
 // The public-term gate forbids one word that several approved sources used in
 // its ordinary Korean sense; the landed records carry synonym edits recorded in
-// docs/verification/banned-term-replacements.json. Comparison against the
+// Research/verification/banned-term-replacements.json. Comparison against the
 // source therefore ignores exactly that word so every other byte must match.
 const BANNED_TERM_EDITS = JSON.parse(
-  readFileSync(join(repositoryRoot, 'docs', 'verification', 'banned-term-replacements.json'), 'utf8'),
+  readFileSync(join(repositoryRoot, 'Research', 'verification', 'banned-term-replacements.json'), 'utf8'),
 );
 
 function stripBannedTermEdits(value) {
@@ -101,7 +101,7 @@ test('Given current repository When B001 story-batch stage Then verifier exits 0
     [
       fileURLToPath(new URL('./verify-world-expansion.mjs', import.meta.url)),
       '--docs',
-      join(repositoryRoot, 'docs', 'game-logic'),
+      join(repositoryRoot, 'GDD', 'game-logic'),
       '--stage',
       'story-batch',
       '--batch',
@@ -417,7 +417,7 @@ test('Given excluded B017 When story-batch stage Then E_STORY_CONTENT and worldb
   const expansion = fileURLToPath(new URL('./verify-world-expansion.mjs', import.meta.url));
   const result = spawnSync(process.execPath, [
     expansion,
-    '--docs', join(repositoryRoot, 'docs', 'game-logic'),
+    '--docs', join(repositoryRoot, 'GDD', 'game-logic'),
     '--stage', 'story-batch',
     '--batch', 'B017',
     '--atlas', atlasPath,
@@ -430,7 +430,7 @@ test('Given excluded M007 When monster-batch stage Then E_MONSTER_CONTENT', () =
   const expansion = fileURLToPath(new URL('./verify-world-expansion.mjs', import.meta.url));
   const result = spawnSync(process.execPath, [
     expansion,
-    '--docs', join(repositoryRoot, 'docs', 'game-logic'),
+    '--docs', join(repositoryRoot, 'GDD', 'game-logic'),
     '--stage', 'monster-batch',
     '--batch', 'M007',
     '--atlas', atlasPath,

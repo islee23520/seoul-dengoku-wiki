@@ -1,6 +1,6 @@
 # Unity Remote로 게임 확인하기
 
-`tools/unity-remote`는 private 저장소 `islee23520/unity-remote`의 고정된 Git submodule이다. Unity 프로젝트는 `Game/`이며, submodule 안의 `unity-package`를 local UPM dependency로 사용한다. 브라우저는 broker에 연결하고, Unity Editor는 같은 머신의 broker로 연결한다.
+`Tool/unity-remote`는 private 저장소 `islee23520/unity-remote`의 고정된 Git submodule이다. Unity 프로젝트는 `Game/`이며, submodule 안의 `unity-package`를 local UPM dependency로 사용한다. 브라우저는 broker에 연결하고, Unity Editor는 같은 머신의 broker로 연결한다.
 
 ## 처음 설치
 
@@ -8,9 +8,9 @@
 
 ```powershell
 git submodule update --init --recursive
-npm --prefix tools/unity-remote ci
-npm --prefix tools/unity-remote run build
-npm --prefix tools/unity-remote test
+npm --prefix Tool/unity-remote ci
+npm --prefix Tool/unity-remote run build
+npm --prefix Tool/unity-remote test
 ```
 
 Submodule 버전은 상위 저장소의 gitlink로 고정한다. `git submodule update --remote`는 설치에 필요하지 않다.
@@ -20,7 +20,7 @@ Submodule 버전은 상위 저장소의 gitlink로 고정한다. `git submodule 
 별도 터미널에서 실행하고 터미널을 유지한다. 작업 디렉터리는 반드시 submodule 루트여야 한다. 여기에서 web build와 session token을 찾는다.
 
 ```powershell
-Set-Location tools/unity-remote
+Set-Location Tool/unity-remote
 npm run dev
 ```
 
@@ -38,7 +38,7 @@ $previousBroker = $env:UNITY_REMOTE_BROKER
 $previousToken = $env:UNITY_REMOTE_TOKEN
 try {
     $env:UNITY_REMOTE_BROKER = 'http://127.0.0.1:4173'
-    $env:UNITY_REMOTE_TOKEN = (Get-Content -Raw 'tools/unity-remote/.unity-remote-token').Trim()
+    $env:UNITY_REMOTE_TOKEN = (Get-Content -Raw 'Tool/unity-remote/.unity-remote-token').Trim()
     Start-Process -FilePath $editor -ArgumentList '-projectPath', "`"$((Resolve-Path Game).Path)`""
 } finally {
     $env:UNITY_REMOTE_TOKEN = $previousToken
@@ -60,4 +60,4 @@ Broker는 `UNITY_REMOTE_TOKEN` 환경 변수가 없으면 매번 새 token을 �
 4. Hierarchy에서 실제 GameObject를 선택해 Inspector의 components와 serialized properties를 확인한다. 이 도구의 기본 확인 단위는 scene object이며, 전체 AssetDatabase 파일 브라우저와 동일하지 않다.
 5. 상단 Play/Stop으로 Play Mode를 제어한다. Game View 입력 전달은 Play Mode에서 사용한다. 속성 변경과 scene 저장은 별도 동작이므로 확인만 할 때는 변경하거나 저장하지 않는다.
 
-상세 기능과 설정의 원본은 [submodule README](../tools/unity-remote/README.md)다.
+상세 기능과 설정의 원본은 [submodule README](../unity-remote/README.md)다.

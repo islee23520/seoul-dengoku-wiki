@@ -3,10 +3,10 @@ import { readFile } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..');
-const gameLogicDir = join(repositoryRoot, 'docs', 'game-logic');
-const assetDir = join(repositoryRoot, 'docs', 'assets', 'wiki');
-const manifestPath = join(repositoryRoot, 'tools', 'wiki', 'core-isometric-diagrams.json');
+const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
+const gameLogicDir = join(repositoryRoot, 'GDD', 'game-logic');
+const assetDir = join(repositoryRoot, 'Reference', 'assets', 'wiki');
+const manifestPath = join(repositoryRoot, 'Tool', 'tools', 'wiki', 'core-isometric-diagrams.json');
 
 const requiredPages = [
   'Home.md',

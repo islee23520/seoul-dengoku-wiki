@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 
 import { validateManifest } from './asset-manifest.mjs';
 
-export const REPO_ROOT = fileURLToPath(new URL('../..', import.meta.url));
+export const REPO_ROOT = fileURLToPath(new URL('../../..', import.meta.url));
 
 export const FACINGS = Object.freeze(['N', 'E', 'S', 'W']);
 export const ACTIONS = Object.freeze(['idle', 'walk', 'attack', 'hit', 'down']);

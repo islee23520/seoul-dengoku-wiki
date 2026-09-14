@@ -8,7 +8,7 @@ import test from 'node:test';
 
 const unityToolsRoot = dirname(fileURLToPath(import.meta.url));
 const toolsRoot = resolve(unityToolsRoot, '..');
-const repoRoot = resolve(toolsRoot, '..');
+const repoRoot = resolve(toolsRoot, '..', '..');
 const gameRoot = join(repoRoot, 'Game');
 const tokenPath = join(gameRoot, '.unity-remote-token');
 const startCli = join(unityToolsRoot, 'start-unity-remote.mjs');
@@ -209,9 +209,9 @@ test('setup is idempotent and never upgrades the pinned submodule remote', { con
   setupUnityRemote(run);
   setupUnityRemote(run);
   const pass = [
-    { command: 'git', args: ['submodule', 'update', '--init', '--', 'tools/unity-remote'], cwd: repoRoot },
-    { command: 'npm', args: ['ci'], cwd: join(toolsRoot, 'unity-remote') },
-    { command: 'npm', args: ['run', 'build'], cwd: join(toolsRoot, 'unity-remote') },
+    { command: 'git', args: ['submodule', 'update', '--init', '--', 'Tool/unity-remote'], cwd: repoRoot },
+    { command: 'npm', args: ['ci'], cwd: join(repoRoot, 'Tool', 'unity-remote') },
+    { command: 'npm', args: ['run', 'build'], cwd: join(repoRoot, 'Tool', 'unity-remote') },
   ];
   assert.deepEqual(calls, [...pass, ...pass]);
 });

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "purpose": "Candidate slots require source-bound evidence; retained provider options do not approve assets.",
-  "provider_policy": "tools/art/catalog.mjs",
+  "provider_policy": "Tool/tools/art/catalog.mjs",
   "required_slots": 9,
   "slots": [
     "prop:poc-prop-ticket-gate",

@@ -22,8 +22,8 @@ const documents = [
 ];
 
 function resolveCanonPath(sourcePath) {
-  if (sourcePath.startsWith('docs/game-logic/')) {
-    return join(repoRoot, 'GDD/game-logic', sourcePath.slice('docs/game-logic/'.length));
+  if (sourcePath.startsWith('GDD/game-logic/')) {
+    return join(repoRoot, 'GDD/game-logic', sourcePath.slice('GDD/game-logic/'.length));
   }
   return join(repoRoot, sourcePath);
 }

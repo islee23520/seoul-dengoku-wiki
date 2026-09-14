@@ -9,9 +9,9 @@ import { fileURLToPath } from 'node:url';
 import { buildWiki } from './build-wiki.mjs';
 
 const verifier = fileURLToPath(new URL('./verify-world-expansion.mjs', import.meta.url));
-const repositoryRoot = resolve(dirname(verifier), '..', '..');
-const liveDocs = join(repositoryRoot, 'docs', 'game-logic');
-const liveAssets = join(repositoryRoot, 'docs', 'assets', 'wiki');
+const repositoryRoot = resolve(dirname(verifier), '..', '..', '..');
+const liveDocs = join(repositoryRoot, 'GDD', 'game-logic');
+const liveAssets = join(repositoryRoot, 'Reference', 'assets', 'wiki');
 const fixtures = [];
 
 after(async () => {
@@ -65,7 +65,7 @@ const VALID_SOURCE = {
 async function makeRoot(overrides = {}) {
   const root = await mkdtemp(join(tmpdir(), 'world-expansion-'));
   fixtures.push(root);
-  const docs = join(root, 'docs', 'game-logic');
+  const docs = join(root, 'GDD', 'game-logic');
   const bridgeDir = join(root, '.omo', 'research-private');
   await mkdir(docs, { recursive: true });
   await mkdir(bridgeDir, { recursive: true });

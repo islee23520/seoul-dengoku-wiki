@@ -34,7 +34,7 @@ def check(document, source):
         for polity in content.get("polity_contexts", []):
             if polity not in {f"S{i:02d}" for i in range(1, 17)}:
                 errors.append("unknown_polity:" + str(polity))
-        root = Path(__file__).resolve().parents[2]
+        root = Path(__file__).resolve().parents[3]
         for reference in content.get("canon_refs", []):
             path = (root / reference).resolve()
             if not path.is_relative_to(root) or not path.is_file():

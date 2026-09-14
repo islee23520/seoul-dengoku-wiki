@@ -8,9 +8,9 @@ from urllib.request import urlopen
 
 
 def main():
-    root = Path(__file__).resolve().parents[2]
+    root = Path(__file__).resolve().parents[3]
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--directory", type=Path, default=root / "docs/game-logic/regions/sources")
+    parser.add_argument("--directory", type=Path, default=root / "GDD/game-logic/regions/sources")
     args = parser.parse_args()
     selection = json.loads((args.directory / "selection.json").read_text(encoding="utf-8"))
     selected = selection["selected_boundary"]

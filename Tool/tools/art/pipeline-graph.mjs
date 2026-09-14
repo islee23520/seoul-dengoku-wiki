@@ -217,7 +217,7 @@ export async function main(argv = process.argv.slice(2)) {
   const args = parseArgs(rest);
   if (command === 'compile') {
     if (!args.intent) {
-      process.stderr.write('usage: node tools/art/pipeline-graph.mjs compile --intent <file.json>\n');
+      process.stderr.write('usage: node Tool/tools/art/pipeline-graph.mjs compile --intent <file.json>\n');
       return 1;
     }
     writeJson(compileGraph(readJson(args.intent)));
@@ -225,7 +225,7 @@ export async function main(argv = process.argv.slice(2)) {
   }
   if (command === 'check') {
     if (!args.graph) {
-      process.stderr.write('usage: node tools/art/pipeline-graph.mjs check --graph <file.json> [--host blender=1,trellis=1,maya=0,animo=0]\n');
+      process.stderr.write('usage: node Tool/tools/art/pipeline-graph.mjs check --graph <file.json> [--host blender=1,trellis=1,maya=0,animo=0]\n');
       return 1;
     }
     const result = checkGraph(readJson(args.graph), parseHostFlag(args.host));
@@ -234,7 +234,7 @@ export async function main(argv = process.argv.slice(2)) {
   }
   if (command === 'validate-manifest') {
     if (!args.manifest) {
-      process.stderr.write('usage: node tools/art/pipeline-graph.mjs validate-manifest --manifest <file.json>\n');
+      process.stderr.write('usage: node Tool/tools/art/pipeline-graph.mjs validate-manifest --manifest <file.json>\n');
       return 1;
     }
     let document;
@@ -251,7 +251,7 @@ export async function main(argv = process.argv.slice(2)) {
     writeJson(result);
     return result.ok ? 0 : 2;
   }
-  process.stderr.write('usage: node tools/art/pipeline-graph.mjs <compile|check|validate-manifest> ...\n');
+  process.stderr.write('usage: node Tool/tools/art/pipeline-graph.mjs <compile|check|validate-manifest> ...\n');
   return 1;
 }
 

@@ -18,9 +18,9 @@ import {
 import { ISOMETRIC_DIAGRAM_ASSETS } from './world-atlas-schema.mjs';
 
 const verifier = fileURLToPath(new URL('./verify-world-expansion.mjs', import.meta.url));
-const repositoryRoot = resolve(dirname(verifier), '..', '..');
-const liveDocs = join(repositoryRoot, 'docs', 'game-logic');
-const wikiAssets = join(repositoryRoot, 'docs', 'assets', 'wiki');
+const repositoryRoot = resolve(dirname(verifier), '..', '..', '..');
+const liveDocs = join(repositoryRoot, 'GDD', 'game-logic');
+const wikiAssets = join(repositoryRoot, 'Reference', 'assets', 'wiki');
 const atlasPath = join(liveDocs, 'World-Narrative-Atlas.md');
 const fixtures = [];
 
@@ -441,7 +441,7 @@ test('Given isometric SVG hrefs When resolved from asset path Then every externa
 });
 
 test('Given company-aliases manifest When real names enter canon Then every real name has a rename target', async () => {
-  const manifest = JSON.parse(await readFile(join(repositoryRoot, 'tools', 'wiki', 'company-aliases.json'), 'utf8'));
+  const manifest = JSON.parse(await readFile(join(repositoryRoot, 'Tool', 'tools', 'wiki', 'company-aliases.json'), 'utf8'));
   for (const name of ['삼성전자', '현대자동차', '네이버', '카카오', 'HMM', '테슬라코리아']) {
     assert.ok(name in manifest, `alias missing: ${name}`);
     assert.equal(typeof manifest[name], 'string');

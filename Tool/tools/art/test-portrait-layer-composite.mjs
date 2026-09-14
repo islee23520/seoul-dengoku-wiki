@@ -9,7 +9,7 @@ import { crc32, deflateSync } from 'node:zlib';
 
 import { compositePortraitLayers } from './portrait-layer-composite.mjs';
 
-const repoRoot = fileURLToPath(new URL('../..', import.meta.url));
+const repoRoot = fileURLToPath(new URL('../../..', import.meta.url));
 const slotsPath = fileURLToPath(new URL('./portrait-layer-slots.json', import.meta.url));
 const evidenceDir = join(repoRoot, '.omo', 'evidence', 'portrait-anime-layer-composite', 'task-4');
 const evidencePng = join(evidenceDir, 'composite.png');

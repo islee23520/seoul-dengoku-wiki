@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { validateManifest } from './asset-manifest.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
-export const repoRoot = join(here, '../..');
+export const repoRoot = join(here, '../../..');
 
 export const REQUIRED_ASSET_IDS = Object.freeze([
   'poc-title-art',
@@ -80,11 +80,11 @@ export function promotedPng(assetId) {
 }
 
 export function bomPath(assetId) {
-  return join(repoRoot, 'docs', 'assets', 'bom', BOM_FAMILY[familyOf(assetId)], `${assetId}.json`);
+  return join(repoRoot, 'Reference', 'assets', 'bom', BOM_FAMILY[familyOf(assetId)], `${assetId}.json`);
 }
 
 export function kitBomPath() {
-  return join(repoRoot, 'docs', 'assets', 'bom', 'poc-ui-station-kit.bom.json');
+  return join(repoRoot, 'Reference', 'assets', 'bom', 'poc-ui-station-kit.bom.json');
 }
 
 export function sha256File(filePath) {

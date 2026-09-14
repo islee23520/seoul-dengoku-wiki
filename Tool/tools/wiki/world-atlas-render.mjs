@@ -5,7 +5,7 @@ function banner(atlasHash) {
   return [
     '이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.',
     '',
-    `- 원본 앵커: \`docs/game-logic/World-Narrative-Atlas.md\``,
+    `- 원본 앵커: \`GDD/game-logic/World-Narrative-Atlas.md\``,
     `- 원본 해시: \`${atlasHash}\``,
     '',
   ].join('\n');

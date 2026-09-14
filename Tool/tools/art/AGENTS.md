@@ -27,7 +27,7 @@ Asset planning, candidate assembly, and fail-closed runtime provenance; score 8,
 - Runtime promotion additionally binds real raw/output/runtime bytes, rights evidence, review files, and source-binding JSON by SHA-256.
 - Slot files must match contract keys and destination directories under `Game/Assets/Janseon/Art/`.
 - `prepare` validates candidate inputs and refuses destination overwrites; `commit` validates imported runtime files before appending the BOM row.
-- The slot contract names the runtime BOM under `docs/assets/bom/runtime/` and Unity catalog under `Game/Assets/Janseon/Foundation/Art/`.
+- The slot contract names the runtime BOM under `Reference/assets/bom/runtime/` and Unity catalog under `Game/Assets/Janseon/Foundation/Art/`.
 - Python assemblers emit draft assets with unknown rights and empty reviews; successful assembly is not promotion.
 - Python image tools require Pillow; UI candidate assembly also imports NumPy.
 
@@ -35,10 +35,10 @@ Asset planning, candidate assembly, and fail-closed runtime provenance; score 8,
 Run from repository root; these are separate from the parent npm test command.
 
 ```bash
-node tools/art/pipeline-graph.mjs compile --intent tools/art/intents/poc-title-art.json
-node tools/art/check-runtime-asset-provenance.mjs --json
-node --test tools/art/test-*.mjs
-python3 -m unittest discover -s tools/art -p 'test_*.py'
+node Tool/tools/art/pipeline-graph.mjs compile --intent Tool/tools/art/intents/poc-title-art.json
+node Tool/tools/art/check-runtime-asset-provenance.mjs --json
+node --test Tool/tools/art/test-*.mjs
+python3 -m unittest discover -s Tool/tools/art -p 'test_*.py'
 ```
 
 ## ANTI-PATTERNS

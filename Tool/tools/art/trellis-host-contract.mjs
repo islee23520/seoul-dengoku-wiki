@@ -125,7 +125,7 @@ export function main(argv = process.argv.slice(2)) {
   }
   if (command === 'check') {
     if (!args.observed) {
-      process.stderr.write('usage: node tools/art/trellis-host-contract.mjs check --observed <file.json>\n');
+      process.stderr.write('usage: node Tool/tools/art/trellis-host-contract.mjs check --observed <file.json>\n');
       return 1;
     }
     const observed = JSON.parse(readFileSync(args.observed, 'utf8'));
@@ -133,7 +133,7 @@ export function main(argv = process.argv.slice(2)) {
     process.stdout.write(`${JSON.stringify(result, null, 2)}\n`);
     return result.ok ? 0 : 2;
   }
-  process.stderr.write('usage: node tools/art/trellis-host-contract.mjs pin|check --observed <file.json>\n');
+  process.stderr.write('usage: node Tool/tools/art/trellis-host-contract.mjs pin|check --observed <file.json>\n');
   return 1;
 }
 

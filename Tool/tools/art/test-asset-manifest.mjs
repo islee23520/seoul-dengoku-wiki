@@ -6,7 +6,7 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import test from 'node:test';
 
-const repoRoot = fileURLToPath(new URL('../..', import.meta.url));
+const repoRoot = fileURLToPath(new URL('../../..', import.meta.url));
 const cli = fileURLToPath(new URL('./pipeline-graph.mjs', import.meta.url));
 
 const HEX_A = 'a'.repeat(64);

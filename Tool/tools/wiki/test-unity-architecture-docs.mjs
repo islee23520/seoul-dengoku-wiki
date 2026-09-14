@@ -6,9 +6,9 @@ import { fileURLToPath } from 'node:url';
 
 import { buildWiki } from './build-wiki.mjs';
 
-const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..');
-const sourceDir = join(repositoryRoot, 'docs', 'game-logic');
-const assetDir = join(repositoryRoot, 'docs', 'assets', 'wiki');
+const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
+const sourceDir = join(repositoryRoot, 'GDD', 'game-logic');
+const assetDir = join(repositoryRoot, 'Reference', 'assets', 'wiki');
 const temporaryRoot = await mkdtemp(join(tmpdir(), 'janseon-unity-architecture-wiki-'));
 const outputDir = join(temporaryRoot, 'wiki');
 

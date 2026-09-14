@@ -6,7 +6,7 @@ import { backendPolicyError } from './catalog.mjs';
 import { validateManifest } from './asset-manifest.mjs';
 
 const moduleDir = dirname(fileURLToPath(import.meta.url));
-export const defaultRepoRoot = resolve(moduleDir, '..', '..');
+export const defaultRepoRoot = resolve(moduleDir, '..', '..', '..');
 export const runtimeSlotContract = JSON.parse(readFileSync(join(moduleDir, 'runtime-slot-contract.json'), 'utf8'));
 
 export const QUARANTINE_PATH_MARKERS = ['/Art/Staging/', '/Quarantine/', 'StationPropValidation.unity'];
@@ -296,7 +296,7 @@ export function auditRuntimeProvenance(repoRoot = defaultRepoRoot, options = {})
 
   // BOM inventory: eligibility requires actual source-bound files.
   const bomAssets = [];
-  for (const bomRel of ['docs/assets/bom/props/station-prop-bom.json', runtimeSlotContract.bom_path]) {
+  for (const bomRel of ['Reference/assets/bom/props/station-prop-bom.json', runtimeSlotContract.bom_path]) {
     const bomPath = join(repoRoot, bomRel);
     if (existsSync(bomPath)) {
       try {

@@ -2,7 +2,7 @@
 """Emit contract-field DRAFTS for the 16-state named cast.
 
 Reads Cast-State-01..16, Cast-Index, and Core-Characters. Writes review
-artifacts under docs/game-logic/name-pools/. Does not modify source corpus
+artifacts under GDD/game-logic/name-pools/. Does not modify source corpus
 files. Python 3 stdlib only. Same inputs → same outputs.
 """
 from __future__ import annotations
@@ -76,7 +76,7 @@ SKIP_NAME_RE = re.compile(r"^(B0\d+|G\d+)", re.I)
 
 
 def repo_root() -> Path:
-    return Path(__file__).resolve().parents[2]
+    return Path(__file__).resolve().parents[3]
 
 
 def name_rng(name: str) -> random.Random:
@@ -366,7 +366,7 @@ def render_markdown(people: list[dict]) -> str:
     lines = [
         "# 인물 카드 백필 초안 (검토용)",
         "",
-        "이 표는 `tools/cast/generate_backfill_draft.py`가 기존 명부에서 **규칙으로 파생**한 DRAFT다.",
+        "이 표는 `Tool/tools/cast/generate_backfill_draft.py`가 기존 명부에서 **규칙으로 파생**한 DRAFT다.",
         "정본이 아니며, 인간 검토 없이 Cast-State·Cast-Index·Core-Characters에 올리지 않는다.",
         "출신 공동체·생업·징집 이력·무장 접근은 성명 해시 시드로 굴렸다. 소속·직위는 원문 그대로다.",
         "",
@@ -404,7 +404,7 @@ def main() -> int:
         "--docs",
         type=Path,
         default=None,
-        help="docs/game-logic directory (default: repo docs/game-logic)",
+        help="GDD/game-logic directory (default: repo GDD/game-logic)",
     )
     args = ap.parse_args()
     root = repo_root()

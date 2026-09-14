@@ -34,6 +34,6 @@ function scan(path, requiredRoot = false) {
   }
 }
 
-for (const path of ['Game/Assets', 'docs/assets']) scan(path, true);
+for (const path of ['Game/Assets', 'Reference/assets']) scan(path, true);
 console.log(JSON.stringify(report, null, 2));
 process.exitCode = report.pointers.length || report.errors.length ? 1 : 0;
