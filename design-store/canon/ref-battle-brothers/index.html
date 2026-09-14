@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Battle Brothers 게임 시스템 레퍼런스 — 정본</title>
+<style>
+:root { --ink:#1a1714; --paper:#f4efe4; --line:#c9b896; --metro:#1d4e89; --mute:#6b6256; }
+body { margin:0; font:16px/1.55 "Apple SD Gothic Neo","Noto Sans KR",sans-serif; color:var(--ink); background:var(--paper); }
+main { max-width:880px; margin:0 auto; padding:36px 24px 80px; }
+.kicker { letter-spacing:.14em; font-size:11px; color:var(--mute); }
+h1 { font-family:"Song Myung","Apple Myungjo",serif; font-size:32px; margin:8px 0 12px; }
+section { margin:28px 0; padding:18px; background:#fffdf8; border:1px solid var(--line); }
+.src { font-size:12px; color:var(--mute); }
+</style>
+</head>
+<body>
+<main>
+<p class="kicker">정본 파일 · SQLite</p>
+<p><a href="../" style="color:var(--metro)">설계 목차</a></p>
+<h1>Battle Brothers 게임 시스템 레퍼런스</h1>
+<p class="src">GDD/game-logic/Ref-Battle-Brothers.md · 128162 bytes · e53d05ab834cdbe990e7a3260be7bc03b039fa45917bd20e88b9e1a9c9c50018</p>
+<section>
+<h2>머리글</h2>
+<ul><li>H1 Battle Brothers 게임 시스템 레퍼런스</li>
+<li>H2 1. 개요</li>
+<li>H2 2. 코어 루프</li>
+<li>H3 2.1 두 시간 체계의 반복</li>
+<li>H3 2.2 한 번의 승리가 남기는 것</li>
+<li>H2 3. 진행 구조</li>
+<li>H3 3.1 시작부터 후기까지</li>
+<li>H3 3.2 기원 전체</li>
+<li>H3 3.3 야망: 선택형 회사 목표</li>
+<li>H3 3.4 장기 조직 성장: 수행원</li>
+<li>H2 4. 경제 시스템</li>
+<li>H3 4.1 자원, 획득, 소모</li>
+<li>H3 4.2 음식과 보급 반경</li>
+<li>H3 4.3 급료와 고용비</li>
+<li>H3 4.4 거래품과 가격 공식</li>
+<li>H3 4.5 계약과 협상</li>
+<li>H3 4.6 화폐 축적을 상쇄하는 비용</li>
+<li>H2 5. 캐릭터/파티 시스템</li>
+<li>H3 5.1 모집, 배경, 편성</li>
+<li>H3 5.2 능력치와 성장</li>
+<li>H3 5.3 특성, 관계, 기분</li>
+<li>H3 5.4 전체 특전: 공통 7단계</li>
+<li>H3 5.5 기원 고유 성장</li>
+<li>H3 5.6 부상, 사망, 이탈</li>
+<li>H3 5.7 투기장</li>
+<li>H3 5.8 배경 능력치 전체 목록</li>
+<li>H2 6. 전투 시스템</li>
+<li>H3 6.1 턴, AP, 피로, 행동 순서</li>
+<li>H3 6.2 육각 격자, 지형, 고도, ZoC</li>
+<li>H3 6.3 명중 공식</li>
+<li>H3 6.4 원거리, 엄폐, 머리 판정</li>
+<li>H3 6.5 피해·방어구 관통 공식</li>
+<li>H3 6.6 무기별 AP·피로·효과</li>
+<li>H3 6.7 장비, 내구, 수리, 전리품</li>
+<li>H3 6.8 제작, 부착물, 네임드와 전설</li>
+<li>H3 6.9 사기 판정과 상태효과</li>
+<li>H3 6.10 적 진영과 전술적 차이</li>
+<li>H3 6.11 적 능력치 전체 표</li>
+<li>H4 인간 세력</li>
+<li>H4 오크</li>
+<li>H4 고블린</li>
+<li>H4 좀비</li>
+<li>H4 고대의 죽은 자</li>
+<li>H4 야수</li>
+<li>H4 육체 골렘과 관련 시전자</li>
+<li>H3 6.12 챔피언</li>
+<li>H2 7. 지도/세계 구조</li>
+<li>H3 7.1 표면과 전환</li>
+<li>H3 7.2 낮·밤과 일수</li>
+<li>H3 7.3 정착지와 부속시설</li>
+<li>H3 7.4 도시 서비스</li>
+<li>H3 7.5 정착지 상황과 세계 사건</li>
+<li>H3 7.6 전설 장소와 연쇄 탐험</li>
+<li>H2 8. 외교/세력</li>
+<li>H3 8.1 세 가지 독립 수치</li>
+<li>H3 8.2 관계 변화와 적대</li>
+<li>H3 8.3 정복, 동맹, 반란의 범위</li>
+<li>H2 9. 이벤트/내러티브</li>
+<li>H3 9.1 사건 종류와 선택 구조</li>
+<li>H3 9.2 문서화된 선택 예</li>
+<li>H3 9.3 계약 분기와 결과의 지속성</li>
+<li>H2 10. 난이도/압박</li>
+<li>H3 10.1 난이도 축과 적 스케일링</li>
+<li>H3 10.2 후기 위기: 4종</li>
+<li>H3 10.3 실패와 압박의 결합</li>
+<li>H3 10.4 게임오버와 은퇴</li>
+<li>H3 10.5 자료 충돌·미확인 경계</li>
+<li>H3 10.6 출처 색인</li></ul>
+</section>
+</main>
+</body>
+</html>

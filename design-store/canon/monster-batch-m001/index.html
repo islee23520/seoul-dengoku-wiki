@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>몬스터 배치 M001 — 정본</title>
+<style>
+:root { --ink:#1a1714; --paper:#f4efe4; --line:#c9b896; --metro:#1d4e89; --mute:#6b6256; }
+body { margin:0; font:16px/1.55 "Apple SD Gothic Neo","Noto Sans KR",sans-serif; color:var(--ink); background:var(--paper); }
+main { max-width:880px; margin:0 auto; padding:36px 24px 80px; }
+.kicker { letter-spacing:.14em; font-size:11px; color:var(--mute); }
+h1 { font-family:"Song Myung","Apple Myungjo",serif; font-size:32px; margin:8px 0 12px; }
+section { margin:28px 0; padding:18px; background:#fffdf8; border:1px solid var(--line); }
+.src { font-size:12px; color:var(--mute); }
+</style>
+</head>
+<body>
+<main>
+<p class="kicker">정본 파일 · SQLite</p>
+<p><a href="../" style="color:var(--metro)">설계 목차</a></p>
+<h1>몬스터 배치 M001</h1>
+<p class="src">GDD/game-logic/Monster-Batch-M001.md · 21155 bytes · fc0e7dd8fcb5427725706224dc5b932080325463f3c333dd8e0464d42dfb0830</p>
+<section>
+<h2>머리글</h2>
+<ul><li>H1 몬스터 배치 M001</li>
+<li>H2 G01E01 · 범람멧돼지 대왕 '철갑'</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식</li>
+<li>H3 필요·경제</li>
+<li>H3 생애·정비</li>
+<li>H3 행동·위계</li>
+<li>H3 단계적 위협</li>
+<li>H3 전투·대응</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li>
+<li>H2 G01E02 · 범람멧돼지 정찰꾼 '흙코'</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식</li>
+<li>H3 필요·경제</li>
+<li>H3 생애·정비</li>
+<li>H3 행동·위계</li>
+<li>H3 단계적 위협</li>
+<li>H3 전투·대응</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li>
+<li>H2 G01E03 · 범람멧돼지 청소부 '녹철이'</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식</li>
+<li>H3 필요·경제</li>
+<li>H3 생애·정비</li>
+<li>H3 행동·위계</li>
+<li>H3 단계적 위협</li>
+<li>H3 전투·대응</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li>
+<li>H2 G01E04 · 범람멧돼지 경비병 '강철엄니'</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식</li>
+<li>H3 필요·경제</li>
+<li>H3 생애·정비</li>
+<li>H3 행동·위계</li>
+<li>H3 단계적 위협</li>
+<li>H3 전투·대응</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li>
+<li>H2 G01E05 · 범람멧돼지 독분비자 '썩은입'</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식</li>
+<li>H3 필요·경제</li>
+<li>H3 생애·정비</li>
+<li>H3 행동·위계</li>
+<li>H3 단계적 위협</li>
+<li>H3 전투·대응</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li>
+<li>H2 G01E06 · 범람멧돼지 진흙건축가 '벽돌코'</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식</li>
+<li>H3 필요·경제</li>
+<li>H3 생애·정비</li>
+<li>H3 행동·위계</li>
+<li>H3 단계적 위협</li>
+<li>H3 전투·대응</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li>
+<li>H2 G01E07 · 범람멧돼지 무리인도자 '울음왕'</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식</li>
+<li>H3 필요·경제</li>
+<li>H3 생애·정비</li>
+<li>H3 행동·위계</li>
+<li>H3 단계적 위협</li>
+<li>H3 전투·대응</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li>
+<li>H2 G01E08 · 범람멧돼지 금속융합체 '융합갑'</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식</li>
+<li>H3 필요·경제</li>
+<li>H3 생애·정비</li>
+<li>H3 행동·위계</li>
+<li>H3 단계적 위협</li>
+<li>H3 전투·대응</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li>
+<li>H2 G01E09 · 범람멧돼지 독왕 '맹독엄니'</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식</li>
+<li>H3 필요·경제</li>
+<li>H3 생애·정비</li>
+<li>H3 행동·위계</li>
+<li>H3 단계적 위협</li>
+<li>H3 전투·대응</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li>
+<li>H2 G01E10 · 범람멧돼지 철갑둥지 '강철습지'</li>
+<li>H3 역할·신체</li>
+<li>H3 기원</li>
+<li>H3 서식</li>
+<li>H3 필요·경제</li>
+<li>H3 생애·정비</li>
+<li>H3 행동·위계</li>
+<li>H3 단계적 위협</li>
+<li>H3 전투·대응</li>
+<li>H3 협상·도덕 선택</li>
+<li>H3 시나리오 연결</li></ul>
+</section>
+</main>
+</body>
+</html>

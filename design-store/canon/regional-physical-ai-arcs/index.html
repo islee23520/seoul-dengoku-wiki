@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>권역·피지컬 AI 서사선 — 정본</title>
+<style>
+:root { --ink:#1a1714; --paper:#f4efe4; --line:#c9b896; --metro:#1d4e89; --mute:#6b6256; }
+body { margin:0; font:16px/1.55 "Apple SD Gothic Neo","Noto Sans KR",sans-serif; color:var(--ink); background:var(--paper); }
+main { max-width:880px; margin:0 auto; padding:36px 24px 80px; }
+.kicker { letter-spacing:.14em; font-size:11px; color:var(--mute); }
+h1 { font-family:"Song Myung","Apple Myungjo",serif; font-size:32px; margin:8px 0 12px; }
+section { margin:28px 0; padding:18px; background:#fffdf8; border:1px solid var(--line); }
+.src { font-size:12px; color:var(--mute); }
+</style>
+</head>
+<body>
+<main>
+<p class="kicker">정본 파일 · SQLite</p>
+<p><a href="../" style="color:var(--metro)">설계 목차</a></p>
+<h1>권역·피지컬 AI 서사선</h1>
+<p class="src">GDD/game-logic/Regional-Physical-AI-Arcs.md · 19567 bytes · 6217b99ade0699e452d58c2af64f4140d4f4db2d63faab446e63066944032ae9</p>
+<section>
+<h2>머리글</h2>
+<ul><li>H1 권역·피지컬 AI 서사선</li>
+<li>H2 ARC-H-HC01 · HC01 운영 연속성</li>
+<li>H2 ARC-H-HC02 · HC02 운영 연속성</li>
+<li>H2 ARC-H-HC03 · HC03 운영 연속성</li>
+<li>H2 ARC-H-HC04 · HC04 운영 연속성</li>
+<li>H2 ARC-H-HC05 · HC05 운영 연속성</li>
+<li>H2 ARC-H-HC06 · HC06 운영 연속성</li>
+<li>H2 ARC-H-HC07 · HC07 운영 연속성</li>
+<li>H2 ARC-H-HC08 · HC08 운영 연속성</li>
+<li>H2 ARC-H-HC09 · HC09 운영 연속성</li>
+<li>H2 ARC-H-HC10 · HC10 운영 연속성</li>
+<li>H2 ARC-H-HC11 · HC11 운영 연속성</li>
+<li>H2 ARC-H-HC12 · HC12 운영 연속성</li>
+<li>H2 ARC-H-HC13 · HC13 운영 연속성</li>
+<li>H2 ARC-H-HC14 · HC14 운영 연속성</li>
+<li>H2 ARC-H-HP01 · HP01 운영 연속성</li>
+<li>H2 ARC-H-HP02 · HP02 운영 연속성</li>
+<li>H2 ARC-H-HP03 · HP03 운영 연속성</li>
+<li>H2 ARC-H-HP04 · HP04 운영 연속성</li>
+<li>H2 ARC-H-HP05 · HP05 운영 연속성</li>
+<li>H2 ARC-H-HP06 · HP06 운영 연속성</li>
+<li>H2 ARC-H-HP07 · HP07 운영 연속성</li>
+<li>H2 ARC-H-HP08 · HP08 운영 연속성</li>
+<li>H2 ARC-H-HP09 · HP09 운영 연속성</li>
+<li>H2 ARC-H-HP10 · HP10 운영 연속성</li>
+<li>H2 ARC-T-XT01 · XT01 회랑 압력</li>
+<li>H2 ARC-T-XT02 · XT02 회랑 압력</li>
+<li>H2 ARC-T-XT03 · XT03 회랑 압력</li>
+<li>H2 ARC-T-XT04 · XT04 회랑 압력</li>
+<li>H2 ARC-T-XT05 · XT05 회랑 압력</li>
+<li>H2 ARC-S-H · 인간형 합성 보관 한계</li>
+<li>H2 ARC-S-F · 시설형 합성 보관 한계</li>
+<li>H2 ARC-S-V · 기동형 합성 보관 한계</li>
+<li>H2 ARC-G-G01 · G01 생태 교섭</li>
+<li>H2 ARC-G-G02 · G02 생태 교섭</li>
+<li>H2 ARC-G-G03 · G03 생태 교섭</li>
+<li>H2 ARC-G-G04 · G04 생태 교섭</li>
+<li>H2 ARC-G-G05 · G05 생태 교섭</li>
+<li>H2 ARC-G-G06 · G06 생태 교섭</li>
+<li>H2 ARC-G-G07 · G07 생태 교섭</li>
+<li>H2 ARC-G-G08 · G08 생태 교섭</li>
+<li>H2 ARC-G-G09 · G09 생태 교섭</li>
+<li>H2 ARC-G-G10 · G10 생태 교섭</li>
+<li>H2 ARC-G-G11 · G11 생태 교섭</li>
+<li>H2 ARC-G-G12 · G12 생태 교섭</li>
+<li>H2 ARC-G-G13 · G13 생태 교섭</li>
+<li>H2 ARC-G-G14 · G14 생태 교섭</li>
+<li>H2 ARC-G-G15 · G15 생태 교섭</li>
+<li>H2 ARC-G-G16 · G16 생태 교섭</li>
+<li>H2 ARC-G-G17 · G17 생태 교섭</li>
+<li>H2 ARC-G-G18 · G18 생태 교섭</li>
+<li>H2 ARC-G-G19 · G19 생태 교섭</li>
+<li>H2 ARC-G-G20 · G20 생태 교섭</li>
+<li>H2 ARC-G-G21 · G21 생태 교섭</li>
+<li>H2 ARC-G-G22 · G22 생태 교섭</li>
+<li>H2 ARC-G-G23 · G23 생태 교섭</li>
+<li>H2 ARC-G-G24 · G24 생태 교섭</li>
+<li>H2 ARC-H-HC15 · 네이버 운영 연속성</li>
+<li>H2 ARC-H-HC16 · KT 운영 연속성</li>
+<li>H2 ARC-H-HC17 · LG에너지솔루션 운영 연속성</li>
+<li>H2 ARC-H-HC18 · HMM 운영 연속성</li>
+<li>H2 ARC-H-HC19 · 호텔신라 운영 연속성</li>
+<li>H2 ARC-H-HC20 · HYBE 운영 연속성</li>
+<li>H2 ARC-H-HC21 · 카카오 운영 연속성</li>
+<li>H2 ARC-H-HC22 · 테슬라코리아 운영 연속성</li>
+<li>H2 ARC-G-G25 · G25 등불개미군 로스트 라인 재기동</li>
+<li>H2 ARC-G-G26 · G26 화석포효군 로스트 라인 재기동</li>
+<li>H2 ARC-G-G27 · G27 심층삼엽군 로스트 라인 재기동</li></ul>
+</section>
+</main>
+</body>
+</html>
