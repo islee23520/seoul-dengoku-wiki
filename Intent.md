@@ -1,8 +1,8 @@
 # 방향 결정 기록 (Intent)
 
-상태: 2026-09-06 소유자 결정 두 건 확정, 2026-09-07 결정 3·4 추가, 2026-09-14 결정 5 추가. 구현 금지 — 이 문서와 계약·게이트웨이·계획·이슈·로드맵만 이번 단계에서 산출한다.
+상태: 2026-09-06 소유자 결정 두 건 확정, 2026-09-07 결정 3·4 추가, 2026-09-14 결정 1·5·6 갱신. 구현 금지 — 이 문서와 계약·게이트웨이·계획·이슈·로드맵만 이번 단계에서 산출한다.
 
-이 문서는 소유자 결정 다섯 건을 기록하고, 뒤이은 계약 개정과 품질 게이트웨이 잠금의 근거가 된다.
+이 문서는 소유자 결정을 기록하고, 뒤이은 계약 개정과 품질 게이트웨이 잠금의 근거가 된다.
 
 ## 결정 3 — 목표 형태: 4X + RPG, 전투는 실시간 진형·카드 전투 (2026-09-07)
 
@@ -16,18 +16,16 @@
 ## 결정 4 — 오드랜드 그래픽·SFX·VFX 전량 반입, Spine은 POC 에셋으로 (2026-09-07)
 
 - 2026-09-07 소유자 지시: 실시간 진형·카드 전투는 미리 렌더된 다이아몬드 아이소 타일을 요구하지 않으므로, 소유자 자작 프로젝트 오드랜드의 FBX·3D 에셋을 게임 영역에 전량 반입해 우리 카메라·격자 안에서 쓴다. 이어 "fully copy those game graphic assets and sfx vfx into this project"로 범위를 그래픽·SFX·VFX 전부로 확정했다.
-- Spine 에셋은 **POC 에셋**으로만 쓴다. 최종 플레이어 캐릭터 표현은 결정 1(TOS식 SD)과 아바타 재검토 권안 A′ 사이의 소유자 미결 사항으로 남는다.
+- Spine 에셋은 POC 사람 표현으로 쓴다.
 - 권리: 오드랜드 그래픽 에셋은 소유자 소유·전면 자유 사용 선언(2026-09-07). spine-unity 런타임은 Esoteric Software 런타임 라이선스 대상이며 소유자 Spine 에디터 라이선스가 전제다.
 - 실행: `tools/art/import-oddland-donor.mjs`가 `/Volumes/gameWorkspace/game-refs/oddland-unity`에서 `Game/Assets/Quarantine/Oddland/`로 결정론적 복사하고 `docs/assets/bom/donor/`에 매니페스트·SHA-256 목록을 남긴다. 페이로드는 LFS 할당량 문제로 gitignore, 매니페스트만 추적. 게이트 7(BOM fail-closed)과 거리 표시 규칙은 그대로다 — 기증은 승격이 아니며 런타임 슬롯 연결은 여전히 `look.owner_verdict: accepted`를 요구한다.
 - 상세: [에셋이 들어오는 길](docs/game-logic/Asset-Pipeline.md) 「기증 에셋: 오드랜드 패이로드」.
 
-## 결정 1 — 사람 캐릭터: 구현 placeholder 폐기, TOS식 SD로 재작업 (승인됨)
+## 결정 1 — 사람 캐릭터: 오드랜드 Spine POC (2026-09-14)
 
-- 2026-09-06 소유자 육안: 기존 3역할 placeholder(탐사원·의무원·순찰대)는 사용 불가 판정. 각 BOM `look.owner_verdict: rejected`로 기록됐다.
-- 같은 날 소유자가 재작업 방향을 승인했다: **트리 오브 세이비어식 SD** — 3D 메시 바디 + 2D 도트 머리 빌보드, 눈 강조 단순화 얼굴, 2.5등신 유지, 무광 손그림 질감.
-- 스타일 목표 시트: `.omo/evidence/character-direction/tos-sd-direction-mockup.png` (런타임 에셋이 아니라 방향 참조용 목업이다).
-- 수치 목표와 출처는 [캐릭터 미술 방향](docs/game-logic/Character-Art-Direction.md) 「스타일 레퍼런스」·「재작업 수치 목표」 절에 잠겨 있다.
-- 재작업 이슈: #58
+- POC 사람 표현은 오드랜드 Spine이다. Spine 에셋은 POC 사람 표현으로 쓴다.
+- 실루엣은 2.5등신, 동·서·남·북 네 방향. 정본은 [이 게임이 뭔지](docs/game-logic/Game-Thesis.md).
+- 실행 이슈: #58
 
 ## 결정 2 — UI 프레임워크: UI Toolkit 폐기, uGUI로 고정
 
@@ -43,6 +41,13 @@
 - 전투 메커닉 영상: https://www.youtube.com/watch?v=FXmBd6mgVVg
 - 2.5D 화면 영상: https://www.youtube.com/watch?v=wOgbtZMhaxg
 - 전투 형태는 Songs of Silence와 같은 실시간 진형·카드 전투다.
+
+## 결정 6 — 화면 목표는 poc-complete 열 면 (2026-09-14)
+
+- 화면 목표는 `.omo/design/poc-complete.html` 의 열 면이다.
+- 소유자 판단: 이 HTML이 가려는 UI에 가장 가깝다.
+- 열 면: 시작 프리셋, 캐릭터 생성, 세계 인물 모집, 거점 허브, 캐릭터 대화, 전략 노선도, 역간 여행, 조우, 전투, 정산.
+- 색인 이슈: #101. 보고서: `/ui-ux-refs/`.
 
 ## 품질 게이트웨이 잠금 (두 작업 공통)
 
@@ -66,4 +71,4 @@
 - Development-Roadmap.md 갱신
 - ToDo.md 증분 추가
 - 마이그레이션·재작업 실행 계획: `.omo/plans/ui-ugui-and-character-rebuild.md`
-- GitHub 이슈 등록: #59(uGUI 마이그레이션), #58(TOS식 SD 캐릭터 재작업) — 에픽 #13 하위 등록
+- GitHub 이슈 등록: #59(uGUI 마이그레이션), #58(오드랜드 Spine POC) — 에픽 #13 하위 등록

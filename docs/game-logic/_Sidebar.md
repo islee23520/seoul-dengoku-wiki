@@ -34,6 +34,7 @@
 * [로스트 테크 계보](Lost-Technology-Lineage)
 * [이동과 조우](Travel-and-Encounters)
 * [실시간 진형·카드 전투](Realtime-Formation-Card-Battle)
+* [설계 요구 티켓](Design-Requirements)
 * [전략에서 전투로](Strategy-Battle-Roundtrip)
 * [캐릭터 미술](Character-Art-Direction)
 * [에셋이 들어오는 길](Asset-Pipeline)

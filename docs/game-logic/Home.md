@@ -43,6 +43,7 @@
 | [세계 서사 지도](World-Narrative-Atlas.md) | 가문·적대 생태·몬스터·서사 배치의 원본 |
 | [이동과 조우](Travel-and-Encounters.md) | 4방향 행동과 원정 위험 |
 | [실시간 진형·카드 전투](Realtime-Formation-Card-Battle.md) | 같은 격자에서 이어지는 실시간 진형·카드 전투 (Core 규칙 버전 `rtfc-owner-cards-v2`) |
+| [설계 요구 티켓](Design-Requirements.md) | MDA 층은 설계 어휘. 개발 단위는 GitHub 요구 티켓 |
 | [전략에서 전투로](Strategy-Battle-Roundtrip.md) | 세계 상태를 전투에 넘기고 결과를 한 번만 반영하는 법 |
 | [캐릭터 미술](Character-Art-Direction.md) | 2.5등신 전술 실루엣과 인물 프로필 초상 규칙 |
 | [에셋이 들어오는 길](Asset-Pipeline.md) | 의도 JSON을 그래프로 컴파일·검사하고 생성부터 승인까지 가는 설명서 |
