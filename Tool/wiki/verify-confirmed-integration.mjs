@@ -8,7 +8,7 @@ import { extractAtlasJson } from './world-atlas-parse.mjs';
 const here = dirname(fileURLToPath(import.meta.url));
 const defaultManifestPath = join(here, 'confirmed-integration-manifest.json');
 const defaultRepoRoot = resolve(here, '..', '..');
-const defaultAtlasRel = join('GDD', 'game-logic', 'World-Narrative-Atlas.md');
+const defaultAtlasRel = join('Wikis', 'game-logic', 'World-Narrative-Atlas.md');
 
 export function IntegrationError(code, detail) {
   const err = new Error(`${code}: ${detail}`);
@@ -239,7 +239,7 @@ export async function verifyLiveDocs(opts = {}) {
   const atlasPath = opts.atlasPath ?? join(repoRoot, defaultAtlasRel);
   const markdown = await readFile(atlasPath, 'utf8');
   const atlas = atlasFromMarkdown(markdown);
-  const docs = opts.docs ?? join(repoRoot, 'GDD', 'game-logic');
+  const docs = opts.docs ?? join(repoRoot, 'Wikis', 'game-logic');
   const violations = verifyLiveAtlas(atlas, manifest, opts);
   const { readdir } = await import('node:fs/promises');
   let names = [];

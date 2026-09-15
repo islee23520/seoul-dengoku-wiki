@@ -22,8 +22,8 @@ const documents = [
 ];
 
 function resolveCanonPath(sourcePath) {
-  if (sourcePath.startsWith('GDD/game-logic/')) {
-    return join(repoRoot, 'GDD/game-logic', sourcePath.slice('GDD/game-logic/'.length));
+  if (sourcePath.startsWith('Wikis/game-logic/')) {
+    return join(repoRoot, 'Wikis/game-logic', sourcePath.slice('Wikis/game-logic/'.length));
   }
   return join(repoRoot, sourcePath);
 }
@@ -73,8 +73,8 @@ for (const document of documents) {
 }
 const ingested = ingestCanonDir({
   dbPath,
-  canonRoot: join(repoRoot, 'GDD/game-logic'),
-  pathPrefix: 'GDD/game-logic',
+  canonRoot: join(repoRoot, 'Wikis/game-logic'),
+  pathPrefix: 'Wikis/game-logic',
 });
 exportIndexPage({ dbPath, outPath: join(outRoot, 'index.html') });
 for (const document of documents) {

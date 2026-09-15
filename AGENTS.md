@@ -16,13 +16,14 @@ seoul-kenshi/
 |   |-- Assets/Janseon/    # Core, Foundation, runtime art
 |   |-- Assets/Tests/      # EditMode & PlayMode validation
 |   `-- ProjectSettings/
-|-- GDD/                   # consolidated design & delivery docs (game-logic, adr, proposals, architecture, site, design-store)
-|   |-- game-logic/        # authoritative corpus, name-pools, regions
+|-- GDD/                   # consolidated design & delivery docs (adr, proposals, system-design, design-store)
 |   |-- adr/
 |   |-- proposals/
 |   |-- system-design/
-|   |-- site/              # VitePress build
 |   `-- design-store/
+|-- Wikis/                 # wiki corpus and wiki site
+|   |-- game-logic/        # authoritative corpus, name-pools, regions
+|   `-- site/              # VitePress build
 |-- Design/                # visual moodboards, prototypes, moved portrait-demo
 |   |-- ui-layout-moodboard/
 |   |-- poc/
@@ -46,15 +47,15 @@ seoul-kenshi/
 ## WHERE TO LOOK
 | Task | Location | Notes |
 |------|----------|-------|
-| Design entry and navigation | `GDD/game-logic/Home.md`, `_Sidebar.md` | Separate design intent from implementation status |
-| Architecture and rollout | `GDD/game-logic/Unity-Architecture.md`, `GDD/system-design/Unity-System-Design.md`, `GDD/game-logic/Unity-Architecture-Implementation-Plan.md` | Responsibilities, contracts, implementation sequence |
-| Save and randomness contracts | `GDD/game-logic/Save-and-Determinism.md` | Versioning, event records, separated RNG streams |
-| Cast corpus | `GDD/game-logic/Cast-Index.md`, `GDD/game-logic/Cast-Relations.md`, `GDD/game-logic/Cast-State-01.md` through `GDD/game-logic/Cast-State-16.md` | Sixteen-state organization |
+| Design entry and navigation | `Wikis/game-logic/Home.md`, `_Sidebar.md` | Separate design intent from implementation status |
+| Architecture and rollout | `Wikis/game-logic/Unity-Architecture.md`, `GDD/system-design/Unity-System-Design.md`, `Wikis/game-logic/Unity-Architecture-Implementation-Plan.md` | Responsibilities, contracts, implementation sequence |
+| Save and randomness contracts | `Wikis/game-logic/Save-and-Determinism.md` | Versioning, event records, separated RNG streams |
+| Cast corpus | `Wikis/game-logic/Cast-Index.md`, `Wikis/game-logic/Cast-Relations.md`, `Wikis/game-logic/Cast-State-01.md` through `Wikis/game-logic/Cast-State-16.md` | Sixteen-state organization |
 | Unity setup and scene flow | `Game/AGENTS.md` | Pinned editor, genre contract, engine entry points |
 | Domain and runtime integration | `Game/Assets/Janseon/AGENTS.md` | Core/Foundation boundary and art import seams |
 | Unity tests and captures | `Game/Assets/Tests/AGENTS.md` | Test-mode ownership and evidence receipts |
 | Tooling and checks | `Tool/AGENTS.md` | Explicit gates beyond the package test command |
-| Asset processing | `GDD/game-logic/Asset-Pipeline.md`, `Tool/art/AGENTS.md` | Design contract versus executable promotion checks |
+| Asset processing | `Wikis/game-logic/Asset-Pipeline.md`, `Tool/art/AGENTS.md` | Design contract versus executable promotion checks |
 | Asset rights and reviews | `Reference/assets/bom/` | Source evidence, runtime-slot records, quality gates |
 | Delivery and publishing | `GDD/adr/ADR-001-repository-delivery-policy.md` | Accepted authority over historical local-only clauses |
 | Web hub deploy | `SERVICES.md`, `index.html`, `vercel.json` | User-facing URL is always `https://seoul-kenshi.vercel.app`. Vercel project is only `seoul-kenshi` (`prj_KOgAaJkJZ7j3CrUD1eAzYtiGV5mm`, scope `makcha1`). |

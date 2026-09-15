@@ -48,7 +48,7 @@ async function exists(path) {
 
 async function makeRepo({ pages, assets = { 'figure.svg': '<svg xmlns="http://www.w3.org/2000/svg"/>' }, extra = {} } = {}) {
   const repo = join(root, `repo-${Math.random().toString(16).slice(2)}`);
-  const sourceDir = join(repo, 'GDD', 'game-logic');
+  const sourceDir = join(repo, 'Wikis', 'game-logic');
   const assetDir = join(repo, 'Reference', 'assets', 'wiki');
   await mkdir(sourceDir, { recursive: true });
   await mkdir(assetDir, { recursive: true });

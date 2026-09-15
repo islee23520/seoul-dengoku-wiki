@@ -1,6 +1,6 @@
 # 동결된 브라우저 UI 목업
 
-이 폴더는 [UI가 코드로 들어오는 길](../../../GDD/game-logic/Ui-Implementation-Pipeline.md) 6단계의 동결본입니다.
+이 폴더는 [UI가 코드로 들어오는 길](../../../Wikis/game-logic/Ui-Implementation-Pipeline.md) 6단계의 동결본입니다.
 원본은 승인된 HTML 진형·카드 POC이며, 유니티 이식의 시각·입력 기준입니다.
 
 - 지휘관 카드: `avatar-preview/`

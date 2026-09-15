@@ -100,7 +100,7 @@ class ContentTests(unittest.TestCase):
                 "source_kind": "original-fiction", "fictional_epoch": "opening-day",
                 "title": "저수조 교대", "summary": "골목 주민과 정비조가 저수조 교대를 나눈다.",
                 "anchor_refs": ["osm:node:42"],
-                "canon_refs": ["GDD/game-logic/Sixteen-States.md"],
+                "canon_refs": ["Wikis/game-logic/Sixteen-States.md"],
                 "polity_contexts": ["S06"], "inhabitants": ["정비조"],
                 "livelihood": "주민이 물 운반과 밸브 점검을 나눠 맡는다.",
                 "production": {"outputs": ["급수 서비스"], "requires": ["부품"]},
@@ -109,6 +109,16 @@ class ContentTests(unittest.TestCase):
                 "opening_state": "급수 교대를 협의 중이다.",
                 "connections": "이웃 구역과 부품 운송을 협의한다.",
                 "uncertainty": "재난 이후의 상태와 수치는 창작이다.",
+                "buildings": [{"anchor_ref": "osm:node:42", "name": "저수조 옆 주민센터",
+                               "observed_use": "주민센터", "river": "inland",
+                               "opening_use": "배급 창구", "how": "1층만 연다",
+                               "role": "support",
+                               "floors": [{"level": 1, "label": "민원 창구", "state": "occupied",
+                                            "contents": "배급 창구", "condition": "야간만 연다"},
+                                           {"level": 2, "label": "서고", "state": "sealed",
+                                            "contents": "동 장부", "condition": "철문"}]}],
+                "core_station": False,
+                "territory": {"status": "held", "holders": [{"polity": "S06", "control": 70}]},
                 "action": {"id": "1111053000-valve", "label": "밸브 점검",
                            "target_ref": "osm:node:42",
                            "costs": [{"resource": "labor", "amount": 2, "unit": "shift"}],
@@ -137,6 +147,26 @@ class ContentTests(unittest.TestCase):
         self.region["content"]["source_kind"] = "observed-source"
         self.assertTrue(content_errors(self.region))
 
+    def test_missing_buildings_rejected(self):
+        del self.region["content"]["buildings"]
+        self.assertTrue(any(e.startswith("invalid_buildings:") for e in content_errors(self.region)))
+
+    def test_building_anchor_must_be_local(self):
+        self.region["content"]["buildings"][0]["anchor_ref"] = "osm:node:999"
+        self.assertTrue(any(e.startswith("invalid_building_anchor:") for e in content_errors(self.region)))
+
+    def test_missing_territory_rejected(self):
+        del self.region["content"]["territory"]
+        self.assertTrue(any(e.startswith("invalid_territory:") for e in content_errors(self.region)))
+
+    def test_held_requires_majority_control(self):
+        self.region["content"]["territory"] = {"status": "held", "holders": [{"polity": "S06", "control": 40}]}
+        self.assertTrue(any(e.startswith("held_requires_majority:") for e in content_errors(self.region)))
+
+    def test_missing_floors_rejected(self):
+        del self.region["content"]["buildings"][0]["floors"]
+        self.assertTrue(any(e.startswith("missing_floors:") for e in content_errors(self.region)))
+
     def test_calendar_date_is_not_a_fictional_epoch(self):
         self.region["content"]["fictional_epoch"] = "2026-09-12"
         self.assertTrue(content_errors(self.region))
@@ -154,7 +184,7 @@ class ContentTests(unittest.TestCase):
         self.assertTrue(content_errors(self.region))
 
     def test_nonexistent_canon_reference_rejected(self):
-        self.region["content"]["canon_refs"] = ["GDD/game-logic/does-not-exist.md"]
+        self.region["content"]["canon_refs"] = ["Wikis/game-logic/does-not-exist.md"]
         self.assertTrue(content_errors(self.region))
 
     def test_inhabitants_must_be_a_list(self):

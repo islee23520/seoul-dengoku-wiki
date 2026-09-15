@@ -54,7 +54,7 @@ export function escapeXml(value) {
 }
 
 const SVG_ASSET_DIR = posix.join('Reference', 'assets', 'wiki');
-const WIKI_PAGE_DIR = posix.join('GDD', 'game-logic');
+const WIKI_PAGE_DIR = posix.join('Wikis', 'game-logic');
 
 export function wikiHrefFromSvgAsset(href) {
   const raw = String(href);

@@ -31,7 +31,7 @@ Write into `Tool/design-store` documents:
 - `dynamics[].body` + `sourcePath`
 - `aesthetics[].kind` + `body` + `sourcePath`
 
-Every `body` must be a substring of an existing canon file (`Concept.md`, `Design.md`, `Intent.md`, or `GDD/game-logic/*.md`). Fill a slot with what that layer **is**:
+Every `body` must be a substring of an existing canon file (`Concept.md`, `Design.md`, `Intent.md`, or `Wikis/game-logic/*.md`). Fill a slot with what that layer **is**:
 
 - Mechanics: verbs, numbers, camera as owned (Intent 결정 5: 2.5D / 용사주식회사), map graph.
 - Dynamics: runtime loops (Songs of Silence realtime formation + cards).
@@ -39,6 +39,6 @@ Every `body` must be a substring of an existing canon file (`Concept.md`, `Desig
 
 Never fill a slot with “not X”, “없습니다”, “아닌”, missing lists, or isometric-as-required. If canon has no positive sentence, omit the slot.
 
-MDA layers are vocabulary, not sprint tickets. Each filled slot must name a GitHub requirements issue when the slot is still open work (`GDD/game-logic/Design-Requirements.md`). Do not treat a mechanics paragraph as a Unity module.
+MDA layers are vocabulary, not sprint tickets. Each filled slot must name a GitHub requirements issue when the slot is still open work (`Wikis/game-logic/Design-Requirements.md`). Do not treat a mechanics paragraph as a Unity module.
 
 Then `node Tool/design-store/mda-store.mjs put --db <db> --json <instance.json>`.

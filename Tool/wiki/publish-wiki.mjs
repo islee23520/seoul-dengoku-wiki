@@ -155,7 +155,7 @@ export async function publishWiki({
 
   const repo = resolve(repositoryRoot);
   const live = assertSafeOutputRoot(wikiDir);
-  const source = resolve(sourceDir ?? join(repo, 'GDD', 'game-logic'));
+  const source = resolve(sourceDir ?? join(repo, 'Wikis', 'game-logic'));
   const assets = resolve(assetDir ?? join(repo, 'Reference', 'assets', 'wiki'));
 
   if (live === repo || live === source || live === assets) {

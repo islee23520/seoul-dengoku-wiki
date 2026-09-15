@@ -1,0 +1,3471 @@
+{
+  "schema": "seoul-region-content.v1",
+  "district_id": "gu:11530",
+  "district_name": "구로구",
+  "as_of": "2026-09-12",
+  "regions": [
+    {
+      "region_id": "region:1153051000",
+      "name": "신도림동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "환승 통로의 정비 시간",
+        "summary": "신도림 환승 공간의 창작 운영조는 고장 난 운반 장비를 통로에서 수리할지 비켜 둔 공간으로 옮길지 결정해야 한다.",
+        "anchor_refs": [
+          "osm:node:11237829305"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S02"
+        ],
+        "inhabitants": [
+          "신도림동 주민 작업반",
+          "환승 인계와 장비 수리 담당자"
+        ],
+        "livelihood": "환승 안내조와 수리공이 작업 구획을 나눈다.",
+        "production": {
+          "outputs": [
+            "환승 인계와 장비 수리"
+          ],
+          "requires": [
+            "공구와 안내 교대"
+          ]
+        },
+        "shortages": [
+          "공구와 안내 교대의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "access",
+          "description": "수리 중인 짐받이가 통로를 차지하면 일반 통행과 응급 이동이 동시에 막힌다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 신도림동 주민들은 다음 선택의 비용을 협의한다: 정비 구획을 통로 밖으로 옮긴다.",
+        "connections": "구로2동·구로5동과 경계를 맞대지만 신도림동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1153051000-local-choice",
+          "label": "정비 구획을 통로 밖으로 옮긴다",
+          "target_ref": "osm:node:11237829305",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 4,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "환승 통로를 비우고 운반 장비 수리를 이어간다."
+            }
+          ],
+          "tradeoff": "장비를 옮기는 동안 화물 인계가 늦어진다."
+        },
+        "uncertainty": "신도림의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:11237829305",
+            "name": "신도림",
+            "observed_use": "역",
+            "river": "tributary",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station",
+            "floors": [
+              {
+                "level": -2,
+                "label": "선로",
+                "state": "sealed",
+                "contents": "신도림 선로. 신도림동 통행세 구간. 보유 S02.",
+                "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
+              },
+              {
+                "level": -1,
+                "label": "승강장",
+                "state": "flooded",
+                "contents": "신도림 승강장. 피난 침상과 손수레 대기.",
+                "condition": "우기에는 물이 차오르고, 건기에는 침상을 깐다."
+              },
+              {
+                "level": 1,
+                "label": "대합실",
+                "state": "occupied",
+                "contents": "신도림 대합실. 생활 화물 인계와 배급 창구.",
+                "condition": "개찰 자리는 책상으로 바꿨다. 야간만 연다."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "sealed",
+                "contents": "신도림 옥상 망루. 신도림동 방향 관측.",
+                "condition": "난간은 철사. 출입은 초소 암호패."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:node:6033314425",
+            "name": "신도림",
+            "observed_use": "역",
+            "river": "tributary",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station",
+            "floors": [
+              {
+                "level": -2,
+                "label": "선로",
+                "state": "sealed",
+                "contents": "신도림 선로. 신도림동 통행세 구간. 보유 S02.",
+                "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
+              },
+              {
+                "level": -1,
+                "label": "승강장",
+                "state": "flooded",
+                "contents": "신도림 승강장. 피난 침상과 손수레 대기.",
+                "condition": "우기에는 물이 차오르고, 건기에는 침상을 깐다."
+              },
+              {
+                "level": 1,
+                "label": "대합실",
+                "state": "occupied",
+                "contents": "신도림 대합실. 생활 화물 인계와 배급 창구.",
+                "condition": "개찰 자리는 책상으로 바꿨다. 야간만 연다."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "sealed",
+                "contents": "신도림 옥상 망루. 신도림동 방향 관측.",
+                "condition": "난간은 철사. 출입은 초소 암호패."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:node:6033364545",
+            "name": "도림천",
+            "observed_use": "역",
+            "river": "tributary",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station",
+            "floors": [
+              {
+                "level": -2,
+                "label": "선로",
+                "state": "sealed",
+                "contents": "도림천 선로. 신도림동 통행세 구간. 보유 S02.",
+                "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
+              },
+              {
+                "level": -1,
+                "label": "승강장",
+                "state": "flooded",
+                "contents": "도림천 승강장. 피난 침상과 손수레 대기.",
+                "condition": "우기에는 물이 차오르고, 건기에는 침상을 깐다."
+              },
+              {
+                "level": 1,
+                "label": "대합실",
+                "state": "occupied",
+                "contents": "도림천 대합실. 생활 화물 인계와 배급 창구.",
+                "condition": "개찰 자리는 책상으로 바꿨다. 야간만 연다."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "sealed",
+                "contents": "도림천 옥상 망루. 신도림동 방향 관측.",
+                "condition": "난간은 철사. 출입은 초소 암호패."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:node:5524687315",
+            "name": "신도림동주민센터",
+            "observed_use": "주민센터",
+            "river": "tributary",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 1,
+                "label": "민원 창구",
+                "state": "occupied",
+                "contents": "신도림동주민센터 1층. 신도림동 배급 창구. 보유 S02.",
+                "condition": "번호표 기계는 죽은 채. 야간만 연다."
+              },
+              {
+                "level": 2,
+                "label": "서고",
+                "state": "sealed",
+                "contents": "신도림동주민센터 2층 서고. 동 장부 원본.",
+                "condition": "철문. 열쇠는 창구 당번."
+              }
+            ]
+          }
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S02",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": true
+      }
+    },
+    {
+      "region_id": "region:1153052000",
+      "name": "구로1동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "유수지 가장자리 점검",
+        "summary": "유수지로 기록된 공간 주변 주민들은 배수 점검과 생활 통로 확보를 함께 논의하지만 고인 물을 곧바로 생활수로 쓰지는 않는다.",
+        "anchor_refs": [
+          "osm:way:253002682"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S02"
+        ],
+        "inhabitants": [
+          "구로1동 주민 작업반",
+          "배수 상태 확인 담당자"
+        ],
+        "livelihood": "배수 점검조와 주민 안내자가 침수 흔적을 기록한다.",
+        "production": {
+          "outputs": [
+            "배수 상태 확인"
+          ],
+          "requires": [
+            "방수 물자와 노동"
+          ]
+        },
+        "shortages": [
+          "방수 물자와 노동의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "water",
+          "description": "물길이 막힌 상태에서 주변 통행을 늘리면 낮은 구간에 사람이 고립될 수 있다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 구로1동 주민들은 다음 선택의 비용을 협의한다: 유입구와 우회 보행 구간을 함께 점검한다.",
+        "connections": "구로2동·가리봉동·고척1동·개봉2동과 경계를 맞대지만 구로1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1153052000-local-choice",
+          "label": "유입구와 우회 보행 구간을 함께 점검한다",
+          "target_ref": "osm:way:253002682",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 5,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "확인된 배수와 보행 상태를 주민에게 알린다."
+            }
+          ],
+          "tradeoff": "다른 주거지 공구 수리의 작업 교대가 줄어든다."
+        },
+        "uncertainty": "유수지의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:355172812",
+            "name": "구일",
+            "observed_use": "역",
+            "river": "tributary",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station",
+            "floors": [
+              {
+                "level": -2,
+                "label": "선로",
+                "state": "sealed",
+                "contents": "구일 선로. 구로1동 통행세 구간. 보유 S02.",
+                "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
+              },
+              {
+                "level": -1,
+                "label": "승강장",
+                "state": "flooded",
+                "contents": "구일 승강장. 피난 침상과 손수레 대기.",
+                "condition": "우기에는 물이 차오르고, 건기에는 침상을 깐다."
+              },
+              {
+                "level": 1,
+                "label": "대합실",
+                "state": "occupied",
+                "contents": "구일 대합실. 생활 화물 인계와 배급 창구.",
+                "condition": "개찰 자리는 책상으로 바꿨다. 야간만 연다."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "sealed",
+                "contents": "구일 옥상 망루. 구로1동 방향 관측.",
+                "condition": "난간은 철사. 출입은 초소 암호패."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:node:368899838",
+            "name": "구로1동주민센터",
+            "observed_use": "주민센터",
+            "river": "tributary",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 1,
+                "label": "민원 창구",
+                "state": "occupied",
+                "contents": "구로1동주민센터 1층. 구로1동 배급 창구. 보유 S02.",
+                "condition": "번호표 기계는 죽은 채. 야간만 연다."
+              },
+              {
+                "level": 2,
+                "label": "서고",
+                "state": "sealed",
+                "contents": "구로1동주민센터 2층 서고. 동 장부 원본.",
+                "condition": "철문. 열쇠는 창구 당번."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:250489312",
+            "name": "서울구일초등학교",
+            "observed_use": "학교",
+            "river": "tributary",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 0,
+                "label": "운동장",
+                "state": "yard",
+                "contents": "서울구일초등학교 운동장. 구로1동 화물 정렬.",
+                "condition": "우기에는 물길, 건기에는 손수레 축."
+              },
+              {
+                "level": 1,
+                "label": "현관·1층 교실",
+                "state": "flooded",
+                "contents": "서울구일초등학교 1층. 민병 현관과 신발 더미.",
+                "condition": "1층 창호는 판자. 침수는 우기에만 본다."
+              },
+              {
+                "level": 2,
+                "label": "교실 숙영",
+                "state": "occupied",
+                "contents": "서울구일초등학교 2층 교실. S02 분대 침상.",
+                "condition": "칠판은 당번표. 책상은 침상 다리."
+              },
+              {
+                "level": 3,
+                "label": "특별실",
+                "state": "sealed",
+                "contents": "서울구일초등학교 과학실·음악실. 봉인.",
+                "condition": "가스관과 악기는 치우지 않았다. 열쇠는 동 장부."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "occupied",
+                "contents": "서울구일초등학교 옥상 망루.",
+                "condition": "급수통 두 개. 야간 교대."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:250489315",
+            "name": "구일고등학교",
+            "observed_use": "학교",
+            "river": "tributary",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 0,
+                "label": "운동장",
+                "state": "yard",
+                "contents": "구일고등학교 운동장. 구로1동 화물 정렬.",
+                "condition": "우기에는 물길, 건기에는 손수레 축."
+              },
+              {
+                "level": 1,
+                "label": "현관·1층 교실",
+                "state": "flooded",
+                "contents": "구일고등학교 1층. 민병 현관과 신발 더미.",
+                "condition": "1층 창호는 판자. 침수는 우기에만 본다."
+              },
+              {
+                "level": 2,
+                "label": "교실 숙영",
+                "state": "occupied",
+                "contents": "구일고등학교 2층 교실. S02 분대 침상.",
+                "condition": "칠판은 당번표. 책상은 침상 다리."
+              },
+              {
+                "level": 3,
+                "label": "특별실",
+                "state": "sealed",
+                "contents": "구일고등학교 과학실·음악실. 봉인.",
+                "condition": "가스관과 악기는 치우지 않았다. 열쇠는 동 장부."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "occupied",
+                "contents": "구일고등학교 옥상 망루.",
+                "condition": "급수통 두 개. 야간 교대."
+              }
+            ]
+          }
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S02",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": true
+      }
+    },
+    {
+      "region_id": "region:1153053000",
+      "name": "구로2동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "구로병원 주변의 세척 설비",
+        "summary": "고려대학교구로병원으로 표시된 건물의 창작 의무조는 처치 공간의 세척 설비를 고치려 하지만 주변 가구도 같은 부품을 기다린다.",
+        "anchor_refs": [
+          "osm:way:250489344"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S02"
+        ],
+        "inhabitants": [
+          "구로2동 주민 작업반",
+          "처치 지원 담당자"
+        ],
+        "livelihood": "의무 보조조와 설비공이 최소 세척 기능을 유지한다.",
+        "production": {
+          "outputs": [
+            "처치 지원"
+          ],
+          "requires": [
+            "소독 물자와 펌프 부품"
+          ]
+        },
+        "shortages": [
+          "소독 물자와 펌프 부품의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "supply",
+          "description": "세척 장비가 멈추면 처치 수요가 남아도 안전하게 받을 수 있는 인원이 줄어든다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 구로2동 주민들은 다음 선택의 비용을 협의한다: 의무 세척 설비를 먼저 수리한다.",
+        "connections": "신도림동·구로1동·구로4동·구로5동·가리봉동·고척1동과 경계를 맞대지만 구로2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1153053000-local-choice",
+          "label": "의무 세척 설비를 먼저 수리한다",
+          "target_ref": "osm:way:250489344",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 5,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "기본 처치에 필요한 세척 작업을 회복한다."
+            }
+          ],
+          "tradeoff": "가구별 펌프 수리가 뒤로 밀려 물 운반 부담이 늘어난다."
+        },
+        "uncertainty": "고려대학교구로병원의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:368899914",
+            "name": "구로4동주민센터",
+            "observed_use": "주민센터",
+            "river": "tributary",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 1,
+                "label": "민원 창구",
+                "state": "occupied",
+                "contents": "구로4동주민센터 1층. 구로2동 배급 창구. 보유 S02.",
+                "condition": "번호표 기계는 죽은 채. 야간만 연다."
+              },
+              {
+                "level": 2,
+                "label": "서고",
+                "state": "sealed",
+                "contents": "구로4동주민센터 2층 서고. 동 장부 원본.",
+                "condition": "철문. 열쇠는 창구 당번."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:node:368900255",
+            "name": "구로2동 주민센터",
+            "observed_use": "주민센터",
+            "river": "tributary",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 1,
+                "label": "민원 창구",
+                "state": "occupied",
+                "contents": "구로2동 주민센터 1층. 구로2동 배급 창구. 보유 S02.",
+                "condition": "번호표 기계는 죽은 채. 야간만 연다."
+              },
+              {
+                "level": 2,
+                "label": "서고",
+                "state": "sealed",
+                "contents": "구로2동 주민센터 2층 서고. 동 장부 원본.",
+                "condition": "철문. 열쇠는 창구 당번."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:node:368900465",
+            "name": "구로2동 자치회관",
+            "observed_use": "주민센터",
+            "river": "tributary",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 1,
+                "label": "민원 창구",
+                "state": "occupied",
+                "contents": "구로2동 자치회관 1층. 구로2동 배급 창구. 보유 S02.",
+                "condition": "번호표 기계는 죽은 채. 야간만 연다."
+              },
+              {
+                "level": 2,
+                "label": "서고",
+                "state": "sealed",
+                "contents": "구로2동 자치회관 2층 서고. 동 장부 원본.",
+                "condition": "철문. 열쇠는 창구 당번."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:250489320",
+            "name": "서울구로초등학교",
+            "observed_use": "학교",
+            "river": "tributary",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 0,
+                "label": "운동장",
+                "state": "yard",
+                "contents": "서울구로초등학교 운동장. 구로2동 화물 정렬.",
+                "condition": "우기에는 물길, 건기에는 손수레 축."
+              },
+              {
+                "level": 1,
+                "label": "현관·1층 교실",
+                "state": "flooded",
+                "contents": "서울구로초등학교 1층. 민병 현관과 신발 더미.",
+                "condition": "1층 창호는 판자. 침수는 우기에만 본다."
+              },
+              {
+                "level": 2,
+                "label": "교실 숙영",
+                "state": "occupied",
+                "contents": "서울구로초등학교 2층 교실. S02 분대 침상.",
+                "condition": "칠판은 당번표. 책상은 침상 다리."
+              },
+              {
+                "level": 3,
+                "label": "특별실",
+                "state": "sealed",
+                "contents": "서울구로초등학교 과학실·음악실. 봉인.",
+                "condition": "가스관과 악기는 치우지 않았다. 열쇠는 동 장부."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "occupied",
+                "contents": "서울구로초등학교 옥상 망루.",
+                "condition": "급수통 두 개. 야간 교대."
+              }
+            ]
+          }
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S02",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": false
+      }
+    },
+    {
+      "region_id": "region:1153054000",
+      "name": "구로3동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "디지털단지의 교대 인계",
+        "summary": "구로디지털단지 주변 작업반은 출퇴근 인원과 부품 상자를 같은 시간에 받지 않도록 인계표를 바꾸려 한다.",
+        "anchor_refs": [
+          "osm:node:6033314429"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S02"
+        ],
+        "inhabitants": [
+          "구로3동 주민 작업반",
+          "부품 인계 담당자"
+        ],
+        "livelihood": "작업 반장과 통로 안내조가 사람·화물 시간을 분리한다.",
+        "production": {
+          "outputs": [
+            "부품 인계"
+          ],
+          "requires": [
+            "기록지와 운반 교대"
+          ]
+        },
+        "shortages": [
+          "기록지와 운반 교대의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "access",
+          "description": "부품 하역이 길어지면 작업자가 현장에 늦게 도착해 다음 공정도 멈춘다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 구로3동 주민들은 다음 선택의 비용을 협의한다: 작업자 통과 시간을 먼저 확보한다.",
+        "connections": "구로4동·가리봉동과 경계를 맞대지만 구로3동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1153054000-local-choice",
+          "label": "작업자 통과 시간을 먼저 확보한다",
+          "target_ref": "osm:node:6033314429",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 3,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "생활 작업 교대가 하역 대기열에 갇히지 않는다."
+            }
+          ],
+          "tradeoff": "늦게 온 부품은 다음 하역을 기다려야 한다."
+        },
+        "uncertainty": "구로디지털단지의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:6033314429",
+            "name": "구로디지털단지",
+            "observed_use": "역",
+            "river": "tributary",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station",
+            "floors": [
+              {
+                "level": -2,
+                "label": "선로",
+                "state": "sealed",
+                "contents": "구로디지털단지 선로. 구로3동 통행세 구간. 보유 S02.",
+                "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
+              },
+              {
+                "level": -1,
+                "label": "승강장",
+                "state": "flooded",
+                "contents": "구로디지털단지 승강장. 피난 침상과 손수레 대기.",
+                "condition": "우기에는 물이 차오르고, 건기에는 침상을 깐다."
+              },
+              {
+                "level": 1,
+                "label": "대합실",
+                "state": "occupied",
+                "contents": "구로디지털단지 대합실. 생활 화물 인계와 배급 창구.",
+                "condition": "개찰 자리는 책상으로 바꿨다. 야간만 연다."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "sealed",
+                "contents": "구로디지털단지 옥상 망루. 구로3동 방향 관측.",
+                "condition": "난간은 철사. 출입은 초소 암호패."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:node:6048953569",
+            "name": "남구로",
+            "observed_use": "역",
+            "river": "tributary",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station",
+            "floors": [
+              {
+                "level": -2,
+                "label": "선로",
+                "state": "sealed",
+                "contents": "남구로 선로. 구로3동 통행세 구간. 보유 S02.",
+                "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
+              },
+              {
+                "level": -1,
+                "label": "승강장",
+                "state": "flooded",
+                "contents": "남구로 승강장. 피난 침상과 손수레 대기.",
+                "condition": "우기에는 물이 차오르고, 건기에는 침상을 깐다."
+              },
+              {
+                "level": 1,
+                "label": "대합실",
+                "state": "occupied",
+                "contents": "남구로 대합실. 생활 화물 인계와 배급 창구.",
+                "condition": "개찰 자리는 책상으로 바꿨다. 야간만 연다."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "sealed",
+                "contents": "남구로 옥상 망루. 구로3동 방향 관측.",
+                "condition": "난간은 철사. 출입은 초소 암호패."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:node:5526630084",
+            "name": "가리봉동주민센터",
+            "observed_use": "주민센터",
+            "river": "tributary",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 1,
+                "label": "민원 창구",
+                "state": "occupied",
+                "contents": "가리봉동주민센터 1층. 구로3동 배급 창구. 보유 S02.",
+                "condition": "번호표 기계는 죽은 채. 야간만 연다."
+              },
+              {
+                "level": 2,
+                "label": "서고",
+                "state": "sealed",
+                "contents": "가리봉동주민센터 2층 서고. 동 장부 원본.",
+                "condition": "철문. 열쇠는 창구 당번."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:252995424",
+            "name": "영서중학교",
+            "observed_use": "학교",
+            "river": "tributary",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 0,
+                "label": "운동장",
+                "state": "yard",
+                "contents": "영서중학교 운동장. 구로3동 화물 정렬.",
+                "condition": "우기에는 물길, 건기에는 손수레 축."
+              },
+              {
+                "level": 1,
+                "label": "현관·1층 교실",
+                "state": "flooded",
+                "contents": "영서중학교 1층. 민병 현관과 신발 더미.",
+                "condition": "1층 창호는 판자. 침수는 우기에만 본다."
+              },
+              {
+                "level": 2,
+                "label": "교실 숙영",
+                "state": "occupied",
+                "contents": "영서중학교 2층 교실. S02 분대 침상.",
+                "condition": "칠판은 당번표. 책상은 침상 다리."
+              },
+              {
+                "level": 3,
+                "label": "특별실",
+                "state": "sealed",
+                "contents": "영서중학교 과학실·음악실. 봉인.",
+                "condition": "가스관과 악기는 치우지 않았다. 열쇠는 동 장부."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "occupied",
+                "contents": "영서중학교 옥상 망루.",
+                "condition": "급수통 두 개. 야간 교대."
+              }
+            ]
+          }
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S02",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": true
+      }
+    },
+    {
+      "region_id": "region:1153055000",
+      "name": "구로4동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "도림천 생활 경계",
+        "summary": "도림천을 접한 주민들은 물가의 잔해를 치우는 일과 실내 보수에 같은 인력을 나눠 쓴다. 하천 경계는 자동으로 건널 수 있는 길이 아니다.",
+        "anchor_refs": [
+          "osm:relation:11576503"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S02"
+        ],
+        "inhabitants": [
+          "구로4동 주민 작업반",
+          "생활 물길 정리 담당자"
+        ],
+        "livelihood": "잔해 정리조가 통행과 배수에 영향을 주는 구간을 점검한다.",
+        "production": {
+          "outputs": [
+            "생활 물길 정리"
+          ],
+          "requires": [
+            "장갑과 운반 장비"
+          ]
+        },
+        "shortages": [
+          "장갑과 운반 장비의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "water",
+          "description": "물가에 쌓인 잔해가 흐름을 막으면 낮은 주거 구간의 물이 빠지지 않는다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 구로4동 주민들은 다음 선택의 비용을 협의한다: 주거지 배수와 이어진 잔해부터 치운다.",
+        "connections": "구로2동·구로3동·구로5동·가리봉동과 경계를 맞대지만 구로4동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1153055000-local-choice",
+          "label": "주거지 배수와 이어진 잔해부터 치운다",
+          "target_ref": "osm:relation:11576503",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 4,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "점검한 생활 구간의 물 빠짐을 확보한다."
+            }
+          ],
+          "tradeoff": "개별 가구의 실내 보수 일정이 늦어진다."
+        },
+        "uncertainty": "도림천의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:way:250489324",
+            "name": "구로중학교",
+            "observed_use": "학교",
+            "river": "tributary",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 0,
+                "label": "운동장",
+                "state": "yard",
+                "contents": "구로중학교 운동장. 구로4동 화물 정렬.",
+                "condition": "우기에는 물길, 건기에는 손수레 축."
+              },
+              {
+                "level": 1,
+                "label": "현관·1층 교실",
+                "state": "flooded",
+                "contents": "구로중학교 1층. 민병 현관과 신발 더미.",
+                "condition": "1층 창호는 판자. 침수는 우기에만 본다."
+              },
+              {
+                "level": 2,
+                "label": "교실 숙영",
+                "state": "occupied",
+                "contents": "구로중학교 2층 교실. S02 분대 침상.",
+                "condition": "칠판은 당번표. 책상은 침상 다리."
+              },
+              {
+                "level": 3,
+                "label": "특별실",
+                "state": "sealed",
+                "contents": "구로중학교 과학실·음악실. 봉인.",
+                "condition": "가스관과 악기는 치우지 않았다. 열쇠는 동 장부."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "occupied",
+                "contents": "구로중학교 옥상 망루.",
+                "condition": "급수통 두 개. 야간 교대."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:252995383",
+            "name": "서울동구로초등학교",
+            "observed_use": "학교",
+            "river": "tributary",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 0,
+                "label": "운동장",
+                "state": "yard",
+                "contents": "서울동구로초등학교 운동장. 구로4동 화물 정렬.",
+                "condition": "우기에는 물길, 건기에는 손수레 축."
+              },
+              {
+                "level": 1,
+                "label": "현관·1층 교실",
+                "state": "flooded",
+                "contents": "서울동구로초등학교 1층. 민병 현관과 신발 더미.",
+                "condition": "1층 창호는 판자. 침수는 우기에만 본다."
+              },
+              {
+                "level": 2,
+                "label": "교실 숙영",
+                "state": "occupied",
+                "contents": "서울동구로초등학교 2층 교실. S02 분대 침상.",
+                "condition": "칠판은 당번표. 책상은 침상 다리."
+              },
+              {
+                "level": 3,
+                "label": "특별실",
+                "state": "sealed",
+                "contents": "서울동구로초등학교 과학실·음악실. 봉인.",
+                "condition": "가스관과 악기는 치우지 않았다. 열쇠는 동 장부."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "occupied",
+                "contents": "서울동구로초등학교 옥상 망루.",
+                "condition": "급수통 두 개. 야간 교대."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:285366866",
+            "name": "성삼하이츠아파트",
+            "observed_use": "아파트",
+            "river": "tributary",
+            "opening_use": "3층 이상만 거주. 1–2층은 침수 창고이거나 포기한다.",
+            "how": "3층 이상 출입, 1–2층 창호는 판자로 막는다.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 1,
+                "label": "1층",
+                "state": "flooded",
+                "contents": "성삼하이츠아파트 1층. 구로4동 우기 창고이거나 포기.",
+                "condition": "현관 유리 없음. 우편함은 녹슬었다."
+              },
+              {
+                "level": 2,
+                "label": "2층",
+                "state": "abandoned",
+                "contents": "성삼하이츠아파트 2층. 거주 금지.",
+                "condition": "창호를 막았거나 물이 남긴 자국만 있다."
+              },
+              {
+                "level": 3,
+                "label": "3층",
+                "state": "occupied",
+                "contents": "성삼하이츠아파트 3층. S02 거주.",
+                "condition": "엘레베이터 샤프트는 봉인. 계단만 쓴다."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "sealed",
+                "contents": "성삼하이츠아파트 옥상.",
+                "condition": "태양광 판은 뜯겼거나 창고 지붕이다."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:relation:11576503",
+            "name": "도림천",
+            "observed_use": "공원·녹지",
+            "river": "tributary",
+            "opening_use": "얕은 경작과 우기 배수. 묘지로 쓰지 않는다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 0,
+                "label": "지표면",
+                "state": "yard",
+                "contents": "도림천. 구로4동 얕은 경작과 우기 배수.",
+                "condition": "묘지로 쓰지 않는다. 방목은 낮에만."
+              }
+            ]
+          }
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S02",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": false
+      }
+    },
+    {
+      "region_id": "region:1153056000",
+      "name": "구로5동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "구로역의 공동 수령소",
+        "summary": "구로역 인계조는 외부에서 온 물자를 특정 작업반이 먼저 가져가지 않도록 수령 순서와 소유자를 공개하려 한다.",
+        "anchor_refs": [
+          "osm:node:5774282517"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S02"
+        ],
+        "inhabitants": [
+          "구로5동 주민 작업반",
+          "물자 수령 담당자"
+        ],
+        "livelihood": "인계 서기가 도착 물자와 예약 주문을 대조한다.",
+        "production": {
+          "outputs": [
+            "물자 수령"
+          ],
+          "requires": [
+            "계량 도구와 기록 교대"
+          ]
+        },
+        "shortages": [
+          "계량 도구와 기록 교대의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "governance",
+          "description": "예약 기록 없이 먼저 도착한 작업반이 물자를 가져가면 다른 주문자가 빈손으로 돌아간다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 구로5동 주민들은 다음 선택의 비용을 협의한다: 예약 주문과 수령자를 함께 확인한다.",
+        "connections": "신도림동·구로2동·구로4동과 경계를 맞대지만 구로5동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1153056000-local-choice",
+          "label": "예약 주문과 수령자를 함께 확인한다",
+          "target_ref": "osm:node:5774282517",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 3,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "물자 배정을 근거 있는 주문과 연결한다."
+            }
+          ],
+          "tradeoff": "검수 시간이 늘어 일부 하역이 다음 교대로 밀린다."
+        },
+        "uncertainty": "구로의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:5774282517",
+            "name": "구로",
+            "observed_use": "역",
+            "river": "tributary",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station",
+            "floors": [
+              {
+                "level": -2,
+                "label": "선로",
+                "state": "sealed",
+                "contents": "구로 선로. 구로5동 통행세 구간. 보유 S02.",
+                "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
+              },
+              {
+                "level": -1,
+                "label": "승강장",
+                "state": "flooded",
+                "contents": "구로 승강장. 피난 침상과 손수레 대기.",
+                "condition": "우기에는 물이 차오르고, 건기에는 침상을 깐다."
+              },
+              {
+                "level": 1,
+                "label": "대합실",
+                "state": "occupied",
+                "contents": "구로 대합실. 생활 화물 인계와 배급 창구.",
+                "condition": "개찰 자리는 책상으로 바꿨다. 야간만 연다."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "sealed",
+                "contents": "구로 옥상 망루. 구로5동 방향 관측.",
+                "condition": "난간은 철사. 출입은 초소 암호패."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:node:368741626",
+            "name": "제중병원",
+            "observed_use": "병원",
+            "river": "tributary",
+            "opening_use": "야전 의무. 수술실 대신 교대 침상을 둔다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 1,
+                "label": "대기실",
+                "state": "flooded",
+                "contents": "제중병원 1층 대기. 탁수 때는 쓰지 않는다.",
+                "condition": "의자 줄은 남고 접수 창구는 막았다."
+              },
+              {
+                "level": 2,
+                "label": "침상",
+                "state": "occupied",
+                "contents": "제중병원 2층 교대 침상. S02 야전 의무.",
+                "condition": "수술실 대신 커튼 칸. 약품은 자물쇠."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:node:368900266",
+            "name": "구로5동 주민센터",
+            "observed_use": "주민센터",
+            "river": "tributary",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 1,
+                "label": "민원 창구",
+                "state": "occupied",
+                "contents": "구로5동 주민센터 1층. 구로5동 배급 창구. 보유 S02.",
+                "condition": "번호표 기계는 죽은 채. 야간만 연다."
+              },
+              {
+                "level": 2,
+                "label": "서고",
+                "state": "sealed",
+                "contents": "구로5동 주민센터 2층 서고. 동 장부 원본.",
+                "condition": "철문. 열쇠는 창구 당번."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:252995388",
+            "name": "영림중학교",
+            "observed_use": "학교",
+            "river": "tributary",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 0,
+                "label": "운동장",
+                "state": "yard",
+                "contents": "영림중학교 운동장. 구로5동 화물 정렬.",
+                "condition": "우기에는 물길, 건기에는 손수레 축."
+              },
+              {
+                "level": 1,
+                "label": "현관·1층 교실",
+                "state": "flooded",
+                "contents": "영림중학교 1층. 민병 현관과 신발 더미.",
+                "condition": "1층 창호는 판자. 침수는 우기에만 본다."
+              },
+              {
+                "level": 2,
+                "label": "교실 숙영",
+                "state": "occupied",
+                "contents": "영림중학교 2층 교실. S02 분대 침상.",
+                "condition": "칠판은 당번표. 책상은 침상 다리."
+              },
+              {
+                "level": 3,
+                "label": "특별실",
+                "state": "sealed",
+                "contents": "영림중학교 과학실·음악실. 봉인.",
+                "condition": "가스관과 악기는 치우지 않았다. 열쇠는 동 장부."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "occupied",
+                "contents": "영림중학교 옥상 망루.",
+                "condition": "급수통 두 개. 야간 교대."
+              }
+            ]
+          }
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S02",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": true
+      }
+    },
+    {
+      "region_id": "region:1153059500",
+      "name": "가리봉동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "산업단지 도제 계약",
+        "summary": "서울디지털국가산업단지 1단지로 기록된 부지 주변의 도제들은 훈련을 받는 대신 장시간 잡무를 맡는 관행을 바꾸려 한다.",
+        "anchor_refs": [
+          "osm:way:302746692"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S02"
+        ],
+        "inhabitants": [
+          "가리봉동 주민 작업반",
+          "부품 수리 교육 담당자"
+        ],
+        "livelihood": "숙련공과 도제가 교육·작업 시간을 계약으로 나눈다.",
+        "production": {
+          "outputs": [
+            "부품 수리 교육"
+          ],
+          "requires": [
+            "보호구와 숙련 시간"
+          ]
+        },
+        "shortages": [
+          "보호구와 숙련 시간의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "governance",
+          "description": "교육을 약속하고 운반 노동만 시키면 새 수리 인력이 자라지 못한다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 가리봉동 주민들은 다음 선택의 비용을 협의한다: 도제 실습 시간을 공개 예약한다.",
+        "connections": "구로1동·구로2동·구로3동·구로4동과 경계를 맞대지만 가리봉동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1153059500-local-choice",
+          "label": "도제 실습 시간을 공개 예약한다",
+          "target_ref": "osm:way:302746692",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 4,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "도제가 실제 수리 기술을 배우는 시간을 보장한다."
+            }
+          ],
+          "tradeoff": "숙련공의 출고 작업 시간이 줄어 단기 생산량이 감소한다."
+        },
+        "uncertainty": "서울디지털국가산업단지 1단지의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:368740334",
+            "name": "정성요양병원",
+            "observed_use": "병원",
+            "river": "tributary",
+            "opening_use": "야전 의무. 수술실 대신 교대 침상을 둔다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 1,
+                "label": "대기실",
+                "state": "flooded",
+                "contents": "정성요양병원 1층 대기. 탁수 때는 쓰지 않는다.",
+                "condition": "의자 줄은 남고 접수 창구는 막았다."
+              },
+              {
+                "level": 2,
+                "label": "침상",
+                "state": "occupied",
+                "contents": "정성요양병원 2층 교대 침상. S02 야전 의무.",
+                "condition": "수술실 대신 커튼 칸. 약품은 자물쇠."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:439983145",
+            "name": "서울영일초등학교",
+            "observed_use": "학교",
+            "river": "tributary",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 0,
+                "label": "운동장",
+                "state": "yard",
+                "contents": "서울영일초등학교 운동장. 가리봉동 화물 정렬.",
+                "condition": "우기에는 물길, 건기에는 손수레 축."
+              },
+              {
+                "level": 1,
+                "label": "현관·1층 교실",
+                "state": "flooded",
+                "contents": "서울영일초등학교 1층. 민병 현관과 신발 더미.",
+                "condition": "1층 창호는 판자. 침수는 우기에만 본다."
+              },
+              {
+                "level": 2,
+                "label": "교실 숙영",
+                "state": "occupied",
+                "contents": "서울영일초등학교 2층 교실. S02 분대 침상.",
+                "condition": "칠판은 당번표. 책상은 침상 다리."
+              },
+              {
+                "level": 3,
+                "label": "특별실",
+                "state": "sealed",
+                "contents": "서울영일초등학교 과학실·음악실. 봉인.",
+                "condition": "가스관과 악기는 치우지 않았다. 열쇠는 동 장부."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "occupied",
+                "contents": "서울영일초등학교 옥상 망루.",
+                "condition": "급수통 두 개. 야간 교대."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:node:10600012142",
+            "name": "기아오토큐",
+            "observed_use": "상점",
+            "river": "tributary",
+            "opening_use": "공방이거나 셔터 봉인. 간판 상호는 장부에 올리지 않는다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 1,
+                "label": "1층",
+                "state": "sealed",
+                "contents": "기아오토큐 1층. 공방이거나 셔터 봉인. 가리봉동.",
+                "condition": "간판 상호는 장부에 올리지 않는다."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:node:10651394885",
+            "name": "구림약국",
+            "observed_use": "건물",
+            "river": "tributary",
+            "opening_use": "1층은 우기 창고, 거주와 배급은 제방 안쪽에서 한다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 1,
+                "label": "1층",
+                "state": "flooded",
+                "contents": "구림약국 1층. 가리봉동 잔존 골조. 보유 S02.",
+                "condition": "관측된 출입구만 쓰고 나머지는 막는다."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "abandoned",
+                "contents": "구림약국 옥상.",
+                "condition": "난간만 남았거나 없다."
+              }
+            ]
+          }
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S02",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": false
+      }
+    },
+    {
+      "region_id": "region:1153072000",
+      "name": "고척1동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "고척초 목재 보관",
+        "summary": "고척초등학교를 공동 목재 보관소로 쓰는 주민들은 젖은 부재를 건조한 재료와 분리하려 한다.",
+        "anchor_refs": [
+          "osm:way:249853998"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S02"
+        ],
+        "inhabitants": [
+          "고척1동 주민 작업반",
+          "건축 부재 보관 담당자"
+        ],
+        "livelihood": "부재 관리조와 수리공이 용도별 재료를 선별한다.",
+        "production": {
+          "outputs": [
+            "건축 부재 보관"
+          ],
+          "requires": [
+            "덮개와 운반 교대"
+          ]
+        },
+        "shortages": [
+          "덮개와 운반 교대의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "water",
+          "description": "젖은 목재를 섞어 쌓으면 정상 부재까지 손상돼 생활 수리 재료가 줄어든다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 고척1동 주민들은 다음 선택의 비용을 협의한다: 젖은 부재의 건조 구획을 만든다.",
+        "connections": "구로1동·구로2동·고척2동·개봉1동·개봉2동과 경계를 맞대지만 고척1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1153072000-local-choice",
+          "label": "젖은 부재의 건조 구획을 만든다",
+          "target_ref": "osm:way:249853998",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 3,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "보수에 쓸 재료 상태를 구분해 보관한다."
+            }
+          ],
+          "tradeoff": "건조 구획을 위해 숙영용 마당 일부를 비워야 한다."
+        },
+        "uncertainty": "서울고척초등학교의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:368899858",
+            "name": "고척1동주민센터",
+            "observed_use": "주민센터",
+            "river": "tributary",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 1,
+                "label": "민원 창구",
+                "state": "occupied",
+                "contents": "고척1동주민센터 1층. 고척1동 배급 창구. 보유 S02.",
+                "condition": "번호표 기계는 죽은 채. 야간만 연다."
+              },
+              {
+                "level": 2,
+                "label": "서고",
+                "state": "sealed",
+                "contents": "고척1동주민센터 2층 서고. 동 장부 원본.",
+                "condition": "철문. 열쇠는 창구 당번."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:249853998",
+            "name": "서울고척초등학교",
+            "observed_use": "학교",
+            "river": "tributary",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 0,
+                "label": "운동장",
+                "state": "yard",
+                "contents": "서울고척초등학교 운동장. 고척1동 화물 정렬.",
+                "condition": "우기에는 물길, 건기에는 손수레 축."
+              },
+              {
+                "level": 1,
+                "label": "현관·1층 교실",
+                "state": "flooded",
+                "contents": "서울고척초등학교 1층. 민병 현관과 신발 더미.",
+                "condition": "1층 창호는 판자. 침수는 우기에만 본다."
+              },
+              {
+                "level": 2,
+                "label": "교실 숙영",
+                "state": "occupied",
+                "contents": "서울고척초등학교 2층 교실. S02 분대 침상.",
+                "condition": "칠판은 당번표. 책상은 침상 다리."
+              },
+              {
+                "level": 3,
+                "label": "특별실",
+                "state": "sealed",
+                "contents": "서울고척초등학교 과학실·음악실. 봉인.",
+                "condition": "가스관과 악기는 치우지 않았다. 열쇠는 동 장부."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "occupied",
+                "contents": "서울고척초등학교 옥상 망루.",
+                "condition": "급수통 두 개. 야간 교대."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:249854001",
+            "name": "고척중학교",
+            "observed_use": "학교",
+            "river": "tributary",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 0,
+                "label": "운동장",
+                "state": "yard",
+                "contents": "고척중학교 운동장. 고척1동 화물 정렬.",
+                "condition": "우기에는 물길, 건기에는 손수레 축."
+              },
+              {
+                "level": 1,
+                "label": "현관·1층 교실",
+                "state": "flooded",
+                "contents": "고척중학교 1층. 민병 현관과 신발 더미.",
+                "condition": "1층 창호는 판자. 침수는 우기에만 본다."
+              },
+              {
+                "level": 2,
+                "label": "교실 숙영",
+                "state": "occupied",
+                "contents": "고척중학교 2층 교실. S02 분대 침상.",
+                "condition": "칠판은 당번표. 책상은 침상 다리."
+              },
+              {
+                "level": 3,
+                "label": "특별실",
+                "state": "sealed",
+                "contents": "고척중학교 과학실·음악실. 봉인.",
+                "condition": "가스관과 악기는 치우지 않았다. 열쇠는 동 장부."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "occupied",
+                "contents": "고척중학교 옥상 망루.",
+                "condition": "급수통 두 개. 야간 교대."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:249854002",
+            "name": "서울고산초등학교",
+            "observed_use": "학교",
+            "river": "tributary",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 0,
+                "label": "운동장",
+                "state": "yard",
+                "contents": "서울고산초등학교 운동장. 고척1동 화물 정렬.",
+                "condition": "우기에는 물길, 건기에는 손수레 축."
+              },
+              {
+                "level": 1,
+                "label": "현관·1층 교실",
+                "state": "flooded",
+                "contents": "서울고산초등학교 1층. 민병 현관과 신발 더미.",
+                "condition": "1층 창호는 판자. 침수는 우기에만 본다."
+              },
+              {
+                "level": 2,
+                "label": "교실 숙영",
+                "state": "occupied",
+                "contents": "서울고산초등학교 2층 교실. S02 분대 침상.",
+                "condition": "칠판은 당번표. 책상은 침상 다리."
+              },
+              {
+                "level": 3,
+                "label": "특별실",
+                "state": "sealed",
+                "contents": "서울고산초등학교 과학실·음악실. 봉인.",
+                "condition": "가스관과 악기는 치우지 않았다. 열쇠는 동 장부."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "occupied",
+                "contents": "서울고산초등학교 옥상 망루.",
+                "condition": "급수통 두 개. 야간 교대."
+              }
+            ]
+          }
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S02",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": false
+      }
+    },
+    {
+      "region_id": "region:1153073000",
+      "name": "고척2동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "근린시장 빈 상자",
+        "summary": "고척근린시장 상인들은 반복 사용할 상자를 공동으로 관리하려 하지만 개인 물품과 공용 상자의 경계가 모호하다.",
+        "anchor_refs": [
+          "osm:way:250175479"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S02"
+        ],
+        "inhabitants": [
+          "고척2동 주민 작업반",
+          "재사용 포장 담당자"
+        ],
+        "livelihood": "상인과 짐꾼이 공용 포장재의 반환을 확인한다.",
+        "production": {
+          "outputs": [
+            "재사용 포장"
+          ],
+          "requires": [
+            "결속 끈과 수리 목재"
+          ]
+        },
+        "shortages": [
+          "결속 끈과 수리 목재의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "governance",
+          "description": "반환 기록 없이 상자를 가져가면 다음 배급 출하에 쓸 포장이 없다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 고척2동 주민들은 다음 선택의 비용을 협의한다: 공용 상자 대여표를 만든다.",
+        "connections": "고척1동·개봉1동과 경계를 맞대지만 고척2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1153073000-local-choice",
+          "label": "공용 상자 대여표를 만든다",
+          "target_ref": "osm:way:250175479",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 2,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "배급 출하에 필요한 포장재를 다시 회수한다."
+            }
+          ],
+          "tradeoff": "상자를 빌릴 때마다 확인 절차가 추가돼 거래가 느려진다."
+        },
+        "uncertainty": "고척근린시장의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:368899559",
+            "name": "고척2동 주민센터",
+            "observed_use": "주민센터",
+            "river": "tributary",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 1,
+                "label": "민원 창구",
+                "state": "occupied",
+                "contents": "고척2동 주민센터 1층. 고척2동 배급 창구. 보유 S02.",
+                "condition": "번호표 기계는 죽은 채. 야간만 연다."
+              },
+              {
+                "level": 2,
+                "label": "서고",
+                "state": "sealed",
+                "contents": "고척2동 주민센터 2층 서고. 동 장부 원본.",
+                "condition": "철문. 열쇠는 창구 당번."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:249853447",
+            "name": "고척고등학교",
+            "observed_use": "학교",
+            "river": "tributary",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 0,
+                "label": "운동장",
+                "state": "yard",
+                "contents": "고척고등학교 운동장. 고척2동 화물 정렬.",
+                "condition": "우기에는 물길, 건기에는 손수레 축."
+              },
+              {
+                "level": 1,
+                "label": "현관·1층 교실",
+                "state": "flooded",
+                "contents": "고척고등학교 1층. 민병 현관과 신발 더미.",
+                "condition": "1층 창호는 판자. 침수는 우기에만 본다."
+              },
+              {
+                "level": 2,
+                "label": "교실 숙영",
+                "state": "occupied",
+                "contents": "고척고등학교 2층 교실. S02 분대 침상.",
+                "condition": "칠판은 당번표. 책상은 침상 다리."
+              },
+              {
+                "level": 3,
+                "label": "특별실",
+                "state": "sealed",
+                "contents": "고척고등학교 과학실·음악실. 봉인.",
+                "condition": "가스관과 악기는 치우지 않았다. 열쇠는 동 장부."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "occupied",
+                "contents": "고척고등학교 옥상 망루.",
+                "condition": "급수통 두 개. 야간 교대."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:249853980",
+            "name": "서울세곡초등학교",
+            "observed_use": "학교",
+            "river": "tributary",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 0,
+                "label": "운동장",
+                "state": "yard",
+                "contents": "서울세곡초등학교 운동장. 고척2동 화물 정렬.",
+                "condition": "우기에는 물길, 건기에는 손수레 축."
+              },
+              {
+                "level": 1,
+                "label": "현관·1층 교실",
+                "state": "flooded",
+                "contents": "서울세곡초등학교 1층. 민병 현관과 신발 더미.",
+                "condition": "1층 창호는 판자. 침수는 우기에만 본다."
+              },
+              {
+                "level": 2,
+                "label": "교실 숙영",
+                "state": "occupied",
+                "contents": "서울세곡초등학교 2층 교실. S02 분대 침상.",
+                "condition": "칠판은 당번표. 책상은 침상 다리."
+              },
+              {
+                "level": 3,
+                "label": "특별실",
+                "state": "sealed",
+                "contents": "서울세곡초등학교 과학실·음악실. 봉인.",
+                "condition": "가스관과 악기는 치우지 않았다. 열쇠는 동 장부."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "occupied",
+                "contents": "서울세곡초등학교 옥상 망루.",
+                "condition": "급수통 두 개. 야간 교대."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:249853981",
+            "name": "오류중학교",
+            "observed_use": "학교",
+            "river": "tributary",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 0,
+                "label": "운동장",
+                "state": "yard",
+                "contents": "오류중학교 운동장. 고척2동 화물 정렬.",
+                "condition": "우기에는 물길, 건기에는 손수레 축."
+              },
+              {
+                "level": 1,
+                "label": "현관·1층 교실",
+                "state": "flooded",
+                "contents": "오류중학교 1층. 민병 현관과 신발 더미.",
+                "condition": "1층 창호는 판자. 침수는 우기에만 본다."
+              },
+              {
+                "level": 2,
+                "label": "교실 숙영",
+                "state": "occupied",
+                "contents": "오류중학교 2층 교실. S02 분대 침상.",
+                "condition": "칠판은 당번표. 책상은 침상 다리."
+              },
+              {
+                "level": 3,
+                "label": "특별실",
+                "state": "sealed",
+                "contents": "오류중학교 과학실·음악실. 봉인.",
+                "condition": "가스관과 악기는 치우지 않았다. 열쇠는 동 장부."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "occupied",
+                "contents": "오류중학교 옥상 망루.",
+                "condition": "급수통 두 개. 야간 교대."
+              }
+            ]
+          }
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S02",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": false
+      }
+    },
+    {
+      "region_id": "region:1153074000",
+      "name": "개봉1동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "개봉역의 야간 조명",
+        "summary": "개봉역 주변 안내조는 야간 통과에 필요한 조명과 주거지 충전용 전력을 두고 배정 순서를 정한다.",
+        "anchor_refs": [
+          "osm:node:355172810"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S02"
+        ],
+        "inhabitants": [
+          "개봉1동 주민 작업반",
+          "야간 귀환 안내 담당자"
+        ],
+        "livelihood": "통행 안내조가 귀환 인원의 시각을 확인한다.",
+        "production": {
+          "outputs": [
+            "야간 귀환 안내"
+          ],
+          "requires": [
+            "조명 전력과 경비 교대"
+          ]
+        },
+        "shortages": [
+          "조명 전력과 경비 교대의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "power",
+          "description": "조명이 부족하면 늦게 돌아온 주민이 출입구 인계 기록에서 빠질 수 있다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 개봉1동 주민들은 다음 선택의 비용을 협의한다: 귀환 집중 시간의 조명을 확보한다.",
+        "connections": "고척1동·고척2동·개봉2동·오류1동과 경계를 맞대지만 개봉1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1153074000-local-choice",
+          "label": "귀환 집중 시간의 조명을 확보한다",
+          "target_ref": "osm:node:355172810",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 3,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "늦은 귀환 인원을 확인할 수 있는 통과 시간을 유지한다."
+            }
+          ],
+          "tradeoff": "주거지의 개인 충전 시간이 짧아진다."
+        },
+        "uncertainty": "개봉의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:355172810",
+            "name": "개봉",
+            "observed_use": "역",
+            "river": "tributary",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station",
+            "floors": [
+              {
+                "level": -2,
+                "label": "선로",
+                "state": "sealed",
+                "contents": "개봉 선로. 개봉1동 통행세 구간. 보유 S02.",
+                "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
+              },
+              {
+                "level": -1,
+                "label": "승강장",
+                "state": "flooded",
+                "contents": "개봉 승강장. 피난 침상과 손수레 대기.",
+                "condition": "우기에는 물이 차오르고, 건기에는 침상을 깐다."
+              },
+              {
+                "level": 1,
+                "label": "대합실",
+                "state": "occupied",
+                "contents": "개봉 대합실. 생활 화물 인계와 배급 창구.",
+                "condition": "개찰 자리는 책상으로 바꿨다. 야간만 연다."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "sealed",
+                "contents": "개봉 옥상 망루. 개봉1동 방향 관측.",
+                "condition": "난간은 철사. 출입은 초소 암호패."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:node:368899831",
+            "name": "개봉1동주민센터",
+            "observed_use": "주민센터",
+            "river": "tributary",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 1,
+                "label": "민원 창구",
+                "state": "occupied",
+                "contents": "개봉1동주민센터 1층. 개봉1동 배급 창구. 보유 S02.",
+                "condition": "번호표 기계는 죽은 채. 야간만 연다."
+              },
+              {
+                "level": 2,
+                "label": "서고",
+                "state": "sealed",
+                "contents": "개봉1동주민센터 2층 서고. 동 장부 원본.",
+                "condition": "철문. 열쇠는 창구 당번."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:249853981",
+            "name": "오류중학교",
+            "observed_use": "학교",
+            "river": "tributary",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 0,
+                "label": "운동장",
+                "state": "yard",
+                "contents": "오류중학교 운동장. 개봉1동 화물 정렬.",
+                "condition": "우기에는 물길, 건기에는 손수레 축."
+              },
+              {
+                "level": 1,
+                "label": "현관·1층 교실",
+                "state": "flooded",
+                "contents": "오류중학교 1층. 민병 현관과 신발 더미.",
+                "condition": "1층 창호는 판자. 침수는 우기에만 본다."
+              },
+              {
+                "level": 2,
+                "label": "교실 숙영",
+                "state": "occupied",
+                "contents": "오류중학교 2층 교실. S02 분대 침상.",
+                "condition": "칠판은 당번표. 책상은 침상 다리."
+              },
+              {
+                "level": 3,
+                "label": "특별실",
+                "state": "sealed",
+                "contents": "오류중학교 과학실·음악실. 봉인.",
+                "condition": "가스관과 악기는 치우지 않았다. 열쇠는 동 장부."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "occupied",
+                "contents": "오류중학교 옥상 망루.",
+                "condition": "급수통 두 개. 야간 교대."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:249853983",
+            "name": "서울매봉초등학교",
+            "observed_use": "학교",
+            "river": "tributary",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 0,
+                "label": "운동장",
+                "state": "yard",
+                "contents": "서울매봉초등학교 운동장. 개봉1동 화물 정렬.",
+                "condition": "우기에는 물길, 건기에는 손수레 축."
+              },
+              {
+                "level": 1,
+                "label": "현관·1층 교실",
+                "state": "flooded",
+                "contents": "서울매봉초등학교 1층. 민병 현관과 신발 더미.",
+                "condition": "1층 창호는 판자. 침수는 우기에만 본다."
+              },
+              {
+                "level": 2,
+                "label": "교실 숙영",
+                "state": "occupied",
+                "contents": "서울매봉초등학교 2층 교실. S02 분대 침상.",
+                "condition": "칠판은 당번표. 책상은 침상 다리."
+              },
+              {
+                "level": 3,
+                "label": "특별실",
+                "state": "sealed",
+                "contents": "서울매봉초등학교 과학실·음악실. 봉인.",
+                "condition": "가스관과 악기는 치우지 않았다. 열쇠는 동 장부."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "occupied",
+                "contents": "서울매봉초등학교 옥상 망루.",
+                "condition": "급수통 두 개. 야간 교대."
+              }
+            ]
+          }
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S02",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": true
+      }
+    },
+    {
+      "region_id": "region:1153075000",
+      "name": "개봉2동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "빗물펌프장 부품 배정",
+        "summary": "개봉1빗물펌프장에 필요한 부품을 배정하려는 주민 작업반은 아파트 양수 설비 수리조와 같은 재고를 놓고 협의한다.",
+        "anchor_refs": [
+          "osm:way:802375053"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S02"
+        ],
+        "inhabitants": [
+          "개봉2동 주민 작업반",
+          "배수 설비 정비 담당자"
+        ],
+        "livelihood": "배수 정비조와 가구 양수조가 고장 위험을 비교한다.",
+        "production": {
+          "outputs": [
+            "배수 설비 정비"
+          ],
+          "requires": [
+            "펌프 부품과 공구"
+          ]
+        },
+        "shortages": [
+          "펌프 부품과 공구의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "water",
+          "description": "장비 상태를 확인하지 않고 가동하면 배수 중단을 늦게 알아 주변 접근을 통제하지 못한다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 개봉2동 주민들은 다음 선택의 비용을 협의한다: 배수 펌프를 먼저 점검한다.",
+        "connections": "구로1동·고척1동·개봉1동·개봉3동·오류1동·오류2동과 경계를 맞대지만 개봉2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1153075000-local-choice",
+          "label": "배수 펌프를 먼저 점검한다",
+          "target_ref": "osm:way:802375053",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 5,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "고장 가능성을 확인하고 가동·통제 계획을 세운다."
+            }
+          ],
+          "tradeoff": "아파트 양수 보수가 미뤄져 주민의 수동 운반이 늘어난다."
+        },
+        "uncertainty": "개봉1빗물펌프장의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:way:469044558",
+            "name": "병원건물",
+            "observed_use": "병원",
+            "river": "tributary",
+            "opening_use": "야전 의무. 수술실 대신 교대 침상을 둔다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 1,
+                "label": "대기실",
+                "state": "flooded",
+                "contents": "병원건물 1층 대기. 탁수 때는 쓰지 않는다.",
+                "condition": "의자 줄은 남고 접수 창구는 막았다."
+              },
+              {
+                "level": 2,
+                "label": "침상",
+                "state": "occupied",
+                "contents": "병원건물 2층 교대 침상. S02 야전 의무.",
+                "condition": "수술실 대신 커튼 칸. 약품은 자물쇠."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:469046329",
+            "name": "강서효병원",
+            "observed_use": "병원",
+            "river": "tributary",
+            "opening_use": "야전 의무. 수술실 대신 교대 침상을 둔다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 1,
+                "label": "대기실",
+                "state": "flooded",
+                "contents": "강서효병원 1층 대기. 탁수 때는 쓰지 않는다.",
+                "condition": "의자 줄은 남고 접수 창구는 막았다."
+              },
+              {
+                "level": 2,
+                "label": "침상",
+                "state": "occupied",
+                "contents": "강서효병원 2층 교대 침상. S02 야전 의무.",
+                "condition": "수술실 대신 커튼 칸. 약품은 자물쇠."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:469046334",
+            "name": "개봉2동주민센터",
+            "observed_use": "주민센터",
+            "river": "tributary",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 1,
+                "label": "민원 창구",
+                "state": "occupied",
+                "contents": "개봉2동주민센터 1층. 개봉2동 배급 창구. 보유 S02.",
+                "condition": "번호표 기계는 죽은 채. 야간만 연다."
+              },
+              {
+                "level": 2,
+                "label": "서고",
+                "state": "sealed",
+                "contents": "개봉2동주민센터 2층 서고. 동 장부 원본.",
+                "condition": "철문. 열쇠는 창구 당번."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:802375053",
+            "name": "개봉1빗물펌프장",
+            "observed_use": "건물",
+            "river": "tributary",
+            "opening_use": "1층은 우기 창고, 거주와 배급은 제방 안쪽에서 한다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 1,
+                "label": "1층",
+                "state": "flooded",
+                "contents": "개봉1빗물펌프장 1층. 개봉2동 잔존 골조. 보유 S02.",
+                "condition": "관측된 출입구만 쓰고 나머지는 막는다."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "abandoned",
+                "contents": "개봉1빗물펌프장 옥상.",
+                "condition": "난간만 남았거나 없다."
+              }
+            ]
+          }
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S02",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": false
+      }
+    },
+    {
+      "region_id": "region:1153076000",
+      "name": "개봉3동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "목감천 보행 인계",
+        "summary": "목감천 주변 주민들은 아이와 짐을 같은 손수레로 옮기는 일을 줄이려고 보행 안내 교대를 따로 두려 한다.",
+        "anchor_refs": [
+          "osm:way:383310884"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S02"
+        ],
+        "inhabitants": [
+          "개봉3동 주민 작업반",
+          "생활 통행 안내 담당자"
+        ],
+        "livelihood": "주민 안내조와 배급 짐꾼이 물가 통행을 나눠 맡는다.",
+        "production": {
+          "outputs": [
+            "생활 통행 안내"
+          ],
+          "requires": [
+            "표지와 운반 교대"
+          ]
+        },
+        "shortages": [
+          "표지와 운반 교대의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "access",
+          "description": "물가 통행의 상태를 확인하지 않으면 가벼운 짐 운반도 주민 대피와 충돌한다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 개봉3동 주민들은 다음 선택의 비용을 협의한다: 취약 보행자의 인계 시간을 분리한다.",
+        "connections": "개봉2동·오류2동과 경계를 맞대지만 개봉3동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1153076000-local-choice",
+          "label": "취약 보행자의 인계 시간을 분리한다",
+          "target_ref": "osm:way:383310884",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 3,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "아이와 거동이 어려운 주민의 이동을 따로 확인한다."
+            }
+          ],
+          "tradeoff": "배급 짐 운반이 같은 시간에 진행되지 못한다."
+        },
+        "uncertainty": "목감천의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:368899851",
+            "name": "개봉3동주민센터",
+            "observed_use": "주민센터",
+            "river": "tributary",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 1,
+                "label": "민원 창구",
+                "state": "occupied",
+                "contents": "개봉3동주민센터 1층. 개봉3동 배급 창구. 보유 S02.",
+                "condition": "번호표 기계는 죽은 채. 야간만 연다."
+              },
+              {
+                "level": 2,
+                "label": "서고",
+                "state": "sealed",
+                "contents": "개봉3동주민센터 2층 서고. 동 장부 원본.",
+                "condition": "철문. 열쇠는 창구 당번."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:250367012",
+            "name": "서울개봉초등학교",
+            "observed_use": "학교",
+            "river": "tributary",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 0,
+                "label": "운동장",
+                "state": "yard",
+                "contents": "서울개봉초등학교 운동장. 개봉3동 화물 정렬.",
+                "condition": "우기에는 물길, 건기에는 손수레 축."
+              },
+              {
+                "level": 1,
+                "label": "현관·1층 교실",
+                "state": "flooded",
+                "contents": "서울개봉초등학교 1층. 민병 현관과 신발 더미.",
+                "condition": "1층 창호는 판자. 침수는 우기에만 본다."
+              },
+              {
+                "level": 2,
+                "label": "교실 숙영",
+                "state": "occupied",
+                "contents": "서울개봉초등학교 2층 교실. S02 분대 침상.",
+                "condition": "칠판은 당번표. 책상은 침상 다리."
+              },
+              {
+                "level": 3,
+                "label": "특별실",
+                "state": "sealed",
+                "contents": "서울개봉초등학교 과학실·음악실. 봉인.",
+                "condition": "가스관과 악기는 치우지 않았다. 열쇠는 동 장부."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "occupied",
+                "contents": "서울개봉초등학교 옥상 망루.",
+                "condition": "급수통 두 개. 야간 교대."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:250489301",
+            "name": "서울개웅초등학교",
+            "observed_use": "학교",
+            "river": "tributary",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 0,
+                "label": "운동장",
+                "state": "yard",
+                "contents": "서울개웅초등학교 운동장. 개봉3동 화물 정렬.",
+                "condition": "우기에는 물길, 건기에는 손수레 축."
+              },
+              {
+                "level": 1,
+                "label": "현관·1층 교실",
+                "state": "flooded",
+                "contents": "서울개웅초등학교 1층. 민병 현관과 신발 더미.",
+                "condition": "1층 창호는 판자. 침수는 우기에만 본다."
+              },
+              {
+                "level": 2,
+                "label": "교실 숙영",
+                "state": "occupied",
+                "contents": "서울개웅초등학교 2층 교실. S02 분대 침상.",
+                "condition": "칠판은 당번표. 책상은 침상 다리."
+              },
+              {
+                "level": 3,
+                "label": "특별실",
+                "state": "sealed",
+                "contents": "서울개웅초등학교 과학실·음악실. 봉인.",
+                "condition": "가스관과 악기는 치우지 않았다. 열쇠는 동 장부."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "occupied",
+                "contents": "서울개웅초등학교 옥상 망루.",
+                "condition": "급수통 두 개. 야간 교대."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:250489306",
+            "name": "개웅중학교",
+            "observed_use": "학교",
+            "river": "tributary",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 0,
+                "label": "운동장",
+                "state": "yard",
+                "contents": "개웅중학교 운동장. 개봉3동 화물 정렬.",
+                "condition": "우기에는 물길, 건기에는 손수레 축."
+              },
+              {
+                "level": 1,
+                "label": "현관·1층 교실",
+                "state": "flooded",
+                "contents": "개웅중학교 1층. 민병 현관과 신발 더미.",
+                "condition": "1층 창호는 판자. 침수는 우기에만 본다."
+              },
+              {
+                "level": 2,
+                "label": "교실 숙영",
+                "state": "occupied",
+                "contents": "개웅중학교 2층 교실. S02 분대 침상.",
+                "condition": "칠판은 당번표. 책상은 침상 다리."
+              },
+              {
+                "level": 3,
+                "label": "특별실",
+                "state": "sealed",
+                "contents": "개웅중학교 과학실·음악실. 봉인.",
+                "condition": "가스관과 악기는 치우지 않았다. 열쇠는 동 장부."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "occupied",
+                "contents": "개웅중학교 옥상 망루.",
+                "condition": "급수통 두 개. 야간 교대."
+              }
+            ]
+          }
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S02",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": false
+      }
+    },
+    {
+      "region_id": "region:1153077000",
+      "name": "오류1동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "오류시장 수리 저울",
+        "summary": "오류시장에서는 쓸 수 있는 부품과 회수 금속을 같은 값으로 교환하지 않으려 수리공이 검사대를 마련한다.",
+        "anchor_refs": [
+          "osm:way:533763905"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S02"
+        ],
+        "inhabitants": [
+          "오류1동 주민 작업반",
+          "부품 검사와 교환 담당자"
+        ],
+        "livelihood": "검사자와 상인이 재사용 가능 여부를 설명한다.",
+        "production": {
+          "outputs": [
+            "부품 검사와 교환"
+          ],
+          "requires": [
+            "검사 도구와 소형 부품"
+          ]
+        },
+        "shortages": [
+          "검사 도구와 소형 부품의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "supply",
+          "description": "작동 여부를 모르는 부품을 생활 설비에 넣으면 같은 장비를 반복 수리해야 한다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 오류1동 주민들은 다음 선택의 비용을 협의한다: 생활 설비용 부품부터 검사한다.",
+        "connections": "개봉1동·개봉2동·오류2동·수궁동과 경계를 맞대지만 오류1동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1153077000-local-choice",
+          "label": "생활 설비용 부품부터 검사한다",
+          "target_ref": "osm:way:533763905",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 4,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "고장 부품을 긴급 수리 주문에서 제외한다."
+            }
+          ],
+          "tradeoff": "검사를 기다리는 일반 교환 주문이 늘어난다."
+        },
+        "uncertainty": "오류시장의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:355172808",
+            "name": "오류동",
+            "observed_use": "역",
+            "river": "tributary",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station",
+            "floors": [
+              {
+                "level": -2,
+                "label": "선로",
+                "state": "sealed",
+                "contents": "오류동 선로. 오류1동 통행세 구간. 보유 S02.",
+                "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
+              },
+              {
+                "level": -1,
+                "label": "승강장",
+                "state": "flooded",
+                "contents": "오류동 승강장. 피난 침상과 손수레 대기.",
+                "condition": "우기에는 물이 차오르고, 건기에는 침상을 깐다."
+              },
+              {
+                "level": 1,
+                "label": "대합실",
+                "state": "occupied",
+                "contents": "오류동 대합실. 생활 화물 인계와 배급 창구.",
+                "condition": "개찰 자리는 책상으로 바꿨다. 야간만 연다."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "sealed",
+                "contents": "오류동 옥상 망루. 오류1동 방향 관측.",
+                "condition": "난간은 철사. 출입은 초소 암호패."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:node:368899984",
+            "name": "오류1동주민센터",
+            "observed_use": "주민센터",
+            "river": "tributary",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 1,
+                "label": "민원 창구",
+                "state": "occupied",
+                "contents": "오류1동주민센터 1층. 오류1동 배급 창구. 보유 S02.",
+                "condition": "번호표 기계는 죽은 채. 야간만 연다."
+              },
+              {
+                "level": 2,
+                "label": "서고",
+                "state": "sealed",
+                "contents": "오류1동주민센터 2층 서고. 동 장부 원본.",
+                "condition": "철문. 열쇠는 창구 당번."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:249998689",
+            "name": "서울오류초등학교",
+            "observed_use": "학교",
+            "river": "tributary",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 0,
+                "label": "운동장",
+                "state": "yard",
+                "contents": "서울오류초등학교 운동장. 오류1동 화물 정렬.",
+                "condition": "우기에는 물길, 건기에는 손수레 축."
+              },
+              {
+                "level": 1,
+                "label": "현관·1층 교실",
+                "state": "flooded",
+                "contents": "서울오류초등학교 1층. 민병 현관과 신발 더미.",
+                "condition": "1층 창호는 판자. 침수는 우기에만 본다."
+              },
+              {
+                "level": 2,
+                "label": "교실 숙영",
+                "state": "occupied",
+                "contents": "서울오류초등학교 2층 교실. S02 분대 침상.",
+                "condition": "칠판은 당번표. 책상은 침상 다리."
+              },
+              {
+                "level": 3,
+                "label": "특별실",
+                "state": "sealed",
+                "contents": "서울오류초등학교 과학실·음악실. 봉인.",
+                "condition": "가스관과 악기는 치우지 않았다. 열쇠는 동 장부."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "occupied",
+                "contents": "서울오류초등학교 옥상 망루.",
+                "condition": "급수통 두 개. 야간 교대."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:533763905",
+            "name": "오류시장",
+            "observed_use": "시장",
+            "river": "tributary",
+            "opening_use": "허가 장터. 예약 배급분과 판매 재고를 나눈다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support",
+            "floors": [
+              {
+                "level": -1,
+                "label": "지하 창고",
+                "state": "flooded",
+                "contents": "오류시장 지하. 예약 재고.",
+                "condition": "우기에는 물건을 1층으로 올린다."
+              },
+              {
+                "level": 1,
+                "label": "장터",
+                "state": "occupied",
+                "contents": "오류시장 1층 허가 장터. 보유 S02.",
+                "condition": "예약분과 판매분을 줄로 나눈다."
+              }
+            ]
+          }
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S02",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": true
+      }
+    },
+    {
+      "region_id": "region:1153078000",
+      "name": "오류2동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "공업고 보호구 수선",
+        "summary": "유한공업고등학교 작업 공간의 창작 제작조는 낡은 보호구를 수선하려 하지만 새 작업복 주문도 밀려 있다.",
+        "anchor_refs": [
+          "osm:way:429848280"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S02"
+        ],
+        "inhabitants": [
+          "오류2동 주민 작업반",
+          "보호구 수선 담당자"
+        ],
+        "livelihood": "수선공과 도제가 보호구 손상 정도를 확인한다.",
+        "production": {
+          "outputs": [
+            "보호구 수선"
+          ],
+          "requires": [
+            "천과 결속 재료"
+          ]
+        },
+        "shortages": [
+          "천과 결속 재료의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "supply",
+          "description": "찢어진 보호구를 계속 쓰면 수리 인력이 현장에 나가지 못한다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 오류2동 주민들은 다음 선택의 비용을 협의한다: 위험 작업용 보호구를 우선 수선한다.",
+        "connections": "개봉2동·개봉3동·오류1동·수궁동·항동과 경계를 맞대지만 오류2동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1153078000-local-choice",
+          "label": "위험 작업용 보호구를 우선 수선한다",
+          "target_ref": "osm:way:429848280",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 4,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "필수 정비 인력이 현장으로 돌아갈 수 있다."
+            }
+          ],
+          "tradeoff": "일반 작업복 주문은 다음 재료 입고까지 기다린다."
+        },
+        "uncertainty": "유한공업고등학교의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:6050654953",
+            "name": "천왕",
+            "observed_use": "역",
+            "river": "tributary",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station",
+            "floors": [
+              {
+                "level": -2,
+                "label": "선로",
+                "state": "sealed",
+                "contents": "천왕 선로. 오류2동 통행세 구간. 보유 S02.",
+                "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
+              },
+              {
+                "level": -1,
+                "label": "승강장",
+                "state": "flooded",
+                "contents": "천왕 승강장. 피난 침상과 손수레 대기.",
+                "condition": "우기에는 물이 차오르고, 건기에는 침상을 깐다."
+              },
+              {
+                "level": 1,
+                "label": "대합실",
+                "state": "occupied",
+                "contents": "천왕 대합실. 생활 화물 인계와 배급 창구.",
+                "condition": "개찰 자리는 책상으로 바꿨다. 야간만 연다."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "sealed",
+                "contents": "천왕 옥상 망루. 오류2동 방향 관측.",
+                "condition": "난간은 철사. 출입은 초소 암호패."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:node:368899578",
+            "name": "오류2동 주민센터",
+            "observed_use": "주민센터",
+            "river": "tributary",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 1,
+                "label": "민원 창구",
+                "state": "occupied",
+                "contents": "오류2동 주민센터 1층. 오류2동 배급 창구. 보유 S02.",
+                "condition": "번호표 기계는 죽은 채. 야간만 연다."
+              },
+              {
+                "level": 2,
+                "label": "서고",
+                "state": "sealed",
+                "contents": "오류2동 주민센터 2층 서고. 동 장부 원본.",
+                "condition": "철문. 열쇠는 창구 당번."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:183847196",
+            "name": "성공회대학교",
+            "observed_use": "대학",
+            "river": "tributary",
+            "opening_use": "기록 사본 공방. 실험동은 봉인하거나 부품을 분해한다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 1,
+                "label": "로비·열람",
+                "state": "occupied",
+                "contents": "성공회대학교 1층. 기록 사본 공방. 오류2동.",
+                "condition": "복사기는 없고 필사 책상만 있다."
+              },
+              {
+                "level": 2,
+                "label": "실험동",
+                "state": "sealed",
+                "contents": "성공회대학교 실험동. 부품 분해 전 봉인.",
+                "condition": "환기팬은 멈춤. 허가 없이 못 연다."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:252922846",
+            "name": "서울오정초등학교",
+            "observed_use": "학교",
+            "river": "tributary",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 0,
+                "label": "운동장",
+                "state": "yard",
+                "contents": "서울오정초등학교 운동장. 오류2동 화물 정렬.",
+                "condition": "우기에는 물길, 건기에는 손수레 축."
+              },
+              {
+                "level": 1,
+                "label": "현관·1층 교실",
+                "state": "flooded",
+                "contents": "서울오정초등학교 1층. 민병 현관과 신발 더미.",
+                "condition": "1층 창호는 판자. 침수는 우기에만 본다."
+              },
+              {
+                "level": 2,
+                "label": "교실 숙영",
+                "state": "occupied",
+                "contents": "서울오정초등학교 2층 교실. S02 분대 침상.",
+                "condition": "칠판은 당번표. 책상은 침상 다리."
+              },
+              {
+                "level": 3,
+                "label": "특별실",
+                "state": "sealed",
+                "contents": "서울오정초등학교 과학실·음악실. 봉인.",
+                "condition": "가스관과 악기는 치우지 않았다. 열쇠는 동 장부."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "occupied",
+                "contents": "서울오정초등학교 옥상 망루.",
+                "condition": "급수통 두 개. 야간 교대."
+              }
+            ]
+          }
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S02",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": true
+      }
+    },
+    {
+      "region_id": "region:1153079000",
+      "name": "수궁동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "디자인고 표지 제작",
+        "summary": "예림디자인고등학교의 제작조는 낡은 길 안내를 다시 쓰며 글을 읽기 어려운 주민도 알아볼 표지를 만들려 한다.",
+        "anchor_refs": [
+          "osm:way:249852625"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S02"
+        ],
+        "inhabitants": [
+          "수궁동 주민 작업반",
+          "생활 안내 표지 담당자"
+        ],
+        "livelihood": "제작자와 안내조가 그림·문자 표지를 함께 시험한다.",
+        "production": {
+          "outputs": [
+            "생활 안내 표지"
+          ],
+          "requires": [
+            "도료와 판재"
+          ]
+        },
+        "shortages": [
+          "도료와 판재의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "access",
+          "description": "표지가 낯선 명칭만 쓰면 외부에서 온 주민이 엉뚱한 집결지로 향한다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 수궁동 주민들은 다음 선택의 비용을 협의한다: 현장 주민과 안내 표지를 대조한다.",
+        "connections": "오류1동·오류2동·항동과 경계를 맞대지만 수궁동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1153079000-local-choice",
+          "label": "현장 주민과 안내 표지를 대조한다",
+          "target_ref": "osm:way:249852625",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 3,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "통행자가 이해할 수 있는 표지를 배치한다."
+            }
+          ],
+          "tradeoff": "제작조의 다른 수선 주문이 늦어진다."
+        },
+        "uncertainty": "예림디자인고등학교의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:node:5208486247",
+            "name": "온수",
+            "observed_use": "역",
+            "river": "tributary",
+            "opening_use": "생활 화물 인계와 피난 층. 선로 통행세는 국가가 받는다.",
+            "how": "대합실은 인계, 승강장은 피난, 선로는 봉인 구간이 있다.",
+            "role": "core-station",
+            "floors": [
+              {
+                "level": -2,
+                "label": "선로",
+                "state": "sealed",
+                "contents": "온수 선로. 수궁동 통행세 구간. 보유 S02.",
+                "condition": "침목은 남고 전동차는 없다. 허가 없는 보행은 돌린다."
+              },
+              {
+                "level": -1,
+                "label": "승강장",
+                "state": "flooded",
+                "contents": "온수 승강장. 피난 침상과 손수레 대기.",
+                "condition": "우기에는 물이 차오르고, 건기에는 침상을 깐다."
+              },
+              {
+                "level": 1,
+                "label": "대합실",
+                "state": "occupied",
+                "contents": "온수 대합실. 생활 화물 인계와 배급 창구.",
+                "condition": "개찰 자리는 책상으로 바꿨다. 야간만 연다."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "sealed",
+                "contents": "온수 옥상 망루. 수궁동 방향 관측.",
+                "condition": "난간은 철사. 출입은 초소 암호패."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:node:7808176105",
+            "name": "수궁동 주민센터",
+            "observed_use": "주민센터",
+            "river": "tributary",
+            "opening_use": "동 장부와 배급 창구. 야간만 연다.",
+            "how": "민원 창구를 배급 창구로 쓰고 서고는 봉인한다.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 1,
+                "label": "민원 창구",
+                "state": "occupied",
+                "contents": "수궁동 주민센터 1층. 수궁동 배급 창구. 보유 S02.",
+                "condition": "번호표 기계는 죽은 채. 야간만 연다."
+              },
+              {
+                "level": 2,
+                "label": "서고",
+                "state": "sealed",
+                "contents": "수궁동 주민센터 2층 서고. 동 장부 원본.",
+                "condition": "철문. 열쇠는 창구 당번."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:249852625",
+            "name": "예림디자인고등학교",
+            "observed_use": "학교",
+            "river": "tributary",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 0,
+                "label": "운동장",
+                "state": "yard",
+                "contents": "예림디자인고등학교 운동장. 수궁동 화물 정렬.",
+                "condition": "우기에는 물길, 건기에는 손수레 축."
+              },
+              {
+                "level": 1,
+                "label": "현관·1층 교실",
+                "state": "flooded",
+                "contents": "예림디자인고등학교 1층. 민병 현관과 신발 더미.",
+                "condition": "1층 창호는 판자. 침수는 우기에만 본다."
+              },
+              {
+                "level": 2,
+                "label": "교실 숙영",
+                "state": "occupied",
+                "contents": "예림디자인고등학교 2층 교실. S02 분대 침상.",
+                "condition": "칠판은 당번표. 책상은 침상 다리."
+              },
+              {
+                "level": 3,
+                "label": "특별실",
+                "state": "sealed",
+                "contents": "예림디자인고등학교 과학실·음악실. 봉인.",
+                "condition": "가스관과 악기는 치우지 않았다. 열쇠는 동 장부."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "occupied",
+                "contents": "예림디자인고등학교 옥상 망루.",
+                "condition": "급수통 두 개. 야간 교대."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:249852626",
+            "name": "오류고등학교",
+            "observed_use": "학교",
+            "river": "tributary",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 0,
+                "label": "운동장",
+                "state": "yard",
+                "contents": "오류고등학교 운동장. 수궁동 화물 정렬.",
+                "condition": "우기에는 물길, 건기에는 손수레 축."
+              },
+              {
+                "level": 1,
+                "label": "현관·1층 교실",
+                "state": "flooded",
+                "contents": "오류고등학교 1층. 민병 현관과 신발 더미.",
+                "condition": "1층 창호는 판자. 침수는 우기에만 본다."
+              },
+              {
+                "level": 2,
+                "label": "교실 숙영",
+                "state": "occupied",
+                "contents": "오류고등학교 2층 교실. S02 분대 침상.",
+                "condition": "칠판은 당번표. 책상은 침상 다리."
+              },
+              {
+                "level": 3,
+                "label": "특별실",
+                "state": "sealed",
+                "contents": "오류고등학교 과학실·음악실. 봉인.",
+                "condition": "가스관과 악기는 치우지 않았다. 열쇠는 동 장부."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "occupied",
+                "contents": "오류고등학교 옥상 망루.",
+                "condition": "급수통 두 개. 야간 교대."
+              }
+            ]
+          }
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S02",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": true
+      }
+    },
+    {
+      "region_id": "region:1153080000",
+      "name": "항동",
+      "content": {
+        "source_kind": "original-fiction",
+        "fictional_epoch": "opening-day",
+        "title": "항동초 공동 작업장",
+        "summary": "항동초등학교 마당의 창작 공동체는 지상 접근을 유지하기 위해 운반 장비와 가구 공구를 함께 보수한다. 역 객체가 배정되지 않았다는 이유로 생활 물류를 비워 두지 않는다.",
+        "anchor_refs": [
+          "osm:way:754149192"
+        ],
+        "canon_refs": [
+          "docs/game-logic/Sixteen-States.md",
+          "docs/game-logic/Scenario-Timeline.md"
+        ],
+        "polity_contexts": [
+          "S02"
+        ],
+        "inhabitants": [
+          "항동 주민 작업반",
+          "지상 운반 장비 보수 담당자"
+        ],
+        "livelihood": "주민 수리공과 운반조가 필요한 장비를 우선 정한다.",
+        "production": {
+          "outputs": [
+            "지상 운반 장비 보수"
+          ],
+          "requires": [
+            "공구와 부품"
+          ]
+        },
+        "shortages": [
+          "공구와 부품의 배정이 제한되어 다음 작업을 예약해야 한다."
+        ],
+        "hazard": {
+          "kind": "access",
+          "description": "소수 장비가 고장 나면 학교 마당을 거치는 생활 물자 운반이 멈춘다."
+        },
+        "opening_state": "임하준 실종과 기존 중앙 급수·부품 계약 만료가 알려진 개막일, 항동 주민들은 다음 선택의 비용을 협의한다: 공용 운반 장비부터 보수한다.",
+        "connections": "오류2동·수궁동과 경계를 맞대지만 항동의 실제 운반·통행은 현장 접근 상태와 협약을 확인해야 한다.",
+        "action": {
+          "id": "dong-1153080000-local-choice",
+          "label": "공용 운반 장비부터 보수한다",
+          "target_ref": "osm:way:754149192",
+          "costs": [
+            {
+              "resource": "labor",
+              "amount": 4,
+              "unit": "shift"
+            }
+          ],
+          "outcomes": [
+            {
+              "kind": "service",
+              "effect": "확인된 지상 인계 구간의 물자 이동을 유지한다."
+            }
+          ],
+          "tradeoff": "개별 가구 공구 수리는 다음 교대로 밀린다."
+        },
+        "uncertainty": "서울항동초등학교의 위치·태그는 OSM 스냅샷 2026-09-04의 관측 근거이며 동 경계는 2026-07-01 자료를 정리한 결과다. 주민 조직과 재난 뒤 운영·부족·위험·행동 비용은 창작이고 실제 기관의 가동 상태를 뜻하지 않는다.",
+        "buildings": [
+          {
+            "anchor_ref": "osm:way:183847196",
+            "name": "성공회대학교",
+            "observed_use": "대학",
+            "river": "tributary",
+            "opening_use": "기록 사본 공방. 실험동은 봉인하거나 부품을 분해한다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 1,
+                "label": "로비·열람",
+                "state": "occupied",
+                "contents": "성공회대학교 1층. 기록 사본 공방. 항동.",
+                "condition": "복사기는 없고 필사 책상만 있다."
+              },
+              {
+                "level": 2,
+                "label": "실험동",
+                "state": "sealed",
+                "contents": "성공회대학교 실험동. 부품 분해 전 봉인.",
+                "condition": "환기팬은 멈춤. 허가 없이 못 연다."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:252990477",
+            "name": "유한대학교",
+            "observed_use": "대학",
+            "river": "tributary",
+            "opening_use": "기록 사본 공방. 실험동은 봉인하거나 부품을 분해한다.",
+            "how": "관측된 출입구만 쓰고 나머지는 막는다.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 1,
+                "label": "로비·열람",
+                "state": "occupied",
+                "contents": "유한대학교 1층. 기록 사본 공방. 항동.",
+                "condition": "복사기는 없고 필사 책상만 있다."
+              },
+              {
+                "level": 2,
+                "label": "실험동",
+                "state": "sealed",
+                "contents": "유한대학교 실험동. 부품 분해 전 봉인.",
+                "condition": "환기팬은 멈춤. 허가 없이 못 연다."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:429848280",
+            "name": "유한공업고등학교",
+            "observed_use": "학교",
+            "river": "tributary",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 0,
+                "label": "운동장",
+                "state": "yard",
+                "contents": "유한공업고등학교 운동장. 항동 화물 정렬.",
+                "condition": "우기에는 물길, 건기에는 손수레 축."
+              },
+              {
+                "level": 1,
+                "label": "현관·1층 교실",
+                "state": "flooded",
+                "contents": "유한공업고등학교 1층. 민병 현관과 신발 더미.",
+                "condition": "1층 창호는 판자. 침수는 우기에만 본다."
+              },
+              {
+                "level": 2,
+                "label": "교실 숙영",
+                "state": "occupied",
+                "contents": "유한공업고등학교 2층 교실. S02 분대 침상.",
+                "condition": "칠판은 당번표. 책상은 침상 다리."
+              },
+              {
+                "level": 3,
+                "label": "특별실",
+                "state": "sealed",
+                "contents": "유한공업고등학교 과학실·음악실. 봉인.",
+                "condition": "가스관과 악기는 치우지 않았다. 열쇠는 동 장부."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "occupied",
+                "contents": "유한공업고등학교 옥상 망루.",
+                "condition": "급수통 두 개. 야간 교대."
+              }
+            ]
+          },
+          {
+            "anchor_ref": "osm:way:754149192",
+            "name": "서울항동초등학교",
+            "observed_use": "학교",
+            "river": "tributary",
+            "opening_use": "동 민병 숙영. 운동장은 화물 정렬, 특별실은 봉인한다.",
+            "how": "교실은 분대 침상, 운동장은 정렬, 옥상은 망루.",
+            "role": "support",
+            "floors": [
+              {
+                "level": 0,
+                "label": "운동장",
+                "state": "yard",
+                "contents": "서울항동초등학교 운동장. 항동 화물 정렬.",
+                "condition": "우기에는 물길, 건기에는 손수레 축."
+              },
+              {
+                "level": 1,
+                "label": "현관·1층 교실",
+                "state": "flooded",
+                "contents": "서울항동초등학교 1층. 민병 현관과 신발 더미.",
+                "condition": "1층 창호는 판자. 침수는 우기에만 본다."
+              },
+              {
+                "level": 2,
+                "label": "교실 숙영",
+                "state": "occupied",
+                "contents": "서울항동초등학교 2층 교실. S02 분대 침상.",
+                "condition": "칠판은 당번표. 책상은 침상 다리."
+              },
+              {
+                "level": 3,
+                "label": "특별실",
+                "state": "sealed",
+                "contents": "서울항동초등학교 과학실·음악실. 봉인.",
+                "condition": "가스관과 악기는 치우지 않았다. 열쇠는 동 장부."
+              },
+              {
+                "level": "roof",
+                "label": "옥상",
+                "state": "occupied",
+                "contents": "서울항동초등학교 옥상 망루.",
+                "condition": "급수통 두 개. 야간 교대."
+              }
+            ]
+          }
+        ],
+        "territory": {
+          "status": "held",
+          "holders": [
+            {
+              "polity": "S02",
+              "control": 70
+            }
+          ]
+        },
+        "core_station": false
+      }
+    }
+  ]
+}
