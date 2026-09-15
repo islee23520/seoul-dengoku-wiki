@@ -14,13 +14,35 @@ node Tool/tools/wiki/test-verify-hangnyeol.mjs       # 검사기 단위 테스�
 ## 공통 규칙
 
 - 모든 파일은 `{ "id", "schema", "note", "sources": [...] }` 를 가진다.
-- `sources[]` 한 항목은 `{ "id", "url", "accessed", "quote", "evidence" }` 전부를 채운다.
+- `sources[]` 한 항목은 `{ "id", "url", "accessed", "quote", "evidence", "live_check" }` 전부를 채운다.
   - `url`은 실제로 연 주소, `accessed`는 `YYYY-MM-DD`.
   - `quote`는 그 주소에서 **그대로 복사한** 문장이다. 요약·번역·재작성은 인용이 아니다.
   - `evidence`는 저장소 안 원자료 경로(`Research/verification/hangnyeol/raw/*.md`)다.
     검사기는 그 파일을 열어 `quote`가 실제로 들어 있는지 대조한다(공백만 정규화).
 - 출처가 필요한 행은 `sources: ["<source id>"]`로 참조한다. 참조가 풀리지 않으면 실패한다.
 - `id`는 파일 안에서 유일하다.
+
+## 라이브 재대조 (`live_check`)
+
+원장 대조만으로는 부족하다. 원자료를 쓴 쪽이 인용을 지어내면 그 인용은 자기 파일 안에
+그대로 들어 있으므로 원장 대조를 통과한다. 그래서 **URL을 다시 열어 본 독립 판정**을
+행에 묶는다.
+
+| 값 | 뜻 | 추가로 요구하는 칸 |
+|---|---|---|
+| `verbatim_ok` | 재대조에서 인용이 그 주소에 축자로 있었다 | `record_id`, `live_check_ref` |
+| `artifact_corrected` | 재대조 결과가 `MISMATCH`였고, 그 차이가 공백·둥근따옴표·NBSP·표 행 분리 같은 표기 차이였다. 보고가 적어 둔 실제 본문을 인용으로 쓴다 | `record_id`, `live_check_ref` |
+| `unchecked` | 아직 재대조하지 않았다 | 없음 |
+
+- `live_check_ref`는 재대조 보고 경로(`Research/verification/hangnyeol/raw/_verify-*.md`)다.
+- `record_id`는 그 보고의 표에 있는 수확 레코드 id다. 검사기는 보고에서 그 id 칸을 찾아
+  판정 토큰(`VERBATIM_OK` / `MISMATCH`)이 선언과 맞는지 확인한다. **부분 문자열이 아니라
+  표의 한 칸이 정확히 같아야 한다.**
+- `verbatim_ok`이라 적었는데 보고가 `MISMATCH`라고 하면 실패한다. 그 반대도 실패한다.
+- 검사기는 요약에 `live_verified=<비율>%`를 찍는다. 이 값은 `sourced=`와 다른 것을 센다.
+  `sourced`는 행이 출처를 가리키는지, `live_verified`는 그 출처를 실제로 다시 열어 봤는지다.
+- 재대조에서 **주장 자체가 틀린** 레코드(예: 인용한 URL이 다른 항목이었다)는 `live_check`를
+  고쳐 다는 것이 아니라 데이터셋에서 **뺀다.**
 
 ## surnames-bongwan.json
 

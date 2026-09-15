@@ -10,6 +10,7 @@ const verifier = fileURLToPath(new URL('./verify-hangnyeol.mjs', import.meta.url
 const POOL = join('Wikis', 'game-logic', 'name-pools');
 const RAW = join('Research', 'verification', 'hangnyeol', 'raw');
 const EVIDENCE_REL = join(RAW, 'test-lane.md');
+const VERIFY_REL = join(RAW, '_verify-test.md');
 const fixtures = [];
 
 after(async () => {
@@ -26,10 +27,13 @@ const QUOTE_SYSTEM = '오행상생은 목화토금수 차례로 돈다';
 function source(id, quote) {
   return {
     id,
+    record_id: id.replace(/^s-/, 'rec-'),
     url: `https://example.org/${id}`,
     accessed: '2026-09-16',
     quote,
     evidence: EVIDENCE_REL,
+    live_check: 'verbatim_ok',
+    live_check_ref: VERIFY_REL,
   };
 }
 
@@ -42,6 +46,19 @@ function baseDocs() {
       `- quote: ${QUOTE_SURNAME}`,
       `- quote: ${QUOTE_CLAN}`,
       `- quote: ${QUOTE_SYSTEM}`,
+      '',
+    ].join('\n'),
+    verifyReport: [
+      '# 시험용 라이브 재대조 보고',
+      '',
+      '| record id | lane | url | result | actual text if MISMATCH |',
+      '| --- | --- | --- | --- | --- |',
+      '| rec-kim | test-lane | https://example.org/s-kim | VERBATIM_OK |  |',
+      '| rec-ohaeng | test-lane | https://example.org/s-ohaeng | VERBATIM_OK |  |',
+      '| rec-clan | test-lane | https://example.org/s-clan | VERBATIM_OK |  |',
+      '| rec-artifact | test-lane | https://example.org/s-artifact | MISMATCH | 실제 본문은 공백만 다르다 |',
+      '',
+      'TOTALS checked=4 verbatim_ok=3 mismatch=1 url_dead=0',
       '',
     ].join('\n'),
     legacy: { id: 'surnames', surnames: ['김'] },
@@ -114,6 +131,7 @@ async function makeFixture(mutate = () => {}) {
   await mkdir(join(dir, RAW), { recursive: true });
 
   if (docs.evidence !== null) await writeFile(join(dir, EVIDENCE_REL), docs.evidence);
+  if (docs.verifyReport !== null) await writeFile(join(dir, VERIFY_REL), docs.verifyReport);
 
   const files = {
     'surnames-bongwan.json': docs.surnames,
@@ -368,6 +386,85 @@ test('H17: one hangnyeol reused across two generations fails — 나이는 세�
   const result = run(root, ['--cast']);
   assert.equal(result.code, 1);
   assert.match(result.stderr, /^H17:.*shared by sesu/m);
+});
+
+// ---- H18 / H19: 라이브 재대조 판정 ----
+// 원장 인용 대조(H8)는 우리가 쓴 파일끼리의 자기 일관성만 증명한다.
+// 워커가 날조한 인용을 자기 레인 파일에 적으면 H8은 통과한다.
+// H18·H19는 독립 재대조 보고의 판정을 데이터 행에 묶어 그 구멍을 막는다.
+
+test('H18: a source without live_check fails — 라이브 재대조 판정 없는 인용은 받지 않는다', async () => {
+  const root = await makeFixture((docs) => { delete docs.surnames.sources[0].live_check; });
+  const result = run(root);
+  assert.equal(result.code, 1);
+  assert.match(result.stderr, /^H18:.*missing live_check/m);
+});
+
+test('H18: an unknown live_check value fails', async () => {
+  const root = await makeFixture((docs) => { docs.surnames.sources[0].live_check = 'probably-fine'; });
+  const result = run(root);
+  assert.equal(result.code, 1);
+  assert.match(result.stderr, /^H18:.*live_check must be/m);
+});
+
+test('H19: verbatim_ok whose record id is absent from the re-fetch report fails — 이것이 자기보고 차단선이다', async () => {
+  const root = await makeFixture((docs) => { docs.surnames.sources[0].record_id = 'rec-never-checked'; });
+  const result = run(root);
+  assert.equal(result.code, 1);
+  assert.match(result.stderr, /^H19:.*rec-never-checked/m);
+});
+
+test('H19: verbatim_ok pointing at a missing re-fetch report fails', async () => {
+  const root = await makeFixture((docs) => { docs.verifyReport = null; });
+  const result = run(root);
+  assert.equal(result.code, 1);
+  assert.match(result.stderr, /^H19:.*re-fetch report/m);
+});
+
+test('H19: claiming verbatim_ok when the report says MISMATCH fails', async () => {
+  const root = await makeFixture((docs) => { docs.surnames.sources[0].record_id = 'rec-artifact'; });
+  const result = run(root);
+  assert.equal(result.code, 1);
+  assert.match(result.stderr, /^H19:.*VERBATIM_OK/m);
+});
+
+test('H19: artifact_corrected passes against a MISMATCH row', async () => {
+  const root = await makeFixture((docs) => {
+    const s = docs.surnames.sources[0];
+    s.record_id = 'rec-artifact';
+    s.live_check = 'artifact_corrected';
+  });
+  const result = run(root);
+  assert.equal(result.code, 0);
+  assert.doesNotMatch(result.stderr, /^H\d+:/m);
+});
+
+test('H19: artifact_corrected against a VERBATIM_OK row fails', async () => {
+  const root = await makeFixture((docs) => { docs.surnames.sources[0].live_check = 'artifact_corrected'; });
+  const result = run(root);
+  assert.equal(result.code, 1);
+  assert.match(result.stderr, /^H19:.*MISMATCH/m);
+});
+
+test('H19: unchecked is allowed, needs no report, and lowers live_verified', async () => {
+  const root = await makeFixture((docs) => {
+    const s = docs.surnames.sources[0];
+    s.live_check = 'unchecked';
+    delete s.live_check_ref;
+    delete s.record_id;
+  });
+  const result = run(root);
+  assert.equal(result.code, 0);
+  assert.doesNotMatch(result.stderr, /^H\d+:/m);
+  assert.match(result.stdout, /live_verified=/);
+  assert.doesNotMatch(result.stdout, /live_verified=100%/);
+});
+
+test('happy path prints live_verified=100% when every source was re-fetched', async () => {
+  const root = await makeFixture();
+  const result = run(root);
+  assert.equal(result.code, 0);
+  assert.match(result.stdout, /live_verified=100%/);
 });
 
 test('violations go to stderr and the summary goes to stdout', async () => {

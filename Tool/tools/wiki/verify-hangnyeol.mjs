@@ -21,6 +21,7 @@ const LEGACY_SURNAMES = join(POOL_DIR, 'surnames.json');
 const PROVENANCE = new Set(['verified', 'creative']);
 const CAST_STATUS = new Set(['applied', 'unused', 'unconfirmed']);
 const POSITIONS = new Set(['first', 'second']);
+const LIVE_CHECKS = new Set(['verbatim_ok', 'artifact_corrected', 'unchecked']);
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 const EVIDENCE_PREFIX = join('Research', 'verification', 'hangnyeol');
 
@@ -30,6 +31,17 @@ function norm(value) {
 
 function isFilled(value) {
   return typeof value === 'string' ? value.trim().length > 0 : value !== undefined && value !== null;
+}
+
+// 재대조 보고는 마크다운 표다. 칸 하나가 record id와 정확히 같아야 그 행으로 본다.
+// 부분 문자열로 찾으면 sug1이 sug10을 물어 온다.
+function findReportRow(lines, recordId) {
+  for (const line of lines) {
+    if (!line.includes('|')) continue;
+    const cells = line.split('|').map((cell) => cell.trim());
+    if (cells.includes(recordId)) return line;
+  }
+  return null;
 }
 
 async function readOptional(path) {
@@ -56,6 +68,16 @@ export async function verifyHangnyeol(options = {}) {
     return value;
   };
 
+  // 재대조 보고는 행 구조를 살려 읽는다. loadEvidence는 공백을 접어 버려 표를 못 읽는다.
+  const reportCache = new Map();
+  const loadReport = async (relPath) => {
+    if (reportCache.has(relPath)) return reportCache.get(relPath);
+    const text = await readOptional(join(root, relPath));
+    const value = text === null ? null : text.split(/\r?\n/);
+    reportCache.set(relPath, value);
+    return value;
+  };
+
   const docs = {};
   for (const [key, rel] of Object.entries(DATA)) {
     if (key === 'cast' && !withCast) continue;
@@ -70,6 +92,10 @@ export async function verifyHangnyeol(options = {}) {
       fail('H2', `${rel} is not valid JSON: ${err.message}`);
     }
   }
+
+  // 라이브 재대조 집계. H8은 우리가 쓴 파일끼리의 자기 일관성만 증명한다.
+  let liveTotal = 0;
+  let liveVerified = 0;
 
   // 출처 표를 파일별로 세운다. 파일 하나가 자기 sources만 참조한다.
   const sourceIndex = new Map();
@@ -98,6 +124,45 @@ export async function verifyHangnyeol(options = {}) {
       if (isFilled(src.accessed) && !DATE_RE.test(src.accessed)) {
         fail('H6', `${rel} source ${src.id} accessed is not YYYY-MM-DD: ${src.accessed}`);
       }
+
+      // H18·H19 — 라이브 재대조 판정.
+      // H8(원장 대조)은 수확 워커가 자기 레인 파일에 날조한 인용을 적어도 통과한다.
+      // 독립 재대조 보고의 판정을 행에 묶어야 그 구멍이 막힌다.
+      if (!isFilled(src.live_check)) {
+        fail('H18', `${rel} source ${src.id} missing live_check (verbatim_ok | artifact_corrected | unchecked)`);
+      } else if (!LIVE_CHECKS.has(src.live_check)) {
+        fail('H18', `${rel} source ${src.id} live_check must be verbatim_ok, artifact_corrected or unchecked; got ${src.live_check}`);
+      } else {
+        liveTotal += 1;
+        if (src.live_check !== 'unchecked') {
+          const wanted = src.live_check === 'verbatim_ok' ? 'VERBATIM_OK' : 'MISMATCH';
+          if (!isFilled(src.record_id)) {
+            fail('H19', `${rel} source ${src.id} live_check ${src.live_check} requires record_id`);
+          } else if (!isFilled(src.live_check_ref)) {
+            fail('H19', `${rel} source ${src.id} live_check ${src.live_check} requires live_check_ref`);
+          } else if (!norm(src.live_check_ref).startsWith(norm(EVIDENCE_PREFIX))) {
+            fail('H19', `${rel} source ${src.id} live_check_ref must live under ${EVIDENCE_PREFIX}/: ${src.live_check_ref}`);
+          } else {
+            const report = await loadReport(src.live_check_ref);
+            if (report === null) {
+              fail('H19', `${rel} source ${src.id} re-fetch report missing: ${src.live_check_ref}`);
+            } else {
+              const row = findReportRow(report, src.record_id);
+              if (!row) {
+                fail('H19', `${rel} source ${src.id} record_id ${src.record_id} is absent from the re-fetch report ${src.live_check_ref}`);
+              } else if (!row.includes(wanted)) {
+                const actual = row.includes('VERBATIM_OK') ? 'VERBATIM_OK'
+                  : row.includes('MISMATCH') ? 'MISMATCH'
+                    : row.includes('URL_DEAD') ? 'URL_DEAD' : 'no verdict';
+                fail('H19', `${rel} source ${src.id} claims ${wanted} but the re-fetch report row for ${src.record_id} says ${actual}`);
+              } else {
+                liveVerified += 1;
+              }
+            }
+          }
+        }
+      }
+
       if (!isFilled(src.evidence) || !isFilled(src.quote)) continue;
       if (!norm(src.evidence).startsWith(norm(EVIDENCE_PREFIX))) {
         fail('H7', `${rel} source ${src.id} evidence must live under ${EVIDENCE_PREFIX}/: ${src.evidence}`);
@@ -376,6 +441,10 @@ export async function verifyHangnyeol(options = {}) {
     ? 0
     : Math.round((rowsSourced / rowsRequiringSource) * 1000) / 10;
 
+  const liveVerifiedPct = liveTotal === 0
+    ? 0
+    : Math.round((liveVerified / liveTotal) * 1000) / 10;
+
   const summary = {
     surnames: surnameCount,
     bongwan: bongwanCount,
@@ -386,6 +455,9 @@ export async function verifyHangnyeol(options = {}) {
     rowsRequiringSource,
     rowsSourced,
     sourcedPct,
+    liveTotal,
+    liveVerified,
+    liveVerifiedPct,
     cast: castCount,
     applied: appliedCount,
   };
@@ -420,6 +492,7 @@ function formatSummary(summary) {
     `cast=${summary.cast}`,
     `applied=${summary.applied}`,
     `sourced=${summary.sourcedPct}%`,
+    `live_verified=${summary.liveVerifiedPct}%`,
   ].join(' ');
 }
 
