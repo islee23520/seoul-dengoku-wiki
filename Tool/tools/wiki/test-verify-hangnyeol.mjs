@@ -112,6 +112,10 @@ function baseDocs() {
       schema: 1,
       note: '시험용',
       sources: [],
+      lineage: {
+        parents: { '김도윤': '김부' },
+        founder_sesu: { '김부': 71 },
+      },
       people: [
         { name: '김도윤', surname: '김', status: 'applied', clan: 'gimhae-kim', sesu: 72, hangnyeol: '도', position: 'first', reason: '김해 김씨 72세' },
         { name: '백온', surname: '백', status: 'unused', reason: '한 글자 이름이라 항렬자를 넣을 자리가 없다' },
@@ -199,11 +203,31 @@ test('H2: malformed JSON is a readable failure, not a crash', async () => {
   assert.doesNotMatch(result.stderr, /TypeError|Cannot read/);
 });
 
-test('H4: a surname row without bongwan fails', async () => {
+test('H20: an empty bongwan list without a stated reason fails', async () => {
   const root = await makeFixture((docs) => { docs.surnames.surnames[0].bongwan = []; });
   const result = run(root);
   assert.equal(result.code, 1);
-  assert.match(result.stderr, /^H4:.*has no bongwan/m);
+  assert.match(result.stderr, /^H20:.*bongwan_unlisted_reason/m);
+});
+
+test('H20: an empty bongwan list passes when the absence is declared', async () => {
+  const root = await makeFixture((docs) => {
+    docs.surnames.surnames[0].bongwan = [];
+    docs.surnames.surnames[0].bongwan_unlisted_reason = '2015 집계표의 대성 본관 칸이 비어 있다';
+  });
+  const result = run(root);
+  assert.equal(result.code, 0);
+  assert.doesNotMatch(result.stderr, /^H\d+:/m);
+  assert.match(result.stdout, /bongwan=0/);
+});
+
+test('H20: declaring bongwan absent on a row that carries bongwan fails', async () => {
+  const root = await makeFixture((docs) => {
+    docs.surnames.surnames[0].bongwan_unlisted_reason = '없음';
+  });
+  const result = run(root);
+  assert.equal(result.code, 1);
+  assert.match(result.stderr, /^H20:.*but carries bongwan/m);
 });
 
 test('H5: a row referencing an unknown source id fails', async () => {
@@ -309,6 +333,23 @@ test('H12: duplicate sesu inside one clan table fails', async () => {
   assert.match(result.stderr, /^H12:.*duplicate sesu 72/m);
 });
 
+test('H21: a clan without a sourced hangnyeol table must state why rows are empty', async () => {
+  const root = await makeFixture((docs) => { docs.clans.clans[0].rows = []; });
+  const result = run(root);
+  assert.equal(result.code, 1);
+  assert.match(result.stderr, /^H21:.*hangnyeol_unconfirmed_reason/m);
+});
+
+test('H21: a verified clan identity may keep rows empty when the table remains unconfirmed', async () => {
+  const root = await makeFixture((docs) => {
+    docs.clans.clans[0].rows = [];
+    docs.clans.clans[0].hangnyeol_unconfirmed_reason = '문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다';
+  });
+  const result = run(root);
+  assert.equal(result.code, 0);
+  assert.doesNotMatch(result.stderr, /^H\d+:/m);
+});
+
 test('H13: an applied person whose clan id does not resolve fails', async () => {
   const root = await makeFixture((docs) => { docs.cast.people[0].clan = 'nowhere-kim'; });
   const result = run(root, ['--cast']);
@@ -351,6 +392,7 @@ test('H14: two people at one sesu using different hangnyeol fails', async () => 
 
 test('H14: siblings sharing one sesu and one hangnyeol pass', async () => {
   const root = await makeFixture((docs) => {
+    docs.cast.lineage.parents['김도원'] = '김부';
     docs.cast.people.push({
       name: '김도원', surname: '김', status: 'applied', clan: 'gimhae-kim',
       sesu: 72, hangnyeol: '도', position: 'first', reason: '같은 세수 형제',
@@ -386,6 +428,20 @@ test('H17: one hangnyeol reused across two generations fails — 나이는 세�
   const result = run(root, ['--cast']);
   assert.equal(result.code, 1);
   assert.match(result.stderr, /^H17:.*shared by sesu/m);
+});
+
+test('H22: applied sesu must be derived from a parent edge', async () => {
+  const root = await makeFixture((docs) => { docs.cast.people[0].sesu = 71; });
+  const result = run(root, ['--cast']);
+  assert.equal(result.code, 1);
+  assert.match(result.stderr, /^H22:.*derived sesu 72/m);
+});
+
+test('H22: applied person without a founder path fails', async () => {
+  const root = await makeFixture((docs) => { docs.cast.lineage.parents = {}; });
+  const result = run(root, ['--cast']);
+  assert.equal(result.code, 1);
+  assert.match(result.stderr, /^H22:.*no parent-to-founder path/m);
 });
 
 // ---- H18 / H19: 라이브 재대조 판정 ----

@@ -223,9 +223,20 @@ export async function verifyHangnyeol(options = {}) {
         if (isFilled(row?.hangul)) surnameHangul.add(row.hangul);
         surnameCount += 1;
         countRow('surnames', `${where} (${row?.hangul ?? '?'})`, row?.sources);
-        if (!Array.isArray(row?.bongwan) || row.bongwan.length === 0) {
-          fail('H4', `${where} (${row?.hangul ?? '?'}) has no bongwan`);
+        if (!Array.isArray(row?.bongwan)) {
+          fail('H4', `${where} (${row?.hangul ?? '?'}) has no bongwan array`);
           continue;
+        }
+        // 2015 집계표의 대성 본관 칸은 인구 과반을 차지하는 본관만 적는다.
+        // 희성은 그 칸이 비어 있다. 본관을 지어 붙이는 대신 없다는 사실을 선언하게 한다.
+        if (row.bongwan.length === 0) {
+          if (!isFilled(row?.bongwan_unlisted_reason)) {
+            fail('H20', `${where} (${row?.hangul ?? '?'}) has an empty bongwan list and no bongwan_unlisted_reason`);
+          }
+          continue;
+        }
+        if (isFilled(row?.bongwan_unlisted_reason)) {
+          fail('H20', `${where} (${row?.hangul ?? '?'}) declares bongwan_unlisted_reason but carries bongwan`);
         }
         for (const [j, bg] of row.bongwan.entries()) {
           const bwWhere = `${where}.bongwan[${j}]`;
@@ -317,9 +328,18 @@ export async function verifyHangnyeol(options = {}) {
         }
 
         const rows = clan?.rows;
-        if (!Array.isArray(rows) || rows.length === 0) {
-          fail('H4', `${where} (${clan?.bongwan ?? '?'}) has no rows`);
+        if (!Array.isArray(rows)) {
+          fail('H4', `${where} (${clan?.bongwan ?? '?'}) has no rows array`);
           continue;
+        }
+        if (rows.length === 0) {
+          if (!isFilled(clan?.hangnyeol_unconfirmed_reason)) {
+            fail('H21', `${where} (${clan?.bongwan ?? '?'}) has no rows and no hangnyeol_unconfirmed_reason`);
+          }
+          continue;
+        }
+        if (isFilled(clan?.hangnyeol_unconfirmed_reason)) {
+          fail('H21', `${where} (${clan?.bongwan ?? '?'}) carries rows but also declares hangnyeol_unconfirmed_reason`);
         }
         const sesuSeen = new Set();
         for (const [j, row] of rows.entries()) {
@@ -348,6 +368,21 @@ export async function verifyHangnyeol(options = {}) {
   if (withCast && docs.cast) {
     const rel = DATA.cast;
     const list = docs.cast.people;
+    const parents = docs.cast?.lineage?.parents ?? {};
+    const founderSesu = docs.cast?.lineage?.founder_sesu ?? {};
+    const deriveSesu = (name) => {
+      const seen = new Set();
+      let current = name;
+      let depth = 0;
+      while (!Number.isInteger(founderSesu[current])) {
+        if (seen.has(current)) return { error: `lineage cycle at ${current}` };
+        seen.add(current);
+        current = parents[current];
+        if (!current) return { error: `no parent-to-founder path` };
+        depth += 1;
+      }
+      return { sesu: founderSesu[current] + depth };
+    };
     if (!Array.isArray(list)) {
       fail('H3', `${rel} has no people array`);
     } else {
@@ -378,6 +413,13 @@ export async function verifyHangnyeol(options = {}) {
         }
         if (!Number.isInteger(person?.sesu)) fail('H13', `${where} applied but sesu is not an integer`);
         if (!POSITIONS.has(person?.position)) continue;
+
+        const derived = deriveSesu(person.name);
+        if (derived.error) {
+          fail('H22', `${where} ${derived.error}`);
+        } else if (Number.isInteger(person?.sesu) && derived.sesu !== person.sesu) {
+          fail('H22', `${where} says sesu ${person.sesu}, derived sesu ${derived.sesu} from parent-to-founder path`);
+        }
 
         const clan = clanIndex.get(person?.clan);
         if (!clan) {

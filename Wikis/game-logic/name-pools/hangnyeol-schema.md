@@ -127,6 +127,9 @@ node Tool/tools/wiki/test-verify-hangnyeol.mjs       # 검사기 단위 테스�
 - `unused`·`unconfirmed`는 `hangnyeol`을 적지 않는다.
 - 같은 문중·분파에서 같은 세수는 같은 항렬자를, 다른 세수는 다른 항렬자를 쓴다.
   나이는 세수의 근거가 아니다.
+- `applied` 인물은 `lineage.parents`의 부모→자식 간선을 따라 `lineage.founder_sesu`의
+  시조까지 이어져야 한다. 검사기는 그 깊이로 세수를 다시 계산한다. JSON에 적힌 세수와
+  파생 세수가 다르면 실패한다.
 
 ## 하지 않는 것
 

@@ -16,6 +16,8 @@ from pathlib import Path
 
 import pyarrow.parquet as pq
 
+from hangnyeol_names import apply_hangnyeol, select_hangnyeol
+
 DISTRICT_STATE = {
     "서울-영등포구": ("여의신정수문정부", "west-sluice"),
     "서울-양천구": ("여의신정수문정부", "west-sluice"),
@@ -72,16 +74,6 @@ def livelihood(occupation: str) -> str:
     return LIVELIHOODS[int(h[:2], 16) % len(LIVELIHOODS)]
 
 
-def generation_index(age: int) -> int:
-    if age >= 60:
-        return 0
-    if age >= 40:
-        return 1
-    if age >= 25:
-        return 2
-    return 3
-
-
 def corridor_for(district: str, rng: random.Random) -> str | None:
     # Korean-script extra roster stays on 16-state books.
     # Diaspora names are seeded in Diaspora-Corridors.md, not this generator.
@@ -112,7 +104,15 @@ def arms(live: str, mil_hist: str, corridor: str | None) -> str:
     return "없음"
 
 
-def compose_name(sex: str, age: int, pools: dict, used: set, rng: random.Random) -> dict:
+def compose_name(
+    sex: str,
+    person_id: str,
+    pools: dict,
+    used: set,
+    rng: random.Random,
+    parents: dict[str, str],
+    founder_sesu: dict[str, int],
+) -> dict:
     surnames = pools["surnames"]["surnames"]
     given = pools["given-male"]["names"] if sex == "남자" else pools["given-female"]["names"]
     clans = {c["surname"]: c for c in pools["clans"]["clans"]}
@@ -122,14 +122,13 @@ def compose_name(sex: str, age: int, pools: dict, used: set, rng: random.Random)
         hang = None
         bongwan = None
         clan = clans.get(sur)
-        if clan and rng.random() < float(clan.get("keepRate", 0)):
-            idx = generation_index(age)
-            seq = clan["hangnyeol"]
-            hang = seq[min(idx, len(seq) - 1)]
-            bongwan = clan["bongwan"]
-            if hang == base[1:]:
+        if clan and person_id in parents:
+            selected = select_hangnyeol(person_id, clan, parents, founder_sesu)
+            if selected is None:
                 continue
-            given_out = hang + base[1:]
+            hang = selected["hangnyeol"]
+            bongwan = clan["bongwan"]
+            given_out = apply_hangnyeol(base, hang, selected["position"])
             if len(given_out) >= 2 and given_out[0] == given_out[1]:
                 continue
         else:
@@ -159,6 +158,7 @@ def main() -> None:
     ap.add_argument("--pools", required=True)
     ap.add_argument("--existing", required=True)
     ap.add_argument("--out", required=True)
+    ap.add_argument("--lineage", help="JSON with parents and founder_sesu; omit to leave hangnyeol unused")
     ap.add_argument("--n", type=int, default=100)
     ap.add_argument("--seed", type=int, default=90421)
     args = ap.parse_args()
@@ -168,8 +168,11 @@ def main() -> None:
         "surnames": json.loads((pools_dir / "surnames.json").read_text(encoding="utf-8")),
         "given-male": json.loads((pools_dir / "given-male.json").read_text(encoding="utf-8")),
         "given-female": json.loads((pools_dir / "given-female.json").read_text(encoding="utf-8")),
-        "clans": json.loads((pools_dir / "clans-hangnyeol.json").read_text(encoding="utf-8")),
+        "clans": json.loads((pools_dir / "clan-hangnyeol-tables.json").read_text(encoding="utf-8")),
     }
+    lineage = {"parents": {}, "founder_sesu": {}}
+    if args.lineage:
+        lineage = json.loads(Path(args.lineage).read_text(encoding="utf-8"))
     existing = set(json.loads(Path(args.existing).read_text(encoding="utf-8")))
     rng = random.Random(args.seed)
 
@@ -213,7 +216,15 @@ def main() -> None:
         if live_quota[live] >= live_cap:
             continue
         try:
-            name = compose_name(sex, age, pools, used, rng)
+            name = compose_name(
+                sex,
+                r["uuid"],
+                pools,
+                used,
+                rng,
+                lineage.get("parents", {}),
+                lineage.get("founder_sesu", {}),
+            )
         except RuntimeError:
             continue
         mil = military(sex, r["military_status"] or "", age, rng)
