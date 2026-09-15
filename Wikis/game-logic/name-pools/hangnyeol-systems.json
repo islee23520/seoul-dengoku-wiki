@@ -1,0 +1,242 @@
+{
+  "id": "hangnyeol-systems",
+  "schema": 1,
+  "note": "문중이 항렬자를 정하는 방식과 세수를 세는 법. 행마다 출처와 라이브 재대조 판정을 붙인다. 계약은 hangnyeol-schema.md, 검사는 Tool/tools/wiki/verify-hangnyeol.mjs.",
+  "sources": [
+    {
+      "id": "s-ohaeng-method",
+      "record_id": "ohaeng-order",
+      "url": "https://ko.wikipedia.org/wiki/항렬",
+      "accessed": "2026-09-16",
+      "quote": "오행상생법에 따라 짓되 부수(部首)를 항렬로 취급하여",
+      "evidence": "Research/verification/hangnyeol/raw/b1-ohaeng.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-systems.md"
+    },
+    {
+      "id": "s-ohaeng-radical",
+      "record_id": "element-in-radical",
+      "url": "https://ko.wikipedia.org/wiki/항렬",
+      "accessed": "2026-09-16",
+      "quote": "(木)변||(火)변||(土)변||(金)변||(水)변||(木)변",
+      "evidence": "Research/verification/hangnyeol/raw/b1-ohaeng.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-systems.md"
+    },
+    {
+      "id": "s-cheongan",
+      "record_id": "sipgan-sequence",
+      "url": "https://ko.wikipedia.org/wiki/항렬",
+      "accessed": "2026-09-16",
+      "quote": "풍양 조씨]] 전직공파 : '''[[천간|천간법]](天干法)'''에 따라 갑을병정무기경신임계(甲乙丙丁戊己庚辛壬癸)의 순서대로 지음",
+      "evidence": "Research/verification/hangnyeol/raw/b2-sipgan.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-systems.md"
+    },
+    {
+      "id": "s-hanja-differs",
+      "record_id": "substitution-convention",
+      "url": "https://ko.wikipedia.org/wiki/항렬",
+      "accessed": "2026-09-16",
+      "quote": "한글 발음은 같으나 한자가 다르면 항렬자를 쓴 것이 아니다.",
+      "evidence": "Research/verification/hangnyeol/raw/b2-sipgan.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-systems.md"
+    },
+    {
+      "id": "s-jiji",
+      "record_id": "sipiji-hangryeol-mapping",
+      "url": "https://ko.wikipedia.org/wiki/항렬",
+      "accessed": "2026-09-16",
+      "quote": "지지법(地支法)에 따라 자축인묘진사오미신유술해(子丑寅卯辰巳午未申酉戌亥)의 순서대로 지음",
+      "evidence": "Research/verification/hangnyeol/raw/b3-sipiji.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-systems.md"
+    },
+    {
+      "id": "s-sugyo",
+      "record_id": "sug1",
+      "url": "https://ko.wikipedia.org/wiki/항렬",
+      "accessed": "2026-09-16",
+      "quote": "수교법(數交法)에 따라 일이삼사오륙칠팔구십(一二三四五六七八九十)의 순서대로 지음",
+      "evidence": "Research/verification/hangnyeol/raw/b4-sugyo.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-systems.md"
+    },
+    {
+      "id": "s-samhaeng",
+      "url": "https://ko.wikipedia.org/wiki/항렬",
+      "accessed": "2026-09-16",
+      "quote": "예시 5 한산 이씨 대동항렬 : 삼행법(三行法)에 따라 수곡토(水穀土)의 순서대로 지음",
+      "evidence": "Research/verification/hangnyeol/raw/b7-banpo.md",
+      "live_check": "unchecked"
+    },
+    {
+      "id": "s-jari",
+      "record_id": "b5-jari-01",
+      "url": "https://ko.wikipedia.org/wiki/항렬",
+      "accessed": "2026-09-16",
+      "quote": "이름을 지을 때 항렬자의 위치는 문중(종친회)에서 정한 위치를 따라야 하는 것이 원칙이다.",
+      "evidence": "Research/verification/hangnyeol/raw/b5-jari.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-systems.md"
+    },
+    {
+      "id": "s-sesu-dongshang",
+      "record_id": "hangnyeol-sejuse-definition",
+      "url": "https://ko.wikipedia.org/wiki/항렬",
+      "accessed": "2026-09-16",
+      "quote": "시조로 부터 세수가 같은 사람(자신과 같은 세대)을 형제 또는 동항(同行)이라 하고",
+      "evidence": "Research/verification/hangnyeol/raw/b6-sesu.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-systems.md"
+    },
+    {
+      "id": "s-se-vs-dae",
+      "record_id": "se-vs-dae-difference",
+      "url": "https://ko.wikipedia.org/wiki/족보",
+      "accessed": "2026-09-16",
+      "quote": "세(世)는 조상을 1세로 하여 아래로 내려가며 세는 단위이며, 대(代)는 후손으로부터 위로 올라가며 세는 단위이다.",
+      "evidence": "Research/verification/hangnyeol/raw/b6-sesu.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-systems.md"
+    },
+    {
+      "id": "s-age-not-sesu",
+      "record_id": "same-sesu-different-age",
+      "url": "https://ko.wikipedia.org/wiki/족보",
+      "accessed": "2026-09-16",
+      "quote": "항렬은 장손 계통일수록 낮고 지손 계통일수록 높아서, 자기보다 나이가 적어도 할아버지뻘이 되는 경우도 있어 존댓말을 쓰는 경우도 있다.",
+      "evidence": "Research/verification/hangnyeol/raw/_verify-systems.md",
+      "live_check": "artifact_corrected",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-systems.md"
+    },
+    {
+      "id": "s-banpo",
+      "record_id": "q1-hangnyeol-issuer",
+      "url": "https://ko.wikipedia.org/wiki/항렬",
+      "accessed": "2026-09-16",
+      "quote": "항렬자는 문중(종친회)에서 정하는 것이므로 형제 자매의 이름에서 가운데나 마지막 글자가 같다고 해도 문중에서 정한 글자가 아니면 항렬자를 쓴 것이 아니다.",
+      "evidence": "Research/verification/hangnyeol/raw/b7-banpo.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-systems.md"
+    },
+    {
+      "id": "s-same-gen-same-char",
+      "record_id": "hangnyeol-siblings-001",
+      "url": "https://ko.wikipedia.org/wiki/항렬",
+      "accessed": "2026-09-16",
+      "quote": "형제들은 형제들 대로, 아버지의 형제나 할아버지의 형제는 또 그들 대로의 이름자 속에 항렬자를 가지고 있으며, 같은 세대(世代)에 속하면 촌수와 관계없이 같은 항렬자를 쓴다.",
+      "evidence": "Research/verification/hangnyeol/raw/b8-women-modern.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-systems.md"
+    },
+    {
+      "id": "s-hangnyeol-def",
+      "record_id": "genealogy-hangnyeol-001",
+      "url": "https://ko.wikipedia.org/wiki/족보",
+      "accessed": "2026-09-16",
+      "quote": "항렬(行列)이란 같은 혈족 사이에서 세계(世系)의 위치를 분명히 하려는 문중율법이며, 항렬자(行列字)는 이름자 가운데 한 글자를 공통적으로 사용하여 같은 혈족·같은 세대임을 나타내는 것으로 돌림자라고도 부른다.",
+      "evidence": "Research/verification/hangnyeol/raw/b8-women-modern.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-systems.md"
+    },
+    {
+      "id": "s-daechae",
+      "record_id": "hangyeol-substitute-1",
+      "url": "https://ko.wikipedia.org/wiki/항렬",
+      "accessed": "2026-09-16",
+      "quote": "태어난 아이의 항렬자를 기휘(忌諱) 등으로 인해 쓸 수 없을 경우 본인의 항렬을 무시하거나, 대체 항렬자가 있을 경우 그것을 사용하기도 한다.",
+      "evidence": "Research/verification/hangnyeol/raw/b9-substitute.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-systems.md"
+    },
+    {
+      "id": "s-daechae-andong",
+      "record_id": "hangyeol-substitute-2",
+      "url": "https://ko.wikipedia.org/wiki/항렬",
+      "accessed": "2026-09-16",
+      "quote": "안동 권씨의 36대손의 항렬은 ‘赫(혁)’이지만 예비 항렬자로 奇(기), 景(경), 英(영)을 두었다.",
+      "evidence": "Research/verification/hangnyeol/raw/_verify-systems.md",
+      "live_check": "artifact_corrected",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-systems.md"
+    },
+    {
+      "id": "s-gaemyeong",
+      "record_id": "gaemyeong-legal-1",
+      "url": "https://ko.wikipedia.org/wiki/개명",
+      "accessed": "2026-09-16",
+      "quote": "개명(改名)은 가족관계등록부상에 기재되어 있는 이름을 변경하는 행위를 의미한다.",
+      "evidence": "Research/verification/hangnyeol/raw/b9-substitute.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-systems.md"
+    }
+  ],
+  "systems": [
+    {
+      "id": "ohaeng",
+      "name": "오행상생법",
+      "summary": "목화토금수를 세대 순서로 돌린다. 글자 자체가 아니라 글자의 부수(변)에 원소를 싣는 방식이 관측된다. 수확 원자료의 예시 표는 32세 (木)변부터 41세 (水)변까지 다섯 세대 주기를 두 번 돈다.",
+      "sequence": ["木", "火", "土", "金", "水"],
+      "carrier": "radical",
+      "sources": ["s-ohaeng-method", "s-ohaeng-radical"]
+    },
+    {
+      "id": "cheongan",
+      "name": "천간법",
+      "summary": "십간 갑을병정무기경신임계를 세대마다 하나씩 배정한다. 원자료에 남은 적용 가계는 풍양 조씨 전직공파다. 십간을 대신하는 통용 대체자 목록은 확인되지 않았다.",
+      "sequence": ["甲", "乙", "丙", "丁", "戊", "己", "庚", "辛", "壬", "癸"],
+      "carrier": "character",
+      "sources": ["s-cheongan"]
+    },
+    {
+      "id": "jiji",
+      "name": "지지법",
+      "summary": "십이지 자축인묘진사오미신유술해를 세대 순서로 돌린다. 원자료에 남은 적용 가계는 전주 이씨 효령대군파다. 지지 하나에 대응하는 항렬자는 문중이 따로 정하므로 모든 문중에 공통인 대응표는 없다.",
+      "sequence": ["子", "丑", "寅", "卯", "辰", "巳", "午", "未", "申", "酉", "戌", "亥"],
+      "carrier": "character",
+      "sources": ["s-jiji"]
+    },
+    {
+      "id": "sugyo",
+      "name": "수교법",
+      "summary": "일이삼사오륙칠팔구십을 세대 순서로 돌린다. 숫자를 글자 안에 실어 쓰며, 원자료에 남은 적용 가계는 안동 권씨 대동항렬이다.",
+      "sequence": ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十"],
+      "carrier": "character",
+      "sources": ["s-sugyo"]
+    },
+    {
+      "id": "samhaeng",
+      "name": "삼행법",
+      "summary": "수곡토 세 글자를 세대 순서로 돌린다. 원자료에 남은 적용 가계는 한산 이씨 대동항렬이다. 이 행의 인용은 라이브 재대조를 아직 거치지 않았다.",
+      "sequence": ["水", "穀", "土"],
+      "carrier": "character",
+      "sources": ["s-samhaeng"]
+    },
+    {
+      "id": "jari",
+      "name": "항렬자의 자리",
+      "summary": "두 글자 이름에서 항렬자가 앞(상자)에 오는지 뒤(하자)에 오는지는 문중이 정한 자리를 따른다. 한글 발음이 같아도 한자가 다르면 항렬자를 쓴 것이 아니다. 세대마다 자리를 번갈아 바꾸는 관행은 원자료에서 확인되지 않아 미확인으로 남긴다.",
+      "positions": ["first", "second"],
+      "sources": ["s-jari", "s-hanja-differs"]
+    },
+    {
+      "id": "sesu",
+      "name": "세수",
+      "summary": "세(世)는 시조를 1세로 두고 아래로 내려가며 세고, 대(代)는 후손에서 위로 올라가며 센다. 시조로부터 세수가 같은 사람이 같은 세대이며 동항이라 부른다. 항렬은 장손 계통일수록 낮고 지손 계통일수록 높아서 나이가 적은 사람이 윗항렬일 수 있다. 따라서 나이나 연령대는 세수의 근거가 되지 못한다.",
+      "sources": ["s-sesu-dongshang", "s-se-vs-dae", "s-age-not-sesu"]
+    },
+    {
+      "id": "munjung-banpo",
+      "name": "문중 제정과 반포",
+      "summary": "항렬자는 개인이 고르는 것이 아니라 문중이 족보를 편찬할 때 일정한 대수만큼 정해 반포한다. 형제의 이름에 같은 글자가 있어도 문중이 정한 글자가 아니면 항렬자가 아니다. 같은 세대에 속하면 촌수와 관계없이 같은 항렬자를 쓴다.",
+      "sources": ["s-banpo", "s-hangnyeol-def", "s-same-gen-same-char"]
+    },
+    {
+      "id": "daechae",
+      "name": "대체 항렬자와 이름 변경",
+      "summary": "정해진 항렬자를 기휘 등으로 쓸 수 없으면 항렬을 쓰지 않거나 문중이 둔 예비 항렬자를 쓴다. 안동 권씨는 36대손 항렬 赫에 예비 항렬자 奇·景·英을 두었다. 법적 이름은 가족관계등록부의 기재이며 개명은 별도 절차다.",
+      "sources": ["s-daechae", "s-daechae-andong", "s-gaemyeong"]
+    }
+  ]
+}
