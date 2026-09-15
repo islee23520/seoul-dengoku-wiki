@@ -77,10 +77,13 @@
 ## 검증
 
 ```bash
-node Tool/tools/wiki/verify-hangnyeol.mjs
-node Tool/tools/wiki/verify-hangnyeol.mjs --cast
-node Tool/tools/wiki/test-verify-hangnyeol.mjs
-python3 Tool/tools/cast/test_hangnyeol_names.py
+cd Tool/tools/wiki
+node verify-hangnyeol.mjs
+node verify-hangnyeol.mjs --cast
+node test-verify-hangnyeol.mjs
+
+cd ../cast
+python3 test_hangnyeol_names.py
 ```
 
 검사는 출처 없는 `verified` 행, 원자료에 없는 인용, 라이브 재대조 결과와 다른 판정, 실존·창작 표 혼합, 부모 간선과 맞지 않는 세수, 이름 자리와 맞지 않는 항렬자, 같은 세수의 다른 글자, 다른 세수의 같은 글자를 실패시킨다.
