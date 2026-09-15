@@ -4,6 +4,8 @@
 
 이 저장소는 Unity 6.7 기반 프로젝트와 게임 로직 문서의 원본을 관리합니다.
 
+작업을 시작하려면 [contribute.md](contribute.md)에서 도메인을 고릅니다. 이슈 규칙과 라벨은 [CONTRIBUTING.md](CONTRIBUTING.md)입니다. 인물을 넣을 때는 [인물 등록 템플릿](Wikis/game-logic/Cast-Registration-Template.md)을 씁니다.
+
 ## 현재 상태
 
 2026-09-14 기준입니다. 지금 모듈은 `Unity POC 통합 코어 루프`입니다. Unity 쪽은 코어와 PlayMode 검증까지이며, 생성 아트 연결과 최종 수용 게이트는 열려 있습니다.

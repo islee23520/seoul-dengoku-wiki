@@ -19,6 +19,7 @@
   * [십육국 핵심 인물](Core-Characters)
   * [인물 총람](Cast-Index) · [S4 당직 명부](Cast-Index-S4) · [관계 원장](Cast-Relations)
   * [인물 카드 계약](Cast-Profile-Contract)
+  * [인물 등록 템플릿](Cast-Registration-Template)
   * [가치관과 정책 척도](Values-and-Policy-Scales)
   * [징집 잔존과 군 장부](Conscription-Remnants)
   * [이주민 회랑](Diaspora-Corridors) · [회랑 인물](Cast-Corridors-Index)

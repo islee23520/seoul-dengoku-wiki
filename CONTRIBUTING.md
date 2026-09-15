@@ -4,6 +4,8 @@
 
 웹에서 이슈를 열 때는 [이슈 폼](.github/ISSUE_TEMPLATE/job.yml)을 쓴다. 빈 이슈는 끈다. `gh issue create`와 에이전트는 이 문서의 같은 다섯 섹션을 본문에 그대로 넣는다.
 
+카테고리별로 어느 폴더를 열고 무엇을 먼저 하는지는 [contribute.md](contribute.md)다. 인물 산문은 [인물 등록 템플릿](Wikis/game-logic/Cast-Registration-Template.md)을 복사한다.
+
 ## 목표
 
 - 《잔선: 서울》의 남은 일을 카테고리 라벨과 품질 게이트가 있는 이슈로 남긴다.
