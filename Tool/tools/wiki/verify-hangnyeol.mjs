@@ -401,6 +401,13 @@ export async function verifyHangnyeol(options = {}) {
         }
         if (!isFilled(person?.reason)) fail('H13', `${where} missing reason`);
 
+        const clan = isFilled(person?.clan) ? clanIndex.get(person.clan) : null;
+        if (isFilled(person?.clan) && !clan) {
+          fail('H5', `${where} references unknown clan id ${person.clan}`);
+        } else if (clan && (clan.surname !== person.surname || clan.bongwan !== person.bongwan)) {
+          fail('H24', `${where} clan identity ${clan.surname}/${clan.bongwan} does not match ${person.surname}/${person.bongwan}`);
+        }
+
         if (person.status !== 'applied') {
           if (isFilled(person?.hangnyeol)) {
             fail('H13', `${where} status ${person.status} must not carry hangnyeol`);
@@ -422,12 +429,10 @@ export async function verifyHangnyeol(options = {}) {
           fail('H22', `${where} says sesu ${person.sesu}, derived sesu ${derived.sesu} from parent-to-founder path`);
         }
 
-        const clan = clanIndex.get(person?.clan);
         if (personClan[person.name] !== person.clan) {
           fail('H23', `${where} applied clan ${person.clan}, lineage clan ${personClan[person.name] ?? '(missing)'}`);
         }
         if (!clan) {
-          fail('H5', `${where} references unknown clan id ${person?.clan}`);
           continue;
         }
         const row = (clan.rows ?? []).find((r) => r.sesu === person.sesu);

@@ -118,7 +118,7 @@ function baseDocs() {
         person_clan: { '김도윤': 'gimhae-kim' },
       },
       people: [
-        { name: '김도윤', surname: '김', status: 'applied', clan: 'gimhae-kim', sesu: 72, hangnyeol: '도', position: 'first', reason: '김해 김씨 72세' },
+        { name: '김도윤', surname: '김', status: 'applied', bongwan: '김해', clan: 'gimhae-kim', sesu: 72, hangnyeol: '도', position: 'first', reason: '김해 김씨 72세' },
         { name: '백온', surname: '백', status: 'unused', reason: '한 글자 이름이라 항렬자를 넣을 자리가 없다' },
         { name: '문가람', surname: '문', status: 'unconfirmed', reason: '본관 확인 자료 없음' },
       ],
@@ -397,7 +397,7 @@ test('H14: siblings sharing one sesu and one hangnyeol pass', async () => {
     docs.cast.lineage.person_clan['김도원'] = 'gimhae-kim';
     docs.cast.people.push({
       name: '김도원', surname: '김', status: 'applied', clan: 'gimhae-kim',
-      sesu: 72, hangnyeol: '도', position: 'first', reason: '같은 세수 형제',
+      bongwan: '김해', sesu: 72, hangnyeol: '도', position: 'first', reason: '같은 세수 형제',
     });
   });
   const result = run(root, ['--cast']);
@@ -453,6 +453,16 @@ test('H23: applied person lineage clan must match the applied clan', async () =>
   const result = run(root, ['--cast']);
   assert.equal(result.code, 1);
   assert.match(result.stderr, /^H23:.*lineage clan other-clan/m);
+});
+
+test('H24: any person clan identity must match surname and bongwan', async () => {
+  const root = await makeFixture((docs) => {
+    docs.cast.people[1].clan = 'gimhae-kim';
+    docs.cast.people[1].bongwan = '수원';
+  });
+  const result = run(root, ['--cast']);
+  assert.equal(result.code, 1);
+  assert.match(result.stderr, /^H24:.*clan identity 김\/김해 does not match 백\/수원/m);
 });
 
 // ---- H18 / H19: 라이브 재대조 판정 ----
