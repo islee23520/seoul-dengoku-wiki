@@ -2,14 +2,14 @@
 
 이슈를 여는 규칙·라벨·게이트는 [CONTRIBUTING.md](CONTRIBUTING.md)다. 이 문서는 **어느 칸부터 손대는지**만 적는다.
 
-빈 이슈는 쓰지 않는다. 웹이면 [작업 이슈 폼](.github/ISSUE_TEMPLATE/job.yml), `gh`면 CONTRIBUTING의 다섯 섹션(목적·비목표·정합성·품질 게이트웨이·완료 조건)을 본문에 넣는다. 구현은 전용 브랜치와 PR이다. main에 직접 넣지 않는다.
+빈 이슈는 쓰지 않는다. 웹에서는 [작업 이슈 폼](.github/ISSUE_TEMPLATE/job.yml)을 쓰고, `gh`로는 CONTRIBUTING의 다섯 섹션(목적·비목표·정합성·품질 게이트웨이·완료 조건)을 본문에 넣는다. 구현은 전용 브랜치와 PR이다. main에 직접 넣지 않는다.
 
-제품 범위는 [Concept.md](Concept.md), 지금 모듈은 [ToDo.md](ToDo.md)다. 그 모듈 게이트가 끝나기 전에 다음 모듈을 시작하지 않는다.
+제품 범위는 [Concept.md](Concept.md), 지금 모듈은 [ToDo.md](ToDo.md)다. 그 모듈의 게이트가 끝나기 전에 다음 모듈을 시작하지 않는다.
 
 ## 공통
 
 1. 라벨을 고른다. 제목 앞은 주 카테고리 하나다.
-2. 아래 표에서 정본 폴더를 연다. 생성 Wiki와 투영 페이지를 손으로 고치지 않는다.
+2. 아래 표에서 정본 폴더를 연다. 생성 위키와 투영 페이지를 손으로 고치지 않는다.
 3. 품질 등급은 하나다. 문서·정합은 `quality:medium`, 화면·런타임은 `quality:high`, 규칙 고정은 `quality:policy`.
 4. 완료는 증거다. ACK만으로 닫지 않는다.
 
@@ -37,7 +37,7 @@
 
 - 읽기: [Home.md](Wikis/game-logic/Home.md), [서울과 지하철 레이어](Wikis/game-logic/World-and-Subway-Layers.md), [서울 십육국](Wikis/game-logic/Sixteen-States.md)
 - 쓰기: 해당 위키 페이지. 새 페이지는 [_TEMPLATE.md](Wikis/game-logic/_TEMPLATE.md)의 `domain: world`
-- 하지 말 것: 구현 완료처럼 적기, 생성 Wiki 손편집
+- 하지 말 것: 구현 완료처럼 적기, 생성 위키 손편집
 
 이슈 제목 예: `세계관: …`
 
@@ -85,7 +85,7 @@
 
 규칙의 C# 런타임. Unity 프로젝트 루트는 `Game/`이다.
 
-- 경계: `Janseon.Core`는 엔진 없음. Foundation이 Unity·VContainer와 잇는다.
+- 경계: `Janseon.Core`는 엔진에 의존하지 않는다. Foundation이 Unity·VContainer와 잇는다.
 - 읽기: [Game/Assets/Janseon/AGENTS.md](Game/Assets/Janseon/AGENTS.md)
 - 게이트: 해당 EditMode 또는 PlayMode. 테스트를 지우거나 skip하지 않는다.
 
@@ -119,7 +119,7 @@
 
 - 읽기: [캐릭터 미술](Wikis/game-logic/Character-Art-Direction.md), [에셋이 들어오는 길](Wikis/game-logic/Asset-Pipeline.md)
 - BOM `look.owner_verdict: accepted` 없이 승격하지 않는다.
-- 인물 초상은 포트레잇 툴 워크스페이스가 준비되기 전에는 생성하지 않는다. 카드만 올린다.
+- 인물 초상은 포트레이트 툴 워크스페이스가 준비되기 전에는 생성하지 않는다. 카드만 올린다.
 
 ## 3d
 
