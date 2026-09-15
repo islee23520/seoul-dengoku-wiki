@@ -1,0 +1,53 @@
+✔ official TRELLIS is selectable without approving an asset (0.934042ms)
+✔ unverified and unsupported selections cannot silently substitute a provider (0.266584ms)
+✔ ComfyUI is existing texture intake and not arbitrary inference (0.108042ms)
+✔ TRELLIS rights and host failures do not enable fallback (0.126542ms)
+✔ stored graph cannot bypass provider selection or remove promotion gates (0.143375ms)
+✔ TRELLIS historical records and valid reviewed assets are separate (0.516667ms)
+✔ provider allowance never promotes missing failed or malformed review receipts (0.297084ms)
+✔ reviewed and promoted assets require allowed rights and verified provider identity (0.3525ms)
+✖ promotion gate permits verified TRELLIS provenance but not quarantined or unreviewed assets (0.710167ms)
+✔ invalid and quarantined statuses remain rejected rather than silently approved (0.16875ms)
+✔ promoted allowed 2D kit records remain iso-review eligible (0.092666ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 10
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 43.356167
+
+✖ failing tests:
+
+test at tools/art/test-trellis-quarantine.mjs:177:1
+✖ promotion gate permits verified TRELLIS provenance but not quarantined or unreviewed assets (0.710167ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    {
+  +   errors: [
+  +     {
+  +       code: 'output_hash_mismatch',
+  +       field: 'output_hash'
+  +     }
+  +   ],
+  +   ok: false
+  -   errors: [],
+  -   ok: true
+    }
+  
+      at TestContext.<anonymous> (file:///Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-art-todo15/tools/art/test-trellis-quarantine.mjs:182:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { ok: false, errors: [ [Object] ] },
+    expected: { ok: true, errors: [] },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

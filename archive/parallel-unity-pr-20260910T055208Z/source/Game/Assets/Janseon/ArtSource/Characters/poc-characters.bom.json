@@ -1,0 +1,350 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "schema_version": 1,
+      "asset_id": "poc-explorer",
+      "asset_class": "character_mesh",
+      "source": "generate",
+      "rights_status": "allowed",
+      "generation_backend": "nanobanana_gemini",
+      "provider": "google",
+      "model": "gemini-2.5-flash-image",
+      "revision": "2026-09-04",
+      "prompt": "Use case: identity-lock turnaround",
+      "prompt_hash": "752cbf4394124fe67bd4d8a16ff2b224354163960eecd6d3d2c4ccbd471b7f47",
+      "input_hashes": [
+        "c4827918fd961f8dfb5fd1e4987015860712c1567ca078ea0206be814bfd35a6"
+      ],
+      "seed": 1501,
+      "cost_mode": "subscription",
+      "cost_cents": 0,
+      "raw_hash": "c4827918fd961f8dfb5fd1e4987015860712c1567ca078ea0206be814bfd35a6",
+      "output_hash": "b3090e71f0020a36f94dccede298bdaca2bf5674dcf8f2d7c93c55157e859495",
+      "tool_versions": {
+        "unity": "6000.7.0a5",
+        "blender": "5.1.2",
+        "pillow": "12.2.0",
+        "node": "22"
+      },
+      "operations": [
+        "identity_lock",
+        "trellis_attempt_fail_closed",
+        "sprite_fallback",
+        "atlas",
+        "unity_import",
+        "bom_promotion"
+      ],
+      "unity_import_settings": {
+        "texture_type": "Sprite",
+        "filter_mode": "Point",
+        "mesh_compression": "Off",
+        "sprite_pixels_to_units": 85.333,
+        "alpha_is_transparency": true
+      },
+      "review_receipts": [
+        {
+          "reviewer": "todo15-character-contract",
+          "verdict": "pass",
+          "receipt_hash": "effb0173386c55a2029c00a6f211322b96dba953784682d8f53b9b2d1e20cb8c",
+          "reviewed_at": "2026-09-04T12:43:29.000Z"
+        }
+      ],
+      "status": "promoted",
+      "created_at": "2026-09-04T12:43:29.000Z",
+      "fallback_reason": "official_trellis_blender_path_failed_twice",
+      "representation": "four_dir_sprite",
+      "prefab": "Game/Assets/Janseon/Art/Characters/poc-explorer/PocExplorer.prefab",
+      "look": {
+        "palette": {
+          "void": "#0B111C",
+          "coat": "per-character-lock",
+          "accent": "per-character-lock",
+          "skin": "per-character-lock",
+          "hair": "per-character-lock"
+        },
+        "materials": {
+          "finish": "hand-drawn-toy-diorama",
+          "roughness": 1.0,
+          "metalness": 0.0,
+          "silhouette_heads": 2.5,
+          "head": "2d-dot-billboard",
+          "body": "3d-mesh",
+          "face": "eyes-emphasized-simplified",
+          "filter": "point",
+          "texture": "hand-drawn",
+          "direction": "4-facing-orthographic"
+        },
+        "references": [
+          {
+            "kind": "style-interview",
+            "source": "https://treeofsavior.com/page/news/view.php?n=337"
+          },
+          {
+            "kind": "style-artist",
+            "source": "https://toswiki.treeofsaviorgame.com/people/maggi"
+          },
+          {
+            "kind": "style-structure",
+            "source": "https://www.reddit.com/r/treeofsavior/comments/k8o616/how_do_i_make_game_asset_to_look_like_from_tree/"
+          },
+          {
+            "kind": "style-sprite",
+            "source": "https://forum.treeofsavior.com/t/what-is-toss-sprite-art-graphics-style/154277"
+          },
+          {
+            "kind": "sd-ratio",
+            "source": "https://blog.naver.com/gametoon_/223809000221"
+          },
+          {
+            "kind": "style-contract",
+            "source": "docs/game-logic/Character-Art-Direction.md#style-reference-tos-sd"
+          },
+          {
+            "kind": "owner-html",
+            "source": ".omo/evidence/issue8-23-visual-review.html"
+          }
+        ],
+        "owner_verdict": "rejected",
+        "owner_notes": "2026-09-06 owner: placeholders rejected. 2026-09-06 owner: TOS-SD rebuild direction and style-target mockup APPROVED. Rebuild must follow docs/game-logic/Character-Art-Direction.md rebuild targets.",
+        "rebuild_direction": {
+          "status": "owner-approved",
+          "approved_at": "2026-09-06",
+          "direction": "tree-of-savior-style SD: 3D mesh body + 2D dot head billboard, eyes-emphasized simplified face, 2.5-head silhouette kept, hand-drawn matte texture",
+          "style_target": ".omo/evidence/character-direction/tos-sd-direction-mockup.png",
+          "spec_source": "docs/game-logic/Character-Art-Direction.md"
+        }
+      }
+    },
+    {
+      "schema_version": 1,
+      "asset_id": "poc-medic",
+      "asset_class": "character_mesh",
+      "source": "generate",
+      "rights_status": "allowed",
+      "generation_backend": "nanobanana_gemini",
+      "provider": "google",
+      "model": "gemini-2.5-flash-image",
+      "revision": "2026-09-04",
+      "prompt": "Use case: identity-lock turnaround",
+      "prompt_hash": "cc02670d3f5e0b61717d384e31cf0a88f5d9d3e81dd649fd97b65b0671c1c811",
+      "input_hashes": [
+        "c885dfbebaf759c8f0149c1841ed1011b764094d6d7e13e87cc0010fba944973"
+      ],
+      "seed": 1502,
+      "cost_mode": "subscription",
+      "cost_cents": 0,
+      "raw_hash": "c885dfbebaf759c8f0149c1841ed1011b764094d6d7e13e87cc0010fba944973",
+      "output_hash": "fa4aaf728baef7afbcab04aa84d3e6e9967c8eb572018f60b5fa4fd9e1014d32",
+      "tool_versions": {
+        "unity": "6000.7.0a5",
+        "blender": "5.1.2",
+        "pillow": "12.2.0",
+        "node": "22"
+      },
+      "operations": [
+        "identity_lock",
+        "trellis_attempt_fail_closed",
+        "sprite_fallback",
+        "atlas",
+        "unity_import",
+        "bom_promotion"
+      ],
+      "unity_import_settings": {
+        "texture_type": "Sprite",
+        "filter_mode": "Point",
+        "mesh_compression": "Off",
+        "sprite_pixels_to_units": 85.333,
+        "alpha_is_transparency": true
+      },
+      "review_receipts": [
+        {
+          "reviewer": "todo15-character-contract",
+          "verdict": "pass",
+          "receipt_hash": "eb3f261ef629178ff8b13d467dd6f7c29d32b8ef68d4e4d79505ff9c3453dfb2",
+          "reviewed_at": "2026-09-04T12:43:29.000Z"
+        }
+      ],
+      "status": "promoted",
+      "created_at": "2026-09-04T12:43:29.000Z",
+      "fallback_reason": "official_trellis_blender_path_failed_twice",
+      "representation": "four_dir_sprite",
+      "prefab": "Game/Assets/Janseon/Art/Characters/poc-medic/PocMedic.prefab",
+      "look": {
+        "palette": {
+          "void": "#0B111C",
+          "coat": "per-character-lock",
+          "accent": "per-character-lock",
+          "skin": "per-character-lock",
+          "hair": "per-character-lock"
+        },
+        "materials": {
+          "finish": "hand-drawn-toy-diorama",
+          "roughness": 1.0,
+          "metalness": 0.0,
+          "silhouette_heads": 2.5,
+          "head": "2d-dot-billboard",
+          "body": "3d-mesh",
+          "face": "eyes-emphasized-simplified",
+          "filter": "point",
+          "texture": "hand-drawn",
+          "direction": "4-facing-orthographic"
+        },
+        "references": [
+          {
+            "kind": "style-interview",
+            "source": "https://treeofsavior.com/page/news/view.php?n=337"
+          },
+          {
+            "kind": "style-artist",
+            "source": "https://toswiki.treeofsaviorgame.com/people/maggi"
+          },
+          {
+            "kind": "style-structure",
+            "source": "https://www.reddit.com/r/treeofsavior/comments/k8o616/how_do_i_make_game_asset_to_look_like_from_tree/"
+          },
+          {
+            "kind": "style-sprite",
+            "source": "https://forum.treeofsavior.com/t/what-is-toss-sprite-art-graphics-style/154277"
+          },
+          {
+            "kind": "sd-ratio",
+            "source": "https://blog.naver.com/gametoon_/223809000221"
+          },
+          {
+            "kind": "style-contract",
+            "source": "docs/game-logic/Character-Art-Direction.md#style-reference-tos-sd"
+          },
+          {
+            "kind": "owner-html",
+            "source": ".omo/evidence/issue8-23-visual-review.html"
+          }
+        ],
+        "owner_verdict": "rejected",
+        "owner_notes": "2026-09-06 owner: placeholders rejected. 2026-09-06 owner: TOS-SD rebuild direction and style-target mockup APPROVED. Rebuild must follow docs/game-logic/Character-Art-Direction.md rebuild targets.",
+        "rebuild_direction": {
+          "status": "owner-approved",
+          "approved_at": "2026-09-06",
+          "direction": "tree-of-savior-style SD: 3D mesh body + 2D dot head billboard, eyes-emphasized simplified face, 2.5-head silhouette kept, hand-drawn matte texture",
+          "style_target": ".omo/evidence/character-direction/tos-sd-direction-mockup.png",
+          "spec_source": "docs/game-logic/Character-Art-Direction.md"
+        }
+      }
+    },
+    {
+      "schema_version": 1,
+      "asset_id": "poc-patrol",
+      "asset_class": "character_mesh",
+      "source": "generate",
+      "rights_status": "allowed",
+      "generation_backend": "nanobanana_gemini",
+      "provider": "google",
+      "model": "gemini-2.5-flash-image",
+      "revision": "2026-09-04",
+      "prompt": "Use case: identity-lock turnaround",
+      "prompt_hash": "8262b4c5d97c95408a66245b406b1b5854ded89c52ae65e9680403820a3911bd",
+      "input_hashes": [
+        "8036d041b29e82b24de4b8bb81d62aa7656ebd8087beb1ad48b802840fc79bd6"
+      ],
+      "seed": 1503,
+      "cost_mode": "subscription",
+      "cost_cents": 0,
+      "raw_hash": "8036d041b29e82b24de4b8bb81d62aa7656ebd8087beb1ad48b802840fc79bd6",
+      "output_hash": "462624870fdd075e0020dbcfcdbd6476ea25ab28a9d85a8395802e09d9c070db",
+      "tool_versions": {
+        "unity": "6000.7.0a5",
+        "blender": "5.1.2",
+        "pillow": "12.2.0",
+        "node": "22"
+      },
+      "operations": [
+        "identity_lock",
+        "trellis_attempt_fail_closed",
+        "sprite_fallback",
+        "atlas",
+        "unity_import",
+        "bom_promotion"
+      ],
+      "unity_import_settings": {
+        "texture_type": "Sprite",
+        "filter_mode": "Point",
+        "mesh_compression": "Off",
+        "sprite_pixels_to_units": 85.333,
+        "alpha_is_transparency": true
+      },
+      "review_receipts": [
+        {
+          "reviewer": "todo15-character-contract",
+          "verdict": "pass",
+          "receipt_hash": "3319f329201b5c5a2d90281fc4ff76abc7b2e98ac4b60400b0957e5324234ca2",
+          "reviewed_at": "2026-09-04T12:43:29.000Z"
+        }
+      ],
+      "status": "promoted",
+      "created_at": "2026-09-04T12:43:29.000Z",
+      "fallback_reason": "official_trellis_blender_path_failed_twice",
+      "representation": "four_dir_sprite",
+      "prefab": "Game/Assets/Janseon/Art/Characters/poc-patrol/PocPatrol.prefab",
+      "look": {
+        "palette": {
+          "void": "#0B111C",
+          "coat": "per-character-lock",
+          "accent": "per-character-lock",
+          "skin": "per-character-lock",
+          "hair": "per-character-lock"
+        },
+        "materials": {
+          "finish": "hand-drawn-toy-diorama",
+          "roughness": 1.0,
+          "metalness": 0.0,
+          "silhouette_heads": 2.5,
+          "head": "2d-dot-billboard",
+          "body": "3d-mesh",
+          "face": "eyes-emphasized-simplified",
+          "filter": "point",
+          "texture": "hand-drawn",
+          "direction": "4-facing-orthographic"
+        },
+        "references": [
+          {
+            "kind": "style-interview",
+            "source": "https://treeofsavior.com/page/news/view.php?n=337"
+          },
+          {
+            "kind": "style-artist",
+            "source": "https://toswiki.treeofsaviorgame.com/people/maggi"
+          },
+          {
+            "kind": "style-structure",
+            "source": "https://www.reddit.com/r/treeofsavior/comments/k8o616/how_do_i_make_game_asset_to_look_like_from_tree/"
+          },
+          {
+            "kind": "style-sprite",
+            "source": "https://forum.treeofsavior.com/t/what-is-toss-sprite-art-graphics-style/154277"
+          },
+          {
+            "kind": "sd-ratio",
+            "source": "https://blog.naver.com/gametoon_/223809000221"
+          },
+          {
+            "kind": "style-contract",
+            "source": "docs/game-logic/Character-Art-Direction.md#style-reference-tos-sd"
+          },
+          {
+            "kind": "owner-html",
+            "source": ".omo/evidence/issue8-23-visual-review.html"
+          }
+        ],
+        "owner_verdict": "rejected",
+        "owner_notes": "2026-09-06 owner: placeholders rejected. 2026-09-06 owner: TOS-SD rebuild direction and style-target mockup APPROVED. Rebuild must follow docs/game-logic/Character-Art-Direction.md rebuild targets.",
+        "rebuild_direction": {
+          "status": "owner-approved",
+          "approved_at": "2026-09-06",
+          "direction": "tree-of-savior-style SD: 3D mesh body + 2D dot head billboard, eyes-emphasized simplified face, 2.5-head silhouette kept, hand-drawn matte texture",
+          "style_target": ".omo/evidence/character-direction/tos-sd-direction-mockup.png",
+          "spec_source": "docs/game-logic/Character-Art-Direction.md"
+        }
+      }
+    }
+  ]
+}

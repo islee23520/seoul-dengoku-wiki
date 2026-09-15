@@ -1,0 +1,14 @@
+﻿[
+    {
+        "Name":  "Janseon.Foundation.Tests.CoreLoopPlayModeTests.ApprovedUnityShell_InputOwner_SurvivesTitleUnloadAndReleasesOnBootstrapReload",
+        "Result":  "Failed",
+        "Message":  "  edit-formation must be raycast reachable\n  Expected: greater than 0\n  But was:  0\n",
+        "Stack":  "at Janseon.Foundation.Tests.CoreLoopPlayModeTests.ShellPointerClick (UnityEngine.RectTransform root, System.String name) [0x00101] in E:\\git\\seoul-kenshi-wt\\rtfc-phase-d\\Game\\Assets\\Tests\\PlayMode\\CoreLoopPlayModeTests.cs:828\nat Janseon.Foundation.Tests.CoreLoopPlayModeTests.ApprovedUnityShell_InputOwner_SurvivesTitleUnloadAndReleasesOnBootstrapReload () [0x00184] in E:\\git\\seoul-kenshi-wt\\rtfc-phase-d\\Game\\Assets\\Tests\\PlayMode\\CoreLoopPlayModeTests.cs:697\nat UnityEngine.TestTools.TestRunner.TestTaskWrapper+\u003cExecute\u003ed__2.MoveNext () [0x00063] in .\\Library\\PackageCache\\com.unity.test-framework@4c309923fa3b\\UnityEngine.TestRunner\\TestRunner\\TestTaskWrapper.cs:31\nat UnityEngine.TestTools.TestEnumerator+\u003cExecute\u003ed__8.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@4c309923fa3b\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:52\n"
+    },
+    {
+        "Name":  "Janseon.Foundation.Tests.CoreLoopPlayModeTests.ApprovedUnityShell_ResetViaPointer_ReopensOnlyBattleAndFreezesOldSession",
+        "Result":  "Failed",
+        "Message":  "  edit-formation must be raycast reachable\n  Expected: greater than 0\n  But was:  0\n",
+        "Stack":  "at Janseon.Foundation.Tests.CoreLoopPlayModeTests.ShellPointerClick (UnityEngine.RectTransform root, System.String name) [0x00101] in E:\\git\\seoul-kenshi-wt\\rtfc-phase-d\\Game\\Assets\\Tests\\PlayMode\\CoreLoopPlayModeTests.cs:828\nat Janseon.Foundation.Tests.CoreLoopPlayModeTests.ApprovedUnityShell_ResetViaPointer_ReopensOnlyBattleAndFreezesOldSession () [0x0015e] in E:\\git\\seoul-kenshi-wt\\rtfc-phase-d\\Game\\Assets\\Tests\\PlayMode\\CoreLoopPlayModeTests.cs:720\nat UnityEngine.TestTools.TestRunner.TestTaskWrapper+\u003cExecute\u003ed__2.MoveNext () [0x00063] in .\\Library\\PackageCache\\com.unity.test-framework@4c309923fa3b\\UnityEngine.TestRunner\\TestRunner\\TestTaskWrapper.cs:31\nat UnityEngine.TestTools.TestEnumerator+\u003cExecute\u003ed__8.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@4c309923fa3b\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:52\n"
+    }
+]

@@ -1,0 +1,22 @@
+{
+  "name": "Janseon.Foundation.Editor",
+  "rootNamespace": "Janseon.Foundation.Editor",
+  "references": [
+    "Janseon.Foundation",
+        "Unity.TextMeshPro",
+    "Janseon.Core",
+    "VContainer",
+    "VContainer.Unity"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

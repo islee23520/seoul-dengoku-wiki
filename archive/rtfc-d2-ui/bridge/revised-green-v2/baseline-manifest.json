@@ -1,0 +1,114 @@
+{
+  "patch_base": "lead-applied behavioral RED staging plus unchanged baaeb8a files",
+  "required_head": "baaeb8a5b46404f0e866c795cf65c1f431673ca4",
+  "red_test_source_hash": "584be63353b239b10893db3ac7f6775fbe757299d5dec4daaa7730b64fe7d9ab",
+  "applied_after": "raw behavioral RED proof only",
+  "files": [
+    {
+      "path": "Design.md",
+      "base_sha256": "422a45215a693338f9a7256a82ddcb8db6340d8923d62675514891329ad12527",
+      "base_bytes": 11175,
+      "base_source": "unchanged baaeb8a exact bytes",
+      "target_sha256": "79c377cb249331b4b16ccb520a7aaf2a9b387cc72740878ddf1cf2b81a724942",
+      "target_bytes": 11545
+    },
+    {
+      "path": "Game/Assets/Janseon/Foundation/UI/GameplayUiSnapshot.cs",
+      "base_sha256": "92b20a81195280c9672365bfee1d719a17686d93534086f5d427c40ad33215cd",
+      "base_bytes": 21294,
+      "base_source": "lead-applied-red exact bytes",
+      "target_sha256": "471684def7e476d16efece10399e4814321fe8260ff3c6a111c3e9f2f175e7d5",
+      "target_bytes": 25384
+    },
+    {
+      "path": "Game/Assets/Janseon/Foundation/UI/PocCoreLoopController.cs",
+      "base_sha256": "3243cbf76a556a8f2bbe0a1e2b380b572749f861f2374c16efe2ecb6b3f03e8b",
+      "base_bytes": 17375,
+      "base_source": "lead-applied-red exact bytes",
+      "target_sha256": "846601c4dceb3b9f81693cf1b06f5758ce6a3618b80252d7089f0a49ef5c217c",
+      "target_bytes": 20391
+    },
+    {
+      "path": "Game/Assets/Janseon/Foundation/UI/Presenters/GameplayPresenter.cs",
+      "base_sha256": "dae5c4c7d3de587c36e3aadda6f6ed826ef88cf1666f0a2b667bc4429dff75f4",
+      "base_bytes": 30649,
+      "base_source": "lead-applied-red exact bytes",
+      "target_sha256": "5170e1feef75a26c5b5ea68fe010694276ce9e7a933d9f3e12b2acf6a149257e",
+      "target_bytes": 29827
+    },
+    {
+      "path": "Game/Assets/Janseon/Foundation/UI/Presenters/GameplayUiHost.cs",
+      "base_sha256": "29cc76f75cd269e998dab2e9e2deddd04ebd6445cd9acd10004f352291cb8277",
+      "base_bytes": 5869,
+      "base_source": "unchanged baaeb8a exact bytes",
+      "target_sha256": "e52a25d79068c06c8c2f755d753216262d84f29d6d82de0ea8c90836b8ad22ab",
+      "target_bytes": 6065
+    },
+    {
+      "path": "Game/Assets/Janseon/Foundation/UI/UguiHudBuilder.cs",
+      "base_sha256": "bc76b234c3bf762806f173c956372626925e0199c98f3dd30a078281fb214381",
+      "base_bytes": 31402,
+      "base_source": "lead-applied-red exact bytes",
+      "target_sha256": "065d856910a9499c9d37bd59e7aed28a06c2185f6f269ee65ab93f21096a4b99",
+      "target_bytes": 32792
+    },
+    {
+      "path": "Game/Assets/Janseon/Foundation/UI/UguiHudView.cs",
+      "base_sha256": "d207a3cf5e0fe7cfa1027136e91b4c330c6891ce0ce631ffc2b97be8a58cf80d",
+      "base_bytes": 5801,
+      "base_source": "lead-applied-red exact bytes",
+      "target_sha256": "7fc67729073b6175a00da58a86e795e45012ea2397f0c3dc4f9f9fb36066cba7",
+      "target_bytes": 2599
+    },
+    {
+      "path": "Game/Assets/Janseon/Foundation/UI/UiElementNames.cs",
+      "base_sha256": "cfac7098230bad6ff615007350ce8aa0607593f06a35796fd25f104299cecb80",
+      "base_bytes": 5383,
+      "base_source": "lead-applied-red exact bytes",
+      "target_sha256": "974df74086916e6c40199e8d64295bba6df68bd5188285d0c9767f72ca73f286",
+      "target_bytes": 5947
+    },
+    {
+      "path": "Game/Assets/Tests/EditMode/UiToolkitVisualQaDefectTests.cs",
+      "base_sha256": "3dc47293eb02c2ca45797f3f77aa844029981575be496ddc8f76212570f3be38",
+      "base_bytes": 20666,
+      "base_source": "unchanged baaeb8a exact bytes",
+      "target_sha256": "7d38d1e4ad7667b224aa4d1fd5ae96316a5cbb2ff862d3f4e29ec6cf4a933d2c",
+      "target_bytes": 20674
+    },
+    {
+      "path": "Game/Assets/Tests/PlayMode/BattleSessionDriverPlayModeTests.cs",
+      "base_sha256": "3f6914bc5d19c9e44a3781ff51f92afeac7d0a1f5f21cdbe1978fb24104a7e9f",
+      "base_bytes": 17080,
+      "base_source": "unchanged baaeb8a exact bytes",
+      "target_sha256": "b7ec756eb7420cdad679f438532056749486f94e8f382ba8549b50d388846591",
+      "target_bytes": 17995
+    },
+    {
+      "path": "Game/Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs",
+      "base_sha256": "584be63353b239b10893db3ac7f6775fbe757299d5dec4daaa7730b64fe7d9ab",
+      "base_bytes": 64304,
+      "base_source": "lead-applied-red exact bytes",
+      "target_sha256": "2e77baee835ad53919e458a9c5edffcfc0681cd04591b3a2f42bc794eef15728",
+      "target_bytes": 65104
+    },
+    {
+      "path": "Game/Assets/Tests/PlayMode/FoundationSceneFlowTests.cs",
+      "base_sha256": "9565fa8cadda84036be3c78cc6cffbc125ee0b53a194b8cd0442686be1c8c142",
+      "base_bytes": 22843,
+      "base_source": "unchanged baaeb8a exact bytes",
+      "target_sha256": "e2d407ee7958d0721df962aab36858715b1dd47a6576470ae15e0b91fbf7f9aa",
+      "target_bytes": 23343
+    },
+    {
+      "path": "Game/Assets/Tests/PlayMode/UiToolkitCapturePlayModeTests.cs",
+      "base_sha256": "498ee60c79dfc9e6424d900b8a64ff9c0dde7671ed4348562eeeedbdc578e1bc",
+      "base_bytes": 12842,
+      "base_source": "unchanged baaeb8a exact bytes",
+      "target_sha256": "7fd3f160841c1d894219acabb8608a499c629f800b8b6f123bad89825d92ba54",
+      "target_bytes": 17515
+    }
+  ],
+  "apply_patch_sha256": "1c51ba58ece54541674f70b97021e4c09ff7cc0b7ac50bd9b3aba3b12ed8a746",
+  "standard_patch_sha256": "5b1ff16ba59932095d28dec991466395c254dd41b068dd7b1c1020f4b123945d"
+}

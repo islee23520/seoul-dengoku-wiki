@@ -1,0 +1,30 @@
+{
+  "verified_at_utc": "2026-09-08T08:49:00.938719+00:00",
+  "source_worktree": "/Users/ilseoblee/workspace/seoul-kenshi-wt/rtfc-phase-c",
+  "archive": "/Users/ilseoblee/workspace/seoul-kenshi-archives/rtfc-phase-c-571f25f",
+  "source_entries": 379,
+  "archive_entries": 379,
+  "source_bytes": 173915351,
+  "archive_bytes": 173915351,
+  "missing": [],
+  "extra": [],
+  "mismatched": [],
+  "verified": true,
+  "sets": [
+    {
+      "name": "worktree/.omo",
+      "entries": 342,
+      "bytes": 172923939
+    },
+    {
+      "name": "worktree/docs/verification/ulw-execute/rtfc/phase-c/integration",
+      "entries": 34,
+      "bytes": 905468
+    },
+    {
+      "name": "tmp/rtfc-phase-c-final-571f25f",
+      "entries": 3,
+      "bytes": 85944
+    }
+  ]
+}

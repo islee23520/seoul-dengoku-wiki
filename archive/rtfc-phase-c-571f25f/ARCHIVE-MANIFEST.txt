@@ -1,0 +1,18 @@
+RTFC Phase C evidence-safe worktree archive
+source worktree: /Users/ilseoblee/workspace/seoul-kenshi-wt/rtfc-phase-c
+feature commit: 571f25fb93a8423c88e32f6249d912f897193a35
+PR 69 merge commit: dd6f30af64c7419368d480854c7c2f43a51acdd6
+PR merged at: 2026-09-08T08:41:12Z
+
+Retained payload:
+- payload/worktree/.omo: complete worktree .omo tree, including all captures, receipts, and built player payload.
+- payload/worktree/docs/verification/ulw-execute/rtfc/phase-c/integration: committed evidence plus ignored architecture/build/LFS/npm logs.
+- payload/tmp/rtfc-phase-c-final-571f25f: post-commit roundtrip XML, Unity log, and exit code.
+
+Proof:
+- manifests/SOURCE-SHA256.tsv: hashes measured from source before worktree removal.
+- manifests/ARCHIVE-SHA256.tsv: hashes measured independently from archived copies.
+- manifests/COPY-VERIFICATION.json: exact path/type/size/hash comparison.
+
+Prior archive intentionally preserved separately:
+/Users/ilseoblee/workspace/seoul-kenshi-archives/st_01a07ff2-premerge-20260908

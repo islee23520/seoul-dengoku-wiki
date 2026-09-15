@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-12",
+  "worktree": "/Users/ilseoblee/workspace/seoul-kenshi-wt/lore-audit-docs",
+  "changes": [
+    "Random-Cast-Roster.md",
+    "Hangnyeol-and-Bon-gwan.md",
+    "Heirs-Names-and-World-Ledger.md",
+    "Cast-Profile-Contract.md"
+  ],
+  "review": {
+    "status": "PASS",
+    "checks": [
+      "100명은 후보이며 다문화/관계/이름 검증 미달임을 명시",
+      "422명 소급표는 기존 인물 초안이며 확인 0명, PR에 포함하지 않음",
+      "본관·분파·혈연 세수와 연령대를 구분; 일본 통자·편휘 별도",
+      "생업/소속/국적에서 복무와 무장을 단정하지 않음"
+    ],
+    "source": "감사 JSON 집계 + 생성기 원문 읽기; prose review"
+  },
+  "scope": "JSON/code unchanged"
+}

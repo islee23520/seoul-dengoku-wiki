@@ -1,0 +1,154 @@
+{
+  "schema": "janseon-final-verification-evidence/1",
+  "recordedAt": "2026-09-04T01:59:33+0900",
+  "branch": "fix-validate-commit-push-wave0",
+  "headBeforeThisCommit": "345c1d650da550b35f0e2e0f5972189e8ff982ee",
+  "automatedGates": [
+    {
+      "id": "test-build-wiki",
+      "command": "node tools/wiki/test-build-wiki.mjs",
+      "exitCode": 0,
+      "result": "PASS",
+      "detail": "34 passed, 0 failed; wiki build contract passed"
+    },
+    {
+      "id": "test-unity-architecture-docs",
+      "command": "node tools/wiki/test-unity-architecture-docs.mjs",
+      "exitCode": 0,
+      "result": "PASS",
+      "detail": "unity architecture wiki contract passed"
+    },
+    {
+      "id": "test-strategy-formulas",
+      "command": "node tools/wiki/test-strategy-formulas.mjs",
+      "exitCode": 0,
+      "result": "PASS",
+      "detail": "strategy formula contract passed cases=10"
+    },
+    {
+      "id": "check-unity-architecture",
+      "command": "node tools/architecture/check-unity-architecture.mjs",
+      "exitCode": 0,
+      "result": "PASS",
+      "detail": "unity architecture gate passed (9 runtime files, 2 scene scopes verified)"
+    },
+    {
+      "id": "test-check-unity-architecture",
+      "command": "node --test tools/architecture/test-check-unity-architecture.mjs",
+      "exitCode": 0,
+      "result": "PASS",
+      "detail": "1 test, 14 scenarios, repository gate exit 0"
+    },
+    {
+      "id": "test-verify-sixteen-states",
+      "command": "cd /Users/ilseoblee/workspace/seoul-kenshi && python3 .omo/evidence/wiki-states/test-verify-sixteen-states.py",
+      "exitCode": 0,
+      "result": "PASS",
+      "detail": "8 tests OK (sixteen-state contract sentinel cannot self-grant)"
+    },
+    {
+      "id": "check-repo-delivery-policy",
+      "command": "node tools/policy/check-repo-delivery-policy.mjs",
+      "exitCode": 0,
+      "result": "PASS",
+      "detail": "result PASS, live origin matches ADR record"
+    },
+    {
+      "id": "git-diff-check",
+      "command": "git diff --check",
+      "exitCode": 0,
+      "result": "PASS",
+      "detail": "no whitespace errors"
+    },
+    {
+      "id": "package-manifest-lock",
+      "command": "node (custom) Game/Packages/manifest.json vs packages-lock.json",
+      "exitCode": 0,
+      "result": "PASS",
+      "detail": "every manifest dependency present in lock with matching version; lock-only keys are transitive/indirect only"
+    }
+  ],
+  "unityEvidenceVerification": {
+    "mode": "verification-of-evidence (no rerun; environment performance-package hang documented in ledger)",
+    "playmode": {
+      "artifact": ".omo/evidence/fix-validate-commit-push/task-6-foundation-lifecycle/green-tests-v11/playmode.xml",
+      "sha256": "992283d1afdb5d56877fd2a2b1b34d436f1b12c7c9eae5a7c39fb3dd193539b3",
+      "testcasecount": 2,
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0,
+      "result": "PASS",
+      "detail": "both named test cases match current FoundationSceneFlowTests methods: BootstrapLoadsFoundationWithOneScopePerScene, ImmediateCancellationOfActualAdditiveLoad_NoOrphanDuplicateBeforeRetry_ExactlyOneSuccessfulRetry"
+    },
+    "editmode": {
+      "artifact": ".omo/evidence/fix-validate-commit-push/task-6-foundation-lifecycle/green-tests-v9/editmode-results.xml",
+      "sha256": "626f096ba95475417321f712c862c623c18cf913a11ac3f296e27a023f4dc08d",
+      "claimed": {
+        "testcasecount": 15,
+        "total": 15,
+        "passed": 15,
+        "failed": 0,
+        "skipped": 0
+      },
+      "result": "FAIL_VERIFICATION",
+      "detail": "XML contains zero test-case entries (only suite rollups), embeds a hand-written XML comment ('new test included; total now >=12 across assembly; all green after fix'), is not corroborated by green-tests-v9/editmode.log (compile/import log with no test summary), and its total of 15 exceeds the 12 [Test] methods currently in Game/Assets/Tests/EditMode (ApplicationFlowTests 9 + GenreContractTests 3). The 15/15 editmode-green claim is NOT verified by faithful raw output."
+    }
+  },
+  "browserQa": {
+    "surface": "wiki built by hardened tools/wiki/build-wiki.mjs (commit 345c1d6) into sentinel-protected temp, served locally, driven via Aside browser agent with in-page measurement",
+    "home": {
+      "result": "PASS",
+      "title": "《잔선: 서울》",
+      "h1": "《잔선: 서울》",
+      "sidebarVisible": true,
+      "sidebarLinkCount": 25,
+      "tableCount": 1,
+      "images": [
+        {
+          "src": "assets/janseon-seoul-cover.png",
+          "naturalWidth": 1672
+        },
+        {
+          "src": "assets/isometric-grammar.svg",
+          "naturalWidth": 1280
+        }
+      ]
+    },
+    "sixteenStates": {
+      "result": "PASS",
+      "url": "Sixteen-States.md",
+      "hasTotal16": true,
+      "hasStrong5": true,
+      "hasMinor11": true
+    },
+    "mermaid": {
+      "result": "PASS",
+      "url": "Factions-and-Diplomacy.md",
+      "note": "Home.md contains no mermaid fence in the source; Mermaid verified on a mermaid-bearing page",
+      "preMermaidBlocks": 1,
+      "renderedSvg": 1,
+      "svgVisible": true,
+      "svgSize": "518x406"
+    },
+    "imageSweep": {
+      "result": "PASS",
+      "pagesChecked": [
+        "Home",
+        "World-and-Subway-Layers",
+        "Asset-Pipeline",
+        "Character-Art-Direction",
+        "SRPG-Combat",
+        "Strongholds-and-Territory",
+        "Campaign-Loop"
+      ],
+      "naturalWidthZeroCount": 0
+    }
+  },
+  "overall": {
+    "automatedGates": "PASS (9/9)",
+    "browserQa": "PASS",
+    "unityPlaymodeEvidence": "PASS",
+    "unityEditmodeEvidence": "FAIL_VERIFICATION - raw 15/15 claim is not backed by faithful raw output; requires a genuine editmode rerun when the Unity environment is healthy"
+  }
+}

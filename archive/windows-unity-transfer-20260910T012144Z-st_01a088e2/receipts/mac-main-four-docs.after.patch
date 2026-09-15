@@ -1,0 +1,97 @@
+diff --git a/Design.md b/Design.md
+index 19b5edb..ee4232d 100644
+--- a/Design.md
++++ b/Design.md
+@@ -114,7 +114,7 @@
+ | `jk-rail` | 가로 스테이지 레일 | — |
+ | `jk-route` | 세로/가로 역 연결 | node current/adjacent/dim |
+ | `jk-grid` | 전투 격자 | cell empty/ally/foe/focus |
+-| `jk-meter` | HP/AP | fill 0–100% |
++| `jk-meter` | HP/사기/재충전 | fill 0–100% 또는 Core tick 값 |
+ | `jk-meta` | tick·hash | mono |
+ 
+ 포커스: 항상 `stroke-focus` 링. 키보드만으로 모든 1차 액션 도달.
+@@ -139,7 +139,7 @@
+ | 스테이지 레일 | `stage-rail`, `stage-base-prep` … `stage-base-ready` | `CampaignStage` 6단 |
+ | 노선 | `route-rail`, `station-Yeongdeungpo`, `station-Sindorim`, `station-Guro` | `RouteGraph` + `CampaignState.Node` |
+ | 조우 선택 | `encounter-choices`, `choice-negotiate`, `choice-bypass`, `choice-combat` | `CampaignStage.Resolution` |
+-| 전투 | `battle-hud`, `battle-grid`, `battle-cell-{x}-{y}`, `battle-hp`, `battle-ap` | `BattleState` |
++| 전투 | `battle-hud`, `battle-grid`, `battle-cell-{x}-{y}`, `battle-hp`, `battle-morale`, `battle-reinforcement-forecast`, `card-general-recharge`, `battle-play-pause` | `BattleSimState` + `BattleSessionDriver.Paused` |
+ | 정산·복귀 | `settlement-panel`, `settlement-outcome`, `return-action` | settlement receipt fields |
+ 
+ 스냅샷은 동일 seed/state에 대해 요소 이름 집합·current 표시·그리드 점유가 결정론적이어야 한다.
+@@ -159,7 +159,7 @@
+ | 1 | `main-title-start` | `stage-rail` 내 current chip (표시만, 탭 스킵 가능) |
+ | 2 | — | 가시 역 노드 (current 우선) |
+ | 3 | — | 가시 조우 카드  Neg → Bypass → Combat |
+-| 4 | — | `battle-advance` 결정론 전투 명령 |
++| 4 | — | `formation-swap-front` → `edit-formation` → 카드 → `battle-play-pause` |
+ | 5 | — | `return-action` |
+ 
+ - Tab / Shift+Tab 순환. Enter·Space 활성화.
+@@ -188,7 +188,7 @@
+ ## 9. 수용된 부채 (Accepted Debt)
+ 
+ - 커스텀 한글 폰트·아이콘 세트는 Todo 13.
+-- 전투 입력은 결정론적 다음 명령 버튼으로 제한한다. 개별 전투 칸 선택 입력은 현재 POC 범위가 아니다.
++- 전투 입력은 전투 전 진형 교대, 카드 사용, 일시정지/재개로 제한한다. 개별 유닛 직접 이동과 턴/AP 입력은 현재 계약이 아니다.
+ - 역사 3D/캐릭터 메시는 Todo 14–16. 본 계약은 UI 평면만.
+ - PanelSettings는 단일 공유 에셋. 테마 런타임 스위치 없음.
+ 
+@@ -241,7 +241,14 @@ battle-hud
+ battle-grid
+ battle-cell-{x}-{y}   # x,y in 0..4
+ battle-hp
+-battle-ap
++battle-morale
++battle-reinforcement-forecast
++card-general-recharge
++card-general-use
++formation-swap-front
++formation-selection
++edit-formation
++battle-play-pause
+ settlement-panel
+ settlement-outcome
+ return-action
+diff --git a/README.md b/README.md
+index 31aa656..ae94bd5 100644
+--- a/README.md
++++ b/README.md
+@@ -18,6 +18,8 @@
+ 
+ 이슈를 열거나 작업을 추적할 때는 [`CONTRIBUTING.md`](CONTRIBUTING.md)를 따릅니다. 웹에서는 YAML 이슈 폼만 열고, 빈 이슈는 쓰지 않습니다.
+ 
++브라우저에서 Unity Game View와 scene object를 확인하는 설치·실행 절차는 [`Unity Remote 안내`](docs/Unity-Remote.md)에 있습니다.
++
+ ## 클론과 Git LFS
+ 
+ 이미지·메시·오디오는 Git LFS로 저장합니다. 클론 전에 `git lfs install`을 한 뒤 받습니다. 이 저장소의 로컬 설정에 `filter.lfs.smudge --skip`을 두지 않습니다. 포인터만 받아진 작업 사본에서는 Unity·아트 검사를 하지 않습니다.
+diff --git a/ToDo.md b/ToDo.md
+index c0907bb..ea4d96b 100644
+--- a/ToDo.md
++++ b/ToDo.md
+@@ -20,7 +20,7 @@
+ - [x] 10. MainTitle을 배타적 화면 lease로 추가하고 아키텍처 게이트를 갱신한다
+ - [x] 11. Design.md 시각 계약을 고정하고 실제 UI Toolkit 화면을 구현한다
+ - [x] 12. 아트 제작 전에 PlayMode에서 코어 루프 한 바퀴를 닫는다
+-- [ ] 18. UI Toolkit 구현을 uGUI로 전환한다 (Design.md 2026-09-06 개정, 이슈 #55)
++- [ ] 18. UI Toolkit 구현을 uGUI로 전환한다 (Design.md 2026-09-06 개정, 이슈 #59)
+ - [ ] 13. 타이틀·UI kit·아이콘·역사 텍스처를 생성·검수한다
+ - [ ] 14. TRELLIS→Blender로 역사 프롭 키트를 생성·승격한다
+ - [ ] 15. 탐사원·의무원·순찰대 캐릭터를 생성·리그·애니메이션한다
+diff --git a/docs/game-logic/Development-Roadmap.md b/docs/game-logic/Development-Roadmap.md
+index 9092018..f5c3b0c 100644
+--- a/docs/game-logic/Development-Roadmap.md
++++ b/docs/game-logic/Development-Roadmap.md
+@@ -27,8 +27,8 @@
+ 
+ ## 다음 검증 단계 (순서 의존)
+ 
+-1. 시각 수용 — 타이틀(#8)과 UI kit·아이콘·타일(#23)의 4축 독립 재심사와 소유자 육안 승인. COMPOSITION·PRODUCT_POLISH raw FAIL은 면제 없음. 캐릭터는 기존 placeholder가 폐기됐으므로 TOS식 SD 재작업(#56)이 선행된다
+-2. UI 전환 — UI Toolkit 구현을 uGUI로 마이그레이션(#55, Design.md 2026-09-06 개정). 안정 요소 이름·씬 흐름·결정론 계약 유지
++1. 시각 수용 — 타이틀(#8)과 UI kit·아이콘·타일(#23)의 4축 독립 재심사와 소유자 육안 승인. COMPOSITION·PRODUCT_POLISH raw FAIL은 면제 없음. 캐릭터는 기존 placeholder가 폐기됐으므로 TOS식 SD 재작업(#58)이 선행된다
++2. UI 전환 — UI Toolkit 구현을 uGUI로 마이그레이션(#59, Design.md 2026-09-06 개정). 안정 요소 이름·씬 흐름·결정론 계약 유지
+ 3. 슬롯 연결(ToDo 16, #26) — 승격된 에셋만 uGUI 런타임 슬롯에 연결하고 임시 비주얼 제거
+ 4. 최종 수용 게이트(ToDo 17, #27) — 아키텍처 게이트, batchmode PlayMode 전 경로, 4축 시각 PASS, BOM fail-closed, 동일 Unity revision macOS Development player smoke, 임시 리소스 cleanup receipt를 한 번에 통과
+ 5. 서사·협업 후속(#41) — 외부 기여자와의 서사 디렉션 역할·경계 합의

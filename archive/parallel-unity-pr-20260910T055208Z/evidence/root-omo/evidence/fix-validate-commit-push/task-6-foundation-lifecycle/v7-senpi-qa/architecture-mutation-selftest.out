@@ -1,0 +1,65 @@
+mutation matrix
+scenario                          expected exit  actual exit  expected rule           actual rules            status
+--------------------------------  -------------  -----------  ----------------------  ----------------------  ------
+clean-fixture                     0              0            (none)                  (none)                  OK
+app-scope-component-removed       1              1            SCENE_SCOPE_OWNERSHIP   SCENE_SCOPE_OWNERSHIP   OK
+script-guid-replaced              1              1            SCENE_SCOPE_OWNERSHIP   SCENE_SCOPE_OWNERSHIP   OK
+disabled-component                1              1            SCENE_SCOPE_OWNERSHIP   SCENE_SCOPE_OWNERSHIP   OK
+editor-class-identifier-replaced  1              1            SCENE_SCOPE_OWNERSHIP   SCENE_SCOPE_OWNERSHIP   OK
+duplicate-expected-scope          1              1            SCENE_SCOPE_OWNERSHIP   SCENE_SCOPE_OWNERSHIP   OK
+detached-component-reference      1              1            SCENE_SCOPE_OWNERSHIP   SCENE_SCOPE_OWNERSHIP   OK
+name-only-decoy                   1              1            SCENE_SCOPE_OWNERSHIP   SCENE_SCOPE_OWNERSHIP   OK
+malformed-scene-yaml              1              1            SCENE_SCOPE_OWNERSHIP   SCENE_SCOPE_OWNERSHIP   OK
+stale-meta-guid                   1              1            SCENE_SCOPE_OWNERSHIP   SCENE_SCOPE_OWNERSHIP   OK
+missing-script-meta               1              1            SCOPE_SCRIPT_META       SCOPE_SCRIPT_META       OK
+build-order-swapped               1              1            SCENE_BUILD_ORDER       SCENE_BUILD_ORDER       OK
+bootstrap-build-entry-disabled    1              1            SCENE_BUILD_ORDER       SCENE_BUILD_ORDER       OK
+dead-bootstrap-allowlist          1              1            DONT_DESTROY_AUTHORITY  DONT_DESTROY_AUTHORITY  OK
+
+. clean-fixture: unmodified copy of the production scenes and scripts
+    (gate reported no violation)
+
+. app-scope-component-removed: Bootstrap keeps the scope GameObject but loses the AppLifetimeScope component
+    SCENE_SCOPE_OWNERSHIP: Bootstrap.unity expects exactly one AppLifetimeScope component with script guid 5edd73dd925e141a0b7d84271af22c99, found 0
+
+. script-guid-replaced: Bootstrap scope component points at an unknown script GUID
+    SCENE_SCOPE_OWNERSHIP: Bootstrap.unity expects exactly one AppLifetimeScope component with script guid 5edd73dd925e141a0b7d84271af22c99, found 0
+    SCENE_SCOPE_OWNERSHIP: Bootstrap.unity carries an unexpected scope component &566000880 (Janseon.Foundation::Janseon.Foundation.Composition.AppLifetimeScope)
+
+. disabled-component: Bootstrap scope component is serialized as disabled
+    SCENE_SCOPE_OWNERSHIP: Bootstrap.unity scope component &566000880 is disabled
+
+. editor-class-identifier-replaced: Bootstrap scope component declares the wrong managed class identifier
+    SCENE_SCOPE_OWNERSHIP: Bootstrap.unity scope component &566000880 declares m_EditorClassIdentifier 'Janseon.Foundation::Janseon.Foundation.Composition.FoundationLifetimeScope', expected 'Janseon.Foundation::Janseon.Foundation.Composition.AppLifetimeScope'
+
+. duplicate-expected-scope: Foundation carries a second FoundationLifetimeScope component
+    SCENE_SCOPE_OWNERSHIP: Foundation.unity expects exactly one FoundationLifetimeScope component with script guid cf8007de5bf5740a2ae484c131c591f8, found 2
+
+. detached-component-reference: Foundation scope component is not listed by its owning GameObject
+    SCENE_SCOPE_OWNERSHIP: Foundation.unity scope component &616764878 must be listed only by its owning GameObject &616764877; linked by none
+
+. name-only-decoy: Foundation keeps the matching GameObject name but replaces its scope with a scriptless decoy
+    SCENE_SCOPE_OWNERSHIP: Foundation.unity expects exactly one FoundationLifetimeScope component with script guid cf8007de5bf5740a2ae484c131c591f8, found 0
+
+. malformed-scene-yaml: Bootstrap is truncated inside a document with an unparsable header
+    SCENE_SCOPE_OWNERSHIP: Bootstrap.unity has 1 unparsable document header(s)
+    SCENE_SCOPE_OWNERSHIP: Bootstrap.unity expects exactly one AppLifetimeScope component with script guid 5edd73dd925e141a0b7d84271af22c99, found 0
+
+. stale-meta-guid: AppLifetimeScope.cs.meta drifts to a GUID no scene references
+    SCENE_SCOPE_OWNERSHIP: Bootstrap.unity expects exactly one AppLifetimeScope component with script guid deadbeefdeadbeefdeadbeefdeadbeef, found 0
+    SCENE_SCOPE_OWNERSHIP: Bootstrap.unity carries an unexpected scope component &566000880 (Janseon.Foundation::Janseon.Foundation.Composition.AppLifetimeScope)
+
+. missing-script-meta: AppLifetimeScope.cs.meta is deleted so no GUID can be resolved
+    SCOPE_SCRIPT_META: Game/Assets/Janseon/Foundation/Composition/AppLifetimeScope.cs.meta is missing
+
+. build-order-swapped: EditorBuildSettings loads Foundation before Bootstrap
+    SCENE_BUILD_ORDER: expected enabled Assets/Scenes/Bootstrap.unity -> Assets/Scenes/Foundation.unity, got Assets/Scenes/Foundation.unity (enabled) -> Assets/Scenes/Bootstrap.unity (enabled)
+
+. bootstrap-build-entry-disabled: EditorBuildSettings lists Bootstrap first but disables the entry
+    SCENE_BUILD_ORDER: expected enabled Assets/Scenes/Bootstrap.unity -> Assets/Scenes/Foundation.unity, got Assets/Scenes/Bootstrap.unity (disabled) -> Assets/Scenes/Foundation.unity (enabled)
+
+. dead-bootstrap-allowlist: a new BootstrapRoot.cs calls DontDestroyOnLoad under the removed allowlist path
+    DONT_DESTROY_AUTHORITY: Game/Assets/Janseon/Foundation/Composition/BootstrapRoot.cs:7
+
+repository gate: exit 0 :: unity architecture gate passed (9 runtime files, 2 scene scopes verified)
+unity architecture gate tests passed (14 scenarios)

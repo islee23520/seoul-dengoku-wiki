@@ -1,0 +1,147 @@
+--- a/Game/Assets/Tests/EditMode/RealtimeBattleSimTests.cs
++++ b/Game/Assets/Tests/EditMode/RealtimeBattleSimTests.cs
+@@ -392,6 +392,77 @@
+         }
+ 
+         [Test, Category("ApprovedUnityOrders")]
++        public void AttackOrder_ClearsOnTheTickItsExplicitTargetDies()
++        {
++            var setup = Setup(); var state = BattleSim.Open(setup); var ledger = new Ledger();
++            Deploy(state, ledger, setup); ParkOtherUnits(state, "ally-4");
++            var attacker = Unit(state, "ally-4"); attacker.Cell = new GridCoord(0, 2);
++            var target = Unit(state, "foe-0"); target.Cell = new GridCoord(3, 2); target.Hp = attacker.Power;
++            for (var i = 0; i < state.Units.Length; i++)
++            {
++                if (!System.Object.ReferenceEquals(state.Units[i], attacker)) state.Units[i].MoveTicksLeft = 10000;
++                if (!System.Object.ReferenceEquals(state.Units[i], attacker)) state.Units[i].CooldownTicksLeft = 10000;
++            }
++
++            Assert.IsNull(BattleSim.Submit(state, ledger, Attack("lethal-attack", 1, state, "ally-4", "foe-0")));
++            BattleSim.Step(state, ledger);
++
++            Assert.AreEqual(0, target.Hp);
++            Assert.AreEqual("Down", target.State);
++            Assert.AreEqual(BattleOrderKind.None, Unit(BattleSim.Snapshot(state), "ally-4").OrderKind,
++                "the explicit Attack must clear on the same tick its selected target dies");
++        }
++
++        [Test, Category("ApprovedUnityOrders")]
++        public void CrossTickMoveReplacement_OneTickBeforeArrival_UsesOnlyTheNewDestination()
++        {
++            var setup = Setup(); var state = BattleSim.Open(setup); var ledger = new Ledger();
++            Deploy(state, ledger, setup); ParkOtherUnits(state, "ally-0");
++            var actor = Unit(state, "ally-0"); actor.Cell = new GridCoord(0, 2);
++            for (var i = 0; i < state.Units.Length; i++)
++                if (!System.Object.ReferenceEquals(state.Units[i], actor)) state.Units[i].MoveTicksLeft = 10000;
++
++            Assert.IsNull(BattleSim.Submit(state, ledger, Move("old-destination", 1, state, "ally-0", new GridCoord(1, 2))));
++            for (var i = 0; i < BattleRules.MoveTicksPerCell - 1; i++) BattleSim.Step(state, ledger);
++            Assert.AreEqual(new GridCoord(0, 2), actor.Cell);
++            Assert.AreEqual(1, actor.MoveTicksLeft, "the original destination is one tick from execution");
++
++            Assert.IsNull(BattleSim.Submit(state, ledger, Move("replacement", 2, state, "ally-0", new GridCoord(0, 3))));
++            BattleSim.Step(state, ledger);
++
++            Assert.AreEqual(new GridCoord(0, 3), actor.Cell);
++            Assert.AreNotEqual(new GridCoord(1, 2), actor.Cell,
++                "a cross-tick replacement must not execute the superseded near-arrival destination");
++            Assert.AreEqual(BattleOrderKind.None, Unit(BattleSim.Snapshot(state), "ally-0").OrderKind);
++        }
++
++        [Test, Category("ApprovedUnityOrders")]
++        public void MoveOrder_BfsRoutesAroundStaticWaterObstacle_WithNorthFirstTieBreak()
++        {
++            var cells = new int[12 * 8];
++            for (var i = 0; i < cells.Length; i++) cells[i] = 3;
++            cells[2 * 12 + 1] = 2;
++            cells[2 * 12 + 2] = 2;
++            var setup = Setup();
++            setup.Terrain = new Heightmap(12, 8, 8, 2, 99, LayerId.B1, cells);
++            var state = BattleSim.Open(setup); var ledger = new Ledger();
++            Deploy(state, ledger, setup); ParkOtherUnits(state, "ally-0");
++            var actor = Unit(state, "ally-0"); actor.Cell = new GridCoord(0, 2); actor.MoveTicksLeft = 0;
++            for (var i = 0; i < state.Units.Length; i++)
++                if (!System.Object.ReferenceEquals(state.Units[i], actor)) state.Units[i].MoveTicksLeft = 10000;
++
++            Assert.IsNull(BattleSim.Submit(state, ledger, Move("obstacle", 1, state, "ally-0", new GridCoord(3, 2))));
++            BattleSim.Step(state, ledger);
++            Assert.AreEqual(new GridCoord(0, 3), actor.Cell,
++                "equal north and south detours around the water obstacle must choose North first");
++            for (var move = 0; move < 4; move++)
++                for (var tick = 0; tick < BattleRules.MoveTicksPerCell; tick++) BattleSim.Step(state, ledger);
++
++            Assert.AreEqual(new GridCoord(3, 2), actor.Cell);
++            Assert.AreEqual(BattleOrderKind.None, Unit(BattleSim.Snapshot(state), "ally-0").OrderKind);
++        }
++
++        [Test, Category("ApprovedUnityOrders")]
+         public void AcceptedOrderInput_SnapshotCloneFingerprintAndReplay_AreDeterministicAndOwned()
+         {
+             var setup = Setup(); var state = BattleSim.Open(setup); var ledger = new Ledger(); Deploy(state, ledger, setup);
+--- a/Game/Assets/Tests/EditMode/BattleSessionDriverTests.cs
++++ b/Game/Assets/Tests/EditMode/BattleSessionDriverTests.cs
+@@ -346,6 +346,64 @@
+             Assert.That(rejections, Is.EqualTo(1), "the stale command must be rejected exactly once");
+             Assert.That(state.Units[0].Facing, Is.EqualTo(CardinalDirection.North),
+                 "the stale insertion must not strand the next due command behind the consumed cursor");
++        }
++
++        [Test, Category("ApprovedUnityOrders")]
++        public void PausedOrderSubmission_AcceptsPendingIntentWithoutExecution_UntilTheNextStep()
++        {
++            var clock = new ManualClock();
++            var setup = Setup();
++            var state = BattleSim.Open(setup);
++            var ledger = new Ledger();
++            var driver = new BattleSessionDriver(clock.Read);
++            driver.Attach(state, ledger);
++            driver.Enqueue(new BattleTickCommand
++            {
++                Id = new CommandId("pause-deploy"), Seq = 0, At = new Tick(0),
++                Kind = BattleTickCommandKind.Deploy, Formation = setup.PlayerFormation,
++            });
++            clock.Now += Interval;
++            driver.Tick();
++
++            var actor = Array.Find(state.Units, unit => unit.Id.Equals(setup.PlayerUnits[0].Id));
++            actor.MoveTicksLeft = 0;
++            var tickBefore = state.Tick;
++            var cellBefore = actor.Cell;
++            var hpBefore = actor.Hp;
++            var eventsBefore = ledger.Events.Count;
++            driver.Paused = true;
++            driver.Enqueue(new BattleTickCommand
++            {
++                Id = new CommandId("paused-move"), Seq = 1, At = new Tick(state.Tick),
++                Kind = BattleTickCommandKind.Move,
++                ActorUnitId = actor.Id,
++                Target = cellBefore.Step(CardinalDirection.South),
++            });
++            driver.SubmitCurrentCommands();
++
++            Assert.That(state.Tick, Is.EqualTo(tickBefore));
++            Assert.That(actor.Cell, Is.EqualTo(cellBefore));
++            Assert.That(actor.Hp, Is.EqualTo(hpBefore));
++            Assert.That(state.Pending.Count, Is.EqualTo(1),
++                "paused submission is accepted into the Core pending command queue");
++            Assert.That(ledger.Events.Count, Is.EqualTo(eventsBefore + 1));
++            var acceptedFingerprint = state.Fingerprint();
++            var acceptedEvents = LedgerEventSignatures(ledger);
++
++            clock.Now += 5 * Interval;
++            driver.Tick();
++            Assert.That(state.Tick, Is.EqualTo(tickBefore));
++            Assert.That(actor.Cell, Is.EqualTo(cellBefore));
++            Assert.That(actor.Hp, Is.EqualTo(hpBefore));
++            Assert.That(state.Fingerprint(), Is.EqualTo(acceptedFingerprint));
++            Assert.That(LedgerEventSignatures(ledger), Is.EqualTo(acceptedEvents));
++
++            driver.Paused = false;
++            clock.Now += Interval;
++            driver.Tick();
++            Assert.That(state.Tick, Is.EqualTo(tickBefore + 1));
++            Assert.That(actor.Cell, Is.EqualTo(cellBefore.Step(CardinalDirection.South)),
++                "the accepted paused order executes only when the driver runs Step");
+         }
+ 
+         [Test]

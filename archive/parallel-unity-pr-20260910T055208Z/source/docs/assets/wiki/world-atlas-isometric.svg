@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc" xml:lang="ko" data-atlas-hash="69e8b9e5be6112fd47770091de1c29b7e461d30414c09a46a31af937324e7767" data-yaw="45" data-pitch="35.264" data-tile-meters="1.5">
+  <title id="title">서울 십육국 아이소 총람</title>
+  <desc id="desc">16개 국가와 지하철·지상 여섯 층, 다섯 외부전구의 배치를 직교 아이소메트릭으로 보여 줍니다.</desc>
+  <rect width="1280" height="720" fill="#F6F4EF"/>
+  <defs>
+    <pattern id="iso-hatch" width="6" height="6" patternUnits="userSpaceOnUse">
+      <path d="M0 6 6 0" stroke="#C84D4D" stroke-width="1.2" fill="none"/>
+    </pattern>
+    <marker id="iso-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#C84D4D"/>
+    </marker>
+  </defs>
+  <g font-family="Pretendard, Noto Sans KR, Apple SD Gothic Neo, Malgun Gothic, sans-serif" fill="#172A46">
+    <text x="640" y="36" text-anchor="middle" font-size="26" font-weight="700">서울 십육국 아이소 총람</text>
+    <text x="640" y="62" text-anchor="middle" font-size="14" fill="#172A46">직교 카메라 · 편각 45° · 앙각 35.264° · 칸 1.5m · 북 동 남 서</text>
+    <g id="iso-edges"><line id="E-ADJ-S01-S02" x1="551.7" y1="420" x2="522.2" y2="437" stroke="#172A46" stroke-width="2"/><line id="E-ADJ-S02-S03" x1="522.2" y1="437" x2="581.1" y2="403" stroke="#172A46" stroke-width="2"/><line id="E-ADJ-S03-S09" x1="581.1" y1="403" x2="610.6" y2="386" stroke="#172A46" stroke-width="2"/><line id="E-ADJ-S04-S14" x1="640" y1="471" x2="669.4" y2="488" stroke="#172A46" stroke-width="2"/><line id="E-ADJ-S05-S15" x1="728.3" y1="488" x2="669.4" y2="522" stroke="#172A46" stroke-width="2"/><line id="E-ADJ-S06-S07" x1="640" y1="437" x2="610.6" y2="454" stroke="#172A46" stroke-width="2"/><line id="E-ADJ-S07-S08" x1="610.6" y1="454" x2="581.1" y2="471" stroke="#172A46" stroke-width="2"/><line id="E-ADJ-S10-S11" x1="669.4" y1="420" x2="698.9" y2="437" stroke="#172A46" stroke-width="2"/><line id="E-ADJ-S11-S12" x1="698.9" y1="437" x2="728.3" y2="454" stroke="#172A46" stroke-width="2"/><line id="E-ADJ-S15-S16" x1="669.4" y1="522" x2="640" y2="505" stroke="#172A46" stroke-width="2"/><line id="E-LY-LY01-LY02" x1="492.8" y1="182" x2="492.8" y2="216" stroke="#172A46" stroke-width="2"/><line id="E-LY-LY02-LY03" x1="492.8" y1="216" x2="492.8" y2="250" stroke="#172A46" stroke-width="2"/><line id="E-LY-LY03-LY04" x1="492.8" y1="250" x2="492.8" y2="284" stroke="#172A46" stroke-width="2"/><line id="E-LY-LY04-LY05" x1="492.8" y1="284" x2="492.8" y2="318" stroke="#172A46" stroke-width="2"/><line id="E-LY-LY05-LY06" x1="492.8" y1="318" x2="492.8" y2="352" stroke="#172A46" stroke-width="2"/><line id="E-XT-XT01-S06" x1="728.3" y1="352" x2="640" y2="437" stroke="#C84D4D" stroke-width="1.8" stroke-dasharray="8 5" marker-end="url(#iso-arrow)"/><line id="E-XT-XT01-S10" x1="728.3" y1="352" x2="669.4" y2="420" stroke="#C84D4D" stroke-width="1.8" stroke-dasharray="8 5" marker-end="url(#iso-arrow)"/><line id="E-XT-XT01-S11" x1="728.3" y1="352" x2="698.9" y2="437" stroke="#C84D4D" stroke-width="1.8" stroke-dasharray="8 5" marker-end="url(#iso-arrow)"/><line id="E-XT-XT01-S12" x1="728.3" y1="352" x2="728.3" y2="454" stroke="#C84D4D" stroke-width="1.8" stroke-dasharray="8 5" marker-end="url(#iso-arrow)"/><line id="E-XT-XT01-S14" x1="728.3" y1="352" x2="669.4" y2="488" stroke="#C84D4D" stroke-width="1.8" stroke-dasharray="8 5" marker-end="url(#iso-arrow)"/><line id="E-XT-XT02-S01" x1="463.3" y1="369" x2="551.7" y2="420" stroke="#C84D4D" stroke-width="1.8" stroke-dasharray="8 5" marker-end="url(#iso-arrow)"/><line id="E-XT-XT02-S02" x1="463.3" y1="369" x2="522.2" y2="437" stroke="#C84D4D" stroke-width="1.8" stroke-dasharray="8 5" marker-end="url(#iso-arrow)"/><line id="E-XT-XT02-S03" x1="463.3" y1="369" x2="581.1" y2="403" stroke="#C84D4D" stroke-width="1.8" stroke-dasharray="8 5" marker-end="url(#iso-arrow)"/><line id="E-XT-XT02-S08" x1="463.3" y1="369" x2="581.1" y2="471" stroke="#C84D4D" stroke-width="1.8" stroke-dasharray="8 5" marker-end="url(#iso-arrow)"/><line id="E-XT-XT02-S09" x1="463.3" y1="369" x2="610.6" y2="386" stroke="#C84D4D" stroke-width="1.8" stroke-dasharray="8 5" marker-end="url(#iso-arrow)"/><line id="E-XT-XT03-S04" x1="522.2" y1="471" x2="640" y2="471" stroke="#C84D4D" stroke-width="1.8" stroke-dasharray="8 5" marker-end="url(#iso-arrow)"/><line id="E-XT-XT03-S07" x1="522.2" y1="471" x2="610.6" y2="454" stroke="#C84D4D" stroke-width="1.8" stroke-dasharray="8 5" marker-end="url(#iso-arrow)"/><line id="E-XT-XT03-S08" x1="522.2" y1="471" x2="581.1" y2="471" stroke="#C84D4D" stroke-width="1.8" stroke-dasharray="8 5" marker-end="url(#iso-arrow)"/><line id="E-XT-XT03-S15" x1="522.2" y1="471" x2="669.4" y2="522" stroke="#C84D4D" stroke-width="1.8" stroke-dasharray="8 5" marker-end="url(#iso-arrow)"/><line id="E-XT-XT03-S16" x1="522.2" y1="471" x2="640" y2="505" stroke="#C84D4D" stroke-width="1.8" stroke-dasharray="8 5" marker-end="url(#iso-arrow)"/><line id="E-XT-XT04-S05" x1="787.2" y1="488" x2="728.3" y2="488" stroke="#C84D4D" stroke-width="1.8" stroke-dasharray="8 5" marker-end="url(#iso-arrow)"/><line id="E-XT-XT04-S11" x1="787.2" y1="488" x2="698.9" y2="437" stroke="#C84D4D" stroke-width="1.8" stroke-dasharray="8 5" marker-end="url(#iso-arrow)"/><line id="E-XT-XT04-S12" x1="787.2" y1="488" x2="728.3" y2="454" stroke="#C84D4D" stroke-width="1.8" stroke-dasharray="8 5" marker-end="url(#iso-arrow)"/><line id="E-XT-XT04-S13" x1="787.2" y1="488" x2="698.9" y2="471" stroke="#C84D4D" stroke-width="1.8" stroke-dasharray="8 5" marker-end="url(#iso-arrow)"/><line id="E-XT-XT04-S14" x1="787.2" y1="488" x2="669.4" y2="488" stroke="#C84D4D" stroke-width="1.8" stroke-dasharray="8 5" marker-end="url(#iso-arrow)"/><line id="E-XT-XT05-S01" x1="816.7" y1="437" x2="551.7" y2="420" stroke="#C84D4D" stroke-width="1.8" stroke-dasharray="8 5" marker-end="url(#iso-arrow)"/><line id="E-XT-XT05-S03" x1="816.7" y1="437" x2="581.1" y2="403" stroke="#C84D4D" stroke-width="1.8" stroke-dasharray="8 5" marker-end="url(#iso-arrow)"/><line id="E-XT-XT05-S06" x1="816.7" y1="437" x2="640" y2="437" stroke="#C84D4D" stroke-width="1.8" stroke-dasharray="8 5" marker-end="url(#iso-arrow)"/><line id="E-XT-XT05-S09" x1="816.7" y1="437" x2="610.6" y2="386" stroke="#C84D4D" stroke-width="1.8" stroke-dasharray="8 5" marker-end="url(#iso-arrow)"/><line id="E-XT-XT05-S15" x1="816.7" y1="437" x2="669.4" y2="522" stroke="#C84D4D" stroke-width="1.8" stroke-dasharray="8 5" marker-end="url(#iso-arrow)"/><line id="E-XT-XT05-S16" x1="816.7" y1="437" x2="640" y2="505" stroke="#C84D4D" stroke-width="1.8" stroke-dasharray="8 5" marker-end="url(#iso-arrow)"/></g>
+    <g id="iso-nodes"><g id="N-LY01" data-ref="LY01" data-kind="layer" data-layer="LY01" data-source-kind="original-fiction" data-label-priority="1">
+      <title>LY01 지상 폐허</title>
+      <polygon id="N-LY01-shape" points="492.8,165 522.2,182 492.8,199 463.3,182" fill="#2E8C87" stroke="#172A46" stroke-width="1.8"/>
+      <text x="492.8" y="186" text-anchor="middle" font-size="11" fill="#F6F4EF" stroke="#172A46" stroke-width="0.6">17</text>
+    </g><g id="N-LY02" data-ref="LY02" data-kind="layer" data-layer="LY02" data-source-kind="original-fiction" data-label-priority="1">
+      <title>LY02 역사 대합실</title>
+      <polygon id="N-LY02-shape" points="492.8,199 522.2,216 492.8,233 463.3,216" fill="#2E8C87" stroke="#172A46" stroke-width="1.8"/>
+      <text x="492.8" y="220" text-anchor="middle" font-size="11" fill="#F6F4EF" stroke="#172A46" stroke-width="0.6">18</text>
+    </g><g id="N-LY03" data-ref="LY03" data-kind="layer" data-layer="LY03" data-source-kind="original-fiction" data-label-priority="1">
+      <title>LY03 승강장·선로</title>
+      <polygon id="N-LY03-shape" points="492.8,233 522.2,250 492.8,267 463.3,250" fill="#2E8C87" stroke="#172A46" stroke-width="1.8"/>
+      <text x="492.8" y="254" text-anchor="middle" font-size="11" fill="#F6F4EF" stroke="#172A46" stroke-width="0.6">19</text>
+    </g><g id="N-LY04" data-ref="LY04" data-kind="layer" data-layer="LY04" data-source-kind="original-fiction" data-label-priority="1">
+      <title>LY04 환승 통로</title>
+      <polygon id="N-LY04-shape" points="492.8,267 522.2,284 492.8,301 463.3,284" fill="#2E8C87" stroke="#172A46" stroke-width="1.8"/>
+      <text x="492.8" y="288" text-anchor="middle" font-size="11" fill="#F6F4EF" stroke="#172A46" stroke-width="0.6">20</text>
+    </g><g id="N-LY05" data-ref="LY05" data-kind="layer" data-layer="LY05" data-source-kind="original-fiction" data-label-priority="1">
+      <title>LY05 심층 터널</title>
+      <polygon id="N-LY05-shape" points="492.8,301 522.2,318 492.8,335 463.3,318" fill="#2E8C87" stroke="#172A46" stroke-width="1.8"/>
+      <text x="492.8" y="322" text-anchor="middle" font-size="11" fill="#F6F4EF" stroke="#172A46" stroke-width="0.6">21</text>
+    </g><g id="N-LY06" data-ref="LY06" data-kind="layer" data-layer="LY06" data-source-kind="original-fiction" data-label-priority="1">
+      <title>LY06 차량기지 인접 거점</title>
+      <polygon id="N-LY06-shape" points="492.8,335 522.2,352 492.8,369 463.3,352" fill="#2E8C87" stroke="#172A46" stroke-width="1.8"/>
+      <text x="492.8" y="356" text-anchor="middle" font-size="11" fill="#F6F4EF" stroke="#172A46" stroke-width="0.6">22</text>
+    </g><g id="N-S09" data-ref="S09" data-kind="state" data-layer="LY02" data-source-kind="original-fiction" data-label-priority="1">
+      <title>S09 상암송신공사</title>
+      <polygon id="N-S09-shape" points="610.6,369 640,386 610.6,403 581.1,386" fill="#356FB6" stroke="#172A46" stroke-width="1.8"/>
+      <text x="610.6" y="390" text-anchor="middle" font-size="11" fill="#F6F4EF" stroke="#172A46" stroke-width="0.6">9</text>
+    </g><g id="N-XT01" data-ref="XT01" data-kind="theater" data-layer="LY01" data-source-kind="original-fiction" data-label-priority="1">
+      <title>XT01 임진관문전구</title>
+      <polygon points="736.6,356.8 728.3,361.5 720.1,356.8 720.1,347.2 728.3,342.5 736.6,347.2" fill="#C84D4D" stroke="#172A46" stroke-width="1.8"/>
+      <text x="728.3" y="356" text-anchor="middle" font-size="11" fill="#F6F4EF" stroke="#172A46" stroke-width="0.6">23</text>
+    </g><g id="N-S03" data-ref="S03" data-kind="state" data-layer="LY02" data-source-kind="original-fiction" data-label-priority="1">
+      <title>S03 마곡연구평의회</title>
+      <polygon id="N-S03-shape" points="581.1,386 610.6,403 581.1,420 551.7,403" fill="#356FB6" stroke="#172A46" stroke-width="1.8"/>
+      <text x="581.1" y="407" text-anchor="middle" font-size="11" fill="#F6F4EF" stroke="#172A46" stroke-width="0.6">3</text>
+    </g><g id="N-XT02" data-ref="XT02" data-kind="theater" data-layer="LY01" data-source-kind="original-fiction" data-label-priority="1">
+      <title>XT02 서해곡창전구</title>
+      <polygon points="471.6,373.8 463.3,378.5 455.1,373.8 455.1,364.2 463.3,359.5 471.6,364.2" fill="#C84D4D" stroke="#172A46" stroke-width="1.8"/>
+      <text x="463.3" y="373" text-anchor="middle" font-size="11" fill="#F6F4EF" stroke="#172A46" stroke-width="0.6">24</text>
+    </g><g id="N-S01" data-ref="S01" data-kind="state" data-layer="LY02" data-source-kind="original-fiction" data-label-priority="1">
+      <title>S01 여의신정수문정부</title>
+      <polygon id="N-S01-shape" points="551.7,403 581.1,420 551.7,437 522.2,420" fill="#356FB6" stroke="#172A46" stroke-width="1.8"/>
+      <text x="551.7" y="424" text-anchor="middle" font-size="11" fill="#F6F4EF" stroke="#172A46" stroke-width="0.6">1</text>
+    </g><g id="N-S10" data-ref="S10" data-kind="state" data-layer="LY02" data-source-kind="original-fiction" data-label-priority="1">
+      <title>S10 북산피난연맹</title>
+      <polygon id="N-S10-shape" points="669.4,403 698.9,420 669.4,437 640,420" fill="#356FB6" stroke="#172A46" stroke-width="1.8"/>
+      <text x="669.4" y="424" text-anchor="middle" font-size="11" fill="#F6F4EF" stroke="#172A46" stroke-width="0.6">10</text>
+    </g><g id="N-S02" data-ref="S02" data-kind="state" data-layer="LY02" data-source-kind="original-fiction" data-label-priority="1">
+      <title>S02 서남제작동맹</title>
+      <polygon id="N-S02-shape" points="522.2,420 551.7,437 522.2,454 492.8,437" fill="#356FB6" stroke="#172A46" stroke-width="1.8"/>
+      <text x="522.2" y="441" text-anchor="middle" font-size="11" fill="#F6F4EF" stroke="#172A46" stroke-width="0.6">2</text>
+    </g><g id="N-S06" data-ref="S06" data-kind="state" data-layer="LY02" data-source-kind="original-fiction" data-label-priority="1">
+      <title>S06 도성기록청</title>
+      <polygon id="N-S06-shape" points="640,420 669.4,437 640,454 610.6,437" fill="#356FB6" stroke="#172A46" stroke-width="1.8"/>
+      <text x="640" y="441" text-anchor="middle" font-size="11" fill="#F6F4EF" stroke="#172A46" stroke-width="0.6">6</text>
+    </g><g id="N-S11" data-ref="S11" data-kind="state" data-layer="LY02" data-source-kind="original-fiction" data-label-priority="1">
+      <title>S11 창동차륜방</title>
+      <polygon id="N-S11-shape" points="698.9,420 728.3,437 698.9,454 669.4,437" fill="#356FB6" stroke="#172A46" stroke-width="1.8"/>
+      <text x="698.9" y="441" text-anchor="middle" font-size="11" fill="#F6F4EF" stroke="#172A46" stroke-width="0.6">11</text>
+    </g><g id="N-S07" data-ref="S07" data-kind="state" data-layer="LY02" data-source-kind="original-fiction" data-label-priority="1">
+      <title>S07 용산철도후국</title>
+      <polygon id="N-S07-shape" points="610.6,437 640,454 610.6,471 581.1,454" fill="#356FB6" stroke="#172A46" stroke-width="1.8"/>
+      <text x="610.6" y="458" text-anchor="middle" font-size="11" fill="#F6F4EF" stroke="#172A46" stroke-width="0.6">7</text>
+    </g><g id="N-S12" data-ref="S12" data-kind="state" data-layer="LY02" data-source-kind="original-fiction" data-label-priority="1">
+      <title>S12 신내망우환승시</title>
+      <polygon id="N-S12-shape" points="728.3,437 757.8,454 728.3,471 698.9,454" fill="#356FB6" stroke="#172A46" stroke-width="1.8"/>
+      <text x="728.3" y="458" text-anchor="middle" font-size="11" fill="#F6F4EF" stroke="#172A46" stroke-width="0.6">12</text>
+    </g><g id="N-S04" data-ref="S04" data-kind="state" data-layer="LY02" data-source-kind="original-fiction" data-label-priority="1">
+      <title>S04 뚝도공방연합</title>
+      <polygon id="N-S04-shape" points="640,454 669.4,471 640,488 610.6,471" fill="#356FB6" stroke="#172A46" stroke-width="1.8"/>
+      <text x="640" y="475" text-anchor="middle" font-size="11" fill="#F6F4EF" stroke="#172A46" stroke-width="0.6">4</text>
+    </g><g id="N-S08" data-ref="S08" data-kind="state" data-layer="LY02" data-source-kind="original-fiction" data-label-priority="1">
+      <title>S08 노량진남관상회</title>
+      <polygon id="N-S08-shape" points="581.1,454 610.6,471 581.1,488 551.7,471" fill="#356FB6" stroke="#172A46" stroke-width="1.8"/>
+      <text x="581.1" y="475" text-anchor="middle" font-size="11" fill="#F6F4EF" stroke="#172A46" stroke-width="0.6">8</text>
+    </g><g id="N-S13" data-ref="S13" data-kind="state" data-layer="LY02" data-source-kind="original-fiction" data-label-priority="1">
+      <title>S13 약령의정동맹</title>
+      <polygon id="N-S13-shape" points="698.9,454 728.3,471 698.9,488 669.4,471" fill="#356FB6" stroke="#172A46" stroke-width="1.8"/>
+      <text x="698.9" y="475" text-anchor="middle" font-size="11" fill="#F6F4EF" stroke="#172A46" stroke-width="0.6">13</text>
+    </g><g id="N-XT05" data-ref="XT05" data-kind="theater" data-layer="LY01" data-source-kind="original-fiction" data-label-priority="1">
+      <title>XT05 원양신탁전구</title>
+      <polygon points="824.9,441.8 816.7,446.5 808.4,441.8 808.4,432.2 816.7,427.5 824.9,432.2" fill="#C84D4D" stroke="#172A46" stroke-width="1.8"/>
+      <text x="816.7" y="441" text-anchor="middle" font-size="11" fill="#F6F4EF" stroke="#172A46" stroke-width="0.6">27</text>
+    </g><g id="N-S05" data-ref="S05" data-kind="state" data-layer="LY02" data-source-kind="original-fiction" data-label-priority="1">
+      <title>S05 암사고덕상수단</title>
+      <polygon id="N-S05-shape" points="728.3,471 757.8,488 728.3,505 698.9,488" fill="#356FB6" stroke="#172A46" stroke-width="1.8"/>
+      <text x="728.3" y="492" text-anchor="middle" font-size="11" fill="#F6F4EF" stroke="#172A46" stroke-width="0.6">5</text>
+    </g><g id="N-S14" data-ref="S14" data-kind="state" data-layer="LY02" data-source-kind="original-fiction" data-label-priority="1">
+      <title>S14 아차구의관문국</title>
+      <polygon id="N-S14-shape" points="669.4,471 698.9,488 669.4,505 640,488" fill="#356FB6" stroke="#172A46" stroke-width="1.8"/>
+      <text x="669.4" y="492" text-anchor="middle" font-size="11" fill="#F6F4EF" stroke="#172A46" stroke-width="0.6">14</text>
+    </g><g id="N-S16" data-ref="S16" data-kind="state" data-layer="LY02" data-source-kind="original-fiction" data-label-priority="1">
+      <title>S16 수서강남협약도시</title>
+      <polygon id="N-S16-shape" points="640,488 669.4,505 640,522 610.6,505" fill="#356FB6" stroke="#172A46" stroke-width="1.8"/>
+      <text x="640" y="509" text-anchor="middle" font-size="11" fill="#F6F4EF" stroke="#172A46" stroke-width="0.6">16</text>
+    </g><g id="N-XT03" data-ref="XT03" data-kind="theater" data-layer="LY01" data-source-kind="original-fiction" data-label-priority="1">
+      <title>XT03 해협삼로전구</title>
+      <polygon points="530.5,475.8 522.2,480.5 514,475.8 514,466.2 522.2,461.5 530.5,466.2" fill="#C84D4D" stroke="#172A46" stroke-width="1.8"/>
+      <text x="522.2" y="475" text-anchor="middle" font-size="11" fill="#F6F4EF" stroke="#172A46" stroke-width="0.6">25</text>
+    </g><g id="N-S15" data-ref="S15" data-kind="state" data-layer="LY02" data-source-kind="original-fiction" data-label-priority="1">
+      <title>S15 가락잠실배급국</title>
+      <polygon id="N-S15-shape" points="669.4,505 698.9,522 669.4,539 640,522" fill="#356FB6" stroke="#172A46" stroke-width="1.8"/>
+      <text x="669.4" y="526" text-anchor="middle" font-size="11" fill="#F6F4EF" stroke="#172A46" stroke-width="0.6">15</text>
+    </g><g id="N-XT04" data-ref="XT04" data-kind="theater" data-layer="LY01" data-source-kind="original-fiction" data-label-priority="1">
+      <title>XT04 두만극동전구</title>
+      <polygon points="795.5,492.8 787.2,497.5 779,492.8 779,483.2 787.2,478.5 795.5,483.2" fill="#C84D4D" stroke="#172A46" stroke-width="1.8"/>
+      <text x="787.2" y="492" text-anchor="middle" font-size="11" fill="#F6F4EF" stroke="#172A46" stroke-width="0.6">26</text>
+    </g></g>
+    <g id="iso-callouts"><a href="#N-S01"><text x="20" y="100" font-size="12" fill="#172A46">1 S01 여의신정수문정부</text></a><a href="#N-S02"><text x="20" y="115" font-size="12" fill="#172A46">2 S02 서남제작동맹</text></a><a href="#N-S03"><text x="20" y="130" font-size="12" fill="#172A46">3 S03 마곡연구평의회</text></a><a href="#N-S04"><text x="20" y="145" font-size="12" fill="#172A46">4 S04 뚝도공방연합</text></a><a href="#N-S05"><text x="20" y="160" font-size="12" fill="#172A46">5 S05 암사고덕상수단</text></a><a href="#N-S06"><text x="20" y="175" font-size="12" fill="#172A46">6 S06 도성기록청</text></a><a href="#N-S07"><text x="20" y="190" font-size="12" fill="#172A46">7 S07 용산철도후국</text></a><a href="#N-S08"><text x="20" y="205" font-size="12" fill="#172A46">8 S08 노량진남관상회</text></a><a href="#N-S09"><text x="20" y="220" font-size="12" fill="#172A46">9 S09 상암송신공사</text></a><a href="#N-S10"><text x="20" y="235" font-size="12" fill="#172A46">10 S10 북산피난연맹</text></a><a href="#N-S11"><text x="20" y="250" font-size="12" fill="#172A46">11 S11 창동차륜방</text></a><a href="#N-S12"><text x="20" y="265" font-size="12" fill="#172A46">12 S12 신내망우환승시</text></a><a href="#N-S13"><text x="20" y="280" font-size="12" fill="#172A46">13 S13 약령의정동맹</text></a><a href="#N-S14"><text x="20" y="295" font-size="12" fill="#172A46">14 S14 아차구의관문국</text></a><a href="#N-S15"><text x="20" y="310" font-size="12" fill="#172A46">15 S15 가락잠실배급국</text></a><a href="#N-S16"><text x="20" y="325" font-size="12" fill="#172A46">16 S16 수서강남협약도시</text></a><a href="#N-LY01"><text x="20" y="340" font-size="12" fill="#172A46">17 LY01 지상 폐허</text></a><a href="#N-LY02"><text x="20" y="355" font-size="12" fill="#172A46">18 LY02 역사 대합실</text></a><a href="#N-LY03"><text x="20" y="370" font-size="12" fill="#172A46">19 LY03 승강장·선로</text></a><a href="#N-LY04"><text x="20" y="385" font-size="12" fill="#172A46">20 LY04 환승 통로</text></a><a href="#N-LY05"><text x="20" y="400" font-size="12" fill="#172A46">21 LY05 심층 터널</text></a><a href="#N-LY06"><text x="20" y="415" font-size="12" fill="#172A46">22 LY06 차량기지 인접 거점</text></a><a href="#N-XT01"><text x="20" y="430" font-size="12" fill="#C84D4D">23 XT01 임진관문전구</text></a><a href="#N-XT02"><text x="20" y="445" font-size="12" fill="#C84D4D">24 XT02 서해곡창전구</text></a><a href="#N-XT03"><text x="20" y="460" font-size="12" fill="#C84D4D">25 XT03 해협삼로전구</text></a><a href="#N-XT04"><text x="20" y="475" font-size="12" fill="#C84D4D">26 XT04 두만극동전구</text></a><a href="#N-XT05"><text x="20" y="490" font-size="12" fill="#C84D4D">27 XT05 원양신탁전구</text></a></g>
+    <g id="iso-legend">
+      <text x="998" y="88" font-size="16" font-weight="700">범례 · 색만으로 구분하지 않음</text>
+      <g id="LG-STATE"><polygon points="1010,104 1022,112 1010,120 998,112" fill="#356FB6" stroke="#172A46" stroke-width="1.4"/><text x="1028" y="116" font-size="14" fill="#172A46">국가</text></g><g id="LG-LAYER"><polygon points="1010,132 1022,140 1010,148 998,140" fill="#2E8C87" stroke="#172A46" stroke-width="1.4"/><text x="1028" y="144" font-size="14" fill="#172A46">수직 층</text></g><g id="LG-THEATER"><polygon points="1017.8,172.5 1010,177 1002.2,172.5 1002.2,163.5 1010,159 1017.8,163.5" fill="#C84D4D" stroke="#172A46" stroke-width="1.4"/><text x="1028" y="172" font-size="14" fill="#172A46">외부전구</text></g><g id="LG-ADJ"><line x1="998" y1="196" x2="1022" y2="196" stroke="#172A46" stroke-width="3"/><text x="1028" y="200" font-size="14" fill="#172A46">인접 회랑</text></g><g id="LG-PRESS"><line x1="998" y1="224" x2="1022" y2="224" stroke="#C84D4D" stroke-width="3" stroke-dasharray="6 4"/><text x="1028" y="228" font-size="14" fill="#172A46">전구 연결</text></g>
+      <a href="../../game-logic/Sixteen-States.md"><text x="998" y="270" font-size="14" fill="#356FB6">십육국 문서</text></a><a href="../../game-logic/World-and-Subway-Layers.md"><text x="998" y="292" font-size="14" fill="#356FB6">지하철 층 문서</text></a><a href="../../game-logic/External-Theaters.md"><text x="998" y="314" font-size="14" fill="#356FB6">외부전구 문서</text></a>
+    </g>
+    <g id="iso-compass">
+      <text x="640" y="688" text-anchor="middle" font-size="14">카메라: 직교 · Yaw 45° · Pitch 35.264° · 1.5m 칸 · 자유 회전 없음</text>
+      <text x="500" y="712" text-anchor="middle" font-size="13">북</text>
+      <text x="580" y="712" text-anchor="middle" font-size="13">동</text>
+      <text x="660" y="712" text-anchor="middle" font-size="13">남</text>
+      <text x="740" y="712" text-anchor="middle" font-size="13">서</text>
+    </g>
+  </g>
+</svg>

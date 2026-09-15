@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title>지하철 다층 공간의 인물 방향 시야 연결</title>
+  <desc>서울과 지하철 레이어에서 인물의 칸, 방향, 시야가 게임 규칙에 미치는 영향을 설명하는 아이소메트릭 도표.</desc>
+  <rect width="1280" height="720" fill="#07141b"/>
+  <g font-family="Pretendard, Noto Sans KR, Apple SD Gothic Neo, Malgun Gothic, sans-serif" fill="#e8f6fa">
+    <text x="64" y="70" font-size="34" font-weight="700">서울과 지하철 레이어</text>
+    <text x="64" y="108" font-size="18" fill="#9ec6d2">지하철 다층 공간의 인물 방향 시야 연결</text>
+    <g transform="translate(330 90)">
+      <path d="M310 20 560 110 310 200 60 110Z" fill="#102c36" stroke="hsl(215 70% 58%)" stroke-width="4"/>
+      <path d="M310 170 540 255 310 340 80 255Z" fill="#174555" stroke="#61d4db" stroke-width="4"/>
+      <path d="M310 320 520 400 310 480 100 400Z" fill="#0e252e" stroke="#315865" stroke-width="4"/>
+      <path d="M310 110 310 400" stroke="#ffffff" stroke-width="6"/>
+      <circle cx="310" cy="110" r="16" fill="#f1b85b"/>
+      <circle cx="310" cy="255" r="16" fill="#f1b85b"/>
+      <circle cx="310" cy="400" r="16" fill="#f1b85b"/>
+      <text x="580" y="120" font-size="20">지상층</text>
+      <text x="580" y="270" font-size="20">연결층</text>
+      <text x="580" y="420" font-size="20">지하층</text>
+    </g>
+    <text x="64" y="630" font-size="15" fill="#9ec6d2">공통 아이소 문법</text>
+    <g font-size="22" font-weight="650">
+      <text x="64" y="668">칸에 누가 서 있나</text>
+      <text x="430" y="668">어느 쪽을 보나</text>
+      <text x="780" y="668">시야</text>
+    </g>
+  </g>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#fff"/></marker></defs>
+</svg>

@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="잔선: 서울 실시간 진형 전투의 첫 단계 진형 편집 검토용 Three.js POC"
+    />
+    <title>잔선: 서울 · 진형 편집 검토용 POC</title>
+    <link rel="stylesheet" href="./styles.css?v=windows-html-poc-20260909" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <p class="eyebrow">JANSEON: SEOUL / DEPLOYMENT REVIEW</p>
+          <h1>출격 진형 편집</h1>
+          <p class="subtitle">
+            작은 역사 · 승강장 동측 / 전투 개시 전 배치
+          </p>
+        </div>
+        <div class="mission-state" aria-label="현재 검토 단계">
+          <span class="stage-index">01</span>
+          <span>
+            <strong>배치 검토</strong>
+            <small>다음 단계 자동 진행 없음</small>
+          </span>
+        </div>
+      </header>
+
+      <main class="workspace">
+        <section class="scene-panel" aria-labelledby="scene-title">
+          <div class="scene-heading">
+            <div>
+              <p class="section-kicker">고정 직교 아이소메트릭</p>
+              <h2 id="scene-title">승강장 배치도</h2>
+            </div>
+            <div class="scene-specs" aria-label="장면 규격">
+              <span>CAM 45° / 35.264°</span>
+              <span>GRID 1.5m</span>
+              <span>PARTY 6 / 6</span>
+            </div>
+          </div>
+
+          <div id="viewport" class="viewport">
+            <div class="viewport-topline">
+              <span class="ally-legend"><i></i> 아군 진형</span>
+              <span class="enemy-legend"><i></i> 적 참고 실루엣 6</span>
+            </div>
+            <div id="boot-status" class="boot-status" role="status">
+              Three.js WebGL 장면 준비 중…
+            </div>
+            <div class="temporary-note">
+              임시 저폴리 스탠드인 · 생성 아트/기증 에셋 미사용
+            </div>
+          </div>
+
+          <div class="scene-help">
+            <span><kbd>1</kbd>–<kbd>6</kbd> 유닛 선택</span>
+            <span><kbd>방향키</kbd> 슬롯 이동</span>
+            <span><kbd>Enter</kbd> 배치</span>
+            <span><kbd>C</kbd> 확정</span>
+            <span><kbd>E</kbd> 다시 편집</span>
+            <span><kbd>R</kbd> 초기화</span>
+          </div>
+        </section>
+
+        <aside class="command-panel" aria-labelledby="command-title">
+          <div class="command-header">
+            <div>
+              <p class="section-kicker">FORMATION CONTROL</p>
+              <h2 id="command-title">배치 명령</h2>
+            </div>
+            <span id="lock-chip" class="lock-chip">편집 중</span>
+          </div>
+
+          <section class="control-section">
+            <div class="section-title-row">
+              <h3>1. 대원 선택</h3>
+              <span>6명</span>
+            </div>
+            <div id="unit-list" class="unit-list"></div>
+          </section>
+
+          <section class="control-section">
+            <div class="section-title-row">
+              <h3>2. 목적 슬롯</h3>
+              <span>3열 × 좌·중·우</span>
+            </div>
+            <div class="formation-axis">
+              <span></span>
+              <span>좌</span>
+              <span>중앙</span>
+              <span>우</span>
+            </div>
+            <div id="slot-grid" class="slot-grid"></div>
+          </section>
+
+          <section class="selected-report" aria-labelledby="selected-title">
+            <div class="selected-name">
+              <span id="selected-role" class="role-badge"></span>
+              <div>
+                <small id="selected-callsign"></small>
+                <h3 id="selected-title"></h3>
+              </div>
+            </div>
+            <dl>
+              <div>
+                <dt>행</dt>
+                <dd id="selected-row"></dd>
+              </div>
+              <div>
+                <dt>열</dt>
+                <dd id="selected-column"></dd>
+              </div>
+              <div>
+                <dt>정면</dt>
+                <dd id="selected-facing">북쪽 · 적 방향</dd>
+              </div>
+              <div>
+                <dt>파티</dt>
+                <dd>6 / 6</dd>
+              </div>
+            </dl>
+          </section>
+
+          <div id="notice" class="notice" aria-live="polite">
+            대원을 선택하고 슬롯을 누르면 배치됩니다.
+          </div>
+
+          <div class="actions">
+            <button id="confirm-action" class="button button-primary">
+              배치 확정
+            </button>
+            <button id="edit-action" class="button" disabled>
+              배치 다시 편집
+            </button>
+            <button id="reset-action" class="button button-quiet">
+              초기 진형
+            </button>
+            <button id="continue-action" class="button campaign-continue" hidden>
+              실시간 교전으로
+            </button>
+          </div>
+        </aside>
+      </main>
+
+      <footer class="disclaimer">
+        <strong>1단계 · 진형 편집 검토용 POC / C# Core와 별도</strong>
+        <span>
+          이 화면은 조작감과 시각 구성을 검토하기 위한 Three.js 근사 모델이며
+          전투·카드·정산을 실행하지 않습니다.
+        </span>
+        <a class="poc-home-link" href="../">POC 목록</a>
+      </footer>
+    </div>
+
+    <script>
+      window.addEventListener("error", () => {
+        const status = document.getElementById("boot-status");
+        if (status) {
+          status.textContent =
+            "WebGL 장면을 불러오지 못했습니다. 네트워크와 모듈 응답을 확인하세요.";
+          status.classList.add("is-error");
+        }
+      });
+    </script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="잔선 애니메 풍 초상 — 원본 2D 부품을 직접 선택하고 합성하는 도구">
+<title>잔선 — 애니메 풍 초상 조합</title>
+<style>
+:root{color-scheme:dark;--bg:#0b111c;--panel:#141c2a;--well:#0e1622;--line:#2a3548;--focus:#c9a227;--text:#e6eaf0;--muted:#9aa6b2}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.6 "Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;word-break:keep-all}
+.shell{max-width:1040px;margin:auto;padding:32px 24px 48px}header{margin-bottom:24px}h1{font-size:24px;margin:0 0 8px}h2{font-size:14px;margin:0 0 12px}p{margin:0;color:var(--muted)}main{display:grid;grid-template-columns:minmax(0,520px) minmax(280px,1fr);gap:24px;align-items:start}
+.stage{min-width:0}.art{background:var(--well);border:1px solid var(--line);border-radius:4px;overflow:hidden}.art.checker{background:repeating-conic-gradient(#243044 0% 25%,#141c2a 0% 50%) 0 0/24px 24px}.art.light{background:#fff}.art.dark{background:#000}canvas,.reference{width:100%;height:auto;display:block}canvas{aspect-ratio:1145/1374}.reference[hidden]{display:none}.caption{font-size:12px;color:var(--muted);padding:8px 0;min-height:36px}
+.controls{display:grid;gap:16px}.panel{padding:16px;background:var(--panel);border:1px solid var(--line);border-radius:4px}.field{display:grid;grid-template-columns:60px 1fr;gap:12px;align-items:center;margin-top:12px}select,button{font:inherit;color:var(--text);border:1px solid var(--line);border-radius:4px;background:var(--well);padding:8px 12px;min-height:40px}select{width:100%}button{cursor:pointer}button:hover,select:hover{border-color:var(--muted)}:focus-visible{outline:2px solid var(--focus);outline-offset:3px}button:disabled{opacity:.5;cursor:default}input{accent-color:var(--focus)}.actions{display:flex;flex-wrap:wrap;gap:8px}.check{display:flex;gap:8px;align-items:center;font-size:13px;margin:12px 0}.rows{max-height:300px;overflow:auto}.row{display:grid;grid-template-columns:20px 24px 1fr auto;gap:8px;align-items:center;padding:4px 0;font-size:12px}.row small,.row span:first-of-type{color:var(--muted)}.row.disabled{color:var(--muted)}.step{display:flex;gap:12px;align-items:center}.step input{width:100%;min-width:0}output{white-space:nowrap;font-size:12px}.status{margin-top:16px;color:var(--muted);font-size:12px}.error{color:#ffc2b8}footer{margin-top:24px;color:var(--muted);font-size:12px}.reference-label{padding:8px 0;font-size:12px;color:var(--muted)}[hidden]{display:none!important}
+@media(max-width:720px){.shell{padding:20px 16px 32px}main{grid-template-columns:1fr;gap:16px}h1{font-size:20px}.stage{max-width:520px;margin:auto;width:100%}.rows{max-height:260px}}
+</style>
+</head>
+<body><div class="shell">
+<header><h1>애니메 풍 초상 조합</h1><p>머리·눈·의상을 선택하면 연결된 2D 부품이 함께 바뀝니다.</p></header>
+<main>
+<section class="stage" aria-label="합성 초상">
+  <div class="art" id="art"><canvas id="cv" width="1145" height="1374" aria-label="선택한 부품으로 합성한 초상"></canvas></div>
+  <div class="caption" id="caption">부품을 불러오는 중입니다.</div>
+  <div id="reference-wrap" hidden><div class="reference-label">지정 타겟 · 기본 조합 대조용 원본</div><img id="reference" class="reference" alt="기본 조합의 지정 타겟" width="1145" height="1374"></div>
+</section>
+<aside class="controls" aria-label="초상 조합 설정">
+  <section class="panel"><h2>부품 선택</h2>
+    <label class="field"><span>머리</span><select data-group="hair" disabled><option value="h0">가르마 단발</option><option value="h1">일자 앞머리</option></select></label>
+    <label class="field"><span>눈</span><select data-group="eyes" disabled><option value="e0">기본 시선</option><option value="e1">집중한 시선</option></select></label>
+    <label class="field"><span>의상</span><select data-group="outfit" disabled><option value="o0">겹깃 작업복</option><option value="o1">지퍼 재킷</option></select></label>
+    <label class="check"><input id="compare" type="checkbox">지정 타겟 함께 보기</label>
+    <div class="actions"><button type="button" id="reset" disabled>기본 조합</button><button type="button" id="download" disabled>PNG 저장</button></div>
+  </section>
+  <section class="panel"><h2>합성 확인</h2>
+    <label class="field"><span>배경</span><select id="background"><option value="source">원본 배경</option><option value="checker">투명 격자</option><option value="light">흰색</option><option value="dark">검정</option></select></label>
+    <label class="check" for="step">뒤에서 앞으로 한 장씩 쌓기</label><div class="step"><input id="step" type="range" min="0" max="22" value="22" aria-label="표시할 레이어 수"><output id="step-count">0 / 0</output></div>
+  </section>
+  <section class="panel"><h2>렌더 슬롯 · 위가 뒤, 아래가 앞</h2><div class="rows" id="rows"></div></section>
+</aside>
+</main>
+<div class="status" id="status" role="status" aria-live="polite">불러오는 중</div>
+<footer>《잔선》 2D 초상 저작 도구. 런타임 승격 여부와 별도로 부품 조합을 검증합니다.</footer>
+</div>
+<script type="module" src="./portrait.js"></script>
+</body></html>

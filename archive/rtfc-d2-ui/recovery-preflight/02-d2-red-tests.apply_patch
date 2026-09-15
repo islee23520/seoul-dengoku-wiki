@@ -1,0 +1,173 @@
+*** Begin Patch
+*** Update File: Game/Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs
+@@ -48,6 +48,12 @@
+         const string ActionEnterResolution = "action-enter-resolution";
+         const string ActionSettle = "action-settle";
+         const string BattleAdvance = "battle-advance";
++        const string D2BattlePlayPause = "battle-play-pause";
++        const string D2CardGeneralRecharge = "card-general-recharge";
++        const string D2CardGeneralUse = "card-general-use";
++        const string D2EditFormation = "edit-formation";
++        const string D2BattleMorale = "battle-morale";
++        const string D2ReinforcementForecast = "battle-reinforcement-forecast";
+ 
+         [Test]
+         public async Task MainTitle_Start_EntersFoundation_ShowsBasePreparation()
+@@ -245,6 +251,111 @@
+         }
+ 
+         [Test]
++        public async Task D2_FormationEdit_DeploysChangedFormationBeforeRealtimeStarts()
++        {
++            D2BattleSurface surface = await OpenD2BattleSurfaceAsync();
++            Assert.That(surface.Session.Battle.Deployed, Is.False,
++                "combat choice must expose predeployment before the realtime simulation starts");
++            Assert.That(surface.Session.BattlePaused, Is.True,
++                "the sole production Step owner must remain paused during formation editing");
++
++            UnitState commander = surface.Session.Battle.Units.First(
++                unit => unit.Id.Equals(surface.Session.Battle.PlayerCommanderId));
++            GridCoord before = commander.Cell;
++            await ClickAndAwait(surface.Session, surface.Root, D2EditFormation, s => s.Battle.Deployed);
++
++            Assert.That(commander.Cell, Is.Not.EqualTo(before),
++                "edit-formation must submit changed FormationSlot data through Core Deploy");
++            Assert.That(surface.Driver.State, Is.SameAs(surface.Session.Battle));
++        }
++
++        [Test]
++        public async Task D2_GeneralCard_IsAcceptedFromActualUiWhilePaused()
++        {
++            D2BattleSurface surface = await OpenD2BattleSurfaceAsync();
++            await ClickAndAwait(surface.Session, surface.Root, D2EditFormation, s => s.Battle.Deployed);
++            int tick = surface.Session.Battle.Tick;
++            int morale = surface.Session.Battle.Sides[0].Morale;
++
++            await ClickAndAwait(surface.Session, surface.Root, D2CardGeneralUse, s =>
++                s.Battle.Sides[0].Morale == morale + 10
++                && s.Battle.Cards.First(card => card.Id == "encourage-morale").RechargeTicksLeft == 600);
++
++            Assert.That(surface.Session.BattlePaused, Is.True,
++                "a valid paused card command must not resume the driver");
++            Assert.That(surface.Session.Battle.Tick, Is.EqualTo(tick),
++                "paused card acceptance changes Core command state without advancing simulation time");
++        }
++
++        [Test]
++        public async Task D2_GeneralRecharge_VisibleValueTracksCoreAfterResume()
++        {
++            D2BattleSurface surface = await OpenD2BattleSurfaceAsync();
++            await ClickAndAwait(surface.Session, surface.Root, D2EditFormation, s => s.Battle.Deployed);
++            await ClickAndAwait(surface.Session, surface.Root, D2CardGeneralUse, s =>
++                s.Battle.Cards.First(card => card.Id == "encourage-morale").RechargeTicksLeft == 600);
++
++            Assert.That(RequireText(surface.Root, D2CardGeneralRecharge).text, Does.Contain("600"),
++                "visible general recharge must come from the Core CardState");
++
++            Task<int> stepped = WaitForSteppedFrame(surface.Driver, TimeSpan.FromSeconds(8));
++            await ClickAndAwait(surface.Session, surface.Root, D2BattlePlayPause, s => !s.BattlePaused);
++            await stepped;
++            int remaining = surface.Session.Battle.Cards.First(
++                card => card.Id == "encourage-morale").RechargeTicksLeft;
++            Assert.That(remaining, Is.LessThan(600));
++            Assert.That(RequireText(surface.Root, D2CardGeneralRecharge).text,
++                Does.Contain(remaining.ToString(CultureInfo.InvariantCulture)),
++                "visible recharge must follow the driver-owned Core tick");
++        }
++
++        [Test]
++        public async Task D2_MoraleAndReinforcementForecast_AreLiveCoreValues()
++        {
++            D2BattleSurface surface = await OpenD2BattleSurfaceAsync();
++            int morale = surface.Session.Battle.Sides[0].Morale;
++            TelegraphState next = surface.Session.Battle.Telegraphs
++                .Where(telegraph => !telegraph.Arrived)
++                .OrderBy(telegraph => telegraph.ArrivalTick)
++                .First();
++            int reinforcements = surface.Session.Battle.Telegraphs
++                .Where(telegraph => !telegraph.Arrived)
++                .Sum(telegraph => telegraph.Count);
++
++            Assert.That(RequireText(surface.Root, D2BattleMorale).text,
++                Does.Contain(morale.ToString(CultureInfo.InvariantCulture)),
++                "battle morale must display SideState.Morale");
++            Text forecast = RequireText(surface.Root, D2ReinforcementForecast);
++            Assert.That(forecast.text, Does.Contain(next.ArrivalTick.ToString(CultureInfo.InvariantCulture)));
++            Assert.That(forecast.text, Does.Contain(reinforcements.ToString(CultureInfo.InvariantCulture)),
++                "reinforcement forecast must aggregate remaining Core telegraphs");
++        }
++
++        [Test]
++        public async Task D2_PauseResume_IsVisibleAndRemovesTurnApResidue()
++        {
++            D2BattleSurface surface = await OpenD2BattleSurfaceAsync();
++            Button flow = UguiHudBuilder.ButtonNamed(surface.Root, D2BattlePlayPause);
++            Assert.That(flow, Is.Not.Null, "battle-play-pause must exist on the production Canvas");
++            string pausedLabel = RequireText(surface.Root, D2BattlePlayPause).text;
++            Assert.That(pausedLabel, Is.Not.Empty);
++
++            await ClickAndAwait(surface.Session, surface.Root, D2EditFormation, s => s.Battle.Deployed);
++            Task<int> stepped = WaitForSteppedFrame(surface.Driver, TimeSpan.FromSeconds(8));
++            await ClickAndAwait(surface.Session, surface.Root, D2BattlePlayPause, s => !s.BattlePaused);
++            await stepped;
++            Assert.That(RequireText(surface.Root, D2BattlePlayPause).text, Is.Not.EqualTo(pausedLabel),
++                "the visible control must distinguish paused and running states");
++
++            Assert.That(UguiHudBuilder.Find(surface.Root, "battle-ap"), Is.Null);
++            Assert.That(UguiHudBuilder.Find(surface.Root, "battle-ap-meter"), Is.Null);
++            Assert.That(UguiHudBuilder.Find(surface.Root, "battle-ap-fill"), Is.Null);
++            Assert.That(UguiHudBuilder.Find(surface.Root, "battle-end-turn"), Is.Null);
++            Assert.That(UguiHudBuilder.Find(surface.Root, "battle-move-n"), Is.Null);
++            Assert.That(UguiHudBuilder.Find(surface.Root, "battle-melee"), Is.Null);
++        }
++
++        [Test]
+         public async Task CombatUi_SelectsAndPlaysMobilityCard_ThenTicksCooldown()
+         {
+             await BootstrapToFoundationAsync();
+@@ -583,6 +694,44 @@
+             }
+         }
+ 
++        sealed class D2BattleSurface
++        {
++            public IPocCoreLoopSession Session;
++            public RectTransform Root;
++            public BattleSessionDriver Driver;
++        }
++
++        async Task<D2BattleSurface> OpenD2BattleSurfaceAsync()
++        {
++            await BootstrapToFoundationAsync();
++            GameplayUiHost host = FindGameplayHost();
++            IPocCoreLoopSession session = ResolveSession(host);
++            RectTransform root = RequireRoot(host);
++            await ClickAndAwait(session, root, ActionDepart, s => s.Campaign.Stage == CampaignStage.ExpeditionTravel);
++            await ClickAndAwait(session, root, UiElementNames.StationSindorim, s => s.Campaign.Node.Equals(StationId.Sindorim));
++            await ClickAndAwait(session, root, ActionFaceEncounter, s => s.Campaign.Stage == CampaignStage.Encounter);
++            await ClickAndAwait(session, root, ActionEnterResolution, s => s.Campaign.Stage == CampaignStage.Resolution);
++            await ClickAndAwait(session, root, UiElementNames.ChoiceCombat, s => s.Battle != null);
++
++            FoundationLifetimeScope scope = UnityEngine.Object.FindAnyObjectByType<FoundationLifetimeScope>();
++            Assert.That(scope, Is.Not.Null);
++            return new D2BattleSurface
++            {
++                Session = session,
++                Root = root,
++                Driver = scope.Container.Resolve<BattleSessionDriver>(),
++            };
++        }
++
++        static Text RequireText(RectTransform root, string elementName)
++        {
++            Transform element = UguiHudBuilder.Find(root, elementName);
++            Assert.That(element, Is.Not.Null, "missing visible value " + elementName);
++            Text text = element.GetComponent<Text>() ?? element.GetComponentInChildren<Text>(true);
++            Assert.That(text, Is.Not.Null, "missing text binding " + elementName);
++            return text;
++        }
++
+         async Task<BranchResult> RunBranchAsync(EncounterChoice choice)
+         {
+             await BootstrapToFoundationAsync();
+*** End Patch

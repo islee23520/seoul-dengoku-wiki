@@ -1,0 +1,10 @@
+Authoritative worktree: E:/git/seoul-kenshi-wt/rtfc-phase-d
+Required base HEAD: baaeb8a5b46404f0e866c795cf65c1f431673ca4
+
+1. Apply 01-recover-and-add-d2-red.apply_patch with the session apply_patch tool.
+   This repairs inherited UTF-8/string/event-seam corruption back to committed production bytes and adds only five [Category("D2Ui")] behavior tests.
+2. Run the focused D2Ui PlayMode test to capture behavioral RED. Preserve raw command, log, XML, and exit under a new evidence path; do not overwrite inherited PlayMode_Log*.txt.
+3. Apply 02-implement-d2-green.apply_patch with the session apply_patch tool.
+4. Run diagnostics, focused tests, D1 regressions, capture PlayMode, validator, supported Windows build, and the full real route.
+
+Patch 02 is authored against the exact state produced by patch 01. Do not apply patch 02 directly to the inherited dirty draft.

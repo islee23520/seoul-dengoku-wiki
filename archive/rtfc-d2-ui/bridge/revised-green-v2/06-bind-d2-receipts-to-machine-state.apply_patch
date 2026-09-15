@@ -1,0 +1,52 @@
+--- a/Game/Assets/Tests/PlayMode/UiToolkitCapturePlayModeTests.cs
++++ b/Game/Assets/Tests/PlayMode/UiToolkitCapturePlayModeTests.cs
+@@ -231,7 +231,7 @@
+             sb.Append("\"height\": ").Append(height).Append(", ");
+             sb.Append("\"seed\": ").Append(Seed).Append(", ");
+             sb.Append("\"state\": \"").Append(state).Append("\", ");
+-            sb.Append("\"state_hash\": \"").Append(sha, 0, 16).Append("\", ");
++            sb.Append("\"state_hash\": \"").Append(ComputeStateHash(state)).Append("\", ");
+             sb.Append("\"head\": \"").Append(testedHead).Append("\", ");
+             sb.Append("\"dirty_tree_fingerprint\": \"").Append(testedFingerprint).Append("\", ");
+             sb.Append("\"active_scene\": \"").Append(SceneManager.GetActiveScene().path.Replace("\\", "/")).Append("\", ");
+@@ -239,6 +239,8 @@
+             sb.Append("\"capture_api\": \"PlayMode Camera.targetTexture+Camera.Render+ReadPixels\", ");
+             sb.Append("\"is_playing\": true, ");
+             sb.Append("\"png\": \"").Append(stem).Append(".png\", ");
++            sb.Append("\"tested_route\": \"").Append(TestedRoute(state)).Append("\", ");
++            sb.Append("\"captured_at_utc\": \"").Append(DateTime.UtcNow.ToString("o")).Append("\", ");
+             sb.Append("\"png_sha256\": \"").Append(sha).Append("\"");
+             sb.Append(" }");
+             File.WriteAllText(Path.Combine(dir, stem + ".receipt.json"), sb.ToString());
+@@ -264,6 +266,31 @@
+         yield break;
+     }
+ 
++    static string ComputeStateHash(string state)
++    {
++        string scene = SceneManager.GetActiveScene().path.Replace("\\", "/");
++        string machineState = session == null
++            ? "title|" + state + "|" + scene + "|" + (mainTitleCanvasRoot?.name ?? string.Empty)
++            : "gameplay|" + state + "|" + scene + "|" + session.CampaignHash + "|"
++                + session.BattleHash + "|paused=" + session.BattlePaused;
++        using var sha256 = System.Security.Cryptography.SHA256.Create();
++        byte[] hash = sha256.ComputeHash(Encoding.UTF8.GetBytes(machineState));
++        return BitConverter.ToString(hash).Replace("-", "").ToLowerInvariant();
++    }
++
++    static string TestedRoute(string state)
++    {
++        return state switch
++        {
++            "idle" => "Bootstrap>MainTitle",
++            "route-stage" => "Bootstrap>MainTitle>Start>Foundation:BasePreparation@Yeongdeungpo",
++            "encounter" => "Depart>Travel:Sindorim>FaceEncounter>EnterResolution",
++            "battle-paused-card-recharging" => "ChooseCombat>SwapFormation>Deploy>PlayGeneralCard:Paused",
++            "settlement" => "Resume>Terminal>Settle",
++            _ => state,
++        };
++    }
++
+     static string RunGit(string args)
+     {
+         string repoRoot = Directory.GetParent(Application.dataPath)!.Parent!.FullName;

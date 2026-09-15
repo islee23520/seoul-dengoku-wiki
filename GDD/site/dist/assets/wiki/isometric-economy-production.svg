@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title>생산 시설과 노동 배치의 아이소 흐름</title>
+  <desc>경제와 생산에서 인물의 칸, 방향, 시야가 게임 규칙에 미치는 영향을 설명하는 아이소메트릭 도표.</desc>
+  <rect width="1280" height="720" fill="#07141b"/>
+  <g font-family="Pretendard, Noto Sans KR, Apple SD Gothic Neo, Malgun Gothic, sans-serif" fill="#e8f6fa">
+    <text x="64" y="70" font-size="34" font-weight="700">경제와 생산</text>
+    <text x="64" y="108" font-size="18" fill="#9ec6d2">생산 시설과 노동 배치의 아이소 흐름</text>
+    <g transform="translate(80 180)">
+      <path d="M120 80 240 150 120 220 0 150Z" fill="#102c36" stroke="hsl(206 70% 58%)" stroke-width="4"/>
+      <rect x="360" y="60" width="280" height="200" rx="12" fill="#174555" stroke="#61d4db" stroke-width="4"/>
+      <path d="M900 80 1040 150 900 220 760 150Z" fill="#102c36" stroke="#61d4db" stroke-width="4"/>
+      <path d="M240 150 360 150" stroke="#ffffff" stroke-width="8" marker-end="url(#arrow)"/>
+      <path d="M640 150 760 150" stroke="#ffffff" stroke-width="8" marker-end="url(#arrow)"/>
+      <circle cx="500" cy="160" r="20" fill="#f1b85b" stroke="#fff4d4" stroke-width="3"/>
+      <path d="M480 40 520 40 510 70 530 110 470 110 490 70Z" fill="#e94f64"/>
+      <text x="70" y="270" font-size="20">입력 물자</text>
+      <text x="445" y="300" font-size="20">생산 시설</text>
+      <text x="860" y="270" font-size="20">완료 산출</text>
+      <text x="445" y="25" font-size="20">병목 경고</text>
+      <text x="465" y="200" font-size="18">배치 노동자</text>
+    </g>
+    <text x="64" y="630" font-size="15" fill="#9ec6d2">공통 아이소 문법</text>
+    <g font-size="22" font-weight="650">
+      <text x="64" y="668">칸에 누가 서 있나</text>
+      <text x="430" y="668">어느 쪽을 보나</text>
+      <text x="780" y="668">시야</text>
+    </g>
+  </g>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#fff"/></marker></defs>
+</svg>

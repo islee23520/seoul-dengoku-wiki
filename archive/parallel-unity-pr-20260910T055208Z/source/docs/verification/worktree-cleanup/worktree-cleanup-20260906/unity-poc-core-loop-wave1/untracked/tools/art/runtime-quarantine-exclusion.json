@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "purpose": "Runtime exclusion list for Todo16 under final provider lock. Historical TRELLIS files remain on disk/git; they must not wire into playable scenes or count as visual evidence.",
+  "provider_lock": {
+    "trellis": "FULLY_BLOCKED",
+    "tripo": "AGENT_FORBIDDEN",
+    "meshygen_plus": "UNVERIFIED_NO_INFERENCE",
+    "comfyui": "INTAKE_ONLY_no_invocation",
+    "phase0": true
+  },
+  "do_not_delete_tracked_historical_files": true,
+  "excluded_from_runtime": [
+    {
+      "asset_id": "poc-prop-ticket-gate",
+      "class": "D_trellis_derived_invalid",
+      "generation_backend": "trellis_v1",
+      "paths": [
+        "Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate",
+        "Game/Assets/Janseon/ArtSource/Props/poc-prop-ticket-gate"
+      ]
+    },
+    {
+      "asset_id": "poc-prop-pump-crate",
+      "class": "D_trellis_derived_invalid",
+      "generation_backend": "trellis_v1",
+      "paths": [
+        "Game/Assets/Janseon/Art/Props/poc-prop-pump-crate",
+        "Game/Assets/Janseon/ArtSource/Props/poc-prop-pump-crate"
+      ]
+    },
+    {
+      "asset_id": "poc-prop-shutter",
+      "class": "D_trellis_derived_invalid",
+      "generation_backend": "trellis_v1",
+      "paths": [
+        "Game/Assets/Janseon/Art/Props/poc-prop-shutter",
+        "Game/Assets/Janseon/ArtSource/Props/poc-prop-shutter"
+      ]
+    },
+    {
+      "asset_id": "poc-prop-pillar",
+      "class": "D_trellis_derived_invalid",
+      "generation_backend": "trellis_v1",
+      "paths": [
+        "Game/Assets/Janseon/Art/Props/poc-prop-pillar",
+        "Game/Assets/Janseon/ArtSource/Props/poc-prop-pillar"
+      ]
+    },
+    {
+      "asset_id": "poc-prop-bench",
+      "class": "D_trellis_derived_invalid",
+      "generation_backend": "trellis_v1",
+      "paths": [
+        "Game/Assets/Janseon/Art/Props/poc-prop-bench",
+        "Game/Assets/Janseon/ArtSource/Props/poc-prop-bench"
+      ]
+    },
+    {
+      "asset_id": "poc-prop-cabinet",
+      "class": "D_trellis_derived_invalid",
+      "generation_backend": "trellis_v1",
+      "paths": [
+        "Game/Assets/Janseon/Art/Props/poc-prop-cabinet",
+        "Game/Assets/Janseon/ArtSource/Props/poc-prop-cabinet"
+      ]
+    },
+    {
+      "asset_id": "station-prop-validation-scene",
+      "class": "D_trellis_derived_invalid",
+      "generation_backend": "trellis_v1",
+      "paths": [
+        "Game/Assets/Janseon/Art/Props/StationPropValidation.unity"
+      ]
+    },
+    {
+      "asset_id": "station-prop-bom",
+      "class": "D_trellis_derived_invalid",
+      "generation_backend": "trellis_v1",
+      "paths": [
+        "docs/assets/bom/props/station-prop-bom.json"
+      ],
+      "note": "BOM rows remain historical contract fixtures; generation_backend trellis_v1 is invalid for new runtime promotion under lock"
+    }
+  ],
+  "blocked_slots_no_valid_replacement": [
+    "prop:poc-prop-ticket-gate",
+    "prop:poc-prop-pump-crate",
+    "prop:poc-prop-shutter",
+    "prop:poc-prop-pillar",
+    "prop:poc-prop-bench",
+    "prop:poc-prop-cabinet",
+    "character-explorer",
+    "character-medic",
+    "character-patrol",
+    "title-art",
+    "ui-icon-set",
+    "history-texture"
+  ],
+  "playable_slice_policy": {
+    "external_generated_asset_slots_required": 0,
+    "code_native_ui_accepted_debt": true,
+    "code_native_is_promoted_art": false,
+    "design_ref": "Design.md §8–§9"
+  }
+}

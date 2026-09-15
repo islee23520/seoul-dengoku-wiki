@@ -1,0 +1,14 @@
+VERIFIED
+sixth-card RED: exit 2; 23 total, 20 passed, 3 failed (catalog 5; mobility card unknown).
+sixth-card GREEN: exit 0; 23/23 passed.
+integration focused EditMode: exit 0; 66/66 passed.
+full EditMode: exit 0; 140/140 passed.
+PlayMode public uGUI campaign-battle-mobility-card-cooldown-terminal-settlement-duplicate-return: exit 0; 1/1 passed.
+PlayMode final real-Canvas screen evidence: exit 0; 1/1 passed; final-playmode-screen.png.
+uGUI capture matrix: exit 0; 1/1 driver passed; 10 PNG + 10 receipt files in excluded .omo evidence.
+npm --prefix tools test: exit 0; 37/37 plus wiki build and architecture-doc contracts passed.
+architecture gate: exit 0; 53 runtime files, 3 scene scopes.
+LFS hydration: exit 0; 2586 files, no pointers/errors.
+runtime provenance: ok=true, zero violations.
+macOS development build: exit 0; Success; 171204638 bytes; Bootstrap/MainTitle/Foundation.
+LSP: zero errors for Core, Foundation, EditMode tests, PlayMode tests.

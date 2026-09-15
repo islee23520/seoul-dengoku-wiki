@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-08 08:29:59Z" end-time="2026-09-08 08:30:00Z" duration="0.3339287">
+  <test-suite type="TestSuite" id="1037" name="잔선: 서울" fullname="잔선: 서울" runstate="Runnable" testcasecount="22" result="Passed" start-time="2026-09-08 08:29:59Z" end-time="2026-09-08 08:30:00Z" duration="0.333929" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1030" name="Janseon.Foundation.PlayModeTests.dll" fullname="/Users/ilseoblee/workspace/seoul-kenshi-wt/rtfc-phase-c/Game/Library/ScriptAssemblies/Janseon.Foundation.PlayModeTests.dll" runstate="Runnable" testcasecount="22" result="Passed" start-time="2026-09-08 08:29:59Z" end-time="2026-09-08 08:30:00Z" duration="0.330689" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="97697" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1031" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="21" result="Passed" start-time="2026-09-08 08:29:59Z" end-time="2026-09-08 08:30:00Z" duration="0.330221" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1032" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="21" result="Passed" start-time="2026-09-08 08:29:59Z" end-time="2026-09-08 08:30:00Z" duration="0.329853" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1033" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="21" result="Passed" start-time="2026-09-08 08:29:59Z" end-time="2026-09-08 08:30:00Z" duration="0.329241" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1009" name="CoreLoopPlayModeTests" fullname="Janseon.Foundation.Tests.CoreLoopPlayModeTests" classname="Janseon.Foundation.Tests.CoreLoopPlayModeTests" runstate="Runnable" testcasecount="15" result="Passed" start-time="2026-09-08 08:29:59Z" end-time="2026-09-08 08:30:00Z" duration="0.326780" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1019" name="CombatUi_MobilityRoundTrip_FinalScreenEvidence" fullname="Janseon.Foundation.Tests.CoreLoopPlayModeTests.CombatUi_MobilityRoundTrip_FinalScreenEvidence" methodname="CombatUi_MobilityRoundTrip_FinalScreenEvidence" classname="Janseon.Foundation.Tests.CoreLoopPlayModeTests" runstate="Runnable" seed="1421112391" result="Passed" start-time="2026-09-08 08:29:59Z" end-time="2026-09-08 08:30:00Z" duration="0.321570" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Unable to load font face for [LegacyRuntime]. Make sure "Include Font Data" is enabled in the Font Import Settings.
+TmpFont bundle asset creation failed: Value cannot be null.
+Parameter name: shader
+JANSEON_STARTUP_READY screen=MainTitle
+CORE_LOOP_TESTED_HEAD 550a612fb903b60031c2d360f8fba1cfff884e9c
+Saving results to: /Users/ilseoblee/Library/Application Support/Janseon Studio/잔선_ 서울/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

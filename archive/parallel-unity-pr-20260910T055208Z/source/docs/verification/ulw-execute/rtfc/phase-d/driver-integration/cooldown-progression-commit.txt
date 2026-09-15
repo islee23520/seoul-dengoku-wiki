@@ -1,0 +1,23 @@
+﻿commit 8962fea1de1314044dbfbe0a6ea004db7b0b56c9
+Author:     ilseob lee <lysk9884@gmail.com>
+AuthorDate: Wed Sep 9 04:53:44 2026 +0900
+Commit:     ilseob lee <lysk9884@gmail.com>
+CommitDate: Wed Sep 9 04:53:44 2026 +0900
+
+    test(foundation): require cooldown progression after resume
+
+ .../Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs |   42 +-
+ .../cooldown-progression-mutant-red.done           |    1 +
+ .../cooldown-progression-mutant-red.exit           |    1 +
+ .../cooldown-progression-mutant-red.launch.txt     |    1 +
+ .../cooldown-progression-mutant-red.log.txt        | 1036 ++++++++++++++++++++
+ .../cooldown-progression-mutant-red.xml            |   73 ++
+ .../cooldown-progression-mutation.diff             |   13 +
+ .../cooldown-progression-production-before.sha256  |    1 +
+ .../cooldown-progression-production-green.done     |    1 +
+ .../cooldown-progression-production-green.exit     |    1 +
+ ...ooldown-progression-production-green.launch.txt |    1 +
+ .../cooldown-progression-production-green.log.txt  | 1015 +++++++++++++++++++
+ .../cooldown-progression-production-green.xml      |   45 +
+ ...cooldown-progression-production-restored.sha256 |    1 +
+ 14 files changed, 2229 insertions(+), 3 deletions(-)

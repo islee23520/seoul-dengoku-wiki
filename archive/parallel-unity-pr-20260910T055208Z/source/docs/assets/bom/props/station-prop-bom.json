@@ -1,0 +1,911 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "schema_version": 1,
+      "asset_id": "poc-prop-ticket-gate",
+      "asset_class": "prop",
+      "source": "generate",
+      "rights_status": "allowed",
+      "generation_backend": "trellis_v1",
+      "provider": "microsoft",
+      "model": "microsoft/TRELLIS-image-large",
+      "revision": "442aa1e1afb9014e80681d3bf604e8d728a86ee7",
+      "prompt": "Original isolated abandoned Seoul subway ticket gate prop, single waist-high stainless barrier with one faded yellow acrylic flap, scratched metal card reader box, no logo, no text, no people, studio three-quarter view, solid white background, game prop, not a real station survey.",
+      "prompt_hash": "3fd05e88c89ae9867a4fd8009bdc6c11198877a2e5989fc17b29e37c43c61ac8",
+      "input_hashes": [
+        "9ef0e729df497b0f571d93be2670daaae29e5ea4211d6d46ba77fadc82faa139"
+      ],
+      "seed": 1401,
+      "cost_mode": "subscription",
+      "cost_cents": 0,
+      "raw_hash": "c3ec7d2bb06c6059808ce11d16944a4f1e344db3610a507fec584ffd5abe48bb",
+      "output_hash": "04e887262f20a1b3c43d34b97f662092f9ca39160991b12b0626931f5a0235f1",
+      "tool_versions": {
+        "trellis_commit": "442aa1e1afb9014e80681d3bf604e8d728a86ee7",
+        "trellis_model": "microsoft/TRELLIS-image-large",
+        "blender": "Blender 5.1.2",
+        "unity": "6000.7.0a5"
+      },
+      "operations": [
+        "rights_check",
+        "generate_3d_trellis",
+        "archive_raw",
+        "blender_cleanup",
+        "export_fbx",
+        "unity_import",
+        "human_review",
+        "bom_promotion"
+      ],
+      "unity_import_settings": {
+        "modelImporter": "ModelImporter",
+        "globalScale": 1,
+        "meshCompression": "Off",
+        "materialImportMode": "ImportStandard",
+        "axis": "Y-up",
+        "litMaterial": "Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.mat",
+        "baseColorTexture": "Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate_basecolor.png",
+        "visual_scale": 1,
+        "grounded_min_y": 0
+      },
+      "review_receipts": [
+        {
+          "reviewer": "COMPOSITION",
+          "verdict": "pass",
+          "receipt_path": "docs/assets/bom/props/reviews/station-props/COMPOSITION.md",
+          "receipt_hash": "ae1f4e6687a1e448b44f27dcf5685e157eee3a0d7fbe53a69dd416ec69ca3489",
+          "reviewed_at": "2026-09-04T11:35:20Z"
+        },
+        {
+          "reviewer": "SPRITE_FIDELITY",
+          "verdict": "pass",
+          "receipt_path": "docs/assets/bom/props/reviews/station-props/SPRITE_FIDELITY.md",
+          "receipt_hash": "34ee579608c8a2960791f8fe880c34b56ee6b8b32bee14f6d3d211bee8d96f16",
+          "reviewed_at": "2026-09-04T11:35:20Z"
+        },
+        {
+          "reviewer": "TYPOGRAPHY",
+          "verdict": "pass",
+          "receipt_path": "docs/assets/bom/props/reviews/station-props/TYPOGRAPHY.md",
+          "receipt_hash": "6e7649cf7f7d820cfbc7e3d32246cf64e7296a3e22e4113964888fd36c9c04f7",
+          "reviewed_at": "2026-09-04T11:35:20Z"
+        },
+        {
+          "reviewer": "PRODUCT_POLISH",
+          "verdict": "pass",
+          "receipt_path": "docs/assets/bom/props/reviews/station-props/PRODUCT_POLISH.md",
+          "receipt_hash": "a30e2ac29b8e8b0925e78a61639d83d2d419d1f07ad8769b206b65eaa96efd8d",
+          "reviewed_at": "2026-09-04T11:35:20Z"
+        }
+      ],
+      "status": "promoted",
+      "created_at": "2026-09-04T11:21:27.6502090Z",
+      "config_hash": "148785d78e62142bfe0538eb2c79e8e5828567e30f94182b5a1a99ba341cc520",
+      "model_hash": "60940f1148489da029fe89c3c46d06dd0870f73ae39e4b2691dae149c0420889",
+      "preview_hash": "bfadf1b7ceaf5c898231af8e6bbd32fb2291119ee89c1cde3b515eb579c5e613",
+      "measurement_claim": "authored-tile-relative",
+      "blender_size": [
+        1.45,
+        0.43842,
+        0.41245
+      ],
+      "prefab_path": "Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.prefab",
+      "material_path": "Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.mat",
+      "texture_path": "Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate_basecolor.png",
+      "texture_hash": "2df96391d9f56179177ba4e49f59f0c288545421bf64b035393a23c086ab3981",
+      "output_path": "Game/Assets/Janseon/ArtSource/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.fbx",
+      "raw_path": "Game/Assets/Janseon/ArtSource/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.raw.glb",
+      "rights_evidence": {
+        "path": "docs/assets/bom/props/reviews/station-props/source-verification-report.md",
+        "sha256": "a6e9fe614b2ca5205f65fa9f4be555cf3150c4415841755fe57be898166dfe6d"
+      },
+      "prior_synthetic_review_hashes": [
+        "ec7f2d2f9601a7dc9ba5b8b8f8c154f1e00216fe05d327a6c8f5fb587a6bca59"
+      ],
+      "runtime_files": {
+        "Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.fbx": "04e887262f20a1b3c43d34b97f662092f9ca39160991b12b0626931f5a0235f1",
+        "Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.fbx.meta": "de929bc38291779d112257d155729ca881ebb2d0d5f988389260393a30bda4ca",
+        "Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.mat": "ffa496ceea1c3e780c3b5043a87bb9ffb48b5b762bd31c4fcc8e87188d973e17",
+        "Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.mat.meta": "c5b56be6358734f5471ac1a7e5b0639c19f9ba5f0d71bdfa6508c2f09acf9d55",
+        "Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.prefab": "499f52b2d5349c49e0e8cd6a489e2be6e0a0fa199d1db1cb221900346b8e28b3",
+        "Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate.prefab.meta": "fa4f89b6df14ba7facce0bdf87a74a17a981a4d9c2b0a4914486d056b7332175",
+        "Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate_basecolor.png": "2df96391d9f56179177ba4e49f59f0c288545421bf64b035393a23c086ab3981",
+        "Game/Assets/Janseon/Art/Props/poc-prop-ticket-gate/poc-prop-ticket-gate_basecolor.png.meta": "84494cab6659efa9db00c3585a101556976e67c6cc87f9262d99d1efe42d08d4"
+      },
+      "source_binding": {
+        "path": "docs/assets/bom/props/reviews/station-props/poc-prop-ticket-gate.json",
+        "sha256": "f1f5e5bc50d4a453ef6312e8b6636c2cde7f2eb2c3e6faa9b1e0b044a5fe09b2"
+      },
+      "acceptance_scope": "six prop appearance and current Foundation runtime only; full product and UI review separate",
+      "look": {
+        "palette": {
+          "steel": "#8A93A0",
+          "concrete": "#2A3548",
+          "hazard": "#C9A227",
+          "void": "#0B111C",
+          "accent_line": "#3D7EA6"
+        },
+        "materials": {
+          "finish": "scratched-station-metal",
+          "albedo": "basecolor",
+          "normal": "required",
+          "roughness": 0.65,
+          "metalness": 0.55,
+          "ao": "optional",
+          "scale_m": 1.5
+        },
+        "references": [
+          {
+            "kind": "visual-thesis",
+            "source": "Design.md#1"
+          },
+          {
+            "kind": "pipeline-material",
+            "source": "docs/game-logic/Asset-Pipeline.md"
+          },
+          {
+            "kind": "design-token",
+            "source": "Design.md#2.1"
+          }
+        ],
+        "owner_verdict": "pending",
+        "owner_notes": "Station props were not in the HTML review. Material channels required before any new prop generation."
+      }
+    },
+    {
+      "schema_version": 1,
+      "asset_id": "poc-prop-pump-crate",
+      "asset_class": "prop",
+      "source": "generate",
+      "rights_status": "allowed",
+      "generation_backend": "trellis_v1",
+      "provider": "microsoft",
+      "model": "microsoft/TRELLIS-image-large",
+      "revision": "442aa1e1afb9014e80681d3bf604e8d728a86ee7",
+      "prompt": "Original isolated wooden pump-packing transport crate, closed lid, steel corner brackets, one wide strap, stenciled caution stripes without letters, dusty warehouse prop, studio three-quarter view, solid white background, not a measured industrial crate.",
+      "prompt_hash": "79309a478e772a66c487fd2f2c1ecd1e0c21d7fa29bf1a260f02be8ee59df086",
+      "input_hashes": [
+        "dfc506dcd366b6471f996c78d4cee4ad557ac57f2714f26994e8c0d50818e214"
+      ],
+      "seed": 1402,
+      "cost_mode": "subscription",
+      "cost_cents": 0,
+      "raw_hash": "d1b8c0f19a8b2e52c986a07ed6d5514ad7fdafd5e717070665ae2d5d93f5253a",
+      "output_hash": "92379b5e6681db850c2ee99ec7e1e66018beb70c8fa62dc2fd1291681bb2dc80",
+      "tool_versions": {
+        "trellis_commit": "442aa1e1afb9014e80681d3bf604e8d728a86ee7",
+        "trellis_model": "microsoft/TRELLIS-image-large",
+        "blender": "Blender 5.1.2",
+        "unity": "6000.7.0a5"
+      },
+      "operations": [
+        "rights_check",
+        "generate_3d_trellis",
+        "archive_raw",
+        "blender_cleanup",
+        "export_fbx",
+        "unity_import",
+        "human_review",
+        "bom_promotion"
+      ],
+      "unity_import_settings": {
+        "modelImporter": "ModelImporter",
+        "globalScale": 1,
+        "meshCompression": "Off",
+        "materialImportMode": "ImportStandard",
+        "axis": "Y-up",
+        "litMaterial": "Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.mat",
+        "baseColorTexture": "Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate_basecolor.png",
+        "visual_scale": 1,
+        "grounded_min_y": 0
+      },
+      "review_receipts": [
+        {
+          "reviewer": "COMPOSITION",
+          "verdict": "pass",
+          "receipt_path": "docs/assets/bom/props/reviews/station-props/COMPOSITION.md",
+          "receipt_hash": "ae1f4e6687a1e448b44f27dcf5685e157eee3a0d7fbe53a69dd416ec69ca3489",
+          "reviewed_at": "2026-09-04T11:35:20Z"
+        },
+        {
+          "reviewer": "SPRITE_FIDELITY",
+          "verdict": "pass",
+          "receipt_path": "docs/assets/bom/props/reviews/station-props/SPRITE_FIDELITY.md",
+          "receipt_hash": "34ee579608c8a2960791f8fe880c34b56ee6b8b32bee14f6d3d211bee8d96f16",
+          "reviewed_at": "2026-09-04T11:35:20Z"
+        },
+        {
+          "reviewer": "TYPOGRAPHY",
+          "verdict": "pass",
+          "receipt_path": "docs/assets/bom/props/reviews/station-props/TYPOGRAPHY.md",
+          "receipt_hash": "6e7649cf7f7d820cfbc7e3d32246cf64e7296a3e22e4113964888fd36c9c04f7",
+          "reviewed_at": "2026-09-04T11:35:20Z"
+        },
+        {
+          "reviewer": "PRODUCT_POLISH",
+          "verdict": "pass",
+          "receipt_path": "docs/assets/bom/props/reviews/station-props/PRODUCT_POLISH.md",
+          "receipt_hash": "a30e2ac29b8e8b0925e78a61639d83d2d419d1f07ad8769b206b65eaa96efd8d",
+          "reviewed_at": "2026-09-04T11:35:20Z"
+        }
+      ],
+      "status": "promoted",
+      "created_at": "2026-09-04T11:21:27.7423930Z",
+      "config_hash": "148785d78e62142bfe0538eb2c79e8e5828567e30f94182b5a1a99ba341cc520",
+      "model_hash": "60940f1148489da029fe89c3c46d06dd0870f73ae39e4b2691dae149c0420889",
+      "preview_hash": "c98839e5386a43a3cc86c03e935621bf0dcf3ef641e95650278cf481fdb9a2ab",
+      "measurement_claim": "authored-tile-relative",
+      "blender_size": [
+        0.95,
+        0.46741,
+        0.28423
+      ],
+      "prefab_path": "Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.prefab",
+      "material_path": "Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.mat",
+      "texture_path": "Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate_basecolor.png",
+      "texture_hash": "fb22fd623bf46050a4c73c6d4197c84232dafee2f5dc1c1a8428ad8b8e009354",
+      "output_path": "Game/Assets/Janseon/ArtSource/Props/poc-prop-pump-crate/poc-prop-pump-crate.fbx",
+      "raw_path": "Game/Assets/Janseon/ArtSource/Props/poc-prop-pump-crate/poc-prop-pump-crate.raw.glb",
+      "rights_evidence": {
+        "path": "docs/assets/bom/props/reviews/station-props/source-verification-report.md",
+        "sha256": "a6e9fe614b2ca5205f65fa9f4be555cf3150c4415841755fe57be898166dfe6d"
+      },
+      "prior_synthetic_review_hashes": [
+        "be88efa43da68d697318751dc997515d5dc1308fb44a11eeb4a3ce0b86953b9f"
+      ],
+      "runtime_files": {
+        "Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.fbx": "92379b5e6681db850c2ee99ec7e1e66018beb70c8fa62dc2fd1291681bb2dc80",
+        "Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.fbx.meta": "b59ceb8239a3fcc2ba43044da0d1f8af5dfa1b58ae541d7781cf68173e61daee",
+        "Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.mat": "9d93b069df5e545d0e64869ba14efd307d88578759ad670ea5a53255356d1682",
+        "Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.mat.meta": "1396d9456f02ff6ea556adc84429fef3085ddd881dcebc6b5bad780e53f4bd1a",
+        "Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.prefab": "e0a2babe3f0f0b35fbc90bfdf6cb12d249b352d6871596269929251412b31751",
+        "Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate.prefab.meta": "f664ec8f6a747c335b4af4419a21073eaeb5e8b29c958286907ee49e7d15ec20",
+        "Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate_basecolor.png": "fb22fd623bf46050a4c73c6d4197c84232dafee2f5dc1c1a8428ad8b8e009354",
+        "Game/Assets/Janseon/Art/Props/poc-prop-pump-crate/poc-prop-pump-crate_basecolor.png.meta": "693d582ae7b2f5a6225bd917799c9bd9692a7c6232fce46a764a45ad8226d567"
+      },
+      "source_binding": {
+        "path": "docs/assets/bom/props/reviews/station-props/poc-prop-pump-crate.json",
+        "sha256": "0dd6bf7546d3782e42918c8499880c1d7a1f649cccf3bce96920a76e66183248"
+      },
+      "acceptance_scope": "six prop appearance and current Foundation runtime only; full product and UI review separate",
+      "look": {
+        "palette": {
+          "steel": "#8A93A0",
+          "concrete": "#2A3548",
+          "hazard": "#C9A227",
+          "void": "#0B111C",
+          "accent_line": "#3D7EA6"
+        },
+        "materials": {
+          "finish": "scratched-station-metal",
+          "albedo": "basecolor",
+          "normal": "required",
+          "roughness": 0.65,
+          "metalness": 0.55,
+          "ao": "optional",
+          "scale_m": 1.5
+        },
+        "references": [
+          {
+            "kind": "visual-thesis",
+            "source": "Design.md#1"
+          },
+          {
+            "kind": "pipeline-material",
+            "source": "docs/game-logic/Asset-Pipeline.md"
+          },
+          {
+            "kind": "design-token",
+            "source": "Design.md#2.1"
+          }
+        ],
+        "owner_verdict": "pending",
+        "owner_notes": "Station props were not in the HTML review. Material channels required before any new prop generation."
+      }
+    },
+    {
+      "schema_version": 1,
+      "asset_id": "poc-prop-shutter",
+      "asset_class": "prop",
+      "source": "generate",
+      "rights_status": "allowed",
+      "generation_backend": "trellis_v1",
+      "provider": "microsoft",
+      "model": "microsoft/TRELLIS-image-large",
+      "revision": "442aa1e1afb9014e80681d3bf604e8d728a86ee7",
+      "prompt": "Original isolated corrugated metal rolling shutter module standing as a single prop, dented grey slats, rust streak, bottom rail, no storefront, no text, studio three-quarter view, solid white background, authored game module.",
+      "prompt_hash": "444b5dee1b97b75c24dcc5305a47c24ca717849441419bfa4e62998585d461cb",
+      "input_hashes": [
+        "66266031a1054a0a77beb50999b8f7ccc1fe9acb67056016ad03398abf2f8ad1"
+      ],
+      "seed": 1403,
+      "cost_mode": "subscription",
+      "cost_cents": 0,
+      "raw_hash": "c89f0f14fcef1e5b4586ab3c9a3cc3e4198c6429b854c02a3a902a3412978f29",
+      "output_hash": "80fed50f0a233f0143dc05c6532ade07d1db772f939e9b36aa07e5dfeb1f7038",
+      "tool_versions": {
+        "trellis_commit": "442aa1e1afb9014e80681d3bf604e8d728a86ee7",
+        "trellis_model": "microsoft/TRELLIS-image-large",
+        "blender": "Blender 5.1.2",
+        "unity": "6000.7.0a5"
+      },
+      "operations": [
+        "rights_check",
+        "generate_3d_trellis",
+        "archive_raw",
+        "blender_cleanup",
+        "export_fbx",
+        "unity_import",
+        "human_review",
+        "bom_promotion"
+      ],
+      "unity_import_settings": {
+        "modelImporter": "ModelImporter",
+        "globalScale": 1,
+        "meshCompression": "Off",
+        "materialImportMode": "ImportStandard",
+        "axis": "Y-up",
+        "litMaterial": "Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.mat",
+        "baseColorTexture": "Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter_basecolor.png",
+        "visual_scale": 1,
+        "grounded_min_y": 0
+      },
+      "review_receipts": [
+        {
+          "reviewer": "COMPOSITION",
+          "verdict": "pass",
+          "receipt_path": "docs/assets/bom/props/reviews/station-props/COMPOSITION.md",
+          "receipt_hash": "ae1f4e6687a1e448b44f27dcf5685e157eee3a0d7fbe53a69dd416ec69ca3489",
+          "reviewed_at": "2026-09-04T11:35:20Z"
+        },
+        {
+          "reviewer": "SPRITE_FIDELITY",
+          "verdict": "pass",
+          "receipt_path": "docs/assets/bom/props/reviews/station-props/SPRITE_FIDELITY.md",
+          "receipt_hash": "34ee579608c8a2960791f8fe880c34b56ee6b8b32bee14f6d3d211bee8d96f16",
+          "reviewed_at": "2026-09-04T11:35:20Z"
+        },
+        {
+          "reviewer": "TYPOGRAPHY",
+          "verdict": "pass",
+          "receipt_path": "docs/assets/bom/props/reviews/station-props/TYPOGRAPHY.md",
+          "receipt_hash": "6e7649cf7f7d820cfbc7e3d32246cf64e7296a3e22e4113964888fd36c9c04f7",
+          "reviewed_at": "2026-09-04T11:35:20Z"
+        },
+        {
+          "reviewer": "PRODUCT_POLISH",
+          "verdict": "pass",
+          "receipt_path": "docs/assets/bom/props/reviews/station-props/PRODUCT_POLISH.md",
+          "receipt_hash": "a30e2ac29b8e8b0925e78a61639d83d2d419d1f07ad8769b206b65eaa96efd8d",
+          "reviewed_at": "2026-09-04T11:35:20Z"
+        }
+      ],
+      "status": "promoted",
+      "created_at": "2026-09-04T11:21:27.8339680Z",
+      "config_hash": "148785d78e62142bfe0538eb2c79e8e5828567e30f94182b5a1a99ba341cc520",
+      "model_hash": "60940f1148489da029fe89c3c46d06dd0870f73ae39e4b2691dae149c0420889",
+      "preview_hash": "ade7d3f4c1f0ec3992f4af865e0630b9930688f4540f96df3034ae56ce902b5f",
+      "measurement_claim": "authored-tile-relative",
+      "blender_size": [
+        0.91066,
+        1.55,
+        0.05478
+      ],
+      "prefab_path": "Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.prefab",
+      "material_path": "Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.mat",
+      "texture_path": "Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter_basecolor.png",
+      "texture_hash": "e926903a3d4ce74f562280f80cc15efeb218e55363d7277347022761e9357949",
+      "output_path": "Game/Assets/Janseon/ArtSource/Props/poc-prop-shutter/poc-prop-shutter.fbx",
+      "raw_path": "Game/Assets/Janseon/ArtSource/Props/poc-prop-shutter/poc-prop-shutter.raw.glb",
+      "rights_evidence": {
+        "path": "docs/assets/bom/props/reviews/station-props/source-verification-report.md",
+        "sha256": "a6e9fe614b2ca5205f65fa9f4be555cf3150c4415841755fe57be898166dfe6d"
+      },
+      "prior_synthetic_review_hashes": [
+        "b2ba5a2d30d0cdcb0bef3308c93818c423708cb3eba9d9a67f110189a9fe53a2"
+      ],
+      "runtime_files": {
+        "Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.fbx": "80fed50f0a233f0143dc05c6532ade07d1db772f939e9b36aa07e5dfeb1f7038",
+        "Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.fbx.meta": "3dee2365d1fb7b5c6f42577fddb4d1d5592e9dbf85200b321e864c8c09be3c00",
+        "Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.mat": "0ee0e1dc22180c26b4a47c278bf43f3bd9e9c5e238d2bc1de65eab5831699c92",
+        "Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.mat.meta": "857e3a4dea5ac85abe46cd52b84054803107e0050adee17f53a15fb0a3b0b30b",
+        "Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.prefab": "505e18446aea1016fddfbd774bdc92ab06fea0c3bb528ce54a2285a0115f61a5",
+        "Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter.prefab.meta": "c6bbd83ad9f94ca09b9c954372980465ebb10208a22920aeb3e2e59c01306ac3",
+        "Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter_basecolor.png": "e926903a3d4ce74f562280f80cc15efeb218e55363d7277347022761e9357949",
+        "Game/Assets/Janseon/Art/Props/poc-prop-shutter/poc-prop-shutter_basecolor.png.meta": "e6766cd731804d39ff08422ad5de28ea3cb72f1fd8e2e2c8e8f08f69770772b8"
+      },
+      "source_binding": {
+        "path": "docs/assets/bom/props/reviews/station-props/poc-prop-shutter.json",
+        "sha256": "7e00453cbf7e5b476799a0b3bd32145874443fbfce075bd51583dc13492af809"
+      },
+      "acceptance_scope": "six prop appearance and current Foundation runtime only; full product and UI review separate",
+      "look": {
+        "palette": {
+          "steel": "#8A93A0",
+          "concrete": "#2A3548",
+          "hazard": "#C9A227",
+          "void": "#0B111C",
+          "accent_line": "#3D7EA6"
+        },
+        "materials": {
+          "finish": "scratched-station-metal",
+          "albedo": "basecolor",
+          "normal": "required",
+          "roughness": 0.65,
+          "metalness": 0.55,
+          "ao": "optional",
+          "scale_m": 1.5
+        },
+        "references": [
+          {
+            "kind": "visual-thesis",
+            "source": "Design.md#1"
+          },
+          {
+            "kind": "pipeline-material",
+            "source": "docs/game-logic/Asset-Pipeline.md"
+          },
+          {
+            "kind": "design-token",
+            "source": "Design.md#2.1"
+          }
+        ],
+        "owner_verdict": "pending",
+        "owner_notes": "Station props were not in the HTML review. Material channels required before any new prop generation."
+      }
+    },
+    {
+      "schema_version": 1,
+      "asset_id": "poc-prop-pillar",
+      "asset_class": "prop",
+      "source": "generate",
+      "rights_status": "allowed",
+      "generation_backend": "trellis_v1",
+      "provider": "microsoft",
+      "model": "microsoft/TRELLIS-image-large",
+      "revision": "442aa1e1afb9014e80681d3bf604e8d728a86ee7",
+      "prompt": "Original isolated square concrete subway pillar, chipped plaster, rust drip stain, tiled lower wainscot band, no signage, no text, studio three-quarter view, solid white background, authored tile-scale column.",
+      "prompt_hash": "9a052e8f2fc0f89d780d4171281f9904b9bf46f35e999e19b7a16fa101f86ff8",
+      "input_hashes": [
+        "cb6b7e7a041ccee5abb5dcd2bf50dfa0c6c9f364e3be007ac3a1c7429b57a177"
+      ],
+      "seed": 1404,
+      "cost_mode": "subscription",
+      "cost_cents": 0,
+      "raw_hash": "19f8ffddf92692f33a84eb788013bc158d28560a01f58c5c3d0526cf7cfac0b0",
+      "output_hash": "6ff52f5b548baeba59ca3e6d1bc0ec7ad99c5796bc48a7690a7072623701fd38",
+      "tool_versions": {
+        "trellis_commit": "442aa1e1afb9014e80681d3bf604e8d728a86ee7",
+        "trellis_model": "microsoft/TRELLIS-image-large",
+        "blender": "Blender 5.1.2",
+        "unity": "6000.7.0a5"
+      },
+      "operations": [
+        "rights_check",
+        "generate_3d_trellis",
+        "archive_raw",
+        "blender_cleanup",
+        "export_fbx",
+        "unity_import",
+        "human_review",
+        "bom_promotion"
+      ],
+      "unity_import_settings": {
+        "modelImporter": "ModelImporter",
+        "globalScale": 1,
+        "meshCompression": "Off",
+        "materialImportMode": "ImportStandard",
+        "axis": "Y-up",
+        "litMaterial": "Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.mat",
+        "baseColorTexture": "Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar_basecolor.png",
+        "visual_scale": 1,
+        "grounded_min_y": 0
+      },
+      "review_receipts": [
+        {
+          "reviewer": "COMPOSITION",
+          "verdict": "pass",
+          "receipt_path": "docs/assets/bom/props/reviews/station-props/COMPOSITION.md",
+          "receipt_hash": "ae1f4e6687a1e448b44f27dcf5685e157eee3a0d7fbe53a69dd416ec69ca3489",
+          "reviewed_at": "2026-09-04T11:35:20Z"
+        },
+        {
+          "reviewer": "SPRITE_FIDELITY",
+          "verdict": "pass",
+          "receipt_path": "docs/assets/bom/props/reviews/station-props/SPRITE_FIDELITY.md",
+          "receipt_hash": "34ee579608c8a2960791f8fe880c34b56ee6b8b32bee14f6d3d211bee8d96f16",
+          "reviewed_at": "2026-09-04T11:35:20Z"
+        },
+        {
+          "reviewer": "TYPOGRAPHY",
+          "verdict": "pass",
+          "receipt_path": "docs/assets/bom/props/reviews/station-props/TYPOGRAPHY.md",
+          "receipt_hash": "6e7649cf7f7d820cfbc7e3d32246cf64e7296a3e22e4113964888fd36c9c04f7",
+          "reviewed_at": "2026-09-04T11:35:20Z"
+        },
+        {
+          "reviewer": "PRODUCT_POLISH",
+          "verdict": "pass",
+          "receipt_path": "docs/assets/bom/props/reviews/station-props/PRODUCT_POLISH.md",
+          "receipt_hash": "a30e2ac29b8e8b0925e78a61639d83d2d419d1f07ad8769b206b65eaa96efd8d",
+          "reviewed_at": "2026-09-04T11:35:20Z"
+        }
+      ],
+      "status": "promoted",
+      "created_at": "2026-09-04T11:21:27.9128460Z",
+      "config_hash": "148785d78e62142bfe0538eb2c79e8e5828567e30f94182b5a1a99ba341cc520",
+      "model_hash": "60940f1148489da029fe89c3c46d06dd0870f73ae39e4b2691dae149c0420889",
+      "preview_hash": "0b24fca94c2e5762e301f51f742011d427f803b25d47a351274eecd8183fe6dd",
+      "measurement_claim": "authored-tile-relative",
+      "blender_size": [
+        0.55,
+        2.04193,
+        0.45989
+      ],
+      "prefab_path": "Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.prefab",
+      "material_path": "Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.mat",
+      "texture_path": "Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar_basecolor.png",
+      "texture_hash": "a3983e5bc52eba08c199f8c409a65ee5bbe14fcf2e33b20af617f3c0104d0acb",
+      "output_path": "Game/Assets/Janseon/ArtSource/Props/poc-prop-pillar/poc-prop-pillar.fbx",
+      "raw_path": "Game/Assets/Janseon/ArtSource/Props/poc-prop-pillar/poc-prop-pillar.raw.glb",
+      "rights_evidence": {
+        "path": "docs/assets/bom/props/reviews/station-props/source-verification-report.md",
+        "sha256": "a6e9fe614b2ca5205f65fa9f4be555cf3150c4415841755fe57be898166dfe6d"
+      },
+      "prior_synthetic_review_hashes": [
+        "8f665c25730defb59a21bad79154760722a9ca05098523a0b802f601bc741ccd"
+      ],
+      "runtime_files": {
+        "Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.fbx": "6ff52f5b548baeba59ca3e6d1bc0ec7ad99c5796bc48a7690a7072623701fd38",
+        "Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.fbx.meta": "6596e65f072708c0e74cd7d0feb5cdb1bacde0badca095d1b08378e9ca70f325",
+        "Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.mat": "aaf530c24bcde020897c2394a96473f9fe6517aa1618499bcb48e9c237cb6d12",
+        "Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.mat.meta": "618a0d4ac577316ecd4b4cf9b3579fe4660fc19eb36acf0665c47ea54defe5c5",
+        "Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.prefab": "26be4c4406174743ab8da027eef5bd0a005e47c8fcf614c6c53fb475b5ccc7d6",
+        "Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar.prefab.meta": "a537d37f9670da4fe631509abbdf6b8b847c9a209a01d44e916dd0e4cd593cc9",
+        "Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar_basecolor.png": "a3983e5bc52eba08c199f8c409a65ee5bbe14fcf2e33b20af617f3c0104d0acb",
+        "Game/Assets/Janseon/Art/Props/poc-prop-pillar/poc-prop-pillar_basecolor.png.meta": "da8a71ee018cb9f51f69a500963ca676a2b2d451e9f5ac100e0d4a76fdd2db7b"
+      },
+      "source_binding": {
+        "path": "docs/assets/bom/props/reviews/station-props/poc-prop-pillar.json",
+        "sha256": "56fd0513ad5193b57f963def4a2e317319d5bee939156f49dfa7444b2133e215"
+      },
+      "acceptance_scope": "six prop appearance and current Foundation runtime only; full product and UI review separate",
+      "look": {
+        "palette": {
+          "steel": "#8A93A0",
+          "concrete": "#2A3548",
+          "hazard": "#C9A227",
+          "void": "#0B111C",
+          "accent_line": "#3D7EA6"
+        },
+        "materials": {
+          "finish": "scratched-station-metal",
+          "albedo": "basecolor",
+          "normal": "required",
+          "roughness": 0.65,
+          "metalness": 0.55,
+          "ao": "optional",
+          "scale_m": 1.5
+        },
+        "references": [
+          {
+            "kind": "visual-thesis",
+            "source": "Design.md#1"
+          },
+          {
+            "kind": "pipeline-material",
+            "source": "docs/game-logic/Asset-Pipeline.md"
+          },
+          {
+            "kind": "design-token",
+            "source": "Design.md#2.1"
+          }
+        ],
+        "owner_verdict": "pending",
+        "owner_notes": "Station props were not in the HTML review. Material channels required before any new prop generation."
+      }
+    },
+    {
+      "schema_version": 1,
+      "asset_id": "poc-prop-bench",
+      "asset_class": "prop",
+      "source": "generate",
+      "rights_status": "allowed",
+      "generation_backend": "trellis_v1",
+      "provider": "microsoft",
+      "model": "microsoft/TRELLIS-image-large",
+      "revision": "442aa1e1afb9014e80681d3bf604e8d728a86ee7",
+      "prompt": "Original isolated subway platform bench, four slatted wood seat, dark steel legs, one armrest, worn varnish, no ads, no text, studio three-quarter view, solid white background, authored waiting bench.",
+      "prompt_hash": "11cb73f56fcfb5a6216803b0063c24124df411ef038315ac34296e820ca9e85c",
+      "input_hashes": [
+        "ead4c431caa360932218d4af545d3ef49d75153723f646f57efdf22075a357b5"
+      ],
+      "seed": 1405,
+      "cost_mode": "subscription",
+      "cost_cents": 0,
+      "raw_hash": "776aad180b778c943f3a1e6d05d209521f0a77fa5886e4e9f21e26104838a833",
+      "output_hash": "3a55ad5b9e4b4a6bd6b8a1e0b69b004ec4b55c633eff4dc495cd9bb96af79e74",
+      "tool_versions": {
+        "trellis_commit": "442aa1e1afb9014e80681d3bf604e8d728a86ee7",
+        "trellis_model": "microsoft/TRELLIS-image-large",
+        "blender": "Blender 5.1.2",
+        "unity": "6000.7.0a5"
+      },
+      "operations": [
+        "rights_check",
+        "generate_3d_trellis",
+        "archive_raw",
+        "blender_cleanup",
+        "export_fbx",
+        "unity_import",
+        "human_review",
+        "bom_promotion"
+      ],
+      "unity_import_settings": {
+        "modelImporter": "ModelImporter",
+        "globalScale": 1,
+        "meshCompression": "Off",
+        "materialImportMode": "ImportStandard",
+        "axis": "Y-up",
+        "litMaterial": "Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.mat",
+        "baseColorTexture": "Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench_basecolor.png",
+        "visual_scale": 2.4,
+        "grounded_min_y": 0
+      },
+      "review_receipts": [
+        {
+          "reviewer": "COMPOSITION",
+          "verdict": "pass",
+          "receipt_path": "docs/assets/bom/props/reviews/station-props/COMPOSITION.md",
+          "receipt_hash": "ae1f4e6687a1e448b44f27dcf5685e157eee3a0d7fbe53a69dd416ec69ca3489",
+          "reviewed_at": "2026-09-04T11:35:20Z"
+        },
+        {
+          "reviewer": "SPRITE_FIDELITY",
+          "verdict": "pass",
+          "receipt_path": "docs/assets/bom/props/reviews/station-props/SPRITE_FIDELITY.md",
+          "receipt_hash": "34ee579608c8a2960791f8fe880c34b56ee6b8b32bee14f6d3d211bee8d96f16",
+          "reviewed_at": "2026-09-04T11:35:20Z"
+        },
+        {
+          "reviewer": "TYPOGRAPHY",
+          "verdict": "pass",
+          "receipt_path": "docs/assets/bom/props/reviews/station-props/TYPOGRAPHY.md",
+          "receipt_hash": "6e7649cf7f7d820cfbc7e3d32246cf64e7296a3e22e4113964888fd36c9c04f7",
+          "reviewed_at": "2026-09-04T11:35:20Z"
+        },
+        {
+          "reviewer": "PRODUCT_POLISH",
+          "verdict": "pass",
+          "receipt_path": "docs/assets/bom/props/reviews/station-props/PRODUCT_POLISH.md",
+          "receipt_hash": "a30e2ac29b8e8b0925e78a61639d83d2d419d1f07ad8769b206b65eaa96efd8d",
+          "reviewed_at": "2026-09-04T11:35:20Z"
+        }
+      ],
+      "status": "promoted",
+      "created_at": "2026-09-04T11:21:28.0077770Z",
+      "config_hash": "148785d78e62142bfe0538eb2c79e8e5828567e30f94182b5a1a99ba341cc520",
+      "model_hash": "60940f1148489da029fe89c3c46d06dd0870f73ae39e4b2691dae149c0420889",
+      "preview_hash": "92a9419c2d01236b5d0e7354869333633c4d5187e72ee5b810da6a975141f9a3",
+      "measurement_claim": "authored-tile-relative",
+      "blender_size": [
+        0.62557,
+        0.55,
+        0.16026
+      ],
+      "prefab_path": "Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.prefab",
+      "material_path": "Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.mat",
+      "texture_path": "Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench_basecolor.png",
+      "texture_hash": "d01d0d2aa036c00ed4b40a695c38608f2c8b30efb933efc312fc4909b2d6d784",
+      "output_path": "Game/Assets/Janseon/ArtSource/Props/poc-prop-bench/poc-prop-bench.fbx",
+      "raw_path": "Game/Assets/Janseon/ArtSource/Props/poc-prop-bench/poc-prop-bench.raw.glb",
+      "rights_evidence": {
+        "path": "docs/assets/bom/props/reviews/station-props/source-verification-report.md",
+        "sha256": "a6e9fe614b2ca5205f65fa9f4be555cf3150c4415841755fe57be898166dfe6d"
+      },
+      "prior_synthetic_review_hashes": [
+        "b8840bcc7b61c86b573e4c66adfca97cb5ee321518c0c8d415bdaf31b2e49e1d"
+      ],
+      "runtime_files": {
+        "Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.fbx": "3a55ad5b9e4b4a6bd6b8a1e0b69b004ec4b55c633eff4dc495cd9bb96af79e74",
+        "Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.fbx.meta": "37661e0ca6d78602a2c1e848850b4cc8ba57919e9c52b6aceb5459635dd2845e",
+        "Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.mat": "5fd7a5cbd0823c3b640e86ec23bdadf5d4592fd69abb169f711beb0117e9e3d7",
+        "Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.mat.meta": "ce48b074650ca4d462566b5a41e68584cdd01a99ace575bd39ac4ad222859978",
+        "Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.prefab": "c4b9119b678e550927a4b58ba89ee4765392263a02f1cf904bd56cff2aea2c47",
+        "Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench.prefab.meta": "a923c649f659cd992765d1547f0960a950218b079f56ed8722943054210f924e",
+        "Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench_basecolor.png": "d01d0d2aa036c00ed4b40a695c38608f2c8b30efb933efc312fc4909b2d6d784",
+        "Game/Assets/Janseon/Art/Props/poc-prop-bench/poc-prop-bench_basecolor.png.meta": "fd2652efd0f70960c28a32a3508783b65bb495a63b80980c28d3c08e240fac7c"
+      },
+      "source_binding": {
+        "path": "docs/assets/bom/props/reviews/station-props/poc-prop-bench.json",
+        "sha256": "b49197a0f911acdc98363fd9e9b21a374193347ecde801d2fcc9e71c6f6f6355"
+      },
+      "acceptance_scope": "six prop appearance and current Foundation runtime only; full product and UI review separate",
+      "look": {
+        "palette": {
+          "steel": "#8A93A0",
+          "concrete": "#2A3548",
+          "hazard": "#C9A227",
+          "void": "#0B111C",
+          "accent_line": "#3D7EA6"
+        },
+        "materials": {
+          "finish": "scratched-station-metal",
+          "albedo": "basecolor",
+          "normal": "required",
+          "roughness": 0.65,
+          "metalness": 0.55,
+          "ao": "optional",
+          "scale_m": 1.5
+        },
+        "references": [
+          {
+            "kind": "visual-thesis",
+            "source": "Design.md#1"
+          },
+          {
+            "kind": "pipeline-material",
+            "source": "docs/game-logic/Asset-Pipeline.md"
+          },
+          {
+            "kind": "design-token",
+            "source": "Design.md#2.1"
+          }
+        ],
+        "owner_verdict": "pending",
+        "owner_notes": "Station props were not in the HTML review. Material channels required before any new prop generation."
+      }
+    },
+    {
+      "schema_version": 1,
+      "asset_id": "poc-prop-cabinet",
+      "asset_class": "prop",
+      "source": "generate",
+      "rights_status": "allowed",
+      "generation_backend": "trellis_v1",
+      "provider": "microsoft",
+      "model": "microsoft/TRELLIS-image-large",
+      "revision": "442aa1e1afb9014e80681d3bf604e8d728a86ee7",
+      "prompt": "Original isolated electrical maintenance cabinet, tall grey steel box, two doors, recessed handle, small warning chevron without letters, conduit stub on top, studio three-quarter view, solid white background, authored utility cabinet.",
+      "prompt_hash": "d178dce59df91219d9744f2b2fe87f10fc067a17356cb30cf3245884ef81377e",
+      "input_hashes": [
+        "c04564cb8c07c7382b394d70ab0339a5cfc8cd8136d003a151a1242a0325c875"
+      ],
+      "seed": 1406,
+      "cost_mode": "subscription",
+      "cost_cents": 0,
+      "raw_hash": "37636db5b9ed5b50ba9a0e35ef2fe293a4bfb65d77d75d36a573e0b65c94ddeb",
+      "output_hash": "62abb4c55b20521fb450c6d05f4a1e189c2ec3335d242d24d7015ff80a24a178",
+      "tool_versions": {
+        "trellis_commit": "442aa1e1afb9014e80681d3bf604e8d728a86ee7",
+        "trellis_model": "microsoft/TRELLIS-image-large",
+        "blender": "Blender 5.1.2",
+        "unity": "6000.7.0a5"
+      },
+      "operations": [
+        "rights_check",
+        "generate_3d_trellis",
+        "archive_raw",
+        "blender_cleanup",
+        "export_fbx",
+        "unity_import",
+        "human_review",
+        "bom_promotion"
+      ],
+      "unity_import_settings": {
+        "modelImporter": "ModelImporter",
+        "globalScale": 1,
+        "meshCompression": "Off",
+        "materialImportMode": "ImportStandard",
+        "axis": "Y-up",
+        "litMaterial": "Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.mat",
+        "baseColorTexture": "Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet_basecolor.png",
+        "visual_scale": 1,
+        "grounded_min_y": 0
+      },
+      "review_receipts": [
+        {
+          "reviewer": "COMPOSITION",
+          "verdict": "pass",
+          "receipt_path": "docs/assets/bom/props/reviews/station-props/COMPOSITION.md",
+          "receipt_hash": "ae1f4e6687a1e448b44f27dcf5685e157eee3a0d7fbe53a69dd416ec69ca3489",
+          "reviewed_at": "2026-09-04T11:35:20Z"
+        },
+        {
+          "reviewer": "SPRITE_FIDELITY",
+          "verdict": "pass",
+          "receipt_path": "docs/assets/bom/props/reviews/station-props/SPRITE_FIDELITY.md",
+          "receipt_hash": "34ee579608c8a2960791f8fe880c34b56ee6b8b32bee14f6d3d211bee8d96f16",
+          "reviewed_at": "2026-09-04T11:35:20Z"
+        },
+        {
+          "reviewer": "TYPOGRAPHY",
+          "verdict": "pass",
+          "receipt_path": "docs/assets/bom/props/reviews/station-props/TYPOGRAPHY.md",
+          "receipt_hash": "6e7649cf7f7d820cfbc7e3d32246cf64e7296a3e22e4113964888fd36c9c04f7",
+          "reviewed_at": "2026-09-04T11:35:20Z"
+        },
+        {
+          "reviewer": "PRODUCT_POLISH",
+          "verdict": "pass",
+          "receipt_path": "docs/assets/bom/props/reviews/station-props/PRODUCT_POLISH.md",
+          "receipt_hash": "a30e2ac29b8e8b0925e78a61639d83d2d419d1f07ad8769b206b65eaa96efd8d",
+          "reviewed_at": "2026-09-04T11:35:20Z"
+        }
+      ],
+      "status": "promoted",
+      "created_at": "2026-09-04T11:21:28.0997780Z",
+      "config_hash": "148785d78e62142bfe0538eb2c79e8e5828567e30f94182b5a1a99ba341cc520",
+      "model_hash": "60940f1148489da029fe89c3c46d06dd0870f73ae39e4b2691dae149c0420889",
+      "preview_hash": "a2e2e91d0f6308aea1ac414da41a8b6d313d50c5c252f098a827b60cc98b0e9a",
+      "measurement_claim": "authored-tile-relative",
+      "blender_size": [
+        0.51337,
+        0.93503,
+        0.45
+      ],
+      "prefab_path": "Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.prefab",
+      "material_path": "Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.mat",
+      "texture_path": "Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet_basecolor.png",
+      "texture_hash": "8e51be869aa63966f65341c2176ccc29c85407e22bdf3423d9cab2e13841b6a8",
+      "output_path": "Game/Assets/Janseon/ArtSource/Props/poc-prop-cabinet/poc-prop-cabinet.fbx",
+      "raw_path": "Game/Assets/Janseon/ArtSource/Props/poc-prop-cabinet/poc-prop-cabinet.raw.glb",
+      "rights_evidence": {
+        "path": "docs/assets/bom/props/reviews/station-props/source-verification-report.md",
+        "sha256": "a6e9fe614b2ca5205f65fa9f4be555cf3150c4415841755fe57be898166dfe6d"
+      },
+      "prior_synthetic_review_hashes": [
+        "ad1350822232b55b8b1aa6d9c43a05d2f0ff7a4efff7eab3a3d1e83c1899b78c"
+      ],
+      "runtime_files": {
+        "Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.fbx": "62abb4c55b20521fb450c6d05f4a1e189c2ec3335d242d24d7015ff80a24a178",
+        "Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.fbx.meta": "983fbba0e3bb6139fe87c3a36fbce65401953663b5a33c24390338f6a869b993",
+        "Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.mat": "78dd3badbb7faf6035c13399073afa2ad504e5929f2ac57904e92fec282d2823",
+        "Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.mat.meta": "5fb02a9fd9b5ab219d2aa9d94a2f6f6b3e88f1eceac68f280886408469e8e320",
+        "Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.prefab": "f5f669029e38406f3e42fb4328a6a65b30220a72f1d565681a975d52d24f944b",
+        "Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet.prefab.meta": "d738f36e9483e54b16c748b4dc1aa492ef63a06112102baa25aba5985871abbe",
+        "Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet_basecolor.png": "8e51be869aa63966f65341c2176ccc29c85407e22bdf3423d9cab2e13841b6a8",
+        "Game/Assets/Janseon/Art/Props/poc-prop-cabinet/poc-prop-cabinet_basecolor.png.meta": "6b1f807638572f9632a7bea5df140c45cdaddaf91d8a973f0bfb8db4379c3186"
+      },
+      "source_binding": {
+        "path": "docs/assets/bom/props/reviews/station-props/poc-prop-cabinet.json",
+        "sha256": "e392757695dde198bf3aa01712e1280787b7cbaf865569d8bc624682523df4ad"
+      },
+      "acceptance_scope": "six prop appearance and current Foundation runtime only; full product and UI review separate",
+      "look": {
+        "palette": {
+          "steel": "#8A93A0",
+          "concrete": "#2A3548",
+          "hazard": "#C9A227",
+          "void": "#0B111C",
+          "accent_line": "#3D7EA6"
+        },
+        "materials": {
+          "finish": "scratched-station-metal",
+          "albedo": "basecolor",
+          "normal": "required",
+          "roughness": 0.65,
+          "metalness": 0.55,
+          "ao": "optional",
+          "scale_m": 1.5
+        },
+        "references": [
+          {
+            "kind": "visual-thesis",
+            "source": "Design.md#1"
+          },
+          {
+            "kind": "pipeline-material",
+            "source": "docs/game-logic/Asset-Pipeline.md"
+          },
+          {
+            "kind": "design-token",
+            "source": "Design.md#2.1"
+          }
+        ],
+        "owner_verdict": "pending",
+        "owner_notes": "Station props were not in the HTML review. Material channels required before any new prop generation."
+      }
+    }
+  ]
+}

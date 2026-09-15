@@ -1,0 +1,16 @@
+ Design.md                                          |  17 +-
+ .../Foundation/Composition/AppLifetimeScope.cs     |   9 +
+ .../Janseon/Foundation/UI/GameplayUiSnapshot.cs    | 183 +++++++----
+ .../Janseon/Foundation/UI/PocCoreLoopController.cs | 124 ++++++--
+ .../Foundation/UI/Presenters/GameplayPresenter.cs  | 153 ++++-----
+ .../Foundation/UI/Presenters/GameplayUiHost.cs     |   9 +-
+ .../Assets/Janseon/Foundation/UI/UguiHudBuilder.cs |  80 +++--
+ Game/Assets/Janseon/Foundation/UI/UguiHudView.cs   |  96 +-----
+ .../Assets/Janseon/Foundation/UI/UiElementNames.cs |  32 +-
+ Game/Assets/Tests/EditMode/UiToolkitScreenTests.cs |   1 -
+ .../Tests/EditMode/UiToolkitVisualQaDefectTests.cs |  11 +-
+ .../PlayMode/BattleSessionDriverPlayModeTests.cs   |  27 +-
+ .../Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs | 343 ++++++++++++++++++++-
+ .../Tests/PlayMode/FoundationSceneFlowTests.cs     |  11 +-
+ .../PlayMode/UiToolkitCapturePlayModeTests.cs      | 297 +++++++++++++-----
+ 15 files changed, 990 insertions(+), 403 deletions(-)

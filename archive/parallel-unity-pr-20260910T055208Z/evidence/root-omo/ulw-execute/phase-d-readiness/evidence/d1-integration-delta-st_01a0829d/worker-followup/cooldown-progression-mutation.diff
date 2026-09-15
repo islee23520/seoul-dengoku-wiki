@@ -1,0 +1,13 @@
+﻿diff --git a/Game/Assets/Janseon/Core/Battle/Sim/BattleSim.cs b/Game/Assets/Janseon/Core/Battle/Sim/BattleSim.cs
+index 960244d..605e51f 100644
+--- a/Game/Assets/Janseon/Core/Battle/Sim/BattleSim.cs
++++ b/Game/Assets/Janseon/Core/Battle/Sim/BattleSim.cs
+@@ -157,7 +157,7 @@ namespace Janseon.Core.Battle.Sim
+             if (state.Cards == null) return;
+             for (var i = 0; i < state.Cards.Length; i++)
+             {
+-                if (state.Cards[i].RechargeTicksLeft > 0) state.Cards[i].RechargeTicksLeft--;
++                if (state.Cards[i].RechargeTicksLeft > 0) state.Cards[i].RechargeTicksLeft += 0;
+                 if (state.Cards[i].ActiveTicksLeft > 0) state.Cards[i].ActiveTicksLeft--;
+             }
+         }

@@ -1,0 +1,41 @@
+{
+    "cleaned_at_utc":  "2026-09-08T23:39:52.9960471Z",
+    "worktree_unity_processes_before_cleanup":  0,
+    "tasks":  [
+                  {
+                      "name":  "OmoRtfcD2UiRed_st_01a0833b",
+                      "removed":  true
+                  },
+                  {
+                      "name":  "OmoRtfcD2UiRedV2_st_01a0833b",
+                      "removed":  true
+                  },
+                  {
+                      "name":  "OmoRtfcD2UiRedBehavioral_st_01a0833b",
+                      "removed":  true
+                  }
+              ],
+    "scripts":  [
+                    {
+                        "path":  "E:\\omo\\rtfc-d2-ui-red-run-st_01a0833b\\launch.ps1",
+                        "removed":  true
+                    },
+                    {
+                        "path":  "C:\\Windows\\Temp\\OmoRtfcD2UiRedV2_st_01a0833b.ps1",
+                        "removed":  true
+                    },
+                    {
+                        "path":  "C:\\Windows\\Temp\\OmoRtfcD2UiRedBehavioral_st_01a0833b.ps1",
+                        "removed":  true
+                    },
+                    {
+                        "path":  "C:\\Windows\\Temp\\OmoRtfcD2UiCompileFix_st_01a0833b.cs",
+                        "removed":  true
+                    }
+                ],
+    "remote_behavioral_evidence_retained":  true,
+    "inherited_logs_count":  17,
+    "diff_txt_retained":  true,
+    "source_test_sha256":  "584be63353b239b10893db3ac7f6775fbe757299d5dec4daaa7730b64fe7d9ab",
+    "ownership_released":  true
+}

@@ -1,0 +1,43 @@
+﻿commit f6438aa2622aef54792e994832cc611a2017d9da
+Author: ilseob lee <lysk9884@gmail.com>
+Date:   Wed Sep 9 02:05:34 2026 +0900
+
+    feat(foundation): RTFC Phase D1 BattleSessionDriver 30Hz 怨좎젙 ?ㅽ뀦 援щ룞湲?    
+    - VContainer ITickable 30Hz 怨좎젙 ?ㅽ뀦 ?꾩궛湲? ?꾨젅?꾨떦 理쒕? 4??BattleSim.Step, carry 1??誘몃쭔 諛붿슫??    - ?쇱떆?뺤????쒕씪?대쾭 ?뚯쑀: Core ?곹깭/?먯옣/吏臾?遺덈?, ?뺤? 以?寃쎄낵?쒓컙? ??꾨씪??誘몄쭊??    - BattleSim.Replay ?숇벑?? (At,Seq) ?뺣젹 紐낅졊 ?뚮퉬濡??쒕씪?대쾭 援щ룞 ?ㅽ뻾??吏곸젒 由ы뵆?덉씠? ?쇱튂
+    - FoundationLifetimeScope ?쒖엫 ?깅줉 + Func<double> ?ㅼ떆媛??대윮 二쇱엯
+    - EditMode 怨꾩빟 ?뚯뒪??6醫?RED 1/5 ?ㅽ뙣 ??GREEN 6/6) + PlayMode ?뚮퉬???뚯뒪??1醫??듦낵
+    - 寃利??먮낯: docs/verification/ulw-execute/rtfc/phase-d/driver/
+
+ Game/Assets/Janseon/Foundation/Battle.meta         |   8 +
+ .../Foundation/Battle/BattleSessionDriver.cs       | 110 +++
+ .../Foundation/Battle/BattleSessionDriver.cs.meta  |  11 +
+ .../Composition/FoundationLifetimeScope.cs         |   4 +
+ .../Tests/EditMode/BattleSessionDriverTests.cs     | 229 ++++++
+ .../EditMode/BattleSessionDriverTests.cs.meta      |  11 +
+ .../Janseon.Foundation.EditModeTests.asmdef        |   4 +-
+ .../PlayMode/BattleSessionDriverPlayModeTests.cs   | 206 +++++
+ .../BattleSessionDriverPlayModeTests.cs.meta       |  11 +
+ .../rtfc/phase-d/driver/fingerprint.txt            |  10 +
+ .../rtfc/phase-d/driver/green-editmode.done        |   0
+ .../rtfc/phase-d/driver/green-editmode.exit        |   1 +
+ .../rtfc/phase-d/driver/green-editmode.log.txt     | 573 +++++++++++++
+ .../rtfc/phase-d/driver/green-editmode.xml         |  66 ++
+ .../rtfc/phase-d/driver/green-launch.log.txt       |   2 +
+ .../phase-d/driver/green-playmode-launch.log.txt   |   2 +
+ .../rtfc/phase-d/driver/green-playmode.done        |   0
+ .../rtfc/phase-d/driver/green-playmode.exit        |   1 +
+ .../rtfc/phase-d/driver/green-playmode.log.txt     | 913 +++++++++++++++++++++
+ .../rtfc/phase-d/driver/green-playmode.xml         |  44 +
+ .../rtfc/phase-d/driver/lfs-hydration.json         |   5 +
+ .../driver/miscue-real-driver-editmode.done        |   0
+ .../driver/miscue-real-driver-editmode.exit        |   0
+ .../driver/miscue-real-driver-editmode.log.txt     | 646 +++++++++++++++
+ .../phase-d/driver/miscue-real-driver-editmode.xml | 107 +++
+ .../driver/miscue-real-driver-launch.log.txt       |   2 +
+ .../rtfc/phase-d/driver/red2-editmode.done         |   0
+ .../rtfc/phase-d/driver/red2-editmode.exit         |   1 +
+ .../rtfc/phase-d/driver/red2-editmode.log.txt      | 649 +++++++++++++++
+ .../rtfc/phase-d/driver/red2-editmode.xml          | 122 +++
+ .../rtfc/phase-d/driver/red2-launch.log.txt        |   2 +
+ .../ulw-execute/rtfc/phase-d/driver/summary.txt    |  91 ++
+ 32 files changed, 3830 insertions(+), 1 deletion(-)

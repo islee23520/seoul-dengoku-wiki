@@ -1,0 +1,449 @@
+{
+  "ok": false,
+  "intended_head": "baaeb8a5b46404f0e866c795cf65c1f431673ca4",
+  "intended_source_fingerprint": "1897d03c25a97126e484f92ef5ced1080afb97750b791ca1d30d981582672d4f",
+  "error_count": 2,
+  "errors": [
+    "main-title-1280x720: title-start-focus stroke-focus pixels 0 < 24",
+    "main-title-1920x1080: title-start-focus stroke-focus pixels 0 < 24"
+  ],
+  "png_count": 10,
+  "items": [
+    {
+      "stem": "main-title-1280x720",
+      "width": 1280,
+      "height": 720,
+      "state": "main-title",
+      "errors": [
+        "missing_focus_ring"
+      ],
+      "sha256": "b36e7cbcd9ce3af32c8d0bbe738a1b83467c3cbf971e00a0324a7d269b900fbe",
+      "bytes": 49625,
+      "alpha0": 0,
+      "nonDark": 76522,
+      "textLum": 7853,
+      "alpha0Ratio": 0,
+      "nonDarkRatio": 0.08303168402777777,
+      "regions": [
+        {
+          "name": "title-center-stack",
+          "nonVoid": 26086,
+          "strokeFocus": 0,
+          "count": 202880,
+          "x0": 320,
+          "y0": 201,
+          "x1": 960,
+          "y1": 518
+        },
+        {
+          "name": "title-start-focus",
+          "nonVoid": 37394,
+          "strokeFocus": 0,
+          "count": 110592,
+          "x0": 384,
+          "y0": 345,
+          "x1": 896,
+          "y1": 561
+        }
+      ],
+      "text_lum_floor": 400
+    },
+    {
+      "stem": "main-title-1920x1080",
+      "width": 1920,
+      "height": 1080,
+      "state": "main-title",
+      "errors": [
+        "missing_focus_ring"
+      ],
+      "sha256": "70af86c98b077886a033cd4e4e0c2c3ba1d66f78886cb80379b771f748f8bd14",
+      "bytes": 88895,
+      "alpha0": 0,
+      "nonDark": 170591,
+      "textLum": 18488,
+      "alpha0Ratio": 0,
+      "nonDarkRatio": 0.0822680362654321,
+      "regions": [
+        {
+          "name": "title-center-stack",
+          "nonVoid": 57218,
+          "strokeFocus": 0,
+          "count": 456000,
+          "x0": 480,
+          "y0": 302,
+          "x1": 1440,
+          "y1": 777
+        },
+        {
+          "name": "title-start-focus",
+          "nonVoid": 84149,
+          "strokeFocus": 0,
+          "count": 248832,
+          "x0": 576,
+          "y0": 518,
+          "x1": 1344,
+          "y1": 842
+        }
+      ],
+      "text_lum_floor": 900
+    },
+    {
+      "stem": "campaign-route-stage-1280x720",
+      "width": 1280,
+      "height": 720,
+      "state": "route-stage",
+      "errors": [],
+      "sha256": "7e878abbb1d2afc1f7eec45a2dafa0c10577de12e5d62a6539a419d15dcddd4c",
+      "bytes": 69490,
+      "alpha0": 0,
+      "nonDark": 621710,
+      "textLum": 85316,
+      "alpha0Ratio": 0,
+      "nonDarkRatio": 0.6745985243055556,
+      "regions": [
+        {
+          "name": "stage-rail",
+          "nonVoid": 52676,
+          "strokeFocus": 0,
+          "count": 105694,
+          "x0": 25,
+          "y0": 14,
+          "x1": 1254,
+          "y1": 100
+        },
+        {
+          "name": "route-rail",
+          "nonVoid": 211673,
+          "strokeFocus": 0,
+          "count": 218496,
+          "x0": 25,
+          "y0": 115,
+          "x1": 409,
+          "y1": 684
+        }
+      ],
+      "text_lum_floor": 400
+    },
+    {
+      "stem": "campaign-route-stage-1920x1080",
+      "width": 1920,
+      "height": 1080,
+      "state": "route-stage",
+      "errors": [],
+      "sha256": "58e99997ccacfb50760ff52d67c348862ff638d164bf299565a6bca4336163f9",
+      "bytes": 133680,
+      "alpha0": 0,
+      "nonDark": 1397201,
+      "textLum": 193492,
+      "alpha0Ratio": 0,
+      "nonDarkRatio": 0.6738044945987655,
+      "regions": [
+        {
+          "name": "stage-rail",
+          "nonVoid": 118371,
+          "strokeFocus": 0,
+          "count": 239590,
+          "x0": 38,
+          "y0": 21,
+          "x1": 1881,
+          "y1": 151
+        },
+        {
+          "name": "route-rail",
+          "nonVoid": 476447,
+          "strokeFocus": 0,
+          "count": 491904,
+          "x0": 38,
+          "y0": 172,
+          "x1": 614,
+          "y1": 1026
+        }
+      ],
+      "text_lum_floor": 900
+    },
+    {
+      "stem": "encounter-choices-1280x720",
+      "width": 1280,
+      "height": 720,
+      "state": "encounter",
+      "errors": [],
+      "sha256": "b216568c27fb1437f947100614f57b93190663b54fd084cd95c65e30c6053420",
+      "bytes": 82961,
+      "alpha0": 0,
+      "nonDark": 621753,
+      "textLum": 91991,
+      "alpha0Ratio": 0,
+      "nonDarkRatio": 0.6746451822916667,
+      "regions": [
+        {
+          "name": "stage-rail",
+          "nonVoid": 52716,
+          "strokeFocus": 0,
+          "count": 105694,
+          "x0": 25,
+          "y0": 14,
+          "x1": 1254,
+          "y1": 100
+        },
+        {
+          "name": "encounter-detail-stack",
+          "nonVoid": 338234,
+          "strokeFocus": 0,
+          "count": 508080,
+          "x0": 384,
+          "y0": 100,
+          "x1": 1254,
+          "y1": 684
+        }
+      ],
+      "text_lum_floor": 400
+    },
+    {
+      "stem": "encounter-choices-1920x1080",
+      "width": 1920,
+      "height": 1080,
+      "state": "encounter",
+      "errors": [],
+      "sha256": "0882f7429ee978f36f5af54ec7cdc79ca6ef6cc2ffa7b4d8212d604a25123313",
+      "bytes": 154737,
+      "alpha0": 0,
+      "nonDark": 1397267,
+      "textLum": 206964,
+      "alpha0Ratio": 0,
+      "nonDarkRatio": 0.6738363233024691,
+      "regions": [
+        {
+          "name": "stage-rail",
+          "nonVoid": 118421,
+          "strokeFocus": 0,
+          "count": 239590,
+          "x0": 38,
+          "y0": 21,
+          "x1": 1881,
+          "y1": 151
+        },
+        {
+          "name": "encounter-detail-stack",
+          "nonVoid": 759606,
+          "strokeFocus": 0,
+          "count": 1141875,
+          "x0": 576,
+          "y0": 151,
+          "x1": 1881,
+          "y1": 1026
+        }
+      ],
+      "text_lum_floor": 900
+    },
+    {
+      "stem": "battle-state-1280x720",
+      "width": 1280,
+      "height": 720,
+      "state": "battle",
+      "errors": [],
+      "sha256": "976f2a8d873991deaecfc3c0498f1d449bc54b6fc7e7c45df7e425ab794f3f3c",
+      "bytes": 62988,
+      "alpha0": 0,
+      "nonDark": 819801,
+      "textLum": 11025,
+      "alpha0Ratio": 0,
+      "nonDarkRatio": 0.889541015625,
+      "regions": [
+        {
+          "name": "battle-hud",
+          "nonVoid": 169947,
+          "strokeFocus": 0,
+          "count": 189477,
+          "x0": 25,
+          "y0": 115,
+          "x1": 358,
+          "y1": 684
+        },
+        {
+          "name": "battle-grid",
+          "nonVoid": 193724,
+          "strokeFocus": 0,
+          "count": 203580,
+          "x0": 358,
+          "y0": 144,
+          "x1": 793,
+          "y1": 612
+        },
+        {
+          "name": "battle-log",
+          "nonVoid": 247515,
+          "strokeFocus": 0,
+          "count": 247515,
+          "x0": 819,
+          "y0": 115,
+          "x1": 1254,
+          "y1": 684
+        }
+      ],
+      "text_lum_floor": 400
+    },
+    {
+      "stem": "battle-state-1920x1080",
+      "width": 1920,
+      "height": 1080,
+      "state": "battle",
+      "errors": [],
+      "sha256": "d0827a0fc2171d7d1719ceff946fe11d6c0710f53185a51ee4320edaf41fcd52",
+      "bytes": 111041,
+      "alpha0": 0,
+      "nonDark": 1810646,
+      "textLum": 26438,
+      "alpha0Ratio": 0,
+      "nonDarkRatio": 0.8731896219135803,
+      "regions": [
+        {
+          "name": "battle-hud",
+          "nonVoid": 403519,
+          "strokeFocus": 0,
+          "count": 426146,
+          "x0": 38,
+          "y0": 172,
+          "x1": 537,
+          "y1": 1026
+        },
+        {
+          "name": "battle-grid",
+          "nonVoid": 447078,
+          "strokeFocus": 0,
+          "count": 458406,
+          "x0": 537,
+          "y0": 216,
+          "x1": 1190,
+          "y1": 918
+        },
+        {
+          "name": "battle-log",
+          "nonVoid": 557662,
+          "strokeFocus": 0,
+          "count": 557662,
+          "x0": 1228,
+          "y0": 172,
+          "x1": 1881,
+          "y1": 1026
+        }
+      ],
+      "text_lum_floor": 900
+    },
+    {
+      "stem": "settlement-return-1280x720",
+      "width": 1280,
+      "height": 720,
+      "state": "settlement",
+      "errors": [],
+      "sha256": "87e40e74d546ad8be62f1cbbae5ffded906eef1efb400a8a3a5c4c3162abcf0c",
+      "bytes": 85801,
+      "alpha0": 0,
+      "nonDark": 622087,
+      "textLum": 153689,
+      "alpha0Ratio": 0,
+      "nonDarkRatio": 0.6750075954861111,
+      "regions": [
+        {
+          "name": "settlement-panel-band",
+          "nonVoid": 333579,
+          "strokeFocus": 0,
+          "count": 370944,
+          "x0": 256,
+          "y0": 129,
+          "x1": 1024,
+          "y1": 612
+        }
+      ],
+      "text_lum_floor": 400
+    },
+    {
+      "stem": "settlement-return-1920x1080",
+      "width": 1920,
+      "height": 1080,
+      "state": "settlement",
+      "errors": [],
+      "sha256": "1dc098ef12a5f598bdaa0a004cec0f9b3d01f1bfad3bb8664f5675102266ef5b",
+      "bytes": 156928,
+      "alpha0": 0,
+      "nonDark": 1413658,
+      "textLum": 345717,
+      "alpha0Ratio": 0,
+      "nonDarkRatio": 0.6817409336419753,
+      "regions": [
+        {
+          "name": "settlement-panel-band",
+          "nonVoid": 749501,
+          "strokeFocus": 0,
+          "count": 834048,
+          "x0": 384,
+          "y0": 194,
+          "x1": 1536,
+          "y1": 918
+        }
+      ],
+      "text_lum_floor": 900
+    }
+  ],
+  "uniqueness_groups": [
+    {
+      "hash": "b36e7cbcd9ce3af32c8d0bbe738a1b83467c3cbf971e00a0324a7d269b900fbe",
+      "stems": [
+        "main-title-1280x720"
+      ]
+    },
+    {
+      "hash": "70af86c98b077886a033cd4e4e0c2c3ba1d66f78886cb80379b771f748f8bd14",
+      "stems": [
+        "main-title-1920x1080"
+      ]
+    },
+    {
+      "hash": "7e878abbb1d2afc1f7eec45a2dafa0c10577de12e5d62a6539a419d15dcddd4c",
+      "stems": [
+        "campaign-route-stage-1280x720"
+      ]
+    },
+    {
+      "hash": "58e99997ccacfb50760ff52d67c348862ff638d164bf299565a6bca4336163f9",
+      "stems": [
+        "campaign-route-stage-1920x1080"
+      ]
+    },
+    {
+      "hash": "b216568c27fb1437f947100614f57b93190663b54fd084cd95c65e30c6053420",
+      "stems": [
+        "encounter-choices-1280x720"
+      ]
+    },
+    {
+      "hash": "0882f7429ee978f36f5af54ec7cdc79ca6ef6cc2ffa7b4d8212d604a25123313",
+      "stems": [
+        "encounter-choices-1920x1080"
+      ]
+    },
+    {
+      "hash": "976f2a8d873991deaecfc3c0498f1d449bc54b6fc7e7c45df7e425ab794f3f3c",
+      "stems": [
+        "battle-state-1280x720"
+      ]
+    },
+    {
+      "hash": "d0827a0fc2171d7d1719ceff946fe11d6c0710f53185a51ee4320edaf41fcd52",
+      "stems": [
+        "battle-state-1920x1080"
+      ]
+    },
+    {
+      "hash": "87e40e74d546ad8be62f1cbbae5ffded906eef1efb400a8a3a5c4c3162abcf0c",
+      "stems": [
+        "settlement-return-1280x720"
+      ]
+    },
+    {
+      "hash": "1dc098ef12a5f598bdaa0a004cec0f9b3d01f1bfad3bb8664f5675102266ef5b",
+      "stems": [
+        "settlement-return-1920x1080"
+      ]
+    }
+  ]
+}

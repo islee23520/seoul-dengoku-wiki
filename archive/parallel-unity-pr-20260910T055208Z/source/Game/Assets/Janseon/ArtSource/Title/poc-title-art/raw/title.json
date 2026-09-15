@@ -1,0 +1,19 @@
+{
+  "name": "title",
+  "backend": "grok",
+  "path": "/tmp/todo13-gen/raw/title.jpg",
+  "sha256": "0a5717dadd56b7e3b6a0c0a00d877f1b9876918925a2d9d9532444c42f441340",
+  "size": [
+    1024,
+    1024
+  ],
+  "format": "JPEG",
+  "prompt": "Title screen BACKGROUND ONLY for a Korean post-collapse subway grand-strategy game. Wide cinematic 16:9 view of an abandoned Seoul subway concourse inspired by Yeongdeungpo: wet dark concrete, teal emergency strip lights, rusted pipes, empty ticket hall, distant tunnel glow, isometric pixel-art painting, navy and cyan palette. NO people, NO UI, NO HUD, NO buttons, NO logos, NO watermark, NO readable text, NO letters, NO hangul, NO signage.",
+  "receipt": {
+    "http_status": 200,
+    "endpoint": "/v1/images/generations",
+    "model": "grok-imagine-image",
+    "bytes": 420163
+  },
+  "created_at": "2026-09-04T10:10:19.854020Z"
+}

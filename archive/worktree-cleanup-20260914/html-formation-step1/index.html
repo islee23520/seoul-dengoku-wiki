@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JANSEON: SEOUL / PROTOTYPE HUB</title>
+    <!-- Using existing CSS rules combined into a simple inline block or external index.css -->
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", system-ui, sans-serif;
+        --bg-void: #080d14;
+        --bg-panel: #111a26;
+        --bg-raised: #182433;
+        --bg-well: #0b131d;
+        --stroke: #2a3548;
+        --stroke-strong: #45546b;
+        --text: #e6eaf0;
+        --text-secondary: #9aa6b2;
+        --text-muted: #6b7684;
+        --blue: #4d8bac;
+        --signal: #c9a227;
+        --safe: #52765f;
+      }
+
+      * { box-sizing: border-box; }
+
+      html, body {
+        width: 100%;
+        min-height: 100%;
+        margin: 0;
+        background: radial-gradient(circle at 30% 0%, #17202b 0, transparent 38%), var(--bg-void);
+        color: var(--text);
+      }
+
+      .app-shell {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100vh;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      .topbar {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        min-height: 82px;
+        padding: 24px 0 16px;
+        border-bottom: 1px solid var(--stroke);
+      }
+
+      .eyebrow {
+        margin: 0 0 6px;
+        color: var(--blue);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(26px, 3vw, 36px);
+        font-weight: 650;
+        letter-spacing: -0.025em;
+      }
+
+      .hub-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 20px;
+        padding: 40px 0;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: inherit;
+        border: 1px solid var(--stroke);
+        background: rgba(17, 26, 38, 0.95);
+        box-shadow: 0 18px 48px rgba(0, 0, 0, 0.23);
+        transition: transform 0.2s, border-color 0.2s;
+      }
+
+      .card:hover, .card:focus-visible {
+        border-color: var(--signal);
+        transform: translateY(-2px);
+        outline: none;
+      }
+
+      .card-lead {
+        grid-column: 1 / -1;
+      }
+
+      .card-lead .card-content {
+        border-left: 3px solid var(--signal);
+      }
+
+      .card-content {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+      }
+
+      .card-header {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 12px;
+      }
+
+      .card h2 {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .status-badge {
+        padding: 4px 8px;
+        border: 1px solid var(--stroke);
+        background: var(--bg-well);
+        color: var(--text-secondary);
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 10px;
+      }
+
+      .status-approved {
+        color: #b6d7bf;
+        border-color: var(--safe);
+      }
+      
+      .status-review {
+        color: var(--signal);
+        border-color: rgba(201, 162, 39, 0.45);
+      }
+
+      .card p {
+        margin: 0 0 16px;
+        color: var(--text-secondary);
+        font-size: 13px;
+        line-height: 1.5;
+        flex-grow: 1;
+      }
+
+      .card-footer {
+        display: flex;
+        align-items: center;
+        margin-top: auto;
+        padding-top: 16px;
+        border-top: 1px solid var(--stroke);
+        color: var(--blue);
+        font-size: 12px;
+        font-weight: 600;
+      }
+      
+      .card-footer::after {
+        content: "→";
+        margin-left: 8px;
+        transition: transform 0.2s;
+      }
+      
+      .card:hover .card-footer::after {
+        transform: translateX(4px);
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <p class="eyebrow">JANSEON: SEOUL / PROTOTYPE HUB</p>
+          <h1>잔선: 서울 프로토타입</h1>
+        </div>
+      </header>
+
+      <main class="hub-grid">
+        <!-- Lead CTA: Avatar Preview -->
+        <a href="/poc/avatar-preview/" class="card card-lead">
+          <div class="card-content">
+            <div class="card-header">
+              <h2>지휘관 카드 전투</h2>
+              <span class="status-badge status-review">검토 중</span>
+            </div>
+            <p>지휘관의 기동 재집결 카드를 선택하고, 아군 분대와 지면 방향을 지정하세요. 지휘관별 재사용 대기시간 · 전투 병사 48명 + 지휘관 표현 12명.</p>
+            <div class="card-footer">지휘관 카드 전투 열기</div>
+          </div>
+        </a>
+
+        <!-- Formation Editor -->
+        <a href="/poc/formation-editor/" class="card">
+          <div class="card-content">
+            <div class="card-header">
+              <h2>출격 진형 편집</h2>
+              <span class="status-badge status-approved">승인 완료</span>
+            </div>
+            <p>작은 역사 승강장 동측 기준, 전투 개시 전 분대원 배치 및 진형 구축 인터페이스. 각 유닛의 역할에 따른 배치를 구성합니다.</p>
+            <div class="card-footer">진형 편집기 열기</div>
+          </div>
+        </a>
+
+        <!-- Battle Preview -->
+        <a href="/poc/battle-preview/" class="card">
+          <div class="card-content">
+            <div class="card-header">
+              <h2>실시간 분대 교전</h2>
+              <span class="status-badge status-approved">승인 완료</span>
+            </div>
+            <p>6개 분대 대 6개 분대, 총 임시 병사 48명의 실시간 교전 시뮬레이션. 독립적으로 선택 가능한 분대 단위의 전투 흐름을 확인합니다.</p>
+            <div class="card-footer">전투 프리뷰 열기</div>
+          </div>
+        </a>
+      </main>
+    </div>
+  </body>
+</html>

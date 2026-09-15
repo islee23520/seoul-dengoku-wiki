@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "purpose": "Six non-prop runtime art slots. Each slot is unblocked only by a source-bound promoted BOM row; the catalog asset may bind only such rows.",
+  "bom_path": "docs/assets/bom/runtime/runtime-slot-bom.json",
+  "catalog_path": "Game/Assets/Janseon/Foundation/Art/RuntimeSlotCatalog.asset",
+  "runtime_root": "Game/Assets/Janseon/Art/",
+  "source_roots": [
+    "Game/Assets/Janseon/ArtCandidates/",
+    "Game/Assets/Janseon/ArtSource/"
+  ],
+  "candidate_root": "Game/Assets/Janseon/ArtCandidates/",
+  "slots": [
+    {
+      "slot": "title-art",
+      "asset_class": "title_art",
+      "destination": "Game/Assets/Janseon/Art/Title/",
+      "primary_key": "backdrop",
+      "runtime_keys": ["backdrop"],
+      "import": "texture"
+    },
+    {
+      "slot": "ui-icon-set",
+      "asset_class": "ui_kit",
+      "destination": "Game/Assets/Janseon/Art/UI/",
+      "primary_key": "atlas",
+      "runtime_keys": ["atlas", "icon-talk", "icon-detour", "icon-battle", "icon-heal", "icon-party", "icon-station", "icon-crate", "icon-alert"],
+      "import": "sprite"
+    },
+    {
+      "slot": "history-texture",
+      "asset_class": "tile",
+      "destination": "Game/Assets/Janseon/Art/Tiles/",
+      "primary_key": "floor",
+      "runtime_keys": ["floor", "wall", "platform"],
+      "import": "tile"
+    },
+    {
+      "slot": "character-explorer",
+      "asset_class": "character_sprite",
+      "destination": "Game/Assets/Janseon/Art/Characters/poc-explorer/",
+      "primary_key": "atlas",
+      "runtime_keys": ["atlas"],
+      "import": "character"
+    },
+    {
+      "slot": "character-medic",
+      "asset_class": "character_sprite",
+      "destination": "Game/Assets/Janseon/Art/Characters/poc-medic/",
+      "primary_key": "atlas",
+      "runtime_keys": ["atlas"],
+      "import": "character"
+    },
+    {
+      "slot": "character-patrol",
+      "asset_class": "character_sprite",
+      "destination": "Game/Assets/Janseon/Art/Characters/poc-patrol/",
+      "primary_key": "atlas",
+      "runtime_keys": ["atlas"],
+      "import": "character"
+    }
+  ],
+  "character_sheet": {
+    "frame_width": 96,
+    "frame_height": 128,
+    "fps": 12,
+    "pixels_per_unit": 85.333336,
+    "pivot": [0.5, 0.0625],
+    "facings": ["N", "E", "S", "W"],
+    "actions": [
+      { "name": "idle", "frames": 4 },
+      { "name": "walk", "frames": 6 },
+      { "name": "attack", "frames": 6 },
+      { "name": "hit", "frames": 3 },
+      { "name": "down", "frames": 4 }
+    ]
+  }
+}

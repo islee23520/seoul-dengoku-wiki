@@ -1,0 +1,138 @@
+{
+  "baseRefName": "main",
+  "commits": [
+    {
+      "authoredDate": "2026-09-12T11:34:50Z",
+      "authors": [
+        {
+          "email": "lysk9884@gmail.com",
+          "id": "MDQ6VXNlcjQxNTY0MjM=",
+          "login": "islee23520",
+          "name": "iz"
+        }
+      ],
+      "committedDate": "2026-09-12T11:34:50Z",
+      "messageBody": "",
+      "messageHeadline": "docs(lore): 무구 후보와 근미래 연대 제안을 구분하고 조사 오독을 정정",
+      "oid": "13f34f9bbfe5f89f4004fb77dce3724661395259"
+    },
+    {
+      "authoredDate": "2026-09-12T11:35:48Z",
+      "authors": [
+        {
+          "email": "lysk9884@gmail.com",
+          "id": "MDQ6VXNlcjQxNTY0MjM=",
+          "login": "islee23520",
+          "name": "iz"
+        }
+      ],
+      "committedDate": "2026-09-12T11:35:48Z",
+      "messageBody": "",
+      "messageHeadline": "docs(cast): 로스터 검토 상태와 문화권별 작명 계약을 바로잡음",
+      "oid": "5230e02a940474e7077470a19bff84102bd5fb63"
+    }
+  ],
+  "files": [
+    {
+      "path": "docs-site/world/Cast-Profile-Contract.md",
+      "additions": 13,
+      "deletions": 9,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "docs-site/world/Conscription-Remnants.md",
+      "additions": 37,
+      "deletions": 30,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "docs-site/world/Era-Arms-and-Tech-Level.md",
+      "additions": 99,
+      "deletions": 56,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "docs-site/world/Hangnyeol-and-Bon-gwan.md",
+      "additions": 36,
+      "deletions": 31,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "docs-site/world/Heirs-Names-and-World-Ledger.md",
+      "additions": 12,
+      "deletions": 12,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "docs-site/world/Lost-Technology-Lineage.md",
+      "additions": 54,
+      "deletions": 20,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "docs-site/world/Random-Cast-Roster.md",
+      "additions": 46,
+      "deletions": 24,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "docs-site/world/Scenario-Timeline.md",
+      "additions": 23,
+      "deletions": 0,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "docs/game-logic/Cast-Profile-Contract.md",
+      "additions": 13,
+      "deletions": 9,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "docs/game-logic/Conscription-Remnants.md",
+      "additions": 37,
+      "deletions": 30,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "docs/game-logic/Era-Arms-and-Tech-Level.md",
+      "additions": 99,
+      "deletions": 56,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "docs/game-logic/Hangnyeol-and-Bon-gwan.md",
+      "additions": 36,
+      "deletions": 31,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "docs/game-logic/Heirs-Names-and-World-Ledger.md",
+      "additions": 12,
+      "deletions": 12,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "docs/game-logic/Lost-Technology-Lineage.md",
+      "additions": 54,
+      "deletions": 20,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "docs/game-logic/Random-Cast-Roster.md",
+      "additions": 46,
+      "deletions": 24,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "docs/game-logic/Scenario-Timeline.md",
+      "additions": 23,
+      "deletions": 0,
+      "changeType": "MODIFIED"
+    }
+  ],
+  "headRefName": "docs/lore-audit-corrections",
+  "mergeable": "MERGEABLE",
+  "state": "OPEN",
+  "statusCheckRollup": [],
+  "url": "https://github.com/islee23520/seoul-kenshi/pull/87"
+}

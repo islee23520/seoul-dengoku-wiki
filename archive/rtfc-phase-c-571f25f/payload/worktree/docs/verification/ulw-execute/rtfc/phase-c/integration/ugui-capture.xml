@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-08 08:28:26Z" end-time="2026-09-08 08:28:26Z" duration="0.7581561">
+  <test-suite type="TestSuite" id="1037" name="잔선: 서울" fullname="잔선: 서울" runstate="Runnable" testcasecount="22" result="Passed" start-time="2026-09-08 08:28:26Z" end-time="2026-09-08 08:28:26Z" duration="0.758156" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1030" name="Janseon.Foundation.PlayModeTests.dll" fullname="/Users/ilseoblee/workspace/seoul-kenshi-wt/rtfc-phase-c/Game/Library/ScriptAssemblies/Janseon.Foundation.PlayModeTests.dll" runstate="Runnable" testcasecount="22" result="Passed" start-time="2026-09-08 08:28:26Z" end-time="2026-09-08 08:28:26Z" duration="0.754737" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="96140" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestFixture" id="1001" name="UiToolkitCapturePlayModeTests" fullname="UiToolkitCapturePlayModeTests" classname="UiToolkitCapturePlayModeTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-09-08 08:28:26Z" end-time="2026-09-08 08:28:26Z" duration="0.753811" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1002" name="Capture_C1_To_C10_Matrix_FromProductionCanvas" fullname="UiToolkitCapturePlayModeTests.Capture_C1_To_C10_Matrix_FromProductionCanvas" methodname="Capture_C1_To_C10_Matrix_FromProductionCanvas" classname="UiToolkitCapturePlayModeTests" runstate="Runnable" seed="561838680" result="Passed" start-time="2026-09-08 08:28:26Z" end-time="2026-09-08 08:28:26Z" duration="0.748495" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[Unable to load font face for [LegacyRuntime]. Make sure "Include Font Data" is enabled in the Font Import Settings.
+TmpFont bundle asset creation failed: Value cannot be null.
+Parameter name: shader
+JANSEON_STARTUP_READY screen=MainTitle
+CAPTURE_OK main-title-1280x720 nonDark=78093 varied=78076 textLum=9322 sha=76375ae365fc7031
+CAPTURE_OK main-title-1920x1080 nonDark=173209 varied=173189 textLum=22679 sha=8a6a95730d4aa6d2
+CAPTURE_OK campaign-route-stage-1280x720 nonDark=621857 varied=668631 textLum=91422 sha=0700c358c8cb798f
+CAPTURE_OK campaign-route-stage-1920x1080 nonDark=1397396 varied=1504320 textLum=211922 sha=3b78dad8a3b28d76
+CAPTURE_OK encounter-choices-1280x720 nonDark=621890 varied=668631 textLum=93106 sha=908bccae75941dc8
+CAPTURE_OK encounter-choices-1920x1080 nonDark=1397519 varied=1504320 textLum=209941 sha=931e612a78723248
+CAPTURE_OK battle-state-1280x720 nonDark=621890 varied=668631 textLum=154684 sha=bf52427fca3648bd
+CAPTURE_OK battle-state-1920x1080 nonDark=1397519 varied=1504320 textLum=348185 sha=44f4805ed51cb3a0
+CAPTURE_OK settlement-return-1280x720 nonDark=629113 varied=668631 textLum=154153 sha=b4370fdc319a7d63
+CAPTURE_OK settlement-return-1920x1080 nonDark=1413880 varied=1504320 textLum=346992 sha=6ad655cdc04020c5
+Saving results to: /Users/ilseoblee/Library/Application Support/Janseon Studio/잔선_ 서울/TestResults.xml
+]]></output>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
