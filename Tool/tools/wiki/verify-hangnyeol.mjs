@@ -370,6 +370,7 @@ export async function verifyHangnyeol(options = {}) {
     const list = docs.cast.people;
     const parents = docs.cast?.lineage?.parents ?? {};
     const founderSesu = docs.cast?.lineage?.founder_sesu ?? {};
+    const personClan = docs.cast?.lineage?.person_clan ?? {};
     const deriveSesu = (name) => {
       const seen = new Set();
       let current = name;
@@ -422,6 +423,9 @@ export async function verifyHangnyeol(options = {}) {
         }
 
         const clan = clanIndex.get(person?.clan);
+        if (personClan[person.name] !== person.clan) {
+          fail('H23', `${where} applied clan ${person.clan}, lineage clan ${personClan[person.name] ?? '(missing)'}`);
+        }
         if (!clan) {
           fail('H5', `${where} references unknown clan id ${person?.clan}`);
           continue;

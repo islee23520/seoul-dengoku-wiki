@@ -130,6 +130,8 @@ node Tool/tools/wiki/test-verify-hangnyeol.mjs       # 검사기 단위 테스�
 - `applied` 인물은 `lineage.parents`의 부모→자식 간선을 따라 `lineage.founder_sesu`의
   시조까지 이어져야 한다. 검사기는 그 깊이로 세수를 다시 계산한다. JSON에 적힌 세수와
   파생 세수가 다르면 실패한다.
+- `lineage.person_clan`은 적용 인물마다 사용할 문중 id를 명시한다. 적용표의 `clan`과
+  다르면 실패한다. 생성기는 `cast-hangnyeol.json` 전체 파일을 `--lineage`로 받을 수 있다.
 
 ## 하지 않는 것
 

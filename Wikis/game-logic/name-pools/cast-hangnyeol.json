@@ -11628,6 +11628,10 @@
     "founder_sesu": {
       "성창립": 40
     },
+    "person_clan": {
+      "성수현": "cangnyeong-seong-yeolcha",
+      "성사현": "cangnyeong-seong-yeolcha"
+    },
     "notes": "세수는 이 부모→자식 간선에서만 파생한다. 나이 필드 없음."
   },
   "assignment": "동일 이름은 SHA-256 기반 결정점으로 같은 한글 성씨의 한자 변형을 2015 인구 가중 선택한다. 과반 본관이 있으면 그 본관, 없으면 표의 본관 목록에서 결정적으로 고른다."

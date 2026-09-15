@@ -115,6 +115,7 @@ function baseDocs() {
       lineage: {
         parents: { '김도윤': '김부' },
         founder_sesu: { '김부': 71 },
+        person_clan: { '김도윤': 'gimhae-kim' },
       },
       people: [
         { name: '김도윤', surname: '김', status: 'applied', clan: 'gimhae-kim', sesu: 72, hangnyeol: '도', position: 'first', reason: '김해 김씨 72세' },
@@ -393,6 +394,7 @@ test('H14: two people at one sesu using different hangnyeol fails', async () => 
 test('H14: siblings sharing one sesu and one hangnyeol pass', async () => {
   const root = await makeFixture((docs) => {
     docs.cast.lineage.parents['김도원'] = '김부';
+    docs.cast.lineage.person_clan['김도원'] = 'gimhae-kim';
     docs.cast.people.push({
       name: '김도원', surname: '김', status: 'applied', clan: 'gimhae-kim',
       sesu: 72, hangnyeol: '도', position: 'first', reason: '같은 세수 형제',
@@ -442,6 +444,15 @@ test('H22: applied person without a founder path fails', async () => {
   const result = run(root, ['--cast']);
   assert.equal(result.code, 1);
   assert.match(result.stderr, /^H22:.*no parent-to-founder path/m);
+});
+
+test('H23: applied person lineage clan must match the applied clan', async () => {
+  const root = await makeFixture((docs) => {
+    docs.cast.lineage.person_clan['김도윤'] = 'other-clan';
+  });
+  const result = run(root, ['--cast']);
+  assert.equal(result.code, 1);
+  assert.match(result.stderr, /^H23:.*lineage clan other-clan/m);
 });
 
 // ---- H18 / H19: 라이브 재대조 판정 ----

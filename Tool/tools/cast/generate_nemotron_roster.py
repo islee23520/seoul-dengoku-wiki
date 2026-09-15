@@ -14,9 +14,13 @@ import random
 from collections import Counter
 from pathlib import Path
 
-import pyarrow.parquet as pq
-
-from hangnyeol_names import apply_hangnyeol, select_hangnyeol
+from bongwan_assignment import assign_bongwan, clan_identity, surname_rows_by_hangul
+from hangnyeol_names import (
+    apply_hangnyeol,
+    lineage_clan_id,
+    normalize_lineage_document,
+    select_hangnyeol,
+)
 
 DISTRICT_STATE = {
     "서울-영등포구": ("여의신정수문정부", "west-sluice"),
@@ -110,30 +114,49 @@ def compose_name(
     pools: dict,
     used: set,
     rng: random.Random,
-    parents: dict[str, str],
-    founder_sesu: dict[str, int],
+    lineage: dict,
 ) -> dict:
     surnames = pools["surnames"]["surnames"]
     given = pools["given-male"]["names"] if sex == "남자" else pools["given-female"]["names"]
-    clans = {c["surname"]: c for c in pools["clans"]["clans"]}
+    clans = {c["id"]: c for c in pools["clans"]["clans"]}
+    surname_rows = pools["surname-bongwan-by-hangul"]
     for _ in range(24):
-        sur = rng.choice(surnames)
+        clan_id = lineage_clan_id(person_id, lineage)
+        clan = clans.get(clan_id) if clan_id else None
+        sur = clan["surname"] if clan else rng.choice(surnames)
         base = rng.choice(given)
         hang = None
         bongwan = None
-        clan = clans.get(sur)
-        if clan and person_id in parents:
-            selected = select_hangnyeol(person_id, clan, parents, founder_sesu)
-            if selected is None:
-                continue
-            hang = selected["hangnyeol"]
+        surname_hanja = None
+        bongwan_hanja = None
+        if clan:
+            selected = select_hangnyeol(
+                person_id,
+                clan,
+                lineage.get("parents", {}),
+                lineage.get("founder_sesu", {}),
+            )
             bongwan = clan["bongwan"]
-            given_out = apply_hangnyeol(base, hang, selected["position"])
-            if len(given_out) >= 2 and given_out[0] == given_out[1]:
-                continue
+            identity = clan_identity(bongwan, surname_rows.get(sur, []))
+            if identity:
+                surname_hanja = identity["surname_hanja"]
+                bongwan_hanja = identity["bongwan_hanja"]
+            if selected:
+                hang = selected["hangnyeol"]
+                given_out = apply_hangnyeol(base, hang, selected["position"])
+                if len(given_out) >= 2 and given_out[0] == given_out[1]:
+                    continue
+            else:
+                given_out = base
         else:
             given_out = base
         full = sur + given_out
+        if not clan:
+            assigned = assign_bongwan(full, surname_rows.get(sur, []))
+            if assigned:
+                surname_hanja = assigned["surname_hanja"]
+                bongwan = assigned["bongwan"]
+                bongwan_hanja = assigned["bongwan_hanja"]
         if full in used:
             continue
         used.add(full)
@@ -142,6 +165,8 @@ def compose_name(
             "이름": given_out,
             "성명": full,
             "본관": bongwan,
+            "성 한자": surname_hanja,
+            "본관 한자": bongwan_hanja,
             "항렬자": hang,
         }
     raise RuntimeError("name pool exhausted")
@@ -170,11 +195,21 @@ def main() -> None:
         "given-female": json.loads((pools_dir / "given-female.json").read_text(encoding="utf-8")),
         "clans": json.loads((pools_dir / "clan-hangnyeol-tables.json").read_text(encoding="utf-8")),
     }
+    surname_bongwan = json.loads(
+        (pools_dir / "surnames-bongwan.json").read_text(encoding="utf-8")
+    )
+    pools["surname-bongwan-by-hangul"] = surname_rows_by_hangul(
+        surname_bongwan["surnames"]
+    )
     lineage = {"parents": {}, "founder_sesu": {}}
     if args.lineage:
-        lineage = json.loads(Path(args.lineage).read_text(encoding="utf-8"))
+        lineage = normalize_lineage_document(
+            json.loads(Path(args.lineage).read_text(encoding="utf-8"))
+        )
     existing = set(json.loads(Path(args.existing).read_text(encoding="utf-8")))
     rng = random.Random(args.seed)
+
+    import pyarrow.parquet as pq
 
     table = pq.read_table(
         args.parquet,
@@ -222,8 +257,7 @@ def main() -> None:
                 pools,
                 used,
                 rng,
-                lineage.get("parents", {}),
-                lineage.get("founder_sesu", {}),
+                lineage,
             )
         except RuntimeError:
             continue
@@ -236,6 +270,8 @@ def main() -> None:
             "성": name["성"],
             "이름": name["이름"],
             "본관": name["본관"],
+            "성 한자": name["성 한자"],
+            "본관 한자": name["본관 한자"],
             "항렬자": name["항렬자"],
             "sex": sex,
             "age": age,

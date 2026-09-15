@@ -1,7 +1,16 @@
 #!/usr/bin/env python3
 """센서스 인구 가중으로 한자 성씨 변형과 대표 본관을 결정적으로 고른다."""
 
+from __future__ import annotations
+
 import hashlib
+
+
+def surname_rows_by_hangul(rows: list[dict]) -> dict[str, list[dict]]:
+    result: dict[str, list[dict]] = {}
+    for row in rows:
+        result.setdefault(row["hangul"], []).append(row)
+    return result
 
 
 def _stable_pick(key: str, weighted: list[tuple[dict, int]]) -> dict:
@@ -32,4 +41,21 @@ def assign_bongwan(name: str, surname_rows: list[dict]) -> dict | None:
         "surname_hanja": surname.get("hanja"),
         "bongwan": bongwan["name"],
         "bongwan_hanja": bongwan.get("hanja"),
+    }
+
+
+def clan_identity(bongwan: str, surname_rows: list[dict]) -> dict | None:
+    """지정 문중 본관과 일치하는 센서스 행에서 성·본관 한자를 찾는다."""
+    candidates = []
+    for surname in surname_rows:
+        for row in surname.get("bongwan", []):
+            if row.get("name") == bongwan:
+                candidates.append((surname, row))
+    if not candidates:
+        return None
+    surname, row = max(candidates, key=lambda pair: int(pair[0].get("population_2015") or 0))
+    return {
+        "surname_hanja": surname.get("hanja"),
+        "bongwan": row["name"],
+        "bongwan_hanja": row.get("hanja"),
     }

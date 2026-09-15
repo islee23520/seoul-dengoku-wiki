@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """혈연 간선으로 세수를 계산하고 항렬자를 이름에 적용한다."""
 
+from __future__ import annotations
+
 
 def derive_sesu(person_id: str, parents: dict[str, str], founder_sesu: dict[str, int]) -> int:
     """부모 간선만 따라 세수를 구한다. 나이·직업·성별은 입력받지 않는다."""
@@ -48,3 +50,21 @@ def select_hangnyeol(
                 "position": row["position"],
             }
     return None
+
+
+def lineage_clan_id(person_id: str, lineage: dict) -> str | None:
+    """가계가 명시한 문중만 반환한다. 성씨나 이름에서 문중을 추측하지 않는다."""
+    return lineage.get("person_clan", {}).get(person_id)
+
+
+def normalize_lineage_document(document: dict) -> dict:
+    """순수 lineage JSON과 cast-hangnyeol 적용표를 같은 생성기 입력으로 만든다."""
+    if "lineage" not in document:
+        return document
+    lineage = dict(document["lineage"])
+    person_clan = dict(lineage.get("person_clan", {}))
+    for person in document.get("people", []):
+        if person.get("status") == "applied" and person.get("clan"):
+            person_clan[person["name"]] = person["clan"]
+    lineage["person_clan"] = person_clan
+    return lineage
