@@ -18,4 +18,4 @@ Librande (then EA Maxis creative director) compared hundreds of design documents
 
 ## Fill rule
 
-Write `onePage.title`, `audience`, `pictureNote`, and `panels[]`. Every panel `body` must already appear in canon (`Concept.md`, `Design.md`, `Intent.md`, or `GDD/game-logic/*.md`). Do not invent stations, factions, or verbs. Pair with MDA layers from `mda-framework`. Open work becomes a GitHub requirements issue (목적/비목표/정합성/품질 게이트웨이/완료 조건), not a second MDA paragraph. Persist with `Tool/tools/design-store/mda-store.mjs`.
+Write `onePage.title`, `audience`, `pictureNote`, and `panels[]`. Every panel `body` must already appear in canon (`Concept.md`, `Design.md`, `Intent.md`, or `GDD/game-logic/*.md`). Do not invent stations, factions, or verbs. Pair with MDA layers from `mda-framework`. Open work becomes a GitHub requirements issue (목적/비목표/정합성/품질 게이트웨이/완료 조건), not a second MDA paragraph. Persist with `Tool/design-store/mda-store.mjs`.

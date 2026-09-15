@@ -14,8 +14,8 @@ UPM 상대 경로는 `Game/Packages` 기준입니다. 패키지의 `Islee.UnityR
 저장소 루트에서 실행합니다.
 
 ```bash
-npm --prefix Tool/tools run remote:setup
-npm --prefix Tool/tools run remote:start
+npm --prefix Tool run remote:setup
+npm --prefix Tool run remote:start
 ```
 
 setup은 기록된 gitlink를 초기화하고 서브모듈의 잠금 파일로 Node 의존성을 설치한 뒤 CLI·브로커·웹 자산을 빌드합니다. `git submodule update --remote`로 임의 최신 버전을 받지 않습니다. 재실행은 같은 커밋을 유지합니다. 신규 클론에서는 setup을 먼저 끝낸 뒤 Unity가 `Game/`을 열어 로컬 패키지를 해석하도록 합니다.
@@ -34,8 +34,8 @@ UNITY_REMOTE_BROKER=http://127.0.0.1:4173 "$UNITY_EDITOR" \
 상주 연결에는 `-quit`을 넣지 않습니다. 같은 `Game/`에 Editor를 둘 이상 실행하지 않습니다.
 
 ```bash
-npm --prefix Tool/tools run remote:cli -- project
-npm --prefix Tool/tools run test:unity-remote
+npm --prefix Tool run remote:cli -- project
+npm --prefix Tool run test:unity-remote
 ```
 
 `project` 응답의 `source`가 `unity`이고 프로젝트 이름과 ID가 이 `Game/`에 해당하는지 확인합니다. Editor가 연결되지 않았을 때의 `demo` 응답은 브로커 확인일 뿐 실제 게임 연결 성공이 아닙니다. 브로커 시작 메시지의 웹 주소에서 빌드된 웹 자산을 제공합니다.

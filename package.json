@@ -10,8 +10,8 @@
   },
   "packageManager": "npm@12.0.2",
   "scripts": {
-    "test": "node Tool/tools/wiki/test-build-wiki.mjs && node Tool/tools/wiki/test-core-isometric-diagrams.mjs && node Tool/tools/wiki/test-publish-wiki.mjs",
-    "wiki:publish": "node Tool/tools/wiki/publish-wiki.mjs --no-push"
+    "test": "node Tool/wiki/test-build-wiki.mjs && node Tool/wiki/test-core-isometric-diagrams.mjs && node Tool/wiki/test-publish-wiki.mjs",
+    "wiki:publish": "node Tool/wiki/publish-wiki.mjs --no-push"
   },
   "dependencies": {
     "entities": "8.0.0",

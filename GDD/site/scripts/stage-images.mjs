@@ -10,7 +10,7 @@ const src = join(repoRoot, 'Reference', 'assets', 'wiki')
 const dest = join(docsSiteRoot, 'public', 'assets', 'wiki')
 
 function runLfsGate() {
-  const result = spawnSync(process.execPath, ['Tool/tools/check-lfs-hydration.mjs'], {
+  const result = spawnSync(process.execPath, ['Tool/check-lfs-hydration.mjs'], {
     cwd: repoRoot,
     encoding: 'utf8'
   })

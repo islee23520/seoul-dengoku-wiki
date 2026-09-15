@@ -1,0 +1,20 @@
+{
+  "id": "janseon-portrait-v2-target",
+  "source": {
+    "path": "Design/portrait-demo/assets/v2/target.png",
+    "replace": false
+  },
+  "canvas": {
+    "width": 1145,
+    "height": 1374
+  },
+  "sha256": "c3a7e4815de6acaef28faf429395417a001bfe8088df633537c6e1a2aa9109a9",
+  "comfy": {
+    "tunnel": "http://127.0.0.1:18188",
+    "loadImage": "target.png",
+    "windowsInput": "E:\\\\git\\\\linalab\\\\PNGAL\\\\environment\\\\ComfyUI-pngal-0.28.0\\\\input\\\\target.png",
+    "windowsProject": "E:\\\\git\\\\linalab\\\\PNGAL\\\\portraits\\\\janseon\\\\target.png",
+    "smileWorkflow": "portrait-reference-smile.api.json"
+  },
+  "notes": "v2/target.png is the immutable Mac original. Windows/Comfy copies are receive-only. Do not auto-replace v2."
+}
