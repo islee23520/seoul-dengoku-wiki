@@ -10,6 +10,7 @@ Repository-only ESM/Python tooling, not shipped with Unity; score 8, distinct bu
 | Wiki rendering and safe cleanup | `wiki/build-wiki.mjs` | `buildWiki`, `assertSafeOutputRoot` exports |
 | Wiki generator regression cases | `wiki/test-build-wiki.mjs` | Filesystem and visible-text boundaries |
 | Cast roster/relationship checks | `wiki/verify-cast.mjs` | `verifyCast` export, rule-coded violations |
+| Surname/bongwan/hangnyeol data contract | `wiki/verify-hangnyeol.mjs` | `verifyHangnyeol` export; quotes are matched against `Research/verification/hangnyeol/raw/` |
 | Strategy formula checks | `wiki/test-strategy-formulas.mjs` | Separate executable, not npm test |
 | Unity architecture gate | `architecture/check-unity-architecture.mjs` | C# scans plus scene YAML/build order |
 | Delivery-policy consistency | `policy/check-repo-delivery-policy.mjs` | Approved plan, ADR-001, live origin |
@@ -35,6 +36,8 @@ git lfs pull && git lfs checkout && node Tool/tools/check-lfs-hydration.mjs
 node Tool/tools/test-check-lfs-hydration.mjs
 npm --prefix Tool/tools test
 node Tool/tools/wiki/test-verify-cast.mjs
+node Tool/tools/wiki/verify-hangnyeol.mjs --cast
+node Tool/tools/wiki/test-verify-hangnyeol.mjs
 node Tool/tools/wiki/test-strategy-formulas.mjs
 node Tool/tools/architecture/check-unity-architecture.mjs
 node Tool/tools/architecture/test-check-unity-architecture.mjs
