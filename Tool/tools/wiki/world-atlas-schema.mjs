@@ -3,73 +3,73 @@ export const ATLAS_OWNER = 'wiki-world';
 export const SOURCE_KINDS = Object.freeze(['verified', 'inference', 'original-fiction']);
 
 export const STATES = Object.freeze([
-  ['S01', '여의신정수문정부'],
-  ['S02', '서남제작동맹'],
+  ['S01', '영등포수문정부'],
+  ['S02', '구로제작동맹'],
   ['S03', '마곡연구평의회'],
-  ['S04', '뚝도공방연합'],
-  ['S05', '암사고덕상수단'],
-  ['S06', '도성기록청'],
+  ['S04', '뚝섬공방연합'],
+  ['S05', '암사상수단'],
+  ['S06', '서울역기록청'],
   ['S07', '용산철도후국'],
-  ['S08', '노량진남관상회'],
-  ['S09', '상암송신공사'],
-  ['S10', '북산피난연맹'],
+  ['S08', '노량진상회'],
+  ['S09', '디지털미디어시티송신공사'],
+  ['S10', '북한산보국문피난연맹'],
   ['S11', '창동차륜방'],
-  ['S12', '신내망우환승시'],
-  ['S13', '약령의정동맹'],
-  ['S14', '아차구의관문국'],
-  ['S15', '가락잠실배급국'],
-  ['S16', '수서강남협약도시'],
+  ['S12', '신내환승시'],
+  ['S13', '제기동의정동맹'],
+  ['S14', '구의관문국'],
+  ['S15', '가락시장배급국'],
+  ['S16', '수서협약도시'],
 ].map(([id, name]) => Object.freeze({ id, name })));
 
 export const STATE_BY_ID = Object.freeze(Object.fromEntries(STATES.map((s) => [s.id, s])));
 export const STATE_BY_NAME = Object.freeze(Object.fromEntries(STATES.map((s) => [s.name, s])));
 
 export const CORPORATE_HOUSES = Object.freeze([
-  ['HC01', '삼성전자'],
-  ['HC02', '현대자동차'],
-  ['HC03', 'LG생활건강'],
-  ['HC04', 'SK에너지'],
-  ['HC05', '북문지식원'],
-  ['HC06', '쿠팡'],
-  ['HC07', '포스코'],
-  ['HC08', '한화에어로스페이스'],
-  ['HC09', '롯데쇼핑'],
-  ['HC10', 'CJ제일제당'],
-  ['HC11', 'CJ대한통운'],
-  ['HC12', '현대중공업'],
-  ['HC13', 'HD현대건설'],
-  ['HC14', '신한지주'],
-  ['HC15', '네이버'],
-  ['HC16', 'KT'],
-  ['HC17', 'LG에너지솔루션'],
-  ['HC18', 'HMM'],
-  ['HC19', '호텔신라'],
-  ['HC20', 'HYBE'],
-  ['HC21', '카카오'],
-  ['HC22', '테슬라코리아'],
+  ['HC01', '여의도전산가'],
+  ['HC02', '신정차륜가'],
+  ['HC03', '마곡생명가'],
+  ['HC04', '뚝섬열원가'],
+  ['HC05', '북한산보국문기록가'],
+  ['HC06', '노량진배달가'],
+  ['HC07', '구로합금가'],
+  ['HC08', '창동방호가'],
+  ['HC09', '서울역재고가'],
+  ['HC10', '마곡종자가'],
+  ['HC11', '용산호송가'],
+  ['HC12', '금천구청중기가'],
+  ['HC13', '수서건설가'],
+  ['HC14', '여의도장부가'],
+  ['HC15', '디지털미디어시티색인가'],
+  ['HC16', '용산교환가'],
+  ['HC17', '구로디지털단지전지가'],
+  ['HC18', '용산선박가'],
+  ['HC19', '동대입구객사가'],
+  ['HC20', '디지털미디어시티공연가'],
+  ['HC21', '디지털미디어시티결제가'],
+  ['HC22', '마곡시험선가'],
 ].map(([id, name]) => Object.freeze({ id, name })));
 
 export const CIVIC_HOUSES = Object.freeze([
-  ['HP01', '아리수수문가'],
-  ['HP02', '환승선로문'],
-  ['HP03', '공동의료원가'],
-  ['HP04', '도성기록법가'],
-  ['HP05', '북산귀환회'],
-  ['HP06', '약령치유문'],
-  ['HP07', '한강교량공회'],
-  ['HP08', '시장냉동상단'],
-  ['HP09', '데이터신탁가'],
-  ['HP10', '외교통역문'],
+  ['HP01', '영등포수문가'],
+  ['HP02', '용산선로문'],
+  ['HP03', '청량리의료원가'],
+  ['HP04', '서울역기록법가'],
+  ['HP05', '북한산보국문귀환회'],
+  ['HP06', '제기동치유문'],
+  ['HP07', '한강진교량공회'],
+  ['HP08', '노량진냉동상단'],
+  ['HP09', '디지털미디어시티신탁가'],
+  ['HP10', '이태원통역문'],
 ].map(([id, name]) => Object.freeze({ id, name })));
 
 export const LOCKED_HOUSES = Object.freeze([...CORPORATE_HOUSES, ...CIVIC_HOUSES]);
 
 export const THEATERS = Object.freeze([
-  ['XT01', '임진관문전구'],
+  ['XT01', '임진강관문전구'],
   ['XT02', '서해곡창전구'],
-  ['XT03', '해협삼로전구'],
-  ['XT04', '두만극동전구'],
-  ['XT05', '원양신탁전구'],
+  ['XT03', '대한해협전구'],
+  ['XT04', '두만강극동전구'],
+  ['XT05', '인천신탁전구'],
 ].map(([id, name]) => Object.freeze({ id, name })));
 
 export const HOSTILE_GROUPS = Object.freeze([
@@ -103,9 +103,11 @@ export const HOSTILE_GROUPS = Object.freeze([
 ].map(([id, name, category]) => Object.freeze({ id, name, category })));
 
 export const COMPANY_TOKENS = Object.freeze([
-  '삼성전자', 'Samsung', '현대자동차', 'Hyundai Motor', 'LG전자', 'SK하이닉스',
-  '카카오', '네이버', 'NAVER', '포스코', 'POSCO', '한화에어로스페이스',
-  '기아자동차', '쿠팡', 'Coupang', '롯데케미칼', '현대중공업',
+  '삼성전자', 'Samsung', '현대자동차', 'Hyundai Motor', 'LG생활건강', 'LG전자',
+  'LG에너지솔루션', 'SK에너지', 'SK하이닉스', '카카오', '네이버', 'NAVER',
+  '포스코', 'POSCO', '한화에어로스페이스', '기아자동차', '쿠팡', 'Coupang',
+  '롯데쇼핑', '롯데케미칼', 'CJ제일제당', 'CJ대한통운', '현대중공업',
+  'HD현대건설', '신한지주', 'HMM', '호텔신라', 'HYBE', '테슬라코리아',
 ]);
 
 export const HOUSE_REQUIRED_FIELDS = Object.freeze([
