@@ -9599,16 +9599,19 @@
       "bongwan_hanja": "水原"
     },
     {
-      "name": "이이서",
+      "name": "이일섭",
       "surname": "이",
-      "status": "unconfirmed",
+      "status": "applied",
       "bongwan": "전의",
-      "clan": "c774-c804-c758-674e",
-      "branch": "unconfirmed",
-      "reason": "소유자 정정으로 전의 이씨 본관을 확정했다. 부계 분파·세수·항렬자는 확인되지 않아 기존 이름을 유지한다.",
+      "clan": "jeonui-lee-cheonggang",
+      "branch": "청강공파",
+      "reason": "전의이씨청강공파화수회 항렬표의 33세 O燮(섭)을 이름 둘째 글자에 적용했다.",
       "source_file": "Cast-State-14.md",
       "surname_hanja": "李",
-      "bongwan_hanja": "全義"
+      "bongwan_hanja": "全義",
+      "sesu": 33,
+      "hangnyeol": "섭",
+      "position": "second"
     },
     {
       "name": "문하율",
@@ -11978,14 +11981,18 @@
     "parents": {
       "성수현": "성도원",
       "성사현": "성도원",
-      "성도원": "성창립"
+      "성도원": "성창립",
+      "이일섭": "이상계",
+      "이상계": "이호계"
     },
     "founder_sesu": {
-      "성창립": 40
+      "성창립": 40,
+      "이호계": 31
     },
     "person_clan": {
       "성수현": "cangnyeong-seong-yeolcha",
-      "성사현": "cangnyeong-seong-yeolcha"
+      "성사현": "cangnyeong-seong-yeolcha",
+      "이일섭": "jeonui-lee-cheonggang"
     },
     "notes": "세수는 이 부모→자식 간선에서만 파생한다. 나이 필드 없음."
   },
