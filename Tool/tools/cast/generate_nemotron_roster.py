@@ -14,7 +14,13 @@ import random
 from collections import Counter
 from pathlib import Path
 
-import pyarrow.parquet as pq
+from bongwan_assignment import assign_bongwan, clan_identity, surname_rows_by_hangul
+from hangnyeol_names import (
+    apply_hangnyeol,
+    lineage_clan_id,
+    normalize_lineage_document,
+    select_hangnyeol,
+)
 
 DISTRICT_STATE = {
     "서울-영등포구": ("여의신정수문정부", "west-sluice"),
@@ -72,16 +78,6 @@ def livelihood(occupation: str) -> str:
     return LIVELIHOODS[int(h[:2], 16) % len(LIVELIHOODS)]
 
 
-def generation_index(age: int) -> int:
-    if age >= 60:
-        return 0
-    if age >= 40:
-        return 1
-    if age >= 25:
-        return 2
-    return 3
-
-
 def corridor_for(district: str, rng: random.Random) -> str | None:
     # Korean-script extra roster stays on 16-state books.
     # Diaspora names are seeded in Diaspora-Corridors.md, not this generator.
@@ -112,29 +108,55 @@ def arms(live: str, mil_hist: str, corridor: str | None) -> str:
     return "없음"
 
 
-def compose_name(sex: str, age: int, pools: dict, used: set, rng: random.Random) -> dict:
+def compose_name(
+    sex: str,
+    person_id: str,
+    pools: dict,
+    used: set,
+    rng: random.Random,
+    lineage: dict,
+) -> dict:
     surnames = pools["surnames"]["surnames"]
     given = pools["given-male"]["names"] if sex == "남자" else pools["given-female"]["names"]
-    clans = {c["surname"]: c for c in pools["clans"]["clans"]}
+    clans = {c["id"]: c for c in pools["clans"]["clans"]}
+    surname_rows = pools["surname-bongwan-by-hangul"]
     for _ in range(24):
-        sur = rng.choice(surnames)
+        clan_id = lineage_clan_id(person_id, lineage)
+        clan = clans.get(clan_id) if clan_id else None
+        sur = clan["surname"] if clan else rng.choice(surnames)
         base = rng.choice(given)
         hang = None
         bongwan = None
-        clan = clans.get(sur)
-        if clan and rng.random() < float(clan.get("keepRate", 0)):
-            idx = generation_index(age)
-            seq = clan["hangnyeol"]
-            hang = seq[min(idx, len(seq) - 1)]
+        surname_hanja = None
+        bongwan_hanja = None
+        if clan:
+            selected = select_hangnyeol(
+                person_id,
+                clan,
+                lineage.get("parents", {}),
+                lineage.get("founder_sesu", {}),
+            )
             bongwan = clan["bongwan"]
-            if hang == base[1:]:
-                continue
-            given_out = hang + base[1:]
-            if len(given_out) >= 2 and given_out[0] == given_out[1]:
-                continue
+            identity = clan_identity(bongwan, surname_rows.get(sur, []))
+            if identity:
+                surname_hanja = identity["surname_hanja"]
+                bongwan_hanja = identity["bongwan_hanja"]
+            if selected:
+                hang = selected["hangnyeol"]
+                given_out = apply_hangnyeol(base, hang, selected["position"])
+                if len(given_out) >= 2 and given_out[0] == given_out[1]:
+                    continue
+            else:
+                given_out = base
         else:
             given_out = base
         full = sur + given_out
+        if not clan:
+            assigned = assign_bongwan(full, surname_rows.get(sur, []))
+            if assigned:
+                surname_hanja = assigned["surname_hanja"]
+                bongwan = assigned["bongwan"]
+                bongwan_hanja = assigned["bongwan_hanja"]
         if full in used:
             continue
         used.add(full)
@@ -143,6 +165,8 @@ def compose_name(sex: str, age: int, pools: dict, used: set, rng: random.Random)
             "이름": given_out,
             "성명": full,
             "본관": bongwan,
+            "성 한자": surname_hanja,
+            "본관 한자": bongwan_hanja,
             "항렬자": hang,
         }
     raise RuntimeError("name pool exhausted")
@@ -159,6 +183,7 @@ def main() -> None:
     ap.add_argument("--pools", required=True)
     ap.add_argument("--existing", required=True)
     ap.add_argument("--out", required=True)
+    ap.add_argument("--lineage", help="JSON with parents and founder_sesu; omit to leave hangnyeol unused")
     ap.add_argument("--n", type=int, default=100)
     ap.add_argument("--seed", type=int, default=90421)
     args = ap.parse_args()
@@ -168,10 +193,23 @@ def main() -> None:
         "surnames": json.loads((pools_dir / "surnames.json").read_text(encoding="utf-8")),
         "given-male": json.loads((pools_dir / "given-male.json").read_text(encoding="utf-8")),
         "given-female": json.loads((pools_dir / "given-female.json").read_text(encoding="utf-8")),
-        "clans": json.loads((pools_dir / "clans-hangnyeol.json").read_text(encoding="utf-8")),
+        "clans": json.loads((pools_dir / "clan-hangnyeol-tables.json").read_text(encoding="utf-8")),
     }
+    surname_bongwan = json.loads(
+        (pools_dir / "surnames-bongwan.json").read_text(encoding="utf-8")
+    )
+    pools["surname-bongwan-by-hangul"] = surname_rows_by_hangul(
+        surname_bongwan["surnames"]
+    )
+    lineage = {"parents": {}, "founder_sesu": {}}
+    if args.lineage:
+        lineage = normalize_lineage_document(
+            json.loads(Path(args.lineage).read_text(encoding="utf-8"))
+        )
     existing = set(json.loads(Path(args.existing).read_text(encoding="utf-8")))
     rng = random.Random(args.seed)
+
+    import pyarrow.parquet as pq
 
     table = pq.read_table(
         args.parquet,
@@ -213,7 +251,14 @@ def main() -> None:
         if live_quota[live] >= live_cap:
             continue
         try:
-            name = compose_name(sex, age, pools, used, rng)
+            name = compose_name(
+                sex,
+                r["uuid"],
+                pools,
+                used,
+                rng,
+                lineage,
+            )
         except RuntimeError:
             continue
         mil = military(sex, r["military_status"] or "", age, rng)
@@ -225,6 +270,8 @@ def main() -> None:
             "성": name["성"],
             "이름": name["이름"],
             "본관": name["본관"],
+            "성 한자": name["성 한자"],
+            "본관 한자": name["본관 한자"],
             "항렬자": name["항렬자"],
             "sex": sex,
             "age": age,
