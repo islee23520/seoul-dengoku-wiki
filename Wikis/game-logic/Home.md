@@ -36,7 +36,7 @@
 | [가치관과 정책 척도](Values-and-Policy-Scales.md) | 인물 10칸, 조직 가치관·정책. 1001명 생성 경로 |
 | [서울 십육국](Sixteen-States.md) | 총16국, 강국5·약소국11의 지리와 기반시설 |
 | [십육국 핵심 인물](Core-Characters.md) | 국가별 핵심 인물의 성격, 야망, 공포와 촉발 사건 |
-| [인물 총람](Cast-Index.md) · [관계 원장](Cast-Relations.md) | 16국 인물 412명과 인물 사이 관계 원장 |
+| [인물 총람](Cast-Index.md) · [관계 원장](Cast-Relations.md) · [무소속 인물](Cast-Unaffiliated.md) | 16국 인물 412명, 무소속 인물과 인물 사이 관계 원장 |
 | [인물 카드 계약](Cast-Profile-Contract.md) | 이름 있는 인물의 필수 칸. 출신·언어·징집·무장 접근 |
 | [본관과 항렬](Hangnyeol-and-Bon-gwan.md) · [랜덤 추가 로스터](Random-Cast-Roster.md) | 성·남·여 풀 분리, 본관 항렬, Nemotron 100명 롤 |
 | [징집 잔존과 군 장부](Conscription-Remnants.md) | 징병제 명부가 동원잔존·무기고·탈영으로 쪼개지는 방식 |
