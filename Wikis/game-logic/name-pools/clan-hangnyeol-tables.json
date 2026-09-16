@@ -1032,6 +1032,14 @@
       "quote": "여흥 민씨(驪興閔氏)는 경기도 여주시를 관향으로 하는 한국의 성씨이다.",
       "evidence": "Research/verification/hangnyeol/raw/cast-missing-bongwan.md",
       "live_check": "unchecked"
+    },
+    {
+      "id": "s-jeonui-cheonggang-33-seop",
+      "url": "http://cheonggang.com/content/cheonggang6_03",
+      "accessed": "2026-09-16",
+      "quote": "33世 O燮(섭)",
+      "evidence": "Research/verification/hangnyeol/raw/jeonui-lee-cheonggang-hangnyeol.md",
+      "live_check": "unchecked"
     }
   ],
   "clans": [
@@ -3233,6 +3241,25 @@
       "method_ref": "ohaeng",
       "rows": [],
       "hangnyeol_unconfirmed_reason": "신생 문중의 항렬표는 아직 제정되지 않았다."
+    },
+    {
+      "id": "jeonui-lee-cheonggang",
+      "surname": "이",
+      "bongwan": "전의",
+      "bongwan_hanja": "全義",
+      "branch": "청강공파",
+      "provenance": "verified",
+      "sources": [
+        "s-jeonui-cheonggang-33-seop"
+      ],
+      "rows": [
+        {
+          "sesu": 33,
+          "hangnyeol": "섭",
+          "hanja": "燮",
+          "position": "second"
+        }
+      ]
     }
   ]
 }
