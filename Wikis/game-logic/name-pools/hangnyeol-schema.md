@@ -119,6 +119,9 @@ node Tool/tools/wiki/test-verify-hangnyeol.mjs       # 검사기 단위 테스�
 
 - `status`는 `applied`·`unused`·`unconfirmed` 중 하나이고, 셋 다 `reason`을 요구한다.
   미사용과 미확인은 다른 상태다.
+- 모든 인물은 `bongwan`과 `clan`을 반드시 가진다. 실존 본관을 확인하지 못한 경우에도
+  공란으로 두지 않고, `creative` 문중임을 명시한 세계관 본관과 사유를 기록한다(H25).
+- 인물의 `surname`·`bongwan`은 참조한 문중의 `surname`·`bongwan`과 같아야 한다(H24).
 - `applied`는 `clan`·`sesu`·`hangnyeol`·`position`을 모두 요구한다.
   - `clan`은 `clan-hangnyeol-tables.json`의 문중 id로 풀려야 한다.
   - 그 문중 표의 `sesu` 행에 같은 `hangnyeol`이 있어야 한다.
