@@ -64,6 +64,64 @@ export function verifyHouses(atlas, projections, fail) {
   if (!projections[PROJECTION_FILES.houses]) fail('E_MISSING_PROJECTION', PROJECTION_FILES.houses);
 }
 
+export async function verifyHumanRegistry(humans, docs, fail) {
+  const values = JSON.parse(await readFile(join(docs, 'name-pools', 'values-cast.json'), 'utf8'));
+  const corridorSource = await readFile(join(docs, 'Diaspora-Corridors.md'), 'utf8');
+  const expected = new Map();
+  for (const person of values.people) {
+    if (expected.has(person.name)) fail('E_K_MAP', `duplicate source name ${person.name}`);
+    expected.set(person.name, { role: person.title, stage: person.stage,
+      state_id: person.state, state_name: person.state_name });
+  }
+  for (const block of corridorSource.split(/(?=^### 인물 )/m)) {
+    const name = block.match(/^- 성명: ([^.\n]+)/m)?.[1];
+    if (!name) continue;
+    if (expected.has(name)) fail('E_K_MAP', `duplicate source name ${name}`);
+    expected.set(name, { role: block.match(/^- 직위: (.+)$/m)?.[1],
+      stage: null, state_id: null, state_name: null });
+  }
+  if (humans.length !== expected.size) fail('E_K_MAP', `actual=${humans.length} expected=${expected.size}`);
+  const ids = new Set();
+  const names = new Set();
+  const byName = new Map();
+  const profileSources = new Map([['Diaspora-Corridors.md', corridorSource]]);
+  for (const human of humans) {
+    if (!/^K\d{3,}$/.test(human.id) || ids.has(human.id)) fail('E_K_MAP', `invalid/duplicate id ${human.id}`);
+    if (names.has(human.name)) fail('E_K_MAP', `duplicate name ${human.name}`);
+    ids.add(human.id);
+    names.add(human.name);
+    byName.set(human.name, human);
+    const source = expected.get(human.name);
+    if (!source) fail('E_K_MAP', `unknown human ${human.name}`);
+    else for (const [field, value] of Object.entries(source)) {
+      if (human[field] !== value) fail('E_K_MAP', `${human.id} ${field}`);
+    }
+    // Legacy source anchors are preserved. New registrations bind a real profile heading.
+    if (Number(human.id.slice(1)) > 422) {
+      const file = human.source_anchor;
+      if (typeof file !== 'string' || !/^(Cast-State-\d{2}|Diaspora-Corridors)\.md$/.test(file)) {
+        fail('E_K_MAP', `${human.id} source_anchor`);
+        continue;
+      }
+      if (!profileSources.has(file)) profileSources.set(file, await readFile(join(docs, file), 'utf8'));
+      const block = profileSources.get(file).replaceAll('\r\n', '\n').split(/(?=^### 인물 )/m)
+        .find((part) => part.startsWith(`### ${human.source_heading}\n`));
+      const profileName = file === 'Diaspora-Corridors.md'
+        ? block?.match(/^- 성명: ([^.\n]+)/m)?.[1]
+        : human.source_heading?.replace(/^인물 /, '');
+      if (!block || profileName !== human.name) fail('E_K_MAP', `${human.id} source_heading`);
+    }
+  }
+  for (const name of expected.keys()) if (!names.has(name)) fail('E_K_MAP', `missing ${name}`);
+  const index = parseCastIndex(await readFile(join(docs, 'Cast-Index.md'), 'utf8'));
+  for (const row of index) {
+    const human = byName.get(row.name);
+    if (!human || human.role !== row.role || human.state_id !== row.state_id) {
+      fail('E_K_MAP', `index mismatch ${row.name}`);
+    }
+  }
+}
+
 const STAGE_RUNNERS = Object.freeze({
   houses: verifyHouses,
   theaters: verifyTheaters,
@@ -91,19 +149,7 @@ export async function verifyAtlasStage({ atlasPath, docs, stage, fail, batch = n
   }
   if (parsed.value.schema !== ATLAS_SCHEMA) fail('E_ATLAS_SCHEMA', parsed.value.schema);
   if (parsed.value.document?.owner !== ATLAS_OWNER) fail('E_OWNER', 'document');
-  const humans = parsed.value.humans ?? [];
-  if (humans.length !== 422) fail('E_K_MAP', `actual=${humans.length}`);
-  try {
-    const index = parseCastIndex(await readFile(join(docs, 'Cast-Index.md'), 'utf8'));
-    for (let i = 0; i < 422; i += 1) {
-      if (humans[i]?.id !== index[i]?.id || humans[i]?.name !== index[i]?.name) {
-        fail('E_K_MAP', `${humans[i]?.id ?? i} ${humans[i]?.name}`);
-        break;
-      }
-    }
-  } catch (err) {
-    if (!err || err.code !== 'ENOENT') throw err;
-  }
+  await verifyHumanRegistry(parsed.value.humans ?? [], docs, fail);
   const projections = {};
   for (const name of Object.values(PROJECTION_FILES)) {
     try {
