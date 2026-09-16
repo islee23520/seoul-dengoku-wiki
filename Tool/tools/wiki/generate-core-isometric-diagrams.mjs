@@ -42,7 +42,7 @@ function renderDiagram(entry, index) {
   const accent = `hsl(${hue} 70% 58%)`;
   const title = escapeXml(entry.alt);
   const pageTitles = {
-    'Home.md': '잔선: 서울',
+    'Home.md': '서울:전국',
     'Game-Thesis.md': '게임의 핵심 선택',
     'Campaign-Loop.md': '출격하고 돌아오는 흐름',
     'World-and-Subway-Layers.md': '서울과 지하철 레이어',

@@ -479,7 +479,7 @@ export function exportIndexPage({ dbPath, outPath }) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>잔선: 서울 — 설계 문서</title>
+<title>서울:전국 — 설계 문서</title>
 <style>
 :root { --ink:#1a1714; --paper:#f4efe4; --line:#c9b896; --metro:#1d4e89; --mute:#6b6256; }
 body { margin:0; font:16px/1.55 "Apple SD Gothic Neo","Noto Sans KR",sans-serif; color:var(--ink); background:var(--paper); }
@@ -498,7 +498,7 @@ h2 { font-size:18px; margin:0 0 8px; }
 <body>
 <main>
 <p class="kicker">MDA + one-page · SQLite · Wikis/game-logic 정본</p>
-<h1>잔선: 서울 — 설계 문서</h1>
+<h1>서울:전국 — 설계 문서</h1>
 <p>한 장이 아니라 정본 문서를 층별로 채운 목차다. 각 칸은 그 요소가 무엇인지.</p>
 ${sections}
 ${canonSection}

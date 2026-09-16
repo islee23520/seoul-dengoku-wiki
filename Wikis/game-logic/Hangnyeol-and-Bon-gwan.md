@@ -2,7 +2,7 @@
 
 본관은 성씨의 계통을 가르는 정보이고, 항렬은 같은 문중 안에서 시조로부터의 세대를 이름 한 글자로 표시하는 규칙이다. 성씨·본관·분파·가계·세수·항렬자는 서로 다른 칸이다. 같은 성이라고 같은 집안이 아니며, 나이가 같다고 같은 세수도 아니다.
 
-이 문서는 《잔선: 서울》의 작명 정본과 조사 결과를 함께 둔다. 기계가 읽는 원장은 [성씨·본관](name-pools/surnames-bongwan.json), [항렬 체계](name-pools/hangnyeol-systems.json), [문중 항렬표](name-pools/clan-hangnyeol-tables.json), [인물 적용표](name-pools/cast-hangnyeol.json)다. 데이터 계약은 [성씨·본관·항렬 데이터 계약](name-pools/hangnyeol-schema.md), 검사는 `Tool/tools/wiki/verify-hangnyeol.mjs`다.
+이 문서는 《서울:전국》의 작명 정본과 조사 결과를 함께 둔다. 기계가 읽는 원장은 [성씨·본관](name-pools/surnames-bongwan.json), [항렬 체계](name-pools/hangnyeol-systems.json), [문중 항렬표](name-pools/clan-hangnyeol-tables.json), [인물 적용표](name-pools/cast-hangnyeol.json)다. 데이터 계약은 [성씨·본관·항렬 데이터 계약](name-pools/hangnyeol-schema.md), 검사는 `Tool/tools/wiki/verify-hangnyeol.mjs`다.
 
 ## 조사 범위와 수치
 
