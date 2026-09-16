@@ -1,6 +1,6 @@
 import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs'
 import { dirname, join, relative, sep } from 'node:path'
-import { fileURLToPath } from 'node:url'
+import { fileURLToPath, pathToFileURL } from 'node:url'
 
 const scriptDir = dirname(fileURLToPath(import.meta.url))
 const docsSiteRoot = join(scriptDir, '..')
@@ -9,7 +9,7 @@ const distDir = join(docsSiteRoot, 'dist')
 const referenceDir = join(repoRoot, 'Research', 'canon-reference')
 
 const BANNED_TERMS = ['Kenshi', 'Underrail', 'Gunner', 'clone', '복제']
-const EXPECTED_REFERENCE_EXCLUSIONS = 18
+export const EXPECTED_REFERENCE_EXCLUSIONS = 19
 const EXCLUDED_NAMES = ['_Sidebar.md', '_TEMPLATE.md']
 const SECTIONS = ['design', 'world', 'rules']
 
@@ -109,6 +109,27 @@ function excludedStems() {
   return { stems, referenceFiles }
 }
 
+export function referenceExclusionFailures(
+  referenceDir,
+  expected = EXPECTED_REFERENCE_EXCLUSIONS
+) {
+  const failures = []
+  if (!existsSync(referenceDir)) {
+    failures.push('FAIL exclusion: Research/canon-reference/ is missing')
+    return failures
+  }
+  const referenceFiles = readdirSync(referenceDir).filter((name) => {
+    const full = join(referenceDir, name)
+    return name.endsWith('.md') && statSync(full).isFile()
+  })
+  if (referenceFiles.length !== expected) {
+    failures.push(
+      `FAIL exclusion: expected ${expected} reference/*.md files, found ${referenceFiles.length}`
+    )
+  }
+  return failures
+}
+
 function main() {
   const failures = []
 
@@ -138,14 +159,8 @@ function main() {
     }
   }
 
-  const { stems, referenceFiles } = excludedStems()
-  if (!existsSync(referenceDir)) {
-    failures.push('FAIL exclusion: Research/canon-reference/ is missing')
-  } else if (referenceFiles.length !== EXPECTED_REFERENCE_EXCLUSIONS) {
-    failures.push(
-      `FAIL exclusion: expected ${EXPECTED_REFERENCE_EXCLUSIONS} reference/*.md files, found ${referenceFiles.length}`
-    )
-  }
+  const { stems } = excludedStems()
+  failures.push(...referenceExclusionFailures(referenceDir))
 
   for (const file of htmlFiles) {
     const rel = posixRel(docsSiteRoot, file)
@@ -192,4 +207,6 @@ function main() {
   console.log('gate: PASS')
 }
 
-main()
+if (process.argv[1] && pathToFileURL(process.argv[1]).href === import.meta.url) {
+  main()
+}
