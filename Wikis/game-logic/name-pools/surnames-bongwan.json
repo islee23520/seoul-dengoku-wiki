@@ -5122,6 +5122,46 @@
       "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
       "live_check": "verbatim_ok",
       "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-cast-bongwan-b098-b098-c8fc",
+      "url": "https://ko.wikipedia.org/wiki/나_(성씨)",
+      "accessed": "2026-09-16",
+      "quote": "라(羅) 또는 나(羅)씨는 2015년 대한민국 통계청 인구조사에서 186,906명(나 160,946명 + 라 25,960명)으로 조사되어, 한국 성씨 인구 44위이다. 본관은 나주(羅州), 금성(錦城), 안정(安定) 등 10여 본이 전하며, 전라남도 나주시를 본관으로 하는 금성 라씨와 나주 나씨가 인구의 절대다수를 차지한다.",
+      "evidence": "Research/verification/hangnyeol/raw/cast-missing-bongwan.md",
+      "live_check": "unchecked"
+    },
+    {
+      "id": "s-cast-bongwan-b77c-ae08-c131",
+      "url": "https://ko.wikipedia.org/wiki/나_(성씨)",
+      "accessed": "2026-09-16",
+      "quote": "라(羅) 또는 나(羅)씨는 2015년 대한민국 통계청 인구조사에서 186,906명(나 160,946명 + 라 25,960명)으로 조사되어, 한국 성씨 인구 44위이다. 본관은 나주(羅州), 금성(錦城), 안정(安定) 등 10여 본이 전하며, 전라남도 나주시를 본관으로 하는 금성 라씨와 나주 나씨가 인구의 절대다수를 차지한다.",
+      "evidence": "Research/verification/hangnyeol/raw/cast-missing-bongwan.md",
+      "live_check": "unchecked"
+    },
+    {
+      "id": "s-cast-bongwan-b958-bb38-d654",
+      "url": "https://ko.wikipedia.org/wiki/문화_류씨",
+      "accessed": "2026-09-16",
+      "quote": "문화 류씨(文化 柳氏)는 황해도 신천군 문화면을 본관으로 하는 한국의 성씨이다.",
+      "evidence": "Research/verification/hangnyeol/raw/cast-missing-bongwan.md",
+      "live_check": "unchecked"
+    },
+    {
+      "id": "s-cast-bongwan-bb38-b0a8-d3c9",
+      "url": "https://ko.wikipedia.org/wiki/남평_문씨",
+      "accessed": "2026-09-16",
+      "quote": "남평 문씨(南平文氏)는 전라남도 나주시 남평읍을 본관으로 하는 한국의 성씨이다.",
+      "evidence": "Research/verification/hangnyeol/raw/cast-missing-bongwan.md",
+      "live_check": "unchecked"
+    },
+    {
+      "id": "s-cast-bongwan-bbfc-c5ec-d765",
+      "url": "https://ko.wikipedia.org/wiki/여흥_민씨",
+      "accessed": "2026-09-16",
+      "quote": "여흥 민씨(驪興閔氏)는 경기도 여주시를 관향으로 하는 한국의 성씨이다.",
+      "evidence": "Research/verification/hangnyeol/raw/cast-missing-bongwan.md",
+      "live_check": "unchecked"
     }
   ],
   "surnames": [
@@ -15452,6 +15492,106 @@
       ],
       "bongwan": [],
       "bongwan_unlisted_reason": "2015 집계표의 대성 본관 칸이 비어 있다. 본관 없음이 아니라 이 표에 과반 본관이 기재되지 않았다는 뜻이다."
+    },
+    {
+      "id": "b098-7f85",
+      "hangul": "나",
+      "hanja": "羅",
+      "population_2015": null,
+      "sources": [
+        "s-cast-bongwan-b098-b098-c8fc"
+      ],
+      "bongwan": [
+        {
+          "id": "b098-7f85-b098-c8fc-owner",
+          "name": "나주",
+          "hanja": "羅州",
+          "majority": true,
+          "sources": [
+            "s-cast-bongwan-b098-b098-c8fc"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b77c-7f85",
+      "hangul": "라",
+      "hanja": "羅",
+      "population_2015": null,
+      "sources": [
+        "s-cast-bongwan-b77c-ae08-c131"
+      ],
+      "bongwan": [
+        {
+          "id": "b77c-7f85-ae08-c131-owner",
+          "name": "금성",
+          "hanja": "錦城",
+          "majority": true,
+          "sources": [
+            "s-cast-bongwan-b77c-ae08-c131"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b958-67f3",
+      "hangul": "류",
+      "hanja": "柳",
+      "population_2015": null,
+      "sources": [
+        "s-cast-bongwan-b958-bb38-d654"
+      ],
+      "bongwan": [
+        {
+          "id": "b958-67f3-bb38-d654-owner",
+          "name": "문화",
+          "hanja": "文化",
+          "majority": true,
+          "sources": [
+            "s-cast-bongwan-b958-bb38-d654"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bb38-6587",
+      "hangul": "문",
+      "hanja": "文",
+      "population_2015": null,
+      "sources": [
+        "s-cast-bongwan-bb38-b0a8-d3c9"
+      ],
+      "bongwan": [
+        {
+          "id": "bb38-6587-b0a8-d3c9-owner",
+          "name": "남평",
+          "hanja": "南平",
+          "majority": true,
+          "sources": [
+            "s-cast-bongwan-bb38-b0a8-d3c9"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bbfc-9594",
+      "hangul": "민",
+      "hanja": "閔",
+      "population_2015": null,
+      "sources": [
+        "s-cast-bongwan-bbfc-c5ec-d765"
+      ],
+      "bongwan": [
+        {
+          "id": "bbfc-9594-c5ec-d765-owner",
+          "name": "여흥",
+          "hanja": "驪興",
+          "majority": true,
+          "sources": [
+            "s-cast-bongwan-bbfc-c5ec-d765"
+          ]
+        }
+      ]
     }
   ]
 }

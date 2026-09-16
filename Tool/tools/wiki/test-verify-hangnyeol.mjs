@@ -105,6 +105,24 @@ function baseDocs() {
             { sesu: 73, hangnyeol: '율', hanja: '律', position: 'first' },
           ],
         },
+        {
+          id: 'suwon-baek',
+          surname: '백',
+          bongwan: '수원',
+          provenance: 'verified',
+          sources: ['s-clan'],
+          rows: [],
+          hangnyeol_unconfirmed_reason: '시험용 문중 정체성',
+        },
+        {
+          id: 'nampyeong-mun',
+          surname: '문',
+          bongwan: '남평',
+          provenance: 'verified',
+          sources: ['s-clan'],
+          rows: [],
+          hangnyeol_unconfirmed_reason: '시험용 문중 정체성',
+        },
       ],
     },
     cast: {
@@ -119,8 +137,8 @@ function baseDocs() {
       },
       people: [
         { name: '김도윤', surname: '김', status: 'applied', bongwan: '김해', clan: 'gimhae-kim', sesu: 72, hangnyeol: '도', position: 'first', reason: '김해 김씨 72세' },
-        { name: '백온', surname: '백', status: 'unused', reason: '한 글자 이름이라 항렬자를 넣을 자리가 없다' },
-        { name: '문가람', surname: '문', status: 'unconfirmed', reason: '본관 확인 자료 없음' },
+        { name: '백온', surname: '백', status: 'unused', bongwan: '수원', clan: 'suwon-baek', reason: '한 글자 이름이라 항렬자를 넣을 자리가 없다' },
+        { name: '문가람', surname: '문', status: 'unconfirmed', bongwan: '남평', clan: 'nampyeong-mun', reason: '분파·세수·항렬 미확인' },
       ],
     },
   };
@@ -168,7 +186,7 @@ test('happy path: complete dataset exits 0 with sourced=100%', async () => {
   const result = run(root);
   assert.equal(result.code, 0);
   assert.doesNotMatch(result.stderr, /^H\d+:/m);
-  assert.match(result.stdout, /surnames=1 bongwan=1 clans=1/);
+  assert.match(result.stdout, /surnames=1 bongwan=1 clans=3/);
   assert.match(result.stdout, /sourced=100%/);
 });
 
@@ -317,7 +335,7 @@ test('H10: a creative clan passes when it declares rationale and method', async 
   });
   const result = run(root);
   assert.equal(result.code, 0);
-  assert.match(result.stdout, /verified=0 creative=1/);
+  assert.match(result.stdout, /verified=2 creative=1/);
 });
 
 test('H11: mixing a creative row into a verified table fails', async () => {
@@ -463,6 +481,17 @@ test('H24: any person clan identity must match surname and bongwan', async () =>
   const result = run(root, ['--cast']);
   assert.equal(result.code, 1);
   assert.match(result.stderr, /^H24:.*clan identity 김\/김해 does not match 백\/수원/m);
+});
+
+test('H25: every cast person must have bongwan and clan', async () => {
+  const root = await makeFixture((docs) => {
+    delete docs.cast.people[1].bongwan;
+    delete docs.cast.people[1].clan;
+  });
+  const result = run(root, ['--cast']);
+  assert.equal(result.code, 1);
+  assert.match(result.stderr, /^H25:.*missing bongwan/m);
+  assert.match(result.stderr, /^H25:.*missing clan/m);
 });
 
 // ---- H18 / H19: 라이브 재대조 판정 ----

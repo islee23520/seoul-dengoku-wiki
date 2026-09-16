@@ -400,6 +400,8 @@ export async function verifyHangnyeol(options = {}) {
           continue;
         }
         if (!isFilled(person?.reason)) fail('H13', `${where} missing reason`);
+        if (!isFilled(person?.bongwan)) fail('H25', `${where} missing bongwan`);
+        if (!isFilled(person?.clan)) fail('H25', `${where} missing clan`);
 
         const clan = isFilled(person?.clan) ? clanIndex.get(person.clan) : null;
         if (isFilled(person?.clan) && !clan) {
