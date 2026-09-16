@@ -8,6 +8,10 @@ import { validateManifest } from './asset-manifest.mjs';
 const moduleDir = dirname(fileURLToPath(import.meta.url));
 export const defaultRepoRoot = resolve(moduleDir, '..', '..');
 export const runtimeSlotContract = JSON.parse(readFileSync(join(moduleDir, 'runtime-slot-contract.json'), 'utf8'));
+export const PORTRAIT_LAYER_SLOT_IDS = new Set(
+  JSON.parse(readFileSync(join(moduleDir, 'portrait', 'portrait-layer-slots.json'), 'utf8'))
+    .slots.map((slot) => slot.id),
+);
 
 export const QUARANTINE_PATH_MARKERS = ['/Art/Staging/', '/Quarantine/', 'StationPropValidation.unity'];
 
@@ -150,11 +154,33 @@ function evaluateSlotContract(asset, binding, root) {
     && path.startsWith(slot.destination) && !isQuarantinePath(path))) errors.push({ code: 'slot_runtime_path_forbidden' });
   if (!canonicalRepoPath(asset.raw_path)
     || !runtimeSlotContract.source_roots.some(root => asset.raw_path.startsWith(root))) errors.push({ code: 'slot_raw_path_forbidden' });
+  if (slot.composite_only) errors.push(...evaluateCompositeOnly(asset, slot));
   if (!binding || binding.runtime_slot !== asset.runtime_slot || binding.raw_hash !== asset.raw_hash
     || !sameFileMap(binding.rights_evidence, asset.rights_evidence)
     || !(sameFileMap(binding.runtime_files, asset.runtime_files)
       || verifyRetargetedClips(asset, binding, root))
     || !sameFileMap(binding.runtime_slot_files, files)) errors.push({ code: 'slot_source_binding_mismatch' });
+  return errors;
+}
+
+
+/**
+ * Intent decision 8: a composite-only slot receives the offline-composited image
+ * (and its atlas) alone. A per-slot authoring plate reaching the runtime
+ * destination means the layer stack leaked into Unity.
+ */
+function evaluateCompositeOnly(asset, slot) {
+  const errors = [];
+  const declared = new Set(Object.values(asset.runtime_slot_files ?? {}));
+  for (const path of Object.keys(asset.runtime_files ?? {})) {
+    if (declared.has(path)) continue;
+    const stem = path.split('/').pop().replace(/\.[^.]*$/, '');
+    if (PORTRAIT_LAYER_SLOT_IDS.has(stem)) errors.push({ code: 'portrait_layer_plate_forbidden', path });
+    else errors.push({ code: 'composite_only_extra_file', path });
+  }
+  if (slot.runtime_keys.some((key) => PORTRAIT_LAYER_SLOT_IDS.has(key))) {
+    errors.push({ code: 'composite_only_layer_key' });
+  }
   return errors;
 }
 
@@ -535,7 +561,7 @@ function resolveUiUrl(fromRel, url) {
 function deriveBlockedSlots(bomAssets) {
   const ids = ['prop:poc-prop-ticket-gate', 'prop:poc-prop-pump-crate', 'prop:poc-prop-shutter',
     'prop:poc-prop-pillar', 'prop:poc-prop-bench', 'prop:poc-prop-cabinet',
-    'title-art', 'ui-icon-set', 'history-texture'];
+    'title-art', 'ui-icon-set', 'history-texture', 'character-portrait'];
   return ids.filter(id => !bomAssets.some(b => b.ok && (id === 'prop:' + b.asset_id || id === b.runtime_slot)))
     .map(slot => ({ slot, reason: 'no_source_bound_runtime_asset', replacement: null }));
 }

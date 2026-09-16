@@ -18,8 +18,15 @@
       <div><p class="eyebrow">인물 아카이브 · PORTRAIT STUDIO</p><h1>한 겹씩, 새로운 인물.</h1><p class="intro">부위를 고르고 조합해 나만의 초상을 만드세요.</p></div>
       <div class="source-spec"><span>22 레이어</span><span>1145 × 1374 PNG</span></div>
     </div>
+    <div id="stage-warning" class="stage-warning" role="note"><strong>STAGE2/3 WORKING PREVIEW</strong><span>사용 가능한 성별 전용 후보 연결 · 품질 승인본 아님</span></div>
     <div id="library-notice" class="notice" role="status">부위 라이브러리를 불러오는 중입니다.</div>
     <div id="error" class="error" role="alert" hidden></div>
+    <section class="pipeline-panel" aria-labelledby="pipeline-heading">
+      <div class="panel-heading pipeline-title"><div><p class="eyebrow">PERMANENT GATEWAY</p><h2 id="pipeline-heading">1차 → 2차 → 3차, 항상 같은 순서</h2></div><span id="workflow-summary" class="chip">게이트 읽는 중</span></div>
+      <div class="workflow-source"><label for="workflow-profile">타겟 계보</label><select id="workflow-profile" disabled><option>불러오는 중</option></select><button id="export-workflow" class="button" type="button">작업 패킷 JSON</button></div>
+      <div id="gateway-rail" class="gateway-rail" aria-label="초상 품질 게이트"></div>
+      <div class="tool-section"><div><h3>도구가 맡는 단계</h3><p>기능을 합쳤지만 게이트는 우회하지 않습니다.</p></div><div id="tool-lanes" class="tool-lanes"></div></div>
+    </section>
     <div class="workspace">
       <section class="preview-panel" aria-labelledby="preview-heading">
         <div class="panel-heading"><h2 id="preview-heading">초상 미리보기</h2><span id="preview-state" class="chip">준비 중</span></div>
@@ -30,14 +37,15 @@
           </div>
         </div>
         <div class="canvas-caption"><span><i aria-hidden="true"></i> 원본 크기 · 투명 배경</span><span>아래 → 위 순서로 합성</span></div>
-        <div class="primary-actions"><button id="randomize" class="button primary" disabled>새로운 조합 만들기 <span aria-hidden="true">↗</span></button><button id="export" class="button" disabled>PNG 내보내기 <span aria-hidden="true">↓</span></button></div>
-        <div class="secondary-actions"><button id="save" class="text-button" disabled>현재 조합 보관</button><button id="export-selection" class="text-button" disabled>선택 정보 JSON</button><button id="retry" class="text-button">라이브러리 다시 읽기</button></div>
+        <p id="action-lock" class="action-lock">3차 조합 게이트 PASS 전 보관·선택 JSON·PNG 내보내기는 잠깁니다.</p>
+        <div class="primary-actions"><button id="randomize" class="button primary" type="button" disabled>새로운 조합 만들기 <span aria-hidden="true">↗</span></button><button id="export" class="button" type="button" disabled>PNG 내보내기 <span aria-hidden="true">↓</span></button></div>
+        <div class="secondary-actions"><button id="save" class="text-button" type="button" disabled>현재 조합 보관</button><button id="export-selection" class="text-button" type="button" disabled>선택 정보 JSON</button><button id="retry" class="text-button" type="button">라이브러리 다시 읽기</button></div>
         <p id="status" class="status" role="status" aria-live="polite"></p>
       </section>
       <section class="controls-panel" aria-labelledby="controls-heading">
         <div class="panel-heading"><h2 id="controls-heading">부위 편집</h2><span class="muted">22개 공통 슬롯</span></div>
         <div class="sex-control"><label for="sex">인물 유형</label><select id="sex"><option value="female">여성</option><option value="male">남성</option></select></div>
-        <p class="controls-note">여성의 수염 2개 슬롯은 사용하지 않습니다.<br>목록에는 실제 제공된 변형만 표시합니다.</p>
+        <p id="controls-lock" class="controls-note">여성의 수염 2개 슬롯은 사용하지 않습니다.<br>목록에는 실제 제공된 변형만 표시합니다.</p>
         <div id="slot-controls" class="slot-controls"></div>
         <p class="controls-footer">숫자는 합성 순서입니다. 선택한 부위는 원본 위치에 겹쳐집니다.</p>
       </section>

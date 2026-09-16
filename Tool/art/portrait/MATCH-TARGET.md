@@ -28,3 +28,7 @@ Matching the target means the **visible ink of this drawing** is owned and resto
 1. Split = this document.
 2. Parts = occluded faces exist under hair/clothes; do not relabel invented pixels as extracted.
 3. Combo = other hair/eyes/outfit bind on the same coordinates; default restore is not combo done.
+
+Stage-2 and Stage-3 art must also pass the reference-bound
+[quality floor and checkpoints](QUALITY-GATE.md). Numeric restoration or clean
+slot geometry cannot substitute for that visual quality gate.

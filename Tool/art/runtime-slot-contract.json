@@ -26,6 +26,17 @@
       "import": "sprite"
     },
     {
+      "slot": "character-portrait",
+      "asset_class": "portrait",
+      "destination": "Game/Assets/Janseon/Art/Portrait/",
+      "primary_key": "atlas",
+      "runtime_keys": ["atlas"],
+      "import": "sprite",
+      "composite_only": true,
+      "composite_only_note": "Intent decision 8: Unity receives the offline-composited PNG/atlas only. Per-slot 2D plates (hair, eyes_color, clothes, ...) stay in the authoring pipe and must never land under the runtime destination.",
+      "layer_slot_source": "Tool/art/portrait/portrait-layer-slots.json"
+    },
+    {
       "slot": "history-texture",
       "asset_class": "tile",
       "destination": "Game/Assets/Janseon/Art/Tiles/",

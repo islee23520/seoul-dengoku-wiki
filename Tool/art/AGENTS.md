@@ -20,6 +20,10 @@ Asset planning, candidate assembly, and fail-closed runtime provenance; score 8,
 | Local character/UI draft generation | `build-poc-character-sprites.py`, `build-poc-ui-candidates.py` | Explicit new `--output-dir` |
 | UI image quality inspection | `qa-poc-ui-kit.py` | Pillow-based image metrics |
 | Portrait 22-slot composite and see-through ingest | `portrait/` | slots JSON, compositor, `ingest-see-through-psd.mjs` |
+| Human roster projection for the demo | `portrait/export-human-roster.mjs` | Atlas humans[] -> deployable humans.json, `--check` for drift; copies ids, synthesizes no sex |
+| Portrait offline tool (library/compose/batch) | `portrait/portrait-tool.mjs` | Plates -> manifest -> composite PNG -> per-character exports + binding document; composites only, never judges art |
+| Portrait Stage-2/3 quality and binding gates | `portrait/verify-portrait-review.mjs`, `portrait/verify-portrait-binding.mjs` | Q01-Q10/GQ1-GQ4 review records, character-bound selections; admissibility only, never a quality award |
+| Portrait runtime ingestion | `runtime-slot-contract.json` slot `character-portrait` | `composite_only`: Unity receives the composited PNG/atlas alone; per-slot plates fail closed |
 
 ## CONVENTIONS
 - Graph checks recompile the embedded intent and compare nodes, edges, and status; manually patched plans fail closed.

@@ -14,6 +14,7 @@ const own = (value, key) => Object.hasOwn(value, key);
 
 export function validateManifest(manifest) {
   if (manifest?.version !== 1) fail('라이브러리 version은 1이어야 합니다.');
+  if (manifest.stage !== undefined && typeof manifest.stage !== 'string') fail('라이브러리 stage는 문자열이어야 합니다.');
   if (manifest.canvas?.width !== 1145 || manifest.canvas?.height !== 1374) fail('캔버스는 1145 × 1374이어야 합니다.');
   if (!Array.isArray(manifest.slots) || manifest.slots.length !== 22) fail('표준 슬롯 22개가 필요합니다.');
   for (const slot of CANONICAL_SLOTS) {
@@ -29,10 +30,21 @@ export function validateManifest(manifest) {
       const mustDisable = sex === 'female' && ['beard', 'beard_back'].includes(id);
       if (entry.enabled === mustDisable) fail(`${sex}/${id}: 성별 적용 오류`);
       if (!entry.enabled && entry.variants.length) fail(`${sex}/${id}: 비활성 슬롯은 비어 있어야 합니다.`);
+      if (entry.preview_optional === true && (manifest.stage !== 'stage23-preview' || !entry.enabled || entry.variants.length)) {
+        fail(`${sex}/${id}: preview_optional은 stage23-preview의 빈 활성 슬롯에만 사용할 수 있습니다.`);
+      }
       const ids = new Set();
       for (const variant of entry.variants) {
         if (!variant || typeof variant.id !== 'string' || !variant.id || ids.has(variant.id)) fail(`${sex}/${id}: 중복 또는 잘못된 variant ID`);
         if (typeof variant.path !== 'string' || !variant.path.trim()) fail(`${sex}/${id}/${variant.id}: 이미지 path가 없습니다.`);
+        const path = variant.path.replaceAll('\\', '/');
+        const evidencePreview = manifest.stage === 'stage23-preview'
+          && variant.quality === 'PREVIEW'
+          && variant.sex === sex
+          && path.startsWith(`/.omo/evidence/portrait-stage23/pilot/${sex}/`);
+        if (/^(?:[a-z]+:)?\/\//i.test(path) || (!evidencePreview && path.startsWith('/')) || path.split('/').includes('..') || /[?#\0]/.test(path)) {
+          fail(`${sex}/${id}/${variant.id}: assets/v2 내부 상대 path가 필요합니다.`);
+        }
         ids.add(variant.id);
       }
     }
@@ -64,10 +76,17 @@ function validateSelection(manifest, selection) {
   for (const { id, required } of CANONICAL_SLOTS) {
     if (!own(selection.selections, id)) fail(`선택 슬롯 누락: ${id}`);
     const value = selection.selections[id], entry = manifest.sexes[selection.sex].slots[id];
-    if (value === null && (!entry.enabled || !required || !entry.variants.length)) continue;
+    const previewOptional = manifest.stage === 'stage23-preview' && entry.preview_optional === true;
+    if (value === null && (!entry.enabled || !required || previewOptional)) continue;
     if (!entry.enabled || !entry.variants.some(v => v.id === value)) fail(`사용할 수 없는 선택: ${id}/${value}`);
   }
   return selection;
+}
+
+export function missingRequiredSlots(manifest, selection) {
+  return CANONICAL_SLOTS.filter(({ id, required }) => required
+    && !selection.selections[id]
+    && !(manifest.stage === 'stage23-preview' && manifest.sexes[selection.sex].slots[id].preview_optional === true));
 }
 
 export function selectVariant(manifest, selection, slotId, variantId) {
@@ -94,6 +113,10 @@ export function randomizeSelection(manifest, selection, rng = Math.random) {
     }
   }
   return next;
+}
+
+export function canRandomizeSelection(manifest, selection) {
+  return CANONICAL_SLOTS.some(({ id }) => manifest.sexes[selection.sex].slots[id].variants.length > 1);
 }
 
 export function serializeSelection(manifest, selection) {
