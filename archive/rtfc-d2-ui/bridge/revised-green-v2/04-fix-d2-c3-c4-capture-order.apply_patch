@@ -1,0 +1,18 @@
+--- a/Game/Assets/Tests/PlayMode/UiToolkitCapturePlayModeTests.cs
++++ b/Game/Assets/Tests/PlayMode/UiToolkitCapturePlayModeTests.cs
+@@ -68,10 +68,12 @@
+         session = gameplayHost.CoreLoop;
+         Assert.That(session, Is.Not.Null, "core loop session required");
+ 
+-        yield return ClickAwait(UiElementNames.ActionDepart, s => s.Campaign.Stage == CampaignStage.ExpeditionTravel);
+-        yield return Capture(1280, 720, "campaign-route-stage", "route");
+-        yield return Capture(1920, 1080, "campaign-route-stage", "route");
++        Assert.That(session.Campaign.Stage, Is.EqualTo(CampaignStage.BasePreparation));
++        Assert.That(session.Campaign.Node, Is.EqualTo(StationId.Yeongdeungpo));
++        yield return Capture(1280, 720, "campaign-route-stage", "route-stage");
++        yield return Capture(1920, 1080, "campaign-route-stage", "route-stage");
+ 
++        yield return ClickAwait(UiElementNames.ActionDepart, s => s.Campaign.Stage == CampaignStage.ExpeditionTravel);
+         yield return ClickAwait(UiElementNames.StationSindorim, s => s.Campaign.Node.Equals(StationId.Sindorim));
+         yield return ClickAwait(UiElementNames.ActionFaceEncounter, s => s.Campaign.Stage == CampaignStage.Encounter);
+         yield return ClickAwait(UiElementNames.ActionEnterResolution, s => s.Campaign.Stage == CampaignStage.Resolution);

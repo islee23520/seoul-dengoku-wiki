@@ -1,0 +1,23 @@
+﻿{
+    "Executable":  "E:/Unity/Editor/6000.7.0a5/Editor/Unity.exe",
+    "Arguments":  [
+                      "-batchmode",
+                      "-force-d3d11",
+                      "-projectPath",
+                      "E:/git/seoul-kenshi-wt/rtfc-phase-d/Game",
+                      "-runTests",
+                      "-testPlatform",
+                      "PlayMode",
+                      "-testFilter",
+                      "Janseon.Foundation.Tests.CoreLoopPlayModeTests.ApprovedUnityShell_ResetViaPointer_ReopensOnlyBattleAndFreezesOldSession",
+                      "-testResults",
+                      "E:/git/seoul-kenshi-wt/rtfc-phase-d/.omo/evidence/ulw-execute/rtfc/unity-approved-poc/st_01a08842/task04/red/tests.xml",
+                      "-logFile",
+                      "E:/git/seoul-kenshi-wt/rtfc-phase-d/.omo/evidence/ulw-execute/rtfc/unity-approved-poc/st_01a08842/task04/red/unity.log"
+                  ],
+    "ExpectedCases":  [
+                          "Janseon.Foundation.Tests.CoreLoopPlayModeTests.ApprovedUnityShell_ResetViaPointer_ReopensOnlyBattleAndFreezesOldSession"
+                      ],
+    "ExpectedCategory":  "ApprovedUnityShell",
+    "ExpectedOutcome":  "Assertion RED: missing production pointer control battle-reset"
+}

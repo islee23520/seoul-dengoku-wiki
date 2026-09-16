@@ -1,0 +1,16 @@
+set -u
+cd '/Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac' || exit 1
+OUT='/Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/.omo/evidence/ulw-execute/rtfc/mac-resume/task06-integration-20260910'
+test ! -e "$OUT/tests.xml" || exit 73
+if pgrep -f '^/Applications/Unity/Hub/Editor/.*/Unity.app/Contents/MacOS/Unity' >/dev/null; then echo UNITY_BUSY; exit 75; fi
+mkdir -p "$OUT"
+shasum -a 256 Game/Assets/Janseon/Core/*.cs Game/Assets/Janseon/Core/Battle/Contracts/*.cs Game/Assets/Janseon/Core/Battle/Sim/*.cs Game/Assets/Janseon/Foundation/Battle/BattleSessionDriver.cs Game/Assets/Tests/EditMode/RealtimeBattleSimTests.cs Game/Assets/Tests/EditMode/RealtimeCardSettlementTests.cs Game/Assets/Tests/EditMode/BattleSessionDriverTests.cs Game/Assets/Tests/EditMode/CampaignLoopTests.cs > "$OUT/source-before.sha256"
+echo STARTED_ORDERS_INTEGRATION
+'/Applications/Unity/Hub/Editor/6000.7.0a5/Unity.app/Contents/MacOS/Unity' -batchmode -nographics -projectPath '/Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game' -runTests -testPlatform EditMode -testFilter 'Janseon.Foundation.Tests.RealtimeBattleSimTests;Janseon.Foundation.Tests.RealtimeCardSettlementTests;Janseon.Foundation.Tests.BattleSessionDriverTests;Janseon.Tests.EditMode.CampaignLoopTests' -testResults "$OUT/tests.xml" -logFile "$OUT/unity.log"
+code=$?
+printf 'UNITY_EXIT=%s
+' "$code" | tee "$OUT/exit.txt"
+shasum -a 256 Game/Assets/Janseon/Core/*.cs Game/Assets/Janseon/Core/Battle/Contracts/*.cs Game/Assets/Janseon/Core/Battle/Sim/*.cs Game/Assets/Janseon/Foundation/Battle/BattleSessionDriver.cs Game/Assets/Tests/EditMode/RealtimeBattleSimTests.cs Game/Assets/Tests/EditMode/RealtimeCardSettlementTests.cs Game/Assets/Tests/EditMode/BattleSessionDriverTests.cs Game/Assets/Tests/EditMode/CampaignLoopTests.cs > "$OUT/source-after.sha256"
+cmp -s "$OUT/source-before.sha256" "$OUT/source-after.sha256" || { echo SOURCE_DRIFT; exit 74; }
+echo SOURCE_PRESERVED
+exit "$code"

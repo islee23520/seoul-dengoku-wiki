@@ -1,0 +1,41 @@
+{
+  "1": { "class_type": "LoadImage", "_meta": { "title": "Immutable owner portrait" }, "inputs": { "image": "janseon-owner-target.png" } },
+  "2": { "class_type": "ImageScaleToTotalPixels", "inputs": { "image": ["1", 0], "upscale_method": "lanczos", "megapixels": 1.05, "resolution_steps": 1 } },
+  "3": { "class_type": "VAELoader", "inputs": { "vae_name": "qwen_image_vae.safetensors" } },
+  "4": { "class_type": "CLIPLoaderGGUF", "inputs": { "clip_name": "Qwen2.5-VL-7B-Instruct-Q4_K_M.gguf", "type": "qwen_image" } },
+  "5": { "class_type": "UnetLoaderGGUF", "inputs": { "unet_name": "qwen-image-edit-2511-Q3_K_S.gguf" } },
+  "7": { "class_type": "LoadImage", "_meta": { "title": "Editable mouth area / white edits, black preserves" }, "inputs": { "image": "janseon-mouth-mask.png" } },
+  "8": { "class_type": "ImageToMask", "inputs": { "image": ["7", 0], "channel": "red" } },
+  "9": { "class_type": "VAEEncode", "inputs": { "pixels": ["2", 0], "vae": ["3", 0] } },
+  "10": { "class_type": "ModelSamplingAuraFlow", "inputs": { "model": ["5", 0], "shift": 3.1 } },
+  "11": { "class_type": "CFGNorm", "inputs": { "model": ["10", 0], "strength": 1 } },
+  "12": { "class_type": "SetLatentNoiseMask", "inputs": { "samples": ["9", 0], "mask": ["8", 0] } },
+  "100": {
+    "class_type": "TextEncodeQwenImageEditPlus",
+    "_meta": { "title": "Reference-preserving expression instruction" },
+    "inputs": {
+      "clip": ["4", 0], "vae": ["3", 0], "image1": ["2", 0],
+      "prompt": "Keep the same adult woman, hairstyle, clothing, pose, line art and framing. Change only her expression to a gentle closed-mouth smile. Preserve her identity and the restrained anime cel shading."
+    }
+  },
+  "101": {
+    "class_type": "TextEncodeQwenImageEditPlus",
+    "inputs": {
+      "clip": ["4", 0], "vae": ["3", 0], "image1": ["2", 0],
+      "prompt": "different identity, different clothing, different framing, open mouth, visible teeth, text, watermark, photorealistic skin"
+    }
+  },
+  "102": { "class_type": "FluxKontextMultiReferenceLatentMethod", "inputs": { "conditioning": ["100", 0], "reference_latents_method": "index_timestep_zero" } },
+  "103": { "class_type": "FluxKontextMultiReferenceLatentMethod", "inputs": { "conditioning": ["101", 0], "reference_latents_method": "index_timestep_zero" } },
+  "104": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": ["11", 0], "positive": ["102", 0], "negative": ["103", 0], "latent_image": ["12", 0],
+      "seed": 20260914, "steps": 20, "cfg": 2.5, "sampler_name": "euler", "scheduler": "simple", "denoise": 0.62
+    }
+  },
+  "105": { "class_type": "VAEDecode", "inputs": { "samples": ["104", 0], "vae": ["3", 0] } },
+  "107": { "class_type": "ImageScale", "inputs": { "image": ["105", 0], "upscale_method": "lanczos", "width": 1145, "height": 1374, "crop": "disabled" } },
+  "108": { "class_type": "ImageCompositeMasked", "_meta": { "title": "Keep original pixels outside mouth mask" }, "inputs": { "destination": ["1", 0], "source": ["107", 0], "mask": ["8", 0], "x": 0, "y": 0, "resize_source": false } },
+  "106": { "class_type": "SaveImage", "inputs": { "images": ["108", 0], "filename_prefix": "Janseon/portrait-smile" } }
+}

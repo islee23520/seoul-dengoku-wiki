@@ -1,0 +1,14 @@
+{
+  "recordedAt": "2026-09-05T05:30:36.889Z",
+  "probeMonitor": "bash_17",
+  "model": "gemini-pro-agent",
+  "mode": "plan",
+  "commandSurface": "agy --print --output-format json",
+  "result": "status: completed exit_code: 0\n{\"conversation_id\":\"b2583182-ca20-432c-a0bc-d58bb1127b93\",\"status\":\"SUCCESS\",\"response\":\"READ_SCOPE_OK\\nMain title: 잔선: 서울\\nVisual observation: There is a \\\"시작\\\" (Start) button centered below the text with a thin yellow/gold rectangular border.\\n\",\"duration_seconds\":16.759404,\"num_turns\":1,\"usage\":{\"input_tokens\":19761,\"output_tokens\":1284,\"thinking_tokens\":1089,\"cache_read_tokens\":36515,\"total_tokens\":21045}}",
+  "resultSource": "Original bash_17 completion event and first bash_output; a later incremental bash_output had no new output, not a new probe result.",
+  "configuration": "/Users/ilseoblee/.gemini/antigravity-cli/settings.json",
+  "temporaryAllow": "read_file only on core Design.md and exactly 10 final-captures PNGs",
+  "bypassUsed": false,
+  "cleanup": "Lead removes only these added permissions after four reviewers finish",
+  "productVerdict": "NOT A VISUAL PASS: this proves read access only"
+}

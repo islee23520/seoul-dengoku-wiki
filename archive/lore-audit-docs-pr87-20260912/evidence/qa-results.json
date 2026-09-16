@@ -1,0 +1,40 @@
+{
+  "date": "2026-09-12",
+  "scope": "8 source docs and 8 mounted copies",
+  "browser": [
+    {
+      "url": "http://127.0.0.1:4175/world/Era-Arms-and-Tech-Level.html",
+      "title": "이 시대의 기술과 무구 | 잔선: 서울",
+      "tables": 6,
+      "candidateRows": 15,
+      "proposal": true,
+      "auditCorrection": true,
+      "screenshot": "equipment-page.png"
+    },
+    {
+      "url": "http://127.0.0.1:4175/world/Random-Cast-Roster.html",
+      "title": "랜덤 추가 로스터 | 잔선: 서울",
+      "candidateWarning": true,
+      "unreviewed": "0/422",
+      "tables": 1,
+      "screenshot": "roster-page.png",
+      "linkClick": {
+        "href": "/world/Cast-Profile-Contract.html",
+        "resultTitle": "인물 카드 계약 | 잔선: 서울"
+      }
+    }
+  ],
+  "pageLinks": "page-link-audit.json: eight changed pages, no missing internal targets",
+  "build": "pr-tree-build.log exit 0, 16.75s",
+  "patina": "final-patina.log eight documents 4.2–30 (offline only)",
+  "cleanup": {
+    "browser": "QA tabs closed via closeTab; one-shot REPL error tabs auto-closed (confirmed by next listBrowserTabs)",
+    "server": "preview monitor timed out; lsof -iTCP:4175 -sTCP:LISTEN empty",
+    "fixtures": "none"
+  },
+  "limits": [
+    "external source links checked for correct destination, not every remote site availability",
+    "existing unrelated mirror/source drift excluded from PR",
+    "no live deployment or runtime/JSON changes"
+  ]
+}

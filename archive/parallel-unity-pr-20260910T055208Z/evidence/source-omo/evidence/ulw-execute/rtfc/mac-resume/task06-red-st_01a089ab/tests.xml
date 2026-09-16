@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="7" result="Failed(Child)" total="7" passed="0" failed="7" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-10 05:13:12Z" end-time="2026-09-10 05:13:12Z" duration="0.0423402">
+  <test-suite type="TestSuite" id="1000" name="잔선: 서울" fullname="잔선: 서울" runstate="Runnable" testcasecount="163" result="Failed" site="Child" start-time="2026-09-10 05:13:12Z" end-time="2026-09-10 05:13:12Z" duration="0.042340" total="7" passed="0" failed="7" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1187" name="Janseon.Foundation.EditModeTests.dll" fullname="/Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Library/ScriptAssemblies/Janseon.Foundation.EditModeTests.dll" runstate="Runnable" testcasecount="162" result="Failed" site="Child" start-time="2026-09-10 05:13:12Z" end-time="2026-09-10 05:13:12Z" duration="0.033707" total="7" passed="0" failed="7" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="81357" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1188" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="161" result="Failed" site="Child" start-time="2026-09-10 05:13:12Z" end-time="2026-09-10 05:13:12Z" duration="0.032695" total="7" passed="0" failed="7" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1191" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="135" result="Failed" site="Child" start-time="2026-09-10 05:13:12Z" end-time="2026-09-10 05:13:12Z" duration="0.031837" total="7" passed="0" failed="7" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="1192" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="135" result="Failed" site="Child" start-time="2026-09-10 05:13:12Z" end-time="2026-09-10 05:13:12Z" duration="0.031145" total="7" passed="0" failed="7" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestFixture" id="1084" name="RealtimeBattleSimTests" fullname="Janseon.Foundation.Tests.RealtimeBattleSimTests" classname="Janseon.Foundation.Tests.RealtimeBattleSimTests" runstate="Runnable" testcasecount="20" result="Failed" site="Child" start-time="2026-09-10 05:13:12Z" end-time="2026-09-10 05:13:12Z" duration="0.029769" total="7" passed="0" failed="7" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="1103" name="AcceptedOrderInput_SnapshotCloneFingerprintAndReplay_AreDeterministicAndOwned" fullname="Janseon.Foundation.Tests.RealtimeBattleSimTests.AcceptedOrderInput_SnapshotCloneFingerprintAndReplay_AreDeterministicAndOwned" methodname="AcceptedOrderInput_SnapshotCloneFingerprintAndReplay_AreDeterministicAndOwned" classname="Janseon.Foundation.Tests.RealtimeBattleSimTests" runstate="Runnable" seed="1527552544" result="Failed" label="Error" start-time="2026-09-10 05:13:12Z" end-time="2026-09-10 05:13:12Z" duration="0.012261" asserts="0">
+                <properties>
+                  <property name="Category" value="ApprovedUnityOrders" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[System.ArgumentOutOfRangeException : Specified argument was out of the range of valid values.]]></message>
+                  <stack-trace><![CDATA[  at Janseon.Core.Battle.Sim.BattleSim.Step (Janseon.Core.Battle.Sim.BattleSimState state, Janseon.Core.Ledger ledger) [0x000d6] in /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Janseon/Core/Battle/Sim/BattleSim.cs:118 
+  at Janseon.Foundation.Tests.RealtimeBattleSimTests.AcceptedOrderInput_SnapshotCloneFingerprintAndReplay_AreDeterministicAndOwned () [0x00088] in /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Tests/EditMode/RealtimeBattleSimTests.cs:371 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <a145436f8291401f83a99993a54f74b5>:0 ]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1100" name="AttackOrder_HitsOnlyExplicitTarget_TracksIt_AndClearsWhenTargetInvalid" fullname="Janseon.Foundation.Tests.RealtimeBattleSimTests.AttackOrder_HitsOnlyExplicitTarget_TracksIt_AndClearsWhenTargetInvalid" methodname="AttackOrder_HitsOnlyExplicitTarget_TracksIt_AndClearsWhenTargetInvalid" classname="Janseon.Foundation.Tests.RealtimeBattleSimTests" runstate="Runnable" seed="1384544598" result="Failed" label="Error" start-time="2026-09-10 05:13:12Z" end-time="2026-09-10 05:13:12Z" duration="0.000678" asserts="0">
+                <properties>
+                  <property name="Category" value="ApprovedUnityOrders" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[System.ArgumentOutOfRangeException : Specified argument was out of the range of valid values.]]></message>
+                  <stack-trace><![CDATA[  at Janseon.Core.Battle.Sim.BattleSim.Step (Janseon.Core.Battle.Sim.BattleSimState state, Janseon.Core.Ledger ledger) [0x000d6] in /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Janseon/Core/Battle/Sim/BattleSim.cs:118 
+  at Janseon.Foundation.Tests.RealtimeBattleSimTests.AttackOrder_HitsOnlyExplicitTarget_TracksIt_AndClearsWhenTargetInvalid () [0x000ae] in /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Tests/EditMode/RealtimeBattleSimTests.cs:275 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <a145436f8291401f83a99993a54f74b5>:0 ]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1102" name="InvalidLockedDeadAndTerminalOrders_DoNotLeakOrMutateRejectedState" fullname="Janseon.Foundation.Tests.RealtimeBattleSimTests.InvalidLockedDeadAndTerminalOrders_DoNotLeakOrMutateRejectedState" methodname="InvalidLockedDeadAndTerminalOrders_DoNotLeakOrMutateRejectedState" classname="Janseon.Foundation.Tests.RealtimeBattleSimTests" runstate="Runnable" seed="1108220806" result="Failed" start-time="2026-09-10 05:13:12Z" end-time="2026-09-10 05:13:12Z" duration="0.002139" asserts="0">
+                <properties>
+                  <property name="Category" value="ApprovedUnityOrders" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Expected: instance of <Janseon.Core.Battle.Contracts.BattleRejection>
+  But was:  null
+]]></message>
+                  <stack-trace><![CDATA[at Janseon.Foundation.Tests.RealtimeBattleSimTests.<InvalidLockedDeadAndTerminalOrders_DoNotLeakOrMutateRejectedState>g__AssertRejected|25_0 (Janseon.Core.Battle.Sim.BattleSimState state, Janseon.Core.Ledger ledger, Janseon.Core.Battle.Contracts.BattleTickCommand command, Janseon.Core.Battle.Contracts.BattleRejectReason reason) [0x00027] in /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Tests/EditMode/RealtimeBattleSimTests.cs:332
+at Janseon.Foundation.Tests.RealtimeBattleSimTests.InvalidLockedDeadAndTerminalOrders_DoNotLeakOrMutateRejectedState () [0x0001b] in /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Tests/EditMode/RealtimeBattleSimTests.cs:339
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1099" name="MoveOrder_BlockedNextCellRetainsIntent_BfsTiesUseNorthEastSouthWest_AndAutoAttackKeepsDestination" fullname="Janseon.Foundation.Tests.RealtimeBattleSimTests.MoveOrder_BlockedNextCellRetainsIntent_BfsTiesUseNorthEastSouthWest_AndAutoAttackKeepsDestination" methodname="MoveOrder_BlockedNextCellRetainsIntent_BfsTiesUseNorthEastSouthWest_AndAutoAttackKeepsDestination" classname="Janseon.Foundation.Tests.RealtimeBattleSimTests" runstate="Runnable" seed="878062950" result="Failed" label="Error" start-time="2026-09-10 05:13:12Z" end-time="2026-09-10 05:13:12Z" duration="0.000584" asserts="0">
+                <properties>
+                  <property name="Category" value="ApprovedUnityOrders" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[System.ArgumentOutOfRangeException : Specified argument was out of the range of valid values.]]></message>
+                  <stack-trace><![CDATA[  at Janseon.Core.Battle.Sim.BattleSim.Step (Janseon.Core.Battle.Sim.BattleSimState state, Janseon.Core.Ledger ledger) [0x000d6] in /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Janseon/Core/Battle/Sim/BattleSim.cs:118 
+  at Janseon.Foundation.Tests.RealtimeBattleSimTests.MoveOrder_BlockedNextCellRetainsIntent_BfsTiesUseNorthEastSouthWest_AndAutoAttackKeepsDestination () [0x0006a] in /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Tests/EditMode/RealtimeBattleSimTests.cs:241 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <a145436f8291401f83a99993a54f74b5>:0 ]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1098" name="MoveOrder_IsActorAddressed_PendingUntilStep_AndPersistsUntilArrival" fullname="Janseon.Foundation.Tests.RealtimeBattleSimTests.MoveOrder_IsActorAddressed_PendingUntilStep_AndPersistsUntilArrival" methodname="MoveOrder_IsActorAddressed_PendingUntilStep_AndPersistsUntilArrival" classname="Janseon.Foundation.Tests.RealtimeBattleSimTests" runstate="Runnable" seed="1088839579" result="Failed" label="Error" start-time="2026-09-10 05:13:12Z" end-time="2026-09-10 05:13:12Z" duration="0.002756" asserts="0">
+                <properties>
+                  <property name="Category" value="ApprovedUnityOrders" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[System.ArgumentOutOfRangeException : Specified argument was out of the range of valid values.]]></message>
+                  <stack-trace><![CDATA[  at Janseon.Core.Battle.Sim.BattleSim.Step (Janseon.Core.Battle.Sim.BattleSimState state, Janseon.Core.Ledger ledger) [0x000d6] in /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Janseon/Core/Battle/Sim/BattleSim.cs:118 
+  at Janseon.Foundation.Tests.RealtimeBattleSimTests.MoveOrder_IsActorAddressed_PendingUntilStep_AndPersistsUntilArrival () [0x000c1] in /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Tests/EditMode/RealtimeBattleSimTests.cs:221 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <a145436f8291401f83a99993a54f74b5>:0 ]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1104" name="PublicCoreCampaignContext_DeployOrderStepSnapshotAndReplay_ProveTheFeature" fullname="Janseon.Foundation.Tests.RealtimeBattleSimTests.PublicCoreCampaignContext_DeployOrderStepSnapshotAndReplay_ProveTheFeature" methodname="PublicCoreCampaignContext_DeployOrderStepSnapshotAndReplay_ProveTheFeature" classname="Janseon.Foundation.Tests.RealtimeBattleSimTests" runstate="Runnable" seed="1897106999" result="Failed" label="Error" start-time="2026-09-10 05:13:12Z" end-time="2026-09-10 05:13:12Z" duration="0.002797" asserts="0">
+                <properties>
+                  <property name="Category" value="ApprovedUnityOrders" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[System.ArgumentOutOfRangeException : Specified argument was out of the range of valid values.]]></message>
+                  <stack-trace><![CDATA[  at Janseon.Core.Battle.Sim.BattleSim.Step (Janseon.Core.Battle.Sim.BattleSimState state, Janseon.Core.Ledger ledger) [0x000d6] in /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Janseon/Core/Battle/Sim/BattleSim.cs:118 
+  at Janseon.Foundation.Tests.RealtimeBattleSimTests.PublicCoreCampaignContext_DeployOrderStepSnapshotAndReplay_ProveTheFeature () [0x001bd] in /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Tests/EditMode/RealtimeBattleSimTests.cs:418 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <a145436f8291401f83a99993a54f74b5>:0 ]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1101" name="SameTickSequenceReplacesIntent_AndFacingThenRegroupUsesTheSameActorExactlyOnce" fullname="Janseon.Foundation.Tests.RealtimeBattleSimTests.SameTickSequenceReplacesIntent_AndFacingThenRegroupUsesTheSameActorExactlyOnce" methodname="SameTickSequenceReplacesIntent_AndFacingThenRegroupUsesTheSameActorExactlyOnce" classname="Janseon.Foundation.Tests.RealtimeBattleSimTests" runstate="Runnable" seed="1415347135" result="Failed" label="Error" start-time="2026-09-10 05:13:12Z" end-time="2026-09-10 05:13:12Z" duration="0.000525" asserts="0">
+                <properties>
+                  <property name="Category" value="ApprovedUnityOrders" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[System.ArgumentOutOfRangeException : Specified argument was out of the range of valid values.]]></message>
+                  <stack-trace><![CDATA[  at Janseon.Core.Battle.Sim.BattleSim.Step (Janseon.Core.Battle.Sim.BattleSimState state, Janseon.Core.Ledger ledger) [0x000d6] in /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Janseon/Core/Battle/Sim/BattleSim.cs:118 
+  at Janseon.Foundation.Tests.RealtimeBattleSimTests.SameTickSequenceReplacesIntent_AndFacingThenRegroupUsesTheSameActorExactlyOnce () [0x000ac] in /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Tests/EditMode/RealtimeBattleSimTests.cs:303 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <a145436f8291401f83a99993a54f74b5>:0 ]]></stack-trace>
+                </failure>
+                <output><![CDATA[Saving results to: /Users/ilseoblee/Library/Application Support/Janseon Studio/잔선_ 서울/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Failed(Child)" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-10 04:33:05Z" end-time="2026-09-10 04:33:05Z" duration="0.0443097">
+  <test-suite type="TestSuite" id="1000" name="잔선: 서울" fullname="잔선: 서울" runstate="Runnable" testcasecount="157" result="Failed" site="Child" start-time="2026-09-10 04:33:05Z" end-time="2026-09-10 04:33:05Z" duration="0.044310" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1181" name="Janseon.Foundation.EditModeTests.dll" fullname="/Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Library/ScriptAssemblies/Janseon.Foundation.EditModeTests.dll" runstate="Runnable" testcasecount="156" result="Failed" site="Child" start-time="2026-09-10 04:33:05Z" end-time="2026-09-10 04:33:05Z" duration="0.040647" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="13002" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1182" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="155" result="Failed" site="Child" start-time="2026-09-10 04:33:05Z" end-time="2026-09-10 04:33:05Z" duration="0.039527" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1185" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="129" result="Failed" site="Child" start-time="2026-09-10 04:33:05Z" end-time="2026-09-10 04:33:05Z" duration="0.038421" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="1186" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="129" result="Failed" site="Child" start-time="2026-09-10 04:33:05Z" end-time="2026-09-10 04:33:05Z" duration="0.034485" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestFixture" id="1155" name="UiToolkitScreenTests" fullname="Janseon.Foundation.Tests.UiToolkitScreenTests" classname="Janseon.Foundation.Tests.UiToolkitScreenTests" runstate="Runnable" testcasecount="16" result="Failed" site="Child" start-time="2026-09-10 04:33:05Z" end-time="2026-09-10 04:33:05Z" duration="0.032996" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="1163" name="Gameplay_Snapshot_UsesActualCommanderOwnedCardCooldowns" fullname="Janseon.Foundation.Tests.UiToolkitScreenTests.Gameplay_Snapshot_UsesActualCommanderOwnedCardCooldowns" methodname="Gameplay_Snapshot_UsesActualCommanderOwnedCardCooldowns" classname="Janseon.Foundation.Tests.UiToolkitScreenTests" runstate="Runnable" seed="601005088" result="Failed" start-time="2026-09-10 04:33:05Z" end-time="2026-09-10 04:33:05Z" duration="0.027421" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Expected: 600
+  But was:  0
+]]></message>
+                  <stack-trace><![CDATA[at Janseon.Foundation.Tests.UiToolkitScreenTests.Gameplay_Snapshot_UsesActualCommanderOwnedCardCooldowns () [0x00172] in /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Tests/EditMode/UiToolkitScreenTests.cs:315
+]]></stack-trace>
+                </failure>
+                <output><![CDATA[Cube: Destroy may not be called from edit mode! Use DestroyImmediate instead.
+Destroying an object in edit mode destroys it permanently
+Terrain: Destroy may not be called from edit mode! Use DestroyImmediate instead.
+Destroying an object in edit mode destroys it permanently
+HeightmapVoxelWorld: Destroy may not be called from edit mode! Use DestroyImmediate instead.
+Destroying an object in edit mode destroys it permanently
+Saving results to: /Users/ilseoblee/Library/Application Support/Janseon Studio/잔선_ 서울/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

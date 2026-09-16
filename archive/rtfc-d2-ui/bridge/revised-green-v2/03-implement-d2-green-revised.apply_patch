@@ -1,0 +1,1703 @@
+*** Begin Patch
+*** Update File: Design.md
+@@ -114,7 +114,7 @@
+ | `jk-rail` | 가로 스테이지 레일 | — |
+ | `jk-route` | 세로/가로 역 연결 | node current/adjacent/dim |
+ | `jk-grid` | 전투 격자 | cell empty/ally/foe/focus |
+-| `jk-meter` | HP/AP | fill 0–100% |
++| `jk-meter` | HP/사기/재충전 | fill 0–100% 또는 Core tick 값 |
+ | `jk-meta` | tick·hash | mono |
+ 
+ 포커스: 항상 `stroke-focus` 링. 키보드만으로 모든 1차 액션 도달.
+@@ -139,7 +139,7 @@
+ | 스테이지 레일 | `stage-rail`, `stage-base-prep` … `stage-base-ready` | `CampaignStage` 6단 |
+ | 노선 | `route-rail`, `station-Yeongdeungpo`, `station-Sindorim`, `station-Guro` | `RouteGraph` + `CampaignState.Node` |
+ | 조우 선택 | `encounter-choices`, `choice-negotiate`, `choice-bypass`, `choice-combat` | `CampaignStage.Resolution` |
+-| 전투 | `battle-hud`, `battle-grid`, `battle-cell-{x}-{y}`, `battle-hp`, `battle-ap` | `BattleState` |
++| 전투 | `battle-hud`, `battle-grid`, `battle-cell-{x}-{y}`, `battle-hp`, `battle-morale`, `battle-reinforcement-forecast`, `card-general-recharge`, `battle-play-pause` | `BattleSimState` + `BattleSessionDriver.Paused` |
+ | 정산·복귀 | `settlement-panel`, `settlement-outcome`, `return-action` | settlement receipt fields |
+ 
+ 스냅샷은 동일 seed/state에 대해 요소 이름 집합·current 표시·그리드 점유가 결정론적이어야 한다.
+@@ -159,7 +159,7 @@
+ | 1 | `main-title-start` | `stage-rail` 내 current chip (표시만, 탭 스킵 가능) |
+ | 2 | — | 가시 역 노드 (current 우선) |
+ | 3 | — | 가시 조우 카드  Neg → Bypass → Combat |
+-| 4 | — | `battle-advance` 결정론 전투 명령 |
++| 4 | — | `formation-swap-front` → `edit-formation` → 카드 → `battle-play-pause` |
+ | 5 | — | `return-action` |
+ 
+ - Tab / Shift+Tab 순환. Enter·Space 활성화.
+@@ -188,7 +188,7 @@
+ ## 9. 수용된 부채 (Accepted Debt)
+ 
+ - 커스텀 한글 폰트·아이콘 세트는 Todo 13.
+-- 전투 입력은 결정론적 다음 명령 버튼으로 제한한다. 개별 전투 칸 선택 입력은 현재 POC 범위가 아니다.
++- 전투 입력은 전투 전 진형 교대, 카드 사용, 일시정지/재개로 제한한다. 개별 유닛 직접 이동과 턴/AP 입력은 현재 계약이 아니다.
+ - 역사 3D/캐릭터 메시는 Todo 14–16. 본 계약은 UI 평면만.
+ - PanelSettings는 단일 공유 에셋. 테마 런타임 스위치 없음.
+ 
+@@ -241,7 +241,14 @@
+ battle-grid
+ battle-cell-{x}-{y}   # x,y in 0..4
+ battle-hp
+-battle-ap
++battle-morale
++battle-reinforcement-forecast
++card-general-recharge
++card-general-use
++formation-swap-front
++formation-selection
++edit-formation
++battle-play-pause
+ settlement-panel
+ settlement-outcome
+ return-action
+*** Update File: Game/Assets/Janseon/Foundation/UI/GameplayUiSnapshot.cs
+@@ -29,10 +29,14 @@
+         public Dictionary<string, string> BattleCellOccupancy { get; } = new Dictionary<string, string>();
+         public int BattleHp { get; private set; }
+         public int BattleMaxHp { get; private set; }
+-        public int BattleAp { get; private set; }
+-        public int BattleMaxAp { get; private set; }
+         public float HpFill01 { get; private set; }
+-        public float ApFill01 { get; private set; }
++        public int PlayerMorale { get; private set; }
++        public int EnemyMorale { get; private set; }
++        public int GeneralRechargeTicksLeft { get; private set; }
++        public int NextReinforcementTick { get; private set; } = -1;
++        public int RemainingReinforcementCount { get; private set; }
++        public bool BattlePaused { get; private set; }
++        public string FormationSelectionText { get; private set; } = string.Empty;
+         public string SettlementOutcomeCode { get; private set; } = string.Empty;
+         public string SettlementOutcomeText { get; private set; } = string.Empty;
+         public List<string> BattleLogEntries { get; } = new List<string>();
+@@ -56,12 +60,21 @@
+         public bool ShowFaceAction { get; private set; }
+         public bool ShowEnterResolutionAction { get; private set; }
+         public bool ShowSettleAction { get; private set; }
+-        public bool ShowBattleAdvanceAction { get; private set; }
++        public bool ShowBattlePlayPauseAction { get; private set; }
++        public bool ShowCardGeneralUseAction { get; private set; }
++        public bool ShowEditFormationAction { get; private set; }
++        public bool ShowCardMobilityRegroupAction { get; private set; }
++        public bool CanUseGeneralCard { get; private set; }
++        public bool CanUseMobilityCard { get; private set; }
+         public bool ShowReturnAction { get; private set; }
+ 
+-        public static GameplayUiSnapshot FromCampaign(CampaignState campaign, BattleSimState battle)
+-        {
+-            var snap = new GameplayUiSnapshot();
++        public static GameplayUiSnapshot FromCampaign(
++            CampaignState campaign,
++            BattleSimState battle,
++            bool battlePaused = false,
++            FormationSlot[] pendingFormation = null)
++        {
++            var snap = new GameplayUiSnapshot { BattlePaused = battlePaused };
+             if (campaign == null)
+             {
+                 snap.VisiblePanel = GameplayPanelId.None;
+@@ -94,9 +107,8 @@
+                 && battle.Outcome == BattleOutcomeKind.Ongoing)
+             {
+                 snap.VisiblePanel = GameplayPanelId.Battle;
+-                snap.ShowBattleAdvanceAction = true;
+-                snap.NamedFlags[UiElementNames.BattleAdvance + ":visible"] = true;
+-                FillBattle(snap, battle);
++                ConfigureBattleActions(snap, battle);
++                FillBattle(snap, battle, pendingFormation);
+             }
+             else if (battle != null && campaign.PendingBattle != null
+                      && campaign.Stage == CampaignStage.Resolution
+@@ -147,13 +159,8 @@
+             else if (campaign.Stage == CampaignStage.Resolution && campaign.PendingBattle != null && battle != null)
+             {
+                 snap.VisiblePanel = GameplayPanelId.Battle;
+-                snap.ShowBattleAdvanceAction = battle.Outcome == BattleOutcomeKind.Ongoing;
+-                if (snap.ShowBattleAdvanceAction)
+-                {
+-                    snap.NamedFlags[UiElementNames.BattleAdvance + ":visible"] = true;
+-                }
+-
+-                FillBattle(snap, battle);
++                ConfigureBattleActions(snap, battle);
++                FillBattle(snap, battle, pendingFormation);
+             }
+             else if (campaign.Stage == CampaignStage.Encounter)
+             {
+@@ -267,84 +274,132 @@
+             snap.NamedFlags[UiElementNames.SettlementOutcome + ":bound"] = true;
+         }
+ 
+-        static void FillBattle(GameplayUiSnapshot snap, BattleSimState battle)
++        static void ConfigureBattleActions(GameplayUiSnapshot snap, BattleSimState battle)
++        {
++            bool ongoing = battle.Outcome == BattleOutcomeKind.Ongoing;
++            snap.ShowEditFormationAction = ongoing && !battle.Deployed;
++            snap.ShowBattlePlayPauseAction = ongoing && battle.Deployed;
++            snap.ShowCardGeneralUseAction = ongoing && battle.Deployed;
++            snap.ShowCardMobilityRegroupAction = ongoing && battle.Deployed;
++            snap.NamedFlags[UiElementNames.EditFormation + ":visible"] = snap.ShowEditFormationAction;
++            snap.NamedFlags[UiElementNames.BattlePlayPause + ":visible"] = snap.ShowBattlePlayPauseAction;
++            snap.NamedFlags[UiElementNames.CardGeneralUse + ":visible"] = snap.ShowCardGeneralUseAction;
++            snap.NamedFlags[UiElementNames.MobilityRegroup + ":visible"] = snap.ShowCardMobilityRegroupAction;
++        }
++
++        static void FillBattle(
++            GameplayUiSnapshot snap,
++            BattleSimState battle,
++            FormationSlot[] pendingFormation)
+         {
+             snap.NamedFlags[UiElementNames.BattleHud + ":visible"] = true;
+             snap.NamedFlags[UiElementNames.BattleGrid + ":visible"] = true;
+             snap.NamedFlags[UiElementNames.BattleHp + ":visible"] = true;
+-            snap.NamedFlags[UiElementNames.BattleAp + ":visible"] = true;
++            snap.NamedFlags[UiElementNames.BattleHpMeter + ":visible"] = true;
++            snap.NamedFlags[UiElementNames.BattleMorale + ":visible"] = true;
++            snap.NamedFlags[UiElementNames.BattleReinforcementForecast + ":visible"] = true;
+             snap.NamedFlags[UiElementNames.BattleLog + ":visible"] = true;
+-            snap.NamedFlags[UiElementNames.BattleHpMeter + ":visible"] = true;
+-            snap.NamedFlags[UiElementNames.BattleApMeter + ":visible"] = true;
+-            snap.BattleForecast = "실시간 진형 전투 · 30 tick/s · 카드 재충전";
+-            if (battle.Units == null)
+-            {
+-                return;
+-            }
+-
++            snap.NamedFlags[UiElementNames.CardGeneralRecharge + ":visible"] = true;
++            snap.NamedFlags[UiElementNames.FormationSelection + ":visible"] = !battle.Deployed;
++            if (!battle.Deployed && pendingFormation != null && pendingFormation.Length >= 2)
++            {
++                FormationSlot first = pendingFormation[0];
++                FormationSlot second = pendingFormation[1];
++                snap.FormationSelectionText = first.Unit + "@"
++                    + first.Row.ToString(CultureInfo.InvariantCulture) + ","
++                    + first.Column.ToString(CultureInfo.InvariantCulture) + " | "
++                    + second.Unit + "@"
++                    + second.Row.ToString(CultureInfo.InvariantCulture) + ","
++                    + second.Column.ToString(CultureInfo.InvariantCulture);
++            }
++
++            if (battle.Sides != null && battle.Sides.Length >= 2)
++            {
++                snap.PlayerMorale = battle.Sides[0].Morale;
++                snap.EnemyMorale = battle.Sides[1].Morale;
++            }
++
++            if (battle.Cards != null)
++            {
++                for (var i = 0; i < battle.Cards.Length; i++)
++                {
++                    CardState card = battle.Cards[i];
++                    if (card.Id == "encourage-morale")
++                    {
++                        snap.GeneralRechargeTicksLeft = card.RechargeTicksLeft;
++                        snap.CanUseGeneralCard = battle.Deployed && card.RechargeTicksLeft == 0;
++                    }
++                    else if (card.Id == "mobility-regroup")
++                    {
++                        snap.CanUseMobilityCard = battle.Deployed && card.RechargeTicksLeft == 0;
++                    }
++                }
++            }
++
++            if (battle.Telegraphs != null)
++            {
++                for (var i = 0; i < battle.Telegraphs.Length; i++)
++                {
++                    TelegraphState telegraph = battle.Telegraphs[i];
++                    if (telegraph.Arrived) continue;
++                    snap.RemainingReinforcementCount += telegraph.Count;
++                    if (snap.NextReinforcementTick < 0 || telegraph.ArrivalTick < snap.NextReinforcementTick)
++                    {
++                        snap.NextReinforcementTick = telegraph.ArrivalTick;
++                    }
++                }
++            }
++
++            snap.BattleForecast = snap.NextReinforcementTick < 0
++                ? "증원 예고 없음"
++                : "증원 " + snap.RemainingReinforcementCount.ToString(CultureInfo.InvariantCulture)
++                    + "명 · 도착 tick " + snap.NextReinforcementTick.ToString(CultureInfo.InvariantCulture);
++
++            if (battle.Units == null) return;
+             UnitState active = null;
+             for (var i = 0; i < battle.Units.Length; i++)
+-                if (battle.Units[i] != null && battle.Units[i].Side == 0 && battle.Units[i].State != "Down") { active = battle.Units[i]; break; }
+-            if (active == null)
+-            {
+-                for (var i = 0; i < battle.Units.Length; i++)
++            {
++                UnitState unit = battle.Units[i];
++                if (unit != null && unit.Side == 0 && unit.State != "Down")
+                 {
+-                    if (battle.Units[i] != null && battle.Units[i].Side == 0 && battle.Units[i].State != "Down")
+-                    {
+-                        active = battle.Units[i];
+-                        break;
+-                    }
++                    active = unit;
++                    break;
+                 }
+             }
+-
+             if (active != null)
+             {
+                 snap.BattleHp = active.Hp;
+                 snap.BattleMaxHp = active.MaxHp > 0 ? active.MaxHp : 1;
+-                snap.BattleAp = 0;
+-                snap.BattleMaxAp = 1;
+                 snap.HpFill01 = Clamp01((float)snap.BattleHp / snap.BattleMaxHp);
+-                snap.ApFill01 = Clamp01((float)snap.BattleAp / snap.BattleMaxAp);
+                 snap.NamedFlags[UiElementNames.BattleHp + ":bound"] = true;
+-                snap.NamedFlags[UiElementNames.BattleAp + ":bound"] = true;
+             }
+ 
+             for (var i = 0; i < battle.Units.Length; i++)
+             {
+-                var unit = battle.Units[i];
+-                if (unit == null || unit.State == "Down")
+-                {
+-                    continue;
+-                }
+-
+-                var key = UiElementNames.BattleCell(unit.Cell.X, unit.Cell.Y);
++                UnitState unit = battle.Units[i];
++                if (unit == null || unit.State == "Down") continue;
++                int displayX = battle.Arena == null || battle.Arena.Width <= 1
++                    ? 0
++                    : unit.Cell.X * 4 / (battle.Arena.Width - 1);
++                int displayY = battle.Arena == null || battle.Arena.Height <= 1
++                    ? 0
++                    : unit.Cell.Y * 4 / (battle.Arena.Height - 1);
++                string key = UiElementNames.BattleCell(displayX, displayY);
+                 snap.BattleCellOccupancy[key] = unit.Side == 0 ? "ally" : "foe";
+                 snap.BattleLogEntries.Add(
+                     (unit.Side == 0 ? "ally" : "foe")
+                     + "@" + unit.Cell.X.ToString(CultureInfo.InvariantCulture)
+                     + "," + unit.Cell.Y.ToString(CultureInfo.InvariantCulture)
+                     + " hp=" + unit.Hp.ToString(CultureInfo.InvariantCulture)
+-                    + "/" + unit.MaxHp.ToString(CultureInfo.InvariantCulture)
+-                    + " ap=" + 0.ToString(CultureInfo.InvariantCulture));
+-            }
+-
+-            if (snap.BattleLogEntries.Count > 0)
+-            {
+-                snap.NamedFlags[UiElementNames.BattleLog + ":bound"] = true;
+-            }
+-
+-            for (var i = 0; i < battle.Units.Length; i++)
+-            {
+-                UnitState unit = battle.Units[i];
+-                if (unit == null || unit.Side != 0)
++                    + "/" + unit.MaxHp.ToString(CultureInfo.InvariantCulture));
++                if (unit.Side == 0)
+                 {
+-                    continue;
++                    snap.PartyNames.Add(unit.Id.ToString());
++                    snap.PartyHp.Add(unit.Hp);
++                    snap.PartyMaxHp.Add(unit.MaxHp);
+                 }
+-
+-                snap.PartyNames.Add(unit.Id.ToString());
+-                snap.PartyHp.Add(unit.Hp);
+-                snap.PartyMaxHp.Add(unit.MaxHp);
+-            }
++            }
++            if (snap.BattleLogEntries.Count > 0) snap.NamedFlags[UiElementNames.BattleLog + ":bound"] = true;
+         }
+ 
+         static float Clamp01(float v)
+@@ -416,7 +471,13 @@
+             sb.Append(";stageEl=").Append(CurrentStageElement ?? string.Empty);
+             sb.Append(";stationEl=").Append(CurrentStationElement ?? string.Empty);
+             sb.Append(";hp=").Append(BattleHp.ToString(CultureInfo.InvariantCulture));
+-            sb.Append(";ap=").Append(BattleAp.ToString(CultureInfo.InvariantCulture));
++            sb.Append(";morale=").Append(PlayerMorale.ToString(CultureInfo.InvariantCulture));
++            sb.Append(',').Append(EnemyMorale.ToString(CultureInfo.InvariantCulture));
++            sb.Append(";generalRecharge=").Append(GeneralRechargeTicksLeft.ToString(CultureInfo.InvariantCulture));
++            sb.Append(";reinforcement=").Append(NextReinforcementTick.ToString(CultureInfo.InvariantCulture));
++            sb.Append(',').Append(RemainingReinforcementCount.ToString(CultureInfo.InvariantCulture));
++            sb.Append(";paused=").Append(BattlePaused ? '1' : '0');
++            sb.Append(";formation=").Append(FormationSelectionText ?? string.Empty);
+             sb.Append(";out=").Append(SettlementOutcomeCode ?? string.Empty);
+             sb.Append(";clock=").Append(ClockTick.ToString(CultureInfo.InvariantCulture));
+             if (campaign != null)
+*** Update File: Game/Assets/Janseon/Foundation/UI/PocCoreLoopController.cs
+@@ -32,6 +32,7 @@
+         Ledger battleLedger;
+         SettlementBook book;
+         BattleSimState battle;
++        FormationSlot[] pendingFormation;
+         int commandSeq;
+         bool wired;
+         bool disposed;
+@@ -116,6 +117,7 @@
+             battleLedger = new Ledger();
+             book = new SettlementBook();
+             battle = null;
++            pendingFormation = null;
+             battleDriver.Detach();
+             LastReceipt = null;
+             LastDuplicateReceipt = null;
+@@ -147,7 +149,10 @@
+             presenter.NegotiateChosen += OnNegotiate;
+             presenter.BypassChosen += OnBypass;
+             presenter.CombatChosen += OnCombat;
+-            presenter.BattleAdvanceChosen += OnBattleAdvance;
++            presenter.BattlePlayPauseChosen += OnBattlePlayPause;
++            presenter.CardGeneralUseChosen += OnCardGeneralUse;
++            presenter.FormationSwapFrontChosen += OnFormationSwapFront;
++            presenter.EditFormationChosen += OnEditFormation;
+             presenter.MobilityRegroupChosen += OnMobilityRegroup;
+             presenter.SettleChosen += OnSettle;
+             presenter.ReturnChosen += OnReturn;
+@@ -169,7 +174,10 @@
+             presenter.NegotiateChosen -= OnNegotiate;
+             presenter.BypassChosen -= OnBypass;
+             presenter.CombatChosen -= OnCombat;
+-            presenter.BattleAdvanceChosen -= OnBattleAdvance;
++            presenter.BattlePlayPauseChosen -= OnBattlePlayPause;
++            presenter.CardGeneralUseChosen -= OnCardGeneralUse;
++            presenter.FormationSwapFrontChosen -= OnFormationSwapFront;
++            presenter.EditFormationChosen -= OnEditFormation;
+             presenter.MobilityRegroupChosen -= OnMobilityRegroup;
+             presenter.SettleChosen -= OnSettle;
+             presenter.ReturnChosen -= OnReturn;
+@@ -269,20 +277,11 @@
+                 {
+                     campaign = next;
+                     battleLedger = new Ledger();
+-                    var setup = BattleSetup.FromContext(required.Context);
++                    BattleSetup setup = BattleSetup.FromContext(required.Context);
++                    pendingFormation = CloneFormation(setup.PlayerFormation);
+                     battle = BattleSim.Open(setup);
+                     battleDriver.Attach(battle, battleLedger);
+-                    var deploy = new BattleTickCommand
+-                    {
+-                        Id = NextCommandId("deploy"),
+-                        Seq = commandSeq,
+-                        At = new Tick(battle.Tick),
+-                        Kind = BattleTickCommandKind.Deploy,
+-                        Formation = setup.PlayerFormation,
+-                    };
+-                    battleDriver.Enqueue(deploy);
+-                    battleDriver.SubmitCurrentCommands();
+-                    if (LastRejection is BattleRejection) return;
++                    battleDriver.Paused = true;
+                     LastRejection = null;
+                     Publish();
+                     return;
+@@ -290,6 +289,52 @@
+                 Reject(attached); return;
+             }
+             Reject(result);
++        }
++
++        void OnFormationSwapFront()
++        {
++            LastClickedAction = UiElementNames.FormationSwapFront;
++            if (battle == null || battle.Deployed || pendingFormation == null || pendingFormation.Length < 2) return;
++            FormationSlot first = pendingFormation[0];
++            FormationSlot second = pendingFormation[1];
++            int row = first.Row;
++            int column = first.Column;
++            first.Row = second.Row;
++            first.Column = second.Column;
++            second.Row = row;
++            second.Column = column;
++            Publish();
++        }
++
++        void OnEditFormation()
++        {
++            LastClickedAction = UiElementNames.EditFormation;
++            if (battle == null || battle.Outcome != BattleOutcomeKind.Ongoing) return;
++            if (battle.Deployed) return;
++            SubmitBattleCommand(new BattleTickCommand
++            {
++                Id = NextCommandId("deploy-edited"),
++                Seq = commandSeq,
++                At = new Tick(battle.Tick),
++                Kind = BattleTickCommandKind.Deploy,
++                Formation = CloneFormation(pendingFormation),
++            });
++        }
++
++        void OnCardGeneralUse()
++        {
++            LastClickedAction = UiElementNames.CardGeneralUse;
++            UnitState commander = FindPlayerCommander();
++            if (commander == null) return;
++            SubmitBattleCommand(new BattleTickCommand
++            {
++                Id = NextCommandId("encourage-morale"),
++                Seq = commandSeq,
++                At = new Tick(battle.Tick),
++                Kind = BattleTickCommandKind.PlayCard,
++                CardId = "encourage-morale",
++                Target = commander.Cell,
++            });
+         }
+ 
+         void OnMobilityRegroup()
+@@ -310,21 +355,56 @@
+                 Target = commander.Cell,
+                 Facing = CardinalDirection.South,
+             };
+-            battleDriver.Enqueue(command);
+-            battleDriver.SubmitCurrentCommands();
+-            if (LastRejection is BattleRejection) return;
+-            LastRejection = null;
+-            Publish();
+-        }
+-
+-        void OnBattleAdvance()
+-        {
+-            LastClickedAction = UiElementNames.BattleAdvance;
++            SubmitBattleCommand(command);
++        }
++
++        void OnBattlePlayPause()
++        {
++            LastClickedAction = UiElementNames.BattlePlayPause;
+             if (battle == null || battle.Outcome != BattleOutcomeKind.Ongoing)
+             { Reject(new BattleRejection { Reason = BattleRejectReason.BattleEnded }); return; }
+             battleDriver.Paused = !battleDriver.Paused;
+             LastRejection = null;
+             Publish();
++        }
++
++        void SubmitBattleCommand(BattleTickCommand command)
++        {
++            if (battle == null || battle.Outcome != BattleOutcomeKind.Ongoing) return;
++            LastRejection = null;
++            battleDriver.Enqueue(command);
++            battleDriver.SubmitCurrentCommands();
++            if (LastRejection is BattleRejection) return;
++            Publish();
++        }
++
++        UnitState FindPlayerCommander()
++        {
++            if (battle?.Units == null) return null;
++            for (var i = 0; i < battle.Units.Length; i++)
++            {
++                UnitState unit = battle.Units[i];
++                if (unit.Id.Equals(battle.PlayerCommanderId)) return unit;
++            }
++            return null;
++        }
++
++        static FormationSlot[] CloneFormation(FormationSlot[] source)
++        {
++            if (source == null) return null;
++            FormationSlot[] clone = new FormationSlot[source.Length];
++            for (var i = 0; i < source.Length; i++)
++            {
++                FormationSlot slot = source[i];
++                clone[i] = new FormationSlot
++                {
++                    Unit = slot.Unit,
++                    Row = slot.Row,
++                    Column = slot.Column,
++                    Facing = slot.Facing,
++                };
++            }
++            return clone;
+         }
+ 
+         void OnSettle()
+@@ -405,7 +485,7 @@
+ 
+         void Publish()
+         {
+-            host.ApplyCampaign(campaign, battle);
++            host.ApplyCampaign(campaign, battle, battleDriver.Paused, pendingFormation);
+             if (campaign != null)
+             {
+                 voxelWorld?.SyncActor(campaign.Node);
+*** Update File: Game/Assets/Janseon/Foundation/UI/Presenters/GameplayPresenter.cs
+@@ -21,15 +21,10 @@
+         Button actionFace;
+         Button actionEnter;
+         Button actionSettle;
+-        Button battleAdvance;
+-        Button battleMoveN;
+-        Button battleMoveE;
+-        Button battleMoveS;
+-        Button battleMoveW;
+-        Button battleMelee;
+-        Button battleRanged;
+-        Button battleEndTurn;
+-        Button battleWait;
++        Button battlePlayPause;
++        Button cardGeneralUse;
++        Button formationSwapFront;
++        Button editFormation;
+         Button mobilityRegroup;
+         Button choiceNegotiate;
+         Button choiceBypass;
+@@ -65,12 +60,10 @@
+         public event Action FaceEncounterChosen;
+         public event Action EnterResolutionChosen;
+         public event Action SettleChosen;
+-        public event Action BattleAdvanceChosen;
+-        public event Action<int, int> BattleMoveChosen;
+-        public event Action BattleMeleeChosen;
+-        public event Action BattleRangedChosen;
+-        public event Action BattleEndTurnChosen;
+-        public event Action BattleWaitChosen;
++        public event Action BattlePlayPauseChosen;
++        public event Action CardGeneralUseChosen;
++        public event Action FormationSwapFrontChosen;
++        public event Action EditFormationChosen;
+         public event Action MobilityRegroupChosen;
+         public event Action NegotiateChosen;
+         public event Action BypassChosen;
+@@ -118,16 +111,11 @@
+             actionFace = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.ActionFaceEncounter);
+             actionEnter = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.ActionEnterResolution);
+             actionSettle = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.ActionSettle);
+-            battleAdvance = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.BattleAdvance);
+-            battleMoveN = UguiHudBuilder.ButtonNamed(gameplayRoot, "battle-move-n");
+-            battleMoveE = UguiHudBuilder.ButtonNamed(gameplayRoot, "battle-move-e");
+-            battleMoveS = UguiHudBuilder.ButtonNamed(gameplayRoot, "battle-move-s");
+-            battleMoveW = UguiHudBuilder.ButtonNamed(gameplayRoot, "battle-move-w");
+-            battleMelee = UguiHudBuilder.ButtonNamed(gameplayRoot, "battle-melee");
+-            battleRanged = UguiHudBuilder.ButtonNamed(gameplayRoot, "battle-ranged");
+-            battleWait = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.BattleWait);
++            battlePlayPause = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.BattlePlayPause);
++            cardGeneralUse = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.CardGeneralUse);
++            formationSwapFront = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.FormationSwapFront);
++            editFormation = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.EditFormation);
+             mobilityRegroup = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.MobilityRegroup);
+-            battleEndTurn = UguiHudBuilder.ButtonNamed(gameplayRoot, "battle-end-turn");
+             choiceNegotiate = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.ChoiceNegotiate);
+             choiceBypass = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.ChoiceBypass);
+             choiceCombat = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.ChoiceCombat);
+@@ -141,7 +129,8 @@
+             }
+ 
+             if (actionDepart == null || actionFace == null || actionEnter == null || actionSettle == null
+-                || battleAdvance == null || choiceNegotiate == null || choiceBypass == null
++                || battlePlayPause == null || cardGeneralUse == null || formationSwapFront == null || editFormation == null
++                || mobilityRegroup == null || choiceNegotiate == null || choiceBypass == null
+                 || choiceCombat == null || returnAction == null
+                 || stationYeongdeungpo == null || stationSindorim == null || stationGuro == null)
+             {
+@@ -152,16 +141,11 @@
+             actionFace.onClick.AddListener(OnFaceClicked);
+             actionEnter.onClick.AddListener(OnEnterClicked);
+             actionSettle.onClick.AddListener(OnSettleClicked);
+-            battleAdvance.onClick.AddListener(OnBattleAdvanceClicked);
+-            if (battleMoveN != null) battleMoveN.onClick.AddListener(OnBattleMoveNClicked);
+-            if (battleMoveE != null) battleMoveE.onClick.AddListener(OnBattleMoveEClicked);
+-            if (battleMoveS != null) battleMoveS.onClick.AddListener(OnBattleMoveSClicked);
+-            if (battleMoveW != null) battleMoveW.onClick.AddListener(OnBattleMoveWClicked);
+-            if (battleMelee != null) battleMelee.onClick.AddListener(OnBattleMeleeClicked);
+-            if (battleRanged != null) battleRanged.onClick.AddListener(OnBattleRangedClicked);
+-            if (battleWait != null) battleWait.onClick.AddListener(OnBattleWaitClicked);
+-            if (mobilityRegroup != null) mobilityRegroup.onClick.AddListener(OnMobilityRegroupClicked);
+-            if (battleEndTurn != null) battleEndTurn.onClick.AddListener(OnBattleEndTurnClicked);
++            battlePlayPause.onClick.AddListener(OnBattlePlayPauseClicked);
++            cardGeneralUse.onClick.AddListener(OnCardGeneralUseClicked);
++            formationSwapFront.onClick.AddListener(OnFormationSwapFrontClicked);
++            editFormation.onClick.AddListener(OnEditFormationClicked);
++            mobilityRegroup.onClick.AddListener(OnMobilityRegroupClicked);
+             choiceNegotiate.onClick.AddListener(OnNegotiateClicked);
+             choiceBypass.onClick.AddListener(OnBypassClicked);
+             choiceCombat.onClick.AddListener(OnCombatClicked);
+@@ -194,16 +178,11 @@
+         public void TriggerFaceEncounterForTest() => OnFaceClicked();
+         public void TriggerEnterResolutionForTest() => OnEnterClicked();
+         public void TriggerSettleForTest() => OnSettleClicked();
+-        public void TriggerBattleAdvanceForTest() => OnBattleAdvanceClicked();
+-        public void TriggerBattleMoveNForTest() => OnBattleMoveNClicked();
+-        public void TriggerBattleMoveEForTest() => OnBattleMoveEClicked();
+-        public void TriggerBattleMoveSForTest() => OnBattleMoveSClicked();
+-        public void TriggerBattleMoveWForTest() => OnBattleMoveWClicked();
+-        public void TriggerBattleMeleeForTest() => OnBattleMeleeClicked();
+-        public void TriggerBattleRangedForTest() => OnBattleRangedClicked();
+-        public void TriggerBattleWaitForTest() => OnBattleWaitClicked();
++        public void TriggerBattlePlayPauseForTest() => OnBattlePlayPauseClicked();
++        public void TriggerCardGeneralUseForTest() => OnCardGeneralUseClicked();
++        public void TriggerFormationSwapFrontForTest() => OnFormationSwapFrontClicked();
++        public void TriggerEditFormationForTest() => OnEditFormationClicked();
+         public void TriggerMobilityRegroupForTest() => OnMobilityRegroupClicked();
+-        public void TriggerBattleEndTurnForTest() => OnBattleEndTurnClicked();
+         public void TriggerNegotiateForTest() => OnNegotiateClicked();
+         public void TriggerBypassForTest() => OnBypassClicked();
+         public void TriggerCombatForTest() => OnCombatClicked();
+@@ -261,6 +240,8 @@
+             SetVisible(UiElementNames.EncounterChoices, snapshot.VisiblePanel == GameplayPanelId.Encounter);
+             bool battle = snapshot.VisiblePanel == GameplayPanelId.Battle;
+             SetVisible(UiElementNames.RouteRail, !battle);
++            SetVisible(UiElementNames.DeployPanel, !battle);
++            SetVisible("party-strip", !battle);
+             SetVisible(UiElementNames.BattleHud, battle);
+             SetVisible(UiElementNames.BattleGrid, battle);
+             SetVisible(UiElementNames.BattleLog, battle);
+@@ -280,7 +261,11 @@
+             SetActionVisible(UiElementNames.ActionFaceEncounter, snapshot.ShowFaceAction);
+             SetActionVisible(UiElementNames.ActionEnterResolution, snapshot.ShowEnterResolutionAction);
+             SetActionVisible(UiElementNames.ActionSettle, snapshot.ShowSettleAction);
+-            SetActionVisible(UiElementNames.BattleAdvance, snapshot.ShowBattleAdvanceAction);
++            SetActionVisible(UiElementNames.BattlePlayPause, snapshot.ShowBattlePlayPauseAction);
++            SetActionVisible(UiElementNames.FormationSwapFront, snapshot.ShowEditFormationAction);
++            SetActionVisible(UiElementNames.EditFormation, snapshot.ShowEditFormationAction);
++            SetActionState(UiElementNames.CardGeneralUse, snapshot.ShowCardGeneralUseAction, snapshot.CanUseGeneralCard);
++            SetActionState(UiElementNames.MobilityRegroup, snapshot.ShowCardMobilityRegroupAction, snapshot.CanUseMobilityCard);
+             SetActionVisible(UiElementNames.ReturnAction, snapshot.ShowReturnAction);
+ 
+             // Station nodes are route-map labels: keep painted; interactivity follows travel stage.
+@@ -330,25 +315,27 @@
+         void ApplyMeters(GameplayUiSnapshot snapshot)
+         {
+             Text hp = FindText(root, UiElementNames.BattleHp);
+-            Text ap = FindText(root, UiElementNames.BattleAp);
+             if (hp != null)
+             {
+-                hp.text = "HP "
+-                    + snapshot.BattleHp.ToString(CultureInfo.InvariantCulture)
+-                    + "/"
+-                    + snapshot.BattleMaxHp.ToString(CultureInfo.InvariantCulture);
+-            }
+-
+-            if (ap != null)
+-            {
+-                ap.text = "AP "
+-                    + snapshot.BattleAp.ToString(CultureInfo.InvariantCulture)
+-                    + "/"
+-                    + snapshot.BattleMaxAp.ToString(CultureInfo.InvariantCulture);
+-            }
+-
++                hp.text = "HP " + snapshot.BattleHp.ToString(CultureInfo.InvariantCulture)
++                    + "/" + snapshot.BattleMaxHp.ToString(CultureInfo.InvariantCulture);
++            }
++            Text formation = FindText(root, UiElementNames.FormationSelection);
++            if (formation != null) formation.text = snapshot.FormationSelectionText ?? string.Empty;
++            Text morale = FindText(root, UiElementNames.BattleMorale);
++            if (morale != null)
++            {
++                morale.text = "사기 " + snapshot.PlayerMorale.ToString(CultureInfo.InvariantCulture)
++                    + " / 적 " + snapshot.EnemyMorale.ToString(CultureInfo.InvariantCulture);
++            }
++            Text recharge = FindText(root, UiElementNames.CardGeneralRecharge);
++            if (recharge != null)
++            {
++                recharge.text = "재충전 " + snapshot.GeneralRechargeTicksLeft.ToString(CultureInfo.InvariantCulture) + " tick";
++            }
++            Text flow = FindText(root, UiElementNames.BattlePlayPause);
++            if (flow != null) flow.text = snapshot.BattlePaused ? "전투 재개" : "일시정지";
+             SetFill(UiElementNames.BattleHpFill, snapshot.HpFill01);
+-            SetFill(UiElementNames.BattleApFill, snapshot.ApFill01);
+         }
+ 
+         void ApplyParty(GameplayUiSnapshot snapshot)
+@@ -506,7 +493,7 @@
+                 context.text = snapshot.EncounterContext ?? string.Empty;
+             }
+ 
+-            Text forecast = FindText(root, "battle-forecast");
++            Text forecast = FindText(root, UiElementNames.BattleReinforcementForecast);
+             if (forecast != null)
+             {
+                 forecast.text = snapshot.BattleForecast ?? string.Empty;
+@@ -558,6 +545,15 @@
+             {
+                 button.interactable = visible;
+             }
++        }
++
++        void SetActionState(string name, bool visible, bool interactable)
++        {
++            Transform el = UguiHudBuilder.Find(root, name);
++            if (el == null) return;
++            el.gameObject.SetActive(visible);
++            Button button = el.GetComponent<Button>();
++            if (button != null) button.interactable = visible && interactable;
+         }
+ 
+         void SetStationTravelEnabled(string name, bool travelEnabled)
+@@ -619,16 +615,11 @@
+         void OnFaceClicked() => FaceEncounterChosen?.Invoke();
+         void OnEnterClicked() => EnterResolutionChosen?.Invoke();
+         void OnSettleClicked() => SettleChosen?.Invoke();
+-        void OnBattleAdvanceClicked() => BattleAdvanceChosen?.Invoke();
+-        void OnBattleMoveNClicked() => BattleMoveChosen?.Invoke(0, 1);
+-        void OnBattleMoveEClicked() => BattleMoveChosen?.Invoke(1, 0);
+-        void OnBattleMoveSClicked() => BattleMoveChosen?.Invoke(0, -1);
+-        void OnBattleMoveWClicked() => BattleMoveChosen?.Invoke(-1, 0);
+-        void OnBattleMeleeClicked() => BattleMeleeChosen?.Invoke();
+-        void OnBattleRangedClicked() => BattleRangedChosen?.Invoke();
+-        void OnBattleWaitClicked() => BattleWaitChosen?.Invoke();
++        void OnBattlePlayPauseClicked() => BattlePlayPauseChosen?.Invoke();
++        void OnCardGeneralUseClicked() => CardGeneralUseChosen?.Invoke();
++        void OnFormationSwapFrontClicked() => FormationSwapFrontChosen?.Invoke();
++        void OnEditFormationClicked() => EditFormationChosen?.Invoke();
+         void OnMobilityRegroupClicked() => MobilityRegroupChosen?.Invoke();
+-        void OnBattleEndTurnClicked() => BattleEndTurnChosen?.Invoke();
+         void OnNegotiateClicked() => NegotiateChosen?.Invoke();
+         void OnBypassClicked() => BypassChosen?.Invoke();
+         void OnCombatClicked() => CombatChosen?.Invoke();
+@@ -678,16 +669,11 @@
+             if (actionFace != null) actionFace.onClick.RemoveListener(OnFaceClicked);
+             if (actionEnter != null) actionEnter.onClick.RemoveListener(OnEnterClicked);
+             if (actionSettle != null) actionSettle.onClick.RemoveListener(OnSettleClicked);
+-            if (battleAdvance != null) battleAdvance.onClick.RemoveListener(OnBattleAdvanceClicked);
+-            if (battleMoveN != null) battleMoveN.onClick.RemoveListener(OnBattleMoveNClicked);
+-            if (battleMoveE != null) battleMoveE.onClick.RemoveListener(OnBattleMoveEClicked);
+-            if (battleMoveS != null) battleMoveS.onClick.RemoveListener(OnBattleMoveSClicked);
+-            if (battleMoveW != null) battleMoveW.onClick.RemoveListener(OnBattleMoveWClicked);
+-            if (battleMelee != null) battleMelee.onClick.RemoveListener(OnBattleMeleeClicked);
+-            if (battleRanged != null) battleRanged.onClick.RemoveListener(OnBattleRangedClicked);
+-            if (battleWait != null) battleWait.onClick.RemoveListener(OnBattleWaitClicked);
++            if (battlePlayPause != null) battlePlayPause.onClick.RemoveListener(OnBattlePlayPauseClicked);
++            if (cardGeneralUse != null) cardGeneralUse.onClick.RemoveListener(OnCardGeneralUseClicked);
++            if (formationSwapFront != null) formationSwapFront.onClick.RemoveListener(OnFormationSwapFrontClicked);
++            if (editFormation != null) editFormation.onClick.RemoveListener(OnEditFormationClicked);
+             if (mobilityRegroup != null) mobilityRegroup.onClick.RemoveListener(OnMobilityRegroupClicked);
+-            if (battleEndTurn != null) battleEndTurn.onClick.RemoveListener(OnBattleEndTurnClicked);
+             if (choiceNegotiate != null) choiceNegotiate.onClick.RemoveListener(OnNegotiateClicked);
+             if (choiceBypass != null) choiceBypass.onClick.RemoveListener(OnBypassClicked);
+             if (choiceCombat != null) choiceCombat.onClick.RemoveListener(OnCombatClicked);
+@@ -704,16 +690,11 @@
+             actionFace = null;
+             actionEnter = null;
+             actionSettle = null;
+-            battleAdvance = null;
+-            battleMoveN = null;
+-            battleMoveE = null;
+-            battleMoveS = null;
+-            battleMoveW = null;
+-            battleMelee = null;
+-            battleRanged = null;
+-            battleWait = null;
++            battlePlayPause = null;
++            cardGeneralUse = null;
++            formationSwapFront = null;
++            editFormation = null;
+             mobilityRegroup = null;
+-            battleEndTurn = null;
+             choiceNegotiate = null;
+             choiceBypass = null;
+             choiceCombat = null;
+*** Update File: Game/Assets/Janseon/Foundation/UI/Presenters/GameplayUiHost.cs
+@@ -111,14 +111,19 @@
+             ready.TrySetResult(true);
+         }
+ 
+-        public void ApplyCampaign(CampaignState campaign, BattleSimState battle)
++        public void ApplyCampaign(
++            CampaignState campaign,
++            BattleSimState battle,
++            bool battlePaused = false,
++            Janseon.Core.Battle.Contracts.FormationSlot[] pendingFormation = null)
+         {
+             if (presenter == null || !presenter.IsReady)
+             {
+                 return;
+             }
+ 
+-            GameplayUiSnapshot snapshot = GameplayUiSnapshot.FromCampaign(campaign, battle);
++            GameplayUiSnapshot snapshot = GameplayUiSnapshot.FromCampaign(
++                campaign, battle, battlePaused, pendingFormation);
+             presenter.ApplySnapshot(snapshot);
+         }
+ 
+*** Update File: Game/Assets/Janseon/Foundation/UI/UguiHudBuilder.cs
+@@ -118,47 +118,66 @@
+             HudButton(encounter, UiElementNames.ChoiceBypass, "우회  ·  자원 -2 / 평판 -1");
+             HudButton(encounter, UiElementNames.ChoiceCombat, "전투  ·  격자 교전");
+ 
+-            RectTransform battle = Panel(root, UiElementNames.BattleHud, new Vector2(1f, 0f), new Vector2(1f, 1f), new Vector2(-280f, 12f), new Vector2(-12f, -112f));
+-            Label(battle, UiElementNames.BattleHp, "HP");
+-            Meter(battle, UiElementNames.BattleHpMeter, UiElementNames.BattleHpFill, new Color(0.90f, 0.42f, 0.38f));
+-            Label(battle, UiElementNames.BattleAp, "AP");
+-            Meter(battle, UiElementNames.BattleApMeter, UiElementNames.BattleApFill, new Color(0.39f, 0.72f, 0.69f));
+-            HudButton(battle, "battle-move-n", "이동 북  ·  AP1");
+-            HudButton(battle, "battle-move-e", "이동 동  ·  AP1");
+-            HudButton(battle, "battle-move-s", "이동 남  ·  AP1");
+-            HudButton(battle, "battle-move-w", "이동 서  ·  AP1");
+-            HudButton(battle, "battle-melee", "근접  ·  AP2 / 5");
+-            HudButton(battle, "battle-ranged", "원거리  ·  AP2 / 3");
+-            HudButton(battle, UiElementNames.BattleWait, "대기");
+-            HudButton(battle, UiElementNames.MobilityRegroup, "기동 재집결 · 남쪽 1칸");
++            RectTransform battle = Panel(root, UiElementNames.BattleHud,
++                new Vector2(0f, 0f), new Vector2(1f, 1f), new Vector2(12f, 12f), new Vector2(-12f, -112f));
++            RectTransform battleStatus = Band(battle, "battle-status", Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
++            Label(battleStatus, UiElementNames.BattleHp, "HP");
++            Meter(battleStatus, UiElementNames.BattleHpMeter, UiElementNames.BattleHpFill, new Color(0.90f, 0.42f, 0.38f));
++            Label(battleStatus, UiElementNames.BattleMorale, "사기");
++            Label(battleStatus, UiElementNames.BattleReinforcementForecast, "증원 예고");
++            HudButton(battleStatus, UiElementNames.BattlePlayPause, "일시정지");
++            LayoutElement statusLayout = battleStatus.gameObject.AddComponent<LayoutElement>();
++            statusLayout.preferredHeight = 42f;
++
++            RectTransform battleRow = new GameObject("battle-row").AddComponent<RectTransform>();
++            battleRow.SetParent(battle, false);
++            HorizontalLayoutGroup battleLayout = battleRow.gameObject.AddComponent<HorizontalLayoutGroup>();
++            battleLayout.spacing = 10f;
++            battleLayout.childForceExpandWidth = false;
++            battleLayout.childForceExpandHeight = true;
++            LayoutElement battleRowLayout = battleRow.gameObject.AddComponent<LayoutElement>();
++            battleRowLayout.preferredHeight = 430f;
++
++            RectTransform cards = Panel(battleRow, "battle-cards", Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
++            LayoutElement cardsLayout = cards.gameObject.AddComponent<LayoutElement>();
++            cardsLayout.preferredWidth = 250f;
++            Label(cards, "formation-heading", "전투 전 진형");
++            Label(cards, UiElementNames.FormationSelection, "");
++            HudButton(cards, UiElementNames.FormationSwapFront, "전열 1 · 2 교대");
++            HudButton(cards, UiElementNames.EditFormation, "선택한 진형 배치");
++            Label(cards, "general-card-heading", "장수 카드 · 사기 고무");
++            Label(cards, UiElementNames.CardGeneralRecharge, "재충전 0 tick");
++            HudButton(cards, UiElementNames.CardGeneralUse, "사기 고무 사용");
++            HudButton(cards, UiElementNames.MobilityRegroup, "기동 재집결 · 남쪽 1칸");
++            Label(cards, "why-tooltip", "");
++
+             RectTransform battleGrid = new GameObject(UiElementNames.BattleGrid).AddComponent<RectTransform>();
+-            battleGrid.SetParent(battle, false);
+-            battleGrid.anchorMin = new Vector2(0f, 0f);
+-            battleGrid.anchorMax = new Vector2(1f, 1f);
+-            battleGrid.offsetMin = new Vector2(220f, 0f);
+-            battleGrid.offsetMax = new Vector2(-320f, -56f);
+-            var gridLayout = battleGrid.gameObject.AddComponent<UnityEngine.UI.GridLayoutGroup>();
+-            gridLayout.cellSize = new Vector2(72f, 72f);
++            battleGrid.SetParent(battleRow, false);
++            GridLayoutGroup gridLayout = battleGrid.gameObject.AddComponent<GridLayoutGroup>();
++            gridLayout.cellSize = new Vector2(62f, 62f);
+             gridLayout.spacing = new Vector2(4f, 4f);
+-            gridLayout.constraint = UnityEngine.UI.GridLayoutGroup.Constraint.FixedColumnCount;
++            gridLayout.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
+             gridLayout.constraintCount = 5;
+-            for (int y = 0; y < 5; y++)
+-            {
+-                for (int x = 0; x < 5; x++)
++            LayoutElement gridSize = battleGrid.gameObject.AddComponent<LayoutElement>();
++            gridSize.preferredWidth = 326f;
++            gridSize.preferredHeight = 326f;
++            for (var y = 0; y < 5; y++)
++            {
++                for (var x = 0; x < 5; x++)
+                 {
+                     RectTransform cell = new GameObject(UiElementNames.BattleCell(x, y)).AddComponent<RectTransform>();
+                     cell.SetParent(battleGrid, false);
+                     Image cellBg = cell.gameObject.AddComponent<Image>();
+-                    cellBg.color = new Color(0.09f, 0.13f, 0.14f, 0.45f);
+-                    cellBg.raycastTarget = true;
++                    cellBg.color = new Color(0.09f, 0.13f, 0.14f, 0.72f);
++                    cellBg.raycastTarget = false;
+                 }
+             }
+ 
+-            Label(battle, UiElementNames.BattleLog, "");
+-            HudButton(battle, "battle-end-turn", "턴 종료");
+-            HudButton(battle, UiElementNames.BattleAdvance, "자동");
+-            Label(battle, "battle-forecast", "");
+-            Label(battle, "why-tooltip", "");
++            RectTransform battleReport = Panel(battleRow, "battle-report", Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
++            LayoutElement reportLayout = battleReport.gameObject.AddComponent<LayoutElement>();
++            reportLayout.flexibleWidth = 1f;
++            Label(battleReport, "battle-report-heading", "전황 기록");
++            Label(battleReport, UiElementNames.BattleLog, "");
+ 
+             RectTransform settle = Panel(root, UiElementNames.SettlementPanel, new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(-210f, -90f), new Vector2(210f, 90f));
+             Image ticket = settle.GetComponent<Image>();
+@@ -645,6 +664,7 @@
+             well.color = new Color(0.031f, 0.055f, 0.063f, 1f);
+             well.raycastTarget = false;
+             LayoutElement le = meterGo.AddComponent<LayoutElement>();
++            le.preferredWidth = 140f;
+             le.preferredHeight = 10f;
+             le.minHeight = 10f;
+             GameObject fillGo = new GameObject(fillName);
+*** Update File: Game/Assets/Janseon/Foundation/UI/UguiHudView.cs
+@@ -4,9 +4,6 @@
+ 
+ namespace Janseon.Foundation.UI
+ {
+-    /// <summary>
+-    /// Visible uGUI HUD bound to the same presenter events as the UITK document.
+-    /// </summary>
+     public sealed class UguiHudView
+     {
+         Transform root;
+@@ -17,16 +14,16 @@
+             Unwire();
+             root = hudRoot;
+             presenter = owner;
+-            if (root == null || presenter == null)
+-            {
+-                return false;
+-            }
+-
++            if (root == null || presenter == null) return false;
+             Wire(UiElementNames.ActionDepart, presenter.TriggerDepartForTest);
+             Wire(UiElementNames.ActionFaceEncounter, presenter.TriggerFaceEncounterForTest);
+             Wire(UiElementNames.ActionEnterResolution, presenter.TriggerEnterResolutionForTest);
+             Wire(UiElementNames.ActionSettle, presenter.TriggerSettleForTest);
+-            Wire(UiElementNames.BattleAdvance, presenter.TriggerBattleAdvanceForTest);
++            Wire(UiElementNames.BattlePlayPause, presenter.TriggerBattlePlayPauseForTest);
++            Wire(UiElementNames.CardGeneralUse, presenter.TriggerCardGeneralUseForTest);
++            Wire(UiElementNames.FormationSwapFront, presenter.TriggerFormationSwapFrontForTest);
++            Wire(UiElementNames.EditFormation, presenter.TriggerEditFormationForTest);
++            Wire(UiElementNames.MobilityRegroup, presenter.TriggerMobilityRegroupForTest);
+             Wire(UiElementNames.ChoiceNegotiate, presenter.TriggerNegotiateForTest);
+             Wire(UiElementNames.ChoiceBypass, presenter.TriggerBypassForTest);
+             Wire(UiElementNames.ChoiceCombat, presenter.TriggerCombatForTest);
+@@ -34,70 +31,17 @@
+             Wire(UiElementNames.StationYeongdeungpo, () => presenter.TriggerTravelForTest(Janseon.Core.StationId.Yeongdeungpo));
+             Wire(UiElementNames.StationSindorim, () => presenter.TriggerTravelForTest(Janseon.Core.StationId.Sindorim));
+             Wire(UiElementNames.StationGuro, () => presenter.TriggerTravelForTest(Janseon.Core.StationId.Guro));
+-            Wire("battle-move-n", presenter.TriggerBattleMoveNForTest);
+-            Wire("battle-move-e", presenter.TriggerBattleMoveEForTest);
+-            Wire("battle-move-s", presenter.TriggerBattleMoveSForTest);
+-            Wire("battle-move-w", presenter.TriggerBattleMoveWForTest);
+-            Wire("battle-melee", presenter.TriggerBattleMeleeForTest);
+-            Wire("battle-ranged", presenter.TriggerBattleRangedForTest);
+-            Wire(UiElementNames.BattleWait, presenter.TriggerBattleWaitForTest);
+-            Wire(UiElementNames.MobilityRegroup, presenter.TriggerMobilityRegroupForTest);
+-            Wire("battle-end-turn", presenter.TriggerBattleEndTurnForTest);
+             return true;
+         }
+ 
+         public void Apply(GameplayUiSnapshot snapshot)
+         {
+-            if (root == null || snapshot == null)
+-            {
+-                return;
+-            }
+-
+-            SetActive(UiElementNames.EncounterChoices, snapshot.VisiblePanel == GameplayPanelId.Encounter);
+-            bool battle = snapshot.VisiblePanel == GameplayPanelId.Battle;
+-            SetActive(UiElementNames.RouteRail, !battle);
+-            SetActive(UiElementNames.BattleHud, battle);
+-            SetActive(
+-                UiElementNames.SettlementPanel,
+-                snapshot.VisiblePanel == GameplayPanelId.Settlement
+-                || snapshot.ShowSettleAction
+-                || snapshot.ShowReturnAction);
+-            SetActive(UiElementNames.ActionDepart, snapshot.ShowDepartAction);
+-            SetActive(UiElementNames.ActionFaceEncounter, snapshot.ShowFaceAction);
+-            SetActive(UiElementNames.ActionEnterResolution, snapshot.ShowEnterResolutionAction);
+-            SetActive(UiElementNames.ActionSettle, snapshot.ShowSettleAction);
+-            SetActive(UiElementNames.BattleAdvance, snapshot.ShowBattleAdvanceAction);
+-            SetActive(UiElementNames.MobilityRegroup, battle);
+-            SetActive(UiElementNames.ReturnAction, snapshot.ShowReturnAction);
+-
+-            SetText(UiElementNames.ClockLabel, snapshot.ClockText);
+-            SetText("encounter-context", snapshot.EncounterContext);
+-            SetText("battle-forecast", snapshot.BattleForecast);
+-            SetText("why-tooltip", snapshot.WhyText);
+-            SetText(UiElementNames.SettlementOutcome, snapshot.SettlementOutcomeText);
+-
+-            string[] fallback = { "탐험가", "의무병", "순찰대" };
+-            for (var i = 0; i < 3; i++)
+-            {
+-                SetText("party-slot-" + i + "-name", fallback[i]);
+-                if (i < snapshot.PartyHp.Count)
+-                {
+-                    SetText(
+-                        "party-slot-" + i + "-hp",
+-                        "HP " + snapshot.PartyHp[i] + "/" + snapshot.PartyMaxHp[i]);
+-                }
+-                else
+-                {
+-                    SetText("party-slot-" + i + "-hp", "HP");
+-                }
+-            }
+-
+-            SetText("layer-chip", snapshot.CurrentStationElement == UiElementNames.StationSindorim ? "B2" : "B1");
++            presenter?.ApplySnapshot(snapshot);
+         }
+ 
+         public void ApplyWhy(string why)
+         {
+-            SetText("why-tooltip", why);
++            presenter?.ApplyWhy(why);
+         }
+ 
+         public void Unwire()
+@@ -109,31 +53,9 @@
+         void Wire(string name, UnityEngine.Events.UnityAction action)
+         {
+             Button button = UguiHudBuilder.ButtonNamed(root, name);
+-            if (button == null)
+-            {
+-                return;
+-            }
+-
++            if (button == null) return;
+             button.onClick.RemoveAllListeners();
+             button.onClick.AddListener(action);
+         }
+-
+-        void SetActive(string name, bool active)
+-        {
+-            Transform found = UguiHudBuilder.Find(root, name);
+-            if (found != null)
+-            {
+-                found.gameObject.SetActive(active);
+-            }
+-        }
+-
+-        void SetText(string name, string value)
+-        {
+-            Text label = UguiHudBuilder.TextNamed(root, name);
+-            if (label != null)
+-            {
+-                label.text = value ?? string.Empty;
+-            }
+-        }
+     }
+ }
+*** Update File: Game/Assets/Janseon/Foundation/UI/UiElementNames.cs
+@@ -34,11 +34,10 @@
+         public const string BattleHud = "battle-hud";
+         public const string BattleGrid = "battle-grid";
+         public const string BattleHp = "battle-hp";
+-        public const string BattleAp = "battle-ap";
+         public const string BattleHpMeter = "battle-hp-meter";
+-        public const string BattleApMeter = "battle-ap-meter";
+         public const string BattleHpFill = "battle-hp-fill";
+-        public const string BattleApFill = "battle-ap-fill";
++        public const string BattleMorale = "battle-morale";
++        public const string BattleReinforcementForecast = "battle-reinforcement-forecast";
+         public const string BattleLog = "battle-log";
+ 
+         public const string SettlementPanel = "settlement-panel";
+@@ -50,9 +49,13 @@
+         public const string ActionFaceEncounter = "action-face-encounter";
+         public const string ActionEnterResolution = "action-enter-resolution";
+         public const string ActionSettle = "action-settle";
+-        public const string BattleAdvance = "battle-advance";
++        public const string BattlePlayPause = "battle-play-pause";
++        public const string CardGeneralRecharge = "card-general-recharge";
++        public const string CardGeneralUse = "card-general-use";
++        public const string FormationSwapFront = "formation-swap-front";
++        public const string FormationSelection = "formation-selection";
++        public const string EditFormation = "edit-formation";
+         public const string MobilityRegroup = "card-mobility-regroup";
+-        public const string BattleWait = "battle-wait";
+         public const string MissionConsole = "mission-console";
+         public const string HubOvernightCopy = "hub-overnight-copy";
+         public const string HubBulletinPanel = "hub-bulletin-panel";
+@@ -102,13 +105,18 @@
+             BattleHud,
+             BattleGrid,
+             BattleHp,
+-            BattleAp,
+             BattleHpMeter,
+-            BattleApMeter,
+             BattleHpFill,
+-            BattleApFill,
++            BattleMorale,
++            BattleReinforcementForecast,
+             BattleLog,
+-            BattleAdvance,
++            BattlePlayPause,
++            CardGeneralRecharge,
++            CardGeneralUse,
++            FormationSwapFront,
++            FormationSelection,
++            EditFormation,
++            MobilityRegroup,
+             SettlementPanel,
+             SettlementOutcome,
+             ActionSettle,
+@@ -134,7 +142,11 @@
+             ChoiceNegotiate,
+             ChoiceBypass,
+             ChoiceCombat,
+-            BattleAdvance,
++            FormationSwapFront,
++            EditFormation,
++            CardGeneralUse,
++            MobilityRegroup,
++            BattlePlayPause,
+             ActionSettle,
+             ReturnAction,
+         };
+*** Update File: Game/Assets/Tests/EditMode/UiToolkitVisualQaDefectTests.cs
+@@ -22,7 +22,7 @@
+     public sealed class UiToolkitVisualQaDefectTests
+     {
+         [Test]
+-        public void Presenter_RequiresBoundHpApMeters_BattleLog_AndSettlementOutcome()
++        public void Presenter_RequiresBoundHpMoraleCards_BattleLog_AndSettlementOutcome()
+         {
+             RectTransform root = UguiHudBuilder.BuildGameplay(null);
+             var presenter = new GameplayPresenter();
+@@ -30,9 +30,10 @@
+ 
+             // Required visual structure for meters + battle log (Design.md §4/§5.2).
+             Assert.That(UguiHudBuilder.Find(root, "battle-hp-meter"), Is.Not.Null, "missing battle-hp-meter");
+-            Assert.That(UguiHudBuilder.Find(root, "battle-ap-meter"), Is.Not.Null, "missing battle-ap-meter");
+             Assert.That(UguiHudBuilder.Find(root, "battle-hp-fill"), Is.Not.Null, "missing battle-hp-fill");
+-            Assert.That(UguiHudBuilder.Find(root, "battle-ap-fill"), Is.Not.Null, "missing battle-ap-fill");
++            Assert.That(UguiHudBuilder.Find(root, UiElementNames.BattleMorale), Is.Not.Null);
++            Assert.That(UguiHudBuilder.Find(root, UiElementNames.CardGeneralRecharge), Is.Not.Null);
++            Assert.That(UguiHudBuilder.Find(root, "battle-ap"), Is.Null);
+             Assert.That(UguiHudBuilder.Find(root, "battle-log"), Is.Not.Null, "missing battle-log");
+ 
+             var graph = RouteGraph.CreateYeongdeungpoSindorimGuro();
+@@ -67,9 +68,9 @@
+             Assert.That(UguiHudBuilder.Find(root, UiElementNames.RouteRail).gameObject.activeSelf, Is.False,
+                 "battle must hide the route rail");
+             Text hp = UguiHudBuilder.Find(root, UiElementNames.BattleHp).GetComponentInChildren<Text>(true);
+-            Text ap = UguiHudBuilder.Find(root, UiElementNames.BattleAp).GetComponentInChildren<Text>(true);
++            Text morale = UguiHudBuilder.Find(root, UiElementNames.BattleMorale).GetComponentInChildren<Text>(true);
+             Assert.That(hp.text, Does.Contain(battleHp.ToString()), "HP label must show bound value");
+-            Assert.That(ap.text, Does.Contain(((int)typeof(GameplayUiSnapshot).GetProperty("BattleAp").GetValue(battleSnap)).ToString()));
++            Assert.That(morale.text, Does.Contain(battle.Sides[0].Morale.ToString()));
+ 
+             RectTransform hpFill = UguiHudBuilder.Find(root, "battle-hp-fill") as RectTransform;
+             Assert.That(hpFill, Is.Not.Null, "missing battle-hp-fill");
+*** Update File: Game/Assets/Tests/PlayMode/BattleSessionDriverPlayModeTests.cs
+@@ -69,7 +69,11 @@
+             await TriggerAndAwait(session, host.Presenter.TriggerEnterResolutionForTest,
+                 s => s.Campaign.Stage == CampaignStage.Resolution, "enter resolution");
+             await TriggerAndAwait(session, host.Presenter.TriggerCombatForTest,
+-                s => s.Battle != null && s.Battle.Deployed, "open production battle");
++                s => s.Battle != null && s.BattlePaused && !s.Battle.Deployed, "open predeployment battle");
++            await TriggerAndAwait(session, host.Presenter.TriggerFormationSwapFrontForTest,
++                s => s.LastClickedAction == UiElementNames.FormationSwapFront && !s.Battle.Deployed, "choose front-slot swap");
++            await TriggerAndAwait(session, host.Presenter.TriggerEditFormationForTest,
++                s => s.Battle.Deployed, "commit edited formation");
+ 
+             Assert.That(driver.State, Is.SameAs(session.Battle),
+                 "production controller must attach the actual campaign battle to the scoped driver");
+@@ -79,13 +83,12 @@
+             {
+                 new BattleTickCommand
+                 {
+-                    Id = new CommandId("poc-deploy-7"), Seq = 7, At = new Tick(0),
+-                    Kind = BattleTickCommandKind.Deploy, Formation = setup.PlayerFormation,
++                    Id = new CommandId("poc-deploy-edited-7"), Seq = 7, At = new Tick(0),
++                    Kind = BattleTickCommandKind.Deploy, Formation = EditedFormation(setup.PlayerFormation),
+                 },
+             };
+ 
+-            await TriggerAndAwait(session, host.Presenter.TriggerBattleAdvanceForTest,
+-                s => s.BattlePaused, "pause live battle");
++            Assert.That(session.BattlePaused, Is.True, "predeployment pause must remain after Deploy");
+             int pausedTick = session.Battle.Tick;
+             string pausedHash = session.BattleHash;
+             long pausedSteps = driver.TotalSteps;
+@@ -140,7 +143,7 @@
+                 "continued pause must not append ledger events after command acceptance");
+ 
+             Task<int> liveFrame = WaitForSteppedFrame(driver, TimeSpan.FromSeconds(8));
+-            await TriggerAndAwait(session, host.Presenter.TriggerBattleAdvanceForTest,
++            await TriggerAndAwait(session, host.Presenter.TriggerBattlePlayPauseForTest,
+                 s => !s.BattlePaused, "resume live battle");
+             int liveSteps = await liveFrame;
+             Assert.That(liveSteps, Is.InRange(1, BattleSessionDriver.MaxStepsPerFrame),
+@@ -169,6 +172,18 @@
+                 "terminal/return must not revive the old battle session");
+ 
+             await UnloadContentScenesAsync();
++        }
++
++        static FormationSlot[] EditedFormation(FormationSlot[] source)
++        {
++            var edited = new FormationSlot[source.Length];
++            for (var i = 0; i < source.Length; i++)
++            {
++                FormationSlot slot = source[i];
++                FormationSlot position = source.Length > 1 && i < 2 ? source[1 - i] : slot;
++                edited[i] = new FormationSlot { Unit = slot.Unit, Row = position.Row, Column = position.Column, Facing = slot.Facing };
++            }
++            return edited;
+         }
+ 
+         static async Task TriggerAndAwait(
+*** Update File: Game/Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs
+@@ -47,7 +47,6 @@
+         const string ActionFaceEncounter = "action-face-encounter";
+         const string ActionEnterResolution = "action-enter-resolution";
+         const string ActionSettle = "action-settle";
+-        const string BattleAdvance = "battle-advance";
+         const string D2BattlePlayPause = "battle-play-pause";
+         const string D2CardGeneralRecharge = "card-general-recharge";
+         const string D2CardGeneralUse = "card-general-use";
+@@ -247,7 +246,7 @@
+             Assert.That(branch.Session.LastDuplicateReceipt.Equals(branch.Session.LastReceipt), Is.True);
+             Assert.That(branch.Session.Campaign.PendingBattle, Is.Null);
+             Assert.That(branch.BattleCommands, Is.GreaterThan(0),
+-                "combat must execute real realtime simulation ticks via battle-advance");
++                "combat must execute real driver-owned realtime simulation ticks");
+             Debug.Log("CORE_LOOP_COMBAT " + branch.Summarize());
+         }
+ 
+@@ -261,11 +260,15 @@
+             var commander = surface.Session.Battle.Units.First(
+                 unit => unit.Id.Equals(surface.Session.Battle.PlayerCommanderId));
+             GridCoord before = commander.Cell;
++            string beforeSelection = RequireText(surface.Root, UiElementNames.FormationSelection).text;
+ 
+             await ClickAndAwait(surface.Session, surface.Root, D2FormationSwapFront, s =>
+                 s.LastClickedAction == D2FormationSwapFront && !s.Battle.Deployed);
+             Assert.That(commander.Cell, Is.EqualTo(before),
+                 "choosing a formation slot must not mutate Core before confirmation");
++            Assert.That(RequireText(surface.Root, UiElementNames.FormationSelection).text,
++                Is.Not.EqualTo(beforeSelection),
++                "the production Canvas must expose the pending player-selected FormationSlot values");
+             await ClickAndAwait(surface.Session, surface.Root, D2EditFormation, s => s.Battle.Deployed);
+ 
+             Assert.That(commander.Cell, Is.Not.EqualTo(before),
+@@ -362,7 +365,10 @@
+             await ClickAndAwait(session, root, UiElementNames.StationSindorim, s => s.Campaign.Node.Equals(StationId.Sindorim));
+             await ClickAndAwait(session, root, ActionFaceEncounter, s => s.Campaign.Stage == CampaignStage.Encounter);
+             await ClickAndAwait(session, root, ActionEnterResolution, s => s.Campaign.Stage == CampaignStage.Resolution);
+-            await ClickAndAwait(session, root, UiElementNames.ChoiceCombat, s => s.Battle != null && s.Battle.Deployed);
++            await ClickAndAwait(session, root, UiElementNames.ChoiceCombat, s => s.Battle != null && s.BattlePaused);
++            await ClickAndAwait(session, root, D2FormationSwapFront, s =>
++                s.LastClickedAction == D2FormationSwapFront && !s.Battle.Deployed);
++            await ClickAndAwait(session, root, D2EditFormation, s => s.Battle.Deployed);
+ 
+             FoundationLifetimeScope scope = UnityEngine.Object.FindAnyObjectByType<FoundationLifetimeScope>();
+             Assert.That(scope, Is.Not.Null, "FoundationLifetimeScope required for live driver proof");
+@@ -376,12 +382,11 @@
+                 return commander.Cell.Equals(beforeCell.Step(CardinalDirection.South))
+                     && card.RechargeTicksLeft == 600;
+             });
+-            await ClickAndAwait(session, root, BattleAdvance, s =>
+-                s.BattlePaused);
++            Assert.That(session.BattlePaused, Is.True);
+             int pausedCooldown = session.Battle.Cards.First(c => c.Id == "mobility-regroup").RechargeTicksLeft;
+ 
+             Task<int> resumedFrame = WaitForSteppedFrame(driver, TimeSpan.FromSeconds(8));
+-            await ClickAndAwait(session, root, BattleAdvance, s => !s.BattlePaused);
++            await ClickAndAwait(session, root, D2BattlePlayPause, s => !s.BattlePaused);
+             int resumedSteps = await resumedFrame;
+             Assert.That(resumedSteps, Is.InRange(1, BattleSessionDriver.MaxStepsPerFrame),
+                 "resumed production frame must consume live simulation steps");
+@@ -403,14 +408,10 @@
+             await ClickAndAwait(session, root, UiElementNames.ReturnAction, s => s.Campaign.Stage == CampaignStage.BaseReady);
+         }
+ 
+-        [UnityTest]
+-        public IEnumerator CombatUi_MobilityRoundTrip_FinalScreenEvidence()
+-        {
+-            Task scenario = CombatUi_SelectsAndPlaysMobilityCard_ThenTicksCooldown();
+-            float deadline = Time.realtimeSinceStartup + 45f;
+-            while (!scenario.IsCompleted && Time.realtimeSinceStartup < deadline) yield return null;
+-            Assert.That(scenario.IsCompleted, Is.True, "mobility roundtrip timed out before capture");
+-            if (scenario.IsFaulted) throw scenario.Exception.InnerException ?? scenario.Exception;
++        [Test]
++        public async Task CombatUi_MobilityRoundTrip_FinalScreenEvidence()
++        {
++            await CombatUi_SelectsAndPlaysMobilityCard_ThenTicksCooldown();
+ 
+             string output = Environment.GetEnvironmentVariable("JANSEON_INTEGRATION_SCREEN")
+                 ?? Path.GetFullPath(Path.Combine(Application.dataPath,
+@@ -647,7 +648,13 @@
+                 s => s.Campaign.Stage == CampaignStage.Resolution);
+             await UguiKeyboardPlayModeHelper.EnterNamedAndAwaitAsync(
+                 session, root, UiElementNames.ChoiceCombat,
+-                s => s.Battle != null && s.Battle.Outcome == BattleOutcomeKind.Ongoing);
++                s => s.Battle != null && s.BattlePaused);
++            await UguiKeyboardPlayModeHelper.EnterNamedAndAwaitAsync(
++                session, root, D2FormationSwapFront, s => s.LastClickedAction == D2FormationSwapFront);
++            await UguiKeyboardPlayModeHelper.EnterNamedAndAwaitAsync(
++                session, root, D2EditFormation, s => s.Battle.Deployed);
++            await UguiKeyboardPlayModeHelper.EnterNamedAndAwaitAsync(
++                session, root, D2BattlePlayPause, s => !s.BattlePaused);
+ 
+             BattleOutcomeKind outcome = await UguiKeyboardPlayModeHelper.FinishCombatKeyboard(session, root);
+             Assert.That(outcome, Is.EqualTo(BattleOutcomeKind.PlayerVictory)
+@@ -769,6 +776,9 @@
+                     && s.Battle != null
+                     && s.Battle.Outcome == BattleOutcomeKind.Ongoing);
+                 result.BattleContextHash = session.Campaign.PendingBattle.ContextHash;
++                await Step(D2FormationSwapFront, state => state.LastClickedAction == D2FormationSwapFront);
++                await Step(D2EditFormation, state => state.Battle.Deployed);
++                await Step(D2BattlePlayPause, state => !state.BattlePaused);
+                 BattleOutcomeKind combatOutcome =
+                     await UguiKeyboardPlayModeHelper.FinishCombatKeyboard(session, root);
+                 result.BattleCommands++;
+*** Update File: Game/Assets/Tests/PlayMode/FoundationSceneFlowTests.cs
+@@ -166,9 +166,14 @@
+             Assert.That(UguiHudBuilder.Find(hud, UiElementNames.SettlementPanel), Is.Not.Null);
+             Button negotiate = UguiHudBuilder.ButtonNamed(hud, UiElementNames.ChoiceNegotiate);
+             Assert.That(negotiate.GetComponentInChildren<UnityEngine.UI.Text>(true).text, Does.Contain("-5"));
+-            Assert.That(UguiHudBuilder.ButtonNamed(hud, "battle-move-n"), Is.Not.Null);
+-            Assert.That(UguiHudBuilder.ButtonNamed(hud, "battle-melee"), Is.Not.Null);
+-            Assert.That(UguiHudBuilder.ButtonNamed(hud, "battle-end-turn"), Is.Not.Null);
++            Assert.That(UguiHudBuilder.ButtonNamed(hud, UiElementNames.FormationSwapFront), Is.Not.Null);
++            Assert.That(UguiHudBuilder.ButtonNamed(hud, UiElementNames.EditFormation), Is.Not.Null);
++            Assert.That(UguiHudBuilder.ButtonNamed(hud, UiElementNames.CardGeneralUse), Is.Not.Null);
++            Assert.That(UguiHudBuilder.ButtonNamed(hud, UiElementNames.BattlePlayPause), Is.Not.Null);
++            Assert.That(UguiHudBuilder.Find(hud, UiElementNames.BattleMorale), Is.Not.Null);
++            Assert.That(UguiHudBuilder.Find(hud, UiElementNames.BattleReinforcementForecast), Is.Not.Null);
++            Assert.That(UguiHudBuilder.Find(hud, "battle-ap"), Is.Null);
++            Assert.That(UguiHudBuilder.Find(hud, "battle-end-turn"), Is.Null);
+ 
+             var screenTarget = new RenderTexture(640, 360, 24);
+             screenTarget.Create();
+*** Update File: Game/Assets/Tests/PlayMode/UiToolkitCapturePlayModeTests.cs
+@@ -83,15 +83,15 @@
+         yield return Capture(1280, 720, "encounter-choices", "encounter");
+         yield return Capture(1920, 1080, "encounter-choices", "encounter");
+ 
+-        yield return ClickAwait(UiElementNames.ChoiceCombat, s => s.Battle != null);
+-        int guard = 0;
+-        while (session.Battle != null && session.Battle.Outcome == BattleOutcomeKind.Ongoing && guard < 80)
+-        {
+-            guard++;
+-            yield return Click(UiElementNames.BattleAdvance);
+-        }
+-        yield return Capture(1280, 720, "battle-state", "battle");
+-        yield return Capture(1920, 1080, "battle-state", "battle");
++        yield return ClickAwait(UiElementNames.ChoiceCombat, s => s.Battle != null && s.BattlePaused);
++        yield return ClickAwait(UiElementNames.FormationSwapFront, s => s.LastClickedAction == UiElementNames.FormationSwapFront);
++        yield return ClickAwait(UiElementNames.EditFormation, s => s.Battle.Deployed);
++        yield return ClickAwait(UiElementNames.CardGeneralUse, s =>
++            Array.Find(s.Battle.Cards, card => card.Id == "encourage-morale").RechargeTicksLeft == 600);
++        yield return Capture(1280, 720, "battle-state", "battle-paused-card-recharging");
++        yield return Capture(1920, 1080, "battle-state", "battle-paused-card-recharging");
++        yield return ClickAwait(UiElementNames.BattlePlayPause, s => !s.BattlePaused);
++        yield return WaitBattleTerminal();
+ 
+         yield return ClickAwait(UiElementNames.ActionSettle, s => s.Campaign.SettlementApplied && s.LastReceipt != null);
+         yield return Capture(1280, 720, "settlement-return", "settlement");
+@@ -108,78 +108,58 @@
+ 
+     static IEnumerator LoadBootstrapAndBind()
+     {
++        var mainTitleLoaded = new SceneLoadedYield(FoundationScenes.MainTitle, 15f);
+         AsyncOperation bootstrapLoad = SceneManager.LoadSceneAsync(
+             FoundationScenes.Bootstrap,
+             LoadSceneMode.Single);
+         Assert.That(bootstrapLoad, Is.Not.Null, "Bootstrap scene load operation required");
+-        while (!bootstrapLoad.isDone)
+-        {
+-            yield return null;
+-        }
+-
+-        while (!SceneManager.GetSceneByPath(FoundationScenes.MainTitle).isLoaded)
+-        {
+-            yield return null;
+-        }
++        yield return new AsyncOperationYield(bootstrapLoad, 15f);
++        yield return mainTitleLoaded;
+ 
+         MainTitleUiHost title = UnityEngine.Object.FindAnyObjectByType<MainTitleUiHost>();
+         Assert.That(title, Is.Not.Null, "MainTitleUiHost required");
+-        while (!title.IsReady)
+-        {
+-            yield return null;
+-        }
++        yield return new TaskYield(title.Ready, 10f, "MainTitle ready");
+ 
+         AppLifetimeScope appScope = UnityEngine.Object.FindAnyObjectByType<AppLifetimeScope>();
+         Assert.That(appScope, Is.Not.Null, "AppLifetimeScope required");
+-        ApplicationFlowCoordinator coordinator =
+-            appScope.Container.Resolve<ApplicationFlowCoordinator>();
+-        while (coordinator.CurrentState != ApplicationFlowState.MainTitle)
+-        {
+-            yield return null;
+-        }
+-
++        ApplicationFlowCoordinator coordinator = appScope.Container.Resolve<ApplicationFlowCoordinator>();
++        Assert.That(coordinator.CurrentTransition, Is.Not.Null);
++        yield return new TaskYield(coordinator.CurrentTransition, 15f, "MainTitle commit");
++        Assert.That(coordinator.CurrentState, Is.EqualTo(ApplicationFlowState.MainTitle));
+         mainTitleCanvasRoot = title.CanvasRoot;
+     }
+ 
+     static IEnumerator LoadFoundationFromMainTitle()
+     {
++        var foundationLoaded = new SceneLoadedYield(FoundationScenes.Foundation, 15f);
+         Button start = UguiHudBuilder.ButtonNamed(mainTitleCanvasRoot, UiElementNames.MainTitleStart);
+         Assert.That(start, Is.Not.Null, "main-title-start missing");
+         start.onClick.Invoke();
+-        yield return null;
+-
+-        while (!SceneManager.GetSceneByPath(FoundationScenes.Foundation).isLoaded)
+-        {
+-            yield return null;
+-        }
++        yield return foundationLoaded;
+ 
+         GameplayUiHost gameplay = UnityEngine.Object.FindAnyObjectByType<GameplayUiHost>();
+         Assert.That(gameplay, Is.Not.Null, "GameplayUiHost missing after Foundation load");
+-    }
+-
++        yield return new TaskYield(gameplay.Ready, 10f, "Gameplay ready");
++        yield return new TaskYield(gameplay.CoreLoopReady, 10f, "Core loop ready");
++    }
+ 
+     static ClickYield ClickAwait(string name, Func<IPocCoreLoopSession, bool> done)
+     {
+         var button = UguiHudBuilder.ButtonNamed(canvasRoot, name);
+         Assert.That(button, Is.Not.Null, "missing " + name);
++        var completion = new ClickYield(session, done);
+         button.onClick.Invoke();
+-        return new ClickYield(session, done);
+-    }
+-
+-    static IEnumerator Click(string name)
+-    {
+-        var button = UguiHudBuilder.ButtonNamed(canvasRoot, name);
+-        Assert.That(button, Is.Not.Null, "missing " + name);
+-        button.onClick.Invoke();
+-        yield return null;
++        return completion;
++    }
++
++    static IEnumerator WaitBattleTerminal()
++    {
++        var completion = new BattleTerminalYield(session);
++        yield return completion;
+     }
+ 
+     static IEnumerator Capture(int width, int height, string kind, string state)
+     {
+-        Screen.SetResolution(width, height, FullScreenMode.Windowed);
+-        yield return null;
+-        yield return null;
+-
+         Camera camera = Camera.main != null
+             ? Camera.main
+             : (Camera.current != null ? Camera.current : UnityEngine.Object.FindAnyObjectByType<Camera>());
+@@ -205,12 +185,11 @@
+         try
+         {
+             target.Create();
++            camera.targetTexture = target;
+             canvas.renderMode = RenderMode.ScreenSpaceCamera;
+             canvas.worldCamera = camera;
+             canvas.planeDistance = Mathf.Max(camera.nearClipPlane + 0.1f, 1f);
+             Canvas.ForceUpdateCanvases();
+-
+-            camera.targetTexture = target;
+             camera.Render();
+             RenderTexture.active = target;
+             tex.ReadPixels(new Rect(0, 0, width, height), 0, 0);
+@@ -249,15 +228,20 @@
+             var sb = new StringBuilder();
+             sb.Append('{');
+             sb.Append("\"stem\": \"").Append(stem).Append("\", ");
+-            sb.Append("\"is_playing\": true, ");
++            sb.Append("\"kind\": \"").Append(kind).Append("\", ");
++            sb.Append("\"unity\": \"").Append(Application.unityVersion).Append("\", ");
+             sb.Append("\"width\": ").Append(width).Append(", ");
+             sb.Append("\"height\": ").Append(height).Append(", ");
+-            sb.Append("\"head\": \"").Append(testedHead).Append("\", ");
+-            sb.Append("\"gitHead\": \"").Append(testedHead).Append("\", ");
+-            sb.Append("\"source_fingerprint\": \"").Append(testedFingerprint).Append("\", ");
++            sb.Append("\"seed\": ").Append(Seed).Append(", ");
+             sb.Append("\"state\": \"").Append(state).Append("\", ");
+             sb.Append("\"state_hash\": \"").Append(sha, 0, 16).Append("\", ");
++            sb.Append("\"head\": \"").Append(testedHead).Append("\", ");
++            sb.Append("\"dirty_tree_fingerprint\": \"").Append(testedFingerprint).Append("\", ");
++            sb.Append("\"active_scene\": \"").Append(SceneManager.GetActiveScene().path.Replace("\\", "/")).Append("\", ");
+             sb.Append("\"uidocument_root_names\": [\"").Append(canvasRoot.name).Append("\"], ");
++            sb.Append("\"capture_api\": \"PlayMode Camera.targetTexture+Camera.Render+ReadPixels\", ");
++            sb.Append("\"is_playing\": true, ");
++            sb.Append("\"png\": \"").Append(stem).Append(".png\", ");
+             sb.Append("\"png_sha256\": \"").Append(sha).Append("\"");
+             sb.Append(" }");
+             File.WriteAllText(Path.Combine(dir, stem + ".receipt.json"), sb.ToString());
+@@ -280,6 +264,7 @@
+                 UnityEngine.Object.Destroy(temporaryCamera);
+             }
+         }
++        yield break;
+     }
+ 
+     static string RunGit(string args)
+@@ -299,30 +284,176 @@
+     }
+ }
+ 
++public sealed class SceneLoadedYield : CustomYieldInstruction
++{
++    readonly string path;
++    readonly float deadline;
++    bool complete;
++
++    public SceneLoadedYield(string path, float timeoutSeconds)
++    {
++        this.path = path;
++        deadline = Time.realtimeSinceStartup + timeoutSeconds;
++        SceneManager.sceneLoaded += OnLoaded;
++        if (SceneManager.GetSceneByPath(path).isLoaded) Complete();
++    }
++
++    void OnLoaded(Scene scene, LoadSceneMode _)
++    {
++        if (scene.path == path) Complete();
++    }
++
++    void Complete()
++    {
++        complete = true;
++        SceneManager.sceneLoaded -= OnLoaded;
++    }
++
++    public override bool keepWaiting
++    {
++        get
++        {
++            if (!complete && Time.realtimeSinceStartup >= deadline)
++            {
++                SceneManager.sceneLoaded -= OnLoaded;
++                Assert.Fail("timed out awaiting scene " + path);
++            }
++            return !complete;
++        }
++    }
++}
++
++public sealed class AsyncOperationYield : CustomYieldInstruction
++{
++    readonly AsyncOperation operation;
++    readonly float deadline;
++    bool complete;
++
++    public AsyncOperationYield(AsyncOperation operation, float timeoutSeconds)
++    {
++        this.operation = operation;
++        deadline = Time.realtimeSinceStartup + timeoutSeconds;
++        operation.completed += OnCompleted;
++        if (operation.isDone) Complete();
++    }
++
++    void OnCompleted(AsyncOperation _) => Complete();
++
++    void Complete()
++    {
++        complete = true;
++        operation.completed -= OnCompleted;
++    }
++
++    public override bool keepWaiting
++    {
++        get
++        {
++            if (!complete && Time.realtimeSinceStartup >= deadline)
++            {
++                operation.completed -= OnCompleted;
++                Assert.Fail("timed out awaiting AsyncOperation");
++            }
++            return !complete;
++        }
++    }
++}
++
++public sealed class TaskYield : CustomYieldInstruction
++{
++    readonly System.Threading.Tasks.Task task;
++    readonly float deadline;
++    readonly string label;
++    bool complete;
++
++    public TaskYield(System.Threading.Tasks.Task task, float timeoutSeconds, string label)
++    {
++        this.task = task;
++        this.label = label;
++        deadline = Time.realtimeSinceStartup + timeoutSeconds;
++        task.GetAwaiter().OnCompleted(() => complete = true);
++        if (task.IsCompleted) complete = true;
++    }
++
++    public override bool keepWaiting
++    {
++        get
++        {
++            if (!complete && Time.realtimeSinceStartup >= deadline) Assert.Fail("timed out awaiting " + label);
++            if (complete) task.GetAwaiter().GetResult();
++            return !complete;
++        }
++    }
++}
++
++public sealed class BattleTerminalYield : CustomYieldInstruction
++{
++    readonly IPocCoreLoopSession session;
++    readonly float deadline;
++    bool complete;
++
++    public BattleTerminalYield(IPocCoreLoopSession session)
++    {
++        this.session = session;
++        deadline = Time.realtimeSinceStartup + 60f;
++        session.StateChanged += OnChanged;
++        OnChanged();
++    }
++
++    void OnChanged()
++    {
++        if (session.Battle == null || session.Battle.Outcome == BattleOutcomeKind.Ongoing) return;
++        complete = true;
++        session.StateChanged -= OnChanged;
++    }
++
++    public override bool keepWaiting
++    {
++        get
++        {
++            if (!complete && Time.realtimeSinceStartup >= deadline)
++            {
++                session.StateChanged -= OnChanged;
++                Assert.Fail("timed out awaiting terminal realtime battle");
++            }
++            return !complete;
++        }
++    }
++}
++
+ public sealed class ClickYield : CustomYieldInstruction
+ {
+     readonly Func<IPocCoreLoopSession, bool> done;
+     readonly IPocCoreLoopSession session;
+-    int guard;
++    readonly float deadline;
++    bool complete;
+ 
+     public ClickYield(IPocCoreLoopSession session, Func<IPocCoreLoopSession, bool> done)
+     {
+         this.session = session;
+         this.done = done;
++        deadline = Time.realtimeSinceStartup + 8f;
++        session.StateChanged += OnChanged;
++        OnChanged();
++    }
++
++    void OnChanged()
++    {
++        if (!done(session)) return;
++        complete = true;
++        session.StateChanged -= OnChanged;
+     }
+ 
+     public override bool keepWaiting
+     {
+         get
+         {
+-            guard++;
+-            bool reached = done(session);
+-            if (reached || guard > 600)
+-            {
+-                Assert.That(reached, Is.True, "state not reached after click");
+-                return false;
+-            }
+-            return true;
+-        }
+-    }
+-}
++            if (!complete && Time.realtimeSinceStartup >= deadline)
++            {
++                session.StateChanged -= OnChanged;
++                Assert.Fail("timed out awaiting state after UI click");
++            }
++            return !complete;
++        }
++    }
++}
+*** End Patch

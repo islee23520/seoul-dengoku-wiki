@@ -1,0 +1,37 @@
+ M .omo/plans/seoul-grand-strategy-srpg.md
+ M ToDo.md
+ M docs/assets/bom/props/station-prop-bom.json
+ M docs/game-logic/Asset-Pipeline.md
+ M docs/game-logic/Unity-Architecture-Implementation-Plan.md
+ M tools/art/asset-manifest.mjs
+ M tools/art/asset-manifest.schema.json
+ M tools/art/catalog.mjs
+ M tools/art/host.mjs
+ M tools/art/intents/character-four-dir.json
+ M tools/art/intents/cinematic-maya.json
+ M tools/art/intents/poc-character-four-dir.json
+ M tools/art/intents/poc-station-prop.json
+ M tools/art/intents/poc-tile-texture.json
+ M tools/art/intents/poc-title-art.json
+ M tools/art/intents/poc-ui-concept.json
+ M tools/art/intents/poc-ui-kit.json
+ M tools/art/intents/portrait.json
+ M tools/art/intents/rights-blocked.json
+ M tools/art/pipeline-graph.mjs
+ D tools/art/station-props/blender_cleanup.py
+ D tools/art/station-props/catalog.json
+ D tools/art/station-props/generate_references.py
+ D tools/art/station-props/generate_station_props.py
+ D tools/art/station-props/job.json
+ D tools/art/station-props/launch-todo14.ps1
+ D tools/art/station-props/promote_station_props.mjs
+ D tools/art/station-props/run-todo14.bat
+ D tools/art/station-props/test-station-props.mjs
+ M tools/art/test-asset-manifest.mjs
+ M tools/art/test-pipeline-graph.mjs
+ M tools/art/test-poc-backends.mjs
+ D tools/art/test-trellis-host-contract.mjs
+ D tools/art/trellis-host-contract.mjs
+ D tools/art/trellis-host-pin.json
+?? AGENTS.md
+?? docs/Unity-Headless-Workflow.md

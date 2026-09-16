@@ -1,0 +1,112 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETStandard,Version=v2.1": {
+      "Janseon.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Janseon.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Janseon.Core.dll": {}
+        }
+      },
+      "Janseon.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Janseon.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Janseon.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Janseon.Data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Janseon.Core/1.0.0": {
+      "type": "project",
+      "path": "Janseon.Core.csproj",
+      "msbuildProject": "Janseon.Core.csproj"
+    },
+    "Janseon.Data/1.0.0": {
+      "type": "project",
+      "path": "Janseon.Data.csproj",
+      "msbuildProject": "Janseon.Data.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.1": [
+      "Janseon.Core >= 1.0.0",
+      "Janseon.Data >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/ilseoblee/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/ilseoblee/workspace/seoul-kenshi/archive/worktree-cleanup-20260914/ugui-rename-uitk-leftover-tests/Game/Janseon.Data.Editor.csproj",
+      "projectName": "Janseon.Data.Editor",
+      "projectPath": "/Users/ilseoblee/workspace/seoul-kenshi/archive/worktree-cleanup-20260914/ugui-rename-uitk-leftover-tests/Game/Janseon.Data.Editor.csproj",
+      "packagesPath": "/Users/ilseoblee/.nuget/packages/",
+      "outputPath": "/Users/ilseoblee/workspace/seoul-kenshi/archive/worktree-cleanup-20260914/ugui-rename-uitk-leftover-tests/Game/Temp/obj/Janseon.Data.Editor/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/ilseoblee/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netstandard2.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "projectReferences": {
+            "/Users/ilseoblee/workspace/seoul-kenshi/archive/worktree-cleanup-20260914/ugui-rename-uitk-leftover-tests/Game/Janseon.Core.csproj": {
+              "projectPath": "/Users/ilseoblee/workspace/seoul-kenshi/archive/worktree-cleanup-20260914/ugui-rename-uitk-leftover-tests/Game/Janseon.Core.csproj"
+            },
+            "/Users/ilseoblee/workspace/seoul-kenshi/archive/worktree-cleanup-20260914/ugui-rename-uitk-leftover-tests/Game/Janseon.Data.csproj": {
+              "projectPath": "/Users/ilseoblee/workspace/seoul-kenshi/archive/worktree-cleanup-20260914/ugui-rename-uitk-leftover-tests/Game/Janseon.Data.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "10.0.100"
+    },
+    "frameworks": {
+      "netstandard2.1": {
+        "targetAlias": "netstandard2.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

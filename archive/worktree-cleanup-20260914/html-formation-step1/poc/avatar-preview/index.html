@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Pilgrimage 방식의 방향별 픽셀 아바타를 적용한 잔선: 서울 로컬 검토용 POC"
+    />
+    <title>잔선: 서울 · 지휘관 카드 전투</title>
+    <link rel="stylesheet" href="../formation-editor/styles.css?v=windows-html-poc-20260909" />
+    <link rel="stylesheet" href="../battle-preview/styles.css?v=windows-html-poc-20260909" />
+    <link rel="stylesheet" href="./styles.css?v=portrait-card-20260909" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <p class="eyebrow">JANSEON: SEOUL / COMMANDER CARDS</p>
+          <h1>지휘관 카드 전투</h1>
+          <p class="subtitle">
+            Pilgrimage v23 atlas 방식 · 전투 병사 48명 + 지휘관 표현 12명
+          </p>
+        </div>
+        <div class="mission-state" aria-label="현재 검토 단계">
+          <span class="stage-index">03</span>
+          <span>
+            <strong>카드 → 아군 → 지면 방향</strong>
+            <small>로컬 시각 검토 전용</small>
+          </span>
+        </div>
+      </header>
+
+      <main class="workspace avatar-workspace">
+        <section class="control-section commander-card-section" aria-labelledby="commander-card-title">
+          <div class="section-title-row">
+            <h3 id="commander-card-title">지휘관 카드</h3>
+            <span class="card-owner-identity">
+              <canvas id="card-owner-portrait" width="64" height="64" aria-hidden="true"></canvas>
+              <span id="card-owner"></span>
+            </span>
+          </div>
+          <button
+            id="mobility-card-action"
+            class="commander-card"
+            type="button"
+            aria-describedby="card-owner card-feedback"
+          >
+            <svg class="card-art" viewBox="0 0 160 150" aria-hidden="true">
+              <path fill="#142b35" d="M0 0h160v150H0z"/>
+              <g fill="none" stroke="#416271" stroke-width="1">
+                <path d="M0 75 80 30l80 45-80 45zM0 105l80-45 80 45M40 0v150M80 0v150M120 0v150"/>
+                <circle cx="80" cy="79" r="53"/>
+              </g>
+              <g fill="#86bed0" stroke="#d9e6dd" stroke-width="2">
+                <path d="m30 92 12-8 12 8-12 8z"/>
+                <path d="m66 113 12-8 12 8-12 8z"/>
+                <path d="m104 92 12-8 12 8-12 8z"/>
+              </g>
+              <g fill="none" stroke="#edc96b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M42 80V64l38-22 36 22v16M80 100V44"/>
+                <path d="m66 56 14-14 14 14"/>
+              </g>
+              <path fill="#edc96b" d="m80 12 7 9-7 9-7-9z"/>
+            </svg>
+            <span class="card-command">
+              <strong>기동 재집결</strong>
+              <small>아군 분대 · 방향 한 칸</small>
+            </span>
+            <span id="mobility-card-cooldown" class="card-cooldown">
+              사용 가능
+            </span>
+            <i class="card-cooldown-track">
+              <b id="mobility-card-fill"></b>
+            </i>
+          </button>
+          <p id="card-feedback" class="card-feedback" role="status">
+            카드를 선택한 뒤 아군 분대와 이동 방향을 차례로 지정합니다.
+          </p>
+          <button id="card-cancel-action" type="button" hidden>취소 · Esc</button>
+        </section>
+
+        <section class="scene-panel" aria-labelledby="scene-title">
+          <div class="scene-heading">
+            <div>
+              <p class="section-kicker">PIXEL AVATAR ATLAS</p>
+              <h2 id="scene-title">영등포 동측 승강장 아바타 교전도</h2>
+            </div>
+            <div class="scene-specs">
+              <span>64px CELL</span>
+              <span>20 WALK · 1 IDLE</span>
+              <span>6 PROFILE · 8 DIR</span>
+            </div>
+          </div>
+
+          <div id="avatar-viewport" class="viewport avatar-viewport">
+            <div class="viewport-topline">
+              <span class="ally-legend"><i></i> 아군 병사 24 + 지휘관 6</span>
+              <span class="enemy-legend"><i></i> 적 병사 24 + 지휘관 6</span>
+            </div>
+            <div id="runtime-strip" class="runtime-strip">
+              <span id="battle-status">출격 대기</span>
+              <span id="atlas-status">8 PNG 확인 중</span>
+            </div>
+            <div id="boot-status" class="boot-status" role="status">
+              SHA 고정 아바타 atlas를 불러오는 중…
+            </div>
+            <div class="temporary-note">
+              fork SHA 고정 원격 PNG · 로컬 검토 전용 · 출시 승인 아님
+            </div>
+          </div>
+
+          <div class="scene-help">
+            <div class="camera-zoom-controls" role="group" aria-label="카메라 확대·축소">
+              <button id="zoom-out-action" type="button" aria-label="카메라 축소">−</button>
+              <output id="zoom-value" aria-label="카메라 배율" aria-live="polite">100%</output>
+              <button id="zoom-in-action" type="button" aria-label="카메라 확대">+</button>
+              <button id="zoom-reset-action" type="button" aria-label="카메라 기본 시점">기본 시점</button>
+            </div>
+            <span><kbd>휠</kbd> / <kbd>+</kbd>·<kbd>−</kbd> 확대·축소 · <kbd>0</kbd> 기본 시점</span>
+            <span><kbd>1</kbd>–<kbd>6</kbd> 분대 선택</span>
+            <span><kbd>지면 클릭</kbd> 대형 이동</span>
+            <span><kbd>적 클릭</kbd> 공격 지정</span>
+            <span><kbd>Space</kbd> 일시정지·재개</span>
+            <span><kbd>R</kbd> 초기화</span>
+          </div>
+        </section>
+
+        <aside class="command-panel avatar-command" aria-labelledby="command-title">
+          <div class="command-header">
+            <div>
+              <p class="section-kicker">BATTLE COMMAND</p>
+              <h2 id="command-title">전투 지휘</h2>
+            </div>
+            <span id="state-chip" class="lock-chip">출격 대기</span>
+          </div>
+
+          <div class="battle-actions">
+            <button id="start-action" class="button button-primary" type="button">
+              아바타 교전 시작
+            </button>
+            <button id="pause-action" class="button" type="button" disabled>
+              일시정지
+            </button>
+            <button id="reset-action" class="button button-quiet" type="button">
+              동일 seed 초기화
+            </button>
+          </div>
+
+          <section class="control-section">
+            <div class="section-title-row">
+              <h3>2. 아군 분대 선택</h3>
+              <span>6분대 · 병사 24 + 지휘관 6</span>
+            </div>
+            <div id="ally-squad-list" class="squad-list"></div>
+          </section>
+
+          <details class="avatar-inspector">
+            <summary>렌더링 검사 · 출처</summary>
+          <section class="selected-report avatar-report">
+            <div class="selected-name">
+              <span id="selected-role" class="role-badge"></span>
+              <div>
+                <small id="selected-source"></small>
+                <h3 id="selected-title"></h3>
+              </div>
+            </div>
+            <dl>
+              <div><dt>상태</dt><dd id="selected-clip"></dd></div>
+              <div><dt>방향</dt><dd id="selected-direction"></dd></div>
+              <div><dt>프레임</dt><dd id="selected-frame"></dd></div>
+              <div><dt>프로필</dt><dd id="selected-profile"></dd></div>
+              <div><dt>Foot anchor</dt><dd>32, 48.5</dd></div>
+              <div><dt>생존</dt><dd id="selected-alive"></dd></div>
+            </dl>
+          </section>
+
+          <section class="control-section">
+            <div class="section-title-row">
+              <h3>3. 실제 지원 layer</h3>
+              <span>body + shared shadow</span>
+            </div>
+            <label class="layer-toggle">
+              <input id="shadow-toggle" type="checkbox" checked />
+              <span>cast-shadow atlas 표시</span>
+            </label>
+            <label class="scale-control">
+              <span>아바타 크기</span>
+              <select id="scale-select">
+                <option value="0.85">85%</option>
+                <option value="1" selected>100%</option>
+                <option value="1.15">115%</option>
+              </select>
+            </label>
+          </section>
+
+          <section class="control-section role-map">
+            <div class="section-title-row">
+              <h3>4. POC 역할 매핑</h3>
+              <span>게임 canon 아님</span>
+            </div>
+            <dl>
+              <div><dt>근위</dt><dd>knight</dd></div>
+              <div><dt>돌격</dt><dd>peasant</dd></div>
+              <div><dt>궁수</dt><dd>friar</dd></div>
+            </dl>
+          </section>
+
+          <div id="notice" class="notice" aria-live="polite">
+            6개 프로필과 8방향 row를 실제 atlas에서 선택합니다.
+          </div>
+
+          <section class="source-box">
+            <strong>출처·권리 경계</strong>
+            <p>
+              islee23520/pilgrimage · commit
+              <code>de04a116…</code>
+            </p>
+            <p>
+              LICENSE 미선언. 사용자 승인 로컬 검토에만 사용하며 출시·승격
+              권리를 주장하지 않습니다.
+            </p>
+            <a
+              href="https://github.com/islee23520/pilgrimage/tree/de04a116bdf388cf9ecb9b9a0ad2ec79a025a139"
+              target="_blank"
+              rel="noreferrer"
+            >
+              고정 source 보기
+            </a>
+          </section>
+
+          <div class="formation-source">
+            <a href="../">POC 목록</a>
+            <a href="../battle-preview/">2단계 저폴리 화면 보기</a>
+            <a href="./SOURCE-PROVENANCE.md">상세 provenance</a>
+          </div>
+          </details>
+        </aside>
+      </main>
+
+      <footer class="disclaimer">
+        <strong>아바타 표현 검토용 POC / C# Core와 별도</strong>
+        <span>
+          지휘관 12명은 분대 중심의 표현 전용 character입니다. 전투 인원은 48명이며 Idle·Walk만 지원합니다.
+        </span>
+      </footer>
+    </div>
+
+    <script>
+      window.addEventListener("error", () => {
+        const status = document.getElementById("boot-status");
+        if (status) {
+          status.textContent =
+            "아바타 장면 로드 실패. 원격 PNG와 WebGL 상태를 확인하세요.";
+          status.classList.add("is-error");
+        }
+      });
+    </script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

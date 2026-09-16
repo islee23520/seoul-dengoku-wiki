@@ -1,0 +1,27 @@
+{
+  "name": "Janseon.Foundation.EditModeTests",
+  "rootNamespace": "Janseon.Foundation.Tests",
+  "references": [
+    "Janseon.Foundation",
+        "Unity.TextMeshPro",
+    "Janseon.Core",
+    "VContainer",
+    "VContainer.Unity"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [
+    "UNITY_INCLUDE_TESTS"
+  ],
+  "versionDefines": [],
+  "noEngineReferences": false,
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

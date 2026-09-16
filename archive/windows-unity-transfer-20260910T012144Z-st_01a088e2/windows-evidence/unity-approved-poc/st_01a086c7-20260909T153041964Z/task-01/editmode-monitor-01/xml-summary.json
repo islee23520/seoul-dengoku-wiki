@@ -1,0 +1,188 @@
+{
+    "RootResult":  "Passed",
+    "CaseCount":  44,
+    "Cases":  [
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.BattleSessionDriverTests.Driver_IsVContainerTickableEntryPoint",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.BattleSessionDriverTests.DriverRun_MatchesDirectReplay_RegardlessOfFrameTiming",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.BattleSessionDriverTests.FrameBurst_ClampsToFourStepsAndBoundsCarry",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.BattleSessionDriverTests.Pause_IsHashNeutral_AndPreservesTimeline",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.BattleSessionDriverTests.StaleEnqueue_IsRejectedWithoutBlockingTheNextDueCommand",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.BattleSessionDriverTests.TerminalStep_StopsWithinTheFrame_AndDetachesTheSession",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.BattleSessionDriverTests.TickBudget_StopsSteppingAtMaxTicks",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.BattleSessionDriverTests.TickCadence_AtThirtyHertz_AdvancesExactlyOneStepPerInterval",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeBattleSimTests.Attacks_UsePowerAndThirtyTickCooldown",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeBattleSimTests.Deploy_MapsFormationSlotsToCellsAndFacing",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeBattleSimTests.Heightmap_SnapshotFingerprintAndImpassableWater_ArePreservedInRealtimeState",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeBattleSimTests.MaxTicks_EndsAsDraw_AndRoutingCanProduceRout",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeBattleSimTests.Morale_UsesConfiguredLossRecoveryAndLockRules",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeBattleSimTests.Movement_AdvancesOneIntegerCellAfterTenTicks",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeBattleSimTests.OpenSnapshot_HasSixUnitsPerSideAndInitialMorale",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeBattleSimTests.PauseHasNoSimulationMeaning",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeBattleSimTests.RejectedCommands_DoNotMutateStateOrLedger",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeBattleSimTests.Replay_IsDeterministicForSameSetupAndCommands",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeBattleSimTests.Surrender_RequiresMoraleHpAndCoveredRetreat",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeBattleSimTests.Telegraph_ArrivesAtPlannedTickAndResolvesOccupiedCell",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeBattleSimTests.WrongTick_IsRejectedWithoutMutation",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeCardSettlementTests.CampaignBattleCardSettlementDuplicateReturn_RoundTripTranscript",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeCardSettlementTests.CampaignRoundTrip_UsesNewBattleResult",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeCardSettlementTests.CardRadius_RequiresLivingCommander_NotNearbyDeadUnit",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeCardSettlementTests.Catalog_HasSixCards_AndPreservesOriginalIds",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeCardSettlementTests.Catalog_IsStaticGrantType_NoDeckNoDraw",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeCardSettlementTests.CloneAndFingerprint_IncludeActiveModifiersRechargeAndEligibility",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeCardSettlementTests.CombatSettlement_NoPendingBattle_RejectsWithoutStateLedgerOrBookMutation",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeCardSettlementTests.CombatSettlement_OngoingBattleResult_IsRejectedWithoutMutation",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeCardSettlementTests.GuardShieldwall_ReducesActualReceivedDamageByThreeFor150Ticks_ThenExpires",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeCardSettlementTests.MobilityRegroup_InvalidDeadBlockedAndOutOfBoundsTargets_AreZeroMutation",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeCardSettlementTests.MobilityRegroup_RepositionsOneLivingPlayerUnit_AndConsumesRecharge",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeCardSettlementTests.PassageRetreat_SelectedStronghold_EnablesFriendlyRetreatPath",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeCardSettlementTests.PincerFocus_AddsOneActualOutgoingDamageFor150Ticks_ThenExpires",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeCardSettlementTests.PlayCard_OutOfCommandRadius_Fails",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeCardSettlementTests.PlayCard_RechargesOverTicks",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeCardSettlementTests.PlayCard_RejectedWhileRecharging",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeCardSettlementTests.Replay_WithDeployAndPlayCard_IsDeterministicWithoutPauseTicks",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeCardSettlementTests.Settlement_ExactOnce_SurvivesDomainSwap",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeCardSettlementTests.StrongholdCard_MustBeSelectedAtDeploy",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeCardSettlementTests.StrongholdCardSlots_LimitedToTwo",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeCardSettlementTests.StrongholdSelection_RejectsUnknownOrCharacterCardIds",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeCardSettlementTests.SupplyHeal_DoesNotReviveDownFrontUnit",
+                      "Result":  "Passed"
+                  },
+                  {
+                      "Fullname":  "Janseon.Foundation.Tests.RealtimeCardSettlementTests.ToEncounterResult_MapsRetreatSurrenderDistinctly",
+                      "Result":  "Passed"
+                  }
+              ],
+    "NameDifference":  [
+
+                       ],
+    "FailureEntries":  [
+
+                       ]
+}

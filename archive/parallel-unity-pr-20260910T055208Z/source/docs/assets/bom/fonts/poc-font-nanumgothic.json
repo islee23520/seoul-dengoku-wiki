@@ -1,0 +1,19 @@
+{
+  "id": "poc-font-nanumgothic",
+  "name": "NanumGothic",
+  "category": "ui-font",
+  "source": {
+    "type": "external",
+    "provider": "Google Fonts",
+    "url": "https://fonts.google.com/specimen/Nanum+Gothic",
+    "license": "OFL-1.1",
+    "notes": "Bundled as fallback font for UI renders"
+  },
+  "files": [
+    {
+      "path": "Game/Assets/Janseon/Foundation/UI/Fonts/NanumGothic-Regular.ttf",
+      "type": "font"
+    }
+  ],
+  "dependencies": []
+}

@@ -1,0 +1,105 @@
+✔ POC UI/station kit files exist for every exclusive asset id (0.933458ms)
+✖ each exclusive asset BOM validates and matches promoted output hash at 0¢ (0.766083ms)
+✔ promoted PNGs keep TextureImporter sidecar metas (0.399625ms)
+✖ promoted BOM validation fails closed when promoted PNG is missing (0.186833ms)
+✖ geometry, alpha, 9-slice, icon 32px and tile seam QA pass (56.18625ms)
+✖ BOM validator blocks promotion when rights or model hash is stripped (29.875167ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 2
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 122.536042
+
+✖ failing tests:
+
+test at tools/art/test-poc-ui-kit.mjs:42:1
+✖ each exclusive asset BOM validates and matches promoted output hash at 0¢ (0.766083ms)
+  AssertionError [ERR_ASSERTION]: poc-title-art: [{"code":"output_hash_mismatch","field":"output_hash"}]
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-art-todo15/tools/art/test-poc-ui-kit.mjs:47:12)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tools/art/test-poc-ui-kit.mjs:80:1
+✖ promoted BOM validation fails closed when promoted PNG is missing (0.186833ms)
+  AssertionError [ERR_ASSERTION]: [{"code":"output_hash_mismatch","field":"output_hash"}]
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-art-todo15/tools/art/test-poc-ui-kit.mjs:83:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tools/art/test-poc-ui-kit.mjs:94:1
+✖ geometry, alpha, 9-slice, icon 32px and tile seam QA pass (56.18625ms)
+  AssertionError [ERR_ASSERTION]: Traceback (most recent call last):
+    File "/Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-art-todo15/tools/art/qa-poc-ui-kit.py", line 220, in <module>
+      sys.exit(main())
+               ~~~~^^
+    File "/Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-art-todo15/tools/art/qa-poc-ui-kit.py", line 121, in main
+      title = Image.open(ART_TITLE / "poc-title-art.png")
+    File "/Users/ilseoblee/Library/Python/3.14/lib/python/site-packages/PIL/Image.py", line 3711, in open
+      raise UnidentifiedImageError(msg)
+  PIL.UnidentifiedImageError: cannot identify image file '/Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-art-todo15/Game/Assets/Janseon/Art/Title/poc-title-art.png'
+  
+  
+  1 !== 0
+  
+      at TestContext.<anonymous> (file:///Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-art-todo15/tools/art/test-poc-ui-kit.mjs:96:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tools/art/test-poc-ui-kit.mjs:105:1
+✖ BOM validator blocks promotion when rights or model hash is stripped (29.875167ms)
+  AssertionError [ERR_ASSERTION]: [{"code":"output_hash_mismatch","field":"output_hash"}]
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-art-todo15/tools/art/test-poc-ui-kit.mjs:123:10)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

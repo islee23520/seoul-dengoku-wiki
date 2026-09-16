@@ -1,0 +1,243 @@
+{
+  "version": 1,
+  "canvas": {
+    "width": 1145,
+    "height": 1374
+  },
+  "target": {
+    "path": "./v2/target.png",
+    "sha256": "c3a7e4815de6acaef28faf429395417a001bfe8088df633537c6e1a2aa9109a9"
+  },
+  "groups": {
+    "hair": {
+      "slots": [
+        "hair_back",
+        "hair"
+      ],
+      "variants": [
+        "h0",
+        "h1"
+      ]
+    },
+    "eyes": {
+      "slots": [
+        "eyes_shape",
+        "eyes_color"
+      ],
+      "variants": [
+        "e0",
+        "e1"
+      ]
+    },
+    "outfit": {
+      "slots": [
+        "clothes_back",
+        "clothes",
+        "clothes_front"
+      ],
+      "variants": [
+        "o0",
+        "o1"
+      ]
+    }
+  },
+  "defaultSelection": {
+    "hair": "h0",
+    "eyes": "e0",
+    "outfit": "o0"
+  },
+  "assets": [
+    {
+      "id": "bg",
+      "path": "v2/base/slots/bg.png",
+      "sha256": "585583e5f826640a5f589734ced1426ba71e708d8f4bdf2a8e99320405d21564",
+      "empty": false,
+      "source": "extracted"
+    },
+    {
+      "id": "clothes_back",
+      "path": "v2/base/slots/clothes_back.png",
+      "sha256": "5d7c4ab3c8d5fcda7df1758774171e03fd7adc9eebd1298afda8068470fc9284",
+      "empty": false,
+      "source": "extracted",
+      "group": "outfit",
+      "variant": "o0"
+    },
+    {
+      "id": "hair_back",
+      "path": "v2/base/slots/hair_back.png",
+      "sha256": "d3df52e9c4289355e783da99d2711069bd5ba68e0a8875a255f61a09637ad50f",
+      "empty": false,
+      "source": "extracted",
+      "group": "hair",
+      "variant": "h0"
+    },
+    {
+      "id": "face_base",
+      "path": "v2/base/slots/face_base.png",
+      "sha256": "4ab76c2a21d1bd14faba24a96a816bd7b6a64f0b39eb69bace104d70cc9ca525",
+      "empty": false,
+      "source": "extracted+hidden"
+    },
+    {
+      "id": "neck",
+      "path": "v2/base/slots/neck.png",
+      "sha256": "f26de87cd67e52c53a442b1c40c8f62b8430df37597bedeab6c617498b5a1f43",
+      "empty": true,
+      "source": "extracted"
+    },
+    {
+      "id": "cheeks",
+      "path": "v2/base/slots/cheeks.png",
+      "sha256": "f26de87cd67e52c53a442b1c40c8f62b8430df37597bedeab6c617498b5a1f43",
+      "empty": true,
+      "source": "extracted"
+    },
+    {
+      "id": "chin",
+      "path": "v2/base/slots/chin.png",
+      "sha256": "f26de87cd67e52c53a442b1c40c8f62b8430df37597bedeab6c617498b5a1f43",
+      "empty": true,
+      "source": "extracted"
+    },
+    {
+      "id": "mouth",
+      "path": "v2/base/slots/mouth.png",
+      "sha256": "2661923e501adf83049d150826538aa1e7f5cfe69ddf9f1e3987545b52fffd4d",
+      "empty": false,
+      "source": "extracted"
+    },
+    {
+      "id": "nose",
+      "path": "v2/base/slots/nose.png",
+      "sha256": "256dd1f306dedab1187232143f1243a6328f3d87911515d0eb14b2c8c01dbd88",
+      "empty": false,
+      "source": "extracted"
+    },
+    {
+      "id": "eyes_shape",
+      "path": "v2/base/slots/eyes_shape.png",
+      "sha256": "f71b44b116e906a059140cb30449805d6044e6cacab4978af54a2acee66ff504",
+      "empty": false,
+      "source": "extracted",
+      "group": "eyes",
+      "variant": "e0"
+    },
+    {
+      "id": "eyes_color",
+      "path": "v2/base/slots/eyes_color.png",
+      "sha256": "a3c9b5f3531c707b1af187ca0b435a0797791ccc79aa8385b10f4384456715d3",
+      "empty": false,
+      "source": "extracted",
+      "group": "eyes",
+      "variant": "e0"
+    },
+    {
+      "id": "ears",
+      "path": "v2/base/slots/ears.png",
+      "sha256": "d47348c0baa3c0e0cf32729226dee96e6c31d0b79dd095cda1a551093ba054d4",
+      "empty": false,
+      "source": "extracted"
+    },
+    {
+      "id": "clothes",
+      "path": "v2/base/slots/clothes.png",
+      "sha256": "2ef71258bb2a14f3e6bdeb806914f5b1e4c558dda41ba881a1c97290fd4aec3f",
+      "empty": false,
+      "source": "extracted",
+      "group": "outfit",
+      "variant": "o0"
+    },
+    {
+      "id": "hair",
+      "path": "v2/base/slots/hair.png",
+      "sha256": "7cf5e41af85951a82fc866eb8e58b7c13c4931e2627ddeaa7cd520396909637d",
+      "empty": false,
+      "source": "extracted",
+      "group": "hair",
+      "variant": "h0"
+    },
+    {
+      "id": "clothes_front",
+      "path": "v2/base/slots/clothes_front.png",
+      "sha256": "f26de87cd67e52c53a442b1c40c8f62b8430df37597bedeab6c617498b5a1f43",
+      "empty": true,
+      "source": "extracted",
+      "group": "outfit",
+      "variant": "o0"
+    },
+    {
+      "id": "hair_back",
+      "group": "hair",
+      "variant": "h1",
+      "path": "v2/variants/h1/hair_back.png",
+      "sha256": "d3df52e9c4289355e783da99d2711069bd5ba68e0a8875a255f61a09637ad50f",
+      "empty": false,
+      "source": "reused-original"
+    },
+    {
+      "id": "hair",
+      "group": "hair",
+      "variant": "h1",
+      "path": "v2/variants/h1/hair.png",
+      "sha256": "619c658b45e636856fa10b8c17c03acbde6027477ae09e8ffca6848fdf58cea5",
+      "empty": false,
+      "source": "generated+registered"
+    },
+    {
+      "id": "eyes_color",
+      "group": "eyes",
+      "variant": "e1",
+      "path": "v2/variants/e1/eyes_color.png",
+      "sha256": "4eb1092087d909052bc0ea5ef291e70223e48908325d61066e15c24c50f9b14c",
+      "empty": false,
+      "source": "generated+registered"
+    },
+    {
+      "id": "eyes_shape",
+      "group": "eyes",
+      "variant": "e1",
+      "path": "v2/variants/e1/eyes_shape.png",
+      "sha256": "cc578bc896c32189d97edcc466153703e6dcf2b9ec4c762a9b1dd2101a36d583",
+      "empty": false,
+      "source": "generated+registered"
+    },
+    {
+      "id": "clothes_back",
+      "group": "outfit",
+      "variant": "o1",
+      "path": "v2/variants/o1/clothes_back.png",
+      "sha256": "230bb6cc1ae28540020af9897e65cf8a9dce60d99aa952217de0aea5fd8df661",
+      "empty": false,
+      "source": "generated+registered"
+    },
+    {
+      "id": "clothes",
+      "group": "outfit",
+      "variant": "o1",
+      "path": "v2/variants/o1/clothes.png",
+      "sha256": "8343bda99570cb943aa799d90e0dfd723df7b165e86a142ab136cecba7beb12e",
+      "empty": false,
+      "source": "generated+registered"
+    },
+    {
+      "id": "clothes_front",
+      "group": "outfit",
+      "variant": "o1",
+      "path": "v2/variants/o1/clothes_front.png",
+      "sha256": "f26de87cd67e52c53a442b1c40c8f62b8430df37597bedeab6c617498b5a1f43",
+      "empty": true,
+      "source": "generated+registered"
+    }
+  ],
+  "fixedSlots": [
+    "bg",
+    "face_base",
+    "neck",
+    "cheeks",
+    "chin",
+    "mouth",
+    "nose",
+    "ears"
+  ]
+}

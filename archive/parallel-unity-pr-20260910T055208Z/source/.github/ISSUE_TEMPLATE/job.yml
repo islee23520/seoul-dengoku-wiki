@@ -1,0 +1,104 @@
+name: 작업 이슈
+description: 목적·비목표·정합성·품질 게이트웨이·완료 조건이 있는 잔여 작업
+title: "카테고리: "
+labels: ["gateway"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        [CONTRIBUTING.md](https://github.com/islee23520/seoul-kenshi/blob/main/CONTRIBUTING.md)의 규칙을 따릅니다.
+        게시 SoT는 `docs/game-logic`의 Cast-State·Cast-Index·Cast-Relations입니다.
+        구세대 `docs/cast-*` 일괄 merge, 이슈 #8과 같은 COMPOSITION FAIL 중복, REJECT 자동 승격은 금지입니다.
+        드롭다운은 본문에만 기록됩니다. 제출 후 같은 이름의 라벨을 이슈에 붙이십시오.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: 카테고리
+      description: 일이 걸치는 만큼 고릅니다. 제목 앞은 주 카테고리 하나입니다.
+      multiple: true
+      options:
+        - 세계관
+        - 설정
+        - 인물
+        - 사건
+        - 이야기
+        - 게임로직
+        - 게임 구현
+        - 유니티 작업
+        - 버그
+        - 에픽 구현
+        - poc
+        - 아트 파이프라인
+        - 3d
+    validations:
+      required: true
+
+  - type: dropdown
+    id: quality
+    attributes:
+      label: 품질 등급
+      description: 하나만 고릅니다.
+      options:
+        - quality:high
+        - quality:medium
+        - quality:policy
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: flags
+    attributes:
+      label: 보조
+      options:
+        - label: 구세대 조각 큐레이션 (needs-curation). 기계 병합으로 닫지 않습니다.
+        - label: 이 이슈는 다른 이슈의 승격·착지를 기다린다. 정합성에 번호를 적는다.
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: 목적
+      description: 닫혔을 때 관측 가능한 결과.
+      placeholder: 예) G07–G24 18행이 복구·재작성·폐기로 갱신되고, 없는 파일에 게시 링크가 없다.
+    validations:
+      required: true
+
+  - type: textarea
+    id: non-goals
+    attributes:
+      label: 비목표
+      description: 하지 않을 일과 이웃 이슈가 소유하는 범위.
+      placeholder: 예) G01–G06과 한 PR로 섞지 않는다. 빈 파일로 게시한 척하지 않는다.
+    validations:
+      required: true
+
+  - type: textarea
+    id: consistency
+    attributes:
+      label: 정합성
+      description: 전제 이슈, 막는 이슈, 게시 SoT와 안 겹치는 이유. 순환 의존 금지.
+      placeholder: 예) #14 정책 전제. #16의 G01–G06 이름을 덮어쓰지 않는다.
+    validations:
+      required: true
+
+  - type: textarea
+    id: gateway
+    attributes:
+      label: 품질 게이트웨이
+      description: 실행 명령과 PASS/FAIL. CONTRIBUTING.md 공통 게이트에서 해당 항만 고른다.
+      placeholder: |
+        node tools/wiki/test-build-wiki.mjs
+        종료 0. 금지 토큰 0.
+    validations:
+      required: true
+
+  - type: textarea
+    id: done
+    attributes:
+      label: 완료 조건
+      description: 체크 가능한 관측.
+      placeholder: |
+        - [ ] …
+        - [ ] wiki 테스트 GREEN
+    validations:
+      required: true

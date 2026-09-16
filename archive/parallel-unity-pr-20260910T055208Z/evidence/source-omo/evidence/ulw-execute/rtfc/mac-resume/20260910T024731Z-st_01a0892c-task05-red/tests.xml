@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="5" result="Failed(Child)" total="5" passed="1" failed="4" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-10 02:48:02Z" end-time="2026-09-10 02:48:02Z" duration="0.030067">
+  <test-suite type="TestSuite" id="1000" name="잔선: 서울" fullname="잔선: 서울" runstate="Runnable" testcasecount="153" result="Failed" site="Child" start-time="2026-09-10 02:48:02Z" end-time="2026-09-10 02:48:02Z" duration="0.030067" total="5" passed="1" failed="4" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1177" name="Janseon.Foundation.EditModeTests.dll" fullname="/Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Library/ScriptAssemblies/Janseon.Foundation.EditModeTests.dll" runstate="Runnable" testcasecount="152" result="Failed" site="Child" start-time="2026-09-10 02:48:02Z" end-time="2026-09-10 02:48:02Z" duration="0.026784" total="5" passed="1" failed="4" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="17391" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1178" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="151" result="Failed" site="Child" start-time="2026-09-10 02:48:02Z" end-time="2026-09-10 02:48:02Z" duration="0.026077" total="5" passed="1" failed="4" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1181" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="125" result="Failed" site="Child" start-time="2026-09-10 02:48:02Z" end-time="2026-09-10 02:48:02Z" duration="0.025369" total="5" passed="1" failed="4" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="1182" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="125" result="Failed" site="Child" start-time="2026-09-10 02:48:02Z" end-time="2026-09-10 02:48:02Z" duration="0.024778" total="5" passed="1" failed="4" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestFixture" id="1097" name="RealtimeCardSettlementTests" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" testcasecount="28" result="Failed" site="Child" start-time="2026-09-10 02:48:02Z" end-time="2026-09-10 02:48:02Z" duration="0.023836" total="5" passed="1" failed="4" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="1102" name="CampaignBattleCoreEntry_SubmitSnapshotReplayAndSettlement_PreservesExactOnce" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.CampaignBattleCoreEntry_SubmitSnapshotReplayAndSettlement_PreservesExactOnce" methodname="CampaignBattleCoreEntry_SubmitSnapshotReplayAndSettlement_PreservesExactOnce" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="1178872249" result="Passed" start-time="2026-09-10 02:48:02Z" end-time="2026-09-10 02:48:02Z" duration="0.014545" asserts="0">
+                <properties>
+                  <property name="Category" value="ApprovedUnityCards" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1099" name="CardPreview_IsPure_AndSubmitRevalidatesOwnerTargetOccupancyTerrainAndTick" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.CardPreview_IsPure_AndSubmitRevalidatesOwnerTargetOccupancyTerrainAndTick" methodname="CardPreview_IsPure_AndSubmitRevalidatesOwnerTargetOccupancyTerrainAndTick" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="1471811918" result="Failed" start-time="2026-09-10 02:48:02Z" end-time="2026-09-10 02:48:02Z" duration="0.002482" asserts="0">
+                <properties>
+                  <property name="Category" value="ApprovedUnityCards" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Expected: CardInvalidOwner
+  But was:  CardOutOfRadius
+]]></message>
+                  <stack-trace><![CDATA[at Janseon.Foundation.Tests.RealtimeCardSettlementTests.AssertRejectedWithoutMutation (Janseon.Core.Battle.Sim.BattleSimState state, Janseon.Core.Ledger ledger, Janseon.Core.Battle.Contracts.BattleTickCommand command, Janseon.Core.Battle.Contracts.BattleRejectReason expected) [0x000b1] in /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Tests/EditMode/RealtimeCardSettlementTests.cs:75
+at Janseon.Foundation.Tests.RealtimeCardSettlementTests.<CardPreview_IsPure_AndSubmitRevalidatesOwnerTargetOccupancyTerrainAndTick>g__AssertPreviewThenReject|14_1 (System.Action`2[T1,T2] stale, Janseon.Core.Battle.Contracts.BattleRejectReason expected) [0x00089] in /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Tests/EditMode/RealtimeCardSettlementTests.cs:217
+at Janseon.Foundation.Tests.RealtimeCardSettlementTests.CardPreview_IsPure_AndSubmitRevalidatesOwnerTargetOccupancyTerrainAndTick () [0x00006] in /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Tests/EditMode/RealtimeCardSettlementTests.cs:220
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1100" name="CardValidation_RejectsOwnerlessForeignDeadAndInvalidTarget" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.CardValidation_RejectsOwnerlessForeignDeadAndInvalidTarget" methodname="CardValidation_RejectsOwnerlessForeignDeadAndInvalidTarget" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="1349691211" result="Failed" start-time="2026-09-10 02:48:02Z" end-time="2026-09-10 02:48:02Z" duration="0.000378" asserts="0">
+                <properties>
+                  <property name="Category" value="ApprovedUnityCards" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Expected: instance of <Janseon.Core.Battle.Contracts.BattleRejection>
+  But was:  null
+]]></message>
+                  <stack-trace><![CDATA[at Janseon.Foundation.Tests.RealtimeCardSettlementTests.AssertRejectedWithoutMutation (Janseon.Core.Battle.Sim.BattleSimState state, Janseon.Core.Ledger ledger, Janseon.Core.Battle.Contracts.BattleTickCommand command, Janseon.Core.Battle.Contracts.BattleRejectReason expected) [0x000aa] in /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Tests/EditMode/RealtimeCardSettlementTests.cs:74
+at Janseon.Foundation.Tests.RealtimeCardSettlementTests.CardValidation_RejectsOwnerlessForeignDeadAndInvalidTarget () [0x0002f] in /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Tests/EditMode/RealtimeCardSettlementTests.cs:245
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1098" name="CharacterCards_AreOwnedPerUnit_WhileStrongholdCardsStayShared" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.CharacterCards_AreOwnedPerUnit_WhileStrongholdCardsStayShared" methodname="CharacterCards_AreOwnedPerUnit_WhileStrongholdCardsStayShared" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="252827483" result="Failed" start-time="2026-09-10 02:48:02Z" end-time="2026-09-10 02:48:02Z" duration="0.000298" asserts="0">
+                <properties>
+                  <property name="Category" value="ApprovedUnityCards" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Expected: null
+  But was:  <Janseon.Core.Battle.Contracts.BattleRejection>
+]]></message>
+                  <stack-trace><![CDATA[at Janseon.Foundation.Tests.RealtimeCardSettlementTests.CharacterCards_AreOwnedPerUnit_WhileStrongholdCardsStayShared () [0x00079] in /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Tests/EditMode/RealtimeCardSettlementTests.cs:166
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1101" name="CloneSnapshotFingerprintAndReplay_IncludeOwnerStateAndRejectOldOwnerlessRecords" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.CloneSnapshotFingerprintAndReplay_IncludeOwnerStateAndRejectOldOwnerlessRecords" methodname="CloneSnapshotFingerprintAndReplay_IncludeOwnerStateAndRejectOldOwnerlessRecords" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="381457351" result="Failed" start-time="2026-09-10 02:48:02Z" end-time="2026-09-10 02:48:02Z" duration="0.000353" asserts="0">
+                <properties>
+                  <property name="Category" value="ApprovedUnityCards" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Expected: "rtfc-owner-cards-v2"
+  But was:  null
+]]></message>
+                  <stack-trace><![CDATA[at Janseon.Foundation.Tests.RealtimeCardSettlementTests.CloneSnapshotFingerprintAndReplay_IncludeOwnerStateAndRejectOldOwnerlessRecords () [0x00018] in /Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Assets/Tests/EditMode/RealtimeCardSettlementTests.cs:270
+]]></stack-trace>
+                </failure>
+                <output><![CDATA[Saving results to: /Users/ilseoblee/Library/Application Support/Janseon Studio/잔선_ 서울/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

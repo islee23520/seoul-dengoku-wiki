@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="2" result="Passed" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-10 04:13:10Z" end-time="2026-09-10 04:13:10Z" duration="0.0350698">
+  <test-suite type="TestSuite" id="1000" name="잔선: 서울" fullname="잔선: 서울" runstate="Runnable" testcasecount="155" result="Passed" start-time="2026-09-10 04:13:10Z" end-time="2026-09-10 04:13:10Z" duration="0.035070" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1179" name="Janseon.Foundation.EditModeTests.dll" fullname="/Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac/Game/Library/ScriptAssemblies/Janseon.Foundation.EditModeTests.dll" runstate="Runnable" testcasecount="154" result="Passed" start-time="2026-09-10 04:13:10Z" end-time="2026-09-10 04:13:10Z" duration="0.031518" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="76204" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1180" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="153" result="Passed" start-time="2026-09-10 04:13:10Z" end-time="2026-09-10 04:13:10Z" duration="0.030491" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1183" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="127" result="Passed" start-time="2026-09-10 04:13:10Z" end-time="2026-09-10 04:13:10Z" duration="0.026217" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1184" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="127" result="Passed" start-time="2026-09-10 04:13:10Z" end-time="2026-09-10 04:13:10Z" duration="0.025395" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1053" name="BattleSessionDriverTests" fullname="Janseon.Foundation.Tests.BattleSessionDriverTests" classname="Janseon.Foundation.Tests.BattleSessionDriverTests" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-09-10 04:13:10Z" end-time="2026-09-10 04:13:10Z" duration="0.016264" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1059" name="Enqueue_OwnsRootAndNestedCommandInput_BeforeDueSubmission" fullname="Janseon.Foundation.Tests.BattleSessionDriverTests.Enqueue_OwnsRootAndNestedCommandInput_BeforeDueSubmission" methodname="Enqueue_OwnsRootAndNestedCommandInput_BeforeDueSubmission" classname="Janseon.Foundation.Tests.BattleSessionDriverTests" runstate="Runnable" seed="743364505" result="Passed" start-time="2026-09-10 04:13:10Z" end-time="2026-09-10 04:13:10Z" duration="0.010664" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1098" name="RealtimeCardSettlementTests" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" testcasecount="29" result="Passed" start-time="2026-09-10 04:13:10Z" end-time="2026-09-10 04:13:10Z" duration="0.006713" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1102" name="Submit_AcceptedCommandOwnsKind_WhenCallerMutatesBeforeStep" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.Submit_AcceptedCommandOwnsKind_WhenCallerMutatesBeforeStep" methodname="Submit_AcceptedCommandOwnsKind_WhenCallerMutatesBeforeStep" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="867290243" result="Passed" start-time="2026-09-10 04:13:10Z" end-time="2026-09-10 04:13:10Z" duration="0.001219" asserts="0">
+                <properties>
+                  <property name="Category" value="ApprovedUnityCards" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: /Users/ilseoblee/Library/Application Support/Janseon Studio/잔선_ 서울/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

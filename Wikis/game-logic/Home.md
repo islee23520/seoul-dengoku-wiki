@@ -16,6 +16,8 @@
 | 문서 | 설명 |
 |---|---|
 | [이 게임이 뭔지](Game-Thesis.md) | 어떤 인물로 시작해 무엇을 이루는 게임인지 |
+| [인물 등록 템플릿](Cast-Registration-Template.md) | 이름 있는 인물을 넣을 때 복사하는 빈 칸. 초상 없음 |
+| [기여를 시작하는 곳](../../contribute.md) | 도메인별 이슈·정본·게이트 |
 | [온라인 유저 여정](Online-User-Journey.md) | 계정·착생·공유 월드 입장부터 사망·후계까지. 캠페인 루프의 바깥 순서 |
 | [서울과 지하철 레이어](World-and-Subway-Layers.md) | 다층 세계 그래프와 데이터 출처 |
 | [월드맵을 어떻게 구성하나](World-Map-Construction.md) | 구 25·역 목록·시설을 그래프로 조립하는 순서. Unity 이동 그래프는 334역 |
@@ -31,10 +33,10 @@
 | [전쟁과 공성](Warfare-and-Sieges.md) | 접근로, 보급, 봉쇄, 철수와 점령 후 유지 |
 | [캠페인 진행과 위기](Campaign-Progression.md) | 안정화, 전문화, 긴장도, 회복과 다중 결말 |
 | [인물·세력·생업](Characters-Factions-and-Professions.md) | 관계, 직위, 정통성과 성장 |
-| [가치관과 정책 척도](Values-and-Policy-Scales.md) | 인물 10칸, 조직 가치관·정책. 1000명 생성 경로 |
+| [가치관과 정책 척도](Values-and-Policy-Scales.md) | 인물 10칸, 조직 가치관·정책. 1001명 생성 경로 |
 | [서울 십육국](Sixteen-States.md) | 총16국, 강국5·약소국11의 지리와 기반시설 |
 | [십육국 핵심 인물](Core-Characters.md) | 국가별 핵심 인물의 성격, 야망, 공포와 촉발 사건 |
-| [인물 총람](Cast-Index.md) · [관계 원장](Cast-Relations.md) | 16국 인물 412명과 인물 사이 관계 원장 |
+| [인물 총람](Cast-Index.md) · [관계 원장](Cast-Relations.md) · [무소속 인물](Cast-Unaffiliated.md) | 16국 인물 412명, 무소속 인물과 인물 사이 관계 원장 |
 | [인물 카드 계약](Cast-Profile-Contract.md) | 이름 있는 인물의 필수 칸. 출신·언어·징집·무장 접근 |
 | [본관과 항렬](Hangnyeol-and-Bon-gwan.md) · [랜덤 추가 로스터](Random-Cast-Roster.md) | 성·남·여 풀 분리, 본관 항렬, Nemotron 100명 롤 |
 | [징집 잔존과 군 장부](Conscription-Remnants.md) | 징병제 명부가 동원잔존·무기고·탈영으로 쪼개지는 방식 |

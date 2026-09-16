@@ -1,0 +1,21 @@
+{
+  "name": "seoul-kenshi",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "위키 게시기와 저장소 문서 도구.",
+  "engines": {
+    "node": ">=22 <27",
+    "npm": ">=12 <13"
+  },
+  "packageManager": "npm@12.0.2",
+  "scripts": {
+    "test": "node tools/wiki/test-build-wiki.mjs && node tools/wiki/test-core-isometric-diagrams.mjs && node tools/wiki/test-publish-wiki.mjs",
+    "wiki:publish": "node tools/wiki/publish-wiki.mjs --no-push"
+  },
+  "dependencies": {
+    "entities": "8.0.0",
+    "mdast-util-from-markdown": "2.0.3",
+    "parse5": "8.0.1"
+  }
+}

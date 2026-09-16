@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title>보급 경로와 병목의 아이소 연결</title>
+  <desc>물류와 기반 시설에서 인물의 칸, 방향, 시야가 게임 규칙에 미치는 영향을 설명하는 아이소메트릭 도표.</desc>
+  <rect width="1280" height="720" fill="#07141b"/>
+  <g font-family="Pretendard, Noto Sans KR, Apple SD Gothic Neo, Malgun Gothic, sans-serif" fill="#e8f6fa">
+    <text x="64" y="70" font-size="34" font-weight="700">물류와 기반 시설</text>
+    <text x="64" y="108" font-size="18" fill="#9ec6d2">보급 경로와 병목의 아이소 연결</text>
+    <g transform="translate(90 150)">
+      <circle cx="120" cy="200" r="48" fill="#102c36" stroke="hsl(215 70% 58%)" stroke-width="5"/>
+      <circle cx="540" cy="80" r="48" fill="#174555" stroke="#61d4db" stroke-width="5"/>
+      <circle cx="900" cy="240" r="48" fill="#102c36" stroke="#315865" stroke-width="5"/>
+      <path d="M168 200 492 80" stroke="hsl(215 70% 58%)" stroke-width="12"/>
+      <path d="M360 130 440 100" stroke="#ffffff" stroke-width="5" marker-end="url(#arrow)"/>
+      <path d="M588 80 810 210" stroke="#e94f64" stroke-width="12"/>
+      <path d="M690 150 735 210 665 205Z" fill="#e94f64"/>
+      <path d="M120 248 C 300 420 700 420 900 288" fill="none" stroke="#61d4db" stroke-width="6" stroke-dasharray="14 10"/>
+      <path d="M780 340 855 300" stroke="#ffffff" stroke-width="5" marker-end="url(#arrow)"/>
+      <circle cx="120" cy="200" r="14" fill="#f1b85b"/>
+      <text x="75" y="285" font-size="20">공급 허브</text>
+      <text x="480" y="35" font-size="20">처리량 관문</text>
+      <text x="735" y="155" font-size="20">주경로 봉쇄</text>
+      <text x="500" y="430" font-size="20">허가된 우회로</text>
+      <text x="850" y="315" font-size="20">수요 거점</text>
+    </g>
+    <text x="64" y="630" font-size="15" fill="#9ec6d2">공통 아이소 문법</text>
+    <g font-size="22" font-weight="650">
+      <text x="64" y="668">칸에 누가 서 있나</text>
+      <text x="430" y="668">어느 쪽을 보나</text>
+      <text x="780" y="668">시야</text>
+    </g>
+  </g>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#fff"/></marker></defs>
+</svg>

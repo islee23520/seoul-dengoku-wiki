@@ -1,0 +1,22 @@
+:root { color-scheme: dark; font-family: "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif; --bg:#080d14; --panel:#111a26; --well:#0b131d; --stroke:#2a3548; --text:#e6eaf0; --muted:#9aa6b2; --blue:#4d8bac; --signal:#c9a227; }
+* { box-sizing: border-box; }
+body { min-height: 100vh; margin: 0; display: grid; place-items: center; padding: 24px; background: radial-gradient(circle at 30% 0%, #1b2938, transparent 44%), var(--bg); color: var(--text); }
+main { width: min(1080px, 100%); }
+header { padding: 0 0 24px; border-bottom: 1px solid var(--stroke); }
+header p { margin: 0 0 5px; color: var(--blue); font-size: 10px; font-weight: 800; letter-spacing: .18em; }
+h1 { margin: 0; font-size: clamp(34px, 7vw, 68px); letter-spacing: -.045em; }
+header span, section p, .surface-grid span, footer { color: var(--muted); }
+.primary { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin: 24px 0 12px; padding: 22px; border: 1px solid var(--blue); background: linear-gradient(120deg, rgba(77,139,172,.17), rgba(17,26,38,.96)); }
+.primary small { color: var(--signal); font-weight: 800; letter-spacing: .15em; }
+.primary h2 { margin: 5px 0 3px; font-size: 25px; }
+.primary p { margin: 0; }
+.primary a { flex: 0 0 auto; padding: 13px 17px; border: 1px solid var(--blue); background: #234256; color: var(--text); text-decoration: none; }
+.surface-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.surface-grid a { min-height: 155px; display: flex; flex-direction: column; padding: 18px; border: 1px solid var(--stroke); background: rgba(17,26,38,.94); color: var(--text); text-decoration: none; }
+.surface-grid a:hover { border-color: var(--signal); }
+.surface-grid b { color: var(--signal); font: 24px ui-monospace, monospace; }
+.surface-grid strong { margin-top: auto; font-size: 18px; }
+.surface-grid span { margin-top: 4px; font-size: 11px; }
+footer { display: flex; justify-content: space-between; gap: 18px; margin-top: 24px; padding-top: 14px; border-top: 1px solid var(--stroke); font-size: 10px; }
+footer a { color: #70a8c7; }
+@media (max-width: 650px) { body { padding: 14px; } .primary { align-items: stretch; flex-direction: column; } .primary a { text-align: center; } .surface-grid { grid-template-columns: 1fr; } footer { flex-direction: column; } }

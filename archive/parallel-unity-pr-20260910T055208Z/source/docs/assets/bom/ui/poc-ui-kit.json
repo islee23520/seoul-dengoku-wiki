@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "asset_id": "poc-ui-kit",
+  "asset_class": "ui_kit",
+  "source": "generate",
+  "rights_status": "allowed",
+  "generation_backend": "nanobanana_gemini",
+  "provider": "google",
+  "model": "gemini-3.1-flash-image",
+  "revision": "2026-09-04",
+  "prompt": "Contact sheet of the selected POC UI kit: blank 9-slice panel, geometry-identical button states, text-free HUD icons, title crop and station tiles. No baked UI text.",
+  "prompt_hash": "20651d55a4671d02bbb050e2582caa50541fa7c14b9e926f7629c85c70e32a33",
+  "input_hashes": [
+    "f4fca481db4755b40446c5d06b657baf5c889eedf9439c347ddcefd5bfa0b8e2"
+  ],
+  "seed": 13003,
+  "cost_mode": "subscription",
+  "cost_cents": 0,
+  "raw_hash": "f4fca481db4755b40446c5d06b657baf5c889eedf9439c347ddcefd5bfa0b8e2",
+  "output_hash": "146dc1c7efcc12d352d88e4373dad99a5241dda5016044ba4ede25f97ed6c9ae",
+  "tool_versions": {
+    "unity": "6000.7.0a5",
+    "python": "3.13",
+    "node": "22.14.0",
+    "pillow": "12.2.0",
+    "cliproxy": "subscription"
+  },
+  "operations": [
+    "compose_contact_sheet",
+    "archive",
+    "human_review",
+    "bom_promotion"
+  ],
+  "unity_import_settings": {
+    "texture_type": "Sprite",
+    "sprite_mode": "Single",
+    "filter_mode": "Bilinear",
+    "alpha_is_transparency": false,
+    "wrap_mode": "Clamp",
+    "mesh_compression": "Off"
+  },
+  "review_receipts": [
+    {
+      "reviewer": "todo13-art-lead",
+      "verdict": "pass",
+      "receipt_hash": "d34514866f5905637c4fb1c9dbe8b0522098d6963740ad94efac3b49cd986236",
+      "reviewed_at": "2026-09-04T10:16:04.000Z",
+      "notes": "Machine geometry/alpha/9-slice/icon/seam QA plus human visual pass. Design.md absent on p1E; UI Toolkit binding is Todo 16 handoff."
+    }
+  ],
+  "status": "promoted",
+  "created_at": "2026-09-04T10:16:04.000Z",
+  "license": "generated-on-subscription-for-janseon-poc",
+  "look": {
+    "palette": {
+      "void": "#0B111C",
+      "panel": "#141C2A",
+      "panel_raised": "#1B2536",
+      "stroke_quiet": "#2A3548",
+      "stroke_focus": "#C9A227",
+      "text_primary": "#E6EAF0",
+      "text_secondary": "#9AA6B2",
+      "accent_line": "#3D7EA6",
+      "accent_safe": "#3F6B54",
+      "accent_talk": "#5B6B8A",
+      "accent_fight": "#8B4A3A"
+    },
+    "materials": {
+      "finish": "kit-contact-sheet",
+      "roughness": 0.8,
+      "metalness": 0.0
+    },
+    "references": [
+      {
+        "kind": "design-token",
+        "source": "Design.md#2.1"
+      },
+      {
+        "kind": "owner-html",
+        "source": ".omo/evidence/issue8-23-visual-review.html"
+      }
+    ],
+    "owner_verdict": "pending",
+    "owner_notes": "Contact sheet only. Per-element verdicts live on title, icons, and buttons."
+  }
+}

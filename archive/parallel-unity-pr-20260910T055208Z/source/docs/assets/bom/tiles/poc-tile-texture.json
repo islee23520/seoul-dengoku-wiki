@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "asset_id": "poc-tile-texture",
+  "asset_class": "tile",
+  "source": "generate",
+  "rights_status": "allowed",
+  "generation_backend": "grok_imagine",
+  "provider": "xai",
+  "model": "grok-imagine-image",
+  "revision": "2026-09-04",
+  "prompt": "Seamless repeating top-down texture of wet Seoul subway platform concrete tiles, 1.5 meter square tiles, thin grout, teal light sheen, dirt in corners, no unique landmark, no crack that only appears once, no text, no arrows, no signage, tileable. Also wall and platform variants from the same identity.",
+  "prompt_hash": "6ab0afc90e1be94e315f0a338c0c3e20e85ba8b07750eed5b875096c5b7d81ec",
+  "input_hashes": [
+    "6cce899b17ebbe84076188f13e7111f1aba4e224ee0ab5f6bba6ae09a4cd96ea"
+  ],
+  "seed": 13009,
+  "cost_mode": "subscription",
+  "cost_cents": 0,
+  "raw_hash": "6cce899b17ebbe84076188f13e7111f1aba4e224ee0ab5f6bba6ae09a4cd96ea",
+  "output_hash": "0338ad1e3258e5dccfff56f7fc4dd31877423c3f6ea8f5da147f29b10d3638df",
+  "tool_versions": {
+    "unity": "6000.7.0a5",
+    "python": "3.13",
+    "node": "22.14.0",
+    "pillow": "12.2.0",
+    "cliproxy": "subscription"
+  },
+  "operations": [
+    "generate",
+    "seamless_wrap",
+    "archive",
+    "human_review",
+    "bom_promotion"
+  ],
+  "unity_import_settings": {
+    "texture_type": "Default",
+    "filter_mode": "Bilinear",
+    "wrap_mode": "Repeat",
+    "alpha_is_transparency": false,
+    "mesh_compression": "Off"
+  },
+  "review_receipts": [
+    {
+      "reviewer": "todo13-art-lead",
+      "verdict": "pass",
+      "receipt_hash": "0cd7dfcaeaf114369e81e87199176357cc57cf7a0ba2ecb77fa4c1b4f20fcaaa",
+      "reviewed_at": "2026-09-04T10:16:04.000Z",
+      "notes": "Machine geometry/alpha/9-slice/icon/seam QA plus human visual pass. Design.md absent on p1E; UI Toolkit binding is Todo 16 handoff."
+    }
+  ],
+  "status": "promoted",
+  "created_at": "2026-09-04T10:16:04.000Z",
+  "license": "generated-on-subscription-for-janseon-poc",
+  "look": {
+    "palette": {
+      "concrete": "#2A3548",
+      "grout": "#0B111C",
+      "wet_sheen": "#3D7EA6",
+      "hazard": "#C9A227"
+    },
+    "materials": {
+      "finish": "wet-concrete",
+      "roughness": 0.7,
+      "metalness": 0.0,
+      "repeat": "seamless-1.5m",
+      "normal_strength": 0.35
+    },
+    "references": [
+      {
+        "kind": "visual-thesis",
+        "source": "Design.md#1"
+      },
+      {
+        "kind": "pipeline-material",
+        "source": "docs/game-logic/Asset-Pipeline.md"
+      },
+      {
+        "kind": "owner-html",
+        "source": ".omo/evidence/issue8-23-visual-review.html"
+      }
+    ],
+    "owner_verdict": "pending",
+    "owner_notes": "Owner accepted title/icons/buttons from the HTML review. Floor/wall/platform tiles were shown but not judged."
+  }
+}

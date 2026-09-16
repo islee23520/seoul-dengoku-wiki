@@ -1,0 +1,56 @@
+{
+  "all_negative_nonzero": true,
+  "results": [
+    {
+      "name": "economy-labor-zero-requirement",
+      "exit": 1,
+      "nonzero": true,
+      "stderr": "in:107\n    triggerUncaughtException(\n    ^\n\nAssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n0 !== 1\n\n    at file:///Users/ilseoblee/workspace/seoul-kenshi-wt/fix-validate-commit-push-wave0/tools/wiki/test-strategy-formulas.mjs:218:8 {\n  generatedMessage: true,\n  code: 'ERR_ASSERTION',\n  actual: 0,\n  expected: 1,\n  operator: 'strictEqual',\n  diff: 'simple'\n}\n\nNode.js v26.4.0\n"
+    },
+    {
+      "name": "economy-power-zero-requirement",
+      "exit": 1,
+      "nonzero": true,
+      "stderr": "in:107\n    triggerUncaughtException(\n    ^\n\nAssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n0 !== 1\n\n    at file:///Users/ilseoblee/workspace/seoul-kenshi-wt/fix-validate-commit-push-wave0/tools/wiki/test-strategy-formulas.mjs:219:8 {\n  generatedMessage: true,\n  code: 'ERR_ASSERTION',\n  actual: 0,\n  expected: 1,\n  operator: 'strictEqual',\n  diff: 'simple'\n}\n\nNode.js v26.4.0\n"
+    },
+    {
+      "name": "economy-input-empty",
+      "exit": 1,
+      "nonzero": true,
+      "stderr": "in:107\n    triggerUncaughtException(\n    ^\n\nAssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n0 !== 1\n\n    at file:///Users/ilseoblee/workspace/seoul-kenshi-wt/fix-validate-commit-push-wave0/tools/wiki/test-strategy-formulas.mjs:220:8 {\n  generatedMessage: true,\n  code: 'ERR_ASSERTION',\n  actual: 0,\n  expected: 1,\n  operator: 'strictEqual',\n  diff: 'simple'\n}\n\nNode.js v26.4.0\n"
+    },
+    {
+      "name": "economy-input-all-zero",
+      "exit": 1,
+      "nonzero": true,
+      "stderr": "in:107\n    triggerUncaughtException(\n    ^\n\nAssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n0 !== 1\n\n    at file:///Users/ilseoblee/workspace/seoul-kenshi-wt/fix-validate-commit-push-wave0/tools/wiki/test-strategy-formulas.mjs:221:8 {\n  generatedMessage: true,\n  code: 'ERR_ASSERTION',\n  actual: 0,\n  expected: 1,\n  operator: 'strictEqual',\n  diff: 'simple'\n}\n\nNode.js v26.4.0\n"
+    },
+    {
+      "name": "missing-state",
+      "exit": 1,
+      "nonzero": true,
+      "stdout_tail": "  \"lighting\": true,\n      \"mood\": true,\n      \"background\": true,\n      \"avoid\": true,\n      \"no_imitation\": true,\n      \"anti_cliche\": true,\n      \"semi_realistic\": true\n    }\n  },\n  \"pass\": false\n}\n"
+    },
+    {
+      "name": "missing-leader",
+      "exit": 1,
+      "nonzero": true
+    },
+    {
+      "name": "missing-originality",
+      "exit": 1,
+      "nonzero": true
+    },
+    {
+      "name": "semantic-reword-pass",
+      "exit": 0,
+      "nonzero": false,
+      "should_pass": true
+    },
+    {
+      "name": "malformed-json-cases",
+      "exit": 1,
+      "nonzero": true
+    }
+  ]
+}

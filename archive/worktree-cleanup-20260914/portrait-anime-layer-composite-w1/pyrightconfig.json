@@ -1,0 +1,18 @@
+{
+  "include": [
+    ".omo/evidence/portrait-retouch-20260914/build-gimp-master.py",
+    ".omo/evidence/portrait-retouch-20260914/retouch-skin.py"
+  ],
+  "exclude": [],
+  "stubPath": ".omo/evidence/portrait-retouch-20260914/typing-stubs",
+  "executionEnvironments": [
+    {
+      "root": ".omo/evidence/portrait-retouch-20260914",
+      "extraPaths": [
+        "/Applications/GIMP.app/Contents/Resources/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages"
+      ],
+      "pythonPlatform": "Darwin",
+      "pythonVersion": "3.10"
+    }
+  ]
+}

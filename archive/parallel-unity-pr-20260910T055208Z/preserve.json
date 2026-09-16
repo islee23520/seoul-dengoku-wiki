@@ -1,0 +1,257 @@
+{
+  "schema": "preserve.v1",
+  "source": "/Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac",
+  "archive": "/Users/ilseoblee/workspace/seoul-kenshi-archives/parallel-unity-pr-20260910T055208Z",
+  "head": "baaeb8a5b46404f0e866c795cf65c1f431673ca4",
+  "index_sha256": "97b7f37bd191fb8471a282b0d2ec1ef4321fecedf080523ab2f9982ddd8e6f4e",
+  "status_porcelain": [
+    " M Design.md",
+    " M Game/Assets/Janseon/Core/Battle/Contracts/BattleContracts.cs",
+    " M Game/Assets/Janseon/Core/Battle/Sim/BattleSim.cs",
+    " M Game/Assets/Janseon/Core/Battle/Sim/BattleSimState.cs",
+    " M Game/Assets/Janseon/Core/Battle/Sim/CombatRules.cs",
+    " M Game/Assets/Janseon/Core/Battle/Sim/IntentPlanner.cs",
+    " M Game/Assets/Janseon/Core/Battle/Sim/ReinforcementRules.cs",
+    " M Game/Assets/Janseon/Core/CampaignDomain.cs",
+    " M Game/Assets/Janseon/Foundation/Battle/BattleSessionDriver.cs",
+    " M Game/Assets/Janseon/Foundation/Composition/AppLifetimeScope.cs",
+    " M Game/Assets/Janseon/Foundation/UI/GameplayUiSnapshot.cs",
+    " M Game/Assets/Janseon/Foundation/UI/PocCoreLoopController.cs",
+    " M Game/Assets/Janseon/Foundation/UI/Presenters/GameplayPresenter.cs",
+    " M Game/Assets/Janseon/Foundation/UI/Presenters/GameplayUiHost.cs",
+    " M Game/Assets/Janseon/Foundation/UI/UguiHudBuilder.cs",
+    " M Game/Assets/Janseon/Foundation/UI/UguiHudView.cs",
+    " M Game/Assets/Janseon/Foundation/UI/UiElementNames.cs",
+    " M Game/Assets/Tests/EditMode/BattleSessionDriverTests.cs",
+    " M Game/Assets/Tests/EditMode/CampaignLoopTests.cs",
+    " M Game/Assets/Tests/EditMode/RealtimeBattleSimTests.cs",
+    " M Game/Assets/Tests/EditMode/RealtimeCardSettlementTests.cs",
+    " M Game/Assets/Tests/EditMode/UiToolkitScreenTests.cs",
+    " M Game/Assets/Tests/EditMode/UiToolkitVisualQaDefectTests.cs",
+    " M Game/Assets/Tests/PlayMode/BattleSessionDriverPlayModeTests.cs",
+    " M Game/Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs",
+    " M Game/Assets/Tests/PlayMode/FoundationSceneFlowTests.cs",
+    " M Game/Assets/Tests/PlayMode/UiToolkitCapturePlayModeTests.cs",
+    " M docs/assets/bom/props/station-prop-bom.json",
+    " M docs/game-logic/Realtime-Formation-Card-Battle.md",
+    " M tools/art/runtime-asset-provenance.mjs",
+    " M tools/art/test-runtime-asset-provenance.mjs"
+  ],
+  "dirty_paths": [
+    {
+      "path": "Design.md",
+      "bytes": 11545,
+      "sha256": "79c377cb249331b4b16ccb520a7aaf2a9b387cc72740878ddf1cf2b81a724942",
+      "tracked": true
+    },
+    {
+      "path": "Game/Assets/Janseon/Core/Battle/Contracts/BattleContracts.cs",
+      "bytes": 8783,
+      "sha256": "bda4d005aebd1f137adff133b78f28a1bfd30366510b5ba8016136f558d1e9a8",
+      "tracked": true
+    },
+    {
+      "path": "Game/Assets/Janseon/Core/Battle/Sim/BattleSim.cs",
+      "bytes": 25551,
+      "sha256": "4c9933783cc3259ca4ac0b2ef4e2e85bbbee8908882d38dcf28b001783944351",
+      "tracked": true
+    },
+    {
+      "path": "Game/Assets/Janseon/Core/Battle/Sim/BattleSimState.cs",
+      "bytes": 5604,
+      "sha256": "9e456dba9283f0b2bd15e8310697dca7087342612c1249013e54171135b03fd9",
+      "tracked": true
+    },
+    {
+      "path": "Game/Assets/Janseon/Core/Battle/Sim/CombatRules.cs",
+      "bytes": 3114,
+      "sha256": "4a96502911ad0681b7992b00a395f6c986a9440b9277e7f4de0fe570d42a6215",
+      "tracked": true
+    },
+    {
+      "path": "Game/Assets/Janseon/Core/Battle/Sim/IntentPlanner.cs",
+      "bytes": 7480,
+      "sha256": "f72b5853bd485b64878f8cfd9ddb9714a64dc472ee75bbfd903b8c94dbb7c8a7",
+      "tracked": true
+    },
+    {
+      "path": "Game/Assets/Janseon/Core/Battle/Sim/ReinforcementRules.cs",
+      "bytes": 2714,
+      "sha256": "6aa5e445c2cd4ffe3f72eb5ccf063e3c061649fcfbdb01daf43a80a6ce3dc024",
+      "tracked": true
+    },
+    {
+      "path": "Game/Assets/Janseon/Core/CampaignDomain.cs",
+      "bytes": 44198,
+      "sha256": "5929d0044800b1be661b823cb4d66ef8db98cda4d02130c093cd57bb453c5112",
+      "tracked": true
+    },
+    {
+      "path": "Game/Assets/Janseon/Foundation/Battle/BattleSessionDriver.cs",
+      "bytes": 5757,
+      "sha256": "913e90827f6eb00214f0e46b17fbb6d8f8648885847cedb8cc69f01576b9f245",
+      "tracked": true
+    },
+    {
+      "path": "Game/Assets/Janseon/Foundation/Composition/AppLifetimeScope.cs",
+      "bytes": 857,
+      "sha256": "584e99052c24c44719bae71acb9b2be4b75d768cea8905e20c812eda2a6d89b3",
+      "tracked": true
+    },
+    {
+      "path": "Game/Assets/Janseon/Foundation/UI/GameplayUiSnapshot.cs",
+      "bytes": 25470,
+      "sha256": "e3298d74a352219997475dc820a726c311d540129ddb38e4bbf2a100dc5387c9",
+      "tracked": true
+    },
+    {
+      "path": "Game/Assets/Janseon/Foundation/UI/PocCoreLoopController.cs",
+      "bytes": 20487,
+      "sha256": "f13e001126e77ac0ecafd6555cfe28417b7dca317375d71e6fd55fda864de2bc",
+      "tracked": true
+    },
+    {
+      "path": "Game/Assets/Janseon/Foundation/UI/Presenters/GameplayPresenter.cs",
+      "bytes": 29827,
+      "sha256": "5170e1feef75a26c5b5ea68fe010694276ce9e7a933d9f3e12b2acf6a149257e",
+      "tracked": true
+    },
+    {
+      "path": "Game/Assets/Janseon/Foundation/UI/Presenters/GameplayUiHost.cs",
+      "bytes": 6065,
+      "sha256": "e52a25d79068c06c8c2f755d753216262d84f29d6d82de0ea8c90836b8ad22ab",
+      "tracked": true
+    },
+    {
+      "path": "Game/Assets/Janseon/Foundation/UI/UguiHudBuilder.cs",
+      "bytes": 32792,
+      "sha256": "065d856910a9499c9d37bd59e7aed28a06c2185f6f269ee65ab93f21096a4b99",
+      "tracked": true
+    },
+    {
+      "path": "Game/Assets/Janseon/Foundation/UI/UguiHudView.cs",
+      "bytes": 2599,
+      "sha256": "7fc67729073b6175a00da58a86e795e45012ea2397f0c3dc4f9f9fb36066cba7",
+      "tracked": true
+    },
+    {
+      "path": "Game/Assets/Janseon/Foundation/UI/UiElementNames.cs",
+      "bytes": 5947,
+      "sha256": "974df74086916e6c40199e8d64295bba6df68bd5188285d0c9767f72ca73f286",
+      "tracked": true
+    },
+    {
+      "path": "Game/Assets/Tests/EditMode/BattleSessionDriverTests.cs",
+      "bytes": 18791,
+      "sha256": "3c18f25dea833231c6a75bac2573d6a56ec5ff1623ae594c025b519ccc7de93c",
+      "tracked": true
+    },
+    {
+      "path": "Game/Assets/Tests/EditMode/CampaignLoopTests.cs",
+      "bytes": 27939,
+      "sha256": "fc2eea2c05912e6d2be13ce011d668b53f19f34f5f89308cb3689cf0dc13c558",
+      "tracked": true
+    },
+    {
+      "path": "Game/Assets/Tests/EditMode/RealtimeBattleSimTests.cs",
+      "bytes": 33396,
+      "sha256": "1a3ec43613f8ab5b398f87b89b29d19636f247a635f93a06621b9bbe2fbe493b",
+      "tracked": true
+    },
+    {
+      "path": "Game/Assets/Tests/EditMode/RealtimeCardSettlementTests.cs",
+      "bytes": 53262,
+      "sha256": "d64e0d7e31b951301b1a506fe07fbc303cb3de7f31daabdc3aaffd1e99d6f6ae",
+      "tracked": true
+    },
+    {
+      "path": "Game/Assets/Tests/EditMode/UiToolkitScreenTests.cs",
+      "bytes": 27787,
+      "sha256": "b6346ae9a27691b336f8e3a81c7c714e7ab44f9e76af62b6fb272b275837ba1b",
+      "tracked": true
+    },
+    {
+      "path": "Game/Assets/Tests/EditMode/UiToolkitVisualQaDefectTests.cs",
+      "bytes": 20674,
+      "sha256": "7d38d1e4ad7667b224aa4d1fd5ae96316a5cbb2ff862d3f4e29ec6cf4a933d2c",
+      "tracked": true
+    },
+    {
+      "path": "Game/Assets/Tests/PlayMode/BattleSessionDriverPlayModeTests.cs",
+      "bytes": 18031,
+      "sha256": "b9ac22a4800d01b75300a2ebaefb4912aeb202253bbf5de063b99a1ba3e51e34",
+      "tracked": true
+    },
+    {
+      "path": "Game/Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs",
+      "bytes": 77073,
+      "sha256": "6d9daecb1cf164670411544f3925315b5933d15bf5c2bb7abe6af6da2d26be09",
+      "tracked": true
+    },
+    {
+      "path": "Game/Assets/Tests/PlayMode/FoundationSceneFlowTests.cs",
+      "bytes": 23343,
+      "sha256": "e2d407ee7958d0721df962aab36858715b1dd47a6576470ae15e0b91fbf7f9aa",
+      "tracked": true
+    },
+    {
+      "path": "Game/Assets/Tests/PlayMode/UiToolkitCapturePlayModeTests.cs",
+      "bytes": 19152,
+      "sha256": "1f18f83951b10a1fbc75bcbf72edde7fe28cdd362346e04079f39d6c8d26e858",
+      "tracked": true
+    },
+    {
+      "path": "docs/assets/bom/props/station-prop-bom.json",
+      "bytes": 43657,
+      "sha256": "311be588a2f325467f98d013068301130df0900c36d911f35b689ae9fc5e224e",
+      "tracked": true
+    },
+    {
+      "path": "docs/game-logic/Realtime-Formation-Card-Battle.md",
+      "bytes": 7753,
+      "sha256": "e9ec511eee2b8be35a571a046ed7cedde13cab1ad2dcddb34019406fa6c2ca5e",
+      "tracked": true
+    },
+    {
+      "path": "tools/art/runtime-asset-provenance.mjs",
+      "bytes": 23866,
+      "sha256": "148f92fe5328c49bf44b654cd96f0787a8248895ef473ffb74bd8b3f43e8b1be",
+      "tracked": true
+    },
+    {
+      "path": "tools/art/test-runtime-asset-provenance.mjs",
+      "bytes": 21742,
+      "sha256": "5878f0e5d93ffa52355cb1ada3bb4d6feabae8828d99d38751f8f4a1850eb0ed",
+      "tracked": true
+    }
+  ],
+  "tracked_worktree_binary_diff": {
+    "path": "/Users/ilseoblee/workspace/seoul-kenshi-archives/parallel-unity-pr-20260910T055208Z/tracked-working-tree.binary.patch",
+    "bytes": 258917,
+    "sha256": "4f0c1948fc86ace536c269cee5a09ab52d95e3ea1718e92cc37cf21c30d5d7a3"
+  },
+  "index_binary_diff": {
+    "path": "/Users/ilseoblee/workspace/seoul-kenshi-archives/parallel-unity-pr-20260910T055208Z/index.binary.patch",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "excluded_roots": [
+    "Library",
+    "cache",
+    "Temp",
+    "Logs"
+  ],
+  "source_copy": {
+    "file_count": 3582,
+    "archive_file_count": 3582,
+    "mismatches": []
+  },
+  "evidence": [
+    "/Users/ilseoblee/workspace/seoul-kenshi-archives/parallel-unity-pr-20260910T055208Z/evidence/st_01a089ab-task06-remaining-coverage.patch",
+    "/Users/ilseoblee/workspace/seoul-kenshi-archives/parallel-unity-pr-20260910T055208Z/evidence/source-omo",
+    "/Users/ilseoblee/workspace/seoul-kenshi-archives/parallel-unity-pr-20260910T055208Z/evidence/root-omo"
+  ],
+  "source_state_before": "/Users/ilseoblee/workspace/seoul-kenshi-archives/parallel-unity-pr-20260910T055208Z/source-state-before.txt",
+  "source_state_after": "/Users/ilseoblee/workspace/seoul-kenshi-archives/parallel-unity-pr-20260910T055208Z/source-state-after.txt",
+  "source_state_identical": true
+}

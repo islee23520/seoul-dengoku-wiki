@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="잔선: 서울 실시간 분대 전투와 일시정지 2단계 Three.js 검토용 POC"
+    />
+    <title>잔선: 서울 · 실시간 분대 전투 검토용 POC</title>
+    <link rel="stylesheet" href="../formation-editor/styles.css?v=windows-html-poc-20260909" />
+    <link rel="stylesheet" href="./styles.css?v=windows-html-poc-20260909" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <p class="eyebrow">JANSEON: SEOUL / REALTIME SQUAD REVIEW</p>
+          <h1>실시간 분대 교전</h1>
+          <p class="subtitle">
+            작은 역사 · 6개 분대 대 6개 분대 / 임시 병사 48명
+          </p>
+        </div>
+        <div class="mission-state" aria-label="현재 검토 단계">
+          <span class="stage-index">02</span>
+          <span>
+            <strong>실시간 전투·일시정지</strong>
+            <small>카드·사기·정산 없음</small>
+          </span>
+        </div>
+      </header>
+
+      <main class="workspace battle-workspace">
+        <section class="scene-panel" aria-labelledby="scene-title">
+          <div class="scene-heading">
+            <div>
+              <p class="section-kicker">고정 대형 분대 전투</p>
+              <h2 id="scene-title">영등포 동측 승강장 교전도</h2>
+            </div>
+            <div class="scene-specs" aria-label="장면 규격">
+              <span>30 TICK / SEC</span>
+              <span>MAX 4 / FRAME</span>
+              <span>12 SQUADS · 48 FIGURES</span>
+            </div>
+          </div>
+
+          <div id="battle-viewport" class="viewport battle-viewport">
+            <div class="viewport-topline">
+              <span class="ally-legend"><i></i> 아군 6분대 · 24명</span>
+              <span class="enemy-legend"><i></i> 적 6분대 · 24명</span>
+            </div>
+            <div id="runtime-strip" class="runtime-strip">
+              <span id="battle-status">출격 대기</span>
+              <span id="battle-clock">TICK 0000 · 00.0초</span>
+            </div>
+            <div id="boot-status" class="boot-status" role="status">
+              Three.js WebGL 분대 장면 준비 중…
+            </div>
+            <div class="temporary-note">
+              분대당 임시 저폴리 병사 4명 · 최종 인원 규모 아님
+            </div>
+          </div>
+
+          <div class="scene-help">
+            <span><kbd>1</kbd>–<kbd>6</kbd> 분대 선택</span>
+            <span><kbd>지면 클릭</kbd> 이동</span>
+            <span><kbd>적 클릭</kbd> 공격</span>
+            <span><kbd>Space</kbd> 일시정지·재개</span>
+            <span><kbd>H</kbd> 위치 사수</span>
+            <span><kbd>R</kbd> 초기화</span>
+          </div>
+        </section>
+
+        <aside class="command-panel battle-command" aria-labelledby="command-title">
+          <div class="command-header">
+            <div>
+              <p class="section-kicker">SQUAD COMMAND</p>
+              <h2 id="command-title">분대 지휘</h2>
+            </div>
+            <span id="state-chip" class="lock-chip">출격 대기</span>
+          </div>
+
+          <div class="battle-actions">
+            <button id="start-action" class="button button-primary">
+              교전 시작
+            </button>
+            <button id="pause-action" class="button" disabled>
+              일시정지
+            </button>
+            <button id="reset-action" class="button button-quiet">
+              전투 초기화
+            </button>
+          </div>
+
+          <section class="control-section squad-section">
+            <div class="section-title-row">
+              <h3>1. 아군 분대 선택</h3>
+              <span id="ally-count">6분대 · 24명</span>
+            </div>
+            <div id="ally-squad-list" class="squad-list"></div>
+          </section>
+
+          <section class="selected-report battle-report">
+            <div class="selected-name">
+              <span id="selected-role" class="role-badge"></span>
+              <div>
+                <small id="selected-leader"></small>
+                <h3 id="selected-title"></h3>
+              </div>
+            </div>
+            <dl>
+              <div>
+                <dt>생존</dt>
+                <dd id="selected-alive"></dd>
+              </div>
+              <div>
+                <dt>분대 HP</dt>
+                <dd id="selected-hp"></dd>
+              </div>
+              <div>
+                <dt>명령</dt>
+                <dd id="selected-order"></dd>
+              </div>
+              <div>
+                <dt>정면</dt>
+                <dd id="selected-facing"></dd>
+              </div>
+            </dl>
+            <div class="hp-track" aria-label="선택 분대 체력">
+              <span id="selected-hp-fill"></span>
+            </div>
+          </section>
+
+          <section class="control-section facing-section">
+            <div class="section-title-row">
+              <h3>2. 정면·위치 사수</h3>
+              <span>정지 중에도 명령 예약</span>
+            </div>
+            <div class="facing-actions">
+              <button type="button" data-facing="0">북</button>
+              <button type="button" data-facing="270">서</button>
+              <button id="hold-action" type="button">위치 사수</button>
+              <button type="button" data-facing="90">동</button>
+              <button type="button" data-facing="180">남</button>
+            </div>
+          </section>
+
+          <section class="control-section enemy-section">
+            <div class="section-title-row">
+              <h3>3. 적 분대 공격 지정</h3>
+              <span id="enemy-count">6분대 · 24명</span>
+            </div>
+            <div id="enemy-squad-list" class="enemy-list"></div>
+          </section>
+
+          <div id="notice" class="notice" aria-live="polite">
+            분대를 선택한 뒤 지면을 누르면 대형을 유지하며 이동합니다.
+          </div>
+
+          <section class="event-section">
+            <div class="section-title-row">
+              <h3>교전 기록</h3>
+              <span>최근 3건</span>
+            </div>
+            <ol id="event-log"></ol>
+          </section>
+
+          <div class="formation-source">
+            <span id="formation-source">승인 기본 진형</span>
+            <a href="../formation-editor/">1단계 진형 편집 보기</a>
+            <a id="campaign-return" href="../recovered-campaign/?result=reviewed" hidden>전투 검토 정산</a>
+          </div>
+        </aside>
+      </main>
+
+      <footer class="disclaimer">
+        <strong>2단계 · 실시간 분대 전투·일시정지 검토용 POC / C# Core와 별도</strong>
+        <span>
+          대형 유지 개념만 참고한 Three.js 근사 모델입니다. 카드·사기·증원·정산은 실행하지 않습니다.
+        </span>
+        <a class="poc-home-link" href="../">POC 목록</a>
+      </footer>
+    </div>
+
+    <script>
+      window.addEventListener("error", () => {
+        const status = document.getElementById("boot-status");
+        if (status) {
+          status.textContent =
+            "WebGL 분대 장면을 불러오지 못했습니다. 네트워크와 모듈 응답을 확인하세요.";
+          status.classList.add("is-error");
+        }
+      });
+    </script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

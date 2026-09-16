@@ -1,0 +1,88 @@
+--- a/Game/Assets/Tests/PlayMode/UiToolkitCapturePlayModeTests.cs
++++ b/Game/Assets/Tests/PlayMode/UiToolkitCapturePlayModeTests.cs
+@@ -55,8 +55,8 @@
+         yield return LoadBootstrapAndBind();
+ 
+         canvasRoot = mainTitleCanvasRoot;
+-        yield return Capture(1280, 720, "main-title", "idle");
+-        yield return Capture(1920, 1080, "main-title", "idle");
++        yield return Capture(1280, 720, "main-title", "main-title");
++        yield return Capture(1920, 1080, "main-title", "main-title");
+ 
+         yield return LoadFoundationFromMainTitle();
+         var gameplayHost = UnityEngine.Object.FindAnyObjectByType<GameplayUiHost>();
+@@ -68,10 +68,12 @@
+         session = gameplayHost.CoreLoop;
+         Assert.That(session, Is.Not.Null, "core loop session required");
+ 
+-        yield return ClickAwait(UiElementNames.ActionDepart, s => s.Campaign.Stage == CampaignStage.ExpeditionTravel);
+-        yield return Capture(1280, 720, "campaign-route-stage", "route");
+-        yield return Capture(1920, 1080, "campaign-route-stage", "route");
++        Assert.That(session.Campaign.Stage, Is.EqualTo(CampaignStage.BasePreparation));
++        Assert.That(session.Campaign.Node, Is.EqualTo(StationId.Yeongdeungpo));
++        yield return Capture(1280, 720, "campaign-route-stage", "route-stage");
++        yield return Capture(1920, 1080, "campaign-route-stage", "route-stage");
+ 
++        yield return ClickAwait(UiElementNames.ActionDepart, s => s.Campaign.Stage == CampaignStage.ExpeditionTravel);
+         yield return ClickAwait(UiElementNames.StationSindorim, s => s.Campaign.Node.Equals(StationId.Sindorim));
+         yield return ClickAwait(UiElementNames.ActionFaceEncounter, s => s.Campaign.Stage == CampaignStage.Encounter);
+         yield return ClickAwait(UiElementNames.ActionEnterResolution, s => s.Campaign.Stage == CampaignStage.Resolution);
+@@ -83,8 +85,8 @@
+         yield return ClickAwait(UiElementNames.EditFormation, s => s.Battle.Deployed);
+         yield return ClickAwait(UiElementNames.CardGeneralUse, s =>
+             Array.Find(s.Battle.Cards, card => card.Id == "encourage-morale").RechargeTicksLeft == 600);
+-        yield return Capture(1280, 720, "battle-state", "battle-paused-card-recharging");
+-        yield return Capture(1920, 1080, "battle-state", "battle-paused-card-recharging");
++        yield return Capture(1280, 720, "battle-state", "battle");
++        yield return Capture(1920, 1080, "battle-state", "battle");
+         yield return ClickAwait(UiElementNames.BattlePlayPause, s => !s.BattlePaused);
+         yield return WaitBattleTerminal();
+ 
+@@ -229,7 +231,7 @@
+             sb.Append("\"height\": ").Append(height).Append(", ");
+             sb.Append("\"seed\": ").Append(Seed).Append(", ");
+             sb.Append("\"state\": \"").Append(state).Append("\", ");
+-            sb.Append("\"state_hash\": \"").Append(sha, 0, 16).Append("\", ");
++            sb.Append("\"state_hash\": \"").Append(ComputeStateHash(state)).Append("\", ");
+             sb.Append("\"head\": \"").Append(testedHead).Append("\", ");
+             sb.Append("\"dirty_tree_fingerprint\": \"").Append(testedFingerprint).Append("\", ");
+             sb.Append("\"active_scene\": \"").Append(SceneManager.GetActiveScene().path.Replace("\\", "/")).Append("\", ");
+@@ -237,6 +239,8 @@
+             sb.Append("\"capture_api\": \"PlayMode Camera.targetTexture+Camera.Render+ReadPixels\", ");
+             sb.Append("\"is_playing\": true, ");
+             sb.Append("\"png\": \"").Append(stem).Append(".png\", ");
++            sb.Append("\"tested_route\": \"").Append(TestedRoute(state)).Append("\", ");
++            sb.Append("\"captured_at_utc\": \"").Append(DateTime.UtcNow.ToString("o")).Append("\", ");
+             sb.Append("\"png_sha256\": \"").Append(sha).Append("\"");
+             sb.Append(" }");
+             File.WriteAllText(Path.Combine(dir, stem + ".receipt.json"), sb.ToString());
+@@ -262,6 +266,29 @@
+         yield break;
+     }
+ 
++    static string ComputeStateHash(string state)
++    {
++        string machineState = state + "|" + SceneManager.GetActiveScene().path + "|" + testedHead + "|"
++            + testedFingerprint + "|" + (session?.CampaignHash ?? string.Empty) + "|"
++            + (session?.BattleHash ?? string.Empty) + "|" + (session?.BattlePaused.ToString() ?? string.Empty);
++        using var sha256 = System.Security.Cryptography.SHA256.Create();
++        byte[] hash = sha256.ComputeHash(Encoding.UTF8.GetBytes(machineState));
++        return BitConverter.ToString(hash).Replace("-", "").ToLowerInvariant();
++    }
++
++    static string TestedRoute(string state)
++    {
++        return state switch
++        {
++            "main-title" => "Bootstrap>MainTitle",
++            "route-stage" => "Bootstrap>MainTitle>Start>Foundation:BasePreparation@Yeongdeungpo",
++            "encounter" => "Depart>Travel:Sindorim>FaceEncounter>EnterResolution",
++            "battle" => "ChooseCombat>SwapFormation>Deploy>PlayGeneralCard:Paused",
++            "settlement" => "Resume>Terminal>Settle",
++            _ => state,
++        };
++    }
++
+     static string RunGit(string args)
+     {
+         string repoRoot = Directory.GetParent(Application.dataPath)!.Parent!.FullName;

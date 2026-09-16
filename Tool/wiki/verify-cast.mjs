@@ -198,10 +198,12 @@ export async function verifyCast(options) {
     if (text === null) continue;
     stateProfiles.push(...parseProfiles(text));
   }
+  const unaffiliatedText = await readOptional(join(docs, 'Cast-Unaffiliated.md'));
+  const unaffiliatedProfiles = parseProfiles(unaffiliatedText);
   const relationText = await readOptional(join(docs, 'Cast-Relations.md'));
   const relations = parseRelations(relationText, fail);
 
-  const roster = [...t0Profiles, ...stateProfiles];
+  const roster = [...t0Profiles, ...stateProfiles, ...unaffiliatedProfiles];
   const names = roster.map((profile) => profile.name);
   const nameSet = new Set(names);
 
@@ -295,6 +297,20 @@ export async function verifyCast(options) {
 
   for (const name of knownNames) {
     if (!nameSet.has(name)) fail('R13', `known name not in roster: ${name}`);
+  }
+
+  // R15 — 캐릭터 ID는 무소속 페이지 카드에 필수이며, 두 카드가 같은 ID로
+  // 병합되어서는 안 된다(외부 출처·동명 위험 인물의 안정 식별자).
+  const idOwners = new Map();
+  for (const profile of roster) {
+    const id = profile.fields['캐릭터 ID'];
+    if (!id) continue;
+    const owner = idOwners.get(id);
+    if (owner) fail('R15', `duplicate 캐릭터 ID ${id} on ${owner} and ${profile.name}`);
+    else idOwners.set(id, profile.name);
+  }
+  for (const profile of unaffiliatedProfiles) {
+    if (!profile.fields['캐릭터 ID']) fail('R15', `${profile.name} missing 캐릭터 ID`);
   }
 
   return { violations, roster, relations };

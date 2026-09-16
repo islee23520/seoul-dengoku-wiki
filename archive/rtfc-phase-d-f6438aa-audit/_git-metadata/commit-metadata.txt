@@ -1,0 +1,11 @@
+﻿commit f6438aa2622aef54792e994832cc611a2017d9da
+Author:     ilseob lee <lysk9884@gmail.com>
+AuthorDate: Wed Sep 9 02:05:34 2026 +0900
+Commit:     ilseob lee <lysk9884@gmail.com>
+CommitDate: Wed Sep 9 02:07:00 2026 +0900
+
+    feat(foundation): RTFC Phase D1 BattleSessionDriver 30Hz 怨좎젙 ?ㅽ뀦 援щ룞湲?    
+    - VContainer ITickable 30Hz 怨좎젙 ?ㅽ뀦 ?꾩궛湲? ?꾨젅?꾨떦 理쒕? 4??BattleSim.Step, carry 1??誘몃쭔 諛붿슫??    - ?쇱떆?뺤????쒕씪?대쾭 ?뚯쑀: Core ?곹깭/?먯옣/吏臾?遺덈?, ?뺤? 以?寃쎄낵?쒓컙? ??꾨씪??誘몄쭊??    - BattleSim.Replay ?숇벑?? (At,Seq) ?뺣젹 紐낅졊 ?뚮퉬濡??쒕씪?대쾭 援щ룞 ?ㅽ뻾??吏곸젒 由ы뵆?덉씠? ?쇱튂
+    - FoundationLifetimeScope ?쒖엫 ?깅줉 + Func<double> ?ㅼ떆媛??대윮 二쇱엯
+    - EditMode 怨꾩빟 ?뚯뒪??6醫?RED 1/5 ?ㅽ뙣 ??GREEN 6/6) + PlayMode ?뚮퉬???뚯뒪??1醫??듦낵
+    - 寃利??먮낯: docs/verification/ulw-execute/rtfc/phase-d/driver/

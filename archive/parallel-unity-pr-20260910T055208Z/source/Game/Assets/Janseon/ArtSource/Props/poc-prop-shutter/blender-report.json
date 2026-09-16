@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "codes": [],
+  "asset_id": "poc-prop-shutter",
+  "tool": "Blender 5.1.2",
+  "axis_up": "Y",
+  "axis_forward": "-Z",
+  "mesh_objects": 1,
+  "vertices": 4200,
+  "triangles": 8392,
+  "lod1_triangles": 3776,
+  "lod1_vertices": 1892,
+  "size": [
+    0.91066,
+    1.55,
+    0.05478
+  ],
+  "pivot": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "material": "Material_0",
+  "has_uv": true,
+  "outward_normals": true,
+  "duplicate_vertex_ratio": 0.0,
+  "collider": "poc-prop-shutter_collider",
+  "fbx_path": "/Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-art-todo14/Game/Assets/Janseon/ArtSource/Props/poc-prop-shutter/poc-prop-shutter.fbx",
+  "fbx_sha256": "80fed50f0a233f0143dc05c6532ade07d1db772f939e9b36aa07e5dfeb1f7038",
+  "fbx_bytes": 560252,
+  "cleaned_glb_path": "/Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-art-todo14/Game/Assets/Janseon/ArtSource/Props/poc-prop-shutter/poc-prop-shutter.cleaned.glb",
+  "cleaned_glb_sha256": "c7b423b800cf580e68fb7eb0a3f722db116c1c2f12268685a091dbb305f96305",
+  "source_glb": "/Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-art-todo14/Game/Assets/Janseon/ArtSource/Props/poc-prop-shutter/poc-prop-shutter.raw.glb",
+  "source_glb_sha256": "c89f0f14fcef1e5b4586ab3c9a3cc3e4198c6429b854c02a3a902a3412978f29",
+  "measurement_claim": "authored-tile-relative",
+  "tile_unity_units": 1.5,
+  "preview_path": "/Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-art-todo14/Game/Assets/Janseon/ArtSource/Props/poc-prop-shutter/poc-prop-shutter.blender-preview.png"
+}

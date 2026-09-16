@@ -1,0 +1,846 @@
+[
+  {
+    "record": "ASSEMBLY",
+    "core": ".omo/evidence/live-poc-check/player/Janseon_Data/Managed/Janseon.Core.dll",
+    "mvid": "8a7f8d09-2ccd-4658-89b3-18eb94d726c3"
+  },
+  {
+    "record": "ASSEMBLY",
+    "foundation": ".omo/evidence/live-poc-check/player/Janseon_Data/Managed/Janseon.Foundation.dll",
+    "mvid": "513e72f8-a123-4404-b2f8-01f69879c7fe"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "initial"
+    ],
+    "id": "poc-core-loop",
+    "stage": "BasePreparation",
+    "node": "Yeongdeungpo",
+    "tick": "0",
+    "events": "0",
+    "res": "100",
+    "rep": "0",
+    "choice": "None",
+    "result": "",
+    "rng": "seed=90421",
+    "hash": "47e1b30a784c4a4afdc154be41a5715c93051005ac0c452b3934aff1e81acb97"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "negotiate pending"
+    ],
+    "id": "poc-core-loop",
+    "stage": "Settlement",
+    "node": "Sindorim",
+    "tick": "5",
+    "events": "5",
+    "res": "100",
+    "rep": "0",
+    "choice": "Negotiate",
+    "result": "",
+    "rng": "seed=90421;3=3610609598",
+    "hash": "43ecb39b0fba0801f5061eb61299f3354303ce768aec94163290e8c0ab2a7503"
+  },
+  {
+    "record": "SETTLE",
+    "result": "result-22598d95f05d6605",
+    "battle": "",
+    "outcome": "Negotiate",
+    "receipt": "af9e5c0e886715c619a1a2c7f70c4923df2982a79326aa2890d779fc894e5be8"
+  },
+  {
+    "record": "RETRY",
+    "labels": [
+      "immediate duplicate"
+    ],
+    "result": "result-22598d95f05d6605",
+    "receipt": "af9e5c0e886715c619a1a2c7f70c4923df2982a79326aa2890d779fc894e5be8",
+    "hash": "0bcd3ee6db23ce8c11918f76281e1e55701c430b5ef91cd4c80db84b81f4378a",
+    "zeroMutation": "true"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "negotiate settled"
+    ],
+    "id": "poc-core-loop",
+    "stage": "Settlement",
+    "node": "Sindorim",
+    "tick": "6",
+    "events": "6",
+    "res": "95",
+    "rep": "3",
+    "choice": "Negotiate",
+    "result": "result-22598d95f05d6605",
+    "rng": "seed=90421;3=3610609598",
+    "hash": "0bcd3ee6db23ce8c11918f76281e1e55701c430b5ef91cd4c80db84b81f4378a"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "first return"
+    ],
+    "id": "poc-core-loop",
+    "stage": "BaseReady",
+    "node": "Yeongdeungpo",
+    "tick": "7",
+    "events": "7",
+    "res": "95",
+    "rep": "3",
+    "choice": "Negotiate",
+    "result": "result-22598d95f05d6605",
+    "rng": "seed=90421;3=3610609598",
+    "hash": "146404b34b17a828189b834049c0b4aa69870c5982c5169b254f65b5990371b9"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "second departure"
+    ],
+    "id": "poc-core-loop",
+    "stage": "ExpeditionTravel",
+    "node": "Yeongdeungpo",
+    "tick": "8",
+    "events": "8",
+    "res": "95",
+    "rep": "3",
+    "choice": "None",
+    "result": "",
+    "rng": "seed=90421;3=3610609598",
+    "hash": "d4373b2cb4e774391cb1bd0b920bcf2f719c54a8911a2a308ad16942b1c22b0e"
+  },
+  {
+    "record": "RETRY",
+    "labels": [
+      "old result on next expedition"
+    ],
+    "result": "result-22598d95f05d6605",
+    "receipt": "af9e5c0e886715c619a1a2c7f70c4923df2982a79326aa2890d779fc894e5be8",
+    "hash": "d4373b2cb4e774391cb1bd0b920bcf2f719c54a8911a2a308ad16942b1c22b0e",
+    "zeroMutation": "true"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "bypass pending"
+    ],
+    "id": "poc-core-loop",
+    "stage": "Settlement",
+    "node": "Sindorim",
+    "tick": "12",
+    "events": "12",
+    "res": "95",
+    "rep": "3",
+    "choice": "Bypass",
+    "result": "",
+    "rng": "seed=90421;3=2676817855",
+    "hash": "fff23257d43b068dfb5c7f95515ae1d874ea60b48ea8ca64f5e01ee039dbc0d6"
+  },
+  {
+    "record": "SETTLE",
+    "result": "result-b35c5a9d4d290ba6",
+    "battle": "",
+    "outcome": "Bypass",
+    "receipt": "55f3ef80a06a8191c052df2b18a54d72216c522f729e4ffb9e78423f4057483c"
+  },
+  {
+    "record": "RETRY",
+    "labels": [
+      "immediate duplicate"
+    ],
+    "result": "result-b35c5a9d4d290ba6",
+    "receipt": "55f3ef80a06a8191c052df2b18a54d72216c522f729e4ffb9e78423f4057483c",
+    "hash": "d6d43fa18f17df4205021626aafcfbe74983a3566538e373d91d1aa41237f76d",
+    "zeroMutation": "true"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "bypass settled"
+    ],
+    "id": "poc-core-loop",
+    "stage": "Settlement",
+    "node": "Sindorim",
+    "tick": "13",
+    "events": "13",
+    "res": "93",
+    "rep": "2",
+    "choice": "Bypass",
+    "result": "result-b35c5a9d4d290ba6",
+    "rng": "seed=90421;3=2676817855",
+    "hash": "d6d43fa18f17df4205021626aafcfbe74983a3566538e373d91d1aa41237f76d"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "second return"
+    ],
+    "id": "poc-core-loop",
+    "stage": "BaseReady",
+    "node": "Yeongdeungpo",
+    "tick": "14",
+    "events": "14",
+    "res": "93",
+    "rep": "2",
+    "choice": "Bypass",
+    "result": "result-b35c5a9d4d290ba6",
+    "rng": "seed=90421;3=2676817855",
+    "hash": "0597d54167e07e2cdd1221d0543147a476705260953dccc5be0d5d9f3c44f095"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "third resolution"
+    ],
+    "id": "poc-core-loop",
+    "stage": "Resolution",
+    "node": "Sindorim",
+    "tick": "18",
+    "events": "18",
+    "res": "93",
+    "rep": "2",
+    "choice": "None",
+    "result": "",
+    "rng": "seed=90421;3=253292482",
+    "hash": "66102a46af5a8d60a12cb3e29240e127d78735a2cb306c09e5ae36991a83c1d1"
+  },
+  {
+    "record": "BATTLE_OPEN",
+    "campaign": "poc-core-loop",
+    "battle": "battle-423b12c00650db5d",
+    "ctx": "423b12c00650db5ded0cc173d378d9fe67a08549ca61bdc7c7b2d0d627d5405d",
+    "worldTick": "18",
+    "res": "93",
+    "rep": "2",
+    "active": "ally-0",
+    "allyHp": "10",
+    "foeHp": "10"
+  },
+  {
+    "record": "BATTLE_END",
+    "outcome": "PlayerVictory",
+    "commands": "11",
+    "battleTick": "11",
+    "worldTick": "19",
+    "allyHp": "7",
+    "foeHp": "0",
+    "resultHash": "5ae4692aa64a566597883de9f10d5bb6443a6c81a3351f8e67bb046733f7b34d"
+  },
+  {
+    "record": "SETTLE",
+    "result": "result-5ae4692aa64a5665",
+    "battle": "battle-423b12c00650db5d",
+    "outcome": "PlayerVictory",
+    "receipt": "ac3c5b7bc6261c44a2582bf3cdd7f1e1023585bd9133954eece491dd9d38d6f8"
+  },
+  {
+    "record": "RETRY",
+    "labels": [
+      "immediate duplicate"
+    ],
+    "result": "result-5ae4692aa64a5665",
+    "receipt": "ac3c5b7bc6261c44a2582bf3cdd7f1e1023585bd9133954eece491dd9d38d6f8",
+    "hash": "dfff63e4cc145a99a5fbba068b34d40b3b90da3cf3b1eadc38df2791c0a80542",
+    "zeroMutation": "true"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "victory settled"
+    ],
+    "id": "poc-core-loop",
+    "stage": "Settlement",
+    "node": "Sindorim",
+    "tick": "20",
+    "events": "20",
+    "res": "103",
+    "rep": "7",
+    "choice": "Combat",
+    "result": "result-5ae4692aa64a5665",
+    "rng": "seed=90421;3=253292482",
+    "hash": "dfff63e4cc145a99a5fbba068b34d40b3b90da3cf3b1eadc38df2791c0a80542"
+  },
+  {
+    "record": "CONFLICT",
+    "type": "SettlementConflict",
+    "zeroMutation": "true"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "third return"
+    ],
+    "id": "poc-core-loop",
+    "stage": "BaseReady",
+    "node": "Yeongdeungpo",
+    "tick": "21",
+    "events": "21",
+    "res": "103",
+    "rep": "7",
+    "choice": "Combat",
+    "result": "result-5ae4692aa64a5665",
+    "rng": "seed=90421;3=253292482",
+    "hash": "3947c0425ee3d8d18e81c257eedd6b45909fa2d6b1dd251c471cc633880b4785"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "fourth resolution"
+    ],
+    "id": "poc-core-loop",
+    "stage": "Resolution",
+    "node": "Sindorim",
+    "tick": "25",
+    "events": "25",
+    "res": "103",
+    "rep": "7",
+    "choice": "None",
+    "result": "",
+    "rng": "seed=90421;3=1324642546",
+    "hash": "8663c5febfa9f45c51d8b56983589217a6298cfd7aa3999cdbc59430ba9624ec"
+  },
+  {
+    "record": "BATTLE_OPEN",
+    "campaign": "poc-core-loop",
+    "battle": "battle-f43a76b879c619e6",
+    "ctx": "f43a76b879c619e60f8ba70edd30c628949b9446c1c02a17381ebc1c7fb6b25d",
+    "worldTick": "25",
+    "res": "103",
+    "rep": "7",
+    "active": "ally-0",
+    "allyHp": "10",
+    "foeHp": "10"
+  },
+  {
+    "record": "BATTLE_END",
+    "outcome": "EnemyVictory",
+    "commands": "12",
+    "battleTick": "12",
+    "worldTick": "26",
+    "allyHp": "0",
+    "foeHp": "7",
+    "resultHash": "e1273dbd70e3f243cc0090377541cd5de36a6c62dfcd897f87249e05109b948c"
+  },
+  {
+    "record": "SETTLE",
+    "result": "result-e1273dbd70e3f243",
+    "battle": "battle-f43a76b879c619e6",
+    "outcome": "EnemyVictory",
+    "receipt": "a44dc2bdb48fdecbf2039ddcb086c9d7f6ae6735b3def31500fbe47d7b0a63b1"
+  },
+  {
+    "record": "RETRY",
+    "labels": [
+      "immediate duplicate"
+    ],
+    "result": "result-e1273dbd70e3f243",
+    "receipt": "a44dc2bdb48fdecbf2039ddcb086c9d7f6ae6735b3def31500fbe47d7b0a63b1",
+    "hash": "102e98f91083a9be812f85a6a1dfa51c404aa9808deafe28483a0bb3410d4bb5",
+    "zeroMutation": "true"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "defeat settled"
+    ],
+    "id": "poc-core-loop",
+    "stage": "Settlement",
+    "node": "Sindorim",
+    "tick": "27",
+    "events": "27",
+    "res": "88",
+    "rep": "2",
+    "choice": "Combat",
+    "result": "result-e1273dbd70e3f243",
+    "rng": "seed=90421;3=1324642546",
+    "hash": "102e98f91083a9be812f85a6a1dfa51c404aa9808deafe28483a0bb3410d4bb5"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "fourth return"
+    ],
+    "id": "poc-core-loop",
+    "stage": "BaseReady",
+    "node": "Yeongdeungpo",
+    "tick": "28",
+    "events": "28",
+    "res": "88",
+    "rep": "2",
+    "choice": "Combat",
+    "result": "result-e1273dbd70e3f243",
+    "rng": "seed=90421;3=1324642546",
+    "hash": "c5d0171dfebedbb56c9522d46f9fb8209b7efdc34f3ae37e89d06c615c624d93"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "fifth departure"
+    ],
+    "id": "poc-core-loop",
+    "stage": "ExpeditionTravel",
+    "node": "Yeongdeungpo",
+    "tick": "29",
+    "events": "29",
+    "res": "88",
+    "rep": "2",
+    "choice": "None",
+    "result": "",
+    "rng": "seed=90421;3=1324642546",
+    "hash": "bda1c7e8447ee347fefb03e31b81a7a8e1f14b5f783f44aa333b52222aaf8b88"
+  },
+  {
+    "record": "RETRY",
+    "labels": [
+      "first result after four expeditions"
+    ],
+    "result": "result-22598d95f05d6605",
+    "receipt": "af9e5c0e886715c619a1a2c7f70c4923df2982a79326aa2890d779fc894e5be8",
+    "hash": "bda1c7e8447ee347fefb03e31b81a7a8e1f14b5f783f44aa333b52222aaf8b88",
+    "zeroMutation": "true"
+  },
+  {
+    "record": "RESET_CHARACTERIZATION",
+    "sameCampaignId": "true",
+    "resources": "100",
+    "reputation": "0",
+    "tick": "0",
+    "newStartOnly": "true"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "initial"
+    ],
+    "id": "poc-core-loop",
+    "stage": "BasePreparation",
+    "node": "Yeongdeungpo",
+    "tick": "0",
+    "events": "0",
+    "res": "100",
+    "rep": "0",
+    "choice": "None",
+    "result": "",
+    "rng": "seed=90421",
+    "hash": "47e1b30a784c4a4afdc154be41a5715c93051005ac0c452b3934aff1e81acb97"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "negotiate pending"
+    ],
+    "id": "poc-core-loop",
+    "stage": "Settlement",
+    "node": "Sindorim",
+    "tick": "5",
+    "events": "5",
+    "res": "100",
+    "rep": "0",
+    "choice": "Negotiate",
+    "result": "",
+    "rng": "seed=90421;3=3610609598",
+    "hash": "43ecb39b0fba0801f5061eb61299f3354303ce768aec94163290e8c0ab2a7503"
+  },
+  {
+    "record": "SETTLE",
+    "result": "result-22598d95f05d6605",
+    "battle": "",
+    "outcome": "Negotiate",
+    "receipt": "af9e5c0e886715c619a1a2c7f70c4923df2982a79326aa2890d779fc894e5be8"
+  },
+  {
+    "record": "RETRY",
+    "labels": [
+      "immediate duplicate"
+    ],
+    "result": "result-22598d95f05d6605",
+    "receipt": "af9e5c0e886715c619a1a2c7f70c4923df2982a79326aa2890d779fc894e5be8",
+    "hash": "0bcd3ee6db23ce8c11918f76281e1e55701c430b5ef91cd4c80db84b81f4378a",
+    "zeroMutation": "true"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "negotiate settled"
+    ],
+    "id": "poc-core-loop",
+    "stage": "Settlement",
+    "node": "Sindorim",
+    "tick": "6",
+    "events": "6",
+    "res": "95",
+    "rep": "3",
+    "choice": "Negotiate",
+    "result": "result-22598d95f05d6605",
+    "rng": "seed=90421;3=3610609598",
+    "hash": "0bcd3ee6db23ce8c11918f76281e1e55701c430b5ef91cd4c80db84b81f4378a"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "first return"
+    ],
+    "id": "poc-core-loop",
+    "stage": "BaseReady",
+    "node": "Yeongdeungpo",
+    "tick": "7",
+    "events": "7",
+    "res": "95",
+    "rep": "3",
+    "choice": "Negotiate",
+    "result": "result-22598d95f05d6605",
+    "rng": "seed=90421;3=3610609598",
+    "hash": "146404b34b17a828189b834049c0b4aa69870c5982c5169b254f65b5990371b9"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "second departure"
+    ],
+    "id": "poc-core-loop",
+    "stage": "ExpeditionTravel",
+    "node": "Yeongdeungpo",
+    "tick": "8",
+    "events": "8",
+    "res": "95",
+    "rep": "3",
+    "choice": "None",
+    "result": "",
+    "rng": "seed=90421;3=3610609598",
+    "hash": "d4373b2cb4e774391cb1bd0b920bcf2f719c54a8911a2a308ad16942b1c22b0e"
+  },
+  {
+    "record": "RETRY",
+    "labels": [
+      "old result on next expedition"
+    ],
+    "result": "result-22598d95f05d6605",
+    "receipt": "af9e5c0e886715c619a1a2c7f70c4923df2982a79326aa2890d779fc894e5be8",
+    "hash": "d4373b2cb4e774391cb1bd0b920bcf2f719c54a8911a2a308ad16942b1c22b0e",
+    "zeroMutation": "true"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "bypass pending"
+    ],
+    "id": "poc-core-loop",
+    "stage": "Settlement",
+    "node": "Sindorim",
+    "tick": "12",
+    "events": "12",
+    "res": "95",
+    "rep": "3",
+    "choice": "Bypass",
+    "result": "",
+    "rng": "seed=90421;3=2676817855",
+    "hash": "fff23257d43b068dfb5c7f95515ae1d874ea60b48ea8ca64f5e01ee039dbc0d6"
+  },
+  {
+    "record": "SETTLE",
+    "result": "result-b35c5a9d4d290ba6",
+    "battle": "",
+    "outcome": "Bypass",
+    "receipt": "55f3ef80a06a8191c052df2b18a54d72216c522f729e4ffb9e78423f4057483c"
+  },
+  {
+    "record": "RETRY",
+    "labels": [
+      "immediate duplicate"
+    ],
+    "result": "result-b35c5a9d4d290ba6",
+    "receipt": "55f3ef80a06a8191c052df2b18a54d72216c522f729e4ffb9e78423f4057483c",
+    "hash": "d6d43fa18f17df4205021626aafcfbe74983a3566538e373d91d1aa41237f76d",
+    "zeroMutation": "true"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "bypass settled"
+    ],
+    "id": "poc-core-loop",
+    "stage": "Settlement",
+    "node": "Sindorim",
+    "tick": "13",
+    "events": "13",
+    "res": "93",
+    "rep": "2",
+    "choice": "Bypass",
+    "result": "result-b35c5a9d4d290ba6",
+    "rng": "seed=90421;3=2676817855",
+    "hash": "d6d43fa18f17df4205021626aafcfbe74983a3566538e373d91d1aa41237f76d"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "second return"
+    ],
+    "id": "poc-core-loop",
+    "stage": "BaseReady",
+    "node": "Yeongdeungpo",
+    "tick": "14",
+    "events": "14",
+    "res": "93",
+    "rep": "2",
+    "choice": "Bypass",
+    "result": "result-b35c5a9d4d290ba6",
+    "rng": "seed=90421;3=2676817855",
+    "hash": "0597d54167e07e2cdd1221d0543147a476705260953dccc5be0d5d9f3c44f095"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "third resolution"
+    ],
+    "id": "poc-core-loop",
+    "stage": "Resolution",
+    "node": "Sindorim",
+    "tick": "18",
+    "events": "18",
+    "res": "93",
+    "rep": "2",
+    "choice": "None",
+    "result": "",
+    "rng": "seed=90421;3=253292482",
+    "hash": "66102a46af5a8d60a12cb3e29240e127d78735a2cb306c09e5ae36991a83c1d1"
+  },
+  {
+    "record": "BATTLE_OPEN",
+    "campaign": "poc-core-loop",
+    "battle": "battle-423b12c00650db5d",
+    "ctx": "423b12c00650db5ded0cc173d378d9fe67a08549ca61bdc7c7b2d0d627d5405d",
+    "worldTick": "18",
+    "res": "93",
+    "rep": "2",
+    "active": "ally-0",
+    "allyHp": "10",
+    "foeHp": "10"
+  },
+  {
+    "record": "BATTLE_END",
+    "outcome": "PlayerVictory",
+    "commands": "11",
+    "battleTick": "11",
+    "worldTick": "19",
+    "allyHp": "7",
+    "foeHp": "0",
+    "resultHash": "5ae4692aa64a566597883de9f10d5bb6443a6c81a3351f8e67bb046733f7b34d"
+  },
+  {
+    "record": "SETTLE",
+    "result": "result-5ae4692aa64a5665",
+    "battle": "battle-423b12c00650db5d",
+    "outcome": "PlayerVictory",
+    "receipt": "ac3c5b7bc6261c44a2582bf3cdd7f1e1023585bd9133954eece491dd9d38d6f8"
+  },
+  {
+    "record": "RETRY",
+    "labels": [
+      "immediate duplicate"
+    ],
+    "result": "result-5ae4692aa64a5665",
+    "receipt": "ac3c5b7bc6261c44a2582bf3cdd7f1e1023585bd9133954eece491dd9d38d6f8",
+    "hash": "dfff63e4cc145a99a5fbba068b34d40b3b90da3cf3b1eadc38df2791c0a80542",
+    "zeroMutation": "true"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "victory settled"
+    ],
+    "id": "poc-core-loop",
+    "stage": "Settlement",
+    "node": "Sindorim",
+    "tick": "20",
+    "events": "20",
+    "res": "103",
+    "rep": "7",
+    "choice": "Combat",
+    "result": "result-5ae4692aa64a5665",
+    "rng": "seed=90421;3=253292482",
+    "hash": "dfff63e4cc145a99a5fbba068b34d40b3b90da3cf3b1eadc38df2791c0a80542"
+  },
+  {
+    "record": "CONFLICT",
+    "type": "SettlementConflict",
+    "zeroMutation": "true"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "third return"
+    ],
+    "id": "poc-core-loop",
+    "stage": "BaseReady",
+    "node": "Yeongdeungpo",
+    "tick": "21",
+    "events": "21",
+    "res": "103",
+    "rep": "7",
+    "choice": "Combat",
+    "result": "result-5ae4692aa64a5665",
+    "rng": "seed=90421;3=253292482",
+    "hash": "3947c0425ee3d8d18e81c257eedd6b45909fa2d6b1dd251c471cc633880b4785"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "fourth resolution"
+    ],
+    "id": "poc-core-loop",
+    "stage": "Resolution",
+    "node": "Sindorim",
+    "tick": "25",
+    "events": "25",
+    "res": "103",
+    "rep": "7",
+    "choice": "None",
+    "result": "",
+    "rng": "seed=90421;3=1324642546",
+    "hash": "8663c5febfa9f45c51d8b56983589217a6298cfd7aa3999cdbc59430ba9624ec"
+  },
+  {
+    "record": "BATTLE_OPEN",
+    "campaign": "poc-core-loop",
+    "battle": "battle-f43a76b879c619e6",
+    "ctx": "f43a76b879c619e60f8ba70edd30c628949b9446c1c02a17381ebc1c7fb6b25d",
+    "worldTick": "25",
+    "res": "103",
+    "rep": "7",
+    "active": "ally-0",
+    "allyHp": "10",
+    "foeHp": "10"
+  },
+  {
+    "record": "BATTLE_END",
+    "outcome": "EnemyVictory",
+    "commands": "12",
+    "battleTick": "12",
+    "worldTick": "26",
+    "allyHp": "0",
+    "foeHp": "7",
+    "resultHash": "e1273dbd70e3f243cc0090377541cd5de36a6c62dfcd897f87249e05109b948c"
+  },
+  {
+    "record": "SETTLE",
+    "result": "result-e1273dbd70e3f243",
+    "battle": "battle-f43a76b879c619e6",
+    "outcome": "EnemyVictory",
+    "receipt": "a44dc2bdb48fdecbf2039ddcb086c9d7f6ae6735b3def31500fbe47d7b0a63b1"
+  },
+  {
+    "record": "RETRY",
+    "labels": [
+      "immediate duplicate"
+    ],
+    "result": "result-e1273dbd70e3f243",
+    "receipt": "a44dc2bdb48fdecbf2039ddcb086c9d7f6ae6735b3def31500fbe47d7b0a63b1",
+    "hash": "102e98f91083a9be812f85a6a1dfa51c404aa9808deafe28483a0bb3410d4bb5",
+    "zeroMutation": "true"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "defeat settled"
+    ],
+    "id": "poc-core-loop",
+    "stage": "Settlement",
+    "node": "Sindorim",
+    "tick": "27",
+    "events": "27",
+    "res": "88",
+    "rep": "2",
+    "choice": "Combat",
+    "result": "result-e1273dbd70e3f243",
+    "rng": "seed=90421;3=1324642546",
+    "hash": "102e98f91083a9be812f85a6a1dfa51c404aa9808deafe28483a0bb3410d4bb5"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "fourth return"
+    ],
+    "id": "poc-core-loop",
+    "stage": "BaseReady",
+    "node": "Yeongdeungpo",
+    "tick": "28",
+    "events": "28",
+    "res": "88",
+    "rep": "2",
+    "choice": "Combat",
+    "result": "result-e1273dbd70e3f243",
+    "rng": "seed=90421;3=1324642546",
+    "hash": "c5d0171dfebedbb56c9522d46f9fb8209b7efdc34f3ae37e89d06c615c624d93"
+  },
+  {
+    "record": "STATE",
+    "labels": [
+      "fifth departure"
+    ],
+    "id": "poc-core-loop",
+    "stage": "ExpeditionTravel",
+    "node": "Yeongdeungpo",
+    "tick": "29",
+    "events": "29",
+    "res": "88",
+    "rep": "2",
+    "choice": "None",
+    "result": "",
+    "rng": "seed=90421;3=1324642546",
+    "hash": "bda1c7e8447ee347fefb03e31b81a7a8e1f14b5f783f44aa333b52222aaf8b88"
+  },
+  {
+    "record": "RETRY",
+    "labels": [
+      "first result after four expeditions"
+    ],
+    "result": "result-22598d95f05d6605",
+    "receipt": "af9e5c0e886715c619a1a2c7f70c4923df2982a79326aa2890d779fc894e5be8",
+    "hash": "bda1c7e8447ee347fefb03e31b81a7a8e1f14b5f783f44aa333b52222aaf8b88",
+    "zeroMutation": "true"
+  },
+  {
+    "record": "RESET_CHARACTERIZATION",
+    "sameCampaignId": "true",
+    "resources": "100",
+    "reputation": "0",
+    "tick": "0",
+    "newStartOnly": "true"
+  },
+  {
+    "record": "REPLAY",
+    "identical": "true",
+    "final": "bda1c7e8447ee347fefb03e31b81a7a8e1f14b5f783f44aa333b52222aaf8b88:fdc2e1586fc0d3ccd21f0175513e63f20537f76873c1b0810bf9112803542f53:result-22598d95f05d6605,result-b35c5a9d4d290ba6,result-5ae4692aa64a5665,result-e1273dbd70e3f243:af9e5c0e886715c619a1a2c7f70c4923df2982a79326aa2890d779fc894e5be8,55f3ef80a06a8191c052df2b18a54d72216c522f729e4ffb9e78423f4057483c,ac3c5b7bc6261c44a2582bf3cdd7f1e1023585bd9133954eece491dd9d38d6f8,a44dc2bdb48fdecbf2039ddcb086c9d7f6ae6735b3def31500fbe47d7b0a63b1"
+  },
+  {
+    "record": "BOUNDARY",
+    "labels": [
+      "crossCampaignAttach"
+    ],
+    "type": "CampaignState",
+    "receiver": "campaign-B",
+    "attachedContextCampaign": "campaign-A"
+  },
+  {
+    "record": "BOUNDARY",
+    "labels": [
+      "foreignNoncombatResult"
+    ],
+    "type": "SettlementSuccess",
+    "originalChoice": "Negotiate",
+    "payloadOutcome": "Bypass",
+    "appliedChoice": "Bypass",
+    "res": "98",
+    "rep": "-1"
+  },
+  {
+    "record": "PROBE_PASS",
+    "assertions": "448",
+    "domainIntegration": "true",
+    "pureSnapshot": "true",
+    "liveUI": "false",
+    "unityTestsRun": "false"
+  }
+]

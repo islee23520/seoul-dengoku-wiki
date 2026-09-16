@@ -1,0 +1,91 @@
+RTFC Phase D1 — BattleSessionDriver 검증 요약 (verification summary)
+
+## What shipped
+- Game/Assets/Janseon/Foundation/Battle/BattleSessionDriver.cs
+  VContainer ITickable 진입점. 30Hz 고정 스텝 누산기(BattleRules.TicksPerSecond),
+  렌더 프레임당 최대 4회 BattleSim.Step(MaxStepsPerFrame=4), 초과분은 소진 대상
+  버림(carry는 항상 1틱 미만으로 바운드). 일시정지(Paused)는 드라이버 소유 —
+  Core 상태/원장/지문 불변, 정지 중 경과시간은 타임라인에 진입하지 않음.
+  명령 소비는 BattleSim.Replay와 동일((At,Seq) 정렬, 해당 틱 Step 전 제출) so
+  드라이버 구동 실행이 직접 Core 리플레이와 동일한 상태/원장을 만든다.
+- Game/Assets/Janseon/Foundation/Composition/FoundationLifetimeScope.cs (+4 lines)
+  builder.RegisterEntryPoint<BattleSessionDriver>(Lifetime.Scoped).AsSelf();
+  builder.RegisterInstance<Func<double>>(() => Time.realtimeSinceStartupAsDouble);
+- Game/Assets/Tests/EditMode/Janseon.Foundation.EditModeTests.asmdef (+VContainer refs)
+- Game/Assets/Tests/EditMode/BattleSessionDriverTests.cs (6 focused contract tests)
+- Game/Assets/Tests/PlayMode/BattleSessionDriverPlayModeTests.cs (1 consumer test)
+
+## Source binding
+- worktree: E:/git/seoul-kenshi-wt/rtfc-phase-d, branch rtfc/phase-d
+- base HEAD: dd6f30af64c7419368d480854c7c2f43a51acdd6 (= origin/main at start)
+- dirty fingerprint (sha256 over path+content of authored/modified files):
+  see fingerprint.txt (computed at commit time)
+
+## Test evidence (raw files in this directory)
+RED (stub pump, assertions fail — compilation was clean):
+- red2-editmode.xml    : total=6 passed=1 failed=5 result=Failed(Child)
+- red2-editmode.log.txt: raw Unity log (committed as .log.txt; repo .gitignore excludes *.log)
+- red2-editmode.exit   : 2
+- red2-launch.log      : runner transcript (UNITY exit code)
+Failed cases: TickCadence(29 steps), FrameBurst(0 steps), Pause(9 vs 10),
+TickBudget(7 vs 7 budget assertion), Replay equality. Passed:
+Driver_IsVContainerTickableEntryPoint. RED 원인: stub pump no-op.
+
+GREEN (real accumulator pump):
+- green-editmode.xml   : total=6 passed=6 failed=0 result=Passed
+- green-editmode.log.txt / .exit (0) / green-launch.log.txt
+
+PlayMode consumer (real Foundation composition root, player-loop pump):
+- green-playmode.xml   : total=1 passed=1 failed=0 result=Passed
+- green-playmode.log.txt / .exit (0) / green-playmode-launch.log.txt
+- Unity exit code 0; test resolves BattleSessionDriver from the live
+  FoundationLifetimeScope container, verifies the VContainer player-loop pump
+  advances the attached session to tick 60 with the per-frame clamp bound,
+  verifies live pause freezes TotalSteps, and asserts live-run fingerprint,
+  ResultHash, and ledger event equality against direct BattleSim.Replay.
+
+## Doc tooling
+- summary.txt patina score: 0 (deterministic offline check, "human"); full
+  LLM-judged audit unavailable (no API key in this environment).
+
+## Evidence-file note
+- run-editmode.sh was an early direct-launch scratch runner (Session-0 stall
+  era); it produced no valid evidence and was removed from this directory
+  before commit. Task-scheduler runners are preserved in git history of the
+  incident section above only as descriptions, not as files.
+
+## Incident record (miscue-*, preserved on purpose)
+An early GREEN trigger reused the red command file (runner naming bug) and ran
+the real driver under the red filter, overwriting the first RED raw pair before
+it was copied off-host. The overwritten artifacts were preserved as
+miscue-real-driver-* (failed=3: one real implementation bug — clock priming at
+first Tick instead of Attach — plus my wrong ledger-count expectation, both
+fixed). RED was then re-captured cleanly as red2-* against the byte-identical
+stub with the same tests. 자기 처리 과정의 기록이며 제품 결함 아님(구현 버그 1건은
+fix 후 GREEN에서 소명).
+
+## Environment deviations (approved)
+- lazyssh TUI interactive sessions wedged (3 identical hangs); parent approved
+  non-interactive `ssh` exec. One multiplexed ControlMaster connection.
+- apply_patch unavailable in WSL; files authored off-host and transferred via
+  md5/base64-verified payloads (later: PowerShell WriteAllBytes after a WSL
+  session VM death left the default-shell resolution flaky).
+- Unity.exe launched by Windows Task Scheduler inside the logged-on interactive
+  session: direct ssh-context launches die silently in early init on this host
+  (Session 0); docs/Unity-Headless-Workflow.md sanctions batchmode background
+  runs and -nographics for EditMode/non-rendering PlayMode.
+
+## Cleanup receipt (own QA processes/temp transport only)
+- Scheduled tasks unregistered: D1UnityRed, D1UnityGreen, D1UnityRun
+- Temp scripts removed: C:\Users\oliver\AppData\Local\Temp\{run-d1-*.cmd,
+  run-d1-*.vbs, task-*.ps1, check-*.ps1, read-*.ps1, kill-green.ps1,
+  diag-d1.ps1/.out, lic-d1.ps1/.out, d1-*.json/.txt}
+- Unity processes: none left running (each run exits; force-killed only own
+  miscue run)
+- Mac staging: /tmp/d1-stage, /tmp/ssh-ctl-d1* removed
+- Pre-existing lazyssh tmux session untouched; no user/Unity Remote processes
+  touched; evidence files preserved.
+
+## Evidence-file note 2
+- Raw *.log artifacts are committed with a .log.txt suffix because the repo
+  .gitignore excludes *.log (line 82); bytes are unmodified.

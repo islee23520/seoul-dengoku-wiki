@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="121" result="Failed(Child)" total="121" passed="119" failed="2" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-08 06:24:48Z" end-time="2026-09-08 06:24:59Z" duration="10.407445">
+  <test-suite type="TestSuite" id="1000" name="잔선: 서울" fullname="잔선: 서울" runstate="Runnable" testcasecount="121" result="Failed" site="Child" start-time="2026-09-08 06:24:48Z" end-time="2026-09-08 06:24:59Z" duration="10.407445" total="121" passed="119" failed="2" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1140" name="Janseon.Foundation.EditModeTests.dll" fullname="/Users/ilseoblee/workspace/seoul-kenshi-wt/rtfc-phase-c/Game/Library/ScriptAssemblies/Janseon.Foundation.EditModeTests.dll" runstate="Runnable" testcasecount="121" result="Failed" site="Child" start-time="2026-09-08 06:24:48Z" end-time="2026-09-08 06:24:59Z" duration="10.404670" total="121" passed="119" failed="2" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="5849" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1141" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="121" result="Failed" site="Child" start-time="2026-09-08 06:24:48Z" end-time="2026-09-08 06:24:59Z" duration="10.404176" total="121" passed="119" failed="2" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1144" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="102" result="Failed" site="Child" start-time="2026-09-08 06:24:48Z" end-time="2026-09-08 06:24:59Z" duration="10.393977" total="102" passed="100" failed="2" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="1145" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="102" result="Failed" site="Child" start-time="2026-09-08 06:24:48Z" end-time="2026-09-08 06:24:59Z" duration="10.393485" total="102" passed="100" failed="2" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestFixture" id="1023" name="ApplicationFlowTests" fullname="Janseon.Foundation.Tests.ApplicationFlowTests" classname="Janseon.Foundation.Tests.ApplicationFlowTests" runstate="Runnable" testcasecount="16" result="Passed" start-time="2026-09-08 06:24:48Z" end-time="2026-09-08 06:24:49Z" duration="0.904770" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1035" name="CancellationRequestedBeforeLoaderCompletes_ReturnsCancelledAfterAwaitableCleanup" fullname="Janseon.Foundation.Tests.ApplicationFlowTests.CancellationRequestedBeforeLoaderCompletes_ReturnsCancelledAfterAwaitableCleanup" methodname="CancellationRequestedBeforeLoaderCompletes_ReturnsCancelledAfterAwaitableCleanup" classname="Janseon.Foundation.Tests.ApplicationFlowTests" runstate="Runnable" seed="456343635" result="Passed" start-time="2026-09-08 06:24:48Z" end-time="2026-09-08 06:24:48Z" duration="0.056343" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1030" name="DuplicateOpenFoundationAfterCommit_ReturnsSameReceiptWithoutSecondLoad" fullname="Janseon.Foundation.Tests.ApplicationFlowTests.DuplicateOpenFoundationAfterCommit_ReturnsSameReceiptWithoutSecondLoad" methodname="DuplicateOpenFoundationAfterCommit_ReturnsSameReceiptWithoutSecondLoad" classname="Janseon.Foundation.Tests.ApplicationFlowTests" runstate="Runnable" seed="963924006" result="Passed" start-time="2026-09-08 06:24:48Z" end-time="2026-09-08 06:24:49Z" duration="0.093498" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1027" name="DuplicateOpenMainTitleWhileTransitioningReturnsBusyWithoutSecondLoad" fullname="Janseon.Foundation.Tests.ApplicationFlowTests.DuplicateOpenMainTitleWhileTransitioningReturnsBusyWithoutSecondLoad" methodname="DuplicateOpenMainTitleWhileTransitioningReturnsBusyWithoutSecondLoad" classname="Janseon.Foundation.Tests.ApplicationFlowTests" runstate="Runnable" seed="1920251927" result="Passed" start-time="2026-09-08 06:24:49Z" end-time="2026-09-08 06:24:49Z" duration="0.049763" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1039" name="DuringCleanupBusyRejectsRetry_StaleLeaseDisposedCannotCommit" fullname="Janseon.Foundation.Tests.ApplicationFlowTests.DuringCleanupBusyRejectsRetry_StaleLeaseDisposedCannotCommit" methodname="DuringCleanupBusyRejectsRetry_StaleLeaseDisposedCannotCommit" classname="Janseon.Foundation.Tests.ApplicationFlowTests" runstate="Runnable" seed="1183520198" result="Passed" start-time="2026-09-08 06:24:49Z" end-time="2026-09-08 06:24:49Z" duration="0.049990" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1034" name="FailedFoundationTransition_PreservesMainTitleLeaseAndCleansStaging" fullname="Janseon.Foundation.Tests.ApplicationFlowTests.FailedFoundationTransition_PreservesMainTitleLeaseAndCleansStaging" methodname="FailedFoundationTransition_PreservesMainTitleLeaseAndCleansStaging" classname="Janseon.Foundation.Tests.ApplicationFlowTests" runstate="Runnable" seed="1445033930" result="Passed" start-time="2026-09-08 06:24:49Z" end-time="2026-09-08 06:24:49Z" duration="0.150406" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1033" name="FailedMainTitleLoad_CleansStagingPreservesNoStableLease_AndRetryUsesNewTransitionId" fullname="Janseon.Foundation.Tests.ApplicationFlowTests.FailedMainTitleLoad_CleansStagingPreservesNoStableLease_AndRetryUsesNewTransitionId" methodname="FailedMainTitleLoad_CleansStagingPreservesNoStableLease_AndRetryUsesNewTransitionId" classname="Janseon.Foundation.Tests.ApplicationFlowTests" runstate="Runnable" seed="890760450" result="Passed" start-time="2026-09-08 06:24:49Z" end-time="2026-09-08 06:24:49Z" duration="0.097102" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1038" name="FoundationStartupCancelled_ThrowsOperationCanceledPreservingToken" fullname="Janseon.Foundation.Tests.ApplicationFlowTests.FoundationStartupCancelled_ThrowsOperationCanceledPreservingToken" methodname="FoundationStartupCancelled_ThrowsOperationCanceledPreservingToken" classname="Janseon.Foundation.Tests.ApplicationFlowTests" runstate="Runnable" seed="1024070225" result="Passed" start-time="2026-09-08 06:24:49Z" end-time="2026-09-08 06:24:49Z" duration="0.050606" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1036" name="FoundationStartupCompleted_EmitsReadyOnlyAfterMainTitleCommit" fullname="Janseon.Foundation.Tests.ApplicationFlowTests.FoundationStartupCompleted_EmitsReadyOnlyAfterMainTitleCommit" methodname="FoundationStartupCompleted_EmitsReadyOnlyAfterMainTitleCommit" classname="Janseon.Foundation.Tests.ApplicationFlowTests" runstate="Runnable" seed="1821586540" result="Passed" start-time="2026-09-08 06:24:49Z" end-time="2026-09-08 06:24:49Z" duration="0.050055" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[JANSEON_STARTUP_READY screen=MainTitle
+]]></output>
+              </test-case>
+              <test-case id="1037" name="FoundationStartupFailed_ThrowsInvalidOperationWithTransitionInfo" fullname="Janseon.Foundation.Tests.ApplicationFlowTests.FoundationStartupFailed_ThrowsInvalidOperationWithTransitionInfo" methodname="FoundationStartupFailed_ThrowsInvalidOperationWithTransitionInfo" classname="Janseon.Foundation.Tests.ApplicationFlowTests" runstate="Runnable" seed="339382240" result="Passed" start-time="2026-09-08 06:24:49Z" end-time="2026-09-08 06:24:49Z" duration="0.049658" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1032" name="IllegalOpenFoundationFromBooting_LeavesStateAndLoadCountsUnchanged" fullname="Janseon.Foundation.Tests.ApplicationFlowTests.IllegalOpenFoundationFromBooting_LeavesStateAndLoadCountsUnchanged" methodname="IllegalOpenFoundationFromBooting_LeavesStateAndLoadCountsUnchanged" classname="Janseon.Foundation.Tests.ApplicationFlowTests" runstate="Runnable" seed="1934991209" result="Passed" start-time="2026-09-08 06:24:49Z" end-time="2026-09-08 06:24:49Z" duration="0.000356" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1024" name="IllegalTriggerDoesNotChangeStateOrPendingTarget" fullname="Janseon.Foundation.Tests.ApplicationFlowTests.IllegalTriggerDoesNotChangeStateOrPendingTarget" methodname="IllegalTriggerDoesNotChangeStateOrPendingTarget" classname="Janseon.Foundation.Tests.ApplicationFlowTests" runstate="Runnable" seed="1706740697" result="Passed" start-time="2026-09-08 06:24:49Z" end-time="2026-09-08 06:24:49Z" duration="0.000626" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1026" name="MainTitleCommitsOnlyAfterSceneReadiness" fullname="Janseon.Foundation.Tests.ApplicationFlowTests.MainTitleCommitsOnlyAfterSceneReadiness" methodname="MainTitleCommitsOnlyAfterSceneReadiness" classname="Janseon.Foundation.Tests.ApplicationFlowTests" runstate="Runnable" seed="2115421862" result="Passed" start-time="2026-09-08 06:24:49Z" end-time="2026-09-08 06:24:49Z" duration="0.048260" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1029" name="MainTitleToFoundation_DisposesTitleBeforeFoundationCommit_ExclusiveLease" fullname="Janseon.Foundation.Tests.ApplicationFlowTests.MainTitleToFoundation_DisposesTitleBeforeFoundationCommit_ExclusiveLease" methodname="MainTitleToFoundation_DisposesTitleBeforeFoundationCommit_ExclusiveLease" classname="Janseon.Foundation.Tests.ApplicationFlowTests" runstate="Runnable" seed="617546760" result="Passed" start-time="2026-09-08 06:24:49Z" end-time="2026-09-08 06:24:49Z" duration="0.099979" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1025" name="OpenFoundationFromBootingIsIllegal" fullname="Janseon.Foundation.Tests.ApplicationFlowTests.OpenFoundationFromBootingIsIllegal" methodname="OpenFoundationFromBootingIsIllegal" classname="Janseon.Foundation.Tests.ApplicationFlowTests" runstate="Runnable" seed="1646748140" result="Passed" start-time="2026-09-08 06:24:49Z" end-time="2026-09-08 06:24:49Z" duration="0.000110" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1031" name="OpenFoundationWhileMainTitleTransitionBusy_ReturnsBusyWithoutFoundationLoad" fullname="Janseon.Foundation.Tests.ApplicationFlowTests.OpenFoundationWhileMainTitleTransitionBusy_ReturnsBusyWithoutFoundationLoad" methodname="OpenFoundationWhileMainTitleTransitionBusy_ReturnsBusyWithoutFoundationLoad" classname="Janseon.Foundation.Tests.ApplicationFlowTests" runstate="Runnable" seed="87346523" result="Passed" start-time="2026-09-08 06:24:49Z" end-time="2026-09-08 06:24:49Z" duration="0.049628" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1028" name="SameMainTitleAfterCompleted_ReturnsExactStoredReceiptAndLoadCountStaysOne" fullname="Janseon.Foundation.Tests.ApplicationFlowTests.SameMainTitleAfterCompleted_ReturnsExactStoredReceiptAndLoadCountStaysOne" methodname="SameMainTitleAfterCompleted_ReturnsExactStoredReceiptAndLoadCountStaysOne" classname="Janseon.Foundation.Tests.ApplicationFlowTests" runstate="Runnable" seed="1505519714" result="Passed" start-time="2026-09-08 06:24:49Z" end-time="2026-09-08 06:24:49Z" duration="0.050017" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1040" name="CharacterCandidateImportTests" fullname="Janseon.Foundation.Tests.CharacterCandidateImportTests" classname="Janseon.Foundation.Tests.CharacterCandidateImportTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-09-08 06:24:49Z" end-time="2026-09-08 06:24:50Z" duration="0.430401" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1042" name="CandidateImporterRejectsExistingRuntimeDestination" fullname="Janseon.Foundation.Tests.CharacterCandidateImportTests.CandidateImporterRejectsExistingRuntimeDestination" methodname="CandidateImporterRejectsExistingRuntimeDestination" classname="Janseon.Foundation.Tests.CharacterCandidateImportTests" runstate="Runnable" seed="458564408" result="Passed" start-time="2026-09-08 06:24:49Z" end-time="2026-09-08 06:24:49Z" duration="0.000682" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1041" name="TallAtlasPreservesResolutionAndFractionalAlpha" fullname="Janseon.Foundation.Tests.CharacterCandidateImportTests.TallAtlasPreservesResolutionAndFractionalAlpha" methodname="TallAtlasPreservesResolutionAndFractionalAlpha" classname="Janseon.Foundation.Tests.CharacterCandidateImportTests" runstate="Runnable" seed="704620855" result="Passed" start-time="2026-09-08 06:24:49Z" end-time="2026-09-08 06:24:50Z" duration="0.429387" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1043" name="GenreContractTests" fullname="Janseon.Foundation.Tests.GenreContractTests" classname="Janseon.Foundation.Tests.GenreContractTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.170914" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1045" name="ContractLocksSilhouetteAndTileScaleToTheCamera" fullname="Janseon.Foundation.Tests.GenreContractTests.ContractLocksSilhouetteAndTileScaleToTheCamera" methodname="ContractLocksSilhouetteAndTileScaleToTheCamera" classname="Janseon.Foundation.Tests.GenreContractTests" runstate="Runnable" seed="591511741" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.000713" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1044" name="ContractLocksSingleIsometricExplorationAndCombatGrammar" fullname="Janseon.Foundation.Tests.GenreContractTests.ContractLocksSingleIsometricExplorationAndCombatGrammar" methodname="ContractLocksSingleIsometricExplorationAndCombatGrammar" classname="Janseon.Foundation.Tests.GenreContractTests" runstate="Runnable" seed="1673198589" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.000182" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1046" name="FoundationSceneUsesTheLockedCamera" fullname="Janseon.Foundation.Tests.GenreContractTests.FoundationSceneUsesTheLockedCamera" methodname="FoundationSceneUsesTheLockedCamera" classname="Janseon.Foundation.Tests.GenreContractTests" runstate="Runnable" seed="2034813543" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.169223" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1047" name="PlaceholderVoxelLayoutTests" fullname="Janseon.Foundation.Tests.PlaceholderVoxelLayoutTests" classname="Janseon.Foundation.Tests.PlaceholderVoxelLayoutTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.104204" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1049" name="ThreePocStationsSitOnTheContractGrid" fullname="Janseon.Foundation.Tests.PlaceholderVoxelLayoutTests.ThreePocStationsSitOnTheContractGrid" methodname="ThreePocStationsSitOnTheContractGrid" classname="Janseon.Foundation.Tests.PlaceholderVoxelLayoutTests" runstate="Runnable" seed="563157472" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.000861" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1048" name="TileSizeMatchesGenreContract" fullname="Janseon.Foundation.Tests.PlaceholderVoxelLayoutTests.TileSizeMatchesGenreContract" methodname="TileSizeMatchesGenreContract" classname="Janseon.Foundation.Tests.PlaceholderVoxelLayoutTests" runstate="Runnable" seed="1000960509" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.000070" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1050" name="PocUiKitShowcaseImportRenderTests" fullname="Janseon.Foundation.Tests.PocUiKitShowcaseImportRenderTests" classname="Janseon.Foundation.Tests.PocUiKitShowcaseImportRenderTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.046902" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1053" name="Blit_CompositesTransparentSourceOverOpaqueDestination" fullname="Janseon.Foundation.Tests.PocUiKitShowcaseImportRenderTests.Blit_CompositesTransparentSourceOverOpaqueDestination" methodname="Blit_CompositesTransparentSourceOverOpaqueDestination" classname="Janseon.Foundation.Tests.PocUiKitShowcaseImportRenderTests" runstate="Runnable" seed="1626599744" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.000934" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1054" name="BlitNineSlice_CompositesTransparentAndSemitransparentOverOpaqueDestination" fullname="Janseon.Foundation.Tests.PocUiKitShowcaseImportRenderTests.BlitNineSlice_CompositesTransparentAndSemitransparentOverOpaqueDestination" methodname="BlitNineSlice_CompositesTransparentAndSemitransparentOverOpaqueDestination" classname="Janseon.Foundation.Tests.PocUiKitShowcaseImportRenderTests" runstate="Runnable" seed="685421851" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.000331" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1051" name="EvidenceDir_TargetsGatewayUiQualityShowcase_NotTodo13ReviewFixes" fullname="Janseon.Foundation.Tests.PocUiKitShowcaseImportRenderTests.EvidenceDir_TargetsGatewayUiQualityShowcase_NotTodo13ReviewFixes" methodname="EvidenceDir_TargetsGatewayUiQualityShowcase_NotTodo13ReviewFixes" classname="Janseon.Foundation.Tests.PocUiKitShowcaseImportRenderTests" runstate="Runnable" seed="622871844" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.000304" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1052" name="LoadPng_UsesImportedTextureSettings_NotRawFileBypass" fullname="Janseon.Foundation.Tests.PocUiKitShowcaseImportRenderTests.LoadPng_UsesImportedTextureSettings_NotRawFileBypass" methodname="LoadPng_UsesImportedTextureSettings_NotRawFileBypass" classname="Janseon.Foundation.Tests.PocUiKitShowcaseImportRenderTests" runstate="Runnable" seed="1650985678" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.044902" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1055" name="RealtimeBattleSimTests" fullname="Janseon.Foundation.Tests.RealtimeBattleSimTests" classname="Janseon.Foundation.Tests.RealtimeBattleSimTests" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.016735" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1061" name="Attacks_UsePowerAndThirtyTickCooldown" fullname="Janseon.Foundation.Tests.RealtimeBattleSimTests.Attacks_UsePowerAndThirtyTickCooldown" methodname="Attacks_UsePowerAndThirtyTickCooldown" classname="Janseon.Foundation.Tests.RealtimeBattleSimTests" runstate="Runnable" seed="739912541" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.000087" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1059" name="Deploy_MapsFormationSlotsToCellsAndFacing" fullname="Janseon.Foundation.Tests.RealtimeBattleSimTests.Deploy_MapsFormationSlotsToCellsAndFacing" methodname="Deploy_MapsFormationSlotsToCellsAndFacing" classname="Janseon.Foundation.Tests.RealtimeBattleSimTests" runstate="Runnable" seed="1098007937" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.002944" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1067" name="MaxTicks_EndsAsDraw_AndRoutingCanProduceRout" fullname="Janseon.Foundation.Tests.RealtimeBattleSimTests.MaxTicks_EndsAsDraw_AndRoutingCanProduceRout" methodname="MaxTicks_EndsAsDraw_AndRoutingCanProduceRout" classname="Janseon.Foundation.Tests.RealtimeBattleSimTests" runstate="Runnable" seed="1886641982" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.000848" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1062" name="Morale_UsesConfiguredLossRecoveryAndLockRules" fullname="Janseon.Foundation.Tests.RealtimeBattleSimTests.Morale_UsesConfiguredLossRecoveryAndLockRules" methodname="Morale_UsesConfiguredLossRecoveryAndLockRules" classname="Janseon.Foundation.Tests.RealtimeBattleSimTests" runstate="Runnable" seed="1594971838" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.000114" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1060" name="Movement_AdvancesOneIntegerCellAfterTenTicks" fullname="Janseon.Foundation.Tests.RealtimeBattleSimTests.Movement_AdvancesOneIntegerCellAfterTenTicks" methodname="Movement_AdvancesOneIntegerCellAfterTenTicks" classname="Janseon.Foundation.Tests.RealtimeBattleSimTests" runstate="Runnable" seed="232125920" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.000284" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1056" name="OpenSnapshot_HasSixUnitsPerSideAndInitialMorale" fullname="Janseon.Foundation.Tests.RealtimeBattleSimTests.OpenSnapshot_HasSixUnitsPerSideAndInitialMorale" methodname="OpenSnapshot_HasSixUnitsPerSideAndInitialMorale" classname="Janseon.Foundation.Tests.RealtimeBattleSimTests" runstate="Runnable" seed="478015576" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.000065" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1066" name="PauseHasNoSimulationMeaning" fullname="Janseon.Foundation.Tests.RealtimeBattleSimTests.PauseHasNoSimulationMeaning" methodname="PauseHasNoSimulationMeaning" classname="Janseon.Foundation.Tests.RealtimeBattleSimTests" runstate="Runnable" seed="88005291" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.000025" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1057" name="RejectedCommands_DoNotMutateStateOrLedger" fullname="Janseon.Foundation.Tests.RealtimeBattleSimTests.RejectedCommands_DoNotMutateStateOrLedger" methodname="RejectedCommands_DoNotMutateStateOrLedger" classname="Janseon.Foundation.Tests.RealtimeBattleSimTests" runstate="Runnable" seed="319169597" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.000180" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1065" name="Replay_IsDeterministicForSameSetupAndCommands" fullname="Janseon.Foundation.Tests.RealtimeBattleSimTests.Replay_IsDeterministicForSameSetupAndCommands" methodname="Replay_IsDeterministicForSameSetupAndCommands" classname="Janseon.Foundation.Tests.RealtimeBattleSimTests" runstate="Runnable" seed="1523982117" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.005495" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1063" name="Surrender_RequiresMoraleHpAndCoveredRetreat" fullname="Janseon.Foundation.Tests.RealtimeBattleSimTests.Surrender_RequiresMoraleHpAndCoveredRetreat" methodname="Surrender_RequiresMoraleHpAndCoveredRetreat" classname="Janseon.Foundation.Tests.RealtimeBattleSimTests" runstate="Runnable" seed="1418808515" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.000180" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1064" name="Telegraph_ArrivesAtPlannedTickAndResolvesOccupiedCell" fullname="Janseon.Foundation.Tests.RealtimeBattleSimTests.Telegraph_ArrivesAtPlannedTickAndResolvesOccupiedCell" methodname="Telegraph_ArrivesAtPlannedTickAndResolvesOccupiedCell" classname="Janseon.Foundation.Tests.RealtimeBattleSimTests" runstate="Runnable" seed="1508533505" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.000472" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1058" name="WrongTick_IsRejectedWithoutMutation" fullname="Janseon.Foundation.Tests.RealtimeBattleSimTests.WrongTick_IsRejectedWithoutMutation" methodname="WrongTick_IsRejectedWithoutMutation" classname="Janseon.Foundation.Tests.RealtimeBattleSimTests" runstate="Runnable" seed="1955281703" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.000077" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1068" name="RealtimeCardSettlementTests" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.035564" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1077" name="CampaignRoundTrip_UsesNewBattleResult" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.CampaignRoundTrip_UsesNewBattleResult" methodname="CampaignRoundTrip_UsesNewBattleResult" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="177596743" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.012675" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1069" name="Catalog_IsStaticGrantType_NoDeckNoDraw" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.Catalog_IsStaticGrantType_NoDeckNoDraw" methodname="Catalog_IsStaticGrantType_NoDeckNoDraw" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="1248471036" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.000473" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1072" name="PlayCard_OutOfCommandRadius_Fails" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.PlayCard_OutOfCommandRadius_Fails" methodname="PlayCard_OutOfCommandRadius_Fails" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="1173234712" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.000122" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1070" name="PlayCard_RechargesOverTicks" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.PlayCard_RechargesOverTicks" methodname="PlayCard_RechargesOverTicks" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="802254944" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.008228" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1071" name="PlayCard_RejectedWhileRecharging" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.PlayCard_RejectedWhileRecharging" methodname="PlayCard_RejectedWhileRecharging" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="557229685" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.002230" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1074" name="Replay_WithDeployAndPlayCard_IsDeterministicWithoutPauseTicks" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.Replay_WithDeployAndPlayCard_IsDeterministicWithoutPauseTicks" methodname="Replay_WithDeployAndPlayCard_IsDeterministicWithoutPauseTicks" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="1104835022" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.002310" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1076" name="Settlement_ExactOnce_SurvivesDomainSwap" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.Settlement_ExactOnce_SurvivesDomainSwap" methodname="Settlement_ExactOnce_SurvivesDomainSwap" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="1893124327" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.008647" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1073" name="StrongholdCardSlots_LimitedToTwo" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.StrongholdCardSlots_LimitedToTwo" methodname="StrongholdCardSlots_LimitedToTwo" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="920146222" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.000103" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1075" name="ToEncounterResult_MapsRetreatSurrenderDistinctly" fullname="Janseon.Foundation.Tests.RealtimeCardSettlementTests.ToEncounterResult_MapsRetreatSurrenderDistinctly" methodname="ToEncounterResult_MapsRetreatSurrenderDistinctly" classname="Janseon.Foundation.Tests.RealtimeCardSettlementTests" runstate="Runnable" seed="1316556143" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.000053" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1078" name="RuntimeAssetProvenanceTests" fullname="Janseon.Foundation.Tests.RuntimeAssetProvenanceTests" classname="Janseon.Foundation.Tests.RuntimeAssetProvenanceTests" runstate="Runnable" testcasecount="8" result="Failed" site="Child" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:51Z" duration="0.885065" total="8" passed="7" failed="1" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="1081" name="CodeNativeUi_HasNoRasterOrTrellisUrls" fullname="Janseon.Foundation.Tests.RuntimeAssetProvenanceTests.CodeNativeUi_HasNoRasterOrTrellisUrls" methodname="CodeNativeUi_HasNoRasterOrTrellisUrls" classname="Janseon.Foundation.Tests.RuntimeAssetProvenanceTests" runstate="Runnable" seed="1594136525" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.337414" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1082" name="CodeNativeUiAssets_LoadAsImportedAssets" fullname="Janseon.Foundation.Tests.RuntimeAssetProvenanceTests.CodeNativeUiAssets_LoadAsImportedAssets" methodname="CodeNativeUiAssets_LoadAsImportedAssets" classname="Janseon.Foundation.Tests.RuntimeAssetProvenanceTests" runstate="Runnable" seed="635479491" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.010376" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1086" name="MutationProbe_InjectedTrellisGuid_IsDetectedByScanner" fullname="Janseon.Foundation.Tests.RuntimeAssetProvenanceTests.MutationProbe_InjectedTrellisGuid_IsDetectedByScanner" methodname="MutationProbe_InjectedTrellisGuid_IsDetectedByScanner" classname="Janseon.Foundation.Tests.RuntimeAssetProvenanceTests" runstate="Runnable" seed="1645019713" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.000198" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1079" name="PlayableBuildSettings_ExcludeTrellisValidationAndArtProps" fullname="Janseon.Foundation.Tests.RuntimeAssetProvenanceTests.PlayableBuildSettings_ExcludeTrellisValidationAndArtProps" methodname="PlayableBuildSettings_ExcludeTrellisValidationAndArtProps" classname="Janseon.Foundation.Tests.RuntimeAssetProvenanceTests" runstate="Runnable" seed="1437379035" result="Passed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:50Z" duration="0.000330" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1080" name="PlayableScenes_DoNotReferenceQuarantineOrTrellisAssets" fullname="Janseon.Foundation.Tests.RuntimeAssetProvenanceTests.PlayableScenes_DoNotReferenceQuarantineOrTrellisAssets" methodname="PlayableScenes_DoNotReferenceQuarantineOrTrellisAssets" classname="Janseon.Foundation.Tests.RuntimeAssetProvenanceTests" runstate="Runnable" seed="46254877" result="Failed" start-time="2026-09-08 06:24:50Z" end-time="2026-09-08 06:24:51Z" duration="0.108351" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  real provenance gate must accept every scene dependency
+  Expected: True
+  But was:  False
+]]></message>
+                  <stack-trace><![CDATA[at Janseon.Foundation.Tests.RuntimeAssetProvenanceTests.PlayableScenes_DoNotReferenceQuarantineOrTrellisAssets () [0x00000] in /Users/ilseoblee/workspace/seoul-kenshi-wt/rtfc-phase-c/Game/Assets/Tests/EditMode/RuntimeAssetProvenanceTests.cs:83
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1083" name="ProviderPolicy_RetainsTrellisWithoutApprovingAssets" fullname="Janseon.Foundation.Tests.RuntimeAssetProvenanceTests.ProviderPolicy_RetainsTrellisWithoutApprovingAssets" methodname="ProviderPolicy_RetainsTrellisWithoutApprovingAssets" classname="Janseon.Foundation.Tests.RuntimeAssetProvenanceTests" runstate="Runnable" seed="1243039574" result="Passed" start-time="2026-09-08 06:24:51Z" end-time="2026-09-08 06:24:51Z" duration="0.377416" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1085" name="RuntimeScripts_DoNotEmbedTrellisOrArtSourcePaths" fullname="Janseon.Foundation.Tests.RuntimeAssetProvenanceTests.RuntimeScripts_DoNotEmbedTrellisOrArtSourcePaths" methodname="RuntimeScripts_DoNotEmbedTrellisOrArtSourcePaths" classname="Janseon.Foundation.Tests.RuntimeAssetProvenanceTests" runstate="Runnable" seed="1106231533" result="Passed" start-time="2026-09-08 06:24:51Z" end-time="2026-09-08 06:24:51Z" duration="0.014573" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1084" name="StationPropBom_UnboundReviewCannotApproveRuntime" fullname="Janseon.Foundation.Tests.RuntimeAssetProvenanceTests.StationPropBom_UnboundReviewCannotApproveRuntime" methodname="StationPropBom_UnboundReviewCannotApproveRuntime" classname="Janseon.Foundation.Tests.RuntimeAssetProvenanceTests" runstate="Runnable" seed="1731674414" result="Passed" start-time="2026-09-08 06:24:51Z" end-time="2026-09-08 06:24:51Z" duration="0.035132" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1087" name="RuntimeSlotBindingTests" fullname="Janseon.Foundation.Tests.RuntimeSlotBindingTests" classname="Janseon.Foundation.Tests.RuntimeSlotBindingTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-09-08 06:24:51Z" end-time="2026-09-08 06:24:51Z" duration="0.008554" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1090" name="BoundTitle_RendersCatalogTextureAndRemovesBlockedState" fullname="Janseon.Foundation.Tests.RuntimeSlotBindingTests.BoundTitle_RendersCatalogTextureAndRemovesBlockedState" methodname="BoundTitle_RendersCatalogTextureAndRemovesBlockedState" classname="Janseon.Foundation.Tests.RuntimeSlotBindingTests" runstate="Runnable" seed="1661182919" result="Passed" start-time="2026-09-08 06:24:51Z" end-time="2026-09-08 06:24:51Z" duration="0.004022" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1088" name="Catalog_OnlyBoundEntriesExposeTypedAssets" fullname="Janseon.Foundation.Tests.RuntimeSlotBindingTests.Catalog_OnlyBoundEntriesExposeTypedAssets" methodname="Catalog_OnlyBoundEntriesExposeTypedAssets" classname="Janseon.Foundation.Tests.RuntimeSlotBindingTests" runstate="Runnable" seed="573154915" result="Passed" start-time="2026-09-08 06:24:51Z" end-time="2026-09-08 06:24:51Z" duration="0.000189" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1092" name="CharacterCatalog_ResolvesEveryFacingActionAndFrame" fullname="Janseon.Foundation.Tests.RuntimeSlotBindingTests.CharacterCatalog_ResolvesEveryFacingActionAndFrame" methodname="CharacterCatalog_ResolvesEveryFacingActionAndFrame" classname="Janseon.Foundation.Tests.RuntimeSlotBindingTests" runstate="Runnable" seed="1304575167" result="Passed" start-time="2026-09-08 06:24:51Z" end-time="2026-09-08 06:24:51Z" duration="0.001169" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1091" name="EmptyCatalog_GameplayExposesAllFiveBlockedSlots" fullname="Janseon.Foundation.Tests.RuntimeSlotBindingTests.EmptyCatalog_GameplayExposesAllFiveBlockedSlots" methodname="EmptyCatalog_GameplayExposesAllFiveBlockedSlots" classname="Janseon.Foundation.Tests.RuntimeSlotBindingTests" runstate="Runnable" seed="1573294438" result="Passed" start-time="2026-09-08 06:24:51Z" end-time="2026-09-08 06:24:51Z" duration="0.001422" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1089" name="EmptyCatalog_TitleHasBlockedStatusAndNoTexture" fullname="Janseon.Foundation.Tests.RuntimeSlotBindingTests.EmptyCatalog_TitleHasBlockedStatusAndNoTexture" methodname="EmptyCatalog_TitleHasBlockedStatusAndNoTexture" classname="Janseon.Foundation.Tests.RuntimeSlotBindingTests" runstate="Runnable" seed="908722084" result="Passed" start-time="2026-09-08 06:24:51Z" end-time="2026-09-08 06:24:51Z" duration="0.000135" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1093" name="RuntimeSlotPromotionTests" fullname="Janseon.Foundation.Tests.RuntimeSlotPromotionTests" classname="Janseon.Foundation.Tests.RuntimeSlotPromotionTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-09-08 06:24:51Z" end-time="2026-09-08 06:24:58Z" duration="7.273668" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1102" name="CharacterClips_RetargetRuntimeSpritesWithoutChangingReviewedPacket" fullname="Janseon.Foundation.Tests.RuntimeSlotPromotionTests.CharacterClips_RetargetRuntimeSpritesWithoutChangingReviewedPacket" methodname="CharacterClips_RetargetRuntimeSpritesWithoutChangingReviewedPacket" classname="Janseon.Foundation.Tests.RuntimeSlotPromotionTests" runstate="Runnable" seed="1434279880" result="Passed" start-time="2026-09-08 06:24:51Z" end-time="2026-09-08 06:24:58Z" duration="6.663117" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[RUNTIME_SLOT_PROMOTION_OK slot=character-explorer fixture=True
+]]></output>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1101" name="InvalidPacket_RefusesBeforeDestinationWrite" fullname="Janseon.Foundation.Tests.RuntimeSlotPromotionTests.InvalidPacket_RefusesBeforeDestinationWrite" classname="Janseon.Foundation.Tests.RuntimeSlotPromotionTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-09-08 06:24:58Z" end-time="2026-09-08 06:24:58Z" duration="0.450583" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1095" name="InvalidPacket_RefusesBeforeDestinationWrite(&quot;missing-rights&quot;)" fullname="Janseon.Foundation.Tests.RuntimeSlotPromotionTests.InvalidPacket_RefusesBeforeDestinationWrite(&quot;missing-rights&quot;)" methodname="InvalidPacket_RefusesBeforeDestinationWrite" classname="Janseon.Foundation.Tests.RuntimeSlotPromotionTests" runstate="Runnable" seed="1024678441" result="Passed" start-time="2026-09-08 06:24:58Z" end-time="2026-09-08 06:24:58Z" duration="0.078236" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1096" name="InvalidPacket_RefusesBeforeDestinationWrite(&quot;tampered-output&quot;)" fullname="Janseon.Foundation.Tests.RuntimeSlotPromotionTests.InvalidPacket_RefusesBeforeDestinationWrite(&quot;tampered-output&quot;)" methodname="InvalidPacket_RefusesBeforeDestinationWrite" classname="Janseon.Foundation.Tests.RuntimeSlotPromotionTests" runstate="Runnable" seed="1951684180" result="Passed" start-time="2026-09-08 06:24:58Z" end-time="2026-09-08 06:24:58Z" duration="0.072898" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1097" name="InvalidPacket_RefusesBeforeDestinationWrite(&quot;unbound-review&quot;)" fullname="Janseon.Foundation.Tests.RuntimeSlotPromotionTests.InvalidPacket_RefusesBeforeDestinationWrite(&quot;unbound-review&quot;)" methodname="InvalidPacket_RefusesBeforeDestinationWrite" classname="Janseon.Foundation.Tests.RuntimeSlotPromotionTests" runstate="Runnable" seed="1540148736" result="Passed" start-time="2026-09-08 06:24:58Z" end-time="2026-09-08 06:24:58Z" duration="0.074002" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1098" name="InvalidPacket_RefusesBeforeDestinationWrite(&quot;non-candidate&quot;)" fullname="Janseon.Foundation.Tests.RuntimeSlotPromotionTests.InvalidPacket_RefusesBeforeDestinationWrite(&quot;non-candidate&quot;)" methodname="InvalidPacket_RefusesBeforeDestinationWrite" classname="Janseon.Foundation.Tests.RuntimeSlotPromotionTests" runstate="Runnable" seed="366973096" result="Passed" start-time="2026-09-08 06:24:58Z" end-time="2026-09-08 06:24:58Z" duration="0.073453" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1099" name="InvalidPacket_RefusesBeforeDestinationWrite(&quot;empty-reviews&quot;)" fullname="Janseon.Foundation.Tests.RuntimeSlotPromotionTests.InvalidPacket_RefusesBeforeDestinationWrite(&quot;empty-reviews&quot;)" methodname="InvalidPacket_RefusesBeforeDestinationWrite" classname="Janseon.Foundation.Tests.RuntimeSlotPromotionTests" runstate="Runnable" seed="1469113405" result="Passed" start-time="2026-09-08 06:24:58Z" end-time="2026-09-08 06:24:58Z" duration="0.074789" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1100" name="InvalidPacket_RefusesBeforeDestinationWrite(&quot;missing-binding&quot;)" fullname="Janseon.Foundation.Tests.RuntimeSlotPromotionTests.InvalidPacket_RefusesBeforeDestinationWrite(&quot;missing-binding&quot;)" methodname="InvalidPacket_RefusesBeforeDestinationWrite" classname="Janseon.Foundation.Tests.RuntimeSlotPromotionTests" runstate="Runnable" seed="2092705573" result="Passed" start-time="2026-09-08 06:24:58Z" end-time="2026-09-08 06:24:58Z" duration="0.072470" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1094" name="SyntheticCandidate_PromotesThroughUnityWithBomAndMeta" fullname="Janseon.Foundation.Tests.RuntimeSlotPromotionTests.SyntheticCandidate_PromotesThroughUnityWithBomAndMeta" methodname="SyntheticCandidate_PromotesThroughUnityWithBomAndMeta" classname="Janseon.Foundation.Tests.RuntimeSlotPromotionTests" runstate="Runnable" seed="25759889" result="Passed" start-time="2026-09-08 06:24:58Z" end-time="2026-09-08 06:24:58Z" duration="0.159333" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[RUNTIME_SLOT_PROMOTION_OK slot=title-art fixture=True
+]]></output>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1103" name="UiCandidateImportTests" fullname="Janseon.Foundation.Tests.UiCandidateImportTests" classname="Janseon.Foundation.Tests.UiCandidateImportTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-09-08 06:24:58Z" end-time="2026-09-08 06:24:58Z" duration="0.239527" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1107" name="Candidates_AreUnreachableFromPlayableScenesAndContainOnlyPng" fullname="Janseon.Foundation.Tests.UiCandidateImportTests.Candidates_AreUnreachableFromPlayableScenesAndContainOnlyPng" methodname="Candidates_AreUnreachableFromPlayableScenesAndContainOnlyPng" classname="Janseon.Foundation.Tests.UiCandidateImportTests" runstate="Runnable" seed="1863772784" result="Passed" start-time="2026-09-08 06:24:58Z" end-time="2026-09-08 06:24:58Z" duration="0.037004" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1105" name="ConfigureTexture_ImportsHistoryTextureAsRepeatingMipmappedTexture" fullname="Janseon.Foundation.Tests.UiCandidateImportTests.ConfigureTexture_ImportsHistoryTextureAsRepeatingMipmappedTexture" methodname="ConfigureTexture_ImportsHistoryTextureAsRepeatingMipmappedTexture" classname="Janseon.Foundation.Tests.UiCandidateImportTests" runstate="Runnable" seed="2072564619" result="Passed" start-time="2026-09-08 06:24:58Z" end-time="2026-09-08 06:24:58Z" duration="0.146190" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1104" name="ConfigureTexture_ImportsIconAsReadablePointSpriteWithExactPixels" fullname="Janseon.Foundation.Tests.UiCandidateImportTests.ConfigureTexture_ImportsIconAsReadablePointSpriteWithExactPixels" methodname="ConfigureTexture_ImportsIconAsReadablePointSpriteWithExactPixels" classname="Janseon.Foundation.Tests.UiCandidateImportTests" runstate="Runnable" seed="1485713304" result="Passed" start-time="2026-09-08 06:24:58Z" end-time="2026-09-08 06:24:58Z" duration="0.052081" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1106" name="ConfigureTexture_RejectsPromotedRuntimeArtPaths" fullname="Janseon.Foundation.Tests.UiCandidateImportTests.ConfigureTexture_RejectsPromotedRuntimeArtPaths" methodname="ConfigureTexture_RejectsPromotedRuntimeArtPaths" classname="Janseon.Foundation.Tests.UiCandidateImportTests" runstate="Runnable" seed="1465036149" result="Passed" start-time="2026-09-08 06:24:58Z" end-time="2026-09-08 06:24:58Z" duration="0.000257" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1108" name="UiToolkitScreenTests" fullname="Janseon.Foundation.Tests.UiToolkitScreenTests" classname="Janseon.Foundation.Tests.UiToolkitScreenTests" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-09-08 06:24:58Z" end-time="2026-09-08 06:24:59Z" duration="0.103425" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1120" name="ActiveLease_AllowsExactlyOneScreenDocument" fullname="Janseon.Foundation.Tests.UiToolkitScreenTests.ActiveLease_AllowsExactlyOneScreenDocument" methodname="ActiveLease_AllowsExactlyOneScreenDocument" classname="Janseon.Foundation.Tests.UiToolkitScreenTests" runstate="Runnable" seed="735159207" result="Passed" start-time="2026-09-08 06:24:58Z" end-time="2026-09-08 06:24:58Z" duration="0.000191" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1113" name="Gameplay_Document_ExposesRequiredStableElementNames" fullname="Janseon.Foundation.Tests.UiToolkitScreenTests.Gameplay_Document_ExposesRequiredStableElementNames" methodname="Gameplay_Document_ExposesRequiredStableElementNames" classname="Janseon.Foundation.Tests.UiToolkitScreenTests" runstate="Runnable" seed="967784202" result="Passed" start-time="2026-09-08 06:24:58Z" end-time="2026-09-08 06:24:58Z" duration="0.001332" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1117" name="Gameplay_FocusOrder_MatchesDesignContract_ForEncounterActions" fullname="Janseon.Foundation.Tests.UiToolkitScreenTests.Gameplay_FocusOrder_MatchesDesignContract_ForEncounterActions" methodname="Gameplay_FocusOrder_MatchesDesignContract_ForEncounterActions" classname="Janseon.Foundation.Tests.UiToolkitScreenTests" runstate="Runnable" seed="1383524507" result="Passed" start-time="2026-09-08 06:24:58Z" end-time="2026-09-08 06:24:58Z" duration="0.001030" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1115" name="Gameplay_Presenter_AppliesNamedVisibleFlags_RouteStageKeepsRailsAndStationLabels" fullname="Janseon.Foundation.Tests.UiToolkitScreenTests.Gameplay_Presenter_AppliesNamedVisibleFlags_RouteStageKeepsRailsAndStationLabels" methodname="Gameplay_Presenter_AppliesNamedVisibleFlags_RouteStageKeepsRailsAndStationLabels" classname="Janseon.Foundation.Tests.UiToolkitScreenTests" runstate="Runnable" seed="1601160059" result="Passed" start-time="2026-09-08 06:24:58Z" end-time="2026-09-08 06:24:58Z" duration="0.003369" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1114" name="Gameplay_Presenter_AppliesSnapshot_ToStableElementClasses" fullname="Janseon.Foundation.Tests.UiToolkitScreenTests.Gameplay_Presenter_AppliesSnapshot_ToStableElementClasses" methodname="Gameplay_Presenter_AppliesSnapshot_ToStableElementClasses" classname="Janseon.Foundation.Tests.UiToolkitScreenTests" runstate="Runnable" seed="200089309" result="Passed" start-time="2026-09-08 06:24:58Z" end-time="2026-09-08 06:24:58Z" duration="0.000638" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1112" name="Gameplay_UxmlAndUss_ExistAsAssets" fullname="Janseon.Foundation.Tests.UiToolkitScreenTests.Gameplay_UxmlAndUss_ExistAsAssets" methodname="Gameplay_UxmlAndUss_ExistAsAssets" classname="Janseon.Foundation.Tests.UiToolkitScreenTests" runstate="Runnable" seed="2042728814" result="Passed" start-time="2026-09-08 06:24:58Z" end-time="2026-09-08 06:24:58Z" duration="0.000065" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1110" name="MainTitle_DocumentRoot_ExposesRequiredElementNames" fullname="Janseon.Foundation.Tests.UiToolkitScreenTests.MainTitle_DocumentRoot_ExposesRequiredElementNames" methodname="MainTitle_DocumentRoot_ExposesRequiredElementNames" classname="Janseon.Foundation.Tests.UiToolkitScreenTests" runstate="Runnable" seed="1170836768" result="Passed" start-time="2026-09-08 06:24:58Z" end-time="2026-09-08 06:24:58Z" duration="0.000217" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1116" name="MainTitle_FocusOrder_MatchesDesignContract" fullname="Janseon.Foundation.Tests.UiToolkitScreenTests.MainTitle_FocusOrder_MatchesDesignContract" methodname="MainTitle_FocusOrder_MatchesDesignContract" classname="Janseon.Foundation.Tests.UiToolkitScreenTests" runstate="Runnable" seed="315479129" result="Passed" start-time="2026-09-08 06:24:58Z" end-time="2026-09-08 06:24:58Z" duration="0.000410" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1111" name="MainTitle_Start_CallsOpenFoundationOnPublicCoordinator" fullname="Janseon.Foundation.Tests.UiToolkitScreenTests.MainTitle_Start_CallsOpenFoundationOnPublicCoordinator" methodname="MainTitle_Start_CallsOpenFoundationOnPublicCoordinator" classname="Janseon.Foundation.Tests.UiToolkitScreenTests" runstate="Runnable" seed="516633450" result="Passed" start-time="2026-09-08 06:24:58Z" end-time="2026-09-08 06:24:59Z" duration="0.089257" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1109" name="MainTitle_UxmlAndUss_ExistAsAssets" fullname="Janseon.Foundation.Tests.UiToolkitScreenTests.MainTitle_UxmlAndUss_ExistAsAssets" methodname="MainTitle_UxmlAndUss_ExistAsAssets" classname="Janseon.Foundation.Tests.UiToolkitScreenTests" runstate="Runnable" seed="747402920" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000159" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1119" name="Readiness_Fails_WhenPanelSettingsMissing" fullname="Janseon.Foundation.Tests.UiToolkitScreenTests.Readiness_Fails_WhenPanelSettingsMissing" methodname="Readiness_Fails_WhenPanelSettingsMissing" classname="Janseon.Foundation.Tests.UiToolkitScreenTests" runstate="Runnable" seed="1486438445" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000175" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1118" name="Readiness_Fails_WhenRequiredUxmlMissing" fullname="Janseon.Foundation.Tests.UiToolkitScreenTests.Readiness_Fails_WhenRequiredUxmlMissing" methodname="Readiness_Fails_WhenRequiredUxmlMissing" classname="Janseon.Foundation.Tests.UiToolkitScreenTests" runstate="Runnable" seed="1700283830" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000077" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1121" name="UiToolkitVisualQaDefectTests" fullname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests" classname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests" runstate="Runnable" testcasecount="17" result="Failed" site="Child" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.172091" total="17" passed="16" failed="1" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="1139" name="CaptureReceipts_RequireIsPlayingTrue_Roots_State_Head" fullname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests.CaptureReceipts_RequireIsPlayingTrue_Roots_State_Head" methodname="CaptureReceipts_RequireIsPlayingTrue_Roots_State_Head" classname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests" runstate="Runnable" seed="958315326" result="Failed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.050587" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  exactly 10 receipts required
+  Expected: 10
+  But was:  0
+]]></message>
+                  <stack-trace><![CDATA[at Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests.CaptureReceipts_RequireIsPlayingTrue_Roots_State_Head () [0x000bd] in /Users/ilseoblee/workspace/seoul-kenshi-wt/rtfc-phase-c/Game/Assets/Tests/EditMode/UiToolkitVisualQaDefectTests.cs:369
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1127" name="MainTitle_StartFocus_UsesVisualElementFocusApi_AndCaptureRequiresFocusRing" fullname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests.MainTitle_StartFocus_UsesVisualElementFocusApi_AndCaptureRequiresFocusRing" methodname="MainTitle_StartFocus_UsesVisualElementFocusApi_AndCaptureRequiresFocusRing" classname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests" runstate="Runnable" seed="1283625649" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000922" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1123" name="Presenter_PublicActionSeams_ExistForChoicesAndReturn" fullname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests.Presenter_PublicActionSeams_ExistForChoicesAndReturn" methodname="Presenter_PublicActionSeams_ExistForChoicesAndReturn" classname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests" runstate="Runnable" seed="1837251718" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.001757" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1122" name="Presenter_RequiresBoundHpApMeters_BattleLog_AndSettlementOutcome" fullname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests.Presenter_RequiresBoundHpApMeters_BattleLog_AndSettlementOutcome" methodname="Presenter_RequiresBoundHpApMeters_BattleLog_AndSettlementOutcome" classname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests" runstate="Runnable" seed="1127552515" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.001848" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1126" name="ProductionHosts_UseScopedUiScreenDocumentLease_AndRejectSecondDocument" fullname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests.ProductionHosts_UseScopedUiScreenDocumentLease_AndRejectSecondDocument" methodname="ProductionHosts_UseScopedUiScreenDocumentLease_AndRejectSecondDocument" classname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests" runstate="Runnable" seed="425035851" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000359" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1125" name="ResolutionHelper_AppliesExactlyOneResClass_ToNamedScreenRoots_FromDimensions" fullname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests.ResolutionHelper_AppliesExactlyOneResClass_ToNamedScreenRoots_FromDimensions" methodname="ResolutionHelper_AppliesExactlyOneResClass_ToNamedScreenRoots_FromDimensions" classname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests" runstate="Runnable" seed="287466933" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.004044" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1124" name="ResponsiveStyles_EnforceDesignSizes_For720And1080" fullname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests.ResponsiveStyles_EnforceDesignSizes_For720And1080" methodname="ResponsiveStyles_EnforceDesignSizes_For720And1080" classname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests" runstate="Runnable" seed="41836789" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000769" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1137" name="SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot" fullname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests.SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot" classname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.001427" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1128" name="SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot(&quot;.omo/evidence/gateway-core/receipt.json&quot;,True)" fullname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests.SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot(&quot;.omo/evidence/gateway-core/receipt.json&quot;,True)" methodname="SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot" classname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests" runstate="Runnable" seed="234283696" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000287" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1129" name="SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot(&quot;.omo/plans/core.md&quot;,True)" fullname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests.SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot(&quot;.omo/plans/core.md&quot;,True)" methodname="SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot" classname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests" runstate="Runnable" seed="1981420151" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000030" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1130" name="SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot(&quot;./.omo/evidence/capture.png&quot;,True)" fullname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests.SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot(&quot;./.omo/evidence/capture.png&quot;,True)" methodname="SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot" classname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests" runstate="Runnable" seed="254984434" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000025" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1131" name="SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot(&quot;.omo\\evidence\\capture.png&quot;,True)" fullname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests.SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot(&quot;.omo\\evidence\\capture.png&quot;,True)" methodname="SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot" classname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests" runstate="Runnable" seed="1051957908" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000025" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1132" name="SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot(&quot;Game/Assets/Janseon/Foundation/UI/Gameplay.uxml&quot;,False)" fullname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests.SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot(&quot;Game/Assets/Janseon/Foundation/UI/Gameplay.uxml&quot;,False)" methodname="SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot" classname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests" runstate="Runnable" seed="899381079" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000021" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1133" name="SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot(&quot;omo/evidence/source.cs&quot;,False)" fullname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests.SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot(&quot;omo/evidence/source.cs&quot;,False)" methodname="SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot" classname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests" runstate="Runnable" seed="1030148919" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000022" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1134" name="SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot(&quot;Game/Assets/InitTestScenef26978d6-b24d-47b0-b359-8c334f0ad028.unity&quot;,True)" fullname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests.SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot(&quot;Game/Assets/InitTestScenef26978d6-b24d-47b0-b359-8c334f0ad028.unity&quot;,True)" methodname="SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot" classname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests" runstate="Runnable" seed="149439760" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000141" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1135" name="SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot(&quot;Game/Assets/InitTestScenef26978d6-b24d-47b0-b359-8c334f0ad028.unity.meta&quot;,True)" fullname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests.SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot(&quot;Game/Assets/InitTestScenef26978d6-b24d-47b0-b359-8c334f0ad028.unity.meta&quot;,True)" methodname="SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot" classname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests" runstate="Runnable" seed="232421267" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000022" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1136" name="SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot(&quot;Game/Assets/Scenes/InitTestScene.unity&quot;,False)" fullname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests.SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot(&quot;Game/Assets/Scenes/InitTestScene.unity&quot;,False)" methodname="SourceFingerprint_ClassifiesEvidenceWithoutStrippingHiddenDirectoryDot" classname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests" runstate="Runnable" seed="2079493212" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000025" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1138" name="SourceFingerprint_StableExcludingEvidence_ChangesOnUiSourceEdit" fullname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests.SourceFingerprint_StableExcludingEvidence_ChangesOnUiSourceEdit" methodname="SourceFingerprint_StableExcludingEvidence_ChangesOnUiSourceEdit" classname="Janseon.Foundation.Tests.UiToolkitVisualQaDefectTests" runstate="Runnable" seed="1236689302" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.109373" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+        <test-suite type="TestSuite" id="1142" name="Tests" fullname="Janseon.Tests" runstate="Runnable" testcasecount="19" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.009732" total="19" passed="19" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1143" name="EditMode" fullname="Janseon.Tests.EditMode" runstate="Runnable" testcasecount="19" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.008935" total="19" passed="19" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1001" name="CampaignLoopTests" fullname="Janseon.Tests.EditMode.CampaignLoopTests" classname="Janseon.Tests.EditMode.CampaignLoopTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.003894" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1003" name="BypassPath_DistinctConsequence_NoBattleContext" fullname="Janseon.Tests.EditMode.CampaignLoopTests.BypassPath_DistinctConsequence_NoBattleContext" methodname="BypassPath_DistinctConsequence_NoBattleContext" classname="Janseon.Tests.EditMode.CampaignLoopTests" runstate="Runnable" seed="1130248408" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000948" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1004" name="CombatChoice_EmitsImmutableBattleHandoff_WithoutSettlement" fullname="Janseon.Tests.EditMode.CampaignLoopTests.CombatChoice_EmitsImmutableBattleHandoff_WithoutSettlement" methodname="CombatChoice_EmitsImmutableBattleHandoff_WithoutSettlement" classname="Janseon.Tests.EditMode.CampaignLoopTests" runstate="Runnable" seed="859025522" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000312" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1008" name="ConsumerSurface_NegotiationBypassCombat_Observable" fullname="Janseon.Tests.EditMode.CampaignLoopTests.ConsumerSurface_NegotiationBypassCombat_Observable" methodname="ConsumerSurface_NegotiationBypassCombat_Observable" classname="Janseon.Tests.EditMode.CampaignLoopTests" runstate="Runnable" seed="5035090" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.001260" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[CAMPAIGN_QA_NEGO_STAGE=BaseReady
+CAMPAIGN_QA_NEGO_NODE=Yeongdeungpo
+CAMPAIGN_QA_NEGO_TICK=7
+CAMPAIGN_QA_NEGO_RES=95
+CAMPAIGN_QA_NEGO_REP=3
+CAMPAIGN_QA_NEGO_CONS=negotiation
+CAMPAIGN_QA_NEGO_HASH=f786682ba22e589060855d48eda1dd9813e99c54967f66f74037036bf555cefc
+CAMPAIGN_QA_BYPASS_CONS=bypass
+CAMPAIGN_QA_BYPASS_RES=98
+CAMPAIGN_QA_BYPASS_REP=-1
+CAMPAIGN_QA_BYPASS_HASH=6da8b66c9a49255778b7aae7dacdf1cf0d8c1626d1e7210f7cc151990103d130
+CAMPAIGN_QA_BATTLE_ID=battle-3e2b03f17998c2f5
+CAMPAIGN_QA_BATTLE_HASH=3e2b03f17998c2f50689396b656eccd4c532e7665058a83e8e8f57d515cb8e1d
+CAMPAIGN_QA_BATTLE_STAGE=Resolution
+CAMPAIGN_QA_ARTIFACT=/Users/ilseoblee/workspace/seoul-kenshi-wt/rtfc-phase-c/.omo/evidence/unity-poc-core-loop/task-7-campaign-loop/manual-qa/manual-qa-result.txt
+]]></output>
+              </test-case>
+              <test-case id="1006" name="ReapplyResolvedChoice_IsRejectedWithoutMutation" fullname="Janseon.Tests.EditMode.CampaignLoopTests.ReapplyResolvedChoice_IsRejectedWithoutMutation" methodname="ReapplyResolvedChoice_IsRejectedWithoutMutation" classname="Janseon.Tests.EditMode.CampaignLoopTests" runstate="Runnable" seed="710779855" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000282" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1007" name="SameSeedAndCommands_ProduceIdenticalCampaignStateAndLedgerHash" fullname="Janseon.Tests.EditMode.CampaignLoopTests.SameSeedAndCommands_ProduceIdenticalCampaignStateAndLedgerHash" methodname="SameSeedAndCommands_ProduceIdenticalCampaignStateAndLedgerHash" classname="Janseon.Tests.EditMode.CampaignLoopTests" runstate="Runnable" seed="243605922" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000161" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1002" name="SixStages_NegotiationPath_ReachesBaseReadyWithoutBattle" fullname="Janseon.Tests.EditMode.CampaignLoopTests.SixStages_NegotiationPath_ReachesBaseReadyWithoutBattle" methodname="SixStages_NegotiationPath_ReachesBaseReadyWithoutBattle" classname="Janseon.Tests.EditMode.CampaignLoopTests" runstate="Runnable" seed="2141941247" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000146" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1005" name="WrongStageCommand_IsTypedRejection_WithoutMutation" fullname="Janseon.Tests.EditMode.CampaignLoopTests.WrongStageCommand_IsTypedRejection_WithoutMutation" methodname="WrongStageCommand_IsTypedRejection_WithoutMutation" classname="Janseon.Tests.EditMode.CampaignLoopTests" runstate="Runnable" seed="1444868461" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000125" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1009" name="CoreDeterminismTests" fullname="Janseon.Tests.EditMode.CoreDeterminismTests" classname="Janseon.Tests.EditMode.CoreDeterminismTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.002780" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1014" name="CanonicalSerializationIgnoresInsertionOrder" fullname="Janseon.Tests.EditMode.CoreDeterminismTests.CanonicalSerializationIgnoresInsertionOrder" methodname="CanonicalSerializationIgnoresInsertionOrder" classname="Janseon.Tests.EditMode.CoreDeterminismTests" runstate="Runnable" seed="1087309442" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000351" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1013" name="ConflictingPayloadIsRejectedWithoutMutation" fullname="Janseon.Tests.EditMode.CoreDeterminismTests.ConflictingPayloadIsRejectedWithoutMutation" methodname="ConflictingPayloadIsRejectedWithoutMutation" classname="Janseon.Tests.EditMode.CoreDeterminismTests" runstate="Runnable" seed="1905248070" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000710" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1015" name="ConsumerSurface_TwoRunsSameSeedSameFinalLedgerHash_AndPurposeStreamsIsolated" fullname="Janseon.Tests.EditMode.CoreDeterminismTests.ConsumerSurface_TwoRunsSameSeedSameFinalLedgerHash_AndPurposeStreamsIsolated" methodname="ConsumerSurface_TwoRunsSameSeedSameFinalLedgerHash_AndPurposeStreamsIsolated" classname="Janseon.Tests.EditMode.CoreDeterminismTests" runstate="Runnable" seed="1747117818" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.001001" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[CORE_QA_STATE_HASH=ba849d419e292616adf998f28528c3dc9fb38e5c2e4bf0848363371c597bc7ea
+CORE_QA_LEDGER_HASH=c7e44b33f9665ee937be767074ead2fa2c34dcac4b959064b9c1d6874c5d4d85
+CORE_QA_FINAL_COMBINED=ba849d419e292616adf998f28528c3dc9fb38e5c2e4bf0848363371c597bc7ea:c7e44b33f9665ee937be767074ead2fa2c34dcac4b959064b9c1d6874c5d4d85
+CORE_QA_WORLD_BEFORE=-1915776732
+CORE_QA_BATTLE1=-1887179294
+CORE_QA_BATTLE2=-1245361315
+CORE_QA_WORLD_AFTER_BATTLE=-1915776732
+CORE_QA_BATTLE_AFTER_WORLD=-1989000118
+CORE_QA_ARTIFACT=/Users/ilseoblee/workspace/seoul-kenshi-wt/rtfc-phase-c/.omo/evidence/unity-poc-core-loop/task-5-core/manual-qa/manual-qa-result.txt
+]]></output>
+              </test-case>
+              <test-case id="1012" name="DuplicateRequestReturnsStoredReceipt" fullname="Janseon.Tests.EditMode.CoreDeterminismTests.DuplicateRequestReturnsStoredReceipt" methodname="DuplicateRequestReturnsStoredReceipt" classname="Janseon.Tests.EditMode.CoreDeterminismTests" runstate="Runnable" seed="1467477098" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000086" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1011" name="PurposeStreamsDoNotPerturbEachOther" fullname="Janseon.Tests.EditMode.CoreDeterminismTests.PurposeStreamsDoNotPerturbEachOther" methodname="PurposeStreamsDoNotPerturbEachOther" classname="Janseon.Tests.EditMode.CoreDeterminismTests" runstate="Runnable" seed="335452229" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000044" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1010" name="SameSeedAndCommandsProduceSameStateAndLedgerHashes" fullname="Janseon.Tests.EditMode.CoreDeterminismTests.SameSeedAndCommandsProduceSameStateAndLedgerHashes" methodname="SameSeedAndCommandsProduceSameStateAndLedgerHashes" classname="Janseon.Tests.EditMode.CoreDeterminismTests" runstate="Runnable" seed="1286730636" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000131" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1016" name="RouteTraversalTests" fullname="Janseon.Tests.EditMode.RouteTraversalTests" classname="Janseon.Tests.EditMode.RouteTraversalTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.001924" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1017" name="AdjacentLinks_AreLegal_BothDirections" fullname="Janseon.Tests.EditMode.RouteTraversalTests.AdjacentLinks_AreLegal_BothDirections" methodname="AdjacentLinks_AreLegal_BothDirections" classname="Janseon.Tests.EditMode.RouteTraversalTests" runstate="Runnable" seed="837994323" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000275" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1022" name="ConsumerSurface_LegalPathAndIllegalJump_Observable" fullname="Janseon.Tests.EditMode.RouteTraversalTests.ConsumerSurface_LegalPathAndIllegalJump_Observable" methodname="ConsumerSurface_LegalPathAndIllegalJump_Observable" classname="Janseon.Tests.EditMode.RouteTraversalTests" runstate="Runnable" seed="1565333685" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000655" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[ROUTE_QA_FINAL_NODE=Guro
+ROUTE_QA_FINAL_TICK=2
+ROUTE_QA_FINAL_HASH=63c1aa6373dfb158f3bc8a2ccb4db0b5882497117910427f565b8112d36d6efc
+ROUTE_QA_ILLEGAL_REASON=NotAdjacent
+ROUTE_QA_ILLEGAL_BEFORE_HASH=dd86458cd849e14f3d3a168166be0f74f53ff69f3f706fd3f09a1754a4059c18
+ROUTE_QA_ILLEGAL_AFTER_HASH=dd86458cd849e14f3d3a168166be0f74f53ff69f3f706fd3f09a1754a4059c18
+ROUTE_QA_ARTIFACT=/Users/ilseoblee/workspace/seoul-kenshi-wt/rtfc-phase-c/.omo/evidence/unity-poc-core-loop/task-6-route/manual-qa/manual-qa-result.txt
+]]></output>
+              </test-case>
+              <test-case id="1018" name="NoDirectYeongdeungpoGuroJump_RejectsWithoutMutation" fullname="Janseon.Tests.EditMode.RouteTraversalTests.NoDirectYeongdeungpoGuroJump_RejectsWithoutMutation" methodname="NoDirectYeongdeungpoGuroJump_RejectsWithoutMutation" classname="Janseon.Tests.EditMode.RouteTraversalTests" runstate="Runnable" seed="1521552930" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000148" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1019" name="SameCommandsProduceSameRouteStateAndHash" fullname="Janseon.Tests.EditMode.RouteTraversalTests.SameCommandsProduceSameRouteStateAndHash" methodname="SameCommandsProduceSameRouteStateAndHash" classname="Janseon.Tests.EditMode.RouteTraversalTests" runstate="Runnable" seed="144959651" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000111" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1020" name="SameNodeTraversal_IsRejectedWithoutMutation" fullname="Janseon.Tests.EditMode.RouteTraversalTests.SameNodeTraversal_IsRejectedWithoutMutation" methodname="SameNodeTraversal_IsRejectedWithoutMutation" classname="Janseon.Tests.EditMode.RouteTraversalTests" runstate="Runnable" seed="1940505578" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000093" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1021" name="UnknownNodeTraversal_IsRejectedWithoutMutation" fullname="Janseon.Tests.EditMode.RouteTraversalTests.UnknownNodeTraversal_IsRejectedWithoutMutation" methodname="UnknownNodeTraversal_IsRejectedWithoutMutation" classname="Janseon.Tests.EditMode.RouteTraversalTests" runstate="Runnable" seed="1371722155" result="Passed" start-time="2026-09-08 06:24:59Z" end-time="2026-09-08 06:24:59Z" duration="0.000114" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: /Users/ilseoblee/Library/Application Support/Janseon Studio/잔선_ 서울/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
