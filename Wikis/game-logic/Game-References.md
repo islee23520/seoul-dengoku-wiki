@@ -99,6 +99,29 @@
 
 전투에서 적 대표를 생포하면 심문·인도·고용 협상 중 선택한다. 모집은 세 경로로 분리된다: 구조→신뢰→가입(핵심 동료) / 계약 인력(유료·기간제) / 역 내 인력 시장. 즉시 돈으로 사는 핵심 동료는 없다 — 관계가 게이트다.
 
+## 오픈소스 구현 참고 (2026-09-17)
+
+소유자 지정 오픈소스 카탈로그(github.com/bobeff/open-source-games)에서 15종을 소스 수준으로 조사했다. 상업 레퍼런스가 '무엇을 차용할까'를 묻는다면 이쪽은 '그것이 실제로 어떻게 구현됐는가'를 묻는다 — 수치·공식·데이터 레이아웃이 전부 열려 있다. 전투가 실시간 진형·카드인 잔선의 계약 아래, 턴제 출처는 선택지 병기용이다.
+
+| 게임 | 참고 포인트 | 도메인 |
+|---|---|---|
+| OpenXcom | 명중 편차 원둣, 사기 전염(계급·패닉 회복 +15), 반응=잔여AP 이니셔티브 | Battle/Character |
+| OpenPanzer | 무확률 kF 교전표, 참호 지형 기저 스냅, 코어 로스터 이월 | Battle/Campaign |
+| Battle for Wesnoth | 기본×가산×저항 피해 체인, 시간대 ±25, 인접 지휘 25%×계급차 | Battle |
+| Ancient Beast | 타입 피해 벡터+면적, Effect alterations 데이터, init×500-id 큐 | Battle/Character |
+| Cataclysm: DDA | 오버맵 연결 비용, 버블+캐치업, 관계 6축 정수+적대 임계, 5분 필요도 틱, 무인 공정 | Route/Character/Settlement |
+| Unciv | 순차 턴 파이프라인+커밋 게이트, 고정소수점 A*, 상태해시 RNG(재굴림 차단) | Campaign/Determinism |
+| Freeciv | 턴·페이즈 분리 모드, 교역 3분할 슬라이더, 핸디캡=데이터 | Campaign/Settlement |
+| VCMI·fheroes2 | 스택={타입,수}+전력 스칼라, 일일 이동 예산, keep-flags 캠페인 이월 | Campaign/Character |
+| OpenNefia | 호감 임계값 0~300+체감 획득, 관계/어그로 이원, 상점 랭크 | Character/Settlement |
+| Brogue CE | SUBSTANTIVE/COSMETIC 이중 스트림, 층별 자식 시드, 세이브=기록+체크섬 | Determinism |
+| NetHack | conduct 위반 카운터, CORE/DISP RNG, 본즈(동일 코덱·1/3) | Character/Determinism |
+| Zero-K | 후퇴 상태 30/65/99%+헤이븐, 진형 랭크 0~3+헝가리안, timeslow 제압 | Battle |
+| Mindustry | 섹터↔배틀 2층(전투 중 동결), 캠페인 턴 120초·이동평균 생산, 일시정지=시뮬 스킵 | Campaign/Battle |
+| Warzone 2100 | 계급 임계표+판정 보정 레벨, 지휘 정원 6+2×level·반경 r[rank]², 부품형 연구 | Battle/Character |
+
+메커니즘 단위 인용은 [차용 메커니즘 총람 §14](Ref-Mechanism-Index)의 오픈소스 섹션에, 전체 원문은 저장소 내부 조사 문서에 있다.
+
 ## 상세 백과사전 (위키 페이지)
 
 각 게임의 전체 메커니즘은 다음 위키 페이지에서 열람할 수 있다:
