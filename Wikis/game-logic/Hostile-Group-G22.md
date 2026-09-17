@@ -2,8 +2,8 @@
 
 이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.
 
-- 원본 앵커: `docs/game-logic/World-Narrative-Atlas.md`
-- 원본 해시: `61650e2e4605df4e147030b08457d51d0a9366362fe6599d89ff6505683708e1`
+- 원본 앵커: `Wikis/game-logic/World-Narrative-Atlas.md`
+- 원본 해시: `a9e42252da4607f1f0960e3a6163a6e4a68b5ee48e570bdd71d9d0042f69ecb8`
 
 
 폐전지금속군락이 자리 잡은 시설에서는 금속이 녹아 사라지는 구역과 금속이 결정으로 되돌아오는 구역이 분명히 나뉜다.
