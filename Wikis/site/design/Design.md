@@ -1,4 +1,4 @@
-# 《잔선: 서울》 Design.md — POC UI 시각 계약
+# 《서울:전국》 Design.md — POC UI 시각 계약
 
 상태: 2026-09-06 개정 — UI 프레임워크를 uGUI로 고정(소유자 결정, [Intent](/design/Intent) 참조). 구현·캡처·검수는 이 문서를 기준으로 한다.
 대상 해상도: `1280×720`, `1920×1080` (16:9). uGUI(Canvas) 전용. 텍스트는 TextMeshPro(TMP).
@@ -144,7 +144,7 @@
 
 - 필수 이름: `main-title-root`, `main-title-mark`, `main-title-start`.
 - Start는 기존 공개 FSM `ApplicationFlowCoordinator.OpenFoundationAsync`만 호출. 씬 직접 로드 금지.
-- 카피: 제품명 《잔선: 서울》, 한 줄 피치(짧은 보조). 테스트는 문구를 고정하지 않고 **요소 존재·액션·FSM**만 검증.
+- 카피: 제품명 《서울:전국》, 한 줄 피치(짧은 보조). 테스트는 문구를 고정하지 않고 **요소 존재·액션·FSM**만 검증.
 - 배경: void + 희미한 노선 폴드(uGUI 기하, 이미지 텍스처 의존 없음).
 
 ### 5.2 Gameplay document (`gameplay-root`) — Foundation lease

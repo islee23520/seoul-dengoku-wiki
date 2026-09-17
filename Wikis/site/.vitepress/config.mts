@@ -20,7 +20,7 @@ function sidebarItems(dir: string, prefix: string) {
 }
 
 export default defineConfig({
-  title: '잔선: 서울',
+  title: '서울:전국',
   description: '기획서·세계관·게임로직 문서 서비스',
   lang: 'ko',
   outDir: 'dist',

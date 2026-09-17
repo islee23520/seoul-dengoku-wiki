@@ -18,9 +18,9 @@ import {
 
 const SAMPLE = {
   id: 'janseon-core',
-  title: '잔선: 서울',
+  title: '서울:전국',
   onePage: {
-    title: '잔선: 서울',
+    title: '서울:전국',
     audience: 'designers',
     pictureNote: 'one page, pictures over prose',
     panels: [
@@ -223,7 +223,7 @@ test('export index lists the document title from SQLite', () => {
     const htmlPath = join(dir, 'hub.html');
     exportIndexPage({ dbPath, outPath: htmlPath });
     const html = readFileSync(htmlPath, 'utf8');
-    assert.match(html, /잔선: 서울/);
+    assert.match(html, /서울:전국/);
     assert.match(html, /janseon-core\//);
   } finally {
     rmSync(dir, { recursive: true, force: true });
