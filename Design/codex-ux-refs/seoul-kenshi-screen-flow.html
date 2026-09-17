@@ -1,0 +1,177 @@
+<div id="seoul-kenshi-flow">
+  <h2>정본 위키를 10개 화면으로 옮기는 권고안</h2>
+  <p class="text-muted">화면을 선택하면 플레이어 관점, 공유 월드 표현, 주요 행동을 확인할 수 있습니다.</p>
+
+  <div class="entry-lane" aria-label="10개 화면 앞의 진입 셸">
+    <span class="viz-badge"><i data-lucide="key-round" aria-hidden="true"></i> 계정은 인물이 아닌 열쇠</span>
+    <span class="flow-arrow" aria-hidden="true">→</span>
+    <span class="viz-badge"><i data-lucide="panel-top" aria-hidden="true"></i> 타이틀·공유 월드 입장</span>
+    <span class="flow-arrow" aria-hidden="true">→</span>
+    <strong>본편 10면</strong>
+  </div>
+
+  <div class="phase">
+    <div class="phase-label">
+      <span class="phase-number">A</span>
+      <span><strong>나는 누구인가</strong><br><span class="text-muted text-small">세계 인물과 시작 조건</span></span>
+    </div>
+    <div class="phase-screens">
+      <button type="button" class="btn viz-tile is-selected" aria-pressed="true" data-screen="embodiment">
+        <span class="screen-num">1</span><i data-lucide="user-round-cog" aria-hidden="true"></i><span>착생·캐릭터 생성</span>
+        <small>무작위 / 커스텀</small>
+      </button>
+      <span class="flow-arrow" aria-hidden="true">→</span>
+      <button type="button" class="btn viz-tile" aria-pressed="false" data-screen="preset">
+        <span class="screen-num">2</span><i data-lucide="package-open" aria-hidden="true"></i><span>시작 프리셋</span>
+        <small>결핍 6종</small>
+      </button>
+      <span class="flow-arrow" aria-hidden="true">→</span>
+      <button type="button" class="btn viz-tile" aria-pressed="false" data-screen="recruit">
+        <span class="screen-num">3</span><i data-lucide="users-round" aria-hidden="true"></i><span>세계 인물 모집</span>
+        <small>NPC와 유저 구분</small>
+      </button>
+    </div>
+  </div>
+
+  <div class="phase">
+    <div class="phase-label">
+      <span class="phase-number">B</span>
+      <span><strong>세계에서 무엇을 할까</strong><br><span class="text-muted text-small">사람 중심의 공유 월드</span></span>
+    </div>
+    <div class="phase-screens phase-screens-wide">
+      <button type="button" class="btn viz-tile" aria-pressed="false" data-screen="hub">
+        <span class="screen-num">4</span><i data-lucide="warehouse" aria-hidden="true"></i><span>거점 허브</span>
+        <small>다른 파티가 보임</small>
+      </button>
+      <span class="flow-arrow" aria-hidden="true">→</span>
+      <button type="button" class="btn viz-tile" aria-pressed="false" data-screen="dialogue">
+        <span class="screen-num">5</span><i data-lucide="messages-square" aria-hidden="true"></i><span>캐릭터 대화</span>
+        <small>관계와 결과</small>
+      </button>
+      <span class="flow-arrow" aria-hidden="true">→</span>
+      <button type="button" class="btn viz-tile" aria-pressed="false" data-screen="route">
+        <span class="screen-num">6</span><i data-lucide="map" aria-hidden="true"></i><span>전략 노선도</span>
+        <small>내 인물에서 출발</small>
+      </button>
+      <span class="flow-arrow" aria-hidden="true">→</span>
+      <button type="button" class="btn viz-tile" aria-pressed="false" data-screen="travel">
+        <span class="screen-num">7</span><i data-lucide="route" aria-hidden="true"></i><span>역간 여행</span>
+        <small>경로·비용·타 파티</small>
+      </button>
+      <span class="flow-arrow" aria-hidden="true">→</span>
+      <button type="button" class="btn viz-tile" aria-pressed="false" data-screen="encounter">
+        <span class="screen-num">8</span><i data-lucide="signpost" aria-hidden="true"></i><span>조우</span>
+        <small>비용과 결과 예고</small>
+      </button>
+    </div>
+  </div>
+
+  <div class="phase">
+    <div class="phase-label">
+      <span class="phase-number">C</span>
+      <span><strong>결과를 만들고 남긴다</strong><br><span class="text-muted text-small">닫힌 전투에서 공유 원장으로</span></span>
+    </div>
+    <div class="phase-screens">
+      <button type="button" class="btn viz-tile" aria-pressed="false" data-screen="battle">
+        <span class="screen-num">9</span><i data-lucide="swords" aria-hidden="true"></i><span>전투</span>
+        <small>진형 → 실시간 → 일시정지</small>
+      </button>
+      <span class="flow-arrow" aria-hidden="true">→</span>
+      <button type="button" class="btn viz-tile" aria-pressed="false" data-screen="settlement">
+        <span class="screen-num">10</span><i data-lucide="receipt-text" aria-hidden="true"></i><span>정산</span>
+        <small>결과 한 줄 반영</small>
+      </button>
+      <span class="flow-arrow" aria-hidden="true">→</span>
+      <span class="viz-badge"><i data-lucide="book-open-check" aria-hidden="true"></i> 공유 세계 원장</span>
+    </div>
+  </div>
+
+  <div class="world-spine" aria-label="공유 월드가 드러나는 지점">
+    <strong>공유 월드는 어디서 보이나</strong>
+    <span><i data-lucide="eye" aria-hidden="true"></i> 거점: 같은 역의 다른 유저 파티</span>
+    <span><i data-lucide="map-pinned" aria-hidden="true"></i> 노선·여행: 변경된 역과 이동 중인 파티</span>
+    <span><i data-lucide="scroll-text" aria-hidden="true"></i> 정산: 내 결과가 세계 원장에 기록</span>
+  </div>
+
+  <div class="card selected-detail" aria-live="polite">
+    <div class="detail-heading">
+      <span class="viz-badge" id="detail-number">화면 1</span>
+      <strong id="detail-title">착생·캐릭터 생성</strong>
+    </div>
+    <div class="detail-grid">
+      <div><span class="detail-label">플레이어가 보는 것</span><p id="detail-sees">이미 진행 중인 서울에서 내가 될 수 있는 인물과 커스텀 배경</p></div>
+      <div><span class="detail-label">공유 월드 연결</span><p id="detail-world">다른 계정이 점유한 인물은 선택할 수 없음</p></div>
+      <div><span class="detail-label">주요 행동</span><p id="detail-action">무작위 자리를 받거나 소속·부모·생업을 직접 정함</p></div>
+    </div>
+  </div>
+
+  <div class="decision-strip" aria-label="이번에 확인할 핵심 결정">
+    <strong>지금 확인할 핵심</strong>
+    <span>① 이 10면 순서</span>
+    <span>② 다른 유저는 세계 인물 정보만 표시</span>
+    <span>③ 사망·후계 전용 화면은 후속 티켓으로 분리</span>
+  </div>
+</div>
+
+<style>
+  #seoul-kenshi-flow { display: grid; gap: 16px; width: 100%; }
+  #seoul-kenshi-flow h2, #seoul-kenshi-flow p { margin: 0; }
+  #seoul-kenshi-flow .entry-lane,
+  #seoul-kenshi-flow .phase-screens,
+  #seoul-kenshi-flow .world-spine,
+  #seoul-kenshi-flow .decision-strip,
+  #seoul-kenshi-flow .detail-heading { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  #seoul-kenshi-flow .entry-lane { justify-content: center; padding-block: 4px; }
+  #seoul-kenshi-flow .phase { display: grid; grid-template-columns: minmax(150px, 190px) 1fr; gap: 14px; align-items: center; }
+  #seoul-kenshi-flow .phase-label { display: flex; align-items: center; gap: 10px; }
+  #seoul-kenshi-flow .phase-number { display: inline-grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: color-mix(in srgb, var(--viz-series-1) 16%, transparent); color: var(--foreground); font-weight: 500; }
+  #seoul-kenshi-flow .phase-screens { flex-wrap: nowrap; }
+  #seoul-kenshi-flow .phase-screens .viz-tile { min-width: 128px; flex: 1 1 0; display: grid; grid-template-columns: auto auto 1fr; align-items: center; gap: 6px; text-align: left; background: color-mix(in srgb, var(--viz-series-1) 8%, transparent); }
+  #seoul-kenshi-flow .phase-screens .viz-tile small { grid-column: 2 / -1; color: var(--muted-foreground); }
+  #seoul-kenshi-flow .phase-screens-wide .viz-tile { min-width: 108px; }
+  #seoul-kenshi-flow .screen-num { font-variant-numeric: tabular-nums; font-weight: 500; }
+  #seoul-kenshi-flow .flow-arrow { color: var(--muted-foreground); }
+  #seoul-kenshi-flow .world-spine { padding-block: 10px; border-block: 1px solid var(--border); }
+  #seoul-kenshi-flow .world-spine span { display: inline-flex; align-items: center; gap: 6px; color: var(--foreground); }
+  #seoul-kenshi-flow .selected-detail { display: grid; gap: 12px; }
+  #seoul-kenshi-flow .detail-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  #seoul-kenshi-flow .detail-label { display: block; color: var(--muted-foreground); margin-bottom: 4px; }
+  #seoul-kenshi-flow .decision-strip { justify-content: center; color: var(--foreground); }
+  #seoul-kenshi-flow .decision-strip span { display: inline-flex; align-items: center; }
+  #seoul-kenshi-flow [data-lucide] { width: 16px; height: 16px; }
+  @media (max-width: 760px) {
+    #seoul-kenshi-flow .phase { grid-template-columns: 1fr; }
+    #seoul-kenshi-flow .phase-screens { display: grid; grid-template-columns: 1fr; width: 100%; }
+    #seoul-kenshi-flow .phase-screens .flow-arrow { transform: rotate(90deg); justify-self: center; }
+    #seoul-kenshi-flow .detail-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<script>
+  (() => {
+    const root = document.getElementById('seoul-kenshi-flow');
+    const details = {
+      embodiment: ['화면 1', '착생·캐릭터 생성', '이미 진행 중인 서울에서 내가 될 수 있는 인물과 커스텀 배경', '다른 계정이 점유한 인물은 선택할 수 없음', '무작위 자리를 받거나 소속·부모·생업을 직접 정함'],
+      preset: ['화면 2', '시작 프리셋', '신분이 아닌 여섯 종류의 장기 결핍', '착생의 소속·혈연이 충돌 시 우선되며 변경 결과가 원장에 남음', '적용 전 유지·추가·대체 규칙을 확인하고 선택'],
+      recruit: ['화면 3', '세계 인물 모집', '현재 모집 가능한 이름 있는 NPC와 관계·소속', '다른 유저가 조종 중인 인물은 모집 대상과 분리', '동료 후보를 비교하고 파티를 확정'],
+      hub: ['화면 4', '거점 허브', '내 인물·파티·관계·부상과 거점에서 할 일', '같은 역의 다른 유저 파티와 최근 세계 변화 3건', '휴식·대화·장비·의뢰·원정 준비 중 선택'],
+      dialogue: ['화면 5', '캐릭터 대화', '대화 상대의 초상·소속·관계와 선택 결과', '관계 변화가 인물 기록으로 쌓이고 임계에서 세계 사건이 됨', '비용과 알려진 결과를 보고 대답 선택'],
+      route: ['화면 6', '전략 노선도', '내 위치에서 갈 수 있는 역·통행권·관계', '16국 점유와 다른 유저가 바꾼 역·노선 상태를 정보 필터로 표시', '목적지를 고르고 필요한 허가와 위험을 확인'],
+      travel: ['화면 7', '역간 여행', '경로·시간·보급 비용·예상 조우', '같은 역·노선을 이동하는 다른 유저 파티가 보임', '경로를 확정하거나 다른 길을 선택'],
+      encounter: ['화면 8', '조우', '상대 인물과 교섭·우회·전투의 비용·효과·위험', '선택이 관계·통행·거점에 미칠 공유 월드 영향을 예고', '결과를 비교한 뒤 해결 방법 선택'],
+      battle: ['화면 9', '전투', '같은 하단 독에서 진형 편집→실시간 카드→일시정지 상태가 교체됨', '전투 자체는 파티별 폐쇄 세션이며 외부 세계를 다시 읽지 않음', '진형·정면·카드 타이밍·후퇴·항복을 지휘'],
+      settlement: ['화면 10', '정산', '부상·사망·물자·시간·관계·거점 변화', 'ResultId로 한 번만 반영되고 사람이 읽는 한 줄 영수증을 표시', '결과를 확인하고 거점으로 복귀']
+    };
+    const fields = ['detail-number', 'detail-title', 'detail-sees', 'detail-world', 'detail-action'].map(id => root.querySelector('#' + id));
+    root.querySelectorAll('[data-screen]').forEach(button => {
+      button.addEventListener('click', () => {
+        root.querySelectorAll('[data-screen]').forEach(item => {
+          const selected = item === button;
+          item.classList.toggle('is-selected', selected);
+          item.setAttribute('aria-pressed', String(selected));
+        });
+        details[button.dataset.screen].forEach((value, index) => { fields[index].textContent = value; });
+      });
+    });
+  })();
+</script>
