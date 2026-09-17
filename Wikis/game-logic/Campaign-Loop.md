@@ -17,3 +17,7 @@
 시간은 칸, 시간, 하루, 한 주다. 가까운 곳은 자세히, 먼 곳은 집계다. 거점의 하루와 주의 긴장은 [거점과 영토](Strongholds-and-Territory.md), [경제와 생산](Economy-and-Production.md), [물류와 기반 시설](Logistics-and-Infrastructure.md), [캠페인 진행과 위기](Campaign-Progression.md).
 
 거점을 아직 가지고 있다면, 나서기 전에 종파·유물·의례를 고를 수 있다. 원정 중에는 공개 신앙을 다시 고치지 않는다. 상세는 [신앙](Faith-Culture-Schism.md).
+
+## 열 화면과 다섯 결말
+
+참고 화면 `Design/codex-ux-refs/seoul-kenshi-screen-flow.html`의 열 장은 **귀환 갈래**의 한 예다. 거점 허브에서 준비하고, 목적지로 가고, 조우·진형·전투를 지나, 결과를 확인하고 거점으로 복귀한다. 그 복귀는 위 다섯 가운데 첫째다. 정착·정복·방랑·교역은 같은 준비에서 갈라지며, 화면 10의 「거점으로 복귀」를 필수 엔딩으로 두지 않는다. 허브가 없는 원정도 원정이다.
