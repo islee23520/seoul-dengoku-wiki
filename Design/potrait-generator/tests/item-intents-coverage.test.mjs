@@ -26,8 +26,8 @@ test('item-intents-coverage', () => {
   let totalRows = 0;
   let nullCount = 0;
   try {
-    totalRows = parseInt(execSync(`sqlite3 -readonly "${DB_PATH}" "SELECT COUNT(*) FROM item_intents;"`, { encoding: 'utf8' }).trim() || '0');
-    nullCount = parseInt(execSync(`sqlite3 -readonly "${DB_PATH}" "SELECT COUNT(*) FROM item_intents WHERE design_intent IS NULL OR design_intent = '' OR verification_criteria IS NULL OR verification_criteria = '';"`, { encoding: 'utf8' }).trim() || '0');
+    totalRows = parseInt(execSync(`sqlite3 -readonly -cmd ".timeout 5000" "${DB_PATH}" "SELECT COUNT(*) FROM item_intents;"`, { encoding: 'utf8' }).trim() || '0');
+    nullCount = parseInt(execSync(`sqlite3 -readonly -cmd ".timeout 5000" "${DB_PATH}" "SELECT COUNT(*) FROM item_intents WHERE design_intent IS NULL OR design_intent = '' OR verification_criteria IS NULL OR verification_criteria = '';"`, { encoding: 'utf8' }).trim() || '0');
   } catch (e) {
     console.log('DB query error (table may be missing):', e.message);
   }
@@ -39,3 +39,4 @@ test('item-intents-coverage', () => {
 
   console.log('✅ item_intents has full coverage with library.json (superset, COUNT=' + totalRows + ')');
 });
+

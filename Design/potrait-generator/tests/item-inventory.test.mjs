@@ -25,7 +25,7 @@ test('item-inventory', () => {
   ];
 
   let hasBoilerplate = false;
-  const rows = execSync(`sqlite3 -readonly "${DB_PATH}" "
+  const rows = execSync(`sqlite3 -readonly -cmd ".timeout 5000" "${DB_PATH}" "
     SELECT logical_id, design_intent, verification_criteria 
     FROM item_intents;
   "`, { encoding: 'utf8' }).trim().split('\n');
@@ -64,3 +64,4 @@ test('item-inventory', () => {
   console.log('✅ Rejected entries preserve "unsupported — family-02/03 VISUAL_REJECTED"');
   console.log('✅ item-inventory test passes (scope-limited to sqlite + INVENTORY.md + this test)');
 });
+
