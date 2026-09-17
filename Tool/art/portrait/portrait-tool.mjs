@@ -23,7 +23,24 @@ const slotSchema = JSON.parse(readFileSync(new URL('./portrait-layer-slots.json'
 const reviewContract = JSON.parse(readFileSync(new URL('./portrait-review-contract.json', import.meta.url), 'utf8'));
 
 export const SEXES = ['female', 'male'];
-export const DISABLED_BY_SEX = { female: ['beard', 'beard_back'], male: [] };
+export const SELECTABLE_SLOTS = new Set(['bg', 'face_base', 'mouth', 'nose', 'eyes_white', 'eyes_color', 'eyes_shape', 'clothes', 'headgear', 'acc_eye', 'frame']);
+export const SLOT_MODES = {
+  female: {
+    clothes_back: 'companion', headgear_back: 'companion', hair_back: 'companion', beard_back: 'disabled',
+    neck: 'fixed', cheeks: 'companion', chin: 'companion', ears: 'fixed', headgear_mid: 'companion',
+    beard: 'disabled', hair: 'fixed', clothes_front: 'companion',
+  },
+  male: {
+    clothes_back: 'companion', headgear_back: 'companion', hair_back: 'disabled', beard_back: 'disabled',
+    neck: 'fixed', cheeks: 'companion', chin: 'companion', ears: 'fixed', headgear_mid: 'companion',
+    beard: 'fixed', hair: 'fixed', clothes_front: 'companion',
+  },
+};
+export const LOGICAL_BUNDLES = Object.freeze({
+  clothes: Object.freeze({ label: '의상', primary: 'clothes', members: Object.freeze(['clothes_back', 'clothes', 'clothes_front']) }),
+  hair: Object.freeze({ label: '헤어', primary: 'hair', members: Object.freeze(['hair_back', 'hair']) }),
+  face_shape: Object.freeze({ label: '얼굴형', primary: 'face_base', members: Object.freeze(['face_base', 'cheeks', 'chin']) }),
+});
 export const DEFAULT_CANVAS = { width: reviewContract.reference.width, height: reviewContract.reference.height };
 export const TOOL_ID = 'Tool/art/portrait/portrait-tool.mjs';
 
@@ -38,13 +55,14 @@ function pngSize(bytes, label) {
   return { width: bytes.readUInt32BE(16), height: bytes.readUInt32BE(20) };
 }
 
-function slotEnabled(sex, slotId) {
-  return !DISABLED_BY_SEX[sex].includes(slotId);
+export function slotMode(sex, slotId) {
+  if (slotId === 'hair') return 'selectable';
+  return SELECTABLE_SLOTS.has(slotId) ? 'selectable' : SLOT_MODES[sex][slotId];
 }
 
 function emptySexRecord(reason) {
   const entries = {};
-  for (const slot of slotSchema.slots) entries[slot.id] = { enabled: false, variants: [], reason };
+  for (const slot of slotSchema.slots) entries[slot.id] = { mode: 'disabled', enabled: false, variants: [], reason };
   return { slots: entries };
 }
 
@@ -65,10 +83,11 @@ export function buildLibrary(options = {}) {
   for (const sex of SEXES) {
     const entries = {};
     for (const slot of slotSchema.slots) {
-      const enabled = slotEnabled(sex, slot.id);
+      const mode = slotMode(sex, slot.id);
+      const enabled = mode !== 'disabled';
       const dir = resolve(repoRoot, plateRoot, sex, slot.id);
       const variants = [];
-      if (enabled && existsSync(dir) && statSync(dir).isDirectory()) {
+      if (['selectable', 'fixed'].includes(mode) && existsSync(dir) && statSync(dir).isDirectory()) {
         for (const name of readdirSync(dir).sort()) {
           if (!name.toLowerCase().endsWith('.png')) continue;
           const full = join(dir, name);
@@ -84,9 +103,10 @@ export function buildLibrary(options = {}) {
           });
         }
       }
+      if (mode === 'fixed' && variants.length > 1) variants.splice(1);
       entries[slot.id] = enabled
-        ? { enabled: true, variants }
-        : { enabled: false, variants: [], reason: `slot not applicable to ${sex}` };
+        ? { mode, enabled: true, variants }
+        : { mode, enabled: false, variants: [], reason: `slot disabled for ${sex}` };
     }
     sexes[sex] = { slots: entries };
   }
@@ -100,6 +120,7 @@ export function buildLibrary(options = {}) {
     canvas,
     path_base: posix(relative(repoRoot, base)) || '.',
     slots: slotSchema.slots,
+    logical_bundles: LOGICAL_BUNDLES,
     sexes,
   };
 }
@@ -121,13 +142,15 @@ export function libraryFromRecipe(options = {}) {
 
   const entries = {};
   for (const slot of slotSchema.slots) {
-    entries[slot.id] = slotEnabled(sex, slot.id)
-      ? { enabled: true, variants: [] }
-      : { enabled: false, variants: [], reason: `slot not applicable to ${sex}` };
+    const mode = sex === 'female' && ['beard', 'beard_back'].includes(slot.id) ? 'disabled' : 'fixed';
+    entries[slot.id] = mode === 'fixed'
+      ? { mode, enabled: true, variants: [] }
+      : { mode, enabled: false, variants: [], reason: `slot disabled for ${sex}` };
   }
   for (const asset of recipe.assets ?? []) {
     const entry = entries[asset.id];
     if (!entry?.enabled) continue;
+    if (asset.group) entry.mode = 'selectable';
     const id = `${asset.id}-${asset.variant ?? 'base'}`;
     if (entry.variants.some((variant) => variant.id === id)) continue;
     const full = resolve(recipeDir, asset.path);
@@ -140,10 +163,17 @@ export function libraryFromRecipe(options = {}) {
     // Stage-1 marks deliberately transparent slots; keep that, so an empty
     // plate is never mistaken for authored content later.
     const variant = { id, path: posix(relative(base, full)), sha256: digest(bytes) };
+    if (asset.blend_mode === 'multiply') variant.blend_mode = 'multiply';
     if (asset.empty === true) variant.empty = true;
     entry.variants.push(variant);
   }
   for (const entry of Object.values(entries)) entry.variants.sort((a, b) => a.id.localeCompare(b.id));
+  // Legacy frozen recipes predate the dynamic eyes_white slot and already carry sclera pixels
+  // inside eyes_shape. Disable only that missing legacy slot so byte-exact reconstruction remains
+  // possible; new recipes that provide eyes_white keep it enabled normally.
+  if (entries.eyes_white?.variants.length === 0) {
+    entries.eyes_white = { mode: 'disabled', enabled: false, variants: [], reason: 'legacy recipe predates eyes_white split' };
+  }
 
   const other = SEXES.find((value) => value !== sex);
   return {
@@ -155,6 +185,7 @@ export function libraryFromRecipe(options = {}) {
     canvas,
     path_base: posix(relative(repoRoot, base)) || '.',
     slots: slotSchema.slots,
+    logical_bundles: LOGICAL_BUNDLES,
     sexes: {
       [sex]: { slots: entries },
       [other]: emptySexRecord('not authored in this stage-1 recipe'),
@@ -164,6 +195,16 @@ export function libraryFromRecipe(options = {}) {
 
 function resolvePlate(library, repoRoot, variantPath) {
   return resolve(repoRoot, library.path_base ?? '.', variantPath);
+}
+
+function resolveVariantRender(variant, selection) {
+  return variant.render_overrides?.find((override) => selection[override.when.slot] === override.when.variant) ?? variant;
+}
+
+function companionMatches(variant, selection) {
+  const link = variant.companion_of;
+  const targets = Array.isArray(link?.variants) ? link.variants : [link?.variant];
+  return typeof link?.slot === 'string' && targets.includes(selection[link.slot]);
 }
 
 /**
@@ -190,29 +231,46 @@ export function composeFromLibrary(options = {}) {
   if (!record) throw new Error(`library has no ${sex} record`);
 
   const slots = {};
+  const blendModes = {};
   const order = [];
   for (const slot of orderedSlots()) {
     const entry = record[slot.id];
-    const chosen = selection[slot.id];
+    if (!entry || !['selectable', 'fixed', 'companion', 'disabled'].includes(entry.mode)) {
+      throw new Error(`slot ${slot.id} has no valid mode`);
+    }
+    if (entry.mode === 'companion' && selection[slot.id] !== undefined) {
+      throw new Error(`slot ${slot.id} is companion and cannot be selected independently`);
+    }
+    let chosen = selection[slot.id];
+    if (entry.mode === 'fixed' && chosen === undefined) chosen = entry.variants[0]?.id;
+    if (entry.mode === 'companion') {
+      chosen = entry.variants.find((variant) => companionMatches(variant, selection))?.id;
+    }
+    if (chosen === null) continue;
     if (chosen === undefined) {
-      if (slot.required && entry?.enabled) throw new Error(`missing required slot: ${slot.id}`);
+      if (entry.mode === 'fixed') throw new Error(`fixed slot has no plate: ${slot.id}`);
+      if (slot.required && entry.mode === 'selectable') throw new Error(`missing required slot: ${slot.id}`);
       continue;
     }
-    if (!entry?.enabled) throw new Error(`slot ${slot.id} is disabled for ${sex}`);
+    if (entry.mode === 'disabled') throw new Error(`slot ${slot.id} is disabled for ${sex}`);
     const variant = entry.variants.find((candidate) => candidate.id === chosen);
     if (!variant) throw new Error(`unknown variant ${chosen} for slot ${slot.id}`);
-    const full = resolvePlate(library, repoRoot, variant.path);
-    if (!existsSync(full)) throw new Error(`plate missing: ${variant.path}`);
+    const render = resolveVariantRender(variant, selection);
+    const full = resolvePlate(library, repoRoot, render.path);
+    if (!existsSync(full)) throw new Error(`plate missing: ${render.path}`);
     const bytes = readFileSync(full);
-    if (variant.sha256 && digest(bytes) !== variant.sha256) {
-      throw new Error(`plate hash drifted from the library record: ${variant.path}`);
+    if (!/^[0-9a-f]{64}$/.test(render.sha256) || digest(bytes) !== render.sha256) {
+      throw new Error(`plate hash drifted from the library record: ${render.path}`);
     }
     slots[slot.id] = full;
+    blendModes[slot.id] = render.blend_mode ?? variant.blend_mode ?? 'source-over';
     order.push(slot.id);
   }
   if (order.length === 0) throw new Error('selection is empty');
 
-  const composed = compositePortraitLayers({ schema: slotSchema, slots });
+  const composed = compositePortraitLayers({
+    schema: { ...slotSchema, slots: slotSchema.slots.map((slot) => ({ ...slot, required: false })) }, slots, blendModes
+  });
   const canvas = library.canvas ?? DEFAULT_CANVAS;
   if (composed.width !== canvas.width || composed.height !== canvas.height) {
     throw new Error(`composite ${composed.width}x${composed.height} != library canvas ${canvas.width}x${canvas.height}`);
@@ -237,9 +295,10 @@ export function assignPortraits(options = {}) {
     const selection = {};
     for (const slot of orderedSlots()) {
       const entry = record[slot.id];
-      if (!slot.required || !entry?.enabled) continue;
+      if (!slot.required || !['selectable', 'fixed'].includes(entry?.mode)) continue;
       if (entry.variants.length === 0) throw new Error(`no variants for required slot ${slot.id} (${sex})`);
-      const index = parseInt(digest(`${seed}|${person.id}|${slot.id}`).slice(0, 8), 16) % entry.variants.length;
+      const index = entry.mode === 'fixed' ? 0
+        : parseInt(digest(`${seed}|${person.id}|${slot.id}`).slice(0, 8), 16) % entry.variants.length;
       selection[slot.id] = entry.variants[index].id;
     }
     assignments.push({ character_id: person.id, sex, selection });

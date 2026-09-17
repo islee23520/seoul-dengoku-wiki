@@ -105,7 +105,7 @@ test('target-contract maps front hair to hair and does not assign neck tag to ne
   assert.ok(result.unmapped.includes('mystery-part'));
 });
 
-test('eyewhite+eyebrow combine into eyes_shape with source-over', () => {
+test('eyewhite and eyebrow stay in separate eye layers', () => {
   const map = JSON.parse(readFileSync(mapPath, 'utf8'));
   const schema = JSON.parse(readFileSync(schemaPath, 'utf8'));
   const dir = mkdtempSync(join(tmpdir(), 'see-through-eyes-'));
@@ -126,8 +126,11 @@ test('eyewhite+eyebrow combine into eyes_shape with source-over', () => {
     outputDir: outDir,
   });
 
+  assert.ok(result.slots.eyes_white);
   assert.ok(result.slots.eyes_shape);
-  const image = decodePng(readFileSync(result.slots.eyes_shape));
-  assert.deepEqual(pixelAt(image.pixels, 3, 2), [0, 0, 0, 255], 'brow covers white');
-  assert.deepEqual(pixelAt(image.pixels, 3, 4), [255, 255, 255, 255], 'white remains below');
+  const whiteImage = decodePng(readFileSync(result.slots.eyes_white));
+  const shapeImage = decodePng(readFileSync(result.slots.eyes_shape));
+  assert.deepEqual(pixelAt(whiteImage.pixels, 3, 4), [255, 255, 255, 255], 'sclera remains in eyes_white');
+  assert.deepEqual(pixelAt(shapeImage.pixels, 3, 2), [0, 0, 0, 255], 'brow remains in eyes_shape');
+  assert.deepEqual(pixelAt(shapeImage.pixels, 3, 4), [0, 0, 0, 0], 'eyes_shape owns no sclera');
 });

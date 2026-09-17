@@ -1,0 +1,591 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "sex": "male",
+      "slot": "hair",
+      "mode": "selectable",
+      "acceptance_record": ".omo/evidence/portrait-stage23/male-hair-registration/acceptance.json",
+      "acceptance_record_sha256": "23b4afffb1b7808e26ab30f6b7b504684af78e4737f2e5025a5040cd00205e44",
+      "required_status_pattern": "LEAD_ACCEPTED",
+      "render_override_acceptance": {
+        "record": ".omo/evidence/portrait-stage23/male-hair-headgear-overrides/acceptance.json",
+        "sha256": "154f533d3d5b154937da3afd307fe452b42cdae7c2c7e8ae5f0ace04ae9b1ebf",
+        "required_status_pattern": "LEAD_ACCEPTED"
+      },
+      "replace_slot": true,
+      "variants": [
+        {
+          "id": "male-hair-01",
+          "label": "Male hair 01 short textured spikes",
+          "candidate": "Design/potrait-generator/assets/v2/plates/male/hair/male-hair-01.png",
+          "candidate_sha256": "e31cd3f810513bb7f1c4c1bbac7f39f2ccb09fec784c42ec6fcf04f64b2a6786",
+          "render_overrides": [
+            {
+              "when": {
+                "slot": "headgear",
+                "variant": "male-headgear-01"
+              },
+              "candidate": ".omo/evidence/portrait-stage23/male-hair-headgear-overrides/candidates/male-hair-01__male-headgear-01.png",
+              "candidate_sha256": "428be948da8ddebe4a7e60905e8eff132470cc59dca1d54fa165434f116ed0d3"
+            },
+            {
+              "when": {
+                "slot": "headgear",
+                "variant": "male-headgear-02"
+              },
+              "candidate": ".omo/evidence/st_01a0ab21/candidates/male-hair-01__male-headgear-02.png",
+              "candidate_sha256": "2a09b2669b21eb29a9ee8532dadc54ae6b9c02df5501b476ad05d082603b1468",
+              "acceptance_record": ".omo/evidence/st_01a0ab21/acceptance.json",
+              "acceptance_record_sha256": "9198691ca0fc0e921615bfd2b3e0a02abe77a68e59875900d23a54b6e5b85d45",
+              "required_status_pattern": "SELF_REVIEW_PASS"
+            },
+            {
+              "when": {
+                "slot": "headgear",
+                "variant": "male-headgear-03"
+              },
+              "candidate": ".omo/evidence/portrait-stage23/male-hair-headgear-overrides/candidates/male-hair-01__male-headgear-03.png",
+              "candidate_sha256": "d3d1e92fe696dd9aa768ee38abfe3ba01c2f1b3da42b2ea1751936715c744e68"
+            }
+          ]
+        },
+        {
+          "id": "male-hair-02",
+          "label": "Male hair 02 short side part",
+          "candidate": "Design/potrait-generator/assets/v2/plates/male/hair/male-hair-02.png",
+          "candidate_sha256": "768f26ea1b1c0290bbd1d3205cd6e3916641535662d1f9802511e7deefdf0b69",
+          "render_overrides": [
+            {
+              "when": {
+                "slot": "headgear",
+                "variant": "male-headgear-01"
+              },
+              "candidate": ".omo/evidence/portrait-stage23/male-hair-headgear-overrides/candidates/male-hair-02__male-headgear-01.png",
+              "candidate_sha256": "34888427af95b3310632c6a0726a016b41c3448f586d0ea165b5c3ef32a27bde"
+            },
+            {
+              "when": {
+                "slot": "headgear",
+                "variant": "male-headgear-02"
+              },
+              "candidate": ".omo/evidence/portrait-stage23/male-hair-headgear-overrides/candidates/male-hair-02__male-headgear-02.png",
+              "candidate_sha256": "d51c98789c316230fa8a67e7bcb1a387be0e4e40a26a3e170326f9fd592e8cd2"
+            },
+            {
+              "when": {
+                "slot": "headgear",
+                "variant": "male-headgear-03"
+              },
+              "candidate": ".omo/evidence/portrait-stage23/male-hair-headgear-overrides/candidates/male-hair-02__male-headgear-03.png",
+              "candidate_sha256": "c0faf3e3e8ff185fffbf5a6fe108243aec3ec409edc4a35c1984f529fd5c6820"
+            }
+          ]
+        },
+        {
+          "id": "male-hair-03",
+          "label": "Male hair 03 close buzz cut",
+          "candidate": "Design/potrait-generator/assets/v2/plates/male/hair/male-hair-03.png",
+          "candidate_sha256": "3632e38b12b7551a5e3c82dc33139c23dc9510fa4e170a976b1cece8d50db1eb",
+          "render_overrides": [
+            {
+              "when": {
+                "slot": "headgear",
+                "variant": "male-headgear-01"
+              },
+              "candidate": ".omo/evidence/portrait-stage23/male-hair-headgear-overrides/candidates/male-hair-03__male-headgear-01.png",
+              "candidate_sha256": "3dc51782f10faada8671710a1a4598e78cda06374e8227cadade99a01357d9c1"
+            },
+            {
+              "when": {
+                "slot": "headgear",
+                "variant": "male-headgear-02"
+              },
+              "candidate": ".omo/evidence/portrait-stage23/male-hair-headgear-overrides/candidates/male-hair-03__male-headgear-02.png",
+              "candidate_sha256": "062fe931a0ffcc28552ebc5e3622767d4219f39aa4a8d0dea5d69ffb53365b02"
+            },
+            {
+              "when": {
+                "slot": "headgear",
+                "variant": "male-headgear-03"
+              },
+              "candidate": ".omo/evidence/portrait-stage23/male-hair-headgear-overrides/candidates/male-hair-03__male-headgear-03.png",
+              "candidate_sha256": "3477c6de012346ebfbc63344211443cae799ed4cdab0ec9dbb2a360ec5cfbf4e"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sex": "female",
+      "slot": "clothes_back",
+      "mode": "companion",
+      "acceptance_record": ".omo/evidence/st_01a0aab3/acceptance.json",
+      "acceptance_record_sha256": "b26966b04d782b7ecdc4803fbb724b74864a7e7aa91ba7fe4eeb8c14b3c5dd4f",
+      "required_status_pattern": "SELF_REVIEW_PASS",
+      "replace_slot": false,
+      "variants": [
+        {
+          "id": "female-clothes-back-02",
+          "label": "Female clothes 02 empty back member",
+          "candidate": ".omo/evidence/st_01a0aab3/candidates/female-clothes-02-bundle/clothes_back.png",
+          "candidate_sha256": "c048a1a282f771f460451eb48393c76cf80b504deed19b60251876a8c072e1d5",
+          "empty": true,
+          "companion_of": {
+            "slot": "clothes",
+            "variant": "female-clothes-02"
+          }
+        }
+      ]
+    },
+    {
+      "sex": "female",
+      "slot": "clothes",
+      "mode": "selectable",
+      "acceptance_record": ".omo/evidence/st_01a0ab20/acceptance.json",
+      "acceptance_record_sha256": "29b63596d5ee4030b68207a1dee1b336a98e0455b994e069ea02ff67e30dcb8b",
+      "required_status_pattern": "SELF_REVIEW_PASS",
+      "replace_slot": false,
+      "variants": [
+        {
+          "id": "female-clothes-02",
+          "label": "Female clothes 02 closed collar v6 shard-free",
+          "candidate": ".omo/evidence/female-clothes-round6/candidates/female-clothes-02.png",
+          "candidate_sha256": "f8f16ea0a4349952cb9fd697d50f394af06047d3dfd464480172b31162a65776",
+          "acceptance_record": ".omo/evidence/female-clothes-round6/acceptance.json",
+          "acceptance_record_sha256": "ccca4adc03e3deb4d0523b1ef47ed4c459fd3255fde2a0802b2a3a6f9810d6bb",
+          "required_status_pattern": "PASS"
+        }
+      ]
+    },
+    {
+      "sex": "female",
+      "slot": "headgear_mid",
+      "mode": "companion",
+      "acceptance_record": ".omo/evidence/st_01a0ab20/acceptance.json",
+      "acceptance_record_sha256": "29b63596d5ee4030b68207a1dee1b336a98e0455b994e069ea02ff67e30dcb8b",
+      "required_status_pattern": "SELF_REVIEW_PASS",
+      "replace_slot": false,
+      "variants": [
+        {
+          "id": "female-headgear-mid-03",
+          "label": "Female headgear 03 anime cel-shaded cowl v7",
+          "candidate": ".omo/evidence/female-cowl-round7/candidate/female-headgear-mid-03.png",
+          "candidate_sha256": "7d6f99b56f3b10c2800d55fe3aa638b3459d0472f897a50bdb8ee18c02fbcd91",
+          "companion_of": {
+            "slot": "headgear",
+            "variant": "female-headgear-03"
+          },
+          "acceptance_record": ".omo/evidence/female-cowl-round7/acceptance.json",
+          "acceptance_record_sha256": "46fd0bb41ded57f1e2c20f3bf18bf849755b502297888916b7d30d9ec87adc37",
+          "required_status_pattern": "PASS"
+        }
+      ]
+    },
+    {
+      "sex": "female",
+      "slot": "headgear",
+      "mode": "selectable",
+      "acceptance_record": ".omo/evidence/st_01a0ab20/acceptance.json",
+      "acceptance_record_sha256": "29b63596d5ee4030b68207a1dee1b336a98e0455b994e069ea02ff67e30dcb8b",
+      "required_status_pattern": "SELF_REVIEW_PASS",
+      "replace_slot": false,
+      "variants": [
+        {
+          "id": "female-headgear-01",
+          "label": "Female headgear 01 strand-free brim v4",
+          "candidate": ".omo/evidence/female-round4/candidates/female-headgear-01.png",
+          "candidate_sha256": "283433e1f218cbdf8dbba33c0a3894b001cee7c19fd5d20e4487392629afcf1d",
+          "acceptance_record": ".omo/evidence/female-round4/acceptance.json",
+          "acceptance_record_sha256": "b0f8488f9033493ee68746cc54f7073fc1de37180cf5907618f3e9b3a8ec15e6",
+          "required_status_pattern": "PASS"
+        },
+        {
+          "id": "female-headgear-02",
+          "label": "Female headgear 02 repaired knit beanie",
+          "candidate": ".omo/evidence/portrait-stage23/female-headgear-seam-repair/candidates/female-headgear-02.png",
+          "candidate_sha256": "5455f3e8ca5d9248c2912696f71f31c0c5c43b1800fe815afc091dd0278a165d"
+        },
+        {
+          "id": "female-headgear-03",
+          "label": "Female headgear 03 geometric cel-shaded hood v9",
+          "candidate": ".omo/evidence/female-hood-round9/candidate/female-headgear-03.png",
+          "candidate_sha256": "c79e5df20d702ac28dd68f1c0681cb01a551e5da94e4141aa45ee6a282ad676a",
+          "acceptance_record": ".omo/evidence/female-hood-round9/acceptance.json",
+          "acceptance_record_sha256": "e5fbdba3beec817b995d1d248009513aa34b75dd9debd868b2914b6944725d02",
+          "required_status_pattern": "PASS"
+        }
+      ]
+    },
+    {
+      "sex": "male",
+      "slot": "headgear",
+      "mode": "selectable",
+      "acceptance_record": ".omo/evidence/st_01a0ab21/acceptance.json",
+      "acceptance_record_sha256": "9198691ca0fc0e921615bfd2b3e0a02abe77a68e59875900d23a54b6e5b85d45",
+      "required_status_pattern": "SELF_REVIEW_PASS",
+      "replace_slot": false,
+      "variants": [
+        {
+          "id": "male-headgear-01",
+          "label": "Male headgear 01 closed brim tip v4",
+          "candidate": ".omo/evidence/male-headgear01-round4/candidate/male-headgear-01.png",
+          "candidate_sha256": "4e879f5eb6e6de1bf40e0cc70cec25ba9cd66f324ba4af00f08118f46605fb40",
+          "acceptance_record": ".omo/evidence/male-headgear01-round4/acceptance.json",
+          "acceptance_record_sha256": "c82a5faf428faf93c0956cd23fb317504c7edc4c41adb90d4ba951386fdf8f17",
+          "required_status_pattern": "PASS"
+        },
+        {
+          "id": "male-headgear-02",
+          "label": "Male headgear 02 beanie seam repair v2",
+          "candidate": ".omo/evidence/st_01a0ab21/candidates/male-headgear-02.png",
+          "candidate_sha256": "b947ed557cbb5d130dea1f204c206ec0f799bcddf67336e1792e0c5dd4f57efa"
+        }
+      ]
+    },
+    {
+      "sex": "male",
+      "slot": "acc_eye",
+      "mode": "selectable",
+      "acceptance_record": ".omo/evidence/portrait-stage23/male-acc-eye-g3-clean-candidates/acceptance.json",
+      "acceptance_record_sha256": "f4a64511371504465599c714d7f7de6f9e3bd33fb07139336006316dd59fbb2b",
+      "required_status_pattern": "PASS",
+      "replace_slot": true,
+      "variants": [
+        {
+          "id": "male-acc-eye-01",
+          "label": "Male eyewear 01 clean spectacles",
+          "candidate": ".omo/evidence/portrait-stage23/male-acc-eye-g3-clean-candidates/candidates/male-acc-eye-01.png",
+          "candidate_sha256": "685f71a61942aa97d2bbdaeb567268d5844bce2a1e9d5e0e0122d94d587a72bc"
+        },
+        {
+          "id": "male-acc-eye-02",
+          "label": "Male eyewear 02 halo-free goggles",
+          "candidate": ".omo/evidence/st_01a0ab22/candidate/male-acc-eye-02.png",
+          "candidate_sha256": "351d277d90c1beb7ed8b1ee3260f1b582689649e6861925effcb3e1a10b55dfc",
+          "acceptance_record": ".omo/evidence/st_01a0ab22/acceptance.json",
+          "acceptance_record_sha256": "b870c2c15b179343bb5b80d82ca797783f87165adda2ed2da54cdbb4adeb23de",
+          "required_status_pattern": "PASS"
+        },
+        {
+          "id": "male-acc-eye-03",
+          "label": "Male eyewear 03 clean eyepatch",
+          "candidate": ".omo/evidence/portrait-stage23/male-acc-eye-g3-clean-candidates/candidates/male-acc-eye-03.png",
+          "candidate_sha256": "f0e37aacad5dd73791011b0a104aae53d4f864c468c58f1b9f8bb194fe198199"
+        }
+      ]
+    },
+    {
+      "sex": "female",
+      "slot": "face_base",
+      "mode": "selectable",
+      "acceptance_record": ".omo/evidence/facebase-strip/acceptance.json",
+      "acceptance_record_sha256": "1df58643cd23851601db1792321457428a8d26bff1973527796fdd6c76b122c5",
+      "required_status_pattern": "PASS",
+      "replace_slot": false,
+      "variants": [
+        {
+          "id": "female-face-base-01",
+          "candidate": ".omo/evidence/portrait-target-split-20260914/slots-skin-plus/face_base.png",
+          "candidate_sha256": "e6c2fb931e090d7c3a70efb7621d04d255e620066e98af1fdd75cd8ba5bb1c3d",
+          "label": "Female face base 01 authoritative target split",
+          "acceptance_record": ".omo/evidence/eye-target-vision-20260917/acceptance.json",
+          "acceptance_record_sha256": "58ba386eef908308dda4523db636f4e4740bb114896d2aef89e611ef2b51595a",
+          "required_status_pattern": "LEAD_ACCEPTED_REPAIR"
+        },
+        {
+          "id": "female-face-base-02",
+          "candidate": ".omo/evidence/facebase-strip/isolate/female-female-face-base-02.png",
+          "candidate_sha256": "1a277896eb02e6ceddf70657b8160816933148a729d583b6d839401a5f02f627",
+          "label": "female face base female-face-base-02 clean skin",
+          "acceptance_record": ".omo/evidence/facebase-strip/acceptance.json",
+          "acceptance_record_sha256": "1df58643cd23851601db1792321457428a8d26bff1973527796fdd6c76b122c5",
+          "required_status_pattern": "PASS"
+        },
+        {
+          "id": "female-face-base-03",
+          "candidate": ".omo/evidence/facebase-strip/isolate/female-female-face-base-03.png",
+          "candidate_sha256": "3871a8e1a15be32d9eaeb98cb97fbe4974cebff578e183c9d8c8862637902adf",
+          "label": "female face base female-face-base-03 clean skin",
+          "acceptance_record": ".omo/evidence/facebase-strip/acceptance.json",
+          "acceptance_record_sha256": "1df58643cd23851601db1792321457428a8d26bff1973527796fdd6c76b122c5",
+          "required_status_pattern": "PASS"
+        }
+      ]
+    },
+    {
+      "sex": "male",
+      "slot": "face_base",
+      "mode": "selectable",
+      "acceptance_record": ".omo/evidence/facebase-strip/acceptance.json",
+      "acceptance_record_sha256": "1df58643cd23851601db1792321457428a8d26bff1973527796fdd6c76b122c5",
+      "required_status_pattern": "PASS",
+      "replace_slot": false,
+      "variants": [
+        {
+          "id": "male-face-base-01",
+          "candidate": ".omo/evidence/portrait-stage23/gate2-male-foundation-source/gate1-split-v2/final/slots/face_base.png",
+          "candidate_sha256": "3f726e50ea1324d71103cfb69fb0f2d642c81f1b6fca823b97df6f327139acaf",
+          "label": "Male face base 01 authoritative Gate-1 split",
+          "acceptance_record": ".omo/evidence/eye-target-vision-20260917/acceptance.json",
+          "acceptance_record_sha256": "58ba386eef908308dda4523db636f4e4740bb114896d2aef89e611ef2b51595a",
+          "required_status_pattern": "LEAD_ACCEPTED_REPAIR"
+        },
+        {
+          "id": "male-face-base-02",
+          "candidate": ".omo/evidence/facebase-strip/isolate/male-male-face-base-02.png",
+          "candidate_sha256": "7bc39ef38ab824c2202e90acab259e357ccbee6e8e6c9279c3227bfcbbc7acb1",
+          "label": "male face base male-face-base-02 clean skin",
+          "acceptance_record": ".omo/evidence/facebase-strip/acceptance.json",
+          "acceptance_record_sha256": "1df58643cd23851601db1792321457428a8d26bff1973527796fdd6c76b122c5",
+          "required_status_pattern": "PASS"
+        },
+        {
+          "id": "male-face-base-03",
+          "candidate": ".omo/evidence/facebase-strip/isolate/male-male-face-base-03.png",
+          "candidate_sha256": "24bc52b58c7e08797747c2cfb277cc01fceab71e309dc56bef1869ec6d2a5ef3",
+          "label": "male face base male-face-base-03 clean skin",
+          "acceptance_record": ".omo/evidence/facebase-strip/acceptance.json",
+          "acceptance_record_sha256": "1df58643cd23851601db1792321457428a8d26bff1973527796fdd6c76b122c5",
+          "required_status_pattern": "PASS"
+        }
+      ]
+    },
+    {
+      "sex": "female",
+      "slot": "eyes_shape",
+      "mode": "selectable",
+      "acceptance_record": ".omo/evidence/eye-target-vision-20260917/acceptance.json",
+      "acceptance_record_sha256": "58ba386eef908308dda4523db636f4e4740bb114896d2aef89e611ef2b51595a",
+      "required_status_pattern": "LEAD_ACCEPTED_REPAIR",
+      "replace_slot": false,
+      "variants": [
+        {
+          "id": "female-eyes-shape-01",
+          "candidate": ".omo/evidence/portrait-target-split-20260914/slots-skin-plus/eyes_shape.png",
+          "candidate_sha256": "d427b39f42ad6cd00a8a722fbc39db2f7c8f57db8dbcb77a1563aefeaad758e6",
+          "label": "Female eyes shape 01 authoritative target split"
+        }
+      ]
+    },
+    {
+      "sex": "female",
+      "slot": "eyes_color",
+      "mode": "selectable",
+      "acceptance_record": ".omo/evidence/eye-target-vision-20260917/acceptance.json",
+      "acceptance_record_sha256": "58ba386eef908308dda4523db636f4e4740bb114896d2aef89e611ef2b51595a",
+      "required_status_pattern": "LEAD_ACCEPTED_REPAIR",
+      "replace_slot": false,
+      "variants": [
+        {
+          "id": "female-eyes-color-01",
+          "candidate": ".omo/evidence/portrait-target-split-20260914/slots-skin-plus/eyes_color.png",
+          "candidate_sha256": "858e711bf7ae058d836ebd291f2683b5bed2fa39fd538d179de3bea190a9e178",
+          "label": "Female eyes color 01 authoritative target split"
+        }
+      ]
+    },
+    {
+      "sex": "male",
+      "slot": "eyes_shape",
+      "mode": "selectable",
+      "acceptance_record": ".omo/evidence/eye-target-vision-20260917/acceptance.json",
+      "acceptance_record_sha256": "58ba386eef908308dda4523db636f4e4740bb114896d2aef89e611ef2b51595a",
+      "required_status_pattern": "LEAD_ACCEPTED_REPAIR",
+      "replace_slot": false,
+      "variants": [
+        {
+          "id": "male-eyes-shape-01",
+          "candidate": ".omo/evidence/portrait-stage23/gate2-male-foundation-source/gate1-split-v2/final/slots/eyes_shape.png",
+          "candidate_sha256": "5382c0c1702c38c43412906d3b82e2b531d339c7f34d89aefbc4690535cbac40",
+          "label": "Male eyes shape 01 authoritative Gate-1 split"
+        }
+      ]
+    },
+    {
+      "sex": "male",
+      "slot": "eyes_color",
+      "mode": "selectable",
+      "acceptance_record": ".omo/evidence/eye-target-vision-20260917/acceptance.json",
+      "acceptance_record_sha256": "58ba386eef908308dda4523db636f4e4740bb114896d2aef89e611ef2b51595a",
+      "required_status_pattern": "LEAD_ACCEPTED_REPAIR",
+      "replace_slot": false,
+      "variants": [
+        {
+          "id": "male-eyes-color-01",
+          "candidate": ".omo/evidence/portrait-stage23/gate2-male-foundation-source/gate1-split-v2/final/slots/eyes_color.png",
+          "candidate_sha256": "91fdb58972b8267e0dd12f30fb35a12718870cc955dabd45152493fc931d4079",
+          "label": "Male eyes color 01 authoritative Gate-1 split"
+        }
+      ]
+    },
+    {
+      "sex": "female",
+      "slot": "mouth",
+      "mode": "selectable",
+      "acceptance_record": ".omo/evidence/eye-target-vision-20260917/face-feature-family-01-acceptance.json",
+      "acceptance_record_sha256": "74ddddbd67d93bb8e799e15f4197c8484a060330ef311f95b519ef57c6360e95",
+      "required_status_pattern": "LEAD_ACCEPTED_FACE_FEATURE_REPAIR",
+      "replace_slot": false,
+      "variants": [
+        {
+          "id": "female-mouth-01",
+          "candidate": ".omo/evidence/portrait-target-split-20260914/slots-skin-plus/mouth.png",
+          "candidate_sha256": "d84f6e32a35c284ccdd5767244da295ba309d256cefe57afd4a3b6527cffe791",
+          "label": "Female mouth 01 authoritative target split"
+        }
+      ]
+    },
+    {
+      "sex": "female",
+      "slot": "nose",
+      "mode": "selectable",
+      "acceptance_record": ".omo/evidence/eye-target-vision-20260917/face-feature-family-01-acceptance.json",
+      "acceptance_record_sha256": "74ddddbd67d93bb8e799e15f4197c8484a060330ef311f95b519ef57c6360e95",
+      "required_status_pattern": "LEAD_ACCEPTED_FACE_FEATURE_REPAIR",
+      "replace_slot": false,
+      "variants": [
+        {
+          "id": "female-nose-01",
+          "candidate": ".omo/evidence/portrait-target-split-20260914/slots-skin-plus/nose.png",
+          "candidate_sha256": "d73a71eb37864470b3e918bb05b5e62172381e39445da9fdc8049130b4d6ef9d",
+          "label": "Female nose 01 authoritative target split"
+        }
+      ]
+    },
+    {
+      "sex": "male",
+      "slot": "mouth",
+      "mode": "selectable",
+      "acceptance_record": ".omo/evidence/eye-target-vision-20260917/face-feature-family-01-acceptance.json",
+      "acceptance_record_sha256": "74ddddbd67d93bb8e799e15f4197c8484a060330ef311f95b519ef57c6360e95",
+      "required_status_pattern": "LEAD_ACCEPTED_FACE_FEATURE_REPAIR",
+      "replace_slot": false,
+      "variants": [
+        {
+          "id": "male-mouth-01",
+          "candidate": ".omo/evidence/portrait-stage23/gate2-male-foundation-source/gate1-split-v2/final/slots/mouth.png",
+          "candidate_sha256": "14f54c49f6b25d1d09528c76f857818723e283ae45467a15a1fdc7971960ebbb",
+          "label": "Male mouth 01 authoritative Gate-1 split"
+        }
+      ]
+    },
+    {
+      "sex": "male",
+      "slot": "nose",
+      "mode": "selectable",
+      "acceptance_record": ".omo/evidence/eye-target-vision-20260917/face-feature-family-01-acceptance.json",
+      "acceptance_record_sha256": "74ddddbd67d93bb8e799e15f4197c8484a060330ef311f95b519ef57c6360e95",
+      "required_status_pattern": "LEAD_ACCEPTED_FACE_FEATURE_REPAIR",
+      "replace_slot": false,
+      "variants": [
+        {
+          "id": "male-nose-01",
+          "candidate": ".omo/evidence/portrait-stage23/gate2-male-foundation-source/gate1-split-v2/final/slots/nose.png",
+          "candidate_sha256": "e275b6ec782192849f8ff9de7f84f6c6ead09007239c95282d7d5bdf8e770dc0",
+          "label": "Male nose 01 authoritative Gate-1 split"
+        }
+      ]
+    },
+    {
+      "sex": "female",
+      "slot": "mouth",
+      "mode": "selectable",
+      "acceptance_record": ".omo/evidence/eye-target-vision-20260917/feature-recut-v2/acceptance.json",
+      "acceptance_record_sha256": "7d2d9ebfdd78de358f8b21a2125b4c02780f79e93af3c98b8cbc21b23da85056",
+      "required_status_pattern": "LEAD_ACCEPTED_FEATURE_RECUT_V2",
+      "replace_slot": false,
+      "variants": [{"id":"female-mouth-01","candidate":".omo/evidence/eye-target-vision-20260917/feature-recut-v2/repaired-isolates/female/mouth-01.png","candidate_sha256":"a0589a61b3abcef6097208f610ed2ea6ac4d41547cd0fb8fe3b6eee5439ba47e","label":"Female mouth 01 skin-free target recut"}]
+    },
+    {
+      "sex": "female",
+      "slot": "nose",
+      "mode": "selectable",
+      "acceptance_record": ".omo/evidence/eye-target-vision-20260917/feature-recut-v2/acceptance.json",
+      "acceptance_record_sha256": "7d2d9ebfdd78de358f8b21a2125b4c02780f79e93af3c98b8cbc21b23da85056",
+      "required_status_pattern": "LEAD_ACCEPTED_FEATURE_RECUT_V2",
+      "replace_slot": false,
+      "variants": [{"id":"female-nose-01","candidate":".omo/evidence/eye-target-vision-20260917/feature-recut-v2/repaired-isolates/female/nose-01.png","candidate_sha256":"39a845915425fc31fa7aff4add8da98cd24730872dfa11e5a34697f72be51781","label":"Female nose 01 skin-free target recut"}]
+    },
+    {
+      "sex": "male",
+      "slot": "mouth",
+      "mode": "selectable",
+      "acceptance_record": ".omo/evidence/eye-target-vision-20260917/feature-recut-v2/acceptance.json",
+      "acceptance_record_sha256": "7d2d9ebfdd78de358f8b21a2125b4c02780f79e93af3c98b8cbc21b23da85056",
+      "required_status_pattern": "LEAD_ACCEPTED_FEATURE_RECUT_V2",
+      "replace_slot": false,
+      "variants": [{"id":"male-mouth-01","candidate":".omo/evidence/eye-target-vision-20260917/feature-recut-v2/repaired-isolates/male/mouth-01.png","candidate_sha256":"14f54c49f6b25d1d09528c76f857818723e283ae45467a15a1fdc7971960ebbb","label":"Male mouth 01 skin-free Gate-1 recut"}]
+    },
+    {
+      "sex": "male",
+      "slot": "nose",
+      "mode": "selectable",
+      "acceptance_record": ".omo/evidence/eye-target-vision-20260917/feature-recut-v2/acceptance.json",
+      "acceptance_record_sha256": "7d2d9ebfdd78de358f8b21a2125b4c02780f79e93af3c98b8cbc21b23da85056",
+      "required_status_pattern": "LEAD_ACCEPTED_FEATURE_RECUT_V2",
+      "replace_slot": false,
+      "variants": [{"id":"male-nose-01","candidate":".omo/evidence/eye-target-vision-20260917/feature-recut-v2/repaired-isolates/male/nose-01.png","candidate_sha256":"e275b6ec782192849f8ff9de7f84f6c6ead09007239c95282d7d5bdf8e770dc0","label":"Male nose 01 skin-free Gate-1 recut"}]
+    },
+    {
+      "sex": "female",
+      "slot": "eyes_white",
+      "mode": "selectable",
+      "acceptance_record": ".omo/evidence/eye-target-vision-20260917/feature-recut-v3/acceptance.json",
+      "acceptance_record_sha256": "629cb18864d26ef604a4ba012fae0d9cce64c86380346e1bc9ee06d45858ddad",
+      "required_status_pattern": "LEAD_ACCEPTED_THREE_LAYER_EYES_V3",
+      "replace_slot": true,
+      "variants": [{"id":"female-eyes-white-01","candidate":".omo/evidence/eye-target-vision-20260917/feature-recut-v3/repaired-isolates/female/eyes_white-01.png","candidate_sha256":"0d74f5a77fb6ce4763684a37181ccaa1891c8a9f3ac6bb341383dcef061be4d8","label":"Female sclera 01 target recut"}]
+    },
+    {
+      "sex": "female",
+      "slot": "eyes_color",
+      "mode": "selectable",
+      "acceptance_record": ".omo/evidence/eye-target-vision-20260917/feature-recut-v3/acceptance.json",
+      "acceptance_record_sha256": "629cb18864d26ef604a4ba012fae0d9cce64c86380346e1bc9ee06d45858ddad",
+      "required_status_pattern": "LEAD_ACCEPTED_THREE_LAYER_EYES_V3",
+      "replace_slot": true,
+      "variants": [{"id":"female-eyes-color-01","candidate":".omo/evidence/eye-target-vision-20260917/feature-recut-v3/repaired-isolates/female/eyes_color-01.png","candidate_sha256":"f7afdd526e49c291192cf05d569598320b58ce07e411d6e984788a8d1c1eecac","label":"Female iris and pupil 01 target recut"}]
+    },
+    {
+      "sex": "female",
+      "slot": "eyes_shape",
+      "mode": "selectable",
+      "acceptance_record": ".omo/evidence/eye-target-vision-20260917/feature-recut-v3/acceptance.json",
+      "acceptance_record_sha256": "629cb18864d26ef604a4ba012fae0d9cce64c86380346e1bc9ee06d45858ddad",
+      "required_status_pattern": "LEAD_ACCEPTED_THREE_LAYER_EYES_V3",
+      "replace_slot": true,
+      "variants": [{"id":"female-eyes-shape-01","candidate":".omo/evidence/eye-target-vision-20260917/feature-recut-v3/repaired-isolates/female/eyes_shape-01.png","candidate_sha256":"84be6f685fdc64c3b116ef30c5ada0b1f54d1d7f2bb30a58ec2438dd7a5848b8","label":"Female lids lashes brows 01 target recut"}]
+    },
+    {
+      "sex": "male",
+      "slot": "eyes_white",
+      "mode": "selectable",
+      "acceptance_record": ".omo/evidence/eye-target-vision-20260917/feature-recut-v3/acceptance.json",
+      "acceptance_record_sha256": "629cb18864d26ef604a4ba012fae0d9cce64c86380346e1bc9ee06d45858ddad",
+      "required_status_pattern": "LEAD_ACCEPTED_THREE_LAYER_EYES_V3",
+      "replace_slot": true,
+      "variants": [{"id":"male-eyes-white-01","candidate":".omo/evidence/eye-target-vision-20260917/feature-recut-v3/repaired-isolates/male/eyes_white-01.png","candidate_sha256":"6e89634a6f48c4cac5489f25617ceeb335fc5ef73cb4b338940a17af9259cae5","label":"Male sclera 01 Gate-1 recut"}]
+    },
+    {
+      "sex": "male",
+      "slot": "eyes_color",
+      "mode": "selectable",
+      "acceptance_record": ".omo/evidence/eye-target-vision-20260917/feature-recut-v3/acceptance.json",
+      "acceptance_record_sha256": "629cb18864d26ef604a4ba012fae0d9cce64c86380346e1bc9ee06d45858ddad",
+      "required_status_pattern": "LEAD_ACCEPTED_THREE_LAYER_EYES_V3",
+      "replace_slot": true,
+      "variants": [{"id":"male-eyes-color-01","candidate":".omo/evidence/eye-target-vision-20260917/feature-recut-v3/repaired-isolates/male/eyes_color-01.png","candidate_sha256":"2d60e303a49d30b23293e4f82731a9df2635160a5ded3f97a596184c8e7701e2","label":"Male iris and pupil 01 Gate-1 recut"}]
+    },
+    {
+      "sex": "male",
+      "slot": "eyes_shape",
+      "mode": "selectable",
+      "acceptance_record": ".omo/evidence/eye-target-vision-20260917/feature-recut-v3/acceptance.json",
+      "acceptance_record_sha256": "629cb18864d26ef604a4ba012fae0d9cce64c86380346e1bc9ee06d45858ddad",
+      "required_status_pattern": "LEAD_ACCEPTED_THREE_LAYER_EYES_V3",
+      "replace_slot": true,
+      "variants": [{"id":"male-eyes-shape-01","candidate":".omo/evidence/eye-target-vision-20260917/feature-recut-v3/repaired-isolates/male/eyes_shape-01.png","candidate_sha256":"d4dc3b54ba7751e4f12e3bd5eb3c7ef7ffca8f629b75c2395be29c3ed637ab68","label":"Male lids lashes brows 01 Gate-1 recut"}]
+    }
+  ]
+}

@@ -2,7 +2,61 @@
 
 Canonical package path: `Tool/art`. Do not add a second root `tools/` folder.
 
-- Original (immutable): `original/target.png` — SHA-256 `c3a7e4815de6acaef28faf429395417a001bfe8088df633537c6e1a2aa9109a9`. Same bytes as `Design/portrait-demo/assets/v2/target.png`. Never auto-replace.
+## Evidence asset database
+
+`Design/potrait-generator/` is the non-destructive working SSoT over the full `.omo/evidence` tree. It does not move, delete, or rename evidence. The SQLite catalog groups identical bytes by SHA-256, retains every exact path and lifecycle, binds scoped PASS/REJECT/PENDING receipts, and caches unchanged files by path/size/mtime.
+
+```bash
+npm run portrait:assets:scan
+node Design/potrait-generator/src/cli.mjs query --status PASS --sex female --slot face_base
+node Design/potrait-generator/src/cli.mjs duplicates
+```
+
+Always query this database before generating or repairing an asset. A provider call, HTTP 200, numeric check, or same filename is never sufficient reuse proof; use exact path + SHA + scoped evaluation.
+
+## Durable validation-request queue
+
+`portrait-validation-request.mjs` records a content-addressed request before any reviewer delivery. `create` is always queue-only and never contacts Herdr or an OMO socket. The default queue is `.omo/portrait-validation-requests`; `--queue` may select another directory.
+
+```bash
+node Tool/art/portrait/portrait-validation-request.mjs create --input request.json
+node Tool/art/portrait/portrait-validation-request.mjs list
+node Tool/art/portrait/portrait-validation-request.mjs show <request_id>
+node Tool/art/portrait/portrait-validation-request.mjs dispatch <request_id> --adapter auto --wait --timeout 30000
+```
+
+A create input has this shape. Artifact paths are repository-relative and their current bytes must match the lowercase SHA-256. `repo_cwd` may be `.` when the command runs at the repository root; the stored record uses its canonical absolute path.
+
+```json
+{
+  "version": 1,
+  "created_by_tool": "portrait-review-producer",
+  "repo_cwd": ".",
+  "gate_id": "portrait-gateway-3",
+  "severity": "blocker",
+  "status": "pending",
+  "candidate_ids": ["female-hair-03"],
+  "blockers": [{ "code": "seam_gap", "message": "Inspect the registered seam." }],
+  "reproduction_command": "node Tool/art/portrait/verify-portrait-review.mjs --record review.json --repo-root \"$PWD\"",
+  "artifact_bindings": [{ "path": "evidence/review.json", "sha256": "<64 lowercase hex>" }],
+  "expected_outcome": "Return a finding; do not alter the gate verdict."
+}
+```
+
+The request ID hashes the normalized immutable fields: version, producer, canonical repository cwd, gate, severity, candidates, blocker codes/messages, reproduction command, artifact path/SHA bindings, and expected outcome. Status, delivery attempts, and acknowledgements are mutable queue history and do not change the ID. Creating the same immutable request is idempotent and preserves existing history; immutable drift under an existing ID is refused. Queue writes are atomic, and traversal or symlink escape in queue/artifact paths is refused.
+
+Statuses are `pending`, `delivered`, `needs-work`, and `resolved`. Delivery replies may update only queue status and acknowledgement history; they cannot mutate a portrait gate or grant PASS.
+
+Delivery adapters:
+
+- `--adapter herdr` uses only `herdr agent list` and `herdr agent prompt TARGET TEXT [--wait --timeout MS]`. Without `--target`, it prompts only when discovery returns exactly one `idle` or `done` OMO agent whose `cwd` exactly equals the request `repo_cwd`; zero or multiple matches leave the request pending with a recorded reason. An explicit target is a pane ID or a unique live agent/display name.
+- `--adapter omo-socket` uses a Unix JSONL request/ack exchange only when `--socket PATH` or `OMO_AGENT_SOCKET` is explicitly supplied. It never scans or probes other sockets. Acknowledgements are timeout-bounded, schema checked, and must echo `request_id`.
+- `--adapter auto` chooses the explicitly configured OMO socket when present, otherwise Herdr. It applies the same exact-one discovery rule.
+- `--dry-run` performs discovery/configuration selection but sends no prompt or socket request. All delivery errors and timeouts append an attempt while retaining the queued request.
+
+A reproducible no-delivery example is under `.omo/evidence/portrait-stage23/validation-request-example`; its README creates and inspects an isolated queue without dispatching it.
+
+- Original (immutable): `original/target.png` — SHA-256 `c3a7e4815de6acaef28faf429395417a001bfe8088df633537c6e1a2aa9109a9`. Same bytes as `Design/potrait-generator/assets/v2/target.png`. Never auto-replace.
 - Final default combo: `final/h0-e0-o0.png` (dirty vs target = 0).
 - Eight-combo matrix: `final/matrix/h{0,1}-e{0,1}-o{0,1}.png` (8 unique hashes).
 
@@ -26,14 +80,24 @@ Every portrait path uses the same cumulative order, regardless of provider or au
 1. Gateway 1 — semantic split, alpha/ownership and source reconstruction.
 2. Gateway 2 — individual parts, hidden support, per-sex ownership, common shoulders and native material quality.
 3. Gateway 3 — cross-combinations, exchange continuity, anchors/occlusion and real browser output.
+4. Gateway 4 — all-candidate curation, issue feedback, validation-graph evidence and publication decision.
 
-A PASS gate needs at least one path+SHA256 evidence record. Gateway 2 cannot PASS before Gateway 1, and Gateway 3 cannot PASS before both earlier gates. Source generation and see-through splitting are always available; Anime2.5DRig/StandRig rig work unlocks after Gateway 1; slot combinations unlock after Gateway 2; save/export, character assignment/binding and runtime handoff unlock only after Gateway 3.
+A PASS gate needs at least one path+SHA256 evidence record. Later gates cannot PASS before every earlier gate. Source generation and see-through splitting are always available; Anime2.5DRig/StandRig rig work unlocks after Gateway 1; slot combinations and curation unlock after Gateway 2; save/export, character assignment/binding and runtime handoff unlock only after Gateway 4.
 
-`portrait-tool.mjs compose` separates three purposes: `reconstruction` for Gateway 1, `review` after Gateway 2, and `delivery` only after Gateway 3. Direct `assignPortraits` and `batch` also require all three gates. Owner approval of a flattened source, API success, PSD import, auto-rig preview, numeric QA, file count or runtime file existence never skips this order.
+`portrait-tool.mjs compose` separates three purposes: `reconstruction` for Gateway 1, `review` after Gateway 2, and `delivery` only after Gateway 4. Direct `assignPortraits` and `batch` also require all four gates. Owner approval of a flattened source, API success, PSD import, auto-rig preview, numeric QA, file count or runtime file existence never skips this order.
 
-The browser tool loads `Design/portrait-demo/assets/v2/workflow.json`, displays the two Civitai profiles and six tool lanes, and locks sex/slot/randomize/save/export controls according to the same contract. `작업 패킷 JSON` remains available while locked for handoff to external authoring tools.
+The browser tool loads `Design/potrait-generator/assets/v2/workflow.json`, displays the two Civitai profiles and six tool lanes, and locks sex/slot/randomize/save/export controls according to the same contract. `작업 패킷 JSON` remains available while locked for handoff to external authoring tools.
 
 ### Review records — `verify-portrait-review.mjs`
+
+Run the integrated quality workflow with:
+
+```sh
+node Tool/art/portrait/portrait-quality-pipeline.mjs run --out .omo/evidence/portrait-stage23/quality-pipeline-current
+node Tool/art/portrait/portrait-quality-pipeline.mjs verify --receipts .omo/evidence/portrait-stage23/quality-pipeline-current
+```
+
+Supply `--curation-packet <repository-relative.json>` to both commands only when an actual user-completed Gate 4 packet exists. The pipeline never edits `workflow.json`.
 
 Vocabulary lives in [portrait-review-contract.json](portrait-review-contract.json)
 (Q01–Q10, GQ1–GQ4, the nine numeric gates, reviewer roles). A record is refused when it
@@ -77,7 +141,8 @@ Joins a registered person, one reproducible selection, and the exported composit
 ids come from the world atlas fence (`Wikis/game-logic/World-Narrative-Atlas.md`, K001–K1006);
 the atlas records no sex, so each binding declares it. The gate refuses an unregistered or
 doubled character, a selection missing a required slot, a female `beard`/`beard_back`
-selection, an unknown slot or variant, a slot with fewer than ten variants, and an export that
+selection, an unknown slot or variant, a selectable slot with fewer than three variants, an
+independent fixed/companion override, and an export that
 drifted from its hash. Determinism is enforced both ways: one selection may not yield two
 export hashes, and two selections may not share one.
 
@@ -111,10 +176,10 @@ It composites and records; it never judges art. A library it builds carries
 # 1. Inventory plates into the manifest the demo and the gates share.
 #    Convention tree: <plates>/<sex>/<slot>/<variantId>.png
 node Tool/art/portrait/portrait-tool.mjs library \
-  --plates Design/portrait-demo/assets/v2/plates \
-  --out Design/portrait-demo/assets/v2/library.json --repo-root "$PWD"
+  --plates Design/potrait-generator/assets/v2/plates \
+  --out Design/potrait-generator/assets/v2/library.json --repo-root "$PWD"
 
-# 1b. Or adapt the Stage-1 partition recipe (one identity, honestly short of ten variants).
+# 1b. Or adapt the Stage-1 partition recipe (one identity, honestly short of three variants).
 node Tool/art/portrait/portrait-tool.mjs library \
   --recipe .omo/evidence/portrait-authoring-v2/recipe.json --sex female \
   --out <dir>/library.json --repo-root "$PWD"
@@ -133,7 +198,9 @@ node Tool/art/portrait/verify-portrait-binding.mjs --bindings <dir>/portraits/bi
 ```
 
 - **Composition** is source-over by slot `z`, on the library canvas, with every plate
-  checked against its recorded hash. A missing required slot, a selection on a slot
+  checked against its required recorded SHA-256. Every sex/slot explicitly declares one mode:
+  `selectable` (every unique minimum-contract-PASS candidate, at least one), `fixed` (one locked foundation/current plate),
+  `companion` (derived through `companion_of`), or `disabled` (empty). A missing required slot, a selection on a slot
   disabled for that sex, an unknown variant or a drifted plate all throw rather than
   render something plausible.
 - **Sex is never inferred.** The atlas carries no sex field and the binding contract
@@ -142,7 +209,7 @@ node Tool/art/portrait/verify-portrait-binding.mjs --bindings <dir>/portraits/bi
 - **Assignment** is a pure function of `(seed, character_id, slot)` — editing the roster
   never reshuffles anyone else's portrait, and a rerun reproduces identical bytes.
 - **Batch** refuses to write into an existing directory, and emits `bindings.json` in
-  exactly the shape `verify-portrait-binding.mjs` checks, so a short library fails closed
+  exactly the shape `verify-portrait-binding.mjs` checks, so an empty selectable slot fails closed
   (`variant_count_short`) instead of shipping as a delivery.
 - Stage-1 `empty: true` plates stay marked in the manifest, so a deliberately transparent
   slot is never mistaken for authored content.
@@ -152,7 +219,7 @@ Verified against the tracked Stage-1 truth: the derived library reproduces
 
 ### Roster projection — `export-human-roster.mjs`
 
-`SERVICES.md` serves the demo at `/portrait-demo/`, so the page cannot fetch
+`SERVICES.md` serves the generator at `/potrait-generator/`, so the page cannot fetch
 `../../Wikis/...`. This exporter writes the projection it can fetch, and `--check`
 proves a committed projection still matches the atlas it claims to come from.
 

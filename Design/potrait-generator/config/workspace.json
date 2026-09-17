@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "workspace_name": "potrait-generator",
+  "evidence_root": ".omo/evidence",
+  "database": "Design/potrait-generator/data/assets.sqlite",
+  "generated_views": "Design/potrait-generator/views",
+  "raw_store": "Design/potrait-generator/raw/sha256",
+  "working_set": "Design/potrait-generator/work/selected",
+  "published_browser_source": "Design/potrait-generator",
+  "published_url_path": "/potrait-generator/",
+  "policy": {
+    "evidence_paths_are_immutable": true,
+    "physical_deduplication": false,
+    "promotion_requires_curated_exact_binding": true,
+    "cache_identity": "sha256"
+  }
+}

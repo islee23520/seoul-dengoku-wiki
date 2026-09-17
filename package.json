@@ -11,7 +11,13 @@
   "packageManager": "npm@12.0.2",
   "scripts": {
     "test": "node Tool/policy/normalize-creative-names.mjs && node Tool/wiki/test-build-wiki.mjs && node Tool/wiki/test-core-isometric-diagrams.mjs && node Tool/wiki/test-publish-wiki.mjs",
-    "wiki:publish": "node Tool/wiki/publish-wiki.mjs --no-push"
+    "wiki:publish": "node Tool/wiki/publish-wiki.mjs --no-push",
+    "portrait:assets:scan": "node Design/potrait-generator/src/cli.mjs scan",
+    "portrait:assets:stats": "node Design/potrait-generator/src/cli.mjs stats",
+    "portrait:assets:passed": "node Design/potrait-generator/src/cli.mjs query --status PASS --curated",
+    "portrait:assets:raw": "node Design/potrait-generator/src/cli.mjs ingest-raw",
+    "portrait:assets:verify": "node Design/potrait-generator/src/cli.mjs verify-raw",
+    "portrait:stage": "node Tool/art/portrait/stage-potrait-generator.mjs"
   },
   "dependencies": {
     "entities": "8.0.0",

@@ -24,12 +24,12 @@ seoul-kenshi/
 |-- Wikis/                 # wiki corpus and wiki site
 |   |-- game-logic/        # authoritative corpus, name-pools, regions
 |   `-- site/              # VitePress build
-|-- Design/                # visual moodboards, prototypes, moved portrait-demo
+|-- Design/                # visual moodboards, prototypes, potrait-generator
 |   |-- ui-layout-moodboard/
 |   |-- poc/
 |   |-- poc-diegetic/
 |   |-- poc-plan/
-|   `-- portrait-demo/
+|   `-- potrait-generator/
 |-- Research/              # canon reference and verification artifacts
 |   |-- canon-reference/
 |   `-- verification/
@@ -84,7 +84,7 @@ Digest-observed declarations/imports only; LSP and ast-grep were unavailable. Re
 - Do not label planned campaign or tactical features as shipped merely because design pages exist; even Home's implementation summary may lag code.
 - No direct push to main, force-push, or shared-history rewrite. ADR-001 requires a dedicated branch and PR, with owner-only merging.
 - Authorized origin: `https://github.com/islee23520/seoul-kenshi.git`; the unrelated shooter repository is not a delivery target. Remote Wiki publication needs separate owner authorization.
-- Do not create a new Vercel project, alias, or `*.vercel.app` site for demos or worktree folders. Link and deploy only to existing `seoul-kenshi`. Nested static pages (for example `Design/portrait-demo/`) go on that hub as a subpath via the composite staging in `SERVICES.md`; never `vercel deploy` a nested folder as its own project.
+- Do not create a new Vercel project, alias, or `*.vercel.app` site for demos or worktree folders. Link and deploy only to existing `seoul-kenshi`. Nested static pages (for example `Design/potrait-generator/`) go on that hub as a subpath via the composite staging in `SERVICES.md`; never `vercel deploy` a nested folder as its own project.
 - Candidate generation, provider eligibility, or showcase import does not authorize a runtime dependency.
 - Guessed rights, synthetic review hashes, model/software licenses, and zero-cost receipts are not proof of asset-output rights or actual service terms. Source-rights research is not quality approval or a legal guarantee.
 - Do not silently recover unsupported/corrupt saves: the documented save contract requires explicit errors.

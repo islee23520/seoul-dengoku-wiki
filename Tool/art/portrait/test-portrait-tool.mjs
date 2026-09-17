@@ -20,6 +20,7 @@ const { slots } = JSON.parse(readFileSync(new URL('./portrait-layer-slots.json',
 const sha256 = (bytes) => createHash('sha256').update(bytes).digest('hex');
 const CANVAS = { width: 24, height: 32 };
 const DISABLED_FOR_FEMALE = ['beard', 'beard_back'];
+const SELECTABLE = new Set(['bg', 'face_base', 'mouth', 'nose', 'eyes_white', 'eyes_shape', 'eyes_color', 'clothes', 'headgear', 'acc_eye', 'frame']);
 
 /** A solid rectangle plate, unique per (slot, variant), on the shared canvas. */
 function plate(slotId, variant, { width, height } = CANVAS) {
@@ -54,8 +55,11 @@ function workspace(t) {
 function plateTree(put, { variantsPerSlot = 10, canvas = CANVAS } = {}) {
   for (const sex of ['female', 'male']) {
     for (const slot of slots) {
-      if (sex === 'female' && DISABLED_FOR_FEMALE.includes(slot.id)) continue;
-      for (let i = 1; i <= variantsPerSlot; i += 1) {
+      const mode = slot.id === 'hair' || SELECTABLE.has(slot.id) ? 'selectable'
+        : ['headgear_back', 'headgear_mid'].includes(slot.id) || (sex === 'male' && ['clothes_back', 'clothes_front'].includes(slot.id)) ? 'companion'
+          : (sex === 'female' && DISABLED_FOR_FEMALE.includes(slot.id)) || (sex === 'male' && ['hair_back', 'beard_back'].includes(slot.id)) ? 'disabled' : 'fixed';
+      if (mode === 'disabled' || mode === 'companion') continue;
+      for (let i = 1; i <= (mode === 'fixed' ? 1 : variantsPerSlot); i += 1) {
         const variant = `${slot.id}-${String(i).padStart(2, '0')}`;
         put(`plates/${sex}/${slot.id}/${variant}.png`, plate(slot.id, `${sex}/${variant}`, canvas));
       }
@@ -68,7 +72,7 @@ function selectionFor(library, sex, index = 1) {
   const picked = {};
   for (const slot of slots) {
     const entry = library.sexes[sex].slots[slot.id];
-    if (!entry.enabled || !slot.required) continue;
+    if (!['selectable', 'fixed'].includes(entry.mode) || !slot.required) continue;
     picked[slot.id] = entry.variants[(index - 1) % entry.variants.length].id;
   }
   return picked;
@@ -81,17 +85,17 @@ function gatewayWorkflow(statuses) {
   }]));
   return validatePortraitWorkflow({ version: 1, active_profile: 'candidate', profiles: {
     candidate: { label: 'Candidate', mode: 'variation', source: { path: 'candidate.png', sha256: 'a'.repeat(64) }, gates }
-  }, tools: [{ id: 'delivery', label: 'Delivery', role: 'delivery', unlock_after: 3 }] });
+  }, tools: [{ id: 'delivery', label: 'Delivery', role: 'delivery', unlock_after: 4 }] });
 }
 
-test('buildLibrary turns a plate tree into the 22-slot manifest the demo consumes', (t) => {
+test('buildLibrary turns a plate tree into the canonical-slot manifest the demo consumes', (t) => {
   const { root, put } = workspace(t);
   const plateRoot = plateTree(put);
   const library = buildLibrary({ repoRoot: root, plateRoot, canvas: CANVAS });
 
   assert.equal(library.version, 1);
   assert.deepEqual(library.canvas, CANVAS);
-  assert.equal(library.slots.length, 22);
+  assert.equal(library.slots.length, slots.length);
   for (const sex of ['female', 'male']) {
     assert.deepEqual(Object.keys(library.sexes[sex].slots).sort(), slots.map((s) => s.id).sort());
   }
@@ -99,8 +103,7 @@ test('buildLibrary turns a plate tree into the 22-slot manifest the demo consume
   for (const slotId of DISABLED_FOR_FEMALE) {
     assert.equal(library.sexes.female.slots[slotId].enabled, false);
     assert.deepEqual(library.sexes.female.slots[slotId].variants, []);
-    assert.equal(library.sexes.male.slots[slotId].enabled, true);
-    assert.equal(library.sexes.male.slots[slotId].variants.length, 10);
+    assert.equal(library.sexes.male.slots[slotId].mode, slotId === 'beard' ? 'fixed' : 'disabled');
   }
   // Paths are manifest-relative and each variant carries its plate hash.
   const hair = library.sexes.female.slots.hair.variants[0];
@@ -119,7 +122,7 @@ test('buildLibrary marks provenance and never claims quality acceptance', (t) =>
 test('buildLibrary refuses a plate whose canvas differs from the library canvas', (t) => {
   const { root, put } = workspace(t);
   const plateRoot = plateTree(put);
-  put(`${plateRoot}/female/hair/hair-99.png`, plate('hair', 'odd', { width: 16, height: 16 }));
+  put(`${plateRoot}/female/eyes_shape/eyes_shape-99.png`, plate('eyes_shape', 'odd', { width: 16, height: 16 }));
   assert.throws(() => buildLibrary({ repoRoot: root, plateRoot, canvas: CANVAS }), /canvas/i);
 });
 
@@ -134,24 +137,67 @@ test('composeFromLibrary renders in z order and is byte-deterministic', (t) => {
   assert.equal(first.width, CANVAS.width);
   assert.equal(first.height, CANVAS.height);
   assert.deepEqual(first.order, [...slots].sort((a, b) => a.z - b.z)
-    .map((s) => s.id).filter((id) => selection[id] !== undefined));
+    .map((s) => s.id).filter((id) => library.sexes.female.slots[id].mode === 'fixed' || selection[id] !== undefined));
 
   const other = composeFromLibrary({ library, repoRoot: root, sex: 'female', selection: selectionFor(library, 'female', 2), purpose: 'reconstruction' });
   assert.notEqual(sha256(first.png), sha256(other.png));
 });
 
-test('composition separates reconstruction, review and delivery at gateways 1, 2 and 3', (t) => {
+test('composeFromLibrary honors explicit null for a fixed slot', (t) => {
   const { root, put } = workspace(t);
   const library = buildLibrary({ repoRoot: root, plateRoot: plateTree(put), canvas: CANVAS });
   const selection = selectionFor(library, 'female', 1);
-  const gate1Only = gatewayWorkflow(['PASS', 'IN_PROGRESS', 'BLOCKED']);
+  const withFixed = composeFromLibrary({ library, repoRoot: root, sex: 'female', selection, purpose: 'reconstruction' });
+  selection.neck = null;
+  const withoutFixed = composeFromLibrary({ library, repoRoot: root, sex: 'female', selection, purpose: 'reconstruction' });
+  assert.ok(withFixed.order.includes('neck'));
+  assert.ok(!withoutFixed.order.includes('neck'));
+});
+
+test('composeFromLibrary uses a conditional render plate while preserving the logical variant id', (t) => {
+  const { root, put } = workspace(t);
+  const library = buildLibrary({ repoRoot: root, plateRoot: plateTree(put), canvas: CANVAS });
+  const selection = selectionFor(library, 'male', 1);
+  selection.hair = library.sexes.male.slots.hair.variants[0].id;
+  selection.headgear = library.sexes.male.slots.headgear.variants[0].id;
+  const hair = library.sexes.male.slots.hair.variants.find(variant => variant.id === selection.hair);
+  const overridePath = 'plates/male/hair_overrides/hair-under-headgear.png';
+  const overrideBytes = plate('hair', 'conditional-override');
+  put(overridePath, overrideBytes);
+  hair.render_overrides = [{ when: { slot: 'headgear', variant: selection.headgear }, path: overridePath, sha256: sha256(overrideBytes) }];
+  const withOverride = composeFromLibrary({ library, repoRoot: root, sex: 'male', selection, purpose: 'reconstruction' });
+  delete hair.render_overrides;
+  const withoutOverride = composeFromLibrary({ library, repoRoot: root, sex: 'male', selection, purpose: 'reconstruction' });
+  assert.equal(selection.hair, hair.id);
+  assert.notEqual(withOverride.sha256, withoutOverride.sha256);
+});
+
+test('composeFromLibrary refuses a conditional render plate whose bytes drifted', (t) => {
+  const { root, put } = workspace(t);
+  const library = buildLibrary({ repoRoot: root, plateRoot: plateTree(put), canvas: CANVAS });
+  const selection = selectionFor(library, 'male', 1);
+  selection.hair = library.sexes.male.slots.hair.variants[0].id;
+  selection.headgear = library.sexes.male.slots.headgear.variants[0].id;
+  const hair = library.sexes.male.slots.hair.variants.find(variant => variant.id === selection.hair);
+  const overridePath = 'plates/male/hair_overrides/hair-under-headgear.png';
+  const accepted = plate('hair', 'accepted-conditional-override');
+  put(overridePath, plate('hair', 'drifted-conditional-override'));
+  hair.render_overrides = [{ when: { slot: 'headgear', variant: selection.headgear }, path: overridePath, sha256: sha256(accepted) }];
+  assert.throws(() => composeFromLibrary({ library, repoRoot: root, sex: 'male', selection, purpose: 'reconstruction' }), /hash/i);
+});
+
+test('composition separates reconstruction, review and delivery through gateway 4', (t) => {
+  const { root, put } = workspace(t);
+  const library = buildLibrary({ repoRoot: root, plateRoot: plateTree(put), canvas: CANVAS });
+  const selection = selectionFor(library, 'female', 1);
+  const gate1Only = gatewayWorkflow(['PASS', 'IN_PROGRESS', 'BLOCKED', 'BLOCKED']);
   assert.doesNotThrow(() => composeFromLibrary({ library, repoRoot: root, sex: 'female', selection, workflow: gate1Only, purpose: 'reconstruction' }));
   assert.throws(() => composeFromLibrary({ library, repoRoot: root, sex: 'female', selection, workflow: gate1Only, purpose: 'review' }), /1·2차/);
   assert.throws(() => composeFromLibrary({ library, repoRoot: root, sex: 'female', selection, purpose: 'review' }), /workflow/);
-  const gate2 = gatewayWorkflow(['PASS', 'PASS', 'IN_PROGRESS']);
+  const gate2 = gatewayWorkflow(['PASS', 'PASS', 'IN_PROGRESS', 'BLOCKED']);
   assert.doesNotThrow(() => composeFromLibrary({ library, repoRoot: root, sex: 'female', selection, workflow: gate2, purpose: 'review' }));
-  assert.throws(() => composeFromLibrary({ library, repoRoot: root, sex: 'female', selection, workflow: gate2, purpose: 'delivery' }), /1·2·3차/);
-  assert.doesNotThrow(() => composeFromLibrary({ library, repoRoot: root, sex: 'female', selection, workflow: gatewayWorkflow(['PASS', 'PASS', 'PASS']), purpose: 'delivery' }));
+  assert.throws(() => composeFromLibrary({ library, repoRoot: root, sex: 'female', selection, workflow: gate2, purpose: 'delivery' }), /1·2·3·4차/);
+  assert.doesNotThrow(() => composeFromLibrary({ library, repoRoot: root, sex: 'female', selection, workflow: gatewayWorkflow(['PASS', 'PASS', 'PASS', 'PASS']), purpose: 'delivery' }));
 });
 
 test('composeFromLibrary fails closed on a missing required slot or a disabled selection', (t) => {
@@ -169,7 +215,7 @@ test('composeFromLibrary fails closed on a missing required slot or a disabled s
   }), /disabled/i);
 
   assert.throws(() => composeFromLibrary({
-    library, repoRoot: root, sex: 'female', selection: { ...selection, hair: 'hair-99' }, purpose: 'reconstruction'
+    library, repoRoot: root, sex: 'female', selection: { ...selection, eyes_shape: 'eyes_shape-99' }, purpose: 'reconstruction'
   }), /unknown variant/i);
 });
 
@@ -177,7 +223,7 @@ test('composeFromLibrary refuses a plate that drifted from its recorded hash', (
   const { root, put } = workspace(t);
   const library = buildLibrary({ repoRoot: root, plateRoot: plateTree(put), canvas: CANVAS });
   const selection = selectionFor(library, 'female', 1);
-  put('plates/female/hair/hair-01.png', plate('hair', 'tampered'));
+  put('plates/female/eyes_shape/eyes_shape-01.png', plate('eyes_shape', 'tampered'));
   assert.throws(() => composeFromLibrary({ library, repoRoot: root, sex: 'female', selection, purpose: 'reconstruction' }), /hash/i);
 });
 
@@ -190,7 +236,7 @@ test('assignPortraits is a pure function of seed and character id', (t) => {
     { id: 'K003', sex: 'female' },
   ];
 
-  const workflow = gatewayWorkflow(['PASS', 'PASS', 'PASS']);
+  const workflow = gatewayWorkflow(['PASS', 'PASS', 'PASS', 'PASS']);
   const first = assignPortraits({ library, workflow, people, seed: 'janseon-portrait-v1' });
   const again = assignPortraits({ library, workflow, people, seed: 'janseon-portrait-v1' });
   assert.deepEqual(first, again);
@@ -208,8 +254,8 @@ test('assignPortraits is a pure function of seed and character id', (t) => {
   // Every required enabled slot is chosen; female beard stays unselected.
   const female = first.find((a) => a.character_id === 'K001');
   for (const slot of slots) {
-    const enabled = library.sexes.female.slots[slot.id].enabled;
-    if (slot.required && enabled) assert.ok(female.selection[slot.id], slot.id);
+    const mode = library.sexes.female.slots[slot.id].mode;
+    if (slot.required && ['selectable', 'fixed'].includes(mode)) assert.ok(female.selection[slot.id], slot.id);
   }
   assert.equal(female.selection.beard, undefined);
   assert.equal(female.selection.beard_back, undefined);
@@ -229,7 +275,7 @@ test('batchPortraits writes composites and a binding document the gate accepts',
   const result = batchPortraits({
     repoRoot: root,
     libraryPath,
-    workflow: gatewayWorkflow(['PASS', 'PASS', 'PASS']),
+    workflow: gatewayWorkflow(['PASS', 'PASS', 'PASS', 'PASS']),
     people: [{ id: 'K001', sex: 'female' }, { id: 'K002', sex: 'male' }, { id: 'K003', sex: 'female' }],
     seed: 'janseon-portrait-v1',
     outDir: 'out/portraits',
@@ -249,7 +295,7 @@ test('batchPortraits writes composites and a binding document the gate accepts',
   // Rerunning the batch reproduces identical bytes.
   const rerun = batchPortraits({
     repoRoot: root, libraryPath,
-    workflow: gatewayWorkflow(['PASS', 'PASS', 'PASS']),
+    workflow: gatewayWorkflow(['PASS', 'PASS', 'PASS', 'PASS']),
     people: [{ id: 'K001', sex: 'female' }, { id: 'K002', sex: 'male' }, { id: 'K003', sex: 'female' }],
     seed: 'janseon-portrait-v1', outDir: 'out/portraits-rerun',
   });
@@ -259,13 +305,13 @@ test('batchPortraits writes composites and a binding document the gate accepts',
   );
 });
 
-test('batch and character binding remain blocked before all three gateways pass', (t) => {
+test('batch and character binding remain blocked before all four gateways pass', (t) => {
   const { root, put } = workspace(t);
   const library = buildLibrary({ repoRoot: root, plateRoot: plateTree(put), canvas: CANVAS });
   put('out/library.json', JSON.stringify(library));
-  assert.throws(() => assignPortraits({ library, workflow: gatewayWorkflow(['PASS', 'PASS', 'IN_PROGRESS']), people: [{ id: 'K001', sex: 'female' }] }), /1·2·3차/);
+  assert.throws(() => assignPortraits({ library, workflow: gatewayWorkflow(['PASS', 'PASS', 'PASS', 'IN_PROGRESS']), people: [{ id: 'K001', sex: 'female' }] }), /1·2·3·4차/);
   assert.throws(() => assignPortraits({ library, people: [{ id: 'K001', sex: 'female' }] }), /workflow/);
-  assert.throws(() => batchPortraits({ repoRoot: root, libraryPath: 'out/library.json', workflow: gatewayWorkflow(['PASS', 'PASS', 'IN_PROGRESS']), people: [{ id: 'K001', sex: 'female' }], outDir: 'out/blocked' }), /1·2·3차/);
+  assert.throws(() => batchPortraits({ repoRoot: root, libraryPath: 'out/library.json', workflow: gatewayWorkflow(['PASS', 'PASS', 'PASS', 'IN_PROGRESS']), people: [{ id: 'K001', sex: 'female' }], outDir: 'out/blocked' }), /1·2·3·4차/);
   assert.throws(() => batchPortraits({ repoRoot: root, libraryPath: 'out/library.json', people: [{ id: 'K001', sex: 'female' }], outDir: 'out/missing-workflow' }), /workflow/);
 });
 
@@ -277,7 +323,7 @@ test('batchPortraits refuses to overwrite an existing export directory', (t) => 
   put('out/portraits/keep.txt', 'existing work');
   assert.throws(() => batchPortraits({
     repoRoot: root, libraryPath: 'out/library.json',
-    workflow: gatewayWorkflow(['PASS', 'PASS', 'PASS']),
+    workflow: gatewayWorkflow(['PASS', 'PASS', 'PASS', 'PASS']),
     people: [{ id: 'K001', sex: 'female' }], seed: 's', outDir: 'out/portraits',
   }), /exists/i);
 });
@@ -304,19 +350,20 @@ test('libraryFromRecipe adapts a Stage-1 recipe into library variants', (t) => {
   assert.deepEqual(library.sexes.female.slots.hair.variants.map((v) => v.id), ['hair-h0', 'hair-h1']);
   assert.deepEqual(library.sexes.female.slots.nose.variants.map((v) => v.id), ['nose-base']);
 
-  // A Stage-1 library is honestly short of ten variants: delivery binding must stay blocked.
+  // A Stage-1 library with at least one real selectable variant is delivery-admissible under the
+  // uncapped contract; visual/Gate 4 acceptance remains a separate boundary.
   put('out/library.json', JSON.stringify(library));
   put('Wikis/game-logic/World-Narrative-Atlas.md', ['```json', JSON.stringify({
     schema: 'world-narrative-atlas.v1', humans: [{ id: 'K001' }],
   }), '```'].join('\n'));
   const result = batchPortraits({
     repoRoot: root, libraryPath: 'out/library.json',
-    workflow: gatewayWorkflow(['PASS', 'PASS', 'PASS']),
+    workflow: gatewayWorkflow(['PASS', 'PASS', 'PASS', 'PASS']),
     people: [{ id: 'K001', sex: 'female' }], seed: 's', outDir: 'out/stage1',
   });
   const report = verifyPortraitBinding(result.document, { repoRoot: root });
-  assert.equal(report.ok, false);
-  assert.ok(report.errors.every((e) => e.code === 'variant_count_short'));
+  assert.equal(report.ok, true);
+  assert.deepEqual(report.errors, []);
 });
 
 test('a roster must state each character sex explicitly; it is never inferred', async (t) => {

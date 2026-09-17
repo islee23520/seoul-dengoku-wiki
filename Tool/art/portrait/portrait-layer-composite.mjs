@@ -143,13 +143,36 @@ function sourceOverPixel(dst, src, i) {
   dst[i + 3] = Math.round(outA * 255);
 }
 
-function sourceOver(dst, src) {
+export function sourceOver(dst, src) {
   for (let i = 0; i < dst.length; i += 4) {
     sourceOverPixel(dst, src, i);
   }
 }
 
-export function compositePortraitLayers({ schema, slots, outputPath } = {}) {
+function multiplyPixel(dst, src, i) {
+  const srcA = src[i + 3] / 255;
+  const dstA = dst[i + 3] / 255;
+  const outA = srcA + dstA * (1 - srcA);
+  if (outA <= 0) {
+    dst[i] = 0; dst[i + 1] = 0; dst[i + 2] = 0; dst[i + 3] = 0;
+    return;
+  }
+  for (let channel = 0; channel < 3; channel += 1) {
+    const source = src[i + channel] / 255;
+    const backdrop = dst[i + channel] / 255;
+    const premultiplied = source * backdrop * srcA * dstA
+      + source * srcA * (1 - dstA)
+      + backdrop * dstA * (1 - srcA);
+    dst[i + channel] = Math.round(premultiplied / outA * 255);
+  }
+  dst[i + 3] = Math.round(outA * 255);
+}
+
+export function multiply(dst, src) {
+  for (let i = 0; i < dst.length; i += 4) multiplyPixel(dst, src, i);
+}
+
+export function compositePortraitLayers({ schema, slots, blendModes = {}, outputPath } = {}) {
   if (!schema || !Array.isArray(schema.slots)) {
     throw new Error('missing slot schema');
   }
@@ -179,7 +202,10 @@ export function compositePortraitLayers({ schema, slots, outputPath } = {}) {
     } else if (layer.width !== width || layer.height !== height) {
       throw new Error(`slot ${slot.id} size ${layer.width}x${layer.height} != ${width}x${height}`);
     }
-    sourceOver(dest, layer.pixels);
+    const blendMode = blendModes[slot.id] ?? 'source-over';
+    if (blendMode === 'source-over') sourceOver(dest, layer.pixels);
+    else if (blendMode === 'multiply') multiply(dest, layer.pixels);
+    else throw new Error(`unsupported blend mode ${blendMode} for slot ${slot.id}`);
   }
   if (!dest) {
     throw new Error('missing required slot: no layers');

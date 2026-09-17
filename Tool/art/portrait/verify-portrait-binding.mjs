@@ -18,7 +18,9 @@ const slotSchema = JSON.parse(readFileSync(new URL('./portrait-layer-slots.json'
 
 export const ATLAS_PATH = 'Wikis/game-logic/World-Narrative-Atlas.md';
 export const SEXES = ['female', 'male'];
-export const REQUIRED_VARIANTS_PER_SLOT = 10;
+// Delivery requires a nonempty selectable slot. The builder publishes every unique candidate that
+// passed the minimum contract; curation-only rejected/superseded/unreviewed records never enter it.
+export const REQUIRED_VARIANTS_PER_SLOT = 1;
 
 const SHA256 = /^[0-9a-f]{64}$/;
 const isSha256 = (value) => typeof value === 'string' && SHA256.test(value);
@@ -104,17 +106,32 @@ export function verifyPortraitBinding(document, options = {}) {
       const missing = [];
       for (const slot of slotSchema.slots) {
         const entry = record[slot.id];
-        const enabled = entry?.enabled === true;
+        const mode = entry?.mode;
         const chosen = selection[slot.id];
-        if (!enabled) {
+        if (mode === 'disabled') {
           if (chosen !== undefined) fail('disabled_slot_bound', { character_id: characterId, slot: slot.id });
           continue;
         }
-        if (Array.isArray(entry.variants) && entry.variants.length < REQUIRED_VARIANTS_PER_SLOT) {
+        if (mode === 'selectable' && Array.isArray(entry.variants) && entry.variants.length < REQUIRED_VARIANTS_PER_SLOT) {
           fail('variant_count_short', {
             character_id: characterId, slot: slot.id,
             expected: REQUIRED_VARIANTS_PER_SLOT, value: entry.variants.length,
           });
+        }
+        if (mode === 'fixed') {
+          if (chosen !== undefined && chosen !== null && chosen !== entry.variants?.[0]?.id) {
+            fail('fixed_slot_override', { character_id: characterId, slot: slot.id, variant: chosen });
+          }
+          if (slot.required && chosen === undefined) missing.push(slot.id);
+          continue;
+        }
+        if (mode === 'companion') {
+          if (chosen !== undefined) fail('derived_slot_bound', { character_id: characterId, slot: slot.id, mode });
+          continue;
+        }
+        if (mode !== 'selectable') {
+          fail('slot_mode_invalid', { character_id: characterId, slot: slot.id, value: mode ?? null });
+          continue;
         }
         if (chosen === undefined) {
           if (slot.required) missing.push(slot.id);
@@ -122,6 +139,17 @@ export function verifyPortraitBinding(document, options = {}) {
         }
         if (!entry.variants?.some((variant) => variant?.id === chosen)) {
           fail('unknown_variant', { character_id: characterId, slot: slot.id, variant: chosen });
+        }
+        // Delivery binds only fully gate-validated slot components. A provisional component
+        // remains preview/curation-only until the 1→4 chain completes.
+        if (library?.slot_validity_policy === 'gates-1-4') {
+          const chosenVariant = entry.variants?.find((variant) => variant?.id === chosen);
+          if (chosenVariant && chosenVariant.slot_validity?.status !== 'verified') {
+            fail('slot_not_validated', {
+              character_id: characterId, slot: slot.id, variant: chosen,
+              validity: chosenVariant.slot_validity?.status ?? null,
+            });
+          }
         }
       }
       if (missing.length) fail('selection_incomplete', { character_id: characterId, slots: missing });

@@ -10,7 +10,7 @@
       "ears": ["ears"],
       "eyewear": ["acc_eye"],
       "face": ["face_base"],
-      "eyewhite": ["eyes_shape"],
+      "eyewhite": ["eyes_white"],
       "eyelash": ["eyes_shape"],
       "eyebrow": ["eyes_shape"],
       "topwear": ["clothes"],
@@ -26,7 +26,7 @@
       "ears": ["ears"],
       "eyewear": ["acc_eye"],
       "face": ["face_base"],
-      "eyewhite": ["eyes_shape"],
+      "eyewhite": ["eyes_white"],
       "eyelash": ["eyes_shape"],
       "eyebrow": ["eyes_shape"],
       "topwear": ["clothes"],
@@ -34,7 +34,7 @@
     }
   },
   "combineOrder": {
-    "eyes_shape": ["eyewhite", "eyelash", "eyebrow"]
+    "eyes_shape": ["eyelash", "eyebrow"]
   },
-  "notes": "target-contract: PNGAL neck tag is not slot neck (empty compatibility). face_base owns scalp/jaw/neck/shoulder. eyes_shape owns brows."
+  "notes": "target-contract: PNGAL neck tag is not slot neck (empty compatibility). face_base owns scalp/jaw/neck/shoulder. eyes_white owns sclera; eyes_color owns irides/pupils; eyes_shape owns lids/lashes/brows."
 }

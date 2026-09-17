@@ -14,6 +14,10 @@ const { slots } = JSON.parse(readFileSync(new URL('./portrait-layer-slots.json',
 
 const sha256 = (bytes) => createHash('sha256').update(bytes).digest('hex');
 const DISABLED_FOR_FEMALE = ['beard', 'beard_back'];
+const SELECTABLE = new Set(['bg', 'face_base', 'mouth', 'nose', 'eyes_white', 'eyes_shape', 'eyes_color', 'clothes', 'headgear', 'acc_eye', 'frame']);
+const modeFor = (sex, id) => (sex === 'male' && id === 'hair') || SELECTABLE.has(id) ? 'selectable'
+  : ['headgear_back', 'headgear_mid'].includes(id) || (sex === 'male' && ['clothes_back', 'clothes_front'].includes(id)) ? 'companion'
+    : (sex === 'female' && DISABLED_FOR_FEMALE.includes(id)) || (sex === 'male' && ['hair_back', 'beard_back'].includes(id)) ? 'disabled' : 'fixed';
 
 function workspace(t) {
   const root = mkdtempSync(join(tmpdir(), 'portrait-binding-'));
@@ -42,11 +46,12 @@ function libraryManifest(variantsPerSlot = 10) {
   for (const sex of ['female', 'male']) {
     const entries = {};
     for (const slot of slots) {
-      const enabled = !(sex === 'female' && DISABLED_FOR_FEMALE.includes(slot.id));
+      const mode = modeFor(sex, slot.id);
+      const enabled = mode !== 'disabled';
       entries[slot.id] = {
-        enabled,
+        mode, enabled,
         variants: enabled
-          ? Array.from({ length: variantsPerSlot }, (_, i) => ({
+          ? Array.from({ length: mode === 'fixed' ? 1 : mode === 'companion' ? 0 : variantsPerSlot }, (_, i) => ({
             id: `${slot.id}-${String(i + 1).padStart(2, '0')}`,
             path: `plates/${sex}/${slot.id}-${String(i + 1).padStart(2, '0')}.png`,
           }))
@@ -62,9 +67,9 @@ function libraryManifest(variantsPerSlot = 10) {
 function selectionFor(sex, index = 1) {
   const picked = {};
   for (const slot of slots) {
-    if (!slot.required) continue;
-    if (sex === 'female' && DISABLED_FOR_FEMALE.includes(slot.id)) continue;
-    picked[slot.id] = `${slot.id}-${String(index).padStart(2, '0')}`;
+    if (!slot.required || !['selectable', 'fixed'].includes(modeFor(sex, slot.id))) continue;
+    const chosen = modeFor(sex, slot.id) === 'fixed' ? 1 : index;
+    picked[slot.id] = `${slot.id}-${String(chosen).padStart(2, '0')}`;
   }
   return picked;
 }
@@ -72,7 +77,7 @@ function selectionFor(sex, index = 1) {
 function fixture(t, { characters = ['K001', 'K002'], variantsPerSlot = 10 } = {}) {
   const { root, put } = workspace(t);
   put('Wikis/game-logic/World-Narrative-Atlas.md', atlasMarkdown(characters));
-  const library = put('Design/portrait-demo/assets/v2/library.json',
+  const library = put('Design/potrait-generator/assets/v2/library.json',
     JSON.stringify(libraryManifest(variantsPerSlot), null, 2));
   const binding = (id, sex, index) => ({
     character_id: id,
@@ -89,10 +94,16 @@ test('the character registry comes from the atlas json fence', (t) => {
   assert.deepEqual([...registry].sort(), ['K001', 'K002', 'K1006']);
 });
 
-test('the live atlas registers the full K001-K1006 human range', () => {
+test('the live atlas registers a contiguous K001..KN human range', () => {
   const registry = loadCharacterRegistry(new URL('../../../', import.meta.url).pathname);
-  assert.equal(registry.size, 1006);
-  for (const id of ['K001', 'K422', 'K423', 'K1000', 'K1006']) assert.ok(registry.has(id), id);
+  // The atlas roster is owned by main's cast corpus; the portrait contract only requires a
+  // contiguous, nonempty human range so bindings can address any registered person.
+  assert.ok(registry.size > 0, 'atlas registry is empty');
+  const ids = [...registry].sort();
+  assert.equal(ids[0], 'K001');
+  for (let index = 0; index < ids.length; index += 1) {
+    assert.equal(ids[index], `K${String(index + 1).padStart(3, '0')}`, 'contiguous ids');
+  }
 });
 
 test('a complete two-character binding document is accepted', (t) => {
@@ -144,10 +155,18 @@ test('a female binding may not select beard or beard_back', (t) => {
   assert.ok(report.errors.some((e) => e.code === 'disabled_slot_bound' && e.slot === 'beard'));
 });
 
-test('a male binding may select beard, and optional slots stay optional', (t) => {
+test('a male fixed beard may not be overridden', (t) => {
   const { root, library, binding } = fixture(t);
   const row = binding('K002', 'male', 1);
   row.selection.beard = 'beard-04';
+  const report = verifyPortraitBinding({ schema_version: 1, library, bindings: [row] }, { repoRoot: root });
+  assert.ok(report.errors.some((e) => e.code === 'fixed_slot_override' && e.slot === 'beard'));
+});
+
+test('a fixed slot may be explicitly bound as hidden', (t) => {
+  const { root, library, binding } = fixture(t);
+  const row = binding('K002', 'male', 1);
+  row.selection.beard = null;
   const report = verifyPortraitBinding({ schema_version: 1, library, bindings: [row] }, { repoRoot: root });
   assert.deepEqual(report.errors, []);
   assert.equal(report.ok, true);
@@ -161,9 +180,9 @@ test('an unknown slot or unknown variant id is refused', (t) => {
     .errors.some((e) => e.code === 'unknown_slot' && e.slot === 'halo'));
 
   const strayVariant = binding('K002', 'male', 1);
-  strayVariant.selection.hair = 'hair-99';
+  strayVariant.selection.eyes_shape = 'eyes_shape-99';
   assert.ok(verifyPortraitBinding({ schema_version: 1, library, bindings: [strayVariant] }, { repoRoot: root })
-    .errors.some((e) => e.code === 'unknown_variant' && e.variant === 'hair-99'));
+    .errors.some((e) => e.code === 'unknown_variant' && e.variant === 'eyes_shape-99'));
 });
 
 test('identical selections must reproduce an identical export hash', (t) => {
@@ -202,14 +221,50 @@ test('a library manifest that drifted from its recorded hash is refused', (t) =>
   assert.equal(report.ok, false);
 });
 
-test('a library slot short of ten variants cannot back a delivery binding', (t) => {
-  const { root, library, binding } = fixture(t, { variantsPerSlot: 3 });
+test('an empty selectable library slot cannot back a delivery binding', (t) => {
+  const { root, put, binding } = fixture(t, { variantsPerSlot: 2 });
+  const document = libraryManifest(2);
+  document.sexes.female.slots.bg.variants = [];
+  const library = put('Design/potrait-generator/assets/v2/empty-library.json', JSON.stringify(document));
   const report = verifyPortraitBinding({
     schema_version: 1,
     library,
     bindings: [binding('K001', 'female', 1)],
   }, { repoRoot: root });
   assert.ok(report.errors.some((e) => e.code === 'variant_count_short'));
+});
+
+test('a gates-1-4 library refuses delivery of provisional slot components', (t) => {
+  const { root, put, binding } = fixture(t);
+  const document = libraryManifest();
+  document.slot_validity_policy = 'gates-1-4';
+  for (const sex of ['female', 'male']) {
+    for (const entry of Object.values(document.sexes[sex].slots)) {
+      for (const variant of entry.variants) {
+        variant.slot_validity = { status: 'provisional', policy: 'gates-1-4', gates: { gate1: 'PASS', gate2: 'PASS', gate3: 'FAIL', gate4: 'PENDING' }, reason: 'gate_chain_incomplete' };
+      }
+    }
+  }
+  const library = put('Design/potrait-generator/assets/v2/provisional-library.json', JSON.stringify(document));
+  const report = verifyPortraitBinding({ schema_version: 1, library, bindings: [binding('K001', 'female', 1)] }, { repoRoot: root });
+  assert.ok(report.errors.some((e) => e.code === 'slot_not_validated'));
+  assert.equal(report.ok, false);
+});
+
+test('a gates-1-4 library accepts delivery when the chosen component is fully verified', (t) => {
+  const { root, put, binding } = fixture(t);
+  const document = libraryManifest();
+  document.slot_validity_policy = 'gates-1-4';
+  const verified = { status: 'verified', policy: 'gates-1-4', gates: { gate1: 'PASS', gate2: 'PASS', gate3: 'PASS', gate4: 'PASS' } };
+  for (const sex of ['female', 'male']) {
+    for (const entry of Object.values(document.sexes[sex].slots)) {
+      for (const variant of entry.variants) variant.slot_validity = verified;
+    }
+  }
+  const library = put('Design/potrait-generator/assets/v2/verified-library.json', JSON.stringify(document));
+  const report = verifyPortraitBinding({ schema_version: 1, library, bindings: [binding('K001', 'female', 1)] }, { repoRoot: root });
+  assert.deepEqual(report.errors, []);
+  assert.equal(report.ok, true);
 });
 
 test('an attached review must be a bound, accepted GQ4 record for the same character', (t) => {

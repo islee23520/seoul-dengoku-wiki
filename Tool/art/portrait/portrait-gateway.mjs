@@ -1,4 +1,4 @@
-const GATE_IDS = Object.freeze(['gateway1', 'gateway2', 'gateway3']);
+const GATE_IDS = Object.freeze(['gateway1', 'gateway2', 'gateway3', 'gateway4']);
 const STATUSES = Object.freeze(['PASS', 'FAIL', 'IN_PROGRESS', 'NOT_VERIFIED', 'BLOCKED']);
 const MODES = Object.freeze(['preservation', 'variation']);
 const SHA256 = /^[0-9a-f]{64}$/;
@@ -26,7 +26,7 @@ export function validatePortraitWorkflow(workflow) {
       fail(`${profileId}: source path/SHA-256 오류`);
     }
     const keys = Object.keys(profile.gates ?? {});
-    if (keys.length !== 3 || GATE_IDS.some(id => !keys.includes(id))) fail(`${profileId}: 1·2·3차 게이트가 모두 필요합니다.`);
+    if (keys.length !== 4 || GATE_IDS.some(id => !keys.includes(id))) fail(`${profileId}: 1·2·3·4차 게이트가 모두 필요합니다.`);
     const states = GATE_IDS.map((id, index) => {
       const gate = profile.gates[id];
       if (!STATUSES.includes(gate?.status)) fail(`${profileId}/${index + 1}차: 상태 오류`);
@@ -36,12 +36,13 @@ export function validatePortraitWorkflow(workflow) {
     });
     if (states[1] === 'PASS' && states[0] !== 'PASS') fail(`${profileId}: 1차 PASS 전 2차 PASS는 순서 위반입니다.`);
     if (states[2] === 'PASS' && (states[0] !== 'PASS' || states[1] !== 'PASS')) fail(`${profileId}: 1·2차 PASS 전 3차 PASS는 순서 위반입니다.`);
+    if (states[3] === 'PASS' && states.slice(0, 3).some(status => status !== 'PASS')) fail(`${profileId}: 1·2·3차 PASS 전 4차 PASS는 순서 위반입니다.`);
   }
   if (!Array.isArray(workflow.tools) || workflow.tools.length === 0) fail('portrait workflow tools가 필요합니다.');
   const toolIds = new Set();
   for (const tool of workflow.tools) {
     if (typeof tool?.id !== 'string' || !tool.id || toolIds.has(tool.id)) fail('portrait workflow tool ID 오류');
-    if (!Number.isInteger(tool.unlock_after) || tool.unlock_after < 0 || tool.unlock_after > 3) fail(`${tool.id}: unlock_after 오류`);
+    if (!Number.isInteger(tool.unlock_after) || tool.unlock_after < 0 || tool.unlock_after > 4) fail(`${tool.id}: unlock_after 오류`);
     toolIds.add(tool.id);
   }
   return workflow;
@@ -60,23 +61,27 @@ export function workflowCapabilities(workflow) {
     split: true,
     rig: passed[0],
     combinations: passed[0] && passed[1],
-    export: passed[0] && passed[1] && passed[2],
-    binding: passed[0] && passed[1] && passed[2],
-    runtime: passed[0] && passed[1] && passed[2]
+    curation: passed[0] && passed[1],
+    combinationAccepted: passed[0] && passed[1] && passed[2],
+    export: passed.every(Boolean),
+    binding: passed.every(Boolean),
+    runtime: passed.every(Boolean)
   });
 }
 
 export function toolAvailability(workflow) {
   const valid = validatePortraitWorkflow(workflow);
   const capabilities = workflowCapabilities(valid);
-  const passedCount = capabilities.export ? 3 : capabilities.combinations ? 2 : capabilities.rig ? 1 : 0;
+  const passedCount = capabilities.export ? 4 : capabilities.combinationAccepted ? 3 : capabilities.combinations ? 2 : capabilities.rig ? 1 : 0;
   return valid.tools.map(tool => Object.freeze({ ...tool, available: passedCount >= tool.unlock_after }));
 }
 
 export function requirePortraitCapability(workflow, capability) {
   const capabilities = workflowCapabilities(workflow);
   if (capabilities[capability] !== true) {
-    const requirement = capability === 'rig' ? '1차' : capability === 'combinations' ? '1·2차' : '1·2·3차';
+    const requirement = capability === 'rig' ? '1차'
+      : ['combinations', 'curation'].includes(capability) ? '1·2차'
+        : capability === 'combinationAccepted' ? '1·2·3차' : '1·2·3·4차';
     fail(`${requirement} 게이트 PASS 전 ${capability} 작업은 금지됩니다.`);
   }
   return true;

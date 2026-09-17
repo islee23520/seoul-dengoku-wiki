@@ -11,16 +11,17 @@
     { "id": "chin", "z": 8, "required": true, "identityToken": "skin" },
     { "id": "mouth", "z": 9, "required": true },
     { "id": "nose", "z": 10, "required": true },
-    { "id": "eyes_shape", "z": 11, "required": true },
+    { "id": "eyes_white", "z": 11, "required": true },
     { "id": "eyes_color", "z": 12, "required": true, "identityToken": "eye_color" },
-    { "id": "ears", "z": 13, "required": true, "identityToken": "skin" },
-    { "id": "clothes", "z": 14, "required": true, "identityToken": "outfit_palette" },
-    { "id": "headgear_mid", "z": 15, "required": false, "identityToken": "outfit" },
-    { "id": "beard", "z": 16, "required": false, "identityToken": "hair_color" },
-    { "id": "hair", "z": 17, "required": true, "identityToken": "hair_color" },
-    { "id": "clothes_front", "z": 18, "required": false, "identityToken": "outfit" },
-    { "id": "headgear", "z": 19, "required": false, "identityToken": "outfit" },
-    { "id": "acc_eye", "z": 20, "required": false },
-    { "id": "frame", "z": 21, "required": false }
+    { "id": "eyes_shape", "z": 13, "required": true },
+    { "id": "ears", "z": 14, "required": true, "identityToken": "skin" },
+    { "id": "clothes", "z": 15, "required": true, "identityToken": "outfit_palette" },
+    { "id": "headgear_mid", "z": 16, "required": false, "identityToken": "outfit" },
+    { "id": "beard", "z": 17, "required": false, "identityToken": "hair_color" },
+    { "id": "hair", "z": 18, "required": false, "identityToken": "hair_color" },
+    { "id": "clothes_front", "z": 19, "required": false, "identityToken": "outfit" },
+    { "id": "headgear", "z": 20, "required": false, "identityToken": "outfit" },
+    { "id": "acc_eye", "z": 21, "required": false },
+    { "id": "frame", "z": 22, "required": false }
   ]
 }
