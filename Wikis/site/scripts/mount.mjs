@@ -24,7 +24,8 @@ const DESIGN_EXACT = new Set([
   'Concept.md',
   'Design.md',
   'ToDo.md',
-  'Intent.md'
+  'Intent.md',
+  'Design-Requirements.md'
 ])
 
 const WORLD_PREFIXES = [
@@ -58,7 +59,10 @@ const WORLD_PREFIXES = [
   'Ambitions-and',
   'External-Theaters',
   'Regional-Physical',
-  'Starting-Presets'
+  'Starting-Presets',
+  'Building-Reuse-Geography',
+  'Values-and-Policy-Scales',
+  'Vassal-Dynasty-Politics'
 ]
 
 const RULES_PREFIXES = [

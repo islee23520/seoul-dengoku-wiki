@@ -41,6 +41,6 @@
 - [이주민 회랑](/world/Diaspora-Corridors) · [회랑 인물](/world/Cast-Corridors-Index): 한국 국적만 기본값이 아닌 회랑과 시드 인물
 - [야망](/world/Ambitions-and-Relations): 인물이 전쟁, 동맹, 배신과 계승을 결정하는 규칙
 - [연표](/world/Scenario-Timeline): 붕괴 이전부터 패권전까지 인물 조건으로 분기하는 연대기
-- [가치관과 정책 척도](Values-and-Policy-Scales.md): 인물 10칸, 조직 가치관·정책, 1000명 생성 경로
+- [가치관과 정책 척도](/world/Values-and-Policy-Scales): 인물 10칸, 조직 가치관·정책, 1000명 생성 경로
 - [가문](/world/Chaebol-Houses-and-Century-Factions): 총수 일가, 구 정부, 외부 세력, 공백의 세기에 생긴 직능 가문
 

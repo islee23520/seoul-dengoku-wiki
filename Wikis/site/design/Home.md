@@ -34,7 +34,7 @@
 | [서울과 지하철 레이어](/world/World-and-Subway-Layers) | 지상·역·터널 |
 | [월드맵을 어떻게 구성하나](/world/World-Map-Construction) | 구 25·역 목록 |
 | [서울 지역 설정 데이터](regions/README.md) | 25구·427동 |
-| [강·구·동 건물 재사용](Building-Reuse-Geography.md) | 한강과 관측 건물 |
+| [강·구·동 건물 재사용](/world/Building-Reuse-Geography) | 한강과 관측 건물 |
 | [서울 역 카탈로그](/world/Seoul-Station-Catalog) | 이름 있는 역 334곳 |
 | [역 내부에 들어가면](/world/Station-Interior-Construction) | 대합실과 승강장 |
 
