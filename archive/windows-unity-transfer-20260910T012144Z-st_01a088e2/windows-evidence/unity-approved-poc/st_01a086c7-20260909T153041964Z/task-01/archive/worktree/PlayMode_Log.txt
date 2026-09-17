@@ -1,0 +1,11 @@
+VBCSCompilerPreWarmer: pre-warm launched (dotnet PID 137796)
+VBCSCompiler prewarm took 6.34 ms
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from 'trunk' branch; Version is '6000.7.0a5 (a15235a53881) revision 10572341'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'ko' Physical Memory: 65111 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-09-08T21:02:27Z
+[Licensing::IpcConnector] Channel LicenseClient-oliver doesn't exist
+[Licensing::Module] Successfully launched the LicensingClient (PId: 125404)

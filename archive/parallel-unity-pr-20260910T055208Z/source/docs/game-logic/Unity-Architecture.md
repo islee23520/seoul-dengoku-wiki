@@ -1,0 +1,38 @@
+# 유니티 구조
+
+![유니티 화면에서 칸에 누가 서 있고 어느 쪽을 보며 어디까지 보이는지](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-grammar.svg?raw=true)
+
+## 기준선
+
+현재 기반은 Unity `6000.7.0a5`입니다. 시험판이므로 편집기 판본과 패키지 잠금 파일을 함께 고정하고, 판본을 올리기 전에 따로 검증합니다.
+
+현재 구현된 기반은 다음입니다.
+
+- Unity `6000.7.0a5` 프로젝트
+- 장르 계약 JSON과 상수, EditMode 장르 계약 테스트
+- URP, Input System, Test Framework, VContainer `1.19.0`
+- `Bootstrap.unity` App scope와 FSM, `Foundation.unity` 화면 child scope
+- 단일 scene-load 권한과 정적 아키텍처 게이트
+
+다음 모듈 `Unity POC 통합 코어 루프`는 MainTitle 화면과 결정론적 세 역 코어 루프를 이 기반 위에 추가합니다. 그 구현은 아직 시작하지 않았습니다.
+
+## 영역별 책임
+
+| 모듈 | 책임 | UnityEngine 참조 |
+|---|---|---|
+| `Janseon.Core` | ID, 시간, 명령, 사건 | 금지 |
+| `Janseon.WorldGraph` | 다층 지도와 출처 | 금지 |
+| `Janseon.Battle.Contracts` | 전투 입력·결과 | 금지 |
+| `Janseon.Battle` | SRPG 규칙 | 금지 |
+| `Janseon.Sim` | 캠페인 시뮬레이션 | 금지 |
+| `Janseon.Data` | Unity 저작 데이터 | 허용 |
+| `Janseon.Presentation` | 화면, 입력, 사운드 | 허용 |
+| `Janseon.App` | 조립, 씬, 저장 연결 | 허용 |
+
+## 규칙
+
+- 엔진 독립 모듈에는 전역 가변 상태를 두지 않습니다.
+- 화면은 상태를 직접 수정하지 않고 명령을 보냅니다.
+- 모든 상태 변화는 사건 원장에 기록합니다.
+- 고급 패키지는 실제 사용처와 실패 테스트가 생긴 뒤 추가합니다.
+

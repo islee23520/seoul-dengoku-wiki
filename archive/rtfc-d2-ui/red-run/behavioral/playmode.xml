@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="5" result="Failed(Child)" total="5" passed="0" failed="5" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-08 23:23:37Z" end-time="2026-09-08 23:23:38Z" duration="1.1363747">
+  <test-suite type="TestSuite" id="1044" name="잔선_ 서울" fullname="잔선_ 서울" runstate="Runnable" testcasecount="28" result="Failed" site="Child" start-time="2026-09-08 23:23:37Z" end-time="2026-09-08 23:23:38Z" duration="1.136375" total="5" passed="0" failed="5" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1037" name="Janseon.Foundation.PlayModeTests.dll" fullname="E:/git/seoul-kenshi-wt/rtfc-phase-d/Game/Library/ScriptAssemblies/Janseon.Foundation.PlayModeTests.dll" runstate="Runnable" testcasecount="28" result="Failed" site="Child" start-time="2026-09-08 23:23:37Z" end-time="2026-09-08 23:23:38Z" duration="1.129815" total="5" passed="0" failed="5" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="155868" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1038" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="27" result="Failed" site="Child" start-time="2026-09-08 23:23:37Z" end-time="2026-09-08 23:23:38Z" duration="1.129068" total="5" passed="0" failed="5" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1039" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="27" result="Failed" site="Child" start-time="2026-09-08 23:23:37Z" end-time="2026-09-08 23:23:38Z" duration="1.128571" total="5" passed="0" failed="5" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="1040" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="27" result="Failed" site="Child" start-time="2026-09-08 23:23:37Z" end-time="2026-09-08 23:23:38Z" duration="1.128120" total="5" passed="0" failed="5" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestFixture" id="1011" name="CoreLoopPlayModeTests" fullname="Janseon.Foundation.Tests.CoreLoopPlayModeTests" classname="Janseon.Foundation.Tests.CoreLoopPlayModeTests" runstate="Runnable" testcasecount="20" result="Failed" site="Child" start-time="2026-09-08 23:23:37Z" end-time="2026-09-08 23:23:38Z" duration="1.126892" total="5" passed="0" failed="5" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="1020" name="D2_FormationEdit_DeploysChangedFormationBeforeRealtimeStarts" fullname="Janseon.Foundation.Tests.CoreLoopPlayModeTests.D2_FormationEdit_DeploysChangedFormationBeforeRealtimeStarts" methodname="D2_FormationEdit_DeploysChangedFormationBeforeRealtimeStarts" classname="Janseon.Foundation.Tests.CoreLoopPlayModeTests" runstate="Runnable" seed="951073852" result="Failed" start-time="2026-09-08 23:23:37Z" end-time="2026-09-08 23:23:37Z" duration="0.598102" asserts="0">
+                <properties>
+                  <property name="Category" value="D2Ui" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                  <stack-trace><![CDATA[at Janseon.Foundation.Tests.CoreLoopPlayModeTests.D2_FormationEdit_DeploysChangedFormationBeforeRealtimeStarts () [0x00093] in E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Assets\Tests\PlayMode\CoreLoopPlayModeTests.cs:259
+at UnityEngine.TestTools.TestRunner.TestTaskWrapper+<Execute>d__2.MoveNext () [0x00063] in .\Library\PackageCache\com.unity.test-framework@4c309923fa3b\UnityEngine.TestRunner\TestRunner\TestTaskWrapper.cs:31
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__8.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@4c309923fa3b\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:52
+]]></stack-trace>
+                </failure>
+                <output><![CDATA[Unable to load font face for [Malgun Gothic]. Make sure "Include Font Data" is enabled in the Font Import Settings.
+TmpFont bundle asset creation failed: Value cannot be null.
+Parameter name: shader
+TmpFont file-path asset creation failed: Value cannot be null.
+Parameter name: shader
+TmpFont file-path asset creation failed: Value cannot be null.
+Parameter name: shader
+JANSEON_STARTUP_READY screen=MainTitle
+CORE_LOOP_TESTED_HEAD baaeb8a5b46404f0e866c795cf65c1f431673ca4
+]]></output>
+              </test-case>
+              <test-case id="1021" name="D2_GeneralCard_IsAcceptedFromActualUiWhilePaused" fullname="Janseon.Foundation.Tests.CoreLoopPlayModeTests.D2_GeneralCard_IsAcceptedFromActualUiWhilePaused" methodname="D2_GeneralCard_IsAcceptedFromActualUiWhilePaused" classname="Janseon.Foundation.Tests.CoreLoopPlayModeTests" runstate="Runnable" seed="672872170" result="Failed" start-time="2026-09-08 23:23:37Z" end-time="2026-09-08 23:23:37Z" duration="0.135468" asserts="0">
+                <properties>
+                  <property name="Category" value="D2Ui" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  missing clickable button edit-formation
+  Expected: not null
+  But was:  null
+]]></message>
+                  <stack-trace><![CDATA[at Janseon.Foundation.Tests.CoreLoopPlayModeTests.InvokeButton (UnityEngine.RectTransform root, System.String name) [0x00007] in E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Assets\Tests\PlayMode\CoreLoopPlayModeTests.cs:835
+at Janseon.Foundation.Tests.CoreLoopPlayModeTests.ClickAndAwait (Janseon.Foundation.UI.IPocCoreLoopSession session, UnityEngine.RectTransform root, System.String elementName, System.Func`2[T,TResult] predicate) [0x00015] in E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Assets\Tests\PlayMode\CoreLoopPlayModeTests.cs:823
+at Janseon.Foundation.Tests.CoreLoopPlayModeTests.D2_GeneralCard_IsAcceptedFromActualUiWhilePaused () [0x000d4] in E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Assets\Tests\PlayMode\CoreLoopPlayModeTests.cs:281
+at UnityEngine.TestTools.TestRunner.TestTaskWrapper+<Execute>d__2.MoveNext () [0x00063] in .\Library\PackageCache\com.unity.test-framework@4c309923fa3b\UnityEngine.TestRunner\TestRunner\TestTaskWrapper.cs:31
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__8.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@4c309923fa3b\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:52
+]]></stack-trace>
+                </failure>
+                <output><![CDATA[JANSEON_STARTUP_READY screen=MainTitle
+CORE_LOOP_TESTED_HEAD baaeb8a5b46404f0e866c795cf65c1f431673ca4
+]]></output>
+              </test-case>
+              <test-case id="1022" name="D2_GeneralRecharge_VisibleValueTracksCoreAfterResume" fullname="Janseon.Foundation.Tests.CoreLoopPlayModeTests.D2_GeneralRecharge_VisibleValueTracksCoreAfterResume" methodname="D2_GeneralRecharge_VisibleValueTracksCoreAfterResume" classname="Janseon.Foundation.Tests.CoreLoopPlayModeTests" runstate="Runnable" seed="351419132" result="Failed" start-time="2026-09-08 23:23:37Z" end-time="2026-09-08 23:23:38Z" duration="0.127374" asserts="0">
+                <properties>
+                  <property name="Category" value="D2Ui" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  missing clickable button edit-formation
+  Expected: not null
+  But was:  null
+]]></message>
+                  <stack-trace><![CDATA[at Janseon.Foundation.Tests.CoreLoopPlayModeTests.InvokeButton (UnityEngine.RectTransform root, System.String name) [0x00007] in E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Assets\Tests\PlayMode\CoreLoopPlayModeTests.cs:835
+at Janseon.Foundation.Tests.CoreLoopPlayModeTests.ClickAndAwait (Janseon.Foundation.UI.IPocCoreLoopSession session, UnityEngine.RectTransform root, System.String elementName, System.Func`2[T,TResult] predicate) [0x00015] in E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Assets\Tests\PlayMode\CoreLoopPlayModeTests.cs:823
+at Janseon.Foundation.Tests.CoreLoopPlayModeTests.D2_GeneralRecharge_VisibleValueTracksCoreAfterResume () [0x000d4] in E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Assets\Tests\PlayMode\CoreLoopPlayModeTests.cs:298
+at UnityEngine.TestTools.TestRunner.TestTaskWrapper+<Execute>d__2.MoveNext () [0x00063] in .\Library\PackageCache\com.unity.test-framework@4c309923fa3b\UnityEngine.TestRunner\TestRunner\TestTaskWrapper.cs:31
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__8.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@4c309923fa3b\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:52
+]]></stack-trace>
+                </failure>
+                <output><![CDATA[JANSEON_STARTUP_READY screen=MainTitle
+CORE_LOOP_TESTED_HEAD baaeb8a5b46404f0e866c795cf65c1f431673ca4
+]]></output>
+              </test-case>
+              <test-case id="1023" name="D2_MoraleAndReinforcementForecast_AreLiveCoreValues" fullname="Janseon.Foundation.Tests.CoreLoopPlayModeTests.D2_MoraleAndReinforcementForecast_AreLiveCoreValues" methodname="D2_MoraleAndReinforcementForecast_AreLiveCoreValues" classname="Janseon.Foundation.Tests.CoreLoopPlayModeTests" runstate="Runnable" seed="1809561993" result="Failed" start-time="2026-09-08 23:23:38Z" end-time="2026-09-08 23:23:38Z" duration="0.127475" asserts="0">
+                <properties>
+                  <property name="Category" value="D2Ui" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  missing visible value battle-morale
+  Expected: not null
+  But was:  null
+]]></message>
+                  <stack-trace><![CDATA[at Janseon.Foundation.Tests.CoreLoopPlayModeTests.RequireText (UnityEngine.RectTransform root, System.String elementName) [0x00008] in E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Assets\Tests\PlayMode\CoreLoopPlayModeTests.cs:719
+at Janseon.Foundation.Tests.CoreLoopPlayModeTests.D2_MoraleAndReinforcementForecast_AreLiveCoreValues () [0x0013f] in E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Assets\Tests\PlayMode\CoreLoopPlayModeTests.cs:327
+at UnityEngine.TestTools.TestRunner.TestTaskWrapper+<Execute>d__2.MoveNext () [0x00063] in .\Library\PackageCache\com.unity.test-framework@4c309923fa3b\UnityEngine.TestRunner\TestRunner\TestTaskWrapper.cs:31
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__8.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@4c309923fa3b\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:52
+]]></stack-trace>
+                </failure>
+                <output><![CDATA[JANSEON_STARTUP_READY screen=MainTitle
+CORE_LOOP_TESTED_HEAD baaeb8a5b46404f0e866c795cf65c1f431673ca4
+]]></output>
+              </test-case>
+              <test-case id="1024" name="D2_PauseResume_IsVisibleAndRemovesTurnApResidue" fullname="Janseon.Foundation.Tests.CoreLoopPlayModeTests.D2_PauseResume_IsVisibleAndRemovesTurnApResidue" methodname="D2_PauseResume_IsVisibleAndRemovesTurnApResidue" classname="Janseon.Foundation.Tests.CoreLoopPlayModeTests" runstate="Runnable" seed="1760738053" result="Failed" start-time="2026-09-08 23:23:38Z" end-time="2026-09-08 23:23:38Z" duration="0.127317" asserts="0">
+                <properties>
+                  <property name="Category" value="D2Ui" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Expected: not null
+  But was:  null
+]]></message>
+                  <stack-trace><![CDATA[at Janseon.Foundation.Tests.CoreLoopPlayModeTests.D2_PauseResume_IsVisibleAndRemovesTurnApResidue () [0x00087] in E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Assets\Tests\PlayMode\CoreLoopPlayModeTests.cs:339
+at UnityEngine.TestTools.TestRunner.TestTaskWrapper+<Execute>d__2.MoveNext () [0x00063] in .\Library\PackageCache\com.unity.test-framework@4c309923fa3b\UnityEngine.TestRunner\TestRunner\TestTaskWrapper.cs:31
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__8.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@4c309923fa3b\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:52
+]]></stack-trace>
+                </failure>
+                <output><![CDATA[JANSEON_STARTUP_READY screen=MainTitle
+CORE_LOOP_TESTED_HEAD baaeb8a5b46404f0e866c795cf65c1f431673ca4
+Saving results to: C:/Users/oliver/AppData/LocalLow/Janseon Studio/잔선_ 서울\TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

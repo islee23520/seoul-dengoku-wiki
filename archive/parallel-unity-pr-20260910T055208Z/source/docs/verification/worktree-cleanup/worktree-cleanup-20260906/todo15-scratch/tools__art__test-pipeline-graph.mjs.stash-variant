@@ -1,0 +1,166 @@
+import assert from 'node:assert/strict';
+import { mkdtemp, writeFile } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import test from 'node:test';
+import { spawnSync } from 'node:child_process';
+
+import { checkGraph, compileGraph } from './pipeline-graph.mjs';
+
+const repoRoot = fileURLToPath(new URL('../..', import.meta.url));
+const cli = fileURLToPath(new URL('./pipeline-graph.mjs', import.meta.url));
+
+function fourDirIntent() {
+  return {
+    asset_id: 'station-guard',
+    asset_class: 'character_mesh',
+    animation_need: 'four_dir_clip',
+    dcc: 'auto',
+    generation_backend: 'meshgen_6cell',
+    rights_status: 'allowed',
+    source: 'generate',
+  };
+}
+
+function cinematicMayaIntent() {
+  return {
+    asset_id: 'arrival-cutscene',
+    asset_class: 'character_mesh',
+    animation_need: 'cinematic_keyframe',
+    dcc: 'maya',
+    generation_backend: 'meshgen_6cell',
+    rights_status: 'allowed',
+    source: 'generate',
+  };
+}
+
+function idsOf(graph) {
+  return graph.nodes.map((node) => node.id);
+}
+
+function predecessors(graph, nodeId) {
+  return new Set(graph.edges.filter(([, dst]) => dst === nodeId).map(([src]) => src));
+}
+
+function assertThrowsCode(fn, code) {
+  assert.throws(fn, (error) => error && error.code === code);
+}
+
+test('generated character mesh fails closed before MeshyGen identifiers are verified', () => {
+  assertThrowsCode(() => compileGraph(fourDirIntent()), 'mesh_backend_unverified');
+  assertThrowsCode(() => compileGraph(cinematicMayaIntent()), 'mesh_backend_unverified');
+});
+
+test('unknown asset class is rejected', () => {
+  const intent = fourDirIntent();
+  intent.asset_class = 'vfx_sparkle';
+  assertThrowsCode(() => compileGraph(intent), 'unknown_asset_class');
+});
+
+test('portrait rejects maya', () => {
+  assertThrowsCode(() => compileGraph({
+    asset_id: 'hanjaemok-portrait',
+    asset_class: 'portrait',
+    animation_need: 'none',
+    dcc: 'maya',
+    generation_backend: 'openai_image',
+    rights_status: 'allowed',
+    source: 'generate',
+  }), 'maya_incompatible_asset');
+});
+
+test('four_dir rejects maya', () => {
+  const intent = fourDirIntent();
+  intent.dcc = 'maya';
+  assertThrowsCode(() => compileGraph(intent), 'mesh_backend_unverified');
+});
+
+test('maya without animation is rejected', () => {
+  const intent = cinematicMayaIntent();
+  intent.animation_need = 'none';
+  assertThrowsCode(() => compileGraph(intent), 'mesh_backend_unverified');
+});
+
+test('blocked rights do not compile downstream', () => {
+  const intent = fourDirIntent();
+  intent.rights_status = 'blocked';
+  const graph = compileGraph(intent);
+  assert.equal(graph.status, 'blocked');
+  assert.deepEqual(idsOf(graph), ['rights_check']);
+  const result = checkGraph(graph, { blender_available: true });
+  assert.equal(result.ok, false);
+  assert.ok(result.codes.includes('rights_blocked'));
+});
+
+test('handcrafted animo-only graph is rejected', () => {
+  const result = checkGraph({
+    schema_version: 1,
+    status: 'compiled',
+    nodes: [{
+      id: 'maya_animo_polish',
+      kind: 'dcc_polish',
+      tool: 'animo',
+      standalone: true,
+    }],
+    edges: [],
+    skipped: [],
+    intent: { rights_status: 'allowed' },
+  }, {
+    blender_available: true,
+    maya_available: true,
+    animo_available: true,
+  });
+  assert.equal(result.ok, false);
+  assert.ok(result.codes.includes('animo_standalone_forbidden'));
+});
+
+test('portrait stays on 2d path', () => {
+  const graph = compileGraph({
+    asset_id: 'hanjaemok-portrait',
+    asset_class: 'portrait',
+    animation_need: 'none',
+    dcc: 'auto',
+    generation_backend: 'openai_image',
+    rights_status: 'allowed',
+    source: 'generate',
+  });
+  assert.deepEqual(idsOf(graph), [
+    'rights_check',
+    'generate_2d',
+    'archive_raw',
+    'human_review',
+    'bom_promotion',
+  ]);
+});
+
+test('prop fails closed before MeshyGen identifiers are verified', () => {
+  const intent = {
+    asset_id: 'ticket-gate',
+    asset_class: 'prop',
+    animation_need: 'none',
+    dcc: 'auto',
+    generation_backend: 'meshgen_6cell',
+    rights_status: 'allowed',
+    source: 'generate',
+  };
+  assertThrowsCode(() => compileGraph(intent), 'mesh_backend_unverified');
+});
+
+test('cli compile four_dir fails closed', async () => {
+  const tmp = await mkdtemp(join(tmpdir(), 'janseon-art-graph-'));
+  const intentPath = join(tmp, 'intent.json');
+  await writeFile(intentPath, JSON.stringify(fourDirIntent()));
+  const completed = spawnSync(process.execPath, [cli, 'compile', '--intent', intentPath], {
+    cwd: repoRoot,
+    encoding: 'utf8',
+  });
+  assert.notEqual(completed.status, 0);
+  assert.match(completed.stderr, /mesh_backend_unverified/);
+});
+
+test('forbidden trellis backend is rejected', () => {
+  const intent = fourDirIntent();
+  intent.generation_backend = 'trellis_v1';
+  assertThrowsCode(() => compileGraph(intent), 'unknown_backend');
+});

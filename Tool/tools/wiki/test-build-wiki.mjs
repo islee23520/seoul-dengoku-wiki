@@ -120,7 +120,7 @@ await testCase('happy path: banner, link rewrite, asset copy, stale cleanup, .gi
 
   assert.match(home, /janseon-unofficial-au/);
   assert.match(home, /Unofficial-Fan-AU-Notice/);
-  assert.match(home, /원본: `GDD\/game-logic\/Home\.md`/);
+  assert.match(home, /원본: `Wikis\/game-logic\/Home\.md`/);
   assert.match(home, /커밋: `abc1234`/);
   assert.match(home, /\]\(assets\/figure\.svg\)/);
   assert.match(home, /\[게임 설명\]\(Game-Thesis\)/);
@@ -605,7 +605,7 @@ await testCase('every generated image path in the real repository wiki resolves 
   const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
   const outputDir = await generatedOutput('repo-full');
   await buildWiki({
-    sourceDir: join(repositoryRoot, 'GDD', 'game-logic'),
+    sourceDir: join(repositoryRoot, 'Wikis', 'game-logic'),
     assetDir: join(repositoryRoot, 'Reference', 'assets', 'wiki'),
     outputDir,
     commitSha: 'assetcheck',
@@ -742,7 +742,7 @@ await testCase('Cast-Index 게시 rows still emit their fragment page', async ()
 // Repository documentation contract (pre-existing)
 // ---------------------------------------------------------------------------
 
-const gameLogicDir = join(repositoryRoot, 'GDD', 'game-logic');
+const gameLogicDir = join(repositoryRoot, 'Wikis', 'game-logic');
 const strategicPages = [
   'Strongholds-and-Territory.md',
   'Economy-and-Production.md',

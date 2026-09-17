@@ -1,0 +1,35 @@
+{
+  "all_fail": true,
+  "results": [
+    {
+      "name": "labor-revert",
+      "exit": 1,
+      "nonzero": true
+    },
+    {
+      "name": "labor-invert",
+      "exit": 1,
+      "nonzero": true
+    },
+    {
+      "name": "power-revert",
+      "exit": 1,
+      "nonzero": true
+    },
+    {
+      "name": "power-invert",
+      "exit": 1,
+      "nonzero": true
+    },
+    {
+      "name": "input-empty-revert",
+      "exit": 1,
+      "nonzero": true
+    },
+    {
+      "name": "input-empty-invert",
+      "exit": 1,
+      "nonzero": true
+    }
+  ]
+}

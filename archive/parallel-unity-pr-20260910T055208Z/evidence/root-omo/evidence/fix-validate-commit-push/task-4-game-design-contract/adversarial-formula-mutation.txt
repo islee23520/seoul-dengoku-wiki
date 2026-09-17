@@ -1,0 +1,18 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: labor-zero-requirement
+
+1 !== 0
+
+    at file:///Users/ilseoblee/workspace/seoul-kenshi-wt/fix-validate-commit-push-wave0/tools/wiki-states/test-economy-formulas.mjs:39:10 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 1,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v26.4.0

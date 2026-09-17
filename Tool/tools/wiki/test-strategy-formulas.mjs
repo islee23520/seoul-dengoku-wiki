@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 
 const repositoryRoot = join(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
 const economyPath = process.env.JANSEON_ECONOMY_PATH
-  || join(repositoryRoot, 'docs', 'game-logic', 'Economy-and-Production.md');
+  || join(repositoryRoot, 'Wikis', 'game-logic', 'Economy-and-Production.md');
 const markdown = await readFile(economyPath, 'utf8');
 
 function clamp(value, low, high) {

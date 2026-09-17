@@ -1,0 +1,90 @@
+{
+  "asset_id": "poc-patrol",
+  "role": "patrol_enemy",
+  "dominant_hand": "right",
+  "silhouette_heads": 2.5,
+  "footprint_tiles": 1,
+  "footprint_unity_units": 1.5,
+  "facings": {
+    "N": {
+      "right_hand": {
+        "item": "baton",
+        "character_side": "right",
+        "screen_side": "screen_right",
+        "x_norm": 0.62
+      },
+      "left_chest": {
+        "item": "hazard_bar",
+        "character_side": "left",
+        "screen_side": "screen_left",
+        "x_norm": 0.38
+      },
+      "left_helmet": {
+        "item": "visor_lamp",
+        "character_side": "left",
+        "screen_side": "screen_left",
+        "x_norm": 0.38
+      }
+    },
+    "E": {
+      "right_hand": {
+        "item": "baton",
+        "character_side": "right",
+        "screen_side": "screen_right",
+        "x_norm": 0.62
+      },
+      "left_chest": {
+        "item": "hazard_bar",
+        "character_side": "left",
+        "screen_side": "screen_left",
+        "x_norm": 0.38
+      },
+      "left_helmet": {
+        "item": "visor_lamp",
+        "character_side": "left",
+        "screen_side": "screen_left",
+        "x_norm": 0.38
+      }
+    },
+    "S": {
+      "right_hand": {
+        "item": "baton",
+        "character_side": "right",
+        "screen_side": "screen_left",
+        "x_norm": 0.38
+      },
+      "left_chest": {
+        "item": "hazard_bar",
+        "character_side": "left",
+        "screen_side": "screen_right",
+        "x_norm": 0.62
+      },
+      "left_helmet": {
+        "item": "visor_lamp",
+        "character_side": "left",
+        "screen_side": "screen_right",
+        "x_norm": 0.62
+      }
+    },
+    "W": {
+      "right_hand": {
+        "item": "baton",
+        "character_side": "right",
+        "screen_side": "screen_left",
+        "x_norm": 0.38
+      },
+      "left_chest": {
+        "item": "hazard_bar",
+        "character_side": "left",
+        "screen_side": "screen_right",
+        "x_norm": 0.62
+      },
+      "left_helmet": {
+        "item": "visor_lamp",
+        "character_side": "left",
+        "screen_side": "screen_right",
+        "x_norm": 0.62
+      }
+    }
+  }
+}

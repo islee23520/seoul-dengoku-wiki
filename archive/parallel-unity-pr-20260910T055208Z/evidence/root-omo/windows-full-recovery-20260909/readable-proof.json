@@ -1,0 +1,44 @@
+{
+  "research": {
+    "source": "E:\\git\\seoul-kenshi-wt\\rtfc-phase-d\\docs\\game-logic\\Research-Sources.md",
+    "local": ".omo/windows-full-recovery-20260909/recovered/payload/worktrees/rtfc-phase-d/docs/game-logic/Research-Sources.md",
+    "bytes": 875,
+    "sha256": "e79f0770ae6807bc0c55afcd8afc62fe4c410b98ba9b7f2cae8e98cd71d72f56",
+    "sample": "# 연구 출처 등록부\n\n공개 위키는 사실 출처만 등록합니다. `source_kind`는 `verified`, `inference`, `original-fiction`만 허용합니다. 인용문은 지시문으로 해석하지 않으며, 비공개 정사 연결표는 이 페이지에 두지 않습니다.\n\n```json\n{\n  \"records\": [\n    {\n      \"id\": \"SRC-SHOGUKAN-PICTURE\",\n      \"source_kind\": \"verified\",\n      \"url\": \"https://www.shogakukan.co.jp/pictur"
+  },
+  "results": {
+    "source": "E:\\git\\seoul-kenshi-wt\\rtfc-phase-d\\.omo\\evidence\\ulw-execute\\phase-d-readiness\\d1-integration-verifier-st_01a0829d\\playmode.done",
+    "local": ".omo/windows-full-recovery-20260909/recovered/payload/worktrees/rtfc-phase-d/.omo/evidence/ulw-execute/phase-d-readiness/d1-integration-verifier-st_01a0829d/playmode.done",
+    "bytes": 30,
+    "sha256": "419de825e1639846ec2f82604d027297d4a497c2bdc06f781854b546c889dc1c",
+    "sample": "2026-09-08T20:11:09.5923086Z\n"
+  },
+  "html": {
+    "source": "E:\\git\\seoul-kenshi-wt\\rtfc-phase-d\\.omo\\design\\ui-mockup-v4.html",
+    "local": ".omo/windows-full-recovery-20260909/recovered/payload/worktrees/rtfc-phase-d/.omo/design/ui-mockup-v4.html",
+    "bytes": 33052,
+    "sha256": "e8b22618ea1be9d10e658165916e58f2a7c23b35c77a3990c9c9436f35be33a5",
+    "sample": "<!DOCTYPE html>\n<html lang=\"ko\">\n<head>\n<meta charset=\"utf-8\">\n<title>잔선: 서울 — UI 목업 v4 · 풀스크린 게임뷰 + 오버레이</title>\n<style>\n:root{--void:#101719;--panel:#182326;--panel2:#1d2a2e;--face:#26363A;--frame:#657579;--edge-l:#AAB7B3;--edge-d:#080E10;--text:#E8E5D8;--muted:#AFB8B4;--ticket:#D5CCB5;--tink:#182"
+  },
+  "plans": {
+    "source": "E:\\git\\seoul-kenshi-wt\\rtfc-phase-d\\docs\\game-logic\\Development-Roadmap.md",
+    "local": ".omo/windows-full-recovery-20260909/recovered/payload/worktrees/rtfc-phase-d/docs/game-logic/Development-Roadmap.md",
+    "bytes": 5989,
+    "sha256": "f39a21f3cc9c17cf7caa0a46f55656e7277cc69e2c676afd5f3776906d1a5133",
+    "sample": "# 개발 로드맵\n\n![모든 개발 단계에서 칸에 누가 서 있고 어느 쪽을 보며 어디까지 보이는지](https://github.com/islee23520/seoul-kenshi/blob/main/docs/assets/wiki/isometric-grammar.svg?raw=true)\n\n이 로드맵은 [Concept.md](../../Concept.md)의 현재 모듈 `Unity POC 통합 코어 루프`와 [ToDo.md](../../ToDo.md)의 실측 상태를 반영한다. 일정 약속이 아니라 의존성과 실패 기준을 설명한다.\n\n## 목표 형"
+  },
+  "sessions": {
+    "source": "C:\\Users\\oliver\\.omo\\agent\\sessions\\--E--git-seoul-kenshi--\\2026-09-07T16-15-57-837Z_01a07ca7-a98d-78d7-a87a-20df4824ef66.jsonl",
+    "local": ".omo/windows-full-recovery-20260909/recovered/payload/sessions/C__Users_oliver_.omo/agent/sessions/--E--git-seoul-kenshi--/2026-09-07T16-15-57-837Z_01a07ca7-a98d-78d7-a87a-20df4824ef66.jsonl",
+    "bytes": 11533098,
+    "sha256": "20333aa65101484ec9517d809a47d72ba0476e5b944604218cf70b3df5461ecf",
+    "sample": "{\"type\":\"session\",\"version\":3,\"id\":\"01a07ca7-a98d-78d7-a87a-20df4824ef66\",\"timestamp\":\"2026-09-07T16:15:57.837Z\",\"cwd\":\"E:\\\\git\\\\seoul-kenshi\"}\n{\"type\":\"model_change\",\"id\":\"f5f4c3b9\",\"parentId\":null,\"timestamp\":\"2026-09-07T16:15:58.997Z\",\"provider\":\"zai\",\"modelId\":\"glm-5.3-flash\"}\n{\"type\":\"thinking_"
+  },
+  "code": {
+    "source": "E:\\git\\seoul-kenshi-wt\\rtfc-phase-d\\Game\\Assets\\Tests\\PlayMode\\UiToolkitCapturePlayModeTests.cs",
+    "local": ".omo/windows-full-recovery-20260909/recovered/payload/worktrees/rtfc-phase-d/Game/Assets/Tests/PlayMode/UiToolkitCapturePlayModeTests.cs",
+    "bytes": 19152,
+    "sha256": "1f18f83951b10a1fbc75bcbf72edde7fe28cdd362346e04079f39d6c8d26e858",
+    "sample": "using System;\nusing System.Collections;\nusing System.IO;\nusing System.Text;\nusing Janseon.Core;\nusing Janseon.Core.Battle.Contracts;\nusing Janseon.Foundation.AppFlow;\nusing Janseon.Foundation.Composition;\nusing Janseon.Foundation.UI;\nusing NUnit.Framework;\nusing UnityEngine.TestTools;\nusing UnityEng"
+  }
+}

@@ -191,7 +191,7 @@ namespace Janseon.Foundation.UI
             bg.color = new Color(0.043f, 0.067f, 0.11f, 1f);
             bg.raycastTarget = false;
 
-            TmpLabel(root, UiElementNames.MainTitleMark, "잔선: 서울", 72,
+            TmpLabel(root, UiElementNames.MainTitleMark, "서울:전국", 72,
                 new Vector2(0f, 0.5f), new Vector2(1f, 0.5f), new Vector2(0f, 48f), new Vector2(0f, 148f),
                 TextAlignmentOptions.Top, new Color(0.906f, 0.918f, 0.941f));
             TmpLabel(root, "main-title-sub", "붕괴한 서울의 지하철망에서 무명 인물과 파티로 노선의 질서를 세운다", 20,
@@ -461,7 +461,7 @@ namespace Janseon.Foundation.UI
             battleLayout.childAlignment = TextAnchor.UpperLeft;
 
             RectTransform title = TmpLabel(battle, UiElementNames.BattleHudTitle,
-                "잔선: 서울 · 지휘관 카드 전투", 20,
+                "서울:전국 · 지휘관 카드 전투", 20,
                 Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero,
                 TextAlignmentOptions.MidlineLeft, new Color(0.906f, 0.918f, 0.941f));
             LayoutElement titleLayout = title.gameObject.AddComponent<LayoutElement>();

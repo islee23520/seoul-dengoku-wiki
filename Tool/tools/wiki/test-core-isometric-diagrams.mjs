@@ -4,7 +4,7 @@ import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
-const gameLogicDir = join(repositoryRoot, 'GDD', 'game-logic');
+const gameLogicDir = join(repositoryRoot, 'Wikis', 'game-logic');
 const assetDir = join(repositoryRoot, 'Reference', 'assets', 'wiki');
 const manifestPath = join(repositoryRoot, 'Tool', 'tools', 'wiki', 'core-isometric-diagrams.json');
 

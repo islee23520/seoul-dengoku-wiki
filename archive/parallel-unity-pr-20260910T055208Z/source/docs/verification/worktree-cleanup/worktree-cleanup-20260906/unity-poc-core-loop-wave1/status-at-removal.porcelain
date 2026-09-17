@@ -1,0 +1,40 @@
+ M .omo/plans/seoul-grand-strategy-srpg.md
+ M docs/game-logic/Unity-Architecture-Implementation-Plan.md
+ M tools/art/asset-manifest.mjs
+ M tools/art/asset-manifest.schema.json
+ M tools/art/catalog.mjs
+ M tools/art/host.mjs
+ M tools/art/intents/character-four-dir.json
+ M tools/art/intents/cinematic-maya.json
+ M tools/art/intents/poc-character-four-dir.json
+ M tools/art/intents/poc-station-prop.json
+ M tools/art/intents/rights-blocked.json
+ M tools/art/pipeline-graph.mjs
+ M tools/art/station-props/catalog.json
+ M tools/art/station-props/generate_station_props.py
+ M tools/art/station-props/launch-todo14.ps1
+ M tools/art/station-props/promote_station_props.mjs
+ M tools/art/station-props/run-todo14.bat
+ M tools/art/station-props/test-station-props.mjs
+ M tools/art/test-asset-manifest.mjs
+ M tools/art/test-pipeline-graph.mjs
+ M tools/art/test-poc-backends.mjs
+ M tools/art/test-trellis-host-contract.mjs
+ M tools/art/trellis-host-contract.mjs
+?? AGENTS.md
+?? Game/Assets/Janseon/Foundation/Editor/UiToolkitCaptureCommand.cs
+?? Game/Assets/Janseon/Foundation/Editor/UiToolkitCaptureCommand.cs.meta
+?? Game/Assets/Tests/EditMode/RuntimeAssetProvenanceTests.cs
+?? Game/Assets/Tests/EditMode/RuntimeAssetProvenanceTests.cs.meta
+?? docs/Unity-Headless-Workflow.md
+?? tools/art/check-runtime-asset-provenance.mjs
+?? tools/art/comfyui-texture-intake-contract.mjs
+?? tools/art/meshygen-plus-host-contract.mjs
+?? tools/art/meshygen-plus-host-pin.json
+?? tools/art/runtime-asset-provenance.mjs
+?? tools/art/runtime-quarantine-exclusion.json
+?? tools/art/test-provider-phase0.mjs
+?? tools/art/test-runtime-asset-provenance.mjs
+?? tools/unity/README.md
+?? tools/unity/run-isolated-unity.mjs
+?? tools/unity/test-isolation.mjs

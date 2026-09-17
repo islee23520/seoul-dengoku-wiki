@@ -1,0 +1,34 @@
+--- a/Game/Assets/Janseon/Foundation/UI/UguiHudBuilder.cs
++++ b/Game/Assets/Janseon/Foundation/UI/UguiHudBuilder.cs
+@@ -358,6 +358,10 @@
+             rt.offsetMin = oMin;
+             rt.offsetMax = oMax;
+             Image img = go.AddComponent<Image>();
+             img.color = new Color(0.149f, 0.212f, 0.227f, 1f);
++            Outline focusOutline = go.AddComponent<Outline>();
++            focusOutline.effectColor = new Color(0.788f, 0.635f, 0.153f, 1f);
++            focusOutline.effectDistance = new Vector2(2f, -2f);
++            focusOutline.useGraphicAlpha = false;
+             UnityEngine.UI.Button button = go.AddComponent<UnityEngine.UI.Button>();
+             button.targetGraphic = img;
+             ColorBlock colors = button.colors;
+--- a/Game/Assets/Tests/PlayMode/UiToolkitCapturePlayModeTests.cs
++++ b/Game/Assets/Tests/PlayMode/UiToolkitCapturePlayModeTests.cs
+@@ -234,7 +234,7 @@
+             sb.Append("\"state_hash\": \"").Append(ComputeStateHash(state)).Append("\", ");
+             sb.Append("\"head\": \"").Append(testedHead).Append("\", ");
+             sb.Append("\"dirty_tree_fingerprint\": \"").Append(testedFingerprint).Append("\", ");
+-            sb.Append("\"active_scene\": \"").Append(SceneManager.GetActiveScene().path.Replace("\\", "/")).Append("\", ");
++            sb.Append("\"active_scene\": \"").Append(canvasRoot.gameObject.scene.path.Replace("\\", "/")).Append("\", ");
+             sb.Append("\"uidocument_root_names\": [\"").Append(canvasRoot.name).Append("\"], ");
+             sb.Append("\"capture_api\": \"PlayMode Camera.targetTexture+Camera.Render+ReadPixels\", ");
+             sb.Append("\"is_playing\": true, ");
+@@ -268,7 +268,7 @@
+ 
+     static string ComputeStateHash(string state)
+     {
+-        string scene = SceneManager.GetActiveScene().path.Replace("\\", "/");
++        string scene = canvasRoot.gameObject.scene.path.Replace("\\", "/");
+         string machineState = session == null
+             ? "title|" + state + "|" + scene + "|" + (mainTitleCanvasRoot?.name ?? string.Empty)
+             : "gameplay|" + state + "|" + scene + "|" + session.CampaignHash + "|"

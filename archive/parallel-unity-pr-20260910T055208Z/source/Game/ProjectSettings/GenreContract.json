@@ -1,0 +1,26 @@
+{
+  "camera": {
+    "projection": "orthographic",
+    "yawDegrees": 45.0,
+    "pitchDegrees": 26.57,
+    "allowOrbit": false,
+    "allowPerspective": false
+  },
+  "loop": {
+    "explorationAndCombatShareGrid": true,
+    "allowedDirections": 4,
+    "combatResolution": "realtime-formation-card",
+    "combatPauseAllowed": true
+  },
+  "silhouette": {
+    "headsTall": 2.5,
+    "authoredFacings": 4,
+    "pixelHead": true,
+    "meshBody": true
+  },
+  "tile": {
+    "meters": 1.5,
+    "unityUnits": 1.5,
+    "standardCorridorWidthTiles": 2
+  }
+}

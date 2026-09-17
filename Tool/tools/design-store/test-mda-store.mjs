@@ -18,9 +18,9 @@ import {
 
 const SAMPLE = {
   id: 'janseon-core',
-  title: '잔선: 서울',
+  title: '서울:전국',
   onePage: {
-    title: '잔선: 서울',
+    title: '서울:전국',
     audience: 'designers',
     pictureNote: 'one page, pictures over prose',
     panels: [
@@ -223,7 +223,7 @@ test('export index lists the document title from SQLite', () => {
     const htmlPath = join(dir, 'hub.html');
     exportIndexPage({ dbPath, outPath: htmlPath });
     const html = readFileSync(htmlPath, 'utf8');
-    assert.match(html, /잔선: 서울/);
+    assert.match(html, /서울:전국/);
     assert.match(html, /janseon-core\//);
   } finally {
     rmSync(dir, { recursive: true, force: true });
@@ -239,7 +239,7 @@ test('ingestCanonDir stores one row per markdown file and hub lists it', () => {
     writeFileSync(join(canonRoot, 'regions', 'README.md'), '# 지역\n\n## 구\n');
     const dbPath = join(dir, DB_NAME);
     putDocument({ dbPath, document: SAMPLE });
-    const ingested = ingestCanonDir({ dbPath, canonRoot, pathPrefix: 'GDD/game-logic' });
+    const ingested = ingestCanonDir({ dbPath, canonRoot, pathPrefix: 'Wikis/game-logic' });
     assert.equal(ingested.files, 2);
     const db = new DatabaseSync(dbPath, { readOnly: true });
     const n = db.prepare('SELECT COUNT(*) AS n FROM canon_files').get().n;
@@ -268,7 +268,7 @@ test('verify FAILS when a canon_files row is deleted', () => {
     writeFileSync(join(canonRoot, 'Alpha.md'), '# 알파\n');
     const dbPath = join(dir, DB_NAME);
     putDocument({ dbPath, document: SAMPLE });
-    ingestCanonDir({ dbPath, canonRoot, pathPrefix: 'GDD/game-logic' });
+    ingestCanonDir({ dbPath, canonRoot, pathPrefix: 'Wikis/game-logic' });
     const db = new DatabaseSync(dbPath);
     db.prepare("DELETE FROM canon_files WHERE id = 'alpha'").run();
     db.close();

@@ -16,7 +16,7 @@ namespace Janseon.Foundation.Tests
         const float SizeTolerance = 2f;
         const float PortraitSize = 32f;
         const float CancelSize = 44f;
-        const string HudTitle = "잔선: 서울 · 지휘관 카드 전투";
+        const string HudTitle = "서울:전국 · 지휘관 카드 전투";
 
         static readonly string[] CharacterOfferings =
         {

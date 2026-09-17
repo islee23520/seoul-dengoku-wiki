@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><title>잔선: 서울 — UI 레이아웃 → 게임 루프 → 레퍼런스 합성</title>
+<style>
+:root{--void:#101719;--panel:#182326;--panel2:#1d2a2e;--face:#26363A;--frame:#657579;--edge-l:#AAB7B3;--edge-d:#080E10;--text:#E8E5D8;--muted:#AFB8B4;--rA:#63B7AF;--rB:#D7AF58;--rC:#9CAAC4;--focus:#D5EDC3;--warn:#F0BA58;--danger:#E66C62}
+*{box-sizing:border-box;margin:0}body{background:#05080a;color:var(--text);font-family:"Noto Sans KR","Malgun Gothic",sans-serif;font-size:15px}
+.wrap{max-width:1340px;margin:0 auto;padding:20px 20px 60px}
+header.mast{border:2px solid var(--frame);clip-path:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,16px 100%,0 calc(100% - 16px));background:var(--panel);padding:22px 26px;margin-bottom:18px;background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 1px,transparent 1px 3px)}
+header h1{font-size:28px;font-weight:800}header .sub{color:var(--muted);margin-top:6px;font-size:13px}
+.tag{display:inline-block;font-size:11px;padding:2px 8px;border:1px solid var(--frame);color:var(--muted);margin:2px 3px}
+.tag.g{border-color:var(--rA);color:var(--rA)}.tag.y{border-color:var(--rB);color:var(--rB)}.tag.d{border-color:var(--danger);color:var(--danger)}
+h2.sec{display:flex;align-items:center;gap:10px;font-size:19px;font-weight:700;margin:34px 0 12px}
+h2.sec::before{content:"";width:4px;height:22px;background:var(--rA)}
+.panel{background:var(--panel);border:2px solid var(--frame);clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px));background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 1px,transparent 1px 3px);padding:14px 18px;margin-bottom:14px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{background:var(--face);padding:8px 10px;text-align:left;font-weight:700;border-bottom:2px solid var(--frame);white-space:nowrap}
+td{padding:7px 10px;border-bottom:1px solid rgba(101,117,121,.3);vertical-align:top}
+tr:hover td{background:rgba(99,183,175,.04)}
+.src{display:inline-block;font-size:10px;padding:1px 6px;border:1px solid;border-radius:0;margin:1px;font-weight:600;white-space:nowrap}
+.src.k{border-color:var(--rB);color:var(--rB)}.src.b{border-color:var(--rA);color:var(--rA)}.src.c{border-color:var(--rC);color:var(--rC)}
+.src.f{border-color:#C4A3E0;color:#C4A3E0}.src.t{border-color:var(--danger);color:var(--danger)}.src.x{border-color:var(--focus);color:var(--focus)}
+.src.u{border-color:#E0A3C4;color:#E0A3C4}.src.n{border-color:#A3D0E0;color:#A3D0E0}.src.i{border-color:var(--warn);color:var(--warn)}
+.looprow{display:flex;gap:6px;align-items:stretch;flex-wrap:wrap;margin:10px 0}
+.step{flex:1;min-width:130px;background:var(--face);border:2px solid var(--frame);border-top-color:var(--edge-l);padding:10px 12px;clip-path:polygon(0 0,calc(100% - 6px) 0,100% 6px,100% 100%,6px 100%,0 calc(100% - 6px));position:relative}
+.step .n{font-size:10px;color:var(--muted);letter-spacing:.1em}.step h4{font-size:14px;margin:2px 0 4px}
+.step .where{font-size:11px;color:var(--rB)}
+.step .refs{margin-top:6px}
+.arr{align-self:center;font-size:18px;color:var(--frame);font-weight:700}
+.surf{display:flex;gap:10px;margin:12px 0}
+.card{flex:1;background:var(--panel);border:2px solid var(--frame);padding:12px 14px;clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px))}
+.card.s1{border-color:var(--rA)}.card.s2{border-color:var(--rB)}.card.s3{border-color:var(--danger)}
+.card .lbl{font-size:10px;letter-spacing:.15em;font-weight:700}.card h3{font-size:16px;margin:4px 0 6px}
+.card p{font-size:12px;color:var(--muted);line-height:1.5}
+.big{font-size:26px;font-weight:800;letter-spacing:.05em}
+.q{font-size:13px;font-style:italic;color:var(--rB)}
+footer{color:#5c6a66;font-size:12px;margin-top:40px;border-top:1px solid rgba(101,117,121,.3);padding-top:14px;line-height:1.7}
+.warn-box{border-color:var(--warn)}
+</style></head><body><div class="wrap">
+<header class="mast"><h1>잔선: 서울 — 게임 로직 합성 지도</h1>
+<div class="sub">13개 레퍼런스 게임의 차용 요소가 UI 레이아웃 → 코어 루프 → 시스템으로 조합되는 전체 지도 · 2026-09-07</div>
+<div style="margin-top:8px">
+<span class="tag k">K = 켄시</span><span class="tag b">BB = 배틀 브라더즈</span><span class="tag c">CK3 = 크루세이더 킹즈 3</span><span class="tag f">FE/FFT = 파엠·택틱스</span><span class="tag t">TS/창세 = 트라이앵글·창세기전</span><span class="tag u">UO = 유니콘 오버로드</span><span class="tag n">NA/삼국 = 신장·삼국지</span><span class="tag i">기타 = 배너로드·태합·XCOM·ITB·다키스트</span>
+</div></header>
+
+<!-- ═══ 1. 코어 루프 ═══ -->
+<h2 class="sec">1 · 코어 루프 — 한 바퀴가 10개 UI 화면을 통과한다</h2>
+<div class="panel">
+<div class="looprow">
+<div class="step"><span class="n">PHASE 1 · 준비</span><h4>프리셋 선택</h4><span class="where">화면 1 · 생성</span><div class="refs"><span class="src k">K 결핍축</span><span class="src b">BB 기원</span></div><p style="font-size:11px;color:var(--muted);margin-top:4px">6종 프리셋 = 결핍의 조합이 난이도</p></div><span class="arr">→</span>
+<div class="step"><span class="n">PHASE 1</span><h4>세계 인물 모집</h4><span class="where">화면 2</span><div class="refs"><span class="src k">K 무작위 배치</span><span class="src b">BB 로스터≠배치</span></div></div><span class="arr">→</span>
+<div class="step"><span class="n">PHASE 1</span><h4>거점 허브</h4><span class="where">화면 3 · 인터미션</span><div class="refs"><span class="src t">창세 인터미션</span><span class="src b">BB 시설</span><span class="src c">CK3 인물·경고</span></div></div><span class="arr">→</span>
+<div class="step"><span class="n">PHASE 1</span><h4>캐릭터 대화</h4><span class="where">화면 4</span><div class="refs"><span class="src c">CK3 이벤트</span><span class="src f">FE 서포트</span></div></div>
+</div>
+<div class="looprow">
+<div class="step"><span class="n">PHASE 2 · 원정</span><h4>전략 노선도 S</h4><span class="where">화면 5 · 2D 평면</span><div class="refs"><span class="src c">CK3 정보모드</span><span class="src n">NA/삼국 영토</span></div><p style="font-size:11px;color:var(--muted);margin-top:4px">누가 어디를 지배하나 — 16국 조회</p></div><span class="arr">→</span>
+<div class="step"><span class="n">PHASE 2</span><h4>역간 여행 W</h4><span class="where">화면 6</span><div class="refs"><span class="src f">FFT 이동일</span><span class="src b">BB 지속비용</span></div><p style="font-size:11px;color:var(--muted);margin-top:4px">시간=비용 · 보급 소모</p></div><span class="arr">→</span>
+<div class="step"><span class="n">PHASE 2</span><h4>조우 분기</h4><span class="where">화면 7</span><div class="refs"><span class="src c">CK3 선택 투명</span><span class="src t">TS 이벤트</span></div><p style="font-size:11px;color:var(--muted);margin-top:4px">교섭/우회/전투 — 비용 공개</p></div>
+</div>
+<div class="looprow">
+<div class="step"><span class="n">PHASE 3 · 해결</span><h4>배치 준비</h4><span class="where">화면 8</span><div class="refs"><span class="src b">BB 로스터≠배치</span><span class="src f">FE 출격</span></div></div><span class="arr">→</span>
+<div class="step"><span class="n">PHASE 3</span><h4>전투 B</h4><span class="where">화면 9 · 하이트맵</span><div class="refs"><span class="src f">FE 명령·확정</span><span class="src f">FFT 고도</span><span class="src b">BB 지형비용</span><span class="src t">TS 위협표시</span></div></div><span class="arr">→</span>
+<div class="step"><span class="n">PHASE 3</span><h4>정산 영수증</h4><span class="where">화면 10 · 승차권</span><div class="refs"><span class="src b">BB 부상이행</span><span class="src c">CK3 효과구분</span></div><p style="font-size:11px;color:var(--muted);margin-top:4px">부상은 인물에 남는다 — 다음 원정 이행</p></div><span class="arr">↺</span>
+<div class="step" style="border-color:var(--rA)"><span class="n">반환</span><h4>복귀/계속</h4><div class="refs"><span class="src k">K 실패후재기</span></div><p style="font-size:11px;color:var(--muted);margin-top:4px">자동 순간귀환 없음</p></div>
+</div>
+</div>
+
+<!-- ═══ 2. 대출 매트릭스 ═══ -->
+<h2 class="sec">2 · 대출 매트릭스 — 무엇을 누구에게서 빌렸나</h2>
+<div class="panel"><table>
+<tr><th>레퍼런스</th><th>차용한 요소</th><th>잔선에서의 형태</th><th>의도</th></tr>
+<tr><td rowspan="4"><b>켄시</b><br><span style="font-size:11px;color:var(--muted)">떠돌이 문법</span></td>
+<td><span class="src k">K-START</span> 결핍의 종류 = 난이도</td><td>6종 시작 프리셋 (인원/자원/장비/평판/거점/압박 축)</td><td>반복 플레이의 출발점 다양화</td></tr>
+<tr><td><span class="src k">K-SETTLEMENT</span> 정착은 선택</td><td>떠돌이 → 시설 이용권 → 선택적 역 운영자</td><td>정착 없이도 성장 루프 완결</td></tr>
+<tr><td><span class="src k">K-SURVIVAL</span> 회복 가능한 실패</td><td>쓰러짐 ≠ 사망 · 부상 이행</td><td>실패 후 재기 — 게임오버 아닌 악화</td></tr>
+<tr><td><span class="src k">K-NOMAD</span> 세계 상태 전이</td><td>핵심 인물 생존·수감 → 지역 변화</td><td>제한된 세계 반응 (전면 시뮬 금지)</td></tr>
+<tr><td rowspan="4"><b>배틀 브라더즈</b><br><span style="font-size:11px;color:var(--muted)">용병회사 경제</span></td>
+<td><span class="src b">BB-ECONOMY</span> 시간 = 비용</td><td>이동·휴식만 캠페인 시간 진행 · 보급 일일 소모</td><td>"이 행동의 날수까지 계산하라"</td></tr>
+<tr><td><span class="src b">BB-ROSTER</span> 로스터 ≠ 배치</td><td>로스터 6 · 배치 상한 3 · 부상자 교체 휴식</td><td>인원 관리의 의사결정</td></tr>
+<tr><td><span class="src b">BB-TERRAIN</span> 지형 비용</td><td>오르막 +1AP · 고지 사거리 +1</td><td>하이트맵 전술 가치</td></tr>
+<tr><td><span class="src b">BB-CRISES</span> 세계 위기</td><td>중반 세계 이벤트 → 고용/물가 변화</td><td>세계가 살아있음을 경제로 체감</td></tr>
+<tr><td rowspan="3"><b>CK3</b><br><span style="font-size:11px;color:var(--muted)">인물 중심 대전략</span></td>
+<td><span class="src c">CK3-CHOICES</span> 선택 투명성</td><td>조우 3선택 비용/효과/위험 사전 공개</td><td>추측이 아니라 계산으로 결정</td></tr>
+<tr><td><span class="src c">CK3-CHARACTER</span> 인물 존재감</td><td>초상·관계·상태 상시 표시 · 경고 배지</td><td>인물이 자원이다</td></tr>
+<tr><td><span class="src c">CK3-MAPMODE</span> 정보 모드</td><td>전략 노선도의 세력권/통행권 전환</td><td>같은 지도의 다른 질문</td></tr>
+<tr><td rowspan="2"><b>FE / FFT</b><br><span style="font-size:11px;color:var(--muted)">전술 문법</span></td>
+<td><span class="src f">FE-COMMAND</span> 유닛→명령→대상→확정/취소</td><td>이동/공격/대기 + 공격 예상 + 무소모 취소</td><td>실수 없는 수동 전술</td></tr>
+<tr><td><span class="src f">FFT-HEIGHT</span> 고도·CT</td><td>하이트맵 B1/B2 · 층구분 · 전투 행동시간</td><td>전투의 시간 단위는 월드와 다름</td></tr>
+<tr><td rowspan="2"><b>창세기전·TS</b><br><span style="font-size:11px;color:var(--muted)">인터미션·신념</span></td>
+<td><span class="src t">WOG-INTERMISSION</span> 준비·장비·대화</td><td>거점 허브 (인터미션 N면)</td><td>비지도 관리면의 원조</td></tr>
+<tr><td><span class="src t">TS-VOTE</span> 선택이 관계에 누적</td><td>조우 선택 → 관계·평판 누적</td><td>행동의 지속적 결과</td></tr>
+<tr><td><b>UO</b></td><td><span class="src u">UO-FORMATION</span> 리더가 이동을 결정</td><td>파티 편성·대표 토큰</td><td>최강 개인 ≠ 최적 리더</td></tr>
+<tr><td><b>배너로드</b></td><td><span class="src n">MB-CLAN</span> 클랜 티어 → 정치 자격</td><td>밴드 평판 → 시설 접근 → 역 운영권</td><td>성장이 곧 권한 확장</td></tr>
+<tr><td><b>신장·삼국지</b></td><td><span class="src n">NA-DOMESTIC</span> 영토 내정</td><td>역 시설 수리·운영 (후반)</td><td>정착 이후의 심화 관리</td></tr>
+<tr><td><b>태합입지전</b></td><td><span class="src i">TR-CAREER</span> 생업 = 성장 경로</td><td>수리·의료·운송·교섭 전투 외 성장</td><td>전투만이 답이 아님</td></tr>
+<tr><td><b>XCOM 2</b></td><td><span class="src i">X-DUAL</span> 양층 시간 압박</td><td>전략(보급 고갈) × 전술(턴 제한) 압박</td><td>선공적 운영이 유일한 방어</td></tr>
+<tr><td><b>다키스트 던전</b></td><td><span class="src i">DD-ATTRITION</span> 소모품 같은 영웅</td><td>부상자 관리·로테이션 강제</td><td>원시적 강함이 아니라 마모</td></tr>
+<tr><td><b>Into the Breach</b></td><td><span class="src i">ITB-INTENT</span> 예고된 위협</td><td>위협 칸 표시 · 적 의도 사전 공개</td><td>계산 가능한 전술</td></tr>
+</table></div>
+
+<!-- ═══ 3. 시스템 조합 ═══ -->
+<h2 class="sec">3 · 시스템별 조합 공식</h2>
+<div class="panel">
+<div class="looprow">
+<div class="card"><div class="lbl" style="color:var(--rA)">경제 압박</div><h3>시간 = 비용</h3>
+<p><span class="src b">BB 일급</span> → 잔선 보급 일일 소모<br><span class="src k">K 허기</span> → 식량 체인<br><span class="src f">FFT 이동일</span> → 역간 여행 시간<br>= <b style="color:var(--text)">이동·휴식만 시간 진행, 메뉴·전투는 정지</b></p></div>
+<div class="card"><div class="lbl" style="color:var(--rB)">부상·사망</div><h3>회복 가능한 실패</h3>
+<p><span class="src b">BB 영구부상</span> → 정산 영수증 표시·다음 원정 이행<br><span class="src k">K 쓰러짐≠사망</span> → 3단계(쓰러짐/부상/사망)<br><span class="src i">DD 로테이션</span> → 부상자 교체 강제</p></div>
+<div class="card"><div class="lbl" style="color:var(--danger)">세계 반응</div><h3>두 속도의 진화</h3>
+<p><span class="src k">K World States</span> → 핵심 인물 상태 전이<br><span class="src b">BB 위기</span> → 고용·물가 변화<br><span class="src c">CK3 의견</span> → 관계 지속<br>= <b style="color:var(--text)">작은 사건(시설 상태) + 큰 사건(인물·전쟁)</b></p></div>
+</div>
+<div class="looprow">
+<div class="card"><div class="lbl" style="color:var(--rC)">모집·포획</div><h3>3경로 분리</h3>
+<p><span class="src k">K 구조→신뢰→가입</span> → 핵심 동료<br><span class="src b">BB 인력시장</span> → 계약 인력(수당)<br><span class="src n">MB 포로 설득</span> → 생포 후 협상<br>= <b style="color:var(--text)">즉시 구매 없음 · 관계가 게이트</b></p></div>
+<div class="card"><div class="lbl" style="color:var(--focus)">정착 진행</div><h3>선택적 승급</h3>
+<p><span class="src k">K 3상태</span> → 유랑/도시집/전초기지<br><span class="src b">BB 비정착</span> → 이동 회사도 성장<br><span class="src n">MB 클랜티어</span> → 권한 확장<br>= <b style="color:var(--text)">떠돌이→이용권→선택적 역 운영</b></p></div>
+<div class="card" style="border-color:var(--warn)"><div class="lbl" style="color:var(--warn)">명시적 비채택</div><h3>가져오지 않은 것</h3>
+<p>✗ CK3 전투 추상화·봉건 계승<br>✗ BB 육각·9AP·대규모 용병단<br>✗ K 초반 grind<br>✗ FE 자동 원상복구<br>✗ 전면 4X 시뮬레이션</p></div>
+</div></div>
+
+<!-- ═══ 4. 3-표면 + N면 ═══ -->
+<h2 class="sec">4 · 3-표면 구조 — 각 표면이 묻는 질문이 다르다</h2>
+<div class="surf">
+<div class="card s1"><div class="lbl" style="color:var(--rA)">S · STRATEGY</div><h3>전략 노선도</h3>
+<p class="q">"누가 어디를 지배하며, 무엇을 우선할 것인가?"</p>
+<p>서울 전체 → 16국 세력권 · <b>2D 평면 도식</b> (3D 금지)<br>조회 = 시간 정지 · 결정만 시간 진행<br><span class="src c">CK3 정보모드</span> <span class="src n">NA 영토</span></p></div>
+<div class="card s2"><div class="lbl" style="color:var(--rB)">W · WORLD</div><h3>역간 여행</h3>
+<p class="q">"일행은 어디로, 어떤 대가로 갈 것인가?"</p>
+<p>현재역→목적역 · 경로·보급·사건<br>이동 = 시간·비용 소모 · 사건에서 판단 정지<br><span class="src f">FFT 이동일</span> <span class="src b">BB 비용</span></p></div>
+<div class="card s3"><div class="lbl" style="color:var(--danger)">B · BATTLE</div><h3>역 내부 B1/B2</h3>
+<p class="q">"지금 누가 어느 칸에서 무엇을 할 것인가?"</p>
+<p>하이트맵 5×5 · 사각 칸 · 고저차<br>전투 행동시간 ≠ 여행 시간 · 임의 환산 금지<br><span class="src f">FE·FFT</span> <span class="src b">BB 지형</span> <span class="src i">ITB 위협</span></p></div>
+</div>
+<div class="panel" style="padding:10px 16px">
+<p style="font-size:13px"><b>N · 비지도 관리면</b> — 거점 허브·조우·배치·정산은 지도가 아니라 <b>관리·선택·준비·정산 기능군</b>. 배경에 지도가 있어도 지도 수에 더하지 않는다. <span class="src t">창세 인터미션</span> <span class="src c">CK3 이벤트</span></p>
+</div>
+
+<!-- ═══ 5. 시작 프리셋 ═══ -->
+<h2 class="sec">5 · 시작 프리셋 — 결핍의 종류가 난이도다</h2>
+<div class="panel"><table>
+<tr><th>프리셋</th><th>★</th><th>인원</th><th>보급</th><th>거점</th><th>핵심 결핍</th><th>장기 규칙</th><th>출처</th></tr>
+<tr><td><b>☀ 떠돌이 삼인조</b></td><td>★★</td><td>3</td><td>30</td><td>없음</td><td>거점·보급</td><td>없음 (표준)</td><td><span class="src k">K 표준결핍</span></td></tr>
+<tr><td><b>🛡 전직 순찰대</b></td><td>★</td><td>4</td><td>50</td><td>임시</td><td>관계 (배신자)</td><td>신도림 −3 회복</td><td><span class="src k">K 적대시작</span></td></tr>
+<tr><td><b>💰 상인 잔존자</b></td><td>★★</td><td>3</td><td>80</td><td>없음</td><td>전투력</td><td>교역+20% / 전투원+50%</td><td><span class="src b">BB 기원규칙</span></td></tr>
+<tr><td><b>⚔ 탈영 소대</b></td><td>★★★★</td><td>5</td><td>20</td><td>없음</td><td>광역 적대</td><td>추격자 스폰</td><td><span class="src k">K 현상금</span></td></tr>
+<tr><td><b>🏚 고아 무리</b></td><td>★★★★★</td><td>6</td><td>10</td><td>은신처</td><td>모든 것</td><td>성장×2 / 사기×2 / 보상−30%</td><td><span class="src b">BB Peasant</span></td></tr>
+<tr><td><b>📜 마지막 역장</b></td><td>★★</td><td>3</td><td>40</td><td><b>부분 통제</b></td><td>역 책임</td><td>수리 목표 · 상실 시 망명</td><td><span class="src n">MB 클랜</span></td></tr>
+</table>
+<p style="font-size:12px;color:var(--muted);margin-top:8px">POC 우선순위: 떠돌이(거점 없음) + 역장(거점 있음) — 두 개로 "정착 유무" 비교 경험</p></div>
+
+<!-- ═══ 6. 조합 공식 요약 ═══ -->
+<h2 class="sec">6 · 최종 조합 공식</h2>
+<div class="panel" style="text-align:center;padding:24px">
+<p class="big" style="color:var(--rA)">K 생존철학 + BB 경제압박 + CK3 선택투명</p>
+<p class="big" style="color:var(--rB);margin-top:6px">+ FE/FFT 전술문법 + 창세/TS 인터미션·누적</p>
+<p class="big" style="margin-top:14px;color:var(--text)">= 잔선: 서울</p>
+<p style="font-size:13px;color:var(--muted);margin-top:14px">떠돌이 3인이 보급 압박 속에서 의뢰를 수행하며,<br>선택의 비용을 알고 전술로 해결하고,<br>부상을 안고 정산하며, 언젠가 역을 선택적으로 운영한다</p>
+</div>
+
+<footer>
+근거: docs/game-logic/reference/ 14개 백과사전 (약 760KB · 출처 514개) · Reference-Game-Mechanisms.md §1-13 · CROSS-GAME-SYNTHESIS.md 7차원 매트릭스 · Starting-Presets.md 6종 · genre-map-structure.md 3표면·전환계약 · kenshi-bb-structure.md 떠돌이 경제 · capture-recruit-system.md 포획·등용<br>
+모든 차용은 [REF:게임-메커니즘]으로 원문 추적 가능 · [문서]/[추론]/[적용 제안] 구분 · 2026-09-07
+</footer>
+</div></body></html>

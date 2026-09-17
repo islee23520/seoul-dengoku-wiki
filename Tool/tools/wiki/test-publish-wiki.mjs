@@ -48,7 +48,7 @@ async function exists(path) {
 
 async function makeRepo({ pages, assets = { 'figure.svg': '<svg xmlns="http://www.w3.org/2000/svg"/>' }, extra = {} } = {}) {
   const repo = join(root, `repo-${Math.random().toString(16).slice(2)}`);
-  const sourceDir = join(repo, 'GDD', 'game-logic');
+  const sourceDir = join(repo, 'Wikis', 'game-logic');
   const assetDir = join(repo, 'Reference', 'assets', 'wiki');
   await mkdir(sourceDir, { recursive: true });
   await mkdir(assetDir, { recursive: true });
@@ -409,6 +409,51 @@ await testCase('CLI --no-push never invokes git push', async () => {
   assert.equal(result.status, 0, result.stderr || result.stdout);
   assert.match(result.stdout, /published wiki checkout/);
   assert.ok(await exists(join(live, 'Home.md')));
+});
+
+await testCase('CLI --push is refused because GitHub Wiki is retired', async () => {
+  const { repo, sourceDir, assetDir } = await makeRepo({ pages: requiredPages() });
+  const live = await makeLiveWiki('cli-push-retired');
+  let pushed = false;
+  const result = spawnSync(process.execPath, [
+    publisher,
+    '--repo-root', repo,
+    '--source-dir', sourceDir,
+    '--asset-dir', assetDir,
+    '--wiki-dir', live,
+    '--commit-sha', 'abc1234',
+    '--skip-npm-ci',
+    '--skip-tests',
+    '--push',
+  ], { encoding: 'utf8' });
+  assert.notEqual(result.status, 0, result.stderr || result.stdout);
+  assert.match(`${result.stdout}${result.stderr}`, /GitHub Wiki is retired/);
+  await assertLiveUnchanged(live);
+  await publishWiki({
+    repositoryRoot: repo,
+    wikiDir: live,
+    sourceDir,
+    assetDir,
+    commitSha: 'abc1234',
+    runInstall: false,
+    runTests: false,
+    push: true,
+    npmCi: fakeInstall(),
+    runNodeTests: fakeTests(),
+    gitPush: async () => {
+      pushed = true;
+    },
+    buildWiki: successfulBuild,
+  }).then(
+    () => {
+      throw new Error('publishWiki must reject push:true');
+    },
+    (error) => {
+      assert.match(String(error.message), /GitHub Wiki is retired/);
+    },
+  );
+  assert.equal(pushed, false, 'retired publisher must not invoke gitPush');
+  await assertLiveUnchanged(live);
 });
 
 await testCase('CLI invoked through a same-file path alias still runs and rejects unexpected arguments', async () => {

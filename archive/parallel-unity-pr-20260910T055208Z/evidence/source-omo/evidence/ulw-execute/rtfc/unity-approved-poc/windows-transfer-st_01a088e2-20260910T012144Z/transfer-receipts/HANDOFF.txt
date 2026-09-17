@@ -1,0 +1,55 @@
+-- worktree --
+/Users/ilseoblee/workspace/seoul-kenshi-wt/unity-poc-mac
+baaeb8a5b46404f0e866c795cf65c1f431673ca4
+rtfc/unity-poc-mac
+-- status --
+ M Design.md
+ M Game/Assets/Janseon/Foundation/Composition/AppLifetimeScope.cs
+ M Game/Assets/Janseon/Foundation/UI/GameplayUiSnapshot.cs
+ M Game/Assets/Janseon/Foundation/UI/PocCoreLoopController.cs
+ M Game/Assets/Janseon/Foundation/UI/Presenters/GameplayPresenter.cs
+ M Game/Assets/Janseon/Foundation/UI/Presenters/GameplayUiHost.cs
+ M Game/Assets/Janseon/Foundation/UI/UguiHudBuilder.cs
+ M Game/Assets/Janseon/Foundation/UI/UguiHudView.cs
+ M Game/Assets/Janseon/Foundation/UI/UiElementNames.cs
+ M Game/Assets/Tests/EditMode/UiToolkitScreenTests.cs
+ M Game/Assets/Tests/EditMode/UiToolkitVisualQaDefectTests.cs
+ M Game/Assets/Tests/PlayMode/BattleSessionDriverPlayModeTests.cs
+ M Game/Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs
+ M Game/Assets/Tests/PlayMode/FoundationSceneFlowTests.cs
+ M Game/Assets/Tests/PlayMode/UiToolkitCapturePlayModeTests.cs
+-- staged --
+-- diff stat --
+ Design.md                                          |  17 +-
+ .../Foundation/Composition/AppLifetimeScope.cs     |   9 +
+ .../Janseon/Foundation/UI/GameplayUiSnapshot.cs    | 183 +++++++----
+ .../Janseon/Foundation/UI/PocCoreLoopController.cs | 124 ++++++--
+ .../Foundation/UI/Presenters/GameplayPresenter.cs  | 153 ++++-----
+ .../Foundation/UI/Presenters/GameplayUiHost.cs     |   9 +-
+ .../Assets/Janseon/Foundation/UI/UguiHudBuilder.cs |  80 +++--
+ Game/Assets/Janseon/Foundation/UI/UguiHudView.cs   |  96 +-----
+ .../Assets/Janseon/Foundation/UI/UiElementNames.cs |  32 +-
+ Game/Assets/Tests/EditMode/UiToolkitScreenTests.cs |   1 -
+ .../Tests/EditMode/UiToolkitVisualQaDefectTests.cs |  11 +-
+ .../PlayMode/BattleSessionDriverPlayModeTests.cs   |  27 +-
+ .../Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs | 343 ++++++++++++++++++++-
+ .../Tests/PlayMode/FoundationSceneFlowTests.cs     |  11 +-
+ .../PlayMode/UiToolkitCapturePlayModeTests.cs      | 297 +++++++++++++-----
+ 15 files changed, 990 insertions(+), 403 deletions(-)
+-- transfer ref --
+baaeb8a5b46404f0e866c795cf65c1f431673ca4 refs/transfer/windows-unity/rtfc-phase-d
+-- autocrlf --
+file:/Users/ilseoblee/.gitconfig	false
+-- docs/gates --
+present Design.md
+present Intent.md
+present ToDo.md
+present docs/adr/ADR-001-repository-delivery-policy.md
+present tools/architecture/check-unity-architecture.mjs
+present tools/architecture/test-check-unity-architecture.mjs
+-- byte equality --
+PASS byte hashes: 15/15
+PASS git diff bytes: identical
+PASS base identities: 15/15
+PASS status: HEAD baaeb8a5, branch rtfc/unity-poc-mac, 15 unstaged tracked, 0 staged, 0 product untracked
+PASS docs/gates present

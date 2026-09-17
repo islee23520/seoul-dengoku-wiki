@@ -1,0 +1,32 @@
+{
+  "ok": true,
+  "asset_id": "poc-prop-pillar",
+  "repo": "https://github.com/microsoft/TRELLIS",
+  "commit_expected": "442aa1e1afb9014e80681d3bf604e8d728a86ee7",
+  "commit_observed": "442aa1e1afb9014e80681d3bf604e8d728a86ee7",
+  "model": "microsoft/TRELLIS-image-large",
+  "license": "MIT",
+  "execution": "direct_python",
+  "tool": "trellis",
+  "provider": "microsoft",
+  "host_root": "E:\\git\\janseon-asset-pipeline",
+  "seed": 1404,
+  "cpu_fallback": false,
+  "started_unix": 1788516551.559306,
+  "input_image": "E:\\git\\janseon-asset-pipeline\\jobs\\todo14-props\\poc-prop-pillar\\input.png",
+  "input_sha256": "cb6b7e7a041ccee5abb5dcd2bf50dfa0c6c9f364e3be007ac3a1c7429b57a177",
+  "input_hashes": [
+    "cb6b7e7a041ccee5abb5dcd2bf50dfa0c6c9f364e3be007ac3a1c7429b57a177"
+  ],
+  "config_hash": "148785d78e62142bfe0538eb2c79e8e5828567e30f94182b5a1a99ba341cc520",
+  "model_hash": "60940f1148489da029fe89c3c46d06dd0870f73ae39e4b2691dae149c0420889",
+  "model_snapshot": "25e0d31ffbebe4b5a97464dd851910efc3002d96",
+  "identity_rerun": false,
+  "glb_path": "E:\\git\\janseon-asset-pipeline\\jobs\\todo14-props\\poc-prop-pillar\\poc-prop-pillar.raw.glb",
+  "glb_sha256": "19f8ffddf92692f33a84eb788013bc158d28560a01f58c5c3d0526cf7cfac0b0",
+  "glb_bytes": 287096,
+  "preview_path": "E:\\git\\janseon-asset-pipeline\\jobs\\todo14-props\\poc-prop-pillar\\poc-prop-pillar.preview.png",
+  "preview_sha256": "0b24fca94c2e5762e301f51f742011d427f803b25d47a351274eecd8183fe6dd",
+  "preview_bytes": 10495,
+  "finished_unix": 1788516570.6157978
+}

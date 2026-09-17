@@ -1,0 +1,22 @@
+HEAD=baaeb8a5b46404f0e866c795cf65c1f431673ca4
+ M Design.md
+ M Game/Assets/Janseon/Core/Battle/Contracts/BattleContracts.cs
+ M Game/Assets/Janseon/Core/Battle/Sim/BattleSim.cs
+ M Game/Assets/Janseon/Core/Battle/Sim/BattleSimState.cs
+ M Game/Assets/Janseon/Core/Battle/Sim/CombatRules.cs
+ M Game/Assets/Janseon/Core/CampaignDomain.cs
+ M Game/Assets/Janseon/Foundation/Composition/AppLifetimeScope.cs
+ M Game/Assets/Janseon/Foundation/UI/GameplayUiSnapshot.cs
+ M Game/Assets/Janseon/Foundation/UI/PocCoreLoopController.cs
+ M Game/Assets/Janseon/Foundation/UI/Presenters/GameplayPresenter.cs
+ M Game/Assets/Janseon/Foundation/UI/Presenters/GameplayUiHost.cs
+ M Game/Assets/Janseon/Foundation/UI/UguiHudBuilder.cs
+ M Game/Assets/Janseon/Foundation/UI/UguiHudView.cs
+ M Game/Assets/Janseon/Foundation/UI/UiElementNames.cs
+ M Game/Assets/Tests/EditMode/RealtimeCardSettlementTests.cs
+ M Game/Assets/Tests/EditMode/UiToolkitScreenTests.cs
+ M Game/Assets/Tests/EditMode/UiToolkitVisualQaDefectTests.cs
+ M Game/Assets/Tests/PlayMode/BattleSessionDriverPlayModeTests.cs
+ M Game/Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs
+ M Game/Assets/Tests/PlayMode/FoundationSceneFlowTests.cs
+ M Game/Assets/Tests/PlayMode/UiToolkitCapturePlayModeTests.cs

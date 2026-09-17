@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://janseon.local/schemas/asset-manifest.json",
+  "title": "Janseon asset manifest or BOM",
+  "oneOf": [
+    { "$ref": "#/$defs/asset" },
+    { "$ref": "#/$defs/bom" }
+  ],
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "asset": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "schema_version",
+        "asset_id",
+        "asset_class",
+        "source",
+        "rights_status",
+        "generation_backend",
+        "provider",
+        "model",
+        "revision",
+        "prompt",
+        "prompt_hash",
+        "input_hashes",
+        "seed",
+        "cost_mode",
+        "cost_cents",
+        "raw_hash",
+        "output_hash",
+        "tool_versions",
+        "operations",
+        "unity_import_settings",
+        "review_receipts",
+        "status",
+        "created_at"
+      ],
+      "properties": {
+        "schema_version": { "const": 1 },
+        "asset_id": { "type": "string", "minLength": 1 },
+        "asset_class": {
+          "type": "string",
+          "enum": [
+            "portrait",
+            "character_mesh",
+            "prop",
+            "tile",
+            "animation_clip",
+            "identity_lock",
+            "ui_concept",
+            "title_art",
+            "ui_kit"
+          ]
+        },
+        "source": { "type": "string", "enum": ["generate", "existing"] },
+        "rights_status": { "type": "string", "enum": ["allowed", "blocked", "unresolved"] },
+        "generation_backend": {
+          "type": "string",
+          "enum": [
+            "nanobanana_gemini",
+            "grok_imagine",
+            "openai_image",
+            "meshgen_6cell",
+            "none"
+          ]
+        },
+        "provider": { "type": "string", "minLength": 1 },
+        "model": { "type": "string", "minLength": 1 },
+        "revision": { "type": "string", "minLength": 1 },
+        "prompt": { "type": "string" },
+        "prompt_hash": { "$ref": "#/$defs/sha256" },
+        "input_hashes": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/sha256" }
+        },
+        "seed": { "type": "integer" },
+        "cost_mode": { "type": "string", "enum": ["subscription", "paid", "none"] },
+        "cost_cents": { "type": "integer", "minimum": 0 },
+        "raw_hash": { "$ref": "#/$defs/sha256" },
+        "output_hash": { "$ref": "#/$defs/sha256" },
+        "tool_versions": { "type": "object" },
+        "operations": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "unity_import_settings": { "type": "object" },
+        "review_receipts": { "type": "array" },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "reviewed", "promoted", "blocked", "archived"]
+        },
+        "created_at": { "type": "string" }
+      }
+    },
+    "bom": {
+      "type": "object",
+      "required": ["schema_version", "assets"],
+      "properties": {
+        "schema_version": { "const": 1 },
+        "assets": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/asset" }
+        }
+      }
+    }
+  }
+}

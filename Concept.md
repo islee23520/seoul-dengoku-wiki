@@ -1,8 +1,8 @@
-# 잔선: 서울 — 제품 콘셉트와 기술 기준선
+# 서울:전국 — 제품 콘셉트와 기술 기준선
 
 ## 제품
 
-《잔선: 서울》은 붕괴 이후 **후세 서울**의 지하철망을 지상·지하 다층 전략 그래프로 다루는, 인물 중심 **4X + RPG**입니다. 전투는 턴제 SRPG가 아닙니다. 2026-09-07 소유자 결정으로 **실시간 진형·카드 전투**로 확정됐고 기준 레퍼런스는 Songs of Silence입니다([Intent.md](Intent.md) 결정 3). 탐색·상호작용·전투는 고정 직교 아이소메트릭 카메라와 4방향 타일 격자를 공유합니다.
+《서울:전국》은 붕괴 이후 **후세 서울**의 지하철망을 지상·지하 다층 전략 그래프로 다루는, 인물 중심 **4X + RPG**입니다. 전투는 턴제 SRPG가 아닙니다. 2026-09-07 소유자 결정으로 **실시간 진형·카드 전투**로 확정됐고 기준 레퍼런스는 Songs of Silence입니다([Intent.md](Intent.md) 결정 3). 탐색·상호작용·전투는 고정 직교 아이소메트릭 카메라와 4방향 타일 격자를 공유합니다.
 
 ## 기술 기준선
 
@@ -24,11 +24,11 @@ VContainer 외 Makcha-Unity 패키지는 현재 모듈에 실제 호출자와 �
 - Repository와 domain contract는 Unity-free 경계를 유지합니다.
 - 같은 seed와 command log는 같은 상태와 원장 hash를 만들어야 합니다.
 
-상세 계약은 [`GDD/system-design/Unity-System-Design.md`](GDD/system-design/Unity-System-Design.md), 실행 순서는 [`GDD/game-logic/Unity-Architecture-Implementation-Plan.md`](GDD/game-logic/Unity-Architecture-Implementation-Plan.md)를 따릅니다.
+상세 계약은 [`GDD/system-design/Unity-System-Design.md`](Wikis/game-logic/Unity-System-Design.md), 실행 순서는 [`Wikis/game-logic/Unity-Architecture-Implementation-Plan.md`](Wikis/game-logic/Unity-Architecture-Implementation-Plan.md)를 따릅니다.
 
 ## 현재 구현 범위
 
-현재 모듈 `Unity POC 통합 코어 루프`는 `Bootstrap` App scope/FSM, 배타적 `MainTitle`/`Foundation` 화면 lease, uGUI 화면, 세 역 노선과 교섭·우회·전투·정산·복귀를 구현했습니다. 전투 Core는 30Hz 고정 틱의 실시간 진형·카드 규칙(`rtfc-owner-cards-v2`)이며, 분대 명령·집계 사상자 표현의 완료 검증은 남아 있습니다([실시간 진형·카드 전투](GDD/game-logic/Realtime-Formation-Card-Battle.md)). 동일 seed 재현과 중복 정산 거부를 실제 batchmode PlayMode에서 검증합니다. 생성 아트 슬롯 승인·연결은 별도 수용 조건이며, 코드 검증만으로 모듈 전체가 완료되지는 않습니다.
+현재 모듈 `Unity POC 통합 코어 루프`는 `Bootstrap` App scope/FSM, 배타적 `MainTitle`/`Foundation` 화면 lease, uGUI 화면, 세 역 노선과 교섭·우회·전투·정산·복귀를 구현했습니다. 전투 Core는 30Hz 고정 틱의 실시간 진형·카드 규칙(`rtfc-owner-cards-v2`)이며, 분대 명령·집계 사상자 표현의 완료 검증은 남아 있습니다([실시간 진형·카드 전투](Wikis/game-logic/Realtime-Formation-Card-Battle.md)). 동일 seed 재현과 중복 정산 거부를 실제 batchmode PlayMode에서 검증합니다. 생성 아트 슬롯 승인·연결은 별도 수용 조건이며, 코드 검증만으로 모듈 전체가 완료되지는 않습니다.
 
 ## 완료 판단
 

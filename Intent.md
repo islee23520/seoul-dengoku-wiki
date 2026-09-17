@@ -4,12 +4,19 @@
 
 이 문서는 소유자 결정을 기록하고, 뒤이은 계약 개정과 품질 게이트웨이 잠금의 근거가 된다.
 
+## 결정 9 — 공식 게임명: 서울:전국 (2026-09-16)
+
+- 2026-09-16 소유자 지시로 공식 사용자 노출 게임명을 **《서울:전국》**으로 확정한다.
+- 제품 콘셉트, 세계관, 게임 규칙과 현재 구현 범위는 바꾸지 않는다.
+- GitHub 저장소명, 로컬 디렉터리명, Vercel 프로젝트·주소, 패키지명과 번들 식별자 같은 기술 식별자는 기존 자동화와 배포 경로를 위해 유지한다.
+- 실행 이슈: #127
+
 ## 결정 3 — 목표 형태: 4X + RPG, 전투는 실시간 진형·카드 전투 (2026-09-07)
 
 - 2026-09-07 소유자 지시: 이 게임은 "**4X with RPG**"이며, 전투는 턴제 SRPG가 아니라 "**real time battle with formation and card based**"로 만든다. 목표 형태의 기준 레퍼런스는 **Songs of Silence**(Chimera Entertainment, 2024 — 지도 턴 4X + 실시간 자동 전투 + 영웅 카드)다.
 - 같은 날 한국어 웹 SRPG 라벨렌 전기를 역설계해 턴제 쪽 마지막 정밀 참조로 두었다. 거기서 가져오는 것은 턴 구조가 아니라 사기·항복 3조건·지휘조·인연 등급·병참 준비안·예고된 증원 같은 전투 바깥 계약이다.
 - 유지하는 계약: 1.5m 4방향 타일 격자, 캐릭터 실루엣 계약, 동일 seed + 명령 기록 결정론, 부상 이행, 포획·영입 관계 게이트. 시야·카메라는 결정 5. 바뀝는 것은 전투 안에서 플레이어가 하는 일뿐이다 — 유닛 단위 턴 명령 대신 전투 전 진형 편집, 전투 중 카드(일시정지 가능, 덱 구축·랜덤 드로우 없음), 후퇴·항복 판단.
-- 개정한 문서: [실시간 진형·카드 전투](GDD/game-logic/Realtime-Formation-Card-Battle.md)(옛 `SRPG-Combat.md`를 이름 변경), [이 게임이 뭔지](GDD/game-logic/Game-Thesis.md), [레퍼런스 게임 조사](GDD/game-logic/Game-References.md), [개발 로드맵](GDD/game-logic/Development-Roadmap.md), 새 레퍼런스 페이지 [Songs of Silence](GDD/game-logic/Ref-Songs-of-Silence.md)·[라벨렌 전기](GDD/game-logic/Ref-Ravelen-Chronicles.md), [Concept.md](Concept.md), [ToDo.md](ToDo.md) 비목표. 도표 계약 테스트(`Tool/wiki/test-core-isometric-diagrams.mjs`)의 고정 문장도 같은 변경에서 갱신했다.
+- 개정한 문서: [실시간 진형·카드 전투](Wikis/game-logic/Realtime-Formation-Card-Battle.md)(옛 `SRPG-Combat.md`를 이름 변경), [이 게임이 뭔지](Wikis/game-logic/Game-Thesis.md), [레퍼런스 게임 조사](Wikis/game-logic/Game-References.md), [개발 로드맵](Wikis/game-logic/Development-Roadmap.md), 새 레퍼런스 페이지 [Songs of Silence](Wikis/game-logic/Ref-Songs-of-Silence.md)·[라벨렌 전기](Wikis/game-logic/Ref-Ravelen-Chronicles.md), [Concept.md](Concept.md), [ToDo.md](ToDo.md) 비목표. 도표 계약 테스트(`Tool/wiki/test-core-isometric-diagrams.mjs`)의 고정 문장도 같은 변경에서 갱신했다.
 - 현재 모듈(`Unity POC 통합 코어 루프`)은 바뀌지 않는다. POC의 동일 격자 턴제 규칙(ToDo 8)은 이 결정이 구현되기 전까지의 과도 상태이며, **다음 모듈은 실시간 진형·카드 전투 코어**로 지정한다(로드맵 6번). 이 단계에서는 구현하지 않는다.
 - 미결 사항(다음 모듈 계획에서 잠근다): 틱 간격, 카드 재충전 규칙, 사기 임계 수치, 전투 판정 수치를 라벨렌식 9스탯으로 둠지 Songs of Silence식 소수 수치+특성으로 압축할지, 자동 해결 허용 범위.
 
@@ -19,12 +26,12 @@
 - Spine 에셋은 POC 사람 표현으로 쓴다.
 - 권리: 오드랜드 그래픽 에셋은 소유자 소유·전면 자유 사용 선언(2026-09-07). spine-unity 런타임은 Esoteric Software 런타임 라이선스 대상이며 소유자 Spine 에디터 라이선스가 전제다.
 - 실행: `Tool/art/import-oddland-donor.mjs`가 `/Volumes/gameWorkspace/game-refs/oddland-unity`에서 `Game/Assets/Quarantine/Oddland/`로 결정론적 복사하고 `Reference/assets/bom/donor/`에 매니페스트·SHA-256 목록을 남긴다. 페이로드는 LFS 할당량 문제로 gitignore, 매니페스트만 추적. 게이트 7(BOM fail-closed)과 거리 표시 규칙은 그대로다 — 기증은 승격이 아니며 런타임 슬롯 연결은 여전히 `look.owner_verdict: accepted`를 요구한다.
-- 상세: [에셋이 들어오는 길](GDD/game-logic/Asset-Pipeline.md) 「기증 에셋: 오드랜드 패이로드」.
+- 상세: [에셋이 들어오는 길](Wikis/game-logic/Asset-Pipeline.md) 「기증 에셋: 오드랜드 패이로드」.
 
 ## 결정 1 — 사람 캐릭터: 오드랜드 Spine POC (2026-09-14)
 
 - POC 사람 표현은 오드랜드 Spine이다. Spine 에셋은 POC 사람 표현으로 쓴다.
-- 실루엣은 2.5등신, 동·서·남·북 네 방향. 정본은 [이 게임이 뭔지](GDD/game-logic/Game-Thesis.md).
+- 실루엣은 2.5등신, 동·서·남·북 네 방향. 정본은 [이 게임이 뭔지](Wikis/game-logic/Game-Thesis.md).
 - 실행 이슈: #58
 
 ## 결정 2 — UI 프레임워크: UI Toolkit 폐기, uGUI로 고정
@@ -42,11 +49,13 @@
 - 2.5D 화면 영상: https://www.youtube.com/watch?v=wOgbtZMhaxg
 - 전투 형태는 Songs of Silence와 같은 실시간 진형·카드 전투다.
 
-## 결정 6 — 화면 목표는 poc-complete 열 면 (2026-09-14)
+## 결정 6 — 화면 목표는 12면과 사망·후계 보조 목업 (2026-09-14, 2026-09-17 개정)
 
-- 화면 목표는 `.omo/design/poc-complete.html` 의 열 면이다.
+- 화면 목표는 `.omo/design/poc-complete.html`에서 출발한 12면이다. 기존 HTML의 11장면은 `출격 인원 선택`을 이미 보여주지만 조우 뒤에 배치했고, 별개의 `전투 전 진형 편집`은 충분히 보여주지 못한다. 목업 제작에서 이 순서와 장면을 바로잡는다.
 - 소유자 판단: 이 HTML이 가려는 UI에 가장 가깝다.
-- 열 면: 시작 프리셋, 캐릭터 생성, 세계 인물 모집, 거점 허브, 캐릭터 대화, 전략 노선도, 역간 여행, 조우, 전투, 정산.
+- 12면: 캐릭터 생성·착생, 시작 프리셋, 세계 인물 모집, 거점 허브, 캐릭터 대화, 출격 인원 선택, 전략 노선도, 역간 여행, 조우, 전투 전 진형 편집, 전투, 정산.
+- 보조 목업: 생전 후계 지정, 사망 후 유효 후계자 승계, 후계자 부재 게임오버, 계정 아카이브. 기존 8칸 구현 보드는 늘리지 않는다.
+- 요소 이름 계약: 기존 Unity 이름을 유지하고, 신규 이름은 `Design.md` 11절에 기록한다. 목업에 먼저 적용한 뒤 Unity로 옮긴다.
 - 색인 이슈: #101. 보고서: `/Reference/ui-ux-refs/`.
 
 ## 품질 게이트웨이 잠금 (두 작업 공통)

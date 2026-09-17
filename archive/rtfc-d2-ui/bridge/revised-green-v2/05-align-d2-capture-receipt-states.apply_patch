@@ -1,0 +1,23 @@
+--- a/Game/Assets/Tests/PlayMode/UiToolkitCapturePlayModeTests.cs
++++ b/Game/Assets/Tests/PlayMode/UiToolkitCapturePlayModeTests.cs
+@@ -55,8 +55,8 @@
+         yield return LoadBootstrapAndBind();
+ 
+         canvasRoot = mainTitleCanvasRoot;
+-        yield return Capture(1280, 720, "main-title", "idle");
+-        yield return Capture(1920, 1080, "main-title", "idle");
++        yield return Capture(1280, 720, "main-title", "main-title");
++        yield return Capture(1920, 1080, "main-title", "main-title");
+ 
+         yield return LoadFoundationFromMainTitle();
+         var gameplayHost = UnityEngine.Object.FindAnyObjectByType<GameplayUiHost>();
+@@ -85,8 +85,8 @@
+         yield return ClickAwait(UiElementNames.EditFormation, s => s.Battle.Deployed);
+         yield return ClickAwait(UiElementNames.CardGeneralUse, s =>
+             Array.Find(s.Battle.Cards, card => card.Id == "encourage-morale").RechargeTicksLeft == 600);
+-        yield return Capture(1280, 720, "battle-state", "battle-paused-card-recharging");
+-        yield return Capture(1920, 1080, "battle-state", "battle-paused-card-recharging");
++        yield return Capture(1280, 720, "battle-state", "battle");
++        yield return Capture(1920, 1080, "battle-state", "battle");
+         yield return ClickAwait(UiElementNames.BattlePlayPause, s => !s.BattlePaused);
+         yield return WaitBattleTerminal();

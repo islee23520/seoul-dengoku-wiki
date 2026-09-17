@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-09 16:13:56Z" end-time="2026-09-09 16:14:07Z" duration="11.3389068">
+  <test-suite type="TestSuite" id="1044" name="잔선_ 서울" fullname="잔선_ 서울" runstate="Runnable" testcasecount="28" result="Passed" start-time="2026-09-09 16:13:56Z" end-time="2026-09-09 16:14:07Z" duration="11.338907" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1037" name="Janseon.Foundation.PlayModeTests.dll" fullname="E:/git/seoul-kenshi-wt/rtfc-phase-d/Game/Library/ScriptAssemblies/Janseon.Foundation.PlayModeTests.dll" runstate="Runnable" testcasecount="28" result="Passed" start-time="2026-09-09 16:13:56Z" end-time="2026-09-09 16:14:07Z" duration="11.331952" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="23672" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1038" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="27" result="Passed" start-time="2026-09-09 16:13:56Z" end-time="2026-09-09 16:14:07Z" duration="11.331053" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1039" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="27" result="Passed" start-time="2026-09-09 16:13:56Z" end-time="2026-09-09 16:14:07Z" duration="11.330528" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1040" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="27" result="Passed" start-time="2026-09-09 16:13:56Z" end-time="2026-09-09 16:14:07Z" duration="11.329833" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1003" name="BattleSessionDriverPlayModeTests" fullname="Janseon.Foundation.Tests.BattleSessionDriverPlayModeTests" classname="Janseon.Foundation.Tests.BattleSessionDriverPlayModeTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-09-09 16:13:56Z" end-time="2026-09-09 16:14:07Z" duration="11.328204" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1004" name="ProductionCoreLoop_DriverOwnsLiveBattleLifecycle_EndToEnd" fullname="Janseon.Foundation.Tests.BattleSessionDriverPlayModeTests.ProductionCoreLoop_DriverOwnsLiveBattleLifecycle_EndToEnd" methodname="ProductionCoreLoop_DriverOwnsLiveBattleLifecycle_EndToEnd" classname="Janseon.Foundation.Tests.BattleSessionDriverPlayModeTests" runstate="Runnable" seed="646471919" result="Passed" start-time="2026-09-09 16:13:56Z" end-time="2026-09-09 16:14:07Z" duration="11.317672" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Unable to load font face for [Malgun Gothic]. Make sure "Include Font Data" is enabled in the Font Import Settings.
+TmpFont bundle asset creation failed: Value cannot be null.
+Parameter name: shader
+TmpFont file-path asset creation failed: Value cannot be null.
+Parameter name: shader
+TmpFont file-path asset creation failed: Value cannot be null.
+Parameter name: shader
+JANSEON_STARTUP_READY screen=MainTitle
+Saving results to: C:/Users/oliver/AppData/LocalLow/Janseon Studio/잔선_ 서울\TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

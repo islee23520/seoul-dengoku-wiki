@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="6" result="Passed" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-08 16:50:01Z" end-time="2026-09-08 16:50:01Z" duration="0.0949927">
+  <test-suite type="TestSuite" id="1000" name="잔선_ 서울" fullname="잔선_ 서울" runstate="Runnable" testcasecount="146" result="Passed" start-time="2026-09-08 16:50:01Z" end-time="2026-09-08 16:50:01Z" duration="0.094993" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1170" name="Janseon.Foundation.EditModeTests.dll" fullname="E:/git/seoul-kenshi-wt/rtfc-phase-d/Game/Library/ScriptAssemblies/Janseon.Foundation.EditModeTests.dll" runstate="Runnable" testcasecount="145" result="Passed" start-time="2026-09-08 16:50:01Z" end-time="2026-09-08 16:50:01Z" duration="0.085506" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="78820" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1171" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="144" result="Passed" start-time="2026-09-08 16:50:01Z" end-time="2026-09-08 16:50:01Z" duration="0.083785" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1174" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="118" result="Passed" start-time="2026-09-08 16:50:01Z" end-time="2026-09-08 16:50:01Z" duration="0.082192" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1175" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="118" result="Passed" start-time="2026-09-08 16:50:01Z" end-time="2026-09-08 16:50:01Z" duration="0.080927" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1053" name="BattleSessionDriverTests" fullname="Janseon.Foundation.Tests.BattleSessionDriverTests" classname="Janseon.Foundation.Tests.BattleSessionDriverTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-09-08 16:50:01Z" end-time="2026-09-08 16:50:01Z" duration="0.072055" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1054" name="Driver_IsVContainerTickableEntryPoint" fullname="Janseon.Foundation.Tests.BattleSessionDriverTests.Driver_IsVContainerTickableEntryPoint" methodname="Driver_IsVContainerTickableEntryPoint" classname="Janseon.Foundation.Tests.BattleSessionDriverTests" runstate="Runnable" seed="2095739720" result="Passed" start-time="2026-09-08 16:50:01Z" end-time="2026-09-08 16:50:01Z" duration="0.012223" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1058" name="DriverRun_MatchesDirectReplay_RegardlessOfFrameTiming" fullname="Janseon.Foundation.Tests.BattleSessionDriverTests.DriverRun_MatchesDirectReplay_RegardlessOfFrameTiming" methodname="DriverRun_MatchesDirectReplay_RegardlessOfFrameTiming" classname="Janseon.Foundation.Tests.BattleSessionDriverTests" runstate="Runnable" seed="736809819" result="Passed" start-time="2026-09-08 16:50:01Z" end-time="2026-09-08 16:50:01Z" duration="0.034451" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1056" name="FrameBurst_ClampsToFourStepsAndBoundsCarry" fullname="Janseon.Foundation.Tests.BattleSessionDriverTests.FrameBurst_ClampsToFourStepsAndBoundsCarry" methodname="FrameBurst_ClampsToFourStepsAndBoundsCarry" classname="Janseon.Foundation.Tests.BattleSessionDriverTests" runstate="Runnable" seed="80147238" result="Passed" start-time="2026-09-08 16:50:01Z" end-time="2026-09-08 16:50:01Z" duration="0.001870" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1057" name="Pause_IsHashNeutral_AndPreservesTimeline" fullname="Janseon.Foundation.Tests.BattleSessionDriverTests.Pause_IsHashNeutral_AndPreservesTimeline" methodname="Pause_IsHashNeutral_AndPreservesTimeline" classname="Janseon.Foundation.Tests.BattleSessionDriverTests" runstate="Runnable" seed="933865797" result="Passed" start-time="2026-09-08 16:50:01Z" end-time="2026-09-08 16:50:01Z" duration="0.001762" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1059" name="TickBudget_StopsSteppingAtMaxTicks" fullname="Janseon.Foundation.Tests.BattleSessionDriverTests.TickBudget_StopsSteppingAtMaxTicks" methodname="TickBudget_StopsSteppingAtMaxTicks" classname="Janseon.Foundation.Tests.BattleSessionDriverTests" runstate="Runnable" seed="1754784837" result="Passed" start-time="2026-09-08 16:50:01Z" end-time="2026-09-08 16:50:01Z" duration="0.000631" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1055" name="TickCadence_AtThirtyHertz_AdvancesExactlyOneStepPerInterval" fullname="Janseon.Foundation.Tests.BattleSessionDriverTests.TickCadence_AtThirtyHertz_AdvancesExactlyOneStepPerInterval" methodname="TickCadence_AtThirtyHertz_AdvancesExactlyOneStepPerInterval" classname="Janseon.Foundation.Tests.BattleSessionDriverTests" runstate="Runnable" seed="57015429" result="Passed" start-time="2026-09-08 16:50:01Z" end-time="2026-09-08 16:50:01Z" duration="0.004667" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: C:/Users/oliver/AppData/LocalLow/Janseon Studio/잔선_ 서울\TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

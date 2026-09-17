@@ -387,7 +387,7 @@ def render_buttons() -> dict[str, Image.Image]:
 # ---------------------------------------------------------------- title
 
 _TITLE_FONT = Path("/System/Library/Fonts/AppleSDGothicNeo.ttc")
-_TITLE_MARK = "《잔선: 서울》"
+_TITLE_MARK = "《서울:전국》"
 _TITLE_SUB = "붕괴 이후 지하철망의 질서를 다시 세운다"
 
 

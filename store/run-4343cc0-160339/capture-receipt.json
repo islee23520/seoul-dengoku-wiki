@@ -1,0 +1,1676 @@
+{
+  "tool": "tools/store/design-store-capture.mjs@1",
+  "captured_at": "2026-09-13T07:03:40.023Z",
+  "git_commit": "4343cc00727c760ffb94af1a6a7a3ea27317533b",
+  "repo_root": "/Users/ilseoblee/workspace/seoul-kenshi-wt/design-store-capture",
+  "out_dir": "/Users/ilseoblee/workspace/seoul-kenshi-store/run-4343cc0-160339",
+  "files": 238,
+  "manifest": [
+    {
+      "path": "Concept.md",
+      "file_set": "root-planning",
+      "size": 2976,
+      "sha256": "ca91809e026404d83eefa71e9f38103c02dc4bb9f725a8a7c04074bde7c228f8",
+      "git_blob_sha": "66319e9b4f5992b790414c60d766c1f9d335dba3"
+    },
+    {
+      "path": "Design.md",
+      "file_set": "root-planning",
+      "size": 12363,
+      "sha256": "bfe0b28cba460f3d5558a42cb4a5f446dd6615d89cc2449930cb3b45a33d82fb",
+      "git_blob_sha": "460a28270bc71d240cebc0e4601dd43f55b73ac0"
+    },
+    {
+      "path": "Intent.md",
+      "file_set": "root-planning",
+      "size": 7462,
+      "sha256": "ada418dc4ce742e8a849a8ce752762bb85ba4cc4bcfa487d94baaa3bfe7ae8ab",
+      "git_blob_sha": "1731e5af895a63547825e307c962cc095f6c78f3"
+    },
+    {
+      "path": "ToDo.md",
+      "file_set": "root-planning",
+      "size": 3977,
+      "sha256": "654f13e19a409a85850294c6d9ad0735ec9e4dabdbb07841bb31deb329f117a0",
+      "git_blob_sha": "10b372e3d51ac93492d86e8b5627e596d020082c"
+    },
+    {
+      "path": "docs-site/rules/Rules-Battle.md",
+      "file_set": "site-rules-authored",
+      "size": 7473,
+      "sha256": "dee55be5b845233dbc37f922cf092e7be87cd3d0fd1d29f2588a28aa181987f6",
+      "git_blob_sha": "ebe108a33ebe9241827cc1dd9c8cb432fe234bbb"
+    },
+    {
+      "path": "docs-site/rules/Rules-CampaignLoop.md",
+      "file_set": "site-rules-authored",
+      "size": 12064,
+      "sha256": "b047d6781b3f392befb2b91689ce011c45b9d6d4ed09abdfcfbbdfd615d51498",
+      "git_blob_sha": "627f7acde12db6916ca7b513b36cc64a871389ff"
+    },
+    {
+      "path": "docs-site/rules/Rules-EconomyLogistics.md",
+      "file_set": "site-rules-authored",
+      "size": 11719,
+      "sha256": "4029e2684ff2e177b85c04d9658370ba13087562eb6a92306d3d257bdd98f2d9",
+      "git_blob_sha": "4306639c462c3ae0d2292101a2d50c127bde77d7"
+    },
+    {
+      "path": "docs-site/rules/Rules-FactionsWarfare.md",
+      "file_set": "site-rules-authored",
+      "size": 13520,
+      "sha256": "d44b2ab6fd74e671661bc50e8ece6b0770d905d97da2919d6d86cf7a26d1337e",
+      "git_blob_sha": "6f57956e1e4eeded6175c5bc88ba3678ba4b31eb"
+    },
+    {
+      "path": "docs-site/rules/Rules-SaveDeterminism.md",
+      "file_set": "site-rules-authored",
+      "size": 6601,
+      "sha256": "5e0b1b3eb41316cc6cccccee60a9d6a50773dd07a13d8f8ac325b78e217befad",
+      "git_blob_sha": "02e446dbd3fb52080cd605c764854337ff3c3e78"
+    },
+    {
+      "path": "docs-site/rules/Rules-Strongholds.md",
+      "file_set": "site-rules-authored",
+      "size": 7041,
+      "sha256": "87194a5e98106e2fb0730ab96e3e9dfaa1d50aa6ebb26c8ad998085142927885",
+      "git_blob_sha": "96242844b32a9bf1919c7f14b773f1fe7c2f058b"
+    },
+    {
+      "path": "docs-site/rules/Rules-TravelEncounters.md",
+      "file_set": "site-rules-authored",
+      "size": 5172,
+      "sha256": "4c146215278ceba98ca9e86f99144376b5a3626b3317edfec4d0ce38a126e8bd",
+      "git_blob_sha": "51aba1d6fc681cb09839762cf76e595ec79884d4"
+    },
+    {
+      "path": "docs-site/rules/index.md",
+      "file_set": "site-rules-authored",
+      "size": 1046,
+      "sha256": "63034fe4eedec9e36397f2b2c5d7eb211f1cc4c55801b83c7a2b585a706acad4",
+      "git_blob_sha": "8e5fc82d9bb7e5b3aa14bd97fb4a17f845862d09"
+    },
+    {
+      "path": "docs/game-logic/Ambitions-and-Relations.md",
+      "file_set": "game-logic-top",
+      "size": 7094,
+      "sha256": "b2469a8bf9583495c8211042c9fd2966119088a0d47c4cf7434fb5610a39b073",
+      "git_blob_sha": "cde226b1c7f9e88a4c0e5ca407495552e1398233"
+    },
+    {
+      "path": "docs/game-logic/Asset-Pipeline.md",
+      "file_set": "game-logic-top",
+      "size": 9634,
+      "sha256": "88df1fefcf089badfb5d425c1880524ff884c630fecec1430b0b9e9c396a796d",
+      "git_blob_sha": "00bd6ef02ee931d51fa14b794f6c5793ade6e27c"
+    },
+    {
+      "path": "docs/game-logic/Campaign-Loop.md",
+      "file_set": "game-logic-top",
+      "size": 2102,
+      "sha256": "5979647d01259176cd4ea0286b0d73d19ef465488b0fe55f3780b77637e9a71d",
+      "git_blob_sha": "118a2deca1f4fe1f1564a3d43347736e3138f6ea"
+    },
+    {
+      "path": "docs/game-logic/Campaign-Progression.md",
+      "file_set": "game-logic-top",
+      "size": 4421,
+      "sha256": "7134f4b2bca92f6f6ae96ee8ced3901d2d78dfc78dd5c124325e9383add99738",
+      "git_blob_sha": "41d5d365652462fcb3c2765877f3c180b36683f9"
+    },
+    {
+      "path": "docs/game-logic/Cast-Corridors-Index.md",
+      "file_set": "game-logic-top",
+      "size": 905,
+      "sha256": "9e721afded01cf14cf7a6b94f41156ee117b793085e7b3740d1704621c6d660e",
+      "git_blob_sha": "b608d2c3bbca59b5fb6a129ec607ec3f2de08878"
+    },
+    {
+      "path": "docs/game-logic/Cast-Index.md",
+      "file_set": "game-logic-top",
+      "size": 37630,
+      "sha256": "4b502bf098a3102e70cf5e3092089492797bc110bd2d73c6085563b7c04297d5",
+      "git_blob_sha": "e11e43b11d5e8f8857d08921bc60c194f2d80b83"
+    },
+    {
+      "path": "docs/game-logic/Cast-Profile-Contract.md",
+      "file_set": "game-logic-top",
+      "size": 2760,
+      "sha256": "a0f8b1f136b5e34e8ac4b2078a455eea5dec1d4a0d838f06433ea3ab957268e8",
+      "git_blob_sha": "1104e9c94bc18d2cd52da97f1f6b0bba80b63eae"
+    },
+    {
+      "path": "docs/game-logic/Cast-Relations.md",
+      "file_set": "game-logic-top",
+      "size": 72213,
+      "sha256": "a92bcf210f0c200c5dbf089f673e6de70edded60145b292d75e21f40962e9dd1",
+      "git_blob_sha": "9e218371bfc8bd925395237d7e0da57e3f2c22d5"
+    },
+    {
+      "path": "docs/game-logic/Cast-State-01.md",
+      "file_set": "game-logic-top",
+      "size": 34224,
+      "sha256": "7ae0f445f47fb86f77d0b9c94a595f152135ba30a8c4b44f60ef031105ce7978",
+      "git_blob_sha": "c62fc8818a5d3c2359596c5e90855ad7ee4f9de9"
+    },
+    {
+      "path": "docs/game-logic/Cast-State-02.md",
+      "file_set": "game-logic-top",
+      "size": 34063,
+      "sha256": "70a43889ce5ce41e6be17bbfafabb7b247c5eecdaea5d5bd1f7bf3a7c54b1c22",
+      "git_blob_sha": "c4182a13e14db583c75309af674700c019e904cb"
+    },
+    {
+      "path": "docs/game-logic/Cast-State-03.md",
+      "file_set": "game-logic-top",
+      "size": 35207,
+      "sha256": "e8471bccfa949c66a963343bfe7876a8c0cefbf1428a6a203b0b829c908e9551",
+      "git_blob_sha": "bd3a586e57de7342346b9a3a6510e0edb97c82a9"
+    },
+    {
+      "path": "docs/game-logic/Cast-State-04.md",
+      "file_set": "game-logic-top",
+      "size": 35594,
+      "sha256": "076169ca2a592a0e880f07ebe21583b6903545b7d4cedb77a7951d6eadfa4361",
+      "git_blob_sha": "4b15d55441fd2b06e149a6cfdcfb81fa6971ee56"
+    },
+    {
+      "path": "docs/game-logic/Cast-State-05.md",
+      "file_set": "game-logic-top",
+      "size": 34537,
+      "sha256": "165be42007b5a3b94904722ad761d6b09db34ed1244039717177486c6f80aa31",
+      "git_blob_sha": "037899d8d394346330c1da4eccce85e9935e9538"
+    },
+    {
+      "path": "docs/game-logic/Cast-State-06.md",
+      "file_set": "game-logic-top",
+      "size": 26776,
+      "sha256": "63baa6273827c217b79acef3e09e66a86e9b9333c2081dd3910cb8bf1decf8de",
+      "git_blob_sha": "8e95dedbbd85590e8899fffe8b4f3b895eeb8f87"
+    },
+    {
+      "path": "docs/game-logic/Cast-State-07.md",
+      "file_set": "game-logic-top",
+      "size": 27136,
+      "sha256": "184a1aa6ac650afbf43dab6d164ad75e5f6a933894f9da360a7cb787e3b11a7d",
+      "git_blob_sha": "85409bacf4f0d71d0132866716b2be6ae2ac0156"
+    },
+    {
+      "path": "docs/game-logic/Cast-State-08.md",
+      "file_set": "game-logic-top",
+      "size": 28268,
+      "sha256": "0fd7d7dc041c8cf6052bf2c97cf64ca82897bd9befd84a90923728ccd212c367",
+      "git_blob_sha": "6e265a137fcc700a9c991fee3aeb7db80186198d"
+    },
+    {
+      "path": "docs/game-logic/Cast-State-09.md",
+      "file_set": "game-logic-top",
+      "size": 26473,
+      "sha256": "a5788f136ad09d393fca594d552f380c8eacca45f4aeec00fd43abbcbeb43027",
+      "git_blob_sha": "dc997c7749cd793768bbce9f73f3636e6c3f8fee"
+    },
+    {
+      "path": "docs/game-logic/Cast-State-10.md",
+      "file_set": "game-logic-top",
+      "size": 26408,
+      "sha256": "a45a0af2bb9fe4f4a08443c0f72547da0bf093a19e2016e35aa08a74b975df95",
+      "git_blob_sha": "5403d25804e8b48533d794949b5c4ac874e3144d"
+    },
+    {
+      "path": "docs/game-logic/Cast-State-11.md",
+      "file_set": "game-logic-top",
+      "size": 27414,
+      "sha256": "00277c6f4f88795324614282318f9368fd7d49d1490737c9833049172718becf",
+      "git_blob_sha": "c7738789968ea646fc950e637263958ca9d1ed78"
+    },
+    {
+      "path": "docs/game-logic/Cast-State-12.md",
+      "file_set": "game-logic-top",
+      "size": 27448,
+      "sha256": "7d1985dfacc1dc3595d90f731afb19bcc1a383aa631722f08530522268f8c948",
+      "git_blob_sha": "093a1203e6cff3145c336caa3b27ee6690f3113f"
+    },
+    {
+      "path": "docs/game-logic/Cast-State-13.md",
+      "file_set": "game-logic-top",
+      "size": 27897,
+      "sha256": "ceaeb680af9fcd0f3fc73bbcbc50c00354c23c8cb2c812545c2de898bcfb284a",
+      "git_blob_sha": "f9081ab674d165c1c0492a66b287e46d88d3a030"
+    },
+    {
+      "path": "docs/game-logic/Cast-State-14.md",
+      "file_set": "game-logic-top",
+      "size": 28459,
+      "sha256": "6f83dc6b13a018b73fa3023bb488c438338018c3de4b775d80e158efc50a62e0",
+      "git_blob_sha": "092e37807b69417c8e1a7a5ecdc8f00a7ca0478a"
+    },
+    {
+      "path": "docs/game-logic/Cast-State-15.md",
+      "file_set": "game-logic-top",
+      "size": 27184,
+      "sha256": "c1873cc9c81262430d95e693b2fd1c3a02a87dc49e585e8531e0874f9e6ac4c5",
+      "git_blob_sha": "7a3a030f72555ba9b6d96ab923152888ab966792"
+    },
+    {
+      "path": "docs/game-logic/Cast-State-16.md",
+      "file_set": "game-logic-top",
+      "size": 28378,
+      "sha256": "f3fc522cffc008a059e4f306b80b7a3832414f99329043b12ef2c1270ee0f66f",
+      "git_blob_sha": "43ae2a0dc58cb404163234afcf9209829ce71fac"
+    },
+    {
+      "path": "docs/game-logic/Character-Art-Direction.md",
+      "file_set": "game-logic-top",
+      "size": 10410,
+      "sha256": "ec9e6fee2340f39086627407d1cc0070cf9b8749d10408d504d90029097c1a05",
+      "git_blob_sha": "45db12bb8f4e53c2f16b43d2b8197aaa46399890"
+    },
+    {
+      "path": "docs/game-logic/Characters-Factions-and-Professions.md",
+      "file_set": "game-logic-top",
+      "size": 3093,
+      "sha256": "f774717ca81492a25c120adaaa4ca3afed49659302008b392f71e613f9c0383f",
+      "git_blob_sha": "ba649e3ed922fc11d34af891658b34ce18fc7806"
+    },
+    {
+      "path": "docs/game-logic/Conscription-Remnants.md",
+      "file_set": "game-logic-top",
+      "size": 3704,
+      "sha256": "25896666e61ad8f1a16080a426f1dfdd063b8132fcdba2421c6742ed3a607b5f",
+      "git_blob_sha": "662ecbcc40e4824c2a09a1f38b362e656f9fea00"
+    },
+    {
+      "path": "docs/game-logic/Core-Characters.md",
+      "file_set": "game-logic-top",
+      "size": 16895,
+      "sha256": "f983c1fda54cbb457da2aed672c6173e154a36ed7c000ca113f07caadcc7b6b1",
+      "git_blob_sha": "977fbf6abe7bce9776a65c550ab5e048c82b0a1c"
+    },
+    {
+      "path": "docs/game-logic/Development-Roadmap.md",
+      "file_set": "game-logic-top",
+      "size": 5755,
+      "sha256": "751a88002dc387b0dafe8bdbd464c046856ccc10e65596c466601215a6ca6ccb",
+      "git_blob_sha": "5034259e5b45d8ba68c7a036f0359501cd140ded"
+    },
+    {
+      "path": "docs/game-logic/Diaspora-Corridors.md",
+      "file_set": "game-logic-top",
+      "size": 9208,
+      "sha256": "0330e88638893b3a267ee6987d597e5d90cfa56ead7665ffed868417990bd0c4",
+      "git_blob_sha": "ee9d9ee507c630453968ca84de69ca0972e5eb52"
+    },
+    {
+      "path": "docs/game-logic/Economy-and-Production.md",
+      "file_set": "game-logic-top",
+      "size": 7822,
+      "sha256": "f2a9d920d76c24df81930cb60d2b42c36e262353a25f5501be99d0f0a4233bfc",
+      "git_blob_sha": "3a9c04944abef68eac8351dce06c4c2c4a0c11bd"
+    },
+    {
+      "path": "docs/game-logic/Era-Arms-and-Tech-Level.md",
+      "file_set": "game-logic-top",
+      "size": 8412,
+      "sha256": "c8942e8d1d6a525b285039d01af0c7166483e7f5136a7562acecad51f7011c9f",
+      "git_blob_sha": "0c9530134b39bfb5696f5d5b58601c2140b35e81"
+    },
+    {
+      "path": "docs/game-logic/External-Theaters.md",
+      "file_set": "game-logic-top",
+      "size": 8296,
+      "sha256": "2888ac0adfbbb3648d7715c2c22b0cdf4521792a6f20a200c66ee992ddbf6138",
+      "git_blob_sha": "4feadbd7b181b3e8a089ccadd175f37291c276c5"
+    },
+    {
+      "path": "docs/game-logic/Factions-and-Diplomacy.md",
+      "file_set": "game-logic-top",
+      "size": 4024,
+      "sha256": "a80daa744bc9435b652837b1ac0b720f2c94ee477e1f90e60a949fa1da5f9ade",
+      "git_blob_sha": "684a89e534692535dde1d51b823c7c253995d215"
+    },
+    {
+      "path": "docs/game-logic/Game-References.md",
+      "file_set": "game-logic-top",
+      "size": 11459,
+      "sha256": "f1bc78eb00d1335c22141d095bbc1cf11ca9840f8afc70b6d867bc59e81c6863",
+      "git_blob_sha": "8b32bb96f8e091127293a60d4cae8c9f99ec4fb4"
+    },
+    {
+      "path": "docs/game-logic/Game-Thesis.md",
+      "file_set": "game-logic-top",
+      "size": 2829,
+      "sha256": "3aef7f1bab7f02362cbafc1357f6cd56a806c96383e2bc199e903e33c4f4f7fd",
+      "git_blob_sha": "b6f6734a6c656a9f60b8092173bde9d12039eaa0"
+    },
+    {
+      "path": "docs/game-logic/Hangnyeol-and-Bon-gwan.md",
+      "file_set": "game-logic-top",
+      "size": 3201,
+      "sha256": "2a3d804133e14c84ddb932b52a0b58c630397a6110d0b98070b3774a822c81a0",
+      "git_blob_sha": "77a932ecb07e813d276ec0085996022695ac21ac"
+    },
+    {
+      "path": "docs/game-logic/Heirs-Names-and-World-Ledger.md",
+      "file_set": "game-logic-top",
+      "size": 6959,
+      "sha256": "a4ce86d586324638a4f3899592374825020fb6dec2e82d02d4c90df31c03fcf0",
+      "git_blob_sha": "c48345a11bfa65dc0b90480462b7d47ef0108bec"
+    },
+    {
+      "path": "docs/game-logic/Home.md",
+      "file_set": "game-logic-top",
+      "size": 6698,
+      "sha256": "fa9b5fa44389793edfc4a5639f4ac5c34a012de990bebca4ca2b2abcf359f26a",
+      "git_blob_sha": "ee51579f1c2736e687edea84f3a279eed7771a63"
+    },
+    {
+      "path": "docs/game-logic/Hostile-Ecology-Index.md",
+      "file_set": "game-logic-top",
+      "size": 218344,
+      "sha256": "68f9159238fb6915c982487a6ad8691adf489261dbf6863601a2376b7eabee26",
+      "git_blob_sha": "deae515fd51d510e396b3bfc4ff7af6d0c17640c"
+    },
+    {
+      "path": "docs/game-logic/Hostile-Group-G01.md",
+      "file_set": "game-logic-top",
+      "size": 12324,
+      "sha256": "7c3def9c0c1905673c1bda81861fe8f63a895210abd8d2ba498ddc5cb4460e4e",
+      "git_blob_sha": "e98423d77492cc69e32829c298d0bfdbb61e5bb7"
+    },
+    {
+      "path": "docs/game-logic/Hostile-Group-G02.md",
+      "file_set": "game-logic-top",
+      "size": 12898,
+      "sha256": "12fc14b475958e15001cc0be7c483244584ffdfc3194ac1155bc257f0ef9079c",
+      "git_blob_sha": "4a58c0ec5028c10c67f843284cd4eec3706564b9"
+    },
+    {
+      "path": "docs/game-logic/Hostile-Group-G03.md",
+      "file_set": "game-logic-top",
+      "size": 13048,
+      "sha256": "2adc45f26429a369cbad1b532873029d60ffb4897d771e38ab294d0f9797e28d",
+      "git_blob_sha": "6a80efa9b80f472b27120e599308045f57f85d24"
+    },
+    {
+      "path": "docs/game-logic/Hostile-Group-G04.md",
+      "file_set": "game-logic-top",
+      "size": 13110,
+      "sha256": "e20f389c3e47404353d3c1116628ece416c4a4ae00fce9e65729e457e17cfd25",
+      "git_blob_sha": "b586f489340a77ea9edbdd8bccefda94c7826aec"
+    },
+    {
+      "path": "docs/game-logic/Hostile-Group-G05.md",
+      "file_set": "game-logic-top",
+      "size": 13575,
+      "sha256": "d2b8da8a72ce9ada447aec2bc72eed81e56f0afad00e4335632a75c46ebae419",
+      "git_blob_sha": "d63722e0290f21ce829b0066894ef46335b3ae50"
+    },
+    {
+      "path": "docs/game-logic/Hostile-Group-G06.md",
+      "file_set": "game-logic-top",
+      "size": 13237,
+      "sha256": "5f60043ed3203d5a3653a76504f1f9b7cdc5e9219c20cd0b695e078981f66129",
+      "git_blob_sha": "2a3ca2d1e231a999a98d9e7aad7d175d9a5b6dfc"
+    },
+    {
+      "path": "docs/game-logic/Hostile-Group-G07.md",
+      "file_set": "game-logic-top",
+      "size": 9571,
+      "sha256": "0d1652bab99adc7107edfd03e6760191ab57cef213eacbdb2557dda35f4be7b1",
+      "git_blob_sha": "5e023d7e885346486c8dd97b040ca972dc961674"
+    },
+    {
+      "path": "docs/game-logic/Hostile-Group-G08.md",
+      "file_set": "game-logic-top",
+      "size": 12484,
+      "sha256": "e329f943fd67eea7c0a5e07591d0b9b8f9ba4b9ab67d2479f7314008608d3612",
+      "git_blob_sha": "38fd5ab89f4d3a4b67d2eeee14b1e3e4fc03996f"
+    },
+    {
+      "path": "docs/game-logic/Hostile-Group-G09.md",
+      "file_set": "game-logic-top",
+      "size": 11896,
+      "sha256": "e5dca3365d9ea265dcbb93b7489af58cd26097d016da5cd3bf5207eef7ca6b48",
+      "git_blob_sha": "e7ba0780cea050fbd4fb53ca60effea47419cfce"
+    },
+    {
+      "path": "docs/game-logic/Hostile-Group-G10.md",
+      "file_set": "game-logic-top",
+      "size": 11648,
+      "sha256": "ab065db7608dff567b6dc1fc69265e169219ee597af5181bd50a723125be1b5c",
+      "git_blob_sha": "e36be452674911e07865f2932fda174efc343452"
+    },
+    {
+      "path": "docs/game-logic/Hostile-Group-G11.md",
+      "file_set": "game-logic-top",
+      "size": 11874,
+      "sha256": "94484fa24b2bc79743b92844d41a33d7a0aaef7d7f1ae535f41ff8e0a745bf69",
+      "git_blob_sha": "de752b6d273084db984096addc37fdd6995f681c"
+    },
+    {
+      "path": "docs/game-logic/Hostile-Group-G12.md",
+      "file_set": "game-logic-top",
+      "size": 11693,
+      "sha256": "15cbb11d6e0ffdaa6feff75b80baf9963ca40b86d31f5c298e559052a599858c",
+      "git_blob_sha": "42f0133e889ec544f327f972a8471cc7801dc1e8"
+    },
+    {
+      "path": "docs/game-logic/Hostile-Group-G13.md",
+      "file_set": "game-logic-top",
+      "size": 4595,
+      "sha256": "668291f0726dabeada12ba18a6ddcb845888d2691134518e1e6acbeed58d2f26",
+      "git_blob_sha": "0064c8566ab66cb7d2035d091a0ed34965314580"
+    },
+    {
+      "path": "docs/game-logic/Hostile-Group-G14.md",
+      "file_set": "game-logic-top",
+      "size": 4348,
+      "sha256": "edc7c462c3b636f28b0598a1516c86b4c83362e9669f1c1372056d1e0ab8789f",
+      "git_blob_sha": "71b122dda0c3f5e15059b1fb1ce50d6865e526b8"
+    },
+    {
+      "path": "docs/game-logic/Hostile-Group-G15.md",
+      "file_set": "game-logic-top",
+      "size": 4006,
+      "sha256": "76cc54ec40197bf82736ec6d99ea479128ad9ba5839bc6a7bcce19b535db8635",
+      "git_blob_sha": "4c9c5d66482242222fdadf77f6be4f7799bbacaa"
+    },
+    {
+      "path": "docs/game-logic/Hostile-Group-G16.md",
+      "file_set": "game-logic-top",
+      "size": 3920,
+      "sha256": "7d8d4e72825072e207411fa93764f0f9791199acd43ca698b3ad5cb2b6e413de",
+      "git_blob_sha": "a035936dfd31ccc6f20bc19cacecbbe6c7833814"
+    },
+    {
+      "path": "docs/game-logic/Hostile-Group-G17.md",
+      "file_set": "game-logic-top",
+      "size": 3916,
+      "sha256": "139cbf612d9cfd6453cdd5c39abcf318f0582c615df558655f08f1d4c7645810",
+      "git_blob_sha": "8768a807bb61c40e532002b2f05388e98c97e912"
+    },
+    {
+      "path": "docs/game-logic/Hostile-Group-G18.md",
+      "file_set": "game-logic-top",
+      "size": 3953,
+      "sha256": "3f835f0bc2fd1a21f7ac7352ceeb0c0f3964d782346ba4faecef251858846425",
+      "git_blob_sha": "ed70c2ece6b2edbc7ccb0267c20545fef2afe9cb"
+    },
+    {
+      "path": "docs/game-logic/Hostile-Group-G19.md",
+      "file_set": "game-logic-top",
+      "size": 3918,
+      "sha256": "fbadea9da8dee6a71e1aef78b6c0f8e2f2483eb6dba015a0f62a96f999e64c5c",
+      "git_blob_sha": "dd409bef99cabce20b6b3ec17b9cd110b99e09ba"
+    },
+    {
+      "path": "docs/game-logic/Hostile-Group-G20.md",
+      "file_set": "game-logic-top",
+      "size": 4860,
+      "sha256": "bae45c577934e19f8970feb8c7ca43adb168a3ece0c107f128693220051109cb",
+      "git_blob_sha": "d269cb100ee04f5bae328ddcd9cf473172108363"
+    },
+    {
+      "path": "docs/game-logic/Hostile-Group-G21.md",
+      "file_set": "game-logic-top",
+      "size": 3663,
+      "sha256": "8ddb7506ec85af1aff46b87ffb21dcb910ad2aea0b31449c50532c9712984808",
+      "git_blob_sha": "af959f8f67e2369310575af346da278ffc132028"
+    },
+    {
+      "path": "docs/game-logic/Hostile-Group-G22.md",
+      "file_set": "game-logic-top",
+      "size": 4248,
+      "sha256": "e218c6c416e94b8744e2429fe8389ab523f088c08f256c978f45305aba37dbb7",
+      "git_blob_sha": "09c9df577c7d2440835f8f650b70c35e2e232f9e"
+    },
+    {
+      "path": "docs/game-logic/Hostile-Group-G23.md",
+      "file_set": "game-logic-top",
+      "size": 3984,
+      "sha256": "d1b9a190e9f6f80bf8294a315850b4b1cfb8e0965bddbede4f78c3a9c8d1cde5",
+      "git_blob_sha": "0e34ba76cc833efa0c909b9896d14b407980c4d6"
+    },
+    {
+      "path": "docs/game-logic/Hostile-Group-G24.md",
+      "file_set": "game-logic-top",
+      "size": 3805,
+      "sha256": "3dcf735f3c3d73e4bd3e9311e45b2f5e3b89d459ca7c487856a08433ba71271b",
+      "git_blob_sha": "0d0cb63772c27b32edcc91aed3b9922482d33e57"
+    },
+    {
+      "path": "docs/game-logic/Hostile-Group-G25.md",
+      "file_set": "game-logic-top",
+      "size": 6122,
+      "sha256": "379f02fe9260dbe62e92774d0dd2b261bc18fca855fe88dc5a9d95fa026aca48",
+      "git_blob_sha": "f65a0a1a81ca1b7ce7ffe365772dd58f3eebf77c"
+    },
+    {
+      "path": "docs/game-logic/Hostile-Group-G26.md",
+      "file_set": "game-logic-top",
+      "size": 6228,
+      "sha256": "810550f4088ccf87e949370e258029c41bd0ea2888884d49cdd4171fa2bcad3b",
+      "git_blob_sha": "fd93cc9de5984decfcf6bf572ac997c9a31717e4"
+    },
+    {
+      "path": "docs/game-logic/Hostile-Group-G27.md",
+      "file_set": "game-logic-top",
+      "size": 6111,
+      "sha256": "b57a590656d4759fa71a28faf10d9e09c9b1d1e1e198bc3498c0526de8bd6f2e",
+      "git_blob_sha": "55fca695dee4aef30208bd239f1e8598b176e3e2"
+    },
+    {
+      "path": "docs/game-logic/Logistics-and-Infrastructure.md",
+      "file_set": "game-logic-top",
+      "size": 5770,
+      "sha256": "fabb47c21a3312120739aef652a4983648e59844ca12b9aeb46f89745f22e496",
+      "git_blob_sha": "40f8fdb2e4d658b072aa39d473f7d1ca887bd951"
+    },
+    {
+      "path": "docs/game-logic/Lost-Technology-Lineage.md",
+      "file_set": "game-logic-top",
+      "size": 13757,
+      "sha256": "96225845263a2f9d4c6389a48a031933256331585a70b1d6f01265dac8801711",
+      "git_blob_sha": "558ae5625f12357ad948f161958182dfce256449"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M001.md",
+      "file_set": "game-logic-top",
+      "size": 21155,
+      "sha256": "fc0e7dd8fcb5427725706224dc5b932080325463f3c333dd8e0464d42dfb0830",
+      "git_blob_sha": "6567cb26f5aee119548135c2e2d9f7b120db171f"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M002.md",
+      "file_set": "game-logic-top",
+      "size": 28098,
+      "sha256": "24d53636fe4a64e7be140a61bedc4f0a1bf2d13145bae8f382e0fba486c4cc7c",
+      "git_blob_sha": "c0cc82c958d02f33efe43da7226132ac23b5f7fc"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M003.md",
+      "file_set": "game-logic-top",
+      "size": 34772,
+      "sha256": "943c29d2d0b49d10a28e1c16f39ac01fa03c2c4c184a45884b61566ff9a2cfad",
+      "git_blob_sha": "b7c93b4c4fa4f33ea01d206fff26b52513d6ceda"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M004.md",
+      "file_set": "game-logic-top",
+      "size": 31414,
+      "sha256": "a7aa79ef4a431d37a17f2e0a9493bdba2f6c7d2866591d62b31033f9effe51fc",
+      "git_blob_sha": "3a257abfdab67e63bc8a9e0245e0478134016a68"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M005.md",
+      "file_set": "game-logic-top",
+      "size": 31210,
+      "sha256": "bad1f516b17c19c1c0b8266e7bd632de538a02136bdd4fc62426312f6934ff44",
+      "git_blob_sha": "e221b9c6a5a00c3665110084f6ad657c03e10241"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M006.md",
+      "file_set": "game-logic-top",
+      "size": 28587,
+      "sha256": "eca701fe2f14111ec866444bbc967ca4b7dff460a146d5f4afe240084bd084e1",
+      "git_blob_sha": "2d8f0a2a39765b1918b476ae276cba0b6fad690d"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M008.md",
+      "file_set": "game-logic-top",
+      "size": 27931,
+      "sha256": "c79b0ca2e1c38d68e1f3ff19aa5eedcec00bf083cd3a9d2bfc35490c26e051fa",
+      "git_blob_sha": "9d710c3811793b1be3c563bdc487c6f411a995e2"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M009.md",
+      "file_set": "game-logic-top",
+      "size": 31981,
+      "sha256": "869ac2e5302117ac2655c8690f13f813b0679df0e7fd8197b8c3ab01e44e0c8c",
+      "git_blob_sha": "48afcf7aa39958aba725387859e0d82cb8601afe"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M010.md",
+      "file_set": "game-logic-top",
+      "size": 31800,
+      "sha256": "98303d68d1aaaf134849f794225557f3156becf51b4f7a26ffe5f54b1f1c3ce2",
+      "git_blob_sha": "6e43fda17d480f699d609b5b234557b6e291920b"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M011.md",
+      "file_set": "game-logic-top",
+      "size": 34751,
+      "sha256": "c241706d0eb326a50159ec23e84f39d0bbaeca5dd78664ed2b1ba9d0e6da6481",
+      "git_blob_sha": "eae6734570f41024fd0dfb42ef3d7933383bfba1"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M012.md",
+      "file_set": "game-logic-top",
+      "size": 26185,
+      "sha256": "0a25c8838a2aac1d02298a2e720e844e418dc3dbdc4bdb53ae271f73d7adc2e7",
+      "git_blob_sha": "6a90bbb1d8aa4285b67ccd0182bb797835073fa6"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M013.md",
+      "file_set": "game-logic-top",
+      "size": 31550,
+      "sha256": "15ecdcb56cbfa995cce8f0d3a5cc62f628bb102e7dc039f59c048619b5968b81",
+      "git_blob_sha": "cb66dfcef55283790db36683adbb5f5ca10bb7bb"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M014.md",
+      "file_set": "game-logic-top",
+      "size": 36835,
+      "sha256": "b655ae5caeed8376179ce81755d4492957bd834d2bd33769a946adae490db3c0",
+      "git_blob_sha": "fb3dbf1e9ff5c96eeeda0c563bb6c416256a593f"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M015.md",
+      "file_set": "game-logic-top",
+      "size": 24633,
+      "sha256": "56e4b6cb152b17f28f758d451774d65feb4d84bf3782cea91c3733bb8186b513",
+      "git_blob_sha": "a494a206a29db0779be2f4d7c1c9802a7e1b3287"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M016.md",
+      "file_set": "game-logic-top",
+      "size": 35043,
+      "sha256": "06c1e4ea95335e4b1266a5c335fe8738dda5efe724cda405480017b800c83382",
+      "git_blob_sha": "0bbf30648342696c0e7ae9680f35e58495d15256"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M017.md",
+      "file_set": "game-logic-top",
+      "size": 33325,
+      "sha256": "97917083ea016909fe09ffff440018db2ced6018ec64ac19e92c60d58772d2cf",
+      "git_blob_sha": "271fd765cbbeeefb2dc67d752026d48e135386f7"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M018.md",
+      "file_set": "game-logic-top",
+      "size": 34856,
+      "sha256": "7dbfd6ae326a727aefc685043dd94950af073204ec28e2a44f1d48b50a491da5",
+      "git_blob_sha": "ccce8f467544bbc61c2e85f38d70969c074b4b00"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M019.md",
+      "file_set": "game-logic-top",
+      "size": 35162,
+      "sha256": "179aed9fb7c6310b1b4e3b2d64a0b93c9ad9b264af49bb3f15d30fe3179a158f",
+      "git_blob_sha": "f18aa20d601c1ffaa12cd682920d39a012841473"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M020.md",
+      "file_set": "game-logic-top",
+      "size": 32900,
+      "sha256": "f69b61b8f34955545dd2167aa0f454c12944ee90b9d1653bcc7deb6bc9a9ed78",
+      "git_blob_sha": "783c20c7729586503dbff94661f1639c0fcd3411"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M021.md",
+      "file_set": "game-logic-top",
+      "size": 13845,
+      "sha256": "9265bc7b08bb2b79b3c7760914da2dde1d913a587ee8c68797d916f80229d05a",
+      "git_blob_sha": "fdda703abb043bd031b04776a049add186f79059"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M022.md",
+      "file_set": "game-logic-top",
+      "size": 13671,
+      "sha256": "64f58a41e7c4baa94b8bdcd98f6e63a361d3abe9fa6e168f7c77bb47a28b19d1",
+      "git_blob_sha": "c258d94aa2f002614f958c2d399439c054596c08"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M023.md",
+      "file_set": "game-logic-top",
+      "size": 14022,
+      "sha256": "46559f50cebb48d88df5c246001bdfb14eaf49ddacc658be767e2df08afcd709",
+      "git_blob_sha": "6cfc70b43f2e74dfed152b40882a397c6a34f908"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M024.md",
+      "file_set": "game-logic-top",
+      "size": 13325,
+      "sha256": "d7a043b88b0b2825d0d5c251f901c32999ac299432f663cb4ec8f899fd4ed147",
+      "git_blob_sha": "3bf85bfdad00661b831b4bcfb99ef53792091dc1"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M025.md",
+      "file_set": "game-logic-top",
+      "size": 11429,
+      "sha256": "0efae055a1cfa170b4a6023008943bf6cbff675a8ed0a85612f2524afa78196a",
+      "git_blob_sha": "bb7b011c1b30217530e555bc8e8cd5a43f2e5afd"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M026.md",
+      "file_set": "game-logic-top",
+      "size": 12654,
+      "sha256": "77dcbc1198d44f8386470a9df99f2605525b7e97f616427c7a3fdb5ff86a1be2",
+      "git_blob_sha": "c25fc3f1ed563561858ee6588f9cb42c49aa81eb"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M027.md",
+      "file_set": "game-logic-top",
+      "size": 12029,
+      "sha256": "203b2dea3b91462d1b714f6178fe5e265a70ba25a59c98a94773ac54db0ac8c1",
+      "git_blob_sha": "49d759fe92038aed60edf4c7073723fc00101b75"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M028.md",
+      "file_set": "game-logic-top",
+      "size": 11710,
+      "sha256": "bc289365ce46b8c61970deabc23e2ead9d79b1060d74e97f6e33824f32b46b20",
+      "git_blob_sha": "e7c27bfb04f4466fcff2e56cebd1b172303c5d60"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M029.md",
+      "file_set": "game-logic-top",
+      "size": 12282,
+      "sha256": "fe66a62db49753716899dc7e642ad7e6ac395db83a326382fc7b76d4aa41d5e9",
+      "git_blob_sha": "9cda87c8a650f71a5e8c6e7b86a432eaa9e1207f"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M030.md",
+      "file_set": "game-logic-top",
+      "size": 11465,
+      "sha256": "89cf67de1fe68281c6204710a8407265ba852306788a29041e5ead58581a050f",
+      "git_blob_sha": "7090c2fbc45845ebcb82235730c652f3b636a11a"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M031.md",
+      "file_set": "game-logic-top",
+      "size": 31601,
+      "sha256": "1019a4f670b99a85516450534093779c6168613ed069865127bce49ea1163b33",
+      "git_blob_sha": "21f78f229aab50397e3eee308172c01f0f1a5c96"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M032.md",
+      "file_set": "game-logic-top",
+      "size": 28812,
+      "sha256": "445696840d145973b67cfc644597cbb95fff95e11593bbc35fcea7bc391dc4f2",
+      "git_blob_sha": "2e04018460b0eb9bf7aeaad6f37d991de0c00a5b"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M033.md",
+      "file_set": "game-logic-top",
+      "size": 29622,
+      "sha256": "39b6a867ff56e904e5ca679aff7ab3656eee082c32f375820f481b4650c51622",
+      "git_blob_sha": "2241707f8f10b007f2485c75be9e61312e095d06"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M034.md",
+      "file_set": "game-logic-top",
+      "size": 32068,
+      "sha256": "6881792510479dac8d2c6a5ee218417b4e9ae61187ce31c998f299233e3463c3",
+      "git_blob_sha": "5d1e8020ac670094fb91ebc3fcdd1aaa9ac71841"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M035.md",
+      "file_set": "game-logic-top",
+      "size": 33953,
+      "sha256": "39ec34da0d076762e7d98e266b9e1273b678fbe74b15a41229f951db71caa9e7",
+      "git_blob_sha": "45f6de4bb156308accc47350c5acee61522eee47"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M036.md",
+      "file_set": "game-logic-top",
+      "size": 30847,
+      "sha256": "54748eb7b737e841b745bace7a4ffad5b30b5f49cb79b5656edb618d1c97efb1",
+      "git_blob_sha": "9f59c4a01474a2bbdf45d46fb67c0d9ab93b9f8e"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M037.md",
+      "file_set": "game-logic-top",
+      "size": 28624,
+      "sha256": "80d5b9a60a43c058f4ddc887e5381b09195e22ef44ec6a13b73b747a9013b34c",
+      "git_blob_sha": "155889a7ada1a7da2d0f85cd109a2ee9cafe94ae"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M038.md",
+      "file_set": "game-logic-top",
+      "size": 34086,
+      "sha256": "75ae66b511e350aff1146cd57f1c24f4adeee19d82423d36f7cc1ff83fde4649",
+      "git_blob_sha": "93817b3ee733d244b1391864a3a2bfe77408bc02"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M039.md",
+      "file_set": "game-logic-top",
+      "size": 15010,
+      "sha256": "fa993e7c6f37b1a641740dcbaad34b7a8378d10dee2541a3884b7a5766d97ed3",
+      "git_blob_sha": "b58ad139c060cf676ba0a67e3672308982fbdb9f"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M040.md",
+      "file_set": "game-logic-top",
+      "size": 28665,
+      "sha256": "a644d3b93a2ea9437d3632f86e033a48d898719b5329138449b24eac2a8162c0",
+      "git_blob_sha": "2289bd67662ec238ee3f004353affb3b5172af88"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M041.md",
+      "file_set": "game-logic-top",
+      "size": 28608,
+      "sha256": "33bf0c05293287bd34544d4bac0002b42e582b96ad6b5a5b9a429c9035876420",
+      "git_blob_sha": "f50011ae047cc388614179d0a68c0260cebddda6"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-M042.md",
+      "file_set": "game-logic-top",
+      "size": 29692,
+      "sha256": "076966651b342c7a744c58138295947cfdc6ec92301a39cbb6203c1517085506",
+      "git_blob_sha": "8dda8878db74fd6d69602e1eacee4576eece8d3c"
+    },
+    {
+      "path": "docs/game-logic/Monster-Batch-Manifest.md",
+      "file_set": "game-logic-top",
+      "size": 4082,
+      "sha256": "dd553775aebdc27e9bf9498557411c30729f2eb55ac7890c3f0d15b3b0901ed1",
+      "git_blob_sha": "c6bab0d67a080e331aef358def7cd7414a34f58e"
+    },
+    {
+      "path": "docs/game-logic/Operating-Houses.md",
+      "file_set": "game-logic-top",
+      "size": 30375,
+      "sha256": "f750c5e551cf3669e4f9a9e42c7ffecc5e72fe1d539266fcb006fdd19212639f",
+      "git_blob_sha": "c07379837cf69a2b43bacf89ecc4bd635f994d1c"
+    },
+    {
+      "path": "docs/game-logic/Random-Cast-Roster.md",
+      "file_set": "game-logic-top",
+      "size": 2357,
+      "sha256": "5ceeed338b232e6666e61ce875e0a759cae03aa6b7b7f4ad570689f3487da245",
+      "git_blob_sha": "dbdd2788272c4cf7afad3ad5ec532317b62ba289"
+    },
+    {
+      "path": "docs/game-logic/Realtime-Formation-Card-Battle.md",
+      "file_set": "game-logic-top",
+      "size": 9603,
+      "sha256": "431eaf2d7ed9dd0e5f5683e82946b86218d981e63d1e7979d10496866983f407",
+      "git_blob_sha": "2c20077bf8659288d490ff62cebef02201e136e7"
+    },
+    {
+      "path": "docs/game-logic/Ref-Bannerlord.md",
+      "file_set": "game-logic-top",
+      "size": 16282,
+      "sha256": "4c47396fffc7274af46e6d5f85597fae1d7067f2c34a7006937a8f97474e3137",
+      "git_blob_sha": "31e8ecc4e0a709c8c72ac5b574fa0ea5f5a50583"
+    },
+    {
+      "path": "docs/game-logic/Ref-Battle-Brothers.md",
+      "file_set": "game-logic-top",
+      "size": 128162,
+      "sha256": "e53d05ab834cdbe990e7a3260be7bc03b039fa45917bd20e88b9e1a9c9c50018",
+      "git_blob_sha": "03b8b387ccc9adc9d07870a03c4a3059e1572445"
+    },
+    {
+      "path": "docs/game-logic/Ref-Cross-Synthesis.md",
+      "file_set": "game-logic-top",
+      "size": 12088,
+      "sha256": "0758fb1a47f7c8e8b59d25045cdb29a1271a5cf205f94cef0eb04e72e9d9cf98",
+      "git_blob_sha": "5c86491f4e3471c82ff0dd499b264b7f79ad459e"
+    },
+    {
+      "path": "docs/game-logic/Ref-Crusader-Kings-3.md",
+      "file_set": "game-logic-top",
+      "size": 64298,
+      "sha256": "4d31edf30ba0d31e67f73d197374a88fe91f8972724a2997291df59e2db043cf",
+      "git_blob_sha": "e2fadbc7bd4df21ccf8a80f2dd405ff781123805"
+    },
+    {
+      "path": "docs/game-logic/Ref-Darkest-Dungeon.md",
+      "file_set": "game-logic-top",
+      "size": 10867,
+      "sha256": "426629e47eb8bd669e319ec9846caf6a0b163e2a74a1ba0784cb03d6a587ca04",
+      "git_blob_sha": "3cd88d3da9cb03d6e8189208d8493079302989a2"
+    },
+    {
+      "path": "docs/game-logic/Ref-Farland-Wog-Triangle.md",
+      "file_set": "game-logic-top",
+      "size": 97011,
+      "sha256": "ac72dc67a068fa5f14bb2b03aad3f09489d84842a25b4ca9e4d0fa66a91a1d47",
+      "git_blob_sha": "e252d63762252155e8de7888e7631ca56294d55c"
+    },
+    {
+      "path": "docs/game-logic/Ref-Fire-Emblem-FFT.md",
+      "file_set": "game-logic-top",
+      "size": 113930,
+      "sha256": "1822777d67ac91d3bf1bf3bff1af0752c4babb2948ea244a8432d03e2c252aef",
+      "git_blob_sha": "0c78687f8df7a7c3050fd3434c55decd6d7015af"
+    },
+    {
+      "path": "docs/game-logic/Ref-Into-The-Breach.md",
+      "file_set": "game-logic-top",
+      "size": 8856,
+      "sha256": "88244053ebcc4df9feb874e7e7f19be4d2214d8e26f2bba38db1f7e66df1066e",
+      "git_blob_sha": "01fcc54e84bd08710a66c832d4dc13a26bbc4e95"
+    },
+    {
+      "path": "docs/game-logic/Ref-K-System.md",
+      "file_set": "game-logic-top",
+      "size": 68860,
+      "sha256": "b6d268385b4ed36db3c4a253ea83967e1a59ec862f0e39d03ff37e41276b177a",
+      "git_blob_sha": "50fae76ebb19c49f7a2df1ad7f0bae59c86ae74a"
+    },
+    {
+      "path": "docs/game-logic/Ref-Mechanism-Index.md",
+      "file_set": "game-logic-top",
+      "size": 46764,
+      "sha256": "1dcc2941f942edf723500153a19575c48a59ac5acfb11a4609f7190ce5937e15",
+      "git_blob_sha": "847e6cfafe3015aea40efee277467e7d13ade490"
+    },
+    {
+      "path": "docs/game-logic/Ref-Nobunagas-Ambition.md",
+      "file_set": "game-logic-top",
+      "size": 75381,
+      "sha256": "217d2df06938c16ebb514b76314a6f915431b8d74c2efdf46071900136663b8f",
+      "git_blob_sha": "168b46af278fe2be1c85746a2799df509e98c3e4"
+    },
+    {
+      "path": "docs/game-logic/Ref-Ravelen-Chronicles.md",
+      "file_set": "game-logic-top",
+      "size": 12689,
+      "sha256": "dcbac1d1d253f315b8d329adf4f551ddbedcac0b9d12292b5f71e081cdb4d359",
+      "git_blob_sha": "8f62a4cc04130528d3ec2204e32ab6763693a62b"
+    },
+    {
+      "path": "docs/game-logic/Ref-Songs-of-Silence.md",
+      "file_set": "game-logic-top",
+      "size": 11834,
+      "sha256": "d29931a4e25543e43fa5fafc34d3d0cd397534f23b9d803f0e32983da07b5772",
+      "git_blob_sha": "ccb38168fcaf72013f2a69428af0bf1987964028"
+    },
+    {
+      "path": "docs/game-logic/Ref-Taikou-Risshiden.md",
+      "file_set": "game-logic-top",
+      "size": 55334,
+      "sha256": "a54f85d7983ef860f8c7db7ac3c814cd517c4ad9ac8f8b96b1f7f89f73704f36",
+      "git_blob_sha": "4fcbf9b49efc53f54c712e92e9de73fcfc24061b"
+    },
+    {
+      "path": "docs/game-logic/Ref-Three-Kingdoms.md",
+      "file_set": "game-logic-top",
+      "size": 70088,
+      "sha256": "7a2695e0f4c004d6f56ce531b5ef7297e6126404238c246376489dcc235f987e",
+      "git_blob_sha": "f84725a2c95fc4cb441d66f84b6585ace26a2a74"
+    },
+    {
+      "path": "docs/game-logic/Ref-Unicorn-Overlord.md",
+      "file_set": "game-logic-top",
+      "size": 13669,
+      "sha256": "6aa5771d2eba8a58f90445d2baf27bb09b3956c79f72b8faa00aa34051e5fff2",
+      "git_blob_sha": "7db056b8a71030737428368f66ebad516c4d8acf"
+    },
+    {
+      "path": "docs/game-logic/Ref-XCOM-2.md",
+      "file_set": "game-logic-top",
+      "size": 11538,
+      "sha256": "9d6970140b043550fda4510246e37548801bbb3eb4597b0981bec53c4f349fc3",
+      "git_blob_sha": "c4d214b36352c558aafa3247ec1f71297df46db9"
+    },
+    {
+      "path": "docs/game-logic/Regional-Physical-AI-Arcs.md",
+      "file_set": "game-logic-top",
+      "size": 19567,
+      "sha256": "6217b99ade0699e452d58c2af64f4140d4f4db2d63faab446e63066944032ae9",
+      "git_blob_sha": "e16632755c9a685afef9e0c27d75fa9b77bf7879"
+    },
+    {
+      "path": "docs/game-logic/Research-Sources.md",
+      "file_set": "game-logic-top",
+      "size": 881,
+      "sha256": "c62b6bc1baf02a3e4d3d5c52812c856d216e9ae74b628de1631e8b46955f09d2",
+      "git_blob_sha": "1585445264c367e8bfd4674133bfc3879a97f911"
+    },
+    {
+      "path": "docs/game-logic/Save-and-Determinism.md",
+      "file_set": "game-logic-top",
+      "size": 1959,
+      "sha256": "13cbbe4126a15444fc6cc454ad6d2a9a3823c12209db519c648e0baaf88ba7f9",
+      "git_blob_sha": "85ff119f18eaa5d66934925ad4d52ebbdc2d2405"
+    },
+    {
+      "path": "docs/game-logic/Scenario-Timeline.md",
+      "file_set": "game-logic-top",
+      "size": 9114,
+      "sha256": "f237de4ba9a0e34dda9449ca52f6550b997443a89bf0419da3bc26ab9a2445b4",
+      "git_blob_sha": "94d790ae4da644990c7e9b48cc0925179a3457b3"
+    },
+    {
+      "path": "docs/game-logic/Seoul-Station-Catalog.md",
+      "file_set": "game-logic-top",
+      "size": 26605,
+      "sha256": "0ae17cfc0ceaacfceffcbdd3a360828e875004a8e4882fdcf207ab778ce857a6",
+      "git_blob_sha": "c0cef34c04f7810381dce8d4bd9ded3a6a132419"
+    },
+    {
+      "path": "docs/game-logic/Sixteen-States.md",
+      "file_set": "game-logic-top",
+      "size": 19512,
+      "sha256": "05ec8d899f218837ae1dc932017d3ef560267cd96162c42c2a1dfc877dc4c578",
+      "git_blob_sha": "d292840b7d98a7b40f47baed80b0d26665ce0ff6"
+    },
+    {
+      "path": "docs/game-logic/Starting-Presets.md",
+      "file_set": "game-logic-top",
+      "size": 6143,
+      "sha256": "18f7a33b09e3ef9784c3ef1503232e69b64453c120c88ad7fa901b918f3bc9b8",
+      "git_blob_sha": "4321573993c4d2423feefab839431786702adf99"
+    },
+    {
+      "path": "docs/game-logic/Station-Interior-Construction.md",
+      "file_set": "game-logic-top",
+      "size": 5604,
+      "sha256": "17bb19e34b0e281ecc42b0b99cc37e2ea0fb377b4bcc7613c2725390aa09e4b5",
+      "git_blob_sha": "2670cbad41fc12bfb2ea673451a297784390c42d"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B001.md",
+      "file_set": "game-logic-top",
+      "size": 43422,
+      "sha256": "4a4ce991aa0f6fbe2007492379291d0d47e78847b1398944db81d502175929e0",
+      "git_blob_sha": "c92ea7a2dcbb77f3b4e4de0a0819b8f35f68b093"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B002.md",
+      "file_set": "game-logic-top",
+      "size": 46129,
+      "sha256": "12ad497ce1589b528015787b01d9db1d36ee1e63eb651990283e6057dcfe1584",
+      "git_blob_sha": "4218c7e6a8162b26137aa7dbf37f3a2dd02cca2c"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B003.md",
+      "file_set": "game-logic-top",
+      "size": 46864,
+      "sha256": "1eb9b2cd422a64b9ef4fa498a5763058487b2a18d6420c6455e205a6ea9ba934",
+      "git_blob_sha": "8a58737e0226ca3ac1e41ab4ea40bff0be0ed578"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B004.md",
+      "file_set": "game-logic-top",
+      "size": 42800,
+      "sha256": "4088285263080972b93d2eaa474b6dbc1e264b951f362bc4ba2baca578456d6b",
+      "git_blob_sha": "650c7e4d3587b5f913cd054bace1ffd16e49227c"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B005.md",
+      "file_set": "game-logic-top",
+      "size": 47216,
+      "sha256": "77f0a989755cf1b3afe4a991af3a7c040e704b03ca79559c0ff2efe772e414a3",
+      "git_blob_sha": "b249545dd12677b4d850274518dc86a5c955f379"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B006.md",
+      "file_set": "game-logic-top",
+      "size": 45246,
+      "sha256": "c52ce73df0179ed9114ba136b7226f35afba456ee6c2785c0a4c96c1a9458e45",
+      "git_blob_sha": "dcb50cef38a229a0428485699dfc6337ae1019e5"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B007.md",
+      "file_set": "game-logic-top",
+      "size": 39874,
+      "sha256": "4fde2e2171c88a2a95191299c4e24d2542c0bf20bb237cea755359cf452345c2",
+      "git_blob_sha": "931891a97b7157f840ba74a65f56baf41b26dfd3"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B008.md",
+      "file_set": "game-logic-top",
+      "size": 46248,
+      "sha256": "85f8496860ce19d6d8ff552c42a5cd61db413523ba01839f2a830c9da627488f",
+      "git_blob_sha": "352d242d3f7b8df4c6c70b35ecc3292003852c4d"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B009.md",
+      "file_set": "game-logic-top",
+      "size": 46537,
+      "sha256": "a4d4c20dcf2f0297c38338f890d3fe0431fd07140e1905f5e64289e171aa2fa1",
+      "git_blob_sha": "b48154254c12f25e52b61051b027da87b0015b17"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B010.md",
+      "file_set": "game-logic-top",
+      "size": 50150,
+      "sha256": "136329fd50f39bffd7fa7435508135fadb081eaf43c4026051b3b8754cd51124",
+      "git_blob_sha": "c29df410e5f08b0718317f18227b284d380d51a0"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B011.md",
+      "file_set": "game-logic-top",
+      "size": 49812,
+      "sha256": "aee52bd0e249019f54361edff9d0de523bbfc020acebd7d9f5c12701b18b4926",
+      "git_blob_sha": "0ef53bba9149988c369214efee23b766ba5c6cc8"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B012.md",
+      "file_set": "game-logic-top",
+      "size": 44161,
+      "sha256": "0124c8b85d40cfedc687d00dd5dd955d3b99579e6d17c71a774a0befcb47c908",
+      "git_blob_sha": "c193f2a55d73ada7618d1735d696a671acca2a37"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B013.md",
+      "file_set": "game-logic-top",
+      "size": 54026,
+      "sha256": "08fa5d970aaa70360c0ec41970c63a43d8ffd50faf4d72a24df2b773af295233",
+      "git_blob_sha": "f318c6dcf115a47ef13cb8b40007e2158898770a"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B014.md",
+      "file_set": "game-logic-top",
+      "size": 39818,
+      "sha256": "a731f49318c0e8afef959ebc6e4593b449c3f1d23a4b3dd3a6b42ed1105eb0a9",
+      "git_blob_sha": "3539b95f27454a1c68e156d2ee9d41d644e93e5d"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B015.md",
+      "file_set": "game-logic-top",
+      "size": 44504,
+      "sha256": "e88025737b97dafd69f905c765d18cb7654d6707dbf3a29e1fe815b2bd69f6a2",
+      "git_blob_sha": "f39dab2efc494dc538c95fdc83b4b7993dd38c6e"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B016.md",
+      "file_set": "game-logic-top",
+      "size": 42940,
+      "sha256": "ecdf3f0652ec6386e48e635c552e3a3d7ff05a2910a90df03e423b5d2b25b7dd",
+      "git_blob_sha": "ea1733b65c6feab7fb3cdd581373410fdda81eb5"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B018.md",
+      "file_set": "game-logic-top",
+      "size": 42276,
+      "sha256": "42794eaea8f1938528dd168f709b9ccde0c6d15d653d06a759a3ddd4e431528e",
+      "git_blob_sha": "ae6a187e6ba8ac2c1473c48d678f28a0c97677bb"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B019.md",
+      "file_set": "game-logic-top",
+      "size": 48464,
+      "sha256": "fbb5f021440267f243fb56d25fc627a310a8bc6f9e235d6f1c92cbdf974d08ed",
+      "git_blob_sha": "86531332dee867d415e69cadad0842b94d8bf981"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B021.md",
+      "file_set": "game-logic-top",
+      "size": 49498,
+      "sha256": "d130884c34140b204115b990753d4ec750e8967879ae621d375786e2802f54d5",
+      "git_blob_sha": "f8435a87a45050fec51507797e7bacee364995f0"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B022.md",
+      "file_set": "game-logic-top",
+      "size": 51845,
+      "sha256": "5aedbec1d52e2f3cd186649d6ed0513337015f126ae7982114d7061791a2bd49",
+      "git_blob_sha": "f0371c2fc17561b756a923d5009e8196273fb425"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B023.md",
+      "file_set": "game-logic-top",
+      "size": 53045,
+      "sha256": "46d92de28408fb2f349643a883ac94ec64a94b42233561d291927bfbd6015aaf",
+      "git_blob_sha": "6770aa14516583a5988be164742f8034fb3e7178"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B024.md",
+      "file_set": "game-logic-top",
+      "size": 51032,
+      "sha256": "ff4f1209e8f3fb951511ea115f4e20f85b6d475752ebdbc1c4892883580efff6",
+      "git_blob_sha": "66e102ad632220f4703ec2c0417168e8c08e5a4f"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B025.md",
+      "file_set": "game-logic-top",
+      "size": 63302,
+      "sha256": "2df5cb3e7c6fa0ce5914486594c5e5ac926d3187f6e8193bfd32197c9cf8d1e7",
+      "git_blob_sha": "bb90ba0e9c713742a5dcce26e592a846554d5993"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B026.md",
+      "file_set": "game-logic-top",
+      "size": 76576,
+      "sha256": "ee20b49d80d411564c58c00f07132ed8efae585c94bc3605262a023249a7517f",
+      "git_blob_sha": "dbe86a7a7a56f5da346f44e38cd1003811c4ad54"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B027.md",
+      "file_set": "game-logic-top",
+      "size": 71023,
+      "sha256": "519373b2a2ce8711e931a06844fc375b7428749d3612f3c7084096a482ad801a",
+      "git_blob_sha": "b5f555bb3c1f4ab4c789ac49fad59767ae775dd2"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B028.md",
+      "file_set": "game-logic-top",
+      "size": 81222,
+      "sha256": "4b841d51afa7cb82ab3d2452b2fc24f9a31ed08f331a4fb125882357e6296c61",
+      "git_blob_sha": "584875769985e544d4c7f713939e8c44c0dfd515"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B029.md",
+      "file_set": "game-logic-top",
+      "size": 75406,
+      "sha256": "234713044cdd85663e1aa1ae70523c744d4ea4e0fc768894212491a253e843f4",
+      "git_blob_sha": "30d21fff61fa1c5d6bc0143165f0a3ebcecbdbfe"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B030.md",
+      "file_set": "game-logic-top",
+      "size": 84209,
+      "sha256": "e907923f1bd410c845927070e618eb4263f7a9e71504aaab7d1a8645a93b0028",
+      "git_blob_sha": "021881e08e3ebd41a445274034a6d8196a52d23b"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B031.md",
+      "file_set": "game-logic-top",
+      "size": 74664,
+      "sha256": "424338c6be366197c22ba8ac9314a9ff68bf367fb84dca6eb96a9e5684b26cf7",
+      "git_blob_sha": "d0d2a7331422fa52d6d2f05d64ad4f54edb8ab86"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B032.md",
+      "file_set": "game-logic-top",
+      "size": 73971,
+      "sha256": "040c690ec7f5db39f8b64b5c7f90c76baf69c1570d13d80777e12294cdf2c6c5",
+      "git_blob_sha": "98b5ba714dd718d26c43e7327fd704bb41aaa256"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B033.md",
+      "file_set": "game-logic-top",
+      "size": 87394,
+      "sha256": "ae94d69c89ec65fd382732baa5417ca1ec418afb017ab33568b39927b44590be",
+      "git_blob_sha": "ba0172a9ce68d1f1187e16742e878e9b60deaba2"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B034.md",
+      "file_set": "game-logic-top",
+      "size": 75781,
+      "sha256": "7b3a942a8eec035d77eba4e241ef850dfc10f546b1ca3d6ec2bd0bbbcd5f1d5c",
+      "git_blob_sha": "234dec4dced5ef5b61c1b1bf0283b95e420a28c2"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B035.md",
+      "file_set": "game-logic-top",
+      "size": 70247,
+      "sha256": "71d22491cc21800ea20995ddb0f189dbafaadb8bb63ee04e9ca001ebc5d877e3",
+      "git_blob_sha": "65971f4c3a3ffa25cc33192e3cd46a55625e4935"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B036.md",
+      "file_set": "game-logic-top",
+      "size": 34020,
+      "sha256": "17ad97de4c6c564f74427558619755ef05e7df4ce83b6b227b7a58746551371d",
+      "git_blob_sha": "eb4ec759707d153b59699980f8be2c96f7afb363"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B037.md",
+      "file_set": "game-logic-top",
+      "size": 34845,
+      "sha256": "1fea3c4cc4adcea5df89b023b3b8132afccfcfa3eff204270e1863305318c455",
+      "git_blob_sha": "5b216471158864653dcb96d72867cbacbdb6ee1b"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B038.md",
+      "file_set": "game-logic-top",
+      "size": 38478,
+      "sha256": "6185384891bef62cf7073c774e2f79503f5678f3e86d779ae032b4272a55b704",
+      "git_blob_sha": "146d1b577b7f39916b2c8e314e589e45a7896956"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B039.md",
+      "file_set": "game-logic-top",
+      "size": 41460,
+      "sha256": "2a3af30c2dc5a9116b30e58b2a770cc2fa49ff5e3584cd9c6e319c95482cb0ed",
+      "git_blob_sha": "3b688a0c2e8d3108beeec92106a008be757f8864"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B040.md",
+      "file_set": "game-logic-top",
+      "size": 39809,
+      "sha256": "32cf615445e1f21b6b0837c8eeed814b97c1bc57bb706253904fa14dcb4a52b1",
+      "git_blob_sha": "5475b776d973c6a5ab0f51db2756291835f9a02e"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B041.md",
+      "file_set": "game-logic-top",
+      "size": 39903,
+      "sha256": "123d719b20683081f87d5dc8e5f29648c6a5837f9772583879b97c2a957e8cbd",
+      "git_blob_sha": "3a2bc0d8c83463ae4fdb83f7e6cf26358b82f2fe"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B042.md",
+      "file_set": "game-logic-top",
+      "size": 39088,
+      "sha256": "f132592fc66912bef50cf6a6acc356f141dbad415989f2e707cd9e58b6ed2227",
+      "git_blob_sha": "09b360d9b4f67134947986d4495c23890e679ab1"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B043.md",
+      "file_set": "game-logic-top",
+      "size": 41158,
+      "sha256": "abc4411a0612b9fc8811808fbe567b874274dc68303a09daaf8f35b4e7ddcfda",
+      "git_blob_sha": "bf51bc95c6e7c3a70cf60a0d475be075704c8fbf"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B044.md",
+      "file_set": "game-logic-top",
+      "size": 40624,
+      "sha256": "e495e4132766231d214be9c5ea882f5f763e38bfb1fdf80e7fa733fd8d757576",
+      "git_blob_sha": "a9aa98ccbe4520a0625041221a3d1d8630220b0b"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B045.md",
+      "file_set": "game-logic-top",
+      "size": 38578,
+      "sha256": "4e8ef95ea27834b712d029f852196f749afd9cbfbd599b01c877619447040ca0",
+      "git_blob_sha": "92e1af90e15ea9c005ecb1f87cee752f7bbc234b"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B046.md",
+      "file_set": "game-logic-top",
+      "size": 40262,
+      "sha256": "57099598cabe3c758a22a160ea2990ca38e9f45cc4656db7c4adaa49ab136457",
+      "git_blob_sha": "134a31c41554ca75df51184f3897c205b6f5d7d3"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-B047.md",
+      "file_set": "game-logic-top",
+      "size": 59383,
+      "sha256": "0cb807f55db9b1ba73d938d3f5f05b4150a3193281f18fa3d9358e38ecf4bbe4",
+      "git_blob_sha": "a18693a209a3217352f8ba6427efa139b4ac31e1"
+    },
+    {
+      "path": "docs/game-logic/Story-Batch-Manifest.md",
+      "file_set": "game-logic-top",
+      "size": 28268,
+      "sha256": "0109a0a8f69e5c9adc40017373facd4279d33bff9d1e194a15f5b782e07b0832",
+      "git_blob_sha": "186206363eda4f275ed265b26c323e622b84c23e"
+    },
+    {
+      "path": "docs/game-logic/Strategy-Battle-Roundtrip.md",
+      "file_set": "game-logic-top",
+      "size": 3049,
+      "sha256": "ab3c1f26bf42652ed1d6afdbdf6756895f766834ebd8dc8ba3f2864f9b1a52d6",
+      "git_blob_sha": "828ad959c4b2fcf6b0d364d632ce9e990a5937ad"
+    },
+    {
+      "path": "docs/game-logic/Strongholds-and-Territory.md",
+      "file_set": "game-logic-top",
+      "size": 4651,
+      "sha256": "91c65b4d1147d3875a611c8f494ef68e6a31659f986bc480c325eaab6a02ff18",
+      "git_blob_sha": "fbcef96333ba058e67efa283a4dc961c220597c4"
+    },
+    {
+      "path": "docs/game-logic/Synthetic-Actors.md",
+      "file_set": "game-logic-top",
+      "size": 56673,
+      "sha256": "df3ea501333c9af65f1f6b093b90e78568ea2e3c3c59e13f7f8531349cacf7d0",
+      "git_blob_sha": "dbb6ef5b98d629bab69ead56e57933db745cc82e"
+    },
+    {
+      "path": "docs/game-logic/Travel-and-Encounters.md",
+      "file_set": "game-logic-top",
+      "size": 1458,
+      "sha256": "28bf907afeb78c8ba4142b37f597a5984a77016b7cea2bbeb68abbee18b9f41a",
+      "git_blob_sha": "c5268705e4e844b26ca4beac70a13a5d3b8ef8cb"
+    },
+    {
+      "path": "docs/game-logic/Ui-Implementation-Pipeline.md",
+      "file_set": "game-logic-top",
+      "size": 1250,
+      "sha256": "849a50ab0e2fd0e9dc3a3fc907344ce428e6d166b992970921e1b27e3dbaed12",
+      "git_blob_sha": "e8f82c738b36cf9015cde291e8606505d3975827"
+    },
+    {
+      "path": "docs/game-logic/Unity-Architecture-Implementation-Plan.md",
+      "file_set": "game-logic-top",
+      "size": 8181,
+      "sha256": "fbe24fd8cfd83b50b468a1fc0fc3d3f755def50ec2e7a43b7b5c6b617997fe78",
+      "git_blob_sha": "25c60faaf69dfe6ac28fc1636e238c4953a5f59a"
+    },
+    {
+      "path": "docs/game-logic/Unity-Architecture.md",
+      "file_set": "game-logic-top",
+      "size": 2315,
+      "sha256": "5c458b05b931c81aae132ac5c990034ac18f293cdeaacddc414c85c795307bf2",
+      "git_blob_sha": "cd57b1208b8e1974e7123aeaa52ee5f055b9d553"
+    },
+    {
+      "path": "docs/game-logic/Unity-System-Design.md",
+      "file_set": "game-logic-top",
+      "size": 11484,
+      "sha256": "d4a0e335bfe534582c0ef41804aefa8fe93755c083f227ec5eaaafb85c026060",
+      "git_blob_sha": "66dfb10687788fd28d4610f3fe0f2e2578495b78"
+    },
+    {
+      "path": "docs/game-logic/Unofficial-Fan-AU-Notice.md",
+      "file_set": "game-logic-top",
+      "size": 627,
+      "sha256": "32e2ef649af0e78db157b88ba67da4183c02461e5cd01617d83e5af3a8e1d4cd",
+      "git_blob_sha": "31d244c464273b255b19d9a5f9960d906d108f71"
+    },
+    {
+      "path": "docs/game-logic/Warfare-and-Sieges.md",
+      "file_set": "game-logic-top",
+      "size": 3412,
+      "sha256": "9530344e3ef49c95c84703fd6818d4c12b34da6ca04442af1b833bbb5eec468a",
+      "git_blob_sha": "1cb04201415843083b7ef31e401bd4ae2eddb24f"
+    },
+    {
+      "path": "docs/game-logic/World-Expansion-Index.md",
+      "file_set": "game-logic-top",
+      "size": 332,
+      "sha256": "a9b3913e5449c0ac811308d0db4062796d364e5d5307e055b0b637a1c0b555c3",
+      "git_blob_sha": "057fdd2fe19e0377850b9381b43ba76b348935fe"
+    },
+    {
+      "path": "docs/game-logic/World-Map-Construction.md",
+      "file_set": "game-logic-top",
+      "size": 11443,
+      "sha256": "9b9dbcbc92df3ace9a9fa3411d3a4ca138ad022df65d3d0bcb50d4c89d75ebf1",
+      "git_blob_sha": "baf47e019a78cbb541fd16187ae210e6c8307690"
+    },
+    {
+      "path": "docs/game-logic/World-Narrative-Atlas.md",
+      "file_set": "game-logic-top",
+      "size": 5072804,
+      "sha256": "61650e2e4605df4e147030b08457d51d0a9366362fe6599d89ff6505683708e1",
+      "git_blob_sha": "a4a7d55fa58071b19502f9bebb8c5554349bd447"
+    },
+    {
+      "path": "docs/game-logic/World-Relation-Ledger.md",
+      "file_set": "game-logic-top",
+      "size": 3151,
+      "sha256": "c4da3d233374a33745309932bb377de8fa3ad161ee1c6191407f1143e7c20a4e",
+      "git_blob_sha": "1ba82044b92bfaa7f0357bac848992f815b8bc6f"
+    },
+    {
+      "path": "docs/game-logic/World-and-Subway-Layers.md",
+      "file_set": "game-logic-top",
+      "size": 2764,
+      "sha256": "98d9ca16ca866945d849e4e6c70a4da6c662de019ad164b3e00c7cedbcfe7b29",
+      "git_blob_sha": "285457daa3f5a45a065b581fa241375127b40e1a"
+    },
+    {
+      "path": "docs/game-logic/_Sidebar.md",
+      "file_set": "game-logic-top",
+      "size": 3218,
+      "sha256": "a74efaafd80df7ccf09096e56f52b446abd8cae1674f33a9d829d070d60abbc1",
+      "git_blob_sha": "9d13b44e747fca86fdccaea02b3b510706fd4a3b"
+    },
+    {
+      "path": "docs/game-logic/_TEMPLATE.md",
+      "file_set": "game-logic-top",
+      "size": 582,
+      "sha256": "97fbe09badc4264d4be6c8754f7d8f2020e3b1e6916c8e4cbc78de9a9fdad0ca",
+      "git_blob_sha": "38b566d0635edbec887b1e942e333c7f8bf7dd99"
+    },
+    {
+      "path": "docs/game-logic/name-pools/clans-hangnyeol.json",
+      "file_set": "name-pools",
+      "size": 1367,
+      "sha256": "64c372a16084680766d56055479fcf6e7724997782e13654ff055dafcc1cdc1d",
+      "git_blob_sha": "3248f0430a8214b1da5533054f4b953a0e3de15c"
+    },
+    {
+      "path": "docs/game-logic/name-pools/existing-names.json",
+      "file_set": "name-pools",
+      "size": 6315,
+      "sha256": "d64f8ed355a8a00f83fad5a86273c4e4a997efb5f3a8d5665bc35b0c8c2c31fc",
+      "git_blob_sha": "882d8007e65cca077e9d8308dcaa481463fcb5f0"
+    },
+    {
+      "path": "docs/game-logic/name-pools/given-female.json",
+      "file_set": "name-pools",
+      "size": 588,
+      "sha256": "166816701731fc8adc02e3395f1b39b479b07c86e921197c768496f19c4a2da2",
+      "git_blob_sha": "a2ffb5bbd92eceb14e459928709de816199ac86b"
+    },
+    {
+      "path": "docs/game-logic/name-pools/given-male.json",
+      "file_set": "name-pools",
+      "size": 586,
+      "sha256": "1ffe9ae66b62d74aa13103386aab6f7985059a29529c2d36636736cb6b00ccee",
+      "git_blob_sha": "b1730b1da36f7c72d1160917092cc0bcb91966b2"
+    },
+    {
+      "path": "docs/game-logic/name-pools/roster-100.json",
+      "file_set": "name-pools",
+      "size": 144298,
+      "sha256": "6c77dc23fba60eee3d287170233981890362f7db8dfed293e387c3740f4b4765",
+      "git_blob_sha": "8c107745118c34a3cba508b87d54698960e2f9ae"
+    },
+    {
+      "path": "docs/game-logic/name-pools/surnames.json",
+      "file_set": "name-pools",
+      "size": 452,
+      "sha256": "b7085da1ece4793f867a93e26dafde007d167328a97f718c32344f8ff27d9792",
+      "git_blob_sha": "cd161fd1100cd022d2642cffddc85c18c1dccd79"
+    },
+    {
+      "path": "docs/game-logic/reference/CROSS-GAME-SYNTHESIS.md",
+      "file_set": "game-logic-reference",
+      "size": 11710,
+      "sha256": "8094fec913cd52000843e4e7541142abd232063b5dad2668bd50b558401e1d6d",
+      "git_blob_sha": "3afa1808af43e0c329df30c60cd3ac3603d62bc8"
+    },
+    {
+      "path": "docs/game-logic/reference/MASTER-PLAN.md",
+      "file_set": "game-logic-reference",
+      "size": 3422,
+      "sha256": "140f92304a2c222ae14cf009e6dda778b54889aab8d2e0cae5802559735491c6",
+      "git_blob_sha": "d06d2fa1a3a632aa6b404c2f880e3ad5385496d9"
+    },
+    {
+      "path": "docs/game-logic/reference/Reference-Game-Mechanisms.md",
+      "file_set": "game-logic-reference",
+      "size": 46677,
+      "sha256": "721e575545316a5f342aad73df3807b2af6cb79fae6561aac0bb4bcd1aaf4365",
+      "git_blob_sha": "2ba21d18bf0100ff5cfa6e71a02ef5a73bef33ce"
+    },
+    {
+      "path": "docs/game-logic/reference/bannerlord.md",
+      "file_set": "game-logic-reference",
+      "size": 16014,
+      "sha256": "81eb2d2bd655c1ba9890b3f3d24aa65dbd7f9760e4e5c315e9c266faaacfbda7",
+      "git_blob_sha": "01a9101b0c0c75fff1e6273fd21576f9db1e9fe5"
+    },
+    {
+      "path": "docs/game-logic/reference/battle-brothers.md",
+      "file_set": "game-logic-reference",
+      "size": 127884,
+      "sha256": "1661aa89755c8bf5f9b915a6e855f0bace0c6ece18327fb38215cfce36d3d563",
+      "git_blob_sha": "bd8303beaa78b433034f8ac3dabd75451d05a4ec"
+    },
+    {
+      "path": "docs/game-logic/reference/crusader-kings-3.md",
+      "file_set": "game-logic-reference",
+      "size": 63945,
+      "sha256": "83ed69f1e37934dbfd5d9fbddbfa216015e61ed9448f92c3a6deb851e48abcc8",
+      "git_blob_sha": "1c258db308cde3dc0431bb98ab27c60b461007a9"
+    },
+    {
+      "path": "docs/game-logic/reference/darkest-dungeon.md",
+      "file_set": "game-logic-reference",
+      "size": 10594,
+      "sha256": "9804fdb4dfff96b387f1081457062a91df8906ef2f03b4210feaea57c6e17ff4",
+      "git_blob_sha": "54b478bcc4d73b3c5f76968ddd2d66fb6cbba361"
+    },
+    {
+      "path": "docs/game-logic/reference/farland-wog-triangle.md",
+      "file_set": "game-logic-reference",
+      "size": 96733,
+      "sha256": "2efa231009c1e9323b8e96d7f2fb1c19c4e64491928171b24dd68222f3af93ad",
+      "git_blob_sha": "1c0b9423db44cd10cfd3fcc10bf6b843e5fa4eff"
+    },
+    {
+      "path": "docs/game-logic/reference/fire-emblem-fft.md",
+      "file_set": "game-logic-reference",
+      "size": 113657,
+      "sha256": "c7ee2d584e9b01508161f351e38411d9c9bdc88af5c102ac9b10dda3edbf6487",
+      "git_blob_sha": "9865159f2f3cbc743e811b409db8d708ddc79dd6"
+    },
+    {
+      "path": "docs/game-logic/reference/into-the-breach.md",
+      "file_set": "game-logic-reference",
+      "size": 8583,
+      "sha256": "75f9a5dfa3809d69078b822518d40a7ca944155f7610c4805a74eb8807af6af6",
+      "git_blob_sha": "fc44fcd9dcc70feba0517bdf096770f49110ab49"
+    },
+    {
+      "path": "docs/game-logic/reference/kenshi.md",
+      "file_set": "game-logic-reference",
+      "size": 68520,
+      "sha256": "48b3c59b3cbed54e9308e352dcbc42caf5354325c8cb8d42647d091db2ba5c5c",
+      "git_blob_sha": "3f4165cfa67eca3575575e7539b31db6b15dfae4"
+    },
+    {
+      "path": "docs/game-logic/reference/nobunagas-ambition.md",
+      "file_set": "game-logic-reference",
+      "size": 75105,
+      "sha256": "189a0cff962af577078e465544d684a3cf038c412cf6bb47d44917aa59ee122d",
+      "git_blob_sha": "ab10beabece49b7949bd6163c1e62be0f6e6d6ce"
+    },
+    {
+      "path": "docs/game-logic/reference/ravelen-chronicles.md",
+      "file_set": "game-logic-reference",
+      "size": 12410,
+      "sha256": "f613c1d593e09ca8f4ebff40139ff0ae6f4ce52d972705a1ce62d129b2211c21",
+      "git_blob_sha": "9d7de14971e37fd08e24749dfda51ff24855369a"
+    },
+    {
+      "path": "docs/game-logic/reference/romance-of-three-kingdoms.md",
+      "file_set": "game-logic-reference",
+      "size": 69805,
+      "sha256": "2b3e8619de6e506903655a6e57bbdc3c395dc86f23f644a0c33b3db5e5da7bc2",
+      "git_blob_sha": "0d9b9971b69e03a058c9524c279eb20fa6927ab6"
+    },
+    {
+      "path": "docs/game-logic/reference/songs-of-silence.md",
+      "file_set": "game-logic-reference",
+      "size": 11557,
+      "sha256": "b2f332cfeed68376dc4f1a325c8cf51b62d39c60d5846dca11b81689ad045ba8",
+      "git_blob_sha": "bb2f26f55a3b0cbf16bac5ddb0838797fe938118"
+    },
+    {
+      "path": "docs/game-logic/reference/taikou-risshiden.md",
+      "file_set": "game-logic-reference",
+      "size": 55060,
+      "sha256": "597a5b8cd74268966f1ef020a2b33f14b361a5c6fdfb70c90590f6dd5b6e3dd1",
+      "git_blob_sha": "65f8301ad2bcdbb3cbcb494c8c4783deffe25083"
+    },
+    {
+      "path": "docs/game-logic/reference/unicorn-overlord.md",
+      "file_set": "game-logic-reference",
+      "size": 13395,
+      "sha256": "81d37cc39e21b6226f10ada9798eb02e6d401b7cf8a19bcac781aeeac74cdd6f",
+      "git_blob_sha": "43618a945459722091628f212f209aa454b21144"
+    },
+    {
+      "path": "docs/game-logic/reference/xcom-2.md",
+      "file_set": "game-logic-reference",
+      "size": 11274,
+      "sha256": "f769c7d52f05ad837e1800bbcb631f5cee5c96de5fffd934b88bd9941459b250",
+      "git_blob_sha": "aee40c7cb2814625f27d409da130388c809cfad2"
+    }
+  ]
+}

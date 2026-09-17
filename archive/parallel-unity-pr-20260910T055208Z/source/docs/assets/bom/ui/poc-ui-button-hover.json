@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "asset_id": "poc-ui-button-hover",
+  "asset_class": "ui_kit",
+  "source": "generate",
+  "rights_status": "allowed",
+  "generation_backend": "grok_imagine",
+  "provider": "xai",
+  "model": "grok-imagine-image",
+  "revision": "2026-09-04",
+  "prompt": "Isolated wide blank UI button, 4 to 1 rectangle, dark steel with a thin teal edge highlight, completely blank face, no text, no icon, no label. Flat orthographic. Solid MAGENTA background #FF00FF for cutout. NO watermark. State: hover. Same silhouette as normal.",
+  "prompt_hash": "e3ea99b5adf3b8456a8345d676717440a4b8b9385d9cf7eb8055990ab5e483fe",
+  "input_hashes": [
+    "aefaa19d6f2d791e5d3e8f9a2e24cdc60486725819b57fc2dc95ff69e6faf686"
+  ],
+  "seed": 13006,
+  "cost_mode": "subscription",
+  "cost_cents": 0,
+  "raw_hash": "aefaa19d6f2d791e5d3e8f9a2e24cdc60486725819b57fc2dc95ff69e6faf686",
+  "output_hash": "9abedbc15e01ba730617f71607e9662761a5e9d4402c1ce103cb35c8ee3bf73e",
+  "tool_versions": {
+    "unity": "6000.7.0a5",
+    "python": "3.13",
+    "node": "22.14.0",
+    "pillow": "12.2.0",
+    "cliproxy": "subscription"
+  },
+  "operations": [
+    "edit_chain_from_normal",
+    "identical_alpha",
+    "archive",
+    "human_review",
+    "bom_promotion"
+  ],
+  "unity_import_settings": {
+    "texture_type": "Sprite",
+    "sprite_mode": "Single",
+    "filter_mode": "Point",
+    "alpha_is_transparency": true,
+    "wrap_mode": "Clamp",
+    "mesh_compression": "Off"
+  },
+  "review_receipts": [
+    {
+      "reviewer": "todo13-art-lead",
+      "verdict": "pass",
+      "receipt_hash": "4b160d7fc08164e67e4abe2658a19389c40d403cb39d634694301323c4157f35",
+      "reviewed_at": "2026-09-04T10:16:04.000Z",
+      "notes": "Machine geometry/alpha/9-slice/icon/seam QA plus human visual pass. Design.md absent on p1E; UI Toolkit binding is Todo 16 handoff."
+    }
+  ],
+  "status": "promoted",
+  "created_at": "2026-09-04T10:16:04.000Z",
+  "license": "generated-on-subscription-for-janseon-poc",
+  "look": {
+    "palette": {
+      "face": "#141C2A",
+      "face_hover": "#1B2536",
+      "face_pressed": "#0E1622",
+      "stroke_quiet": "#2A3548",
+      "accent_line": "#3D7EA6",
+      "stroke_focus": "#C9A227"
+    },
+    "materials": {
+      "finish": "matte-steel",
+      "roughness": 0.75,
+      "metalness": 0.15,
+      "edge": "thin-teal",
+      "face": "blank-no-baked-text",
+      "filter": "point"
+    },
+    "references": [
+      {
+        "kind": "design-token",
+        "source": "Design.md#2.1"
+      },
+      {
+        "kind": "primitive",
+        "source": "Design.md#4"
+      },
+      {
+        "kind": "owner-html",
+        "source": ".omo/evidence/issue8-23-visual-review.html"
+      }
+    ],
+    "owner_verdict": "accepted",
+    "owner_notes": "2026-09-06 owner: blank button states in the HTML review may be used."
+  }
+}

@@ -21,7 +21,7 @@ import {
 const here = dirname(fileURLToPath(import.meta.url));
 const repositoryRoot = resolve(here, '..', '..', '..');
 const verifier = fileURLToPath(new URL('./verify-confirmed-integration.mjs', import.meta.url));
-const atlasPath = join(repositoryRoot, 'docs', 'game-logic', 'World-Narrative-Atlas.md');
+const atlasPath = join(repositoryRoot, 'Wikis', 'game-logic', 'World-Narrative-Atlas.md');
 
 function runLive(args) {
   const result = spawnSync(process.execPath, [verifier, ...args], {
@@ -43,19 +43,30 @@ function actorIds(content) {
   return (content?.actors ?? []).map((actor) => actor.id);
 }
 
-// The public-term gate forbids one word that several approved sources used in
-// its ordinary Korean sense; the landed records carry synonym edits recorded in
-// Research/verification/banned-term-replacements.json. Comparison against the
-// source therefore ignores exactly that word so every other byte must match.
+// Approved source commits predate public-term cleanup and the creative naming
+// decision. Normalize those recorded projection edits on both sides so every
+// unrelated byte must still match.
 const BANNED_TERM_EDITS = JSON.parse(
   readFileSync(join(repositoryRoot, 'Research', 'verification', 'banned-term-replacements.json'), 'utf8'),
 );
+const CREATIVE_NAME_LEDGER = JSON.parse(
+  readFileSync(join(repositoryRoot, 'Research', 'verification', 'creative-name-normalization.json'), 'utf8'),
+);
+const APPROVED_PROJECTION_EDITS = [
+  ...BANNED_TERM_EDITS,
+  ...CREATIVE_NAME_LEDGER.replacements,
+].filter((edit) => edit.old && edit.new).sort((a, b) => b.old.length - a.old.length);
+const APPROVED_PATTERN_EDITS = CREATIVE_NAME_LEDGER.pattern_replacements
+  .filter((edit) => edit.pattern && edit.new)
+  .map((edit) => ({ ...edit, regex: new RegExp(edit.pattern, 'gu') }));
 
-function stripBannedTermEdits(value) {
+function normalizeApprovedProjectionEdits(value) {
   let text = JSON.stringify(value);
-  for (const edit of BANNED_TERM_EDITS) {
-    text = text.split(JSON.stringify(edit.new).slice(1, -1)).join('');
-    text = text.split(JSON.stringify(edit.old).slice(1, -1)).join('');
+  for (const edit of APPROVED_PROJECTION_EDITS) {
+    text = text.split(JSON.stringify(edit.old).slice(1, -1)).join(JSON.stringify(edit.new).slice(1, -1));
+  }
+  for (const edit of APPROVED_PATTERN_EDITS) {
+    text = text.replace(edit.regex, edit.new);
   }
   return JSON.parse(text);
 }
@@ -101,7 +112,7 @@ test('Given current repository When B001 story-batch stage Then verifier exits 0
     [
       fileURLToPath(new URL('./verify-world-expansion.mjs', import.meta.url)),
       '--docs',
-      join(repositoryRoot, 'GDD', 'game-logic'),
+      join(repositoryRoot, 'Wikis', 'game-logic'),
       '--stage',
       'story-batch',
       '--batch',
@@ -370,7 +381,7 @@ test('Given approved source SHAs When live atlas is compared Then every landed r
   const atlas = live.value;
   const base = gitAtlas('6ef55553ec8e5ed06ff8061a69947ce347eae85a');
   assert.equal(atlas.humans.length, 412);
-  assert.deepEqual(atlas.humans, base.humans);
+  assert.deepEqual(normalizeApprovedProjectionEdits(atlas.humans), normalizeApprovedProjectionEdits(base.humans));
   assert.deepEqual(Object.keys(atlas.story_contents), manifest.social);
   const sourceCache = new Map();
   const sourceAtlas = (sha) => {
@@ -385,14 +396,14 @@ test('Given approved source SHAs When live atlas is compared Then every landed r
       actorIds(expected),
       id,
     );
-    assert.deepEqual(stripBannedTermEdits(atlas.story_contents[id]), stripBannedTermEdits(expected), id);
+    assert.deepEqual(normalizeApprovedProjectionEdits(atlas.story_contents[id]), normalizeApprovedProjectionEdits(expected), id);
   }
   for (const [fragment, ids] of Object.entries(manifest.groups)) {
     const source = sourceAtlas(manifest.approved[fragment]);
     for (const id of ids) {
       assert.deepEqual(
-        atlas.hostile_groups.find((group) => group.id === id),
-        source.hostile_groups.find((group) => group.id === id),
+        normalizeApprovedProjectionEdits(atlas.hostile_groups.find((group) => group.id === id)),
+        normalizeApprovedProjectionEdits(source.hostile_groups.find((group) => group.id === id)),
         id,
       );
     }
@@ -402,12 +413,12 @@ test('Given approved source SHAs When live atlas is compared Then every landed r
     assert.ok(liveBatch, id);
     if (manifest.monsterSources[id] === 'canonical-branch-record') {
       const expected = sourceAtlas(manifest.approved[id]).monster_contents[id];
-      assert.deepEqual(stripBannedTermEdits(liveBatch), stripBannedTermEdits(expected), id);
+      assert.deepEqual(normalizeApprovedProjectionEdits(liveBatch), normalizeApprovedProjectionEdits(expected), id);
     } else {
-      const page = gitShow(manifest.approved[id], `docs/game-logic/Monster-Batch-${id}.md`);
+      const page = normalizeApprovedProjectionEdits(gitShow(manifest.approved[id], `docs/game-logic/Monster-Batch-${id}.md`));
       for (const entry of liveBatch.entries) {
         assert.ok(page.includes(`${entry.id} · ${entry.display_name}`), `${id} ${entry.id} title`);
-        assert.ok(page.includes(stripBannedTermEdits(entry).prose), `${id} ${entry.id} prose`);
+        assert.ok(page.includes(normalizeApprovedProjectionEdits(entry).prose), `${id} ${entry.id} prose`);
       }
     }
   }
@@ -417,7 +428,7 @@ test('Given excluded B017 When story-batch stage Then E_STORY_CONTENT and worldb
   const expansion = fileURLToPath(new URL('./verify-world-expansion.mjs', import.meta.url));
   const result = spawnSync(process.execPath, [
     expansion,
-    '--docs', join(repositoryRoot, 'GDD', 'game-logic'),
+    '--docs', join(repositoryRoot, 'Wikis', 'game-logic'),
     '--stage', 'story-batch',
     '--batch', 'B017',
     '--atlas', atlasPath,
@@ -430,7 +441,7 @@ test('Given excluded M007 When monster-batch stage Then E_MONSTER_CONTENT', () =
   const expansion = fileURLToPath(new URL('./verify-world-expansion.mjs', import.meta.url));
   const result = spawnSync(process.execPath, [
     expansion,
-    '--docs', join(repositoryRoot, 'GDD', 'game-logic'),
+    '--docs', join(repositoryRoot, 'Wikis', 'game-logic'),
     '--stage', 'monster-batch',
     '--batch', 'M007',
     '--atlas', atlasPath,

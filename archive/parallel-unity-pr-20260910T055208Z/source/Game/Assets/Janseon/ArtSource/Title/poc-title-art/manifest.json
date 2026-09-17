@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "asset_id": "poc-title-art",
+  "asset_class": "title_art",
+  "source": "generate",
+  "rights_status": "allowed",
+  "generation_backend": "grok_imagine",
+  "provider": "xai",
+  "model": "grok-imagine-image",
+  "revision": "2026-09-04",
+  "prompt": "Title screen BACKGROUND ONLY for a Korean post-collapse subway grand-strategy game. Wide cinematic 16:9 view of an abandoned Seoul subway concourse inspired by Yeongdeungpo: wet dark concrete, teal emergency strip lights, rusted pipes, empty ticket hall, distant tunnel glow, isometric pixel-art painting, navy and cyan palette. NO people, NO UI, NO HUD, NO buttons, NO logos, NO watermark, NO readable text, NO letters, NO hangul, NO signage.",
+  "prompt_hash": "28113ce845221379d5ae447394e3a074f67a836bbcc9a5086b6b64f2e62da9f0",
+  "input_hashes": [
+    "0a5717dadd56b7e3b6a0c0a00d877f1b9876918925a2d9d9532444c42f441340"
+  ],
+  "seed": 13001,
+  "cost_mode": "subscription",
+  "cost_cents": 0,
+  "raw_hash": "0a5717dadd56b7e3b6a0c0a00d877f1b9876918925a2d9d9532444c42f441340",
+  "output_hash": "b51ecd9e5e17611dbe351ce8991515080def7e8f30bd2f106808f6add2d30e47",
+  "tool_versions": {
+    "unity": "6000.7.0a5",
+    "python": "3.13",
+    "node": "22.14.0",
+    "pillow": "12.2.0",
+    "cliproxy": "subscription"
+  },
+  "operations": [
+    "generate",
+    "archive",
+    "crop_16x9",
+    "human_review",
+    "bom_promotion"
+  ],
+  "unity_import_settings": {
+    "texture_type": "Sprite",
+    "sprite_mode": "Single",
+    "filter_mode": "Bilinear",
+    "alpha_is_transparency": false,
+    "wrap_mode": "Clamp",
+    "mesh_compression": "Off"
+  },
+  "review_receipts": [
+    {
+      "reviewer": "todo13-art-lead",
+      "verdict": "pass",
+      "receipt_hash": "528fab546697191d66bd5ee5e48bffb0a3bdda3284ddd705e56f48dddd7e05d3",
+      "reviewed_at": "2026-09-04T10:16:04.000Z",
+      "notes": "Machine geometry/alpha/9-slice/icon/seam QA plus human visual pass. Design.md absent on p1E; UI Toolkit binding is Todo 16 handoff."
+    }
+  ],
+  "status": "promoted",
+  "created_at": "2026-09-04T10:16:04.000Z",
+  "license": "generated-on-subscription-for-janseon-poc"
+}

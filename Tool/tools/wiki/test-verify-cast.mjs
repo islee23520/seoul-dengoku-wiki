@@ -50,12 +50,23 @@ function castIndexMd(rows) {
   ].join('\n');
 }
 
+function unaffiliatedCardMd(name, { id = 'x-id', omit = [] } = {}) {
+  const lines = [`### 인물 ${name}`, ''];
+  if (id !== null) lines.push(`- 캐릭터 ID: ${id}`);
+  for (const field of FIELDS) {
+    if (omit.includes(field)) continue;
+    lines.push(`- ${field}: x`);
+  }
+  return `${lines.join('\n')}\n`;
+}
+
 async function makeFixture({
   coreNames = T0,
   omit = {},
   stateProfiles = {},
   relations = null,
   castIndex = null,
+  unaffiliated = null,
 } = {}) {
   const dir = await mkdtemp(join(tmpdir(), 'verify-cast-'));
   fixtures.push(dir);
@@ -67,6 +78,7 @@ async function makeFixture({
   }
   if (relations !== null) await writeFile(join(dir, 'Cast-Relations.md'), relations);
   if (castIndex !== null) await writeFile(join(dir, 'Cast-Index.md'), castIndex);
+  if (unaffiliated !== null) await writeFile(join(dir, 'Cast-Unaffiliated.md'), unaffiliated);
   return dir;
 }
 
@@ -252,6 +264,109 @@ test('R14: Cast-Index 관계 수 must equal outgoing edge count (송신 간선 �
   assert.equal(bad.code, 1);
   assert.match(bad.stderr, /^R14:/m);
   assert.match(bad.stderr, /정유라/);
+});
+
+test('unaffiliated cards: parsed, full fields, distinct IDs, directed edge, outgoing counts (happy)', async () => {
+  const chain = T0.slice(0, -1).map((name, index) => [name, '계약', T0[index + 1], 'x']);
+  const rows = relationsMd([...chain, ['이연', '지휘', '조재표', '현장 수행과 거부 조건']]);
+  const counts = new Map(T0.map((name) => [name, 0]));
+  for (const [from] of chain) counts.set(from, 1);
+  const index = castIndexMd([
+    ...T0.map((name) => [name, '직위', '주요', String(counts.get(name))]),
+    ['조재표', '유명 낭인 지휘자', 'S1', '0'],
+    ['이연', '수행 전령', 'S1', '1'],
+  ]);
+  const docs = await makeFixture({
+    relations: rows,
+    castIndex: index,
+    unaffiliated: `${unaffiliatedCardMd('조재표', { id: 'unaffiliated-jaepyo-jo' })}\n${unaffiliatedCardMd('이연', { id: 'iyen' })}`,
+  });
+  const result = run(docs);
+  assert.equal(result.code, 0);
+  assert.doesNotMatch(result.output, /^R\d+:/m);
+});
+
+test('R5: unaffiliated card missing a full-contract field', async () => {
+  const chain = T0.slice(0, -1).map((name, index) => [name, '계약', T0[index + 1], 'x']);
+  const counts = new Map(T0.map((name) => [name, 0]));
+  for (const [from] of chain) counts.set(from, 1);
+  const index = castIndexMd([
+    ...T0.map((name) => [name, '직위', '주요', String(counts.get(name))]),
+    ['조재표', '직위', 'S1', '0'],
+    ['이연', '직위', 'S1', '1'],
+  ]);
+  const docs = await makeFixture({
+    relations: relationsMd([...chain, ['이연', '지휘', '조재표', 'x']]),
+    castIndex: index,
+    unaffiliated: `${unaffiliatedCardMd('조재표', { id: 'a' })}\n${unaffiliatedCardMd('이연', { id: 'b', omit: ['공포'] })}`,
+  });
+  const result = run(docs);
+  assert.equal(result.code, 1);
+  assert.match(result.stderr, /^R5:/m);
+  assert.match(result.stderr, /이연/);
+});
+
+test('R15: two cards sharing one 캐릭터 ID cannot collapse into one identity', async () => {
+  const chain = T0.slice(0, -1).map((name, index) => [name, '계약', T0[index + 1], 'x']);
+  const counts = new Map(T0.map((name) => [name, 0]));
+  for (const [from] of chain) counts.set(from, 1);
+  const index = castIndexMd([
+    ...T0.map((name) => [name, '직위', '주요', String(counts.get(name))]),
+    ['조재표', '직위', 'S1', '0'],
+    ['이연', '직위', 'S1', '1'],
+  ]);
+  const docs = await makeFixture({
+    relations: relationsMd([...chain, ['이연', '지휘', '조재표', 'x']]),
+    castIndex: index,
+    unaffiliated: `${unaffiliatedCardMd('조재표', { id: 'iyen' })}\n${unaffiliatedCardMd('이연', { id: 'iyen' })}`,
+  });
+  const result = run(docs);
+  assert.equal(result.code, 1);
+  assert.match(result.stderr, /^R15:/m);
+  assert.match(result.stderr, /조재표/);
+  assert.match(result.stderr, /이연/);
+});
+
+test('R15: unaffiliated card without 캐릭터 ID', async () => {
+  const chain = T0.slice(0, -1).map((name, index) => [name, '계약', T0[index + 1], 'x']);
+  const counts = new Map(T0.map((name) => [name, 0]));
+  for (const [from] of chain) counts.set(from, 1);
+  const index = castIndexMd([
+    ...T0.map((name) => [name, '직위', '주요', String(counts.get(name))]),
+    ['조재표', '직위', 'S1', '0'],
+    ['이연', '직위', 'S1', '1'],
+  ]);
+  const docs = await makeFixture({
+    relations: relationsMd([...chain, ['이연', '지휘', '조재표', 'x']]),
+    castIndex: index,
+    unaffiliated: `${unaffiliatedCardMd('조재표', { id: 'a' })}\n${unaffiliatedCardMd('이연', { id: null })}`,
+  });
+  const result = run(docs);
+  assert.equal(result.code, 1);
+  assert.match(result.stderr, /^R15:/m);
+  assert.match(result.stderr, /캐릭터 ID/);
+});
+
+test('R14: directed unaffiliated edge counts as outgoing for the sender only', async () => {
+  const chain = T0.slice(0, -1).map((name, index) => [name, '계약', T0[index + 1], 'x']);
+  const counts = new Map(T0.map((name) => [name, 0]));
+  for (const [from] of chain) counts.set(from, 1);
+  // 수신자를 센 잘못된 표: 조재표=1(수신), 이연=0(송신 아님으로 기록)
+  const index = castIndexMd([
+    ...T0.map((name) => [name, '직위', '주요', String(counts.get(name))]),
+    ['조재표', '직위', 'S1', '1'],
+    ['이연', '직위', 'S1', '0'],
+  ]);
+  const docs = await makeFixture({
+    relations: relationsMd([...chain, ['이연', '지휘', '조재표', 'x']]),
+    castIndex: index,
+    unaffiliated: `${unaffiliatedCardMd('조재표', { id: 'a' })}\n${unaffiliatedCardMd('이연', { id: 'b' })}`,
+  });
+  const result = run(docs);
+  assert.equal(result.code, 1);
+  assert.match(result.stderr, /^R14:/m);
+  assert.match(result.stderr, /조재표/);
+  assert.match(result.stderr, /이연/);
 });
 
 test('stale state: running the checker twice yields identical output', async () => {

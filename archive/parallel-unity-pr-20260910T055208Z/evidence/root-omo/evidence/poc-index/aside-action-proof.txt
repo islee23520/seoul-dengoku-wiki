@@ -1,0 +1,337 @@
+[system][warning] DO NOT USE tree.split() - you're hiding important context from snapshot. don't hesitate to print the full tree or diff. 
+
+ROOT_SNAPSHOT
+# note: interactive (clickable / focusable) elements only.
+- title: "JANSEON: SEOUL / PROTOTYPE HUB" [url=http://192.168.0.218:4173/]
+- banner:
+  - text: "JANSEON: SEOUL / PROTOTYPE HUB"
+  - heading "잔선: 서울 프로토타입" [level=1]
+- main:
+  - link "분대 아바타 렌더링 검토 중 Pilgrimage v23 atlas 방식 기반 12분대 및 픽셀 아바타 48명 외형 및 움직임 리뷰. 아바타 시스템의 시각적 품질을 테스트합니다. 아" [ref=e1]
+  - link "출격 진형 편집 승인 완료 작은 역사 승강장 동측 기준, 전투 개시 전 분대원 배치 및 진형 구축 인터페이스. 각 유닛의 역할에 따른 배치를 구성합니다. 진형 편집기 열기→" [ref=e2]
+  - link "실시간 분대 교전 승인 완료 6개 분대 대 6개 분대, 총 임시 병사 48명의 실시간 교전 시뮬레이션. 독립적으로 선택 가능한 분대 단위의 전투 흐름을 확인합니다. 전투 프리뷰 열" [ref=e3]
+ROOT_METRICS
+{
+  "url": "http://192.168.0.218:4173/",
+  "title": "JANSEON: SEOUL / PROTOTYPE HUB",
+  "viewport": {
+    "innerWidth": 390,
+    "innerHeight": 844
+  },
+  "documentElement": {
+    "scrollWidth": 390,
+    "clientWidth": 390
+  },
+  "body": {
+    "scrollWidth": 390,
+    "clientWidth": 390
+  },
+  "horizontalOverflow": false,
+  "cards": [
+    {
+      "index": 1,
+      "href": "http://192.168.0.218:4173/poc/avatar-preview/",
+      "heading": "분대 아바타 렌더링",
+      "badge": "검토 중",
+      "overlap": false,
+      "headingRect": {
+        "left": 52,
+        "top": 155,
+        "right": 200.921875,
+        "bottom": 179
+      },
+      "badgeRect": {
+        "left": 291.015625,
+        "top": 155,
+        "right": 341,
+        "bottom": 177
+      }
+    },
+    {
+      "index": 2,
+      "href": "http://192.168.0.218:4173/poc/formation-editor/",
+      "heading": "출격 진형 편집",
+      "badge": "승인 완료",
+      "overlap": false,
+      "headingRect": {
+        "left": 49,
+        "top": 367.5,
+        "right": 163.328125,
+        "bottom": 391.5
+      },
+      "badgeRect": {
+        "left": 282.375,
+        "top": 367.5,
+        "right": 341,
+        "bottom": 389.5
+      }
+    },
+    {
+      "index": 3,
+      "href": "http://192.168.0.218:4173/poc/battle-preview/",
+      "heading": "실시간 분대 교전",
+      "badge": "승인 완료",
+      "overlap": false,
+      "headingRect": {
+        "left": 49,
+        "top": 580,
+        "right": 180.625,
+        "bottom": 604
+      },
+      "badgeRect": {
+        "left": 282.375,
+        "top": 580,
+        "right": 341,
+        "bottom": 602
+      }
+    }
+  ]
+}
+SCREENSHOT
+{"sessionDir":"/Users/ilseoblee/.aside/u/0/sessions/2026-09-09_ae99Jj2Gwg0sSwsl","path":"./artifacts/index-390.png","bytes":74393,"viewport":{"width":1440,"height":900}}
+DESTINATION 분대 아바타 렌더링
+# note: interactive (clickable / focusable) elements only.
+- title: "잔선: 서울 · 아바타 렌더링 검토용 POC" [url=http://192.168.0.218:4173/poc/avatar-preview/]
+- banner:
+  - text: "JANSEON: SEOUL / AVATAR RENDER REVIEW"
+  - heading "분대 아바타 렌더링" [level=1]
+  - text: "Pilgrimage v23 atlas 방식 · 12분대 / 픽셀 아바타 48명\n          \n        \n        \n           03\n          \n             방향·보행·그림자\n             로컬 시각 검토 전용"
+- main:
+  - region "영등포 동측 승강장 아바타 교전도" [ref=e1]:
+    - text: "PIXEL AVATAR ATLAS"
+    - heading "영등포 동측 승강장 아바타 교전도" [level=2]
+    - text: "64px CELL\n               20 WALK · 1 IDLE\n               6 PROFILE · 8 DIR"
+    - canvas "Pilgrimage atlas 방식의 방향별 픽셀 아바타 48명이 있는 Three.js 분대 장면" [ref=e2] [size=278x542]
+    - text: "아군 24명\n                적 24명\n            \n            \n               출격 대기\n               8 PNG · 48 avatar 준비\n            \n            \n             \n              fork SHA 고정 원격 PNG · 로컬 검토 전용 · 출시 승인 아님\n            \n          \n\n          \n             1–6  분대 선택\n             지면 클릭  대형 이동\n             적 클릭  공격 지정\n             Space  일시정지·재개\n             R  초기화"
+  - complementary "렌더링 검사" [ref=e3] [scrollable]:
+    - text: "AVATAR INSPECTOR"
+    - heading "렌더링 검사" [level=2]
+    - text: "출격 대기"
+    - button "아바타 교전 시작" [ref=e4]
+    - button "일시정지" [ref=e5] [disabled]
+    - button "동일 seed 초기화" [ref=e6]
+    - region:
+      - heading "1. 아군 분대 선택" [level=3]
+      - text: "6분대 · 24명"
+      - button "서윤 분대 근위 · 4/4명 · knight" [ref=e7]
+      - button "민재 분대 근위 · 4/4명 · knight" [ref=e8]
+      - button "하린 분대 돌격 · 4/4명 · peasant" [ref=e9]
+      - button "도윤 분대 돌격 · 4/4명 · peasant" [ref=e10]
+      - button "지우 분대 궁수 · 4/4명 · friar" [ref=e11]
+      - button "은호 분대 궁수 · 4/4명 · friar" [ref=e12]
+    - region:
+      - text: "근위\n              \n                 방벽 01 · knight POC 매핑"
+      - heading "서윤 분대" [level=3]
+      - text: "상태 idle\n               방향 NE · row 5\n               프레임 1 / 1\n               프로필 1 / 6\n               Foot anchor 32, 48.5\n               생존 4 / 4명"
+    - region:
+      - heading "2. 실제 지원 layer" [level=3]
+      - text: "body + shared shadow"
+      - checkbox "cast-shadow atlas 표시" [ref=e13] [checked]
+      - text: "cast-shadow atlas 표시\n            \n            \n               아바타 크기"
+      - combobox "아바타 크기" [ref=e14]:
+        - option "85%" value="0.85"
+        - option "100%" (selected) value="1"
+        - option "115%" value="1.15"
+    - region:
+      - heading "3. POC 역할 매핑" [level=3]
+      - text: "게임 canon 아님\n            \n            \n               근위 knight\n               돌격 peasant\n               궁수 friar"
+    - text: "6개 프로필과 8방향 row를 실제 atlas에서 선택합니다."
+    - region:
+      - text: "출처·권리 경계\n             \n              islee23520/pilgrimage · commit\n               de04a116…\n            \n            \n              LICENSE 미선언. 사용자 승인 로컬 검토에만 사용하며 출시·승격\n              권리를 주장하지 않습니다."
+      - link "고정 source 보기" [ref=e15]
+    - link "2단계 저폴리 화면 보기" [ref=e16]
+    - link "상세 provenance" [ref=e17]
+- contentinfo: "아바타 표현 검토용 POC / C# Core와 별도\n         \n          Idle·Walk만 지원합니다. 공격 전용 clip은 없어 정지 공격 시 Idle로 표시합니다."
+BACK 분대 아바타 렌더링
+# note: interactive (clickable / focusable) elements only.
+- title: "JANSEON: SEOUL / PROTOTYPE HUB" [url=http://192.168.0.218:4173/]
+- banner:
+  - text: "JANSEON: SEOUL / PROTOTYPE HUB"
+  - heading "잔선: 서울 프로토타입" [level=1]
+- main:
+  - link "분대 아바타 렌더링 검토 중 Pilgrimage v23 atlas 방식 기반 12분대 및 픽셀 아바타 48명 외형 및 움직임 리뷰. 아바타 시스템의 시각적 품질을 테스트합니다. 아" [ref=e1]
+  - link "출격 진형 편집 승인 완료 작은 역사 승강장 동측 기준, 전투 개시 전 분대원 배치 및 진형 구축 인터페이스. 각 유닛의 역할에 따른 배치를 구성합니다. 진형 편집기 열기→" [ref=e2]
+  - link "실시간 분대 교전 승인 완료 6개 분대 대 6개 분대, 총 임시 병사 48명의 실시간 교전 시뮬레이션. 독립적으로 선택 가능한 분대 단위의 전투 흐름을 확인합니다. 전투 프리뷰 열" [ref=e3]
+DESTINATION 출격 진형 편집
+# note: interactive (clickable / focusable) elements only.
+- title: "잔선: 서울 · 진형 편집 검토용 POC" [url=http://192.168.0.218:4173/poc/formation-editor/]
+- banner:
+  - text: "JANSEON: SEOUL / DEPLOYMENT REVIEW"
+  - heading "출격 진형 편집" [level=1]
+  - text: "작은 역사 · 승강장 동측 / 전투 개시 전 배치\n          \n        \n        \n           01\n          \n             배치 검토\n             다음 단계 자동 진행 없음"
+- main:
+  - region "승강장 배치도" [ref=e1]:
+    - text: "고정 직교 아이소메트릭"
+    - heading "승강장 배치도" [level=2]
+    - text: "CAM 45° / 35.264°\n              GRID 1.5m\n               PARTY 6 / 6"
+    - canvas "승강장 위 아군 3열 진형과 적 참고 실루엣을 보여 주는 Three.js 장면" [ref=e2] [size=298x563]
+    - text: "아군 진형\n                적 참고 실루엣 6\n            \n            \n             \n              임시 저폴리 스탠드인 · 생성 아트/기증 에셋 미사용\n            \n          \n\n          \n             1–6  유닛 선택\n             방향키  슬롯 이동\n             Enter  배치\n             C  확정\n             E  다시 편집\n             R  초기화"
+  - complementary "배치 명령":
+    - text: "FORMATION CONTROL"
+    - heading "배치 명령" [level=2]
+    - text: "편집 중"
+    - region:
+      - heading "1. 대원 선택" [level=3]
+      - text: "6명"
+      - button "1 서윤 · 근위 방벽 01" [ref=e3]
+      - button "2 민재 · 근위 방벽 02" [ref=e4]
+      - button "3 하린 · 돌격 쇄도 01" [ref=e5]
+      - button "4 도윤 · 돌격 쇄도 02" [ref=e6]
+      - button "5 지우 · 궁수 조준 01" [ref=e7]
+      - button "6 은호 · 궁수 조준 02" [ref=e8]
+    - region:
+      - heading "2. 목적 슬롯" [level=3]
+      - text: "3열 × 좌·중·우\n            \n            \n              \n               좌\n               중앙\n               우\n            \n             전"
+      - button "전열 · 좌, 서윤 근위" [ref=e9]: "서윤 근위"
+      - button "전열 · 중앙, 하린 돌격" [ref=e10]: "하린 돌격"
+      - button "전열 · 우, 민재 근위" [ref=e11]: "민재 근위"
+      - text: "중"
+      - button "중열 · 좌, 빈 슬롯" [ref=e12]: "빈 슬롯 배치 가능"
+      - button "중열 · 중앙, 도윤 돌격" [ref=e13]: "도윤 돌격"
+      - button "중열 · 우, 빈 슬롯" [ref=e14]: "빈 슬롯 배치 가능"
+      - text: "후"
+      - button "후열 · 좌, 지우 궁수" [ref=e15]: "지우 궁수"
+      - button "후열 · 중앙, 빈 슬롯" [ref=e16]: "빈 슬롯 배치 가능"
+      - button "후열 · 우, 은호 궁수" [ref=e17]: "은호 궁수"
+    - region "서윤" [ref=e18]:
+      - text: "근위\n              \n                 방벽 01"
+      - heading "서윤" [level=3]
+      - text: "행\n                 전열\n              \n              \n                 열\n                 좌\n              \n              \n                 정면\n                 북쪽 · 적 방향\n              \n              \n                 파티\n                 6 / 6"
+    - text: "대원을 선택하고 슬롯을 누르면 배치됩니다."
+    - button "배치 확정" [ref=e19]
+    - button "배치 다시 편집" [ref=e20] [disabled]
+    - button "초기 진형" [ref=e21]
+- contentinfo: "1단계 · 진형 편집 검토용 POC / C# Core와 별도\n         \n          이 화면은 조작감과 시각 구성을 검토하기 위한 Three.js 근사 모델이며\n          전투·카드·정산을 실행하지 않습니다."
+BACK 출격 진형 편집
+# note: interactive (clickable / focusable) elements only.
+- title: "JANSEON: SEOUL / PROTOTYPE HUB" [url=http://192.168.0.218:4173/]
+- banner:
+  - text: "JANSEON: SEOUL / PROTOTYPE HUB"
+  - heading "잔선: 서울 프로토타입" [level=1]
+- main:
+  - link "분대 아바타 렌더링 검토 중 Pilgrimage v23 atlas 방식 기반 12분대 및 픽셀 아바타 48명 외형 및 움직임 리뷰. 아바타 시스템의 시각적 품질을 테스트합니다. 아" [ref=e1]
+  - link "출격 진형 편집 승인 완료 작은 역사 승강장 동측 기준, 전투 개시 전 분대원 배치 및 진형 구축 인터페이스. 각 유닛의 역할에 따른 배치를 구성합니다. 진형 편집기 열기→" [ref=e2]
+  - link "실시간 분대 교전 승인 완료 6개 분대 대 6개 분대, 총 임시 병사 48명의 실시간 교전 시뮬레이션. 독립적으로 선택 가능한 분대 단위의 전투 흐름을 확인합니다. 전투 프리뷰 열" [ref=e3]
+DESTINATION 실시간 분대 교전
+# note: interactive (clickable / focusable) elements only.
+- title: "잔선: 서울 · 실시간 분대 전투 검토용 POC" [url=http://192.168.0.218:4173/poc/battle-preview/]
+- banner:
+  - text: "JANSEON: SEOUL / REALTIME SQUAD REVIEW"
+  - heading "실시간 분대 교전" [level=1]
+  - text: "작은 역사 · 6개 분대 대 6개 분대 / 임시 병사 48명\n          \n        \n        \n           02\n          \n             실시간 전투·일시정지\n             카드·사기·정산 없음"
+- main:
+  - region "영등포 동측 승강장 교전도" [ref=e1]:
+    - text: "고정 대형 분대 전투"
+    - heading "영등포 동측 승강장 교전도" [level=2]
+    - text: "30 TICK / SEC\n               MAX 4 / FRAME\n               12 SQUADS · 48 FIGURES"
+    - canvas "승강장에서 대형을 유지하며 싸우는 아군과 적 6개 분대를 보여 주는 Three.js 전투 장면" [ref=e2] [size=278x542]
+    - text: "아군 6분대 · 24명\n                적 6분대 · 24명\n            \n            \n               출격 대기\n               TICK 0000 · 0.0초\n            \n            \n             \n              분대당 임시 저폴리 병사 4명 · 최종 인원 규모 아님\n            \n          \n\n          \n             1–6  분대 선택\n             지면 클릭  이동\n             적 클릭  공격\n             Space  일시정지·재개\n             H  위치 사수\n             R  초기화"
+  - complementary "분대 지휘" [ref=e3] [scrollable]:
+    - text: "SQUAD COMMAND"
+    - heading "분대 지휘" [level=2]
+    - text: "출격 대기"
+    - button "교전 시작" [ref=e4]
+    - button "일시정지" [ref=e5] [disabled]
+    - button "전투 초기화" [ref=e6]
+    - region:
+      - heading "1. 아군 분대 선택" [level=3]
+      - text: "6분대 · 24/24명"
+      - button "서윤 분대 근위 · 4/4명 · HP 120/120" [ref=e7]
+      - button "민재 분대 근위 · 4/4명 · HP 120/120" [ref=e8]
+      - button "하린 분대 돌격 · 4/4명 · HP 80/80" [ref=e9]
+      - button "도윤 분대 돌격 · 4/4명 · HP 80/80" [ref=e10]
+      - button "지우 분대 궁수 · 4/4명 · HP 56/56" [ref=e11]
+      - button "은호 분대 궁수 · 4/4명 · HP 56/56" [ref=e12]
+    - region:
+      - text: "근위\n              \n                 방벽 01 · 대형 인원 4명"
+      - heading "서윤 분대" [level=3]
+      - text: "생존\n                 4 / 4명\n              \n              \n                 분대 HP\n                 120 / 120\n              \n              \n                 명령\n                 위치 사수\n              \n              \n                 정면\n                 남 · 180°"
+    - region:
+      - heading "2. 정면·위치 사수" [level=3]
+      - text: "정지 중에도 명령 예약"
+      - button "북" [ref=e13]
+      - button "서" [ref=e14]
+      - button "위치 사수" [ref=e15]
+      - button "동" [ref=e16]
+      - button "남" [ref=e17]
+    - region:
+      - heading "3. 적 분대 공격 지정" [level=3]
+      - text: "6분대 · 24/24명"
+      - button "적 근위 1 근위 · 4/4명 · HP 120/120" [ref=e18]
+      - button "적 근위 2 근위 · 4/4명 · HP 120/120" [ref=e19]
+      - button "적 돌격 3 돌격 · 4/4명 · HP 80/80" [ref=e20]
+      - button "적 돌격 4 돌격 · 4/4명 · HP 80/80" [ref=e21]
+      - button "적 궁수 5 궁수 · 4/4명 · HP 56/56" [ref=e22]
+      - button "적 궁수 6 궁수 · 4/4명 · HP 56/56" [ref=e23]
+    - text: "분대를 선택한 뒤 지면을 누르면 대형을 유지하며 이동합니다."
+    - region:
+      - heading "교전 기록" [level=3]
+      - text: "최근 3건\n            \n             아직 공격 판정이 없습니다."
+    - text: "승인 기본 진형"
+    - link "1단계 진형 편집 보기" [ref=e24]
+- contentinfo: "2단계 · 실시간 분대 전투·일시정지 검토용 POC / C# Core와 별도\n         \n          대형 유지 개념만 참고한 Three.js 근사 모델입니다. 카드·사기·증원·정산은 실행하지 않습니다."
+BACK 실시간 분대 교전
+# note: interactive (clickable / focusable) elements only.
+- title: "JANSEON: SEOUL / PROTOTYPE HUB" [url=http://192.168.0.218:4173/]
+- banner:
+  - text: "JANSEON: SEOUL / PROTOTYPE HUB"
+  - heading "잔선: 서울 프로토타입" [level=1]
+- main:
+  - link "분대 아바타 렌더링 검토 중 Pilgrimage v23 atlas 방식 기반 12분대 및 픽셀 아바타 48명 외형 및 움직임 리뷰. 아바타 시스템의 시각적 품질을 테스트합니다. 아" [ref=e1]
+  - link "출격 진형 편집 승인 완료 작은 역사 승강장 동측 기준, 전투 개시 전 분대원 배치 및 진형 구축 인터페이스. 각 유닛의 역할에 따른 배치를 구성합니다. 진형 편집기 열기→" [ref=e2]
+  - link "실시간 분대 교전 승인 완료 6개 분대 대 6개 분대, 총 임시 병사 48명의 실시간 교전 시뮬레이션. 독립적으로 선택 가능한 분대 단위의 전투 흐름을 확인합니다. 전투 프리뷰 열" [ref=e3]
+page is now [JANSEON: SEOUL / PROTOTYPE HUB](http://192.168.0.218:4173/)
+LINK_ACTIONS
+[
+  {
+    "before": {
+      "label": "분대 아바타 렌더링",
+      "ref": "e1",
+      "rootUrl": "http://192.168.0.218:4173/",
+      "rootTitle": "JANSEON: SEOUL / PROTOTYPE HUB"
+    },
+    "arrived": {
+      "url": "http://192.168.0.218:4173/poc/avatar-preview/",
+      "title": "잔선: 서울 · 아바타 렌더링 검토용 POC"
+    },
+    "returned": {
+      "url": "http://192.168.0.218:4173/",
+      "title": "JANSEON: SEOUL / PROTOTYPE HUB"
+    }
+  },
+  {
+    "before": {
+      "label": "출격 진형 편집",
+      "ref": "e2",
+      "rootUrl": "http://192.168.0.218:4173/",
+      "rootTitle": "JANSEON: SEOUL / PROTOTYPE HUB"
+    },
+    "arrived": {
+      "url": "http://192.168.0.218:4173/poc/formation-editor/",
+      "title": "잔선: 서울 · 진형 편집 검토용 POC"
+    },
+    "returned": {
+      "url": "http://192.168.0.218:4173/",
+      "title": "JANSEON: SEOUL / PROTOTYPE HUB"
+    }
+  },
+  {
+    "before": {
+      "label": "실시간 분대 교전",
+      "ref": "e3",
+      "rootUrl": "http://192.168.0.218:4173/",
+      "rootTitle": "JANSEON: SEOUL / PROTOTYPE HUB"
+    },
+    "arrived": {
+      "url": "http://192.168.0.218:4173/poc/battle-preview/",
+      "title": "잔선: 서울 · 실시간 분대 전투 검토용 POC"
+    },
+    "returned": {
+      "url": "http://192.168.0.218:4173/",
+      "title": "JANSEON: SEOUL / PROTOTYPE HUB"
+    }
+  }
+]
+FINAL_ROOT
+{"url":"http://192.168.0.218:4173/","title":"JANSEON: SEOUL / PROTOTYPE HUB","viewport":{"innerWidth":390,"innerHeight":844}}
+[2m[ok | 1385ms][0m

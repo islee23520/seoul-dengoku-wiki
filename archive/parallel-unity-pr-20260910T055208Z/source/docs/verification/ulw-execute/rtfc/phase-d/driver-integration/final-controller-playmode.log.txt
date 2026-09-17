@@ -1,0 +1,963 @@
+VBCSCompilerPreWarmer: pre-warm launched (dotnet PID 96732)
+VBCSCompiler prewarm took 6.94 ms
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from 'trunk' branch; Version is '6000.7.0a5 (a15235a53881) revision 10572341'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Channel LicenseClient-oliver doesn't exist
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'ko' Physical Memory: 65111 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-09-08T18:37:13Z
+[Licensing::Module] Successfully launched the LicensingClient (PId: 90244)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-oliver" at "2026-09-08T18:37:13.8692449Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 90244, path: "E:/Unity/Editor/6000.7.0a5/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.19.0-rc.1+a1d64c6
+  Session Id:              57c218d273d54ffcaca10940cbabd60f
+  Correlation Id:          3eb287c55a4c646d5db74b192176f370
+  External correlation Id: 2649207192983289728
+  Machine Id:              1emt4pURsk/AWYK0bEmIJCJrmPQ=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-oliver" (connect: 0.16s, validation: 0.13s, handshake: 0.05s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-oliver-notifications" at "2026-09-08T18:37:14.0458813Z"
+[Licensing::Module] Connected to LicensingClient (PId: 90244, launch time: 0.00, total connection time: 0.34s)
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-8T58-MGGS-PP7T-32EU-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: 2026-10-15T19:26:25Z
+[Licensing::Module] License group:
+  Id: 86166-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Module] Licensing Background thread has ended after 0.35s
+
+COMMAND LINE ARGUMENTS:
+E:\Unity\Editor\6000.7.0a5\Editor\Unity.exe
+-batchmode
+-nographics
+-projectPath
+E:\git\seoul-kenshi-wt\rtfc-phase-d\Game
+-runTests
+-testPlatform
+PlayMode
+-testFilter
+Janseon.Foundation.Tests.CoreLoopPlayModeTests.CombatUi_SelectsAndPlaysMobilityCard_ThenTicksCooldown
+-testResults
+E:\git\seoul-kenshi-wt\rtfc-phase-d\docs\verification\ulw-execute\rtfc\phase-d\driver-integration\final-controller-playmode.xml
+-logFile
+E:\git\seoul-kenshi-wt\rtfc-phase-d\docs\verification\ulw-execute\rtfc\phase-d\driver-integration\final-controller-playmode.log.txt
+Successfully changed project path to: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game
+E:/git/seoul-kenshi-wt/rtfc-phase-d/Game
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-remapper-allocator-initial-capacity=32768"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-entities-archetype-allocator-budget=16777216"
+    "memorysetup-entities-query-allocator-budget=16777216"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=1"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Logging is directed to a specific file, skipping project log.
+Player connection [105616]  Target information:
+
+Player connection [105616]  * "[IP] 172.22.48.1 [Port] 55504 [Flags] 2 [Guid] 348292320 [EditorId] 348292320 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-BO514ET) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [105616]  * "[IP] 172.28.64.1 [Port] 55504 [Flags] 2 [Guid] 348292320 [EditorId] 348292320 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-BO514ET) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [105616]  * "[IP] 192.168.0.136 [Port] 55504 [Flags] 2 [Guid] 348292320 [EditorId] 348292320 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-BO514ET) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [105616]  * "[IP] 169.254.112.0 [Port] 55504 [Flags] 2 [Guid] 348292320 [EditorId] 348292320 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-BO514ET) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [105616]  * "[IP] 100.77.98.25 [Port] 55504 [Flags] 2 [Guid] 348292320 [EditorId] 348292320 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-BO514ET) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [105616] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [105616] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-5940" after 0.2 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-8T58-MGGS-PP7T-32EU-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: 2026-10-15T19:26:25Z
+[Licensing::Module] License group:
+  Id: 86166-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Library Redirect Path: Library/
+Launching Unity Data Store - E:/Unity/Editor/6000.7.0a5/Editor/Data/Tools/Unity.DataStore.exe 
+Unity Data Store artifact dir = Library/DataStore, working dir = E:/git/seoul-kenshi-wt/rtfc-phase-d/GameFMOD initialized on nosound output
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Unity Data Store running and initialised
+Initialize engine version: 6000.7.0a5 (a15235a53881)
+[EntityIdStore] init: VM path (explicit commit), pageSize=4096, blockCount=1048576, entitiesPerBlock=256, slots reserved=4294967296 bytes
+[Subsystems] Discovering subsystems at path E:/Unity/Editor/6000.7.0a5/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/git/seoul-kenshi-wt/rtfc-phase-d/Game/Assets
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Initialize mono
+Mono path[0] = 'E:/Unity/Editor/6000.7.0a5/Editor/Data/Managed'
+Mono path[1] = 'E:/Unity/Editor/6000.7.0a5/Editor/Data/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = 'E:/Unity/Editor/6000.7.0a5/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'E:/Unity/Editor/6000.7.0a5/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56940
+CodeReloadManager initialized
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/Unity/Editor/6000.7.0a5/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002458 seconds.
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-잔선: 서울
+Package Manager log level set to [2]
+Native extension for WindowsStandalone target not found
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.629 seconds
+Domain Reload Profiling: 1153ms
+	BeginReloadAssembly (135ms)
+		CreateAndSetChildDomain (8ms)
+	RebuildCommonClasses (4ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (72ms)
+	LoadAllAssembliesAndSetupDomain (300ms)
+		LoadAssemblies (120ms)
+		TypeCache.Refresh (169ms)
+			TypeCache.ScanAssembly (158ms)
+		AnalyzeDomain (0ms)
+	FinalizeReload (631ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (137ms)
+			ProcessInitializeOnLoadAttributes (51ms)
+			ProcessInitializeOnLoadMethodAttributes (188ms)
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-8T58-MGGS-PP7T-32EU-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: 2026-10-15T19:37:15Z
+[Licensing::Module] License group:
+  Id: 86166-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 57 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.ide.rider@3.0.38 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.ide.rider@1f60b3138684)
+    com.unity.ide.visualstudio@2.0.26 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f)
+    com.unity.inputsystem@1.20.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.inputsystem@7a4e1a2a8194)
+    com.unity.searcher@4.9.5 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.searcher@a463122f2c00)
+    com.unity.nuget.mono-cecil@1.11.6 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff)
+  Built-in packages:
+    com.unity.render-pipelines.universal@17.7.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.render-pipelines.universal@c657e0850617)
+    com.unity.test-framework@1.8.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.test-framework@4c309923fa3b)
+    com.unity.ugui@2.7.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.ugui@8e276752998c)
+    com.unity.modules.accessibility@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.physicscore2d@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.physicscore2d)
+    com.unity.modules.screencapture@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.smartstrings@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.smartstrings)
+    com.unity.modules.terrain@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tetgen@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.tetgen)
+    com.unity.modules.tilemap@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.timelinefoundation@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.timelinefoundation)
+    com.unity.modules.ui@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.wind@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.modules.hierarchycore)
+    com.unity.ext.nunit@2.1.1 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.ext.nunit@f6178be85c6e)
+    com.unity.render-pipelines.core@17.7.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.render-pipelines.core@c86064616c0c)
+    com.unity.shadergraph@17.7.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.shadergraph@f32f227ad317)
+    com.unity.render-pipelines.universal-config@17.7.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.render-pipelines.universal-config@767fc04a69c2)
+    com.unity.graph-authoring@1.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.graph-authoring@cfd2588851ee)
+    com.unity.burst@2.0.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.burst@626e66ab421b)
+    com.unity.collections@6.7.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.collections@642e35c36221)
+    com.unity.profiling.core@1.0.3 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.profiling.core@9f367c25a5d3)
+    com.unity.test-framework.performance@6.6.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\com.unity.test-framework.performance@2779acc3f9c0)
+  Git packages:
+    jp.hadashikick.vcontainer@https://github.com/hadashiA/VContainer.git?path=VContainer/Assets/VContainer#1.19.0 (location: E:\git\seoul-kenshi-wt\rtfc-phase-d\Game\Library\PackageCache\jp.hadashikick.vcontainer@dcf16cda6a65)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.01 seconds
+ADB: OOP importers: 'AudioImporter' is OOP-eligible (per-importer)
+ADB: OOP importers: 'ComputeShaderImporter' is OOP-eligible (per-importer)
+ADB: OOP importers: 'FBXImporter' is OOP-eligible (per-importer)
+ADB: OOP importers: 'Mesh3DSImporter' is OOP-eligible (per-importer)
+ADB: OOP importers: 'PrefabImporter' is OOP-eligible (per-importer)
+ADB: OOP importers: 'RayTracingShaderImporter' is OOP-eligible (per-importer)
+ADB: OOP importers: 'ShaderImporter' is OOP-eligible (per-importer)
+ADB: OOP importers: 'TextScriptImporter' is OOP-eligible (per-importer)
+ADB: OOP importers: 'TextureImporter' is OOP-eligible (per-importer)
+ADB: OOP importers: 'TrueTypeFontImporter' is OOP-eligible (per-importer)
+ADB: OOP importers: 'VideoClipImporter' is OOP-eligible (per-importer)
+ADB: OOP importers: queue -1003 composition: TextureImporter, TextureImporter, TextureImporter, TextureImporter, TextureImporter, TextureImporter, TextureImporter, TextureImporter, TextureImporter, TextureImporter, TextureImporter, TextureImporter, TextureImporter, TextureImporter, TextureImporter (only the named importers above run OOP; the rest stay in-process)
+ADB: OOP importers: queue -1001 composition: ShaderImporter, ComputeShaderImporter, RayTracingShaderImporter (only the named importers above run OOP; the rest stay in-process)
+ADB: OOP importers: queue 2 composition: TrueTypeFontImporter, TrueTypeFontImporter, TrueTypeFontImporter, TrueTypeFontImporter (only the named importers above run OOP; the rest stay in-process)
+ADB: OOP importers: queue 100 composition: Mesh3DSImporter, FBXImporter, FBXImporter, FBXImporter, FBXImporter, FBXImporter, FBXImporter, FBXImporter, FBXImporter, FBXImporter, FBXImporter (only the named importers above run OOP; the rest stay in-process)
+ADB: OOP importers: queue 1050 composition: TextScriptImporter, TextScriptImporter, TextScriptImporter, TextScriptImporter, TextScriptImporter, TextScriptImporter, TextScriptImporter, TextScriptImporter, TextScriptImporter, TextScriptImporter, TextScriptImporter, TextScriptImporter (only the named importers above run OOP; the rest stay in-process)
+ADB: OOP importers: queue 1100 composition: AudioImporter, AudioImporter, AudioImporter, AudioImporter, AudioImporter, AudioImporter, AudioImporter, AudioImporter, AudioImporter, AudioImporter (only the named importers above run OOP; the rest stay in-process)
+ADB: OOP importers: queue 1500 composition: PrefabImporter (only the named importers above run OOP; the rest stay in-process)
+ADB: OOP importers: queue 1700 composition: VideoClipImporter, VideoClipImporter, VideoClipImporter, VideoClipImporter, VideoClipImporter, VideoClipImporter, VideoClipImporter, VideoClipImporter, VideoClipImporter, VideoClipImporter, VideoClipImporter, VideoClipImporter (only the named importers above run OOP; the rest stay in-process)
+Starting: E:\Unity\Editor\6000.7.0a5\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: E:/git/seoul-kenshi-wt/rtfc-phase-d/Game
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 0s407ms
+[615/781    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+*** Tundra build success (0.38 seconds), 1 items updated, 781 evaluated
+AssetDatabase: script compilation time: 0.781753s
+Begin MonoManager ReloadAssembly
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Native extension for WindowsStandalone target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:False
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.663 seconds
+Domain Reload Profiling: 1518ms
+	BeginReloadAssembly (315ms)
+		DisableScriptedObjects (14ms)
+		CreateAndSetChildDomain (143ms)
+	RebuildCommonClasses (8ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (77ms)
+	LoadAllAssembliesAndSetupDomain (444ms)
+		LoadAssemblies (259ms)
+		TypeCache.Refresh (63ms)
+			TypeCache.ScanAssembly (56ms)
+		AnalyzeDomain (32ms)
+			BuildScriptInfoCaches (28ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (664ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (74ms)
+			ProcessInitializeOnLoadAttributes (94ms)
+			ProcessInitializeOnLoadMethodAttributes (93ms)
+			AfterProcessingInitializeOnLoad (12ms)
+		AwakeInstancesAfterBackupRestoration (27ms)
+Starting new worker id: 0 with log in E:/git/seoul-kenshi-wt/rtfc-phase-d/Game/Logs/AssetImportWorkerHW0.log
+Importing 'GUID: 294f4afd4681fc34d955c7fb1096a6cf - Path: Assets/Resources/PerformanceTestRunSettings.json' with importer (TextScriptImporter)
+Imported 'GUID: 294f4afd4681fc34d955c7fb1096a6cf' -> (Import Result ID: '396dd78e44a6cb23fa0b47fcdc57ac8a') in 0.015 seconds [static dependencies only]. Details - ImportResultOutputID=12f2fbdfe761b6aad2396178e2d5e934 DependenciesID=ed0127f0c5754c5a628f3528990cc4ee StaticDependenciesID=8948d243b1d4a985c82ae587d8460102 
+Importing 'GUID: 9e18d5824e3683d43a14d01b2876ce80 - Path: Assets/Resources/PerformanceTestRunInfo.json' with importer (TextScriptImporter)
+Imported 'GUID: 9e18d5824e3683d43a14d01b2876ce80' -> (Import Result ID: 'da26daf4402443db09dc3986c911ae47') in 0.006 seconds [static dependencies only]. Details - ImportResultOutputID=8effc1d20656ad91bc6a2cb4b6c3db3c DependenciesID=b742be99c9f0568530a70cd4beb955d3 StaticDependenciesID=b6a1a5be467a0069edb143a77a578b95 
+
+Asset Pipeline Refresh (id=4b538c5567891da489f360a50a867442): Total: 2.921 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=2 (actual=2, local cache=0, cache server=0)
+		Asset DB Process Time: managed=1 ms, native=998 ms
+		Asset DB Callback time: managed=193 ms, native=15 ms
+		Scripting: domain reloads=1, domain reload time=928 ms, compile time=784 ms, other=0 ms
+		Project Asset Count: scripts=986, non-scripts=2773
+		Asset File Changes: new=2, changed=2, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 16.097ms
+	ApplyChangesToAssetFolders: 0.578ms
+	Scan: 87.306ms
+	Collect global state as custom dependencies: 7.717ms
+	OnSourceAssetsModified: 0.477ms
+	CategorizeScriptCompilationAssets: 14.831ms
+	ProcessAssetsWithTransientArtifactChanges: 34.363ms
+	CategorizeAssets: 36.611ms
+	CompileScripts: 783.846ms
+	ImportOutOfDateAssets: 699.432ms (666.837ms without children)
+		ImportManagerImport: 22.281ms (1.113ms without children)
+		UnloadImportedAssets: 0.076ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.291ms
+		ImportSchedulerStart: 9.940ms
+	PostProcessAllAssets: 193.403ms
+		XRBuildSystem.XRAssetImported 0.132ms
+		VersionControlSettings.HiddenFilePostprocess 0.120ms
+		MonoPostProcessAllAssets: 192.581ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 112.709ms
+			AssetPostprocessor.OnPostprocessAllAssets 32.876ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 10.653ms
+			SyncVS.PostprocessSyncProject 7.991ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 6.742ms
+			MaterialPostprocessor.OnPostprocessAllAssets 2.020ms
+			AssetChangedListener.OnPostprocessAllAssets 1.523ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 1.306ms
+			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 1.278ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 1.155ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 1.013ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.398ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.329ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.303ms
+			PostProcessor.OnPostprocessAllAssets 0.282ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.276ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.269ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.269ms
+			AssetEvents.OnPostprocessAllAssets 0.233ms
+			Postprocessor.OnPostprocessAllAssets 0.224ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.207ms
+			InputActionJsonNameModifierAssetProcessor.OnPostprocessAllAssets 0.201ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.192ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 0.183ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.158ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.153ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.117ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.113ms
+			ThemePostprocessor.OnPostprocessAllAssets 0.111ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.089ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.074ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.073ms
+	PostAssetChangesProfiler: 1.659ms
+	UnloadStreamsBegin: 0.979ms
+	PersistCurrentRevisions: 0.122ms
+	GenerateScriptTypeHashes: 1.285ms
+	GenerateScriptTypeSerializationHashes: 2.659ms
+	Untracked: 1025.133ms
+
+Application.AssetDatabase Initial Refresh End
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Scanning for USB devices : 8.684ms
+Initializing Unity extensions:
+Unloading 266 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3821 unused Assets / (6.1 MB). Loaded Objects now: 4774.
+Memory consumption went from 343.4 MB to 337.3 MB.
+Total: 10.379100 ms (FindLiveObjects: 0.339300 ms CreateObjectMapping: 0.166000 ms MarkObjects: 7.734000 ms  DeleteObjects: 2.035500 ms)
+
+Microsoft Media Foundation video decoding to texture disabled: graphics device is Null, only Direct3D 11 and Direct3D 12 (only on desktop) are supported for hardware-accelerated video decoding.
+[Project] Loading completed in 5.369 seconds
+	Project init time: 				4.914 seconds
+		Template init time: 		0.000 seconds
+		Package Manager init time: 		0.201 seconds
+		Asset Database init time: 		0.192 seconds
+		Global illumination init time: 	0.002 seconds
+		Assemblies load time: 			1.213 seconds
+		Unity extensions init time: 	0.009 seconds
+		Asset Database refresh time: 	2.921 seconds
+	Scene opening time: 			0.079 seconds
+##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1788892639057,"processId":5940,"projectLoad":5.369265599999999,"projectInit":4.9139809,"templateInit":0.0,"packageManagerInit":0.2014648,"assetDatabaseInit":0.1917408,"globalIlluminationInit":0.0024893,"assembliesLoad":1.2133162,"unityExtensionsInit":0.0085306,"assetDatabaseRefresh":2.9214933,"sceneOpening":0.0791518}
+##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1788892639057,"processId":5940,"editorVersion":"6000.7.0a5 (a15235a53881)","branch":"trunk","buildType":"Release","platform":"Windows"}
+[Licensing::Client] Successfully resolved entitlement details
+Running tests for ExecutionSettings with details:
+targetPlatform = 
+playerHeartbeatTimeout = 600
+filters[0] = 
+   Filter with settings:
+   testMode = PlayMode
+   targetPlatform = 
+   testNames = null
+   groupNames = Janseon.Foundation.Tests.CoreLoopPlayModeTests.CombatUi_SelectsAndPlaysMobilityCard_ThenTicksCooldown
+   categoryNames = null
+   assemblyNames = null
+ignoreTests = {}
+featureFlags = null
+
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+UnityEditor.TestTools.TestRunner.CommandLineTest.Executer:InitializeAndExecuteRun (string[]) (at ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/CommandLineTest/Executer.cs:53)
+UnityEditor.TestTools.TestRunner.CommandLineTest.TestStarter:InitializeAndExecuteRun () (at ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/CommandLineTest/TestStarter.cs:64)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/CommandLineTest/Executer.cs Line: 53)
+
+[UnityConnectServicesConfig] config is NOT valid, switching to default
+Created GICache directory at C:/Users/oliver/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.014s, timestamps: [5.371 - 5.385]
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (0 B). Loaded Objects now: 4926.
+Memory consumption went from 343.1 MB to 343.1 MB.
+Total: 6.788600 ms (FindLiveObjects: 0.203200 ms CreateObjectMapping: 0.040500 ms MarkObjects: 6.438100 ms  DeleteObjects: 0.007000 ms)
+
+Importing 'GUID: b02ea28b58a07244cbc0726c50da98bb - Path: Assets/InitTestScene8ab59756-345f-45ab-a85c-0b0876ab9e5f.unity' with importer (DefaultImporter)
+Imported 'GUID: b02ea28b58a07244cbc0726c50da98bb' -> (Import Result ID: '59ff340c3a252f831ffdbd1a4581a8f0') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=761b61d69ded99579739a625f2e49228 DependenciesID=342df79906f0673366ab93737810e01f StaticDependenciesID=3b0c19cd539f60a5679cffc6234135f1 
+Asset Pipeline Refresh (id=52dbef5df8a5d254684a90a0820ade8b): Total: 0.054 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Executing IPrebuildSetup for: Unity.PerformanceTesting.Editor.TestRunBuilder.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+UnityEditor.TestTools.TestRunner.TestRun.Tasks.BuildActionTaskBase`1/<ExecuteMethods>d__8<UnityEngine.TestTools.IPrebuildSetup>:MoveNext () (at ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/TestRun/Tasks/BuildActionTaskBase.cs:48)
+UnityEditor.TestTools.TestRunner.TestRun.Tasks.BuildActionTaskBase`1/<Execute>d__7<UnityEngine.TestTools.IPrebuildSetup>:MoveNext () (at ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/TestRun/Tasks/BuildActionTaskBase.cs:34)
+UnityEditor.TestTools.TestRunner.TestRun.TestJobRunner:ExecuteStep () (at ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/TestRun/TestJobRunner.cs:194)
+UnityEditor.TestTools.TestRunner.TestRun.TestJobRunner:ExecuteCallback () (at ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/TestRun/TestJobRunner.cs:129)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/TestRun/Tasks/BuildActionTaskBase.cs Line: 48)
+
+Reloading assemblies for play mode.
+Reloading assemblies after forced synchronous recompile.
+Begin MonoManager ReloadAssembly
+Worker ready: AssetImportWorkerHW0 0
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Native extension for WindowsStandalone target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:False
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.742 seconds
+Domain Reload Profiling: 1408ms
+	BeginReloadAssembly (332ms)
+		DisableScriptedObjects (16ms)
+		CreateAndSetChildDomain (164ms)
+	RebuildCommonClasses (7ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (75ms)
+	LoadAllAssembliesAndSetupDomain (241ms)
+		LoadAssemblies (114ms)
+		TypeCache.Refresh (4ms)
+		AnalyzeDomain (5ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (743ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (76ms)
+			ProcessInitializeOnLoadAttributes (90ms)
+			ProcessInitializeOnLoadMethodAttributes (161ms)
+			AfterProcessingInitializeOnLoad (12ms)
+		AwakeInstancesAfterBackupRestoration (36ms)
+No restricted APIs configured; Validation skipped.
+Checking 7 assemblies for restricted APIs found 0 usage(s) in 3 ms
+
+Asset Pipeline Refresh (id=92f62683d81f89b42824fe283075b5c4): Total: 2.154 seconds - Initiated by StopAssetImportingV2(ForceSynchronousImport | ForceDomainReload)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=895 ms
+		Asset DB Callback time: managed=337 ms, native=195 ms
+		Scripting: domain reloads=1, domain reload time=723 ms, compile time=2 ms, other=0 ms
+		Project Asset Count: scripts=986, non-scripts=2774
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 2.382ms
+	ApplyChangesToAssetFolders: 0.239ms
+	Collect global state as custom dependencies: 1.552ms
+	ProcessAssetsWithTransientArtifactChanges: 57.410ms
+	CategorizeAssets: 31.633ms
+	CompileScripts: 1.706ms
+	ImportOutOfDateAssets: 746.549ms (745.071ms without children)
+		CollectScriptTypesHashes: 1.031ms
+		ReloadNativeAssets: 0.710ms
+		UnloadImportedAssets: 0.265ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.344ms
+		ImportSchedulerStart: 0.143ms
+	PostProcessAllAssets: 531.064ms
+		PostProcessCallbackCreateDeferredMaterials 6.321ms
+		AssemblyValidation.PostprocessAllAssets 5.045ms
+		ShaderAssetModifiedCallback 3.125ms
+		RaytracingShaderImportPostprocess 2.492ms
+		ComputeShaderImportPostprocess 2.318ms
+		SpeedTreeImporter.PostprocessAllAssets 1.898ms
+		LocalizationDatabase.AssetDatabasePostprocessCallback 1.521ms
+		XRBuildSystem.XRAssetImported 0.129ms
+		MonoPostProcessAllAssets: 336.936ms
+			SyncVS.PostprocessSyncProject 146.874ms
+			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 62.353ms
+			AssetPostprocessor.OnPostprocessAllAssets 14.581ms
+			PostProcessor.OnPostprocessAllAssets 12.723ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 11.914ms
+			MaterialPostprocessor.OnPostprocessAllAssets 11.872ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 11.463ms
+			InputActionJsonNameModifierAssetProcessor.OnPostprocessAllAssets 11.463ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 8.723ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 6.442ms
+			AssetChangedListener.OnPostprocessAllAssets 5.340ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 4.162ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 2.642ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 1.121ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.374ms
+			Postprocessor.OnPostprocessAllAssets 0.291ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.257ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.239ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.235ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.215ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.210ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.207ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 0.192ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.179ms
+			ThemePostprocessor.OnPostprocessAllAssets 0.172ms
+			AssetEvents.OnPostprocessAllAssets 0.164ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 0.159ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.149ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.136ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.084ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.080ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.080ms
+	PostAssetChangesProfiler: 1.287ms
+	GatherAllCurrentPrimaryImportResultRevisions: 0.102ms
+	UnloadStreamsBegin: 0.121ms
+	PersistCurrentRevisions: 0.064ms
+	GenerateScriptTypeHashes: 2.167ms
+	GenerateScriptTypeSerializationHashes: 3.758ms
+	Untracked: 761.497ms
+
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            0.618 ms
+	Integration:            40.767 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.010 ms
+	Total Operation Time:   41.397 ms
+[Licensing::Client] Successfully resolved entitlement details
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.337800 ms
+Loaded scene 'Assets/Scenes/Bootstrap.unity'
+	Deserialize:            1.052 ms
+	Integration:            26.560 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.323 ms
+	Total Operation Time:   27.936 ms
+Unloading 3429 unused Assets / (1.8 MB). Loaded Objects now: 4946.
+Memory consumption went from 356.4 MB to 354.6 MB.
+Total: 8.196200 ms (FindLiveObjects: 0.960200 ms CreateObjectMapping: 0.092100 ms MarkObjects: 6.088800 ms  DeleteObjects: 0.954500 ms)
+
+Unable to load font face for [Malgun Gothic]. Make sure "Include Font Data" is enabled in the Font Import Settings.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+TMPro.TMP_FontAsset:CreateFontAsset (UnityEngine.Font,int,int,int,UnityEngine.TextCore.LowLevel.GlyphRenderMode,int,int,TMPro.AtlasPopulationMode,bool) (at ./Library/PackageCache/com.unity.ugui@8e276752998c/Runtime/TMP/TMP_FontAsset.cs:592)
+TMPro.TMP_FontAsset:CreateFontAsset (UnityEngine.Font,int,int,UnityEngine.TextCore.LowLevel.GlyphRenderMode,int,int,TMPro.AtlasPopulationMode,bool) (at ./Library/PackageCache/com.unity.ugui@8e276752998c/Runtime/TMP/TMP_FontAsset.cs:584)
+TMPro.TMP_FontAsset:CreateFontAsset (UnityEngine.Font) (at ./Library/PackageCache/com.unity.ugui@8e276752998c/Runtime/TMP/TMP_FontAsset.cs:567)
+Janseon.Foundation.UI.UguiHudBuilder:TmpFont () (at Assets/Janseon/Foundation/UI/UguiHudBuilder.cs:225)
+Janseon.Foundation.UI.UguiHudBuilder:TmpLabel (UnityEngine.RectTransform,string,string,int,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,TMPro.TextAlignmentOptions,UnityEngine.Color) (at Assets/Janseon/Foundation/UI/UguiHudBuilder.cs:305)
+Janseon.Foundation.UI.UguiHudBuilder:BuildMainTitle (UnityEngine.Transform) (at Assets/Janseon/Foundation/UI/UguiHudBuilder.cs:197)
+Janseon.Foundation.UI.MainTitleUiHost:Construct (Janseon.Foundation.Composition.MainTitlePresenter,Janseon.Foundation.UI.UiScreenDocumentLease) (at Assets/Janseon/Foundation/UI/Presenters/MainTitleUiHost.cs:46)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+VContainer.Internal.ReflectionInjector:InjectMethods (object,VContainer.IObjectResolver,System.Collections.Generic.IReadOnlyList`1<VContainer.IInjectParameter>) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Internal/ReflectionInjector.cs:111)
+VContainer.Internal.ReflectionInjector:Inject (object,VContainer.IObjectResolver,System.Collections.Generic.IReadOnlyList`1<VContainer.IInjectParameter>) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Internal/ReflectionInjector.cs:29)
+VContainer.Unity.FindComponentProvider:SpawnInstance (VContainer.IObjectResolver) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Unity/InstanceProviders/FindComponentProvider.cs:65)
+VContainer.ScopedContainer/<>c__DisplayClass17_0:<.ctor>b__1 () (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Container.cs:82)
+System.Lazy`1<object>:ViaFactory (System.Threading.LazyThreadSafetyMode)
+System.Lazy`1<object>:ExecutionAndPublication (System.LazyHelper,bool)
+System.Lazy`1<object>:CreateValue ()
+System.Lazy`1<object>:get_Value ()
+VContainer.ScopedContainer:Resolve (System.Type,object) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Container.cs:91)
+VContainer.Unity.ContainerBuilderUnityExtensions/<>c__DisplayClass8_0:<RegisterComponentInHierarchy>b__0 (VContainer.IObjectResolver) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Unity/ContainerBuilderUnityExtensions.cs:154)
+VContainer.ScopedContainerBuilder:BuildScope () (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/ContainerBuilder.cs:41)
+VContainer.ScopedContainer:CreateScope (System.Action`1<VContainer.IContainerBuilder>) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Container.cs:126)
+VContainer.Container:CreateScope (System.Action`1<VContainer.IContainerBuilder>) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Container.cs:263)
+VContainer.Unity.LifetimeScope:Build () (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Unity/LifetimeScope.cs:203)
+VContainer.Unity.LifetimeScope:Awake () (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Unity/LifetimeScope.cs:149)
+
+(Filename: ./Library/PackageCache/com.unity.ugui@8e276752998c/Runtime/TMP/TMP_FontAsset.cs Line: 592)
+
+TmpFont bundle asset creation failed: Value cannot be null.
+Parameter name: shader
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Janseon.Foundation.UI.UguiHudBuilder:TmpFont () (at Assets/Janseon/Foundation/UI/UguiHudBuilder.cs:254)
+Janseon.Foundation.UI.UguiHudBuilder:TmpLabel (UnityEngine.RectTransform,string,string,int,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,TMPro.TextAlignmentOptions,UnityEngine.Color) (at Assets/Janseon/Foundation/UI/UguiHudBuilder.cs:305)
+Janseon.Foundation.UI.UguiHudBuilder:BuildMainTitle (UnityEngine.Transform) (at Assets/Janseon/Foundation/UI/UguiHudBuilder.cs:197)
+Janseon.Foundation.UI.MainTitleUiHost:Construct (Janseon.Foundation.Composition.MainTitlePresenter,Janseon.Foundation.UI.UiScreenDocumentLease) (at Assets/Janseon/Foundation/UI/Presenters/MainTitleUiHost.cs:46)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+VContainer.Internal.ReflectionInjector:InjectMethods (object,VContainer.IObjectResolver,System.Collections.Generic.IReadOnlyList`1<VContainer.IInjectParameter>) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Internal/ReflectionInjector.cs:111)
+VContainer.Internal.ReflectionInjector:Inject (object,VContainer.IObjectResolver,System.Collections.Generic.IReadOnlyList`1<VContainer.IInjectParameter>) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Internal/ReflectionInjector.cs:29)
+VContainer.Unity.FindComponentProvider:SpawnInstance (VContainer.IObjectResolver) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Unity/InstanceProviders/FindComponentProvider.cs:65)
+VContainer.ScopedContainer/<>c__DisplayClass17_0:<.ctor>b__1 () (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Container.cs:82)
+System.Lazy`1<object>:ViaFactory (System.Threading.LazyThreadSafetyMode)
+System.Lazy`1<object>:ExecutionAndPublication (System.LazyHelper,bool)
+System.Lazy`1<object>:CreateValue ()
+System.Lazy`1<object>:get_Value ()
+VContainer.ScopedContainer:Resolve (System.Type,object) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Container.cs:91)
+VContainer.Unity.ContainerBuilderUnityExtensions/<>c__DisplayClass8_0:<RegisterComponentInHierarchy>b__0 (VContainer.IObjectResolver) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Unity/ContainerBuilderUnityExtensions.cs:154)
+VContainer.ScopedContainerBuilder:BuildScope () (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/ContainerBuilder.cs:41)
+VContainer.ScopedContainer:CreateScope (System.Action`1<VContainer.IContainerBuilder>) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Container.cs:126)
+VContainer.Container:CreateScope (System.Action`1<VContainer.IContainerBuilder>) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Container.cs:263)
+VContainer.Unity.LifetimeScope:Build () (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Unity/LifetimeScope.cs:203)
+VContainer.Unity.LifetimeScope:Awake () (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Unity/LifetimeScope.cs:149)
+
+(Filename: Assets/Janseon/Foundation/UI/UguiHudBuilder.cs Line: 254)
+
+TmpFont file-path asset creation failed: Value cannot be null.
+Parameter name: shader
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Janseon.Foundation.UI.UguiHudBuilder:TmpFont () (at Assets/Janseon/Foundation/UI/UguiHudBuilder.cs:281)
+Janseon.Foundation.UI.UguiHudBuilder:TmpLabel (UnityEngine.RectTransform,string,string,int,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,TMPro.TextAlignmentOptions,UnityEngine.Color) (at Assets/Janseon/Foundation/UI/UguiHudBuilder.cs:305)
+Janseon.Foundation.UI.UguiHudBuilder:BuildMainTitle (UnityEngine.Transform) (at Assets/Janseon/Foundation/UI/UguiHudBuilder.cs:197)
+Janseon.Foundation.UI.MainTitleUiHost:Construct (Janseon.Foundation.Composition.MainTitlePresenter,Janseon.Foundation.UI.UiScreenDocumentLease) (at Assets/Janseon/Foundation/UI/Presenters/MainTitleUiHost.cs:46)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+VContainer.Internal.ReflectionInjector:InjectMethods (object,VContainer.IObjectResolver,System.Collections.Generic.IReadOnlyList`1<VContainer.IInjectParameter>) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Internal/ReflectionInjector.cs:111)
+VContainer.Internal.ReflectionInjector:Inject (object,VContainer.IObjectResolver,System.Collections.Generic.IReadOnlyList`1<VContainer.IInjectParameter>) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Internal/ReflectionInjector.cs:29)
+VContainer.Unity.FindComponentProvider:SpawnInstance (VContainer.IObjectResolver) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Unity/InstanceProviders/FindComponentProvider.cs:65)
+VContainer.ScopedContainer/<>c__DisplayClass17_0:<.ctor>b__1 () (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Container.cs:82)
+System.Lazy`1<object>:ViaFactory (System.Threading.LazyThreadSafetyMode)
+System.Lazy`1<object>:ExecutionAndPublication (System.LazyHelper,bool)
+System.Lazy`1<object>:CreateValue ()
+System.Lazy`1<object>:get_Value ()
+VContainer.ScopedContainer:Resolve (System.Type,object) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Container.cs:91)
+VContainer.Unity.ContainerBuilderUnityExtensions/<>c__DisplayClass8_0:<RegisterComponentInHierarchy>b__0 (VContainer.IObjectResolver) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Unity/ContainerBuilderUnityExtensions.cs:154)
+VContainer.ScopedContainerBuilder:BuildScope () (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/ContainerBuilder.cs:41)
+VContainer.ScopedContainer:CreateScope (System.Action`1<VContainer.IContainerBuilder>) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Container.cs:126)
+VContainer.Container:CreateScope (System.Action`1<VContainer.IContainerBuilder>) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Container.cs:263)
+VContainer.Unity.LifetimeScope:Build () (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Unity/LifetimeScope.cs:203)
+VContainer.Unity.LifetimeScope:Awake () (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Unity/LifetimeScope.cs:149)
+
+(Filename: Assets/Janseon/Foundation/UI/UguiHudBuilder.cs Line: 281)
+
+TmpFont file-path asset creation failed: Value cannot be null.
+Parameter name: shader
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+Janseon.Foundation.UI.UguiHudBuilder:TmpFont () (at Assets/Janseon/Foundation/UI/UguiHudBuilder.cs:281)
+Janseon.Foundation.UI.UguiHudBuilder:TmpLabel (UnityEngine.RectTransform,string,string,int,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,TMPro.TextAlignmentOptions,UnityEngine.Color) (at Assets/Janseon/Foundation/UI/UguiHudBuilder.cs:305)
+Janseon.Foundation.UI.UguiHudBuilder:BuildMainTitle (UnityEngine.Transform) (at Assets/Janseon/Foundation/UI/UguiHudBuilder.cs:197)
+Janseon.Foundation.UI.MainTitleUiHost:Construct (Janseon.Foundation.Composition.MainTitlePresenter,Janseon.Foundation.UI.UiScreenDocumentLease) (at Assets/Janseon/Foundation/UI/Presenters/MainTitleUiHost.cs:46)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+VContainer.Internal.ReflectionInjector:InjectMethods (object,VContainer.IObjectResolver,System.Collections.Generic.IReadOnlyList`1<VContainer.IInjectParameter>) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Internal/ReflectionInjector.cs:111)
+VContainer.Internal.ReflectionInjector:Inject (object,VContainer.IObjectResolver,System.Collections.Generic.IReadOnlyList`1<VContainer.IInjectParameter>) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Internal/ReflectionInjector.cs:29)
+VContainer.Unity.FindComponentProvider:SpawnInstance (VContainer.IObjectResolver) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Unity/InstanceProviders/FindComponentProvider.cs:65)
+VContainer.ScopedContainer/<>c__DisplayClass17_0:<.ctor>b__1 () (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Container.cs:82)
+System.Lazy`1<object>:ViaFactory (System.Threading.LazyThreadSafetyMode)
+System.Lazy`1<object>:ExecutionAndPublication (System.LazyHelper,bool)
+System.Lazy`1<object>:CreateValue ()
+System.Lazy`1<object>:get_Value ()
+VContainer.ScopedContainer:Resolve (System.Type,object) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Container.cs:91)
+VContainer.Unity.ContainerBuilderUnityExtensions/<>c__DisplayClass8_0:<RegisterComponentInHierarchy>b__0 (VContainer.IObjectResolver) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Unity/ContainerBuilderUnityExtensions.cs:154)
+VContainer.ScopedContainerBuilder:BuildScope () (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/ContainerBuilder.cs:41)
+VContainer.ScopedContainer:CreateScope (System.Action`1<VContainer.IContainerBuilder>) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Container.cs:126)
+VContainer.Container:CreateScope (System.Action`1<VContainer.IContainerBuilder>) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Container.cs:263)
+VContainer.Unity.LifetimeScope:Build () (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Unity/LifetimeScope.cs:203)
+VContainer.Unity.LifetimeScope:Awake () (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Unity/LifetimeScope.cs:149)
+
+(Filename: Assets/Janseon/Foundation/UI/UguiHudBuilder.cs Line: 281)
+
+Loaded scene 'Assets/Scenes/MainTitle.unity'
+	Deserialize:            1.523 ms
+	Integration:            144.913 ms
+	Integration of assets:  0.008 ms
+	Thread Wait Time:       2.075 ms
+	Total Operation Time:   148.519 ms
+JANSEON_STARTUP_READY screen=MainTitle
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Janseon.Foundation.Composition.FoundationStartup/<StartAsync>d__2:MoveNext () (at Assets/Janseon/Foundation/Composition/FoundationStartup.cs:32)
+UnityEngine.Awaitable/AwaitableAsyncMethodBuilder/StateMachineBox`1<Janseon.Foundation.Composition.FoundationStartup/<StartAsync>d__2>:DoMoveNext ()
+System.Threading.Tasks.AwaitTaskContinuation:InvokeAction (object)
+System.Threading.Tasks.AwaitTaskContinuation:RunCallback (System.Threading.ContextCallback,object,System.Threading.Tasks.Task&)
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation:Run (System.Threading.Tasks.Task,bool)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task`1<Janseon.Foundation.AppFlow.TransitionOutcome>:TrySetResult (Janseon.Foundation.AppFlow.TransitionOutcome)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Janseon.Foundation.AppFlow.TransitionOutcome>:SetResult (Janseon.Foundation.AppFlow.TransitionOutcome)
+Janseon.Foundation.AppFlow.ApplicationFlowCoordinator/<RunTransitionAsync>d__23:MoveNext () (at Assets/Janseon/Foundation/AppFlow/ApplicationFlowCoordinator.cs:206)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.AwaitTaskContinuation:InvokeAction (object)
+System.Threading.Tasks.AwaitTaskContinuation:RunCallback (System.Threading.ContextCallback,object,System.Threading.Tasks.Task&)
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation:Run (System.Threading.Tasks.Task,bool)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task`1<Janseon.Foundation.AppFlow.IContentSceneLease>:TrySetResult (Janseon.Foundation.AppFlow.IContentSceneLease)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Janseon.Foundation.AppFlow.IContentSceneLease>:SetResult (Janseon.Foundation.AppFlow.IContentSceneLease)
+Janseon.Foundation.Composition.UnityFoundationSceneLoader/<LoadAsync>d__2:MoveNext () (at Assets/Janseon/Foundation/Composition/UnityFoundationSceneLoader.cs:47)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation/<>c:<.cctor>b__7_0 (object)
+UnityEngine.UnitySynchronizationContext/WorkRequest:Invoke ()
+UnityEngine.UnitySynchronizationContext:Exec ()
+UnityEngine.UnitySynchronizationContext:ExecuteTasks ()
+
+(Filename: Assets/Janseon/Foundation/Composition/FoundationStartup.cs Line: 32)
+
+Loaded scene 'Assets/Scenes/Foundation.unity'
+	Deserialize:            0.808 ms
+	Integration:            24.572 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       22.418 ms
+	Total Operation Time:   47.800 ms
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+CORE_LOOP_TESTED_HEAD f6438aa2622aef54792e994832cc611a2017d9da
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Janseon.Foundation.Tests.CoreLoopPlayModeTests/<BootstrapToFoundationAsync>d__36:MoveNext () (at Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs:940)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.AwaitTaskContinuation:InvokeAction (object)
+System.Threading.Tasks.AwaitTaskContinuation:RunCallback (System.Threading.ContextCallback,object,System.Threading.Tasks.Task&)
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation:Run (System.Threading.Tasks.Task,bool)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task`1<Janseon.Foundation.AppFlow.TransitionOutcome>:TrySetResult (Janseon.Foundation.AppFlow.TransitionOutcome)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Janseon.Foundation.AppFlow.TransitionOutcome>:SetResult (Janseon.Foundation.AppFlow.TransitionOutcome)
+Janseon.Foundation.Tests.CoreLoopPlayModeTests/<AwaitTaskResult>d__37`1<Janseon.Foundation.AppFlow.TransitionOutcome>:MoveNext () (at Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs:949)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.AwaitTaskContinuation:InvokeAction (object)
+System.Threading.Tasks.AwaitTaskContinuation:RunCallback (System.Threading.ContextCallback,object,System.Threading.Tasks.Task&)
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation:Run (System.Threading.Tasks.Task,bool)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task`1<System.Threading.Tasks.Task>:TrySetResult (System.Threading.Tasks.Task)
+System.Threading.Tasks.TaskFactory/CompleteOnInvokePromise:Invoke (System.Threading.Tasks.Task)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task`1<Janseon.Foundation.AppFlow.TransitionOutcome>:TrySetResult (Janseon.Foundation.AppFlow.TransitionOutcome)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Janseon.Foundation.AppFlow.TransitionOutcome>:SetResult (Janseon.Foundation.AppFlow.TransitionOutcome)
+Janseon.Foundation.AppFlow.ApplicationFlowCoordinator/<RunTransitionAsync>d__23:MoveNext () (at Assets/Janseon/Foundation/AppFlow/ApplicationFlowCoordinator.cs:206)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.AwaitTaskContinuation:InvokeAction (object)
+System.Threading.Tasks.AwaitTaskContinuation:RunCallback (System.Threading.ContextCallback,object,System.Threading.Tasks.Task&)
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation:Run (System.Threading.Tasks.Task,bool)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task`1<System.Threading.Tasks.VoidTaskResult>:TrySetResult (System.Threading.Tasks.VoidTaskResult)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Threading.Tasks.VoidTaskResult>:SetResult (System.Threading.Tasks.VoidTaskResult)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Threading.Tasks.VoidTaskResult>:SetResult (System.Threading.Tasks.Task`1<System.Threading.Tasks.VoidTaskResult>)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:SetResult ()
+Janseon.Foundation.Composition.UnityFoundationSceneLoader/UnityContentSceneLease/<CleanupAsync>d__8:MoveNext () (at Assets/Janseon/Foundation/Composition/UnityFoundationSceneLoader.cs:121)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.AwaitTaskContinuation:InvokeAction (object)
+System.Threading.Tasks.AwaitTaskContinuation:RunCallback (System.Threading.ContextCallback,object,System.Threading.Tasks.Task&)
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation:Run (System.Threading.Tasks.Task,bool)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task`1<System.Threading.Tasks.VoidTaskResult>:TrySetResult (System.Threading.Tasks.VoidTaskResult)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Threading.Tasks.VoidTaskResult>:SetResult (System.Threading.Tasks.VoidTaskResult)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Threading.Tasks.VoidTaskResult>:SetResult (System.Threading.Tasks.Task`1<System.Threading.Tasks.VoidTaskResult>)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:SetResult ()
+Janseon.Foundation.Composition.UnityFoundationSceneLoader/<AwaitUnloadAsync>d__5:MoveNext () (at Assets/Janseon/Foundation/Composition/UnityFoundationSceneLoader.cs:95)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation/<>c:<.cctor>b__7_0 (object)
+UnityEngine.UnitySynchronizationContext/WorkRequest:Invoke ()
+UnityEngine.UnitySynchronizationContext:Exec ()
+UnityEngine.UnitySynchronizationContext:ExecuteTasks ()
+
+(Filename: Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs Line: 940)
+
+Saving results to: C:/Users/oliver/AppData/LocalLow/Janseon Studio/잔선_ 서울\TestResults.xml
+Saving results to: E:\git\seoul-kenshi-wt\rtfc-phase-d\docs\verification\ulw-execute\rtfc\phase-d\driver-integration\final-controller-playmode.xml
+Unloading 11 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            0.434 ms
+	Integration:            6.457 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.007 ms
+	Total Operation Time:   6.899 ms
+Unloading 7 unused Assets / (2.1 MB). Loaded Objects now: 4941.
+Memory consumption went from 371.1 MB to 369.0 MB.
+Total: 7.143100 ms (FindLiveObjects: 0.568200 ms CreateObjectMapping: 0.044600 ms MarkObjects: 6.352400 ms  DeleteObjects: 0.079300 ms)
+
+Executing IPostBuildCleanup for: Unity.PerformanceTesting.Editor.TestRunBuilder.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+UnityEditor.TestTools.TestRunner.TestRun.Tasks.BuildActionTaskBase`1/<ExecuteMethods>d__8<UnityEngine.TestTools.IPostBuildCleanup>:MoveNext () (at ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/TestRun/Tasks/BuildActionTaskBase.cs:48)
+UnityEditor.TestTools.TestRunner.TestRun.Tasks.BuildActionTaskBase`1/<Execute>d__7<UnityEngine.TestTools.IPostBuildCleanup>:MoveNext () (at ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/TestRun/Tasks/BuildActionTaskBase.cs:34)
+UnityEditor.TestTools.TestRunner.TestRun.TestJobRunner:ExecuteStep () (at ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/TestRun/TestJobRunner.cs:194)
+UnityEditor.TestTools.TestRunner.TestRun.TestJobRunner:ExecuteCallback () (at ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/TestRun/TestJobRunner.cs:129)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/TestRun/Tasks/BuildActionTaskBase.cs Line: 48)
+
+Asset Pipeline Refresh (id=4a63e0c73ad155d4eadafb4785624a9e): Total: 0.085 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2 unused Assets / (15.7 KB). Loaded Objects now: 4946.
+Memory consumption went from 367.1 MB to 367.1 MB.
+Total: 6.923600 ms (FindLiveObjects: 0.511400 ms CreateObjectMapping: 0.043600 ms MarkObjects: 6.250200 ms  DeleteObjects: 0.018400 ms)
+
+Asset Pipeline Refresh (id=b6d5b115c88a80c4c81ca6bcf5e3daaf): Total: 0.047 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+DisplayProgressbar: Undo
+Test run completed. Exiting with code 0 (Ok). Run completed.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+UnityEditor.TestTools.TestRunner.CommandLineTest.Executer:ExitApplication (UnityEditor.TestTools.TestRunner.CommandLineTest.Executer/ReturnCodes,string) (at ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/CommandLineTest/Executer.cs:81)
+UnityEditor.TestTools.TestRunner.CommandLineTest.Executer:ExitIfRunIsCompleted () (at ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/CommandLineTest/Executer.cs:74)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/CommandLineTest/Executer.cs Line: 81)
+
+MonoPathRemapper: Attempts to remap: 11364; Successful remaps: 588
+Serialized file version minimum: 0, current 23
+FontEngine: Invalid font face handle.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.TextCore.LowLevel.FontEngine:GetFaceInfo (UnityEngine.TextCore.LowLevel.FontFaceHandle)
+TMPro.TMP_FontAsset:ReadFontAssetDefinition () (at ./Library/PackageCache/com.unity.ugui@8e276752998c/Runtime/TMP/TMP_FontAsset.cs:845)
+TMPro.TMP_FontAsset:OnValidate () (at ./Library/PackageCache/com.unity.ugui@8e276752998c/Runtime/TMP/TMP_FontAsset.cs:784)
+UnityEditor.AssetDatabase:LoadAssetAtPath (string,System.Type)
+UnityEditor.AssetDatabase:LoadAssetAtPath<TMPro.TMP_FontAsset> (string)
+TMPro.EditorEventCallbacks/<>c:<InitializeFontAssetResourceChangeCallBacks>b__0_0 () (at ./Library/PackageCache/com.unity.ugui@8e276752998c/Editor/TMP/TMP_EditorResourceManager.cs:32)
+UnityEditor.EditorApplication:Internal_EditorApplicationQuit ()
+UnityEditor.TestTools.TestRunner.CommandLineTest.Executer:ExitApplication (UnityEditor.TestTools.TestRunner.CommandLineTest.Executer/ReturnCodes,string) (at ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/CommandLineTest/Executer.cs:83)
+UnityEditor.TestTools.TestRunner.CommandLineTest.Executer:ExitIfRunIsCompleted () (at ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/CommandLineTest/Executer.cs:74)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+[./Library/PackageCache/com.unity.ugui@8e276752998c/Runtime/TMP/TMP_FontAsset.cs line 845]
+
+Font Asset [MalgunGothicDynamic] Units Per EM set to 0. Please commit the newly serialized value.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+TMPro.TMP_FontAsset:ReadFontAssetDefinition () (at ./Library/PackageCache/com.unity.ugui@8e276752998c/Runtime/TMP/TMP_FontAsset.cs:846)
+TMPro.TMP_FontAsset:OnValidate () (at ./Library/PackageCache/com.unity.ugui@8e276752998c/Runtime/TMP/TMP_FontAsset.cs:784)
+UnityEditor.AssetDatabase:LoadAssetAtPath (string,System.Type)
+UnityEditor.AssetDatabase:LoadAssetAtPath<TMPro.TMP_FontAsset> (string)
+TMPro.EditorEventCallbacks/<>c:<InitializeFontAssetResourceChangeCallBacks>b__0_0 () (at ./Library/PackageCache/com.unity.ugui@8e276752998c/Editor/TMP/TMP_EditorResourceManager.cs:32)
+UnityEditor.EditorApplication:Internal_EditorApplicationQuit ()
+UnityEditor.TestTools.TestRunner.CommandLineTest.Executer:ExitApplication (UnityEditor.TestTools.TestRunner.CommandLineTest.Executer/ReturnCodes,string) (at ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/CommandLineTest/Executer.cs:83)
+UnityEditor.TestTools.TestRunner.CommandLineTest.Executer:ExitIfRunIsCompleted () (at ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/CommandLineTest/Executer.cs:74)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions ()
+
+(Filename: ./Library/PackageCache/com.unity.ugui@8e276752998c/Runtime/TMP/TMP_FontAsset.cs Line: 846)
+
+IndexOutOfRangeException: Index was outside the bounds of the array.
+  at TMPro.TMP_FontAsset.get_atlasTexture () [0x0000e] in .\Library\PackageCache\com.unity.ugui@8e276752998c\Runtime\TMP\TMP_FontAsset.cs:247 
+  at TMPro.EditorEventCallbacks+<>c.<InitializeFontAssetResourceChangeCallBacks>b__0_0 () [0x0001d] in .\Library\PackageCache\com.unity.ugui@8e276752998c\Editor\TMP\TMP_EditorResourceManager.cs:34 
+  at UnityEditor.EditorApplication.Internal_EditorApplicationQuit () [0x00019] in <5fd563af305b4dda9cde7e943c6ec829>:0 
+UnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&)
+UnityEditor.EditorApplication:Exit(Int32)
+UnityEditor.TestTools.TestRunner.CommandLineTest.Executer:ExitApplication(ReturnCodes, String) (at .\Library\PackageCache\com.unity.test-framework@4c309923fa3b\UnityEditor.TestRunner\CommandLineTest\Executer.cs:83)
+UnityEditor.TestTools.TestRunner.CommandLineTest.Executer:ExitIfRunIsCompleted() (at .\Library\PackageCache\com.unity.test-framework@4c309923fa3b\UnityEditor.TestRunner\CommandLineTest\Executer.cs:74)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions()
+
+(Filename: ./Library/PackageCache/com.unity.ugui@8e276752998c/Runtime/TMP/TMP_FontAsset.cs Line: 247)
+
+Importing 'GUID: 00000000000000004000000000000000 - Path: ProjectSettings/ProjectSettings.asset' with importer (LibraryAssetImporter)
+Imported 'GUID: 00000000000000004000000000000000' -> (Import Result ID: 'a43f610066782d1e12209d6e793cfad0') in 0.003 seconds [static dependencies only]. Details - ImportResultOutputID=ee3cc2032a1e5ce846e8c6496d1773de DependenciesID=4bd4bd472fa28ecdd3719d60ce529eb5 StaticDependenciesID=3bcf9188eb88e70fdd1566b5ebe26e10 
+Asset Pipeline Refresh (id=1ae431146104c074f82e7e551e4a159f): Total: 0.018 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-oliver-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-oliver channel disconnected successfully.
+Lingering sessions upon destruction of worker manager
+Unity Data Store service was successfully shut down
+UDS shutting down local client system
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+Checking for leaked weakptr:
+  Found no leaked weakptrs.
+[Package Manager] Server process was shutdown
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1788892653819,"processId":5940,"allocatedMemory":15764898,"memoryLabels":[{"Default":200847},{"Permanent":15524},{"NewDelete":69419},{"Thread":4197944},{"Manager":40305},{"VertexData":8},{"Geometry":816},{"Texture":24},{"Shader":98244},{"Material":132},{"GfxDevice":56224},{"Animation":952},{"Audio":648},{"FreeType":8},{"FontEngine":736},{"Physics":2146},{"Physics2D":16},{"Serialization":28752},{"Input":42904},{"JobScheduler":256},{"TextLib":336},{"Mono":48},{"MonoCode":64},{"ScriptingNativeRuntime":1259888},{"BaseObject":81928},{"Resource":1444},{"Renderer":2504},{"Transform":4685},{"File":22146},{"WebCam":616},{"Culling":32},{"Terrain":11442},{"Wind":24},{"STL":40},{"String":534559},{"StaticString":3808},{"Utility":2676982},{"Curl":2478},{"PoolAlloc":2264},{"AI":80},{"TypeTree":14869},{"ScriptManager":18960},{"CodeReload":448},{"RuntimeInitializeOnLoadManager":64},{"Sprites":102},{"SpriteAtlas":120},{"GI":7816},{"Director":8280},{"CloudService":432},{"WebRequest":552},{"VR":53474},{"SceneManager":608},{"Video":64},{"LazyScriptCache":32},{"Camera":729},{"Secure":2377},{"SerializationCache":9256},{"APIUpdating":10320},{"Subsystems":336},{"VirtualTexturing":57888},{"StaticSafetyDebugInfo":278528},{"Analytics":464},{"Hierarchy":1188},{"UIElements":40},{"CoreStats":15608},{"Identifiers":7728},{"EntityIdStore":2112},{"Gui":128},{"EditorUtility":135108},{"VersionControl":8},{"Undo":939},{"AssetDatabase":5703436},{"AssetImporter":40},{"EditorGi":328},{"UnityConnect":42769},{"Upm":1912},{"UpmDiagnostics":8},{"AssetPackage":56},{"AssetCompliance":96},{"DrivenProperties":72},{"LocalIPC":262},{"ProfilerEditor":9746},{"CoreBusinessMetrics":3229},{"Windowing":456},{"Licensing":12573},{"AssetReference":32},{"IPCStream":32}]}

@@ -16,13 +16,14 @@ seoul-kenshi/
 |   |-- Assets/Janseon/    # Core, Foundation, runtime art
 |   |-- Assets/Tests/      # EditMode & PlayMode validation
 |   `-- ProjectSettings/
-|-- GDD/                   # consolidated design & delivery docs (game-logic, adr, proposals, architecture, site, design-store)
-|   |-- game-logic/        # authoritative corpus, name-pools, regions
+|-- GDD/                   # consolidated design & delivery docs (adr, proposals, system-design, design-store)
 |   |-- adr/
 |   |-- proposals/
 |   |-- system-design/
-|   |-- site/              # VitePress build
 |   `-- design-store/
+|-- Wikis/                 # wiki corpus and wiki site
+|   |-- game-logic/        # authoritative corpus, name-pools, regions
+|   `-- site/              # VitePress build
 |-- Design/                # visual moodboards, prototypes, moved portrait-demo
 |   |-- ui-layout-moodboard/
 |   |-- poc/
@@ -48,16 +49,16 @@ seoul-kenshi/
 ## WHERE TO LOOK
 | Task | Location | Notes |
 |------|----------|-------|
-| Design entry and navigation | `GDD/game-logic/Home.md`, `_Sidebar.md` | Separate design intent from implementation status |
-| Architecture and rollout | `GDD/game-logic/Unity-Architecture.md`, `GDD/game-logic/Unity-System-Design.md` | Design contracts; implementation must be checked separately |
-| Save and randomness contracts | `GDD/game-logic/Save-and-Determinism.md` | Versioning, event records, separated RNG streams |
-| Cast corpus | `GDD/game-logic/Cast-Index.md`, `GDD/game-logic/Cast-Relations.md`, `GDD/game-logic/Cast-State-01.md` through `GDD/game-logic/Cast-State-16.md` | Sixteen-state organization |
+| Design entry and navigation | `Wikis/game-logic/Home.md`, `_Sidebar.md` | Separate design intent from implementation status |
+| Architecture and rollout | `Wikis/game-logic/Unity-Architecture.md`, `GDD/system-design/Unity-System-Design.md`, `Wikis/game-logic/Unity-Architecture-Implementation-Plan.md` | Responsibilities, contracts, implementation sequence |
+| Save and randomness contracts | `Wikis/game-logic/Save-and-Determinism.md` | Versioning, event records, separated RNG streams |
+| Cast corpus | `Wikis/game-logic/Cast-Index.md`, `Wikis/game-logic/Cast-Relations.md`, `Wikis/game-logic/Cast-State-01.md` through `Wikis/game-logic/Cast-State-16.md` | Sixteen-state organization |
 | Unity setup and quality gateway | `Game/AGENTS.md` | Pinned editor, batchmode contract, work procedure, regressions and done-means |
-| Domain and runtime integration | `Game/Assets/Janseon/AGENTS.md` | Core/Data/Foundation boundaries and art import seams |
+| Domain and runtime integration | `Game/Assets/Janseon/AGENTS.md` | Core/Foundation boundaries and art import seams |
 | Unity tests and captures | `Game/Assets/Tests/AGENTS.md` | Test-mode ownership and evidence receipts |
 | Tooling and checks | `Tool/AGENTS.md`, `Tool/tools/AGENTS.md` | Repo scripts versus independent submodule packages; separate domain gates |
-| Asset processing | `GDD/game-logic/Asset-Pipeline.md`, `Tool/tools/art/AGENTS.md` | Design contract versus executable promotion checks |
-| Wiki rendering | `Tool/tools/wiki/AGENTS.md`, `GDD/site/` | Safe public output; VitePress mounting/staging is separate from build |
+| Asset processing | `Wikis/game-logic/Asset-Pipeline.md`, `Tool/tools/art/AGENTS.md` | Design contract versus executable promotion checks |
+| Wiki rendering | `Tool/tools/wiki/AGENTS.md`, `Wikis/site/` | Safe public output; VitePress mounting/staging is separate from build |
 | Browser comparison reference | `Design/poc/browser/AGENTS.md` | Frozen four-surface prototype, not the product runtime |
 | Backend service | `Backend/AGENTS.md`, `Backend/server/GameServer/Program.cs` | Front/Auth/Hero/Lobby/Station/Social endpoints; HTTP 1219 |
 | Asset rights and reviews | `Reference/assets/bom/` | Source evidence, runtime-slot records, quality gates |
@@ -82,14 +83,14 @@ Digest LSP/ast-grep findings plus retained root symbol locations; C# LSP coverag
 ## CONVENTIONS
 - The Unity project root is `Game/`, not the repository root. Its editor pin is an alpha release, not a generic Unity LTS target.
 - `Janseon.Core` is engine-free; Foundation integrates Core with Unity and VContainer.
-- Wiki source is `GDD/game-logic`; the remote Wiki, VitePress publication and `GDD/design-store` HTML mirrors are derivatives, not additional canon.
-- Canonical page names use Title-Case-With-Hyphens and ordinary relative Markdown links. New-page `_TEMPLATE.md` uses YAML title/summary/domain (design/world/rules); existing Home has no frontmatter.
-- Repo automation is the private ESM package `Tool/tools`; `Tool/character-forge` and `Tool/unity-remote` are independently versioned Git submodules. VitePress requires Node >=22 <27.
+- Repository documentation is authoritative. Serve `Wikis/site` locally (`npm run docs:dev`) and publish `https://seoul-kenshi.vercel.app`; the remote Wiki, VitePress publication and HTML mirrors are derivatives, not additional canon.
+- Design pages use Korean prose, English hyphenated filenames, ordinary relative Markdown links, and GitHub image URLs with `?raw=true`; do not assume Obsidian wiki links. Canonical page names use Title-Case-With-Hyphens; new-page `_TEMPLATE.md` uses YAML title/summary/domain (design/world/rules), and existing Home has no frontmatter.
+- Repo automation is the private ESM package `Tool/tools`; `Tool/character-forge` and `Tool/unity-remote` are independently versioned Git submodules. VitePress requires Node >=22 <27. This package is not game runtime code.
 
 ## ANTI-PATTERNS
 - Do not label planned campaign or tactical features as shipped merely because design pages exist; even Home's implementation summary may lag code.
 - No direct push to main, force-push, or shared-history rewrite. ADR-001 requires a dedicated branch and PR, with owner-only merging.
-- Authorized origin: `https://github.com/islee23520/seoul-kenshi.git`; the unrelated shooter repository is not a delivery target. Remote Wiki publication needs separate owner authorization.
+- Authorized origin: `https://github.com/islee23520/seoul-kenshi.git`; the unrelated shooter repository is not a delivery target. Do not publish or maintain GitHub Wiki.
 - Do not create a new Vercel project, alias, or `*.vercel.app` site for demos or worktree folders. Link and deploy only to existing `seoul-kenshi`. Nested static pages (for example `Design/portrait-demo/`) go on that hub as a subpath via the composite staging in `SERVICES.md`; never `vercel deploy` a nested folder as its own project.
 - Candidate generation, provider eligibility, or showcase import does not authorize a runtime dependency.
 - Guessed rights, synthetic review hashes, model/software licenses, and zero-cost receipts are not proof of asset-output rights or actual service terms. Source-rights research is not quality approval or a legal guarantee.
@@ -114,8 +115,8 @@ Run from the repository root. Unity launch, test and capture commands belong to 
 npm ci --prefix Tool/tools
 npm --prefix Tool/tools test
 node Tool/tools/policy/check-repo-delivery-policy.mjs
-npm --prefix GDD/site run docs:dev
-npm --prefix GDD/site run docs:build
+npm --prefix Wikis/site run docs:dev
+npm --prefix Wikis/site run docs:build
 dotnet build Backend/server/SeoulKenshi.Server.sln -c Debug
 dotnet test Backend/server/Tests/SeoulKenshi.Server.Tests.csproj -c Debug
 dotnet run --project Backend/server/GameServer/GameServer.csproj -c Debug --no-launch-profile

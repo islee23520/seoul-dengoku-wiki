@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-09 02:35:51Z" end-time="2026-09-09 02:36:03Z" duration="12.2142614">
+  <test-suite type="TestSuite" id="1044" name="잔선_ 서울" fullname="잔선_ 서울" runstate="Runnable" testcasecount="28" result="Passed" start-time="2026-09-09 02:35:51Z" end-time="2026-09-09 02:36:03Z" duration="12.214261" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1037" name="Janseon.Foundation.PlayModeTests.dll" fullname="E:/git/seoul-kenshi-wt/rtfc-phase-d/Game/Library/ScriptAssemblies/Janseon.Foundation.PlayModeTests.dll" runstate="Runnable" testcasecount="28" result="Passed" start-time="2026-09-09 02:35:51Z" end-time="2026-09-09 02:36:03Z" duration="12.206584" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="201092" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestFixture" id="1001" name="UiToolkitCapturePlayModeTests" fullname="UiToolkitCapturePlayModeTests" classname="UiToolkitCapturePlayModeTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-09-09 02:35:51Z" end-time="2026-09-09 02:36:03Z" duration="12.204994" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1002" name="Capture_C1_To_C10_Matrix_FromProductionCanvas" fullname="UiToolkitCapturePlayModeTests.Capture_C1_To_C10_Matrix_FromProductionCanvas" methodname="Capture_C1_To_C10_Matrix_FromProductionCanvas" classname="UiToolkitCapturePlayModeTests" runstate="Runnable" seed="1082094531" result="Passed" start-time="2026-09-09 02:35:51Z" end-time="2026-09-09 02:36:03Z" duration="12.194793" asserts="0">
+          <properties>
+            <property name="_JOINTYPE" value="UnityCombinatorial" />
+            <property name="retryIteration" value="0" />
+            <property name="repeatIteration" value="0" />
+          </properties>
+          <output><![CDATA[Unable to load font face for [Malgun Gothic]. Make sure "Include Font Data" is enabled in the Font Import Settings.
+TmpFont bundle asset creation failed: Value cannot be null.
+Parameter name: shader
+TmpFont file-path asset creation failed: Value cannot be null.
+Parameter name: shader
+TmpFont file-path asset creation failed: Value cannot be null.
+Parameter name: shader
+JANSEON_STARTUP_READY screen=MainTitle
+CAPTURE_OK main-title-1280x720 nonDark=76522 varied=76505 textLum=7853 sha=b36e7cbcd9ce3af3
+CAPTURE_OK main-title-1920x1080 nonDark=170591 varied=170557 textLum=18488 sha=70af86c98b077886
+CAPTURE_OK campaign-route-stage-1280x720 nonDark=621710 varied=668631 textLum=85316 sha=7e878abbb1d2afc1
+CAPTURE_OK campaign-route-stage-1920x1080 nonDark=1397201 varied=1504320 textLum=193492 sha=58e99997ccacfb50
+CAPTURE_OK encounter-choices-1280x720 nonDark=621753 varied=668631 textLum=91991 sha=b216568c27fb1437
+CAPTURE_OK encounter-choices-1920x1080 nonDark=1397267 varied=1504320 textLum=206964 sha=0882f7429ee978f3
+CAPTURE_OK battle-state-1280x720 nonDark=819801 varied=821838 textLum=11025 sha=976f2a8d873991de
+CAPTURE_OK battle-state-1920x1080 nonDark=1810646 varied=1815230 textLum=26438 sha=d0827a0fc2171d7d
+CAPTURE_OK settlement-return-1280x720 nonDark=622087 varied=668625 textLum=153689 sha=87e40e74d546ad8b
+CAPTURE_OK settlement-return-1920x1080 nonDark=1413658 varied=1504320 textLum=345717 sha=1dc098ef12a5f598
+Saving results to: C:/Users/oliver/AppData/LocalLow/Janseon Studio/잔선_ 서울\TestResults.xml
+]]></output>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

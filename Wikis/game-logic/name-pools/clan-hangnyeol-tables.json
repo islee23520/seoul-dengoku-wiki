@@ -1,0 +1,3265 @@
+{
+  "id": "clan-hangnyeol-tables",
+  "schema": 1,
+  "note": "캐스트에 등장하는 성씨 중 2015 성씨 표에서 대성 본관을 확인한 문중 원장. 본관 정체성과 항렬표 확인 상태를 분리한다. 행이 빈 문중에는 임의 항렬자를 넣지 않는다.",
+  "sources": [
+    {
+      "id": "s-census-r0434",
+      "record_id": "census-r0434",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[감 (성씨)|감]]'''(甘)||6,024||5,998||5,020||align=left|[[창원 감씨|창원]](昌原)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0088",
+      "record_id": "census-r0088",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[강 (성씨)|강]]'''(姜)||1,176,847||1,044,386||958,181||align=left|'''[[진주 강씨|진주]]'''(晉州), [[금천 강씨|금천]](衿川)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0908",
+      "record_id": "census-r0908",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[고 (성씨)|고]]'''(顧)||33||0||0||align=left|한양",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0179",
+      "record_id": "census-r0179",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[곽 (성씨)|곽]]'''(郭)||203,188||187,322||163,433||align=left|'''[[현풍 곽씨|현풍]]'''(玄風), [[청주 곽씨|청주]](淸州)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0194",
+      "record_id": "census-r0194",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[구 (성씨)|구]]'''(具)||193,080||178,167||157,683||align=left|'''[[능성 구씨|능성]]'''(綾城), [[창원 구씨|창원]](昌原)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0350",
+      "record_id": "census-r0350",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[국 (성씨)|국]]'''(鞠)||20,547||16,697||15,562||align=left|'''[[담양 국씨|담양]]'''(潭陽)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0115",
+      "record_id": "census-r0115",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[권 (성씨)|권]]'''(權)||705,941||652,495||567,990||align=left|'''[[안동 권씨|안동]]'''(安東), [[예천 권씨|예천]](醴泉)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0683",
+      "record_id": "census-r0683",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[근 (성씨)|근]]'''(斤)||170||242||450||align=left|'''[[청주 근씨|청주]]'''(淸州)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0311",
+      "record_id": "census-r0311",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[기 (성씨)|기]]'''(奇)||28,829||24,385||22,706||align=left|'''[[행주 기씨|행주]]'''(幸州)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0072",
+      "record_id": "census-r0072",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[김 (성씨)|김]]'''(金)||10,689,959||9,925,949||8,785,341||align=left|[[김해 김씨|김해]](金海), [[경주 김씨|경주]](慶州), [[광산 김씨|광산]](光山), [[구 안동 김씨|상락]](上洛), [[의성 김씨|의성]](義城), [[강릉 김씨|강릉]](江陵), [[청풍 김씨|청풍]](淸風)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0164",
+      "record_id": "census-r0164",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[남 (성씨)|남]]'''(南)||275,648||257,178||222,269||align=left|'''[[의령 남씨|의령]]'''(宜寧), [[영양 남씨|영양]](英陽), [[고성 남씨|고성]](固城)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0170",
+      "record_id": "census-r0170",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[노 (성씨)|노]]'''(盧)||256,238||220,354||196,285||align=left|[[광주 노씨|광주]](光州), [[교하 노씨|교하]](交河), [[풍천 노씨|풍천]](豊川), [[장연 노씨|장연]](長淵)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0509",
+      "record_id": "census-r0509",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[단 (성씨)|단]]'''(段)||1,612||1,429||1,279||align=left|[[강음 단씨|강음]](江陰), [[강릉 단씨|강릉]](江陵), [[연안 단씨|연안]](延安), [[대흥 단씨|대흥]](大興), [[서촉 단씨|서촉]](西蜀)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0449",
+      "record_id": "census-r0449",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[동 (성씨)|동]]'''(董)||5,462||5,564||4,645||align=left|[[광천 동씨|광천]](廣川)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0428",
+      "record_id": "census-r0428",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[두 (성씨)|두]]'''(杜)||6,428||5,750||5,077||align=left|'''[[두릉 두씨|두릉]]'''(杜陵), [[만경 두씨|만경]](萬頃)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0287",
+      "record_id": "census-r0287",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[마 (성씨)|마]]'''(馬)||38,949||35,096||30,865||align=left|'''[[장흥 마씨|장흥]]'''(長興), [[목천 마씨|목천]](木川)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0650",
+      "record_id": "census-r0650",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[매 (성씨)|매]]'''(梅)||201||222||230||align=left|'''[[충주 매씨|충주]]'''(忠州)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0308",
+      "record_id": "census-r0308",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[명 (성씨)|명]]'''(明)||29,110||26,746||23,380||align=left|'''[[연안 명씨|연안]]'''(延安), [[서촉 명씨|서촉]](西蜀)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0338",
+      "record_id": "census-r0338",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[모 (성씨)|모]]'''(牟)||21,534||18,955||16,046||align=left|'''[[함평 모씨|함평]]'''(咸平)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0079",
+      "record_id": "census-r0079",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[박 (성씨)|박]]'''(朴)||4,192,074||3,895,121||3,435,858||align=left|'''[[밀양 박씨|밀양]]'''(密陽), [[반남 박씨|반남]](潘南), [[함양 박씨|함양]](咸陽), [[순천 박씨|순천]](順天), [[무안 박씨|무안]](務安), [[죽산 박씨|죽산]](竹山), [[고령 박씨|고령]](高靈)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0233",
+      "record_id": "census-r0233",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[방 (성씨)|방]]'''(方)||94,831||81,710||81,469||align=left|'''[[온양 방씨|온양]]'''(溫陽)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0149",
+      "record_id": "census-r0149",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[배 (성씨)|배]]'''(裵)||400,641||372,064||323,031||align=left|[[성주 배씨|성주]](星州), [[분성 배씨|분성]](盆城), [[대구 배씨|대구]](大邱), [[흥해 배씨|흥해]](興海), [[경주 배씨|경주]](慶州)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0155",
+      "record_id": "census-r0155",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[백 (성씨)|백]]'''(白)||381,986||351,275||309,578||align=left|'''[[수원 백씨|수원]]'''(水原), [[남포 백씨|남포]](藍浦), [[대흥 백씨|대흥]](大興), [[부여 백씨|부여]](扶餘)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0464",
+      "record_id": "census-r0464",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[범 (성씨)|범]]'''(范)||3,826||3,316||3,018||align=left|'''[[금성 범씨|금성]]'''(錦城)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0248",
+      "record_id": "census-r0248",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[변 (성씨)|변]]'''(卞)||78,156||78,685||64,147||align=left|'''[[초계 변씨|초계]]'''(草溪), [[밀양 변씨|밀양]](密陽)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0404",
+      "record_id": "census-r0404",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[복 (성씨)|복]]'''(卜)||9,538||8,644||7,377||align=left|'''[[면천 복씨|면천]]'''(沔川)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0383",
+      "record_id": "census-r0383",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[봉 (성씨)|봉]]'''(奉)||12,927||11,492||10,547||align=left|'''[[하음 봉씨|하음]]'''(河陰)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0109",
+      "record_id": "census-r0109",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[서 (성씨)|서]]'''(徐)||751,704||693,954||611,206||align=left|'''[[달성 서씨|달성]]'''(達城), [[이천 서씨|이천]](利川), [[대구 서씨|대구]](大丘), [[부여 서씨|부여]](扶餘), [[장성 서씨|장성]](長城), [[연산 서씨|연산]](連山)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0278",
+      "record_id": "census-r0278",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[석 (성씨)|석]]'''(石)||49,203||46,066||40,390||align=left|'''[[충주 석씨|충주]]'''(忠州)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0281",
+      "record_id": "census-r0281",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[선 (성씨)|선]]'''(宣)||42,733||38,849||33,718||align=left|'''[[보성 선씨|보성]]'''(寶城)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0284",
+      "record_id": "census-r0284",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[설 (성씨)|설]]'''(薛)||42,646||38,766||34,264||align=left|'''[[순창 설씨|순창]]'''(淳昌)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0788",
+      "record_id": "census-r0788",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[섭 (성씨)|섭]]'''(葉)||75||450||604||align=left|'''[[경주 섭씨|경주]]'''(慶州)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0182",
+      "record_id": "census-r0182",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[성 (성씨)|성]]'''(成)||199,124||184,555||163,565||align=left|'''[[창녕 성씨|창녕]]'''(昌寧)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0272",
+      "record_id": "census-r0272",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[소 (성씨)|소]]'''(蘇)||52,427||39,552||39,728||align=left|'''[[진주 소씨|진주]]'''(晉州)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0146",
+      "record_id": "census-r0146",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[손 (성씨)|손]]'''(孫)||457,303||415,182||368,744||align=left|'''[[밀양 손씨|밀양]]'''(密陽), [[경주 손씨|경주]](慶州), [[일직 손씨|일직]](一直), [[평해 손씨|평해]](平海)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0124",
+      "record_id": "census-r0124",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[송 (성씨)|송]]'''(宋)||683,494||634,345||557,193||align=left|[[여산 송씨|여산]](礪山), [[은진 송씨|은진]](恩津), [[진천 송씨|진천]](鎭川), [[신평 송씨|신평]](新平), [[연안 송씨|연안]](延安), [[홍주 송씨|홍주]](洪州)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0905",
+      "record_id": "census-r0905",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[수 (성씨)|수]]'''(隋)||34||0||0||align=left|한양",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0545",
+      "record_id": "census-r0545",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[순 (성씨)|순]]'''(荀)||791||1,017||972||align=left|'''[[홍산 순씨|홍산]]'''(鴻山)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0112",
+      "record_id": "census-r0112",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[신 (성씨)|신]]'''(申)||741,081||698,171||620,983||align=left|'''[[평산 신씨|평산]]'''(平山), [[고령 신씨|고령]](高靈), [[아주 신씨|아주]](鵝洲)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0167",
+      "record_id": "census-r0167",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[심 (성씨)|심]]'''(沈)||271,749||252,255||219,741||align=left|'''[[청송 심씨|청송]]'''(靑松), [[삼척 심씨|삼척]](三陟), [[풍산 심씨|풍산]](豊山), [[부유 심씨|부유]](富有)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0121",
+      "record_id": "census-r0121",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[안 (성씨)|안]]'''(安)||685,639||637,786||556,429||align=left|'''[[순흥 안씨|순흥]]'''(順興), [[죽산 안씨|죽산]](竹山), [[광주 안씨|광주]](廣州), [[탐진 안씨|강진]](康津)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0254",
+      "record_id": "census-r0254",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[양 (성씨)|양]]'''(楊)||69,101||93,416||81,589||align=left|[[청주 양씨|청주]](淸州), [[남원 양씨 (楊)|남원]](南原), [[중화 양씨|중화]](中和)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0359",
+      "record_id": "census-r0359",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[어 (성씨)|어]]'''(魚)||18,849||17,551||15,351||align=left|'''[[함종 어씨|함종]]'''(咸從), [[충주 어씨|충주]](忠州), [[경흥 어씨|경흥]](慶興)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0221",
+      "record_id": "census-r0221",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[엄 (성씨)|엄]]'''(嚴)||144,425||132,990||116,039||align=left|'''[[영월 엄씨|영월]]'''(寧越)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0260",
+      "record_id": "census-r0260",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[여 (성씨)|여]]'''(呂)||60,541||56,692||48,965||align=left|'''[[함양 여씨|함양]]'''(咸陽), [[성주 여씨|성주]](星州)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0296",
+      "record_id": "census-r0296",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[연 (성씨)|연]]'''(延)||34,766||28,447||27,940||align=left|'''[[곡산 연씨|곡산]]'''(谷山)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r1106",
+      "record_id": "census-r1106",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[영 (성씨)|영]]'''(榮)||14||86||8||align=left|영천",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0106",
+      "record_id": "census-r0106",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[오 (성씨)|오]]'''(吳)||763,281||706,908||619,774||align=left|'''[[해주 오씨|해주]]'''(海州), [[동복 오씨|동복]](同福), [[보성 오씨|보성]](寶城), [[함양 오씨|함양]](咸陽), [[나주 오씨|나주]](羅州)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0371",
+      "record_id": "census-r0371",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[용 (성씨)|용]]'''(龍)||15,276||14,067||12,323||align=left|'''[[홍천 용씨|홍천]]'''(洪川)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0191",
+      "record_id": "census-r0191",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[우 (성씨)|우]]'''(禹)||194,713||176,682||155,471||align=left|'''[[단양 우씨|단양]]'''(丹陽)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0227",
+      "record_id": "census-r0227",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[원 (성씨)|원]]'''(元)||129,522||119,356||104,535||align=left|'''[[원주 원씨|원주]]'''(原州)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0161",
+      "record_id": "census-r0161",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[유 (성씨)|유]]'''(劉)||302,782||242,889||218,449||align=left|'''[[강릉 유씨|강릉]]'''(江陵), [[거창 유씨|거창]](居昌), [[배천 유씨|배천]](白川), [[충주 유씨|충주]](忠州)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0094",
+      "record_id": "census-r0094",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[윤 (성씨)|윤]]'''(尹)||1,020,547||948,600||834,121||align=left|'''[[파평 윤씨|파평]]'''(坡平), [[해남 윤씨|해남]](海南), [[칠원 윤씨|칠원]](漆原), [[남원 윤씨|남원]](南原), [[해평 윤씨|해평]](海平), [[무송 윤씨|무송]](茂松)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0362",
+      "record_id": "census-r0362",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[은 (성씨)|은]]'''(殷)||16,894||15,657||13,693||align=left|'''[[행주 은씨|행주]]'''(幸州)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0075",
+      "record_id": "census-r0075",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[이 (성씨)|이]]'''(李)||7,307,068 |6,794,637||5,985,056||align=left|[[전주 이씨|전주]](全州), [[경주 이씨|경주]](慶州), [[성주 이씨|성주]](星州), [[광주 이씨|광주]](廣州), [[연안 이씨|연안]](延安), [[전의 이씨|전의]](全義), [[한산 이씨|한산]](韓山)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0100",
+      "record_id": "census-r0100",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[임 (성씨)|임]]'''(林)||823,968||762,767||672,782||align=left|[[나주 임씨|나주]](羅州), [[평택 임씨|평택]](平澤), [[부안 임씨|부안]](扶安), [[예천 임씨|예천]](醴泉), [[조양 임씨|조양]](兆陽)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0097",
+      "record_id": "census-r0097",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[장 (성씨)|장]]'''(張)||992,721||919,339||810,235||align=left|[[흥덕 장씨|흥덕]](興德), [[단양 장씨|단양]](丹陽), [[덕수 장씨|덕수]](德水), [[목천 장씨|목천]](木川)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0130",
+      "record_id": "census-r0130",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[전 (성씨)|전]]'''(全)||559,110||493,419||430,059||align=left|[[천안 전씨|천안]](天安), [[정선 전씨|정선]](旌善), [[옥천 전씨|옥천]](沃川), [[전주 전씨|전주]](全州)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0085",
+      "record_id": "census-r0085",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[정 (성씨)|정]]'''(鄭)||2,151,879||2,010,117||1,780,734||align=left|[[동래 정씨|동래]](東萊), [[경주 정씨|경주]](慶州), [[진주 정씨|진주]](晉州), [[연일 정씨|연일]](延日), [[하동 정씨|하동]](河東), [[해주 정씨|해주]](海州)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0335",
+      "record_id": "census-r0335",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[제 (성씨)|제]]'''(諸)||21,976||19,595||17,394||align=left|'''[[칠원 제씨|칠원]]'''(漆原)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0091",
+      "record_id": "census-r0091",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[조 (성씨)|조]]'''(趙)||1,055,567||984,913||877,058||align=left|[[한양 조씨|한양]](漢陽), [[함안 조씨|함안]](咸安), [[풍양 조씨|풍양]](豊壤), [[배천 조씨|배천]](白川), [[옥천 조씨|옥천]](玉川), [[평양 조씨|평양]](平壤)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0557",
+      "record_id": "census-r0557",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[종 (성씨)|종]]'''(鍾)||675||816||621||align=left|'''[[영암 종씨|영암]]'''(靈岩)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0188",
+      "record_id": "census-r0188",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[주 (성씨)|주]]'''(朱)||194,766||176,232||153,508||align=left|'''[[신안 주씨|신안]]'''(新安), [[능성 주씨|능성]](綾城), [[나주 주씨|나주]](羅州)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0218",
+      "record_id": "census-r0218",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[지 (성씨)|지]]'''(池)||153,491||140,824||125,648||align=left|'''[[충주 지씨|충주]]'''(忠州)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0356",
+      "record_id": "census-r0356",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[진 (성씨)|진]]'''(秦)||19,301||21,167||16,445||align=left|'''[[풍기 진씨|풍기]]'''(豊基)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0185",
+      "record_id": "census-r0185",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[차 (성씨)|차]]'''(車)||194,782||180,589||159,680||align=left|'''[[연안 차씨|연안]]'''(延安)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0530",
+      "record_id": "census-r0530",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[창 (성씨)|창]]'''(昌)||908||1,035||792||align=left|[[거창 창씨|거창]](居昌), [[창녕 창씨|창녕]](昌寧)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0224",
+      "record_id": "census-r0224",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[채 (성씨)|채]]'''(蔡)||131,557||114,069||97,650||align=left|'''[[평강 채씨|평강]]'''(平康), [[인천 채씨|인천]](仁川)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0230",
+      "record_id": "census-r0230",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[천 (성씨)|천]]'''(千)||121,780||103,811||97,419||align=left|'''[[영양 천씨|영양]]'''(潁陽)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0653",
+      "record_id": "census-r0653",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[초 (성씨)|초]]'''(楚)||200||281||232||align=left|[[성주 초씨|성주]](星州)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0082",
+      "record_id": "census-r0082",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[최 (성씨)|최]]'''(崔)||2,333,927||2,169,704||1,913,329||align=left|[[경주 최씨|경주]](慶州), [[전주 최씨|전주]](全州), [[해주 최씨|해주]](海州), [[강릉 최씨|강릉]](江陵), [[탐진 최씨|탐진]](耽津), [[수성 최씨|수성]](隋城), [[삭녕 최씨|삭녕]](朔寧)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0263",
+      "record_id": "census-r0263",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[추 (성씨)|추]]'''(秋)||60,483||54,667||48,643||align=left|'''[[추계 추씨|추계]]'''(秋溪)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0347",
+      "record_id": "census-r0347",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[탁 (성씨)|탁]]'''(卓)||21,099||19,395||16,943||align=left|'''[[광산 탁씨|광산]]'''(光山)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0623",
+      "record_id": "census-r0623",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[판 (성씨)|판]]'''(判)||278||290||238||align=left|'''[[해주 판씨|해주]]'''(海州)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0578",
+      "record_id": "census-r0578",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[평 (성씨)|평]]'''(平)||515||608||648||align=left|'''[[충주 평씨|충주]]'''(忠州)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0305",
+      "record_id": "census-r0305",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[표 (성씨)|표]]'''(表)||30,743||28,398||24,570||align=left|'''[[신창 표씨|신창]]'''(新昌)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0176",
+      "record_id": "census-r0176",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[하 (성씨)|하]]'''(河)||230,481||209,756||184,651||align=left|'''[[진주 하씨|진주]]'''(晉州)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0103",
+      "record_id": "census-r0103",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[한 (성씨)|한]]'''(韓)||773,404||704,365||628,396||align=left|'''[[청주 한씨|청주]]'''(淸州), [[곡산 한씨|곡산]](谷山)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0245",
+      "record_id": "census-r0245",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[함 (성씨)|함]]'''(咸)||80,659||75,955||65,193||align=left|'''[[강릉 함씨|강릉]]'''(江陵), [[양근 함씨|양근]](楊根)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0158",
+      "record_id": "census-r0158",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[허 (성씨)|허]]'''(許)||326,770||300,448||264,238||align=left|[[양천 허씨|양천]](陽川), [[김해 허씨|김해]](金海), [[하양 허씨|하양]](河陽), [[태인 허씨|태인]](泰仁)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0133",
+      "record_id": "census-r0133",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[홍 (성씨)|홍]]'''(洪)||558,853||518,635||457,583||align=left|'''[[남양 홍씨|남양]]'''(南陽), [[풍산 홍씨|풍산]](豊山), [[부계 홍씨|부계]](缶溪), [[홍주 홍씨|홍주]](洪州)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0118",
+      "record_id": "census-r0118",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[황 (성씨)|황]]'''(黃)||697,171||644,294||564,292||align=left|[[창원 황씨|창원]](昌原), [[장수 황씨|장수]](長水), [[평해 황씨|평해]](平海), [[우주 황씨|우주]](紆州), [[회덕 황씨|회덕]](懷德)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0257",
+      "record_id": "census-r0257",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[변 (성씨)|변]]'''(邊)||60,633||52,869||50,380||align=left|'''[[원주 변씨|원주]]'''(原州), [[황주 변씨|황주]](黃州), [[장연 변씨|장연]](長淵)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0413",
+      "record_id": "census-r0413",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[진 (성씨)|진]]'''(晋)||7,566||5,738||8,696||align=left|'''[[남원 진씨|남원]]'''(南原)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0293",
+      "record_id": "census-r0293",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[주 (성씨)|주]]'''(周)||37,240||38,778||33,222||align=left|'''[[상주 주씨|상주]]'''(尙州), [[초계 주씨|초계]](草溪)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0341",
+      "record_id": "census-r0341",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[장 (성씨)|장]]'''(蔣)||21,508||17,708||16,107||align=left|'''[[아산 장씨|아산]]'''(牙山)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0353",
+      "record_id": "census-r0353",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[여 (성씨)|여]]'''(余)||20,134||18,146||14,763||align=left|'''[[의령 여씨|의령]]'''(宜寧)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0197",
+      "record_id": "census-r0197",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[신 (성씨)|신]]'''(辛)||192,877||167,621||137,874||align=left|'''[[영산 신씨|영산]]'''(靈山), [[영월 신씨|영월]](寧越)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0266",
+      "record_id": "census-r0266",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[노 (성씨)|노]]'''(魯)||58,711||67,032||54,477||align=left|'''[[함평 노씨|함평]]'''(咸平), [[강화 노씨|강화]](江華)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0152",
+      "record_id": "census-r0152",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[조 (성씨)|조]]'''(曺)||398,260||362,817||304,837||align=left|'''[[창녕 조씨|창녕]]'''(昌寧)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0368",
+      "record_id": "census-r0368",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[구 (성씨)|구]]'''(丘)||15,382||13,241||10,890||align=left|'''[[평해 구씨|평해]]'''(平海)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0797",
+      "record_id": "census-r0797",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[순 (성씨)|순]]'''(淳)||71||121||35||align=left|'''[[금구 순씨|금구]]'''(金溝)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0200",
+      "record_id": "census-r0200",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[임 (성씨)|임]]'''(任)||191,261||172,726||147,700||align=left|'''[[풍천 임씨|풍천]]'''(豊川), [[장흥 임씨|장흥]](長興)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0374",
+      "record_id": "census-r0374",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[유 (성씨)|유]]'''(庾)||13,868||16,802||10,281||align=left|'''[[무송 유씨|무송]]'''(茂松), [[평산 유씨|평산]](平山)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0299",
+      "record_id": "census-r0299",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[방 (성씨)|방]]'''(房)||33,520||35,366||22,539||align=left|'''[[남양 방씨|남양]]'''(南陽)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r1235",
+      "record_id": "census-r1235",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[영 (성씨)|영]]'''(影)||10||41||5||align=left|'''선천'''",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0893",
+      "record_id": "census-r0893",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[초 (성씨)|초]]'''(初)||36||45||1||align=left|마산",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0659",
+      "record_id": "census-r0659",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[창 (성씨)|창]]'''(倉)||187||144||258||align=left|'''[[아산 창씨|아산]]'''(牙山)",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-census-r0506",
+      "record_id": "census-r0506",
+      "url": "https://ko.wikipedia.org/w/index.php?title=%ED%95%9C%EA%B5%AD%EC%9D%98_%EC%84%B1%EC%94%A8&action=raw",
+      "accessed": "2026-09-16",
+      "quote": "|align=center|'''[[진 (성씨)|진]]'''(陣)||1,740||||||align=left|여양",
+      "evidence": "Research/verification/hangnyeol/raw/census-surname-table.md",
+      "live_check": "verbatim_ok",
+      "live_check_ref": "Research/verification/hangnyeol/raw/_verify-census.md"
+    },
+    {
+      "id": "s-cast-bongwan-b098-b098-c8fc",
+      "url": "https://ko.wikipedia.org/wiki/나_(성씨)",
+      "accessed": "2026-09-16",
+      "quote": "라(羅) 또는 나(羅)씨는 2015년 대한민국 통계청 인구조사에서 186,906명(나 160,946명 + 라 25,960명)으로 조사되어, 한국 성씨 인구 44위이다. 본관은 나주(羅州), 금성(錦城), 안정(安定) 등 10여 본이 전하며, 전라남도 나주시를 본관으로 하는 금성 라씨와 나주 나씨가 인구의 절대다수를 차지한다.",
+      "evidence": "Research/verification/hangnyeol/raw/cast-missing-bongwan.md",
+      "live_check": "unchecked"
+    },
+    {
+      "id": "s-cast-bongwan-b77c-ae08-c131",
+      "url": "https://ko.wikipedia.org/wiki/나_(성씨)",
+      "accessed": "2026-09-16",
+      "quote": "라(羅) 또는 나(羅)씨는 2015년 대한민국 통계청 인구조사에서 186,906명(나 160,946명 + 라 25,960명)으로 조사되어, 한국 성씨 인구 44위이다. 본관은 나주(羅州), 금성(錦城), 안정(安定) 등 10여 본이 전하며, 전라남도 나주시를 본관으로 하는 금성 라씨와 나주 나씨가 인구의 절대다수를 차지한다.",
+      "evidence": "Research/verification/hangnyeol/raw/cast-missing-bongwan.md",
+      "live_check": "unchecked"
+    },
+    {
+      "id": "s-cast-bongwan-b958-bb38-d654",
+      "url": "https://ko.wikipedia.org/wiki/문화_류씨",
+      "accessed": "2026-09-16",
+      "quote": "문화 류씨(文化 柳氏)는 황해도 신천군 문화면을 본관으로 하는 한국의 성씨이다.",
+      "evidence": "Research/verification/hangnyeol/raw/cast-missing-bongwan.md",
+      "live_check": "unchecked"
+    },
+    {
+      "id": "s-cast-bongwan-bb38-b0a8-d3c9",
+      "url": "https://ko.wikipedia.org/wiki/남평_문씨",
+      "accessed": "2026-09-16",
+      "quote": "남평 문씨(南平文氏)는 전라남도 나주시 남평읍을 본관으로 하는 한국의 성씨이다.",
+      "evidence": "Research/verification/hangnyeol/raw/cast-missing-bongwan.md",
+      "live_check": "unchecked"
+    },
+    {
+      "id": "s-cast-bongwan-bbfc-c5ec-d765",
+      "url": "https://ko.wikipedia.org/wiki/여흥_민씨",
+      "accessed": "2026-09-16",
+      "quote": "여흥 민씨(驪興閔氏)는 경기도 여주시를 관향으로 하는 한국의 성씨이다.",
+      "evidence": "Research/verification/hangnyeol/raw/cast-missing-bongwan.md",
+      "live_check": "unchecked"
+    },
+    {
+      "id": "s-jeonui-cheonggang-33-seop",
+      "url": "http://cheonggang.com/content/cheonggang6_03",
+      "accessed": "2026-09-16",
+      "quote": "33世 O燮(섭)",
+      "evidence": "Research/verification/hangnyeol/raw/jeonui-lee-cheonggang-hangnyeol.md",
+      "live_check": "unchecked"
+    }
+  ],
+  "clans": [
+    {
+      "id": "ac10-cc3d-c6d0",
+      "surname": "감",
+      "bongwan": "창원",
+      "bongwan_hanja": "昌原",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0434"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "ac15-c9c4-c8fc",
+      "surname": "강",
+      "bongwan": "진주",
+      "bongwan_hanja": "晉州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0088"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "ace0-d55c-c591",
+      "surname": "고",
+      "bongwan": "한양",
+      "bongwan_hanja": null,
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0908"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "acfd-d604-d48d",
+      "surname": "곽",
+      "bongwan": "현풍",
+      "bongwan_hanja": "玄風",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0179"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "ad6c-b2a5-c131",
+      "surname": "구",
+      "bongwan": "능성",
+      "bongwan_hanja": "綾城",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0194"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "ad6d-b2f4-c591",
+      "surname": "국",
+      "bongwan": "담양",
+      "bongwan_hanja": "潭陽",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0350"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "ad8c-c548-b3d9",
+      "surname": "권",
+      "bongwan": "안동",
+      "bongwan_hanja": "安東",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0115"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "adfc-ccad-c8fc",
+      "surname": "근",
+      "bongwan": "청주",
+      "bongwan_hanja": "淸州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0683"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "ae30-d589-c8fc",
+      "surname": "기",
+      "bongwan": "행주",
+      "bongwan_hanja": "幸州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0311"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "ae40-ae40-d574",
+      "surname": "김",
+      "bongwan": "김해",
+      "bongwan_hanja": "金海",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0072"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "b0a8-c758-b839",
+      "surname": "남",
+      "bongwan": "의령",
+      "bongwan_hanja": "宜寧",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0164"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "b178-ad11-c8fc",
+      "surname": "노",
+      "bongwan": "광주",
+      "bongwan_hanja": "光州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0170"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "b2e8-ac15-c74c",
+      "surname": "단",
+      "bongwan": "강음",
+      "bongwan_hanja": "江陰",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0509"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "b3d9-ad11-cc9c",
+      "surname": "동",
+      "bongwan": "광천",
+      "bongwan_hanja": "廣川",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0449"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "b450-b450-b989",
+      "surname": "두",
+      "bongwan": "두릉",
+      "bongwan_hanja": "杜陵",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0428"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "b9c8-c7a5-d765",
+      "surname": "마",
+      "bongwan": "장흥",
+      "bongwan_hanja": "長興",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0287"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "b9e4-cda9-c8fc",
+      "surname": "매",
+      "bongwan": "충주",
+      "bongwan_hanja": "忠州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0650"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "ba85-c5f0-c548",
+      "surname": "명",
+      "bongwan": "연안",
+      "bongwan_hanja": "延安",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0308"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "baa8-d568-d3c9",
+      "surname": "모",
+      "bongwan": "함평",
+      "bongwan_hanja": "咸平",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0338"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "bc15-bc00-c591",
+      "surname": "박",
+      "bongwan": "밀양",
+      "bongwan_hanja": "密陽",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0079"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "bc29-c628-c591",
+      "surname": "방",
+      "bongwan": "온양",
+      "bongwan_hanja": "溫陽",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0233"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "bc30-c131-c8fc",
+      "surname": "배",
+      "bongwan": "성주",
+      "bongwan_hanja": "星州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0149"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "bc31-c218-c6d0",
+      "surname": "백",
+      "bongwan": "수원",
+      "bongwan_hanja": "水原",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0155"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "bc94-ae08-c131",
+      "surname": "범",
+      "bongwan": "금성",
+      "bongwan_hanja": "錦城",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0464"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "bcc0-cd08-acc4",
+      "surname": "변",
+      "bongwan": "초계",
+      "bongwan_hanja": "草溪",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0248"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "bcf5-ba74-cc9c",
+      "surname": "복",
+      "bongwan": "면천",
+      "bongwan_hanja": "沔川",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0404"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "bd09-d558-c74c",
+      "surname": "봉",
+      "bongwan": "하음",
+      "bongwan_hanja": "河陰",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0383"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c11c-b2ec-c131",
+      "surname": "서",
+      "bongwan": "달성",
+      "bongwan_hanja": "達城",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0109"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c11d-cda9-c8fc",
+      "surname": "석",
+      "bongwan": "충주",
+      "bongwan_hanja": "忠州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0278"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c120-bcf4-c131",
+      "surname": "선",
+      "bongwan": "보성",
+      "bongwan_hanja": "寶城",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0281"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c124-c21c-cc3d",
+      "surname": "설",
+      "bongwan": "순창",
+      "bongwan_hanja": "淳昌",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0284"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c12d-acbd-c8fc",
+      "surname": "섭",
+      "bongwan": "경주",
+      "bongwan_hanja": "慶州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0788"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c131-cc3d-b155",
+      "surname": "성",
+      "bongwan": "창녕",
+      "bongwan_hanja": "昌寧",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0182"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c18c-c9c4-c8fc",
+      "surname": "소",
+      "bongwan": "진주",
+      "bongwan_hanja": "晉州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0272"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c190-bc00-c591",
+      "surname": "손",
+      "bongwan": "밀양",
+      "bongwan_hanja": "密陽",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0146"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c1a1-c5ec-c0b0",
+      "surname": "송",
+      "bongwan": "여산",
+      "bongwan_hanja": "礪山",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0124"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c218-d55c-c591",
+      "surname": "수",
+      "bongwan": "한양",
+      "bongwan_hanja": null,
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0905"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c21c-d64d-c0b0",
+      "surname": "순",
+      "bongwan": "홍산",
+      "bongwan_hanja": "鴻山",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0545"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c2e0-d3c9-c0b0",
+      "surname": "신",
+      "bongwan": "평산",
+      "bongwan_hanja": "平山",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0112"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c2ec-ccad-c1a1",
+      "surname": "심",
+      "bongwan": "청송",
+      "bongwan_hanja": "靑松",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0167"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c548-c21c-d765",
+      "surname": "안",
+      "bongwan": "순흥",
+      "bongwan_hanja": "順興",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0121"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c591-ccad-c8fc",
+      "surname": "양",
+      "bongwan": "청주",
+      "bongwan_hanja": "淸州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0254"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c5b4-d568-c885",
+      "surname": "어",
+      "bongwan": "함종",
+      "bongwan_hanja": "咸從",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0359"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c5c4-c601-c6d4",
+      "surname": "엄",
+      "bongwan": "영월",
+      "bongwan_hanja": "寧越",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0221"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c5ec-d568-c591",
+      "surname": "여",
+      "bongwan": "함양",
+      "bongwan_hanja": "咸陽",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0260"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c5f0-ace1-c0b0",
+      "surname": "연",
+      "bongwan": "곡산",
+      "bongwan_hanja": "谷山",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0296"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c601-c601-cc9c",
+      "surname": "영",
+      "bongwan": "영천",
+      "bongwan_hanja": null,
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r1106"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c624-d574-c8fc",
+      "surname": "오",
+      "bongwan": "해주",
+      "bongwan_hanja": "海州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0106"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c6a9-d64d-cc9c",
+      "surname": "용",
+      "bongwan": "홍천",
+      "bongwan_hanja": "洪川",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0371"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c6b0-b2e8-c591",
+      "surname": "우",
+      "bongwan": "단양",
+      "bongwan_hanja": "丹陽",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0191"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c6d0-c6d0-c8fc",
+      "surname": "원",
+      "bongwan": "원주",
+      "bongwan_hanja": "原州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0227"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c720-ac15-b989",
+      "surname": "유",
+      "bongwan": "강릉",
+      "bongwan_hanja": "江陵",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0161"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c724-d30c-d3c9",
+      "surname": "윤",
+      "bongwan": "파평",
+      "bongwan_hanja": "坡平",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0094"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c740-d589-c8fc",
+      "surname": "은",
+      "bongwan": "행주",
+      "bongwan_hanja": "幸州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0362"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c774-c804-c8fc",
+      "surname": "이",
+      "bongwan": "전주",
+      "bongwan_hanja": "全州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0075"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c784-b098-c8fc",
+      "surname": "임",
+      "bongwan": "나주",
+      "bongwan_hanja": "羅州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0100"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c7a5-d765-b355",
+      "surname": "장",
+      "bongwan": "흥덕",
+      "bongwan_hanja": "興德",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0097"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c804-cc9c-c548",
+      "surname": "전",
+      "bongwan": "천안",
+      "bongwan_hanja": "天安",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0130"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c815-b3d9-b798",
+      "surname": "정",
+      "bongwan": "동래",
+      "bongwan_hanja": "東萊",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0085"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c81c-ce60-c6d0",
+      "surname": "제",
+      "bongwan": "칠원",
+      "bongwan_hanja": "漆原",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0335"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c870-d55c-c591",
+      "surname": "조",
+      "bongwan": "한양",
+      "bongwan_hanja": "漢陽",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0091"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c885-c601-c554",
+      "surname": "종",
+      "bongwan": "영암",
+      "bongwan_hanja": "靈岩",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0557"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c8fc-c2e0-c548",
+      "surname": "주",
+      "bongwan": "신안",
+      "bongwan_hanja": "新安",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0188"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c9c0-cda9-c8fc",
+      "surname": "지",
+      "bongwan": "충주",
+      "bongwan_hanja": "忠州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0218"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "c9c4-d48d-ae30",
+      "surname": "진",
+      "bongwan": "풍기",
+      "bongwan_hanja": "豊基",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0356"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "cc28-c5f0-c548",
+      "surname": "차",
+      "bongwan": "연안",
+      "bongwan_hanja": "延安",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0185"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "cc3d-ac70-cc3d",
+      "surname": "창",
+      "bongwan": "거창",
+      "bongwan_hanja": "居昌",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0530"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "cc44-d3c9-ac15",
+      "surname": "채",
+      "bongwan": "평강",
+      "bongwan_hanja": "平康",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0224"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "cc9c-c601-c591",
+      "surname": "천",
+      "bongwan": "영양",
+      "bongwan_hanja": "潁陽",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0230"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "cd08-c131-c8fc",
+      "surname": "초",
+      "bongwan": "성주",
+      "bongwan_hanja": "星州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0653"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "cd5c-acbd-c8fc",
+      "surname": "최",
+      "bongwan": "경주",
+      "bongwan_hanja": "慶州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0082"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "cd94-cd94-acc4",
+      "surname": "추",
+      "bongwan": "추계",
+      "bongwan_hanja": "秋溪",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0263"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "d0c1-ad11-c0b0",
+      "surname": "탁",
+      "bongwan": "광산",
+      "bongwan_hanja": "光山",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0347"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "d310-d574-c8fc",
+      "surname": "판",
+      "bongwan": "해주",
+      "bongwan_hanja": "海州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0623"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "d3c9-cda9-c8fc",
+      "surname": "평",
+      "bongwan": "충주",
+      "bongwan_hanja": "忠州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0578"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "d45c-c2e0-cc3d",
+      "surname": "표",
+      "bongwan": "신창",
+      "bongwan_hanja": "新昌",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0305"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "d558-c9c4-c8fc",
+      "surname": "하",
+      "bongwan": "진주",
+      "bongwan_hanja": "晉州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0176"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "d55c-ccad-c8fc",
+      "surname": "한",
+      "bongwan": "청주",
+      "bongwan_hanja": "淸州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0103"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "d568-ac15-b989",
+      "surname": "함",
+      "bongwan": "강릉",
+      "bongwan_hanja": "江陵",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0245"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "d5c8-c591-cc9c",
+      "surname": "허",
+      "bongwan": "양천",
+      "bongwan_hanja": "陽川",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0158"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "d64d-b0a8-c591",
+      "surname": "홍",
+      "bongwan": "남양",
+      "bongwan_hanja": "南陽",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0133"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "d669-cc3d-c6d0",
+      "surname": "황",
+      "bongwan": "창원",
+      "bongwan_hanja": "昌原",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0118"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "캐스트 정본에 부계 가계·분파·세수가 없고, 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다. 기존 이름은 개명하지 않는다."
+    },
+    {
+      "id": "cangnyeong-seong-yeolcha",
+      "surname": "성",
+      "bongwan": "창녕",
+      "branch": "열차정비분파",
+      "provenance": "creative",
+      "creative_rationale": "붕괴 후 족보가 끊긴 창녕 성씨 생존자들이 오행상생법을 본떠 새로 합의한 세계관 가계 항렬. 실존 창녕 성씨 항렬표가 아니다.",
+      "method_ref": "ohaeng",
+      "rows": [
+        {
+          "sesu": 42,
+          "hangnyeol": "현",
+          "hanja": null,
+          "position": "second"
+        }
+      ]
+    },
+    {
+      "id": "c774-d55c-c0b0-674e",
+      "surname": "이",
+      "bongwan": "한산",
+      "bongwan_hanja": "韓山",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0075"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "ae40-ccad-d48d-91d1",
+      "surname": "김",
+      "bongwan": "청풍",
+      "bongwan_hanja": "淸風",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0072"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "cd5c-ac15-b989-5d14",
+      "surname": "최",
+      "bongwan": "강릉",
+      "bongwan_hanja": "江陵",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0082"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c815-c9c4-c8fc-912d",
+      "surname": "정",
+      "bongwan": "진주",
+      "bongwan_hanja": "晉州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0085"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c7a5-b355-c218-5f35",
+      "surname": "장",
+      "bongwan": "덕수",
+      "bongwan_hanja": "德水",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0097"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "d5c8-d558-c591-8a31",
+      "surname": "허",
+      "bongwan": "하양",
+      "bongwan_hanja": "河陽",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0158"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "bcc0-c6d0-c8fc-908a",
+      "surname": "변",
+      "bongwan": "원주",
+      "bongwan_hanja": "原州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0257"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "d5c8-d0dc-c778-8a31",
+      "surname": "허",
+      "bongwan": "태인",
+      "bongwan_hanja": "泰仁",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0158"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "bc30-acbd-c8fc-88f5",
+      "surname": "배",
+      "bongwan": "경주",
+      "bongwan_hanja": "慶州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0149"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c774-c5f0-c548-674e",
+      "surname": "이",
+      "bongwan": "연안",
+      "bongwan_hanja": "延安",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0075"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c1a1-c9c4-cc9c-5b8b",
+      "surname": "송",
+      "bongwan": "진천",
+      "bongwan_hanja": "鎭川",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0124"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c784-bd80-c548-6797",
+      "surname": "임",
+      "bongwan": "부안",
+      "bongwan_hanja": "扶安",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0100"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c774-c131-c8fc-674e",
+      "surname": "이",
+      "bongwan": "성주",
+      "bongwan_hanja": "星州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0075"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c784-c870-c591-6797",
+      "surname": "임",
+      "bongwan": "조양",
+      "bongwan_hanja": "兆陽",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0100"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c774-ad11-c8fc-674e",
+      "surname": "이",
+      "bongwan": "광주",
+      "bongwan_hanja": "廣州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0075"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c1a1-c740-c9c4-5b8b",
+      "surname": "송",
+      "bongwan": "은진",
+      "bongwan_hanja": "恩津",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0124"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "cd5c-c0ad-b155-5d14",
+      "surname": "최",
+      "bongwan": "삭녕",
+      "bongwan_hanja": "朔寧",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0082"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c870-c625-cc9c-8d99",
+      "surname": "조",
+      "bongwan": "옥천",
+      "bongwan_hanja": "玉川",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0091"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c591-b0a8-c6d0-694a",
+      "surname": "양",
+      "bongwan": "남원",
+      "bongwan_hanja": "南原",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0254"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "ae40-c758-c131-91d1",
+      "surname": "김",
+      "bongwan": "의성",
+      "bongwan_hanja": "義城",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0072"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c815-c5f0-c77c-912d",
+      "surname": "정",
+      "bongwan": "연일",
+      "bongwan_hanja": "延日",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0085"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c815-acbd-c8fc-912d",
+      "surname": "정",
+      "bongwan": "경주",
+      "bongwan_hanja": "慶州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0085"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "ae40-ad11-c0b0-91d1",
+      "surname": "김",
+      "bongwan": "광산",
+      "bongwan_hanja": "光山",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0072"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c774-acbd-c8fc-674e",
+      "surname": "이",
+      "bongwan": "경주",
+      "bongwan_hanja": "慶州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0075"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "cd5c-c218-c131-5d14",
+      "surname": "최",
+      "bongwan": "수성",
+      "bongwan_hanja": "隋城",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0082"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "bc30-bd84-c131-88f5",
+      "surname": "배",
+      "bongwan": "분성",
+      "bongwan_hanja": "盆城",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0149"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "d5c8-ae40-d574-8a31",
+      "surname": "허",
+      "bongwan": "김해",
+      "bongwan_hanja": "金海",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0158"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c591-c911-d654-694a",
+      "surname": "양",
+      "bongwan": "중화",
+      "bongwan_hanja": "中和",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0254"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c9c4-b0a8-c6d0-664b",
+      "surname": "진",
+      "bongwan": "남원",
+      "bongwan_hanja": "南原",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0413"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c1a1-c2e0-d3c9-5b8b",
+      "surname": "송",
+      "bongwan": "신평",
+      "bongwan_hanja": "新平",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0124"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "cd5c-d574-c8fc-5d14",
+      "surname": "최",
+      "bongwan": "해주",
+      "bongwan_hanja": "海州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0082"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "ae40-ac15-b989-91d1",
+      "surname": "김",
+      "bongwan": "강릉",
+      "bongwan_hanja": "江陵",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0072"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c7a5-b2e8-c591-5f35",
+      "surname": "장",
+      "bongwan": "단양",
+      "bongwan_hanja": "丹陽",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0097"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c784-d3c9-d0dd-6797",
+      "surname": "임",
+      "bongwan": "평택",
+      "bongwan_hanja": "平澤",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0100"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "cd5c-c804-c8fc-5d14",
+      "surname": "최",
+      "bongwan": "전주",
+      "bongwan_hanja": "全州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0082"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c8fc-c0c1-c8fc-5468",
+      "surname": "주",
+      "bongwan": "상주",
+      "bongwan_hanja": "尙州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0293"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c870-d3c9-c591-8d99",
+      "surname": "조",
+      "bongwan": "평양",
+      "bongwan_hanja": "平壤",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0091"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "d669-d3c9-d574-9ec3",
+      "surname": "황",
+      "bongwan": "평해",
+      "bongwan_hanja": "平海",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0118"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c7a5-c544-c0b0-8523",
+      "surname": "장",
+      "bongwan": "아산",
+      "bongwan_hanja": "牙山",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0341"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "bc30-d765-d574-88f5",
+      "surname": "배",
+      "bongwan": "흥해",
+      "bongwan_hanja": "興海",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0149"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c774-c804-c758-674e",
+      "surname": "이",
+      "bongwan": "전의",
+      "bongwan_hanja": "全義",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0075"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c5ec-c758-b839-4f59",
+      "surname": "여",
+      "bongwan": "의령",
+      "bongwan_hanja": "宜寧",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0353"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "b178-c7a5-c5f0-76e7",
+      "surname": "노",
+      "bongwan": "장연",
+      "bongwan_hanja": "長淵",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0170"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "ae40-acbd-c8fc-91d1",
+      "surname": "김",
+      "bongwan": "경주",
+      "bongwan_hanja": "慶州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0072"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c815-d574-c8fc-912d",
+      "surname": "정",
+      "bongwan": "해주",
+      "bongwan_hanja": "海州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0085"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c2e0-c601-c0b0-8f9b",
+      "surname": "신",
+      "bongwan": "영산",
+      "bongwan_hanja": "靈山",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0197"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c7a5-baa9-cc9c-5f35",
+      "surname": "장",
+      "bongwan": "목천",
+      "bongwan_hanja": "木川",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0097"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c1a1-d64d-c8fc-5b8b",
+      "surname": "송",
+      "bongwan": "홍주",
+      "bongwan_hanja": "洪州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0124"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c815-d558-b3d9-912d",
+      "surname": "정",
+      "bongwan": "하동",
+      "bongwan_hanja": "河東",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0085"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c870-bc30-cc9c-8d99",
+      "surname": "조",
+      "bongwan": "배천",
+      "bongwan_hanja": "白川",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0091"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "b178-d568-d3c9-9b6f",
+      "surname": "노",
+      "bongwan": "함평",
+      "bongwan_hanja": "咸平",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0266"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "b178-ad50-d558-76e7",
+      "surname": "노",
+      "bongwan": "교하",
+      "bongwan_hanja": "交河",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0170"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "b178-d48d-cc9c-76e7",
+      "surname": "노",
+      "bongwan": "풍천",
+      "bongwan_hanja": "豊川",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0170"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c784-c608-cc9c-6797",
+      "surname": "임",
+      "bongwan": "예천",
+      "bongwan_hanja": "醴泉",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0100"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "cd5c-d0d0-c9c4-5d14",
+      "surname": "최",
+      "bongwan": "탐진",
+      "bongwan_hanja": "耽津",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0082"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c870-cc3d-b155-66fa",
+      "surname": "조",
+      "bongwan": "창녕",
+      "bongwan_hanja": "昌寧",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0152"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "d669-c7a5-c218-9ec3",
+      "surname": "황",
+      "bongwan": "장수",
+      "bongwan_hanja": "長水",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0118"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "d669-d68c-b355-9ec3",
+      "surname": "황",
+      "bongwan": "회덕",
+      "bongwan_hanja": "懷德",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0118"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c870-d568-c548-8d99",
+      "surname": "조",
+      "bongwan": "함안",
+      "bongwan_hanja": "咸安",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0091"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "b2e8-b300-d765-6bb5",
+      "surname": "단",
+      "bongwan": "대흥",
+      "bongwan_hanja": "大興",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0509"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "ad6c-d3c9-d574-4e18",
+      "surname": "구",
+      "bongwan": "평해",
+      "bongwan_hanja": "平海",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0368"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "bc30-b300-ad6c-88f5",
+      "surname": "배",
+      "bongwan": "대구",
+      "bongwan_hanja": "大邱",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0149"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "b2e8-c11c-cd09-6bb5",
+      "surname": "단",
+      "bongwan": "서촉",
+      "bongwan_hanja": "西蜀",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0509"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c21c-ae08-ad6c-6df3",
+      "surname": "순",
+      "bongwan": "금구",
+      "bongwan_hanja": "金溝",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0797"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c1a1-c5f0-c548-5b8b",
+      "surname": "송",
+      "bongwan": "연안",
+      "bongwan_hanja": "延安",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0124"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c870-d48d-c591-8d99",
+      "surname": "조",
+      "bongwan": "풍양",
+      "bongwan_hanja": "豊壤",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0091"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "d669-c6b0-c8fc-9ec3",
+      "surname": "황",
+      "bongwan": "우주",
+      "bongwan_hanja": "紆州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0118"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "b2e8-c5f0-c548-6bb5",
+      "surname": "단",
+      "bongwan": "연안",
+      "bongwan_hanja": "延安",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0509"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c784-d48d-cc9c-4efb",
+      "surname": "임",
+      "bongwan": "풍천",
+      "bongwan_hanja": "豊川",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0200"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c720-bb34-c1a1-5ebe",
+      "surname": "유",
+      "bongwan": "무송",
+      "bongwan_hanja": "茂松",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0374"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c804-c625-cc9c-5168",
+      "surname": "전",
+      "bongwan": "옥천",
+      "bongwan_hanja": "沃川",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0130"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "bc29-b0a8-c591-623f",
+      "surname": "방",
+      "bongwan": "남양",
+      "bongwan_hanja": "南陽",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0299"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "cc3d-cc3d-b155-660c",
+      "surname": "창",
+      "bongwan": "창녕",
+      "bongwan_hanja": "昌寧",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0530"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "ae40-c0c1-b77d-91d1",
+      "surname": "김",
+      "bongwan": "상락",
+      "bongwan_hanja": "上洛",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0072"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c601-c120-cc9c-5f71",
+      "surname": "영",
+      "bongwan": "선천",
+      "bongwan_hanja": null,
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r1235"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "cd08-b9c8-c0b0-521d",
+      "surname": "초",
+      "bongwan": "마산",
+      "bongwan_hanja": null,
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0893"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c804-c804-c8fc-5168",
+      "surname": "전",
+      "bongwan": "전주",
+      "bongwan_hanja": "全州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0130"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "cc3d-c544-c0b0-5009",
+      "surname": "창",
+      "bongwan": "아산",
+      "bongwan_hanja": "牙山",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0659"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "c9c4-c5ec-c591-9663",
+      "surname": "진",
+      "bongwan": "여양",
+      "bongwan_hanja": null,
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-census-r0506"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "센서스 표에서 성씨·본관 정체성은 확인했으나 문중 항렬표 원문에서 세수·항렬자·자리를 함께 확인하지 못했다."
+    },
+    {
+      "id": "b098-b098-c8fc-7f85",
+      "surname": "나",
+      "bongwan": "나주",
+      "bongwan_hanja": "羅州",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-cast-bongwan-b098-b098-c8fc"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "성씨·본관 정체성은 확인했으나 분파·세수·항렬자는 확인하지 못했다."
+    },
+    {
+      "id": "b77c-ae08-c131-7f85",
+      "surname": "라",
+      "bongwan": "금성",
+      "bongwan_hanja": "錦城",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-cast-bongwan-b77c-ae08-c131"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "성씨·본관 정체성은 확인했으나 분파·세수·항렬자는 확인하지 못했다."
+    },
+    {
+      "id": "b958-bb38-d654-67f3",
+      "surname": "류",
+      "bongwan": "문화",
+      "bongwan_hanja": "文化",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-cast-bongwan-b958-bb38-d654"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "성씨·본관 정체성은 확인했으나 분파·세수·항렬자는 확인하지 못했다."
+    },
+    {
+      "id": "bb38-b0a8-d3c9-6587",
+      "surname": "문",
+      "bongwan": "남평",
+      "bongwan_hanja": "南平",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-cast-bongwan-bb38-b0a8-d3c9"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "성씨·본관 정체성은 확인했으나 분파·세수·항렬자는 확인하지 못했다."
+    },
+    {
+      "id": "bbfc-c5ec-d765-9594",
+      "surname": "민",
+      "bongwan": "여흥",
+      "bongwan_hanja": "驪興",
+      "branch": "unconfirmed",
+      "provenance": "verified",
+      "sources": [
+        "s-cast-bongwan-bbfc-c5ec-d765"
+      ],
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "성씨·본관 정체성은 확인했으나 분파·세수·항렬자는 확인하지 못했다."
+    },
+    {
+      "id": "creative-b780-b3c4-bd09",
+      "surname": "란",
+      "bongwan": "도봉",
+      "bongwan_hanja": "道峰",
+      "branch": "붕괴후신생문중",
+      "provenance": "creative",
+      "creative_rationale": "공개 조사에서 란씨의 실존 본관을 확인하지 못했다. 붕괴 후 서울 생존 공동체가 정착지 도봉을 관향으로 새로 합의한 세계관 문중이다.",
+      "method_ref": "ohaeng",
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "신생 문중의 항렬표는 아직 제정되지 않았다."
+    },
+    {
+      "id": "creative-d765-c218-c0c9",
+      "surname": "흥",
+      "bongwan": "수색",
+      "bongwan_hanja": "水色",
+      "branch": "붕괴후신생문중",
+      "provenance": "creative",
+      "creative_rationale": "공개 조사에서 흥씨의 실존 본관을 확인하지 못했다. 붕괴 후 서울 생존 공동체가 정착지 수색을 관향으로 새로 합의한 세계관 문중이다.",
+      "method_ref": "ohaeng",
+      "rows": [],
+      "hangnyeol_unconfirmed_reason": "신생 문중의 항렬표는 아직 제정되지 않았다."
+    },
+    {
+      "id": "jeonui-lee-cheonggang",
+      "surname": "이",
+      "bongwan": "전의",
+      "bongwan_hanja": "全義",
+      "branch": "청강공파",
+      "provenance": "verified",
+      "sources": [
+        "s-jeonui-cheonggang-33-seop"
+      ],
+      "rows": [
+        {
+          "sesu": 33,
+          "hangnyeol": "섭",
+          "hanja": "燮",
+          "position": "second"
+        }
+      ]
+    }
+  ]
+}

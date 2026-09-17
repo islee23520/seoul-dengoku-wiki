@@ -1,0 +1,23 @@
+✔ nanobanana_gemini 2d node uses gemini metadata (0.878583ms)
+✔ grok_imagine 2d node uses xai metadata (0.0665ms)
+✔ openai_image 2d node uses openai metadata (0.045ms)
+✔ unknown generation backend is rejected (0.152792ms)
+✔ legacy comfyui_trellis compile is invalid (0.04325ms)
+✔ direct trellis_v1 compiles official 3D only (0.066041ms)
+✔ trellis_v1 four_dir keeps rig animation and review gates (0.05625ms)
+✔ parseHostFlag accepts trellis (0.068667ms)
+✔ check fails without TRELLIS host and passes with the declared host (0.192084ms)
+✔ unresolved rights compile only rights_check (0.091834ms)
+✔ check rejects graph when intent digest no longer matches (0.078458ms)
+✔ check rejects stored graph with foreign schema_version (0.053125ms)
+✔ ui_concept title_art and ui_kit stay on 2d path (0.056375ms)
+✔ intent digest is stable for identical intents (0.046291ms)
+✔ poc and existing intent files compile (4.059ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 45.647166

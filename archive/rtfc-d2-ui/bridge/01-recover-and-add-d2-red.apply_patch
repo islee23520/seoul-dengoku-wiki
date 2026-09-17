@@ -1,0 +1,748 @@
+*** Begin Patch
+*** Update File: Game/Assets/Janseon/Foundation/UI/GameplayUiSnapshot.cs
+@@ -17,7 +17,7 @@
+     }
+ 
+     /// <summary>
+-    /// Deterministic UI snapshot derived from Core campaign/battle state (Design.md ��5.2).
++    /// Deterministic UI snapshot derived from Core campaign/battle state (Design.md §5.2).
+     /// </summary>
+     public sealed class GameplayUiSnapshot
+     {
+@@ -56,11 +56,7 @@
+         public bool ShowFaceAction { get; private set; }
+         public bool ShowEnterResolutionAction { get; private set; }
+         public bool ShowSettleAction { get; private set; }
+-        public bool ShowBattlePlayPauseAction { get; private set; }
+-        public bool ShowCardGeneralRechargeAction { get; private set; }
+-        public bool ShowCardGeneralUseAction { get; private set; }
+-        public bool ShowEditFormationAction { get; private set; }
+-        public bool ShowCardMobilityRegroupAction { get; private set; }
++        public bool ShowBattleAdvanceAction { get; private set; }
+         public bool ShowReturnAction { get; private set; }
+ 
+         public static GameplayUiSnapshot FromCampaign(CampaignState campaign, BattleSimState battle)
+@@ -84,11 +80,11 @@
+             snap.NamedFlags[UiElementNames.HubBulletinPanel + ":visible"] = snap.ShowBulletinPanel;
+             FillDeployment(snap, campaign);
+             snap.EncounterContext = campaign.Node.Value
+-                + " �� "
++                + " · "
+                 + campaign.Stage.ToString()
+-                + " �� �ڿ� "
++                + " · 자원 "
+                 + campaign.Resources.ToString(CultureInfo.InvariantCulture)
+-                + " �� ���� "
++                + " · 평판 "
+                 + campaign.Reputation.ToString(CultureInfo.InvariantCulture);
+             snap.NamedFlags[snap.CurrentStageElement + ":current"] = true;
+             snap.NamedFlags[snap.CurrentStationElement + ":current"] = true;
+@@ -116,8 +112,9 @@
+                 if (string.IsNullOrEmpty(snap.SettlementOutcomeText))
+                 {
+                     snap.SettlementOutcomeCode = "combat-pending-settle";
+-                    snap.SettlementOutcomeText = battle.Outcome == BattleOutcomeKind.PlayerVictory ? "win" : "lose";
+-
++                    snap.SettlementOutcomeText = battle.Outcome == BattleOutcomeKind.PlayerVictory
++                        ? "전투 승리 · 정산 대기"
++                        : "전투 패배 · 정산 대기";
+                 }
+             }
+             else if (campaign.Stage == CampaignStage.Settlement && campaign.SettlementApplied)
+@@ -243,22 +240,22 @@
+             switch (campaign.Choice)
+             {
+                 case EncounterChoice.Negotiate:
+-                    sb.Append("���� ����");
++                    sb.Append("교섭 정산");
+                     break;
+                 case EncounterChoice.Bypass:
+-                    sb.Append("��ȸ ����");
++                    sb.Append("우회 정산");
+                     break;
+                 case EncounterChoice.Combat:
+-                    sb.Append("���� ����");
++                    sb.Append("전투 정산");
+                     break;
+                 default:
+-                    sb.Append("���� �Ϸ�");
++                    sb.Append("정산 완료");
+                     break;
+             }
+ 
+             if (campaign.SettlementApplied)
+             {
+-                sb.Append(" �� ����");
++                sb.Append(" · 적용");
+             }
+ 
+             if (!string.IsNullOrEmpty(campaign.SettledResultId))
+@@ -279,7 +276,7 @@
+             snap.NamedFlags[UiElementNames.BattleLog + ":visible"] = true;
+             snap.NamedFlags[UiElementNames.BattleHpMeter + ":visible"] = true;
+             snap.NamedFlags[UiElementNames.BattleApMeter + ":visible"] = true;
+-            snap.BattleForecast = "�ǽð� ���� ���� �� 30 tick/s �� ī�� ������";
++            snap.BattleForecast = "실시간 진형 전투 · 30 tick/s · 카드 재충전";
+             if (battle.Units == null)
+             {
+                 return;
+@@ -466,4 +463,3 @@
+         }
+     }
+ }
+-
+*** Update File: Game/Assets/Janseon/Foundation/UI/PocCoreLoopController.cs
+@@ -391,13 +391,13 @@
+             switch (rejection)
+             {
+                 case BattleRejection battleRejection:
+-                    return "�� �Ұ�: " + battleRejection.Reason;
++                    return "왜 불가: " + battleRejection.Reason;
+                 case CampaignRejection campaignRejection:
+-                    return "�� �Ұ�: " + campaignRejection.Reason + " �� �ܰ� " + campaignRejection.Stage;
++                    return "왜 불가: " + campaignRejection.Reason + " · 단계 " + campaignRejection.Stage;
+                 case SettlementRejection settlementRejection:
+-                    return "�� �Ұ�: " + settlementRejection.Reason;
++                    return "왜 불가: " + settlementRejection.Reason;
+                 case DeploymentRejection deploymentRejection:
+-                    return "�� �Ұ�: " + deploymentRejection.Reason + " �� " + deploymentRejection.UnitId;
++                    return "왜 불가: " + deploymentRejection.Reason + " · " + deploymentRejection.UnitId;
+                 default:
+                     return rejection == null ? string.Empty : rejection.ToString();
+             }
+@@ -455,4 +455,3 @@
+ 
+     }
+ }
+-
+*** Update File: Game/Assets/Janseon/Foundation/UI/Presenters/GameplayPresenter.cs
+@@ -10,7 +10,7 @@
+ {
+     /// <summary>
+     /// Foundation gameplay UI presenter: applies deterministic snapshots to stable names.
+-    /// Public action seams fire events only ? domain orchestration is PocCoreLoopController.
++    /// Public action seams fire events only — domain orchestration is PocCoreLoopController.
+     /// </summary>
+     public sealed class GameplayPresenter
+     {
+@@ -21,10 +21,7 @@
+         Button actionFace;
+         Button actionEnter;
+         Button actionSettle;
+-        Button battlePlayPause;
+-        Button cardGeneralRecharge;
+-        Button cardGeneralUse;
+-        Button editFormation;
++        Button battleAdvance;
+         Button battleMoveN;
+         Button battleMoveE;
+         Button battleMoveS;
+@@ -68,10 +65,7 @@
+         public event Action FaceEncounterChosen;
+         public event Action EnterResolutionChosen;
+         public event Action SettleChosen;
+-        public event Action BattlePlayPauseChosen;
+-        public event Action CardGeneralRechargeChosen;
+-        public event Action CardGeneralUseChosen;
+-        public event Action EditFormationChosen;
++        public event Action BattleAdvanceChosen;
+         public event Action<int, int> BattleMoveChosen;
+         public event Action BattleMeleeChosen;
+         public event Action BattleRangedChosen;
+@@ -124,10 +118,7 @@
+             actionFace = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.ActionFaceEncounter);
+             actionEnter = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.ActionEnterResolution);
+             actionSettle = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.ActionSettle);
+-            battlePlayPause = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.BattlePlayPause);
+-            cardGeneralRecharge = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.CardGeneralRecharge);
+-            cardGeneralUse = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.CardGeneralUse);
+-            editFormation = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.EditFormation);
++            battleAdvance = UguiHudBuilder.ButtonNamed(gameplayRoot, UiElementNames.BattleAdvance);
+             battleMoveN = UguiHudBuilder.ButtonNamed(gameplayRoot, "battle-move-n");
+             battleMoveE = UguiHudBuilder.ButtonNamed(gameplayRoot, "battle-move-e");
+             battleMoveS = UguiHudBuilder.ButtonNamed(gameplayRoot, "battle-move-s");
+@@ -150,7 +141,7 @@
+             }
+ 
+             if (actionDepart == null || actionFace == null || actionEnter == null || actionSettle == null
+-                || battlePlayPause == null || cardGeneralRecharge == null || cardGeneralUse == null || editFormation == null || choiceNegotiate == null || choiceBypass == null
++                || battleAdvance == null || choiceNegotiate == null || choiceBypass == null
+                 || choiceCombat == null || returnAction == null
+                 || stationYeongdeungpo == null || stationSindorim == null || stationGuro == null)
+             {
+@@ -161,10 +152,7 @@
+             actionFace.onClick.AddListener(OnFaceClicked);
+             actionEnter.onClick.AddListener(OnEnterClicked);
+             actionSettle.onClick.AddListener(OnSettleClicked);
+-            battlePlayPause.onClick.AddListener(OnBattlePlayPauseClicked);
+-            cardGeneralRecharge.onClick.AddListener(OnCardGeneralRechargeClicked);
+-            cardGeneralUse.onClick.AddListener(OnCardGeneralUseClicked);
+-            editFormation.onClick.AddListener(OnEditFormationClicked);
++            battleAdvance.onClick.AddListener(OnBattleAdvanceClicked);
+             if (battleMoveN != null) battleMoveN.onClick.AddListener(OnBattleMoveNClicked);
+             if (battleMoveE != null) battleMoveE.onClick.AddListener(OnBattleMoveEClicked);
+             if (battleMoveS != null) battleMoveS.onClick.AddListener(OnBattleMoveSClicked);
+@@ -206,10 +194,7 @@
+         public void TriggerFaceEncounterForTest() => OnFaceClicked();
+         public void TriggerEnterResolutionForTest() => OnEnterClicked();
+         public void TriggerSettleForTest() => OnSettleClicked();
+-        public void TriggerBattlePlayPauseForTest() => OnBattlePlayPauseClicked();
+-        public void TriggerCardGeneralRechargeForTest() => OnCardGeneralRechargeClicked();
+-        public void TriggerCardGeneralUseForTest() => OnCardGeneralUseClicked();
+-        public void TriggerEditFormationForTest() => OnEditFormationClicked();
++        public void TriggerBattleAdvanceForTest() => OnBattleAdvanceClicked();
+         public void TriggerBattleMoveNForTest() => OnBattleMoveNClicked();
+         public void TriggerBattleMoveEForTest() => OnBattleMoveEClicked();
+         public void TriggerBattleMoveSForTest() => OnBattleMoveSClicked();
+@@ -295,11 +280,7 @@
+             SetActionVisible(UiElementNames.ActionFaceEncounter, snapshot.ShowFaceAction);
+             SetActionVisible(UiElementNames.ActionEnterResolution, snapshot.ShowEnterResolutionAction);
+             SetActionVisible(UiElementNames.ActionSettle, snapshot.ShowSettleAction);
+-            SetActionVisible(UiElementNames.BattlePlayPause, snapshot.ShowBattlePlayPauseAction);
+-            SetActionVisible(UiElementNames.CardGeneralRecharge, snapshot.ShowCardGeneralRechargeAction);
+-            SetActionVisible(UiElementNames.CardGeneralUse, snapshot.ShowCardGeneralUseAction);
+-            SetActionVisible(UiElementNames.EditFormation, snapshot.ShowEditFormationAction);
+-            SetActionVisible(UiElementNames.MobilityRegroup, snapshot.ShowCardMobilityRegroupAction);
++            SetActionVisible(UiElementNames.BattleAdvance, snapshot.ShowBattleAdvanceAction);
+             SetActionVisible(UiElementNames.ReturnAction, snapshot.ShowReturnAction);
+ 
+             // Station nodes are route-map labels: keep painted; interactivity follows travel stage.
+@@ -372,7 +353,7 @@
+ 
+         void ApplyParty(GameplayUiSnapshot snapshot)
+         {
+-            string[] fallback = { "Ž�谡", "�ǹ���", "������" };
++            string[] fallback = { "탐험가", "의무병", "순찰대" };
+             for (var i = 0; i < 3; i++)
+             {
+                 Text name = FindText(root, "party-slot-" + i + "-name");
+@@ -428,11 +409,11 @@
+ 
+             if (heading != null)
+             {
+-                heading.text = "���� "
++                heading.text = "참가 "
+                     + participating.ToString(CultureInfo.InvariantCulture)
+                     + "/"
+                     + snapshot.DeployUnitIds.Count.ToString(CultureInfo.InvariantCulture)
+-                    + " �� ��ġ ���� "
++                    + " · 배치 상한 "
+                     + DeploymentApi.DeployCap.ToString(CultureInfo.InvariantCulture);
+             }
+ 
+@@ -456,14 +437,14 @@
+                 if (label != null)
+                 {
+                     label.text = snapshot.DeployUnitIds[i]
+-                        + " �� HP "
++                        + " · HP "
+                         + snapshot.DeployHp[i].ToString(CultureInfo.InvariantCulture)
+                         + "/"
+                         + Janseon.Core.Battle.Contracts.RealtimeBattleApi.PersistentMaxHp.ToString(CultureInfo.InvariantCulture)
+-                        + " �� "
++                        + " · "
+                         + (snapshot.DeployParticipating[i]
+-                            ? "����"
+-                            : snapshot.DeployWounded[i] ? "������ ? �޽�" : "������");
++                            ? "참가"
++                            : snapshot.DeployWounded[i] ? "미참가 — 휴식" : "미참가");
+                 }
+             }
+         }
+@@ -638,10 +619,7 @@
+         void OnFaceClicked() => FaceEncounterChosen?.Invoke();
+         void OnEnterClicked() => EnterResolutionChosen?.Invoke();
+         void OnSettleClicked() => SettleChosen?.Invoke();
+-        void OnBattlePlayPauseClicked() => BattlePlayPauseChosen?.Invoke();
+-        void OnCardGeneralRechargeClicked() => CardGeneralRechargeChosen?.Invoke();
+-        void OnCardGeneralUseClicked() => CardGeneralUseChosen?.Invoke();
+-        void OnEditFormationClicked() => EditFormationChosen?.Invoke();
++        void OnBattleAdvanceClicked() => BattleAdvanceChosen?.Invoke();
+         void OnBattleMoveNClicked() => BattleMoveChosen?.Invoke(0, 1);
+         void OnBattleMoveEClicked() => BattleMoveChosen?.Invoke(1, 0);
+         void OnBattleMoveSClicked() => BattleMoveChosen?.Invoke(0, -1);
+@@ -700,10 +678,7 @@
+             if (actionFace != null) actionFace.onClick.RemoveListener(OnFaceClicked);
+             if (actionEnter != null) actionEnter.onClick.RemoveListener(OnEnterClicked);
+             if (actionSettle != null) actionSettle.onClick.RemoveListener(OnSettleClicked);
+-            if (battlePlayPause != null) battlePlayPause.onClick.RemoveListener(OnBattlePlayPauseClicked);
+-            if (cardGeneralRecharge != null) cardGeneralRecharge.onClick.RemoveListener(OnCardGeneralRechargeClicked);
+-            if (cardGeneralUse != null) cardGeneralUse.onClick.RemoveListener(OnCardGeneralUseClicked);
+-            if (editFormation != null) editFormation.onClick.RemoveListener(OnEditFormationClicked);
++            if (battleAdvance != null) battleAdvance.onClick.RemoveListener(OnBattleAdvanceClicked);
+             if (battleMoveN != null) battleMoveN.onClick.RemoveListener(OnBattleMoveNClicked);
+             if (battleMoveE != null) battleMoveE.onClick.RemoveListener(OnBattleMoveEClicked);
+             if (battleMoveS != null) battleMoveS.onClick.RemoveListener(OnBattleMoveSClicked);
+@@ -729,10 +704,7 @@
+             actionFace = null;
+             actionEnter = null;
+             actionSettle = null;
+-            battlePlayPause = null;
+-            cardGeneralRecharge = null;
+-            cardGeneralUse = null;
+-            editFormation = null;
++            battleAdvance = null;
+             battleMoveN = null;
+             battleMoveE = null;
+             battleMoveS = null;
+@@ -756,4 +728,3 @@
+         }
+     }
+ }
+-
+*** Update File: Game/Assets/Janseon/Foundation/UI/UguiHudBuilder.cs
+@@ -41,23 +41,23 @@
+             rootBg.raycastTarget = false;
+ 
+             RectTransform rail = Band(root, UiElementNames.StageRail, new Vector2(0f, 1f), new Vector2(1f, 1f), new Vector2(12f, -44f), new Vector2(-12f, -8f));
+-            Chip(rail, UiElementNames.StageBasePrep, "���� �غ�");
+-            Chip(rail, UiElementNames.StageExpedition, "����");
+-            Chip(rail, UiElementNames.StageEncounter, "����");
+-            Chip(rail, UiElementNames.StageResolution, "�ذ�");
+-            Chip(rail, UiElementNames.StageSettlement, "����");
+-            Chip(rail, UiElementNames.StageBaseReady, "����");
++            Chip(rail, UiElementNames.StageBasePrep, "거점 준비");
++            Chip(rail, UiElementNames.StageExpedition, "원정");
++            Chip(rail, UiElementNames.StageEncounter, "조우");
++            Chip(rail, UiElementNames.StageResolution, "해결");
++            Chip(rail, UiElementNames.StageSettlement, "정산");
++            Chip(rail, UiElementNames.StageBaseReady, "복귀");
+             Chip(rail, "layer-chip", "B1");
+             Label(rail, UiElementNames.ClockLabel, GameplayUiSnapshot.FormatClock(new Janseon.Core.Tick(0)));
+ 
+             RectTransform party = Band(root, "party-strip", new Vector2(0f, 1f), new Vector2(0.46f, 1f), new Vector2(12f, -100f), new Vector2(0f, -52f));
+-            Party(party, "party-slot-0", "Ž�谡");
+-            Party(party, "party-slot-1", "�ǹ���");
+-            Party(party, "party-slot-2", "������");
++            Party(party, "party-slot-0", "탐험가");
++            Party(party, "party-slot-1", "의무병");
++            Party(party, "party-slot-2", "순찰대");
+ 
+             RectTransform deploy = Panel(root, UiElementNames.DeployPanel,
+                 new Vector2(0.46f, 1f), new Vector2(0.72f, 1f), new Vector2(8f, -190f), new Vector2(-8f, -52f));
+-            Label(deploy, UiElementNames.DeployHeading, "���� 3/3 �� ��ġ ���� 3");
++            Label(deploy, UiElementNames.DeployHeading, "참가 3/3 · 배치 상한 3");
+             // P0 starts with three, but retain a fourth hidden row so an attempted fourth
+             // participation is a real toggle interaction that Core can reject at the cap.
+             for (var i = 0; i <= DeploymentApi.DeployCap; i++)
+@@ -77,7 +77,7 @@
+             graphLe.preferredHeight = 48f;
+             graphLe.minHeight = 48f;
+ 
+-            HudButton(sMapGraph, UiElementNames.StationYeongdeungpo, "������");
++            HudButton(sMapGraph, UiElementNames.StationYeongdeungpo, "영등포");
+ 
+             // Line segment
+             GameObject link1 = new GameObject("link1");
+@@ -88,7 +88,7 @@
+             le1.preferredWidth = 24f;
+             le1.preferredHeight = 4f;
+ 
+-            HudButton(sMapGraph, UiElementNames.StationSindorim, "�ŵ���");
++            HudButton(sMapGraph, UiElementNames.StationSindorim, "신도림");
+ 
+             // Line segment
+             GameObject link2 = new GameObject("link2");
+@@ -99,38 +99,38 @@
+             le2.preferredWidth = 24f;
+             le2.preferredHeight = 4f;
+ 
+-            HudButton(sMapGraph, UiElementNames.StationGuro, "�븲"); // Task 20 calls for Daerim
+-
+-            HudButton(route, UiElementNames.ActionDepart, "����");
+-            HudButton(route, UiElementNames.ActionFaceEncounter, "����");
+-            HudButton(route, UiElementNames.ActionEnterResolution, "�ذ� ����");
+-            Label(route, UiElementNames.HubOvernightCopy, "�ӽ� ���ڸ� �� ������ ���ս� �Ϸ���");
++            HudButton(sMapGraph, UiElementNames.StationGuro, "대림"); // Task 20 calls for Daerim
++
++            HudButton(route, UiElementNames.ActionDepart, "출정");
++            HudButton(route, UiElementNames.ActionFaceEncounter, "조우");
++            HudButton(route, UiElementNames.ActionEnterResolution, "해결 진입");
++            Label(route, UiElementNames.HubOvernightCopy, "임시 잠자리 · 영등포 대합실 하룻밤");
+             RectTransform bulletin = Panel(root, UiElementNames.HubBulletinPanel,
+                 new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(-180f, 12f), new Vector2(180f, 140f));
+-            Label(bulletin, "hub-bulletin-heading", "������ B1 �Խ���");
+-            Label(bulletin, "hub-bulletin-copy", "���� �Ƿڿ� ���� ������ Ȯ���Ѵ�.");
+-            Label(route, UiElementNames.MissionConsole, "�ӹ� �� �ŵ��� B2 ���޼� Ȯ�� | ���� �� ���� -10");
++            Label(bulletin, "hub-bulletin-heading", "영등포 B1 게시판");
++            Label(bulletin, "hub-bulletin-copy", "역내 의뢰와 수리 공지를 확인한다.");
++            Label(route, UiElementNames.MissionConsole, "임무 · 신도림 B2 보급선 확보 | 실패 시 보급 -10");
+             Label(route, "encounter-context", "");
+ 
+             RectTransform encounter = Panel(root, UiElementNames.EncounterChoices, new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(-190f, -110f), new Vector2(190f, 130f));
+-            Label(encounter, "encounter-heading", "���� ����");
+-            HudButton(encounter, UiElementNames.ChoiceNegotiate, "����  ��  �ڿ� -5 / ���� +3");
+-            HudButton(encounter, UiElementNames.ChoiceBypass, "��ȸ  ��  �ڿ� -2 / ���� -1");
+-            HudButton(encounter, UiElementNames.ChoiceCombat, "����  ��  ���� ����");
++            Label(encounter, "encounter-heading", "조우 선택");
++            HudButton(encounter, UiElementNames.ChoiceNegotiate, "교섭  ·  자원 -5 / 평판 +3");
++            HudButton(encounter, UiElementNames.ChoiceBypass, "우회  ·  자원 -2 / 평판 -1");
++            HudButton(encounter, UiElementNames.ChoiceCombat, "전투  ·  격자 교전");
+ 
+             RectTransform battle = Panel(root, UiElementNames.BattleHud, new Vector2(1f, 0f), new Vector2(1f, 1f), new Vector2(-280f, 12f), new Vector2(-12f, -112f));
+             Label(battle, UiElementNames.BattleHp, "HP");
+             Meter(battle, UiElementNames.BattleHpMeter, UiElementNames.BattleHpFill, new Color(0.90f, 0.42f, 0.38f));
+             Label(battle, UiElementNames.BattleAp, "AP");
+             Meter(battle, UiElementNames.BattleApMeter, UiElementNames.BattleApFill, new Color(0.39f, 0.72f, 0.69f));
+-            HudButton(battle, "battle-move-n", "�̵� ��  ��  AP1");
+-            HudButton(battle, "battle-move-e", "�̵� ��  ��  AP1");
+-            HudButton(battle, "battle-move-s", "�̵� ��  ��  AP1");
+-            HudButton(battle, "battle-move-w", "�̵� ��  ��  AP1");
+-            HudButton(battle, "battle-melee", "����  ��  AP2 / 5");
+-            HudButton(battle, "battle-ranged", "���Ÿ�  ��  AP2 / 3");
+-            HudButton(battle, UiElementNames.BattleWait, "Wait");
+-            HudButton(battle, UiElementNames.MobilityRegroup, "Regroup");
++            HudButton(battle, "battle-move-n", "이동 북  ·  AP1");
++            HudButton(battle, "battle-move-e", "이동 동  ·  AP1");
++            HudButton(battle, "battle-move-s", "이동 남  ·  AP1");
++            HudButton(battle, "battle-move-w", "이동 서  ·  AP1");
++            HudButton(battle, "battle-melee", "근접  ·  AP2 / 5");
++            HudButton(battle, "battle-ranged", "원거리  ·  AP2 / 3");
++            HudButton(battle, UiElementNames.BattleWait, "대기");
++            HudButton(battle, UiElementNames.MobilityRegroup, "기동 재집결 · 남쪽 1칸");
+             RectTransform battleGrid = new GameObject(UiElementNames.BattleGrid).AddComponent<RectTransform>();
+             battleGrid.SetParent(battle, false);
+             battleGrid.anchorMin = new Vector2(0f, 0f);
+@@ -155,18 +155,18 @@
+             }
+ 
+             Label(battle, UiElementNames.BattleLog, "");
+-            HudButton(battle, "battle-end-turn", "�� ����");
+-            HudButton(battle, UiElementNames.BattleAdvance, "�ڵ�");
++            HudButton(battle, "battle-end-turn", "턴 종료");
++            HudButton(battle, UiElementNames.BattleAdvance, "자동");
+             Label(battle, "battle-forecast", "");
+             Label(battle, "why-tooltip", "");
+ 
+             RectTransform settle = Panel(root, UiElementNames.SettlementPanel, new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), new Vector2(-210f, -90f), new Vector2(210f, 90f));
+             Image ticket = settle.GetComponent<Image>();
+             ticket.color = new Color(0.835f, 0.800f, 0.710f, 0.96f);
+-            Label(settle, "settlement-heading", "����");
++            Label(settle, "settlement-heading", "정산");
+             Label(settle, UiElementNames.SettlementOutcome, "");
+-            HudButton(settle, UiElementNames.ActionSettle, "���� ����");
+-            HudButton(settle, UiElementNames.ReturnAction, "����");
++            HudButton(settle, UiElementNames.ActionSettle, "정산 적용");
++            HudButton(settle, UiElementNames.ReturnAction, "복귀");
+ 
+             return root;
+         }
+@@ -194,16 +194,16 @@
+             bg.color = new Color(0.043f, 0.067f, 0.11f, 1f);
+             bg.raycastTarget = false;
+ 
+-            TmpLabel(root, UiElementNames.MainTitleMark, "�ܼ�: ����", 72,
++            TmpLabel(root, UiElementNames.MainTitleMark, "잔선: 서울", 72,
+                 new Vector2(0f, 0.5f), new Vector2(1f, 0.5f), new Vector2(0f, 48f), new Vector2(0f, 148f),
+                 TextAlignmentOptions.Top, new Color(0.906f, 0.918f, 0.941f));
+-            TmpLabel(root, "main-title-sub", "Subtext", 20,
++            TmpLabel(root, "main-title-sub", "붕괴한 서울의 지하철망에서 무명 인물과 파티로 노선의 질서를 세운다", 20,
+                 new Vector2(0f, 0.5f), new Vector2(1f, 0.5f), new Vector2(0f, -32f), new Vector2(0f, 32f),
+                 TextAlignmentOptions.Top, new Color(0.604f, 0.651f, 0.698f));
+             PresetToggle(root, UiElementNames.MainTitleStationMasterPreset,
+-                "? ������ ������  ��  ���� 30  ��  ���� ����\n?? ������ ����  ��  ���� 40  ��  ������ B1 �Խ���",
++                "☀ 떠돌이 삼인조  ·  보급 30  ·  거점 없음\n📜 마지막 역장  ·  보급 40  ·  영등포 B1 게시판",
+                 new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(-300f, 148f), new Vector2(300f, 230f));
+-            TmpButton(root, UiElementNames.MainTitleStart, "���� ����",
++            TmpButton(root, UiElementNames.MainTitleStart, "원정 시작",
+                 new Vector2(0.5f, 0f), new Vector2(0.5f, 0f), new Vector2(-140f, 64f), new Vector2(140f, 128f));
+ 
+             return root;
+@@ -458,7 +458,7 @@
+             labelGo.transform.SetParent(go.transform, false);
+             Text label = labelGo.AddComponent<Text>();
+             label.font = CjkFont();
+-            label.text = "����";
++            label.text = "참가";
+             label.fontSize = 13;
+             label.alignment = TextAnchor.MiddleLeft;
+             label.color = new Color(0.91f, 0.90f, 0.85f);
+@@ -669,7 +669,7 @@
+             try
+             {
+                 string[] names = Font.GetOSInstalledFontNames() ?? System.Array.Empty<string>();
+-                string[] prefer = { "Malgun Gothic", "���� ����", "Noto Sans CJK KR", "Noto Sans KR" };
++                string[] prefer = { "Malgun Gothic", "맑은 고딕", "Noto Sans CJK KR", "Noto Sans KR" };
+                 for (var i = 0; i < prefer.Length; i++)
+                 {
+                     if (System.Array.IndexOf(names, prefer[i]) >= 0)
+@@ -693,4 +693,3 @@
+         }
+     }
+ }
+-
+*** Update File: Game/Assets/Janseon/Foundation/UI/UguiHudView.cs
+@@ -76,7 +76,7 @@
+             SetText("why-tooltip", snapshot.WhyText);
+             SetText(UiElementNames.SettlementOutcome, snapshot.SettlementOutcomeText);
+ 
+-            string[] fallback = { "Ž�谡", "�ǹ���", "������" };
++            string[] fallback = { "탐험가", "의무병", "순찰대" };
+             for (var i = 0; i < 3; i++)
+             {
+                 SetText("party-slot-" + i + "-name", fallback[i]);
+@@ -137,4 +137,3 @@
+         }
+     }
+ }
+-
+*** Update File: Game/Assets/Janseon/Foundation/UI/UiElementNames.cs
+@@ -50,12 +50,9 @@
+         public const string ActionFaceEncounter = "action-face-encounter";
+         public const string ActionEnterResolution = "action-enter-resolution";
+         public const string ActionSettle = "action-settle";
+-        public const string BattlePlayPause = "battle-play-pause";
+-        public const string CardGeneralRecharge = "card-general-recharge";
+-        public const string CardGeneralUse = "card-general-use";
+-        public const string EditFormation = "edit-formation";
++        public const string BattleAdvance = "battle-advance";
+         public const string MobilityRegroup = "card-mobility-regroup";
+-        
++        public const string BattleWait = "battle-wait";
+         public const string MissionConsole = "mission-console";
+         public const string HubOvernightCopy = "hub-overnight-copy";
+         public const string HubBulletinPanel = "hub-bulletin-panel";
+@@ -111,7 +108,7 @@
+             BattleHpFill,
+             BattleApFill,
+             BattleLog,
+-            BattlePlayPause,
++            BattleAdvance,
+             SettlementPanel,
+             SettlementOutcome,
+             ActionSettle,
+@@ -137,7 +134,7 @@
+             ChoiceNegotiate,
+             ChoiceBypass,
+             ChoiceCombat,
+-            BattlePlayPause,
++            BattleAdvance,
+             ActionSettle,
+             ReturnAction,
+         };
+*** Update File: Game/Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs
+@@ -27,7 +27,7 @@
+     /// <summary>
+     /// Todo 12 RED-first PlayMode: production Bootstrap/MainTitle/Foundation UI surface must
+     /// drive one complete core loop via UIDocument buttons + scoped session. Separate from
+-    /// FoundationSceneFlowTests. No sleeps ? subscribe to session signals before clicks.
++    /// FoundationSceneFlowTests. No sleeps — subscribe to session signals before clicks.
+     /// </summary>
+     public sealed class CoreLoopPlayModeTests
+     {
+@@ -47,7 +47,13 @@
+         const string ActionFaceEncounter = "action-face-encounter";
+         const string ActionEnterResolution = "action-enter-resolution";
+         const string ActionSettle = "action-settle";
+-        const string BattlePlayPause = "battle-play-pause";
++        const string BattleAdvance = "battle-advance";
++        const string D2BattlePlayPause = "battle-play-pause";
++        const string D2CardGeneralRecharge = "card-general-recharge";
++        const string D2CardGeneralUse = "card-general-use";
++        const string D2EditFormation = "edit-formation";
++        const string D2BattleMorale = "battle-morale";
++        const string D2ReinforcementForecast = "battle-reinforcement-forecast";
+ 
+         [Test]
+         public async Task MainTitle_Start_EntersFoundation_ShowsBasePreparation()
+@@ -71,7 +77,7 @@
+             Transform prep = UguiHudBuilder.Find(root, UiElementNames.StageBasePrep);
+             Assert.That(prep, Is.Not.Null);
+             Assert.That(prep.GetComponentInChildren<UnityEngine.UI.Text>(true).color, Is.EqualTo(new Color(0.835f, 0.929f, 0.765f)),
+-                "BasePreparation chip must be current after Start��Foundation");
++                "BasePreparation chip must be current after Start→Foundation");
+ 
+             Button depart = UguiHudBuilder.ButtonNamed(root, ActionDepart);
+             Assert.That(depart, Is.Not.Null, "action-depart must exist for prepare/dispatch");
+@@ -240,8 +246,103 @@
+             Assert.That(branch.Session.LastDuplicateReceipt.Equals(branch.Session.LastReceipt), Is.True);
+             Assert.That(branch.Session.Campaign.PendingBattle, Is.Null);
+             Assert.That(branch.BattleCommands, Is.GreaterThan(0),
+-                "combat must execute real realtime simulation ticks via battle-play-pause");
++                "combat must execute real realtime simulation ticks via battle-advance");
+             Debug.Log("CORE_LOOP_COMBAT " + branch.Summarize());
++        }
++
++        [Test]
++        [Category("D2Ui")]
++        public async Task D2_FormationEdit_DeploysChangedFormationBeforeRealtimeStarts()
++        {
++            D2BattleSurface surface = await OpenD2BattleSurfaceAsync();
++            Assert.That(surface.Session.Battle.Deployed, Is.False);
++            Assert.That(surface.Session.BattlePaused, Is.True);
++            UnitState commander = surface.Session.Battle.Units.First(
++                unit => unit.Id.Equals(surface.Session.Battle.PlayerCommanderId));
++            GridCoord before = commander.Cell;
++
++            await ClickAndAwait(surface.Session, surface.Root, D2EditFormation, s => s.Battle.Deployed);
++
++            Assert.That(commander.Cell, Is.Not.EqualTo(before));
++            Assert.That(surface.Driver.State, Is.SameAs(surface.Session.Battle));
++        }
++
++        [Test]
++        [Category("D2Ui")]
++        public async Task D2_GeneralCard_IsAcceptedFromActualUiWhilePaused()
++        {
++            D2BattleSurface surface = await OpenD2BattleSurfaceAsync();
++            await ClickAndAwait(surface.Session, surface.Root, D2EditFormation, s => s.Battle.Deployed);
++            int tick = surface.Session.Battle.Tick;
++            int morale = surface.Session.Battle.Sides[0].Morale;
++
++            await ClickAndAwait(surface.Session, surface.Root, D2CardGeneralUse, s =>
++                s.Battle.Sides[0].Morale == morale + 10
++                && s.Battle.Cards.First(card => card.Id == "encourage-morale").RechargeTicksLeft == 600);
++
++            Assert.That(surface.Session.BattlePaused, Is.True);
++            Assert.That(surface.Session.Battle.Tick, Is.EqualTo(tick));
++        }
++
++        [Test]
++        [Category("D2Ui")]
++        public async Task D2_GeneralRecharge_VisibleValueTracksCoreAfterResume()
++        {
++            D2BattleSurface surface = await OpenD2BattleSurfaceAsync();
++            await ClickAndAwait(surface.Session, surface.Root, D2EditFormation, s => s.Battle.Deployed);
++            await ClickAndAwait(surface.Session, surface.Root, D2CardGeneralUse, s =>
++                s.Battle.Cards.First(card => card.Id == "encourage-morale").RechargeTicksLeft == 600);
++            Assert.That(RequireText(surface.Root, D2CardGeneralRecharge).text, Does.Contain("600"));
++
++            Task<int> stepped = WaitForSteppedFrame(surface.Driver, TimeSpan.FromSeconds(8));
++            await ClickAndAwait(surface.Session, surface.Root, D2BattlePlayPause, s => !s.BattlePaused);
++            await stepped;
++            int remaining = surface.Session.Battle.Cards.First(
++                card => card.Id == "encourage-morale").RechargeTicksLeft;
++            Assert.That(remaining, Is.LessThan(600));
++            Assert.That(RequireText(surface.Root, D2CardGeneralRecharge).text,
++                Does.Contain(remaining.ToString(CultureInfo.InvariantCulture)));
++        }
++
++        [Test]
++        [Category("D2Ui")]
++        public async Task D2_MoraleAndReinforcementForecast_AreLiveCoreValues()
++        {
++            D2BattleSurface surface = await OpenD2BattleSurfaceAsync();
++            int morale = surface.Session.Battle.Sides[0].Morale;
++            TelegraphState next = surface.Session.Battle.Telegraphs
++                .Where(telegraph => !telegraph.Arrived)
++                .OrderBy(telegraph => telegraph.ArrivalTick)
++                .First();
++            int reinforcements = surface.Session.Battle.Telegraphs
++                .Where(telegraph => !telegraph.Arrived)
++                .Sum(telegraph => telegraph.Count);
++
++            Assert.That(RequireText(surface.Root, D2BattleMorale).text,
++                Does.Contain(morale.ToString(CultureInfo.InvariantCulture)));
++            Text forecast = RequireText(surface.Root, D2ReinforcementForecast);
++            Assert.That(forecast.text, Does.Contain(next.ArrivalTick.ToString(CultureInfo.InvariantCulture)));
++            Assert.That(forecast.text, Does.Contain(reinforcements.ToString(CultureInfo.InvariantCulture)));
++        }
++
++        [Test]
++        [Category("D2Ui")]
++        public async Task D2_PauseResume_IsVisibleAndRemovesTurnApResidue()
++        {
++            D2BattleSurface surface = await OpenD2BattleSurfaceAsync();
++            Assert.That(UguiHudBuilder.ButtonNamed(surface.Root, D2BattlePlayPause), Is.Not.Null);
++            string pausedLabel = RequireText(surface.Root, D2BattlePlayPause).text;
++            await ClickAndAwait(surface.Session, surface.Root, D2EditFormation, s => s.Battle.Deployed);
++            Task<int> stepped = WaitForSteppedFrame(surface.Driver, TimeSpan.FromSeconds(8));
++            await ClickAndAwait(surface.Session, surface.Root, D2BattlePlayPause, s => !s.BattlePaused);
++            await stepped;
++            Assert.That(RequireText(surface.Root, D2BattlePlayPause).text, Is.Not.EqualTo(pausedLabel));
++            Assert.That(UguiHudBuilder.Find(surface.Root, "battle-ap"), Is.Null);
++            Assert.That(UguiHudBuilder.Find(surface.Root, "battle-ap-meter"), Is.Null);
++            Assert.That(UguiHudBuilder.Find(surface.Root, "battle-ap-fill"), Is.Null);
++            Assert.That(UguiHudBuilder.Find(surface.Root, "battle-end-turn"), Is.Null);
++            Assert.That(UguiHudBuilder.Find(surface.Root, "battle-move-n"), Is.Null);
++            Assert.That(UguiHudBuilder.Find(surface.Root, "battle-melee"), Is.Null);
+         }
+ 
+         [Test]
+@@ -269,12 +370,12 @@
+                 return commander.Cell.Equals(beforeCell.Step(CardinalDirection.South))
+                     && card.RechargeTicksLeft == 600;
+             });
+-            await ClickAndAwait(session, root, BattlePlayPause, s =>
++            await ClickAndAwait(session, root, BattleAdvance, s =>
+                 s.BattlePaused);
+             int pausedCooldown = session.Battle.Cards.First(c => c.Id == "mobility-regroup").RechargeTicksLeft;
+ 
+             Task<int> resumedFrame = WaitForSteppedFrame(driver, TimeSpan.FromSeconds(8));
+-            await ClickAndAwait(session, root, BattlePlayPause, s => !s.BattlePaused);
++            await ClickAndAwait(session, root, BattleAdvance, s => !s.BattlePaused);
+             int resumedSteps = await resumedFrame;
+             Assert.That(resumedSteps, Is.InRange(1, BattleSessionDriver.MaxStepsPerFrame),
+                 "resumed production frame must consume live simulation steps");
+@@ -379,7 +480,7 @@
+             int events = session.CampaignLedger.Events.Count;
+             object rejectionBefore = session.LastRejection;
+ 
+-            // (1) Actual UI button disabled / second click ignored ? zero command/event/hash change.
++            // (1) Actual UI button disabled / second click ignored — zero command/event/hash change.
+             Button departBtn = UguiHudBuilder.ButtonNamed(root, ActionDepart);
+             Assert.That(departBtn, Is.Not.Null);
+             Assert.That(departBtn.interactable, Is.False,
+@@ -422,7 +523,7 @@
+             SettlementReceipt firstReceipt = session.LastReceipt;
+             SettlementReceipt dupBefore = session.LastDuplicateReceipt;
+ 
+-            // (1) Settle button disabled after apply ? second UI click ignored, zero side effect.
++            // (1) Settle button disabled after apply — second UI click ignored, zero side effect.
+             Button settleBtn = UguiHudBuilder.ButtonNamed(root, ActionSettle);
+             Assert.That(settleBtn, Is.Not.Null);
+             Assert.That(settleBtn.interactable, Is.False,
+@@ -434,7 +535,7 @@
+             Assert.That(session.LastDuplicateReceipt, Is.SameAs(dupBefore),
+                 "disabled UI settle click must not hit SettlementApi");
+ 
+-            // (2) Presenter/session seam re-submits identical payload �� exact-once receipt, zero mutation.
++            // (2) Presenter/session seam re-submits identical payload → exact-once receipt, zero mutation.
+             Task dupSignal = WaitSignal(session);
+             host.Presenter.TriggerSettleForTest();
+             await AwaitTask(dupSignal, TimeSpan.FromSeconds(5), "exact-once duplicate settle seam");
+@@ -583,6 +684,38 @@
+             }
+         }
+ 
++        sealed class D2BattleSurface
++        {
++            public IPocCoreLoopSession Session;
++            public RectTransform Root;
++            public BattleSessionDriver Driver;
++        }
++
++        async Task<D2BattleSurface> OpenD2BattleSurfaceAsync()
++        {
++            await BootstrapToFoundationAsync();
++            GameplayUiHost host = FindGameplayHost();
++            IPocCoreLoopSession session = ResolveSession(host);
++            RectTransform root = RequireRoot(host);
++            await ClickAndAwait(session, root, ActionDepart, s => s.Campaign.Stage == CampaignStage.ExpeditionTravel);
++            await ClickAndAwait(session, root, UiElementNames.StationSindorim, s => s.Campaign.Node.Equals(StationId.Sindorim));
++            await ClickAndAwait(session, root, ActionFaceEncounter, s => s.Campaign.Stage == CampaignStage.Encounter);
++            await ClickAndAwait(session, root, ActionEnterResolution, s => s.Campaign.Stage == CampaignStage.Resolution);
++            await ClickAndAwait(session, root, UiElementNames.ChoiceCombat, s => s.Battle != null);
++            FoundationLifetimeScope scope = UnityEngine.Object.FindAnyObjectByType<FoundationLifetimeScope>();
++            Assert.That(scope, Is.Not.Null);
++            return new D2BattleSurface { Session = session, Root = root, Driver = scope.Container.Resolve<BattleSessionDriver>() };
++        }
++
++        static Text RequireText(RectTransform root, string elementName)
++        {
++            Transform element = UguiHudBuilder.Find(root, elementName);
++            Assert.That(element, Is.Not.Null, "missing visible value " + elementName);
++            Text text = element.GetComponent<Text>() ?? element.GetComponentInChildren<Text>(true);
++            Assert.That(text, Is.Not.Null, "missing text binding " + elementName);
++            return text;
++        }
++
+         async Task<BranchResult> RunBranchAsync(EncounterChoice choice)
+         {
+             await BootstrapToFoundationAsync();
+@@ -1105,4 +1238,3 @@
+         }
+     }
+ }
+-
+*** End Patch
