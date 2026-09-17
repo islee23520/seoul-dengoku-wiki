@@ -31,7 +31,7 @@
 신규 요소 이름의 목표 계약은 [Design §11](../../Design.md)에 기록하고,
 현재 `UiElementNames` 구현 여부와 구별합니다. 12면 질문표는 [.omo/decisions/issue-101-ui-ux-decisions.md](../../.omo/decisions/issue-101-ui-ux-decisions.md)가 정본입니다. 화면이 그리는 세계는 [기동권 이탈](World-Unbinding.md) 이후 2126 서울입니다.
 
-출격 단계의 세계 규칙은 [출격하고 돌아오는 흐름](Campaign-Loop.md), 런타임 화면 책임은 [유니티 구조](Unity-Architecture.md)에서 이어집니다.
+출격 단계의 세계 규칙은 [원정](Campaign-Loop.md), 런타임 화면 책임은 [유니티 구조](Unity-Architecture.md)에서 이어집니다.
 
 ## 보기 예
 

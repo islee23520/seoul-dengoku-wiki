@@ -6,7 +6,7 @@
 
 플레이 무대는 서울 지하철 그래프다. 대한민국의 다른 광역은 개막 지도에서 살아 있는 국민국가가 아니다. 북한·중국·미국·일본도 같은 스택으로 무너진 뒤, 소문과 회랑만 남긴다.
 
-서기는 이탈 2026과 개막 2126만 정본이다. 첫 급수협약에서 둘째 급수협약까지는 햇수 없는 창세 구술이다. 사건 제목의 정본은 [시나리오 타임라인](Scenario-Timeline.md). 이 페이지는 그 제목이 가리키는 **원인**만 잠근다.
+서기는 이탈 2026과 개막 2126만 정본이다. 첫 급수협약에서 둘째 급수협약까지는 햇수 없는 창세 구술이다. 사건 제목의 정본은 [연표](Scenario-Timeline.md). 이 페이지는 그 제목이 가리키는 **원인**만 잠근다.
 
 ## 2026년에 이미 있던 손
 
@@ -15,7 +15,7 @@
 | 층 | 2026 사실 | 이탈 뒤에 남는 것 |
 |---|---|---|
 | 공장 밀도 | 국제로봇연맹 2024년 발표, 2023년 제조업 로봇 밀도. 한국 1,012대/근로자 1만 명, 세계 1위. 중국 470, 일본 419, 세계 평균 162. ([IFR 2024-11-20](https://ifr.org/ifr-press-releases/news/global-robot-density-in-factories-doubled-in-seven-years), 열람 2026-09-17) | 멈춘 팔, 충전 단자, 도면. 같은 라인을 새로 깔 파운드리는 없다 |
-| 현장 휴머노이드 | Boston Dynamics Atlas. 최소 감독의 자재 이송, 현대차 현장 시험. ([Atlas](https://www.bostondynamics.com/atlas), 열람 2026-09-17) | 봉인 갤러리의 반복 루틴. [로스트 테크 계보](Lost-Technology-Lineage.md) |
+| 현장 휴머노이드 | Boston Dynamics Atlas. 최소 감독의 자재 이송, 현대차 현장 시험. ([Atlas](https://www.bostondynamics.com/atlas), 열람 2026-09-17) | 봉인 갤러리의 반복 루틴. [잃어버린 기술](Lost-Technology-Lineage.md) |
 | 편대 학습 | 현대차그룹 2026-09-13, 자율주행 Data Flywheel 가동 발표. 수집·학습·검증·배포의 구름 고리. ([뉴스룸](https://www.hyundai.com/worldwide/en/newsroom), 열람 2026-09-17) | 구름이 죽은 뒤의 단말. 새 가중은 만들지 못한다 |
 | 지하철 안전망 | 서울시 2017 안전 강화안. IoT 등 ICT 안전관리를 전제로 한다. ([SMG](https://world.seoul.go.kr/creating-safe-seoul-metropolitan-subway/), 열람 2026-09-17) | 역 공간과 수조는 남고, 원격 안전 관제는 죽는다 |
 | 병역 명부 | 병무청은 2026에도 입영 본인선택을 받는다. ([mma.go.kr](https://www.mma.go.kr/), 열람 2026-09-17) | 종이·필사 명부. 전산 소집은 없다. [징집 잔존](Conscription-Remnants.md) |
@@ -35,7 +35,7 @@
 
 ## 기술이 죽었다는 말
 
-소유자 락은 「현재의 기술을 잃었다」이다. [로스트 테크 계보](Lost-Technology-Lineage.md)의 네 층과 같이 읽는다.
+소유자 락은 「현재의 기술을 잃었다」이다. [잃어버린 기술](Lost-Technology-Lineage.md)의 네 층과 같이 읽는다.
 
 | 층 | 개막 2126 |
 |---|---|
@@ -56,7 +56,7 @@
 
 ## 이웃이 어떻게 접혔는가
 
-[외부전구](External-Theaters.md)는 서울 쪽 회랑만 적는다. 현 정권의 범죄를 단정하지 말라는 금지는 유지한다. 아래는 개막 세대가 믿는 **역학**이며, 2026 외교 뉴스가 아니다.
+[바깥](External-Theaters.md)는 서울 쪽 회랑만 적는다. 현 정권의 범죄를 단정하지 말라는 금지는 유지한다. 아래는 개막 세대가 믿는 **역학**이며, 2026 외교 뉴스가 아니다.
 
 | 상대 | 2026 출발점 | 개막에 남는 것 |
 |---|---|---|
@@ -75,4 +75,4 @@
 
 ## 신앙
 
-2026 한국은 종교 다수파가 없다. Pew 2010: 무종교 46%, 기독교 29%, 불교 23% ([Pew](https://www.pewresearch.org/short-reads/2014/08/12/6-facts-about-christianity-in-south-korea/), 열람 2026-09-17). 개신 강단과 가톨릭 제대는 부동산·명부·구휼로 살아남아 개막의 실세가 된다. 살아 있는 목사와 교단 로고를 개막 인물로 옮기지 않는다. 상세는 [신앙과 문화의 분열](Faith-Culture-Schism.md).
+2026 한국은 종교 다수파가 없다. Pew 2010: 무종교 46%, 기독교 29%, 불교 23% ([Pew](https://www.pewresearch.org/short-reads/2014/08/12/6-facts-about-christianity-in-south-korea/), 열람 2026-09-17). 개신 강단과 가톨릭 제대는 부동산·명부·구휼로 살아남아 개막의 실세가 된다. 살아 있는 목사와 교단 로고를 개막 인물로 옮기지 않는다. 상세는 [신앙](Faith-Culture-Schism.md).

@@ -14,7 +14,7 @@ summary: 역 입장 이후 층·격자와 시설이 열리는 절차
 
 **런타임.** 입장 명령, 내부 격자 스폰, 시설 슬롯은 아직 없다. 세 역 POC는 노선 이동·교섭·우회·전투·정산만 닫혀 있다.
 
-관련 문서: [월드맵을 어떻게 구성하나](/world/World-Map-Construction), [거점과 영토](/world/Strongholds-and-Territory), [경제와 생산](/world/Economy-and-Production), [출격하고 돌아오는 흐름](/rules/Campaign-Loop).
+관련 문서: [월드맵을 어떻게 구성하나](/world/World-Map-Construction), [거점과 영토](/world/Strongholds-and-Territory), [경제와 생산](/world/Economy-and-Production), [원정](/rules/Campaign-Loop).
 
 ## 이름 함정
 

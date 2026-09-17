@@ -18,15 +18,15 @@
 ### 1. 개요
 | 문서 | 설명 |
 |---|---|
-| [이 게임이 뭔지](/design/Game-Thesis) | 어떤 인물로 시작해 무엇을 이루는 게임인지 |
+| [개요](/design/Game-Thesis) | 선 자리에서 세계를 민다. 4X이자 RPG |
 | [기동권 이탈](/world/World-Unbinding) | 2026년 호출권이 떨어진 밤, 개막 2126, 서울만 나라인 까닭 |
 | [온라인 유저 여정](/design/Online-User-Journey) | 계정부터 착생·사망·후계까지 |
 
 ### 2. 연표
 | 문서 | 설명 |
 |---|---|
-| [시나리오 타임라인](/world/Scenario-Timeline) | 서기는 이탈 2026과 개막 2126만. 창세는 햇수 없는 구술 |
-| [출격하고 돌아오는 흐름](/rules/Campaign-Loop) | 개막 이후 한 번의 출격 |
+| [연표](/world/Scenario-Timeline) | 서기는 이탈 2026과 개막 2126만. 창세는 햇수 없는 구술 |
+| [원정](/rules/Campaign-Loop) | 나선 길. 귀환이 전제가 아님 |
 
 ### 3. 지명
 | 문서 | 설명 |
@@ -42,12 +42,12 @@
 | 문서 | 설명 |
 |---|---|
 | [서울 십육국](/world/Sixteen-States) | 나라 열여섯. 국호는 서명 습관 |
-| [관직과 품계](/world/Offices-and-Ranks) | 수령·판서·군수·현감·참하. 조선·2026 관직에 크루세이더 킹즈 층 |
-| [재벌 가문과 세기의 세력](/world/Chaebol-Houses-and-Century-Factions) | 2026 총수 일가와 개막 운영가문 |
+| [관직](/world/Offices-and-Ranks) | 수령·판서·군수·현감·참하. 조선·2026 관직에 크루세이더 킹즈 층 |
+| [가문](/world/Chaebol-Houses-and-Century-Factions) | 2026 총수 일가와 개막 운영가문 |
 | [운영가문](/world/Operating-Houses) | HC·HP 장부 |
 | [징집 잔존과 군 장부](/world/Conscription-Remnants) | 병무청 잔해 |
 | [세력과 외교](/world/Factions-and-Diplomacy) | 나라 사이 |
-| [외부전구](/world/External-Theaters) | 임진·서해·해협·두만·인천 회랑 |
+| [바깥](/world/External-Theaters) | 임진·서해·해협·두만·인천 회랑 |
 | [이주민 회랑](/world/Diaspora-Corridors) | 시외에서 들어온 사람 |
 
 ### 5. 등장인물
@@ -55,31 +55,32 @@
 
 | 문서 | 설명 |
 |---|---|
-| [십육국 핵심 인물](/world/Core-Characters) | 수령 열여섯과 참하 |
+| [등장인물](/world/Core-Characters) | 수령 열여섯과 참하 |
 | [인물 총람](/world/Cast-Index) | 이름 있는 사람 |
 | [인물 카드 계약](/world/Cast-Profile-Contract) | 칸 규칙 |
 | [인물 등록 템플릿](/world/Cast-Registration-Template) | 빈 칸 |
-| [야망과 관계가 움직이는 정치](/world/Ambitions-and-Relations) | 승인·배신 |
+| [야망](/world/Ambitions-and-Relations) | 승인·배신 |
 | [후계, 이름 로스터, 세계 원장](/world/Heirs-Names-and-World-Ledger) | 누가 뒤를 잇는가 |
 | [본관과 항렬](/world/Hangnyeol-and-Bon-gwan) | 이름 |
 
 ### 6. 신앙과 풍속
 | 문서 | 설명 |
 |---|---|
-| [신앙과 문화의 분열](/world/Faith-Culture-Schism) | 강단·제대·잔해 제사 |
+| [신앙](/world/Faith-Culture-Schism) | 강단·제대·잔해 제사 |
 
 ### 7. 기술과 무구
 | 문서 | 설명 |
 |---|---|
 | [이 시대의 기술과 무구](/world/Era-Arms-and-Tech-Level) | 2026 법령의 잔해 |
-| [로스트 테크 계보](/world/Lost-Technology-Lineage) | 멈춘 팔과 도면 |
+| [잃어버린 기술](/world/Lost-Technology-Lineage) | 멈춘 팔과 도면 |
 
 ### 8. 전쟁
 | 문서 | 설명 |
 |---|---|
 | [거점과 영토](/world/Strongholds-and-Territory) | |
 | [전쟁과 공성](/rules/Warfare-and-Sieges) | |
-| [실시간 진형·카드 전투](/rules/Realtime-Formation-Card-Battle) | |
+| [전투](/rules/Realtime-Formation-Card-Battle) | |
+| [무공](/world/Martial-Paths) | 다섯 유파. 스킬 트리 아님 |
 | [이동과 조우](/rules/Travel-and-Encounters) | |
 
 ### 9. 경제

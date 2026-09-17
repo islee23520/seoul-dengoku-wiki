@@ -1,6 +1,6 @@
 # 인물 총람
 
-붕괴 이후 서울 16국의 이름 있는 인물 **1001명**을 국가·직위·단계·관계 수로 묶는다. 이 표는 기존 423명이다. 추가 578명은 [개막 S4 당직 명부](Cast-Index-S4.md)다. 개막 세대 계약은 [인물 카드 계약](Cast-Profile-Contract.md), 핵심 인물은 [십육국 핵심 인물](Core-Characters.md)을 따른다. 나이는 채우지 않는다. 가치관·욕망 원장은 [values-cast.json](name-pools/values-cast.json)이다. 16국 장부 바깥의 이주민 회랑·징집 잔존 시드는 [회랑 인물 총람](Cast-Corridors-Index.md)이다. 새 인물은 [인물 카드 계약](Cast-Profile-Contract.md)을 채운다.
+붕괴 이후 서울 16국의 이름 있는 인물 **1001명**을 국가·직위·단계·관계 수로 묶는다. 이 표는 기존 423명이다. 추가 578명은 [개막 S4 당직 명부](Cast-Index-S4.md)다. 개막 세대 계약은 [인물 카드 계약](Cast-Profile-Contract.md), 핵심 인물은 [등장인물](Core-Characters.md)을 따른다. 나이는 채우지 않는다. 가치관·욕망 원장은 [values-cast.json](name-pools/values-cast.json)이다. 16국 장부 바깥의 이주민 회랑·징집 잔존 시드는 [회랑 인물 총람](Cast-Corridors-Index.md)이다. 새 인물은 [인물 카드 계약](Cast-Profile-Contract.md)을 채운다.
 
 표의 `관계 수`는 [관계 원장](Cast-Relations.md)에서 해당 인물이 보낸 송신 간선만 센다(수신 간선 제외). T0 핵심 인물은 수신 간선으로 연결되므로 관계 수가 0이어도 고립이 아니다.
 

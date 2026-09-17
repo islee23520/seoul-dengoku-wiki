@@ -39,6 +39,7 @@ const WORLD_PREFIXES = [
   'Scenario-Timeline',
   'World-Unbinding',
   'Offices-and-Ranks',
+  'Martial-Paths',
   'Faith-Culture',
   'Chaebol-Houses',
   'Lost-Technology',

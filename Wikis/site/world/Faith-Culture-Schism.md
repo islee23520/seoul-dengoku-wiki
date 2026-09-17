@@ -75,7 +75,7 @@
 
 물은 교통·군과 겹칩니다. 서울에서는 정수센터가 커서 수문계를 따로 둡니다.
 
-지하 봉인 기체의 몸과 축전 모듈은 [로스트 테크 계보](/world/Lost-Technology-Lineage)의 유물입니다. 캠페인 공개면에서는 장비 목록으로 설명하지 않습니다. 등불, 포효, 납작한 수중 껍질은 당집 벽화와 금기로 남습니다. 회수 반은 제사 일정을 이유로 통행을 막습니다. 염출 기술은 이 유물-신화 틀 안에만 등장합니다.
+지하 봉인 기체의 몸과 축전 모듈은 [잃어버린 기술](/world/Lost-Technology-Lineage)의 유물입니다. 캠페인 공개면에서는 장비 목록으로 설명하지 않습니다. 등불, 포효, 납작한 수중 껍질은 당집 벽화와 금기로 남습니다. 회수 반은 제사 일정을 이유로 통행을 막습니다. 염출 기술은 이 유물-신화 틀 안에만 등장합니다.
 
 순례 경로의 기본값은 차량기지권·정수 부지·봉인 입구입니다. 강제 회수가 두 감시기간 이어지면 숨은 당집이 생깁니다.
 
@@ -263,7 +263,7 @@
 
 ## 분열이 규칙을 고친다
 
-교리 편집은 캠페인 정치의 절반과 붙습니다. 왕조·봉신·작위·음모는 [야망과 관계가 움직이는 정치](/world/Ambitions-and-Relations)가 굴립니다. 신앙은 그 결정이 합법인지 판정합니다.
+교리 편집은 캠페인 정치의 절반과 붙습니다. 왕조·봉신·작위·음모는 [야망](/world/Ambitions-and-Relations)가 굴립니다. 신앙은 그 결정이 합법인지 판정합니다.
 
 고치는 칸은 아래입니다.
 
@@ -317,10 +317,10 @@
 
 - [서울 십육국](/world/Sixteen-States)
 - [세력과 외교](/world/Factions-and-Diplomacy)
-- [로스트 테크 계보](/world/Lost-Technology-Lineage)
+- [잃어버린 기술](/world/Lost-Technology-Lineage)
 - [징집 잔존과 군 장부](/world/Conscription-Remnants)
 - [후계, 이름 로스터, 세계 원장](/world/Heirs-Names-and-World-Ledger)
-- [야망과 관계가 움직이는 정치](/world/Ambitions-and-Relations)
+- [야망](/world/Ambitions-and-Relations)
 - [이주민 회랑](/world/Diaspora-Corridors)
 - [인물·세력·생업](/world/Characters-Factions-and-Professions)
 - [본관과 항렬](/world/Hangnyeol-and-Bon-gwan)
