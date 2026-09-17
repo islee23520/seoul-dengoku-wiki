@@ -22,6 +22,16 @@ Game/[Mm]emoryCaptures/
 Game/[Rr]ecordings/
 Game/[Bb]uild/
 Game/[Bb]uilds/
+# Archived worktree copies of Unity transient state
+**/Game/[Tt]emp/
+**/Game/[Oo]bj/
+**/Game/[Ll]ibrary/
+
+# Site build outputs (built locally, deployed prebuilt to Vercel)
+dist/
+
+# Extracted geography release artifacts
+data/seoul-geography-20260830/openfreemap/release/
 
 # Tooling dependencies (tools/package-lock.json is the tracked source of truth)
 node_modules/
