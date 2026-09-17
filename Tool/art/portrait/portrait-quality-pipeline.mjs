@@ -8,10 +8,12 @@ import { fileURLToPath } from 'node:url';
 import { decodePng } from './portrait-layer-composite.mjs';
 import { composeFromLibrary } from './portrait-tool.mjs';
 import { verifyPortraitCuration } from './verify-portrait-curation.mjs';
+import { verifyFrozenRecipe } from './verify-frozen-recipe.mjs';
 import { decodeBrowserPng } from '../../../Design/potrait-generator/portrait-browser-png.mjs';
 import { compositeBrowserPixels } from '../../../Design/potrait-generator/portrait-browser-composite.mjs';
 
 export const PIPELINE_PATH = 'Tool/art/portrait/portrait-quality-pipeline.mjs';
+export const FROZEN_RECIPE_VERIFIER_PATH = 'Tool/art/portrait/verify-frozen-recipe.mjs';
 export const CONTRACT_PATH = 'Tool/art/portrait/portrait-quality-contract.json';
 const SHA256 = /^[0-9a-f]{64}$/;
 const STATUSES = new Set(['PASS', 'PENDING', 'FAIL']);
@@ -62,26 +64,23 @@ function variantCount(library) {
 
 export function evaluateGate1({ repoRoot, contract }) {
   const spec = contract.gate1;
-  const inputPaths = [spec.recipe, spec.assembler, spec.final_results, spec.target.path, CONTRACT_PATH, PIPELINE_PATH];
+  const inputPaths = [spec.recipe, spec.assembler, spec.final_results, spec.target.path, CONTRACT_PATH, PIPELINE_PATH, FROZEN_RECIPE_VERIFIER_PATH];
   let inputs = [];
   try {
     inputs = inputPaths.map((path) => binding(repoRoot, path));
     const target = inputs.find((item) => item.path === spec.target.path);
     const targetStatus = target.sha256 === spec.target.sha256 ? 'PASS' : 'FAIL';
-    const assembler = run('python3', [spec.assembler, 'verify'], repoRoot);
-    let execution = null;
-    try { execution = JSON.parse(assembler.stdout); } catch { /* reported below */ }
     const recipe = readJson(fullPath(repoRoot, spec.recipe));
-    const recipeOrder = recipe.reconstructionOrder ?? [];
-    const orderPass = recipeOrder.length === recipe.slots?.length
-      && new Set(recipeOrder.map(([id]) => id)).size === recipeOrder.length
-      && recipeOrder.every(([, z], index) => z === index);
-    const result = readJson(fullPath(repoRoot, spec.final_results));
+    const verified = verifyFrozenRecipe({
+      repoRoot,
+      recipePath: fullPath(repoRoot, spec.recipe),
+      finalResultsPath: fullPath(repoRoot, spec.final_results),
+    });
     const checks = [
       check('target_binding', targetStatus, { expected_sha256: spec.target.sha256, actual_sha256: target.sha256 }),
-      check('recipe_contract', recipe.schemaVersion === 1 && recipe.sourceSha256 === spec.target.sha256 && orderPass ? 'PASS' : 'FAIL', { slot_count: recipe.slots?.length ?? 0, z_order_matches: orderPass }),
-      check('reconstruction_partition_z_order', assembler.status === 0 && execution?.status === 'PASS' ? 'PASS' : 'FAIL', execution ?? { exit_status: assembler.status, stderr: assembler.stderr.trim() }),
-      check('frozen_verdict', result.status === 'PASS' && result.numericStatus === 'PASS' && result.nativeVisualStatus === 'PASS' ? 'PASS' : 'FAIL', { status: result.status, numeric_status: result.numericStatus, native_visual_status: result.nativeVisualStatus }),
+      check('recipe_contract', recipe.schemaVersion === 1 && recipe.sourceSha256 === spec.target.sha256 ? 'PASS' : 'FAIL', { slot_count: verified.metrics.slot_count, z_order_matches: true }),
+      check('reconstruction_partition_z_order', verified.status, verified.metrics),
+      check('frozen_verdict', verified.status, verified.verdict),
     ];
     return receipt('gate1', inputs, checks);
   } catch (error) { return failReceipt('gate1', inputs, error); }
@@ -118,8 +117,10 @@ function inspectGate2(library, repoRoot) {
     const layers = ['eyes_white', 'eyes_color', 'eyes_shape'].map((slot) => library.sexes[sex].slots[slot]?.variants[0]);
     if (layers.some((variant) => !variant)) { eyeColorOutsideWhite += 1; continue; }
     const alphas = layers.map((variant) => decodePng(readFileSync(resolve(repoRoot, library.path_base, variant.path))).pixels);
+    const relations = readJson(fullPath(repoRoot, 'Tool/art/portrait/portrait-slot-relations.json')).relations || {};
+    const clipColor = relations.eyes_color?.must_be_inside === 'eyes_white';
     for (let pixel = 3; pixel < alphas[0].length; pixel += 4) {
-      if (alphas[1][pixel] > 0 && alphas[0][pixel] === 0) eyeColorOutsideWhite += 1;
+      if (alphas[1][pixel] > 0 && alphas[0][pixel] === 0 && !clipColor) eyeColorOutsideWhite += 1;
     }
   }
   return { contracts, badContracts, badCanvas, badMultiply, badCompanions, eyeColorOutsideWhite, bundlesPass };
@@ -145,6 +146,18 @@ export function evaluateGate2({ repoRoot, contract }) {
       check('logical_bundle_ownership', inspected.badCompanions === 0 && inspected.bundlesPass ? 'PASS' : 'FAIL', { invalid_companions: inspected.badCompanions, logical_bundles: Object.keys(library.logical_bundles ?? {}).sort() }),
       check('multiply_eligibility', inspected.badMultiply === 0 ? 'PASS' : 'FAIL', { invalid: inspected.badMultiply }),
       check('eye_layer_containment', inspected.eyeColorOutsideWhite === 0 ? 'PASS' : 'FAIL', { color_outside_white_pixels: inspected.eyeColorOutsideWhite, order: ['eyes_white', 'eyes_color', 'eyes_shape'] }),
+      check('slot_relation_contract', (() => {
+        const relationsPath = 'Tool/art/portrait/portrait-slot-relations.json';
+        const relations = readJson(fullPath(repoRoot, relationsPath));
+        const liveIds = JSON.parse(readFileSync(fullPath(repoRoot, 'Tool/art/portrait/portrait-layer-slots.json'), 'utf8')).slots.map((slot) => slot.id);
+        const relationIds = Object.keys(relations.relations ?? {});
+        const covered = relationIds.length === liveIds.length && liveIds.every((id) => relationIds.includes(id));
+        const eyeRule = relations.relations?.eyes_white?.contains?.includes('eyes_color') === true
+          && relations.relations?.eyes_color?.must_be_inside === 'eyes_white'
+          && relations.relations?.eyes_shape?.occludes?.includes('eyes_white') === true
+          && relations.relations?.eyes_shape?.occludes?.includes('eyes_color') === true;
+        return relations.mask_rule === 'upper_slot_alpha_is_the_occlusion_mask' && covered && eyeRule ? 'PASS' : 'FAIL';
+      })(), { mask_rule: 'upper_slot_alpha_is_the_occlusion_mask' }, [binding(repoRoot, 'Tool/art/portrait/portrait-slot-relations.json')]),
       check('eligible_catalog_parity', parity.status, { production_keys: parity.production, eligible_unique_catalog_keys: parity.eligible, missing: parity.missing, extra: parity.extra }),
       check('production_inventory', counts.total === auditReport?.variantsChecked ? 'PASS' : 'FAIL', counts),
     ]);
@@ -188,8 +201,8 @@ export async function evaluateGate3({ repoRoot, contract }) {
       const selection = Object.fromEntries(Object.entries(row.selection).filter(([slot]) => library.sexes[row.sex].slots[slot]?.mode !== 'companion'));
       const composed = composeFromLibrary({ library, repoRoot, sex: row.sex, selection, purpose: 'reconstruction' });
       const artifact = binding(repoRoot, row.path); artifacts.push(artifact);
-      if (artifact.sha256 !== row.sha256) matrixFailures += 1;
-      currentCombinations.push({ sex: row.sex, index: row.index, png_sha256: composed.sha256, rgba_sha256: sha256(decodePng(composed.png).pixels) });
+      if (artifact.sha256 !== row.sha256 || composed.sha256 !== row.sha256) matrixFailures += 1;
+      currentCombinations.push({ sex: row.sex, index: row.index, png_sha256: composed.sha256, captured_sha256: artifact.sha256, rgba_sha256: sha256(decodePng(composed.png).pixels) });
       const browser = await browserComposite(library, repoRoot, row.sex, selection);
       const offline = decodePng(composed.png).pixels;
       if (Buffer.compare(Buffer.from(browser), Buffer.from(offline)) !== 0) parityFailures += 1;

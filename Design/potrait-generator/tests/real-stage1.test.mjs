@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
+import { readFileSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -76,15 +77,24 @@ test('production manifest exposes accepted sex-specific assets without cross-sex
   assert.ok(manifest.sexes.male.slots.hair.variants.every(variant => !variant.empty));
   const registry = JSON.parse(await readFile(new URL('../../../Tool/art/portrait/accepted-evidence-registry.json', import.meta.url)));
   const rejected = new Set(JSON.parse(await readFile(new URL('../../../.omo/evidence/eye-target-vision-20260917/family-02-03-rejection.json', import.meta.url))).rejected);
+  const activeIdentities = new Set();
   for (const entry of registry.entries) {
     assert.equal(manifest.sexes[entry.sex].slots[entry.slot].mode, entry.mode);
     const actualPairs = manifest.sexes[entry.sex].slots[entry.slot].variants.map(variant => [variant.id, variant.sha256]);
-    const expectedVariants = entry.variants.filter(variant => !rejected.has(`${entry.sex}/${entry.slot}/${variant.id}`));
+    for (const variant of entry.variants) {
+      const identity = `${entry.sex}/${entry.slot}/${variant.id}`;
+      assert.ok(!activeIdentities.has(identity), `duplicate active evidence identity: ${identity}`);
+      assert.ok(!rejected.has(identity), `rejected evidence identity is active: ${identity}`);
+      activeIdentities.add(identity);
+    }
+    const expectedVariants = entry.variants;
     const expectedPairs = expectedVariants.map(variant => [variant.id, variant.candidate_sha256]);
     if (entry.replace_slot) assert.deepEqual(actualPairs, expectedPairs);
     else for (const pair of expectedPairs) assert.ok(actualPairs.some(actual => actual[0] === pair[0] && actual[1] === pair[1]));
     for (const expected of expectedVariants) {
       const actual = manifest.sexes[entry.sex].slots[entry.slot].variants.find(variant => variant.id === expected.id);
+      assert.equal(actual.source_identity.candidate, expected.candidate);
+      assert.equal(actual.source_identity.candidate_sha256, expected.candidate_sha256);
       assert.deepEqual(
         actual.render_overrides?.map(override => [override.when.slot, override.when.variant, override.sha256]) ?? [],
         expected.render_overrides?.map(override => [override.when.slot, override.when.variant, override.candidate_sha256]) ?? []
@@ -146,4 +156,134 @@ test('production workflow advances both independently repaired sources through g
     assert.equal(capabilities.curation, true, id);
     assert.equal(capabilities.export, false, id);
   }
+});
+
+test('target-family 2-layer face and eyes reconstruct the specified anime target on the eye union', async () => {
+  const { decodePng, sourceOver } = await import('../../../Tool/art/portrait/portrait-layer-composite.mjs');
+  const targetPath = resolve(repoRoot, 'Design/potrait-generator/assets/v2/target.png');
+  const work = resolve(repoRoot, 'Design/potrait-generator/work/selected/target-family');
+  const manifest = JSON.parse(readFileSync(resolve(work, 'MANIFEST.json'), 'utf8'));
+  assert.equal(manifest.family, 'anime-target');
+  assert.equal(manifest.eyes_white, 'absent_in_original_split');
+  const target = decodePng(readFileSync(targetPath));
+  const face = decodePng(readFileSync(resolve(work, 'face_base.png')));
+  const color = decodePng(readFileSync(resolve(work, 'eyes_color.png')));
+  const shape = decodePng(readFileSync(resolve(work, 'eyes_shape.png')));
+  assert.equal(sha256(readFileSync(targetPath)), manifest.target_sha256);
+  assert.equal(sha256(readFileSync(resolve(work, 'face_base.png'))), manifest.copied.find((row) => row.file === 'face_base.png').sha256);
+  assert.equal(sha256(readFileSync(resolve(work, 'eyes_shape.png'))), manifest.copied.find((row) => row.file === 'eyes_shape.png').sha256);
+  const assembled = new Uint8Array(target.pixels.length);
+  sourceOver(assembled, face.pixels);
+  sourceOver(assembled, color.pixels);
+  sourceOver(assembled, shape.pixels);
+  let eye = 0;
+  let changed = 0;
+  let overlap = 0;
+  for (let i = 3; i < assembled.length; i += 4) {
+    const onEye = color.pixels[i] > 0 || shape.pixels[i] > 0;
+    if (!onEye) continue;
+    eye += 1;
+    if (color.pixels[i] > 0 && shape.pixels[i] > 0) overlap += 1;
+    if (assembled[i - 3] !== target.pixels[i - 3] || assembled[i - 2] !== target.pixels[i - 2] || assembled[i - 1] !== target.pixels[i - 1] || assembled[i] !== target.pixels[i]) changed += 1;
+  }
+  assert.equal(overlap, 0);
+  assert.equal(changed, 0);
+  assert.ok(eye > 0);
+});
+
+test('male foundation family is not the anime target and reconstructs its own source eye union', async () => {
+  const { decodePng, sourceOver } = await import('../../../Tool/art/portrait/portrait-layer-composite.mjs');
+  const work = resolve(repoRoot, 'Design/potrait-generator/work/selected/male-foundation-family');
+  const manifest = JSON.parse(readFileSync(resolve(work, 'MANIFEST.json'), 'utf8'));
+  assert.equal(manifest.not_the_anime_target, true);
+  assert.equal(manifest.eyes_white_in_gate1_split, false);
+  const source = decodePng(readFileSync(resolve(repoRoot, '.omo/evidence/portrait-stage23/gate2-male-foundation-source/provider-gpt-image.png')));
+  const face = decodePng(readFileSync(resolve(work, 'face_base.png')));
+  const color = decodePng(readFileSync(resolve(work, 'eyes_color.png')));
+  const shape = decodePng(readFileSync(resolve(work, 'eyes_shape.png')));
+  const assembled = new Uint8Array(source.pixels.length);
+  sourceOver(assembled, face.pixels);
+  sourceOver(assembled, color.pixels);
+  sourceOver(assembled, shape.pixels);
+  let changed = 0;
+  for (let i = 3; i < assembled.length; i += 4) {
+    if (color.pixels[i] === 0 && shape.pixels[i] === 0) continue;
+    if (assembled[i - 3] !== source.pixels[i - 3] || assembled[i - 2] !== source.pixels[i - 2] || assembled[i - 1] !== source.pixels[i - 1] || assembled[i] !== source.pixels[i]) changed += 1;
+  }
+  assert.equal(changed, 0);
+  assert.notEqual(manifest.source_sha256, manifest.anime_target_sha256);
+});
+
+test('goal comparison capture records repaired 2-layer 0-diff and current v3 mismatch on the eye union', async () => {
+  const { decodePng, sourceOver } = await import('../../../Tool/art/portrait/portrait-layer-composite.mjs');
+  const cmp = JSON.parse(readFileSync(resolve(repoRoot, 'Design/potrait-generator/work/mass-ulw/phase-c/target-family/crops/goal-comparison.json'), 'utf8'));
+  assert.equal(cmp.eye_union_changed.repaired_vs_target[0], 0);
+  assert.ok(cmp.eye_union_changed.current_vs_target[0] > 0);
+  const target = decodePng(readFileSync(resolve(repoRoot, 'Design/potrait-generator/assets/v2/target.png')));
+  const face = decodePng(readFileSync(resolve(repoRoot, 'Design/potrait-generator/work/selected/target-family/face_base.png')));
+  const color = decodePng(readFileSync(resolve(repoRoot, 'Design/potrait-generator/work/selected/target-family/eyes_color.png')));
+  const shape = decodePng(readFileSync(resolve(repoRoot, 'Design/potrait-generator/work/selected/target-family/eyes_shape.png')));
+  const pWhite = decodePng(readFileSync(resolve(repoRoot, 'Design/potrait-generator/assets/v2/plates/female/eyes_white/female-eyes-white-01.png')));
+  const pColor = decodePng(readFileSync(resolve(repoRoot, 'Design/potrait-generator/assets/v2/plates/female/eyes_color/female-eyes-color-01.png')));
+  const pShape = decodePng(readFileSync(resolve(repoRoot, 'Design/potrait-generator/assets/v2/plates/female/eyes_shape/female-eyes-shape-01.png')));
+  const pFace = decodePng(readFileSync(resolve(repoRoot, 'Design/potrait-generator/assets/v2/plates/female/face_base/female-face-base-01.png')));
+  const repaired = new Uint8Array(target.pixels.length);
+  sourceOver(repaired, face.pixels); sourceOver(repaired, color.pixels); sourceOver(repaired, shape.pixels);
+  const current = new Uint8Array(target.pixels.length);
+  sourceOver(current, pFace.pixels); sourceOver(current, pWhite.pixels); sourceOver(current, pColor.pixels); sourceOver(current, pShape.pixels);
+  let eye = 0, repairedChanged = 0, currentChanged = 0;
+  for (let i = 3; i < target.pixels.length; i += 4) {
+    const on = color.pixels[i] > 0 || shape.pixels[i] > 0 || pColor.pixels[i] > 0 || pShape.pixels[i] > 0 || pWhite.pixels[i] > 0;
+    if (!on) continue;
+    eye += 1;
+    if (repaired[i-3] !== target.pixels[i-3] || repaired[i-2] !== target.pixels[i-2] || repaired[i-1] !== target.pixels[i-1] || repaired[i] !== target.pixels[i]) repairedChanged += 1;
+    if (current[i-3] !== target.pixels[i-3] || current[i-2] !== target.pixels[i-2] || current[i-1] !== target.pixels[i-1] || current[i] !== target.pixels[i]) currentChanged += 1;
+  }
+  assert.equal(repairedChanged, cmp.eye_union_changed.repaired_vs_target[0]);
+  assert.equal(currentChanged, cmp.eye_union_changed.current_vs_target[0]);
+  assert.equal(eye, cmp.eye_union_changed.repaired_vs_target[1]);
+});
+test('sclera ownership diagnostic stays diagnostic and is owned by eyes_shape', () => {
+  const diag = JSON.parse(readFileSync(resolve(repoRoot, 'Design/potrait-generator/work/mass-ulw/phase-c/target-family/sclera-ownership-diagnostic.json'), 'utf8'));
+  assert.equal(diag.kind, 'diagnostic_only_not_a_mask');
+  assert.equal(diag.counts.owned_by_shape, 690);
+  assert.equal(diag.counts.owned_by_face_not_shape, 8);
+  assert.ok(diag.counts.owned_by_shape > diag.counts.owned_by_face_not_shape);
+  assert.match(diag.implication, /re-partitioning eyes_shape/);
+});
+test('male foundation comparison capture records repaired 2-layer 0-diff and current mismatch on its own source', () => {
+  const cmp = JSON.parse(readFileSync(resolve(repoRoot, 'Design/potrait-generator/work/mass-ulw/phase-c/male-foundation/crops/goal-comparison.json'), 'utf8'));
+  assert.equal(cmp.not_anime_target, true);
+  assert.equal(cmp.eye_union_changed.repaired_vs_source[0], 0);
+  assert.ok(cmp.eye_union_changed.current_vs_source[0] > 0);
+  assert.equal(cmp.iris_outside_white, 2052);
+});
+
+test('repartition visible white from eyes_shape keeps 0-diff and still fails iris containment', () => {
+  const row = JSON.parse(readFileSync(resolve(repoRoot, 'Design/potrait-generator/work/mass-ulw/phase-c/target-family/repartition.json'), 'utf8'));
+  assert.equal(row.eye_union_vs_target_changed, 0);
+  assert.equal(row.full_canvas_vs_old_2layer_changed, 0);
+  assert.equal(row.white_alpha, 690);
+  assert.equal(row.iris_outside_white, 4134);
+  assert.equal(row.gate2_containment, 'FAIL');
+  assert.equal(row.promotion, 'forbidden_until_hidden_white_contains_iris');
+});
+test('hidden iris cream fill WIP contains iris and stays out of production', () => {
+  const man = JSON.parse(readFileSync(resolve(repoRoot, 'Design/potrait-generator/work/selected/target-family/MANIFEST.json'), 'utf8'));
+  assert.equal(man.eyes_white, 'absent_in_original_split');
+  assert.equal(man.eyes_white_hidden_wip.iris_outside, 0);
+  assert.equal(man.eyes_white_hidden_wip.eye_union_vs_target_changed, 0);
+  assert.equal(man.eyes_white_hidden_wip.promotion, 'forbidden_from_library');
+  assert.equal(sha256(readFileSync(resolve(repoRoot, 'Design/potrait-generator/work/selected/target-family', man.eyes_white_hidden_wip.path))), man.eyes_white_hidden_wip.sha256);
+});
+
+test('see-through socket WIP contains iris and stays out of production', () => {
+  const man = JSON.parse(readFileSync(resolve(repoRoot, 'Design/potrait-generator/work/selected/target-family/MANIFEST.json'), 'utf8'));
+  assert.equal(man.eyes_white, 'absent_in_original_split');
+  const wip = man.eyesocket_seethrough_socket_wip;
+  assert.equal(wip.iris_outside_white, 0);
+  assert.equal(wip.gate2_wip, 'PASS');
+  assert.equal(wip.promotion, 'forbidden_from_library');
+  assert.equal(wip.live_library_gate2, 'FAIL 5794 unchanged');
+  assert.equal(sha256(readFileSync(resolve(repoRoot, 'Design/potrait-generator/work/selected/target-family', wip.path))), wip.white_sha256);
 });

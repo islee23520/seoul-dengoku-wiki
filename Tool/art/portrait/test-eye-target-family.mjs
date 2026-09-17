@@ -6,7 +6,7 @@ import test from 'node:test';
 const sha256 = (path) => createHash('sha256').update(readFileSync(path)).digest('hex');
 const library = JSON.parse(readFileSync('Design/potrait-generator/assets/v2/library.json', 'utf8'));
 
-const authoritative = {
+const registered = {
   female: {
     face_base: ['female-face-base-01', '.omo/evidence/portrait-target-split-20260914/slots-skin-plus/face_base.png'],
     mouth: ['female-mouth-01', '.omo/evidence/eye-target-vision-20260917/feature-recut-v2/repaired-isolates/female/mouth-01.png'],
@@ -25,14 +25,20 @@ const authoritative = {
   },
 };
 
-test('variant 01 face and eye family preserves authoritative target bytes', () => {
-  for (const [sex, slots] of Object.entries(authoritative)) {
+test('variant 01 plates remain bound to currently registered evidence bytes', () => {
+  for (const [sex, slots] of Object.entries(registered)) {
     for (const [slot, [id, source]] of Object.entries(slots)) {
       const variant = library.sexes[sex].slots[slot].variants.find((candidate) => candidate.id === id);
       assert.ok(variant, `${sex}/${slot}/${id}`);
-      assert.equal(variant.sha256, sha256(source), `${sex}/${slot}/${id} authoritative sha`);
+      assert.equal(variant.sha256, sha256(source), `${sex}/${slot}/${id} registered sha`);
     }
   }
+});
+
+test('female production eyes_shape is not the original target-family 2-layer plate', () => {
+  const production = library.sexes.female.slots.eyes_shape.variants.find((row) => row.id === 'female-eyes-shape-01');
+  const original = sha256('.omo/evidence/portrait-target-split-20260914/slots-skin-plus/eyes_shape.png');
+  assert.notEqual(production.sha256, original);
 });
 
 test('visible face-feature plates remain source-over', () => {

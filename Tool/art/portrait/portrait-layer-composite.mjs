@@ -172,7 +172,18 @@ export function multiply(dst, src) {
   for (let i = 0; i < dst.length; i += 4) multiplyPixel(dst, src, i);
 }
 
-export function compositePortraitLayers({ schema, slots, blendModes = {}, outputPath } = {}) {
+export function sourceIn(dst, mask) {
+  for (let i = 0; i < dst.length; i += 4) {
+    if (mask[i + 3] === 0) {
+      dst[i] = 0; dst[i + 1] = 0; dst[i + 2] = 0; dst[i + 3] = 0;
+    } else {
+      const alpha = mask[i + 3] / 255;
+      dst[i+3] = Math.round(dst[i+3] * alpha);
+    }
+  }
+}
+
+export function compositePortraitLayers({ schema, slots, blendModes = {}, clipMasks = {}, outputPath } = {}) {
   if (!schema || !Array.isArray(schema.slots)) {
     throw new Error('missing slot schema');
   }
@@ -206,6 +217,13 @@ export function compositePortraitLayers({ schema, slots, blendModes = {}, output
     if (blendMode === 'source-over') sourceOver(dest, layer.pixels);
     else if (blendMode === 'multiply') multiply(dest, layer.pixels);
     else throw new Error(`unsupported blend mode ${blendMode} for slot ${slot.id}`);
+    if (clipMasks[slot.id]) {
+      const maskPath = slotMap[clipMasks[slot.id]];
+      if (typeof maskPath === 'string' && maskPath.length > 0 && existsSync(maskPath)) {
+        const maskLayer = decodePng(readFileSync(maskPath));
+        sourceIn(dest, maskLayer.pixels);
+      }
+    }
   }
   if (!dest) {
     throw new Error('missing required slot: no layers');

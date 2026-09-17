@@ -1,4 +1,7 @@
 {
+  "relations": "portrait-slot-relations.json",
+  "mask_rule": "upper_slot_alpha_is_the_occlusion_mask",
+  "plates": ["visible", "hidden"],
   "slots": [
     { "id": "bg", "z": 0, "required": false },
     { "id": "clothes_back", "z": 1, "required": false, "identityToken": "outfit_palette" },

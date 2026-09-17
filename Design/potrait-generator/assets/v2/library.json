@@ -144,7 +144,7 @@
   ],
   "logical_bundles": {
     "clothes": {
-      "label": "의상",
+      "label": "\uc758\uc0c1",
       "primary": "clothes",
       "members": [
         "clothes_back",
@@ -153,7 +153,7 @@
       ]
     },
     "hair": {
-      "label": "헤어",
+      "label": "\ud5e4\uc5b4",
       "primary": "hair",
       "members": [
         "hair_back",
@@ -161,7 +161,7 @@
       ]
     },
     "face_shape": {
-      "label": "얼굴형",
+      "label": "\uc5bc\uad74\ud615",
       "primary": "face_base",
       "members": [
         "face_base",
@@ -791,14 +791,10 @@
                 "gates": {
                   "gate1": "PASS",
                   "gate2": "PASS",
-                  "gate3": "PASS",
+                  "gate3": "PENDING",
                   "gate4": "PENDING"
                 },
-                "workflow_status_receipt": {
-                  "path": ".omo/evidence/portrait-stage23/quality-pipeline-current/workflow-status.json",
-                  "sha256": "9497f546b43eaa26ed21a4de1779f954a181d117a30a5f591164d85402533780"
-                },
-                "reason": "gate_chain_incomplete"
+                "reason": "wip_see_through_socket_not_gate4_adopt; live_gate2_still_male_containment"
               }
             }
           ]
@@ -835,14 +831,10 @@
                 "gates": {
                   "gate1": "PASS",
                   "gate2": "PASS",
-                  "gate3": "PASS",
+                  "gate3": "PENDING",
                   "gate4": "PENDING"
                 },
-                "workflow_status_receipt": {
-                  "path": ".omo/evidence/portrait-stage23/quality-pipeline-current/workflow-status.json",
-                  "sha256": "9497f546b43eaa26ed21a4de1779f954a181d117a30a5f591164d85402533780"
-                },
-                "reason": "gate_chain_incomplete"
+                "reason": "wip_see_through_socket_not_gate4_adopt; live_gate2_still_male_containment"
               }
             }
           ]
