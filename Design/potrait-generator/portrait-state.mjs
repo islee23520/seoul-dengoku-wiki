@@ -1,4 +1,4 @@
-import { compositeBrowserPixels } from './portrait-browser-composite.mjs';
+import { compositeBrowserPixels, clipLayer } from './portrait-browser-composite.mjs';
 import { loadPngPixels } from './portrait-browser-png.mjs';
 
 // UI contract mirror. Tool's canonical schema remains authoritative and is tested for parity.
@@ -313,7 +313,7 @@ export async function composePortrait(canvas, manifest, selection, manifestURL, 
       if (image.naturalWidth !== manifest.canvas.width || image.naturalHeight !== manifest.canvas.height) {
         fail(`${id}/mounted-candidate: 이미지 크기는 1145 × 1374이어야 합니다. (${image.naturalWidth} × ${image.naturalHeight})`);
       }
-      return { image, blendMode: mountedMember.blend_mode ?? 'source-over' };
+      return { id, image, blendMode: mountedMember.blend_mode ?? 'source-over' };
     }
     const variant = manifest.sexes[selection.sex].slots[id].variants.find(v => v.id === selection.selections[id]);
     const render = resolveVariantRender(variant, selection.selections);
@@ -321,7 +321,7 @@ export async function composePortrait(canvas, manifest, selection, manifestURL, 
     if (image.naturalWidth !== manifest.canvas.width || image.naturalHeight !== manifest.canvas.height) {
       fail(`${id}/${variant.id}: 이미지 크기는 1145 × 1374이어야 합니다. (${image.naturalWidth} × ${image.naturalHeight})`);
     }
-    return { image, blendMode: render.blend_mode ?? variant.blend_mode ?? 'source-over' };
+    return { id, image, blendMode: render.blend_mode ?? variant.blend_mode ?? 'source-over' };
   }));
   canvas.width = manifest.canvas.width;
   canvas.height = manifest.canvas.height;
@@ -340,12 +340,29 @@ export async function composePortrait(canvas, manifest, selection, manifestURL, 
   const decodeCanvas = document.createElement('canvas'); decodeCanvas.width = canvas.width; decodeCanvas.height = canvas.height;
   const decode = decodeCanvas.getContext('2d', { willReadFrequently: true });
   if (!decode) fail('레이어 decode Canvas 2D를 사용할 수 없습니다.');
-  for (const { image, blendMode } of images) {
-    if (image.pixels) compositeBrowserPixels(pixels, image.pixels, blendMode);
-    else {
+  // unified per-layer clip kernel for eyes_color by eyes_white (studio software path)
+  for (const { id, image, blendMode } of images) {
+    let srcPixels = image.pixels;
+    if (!srcPixels) {
       decode.clearRect(0, 0, decodeCanvas.width, decodeCanvas.height); decode.drawImage(image, 0, 0);
-      compositeBrowserPixels(pixels, decode.getImageData(0, 0, decodeCanvas.width, decodeCanvas.height).data, blendMode);
+      srcPixels = decode.getImageData(0, 0, decodeCanvas.width, decodeCanvas.height).data;
     }
+    let toBlend = srcPixels;
+    if (id === 'eyes_color') {
+      const whiteItem = images.find(item => item.id === 'eyes_white');
+      if (!whiteItem) {
+        throw new Error('eyes_color requires eyes_white mask but missing or empty - fail closed');
+      }
+      let maskPixels = whiteItem.image.pixels;
+      if (!maskPixels) {
+        decode.clearRect(0, 0, decodeCanvas.width, decodeCanvas.height); decode.drawImage(whiteItem.image, 0, 0);
+        maskPixels = decode.getImageData(0, 0, decodeCanvas.width, decodeCanvas.height).data;
+      }
+      const clipped = new Uint8ClampedArray(srcPixels);
+      clipLayer(clipped, maskPixels);
+      toBlend = clipped;
+    }
+    compositeBrowserPixels(pixels, toBlend, blendMode);
   }
   context.putImageData(new ImageData(pixels, canvas.width, canvas.height), 0, 0);
   return canvas;

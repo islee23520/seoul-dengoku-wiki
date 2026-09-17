@@ -21,7 +21,7 @@ function multiplyPixel(dst, src, index) {
   dst[index + 3] = Math.round(outA * 255);
 }
 
-function clipLayer(layerPixels, maskPixels) {
+export function clipLayer(layerPixels, maskPixels) {
   if (layerPixels.length !== maskPixels.length) throw new Error('clipLayer size mismatch');
   for (let i = 0; i < layerPixels.length; i += 4) {
     layerPixels[i + 3] = Math.min(layerPixels[i + 3], maskPixels[i + 3]);

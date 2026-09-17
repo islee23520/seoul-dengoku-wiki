@@ -168,6 +168,15 @@ function findVariant(library, sex, slot, id) { return library.sexes[sex].slots[s
 async function browserComposite(library, repoRoot, sex, selection) {
   const destination = new Uint8ClampedArray(library.canvas.width * library.canvas.height * 4);
   const order = [...library.slots].sort((a, b) => a.z - b.z);
+  // build clipMasks mapping ONLY for must_be_inside (shared with composeFromLibrary)
+  const relationsPath = resolve(repoRoot, 'Tool/art/portrait/portrait-slot-relations.json');
+  const relationsData = JSON.parse(readFileSync(relationsPath, 'utf8'));
+  const clipMasks = {};
+  for (const [slotId, rel] of Object.entries(relationsData.relations || {})) {
+    if (rel.must_be_inside) {
+      clipMasks[slotId] = rel.must_be_inside;
+    }
+  }
   for (const slot of order) {
     const entry = library.sexes[sex].slots[slot.id];
     let id = selection[slot.id];
@@ -182,7 +191,28 @@ async function browserComposite(library, repoRoot, sex, selection) {
     const bytes = readFileSync(resolve(repoRoot, library.path_base, render.path));
     if (sha256(bytes) !== render.sha256) throw new Error(`matrix plate hash drift: ${render.path}`);
     const decoded = await decodeBrowserPng(bytes);
-    compositeBrowserPixels(destination, decoded.pixels, render.blend_mode ?? variant.blend_mode ?? 'source-over');
+    let maskPixels = null;
+    const maskSlotId = clipMasks[slot.id];
+    if (maskSlotId) {
+      const maskEntry = library.sexes[sex].slots[maskSlotId];
+      if (!maskEntry?.variants?.length) throw new Error(`must_be_inside mask ${maskSlotId} for ${slot.id} is missing or empty - fail closed`);
+      let maskId = selection[maskSlotId];
+      if (maskEntry.mode === 'fixed') maskId ??= maskEntry.variants[0]?.id;
+      if (maskEntry.mode === 'companion') {
+        maskId = maskEntry.variants.find((variant) => {
+          const link = variant.companion_of; return (link?.variants ?? [link?.variant]).includes(selection[link?.slot]);
+        })?.id;
+      }
+      if (!maskId) throw new Error(`must_be_inside mask ${maskSlotId} for ${slot.id} is missing or empty - fail closed`);
+      const maskVariant = findVariant(library, sex, maskSlotId, maskId);
+      if (!maskVariant) throw new Error(`unknown mask variant ${maskId} for ${maskSlotId}`);
+      const maskRender = maskVariant.render_overrides?.find((item) => selection[item.when.slot] === item.when.variant) ?? maskVariant;
+      const maskBytes = readFileSync(resolve(repoRoot, library.path_base, maskRender.path));
+      if (sha256(maskBytes) !== maskRender.sha256) throw new Error(`mask plate hash drift: ${maskRender.path}`);
+      const maskDecoded = await decodeBrowserPng(maskBytes);
+      maskPixels = maskDecoded.pixels;
+    }
+    compositeBrowserPixels(destination, decoded.pixels, render.blend_mode ?? variant.blend_mode ?? 'source-over', maskPixels);
   }
   return destination;
 }

@@ -269,7 +269,7 @@ export function compositePortraitLayers({ schema, slots, blendModes = {}, clipMa
       }
     }
 
-    // main layer with per-layer clipping BEFORE compositing - NEVER sourceIn on dest
+    // main layer with per-layer clipping BEFORE compositing - NEVER sourceIn on dest. Clip only via must_be_inside; occludes uses sourceOver only.
     const path = slotMap[slot.id];
     if (typeof path !== 'string' || path.length === 0 || !existsSync(path)) continue;
     const layer = decodePng(readFileSync(path));
@@ -283,13 +283,14 @@ export function compositePortraitLayers({ schema, slots, blendModes = {}, clipMa
     if (clipMasks[slot.id]) {
       const maskSlotId = clipMasks[slot.id];
       const maskPath = slotMap[maskSlotId];
-      if (typeof maskPath === 'string' && maskPath.length > 0 && existsSync(maskPath)) {
-        const maskLayer = decodePng(readFileSync(maskPath));
-        if (maskLayer.width !== width || maskLayer.height !== height) {
-          throw new Error(`mask for ${slot.id} size mismatch`);
-        }
-        clipLayer(layer.pixels, maskLayer.pixels);
+      if (typeof maskPath !== 'string' || maskPath.length === 0 || !existsSync(maskPath)) {
+        throw new Error(`must_be_inside mask ${maskSlotId} for slot ${slot.id} is missing or empty - fail closed`);
       }
+      const maskLayer = decodePng(readFileSync(maskPath));
+      if (maskLayer.width !== width || maskLayer.height !== height) {
+        throw new Error(`mask for ${slot.id} size mismatch`);
+      }
+      clipLayer(layer.pixels, maskLayer.pixels);
     }
     const blendMode = blendModes[slot.id] ?? 'source-over';
     if (blendMode === 'source-over') sourceOver(dest, layer.pixels);
