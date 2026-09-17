@@ -29,7 +29,7 @@
 이름을 바꾸는 뜻이 아닙니다. `출격 인원 선택`은 거점 준비 맥락의 참가자 선택,
 `전투 전 진형 편집`은 조우 이후 교전 전의 위치·방향 편집으로 서로 다릅니다.
 신규 요소 이름의 목표 계약은 [Design §11](../../Design.md)에 기록하고,
-현재 `UiElementNames` 구현 여부와 구별합니다.
+현재 `UiElementNames` 구현 여부와 구별합니다. 12면 질문표는 [.omo/decisions/issue-101-ui-ux-decisions.md](../../.omo/decisions/issue-101-ui-ux-decisions.md)가 정본입니다. 화면이 그리는 세계는 [기동권 이탈](World-Unbinding.md) 이후 2126 서울입니다.
 
 출격 단계의 세계 규칙은 [출격하고 돌아오는 흐름](Campaign-Loop.md), 런타임 화면 책임은 [유니티 구조](Unity-Architecture.md)에서 이어집니다.
 
