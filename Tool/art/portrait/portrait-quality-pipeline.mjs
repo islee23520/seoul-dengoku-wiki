@@ -6,6 +6,7 @@ import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 import { decodePng } from './portrait-layer-composite.mjs';
+import { clipLayer } from '../../../Design/potrait-generator/portrait-browser-composite.mjs';
 import { composeFromLibrary } from './portrait-tool.mjs';
 import { verifyPortraitCuration } from './verify-portrait-curation.mjs';
 import { verifyFrozenRecipe } from './verify-frozen-recipe.mjs';
@@ -116,11 +117,14 @@ function inspectGate2(library, repoRoot) {
   for (const sex of ['female', 'male']) {
     const layers = ['eyes_white', 'eyes_color', 'eyes_shape'].map((slot) => library.sexes[sex].slots[slot]?.variants[0]);
     if (layers.some((variant) => !variant)) { eyeColorOutsideWhite += 1; continue; }
-    const alphas = layers.map((variant) => decodePng(readFileSync(resolve(repoRoot, library.path_base, variant.path))).pixels);
-    const relations = readJson(fullPath(repoRoot, 'Tool/art/portrait/portrait-slot-relations.json')).relations || {};
-    const clipColor = relations.eyes_color?.must_be_inside === 'eyes_white';
-    for (let pixel = 3; pixel < alphas[0].length; pixel += 4) {
-      if (alphas[1][pixel] > 0 && alphas[0][pixel] === 0 && !clipColor) eyeColorOutsideWhite += 1;
+    const whiteDecoded = decodePng(readFileSync(resolve(repoRoot, library.path_base, layers[0].path)));
+    const colorDecoded = decodePng(readFileSync(resolve(repoRoot, library.path_base, layers[1].path)));
+    const clippedColorPixels = new Uint8Array(colorDecoded.pixels);
+    clipLayer(clippedColorPixels, whiteDecoded.pixels);
+    for (let pixel = 3; pixel < clippedColorPixels.length; pixel += 4) {
+      if (clippedColorPixels[pixel] > 0 && whiteDecoded.pixels[pixel] === 0) {
+        eyeColorOutsideWhite += 1;
+      }
     }
   }
   return { contracts, badContracts, badCanvas, badMultiply, badCompanions, eyeColorOutsideWhite, bundlesPass };
