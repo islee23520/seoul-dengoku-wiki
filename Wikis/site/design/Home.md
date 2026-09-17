@@ -45,7 +45,7 @@
 | [이주민 회랑](/world/Diaspora-Corridors) · [회랑 인물](/world/Cast-Corridors-Index) | 대림·구로공단·이태원·용산 위에 얹는 다국적 회랑과 시드 인물 |
 | [야망과 관계가 움직이는 정치](/world/Ambitions-and-Relations) | 이름 있는 인물이 동맹, 배신, 전쟁과 계승을 만드는 규칙 |
 | [후계, 이름 로스터, 세계 원장](/world/Heirs-Names-and-World-Ledger) | 문화 성명 풀에서 후계를 만들고, 면담·거래가 세계 사건에 쌓이는 규칙 |
-| [시나리오 타임라인](/world/Scenario-Timeline) | 붕괴 이전·건국기·공백의 세기·개막 이후. 조건에 따라 갈라지는 연대기 |
+| [시나리오 타임라인](/world/Scenario-Timeline) | 이탈 2026, 창세 구술, 공백의 세기, 개막 2126. 조건에 따라 갈라지는 연대기 |
 | [재벌 가문과 세기의 세력](/world/Chaebol-Houses-and-Century-Factions) | 총수 일가 지배, 구 정부 잔존, 외부 전구, 세기 변혁 가문 |
 | [이 시대의 기술과 무구](/world/Era-Arms-and-Tech-Level) | 2026 기술에서 붕괴 이후 생업 공구·제식·군용 잔존·로스트 회수 |
 | [세계 서사 지도](/world/World-Narrative-Atlas) | 가문·적대 생태·몬스터·서사 배치의 원본 |

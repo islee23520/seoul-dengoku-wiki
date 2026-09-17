@@ -13,7 +13,7 @@
 
 ## 개막 세대
 
-아래 이름 있는 핵심 인물은 **개막 세대**다. 대정전을 살지 않았고, 건국기 장부에 적힌 창건자와 같은 몸이 아니다. 출생연은 달력 제안과 전기 대조 전이므로 잠그지 않는다. [시나리오 타임라인](/world/Scenario-Timeline), [재벌 가문과 세기의 세력](/world/Chaebol-Houses-and-Century-Factions).
+아래 이름 있는 핵심 인물은 **개막 세대**다. 기동권 이탈을 살지 않았고, 창세 구술의 창건자와 같은 몸이 아니다. 출생연은 전기 대조 전이므로 잠그지 않는다. [시나리오 타임라인](/world/Scenario-Timeline), [재벌 가문과 세기의 세력](/world/Chaebol-Houses-and-Century-Factions).
 
 ## 강국 핵심 인물
 
