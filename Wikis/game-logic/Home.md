@@ -13,54 +13,88 @@
 
 ## 문서 안내
 
+나무위키 [새 시리즈/설정](https://namu.wiki/w/%EC%83%88%20%EC%8B%9C%EB%A6%AC%EC%A6%88/%EC%84%A4%EC%A0%95)의 목차를 따른다. 구현·유니티 문서는 맨 아래 둔다.
+
+### 1. 개요
 | 문서 | 설명 |
 |---|---|
 | [이 게임이 뭔지](Game-Thesis.md) | 어떤 인물로 시작해 무엇을 이루는 게임인지 |
-| [인물 등록 템플릿](Cast-Registration-Template.md) | 이름 있는 인물을 넣을 때 복사하는 빈 칸. 초상 없음 |
-| [기여를 시작하는 곳](../../contribute.md) | 도메인별 이슈·정본·게이트 |
-| [온라인 유저 여정](Online-User-Journey.md) | 계정·착생·공유 월드 입장부터 사망·후계까지. 캠페인 루프의 바깥 순서 |
-| [기동권 이탈](World-Unbinding.md) | 2026 피지컬 AI 호출권 상실, 개막 2126, 서울만 나라인 이유 |
-| [서울과 지하철 레이어](World-and-Subway-Layers.md) | 다층 세계 그래프와 데이터 출처 |
-| [월드맵을 어떻게 구성하나](World-Map-Construction.md) | 구 25·역 목록·시설을 그래프로 조립하는 순서. Unity 이동 그래프는 334역 |
-| [서울 지역 설정 데이터](regions/README.md) | 2026-07-01 행정동 25구·427동 저작. 역 목록이 면적 전수가 아님 |
-| [강·구·동 건물 재사용](Building-Reuse-Geography.md) | 한강·지천·25구 위에 관측 건물의 개막 쓰임을 얹는다. OSM 태그는 가동이 아님 |
-| [서울 역 카탈로그](Seoul-Station-Catalog.md) | OSM에서 뽑은 서울 안 이름 있는 역 334곳. 공식 전수 아님 |
-| [역 내부에 들어가면](Station-Interior-Construction.md) | 입장 시 층·격자·시설 슬롯. 조우 정산 API와 별개 |
-| [출격하고 돌아오는 흐름](Campaign-Loop.md) | 준비, 원정, 마주침, 전투, 복귀와 결과 반영 |
-| [거점과 영토](Strongholds-and-Territory.md) | 점령, 안정화, 통합, 시설과 영토 과확장 |
-| [경제와 생산](Economy-and-Production.md) | 생존 자원, 노동, 전력, 생산과 시장 가격 |
-| [물류와 기반 시설](Logistics-and-Infrastructure.md) | 허가된 경로, 처리량, 비축, 고립과 복구 |
-| [세력과 외교](Factions-and-Diplomacy.md) | 신뢰, 평판, 정통성, 협약과 집단 불만 |
-| [전쟁과 공성](Warfare-and-Sieges.md) | 접근로, 보급, 봉쇄, 철수와 점령 후 유지 |
-| [캠페인 진행과 위기](Campaign-Progression.md) | 안정화, 전문화, 긴장도, 회복과 다중 결말 |
-| [인물·세력·생업](Characters-Factions-and-Professions.md) | 관계, 직위, 정통성과 성장 |
-| [가치관과 정책 척도](Values-and-Policy-Scales.md) | 인물 10칸, 조직 가치관·정책. 1001명 생성 경로 |
-| [서울 십육국](Sixteen-States.md) | 총16국, 강국5·약소국11. 국호는 서명 체계, 지명은 권역 부제 |
-| [신앙과 문화의 분열](Faith-Culture-Schism.md) | 잔해 신앙과 강단계·제대계. 2026 기독교가 개막 실세인 이유 |
-| [십육국 핵심 인물](Core-Characters.md) | 국가별 핵심 인물의 성격, 야망, 공포와 촉발 사건 |
-| [인물 총람](Cast-Index.md) · [관계 원장](Cast-Relations.md) · [무소속 인물](Cast-Unaffiliated.md) | 16국 인물 412명, 무소속 인물과 인물 사이 관계 원장 |
-| [인물 카드 계약](Cast-Profile-Contract.md) | 이름 있는 인물의 필수 칸. 출신·언어·징집·무장 접근 |
-| [본관과 항렬](Hangnyeol-and-Bon-gwan.md) · [랜덤 추가 로스터](Random-Cast-Roster.md) | 성·남·여 풀 분리, 본관 항렬, Nemotron 100명 롤 |
-| [징집 잔존과 군 장부](Conscription-Remnants.md) | 징병제 명부가 동원잔존·무기고·탈영으로 쪼개지는 방식 |
-| [이주민 회랑](Diaspora-Corridors.md) · [회랑 인물](Cast-Corridors-Index.md) | 대림·구로공단·이태원·용산 위에 얹는 다국적 회랑과 시드 인물 |
-| [야망과 관계가 움직이는 정치](Ambitions-and-Relations.md) | 이름 있는 인물이 동맹, 배신, 전쟁과 계승을 만드는 규칙 |
-| [후계, 이름 로스터, 세계 원장](Heirs-Names-and-World-Ledger.md) | 문화 성명 풀에서 후계를 만들고, 면담·거래가 세계 사건에 쌓이는 규칙 |
-| [시나리오 타임라인](Scenario-Timeline.md) | 이탈 2026, 창세 구술, 공백의 세기, 개막 2126. 조건에 따라 갈라지는 연대기 |
-| [재벌 가문과 세기의 세력](Chaebol-Houses-and-Century-Factions.md) | 총수 일가 지배, 구 정부 잔존, 외부 전구, 세기 변혁 가문 |
-| [이 시대의 기술과 무구](Era-Arms-and-Tech-Level.md) | 2026 기술에서 붕괴 이후 생업 공구·제식·군용 잔존·로스트 회수 |
-| [세계 서사 지도](World-Narrative-Atlas.md) | 가문·적대 생태·몬스터·서사 배치의 원본 |
-| [이동과 조우](Travel-and-Encounters.md) | 4방향 행동과 원정 위험 |
-| [실시간 진형·카드 전투](Realtime-Formation-Card-Battle.md) | 같은 격자에서 이어지는 실시간 진형·카드 전투 (Core 규칙 버전 `rtfc-owner-cards-v2`) |
-| [설계 요구 티켓](Design-Requirements.md) | MDA 층은 설계 어휘. 개발 단위는 GitHub 요구 티켓 |
-| [전략에서 전투로](Strategy-Battle-Roundtrip.md) | 세계 상태를 전투에 넘기고 결과를 한 번만 반영하는 법 |
-| [캐릭터 미술](Character-Art-Direction.md) | 2.5등신 전술 실루엣과 인물 프로필 초상 규칙 |
-| [에셋이 들어오는 길](Asset-Pipeline.md) | 의도 JSON을 그래프로 컴파일·검사하고 생성부터 승인까지 가는 설명서 |
-| [UI가 코드로 들어오는 길](Ui-Implementation-Pipeline.md) | HTML 목업을 먼저 고정한 뒤 uGUI로 옮기는 화면 경로 |
-| [유니티 구조](Unity-Architecture.md) | 규칙과 화면을 나누는 영역별 책임 |
-| [Unity 시스템 설계 계약](Unity-System-Design.md) | FSM, VContainer, Singleton과 Repository의 구현 전 계약 |
-| [Unity 아키텍처 구현 계획](Unity-Architecture-Implementation-Plan.md) | 계약을 RED→GREEN으로 적용하고 검증하는 순서 |
-| [같은 선택이 같은 결과가 되나](Save-and-Determinism.md) | 같은 상황을 다시 만들 수 있는 안전한 저장 |
-| [개발 로드맵](Development-Roadmap.md) | 검증 게이트와 구현 순서 |
+| [기동권 이탈](World-Unbinding.md) | 2026년 호출권이 떨어진 밤, 개막 2126, 서울만 나라인 까닭 |
+| [온라인 유저 여정](Online-User-Journey.md) | 계정부터 착생·사망·후계까지 |
+
+### 2. 연표
+| 문서 | 설명 |
+|---|---|
+| [시나리오 타임라인](Scenario-Timeline.md) | 서기는 이탈 2026과 개막 2126만. 창세는 햇수 없는 구술 |
+| [출격하고 돌아오는 흐름](Campaign-Loop.md) | 개막 이후 한 번의 출격 |
+
+### 3. 지명
+| 문서 | 설명 |
+|---|---|
+| [서울과 지하철 레이어](World-and-Subway-Layers.md) | 지상·역·터널 |
+| [월드맵을 어떻게 구성하나](World-Map-Construction.md) | 구 25·역 목록 |
+| [서울 지역 설정 데이터](regions/README.md) | 25구·427동 |
+| [강·구·동 건물 재사용](Building-Reuse-Geography.md) | 한강과 관측 건물 |
+| [서울 역 카탈로그](Seoul-Station-Catalog.md) | 이름 있는 역 334곳 |
+| [역 내부에 들어가면](Station-Interior-Construction.md) | 대합실과 승강장 |
+
+### 4. 세력과 집단
+| 문서 | 설명 |
+|---|---|
+| [서울 십육국](Sixteen-States.md) | 나라 열여섯. 국호는 서명 습관 |
+| [관직과 품계](Offices-and-Ranks.md) | 수령·판서·군수·현감·참하. 조선·2026 관직에 크루세이더 킹즈 층 |
+| [재벌 가문과 세기의 세력](Chaebol-Houses-and-Century-Factions.md) | 2026 총수 일가와 개막 운영가문 |
+| [운영가문](Operating-Houses.md) | HC·HP 장부 |
+| [징집 잔존과 군 장부](Conscription-Remnants.md) | 병무청 잔해 |
+| [세력과 외교](Factions-and-Diplomacy.md) | 나라 사이 |
+| [외부전구](External-Theaters.md) | 임진·서해·해협·두만·인천 회랑 |
+| [이주민 회랑](Diaspora-Corridors.md) | 시외에서 들어온 사람 |
+
+### 5. 등장인물
+나무위키 [피를 마시는 새/등장인물](https://namu.wiki/w/%ED%94%BC%EB%A5%BC%20%EB%A7%88%EC%8B%9C%EB%8A%94%20%EC%83%88/%EB%93%B1%EC%9E%A5%EC%9D%B8%EB%AC%BC), [삼국지 13](https://namu.wiki/w/%EC%82%BC%EA%B5%AD%EC%A7%80%2013)의 무장 항목처럼 쓴다. 품계와 생업을 나눈다.
+
+| 문서 | 설명 |
+|---|---|
+| [십육국 핵심 인물](Core-Characters.md) | 수령 열여섯과 참하 |
+| [인물 총람](Cast-Index.md) | 이름 있는 사람 |
+| [인물 카드 계약](Cast-Profile-Contract.md) | 칸 규칙 |
+| [인물 등록 템플릿](Cast-Registration-Template.md) | 빈 칸 |
+| [야망과 관계가 움직이는 정치](Ambitions-and-Relations.md) | 승인·배신 |
+| [후계, 이름 로스터, 세계 원장](Heirs-Names-and-World-Ledger.md) | 누가 뒤를 잇는가 |
+| [본관과 항렬](Hangnyeol-and-Bon-gwan.md) | 이름 |
+
+### 6. 신앙과 풍속
+| 문서 | 설명 |
+|---|---|
+| [신앙과 문화의 분열](Faith-Culture-Schism.md) | 강단·제대·잔해 제사 |
+
+### 7. 기술과 무구
+| 문서 | 설명 |
+|---|---|
+| [이 시대의 기술과 무구](Era-Arms-and-Tech-Level.md) | 2026 법령의 잔해 |
+| [로스트 테크 계보](Lost-Technology-Lineage.md) | 멈춘 팔과 도면 |
+
+### 8. 전쟁
+| 문서 | 설명 |
+|---|---|
+| [거점과 영토](Strongholds-and-Territory.md) | |
+| [전쟁과 공성](Warfare-and-Sieges.md) | |
+| [실시간 진형·카드 전투](Realtime-Formation-Card-Battle.md) | |
+| [이동과 조우](Travel-and-Encounters.md) | |
+
+### 9. 경제
+| 문서 | 설명 |
+|---|---|
+| [경제와 생산](Economy-and-Production.md) | |
+| [물류와 기반 시설](Logistics-and-Infrastructure.md) | |
+
+### 10. 구현 (설정이 아님)
+| 문서 | 설명 |
+|---|---|
+| [UI가 코드로 들어오는 길](Ui-Implementation-Pipeline.md) | |
+| [유니티 구조](Unity-Architecture.md) | |
+| [같은 선택이 같은 결과가 되나](Save-and-Determinism.md) | |
+| [기여를 시작하는 곳](../../contribute.md) | |
 
 ## 현재 구현 범위
 

@@ -38,6 +38,7 @@ const WORLD_PREFIXES = [
   'Hostile-',
   'Scenario-Timeline',
   'World-Unbinding',
+  'Offices-and-Ranks',
   'Faith-Culture',
   'Chaebol-Houses',
   'Lost-Technology',
