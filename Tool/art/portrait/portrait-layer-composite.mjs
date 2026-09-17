@@ -183,12 +183,39 @@ export function sourceIn(dst, mask) {
   }
 }
 
+export function clipLayer(layerPixels, maskPixels) {
+  if (layerPixels.length !== maskPixels.length) {
+    throw new Error('clipLayer size mismatch');
+  }
+  for (let i = 0; i < layerPixels.length; i += 4) {
+    layerPixels[i + 3] = Math.min(layerPixels[i + 3], maskPixels[i + 3]);
+  }
+}
+
 export function compositePortraitLayers({ schema, slots, blendModes = {}, clipMasks = {}, outputPath } = {}) {
   if (!schema || !Array.isArray(schema.slots)) {
     throw new Error('missing slot schema');
   }
   const slotMap = slots && typeof slots === 'object' ? slots : {};
   const ordered = [...schema.slots].sort((a, b) => a.z - b.z);
+  const relationsPath = new URL('./portrait-slot-relations.json', import.meta.url);
+  let relationsData;
+  try {
+    relationsData = JSON.parse(readFileSync(relationsPath, 'utf8'));
+  } catch (e) {
+    relationsData = { relations: {} };
+  }
+  const relMap = relationsData.relations || {};
+  const occluderMap = {};
+  for (const [sId, rel] of Object.entries(relMap)) {
+    if (Array.isArray(rel.occludes)) {
+      for (const occ of rel.occludes) {
+        if (occ === '*') continue;
+        if (!occluderMap[occ]) occluderMap[occ] = [];
+        if (!occluderMap[occ].includes(sId)) occluderMap[occ].push(sId);
+      }
+    }
+  }
   const missing = [];
   for (const slot of ordered) {
     const path = slotMap[slot.id];
@@ -203,6 +230,46 @@ export function compositePortraitLayers({ schema, slots, blendModes = {}, clipMa
   let height = 0;
   let dest = null;
   for (const slot of ordered) {
+    const slotRel = relMap[slot.id] || {};
+    // hidden-plate reveal: include if slot has hidden_plate and occluder slot NOT in current selection
+    if (slotRel.hidden_plate) {
+      const hiddenKey = slotRel.hidden_plate;
+      const occluders = occluderMap[slot.id] || [];
+      const hasOccluder = occluders.some((occ) => {
+        const p = slotMap[occ];
+        return typeof p === 'string' && p.length > 0 && existsSync(p);
+      });
+      if (!hasOccluder) {
+        const hiddenPath = slotMap[hiddenKey];
+        if (typeof hiddenPath === 'string' && hiddenPath.length > 0 && existsSync(hiddenPath)) {
+          const hLayer = decodePng(readFileSync(hiddenPath));
+          if (!dest) {
+            width = hLayer.width;
+            height = hLayer.height;
+            dest = new Uint8Array(width * height * 4);
+          } else if (hLayer.width !== width || hLayer.height !== height) {
+            throw new Error(`hidden plate for ${slot.id} size mismatch`);
+          }
+          // per-layer clip for hidden if specified
+          if (clipMasks[hiddenKey]) {
+            const mSlot = clipMasks[hiddenKey];
+            const mPath = slotMap[mSlot];
+            if (typeof mPath === 'string' && mPath.length > 0 && existsSync(mPath)) {
+              const maskLayer = decodePng(readFileSync(mPath));
+              if (maskLayer.width === width && maskLayer.height === height) {
+                clipLayer(hLayer.pixels, maskLayer.pixels);
+              }
+            }
+          }
+          const hBlendMode = blendModes[hiddenKey] ?? 'source-over';
+          if (hBlendMode === 'source-over') sourceOver(dest, hLayer.pixels);
+          else if (hBlendMode === 'multiply') multiply(dest, hLayer.pixels);
+          else throw new Error(`unsupported blend mode ${hBlendMode} for hidden ${hiddenKey}`);
+        }
+      }
+    }
+
+    // main layer with per-layer clipping BEFORE compositing - NEVER sourceIn on dest
     const path = slotMap[slot.id];
     if (typeof path !== 'string' || path.length === 0 || !existsSync(path)) continue;
     const layer = decodePng(readFileSync(path));
@@ -213,17 +280,21 @@ export function compositePortraitLayers({ schema, slots, blendModes = {}, clipMa
     } else if (layer.width !== width || layer.height !== height) {
       throw new Error(`slot ${slot.id} size ${layer.width}x${layer.height} != ${width}x${height}`);
     }
+    if (clipMasks[slot.id]) {
+      const maskSlotId = clipMasks[slot.id];
+      const maskPath = slotMap[maskSlotId];
+      if (typeof maskPath === 'string' && maskPath.length > 0 && existsSync(maskPath)) {
+        const maskLayer = decodePng(readFileSync(maskPath));
+        if (maskLayer.width !== width || maskLayer.height !== height) {
+          throw new Error(`mask for ${slot.id} size mismatch`);
+        }
+        clipLayer(layer.pixels, maskLayer.pixels);
+      }
+    }
     const blendMode = blendModes[slot.id] ?? 'source-over';
     if (blendMode === 'source-over') sourceOver(dest, layer.pixels);
     else if (blendMode === 'multiply') multiply(dest, layer.pixels);
     else throw new Error(`unsupported blend mode ${blendMode} for slot ${slot.id}`);
-    if (clipMasks[slot.id]) {
-      const maskPath = slotMap[clipMasks[slot.id]];
-      if (typeof maskPath === 'string' && maskPath.length > 0 && existsSync(maskPath)) {
-        const maskLayer = decodePng(readFileSync(maskPath));
-        sourceIn(dest, maskLayer.pixels);
-      }
-    }
   }
   if (!dest) {
     throw new Error('missing required slot: no layers');

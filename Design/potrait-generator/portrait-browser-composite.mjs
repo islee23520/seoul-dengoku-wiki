@@ -21,10 +21,23 @@ function multiplyPixel(dst, src, index) {
   dst[index + 3] = Math.round(outA * 255);
 }
 
-export function compositeBrowserPixels(destination, source, blendMode = 'source-over') {
+function clipLayer(layerPixels, maskPixels) {
+  if (layerPixels.length !== maskPixels.length) throw new Error('clipLayer size mismatch');
+  for (let i = 0; i < layerPixels.length; i += 4) {
+    layerPixels[i + 3] = Math.min(layerPixels[i + 3], maskPixels[i + 3]);
+  }
+}
+
+export function compositeBrowserPixels(destination, source, blendMode = 'source-over', clipMasks = null) {
   if (destination.length !== source.length) throw new Error('브라우저 합성 레이어 크기가 다릅니다.');
+  let srcToBlend = source;
+  if (clipMasks && clipMasks.length === source.length) {
+    // per-layer clipping using provided mask (supports clipMasks param for parity with offline)
+    srcToBlend = new Uint8ClampedArray(source);
+    clipLayer(srcToBlend, clipMasks);
+  }
   const blend = blendMode === 'source-over' ? sourceOverPixel : blendMode === 'multiply' ? multiplyPixel : null;
   if (!blend) throw new Error(`지원하지 않는 blend mode: ${blendMode}`);
-  for (let index = 0; index < destination.length; index += 4) blend(destination, source, index);
+  for (let index = 0; index < destination.length; index += 4) blend(destination, srcToBlend, index);
   return destination;
 }

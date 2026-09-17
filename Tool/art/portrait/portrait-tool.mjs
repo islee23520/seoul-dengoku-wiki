@@ -21,6 +21,7 @@ import { loadCharacterRegistry } from './verify-portrait-binding.mjs';
 
 const slotSchema = JSON.parse(readFileSync(new URL('./portrait-layer-slots.json', import.meta.url), 'utf8'));
 const reviewContract = JSON.parse(readFileSync(new URL('./portrait-review-contract.json', import.meta.url), 'utf8'));
+const slotRelations = JSON.parse(readFileSync(new URL('./portrait-slot-relations.json', import.meta.url), 'utf8'));
 
 export const SEXES = ['female', 'male'];
 export const SELECTABLE_SLOTS = new Set(['bg', 'face_base', 'mouth', 'nose', 'eyes_white', 'eyes_color', 'eyes_shape', 'clothes', 'headgear', 'acc_eye', 'frame']);
@@ -268,8 +269,15 @@ export function composeFromLibrary(options = {}) {
   }
   if (order.length === 0) throw new Error('selection is empty');
 
+  const clipMasks = {};
+  for (const [slotId, rel] of Object.entries(slotRelations.relations || {})) {
+    if (rel.must_be_inside) {
+      clipMasks[slotId] = rel.must_be_inside;
+    }
+  }
+
   const composed = compositePortraitLayers({
-    schema: { ...slotSchema, slots: slotSchema.slots.map((slot) => ({ ...slot, required: false })) }, slots, blendModes
+    schema: { ...slotSchema, slots: slotSchema.slots.map((slot) => ({ ...slot, required: false })) }, slots, blendModes, clipMasks
   });
   const canvas = library.canvas ?? DEFAULT_CANVAS;
   if (composed.width !== canvas.width || composed.height !== canvas.height) {
