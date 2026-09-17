@@ -45,6 +45,28 @@
         <div class="sex-control"><label for="sex">인물 유형</label><select id="sex"><option value="female">여성</option><option value="male">남성</option></select></div>
         <p id="controls-lock" class="controls-note">여성의 수염 2개 슬롯은 사용하지 않습니다.<br>목록에는 실제 제공된 변형만 표시합니다.</p>
         <div id="slot-controls" class="slot-controls"></div>
+
+        <!-- Design Intent & Verification Rubric Panel -->
+        <div id="item-intent-panel" class="intent-panel" hidden>
+          <div class="panel-heading"><h3 id="intent-slot-title">[슬롯 선택 시 표시]</h3></div>
+          <div class="intent-body">
+            <div class="intent-section">
+              <strong>[아이템 기획 의도]</strong>
+              <p id="design-intent-text">선택된 변형의 구체적인 시각 컨셉을 여기에 표시합니다. (e.g. 칼라가 있는 짙은 회색 방한 베스트 조끼...)</p>
+            </div>
+            <div class="intent-section">
+              <strong>[비전 검증 루브릭]</strong>
+              <p id="verification-rubric-text">구체적인 시각 체크포인트: eyes_color must be cleanly clipped inside eyes_white (software mask verified in composePortrait), bleed, Z-order, texture fidelity.</p>
+            </div>
+          </div>
+          <div class="curation-actions">
+            <button type="button" data-decision="adopt" class="button small adopt-btn">채택</button>
+            <button type="button" data-decision="hold" class="button small hold-btn">보류</button>
+            <button type="button" data-decision="reject" class="button small reject-btn">반려</button>
+          </div>
+          <small class="intent-note">masked canvas rendering + design intent curation panel connected. Select slot/variant to update. Curation buttons record decision to feedback.</small>
+        </div>
+
         <p class="controls-footer">숫자는 합성 순서입니다. 선택한 부위는 원본 위치에 겹쳐집니다.</p>
       </section>
     </div>
