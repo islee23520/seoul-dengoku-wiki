@@ -51,7 +51,7 @@
 - `Wikis/game-logic/regions/sources/**`
 - `.omo/**`
 
-`Wikis/game-logic/**`는 게임 정사의 권위 원본이다. GitHub Wiki와 빌드된 사이트는 이 원본에서 다시 생성한다. 원격 Wiki 게시 자체는 저장소 PR과 별도의 소유자 승인을 받는다.
+`Wikis/game-logic/**`는 게임 정사의 권위 원본이다. VitePress `Wikis/site`와 `https://seoul-kenshi.vercel.app`은 이 원본에서 다시 생성한다. GitHub Wiki는 유지하지 않는다.
 
 ## 변경 기록
 

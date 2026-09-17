@@ -27,7 +27,7 @@ This ADR is the single current delivery rule for the repository. Every local-onl
 2. **Branch and pull request only.** All delivery goes through a dedicated branch and a pull request. Direct push to main is forbidden.
 3. **No history rewrite.** No force-push, no amend of published commits, no rebase of shared history, no merge performed by agents. The owner merges pull requests.
 4. **Excluded repository.** The unused private shooter repository stays fully out of scope. Do not query, inspect, rename, delete, overwrite, clone, transfer, bind or push it. This exclusion is unchanged by the supersession.
-5. **Derived Wiki assets.** Repository documents under `docs/` are the only source of truth. Wiki output is a generated, drift-checked derivative. Publication to the remote Wiki is not part of the current remediation pull request and needs its own owner-authorized step.
+5. **Derived Wiki assets.** Repository documents under `Wikis/game-logic/` are the only lore source of truth. Local wiki-builder output and the VitePress tree under `Wikis/site/` are generated, drift-checked derivatives. GitHub Wiki is retired. The public surface is `https://seoul-kenshi.vercel.app`.
 6. **Rollback and review.** Revert with `git revert` on a new branch and a new pull request. Every delivery keeps its RED-to-GREEN evidence under `.omo/evidence/`. Reviewer locks from the approved plan (art, marketing, critic, Momus) still apply to their original scope.
 
 ## Approval receipt
