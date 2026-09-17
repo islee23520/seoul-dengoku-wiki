@@ -6,9 +6,9 @@ checkout can recover the reasons behind the work. Session state does not.
 
 ## Authority and reading order
 
-1. [ADR-001](../docs/adr/ADR-001-repository-delivery-policy.md) is the single delivery
+1. [ADR-001](../GDD/adr/ADR-001-repository-delivery-policy.md) is the single delivery
    authority: dedicated branch and PR, owner-only merge, no direct main push,
-   no history rewrite. Wiki publication requires separate owner authorization.
+   no history rewrite. GitHub Wiki is retired; public docs are `https://seoul-kenshi.vercel.app`.
 2. [Historical foundation plan](plans/seoul-grand-strategy-srpg.md) restores the
    exact blob `71160195c0b73812074dca5b239e2549fa49e93b` removed in `eeded72`.
    Its appended 2026-09-03 amendment supersedes the old local-only clauses.
@@ -22,7 +22,7 @@ checkout can recover the reasons behind the work. Session state does not.
    [full-loop concept](design/poc-complete.html) and
    [historical design report](design/design-report.html) are source context,
    not a playable build or release evidence. Open the HTML locally; nothing
-   is published to Wiki by this sync.
+   is published to GitHub Wiki by this sync.
 5. [Historical rubric summary](evidence/summaries/poc-rubric-20260906.md)
    explains why the design changed. It does not re-certify the old run.
 6. [Citation metadata and CK3 secondary research](research/README.md) retain the

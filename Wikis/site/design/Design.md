@@ -1,4 +1,4 @@
-# 《잔선: 서울》 Design.md — POC UI 시각 계약
+# 《서울:전국》 Design.md — POC UI 시각 계약
 
 상태: 2026-09-06 개정 — UI 프레임워크를 uGUI로 고정(소유자 결정, [Intent](/design/Intent) 참조). 구현·캡처·검수는 이 문서를 기준으로 한다.
 대상 해상도: `1280×720`, `1920×1080` (16:9). uGUI(Canvas) 전용. 텍스트는 TextMeshPro(TMP).
@@ -144,7 +144,7 @@
 
 - 필수 이름: `main-title-root`, `main-title-mark`, `main-title-start`.
 - Start는 기존 공개 FSM `ApplicationFlowCoordinator.OpenFoundationAsync`만 호출. 씬 직접 로드 금지.
-- 카피: 제품명 《잔선: 서울》, 한 줄 피치(짧은 보조). 테스트는 문구를 고정하지 않고 **요소 존재·액션·FSM**만 검증.
+- 카피: 제품명 《서울:전국》, 한 줄 피치(짧은 보조). 테스트는 문구를 고정하지 않고 **요소 존재·액션·FSM**만 검증.
 - 배경: void + 희미한 노선 폴드(uGUI 기하, 이미지 텍스처 의존 없음).
 
 ### 5.2 Gameplay document (`gameplay-root`) — Foundation lease
@@ -284,7 +284,44 @@ settlement-outcome
 return-action
 ```
 
-이 이름 집합이 스냅샷·테스트·캡처의 단일 출처다. 문구 리터럴은 테스트하지 않는다.
+위 이름은 현재 Unity에서 사용 중인 계약이며 개명하지 않는다. #101의 12면과
+사망·후계 보조 목업에서 새로 필요한 이름은 아래와 같다. **신규** 이름은 화면
+설계 계약이지 현 Unity `UiElementNames`에 이미 구현되었다는 뜻이 아니다.
+HTML 목업에서 먼저 같은 이름을 붙이고, Unity 구현 이슈에서 상수·바인딩·
+EditMode·캡처 검사를 추가한다. 장식용 문구에는 기계 이름을 강제하지 않는다.
+
+| 화면 | 기존 이름 재사용 | 신규 안정 요소 이름 |
+|---|---|---|
+| 캐릭터 생성·착생 | 없음 | `character-creation-panel`, `embodiment-random-action`, `embodiment-custom-action`, `character-origin-preview`, `character-confirm-action` |
+| 시작 프리셋 | `main-title-preset-station-master`는 기존 타이틀 선택 요소로 유지 | `preset-selection-panel`, `preset-option-{presetId}`, `preset-effects-preview`, `preset-confirm-action` |
+| 세계 인물 모집 | 없음 | `recruitment-panel`, `recruit-candidate-{personId}`, `recruit-offer-action`, `recruit-response-panel` |
+| 거점 허브 | `gameplay-root`, `mission-console`, `hub-bulletin-panel`, `territory-panel` | `person-status-panel`, `current-place-label`, `situation-notice-panel` |
+| 캐릭터 대화 | 없음 | `dialogue-panel`, `dialogue-speaker-portrait`, `dialogue-choices`, `dialogue-choice-{choiceId}`, `dialogue-trust-{sourcePersonId}-to-{targetPersonId}`, `dialogue-info-reliability-{claimId}` |
+| 출격 인원 선택 | `deploy-panel`, `deploy-heading`, `deploy-toggle-{rosterIndex}`, `action-depart` | `deploy-capacity-label` |
+| 전략 노선도 | `route-rail`, 기존 `station-*` | `strategic-route-panel`, `route-knowledge-{routeId}`, `route-forecast-{routeId}`, `route-selected-detail` |
+| 역간 여행 | `travel-path`, `travel-cost`, `travel-forecast`, `travel-state` | `travel-panel`, `travel-confirm-action` |
+| 조우 | `encounter-choices`, `choice-negotiate`, `choice-bypass`, `choice-combat` | `encounter-panel`, `encounter-context` |
+| 전투 전 진형 편집 | `formation-edit`, `formation-edit-unit-{unitId}`, `formation-edit-slot-{slotId}`, `formation-edit-confirm`, `formation-edit-cancel` | 핵심 조작은 기존 이름으로 충족 |
+| 전투 | `battle-dock`, `battle-hud`, `battle-play-pause`, 기존 카드·사기 이름 | 핵심 조작은 기존 이름으로 충족 |
+| 정산 | `settlement-panel`, `settlement-outcome`, `return-action` | `settlement-world-change-list` |
+
+| 보조 목업 | 신규 안정 요소 이름 |
+|---|---|
+| 생전 후계 지정 | `heir-designation-panel`, `heir-candidate-{personId}`, `heir-validity-indicator`, `heir-projected-titles`, `heir-projected-assets`, `heir-designate-action` |
+| 유효 후계자의 사망 후 승계 | `death-outcome-panel`, `death-successor-portrait`, `death-title-result`, `death-asset-result`, `death-continue-action` |
+| 유효 후계자 없는 게임오버 | `death-outcome-panel` 재사용, `death-game-over-reason`, `death-archive-action`, `death-new-world-action` |
+| 계정 아카이브 | `account-archive-panel`, `archive-character-{personId}`, `archive-timeline`, `archive-close-action` |
+
+`{presetId}`, `{personId}`, `{choiceId}`, `{routeId}`, `{claimId}`와
+신뢰 표시의 `{sourcePersonId}`, `{targetPersonId}`는 해당 데이터의 안정 ID,
+`{rosterIndex}`는 현재 로스터 인덱스다. 이름에 NPC/타 유저의 조종 여부를
+넣지 않는다. 표시 상태는 요소 이름과 분리한다. `situation`은
+`hidden|forecast|active`, `knowledge`는 `unknown|rumour|confirmed|inferred`,
+`heir-validity`는 `unassigned|eligible-now|invalid-now`를 쓴다.
+후계 최종 판정은 사망 순간에만 일어난다. 사망 결과는 `heir|game-over`,
+작위별 결과는 `inherited|contested|vacant`로 별도 표시한다.
+
+위 기존 이름과 #101 신규 이름이 해당 화면 계약의 단일 출처다. 문구 리터럴은 테스트하지 않는다.
 
 ## 12. 검수 소품의 현재 연결
 

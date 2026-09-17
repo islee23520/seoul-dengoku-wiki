@@ -1,53 +1,38 @@
-# TOOLS KNOWLEDGE BASE
+# TOOL WORKSPACE KNOWLEDGE BASE
 
 ## OVERVIEW
-Repository-only ESM/Python tooling, not shipped with Unity; score 8, distinct build and validation domain.
+Repo automation plus independently versioned tool checkouts; score 9, distinct integration and toolchain boundary.
 
 ## WHERE TO LOOK
 | Task | Location | Notes |
 |------|----------|-------|
-| Dependencies and npm test scope | `package.json` | Private `janseon-tools`, Node >=20 |
-| Wiki rendering and safe cleanup | `wiki/build-wiki.mjs` | `buildWiki`, `assertSafeOutputRoot` exports |
-| Wiki generator regression cases | `wiki/test-build-wiki.mjs` | Filesystem and visible-text boundaries |
-| Cast roster/relationship checks | `wiki/verify-cast.mjs` | `verifyCast` export, rule-coded violations |
-| Surname/bongwan/hangnyeol data contract | `wiki/verify-hangnyeol.mjs` | `verifyHangnyeol` export; quotes are matched against `Research/verification/hangnyeol/raw/` |
-| Strategy formula checks | `wiki/test-strategy-formulas.mjs` | Separate executable, not npm test |
-| Unity architecture gate | `architecture/check-unity-architecture.mjs` | C# scans plus scene YAML/build order |
-| Delivery-policy consistency | `policy/check-repo-delivery-policy.mjs` | Approved plan, ADR-001, live origin |
-| Capture evidence validation | `unity/validate-ui-captures.mjs` | PNG content and source-bound receipts |
-| LFS hydration gate | `check-lfs-hydration.mjs` | Pointers in `Game/Assets` or `Reference/assets` fail closed |
-| Art planning and provenance | `art/AGENTS.md` | Separate domain guide |
+| Repository gates and generation | `tools/AGENTS.md` | Node/Python scripts owned by this repository |
+| Unity execution policy | `docs/Unity-Headless-Workflow.md` | Janseon batchmode-only execution contract |
+| Remote bridge integration | `docs/Unity-Remote.md`, `docs/Unity-Remote-Development.md` | Setup and integration documentation |
+| Remote broker/package implementation | `unity-remote/AGENTS.md` | Separate Git submodule and its own toolchain |
+| Character authoring workspace | `character-forge/AGENTS.md`, `character-forge/CLAUDE.md` | Separate Git submodule; follow its release ownership |
+| Submodule URLs and ownership | `../.gitmodules` | Paths are `Tool/unity-remote` and `Tool/character-forge` |
 
 ## CONVENTIONS
-- `npm --prefix Tool test` runs only wiki build and Unity architecture-doc tests.
-- Other gates/tests are explicit script entry points; npm test is not the full tooling suite.
-- `entities`, `mdast-util-from-markdown`, and `parse5` belong to wiki parsing; no game bundle is produced.
-- Wiki generation takes source directory, asset directory, output directory, and commit SHA as positional arguments.
-- Wiki output ownership is marked by `.janseon-wiki-generated`; validation/rendering precede destructive cleanup.
-- Public-term checking examines rendered text, including visible HTML attributes and invisible-character splitting.
-- Capture validation covers five states at 1280x720 and 1920x1080; PNG hashes, playing-state receipts, HEAD, and dirty-tree fingerprint must agree.
-- Architecture validation checks serialized lifetime scopes as well as C#; changing only a code allowlist does not update scene expectations.
+- `Tool/` is an integration directory, not an npm package; repository scripts are below `Tool/tools/`.
+- From repository root use `npm --prefix Tool/tools ...` and `node Tool/tools/<domain>/<script>.mjs`.
+- Do not shorten this to `npm --prefix Tool` or `Tool/art`; neither is the repo-tool package location.
+- Submodules retain independent dependencies, tests and guidance; a parent tooling check does not validate their products.
+- The external Unity Remote project's interactive workflows do not override Janseon's headless execution policy.
+- Unity runtime/import work belongs to `../Game/`; these wrappers do not make Node checks equivalent to engine evidence.
+- Wrapper scripts are in `tools/unity/`, while the package implementation is in `unity-remote/unity-package/`.
+- Existing migration leftovers can still spell `tools/...` relative to repo root; check consumers rather than trusting the old prefix.
 
 ## COMMANDS
-Run from repository root; install tooling dependencies with `npm ci --prefix Tool`.
-
+From the repository root; package commands are intentionally qualified.
 ```bash
-git lfs pull && git lfs checkout && node Tool/check-lfs-hydration.mjs
-node Tool/test-check-lfs-hydration.mjs
-npm --prefix Tool test
-node Tool/wiki/test-verify-cast.mjs
-node Tool/wiki/verify-hangnyeol.mjs --cast
-node Tool/wiki/test-verify-hangnyeol.mjs
-node Tool/wiki/test-strategy-formulas.mjs
-node Tool/architecture/check-unity-architecture.mjs
-node Tool/architecture/test-check-unity-architecture.mjs
-node Tool/policy/check-repo-delivery-policy.mjs
-node Tool/unity/test-validate-ui-captures.mjs
+npm ci --prefix Tool/tools
+npm --prefix Tool/tools test
+npm --prefix Tool/tools run test:unity-remote
 ```
 
 ## ANTI-PATTERNS
-- Do not treat npm test as an architecture, policy, capture, or art gate result.
-- Do not bypass the wiki ownership sentinel or point output at source/assets, repository root, home, or filesystem-root-adjacent paths.
-- Do not weaken wiki visible-text checks into raw Markdown substring checks; rendering can assemble prohibited terms.
-- Do not accept capture receipts without the tested SHA/fingerprint or assume valid PNG dimensions prove meaningful UI content.
-- Do not replace ADR-001 delivery authority with stale local-only plan clauses; the policy checker requires explicit supersession linkage.
+- Do not regenerate or overwrite submodule guidance as though it were maintained by the parent repository.
+- Do not change a submodule's product files to fix a repository wrapper path without confirming which side owns the defect.
+- Do not cite sibling tool README workflows as permission to launch a GUI Editor for Janseon.
+- Do not place repository-only tooling dependencies in Unity player assemblies.

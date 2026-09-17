@@ -34,7 +34,7 @@
 3. 슬롯 연결(ToDo 16, #26) — 승격된 에셋만 uGUI 런타임 슬롯에 연결하고 임시 비주얼 제거
 4. 최종 수용 게이트(ToDo 17, #27) — 아키텍처 게이트, batchmode PlayMode 전 경로, 4축 시각 PASS, BOM fail-closed, 동일 Unity revision macOS Development player smoke, 임시 리소스 cleanup receipt를 한 번에 통과
 5. 서사·협업 후속(#41) — 외부 기여자와의 서사 디렉션 역할·경계 합의
-6. 전투 표현 마무리 — Core는 `rtfc-owner-cards-v2`로 반영됐다. 남은 일은 [실시간 진형·카드 전투](/rules/Realtime-Formation-Card-Battle)의 분대 명령·집계 사상자 검증, Foundation HUD 잔여, BOM 승격 슬롯 연결이다. POC 비주얼은 오드랜드 기증 패이로드(`Game/Assets/Quarantine/Oddland/`, [에셋이 들어오는 길](/design/Asset-Pipeline) 기증 절)의 3D·SFX·VFX와 Spine POC 캐릭터를 쓰되, 런타임 슬롯 연결은 BOM 승격 게이트를 그대로 통과해야 한다. 전체 16국·412인 캠페인, 저장·외교·공성은 그 뒤 별도 모듈
+6. 전투 표현 마무리 — Core는 `rtfc-owner-cards-v2`로 반영됐다. 남은 일은 [전투](/rules/Realtime-Formation-Card-Battle)의 분대 명령·집계 사상자 검증, Foundation HUD 잔여, BOM 승격 슬롯 연결이다. POC 비주얼은 오드랜드 기증 패이로드(`Game/Assets/Quarantine/Oddland/`, [에셋이 들어오는 길](/design/Asset-Pipeline) 기증 절)의 3D·SFX·VFX와 Spine POC 캐릭터를 쓰되, 런타임 슬롯 연결은 BOM 승격 게이트를 그대로 통과해야 한다. 전체 16국·412인 캠페인, 저장·외교·공성은 그 뒤 별도 모듈
 
 각 단계는 실패하면 다음 단계로 넘어가지 않는다.
 

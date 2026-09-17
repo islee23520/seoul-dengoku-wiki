@@ -1,4 +1,4 @@
-# 잔선: 서울
+# 서울:전국
 
 **붕괴한 서울의 지하철망에서 무명 인물과 파티를 이끌어 역과 노선의 새로운 질서를 세우는 4X + RPG. 전투는 4방향 격자 위의 실시간 진형·카드 전투입니다.**
 
@@ -43,7 +43,7 @@
 
 ## 문서
 
-게임 설계 원본은 [`Wikis/game-logic/`](Wikis/game-logic/Home.md)에 있습니다. GitHub Wiki는 이 문서의 읽기 전용 미러로 게시합니다.
+게임 설계 원본은 [`Wikis/game-logic/`](Wikis/game-logic/Home.md)에 있습니다. 로컬에서는 `npm run docs:dev`로 VitePress를 띄우고, 공개 표면은 [https://seoul-kenshi.vercel.app](https://seoul-kenshi.vercel.app)입니다. GitHub Wiki는 유지하지 않습니다.
 
 이슈를 열거나 작업을 추적할 때는 [`CONTRIBUTING.md`](CONTRIBUTING.md)를 따릅니다. 웹에서는 YAML 이슈 폼만 열고, 빈 이슈는 쓰지 않습니다.
 

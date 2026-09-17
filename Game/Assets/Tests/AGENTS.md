@@ -1,15 +1,16 @@
 # UNITY TEST KNOWLEDGE BASE
 
 ## OVERVIEW
-EditMode contracts and real-scene PlayMode evidence; score 8, distinct validation domain.
+EditMode contracts and real-scene PlayMode evidence; score 9, distinct validation domain.
 
 ## WHERE TO LOOK
 | Task | Location | Notes |
 |------|----------|-------|
 | RNG/replay invariants | `EditMode/CoreDeterminismTests.cs` | Seeded core behavior |
 | Route and campaign behavior | `EditMode/RouteTraversalTests.cs`, `CampaignLoopTests.cs` | Typed travel and stage transitions |
-| Battle handoff | `EditMode/BattleSrpgTests.cs` | Large deterministic SRPG fixture |
-| Settlement retries/conflicts | `EditMode/SettlementExactOnceTests.cs` | Receipts and exact-once effects |
+| Realtime battle and handoff | `EditMode/RealtimeBattleSimTests.cs`, `EditMode/BattleSessionDriverTests.cs` | Tick simulation and driver lifecycle |
+| Cards and settlement | `EditMode/RealtimeCardSettlementTests.cs` | Deterministic combat and settlement regression cases |
+| Catalog validation and identity | `EditMode/Area1*Tests.cs` | Projection, authoring, fingerprint and content contracts |
 | Transition rejection/retry | `EditMode/ApplicationFlowTests.cs` | Recording scene-loader seams |
 | UI structure and regressions | `EditMode/UguiScreenTests.cs`, `UguiVisualQaDefectTests.cs` | Canvas, `UiElementNames`, capture receipts |
 | Actual scene ownership | `PlayMode/FoundationSceneFlowTests.cs` | Bootstrap/content scopes, cancellation, disposal |
@@ -18,7 +19,7 @@ EditMode contracts and real-scene PlayMode evidence; score 8, distinct validatio
 
 ## CONVENTIONS
 - Both asmdefs use `Janseon.Foundation.Tests`, `UNITY_INCLUDE_TESTS`, and `TestAssemblies`.
-- EditMode references Foundation/Core and is restricted to Editor; PlayMode also references VContainer assemblies.
+- Both assemblies reference Foundation, Core, Data, TMP and VContainer; EditMode additionally references Data.Editor and is Editor-only.
 - Many fixtures map to numbered design todos; inspect the current assertion rather than treating a RED-era comment as current status.
 - Tests use NUnit; coroutine fixtures use Unity Test Framework attributes where the engine surface requires them.
 - Presenter `BindForTest` / `Trigger*ForTest` seams exercise machine actions without physical input.

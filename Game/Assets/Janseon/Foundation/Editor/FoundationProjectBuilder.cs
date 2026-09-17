@@ -596,7 +596,7 @@ namespace Janseon.Foundation.Editor
             };
 
             PlayerSettings.companyName = "Janseon Studio";
-            PlayerSettings.productName = "잔선: 서울";
+            PlayerSettings.productName = "서울:전국";
             PlayerSettings.bundleVersion = "0.1.0";
             PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Standalone, "com.janseon.seoul");
 

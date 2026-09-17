@@ -1,6 +1,6 @@
 # SERVICES.md — 서비스 레이어 계약
 
-배포 사이트 `https://seoul-kenshi.vercel.app`의 구성 계약. 루트 `/`는 서비스 인덱스(`index.html`)이고, 각 서비스는 루트 바로 아래 자기 디렉터리 서브 경로로 열린다.
+배포 사이트 `https://seoul-kenshi.vercel.app`의 구성 계약. 루트 `/`는 서비스 인덱스(`index.html`)이고, 각 서비스는 루트 바로 아래 자기 디렉터리 서브 경로로 열린다. GitHub Wiki는 유지하지 않는다. 문서 정본은 `Wikis/game-logic/`, 로컬 열람은 `npm run docs:dev`(VitePress), 공개 표면은 이 Vercel 도메인이다.
 
 ## 현재 구성
 
