@@ -15,7 +15,7 @@ summary: 이름 있는 인물을 위키에 넣을 때 복사하는 빈 칸
 1. GitHub 이슈를 연다. 라벨 `인물`, 품질은 보통 `quality:medium`. 게이트와 완료 조건을 본문에 적는다.
 2. 표시 이름이 [인물 총람](/world/Cast-Index), [S4 당직 명부](/world/Cast-Index-S4), [회랑 인물](/world/Cast-Corridors-Index), [values-cast.json](name-pools/values-cast.json)에 없는지 확인한다.
 3. 소속을 정한다. 16국이면 `Cast-State-01`–`16` 중 하나. 장부 밖이면 [회랑 인물](/world/Cast-Corridors-Index). 무소속이면 새 절 또는 이슈에서 페이지를 잠근다. T0 핵심은 [등장인물](/world/Core-Characters)이고 기본이 아니다.
-4. 가치관·욕망 숫자는 [가치관과 정책 척도](Values-and-Policy-Scales.md)와 `values-cast.json`을 같이 맞춘다.
+4. 가치관·욕망 숫자는 [가치관과 정책 척도](/world/Values-and-Policy-Scales)와 `values-cast.json`을 같이 맞춘다.
 5. 칸을 비운 채 올리지 않는다. 템플릿만 열고 머지하지 않는다.
 
 ## 산문 블록

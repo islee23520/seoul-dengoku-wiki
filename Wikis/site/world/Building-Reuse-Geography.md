@@ -2,7 +2,7 @@
 
 붕괴 뒤 서울의 건물은 새로 짓지 않는다. 2026 관측 위치(OSM 태그)가 뼈대고, 개막일 쓰임은 그 뼈대 위에 얹은 창작이다. 태그가 `school`이라고 학교가 열린 것이 아니다.
 
-면적 분모는 [서울 지역 설정 데이터](regions/README.md)의 427동이다. 권역 깃발은 [십육국](Sixteen-States.md), 그래프 재료는 [월드맵 구성](World-Map-Construction.md), 점령 수치는 [거점과 영토](Strongholds-and-Territory.md)다.
+면적 분모는 [서울 지역 설정 데이터](regions/README.md)의 427동이다. 권역 깃발은 [십육국](/world/Sixteen-States), 그래프 재료는 [월드맵 구성](/world/World-Map-Construction), 점령 수치는 [거점과 영토](/world/Strongholds-and-Territory)다.
 
 ## 세력·건물·역
 

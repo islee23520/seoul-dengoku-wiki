@@ -413,3 +413,115 @@
 - **[문서]** Bannerlord 수식은1.2.12 정적 자료다. 최신 HEAD에는 다른 모집 자격/해상 조건·문화 비교가 있어 혼합하지 않았다. K-시스템 FCS 전체 트리·41%의 버전 공통성은 직접 검증하지 않았다. [S112, S115, S119, S129]
 - **[문서]** Workshop HTTP200 내부 요청 제한 오류, 일부 가이드404/403 및 빈 셸은 긍정 근거로 쓰지 않았다. [S129]
 - **[적용 제안]** 제압/후송/가입/만원/거절/사망/탈출·저장 복원·중복 정산 방지를 향후 수용 시나리오로 제시했다. 잔선의 제안 수치와 실제 UI 동작은 아직 검증되지 않았다. [근거: S128, S129]
+
+---
+
+## 14. 오픈소스 구현 참고 — 소스로 읽은 메커니즘 (2026-09-17)
+
+> 소유자 지정 오픈소스 카탈로그(github.com/bobeff/open-source-games)에서 15종을 소스 수준에서 조사했다. 상업 게임 조사(§1~13)가 설계 의도를 묻는다면 이 섹션은 구현 수치를 묻는다. 상세 원문은 저장소 내부 `Research/canon-reference/open-source-games-mechanisms.md` — 하중 사실마다 소스 경로·열람일(2026-09-17)·짧은 원문 인용이 붙고, 미확증은 UNVERIFIED로 남는다. 잔선의 전투는 실시간 진형·카드이므로 턴제 출처의 공식·데이터 구조는 선택지 병기로만 쓴다.
+
+### 14.1 OpenXcom — 사기 전염·반응 이니셔티브 [REF:OS-OXC-MORALE]
+
+- **[문서: 코드]** 명중은 이항 판정이 아니라 편차 원둣 — `deviation = RNG(0,100) - accuracy*100` 후 조준점 밀기. 웅크림 ×1.15, 양손 불완전 ×0.8, 부상 보정 `max(10, 25*HP/최대HP + 75 - 10*치명상)`. src/Battlescape/Projectile.cpp
+- **[문서: 코드]** 사기 0~100, 피격 손실 `100*(피해*용기계수)/지휘보정`. 사망 전염: 적 처치 +20, 아군 오사 -2000/mod, 계급별 보정 110~150. 패닉 확률 `100 - 2*사기`, 처리 후 +15로 연쇄 방지. src/Savegame/BattleUnit.cpp·SavedBattleGame.cpp
+- **[문서: 코드]** 반응 사격 점수 = `반응스탯 × 잔여TU/최대TU` — 잔여 비율 이니셔티브 큐. 시야는 절대 상한 20타일과 야간 9타일 분리, 연기는 광학 거리 환산. src/Battlescape/TileEngine.cpp
+- **[문서: 코드]** 연구 배정 시 실비용 `cost × RNG(50,150)%`로 변동, 월말 자금은 국가 만족도(활동/10 대 위협/20)로 5~20% 증감. RNG는 전역 단일 xorshift — 잔선 스트림 계약의 반면교사. src/Basescape/ResearchInfoState.cpp
+- **[적용 제안]** 사기 전염·지휘 보정·패닉 회복 상수를 라벨렌 사기·항복 체계의 수치 골격으로 검토한다. 턴 구조는 비채택.
+
+### 14.2 OpenPanzer — 무확률 교전표·참호·코어 로스터 [REF:OS-OP-COMBAT]
+
+- **[문서: 코드]** 교전은 RNG 없음: `kF = atk-def; kF>4면 4+(2kF-8)/5; +6; clamp(1,19); kills = round((5*kF*strength+50)/100)`. js/gamerules.js
+- **[문서: 코드]** 참호는 지형 기저 스냅 + 틱 적층(`next = 9*level+4`), 상한 지형+5, 이동 시 0·피격 시 -1. 도심 보병 대 차량 이중 계산. js/unit.js·prototypes.js
+- **[문서: 코드]** 캠페인 코어 로스터: 경험 유지, HP·탄약·참호 리셋 — 잔선의 지속 부상과 반대 지점(명시적 비채택). 프레스티지 단일 지갑(깃발 +20, 목표 +50). js/map.js
+- **[적용 제안]** 시드 결정론을 지키는 공성 미리보기 판정식 후보.
+
+### 14.3 Battle for Wesnoth — 다단계 피해 파이프라인 [REF:OS-BFW-DAMAGE]
+
+- **[문서: 코드]** 피해 = 기본 ×(100+시간대+지휘 가산)×저항, 반올림은 기저 쪽(0 금지). 명중률 = 100-지형방어%에서 특수 보정. src/utils/math.hpp·actions/attack.cpp
+- **[문서: 코드]** 시간대 ±25(아침/오후 +25, 야간 -25, 지하 -25)와 육각 단위 조명 재작성. data/core/macros/schedules.cfg
+- **[문서: 코드]** XP 격파 8×레벨, AMLA +3HP/+20%요구치. 충성은 사기가 아니라 유지비(레벨세) 면제. src/game_config.hpp·units/unit.hpp
+- **[문서: 코드]** 인접 지휘 `25×(지도자레벨-대상레벨)` 피해 가산 — 잔선 지휘 반경의 턴제 원형. data/core/macros/abilities.cfg
+- **[문서: 코드]** 리콜 로스터 이월: 좌표만 제거한 부대 WML, 리콜 20골드, 골드 이월 80%. 시나리오 시작 전원 회복은 비채택. src/carryover.cpp
+
+### 14.4 Ancient Beast — 타입 피해 벡터·상태 데이터 [REF:OS-AB-DAMAGE]
+
+- **[문서: 코드]** 피해는 `{타입: 값}` 벡터, `value×(1+(공격-방어/면적+상성Δ)/100)`, 합계 하한 1, pure는 우회. 피해가 HP와 별도로 피로(endurance)를 깎는다. src/damage.ts
+- **[문서: 코드]** 상태효과 = 트리거 문자열+alterations 패치 목록(스택·수명·삭제 트리거 포함 직렬화 가능 객체). src/effect.ts·creature.ts
+- **[문서: 코드]** 이니셔티브 큐 `init×500 - id` — 동점을 RNG가 아니라 안정 id로. 소환 비용 `size+level`, 사망 드롭은 만료 없는 영구 스탯 패치. src/creature.ts·drop.ts
+
+### 14.5 Cataclysm: DDA — 규모 분리·관계 정수·필요도 시계 [REF:OS-CDDA-OPINION]
+
+- **[문서: 코드]** 3층 좌표(타일/서브맵 12×12/OMT 24×24, 오버맵 180²). 지하철·도로는 `overmap_connection {terrain, locations, basic_cost}` — 변 비용(도로 0·숲 20·습지 40·물 120)으로 경로가 저비용을 선호. data/json/overmap/overmap_connections.json
+- **[문서: 코드]** 리얼리티 버블(132²) 밖 NPC는 `min(경과, 2일)` 상한 캐치업(30분→5분→1턴 버킷), 무리는 경량체로 오버맵 이동 후 버블 진입 시 승격. src/npc.cpp·overmap.cpp — K-시스템 bubble 설계의 제2 실증.
+- **[문서: 코드]** 관계는 정수 6축 `trust/fear/value/anger/owed/sold` + 성격 int8 ±10. 적대 임계 `anger ≥ 20 + fear - aggression`. 파벌 `likes_u < -10`이면 구성원 적대. 동맹 신뢰는 매시간 확률 +1(벌점 = 분노+평가+공포+허기+갈증+부상). src/npc.cpp·doc/JSON/FACTIONS.md
+- **[문서: 코드]** 필요도 5분 틱 `rate×n` 일괄 정산, 주관 허기와 저장 칼로리 분리, 물 250ml/5분. 원정 소모 정산 모델. src/character_body.cpp·stomach.cpp
+- **[문서: 코드]** 레시피는 AND/OR 중첩 배열 + 단계별 검사, `unattended` 단계는 벽시계 시간(파티 부재 중 공정 진행). 가격은 파벌 `{markup, premium, fixed_adj}` 오버레이 + NPC별 부채(owed) 장부. doc/JSON/ITEM_CRAFT_AND_DISASSEMBLY.md·npctrade.cpp
+- **[적용 제안]** 334역 그래프의 터널 변 비용·역 내부 지연 생성·캐스트 관계 정수 축·역 무인 공정의 1차 원형.
+
+### 14.6 Unciv — 순차 턴 파이프라인·상태해시 RNG [REF:OS-UNCIV-TURN]
+
+- **[문서: 코드]** 도시 성장 `15 + 8(pop-1) + floor((pop-1)^1.5)`, 음수 식량시 -1 인구, 이월 상한 95%. core/.../CityPopulationManager.kt
+- **[문서: 코드]** 수익은 원천 스탯 트리→%트리→생산 우선 적용→전환(1/4)→유지비. CityStats는 저장 없이 매턴 재계산. core/.../CityStats.kt
+- **[문서: 코드]** 턴은 순차 순환(인간→AI 연쇄→인간), '다음 턴'은 미결정 선택지로 게이트. 멀티는 세이브 파일 순차 교환(락스텝 아님). core/src/com/unciv/logic/GameInfo.kt·docs/Other/Multiplayer.md
+- **[문서: 코드]** 이동 1.0=내부 30 고정소수점, 철도 0.1=휴리스틱 상한, 통제구역 통과=세티널 100(잔여 전부). core/.../FixedPointMovement.kt·MovementCost.kt
+- **[문서: 코드]** 확률 판정은 `stateBasedRandom(caller, seed)` — (호출자, 턴, 엔티트 id) 해시로 리로드 재굴림 차단. 세이브는 이름 참조만 저장. models/ruleset/unique/GameContext.kt — PurposeRng 계약의 최근접 실구현.
+
+### 14.7 Freeciv — 페이즈 모드·슬라이더·핸디캡 [REF:OS-FCV-PHASES]
+
+- **[문서: 코드]** 턴과 페이즈 분리: `phase_mode`가 동시(페이즈 1, 매턴 순서 셔플)/교대(플레이어 수)/팀 교대를 결정, 세이브에 저장되어 로드 재부작용 방지. server/srv_main.c
+- **[문서: 코드]** 도시 교역을 과학/사치/세금 백분율(합 100)로 정수 분배, 무정부시 사치 100 하드 오버라이드. common/city.c
+- **[문서: 코드]** AI 난이도는 데이터: 핸디캡 비트벡터 + fuzzy(1000분율 확률로 불리언 뒤집기) + 연구 비용 배율. 최고 난이도도 정부 제약(H_RATES) 유지 — 은닉 버프보다 제약 차단. ai/difficulty.c
+
+### 14.8 VCMI·fheroes2 — 영웅·군단·캠페인 이월 [REF:OS-VCMI-CARRYOVER]
+
+- **[문서: 코드]** 스택 = `{타입, 수}`(VCMI 7슬롯·fheroes2 5슬롯). 지도 전력은 `AIValue×수` 합 + 영웅 계수 `sqrt((1+0.05ATK)(1+0.05DEF))` — 표시·외교용 단일 스칼라. lib/mapObjects/army/
+- **[문서: 코드]** 이동: 일일 예산은 최저속 성원 기준(VCMI 표 1300~2000, fheroes2 열거형 1000~1500), 지형 원가-탐색 할인(습지 175→100), 도로 75/65/50(VCMI)·75(fheroes2). config/gameConfig.json·maps/ground.cpp
+- **[문서: 코드]** 캠페인 이월 keep-flags: VCMI는 축별 유지 불리언+크리처 허용 목록, fheroes2는 군단 최소 스냅샷. 잔선 캐스트 이월 계약(부상·관계·가치관 축별 플래그)의 원형. lib/campaign/CampaignState.h
+- **[문서: 코드]** RNG: VCMI `minstd_rand` 상태 직렬화·영웅별 스트림, fheroes2 PCG32 + 영웅에 시드 큐 저장(라이브 굴림 없는 결정론 레벨업). lib/CRandomGenerator.h·src/engine/rand.h
+- **[문서: 코드]** 마을: 하루 1건 건설, 주간 성장 합산기(VCMI base+성 보너스+…, fheroes2 우물 +2/우물2 +8·중립 절반). lib/mapObjects/CGTownInstance.cpp·castle.cpp
+
+### 14.9 OpenNefia — 호감 임계값·관계 이원 [REF:OS-ONEFIA-IMPRESSION]
+
+- **[문서: 코드]** 호감은 정수 + 명명 임계값(0/10/25/50/53/75/100/150/200/300), 표시 등급은 순수 함수. 획득 체감 `delta×100/(50+L³)`, 대화는 Interest(100) 소모 + 8시간 갱신. Dialog/DialogSystem.cs
+- **[문서: 코드]** 관계는 이넘 `Enemy-3..Ally10` + 개인 덮어쓰기 희소 지도, 전투 어그로는 별도 정수(발견 30, 아군 피해 5, 매턴 -1) — '누구 편'과 '지금 누구' 분리가 잔선 캐스트·전투 분리와 일치. Factions/FactionComponent.cs·VanillaAI
+- **[문서: 코드]** 상점 `itemCount = min(80, 20+랭크/2)`, 재입고는 24시간 날짜 트리거. 카르마 -30에서 치안 즉시 적대 — 개인 관계/전역 평판 층위 분리. Shopkeeper/ShopkeeperSystem.cs·Karma/
+- **[문서: 코드]** RNG는 단일 System.Random + PushSeed 스택, 로드 복원 미확증(UNVERIFIED) — 결정론 반면교사로 기록.
+
+### 14.10 Brogue CE — 시드 결정론의 실구현 [REF:OS-BROGUE-RNG]
+
+- **[문서: 코드]** SUBSTANTIVE(게임)·COSMETIC(연출) 두 ranctx를 같은 시드로 초기화, 연출 스코프 매크로로 엄격 격리, rand_range는 기각표본추출(편향 제거). src/brogue/Math.c
+- **[문서: 코드]** 마스터 시드 → 층별 자식 시드 표(생성 시 스트림 교체/복원) — 이전 층 재생성이 이후 층을 밀지 않는다. src/brogue/RogueMain.c
+- **[문서: 코드]** 세이브=기록 파일(헤더 36B: 버전·시드·턴·심도), 매 턴 1바이트 RNG 체크섬으로 desync 즉시 감지. 시드 카탈로그 diff가 CI 회귀 오라클. src/brogue/Recordings.c·test/compare_seed_catalog.py
+- **[적용 제안]** PurposeRng 스트림 명명·역별 자식 시드·턴별 체크섬·시드 카탈로그 회귀를 잔선 결정론 계약의 구현 지침으로 검토한다.
+
+### 14.11 NetHack — conduct 카운터·본즈 [REF:OS-NETHACK-CONDUCT]
+
+- **[문서: 코드]** conduct는 16개 위반 횟수 카운터 — '지킴'=0, 이력 재계산 아님. 캐스트 행적(버린 동료·파괴한 역)의 누적 원형. include/you.h
+- **[문서: 코드]** RNG는 CORE(게임)/DISP(표시) 이원(ISAAC-64) — 단, `% x` 편향이 있어 복사 시 Brogue 방식 권장. src/rnd.c
+- **[문서: 코드]** 본즈는 일반 세이브과 같은 직렬화기, 발견 1/3 확률, 플레이어 제공 이름 위생 — '전사자 잔재' 이벤트 원형. src/bones.c
+
+### 14.12 Zero-K — 실시간 후퇴·진형·제압 [REF:OS-ZK-RETREAT]
+
+- **[문서: 코드]** 후퇴는 유닛 상태: 임계 30/65/99%(HP 비율), 헤이븐(반경 160)으로 이동·완치까지 대기, 다른 명령으로 즉시 중단. LuaRules/Gadgets/cmd_retreat.lua — 라벨렌 항복 체계의 개별 유닛 판에 결합 가능.
+- **[문서: 코드]** 드래그 라인 진형: 랭크 0~3(전열=낮은 랭크), rank_gap 100, 거리 행렬 헝가리안 배정(초과시 탐욕), 그룹 속도는 최저속. LuaUI/Widgets/cmd_customformations2.lua — 잔선 진형 편집의 수치 골격.
+- **[문서: 코드]** 전술 AI 상수: 키팅 `사거리-leeway`+30프레임 예측, 징크 평행200/접선80, 갱신 20프레임 분산. unit_tactical_ai.lua
+- **[문서: 코드]** timeslow = 제압: `slowDamage/health` 비율 둔화, 상한 50%, 감쇠 초당 4%. 헤이븐 지터에 시드 없는 math.random은 결정론 구멍(비채택 통보). unit_timeslow.lua
+- **[문서: 코드]** 명령(큐: 이동/교전/순찰)과 상태(후퇴 임계·AI 온오프) 분리 — '진형 편집=상태, 전진/후퇴=명령' 원형. state_commands.lua
+
+### 14.13 Mindustry — 전략↔실시간 2층 [REF:OS-MIND-SECTORS]
+
+- **[문서: 코드]** 섹터 그래프가 세이브를 소유, 점령 중 배틀만 실시간, 공격받은 섹터는 동결 — 잔선 S/W/B 연결의 최근접 실구현. type/Sector.java·game/Universe.java
+- **[문서: 코드]** 캠페인 턴 120초, 미플레이 기지 생산은 60틱 이동평균×dt, 침공 확률 `1/100×(0.8+(인접적-1)×0.3)`(20분 유예). Vars.java·Universe.java — 침공 RNG가 시드 밖이라는 결점은 잔선에서 보완.
+- **[문서: 코드]** 일시정지 = 시뮬 블록 스킵(렌더/입력 유지), 델타 클램프 4로 점프 방지. Control.java·ClientLauncher.java
+- **[문서: 코드]** 편형은 공유 오프셋 버퍼(중심 기준→원 충전 0.7 압축→물리 밀어내기→목적지 레이캐스트). 명령 큐 상한 50, 유닛 상한=건물 보정 합(병참). ai/UnitGroup.java·entities/Units.java
+
+### 14.14 Warzone 2100 — 계급·지휘 반경·부품 연구 [REF:OS-WZ-RANK]
+
+- **[문서: 코드]** 경험 16.16 고정소수, 계급은 브레인별 임계 테이블(일반 0/4/8…512, 지휘 0/24…2048), 레벨당 피해 -6%·명중 +5%·속도 +5% — HP 증가가 아닌 판정 보정이라 지속 부상과 공존. src/droid.h·combat.cpp
+- **[문서: 코드]** 2차 명령 비트마스크: 후퇴 25%/50%/불가 + 사격 규율 + 사거리 모드, 정수 판정 `body×100 ≤ repairLevel×originalBody`. src/orderdef.h·order.cpp — 캐릭터별 3단 후퇴 정책 원형.
+- **[문서: 코드]** 지휘 그룹 정원 `level×mult+base`(6+2×level), 반경은 계급별 배열 r[level]² — 반경 내에서만 경험 공유·보정. src/cmddroid.cpp·droid.cpp — 진형 리더 지휘 반경 골격.
+- **[문서: 코드]** 연구는 부품(componentResults)을 해금하고 유닛은 부품 조합 템플릿 — 카드/장비 연구-장착 모델. src/researchdef.h·droiddef.h
+
+### 14.15 후보 스캔 [REF:OS-SCAN]
+
+심층 15종 외 참고 후보(공개 오픈소스 게임 카탈로그 전수 조인, 2026-09-17): Jagged Alliance 2 Stracciatella(용병 로스터·충성), OpenApoc(실시간+일시정지 X-COM — 실시간 계약 직결), KeeperFX(크리처 기분·급여·배신), Fallout CE(종말후 동료·AP), UFO: Alien Invasion(전략+전술 이층 오리지널 설계), Cortex Command(실시간 분대+자원층), Tanks of Freedom II·Commander Wars(간접 지휘 턴제 비교), GLSMAC(파벌 성격 4X), Stone Kingdoms(거점 경영·공성), Wyrmsun(RTS 속 영웅 성장), OpenTTD(노선·신호 — Route 보조).
