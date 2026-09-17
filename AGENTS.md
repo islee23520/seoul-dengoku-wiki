@@ -76,14 +76,14 @@ Digest-observed declarations/imports only; LSP and ast-grep were unavailable. Re
 ## CONVENTIONS
 - The Unity project root is `Game/`, not the repository root. Its editor pin is an alpha release, not a generic Unity LTS target.
 - `Janseon.Core` is engine-free; Foundation integrates Core with Unity and VContainer.
-- Repository documentation is authoritative; the remote Wiki is a generated, drift-checked derivative.
+- Repository documentation is authoritative. Serve `Wikis/site` locally (`npm run docs:dev`) and publish `https://seoul-kenshi.vercel.app`. Do not maintain GitHub Wiki.
 - Design pages use Korean prose, English hyphenated filenames, ordinary relative Markdown links, and GitHub image URLs with `?raw=true`; do not assume Obsidian wiki links.
 - Tooling uses a separate private Node >=20 ESM package under `Tool/`; it is not game runtime code.
 
 ## ANTI-PATTERNS
 - Do not label planned campaign or tactical features as shipped merely because design pages exist; even Home's implementation summary may lag code.
 - No direct push to main, force-push, or shared-history rewrite. ADR-001 requires a dedicated branch and PR, with owner-only merging.
-- Authorized origin: `https://github.com/islee23520/seoul-kenshi.git`; the unrelated shooter repository is not a delivery target. Remote Wiki publication needs separate owner authorization.
+- Authorized origin: `https://github.com/islee23520/seoul-kenshi.git`; the unrelated shooter repository is not a delivery target. Do not publish or maintain GitHub Wiki.
 - Do not create a new Vercel project, alias, or `*.vercel.app` site for demos or worktree folders. Link and deploy only to existing `seoul-kenshi`. Nested static pages (for example `Design/portrait-demo/`) go on that hub as a subpath via the composite staging in `SERVICES.md`; never `vercel deploy` a nested folder as its own project.
 - Candidate generation, provider eligibility, or showcase import does not authorize a runtime dependency.
 - Guessed rights, synthetic review hashes, model/software licenses, and zero-cost receipts are not proof of asset-output rights or actual service terms. Source-rights research is not quality approval or a legal guarantee.

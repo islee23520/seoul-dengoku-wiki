@@ -131,6 +131,9 @@ export async function assertPublishableBuild(outputDir, { sourceDir, assetDir } 
   return { pageCount: pages.length, pages };
 }
 
+export const GITHUB_WIKI_RETIRED =
+  'GitHub Wiki is retired; serve Wikis/site locally and publish https://seoul-kenshi.vercel.app';
+
 export async function publishWiki({
   repositoryRoot,
   wikiDir,
@@ -145,6 +148,7 @@ export async function publishWiki({
   runNodeTests,
   gitPush,
 } = {}) {
+  if (push) throw new Error(GITHUB_WIKI_RETIRED);
   if (!commitSha) throw new Error('commitSha is required');
   if (typeof repositoryRoot !== 'string' || repositoryRoot.trim() === '') {
     throw new Error('repositoryRoot is required');
@@ -400,8 +404,7 @@ export function parsePublishArgs(argv) {
       continue;
     }
     if (arg === '--push') {
-      out.push = true;
-      continue;
+      throw new Error(GITHUB_WIKI_RETIRED);
     }
     if (arg === '--no-push') {
       out.push = false;
