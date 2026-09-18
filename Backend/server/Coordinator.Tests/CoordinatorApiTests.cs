@@ -1,5 +1,6 @@
 using System.Net;
 using System.Net.Http.Json;
+using System.Net.WebSockets;
 using System.Text;
 using System.Text.Json;
 using Microsoft.AspNetCore.TestHost;
@@ -391,12 +392,11 @@ public sealed class CoordinatorApiTests : IClassFixture<CoordinatorWebApplicatio
     // ---------------------------------------------------------------- websocket boundary (todo 6)
 
     [Fact]
-    public async Task Get_session_with_websocket_upgrade_is_not_upgraded_and_reports_501()
+    public async Task Get_session_with_websocket_upgrade_upgrades_and_receives_joined()
     {
         var (accountIdx, sessionKey, code) = await HostSessionAsync(_factory);
 
-        // TestServer의 WebSocketClient가 진짜 업그레이드 요청 흐름을 만든다.
-        // 업그레이드 구현은 todo 6이므로 101 대신 501 ProblemDetails가 내가야 한다.
+        // todo 6 완료: 업그레이드는 이제 101로 이어지고 호스트에게 joined 프레임이 온다.
         var wsClient = _factory.Server.CreateWebSocketClient();
         wsClient.ConfigureRequest = request =>
         {
@@ -404,8 +404,34 @@ public sealed class CoordinatorApiTests : IClassFixture<CoordinatorWebApplicatio
             request.Headers["SessionKey"] = sessionKey;
         };
 
-        await Assert.ThrowsAsync<InvalidOperationException>(
-            () => wsClient.ConnectAsync(new Uri($"http://localhost/sessions/{code}"), CancellationToken.None));
+        using var ws = await wsClient.ConnectAsync(new Uri($"http://localhost/sessions/{code}"),
+            CancellationToken.None);
+        var joined = await ReceiveUntilTypeAsync(ws, "joined");
+        Assert.Equal(0, joined.GetProperty("role").GetInt32()); // SessionMemberRole.Host
+    }
+
+    static async Task<JsonElement> ReceiveUntilTypeAsync(WebSocket ws, string type)
+    {
+        using var timeout = new CancellationTokenSource(TimeSpan.FromSeconds(10));
+        var buffer = new byte[16 * 1024];
+        using var frame = new MemoryStream();
+
+        while (true)
+        {
+            var result = await ws.ReceiveAsync(new ArraySegment<byte>(buffer), timeout.Token);
+            if (result.MessageType == WebSocketMessageType.Close)
+                throw new TimeoutException("socket closed before expected message");
+
+            frame.Write(buffer, 0, result.Count);
+            if (!result.EndOfMessage)
+                continue;
+
+            using var document = JsonDocument.Parse(Encoding.UTF8.GetString(frame.ToArray()));
+            var root = document.RootElement.Clone();
+            if (root.GetProperty("type").GetString() == type)
+                return root;
+            frame.SetLength(0);
+        }
     }
 
     // ---------------------------------------------------------------- health stays open

@@ -1,5 +1,6 @@
 using Microsoft.Extensions.Options;
 using SeoulKenshi.Coordinator.Identity;
+using SeoulKenshi.Coordinator.Relay;
 using SeoulKenshi.Coordinator.Session;
 
 namespace SeoulKenshi.Coordinator.Api;
@@ -33,13 +34,12 @@ public static class SessionEndpoints
         group.MapGet("", (SessionRegistry sessions) =>
             Results.Ok(sessions.ListOpen().Select(SessionSummaryMapper.From).ToList()));
 
-        group.MapGet("/{code}", (HttpContext http, string code, SessionRegistry sessions) =>
+        group.MapGet("/{code}", async (HttpContext http, string code, SessionRegistry sessions,
+            SessionRelayHub relay) =>
         {
-            // 웹소켓 업그레이드는 todo 6. 그 전에는 JSON만 내간다.
+            // 웹소켓 업그레이드: 인증부터 릴레이 흐름까지 허브가 업그레이드 전후를 끝까지 담당한다.
             if (http.WebSockets.IsWebSocketRequest)
-                return CoordinatorErrorCodes.Problem(
-                    StatusCodes.Status501NotImplemented, CoordinatorErrorCodes.WebSocketNotImplemented,
-                    "websocket upgrade arrives in a later milestone");
+                return await relay.HandleSessionAsync(http, code);
 
             var session = sessions.GetByCode(code);
             if (session is null)
@@ -76,6 +76,12 @@ sealed class SessionAuthFilter : IEndpointFilter
     public async ValueTask<object?> InvokeAsync(EndpointFilterInvocationContext context, EndpointFilterDelegate next)
     {
         var http = context.HttpContext;
+
+        // 웹소켓은 헤더뿐 아니라 쿼리로도 신원을 줄 수 있다. 인증은 릴레이 허브가
+        // 업그레이드 전에 자체적으로 마친다(실패는 101 이전에 401로 답한다).
+        if (http.WebSockets.IsWebSocketRequest)
+            return await next(context);
+
         var accountIdxHeader = http.Request.Headers["AccountIdx"].ToString();
         var sessionKeyHeader = http.Request.Headers["SessionKey"].ToString();
 

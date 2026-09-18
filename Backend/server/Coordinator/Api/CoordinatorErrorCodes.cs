@@ -17,8 +17,6 @@ internal static class CoordinatorErrorCodes
     public const int NotHost = 4005;                 // 403
     public const int SessionClosed = 4006;           // 409, todo 6
 
-    public const int WebSocketNotImplemented = 5001; // 501
-
     public static IResult Problem(int statusCode, int code, string title)
     {
         return Results.Problem(

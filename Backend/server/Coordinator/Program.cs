@@ -1,15 +1,6 @@
 using SeoulKenshi.Coordinator;
-using SeoulKenshi.Coordinator.Api;
-using SeoulKenshi.Coordinator.Identity;
-using SeoulKenshi.Coordinator.Session;
 
-var builder = WebApplication.CreateBuilder(args);
-
-builder.Services.Configure<CoordinatorOptions>(
-    builder.Configuration.GetSection(CoordinatorOptions.SectionName));
-
-builder.Services.AddSingleton<IdentityStore>();
-builder.Services.AddSingleton<SessionRegistry>();
+var builder = CoordinatorApp.CreateBuilder(args);
 
 builder.WebHost.ConfigureKestrel((context, options) =>
 {
@@ -22,11 +13,7 @@ builder.WebHost.ConfigureKestrel((context, options) =>
     options.ListenAnyIP(port);
 });
 
-var app = builder.Build();
-
-app.MapAuth();
-app.MapSessionRoutes();
-app.MapGet("/health", () => "ok");
+var app = CoordinatorApp.Build(builder);
 
 app.Run();
 
