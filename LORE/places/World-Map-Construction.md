@@ -6,7 +6,7 @@
 
 설계 데이터는 서울 25개 자치구와 이름 있는 역 목록, 주변 시설, 십육국 권역을 카탈로그로 둔다. 면적·시설·동별 내용은 [서울 지역 설정 데이터](../regions/README.md)가 분모다. 분모는 2026-07-01 행정동 427개이며, 역 334는 그 전수로 읽히지 않는다. 붕괴 뒤 건물이 어떻게 쓰이는지는 [강·구·동 건물 재사용](../places/Building-Reuse-Geography.md)이다.
 
-런타임 `RouteGraph.CreateSeoul()`은 카탈로그 역 334와 OSM 인접 435를 로드한다. 영등포—신도림, 신도림—구로는 유지하고 영등포—구로는 없다. `CreateYeongdeungpoSindorimGuro()`는 Area 1 세 역 POC·테스트용으로 남긴다. Unity에 OSM PBF를 넣지 않았다. 내부 격자·시설 슬롯·16국 캠페인은 아직 없다.
+런타임 `RouteGraph.CreateSeoul()`은 카탈로그 역 334와 OSM 인접 435를 로드한다. 영등포—신도림, 신도림—구로는 유지하고 영등포—구로는 없다. `CreateYeongdeungpoSindorimGuro()`는 Area 1 세 역 시범 구현·테스트용으로 남긴다. Unity에 OSM PBF를 넣지 않았다. 내부 격자·시설 슬롯·16국 캠페인은 아직 없다.
 
 관련 문서: [서울과 지하철 레이어](../places/World-and-Subway-Layers.md), [서울 십육국](../factions/Sixteen-States.md), [서울 지역 설정 데이터](../regions/README.md), [서울 역 카탈로그](../places/Seoul-Station-Catalog.md), [역 내부에 들어가면](../places/Station-Interior-Construction.md), [이동과 조우](../../GAME-LOGIC/Travel-and-Encounters.md).
 
@@ -45,7 +45,7 @@
 
 334가 서울교통공사·코레일 공표 역 수와 같은지는 아직 대조하지 않았다. 환승역과 일반역 구분도 OSM 태그만으로는 게임 슬롯 분류가 되지 않는다. 빠진 역·중복 이름·개명 역은 이후 공표 목록과 맞춰야 한다.
 
-POC 세 역은 이 목록 안에 있다. 영등포(영등포구), 신도림(구로구), 구로(구로구). 런타임 그래프가 오늘은 이 셋만 열 뿐이고, 카탈로그 전수가 셋으로 줄어든 것은 아니다.
+시범 구현 세 역은 이 목록 안에 있다. 영등포(영등포구), 신도림(구로구), 구로(구로구). 런타임 그래프가 오늘은 이 셋만 열 뿐이고, 카탈로그 전수가 셋으로 줄어든 것은 아니다.
 
 ## 주변 시설
 
@@ -107,7 +107,7 @@ OSM 참고 집계(설계 데이터, 거점 슬롯 아님): 병원·클리닉, �
 
 파일은 `Game/Assets/Janseon/Core/RouteDomain.cs`의 `CreateSeoul()`이고, 카탈로그는 `SeoulWorldGraphCatalog` / `Game/Assets/Janseon/Data/Content/SeoulWorldGraph.json`이다.
 
-구 25, 역 334, OSM 노선 관계에서 뽑은 무방향 인접 435를 로드한다. POC 인접은 영등포—신도림, 신도림—구로를 유지하고 영등포—구로는 없다. 거절은 SameNode, UnknownNode, NotAdjacent이며, 카탈로그에 없는 이름은 UnknownNode다. 빈 카탈로그는 세 역으로 폴백하지 않고 예외를 낸다. 확인된 이동은 틱 +1, 자원 -2이고, 캠페인 호스트는 `CreateSeoul()`을 쓴다. Area 1 콘텐츠 카탈로그는 여전히 역 3개라서 월드 그래프와 섞지 않는다.
+구 25, 역 334, OSM 노선 관계에서 뽑은 무방향 인접 435를 로드한다. 시범 구현 인접은 영등포—신도림, 신도림—구로를 유지하고 영등포—구로는 없다. 거절은 SameNode, UnknownNode, NotAdjacent이며, 카탈로그에 없는 이름은 UnknownNode다. 빈 카탈로그는 세 역으로 폴백하지 않고 예외를 낸다. 확인된 이동은 틱 +1, 자원 -2이고, 캠페인 호스트는 `CreateSeoul()`을 쓴다. Area 1 콘텐츠 카탈로그는 여전히 역 3개라서 월드 그래프와 섞지 않는다.
 
 캠페인 단계: 거점 준비 → 원정 → 조우 → 해결 → 정산 → 복귀. `CampaignDomain.cs`. 정산은 조우 결과를 한 번만 반영한다. 역 내부를 짓지 않는다.
 
