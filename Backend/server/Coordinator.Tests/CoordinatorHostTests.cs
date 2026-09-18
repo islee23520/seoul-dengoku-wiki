@@ -36,6 +36,7 @@ public sealed class CoordinatorHostTests : IClassFixture<CoordinatorWebApplicati
         Assert.Equal(4, options.SessionMaxGuests);
         Assert.Equal(30, options.SessionHostTimeoutSeconds);
         Assert.Equal(30, options.SessionMemberTimeoutSeconds);
+        Assert.Equal(10.0, options.SweepIntervalSeconds);
     }
 
     [Fact]

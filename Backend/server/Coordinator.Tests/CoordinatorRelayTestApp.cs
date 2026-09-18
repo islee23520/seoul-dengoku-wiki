@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.AspNetCore.Hosting.Server.Features;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SeoulKenshi.Coordinator.Identity;
 using SeoulKenshi.Coordinator.Relay;
@@ -34,10 +35,17 @@ public sealed class CoordinatorRelayTestApp : IAsyncDisposable
     public SessionRegistry Registry { get; }
     public SessionRelayHub Relay { get; }
 
-    public static async Task<CoordinatorRelayTestApp> StartAsync()
+    /// <summary>
+    /// configuration으로 Coordinator:* 테스트 구성(짧은 타임아웃 등)을 걸 수 있다.
+    /// Options는 첫 조회 때 묶이므로 조립 전에 추가해도 같은 구성이 적용된다.
+    /// </summary>
+    public static async Task<CoordinatorRelayTestApp> StartAsync(
+        IDictionary<string, string?>? configuration = null)
     {
         var builder = CoordinatorApp.CreateBuilder();
         builder.WebHost.ConfigureKestrel(kestrel => kestrel.ListenAnyIP(0));
+        if (configuration != null)
+            builder.Configuration.AddInMemoryCollection(configuration);
 
         // Program과 같은 파이프라인(UseWebSockets + 라우트)을 반드시 통해서 조립한다.
         var app = CoordinatorApp.Build(builder);
@@ -98,12 +106,13 @@ public static class RelayTestSockets
         return ws;
     }
 
-    public static async Task SendAsync(ClientWebSocket ws, object message)
+    public static async Task SendAsync(ClientWebSocket ws, object message,
+        CancellationToken cancellationToken = default)
     {
         var json = JsonSerializer.Serialize(message,
             new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
         await ws.SendAsync(new ArraySegment<byte>(Encoding.UTF8.GetBytes(json)),
-            WebSocketMessageType.Text, true, CancellationToken.None);
+            WebSocketMessageType.Text, true, cancellationToken);
     }
 
     public static async Task<JsonElement> ReceiveAsync(ClientWebSocket ws)
@@ -141,6 +150,30 @@ public static class RelayTestSockets
                 return root;
         }
         throw new TimeoutException("expected message did not arrive");
+    }
+
+    /// <summary>상대의 close 핸드셰이크(또는 정리 중단)를 기다린다. 소켓이 닫히면 true.</summary>
+    public static async Task<bool> WaitCloseAsync(ClientWebSocket ws, TimeSpan timeout)
+    {
+        using var timeoutCts = new CancellationTokenSource(timeout);
+        var buffer = new byte[1024];
+
+        try
+        {
+            while (true)
+            {
+                var result = await ws.ReceiveAsync(new ArraySegment<byte>(buffer), timeoutCts.Token);
+                if (result.MessageType == WebSocketMessageType.Close)
+                    return true;
+            }
+        }
+        catch (Exception ex) when (ex is WebSocketException or OperationCanceledException)
+        {
+            // 정상 핸드셰이크 대신 서버가 소켓을 정리(abort)했을 수도 있다.
+            var state = ws.State;
+            return state == WebSocketState.Closed || state == WebSocketState.CloseSent
+                || state == WebSocketState.Aborted;
+        }
     }
 
     public static async Task CloseQuietlyAsync(ClientWebSocket? ws)

@@ -22,6 +22,14 @@ public static class CoordinatorApp
         builder.Services.AddSingleton<SessionRegistry>();
         builder.Services.AddSingleton<SessionRelayHub>();
 
+        // 스윕 시계. 테스트는 이 등록을 갈아끼워 시간을 통제할 수 있다.
+        builder.Services.AddSingleton<TimeProvider>(TimeProvider.System);
+
+        // 구성 타입을 싱글턴으로 두고 호스티드 서비스는 같은 인스턴스를 걸어 테스트가
+        // 스윕 틱 경계를 관찰할 수 있게 한다.
+        builder.Services.AddSingleton<SessionLivenessSweep>();
+        builder.Services.AddHostedService(sp => sp.GetRequiredService<SessionLivenessSweep>());
+
         return builder;
     }
 

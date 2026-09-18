@@ -245,25 +245,51 @@ namespace SeoulKenshi.Coordinator.Relay
             }
         }
 
-        /// <summary>스윕이 로스터에서 뺀 게스트의 연결을 닫고 로스터를 다시 뿌린다.</summary>
-        public void RemoveGuestConnection(long sessionId, long accountIdx)
+        /// <summary>
+        /// 현재 게스트 연결 스냅샷. 키는 (세션, 계정)이다. 스윕이 판단 시점의 연결을
+        /// 기억해 뒤늦은 정리가 재접속으로 바뀐 새 연결을 건드리지 않는 데 쓴다.
+        /// </summary>
+        public Dictionary<(long SessionId, long AccountIdx), IRelayConnection> SnapshotGuests()
+        {
+            var snapshot = new Dictionary<(long, long), IRelayConnection>();
+            foreach (var room in _rooms.Values)
+            {
+                lock (room.Gate)
+                {
+                    foreach (var pair in room.Guests)
+                        snapshot[(room.Session.SessionId, pair.Key)] = pair.Value;
+                }
+            }
+            return snapshot;
+        }
+
+        /// <summary>
+        /// 스윕이 로스터에서 뺀 게스트의 연결을 닫고 로스터를 다시 뿌린다. expected는
+        /// 스윕이 판단했을 때의 연결이다. 그 뒤 재접속으로 방 항목이 다른 인스턴스로
+        /// 바뀌었으면 새 연결을 건드리지 않고 건너뛴다(Detach와 같은 인스턴스 규율).
+        /// 정리가 일어났으면 true다.
+        /// </summary>
+        public bool RemoveGuestConnection(long sessionId, long accountIdx, IRelayConnection expected)
         {
             var room = GetRoom(sessionId);
             if (room == null)
-                return;
+                return false;
 
-            IRelayConnection removed = null;
             lock (room.Gate)
             {
-                if (room.Guests.TryGetValue(accountIdx, out removed))
-                    room.Guests.Remove(accountIdx);
+                if (!room.Guests.TryGetValue(accountIdx, out var current)
+                    || !ReferenceEquals(current, expected))
+                {
+                    // 재접속이 항목을 이미 대체했다. 살아 있는 새 연결은 그대로 둔다.
+                    return false;
+                }
+
+                room.Guests.Remove(accountIdx);
             }
 
-            if (removed == null)
-                return;
-
-            removed.Close();
+            expected.Close();
             BroadcastRoster(sessionId);
+            return true;
         }
 
         /// <summary>서버 종료: 모든 방에 마감 사유를 보내고 닫는다.</summary>
