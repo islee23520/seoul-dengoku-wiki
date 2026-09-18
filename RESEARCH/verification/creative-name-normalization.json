@@ -32,76 +32,518 @@
     }
   ],
   "replacements": [
-    { "kind": "state", "id": "S01", "old": "여의신정수문정부", "new": "영등포수문정부", "anchor": "영등포" },
-    { "kind": "state", "id": "S02", "old": "서남제작동맹", "new": "구로제작동맹", "anchor": "구로" },
-    { "kind": "state", "id": "S04", "old": "뚝도공방연합", "new": "뚝섬공방연합", "anchor": "뚝섬" },
-    { "kind": "state", "id": "S05", "old": "암사고덕상수단", "new": "암사상수단", "anchor": "암사" },
-    { "kind": "state", "id": "S06", "old": "도성기록청", "new": "서울역기록청", "anchor": "서울역" },
-    { "kind": "state", "id": "S08", "old": "노량진남관상회", "new": "노량진상회", "anchor": "노량진" },
-    { "kind": "state", "id": "S09", "old": "상암송신공사", "new": "디지털미디어시티송신공사", "anchor": "디지털미디어시티" },
-    { "kind": "state", "id": "S10", "old": "북산피난연맹", "new": "북한산보국문피난연맹", "anchor": "북한산보국문" },
-    { "kind": "state", "id": "S12", "old": "신내망우환승시", "new": "신내환승시", "anchor": "신내" },
-    { "kind": "state", "id": "S13", "old": "약령의정동맹", "new": "제기동의정동맹", "anchor": "제기동" },
-    { "kind": "state", "id": "S14", "old": "아차구의관문국", "new": "구의관문국", "anchor": "구의" },
-    { "kind": "state", "id": "S15", "old": "가락잠실배급국", "new": "가락시장배급국", "anchor": "가락시장" },
-    { "kind": "state", "id": "S16", "old": "수서강남협약도시", "new": "수서협약도시", "anchor": "수서" },
-
-    { "kind": "corporate-house", "id": "HC01", "old": "삼성전자", "new": "여의도전산가", "anchor": "여의도" },
-    { "kind": "corporate-house", "id": "HC02", "old": "현대자동차", "new": "신정차륜가", "anchor": "신정" },
-    { "kind": "corporate-house", "id": "HC03", "old": "LG생활건강", "new": "마곡생명가", "anchor": "마곡" },
-    { "kind": "corporate-house", "id": "HC04", "old": "SK에너지", "new": "뚝섬열원가", "anchor": "뚝섬" },
-    { "kind": "corporate-house", "id": "HC05", "old": "북문지식원", "new": "북한산보국문기록가", "anchor": "북한산보국문" },
-    { "kind": "corporate-house", "id": "HC06", "old": "쿠팡", "new": "노량진배달가", "anchor": "노량진" },
-    { "kind": "corporate-house", "id": "HC07", "old": "포스코", "new": "구로합금가", "anchor": "구로" },
-    { "kind": "corporate-house", "id": "HC08", "old": "한화에어로스페이스", "new": "창동방호가", "anchor": "창동" },
-    { "kind": "corporate-house", "id": "HC09", "old": "롯데쇼핑", "new": "서울역재고가", "anchor": "서울역" },
-    { "kind": "corporate-house", "id": "HC10", "old": "CJ제일제당", "new": "마곡종자가", "anchor": "마곡" },
-    { "kind": "corporate-house", "id": "HC11", "old": "CJ대한통운", "new": "용산호송가", "anchor": "용산" },
-    { "kind": "corporate-house", "id": "HC12", "old": "현대중공업", "new": "금천구청중기가", "anchor": "금천구청" },
-    { "kind": "corporate-house", "id": "HC13", "old": "HD현대건설", "new": "수서건설가", "anchor": "수서" },
-    { "kind": "corporate-house", "id": "HC14", "old": "신한지주", "new": "여의도장부가", "anchor": "여의도" },
-    { "kind": "corporate-house", "id": "HC15", "old": "네이버", "new": "디지털미디어시티색인가", "anchor": "디지털미디어시티" },
-    { "kind": "corporate-house", "id": "HC16", "old": "KT", "new": "용산교환가", "anchor": "용산" },
-    { "kind": "corporate-house", "id": "HC17", "old": "LG에너지솔루션", "new": "구로디지털단지전지가", "anchor": "구로디지털단지" },
-    { "kind": "corporate-house", "id": "HC18", "old": "HMM", "new": "용산선박가", "anchor": "용산" },
-    { "kind": "corporate-house", "id": "HC19", "old": "호텔신라", "new": "동대입구객사가", "anchor": "동대입구" },
-    { "kind": "corporate-house", "id": "HC20", "old": "HYBE", "new": "디지털미디어시티공연가", "anchor": "디지털미디어시티" },
-    { "kind": "corporate-house", "id": "HC21", "old": "카카오", "new": "디지털미디어시티결제가", "anchor": "디지털미디어시티" },
-    { "kind": "corporate-house", "id": "HC22", "old": "테슬라코리아", "new": "마곡시험선가", "anchor": "마곡" },
-
-    { "kind": "civic-house", "id": "HP01", "old": "아리수수문가", "new": "영등포수문가", "anchor": "영등포" },
-    { "kind": "civic-house", "id": "HP02", "old": "환승선로문", "new": "용산선로문", "anchor": "용산" },
-    { "kind": "civic-house", "id": "HP03", "old": "공동의료원가", "new": "청량리의료원가", "anchor": "청량리" },
-    { "kind": "civic-house", "id": "HP04", "old": "도성기록법가", "new": "서울역기록법가", "anchor": "서울역" },
-    { "kind": "civic-house", "id": "HP05", "old": "북산귀환회", "new": "북한산보국문귀환회", "anchor": "북한산보국문" },
-    { "kind": "civic-house", "id": "HP06", "old": "약령치유문", "new": "제기동치유문", "anchor": "제기동" },
-    { "kind": "civic-house", "id": "HP07", "old": "한강교량공회", "new": "한강진교량공회", "anchor": "한강진" },
-    { "kind": "civic-house", "id": "HP08", "old": "시장냉동상단", "new": "노량진냉동상단", "anchor": "노량진" },
-    { "kind": "civic-house", "id": "HP09", "old": "데이터신탁가", "new": "디지털미디어시티신탁가", "anchor": "디지털미디어시티" },
-    { "kind": "civic-house", "id": "HP10", "old": "외교통역문", "new": "이태원통역문", "anchor": "이태원" },
-
-    { "kind": "external-theater", "id": "XT01", "old": "임진관문전구", "new": "임진강관문전구", "anchor": "임진강" },
-    { "kind": "external-theater", "id": "XT03", "old": "해협삼로전구", "new": "대한해협전구", "anchor": "대한해협" },
-    { "kind": "external-theater", "id": "XT04", "old": "두만극동전구", "new": "두만강극동전구", "anchor": "두만강" },
-    { "kind": "external-theater", "id": "XT05", "old": "원양신탁전구", "new": "인천신탁전구", "anchor": "인천" }
+    {
+      "kind": "state",
+      "id": "S12",
+      "old": "신내망우환승시",
+      "new": "중립호송시",
+      "anchor": "신내"
+    },
+    {
+      "kind": "state",
+      "id": "S14",
+      "old": "아차구의관문국",
+      "new": "관문군정",
+      "anchor": "구의"
+    },
+    {
+      "kind": "state",
+      "id": "S15",
+      "old": "가락잠실배급국",
+      "new": "천주교 서울대교구",
+      "anchor": "명동"
+    },
+    {
+      "kind": "state",
+      "id": "S16",
+      "old": "수서강남협약도시",
+      "new": "전국민주노동조합총연맹",
+      "anchor": "시청"
+    },
+    {
+      "kind": "corporate-house",
+      "id": "HC01",
+      "old": "삼성전자",
+      "new": "여의도전산가",
+      "anchor": "여의도"
+    },
+    {
+      "kind": "corporate-house",
+      "id": "HC03",
+      "old": "LG생활건강",
+      "new": "마곡생명가",
+      "anchor": "마곡"
+    },
+    {
+      "kind": "corporate-house",
+      "id": "HC04",
+      "old": "SK에너지",
+      "new": "뚝섬열원가",
+      "anchor": "뚝섬"
+    },
+    {
+      "kind": "corporate-house",
+      "id": "HC05",
+      "old": "북문지식원",
+      "new": "북한산보국문기록가",
+      "anchor": "북한산보국문"
+    },
+    {
+      "kind": "corporate-house",
+      "id": "HC06",
+      "old": "쿠팡",
+      "new": "노량진배달가",
+      "anchor": "노량진"
+    },
+    {
+      "kind": "corporate-house",
+      "id": "HC07",
+      "old": "포스코",
+      "new": "구로합금가",
+      "anchor": "구로"
+    },
+    {
+      "kind": "corporate-house",
+      "id": "HC08",
+      "old": "한화에어로스페이스",
+      "new": "창동방호가",
+      "anchor": "창동"
+    },
+    {
+      "kind": "corporate-house",
+      "id": "HC09",
+      "old": "롯데쇼핑",
+      "new": "서울역재고가",
+      "anchor": "서울역"
+    },
+    {
+      "kind": "corporate-house",
+      "id": "HC10",
+      "old": "CJ제일제당",
+      "new": "마곡종자가",
+      "anchor": "마곡"
+    },
+    {
+      "kind": "corporate-house",
+      "id": "HC11",
+      "old": "CJ대한통운",
+      "new": "용산호송가",
+      "anchor": "용산"
+    },
+    {
+      "kind": "corporate-house",
+      "id": "HC12",
+      "old": "현대중공업",
+      "new": "금천구청중기가",
+      "anchor": "금천구청"
+    },
+    {
+      "kind": "corporate-house",
+      "id": "HC13",
+      "old": "HD현대건설",
+      "new": "수서건설가",
+      "anchor": "수서"
+    },
+    {
+      "kind": "corporate-house",
+      "id": "HC14",
+      "old": "신한지주",
+      "new": "여의도장부가",
+      "anchor": "여의도"
+    },
+    {
+      "kind": "corporate-house",
+      "id": "HC15",
+      "old": "네이버",
+      "new": "디지털미디어시티색인가",
+      "anchor": "디지털미디어시티"
+    },
+    {
+      "kind": "corporate-house",
+      "id": "HC16",
+      "old": "KT",
+      "new": "용산교환가",
+      "anchor": "용산"
+    },
+    {
+      "kind": "corporate-house",
+      "id": "HC17",
+      "old": "LG에너지솔루션",
+      "new": "구로디지털단지전지가",
+      "anchor": "구로디지털단지"
+    },
+    {
+      "kind": "corporate-house",
+      "id": "HC18",
+      "old": "HMM",
+      "new": "용산선박가",
+      "anchor": "용산"
+    },
+    {
+      "kind": "corporate-house",
+      "id": "HC19",
+      "old": "호텔신라",
+      "new": "동대입구객사가",
+      "anchor": "동대입구"
+    },
+    {
+      "kind": "corporate-house",
+      "id": "HC20",
+      "old": "HYBE",
+      "new": "디지털미디어시티공연가",
+      "anchor": "디지털미디어시티"
+    },
+    {
+      "kind": "corporate-house",
+      "id": "HC21",
+      "old": "카카오",
+      "new": "디지털미디어시티결제가",
+      "anchor": "디지털미디어시티"
+    },
+    {
+      "kind": "corporate-house",
+      "id": "HC22",
+      "old": "테슬라코리아",
+      "new": "마곡시험선가",
+      "anchor": "마곡"
+    },
+    {
+      "kind": "civic-house",
+      "id": "HP01",
+      "old": "아리수수문가",
+      "new": "영등포수문가",
+      "anchor": "영등포"
+    },
+    {
+      "kind": "civic-house",
+      "id": "HP02",
+      "old": "환승선로문",
+      "new": "용산선로문",
+      "anchor": "용산"
+    },
+    {
+      "kind": "civic-house",
+      "id": "HP03",
+      "old": "공동의료원가",
+      "new": "청량리의료원가",
+      "anchor": "청량리"
+    },
+    {
+      "kind": "civic-house",
+      "id": "HP04",
+      "old": "도성기록법가",
+      "new": "서울역기록법가",
+      "anchor": "서울역"
+    },
+    {
+      "kind": "civic-house",
+      "id": "HP05",
+      "old": "북산귀환회",
+      "new": "북한산보국문귀환회",
+      "anchor": "북한산보국문"
+    },
+    {
+      "kind": "civic-house",
+      "id": "HP06",
+      "old": "약령치유문",
+      "new": "제기동치유문",
+      "anchor": "제기동"
+    },
+    {
+      "kind": "civic-house",
+      "id": "HP07",
+      "old": "한강교량공회",
+      "new": "한강진교량공회",
+      "anchor": "한강진"
+    },
+    {
+      "kind": "civic-house",
+      "id": "HP08",
+      "old": "시장냉동상단",
+      "new": "노량진냉동상단",
+      "anchor": "노량진"
+    },
+    {
+      "kind": "civic-house",
+      "id": "HP09",
+      "old": "데이터신탁가",
+      "new": "디지털미디어시티신탁가",
+      "anchor": "디지털미디어시티"
+    },
+    {
+      "kind": "civic-house",
+      "id": "HP10",
+      "old": "외교통역문",
+      "new": "이태원통역문",
+      "anchor": "이태원"
+    },
+    {
+      "kind": "external-theater",
+      "id": "XT01",
+      "old": "임진관문전구",
+      "new": "임진강관문전구",
+      "anchor": "임진강"
+    },
+    {
+      "kind": "external-theater",
+      "id": "XT03",
+      "old": "해협삼로전구",
+      "new": "대한해협전구",
+      "anchor": "대한해협"
+    },
+    {
+      "kind": "external-theater",
+      "id": "XT04",
+      "old": "두만극동전구",
+      "new": "두만강극동전구",
+      "anchor": "두만강"
+    },
+    {
+      "kind": "external-theater",
+      "id": "XT05",
+      "old": "원양신탁전구",
+      "new": "인천신탁전구",
+      "anchor": "인천"
+    }
   ],
   "pattern_replacements": [
-    { "kind": "legacy-place", "old": "서울역 도성축", "pattern": "서울역 도성축", "new": "서울역축", "anchor": "서울역" },
-    { "kind": "legacy-place", "old": "제기동 약령시장", "pattern": "제기동 약령시장", "new": "제기동시장", "anchor": "제기동" },
-    { "kind": "legacy-place", "old": "노량진남관", "pattern": "노량진남관", "new": "노량진", "anchor": "노량진" },
-    { "kind": "legacy-place", "old": "뚝도", "pattern": "(?<![가-힣])뚝도", "new": "뚝섬", "anchor": "뚝섬" },
-    { "kind": "legacy-place", "old": "북산", "pattern": "(?<![가-힣])북산", "new": "북한산보국문", "anchor": "북한산보국문" },
-    { "kind": "legacy-place", "old": "약령", "pattern": "(?<![가-힣])(?<!대구 )약령", "new": "제기동", "anchor": "제기동" },
-    { "kind": "legacy-place", "old": "도성", "pattern": "(?<![가-힣])도성", "new": "서울역", "anchor": "서울역" },
-    { "kind": "legacy-place", "old": "남관", "pattern": "(?<![가-힣])남관", "new": "노량진", "anchor": "노량진" },
-    { "kind": "legacy-place", "old": "여의", "pattern": "(?<![가-힣])여의(?=(?:의|에서|로|와|가|는|를|권|축|[·\\s-]))", "new": "여의도", "anchor": "여의도" },
-    { "kind": "legacy-place", "old": "아차", "pattern": "(?<![가-힣])아차(?=(?:의|에서|로|와|가|는|를|권|축|능선|관문|[·\\s-]))", "new": "아차산", "anchor": "아차산" },
-    { "kind": "legacy-place", "old": "서남", "pattern": "(?<![가-힣])서남(?=(?:의|에서|로|와|은|를|규격|먼지|경비|제작|[·-]))", "new": "구로", "anchor": "구로" }
+    {
+      "kind": "state",
+      "id": "S11",
+      "old": "시험승계방",
+      "pattern": "(?<!「)시험승계방",
+      "new": "삼성그룹",
+      "anchor": "강남"
+    },
+    {
+      "kind": "state",
+      "id": "S03",
+      "old": "인가평의회",
+      "pattern": "(?<!「)인가평의회",
+      "new": "현대자동차주식회사",
+      "anchor": "양재"
+    },
+    {
+      "kind": "state",
+      "id": "S15",
+      "old": "식량인준국",
+      "pattern": "(?<!「)식량인준국",
+      "new": "천주교 서울대교구",
+      "anchor": "명동"
+    },
+    {
+      "kind": "state",
+      "id": "S16",
+      "old": "보호표준시",
+      "pattern": "(?<!「)보호표준시",
+      "new": "전국민주노동조합총연맹",
+      "anchor": "시청"
+    },
+    {
+      "kind": "state",
+      "id": "S04",
+      "old": "부품헌장",
+      "pattern": "(?<!「)부품헌장",
+      "new": "대한예수교장로회",
+      "anchor": "삼성"
+    },
+    {
+      "kind": "state",
+      "id": "S06",
+      "old": "인준기록정",
+      "pattern": "(?<!「)인준기록정",
+      "new": "대한민국정부",
+      "anchor": "광화문"
+    },
+    {
+      "kind": "state",
+      "id": "S08",
+      "old": "결제상회",
+      "pattern": "(?<!「)결제상회",
+      "new": "원불교",
+      "anchor": "흑석"
+    },
+    {
+      "kind": "state",
+      "id": "S09",
+      "old": "교차검증방송",
+      "pattern": "(?<!「)교차검증방송",
+      "new": "전국경제인연합회",
+      "anchor": "여의도"
+    },
+    {
+      "kind": "state",
+      "id": "S10",
+      "old": "명부시민맹",
+      "pattern": "(?<!「)명부시민맹",
+      "new": "대한불교조계종",
+      "anchor": "안국"
+    },
+    {
+      "kind": "state",
+      "id": "S01",
+      "pattern": "(?<!「)여의신정수문정부",
+      "new": "영등포수문정부",
+      "anchor": "영등포"
+    },
+    {
+      "kind": "state",
+      "id": "S02",
+      "pattern": "(?<!「)서남제작동맹",
+      "new": "구로제작동맹",
+      "anchor": "구로"
+    },
+    {
+      "kind": "state",
+      "id": "S04",
+      "pattern": "(?<!「)뚝도공방연합",
+      "new": "뚝섬공방연합",
+      "anchor": "뚝섬"
+    },
+    {
+      "kind": "state",
+      "id": "S05",
+      "pattern": "(?<!「)암사고덕상수단",
+      "new": "암사상수단",
+      "anchor": "암사"
+    },
+    {
+      "kind": "state",
+      "id": "S06",
+      "pattern": "(?<!「)도성기록청",
+      "new": "서울역기록청",
+      "anchor": "서울역"
+    },
+    {
+      "kind": "state",
+      "id": "S08",
+      "pattern": "(?<!「)노량진남관상회",
+      "new": "노량진상회",
+      "anchor": "노량진"
+    },
+    {
+      "kind": "state",
+      "id": "S09",
+      "pattern": "(?<!「)상암송신공사",
+      "new": "디지털미디어시티송신공사",
+      "anchor": "디지털미디어시티"
+    },
+    {
+      "kind": "state",
+      "id": "S10",
+      "pattern": "(?<!「)북산피난연맹",
+      "new": "북한산보국문피난연맹",
+      "anchor": "북한산보국문"
+    },
+    {
+      "kind": "state",
+      "id": "S13",
+      "pattern": "(?<!「)약령의정동맹",
+      "new": "제기동의정동맹",
+      "anchor": "제기동"
+    },
+    {
+      "kind": "legacy-place",
+      "old": "서울역 도성축",
+      "pattern": "서울역 도성축",
+      "new": "서울역축",
+      "anchor": "서울역"
+    },
+    {
+      "kind": "legacy-place",
+      "old": "제기동 약령시장",
+      "pattern": "제기동 약령시장",
+      "new": "제기동시장",
+      "anchor": "제기동"
+    },
+    {
+      "kind": "legacy-place",
+      "old": "노량진남관",
+      "pattern": "노량진남관",
+      "new": "노량진",
+      "anchor": "노량진"
+    },
+    {
+      "kind": "legacy-place",
+      "old": "뚝도",
+      "pattern": "(?<![가-힣])뚝도",
+      "new": "뚝섬",
+      "anchor": "뚝섬"
+    },
+    {
+      "kind": "legacy-place",
+      "old": "북산",
+      "pattern": "(?<![가-힣])북산",
+      "new": "북한산보국문",
+      "anchor": "북한산보국문"
+    },
+    {
+      "kind": "legacy-place",
+      "old": "약령",
+      "pattern": "(?<![가-힣])(?<!대구 )(?<!제기동 )(?<!서울 )약령",
+      "new": "제기동",
+      "anchor": "제기동"
+    },
+    {
+      "kind": "legacy-place",
+      "old": "도성",
+      "pattern": "(?<![가-힣])도성",
+      "new": "서울역",
+      "anchor": "서울역"
+    },
+    {
+      "kind": "legacy-place",
+      "old": "남관",
+      "pattern": "(?<![가-힣])남관",
+      "new": "노량진",
+      "anchor": "노량진"
+    },
+    {
+      "kind": "legacy-place",
+      "old": "여의",
+      "pattern": "(?<![가-힣])여의(?=(?:의|에서|로|와|가|는|를|권|축|[·\\s-]))",
+      "new": "여의도",
+      "anchor": "여의도"
+    },
+    {
+      "kind": "legacy-place",
+      "old": "아차",
+      "pattern": "(?<![가-힣])아차(?=(?:의|에서|로|와|가|는|를|권|축|능선|관문|[·\\s-]))",
+      "new": "아차산",
+      "anchor": "아차산"
+    },
+    {
+      "kind": "legacy-place",
+      "old": "서남",
+      "pattern": "(?<![가-힣])서남(?=(?:의|에서|로|와|은|를|규격|먼지|경비|제작|[·-]))",
+      "new": "구로",
+      "anchor": "구로"
+    }
   ],
   "retained": [
-    { "kind": "state", "id": "S03", "name": "마곡연구평의회", "anchor": "마곡" },
-    { "kind": "state", "id": "S07", "name": "용산철도후국", "anchor": "용산" },
-    { "kind": "state", "id": "S11", "name": "창동차륜방", "anchor": "창동" },
-    { "kind": "external-theater", "id": "XT02", "name": "서해곡창전구", "anchor": "서해" }
+    {
+      "kind": "state",
+      "id": "S03",
+      "name": "현대자동차주식회사",
+      "anchor": "양재"
+    },
+    {
+      "kind": "state",
+      "id": "S07",
+      "name": "선로후계정",
+      "anchor": "용산"
+    },
+    {
+      "kind": "state",
+      "id": "S11",
+      "name": "삼성그룹",
+      "anchor": "강남"
+    },
+    {
+      "kind": "external-theater",
+      "id": "XT02",
+      "name": "서해곡창전구",
+      "anchor": "서해"
+    }
   ]
 }
