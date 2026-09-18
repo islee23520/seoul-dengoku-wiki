@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>포트레잇 아트 파이프라인 아카이브 — 생성·검증·수정</title>
+<style>
+:root{
+  --bg:#0e1418; --panel:#151d23; --panel2:#1a242b; --line:#26323a;
+  --tx:#e6e2da; --dim:#8fa3ad; --faint:#5f7480;
+  --gold:#ffd479; --blue:#8ec8ff; --green:#7ee2a8; --red:#ff8f8f; --violet:#c9a8ff;
+  --mono:ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);
+  font-family:ui-sans-serif,system-ui,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+  font-size:15px;line-height:1.65}
+a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+code,.path{font-family:var(--mono);font-size:.88em;color:var(--gold);word-break:break-all}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px 90px}
+header{padding:46px 0 10px;border-bottom:1px solid var(--line);margin-bottom:8px}
+h1{font-size:26px;margin:0 0 6px} h1 .sub{color:var(--dim);font-weight:400;font-size:15px;margin-left:10px}
+.meta{color:var(--faint);font-size:12.5px}
+nav{position:sticky;top:0;background:rgba(14,20,24,.94);backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);z-index:9;padding:10px 0;margin-bottom:34px}
+nav .wrap{padding-bottom:0}
+nav a{color:var(--dim);margin-right:18px;font-size:13.5px}
+nav a:hover{color:var(--gold);text-decoration:none}
+section{margin:54px 0}
+h2{font-size:20px;color:var(--gold);margin:0 0 4px;border-left:4px solid var(--gold);padding-left:12px}
+h2 .en{color:var(--faint);font-size:12px;font-weight:400;margin-left:8px;letter-spacing:.08em}
+h3{font-size:15.5px;color:var(--blue);margin:26px 0 10px}
+.lead{color:var(--dim);margin:6px 0 22px;padding-left:16px}
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.card h4{margin:0 0 8px;font-size:14px;color:var(--gold)}
+.card p{margin:6px 0;color:var(--dim);font-size:13.5px}
+.badge{display:inline-block;font-size:11px;border:1px solid var(--line);border-radius:20px;
+  padding:1px 9px;color:var(--dim);margin:0 4px 4px 0;background:var(--panel2)}
+.badge.b-gold{color:var(--gold);border-color:#4a3d1e}
+.badge.b-blue{color:var(--blue);border-color:#1e3a4a}
+.badge.b-green{color:var(--green);border-color:#1e4a34}
+.badge.b-red{color:var(--red);border-color:#4a1e1e}
+.badge.b-violet{color:var(--violet);border-color:#3a2a4a}
+
+/* ── 메인 플로우 ── */
+.flow{display:flex;flex-wrap:wrap;gap:0;align-items:stretch;margin:10px 0 6px}
+.fnode{flex:1 1 150px;min-width:150px;background:var(--panel);border:1px solid var(--line);
+  border-radius:10px;padding:12px 12px 10px;position:relative;margin-right:26px}
+.fnode:last-child{margin-right:0}
+.fnode::after{content:'▶';position:absolute;right:-21px;top:50%;transform:translateY(-50%);
+  color:var(--faint);font-size:13px}
+.fnode:last-child::after{display:none}
+.fnode .tag{font-size:10.5px;letter-spacing:.06em;color:var(--faint);text-transform:uppercase}
+.fnode .nm{font-size:14px;font-weight:600;margin:2px 0 4px}
+.fnode .ds{font-size:12px;color:var(--dim);line-height:1.5}
+.fnode.src{border-color:#4a3d1e}.fnode.src .nm{color:var(--gold)}
+.fnode.stage{border-color:#1e3a4a}.fnode.stage .nm{color:var(--blue)}
+.fnode.gate{border-color:#4a1e1e}.fnode.gate .nm{color:var(--red)}
+.fnode.rt{border-color:#1e4a34}.fnode.rt .nm{color:var(--green)}
+.fnode .lock{position:absolute;top:10px;right:10px;font-size:11px;color:var(--red)}
+.flow-note{color:var(--faint);font-size:12.5px;margin-top:10px}
+
+/* ── 수정 루프 ── */
+.loop{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin-top:12px}
+.step{background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:11px 13px;position:relative}
+.step .no{font-family:var(--mono);font-size:11px;color:var(--violet)}
+.step .nm{font-size:13.5px;font-weight:600;margin:1px 0 3px}
+.step .ds{font-size:12px;color:var(--dim)}
+.loop-arrow{text-align:center;color:var(--faint);font-size:16px;margin:2px 0}
+.fail-back{margin-top:14px;padding:10px 14px;border:1px dashed #4a1e1e;border-radius:9px;color:var(--red);font-size:13px;background:rgba(255,143,143,.05)}
+
+/* ── 표 ── */
+table{border-collapse:collapse;width:100%;font-size:13px;margin-top:10px;background:var(--panel)}
+th,td{border:1px solid var(--line);padding:7px 11px;text-align:left;vertical-align:top}
+th{color:#9fb3bd;background:var(--panel2);font-weight:600;white-space:nowrap}
+td.dim{color:var(--dim)} td b{color:var(--gold);font-weight:600}
+tr.pass td:first-child{border-left:3px solid var(--green)}
+tr.fail td:first-child{border-left:3px solid var(--red)}
+
+/* ── 슬롯 그리드 ── */
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:8px;margin-top:12px}
+.slot{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:8px 11px;font-size:12.5px}
+.slot .z{font-family:var(--mono);color:var(--faint);font-size:10.5px;float:right}
+.slot .nm{font-family:var(--mono);color:var(--blue);font-weight:600}
+.slot .rl{color:var(--dim);font-size:11.5px;margin-top:2px}
+.slot.male-only{border-color:#3a2a4a}
+.slot.eye{border-color:#1e3a4a}
+
+/* ── 이중 게이트 ── */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:800px){.duo{grid-template-columns:1fr}}
+.duo .card h4{font-size:15px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:13px;margin-top:8px}
+.kv dt{color:var(--faint);white-space:nowrap}.kv dd{margin:0;color:var(--tx)}
+footer{border-top:1px solid var(--line);margin-top:70px;padding-top:18px;color:var(--faint);font-size:12px}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a href="#flow">전체 플로우</a><a href="#gen">① 생성 규칙</a><a href="#verify">② 검증</a>
+  <a href="#repair">③ 수정 루프</a><a href="#status">현황·사례</a><a href="#sources">원전</a>
+</div></nav>
+
+<div class="wrap">
+<header>
+  <h1>포트레잇 아트 파이프라인 아카이브<span class="sub">생성 규칙 → 검증 → 수정</span></h1>
+  <div class="meta">2026-09-18 편찬 · 근거: Tool/art/portrait/{QUALITY-GATE, MATCH-TARGET, README}.md · Design/potrait-generator/CONTRACTS.md · .omo/plans · .omo/evidence 게이트 판정 실태 · 원전이 항상 우선</div>
+</header>
+
+<!-- ══════════════ 전체 플로우 ══════════════ -->
+<section id="flow">
+  <h2>전체 파이프라인<span class="en">END-TO-END</span></h2>
+  <p class="lead">불변 기준원본에서 출발해 3단계 저작 → 4개 게이트 → 런타임 합성으로 이어지고, 어디서든 FAIL이 나면 수정 루프가 돈다.</p>
+
+  <object type="image/svg+xml" data="pipeline-archive.svg" style="width:100%;height:auto;display:block" aria-label="포트레잇 아트 파이프라인 다이어그램"></object>
+  <p class="flow-note">다이어그램 단독 파일: <span class="path">Design/potrait-generator/pipeline-archive.svg</span> · 게이트웨이 순서 1→2→3은 <b style="color:var(--red)">영구 잠금</b>(오너 결정 2026-09-15) — 우회 불가. 각 단계는 수치 게이트와 예술 게이트를 <b>별도로</b> 통과해야 한다.</p>
+
+  <div class="duo" style="margin-top:20px">
+    <div class="card"><h4>📐 수치 게이트</h4>
+      <dl class="kv"><dt>대상</dt><dd>치수 · 앵커 · 알파 · 커버리지 · 슬롯 수 · 공통 어깨 · 보존 · z순서</dd>
+      <dt>방법</dt><dd>SHA-256 동결(freeze) 후 픽셀·구조 측정</dd>
+      <dt>한계</dt><dd>수치 0-delta는 비전 통과가 아님</dd></dl></div>
+    <div class="card"><h4>🎨 예술 품질 게이트 Q01–Q10</h4>
+      <dl class="kv"><dt>대상</dt><dd>선 위계·모발·볼륨·눈·재질·광·위계·마감·해부·합성 연속성</dd>
+      <dt>방법</dt><dd>리드가 네이티브 스케일로 직접 육안 검사 (검·회·백 3배경 + 오클루더 토글)</dd>
+      <dt>판정</dt><dd>PASS / FAIL / NOT VERIFIED — 평균·전역점수 상쇄 불가</dd></dl></div>
+  </div>
+</section>
+
+<!-- ══════════════ ① 생성 ══════════════ -->
+<section id="gen">
+  <h2>① 생성 규칙<span class="en">GENERATION</span></h2>
+  <p class="lead">"무엇을 어떻게 그리는가" — 슬롯 문법, 관계 계약, 단계 순서, 금지 목록.</p>
+
+  <div class="grid g3">
+    <div class="card"><h4>기준 원본 (immutable)</h4>
+      <p>매칭 타깃 <span class="path">Tool/art/portrait/original/target.png</span> — 모든 불투명 픽셀이 정확히 하나의 의미 영역 소유. 경계는 <b>그려진 선</b>을 따른다(헥스·컨벡스·사각 금지). 바닥 참조 <span class="path">guide-bust.png</span>(동일 SHA) 이하 렌더링은 즉시 기각.</p></div>
+    <div class="card"><h4>변형 계약</h4>
+      <p><b>슬롯당 3변형</b> × 23슬롯 × 2성별. 2026-09-17 오너 결정으로 기존 10에서 축소(게이트웨이 검증 가속). 리컬러 10장은 10개 genuine 변형이 아니다.</p></div>
+    <div class="card"><h4>CK2 문법 참조 한계</h4>
+      <p>애니메 페이스 레이어 합성은 <b>문법 참조만</b>. mod PNG/DDS 반입 금지, IP·모드명 외부 유출 금지(ULW 브리프 2026-09-12). Unity 산출물은 합성 PNG/아틀라스만 — 메시 트랙과 무관.</p></div>
+  </div>
+
+  <h3>23 슬롯 체계 (z 0 → 22)</h3>
+  <div class="slots">
+    <div class="slot"><span class="z">z0</span><div class="nm">bg</div><div class="rl">배경 필드·색 일관</div></div>
+    <div class="slot"><span class="z">z1</span><div class="nm">clothes_back</div><div class="rl">후면 의상 실루엣·심도</div></div>
+    <div class="slot"><span class="z">z2</span><div class="nm">headgear_back</div><div class="rl">후면 장식·은면 지원</div></div>
+    <div class="slot"><span class="z">z3</span><div class="nm">hair_back</div><div class="rl">후면 모발·볼륨·lock 기반</div></div>
+    <div class="slot male-only"><span class="z">z4</span><div class="nm">beard_back</div><div class="rl">남성 전용 (sex-gated)</div></div>
+    <div class="slot"><span class="z">z5</span><div class="nm">face_base</div><div class="rl">피부 기반·컴패니언 호스팅 ★정본</div></div>
+    <div class="slot"><span class="z">z6</span><div class="nm">neck</div><div class="rl">face_base 호스팅 탈착식</div></div>
+    <div class="slot"><span class="z">z7</span><div class="nm">cheeks</div><div class="rl">〃 볼 음영·홍조</div></div>
+    <div class="slot"><span class="z">z8</span><div class="nm">chin</div><div class="rl">〃 턱 윤곽</div></div>
+    <div class="slot"><span class="z">z9</span><div class="nm">mouth</div><div class="rl">입술 윤곽·표정</div></div>
+    <div class="slot"><span class="z">z10</span><div class="nm">nose</div><div class="rl">콧대 섀도·중앙 앵커</div></div>
+    <div class="slot eye"><span class="z">z11</span><div class="nm">eyes_white</div><div class="rl"> almond 소켓·포함</div></div>
+    <div class="slot eye"><span class="z">z12</span><div class="nm">eyes_color</div><div class="rl">⊂ eyes_white (유출 금지)</div></div>
+    <div class="slot eye"><span class="z">z13</span><div class="nm">eyes_shape</div><div class="rl">white+color 둘 다 오클루전</div></div>
+    <div class="slot"><span class="z">z14</span><div class="nm">ears</div><div class="rl">귀 형태·위치</div></div>
+    <div class="slot"><span class="z">z15</span><div class="nm">clothes</div><div class="rl">주 의상·재질+심</div></div>
+    <div class="slot"><span class="z">z16</span><div class="nm">headgear_mid</div><div class="rl">중간 레이어 컴패니언</div></div>
+    <div class="slot"><span class="z">z17</span><div class="nm">clothes_front</div><div class="rl">전면 디테일·주름</div></div>
+    <div class="slot male-only"><span class="z">z18</span><div class="nm">beard</div><div class="rl">남성 전용 (옵션)</div></div>
+    <div class="slot"><span class="z">z19</span><div class="nm">hair</div><div class="rl">전면 모발·lock 위계</div></div>
+    <div class="slot"><span class="z">z20</span><div class="nm">headgear</div><div class="rl">주 장식 실루엣</div></div>
+    <div class="slot"><span class="z">z21</span><div class="nm">acc_eye</div><div class="rl">안경·오버레이</div></div>
+    <div class="slot"><span class="z">z22</span><div class="nm">frame</div><div class="rl">장식 프레임</div></div>
+  </div>
+  <p style="color:var(--dim);font-size:12.5px;margin-top:10px">런타임 규칙: <b>상위 슬롯 알파 = 하위 오클루전 마스크</b> · hair.hidden은 headgear 알파 아래(headgear가 hair를 뽀개지 않음) · 눈코입은 face_base에서 자르지 않고 조합 마스크로 교체.</p>
+
+  <h3>생성 금지 목록</h3>
+  <div class="card" style="border-color:#4a1e1e">
+    <p style="color:var(--tx)">타깃을 한 슬롯에 통째로 숨기고 22레이어 주장 · 눈코입에 기하학적 구멍 · RGB/HSV 플러드필(색 클러스터≠잉크) · 수치 0-delta로 비전 통과 주장 · CLI 모드명만으로 스테이지 통과 · 은면 미저작 픽셀의 "추출됨" 라벨 · 오클루더 없는 hidden 품질 주장 · 리컬러/수정복의 genuine 변형 주장</p>
+  </div>
+</section>
+
+<!-- ══════════════ ② 검증 ══════════════ -->
+<section id="verify">
+  <h2>② 검증<span class="en">VERIFICATION</span></h2>
+  <p class="lead">"어떻게 맞는지 확인하는가" — 이중 게이트, 리뷰 절차, 체크포인트, 검증 인프라.</p>
+
+  <h3>예술 품질 게이트 Q01–Q10</h3>
+  <table>
+    <tr><th>항목</th><th>통과 기준 (참조가 확립하는 것)</th><th>기각 사례</th></tr>
+    <tr><td><b>Q01</b> 선 위계</td><td class="dim">일관된 실루엣·눈꺼풀 스트로크, 미세 내부 심, 의도된 굵기 변화</td><td class="dim">균일 벡터 외곽, 다북눈썹, 끊긴 윤곽</td></tr>
+    <tr><td><b>Q02</b> 모발 구조</td><td class="dim">겹침 lock, 방향성 뿌리, 비대칭 실루엣, 절제된 광 그룹</td><td class="dim">스무스 헬멧, 반복 스트랜드 벽지</td></tr>
+    <tr><td><b>Q03</b> 얼굴 볼륨</td><td class="dim">3/4 원근, 코·귀 평면, 가독 턱·목 오클루전 섀도</td><td class="dim">마네킹 조명, 슬롯 교체 시 얼굴 시프트</td></tr>
+    <tr><td><b>Q04</b> 눈·표정</td><td class="dim">짙은 상안검, 가독 동공, 절제된 아이라리시 하이라이트</td><td class="dim">스티커 홍채, 흐르는 동공, 눈꺼풀 넘는 홍채</td></tr>
+    <tr><td><b>Q05</b> 재질 구분</td><td class="dim">무광 피부·모발 광·직물·스트랩이 뚜렷 구분</td><td class="dim">플라스틱 피부, 균일 매끄러운 천</td></tr>
+    <tr><td><b>Q06</b> 광·팔레트</td><td class="dim">차콜·청회색+오크레, 일관 광원, 강한 국부 오클루전</td><td class="dim">창백한 저콘트라스트, 충돌 광원</td></tr>
+    <tr><td><b>Q07</b> 디테일 위계</td><td class="dim">눈·얼굴이 초점, 나머지는 보조</td><td class="dim">균일 밀도, 얼굴만 정밀한 빈 옷</td></tr>
+    <tr><td><b>Q08</b> 마감</td><td class="dim">자연 사이즈 깔끔 외곽·strand 엣지, 배경 부착 없음</td><td class="dim">톱니 컷, 매트 프린지, 불투명 배경 픽셀</td></tr>
+    <tr><td><b>Q09</b> 해부·핏</td><td class="dim">머리·목·어깨·의상이 한 착용자 기술</td><td class="dim">중간점 어깨, 공유 마스크로 잘린 심</td></tr>
+    <tr><td><b>Q10</b> 합성 연속성</td><td class="dim">모든 가시 전환이 한 장의 그림처럼</td><td class="dim">교체 시 품질 하락, 인덱스 불일치 조합</td></tr>
+  </table>
+
+  <h3>리뷰 절차 (5단계)</h3>
+  <div class="loop">
+    <div class="step"><div class="no">R1</div><div class="nm">동결</div><div class="ds">참조·후보·기여 레이어·레시피/라이브러리 SHA 기록, 캐릭터 ID·성별·변형 ID·z순서</div></div>
+    <div class="step"><div class="no">R2</div><div class="nm">네이티브 비교</div><div class="ds">동일 픽셀 스케일, 50%+UI 크기 전신, 얼굴/모발/깃 크롭 100%. 뷰어 자동축소 미인정</div></div>
+    <div class="step"><div class="no">R3</div><div class="nm">분리·은면 검사</div><div class="ds">투명 파트를 검·회·백 배경, 오클루더 토글로 은면 노출</div></div>
+    <div class="step"><div class="no">R4</div><div class="nm">행별 기록</div><div class="ds">Q01–Q10마다 PASS/FAIL/NOT VERIFIED + 크롭 경로 + 관찰 + 리뷰어·시간</div></div>
+    <div class="step"><div class="no">R5</div><div class="nm">수치 분리 기록</div><div class="ds">수치 게이트 결과를 예술 판정과 별도 보관 — 상쇄 금지</div></div>
+  </div>
+  <p class="flow-note">리드가 직접 이미지를 열어 봐야 한다 — 워커 추천·연락시트 존재·테스트 통과·프로바이더명은 시각 PASS가 아니다. 미증거 = NOT VERIFIED.</p>
+
+  <h3>필수 체크포인트 GQ1–GQ4</h3>
+  <table>
+    <tr><th>체크포인트</th><th>시점</th><th>요건</th></tr>
+    <tr><td><b>GQ1</b> 파일럿 스타일 락</td><td class="dim">10배량 생산 전</td><td class="dim">완전 파일럿+초기 슬롯을 참조와 비교. 바닥 미달 파일럿은 확장 전 재작업</td></tr>
+    <tr><td><b>GQ2</b> 변형별 승인</td><td class="dim">변형 확정 시</td><td class="dim">모든 변형의 분리 지원+렌더 결과 검사. 미검토 자산의 라이브러리 진입 금지</td></tr>
+    <tr><td><b>GQ3</b> 교차 조합</td><td class="dim">조합 단계</td><td class="dim">실제 합성·4종 교차·저/고 깃·적대 조합. 카르테시안 전수 주장 금지</td></tr>
+    <tr><td><b>GQ4</b> 캐릭터 인도</td><td class="dim">납품 전</td><td class="dim">실제 Design 도구(데스크톱/모바일) 선택·재현·PNG 검사·ID 바인딩. UI 테스트만으로 불가</td></tr>
+  </table>
+
+  <h3>검증 인프라</h3>
+  <div class="grid g2">
+    <div class="card"><h4>에셋 DB (SQLite SSoT)</h4><p><span class="path">Design/potrait-generator/portrait-assets.sqlite</span> — .omo/evidence 전체 비파괴 스캔, SHA-256 그룹핑, 경로·라이프사이클·스코프 PASS/REJECT/PENDING 영수증. 생성·수정 전 반드시 질의 (재사용 증명 = 경로+SHA+스코프 평가).</p></div>
+    <div class="card"><h4>검증 요청 큐</h4><p><span class="path">.omo/portrait-validation-requests</span> — 콘텐츠 주소 요청 기록 후 dispatch. create는 큐 적재만. 스키마·검증기: portrait-review-record.schema.json + verify-portrait-review.mjs (+바인딩).</p></div>
+  </div>
+</section>
+
+<!-- ══════════════ ③ 수정 ══════════════ -->
+<section id="repair">
+  <h2>③ 수정 루프<span class="en">REPAIR</span></h2>
+  <p class="lead">"틀리면 어떻게 고치는가" — 마스크된 편집·프로바이더 재생성·강제 복원·VERDICT 판정의 닫힌 사이클.</p>
+
+  <div class="loop">
+    <div class="step"><div class="no">01</div><div class="nm">결함 발견</div><div class="ds">VERDICT/진단 크롭에서 결함 정의 (예: envelope 초과, seam 갭)</div></div>
+    <div class="step"><div class="no">02</div><div class="nm">HANDOFF 기술</div><div class="ds">결함 정의·바인딩 envelope·금지사항·품질 바닥 명시</div></div>
+    <div class="step"><div class="no">03</div><div class="nm">입력 동결</div><div class="ds">input-receipt.json — 소스 SHA 기록</div></div>
+    <div class="step"><div class="no">04</div><div class="nm">마스크 가이드</div><div class="ds">edit-alpha0 / edit-white / edit-reference — 편집 가능 영역만 개방</div></div>
+    <div class="step"><div class="no">05</div><div class="nm">프로바이더 생성</div><div class="ds">provider.png (gpt-image-2 등, 호출 수·영수증 기록)</div></div>
+    <div class="step"><div class="no">06</div><div class="nm">등록·배치</div><div class="ds">placement 좌표 지정, 리샘플은 명시된 경우만</div></div>
+    <div class="step"><div class="no">07</div><div class="nm">enforce 강제 복원</div><div class="ds">지정 마스크 외 픽셀을 원본으로 복원 — 보호 픽셀 수치 검증</div></div>
+    <div class="step"><div class="no">08</div><div class="nm">측정·VERDICT</div><div class="ds">measurement-receipt + 체크포인트별 PASS/FAIL 판정</div></div>
+  </div>
+  <div class="fail-back">↻ FAIL → 다음 라운드(02로 복귀) 또는 통합 보류(WITHHELD). 게이트 통과 전까지 frozen basis 대체 금지, 실패 결과의 추출·승격 금지.</div>
+
+  <h3>무결성 원칙</h3>
+  <div class="grid g3">
+    <div class="card"><h4>바이트 복사 복원</h4><p>프로덕션 판 교체는 무리샘플링 없는 바이트 복사 + library.json SHA 재바인딩 (예: 커밋 <span class="path">e9c43d77</span> outfit-off 복원).</p></div>
+    <div class="card"><h4>알파 무결성</h4><p>알파 byte-identical 보존, alpha=0 하 RGB 제로. 결정론적 시도가 색 끌림·고스트를 남기면 기각하고 클린스킨 재페인트로 대체.</p></div>
+    <div class="card"><h4>이미지 절단 금지</h4><p>슬롯 조합은 이미지를 자르지 않는다 — 통합 per-layer clip kernel + slot-relations 마스크로 교체 (커밋 <span class="path">2ba96bb3</span>).</p></div>
+  </div>
+</section>
+
+<!-- ══════════════ 현황 ══════════════ -->
+<section id="status">
+  <h2>현황·실제 사례<span class="en">2026-09-18 조사</span></h2>
+  <table>
+    <tr><th>항목</th><th>상태</th><th>내용</th></tr>
+    <tr class="fail"><td><b>남성 몸통(torso)</b></td><td><span class="badge b-red">FAIL 체인</span></td><td class="dim">torso-only → quality-repair(geometry FAIL, envelope 대비 최대 91px 돌출) → transition(미완) → transition-final(FAIL·통합 보류). 승인된 몸통 판 부재 — 신규 저작·게이트 통과 필요</td></tr>
+    <tr class="fail"><td><b>무눈코입 face_base</b></td><td><span class="badge b-red">원판 유실</span></td><td class="dim">9/16 facebase-strip이 8장 전량 무눈코입화(PASS)했으나 9/17~18 디스크 덮어써으로 유실. 증거·git·LFS 전수 대조에서 acceptance SHA 4종 전부 부재 → 복구 불가</td></tr>
+    <tr class="pass"><td><b>outfit-off 복원</b></td><td><span class="badge b-green">적용됨</span></td><td class="dim">male/female -01 판을 uncropped 바디로 바이트 복원(커밋 e9c43d77). "눈코입 자르지 않음, 마스크로 교체" 원칙 명시. 남성판은 가슴까지(몸통 미포함)</td></tr>
+    <tr class="fail"><td><b>여성 파일럿</b></td><td><span class="badge b-red">GQ1 FAIL</span></td><td class="dim">모발 lock 위계·얼굴 섀도·의상 텍스처가 바닥 미달 — 도입 시점 재평가에서 기각, 재작업 대기. 기존 파일럿 불할인(no grandfathering)</td></tr>
+    <tr><td><b>증거 아카이브</b></td><td><span class="badge b-blue">재편 완료</span></td><td class="dim">.omo/evidence 루트 = male/female × 23슬롯. 합성본(combo/composite) 652장 삭제. 감사 로그 <span class="path">female/_etc/_reorg-log.json</span></td></tr>
+  </table>
+</section>
+
+<!-- ══════════════ 원전 ══════════════ -->
+<section id="sources">
+  <h2>원전 문서 맵<span class="en">SOURCES</span></h2>
+  <table>
+    <tr><th>주제</th><th>원전 경로</th></tr>
+    <tr><td>품질 바닥 · Q01–Q10 · GQ1–GQ4</td><td><span class="path">Tool/art/portrait/QUALITY-GATE.md</span></td></tr>
+    <tr><td>Stage-1 매칭 정의 · 금지</td><td><span class="path">Tool/art/portrait/MATCH-TARGET.md</span></td></tr>
+    <tr><td>슬롯 · 변형 · 관계 · 게이트웨이 계약</td><td><span class="path">Design/potrait-generator/CONTRACTS.md</span></td></tr>
+    <tr><td>슬롯 관계 JSON</td><td><span class="path">Tool/art/portrait/portrait-slot-relations.json</span></td></tr>
+    <tr><td>에셋 DB · 검증 큐 운용</td><td><span class="path">Tool/art/portrait/README.md</span></td></tr>
+    <tr><td>무리샘플 금지 복원 계획</td><td><span class="path">.omo/plans/restore-uncropped-plates-via-masks-20260918.md</span></td></tr>
+    <tr><td>ULW 스코프 · 하드밴</td><td><span class="path">.omo/portrait-anime-ulw-brief.md</span></td></tr>
+    <tr><td>텍스트 아카이브(본 페이지 원고)</td><td><span class="path">.omo/research/portrait-art-pipeline-archive-20260918.md</span></td></tr>
+  </table>
+</section>
+
+<footer>포트레잇 아트 파이프라인 아카이브 · 2026-09-18 · 자립형 정적 페이지(외부 의존 없음) · 허브 경로 <span class="path">/potrait-generator/pipeline-archive.html</span> · 원전 문서가 항상 우선한다</footer>
+</div>
+</body>
+</html>

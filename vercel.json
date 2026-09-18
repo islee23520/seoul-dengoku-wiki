@@ -3,6 +3,14 @@
   "buildCommand": null,
   "rewrites": [
     {
+      "source": "/portrait-generator",
+      "destination": "/potrait-generator/"
+    },
+    {
+      "source": "/portrait-generator/:path*",
+      "destination": "/potrait-generator/:path*"
+    },
+    {
       "source": "/prototype/:path*",
       "destination": "https://character-forge-iota.vercel.app/prototype/:path*"
     },

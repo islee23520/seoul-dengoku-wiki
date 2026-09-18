@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 1020" font-family="ui-sans-serif,system-ui,'Apple SD Gothic Neo','Malgun Gothic',sans-serif">
+<defs>
+<marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L8,4.5 L0,9 z" fill="#5f7480"/></marker>
+<marker id="ah-red" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L8,4.5 L0,9 z" fill="#ff8f8f"/></marker>
+<marker id="ah-green" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L8,4.5 L0,9 z" fill="#7ee2a8"/></marker>
+<marker id="ah-violet" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L8,4.5 L0,9 z" fill="#c9a8ff"/></marker>
+</defs>
+<style>
+.nbox{fill:#151d23;stroke-width:1.5}
+.t{font-weight:700;font-size:14px}
+.s{font-size:11.5px;fill:#8fa3ad}
+.gate{fill:#1a242b;stroke:#4a1e1e}
+.gtxt{font-size:11px;fill:#ff8f8f;font-weight:600}
+.loopbox{fill:#1a242b;stroke:#3a2a4a;stroke-width:1.5}
+.lt{font-weight:700;font-size:13.5px;fill:#e6e2da}
+.ls{font-size:11px;fill:#8fa3ad}
+.arr{stroke:#5f7480;stroke-width:1.6;fill:none}
+</style>
+
+<text x="20" y="30" font-size="19" font-weight="700" fill="#ffd479">포트레잇 아트 파이프라인 — 생성 → 검증 → 수정 전체 구조</text>
+<text x="20" y="52" font-size="11.5" fill="#5f7480">불변 기준원본에서 런타임까지 · 게이트웨이 1→2→3 영구 잠금 · FAIL 시 수정 루프 순환 · 2026-09-18</text>
+
+<!-- ══ 메인 플로우 레인 ══ -->
+<!-- 박스: x=20+206i, w=176, y=88, h=100 -->
+<g>
+<rect class="nbox" x="20" y="88" width="176" height="100" rx="10" stroke="#4a3d1e"/>
+<text class="t" x="108" y="112" text-anchor="middle" fill="#ffd479">기준 원본</text>
+<text class="s" x="108" y="130" text-anchor="middle">target.png · guide-bust</text>
+<text class="s" x="108" y="146" text-anchor="middle">1145×1374 · SHA c3a7e481…</text>
+<text class="s" x="108" y="162" text-anchor="middle">불변 · 무리샘플 금지</text>
+<text class="s" x="108" y="178" text-anchor="middle">품질 바닥의 정의</text>
+
+<rect class="nbox" x="226" y="88" width="176" height="100" rx="10" stroke="#1e3a4a"/>
+<text class="t" x="314" y="112" text-anchor="middle" fill="#8ec8ff">Stage 1 · 분할</text>
+<text class="s" x="314" y="130" text-anchor="middle">잉크 기반 소유권 복원</text>
+<text class="s" x="314" y="146" text-anchor="middle">모든 픽셀 = 1개 의미 영역</text>
+<text class="s" x="314" y="162" text-anchor="middle">z 0→21 합산 = 타깃 RGBA</text>
+<text class="s" x="314" y="178" text-anchor="middle">경계는 그려진 선</text>
+
+<rect class="nbox" x="432" y="88" width="176" height="100" rx="10" stroke="#1e3a4a"/>
+<text class="t" x="520" y="112" text-anchor="middle" fill="#8ec8ff">Stage 2 · 파츠</text>
+<text class="s" x="520" y="130" text-anchor="middle">은면(가려진 면) 저작</text>
+<text class="s" x="520" y="146" text-anchor="middle">성별 적용성 계약</text>
+<text class="s" x="520" y="162" text-anchor="middle">공통 어깨 컨투어 바인딩</text>
+<text class="s" x="520" y="178" text-anchor="middle">슬롯당 3변형 × 23 × 2성</text>
+
+<rect class="nbox" x="638" y="88" width="176" height="100" rx="10" stroke="#1e3a4a"/>
+<text class="t" x="726" y="112" text-anchor="middle" fill="#8ec8ff">Stage 3 · 조합</text>
+<text class="s" x="726" y="130" text-anchor="middle">실제 합성·4종 교차</text>
+<text class="s" x="726" y="146" text-anchor="middle">적대 조합 검증</text>
+<text class="s" x="726" y="162" text-anchor="middle">브라우저 게이트</text>
+<text class="s" x="726" y="178" text-anchor="middle">교체 시 품질 유지(Q10)</text>
+
+<rect class="nbox gate" x="844" y="88" width="176" height="100" rx="10"/>
+<text class="t" x="932" y="112" text-anchor="middle" fill="#ff8f8f">Gate 4 · 큐레이션</text>
+<text class="s" x="932" y="130" text-anchor="middle">통과 828록 카탈로그</text>
+<text class="s" x="932" y="146" text-anchor="middle">프로덕션 선택은</text>
+<text class="s" x="932" y="162" text-anchor="middle">이 안으로 제한</text>
+<text class="s" x="932" y="178" text-anchor="middle">미검토 자산 진입 금지</text>
+
+<rect class="nbox" x="1050" y="88" width="176" height="100" rx="10" stroke="#1e4a34"/>
+<text class="t" x="1138" y="112" text-anchor="middle" fill="#7ee2a8">런타임</text>
+<text class="s" x="1138" y="130" text-anchor="middle">46 슬롯판 + library.json</text>
+<text class="s" x="1138" y="146" text-anchor="middle">SHA 바인딩</text>
+<text class="s" x="1138" y="162" text-anchor="middle">통합 clip kernel 합성</text>
+<text class="s" x="1138" y="178" text-anchor="middle">Unity PNG/아틀라스</text>
+</g>
+
+<!-- 레인 화살표 -->
+<g class="arr">
+<line x1="196" y1="138" x2="222" y2="138" marker-end="url(#ah)"/>
+<line x1="402" y1="138" x2="428" y2="138" marker-end="url(#ah)"/>
+<line x1="608" y1="138" x2="634" y2="138" marker-end="url(#ah)"/>
+<line x1="814" y1="138" x2="840" y2="138" marker-end="url(#ah)"/>
+<line x1="1020" y1="138" x2="1046" y2="138" marker-end="url(#ah)"/>
+</g>
+<text x="108" y="212" text-anchor="middle" font-size="10.5" fill="#ff8f8f">🔒 1→2→3 순서 영구 잠금</text>
+
+<!-- GQ 필수 체크포인트 필 -->
+<g>
+<line x1="211" y1="188" x2="211" y2="222" stroke="#4a1e1e" stroke-dasharray="3 3"/>
+<line x1="417" y1="188" x2="417" y2="222" stroke="#4a1e1e" stroke-dasharray="3 3"/>
+<line x1="623" y1="188" x2="623" y2="222" stroke="#4a1e1e" stroke-dasharray="3 3"/>
+<line x1="829" y1="188" x2="829" y2="222" stroke="#4a1e1e" stroke-dasharray="3 3"/>
+<rect class="gate" x="141" y="222" width="140" height="24" rx="12"/><text class="gtxt" x="211" y="238" text-anchor="middle">GQ1 파일럿 락</text>
+<rect class="gate" x="347" y="222" width="140" height="24" rx="12"/><text class="gtxt" x="417" y="238" text-anchor="middle">GQ2 변형별 승인</text>
+<rect class="gate" x="553" y="222" width="140" height="24" rx="12"/><text class="gtxt" x="623" y="238" text-anchor="middle">GQ3 교차 조합</text>
+<rect class="gate" x="759" y="222" width="140" height="24" rx="12"/><text class="gtxt" x="829" y="238" text-anchor="middle">GQ4 캐릭터 인도</text>
+</g>
+
+<!-- 이중 게이트 브래킷 -->
+<line x1="40" y1="266" x2="1200" y2="266" stroke="#3a2a4a" stroke-width="1.5"/>
+<text x="620" y="288" text-anchor="middle" font-size="12.5" fill="#c9a8ff">모든 전환 = 이중 게이트 ·  📐 수치 게이트(SHA 동결·치수·알파·커버리지) + 🎨 예술 게이트(Q01–Q10 리드 육안 · 검·회·백 3배경) — 별도 통과, 평균 상쇄 불가</text>
+
+<!-- FAIL 진입 (브래킷 → 루프 01) -->
+<path d="M 275 266 L 275 380" stroke="#ff8f8f" stroke-width="1.6" fill="none" stroke-dasharray="6 4" marker-end="url(#ah-red)"/>
+<text x="283" y="330" font-size="11" fill="#ff8f8f">게이트 FAIL → 수정 루프 진입</text>
+
+<!-- ══ 수정 루프 ══ -->
+<text x="1100" y="330" text-anchor="end" font-size="16" font-weight="700" fill="#ffd479">③ 수정 루프 — 게이트 FAIL 시 순환</text>
+
+<!-- 좌열 (내려가며 01→04) -->
+<g>
+<rect class="loopbox" x="150" y="380" width="250" height="86" rx="9"/>
+<text x="275" y="404" text-anchor="middle" class="lt">01 · 결함 발견</text>
+<text x="275" y="424" text-anchor="middle" class="ls">VERDICT · 진단 크롭에서 결함 정의</text>
+<text x="275" y="440" text-anchor="middle" class="ls">(envelope 초과 · seam 갭 · 품질 미달)</text>
+
+<rect class="loopbox" x="150" y="530" width="250" height="86" rx="9"/>
+<text x="275" y="554" text-anchor="middle" class="lt">02 · HANDOFF 기술</text>
+<text x="275" y="574" text-anchor="middle" class="ls">결함 정의 · 바인딩 envelope</text>
+<text x="275" y="590" text-anchor="middle" class="ls">금지사항 · 품질 바닥 명시</text>
+
+<rect class="loopbox" x="150" y="680" width="250" height="86" rx="9"/>
+<text x="275" y="704" text-anchor="middle" class="lt">03 · 입력 동결</text>
+<text x="275" y="724" text-anchor="middle" class="ls">input-receipt.json</text>
+<text x="275" y="740" text-anchor="middle" class="ls">소스 SHA-256 기록</text>
+
+<rect class="loopbox" x="150" y="830" width="250" height="86" rx="9"/>
+<text x="275" y="854" text-anchor="middle" class="lt">04 · 마스크 가이드</text>
+<text x="275" y="874" text-anchor="middle" class="ls">edit-alpha0 · edit-white</text>
+<text x="275" y="890" text-anchor="middle" class="ls">edit-reference — 편집 영역만 개방</text>
+</g>
+
+<!-- 우열 (올라가며 05→08) -->
+<g>
+<rect class="loopbox" x="840" y="830" width="250" height="86" rx="9"/>
+<text x="965" y="854" text-anchor="middle" class="lt">05 · 프로바이더 생성</text>
+<text x="965" y="874" text-anchor="middle" class="ls">gpt-image-2 via CLIProxyAPI 등</text>
+<text x="965" y="890" text-anchor="middle" class="ls">호출 수 · 영수증 기록</text>
+
+<rect class="loopbox" x="840" y="680" width="250" height="86" rx="9"/>
+<text x="965" y="704" text-anchor="middle" class="lt">06 · 등록 · 배치</text>
+<text x="965" y="724" text-anchor="middle" class="ls">placement 좌표 지정</text>
+<text x="965" y="740" text-anchor="middle" class="ls">리샘플은 명시된 경우만 1회</text>
+
+<rect class="loopbox" x="840" y="530" width="250" height="86" rx="9"/>
+<text x="965" y="554" text-anchor="middle" class="lt">07 · enforce 강제 복원</text>
+<text x="965" y="574" text-anchor="middle" class="ls">지정 마스크 외 픽셀 = 원본 복원</text>
+<text x="965" y="590" text-anchor="middle" class="ls">보호 픽셀 수치 검증</text>
+
+<rect class="loopbox" x="840" y="380" width="250" height="86" rx="9"/>
+<text x="965" y="404" text-anchor="middle" class="lt">08 · 측정 · VERDICT</text>
+<text x="965" y="424" text-anchor="middle" class="ls">measurement-receipt.json</text>
+<text x="965" y="440" text-anchor="middle" class="ls">체크포인트별 PASS / FAIL 판정</text>
+</g>
+
+<!-- 루프 화살표 -->
+<g stroke="#c9a8ff" stroke-width="1.6" fill="none">
+<line x1="275" y1="466" x2="275" y2="524" marker-end="url(#ah-violet)"/>
+<line x1="275" y1="616" x2="275" y2="674" marker-end="url(#ah-violet)"/>
+<line x1="275" y1="766" x2="275" y2="824" marker-end="url(#ah-violet)"/>
+<line x1="965" y1="830" x2="965" y2="772" marker-end="url(#ah-violet)"/>
+<line x1="965" y1="680" x2="965" y2="622" marker-end="url(#ah-violet)"/>
+<line x1="965" y1="530" x2="965" y2="472" marker-end="url(#ah-violet)"/>
+<!-- 바텀 커넥터 04→05 -->
+<path d="M 275 916 L 275 948 L 965 948 L 965 922" marker-end="url(#ah-violet)"/>
+<!-- 리턴 08→01 -->
+<path d="M 965 380 L 965 356 L 275 356 L 275 374" marker-end="url(#ah-violet)"/>
+</g>
+<text x="620" y="351" text-anchor="middle" font-size="11.5" fill="#c9a8ff">FAIL → 다음 라운드 ↻</text>
+<text x="620" y="943" text-anchor="middle" font-size="11.5" fill="#c9a8ff">04 → 05</text>
+
+<!-- PASS 탈출 -->
+<path d="M 1090 423 L 1180 423 L 1180 300" stroke="#7ee2a8" stroke-width="1.6" fill="none" marker-end="url(#ah-green)"/>
+<text x="1188" y="372" font-size="11" fill="#7ee2a8" transform="rotate(-90 1188 372)" text-anchor="middle">PASS → 재검증</text>
+
+<!-- 중앙 주석 -->
+<text x="620" y="600" text-anchor="middle" font-size="42" fill="#3a2a4a">↻</text>
+<text x="620" y="636" text-anchor="middle" font-size="12" fill="#8fa3ad">실패 결과의 추출·승격 금지</text>
+<text x="620" y="654" text-anchor="middle" font-size="12" fill="#8fa3ad">frozen basis 게이트 통과 전 대체 금지</text>
+<text x="620" y="672" text-anchor="middle" font-size="12" fill="#8fa3ad">수치·예술 판정은 항상 분리 기록</text>
+
+<!-- ══ 범례 ══ -->
+<g font-size="11.5">
+<rect x="40" y="978" width="14" height="14" rx="3" fill="#151d23" stroke="#4a3d1e"/><text x="60" y="990" fill="#8fa3ad">기준 원본·계약</text>
+<rect x="170" y="978" width="14" height="14" rx="3" fill="#151d23" stroke="#1e3a4a"/><text x="190" y="990" fill="#8fa3ad">생성 스테이지</text>
+<rect x="300" y="978" width="14" height="14" rx="3" fill="#1a242b" stroke="#4a1e1e"/><text x="320" y="990" fill="#8fa3ad">게이트·체크포인트</text>
+<rect x="450" y="978" width="14" height="14" rx="3" fill="#151d23" stroke="#1e4a34"/><text x="470" y="990" fill="#8fa3ad">런타임</text>
+<rect x="550" y="978" width="14" height="14" rx="3" fill="#1a242b" stroke="#3a2a4a"/><text x="570" y="990" fill="#8fa3ad">수정 루프</text>
+<text x="680" y="990" fill="#5f7480">원전: QUALITY-GATE.md · CONTRACTS.md · MATCH-TARGET.md — 원전이 항상 우선</text>
+</g>
+</svg>
