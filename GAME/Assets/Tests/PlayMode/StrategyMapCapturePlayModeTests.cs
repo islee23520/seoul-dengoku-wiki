@@ -41,6 +41,8 @@ namespace Janseon.Foundation.Tests
             List<Mesh> meshes = LoadChunkAssets<Mesh>("t:Mesh");
             List<Texture2D> textures = LoadChunkAssets<Texture2D>("t:Texture2D");
             List<TextAsset> buildingBins = LoadChunkAssets<TextAsset>("t:TextAsset", "buildings-");
+            string landmarksManifest = LoadTextAsset("landmarks-manifest");
+            List<GameObject> landmarkPrefabs = LoadLandmarkPrefabs();
             Assert.That(meshes.Count, Is.EqualTo(9), "nine baked chunk meshes expected");
             Assert.That(textures.Count, Is.EqualTo(9), "nine baked chunk textures expected");
             Assert.That(buildingBins.Count, Is.EqualTo(9), "nine building binaries expected");
@@ -69,6 +71,11 @@ namespace Janseon.Foundation.Tests
                 Assert.That(presenter.Buildings.TotalInstances, Is.GreaterThan(250_000),
                     "atlas-scale building count (benchmark: 267k)");
                 Assert.That(presenter.Buildings.ChunkCount, Is.EqualTo(9));
+                if (landmarkPrefabs.Count > 0 && !string.IsNullOrEmpty(landmarksManifest))
+                {
+                    var landmarks = presenter.AttachLandmarks(landmarkPrefabs, landmarksManifest);
+                    Assert.That(landmarks.PlacedCount, Is.GreaterThanOrEqualTo(14), "14 landmarks placed");
+                }
 
                 // Captures first, while the camera sits at its default full-map framing.
                 yield return null; // one frame so LateUpdate submits the instanced building draws
@@ -169,6 +176,30 @@ namespace Janseon.Foundation.Tests
             }
 #endif
             return byPath.Values.ToList();
+        }
+
+        private static string LoadTextAsset(string name)
+        {
+#if UNITY_EDITOR
+            var asset = AssetDatabase.LoadAssetAtPath<TextAsset>($"{BakedDir}/Landmarks/{name}.json");
+            return asset != null ? asset.text : null;
+#else
+            return null;
+#endif
+        }
+
+        private static List<GameObject> LoadLandmarkPrefabs()
+        {
+            var prefabs = new List<GameObject>();
+#if UNITY_EDITOR
+            foreach (string guid in AssetDatabase.FindAssets("t:ModelImporter", new[] { $"{BakedDir}/Landmarks" }))
+            {
+                string assetPath = AssetDatabase.GUIDToAssetPath(guid);
+                if (!assetPath.EndsWith(".obj")) continue;
+                prefabs.Add(AssetDatabase.LoadAssetAtPath<GameObject>(assetPath));
+            }
+#endif
+            return prefabs;
         }
 
         /// <summary>Writes the render attempt as diagnostic PNG evidence; no pixel-content assert (see class doc).</summary>

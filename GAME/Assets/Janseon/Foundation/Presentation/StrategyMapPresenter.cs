@@ -209,6 +209,15 @@ namespace Janseon.Foundation.Presentation
             SetWeather(StrategyMapWeatherKind.Day);
         }
 
+        public StrategyMapLandmarks Landmarks { get; private set; }
+
+        /// <summary>Places landmark models using the baked landmarks-manifest.json (same world frame).</summary>
+        public StrategyMapLandmarks AttachLandmarks(IReadOnlyList<GameObject> prefabs, string manifestJson)
+        {
+            Landmarks = StrategyMapLandmarks.Build(transform, prefabs, manifestJson);
+            return Landmarks;
+        }
+
         public StrategyMapBuildings Buildings { get; private set; }
 
         private ParticleSystem BuildParticles(string name, bool streaks)

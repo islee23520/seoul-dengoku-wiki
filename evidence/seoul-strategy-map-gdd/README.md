@@ -24,3 +24,11 @@
 - 바이너리 계약: 16B 헤더(SBLD·v1·count) + 28B/레코드, 길이=16+28×count 유니티·파이썬 양측 검증
 - 렌더: Graphics.DrawMeshInstanced(1023/배치), 지형 청크 스트리밍 연동
 - 검증: PlayMode 1/1(299,284 인스턴스·9청크), 건물 회색 68,132px 실재, 전 프레임 43.4% 변화
+
+## 랜드마크 3D (2026-09-18, Tripo 웹 × 어사이드 — 소유자 지시)
+- Tripo Studio 웹에서 14개 서울 랜드마크 텍스트→3D 생성, GLB 수출(45MB HD)
+- landmarks_pipeline.py가 각각 ~80k 폴리 OBJ+1024 PNG로 경량화(~2.9MB/개)
+- landmarks-manifest.json: 실좌표(위도/경도) → 전략맵 월드좌표 변환 + gameScale
+- StrategyMapLandmarks: 14개 모델 실좌표 위치에 배치, StrategyMapPresenter.AttachLandmarks 연동
+- 랜드마크: 남산타워·광화문·63빌딩·롯데타워·코엑스·DDP·남대문·국회의사당·서울역·잠실주경기장·동대문·시청·보신각·전쟁기념관
+- 검증: PlayMode 1/1 (14개 배치 단정 포함)
