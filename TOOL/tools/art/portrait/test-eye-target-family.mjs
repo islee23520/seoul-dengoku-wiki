@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 import test from 'node:test';
 
 const sha256 = (path) => createHash('sha256').update(readFileSync(path)).digest('hex');
-const library = JSON.parse(readFileSync('Design/potrait-generator/assets/v2/library.json', 'utf8'));
+const library = JSON.parse(readFileSync('GAME-REFERENCE/potray-generator/assets/v2/library.json', 'utf8'));
 
 const registered = {
   female: {

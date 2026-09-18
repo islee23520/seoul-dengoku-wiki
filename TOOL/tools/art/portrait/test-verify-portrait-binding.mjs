@@ -77,7 +77,7 @@ function selectionFor(sex, index = 1) {
 function fixture(t, { characters = ['K001', 'K002'], variantsPerSlot = 10 } = {}) {
   const { root, put } = workspace(t);
   put('Wikis/game-logic/World-Narrative-Atlas.md', atlasMarkdown(characters));
-  const library = put('Design/potrait-generator/assets/v2/library.json',
+  const library = put('GAME-REFERENCE/potray-generator/assets/v2/library.json',
     JSON.stringify(libraryManifest(variantsPerSlot), null, 2));
   const binding = (id, sex, index) => ({
     character_id: id,
@@ -225,7 +225,7 @@ test('an empty selectable library slot cannot back a delivery binding', (t) => {
   const { root, put, binding } = fixture(t, { variantsPerSlot: 2 });
   const document = libraryManifest(2);
   document.sexes.female.slots.bg.variants = [];
-  const library = put('Design/potrait-generator/assets/v2/empty-library.json', JSON.stringify(document));
+  const library = put('GAME-REFERENCE/potray-generator/assets/v2/empty-library.json', JSON.stringify(document));
   const report = verifyPortraitBinding({
     schema_version: 1,
     library,
@@ -245,7 +245,7 @@ test('a gates-1-4 library refuses delivery of provisional slot components', (t) 
       }
     }
   }
-  const library = put('Design/potrait-generator/assets/v2/provisional-library.json', JSON.stringify(document));
+  const library = put('GAME-REFERENCE/potray-generator/assets/v2/provisional-library.json', JSON.stringify(document));
   const report = verifyPortraitBinding({ schema_version: 1, library, bindings: [binding('K001', 'female', 1)] }, { repoRoot: root });
   assert.ok(report.errors.some((e) => e.code === 'slot_not_validated'));
   assert.equal(report.ok, false);
@@ -261,7 +261,7 @@ test('a gates-1-4 library accepts delivery when the chosen component is fully ve
       for (const variant of entry.variants) variant.slot_validity = verified;
     }
   }
-  const library = put('Design/potrait-generator/assets/v2/verified-library.json', JSON.stringify(document));
+  const library = put('GAME-REFERENCE/potray-generator/assets/v2/verified-library.json', JSON.stringify(document));
   const report = verifyPortraitBinding({ schema_version: 1, library, bindings: [binding('K001', 'female', 1)] }, { repoRoot: root });
   assert.deepEqual(report.errors, []);
   assert.equal(report.ok, true);

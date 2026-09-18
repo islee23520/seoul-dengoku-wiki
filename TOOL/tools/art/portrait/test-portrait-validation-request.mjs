@@ -33,7 +33,7 @@ function fixture() {
       status: 'pending',
       candidate_ids: ['female-hair-03', 'female-headgear-02'],
       blockers: [{ code: 'seam_gap', message: 'Inspect the registered hair/headgear seam.' }],
-      reproduction_command: 'node Tool/art/portrait/verify-portrait-review.mjs --record review.json --repo-root "$PWD"',
+      reproduction_command: 'node TOOL/tools/art/portrait/verify-portrait-review.mjs --record review.json --repo-root "$PWD"',
       artifact_bindings: [{ path: 'artifact.txt', sha256: sha256(artifact) }],
       expected_outcome: 'Return a reviewer finding without changing the gate verdict.',
     },

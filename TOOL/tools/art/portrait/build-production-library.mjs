@@ -15,10 +15,10 @@ import { deriveMultiplyPlate } from './build-multiply-details.mjs';
 import { buildLibrary, slotMode, TOOL_ID } from './portrait-tool.mjs';
 
 const REPO = resolve(fileURLToPath(new URL('../../..', import.meta.url)));
-const ASSET_ROOT = join(REPO, 'Design/potrait-generator/assets/v2');
+const ASSET_ROOT = join(REPO, 'GAME-REFERENCE/potray-generator/assets/v2');
 const PLATE_ROOT = join(ASSET_ROOT, 'plates');
 const MANIFEST = join(ASSET_ROOT, 'library.json');
-const SLOT_SCHEMA = JSON.parse(readFileSync(join(REPO, 'Tool/art/portrait/portrait-layer-slots.json'), 'utf8'));
+const SLOT_SCHEMA = JSON.parse(readFileSync(join(REPO, 'TOOL/tools/art/portrait/portrait-layer-slots.json'), 'utf8'));
 const V2_REPAIR_ROOT = join(REPO, '.omo/evidence/portrait-stage23/g2-art-repair-v2');
 const V2_FACE_ACCEPTANCE = join(V2_REPAIR_ROOT, 'acceptance.json');
 const V2_ACCESSORY_ROOT = join(V2_REPAIR_ROOT, 'accessories');
@@ -26,7 +26,7 @@ const V2_ACCESSORY_ACCEPTANCE = join(V2_ACCESSORY_ROOT, 'acceptance.json');
 const V2_INTEGRATION_ACCEPTANCE = join(V2_REPAIR_ROOT, 'integration/acceptance-binding.json');
 const V3_REPAIR_ROOT = join(REPO, '.omo/evidence/portrait-stage23/g2-final-repair-v3');
 const V3_INTEGRATION_ACCEPTANCE = join(V3_REPAIR_ROOT, 'integration/acceptance-binding.json');
-const ACCEPTED_EVIDENCE_REGISTRY = join(REPO, 'Tool/art/portrait/accepted-evidence-registry.json');
+const ACCEPTED_EVIDENCE_REGISTRY = join(REPO, 'TOOL/tools/art/portrait/accepted-evidence-registry.json');
 const WIDTH = 1145;
 const HEIGHT = 1374;
 const sha256 = (bytes) => createHash('sha256').update(bytes).digest('hex');
@@ -80,7 +80,7 @@ function evidenceVariant({ sex, slot, id, label, packageName, candidate, package
   return {
     id,
     label,
-    path: repoPath(destination).slice('Design/potrait-generator/assets/v2/'.length),
+    path: repoPath(destination).slice('GAME-REFERENCE/potray-generator/assets/v2/'.length),
     sha256: fileSha(destination),
     empty: false,
     source: sourceKind,
@@ -110,7 +110,7 @@ function existingVariant(sex, slot, id, { source = 'accepted-stage1-plate', sour
   return {
     id,
     label: `${sex} ${slot} base`,
-    path: repoPath(path).slice('Design/potrait-generator/assets/v2/'.length),
+    path: repoPath(path).slice('GAME-REFERENCE/potray-generator/assets/v2/'.length),
     sha256: fileSha(path),
     empty,
     source,
@@ -130,7 +130,7 @@ function acceptedRegisteredPlate({ sex, slot, id, label, recordPath, expectedSha
   return {
     id,
     label,
-    path: repoPath(path).slice('Design/potrait-generator/assets/v2/'.length),
+    path: repoPath(path).slice('GAME-REFERENCE/potray-generator/assets/v2/'.length),
     sha256: fileSha(path),
     empty: false,
     source: 'accepted-male-hair-registration',
@@ -227,7 +227,7 @@ function applyAcceptedEvidenceRegistry() {
         putCopy(overrideCandidate, destination);
         return {
           when: override.when,
-          path: repoPath(destination).slice('Design/potrait-generator/assets/v2/'.length),
+          path: repoPath(destination).slice('GAME-REFERENCE/potray-generator/assets/v2/'.length),
           sha256: override.candidate_sha256,
           source: 'accepted-evidence-render-override',
           source_identity: {
@@ -243,7 +243,7 @@ function applyAcceptedEvidenceRegistry() {
       return {
         id: variant.id,
         label: variant.label,
-        path: repoPath(destination).slice('Design/potrait-generator/assets/v2/'.length),
+        path: repoPath(destination).slice('GAME-REFERENCE/potray-generator/assets/v2/'.length),
         sha256: variant.candidate_sha256,
         empty: variant.empty === true,
         source: 'accepted-evidence-registry',
@@ -353,7 +353,7 @@ function authoredVariant(sex, slot, index, bytes) {
   return {
     id,
     label: `${sex} ${slot} deterministic ${index}`,
-    path: repoPath(path).slice('Design/potrait-generator/assets/v2/'.length),
+    path: repoPath(path).slice('GAME-REFERENCE/potray-generator/assets/v2/'.length),
     sha256: fileSha(path),
     empty: false,
     source: 'authored-deterministic',
@@ -376,7 +376,7 @@ function acceptedV2Variant({ sex, slot, id, label, packageRelative, acceptanceRe
   return {
     id,
     label,
-    path: repoPath(destination).slice('Design/potrait-generator/assets/v2/'.length),
+    path: repoPath(destination).slice('GAME-REFERENCE/potray-generator/assets/v2/'.length),
     sha256: fileSha(destination),
     empty: false,
     source: 'accepted-gate2-evidence',
@@ -417,7 +417,7 @@ function acceptedV3Variant({ sex, slot, id, label, companionOf = null }) {
   return {
     id,
     label,
-    path: repoPath(destination).slice('Design/potrait-generator/assets/v2/'.length),
+    path: repoPath(destination).slice('GAME-REFERENCE/potray-generator/assets/v2/'.length),
     sha256: fileSha(destination),
     empty: accepted.empty === true,
     source: 'accepted-final-repair-v3-evidence',
@@ -845,7 +845,7 @@ for (const sex of ['female', 'male']) {
     const result = deriveMultiplyPlate({ sourcePath, outputPath: destination, faceBasePath: join(ASSET_ROOT, slotsFor(sex).face_base.variants[0].path) });
     slotsFor(sex)[slot].variants = [{
       id: `${sex}-${slot}-detail`, label: `${sex} ${slot} intentionally empty multiply detail`,
-      path: repoPath(destination).slice('Design/potrait-generator/assets/v2/'.length), sha256: result.output_sha256,
+      path: repoPath(destination).slice('GAME-REFERENCE/potray-generator/assets/v2/'.length), sha256: result.output_sha256,
       blend_mode: 'multiply', empty: true, intentionally_empty: true,
       companion_of: { slot: 'face_base', variants: slotsFor(sex).face_base.variants.map((variant) => variant.id) },
       source: 'derived-multiply-detail', sex,

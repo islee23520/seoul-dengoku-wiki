@@ -29,7 +29,7 @@ function workspace(t) {
 
 /** A complete, admissible, fully passing GQ2 variant review. */
 function goodRecord(put) {
-  const reference = put('Tool/art/portrait/original/target.png', 'reference-bytes');
+  const reference = put('TOOL/tools/art/portrait/original/target.png', 'reference-bytes');
   const candidate = put('evidence/hair-03.png', 'candidate-bytes');
   const crops = Object.fromEntries(
     QUALITY_ROWS.map((row) => [row, put(`evidence/crops/${row}.png`, `crop-${row}`)]),

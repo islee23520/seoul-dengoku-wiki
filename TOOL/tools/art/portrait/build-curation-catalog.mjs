@@ -8,7 +8,7 @@ import { decodePng } from './portrait-layer-composite.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const DEFAULT_REPO = resolve(HERE, '../../..');
-const DEFAULT_OUTPUT = 'Design/potrait-generator/assets/v2/curation-catalog.json';
+const DEFAULT_OUTPUT = 'GAME-REFERENCE/potray-generator/assets/v2/curation-catalog.json';
 const STATUS_ORDER = { accepted: 0, rejected: 1, superseded: 2, unreviewed: 3 };
 const CANONICAL_SLOTS = new Set([
   'bg', 'clothes_back', 'headgear_back', 'hair_back', 'beard_back', 'face_base', 'neck',
@@ -151,7 +151,7 @@ function productionRecords(repo, manifest) {
         logical_id: variant?.id ?? logicalIdFromPath(segments.at(-1)),
         status: bound ? 'accepted' : 'unreviewed',
         status_source: bound
-          ? (bound.override?.source_identity?.acceptance_record ?? variant.source_identity?.acceptance_record ?? variant.source_identity?.plate ?? manifest.provenance?.accepted_evidence_registry ?? 'Design/potrait-generator/assets/v2/library.json')
+          ? (bound.override?.source_identity?.acceptance_record ?? variant.source_identity?.acceptance_record ?? variant.source_identity?.plate ?? manifest.provenance?.accepted_evidence_registry ?? 'GAME-REFERENCE/potray-generator/assets/v2/library.json')
           : 'production-inventory:no-explicit-status-binding',
         sha256: digest,
         source_paths: [],
@@ -321,7 +321,7 @@ function registeredAcceptedCandidates(repo, manifest, candidates) {
         const identity = variant.source_identity ?? {};
         if (identity.candidate && identity.candidate_sha256) addCandidate(candidates, repo, {
           sex, slot, logical_id: variant.id, path: identity.candidate, sha256: identity.candidate_sha256,
-          status: 'accepted', status_source: identity.acceptance_record ?? 'Design/potrait-generator/assets/v2/library.json',
+          status: 'accepted', status_source: identity.acceptance_record ?? 'GAME-REFERENCE/potray-generator/assets/v2/library.json',
           contract_pass: true, baseline_role: 'current_production',
         });
         for (const override of variant.render_overrides ?? []) {
@@ -329,7 +329,7 @@ function registeredAcceptedCandidates(repo, manifest, candidates) {
           if (source.candidate && source.candidate_sha256) addCandidate(candidates, repo, {
             sex, slot: `${slot}_overrides`, logical_id: `${variant.id}__${override.when.variant}`,
             path: source.candidate, sha256: source.candidate_sha256, status: 'accepted',
-            status_source: source.acceptance_record ?? 'Design/potrait-generator/assets/v2/library.json',
+            status_source: source.acceptance_record ?? 'GAME-REFERENCE/potray-generator/assets/v2/library.json',
             contract_pass: true, baseline_role: 'current_production',
           });
         }
@@ -528,7 +528,7 @@ function copyCandidates(repo, outputPath, records) {
 
 export function buildCurationCatalog({ repoRoot = DEFAULT_REPO, output = DEFAULT_OUTPUT, write = true } = {}) {
   const repo = realpathSync(resolve(repoRoot));
-  const manifestPath = 'Design/potrait-generator/assets/v2/library.json';
+  const manifestPath = 'GAME-REFERENCE/potray-generator/assets/v2/library.json';
   const manifestBinding = boundPath(repo, manifestPath);
   const manifest = readJson(manifestBinding.path);
   const production = productionRecords(repo, manifest);
@@ -551,7 +551,7 @@ export function buildCurationCatalog({ repoRoot = DEFAULT_REPO, output = DEFAULT
   const statuses = Object.fromEntries(['accepted', 'rejected', 'superseded', 'unreviewed'].map((status) => [status, records.filter((record) => record.status === status).length]));
   const catalog = {
     version: 1,
-    built_by: 'Tool/art/portrait/build-curation-catalog.mjs',
+    built_by: 'TOOL/tools/art/portrait/build-curation-catalog.mjs',
     source_manifest: { path: manifestPath, sha256: manifestBinding.digest },
     discovery_receipts: [
       '.omo/evidence/portrait-stage23/provenance/current-candidate-audit.json',

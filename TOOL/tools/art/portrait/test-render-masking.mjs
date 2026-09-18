@@ -5,7 +5,7 @@ import { join } from 'node:path';
 import { tmpdir } from 'node:os';
 
 import { compositePortraitLayers, encodePng, decodePng } from './portrait-layer-composite.mjs';
-import { compositeBrowserPixels } from '../../../Design/potrait-generator/portrait-browser-composite.mjs';
+import { compositeBrowserPixels } from '../../../GAME-REFERENCE/potray-generator/portrait-browser-composite.mjs';
 
 const TEST_DIR = join(tmpdir(), 'masking-test-' + Date.now());
 const WIDTH = 8;

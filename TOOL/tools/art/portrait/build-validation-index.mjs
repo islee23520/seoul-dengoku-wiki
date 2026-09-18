@@ -5,7 +5,7 @@ import { dirname, isAbsolute, join, relative, resolve, sep } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const REPO = resolve(fileURLToPath(new URL('../../..', import.meta.url)));
-const OUTPUT = 'Design/potrait-generator/assets/v2/validation-index.json';
+const OUTPUT = 'GAME-REFERENCE/potray-generator/assets/v2/validation-index.json';
 const RECEIPTS = [
   '.omo/evidence/portrait-stage23/validation-graph-example/receipt.json',
   '.omo/evidence/portrait-stage23/attachment-rig-examples/receipt.json',
@@ -60,7 +60,7 @@ export function buildValidationIndex({ repoRoot = REPO, output = OUTPUT } = {}) 
       artifacts,
     };
   });
-  const index = { version: 1, built_by: 'Tool/art/portrait/build-validation-index.mjs', receipts };
+  const index = { version: 1, built_by: 'TOOL/tools/art/portrait/build-validation-index.mjs', receipts };
   index.sha256 = sha256(Buffer.from(JSON.stringify(index)));
   mkdirSync(webRoot, { recursive: true }); writeFileSync(outputPath, `${JSON.stringify(index, null, 2)}\n`);
   return index;

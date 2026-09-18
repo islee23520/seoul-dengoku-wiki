@@ -162,7 +162,7 @@ test('rejects review record drift and failed immutability bindings', async (t) =
 
 test('Gate1 receipt binds the exact frozen verifier module SHA', () => {
   const repoRoot = resolve(import.meta.dirname, '../../..');
-  const contract = JSON.parse(readFileSync(join(repoRoot, 'Tool/art/portrait/portrait-quality-contract.json'), 'utf8'));
+  const contract = JSON.parse(readFileSync(join(repoRoot, 'TOOL/tools/art/portrait/portrait-quality-contract.json'), 'utf8'));
   const receipt = evaluateGate1({ repoRoot, contract });
   const verifier = receipt.input_bindings.find(({ path }) => path === FROZEN_RECIPE_VERIFIER_PATH);
   assert.deepEqual(verifier, {

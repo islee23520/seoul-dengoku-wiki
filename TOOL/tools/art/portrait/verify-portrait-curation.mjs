@@ -5,7 +5,7 @@ import { dirname, isAbsolute, relative, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 export const CURATION_SCHEMA = 'janseon.portrait-curation.v1';
-export const CATALOG_PATH = 'Design/potrait-generator/assets/v2/curation-catalog.json';
+export const CATALOG_PATH = 'GAME-REFERENCE/potray-generator/assets/v2/curation-catalog.json';
 
 const SHA256 = /^[0-9a-f]{64}$/;
 const DECISIONS = new Set(['adopt', 'hold', 'reject']);

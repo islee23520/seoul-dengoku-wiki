@@ -14,9 +14,9 @@
     "required_checks": ["target_binding", "recipe_contract", "reconstruction_partition_z_order", "frozen_verdict"]
   },
   "gate2": {
-    "library": "Design/potrait-generator/assets/v2/library.json",
-    "catalog": "Design/potrait-generator/assets/v2/curation-catalog.json",
-    "audit": "Design/potrait-generator/audit-library.py",
+    "library": "GAME-REFERENCE/potray-generator/assets/v2/library.json",
+    "catalog": "GAME-REFERENCE/potray-generator/assets/v2/curation-catalog.json",
+    "audit": "GAME-REFERENCE/potray-generator/audit-library.py",
     "required_checks": ["production_audit", "minimum_contracts", "alpha_canvas_provenance", "logical_bundle_ownership", "multiply_eligibility", "eye_layer_containment", "eligible_catalog_parity"]
   },
   "gate3": {
@@ -27,7 +27,7 @@
     "required_checks": ["current_combination_matrix", "conditional_render_members", "attachment_graph", "seam_occlusion", "browser_offline_rgba_parity", "visual_combination_verdicts"]
   },
   "gate4": {
-    "catalog": "Design/potrait-generator/assets/v2/curation-catalog.json",
+    "catalog": "GAME-REFERENCE/potray-generator/assets/v2/curation-catalog.json",
     "required_records": 259,
     "required_checks": ["curation_packet", "all_records_decided", "feedback_bound_checkpoint"]
   }

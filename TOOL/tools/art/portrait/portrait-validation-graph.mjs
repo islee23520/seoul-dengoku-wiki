@@ -393,7 +393,7 @@ export function runGraph(graph, options = {}) {
 
 function argValue(args, flag) { const index = args.indexOf(flag); return index >= 0 ? args[index + 1] : undefined; }
 function main() {
-  const args = process.argv.slice(2); if (args[0] !== 'run') { process.stderr.write('usage: node Tool/art/portrait/portrait-validation-graph.mjs run --graph <graph.json> --out <directory> [--receipt <receipt.json>]\n'); process.exitCode = 2; return; }
+  const args = process.argv.slice(2); if (args[0] !== 'run') { process.stderr.write('usage: node TOOL/tools/art/portrait/portrait-validation-graph.mjs run --graph <graph.json> --out <directory> [--receipt <receipt.json>]\n'); process.exitCode = 2; return; }
   const graphPath = argValue(args, '--graph'); const out = argValue(args, '--out'); const receiptArg = argValue(args, '--receipt');
   if (!graphPath || !out) { process.stderr.write('missing --graph or --out\n'); process.exitCode = 2; return; }
   let receipt;

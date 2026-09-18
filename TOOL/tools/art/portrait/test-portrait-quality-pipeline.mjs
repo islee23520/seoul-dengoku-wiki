@@ -12,7 +12,7 @@ import {
 } from './portrait-quality-pipeline.mjs';
 
 const repo = resolve(import.meta.dirname, '../../..');
-const contract = JSON.parse(readFileSync(join(repo, 'Tool/art/portrait/portrait-quality-contract.json')));
+const contract = JSON.parse(readFileSync(join(repo, 'TOOL/tools/art/portrait/portrait-quality-contract.json')));
 function put(root, path, body) {
   const full = join(root, path); mkdirSync(dirname(full), { recursive: true }); writeFileSync(full, body); return full;
 }

@@ -4,12 +4,12 @@ Canonical package path: `Tool/art`. Do not add a second root `tools/` folder.
 
 ## Evidence asset database
 
-`Design/potrait-generator/` is the non-destructive working SSoT over the full `.omo/evidence` tree. It does not move, delete, or rename evidence. The SQLite catalog groups identical bytes by SHA-256, retains every exact path and lifecycle, binds scoped PASS/REJECT/PENDING receipts, and caches unchanged files by path/size/mtime.
+`GAME-REFERENCE/potray-generator/` is the non-destructive working SSoT over the full `.omo/evidence` tree. It does not move, delete, or rename evidence. The SQLite catalog groups identical bytes by SHA-256, retains every exact path and lifecycle, binds scoped PASS/REJECT/PENDING receipts, and caches unchanged files by path/size/mtime.
 
 ```bash
 npm run portrait:assets:scan
-node Design/potrait-generator/src/cli.mjs query --status PASS --sex female --slot face_base
-node Design/potrait-generator/src/cli.mjs duplicates
+node GAME-REFERENCE/potray-generator/src/cli.mjs query --status PASS --sex female --slot face_base
+node GAME-REFERENCE/potray-generator/src/cli.mjs duplicates
 ```
 
 Always query this database before generating or repairing an asset. A provider call, HTTP 200, numeric check, or same filename is never sufficient reuse proof; use exact path + SHA + scoped evaluation.
@@ -19,10 +19,10 @@ Always query this database before generating or repairing an asset. A provider c
 `portrait-validation-request.mjs` records a content-addressed request before any reviewer delivery. `create` is always queue-only and never contacts Herdr or an OMO socket. The default queue is `.omo/portrait-validation-requests`; `--queue` may select another directory.
 
 ```bash
-node Tool/art/portrait/portrait-validation-request.mjs create --input request.json
-node Tool/art/portrait/portrait-validation-request.mjs list
-node Tool/art/portrait/portrait-validation-request.mjs show <request_id>
-node Tool/art/portrait/portrait-validation-request.mjs dispatch <request_id> --adapter auto --wait --timeout 30000
+node TOOL/tools/art/portrait/portrait-validation-request.mjs create --input request.json
+node TOOL/tools/art/portrait/portrait-validation-request.mjs list
+node TOOL/tools/art/portrait/portrait-validation-request.mjs show <request_id>
+node TOOL/tools/art/portrait/portrait-validation-request.mjs dispatch <request_id> --adapter auto --wait --timeout 30000
 ```
 
 A create input has this shape. Artifact paths are repository-relative and their current bytes must match the lowercase SHA-256. `repo_cwd` may be `.` when the command runs at the repository root; the stored record uses its canonical absolute path.
@@ -37,7 +37,7 @@ A create input has this shape. Artifact paths are repository-relative and their 
   "status": "pending",
   "candidate_ids": ["female-hair-03"],
   "blockers": [{ "code": "seam_gap", "message": "Inspect the registered seam." }],
-  "reproduction_command": "node Tool/art/portrait/verify-portrait-review.mjs --record review.json --repo-root \"$PWD\"",
+  "reproduction_command": "node TOOL/tools/art/portrait/verify-portrait-review.mjs --record review.json --repo-root \"$PWD\"",
   "artifact_bindings": [{ "path": "evidence/review.json", "sha256": "<64 lowercase hex>" }],
   "expected_outcome": "Return a finding; do not alter the gate verdict."
 }
@@ -56,15 +56,15 @@ Delivery adapters:
 
 A reproducible no-delivery example is under `.omo/evidence/portrait-stage23/validation-request-example`; its README creates and inspects an isolated queue without dispatching it.
 
-- Original (immutable): `original/target.png` — SHA-256 `c3a7e4815de6acaef28faf429395417a001bfe8088df633537c6e1a2aa9109a9`. Same bytes as `Design/potrait-generator/assets/v2/target.png`. Never auto-replace.
+- Original (immutable): `original/target.png` — SHA-256 `c3a7e4815de6acaef28faf429395417a001bfe8088df633537c6e1a2aa9109a9`. Same bytes as `GAME-REFERENCE/potray-generator/assets/v2/target.png`. Never auto-replace.
 - Final default combo: `final/h0-e0-o0.png` (dirty vs target = 0).
 - Eight-combo matrix: `final/matrix/h{0,1}-e{0,1}-o{0,1}.png` (8 unique hashes).
 
 ```bash
-node Tool/art/portrait/verify-portrait-recipe.mjs --recipe .omo/evidence/portrait-authoring-v2/recipe.json --mode contract
-node Tool/art/portrait/verify-portrait-recipe.mjs --recipe .omo/evidence/portrait-authoring-v2/recipe.json --mode base
-node Tool/art/portrait/verify-portrait-recipe.mjs --recipe .omo/evidence/portrait-authoring-v2/recipe.json --mode matrix
-node --test Tool/art/portrait/test-portrait-layer-composite.mjs Tool/art/portrait/test-portrait-layer-slots.mjs Tool/art/portrait/test-ingest-see-through.mjs
+node TOOL/tools/art/portrait/verify-portrait-recipe.mjs --recipe .omo/evidence/portrait-authoring-v2/recipe.json --mode contract
+node TOOL/tools/art/portrait/verify-portrait-recipe.mjs --recipe .omo/evidence/portrait-authoring-v2/recipe.json --mode base
+node TOOL/tools/art/portrait/verify-portrait-recipe.mjs --recipe .omo/evidence/portrait-authoring-v2/recipe.json --mode matrix
+node --test TOOL/tools/art/portrait/test-portrait-layer-composite.mjs TOOL/tools/art/portrait/test-portrait-layer-slots.mjs TOOL/tools/art/portrait/test-ingest-see-through.mjs
 ```
 
 ## Stage-2/3 machine gates
@@ -86,15 +86,15 @@ A PASS gate needs at least one path+SHA256 evidence record. Later gates cannot P
 
 `portrait-tool.mjs compose` separates three purposes: `reconstruction` for Gateway 1, `review` after Gateway 2, and `delivery` only after Gateway 4. Direct `assignPortraits` and `batch` also require all four gates. Owner approval of a flattened source, API success, PSD import, auto-rig preview, numeric QA, file count or runtime file existence never skips this order.
 
-The browser tool loads `Design/potrait-generator/assets/v2/workflow.json`, displays the two Civitai profiles and six tool lanes, and locks sex/slot/randomize/save/export controls according to the same contract. `작업 패킷 JSON` remains available while locked for handoff to external authoring tools.
+The browser tool loads `GAME-REFERENCE/potray-generator/assets/v2/workflow.json`, displays the two Civitai profiles and six tool lanes, and locks sex/slot/randomize/save/export controls according to the same contract. `작업 패킷 JSON` remains available while locked for handoff to external authoring tools.
 
 ### Review records — `verify-portrait-review.mjs`
 
 Run the integrated quality workflow with:
 
 ```sh
-node Tool/art/portrait/portrait-quality-pipeline.mjs run --out .omo/evidence/portrait-stage23/quality-pipeline-current
-node Tool/art/portrait/portrait-quality-pipeline.mjs verify --receipts .omo/evidence/portrait-stage23/quality-pipeline-current
+node TOOL/tools/art/portrait/portrait-quality-pipeline.mjs run --out .omo/evidence/portrait-stage23/quality-pipeline-current
+node TOOL/tools/art/portrait/portrait-quality-pipeline.mjs verify --receipts .omo/evidence/portrait-stage23/quality-pipeline-current
 ```
 
 Supply `--curation-packet <repository-relative.json>` to both commands only when an actual user-completed Gate 4 packet exists. The pipeline never edits `workflow.json`.
@@ -108,7 +108,7 @@ lacks a bound native crop — such a PASS is downgraded to NOT_VERIFIED rather t
 A `worker` reviewer can never produce PASS.
 
 ```bash
-node Tool/art/portrait/verify-portrait-review.mjs --record <path>.json --repo-root "$PWD"
+node TOOL/tools/art/portrait/verify-portrait-review.mjs --record <path>.json --repo-root "$PWD"
 ```
 
 ```jsonc
@@ -123,7 +123,7 @@ node Tool/art/portrait/verify-portrait-review.mjs --record <path>.json --repo-ro
     "contributing": [{ "slot": "hair", "path": "...", "sha256": "..." }]
     // GQ3 adds "crosses": [ ... ] (>= 4); GQ4 adds "character_id" and "export"
   },
-  "reference": { "path": "Tool/art/portrait/original/target.png", "sha256": "c3a7e481..." },
+  "reference": { "path": "TOOL/tools/art/portrait/original/target.png", "sha256": "c3a7e481..." },
   "inspection": {
     "native_crops": [{ "path": "...", "sha256": "..." }],
     "full_50pct": { "path": "...", "sha256": "..." },
@@ -147,7 +147,7 @@ drifted from its hash. Determinism is enforced both ways: one selection may not 
 export hashes, and two selections may not share one.
 
 ```bash
-node Tool/art/portrait/verify-portrait-binding.mjs --bindings <path>.json --repo-root "$PWD"
+node TOOL/tools/art/portrait/verify-portrait-binding.mjs --bindings <path>.json --repo-root "$PWD"
 ```
 
 ### Unity ingestion — `character-portrait` runtime slot
@@ -161,8 +161,8 @@ contract row in [../runtime-slot-contract.json](../runtime-slot-contract.json) w
 `look.owner_verdict: accepted` — gate 7 is unchanged.
 
 ```bash
-node --test Tool/art/portrait/test-verify-portrait-review.mjs \
-  Tool/art/portrait/test-verify-portrait-binding.mjs
+node --test TOOL/tools/art/portrait/test-verify-portrait-review.mjs \
+  TOOL/tools/art/portrait/test-verify-portrait-binding.mjs
 node --test Tool/art/test-runtime-asset-provenance.mjs
 ```
 
@@ -175,26 +175,26 @@ It composites and records; it never judges art. A library it builds carries
 ```bash
 # 1. Inventory plates into the manifest the demo and the gates share.
 #    Convention tree: <plates>/<sex>/<slot>/<variantId>.png
-node Tool/art/portrait/portrait-tool.mjs library \
-  --plates Design/potrait-generator/assets/v2/plates \
-  --out Design/potrait-generator/assets/v2/library.json --repo-root "$PWD"
+node TOOL/tools/art/portrait/portrait-tool.mjs library \
+  --plates GAME-REFERENCE/potray-generator/assets/v2/plates \
+  --out GAME-REFERENCE/potray-generator/assets/v2/library.json --repo-root "$PWD"
 
 # 1b. Or adapt the Stage-1 partition recipe (one identity, honestly short of three variants).
-node Tool/art/portrait/portrait-tool.mjs library \
+node TOOL/tools/art/portrait/portrait-tool.mjs library \
   --recipe .omo/evidence/portrait-authoring-v2/recipe.json --sex female \
   --out <dir>/library.json --repo-root "$PWD"
 
 # 2. Compose one selection.
-node Tool/art/portrait/portrait-tool.mjs compose \
+node TOOL/tools/art/portrait/portrait-tool.mjs compose \
   --library <dir>/library.json --workflow <dir>/workflow.json --purpose delivery --sex female \
   --select hair=hair-h0,eyes_color=eyes_color-e0,... --out <dir>/out.png --repo-root "$PWD"
 
 # 3. Assign and export portraits for registered characters, then check the result.
-node Tool/art/portrait/export-human-roster.mjs --out <dir>/humans.json --repo-root "$PWD"
-node Tool/art/portrait/portrait-tool.mjs batch \
+node TOOL/tools/art/portrait/export-human-roster.mjs --out <dir>/humans.json --repo-root "$PWD"
+node TOOL/tools/art/portrait/portrait-tool.mjs batch \
   --library <dir>/library.json --workflow <dir>/workflow.json --roster <dir>/roster.json --seed janseon-portrait-v1 \
   --out-dir <dir>/portraits --repo-root "$PWD"
-node Tool/art/portrait/verify-portrait-binding.mjs --bindings <dir>/portraits/bindings.json --repo-root "$PWD"
+node TOOL/tools/art/portrait/verify-portrait-binding.mjs --bindings <dir>/portraits/bindings.json --repo-root "$PWD"
 ```
 
 - **Composition** is source-over by slot `z`, on the library canvas, with every plate
@@ -224,8 +224,8 @@ Verified against the tracked Stage-1 truth: the derived library reproduces
 proves a committed projection still matches the atlas it claims to come from.
 
 ```bash
-node Tool/art/portrait/export-human-roster.mjs --out <dir>/humans.json --repo-root "$PWD"
-node Tool/art/portrait/export-human-roster.mjs --out <dir>/humans.json --check --repo-root "$PWD"
+node TOOL/tools/art/portrait/export-human-roster.mjs --out <dir>/humans.json --repo-root "$PWD"
+node TOOL/tools/art/portrait/export-human-roster.mjs --out <dir>/humans.json --check --repo-root "$PWD"
 ```
 
 It is a projection, not a second identity authority: ids are copied rather than

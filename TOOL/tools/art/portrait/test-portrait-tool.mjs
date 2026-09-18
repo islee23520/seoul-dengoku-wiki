@@ -116,7 +116,7 @@ test('buildLibrary marks provenance and never claims quality acceptance', (t) =>
   const library = buildLibrary({ repoRoot: root, plateRoot: plateTree(put), canvas: CANVAS, stage: 'stage2' });
   assert.equal(library.stage, 'stage2');
   assert.equal(library.quality_acceptance, 'NOT VERIFIED');
-  assert.equal(library.built_by, 'Tool/art/portrait/portrait-tool.mjs');
+  assert.equal(library.built_by, 'TOOL/tools/art/portrait/portrait-tool.mjs');
 });
 
 test('buildLibrary refuses a plate whose canvas differs from the library canvas', (t) => {

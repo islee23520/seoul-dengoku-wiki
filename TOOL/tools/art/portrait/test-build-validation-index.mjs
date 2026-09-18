@@ -18,15 +18,15 @@ test('validation index binds receipts and web artifacts byte-exactly', () => {
   for (const receipt of index.receipts) {
     assert.equal(sha256(readFileSync(resolve(repo, receipt.path))), receipt.sha256);
     assert.notEqual(receipt.visual_approval, 'APPROVED');
-    for (const artifact of receipt.artifacts) assert.equal(sha256(readFileSync(resolve(repo, 'Design/potrait-generator/assets/v2', artifact.web_path))), artifact.sha256);
+    for (const artifact of receipt.artifacts) assert.equal(sha256(readFileSync(resolve(repo, 'GAME-REFERENCE/potray-generator/assets/v2', artifact.web_path))), artifact.sha256);
   }
 });
 
 test('validation index rerun is deterministic', () => {
   buildValidationIndex({ repoRoot: repo });
-  const first = readFileSync(resolve(repo, 'Design/potrait-generator/assets/v2/validation-index.json'));
+  const first = readFileSync(resolve(repo, 'GAME-REFERENCE/potray-generator/assets/v2/validation-index.json'));
   buildValidationIndex({ repoRoot: repo });
-  assert.deepEqual(readFileSync(resolve(repo, 'Design/potrait-generator/assets/v2/validation-index.json')), first);
+  assert.deepEqual(readFileSync(resolve(repo, 'GAME-REFERENCE/potray-generator/assets/v2/validation-index.json')), first);
 });
 
 test('validation index refuses escaping outputs and symlink parents before cleanup', (t) => {
@@ -34,7 +34,7 @@ test('validation index refuses escaping outputs and symlink parents before clean
   const temp = mkdtempSync(join(tmpdir(), 'validation-index-'));
   const outside = mkdtempSync(join(tmpdir(), 'validation-index-outside-'));
   t.after(() => { rmSync(temp, { recursive: true, force: true }); rmSync(outside, { recursive: true, force: true }); });
-  mkdirSync(join(temp, 'Design/potrait-generator/assets/v2'), { recursive: true });
-  symlinkSync(outside, join(temp, 'Design/potrait-generator/assets/v2/link'));
-  assert.throws(() => buildValidationIndex({ repoRoot: temp, output: 'Design/potrait-generator/assets/v2/link/index.json' }), /symlink/);
+  mkdirSync(join(temp, 'GAME-REFERENCE/potray-generator/assets/v2'), { recursive: true });
+  symlinkSync(outside, join(temp, 'GAME-REFERENCE/potray-generator/assets/v2/link'));
+  assert.throws(() => buildValidationIndex({ repoRoot: temp, output: 'GAME-REFERENCE/potray-generator/assets/v2/link/index.json' }), /symlink/);
 });

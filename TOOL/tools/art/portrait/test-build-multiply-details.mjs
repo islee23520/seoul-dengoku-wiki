@@ -38,7 +38,7 @@ test('one neutral detail plate adapts to two skin-base colors', () => {
 });
 
 test('production details are grayscale and retain accepted-source alpha', () => {
-  const manifest = JSON.parse(readFileSync('Design/potrait-generator/assets/v2/library.json', 'utf8'));
+  const manifest = JSON.parse(readFileSync('GAME-REFERENCE/potray-generator/assets/v2/library.json', 'utf8'));
   for (const sex of ['female', 'male']) for (const slot of ['cheeks', 'chin']) {
     for (const variant of manifest.sexes[sex].slots[slot].variants) {
       assert.equal(variant.blend_mode, 'multiply', `${sex}/${slot}/${variant.id}`);

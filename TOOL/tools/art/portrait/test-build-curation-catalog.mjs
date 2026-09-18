@@ -8,7 +8,7 @@ import test from 'node:test';
 import { boundPath, buildCurationCatalog, discoverStage23CandidatePaths } from './build-curation-catalog.mjs';
 
 const repo = resolve(import.meta.dirname, '../../..');
-const output = join(repo, 'Design/potrait-generator/assets/v2/curation-catalog.json');
+const output = join(repo, 'GAME-REFERENCE/potray-generator/assets/v2/curation-catalog.json');
 const sha256 = (bytes) => createHash('sha256').update(bytes).digest('hex');
 
 function build() {
@@ -46,7 +46,7 @@ function explicitCandidates() {
 
 test('catalog reconciles production discovery and retains every explicit candidate', () => {
   const catalog = build();
-  const actualProductionPngs = countPngs(join(repo, 'Design/potrait-generator/assets/v2/plates'));
+  const actualProductionPngs = countPngs(join(repo, 'GAME-REFERENCE/potray-generator/assets/v2/plates'));
   assert.equal(catalog.counts.discovered_production_source_paths, actualProductionPngs);
   assert.ok(catalog.counts.physical_production_pngs <= actualProductionPngs);
   assert.match(catalog.sha256, /^[0-9a-f]{64}$/);
@@ -56,7 +56,7 @@ test('catalog reconciles production discovery and retains every explicit candida
   const sourcePaths = new Set(catalog.records.flatMap((record) => record.source_paths));
   for (const candidate of explicitCandidates()) {
     assert.ok(sourcePaths.has(candidate.path), `omitted explicit candidate: ${candidate.path}`);
-    const copied = join(repo, `Design/potrait-generator/assets/v2/curation/${candidate.sha256}.png`);
+    const copied = join(repo, `GAME-REFERENCE/potray-generator/assets/v2/curation/${candidate.sha256}.png`);
     assert.equal(sha256(readFileSync(copied)), candidate.sha256, candidate.path);
   }
 
@@ -74,7 +74,7 @@ test('catalog reconciles production discovery and retains every explicit candida
 
 test('every accepted unique candidate is production-registered and no ineligible byte enters slots', () => {
   const catalog = build();
-  const manifest = JSON.parse(readFileSync(join(repo, 'Design/potrait-generator/assets/v2/library.json')));
+  const manifest = JSON.parse(readFileSync(join(repo, 'GAME-REFERENCE/potray-generator/assets/v2/library.json')));
   const production = new Set();
   for (const sex of ['female', 'male']) for (const [slot, entry] of Object.entries(manifest.sexes[sex].slots)) {
     for (const variant of entry.variants) {
@@ -141,12 +141,12 @@ test('rerun is byte deterministic', () => {
 test('path escape and hash drift fail closed', () => {
   assert.throws(() => boundPath(repo, '../outside.png'), /escapes repository/);
   const fixture = mkdtempSync(join(tmpdir(), 'curation-drift-'));
-  for (const path of ['Design/potrait-generator/assets/v2', 'Tool/art/portrait', '.omo/evidence/portrait-stage23']) mkdirSync(join(fixture, path), { recursive: true });
-  cpSync(join(repo, 'Design/potrait-generator/assets/v2'), join(fixture, 'Design/potrait-generator/assets/v2'), { recursive: true });
-  cpSync(join(repo, 'Tool/art/portrait/portrait-layer-composite.mjs'), join(fixture, 'Tool/art/portrait/portrait-layer-composite.mjs'));
+  for (const path of ['GAME-REFERENCE/potray-generator/assets/v2', 'TOOL/tools/art/portrait', '.omo/evidence/portrait-stage23']) mkdirSync(join(fixture, path), { recursive: true });
+  cpSync(join(repo, 'GAME-REFERENCE/potray-generator/assets/v2'), join(fixture, 'GAME-REFERENCE/potray-generator/assets/v2'), { recursive: true });
+  cpSync(join(repo, 'TOOL/tools/art/portrait/portrait-layer-composite.mjs'), join(fixture, 'TOOL/tools/art/portrait/portrait-layer-composite.mjs'));
   cpSync(join(repo, '.omo/evidence/portrait-stage23'), join(fixture, '.omo/evidence/portrait-stage23'), { recursive: true });
   cpSync(join(repo, '.omo/evidence/st_01a0aab3'), join(fixture, '.omo/evidence/st_01a0aab3'), { recursive: true });
-  const drift = join(fixture, 'Design/potrait-generator/assets/v2/plates/female/hair/hair-h0.png');
+  const drift = join(fixture, 'GAME-REFERENCE/potray-generator/assets/v2/plates/female/hair/hair-h0.png');
   writeFileSync(drift, Buffer.concat([readFileSync(drift), Buffer.from([0])]));
   assert.throws(() => buildCurationCatalog({ repoRoot: fixture }), /production hash drift/);
   rmSync(fixture, { recursive: true, force: true });
@@ -168,6 +168,6 @@ test('recursive production discovery rejects symlink entries', (t) => {
   cpSync(join(repo, 'Tool'), join(fixture, 'Tool'), { recursive: true });
   cpSync(join(repo, '.omo'), join(fixture, '.omo'), { recursive: true });
   const target = join(fixture, 'outside.png'); writeFileSync(target, Buffer.from('outside'));
-  symlinkSync(target, join(fixture, 'Design/potrait-generator/assets/v2/plates/female/bg/linked.png'));
+  symlinkSync(target, join(fixture, 'GAME-REFERENCE/potray-generator/assets/v2/plates/female/bg/linked.png'));
   assert.throws(() => buildCurationCatalog({ repoRoot: fixture }), /symlink forbidden/);
 });

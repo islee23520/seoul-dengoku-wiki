@@ -6,16 +6,16 @@ import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 import { decodePng } from './portrait-layer-composite.mjs';
-import { clipLayer } from '../../../Design/potrait-generator/portrait-browser-composite.mjs';
+import { clipLayer } from '../../../GAME-REFERENCE/potray-generator/portrait-browser-composite.mjs';
 import { composeFromLibrary } from './portrait-tool.mjs';
 import { verifyPortraitCuration } from './verify-portrait-curation.mjs';
 import { verifyFrozenRecipe } from './verify-frozen-recipe.mjs';
-import { decodeBrowserPng } from '../../../Design/potrait-generator/portrait-browser-png.mjs';
-import { compositeBrowserPixels } from '../../../Design/potrait-generator/portrait-browser-composite.mjs';
+import { decodeBrowserPng } from '../../../GAME-REFERENCE/potray-generator/portrait-browser-png.mjs';
+import { compositeBrowserPixels } from '../../../GAME-REFERENCE/potray-generator/portrait-browser-composite.mjs';
 
-export const PIPELINE_PATH = 'Tool/art/portrait/portrait-quality-pipeline.mjs';
-export const FROZEN_RECIPE_VERIFIER_PATH = 'Tool/art/portrait/verify-frozen-recipe.mjs';
-export const CONTRACT_PATH = 'Tool/art/portrait/portrait-quality-contract.json';
+export const PIPELINE_PATH = 'TOOL/tools/art/portrait/portrait-quality-pipeline.mjs';
+export const FROZEN_RECIPE_VERIFIER_PATH = 'TOOL/tools/art/portrait/verify-frozen-recipe.mjs';
+export const CONTRACT_PATH = 'TOOL/tools/art/portrait/portrait-quality-contract.json';
 const SHA256 = /^[0-9a-f]{64}$/;
 const STATUSES = new Set(['PASS', 'PENDING', 'FAIL']);
 const sha256 = (bytes) => createHash('sha256').update(bytes).digest('hex');
@@ -151,9 +151,9 @@ export function evaluateGate2({ repoRoot, contract }) {
       check('multiply_eligibility', inspected.badMultiply === 0 ? 'PASS' : 'FAIL', { invalid: inspected.badMultiply }),
       check('eye_layer_containment', inspected.eyeColorOutsideWhite === 0 ? 'PASS' : 'FAIL', { color_outside_white_pixels: inspected.eyeColorOutsideWhite, order: ['eyes_white', 'eyes_color', 'eyes_shape'] }),
       check('slot_relation_contract', (() => {
-        const relationsPath = 'Tool/art/portrait/portrait-slot-relations.json';
+        const relationsPath = 'TOOL/tools/art/portrait/portrait-slot-relations.json';
         const relations = readJson(fullPath(repoRoot, relationsPath));
-        const liveIds = JSON.parse(readFileSync(fullPath(repoRoot, 'Tool/art/portrait/portrait-layer-slots.json'), 'utf8')).slots.map((slot) => slot.id);
+        const liveIds = JSON.parse(readFileSync(fullPath(repoRoot, 'TOOL/tools/art/portrait/portrait-layer-slots.json'), 'utf8')).slots.map((slot) => slot.id);
         const relationIds = Object.keys(relations.relations ?? {});
         const covered = relationIds.length === liveIds.length && liveIds.every((id) => relationIds.includes(id));
         const eyeRule = relations.relations?.eyes_white?.contains?.includes('eyes_color') === true
@@ -161,7 +161,7 @@ export function evaluateGate2({ repoRoot, contract }) {
           && relations.relations?.eyes_shape?.occludes?.includes('eyes_white') === true
           && relations.relations?.eyes_shape?.occludes?.includes('eyes_color') === true;
         return relations.mask_rule === 'upper_slot_alpha_is_the_occlusion_mask' && covered && eyeRule ? 'PASS' : 'FAIL';
-      })(), { mask_rule: 'upper_slot_alpha_is_the_occlusion_mask' }, [binding(repoRoot, 'Tool/art/portrait/portrait-slot-relations.json')]),
+      })(), { mask_rule: 'upper_slot_alpha_is_the_occlusion_mask' }, [binding(repoRoot, 'TOOL/tools/art/portrait/portrait-slot-relations.json')]),
       check('eligible_catalog_parity', parity.status, { production_keys: parity.production, eligible_unique_catalog_keys: parity.eligible, missing: parity.missing, extra: parity.extra }),
       check('production_inventory', counts.total === auditReport?.variantsChecked ? 'PASS' : 'FAIL', counts),
     ]);
@@ -173,7 +173,7 @@ async function browserComposite(library, repoRoot, sex, selection) {
   const destination = new Uint8ClampedArray(library.canvas.width * library.canvas.height * 4);
   const order = [...library.slots].sort((a, b) => a.z - b.z);
   // build clipMasks mapping ONLY for must_be_inside (shared with composeFromLibrary)
-  const relationsPath = resolve(repoRoot, 'Tool/art/portrait/portrait-slot-relations.json');
+  const relationsPath = resolve(repoRoot, 'TOOL/tools/art/portrait/portrait-slot-relations.json');
   const relationsData = JSON.parse(readFileSync(relationsPath, 'utf8'));
   const clipMasks = {};
   for (const [slotId, rel] of Object.entries(relationsData.relations || {})) {

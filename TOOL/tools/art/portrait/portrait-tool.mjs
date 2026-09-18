@@ -43,7 +43,7 @@ export const LOGICAL_BUNDLES = Object.freeze({
   face_shape: Object.freeze({ label: '얼굴형', primary: 'face_base', members: Object.freeze(['face_base', 'cheeks', 'chin']) }),
 });
 export const DEFAULT_CANVAS = { width: reviewContract.reference.width, height: reviewContract.reference.height };
-export const TOOL_ID = 'Tool/art/portrait/portrait-tool.mjs';
+export const TOOL_ID = 'TOOL/tools/art/portrait/portrait-tool.mjs';
 
 const PNG_SIG = Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]);
 const digest = (bytes) => createHash('sha256').update(bytes).digest('hex');
@@ -470,7 +470,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
       });
       console.log(JSON.stringify({
         wrote: result.documentPath, portraits: result.bindings.length,
-        next: `node Tool/art/portrait/verify-portrait-binding.mjs --bindings ${result.documentPath} --repo-root "$PWD"`,
+        next: `node TOOL/tools/art/portrait/verify-portrait-binding.mjs --bindings ${result.documentPath} --repo-root "$PWD"`,
       }, null, 2));
     } else {
       throw new Error(USAGE);
