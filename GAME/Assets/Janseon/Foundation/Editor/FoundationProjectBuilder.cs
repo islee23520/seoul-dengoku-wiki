@@ -13,6 +13,10 @@ namespace Janseon.Foundation.Editor
 {
     public static class FoundationProjectBuilder
     {
+        // POC presentation camera until the side-scroll battle module (Intent 결정 10).
+        private const float PocCameraPitchDegrees = 35.264f;
+        private const float PocCameraYawDegrees = 45f;
+
         public static void WireRuntimeSlotCatalog() => RuntimeSlotCatalogBuilder.Wire();
 
         [System.Serializable]
@@ -55,7 +59,7 @@ namespace Janseon.Foundation.Editor
             Camera camera = Object.FindFirstObjectByType<Camera>();
             camera.orthographicSize = 3f;
             camera.transform.position = new Vector3(-9f, 9f, -9f);
-            camera.transform.rotation = Quaternion.Euler(GenreContract.CameraPitchDegrees, GenreContract.CameraYawDegrees, 0f);
+            camera.transform.rotation = Quaternion.Euler(PocCameraPitchDegrees, PocCameraYawDegrees, 0f);
             GameplayUiHost host = Object.FindFirstObjectByType<GameplayUiHost>();
             SetSerializedField(host, "stationCamera", camera);
             EditorUtility.SetDirty(host);
@@ -642,8 +646,8 @@ namespace Janseon.Foundation.Editor
             camera.orthographicSize = 8f;
             camera.transform.position = new Vector3(-12f, 12f, -12f);
             camera.transform.rotation = Quaternion.Euler(
-                GenreContract.CameraPitchDegrees,
-                GenreContract.CameraYawDegrees,
+                PocCameraPitchDegrees,
+                PocCameraYawDegrees,
                 0f);
             camera.clearFlags = CameraClearFlags.SolidColor;
             camera.backgroundColor = new Color(0.043f, 0.067f, 0.118f, 1f);

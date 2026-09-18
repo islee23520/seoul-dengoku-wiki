@@ -12,7 +12,7 @@ namespace Janseon.Foundation.Tests
         {
             Assert.That(
                 PlaceholderVoxelLayout.TileSize,
-                Is.EqualTo(Janseon.Foundation.GenreContract.TileUnityUnits).Within(0.001f));
+                Is.EqualTo(1.5f).Within(0.001f)); // POC presentation scale
         }
 
         [Test]
@@ -27,7 +27,7 @@ namespace Janseon.Foundation.Tests
             Vector3 sindorim = PlaceholderVoxelLayout.StationWorld(StationId.Sindorim);
             Vector3 guro = PlaceholderVoxelLayout.StationWorld(StationId.Guro);
 
-            float tile = Janseon.Foundation.GenreContract.TileUnityUnits;
+            float tile = PlaceholderVoxelLayout.TileSize;
             Assert.That((sindorim - yeong).magnitude, Is.EqualTo(4f * tile).Within(0.001f));
             Assert.That((guro - sindorim).magnitude, Is.EqualTo(4f * tile).Within(0.001f));
             Assert.That(yeong.y, Is.EqualTo(0f).Within(0.001f));

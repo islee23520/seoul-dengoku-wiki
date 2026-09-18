@@ -138,7 +138,8 @@ namespace Janseon.Foundation.Tests
             Assert.That(main, Is.Not.Null, "Isometric Camera must be MainCamera so the 3D world draws to the screen");
             Assert.That(main.targetTexture, Is.Null, "main camera must not be captured into a UI preview texture");
             Assert.That(main.orthographic, Is.True);
-            Assert.That(Mathf.DeltaAngle(main.transform.eulerAngles.x, Janseon.Foundation.GenreContract.CameraPitchDegrees), Is.EqualTo(0f).Within(0.05f));
+            const float pocCameraPitchDegrees = 35.264f; // POC presentation camera until the side-scroll module
+            Assert.That(Mathf.DeltaAngle(main.transform.eulerAngles.x, pocCameraPitchDegrees), Is.EqualTo(0f).Within(0.05f));
 
             HeightmapVoxelWorld world = UnityEngine.Object.FindAnyObjectByType<HeightmapVoxelWorld>();
             Assert.That(world, Is.Not.Null, "POC must spawn heightmap voxel terrain");

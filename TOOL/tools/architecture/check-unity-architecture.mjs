@@ -3,9 +3,9 @@ import { extname, join, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const repositoryRoot = resolve(fileURLToPath(new URL('../../..', import.meta.url)));
-const runtimeRoot = join(repositoryRoot, 'Game', 'Assets', 'Janseon');
-const scenesRoot = join(repositoryRoot, 'Game', 'Assets', 'Scenes');
-const buildSettingsPath = join(repositoryRoot, 'Game', 'ProjectSettings', 'EditorBuildSettings.asset');
+const runtimeRoot = join(repositoryRoot, 'GAME', 'Assets', 'Janseon');
+const scenesRoot = join(repositoryRoot, 'GAME', 'Assets', 'Scenes');
+const buildSettingsPath = join(repositoryRoot, 'GAME', 'ProjectSettings', 'EditorBuildSettings.asset');
 
 const approvedSceneLoader = 'GAME/Assets/Janseon/Foundation/Composition/UnityFoundationSceneLoader.cs';
 const engineFreeSegments = ['/Core/', '/Repository/', '/Repositories/'];
