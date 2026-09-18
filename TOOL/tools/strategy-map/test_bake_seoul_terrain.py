@@ -50,6 +50,24 @@ def chunk_geometry_clamps_water_and_exaggerates():
     assert stats["maxElevMeters"] == 200 and stats["minElevMeters"] == 0
 
 
+def chunk_vertices_use_union_origin_not_chunk_center():
+    import numpy as np
+
+    elev = np.zeros((2, 2), dtype=np.int16)
+    # Union spans x 0..4000, y 0..4000 (two 2000m tiles side by side);
+    # the EAST tile (x 2000..4000) must land east of the world origin.
+    verts, _, _ = bake.build_chunk_geometry(
+        elev, x0_3857=2000.0, y0_3857=0.0, x1_3857=4000.0, y1_3857=2000.0,
+        grid=2, vertical_units_per_meter=0.025,
+        union_origin_x=2000.0, union_origin_y=1000.0,
+    )
+    xs = [v[0] for v in verts]
+    assert min(xs) >= -1e-6 and abs(max(xs) - 2.0) < 1e-6, \
+        f"east tile must span 0..2.0 in union units, got {min(xs)}..{max(xs)}"
+    mid = sum(xs) / len(xs)
+    assert abs(mid - 1.0) < 1e-6, f"east tile midpoint must sit at +1.0, got {mid}"
+
+
 def missing_tile_fails_with_named_file():
     with tempfile.TemporaryDirectory() as tmp:
         partial = Path(tmp) / "partial"
@@ -109,6 +127,7 @@ def main():
     checks = [
         ("tiles_are_nine", tiles_are_nine),
         ("chunk_geometry_clamps_water_and_exaggerates", chunk_geometry_clamps_water_and_exaggerates),
+        ("chunk_vertices_use_union_origin_not_chunk_center", chunk_vertices_use_union_origin_not_chunk_center),
         ("missing_tile_fails_with_named_file", missing_tile_fails_with_named_file),
         ("bake_is_deterministic_and_manifest_is_complete", bake_is_deterministic_and_manifest_is_complete),
         ("main_returns_nonzero_on_missing_input", main_returns_nonzero_on_missing_input),

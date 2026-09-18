@@ -73,8 +73,11 @@ namespace Janseon.Foundation.Presentation
 
         private void ResetCamera()
         {
-            mapCamera.transform.rotation = Quaternion.Euler(55f, 0f, 0f);
-            mapCamera.transform.position = new Vector3(0f, InitialHeight, 14f);
+            // Seoul's north is -Z; sit south of the map and look north-down.
+            // Unity cameras look +Z by default, so yaw 180 aims the pitch-down view
+            // across the whole map (center ray lands near z ~ 4.6).
+            mapCamera.transform.rotation = Quaternion.Euler(55f, 180f, 0f);
+            mapCamera.transform.position = new Vector3(0f, InitialHeight, 34f);
             mapCamera.fieldOfView = 45f;
         }
 

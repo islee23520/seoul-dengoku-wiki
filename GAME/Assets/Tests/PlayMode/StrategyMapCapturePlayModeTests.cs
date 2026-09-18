@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 using Janseon.Core;
 using Janseon.Foundation.Presentation;
 using NUnit.Framework;
@@ -55,6 +56,10 @@ namespace Janseon.Foundation.Tests
                 Assert.That(presenter.MapCamera, Is.Not.Null);
                 Assert.That(presenter.MapCamera.orthographic, Is.False, "decision 10 perspective camera");
 
+                // Captures first, while the camera sits at its default full-map framing.
+                yield return CaptureDiagnostic(presenter.MapCamera, 1280, 720);
+                yield return CaptureDiagnostic(presenter.MapCamera, 1920, 1080);
+
                 Quaternion beforeRotation = presenter.MapCamera.transform.rotation;
                 Vector3 beforePosition = presenter.MapCamera.transform.position;
                 presenter.Pan(new Vector2(5f, 5f));
@@ -65,9 +70,6 @@ namespace Janseon.Foundation.Tests
 
                 presenter.Pan(new Vector2(-500f, -500f)); // clamped to union bounds
                 Assert.That(presenter.MapCamera.transform.position.x, Is.GreaterThanOrEqualTo(StrategyMapCatalog.UnionMinX - 0.01f));
-
-                yield return CaptureDiagnostic(presenter.MapCamera, 1280, 720);
-                yield return CaptureDiagnostic(presenter.MapCamera, 1920, 1080);
             }
             finally
             {
@@ -103,11 +105,32 @@ namespace Janseon.Foundation.Tests
             var target = new RenderTexture(width, height, 24, RenderTextureFormat.ARGB32);
             var tex = new Texture2D(width, height, TextureFormat.RGBA32, false);
             RenderTexture previousActive = RenderTexture.active;
+            // Batchmode loads no URP asset, so URP shaders render magenta under the
+            // built-in fallback; swap URP materials to pipeline-agnostic Unlit/Color
+            // (keeping the chunk tints) so the capture shows real geometry shading.
+            var swapped = new List<(MeshRenderer renderer, Material original)>();
             try
             {
+                Shader unlitColor = Shader.Find("Unlit/Color");
+                foreach (MeshRenderer renderer in camera.transform.parent.GetComponentsInChildren<MeshRenderer>(true))
+                {
+                    if (renderer.sharedMaterial != null && renderer.sharedMaterial.shader.name.StartsWith("Universal"))
+                    {
+                        var replacement = new Material(unlitColor);
+                        replacement.color = renderer.sharedMaterial.HasColor("_BaseColor")
+                            ? renderer.sharedMaterial.GetColor("_BaseColor")
+                            : Color.white;
+                        swapped.Add((renderer, renderer.sharedMaterial));
+                        renderer.sharedMaterial = replacement;
+                    }
+                }
                 target.Create();
                 RenderTexture.active = target;
                 camera.targetTexture = target;
+                // Batchmode Camera.Render does not refresh camera.aspect from the
+                // target texture (known Unity behavior): pin it explicitly or the
+                // view renders as a square slice stretched over the frame.
+                camera.aspect = (float)width / height;
                 camera.Render();
                 tex.ReadPixels(new Rect(0, 0, width, height), 0, 0);
                 tex.Apply();
@@ -121,15 +144,33 @@ namespace Janseon.Foundation.Tests
                 }
                 string topColors = string.Join(",", histogram.OrderByDescending(kv => kv.Value).Take(4).Select(kv => $"{kv.Key}={kv.Value}"));
 
+                // Ground-truth dump: where does the engine itself project the chunk centers?
+                var sb = new StringBuilder();
+                sb.AppendLine($"camera pos={camera.transform.position} rot={camera.transform.eulerAngles} fwd={camera.transform.forward}");
+                for (int i = 0; i < StrategyMapCatalog.Chunks.Length; i++)
+                {
+                    var b = StrategyMapCatalog.Chunks[i];
+                    var world = new Vector3((b.MinX + b.MaxX) * 0.5f, 5f, (b.MinZ + b.MaxZ) * 0.5f);
+                    sb.AppendLine($"chunk{i} tile{b.TileX}/{b.TileY} world={world} viewport={camera.WorldToViewportPoint(world)}");
+                }
+                foreach (MeshRenderer renderer in camera.transform.parent.GetComponentsInChildren<MeshRenderer>(true))
+                {
+                    sb.AppendLine($"renderer {renderer.name} mat={(renderer.sharedMaterial != null ? renderer.sharedMaterial.shader.name : "null")} visible={renderer.isVisible} bounds={renderer.bounds}");
+                }
+
                 string dir = Path.Combine(ProjectRoot(), EvidenceDir);
                 Directory.CreateDirectory(dir);
                 string metaPath = Path.Combine(dir, $"strategy-map-{width}x{height}-histogram.txt");
-                File.WriteAllText(metaPath, $"batchmode Camera.Render diagnostic; top colors {topColors}\n");
+                File.WriteAllText(metaPath, $"batchmode Camera.Render diagnostic; top colors {topColors}\n{sb}\n");
 
                 File.WriteAllBytes(Path.Combine(dir, $"strategy-map-{width}x{height}.png"), tex.EncodeToPNG());
             }
             finally
             {
+                foreach (var (renderer, original) in swapped)
+                {
+                    renderer.sharedMaterial = original;
+                }
                 camera.targetTexture = null;
                 RenderTexture.active = previousActive;
                 target.Release();

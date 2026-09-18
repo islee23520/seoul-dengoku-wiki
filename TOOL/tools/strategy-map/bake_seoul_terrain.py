@@ -72,8 +72,13 @@ def read_tile(path: Path):
     return np.asarray(band, dtype=np.int32), (bounds.left, bounds.bottom, bounds.right, bounds.top)
 
 
-def build_chunk_geometry(elev, x0_3857, y0_3857, x1_3857, y1_3857, grid, vertical_units_per_meter, water_level_meters=0.0):
-    """Downsample the 512x512 int band to grid x grid, clamp water, exaggerate."""
+def build_chunk_geometry(elev, x0_3857, y0_3857, x1_3857, y1_3857, grid, vertical_units_per_meter, water_level_meters=0.0, union_origin_x=None, union_origin_y=None):
+    """Downsample the 512x512 int band to grid x grid, clamp water, exaggerate.
+
+    Vertices are placed in union space: unless union_origin_* is given, the
+    chunk is centered on its own bounds (legacy behavior). The bake passes the
+    union origin so all nine chunks share one world frame.
+    """
     import numpy as np
 
     height, width = elev.shape
@@ -85,8 +90,8 @@ def build_chunk_geometry(elev, x0_3857, y0_3857, x1_3857, y1_3857, grid, vertica
     means = np.where(means <= water_level_meters, float(water_level_meters), means)
     means = np.where(means == NODATA, float(water_level_meters), means)
 
-    origin_x = (x0_3857 + x1_3857) * 0.5
-    origin_y = (y0_3857 + y1_3857) * 0.5
+    origin_x = (x0_3857 + x1_3857) * 0.5 if union_origin_x is None else union_origin_x
+    origin_y = (y0_3857 + y1_3857) * 0.5 if union_origin_y is None else union_origin_y
     scale = 0.001  # 1 Unity unit = 1 km of EPSG:3857 distance
 
     vertices: list[tuple[float, float, float]] = []
@@ -104,8 +109,10 @@ def build_chunk_geometry(elev, x0_3857, y0_3857, x1_3857, y1_3857, grid, vertica
             b = a + 1
             c = a + grid
             d = c + 1
-            faces.append((a + 1, c + 1, b + 1))  # 1-indexed OBJ
-            faces.append((b + 1, c + 1, d + 1))
+            # Unity renders faces wound clockwise when seen from the visible side;
+            # this winding shows the top surface from +Y looking down.
+            faces.append((a + 1, b + 1, c + 1))  # 1-indexed OBJ
+            faces.append((b + 1, d + 1, c + 1))
 
     stats = {
         "minElevMeters": float(means.min()),
@@ -182,6 +189,8 @@ def bake_osm_lines(bundle_dir: Path, origin_x, origin_y, scale):
 
     lines: list[dict] = []
 
+    from rasterio.warp import transform as rio_transform
+
     class WayHandler(osmium.SimpleHandler):
         def way(self, w):
             tags = w.tags
@@ -194,13 +203,20 @@ def bake_osm_lines(bundle_dir: Path, origin_x, origin_y, scale):
             if kind is None:
                 return
             coords = []
+            lons = []
+            lats = []
             for node in w.nodes:
                 loc = node.location
                 if loc.valid():
-                    coords.append([
-                        round((loc.x - origin_x) * scale, 6),
-                        round(-(loc.y - origin_y) * scale, 6),
-                    ])
+                    # pyosmium hands out WGS84 as 1e7-scaled integers; project to EPSG:3857.
+                    lons.append(loc.x / 1e7)
+                    lats.append(loc.y / 1e7)
+            if len(lons) >= 2:
+                xs, ys = rio_transform(WGS84, WEB_MERCATOR, lons, lats)
+                coords = [
+                    [round((x - origin_x) * scale, 6), round(-(y - origin_y) * scale, 6)]
+                    for x, y in zip(xs, ys)
+                ]
             if len(coords) >= 2:
                 lines.append({"kind": kind, "points": coords})
 
@@ -252,6 +268,7 @@ def bake(bundle_dir: Path, out_dir: Path, grid: int = 128, vertical_units_per_me
         vertices, faces, stats = build_chunk_geometry(
             elev, bounds[0], bounds[1], bounds[2], bounds[3],
             grid=grid, vertical_units_per_meter=vertical_units_per_meter,
+            union_origin_x=origin_x, union_origin_y=origin_y,
         )
         obj_name = f"chunk-{x}-{y}.obj"
         write_obj(
