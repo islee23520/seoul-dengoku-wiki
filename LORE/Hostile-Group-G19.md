@@ -3,7 +3,7 @@
 이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.
 
 - 원본 앵커: `LORE/World-Narrative-Atlas.md`
-- 원본 해시: `dc628e97ef75821884ba0be2a2b436bc2953ddff892e66d1dfb632c904c2efcd`
+- 원본 해시: `b65cc5a5821cb06f62d093e76b1afab655da99481b34fa0e33f46d45dcb8dbb9`
 
 
 냉각수색인균체는 열교환기 전단, 밸브 포켓 계측기 보호관처럼 흐름이 완만한 금속 표면에서 가장 안정적으로 유지된다.

@@ -3,7 +3,7 @@
 이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.
 
 - 원본 앵커: `LORE/World-Narrative-Atlas.md`
-- 원본 해시: `dc628e97ef75821884ba0be2a2b436bc2953ddff892e66d1dfb632c904c2efcd`
+- 원본 해시: `b65cc5a5821cb06f62d093e76b1afab655da99481b34fa0e33f46d45dcb8dbb9`
 
 
 규격동맹 구로공단 기숙 잔존 회랑의 야간 분류동은 심야 두 시가 지나면 사람보다 먼저 깨어난다.
