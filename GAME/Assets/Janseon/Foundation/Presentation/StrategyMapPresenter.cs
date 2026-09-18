@@ -44,12 +44,22 @@ namespace Janseon.Foundation.Presentation
         {
             chunkRoot = new GameObject("strategy-map-chunks").transform;
             chunkRoot.SetParent(transform, false);
+            Shader unlit = Shader.Find("Universal Render Pipeline/Unlit");
             for (int i = 0; i < chunkMeshes.Count; i++)
             {
                 var child = new GameObject($"chunk-{StrategyMapCatalog.Chunks[i].TileX}-{StrategyMapCatalog.Chunks[i].TileY}");
                 child.transform.SetParent(chunkRoot, false);
                 child.AddComponent<MeshFilter>().sharedMesh = chunkMeshes[i];
-                child.AddComponent<MeshRenderer>();
+                var renderer = child.AddComponent<MeshRenderer>();
+                if (unlit != null)
+                {
+                    // Distinct tint per chunk so captures show the 3x3 chunk coverage.
+                    var material = new Material(unlit);
+                    var tint = Color.HSVToRGB((i % 3) / 3f, 0.45f, 0.55f + (i / 3) * 0.15f);
+                    material.SetColor("_BaseColor", tint);
+                    material.color = tint;
+                    renderer.sharedMaterial = material;
+                }
             }
 
             var cameraObject = new GameObject("strategy-map-camera");
