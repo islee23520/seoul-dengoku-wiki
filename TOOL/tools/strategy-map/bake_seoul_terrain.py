@@ -72,7 +72,7 @@ def read_tile(path: Path):
     return np.asarray(band, dtype=np.int32), (bounds.left, bounds.bottom, bounds.right, bounds.top)
 
 
-def build_chunk_geometry(elev, x0_3857, y0_3857, x1_3857, y1_3857, grid, vertical_units_per_meter, water_level_meters=0.0, union_origin_x=None, union_origin_y=None):
+def build_chunk_geometry(elev, x0_3857, y0_3857, x1_3857, y1_3857, grid, vertical_units_per_meter, water_level_meters=0.0, union_origin_x=None, union_origin_y=None, smooth=True):
     """Downsample the 512x512 int band to grid x grid, clamp water, exaggerate.
 
     Vertices are placed in union space: unless union_origin_* is given, the
@@ -89,6 +89,10 @@ def build_chunk_geometry(elev, x0_3857, y0_3857, x1_3857, y1_3857, grid, vertica
     means = padded.mean(axis=(1, 3))
     means = np.where(means <= water_level_meters, float(water_level_meters), means)
     means = np.where(means == NODATA, float(water_level_meters), means)
+    # Gentle CK3-style relief: soften the DEM before shading/meshing.
+    if smooth:
+        from scipy.ndimage import gaussian_filter
+        means = gaussian_filter(means, sigma=max(1.0, grid / 64.0))
 
     origin_x = (x0_3857 + x1_3857) * 0.5 if union_origin_x is None else union_origin_x
     origin_y = (y0_3857 + y1_3857) * 0.5 if union_origin_y is None else union_origin_y
@@ -122,23 +126,44 @@ def build_chunk_geometry(elev, x0_3857, y0_3857, x1_3857, y1_3857, grid, vertica
             faces.append((a + 1, b + 1, c + 1))  # 1-indexed OBJ
             faces.append((b + 1, d + 1, c + 1))
 
+    # Averaged per-vertex normals give smooth shading (flat faces look faceted).
+    normals = _smooth_normals(vertices, faces)
+
     stats = {
         "minElevMeters": float(means.min()),
         "maxElevMeters": float(means.max()),
         "vertexCount": len(vertices),
         "faceCount": len(faces),
     }
-    return vertices, uvs, faces, stats
+    return vertices, uvs, normals, faces, stats
 
 
-def write_obj(path: Path, vertices, uvs, faces, comment: str) -> None:
+def _smooth_normals(vertices, faces):
+    import numpy as np
+
+    verts = np.asarray(vertices, dtype=np.float64)
+    acc = np.zeros_like(verts)
+    tri = verts[np.asarray(faces, dtype=np.int64) - 1]
+    face_n = np.cross(tri[:, 1] - tri[:, 0], tri[:, 2] - tri[:, 0])
+    lens = np.linalg.norm(face_n, axis=1, keepdims=True)
+    face_n = face_n / np.where(lens < 1e-12, 1.0, lens)
+    for corner in range(3):
+        np.add.at(acc, np.asarray(faces, dtype=np.int64)[:, corner] - 1, face_n)
+    lens = np.linalg.norm(acc, axis=1, keepdims=True)
+    acc = acc / np.where(lens < 1e-12, 1.0, lens)
+    return [tuple(n) for n in acc]
+
+
+def write_obj(path: Path, vertices, uvs, normals, faces, comment: str) -> None:
     lines = [f"# {comment}"]
     for x, y, z in vertices:
         lines.append(f"v {x:.6f} {y:.6f} {z:.6f}")
     for u, v in uvs:
         lines.append(f"vt {u:.6f} {v:.6f}")
+    for nx, ny, nz in normals:
+        lines.append(f"vn {nx:.6f} {ny:.6f} {nz:.6f}")
     for a, b, c in faces:
-        lines.append(f"f {a}/{a} {b}/{b} {c}/{c}")
+        lines.append(f"f {a}/{a}/{a} {b}/{b}/{b} {c}/{c}/{c}")
     path.write_text("\n".join(lines) + "\n", encoding="ascii")
 
 
@@ -254,7 +279,7 @@ def bundle_input_hashes(bundle_dir: Path, tile_paths) -> list[dict]:
     return inputs
 
 
-def bake(bundle_dir: Path, out_dir: Path, grid: int = 128, vertical_units_per_meter: float = 0.025,
+def bake(bundle_dir: Path, out_dir: Path, grid: int = 128, vertical_units_per_meter: float = 0.012,
          include_osm: bool = True) -> dict:
     import numpy as np
 
@@ -275,14 +300,14 @@ def bake(bundle_dir: Path, out_dir: Path, grid: int = 128, vertical_units_per_me
     chunks = []
     for (x, y) in sorted(tiles):
         elev, bounds = tiles[(x, y)]
-        vertices, uvs, faces, stats = build_chunk_geometry(
+        vertices, uvs, normals, faces, stats = build_chunk_geometry(
             elev, bounds[0], bounds[1], bounds[2], bounds[3],
             grid=grid, vertical_units_per_meter=vertical_units_per_meter,
             union_origin_x=origin_x, union_origin_y=origin_y,
         )
         obj_name = f"chunk-{x}-{y}.obj"
         write_obj(
-            out_dir / obj_name, vertices, uvs, faces,
+            out_dir / obj_name, vertices, uvs, normals, faces,
             comment=f"seoul-strategy-map chunk z{ZOOM}/{x}/{y} (decision 10)",
         )
         world_min_x = (bounds[0] - origin_x) * scale
@@ -344,6 +369,7 @@ def main(argv=None) -> int:
     parser.add_argument("--bundle", required=True)
     parser.add_argument("--out", required=True)
     parser.add_argument("--grid", type=int, default=128)
+    parser.add_argument("--vertical", type=float, default=0.012)
     parser.add_argument("--no-osm", dest="include_osm", action="store_false")
     args = parser.parse_args(argv)
 
@@ -352,7 +378,7 @@ def main(argv=None) -> int:
         print(f"bake: bundle not found: {bundle}", file=sys.stderr)
         return 2
     try:
-        manifest = bake(bundle, Path(args.out), grid=args.grid, include_osm=args.include_osm)
+        manifest = bake(bundle, Path(args.out), grid=args.grid, vertical_units_per_meter=args.vertical, include_osm=args.include_osm)
     except BakeError as exc:
         print(f"bake: {exc}", file=sys.stderr)
         return 3

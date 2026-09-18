@@ -39,9 +39,9 @@ def chunk_geometry_clamps_water_and_exaggerates():
     import numpy as np
 
     elev = np.array([[0, -32768], [100, 200]], dtype=np.int16)
-    verts, faces, stats = bake.build_chunk_geometry(
+    verts, uvs, normals, faces, stats = bake.build_chunk_geometry(
         elev, x0_3857=0.0, y0_3857=0.0, x1_3857=2000.0, y1_3857=2000.0,
-        grid=2, vertical_units_per_meter=0.025,
+        grid=2, vertical_units_per_meter=0.025, smooth=False,
     )
     ys = [v[1] for v in verts]
     assert min(ys) >= 0.0, f"water must clamp at 0, got {min(ys)}"
@@ -56,7 +56,7 @@ def chunk_vertices_use_union_origin_not_chunk_center():
     elev = np.zeros((2, 2), dtype=np.int16)
     # Union spans x 0..4000, y 0..4000 (two 2000m tiles side by side);
     # the EAST tile (x 2000..4000) must land east of the world origin.
-    verts, _, _ = bake.build_chunk_geometry(
+    verts, _, _, _, _ = bake.build_chunk_geometry(
         elev, x0_3857=2000.0, y0_3857=0.0, x1_3857=4000.0, y1_3857=2000.0,
         grid=2, vertical_units_per_meter=0.025,
         union_origin_x=2000.0, union_origin_y=1000.0,

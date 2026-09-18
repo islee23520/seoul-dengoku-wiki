@@ -39,7 +39,7 @@ from bake_seoul_terrain import (
 )
 
 ZOOM = 11
-TEXTURE_SIZE = 1024
+TEXTURE_SIZE = 2048
 
 # Sixteen-States canon (LORE/World-Map-Construction.md 권역표 + LORE/Sixteen-States.md).
 # gu name (KOSTAT "···구") -> state id; one hue per state.
@@ -225,12 +225,19 @@ def bake_textures(bundle_dir: Path, baked_dir: Path, grid: int = 128) -> dict:
         ]
         overlay = Image.new("RGBA", (TEXTURE_SIZE, TEXTURE_SIZE), (0, 0, 0, 0))
         draw = ImageDraw.Draw(overlay)
-        color_map = {"building": (70, 70, 78, 235), "vegetation": (74, 122, 68, 210), "water": (30, 66, 124, 255)}
+        color_map = {
+            "building": (126, 118, 108, 240),      # warm stone gray
+            "vegetation": (58, 110, 54, 235),      # rich painterly green
+            "water": (26, 74, 138, 255),           # deep sea blue
+        }
+        for k, ring in polygons_here:
+            if k == "water" and len(ring) >= 3:
+                draw.polygon(ring, outline=(94, 148, 200, 255), width=10)  # shallow coast band
         for kind in ("vegetation", "building", "water"):
             for k, ring in polygons_here:
                 if k == kind and len(ring) >= 3:
                     draw.polygon(ring, fill=color_map[kind])
-        for kind, color, width in (("road", (208, 200, 186, 230), 3), ("rail", (90, 78, 88, 220), 2), ("river", (40, 84, 148, 255), 6)):
+        for kind, color, width in (("road", (196, 176, 138, 235), 4), ("rail", (110, 96, 104, 220), 3), ("river", (36, 92, 160, 255), 9)):
             for k, pts in lines:
                 if k != kind:
                     continue
@@ -252,8 +259,9 @@ def bake_textures(bundle_dir: Path, baked_dir: Path, grid: int = 128) -> dict:
             state = STATE_OF_GU.get(gu_name)
             if state is None:
                 continue
-            r, g, b = hsv_to_rgb(state_hue(state), 0.62, 1.0)
-            rdraw.polygon(px, fill=(r, g, b, 46), outline=(r, g, b, 255))
+            r, g, b = hsv_to_rgb(state_hue(state), 0.55, 0.92)
+            rdraw.polygon(px, fill=(r, g, b, 132), outline=(12, 12, 16, 255), width=9)
+            rdraw.polygon(px, outline=(min(r + 70, 255), min(g + 70, 255), min(b + 70, 255), 255), width=3)
         img = Image.alpha_composite(img.convert("RGBA"), overlay)
         img = Image.alpha_composite(img, region).convert("RGB")
 

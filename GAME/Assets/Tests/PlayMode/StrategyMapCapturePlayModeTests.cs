@@ -60,6 +60,27 @@ namespace Janseon.Foundation.Tests
 
                 // Captures first, while the camera sits at its default full-map framing.
                 var sb = new StringBuilder();
+
+                // Streaming acceptance: scroll across ALL of Seoul; every stop must render.
+                presenter.EnableStreaming(radius: 40f);
+                Assert.That(presenter.StreamingEnabled, Is.True);
+                var sweep = new (string name, float x, float z)[]
+                {
+                    ("sweep-west", StrategyMapCatalog.UnionMinX + 6f, 0f),
+                    ("sweep-north", 0f, StrategyMapCatalog.UnionMinZ + 6f),
+                    ("sweep-center", 0f, 0f),
+                    ("sweep-south", 0f, StrategyMapCatalog.UnionMaxZ - 6f),
+                    ("sweep-east", StrategyMapCatalog.UnionMaxX - 6f, 0f),
+                };
+                foreach (var stop in sweep)
+                {
+                    presenter.MapCamera.transform.position = new Vector3(stop.x, 24f, stop.z + 14f);
+                    presenter.RefreshStreaming();
+                    yield return CaptureDiagnostic(presenter.MapCamera, 1280, 720, stop.name);
+                }
+                presenter.MapCamera.transform.rotation = Quaternion.Euler(55f, 180f, 0f);
+                presenter.MapCamera.transform.position = new Vector3(0f, 42f, 34f);
+                presenter.DisableStreaming();
                 foreach (StrategyMapWeatherKind weather in System.Enum.GetValues(typeof(StrategyMapWeatherKind)))
                 {
                     presenter.SetWeather(weather);

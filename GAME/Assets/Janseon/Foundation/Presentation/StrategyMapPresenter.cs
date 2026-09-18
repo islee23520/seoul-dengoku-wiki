@@ -64,6 +64,66 @@ namespace Janseon.Foundation.Presentation
 
         public Camera MapCamera => mapCamera;
 
+        public bool StreamingEnabled { get; private set; }
+
+        /// <summary>
+        /// Enables distance-based chunk streaming: only chunks within the given
+        /// world-unit radius of the camera stay active while scrolling, like a
+        /// strategy map that pages terrain in as you pan. All nine chunks
+        /// remain loaded — the user can scroll across the whole city.
+        /// </summary>
+        public void EnableStreaming(float radius = 34f)
+        {
+            streamRadius = radius;
+            StreamingEnabled = true;
+            UpdateStreaming();
+        }
+
+        public void DisableStreaming()
+        {
+            StreamingEnabled = false;
+            if (chunkRoot == null) return;
+            for (int i = 0; i < chunkRoot.childCount; i++) chunkRoot.GetChild(i).gameObject.SetActive(true);
+        }
+
+        private float streamRadius = 34f;
+
+        private void Update()
+        {
+            if (!StreamingEnabled || mapCamera == null) return;
+            // Drag-to-scroll with the mouse (left button held).
+            if (Input.GetMouseButtonDown(0)) dragOrigin = Input.mousePosition;
+            if (Input.GetMouseButton(0) && dragOrigin.HasValue)
+            {
+                Vector3 delta = Input.mousePosition - dragOrigin.Value;
+                Pan(new Vector2(-delta.x * 0.02f, delta.y * 0.02f));
+                dragOrigin = Input.mousePosition;
+            }
+            UpdateStreaming();
+        }
+
+        private Vector3? dragOrigin;
+
+        private void UpdateStreaming()
+        {
+            if (chunkRoot == null || mapCamera == null) return;
+            Vector3 position = mapCamera.transform.position;
+            float radiusSq = streamRadius * streamRadius;
+            for (int i = 0; i < chunkRoot.childCount; i++)
+            {
+                Transform child = chunkRoot.GetChild(i);
+                var b = StrategyMapCatalog.Chunks[i];
+                float cx = (b.MinX + b.MaxX) * 0.5f;
+                float cz = (b.MinZ + b.MaxZ) * 0.5f;
+                float dx = cx - position.x;
+                float dz = cz - position.z;
+                child.gameObject.SetActive(dx * dx + dz * dz <= radiusSq);
+            }
+        }
+
+        /// <summary>Immediate streaming refresh after moving the camera (tests/tools).</summary>
+        public void RefreshStreaming() => UpdateStreaming();
+
         public ParticleSystem RainSystem => rainSystem;
 
         public ParticleSystem SnowSystem => snowSystem;
