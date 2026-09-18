@@ -8,9 +8,9 @@ import { fileURLToPath } from 'node:url';
 
 const verifier = fileURLToPath(new URL('./verify-cast.mjs', import.meta.url));
 const T0 = [
-  '한재목', '강민서', '서이안', '임하준', '배우진', '임초원', '윤서린',
-  '박태겸', '오해린', '문가람', '백온', '김도윤', '장세화', '류은비',
-  '고서준', '남윤경', '정유라',
+  '한재목', '강민서', '정호준', '임하준', '배우진', '임초원', '윤서린',
+  '박태겸', '오해린', '최지우', '백온', '이홍원', '장세화', '류은비',
+  '고서준', '남윤경', '정유라', '오경재',
 ];
 const FIELDS = ['소속', '직위', '성격', '개인 야망', '공포', '통치 방식', '핵심 관계', '촉발 사건', '플레이어 개입'];
 const fixtures = [];
@@ -62,6 +62,7 @@ function unaffiliatedCardMd(name, { id = 'x-id', omit = [] } = {}) {
 
 async function makeFixture({
   coreNames = T0,
+  coreHeadings = null,
   omit = {},
   stateProfiles = {},
   relations = null,
@@ -71,7 +72,11 @@ async function makeFixture({
   const dir = await mkdtemp(join(tmpdir(), 'verify-cast-'));
   fixtures.push(dir);
   const core = coreNames.map((name) => profileMd(name, { omit: omit[name] || [] })).join('\n');
-  await writeFile(join(dir, 'Core-Characters.md'), `# core\n\n${core}`);
+  // ## 인물 표제는 카드와 같은 직위 총을 가져야 R2 신원 확인이 성립한다.
+  const headings = (coreHeadings ?? [])
+    .map((name) => `## ${name}\n\n- 직위: x\n`)
+    .join('\n');
+  await writeFile(join(dir, 'Core-Characters.md'), `# core\n\n${core}${headings ? `\n${headings}` : ''}`);
   for (const [file, names] of Object.entries(stateProfiles)) {
     const body = names.map((name) => profileMd(name, { omit: omit[name] || [] })).join('\n');
     await writeFile(join(dir, file), body);
@@ -101,13 +106,31 @@ test('happy path: T0 roster --stage s0 exits 0 without RULE lines', async () => 
 
 test('R1: total below --min', async () => {
   const docs = await makeFixture();
-  const result = run(docs, ['--min', '18']);
+  const result = run(docs, ['--min', String(T0.length + 1)]);
   assert.equal(result.code, 1);
   assert.match(result.stderr, /^R1:/m);
 });
 
 test('R2: duplicate name', async () => {
   const docs = await makeFixture({ coreNames: [...T0, '한재목'] });
+  const result = run(docs);
+  assert.equal(result.code, 1);
+  assert.match(result.stderr, /^R2:/m);
+  assert.match(result.stderr, /한재목/);
+});
+
+test('R2: ruler duplicated in Core and exactly one Cast-State is whitelisted', async () => {
+  const docs = await makeFixture({ coreHeadings: T0, stateProfiles: { 'Cast-State-01.md': ['한재목'] } });
+  const result = run(docs);
+  assert.equal(result.code, 0);
+  assert.doesNotMatch(result.output, /^R\d+:/m);
+});
+
+test('R2: a third copy of the ruler duplicate still fails', async () => {
+  const docs = await makeFixture({
+    coreHeadings: T0,
+    stateProfiles: { 'Cast-State-01.md': ['한재목'], 'Cast-State-02.md': ['한재목'] },
+  });
   const result = run(docs);
   assert.equal(result.code, 1);
   assert.match(result.stderr, /^R2:/m);
@@ -130,11 +153,12 @@ test('R3: non-hangul name', async () => {
   assert.match(result.stderr, /Kim/);
 });
 
-test('R4: T0 set mismatch', async () => {
-  const docs = await makeFixture({ coreNames: T0.filter((name) => name !== '정유라') });
+test('R4: T0 roster derives from Core ## headings; mismatch fails', async () => {
+  const docs = await makeFixture({ coreHeadings: T0.filter((name) => name !== '정유라') });
   const result = run(docs);
   assert.equal(result.code, 1);
   assert.match(result.stderr, /^R4:/m);
+  assert.match(result.stderr, /정유라/);
 });
 
 test('R5: missing field', async () => {
@@ -192,7 +216,7 @@ test('R9: isolate when relations exist', async () => {
   const result = run(docs);
   assert.equal(result.code, 1);
   assert.match(result.stderr, /^R9:/m);
-  assert.match(result.stderr, /서이안/);
+  assert.match(result.stderr, /정호준/);
 });
 
 test('R10: unknown relation type', async () => {
@@ -255,15 +279,16 @@ test('R14: Cast-Index 관계 수 must equal outgoing edge count (송신 간선 �
   assert.equal(ok.code, 0);
   assert.doesNotMatch(ok.output, /R14/);
 
-  // 계약 위반 mutation: 정유라는 outgoing 0·incoming 1 — 수신 간선을 세어 적은 값은 실패해야 한다.
+  // 계약 위반 mutation: 사슬 끝 이름은 outgoing 0·incoming 1 — 수신 간선을 세어 적은 값은 실패해야 한다.
+  const chainEnd = T0[T0.length - 1];
   const mutated = rows.map(([name, position, stage, count]) => (
-    name === '정유라' ? [name, position, stage, '1'] : [name, position, stage, count]
+    name === chainEnd ? [name, position, stage, '1'] : [name, position, stage, count]
   ));
   const broken = await makeFixture({ relations: relationsMd(chain), castIndex: castIndexMd(mutated) });
   const bad = run(broken);
   assert.equal(bad.code, 1);
   assert.match(bad.stderr, /^R14:/m);
-  assert.match(bad.stderr, /정유라/);
+  assert.match(bad.stderr, new RegExp(chainEnd));
 });
 
 test('unaffiliated cards: parsed, full fields, distinct IDs, directed edge, outgoing counts (happy)', async () => {

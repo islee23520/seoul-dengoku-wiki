@@ -7,7 +7,7 @@
 이 페이지의 회랑 산문은 World-Narrative-Atlas의 읽기 전용 투영입니다.
 
 - 원본 앵커: `LORE/World-Narrative-Atlas.md`
-- 원본 해시: `7fadca395f92d4db23acdbbb047b1f75e3b9603f41fed8a22cf4b52b2c434663`
+- 원본 해시: `dc628e97ef75821884ba0be2a2b436bc2953ddff892e66d1dfb632c904c2efcd`
 
 ## XT01 · 임진강관문전구
 

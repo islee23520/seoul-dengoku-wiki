@@ -29,7 +29,7 @@ const NEW_PEOPLE = [
     locked: false,
   },
 ];
-const EXPECTED_COUNT = 1003;
+const EXPECTED_COUNT = 1004;
 
 function validatePersonEnvelopes(people, errors) {
   const seen = new Set();

@@ -3,7 +3,7 @@
 이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.
 
 - 원본 앵커: `LORE/World-Narrative-Atlas.md`
-- 원본 해시: `7fadca395f92d4db23acdbbb047b1f75e3b9603f41fed8a22cf4b52b2c434663`
+- 원본 해시: `dc628e97ef75821884ba0be2a2b436bc2953ddff892e66d1dfb632c904c2efcd`
 
 ## B001
 
@@ -30,7 +30,7 @@
 | K329 | 동늘솔 | korean-origin |  | S13 |
 | K355 | 원예나 | korean-origin |  | S14 |
 | K380 | 동미온 | korean-origin |  | S15 |
-| K057 | 서이안 | multicultural | korea-born-multicultural | S03 |
+| K057 | 정호준 | multicultural | korea-born-multicultural | S03 |
 | K086 | 임하준 | multicultural | korea-born-multicultural | S04 |
 | K273 | 조우찬 | multicultural | chinese-diaspora | S11 |
 | H02 | 서린 | synthetic |  | S02 |
@@ -75,7 +75,7 @@
 | K381 | 방늘재 | korean-origin |  | S15 |
 | K406 | 원새울 | korean-origin |  | S16 |
 | K010 | 허도담 | korean-origin |  | S01 |
-| K219 | 문가람 | multicultural | korea-born-multicultural | S09 |
+| K219 | 최지우 | multicultural | korea-born-multicultural | S09 |
 | K245 | 백온 | multicultural | korea-born-multicultural | S10 |
 | K350 | 안기준 | multicultural | chinese-diaspora | S14 |
 | H05 | 윤재 | synthetic |  | S05 |
@@ -90,7 +90,7 @@
 | K124 | 양필호 | korean-origin |  | S05 |
 | K153 | 나선재 | korean-origin |  | S06 |
 | K178 | 설민우 | korean-origin |  | S07 |
-| K271 | 김도윤 | multicultural | korea-born-multicultural | S11 |
+| K271 | 이홍원 | multicultural | korea-born-multicultural | S11 |
 | K296 | 장세화 | multicultural | korea-born-multicultural | S12 |
 | K375 | 라진우 | multicultural | chinese-diaspora | S15 |
 | H06 | 박솔 | synthetic |  | S06 |

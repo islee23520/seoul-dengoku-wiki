@@ -3,7 +3,7 @@
 이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.
 
 - 원본 앵커: `LORE/World-Narrative-Atlas.md`
-- 원본 해시: `7fadca395f92d4db23acdbbb047b1f75e3b9603f41fed8a22cf4b52b2c434663`
+- 원본 해시: `dc628e97ef75821884ba0be2a2b436bc2953ddff892e66d1dfb632c904c2efcd`
 
 
 S11 창동 차량기지의 죽은 측선이 먼저 울리고, 몇 초 뒤 정비고 안쪽에서 금속 무릎 하나가 천천히 펴진다.
