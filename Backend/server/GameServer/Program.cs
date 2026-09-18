@@ -106,6 +106,10 @@ namespace SeoulKenshi.GameServer
 
                 await wcfService.StartAsync().ConfigureAwait(false);
 
+                log.Info("Start Session Relay Hub .....");
+                await Realtime.RelayHost.StartAsync(settings.RealtimePort).ConfigureAwait(false);
+                log.Info($"Session Relay Hub Running..... port: {Realtime.RelayHost.Port}");
+
                 //프로세스 타이머
                 log.Info("Set Process Timmer(interval: 1 min)");
                 timer1Min = new HighResTimer();
@@ -133,6 +137,7 @@ namespace SeoulKenshi.GameServer
         {
             timer10Sec?.Stop();
             timer1Min?.Stop();
+            await Realtime.RelayHost.StopAsync().ConfigureAwait(false);
             await wcfService.StopServiceAsync().ConfigureAwait(false);
             var Log = log4net.LogManager.GetLogger(LogName.Debug);
             Log.Info("Stop Service.");
@@ -168,7 +173,8 @@ namespace SeoulKenshi.GameServer
         {
             try
             {
-                //CheckNewSpecData();
+                // 호스트 세션 생존 스윕(ADR-005): 호스트 무응답 세션 마감, 무응답 게스트 퇴장.
+                Realtime.RelayHost.RunSweep();
             }
             catch (Exception e)
             {
