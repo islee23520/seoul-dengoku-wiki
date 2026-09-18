@@ -144,7 +144,7 @@
   ],
   "logical_bundles": {
     "clothes": {
-      "label": "\uc758\uc0c1",
+      "label": "의상",
       "primary": "clothes",
       "members": [
         "clothes_back",
@@ -153,7 +153,7 @@
       ]
     },
     "hair": {
-      "label": "\ud5e4\uc5b4",
+      "label": "헤어",
       "primary": "hair",
       "members": [
         "hair_back",
@@ -161,7 +161,7 @@
       ]
     },
     "face_shape": {
-      "label": "\uc5bc\uad74\ud615",
+      "label": "얼굴형",
       "primary": "face_base",
       "members": [
         "face_base",
@@ -484,7 +484,7 @@
               "id": "female-face-base-01",
               "label": "Female face base 01 authoritative target split",
               "path": "plates/female/face_base/female-face-base-01.png",
-              "sha256": "e6c2fb931e090d7c3a70efb7621d04d255e620066e98af1fdd75cd8ba5bb1c3d",
+              "sha256": "547ce80ce64955a4e8df493bbf970c2bfb2c6d30c48974e933cc8b838a1275ad",
               "empty": false,
               "source": "accepted-evidence-registry",
               "source_identity": {
@@ -1932,7 +1932,7 @@
               "id": "male-face-base-01",
               "label": "Male face base 01 authoritative Gate-1 split",
               "path": "plates/male/face_base/male-face-base-01.png",
-              "sha256": "3f726e50ea1324d71103cfb69fb0f2d642c81f1b6fca823b97df6f327139acaf",
+              "sha256": "d3af215852fcf260394ab207589e433af69f6a7c2b53450cefba7325dd04d962",
               "empty": false,
               "source": "accepted-evidence-registry",
               "source_identity": {
