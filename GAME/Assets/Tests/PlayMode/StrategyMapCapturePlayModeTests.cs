@@ -40,8 +40,16 @@ namespace Janseon.Foundation.Tests
 
             List<Mesh> meshes = LoadChunkAssets<Mesh>("t:Mesh");
             List<Texture2D> textures = LoadChunkAssets<Texture2D>("t:Texture2D");
+            List<TextAsset> buildingBins = LoadChunkAssets<TextAsset>("t:TextAsset", "buildings-");
             Assert.That(meshes.Count, Is.EqualTo(9), "nine baked chunk meshes expected");
             Assert.That(textures.Count, Is.EqualTo(9), "nine baked chunk textures expected");
+            Assert.That(buildingBins.Count, Is.EqualTo(9), "nine building binaries expected");
+            foreach (TextAsset bin in buildingBins)
+            {
+                Assert.That(bin.bytes.Length >= 16, Is.True, $"{bin.name}: truncated header");
+                int count = System.BitConverter.ToInt32(bin.bytes, 8);
+                Assert.That(bin.bytes.Length, Is.EqualTo(16 + 28 * count), $"{bin.name}: length contract");
+            }
             foreach (Mesh mesh in meshes)
             {
                 Assert.That(mesh.vertexCount, Is.GreaterThan(0), $"{mesh.name} has no geometry");
@@ -53,12 +61,17 @@ namespace Janseon.Foundation.Tests
             GameObject host = new GameObject("strategy-map-playmode");
             try
             {
-                StrategyMapPresenter presenter = StrategyMapPresenter.Build(host.transform, meshes, textures);
+                StrategyMapPresenter presenter = StrategyMapPresenter.Build(host.transform, meshes, textures, buildingBins);
                 Assert.That(presenter.ChunkChildCount, Is.EqualTo(9));
                 Assert.That(presenter.MapCamera, Is.Not.Null);
                 Assert.That(presenter.MapCamera.orthographic, Is.False, "decision 10 perspective camera");
+                Assert.That(presenter.Buildings, Is.Not.Null, "3D buildings must be wired");
+                Assert.That(presenter.Buildings.TotalInstances, Is.GreaterThan(250_000),
+                    "atlas-scale building count (benchmark: 267k)");
+                Assert.That(presenter.Buildings.ChunkCount, Is.EqualTo(9));
 
                 // Captures first, while the camera sits at its default full-map framing.
+                yield return null; // one frame so LateUpdate submits the instanced building draws
                 var sb = new StringBuilder();
 
                 // Streaming acceptance: scroll across ALL of Seoul; every stop must render.
@@ -128,14 +141,18 @@ namespace Janseon.Foundation.Tests
             return Directory.GetParent(Application.dataPath)!.FullName;
         }
 
-        private static List<T> LoadChunkAssets<T>(string filter) where T : Object
+        private static List<T> LoadChunkAssets<T>(string filter, string namePrefix = "chunk-") where T : Object
         {
             var byPath = new SortedDictionary<string, T>();
 #if UNITY_EDITOR
             foreach (string guid in AssetDatabase.FindAssets(filter, new[] { BakedDir }))
             {
                 string assetPath = AssetDatabase.GUIDToAssetPath(guid);
-                if (!Path.GetFileNameWithoutExtension(assetPath).StartsWith("chunk-"))
+                if (namePrefix == "buildings-" && !assetPath.EndsWith(".bytes"))
+                {
+                    continue; // the buildings manifest JSON shares the prefix
+                }
+                if (!Path.GetFileNameWithoutExtension(assetPath).StartsWith(namePrefix))
                 {
                     continue;
                 }

@@ -81,18 +81,30 @@ def build_chunk_geometry(elev, x0_3857, y0_3857, x1_3857, y1_3857, grid, vertica
     """
     import numpy as np
 
+    import scipy.ndimage as ndi
+
     height, width = elev.shape
-    if height % grid or width % grid:
-        raise BakeError(f"grid {grid} must divide tile size {width}x{height}")
-    block = width // grid
-    padded = elev.reshape(grid, block, grid, block)
-    means = padded.mean(axis=(1, 3))
-    means = np.where(means <= water_level_meters, float(water_level_meters), means)
-    means = np.where(means == NODATA, float(water_level_meters), means)
-    # Gentle CK3-style relief: soften the DEM before shading/meshing.
+    band = elev.astype(np.float64)
+    nodata = band == NODATA
+    band[nodata] = np.nan
+    # Atlas-grade flattening: kill SRTM urban/bridge spikes, then relax hard.
     if smooth:
-        from scipy.ndimage import gaussian_filter
-        means = gaussian_filter(means, sigma=max(1.0, grid / 64.0))
+        finite = np.where(np.isnan(band), 0.0, band)
+        med = ndi.median_filter(finite, size=7, mode="nearest")
+        band = np.where(np.isnan(band), med, band)
+        band = np.nan_to_num(band, nan=float(water_level_meters))
+        band = ndi.gaussian_filter(band, sigma=max(4.0, width / 64.0), mode="nearest")
+    else:
+        band = np.nan_to_num(band, nan=float(water_level_meters))
+
+    # Resample to the target grid (any size, linear).
+    if grid != height:
+        zoom = ndi.zoom(band, grid / height, order=1, mode="nearest")
+    else:
+        zoom = band
+    means = np.where(zoom <= water_level_meters, float(water_level_meters), zoom)
+    if smooth:
+        means = ndi.gaussian_filter(means, sigma=max(2.0, grid / 48.0), mode="nearest")
 
     origin_x = (x0_3857 + x1_3857) * 0.5 if union_origin_x is None else union_origin_x
     origin_y = (y0_3857 + y1_3857) * 0.5 if union_origin_y is None else union_origin_y

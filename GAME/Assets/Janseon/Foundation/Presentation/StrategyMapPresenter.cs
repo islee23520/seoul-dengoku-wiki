@@ -131,7 +131,8 @@ namespace Janseon.Foundation.Presentation
         public static StrategyMapPresenter Build(
             Component host,
             IReadOnlyList<Mesh> chunkMeshes,
-            IReadOnlyList<Texture2D> chunkTextures = null)
+            IReadOnlyList<Texture2D> chunkTextures = null,
+            IReadOnlyList<TextAsset> buildingBinaries = null)
         {
             if (host == null) throw new System.ArgumentNullException(nameof(host));
             if (chunkMeshes == null) throw new System.ArgumentNullException(nameof(chunkMeshes));
@@ -147,11 +148,11 @@ namespace Janseon.Foundation.Presentation
             }
 
             StrategyMapPresenter presenter = host.gameObject.AddComponent<StrategyMapPresenter>();
-            presenter.BuildInternal(chunkMeshes, chunkTextures);
+            presenter.BuildInternal(chunkMeshes, chunkTextures, buildingBinaries);
             return presenter;
         }
 
-        private void BuildInternal(IReadOnlyList<Mesh> chunkMeshes, IReadOnlyList<Texture2D> chunkTextures)
+        private void BuildInternal(IReadOnlyList<Mesh> chunkMeshes, IReadOnlyList<Texture2D> chunkTextures, IReadOnlyList<TextAsset> buildingBinaries = null)
         {
             chunkRoot = new GameObject("strategy-map-chunks").transform;
             chunkRoot.SetParent(transform, false);
@@ -200,8 +201,15 @@ namespace Janseon.Foundation.Presentation
             rainSystem = BuildParticles("strategy-map-rain", streaks: true);
             snowSystem = BuildParticles("strategy-map-snow", streaks: false);
 
+            if (buildingBinaries != null && buildingBinaries.Count > 0)
+            {
+                Buildings = StrategyMapBuildings.Build(transform, buildingBinaries, chunkRoot);
+            }
+
             SetWeather(StrategyMapWeatherKind.Day);
         }
+
+        public StrategyMapBuildings Buildings { get; private set; }
 
         private ParticleSystem BuildParticles(string name, bool streaks)
         {
