@@ -5,7 +5,7 @@
 **Branch:** main
 
 ## OVERVIEW
-Character-centered grand-strategy SRPG set in post-collapse Seoul's subway network. Unity 6000.7.0a5 runs the game; Node/Python tooling validates documentation, architecture, assets and captures, while Backend hosts a .NET 8 CoreWCF service.
+Character-centered grand-strategy 4X RPG set in post-collapse Seoul's subway network. Unity 6000.7.0a5 runs the game; Node/Python tooling validates documentation, architecture, assets and captures, while Backend hosts a .NET 8 CoreWCF service.
 
 ## STRUCTURE
 ```text
@@ -99,8 +99,8 @@ Digest LSP/ast-grep findings plus retained root symbol locations; C# LSP coverag
 - Do not turn region surface adjacency into movement edges, merge same-name facilities, or advance later narrative events to opening day. Geometry-only validation is intermediate.
 
 ## UNIQUE STYLES
-- Exploration and combat share four-direction tile movement under a fixed orthographic isometric camera.
-- The serialized genre contract binds camera angles 45/35.264, a 1.5-unit grid, and a 2.5-head silhouette.
+- The strategy screen is a 3D heightmap map of all Seoul; the battle screen is a left/right side-scroll view (Intent decision 10, 2026-09-18).
+- The serialized genre contract keeps `combatResolution: realtime-formation-card`; isometric angles, four-direction grid, tile, and SD silhouette keys are retired.
 - Enabled scene order is Bootstrap -> MainTitle -> Foundation; Bootstrap owns app DI and content screens use exclusive child scopes.
 - Runtime screens use uGUI builders/presenters; retained UXML/USS is not automatically the current surface. Data projects ScriptableObjects into validated Core catalogs and canonical fingerprints.
 - Distinguish the 334-station movement graph, Area 1 three-station content catalog and 427-dong authored atlas. `GAME-REFERENCE/poc-diegetic/DIRECTION.md` is a candidate, not an approved UI mandate.

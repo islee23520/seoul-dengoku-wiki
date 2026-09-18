@@ -19,7 +19,8 @@ namespace Janseon.Core
     }
 
     /// <summary>
-    /// Cardinal step on the shared 4-direction integer grid (Concept + Realtime-Formation-Card-Battle).
+    /// Cardinal step of the battle-internal integer grammar (Realtime-Formation-Card-Battle).
+    /// Intent 결정 10 (2026-09-18) retired the shared world/tile grid; this enum is combat rules only.
     /// </summary>
     public enum CardinalDirection
     {

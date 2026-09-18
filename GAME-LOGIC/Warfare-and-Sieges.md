@@ -2,7 +2,7 @@
 
 ![공성 접근로와 퇴로의 아이소 전장](https://github.com/islee23520/seoul-kenshi/blob/main/GAME-REFERENCE/assets/wiki/isometric-warfare-sieges.svg?raw=true)
 
-공성 시 접근로, 보급, 퇴로를 4방향 시야와 공간으로 계획합니다.
+공성 시 접근로, 보급, 퇴로를 지형과 측면 관계로 계획합니다.
 
 전쟁은 병력 수 비교가 아니라 접근로, 보급, 사기, 퇴로와 점령 후 유지 능력을 둘러싼 연속 과정입니다. 아래 수치는 **설계 가정**입니다.
 

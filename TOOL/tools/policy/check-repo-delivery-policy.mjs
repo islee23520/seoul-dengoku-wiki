@@ -166,6 +166,8 @@ check('ADR-004 root structure record exists', adr004 !== null, ADR004_PATH);
 const ALLOWED_ROOT_DIRS = new Set([
   'GDD', 'GAME', 'GAME-LOGIC', 'GAME-REFERENCE', 'LORE', 'RESEARCH', 'TOOL',
   'Backend', 'store', 'archive',
+  // Owner directive 2026-09-18: execution evidence is tracked in-repo at evidence/.
+  'evidence',
 ]);
 const ALLOWED_ROOT_FILES = new Set([
   '.gitattributes', '.gitignore', '.gitmodules', '.vercelignore',

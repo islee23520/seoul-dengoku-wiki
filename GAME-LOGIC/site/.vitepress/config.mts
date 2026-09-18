@@ -21,7 +21,7 @@ function sidebarItems(dir: string, prefix: string) {
 
 export default defineConfig({
   title: '서울:전국',
-  description: '기획서·세계관·게임로직 문서 서비스',
+  description: '게임설계·세계관 문서 서비스',
   lang: 'ko',
   outDir: 'dist',
   ignoreDeadLinks: true,
@@ -53,27 +53,30 @@ export default defineConfig({
       }
     },
     nav: [
-      { text: '기획서', link: '/design/' },
-      { text: '세계관', link: '/world/' },
-      { text: '게임로직', link: '/rules/' }
+      { text: '게임설계', link: '/design/' },
+      { text: '세계관', link: '/world/' }
     ],
-    sidebar: [
-      {
-        text: '기획서',
-        collapsed: false,
-        items: sidebarItems('design', '/design')
-      },
-      {
-        text: '세계관',
-        collapsed: true,
-        items: sidebarItems('world', '/world')
-      },
-      {
-        text: '게임로직',
-        collapsed: true,
-        items: sidebarItems('rules', '/rules')
-      }
-    ],
+    sidebar: {
+      '/design/': [
+        {
+          text: '게임설계',
+          collapsed: false,
+          items: sidebarItems('design', '/design')
+        },
+        {
+          text: '규칙 문서',
+          collapsed: true,
+          items: sidebarItems('rules', '/rules')
+        }
+      ],
+      '/world/': [
+        {
+          text: '세계관',
+          collapsed: false,
+          items: sidebarItems('world', '/world')
+        }
+      ]
+    },
     outlineTitle: '이 페이지에서',
     docFooter: {
       prev: '이전',

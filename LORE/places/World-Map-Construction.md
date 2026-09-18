@@ -6,7 +6,7 @@
 
 설계 데이터는 서울 25개 자치구와 이름 있는 역 목록, 주변 시설, 십육국 권역을 카탈로그로 둔다. 면적·시설·동별 내용은 [서울 지역 설정 데이터](../regions/README.md)가 분모다. 분모는 2026-07-01 행정동 427개이며, 역 334는 그 전수로 읽히지 않는다. 붕괴 뒤 건물이 어떻게 쓰이는지는 [강·구·동 건물 재사용](../places/Building-Reuse-Geography.md)이다.
 
-런타임 `RouteGraph.CreateSeoul()`은 카탈로그 역 334와 OSM 인접 435를 로드한다. 영등포—신도림, 신도림—구로는 유지하고 영등포—구로는 없다. `CreateYeongdeungpoSindorimGuro()`는 Area 1 세 역 시범 구현·테스트용으로 남긴다. Unity에 OSM PBF를 넣지 않았다. 내부 격자·시설 슬롯·16국 캠페인은 아직 없다.
+런타임 \`RouteGraph.CreateSeoul()\`은 카탈로그 역 334와 OSM 인접 435를 로드한다. 영등포—신도림, 신도림—구로는 유지하고 영등포—구로는 없다. \`CreateYeongdeungpoSindorimGuro()\`는 Area 1 세 역 시범 구현·테스트용으로 남긴다. Unity에 OSM PBF를 넣지 않았다. 역 내부 공간·시설 슬롯·16국 캠페인은 아직 없다.
 
 관련 문서: [서울과 지하철 레이어](../places/World-and-Subway-Layers.md), [서울 십육국](../factions/Sixteen-States.md), [서울 지역 설정 데이터](../regions/README.md), [서울 역 카탈로그](../places/Seoul-Station-Catalog.md), [역 내부에 들어가면](../places/Station-Interior-Construction.md), [이동과 조우](../../GAME-LOGIC/Travel-and-Encounters.md).
 
@@ -16,9 +16,9 @@
 
 | 재료 | 경로 | 쓰는 일 | 넣지 않는 일 |
 |---|---|---|---|
-| KOSTAT 2013 자치구 25 | [KOSTAT GeoJSON](../../../seoul-kenshi-data/seoul-geography-20260830/boundaries-kostat-2013/seoul_municipalities_geo.json) | 구 폴리곤, 역을 구에 붙이기 | 현재 행정 경계로 단정하지 않는다. 기준년 2013. |
+| KOSTAT 2013 자치구 25 | `GAME-REFERENCE/data/seoul-geography-20260830/boundaries-kostat-2013/seoul_municipalities_geo.json` | 구 폴리곤, 역을 구에 붙이기, 전략맵 구 경계 오버레이 | 현재 행정 경계로 단정하지 않는다. 기준년 2013. |
 | OSM PBF | `…/osm-current-bbbike/Seoul.osm.pbf` | 역·시설 점 | GTFS가 없다. 공식 노선도와 1:1이라고 쓰지 않는다. |
-| OpenFreeMap MVT z14 | `…/openfreemap/mvt/20260830_080001_pt/14/` | 도로·철도 타일 357장, bbox `126.76,37.42,127.19,37.70` | 역 내부 격자 에셋이 아니다. |
+| OpenFreeMap MVT z14 | `…/openfreemap/mvt/20260830_080001_pt/14/` | 도로·철도 타일 357장, bbox `126.76,37.42,127.19,37.70` | 역 내부 메시 에셋이 아니다. |
 | Mapzen 지형 | `…/terrain-mapzen-geotiff/` | 고도 | 세계 그래프 노드가 아니다. |
 | 위키 노드 종류 | [World-and-Subway-Layers.md](../places/World-and-Subway-Layers.md) | Station, StationLayer, SurfaceDistrict, TunnelSegment, VerticalConnector, Interchange, StrategicSite | 런타임 타입으로 아직 없다. |
 | 십육국 | [Sixteen-States.md](../factions/Sixteen-States.md) | 권역·정수장·차량기지·시장 | 역 명단이 아니다. |
@@ -101,7 +101,7 @@ OSM 참고 집계(설계 데이터, 거점 슬롯 아님): 병원·클리닉, �
 
 런타임 `HeightmapDomain.LayerId`(지상/B1/B2/B3)는 전투 지형 높이다. 위 여섯 층을 세계 그래프로 돌리는 코드가 아니다. 둘을 같은 enum으로 합치지 않는다.
 
-칸 문법: `GridCoord`, `CardinalDirection`(북·동·남·서). 한 칸 1.5m / 1.5 Unity 유닛은 `GenreContract.json`에 있다. 탐색과 전투와 역 내부가 이 칸을 공유한다. 대각은 거절한다.
+전략맵(결정 10)은 Mapzen 지형 z11 타일 9장을 청크 메시로 베이크해 세운다. 이동과 원정은 역·구간 그래프(`RouteGraph`)를 따른다. 공유 타일 격자와 네 방향 칸 문법은 결정 10으로 폐기했다.
 
 ## 지금 코드가 아는 그래프
 
@@ -115,9 +115,9 @@ OSM 참고 집계(설계 데이터, 거점 슬롯 아님): 병원·클리닉, �
 
 행정동 427개의 경계·후보·저작 파이프라인은 `tools/regions/`에 있다. 역·층·터널 세계 그래프는 일곱 단계로 조립하며, 지역 총람이 그 단계를 대신하지 않는다.
 
-먼저 구 25 폴리곤을 읽어 구 슬롯을 만들고 십육국 권역 태그를 구에 붙인다. 이어서 역 카탈로그를 읽어 각 행을 `Station`으로 만들고 구에 소속시킨다. OSM·MVT의 선로·환승은 `TunnelSegment`·`Interchange` 후보로 올리되 출처를 `measured` / `derived` / `fictional`로 남긴다. 정수장·차량기지·시장을 `StrategicSite`로 붙이고 가장 가까운 역과 수직 연결을 적는다. 각 `Station`에 여섯 `StationLayer`를 달되, 없는 층은 지우지 않고 비활성으로 남긴다. 연결 기본값은 정상이고 봉쇄·침수는 사건으로만 바뀐다. 마지막에 `RouteGraph.CreateSeoul()`에 카탈로그 전 역을 넣는다. 원정 화면은 현재 역의 인접 전부를 클릭 버튼으로 띄우고(`GameplayPresenter.SyncDynamicTravel`), 전 서울을 한 번에 메시로 올리지 않는다.
+먼저 구 25 폴리곤을 읽어 구 슬롯을 만들고 십육국 권역 태그를 구에 붙인다. 이어서 역 카탈로그를 읽어 각 행을 `Station`으로 만들고 구에 소속시킨다. OSM·MVT의 선로·환승은 `TunnelSegment`·`Interchange` 후보로 올리되 출처를 `measured` / `derived` / `fictional`로 남긴다. 정수장·차량기지·시장을 `StrategicSite`로 붙이고 가장 가까운 역과 수직 연결을 적는다. 각 `Station`에 여섯 `StationLayer`를 달되, 없는 층은 지우지 않고 비활성으로 남긴다. 연결 기본값은 정상이고 봉쇄·침수는 사건으로만 바뀐다. 마지막에 `RouteGraph.CreateSeoul()`에 카탈로그 전 역을 넣는다. 원정 화면은 현재 역의 인접 전부를 클릭 버튼으로 띄우고(`GameplayPresenter.SyncDynamicTravel`), 지형은 z11 타일 아홉 청크로 나눠 올리고 런타임이 서울 전체를 한 메시로 들고 있지 않게 한다.
 
-화면은 지금 필요한 노선만 그린다. 역을 고르면 같은 그래프에서 4방향 격자를 펼친다. [Travel-and-Encounters.md](../../GAME-LOGIC/Travel-and-Encounters.md).
+화면은 전략맵에서 서울 전역 지형 위에 노선·역을 그린다. 역을 고르면 그 노드로 시점이 옮겨간다. [Travel-and-Encounters.md](../../GAME-LOGIC/Travel-and-Encounters.md).
 
 ## 하지 말 것
 
