@@ -42,6 +42,8 @@ node_modules/
 **/.vscode/
 *.csproj
 *.sln
+!Backend/server/**/*.csproj
+!Backend/server/**/*.sln
 *.slnx
 *.user
 
