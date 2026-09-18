@@ -24,7 +24,7 @@ Codex 스레드 `01a06b18-4373-7fa3-9cad-01d2254f05bc`에서 화면 설계 참�
 | `seoul-kenshi-context-hud-noncombat-final.png` | 15,593,806 | `de1a7edcc099b7c486ad243542f0fff59f1217489cda47c3003926e29c1735b1` | 비전투 맥락 HUD 최종안. 초안 `…-noncombat.png`를 대체. |
 | `seoul-kenshi-fog-intel-prediction-ux-final.png` | 16,527,514 | `9ffc6a760933afdacbd7f07a234ecab4d3a4a7d344240f5209a61ebbdab38722` | 안개·정보·예측 UX 최종안. |
 | `issue-101-death-succession-ux-example.png` | 2,188,464 | `b25d41ad05166343f2f8a76c58733ffbed48639d30781c7946c720db88316fcb` | 이슈 #101 사망·승계 UX 예시. |
-| `seoul-kenshi-screen-flow.html` | 12,486 | `7e571b0d3af1d8e12219a3d070eb868ae26fd15be5b84aff18338ae4d82c7ed5` | 10화면 흐름 조각 HTML. 단독 페이지가 아니라 임베드용 마크업. |
+| `seoul-screen-flow.html` | 12,486 | `7e571b0d3af1d8e12219a3d070eb868ae26fd15be5b84aff18338ae4d82c7ed5` | 10화면 흐름 조각 HTML. 단독 페이지가 아니라 임베드용 마크업. |
 
 ### 이슈 #101 레퍼런스 사본
 

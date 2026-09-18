@@ -27,6 +27,7 @@
 |---|---|
 | [연표](/world/Scenario-Timeline) | 서기는 이탈 2026과 개막 2126만. 창세는 햇수 없는 구술 |
 | [원정](/rules/Campaign-Loop) | 나선 길. 귀환이 전제가 아님 |
+| [캠페인 진행](/rules/Campaign-Progression) | 성장 단계와 위기 영향 추적 |
 
 ### 3. 지명
 | 문서 | 설명 |

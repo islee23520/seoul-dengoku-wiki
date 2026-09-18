@@ -1,5 +1,7 @@
 # 개요
 
+![인물 선택이 세계 결과로 이어지는 아이소 규칙](https://github.com/islee23520/seoul-kenshi/blob/main/Reference/assets/wiki/isometric-game-thesis.svg?raw=true)
+
 플레이어는 영웅이 아니다. 2126년 서울, 어느 역 앞에 선 사람이다. 그 자리가 오리엔테이션이다. 탐험·확장·개발·정복은 그 자리에서 밖으로 열린다. 세계 원장에 남는다. 이것이 이 게임의 4X다. 거점으로 퇴근하는 순환이 장르가 아니다.
 
 무명으로 흘러드는 것은 착생 갈래 하나다. 혈연과 소속을 가진 몸으로 시작할 수도 있다. 순서는 [온라인 유저 여정](/design/Online-User-Journey).
