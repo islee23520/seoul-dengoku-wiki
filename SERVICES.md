@@ -7,7 +7,7 @@
 | 서브 경로 | 저장소 출처 | 비고 |
 |---|---|---|
 | `/` | `index.html` | 서비스 인덱스(허브) |
-| `backend`(로컬 개발·미배포) | `Backend/server`(.NET 8 CoreWCF) | 소셜 SNG 백엔드. 도커 MySQL(13306)·Redis(16379), 포트 1219. 2026-09-14 |
+| `backend`(로컬 개발·미배포) | `Backend/server`(.NET 8 CoreWCF) | 호스트 세션 멀티플레이 코디네이터·릴레이(ADR-005) + 계정 메타(Auth·Hero·Lobby·Station·Social). 도커 MySQL(13306)·Redis(16379), HTTP 1219, WebSocket 릴레이 1220. 2026-09-14, 2026-09-18 목적 개정 |
 | `/play/` | `GAME/play/` | 코어 루프 웹 POC. 2026-09-14. 자립형 HTML |
 | `/ui-layout-moodboard/` | `GAME-REFERENCE/ui-layout-moodboard/` | UI 레이아웃 무드보드. 2026-09-11 작성, 2026-09-12 루트로 승격 |
 | `/portrait-demo/` | `GAME-REFERENCE/portrait-demo/` | 애니메 풍 초상 레이어 합성 브라우저 재현. 정적 페이지, 런타임 아님 |
