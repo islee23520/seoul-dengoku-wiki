@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
-import { existsSync } from 'node:fs';
+import { cpSync, existsSync, mkdirSync, readdirSync, statSync } from 'node:fs';
 import { mkdtemp, readFile, rm, unlink, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { dirname, join, resolve } from 'node:path';
@@ -19,10 +19,26 @@ import { ISOMETRIC_DIAGRAM_ASSETS } from './world-atlas-schema.mjs';
 
 const verifier = fileURLToPath(new URL('./verify-world-expansion.mjs', import.meta.url));
 const repositoryRoot = resolve(dirname(verifier), '..', '..', '..');
-const liveDocs = join(repositoryRoot, 'Wikis', 'game-logic');
-const wikiAssets = join(repositoryRoot, 'Reference', 'assets', 'wiki');
+const liveDocs = join(repositoryRoot, 'LORE');
+const wikiAssets = join(repositoryRoot, 'GAME-REFERENCE', 'assets', 'wiki');
 const atlasPath = join(liveDocs, 'World-Narrative-Atlas.md');
 const fixtures = [];
+
+function cloneLiveDocs(dir) {
+  const docs = join(dir, 'docs', 'game-logic');
+  mkdirSync(docs, { recursive: true });
+  mkdirSync(join(dir, '.omo', 'research-private'), { recursive: true });
+  mkdirSync(join(dir, 'GDD'), { recursive: true });
+  cpSync(liveDocs, docs, { recursive: true });
+  cpSync(
+    join(repositoryRoot, '.omo', 'research-private', 'nippon-sangoku-canon-bridge.md'),
+    join(dir, '.omo', 'research-private', 'nippon-sangoku-canon-bridge.md'),
+  );
+  for (const name of ['Unofficial-Fan-AU-Notice.md', 'Research-Sources.md']) {
+    cpSync(join(repositoryRoot, 'GDD', name), join(dir, 'GDD', name));
+  }
+  return docs;
+}
 
 after(async () => {
   for (const dir of fixtures) await rm(dir, { recursive: true, force: true });
@@ -74,15 +90,7 @@ test('Given current repository When seeds stage Then arcs cover houses theaters 
 test('Given a real company mark in theater prose When theaters stage Then source canon allows it (rename seam)', async () => {
   const dir = await mkdtemp(join(tmpdir(), 'atlas-theater-token-'));
   fixtures.push(dir);
-  const docs = join(dir, 'docs', 'game-logic');
-  const { cpSync, mkdirSync } = await import('node:fs');
-  mkdirSync(docs, { recursive: true });
-  mkdirSync(join(dir, '.omo', 'research-private'), { recursive: true });
-  cpSync(liveDocs, docs, { recursive: true });
-  cpSync(
-    join(repositoryRoot, '.omo', 'research-private', 'nippon-sangoku-canon-bridge.md'),
-    join(dir, '.omo', 'research-private', 'nippon-sangoku-canon-bridge.md'),
-  );
+  const docs = cloneLiveDocs(dir);
   const atlas = join(docs, 'World-Narrative-Atlas.md');
   const text = await readFile(atlas, 'utf8');
   await writeFile(atlas, text.replace('귀환 명부를 손전등 빛에 비춘다', '삼성전자 귀환 명부를 손전등 빛에 비춘다'));
@@ -93,15 +101,7 @@ test('Given a real company mark in theater prose When theaters stage Then source
 test('Given a real company mark in house prose When houses stage Then source canon allows it (rename seam)', async () => {
   const dir = await mkdtemp(join(tmpdir(), 'atlas-house-token-'));
   fixtures.push(dir);
-  const docs = join(dir, 'docs', 'game-logic');
-  const { cpSync, mkdirSync } = await import('node:fs');
-  mkdirSync(docs, { recursive: true });
-  mkdirSync(join(dir, '.omo', 'research-private'), { recursive: true });
-  cpSync(liveDocs, docs, { recursive: true });
-  cpSync(
-    join(repositoryRoot, '.omo', 'research-private', 'nippon-sangoku-canon-bridge.md'),
-    join(dir, '.omo', 'research-private', 'nippon-sangoku-canon-bridge.md'),
-  );
+  const docs = cloneLiveDocs(dir);
   const atlas = join(docs, 'World-Narrative-Atlas.md');
   const text = await readFile(atlas, 'utf8');
   await writeFile(atlas, text.replace('야간 냉각 분배', '삼성전자 냉각 분배'));
@@ -252,15 +252,7 @@ for (const batchId of CONFIRMED_STORY_BATCHES) {
 test('Given two B001 actors sharing a long sentence When story-batch Then E_DUPLICATE_SENTENCE', async () => {
   const dir = await mkdtemp(join(tmpdir(), 'atlas-story-dup-'));
   fixtures.push(dir);
-  const docs = join(dir, 'docs', 'game-logic');
-  const { cpSync, mkdirSync } = await import('node:fs');
-  mkdirSync(docs, { recursive: true });
-  mkdirSync(join(dir, '.omo', 'research-private'), { recursive: true });
-  cpSync(liveDocs, docs, { recursive: true });
-  cpSync(
-    join(repositoryRoot, '.omo', 'research-private', 'nippon-sangoku-canon-bridge.md'),
-    join(dir, '.omo', 'research-private', 'nippon-sangoku-canon-bridge.md'),
-  );
+  const docs = cloneLiveDocs(dir);
   const atlas = join(docs, 'World-Narrative-Atlas.md');
   const markdown = await readFile(atlas, 'utf8');
   const parsed = extractAtlasJson(markdown);
@@ -295,15 +287,7 @@ test('Given generated G01-G12 group pages When read Then scenario headings exist
 test('Given missing G13 dossier prose When group-dossiers stage Then E_GROUP_DOSSIER', async () => {
   const dir = await mkdtemp(join(tmpdir(), 'atlas-group-dossier-'));
   fixtures.push(dir);
-  const docs = join(dir, 'docs', 'game-logic');
-  const { cpSync, mkdirSync } = await import('node:fs');
-  mkdirSync(docs, { recursive: true });
-  mkdirSync(join(dir, '.omo', 'research-private'), { recursive: true });
-  cpSync(liveDocs, docs, { recursive: true });
-  cpSync(
-    join(repositoryRoot, '.omo', 'research-private', 'nippon-sangoku-canon-bridge.md'),
-    join(dir, '.omo', 'research-private', 'nippon-sangoku-canon-bridge.md'),
-  );
+  const docs = cloneLiveDocs(dir);
   const atlas = join(docs, 'World-Narrative-Atlas.md');
   const markdown = await readFile(atlas, 'utf8');
   const parsed = extractAtlasJson(markdown);
@@ -350,15 +334,7 @@ test('Given G13-G18 dossiers When group-dossiers stage Then IDs scenarios and pr
 test('Given missing G01 adaptation When monster-manifest stage Then E_GROUP_ADAPTATION', async () => {
   const dir = await mkdtemp(join(tmpdir(), 'atlas-group-adaptation-'));
   fixtures.push(dir);
-  const docs = join(dir, 'docs', 'game-logic');
-  const { cpSync, mkdirSync } = await import('node:fs');
-  mkdirSync(docs, { recursive: true });
-  mkdirSync(join(dir, '.omo', 'research-private'), { recursive: true });
-  cpSync(liveDocs, docs, { recursive: true });
-  cpSync(
-    join(repositoryRoot, '.omo', 'research-private', 'nippon-sangoku-canon-bridge.md'),
-    join(dir, '.omo', 'research-private', 'nippon-sangoku-canon-bridge.md'),
-  );
+  const docs = cloneLiveDocs(dir);
   const atlas = join(docs, 'World-Narrative-Atlas.md');
   const markdown = await readFile(atlas, 'utf8');
   const parsed = extractAtlasJson(markdown);
@@ -373,15 +349,7 @@ test('Given missing G01 adaptation When monster-manifest stage Then E_GROUP_ADAP
 test('Given an incomplete G07 scenario When monster-manifest stage Then E_GROUP_SCENARIO', async () => {
   const dir = await mkdtemp(join(tmpdir(), 'atlas-g07-scenario-'));
   fixtures.push(dir);
-  const docs = join(dir, 'docs', 'game-logic');
-  const { cpSync, mkdirSync } = await import('node:fs');
-  mkdirSync(docs, { recursive: true });
-  mkdirSync(join(dir, '.omo', 'research-private'), { recursive: true });
-  cpSync(liveDocs, docs, { recursive: true });
-  cpSync(
-    join(repositoryRoot, '.omo', 'research-private', 'nippon-sangoku-canon-bridge.md'),
-    join(dir, '.omo', 'research-private', 'nippon-sangoku-canon-bridge.md'),
-  );
+  const docs = cloneLiveDocs(dir);
   const atlas = join(docs, 'World-Narrative-Atlas.md');
   const markdown = await readFile(atlas, 'utf8');
   const parsed = extractAtlasJson(markdown);
@@ -409,8 +377,43 @@ test('Given repository isometric atlas views When files exist Then SVG contracts
   }
 });
 
+function corpusFile(name) {
+  const roots = ['LORE', 'GAME-LOGIC', 'GDD'].map((dir) => join(repositoryRoot, dir));
+  for (const root of roots) {
+    const direct = join(root, name);
+    if (existsSync(direct)) return direct;
+  }
+  const walk = (dir) => {
+    let entries;
+    try {
+      entries = readdirSync(dir);
+    } catch {
+      return undefined;
+    }
+    for (const entry of entries) {
+      const path = join(dir, entry);
+      let st;
+      try {
+        st = statSync(path);
+      } catch {
+        continue;
+      }
+      if (st.isDirectory()) {
+        const hit = walk(path);
+        if (hit) return hit;
+      } else if (entry === name) return path;
+    }
+    return undefined;
+  };
+  for (const root of roots) {
+    if (!existsSync(root)) continue;
+    const hit = walk(root);
+    if (hit) return hit;
+  }
+  return undefined;
+}
+
 test('Given isometric SVG hrefs When resolved from asset path Then every external target exists', async () => {
-  const docsRoot = join(repositoryRoot, 'docs');
   const origin = 'http://127.0.0.1/';
   let externalCount = 0;
   let fragmentCount = 0;
@@ -430,8 +433,10 @@ test('Given isometric SVG hrefs When resolved from asset path Then every externa
         continue;
       }
       externalCount += 1;
-      const assetTarget = fileURLToPath(fromAsset);
-      const serverTarget = resolve(join(docsRoot, decodeURIComponent(fromServer.pathname).replace(/^\//, '')));
+      const page = decodeURIComponent(fromAsset.pathname.split('/').pop() || '');
+      const assetTarget = corpusFile(page) ?? fileURLToPath(fromAsset);
+      const serverPage = decodeURIComponent(fromServer.pathname.split('/').pop() || '');
+      const serverTarget = corpusFile(serverPage) ?? resolve(join(repositoryRoot, decodeURIComponent(fromServer.pathname).replace(/^\//, '')));
       assert.equal(existsSync(assetTarget), true, `${asset}: href ${href} missing ${assetTarget}`);
       assert.equal(existsSync(serverTarget), true, `${asset}: served ${fromServer.pathname} missing ${serverTarget}`);
     }

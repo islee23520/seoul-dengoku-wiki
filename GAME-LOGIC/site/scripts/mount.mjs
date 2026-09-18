@@ -1,5 +1,5 @@
 // mount.mjs v2 — 3루트(LORE/GAME-LOGIC/GDD) + 루트 문서 → GAME-LOGIC/site/{world,rules,design} 스테이징
-// 폴더=도메인: LORE/*.md→world, GAME-LOGIC/*.md→rules, GDD/*.md(평면)→design + 루트 4문서→design
+// 폴더=도메인: LORE/**/*.md(평면 스템)→world, GAME-LOGIC/*.md→rules, GDD/*.md(평면)→design + 루트 4문서→design
 // 유니온 pageByFile/pageByStem로 도메인 간 베어 링크 재작성 (스켑틱 #10)
 import { readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs'
 import { basename, dirname, join } from 'node:path'
@@ -21,12 +21,34 @@ const DOMAIN_ROOTS = [
 const ROOT_DOCS = ['Concept.md', 'Design.md', 'ToDo.md', 'Intent.md']
 
 const EXCLUDED_NAMES = new Set(['_Sidebar.md', '_TEMPLATE.md'])
+const LORE_SKIP_DIRS = new Set(['name-pools', 'regions'])
 
 function listMarkdown(dir) {
   return readdirSync(dir)
     .filter((name) => name.endsWith('.md') && !EXCLUDED_NAMES.has(name))
     .filter((name) => statSync(join(dir, name)).isFile())
     .sort()
+}
+
+function listLoreMarkdown(dir) {
+  const out = []
+  function walk(current) {
+    for (const name of readdirSync(current).sort()) {
+      if (name.startsWith('.')) continue
+      const full = join(current, name)
+      const st = statSync(full)
+      if (st.isDirectory()) {
+        if (LORE_SKIP_DIRS.has(name)) continue
+        walk(full)
+        continue
+      }
+      if (!st.isFile()) continue
+      if (!name.endsWith('.md') || EXCLUDED_NAMES.has(name) || name === 'README.md') continue
+      out.push({ name, src: full })
+    }
+  }
+  walk(dir)
+  return out
 }
 
 function sitePath(domain, filename) {
@@ -82,9 +104,15 @@ for (const name of listMarkdown(referenceDir)) {
   excluded.push(`reference/${name}`)
 }
 
-// 후보 수집: 3도메인 루트(평면 md) + 루트 4문서
+// 후보 수집: LORE는 재귀(평면 스템), 나머지 도메인은 루트 평면 md + 루트 4문서
 const candidates = []
 for (const { domain, dir } of DOMAIN_ROOTS) {
+  if (domain === 'world') {
+    for (const { name, src } of listLoreMarkdown(dir)) {
+      candidates.push({ name, src, domain })
+    }
+    continue
+  }
   for (const name of listMarkdown(dir)) {
     candidates.push({ name, src: join(dir, name), domain })
   }

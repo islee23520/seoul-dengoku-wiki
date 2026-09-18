@@ -266,7 +266,8 @@ async function removeTree(path) {
 }
 
 const FRAGMENT_PAGE = /^(Story-Batch-B\d{3}|Monster-Batch-M\d{3}|Hostile-Group-G\d{2})\.md$/;
-const CAST_INDEX_HUB_ROW = /^\| ([^|]+) \| ([^|]+) \| `docs\/game-logic\/([^`]+)`/gm;
+const CAST_INDEX_HUB_ROW = /^\| ([^|]+) \| ([^|]+) \| `(?:docs\/game-logic\/|LORE\/(?:[^`/]+\/)*)([^`]+)`/gm;
+const LORE_SKIP_DIRS = new Set(['name-pools', 'regions']);
 
 export function publishedFragmentPages(indexMarkdown) {
   const published = new Set();
@@ -279,20 +280,48 @@ export function publishedFragmentPages(indexMarkdown) {
   return published;
 }
 
+async function collectMarkdownFiles(canonicalRoot) {
+  const domain = resolve(canonicalRoot).split(sep).pop();
+  const recursive = domain === 'LORE';
+  const files = [];
+  async function walk(dir) {
+    for (const name of await readdir(dir)) {
+      const path = join(dir, name);
+      const stats = await lstat(path);
+      if (stats.isSymbolicLink()) {
+        throw new Error(`refusing to publish the symlinked source page ${name}: ${path}`);
+      }
+      if (stats.isDirectory()) {
+        if (!recursive) continue;
+        if (LORE_SKIP_DIRS.has(name) || name === 'site') continue;
+        await walk(path);
+        continue;
+      }
+      if (!stats.isFile()) {
+        throw new Error(`refusing to publish the non-file source page ${name}: ${path}`);
+      }
+      if (!name.endsWith('.md') || name === 'README.md') continue;
+      files.push({ page: name, path });
+    }
+  }
+  await walk(canonicalRoot);
+  return files;
+}
+
 async function readSourcePages(canonicalSources) {
   const nameToSource = new Map();
   for (const dir of canonicalSources) {
-    for (const name of (await readdir(dir)).filter((name) => name.endsWith('.md'))) {
-      if (nameToSource.has(name)) throw new Error(`duplicate corpus page across source directories: ${name}`);
-      nameToSource.set(name, dir);
+    for (const { page, path } of await collectMarkdownFiles(dir)) {
+      if (nameToSource.has(page)) throw new Error(`duplicate corpus page across source directories: ${page}`);
+      nameToSource.set(page, { dir, path });
     }
   }
   const names = [...nameToSource.keys()].sort();
   let publishedFragments = new Set();
   try {
-    const castIndexDir = nameToSource.get('Cast-Index.md');
-    if (castIndexDir) {
-      publishedFragments = publishedFragmentPages(await readFile(join(castIndexDir, 'Cast-Index.md'), 'utf8'));
+    const castIndex = nameToSource.get('Cast-Index.md');
+    if (castIndex) {
+      publishedFragments = publishedFragmentPages(await readFile(castIndex.path, 'utf8'));
     }
   } catch (err) {
     if (err && err.code !== 'ENOENT') throw err;
@@ -300,8 +329,7 @@ async function readSourcePages(canonicalSources) {
   const pages = [];
   for (const page of names) {
     if (FRAGMENT_PAGE.test(page) && !publishedFragments.has(page)) continue;
-    const canonicalSource = nameToSource.get(page);
-    const path = join(canonicalSource, page);
+    const { dir: canonicalSource, path } = nameToSource.get(page);
     const stats = await lstat(path);
     if (stats.isSymbolicLink()) {
       throw new Error(`refusing to publish the symlinked source page ${page}: ${path}`);
@@ -310,7 +338,7 @@ async function readSourcePages(canonicalSources) {
       throw new Error(`refusing to publish the non-file source page ${page}: ${path}`);
     }
     assertContained(canonicalSource, await realpath(path), `source page ${page}`);
-    pages.push({ page, markdown: await readFile(path, 'utf8'), origin: pathPrefixLabel(canonicalSource) });
+    pages.push({ page, markdown: await readFile(path, 'utf8'), origin: pathPrefixLabel(canonicalSource, path) });
   }
   return pages;
 }
@@ -558,7 +586,10 @@ function internalWikiTarget(url) {
   const path = hash === -1 ? url : url.slice(0, hash);
   const anchor = hash === -1 ? '' : url.slice(hash);
   if (!path.toLowerCase().endsWith('.md')) return null;
-  return `${path.slice(0, -'.md'.length)}${anchor}`;
+  const withoutExt = path.slice(0, -'.md'.length);
+  const stem = withoutExt.split('/').filter((segment) => segment !== '' && segment !== '.' && segment !== '..').pop();
+  if (!stem) return null;
+  return `${stem}${anchor}`;
 }
 
 function hasScheme(url) {
@@ -633,9 +664,16 @@ function locateDestination(node, markdown) {
 
 // ---------------------------------------------------------------------------
 
-function pathPrefixLabel(canonicalSource) {
-  const label = resolve(canonicalSource).split(sep).pop();
-  return ['LORE', 'GAME-LOGIC', 'GDD'].includes(label) ? label : 'Wikis/game-logic';
+function pathPrefixLabel(canonicalSource, filePath) {
+  const resolved = resolve(canonicalSource);
+  const label = resolved.split(sep).pop();
+  const domain = ['LORE', 'GAME-LOGIC', 'GDD'].includes(label) ? label : null;
+  if (!domain) return 'Wikis/game-logic';
+  if (!filePath) return domain;
+  const rel = relative(resolved, filePath).split(sep).join('/');
+  const slash = rel.lastIndexOf('/');
+  if (slash === -1) return domain;
+  return `${domain}/${rel.slice(0, slash)}`;
 }
 
 function generationBanner(page, commitSha, origin = 'Wikis/game-logic') {

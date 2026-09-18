@@ -2,8 +2,8 @@
 
 이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.
 
-- 원본 앵커: `Wikis/game-logic/World-Narrative-Atlas.md`
-- 원본 해시: `a9e42252da4607f1f0960e3a6163a6e4a68b5ee48e570bdd71d9d0042f69ecb8`
+- 원본 앵커: `LORE/World-Narrative-Atlas.md`
+- 원본 해시: `6d7f060f82a2ee91fc127a8096e9a57d77d2d13cf7e8adb3f6fe76635e398caa`
 
 
 최초 징후는 대개 생물학적 움직임이 아니라 설비 이상으로 나타난다.

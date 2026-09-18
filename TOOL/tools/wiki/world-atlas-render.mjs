@@ -1,28 +1,40 @@
 import { renderAtlasIsometricSvgs } from './world-atlas-isometric.mjs';
 import { getGroupDossierFilename, PROJECTION_FILES, STATE_BY_ID, STORY_SECTION_KEYS } from './world-atlas-schema.mjs';
 
-function banner(atlasHash) {
+function banner(atlasHash, lead) {
   return [
-    '이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.',
+    lead || '이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.',
     '',
-    `- 원본 앵커: \`Wikis/game-logic/World-Narrative-Atlas.md\``,
+    `- 원본 앵커: \`LORE/World-Narrative-Atlas.md\``,
     `- 원본 해시: \`${atlasHash}\``,
     '',
   ].join('\n');
 }
 
-function stateLabel(id) {
+function projectionPreamble(atlas, file, fallbackTitle, atlasHash) {
+  const page = atlas.projection_pages?.[file] ?? {};
+  const title = page.title || fallbackTitle;
+  const lines = [`# ${title}`, ''];
+  const intro = typeof page.intro === 'string' ? page.intro.trim() : '';
+  if (intro) lines.push(intro, '');
+  lines.push(banner(atlasHash, page.banner));
+  return lines;
+}
+
+function stateLabel(atlas, id) {
+  const fromHumans = (atlas.humans ?? []).find((h) => h.state_id === id)?.state_name;
+  if (fromHumans) return `${id} ${fromHumans}`;
   return STATE_BY_ID[id] ? `${id} ${STATE_BY_ID[id].name}` : id;
 }
 
 export function renderHouses(atlas, atlasHash) {
-  const lines = ['# 운영가문', '', banner(atlasHash)];
+  const lines = [...projectionPreamble(atlas, 'Operating-Houses.md', '운영가문', atlasHash)];
   for (const house of atlas.houses ?? []) {
     lines.push(`## ${house.id} · ${house.display_name}`, '');
     lines.push(`- 분류: ${house.house_class}`);
     lines.push(`- 상태: ${house.status}`);
     lines.push(`- 출처층: ${house.source_kind}`);
-    lines.push(`- 연결 국가: ${(house.states ?? []).map(stateLabel).join(', ')}`);
+    lines.push(`- 연결 국가: ${(house.states ?? []).map((id) => stateLabel(atlas, id)).join(', ')}`);
     lines.push(`- 전속 국가: 없음`);
     lines.push(`- 스튜어드십: ${house.ai_stewardship?.accountable_human ?? ''}`);
     lines.push('');
@@ -38,7 +50,7 @@ export function renderHouses(atlas, atlasHash) {
 }
 
 export function renderTheaters(atlas, atlasHash) {
-  const lines = ['# 외부전구', '', banner(atlasHash)];
+  const lines = [...projectionPreamble(atlas, 'External-Theaters.md', '외부전구', atlasHash)];
   for (const theater of atlas.theaters ?? []) {
     lines.push(`## ${theater.id} · ${theater.display_name}`, '');
     lines.push(`- 출처층: ${theater.source_kind}`);
@@ -46,7 +58,7 @@ export function renderTheaters(atlas, atlasHash) {
     lines.push(`- 추론: ${theater.inference}`);
     lines.push(`- 창작: ${theater.original_fiction}`);
     lines.push(`- 정사 연결표 제거 가능: ${theater.japan_bridge_removable ? '예' : '아니오'}`);
-    lines.push(`- 연결 국가: ${(theater.states ?? []).map(stateLabel).join(', ')}`);
+    lines.push(`- 연결 국가: ${(theater.states ?? []).map((id) => stateLabel(atlas, id)).join(', ')}`);
     lines.push('');
     lines.push(theater.prose.trim(), '');
     lines.push('### 시나리오 쇄');

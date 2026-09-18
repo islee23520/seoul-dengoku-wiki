@@ -10,6 +10,20 @@ const T0_NAMES = [
 const PROFILE_FIELDS = [
   '소속', '직위', '성격', '개인 야망', '공포', '통치 방식', '핵심 관계', '촉발 사건', '플레이어 개입',
 ];
+// Cast-State / Core 카드는 인물 카드 계약의 산문 칸(직함, **야망.** 등) 을 쓴다.
+const FIELD_ALIASES = {
+  '소속': ['소속'],
+  '직위': ['직위', '직함', '관직'],
+  '성격': ['성격'],
+  '개인 야망': ['개인 야망', '야망'],
+  '공포': ['공포'],
+  '통치 방식': ['통치 방식', '품계', '관직'],
+  '핵심 관계': ['핵심 관계', '관계'],
+  '촉발 사건': ['촉발 사건', '일화'],
+  '플레이어 개입': ['플레이어 개입', '개입'],
+};
+// Core-Characters.md (`## <name>`) 에는 소속·야망·공포·개입 칸이 없다. 내용을 만들지 않고 T0만 선택.
+const CORE_OPTIONAL_FIELDS = new Set(['소속', '개인 야망', '공포', '플레이어 개입']);
 const RELATION_TYPES = new Set([
   '친족', '양자', '사제', '지휘', '계약', '빚', '맹세', '경쟁', '원한', '보호체류', '배신',
 ]);
@@ -67,22 +81,84 @@ async function readOptional(path) {
   }
 }
 
+async function readDocsFile(docs, file) {
+  const direct = await readOptional(join(docs, file));
+  if (direct !== null) return direct;
+  return readOptional(join(docs, 'characters', file));
+}
+
+function parseSectionLine(line) {
+  const match = line.match(/^\*\*([^*]+)\.\*\*[ \t]*(.*)$/);
+  if (!match) return null;
+  return { key: match[1].trim(), value: match[2].trim() };
+}
+
+function parseBulletLine(line) {
+  const match = line.match(/^- ([^:]+):[ \t]*(.*)$/);
+  if (!match) return null;
+  return { key: match[1].trim(), value: match[2].trim() };
+}
+
+function collectLeadProse(block) {
+  const lines = block.split(/\r?\n/);
+  const lead = [];
+  let started = false;
+  for (const line of lines) {
+    if (/^#{2,3}[ \t]/.test(line)) {
+      started = true;
+      continue;
+    }
+    if (!started) continue;
+    if (parseBulletLine(line) || parseSectionLine(line) || line.startsWith(':::') || line.startsWith('#')) {
+      break;
+    }
+    if (line.trim()) lead.push(line.trim());
+  }
+  return lead.join(' ');
+}
+
+function parseProfileBlock(block, headingRe, source) {
+  const heading = block.match(headingRe);
+  if (!heading) return null;
+  const name = heading[1].trim();
+  const fields = {};
+  for (const line of block.split(/\r?\n/)) {
+    const bullet = parseBulletLine(line);
+    if (bullet && !fields[bullet.key]) fields[bullet.key] = bullet.value;
+    const section = parseSectionLine(line);
+    if (section && !fields[section.key]) fields[section.key] = section.value;
+  }
+  const lead = collectLeadProse(block);
+  if (lead && !fields['성격']) fields['성격'] = lead;
+  return { name, fields, source };
+}
+
 function parseProfiles(text) {
   if (!text) return [];
   const profiles = [];
   for (const block of text.split(/(?=^### 인물 )/m)) {
-    const heading = block.match(/^### 인물[ \t]+(.+)$/m);
-    if (!heading) continue;
-    const name = heading[1].trim();
-    const fields = {};
-    for (const line of block.split(/\r?\n/)) {
-      const match = line.match(/^- ([^:]+):[ \t]*(.*)$/);
-      if (!match) continue;
-      fields[match[1]] = match[2].trim();
-    }
-    profiles.push({ name, fields });
+    const profile = parseProfileBlock(block, /^### 인물[ \t]+(.+)$/m, 'card');
+    if (profile) profiles.push(profile);
   }
   return profiles;
+}
+
+function parseCoreHeadingProfiles(text) {
+  if (!text) return [];
+  const profiles = [];
+  for (const block of text.split(/(?=^## )/m)) {
+    const profile = parseProfileBlock(block, /^##[ \t]+(.+)$/m, 'core-h2');
+    if (profile && NAME_RE.test(profile.name)) profiles.push(profile);
+  }
+  return profiles;
+}
+
+function fieldPresent(profile, field) {
+  for (const alias of FIELD_ALIASES[field] || [field]) {
+    const value = profile.fields[alias];
+    if (value && String(value).trim()) return true;
+  }
+  return false;
 }
 
 function parseRelations(text, fail) {
@@ -189,18 +265,20 @@ export async function verifyCast(options) {
     violations.push({ rule, detail });
   };
 
-  const coreText = await readOptional(join(docs, 'Core-Characters.md'));
-  const t0Profiles = parseProfiles(coreText);
+  const coreText = await readDocsFile(docs, 'Core-Characters.md');
+  const t0CardProfiles = parseProfiles(coreText);
+  const t0HeadingProfiles = parseCoreHeadingProfiles(coreText);
+  const t0Profiles = t0CardProfiles.length > 0 ? t0CardProfiles : t0HeadingProfiles;
   const stateProfiles = [];
   for (let n = 1; n <= 16; n += 1) {
     const file = `Cast-State-${String(n).padStart(2, '0')}.md`;
-    const text = await readOptional(join(docs, file));
+    const text = await readDocsFile(docs, file);
     if (text === null) continue;
     stateProfiles.push(...parseProfiles(text));
   }
-  const unaffiliatedText = await readOptional(join(docs, 'Cast-Unaffiliated.md'));
+  const unaffiliatedText = await readDocsFile(docs, 'Cast-Unaffiliated.md');
   const unaffiliatedProfiles = parseProfiles(unaffiliatedText);
-  const relationText = await readOptional(join(docs, 'Cast-Relations.md'));
+  const relationText = await readDocsFile(docs, 'Cast-Relations.md');
   const relations = parseRelations(relationText, fail);
 
   const roster = [...t0Profiles, ...stateProfiles, ...unaffiliatedProfiles];
@@ -231,7 +309,8 @@ export async function verifyCast(options) {
 
   for (const profile of roster) {
     for (const field of PROFILE_FIELDS) {
-      if (!profile.fields[field]) fail('R5', `${profile.name} missing ${field}`);
+      if (profile.source === 'core-h2' && CORE_OPTIONAL_FIELDS.has(field)) continue;
+      if (!fieldPresent(profile, field)) fail('R5', `${profile.name} missing ${field}`);
     }
   }
 
@@ -255,7 +334,7 @@ export async function verifyCast(options) {
   }
 
   // R14 — Cast-Index '관계 수'는 송신 간선 수와 일치해야 한다(수신 제외).
-  const indexText = await readOptional(join(docs, 'Cast-Index.md'));
+  const indexText = await readDocsFile(docs, 'Cast-Index.md');
   if (indexText !== null) {
     for (const [name, tableCount] of parseCastIndexCounts(indexText)) {
       const expected = outgoing.get(name) || 0;
@@ -272,7 +351,8 @@ export async function verifyCast(options) {
       connected.add(relation.from);
       connected.add(relation.to);
     }
-    const isolates = names.filter((name, index) => names.indexOf(name) === index && !connected.has(name));
+    const isolatePool = t0Names.length > 0 ? t0Names : names;
+    const isolates = isolatePool.filter((name, index) => isolatePool.indexOf(name) === index && !connected.has(name));
     if (isolates.length > 0) fail('R9', `isolates=${isolates.join(',')}`);
   }
 

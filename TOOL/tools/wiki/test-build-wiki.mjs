@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { existsSync } from 'node:fs';
+import { existsSync, readdirSync, statSync } from 'node:fs';
 import { access, lstat, mkdtemp, mkdir, readFile, readdir, rm, symlink, writeFile } from 'node:fs/promises';
 import { homedir, tmpdir } from 'node:os';
 import { dirname, join, resolve } from 'node:path';
@@ -743,10 +743,30 @@ await testCase('Cast-Index 게시 rows still emit their fragment page', async ()
 // Repository documentation contract (pre-existing)
 // ---------------------------------------------------------------------------
 
-const corpusFile = (name) =>
-  ['LORE', 'GAME-LOGIC', 'GDD']
-    .map((dir) => join(repositoryRoot, dir, name))
-    .find((p) => existsSync(p));
+function corpusFile(name) {
+  const roots = ['LORE', 'GAME-LOGIC', 'GDD'].map((dir) => join(repositoryRoot, dir));
+  for (const root of roots) {
+    const direct = join(root, name);
+    if (existsSync(direct)) return direct;
+  }
+  const walk = (dir) => {
+    for (const entry of readdirSync(dir)) {
+      const path = join(dir, entry);
+      const st = statSync(path);
+      if (st.isDirectory()) {
+        const hit = walk(path);
+        if (hit) return hit;
+      } else if (entry === name) return path;
+    }
+    return undefined;
+  };
+  for (const root of roots) {
+    if (!existsSync(root)) continue;
+    const hit = walk(root);
+    if (hit) return hit;
+  }
+  return undefined;
+}
 const strategicPages = [
   'Strongholds-and-Territory.md',
   'Economy-and-Production.md',

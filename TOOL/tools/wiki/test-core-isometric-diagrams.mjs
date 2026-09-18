@@ -1,14 +1,34 @@
 import assert from 'node:assert/strict';
-import { existsSync } from 'node:fs';
+import { existsSync, readdirSync, statSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
-const corpusFile = (name) =>
-  ['LORE', 'GAME-LOGIC', 'GDD']
-    .map((dir) => join(repositoryRoot, dir, name))
-    .find((candidate) => existsSync(candidate));
+function corpusFile(name) {
+  const roots = ['LORE', 'GAME-LOGIC', 'GDD'].map((dir) => join(repositoryRoot, dir));
+  for (const root of roots) {
+    const direct = join(root, name);
+    if (existsSync(direct)) return direct;
+  }
+  const walk = (dir) => {
+    for (const entry of readdirSync(dir)) {
+      const path = join(dir, entry);
+      const st = statSync(path);
+      if (st.isDirectory()) {
+        const hit = walk(path);
+        if (hit) return hit;
+      } else if (entry === name) return path;
+    }
+    return undefined;
+  };
+  for (const root of roots) {
+    if (!existsSync(root)) continue;
+    const hit = walk(root);
+    if (hit) return hit;
+  }
+  return undefined;
+}
 const assetDir = join(repositoryRoot, 'GAME-REFERENCE', 'assets', 'wiki');
 const manifestPath = join(repositoryRoot, 'Tool', 'tools', 'wiki', 'core-isometric-diagrams.json');
 

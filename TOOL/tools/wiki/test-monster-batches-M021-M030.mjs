@@ -100,7 +100,7 @@ function runCli(args) {
 }
 
 test("live M021-M030 10/100 PASS", async () => {
-  const report = await verifyMonsterBatches("Wikis/game-logic");
+  const report = await verifyMonsterBatches("LORE");
   assert.equal(report.status, "PASS", JSON.stringify(report, null, 2));
   assert.equal(report.batchCount, 10);
   assert.equal(report.entryCount, 100);
@@ -241,7 +241,7 @@ test("잘못된 CLI 인자는 nonzero clean error", async () => {
   assert.notEqual(missing.code, 0);
   assert.ok(missing.stderr.includes("--root"));
 
-  const unknown = await runCli(["--root", "Wikis/game-logic", "--nope"]);
+  const unknown = await runCli(["--root", "LORE", "--nope"]);
   assert.notEqual(unknown.code, 0);
   assert.ok(unknown.stderr.includes("unknown") || unknown.stderr.includes("--nope"));
 });

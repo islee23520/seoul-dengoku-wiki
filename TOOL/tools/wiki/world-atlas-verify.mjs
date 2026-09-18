@@ -1,4 +1,4 @@
-import { readFile } from 'node:fs/promises';
+import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
 import { verifyDiagramRecords } from './world-atlas-isometric.mjs';
@@ -24,6 +24,37 @@ import {
   SOURCE_KINDS,
   STATES,
 } from './world-atlas-schema.mjs';
+
+async function readOptionalDocsFile(docs, file) {
+  try {
+    return await readFile(join(docs, file), 'utf8');
+  } catch (err) {
+    if (!err || err.code !== 'ENOENT') throw err;
+  }
+  const stack = [docs];
+  while (stack.length > 0) {
+    const dir = stack.pop();
+    let entries;
+    try {
+      entries = await readdir(dir, { withFileTypes: true });
+    } catch (err) {
+      if (err && (err.code === 'ENOENT' || err.code === 'ENOTDIR')) continue;
+      throw err;
+    }
+    for (const entry of entries) {
+      const path = join(dir, entry.name);
+      if (entry.isFile() && entry.name === file) {
+        try {
+          return await readFile(path, 'utf8');
+        } catch (err) {
+          if (!err || err.code !== 'ENOENT') throw err;
+        }
+      }
+      if (entry.isDirectory()) stack.push(path);
+    }
+  }
+  return null;
+}
 
 function requireFields(record, fields, fail, where) {
   for (const field of fields) {
@@ -106,21 +137,31 @@ export async function verifyAtlasStage({ atlasPath, docs, stage, fail, batch = n
   }
   const projections = {};
   for (const name of Object.values(PROJECTION_FILES)) {
-    try {
-      projections[name] = await readFile(join(docs, name), 'utf8');
-    } catch (err) {
-      if (!err || err.code !== 'ENOENT') throw err;
-    }
+    const text = await readOptionalDocsFile(docs, name);
+    if (text !== null) projections[name] = text;
   }
   try {
-    const { readdir } = await import('node:fs/promises');
-    for (const name of await readdir(docs)) {
-      if (/^(Story-Batch-B\d{3}|Monster-Batch-M\d{3}|Hostile-Group-G\d{2})\.md$/.test(name)) {
-        try {
-          projections[name] = await readFile(join(docs, name), 'utf8');
-        } catch (err) {
-          if (!err || err.code !== 'ENOENT') throw err;
+    const stack = [docs];
+    while (stack.length > 0) {
+      const dir = stack.pop();
+      let entries;
+      try {
+        entries = await readdir(dir, { withFileTypes: true });
+      } catch (err) {
+        if (err && (err.code === 'ENOENT' || err.code === 'ENOTDIR')) continue;
+        throw err;
+      }
+      for (const entry of entries) {
+        const path = join(dir, entry.name);
+        if (entry.isFile() && /^(Story-Batch-B\d{3}|Monster-Batch-M\d{3}|Hostile-Group-G\d{2})\.md$/.test(entry.name)) {
+          try {
+            projections[entry.name] = await readFile(path, 'utf8');
+          } catch (err) {
+            if (!err || err.code !== 'ENOENT') throw err;
+          }
+          continue;
         }
+        if (entry.isDirectory()) stack.push(path);
       }
     }
   } catch (err) {
