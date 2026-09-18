@@ -5,7 +5,7 @@
 **Branch:** main
 
 ## OVERVIEW
-Character-centered grand-strategy SRPG set in post-collapse Seoul's subway network. Unity 6000.7.0a5 runs the game; Node/Python tooling validates documentation, architecture, assets and captures, while Backend hosts a .NET 8 CoreWCF service.
+Character-centered grand-strategy 4X RPG set in post-collapse Seoul's subway network. Unity 6000.7.0a5 runs the game; Node/Python tooling validates documentation, architecture, assets and captures, while Backend hosts a .NET 8 CoreWCF service.
 
 ## STRUCTURE
 ```text
