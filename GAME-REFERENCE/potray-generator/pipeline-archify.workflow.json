@@ -1,0 +1,231 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "포트레잇 아트 파이프라인",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "authoring",
+      "label": "① 생성 — 기준 원본 → Stage 1–3"
+    },
+    {
+      "id": "verify",
+      "label": "② 검증 (게이트)"
+    },
+    {
+      "id": "deliver",
+      "label": "인도·런타임"
+    },
+    {
+      "id": "repair",
+      "label": "③ 수정 루프 (FAIL 시)",
+      "variant": "exception"
+    }
+  ],
+  "phases": [
+    {
+      "id": "gen",
+      "label": "생성 — 규칙 기반 저작",
+      "fromCol": 0,
+      "toCol": 3
+    },
+    {
+      "id": "check",
+      "label": "검증·인도",
+      "fromCol": 4,
+      "toCol": 5,
+      "variant": "emphasis"
+    }
+  ],
+  "mainPath": [
+    "benchmark",
+    "stage1",
+    "stage2",
+    "stage3",
+    "dual_gate",
+    "gate4",
+    "runtime"
+  ],
+  "semanticChecks": {
+    "allowedRoots": [
+      "benchmark"
+    ],
+    "allowedTerminals": [
+      "runtime"
+    ],
+    "requiredEdges": [
+      {
+        "from": "benchmark",
+        "to": "stage1"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "benchmark",
+      "lane": "authoring",
+      "col": 0,
+      "type": "external",
+      "label": "기준 원본",
+      "sublabel": "target · guide-bust",
+      "tag": "불변",
+      "width": 120
+    },
+    {
+      "id": "stage1",
+      "lane": "authoring",
+      "col": 1,
+      "type": "backend",
+      "label": "Stage 1 · 분할",
+      "sublabel": "잉크 소유권 z 0→21",
+      "width": 140
+    },
+    {
+      "id": "stage2",
+      "lane": "authoring",
+      "col": 2,
+      "type": "backend",
+      "label": "Stage 2 · 파츠",
+      "sublabel": "은면·성별·공통 어깨",
+      "width": 140
+    },
+    {
+      "id": "stage3",
+      "lane": "authoring",
+      "col": 3,
+      "type": "backend",
+      "label": "Stage 3 · 조합",
+      "sublabel": "교차·적대 조합",
+      "width": 140
+    },
+    {
+      "id": "dual_gate",
+      "lane": "verify",
+      "col": 4,
+      "type": "security",
+      "label": "이중 게이트",
+      "sublabel": "수치+예술 Q01–Q10",
+      "tag": "GQ1–GQ4",
+      "width": 150
+    },
+    {
+      "id": "gate4",
+      "lane": "verify",
+      "col": 5,
+      "type": "security",
+      "label": "Gate 4 큐레이션",
+      "sublabel": "통과 828록만",
+      "width": 140
+    },
+    {
+      "id": "runtime",
+      "lane": "deliver",
+      "col": 5,
+      "type": "frontend",
+      "label": "런타임",
+      "sublabel": "46 슬롯판·library",
+      "tag": "clip kernel · Unity",
+      "width": 140
+    },
+    {
+      "id": "repair_intake",
+      "lane": "repair",
+      "col": 2,
+      "type": "backend",
+      "label": "수정 루프 진입",
+      "sublabel": "HANDOFF·SHA·마스크",
+      "width": 148
+    },
+    {
+      "id": "repair_verdict",
+      "lane": "repair",
+      "col": 4,
+      "type": "backend",
+      "label": "재생성 · 판정",
+      "sublabel": "provider·enforce·VERDICT",
+      "width": 148
+    }
+  ],
+  "edges": [
+    {
+      "from": "benchmark",
+      "to": "stage1",
+      "label": "바이트 기준",
+      "variant": "emphasis"
+    },
+    {
+      "from": "stage1",
+      "to": "stage2",
+      "label": "소유권 확정"
+    },
+    {
+      "from": "stage2",
+      "to": "stage3",
+      "label": "3변형 × 23슬롯"
+    },
+    {
+      "from": "stage3",
+      "to": "dual_gate",
+      "label": "후보 제출",
+      "variant": "emphasis",
+      "route": "drop",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "from": "dual_gate",
+      "to": "gate4",
+      "label": "PASS",
+      "variant": "emphasis"
+    },
+    {
+      "from": "gate4",
+      "to": "runtime",
+      "label": "카탈로그 통과록"
+    },
+    {
+      "from": "dual_gate",
+      "to": "repair_intake",
+      "label": "FAIL",
+      "variant": "security",
+      "role": "error",
+      "route": "drop",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "from": "repair_intake",
+      "to": "repair_verdict",
+      "label": "편집 영역만 개방"
+    },
+    {
+      "from": "repair_verdict",
+      "to": "stage2",
+      "label": "다음 라운드 ↻",
+      "variant": "dashed",
+      "role": "return"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "정상 경로 원칙",
+      "items": [
+        "기준 원본 불변 — 교체는 무리샘플 없는 바이트 복사",
+        "게이트웨이 1→2→3 영구 잠금 · 슬롯 23×2성별·3변형",
+        "눈코입은 자르지 않고 조합 마스크로 교체"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "정지·증거 조건",
+      "items": [
+        "게이트 FAIL 결과 승격 금지 · frozen basis 보존",
+        "수치·예술 판정 분리 — 미증거는 NOT VERIFIED",
+        "SHA 동결·영수증·VERDICT 보존, 생성 전 에셋 DB 질의"
+      ]
+    }
+  ]
+}

@@ -108,7 +108,7 @@ footer{border-top:1px solid var(--line);margin-top:70px;padding-top:18px;color:v
 <div class="wrap">
 <header>
   <h1>포트레잇 아트 파이프라인 아카이브<span class="sub">생성 규칙 → 검증 → 수정</span></h1>
-  <div class="meta">2026-09-18 편찬 · 근거: Tool/art/portrait/{QUALITY-GATE, MATCH-TARGET, README}.md · Design/potrait-generator/CONTRACTS.md · .omo/plans · .omo/evidence 게이트 판정 실태 · 원전이 항상 우선</div>
+  <div class="meta">2026-09-18 편찬 · 근거: TOOL/tools/art/portrait/{QUALITY-GATE, MATCH-TARGET, README}.md · GAME-REFERENCE/potray-generator/CONTRACTS.md · .omo/plans · .omo/evidence 게이트 판정 실태 · 원전이 항상 우선</div>
 </header>
 
 <!-- ══════════════ 전체 플로우 ══════════════ -->
@@ -116,8 +116,11 @@ footer{border-top:1px solid var(--line);margin-top:70px;padding-top:18px;color:v
   <h2>전체 파이프라인<span class="en">END-TO-END</span></h2>
   <p class="lead">불변 기준원본에서 출발해 3단계 저작 → 4개 게이트 → 런타임 합성으로 이어지고, 어디서든 FAIL이 나면 수정 루프가 돈다.</p>
 
-  <object type="image/svg+xml" data="pipeline-archive.svg" style="width:100%;height:auto;display:block" aria-label="포트레잇 아트 파이프라인 다이어그램"></object>
-  <p class="flow-note">다이어그램 단독 파일: <span class="path">Design/potrait-generator/pipeline-archive.svg</span> · 게이트웨이 순서 1→2→3은 <b style="color:var(--red)">영구 잠금</b>(오너 결정 2026-09-15) — 우회 불가. 각 단계는 수치 게이트와 예술 게이트를 <b>별도로</b> 통과해야 한다.</p>
+  <a href="pipeline-archify.html" style="display:block;background:var(--panel2);border:1px solid #3a2a4a;border-radius:10px;padding:18px 20px;margin:10px 0">
+    <b style="color:var(--violet);font-size:15px">▶ 인터랙티브 다이어그램 열기 — pipeline-archify.html</b>
+    <span style="display:block;color:var(--dim);font-size:13px;margin-top:4px">archify 생성 · 생성→검증→수정 전체 플로우 · 테마 전환·팬/줌·관계 추적 지원(뷰어 UI는 영어 폴백)</span>
+  </a>
+  <p class="flow-note">archify 스펙: <span class="path">GAME-REFERENCE/potray-generator/pipeline-archify.workflow.json</span> · 게이트웨이 순서 1→2→3은 <b style="color:var(--red)">영구 잠금</b>(오너 결정 2026-09-15) — 우회 불가. 각 단계는 수치 게이트와 예술 게이트를 <b>별도로</b> 통과해야 한다.</p>
 
   <div class="duo" style="margin-top:20px">
     <div class="card"><h4>📐 수치 게이트</h4>
@@ -138,7 +141,7 @@ footer{border-top:1px solid var(--line);margin-top:70px;padding-top:18px;color:v
 
   <div class="grid g3">
     <div class="card"><h4>기준 원본 (immutable)</h4>
-      <p>매칭 타깃 <span class="path">Tool/art/portrait/original/target.png</span> — 모든 불투명 픽셀이 정확히 하나의 의미 영역 소유. 경계는 <b>그려진 선</b>을 따른다(헥스·컨벡스·사각 금지). 바닥 참조 <span class="path">guide-bust.png</span>(동일 SHA) 이하 렌더링은 즉시 기각.</p></div>
+      <p>매칭 타깃 <span class="path">TOOL/tools/art/portrait/original/target.png</span> — 모든 불투명 픽셀이 정확히 하나의 의미 영역 소유. 경계는 <b>그려진 선</b>을 따른다(헥스·컨벡스·사각 금지). 바닥 참조 <span class="path">guide-bust.png</span>(동일 SHA) 이하 렌더링은 즉시 기각.</p></div>
     <div class="card"><h4>변형 계약</h4>
       <p><b>슬롯당 3변형</b> × 23슬롯 × 2성별. 2026-09-17 오너 결정으로 기존 10에서 축소(게이트웨이 검증 가속). 리컬러 10장은 10개 genuine 변형이 아니다.</p></div>
     <div class="card"><h4>CK2 문법 참조 한계</h4>
@@ -220,7 +223,7 @@ footer{border-top:1px solid var(--line);margin-top:70px;padding-top:18px;color:v
 
   <h3>검증 인프라</h3>
   <div class="grid g2">
-    <div class="card"><h4>에셋 DB (SQLite SSoT)</h4><p><span class="path">Design/potrait-generator/portrait-assets.sqlite</span> — .omo/evidence 전체 비파괴 스캔, SHA-256 그룹핑, 경로·라이프사이클·스코프 PASS/REJECT/PENDING 영수증. 생성·수정 전 반드시 질의 (재사용 증명 = 경로+SHA+스코프 평가).</p></div>
+    <div class="card"><h4>에셋 DB (SQLite SSoT)</h4><p><span class="path">GAME-REFERENCE/potray-generator/portrait-assets.sqlite</span> — .omo/evidence 전체 비파괴 스캔, SHA-256 그룹핑, 경로·라이프사이클·스코프 PASS/REJECT/PENDING 영수증. 생성·수정 전 반드시 질의 (재사용 증명 = 경로+SHA+스코프 평가).</p></div>
     <div class="card"><h4>검증 요청 큐</h4><p><span class="path">.omo/portrait-validation-requests</span> — 콘텐츠 주소 요청 기록 후 dispatch. create는 큐 적재만. 스키마·검증기: portrait-review-record.schema.json + verify-portrait-review.mjs (+바인딩).</p></div>
   </div>
 </section>
@@ -268,11 +271,11 @@ footer{border-top:1px solid var(--line);margin-top:70px;padding-top:18px;color:v
   <h2>원전 문서 맵<span class="en">SOURCES</span></h2>
   <table>
     <tr><th>주제</th><th>원전 경로</th></tr>
-    <tr><td>품질 바닥 · Q01–Q10 · GQ1–GQ4</td><td><span class="path">Tool/art/portrait/QUALITY-GATE.md</span></td></tr>
-    <tr><td>Stage-1 매칭 정의 · 금지</td><td><span class="path">Tool/art/portrait/MATCH-TARGET.md</span></td></tr>
-    <tr><td>슬롯 · 변형 · 관계 · 게이트웨이 계약</td><td><span class="path">Design/potrait-generator/CONTRACTS.md</span></td></tr>
-    <tr><td>슬롯 관계 JSON</td><td><span class="path">Tool/art/portrait/portrait-slot-relations.json</span></td></tr>
-    <tr><td>에셋 DB · 검증 큐 운용</td><td><span class="path">Tool/art/portrait/README.md</span></td></tr>
+    <tr><td>품질 바닥 · Q01–Q10 · GQ1–GQ4</td><td><span class="path">TOOL/tools/art/portrait/QUALITY-GATE.md</span></td></tr>
+    <tr><td>Stage-1 매칭 정의 · 금지</td><td><span class="path">TOOL/tools/art/portrait/MATCH-TARGET.md</span></td></tr>
+    <tr><td>슬롯 · 변형 · 관계 · 게이트웨이 계약</td><td><span class="path">GAME-REFERENCE/potray-generator/CONTRACTS.md</span></td></tr>
+    <tr><td>슬롯 관계 JSON</td><td><span class="path">TOOL/tools/art/portrait/portrait-slot-relations.json</span></td></tr>
+    <tr><td>에셋 DB · 검증 큐 운용</td><td><span class="path">TOOL/tools/art/portrait/README.md</span></td></tr>
     <tr><td>무리샘플 금지 복원 계획</td><td><span class="path">.omo/plans/restore-uncropped-plates-via-masks-20260918.md</span></td></tr>
     <tr><td>ULW 스코프 · 하드밴</td><td><span class="path">.omo/portrait-anime-ulw-brief.md</span></td></tr>
     <tr><td>텍스트 아카이브(본 페이지 원고)</td><td><span class="path">.omo/research/portrait-art-pipeline-archive-20260918.md</span></td></tr>
