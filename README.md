@@ -4,7 +4,7 @@
 
 이 저장소는 Unity 6.7 기반 프로젝트와 게임 로직 문서의 원본을 관리합니다.
 
-작업을 시작하려면 [contribute.md](contribute.md)에서 도메인을 고릅니다. 이슈 규칙과 라벨은 [CONTRIBUTING.md](CONTRIBUTING.md)입니다. 인물을 넣을 때는 [인물 등록 템플릿](Wikis/game-logic/Cast-Registration-Template.md)을 씁니다.
+작업을 시작하려면 [CONTRIBUTING.md](CONTRIBUTING.md)에서 도메인을 고릅니다. 이슈 규칙과 라벨은 [CONTRIBUTING.md](CONTRIBUTING.md)입니다. 인물을 넣을 때는 [인물 등록 템플릿](Wikis/game-logic/Cast-Registration-Template.md)을 씁니다.
 
 ## 현재 상태
 

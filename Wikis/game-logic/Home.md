@@ -96,7 +96,7 @@
 | [UI가 코드로 들어오는 길](Ui-Implementation-Pipeline.md) | |
 | [유니티 구조](Unity-Architecture.md) | |
 | [같은 선택이 같은 결과가 되나](Save-and-Determinism.md) | |
-| [기여를 시작하는 곳](../../contribute.md) | |
+| [기여를 시작하는 곳](../../CONTRIBUTING.md) | |
 
 ## 현재 구현 범위
 
