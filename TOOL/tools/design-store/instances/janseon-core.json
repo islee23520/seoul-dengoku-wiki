@@ -14,7 +14,7 @@
       {
         "heading": "시작",
         "body": "한 역 사회에 흘러든 무명 인물이며, 작은 파티를 꾸리고 생업과 의뢰를 수행하면서 이름을 얻습니다.",
-        "sourcePath": "Wikis/game-logic/Game-Thesis.md"
+        "sourcePath": "GAME-LOGIC/Game-Thesis.md"
       },
       {
         "heading": "시야",
@@ -24,12 +24,12 @@
       {
         "heading": "격자",
         "body": "한 타일은 1.5m이며 일반 통로는 최소 두 타일 폭입니다.",
-        "sourcePath": "Wikis/game-logic/Game-Thesis.md"
+        "sourcePath": "GAME-LOGIC/Game-Thesis.md"
       },
       {
         "heading": "루프",
         "body": "교섭, 거래, 작업, 은신, 회피 또는 전투를 선택합니다.",
-        "sourcePath": "Wikis/game-logic/Campaign-Loop.md"
+        "sourcePath": "GAME-LOGIC/Campaign-Loop.md"
       },
       {
         "heading": "전투",
@@ -39,7 +39,7 @@
       {
         "heading": "정산",
         "body": "부상, 포획, 사망, 물자 손실과 관계 악화가 정산됩니다.",
-        "sourcePath": "Wikis/game-logic/Game-Thesis.md"
+        "sourcePath": "GAME-LOGIC/Game-Thesis.md"
       },
       {
         "heading": "화면",
@@ -54,7 +54,7 @@
       {
         "heading": "구현 순서",
         "body": "아래 검증 단계는 시각 수용·슬롯 연결·시각 게이트를 끝내는 순서다.",
-        "sourcePath": "Wikis/game-logic/Development-Roadmap.md"
+        "sourcePath": "GAME-LOGIC/Development-Roadmap.md"
       },
       {
         "heading": "요구 시야 #97",
@@ -64,17 +64,17 @@
       {
         "heading": "요구 카드 부여 #98",
         "body": "보급, 동맹, 퇴로와 거점 상태가 카드와 사기로 전장에 들어옵니다.",
-        "sourcePath": "Wikis/game-logic/Game-Thesis.md"
+        "sourcePath": "GAME-LOGIC/Game-Thesis.md"
       },
       {
         "heading": "요구 분대 명령 #99",
         "body": "actor 기반 분대 이동(Move), 목표 적 지정 공격(Attack), 방향 전환(SetFacing)을 내립니다.",
-        "sourcePath": "Wikis/game-logic/Realtime-Formation-Card-Battle.md"
+        "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
       },
       {
         "heading": "요구 사상자 #100",
         "body": "초기 생존수는 `ceil(4 * 시작Hp / MaxHp)`로 정합니다(Hp가 0이면 0).",
-        "sourcePath": "Wikis/game-logic/Realtime-Formation-Card-Battle.md"
+        "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
       }
     ]
   },
@@ -91,22 +91,22 @@
     },
     {
       "body": "탐색, 상호작용과 전투는 같은 4방향 타일 격자에서 이어집니다.",
-      "sourcePath": "Wikis/game-logic/Game-Thesis.md",
+      "sourcePath": "GAME-LOGIC/Game-Thesis.md",
       "name": "격자"
     },
     {
       "body": "한 타일은 1.5m이며 일반 통로는 최소 두 타일 폭입니다.",
-      "sourcePath": "Wikis/game-logic/Game-Thesis.md",
+      "sourcePath": "GAME-LOGIC/Game-Thesis.md",
       "name": "타일"
     },
     {
       "body": "시뮬레이션은 30Hz 고정 간격으로 진행됩니다.",
-      "sourcePath": "Wikis/game-logic/Realtime-Formation-Card-Battle.md",
+      "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md",
       "name": "틱"
     },
     {
       "body": "거점 카드는 최대 2슬롯이며 아군 분대 전체가 공유합니다.",
-      "sourcePath": "Wikis/game-logic/Realtime-Formation-Card-Battle.md",
+      "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md",
       "name": "거점 카드"
     },
     {
@@ -126,7 +126,7 @@
     },
     {
       "body": "캐릭터는 해당 시점에 맞춘 2.5등신 SD 실루엣과 네 방향 표현을 사용합니다.",
-      "sourcePath": "Wikis/game-logic/Game-Thesis.md",
+      "sourcePath": "GAME-LOGIC/Game-Thesis.md",
       "name": "실루엣"
     },
     {
@@ -143,42 +143,42 @@
     },
     {
       "body": "정보, 의뢰, 계약과 관계 문제를 살핍니다.",
-      "sourcePath": "Wikis/game-logic/Campaign-Loop.md",
+      "sourcePath": "GAME-LOGIC/Campaign-Loop.md",
       "name": "거점 할 일"
     },
     {
       "body": "파티, 장비, 식량, 의약품, 경로와 통행권을 준비합니다.",
-      "sourcePath": "Wikis/game-logic/Campaign-Loop.md",
+      "sourcePath": "GAME-LOGIC/Campaign-Loop.md",
       "name": "원정 준비"
     },
     {
       "body": "교섭, 거래, 작업, 은신, 회피 또는 전투를 선택합니다.",
-      "sourcePath": "Wikis/game-logic/Campaign-Loop.md",
+      "sourcePath": "GAME-LOGIC/Campaign-Loop.md",
       "name": "조우 선택"
     },
     {
       "body": "전열, 후열, 측면에 분대를 배치하고 4방향 정면을 정합니다.",
-      "sourcePath": "Wikis/game-logic/Realtime-Formation-Card-Battle.md",
+      "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md",
       "name": "진형"
     },
     {
       "body": "actor 기반 분대 이동(Move), 목표 적 지정 공격(Attack), 방향 전환(SetFacing)을 내립니다.",
-      "sourcePath": "Wikis/game-logic/Realtime-Formation-Card-Battle.md",
+      "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md",
       "name": "분대 명령"
     },
     {
       "body": "인물 카드는 `(OwnerUnitId, CardId)` 쌍으로 상태를 관리하며 소유자마다 독립된 재충전 타이머를 가집니다.",
-      "sourcePath": "Wikis/game-logic/Realtime-Formation-Card-Battle.md",
+      "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md",
       "name": "카드 소유"
     },
     {
       "body": "부상, 시간, 물자, 관계, 평판, 거점과 노선 상태가 바뀝니다.",
-      "sourcePath": "Wikis/game-logic/Campaign-Loop.md",
+      "sourcePath": "GAME-LOGIC/Campaign-Loop.md",
       "name": "결과 반영"
     },
     {
       "body": "보급, 동맹, 퇴로와 거점 상태가 카드와 사기로 전장에 들어옵니다.",
-      "sourcePath": "Wikis/game-logic/Game-Thesis.md",
+      "sourcePath": "GAME-LOGIC/Game-Thesis.md",
       "name": "전략 결과"
     }
   ],
@@ -191,22 +191,22 @@
     {
       "kind": "Fantasy",
       "body": "한 역 사회에 흘러든 무명 인물이며, 작은 파티를 꾸리고 생업과 의뢰를 수행하면서 이름을 얻습니다.",
-      "sourcePath": "Wikis/game-logic/Game-Thesis.md"
+      "sourcePath": "GAME-LOGIC/Game-Thesis.md"
     },
     {
       "kind": "Narrative",
       "body": "노선 연합, 독립 역 사회, 지상·지하 공동체, 교역망 패권, 기술 복구 체제처럼 플레이 과정에서 형성된 정통성에 따라 여러 질서가 등장합니다.",
-      "sourcePath": "Wikis/game-logic/Game-Thesis.md"
+      "sourcePath": "GAME-LOGIC/Game-Thesis.md"
     },
     {
       "kind": "Challenge",
       "body": "보급, 동맹, 퇴로와 거점 상태가 카드와 사기로 전장에 들어옵니다.",
-      "sourcePath": "Wikis/game-logic/Game-Thesis.md"
+      "sourcePath": "GAME-LOGIC/Game-Thesis.md"
     },
     {
       "kind": "Fellowship",
       "body": "수리, 의료, 운송, 경비, 교섭과 탐사도 전투만큼 중요한 성장 경로입니다.",
-      "sourcePath": "Wikis/game-logic/Game-Thesis.md"
+      "sourcePath": "GAME-LOGIC/Game-Thesis.md"
     },
     {
       "kind": "Discovery",
@@ -216,7 +216,7 @@
     {
       "kind": "Expression",
       "body": "직위, 관계, 기억과 계승이 세력의 행동을 바꿉니다.",
-      "sourcePath": "Wikis/game-logic/Game-Thesis.md"
+      "sourcePath": "GAME-LOGIC/Game-Thesis.md"
     },
     {
       "kind": "Submission",

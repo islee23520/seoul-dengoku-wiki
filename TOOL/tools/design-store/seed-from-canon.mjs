@@ -75,7 +75,7 @@ function resolveCanonPath(sourcePath) {
       const nested = findNamedMarkdown(join(repoRoot, dir), fileName);
       if (nested) return nested;
     }
-    return join(repoRoot, 'LORE', rest);
+    return join(repoRoot, 'GAME-LOGIC', rest);
   }
   return join(repoRoot, sourcePath);
 }
