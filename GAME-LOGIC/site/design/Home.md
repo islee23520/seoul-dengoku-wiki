@@ -95,6 +95,8 @@
 |---|---|
 | [UI가 코드로 들어오는 길](/design/Ui-Implementation-Pipeline) | |
 | [유니티 구조](/rules/Unity-Architecture) | |
+| [Unity 시스템 설계 계약](/rules/Unity-System-Design) | |
+| [Unity 아키텍처 구현 계획](/rules/Unity-Architecture-Implementation-Plan) | |
 | [같은 선택이 같은 결과가 되나](/rules/Save-and-Determinism) | |
 | [기여를 시작하는 곳](../CONTRIBUTING.md) | |
 

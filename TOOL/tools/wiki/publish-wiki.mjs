@@ -134,7 +134,7 @@ export async function assertPublishableBuild(outputDir, { sourceDirs, assetDir }
 }
 
 export const GITHUB_WIKI_RETIRED =
-  'GitHub Wiki is retired; serve Wikis/site locally and publish https://seoul-kenshi.vercel.app';
+  'GitHub Wiki is retired; serve GAME-LOGIC/site locally and publish https://seoul-kenshi.vercel.app';
 
 export async function publishWiki({
   repositoryRoot,

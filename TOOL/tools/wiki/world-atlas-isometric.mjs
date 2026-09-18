@@ -53,8 +53,8 @@ export function escapeXml(value) {
     .replaceAll('"', '&quot;');
 }
 
-const SVG_ASSET_DIR = posix.join('Reference', 'assets', 'wiki');
-const WIKI_PAGE_DIR = posix.join('Wikis', 'game-logic');
+const SVG_ASSET_DIR = posix.join('GAME-REFERENCE', 'assets', 'wiki');
+const WIKI_PAGE_DIR = posix.join('LORE');
 
 export function wikiHrefFromSvgAsset(href) {
   const raw = String(href);
@@ -85,7 +85,10 @@ function layerName(diagram, id) {
 }
 
 export function nodeDisplayName(atlas, diagram, node) {
-  if (node.kind === 'state') return STATE_BY_ID[node.ref]?.name ?? node.ref;
+  if (node.kind === 'state') {
+    const fromHumans = atlas.humans?.find((h) => h.state_id === node.ref)?.state_name;
+    return fromHumans ?? STATE_BY_ID[node.ref]?.name ?? node.ref;
+  }
   if (node.kind === 'house') {
     return atlas.houses?.find((h) => h.id === node.ref)?.display_name ?? HOUSE_NAME[node.ref] ?? node.ref;
   }

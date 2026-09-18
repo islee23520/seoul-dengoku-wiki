@@ -50,7 +50,7 @@ seoul-kenshi/
 | Design entry and navigation | `GDD/Home.md`, `_Sidebar.md` | Separate design intent from implementation status |
 | Architecture and rollout | `GAME-LOGIC/Unity-Architecture.md`, `GDD/system-design/Unity-System-Design.md`, `GAME-LOGIC/Unity-Architecture-Implementation-Plan.md` | Responsibilities, contracts, implementation sequence |
 | Save and randomness contracts | `GAME-LOGIC/Save-and-Determinism.md` | Versioning, event records, separated RNG streams |
-| Cast corpus | `LORE/Cast-Index.md`, `LORE/Cast-Relations.md`, `LORE/Cast-State-01.md` through `LORE/Cast-State-16.md` | Sixteen-state organization |
+| Cast corpus | `LORE/characters/Cast-Index.md`, `LORE/characters/Cast-Relations.md`, `LORE/characters/Cast-State-01.md` through `LORE/characters/Cast-State-16.md` | Sixteen-state organization |
 | Unity setup and quality gateway | `GAME/AGENTS.md` | Pinned editor, batchmode contract, work procedure, regressions and done-means |
 | Domain and runtime integration | `GAME/Assets/Janseon/AGENTS.md` | Core/Foundation boundaries and art import seams |
 | Unity tests and captures | `GAME/Assets/Tests/AGENTS.md` | Test-mode ownership and evidence receipts |

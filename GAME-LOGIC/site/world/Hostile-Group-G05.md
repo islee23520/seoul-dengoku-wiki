@@ -2,8 +2,8 @@
 
 이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.
 
-- 원본 앵커: `Wikis/game-logic/World-Narrative-Atlas.md`
-- 원본 해시: `a9e42252da4607f1f0960e3a6163a6e4a68b5ee48e570bdd71d9d0042f69ecb8`
+- 원본 앵커: `LORE/World-Narrative-Atlas.md`
+- 원본 해시: `6d7f060f82a2ee91fc127a8096e9a57d77d2d13cf7e8adb3f6fe76635e398caa`
 
 
 G05 환승쥐군락은 S05 호위보호정의 지하 배급 통로와 S10 명부시민맹의 대피 계단이 맞물리는 환승 연결부에서 형성된 도시 동물 군집이다.

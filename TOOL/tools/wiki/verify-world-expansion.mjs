@@ -1,3 +1,4 @@
+import { existsSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -159,20 +160,31 @@ function verifyExpansion(expansion, fail) {
   }
 }
 
+function repoRootFromDocs(docs) {
+  const resolved = resolve(docs);
+  const parent = resolve(resolved, '..');
+  const grand = resolve(parent, '..');
+  if (existsSync(join(parent, 'GDD')) || existsSync(join(parent, '.omo'))) return parent;
+  if (existsSync(join(grand, 'GDD')) || existsSync(join(grand, '.omo'))) return grand;
+  return grand;
+}
+
 export async function verifyWorldExpansion(options) {
   const docs = options.docs;
-  const repoRoot = resolve(docs, '..', '..');
+  const repoRoot = repoRootFromDocs(docs);
   const violations = [];
   const fail = (rule, detail) => {
     violations.push({ rule, detail });
   };
 
-  const notice = await readOptional(join(docs, NOTICE_FILE));
+  const notice = await readOptional(join(docs, NOTICE_FILE))
+    ?? await readOptional(join(repoRoot, 'GDD', NOTICE_FILE));
   if (notice === null || !notice.includes('비공식') || !notice.includes('비상업')) {
     fail('E_MISSING_NOTICE', NOTICE_FILE);
   }
 
-  const sourcesText = await readOptional(join(docs, SOURCES_FILE));
+  const sourcesText = await readOptional(join(docs, SOURCES_FILE))
+    ?? await readOptional(join(repoRoot, 'GDD', SOURCES_FILE));
   if (sourcesText === null) fail('E_MALFORMED', `${SOURCES_FILE} missing`);
   else verifySources(sourcesText, fail);
 
