@@ -4,7 +4,7 @@
 
 웹에서 이슈를 열 때는 [이슈 폼](.github/ISSUE_TEMPLATE/job.yml)을 쓴다. 빈 이슈는 끈다. `gh issue create`와 에이전트는 이 문서의 같은 다섯 섹션을 본문에 그대로 넣는다.
 
-카테고리별로 어느 폴더를 열고 무엇을 먼저 하는지는 아래 「어디부터 손대는지」 절이다. 인물 산문은 [인물 등록 템플릿](Wikis/game-logic/Cast-Registration-Template.md)을 복사한다.
+카테고리별로 어느 폴더를 열고 무엇을 먼저 하는지는 아래 「어디부터 손대는지」 절이다. 인물 산문은 [인물 등록 템플릿](LORE/Cast-Registration-Template.md)을 복사한다.
 
 ## 목표
 
@@ -19,8 +19,8 @@
 
 | 말 | 뜻 |
 |---|---|
-| 게시 SoT | main의 `Wikis/game-logic/Cast-State-01.md`–`16.md`, `Cast-Index.md`, `Cast-Relations.md`, `Core-Characters.md`. 위키 원본이다. |
-| 공개 문서 | VitePress `Wikis/site/`. 로컬은 `npm run docs:dev`, 공개는 `https://seoul-kenshi.vercel.app`. GitHub Wiki는 쓰지 않는다. |
+| 게시 SoT | main의 `LORE/Cast-State-01.md`–`16.md`, `Cast-Index.md`, `Cast-Relations.md`, `Core-Characters.md`. 위키 원본이다. |
+| 공개 문서 | VitePress `GAME-LOGIC/site/`. 로컬은 `npm run docs:dev`, 공개는 `https://seoul-kenshi.vercel.app`. GitHub Wiki는 쓰지 않는다. |
 | 미게시·대기 | Cast-Index 보관 표의 상태. 파일 존재나 SHA가 게시 승인이 아니다. |
 | 큐레이션 | 구세대 `docs/cast-*` 조각을 Cast-State SoT와 대조해 게시하거나 폐기하는 일. `git merge` 일괄 적용이 아니다. |
 | 승격 | 권리·BOM·4축 검수와 리드 승인을 통과한 에셋만 런타임 경로에 넣는 일. |
@@ -110,14 +110,14 @@ gh issue create --repo islee23520/seoul-kenshi \
 Wiki:
 
 ```bash
-node Tool/tools/wiki/test-build-wiki.mjs
-node Tool/tools/wiki/verify-cast.mjs --docs Wikis/game-logic --stage all
-node Tool/tools/wiki/build-wiki.mjs Wikis/game-logic Reference/assets/wiki <tmp> "$(git rev-parse HEAD)"
+node TOOL/tools/wiki/test-build-wiki.mjs
+node TOOL/tools/wiki/verify-cast.mjs --docs LORE --stage all
+node TOOL/tools/wiki/build-wiki.mjs LORE GAME-REFERENCE/assets/wiki <tmp> "$(git rev-parse HEAD)"
 ```
 
 빌드가 실패하면 `https://seoul-kenshi.vercel.app`에 올리지 않는다. GitHub Wiki로 push하지 않는다.
 
-Unity: [`Tool/docs/Unity-Headless-Workflow.md`](Tool/docs/Unity-Headless-Workflow.md). `6000.7.0a5` `-batchmode`, 전용 백그라운드 세션, GUI/`unicli`/uLoop/CuaDriver 금지. 증거는 NUnit XML과 PNG/해시와 cleanup 영수증이다.
+Unity: [`TOOL/docs/Unity-Headless-Workflow.md`](TOOL/docs/Unity-Headless-Workflow.md). `6000.7.0a5` `-batchmode`, 전용 백그라운드 세션, GUI/`unicli`/uLoop/CuaDriver 금지. 증거는 NUnit XML과 PNG/해시와 cleanup 영수증이다.
 
 아트: 권리·BOM fail-closed. 4축 raw 보존. 리드 승인 전 런타임 승격 금지. ComfyUI 신규 설치는 소유자 인터뷰 없이 이슈 범위에 넣지 않는다.
 
@@ -136,18 +136,18 @@ main의 기존 dirty/staged 파일은 보존한다. 구현은 전용 worktree �
 
 | 카테고리 | 정본 | 첫 파일 | 게이트 |
 | --- | --- | --- | --- |
-| 세계관 | `Wikis/game-logic/` | [Home.md](Wikis/game-logic/Home.md), [세계 서사 지도](Wikis/game-logic/World-Narrative-Atlas.md) | 위키 빌드, 금지 용어 |
-| 설정 | `Wikis/game-logic/`, `GDD/` | 계약·도표 페이지, [Intent.md](Intent.md) | 위키 또는 문서 정합 |
-| 인물 | `Wikis/game-logic/Cast-*` | [인물 등록 템플릿](Wikis/game-logic/Cast-Registration-Template.md) | `verify-cast.mjs` |
-| 사건 | 타임라인 | [시나리오 타임라인](Wikis/game-logic/Scenario-Timeline.md) | 위키 빌드 |
-| 이야기 | 서사 배치 | [세계 서사 지도](Wikis/game-logic/World-Narrative-Atlas.md) | 위키 빌드, 출처 충실 |
-| 게임로직 | 규칙 문서 | [유니티 구조](Wikis/game-logic/Unity-Architecture.md) 옆의 규칙 페이지 | 위키 빌드 |
-| 게임 구현 | `Game/Assets/Janseon/` | 해당 Core/Foundation 스크립트 | EditMode/PlayMode |
-| 유니티 작업 | `Game/` | [Game/AGENTS.md](Game/AGENTS.md) | `6000.7.0a5` `-batchmode` |
+| 세계관 | `LORE/` | [Home.md](GDD/Home.md), [세계 서사 지도](LORE/World-Narrative-Atlas.md) | 위키 빌드, 금지 용어 |
+| 설정 | `LORE/`, `GDD/` | 계약·도표 페이지, [Intent.md](Intent.md) | 위키 또는 문서 정합 |
+| 인물 | `LORE/Cast-*` | [인물 등록 템플릿](LORE/Cast-Registration-Template.md) | `verify-cast.mjs` |
+| 사건 | 타임라인 | [시나리오 타임라인](LORE/Scenario-Timeline.md) | 위키 빌드 |
+| 이야기 | 서사 배치 | [세계 서사 지도](LORE/World-Narrative-Atlas.md) | 위키 빌드, 출처 충실 |
+| 게임로직 | 규칙 문서 | [유니티 구조](GAME-LOGIC/Unity-Architecture.md) 옆의 규칙 페이지 | 위키 빌드 |
+| 게임 구현 | `GAME/Assets/Janseon/` | 해당 Core/Foundation 스크립트 | EditMode/PlayMode |
+| 유니티 작업 | `Game/` | [GAME/AGENTS.md](GAME/AGENTS.md) | `6000.7.0a5` `-batchmode` |
 | 버그 | 결함 위치 | 재현 로그 | 실패했던 명령 GREEN |
 | 에픽 구현 | 하위 이슈 | 에픽 본문에 DAG | 하위 이슈 게이트 |
 | poc | 현재 ToDo | [ToDo.md](ToDo.md) | 그 모듈의 수용 게이트 |
-| 아트 파이프라인 | `Game/Assets/Janseon/Art/`, BOM | [에셋이 들어오는 길](Wikis/game-logic/Asset-Pipeline.md) | BOM fail-closed, 초상은 툴 준비 전 생성 금지 |
+| 아트 파이프라인 | `GAME/Assets/Janseon/Art/`, BOM | [에셋이 들어오는 길](GDD/Asset-Pipeline.md) | BOM fail-closed, 초상은 툴 준비 전 생성 금지 |
 | 3d | 프롭·캐릭터 3D | TRELLIS는 옵션, Tripo는 명시 실행만 | 권리·승격 전 금지 |
 
 위키 공개 본문에 `Kenshi`, `Underrail`, `Gunner`, `clone`, `복제`를 쓰지 않는다.
@@ -156,8 +156,8 @@ main의 기존 dirty/staged 파일은 보존한다. 구현은 전용 worktree �
 
 서울 십육국, 레이어, 역, 회랑처럼 **세계가 어떻게 생겼는지**를 고친다.
 
-- 읽기: [Home.md](Wikis/game-logic/Home.md), [서울과 지하철 레이어](Wikis/game-logic/World-and-Subway-Layers.md), [서울 십육국](Wikis/game-logic/Sixteen-States.md)
-- 쓰기: 해당 위키 페이지. 새 페이지는 [_TEMPLATE.md](Wikis/game-logic/_TEMPLATE.md)의 `domain: world`
+- 읽기: [Home.md](GDD/Home.md), [서울과 지하철 레이어](LORE/World-and-Subway-Layers.md), [서울 십육국](LORE/Sixteen-States.md)
+- 쓰기: 해당 위키 페이지. 새 페이지는 [_TEMPLATE.md](GDD/_TEMPLATE.md)의 `domain: world`
 - 하지 말 것: 구현 완료처럼 적기, 생성 위키 손편집
 
 이슈 제목 예: `세계관: …`
@@ -166,7 +166,7 @@ main의 기존 dirty/staged 파일은 보존한다. 구현은 전용 worktree �
 
 규칙·계약·정합 문서. 세계관 산문과 런타임 코드를 한 PR에 섞지 않는다.
 
-- 읽기: [Intent.md](Intent.md), `GDD/adr/`, [가치관과 정책 척도](Wikis/game-logic/Values-and-Policy-Scales.md)
+- 읽기: [Intent.md](Intent.md), `GDD/adr/`, [가치관과 정책 척도](LORE/Values-and-Policy-Scales.md)
 - 쓰기: 계약 문장과 도표. 라벨 `설정`
 - 게이트: 문서 정합, 필요하면 위키 빌드
 
@@ -174,8 +174,8 @@ main의 기존 dirty/staged 파일은 보존한다. 구현은 전용 worktree �
 
 이름 있는 인물, 관계, 프로필.
 
-1. [인물 카드 계약](Wikis/game-logic/Cast-Profile-Contract.md)을 읽는다.
-2. [인물 등록 템플릿](Wikis/game-logic/Cast-Registration-Template.md)을 복사한다.
+1. [인물 카드 계약](LORE/Cast-Profile-Contract.md)을 읽는다.
+2. [인물 등록 템플릿](LORE/Cast-Registration-Template.md)을 복사한다.
 3. 총람·JSON·관계 원장을 같은 변경에 맞춘다.
 4. 초상 마크다운과 실물 사진은 넣지 않는다.
 
@@ -189,21 +189,21 @@ main의 기존 dirty/staged 파일은 보존한다. 구현은 전용 worktree �
 
 개막 전후 시간과 촉발.
 
-- 정본: [시나리오 타임라인](Wikis/game-logic/Scenario-Timeline.md)
+- 정본: [시나리오 타임라인](LORE/Scenario-Timeline.md)
 - 상대 연대는 붕괴 N년. 근거 없이 나이를 잠그지 않는다.
 
 ## 이야기
 
 서사 배치와 백스토리. 인물 칸을 비운 채 이야기만 올리지 않는다.
 
-- 원본: [세계 서사 지도](Wikis/game-logic/World-Narrative-Atlas.md)
+- 원본: [세계 서사 지도](LORE/World-Narrative-Atlas.md)
 - 투영 페이지(`Hostile-Group-*` 등)는 재생성 대상이다. 내용을 지도·영수증에 두고 페이지만 고치지 않는다.
 
 ## 게임로직
 
 캠페인·전투·정산 **규칙 문서**. 코드가 아니다.
 
-- 예: [출격하고 돌아오는 흐름](Wikis/game-logic/Campaign-Loop.md), [실시간 진형·카드 전투](Wikis/game-logic/Realtime-Formation-Card-Battle.md), [같은 선택이 같은 결과가 되나](Wikis/game-logic/Save-and-Determinism.md)
+- 예: [출격하고 돌아오는 흐름](GAME-LOGIC/Campaign-Loop.md), [실시간 진형·카드 전투](GAME-LOGIC/Realtime-Formation-Card-Battle.md), [같은 선택이 같은 결과가 되나](GAME-LOGIC/Save-and-Determinism.md)
 - 런타임 변경은 `게임 구현`으로 따로 연다.
 
 ## 게임 구현
@@ -211,16 +211,16 @@ main의 기존 dirty/staged 파일은 보존한다. 구현은 전용 worktree �
 규칙의 C# 런타임. Unity 프로젝트 루트는 `Game/`이다.
 
 - 경계: `Janseon.Core`는 엔진에 의존하지 않는다. Foundation이 Unity·VContainer와 잇는다.
-- 읽기: [Game/Assets/Janseon/AGENTS.md](Game/Assets/Janseon/AGENTS.md)
+- 읽기: [GAME/Assets/Janseon/AGENTS.md](GAME/Assets/Janseon/AGENTS.md)
 - 게이트: 해당 EditMode 또는 PlayMode. 테스트를 지우거나 skip하지 않는다.
 
 ## 유니티 작업
 
 씬, 에디터, 빌드, batchmode.
 
-- 읽기: [Game/AGENTS.md](Game/AGENTS.md), [유니티 구조](Wikis/game-logic/Unity-Architecture.md)
+- 읽기: [GAME/AGENTS.md](GAME/AGENTS.md), [유니티 구조](GAME-LOGIC/Unity-Architecture.md)
 - 실행: Unity `6000.7.0a5`, `-batchmode`, 전용 백그라운드. GUI 에디터로 검증하지 않는다.
-- 안내: [Tool/docs/Unity-Headless-Workflow.md](Tool/docs/Unity-Headless-Workflow.md)
+- 안내: [TOOL/docs/Unity-Headless-Workflow.md](TOOL/docs/Unity-Headless-Workflow.md)
 
 전역 Singleton으로 화면 상태를 두지 않는다. 새 화면은 기존 FSM·스코프를 따른다.
 
@@ -236,13 +236,13 @@ main의 기존 dirty/staged 파일은 보존한다. 구현은 전용 worktree �
 
 현재 [ToDo.md](ToDo.md) 모듈만. 지금 이름은 Unity POC 통합 코어 루프다. 시각 수용·슬롯 연결이 남았다. 두 번째 제품 모듈을 여기서 시작하지 않는다.
 
-웹에서 코어 루프를 보려면 `https://seoul-kenshi.vercel.app/play/`와 `Game/play/`다. 새 Vercel 프로젝트를 만들지 않는다.
+웹에서 코어 루프를 보려면 `https://seoul-kenshi.vercel.app/play/`와 `GAME/play/`다. 새 Vercel 프로젝트를 만들지 않는다.
 
 ## 아트 파이프라인
 
-런타임 아트는 `Game/Assets/Janseon/Art/` 하나다.
+런타임 아트는 `GAME/Assets/Janseon/Art/` 하나다.
 
-- 읽기: [캐릭터 미술](Wikis/game-logic/Character-Art-Direction.md), [에셋이 들어오는 길](Wikis/game-logic/Asset-Pipeline.md)
+- 읽기: [캐릭터 미술](GAME-LOGIC/Character-Art-Direction.md), [에셋이 들어오는 길](GDD/Asset-Pipeline.md)
 - BOM `look.owner_verdict: accepted` 없이 승격하지 않는다.
 - 인물 초상은 포트레이트 툴 워크스페이스가 준비되기 전에는 생성하지 않는다. 카드만 올린다.
 
@@ -256,11 +256,11 @@ main의 기존 dirty/staged 파일은 보존한다. 구현은 전용 worktree �
 
 ```bash
 # 위키
-npm ci --prefix Tool/tools
-node Tool/tools/wiki/verify-cast.mjs --docs Wikis/game-logic
+npm ci --prefix TOOL/tools
+node TOOL/tools/wiki/verify-cast.mjs --docs LORE
 
 # 아키텍처 문서
-node Tool/tools/architecture/check-unity-architecture.mjs
+node TOOL/tools/architecture/check-unity-architecture.mjs
 
 # Unity (UNITY_EDITOR를 6000.7.0a5 실행 파일로)
 "$UNITY_EDITOR" -batchmode -projectPath "$PWD/Game" -runTests -testPlatform EditMode

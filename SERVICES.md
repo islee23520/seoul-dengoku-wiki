@@ -1,6 +1,6 @@
 # SERVICES.md — 서비스 레이어 계약
 
-배포 사이트 `https://seoul-kenshi.vercel.app`의 구성 계약. 루트 `/`는 서비스 인덱스(`index.html`)이고, 각 서비스는 루트 바로 아래 자기 디렉터리 서브 경로로 열린다. GitHub Wiki는 유지하지 않는다. 문서 정본은 `Wikis/game-logic/`, 로컬 열람은 `npm run docs:dev`(VitePress), 공개 표면은 이 Vercel 도메인이다.
+배포 사이트 `https://seoul-kenshi.vercel.app`의 구성 계약. 루트 `/`는 서비스 인덱스(`index.html`)이고, 각 서비스는 루트 바로 아래 자기 디렉터리 서브 경로로 열린다. GitHub Wiki는 유지하지 않는다. 문서 정본은 `LORE/`, 로컬 열람은 `npm run docs:dev`(VitePress), 공개 표면은 이 Vercel 도메인이다.
 
 ## 현재 구성
 
@@ -8,14 +8,14 @@
 |---|---|---|
 | `/` | `index.html` | 서비스 인덱스(허브) |
 | `backend`(로컬 개발·미배포) | `Backend/server`(.NET 8 CoreWCF) | 소셜 SNG 백엔드. 도커 MySQL(13306)·Redis(16379), 포트 1219. 2026-09-14 |
-| `/play/` | `Game/play/` | 코어 루프 웹 POC. 2026-09-14. 자립형 HTML |
-| `/ui-layout-moodboard/` | `Design/ui-layout-moodboard/` | UI 레이아웃 무드보드. 2026-09-11 작성, 2026-09-12 루트로 승격 |
-| `/portrait-demo/` | `Design/portrait-demo/` | 애니메 풍 초상 레이어 합성 브라우저 재현. 정적 페이지, 런타임 아님 |
+| `/play/` | `GAME/play/` | 코어 루프 웹 POC. 2026-09-14. 자립형 HTML |
+| `/ui-layout-moodboard/` | `GAME-REFERENCE/ui-layout-moodboard/` | UI 레이아웃 무드보드. 2026-09-11 작성, 2026-09-12 루트로 승격 |
+| `/portrait-demo/` | `GAME-REFERENCE/portrait-demo/` | 애니메 풍 초상 레이어 합성 브라우저 재현. 정적 페이지, 런타임 아님 |
 | `/system-design/` | `GDD/system-design/` | 시스템 구조 보고 HTML |
 | `/system-design/regions/` | `GDD/system-design/regions/` | 서울 25구·427동 지역 총람. 2026-09-13 |
-| `/design-store/` | `GDD/design-store/` | MDA 시트 + Wikis/game-logic 정본 전량. SQLite에서 렌더한 HTML |
-| `/ui-ux-refs/` | `Reference/ui-ux-refs/` | UI/UX 레퍼런스 취합. 이슈 #101. 2026-09-14 |
-| `/design/` `/world/` `/rules/` | `Wikis/site/`(VitePress 빌드) | 문서 사이트 영역 |
+| `/design-store/` | `GDD/design-store/` | MDA 시트 + LORE 정본 전량. SQLite에서 렌더한 HTML |
+| `/ui-ux-refs/` | `GAME-REFERENCE/ui-ux-refs/` | UI/UX 레퍼런스 취합. 이슈 #101. 2026-09-14 |
+| `/design/` `/world/` `/rules/` | `GAME-LOGIC/site/`(VitePress 빌드) | 문서 사이트 영역 |
 
 ## 등록 기준
 

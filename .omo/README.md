@@ -30,7 +30,7 @@ checkout can recover the reasons behind the work. Session state does not.
 7. Existing [reference research](research-private/reference-games.md) and
    [narrative bridge](research-private/nippon-sangoku-canon-bridge.md) remain
    private repository context. The encyclopedia lives in
-   [docs/game-logic/reference](../docs/game-logic/reference/MASTER-PLAN.md).
+   [RESEARCH/canon-reference](../RESEARCH/canon-reference/MASTER-PLAN.md).
 
 ## Normally trackable categories
 

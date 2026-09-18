@@ -29,7 +29,7 @@
 
 ### 필수 게이트
 
-- [ ] `node Tool/architecture/check-unity-architecture.mjs`가 `unity architecture gate passed`로 종료 0
+- [ ] `node TOOL/architecture/check-unity-architecture.mjs`가 `unity architecture gate passed`로 종료 0
 - [ ] `git diff --check` 종료 0
 - [ ] 행동 변경은 RED-first EditMode/PlayMode/Node 테스트
 - [ ] 실제 Unity `6000.7.0a5` Editor Play Mode로 타이틀·교섭·우회·전투·정산 경로 검증
@@ -48,4 +48,4 @@
 - Addressables, Entities, Cinemachine, LitMotion, uLoop
 - 무검수 생성 에셋, 공식 TRELLIS v1 외 임의 유료 3D 대체
 
-위 체크리스트가 모두 끝나고 현재 변경이 테스트된 뒤에만 다음 제품 모듈을 착수합니다. 실시간 진형·카드 전투 Core는 이미 들어왔으므로, 남은 순서는 시각 수용 → 슬롯 연결 → 수용 게이트다([개발 로드맵](Wikis/game-logic/Development-Roadmap.md), [Intent.md](Intent.md) 결정 3).
+위 체크리스트가 모두 끝나고 현재 변경이 테스트된 뒤에만 다음 제품 모듈을 착수합니다. 실시간 진형·카드 전투 Core는 이미 들어왔으므로, 남은 순서는 시각 수용 → 슬롯 연결 → 수용 게이트다([개발 로드맵](GDD/Development-Roadmap.md), [Intent.md](Intent.md) 결정 3).

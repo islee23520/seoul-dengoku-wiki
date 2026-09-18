@@ -8,30 +8,30 @@
 .env
 .env.*
 !.env.example
-Game/.unity-remote-token
+GAME/.unity-remote-token
 .vercel/
 .env.vercel.local
 
 # Unity generated state
-Game/[Ll]ibrary/
-Game/[Tt]emp/
-Game/[Oo]bj/
-Game/[Ll]ogs/
-Game/[Uu]ser[Ss]ettings/
-Game/[Mm]emoryCaptures/
-Game/[Rr]ecordings/
-Game/[Bb]uild/
-Game/[Bb]uilds/
+GAME/[Ll]ibrary/
+GAME/[Tt]emp/
+GAME/[Oo]bj/
+GAME/[Ll]ogs/
+GAME/[Uu]ser[Ss]ettings/
+GAME/[Mm]emoryCaptures/
+GAME/[Rr]ecordings/
+GAME/[Bb]uild/
+GAME/[Bb]uilds/
 # Archived worktree copies of Unity transient state
-**/Game/[Tt]emp/
-**/Game/[Oo]bj/
-**/Game/[Ll]ibrary/
+**/GAME/[Tt]emp/
+**/GAME/[Oo]bj/
+**/GAME/[Ll]ibrary/
 
 # Site build outputs (built locally, deployed prebuilt to Vercel)
 dist/
 
 # Extracted geography release artifacts
-data/seoul-geography-20260830/openfreemap/release/
+GAME-REFERENCE/data/seoul-geography-20260830/openfreemap/release/
 
 # Tooling dependencies (tools/package-lock.json is the tracked source of truth)
 node_modules/
@@ -95,22 +95,22 @@ node_modules/
 *.log
 
 # Local Unity player output
-Game/Builds/
+GAME/Builds/
 
 # UTF performance-test runner droppings
-Game/Assets/Resources/PerformanceTestRunInfo.json
-Game/Assets/Resources/PerformanceTestRunInfo.json.meta
-Game/Assets/Resources/PerformanceTestRunSettings.json
-Game/Assets/Resources/PerformanceTestRunSettings.json.meta
+GAME/Assets/Resources/PerformanceTestRunInfo.json
+GAME/Assets/Resources/PerformanceTestRunInfo.json.meta
+GAME/Assets/Resources/PerformanceTestRunSettings.json
+GAME/Assets/Resources/PerformanceTestRunSettings.json.meta
 
 # Burst/WebGL player sidecar from local builds
-Game/Data/
+GAME/Data/
 
 # Oddland donor payload: owner-authorized graphic/SFX/VFX import reproduced by
-# tools/art/import-oddland-donor.mjs from the external volume; ~1.6 GB exceeds the LFS quota,
+# TOOL/tools/art/import-oddland-donor.mjs from the external volume; ~1.6 GB exceeds the LFS quota,
 # so only the manifest under docs/assets/bom/donor/ is tracked.
-Game/Assets/Quarantine/
-Game/Assets/Quarantine.meta
+GAME/Assets/Quarantine/
+GAME/Assets/Quarantine.meta
 
 # Regenerable SQLite replica (HTML is tracked)
 design-store/*.sqlite

@@ -15,6 +15,6 @@
 ## 검증
 
 - 위키·아키텍처 문서 계약: `npm --prefix tools test`
-- 아트 BOM 계약: `node --test Tool/art/test-asset-manifest.mjs Tool/art/test-poc-ui-kit.mjs Tool/art/test-character-poc.mjs`
-- 아키텍처 게이트: `node Tool/architecture/check-unity-architecture.mjs`
+- 아트 BOM 계약: `node --test TOOL/art/test-asset-manifest.mjs TOOL/art/test-poc-ui-kit.mjs TOOL/art/test-character-poc.mjs`
+- 아키텍처 게이트: `node TOOL/architecture/check-unity-architecture.mjs`
 - 위키 공개 금지 용어(Kenshi·Underrail·Gunner·clone·복제)는 문서 작성 시 `rg`로 선검사한다.
