@@ -2,11 +2,7 @@ import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const T0_NAMES = [
-  '한재목', '강민서', '서이안', '임하준', '배우진', '임초원', '윤서린',
-  '박태겸', '오해린', '문가람', '백온', '김도윤', '장세화', '류은비',
-  '고서준', '남윤경', '정유라',
-];
+// R4의 T0 목록은 하드코딩하지 않는다. Core-Characters.md의 ## 인물 목록에서 유도한다.
 const PROFILE_FIELDS = [
   '소속', '직위', '성격', '개인 야망', '공포', '통치 방식', '핵심 관계', '촉발 사건', '플레이어 개입',
 ];
@@ -70,7 +66,6 @@ const BANNED_TITLES = [
 const REQUIRE_STAGE_COUNTS = { s1: 95, s2: 285, s3: 395 };
 const NAME_RE = /^[가-힣]{2,3}$/;
 const STAGES = new Set(['s0', 's1', 's2', 's3', 'all']);
-const T0_SET = new Set(T0_NAMES);
 
 async function readOptional(path) {
   try {
@@ -269,12 +264,23 @@ export async function verifyCast(options) {
   const t0CardProfiles = parseProfiles(coreText);
   const t0HeadingProfiles = parseCoreHeadingProfiles(coreText);
   const t0Profiles = t0CardProfiles.length > 0 ? t0CardProfiles : t0HeadingProfiles;
+  // R4 — T0 명부는 Core-Characters ## 인물 목록의 동적 유도다. ## 가 없으면
+  // 카드 명부로 폴백한다(테스트 픽스처 호환).
+  const coreHeadingNames = t0HeadingProfiles.map((profile) => profile.name);
+  const t0Roster = coreHeadingNames.length > 0 ? coreHeadingNames : t0Profiles.map((profile) => profile.name);
+  const T0_SET = new Set(t0Roster);
   const stateProfiles = [];
+  const stateOccurrences = new Map(); // 이름 -> Cast-State 파일별 카드 목록
   for (let n = 1; n <= 16; n += 1) {
     const file = `Cast-State-${String(n).padStart(2, '0')}.md`;
     const text = await readDocsFile(docs, file);
     if (text === null) continue;
-    stateProfiles.push(...parseProfiles(text));
+    for (const profile of parseProfiles(text)) {
+      stateProfiles.push(profile);
+      const spots = stateOccurrences.get(profile.name) ?? [];
+      spots.push({ file, profile });
+      stateOccurrences.set(profile.name, spots);
+    }
   }
   const unaffiliatedText = await readDocsFile(docs, 'Cast-Unaffiliated.md');
   const unaffiliatedProfiles = parseProfiles(unaffiliatedText);
@@ -285,6 +291,22 @@ export async function verifyCast(options) {
   const names = roster.map((profile) => profile.name);
   const nameSet = new Set(names);
 
+  // R2 — 수장 이원 등재 예외(화이트리스트). Core-Characters ## 에 등재된 인물이
+  // 정확히 한 개의 Cast-State 파일에 같은 인물 카드로 복제된 경우(본국 등재 +
+  // 수장국 카드)는 설계된 중복이므로 허용한다. 신원 확인은 관직(직함)·가문 칸
+  // 일치로 한다(소속·국가 칸은 복제 카드가 산문 칸에 가져온다).
+  const identity = (profile) => JSON.stringify([
+    profile.fields['관직'] ?? profile.fields['직위'] ?? '',
+    profile.fields['가문'] ?? '',
+  ]);
+  const coreByName = new Map(t0HeadingProfiles.map((profile) => [profile.name, profile]));
+  const rulerDuplicates = new Set(
+    [...coreByName.keys()].filter((name) => {
+      const spots = stateOccurrences.get(name) ?? [];
+      return spots.length === 1 && identity(spots[0].profile) === identity(coreByName.get(name));
+    }),
+  );
+
   if (names.length < min) fail('R1', `total=${names.length} min=${min}`);
 
   const seen = new Map();
@@ -292,7 +314,8 @@ export async function verifyCast(options) {
     seen.set(name, (seen.get(name) || 0) + 1);
   }
   for (const [name, count] of seen) {
-    if (count > 1) fail('R2', `duplicate name ${name} count=${count}`);
+    const allowed = rulerDuplicates.has(name) ? 2 : 1;
+    if (count > allowed) fail('R2', `duplicate name ${name} count=${count}`);
   }
 
   for (const name of names) {
@@ -301,16 +324,24 @@ export async function verifyCast(options) {
 
   const t0Names = t0Profiles.map((profile) => profile.name);
   const t0Set = new Set(t0Names);
-  const missingT0 = T0_NAMES.filter((name) => !t0Set.has(name));
+  const missingT0 = t0Roster.filter((name) => !t0Set.has(name));
   const extraT0 = [...t0Set].filter((name) => !T0_SET.has(name));
   if (missingT0.length > 0 || extraT0.length > 0) {
     fail('R4', `T0 names mismatch missing=${missingT0.join(',')} extra=${extraT0.join(',')}`);
   }
 
   for (const profile of roster) {
+    // R5 — Core 복제 카드(수장)는 6칸 복제 계약이므로 Core 등재본과 칸을 합쳐
+    // 검사한다. Core ## 본인카드는 기존대로 선택적 칸을 건너뛴다.
+    const coreTwin = coreByName.get(profile.name);
+    const isCoreLinked = profile.source === 'core-h2'
+      || (coreTwin !== undefined && rulerDuplicates.has(profile.name));
+    const fields = isCoreLinked && profile.source !== 'core-h2'
+      ? { ...profile.fields, ...coreTwin.fields }
+      : profile.fields;
     for (const field of PROFILE_FIELDS) {
-      if (profile.source === 'core-h2' && CORE_OPTIONAL_FIELDS.has(field)) continue;
-      if (!fieldPresent(profile, field)) fail('R5', `${profile.name} missing ${field}`);
+      if (isCoreLinked && CORE_OPTIONAL_FIELDS.has(field)) continue;
+      if (!fieldPresent({ fields }, field)) fail('R5', `${profile.name} missing ${field}`);
     }
   }
 
