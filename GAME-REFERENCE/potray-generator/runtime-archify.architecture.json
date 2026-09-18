@@ -1,0 +1,304 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "portrait-gen — DB·동작 구조",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "asset-flow",
+        "label": "자산 등록 흐름",
+        "focus": [
+          "evidence",
+          "cli",
+          "asset_db",
+          "browser",
+          "plates"
+        ],
+        "note": "증거 트리에서 스캔→SSoT→브라우저 선택까지"
+      },
+      {
+        "id": "verify-flow",
+        "label": "검증 흐름",
+        "focus": [
+          "gate_tools",
+          "vqueue",
+          "asset_db",
+          "cli"
+        ],
+        "note": "게이트 도구의 요청 발행과 영수증 바인딩"
+      },
+      {
+        "id": "deploy-flow",
+        "label": "배포 흐름",
+        "focus": [
+          "plates",
+          "stage",
+          "dist",
+          "hub"
+        ],
+        "note": "PUBLIC_FILES만 허브 dist로 복사"
+      }
+    ]
+  },
+  "layout": {
+    "mode": "grid",
+    "cols": 6,
+    "cellW": 180,
+    "cellH": 80,
+    "gapX": 30,
+    "gapY": 70,
+    "origin": [
+      40,
+      70
+    ]
+  },
+  "components": [
+    {
+      "id": "evidence",
+      "type": "external",
+      "label": ".omo/evidence 증거 트리",
+      "sublabel": "23슬롯 × 2성별 증거",
+      "pos": [
+        40,
+        70
+      ],
+      "size": [
+        150,
+        66
+      ]
+    },
+    {
+      "id": "cli",
+      "type": "backend",
+      "label": "스캔·질의 CLI",
+      "sublabel": "src/cli.mjs scan·query",
+      "pos": [
+        300,
+        70
+      ],
+      "size": [
+        150,
+        66
+      ]
+    },
+    {
+      "id": "asset_db",
+      "type": "database",
+      "label": "SQLite 자산 SSoT",
+      "sublabel": "portrait-assets.sqlite",
+      "tag": "SHA-256",
+      "pos": [
+        560,
+        70
+      ],
+      "size": [
+        150,
+        74
+      ]
+    },
+    {
+      "id": "browser",
+      "type": "frontend",
+      "label": "큐레이션 브라우저",
+      "sublabel": "index.html · curation",
+      "pos": [
+        820,
+        70
+      ],
+      "size": [
+        150,
+        66
+      ]
+    },
+    {
+      "id": "gate_tools",
+      "type": "security",
+      "label": "게이트 도구",
+      "sublabel": "gateway · verify",
+      "tag": "TOOL/tools/art",
+      "pos": [
+        40,
+        210
+      ],
+      "size": [
+        150,
+        74
+      ]
+    },
+    {
+      "id": "vqueue",
+      "type": "messagebus",
+      "label": "검증 요청 큐",
+      "sublabel": "validation-requests",
+      "pos": [
+        300,
+        210
+      ],
+      "size": [
+        150,
+        66
+      ]
+    },
+    {
+      "id": "plates",
+      "type": "database",
+      "label": "plates + library.json",
+      "sublabel": "46 슬롯판 · SHA 바인딩",
+      "pos": [
+        560,
+        210
+      ],
+      "size": [
+        150,
+        66
+      ]
+    },
+    {
+      "id": "studio",
+      "type": "frontend",
+      "label": "Studio 워크스페이스",
+      "sublabel": "마스크드 캔버스",
+      "pos": [
+        820,
+        210
+      ],
+      "size": [
+        150,
+        66
+      ]
+    },
+    {
+      "id": "stage",
+      "type": "backend",
+      "label": "스테이징 스크립트",
+      "sublabel": "stage-potrait-generator.mjs",
+      "pos": [
+        560,
+        350
+      ],
+      "size": [
+        150,
+        66
+      ]
+    },
+    {
+      "id": "dist",
+      "type": "cloud",
+      "label": "허브 dist",
+      "sublabel": "GAME-LOGIC/site/dist",
+      "pos": [
+        820,
+        350
+      ],
+      "size": [
+        150,
+        66
+      ]
+    },
+    {
+      "id": "hub",
+      "type": "external",
+      "label": "seoul-kenshi 허브",
+      "sublabel": "/potray-generator/",
+      "pos": [
+        1060,
+        350
+      ],
+      "size": [
+        150,
+        66
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "portrait-gen 서브모듈 (독립 프라이빗 리포)",
+      "wraps": [
+        "cli",
+        "asset_db",
+        "browser",
+        "studio",
+        "plates"
+      ],
+      "pad": 24
+    }
+  ],
+  "connections": [
+    {
+      "from": "evidence",
+      "to": "cli",
+      "label": "비파괴 스캔",
+      "variant": "emphasis"
+    },
+    {
+      "from": "cli",
+      "to": "asset_db",
+      "label": "SHA·경로 기록"
+    },
+    {
+      "from": "asset_db",
+      "to": "browser",
+      "label": "PASS/REJECT 질의"
+    },
+    {
+      "from": "browser",
+      "to": "plates",
+      "label": "선택·재현",
+      "route": "orthogonal-v"
+    },
+    {
+      "from": "gate_tools",
+      "to": "vqueue",
+      "label": "검증 요청 발행"
+    },
+    {
+      "from": "vqueue",
+      "to": "asset_db",
+      "label": "영수증 바인딩"
+    },
+    {
+      "from": "studio",
+      "to": "plates",
+      "label": "마스크 편집",
+      "route": "orthogonal-h"
+    },
+    {
+      "from": "plates",
+      "to": "stage",
+      "label": "PUBLIC_FILES",
+      "route": "orthogonal-v"
+    },
+    {
+      "from": "stage",
+      "to": "dist",
+      "label": "공개 파일만"
+    },
+    {
+      "from": "dist",
+      "to": "hub",
+      "label": "서브패스 게시",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "SSoT 계약",
+      "items": [
+        "증거 트리는 비파괴 — 이동·삭제·개명 없음",
+        "SHA-256 동일 바이트 그룹핑 · 전 경로·라이프사이클 보존",
+        "재사용 증명 = 정확 경로 + SHA + 스코프 평가"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "검증·배포 계약",
+      "items": [
+        "생성·수정 전 DB 질의 의무 · content-addressed 요청 큐",
+        "PUBLIC_FILES만 허브 복사 — 기존 허브 서비스 보존"
+      ]
+    }
+  ]
+}

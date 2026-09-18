@@ -3,7 +3,7 @@ import { join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 export const PUBLIC_FILES = Object.freeze([
-  'index.html', 'pipeline-archive.html', 'pipeline-archify.html', 'portrait.css', 'portrait-curation.css',
+  'index.html', 'pipeline-archive.html', 'pipeline-archify.html', 'runtime-archify.html', 'portrait.css', 'portrait-curation.css',
   'portrait-ui.mjs', 'portrait-state.mjs', 'portrait-workflow-ui.mjs',
   'portrait-curation.mjs', 'portrait-rig-overlay.mjs',
   'portrait-browser-composite.mjs', 'portrait-browser-png.mjs',
