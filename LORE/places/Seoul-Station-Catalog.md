@@ -6,12 +6,11 @@ summary: 서울 안 이름 있는 역 334곳의 설계 데이터 카탈로그
 
 # 서울 역 카탈로그 (설계 데이터)
 
-상태: 설계 데이터이자 `RouteGraph.CreateSeoul()` 입력. 한글 이름 세 역(영등포·신도림·구로)은 런타임 id Yeongdeungpo/Sindorim/Guro로 별칭한다.
-출처: OSM BBBike Seoul.osm.pbf에서 railway=station/halt 또는 station=subway를 뽑고, KOSTAT 2013 자치구 폴리곤으로 구를 붙였다.
-라이선스 표시: © OpenStreetMap contributors (ODbL 1.0). 구 경계는 Statistics Korea (KOSTAT) 2013.
-Unity Assets에 넣지 않았다.
+`RouteGraph.CreateSeoul()`이 구와 역 이름을 올릴 때 읽는 입력이 이 표다. 한글 이름이 영등포·신도림·구로인 세 역만 런타임 id Yeongdeungpo/Sindorim/Guro로 별칭하고, 나머지 이름은 카탈로그에 적힌 한글 그대로 둔다. 서울역과 종각, 여의도, 강남, 잠실처럼 실제 역명이 곧 그래프의 노드 이름이다.
 
-서울 안 이름 있는 역 **334**곳, 자치구 **25**.
+점의 출처는 OSM BBBike Seoul.osm.pbf에서 railway=station/halt 또는 station=subway를 고른 뒤, KOSTAT 2013 자치구 폴리곤 안에 들어오는 것만 구에 붙인 결과다. 라이선스는 © OpenStreetMap contributors (ODbL 1.0)이고, 구 경계는 Statistics Korea (KOSTAT) 2013을 쓴다. Unity Assets 안에는 이 표를 넣지 않았다.
+
+서울 안 이름 있는 역 334곳과 자치구 25가 표의 뼈대다. 강남구 선릉과 삼성, 종로구 경복궁, 중구 시청, 영등포구 여의나루, 구로구 신도림이 같은 목록에 나란히 오른다.
 
 ## 강남구 (24)
 
