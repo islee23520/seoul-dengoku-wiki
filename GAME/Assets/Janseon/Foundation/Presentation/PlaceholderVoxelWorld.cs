@@ -101,11 +101,11 @@ namespace Janseon.Foundation.Presentation
 
         static void ApplyGenreCamera(Camera camera)
         {
+            // POC presentation camera (Intent 결정 10); replaced by the strategy-map module.
+            const float pocPitchDegrees = 35.264f;
+            const float pocYawDegrees = 45f;
             camera.orthographic = true;
-            camera.transform.rotation = Quaternion.Euler(
-                Janseon.Foundation.GenreContract.CameraPitchDegrees,
-                Janseon.Foundation.GenreContract.CameraYawDegrees,
-                0f);
+            camera.transform.rotation = Quaternion.Euler(pocPitchDegrees, pocYawDegrees, 0f);
             camera.transform.position = new Vector3(-6f, 8f, -6f);
             camera.orthographicSize = 8f;
             camera.clearFlags = CameraClearFlags.SolidColor;

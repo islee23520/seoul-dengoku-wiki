@@ -8,7 +8,7 @@
 ## 현재 활성 계약 (2026-09-06)
 
 - UI 프레임워크는 **uGUI 전용**이다. Design.md 2026-09-06 개정. 기존 UI Toolkit 코드(UXML/USS/UIDocument)는 #59 마이그레이션 착수 전까지 계약 위반 상태로 취급하고, 그 위에 새 UI Toolkit 코드를 쓰지 않는다.
-- 사람 캐릭터 placeholder 3역할은 폐기됐다(#58). TOS식 SD 방향(3D 바디 + 2D 도트 헤드, 눈 강조, 2.5등신)만 따르며, BOM `look.owner_verdict: accepted` 없이 아트를 승격하지 않는다.
+- 사람 캐릭터는 오드랜드 원본 어셋을 as-is로 쓴다(2026-09-18 결정 10). TOS식 SD 재작업(#58)은 취소됐고, 리타깃·SD 변환을 금지한다. 런타임 승격은 BOM `look.owner_verdict: accepted` 게이트를 그대로 지난다.
 - 구현 착수 전에 `.omo/plans/ui-ugui-and-character-rebuild.md`와 대응 이슈(#59·#58)의 품질 게이트웨이를 확인한다. 게이트는 docs/game-logic 이전의 Intent.md에서 잠겨 있으며 완화 금지.
 - Vercel은 기존 프로젝트 **seoul-kenshi** (`https://seoul-kenshi.vercel.app`, `prj_KOgAaJkJZ7j3CrUD1eAzYtiGV5mm`)만 쓴다. 워크트리·데모 폴더를 새 프로젝트로 링크하거나 `portrait-demo` 같은 별도 사이트를 만들지 않는다. 정적 데모는 허브 서브 경로로 복합 스테이징한다 (`SERVICES.md`).
 

@@ -52,8 +52,8 @@ namespace Janseon.Foundation.Tests
             Assert.AreEqual(before, battle.Fingerprint());
             Assert.AreEqual(0, view.GetComponentsInChildren<Canvas>(true).Length);
             Assert.AreEqual(0, view.GetComponentsInChildren<TMPro.TMP_Text>(true).Length);
-            Assert.AreEqual(GenreContract.CameraPitchDegrees, view.ViewCamera.transform.eulerAngles.x, 0.001f);
-            Assert.AreEqual(GenreContract.CameraYawDegrees, view.ViewCamera.transform.eulerAngles.y, 0.001f);
+            Assert.AreEqual(35.264f, view.ViewCamera.transform.eulerAngles.x, 0.001f); // POC presentation camera
+            Assert.AreEqual(45f, view.ViewCamera.transform.eulerAngles.y, 0.001f);
             Assert.IsTrue(view.ViewCamera.orthographic);
         }
 

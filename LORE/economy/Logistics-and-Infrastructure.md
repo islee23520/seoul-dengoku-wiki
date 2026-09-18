@@ -2,7 +2,7 @@
 
 ![보급 경로와 병목의 아이소 연결](https://github.com/islee23520/seoul-kenshi/blob/main/GAME-REFERENCE/assets/wiki/isometric-logistics.svg?raw=true)
 
-보급 경로의 병목과 처리량을 4방향 연결과 시야로 예측·관리한다.
+보급 경로의 병목과 처리량을 구간 연결과 지형으로 예측·관리합니다.
 
 물류는 재고가 있다는 사실이 아니라 필요한 종류의 물자가 허가된 경로를 통해 제때 도착하는 능력이다. 표의 수치는 모두 설계 가정으로 둔다.
 

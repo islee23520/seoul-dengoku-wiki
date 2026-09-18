@@ -1,26 +1,13 @@
 {
   "camera": {
-    "projection": "orthographic",
-    "yawDegrees": 45.0,
-    "pitchDegrees": 35.264,
-    "allowOrbit": false,
-    "allowPerspective": false
+    "projection": "perspective",
+    "pan": true,
+    "zoom": true,
+    "orbit": false
   },
   "loop": {
-    "explorationAndCombatShareGrid": true,
-    "allowedDirections": 4,
     "combatResolution": "realtime-formation-card",
-    "combatPauseAllowed": true
-  },
-  "silhouette": {
-    "headsTall": 2.5,
-    "authoredFacings": 4,
-    "pixelHead": true,
-    "meshBody": true
-  },
-  "tile": {
-    "meters": 1.5,
-    "unityUnits": 1.5,
-    "standardCorridorWidthTiles": 2
+    "combatPauseAllowed": true,
+    "battleScreen": "left-right-side-scroll"
   }
 }

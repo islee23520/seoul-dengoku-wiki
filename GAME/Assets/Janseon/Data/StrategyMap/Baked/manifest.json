@@ -1,0 +1,217 @@
+{
+  "attribution": [
+    "© OpenStreetMap contributors (ODbL 1.0)",
+    "Terrain: Mapzen; SRTM and GMTED2010 courtesy of the U.S. Geological Survey; ETOPO1 courtesy of NOAA where used",
+    "Boundaries: KOSTAT 2013 (historical base year)"
+  ],
+  "chunks": [
+    {
+      "boundsUnits": {
+        "maxX": -9.78394,
+        "maxZ": -9.78394,
+        "minX": -29.351819,
+        "minZ": -29.351819
+      },
+      "faceCount": 79202,
+      "maxElevMeters": 155.43798393864074,
+      "minElevMeters": 2.517198315331959,
+      "obj": "chunk-1745-792.obj",
+      "sha256": "5a64f0d0bfa2d59823b5495981e09a64b7a48cbf8ceeff9caad583dce13d362e",
+      "vertexCount": 40000,
+      "x": 1745,
+      "y": 792
+    },
+    {
+      "boundsUnits": {
+        "maxX": -9.78394,
+        "maxZ": 9.78394,
+        "minX": -29.351819,
+        "minZ": -9.78394
+      },
+      "faceCount": 79202,
+      "maxElevMeters": 134.08806914627183,
+      "minElevMeters": 6.0830599415737705,
+      "obj": "chunk-1745-793.obj",
+      "sha256": "880939ce7b2d1e99abc999ca889b0ab19c94e15d2aab06af8cdcd78f5da1bc58",
+      "vertexCount": 40000,
+      "x": 1745,
+      "y": 793
+    },
+    {
+      "boundsUnits": {
+        "maxX": -9.78394,
+        "maxZ": 29.351819,
+        "minX": -29.351819,
+        "minZ": 9.78394
+      },
+      "faceCount": 79202,
+      "maxElevMeters": 317.70449840879496,
+      "minElevMeters": 0.34358036376459083,
+      "obj": "chunk-1745-794.obj",
+      "sha256": "4167f2a0a1eebae2f972c0ca33c5e3609e01e7d1f5ace87bc529f0d889bf8659",
+      "vertexCount": 40000,
+      "x": 1745,
+      "y": 794
+    },
+    {
+      "boundsUnits": {
+        "maxX": 9.78394,
+        "maxZ": -9.78394,
+        "minX": -9.78394,
+        "minZ": -29.351819
+      },
+      "faceCount": 79202,
+      "maxElevMeters": 574.7662653929951,
+      "minElevMeters": 19.71256981645601,
+      "obj": "chunk-1746-792.obj",
+      "sha256": "bf1d85cc8cee3e8341c82d57d35dfac32f9615a3060c476760a3a6e3ce7ba8f4",
+      "vertexCount": 40000,
+      "x": 1746,
+      "y": 792
+    },
+    {
+      "boundsUnits": {
+        "maxX": 9.78394,
+        "maxZ": 9.78394,
+        "minX": -9.78394,
+        "minZ": -9.78394
+      },
+      "faceCount": 79202,
+      "maxElevMeters": 494.2115533176407,
+      "minElevMeters": 6.620137876040791,
+      "obj": "chunk-1746-793.obj",
+      "sha256": "d4405e89798d6dc974216f3f219853baf80eec259ee16716676702a300af56a6",
+      "vertexCount": 40000,
+      "x": 1746,
+      "y": 793
+    },
+    {
+      "boundsUnits": {
+        "maxX": 9.78394,
+        "maxZ": 29.351819,
+        "minX": -9.78394,
+        "minZ": 9.78394
+      },
+      "faceCount": 79202,
+      "maxElevMeters": 477.2353923028488,
+      "minElevMeters": 33.224671029543416,
+      "obj": "chunk-1746-794.obj",
+      "sha256": "0ba983e885a8fb4fd52cecd16c11e6c63158962b1740f690a54a6b327240c96f",
+      "vertexCount": 40000,
+      "x": 1746,
+      "y": 794
+    },
+    {
+      "boundsUnits": {
+        "maxX": 29.351819,
+        "maxZ": -9.78394,
+        "minX": 9.78394,
+        "minZ": -29.351819
+      },
+      "faceCount": 79202,
+      "maxElevMeters": 516.0075918654757,
+      "minElevMeters": 11.39810984026952,
+      "obj": "chunk-1747-792.obj",
+      "sha256": "955a4106fe2e4e9f3a1ffffa2f9f79fa667977ab37df530294844982f93101bf",
+      "vertexCount": 40000,
+      "x": 1747,
+      "y": 792
+    },
+    {
+      "boundsUnits": {
+        "maxX": 29.351819,
+        "maxZ": 9.78394,
+        "minX": 9.78394,
+        "minZ": -9.78394
+      },
+      "faceCount": 79202,
+      "maxElevMeters": 505.50907996838134,
+      "minElevMeters": 11.094892370159505,
+      "obj": "chunk-1747-793.obj",
+      "sha256": "f1e478271ed5006096ac7d6d7c7a666714a77631faf5335626bd2387b89cfb64",
+      "vertexCount": 40000,
+      "x": 1747,
+      "y": 793
+    },
+    {
+      "boundsUnits": {
+        "maxX": 29.351819,
+        "maxZ": 29.351819,
+        "minX": 9.78394,
+        "minZ": 9.78394
+      },
+      "faceCount": 79202,
+      "maxElevMeters": 372.07444904499766,
+      "minElevMeters": 24.06603710016399,
+      "obj": "chunk-1747-794.obj",
+      "sha256": "4e4bfea405dbb4e89dd636f08bca2f0bded1a81aef0fd193576cc8614fc92673",
+      "vertexCount": 40000,
+      "x": 1747,
+      "y": 794
+    }
+  ],
+  "overlays": {
+    "guBoundaries": "gu-boundaries.json",
+    "guCount": 25,
+    "osmLineCount": 8399,
+    "osmLines": "osm-lines.json"
+  },
+  "params": {
+    "grid": 200,
+    "horizontalUnitsPer3857Meter": 0.001,
+    "nodata": -32768,
+    "verticalUnitsPerMeter": 0.012,
+    "waterLevelMeters": 0.0,
+    "zoom": 11
+  },
+  "schema": "seoul-strategy-map-v1",
+  "source": {
+    "bundle": "seoul-geography-20260830",
+    "inputs": [
+      {
+        "path": "boundaries-kostat-2013/seoul_municipalities_geo.json",
+        "sha256": "cfa0c49df02184981d3f214b52729685fd5444ec1e58f04054bdf99ae4b1e836"
+      },
+      {
+        "path": "osm-current-bbbike/Seoul.osm.pbf",
+        "sha256": "eec1fcac44d0b7b1600c81437ba0a0ea56cd645d16f4eaf55a00786597e0e7e8"
+      },
+      {
+        "path": "terrain-mapzen-geotiff/z11/1745/792.tif",
+        "sha256": "6dab91a2d3091df1971ed443b5773739d96d5cafe3c0a2e49b2cf8e480f4d074"
+      },
+      {
+        "path": "terrain-mapzen-geotiff/z11/1745/793.tif",
+        "sha256": "6d3993da3c56a45558e03e5f6cc2f1f2478373820f0a898f64a6264b95d1f7f2"
+      },
+      {
+        "path": "terrain-mapzen-geotiff/z11/1745/794.tif",
+        "sha256": "79880d085ec9b750efa71fe4ba8116f322fc0ff3a2ae1544f5e825e45d7a519c"
+      },
+      {
+        "path": "terrain-mapzen-geotiff/z11/1746/792.tif",
+        "sha256": "a3e0c549622666b4bbd9a014824528671093c6e3eef08ba8f5a27f0fde7c7b96"
+      },
+      {
+        "path": "terrain-mapzen-geotiff/z11/1746/793.tif",
+        "sha256": "39e5b320876db402a11ebe47002dcf26563d3a426940e8954de5ee7d05de31ef"
+      },
+      {
+        "path": "terrain-mapzen-geotiff/z11/1746/794.tif",
+        "sha256": "13943d005f521cc4e804b884dfaaafe0520185f2263d747e8aff8e3caa2e73d3"
+      },
+      {
+        "path": "terrain-mapzen-geotiff/z11/1747/792.tif",
+        "sha256": "0d067dfb7f99aa845d0d590c1c4c25d8fa14a4b562dfe8538f5c6af7b3b85126"
+      },
+      {
+        "path": "terrain-mapzen-geotiff/z11/1747/793.tif",
+        "sha256": "083e0933230c98d967a7ee7e74d964c683878a32ef8d414d8a1ba2eb5d12da1a"
+      },
+      {
+        "path": "terrain-mapzen-geotiff/z11/1747/794.tif",
+        "sha256": "6d02b38e39ecfd367f10b639aa341693fef87740bcdb3ff0fd5493a06f6292bc"
+      }
+    ]
+  }
+}

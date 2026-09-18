@@ -17,6 +17,7 @@ namespace Janseon.Foundation.Composition
     {
         [SerializeField] RuntimeSlotCatalog runtimeSlots;
         [SerializeField] GameDataCatalogAsset gameDataCatalog;
+        [SerializeField] Janseon.Foundation.Presentation.StrategyMapAssetCatalog strategyMapAssets;
 
         protected override void Configure(IContainerBuilder builder)
         {
@@ -30,6 +31,10 @@ namespace Janseon.Foundation.Composition
             builder.Register<StationCatalogRepository>(Lifetime.Singleton).As<IReadOnlyStationCatalog>();
             builder.Register<ContentFingerprintProvider>(Lifetime.Singleton).As<IContentFingerprint>();
             builder.RegisterInstance<IRuntimeSlotCatalog>(runtimeSlots);
+            if (strategyMapAssets != null)
+            {
+                builder.RegisterInstance(strategyMapAssets);
+            }
             builder.Register<UiScreenDocumentLease>(Lifetime.Scoped).AsSelf();
             builder.Register<GameplayPresenter>(Lifetime.Scoped).AsSelf();
             builder.RegisterComponentInHierarchy<GameplayUiHost>();

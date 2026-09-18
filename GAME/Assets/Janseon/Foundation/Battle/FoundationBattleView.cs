@@ -11,6 +11,11 @@ namespace Janseon.Foundation.Battle
     /// <summary>Read-only Core projection. All positions, including gizmos, use the same 1.5m grid.</summary>
     public sealed class FoundationBattleView : MonoBehaviour
     {
+        // Battle-internal presentation numbers (Intent 결정 10 retired the shared grid contract).
+        private const float PocCameraPitchDegrees = 35.264f;
+        private const float PocCameraYawDegrees = 45f;
+        private const float BattleCellUnityUnits = 1.5f;
+
         public static readonly Color Cyan = new Color32(0x86, 0xbe, 0xd0, 0xff);
         public static readonly Color HoverGold = new Color32(0xff, 0xe4, 0x9b, 0xff);
         public static readonly Color IllegalRed = new Color32(0xcf, 0x62, 0x58, 0xff);
@@ -58,7 +63,7 @@ namespace Janseon.Foundation.Battle
         }
 
         public Vector3 CellWorld(GridCoord cell) => transform.TransformPoint(
-            new Vector3(cell.X * GenreContract.TileUnityUnits, 0f, cell.Y * GenreContract.TileUnityUnits));
+            new Vector3(cell.X * BattleCellUnityUnits, 0f, cell.Y * BattleCellUnityUnits));
 
         void Build()
         {
@@ -102,7 +107,7 @@ namespace Janseon.Foundation.Battle
             ViewCamera.farClipPlane = 100f;
             ViewCamera.allowHDR = false;
             ViewCamera.allowMSAA = false;
-            ViewCamera.transform.rotation = Quaternion.Euler(GenreContract.CameraPitchDegrees, GenreContract.CameraYawDegrees, 0);
+            ViewCamera.transform.rotation = Quaternion.Euler(PocCameraPitchDegrees, PocCameraYawDegrees, 0);
             ViewCamera.transform.position = CellWorld(new GridCoord(0, 0))
                 + new Vector3((battle.Arena.Width - 1) * 0.75f, 0.3f, (battle.Arena.Height - 1) * 0.75f)
                 - ViewCamera.transform.forward * 35f;
@@ -111,8 +116,8 @@ namespace Janseon.Foundation.Battle
 
         public void FrameCamera(float aspect)
         {
-            float width = battle.Arena.Width * GenreContract.TileUnityUnits;
-            float depth = battle.Arena.Height * GenreContract.TileUnityUnits;
+            float width = battle.Arena.Width * BattleCellUnityUnits;
+            float depth = battle.Arena.Height * BattleCellUnityUnits;
             ViewCamera.aspect = aspect;
             baseOrthographicSize = Mathf.Max((width + depth) * 0.205f + 1f,
                 (width + depth) * 0.354f / aspect + 1f);

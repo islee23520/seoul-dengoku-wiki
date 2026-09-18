@@ -1,13 +1,14 @@
 namespace Janseon.Foundation
 {
+    /// <summary>
+    /// Mirror of ProjectSettings/GenreContract.json (Intent 결정 10, 2026-09-18).
+    /// Isometric angles, the shared four-direction tile grid, and the SD silhouette
+    /// keys were retired with 결정 10. The strategy map owns a pan/zoom perspective
+    /// camera and the battle screen presents left/right side-scroll.
+    /// </summary>
     public static class GenreContract
     {
-        public const float CameraYawDegrees = 45f;
-        public const float CameraPitchDegrees = 35.264f;
-        public const float TileMeters = 1.5f;
-        public const float TileUnityUnits = 1.5f;
-        public const float SilhouetteHeadsTall = 2.5f;
-        public const int CardinalDirections = 4;
-        public const int StandardCorridorWidthTiles = 2;
+        public const string CombatResolution = "realtime-formation-card";
+        public const bool CombatPauseAllowed = true;
     }
 }

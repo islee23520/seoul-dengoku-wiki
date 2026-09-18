@@ -1,0 +1,8 @@
+ok tiles_are_nine
+ok chunk_geometry_clamps_water_and_exaggerates
+ok chunk_vertices_use_union_origin_not_chunk_center
+ok missing_tile_fails_with_named_file
+ok bake_is_deterministic_and_manifest_is_complete
+ok main_returns_nonzero_on_missing_input
+ok main_cli_bakes
+bake=0

@@ -9,7 +9,8 @@ namespace Janseon.Foundation.Presentation
     /// </summary>
     public static class PlaceholderVoxelLayout
     {
-        public static float TileSize => Janseon.Foundation.GenreContract.TileUnityUnits;
+        // POC presentation scale (Intent 결정 10 retired the shared tile contract).
+        public static float TileSize => 1.5f;
 
         public static readonly StationId[] StationIds =
         {

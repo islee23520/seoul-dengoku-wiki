@@ -4,7 +4,7 @@
 
 ## 처음부터 승인까지
 
-사용 권리를 확인한 입력에서 시작해 2D 생성, TRELLIS 출력, 원본 보존, Blender 정리, Unity 가져오기, 사람의 검수를 거쳐 승인된 에셋이 됩니다. 이 순서는 기본 경로입니다. 초상, UI 콘셉트, 타이틀 아트, UI 키트, 프롭, 타일, 4방향 클립, 시네마틱은 같은 그래프에서 의도에 따라 노드가 켜지거나 건너뛰어집니다.
+사용 권리를 확인한 입력에서 시작해 2D 생성, TRELLIS 출력, 원본 보존, Blender 정리, Unity 가져오기, 사람의 검수를 거쳐 승인된 에셋이 됩니다. 이 순서는 기본 경로입니다. 초상, UI 콘셉트, 타이틀 아트, UI 키트, 프롭, 좌우 전술 클립, 시네마틱은 같은 그래프에서 의도에 따라 노드가 켜지거나 건너뛰어집니다.
 
 ## 의도에서 그래프가 만들어지는 방식
 
@@ -19,7 +19,7 @@
 - `rights_status`: `allowed` · `blocked` · `unresolved`
 - `source`: `generate` · `existing`
 
-`dcc: auto`는 Blender입니다. 4방향 전술 클립도 Blender입니다. Maya는 시네마틱 키프레임 연마가 필요할 때만 고릅니다.
+`dcc: auto`는 Blender입니다. 좌우 전술 클립도 Blender입니다. Maya는 시네마틱 키프레임 연마가 필요할 때만 고릅니다.
 
 ```bash
 node tools/art/pipeline-graph.mjs compile --intent tools/art/intents/character-four-dir.json
@@ -33,7 +33,7 @@ node tools/art/pipeline-graph.mjs validate-manifest --manifest manifest.json
 
 `character_mesh` + `four_dir_clip` + `dcc: auto`는 다음 순서입니다.
 
-권리 확인 → 2D 생성 → TRELLIS → 원본 보존 → Blender 정리 → 리깅 → Blender 4방향 애니 → FBX 보내기 → Unity 가져오기 → 사람 검수 → BOM 승인
+권리 확인 → 2D 생성 → TRELLIS → 원본 보존 → Blender 정리 → 리깅 → Blender 좌우 애니 → FBX 보내기 → Unity 가져오기 → 사람 검수 → BOM 승인
 
 이 경로에는 Maya나 Animo 노드가 없습니다. Animo는 `animo_not_on_auto_path`로 건너뛴 기록만 남깁니다.
 
@@ -53,7 +53,7 @@ ComfyUI를 쓸 때는 모델, 노드, Python, Torch, CUDA와 외부 휠 버전�
 - 색상, 법선, 거칠기 등 재질 채널 검토
 - 캐릭터 리깅 또는 소품 피벗 설정
 - LOD와 단순 충돌체 생성
-- 4방향 전술 클립과 기본 키프레임
+- 좌우 전술 클립과 기본 키프레임
 
 ## Maya와 Animo 분기
 
@@ -66,7 +66,7 @@ Animo 노드는 아래를 모두 만족할 때만 그래프에 들어갑니다.
 - 에셋이 캐릭터 메시 또는 애니 클립
 - 앞 노드에 권리 확인과 Blender 정리·리깅이 있음
 
-이때 순서는 정해져 있습니다. Blender 리깅 다음, Unity 가져오기 전입니다. Animo만 따로 실행하는 경로는 금지이며 분기 검사는 `animo_standalone_forbidden`으로 거절합니다. Maya나 Animo가 호스트에 없으면 `maya_missing` / `animo_missing`으로 닫힌 실패고, 초상·타일·4방향 클립에 Maya를 지정하면 컴파일이 거절됩니다.
+이때 순서는 정해져 있습니다. Blender 리깅 다음, Unity 가져오기 전입니다. Animo만 따로 실행하는 경로는 금지이며 분기 검사는 `animo_standalone_forbidden`으로 거절합니다. Maya나 Animo가 호스트에 없으면 `maya_missing` / `animo_missing`으로 닫힌 실패고, 초상·좌우 클립에 Maya를 지정하면 컴파일이 거절됩니다.
 
 Animo는 저장소에 넣지 않습니다. 상용 사용은 업스트림 조건(무료, 재판매 금지, 베타)을 따르고, 설치된 경로만 `ANIMO_ROOT`로 검사합니다.
 
@@ -75,18 +75,18 @@ Animo는 저장소에 넣지 않습니다. 상용 사용은 업스트림 조건(
 - 가져오기 도구의 정확한 버전과 설정 기록
 - 재질과 텍스처 연결 검증
 - 실제 크기, 피벗, 충돌체와 LOD 확인
-- 고정 아이소메트릭 카메라에서 가독성 캡처
+- 실제 화면 비율에서 가독성 캡처(전략막 팬·줌, 전투 사이드스크롤)
 
 ## 기증 에셋: 오드랜드 패이로드 (2026-09-07)
 
-오드랜드 에셋은 생성 경로가 아닙니다. 소유자 자작 프로젝트의 그래픽·SFX·VFX는 **기증 경로**로 들어옵니다. 2026-09-07 소유자가 오드랜드의 모든 그래픽 에셋을 이 프로젝트에서 자유롭게 쓰도록 선언했고, 같은 날 전량 반입을 지시했습니다([Intent](https://github.com/islee23520/seoul-kenshi/blob/main/Intent.md) 결정 4). 실시간 진형·카드 전투는 미리 렌더된 다이아몬드 아이소 타일을 요구하지 않으므로 오드랜드의 3D FBX·재질·애니메이션을 고정 카메라 아래에 그대로 놓고 씁니다.
+오드랜드 에셋은 생성 경로가 아닙니다. 소유자 자작 프로젝트의 그래픽·SFX·VFX는 **기증 경로**로 들어옵니다. 2026-09-07 소유자가 오드랜드의 모든 그래픽 에셋을 이 프로젝트에서 자유롭게 쓰도록 선언했고, 같은 날 전량 반입을 지시했습니다([Intent](https://github.com/islee23520/seoul-kenshi/blob/main/Intent.md) 결정 4·10). 오드랜드의 3D FBX·재질·애니메이션은 **원본 바이트 as-is**로 쓴다(2026-09-18 결정 10 리타깃·SD 변환 금지). 전투 화면은 좌우 사이드스크롤, 전략 화면은 3D 하이트맵 전역막이다.
 
-- **위치**: `Game/Assets/Quarantine/Oddland/` — `/Quarantine/` 경로 표시 때문에 런타임 프로비넌스 감사가 이 트리를 항상 격리 등급으로 분류합니다. 슬롯 승격 없이는 재생 가능한 씨에서 도달할 수 없습니다. 원본의 `Resources` 폴더는 `Res`로 이름을 바꿔 빌드에 자동 포함되지 않게 합니다.
+- **위치**: `GAME/Assets/Quarantine/Oddland/` — `/Quarantine/` 경로 표시 때문에 런타임 프로비넌스 감사가 이 트리를 항상 격리 등급으로 분류합니다. 슬롯 승격 없이는 재생 가능한 씨에서 도달할 수 없습니다. 원본의 `Resources` 폴더는 `Res`로 이름을 바꿔 빌드에 자동 포함되지 않게 합니다.
 - **범위**: 3D 모델·재질·애니메이션·PSD/PNG 텍스처·아이콘·아틀라스·폰트·SFX(wav/ogg/mp3)·VFX 프리팽·셸이더·후처리 프로필·Spine 스켈레톤 데이터와 spine-unity 런타임. 싼, UI 화면 프리팽, 게임 로직 스크립트, 메타데이터, 서드파티 도구는 가져오지 않습니다.
-- **재현**: `node tools/art/import-oddland-donor.mjs`가 외부 볼륨의 오드랜드 체크아웃에서 결정론적으로 복사하고 `docs/assets/bom/donor/oddland-donor-import.json`과 SHA-256 목록을 씁니다. `--verify`가 페이로드를 목록과 대조합니다 — 에디터가 임포트 때 다시 직렬화하는 YAML(.meta·.mat 등)은 업그레이드로 보고만 하고, FBX·PNG·PSD·WAV 같은 바이너리 원본의 불일치만 실패로 판정합니다. 페이로드(약 1.6GB)는 LFS 할당량을 넘어 git에 넣지 않고 매니페스트만 추적합니다.
+- **재현**: `node TOOL/tools/art/import-oddland-donor.mjs`가 외부 볼륨의 오드랜드 체크아웃에서 결정론적으로 복사하고 `GAME-REFERENCE/assets/bom/donor/oddland-donor-import.json`과 SHA-256 목록을 씁니다. `--verify`가 페이로드를 목록과 대조합니다 — 에디터가 임포트 때 다시 직렬화하는 YAML(.meta·.mat 등)은 업그레이드로 보고만 하고, FBX·PNG·PSD·WAV 같은 바이너리 원본의 불일치만 실패로 판정합니다. 페이로드(약 1.6GB)는 LFS 할당량을 넘어 git에 넣지 않고 매니페스트만 추적합니다.
 - **권리**: BOM `rights_status: allowed`, 근거는 2026-09-07 소유자 선언과 기증자 커밋 해시입니다. spine-unity 런타임은 Esoteric Software 런타임 라이선스를 따르며 소유자의 Spine 에디터 라이선스가 전제입니다 — 이것은 그래픽 에셋 권리가 아니라 도구 라이선스입니다.
 - **승격**: 기증 페이로드에서 런타임 슬롯으로 올리는 것은 여전히 아래 「에셋마다 남기는 기록」의 BOM·`look.owner_verdict: accepted`·소스 바인딩 영수증을 거칩니다. 기증은 승격이 아닙니다.
-- **카탈로그**: `docs/assets/bom/donor/oddland-asset-catalog.json`·`.md`가 비-.meta 7,712개 전량을 kind·family·처분으로 분류한다(미분류 0). `node tools/art/catalog-oddland-donor.mjs`로 재생성, `--check`로 멱등 검증, `--summary`로 요약. 분류는 사용 준비도 판정이 아니며 승격은 아래 승격 절차를 그대로 따른다.
+- **카탈로그**: `GAME-REFERENCE/assets/bom/donor/oddland-asset-catalog.json`·`.md`가 비-.meta 7,712개 전량을 kind·family·처분으로 분류한다(미분류 0). `node TOOL/tools/art/catalog-oddland-donor.mjs`로 재생성, `--check`로 멱등 검증, `--summary`로 요약. 분류는 사용 준비도 판정이 아니며 승격은 아래 승격 절차를 그대로 따른다.
 
 ## UI 아트 임포트와 합성
 

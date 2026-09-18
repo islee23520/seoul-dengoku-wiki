@@ -13,6 +13,10 @@ namespace Janseon.Foundation.Editor
 {
     public static class FoundationProjectBuilder
     {
+        // POC presentation camera until the side-scroll battle module (Intent 결정 10).
+        private const float PocCameraPitchDegrees = 35.264f;
+        private const float PocCameraYawDegrees = 45f;
+
         public static void WireRuntimeSlotCatalog() => RuntimeSlotCatalogBuilder.Wire();
 
         [System.Serializable]
@@ -55,7 +59,7 @@ namespace Janseon.Foundation.Editor
             Camera camera = Object.FindFirstObjectByType<Camera>();
             camera.orthographicSize = 3f;
             camera.transform.position = new Vector3(-9f, 9f, -9f);
-            camera.transform.rotation = Quaternion.Euler(GenreContract.CameraPitchDegrees, GenreContract.CameraYawDegrees, 0f);
+            camera.transform.rotation = Quaternion.Euler(PocCameraPitchDegrees, PocCameraYawDegrees, 0f);
             GameplayUiHost host = Object.FindFirstObjectByType<GameplayUiHost>();
             SetSerializedField(host, "stationCamera", camera);
             EditorUtility.SetDirty(host);
@@ -464,6 +468,84 @@ namespace Janseon.Foundation.Editor
         }
 
 
+        /// <summary>
+        /// Authors the StrategyMapAssetCatalog ScriptableObject from the baked
+        /// assets, registers it in the Foundation VContainer scope, and places the
+        /// strategy map screen in the scene (decision 10).
+        /// </summary>
+        private static void AssignStrategyMapCatalog(FoundationLifetimeScope scope)
+        {
+            const string catalogPath = "Assets/Janseon/Data/StrategyMap/StrategyMapAssetCatalog.asset";
+            const string bakedDir = "Assets/Janseon/Data/StrategyMap/Baked";
+            const string landmarksDir = bakedDir + "/Landmarks";
+
+            var catalog = AssetDatabase.LoadAssetAtPath<Janseon.Foundation.Presentation.StrategyMapAssetCatalog>(catalogPath);
+            if (catalog == null)
+            {
+                catalog = ScriptableObject.CreateInstance<Janseon.Foundation.Presentation.StrategyMapAssetCatalog>();
+                AssetDatabase.CreateAsset(catalog, catalogPath);
+            }
+
+            var meshes = new System.Collections.Generic.List<Mesh>();
+            var textures = new System.Collections.Generic.List<Texture2D>();
+            var buildings = new System.Collections.Generic.List<TextAsset>();
+            foreach (string guid in AssetDatabase.FindAssets("t:Mesh", new[] { bakedDir }))
+            {
+                string path = AssetDatabase.GUIDToAssetPath(guid);
+                if (!System.IO.Path.GetFileNameWithoutExtension(path).StartsWith("chunk-")) continue;
+                meshes.Add(AssetDatabase.LoadAssetAtPath<Mesh>(path));
+            }
+            foreach (string guid in AssetDatabase.FindAssets("t:Texture2D", new[] { bakedDir }))
+            {
+                string path = AssetDatabase.GUIDToAssetPath(guid);
+                if (!System.IO.Path.GetFileNameWithoutExtension(path).StartsWith("chunk-")) continue;
+                textures.Add(AssetDatabase.LoadAssetAtPath<Texture2D>(path));
+            }
+            foreach (string guid in AssetDatabase.FindAssets("t:TextAsset", new[] { bakedDir }))
+            {
+                string path = AssetDatabase.GUIDToAssetPath(guid);
+                if (!path.EndsWith(".bytes")) continue;
+                if (!System.IO.Path.GetFileNameWithoutExtension(path).StartsWith("buildings-")) continue;
+                buildings.Add(AssetDatabase.LoadAssetAtPath<TextAsset>(path));
+            }
+            var landmarkPrefabs = new System.Collections.Generic.List<GameObject>();
+            foreach (string guid in AssetDatabase.FindAssets("t:ModelImporter", new[] { landmarksDir }))
+            {
+                string path = AssetDatabase.GUIDToAssetPath(guid);
+                if (!path.EndsWith(".obj")) continue;
+                landmarkPrefabs.Add(AssetDatabase.LoadAssetAtPath<GameObject>(path));
+            }
+            var landmarkManifest = AssetDatabase.LoadAssetAtPath<TextAsset>(landmarksDir + "/landmarks-manifest.json");
+
+            meshes.Sort((a, b) => string.CompareOrdinal(a.name, b.name));
+            textures.Sort((a, b) => string.CompareOrdinal(a.name, b.name));
+            buildings.Sort((a, b) => string.CompareOrdinal(a.name, b.name));
+            landmarkPrefabs.Sort((a, b) => string.CompareOrdinal(a.name, b.name));
+
+            var so = new SerializedObject(catalog);
+            so.FindProperty("chunkMeshes").arraySize = meshes.Count;
+            for (int i = 0; i < meshes.Count; i++)
+                so.FindProperty("chunkMeshes").GetArrayElementAtIndex(i).objectReferenceValue = meshes[i];
+            so.FindProperty("chunkTextures").arraySize = textures.Count;
+            for (int i = 0; i < textures.Count; i++)
+                so.FindProperty("chunkTextures").GetArrayElementAtIndex(i).objectReferenceValue = textures[i];
+            so.FindProperty("buildingBinaries").arraySize = buildings.Count;
+            for (int i = 0; i < buildings.Count; i++)
+                so.FindProperty("buildingBinaries").GetArrayElementAtIndex(i).objectReferenceValue = buildings[i];
+            so.FindProperty("landmarkPrefabs").arraySize = landmarkPrefabs.Count;
+            for (int i = 0; i < landmarkPrefabs.Count; i++)
+                so.FindProperty("landmarkPrefabs").GetArrayElementAtIndex(i).objectReferenceValue = landmarkPrefabs[i];
+            so.FindProperty("landmarkManifest").objectReferenceValue = landmarkManifest;
+            so.ApplyModifiedProperties();
+            EditorUtility.SetDirty(catalog);
+            AssetDatabase.SaveAssets();
+
+            SetSerializedField(scope, "strategyMapAssets", catalog);
+
+            var screenObject = new GameObject("Strategy Map Screen");
+            screenObject.AddComponent<Janseon.Foundation.Presentation.StrategyMapScreen>();
+        }
+
         static void SetSerializedField(object target, string fieldName, UnityEngine.Object value)
         {
             FieldInfo field = target.GetType().GetField(
@@ -632,6 +714,7 @@ namespace Janseon.Foundation.Editor
             GameObject scopeObject = new("Foundation Lifetime Scope");
             FoundationLifetimeScope scope = scopeObject.AddComponent<FoundationLifetimeScope>();
             AssignRuntimeSlotCatalog(scope);
+            AssignStrategyMapCatalog(scope);
 
             GameObject hostObject = new("Gameplay UI Host");
             GameplayUiHost host = hostObject.AddComponent<GameplayUiHost>();
@@ -642,8 +725,8 @@ namespace Janseon.Foundation.Editor
             camera.orthographicSize = 8f;
             camera.transform.position = new Vector3(-12f, 12f, -12f);
             camera.transform.rotation = Quaternion.Euler(
-                GenreContract.CameraPitchDegrees,
-                GenreContract.CameraYawDegrees,
+                PocCameraPitchDegrees,
+                PocCameraYawDegrees,
                 0f);
             camera.clearFlags = CameraClearFlags.SolidColor;
             camera.backgroundColor = new Color(0.043f, 0.067f, 0.118f, 1f);
