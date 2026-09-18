@@ -5,7 +5,7 @@
 **Branch:** main
 
 ## OVERVIEW
-Character-centered grand-strategy 4X RPG set in post-collapse Seoul's subway network. Unity 6000.7.0a5 runs the game; Node/Python tooling validates documentation, architecture, assets and captures, while Backend hosts a .NET 8 CoreWCF service.
+Character-centered grand-strategy 4X RPG set in post-collapse Seoul's subway network. Unity 6000.7.0a5 runs the game; Node/Python tooling validates documentation, architecture, assets and captures, while Backend hosts a .NET 8 ASP.NET Core host-session coordinator.
 
 ## STRUCTURE
 ```text
@@ -40,7 +40,7 @@ seoul-kenshi/
 |   |-- unity-remote/      # git submodule
 |   |-- docs/
 |   `-- tools/             # repository Node package; distinct from tool submodules
-|-- Backend/               # active CoreWCF service, tests and Docker infrastructure
+|-- Backend/               # ASP.NET Core session coordinator and tests (no external stores)
 `-- .omo/evidence/         # generated capture images and receipts (never edit)
 ```
 
@@ -58,7 +58,7 @@ seoul-kenshi/
 | Asset processing | `GDD/Asset-Pipeline.md`, `TOOL/tools/art/AGENTS.md` | Design contract versus executable promotion checks |
 | Wiki rendering | `TOOL/tools/wiki/AGENTS.md`, `GAME-LOGIC/site/` | Safe public output; VitePress mounting/staging is separate from build |
 | Browser comparison reference | `GAME-REFERENCE/poc/browser/AGENTS.md` | Frozen four-surface prototype, not the product runtime |
-| Backend service | `Backend/AGENTS.md`, `Backend/server/GameServer/Program.cs` | Front/Auth/Hero/Lobby/Station/Social endpoints; HTTP 1219 |
+| Backend service | `Backend/AGENTS.md`, `Backend/server/Coordinator/` | Host-session coordinator: REST + WebSocket on Kestrel :1219, in-process identity |
 | Asset rights and reviews | `GAME-REFERENCE/assets/bom/` | Source evidence, runtime-slot records, quality gates |
 | Delivery and publishing | `GDD/adr/ADR-001-repository-delivery-policy.md` | Accepted authority over historical local-only clauses |
 | Web hub deploy | `SERVICES.md`, `index.html`, `vercel.json` | User-facing URL is always `https://seoul-kenshi.vercel.app`. Vercel project is only `seoul-kenshi` (`prj_KOgAaJkJZ7j3CrUD1eAzYtiGV5mm`, scope `makcha1`). |
@@ -115,16 +115,14 @@ npm --prefix TOOL/tools test
 node TOOL/tools/policy/check-repo-delivery-policy.mjs
 npm --prefix GAME-LOGIC/site run docs:dev
 npm --prefix GAME-LOGIC/site run docs:build
-dotnet build Backend/server/SeoulKenshi.Server.sln -c Debug
-dotnet test Backend/server/Tests/SeoulKenshi.Server.Tests.csproj -c Debug
-dotnet run --project Backend/server/GameServer/GameServer.csproj -c Debug --no-launch-profile
-(cd Backend/docker && docker compose up -d)
+dotnet test Backend/server/Coordinator.Tests -c Debug
+dotnet run --project Backend/server/Coordinator/SeoulKenshi.Coordinator.csproj -c Debug --no-launch-profile
 ```
 
 ## NOTES
 - `npm --prefix TOOL/tools test` covers wiki build and architecture-document tests only. Architecture behavior, art, capture, policy, atlas, regions and store have separate gates.
 - The former `Game`→`GAME` migration defects (manifest `file:` ref, RuntimeSlot spawn paths) were fixed in the 2026-09-18 domain restructure; Unity validation still requires batchmode evidence.
-- Backend Docker exposes MySQL 13306 and Redis 16379; Debug output is `Backend/bin/Local`. Historical template docs are not current service authority.
+- Backend is the ASP.NET Core coordinator on :1219 with no external stores (ADR-006).
 - Unity promotion/wiring requires batchmode and Node on PATH. The macOS development-player builder does not enable AllowDebugging.
 - TRELLIS targets a Windows RTX 4080 direct-Python host; local `probeHost()` reports it unavailable.
 - Capture validation requires ten state/resolution PNGs plus matching receipts; image dimensions alone do not establish valid evidence.
