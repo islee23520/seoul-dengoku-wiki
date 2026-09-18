@@ -4,15 +4,15 @@
 
 이 저장소는 Unity 6.7 기반 프로젝트와 게임 로직 문서의 원본을 관리합니다.
 
-작업을 시작하려면 [contribute.md](contribute.md)에서 도메인을 고릅니다. 이슈 규칙과 라벨은 [CONTRIBUTING.md](CONTRIBUTING.md)입니다. 인물을 넣을 때는 [인물 등록 템플릿](Wikis/game-logic/Cast-Registration-Template.md)을 씁니다.
+작업을 시작하려면 [CONTRIBUTING.md](CONTRIBUTING.md)에서 도메인을 고릅니다. 이슈 규칙과 라벨은 [CONTRIBUTING.md](CONTRIBUTING.md)입니다. 인물을 넣을 때는 [인물 등록 템플릿](LORE/Cast-Registration-Template.md)을 씁니다.
 
 ## 현재 상태
 
 2026-09-14 기준입니다. 지금 모듈은 `Unity POC 통합 코어 루프`입니다. Unity 쪽은 코어와 PlayMode 검증까지이며, 생성 아트 연결과 최종 수용 게이트는 열려 있습니다.
 
-브라우저에서 코어 루프를 직접 돌리는 웹 POC는 [`Game/play/`](Game/play/)입니다. 거점 → 427동 목적지 → 조우(협상·우회·전투) → 진형 → 실시간 카드 전투 → 정산 한 번 → 귀환. 주소는 `https://seoul-kenshi.vercel.app/play/`입니다. 이동 비용은 직선 거리 웹 규칙이고 Unity 코어 전체가 아닙니다. PR [#90](https://github.com/islee23520/seoul-kenshi/pull/90)으로 main에 들어왔습니다.
+브라우저에서 코어 루프를 직접 돌리는 웹 POC는 [`GAME/play/`](GAME/play/)입니다. 거점 → 427동 목적지 → 조우(협상·우회·전투) → 진형 → 실시간 카드 전투 → 정산 한 번 → 귀환. 주소는 `https://seoul-kenshi.vercel.app/play/`입니다. 이동 비용은 직선 거리 웹 규칙이고 Unity 코어 전체가 아닙니다. PR [#90](https://github.com/islee23520/seoul-kenshi/pull/90)으로 main에 들어왔습니다.
 
-서울 지역 총람은 [`Wikis/game-logic/regions/`](Wikis/game-logic/regions/README.md)와 [`GDD/system-design/regions/`](GDD/system-design/regions/)입니다. 선택 경계는 2026-07-01 행정동 25구·427동입니다. OSM 스냅샷은 2026-09-04T23:00:00Z입니다. 역 334는 이동 그래프이지 서울 면적의 증명이 아닙니다.
+서울 지역 총람은 [`LORE/regions/`](LORE/regions/README.md)와 [`GDD/system-design/regions/`](GDD/system-design/regions/)입니다. 선택 경계는 2026-07-01 행정동 25구·427동입니다. OSM 스냅샷은 2026-09-04T23:00:00Z입니다. 역 334는 이동 그래프이지 서울 면적의 증명이 아닙니다.
 
 들어온 구현:
 
@@ -23,8 +23,8 @@
 - 화면: uGUI(Canvas)+TMP ([#59](https://github.com/islee23520/seoul-kenshi/issues/59)). 제품 경로에 UI Toolkit 없음
 - Area 1 데이터 코어(ScriptableObject + VContainer) ([#75](https://github.com/islee23520/seoul-kenshi/issues/75))
 - 진형 편집 PlayMode 경로 ([#76](https://github.com/islee23520/seoul-kenshi/issues/76))
-- 웹 코어 루프 POC: `Game/play/` (2026-09-14, [#90](https://github.com/islee23520/seoul-kenshi/pull/90))
-- 서울 지역 총람: 행정동 427동 저작·검증 파이프라인 `Tool/regions/` (2026-09-13). Unity 내부 공간 아님
+- 웹 코어 루프 POC: `GAME/play/` (2026-09-14, [#90](https://github.com/islee23520/seoul-kenshi/pull/90))
+- 서울 지역 총람: 행정동 427동 저작·검증 파이프라인 `TOOL/regions/` (2026-09-13). Unity 내부 공간 아님
 
 남은 열린 이슈:
 
@@ -43,11 +43,11 @@
 
 ## 문서
 
-게임 설계 원본은 [`Wikis/game-logic/`](Wikis/game-logic/Home.md)에 있습니다. 로컬에서는 `npm run docs:dev`로 VitePress를 띄우고, 공개 표면은 [https://seoul-kenshi.vercel.app](https://seoul-kenshi.vercel.app)입니다. GitHub Wiki는 유지하지 않습니다.
+게임 설계 원본은 [`LORE/`](GDD/Home.md)에 있습니다. 로컬에서는 `npm run docs:dev`로 VitePress를 띄우고, 공개 표면은 [https://seoul-kenshi.vercel.app](https://seoul-kenshi.vercel.app)입니다. GitHub Wiki는 유지하지 않습니다.
 
 이슈를 열거나 작업을 추적할 때는 [`CONTRIBUTING.md`](CONTRIBUTING.md)를 따릅니다. 웹에서는 YAML 이슈 폼만 열고, 빈 이슈는 쓰지 않습니다.
 
-브라우저에서 Unity Game View와 scene object를 확인하는 설치·실행 절차는 [`Unity Remote 안내`](Tool/docs/Unity-Remote.md)에 있습니다.
+브라우저에서 Unity Game View와 scene object를 확인하는 설치·실행 절차는 [`Unity Remote 안내`](TOOL/docs/Unity-Remote.md)에 있습니다.
 
 ## 클론과 Git LFS
 
@@ -64,5 +64,5 @@ node Tool/check-lfs-hydration.mjs
 
 ## Unity 개발 도구
 
-Unity Remote는 `Tool/unity-remote` Git 서브모듈로 관리합니다. 브로커 준비, 프로젝트별 인증 토큰, CLI 및 batchmode Editor 연결은 [Unity Remote 개발 안내](Tool/docs/Unity-Remote-Development.md)를 따릅니다.
+Unity Remote는 `TOOL/unity-remote` Git 서브모듈로 관리합니다. 브로커 준비, 프로젝트별 인증 토큰, CLI 및 batchmode Editor 연결은 [Unity Remote 개발 안내](TOOL/docs/Unity-Remote-Development.md)를 따릅니다.
 

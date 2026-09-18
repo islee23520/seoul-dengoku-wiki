@@ -1,1 +1,0 @@
-import{_ as a,o as t,c as r,a2 as i}from"./chunks/framework.BXzK3EA4.js";const f=JSON.parse('{"title":"잔선: 서울","description":"","frontmatter":{},"headers":[],"relativePath":"index.md","filePath":"index.md"}'),n={name:"index.md"};function l(o,e,s,_,d,c){return t(),r("div",null,[...e[0]||(e[0]=[i("",3)])])}const h=a(n,[["render",l]]);export{f as __pageData,h as default};

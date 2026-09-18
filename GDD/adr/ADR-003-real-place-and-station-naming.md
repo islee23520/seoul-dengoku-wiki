@@ -3,13 +3,13 @@
 - 상태: 승인
 - 결정일: 2026-09-16
 - 범위: 게임이 창작한 지명, 국가·가문·조직·전구 이름, 창작 서술 속 거점 호칭
-- 변경 원장: `Research/verification/creative-name-normalization.json`
+- 변경 원장: `RESEARCH/verification/creative-name-normalization.json`
 
 ## 배경
 
 게임 문서에는 `뚝도`처럼 실제 시설의 명칭을 옮긴 표현, `여의신정`처럼 여러 지명을 합친 표현, `도성`·`북산`·`약령`처럼 플레이어가 이동 그래프에서 찾을 수 없는 축약 표현, 실제 기업명을 그대로 쓴 창작 조직이 함께 존재했다. 이 상태에서는 세계관 문서의 이름과 실제 플레이어 이동 노드가 일치하지 않는다.
 
-플레이어 이동은 행정구역 평면보다 `Station` 노드와 역 사이 연결을 중심으로 작동한다. `Wikis/game-logic/World-and-Subway-Layers.md`와 `Wikis/game-logic/World-Map-Construction.md`는 역 사회와 전략 거점을 `Station`으로 두고, 런타임 `RouteGraph.CreateSeoul()`이 역 그래프를 사용한다고 정의한다.
+플레이어 이동은 행정구역 평면보다 `Station` 노드와 역 사이 연결을 중심으로 작동한다. `LORE/World-and-Subway-Layers.md`와 `LORE/World-Map-Construction.md`는 역 사회와 전략 거점을 `Station`으로 두고, 런타임 `RouteGraph.CreateSeoul()`이 역 그래프를 사용한다고 정의한다.
 
 ## 결정
 
@@ -44,21 +44,21 @@
 
 - `archive/**`
 - `store/**`
-- `Research/canon-reference/**`
-- `Research/verification/worktree-cleanup/**`
+- `RESEARCH/canon-reference/**`
+- `RESEARCH/verification/worktree-cleanup/**`
 - `GDD/system-design/regions/**`
-- `Wikis/game-logic/regions/content/**`
-- `Wikis/game-logic/regions/sources/**`
+- `LORE/regions/content/**`
+- `LORE/regions/sources/**`
 - `.omo/**`
 
-`Wikis/game-logic/**`는 게임 정사의 권위 원본이다. VitePress `Wikis/site`와 `https://seoul-kenshi.vercel.app`은 이 원본에서 다시 생성한다. GitHub Wiki는 유지하지 않는다.
+`LORE/**`는 게임 정사의 권위 원본이다. VitePress `GAME-LOGIC/site`와 `https://seoul-kenshi.vercel.app`은 이 원본에서 다시 생성한다. GitHub Wiki는 유지하지 않는다.
 
 ## 변경 기록
 
 - 2026-09-16: 명칭 우선순위, 원본 보존 경계, 16국·32가문·외부전구의 대표 앵커를 확정했다.
 - 2026-09-16: `뚝도`를 게임 창작물에서 `뚝섬`으로 정규화하고, 실재 기업명 기반 후계조직을 역명 기반 창작 조직명으로 교체하기로 했다.
 - 2026-09-16: 원천 지리 데이터와 그 사실 보존 투영은 변경 대상에서 제외하고, `대구 약령시장`·`서울한양도성` 같은 현실 명칭이 창작 명칭 규칙으로 바뀌지 않도록 문맥 경계를 추가했다.
-- 2026-09-16: `Tool/tools/policy/normalize-creative-names.mjs`를 기본 검사에 연결해 이후 창작 명칭 회귀를 차단했다.
+- 2026-09-16: `TOOL/tools/policy/normalize-creative-names.mjs`를 기본 검사에 연결해 이후 창작 명칭 회귀를 차단했다.
 
 ## 결과
 

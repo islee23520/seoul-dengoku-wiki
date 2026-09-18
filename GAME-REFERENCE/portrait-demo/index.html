@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>서울:전국 — 애니메 풍 초상 레이어 합성 데모</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; background: #16181d; color: #e8e6e1;
+    font-family: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+    display: flex; flex-direction: column; align-items: center; padding: 24px 16px 40px;
+  }
+  header { text-align: center; margin-bottom: 18px; }
+  header h1 { font-size: 20px; margin: 0 0 6px; letter-spacing: 0.02em; }
+  header p { margin: 0; color: #9aa0a8; font-size: 13px; }
+  main { display: flex; gap: 28px; flex-wrap: wrap; justify-content: center; max-width: 900px; width: 100%; }
+  .stage { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+  canvas {
+    width: 384px; height: 384px; image-rendering: pixelated;
+    background: repeating-conic-gradient(#20232a 0% 25%, #181b20 0% 50%) 0 0 / 24px 24px;
+    border: 1px solid #2c3038; border-radius: 8px;
+  }
+  .stage .cap { font-size: 12px; color: #9aa0a8; }
+  .side { flex: 1 1 320px; display: flex; flex-direction: column; gap: 16px; min-width: 300px; }
+  fieldset {
+    border: 1px solid #2c3038; border-radius: 8px; padding: 12px 14px; margin: 0;
+  }
+  legend { font-size: 12px; color: #b7bcc4; padding: 0 6px; }
+  .picks { display: flex; flex-wrap: wrap; gap: 8px; }
+  .picks label {
+    display: flex; align-items: center; gap: 6px; font-size: 13px;
+    border: 1px solid #2c3038; border-radius: 6px; padding: 6px 10px; cursor: pointer;
+  }
+  .picks label:hover { border-color: #4a5160; }
+  .picks input { accent-color: #d08a3e; }
+  .rows { display: flex; flex-direction: column; gap: 2px; max-height: 300px; overflow-y: auto; }
+  .row {
+    display: flex; align-items: center; gap: 8px; font-size: 12.5px;
+    padding: 3px 6px; border-radius: 4px; font-variant-numeric: tabular-nums;
+  }
+  .row:hover { background: #1d2027; }
+  .row .z { color: #7d838d; width: 22px; }
+  .row .id { flex: 1; }
+  .row .tk { color: #8b929c; font-size: 11px; }
+  .row.off { opacity: 0.38; }
+  .row.na { opacity: 0.22; text-decoration: line-through; }
+  .row input { accent-color: #d08a3e; }
+  .step { display: flex; align-items: center; gap: 10px; font-size: 13px; }
+  .step input[type="range"] { flex: 1; accent-color: #d08a3e; }
+  .step .n { color: #b7bcc4; font-variant-numeric: tabular-nums; }
+  .btn {
+    background: #23262e; border: 1px solid #3a404c; color: #e8e6e1; border-radius: 6px;
+    padding: 6px 12px; font-size: 13px; cursor: pointer;
+  }
+  .btn:hover { border-color: #59637a; }
+  footer { margin-top: 26px; font-size: 12px; color: #7d838d; text-align: center; max-width: 640px; line-height: 1.6; }
+</style>
+</head>
+<body>
+<header>
+  <h1>《잔선》 애니메 풍 초상 — 레이어 합성 데모</h1>
+  <p>눈·머리·얼굴·옷은 교체 가능한 2D 슬롯. 정해진 순서로 겹쳐 한 장의 PNG가 된다.</p>
+</header>
+<main>
+  <div class="stage">
+    <canvas id="cv" width="256" height="256"></canvas>
+    <div class="cap" id="cap">기본 표본 · 슬롯 12장 source-over</div>
+  </div>
+  <div class="side">
+    <fieldset>
+      <legend>정체성 토큰 교체</legend>
+      <div class="picks" id="picks">
+        <label><input type="radio" name="v" value="base" checked>기본 표본</label>
+        <label><input type="radio" name="v" value="hair-eyes">머리·눈</label>
+        <label><input type="radio" name="v" value="outfit">의상 팔레트</label>
+        <label><input type="radio" name="v" value="mix">조합</label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>슬롯 (위가 뒤 · 아래가 앞)</legend>
+      <div class="rows" id="rows"></div>
+    </fieldset>
+    <fieldset>
+      <legend>한 장씩 쌓기</legend>
+      <div class="step">
+        <span>0</span>
+        <input type="range" id="stepR" min="0" max="12" value="12">
+        <span class="n" id="stepN">12 / 12</span>
+        <button class="btn" id="replay">replay</button>
+      </div>
+    </fieldset>
+  </div>
+</main>
+<footer>
+  이 화면은 오프라인 합성 파이프의 브라우저 재현입니다. 런타임 에셋이나 게임 빌드가 아닙니다.
+  전술 시트·메시 표면과는 파이프를 섞지 않으며, 공유하는 것은 정체성 토큰뿐입니다.
+</footer>
+<script>
+  const SLOTS = [
+    { z: 21, id: 'frame', tk: '' },
+    { z: 20, id: 'acc_eye', tk: '' },
+    { z: 19, id: 'headgear', tk: '의상' },
+    { z: 18, id: 'clothes_front', tk: '의상' },
+    { z: 17, id: 'hair', tk: '머리색' },
+    { z: 16, id: 'beard', tk: '머리색' },
+    { z: 15, id: 'headgear_mid', tk: '의상' },
+    { z: 14, id: 'clothes', tk: '의상 팔레트' },
+    { z: 13, id: 'ears', tk: '피부' },
+    { z: 12, id: 'eyes_color', tk: '눈색' },
+    { z: 11, id: 'eyes_shape', tk: '' },
+    { z: 10, id: 'nose', tk: '' },
+    { z: 9, id: 'mouth', tk: '' },
+    { z: 8, id: 'chin', tk: '피부' },
+    { z: 7, id: 'cheeks', tk: '피부' },
+    { z: 6, id: 'neck', tk: '피부' },
+    { z: 5, id: 'face_base', tk: '피부' },
+    { z: 4, id: 'beard_back', tk: '머리색' },
+    { z: 3, id: 'hair_back', tk: '머리색' },
+    { z: 2, id: 'headgear_back', tk: '의상' },
+    { z: 1, id: 'clothes_back', tk: '의상 팔레트' },
+    { z: 0, id: 'bg', tk: '' },
+  ];
+  const VARIANTS = {
+    base: { cap: '기본 표본 · 슬롯 12장 source-over' },
+    'hair-eyes': { cap: '머리·눈 토큰 교체 (hair #6b4a2f · eyes #5b3a24)' },
+    outfit: { cap: '의상 팔레트 교체 (clothes #8a4b2d)' },
+    mix: { cap: '조합 (은발 #9a9aa2 · 청록 눈 #2e6e64 · 차콜 의상)' },
+  };
+  const cv = document.getElementById('cv');
+  const ctx = cv.getContext('2d');
+  const rowsBox = document.getElementById('rows');
+  const capEl = document.getElementById('cap');
+  const stepR = document.getElementById('stepR');
+  const stepN = document.getElementById('stepN');
+  let cur = 'base';
+  const imgs = {};   // imgs[variant][slotId] = HTMLImageElement | null(없음)
+  const onFlags = {}; // slotId -> 표시 여부
+
+  function loadImg(variant, id) {
+    return new Promise((resolve) => {
+      const im = new Image();
+      im.onload = () => resolve(im);
+      im.onerror = () => resolve(null);
+      im.src = 'assets/slots/' + variant + '/' + id + '.png';
+    });
+  }
+
+  async function loadVariant(v) {
+    if (imgs[v]) return;
+    const map = {};
+    await Promise.all(SLOTS.map(async (s) => { map[s.id] = await loadImg(v, s.id); }));
+    imgs[v] = map;
+  }
+
+  function activeSlots() {
+    return SLOTS.filter((s) => imgs[cur] && imgs[cur][s.id] && onFlags[s.id]);
+  }
+
+  function render() {
+    ctx.clearRect(0, 0, 256, 256);
+    const list = activeSlots();
+    const upto = Number(stepR.value);
+    for (let i = 0; i < list.length && i < upto; i += 1) {
+      ctx.drawImage(imgs[cur][list[i].id], 0, 0);
+    }
+    stepN.textContent = Math.min(upto, list.length) + ' / ' + list.length;
+  }
+
+  function buildRows() {
+    rowsBox.innerHTML = SLOTS.map((s) => {
+      const has = imgs[cur] && imgs[cur][s.id];
+      const cls = 'row' + (has ? '' : ' na') + (has && !onFlags[s.id] ? ' off' : '');
+      const tk = s.tk ? '<span class="tk">' + s.tk + '</span>' : '';
+      return '<label class="' + cls + '"><input type="checkbox" data-id="' + s.id + '"' +
+        (has && onFlags[s.id] ? ' checked' : '') + (has ? '' : ' disabled') +
+        '><span class="z">' + s.z + '</span><span class="id">' + s.id + '</span>' + tk + '</label>';
+    }).join('');
+    const maxN = activeSlots().length;
+    const old = Number(stepR.value);
+    stepR.max = String(maxN);
+    stepR.value = String(Math.min(old, maxN));
+    rowsBox.querySelectorAll('input[type="checkbox"]').forEach((cb) => {
+      cb.addEventListener('change', () => {
+        onFlags[cb.dataset.id] = cb.checked;
+        cb.closest('.row').classList.toggle('off', !cb.checked);
+        stepR.max = String(activeSlots().length);
+        render();
+      });
+    });
+  }
+
+  async function pick(v) {
+    cur = v;
+    capEl.textContent = VARIANTS[v].cap;
+    await loadVariant(v);
+    buildRows();
+    render();
+  }
+
+  document.getElementById('picks').addEventListener('change', (e) => {
+    if (e.target.name === 'v') pick(e.target.value);
+  });
+  stepR.addEventListener('input', render);
+  document.getElementById('replay').addEventListener('click', async () => {
+    stepR.value = '0';
+    render();
+    for (let i = 1; i <= Number(stepR.max); i += 1) {
+      await new Promise((r) => setTimeout(r, 160));
+      stepR.value = String(i);
+      render();
+    }
+  });
+
+  SLOTS.forEach((s) => { onFlags[s.id] = true; });
+  pick('base');
+</script>
+</body>
+</html>
