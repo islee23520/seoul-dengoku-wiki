@@ -1,4 +1,13 @@
 # 서울 십육국
+<InfoBox title="서울 십육국">
+<InfoRow label="국가 수" value="16" />
+<InfoRow label="강국" value="5 — 현대차·급수·규격·선로·호위" />
+<InfoRow label="형태" value="봉건·군정·신정·상업" />
+<InfoRow label="수장 직위" value="역장·대통령·당회장·회장·종정 등" />
+<InfoRow label="정본" value="LORE/factions/Sixteen-States.md" />
+</InfoBox>
+
+
 
 개막 서울에는 나라가 열여섯이다. 오호십육국을 민족 목록처럼 읽으면 빗나간다. 열여섯 나라가 한꺼번에 서고 그중 다섯이 패권을 다투며 다섯 이주민 회랑이 그 영토 위에 얹히는 구조의 이름이다. 회랑은 열일곱 번째 국가를 만들지 않는다.
 
