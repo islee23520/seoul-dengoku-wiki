@@ -13,7 +13,7 @@ export const DB_NAME = 'design-store.sqlite';
 export const ORIGINALS_DIR = 'originals';
 export const CAPTURE_RECEIPT = 'capture-receipt.json';
 export const VERIFY_RECEIPT = 'verify-receipt.json';
-export const TOOL = 'Tool/store/design-store-capture.mjs@1';
+export const TOOL = 'Tool/tools/store/design-store-capture.mjs@1';
 
 export const ROOT_PLANNING_FILES = Object.freeze(['Concept.md', 'Design.md', 'ToDo.md', 'Intent.md']);
 

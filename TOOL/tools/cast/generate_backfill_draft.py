@@ -366,7 +366,7 @@ def render_markdown(people: list[dict]) -> str:
     lines = [
         "# 인물 카드 백필 초안 (검토용)",
         "",
-        "이 표는 `Tool/cast/generate_backfill_draft.py`가 기존 명부에서 **규칙으로 파생**한 DRAFT다.",
+        "이 표는 `Tool/tools/cast/generate_backfill_draft.py`가 기존 명부에서 **규칙으로 파생**한 DRAFT다.",
         "정본이 아니며, 인간 검토 없이 Cast-State·Cast-Index·Core-Characters에 올리지 않는다.",
         "출신 공동체·생업·징집 이력·무장 접근은 성명 해시 시드로 굴렸다. 소속·직위는 원문 그대로다.",
         "",

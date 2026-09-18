@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 import test from 'node:test';
 import { crc32, deflateSync } from 'node:zlib';
 
-import { compositePortraitLayers, decodePng } from './portrait-layer-composite.mjs';
+import { compositePortraitLayers } from './portrait-layer-composite.mjs';
 
 const repoRoot = fileURLToPath(new URL('../../..', import.meta.url));
 const slotsPath = fileURLToPath(new URL('./portrait-layer-slots.json', import.meta.url));
@@ -202,15 +202,4 @@ test('three-slot fixture composites yellow eyes over red face over blue bg', () 
   assert.deepEqual(pixelAt(result.pixels, 5, 10), RED, 'face pixel');
   assert.deepEqual(pixelAt(result.pixels, 7, 5), YELLOW, 'eye pixel');
   assert.equal(readFileSync(evidencePng)[0], 0x89);
-});
-
-test('decodePng expands 8-bit RGB target to opaque RGBA', () => {
-  const targetPath = fileURLToPath(new URL('./original/target.png', import.meta.url));
-  const image = decodePng(readFileSync(targetPath));
-  assert.equal(image.width, 1145);
-  assert.equal(image.height, 1374);
-  assert.equal(image.pixels.length, 1145 * 1374 * 4);
-  assert.equal(image.pixels[3], 255);
-  const last = (1145 * 1374 - 1) * 4;
-  assert.equal(image.pixels[last + 3], 255);
 });

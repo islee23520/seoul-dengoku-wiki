@@ -13,7 +13,7 @@ import {
 } from './mda-store.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
-const repoRoot = join(here, '../..');
+const repoRoot = join(here, '../../..');
 const corePath = join(here, 'instances/janseon-core.json');
 const catalogPath = join(here, 'instances/catalog.json');
 const documents = [

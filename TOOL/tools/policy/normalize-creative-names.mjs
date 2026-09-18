@@ -4,17 +4,10 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const here = dirname(fileURLToPath(import.meta.url));
-<<<<<<<< HEAD:TOOL/policy/normalize-creative-names.mjs
-const repositoryRoot = resolve(here, '..', '..');
-const ledgerPath = resolve(repositoryRoot, 'Research/verification/creative-name-normalization.json');
-const graphPath = resolve(repositoryRoot, 'Game/Assets/Janseon/Data/Content/SeoulWorldGraph.json');
-const schemaPath = resolve(repositoryRoot, 'Tool/wiki/world-atlas-schema.mjs');
-========
 const repositoryRoot = resolve(here, '..', '..', '..');
 const ledgerPath = resolve(repositoryRoot, 'RESEARCH/verification/creative-name-normalization.json');
 const graphPath = resolve(repositoryRoot, 'GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json');
 const schemaPath = resolve(repositoryRoot, 'TOOL/tools/wiki/world-atlas-schema.mjs');
->>>>>>>> main:TOOL/tools/policy/normalize-creative-names.mjs
 const write = process.argv.includes('--write');
 const fromHead = process.argv.includes('--from-head');
 

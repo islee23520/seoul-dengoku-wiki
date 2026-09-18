@@ -4,12 +4,6 @@ import { readFile } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-<<<<<<<< HEAD:TOOL/wiki/test-core-isometric-diagrams.mjs
-const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..');
-const gameLogicDir = join(repositoryRoot, 'Wikis', 'game-logic');
-const assetDir = join(repositoryRoot, 'Reference', 'assets', 'wiki');
-const manifestPath = join(repositoryRoot, 'Tool', 'wiki', 'core-isometric-diagrams.json');
-========
 const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
 const corpusFile = (name) =>
   ['LORE', 'GAME-LOGIC', 'GDD']
@@ -17,7 +11,6 @@ const corpusFile = (name) =>
     .find((candidate) => existsSync(candidate));
 const assetDir = join(repositoryRoot, 'GAME-REFERENCE', 'assets', 'wiki');
 const manifestPath = join(repositoryRoot, 'Tool', 'tools', 'wiki', 'core-isometric-diagrams.json');
->>>>>>>> main:TOOL/tools/wiki/test-core-isometric-diagrams.mjs
 
 const requiredPages = [
   'Home.md',

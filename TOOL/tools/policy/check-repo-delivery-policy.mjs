@@ -12,7 +12,7 @@ import { execSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
-const root = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
+const root = join(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
 const PLAN = '.omo/plans/seoul-grand-strategy-srpg.md';
 const ADR_DIR = 'GDD/adr';
 const ADR_ID = 'ADR-001';

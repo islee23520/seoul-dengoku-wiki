@@ -2,7 +2,7 @@ import { readFile, readdir } from 'node:fs/promises';
 import { extname, join, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const repositoryRoot = resolve(fileURLToPath(new URL('../..', import.meta.url)));
+const repositoryRoot = resolve(fileURLToPath(new URL('../../..', import.meta.url)));
 const runtimeRoot = join(repositoryRoot, 'Game', 'Assets', 'Janseon');
 const scenesRoot = join(repositoryRoot, 'Game', 'Assets', 'Scenes');
 const buildSettingsPath = join(repositoryRoot, 'Game', 'ProjectSettings', 'EditorBuildSettings.asset');

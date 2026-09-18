@@ -6,8 +6,8 @@ import { tmpdir } from 'node:os';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..');
-const gatePath = join('Tool', 'architecture', 'check-unity-architecture.mjs');
+const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
+const gatePath = join('Tool', 'tools', 'architecture', 'check-unity-architecture.mjs');
 const bootstrapScene = join('Game', 'Assets', 'Scenes', 'Bootstrap.unity');
 const mainTitleScene = join('Game', 'Assets', 'Scenes', 'MainTitle.unity');
 const foundationScene = join('Game', 'Assets', 'Scenes', 'Foundation.unity');

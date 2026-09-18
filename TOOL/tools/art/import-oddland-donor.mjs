@@ -2,8 +2,8 @@
 // Deterministic Oddland donor import: copies owner-authorized graphic/SFX/VFX assets
 // (with Unity .meta files) into the quarantine root and writes/verifies a SHA-256 manifest.
 //
-//   node Tool/art/import-oddland-donor.mjs            # copy + write manifest
-//   node Tool/art/import-oddland-donor.mjs --verify   # re-hash payload against manifest
+//   node Tool/tools/art/import-oddland-donor.mjs            # copy + write manifest
+//   node Tool/tools/art/import-oddland-donor.mjs --verify   # re-hash payload against manifest
 //
 // The payload is gitignored (too large for the repository LFS quota); the manifest is tracked.
 import { createHash } from 'node:crypto';
@@ -12,7 +12,7 @@ import { dirname, join, relative, resolve, sep } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
-const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..');
+const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
 const sourceRoot = process.env.ODDLAND_ASSETS ?? '/Volumes/gameWorkspace/game-refs/oddland-unity/Assets';
 const destinationRoot = join(repoRoot, 'Game', 'Assets', 'Quarantine', 'Oddland');
 const manifestPath = join(repoRoot, 'Reference', 'assets', 'bom', 'donor', 'oddland-donor-import.json');

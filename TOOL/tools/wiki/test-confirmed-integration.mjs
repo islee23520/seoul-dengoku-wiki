@@ -19,7 +19,7 @@ import {
 } from './verify-confirmed-integration.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
-const repositoryRoot = resolve(here, '..', '..');
+const repositoryRoot = resolve(here, '..', '..', '..');
 const verifier = fileURLToPath(new URL('./verify-confirmed-integration.mjs', import.meta.url));
 const atlasPath = join(repositoryRoot, 'Wikis', 'game-logic', 'World-Narrative-Atlas.md');
 

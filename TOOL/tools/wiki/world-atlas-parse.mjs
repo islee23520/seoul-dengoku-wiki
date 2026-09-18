@@ -36,6 +36,7 @@ export function parseCastIndex(markdown) {
     const cells = line.split('|').map((c) => c.trim()).filter((_, i, arr) => i > 0 && i < arr.length - 1);
     if (cells.length < 3 || cells[0] === '이름' || cells[0].startsWith('---') || cells[0] === '') continue;
     humans.push({
+      id: `K${String(humans.length + 1).padStart(3, '0')}`,
       name: cells[0],
       role: cells[1],
       stage: cells[2],

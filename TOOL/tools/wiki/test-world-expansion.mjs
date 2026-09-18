@@ -9,7 +9,7 @@ import { fileURLToPath } from 'node:url';
 import { buildWiki } from './build-wiki.mjs';
 
 const verifier = fileURLToPath(new URL('./verify-world-expansion.mjs', import.meta.url));
-const repositoryRoot = resolve(dirname(verifier), '..', '..');
+const repositoryRoot = resolve(dirname(verifier), '..', '..', '..');
 const liveDocs = join(repositoryRoot, 'Wikis', 'game-logic');
 const liveAssets = join(repositoryRoot, 'Reference', 'assets', 'wiki');
 const fixtures = [];

@@ -8,7 +8,7 @@ import test from 'node:test';
 
 const unityToolsRoot = dirname(fileURLToPath(import.meta.url));
 const toolsRoot = resolve(unityToolsRoot, '..');
-const repoRoot = resolve(toolsRoot, '..');
+const repoRoot = resolve(toolsRoot, '..', '..');
 const gameRoot = join(repoRoot, 'Game');
 const tokenPath = join(gameRoot, '.unity-remote-token');
 const startCli = join(unityToolsRoot, 'start-unity-remote.mjs');

@@ -15,7 +15,7 @@ const SENTINEL = '.janseon-wiki-generated';
 const REPO_IMAGE_BASE = 'https://github.com/islee23520/seoul-kenshi/blob/main/GAME-REFERENCE/assets/wiki';
 const RAW_IMAGE_BASE = 'https://raw.githubusercontent.com/islee23520/seoul-kenshi/main/GAME-REFERENCE/assets/wiki';
 const SECRET = 'TOPSECRET-DO-NOT-PUBLISH-8f2a1c';
-const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..');
+const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
 
 const root = await mkdtemp(join(tmpdir(), 'janseon-wiki-test-'));
 const source = join(root, 'docs');
@@ -603,7 +603,7 @@ await testCase('unrelated external URLs are preserved', async () => {
 });
 
 await testCase('every generated image path in the real repository wiki resolves on disk', async () => {
-  const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..');
+  const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
   const outputDir = await generatedOutput('repo-full');
   await buildWiki({
     sourceDirs: [join(repositoryRoot, 'LORE'), join(repositoryRoot, 'GAME-LOGIC'), join(repositoryRoot, 'GDD')],
@@ -656,8 +656,8 @@ await testCase('commitSha remains mandatory', async () => {
 });
 
 await testCase('the tools-only parser stack is exactly pinned and lockfile-consistent', async () => {
-  const manifest = JSON.parse(await readFile(join(repositoryRoot, 'Tool', 'package.json'), 'utf8'));
-  const lock = JSON.parse(await readFile(join(repositoryRoot, 'Tool', 'package-lock.json'), 'utf8'));
+  const manifest = JSON.parse(await readFile(join(repositoryRoot, 'Tool', 'tools', 'package.json'), 'utf8'));
+  const lock = JSON.parse(await readFile(join(repositoryRoot, 'Tool', 'tools', 'package-lock.json'), 'utf8'));
   const expected = {
     entities: '8.0.0',
     'mdast-util-from-markdown': '2.0.3',

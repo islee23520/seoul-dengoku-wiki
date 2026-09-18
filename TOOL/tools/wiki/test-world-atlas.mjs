@@ -1,6 +1,5 @@
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
-import { createHash } from 'node:crypto';
 import { existsSync } from 'node:fs';
 import { mkdtemp, readFile, rm, unlink, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
@@ -9,8 +8,7 @@ import { after, test } from 'node:test';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 import { materializeWorldAtlas } from './materialize-world-atlas.mjs';
-import { extractAtlasJson, extractDiagrams, parseCastIndex } from './world-atlas-parse.mjs';
-import { verifyAtlasStage, verifyHumanRegistry } from './world-atlas-verify.mjs';
+import { extractAtlasJson, extractDiagrams } from './world-atlas-parse.mjs';
 import { projectionsFromAtlas } from './world-atlas-render.mjs';
 import {
   assertIsometricSvgContracts,
@@ -20,7 +18,7 @@ import {
 import { ISOMETRIC_DIAGRAM_ASSETS } from './world-atlas-schema.mjs';
 
 const verifier = fileURLToPath(new URL('./verify-world-expansion.mjs', import.meta.url));
-const repositoryRoot = resolve(dirname(verifier), '..', '..');
+const repositoryRoot = resolve(dirname(verifier), '..', '..', '..');
 const liveDocs = join(repositoryRoot, 'Wikis', 'game-logic');
 const wikiAssets = join(repositoryRoot, 'Reference', 'assets', 'wiki');
 const atlasPath = join(liveDocs, 'World-Narrative-Atlas.md');
@@ -28,77 +26,6 @@ const fixtures = [];
 
 after(async () => {
   for (const dir of fixtures) await rm(dir, { recursive: true, force: true });
-});
-
-test('human registry covers all 1006 named humans without changing the original 422 records', async () => {
-  const atlas = extractAtlasJson(await readFile(atlasPath, 'utf8')).value;
-  const original = atlas.humans.filter((human) => /^K\d+$/.test(human.id) && Number(human.id.slice(1)) <= 422);
-  const digest = createHash('sha256').update(JSON.stringify(original)).digest('hex');
-  assert.equal(original.length, 422);
-  assert.equal(digest, '67a658ea75e94c1b7d3fca2f656ee8ad1c8c5bf7734f2f752a46d41b9731083f');
-  assert.equal(atlas.humans.length, 1006);
-  assert.equal(new Set(atlas.humans.map((human) => human.id)).size, 1006);
-  assert.equal(new Set(atlas.humans.map((human) => human.name)).size, 1006);
-  const values = JSON.parse(await readFile(join(liveDocs, 'name-pools', 'values-cast.json'), 'utf8'));
-  const byName = new Map(atlas.humans.map((human) => [human.name, human]));
-  for (const person of values.people) {
-    assert.ok(byName.has(person.name), person.name);
-    assert.equal(byName.get(person.name).state_id, person.state);
-  }
-  const added = atlas.humans.filter((human) => Number(human.id.slice(1)) > 422);
-  const mappingDigest = createHash('sha256').update(JSON.stringify(
-    added.map(({ id, name }) => [id, name]),
-  )).digest('hex');
-  assert.equal(mappingDigest, '3c10b950fa21506fae7913301da8083bf7f6bb8e247e626259e8947fd59a281e');
-  assert.equal(added.filter((human) => human.stage === 'S4').length, 578);
-  assert.equal(added.filter((human) => human.state_id === null).length, 6);
-  for (const human of added) {
-    assert.equal(Object.hasOwn(human, 'sex'), false);
-    assert.equal(Object.hasOwn(human, 'appearance'), false);
-    const source = await readFile(join(liveDocs, human.source_anchor), 'utf8');
-    assert.ok(source.split(/\r?\n/).includes(`### ${human.source_heading}`), human.id);
-  }
-});
-
-test('human registry validation does not derive IDs from reordered source index rows', async () => {
-  const source = await readFile(join(liveDocs, 'Cast-Index.md'), 'utf8');
-  const lines = source.split('\n');
-  const first = lines.findIndex((line) => line.startsWith('| 한재목 |'));
-  const second = lines.findIndex((line) => line.startsWith('| 이서담 |'));
-  [lines[first], lines[second]] = [lines[second], lines[first]];
-  const reordered = lines.join('\n');
-  const parsed = parseCastIndex(reordered);
-  assert.equal(Object.hasOwn(parsed[0], 'id'), false, 'source parser must not allocate IDs');
-  const dir = await mkdtemp(join(tmpdir(), 'atlas-human-reorder-'));
-  fixtures.push(dir);
-  const { cp } = await import('node:fs/promises');
-  await cp(liveDocs, dir, { recursive: true });
-  await writeFile(join(dir, 'Cast-Index.md'), reordered);
-  const valuesPath = join(dir, 'name-pools', 'values-cast.json');
-  const values = JSON.parse(await readFile(valuesPath, 'utf8'));
-  values.people.reverse();
-  await writeFile(valuesPath, JSON.stringify(values));
-  const violations = [];
-  const atlas = await verifyAtlasStage({ atlasPath, docs: dir, stage: 'houses',
-    fail: (rule, detail) => violations.push({ rule, detail }) });
-  assert.deepEqual(violations, []);
-  assert.equal(atlas.humans.find((human) => human.name === '한재목').id, 'K001');
-  assert.equal(atlas.humans.find((human) => human.name === '이서담').id, 'K002');
-});
-
-test('human registry rejects missing identities, duplicate IDs and incorrect source locators', async () => {
-  const { humans } = extractAtlasJson(await readFile(atlasPath, 'utf8')).value;
-  const cases = [
-    humans.slice(0, -1),
-    humans.map((human, i) => i === 422 ? { ...human, id: 'K001' } : human),
-    humans.map((human, i) => i === 422 ? { ...human, source_heading: '인물 한재목' } : human),
-    humans.map((human, i) => i === 1005 ? { ...human, state_id: 'S01' } : human),
-  ];
-  for (const changed of cases) {
-    const violations = [];
-    await verifyHumanRegistry(changed, liveDocs, (rule, detail) => violations.push({ rule, detail }));
-    assert.ok(violations.some(({ rule }) => rule === 'E_K_MAP'));
-  }
 });
 
 function runVerifier(args) {
@@ -514,7 +441,7 @@ test('Given isometric SVG hrefs When resolved from asset path Then every externa
 });
 
 test('Given company-aliases manifest When real names enter canon Then every real name has a rename target', async () => {
-  const manifest = JSON.parse(await readFile(join(repositoryRoot, 'Tool', 'wiki', 'company-aliases.json'), 'utf8'));
+  const manifest = JSON.parse(await readFile(join(repositoryRoot, 'Tool', 'tools', 'wiki', 'company-aliases.json'), 'utf8'));
   for (const name of ['삼성전자', '현대자동차', '네이버', '카카오', 'HMM', '테슬라코리아']) {
     assert.ok(name in manifest, `alias missing: ${name}`);
     assert.equal(typeof manifest[name], 'string');

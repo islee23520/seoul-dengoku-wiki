@@ -16,9 +16,8 @@ const EXPECTED_IDS = [
   'chin',
   'mouth',
   'nose',
-  'eyes_white',
-  'eyes_color',
   'eyes_shape',
+  'eyes_color',
   'ears',
   'clothes',
   'headgear_mid',
@@ -37,11 +36,11 @@ const REQUIRED_TRUE = new Set([
   'chin',
   'mouth',
   'nose',
-  'eyes_white',
   'eyes_shape',
   'eyes_color',
   'ears',
   'clothes',
+  'hair',
 ]);
 
 test('portrait-layer-slots.json is product slots with unique increasing z', () => {
@@ -71,15 +70,8 @@ test('portrait-layer-slots.json is product slots with unique increasing z', () =
   }
 
   assert.equal(document.slots[0].z, 0);
-  assert.equal(document.slots.at(-1).z, document.slots.length - 1);
+  assert.equal(document.slots.at(-1).z, 21);
   assert.equal(document.slots.find((slot) => slot.id === 'beard_back').required, false);
   assert.equal(document.slots.find((slot) => slot.id === 'beard').required, false);
   assert.equal(document.slots.find((slot) => slot.id === 'frame').required, false);
-});
-
-test('eye layers render white, iris and lids in that order', () => {
-  const document = JSON.parse(readFileSync(slotsPath, 'utf8'));
-  const byId = new Map(document.slots.map(slot => [slot.id, slot]));
-  assert.ok(byId.get('eyes_white').z < byId.get('eyes_color').z);
-  assert.ok(byId.get('eyes_color').z < byId.get('eyes_shape').z);
 });

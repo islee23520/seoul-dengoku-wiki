@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { validateManifest } from './asset-manifest.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
-export const repoRoot = join(here, '../..');
+export const repoRoot = join(here, '../../..');
 
 export const REQUIRED_ASSET_IDS = Object.freeze([
   'poc-title-art',

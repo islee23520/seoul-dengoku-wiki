@@ -29,7 +29,7 @@ const bannedPublicTerms = [
 const GENERATED_SENTINEL = '.janseon-wiki-generated';
 const SENTINEL_BODY = [
   '# janseon wiki generated output',
-  '# Everything in this directory except .git is rebuilt by Tool/wiki/build-wiki.mjs.',
+  '# Everything in this directory except .git is rebuilt by Tool/tools/wiki/build-wiki.mjs.',
   '# Deleting this file makes the next build refuse to clean the directory.',
   '',
 ].join('\n');
@@ -150,7 +150,7 @@ export function assertSafeOutputRoot(outputDir) {
     throw new Error(`refusing ${resolved} as the wiki output root: it contains the home directory`);
   }
 
-  const repositoryRoot = resolve(fileURLToPath(new URL('../..', import.meta.url)));
+  const repositoryRoot = resolve(fileURLToPath(new URL('../../..', import.meta.url)));
   if (resolved === repositoryRoot) {
     throw new Error(`refusing ${resolved} as the wiki output root: it is the repository root`);
   }

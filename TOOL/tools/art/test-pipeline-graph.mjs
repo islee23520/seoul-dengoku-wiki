@@ -8,7 +8,7 @@ import { spawnSync } from 'node:child_process';
 
 import { checkGraph, compileGraph } from './pipeline-graph.mjs';
 
-const repoRoot = fileURLToPath(new URL('../..', import.meta.url));
+const repoRoot = fileURLToPath(new URL('../../..', import.meta.url));
 const cli = fileURLToPath(new URL('./pipeline-graph.mjs', import.meta.url));
 
 function fourDirIntent() {

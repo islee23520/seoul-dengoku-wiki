@@ -4,7 +4,7 @@ import json
 import unittest
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[3]
 INTERIORS = ROOT / "Wikis" / "game-logic" / "regions" / "station-interiors.json"
 CATALOG = ROOT / "Wikis" / "game-logic" / "Seoul-Station-Catalog.md"
 CONTENT = ROOT / "Wikis" / "game-logic" / "regions" / "content"

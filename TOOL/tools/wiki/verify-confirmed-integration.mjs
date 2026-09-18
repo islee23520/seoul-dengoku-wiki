@@ -7,7 +7,7 @@ import { extractAtlasJson } from './world-atlas-parse.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const defaultManifestPath = join(here, 'confirmed-integration-manifest.json');
-const defaultRepoRoot = resolve(here, '..', '..');
+const defaultRepoRoot = resolve(here, '..', '..', '..');
 const defaultAtlasRel = join('Wikis', 'game-logic', 'World-Narrative-Atlas.md');
 
 export function IntegrationError(code, detail) {

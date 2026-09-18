@@ -28,7 +28,7 @@ export const CONDITIONAL_PAGES = ['Unofficial-Fan-AU-Notice.md'];
 const GENERATED_SENTINEL = '.janseon-wiki-generated';
 const VCS_DIRECTORY = '.git';
 const PUBLISHED_ASSET_DIRECTORY = 'assets';
-const repositoryRootFromScript = resolve(fileURLToPath(new URL('../..', import.meta.url)));
+const repositoryRootFromScript = resolve(fileURLToPath(new URL('../../..', import.meta.url)));
 
 export async function assertPinnedManifest(repositoryRoot) {
   const manifestPath = join(repositoryRoot, 'package.json');
@@ -358,9 +358,9 @@ function defaultNpmCi(repositoryRoot) {
 }
 
 async function defaultRunTests(repositoryRoot) {
-  await runCommand(process.execPath, ['Tool/wiki/test-build-wiki.mjs'], repositoryRoot);
-  await runCommand(process.execPath, ['Tool/wiki/test-core-isometric-diagrams.mjs'], repositoryRoot);
-  await runCommand(process.execPath, ['Tool/wiki/test-publish-wiki.mjs'], repositoryRoot);
+  await runCommand(process.execPath, ['Tool/tools/wiki/test-build-wiki.mjs'], repositoryRoot);
+  await runCommand(process.execPath, ['Tool/tools/wiki/test-core-isometric-diagrams.mjs'], repositoryRoot);
+  await runCommand(process.execPath, ['Tool/tools/wiki/test-publish-wiki.mjs'], repositoryRoot);
 }
 
 function defaultGitPush(wikiDir) {

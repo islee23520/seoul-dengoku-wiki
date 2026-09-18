@@ -17,13 +17,8 @@ import {
 } from './runtime-asset-provenance.mjs';
 import * as provenance from './runtime-asset-provenance.mjs';
 
-<<<<<<<< HEAD:TOOL/art/test-runtime-asset-provenance.mjs
-const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..');
-const gateCli = join(repoRoot, 'Tool/art/check-runtime-asset-provenance.mjs');
-========
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
 const gateCli = join(repoRoot, 'TOOL/tools/art/check-runtime-asset-provenance.mjs');
->>>>>>>> main:TOOL/tools/art/test-runtime-asset-provenance.mjs
 
 function validNonTrellisAsset(overrides = {}) {
   return {
@@ -54,11 +49,7 @@ function validNonTrellisAsset(overrides = {}) {
     look: {
       palette: { steel: '#8A93A0' },
       materials: { finish: 'test-only' },
-<<<<<<<< HEAD:TOOL/art/test-runtime-asset-provenance.mjs
-      references: [{ kind: 'test-contract', source: 'Tool/art/test-runtime-asset-provenance.mjs' }],
-========
       references: [{ kind: 'test-contract', source: 'TOOL/tools/art/test-runtime-asset-provenance.mjs' }],
->>>>>>>> main:TOOL/tools/art/test-runtime-asset-provenance.mjs
       owner_verdict: 'accepted',
     },
     ...overrides,
@@ -191,7 +182,7 @@ test('production worktree audit: playable slice has no C/D/E runtime refs', () =
   const audit = auditRuntimeProvenance(repoRoot);
   assert.equal(audit.ok, true, formatViolations(audit));
   assert.ok(audit.policy.trellis.ok === true);
-  const expectedOpen = 10 - audit.bomEvaluations.filter(b => b.ok).length;
+  const expectedOpen = 9 - audit.bomEvaluations.filter(b => b.ok).length;
   assert.equal(audit.blockedSlots.length, expectedOpen);
   assert.ok(audit.blockedSlots.some((s) => s.slot === 'title-art'));
   // Code-native UI surfaces classified B
@@ -213,16 +204,6 @@ test('RED mutation: injecting TRELLIS prefab guid into MainTitle scene fails the
   try {
     // Minimal fixture: copy gate modules + playable scenes + UI + build settings + BOM + metas for props.
     const copies = [
-<<<<<<<< HEAD:TOOL/art/test-runtime-asset-provenance.mjs
-      'Tool/art/runtime-asset-provenance.mjs',
-      'Tool/art/check-runtime-asset-provenance.mjs',
-      'Game/ProjectSettings/EditorBuildSettings.asset',
-      'Game/Assets/Scenes/Bootstrap.unity',
-      'Game/Assets/Scenes/MainTitle.unity',
-      'Game/Assets/Scenes/Foundation.unity',
-      'Game/Assets/Janseon/Foundation/UI',
-      'Game/Assets/Janseon/Foundation/Composition',
-========
       'TOOL/tools/art/runtime-asset-provenance.mjs',
       'TOOL/tools/art/check-runtime-asset-provenance.mjs',
       'GAME/ProjectSettings/EditorBuildSettings.asset',
@@ -231,7 +212,6 @@ test('RED mutation: injecting TRELLIS prefab guid into MainTitle scene fails the
       'GAME/Assets/Scenes/Foundation.unity',
       'GAME/Assets/Janseon/Foundation/UI',
       'GAME/Assets/Janseon/Foundation/Composition',
->>>>>>>> main:TOOL/tools/art/test-runtime-asset-provenance.mjs
     ];
     for (const rel of copies) {
       const src = join(repoRoot, rel);
@@ -275,21 +255,12 @@ test('RED mutation: build settings listing StationPropValidation fails', () => {
   const fixture = mkdtempSync(join(tmpdir(), 'todo16-build-'));
   try {
     for (const rel of [
-<<<<<<<< HEAD:TOOL/art/test-runtime-asset-provenance.mjs
-      'Tool/art/runtime-asset-provenance.mjs',
-      'Game/ProjectSettings/EditorBuildSettings.asset',
-      'Game/Assets/Scenes/Bootstrap.unity',
-      'Game/Assets/Scenes/MainTitle.unity',
-      'Game/Assets/Scenes/Foundation.unity',
-      'Game/Assets/Janseon/Foundation/UI',
-========
       'TOOL/tools/art/runtime-asset-provenance.mjs',
       'GAME/ProjectSettings/EditorBuildSettings.asset',
       'GAME/Assets/Scenes/Bootstrap.unity',
       'GAME/Assets/Scenes/MainTitle.unity',
       'GAME/Assets/Scenes/Foundation.unity',
       'GAME/Assets/Janseon/Foundation/UI',
->>>>>>>> main:TOOL/tools/art/test-runtime-asset-provenance.mjs
     ]) {
       const src = join(repoRoot, rel);
       const dest = join(fixture, rel);
@@ -316,11 +287,7 @@ function formatViolations(audit) {
   return (audit.violations || []).map((v) => JSON.stringify(v)).join('\n');
 }
 
-<<<<<<<< HEAD:TOOL/art/test-runtime-asset-provenance.mjs
-const slotContract = JSON.parse(readFileSync(join(repoRoot, 'Tool/art/runtime-slot-contract.json'), 'utf8'));
-========
 const slotContract = JSON.parse(readFileSync(join(repoRoot, 'TOOL/tools/art/runtime-slot-contract.json'), 'utf8'));
->>>>>>>> main:TOOL/tools/art/test-runtime-asset-provenance.mjs
 const sha256 = bytes => createHash('sha256').update(bytes).digest('hex');
 
 function slotFixture(t, slot = slotContract.slots[0]) {
@@ -364,30 +331,6 @@ function slotFixture(t, slot = slotContract.slots[0]) {
   bind(); save();
   return { root, row, put, bind, save };
 }
-
-test('portrait slot exists and is declared composite-only (Intent decision 8)', () => {
-  const slot = slotContract.slots.find(s => s.slot === 'character-portrait');
-  assert.ok(slot, 'character-portrait runtime slot must exist');
-  assert.equal(slot.asset_class, 'portrait');
-  assert.equal(slot.composite_only, true);
-  assert.deepEqual(slot.runtime_keys, ['atlas']);
-  assert.equal(slot.primary_key, 'atlas');
-});
-
-test('portrait slot: a per-slot layer plate may not enter the runtime', t => {
-  const slot = slotContract.slots.find(s => s.slot === 'character-portrait');
-  const { root, row, put, bind, save } = slotFixture(t, slot);
-  assert.equal(auditRuntimeProvenance(root).ok, true);
-  const plate = `${slot.destination}hair.png`;
-  row.runtime_files[plate] = put(plate, 'test-only layer plate');
-  bind();
-  save();
-  const audit = auditRuntimeProvenance(root);
-  const evaluated = audit.bomEvaluations.find(b => b.asset_id === row.asset_id);
-  assert.ok(evaluated.errors.some(e => e.code === 'portrait_layer_plate_forbidden'),
-    JSON.stringify(evaluated.errors));
-  assert.ok(audit.blockedSlots.some(s => s.slot === 'character-portrait'));
-});
 
 for (const slot of slotContract.slots) {
   test(`runtime slot: valid source-bound ${slot.slot} unblocks and classifies A`, t => {

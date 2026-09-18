@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 
 const unityToolsRoot = dirname(fileURLToPath(import.meta.url));
 const toolsRoot = resolve(unityToolsRoot, '..');
-const repoRoot = resolve(toolsRoot, '..');
+const repoRoot = resolve(toolsRoot, '..', '..');
 const gameRoot = join(repoRoot, 'Game');
 const upstreamRoot = join(repoRoot, 'Tool', 'unity-remote');
 const tokenPath = join(gameRoot, '.unity-remote-token');
@@ -41,7 +41,7 @@ function persistToken(path, token) {
 
 export async function startUnityRemote(env = process.env) {
   if (!existsSync(join(upstreamRoot, 'dist', 'server', 'app.js')) || !existsSync(webRoot)) {
-    throw new Error('Unity Remote is not built. Run `npm --prefix Tool run remote:setup` first.');
+    throw new Error('Unity Remote is not built. Run `npm --prefix Tool/tools run remote:setup` first.');
   }
   process.chdir(gameRoot);
 

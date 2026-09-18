@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 
 const unityToolsRoot = dirname(fileURLToPath(import.meta.url));
 const toolsRoot = resolve(unityToolsRoot, '..');
-const repoRoot = resolve(toolsRoot, '..');
+const repoRoot = resolve(toolsRoot, '..', '..');
 const upstreamRoot = join(repoRoot, 'Tool', 'unity-remote');
 
 function runChecked(command, args, cwd) {

@@ -6,7 +6,7 @@ import json
 import re
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2] / "Wikis" / "game-logic"
+ROOT = Path(__file__).resolve().parents[3] / "Wikis" / "game-logic"
 POOL = ROOT / "name-pools"
 
 STATE_NAMES = {

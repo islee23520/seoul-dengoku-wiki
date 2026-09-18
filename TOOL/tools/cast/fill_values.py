@@ -6,7 +6,7 @@ import json
 import re
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2] / "Wikis" / "game-logic"
+ROOT = Path(__file__).resolve().parents[3] / "Wikis" / "game-logic"
 AXES = ["권위", "개방", "무력", "물질", "공동", "원칙", "공개", "자격", "분산", "변혁"]
 POLICIES = ["전쟁", "이주민", "급수", "노동", "기록", "기술", "교역", "후계", "결합"]
 DESIRE_AXES = ["갈망", "독점", "위험", "과시", "지속"]
