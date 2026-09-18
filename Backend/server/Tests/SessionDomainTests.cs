@@ -242,6 +242,27 @@ public class SessionDomainTests
     }
 
     [Fact]
+    public void SessionClosed_event_fires_for_every_close_path()
+    {
+        var registry = new SessionRegistry();
+        var observed = new List<(long sessionId, SessionCloseReason reason)>();
+        registry.SessionClosed += (session, reason) => observed.Add((session.SessionId, reason));
+
+        var byHost = CreateSession(registry, hostIdx: 100);
+        var swept = CreateSession(registry, hostIdx: 101);
+        var all = CreateSession(registry, hostIdx: 102);
+
+        registry.CloseByHost(byHost.SessionId, 100, T0);
+        registry.Heartbeat(all.SessionId, 102, T0.AddSeconds(5));
+        registry.Sweep(T0.AddSeconds(31), hostTimeoutSeconds: 30, memberTimeoutSeconds: 30);
+        registry.CloseAll(SessionCloseReason.ServerShutdown, T0.AddMinutes(1));
+
+        Assert.Contains((byHost.SessionId, SessionCloseReason.HostClosed), observed);
+        Assert.Contains((swept.SessionId, SessionCloseReason.HostTimeout), observed);
+        Assert.Contains((all.SessionId, SessionCloseReason.ServerShutdown), observed);
+    }
+
+    [Fact]
     public void ListOpen_orders_by_session_id_and_excludes_closed()
     {
         var registry = new SessionRegistry();

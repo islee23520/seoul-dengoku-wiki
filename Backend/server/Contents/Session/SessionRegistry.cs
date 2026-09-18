@@ -57,6 +57,12 @@ namespace SeoulKenshi.Contents.Session
 
         long _nextSessionId;
 
+        /// <summary>
+        /// 세션이 마감되면(호스트 종료·타임아웃·서버 종료) 마감된 세션과 사유를 알린다.
+        /// 릴레이 허브가 이 이벤트로 접속자들에게 sessionClosed를 보낸다.
+        /// </summary>
+        public event Action<MultiplayerSession, SessionCloseReason> SessionClosed;
+
         public int OpenSessionCount
         {
             get { return _byId.Values.Count(s => s.State == SessionState.Open); }
@@ -170,7 +176,10 @@ namespace SeoulKenshi.Contents.Session
                 return false;
 
             if (session.Close(SessionCloseReason.HostClosed, now))
+            {
                 Unregister(session);
+                RaiseClosed(session, SessionCloseReason.HostClosed);
+            }
             return true;
         }
 
@@ -180,7 +189,10 @@ namespace SeoulKenshi.Contents.Session
             foreach (var session in _byId.Values)
             {
                 if (session.Close(reason, now))
+                {
                     Unregister(session);
+                    RaiseClosed(session, reason);
+                }
             }
         }
 
@@ -207,6 +219,7 @@ namespace SeoulKenshi.Contents.Session
                     {
                         Unregister(session);
                         report.TimedOutSessions.Add(session);
+                        RaiseClosed(session, SessionCloseReason.HostTimeout);
                     }
                     continue;
                 }
@@ -216,6 +229,25 @@ namespace SeoulKenshi.Contents.Session
             }
 
             return report;
+        }
+
+        void RaiseClosed(MultiplayerSession session, SessionCloseReason reason)
+        {
+            var handlers = SessionClosed;
+            if (handlers == null)
+                return;
+
+            foreach (Action<MultiplayerSession, SessionCloseReason> handler in handlers.GetInvocationList())
+            {
+                try
+                {
+                    handler(session, reason);
+                }
+                catch
+                {
+                    // 한 구독자의 실패가 마감 흐름을 막지 않는다.
+                }
+            }
         }
 
         void Unregister(MultiplayerSession session)

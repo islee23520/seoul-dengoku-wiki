@@ -46,6 +46,10 @@ namespace SeoulKenshi.Relay
         {
             _registry = registry ?? throw new ArgumentNullException(nameof(registry));
             _authenticate = authenticate ?? throw new ArgumentNullException(nameof(authenticate));
+
+            // 모든 마감 경로(HTTP 호스트 종료·스윕·서버 종료)가 접속자에게 sessionClosed로 이어진다.
+            _registry.SessionClosed += (session, reason) =>
+                _router.CloseRoom(session.SessionId, RelayCloseReasonText.From(reason));
         }
 
         /// <summary>할당된 실제 포트. StartAsync 뒤에 유효하다(0을 주면 임시 포트).</summary>
@@ -79,13 +83,10 @@ namespace SeoulKenshi.Relay
             Port = ParsePort(addresses.First());
         }
 
-        /// <summary>생존 스윕: 호스트 무응답 세션 마감, 무응답 게스트 퇴장 알림.</summary>
+        /// <summary>생존 스윕: 호스트 무응답 세션 마감(이벤트로 방도 닫힌다), 무응답 게스트 퇴장 알림.</summary>
         public Task RunSweepAsync(DateTime now, int hostTimeoutSeconds, int memberTimeoutSeconds)
         {
             var report = _registry.Sweep(now, hostTimeoutSeconds, memberTimeoutSeconds);
-
-            foreach (var session in report.TimedOutSessions)
-                _router.CloseRoom(session.SessionId, RelayCloseReasonText.From(session.CloseReason));
 
             foreach (var removed in report.RemovedMembers)
                 _router.RemoveGuestConnection(removed.SessionId, removed.Member.AccountIdx);
