@@ -74,7 +74,7 @@ sha256 prefix `0cf75511192a1037` · 원본 `seoyun-a01/machine/idle.png` (64×51
 | c 의상 | 의상 팔레트 | `clothes` | `#8a4b2d` |
 | d 조합 | 머리색·눈색·의상 | 위 전부 | `#9a9aa2`·`#2e6e64`·`#3c4048` |
 
-변형 슬롯 PNG는 각 슬롯의 지배색을 목표색 채널 비율로 곱해 만들었다(음영 구조 보존). 파일 위치: `examples/`. 현재 브라우저 제작 도구: `GAME-REFERENCE/potray-generator/`(정적 페이지, 런타임 아님). 공개 주소는 `https://seoul-kenshi.vercel.app/potrait-generator/` — 별도 Vercel 프로젝트로 배포하지 않는다.
+변형 슬롯 PNG는 각 슬롯의 지배색을 목표색 채널 비율로 곱해 만들었다(음영 구조 보존). 파일 위치: `examples/`. 현재 브라우저 제작 도구: `TOOL/portrait-gen/`(정적 페이지, 런타임 아님). 공개 주소는 `https://seoul-kenshi.vercel.app/potrait-generator/` — 별도 Vercel 프로젝트로 배포하지 않는다.
 
 ## 지금 할 수 있는 일
 
