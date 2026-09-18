@@ -95,12 +95,20 @@ def build_chunk_geometry(elev, x0_3857, y0_3857, x1_3857, y1_3857, grid, vertica
     scale = 0.001  # 1 Unity unit = 1 km of EPSG:3857 distance
 
     vertices: list[tuple[float, float, float]] = []
+    uvs: list[tuple[float, float]] = []
+    wx0 = (x0_3857 - origin_x) * scale
+    wx1 = (x1_3857 - origin_x) * scale
+    wz0 = -(y1_3857 - origin_y) * scale  # north edge
+    wz1 = -(y0_3857 - origin_y) * scale  # south edge
     for row in range(grid):  # row 0 = north edge (y1)
         world_z = -((y1_3857 - row * (y1_3857 - y0_3857) / (grid - 1)) - origin_y) * scale
         for col in range(grid):
             world_x = ((x0_3857 + col * (x1_3857 - x0_3857) / (grid - 1)) - origin_x) * scale
             world_y = float(means[row, col]) * vertical_units_per_meter
             vertices.append((world_x, world_y, world_z))
+            u = (world_x - wx0) / (wx1 - wx0) if wx1 != wx0 else 0.0
+            v = (world_z - wz0) / (wz1 - wz0) if wz1 != wz0 else 0.0
+            uvs.append((u, v))
 
     faces: list[tuple[int, int, int]] = []
     for row in range(grid - 1):
@@ -120,15 +128,17 @@ def build_chunk_geometry(elev, x0_3857, y0_3857, x1_3857, y1_3857, grid, vertica
         "vertexCount": len(vertices),
         "faceCount": len(faces),
     }
-    return vertices, faces, stats
+    return vertices, uvs, faces, stats
 
 
-def write_obj(path: Path, vertices, faces, comment: str) -> None:
+def write_obj(path: Path, vertices, uvs, faces, comment: str) -> None:
     lines = [f"# {comment}"]
     for x, y, z in vertices:
         lines.append(f"v {x:.6f} {y:.6f} {z:.6f}")
+    for u, v in uvs:
+        lines.append(f"vt {u:.6f} {v:.6f}")
     for a, b, c in faces:
-        lines.append(f"f {a} {b} {c}")
+        lines.append(f"f {a}/{a} {b}/{b} {c}/{c}")
     path.write_text("\n".join(lines) + "\n", encoding="ascii")
 
 
@@ -265,14 +275,14 @@ def bake(bundle_dir: Path, out_dir: Path, grid: int = 128, vertical_units_per_me
     chunks = []
     for (x, y) in sorted(tiles):
         elev, bounds = tiles[(x, y)]
-        vertices, faces, stats = build_chunk_geometry(
+        vertices, uvs, faces, stats = build_chunk_geometry(
             elev, bounds[0], bounds[1], bounds[2], bounds[3],
             grid=grid, vertical_units_per_meter=vertical_units_per_meter,
             union_origin_x=origin_x, union_origin_y=origin_y,
         )
         obj_name = f"chunk-{x}-{y}.obj"
         write_obj(
-            out_dir / obj_name, vertices, faces,
+            out_dir / obj_name, vertices, uvs, faces,
             comment=f"seoul-strategy-map chunk z{ZOOM}/{x}/{y} (decision 10)",
         )
         world_min_x = (bounds[0] - origin_x) * scale

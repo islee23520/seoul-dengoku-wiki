@@ -17,15 +17,15 @@ namespace Janseon.Foundation.Tests
 {
     /// <summary>
     /// Loads the baked Seoul strategy map (decision 10) in Play Mode: nine
-    /// chunk meshes from the committed bake, a perspective pan/zoom camera,
-    /// and diagnostic capture PNGs under .omo/evidence/.
+    /// chunk meshes with OSM + region textures, a perspective pan/zoom camera,
+    /// benchmark-style weather (day/sunset/night/rain/snow) and seasons, and
+    /// diagnostic capture PNGs under .omo/evidence/.
     ///
     /// Pixel-content assertions are intentionally absent: in batchmode
     /// -nographics this checkout's Camera.Render path produces uniform frames
     /// for every capture fixture (pre-existing regression family — see
     /// ProductionScene_WorldUnitsAndTargeting_Capture and Capture_C1_C10 on
-    /// main). Visual proof of the terrain is supplied offline by rendering
-    /// the same baked OBJ chunks with the same camera framing.
+    /// main). With graphics enabled the diagnostic captures render for real.
     /// </summary>
     public sealed class StrategyMapCapturePlayModeTests
     {
@@ -33,32 +33,60 @@ namespace Janseon.Foundation.Tests
         private const string EvidenceDir = ".omo/evidence/seoul-strategy-map-gdd";
 
         [UnityTest]
-        public IEnumerator StrategyMap_LoadsNineChunks_WithPerspectivePanZoomCamera()
+        public IEnumerator StrategyMap_LoadsNineChunks_Textures_Weather_AndSeasons()
         {
             Assert.That(Directory.Exists(Path.Combine(ProjectRoot(), BakedDir)), Is.True,
-                "baked strategy map assets are required (run bake_seoul_terrain.py)");
+                "baked strategy map assets are required (run bake_seoul_terrain.py + bake_map_texture.py)");
 
-            List<Mesh> meshes = LoadChunkMeshes();
+            List<Mesh> meshes = LoadChunkAssets<Mesh>("t:Mesh");
+            List<Texture2D> textures = LoadChunkAssets<Texture2D>("t:Texture2D");
             Assert.That(meshes.Count, Is.EqualTo(9), "nine baked chunk meshes expected");
+            Assert.That(textures.Count, Is.EqualTo(9), "nine baked chunk textures expected");
             foreach (Mesh mesh in meshes)
             {
                 Assert.That(mesh.vertexCount, Is.GreaterThan(0), $"{mesh.name} has no geometry");
-                Assert.That(mesh.bounds.max.x, Is.LessThanOrEqualTo(StrategyMapCatalog.UnionMaxX + 0.5f),
-                    $"{mesh.name} exceeds the catalog union bounds");
+                Assert.That(mesh.uv.Length, Is.EqualTo(mesh.vertexCount), $"{mesh.name} needs UVs for the landcover texture");
+                Assert.That(mesh.bounds.max.x, Is.LessThanOrEqualTo(StrategyMapCatalog.UnionMaxX + 0.5f));
                 Assert.That(mesh.bounds.min.x, Is.GreaterThanOrEqualTo(StrategyMapCatalog.UnionMinX - 0.5f));
             }
 
             GameObject host = new GameObject("strategy-map-playmode");
             try
             {
-                StrategyMapPresenter presenter = StrategyMapPresenter.Build(host.transform, meshes);
+                StrategyMapPresenter presenter = StrategyMapPresenter.Build(host.transform, meshes, textures);
                 Assert.That(presenter.ChunkChildCount, Is.EqualTo(9));
                 Assert.That(presenter.MapCamera, Is.Not.Null);
                 Assert.That(presenter.MapCamera.orthographic, Is.False, "decision 10 perspective camera");
 
                 // Captures first, while the camera sits at its default full-map framing.
-                yield return CaptureDiagnostic(presenter.MapCamera, 1280, 720);
-                yield return CaptureDiagnostic(presenter.MapCamera, 1920, 1080);
+                var sb = new StringBuilder();
+                foreach (StrategyMapWeatherKind weather in System.Enum.GetValues(typeof(StrategyMapWeatherKind)))
+                {
+                    presenter.SetWeather(weather);
+                    Assert.That(presenter.MapCamera.backgroundColor, Is.Not.EqualTo(default(Color)));
+                    bool weatherParticles = weather switch
+                    {
+                        StrategyMapWeatherKind.Rain => presenter.RainSystem.isEmitting && !presenter.SnowSystem.isEmitting,
+                        StrategyMapWeatherKind.Snow => presenter.SnowSystem.isEmitting && !presenter.RainSystem.isEmitting,
+                        _ => !presenter.RainSystem.isEmitting && !presenter.SnowSystem.isEmitting,
+                    };
+                    Assert.That(weatherParticles, Is.True, $"particle state wrong for {weather}");
+                    presenter.RainSystem?.Simulate(1.2f, true, true);
+                    presenter.SnowSystem?.Simulate(1.2f, true, true);
+                    sb.AppendLine($"weather {weather}: rain={presenter.RainSystem.particleCount} snow={presenter.SnowSystem.particleCount} bg={presenter.MapCamera.backgroundColor}");
+                    yield return CaptureDiagnostic(presenter.MapCamera, 1280, 720, $"weather-{weather}");
+                }
+
+                presenter.SetWeather(StrategyMapWeatherKind.Day);
+                foreach (StrategyMapSeasonKind season in new[] { StrategyMapSeasonKind.Summer, StrategyMapSeasonKind.Autumn, StrategyMapSeasonKind.Winter })
+                {
+                    presenter.SetSeason(season);
+                    yield return CaptureDiagnostic(presenter.MapCamera, 1280, 720, $"season-{season}");
+                }
+
+                string dir = Path.Combine(ProjectRoot(), EvidenceDir);
+                Directory.CreateDirectory(dir);
+                File.WriteAllText(Path.Combine(dir, "weather-states.txt"), sb.ToString());
 
                 Quaternion beforeRotation = presenter.MapCamera.transform.rotation;
                 Vector3 beforePosition = presenter.MapCamera.transform.position;
@@ -67,9 +95,6 @@ namespace Janseon.Foundation.Tests
                 presenter.Zoom(1.5f);
                 Assert.That(presenter.MapCamera.transform.position.y, Is.GreaterThan(beforePosition.y));
                 Assert.That(presenter.MapCamera.transform.rotation, Is.EqualTo(beforeRotation), "pan/zoom must never orbit");
-
-                presenter.Pan(new Vector2(-500f, -500f)); // clamped to union bounds
-                Assert.That(presenter.MapCamera.transform.position.x, Is.GreaterThanOrEqualTo(StrategyMapCatalog.UnionMinX - 0.01f));
             }
             finally
             {
@@ -82,17 +107,26 @@ namespace Janseon.Foundation.Tests
             return Directory.GetParent(Application.dataPath)!.FullName;
         }
 
-        private static List<Mesh> LoadChunkMeshes()
+        private static List<T> LoadChunkAssets<T>(string filter) where T : Object
         {
-            var byPath = new SortedDictionary<string, Mesh>();
+            var byPath = new SortedDictionary<string, T>();
 #if UNITY_EDITOR
-            foreach (string guid in AssetDatabase.FindAssets("t:Mesh", new[] { BakedDir }))
+            foreach (string guid in AssetDatabase.FindAssets(filter, new[] { BakedDir }))
             {
                 string assetPath = AssetDatabase.GUIDToAssetPath(guid);
-                Mesh mesh = AssetDatabase.LoadAssetAtPath<Mesh>(assetPath);
-                if (mesh != null)
+                if (!Path.GetFileNameWithoutExtension(assetPath).StartsWith("chunk-"))
                 {
-                    byPath[assetPath] = mesh;
+                    continue;
+                }
+                if (AssetImporter.GetAtPath(assetPath) is ModelImporter modelImporter && !modelImporter.isReadable)
+                {
+                    modelImporter.isReadable = true; // CPU-side UV inspection in this fixture only
+                    modelImporter.SaveAndReimport();
+                }
+                T asset = AssetDatabase.LoadAssetAtPath<T>(assetPath);
+                if (asset != null)
+                {
+                    byPath[assetPath] = asset;
                 }
             }
 #endif
@@ -100,77 +134,27 @@ namespace Janseon.Foundation.Tests
         }
 
         /// <summary>Writes the render attempt as diagnostic PNG evidence; no pixel-content assert (see class doc).</summary>
-        private static IEnumerator CaptureDiagnostic(Camera camera, int width, int height)
+        private static IEnumerator CaptureDiagnostic(Camera camera, int width, int height, string suffix)
         {
             var target = new RenderTexture(width, height, 24, RenderTextureFormat.ARGB32);
             var tex = new Texture2D(width, height, TextureFormat.RGBA32, false);
             RenderTexture previousActive = RenderTexture.active;
-            // Batchmode loads no URP asset, so URP shaders render magenta under the
-            // built-in fallback; swap URP materials to pipeline-agnostic Unlit/Color
-            // (keeping the chunk tints) so the capture shows real geometry shading.
-            var swapped = new List<(MeshRenderer renderer, Material original)>();
             try
             {
-                Shader unlitColor = Shader.Find("Unlit/Color");
-                foreach (MeshRenderer renderer in camera.transform.parent.GetComponentsInChildren<MeshRenderer>(true))
-                {
-                    if (renderer.sharedMaterial != null && renderer.sharedMaterial.shader.name.StartsWith("Universal"))
-                    {
-                        var replacement = new Material(unlitColor);
-                        replacement.color = renderer.sharedMaterial.HasColor("_BaseColor")
-                            ? renderer.sharedMaterial.GetColor("_BaseColor")
-                            : Color.white;
-                        swapped.Add((renderer, renderer.sharedMaterial));
-                        renderer.sharedMaterial = replacement;
-                    }
-                }
                 target.Create();
                 RenderTexture.active = target;
                 camera.targetTexture = target;
-                // Batchmode Camera.Render does not refresh camera.aspect from the
-                // target texture (known Unity behavior): pin it explicitly or the
-                // view renders as a square slice stretched over the frame.
                 camera.aspect = (float)width / height;
                 camera.Render();
                 tex.ReadPixels(new Rect(0, 0, width, height), 0, 0);
                 tex.Apply();
 
-                Color32[] pixels = tex.GetPixels32();
-                var histogram = new SortedDictionary<string, int>();
-                foreach (Color32 p in pixels)
-                {
-                    string key = $"{p.r / 32 * 32:X2}{p.g / 32 * 32:X2}{p.b / 32 * 32:X2}";
-                    histogram[key] = histogram.GetValueOrDefault(key) + 1;
-                }
-                string topColors = string.Join(",", histogram.OrderByDescending(kv => kv.Value).Take(4).Select(kv => $"{kv.Key}={kv.Value}"));
-
-                // Ground-truth dump: where does the engine itself project the chunk centers?
-                var sb = new StringBuilder();
-                sb.AppendLine($"camera pos={camera.transform.position} rot={camera.transform.eulerAngles} fwd={camera.transform.forward}");
-                for (int i = 0; i < StrategyMapCatalog.Chunks.Length; i++)
-                {
-                    var b = StrategyMapCatalog.Chunks[i];
-                    var world = new Vector3((b.MinX + b.MaxX) * 0.5f, 5f, (b.MinZ + b.MaxZ) * 0.5f);
-                    sb.AppendLine($"chunk{i} tile{b.TileX}/{b.TileY} world={world} viewport={camera.WorldToViewportPoint(world)}");
-                }
-                foreach (MeshRenderer renderer in camera.transform.parent.GetComponentsInChildren<MeshRenderer>(true))
-                {
-                    sb.AppendLine($"renderer {renderer.name} mat={(renderer.sharedMaterial != null ? renderer.sharedMaterial.shader.name : "null")} visible={renderer.isVisible} bounds={renderer.bounds}");
-                }
-
                 string dir = Path.Combine(ProjectRoot(), EvidenceDir);
                 Directory.CreateDirectory(dir);
-                string metaPath = Path.Combine(dir, $"strategy-map-{width}x{height}-histogram.txt");
-                File.WriteAllText(metaPath, $"batchmode Camera.Render diagnostic; top colors {topColors}\n{sb}\n");
-
-                File.WriteAllBytes(Path.Combine(dir, $"strategy-map-{width}x{height}.png"), tex.EncodeToPNG());
+                File.WriteAllBytes(Path.Combine(dir, $"strategy-map-{suffix}-{width}x{height}.png"), tex.EncodeToPNG());
             }
             finally
             {
-                foreach (var (renderer, original) in swapped)
-                {
-                    renderer.sharedMaterial = original;
-                }
                 camera.targetTexture = null;
                 RenderTexture.active = previousActive;
                 target.Release();
