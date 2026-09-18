@@ -17,6 +17,12 @@ namespace SeoulKenshi.GameServer
         public bool PacketProcessLock { get; set; } = true;
         public int GamePort { get; set; } = 1219;
         public int GMSPort { get; set; } = 1003;
+
+        // ADR-005 호스트 세션 멀티플레이: 운영값이다(게임 디자인 수치가 아니다).
+        public int RealtimePort { get; set; } = 1220;
+        public int SessionMaxGuests { get; set; } = 4;
+        public int SessionHostTimeoutSeconds { get; set; } = 30;
+        public int SessionMemberTimeoutSeconds { get; set; } = 30;
         public int MaxBufferSize { get; set; } = 102400;
         public int MaxConcurrentCalls { get; set; } = 1000;
         public int MaxConcurrentSessions { get; set; } = 200;
