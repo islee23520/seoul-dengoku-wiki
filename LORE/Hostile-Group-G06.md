@@ -3,7 +3,7 @@
 이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.
 
 - 원본 앵커: `LORE/World-Narrative-Atlas.md`
-- 원본 해시: `dc628e97ef75821884ba0be2a2b436bc2953ddff892e66d1dfb632c904c2efcd`
+- 원본 해시: `b65cc5a5821cb06f62d093e76b1afab655da99481b34fa0e33f46d45dcb8dbb9`
 
 
 G06 철새습지포식군은 한강·난지·암사 일대의 단절된 녹지와 복원에 실패한 습지 파편에 여러 조류 기능군이 겹치면서 형성된 혼합 군집이다.
