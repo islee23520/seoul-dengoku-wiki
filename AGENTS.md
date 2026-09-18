@@ -21,10 +21,10 @@ seoul-kenshi/
 |   |-- proposals/
 |   |-- system-design/
 |   `-- design-store/
-|-- LORE/                  # world corpus: cast, regions, name-pools, hostile groups, story batches
+|-- LORE/                  # world corpus — what exists: cast, regions, factions, chronology, economy, technology, culture, name-pools, hostile groups, story batches
 |   |-- name-pools/
 |   `-- regions/
-|-- GAME-LOGIC/            # rules/systems corpus + VitePress site (publishing surface)
+|-- GAME-LOGIC/            # game rules corpus — how systems work: campaign, battle, settlement, determinism, balance, reference analysis
 |   `-- site/              # design/world/rules staging + .vitepress + scripts
 |-- GAME-REFERENCE/        # asset BOMs, UX references, moodboards, prototypes, geography data
 |   |-- assets/

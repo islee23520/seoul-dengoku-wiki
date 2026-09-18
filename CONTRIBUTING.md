@@ -67,12 +67,12 @@ gh issue create --repo islee23520/seoul-kenshi \
 
 | 라벨 | 쓸 때 |
 |---|---|
-| `세계관` | 십육국, 레이어, 적대 집단, 공개 위키 구조 |
+| `세계관` | 세계·인물·지리·세력 설정 — 무엇이 존재하는가(등장인물·지역·연대기·경제·기술·문화) |
 | `설정` | 규칙, 계약, 문서 정합, 도표 |
 | `인물` | 캐스트, 관계, 프로필 |
 | `사건` | 타임라인, 촉발 사건 |
 | `이야기` | 서사 배치, 백스토리 |
-| `게임로직` | 캠페인·전투·정산 **규칙 문서** |
+| `게임로직` | 캠페인·전투·정산 규칙 — 시스템이 어떻게 작동하는가(프로세스·계약·결정론·벨런스·레퍼런스 분석) |
 | `게임 구현` | 그 규칙의 **런타임 코드** |
 | `유니티 작업` | 씬, 에디터, batchmode, 빌드 |
 | `버그` | 결함, 결측, 드리프트 |
@@ -136,12 +136,12 @@ main의 기존 dirty/staged 파일은 보존한다. 구현은 전용 worktree �
 
 | 카테고리 | 정본 | 첫 파일 | 게이트 |
 | --- | --- | --- | --- |
-| 세계관 | `LORE/` | [Home.md](GDD/Home.md), [세계 서사 지도](LORE/World-Narrative-Atlas.md) | 위키 빌드, 금지 용어 |
+| 세계관 | `LORE/` — 세계에 존재하는 것: 인물·세력·지역·연대기·경제·기술·문화 | [Home.md](GDD/Home.md), [세계 서사 지도](LORE/World-Narrative-Atlas.md) | 위키 빌드, 금지 용어 |
 | 설정 | `LORE/`, `GDD/` | 계약·도표 페이지, [Intent.md](Intent.md) | 위키 또는 문서 정합 |
 | 인물 | `LORE/Cast-*` | [인물 등록 템플릿](LORE/Cast-Registration-Template.md) | `verify-cast.mjs` |
 | 사건 | 타임라인 | [시나리오 타임라인](LORE/Scenario-Timeline.md) | 위키 빌드 |
 | 이야기 | 서사 배치 | [세계 서사 지도](LORE/World-Narrative-Atlas.md) | 위키 빌드, 출처 충실 |
-| 게임로직 | 규칙 문서 | [유니티 구조](GAME-LOGIC/Unity-Architecture.md) 옆의 규칙 페이지 | 위키 빌드 |
+| 게임로직 | `GAME-LOGIC/` — 시스템이 작동하는 방식: 프로세스·계약·결정론·벨런스·레퍼런스 분석 | [유니티 구조](GAME-LOGIC/Unity-Architecture.md) 옆의 규칙 페이지 | 위키 빌드 |
 | 게임 구현 | `GAME/Assets/Janseon/` | 해당 Core/Foundation 스크립트 | EditMode/PlayMode |
 | 유니티 작업 | `Game/` | [GAME/AGENTS.md](GAME/AGENTS.md) | `6000.7.0a5` `-batchmode` |
 | 버그 | 결함 위치 | 재현 로그 | 실패했던 명령 GREEN |
@@ -154,7 +154,7 @@ main의 기존 dirty/staged 파일은 보존한다. 구현은 전용 worktree �
 
 ## 세계관
 
-서울 십육국, 레이어, 역, 회랑처럼 **세계가 어떻게 생겼는지**를 고친다.
+서울 십육국, 레이어, 역, 회랑, 인물, 세력, 경제, 기술 — **세계에 무엇이 존재하는지**를 고친다. 규칙(어떻게 작동하는가)은 GAME-LOGIC 도메인이다.
 
 - 읽기: [Home.md](GDD/Home.md), [서울과 지하철 레이어](LORE/World-and-Subway-Layers.md), [서울 십육국](LORE/Sixteen-States.md)
 - 쓰기: 해당 위키 페이지. 새 페이지는 [_TEMPLATE.md](GDD/_TEMPLATE.md)의 `domain: world`
@@ -201,9 +201,10 @@ main의 기존 dirty/staged 파일은 보존한다. 구현은 전용 worktree �
 
 ## 게임로직
 
-캠페인·전투·정산 **규칙 문서**. 코드가 아니다.
+캠페인·전투·정산 규칙 — **시스템이 어떻게 작동하는가**(프로세스·계약·결정론·벨런스·레퍼런스 분석). 코드가 아니라 세계의 사물이 아니라, 그 사이에서 일어나는 상호작용의 설계도다.
 
-- 예: [출격하고 돌아오는 흐름](GAME-LOGIC/Campaign-Loop.md), [실시간 진형·카드 전투](GAME-LOGIC/Realtime-Formation-Card-Battle.md), [같은 선택이 같은 결과가 되나](GAME-LOGIC/Save-and-Determinism.md)
+- 예: [출격하고 돌아오는 흐름](GAME-LOGIC/Campaign-Loop.md), [실시간 진형·카드 전투](GAME-LOGIC/Realtime-Formation-Card-Battle.md), [같은 선택이 같은 결과가 되나](GAME-LOGIC/Save-and-Determinism.md), [레퍼런스 분석](GAME-LOGIC/Ref-Mechanism-Index.md)
+- LORE(무엇이 존재하는가)와 구분: GAME-LOGIC은 그 존재들이 게임 내에서 어떤 절차로 만나고 충돌하는지를 정의한다.
 - 런타임 변경은 `게임 구현`으로 따로 연다.
 
 ## 게임 구현
