@@ -2,7 +2,7 @@
 
 붕괴 뒤 서울의 건물은 새로 짓지 않는다. 2026 관측 위치(OSM 태그)가 뼈대고, 개막일 쓰임은 그 뼈대 위에 얹은 창작이다. 태그가 `school`이라고 학교가 열린 것이 아니다.
 
-면적 분모는 [서울 지역 설정 데이터](regions/README.md)의 427동이다. 권역 깃발은 [십육국](/world/Sixteen-States), 그래프 재료는 [월드맵 구성](/world/World-Map-Construction), 점령 수치는 [거점과 영토](/world/Strongholds-and-Territory)다.
+면적 분모는 [서울 지역 설정 데이터](../regions/README.md)의 427동이다. 권역 깃발은 [십육국](/world/Sixteen-States), 그래프 재료는 [월드맵 구성](/world/World-Map-Construction), 점령 수치는 [거점과 영토](/world/Strongholds-and-Territory)다.
 
 ## 세력·건물·역
 
@@ -99,7 +99,7 @@ OSM `amenity`/`building`/`railway`는 붕괴 전 용도다. 개막 쓰임은 아
 
 ## 층마다
 
-OSM 시설 노드(학교·역 이름점)에는 `building:levels`가 거의 없다. 건물 폴리곤 9만 채에는 층수가 있으나, 이름점과 80m 최근접은 옆 빌딩을 붙이는 오류가 난다(경복궁역→적선현대빌딩). 관측 층수는 [조인 기록](regions/sources/observed-levels-join.md)이다. OSM 이름 일치 건물만 `building:levels`를 붙인다. 거리 최근접은 쓰지 않는다. 지금 `floors[]`는 개막 쓰임이다. 역 내부 334곳은 `regions/station-interiors.json`이다.
+OSM 시설 노드(학교·역 이름점)에는 `building:levels`가 거의 없다. 건물 폴리곤 9만 채에는 층수가 있으나, 이름점과 80m 최근접은 옆 빌딩을 붙이는 오류가 난다(경복궁역→적선현대빌딩). 관측 층수는 [조인 기록](../regions/sources/observed-levels-join.md)이다. OSM 이름 일치 건물만 `building:levels`를 붙인다. 거리 최근접은 쓰지 않는다. 지금 `floors[]`는 개막 쓰임이다. 역 내부 334곳은 `regions/station-interiors.json`이다.
 
 | `state` | 뜻 |
 |---|---|

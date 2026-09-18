@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { mkdirSync, readFileSync } from 'node:fs';
+import { mkdirSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
@@ -21,12 +21,61 @@ const documents = [
   ...JSON.parse(readFileSync(catalogPath, 'utf8')),
 ];
 
+function findNamedMarkdown(root, fileName) {
+  const stack = [root];
+  while (stack.length > 0) {
+    const dir = stack.pop();
+    let names;
+    try {
+      names = readdirSync(dir);
+    } catch {
+      continue;
+    }
+    for (const name of names) {
+      const full = join(dir, name);
+      if (name === fileName) {
+        try {
+          readFileSync(full);
+          return full;
+        } catch {
+          continue;
+        }
+      }
+      try {
+        if (statSync(full).isDirectory()) stack.push(full);
+      } catch {
+        /* skip */
+      }
+    }
+  }
+  return null;
+}
+
 function resolveCanonPath(sourcePath) {
   for (const dir of ['LORE', 'GAME-LOGIC', 'GDD']) {
     const prefix = `${dir}/`;
     if (sourcePath.startsWith(prefix)) {
-      return join(repoRoot, dir, sourcePath.slice(prefix.length));
+      const rest = sourcePath.slice(prefix.length);
+      const direct = join(repoRoot, dir, rest);
+      try {
+        readFileSync(direct);
+        return direct;
+      } catch {
+        const nested = findNamedMarkdown(join(repoRoot, dir), rest.split('/').pop());
+        if (nested) return nested;
+        return direct;
+      }
     }
+  }
+  const legacy = sourcePath.match(/^(?:Wikis|docs)\/game-logic\/(.+)$/);
+  if (legacy) {
+    const rest = legacy[1];
+    const fileName = rest.split('/').pop();
+    for (const dir of ['GAME-LOGIC', 'LORE', 'GDD']) {
+      const nested = findNamedMarkdown(join(repoRoot, dir), fileName);
+      if (nested) return nested;
+    }
+    return join(repoRoot, 'LORE', rest);
   }
   return join(repoRoot, sourcePath);
 }

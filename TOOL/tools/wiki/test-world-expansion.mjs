@@ -10,8 +10,8 @@ import { buildWiki } from './build-wiki.mjs';
 
 const verifier = fileURLToPath(new URL('./verify-world-expansion.mjs', import.meta.url));
 const repositoryRoot = resolve(dirname(verifier), '..', '..', '..');
-const liveDocs = join(repositoryRoot, 'Wikis', 'game-logic');
-const liveAssets = join(repositoryRoot, 'Reference', 'assets', 'wiki');
+const liveDocs = join(repositoryRoot, 'LORE');
+const liveAssets = join(repositoryRoot, 'GAME-REFERENCE', 'assets', 'wiki');
 const fixtures = [];
 
 after(async () => {
@@ -277,7 +277,11 @@ test('Given generated wiki When inspecting a public page Then AU notice and sour
   fixtures.push(temporaryRoot);
   const outputDir = join(temporaryRoot, 'wiki');
   await buildWiki({
-    sourceDir: liveDocs,
+    sourceDirs: [
+      liveDocs,
+      join(repositoryRoot, 'GAME-LOGIC'),
+      join(repositoryRoot, 'GDD'),
+    ],
     assetDir: liveAssets,
     outputDir,
     commitSha: 'deadbeef',
@@ -287,7 +291,7 @@ test('Given generated wiki When inspecting a public page Then AU notice and sour
   assert.match(home, /비공식/);
   assert.match(home, /비상업/);
   assert.match(home, /Unofficial-Fan-AU-Notice/);
-  assert.match(home, /원본: `docs\/game-logic\/Home\.md`/);
+  assert.match(home, /원본: `GDD\/Home\.md`/);
   assert.match(home, /커밋: `deadbeef`/);
   const notice = await readFile(join(outputDir, 'Unofficial-Fan-AU-Notice.md'), 'utf8');
   assert.match(notice, /비공식/);

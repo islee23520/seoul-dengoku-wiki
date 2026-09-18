@@ -1,3 +1,4 @@
+import { existsSync, readdirSync, statSync } from 'node:fs';
 import { mkdir, readdir, readFile, rename, writeFile } from 'node:fs/promises';
 import { basename, dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -32,11 +33,39 @@ function parseArgs(argv) {
 
 const UNEXPECTED_PROJECTION = /^(Story-Batch-B\d{3}|Monster-Batch-M\d{3}|Hostile-Group-G\d{2})\.md$/;
 
-export function projectionDestination(outDir, name) {
-  if (ISOMETRIC_DIAGRAM_ASSETS.includes(name) && basename(outDir) === 'game-logic') {
-    return join(dirname(outDir), 'assets', 'wiki', name);
+function findExistingFile(root, name) {
+  const stack = [root];
+  while (stack.length > 0) {
+    const dir = stack.pop();
+    let entries;
+    try {
+      entries = readdirSync(dir);
+    } catch {
+      continue;
+    }
+    for (const entry of entries) {
+      const path = join(dir, entry);
+      let st;
+      try {
+        st = statSync(path);
+      } catch {
+        continue;
+      }
+      if (st.isDirectory()) stack.push(path);
+      else if (st.isFile() && entry === name) return path;
+    }
   }
-  return join(outDir, name);
+  return null;
+}
+
+export function projectionDestination(outDir, name) {
+  if (ISOMETRIC_DIAGRAM_ASSETS.includes(name)) {
+    const base = basename(outDir);
+    if (base === 'game-logic') return join(dirname(outDir), 'assets', 'wiki', name);
+    if (base === 'LORE') return join(dirname(outDir), 'GAME-REFERENCE', 'assets', 'wiki', name);
+  }
+  const existing = existsSync(outDir) ? findExistingFile(outDir, name) : null;
+  return existing ?? join(outDir, name);
 }
 
 export async function unexpectedProjectionFiles(outDir, files) {

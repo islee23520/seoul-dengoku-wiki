@@ -7,8 +7,12 @@ import { fileURLToPath } from 'node:url';
 import { buildWiki } from './build-wiki.mjs';
 
 const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
-const sourceDir = join(repositoryRoot, 'Wikis', 'game-logic');
-const assetDir = join(repositoryRoot, 'Reference', 'assets', 'wiki');
+const sourceDirs = [
+  join(repositoryRoot, 'LORE'),
+  join(repositoryRoot, 'GAME-LOGIC'),
+  join(repositoryRoot, 'GDD'),
+];
+const assetDir = join(repositoryRoot, 'GAME-REFERENCE', 'assets', 'wiki');
 const temporaryRoot = await mkdtemp(join(tmpdir(), 'janseon-unity-architecture-wiki-'));
 const outputDir = join(temporaryRoot, 'wiki');
 
@@ -30,7 +34,7 @@ try {
   // buildWiki must create and claim the output root itself: a pre-existing
   // directory without the generated sentinel is refused by design.
   await buildWiki({
-    sourceDir,
+    sourceDirs,
     assetDir,
     outputDir,
     commitSha: 'architecture-contract',
