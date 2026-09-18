@@ -23,9 +23,8 @@ Unity project and its serialized runtime contract; score 8, distinct engine/buil
 - Scene, prefab, asset and serialized-reference edits use Unity APIs / `SerializedObject`, not hand-edited YAML.
 - Bootstrap owns the application scope; MainTitle and Foundation are content scenes.
 - Build settings keep Bootstrap first, then MainTitle, then Foundation.
-- The genre contract uses an orthographic camera: yaw 45, pitch 35.264, no orbit/perspective.
-- Movement has four directions; exploration and combat share a grid with 1.5-unit tiles.
-- The silhouette contract is 2.5 heads tall, four authored facings, pixel head and mesh body.
+- The strategy-map camera is a free-pan/zoom 3D view over Seoul; the battle screen is left/right side-scroll (Intent decision 10).
+- Movement rules live in the strategy map and battle systems; no shared four-direction tile grid.
 - `FoundationProjectBuilder.BuildFoundationScene` regenerates all three scenes and resets their build order.
 
 ## COMMANDS
@@ -62,7 +61,7 @@ When the change touches that system, verify the matching items:
 - `SceneManager.LoadScene*` runs only through the App scene-loader adapter.
 - Runtime has no `FindObject*` / `GameObject.Find` and no mutable static `Instance` / `Current`.
 - `Janseon.Core` stays engine-free.
-- Genre contract stays locked: yaw 45, pitch 35.264, 1.5-unit tiles, 2.5-head silhouette; JSON and C# move together.
+- Genre contract stays locked: `combatResolution: realtime-formation-card`; isometric/grid/tile/SD keys are retired; JSON and C# move together.
 - New runtime UI is uGUI; do not add UI Toolkit surfaces.
 - Runtime art slots require Node provenance plus Unity import; `Art/Staging` and quarantine paths are not runtime-reachable.
 
