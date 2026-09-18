@@ -158,6 +158,52 @@ check(
   remote || 'no origin configured',
 );
 
+// ADR-004: root 7-domain structure is locked (fail-closed).
+const ADR004_PATH = `${ADR_DIR}/ADR-004-root-domain-structure.md`;
+const adr004 = read(ADR004_PATH);
+check('ADR-004 root structure record exists', adr004 !== null, ADR004_PATH);
+
+const ALLOWED_ROOT_DIRS = new Set([
+  'GDD', 'GAME', 'GAME-LOGIC', 'GAME-REFERENCE', 'LORE', 'RESEARCH', 'TOOL',
+  'Backend', 'store', 'archive',
+]);
+const ALLOWED_ROOT_FILES = new Set([
+  '.gitattributes', '.gitignore', '.gitmodules', '.vercelignore',
+  'AGENTS.md', 'CLAUDE.md', 'CONTRIBUTING.md', 'Concept.md', 'Design.md',
+  'Intent.md', 'README.md', 'SERVICES.md', 'ToDo.md',
+  'index.html', 'package-lock.json', 'package.json', 'vercel.json',
+]);
+const LEGACY_DIRS = ['Wikis', 'Design', 'Reference', 'data', 'Research', 'Tool', 'Game'];
+let rootEntries = [];
+try {
+  rootEntries = execSync('git -c core.quotepath=off ls-files', { cwd: root, encoding: 'utf8' })
+    .split('\n')
+    .filter(Boolean);
+} catch {
+  rootEntries = [];
+}
+const topSegments = new Set(rootEntries.map((p) => p.split('/')[0]));
+const dirSegments = [...topSegments].filter((s) => !s.startsWith('.') && !s.includes('.'));
+const illegalDirs = dirSegments.filter((s) => !ALLOWED_ROOT_DIRS.has(s));
+const legacyDirs = dirSegments.filter((s) => LEGACY_DIRS.includes(s));
+check(
+  'root directories match ADR-004 allowlist',
+  illegalDirs.length === 0,
+  illegalDirs.length ? `unexpected: ${illegalDirs.join(', ')}` : `allowed dirs present: ${dirSegments.length}`,
+);
+check(
+  'legacy top-level folders absent',
+  legacyDirs.length === 0,
+  legacyDirs.length ? `legacy: ${legacyDirs.join(', ')}` : 'none',
+);
+const rootFiles = rootEntries.filter((p) => !p.includes('/'));
+const illegalFiles = rootFiles.filter((f) => !ALLOWED_ROOT_FILES.has(f));
+check(
+  'root files match ADR-004 allowlist',
+  illegalFiles.length === 0,
+  illegalFiles.length ? `unexpected: ${illegalFiles.join(', ')}` : `${rootFiles.length}/${ALLOWED_ROOT_FILES.size} allowed files`,
+);
+
 const failed = checks.filter((c) => !c.pass);
 const report = {
   checker: 'check-repo-delivery-policy',
