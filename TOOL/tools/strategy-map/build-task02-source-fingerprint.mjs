@@ -14,7 +14,9 @@ export const buildSourceFingerprint = (repoRoot, implementationCommit) => {
   if (!/^[0-9a-f]{40}$/.test(implementationCommit)) {
     throw new TypeError('implementation commit must be a lowercase 40-character SHA-1');
   }
-  execFileSync('git', ['-C', repoRoot, 'cat-file', '-e', `${implementationCommit}^{commit}`]);
+  execFileSync('git', ['-C', repoRoot, 'cat-file', '-e', `${implementationCommit}^{commit}`], {
+    stdio: 'ignore',
+  });
   const files = requiredSourcePaths.map((path) => {
     const content = readFileSync(resolve(repoRoot, path));
     return Object.freeze({ path, sha256: sha256(content) });
