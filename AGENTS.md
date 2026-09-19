@@ -61,7 +61,7 @@ seoul-kenshi/
 | Backend service | `Backend/AGENTS.md`, `Backend/server/Coordinator/` | Host-session coordinator: REST + WebSocket on Kestrel :1219, in-process identity |
 | Asset rights and reviews | `GAME-REFERENCE/assets/bom/` | Source evidence, runtime-slot records, quality gates |
 | Delivery and publishing | `GDD/adr/ADR-001-repository-delivery-policy.md` | Accepted authority over historical local-only clauses |
-| Web hub deploy | `SERVICES.md`, `index.html`, `vercel.json` | User-facing URL is always `https://seoul-kenshi.vercel.app`. Vercel project is only `seoul-kenshi` (`prj_KOgAaJkJZ7j3CrUD1eAzYtiGV5mm`, scope `makcha1`). |
+| Web hub deploy | `SERVICES.md`, `index.html` | User-facing URL is `https://seoul-dengoku.linalab.io` — self-hosted: desktop `E:\git\seoul-dengoku-web` docker (nginx + cloudflared tunnel `seoul-dengoku`), Cloudflare Access contributor gate. Legacy `seoul-kenshi.vercel.app` stays read-only until removed after migration is verified. |
 
 ## CODE MAP
 Digest LSP/ast-grep findings plus retained root symbol locations; C# LSP coverage was partial. Repo-wide reference centrality is unmeasured, not zero.
@@ -81,7 +81,7 @@ Digest LSP/ast-grep findings plus retained root symbol locations; C# LSP coverag
 ## CONVENTIONS
 - The Unity project root is `GAME/`, not the repository root. Its editor pin is an alpha release, not a generic Unity LTS target.
 - `Janseon.Core` is engine-free; Foundation integrates Core with Unity and VContainer.
-- Repository documentation is authoritative. Serve `GAME-LOGIC/site` locally (`npm run docs:dev`) and publish `https://seoul-kenshi.vercel.app`; the remote Wiki, VitePress publication and HTML mirrors are derivatives, not additional canon.
+- Repository documentation is authoritative. Serve `GAME-LOGIC/site` locally (`npm run docs:dev`) and publish `https://seoul-dengoku.linalab.io` (self-hosted via Cloudflare Tunnel); the remote Wiki, VitePress publication and HTML mirrors are derivatives, not additional canon.
 - Design pages use Korean prose, English hyphenated filenames, ordinary relative Markdown links, and GitHub image URLs with `?raw=true`; do not assume Obsidian wiki links. Canonical page names use Title-Case-With-Hyphens; new-page `_TEMPLATE.md` uses YAML title/summary/domain (design/world/rules), and existing Home has no frontmatter.
 - Repo automation is the private ESM package `TOOL/tools`; `TOOL/character-forge` and `TOOL/unity-remote` are independently versioned Git submodules. VitePress requires Node >=22 <27. This package is not game runtime code.
 
@@ -89,7 +89,7 @@ Digest LSP/ast-grep findings plus retained root symbol locations; C# LSP coverag
 - Do not label planned campaign or tactical features as shipped merely because design pages exist; even Home's implementation summary may lag code.
 - No direct push to main, force-push, or shared-history rewrite. ADR-001 requires a dedicated branch and PR, with owner-only merging.
 - Authorized origin: `https://github.com/islee23520/seoul-kenshi.git`; the unrelated shooter repository is not a delivery target. Do not publish or maintain GitHub Wiki.
-- Do not create a new Vercel project, alias, or `*.vercel.app` site for demos or worktree folders. Link and deploy only to existing `seoul-kenshi`. Nested static pages (for example `GAME-REFERENCE/portrait-demo/`) go on that hub as a subpath via the composite staging in `SERVICES.md`; never `vercel deploy` a nested folder as its own project.
+- Do not create any Vercel project, alias, or `*.vercel.app` site. The web hub is self-hosted at `seoul-dengoku.linalab.io` (see `SERVICES.md`). Nested static pages (for example `GAME-REFERENCE/portrait-demo/`) go on that hub as a subpath via the composite staging in `SERVICES.md`; never deploy a nested folder as its own site.
 - Candidate generation, provider eligibility, or showcase import does not authorize a runtime dependency.
 - Guessed rights, synthetic review hashes, model/software licenses, and zero-cost receipts are not proof of asset-output rights or actual service terms. Source-rights research is not quality approval or a legal guarantee.
 - Do not silently recover unsupported/corrupt saves: the documented save contract requires explicit errors.

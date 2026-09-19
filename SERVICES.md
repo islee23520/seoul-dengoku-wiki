@@ -1,6 +1,20 @@
 # SERVICES.md — 서비스 레이어 계약
 
-배포 사이트 `https://seoul-kenshi.vercel.app`의 구성 계약. 루트 `/`는 서비스 인덱스(`index.html`)이고, 각 서비스는 루트 바로 아래 자기 디렉터리 서브 경로로 열린다. GitHub Wiki는 유지하지 않는다. 문서 정본은 `LORE/`, 로컬 열람은 `npm run docs:dev`(VitePress), 공개 표면은 이 Vercel 도메인이다.
+배포 표면의 구성 계약. 루트 `/`는 서비스 인덱스(`index.html`)이고, 각 서비스는 루트 바로 아래 자기 디렉터리 서브 경로로 열린다. GitHub Wiki는 유지하지 않는다. 문서 정본은 `LORE/`, 로컬 열람은 `npm run docs:dev`(VitePress).
+
+## 배포 표면 (2026-09-18 전환)
+
+| 표면 | 상태 |
+|---|---|
+| `https://seoul-dengoku.linalab.io` | 정식 표면. 윈도우 호스트(desktop, Tailscale) `E:\git\seoul-dengoku-web`의 docker compose — nginx(정적 번들, `127.0.0.1:8080`) + cloudflared(Cloudflare Tunnel `seoul-dengoku`). Cloudflare Access 이메일 화이트리스트가 입장 게이트다(컨트리뷰터 전용). DNS 연결은 게이트 완료 후. |
+| `https://seoul-kenshi.vercel.app` | 구 표면. 전환 검증 후 Vercel 프로젝트(`seoul-kenshi`)를 제거한다. 그 전까지 읽기 전용으로 유지. |
+
+### 자체 호스팅 표면 갱신 절차
+
+1. `npm --prefix GAME-LOGIC/site run docs:build` — `site/{world,rules,design}` 스테이징(mount.mjs 산출물) 기준.
+2. 오버레이: 루트 `index.html`(허브)과 `GAME/play`, `GAME-REFERENCE/ui-layout-moodboard`, `GAME-REFERENCE/portrait-demo`, `GAME-REFERENCE/ui-ux-refs`, `GDD/system-design`를 dist에 사본. `design-store/`와 `hashmap.json`은 직전 dist에서 보존 이관한다(SQLite 렌더 산출물).
+3. `node GAME-LOGIC/site/scripts/gate.mjs` PASS 확인.
+4. tar로 묶어 `desktop:E:/git/seoul-dengoku-web/site`를 교체한다. Windows tar는 `E:` 절대경로를 원격 호스트로 오인하므로 상대경로로 푼다. macOS tar의 `._*` 파일은 제거한다. nginx는 바인드 마운트라 즉시 반영된다.
 
 ## 현재 구성
 
