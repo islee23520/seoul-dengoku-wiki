@@ -26,32 +26,32 @@ li { margin:6px 0; }
 <section>
 <h2>한 장</h2>
 <p class="layer">각 칸은 그 요소가 무엇인지.</p>
-<h3>그래프</h3><p>세계는 그 층들을 이은 그래프다.</p><p class="src">LORE/places/World-and-Subway-Layers.md</p>
-<h3>진실</h3><p>세계 진실 그래프는 역과 구역, 그 사이를 잇는 연결을 한꺼번에 들고 있다. 화면에는 지금 필요한 노선과 고른 역의 상세만 올린다. 서울역을 고르면 그 역의 대합실과 승강장이 펼쳐지고, 영등포에서 신도림으로 가는 터널만 따로 켜 두는 식이다.</p><p class="src">LORE/places/World-and-Subway-Layers.md</p>
-<h3>연결</h3><p>연결은 지워지지 않고 상태만 바뀐다. 정상에서 위험·통제·봉쇄로, 침수와 붕괴와 임시 복구로 넘어갈 때마다 원인을 같이 적는다. 그래서 길이 왜 끊겼는지, 무엇을 손보면 다시 열리는지를 같은 칸에서 확인할 수 있다.</p><p class="src">LORE/places/World-and-Subway-Layers.md</p>
+<h3>그래프</h3><p>세계는 그 칸들을 이은 그래프다.</p><p class="src">GAME-LOGIC/World-and-Subway-Layers.md</p>
+<h3>진실</h3><p>세계 진실 그래프는 역과 구역, 그 사이를 잇는 연결을 한꺼번에 들고 있다.</p><p class="src">GAME-LOGIC/World-and-Subway-Layers.md</p>
+<h3>연결</h3><p>연결은 지워지지 않고 상태만 바뀐다.</p><p class="src">GAME-LOGIC/World-and-Subway-Layers.md</p>
 </section>
 
 <section>
 <h2>Mechanics</h2>
 <p class="layer">규칙·동사·수치. 시스템이 가진 데이터와 알고리즘.</p>
-<ul><li><b>역</b> — 서울역 같은 거점은 `Station`으로 올라가고, 그 안의 대합실·승강장·심층은 `StationLayer`로 남는다. <span class="src">LORE/places/World-and-Subway-Layers.md</span></li>
-<li><b>층</b> — 대합실에서 승강장으로 내려가는 계단과, 환승 통로가 꺾이는 모서리가 한 그림에 겹친다. <span class="src">LORE/places/World-and-Subway-Layers.md</span></li>
-<li><b>지상</b> — 역과 붙은 지상 권역은 `SurfaceDistrict`, 영등포와 신도림 사이 이동 구간은 `TunnelSegment`다. <span class="src">LORE/places/World-and-Subway-Layers.md</span></li>
-<li><b>터널</b> — 역과 붙은 지상 권역은 `SurfaceDistrict`, 영등포와 신도림 사이 이동 구간은 `TunnelSegment`다. <span class="src">LORE/places/World-and-Subway-Layers.md</span></li>
-<li><b>수직</b> — 계단과 승강기와 환기구는 `VerticalConnector`로 붙고, 노선이 갈라지는 환승은 `Interchange`로 읽힌다. <span class="src">LORE/places/World-and-Subway-Layers.md</span></li>
-<li><b>환승</b> — 계단과 승강기와 환기구는 `VerticalConnector`로 붙고, 노선이 갈라지는 환승은 `Interchange`로 읽힌다. <span class="src">LORE/places/World-and-Subway-Layers.md</span></li></ul>
+<ul><li><b>역</b> — 서울역 같은 거점은 `Station`으로 올라가고, 그 안의 대합실·승강장·심층은 `StationLayer`로 남는다. <span class="src">GAME-LOGIC/World-and-Subway-Layers.md</span></li>
+<li><b>층</b> — 서울역 같은 거점은 `Station`으로 올라가고, 그 안의 대합실·승강장·심층은 `StationLayer`로 남는다. <span class="src">GAME-LOGIC/World-and-Subway-Layers.md</span></li>
+<li><b>지상</b> — 역과 붙은 지상 권역은 `SurfaceDistrict`, 영등포와 신도림 사이 이동 구간은 `TunnelSegment`다. <span class="src">GAME-LOGIC/World-and-Subway-Layers.md</span></li>
+<li><b>터널</b> — 역과 붙은 지상 권역은 `SurfaceDistrict`, 영등포와 신도림 사이 이동 구간은 `TunnelSegment`다. <span class="src">GAME-LOGIC/World-and-Subway-Layers.md</span></li>
+<li><b>수직</b> — 계단과 승강기와 환기구는 `VerticalConnector`로 붙고, 노선이 갈라지는 환승은 `Interchange`로 읽힌다. <span class="src">GAME-LOGIC/World-and-Subway-Layers.md</span></li>
+<li><b>환승</b> — 계단과 승강기와 환기구는 `VerticalConnector`로 붙고, 노선이 갈라지는 환승은 `Interchange`로 읽힌다. <span class="src">GAME-LOGIC/World-and-Subway-Layers.md</span></li></ul>
 </section>
 <section>
 <h2>Dynamics</h2>
 <p class="layer">그 규칙이 플레이어 입력과 만나 시간에 따라 만드는 런타임.</p>
-<ul><li><b>동적 연결</b> — 연결은 지워지지 않고 상태만 바뀐다. 정상에서 위험·통제·봉쇄로, 침수와 붕괴와 임시 복구로 넘어갈 때마다 원인을 같이 적는다. 그래서 길이 왜 끊겼는지, 무엇을 손보면 다시 열리는지를 같은 칸에서 확인할 수 있다. <span class="src">LORE/places/World-and-Subway-Layers.md</span></li>
-<li><b>화면</b> — 화면에는 지금 필요한 노선과 고른 역의 상세만 올린다. <span class="src">LORE/places/World-and-Subway-Layers.md</span></li></ul>
+<ul><li><b>동적 연결</b> — 정상에서 위험·통제·봉쇄로, 침수와 붕괴와 임시 복구로 넘어갈 때마다 원인을 같이 적는다. <span class="src">GAME-LOGIC/World-and-Subway-Layers.md</span></li>
+<li><b>화면</b> — 화면에는 지금 필요한 노선과 고른 역의 상세만 올린다. <span class="src">GAME-LOGIC/World-and-Subway-Layers.md</span></li></ul>
 </section>
 <section>
 <h2>Aesthetics</h2>
 <p class="layer">플레이어가 느끼는 반응. Sensation, Fantasy, Narrative, Challenge, Fellowship, Discovery, Expression, Submission.</p>
 <ul><li><b>Discovery</b> — 지하철망을 지상·지하 다층 전략 그래프로 다루는 <span class="src">Concept.md</span></li>
-<li><b>Fantasy</b> — 자원 수집, 태양광, 장거리 관측 <span class="src">LORE/places/World-and-Subway-Layers.md</span></li></ul>
+<li><b>Fantasy</b> — 자원 수집, 태양광, 장거리 관측 <span class="src">GAME-LOGIC/World-and-Subway-Layers.md</span></li></ul>
 </section>
 </main>
 </body>

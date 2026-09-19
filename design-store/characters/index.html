@@ -26,33 +26,33 @@ li { margin:6px 0; }
 <section>
 <h2>한 장</h2>
 <p class="layer">각 칸은 그 요소가 무엇인지.</p>
-<h3>인물</h3><p>이름 있는 인물은 능력, 생업, 부상, 소속, 직위, 신념과 주요 사건 기억을 가진다. 모든 인물 쌍의 관계를 저장하지 않고, 친족, 사제, 지휘, 계약, 협력과 원한처럼 결정을 바꾸는 관계만 남긴다.</p><p class="src">LORE/characters/Characters-Factions-and-Professions.md</p>
-<h3>파티</h3><p>파티는 캠페인에서 동행·물자·부상자·지휘를 묶는 단위다.</p><p class="src">LORE/characters/Characters-Factions-and-Professions.md</p>
-<h3>계승</h3><p>혈통뿐 아니라 양자, 사제, 직능 길드, 선거와 임명이 지도부 계승 경로가 된다. 지도자의 죽음은 곧바로 세력 삭제가 아니라 직위 공백, 경쟁 후보와 정책 분기를 연다.</p><p class="src">LORE/characters/Characters-Factions-and-Professions.md</p>
+<h3>인물</h3><p>이름 있는 인물은 능력, 생업, 부상, 소속, 직위, 신념과 주요 사건 기억을 가진다.</p><p class="src">GAME-LOGIC/Characters-Factions-and-Professions.md</p>
+<h3>파티</h3><p>파티는 이동과 전투의 기본 단위로 읽힌다.</p><p class="src">GAME-LOGIC/Characters-Factions-and-Professions.md</p>
+<h3>계승</h3><p>혈통뿐 아니라 양자, 사제, 직능 길드, 선거와 임명이 지도부 계승 경로가 된다.</p><p class="src">GAME-LOGIC/Characters-Factions-and-Professions.md</p>
 </section>
 
 <section>
 <h2>Mechanics</h2>
 <p class="layer">규칙·동사·수치. 시스템이 가진 데이터와 알고리즘.</p>
-<ul><li><b>정비사</b> — 전력, 셔터, 승강기, 차량 수리 <span class="src">LORE/characters/Characters-Factions-and-Professions.md</span></li>
-<li><b>물류상</b> — 물자 운송, 시장 연결, 통행 계약 <span class="src">LORE/characters/Characters-Factions-and-Professions.md</span></li>
-<li><b>의무원</b> — 치료, 방역, 의약품 생산 <span class="src">LORE/characters/Characters-Factions-and-Professions.md</span></li>
-<li><b>순찰대</b> — 경로 안전, 호위, 질서 유지 <span class="src">LORE/characters/Characters-Factions-and-Professions.md</span></li>
-<li><b>전령</b> — 정보 전달, 외교 문서, 소문 수집 <span class="src">LORE/characters/Characters-Factions-and-Professions.md</span></li>
-<li><b>탐사원</b> — 폐쇄 구간 조사, 지도 갱신 <span class="src">LORE/characters/Characters-Factions-and-Professions.md</span></li>
-<li><b>기록관</b> — 법통, 계약, 사건 원장 관리 <span class="src">LORE/characters/Characters-Factions-and-Professions.md</span></li></ul>
+<ul><li><b>정비사</b> — 전력, 셔터, 승강기, 차량 수리 <span class="src">GAME-LOGIC/Characters-Factions-and-Professions.md</span></li>
+<li><b>물류상</b> — 물자 운송, 시장 연결, 통행 계약 <span class="src">GAME-LOGIC/Characters-Factions-and-Professions.md</span></li>
+<li><b>의무원</b> — 치료, 방역, 의약품 생산 <span class="src">GAME-LOGIC/Characters-Factions-and-Professions.md</span></li>
+<li><b>순찰대</b> — 경로 안전, 호위, 질서 유지 <span class="src">GAME-LOGIC/Characters-Factions-and-Professions.md</span></li>
+<li><b>전령</b> — 정보 전달, 외교 문서, 소문 수집 <span class="src">GAME-LOGIC/Characters-Factions-and-Professions.md</span></li>
+<li><b>탐사원</b> — 폐쇄 구간 조사, 지도 갱신 <span class="src">GAME-LOGIC/Characters-Factions-and-Professions.md</span></li>
+<li><b>기록관</b> — 법통, 계약, 사건 원장 관리 <span class="src">GAME-LOGIC/Characters-Factions-and-Professions.md</span></li></ul>
 </section>
 <section>
 <h2>Dynamics</h2>
 <p class="layer">그 규칙이 플레이어 입력과 만나 시간에 따라 만드는 런타임.</p>
-<ul><li><b>관계</b> — 이름 있는 인물은 능력, 생업, 부상, 소속, 직위, 신념과 주요 사건 기억을 가진다. 모든 인물 쌍의 관계를 저장하지 않고, 친족, 사제, 지휘, 계약, 협력과 원한처럼 결정을 바꾸는 관계만 남긴다. <span class="src">LORE/characters/Characters-Factions-and-Professions.md</span></li>
-<li><b>승계</b> — 파티는 캠페인에서 동행·물자·부상자·지휘를 묶는 단위다. 리더, 역할, 물자, 부상자, 현재 임무와 합법적인 위치를 가진다. 전장에서는 참가한 인물과 병력이 부대로 편성되고, 플레이어는 그 부대에 명령을 내린다. 영웅을 직접 조작하지 않으며, 파티 인원이 전장 병력 정원을 뜻하지는 않는다. 이 파티의 닫힌 전투에서만 일시정지 중 명령을 허용한다. 캠페인 세계나 다른 파티의 시간은 멈추지 않는다. 리더가 죽거나 포획되면 정해진 승계 규칙으로 새 리더를 고르고, 고를 수 없으면 파티를 해산하거나 포로 집단으로 바꾼다. <span class="src">LORE/characters/Characters-Factions-and-Professions.md</span></li></ul>
+<ul><li><b>관계</b> — 모든 인물 쌍의 관계를 저장하지 않고, 친족, 사제, 지휘, 계약, 협력과 원한처럼 결정을 바꾸는 관계만 남긴다. <span class="src">GAME-LOGIC/Characters-Factions-and-Professions.md</span></li>
+<li><b>승계</b> — 리더가 죽거나 포획되면 정해진 승계 규칙으로 새 리더를 고르고, 고를 수 없으면 파티를 해산하거나 포로 집단으로 바꾼다. <span class="src">GAME-LOGIC/Characters-Factions-and-Professions.md</span></li></ul>
 </section>
 <section>
 <h2>Aesthetics</h2>
 <p class="layer">플레이어가 느끼는 반응. Sensation, Fantasy, Narrative, Challenge, Fellowship, Discovery, Expression, Submission.</p>
-<ul><li><b>Fellowship</b> — RPG는 그 사람의 손과 관계와 무공이다. 수리, 의약, 운송, 호위, 교섭, 탐사도 칼만큼 자란다. 훈련은 한 일이다. 맞으면 몸이 세지고, 고치면 손이 는다. 스킬 트리를 열지 않는다. <span class="src">GDD/Game-Thesis.md</span></li>
-<li><b>Fantasy</b> — 실패는 세계에 남는다. 부상, 포획, 죽음, 물자, 원한. 인물이 정치의 단위다. 품계와 기억과 후계가 나라의 손을 바꾼다. 노선이 땅이자 물자다. 모든 변화는 원장으로 추적된다. <span class="src">GDD/Game-Thesis.md</span></li></ul>
+<ul><li><b>Fellowship</b> — 수리, 의약, 운송, 호위, 교섭, 탐사도 칼만큼 자란다. <span class="src">GAME-LOGIC/Game-Thesis.md</span></li>
+<li><b>Fantasy</b> — 무명으로 흘러드는 것은 착생 갈래 하나다. 혈연과 소속을 가진 몸으로 시작할 수도 있다. <span class="src">GAME-LOGIC/Game-Thesis.md</span></li></ul>
 </section>
 </main>
 </body>
