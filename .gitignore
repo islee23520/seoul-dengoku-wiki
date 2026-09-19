@@ -123,3 +123,7 @@ GDD/design-store/*.receipt.json
 # Local pilgrimage bake attempts (receipts stay tracked)
 art-process/node_modules/
 art-process/out/**/*.png
+
+# generated wiki output & tool dirs
+/Wikis/
+/.zcode/
