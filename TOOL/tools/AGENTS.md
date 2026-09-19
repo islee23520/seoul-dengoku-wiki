@@ -11,6 +11,7 @@ Repository-only ESM/Python tooling, not shipped with Unity; score 12, distinct b
 - `architecture/`, `policy/`: Unity ownership and delivery-authority gates.
 - `unity/`: headless/remote wrappers and UI evidence validator.
 - `design-store/`, `store/`: SQLite canon and source-bound capture; `design-store/` has own child guidance.
+- `deploy/`: Docker 기반 자체 호스팅 허브 빌드·Windows 원자 배포·등록 페이지 전수 검증.
 - `cast/`: roster draft generators.
 
 ## WHERE TO LOOK
@@ -27,6 +28,7 @@ Repository-only ESM/Python tooling, not shipped with Unity; score 12, distinct b
 | Unity architecture gate | `architecture/check-unity-architecture.mjs` | C# scans plus scene YAML/build order |
 | Delivery-policy consistency | `policy/check-repo-delivery-policy.mjs` | Approved plan, ADR-001, live origin |
 | Capture evidence validation | `unity/validate-ui-captures.mjs` | PNG content and source-bound receipts |
+| Self-hosted hub deployment | `deploy/hub-pages.json`, `deploy/build-hub-docker.mjs`, `deploy/deploy-hub.mjs` | Read-only Docker build, manifest-driven page staging, Windows nginx atomic swap |
 | Unity remote setup/start/CLI | npm `remote:setup`, `remote:start`, `remote:cli` | Wrappers over `unity/` scripts; token in `Game/.unity-remote-token` |
 | LFS hydration gate | `check-lfs-hydration.mjs` | Pointers in `GAME/Assets` or `GAME-REFERENCE/assets` fail closed |
 | Art planning and provenance | `art/AGENTS.md` | Separate domain guide |
@@ -55,6 +57,9 @@ node TOOL/tools/architecture/check-unity-architecture.mjs
 node TOOL/tools/architecture/test-check-unity-architecture.mjs
 node TOOL/tools/policy/check-repo-delivery-policy.mjs
 node TOOL/tools/unity/test-validate-ui-captures.mjs
+npm --prefix TOOL/tools run deploy:hub:test
+npm --prefix TOOL/tools run deploy:hub:build
+npm --prefix TOOL/tools run deploy:hub -- --host oliver@100.77.98.25
 ```
 
 ## ANTI-PATTERNS

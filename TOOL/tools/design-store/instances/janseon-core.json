@@ -13,7 +13,7 @@
       },
       {
         "heading": "시작",
-        "body": "한 역 사회에 흘러든 무명 인물이며, 작은 파티를 꾸리고 생업과 의뢰를 수행하면서 이름을 얻습니다.",
+        "body": "무명으로 흘러드는 것은 착생 갈래 하나다. 혈연과 소속을 가진 몸으로 시작할 수도 있다.",
         "sourcePath": "GAME-LOGIC/Game-Thesis.md"
       },
       {
@@ -23,12 +23,12 @@
       },
       {
         "heading": "격자",
-        "body": "한 타일은 1.5m이며 일반 통로는 최소 두 타일 폭입니다.",
+        "body": "전략맵은 3D 하이트맵으로 서울 전역을 세운다(결정 10).",
         "sourcePath": "GAME-LOGIC/Game-Thesis.md"
       },
       {
         "heading": "루프",
-        "body": "교섭, 거래, 작업, 은신, 회피 또는 전투를 선택합니다.",
+        "body": "마주치면 말하거나 숨거나 붙는다.",
         "sourcePath": "GAME-LOGIC/Campaign-Loop.md"
       },
       {
@@ -38,7 +38,7 @@
       },
       {
         "heading": "정산",
-        "body": "부상, 포획, 사망, 물자 손실과 관계 악화가 정산됩니다.",
+        "body": "실패는 세계에 남는다. 부상, 포획, 죽음, 물자, 원한.",
         "sourcePath": "GAME-LOGIC/Game-Thesis.md"
       },
       {
@@ -63,7 +63,7 @@
       },
       {
         "heading": "요구 카드 부여 #98",
-        "body": "보급, 동맹, 퇴로와 거점 상태가 카드와 사기로 전장에 들어옵니다.",
+        "body": "전투는 붙기 전에 자리를 고르고, 붙은 뒤에는 몸이 말한다. 카드는 타이밍이지 한 칸 이동이 아니다.",
         "sourcePath": "GAME-LOGIC/Game-Thesis.md"
       },
       {
@@ -90,12 +90,12 @@
       "name": "세계 그래프"
     },
     {
-      "body": "탐색, 상호작용과 전투는 같은 4방향 타일 격자에서 이어집니다.",
+      "body": "전략맵은 3D 하이트맵으로 서울 전역을 세운다(결정 10).",
       "sourcePath": "GAME-LOGIC/Game-Thesis.md",
       "name": "격자"
     },
     {
-      "body": "한 타일은 1.5m이며 일반 통로는 최소 두 타일 폭입니다.",
+      "body": "전략맵은 3D 하이트맵으로 서울 전역을 세운다(결정 10).",
       "sourcePath": "GAME-LOGIC/Game-Thesis.md",
       "name": "타일"
     },
@@ -125,7 +125,7 @@
       "name": "텍스트"
     },
     {
-      "body": "캐릭터는 해당 시점에 맞춘 2.5등신 SD 실루엣과 네 방향 표현을 사용합니다.",
+      "body": "전투 화면은 캐릭터가 왼쪽·오른쪽만 보는 사이드스크롤이다. 사람과 소품은 오드랜드 원본 자산을 그대로 쓴다.",
       "sourcePath": "GAME-LOGIC/Game-Thesis.md",
       "name": "실루엣"
     },
@@ -142,22 +142,22 @@
       "name": "전투 형태"
     },
     {
-      "body": "정보, 의뢰, 계약과 관계 문제를 살핍니다.",
+      "body": "거점에서 길을 나선다. 반드시 돌아오라는 뜻이 아니다.",
       "sourcePath": "GAME-LOGIC/Campaign-Loop.md",
       "name": "거점 할 일"
     },
     {
-      "body": "파티, 장비, 식량, 의약품, 경로와 통행권을 준비합니다.",
+      "body": "준비는 같다. 사람, 식량, 약, 통행, 관계.",
       "sourcePath": "GAME-LOGIC/Campaign-Loop.md",
       "name": "원정 준비"
     },
     {
-      "body": "교섭, 거래, 작업, 은신, 회피 또는 전투를 선택합니다.",
+      "body": "마주치면 말하거나 숨거나 붙는다.",
       "sourcePath": "GAME-LOGIC/Campaign-Loop.md",
       "name": "조우 선택"
     },
     {
-      "body": "전열, 후열, 측면에 분대를 배치하고 4방향 정면을 정합니다.",
+      "body": "전열, 후열, 측면에 분대를 배치하고 정면(왼쪽·오른쪽)을 정합니다.",
       "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md",
       "name": "진형"
     },
@@ -172,12 +172,12 @@
       "name": "카드 소유"
     },
     {
-      "body": "부상, 시간, 물자, 관계, 평판, 거점과 노선 상태가 바뀝니다.",
+      "body": "결과가 원장에 남는다. 부상, 시간, 물자, 평판, 역의 주인.",
       "sourcePath": "GAME-LOGIC/Campaign-Loop.md",
       "name": "결과 반영"
     },
     {
-      "body": "보급, 동맹, 퇴로와 거점 상태가 카드와 사기로 전장에 들어옵니다.",
+      "body": "전투는 붙기 전에 자리를 고르고, 붙은 뒤에는 몸이 말한다. 카드는 타이밍이지 한 칸 이동이 아니다.",
       "sourcePath": "GAME-LOGIC/Game-Thesis.md",
       "name": "전략 결과"
     }
@@ -190,22 +190,22 @@
     },
     {
       "kind": "Fantasy",
-      "body": "한 역 사회에 흘러든 무명 인물이며, 작은 파티를 꾸리고 생업과 의뢰를 수행하면서 이름을 얻습니다.",
+      "body": "무명으로 흘러드는 것은 착생 갈래 하나다. 혈연과 소속을 가진 몸으로 시작할 수도 있다.",
       "sourcePath": "GAME-LOGIC/Game-Thesis.md"
     },
     {
       "kind": "Narrative",
-      "body": "노선 연합, 독립 역 사회, 지상·지하 공동체, 교역망 패권, 기술 복구 체제처럼 플레이 과정에서 형성된 정통성에 따라 여러 질서가 등장합니다.",
+      "body": "서울을 한 나라로 모으는 결말만 두지 않는다. 노선 연합, 독립 역, 강단의 치, 교역망, 기술 복구. 플레이가 만든 정통성이 질서가 된다.",
       "sourcePath": "GAME-LOGIC/Game-Thesis.md"
     },
     {
       "kind": "Challenge",
-      "body": "보급, 동맹, 퇴로와 거점 상태가 카드와 사기로 전장에 들어옵니다.",
+      "body": "전투는 붙기 전에 자리를 고르고, 붙은 뒤에는 몸이 말한다. 카드는 타이밍이지 한 칸 이동이 아니다.",
       "sourcePath": "GAME-LOGIC/Game-Thesis.md"
     },
     {
       "kind": "Fellowship",
-      "body": "수리, 의료, 운송, 경비, 교섭과 탐사도 전투만큼 중요한 성장 경로입니다.",
+      "body": "RPG는 그 사람의 손과 관계와 무공이다. 수리, 의약, 운송, 호위, 교섭, 탐사도 칼만큼 자란다.",
       "sourcePath": "GAME-LOGIC/Game-Thesis.md"
     },
     {
@@ -215,7 +215,7 @@
     },
     {
       "kind": "Expression",
-      "body": "직위, 관계, 기억과 계승이 세력의 행동을 바꿉니다.",
+      "body": "인물이 정치의 단위다. 품계와 기억과 후계가 나라의 손을 바꾼다.",
       "sourcePath": "GAME-LOGIC/Game-Thesis.md"
     },
     {

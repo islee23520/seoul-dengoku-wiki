@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { mkdirSync, readdirSync, readFileSync, statSync } from 'node:fs';
+import { mkdirSync, readdirSync, readFileSync, rmSync, statSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
@@ -120,15 +120,19 @@ if (leaked.length) {
 const outRoot = join(repoRoot, 'GDD/design-store');
 const dbPath = join(outRoot, DB_NAME);
 mkdirSync(outRoot, { recursive: true });
+for (const name of readdirSync(outRoot)) {
+  if (name === 'AGENTS.md') continue;
+  rmSync(join(outRoot, name), { recursive: true, force: true });
+}
 for (const document of documents) {
   putDocument({ dbPath, document });
 }
 const ingested = ingestCanonDir({
   dbPath,
   canonDomains: [
-    { root: join(repoRoot, 'LORE'), prefix: 'LORE' },
-    { root: join(repoRoot, 'GAME-LOGIC'), prefix: 'GAME-LOGIC', exclude: (rel) => rel.startsWith('site/') },
-    { root: join(repoRoot, 'GDD'), prefix: 'GDD', exclude: (rel) => rel.includes('/') },
+    { root: join(repoRoot, 'LORE'), prefix: 'LORE', exclude: (rel) => rel.endsWith('AGENTS.md') },
+    { root: join(repoRoot, 'GAME-LOGIC'), prefix: 'GAME-LOGIC', exclude: (rel) => rel.startsWith('site/') || rel.startsWith('wiki-react/') || rel.endsWith('AGENTS.md') },
+    { root: join(repoRoot, 'GDD'), prefix: 'GDD', exclude: (rel) => rel.includes('/') || rel === 'AGENTS.md' },
   ],
 });
 exportIndexPage({ dbPath, outPath: join(outRoot, 'index.html') });
