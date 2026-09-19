@@ -107,6 +107,12 @@ namespace Janseon.Foundation.Tests
         }
 
         [Test]
+        public void DefaultPlaceIdReportsInvalid()
+        {
+            Assert.IsFalse(default(PlaceId).IsValid);
+        }
+
+        [Test]
         public void IdenticalDuplicateIsIdempotent()
         {
             var definition = new PlaceDefinition(
@@ -181,6 +187,8 @@ namespace Janseon.Foundation.Tests
             Directory.CreateDirectory(Path.GetDirectoryName(outputPath));
             var json = new StringBuilder();
             json.AppendLine("{");
+            json.AppendLine("  \"schema_version\": \"task02-manual-place-id.v2\",");
+            json.AppendLine("  \"behavior_contract_version\": \"place-identity.v2\",");
             json.AppendLine("  \"implementation_commit\": \"" + implementationCommit + "\",");
             json.AppendLine("  \"source_manifest_sha256\": \"" + sourceManifestSha256 + "\",");
             json.AppendLine("  \"canonical_id\": \"" + id + "\",");
