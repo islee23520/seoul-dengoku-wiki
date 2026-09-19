@@ -25,7 +25,7 @@ Unknown kinds are invalid. Store them in `aesthetics[].kind` exactly.
 
 ## Fill rule
 
-Write into `Tool/tools/design-store` documents:
+Write into `Tool/design-store` documents:
 
 - `mechanics[].body` + `sourcePath`
 - `dynamics[].body` + `sourcePath`
@@ -41,4 +41,4 @@ Never fill a slot with “not X”, “없습니다”, “아닌”, missing li
 
 MDA layers are vocabulary, not sprint tickets. Each filled slot must name a GitHub requirements issue when the slot is still open work (`Wikis/game-logic/Design-Requirements.md`). Do not treat a mechanics paragraph as a Unity module.
 
-Then `node Tool/tools/design-store/mda-store.mjs put --db <db> --json <instance.json>`.
+Then `node Tool/design-store/mda-store.mjs put --db <db> --json <instance.json>`.
