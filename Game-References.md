@@ -131,26 +131,26 @@
 | Mindustry | 섹터↔배틀 2층(전투 중 동결), 캠페인 턴 120초·이동평균 생산, 일시정지=시뮬 스킵 | Campaign/Battle |
 | Warzone 2100 | 계급 임계표+판정 보정 레벨, 지휘 정원 6+2×level·반경 r[rank]², 부품형 연구 | Battle/Character |
 
-메커니즘 단위 인용은 [차용 메커니즘 총람 §14](../GAME-LOGIC/Ref-Mechanism-Index.md)의 오픈소스 섹션에, 전체 원문은 저장소 내부 조사 문서에 있다.
+메커니즘 단위 인용은 [차용 메커니즘 총람 §14](references/Ref-Mechanism-Index.md)의 오픈소스 섹션에, 전체 원문은 저장소 내부 조사 문서에 있다.
 
 ## 상세 백과사전 (위키 페이지)
 
 각 게임의 전체 메커니즘은 다음 위키 페이지에서 열람할 수 있다:
 
-- [차용 메커니즘 총람](../GAME-LOGIC/Ref-Mechanism-Index.md) — [REF:] 인용 체계 전체
-- [교차 종합 매트릭스](../GAME-LOGIC/Ref-Cross-Synthesis.md) — 7차원 비교와 잔선 권고
-- [K-시스템](../GAME-LOGIC/Ref-K-System.md) — 떠돌이 생존·정착 진행 (13 시작·33 능력·전투 공식)
-- [배틀 브라더즈](../GAME-LOGIC/Ref-Battle-Brothers.md) — 용병회사 경제 (특전 50개·위기 4종)
-- [크루세이더 킹즈 3](../GAME-LOGIC/Ref-Crusader-Kings-3.md) — 인물 중심 대전략 (계승·왕조·전쟁)
-- [파이어 엠블렘·FFT](../GAME-LOGIC/Ref-Fire-Emblem-FFT.md) — 전술 전투 문법 (직업 20개·CT·궁합)
-- [파랜드·창세기전·트라이앵글](../GAME-LOGIC/Ref-Farland-Wog-Triangle.md) — 한국·일본 SRPG (인터미션·신념·투표)
-- [유니콘 오버로드](../GAME-LOGIC/Ref-Unicorn-Overlord.md) — 부대 편성 SRPG (명성·Tactics 프로그래밍)
-- [배너로드](../GAME-LOGIC/Ref-Bannerlord.md) — 샌드박스 왕국 (클랜 티어·군단·공성)
-- [신장의야망](../GAME-LOGIC/Ref-Nobunagas-Ambition.md) — 코에이 대전략 (내정·행동력·전투)
-- [태합입지전](../GAME-LOGIC/Ref-Taikou-Risshiden.md) — 라이프시물레이션 (생업·직위·운영권)
-- [삼국지](../GAME-LOGIC/Ref-Three-Kingdoms.md) — 코에이 대전략 (내정·병참·색칠·외교)
-- [XCOM 2](../GAME-LOGIC/Ref-XCOM-2.md) — 양층 시간 압박 (전략 doom timer × 전술 턴제한)
-- [다키스트 던전](../GAME-LOGIC/Ref-Darkest-Dungeon.md) — 마모 철학 (스트레스 2중HP·괴벽·광원)
-- [인투 더 브리치](../GAME-LOGIC/Ref-Into-The-Breach.md) — 완전 정보 전술 (적 의도 예고·무확률 설계)
-- [Songs of Silence](../GAME-LOGIC/Ref-Songs-of-Silence.md) — 작품: 지도 턴 4X + 실시간 자동 전투 + 영웅 카드 (2026-09-07 조사 추가. 현재 잔선 목표는 부대 지휘)
-- [라벨렌 전기](../GAME-LOGIC/Ref-Ravelen-Chronicles.md) — 한국어 웹 SRPG 역설계: 사기·항복·지휘조·인연·병참·전투 공식 (2026-09-07 추가)
+- [차용 메커니즘 총람](references/Ref-Mechanism-Index.md) — [REF:] 인용 체계 전체
+- [교차 종합 매트릭스](references/Ref-Cross-Synthesis.md) — 7차원 비교와 잔선 권고
+- [K-시스템](references/Ref-K-System.md) — 떠돌이 생존·정착 진행 (13 시작·33 능력·전투 공식)
+- [배틀 브라더즈](references/Ref-Battle-Brothers.md) — 용병회사 경제 (특전 50개·위기 4종)
+- [크루세이더 킹즈 3](references/Ref-Crusader-Kings-3.md) — 인물 중심 대전략 (계승·왕조·전쟁)
+- [파이어 엠블렘·FFT](references/Ref-Fire-Emblem-FFT.md) — 전술 전투 문법 (직업 20개·CT·궁합)
+- [파랜드·창세기전·트라이앵글](references/Ref-Farland-Wog-Triangle.md) — 한국·일본 SRPG (인터미션·신념·투표)
+- [유니콘 오버로드](references/Ref-Unicorn-Overlord.md) — 부대 편성 SRPG (명성·Tactics 프로그래밍)
+- [배너로드](references/Ref-Bannerlord.md) — 샌드박스 왕국 (클랜 티어·군단·공성)
+- [신장의야망](references/Ref-Nobunagas-Ambition.md) — 코에이 대전략 (내정·행동력·전투)
+- [태합입지전](references/Ref-Taikou-Risshiden.md) — 라이프시물레이션 (생업·직위·운영권)
+- [삼국지](references/Ref-Three-Kingdoms.md) — 코에이 대전략 (내정·병참·색칠·외교)
+- [XCOM 2](references/Ref-XCOM-2.md) — 양층 시간 압박 (전략 doom timer × 전술 턴제한)
+- [다키스트 던전](references/Ref-Darkest-Dungeon.md) — 마모 철학 (스트레스 2중HP·괴벽·광원)
+- [인투 더 브리치](references/Ref-Into-The-Breach.md) — 완전 정보 전술 (적 의도 예고·무확률 설계)
+- [Songs of Silence](references/Ref-Songs-of-Silence.md) — 작품: 지도 턴 4X + 실시간 자동 전투 + 영웅 카드 (2026-09-07 조사 추가. 현재 잔선 목표는 부대 지휘)
+- [라벨렌 전기](references/Ref-Ravelen-Chronicles.md) — 한국어 웹 SRPG 역설계: 사기·항복·지휘조·인연·병참·전투 공식 (2026-09-07 추가)

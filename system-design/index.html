@@ -237,8 +237,8 @@
       근거:
       <code>GDD/Home.md</code>,
       <code>GDD/Game-Thesis.md</code>,
-      <code>GAME-LOGIC/Unity-Architecture.md</code>,
-      <code>GAME-LOGIC/Unity-System-Design.md</code>,
+      <code>GDD/architecture/Unity-Architecture.md</code>,
+      <code>GDD/architecture/Unity-System-Design.md</code>,
       <code>Concept.md</code>
     </p>
   </header>
@@ -323,7 +323,7 @@
         </button>
         <div class="layer-detail" id="d-data">
           규칙이 아니라 에디터에서 찍는 데이터다. Repository 인터페이스와 DTO는 Core 쪽에 두고, 파일·Unity API 구현만 어댑터가 갖는다.
-          근거: <span class="path">GAME-LOGIC/Unity-Architecture.md</span> 영역별 책임 표,
+          근거: <span class="path">GDD/architecture/Unity-Architecture.md</span> 영역별 책임 표,
           <span class="path">Unity-System-Design.md</span> Repository 경계.
         </div>
         <button class="layer" data-layer="foundation" type="button">
@@ -375,7 +375,7 @@
               </tr>
             </tbody>
           </table>
-          <p class="src"><code>GAME/AGENTS.md</code> · <code>GAME/ProjectSettings/EditorBuildSettings.asset</code> · <code>GAME-LOGIC/Unity-System-Design.md</code> 씬 소유권.</p>
+          <p class="src"><code>GAME/AGENTS.md</code> · <code>GAME/ProjectSettings/EditorBuildSettings.asset</code> · <code>GDD/architecture/Unity-System-Design.md</code> 씬 소유권.</p>
         </div>
         <div>
           <p>설계 초안 표는 Booting→Foundation 직행이었다. 코드는 타이틀 lease가 생겨 <strong>Booting에서 OpenMainTitle만</strong> 받는다. SceneLoadSucceeded enum은 있으나 전이표는 쓰지 않고, ready 뒤 <code>TryCommitPendingTarget()</code>가 안정 상태로 옮긴다.</p>
@@ -406,8 +406,7 @@
     <section id="loop">
       <h2>캠페인 루프를 코드 단계로 옮기는 방식</h2>
       <p><span class="badge partial">현재 POC 보드</span> 아래 여섯 칸과 아이소 그림은 Unity POC의 거점 왕복이다. 원정 설계의 결말은 귀환·정착·정복·방랑·교역이며, 정산이 곧 귀환은 아니다.</p>
-      <img class="wiki" src="../../GAME-REFERENCE/assets/wiki/isometric-campaign-loop.svg" alt="출격하고 돌아오는 여섯 단계 아이소 그림">
-      <p>디자인 여섯 단계(<code>GAME-LOGIC/Campaign-Loop.md</code>)는 <code>CampaignStage</code> enum과 명령 종류로 그대로 옮겼다. 규모(16국, 하루/주 경제)는 아직 없다.</p>
+      <p>디자인 여섯 단계(<code>GDD/rules/Campaign-Loop.md</code>)는 <code>CampaignStage</code> enum과 명령 종류로 그대로 옮겼다. 규모(16국, 하루/주 경제)는 아직 없다.</p>
       <div class="loop" id="loop-stages">
         <button class="stage-btn" type="button" data-stage="0" aria-pressed="true">1 거점 준비<small>BasePreparation · Depart / Rest</small></button>
         <button class="stage-btn" type="button" data-stage="1">2 원정<small>ExpeditionTravel · Travel</small></button>
@@ -423,7 +422,6 @@
     <section id="world">
       <h2>월드맵 — 노선 그래프, 층, 격자</h2>
       <p>세계 진실은 역과 연결의 그래프다. <span class="badge ship">현재 POC</span> 화면은 지금 필요한 노선만 보여 주고, 역을 고르면 같은 그래프에서 4방향 격자를 펼친다. 대각 입력은 행동을 쓰지 않고 거절한다. 이 격자 문법은 POC 측정이며 2026-09-19 목표 전장이 아니다.</p>
-      <img class="wiki" src="../../GAME-REFERENCE/assets/wiki/isometric-subway-layers.svg" alt="지하철 다층 공간의 층과 시야">
       <div class="grid-2">
         <article class="card">
           <h3>지금 코드에 있는 지도</h3>
@@ -536,7 +534,6 @@
         화면 초안은 <a href="total-war-ui/">total-war-ui</a>.
       </div>
       <p><span class="badge ship">아래는 현재 Unity POC 측정</span> 카메라를 바꾸지 않는다. 탐색에 쓰던 고정 직교 아이소(yaw 45°, pitch 35.264°)와 1.5m 칸 위에서 시간만 30Hz 틱으로 흐른다. 병사 한 명을 한 칸씩 옮기는 턴제가 아니다. 이 아이소·카드 수치는 새 목표가 아니다.</p>
-      <img class="wiki" src="../../GAME-REFERENCE/assets/wiki/isometric-realtime-formation-card-battle.svg" alt="실시간 진형·카드 전투 아이소">
       <div class="grid-2">
         <article class="card">
           <h3>한 판이 시작될 때 (POC)</h3>
@@ -561,7 +558,7 @@
           </ul>
           <p>문서의 전장 원형(작은 역사, 환승역, 종착역, 터널, 지상 폐허, 차량기지, 한강 횡단)은 설계다. 런타임은 12×8 또는 Heightmap 크기만 연다.</p>
           <p><span class="badge plan">POC 미완 / 목표 문서</span> 분대 Move/Attack/SetFacing은 목표 부대 지휘와 맞닿는다. 카드 HUD·0..4 집계 표시는 POC 계약이다. 정산은 논리 UnitId와 남은 HP만 본다.</p>
-          <p class="src"><code>GAME-LOGIC/Realtime-Formation-Card-Battle.md</code> · <code>GAME-LOGIC/Strategy-Battle-Roundtrip.md</code> · <code>Intent.md</code> 결정 3(카드, POC) · 2026-09-19 부대 지휘</p>
+          <p class="src"><code>GDD/rules/Realtime-Formation-Card-Battle.md</code> · <code>GDD/rules/Strategy-Battle-Roundtrip.md</code> · <code>Intent.md</code> 결정 3(카드, POC) · 2026-09-19 부대 지휘</p>
         </article>
       </div>
     </section>
@@ -590,7 +587,7 @@
           </ul>
         </article>
       </div>
-      <p class="src"><code>GAME-LOGIC/Save-and-Determinism.md</code> · <code>GAME-LOGIC/Unity-System-Design.md</code> 저장과 결정성 · <code>ToDo.md</code> 비목표. 목표 문장은 전투 턴 경계를 만들지 않는다.</p>
+      <p class="src"><code>GDD/rules/Save-and-Determinism.md</code> · <code>GDD/architecture/Unity-System-Design.md</code> 저장과 결정성 · <code>ToDo.md</code> 비목표. 목표 문장은 전투 턴 경계를 만들지 않는다.</p>
     </section>
 
     <section id="status">
@@ -691,7 +688,7 @@
 
   <footer>
     근거를 읽은 날짜 기준 작업 사본. 제품 코드를 이 폴더가 바꾸지 않는다.
-    위키 그림은 <code>GAME-REFERENCE/assets/wiki/</code>의 기존 SVG를 상대 경로로 연다. 아이소 그림은 POC 기록이다.
+    폐기된 옛 참조 그림은 표시하지 않는다. 이 보고서는 코드·정본 경로와 대화형 표만 사용한다.
   </footer>
 
   <script>

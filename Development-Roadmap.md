@@ -10,7 +10,7 @@
 
 전투 카메라와 일시정지는 질문 시간 만료 뒤 채택한 설계 기본값이며, 소유자가 명시한 결정이 아니다. 카메라는 팬·오빗·줌이 가능한 3D 자유 지휘 시점이다. 각도·FOV 수치는 없다. 일시정지는 그 파티의 닫힌 전투만 멈추고, 정지 중 미리보기·확정을 허용한다. 수락된 명령은 재개 뒤 다음 시뮬레이션 단계에서 입력 순서대로 현재 지시를 교체한다. 감속·배속·명령 큐는 없다. 결정 10의 사이드스크롤을 새 목표 시점으로 다시 쓰지 않는다.
 
-기준 조사 원문은 [Songs of Silence](../GAME-LOGIC/Ref-Songs-of-Silence.md)와 [라벨렌 전기](../GAME-LOGIC/Ref-Ravelen-Chronicles.md)다. 작품 사실과 당시 차용 기록은 [레퍼런스 게임 조사](Game-References.md)에 남긴다. 지도 턴·영웅 카드·턴제 SRPG는 현재 목표가 아니다.
+기준 조사 원문은 [Songs of Silence](references/Ref-Songs-of-Silence.md)와 [라벨렌 전기](references/Ref-Ravelen-Chronicles.md)다. 작품 사실과 당시 차용 기록은 [레퍼런스 게임 조사](Game-References.md)에 남긴다. 지도 턴·영웅 카드·턴제 SRPG는 현재 목표가 아니다.
 
 | 층 | 목표 | 상태 |
 |---|---|---|
@@ -22,8 +22,6 @@
 
 ## 2026-09-07 POC 도표
 
-![모든 개발 단계에서 칸에 누가 서 있고 어느 쪽을 보며 어디까지 보이는지](https://github.com/islee23520/seoul-kenshi/blob/main/GAME-REFERENCE/assets/wiki/isometric-grammar.svg?raw=true)
-
 아이소·격자 시기 그림이다. 새 목표 화면이 아니다.
 
 ## 현재 완료 (POC 슬라이스)
@@ -34,7 +32,7 @@
 - 서울 지역 총람(2026-09-13): 2026-07-01 행정동 경계 25구·427동, OSM 스냅샷 2026-09-04T23:00:00Z. 동별 주민·생업·위험·행동과 후보 원장 1,011,022건을 `tools/regions`가 재대조한다. 열람은 `system-design/regions/`. 역 334·간선 435는 이동 그래프이지 서울 면적의 증명이 아니다. Unity 내부 격자·16국 시뮬레이션은 없다
 - 생성 아트 기반: 역사 소품 6종 source-bound BOM 승격·런타임 연결, 3역할(탐사원·의무원·순찰대) 캐릭터 승격, UI kit 9종 후보(시각 수용 대기), TRELLIS v1 옵션 호스트 계약 고정
 - 세계관·인물 원본: 국가별 명부(Cast-State-01–16, 412인)와 관계 원장, 적대 집단 G01–G27 게시, 서사 배치 B001–B047, ISO 세계·가문·적대 도표, 몬스터 배치 원장 M001–M042, World-Narrative-Atlas 통합
-- 공개 Wiki: GAME-LOGIC·LORE·GDD 정본의 마운트 미러가 원본 커밋과 동기(소스 페이지 188, 미게시 조각은 표로만 추적)
+- 공개 위키: LORE·GDD 정본의 마운트 미러가 원본 커밋과 동기된다. 미게시 조각은 표로만 추적한다.
 - 저장소 검증 도구: LFS 사전 스머지 검사, Cast-Index 관계 수(송신 간선) 계약 검증, 위키 빌더의 미게시 조각 누출 방지, 신규 클론 PlayMode 준비 절차
 
 ## 다음 검증 단계 (순서 의존)

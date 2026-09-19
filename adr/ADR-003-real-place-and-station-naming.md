@@ -51,7 +51,7 @@
 - `LORE/regions/sources/**`
 - `.omo/**`
 
-`LORE/**`는 게임 정사의 권위 원본이다. VitePress `GAME-LOGIC/site`와 `https://seoul-kenshi.vercel.app`은 이 원본에서 다시 생성한다. GitHub Wiki는 유지하지 않는다.
+`LORE/**`는 게임 정사의 권위 원본이다. VitePress `WEB/wiki-source`와 `https://seoul-kenshi.vercel.app`은 이 원본에서 다시 생성한다. GitHub Wiki는 유지하지 않는다.
 
 ## 변경 기록
 

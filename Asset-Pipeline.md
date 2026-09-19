@@ -81,10 +81,10 @@ Animo는 저장소에 넣지 않습니다. 상용 사용은 업스트림 조건(
 
 - **위치**: `GAME/Assets/Quarantine/Oddland/` — `/Quarantine/` 경로 표시 때문에 런타임 프로비넌스 감사가 이 트리를 항상 격리 등급으로 분류합니다. 슬롯 승격 없이는 재생 가능한 씨에서 도달할 수 없습니다. 원본의 `Resources` 폴더는 `Res`로 이름을 바꿔 빌드에 자동 포함되지 않게 합니다.
 - **범위**: 3D 모델·재질·애니메이션·PSD/PNG 텍스처·아이콘·아틀라스·폰트·SFX(wav/ogg/mp3)·VFX 프리팽·셸이더·후처리 프로필·Spine 스켈레톤 데이터와 spine-unity 런타임. 싼, UI 화면 프리팽, 게임 로직 스크립트, 메타데이터, 서드파티 도구는 가져오지 않습니다.
-- **재현**: `node TOOL/tools/art/import-oddland-donor.mjs`가 외부 볼륨의 오드랜드 체크아웃에서 결정론적으로 복사하고 `GAME-REFERENCE/assets/bom/donor/oddland-donor-import.json`과 SHA-256 목록을 씁니다. `--verify`가 페이로드를 목록과 대조합니다 — 에디터가 임포트 때 다시 직렬화하는 YAML(.meta·.mat 등)은 업그레이드로 보고만 하고, FBX·PNG·PSD·WAV 같은 바이너리 원본의 불일치만 실패로 판정합니다. 페이로드(약 1.6GB)는 LFS 할당량을 넘어 git에 넣지 않고 매니페스트만 추적합니다.
+- **재현**: `node TOOL/tools/art/import-oddland-donor.mjs`가 외부 볼륨의 오드랜드 체크아웃에서 `GAME/Assets/Quarantine/Oddland/`로 결정론적으로 복사합니다. 폐기된 옛 참조 자산 트리와 BOM 카탈로그는 승격 증거로 쓰지 않습니다. 실물 검증은 Unity 임포트 결과와 소유자 승인 기록에서 다시 만듭니다.
 - **권리**: BOM `rights_status: allowed`, 근거는 2026-09-07 소유자 선언과 기증자 커밋 해시입니다. spine-unity 런타임은 Esoteric Software 런타임 라이선스를 따르며 소유자의 Spine 에디터 라이선스가 전제입니다 — 이것은 그래픽 에셋 권리가 아니라 도구 라이선스입니다.
 - **승격**: 기증 페이로드에서 런타임 슬롯으로 올리는 것은 여전히 아래 「에셋마다 남기는 기록」의 BOM·`look.owner_verdict: accepted`·소스 바인딩 영수증을 거칩니다. 기증은 승격이 아닙니다.
-- **카탈로그**: `GAME-REFERENCE/assets/bom/donor/oddland-asset-catalog.json`·`.md`가 비-.meta 7,712개 전량을 kind·family·처분으로 분류한다(미분류 0). `node TOOL/tools/art/catalog-oddland-donor.mjs`로 재생성, `--check`로 멱등 검증, `--summary`로 요약. 분류는 사용 준비도 판정이 아니며 승격은 아래 승격 절차를 그대로 따른다.
+- **카탈로그**: 옛 7,712개 BOM 카탈로그는 폐기됐다. 필요 자산은 `GAME/Assets/Quarantine/Oddland/` 실물을 기준으로 새 검수 기록을 작성하며, 과거 처분값을 승계하지 않습니다.
 
 ## UI 아트 임포트와 합성
 
@@ -99,7 +99,5 @@ UI 아트는 원본 바이트를 `Texture2D.LoadImage`로 우회하지 않고 `A
 생성 전에 에셋마다 `look`을 적습니다. `palette`(색 값), `materials`(거칠기·금속·마감), `references`(근거 문서나 사진 경로)가 비어 있으면 검수·승격을 진행하지 않습니다. 프롬프트만으로 재질을 대신하지 않습니다. 소유자 판정은 `look.owner_verdict`의 `pending` · `accepted` · `rejected`입니다.
 
 ## 2026-09-07 POC 도표
-
-![에셋에서 칸에 누가 서 있고 어느 쪽을 보며 어디까지 보이는지 확인하는 기준](https://github.com/islee23520/seoul-kenshi/blob/main/GAME-REFERENCE/assets/wiki/isometric-grammar.svg?raw=true)
 
 아이소·격자 시기 검수 그림이다. 새 목표 화면이 아니다.
