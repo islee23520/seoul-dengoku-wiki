@@ -300,7 +300,7 @@ async function collectMarkdownFiles(canonicalRoot) {
       if (!stats.isFile()) {
         throw new Error(`refusing to publish the non-file source page ${name}: ${path}`);
       }
-      if (!name.endsWith('.md') || name === 'README.md') continue;
+      if (!name.endsWith('.md') || name === 'README.md' || name === 'AGENTS.md') continue;
       files.push({ page: name, path });
     }
   }

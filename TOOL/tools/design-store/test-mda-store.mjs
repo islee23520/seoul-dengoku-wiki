@@ -11,6 +11,7 @@ import {
   exportDocumentPage,
   exportIndexPage,
   ingestCanonDir,
+  listCanonFiles,
   putDocument,
   validateDocument,
   verifyStore,
@@ -255,6 +256,35 @@ test('ingestCanonDir stores one row per markdown file and hub lists it', () => {
     const res = verifyStore({ dbPath });
     assert.equal(res.pass, true, JSON.stringify(res));
     assert.equal(res.canon, 2);
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
+});
+
+test('ingestCanonDir excludes project guidance files across canon domains', () => {
+  const dir = freshDir();
+  try {
+    const firstRoot = join(dir, 'first');
+    const secondRoot = join(dir, 'second');
+    mkdirSync(firstRoot, { recursive: true });
+    mkdirSync(secondRoot, { recursive: true });
+    writeFileSync(join(firstRoot, 'AGENTS.md'), '# 첫 지침\n');
+    writeFileSync(join(secondRoot, 'AGENTS.md'), '# 둘째 지침\n');
+    writeFileSync(join(firstRoot, 'Alpha.md'), '# 알파\n');
+    writeFileSync(join(secondRoot, 'Beta.md'), '# 베타\n');
+    const dbPath = join(dir, DB_NAME);
+    putDocument({ dbPath, document: SAMPLE });
+    const ingested = ingestCanonDir({
+      dbPath,
+      canonRoot: firstRoot,
+      canonDomains: [
+        { root: firstRoot, prefix: 'FIRST' },
+        { root: secondRoot, prefix: 'SECOND' },
+      ],
+    });
+    assert.equal(ingested.files, 2);
+    const rows = listCanonFiles({ dbPath });
+    assert.deepEqual(rows.map((row) => row.path), ['FIRST/Alpha.md', 'SECOND/Beta.md']);
   } finally {
     rmSync(dir, { recursive: true, force: true });
   }

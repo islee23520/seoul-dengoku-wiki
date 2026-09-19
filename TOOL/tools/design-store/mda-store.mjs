@@ -285,7 +285,7 @@ export function ingestCanonDir({ dbPath, canonRoot, pathPrefix = 'LORE', canonDo
   );
   let fileCount = 0;
   for (const { root, prefix, exclude = () => false } of domains) {
-  for (const rel of listMarkdownFiles(root).filter((candidate) => !exclude(candidate))) {
+  for (const rel of listMarkdownFiles(root).filter((candidate) => candidate !== 'AGENTS.md' && !candidate.endsWith('/AGENTS.md') && !exclude(candidate))) {
     fileCount += 1;
     const sourcePath = `${prefix}/${rel}`;
     ensureSource(db, sourcePath);
