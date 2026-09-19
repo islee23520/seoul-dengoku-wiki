@@ -38,11 +38,12 @@ namespace Janseon.Foundation.Presentation
 
         private static readonly Dictionary<StrategyMapWeatherKind, Color> SkyColors = new()
         {
-            { StrategyMapWeatherKind.Day, new Color(0.55f, 0.70f, 0.90f) },
-            { StrategyMapWeatherKind.Sunset, new Color(0.92f, 0.48f, 0.28f) },
-            { StrategyMapWeatherKind.Night, new Color(0.02f, 0.04f, 0.10f) },
-            { StrategyMapWeatherKind.Rain, new Color(0.28f, 0.32f, 0.38f) },
-            { StrategyMapWeatherKind.Snow, new Color(0.80f, 0.84f, 0.92f) },
+            // Pastel palette benchmarked to seoul-3d-atlas (sat ≤ 0.26, val ≥ 0.54)
+            { StrategyMapWeatherKind.Day, new Color(0.87f, 0.91f, 0.94f) },     // pale sky wash
+            { StrategyMapWeatherKind.Sunset, new Color(0.94f, 0.79f, 0.72f) },  // soft coral
+            { StrategyMapWeatherKind.Night, new Color(0.19f, 0.22f, 0.29f) },   // muted navy
+            { StrategyMapWeatherKind.Rain, new Color(0.66f, 0.70f, 0.74f) },    // cool gray
+            { StrategyMapWeatherKind.Snow, new Color(0.91f, 0.93f, 0.96f) },    // frost white
         };
 
         private static readonly Dictionary<StrategyMapSeasonKind, Color> SeasonTints = new()
@@ -59,6 +60,7 @@ namespace Janseon.Foundation.Presentation
         private ParticleSystem rainSystem;
         private ParticleSystem snowSystem;
         private readonly List<Material> terrainMaterials = new();
+        private List<Texture2D[]> seasonTextures; // [chunk][season], null when single-texture
 
         public int ChunkChildCount => chunkRoot != null ? chunkRoot.childCount : 0;
 
@@ -156,7 +158,7 @@ namespace Janseon.Foundation.Presentation
         {
             chunkRoot = new GameObject("strategy-map-chunks").transform;
             chunkRoot.SetParent(transform, false);
-            Shader terrainShader = Shader.Find("Sprites/Default"); // texture + tint, pipeline-agnostic
+            Shader terrainShader = Shader.Find("Unlit/Texture"); // pure texture output, batchmode-safe
             Shader unlitColor = Shader.Find("Unlit/Color");
             for (int i = 0; i < chunkMeshes.Count; i++)
             {
@@ -259,6 +261,21 @@ namespace Janseon.Foundation.Presentation
 
             var renderer = go.GetComponent<ParticleSystemRenderer>();
             renderer.renderMode = streaks ? ParticleSystemRenderMode.Stretch : ParticleSystemRenderMode.Billboard;
+            // Batchmode-safe particle material: 1x1 white texture + Unlit/Transparent
+            // (the default particle material renders magenta in headless runs).
+            Shader particleShader = Shader.Find("Unlit/Transparent");
+            if (particleShader != null)
+            {
+                var white = new Texture2D(1, 1, TextureFormat.RGBA32, false);
+                white.SetPixel(0, 0, Color.white);
+                white.Apply();
+                var particleMaterial = new Material(particleShader);
+                particleMaterial.mainTexture = white;
+                particleMaterial.color = streaks
+                    ? new Color(0.62f, 0.72f, 0.88f, 0.55f)
+                    : new Color(0.96f, 0.97f, 1.0f, 0.80f);
+                renderer.sharedMaterial = particleMaterial;
+            }
             system.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
             return system;
         }
@@ -345,11 +362,17 @@ namespace Janseon.Foundation.Presentation
         /// <summary>Benchmark-style tree season tint over the OSM landcover texture.</summary>
         public void SetSeason(StrategyMapSeasonKind season)
         {
-            foreach (Material material in terrainMaterials)
+            // Unlit/Texture has no tint; the bake emits one texture per season
+            // variant (bake_map_texture --season), so swap mainTexture instead.
+            if (seasonTextures == null || seasonTextures.Count != terrainMaterials.Count)
             {
-                if (material != null && material.HasProperty("_Color"))
+                return; // no seasonal variants baked; textures already carry the base look
+            }
+            for (int i = 0; i < terrainMaterials.Count; i++)
+            {
+                if (terrainMaterials[i] != null)
                 {
-                    material.color = SeasonTints[season];
+                    terrainMaterials[i].mainTexture = seasonTextures[i][(int)season];
                 }
             }
         }

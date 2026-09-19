@@ -76,8 +76,9 @@ namespace Janseon.Foundation.Presentation
         private void Load(IReadOnlyList<TextAsset> binaries)
         {
             box = BuildUnitCube();
-            Shader shader = Shader.Find("Sprites/Default");
-            material = new Material(shader) { enableInstancing = true, color = new Color(0.62f, 0.60f, 0.58f) };
+            Shader shader = Shader.Find("Unlit/Color");
+            material = new Material(shader) { enableInstancing = true };
+            material.SetColor("_Color", new Color(0.78f, 0.75f, 0.71f)); // pale stone
 
             TotalInstances = 0;
             foreach (TextAsset asset in binaries)

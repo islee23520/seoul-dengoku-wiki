@@ -52,6 +52,9 @@ namespace Janseon.Foundation.Presentation
         {
             var manifest = JsonUtility.FromJson<LandmarkManifest>(manifestJson);
             if (manifest?.landmarks == null || prefabs == null) return;
+            // OBJ importer materials (Standard shader) render magenta in batchmode;
+            // force a pastel unlit material so landmarks always paint.
+            Shader landmarkShader = Shader.Find("Unlit/Color");
             for (int i = 0; i < manifest.landmarks.Count && i < prefabs.Count; i++)
             {
                 LandmarkEntry entry = manifest.landmarks[i];
@@ -61,6 +64,15 @@ namespace Janseon.Foundation.Presentation
                 child.transform.localPosition = new Vector3(entry.worldX, 0f, entry.worldZ);
                 child.transform.localScale = Vector3.one * entry.gameScale;
                 child.transform.localRotation = Quaternion.identity;
+                if (landmarkShader != null)
+                {
+                    foreach (MeshRenderer renderer in child.GetComponentsInChildren<MeshRenderer>())
+                    {
+                        var mat = new Material(landmarkShader);
+                        mat.SetColor("_Color", new Color(0.84f, 0.80f, 0.74f)); // pale ivory
+                        renderer.sharedMaterial = mat;
+                    }
+                }
                 placed.Add(child);
             }
         }
