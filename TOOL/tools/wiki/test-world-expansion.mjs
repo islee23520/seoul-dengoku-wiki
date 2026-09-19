@@ -11,7 +11,6 @@ import { buildWiki } from './build-wiki.mjs';
 const verifier = fileURLToPath(new URL('./verify-world-expansion.mjs', import.meta.url));
 const repositoryRoot = resolve(dirname(verifier), '..', '..', '..');
 const liveDocs = join(repositoryRoot, 'LORE');
-const liveAssets = join(repositoryRoot, 'GAME-REFERENCE', 'assets', 'wiki');
 const fixtures = [];
 
 after(async () => {
@@ -237,10 +236,8 @@ test('Given generated wiki When inspecting a public page Then source banner is p
   await buildWiki({
     sourceDirs: [
       liveDocs,
-      join(repositoryRoot, 'GAME-LOGIC'),
       join(repositoryRoot, 'GDD'),
     ],
-    assetDir: liveAssets,
     outputDir,
     commitSha: 'deadbeef',
   });

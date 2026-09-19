@@ -43,7 +43,7 @@
 
 ## 문서
 
-게임 설계 원본은 [`GDD/Home.md`](GDD/Home.md)와 [`GAME-LOGIC/`](GAME-LOGIC/)에 있습니다. 세계관은 [`LORE/`](LORE/README.md)입니다. 로컬에서는 `npm run docs:dev`로 VitePress를 띄우고, 공개 표면은 [https://seoul-dengoku.linalab.io](https://seoul-dengoku.linalab.io)입니다. GitHub Wiki는 유지하지 않습니다.
+게임 설계 원본은 [`GDD/`](GDD/Home.md)에 있습니다. 세계관은 [`LORE/`](LORE/README.md)입니다. 로컬에서는 `npm run docs:dev`로 VitePress를 띄우고, 공개 표면은 [https://seoul-dengoku.linalab.io](https://seoul-dengoku.linalab.io)입니다. GitHub Wiki는 유지하지 않습니다.
 
 이슈를 열거나 작업을 추적할 때는 [`CONTRIBUTING.md`](CONTRIBUTING.md)를 따릅니다. 웹에서는 YAML 이슈 폼만 열고, 빈 이슈는 쓰지 않습니다.
 

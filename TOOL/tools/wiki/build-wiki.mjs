@@ -35,7 +35,7 @@ const SENTINEL_BODY = [
 ].join('\n');
 const VCS_DIRECTORY = '.git';
 const PUBLISHED_ASSET_DIRECTORY = 'assets';
-const REPOSITORY_ASSET_SEGMENTS = ['GAME-REFERENCE', 'assets', 'wiki'];
+const RETIRED_ASSET_PATH = ['GAME-REFERENCE', 'assets'].join('/');
 
 // Blocks are joined with a newline so a banned term can never be assembled
 // across two separately rendered regions; everything inline is concatenated with
@@ -82,16 +82,16 @@ export async function buildWiki({ sourceDir, sourceDirs, assetDir, outputDir, co
   for (const dir of sourceRoots) {
     canonicalSources.push(await openRealDirectory(dir, 'wiki source directory'));
   }
-  const canonicalAssets = await openRealDirectory(assetDir, 'wiki asset directory');
+  const canonicalAssets = assetDir ? await openRealDirectory(assetDir, 'wiki asset directory') : null;
   const resolvedOutput = assertSafeOutputRoot(outputDir);
   const outputStats = await lstatOrNull(resolvedOutput);
   if (outputStats && !outputStats.isSymbolicLink() && outputStats.isDirectory()) {
     const canonicalOutput = await realpath(resolvedOutput);
-    if (canonicalSources.includes(canonicalOutput) || canonicalOutput === canonicalAssets) {
+    if (canonicalSources.includes(canonicalOutput) || (canonicalAssets && canonicalOutput === canonicalAssets)) {
       throw new Error('refusing to use a source or asset directory as the wiki output root');
     }
   }
-  const assetFiles = await collectAssetFiles(canonicalAssets);
+  const assetFiles = canonicalAssets ? await collectAssetFiles(canonicalAssets) : new Map();
   const assetNames = new Set([...assetFiles.keys()]);
 
   const pages = await readSourcePages(canonicalSources);
@@ -265,7 +265,7 @@ async function removeTree(path) {
   await rmdir(path);
 }
 
-const FRAGMENT_PAGE = /^(Story-Batch-B\d{3}|Monster-Batch-M\d{3}|Hostile-Group-G\d{2})\.md$/;
+const FRAGMENT_PAGE = /^(Story-Batch-B\d{3}|Hostile-Group-G\d{2})\.md$/;
 const CAST_INDEX_HUB_ROW = /^\| ([^|]+) \| ([^|]+) \| `(?:docs\/game-logic\/|LORE\/(?:[^`/]+\/)*)([^`]+)`/gm;
 const LORE_SKIP_DIRS = new Set(['name-pools', 'regions']);
 
@@ -513,7 +513,8 @@ function collectDestinationEdits(node, markdown, context) {
 
 function resolveDestination(node, { page, assetNames }) {
   const url = node.url ?? '';
-  const assetName = repositoryAssetName(url) ?? relativeAssetName(url);
+  if (url.includes(RETIRED_ASSET_PATH)) throw new Error(`${page}: retired reference asset path is forbidden`);
+  const assetName = relativeAssetName(url);
   if (assetName !== null) {
     if (!assetNames.has(assetName)) {
       throw new Error(
@@ -528,46 +529,8 @@ function resolveDestination(node, { page, assetNames }) {
 
 const RELATIVE_ASSET_PREFIX = '../assets/wiki/';
 
-/** Recognises the repository's own canonical image URLs via URL parsing, not pattern matching. */
-function repositoryAssetName(url) {
-  if (url.startsWith(RELATIVE_ASSET_PREFIX)) {
-    return url.slice(RELATIVE_ASSET_PREFIX.length);
-  }
-  let parsed;
-  try {
-    parsed = new URL(url);
-  } catch {
-    return null;
-  }
-  if (parsed.protocol !== 'https:' && parsed.protocol !== 'http:') return null;
-
-  let segments;
-  try {
-    segments = parsed.pathname.split('/').filter(Boolean).map((segment) => decodeURIComponent(segment));
-  } catch {
-    return null;
-  }
-
-  const host = parsed.hostname.toLowerCase();
-  let path;
-  if (host === 'github.com' || host === 'www.github.com') {
-    // <owner>/<repo>/(blob|raw)/<ref>/<path...>
-    if (segments.length < 5 || (segments[2] !== 'blob' && segments[2] !== 'raw')) return null;
-    path = segments.slice(4);
-  } else if (host === 'raw.githubusercontent.com') {
-    // <owner>/<repo>/<ref>/<path...>
-    if (segments.length < 4) return null;
-    path = segments.slice(3);
-  } else {
-    return null;
-  }
-
-  if (path.length <= REPOSITORY_ASSET_SEGMENTS.length) return null;
-  if (REPOSITORY_ASSET_SEGMENTS.some((expected, index) => path[index] !== expected)) return null;
-  return path.slice(REPOSITORY_ASSET_SEGMENTS.length).join('/');
-}
-
 function relativeAssetName(url) {
+  if (url.startsWith(RELATIVE_ASSET_PREFIX)) return url.slice(RELATIVE_ASSET_PREFIX.length);
   if (hasScheme(url) || url.startsWith('//')) return null;
   const [path] = url.split(/[?#]/);
   const segments = path.split('/').filter((segment) => segment !== '' && segment !== '.');
@@ -667,7 +630,7 @@ function locateDestination(node, markdown) {
 function pathPrefixLabel(canonicalSource, filePath) {
   const resolved = resolve(canonicalSource);
   const label = resolved.split(sep).pop();
-  const domain = ['LORE', 'GAME-LOGIC', 'GDD'].includes(label) ? label : null;
+  const domain = ['LORE', 'GDD'].includes(label) ? label : null;
   if (!domain) return 'Wikis/game-logic';
   if (!filePath) return domain;
   const rel = relative(resolved, filePath).split(sep).join('/');

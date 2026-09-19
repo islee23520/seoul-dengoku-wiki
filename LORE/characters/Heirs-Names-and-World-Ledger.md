@@ -1,6 +1,6 @@
 # 후계, 이름 로스터, 세계 원장
 
-이름 있는 인물이 죽거나 자리를 비우면 빈 직위만 남지 않는다. 후계자·신임 실무자·새로 붙는 친족은 [작명 원칙](../characters/Core-Characters.md)을 지키는 성명으로 생성된다. 성씨와 이름은 문화 로스터에서 고른다. 플레이어의 면담·거래·지지·호송은 인물 단위 기록만 남기고, 그 기록이 임계를 넘을 때 [사건 원장](../../GAME-LOGIC/Save-and-Determinism.md)이 거점·물가·통행·정통성을 바꾼다.
+이름 있는 인물이 죽거나 자리를 비우면 빈 직위만 남지 않는다. 후계자·신임 실무자·새로 붙는 친족은 [작명 원칙](../characters/Core-Characters.md)을 지키는 성명으로 생성된다. 성씨와 이름은 문화 로스터에서 고른다. 플레이어의 면담·거래·지지·호송은 인물 단위 기록만 남기고, 그 기록이 임계를 넘을 때 [사건 원장](../../GDD/rules/Save-and-Determinism.md)이 거점·물가·통행·정통성을 바꾼다.
 
 이 문서는 후계 생성의 목표 규칙이다. 현재 총람 422명 가운데 상세 인물 본문이 있는 412명과 총람만 있는 10명을 구분하며, 이미 붙인 이름을 다시 짓지 않는다. `tools/cast/generate_nemotron_roster.py`의 후보 샘플링은 아래 후계·관계·저장 기능의 구현 완료를 뜻하지 않는다.
 
@@ -35,7 +35,7 @@
 ## 이름을 고르는 순서
 
 1. 대상의 `CultureKey`를 읽는다.
-2. 성씨 풀에서 성을 고른다. 같은 국가에 같은 성씨가 있다는 이유로 배제하지 않는다. 결정 난수는 [같은 선택이 같은 결과가 되나](../../GAME-LOGIC/Save-and-Determinism.md)의 인물 스트림만 사용한다.
+2. 성씨 풀에서 성을 고른다. 같은 국가에 같은 성씨가 있다는 이유로 배제하지 않는다. 결정 난수는 [같은 선택이 같은 결과가 되나](../../GDD/rules/Save-and-Determinism.md)의 인물 스트림만 사용한다.
 3. 남성·여성 이름 풀을 분리해 사용하고, 통용 이름 정책이 필요한 경우 별도로 선택한다. 항렬·자배·통자는 [본관과 항렬](../characters/Hangnyeol-and-Bon-gwan.md)을 따른다. 추가 100명은 [랜덤 추가 로스터](../characters/Random-Cast-Roster.md)의 미검토 후보로 남아 있다.
 4. `성+이름`이 전 세계 생존·사망 기록과 같으면 3으로 돌아간다. 8번 실패하면 생성을 거부한다.
 5. 새 인물 ID, 성명, 키, 출생 틱을 원장에 쓴다.
@@ -83,7 +83,7 @@
 | 한 국가의 `plot` 성공 | 수장 교체. 후계 생성 규칙을 탄다 |
 | 여러 국가에 걸친 `rumour` 확정 | 정통성 하락, 협약 재검토 |
 
-세계 사건은 [세력과 외교](../factions/Factions-and-Diplomacy.md), [경제와 생산](../economy/Economy-and-Production.md), [물류와 기반 시설](../economy/Logistics-and-Infrastructure.md)이 읽는 필드만 바꾼다. 전투 격자나 카드 재충전은 건드리지 않는다. 전투 결과는 [전략에서 전투로](../../GAME-LOGIC/Strategy-Battle-Roundtrip.md)가 한 번만 반영한다.
+세계 사건은 [세력과 외교](../factions/Factions-and-Diplomacy.md), [경제와 생산](../economy/Economy-and-Production.md), [물류와 기반 시설](../economy/Logistics-and-Infrastructure.md)이 읽는 필드만 바꾼다. 전투 격자나 카드 재충전은 건드리지 않는다. 전투 결과는 [전략에서 전투로](../../GDD/rules/Strategy-Battle-Roundtrip.md)가 한 번만 반영한다.
 
 ## 저장
 

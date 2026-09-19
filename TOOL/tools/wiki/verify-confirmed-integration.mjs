@@ -153,25 +153,11 @@ export function mergeMonsterContent(targetAtlas, { batchId, sha, sourceAtlas, ma
   return targetAtlas;
 }
 
-export function mergeDiagrams(targetAtlas, { sha, sourceAtlas, manifest }) {
-  assertApprovedSource(manifest, 'ISO', sha);
-  const incoming = sourceAtlas?.diagrams;
-  if (!Array.isArray(incoming) || incoming.length === 0) {
-    throw IntegrationError('E_MISSING_FRAGMENT', `ISO diagrams missing at ${sha}`);
-  }
-  if (targetAtlas.diagrams && !deepEqual(targetAtlas.diagrams, incoming)) {
-    throw IntegrationError('E_DUPLICATE_ID', 'diagrams conflicting');
-  }
-  targetAtlas.diagrams = incoming;
-  return targetAtlas;
-}
-
 export function baselineKeys(atlas) {
   return {
     top: Object.keys(atlas),
     storyContents: Object.keys(atlas.story_contents ?? {}),
     monsterContents: Object.keys(atlas.monster_contents ?? {}),
-    diagramCount: Array.isArray(atlas.diagrams) ? atlas.diagrams.length : 0,
     groupIds: (atlas.hostile_groups ?? []).map((group) => group.id),
     dossierGroups: (atlas.hostile_groups ?? []).filter((group) => group.dossier_prose).map((group) => group.id),
   };
@@ -217,9 +203,6 @@ export function verifyLiveAtlas(atlas, manifest, opts = {}) {
       const prose = String(groupById.get(id)?.prose ?? '');
       if (prose.length < 300) fail('E_MISSING_FRAGMENT', `${id} differentiated prose`);
     }
-    if (!Array.isArray(atlas.diagrams) || atlas.diagrams.length !== 3) {
-      fail('E_MISSING_FRAGMENT', 'ISO diagrams');
-    }
   }
   if (opts.requireBaselineOnly) {
     const keys = Object.keys(atlas);
@@ -242,16 +225,27 @@ export async function verifyLiveDocs(opts = {}) {
   const docs = opts.docs ?? join(repoRoot, 'LORE');
   const violations = verifyLiveAtlas(atlas, manifest, opts);
   const { readdir } = await import('node:fs/promises');
-  let names = [];
-  try {
-    names = await readdir(docs);
-  } catch (err) {
-    if (!err || err.code !== 'ENOENT') throw err;
+  const names = [];
+  const stack = [docs];
+  while (stack.length > 0) {
+    const dir = stack.pop();
+    let entries;
+    try {
+      entries = await readdir(dir, { withFileTypes: true });
+    } catch (err) {
+      if (err && err.code === 'ENOENT') continue;
+      throw err;
+    }
+    for (const entry of entries) {
+      if (entry.isDirectory()) stack.push(join(dir, entry.name));
+      else if (entry.isFile()) names.push(entry.name);
+    }
   }
-  const monsterPages = names.filter((name) => /^Monster-Batch-M\d{3}\.md$/.test(name));
-  const presentMonsterIds = monsterPages.map((name) => name.slice('Monster-Batch-'.length, -'.md'.length));
-  for (const id of presentMonsterIds) {
-    if ((manifest.excluded.monsters ?? []).includes(id)) violations.push({ code: 'E_EXCLUDED_ID', detail: id });
+  const monsterPages = names.filter((name) => /^Monster-Batch-(?:Manifest|M\d{3})\.md$/.test(name));
+  for (const name of monsterPages) violations.push({ code: 'E_RETIRED_PROJECTION', detail: name });
+  const presentMonsterIds = Object.keys(atlas.monster_contents ?? {}).sort();
+  for (const id of manifest.excluded.monsters ?? []) {
+    if (presentMonsterIds.includes(id)) violations.push({ code: 'E_EXCLUDED_ID', detail: id });
   }
   if (opts.requireMonsters) {
     for (const id of manifest.monsters) {

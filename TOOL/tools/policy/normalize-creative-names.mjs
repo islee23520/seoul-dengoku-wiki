@@ -47,12 +47,12 @@ function isIncluded(path) {
   if (['Concept.md', 'Design.md', 'Intent.md', 'README.md', 'ToDo.md'].includes(path)) return true;
   return [
     'LORE/',
-    'GAME-LOGIC/',
+    'GDD/',
+    'WEB/',
     'GDD/',
     'GAME/Assets/Janseon/Data/',
     'TOOL/tools/wiki/',
     'TOOL/tools/cast/',
-    'GAME-REFERENCE/assets/wiki/',
   ].some((prefix) => path.startsWith(prefix));
 }
 

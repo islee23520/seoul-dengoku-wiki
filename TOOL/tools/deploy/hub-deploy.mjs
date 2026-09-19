@@ -82,7 +82,7 @@ const main = async () => {
   const manifestIndex = process.argv.indexOf('--manifest')
   const root = resolve(rootIndex >= 0 ? process.argv[rootIndex + 1] : repoRoot)
   const output = resolve(outputIndex >= 0 ? process.argv[outputIndex + 1] : join(root, '.hub-deploy-stage'))
-  const wikiDist = wikiIndex >= 0 ? process.argv[wikiIndex + 1] : 'GAME-LOGIC/wiki-react/dist'
+  const wikiDist = wikiIndex >= 0 ? process.argv[wikiIndex + 1] : 'WEB/wiki/dist'
   const pages = await loadHubPages(manifestIndex >= 0 ? resolve(process.argv[manifestIndex + 1]) : undefined)
   const result = await stageHub({ root, output, hubIndex: hubIndex >= 0 ? process.argv[hubIndex + 1] : 'index.html', wikiDist, pages })
   console.log(`HUB_STAGE_PASS files=${result.files} pages=${result.pages.length} output=${output}`)

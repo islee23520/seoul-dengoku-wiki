@@ -12,8 +12,7 @@ const { buildWiki } = wiki;
 // Marker written by the generator into every output root it owns. Cleanup must
 // refuse to delete anything from a root that does not carry it.
 const SENTINEL = '.janseon-wiki-generated';
-const REPO_IMAGE_BASE = 'https://github.com/islee23520/seoul-kenshi/blob/main/GAME-REFERENCE/assets/wiki';
-const RAW_IMAGE_BASE = 'https://raw.githubusercontent.com/islee23520/seoul-kenshi/main/GAME-REFERENCE/assets/wiki';
+const RETIRED_IMAGE_BASE = `https://github.com/islee23520/seoul-kenshi/blob/main/${['GAME-REFERENCE', 'assets', 'wiki'].join('/')}`;
 const SECRET = 'TOPSECRET-DO-NOT-PUBLISH-8f2a1c';
 const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
 
@@ -560,25 +559,10 @@ await testCase('only URL destinations are exempt from the visible-text gate', as
 // Local asset publication
 // ---------------------------------------------------------------------------
 
-await testCase('repository-hosted canonical image URLs are rewritten to local assets', async () => {
-  const outputDir = await buildPage(
-    'repo-image',
-    `# 제목\n\n![그림](${REPO_IMAGE_BASE}/figure.svg?raw=true)\n\n![도해](${RAW_IMAGE_BASE}/diagram.svg)\n`,
-  );
-  const page = await readFile(join(outputDir, 'Page.md'), 'utf8');
-  assert.match(page, /!\[그림\]\(assets\/figure\.svg\)/, 'blob?raw=true URLs must become local asset paths');
-  assert.match(page, /!\[도해\]\(assets\/diagram\.svg\)/, 'raw.githubusercontent URLs must become local asset paths');
-  assert.doesNotMatch(page, /github\.com/, 'no repository-hosted image URL may survive');
-  assert.doesNotMatch(page, /githubusercontent\.com/, 'no repository-hosted image URL may survive');
-  assert.ok(await exists(join(outputDir, 'assets', 'figure.svg')));
-  assert.ok(await exists(join(outputDir, 'assets', 'diagram.svg')));
-});
-
-await testCase('a repository-hosted image without a local asset fails the build', async () => {
+await testCase('retired reference asset URLs fail the build', async () => {
   await assert.rejects(
-    buildPage('missing-asset', `# 제목\n\n![없음](${REPO_IMAGE_BASE}/absent.svg?raw=true)\n`),
-    /absent\.svg/,
-    'a missing local asset must fail the build loudly',
+    buildPage('retired-asset', `# 제목\n\n![폐기](${RETIRED_IMAGE_BASE}/absent.svg?raw=true)\n`),
+    /retired reference asset path is forbidden/,
   );
 });
 
@@ -604,8 +588,7 @@ await testCase('every generated image path in the real repository wiki resolves 
   const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
   const outputDir = await generatedOutput('repo-full');
   await buildWiki({
-    sourceDirs: [join(repositoryRoot, 'LORE'), join(repositoryRoot, 'GAME-LOGIC'), join(repositoryRoot, 'GDD')],
-    assetDir: join(repositoryRoot, 'GAME-REFERENCE', 'assets', 'wiki'),
+    sourceDirs: [join(repositoryRoot, 'LORE'), join(repositoryRoot, 'GDD')],
     outputDir,
     commitSha: 'assetcheck',
   });
@@ -615,13 +598,11 @@ await testCase('every generated image path in the real repository wiki resolves 
   for (const page of pages) {
     const markdown = await readFile(join(outputDir, page), 'utf8');
     for (const [, target] of markdown.matchAll(/!\[[^\]]*\]\(([^)\s]+)\)/g)) {
-      assert.doesNotMatch(target, /^https?:\/\/(?:www\.)?(?:github\.com|raw\.githubusercontent\.com)\//, `${page}: repository-hosted image URL survived (${target})`);
-      if (/^[a-z][a-z0-9+.-]*:/i.test(target)) continue;
-      assert.ok(await exists(join(outputDir, target)), `${page}: generated image ${target} does not exist`);
+      assert.fail(`${page}: internal image reference survived (${target})`);
       checked += 1;
     }
   }
-  assert.ok(checked >= 10, `expected at least 10 local image references, got ${checked}`);
+  assert.equal(checked, 0);
 });
 
 await testCase('project guidance files are excluded from public source pages', async () => {
@@ -716,7 +697,6 @@ await testCase('unpublished fragment pages listed in Cast-Index are not emitted'
     ].join('\n'),
     'Story-Batch-B001.md': '# B001\n조각',
     'Hostile-Group-G01.md': '# G01\n조각',
-    'Monster-Batch-M001.md': '# M001\n조각',
   });
   const outputDir = await generatedOutput('unpublished-fragments');
   await buildWiki({ sourceDir, assetDir: assets, outputDir, commitSha: 'abc1234' });
@@ -726,7 +706,6 @@ await testCase('unpublished fragment pages listed in Cast-Index are not emitted'
   assert.ok(names.includes('Cast-State-01.md'), 'published Cast-State stays');
   assert.ok(!names.includes('Story-Batch-B001.md'), 'unpublished story fragment must not emit');
   assert.ok(!names.includes('Hostile-Group-G01.md'), 'unpublished hostile fragment must not emit');
-  assert.ok(!names.includes('Monster-Batch-M001.md'), 'unpublished monster fragment must not emit');
 });
 
 await testCase('Cast-Index 게시 rows still emit their fragment page', async () => {
@@ -753,7 +732,7 @@ await testCase('Cast-Index 게시 rows still emit their fragment page', async ()
 // ---------------------------------------------------------------------------
 
 function corpusFile(name) {
-  const roots = ['LORE', 'GAME-LOGIC', 'GDD'].map((dir) => join(repositoryRoot, dir));
+  const roots = ['LORE', 'GDD'].map((dir) => join(repositoryRoot, dir));
   for (const root of roots) {
     const direct = join(root, name);
     if (existsSync(direct)) return direct;
@@ -843,7 +822,6 @@ function verifyWorkedExamples(page, exampleSection) {
 }
 
 await testCase('strategic pages keep their calculable contract', async () => {
-  const repositorySidebar = await readFile(corpusFile('_Sidebar.md'), 'utf8');
   const repositoryHome = await readFile(corpusFile('Home.md'), 'utf8');
 
   let totalVerifiedCalculations = 0;
@@ -880,9 +858,8 @@ await testCase('strategic pages keep their calculable contract', async () => {
 
   for (const page of strategicPages) {
     const wikiName = page.replace(/\.md$/, '');
-    const rel = `(?:\\.\\./)*(?:LORE|GAME-LOGIC|GDD)/`;
-    assert.match(repositorySidebar, new RegExp(`\\(${wikiName}(?:\\.md)?\\)`), `${page}: missing sidebar link`);
-    assert.match(repositoryHome, new RegExp(`\\((?:(?:\\.\\./)*(?:LORE|GAME-LOGIC|GDD)/)?${page.replace('.', '\\.')}\\)`), `${page}: missing home link`);
+    const rel = `(?:\\.\\./)*(?:LORE|GDD)/`;
+    assert.match(repositoryHome, new RegExp(`\\((?:(?:\\.\\./)*(?:LORE|GDD)/)?(?:[^)\\n]+/)*${page.replace('.', '\\.')}\\)`), `${page}: missing home link`);
   }
 });
 

@@ -1,6 +1,6 @@
 param(
-    [string]$PromoteScript = (Join-Path $PSScriptRoot '..\..\..\GAME-LOGIC\wiki-react\deploy\promote-release.ps1'),
-    [string]$RollbackScript = (Join-Path $PSScriptRoot '..\..\..\GAME-LOGIC\wiki-react\deploy\rollback-release.ps1')
+    [string]$PromoteScript = (Join-Path $PSScriptRoot '..\..\..\WEB\wiki\deploy\promote-release.ps1'),
+    [string]$RollbackScript = (Join-Path $PSScriptRoot '..\..\..\WEB\wiki\deploy\rollback-release.ps1')
 )
 
 $ErrorActionPreference = 'Stop'

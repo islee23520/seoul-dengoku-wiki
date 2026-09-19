@@ -1,6 +1,8 @@
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
 import { readFileSync } from 'node:fs';
+import { mkdir, mkdtemp, rm, writeFile } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
 import { dirname, join, resolve } from 'node:path';
 import { test } from 'node:test';
 import { fileURLToPath } from 'node:url';
@@ -11,7 +13,6 @@ import {
   baselineKeys,
   gitShow as gitShowAt,
   loadManifest,
-  mergeDiagrams,
   mergeGroupRecords,
   mergeMonsterContent,
   mergeStoryContent,
@@ -83,9 +84,9 @@ const MONSTER_PAGE_PREFIXES = [
   'GDD/game-logic',
   'LORE',
 ];
-// Last pre-7-domain atlas whose humans (422) and landed fragments equal live LORE.
+// Confirmed state-head and hangnyeol revision, including K057/K219/K271 renames.
 // world-atlas-verify.mjs pins the same census: `humans.length !== 422` → E_K_MAP.
-const HUMANS_CENSUS_SHA = '24dc6bceb330fa510b46c8bd08f1e369105f87a0';
+const HUMANS_CENSUS_SHA = '44b0dc099e6dd50c6185a0be248af61df47c6019';
 
 function gitAtlas(sha) {
   const errors = [];
@@ -127,7 +128,6 @@ test('Given confirmed social records When live atlas is checked Then only approv
   assert.equal(violations.length, 0, JSON.stringify(violations));
   const keys = baselineKeys(atlas);
   assert.deepEqual(keys.storyContents, manifest.social);
-  assert.equal(keys.diagramCount, 3);
   assert.deepEqual(keys.dossierGroups.slice(0, 6), manifest.groups['G01-G06']);
   assert.deepEqual(keys.dossierGroups, [
     ...manifest.groups['G01-G06'],
@@ -262,7 +262,7 @@ test('Given approved G19-G24 blob When merged over seed records Then dossier rec
   }
 });
 
-test('Given live candidate When monster pages are atlas projections Then every page has a record and excluded batches stay absent', async () => {
+test('Given live candidate When monster contents are atlas records Then retired pages stay absent', async () => {
   const manifest = await loadManifest();
   const { atlas, presentMonsterIds } = await verifyLiveDocs({
     repoRoot: repositoryRoot,
@@ -279,6 +279,21 @@ test('Given live candidate When monster pages are atlas projections Then every p
     manifest.incomplete,
     manifest.excluded.social.length + manifest.excluded.groups.length + manifest.excluded.monsters.length > 0,
   );
+});
+
+test('Given retired monster pages When confirmed integration checks Then every old projection is rejected', async () => {
+  const manifest = await loadManifest();
+  const docs = await mkdtemp(join(tmpdir(), 'confirmed-bestiary-'));
+  try {
+    await mkdir(join(docs, 'bestiary'));
+    await writeFile(join(docs, 'Monster-Batch-M001.md'), '# duplicate\n');
+    await writeFile(join(docs, 'bestiary', 'Monster-Batch-M007.md'), '# excluded\n');
+    const invalid = await verifyLiveDocs({ repoRoot: repositoryRoot, docs, manifest, requireMonsters: true });
+    assert.ok(invalid.violations.some((item) => item.code === 'E_RETIRED_PROJECTION' && item.detail === 'Monster-Batch-M001.md'));
+    assert.ok(invalid.violations.some((item) => item.code === 'E_RETIRED_PROJECTION' && item.detail === 'Monster-Batch-M007.md'));
+  } finally {
+    await rm(docs, { recursive: true, force: true });
+  }
 });
 
 test('Given an unapproved SHA When merging a monster fragment Then E_UNAPPROVED_SHA', async () => {
@@ -386,20 +401,12 @@ test('Given approved M001 payload When merged Then M001 lands and other sources 
   assert.deepEqual(Object.keys(target.story_contents), ['B001']);
 });
 
-test('Given ISO blob When diagrams merge Then three diagram records land', async () => {
-  const manifest = await loadManifest();
-  const sha = manifest.approved.ISO;
-  const target = {};
-  mergeDiagrams(target, { sha, sourceAtlas: gitAtlas(sha), manifest });
-  assert.equal(target.diagrams.length, 3);
-});
-
 test('Given confirmed social records When CLI --require-social Then exit 0', () => {
   const result = runLive(['--require-social']);
   assert.equal(result.code, 0, result.stderr);
 });
 
-test('Given confirmed G01-G18 and ISO When CLI --require-groups Then exit 0', () => {
+test('Given confirmed G01-G18 When CLI --require-groups Then exit 0', () => {
   const result = runLive(['--require-social', '--require-groups']);
   assert.equal(result.code, 0, result.stderr);
 });

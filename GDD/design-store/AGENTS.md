@@ -22,7 +22,7 @@ design-store/
 | Page provenance | trailing `.src` line in each canon page | upstream Markdown path · byte size · SHA-256 |
 
 ## CONVENTIONS
-- Inputs, in order: `TOOL/tools/design-store/instances/janseon-core.json` + `catalog.json` define the documents; `seed-from-canon.mjs` resolves each `sourcePath` against `LORE/`, `GAME-LOGIC/` (minus `site/`), and top-level `GDD/`, builds the SQLite store, and exports every HTML page.
+- Inputs, in order: `TOOL/tools/design-store/instances/janseon-core.json` + `catalog.json` define the documents; `seed-from-canon.mjs` resolves each `sourcePath` against `LORE/` and the complete `GDD/` tree, builds the SQLite store, and exports every HTML page.
 - Legacy provenance paths (`Wikis/game-logic/*`, `docs/game-logic/*`) are remapped to the current roots at render time — stale labels inside old pages are expected, not errors.
 - Pages are self-contained: shared inline CSS palette (`--ink/--paper/--line/--metro`), serif Korean display font, no JS, no external assets.
 

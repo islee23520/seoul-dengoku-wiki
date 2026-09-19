@@ -71,4 +71,4 @@ Docs URL: `http://localhost:8010/`. Title `서울:전국 · 부대 지휘 UI 설
 - Do not copy, publish, or restyle Pilgrimage images. Nested authorization is local review.
 - Do not invent capture chances, camera numbers, speed controls, queues, or any cap besides 20 soldiers per squad and hero exclusion.
 - Do not refresh `browser/SHA256SUMS` unless nested payload bytes actually change in an authorized nested edit.
-- Do not deploy, commit, or hand-edit generated `GAME-LOGIC/site` mirrors from this contract file.
+- Do not deploy, commit, or hand-edit generated `WEB/wiki-source` mirrors from this contract file.

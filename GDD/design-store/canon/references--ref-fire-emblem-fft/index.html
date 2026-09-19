@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fire Emblem Awakening / Final Fantasy Tactics 시스템 대전 — 정본</title>
+<style>
+:root { --ink:#1a1714; --paper:#f4efe4; --line:#c9b896; --metro:#1d4e89; --mute:#6b6256; }
+body { margin:0; font:16px/1.55 "Apple SD Gothic Neo","Noto Sans KR",sans-serif; color:var(--ink); background:var(--paper); }
+main { max-width:880px; margin:0 auto; padding:36px 24px 80px; }
+.kicker { letter-spacing:.14em; font-size:11px; color:var(--mute); }
+h1 { font-family:"Song Myung","Apple Myungjo",serif; font-size:32px; margin:8px 0 12px; }
+section { margin:28px 0; padding:18px; background:#fffdf8; border:1px solid var(--line); }
+.src { font-size:12px; color:var(--mute); }
+</style>
+</head>
+<body>
+<main>
+<p class="kicker">정본 파일 · SQLite</p>
+<p><a href="../" style="color:var(--metro)">설계 목차</a></p>
+<h1>Fire Emblem Awakening / Final Fantasy Tactics 시스템 대전</h1>
+<p class="src">GDD/references/Ref-Fire-Emblem-FFT.md · 113930 bytes · 1822777d67ac91d3bf1bf3bff1af0752c4babb2948ea244a8432d03e2c252aef</p>
+<section>
+<h2>머리글</h2>
+<ul><li>H1 Fire Emblem Awakening / Final Fantasy Tactics 시스템 대전</li>
+<li>H2 1. 개요</li>
+<li>H3 1.1 Fire Emblem Awakening</li>
+<li>H3 1.2 Final Fantasy Tactics</li>
+<li>H3 1.3 혼동하면 안 되는 핵심</li>
+<li>H2 2. 코어 루프</li>
+<li>H3 2.1 Awakening: 전투 성과를 다음 편성과 관계로 전환</li>
+<li>H3 2.2 FFT: 전투 행동이 인물과 직업을 동시에 성장</li>
+<li>H2 3. 진행 구조</li>
+<li>H3 3.1 Awakening의 본편 단계</li>
+<li>H3 3.2 FFT의 본편 단계</li>
+<li>H2 4. 경제 시스템</li>
+<li>H3 4.1 Awakening의 자원과 거래</li>
+<li>H3 4.2 Awakening 연성(Forge)</li>
+<li>H3 4.3 FFT의 자원·장비 경제</li>
+<li>H3 4.4 FFT Proposition/Errand의 완전한 처리 흐름</li>
+<li>H2 5. 캐릭터/파티 시스템</li>
+<li>H3 5.1 Awakening 모집 목록</li>
+<li>H3 5.2 Awakening 성장·재전직·상한</li>
+<li>H3 5.3 Awakening 전체 직업·승급·스킬</li>
+<li>H3 5.4 Awakening 스킬 사전</li>
+<li>H3 5.5 Awakening 지원·결혼</li>
+<li>H3 5.6 Awakening 자녀·외전·계승</li>
+<li>H3 5.7 FFT 부대·모집·직업 성장</li>
+<li>H3 5.8 FFT 일반 20직업 해금표</li>
+<li>H3 5.9 FFT 직업 운용·JP 학습의 특수 규칙</li>
+<li>H3 5.10 부상·죽음·이탈</li>
+<li>H2 6. 전투 시스템</li>
+<li>H3 6.1 Awakening 턴·행동·명령</li>
+<li>H3 6.2 Awakening 명중·피해·치명타</li>
+<li>H3 6.3 Awakening 무기 삼각형·숙련</li>
+<li>H3 6.4 Awakening Pair Up / Dual의 구분과 공식</li>
+<li>H3 6.5 Awakening 지형</li>
+<li>H3 6.6 FFT CT/AT와 시전</li>
+<li>H3 6.7 FFT 피해 공식·무기 계통</li>
+<li>H3 6.8 FFT 명중·방향·고저</li>
+<li>H3 6.9 FFT 별자리 궁합</li>
+<li>H3 6.10 FFT Brave/Faith</li>
+<li>H3 6.11 FFT 지형 패널과 Geomancy — Geo Panel과 구별</li>
+<li>H3 6.12 FFT 주요 상태와 구조 시계</li>
+<li>H2 7. 지도/세계 구조</li>
+<li>H3 7.1 표면의 정의와 수</li>
+<li>H3 7.2 FFT 세계지도·상점·던전의 연결</li>
+<li>H3 7.3 FFT Deep Dungeon / Midlight's Deep</li>
+<li>H3 7.4 FFT Wonders/Artefacts</li>
+<li>H2 8. 외교/세력</li>
+<li>H3 8.1 Awakening</li>
+<li>H3 8.2 FFT</li>
+<li>H2 9. 이벤트/내러티브</li>
+<li>H3 9.1 Awakening 이벤트 유형과 지속성</li>
+<li>H3 9.2 Awakening DLC·통신의 전체 구성</li>
+<li>H3 9.3 FFT 이벤트·선택의 결과</li>
+<li>H2 10. 난이도/압박</li>
+<li>H3 10.1 Awakening 난이도와 실패 조건</li>
+<li>H3 10.2 FFT 난이도와 실패 조건</li>
+<li>H3 10.3 문서의 확정 범위와 남은 미확인 항목</li>
+<li>H2 부록 A. FFT 북미 PS 일반 직업 전체 JP 카탈로그</li>
+<li>H3 A.1 JP·MP·시전시간은 서로 다른 비용</li>
+<li>H2 부록 B. Awakening 클래스별 Pair Up 기본 보너스 전표</li>
+<li>H2 부록 C. 인용 자료 및 검증 방식</li></ul>
+</section>
+</main>
+</body>
+</html>

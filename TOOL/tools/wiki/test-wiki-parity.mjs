@@ -11,7 +11,7 @@ const read = (p) => {
 }
 
 test('4축 게이트 — 항목 수: 색인 대문 16국 행 + 수장', () => {
-  const idx = read('GAME-LOGIC/site/world/index.md')
+  const idx = read('WEB/wiki-source/world/index.md')
   assert.ok(idx, '색인 대문이 없다 — mount + build-world-index를 먼저 실행')
   const rows = (idx.match(/^\| \[/gm) || []).length
   assert.ok(rows >= 16, `16국 표 행 부족: ${rows}`)
@@ -24,15 +24,15 @@ test('4축 게이트 — 정리 방식: README 14섹션 + 대문 판 링크', ()
   assert.ok(rd, 'LORE/README.md 없음')
   const sections = (rd.match(/^## /gm) || []).length
   assert.ok(sections >= 14, `README 섹션 ${sections} < 14`)
-  const idx = read('GAME-LOGIC/site/world/index.md')
+  const idx = read('WEB/wiki-source/world/index.md')
   const links = (idx.match(/^- \[[^\]]+\]\(([^)]+\.html)\)/gm) || [])
   assert.ok(links.length >= 13, `대문 문서 판 링크 ${links.length} < 13`)
 })
 
 test('4축 게이트 — 규칙: 컴포넌트 존재·등록 + 십육국 표 16행', () => {
-  assert.ok(existsSync(resolve(root, 'GAME-LOGIC/site/.vitepress/theme/components/InfoBox.vue')), 'InfoBox.vue 없음')
-  assert.ok(existsSync(resolve(root, 'GAME-LOGIC/site/.vitepress/theme/components/NavBox.vue')), 'NavBox.vue 없음')
-  const theme = read('GAME-LOGIC/site/.vitepress/theme/index.ts')
+  assert.ok(existsSync(resolve(root, 'WEB/wiki-source/.vitepress/theme/components/InfoBox.vue')), 'InfoBox.vue 없음')
+  assert.ok(existsSync(resolve(root, 'WEB/wiki-source/.vitepress/theme/components/NavBox.vue')), 'NavBox.vue 없음')
+  const theme = read('WEB/wiki-source/.vitepress/theme/index.ts')
   assert.ok(theme && theme.includes('InfoBox') && theme.includes('NavBox'), '테마 등록 없음')
   const ss = read('LORE/factions/Sixteen-States.md')
   const dataRows = (ss.match(/^\|(?!\s*국명|\s*---)[^|]+\|/gm) || []).length
@@ -42,7 +42,7 @@ test('4축 게이트 — 규칙: 컴포넌트 존재·등록 + 십육국 표 16�
 })
 
 test('4축 게이트 — 내용물: 이벤트 피드 ≥5', () => {
-  const idx = read('GAME-LOGIC/site/world/index.md')
+  const idx = read('WEB/wiki-source/world/index.md')
   const feed = idx.slice(idx.indexOf('최신 사건'))
   const items = (feed.match(/^- /gm) || []).length
   assert.ok(items >= 5, `피드 항목 ${items} < 5`)

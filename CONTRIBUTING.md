@@ -4,7 +4,7 @@
 
 웹에서 이슈를 열 때는 [이슈 폼](.github/ISSUE_TEMPLATE/job.yml)을 쓴다. 빈 이슈는 끈다. `gh issue create`와 에이전트는 이 문서의 같은 다섯 섹션을 본문에 그대로 넣는다.
 
-카테고리별로 어느 폴더를 열고 무엇을 먼저 하는지는 아래 「어디부터 손대는지」 절이다. 인물 산문은 [인물 등록 템플릿](LORE/Cast-Registration-Template.md)을 복사한다.
+카테고리별로 어느 폴더를 열고 무엇을 먼저 하는지는 아래 「어디부터 손대는지」 절이다. 인물 산문은 [인물 등록 템플릿](./LORE/characters/Cast-Registration-Template.md)을 복사한다.
 
 ## 목표
 
@@ -20,7 +20,7 @@
 | 말 | 뜻 |
 |---|---|
 | 게시 SoT | main의 `LORE/Cast-State-01.md`–`16.md`, `Cast-Index.md`, `Cast-Relations.md`, `Core-Characters.md`. 위키 원본이다. |
-| 공개 문서 | VitePress `GAME-LOGIC/site/`. 로컬은 `npm run docs:dev`, 공개는 `https://seoul-kenshi.vercel.app`. GitHub Wiki는 쓰지 않는다. |
+| 공개 문서 | VitePress `WEB/wiki-source/`. 로컬은 `npm run docs:dev`, 공개는 `https://seoul-kenshi.vercel.app`. GitHub Wiki는 쓰지 않는다. |
 | 미게시·대기 | Cast-Index 보관 표의 상태. 파일 존재나 SHA가 게시 승인이 아니다. |
 | 큐레이션 | 구세대 `docs/cast-*` 조각을 Cast-State SoT와 대조해 게시하거나 폐기하는 일. `git merge` 일괄 적용이 아니다. |
 | 승격 | 권리·BOM·4축 검수와 리드 승인을 통과한 에셋만 런타임 경로에 넣는 일. |
@@ -112,7 +112,7 @@ Wiki:
 ```bash
 node TOOL/tools/wiki/test-build-wiki.mjs
 node TOOL/tools/wiki/verify-cast.mjs --docs LORE --stage all
-node TOOL/tools/wiki/build-wiki.mjs LORE GAME-REFERENCE/assets/wiki <tmp> "$(git rev-parse HEAD)"
+node TOOL/tools/wiki/build-wiki.mjs LORE <empty-asset-dir> <tmp> "$(git rev-parse HEAD)"
 ```
 
 빌드가 실패하면 `https://seoul-kenshi.vercel.app`에 올리지 않는다. GitHub Wiki로 push하지 않는다.
@@ -138,10 +138,10 @@ main의 기존 dirty/staged 파일은 보존한다. 구현은 전용 worktree �
 | --- | --- | --- | --- |
 | 세계관 | `LORE/` — 세계에 존재하는 것: 인물·세력·지역·연대기·경제·기술·문화 | [Home.md](GDD/Home.md), [세계 서사 지도](LORE/World-Narrative-Atlas.md) | 위키 빌드, 금지 용어 |
 | 설정 | `LORE/`, `GDD/` | 계약·도표 페이지, [Intent.md](Intent.md) | 위키 또는 문서 정합 |
-| 인물 | `LORE/Cast-*` | [인물 등록 템플릿](LORE/Cast-Registration-Template.md) | `verify-cast.mjs` |
-| 사건 | 타임라인 | [시나리오 타임라인](LORE/Scenario-Timeline.md) | 위키 빌드 |
+| 인물 | `LORE/Cast-*` | [인물 등록 템플릿](./LORE/characters/Cast-Registration-Template.md) | `verify-cast.mjs` |
+| 사건 | 타임라인 | [시나리오 타임라인](./LORE/chronology/Scenario-Timeline.md) | 위키 빌드 |
 | 이야기 | 서사 배치 | [세계 서사 지도](LORE/World-Narrative-Atlas.md) | 위키 빌드, 출처 충실 |
-| 게임로직 | `GAME-LOGIC/` — 시스템이 작동하는 방식: 프로세스·계약·결정론·벨런스·레퍼런스 분석 | [유니티 구조](GAME-LOGIC/Unity-Architecture.md) 옆의 규칙 페이지 | 위키 빌드 |
+| 게임 설계 정본 | `GDD/` — 제품 방향, 규칙, 결정론, 아키텍처와 레퍼런스 분석 | [유니티 구조](GDD/architecture/Unity-Architecture.md)와 [규칙](GDD/rules/) | 위키 빌드 |
 | 게임 구현 | `GAME/Assets/Janseon/` | 해당 Core/Foundation 스크립트 | EditMode/PlayMode |
 | 유니티 작업 | `Game/` | [GAME/AGENTS.md](GAME/AGENTS.md) | `6000.7.0a5` `-batchmode` |
 | 버그 | 결함 위치 | 재현 로그 | 실패했던 명령 GREEN |
@@ -154,10 +154,10 @@ main의 기존 dirty/staged 파일은 보존한다. 구현은 전용 worktree �
 
 ## 세계관
 
-서울 십육국, 레이어, 역, 회랑, 인물, 세력, 경제, 기술 — **세계에 무엇이 존재하는지**를 고친다. 규칙(어떻게 작동하는가)은 GAME-LOGIC 도메인이다.
+서울 십육국, 레이어, 역, 회랑, 인물, 세력, 경제, 기술은 LORE가 소유한다. 규칙과 설계는 GDD가 소유한다.
 
-- 읽기: [Home.md](GDD/Home.md), [서울과 지하철 레이어](LORE/World-and-Subway-Layers.md), [서울 십육국](LORE/Sixteen-States.md)
-- 쓰기: 해당 위키 페이지. 새 페이지는 [_TEMPLATE.md](GDD/_TEMPLATE.md)의 `domain: world`
+- 읽기: [Home.md](GDD/Home.md), [서울과 지하철 레이어](./LORE/places/World-and-Subway-Layers.md), [서울 십육국](./LORE/factions/Sixteen-States.md)
+- 쓰기: 해당 위키 페이지. 새 페이지는 [_TEMPLATE.md](./WEB/wiki-source/_TEMPLATE.md)의 `domain: world`
 - 하지 말 것: 구현 완료처럼 적기, 생성 위키 손편집
 
 이슈 제목 예: `세계관: …`
@@ -166,7 +166,7 @@ main의 기존 dirty/staged 파일은 보존한다. 구현은 전용 worktree �
 
 규칙·계약·정합 문서. 세계관 산문과 런타임 코드를 한 PR에 섞지 않는다.
 
-- 읽기: [Intent.md](Intent.md), `GDD/adr/`, [가치관과 정책 척도](LORE/Values-and-Policy-Scales.md)
+- 읽기: [Intent.md](Intent.md), `GDD/adr/`, [가치관과 정책 척도](./LORE/culture/Values-and-Policy-Scales.md)
 - 쓰기: 계약 문장과 도표. 라벨 `설정`
 - 게이트: 문서 정합, 필요하면 위키 빌드
 
@@ -174,8 +174,8 @@ main의 기존 dirty/staged 파일은 보존한다. 구현은 전용 worktree �
 
 이름 있는 인물, 관계, 프로필.
 
-1. [인물 카드 계약](LORE/Cast-Profile-Contract.md)을 읽는다.
-2. [인물 등록 템플릿](LORE/Cast-Registration-Template.md)을 복사한다.
+1. [인물 카드 계약](./LORE/characters/Cast-Profile-Contract.md)을 읽는다.
+2. [인물 등록 템플릿](./LORE/characters/Cast-Registration-Template.md)을 복사한다.
 3. 총람·JSON·관계 원장을 같은 변경에 맞춘다.
 4. 초상 마크다운과 실물 사진은 넣지 않는다.
 
@@ -189,7 +189,7 @@ main의 기존 dirty/staged 파일은 보존한다. 구현은 전용 worktree �
 
 개막 전후 시간과 촉발.
 
-- 정본: [시나리오 타임라인](LORE/Scenario-Timeline.md)
+- 정본: [시나리오 타임라인](./LORE/chronology/Scenario-Timeline.md)
 - 상대 연대는 붕괴 N년. 근거 없이 나이를 잠그지 않는다.
 
 ## 이야기
@@ -203,8 +203,8 @@ main의 기존 dirty/staged 파일은 보존한다. 구현은 전용 worktree �
 
 캠페인·전투·정산 규칙 — **시스템이 어떻게 작동하는가**(프로세스·계약·결정론·벨런스·레퍼런스 분석). 코드가 아니라 세계의 사물이 아니라, 그 사이에서 일어나는 상호작용의 설계도다.
 
-- 예: [출격하고 돌아오는 흐름](GAME-LOGIC/Campaign-Loop.md), [실시간 진형·카드 전투](GAME-LOGIC/Realtime-Formation-Card-Battle.md), [같은 선택이 같은 결과가 되나](GAME-LOGIC/Save-and-Determinism.md), [레퍼런스 분석](GAME-LOGIC/Ref-Mechanism-Index.md)
-- LORE(무엇이 존재하는가)와 구분: GAME-LOGIC은 그 존재들이 게임 내에서 어떤 절차로 만나고 충돌하는지를 정의한다.
+- 예: [출격하고 돌아오는 흐름](GDD/rules/Campaign-Loop.md), [실시간 진형·카드 전투](GDD/rules/Realtime-Formation-Card-Battle.md), [같은 선택이 같은 결과가 되나](GDD/rules/Save-and-Determinism.md), [레퍼런스 분석](GDD/references/Ref-Mechanism-Index.md)
+- LORE는 무엇이 존재하는지, GDD는 그 존재들이 게임에서 어떤 절차로 만나고 충돌하는지를 정의한다.
 - 런타임 변경은 `게임 구현`으로 따로 연다.
 
 ## 게임 구현
@@ -219,7 +219,7 @@ main의 기존 dirty/staged 파일은 보존한다. 구현은 전용 worktree �
 
 씬, 에디터, 빌드, batchmode.
 
-- 읽기: [GAME/AGENTS.md](GAME/AGENTS.md), [유니티 구조](GAME-LOGIC/Unity-Architecture.md)
+- 읽기: [GAME/AGENTS.md](GAME/AGENTS.md), [유니티 구조](GDD/architecture/Unity-Architecture.md)
 - 실행: Unity `6000.7.0a5`, `-batchmode`, 전용 백그라운드. GUI 에디터로 검증하지 않는다.
 - 안내: [TOOL/docs/Unity-Headless-Workflow.md](TOOL/docs/Unity-Headless-Workflow.md)
 
@@ -243,7 +243,7 @@ main의 기존 dirty/staged 파일은 보존한다. 구현은 전용 worktree �
 
 런타임 아트는 `GAME/Assets/Janseon/Art/` 하나다.
 
-- 읽기: [캐릭터 미술](GAME-LOGIC/Character-Art-Direction.md), [에셋이 들어오는 길](GDD/Asset-Pipeline.md)
+- 읽기: [캐릭터 미술](GDD/art/Character-Art-Direction.md), [에셋이 들어오는 길](GDD/Asset-Pipeline.md)
 - BOM `look.owner_verdict: accepted` 없이 승격하지 않는다.
 - 인물 초상은 포트레이트 툴 워크스페이스가 준비되기 전에는 생성하지 않는다. 카드만 올린다.
 

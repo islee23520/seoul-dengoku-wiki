@@ -29,13 +29,13 @@
 이름을 바꾸는 뜻이 아닙니다. `출격 인원 선택`은 거점 준비 맥락의 참가자 선택,
 `전투 전 진형 편집`은 조우 이후 교전 전의 위치·방향 편집으로 서로 다릅니다.
 신규 요소 이름의 목표 계약은 [Design §11](../Design.md)에 기록하고,
-현재 `UiElementNames` 구현 여부와 구별합니다. 12면 질문표는 [.omo/decisions/issue-101-ui-ux-decisions.md](../.omo/decisions/issue-101-ui-ux-decisions.md)가 정본입니다. 화면이 그리는 세계는 [기동권 이탈](../LORE/World-Unbinding.md) 이후 2126 서울입니다.
+현재 `UiElementNames` 구현 여부와 구별합니다. 12면 질문표는 [.omo/decisions/issue-101-ui-ux-decisions.md](../.omo/decisions/issue-101-ui-ux-decisions.md)가 정본입니다. 화면이 그리는 세계는 [기동권 이탈](../LORE/overview/World-Unbinding.md) 이후 2126 서울입니다.
 
 2026-09-19 목표의 부대 지휘 화면은 이 보드를 갈아엎지 않습니다. 문서 초안은 [부대 지휘 UI](system-design/total-war-ui/)에 둡니다. 정산 칸의 「복귀」는 POC 보드 이름이지, 원정의 유일한 결말이 아닙니다.
 
 그 초안의 전장 도식은 공간 배치를 설명하는 청사진이며 실제 게임 화면이 아닙니다. 질문 만료 뒤 채택한 설계 기본값으로 일시정지·재개는 실제 상태를 가지고, 정지 중 미리보기·확정을 받습니다. 수락된 명령은 재개 뒤 다음 시뮬레이션 단계에서 입력 순서대로 현재 지시를 교체합니다. 감속·배속·명령 큐 칸은 없습니다. 이 기본값은 소유자 명시 결정이 아닙니다.
 
-출격 단계의 세계 규칙은 [원정](../GAME-LOGIC/Campaign-Loop.md), 런타임 화면 책임은 [유니티 구조](../GAME-LOGIC/Unity-Architecture.md)에서 이어집니다.
+출격 단계의 세계 규칙은 [원정](rules/Campaign-Loop.md), 런타임 화면 책임은 [유니티 구조](architecture/Unity-Architecture.md)에서 이어집니다.
 
 ## 보기 예
 

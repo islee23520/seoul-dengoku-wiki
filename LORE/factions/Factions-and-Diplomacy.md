@@ -1,7 +1,5 @@
 # 세력과 외교
 
-![세력 협상과 통행권의 아이소 관계](https://github.com/islee23520/seoul-kenshi/blob/main/GAME-REFERENCE/assets/wiki/isometric-factions-diplomacy.svg?raw=true)
-
 2026-09-07 위키 도표. 위치·방향·시야 칸 그림은 당시 설명이다. 문서용 평면도이며 실제 게임 화면이 아니다.
 
 세력 간 협상과 통행권 부여는 노선과 역 노드의 신뢰·평판·정통성으로 결정한다.
