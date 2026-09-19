@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { mkdirSync, readdirSync, readFileSync, statSync } from 'node:fs';
+import { mkdirSync, readdirSync, readFileSync, rmSync, statSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
@@ -120,6 +120,10 @@ if (leaked.length) {
 const outRoot = join(repoRoot, 'GDD/design-store');
 const dbPath = join(outRoot, DB_NAME);
 mkdirSync(outRoot, { recursive: true });
+rmSync(join(outRoot, 'canon'), { recursive: true, force: true });
+for (const document of documents) {
+  rmSync(join(outRoot, document.id), { recursive: true, force: true });
+}
 for (const document of documents) {
   putDocument({ dbPath, document });
 }
@@ -127,7 +131,11 @@ const ingested = ingestCanonDir({
   dbPath,
   canonDomains: [
     { root: join(repoRoot, 'LORE'), prefix: 'LORE' },
-    { root: join(repoRoot, 'GAME-LOGIC'), prefix: 'GAME-LOGIC', exclude: (rel) => rel.startsWith('site/') },
+    {
+      root: join(repoRoot, 'GAME-LOGIC'),
+      prefix: 'GAME-LOGIC',
+      exclude: (rel) => rel.startsWith('site/') || rel.startsWith('wiki-react/'),
+    },
     { root: join(repoRoot, 'GDD'), prefix: 'GDD', exclude: (rel) => rel.includes('/') },
   ],
 });

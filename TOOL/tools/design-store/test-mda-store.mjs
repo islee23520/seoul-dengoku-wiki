@@ -12,6 +12,7 @@ import {
   exportIndexPage,
   ingestCanonDir,
   listCanonFiles,
+  listMarkdownFiles,
   putDocument,
   validateDocument,
   verifyStore,
@@ -285,6 +286,43 @@ test('ingestCanonDir excludes project guidance files across canon domains', () =
     assert.equal(ingested.files, 2);
     const rows = listCanonFiles({ dbPath });
     assert.deepEqual(rows.map((row) => row.path), ['FIRST/Alpha.md', 'SECOND/Beta.md']);
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
+});
+
+test('listMarkdownFiles excludes dependency and build output directories', () => {
+  const dir = freshDir();
+  try {
+    mkdirSync(join(dir, 'node_modules', 'pkg'), { recursive: true });
+    mkdirSync(join(dir, 'dist'), { recursive: true });
+    mkdirSync(join(dir, 'src'), { recursive: true });
+    writeFileSync(join(dir, 'node_modules', 'pkg', 'README.md'), '# dependency\n');
+    writeFileSync(join(dir, 'dist', 'README.md'), '# build output\n');
+    writeFileSync(join(dir, 'src', 'Guide.md'), '# guide\n');
+    assert.deepEqual(listMarkdownFiles(dir), ['src/Guide.md']);
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
+});
+
+test('canon domain exclusions can omit an authored publication application', () => {
+  const dir = freshDir();
+  try {
+    const canonRoot = join(dir, 'game-logic');
+    mkdirSync(join(canonRoot, 'wiki-react', 'src', 'content'), { recursive: true });
+    writeFileSync(join(canonRoot, 'Rule.md'), '# 규칙\n');
+    writeFileSync(join(canonRoot, 'wiki-react', 'DESIGN.md'), '# 앱 설계\n');
+    writeFileSync(join(canonRoot, 'wiki-react', 'src', 'content', 'Copy.md'), '# 복사본\n');
+    const dbPath = join(dir, DB_NAME);
+    putDocument({ dbPath, document: SAMPLE });
+    const ingested = ingestCanonDir({
+      dbPath,
+      canonRoot,
+      canonDomains: [{ root: canonRoot, prefix: 'GAME-LOGIC', exclude: (rel) => rel.startsWith('wiki-react/') }],
+    });
+    assert.equal(ingested.files, 1);
+    assert.deepEqual(listCanonFiles({ dbPath }).map((row) => row.path), ['GAME-LOGIC/Rule.md']);
   } finally {
     rmSync(dir, { recursive: true, force: true });
   }
