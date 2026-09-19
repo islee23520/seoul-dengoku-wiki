@@ -14,6 +14,9 @@ final binding repair: a new content receipt note is followed by a receipt commit
 node generate-source-anchor-index.mjs -> source-anchor-index.json and source-line-index.txt generated
 node verify-quality-anchors.mjs -> quality anchors verified: 10
 node --test test-quality-anchors.mjs -> quality anchor self-tests: 3 passed; clean/SHA drift/unknown anchor probes
+node verify-task31-evidence-manifest.mjs -> task31 manifest verified: 16 files
+node --test test-task31-evidence-manifest.mjs -> manifest self-tests: 2 passed; changed-content and inventory probes
+node verify-quality-anchors.mjs -> manual governed source-line claim scan clean; quality anchors verified: 10
 NEUTRALIZE_MUTANT_ID=mutant.subject-only -> exit 1, required-case inventory mismatch and ID absent
 NEUTRALIZE_MUTANT_ID=mutant.parent-chain-noop -> exit 1, required-case inventory mismatch and ID absent
 NEUTRALIZE_MUTANT_ID=mutant.optional-reflog -> exit 1, required-case inventory mismatch and ID absent
