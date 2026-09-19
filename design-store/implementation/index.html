@@ -26,9 +26,9 @@ li { margin:6px 0; }
 <section>
 <h2>한 장</h2>
 <p class="layer">각 칸은 그 요소가 무엇인지.</p>
-<h3>Core</h3><p>ID, 시간, 명령, 사건, 노선, 캠페인, 정산, 실시간 진형·카드 전투</p><p class="src">GAME-LOGIC/Unity-Architecture.md</p>
+<h3>Core</h3><p>| `Janseon.Core` | ID, 시간, 명령, 사건, 노선, 캠페인, 정산, 현재 카드 전투 POC | 금지 |</p><p class="src">GAME-LOGIC/Unity-Architecture.md</p>
 <h3>화면</h3><p>화면은 상태를 직접 수정하지 않고 명령을 보냅니다.</p><p class="src">GAME-LOGIC/Unity-Architecture.md</p>
-<h3>순서</h3><p>아래 검증 단계는 시각 수용·슬롯 연결·시각 게이트를 끝내는 순서다.</p><p class="src">GAME-LOGIC/Development-Roadmap.md</p>
+<h3>순서</h3><p>현재 Unity 전투 Core는 카드 규칙이다. 아래 검증 단계는 그 POC를 끝내는 순서이며, 카드 문법을 새 목표로 올리지 않는다.</p><p class="src">GDD/Development-Roadmap.md</p>
 </section>
 
 <section>
@@ -43,7 +43,7 @@ li { margin:6px 0; }
 <h2>Dynamics</h2>
 <p class="layer">그 규칙이 플레이어 입력과 만나 시간에 따라 만드는 런타임.</p>
 <ul><li><b>원장</b> — 모든 상태 변화는 사건 원장에 기록합니다. <span class="src">GAME-LOGIC/Unity-Architecture.md</span></li>
-<li><b>게이트</b> — 각 단계는 실패하면 다음 단계로 넘어가지 않는다. <span class="src">GAME-LOGIC/Development-Roadmap.md</span></li>
+<li><b>게이트</b> — 각 단계는 실패하면 다음 단계로 넘어가지 않는다. <span class="src">GDD/Development-Roadmap.md</span></li>
 <li><b>현재 모듈</b> — 범위: 이 모듈 하나만 구현합니다. <span class="src">ToDo.md</span></li></ul>
 </section>
 <section>
