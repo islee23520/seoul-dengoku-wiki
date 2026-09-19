@@ -9,5 +9,6 @@
   "actionable_findings": 0,
   "final_receipt_binds": "8700482cfd8d33fcace64394c68fbc3bf19b3200",
   "prior_gate_review": ".omo/evidence/task31-gate-review.md",
-  "temporary_alternate_probes_removed": true
+  "temporary_alternate_probes_removed": true,
+  "mutation_mutants_killed": ["subjectOnlyMutant", "parentChainNoopMutant", "optionalReflogMutant"]
 }

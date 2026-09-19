@@ -2,7 +2,8 @@ git cat-file -t c9940638c4cb22a890c8c4111d5e5b9f55ebec82 -> commit
 git diff --exit-code 3ae995fb8aa39b7c225fce775387e81e24a5416d HEAD -- allowed task-01 paths -> 0
 git rev-list --min-parents=2 c9940638c4cb22a890c8c4111d5e5b9f55ebec82..HEAD -> empty, 0
 node --test task-01-clean-history/verify-lineage.mjs -> 5 passed, 0 failed
-real branch JSON/JSONL input through verify-lineage.mjs -> REAL_LINEAGE_OK; 14 passed, 0 failed
+real branch JSON/JSONL input through verify-lineage.mjs -> REAL_LINEAGE_OK; 16 passed, 0 failed
+node --test verify-lineage.mjs -> 16 passed, including subjectOnlyMutant, parentChainNoopMutant, optionalReflogMutant killed subtests
 git log --reverse --format=%H%x09%P base..HEAD -> JSON `{hash,parents}` records
 git reflog --format=%H%x09%gs branch -> JSON `{hash,action}` records; base branch creation excluded from range evidence
 node validate-conflict-disposition.mjs conflict-disposition.tsv -> rows 10, errors [], 0

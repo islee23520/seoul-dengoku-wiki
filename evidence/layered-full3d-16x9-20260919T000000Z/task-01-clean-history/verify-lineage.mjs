@@ -87,8 +87,68 @@ test('rejects non-commit reflog action for range commit', () => {
 test('accepts valid four-commit actual-shaped chain', () => {
   assert.equal(validateLineage(valid4), true);
 });
-test('mutation proof distinguishes subject, parent-chain, and required-reflog checks', () => {
-  assert.doesNotThrow(() => validateLineage({ ...valid4, reflog: valid4.reflog.replace('ordinary', 'amend policy') }));
-  assert.throws(() => validateLineage({ ...valid4, baseHash: h('9') }), /wrong first parent/);
-  assert.throws(() => validateLineage({ ...valid4, reflog: valid4.reflog.split('\n').slice(0, 3).join('\n') }), /missing reflog/);
+test('kills subjectOnlyMutant with subject and action fixtures', () => {
+  function subjectOnlyMutant({ commits, reflog }) {
+    const commitRecords = commits.trim().split('\n').map(JSON.parse);
+    const reflogRecords = reflog.trim().split('\n').filter(Boolean).map(JSON.parse);
+    if (commitRecords.some(({ subject }) => subject?.includes('amend'))) return false;
+    return reflogRecords.length > 0;
+  }
+
+  const ordinary = {
+    ...valid4,
+    commits: valid4.commits.replace('{"hash"', '{"subject":"document amend policy","hash"'),
+  };
+  assert.equal(validateLineage(ordinary), true);
+  assert.notEqual(subjectOnlyMutant(ordinary), true);
+
+  const amended = {
+    ...valid4,
+    commits: valid4.commits.replace('{"hash"', '{"subject":"harmless subject","hash"'),
+    reflog: valid4.reflog.replace('commit: ordinary', 'commit (amend)'),
+  };
+  assert.throws(() => validateLineage(amended), /non-ordinary/);
+  assert.notEqual(subjectOnlyMutant(amended), false);
+});
+test('kills parentChainNoopMutant with disconnected parent fixture', () => {
+  function parentChainNoopMutant({ baseHash, commits, reflog }) {
+    const commitRecords = commits.trim().split('\n').map(JSON.parse);
+    const reflogRecords = reflog.trim().split('\n').filter(Boolean).map(JSON.parse);
+    const hashes = [baseHash, ...commitRecords.flatMap(({ hash, parents }) => [hash, ...parents])];
+    return hashes.every((hash) => HASH.test(hash))
+      && commitRecords.every(({ parents }) => parents.length === 1)
+      && reflogRecords.length >= commitRecords.length;
+  }
+
+  const disconnected = {
+    ...valid4,
+    commits: [
+      { hash: h('1'), parents: [h('0')] },
+      { hash: h('2'), parents: [h('9')] },
+      { hash: h('3'), parents: [h('2')] },
+      { hash: h('4'), parents: [h('3')] },
+    ].map(JSON.stringify).join('\n'),
+  };
+  assert.throws(() => validateLineage(disconnected), /disconnected/);
+  assert.equal(parentChainNoopMutant(disconnected), true);
+});
+test('kills optionalReflogMutant when commit evidence is missing', () => {
+  function optionalReflogMutant({ baseHash, commits }) {
+    const commitRecords = commits.trim().split('\n').map(JSON.parse);
+    return commitRecords.length > 0
+      && commitRecords[0].parents.length === 1
+      && commitRecords.every(({ hash, parents }) => HASH.test(hash) && parents.length === 1 && parents.every((parent) => HASH.test(parent)))
+      && HASH.test(baseHash);
+  }
+
+  const missingEvidence = {
+    baseHash: h('0'),
+    commits: [
+      { hash: h('1'), parents: [h('0')] },
+      { hash: h('2'), parents: [h('1')] },
+    ].map(JSON.stringify).join('\n'),
+    reflog: JSON.stringify({ hash: h('1'), action: 'commit: ordinary' }),
+  };
+  assert.throws(() => validateLineage(missingEvidence), /missing reflog/);
+  assert.equal(optionalReflogMutant(missingEvidence), true);
 });

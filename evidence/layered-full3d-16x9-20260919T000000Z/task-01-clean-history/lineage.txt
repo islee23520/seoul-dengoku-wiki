@@ -8,5 +8,6 @@ structured commit JSONL (captured before follow-up commit):
 structured reflog JSONL command: git reflog --format=%H%x09%gs branch, then JSON objects `{hash,action}`
 structured reflog JSONL includes the four range commit records with `commit:` actions; the base branch-creation record is outside range and is permitted.
 reflog inspected: no `commit (amend)` action and no merge parent.
+mutation proof: 3 executable mutants killed; subject/action, parent-chain, and required-reflog fixtures use literal expected outcomes.
 merge_count: 0
 amend_count: 0
