@@ -55,6 +55,10 @@
 
 세 mutant는 production `validateLineage`를 호출하지 않으며, expected 값은 literal `true`/`false`로 고정되어 있다. 각 mutation case는 `expectMutantKilled`가 proof token을 반환해야만 ID를 등록한다. `NEUTRALIZE_MUTANT_ID`로 각 call을 무력화한 isolated copy는 모두 nonzero와 해당 ID 누락 inventory를 냈다. 따라서 테스트는 구현 미러링·tautology·삭제만 통과하는 빈 body가 아니다.
 
+## Generated anchor authority
+
+Quality claims reference stable generated IDs, not handwritten source ranges: [anchor:runner-inventory], [anchor:mutant-proof-helper], [anchor:structural-validator], [anchor:subject-only-mutant], [anchor:parent-chain-noop-mutant], [anchor:optional-reflog-mutant], [anchor:inventory-completion], [anchor:independent-expected-ids], [anchor:receipt-schema-verifier], and [anchor:tamper-tests]. The generated `source-anchor-index.json` records token-derived ranges and SHA-256 values; `verify-quality-anchors.mjs` rejects stale source or unknown anchors. Self-tests cover clean acceptance, source SHA drift, and unknown quality anchor rejection.
+
 ## 판정
 
 PASS. 기존 task-01 gate report는 `evidence/task-01-gate-review.md`에 경로로 결속하며, 이 리뷰는 누락된 remove-ai-slops/programming 관점과 negative fixture 요구를 독립적으로 보강한다.

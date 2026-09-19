@@ -1,12 +1,30 @@
-verify-lineage.mjs lines=191
-  inventory=6-34
-  structural-validator=37-76
-  subjectOnlyMutant=128-144
-  parentChainNoopMutant=145-166
-  optionalReflogMutant=167-186
-  inventory-assertion=188-191
-verify-required-lineage-cases.mjs lines=28
-  expected-independent-ids=3-10
-  schema-and-exact-comparison=12-28
-test-required-lineage-cases.mjs lines=28
-  independent-tamper-fixtures=7-25
+runner-inventory verify-lineage.mjs:6-37 sha256=73be9456fee12a6329a8d687e862229e1b4e351ee120b578c666ab992310f428
+  const REQUIRED_CASE_IDS = Object.freeze([
+  function parseRecords(input, kind) {
+mutant-proof-helper verify-lineage.mjs:21-27 sha256=73be9456fee12a6329a8d687e862229e1b4e351ee120b578c666ab992310f428
+  function expectMutantKilled(id, mutantActual, literalExpected) {
+  function writeRequiredReceipt() {
+structural-validator verify-lineage.mjs:51-75 sha256=73be9456fee12a6329a8d687e862229e1b4e351ee120b578c666ab992310f428
+  export function validateLineage({ baseHash, commits, reflog }) {
+  const h = (digit) => digit.repeat(40);
+subject-only-mutant verify-lineage.mjs:122-136 sha256=73be9456fee12a6329a8d687e862229e1b4e351ee120b578c666ab992310f428
+  function subjectOnlyMutant({ commits, reflog }) {
+  const amended = {
+parent-chain-noop-mutant verify-lineage.mjs:146-155 sha256=73be9456fee12a6329a8d687e862229e1b4e351ee120b578c666ab992310f428
+  function parentChainNoopMutant({ baseHash, commits, reflog }) {
+  const disconnected = {
+optional-reflog-mutant verify-lineage.mjs:168-176 sha256=73be9456fee12a6329a8d687e862229e1b4e351ee120b578c666ab992310f428
+  function optionalReflogMutant({ baseHash, commits }) {
+  const missingEvidence = {
+inventory-completion verify-lineage.mjs:188-188 sha256=73be9456fee12a6329a8d687e862229e1b4e351ee120b578c666ab992310f428
+  test('writes exact required case inventory', () => {
+  test('writes exact required case inventory', () => {
+independent-expected-ids verify-required-lineage-cases.mjs:3-12 sha256=1bdd884a70056fa420aea102fe7698f23a245ee18d816ac8806011ba9a413c3b
+  const EXPECTED_REQUIRED_CASE_IDS = Object.freeze([
+  const receiptPath = process.argv[2];
+receipt-schema-verifier verify-required-lineage-cases.mjs:18-18 sha256=1bdd884a70056fa420aea102fe7698f23a245ee18d816ac8806011ba9a413c3b
+  function validateArray(name) {
+  function validateArray(name) {
+tamper-tests test-required-lineage-cases.mjs:9-28 sha256=dbada19dad3b2efc10cecf7f31085f28bc51ba3349dc49b890d00c84d42e7cfa
+  const clean = { required: [...ids], passed: [...ids] };
+  console.log('receipt tamper probes: 8 passed');
