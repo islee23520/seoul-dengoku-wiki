@@ -30,6 +30,23 @@
 - prose pinning: subject 텍스트를 파싱하거나 특정 문장을 고정하지 않는다.
 - 불필요한 추상화·호환성 shim·dead code는 없다.
 
+## 독립 receipt authority
+
+`verify-required-lineage-cases.mjs:3-10`은 production runner와 별개의 frozen 16-ID literal authority를 가진다. `verify-required-lineage-cases.mjs:12-21`은 object-only schema, `required`/`passed` 배열, string·unique·sorted exact equality를 각각 검사한다. clean receipt는 accept하고, 양 배열에 extra를 추가하거나 `struct.valid-chain`을 양쪽에서 삭제하거나, duplicate·required-only·passed-only·wrong-type·nonstring을 tamper한 8개 temporary probe는 모두 nonzero였다. 기대 목록을 receipt에서 읽지 않으므로 양 배열을 일관되게 변조해도 통과하지 않는다.
+
+## 현재 source line anchors
+
+- runner inventory: `verify-lineage.mjs:6-19`
+- mutation proof helper: `verify-lineage.mjs:21-24`
+- exact producer comparison: `verify-lineage.mjs:27-34`
+- parent/reflog structural checks: `verify-lineage.mjs:37-76`
+- `subjectOnlyMutant` deletion proof: `verify-lineage.mjs:128-153`
+- `parentChainNoopMutant` deletion proof: `verify-lineage.mjs:155-166`
+- `optionalReflogMutant` deletion proof: `verify-lineage.mjs:167-186`
+- inventory completion assertion: `verify-lineage.mjs:188-191`
+- independent receipt verifier: `verify-required-lineage-cases.mjs:3-28`
+- receipt tamper probes: `test-required-lineage-cases.mjs:7-25`
+
 ### 실제 mutation proof와 deletion protection
 
 - `subjectOnlyMutant` (`verify-lineage.mjs:174-191`)는 subject의 `amend`만 보고 reflog action을 무시한다. ordinary subject fixture는 correct `true`인데 mutant가 `false`가 되고, harmless subject + `commit (amend)` fixture는 correct reject인데 mutant가 accept하여 두 변이가 모두 killed된다.

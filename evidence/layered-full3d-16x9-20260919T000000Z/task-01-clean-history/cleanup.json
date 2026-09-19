@@ -12,5 +12,7 @@
   "temporary_alternate_probes_removed": true,
   "mutation_mutants_killed": ["subjectOnlyMutant", "parentChainNoopMutant", "optionalReflogMutant"],
   "required_case_count": 16,
-  "deletion_probes_nonzero": ["mutant.subject-only", "mutant.parent-chain-noop", "mutant.optional-reflog"]
+  "deletion_probes_nonzero": ["mutant.subject-only", "mutant.parent-chain-noop", "mutant.optional-reflog"],
+  "receipt_tamper_probes_passed": 8,
+  "receipt_authority": "verify-required-lineage-cases.mjs frozen EXPECTED_REQUIRED_CASE_IDS"
 }

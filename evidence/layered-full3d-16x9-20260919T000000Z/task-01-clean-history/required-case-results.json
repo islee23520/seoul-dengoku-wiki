@@ -1,5 +1,5 @@
 {
-  "passedRequiredCases": [
+  "passed": [
     "mutant.optional-reflog",
     "mutant.parent-chain-noop",
     "mutant.subject-only",
@@ -17,7 +17,7 @@
     "struct.unknown-reflog",
     "struct.valid-chain"
   ],
-  "requiredCaseIds": [
+  "required": [
     "mutant.optional-reflog",
     "mutant.parent-chain-noop",
     "mutant.subject-only",

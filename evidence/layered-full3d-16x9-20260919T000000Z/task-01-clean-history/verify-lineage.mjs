@@ -28,7 +28,7 @@ function writeRequiredReceipt() {
   const passed = [...passedRequiredCases].sort();
   const required = [...REQUIRED_CASE_IDS].sort();
   if (passed.length !== required.length || passed.some((id, index) => id !== required[index])) throw new Error('required case inventory mismatch');
-  const receipt = { passedRequiredCases: passed, requiredCaseIds: required };
+  const receipt = { passed, required };
   const output = process.env.REQUIRED_CASE_RECEIPT;
   if (output) writeFileSync(output, `${JSON.stringify(receipt, null, 2)}\n`);
   return receipt;
@@ -187,5 +187,5 @@ test('kills optionalReflogMutant when commit evidence is missing', () => runRequ
 
 test('writes exact required case inventory', () => {
   const receipt = writeRequiredReceipt();
-  assert.deepEqual(receipt.passedRequiredCases, receipt.requiredCaseIds);
+  assert.deepEqual(receipt.passed, receipt.required);
 });

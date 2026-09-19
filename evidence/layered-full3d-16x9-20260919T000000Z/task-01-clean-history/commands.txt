@@ -5,6 +5,7 @@ node --test task-01-clean-history/verify-lineage.mjs -> 5 passed, 0 failed
 real branch JSON/JSONL input through verify-lineage.mjs -> REAL_LINEAGE_OK; 16 passed, 0 failed
 node --test verify-lineage.mjs with REQUIRED_CASE_RECEIPT -> 17 passed, exact 16-ID inventory
 node verify-required-lineage-cases.mjs required-case-results.json -> exit 0
+node --test test-required-lineage-cases.mjs -> receipt tamper probes: 8 passed; clean accept and all tamper variants reject
 NEUTRALIZE_MUTANT_ID=mutant.subject-only -> exit 1, required-case inventory mismatch and ID absent
 NEUTRALIZE_MUTANT_ID=mutant.parent-chain-noop -> exit 1, required-case inventory mismatch and ID absent
 NEUTRALIZE_MUTANT_ID=mutant.optional-reflog -> exit 1, required-case inventory mismatch and ID absent
