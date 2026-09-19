@@ -15,7 +15,7 @@
 | 마지막 검증 커밋 | `c485bc84629c39e978889f1585ade92bef4ceda4` |
 | 출처층 | original-fiction |
 | 출처 앵커 | Cast-Index.md, Sixteen-States.md, Research-Sources.md |
-| 의존 문서 | Cast-Index.md, Sixteen-States.md, Unofficial-Fan-AU-Notice.md |
+| 의존 문서 | Cast-Index.md, Sixteen-States.md, Research-Sources.md |
 | 관련 식별자 | S01–S16, HC01–HC14, HP01–HP10 |
 | 투영 대상 | Operating-Houses.md |
 | 변경 원장 항목 | CL-0018 |
@@ -94,7 +94,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     "dependencies": [
       "Cast-Index.md",
       "Sixteen-States.md",
-      "Unofficial-Fan-AU-Notice.md"
+      "Research-Sources.md"
     ],
     "related_ids": [
       "HC01",
@@ -8628,7 +8628,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "source_anchors": [
         "docs/game-logic/Sixteen-States.md",
         "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        ".omo/research-private/nippon-sangoku-canon-bridge.md"
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -8729,7 +8729,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "source_anchors": [
         "docs/game-logic/Sixteen-States.md",
         "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        ".omo/research-private/nippon-sangoku-canon-bridge.md"
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [
@@ -8830,7 +8830,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "source_anchors": [
         "docs/game-logic/Sixteen-States.md",
         "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY",
-        "docs/game-logic/Unofficial-Fan-AU-Notice.md"
+        "docs/game-logic/Research-Sources.md#SRC-SEOUL-FICTION-BOUNDARY"
       ],
       "revision": 1,
       "projection_targets": [

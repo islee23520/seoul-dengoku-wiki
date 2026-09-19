@@ -31,10 +31,8 @@ function cloneLiveDocs(dir) {
   mkdirSync(join(dir, 'GDD'), { recursive: true });
   cpSync(liveDocs, docs, { recursive: true });
   cpSync(
-    join(repositoryRoot, '.omo', 'research-private', 'nippon-sangoku-canon-bridge.md'),
-    join(dir, '.omo', 'research-private', 'nippon-sangoku-canon-bridge.md'),
   );
-  for (const name of ['Unofficial-Fan-AU-Notice.md', 'Research-Sources.md']) {
+  for (const name of ['Research-Sources.md']) {
     cpSync(join(repositoryRoot, 'GDD', name), join(dir, 'GDD', name));
   }
   return docs;

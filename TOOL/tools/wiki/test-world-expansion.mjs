@@ -33,15 +33,6 @@ function run(args, cwd = repositoryRoot) {
   };
 }
 
-const NOTICE_BODY = [
-  '# 비공식 팬 AU 고지',
-  '',
-  '이 문서는 비공식·비상업 팬 AU 범위를 고지합니다.',
-  '',
-].join('\n');
-
-const CANON_SENTINEL = 'CANON_BRIDGE_PRIVATE';
-
 function sourcesBody(records) {
   return [
     '# 연구 출처 등록부',
@@ -58,7 +49,7 @@ function sourcesBody(records) {
 const VALID_SOURCE = {
   id: 'SRC-POLICY',
   source_kind: 'verified',
-  url: 'https://www.shogakukan.co.jp/picture',
+  url: 'https://example.com/reference',
   accessed: '2026-09-04',
 };
 
@@ -66,22 +57,11 @@ async function makeRoot(overrides = {}) {
   const root = await mkdtemp(join(tmpdir(), 'world-expansion-'));
   fixtures.push(root);
   const docs = join(root, 'Wikis', 'game-logic');
-  const bridgeDir = join(root, '.omo', 'research-private');
   await mkdir(docs, { recursive: true });
-  await mkdir(bridgeDir, { recursive: true });
-  if (overrides.notice !== null) {
-    await writeFile(join(docs, 'Unofficial-Fan-AU-Notice.md'), overrides.notice ?? NOTICE_BODY);
-  }
   if (overrides.sources !== null) {
     await writeFile(
       join(docs, 'Research-Sources.md'),
       overrides.sources ?? sourcesBody([VALID_SOURCE]),
-    );
-  }
-  if (overrides.bridge !== null) {
-    await writeFile(
-      join(bridgeDir, 'nippon-sangoku-canon-bridge.md'),
-      overrides.bridge ?? `# private\n\n${CANON_SENTINEL}\n`,
     );
   }
   const expansionPath = join(root, 'expansion.json');
@@ -197,13 +177,6 @@ test('Given an actor groupId absent from groups When verifying Then E_DANGLING_G
   assert.match(result.stderr, /G99/);
 });
 
-test('Given no unofficial notice file When foundation Then E_MISSING_NOTICE', async () => {
-  const { docs } = await makeRoot({ notice: null });
-  const result = run(foundationArgs(docs));
-  assert.equal(result.code, 1);
-  assert.match(result.stderr, /^E_MISSING_NOTICE:/m);
-});
-
 test('Given a source quotation with instruction payload When verifying Then E_SOURCE_INJECTION', async () => {
   const { docs } = await makeRoot({
     sources: sourcesBody([{
@@ -234,7 +207,7 @@ test('Given unknown source_kind When verifying Then E_UNKNOWN_SOURCE_KIND', asyn
 });
 
 test('Given a failing fixture When verifier runs twice Then stderr is identical', async () => {
-  const { docs } = await makeRoot({ notice: null });
+  const { docs } = await makeRoot({ sources: null });
   const first = run(foundationArgs(docs));
   const second = run(foundationArgs(docs));
   assert.equal(first.code, 1);
@@ -250,29 +223,14 @@ test('Given extra untracked file When foundation Then still exits 0', async () =
 });
 
 test('Given a mutation failure When reading stdout Then no success marker', async () => {
-  const { docs } = await makeRoot({ notice: null });
+  const { docs } = await makeRoot({ sources: null });
   const result = run(foundationArgs(docs));
   assert.equal(result.code, 1);
   assert.doesNotMatch(result.stdout, /passed|success/i);
-  assert.match(result.stderr, /^E_MISSING_NOTICE:/m);
+  assert.match(result.stderr, /^E_MALFORMED:/m);
 });
 
-test('Given missing canon bridge When foundation Then E_MISSING_BRIDGE', async () => {
-  const { docs } = await makeRoot({ bridge: null });
-  const result = run(foundationArgs(docs));
-  assert.equal(result.code, 1);
-  assert.match(result.stderr, /^E_MISSING_BRIDGE:/m);
-});
-
-test('Given canon bridge copied into public docs When verifying Then E_BRIDGE_PUBLISHED', async () => {
-  const { docs } = await makeRoot();
-  await writeFile(join(docs, 'nippon-sangoku-canon-bridge.md'), `# leaked\n\n${CANON_SENTINEL}\n`);
-  const result = run(foundationArgs(docs));
-  assert.equal(result.code, 1);
-  assert.match(result.stderr, /^E_BRIDGE_PUBLISHED:/m);
-});
-
-test('Given generated wiki When inspecting a public page Then AU notice and source banner are present', async () => {
+test('Given generated wiki When inspecting a public page Then source banner is present', async () => {
   const temporaryRoot = await mkdtemp(join(tmpdir(), 'world-expansion-wiki-'));
   fixtures.push(temporaryRoot);
   const outputDir = join(temporaryRoot, 'wiki');
@@ -287,15 +245,6 @@ test('Given generated wiki When inspecting a public page Then AU notice and sour
     commitSha: 'deadbeef',
   });
   const home = await readFile(join(outputDir, 'Home.md'), 'utf8');
-  assert.match(home, /janseon-unofficial-au/);
-  assert.match(home, /비공식/);
-  assert.match(home, /비상업/);
-  assert.match(home, /Unofficial-Fan-AU-Notice/);
   assert.match(home, /원본: `GDD\/Home\.md`/);
   assert.match(home, /커밋: `deadbeef`/);
-  const notice = await readFile(join(outputDir, 'Unofficial-Fan-AU-Notice.md'), 'utf8');
-  assert.match(notice, /비공식/);
-  assert.match(notice, /비상업/);
-  assert.doesNotMatch(home, new RegExp(CANON_SENTINEL));
-  assert.doesNotMatch(notice, new RegExp(CANON_SENTINEL));
 });

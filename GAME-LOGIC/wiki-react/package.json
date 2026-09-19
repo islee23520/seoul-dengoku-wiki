@@ -9,7 +9,11 @@
     "build": "npm run generate && tsc -b && vite build && node scripts/copy-static-services.mjs",
     "preview": "vite preview",
     "test:links": "node scripts/check-links.mjs",
-    "test:contract": "node scripts/check-contract.mjs"
+    "test:contract": "node scripts/check-contract.mjs",
+    "test:states": "node --test scripts/test-state-routes.mjs"
+    ,"test:assets": "node --test scripts/test-wiki-assets.mjs",
+    "test:people": "node --test scripts/test-people-index.mjs"
+    ,"test:discovery": "node --test scripts/test-discovery-index.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",

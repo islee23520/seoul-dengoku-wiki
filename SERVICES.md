@@ -11,12 +11,20 @@
 
 ### 자체 호스팅 표면 갱신 절차
 
-새 정적 문서를 게시할 때는 해당 서브 경로만 추가하거나 갱신한다. 현재 루트와 다른 서비스의 파일은 보존한다. 아래 전체 번들 절차는 최신 공식 위키 산출물과 모든 서비스가 함께 준비됐을 때만 사용하며, 예전 허브 파일을 루트에 덮는 근거로 삼지 않는다.
+배포는 `TOOL/tools/deploy/`의 Docker 도구가 소유한다. 위키나 등록 페이지를 수동으로 복사하지 않는다.
 
-1. `npm --prefix GAME-LOGIC/site run docs:build` — `site/{world,rules,design}` 스테이징(mount.mjs 산출물) 기준.
-2. 현재 공식 위키 루트와 `GAME/play`, `GAME-REFERENCE/ui-layout-moodboard`, `GAME-REFERENCE/portrait-demo`, `GAME-REFERENCE/ui-ux-refs`, `GDD/system-design`의 서비스 경로를 유지한다. `design-store/`는 `node TOOL/tools/design-store/seed-from-canon.mjs`로 생성한다. 다른 세션이 배포한 파일과 `hashmap.json`을 누락시키지 않는다.
-3. `node GAME-LOGIC/site/scripts/gate.mjs` PASS 확인.
-4. tar로 묶어 `desktop:E:/git/seoul-dengoku-web/site`를 교체한다. Windows tar는 `E:` 절대경로를 원격 호스트로 오인하므로 상대경로로 푼다. macOS tar의 `._*` 파일은 제거한다. nginx는 바인드 마운트라 즉시 반영된다.
+```bash
+# Docker 안에서 정본 재생성·게이트·전체 허브 스테이징만 수행
+npm --prefix TOOL/tools run deploy:hub:build
+
+# 같은 Docker 빌드 후 Windows Docker/nginx에 원자 배포하고 실서버 검증
+npm --prefix TOOL/tools run deploy:hub -- --host oliver@100.77.98.25
+```
+
+1. 저장소는 Docker에 읽기 전용으로 마운트된다. 컨테이너가 별도 작업 사본을 만들고 `mount.mjs`, `build-world-index.mjs`, VitePress 빌드·게이트, React 빌드·232문서 계약·링크 게이트를 실행한다.
+2. `TOOL/tools/deploy/hub-pages.json`이 `/play/`, `/system-design/`, `/ui-layout-moodboard/`, `/portrait-demo/`, `/portrait-gen/`, `/ui-ux-refs/`, `/design-store/`의 소스와 필수 진입 파일을 선언한다. 페이지를 추가하거나 옮길 때는 이 파일만 갱신한다.
+3. 산출물은 `.omo/deploy/hub/`의 `seoul-dengoku-site.tar`, `deployment-manifest.json`, SHA-256, nginx·Windows 배포·검사 파일이다. `.omo/`는 계속 untracked다.
+4. Windows에서는 `site-next`를 검증한 뒤 `site`와 원자 교체하고 Docker nginx를 재시작한다. 배포 후 232개 공식 위키 문서·호환 URL·회귀 URL과 등록 페이지 전부를 localhost:8080에서 검사한다.
 
 ## 현재 구성
 
@@ -33,7 +41,7 @@
 | `/system-design/regions/` | `GDD/system-design/regions/` | 서울 25구·427동 지역 총람. 2026-09-13 |
 | `/design-store/` | `GDD/design-store/` | MDA 시트 + LORE 정본 전량. SQLite에서 렌더한 HTML |
 | `/ui-ux-refs/` | `GAME-REFERENCE/ui-ux-refs/` | UI/UX 레퍼런스 취합. 이슈 #101. 2026-09-14 |
-| `/design/` `/world/` `/rules/` | `GAME-LOGIC/site/`(VitePress 빌드) | 문서 사이트 영역 |
+| `/design/` `/world/` `/rules/` | `GAME-LOGIC/wiki-react/` + 정본 `GDD/`·`LORE/`·`GAME-LOGIC/` | React 공식 위키 셸. VitePress는 정본 렌더·링크 품질 게이트에 사용 |
 
 ## 등록 기준
 

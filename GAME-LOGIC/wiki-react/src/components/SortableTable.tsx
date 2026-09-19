@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 interface SortableTableProps {
   headers: string[]
@@ -36,7 +37,7 @@ export default function SortableTable({ headers, rows }: SortableTableProps) {
         cell.badge === 'power' ? 'bg-red-50 text-red-700' : 'bg-green-50 text-green-700'
       }`}>{cell.text}</span>
     }
-    if (cell.link) return <a href={cell.link} className="font-medium text-accent hover:underline">{cell.text}</a>
+    if (cell.link) return <Link to={cell.link} className="font-medium text-accent hover:underline">{cell.text}</Link>
     return cell.text
   }
 

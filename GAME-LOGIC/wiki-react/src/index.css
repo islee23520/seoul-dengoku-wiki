@@ -219,6 +219,42 @@ summary:focus-visible {
   text-wrap: pretty;
 }
 
+.state-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-block-start: 1px solid var(--wiki-line);
+  border-inline-start: 1px solid var(--wiki-line);
+  margin-block-end: 2rem;
+}
+
+.state-detail-grid > div {
+  border-block-end: 1px solid var(--wiki-line);
+  border-inline-end: 1px solid var(--wiki-line);
+  padding: 0.85rem 1rem;
+}
+
+.state-detail-grid dt,
+.people-search span {
+  color: var(--wiki-muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.state-detail-grid dd { margin-block-start: 0.25rem; }
+.people-search { display: grid; gap: 0.4rem; margin-block-end: 1rem; }
+.people-search input { border: 1px solid var(--wiki-line); background: var(--wiki-paper); padding: 0.7rem 0.8rem; width: min(100%, 32rem); }
+.people-table { min-inline-size: 48rem; width: 100%; border-collapse: collapse; }
+.people-table th, .people-table td { border: 1px solid var(--wiki-line); padding: 0.55rem 0.7rem; text-align: start; white-space: nowrap; }
+.people-table th { background: var(--wiki-nav); color: white; }
+.document-index-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr)); gap: 0.6rem; }
+.document-index-grid a { display: grid; gap: 0.25rem; border: 1px solid var(--wiki-line); background: var(--wiki-paper); color: var(--wiki-text); padding: 0.75rem; text-decoration: none; }
+.document-index-grid a:hover { border-color: var(--wiki-accent); }
+.document-index-grid span { color: var(--wiki-muted); font-size: 0.75rem; }
+
+@media (max-width: 40rem) {
+  .state-detail-grid { grid-template-columns: minmax(0, 1fr); }
+}
+
 @media (max-width: 63.99rem) {
   .wiki-article-grid {
     grid-template-columns: minmax(0, 1fr);

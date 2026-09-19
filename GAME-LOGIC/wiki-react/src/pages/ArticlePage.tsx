@@ -4,7 +4,7 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import type { Components } from 'react-markdown'
 import { wikiCatalog, type WikiDomain } from '../generated/wikiCatalog'
-import { normalizeWikiHref } from '../wikiRouting'
+import { normalizeWikiHref, toWikiPath } from '../wikiRouting'
 
 const markdownModules = import.meta.glob<string>('../content/**/*.md', {
   query: '?raw',
@@ -20,7 +20,7 @@ const markdownComponents: Components = {
     if (normalizedHref.startsWith('/world/') || normalizedHref.startsWith('/rules/') || normalizedHref.startsWith('/design/')) {
       return <Link to={normalizedHref} {...props}>{children}</Link>
     }
-    return <a href={normalizedHref} rel={normalizedHref.startsWith('http') ? 'noreferrer' : undefined} {...props}>{children}</a>
+    return <a href={normalizedHref.startsWith('/') ? toWikiPath(normalizedHref) : normalizedHref} rel={normalizedHref.startsWith('http') ? 'noreferrer' : undefined} {...props}>{children}</a>
   },
   table: ({ children }) => (
     <div className="wiki-table-wrap">

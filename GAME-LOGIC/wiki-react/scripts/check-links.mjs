@@ -7,7 +7,7 @@ const repo = resolve(root, '../..')
 const source = await readFile(resolve(root, 'src/wikiLinks.ts'), 'utf8')
 const catalogSource = await readFile(resolve(root, 'src/generated/wikiCatalog.ts'), 'utf8')
 const paths = [...source.matchAll(/:\s*'([^']+)'/g)].map((match) => match[1])
-const spaRoutes = new Set(['/', '/states'])
+const spaRoutes = new Set(['/', '/states', '/documents', '/people'])
 const catalogRoutes = new Set([...catalogSource.matchAll(/route: '([^']+)'/g)].map((match) => match[1]))
 
 const failures = []

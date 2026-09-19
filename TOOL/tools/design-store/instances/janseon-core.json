@@ -13,8 +13,8 @@
       },
       {
         "heading": "시작",
-        "body": "플레이어는 영웅이 아니다. 2126년 서울, 어느 역 앞에 선 사람이다.",
-        "sourcePath": "GDD/Game-Thesis.md"
+        "body": "무명으로 흘러드는 것은 착생 갈래 하나다. 혈연과 소속을 가진 몸으로 시작할 수도 있다.",
+        "sourcePath": "GAME-LOGIC/Game-Thesis.md"
       },
       {
         "heading": "시야",
@@ -27,8 +27,13 @@
         "sourcePath": "Intent.md"
       },
       {
+        "heading": "격자",
+        "body": "전략맵은 3D 하이트맵으로 서울 전역을 세운다(결정 10).",
+        "sourcePath": "GAME-LOGIC/Game-Thesis.md"
+      },
+      {
         "heading": "루프",
-        "body": "거점에서 길을 나선다. 반드시 돌아오라는 뜻이 아니다.",
+        "body": "마주치면 말하거나 숨거나 붙는다.",
         "sourcePath": "GAME-LOGIC/Campaign-Loop.md"
       },
       {
@@ -38,8 +43,8 @@
       },
       {
         "heading": "정산",
-        "body": "전투든 비전투 조우든 결과는 한 번만 원장에 남는다.",
-        "sourcePath": "GAME-LOGIC/Campaign-Loop.md"
+        "body": "실패는 세계에 남는다. 부상, 포획, 죽음, 물자, 원한.",
+        "sourcePath": "GAME-LOGIC/Game-Thesis.md"
       },
       {
         "heading": "화면",
@@ -62,9 +67,9 @@
         "sourcePath": "GDD/Design-Requirements.md"
       },
       {
-        "heading": "요구 카드 제외",
-        "body": "덱·드로우·재충전·오너 카드를 새 목표로 승격하지 않는다.",
-        "sourcePath": "GDD/Design-Requirements.md"
+        "heading": "요구 카드 부여 #98",
+        "body": "전투는 붙기 전에 자리를 고르고, 붙은 뒤에는 몸이 말한다. 카드는 타이밍이지 한 칸 이동이 아니다.",
+        "sourcePath": "GAME-LOGIC/Game-Thesis.md"
       },
       {
         "heading": "요구 부대 명령",
@@ -90,14 +95,14 @@
       "sourcePath": "Concept.md"
     },
     {
-      "name": "부대 선택",
-      "body": "한 부대 또는 함께 지시할 부대들을 선택한다.",
-      "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
+      "body": "전략맵은 3D 하이트맵으로 서울 전역을 세운다(결정 10).",
+      "sourcePath": "GAME-LOGIC/Game-Thesis.md",
+      "name": "격자"
     },
     {
-      "name": "현재 지시 교체",
-      "body": "확인하면 새 지시가 그 부대의 현재 지시를 교체한다. 취소하면 기존 지시를 그대로 둔다.",
-      "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
+      "body": "전략맵은 3D 하이트맵으로 서울 전역을 세운다(결정 10).",
+      "sourcePath": "GAME-LOGIC/Game-Thesis.md",
+      "name": "타일"
     },
     {
       "name": "규칙 간격",
@@ -125,9 +130,9 @@
       "sourcePath": "Intent.md"
     },
     {
-      "name": "실루엣",
-      "body": "애니메이션풍 정비율. SD·2.5등신 목표를 다시 열지 않는다",
-      "sourcePath": "GAME-LOGIC/Character-Art-Direction.md"
+      "body": "전투 화면은 캐릭터가 왼쪽·오른쪽만 보는 사이드스크롤이다. 사람과 소품은 오드랜드 원본 자산을 그대로 쓴다.",
+      "sourcePath": "GAME-LOGIC/Game-Thesis.md",
+      "name": "실루엣"
     },
     {
       "name": "POC 인물",
@@ -142,24 +147,24 @@
       "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
     },
     {
-      "name": "원정 출발",
       "body": "거점에서 길을 나선다. 반드시 돌아오라는 뜻이 아니다.",
-      "sourcePath": "GAME-LOGIC/Campaign-Loop.md"
+      "sourcePath": "GAME-LOGIC/Campaign-Loop.md",
+      "name": "거점 할 일"
     },
     {
-      "name": "원정 준비",
       "body": "준비는 같다. 사람, 식량, 약, 통행, 관계.",
-      "sourcePath": "GAME-LOGIC/Campaign-Loop.md"
+      "sourcePath": "GAME-LOGIC/Campaign-Loop.md",
+      "name": "원정 준비"
     },
     {
-      "name": "조우 선택",
       "body": "마주치면 말하거나 숨거나 붙는다.",
-      "sourcePath": "GAME-LOGIC/Campaign-Loop.md"
+      "sourcePath": "GAME-LOGIC/Campaign-Loop.md",
+      "name": "조우 선택"
     },
     {
-      "name": "진형",
-      "body": "전투 전이나 허용된 재편 상태에서 진형과 정면을 정한다.",
-      "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
+      "body": "전열, 후열, 측면에 분대를 배치하고 정면(왼쪽·오른쪽)을 정합니다.",
+      "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md",
+      "name": "진형"
     },
     {
       "name": "부대 명령",
@@ -172,14 +177,14 @@
       "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
     },
     {
-      "name": "결과 반영",
-      "body": "정산 뒤에도 원정은 계속될 수 있으며, 귀환은 저장이나 결과 반영의 다른 이름이 아니다.",
-      "sourcePath": "GAME-LOGIC/Campaign-Loop.md"
+      "body": "결과가 원장에 남는다. 부상, 시간, 물자, 평판, 역의 주인.",
+      "sourcePath": "GAME-LOGIC/Campaign-Loop.md",
+      "name": "결과 반영"
     },
     {
-      "name": "전략 결과",
-      "body": "실패는 세계에 남는다. 부상, 포획, 죽음, 물자, 원한.",
-      "sourcePath": "GDD/Game-Thesis.md"
+      "body": "전투는 붙기 전에 자리를 고르고, 붙은 뒤에는 몸이 말한다. 카드는 타이밍이지 한 칸 이동이 아니다.",
+      "sourcePath": "GAME-LOGIC/Game-Thesis.md",
+      "name": "전략 결과"
     }
   ],
   "aesthetics": [
@@ -190,23 +195,23 @@
     },
     {
       "kind": "Fantasy",
-      "body": "플레이어는 영웅이 아니다. 2126년 서울, 어느 역 앞에 선 사람이다.",
-      "sourcePath": "GDD/Game-Thesis.md"
+      "body": "무명으로 흘러드는 것은 착생 갈래 하나다. 혈연과 소속을 가진 몸으로 시작할 수도 있다.",
+      "sourcePath": "GAME-LOGIC/Game-Thesis.md"
     },
     {
       "kind": "Narrative",
       "body": "서울을 한 나라로 모으는 결말만 두지 않는다. 노선 연합, 독립 역, 강단의 치, 교역망, 기술 복구. 플레이가 만든 정통성이 질서가 된다.",
-      "sourcePath": "GDD/Game-Thesis.md"
+      "sourcePath": "GAME-LOGIC/Game-Thesis.md"
     },
     {
       "kind": "Challenge",
-      "body": "전투는 붙기 전에 부대를 편성하고, 붙은 뒤에는 고른 부대의 현재 지시를 교체한다.",
-      "sourcePath": "GDD/Game-Thesis.md"
+      "body": "전투는 붙기 전에 자리를 고르고, 붙은 뒤에는 몸이 말한다. 카드는 타이밍이지 한 칸 이동이 아니다.",
+      "sourcePath": "GAME-LOGIC/Game-Thesis.md"
     },
     {
       "kind": "Fellowship",
-      "body": "수리, 의약, 운송, 호위, 교섭, 탐사도 칼만큼 자란다.",
-      "sourcePath": "GDD/Game-Thesis.md"
+      "body": "RPG는 그 사람의 손과 관계와 무공이다. 수리, 의약, 운송, 호위, 교섭, 탐사도 칼만큼 자란다.",
+      "sourcePath": "GAME-LOGIC/Game-Thesis.md"
     },
     {
       "kind": "Discovery",
@@ -215,8 +220,8 @@
     },
     {
       "kind": "Expression",
-      "body": "품계와 기억과 후계가 나라의 손을 바꾼다.",
-      "sourcePath": "GDD/Game-Thesis.md"
+      "body": "인물이 정치의 단위다. 품계와 기억과 후계가 나라의 손을 바꾼다.",
+      "sourcePath": "GAME-LOGIC/Game-Thesis.md"
     },
     {
       "kind": "Submission",

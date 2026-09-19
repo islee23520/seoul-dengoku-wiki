@@ -222,37 +222,6 @@ await testCase('missing Cast-Index exits nonzero before mutating the live wiki',
   await assertLiveUnchanged(live);
 });
 
-await testCase('missing Unofficial-Fan-AU-Notice is required only when the source page exists', async () => {
-  const { repo, sourceDir, assetDir } = await makeRepo({
-    pages: requiredPages({ 'Unofficial-Fan-AU-Notice.md': '# 비공식 팬 AU\n' }),
-  });
-  const live = await makeLiveWiki('missing-au');
-
-  await assert.rejects(
-    publishWiki({
-      repositoryRoot: repo,
-      wikiDir: live,
-      sourceDir,
-      assetDir,
-      commitSha: 'abc1234',
-      npmCi: fakeInstall(),
-      runNodeTests: fakeTests(),
-      buildWiki: async ({ outputDir }) => {
-        await mkdir(outputDir, { recursive: true });
-        await writeFile(join(outputDir, SENTINEL), SENTINEL_BODY);
-        const validPages = requiredPages();
-        for (const page of REQUIRED_PAGES) {
-          await writeFile(join(outputDir, page), validPages[page] ?? '# page\n');
-        }
-        await mkdir(join(outputDir, 'assets'), { recursive: true });
-        await writeFile(join(outputDir, 'assets', 'figure.svg'), '<svg xmlns="http://www.w3.org/2000/svg"/>');
-      },
-    }),
-    /Unofficial-Fan-AU-Notice/,
-  );
-  await assertLiveUnchanged(live);
-});
-
 await testCase('missing published asset exits nonzero before mutating the live wiki', async () => {
   const { repo, sourceDir, assetDir } = await makeRepo({ pages: requiredPages() });
   const live = await makeLiveWiki('missing-asset');

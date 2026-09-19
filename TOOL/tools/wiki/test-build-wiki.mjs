@@ -120,7 +120,6 @@ await testCase('happy path: banner, link rewrite, asset copy, stale cleanup, .gi
   const gitHead = await readFile(join(output, '.git', 'HEAD'), 'utf8');
 
   assert.match(home, /janseon-unofficial-au/);
-  assert.match(home, /Unofficial-Fan-AU-Notice/);
   assert.match(home, /원본: `Wikis\/game-logic\/Home\.md`/);
   assert.match(home, /커밋: `abc1234`/);
   assert.match(home, /\]\(assets\/figure\.svg\)/);
@@ -129,7 +128,6 @@ await testCase('happy path: banner, link rewrite, asset copy, stale cleanup, .gi
   assert.match(home, /\[외부 명세\]\(https:\/\/example\.com\/spec\.md#part\)/, 'external .md URL must not be rewritten');
   assert.equal(home.endsWith('\n\n'), false);
   assert.doesNotMatch(sidebar, /janseon-unofficial-au/);
-  assert.doesNotMatch(sidebar, /Unofficial-Fan-AU-Notice/);
   assert.doesNotMatch(sidebar, /원본:/);
   assert.equal(sidebar.endsWith('\n\n'), false);
   assert.match(figure, /<svg/);

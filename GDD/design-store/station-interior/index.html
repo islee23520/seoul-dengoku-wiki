@@ -26,27 +26,27 @@ li { margin:6px 0; }
 <section>
 <h2>한 장</h2>
 <p class="layer">각 칸은 그 요소가 무엇인지.</p>
-<h3>입장</h3><p>역 문에 들어섰을 때 대합실과 승강장이 어떻게 열리고, 그 안의 시설을 어떤 순서로 돌리는지를 적는다.</p><p class="src">LORE/places/Station-Interior-Construction.md</p>
-<h3>현재 상태</h3><p>입장 명령과 내부 격자 스폰, 시설 슬롯은 아직 없다.</p><p class="src">LORE/places/Station-Interior-Construction.md</p>
+<h3>입장</h3><p>역 문에 들어섰을 때 대합실과 승강장이 어떻게 열리고, 그 안의 시설을 어떤 순서로 돌리는지를 적는다.</p><p class="src">GAME-LOGIC/Station-Interior-Construction.md</p>
+<h3>격자</h3><p>공유 타일 격자와 네 방향 칸 문법은 결정 10으로 폐기했다.</p><p class="src">GAME-LOGIC/Station-Interior-Construction.md</p>
 </section>
 
 <section>
 <h2>Mechanics</h2>
 <p class="layer">규칙·동사·수치. 시스템이 가진 데이터와 알고리즘.</p>
-<ul><li><b>대상</b> — 카탈로그의 모든 역이 입장 절차의 대상이다. <span class="src">LORE/places/Station-Interior-Construction.md</span></li>
-<li><b>슬롯</b> — 시설 슬롯을 채울 때 일반 역은 기본 2(1–4), 환승역은 기본 3이다. <span class="src">LORE/places/Station-Interior-Construction.md</span></li></ul>
+<ul><li><b>대상</b> — 카탈로그의 모든 역이 입장 절차의 대상이다. <span class="src">GAME-LOGIC/Station-Interior-Construction.md</span></li>
+<li><b>슬롯</b> — 시설 슬롯을 채울 때 일반 역은 기본 2(1–4), 환승역은 기본 3이다. <span class="src">GAME-LOGIC/Station-Interior-Construction.md</span></li></ul>
 </section>
 <section>
 <h2>Dynamics</h2>
 <p class="layer">그 규칙이 플레이어 입력과 만나 시간에 따라 만드는 런타임.</p>
-<ul><li><b>층</b> — 그 역의 `StationLayer`를 고르고 기본으로 대합실을 연다. <span class="src">LORE/places/Station-Interior-Construction.md</span></li>
-<li><b>정산과 분리</b> — 역 내부 구축은 별도의 입장 명령이다. <span class="src">LORE/places/Station-Interior-Construction.md</span></li></ul>
+<ul><li><b>층</b> — 기본으로 대합실을 연다. <span class="src">GAME-LOGIC/Station-Interior-Construction.md</span></li>
+<li><b>정산과 분리</b> — 역 내부 구축은 별도의 입장 명령이다. <span class="src">GAME-LOGIC/Station-Interior-Construction.md</span></li></ul>
 </section>
 <section>
 <h2>Aesthetics</h2>
 <p class="layer">플레이어가 느끼는 반응. Sensation, Fantasy, Narrative, Challenge, Fellowship, Discovery, Expression, Submission.</p>
-<ul><li><b>Discovery</b> — 승강장·환승·심층은 연결 상태가 정상이면 펼치고, 봉쇄·침수된 층은 원인과 복구 조건을 보여 준 뒤 못 들어가게 한다. <span class="src">LORE/places/Station-Interior-Construction.md</span></li>
-<li><b>Submission</b> — 사람, 시설과 연결을 다시 작동시켜야 하는 전략 거점이다. <span class="src">LORE/economy/Strongholds-and-Territory.md</span></li></ul>
+<ul><li><b>Discovery</b> — 역 문에 들어섰을 때 대합실과 승강장이 어떻게 열리고, 그 안의 시설을 어떤 순서로 돌리는지를 적는다. <span class="src">GAME-LOGIC/Station-Interior-Construction.md</span></li>
+<li><b>Submission</b> — 사람, 시설과 연결을 다시 작동시켜야 하는 전략 거점이다. <span class="src">GAME-LOGIC/Strongholds-and-Territory.md</span></li></ul>
 </section>
 </main>
 </body>

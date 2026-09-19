@@ -9,13 +9,13 @@ const documents = [...catalogSource.matchAll(/\{ domain: '([^']+)', slug: '([^']
   .map((match) => ({ domain: match[1], slug: match[2], route: match[3], title: JSON.parse(match[4]) }))
 
 const compatibilityRoutes = [
-  '/world/World-Unbinding.html',
-  '/world/World-Unbinding',
-  '/world/',
-  '/rules/',
-  '/design/',
+  '/wiki/world/World-Unbinding.html',
+  '/wiki/world/World-Unbinding',
+  '/wiki/world/',
+  '/wiki/rules/',
+  '/wiki/design/',
 ]
-const regressionRoutes = ['/', '/states', '/play/', '/system-design/regions/']
+const regressionRoutes = ['/', '/wiki/', '/wiki/states', '/play/', '/system-design/regions/']
 const failures = []
 
 const checkReactRoute = async (route, expectedTitle) => {
@@ -26,7 +26,7 @@ const checkReactRoute = async (route, expectedTitle) => {
   if (expectedTitle && !catalogSource.includes(`title: ${JSON.stringify(expectedTitle)}`)) failures.push(`catalog-title:${route}`)
 }
 
-for (const document of documents) await checkReactRoute(document.route, document.title)
+for (const document of documents) await checkReactRoute(`/wiki${document.route}`, document.title)
 for (const route of compatibilityRoutes) await checkReactRoute(route)
 
 for (const route of regressionRoutes) {
