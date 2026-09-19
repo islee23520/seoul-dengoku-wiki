@@ -22,6 +22,7 @@ for (const domain of domains) {
 const appSource = await readFile(resolve(projectRoot, 'src/App.tsx'), 'utf8')
 const linksSource = await readFile(resolve(projectRoot, 'src/wikiLinks.ts'), 'utf8')
 const articleSource = await readFile(resolve(projectRoot, 'src/pages/ArticlePage.tsx'), 'utf8')
+const deploySource = await readFile(resolve(projectRoot, 'deploy/deploy-windows.ps1'), 'utf8')
 const catalogPath = resolve(projectRoot, 'src/generated/wikiCatalog.ts')
 const publicContractPath = resolve(projectRoot, 'public/wiki-contract.json')
 
@@ -46,6 +47,9 @@ if (!articleSource.includes('wikiCatalog')) failures.push('article-not-backed-by
 if (!catalogSource.includes('export const wikiCatalog')) failures.push('missing-generated-catalog')
 if (!publicContract || publicContract.documents?.length !== 232) failures.push('missing-public-contract-manifest')
 if (/\.html['"]/.test(linksSource)) failures.push('legacy-html-links-in-react')
+if (!deploySource.includes('total-war-ui') || !deploySource.includes('Copy-Item')) {
+  failures.push('missing-total-war-ui-preservation')
+}
 
 for (const document of documents) {
   const route = `/${document.domain}/${document.slug === 'index' ? '' : document.slug}`

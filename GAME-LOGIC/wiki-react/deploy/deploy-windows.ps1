@@ -22,6 +22,14 @@ Pop-Location
 Get-ChildItem $next -Recurse -Filter "._*" -Force -ErrorAction SilentlyContinue |
     Remove-Item -Force -ErrorAction SilentlyContinue
 
+# The official wiki swaps the complete site directory. Preserve additive
+# service paths that are deployed independently from the React bundle.
+$totalWarUiCurrent = Join-Path $current "total-war-ui"
+$totalWarUiNext = Join-Path $next "total-war-ui"
+if ((Test-Path $totalWarUiCurrent) -and -not (Test-Path $totalWarUiNext)) {
+    Copy-Item $totalWarUiCurrent $totalWarUiNext -Recurse
+}
+
 $count = (Get-ChildItem $next -Recurse -File).Count
 if ($count -lt 500) { throw "배포 파일 수 부족: $count" }
 if (-not (Test-Path (Join-Path $next "index.html"))) { throw "index.html 없음" }
