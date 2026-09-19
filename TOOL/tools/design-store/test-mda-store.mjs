@@ -239,7 +239,7 @@ test('ingestCanonDir stores one row per markdown file and hub lists it', () => {
     writeFileSync(join(canonRoot, 'regions', 'README.md'), '# 지역\n\n## 구\n');
     const dbPath = join(dir, DB_NAME);
     putDocument({ dbPath, document: SAMPLE });
-    const ingested = ingestCanonDir({ dbPath, canonRoot, pathPrefix: 'Wikis/game-logic' });
+    const ingested = ingestCanonDir({ dbPath, canonRoot, pathPrefix: 'LORE' });
     assert.equal(ingested.files, 2);
     const db = new DatabaseSync(dbPath, { readOnly: true });
     const n = db.prepare('SELECT COUNT(*) AS n FROM canon_files').get().n;
@@ -268,7 +268,7 @@ test('verify FAILS when a canon_files row is deleted', () => {
     writeFileSync(join(canonRoot, 'Alpha.md'), '# 알파\n');
     const dbPath = join(dir, DB_NAME);
     putDocument({ dbPath, document: SAMPLE });
-    ingestCanonDir({ dbPath, canonRoot, pathPrefix: 'Wikis/game-logic' });
+    ingestCanonDir({ dbPath, canonRoot, pathPrefix: 'LORE' });
     const db = new DatabaseSync(dbPath);
     db.prepare("DELETE FROM canon_files WHERE id = 'alpha'").run();
     db.close();
