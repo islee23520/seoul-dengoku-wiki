@@ -22,8 +22,6 @@ for (const domain of domains) {
 const appSource = await readFile(resolve(projectRoot, 'src/App.tsx'), 'utf8')
 const linksSource = await readFile(resolve(projectRoot, 'src/wikiLinks.ts'), 'utf8')
 const articleSource = await readFile(resolve(projectRoot, 'src/pages/ArticlePage.tsx'), 'utf8')
-const deploySource = await readFile(resolve(projectRoot, 'deploy/deploy-windows.ps1'), 'utf8')
-const packageSource = await readFile(resolve(projectRoot, 'package.json'), 'utf8')
 const catalogPath = resolve(projectRoot, 'src/generated/wikiCatalog.ts')
 const publicContractPath = resolve(projectRoot, 'public/wiki-contract.json')
 
