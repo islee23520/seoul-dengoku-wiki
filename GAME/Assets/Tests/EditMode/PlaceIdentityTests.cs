@@ -86,6 +86,34 @@ namespace Janseon.Foundation.Tests
         }
 
         [Test]
+        public void UndefinedPlaceKindIsRejected()
+        {
+            var error = Assert.Throws<ArgumentException>(
+                () => new PlaceId((PlaceKind)999, "station.invalid"));
+
+            StringAssert.Contains("kind", error.Message.ToLowerInvariant());
+        }
+
+        [Test]
+        public void IdenticalDuplicateIsIdempotent()
+        {
+            var definition = new PlaceDefinition(
+                new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.1.2"),
+                "신도림 승강장",
+                PlaceMetadata.ForPlatform("platform.sindorim.1.2", 3));
+            var catalog = new PlaceDefinitionCatalog(new[] { definition });
+            var beforeFingerprint = catalog.Fingerprint();
+
+            Assert.DoesNotThrow(() => catalog.Add(new PlaceDefinition(
+                definition.Id,
+                definition.DisplayName,
+                PlaceMetadata.ForPlatform("platform.sindorim.1.2", 3))));
+
+            Assert.AreEqual(1, catalog.Count);
+            Assert.AreEqual(beforeFingerprint, catalog.Fingerprint());
+        }
+
+        [Test]
         public void SameDisplayNameWithDifferentStableIdRemainsDistinct()
         {
             var first = new PlaceDefinition(
@@ -122,33 +150,44 @@ namespace Janseon.Foundation.Tests
             var before = catalog.Fingerprint();
             var error = Assert.Throws<PlaceDefinitionConflictException>(() => catalog.Add(conflict));
             var after = catalog.Fingerprint();
+            var identityEqual = unknown.Id == observed.Id;
+            var hashEqual = unknown.Id.GetHashCode() == observed.Id.GetHashCode();
+            var differentPlatformUnequal = id != differentPlatform;
+            var catalogUnchanged = string.Equals(before, after, StringComparison.Ordinal);
 
-            Assert.AreEqual(unknown.Id, observed.Id);
-            Assert.AreEqual(unknown.Id.GetHashCode(), observed.Id.GetHashCode());
-            Assert.AreNotEqual(id, differentPlatform);
-            Assert.AreEqual(before, after);
+            Assert.IsTrue(identityEqual);
+            Assert.IsTrue(hashEqual);
+            Assert.IsTrue(differentPlatformUnequal);
+            Assert.IsTrue(catalogUnchanged);
 
             var outputPath = Environment.GetEnvironmentVariable("JANSEON_PLACE_ID_QA_OUTPUT");
+            var implementationCommit = Environment.GetEnvironmentVariable("JANSEON_PLACE_ID_QA_IMPLEMENTATION_COMMIT");
+            var sourceManifestSha256 = Environment.GetEnvironmentVariable("JANSEON_PLACE_ID_QA_SOURCE_MANIFEST_SHA256");
             Assert.IsFalse(string.IsNullOrWhiteSpace(outputPath));
+            Assert.IsFalse(string.IsNullOrWhiteSpace(implementationCommit));
+            Assert.IsFalse(string.IsNullOrWhiteSpace(sourceManifestSha256));
             Directory.CreateDirectory(Path.GetDirectoryName(outputPath));
             var json = new StringBuilder();
             json.AppendLine("{");
-            json.AppendLine("  \"head\": \"" + Environment.GetEnvironmentVariable("JANSEON_PLACE_ID_QA_HEAD") + "\",");
-            json.AppendLine("  \"source_fingerprint\": \"" + Environment.GetEnvironmentVariable("JANSEON_PLACE_ID_QA_SOURCE_FINGERPRINT") + "\",");
+            json.AppendLine("  \"implementation_commit\": \"" + implementationCommit + "\",");
+            json.AppendLine("  \"source_manifest_sha256\": \"" + sourceManifestSha256 + "\",");
             json.AppendLine("  \"canonical_id\": \"" + id + "\",");
-            json.AppendLine("  \"unknown_observed_level\": null,");
-            json.AppendLine("  \"observed_level\": 3,");
-            json.AppendLine("  \"identity_equal\": true,");
-            json.AppendLine("  \"hash_equal\": true,");
+            json.AppendLine("  \"unknown_observed_level\": " + NullableIntJson(unknown.ObservedPlatformLevel) + ",");
+            json.AppendLine("  \"observed_level\": " + NullableIntJson(observed.ObservedPlatformLevel) + ",");
+            json.AppendLine("  \"identity_equal\": " + BooleanJson(identityEqual) + ",");
+            json.AppendLine("  \"hash_equal\": " + BooleanJson(hashEqual) + ",");
             json.AppendLine("  \"different_platform_id\": \"" + differentPlatform + "\",");
-            json.AppendLine("  \"different_platform_unequal\": true,");
+            json.AppendLine("  \"different_platform_unequal\": " + BooleanJson(differentPlatformUnequal) + ",");
             json.AppendLine("  \"conflict_error\": \"" + error.GetType().Name + "\",");
             json.AppendLine("  \"catalog_fingerprint_before\": \"" + before + "\",");
             json.AppendLine("  \"catalog_fingerprint_after\": \"" + after + "\",");
-            json.AppendLine("  \"catalog_unchanged\": true");
+            json.AppendLine("  \"catalog_unchanged\": " + BooleanJson(catalogUnchanged));
             json.AppendLine("}");
             File.WriteAllText(outputPath, json.ToString());
             TestContext.WriteLine("PLACE_ID_MANUAL_QA=" + outputPath);
         }
+
+        static string BooleanJson(bool value) => value ? "true" : "false";
+        static string NullableIntJson(int? value) => value.HasValue ? value.Value.ToString() : "null";
     }
 }

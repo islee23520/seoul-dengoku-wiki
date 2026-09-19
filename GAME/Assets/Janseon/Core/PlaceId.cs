@@ -22,6 +22,11 @@ namespace Janseon.Core
 
         public PlaceId(PlaceKind kind, string stableId)
         {
+            if (!Enum.IsDefined(typeof(PlaceKind), kind))
+            {
+                throw new ArgumentException("Place kind must be defined.", nameof(kind));
+            }
+
             var canonical = stableId == null ? string.Empty : stableId.Trim();
             if (canonical.Length == 0)
             {
