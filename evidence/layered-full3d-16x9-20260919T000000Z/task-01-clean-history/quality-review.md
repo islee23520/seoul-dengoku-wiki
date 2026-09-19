@@ -34,6 +34,8 @@
 
  [anchor:independent-expected-ids]는 production runner와 별개의 frozen 16-ID literal authority를 가진다. [anchor:receipt-schema-verifier]는 object-only schema, `required`/`passed` 배열, string·unique·sorted exact equality를 각각 검사한다. clean receipt는 accept하고, 양 배열에 extra를 추가하거나 `struct.valid-chain`을 양쪽에서 삭제하거나, duplicate·required-only·passed-only·wrong-type·nonstring을 tamper한 8개 temporary probe는 모두 nonzero였다. 기대 목록을 receipt에서 읽지 않으므로 양 배열을 일관되게 변조해도 통과하지 않는다.
 
+Evidence manifest and cleanup integrity use the independently frozen inventory in [anchor:tamper-tests] and the recursive manifest verifier. Cleanup uses an exact stable binding token and an explicit `removed_paths` schema; no Git parent/current hash is treated as content authority. Recursive unknown entries, symlinks, changed/dropped required files, manifest tampering, unsafe/existing/duplicate removal paths are rejected by the dedicated cleanup and manifest probes.
+
 ### 실제 mutation proof와 deletion protection
 
 - `subjectOnlyMutant` ([anchor:subject-only-mutant])는 subject의 `amend`만 보고 reflog action을 무시한다. ordinary subject fixture는 correct `true`인데 mutant가 `false`가 되고, harmless subject + `commit (amend)` fixture는 correct reject인데 mutant가 accept하여 두 변이가 모두 killed된다.

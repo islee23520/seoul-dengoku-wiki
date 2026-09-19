@@ -3,7 +3,7 @@
   "files": [
     {
       "path": "build-task31-evidence-manifest.mjs",
-      "sha256": "1ce57e46137c56aa1ea55e993f25b3ce777ea1f0b53c7ca39ef538847e3d53f6"
+      "sha256": "e627c2efb2de9e01baf03652bb280e30ad6ebee778c417a3198265c1cd95fc6e"
     },
     {
       "path": "commands.txt",
@@ -19,7 +19,7 @@
     },
     {
       "path": "quality-review.md",
-      "sha256": "236814eb09d1c4056019a1db8e86b2c3725e923a0276383930a25fa36b5b71ad"
+      "sha256": "d573db98f3d7d477ca98d087286c306fba949d7f63fe8f514d6c3821a9354693"
     },
     {
       "path": "required-case-results.json",
@@ -42,6 +42,10 @@
       "sha256": "dbada19dad3b2efc10cecf7f31085f28bc51ba3349dc49b890d00c84d42e7cfa"
     },
     {
+      "path": "test-task31-cleanup.mjs",
+      "sha256": "cd5a0eff11d82824af3efbb1913f8cbb399f6c3cae26f5ee4da39c00412141f8"
+    },
+    {
       "path": "test-task31-evidence-manifest.mjs",
       "sha256": "ee07eac96f5b8c3029077e8a0f4a38b1579617442d382f82fc74036aa27cbc10"
     },
@@ -62,9 +66,13 @@
       "sha256": "1bdd884a70056fa420aea102fe7698f23a245ee18d816ac8806011ba9a413c3b"
     },
     {
+      "path": "verify-task31-cleanup.mjs",
+      "sha256": "309956846d8997fd4001e9189b2e73202631877f365290ee940c1200d94f24fb"
+    },
+    {
       "path": "verify-task31-evidence-manifest.mjs",
-      "sha256": "d4cc7f7a4d08ebe90fb1d89dababae46b6f564c9298f21270a94c407a9435cdd"
+      "sha256": "ae8393bfdfa4b3006f8f749a45f88b7ee4bf2d9d821ec48c12bd80c24404fffe"
     }
   ],
-  "manifestSha256": "01953e49461100e814601dceccce673cb03710e425073da4b68550c78200f4df"
+  "manifestSha256": "586a24f6ffa80bec87518bcd94c24bee33e22cf76e00b14e3711424dfcccaa60"
 }

@@ -15,6 +15,7 @@
   "receipt_tamper_probes_passed": 8,
   "receipt_authority": "verify-required-lineage-cases.mjs frozen EXPECTED_REQUIRED_CASE_IDS",
   "quality_anchor_authority": "verify-quality-anchors.mjs frozen EXPECTED_ANCHORS; source-anchor-index.json supplies computed lines and SHA only",
-  "content_manifest_sha256": "01953e49461100e814601dceccce673cb03710e425073da4b68550c78200f4df",
+  "content_manifest_sha256": "586a24f6ffa80bec87518bcd94c24bee33e22cf76e00b14e3711424dfcccaa60",
   "binding_semantics": "cleanup binds exact task31 evidence content manifest; independent of Git parent or HEAD; cleanup and manifest files are excluded to avoid recursion"
+  ,"removed_paths": []
 }
