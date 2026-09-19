@@ -1,8 +1,11 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Security.Cryptography;
 using System.Text;
 using Janseon.Core;
 using NUnit.Framework;
+using UnityEngine;
 
 namespace Janseon.Foundation.Tests
 {
@@ -179,18 +182,32 @@ namespace Janseon.Foundation.Tests
             Assert.IsTrue(catalogUnchanged);
 
             var outputPath = Environment.GetEnvironmentVariable("JANSEON_PLACE_ID_QA_OUTPUT");
-            var implementationCommit = Environment.GetEnvironmentVariable("JANSEON_PLACE_ID_QA_IMPLEMENTATION_COMMIT");
-            var sourceManifestSha256 = Environment.GetEnvironmentVariable("JANSEON_PLACE_ID_QA_SOURCE_MANIFEST_SHA256");
+            var runNonce = Environment.GetEnvironmentVariable("TASK02_RUN_NONCE");
             Assert.IsFalse(string.IsNullOrWhiteSpace(outputPath));
-            Assert.IsFalse(string.IsNullOrWhiteSpace(implementationCommit));
-            Assert.IsFalse(string.IsNullOrWhiteSpace(sourceManifestSha256));
+            Assert.IsFalse(string.IsNullOrWhiteSpace(runNonce));
+            var repoRoot = Path.GetFullPath(Path.Combine(Application.dataPath, "..", ".."));
+            var sourceHashes = new SortedDictionary<string, string>(StringComparer.Ordinal)
+            {
+                ["GAME/Assets/Janseon/Core/PlaceId.cs"] = FileSha256(Path.Combine(repoRoot, "GAME/Assets/Janseon/Core/PlaceId.cs")),
+                ["GAME/Assets/Tests/EditMode/PlaceIdentityTests.cs"] = FileSha256(Path.Combine(repoRoot, "GAME/Assets/Tests/EditMode/PlaceIdentityTests.cs"))
+            };
+            var runtimeManifest = SourceManifestSha256(sourceHashes);
             Directory.CreateDirectory(Path.GetDirectoryName(outputPath));
             var json = new StringBuilder();
             json.AppendLine("{");
-            json.AppendLine("  \"schema_version\": \"task02-manual-place-id.v2\",");
+            json.AppendLine("  \"schema_version\": \"task02-manual-place-id.v3\",");
             json.AppendLine("  \"behavior_contract_version\": \"place-identity.v2\",");
-            json.AppendLine("  \"implementation_commit\": \"" + implementationCommit + "\",");
-            json.AppendLine("  \"source_manifest_sha256\": \"" + sourceManifestSha256 + "\",");
+            json.AppendLine("  \"run_nonce\": \"" + runNonce + "\",");
+            json.AppendLine("  \"runtime_source_manifest_sha256\": \"" + runtimeManifest + "\",");
+            json.AppendLine("  \"runtime_source_files\": [");
+            var sourceIndex = 0;
+            foreach (var source in sourceHashes)
+            {
+                json.Append("    { \"path\": \"").Append(source.Key).Append("\", \"sha256\": \"").Append(source.Value).Append("\" }");
+                json.AppendLine(sourceIndex < sourceHashes.Count - 1 ? "," : string.Empty);
+                sourceIndex++;
+            }
+            json.AppendLine("  ],");
             json.AppendLine("  \"canonical_id\": \"" + id + "\",");
             json.AppendLine("  \"unknown_observed_level\": " + NullableIntJson(unknown.ObservedPlatformLevel) + ",");
             json.AppendLine("  \"observed_level\": " + NullableIntJson(observed.ObservedPlatformLevel) + ",");
@@ -204,10 +221,40 @@ namespace Janseon.Foundation.Tests
             json.AppendLine("  \"catalog_unchanged\": " + BooleanJson(catalogUnchanged));
             json.AppendLine("}");
             File.WriteAllText(outputPath, json.ToString());
+            TestContext.Progress.WriteLine("TASK02_RUN_BINDING " + runNonce + " " + runtimeManifest);
             TestContext.WriteLine("PLACE_ID_MANUAL_QA=" + outputPath);
         }
 
         static string BooleanJson(bool value) => value ? "true" : "false";
         static string NullableIntJson(int? value) => value.HasValue ? value.Value.ToString() : "null";
+
+        static string FileSha256(string path)
+        {
+            using (var stream = File.OpenRead(path))
+            using (var hash = SHA256.Create())
+            {
+                return Hex(hash.ComputeHash(stream));
+            }
+        }
+
+        static string SourceManifestSha256(IEnumerable<KeyValuePair<string, string>> sources)
+        {
+            var material = new StringBuilder();
+            foreach (var source in sources)
+            {
+                material.Append(source.Key).Append('\0').Append(source.Value).Append('\n');
+            }
+            using (var hash = SHA256.Create())
+            {
+                return Hex(hash.ComputeHash(Encoding.UTF8.GetBytes(material.ToString())));
+            }
+        }
+
+        static string Hex(byte[] bytes)
+        {
+            var result = new StringBuilder(bytes.Length * 2);
+            for (var i = 0; i < bytes.Length; i++) result.Append(bytes[i].ToString("x2"));
+            return result.ToString();
+        }
     }
 }
