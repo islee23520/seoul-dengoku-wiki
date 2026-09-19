@@ -22,36 +22,36 @@ li { margin:6px 0; }
 <p class="kicker">MDA + one-page · SQLite · 캠페인</p>
 <p><a href="../" style="color:var(--metro)">설계 목차</a></p>
 <h1>출격하고 돌아오는 흐름</h1>
-<p>준비, 원정, 조우, 전투, 결과 반영 · designers</p>
+<p>준비, 원정, 조우, 결과 반영 뒤 다섯 결말 또는 계속 이동 · designers</p>
 <section>
 <h2>한 장</h2>
 <p class="layer">각 칸은 그 요소가 무엇인지.</p>
-<h3>거점</h3><p>정보, 의뢰, 계약과 관계 문제를 살핍니다.</p><p class="src">docs/game-logic/Campaign-Loop.md</p>
-<h3>준비</h3><p>파티, 장비, 식량, 의약품, 경로와 통행권을 준비합니다.</p><p class="src">docs/game-logic/Campaign-Loop.md</p>
-<h3>조우</h3><p>교섭, 거래, 작업, 은신, 회피 또는 전투를 선택합니다.</p><p class="src">docs/game-logic/Campaign-Loop.md</p>
-<h3>정산</h3><p>부상, 시간, 물자, 관계, 평판, 거점과 노선 상태가 바뀝니다.</p><p class="src">docs/game-logic/Campaign-Loop.md</p>
+<h3>거점</h3><p>거점에서 길을 나선다. 반드시 돌아오라는 뜻이 아니다.</p><p class="src">GAME-LOGIC/Campaign-Loop.md</p>
+<h3>준비</h3><p>준비는 같다. 사람, 식량, 약, 통행, 관계.</p><p class="src">GAME-LOGIC/Campaign-Loop.md</p>
+<h3>조우</h3><p>마주치면 말하거나 숨거나 붙는다.</p><p class="src">GAME-LOGIC/Campaign-Loop.md</p>
+<h3>정산</h3><p>전투든 비전투 조우든 결과는 한 번만 원장에 남는다.</p><p class="src">GAME-LOGIC/Campaign-Loop.md</p>
 </section>
 
 <section>
 <h2>Mechanics</h2>
 <p class="layer">규칙·동사·수치. 시스템이 가진 데이터와 알고리즘.</p>
-<ul><li><b>행동 단위</b> — 행동: 한 칸 이동, 대화, 작업, 공격 같은 즉시 결정 <span class="src">docs/game-logic/Campaign-Loop.md</span></li>
-<li><b>시간 단위</b> — 시간: 이동, 피로, 식량, 지역 일정 <span class="src">docs/game-logic/Campaign-Loop.md</span></li>
-<li><b>하루</b> — 하루: 역 생산과 소비, 외부 파티 이동, 노선 안전 <span class="src">docs/game-logic/Campaign-Loop.md</span></li>
-<li><b>한 주</b> — 한 주: 외교, 인구 집계, 정통성, 세력 목표 <span class="src">docs/game-logic/Campaign-Loop.md</span></li></ul>
+<ul><li><b>칸</b> — 시간은 칸, 시간, 하루, 한 주다. <span class="src">GAME-LOGIC/Campaign-Loop.md</span></li>
+<li><b>시간</b> — 시간은 칸, 시간, 하루, 한 주다. <span class="src">GAME-LOGIC/Campaign-Loop.md</span></li>
+<li><b>하루</b> — 시간은 칸, 시간, 하루, 한 주다. <span class="src">GAME-LOGIC/Campaign-Loop.md</span></li>
+<li><b>한 주</b> — 시간은 칸, 시간, 하루, 한 주다. <span class="src">GAME-LOGIC/Campaign-Loop.md</span></li></ul>
 </section>
 <section>
 <h2>Dynamics</h2>
 <p class="layer">그 규칙이 플레이어 입력과 만나 시간에 따라 만드는 런타임.</p>
-<ul><li><b>여섯 단계</b> — 준비, 원정, 조우, 전투, 결과 반영 단계를 순서대로 진행합니다. <span class="src">docs/game-logic/Campaign-Loop.md</span></li>
-<li><b>규모</b> — 초기에는 파티 생존과 한 역의 문제를 다룹니다. <span class="src">docs/game-logic/Campaign-Loop.md</span></li>
-<li><b>정밀도</b> — 플레이어 주변은 자세히 계산하고 멀리 있는 세계는 집계 단위로 처리합니다. <span class="src">docs/game-logic/Campaign-Loop.md</span></li></ul>
+<ul><li><b>다섯 결말</b> — 같은 출발이 다섯으로 갈라진다. <span class="src">GAME-LOGIC/Campaign-Loop.md</span></li>
+<li><b>규모</b> — 규모는 커질 수 있다. 한 사람에서 작업반, 상단, 여러 역의 협약. <span class="src">GAME-LOGIC/Campaign-Loop.md</span></li>
+<li><b>정밀도</b> — 가까운 곳은 자세히, 먼 곳은 집계다. <span class="src">GAME-LOGIC/Campaign-Loop.md</span></li></ul>
 </section>
 <section>
 <h2>Aesthetics</h2>
 <p class="layer">플레이어가 느끼는 반응. Sensation, Fantasy, Narrative, Challenge, Fellowship, Discovery, Expression, Submission.</p>
-<ul><li><b>Challenge</b> — 교섭, 거래, 작업, 은신, 회피 또는 전투를 선택합니다. <span class="src">docs/game-logic/Campaign-Loop.md</span></li>
-<li><b>Fellowship</b> — 신뢰와 직능을 얻으면 작업반이나 상단을 이끌고, 이후에는 여러 역의 협약과 노선 세력의 정책에 개입합니다. <span class="src">docs/game-logic/Campaign-Loop.md</span></li></ul>
+<ul><li><b>Challenge</b> — 정착·정복·방랑·교역은 같은 준비에서 갈라지며, 화면 10의 「거점으로 복귀」를 필수 엔딩으로 두지 않는다. <span class="src">GAME-LOGIC/Campaign-Loop.md</span></li>
+<li><b>Fellowship</b> — 커져도 선택은 이름 있는 손을 통해 간다. <span class="src">GAME-LOGIC/Campaign-Loop.md</span></li></ul>
 </section>
 </main>
 </body>
