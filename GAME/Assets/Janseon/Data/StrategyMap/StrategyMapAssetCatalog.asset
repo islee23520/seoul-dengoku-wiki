@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d02cb52b1dd214e72845a2c027aecc06, type: 3}
+  m_Name: StrategyMapAssetCatalog
+  m_EditorClassIdentifier: Janseon.Foundation::Janseon.Foundation.Presentation.StrategyMapAssetCatalog
+  chunkMeshes:
+  - {fileID: -2432090755550338912, guid: fab719910c222464688f7ac4913fd8a9, type: 3}
+  - {fileID: -2432090755550338912, guid: f99ec5f66790848a0b3d6f5fbbc31cd0, type: 3}
+  - {fileID: -2432090755550338912, guid: 95ec126aba6ba4b43a156fd892ca4aba, type: 3}
+  - {fileID: -2432090755550338912, guid: 592fa0302fca34378b73e5b36aa845bb, type: 3}
+  - {fileID: -2432090755550338912, guid: 67ceabc4337fb4bd78ba638696df2a82, type: 3}
+  - {fileID: -2432090755550338912, guid: d8367f4a0eb26474eaf9feaf81f00138, type: 3}
+  - {fileID: -2432090755550338912, guid: 56c278581f428468fb0807f3cf8711cf, type: 3}
+  - {fileID: -2432090755550338912, guid: 27e00a2d397f24d12b3939c96192a884, type: 3}
+  - {fileID: -2432090755550338912, guid: de1a1024229c347b5b9a258625dfe328, type: 3}
+  chunkTextures:
+  - {fileID: 2800000, guid: c58830fe8d3654f578866d37ee8eefcf, type: 3}
+  - {fileID: 2800000, guid: 5c2100c585d324c6ebef54b04839125f, type: 3}
+  - {fileID: 2800000, guid: 5f7fd1c7ebf4d4e5aa6bee0bb39ba1ab, type: 3}
+  - {fileID: 2800000, guid: c940580ea4ef9444ebef73a20af319eb, type: 3}
+  - {fileID: 2800000, guid: 61b7f9a1ba1ce4f2480a3b434269c2b8, type: 3}
+  - {fileID: 2800000, guid: 6dae4bca2f0294e9baacae8a97ddb128, type: 3}
+  - {fileID: 2800000, guid: 65fecab1ad4784e128ca7e198fe49e54, type: 3}
+  - {fileID: 2800000, guid: 59d7d022e39774c5b816afa1ac4756bb, type: 3}
+  - {fileID: 2800000, guid: 64a33375a4c7d4ed68324047d0428d35, type: 3}
+  buildingBinaries:
+  - {fileID: 4900000, guid: f7a3f2d451e99495ead19d87a31a06cb, type: 3}
+  - {fileID: 4900000, guid: ed8ea3d9fe5934aa7b39b7f274ef6827, type: 3}
+  - {fileID: 4900000, guid: c58c67c89b45845e1ae36e7f10ff6b7e, type: 3}
+  - {fileID: 4900000, guid: 986803003d64d46fa8b41142fa3f9f57, type: 3}
+  - {fileID: 4900000, guid: ebf27745319f24a2496af35ca59a63ed, type: 3}
+  - {fileID: 4900000, guid: 287ed33ca855b4a8394b72bf47bfe9d3, type: 3}
+  - {fileID: 4900000, guid: ea5117bb27fb94c408022658642fd607, type: 3}
+  - {fileID: 4900000, guid: 118472f2f5e834487b34b961b325c8df, type: 3}
+  - {fileID: 4900000, guid: d2783aeea2af34e5db5aeb6c6c410f96, type: 3}
+  landmarkPrefabs: []
+  landmarkManifest: {fileID: 0}

@@ -38,12 +38,14 @@ namespace Janseon.Foundation.Presentation
 
         private static readonly Dictionary<StrategyMapWeatherKind, Color> SkyColors = new()
         {
-            // Pastel palette benchmarked to seoul-3d-atlas (sat ≤ 0.26, val ≥ 0.54)
-            { StrategyMapWeatherKind.Day, new Color(0.87f, 0.91f, 0.94f) },     // pale sky wash
-            { StrategyMapWeatherKind.Sunset, new Color(0.94f, 0.79f, 0.72f) },  // soft coral
+            // Pastel sky tones with enough contrast against the warm-cream
+            // terrain to keep the map edge readable (atlas-style: blue sky,
+            // beige land). Night/Rain/Snow are already distinct.
+            { StrategyMapWeatherKind.Day, new Color(0.70f, 0.79f, 0.91f) },     // clear pastel blue
+            { StrategyMapWeatherKind.Sunset, new Color(0.93f, 0.76f, 0.68f) },  // soft coral
             { StrategyMapWeatherKind.Night, new Color(0.19f, 0.22f, 0.29f) },   // muted navy
-            { StrategyMapWeatherKind.Rain, new Color(0.66f, 0.70f, 0.74f) },    // cool gray
-            { StrategyMapWeatherKind.Snow, new Color(0.91f, 0.93f, 0.96f) },    // frost white
+            { StrategyMapWeatherKind.Rain, new Color(0.58f, 0.63f, 0.69f) },    // cool gray-blue
+            { StrategyMapWeatherKind.Snow, new Color(0.85f, 0.88f, 0.93f) },    // frost white-blue
         };
 
         private static readonly Dictionary<StrategyMapSeasonKind, Color> SeasonTints = new()
