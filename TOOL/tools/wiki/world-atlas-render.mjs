@@ -17,7 +17,7 @@ const GROUP_CATEGORIES = {
 };
 
 function tableCell(value) {
-  return String(value ?? '').trim().replaceAll('|', '&#124;').replace(/\n+/g, '<br>');
+  return String(value ?? '').trim().replaceAll('|', '&#124;').replace(/\n+/g, ' / ');
 }
 
 function banner(atlasHash, lead) {
