@@ -5,6 +5,7 @@ import remarkGfm from 'remark-gfm'
 import type { Components } from 'react-markdown'
 import { wikiCatalog, type WikiDomain } from '../generated/wikiCatalog'
 import { normalizeWikiHref, toWikiPath } from '../wikiRouting'
+import OpeningTerritoryMap from '../components/OpeningTerritoryMap'
 
 const markdownModules = import.meta.glob<string>('../content/**/*.md', {
   query: '?raw',
@@ -110,6 +111,7 @@ export default function ArticlePage() {
 
       <div className="wiki-article-grid">
         <div className="wiki-prose">
+          {domain === 'world' && normalizedSlug === 'World-and-Subway-Layers' && <OpeningTerritoryMap />}
           <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>
             {markdown}
           </ReactMarkdown>

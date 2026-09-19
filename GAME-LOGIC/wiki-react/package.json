@@ -13,7 +13,10 @@
     "test:states": "node --test scripts/test-state-routes.mjs"
     ,"test:assets": "node --test scripts/test-wiki-assets.mjs",
     "test:people": "node --test scripts/test-people-index.mjs"
-    ,"test:discovery": "node --test scripts/test-discovery-index.mjs"
+    ,"test:person-details": "node --test scripts/test-person-details.mjs"
+    ,"test:discovery": "node --test scripts/test-discovery-index.mjs",
+    "test:territory-map": "node --test scripts/test-territory-map.mjs"
+    ,"test:common-tiers": "node --test scripts/test-common-tiers.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",

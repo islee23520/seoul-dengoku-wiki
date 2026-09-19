@@ -243,9 +243,40 @@ summary:focus-visible {
 .state-detail-grid dd { margin-block-start: 0.25rem; }
 .people-search { display: grid; gap: 0.4rem; margin-block-end: 1rem; }
 .people-search input { border: 1px solid var(--wiki-line); background: var(--wiki-paper); padding: 0.7rem 0.8rem; width: min(100%, 32rem); }
+.people-filters { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: 0.65rem; margin-block-end: 1rem; padding: 0.75rem; border: 1px solid var(--wiki-line); background: var(--wiki-toc); }
+.people-filters label { display: grid; gap: 0.3rem; color: var(--wiki-muted); font-size: 0.75rem; font-weight: 700; }
+.people-filters select, .people-filters button { min-inline-size: 0; border: 1px solid var(--wiki-line); background: var(--wiki-paper); color: var(--wiki-text); padding: 0.55rem; }
+.people-filters button { align-self: end; cursor: pointer; font-weight: 700; }
 .people-table { min-inline-size: 48rem; width: 100%; border-collapse: collapse; }
 .people-table th, .people-table td { border: 1px solid var(--wiki-line); padding: 0.55rem 0.7rem; text-align: start; white-space: nowrap; }
 .people-table th { background: var(--wiki-nav); color: white; }
+.person-detail-layout { display: grid; grid-template-columns: minmax(18rem, 24rem) minmax(0, 1fr); gap: 1.5rem; align-items: start; }
+.person-data-panel { display: grid; gap: 1rem; position: sticky; inset-block-start: 1rem; }
+.person-data-section h2 { margin-block: 0 0.35rem; font-size: 1rem; }
+.person-data-table { min-inline-size: 100%; width: 100%; border-collapse: collapse; }
+.person-data-table th { inline-size: 38%; background: color-mix(in srgb, var(--wiki-nav) 88%, white); color: white; }
+.person-data-table td { background: var(--wiki-paper); overflow-wrap: anywhere; }
+.person-canon-prose > h2 { margin-block-start: 0; }
+.person-canon-prose section { border-block-end: 1px solid var(--wiki-line); padding-block-end: 0.75rem; }
+.person-canon-prose details { margin-block-start: 1rem; border: 1px solid var(--wiki-line); padding: 0.75rem; }
+.territory-map-section { max-inline-size: none; margin-block-end: 2rem; border-block-end: 2px solid var(--wiki-line); padding-block-end: 1.5rem; }
+.territory-filter { display: flex; align-items: center; gap: 0.75rem; margin-block: 1rem; }
+.territory-filter span { font-weight: 700; }
+.territory-filter select { border: 1px solid var(--wiki-line); background: var(--wiki-paper); padding: 0.5rem; }
+.territory-map-layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(17rem, 1fr); gap: 1rem; align-items: start; }
+.territory-map-canvas { min-inline-size: 0; overflow: hidden; border: 1px solid var(--wiki-line); background: #e9e5dc; }
+.territory-map-canvas svg { display: block; inline-size: 100%; block-size: auto; }
+.territory-region { stroke: #f6f1e8; stroke-width: 1.1; cursor: pointer; vector-effect: non-scaling-stroke; }
+.territory-region:hover, .territory-region.selected { stroke: #111; stroke-width: 3; }
+.territory-region:focus-visible { outline: none; stroke: #fff; stroke-width: 6; filter: drop-shadow(0 0 3px #111); }
+.territory-detail { border: 1px solid var(--wiki-line); background: var(--wiki-paper); padding: 1rem; max-block-size: 45rem; overflow-y: auto; }
+.territory-detail h3 { margin-block-start: 0; }
+.territory-detail h4 { margin-block-end: 0.25rem; }
+.territory-state-link { display: block; margin-block-start: 0.4rem; }
+.territory-legend { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-block: 0.75rem; }
+.territory-legend button { display: inline-flex; align-items: center; gap: 0.35rem; border: 1px solid var(--wiki-line); background: var(--wiki-paper); padding: 0.3rem 0.5rem; font-size: 0.72rem; }
+.territory-legend button span { inline-size: 0.85rem; block-size: 0.85rem; }
+.territory-contested-key { align-self: center; padding-inline: 0.4rem; font-size: 0.75rem; font-weight: 700; }
 .document-index-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr)); gap: 0.6rem; }
 .document-index-grid a { display: grid; gap: 0.25rem; border: 1px solid var(--wiki-line); background: var(--wiki-paper); color: var(--wiki-text); padding: 0.75rem; text-decoration: none; }
 .document-index-grid a:hover { border-color: var(--wiki-accent); }
@@ -256,6 +287,9 @@ summary:focus-visible {
 }
 
 @media (max-width: 63.99rem) {
+  .person-detail-layout { grid-template-columns: minmax(0, 1fr); }
+  .person-data-panel { position: static; }
+  .territory-map-layout { grid-template-columns: minmax(0, 1fr); }
   .wiki-article-grid {
     grid-template-columns: minmax(0, 1fr);
   }
