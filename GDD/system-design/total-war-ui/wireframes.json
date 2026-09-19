@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "서울:전국 · 데스크톱 UI/UX 와이어프레임",
+    "quality_profile": "standard",
+    "views": [
+      { "id": "campaign-view", "label": "캠페인·편성", "focus": ["shell", "campaign", "roster"], "note": "경로 판단에서 파티 편성으로 이어지는 데스크톱 정보구조." },
+      { "id": "battle-view", "label": "배치·부대 지휘", "focus": ["shell", "deployment", "battle", "command"], "note": "전장 도식과 선택 부대·명령 패널의 좌우 배치." },
+      { "id": "resolution-view", "label": "종료·결과", "focus": ["shell", "confirm", "result"], "note": "철수·항복 확인 뒤 결과 영수증과 다음 행선을 고르는 구조." }
+    ]
+  },
+  "components": [
+    { "id": "shell", "type": "frontend", "label": "공통 헤더·화면 탭", "sublabel": "원정 상태 · 6화면 탐색", "pos": [70, 55], "size": [880, 68], "tag": "항상 표시" },
+    { "id": "campaign", "type": "frontend", "label": "원정 경로 화면", "sublabel": "좌: 노선 그래프 / 우: 다음 구간 판단", "pos": [70, 165], "size": [260, 112], "tag": "01" },
+    { "id": "roster", "type": "frontend", "label": "파티 편성 화면", "sublabel": "좌: 인물 목록 / 우: 영웅·병졸 분대 구성", "pos": [360, 165], "size": [260, 112], "tag": "02" },
+    { "id": "deployment", "type": "frontend", "label": "전투 배치 화면", "sublabel": "좌: 전장 도식 / 우: 목표·퇴로·참가 부대", "pos": [650, 165], "size": [300, 112], "tag": "04" },
+    { "id": "battle", "type": "frontend", "label": "부대 지휘 전장", "sublabel": "3D 지휘 청사진 · 영웅 H · 병졸 I–III", "pos": [70, 335], "size": [410, 150], "tag": "05 주 작업" },
+    { "id": "command", "type": "frontend", "label": "선택·명령 패널", "sublabel": "현재 지시 · 이동/공격/진형/정지 · 확인/취소", "pos": [520, 335], "size": [210, 150], "tag": "병졸 ≤20" },
+    { "id": "confirm", "type": "security", "label": "종료 확인 대화상자", "sublabel": "질서 철수 · 수락 항복 · 전투 유지", "pos": [760, 335], "size": [190, 150], "tag": "오버레이" },
+    { "id": "result", "type": "database", "label": "결과·다음 행선 화면", "sublabel": "ResultId 영수증 / 원정 계속 / 다섯 결말", "pos": [280, 545], "size": [470, 104], "tag": "06" }
+  ],
+  "boundaries": [
+    { "kind": "region", "label": "캠페인 판단", "wraps": ["campaign", "roster"] },
+    { "kind": "region", "label": "닫힌 전투 세션", "wraps": ["deployment", "battle", "command", "confirm"] },
+    { "kind": "security-group", "label": "정확히 한 번 반영", "wraps": ["result"] }
+  ],
+  "connections": [
+    { "id": "campaign-roster", "from": "campaign", "to": "roster" },
+    { "id": "roster-deploy", "from": "roster", "to": "deployment" },
+    { "id": "battle-command", "from": "battle", "to": "command" },
+    { "id": "command-battle", "from": "command", "to": "battle", "variant": "dashed" },
+    { "id": "command-confirm", "from": "command", "to": "confirm" }
+  ],
+  "cards": [
+    { "dot": "emerald", "title": "화면 배치", "items": ["상단 헤더·탭은 공통", "주 전장과 명령 패널은 분리", "종료 확인은 상태를 가리는 오버레이"] },
+    { "dot": "amber", "title": "편성 표기", "items": ["영웅은 병졸 수 제외", "병졸 분대별 현재 인원 / 20", "전체 군단 상한은 표시하지 않음"] },
+    { "dot": "slate", "title": "상태 피드백", "items": ["선택 없음은 비활성", "취소는 기존 지시 보존", "결과 영수증은 같은 ID 재반영 차단"] }
+  ]
+}
