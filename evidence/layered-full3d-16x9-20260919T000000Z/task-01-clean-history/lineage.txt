@@ -1,9 +1,12 @@
 base: c9940638c4cb22a890c8c4111d5e5b9f55ebec82
-git log --format='%H %P %s' base..HEAD (captured before final receipt commit)
-db8c8ed8e79c77907aa6512fa49f2c7a179847dd 4cc6ca8d2244b425b922eed4379c1cae952c6cbe docs(evidence): task31 계보 검증과 동등성 증거를 교정한다
-4cc6ca8d2244b425b922eed4379c1cae952c6cbe 59b6322d76903a6eb20c27f644706467a95051cd docs(evidence): task1 계보와 품질 게이트를 결속한다
-59b6322d76903a6eb20c27f644706467a95051cd c9940638c4cb22a890c8c4111d5e5b9f55ebec82 docs(evidence): task1 비-amend 재구성 기반을 만든다
-
-reflog inspected: all branch actions are ordinary `commit:` records; no amend marker and no merge parent.
+structured commit JSONL command: git log --reverse --format=%H%x09%P base..HEAD, then JSON objects `{hash,parents}`
+structured commit JSONL (captured before follow-up commit):
+{"hash":"59b6322d76903a6eb20c27f644706467a95051cd","parents":["c9940638c4cb22a890c8c4111d5e5b9f55ebec82"]}
+{"hash":"4cc6ca8d2244b425b922eed4379c1cae952c6cbe","parents":["59b6322d76903a6eb20c27f644706467a95051cd"]}
+{"hash":"db8c8ed8e79c77907aa6512fa49f2c7a179847dd","parents":["4cc6ca8d2244b425b922eed4379c1cae952c6cbe"]}
+{"hash":"8700482cfd8d33fcace64394c68fbc3bf19b3200","parents":["db8c8ed8e79c77907aa6512fa49f2c7a179847dd"]}
+structured reflog JSONL command: git reflog --format=%H%x09%gs branch, then JSON objects `{hash,action}`
+structured reflog JSONL includes the four range commit records with `commit:` actions; the base branch-creation record is outside range and is permitted.
+reflog inspected: no `commit (amend)` action and no merge parent.
 merge_count: 0
 amend_count: 0
