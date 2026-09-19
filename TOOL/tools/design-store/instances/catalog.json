@@ -6,164 +6,169 @@
     "onePage": {
       "title": "출격하고 돌아오는 흐름",
       "audience": "designers",
-      "pictureNote": "준비, 원정, 조우, 전투, 결과 반영",
+      "pictureNote": "준비, 원정, 조우, 결과 반영 뒤 다섯 결말 또는 계속 이동",
       "panels": [
         {
           "heading": "거점",
-          "body": "정보, 의뢰, 계약과 관계 문제를 살핍니다.",
+          "body": "거점에서 길을 나선다. 반드시 돌아오라는 뜻이 아니다.",
           "sourcePath": "GAME-LOGIC/Campaign-Loop.md"
         },
         {
           "heading": "준비",
-          "body": "파티, 장비, 식량, 의약품, 경로와 통행권을 준비합니다.",
+          "body": "준비는 같다. 사람, 식량, 약, 통행, 관계.",
           "sourcePath": "GAME-LOGIC/Campaign-Loop.md"
         },
         {
           "heading": "조우",
-          "body": "교섭, 거래, 작업, 은신, 회피 또는 전투를 선택합니다.",
+          "body": "마주치면 말하거나 숨거나 붙는다.",
           "sourcePath": "GAME-LOGIC/Campaign-Loop.md"
         },
         {
           "heading": "정산",
-          "body": "부상, 시간, 물자, 관계, 평판, 거점과 노선 상태가 바뀝니다.",
+          "body": "전투든 비전투 조우든 결과는 한 번만 원장에 남는다.",
           "sourcePath": "GAME-LOGIC/Campaign-Loop.md"
         }
       ]
     },
     "mechanics": [
       {
-        "name": "행동 단위",
-        "body": "행동: 한 칸 이동, 대화, 작업, 공격 같은 즉시 결정",
+        "name": "칸",
+        "body": "시간은 칸, 시간, 하루, 한 주다.",
         "sourcePath": "GAME-LOGIC/Campaign-Loop.md"
       },
       {
-        "name": "시간 단위",
-        "body": "시간: 이동, 피로, 식량, 지역 일정",
+        "name": "시간",
+        "body": "시간은 칸, 시간, 하루, 한 주다.",
         "sourcePath": "GAME-LOGIC/Campaign-Loop.md"
       },
       {
         "name": "하루",
-        "body": "하루: 역 생산과 소비, 외부 파티 이동, 노선 안전",
+        "body": "시간은 칸, 시간, 하루, 한 주다.",
         "sourcePath": "GAME-LOGIC/Campaign-Loop.md"
       },
       {
         "name": "한 주",
-        "body": "한 주: 외교, 인구 집계, 정통성, 세력 목표",
+        "body": "시간은 칸, 시간, 하루, 한 주다.",
         "sourcePath": "GAME-LOGIC/Campaign-Loop.md"
       }
     ],
     "dynamics": [
       {
-        "name": "여섯 단계",
-        "body": "준비, 원정, 조우, 전투, 결과 반영 단계를 순서대로 진행합니다.",
+        "name": "다섯 결말",
+        "body": "같은 출발이 다섯으로 갈라진다.",
         "sourcePath": "GAME-LOGIC/Campaign-Loop.md"
       },
       {
         "name": "규모",
-        "body": "초기에는 파티 생존과 한 역의 문제를 다룹니다.",
+        "body": "규모는 커질 수 있다. 한 사람에서 작업반, 상단, 여러 역의 협약.",
         "sourcePath": "GAME-LOGIC/Campaign-Loop.md"
       },
       {
         "name": "정밀도",
-        "body": "플레이어 주변은 자세히 계산하고 멀리 있는 세계는 집계 단위로 처리합니다.",
+        "body": "가까운 곳은 자세히, 먼 곳은 집계다.",
         "sourcePath": "GAME-LOGIC/Campaign-Loop.md"
       }
     ],
     "aesthetics": [
       {
         "kind": "Challenge",
-        "body": "교섭, 거래, 작업, 은신, 회피 또는 전투를 선택합니다.",
+        "body": "정착·정복·방랑·교역은 같은 준비에서 갈라지며, 화면 10의 「거점으로 복귀」를 필수 엔딩으로 두지 않는다.",
         "sourcePath": "GAME-LOGIC/Campaign-Loop.md"
       },
       {
         "kind": "Fellowship",
-        "body": "신뢰와 직능을 얻으면 작업반이나 상단을 이끌고, 이후에는 여러 역의 협약과 노선 세력의 정책에 개입합니다.",
+        "body": "커져도 선택은 이름 있는 손을 통해 간다.",
         "sourcePath": "GAME-LOGIC/Campaign-Loop.md"
       }
     ]
   },
   {
     "id": "battle",
-    "title": "실시간 진형·카드 전투",
+    "title": "실시간 부대 지휘 전투",
     "section": "전투",
     "onePage": {
-      "title": "실시간 진형·카드 전투",
+      "title": "실시간 부대 지휘 전투",
       "audience": "engineers",
-      "pictureNote": "Songs of Silence 실시간 진형·카드, 30Hz",
+      "pictureNote": "이름 있는 영웅과 병사 분대를 별도 전술 행위자로 선택·지휘. 병사 분대는 최대 20명이며 영웅은 제외(예시: 별도 영웅 행위자와 병사 20명 분대는 서로 다른 두 행위자). 군단 상한·분대 최소·분대 수·영웅 수·능력 자원은 미정.",
       "panels": [
         {
           "heading": "형태",
-          "body": "전투 형태는 Songs of Silence와 같은 실시간 진형·카드 전투다.",
-          "sourcePath": "Intent.md"
+          "body": "직접 조작하는 대상은 개별 영웅이 아니라 선택한 부대다.",
+          "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
         },
         {
           "heading": "진형",
-          "body": "전열, 후열, 측면에 분대를 배치하고 4방향 정면을 정합니다.",
+          "body": "전투 전이나 허용된 재편 상태에서 진형과 정면을 정한다.",
           "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
         },
         {
           "heading": "명령",
-          "body": "actor 기반 분대 이동(Move), 목표 적 지정 공격(Attack), 방향 전환(SetFacing)을 내립니다.",
+          "body": "이동, 공격, 방향 전환, 진형 변경, 정지 가운데 하나를 고른다.",
           "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
         },
         {
-          "heading": "생존수",
-          "body": "초기 생존수는 `ceil(4 * 시작Hp / MaxHp)`로 정합니다(Hp가 0이면 0).",
+          "heading": "결과",
+          "body": "각 전투는 위 종료 상태 가운데 하나와 전투 사실을 담은 불변 결과를 한 번만 발행한다.",
           "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
         }
       ]
     },
     "mechanics": [
       {
-        "name": "틱",
-        "body": "시뮬레이션은 30Hz 고정 간격으로 진행됩니다.",
+        "name": "규칙 간격",
+        "body": "시뮬레이션은 고정된 규칙 간격으로 진행한다.",
         "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
       },
       {
-        "name": "지휘 반경",
-        "body": "리더의 지휘 반경(3칸) 안에 있는 인물만 카드와 협공 대상이 됩니다.",
+        "name": "선택",
+        "body": "한 부대 또는 함께 지시할 부대들을 선택한다.",
         "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
       },
       {
-        "name": "거점 카드",
-        "body": "거점 카드는 최대 2슬롯이며 아군 분대 전체가 공유합니다.",
+        "name": "영웅과 병졸 분대",
+        "body": "병졸 한 분대의 상한은 20명이며, 21명 이상을 한 분대로 합치지 않는다.",
         "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
       },
       {
-        "name": "카드 소유",
-        "body": "인물 카드는 `(OwnerUnitId, CardId)` 쌍으로 상태를 관리하며 소유자마다 독립된 재충전 타이머를 가집니다.",
+        "name": "미리보기",
+        "body": "전장에 표시된 경로·목표·도착 진형을 미리 본다.",
         "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
       },
       {
-        "name": "재충전",
-        "body": "재충전 길이는 기존 카드별 값을 유지합니다: 방패벽 300틱, 격려 600틱, 협공 450틱, 기동 재집결 600틱.",
+        "name": "현재 지시",
+        "body": "확인하면 새 지시가 그 부대의 현재 지시를 교체한다. 취소하면 기존 지시를 그대로 둔다.",
+        "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
+      },
+      {
+        "name": "일시정지",
+        "body": "일시정지와 재개는 실제 전투 상태다.",
+        "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
+      },
+      {
+        "name": "수락 기록",
+        "body": "확정한 지시만 수락된 명령 기록에 들어간다.",
+        "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
+      },
+      {
+        "name": "카메라",
+        "body": "전투 카메라는 3D 자유 지휘 시점이다.",
         "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
       },
       {
         "name": "항복",
-        "body": "항복은 사기 20 이하, 지휘관 HP 50% 이하, 퇴로 확보가 모두 참일 때만 성립합니다.",
-        "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
-      },
-      {
-        "name": "규칙 버전",
-        "body": "규칙 버전을 명확히 구분하며 이전 소유자 없는 리플레이(ownerless replay)는 재생 전 버전 오류를 명시해 거부합니다.",
-        "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
-      },
-      {
-        "name": "사기 기본",
-        "body": "사기 게이지, 기본 60, 경고 40, 회복 상한 80, 항복 판정 상한 20",
+        "body": "퇴로 봉쇄나 `LegalFallback` 실패만으로 항복 선택을 없애지 않는다.",
         "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
       }
     ],
     "dynamics": [
       {
         "name": "전투 중",
-        "body": "인물별 카드 `(OwnerUnitId, CardId)`와 출격 전 선택한 거점 카드(최대 2장)를 각 카드의 재충전 주기에 맞춰 냅니다.",
+        "body": "플레이어는 부대를 골라 지시하며, 전투는 변경할 수 없는 `ResultId` 하나를 내고 끝난다.",
         "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
       },
       {
         "name": "분대 지시",
-        "body": "actor 기반 분대 이동(Move), 목표 적 지정 공격(Attack), 방향 전환(SetFacing)을 내립니다.",
+        "body": "같은 부대에 나중에 확인한 명령은 앞서 확인한 현재 명령을 교체하며, 별도 명령 큐를 만들지 않는다.",
         "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
       },
       {
@@ -180,8 +185,8 @@
     "aesthetics": [
       {
         "kind": "Challenge",
-        "body": "보급, 동맹, 퇴로와 거점 상태가 카드와 사기로 전장에 들어옵니다.",
-        "sourcePath": "GAME-LOGIC/Game-Thesis.md"
+        "body": "미리보기와 확정 때 모두 같은 전투 컨텍스트로 유효성을 검사하되, 미리보기 자체는 상태를 바꾸지 않는다.",
+        "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
       },
       {
         "kind": "Sensation",
@@ -201,63 +206,63 @@
       "panels": [
         {
           "heading": "그래프",
-          "body": "서울은 평면 행정구역 지도가 아니라 서로 다른 위험과 기능을 가진 층의 그래프입니다.",
-          "sourcePath": "GAME-LOGIC/World-and-Subway-Layers.md"
+          "body": "세계는 그 층들을 이은 그래프다.",
+          "sourcePath": "LORE/places/World-and-Subway-Layers.md"
         },
         {
           "heading": "진실",
-          "body": "세계 진실 그래프는 역, 구역과 연결을 모두 저장합니다.",
-          "sourcePath": "GAME-LOGIC/World-and-Subway-Layers.md"
+          "body": "세계 진실 그래프는 역과 구역, 그 사이를 잇는 연결을 한꺼번에 들고 있다. 화면에는 지금 필요한 노선과 고른 역의 상세만 올린다. 서울역을 고르면 그 역의 대합실과 승강장이 펼쳐지고, 영등포에서 신도림으로 가는 터널만 따로 켜 두는 식이다.",
+          "sourcePath": "LORE/places/World-and-Subway-Layers.md"
         },
         {
           "heading": "연결",
-          "body": "연결은 삭제되지 않고 상태가 바뀝니다.",
-          "sourcePath": "GAME-LOGIC/World-and-Subway-Layers.md"
+          "body": "연결은 지워지지 않고 상태만 바뀐다. 정상에서 위험·통제·봉쇄로, 침수와 붕괴와 임시 복구로 넘어갈 때마다 원인을 같이 적는다. 그래서 길이 왜 끊겼는지, 무엇을 손보면 다시 열리는지를 같은 칸에서 확인할 수 있다.",
+          "sourcePath": "LORE/places/World-and-Subway-Layers.md"
         }
       ]
     },
     "mechanics": [
       {
         "name": "역",
-        "body": "`Station`: 역 사회와 전략 거점",
-        "sourcePath": "GAME-LOGIC/World-and-Subway-Layers.md"
+        "body": "서울역 같은 거점은 `Station`으로 올라가고, 그 안의 대합실·승강장·심층은 `StationLayer`로 남는다.",
+        "sourcePath": "LORE/places/World-and-Subway-Layers.md"
       },
       {
         "name": "층",
-        "body": "`StationLayer`: 대합실, 승강장, 심층 구역",
-        "sourcePath": "GAME-LOGIC/World-and-Subway-Layers.md"
+        "body": "대합실에서 승강장으로 내려가는 계단과, 환승 통로가 꺾이는 모서리가 한 그림에 겹친다.",
+        "sourcePath": "LORE/places/World-and-Subway-Layers.md"
       },
       {
         "name": "지상",
-        "body": "`SurfaceDistrict`: 역과 연결된 지상 권역",
-        "sourcePath": "GAME-LOGIC/World-and-Subway-Layers.md"
+        "body": "역과 붙은 지상 권역은 `SurfaceDistrict`, 영등포와 신도림 사이 이동 구간은 `TunnelSegment`다.",
+        "sourcePath": "LORE/places/World-and-Subway-Layers.md"
       },
       {
         "name": "터널",
-        "body": "`TunnelSegment`: 역 사이의 이동 구간",
-        "sourcePath": "GAME-LOGIC/World-and-Subway-Layers.md"
+        "body": "역과 붙은 지상 권역은 `SurfaceDistrict`, 영등포와 신도림 사이 이동 구간은 `TunnelSegment`다.",
+        "sourcePath": "LORE/places/World-and-Subway-Layers.md"
       },
       {
         "name": "수직",
-        "body": "`VerticalConnector`: 계단, 승강기, 환기구",
-        "sourcePath": "GAME-LOGIC/World-and-Subway-Layers.md"
+        "body": "계단과 승강기와 환기구는 `VerticalConnector`로 붙고, 노선이 갈라지는 환승은 `Interchange`로 읽힌다.",
+        "sourcePath": "LORE/places/World-and-Subway-Layers.md"
       },
       {
         "name": "환승",
-        "body": "`Interchange`: 노선 사이의 환승 연결",
-        "sourcePath": "GAME-LOGIC/World-and-Subway-Layers.md"
+        "body": "계단과 승강기와 환기구는 `VerticalConnector`로 붙고, 노선이 갈라지는 환승은 `Interchange`로 읽힌다.",
+        "sourcePath": "LORE/places/World-and-Subway-Layers.md"
       }
     ],
     "dynamics": [
       {
         "name": "동적 연결",
-        "body": "정상, 위험, 통제, 봉쇄, 침수, 붕괴, 임시 복구 상태와 원인을 기록합니다.",
-        "sourcePath": "GAME-LOGIC/World-and-Subway-Layers.md"
+        "body": "연결은 지워지지 않고 상태만 바뀐다. 정상에서 위험·통제·봉쇄로, 침수와 붕괴와 임시 복구로 넘어갈 때마다 원인을 같이 적는다. 그래서 길이 왜 끊겼는지, 무엇을 손보면 다시 열리는지를 같은 칸에서 확인할 수 있다.",
+        "sourcePath": "LORE/places/World-and-Subway-Layers.md"
       },
       {
         "name": "화면",
-        "body": "화면은 그중 현재 필요한 노선과 선택한 역의 상세만 보여 줍니다.",
-        "sourcePath": "GAME-LOGIC/World-and-Subway-Layers.md"
+        "body": "화면에는 지금 필요한 노선과 고른 역의 상세만 올린다.",
+        "sourcePath": "LORE/places/World-and-Subway-Layers.md"
       }
     ],
     "aesthetics": [
@@ -269,7 +274,7 @@
       {
         "kind": "Fantasy",
         "body": "자원 수집, 태양광, 장거리 관측",
-        "sourcePath": "GAME-LOGIC/World-and-Subway-Layers.md"
+        "sourcePath": "LORE/places/World-and-Subway-Layers.md"
       }
     ]
   },
@@ -284,18 +289,18 @@
       "panels": [
         {
           "heading": "거점",
-          "body": "역은 점령 즉시 완성되는 깃발이 아니라 사람, 시설과 연결을 다시 작동시켜야 하는 전략 거점입니다.",
-          "sourcePath": "GAME-LOGIC/Strongholds-and-Territory.md"
+          "body": "과확장은 영토 상한이 아니라 담당자, 주둔군과 연결 부족으로 발생한다.",
+          "sourcePath": "LORE/economy/Strongholds-and-Territory.md"
         },
         {
           "heading": "단계",
-          "body": "점령지는 `분쟁 → 점령 → 안정화 → 통합`을 거칩니다.",
-          "sourcePath": "GAME-LOGIC/Strongholds-and-Territory.md"
+          "body": "거점 점유 후 안정화와 영토 통합을 전략맵 연결과 지형으로 관리합니다.",
+          "sourcePath": "LORE/economy/Strongholds-and-Territory.md"
         },
         {
           "heading": "정산 순서",
-          "body": "하루 정산 순서는 자원 배분 → 전투 결과 → 권위·협력·시설 → 단계 전이 → 사건 예약입니다.",
-          "sourcePath": "GAME-LOGIC/Strongholds-and-Territory.md"
+          "body": "하루 정산 순서는 자원 배분 → 전투 결과 → 권위·협력·시설 → 단계 전이 → 사건 예약이다. 동일한 입력은 항상 같은 결과를 낸다.",
+          "sourcePath": "LORE/economy/Strongholds-and-Territory.md"
         }
       ]
     },
@@ -303,44 +308,44 @@
       {
         "name": "권위",
         "body": "순찰, 협약 집행, 적대 활동 억제",
-        "sourcePath": "GAME-LOGIC/Strongholds-and-Territory.md"
+        "sourcePath": "LORE/economy/Strongholds-and-Territory.md"
       },
       {
         "name": "협력",
         "body": "노동, 정보 제공, 통치 수용",
-        "sourcePath": "GAME-LOGIC/Strongholds-and-Territory.md"
+        "sourcePath": "LORE/economy/Strongholds-and-Territory.md"
       },
       {
         "name": "시설",
         "body": "지역 서비스와 노선 서비스",
-        "sourcePath": "GAME-LOGIC/Strongholds-and-Territory.md"
+        "sourcePath": "LORE/economy/Strongholds-and-Territory.md"
       },
       {
         "name": "연결도",
         "body": "합법 경로의 최소 처리량",
-        "sourcePath": "GAME-LOGIC/Strongholds-and-Territory.md"
+        "sourcePath": "LORE/economy/Strongholds-and-Territory.md"
       },
       {
         "name": "일반 슬롯",
         "body": "일반 역 시설 슬롯",
-        "sourcePath": "GAME-LOGIC/Strongholds-and-Territory.md"
+        "sourcePath": "LORE/economy/Strongholds-and-Territory.md"
       },
       {
         "name": "환승 슬롯",
         "body": "환승역 시설 슬롯",
-        "sourcePath": "GAME-LOGIC/Strongholds-and-Territory.md"
+        "sourcePath": "LORE/economy/Strongholds-and-Territory.md"
       }
     ],
     "dynamics": [
       {
         "name": "통합",
-        "body": "`A>=65`, `L>=55`, `R>=60`, `K>=0.5`, `S<=0.25`를 3일 연속 만족해야 통합됩니다.",
-        "sourcePath": "GAME-LOGIC/Strongholds-and-Territory.md"
+        "body": "점령지는 `분쟁 → 점령 → 안정화 → 통합`을 거친다. `A>=65`, `L>=55`, `R>=60`, `K>=0.5`, `S<=0.25`를 3일 연속 만족해야 통합된다.",
+        "sourcePath": "LORE/economy/Strongholds-and-Territory.md"
       },
       {
         "name": "고립",
-        "body": "완전 고립이면 수입·수출은 0이지만 현지 비축과 발전은 계속 작동합니다.",
-        "sourcePath": "GAME-LOGIC/Strongholds-and-Territory.md"
+        "body": "완전 고립이면 수입·수출은 0이지만 현지 비축과 발전은 계속 작동한다.",
+        "sourcePath": "LORE/economy/Strongholds-and-Territory.md"
       }
     ],
     "aesthetics": [
@@ -351,8 +356,8 @@
       },
       {
         "kind": "Challenge",
-        "body": "과확장은 영토 상한이 아니라 담당자, 주둔군과 연결 부족으로 발생합니다.",
-        "sourcePath": "GAME-LOGIC/Strongholds-and-Territory.md"
+        "body": "과확장은 영토 상한이 아니라 담당자, 주둔군과 연결 부족으로 발생한다.",
+        "sourcePath": "LORE/economy/Strongholds-and-Territory.md"
       }
     ]
   },
@@ -367,18 +372,18 @@
       "panels": [
         {
           "heading": "경제",
-          "body": "경제는 돈 하나가 아니라 생존 자원, 제작 자원, 노동, 전력과 실제 운송 능력의 결합입니다.",
-          "sourcePath": "GAME-LOGIC/Economy-and-Production.md"
+          "body": "경제는 돈 하나가 아니라 생존 자원, 제작 자원, 노동, 전력과 실제 운송 능력의 결합이다. 모든 수치는 첫 프로토타입용 설계 가정으로 둔다.",
+          "sourcePath": "LORE/economy/Economy-and-Production.md"
         },
         {
           "heading": "생산",
-          "body": "생산량은 노동, 입력, 전력, 시설 상태 중 가장 낮은 충족률로 제한됩니다.",
-          "sourcePath": "GAME-LOGIC/Economy-and-Production.md"
+          "body": "생산량 = 기본산출 * min(노동률, 입력률, 전력률) * 시설상태",
+          "sourcePath": "LORE/economy/Economy-and-Production.md"
         },
         {
           "heading": "가격",
-          "body": "가격은 재고를 만들지 않습니다.",
-          "sourcePath": "GAME-LOGIC/Economy-and-Production.md"
+          "body": "가격은 재고를 만들지 않는다. 실제 물건, 구매력, 접근권과 운송 용량이 있어야 거래가 성립한다.",
+          "sourcePath": "LORE/economy/Economy-and-Production.md"
         }
       ]
     },
@@ -386,34 +391,34 @@
       {
         "name": "식량",
         "body": "주민 생존, 치료, 노동 지속성",
-        "sourcePath": "GAME-LOGIC/Economy-and-Production.md"
+        "sourcePath": "LORE/economy/Economy-and-Production.md"
       },
       {
         "name": "전력",
         "body": "조명, 펌프, 제작, 냉장",
-        "sourcePath": "GAME-LOGIC/Economy-and-Production.md"
+        "sourcePath": "LORE/economy/Economy-and-Production.md"
       },
       {
         "name": "노동",
         "body": "생산·행정·호송 수행",
-        "sourcePath": "GAME-LOGIC/Economy-and-Production.md"
+        "sourcePath": "LORE/economy/Economy-and-Production.md"
       },
       {
         "name": "교환권",
         "body": "시장 거래와 계약 정산",
-        "sourcePath": "GAME-LOGIC/Economy-and-Production.md"
+        "sourcePath": "LORE/economy/Economy-and-Production.md"
       }
     ],
     "dynamics": [
       {
         "name": "일일 정산",
-        "body": "하루 시작에 주민용 물·식량·응급 의료를 먼저 예약하고, 그 뒤 시설 입력과 시장 주문을 배정합니다.",
-        "sourcePath": "GAME-LOGIC/Economy-and-Production.md"
+        "body": "하루 시작에 주민용 물·식량·응급 의료를 먼저 예약하고, 그 뒤 시설 입력과 시장 주문을 배정한다. 생산량은 노동, 입력, 전력, 시설 상태 중 가장 낮은 충족률로 제한된다. 요구량이 0이거나 필요 입력 집합이 비어 있으면 해당 충족률은 1이며, 어떤 경우에도 0으로 나누지 않는다.",
+        "sourcePath": "LORE/economy/Economy-and-Production.md"
       },
       {
         "name": "거래",
-        "body": "실제 물건, 구매력, 접근권과 운송 용량이 있어야 거래가 성립합니다.",
-        "sourcePath": "GAME-LOGIC/Economy-and-Production.md"
+        "body": "실제 물건, 구매력, 접근권과 운송 용량이 있어야 거래가 성립한다.",
+        "sourcePath": "LORE/economy/Economy-and-Production.md"
       }
     ],
     "aesthetics": [
@@ -424,8 +429,8 @@
       },
       {
         "kind": "Challenge",
-        "body": "물·식량·전력 부족은 다음 날 노동을 낮추고, 의약품 부족은 치료 행동 자체를 제한합니다.",
-        "sourcePath": "GAME-LOGIC/Economy-and-Production.md"
+        "body": "물·식량·전력 부족은 다음 날 노동을 낮추고, 의약품 부족은 치료 행동 자체를 제한한다.",
+        "sourcePath": "LORE/economy/Economy-and-Production.md"
       }
     ]
   },
@@ -440,13 +445,13 @@
       "panels": [
         {
           "heading": "물류",
-          "body": "물류는 재고가 있다는 사실이 아니라 필요한 종류의 물자가 허가된 경로를 통해 제때 도착하는 능력입니다.",
-          "sourcePath": "GAME-LOGIC/Logistics-and-Infrastructure.md"
+          "body": "물류는 재고가 있다는 사실이 아니라 필요한 종류의 물자가 허가된 경로를 통해 제때 도착하는 능력이다. 표의 수치는 모두 설계 가정으로 둔다.",
+          "sourcePath": "LORE/economy/Logistics-and-Infrastructure.md"
         },
         {
           "heading": "과확장",
-          "body": "`과확장`은 여섯 전략 문서가 공유하는 0~2 척도이며 이 문서의 정의가 기준입니다.",
-          "sourcePath": "GAME-LOGIC/Logistics-and-Infrastructure.md"
+          "body": "`과확장`은 여섯 전략 문서가 공유하는 0~2 척도이며 이 문서의 정의가 기준이다.",
+          "sourcePath": "LORE/economy/Logistics-and-Infrastructure.md"
         }
       ]
     },
@@ -454,46 +459,46 @@
       {
         "name": "처리량",
         "body": "구간 기본 처리량 `B`",
-        "sourcePath": "GAME-LOGIC/Logistics-and-Infrastructure.md"
+        "sourcePath": "LORE/economy/Logistics-and-Infrastructure.md"
       },
       {
         "name": "접근권",
         "body": "통행 허용 여부",
-        "sourcePath": "GAME-LOGIC/Logistics-and-Infrastructure.md"
+        "sourcePath": "LORE/economy/Logistics-and-Infrastructure.md"
       },
       {
         "name": "위험",
         "body": "호송 손실과 지연",
-        "sourcePath": "GAME-LOGIC/Logistics-and-Infrastructure.md"
+        "sourcePath": "LORE/economy/Logistics-and-Infrastructure.md"
       },
       {
         "name": "고립 단계",
         "body": "모든 합법 주 경로가 정상이면 0, 일부 경로가 봉쇄되어 우회·경화물만 가능하면 1, 모든 합법 경로가 차단되면 2",
-        "sourcePath": "GAME-LOGIC/Logistics-and-Infrastructure.md"
+        "sourcePath": "LORE/economy/Logistics-and-Infrastructure.md"
       }
     ],
     "dynamics": [
       {
         "name": "부하",
         "body": "0~24 준비는 물류 특화 효과가 없고, 25~49 긴장은 준비도 감소와 여유 용량이 필요한 임의 행동 제한을 적용하며, 50~74 임계는 구간 진입 시 미치료 부상 하나 악화",
-        "sourcePath": "GAME-LOGIC/Logistics-and-Infrastructure.md"
+        "sourcePath": "LORE/economy/Logistics-and-Infrastructure.md"
       },
       {
         "name": "봉쇄",
-        "body": "봉쇄 연결은 삭제하지 않고 원인, 수리 자원과 예상 시간을 표시합니다.",
-        "sourcePath": "GAME-LOGIC/Logistics-and-Infrastructure.md"
+        "body": "봉쇄 연결은 삭제하지 않고 원인, 수리 자원과 예상 시간을 표시한다.",
+        "sourcePath": "LORE/economy/Logistics-and-Infrastructure.md"
       }
     ],
     "aesthetics": [
       {
         "kind": "Challenge",
-        "body": "노선은 영토이자 물류입니다.",
-        "sourcePath": "GAME-LOGIC/Game-Thesis.md"
+        "body": "실패는 세계에 남는다. 부상, 포획, 죽음, 물자, 원한. 인물이 정치의 단위다. 품계와 기억과 후계가 나라의 손을 바꾼다. 노선이 땅이자 물자다. 모든 변화는 원장으로 추적된다.",
+        "sourcePath": "GDD/Game-Thesis.md"
       },
       {
         "kind": "Discovery",
-        "body": "필요한 종류의 물자가 허가된 경로를 통해 제때 도착하는 능력입니다.",
-        "sourcePath": "GAME-LOGIC/Logistics-and-Infrastructure.md"
+        "body": "물류는 재고가 있다는 사실이 아니라 필요한 종류의 물자가 허가된 경로를 통해 제때 도착하는 능력이다. 표의 수치는 모두 설계 가정으로 둔다.",
+        "sourcePath": "LORE/economy/Logistics-and-Infrastructure.md"
       }
     ]
   },
@@ -508,13 +513,13 @@
       "panels": [
         {
           "heading": "정치",
-          "body": "정치는 하나의 호감도가 아니라 개인 신뢰, 대중 평판, 지역별 정통성, 이행 가능한 약속과 집단 불만의 그래프입니다.",
-          "sourcePath": "GAME-LOGIC/Factions-and-Diplomacy.md"
+          "body": "정치는 하나의 호감도가 아니라 개인 신뢰, 대중 평판, 지역별 정통성, 이행 가능한 약속과 집단 불만의 그래프다. 표의 수치는 설계 가정으로 둔다.",
+          "sourcePath": "LORE/factions/Factions-and-Diplomacy.md"
         },
         {
           "heading": "제안",
-          "body": "모든 제안은 먼저 실제 경로, 물자, 권한, 배타 계약 충돌을 검사합니다.",
-          "sourcePath": "GAME-LOGIC/Factions-and-Diplomacy.md"
+          "body": "모든 제안은 먼저 실제 경로, 물자, 권한, 배타 계약 충돌을 검사한다. 불가능한 약속은 높은 교섭 능력으로 통과시킬 수 없다.",
+          "sourcePath": "LORE/factions/Factions-and-Diplomacy.md"
         }
       ]
     },
@@ -522,46 +527,46 @@
       {
         "name": "신뢰",
         "body": "개인·기관 간 협조",
-        "sourcePath": "GAME-LOGIC/Factions-and-Diplomacy.md"
+        "sourcePath": "LORE/factions/Factions-and-Diplomacy.md"
       },
       {
         "name": "평판",
         "body": "청중별 공개 평가",
-        "sourcePath": "GAME-LOGIC/Factions-and-Diplomacy.md"
+        "sourcePath": "LORE/factions/Factions-and-Diplomacy.md"
       },
       {
         "name": "정통성",
         "body": "식량·전력·안전 등 근거별 승인",
-        "sourcePath": "GAME-LOGIC/Factions-and-Diplomacy.md"
+        "sourcePath": "LORE/factions/Factions-and-Diplomacy.md"
       },
       {
         "name": "정치 자본",
         "body": "회의·보증·연합 행동 비용",
-        "sourcePath": "GAME-LOGIC/Factions-and-Diplomacy.md"
+        "sourcePath": "LORE/factions/Factions-and-Diplomacy.md"
       }
     ],
     "dynamics": [
       {
         "name": "압력",
-        "body": "압력 70 이상, 지렛대 0.75 이상이 2주 연속일 때만 파업·봉쇄·분리 같은 강제 요구가 열립니다.",
-        "sourcePath": "GAME-LOGIC/Factions-and-Diplomacy.md"
+        "body": "압력 70 이상, 지렛대 0.75 이상이 2주 연속일 때만 파업·봉쇄·분리 같은 강제 요구가 열린다.",
+        "sourcePath": "LORE/factions/Factions-and-Diplomacy.md"
       },
       {
         "name": "후계",
-        "body": "후계자가 바뀌면 개인 약속과 제도 약속을 구분해 재검토합니다.",
-        "sourcePath": "GAME-LOGIC/Factions-and-Diplomacy.md"
+        "body": "후계자가 바뀌면 개인 약속과 제도 약속을 구분해 재검토한다. 새 후계의 성명은 [후계, 이름 로스터, 세계 원장](../characters/Heirs-Names-and-World-Ledger.md)을 따른다.",
+        "sourcePath": "LORE/factions/Factions-and-Diplomacy.md"
       }
     ],
     "aesthetics": [
       {
         "kind": "Fellowship",
-        "body": "개인 신뢰, 대중 평판, 지역별 정통성, 이행 가능한 약속과 집단 불만의 그래프입니다.",
-        "sourcePath": "GAME-LOGIC/Factions-and-Diplomacy.md"
+        "body": "정치는 하나의 호감도가 아니라 개인 신뢰, 대중 평판, 지역별 정통성, 이행 가능한 약속과 집단 불만의 그래프다. 표의 수치는 설계 가정으로 둔다.",
+        "sourcePath": "LORE/factions/Factions-and-Diplomacy.md"
       },
       {
         "kind": "Expression",
-        "body": "직위, 관계, 기억과 계승이 세력의 행동을 바꿉니다.",
-        "sourcePath": "GAME-LOGIC/Game-Thesis.md"
+        "body": "실패는 세계에 남는다. 부상, 포획, 죽음, 물자, 원한. 인물이 정치의 단위다. 품계와 기억과 후계가 나라의 손을 바꾼다. 노선이 땅이자 물자다. 모든 변화는 원장으로 추적된다.",
+        "sourcePath": "GDD/Game-Thesis.md"
       }
     ]
   },
@@ -576,18 +581,18 @@
       "panels": [
         {
           "heading": "인물",
-          "body": "이름 있는 인물은 능력, 생업, 부상, 소속, 직위, 신념과 주요 사건 기억을 가집니다.",
-          "sourcePath": "GAME-LOGIC/Characters-Factions-and-Professions.md"
+          "body": "이름 있는 인물은 능력, 생업, 부상, 소속, 직위, 신념과 주요 사건 기억을 가진다. 모든 인물 쌍의 관계를 저장하지 않고, 친족, 사제, 지휘, 계약, 협력과 원한처럼 결정을 바꾸는 관계만 남긴다.",
+          "sourcePath": "LORE/characters/Characters-Factions-and-Professions.md"
         },
         {
           "heading": "파티",
-          "body": "파티는 이동과 전투의 기본 단위입니다.",
-          "sourcePath": "GAME-LOGIC/Characters-Factions-and-Professions.md"
+          "body": "파티는 캠페인에서 동행·물자·부상자·지휘를 묶는 단위다.",
+          "sourcePath": "LORE/characters/Characters-Factions-and-Professions.md"
         },
         {
           "heading": "계승",
-          "body": "혈통뿐 아니라 양자, 사제, 직능 길드, 선거와 임명이 지도부 계승 경로가 됩니다.",
-          "sourcePath": "GAME-LOGIC/Characters-Factions-and-Professions.md"
+          "body": "혈통뿐 아니라 양자, 사제, 직능 길드, 선거와 임명이 지도부 계승 경로가 된다. 지도자의 죽음은 곧바로 세력 삭제가 아니라 직위 공백, 경쟁 후보와 정책 분기를 연다.",
+          "sourcePath": "LORE/characters/Characters-Factions-and-Professions.md"
         }
       ]
     },
@@ -595,61 +600,61 @@
       {
         "name": "정비사",
         "body": "전력, 셔터, 승강기, 차량 수리",
-        "sourcePath": "GAME-LOGIC/Characters-Factions-and-Professions.md"
+        "sourcePath": "LORE/characters/Characters-Factions-and-Professions.md"
       },
       {
         "name": "물류상",
         "body": "물자 운송, 시장 연결, 통행 계약",
-        "sourcePath": "GAME-LOGIC/Characters-Factions-and-Professions.md"
+        "sourcePath": "LORE/characters/Characters-Factions-and-Professions.md"
       },
       {
         "name": "의무원",
         "body": "치료, 방역, 의약품 생산",
-        "sourcePath": "GAME-LOGIC/Characters-Factions-and-Professions.md"
+        "sourcePath": "LORE/characters/Characters-Factions-and-Professions.md"
       },
       {
         "name": "순찰대",
         "body": "경로 안전, 호위, 질서 유지",
-        "sourcePath": "GAME-LOGIC/Characters-Factions-and-Professions.md"
+        "sourcePath": "LORE/characters/Characters-Factions-and-Professions.md"
       },
       {
         "name": "전령",
         "body": "정보 전달, 외교 문서, 소문 수집",
-        "sourcePath": "GAME-LOGIC/Characters-Factions-and-Professions.md"
+        "sourcePath": "LORE/characters/Characters-Factions-and-Professions.md"
       },
       {
         "name": "탐사원",
         "body": "폐쇄 구간 조사, 지도 갱신",
-        "sourcePath": "GAME-LOGIC/Characters-Factions-and-Professions.md"
+        "sourcePath": "LORE/characters/Characters-Factions-and-Professions.md"
       },
       {
         "name": "기록관",
         "body": "법통, 계약, 사건 원장 관리",
-        "sourcePath": "GAME-LOGIC/Characters-Factions-and-Professions.md"
+        "sourcePath": "LORE/characters/Characters-Factions-and-Professions.md"
       }
     ],
     "dynamics": [
       {
         "name": "관계",
-        "body": "친족, 사제, 지휘, 계약, 협력과 원한처럼 의미 있는 관계만 유지합니다.",
-        "sourcePath": "GAME-LOGIC/Characters-Factions-and-Professions.md"
+        "body": "이름 있는 인물은 능력, 생업, 부상, 소속, 직위, 신념과 주요 사건 기억을 가진다. 모든 인물 쌍의 관계를 저장하지 않고, 친족, 사제, 지휘, 계약, 협력과 원한처럼 결정을 바꾸는 관계만 남긴다.",
+        "sourcePath": "LORE/characters/Characters-Factions-and-Professions.md"
       },
       {
         "name": "승계",
-        "body": "리더가 죽거나 포획되면 정해진 승계 규칙으로 새 리더를 선택하고, 불가능하면 파티를 해산하거나 포로 집단으로 전환합니다.",
-        "sourcePath": "GAME-LOGIC/Characters-Factions-and-Professions.md"
+        "body": "파티는 캠페인에서 동행·물자·부상자·지휘를 묶는 단위다. 리더, 역할, 물자, 부상자, 현재 임무와 합법적인 위치를 가진다. 전장에서는 참가한 인물과 병력이 부대로 편성되고, 플레이어는 그 부대에 명령을 내린다. 영웅을 직접 조작하지 않으며, 파티 인원이 전장 병력 정원을 뜻하지는 않는다. 이 파티의 닫힌 전투에서만 일시정지 중 명령을 허용한다. 캠페인 세계나 다른 파티의 시간은 멈추지 않는다. 리더가 죽거나 포획되면 정해진 승계 규칙으로 새 리더를 고르고, 고를 수 없으면 파티를 해산하거나 포로 집단으로 바꾼다.",
+        "sourcePath": "LORE/characters/Characters-Factions-and-Professions.md"
       }
     ],
     "aesthetics": [
       {
         "kind": "Fellowship",
-        "body": "수리, 의료, 운송, 경비, 교섭과 탐사도 전투만큼 중요한 성장 경로입니다.",
-        "sourcePath": "GAME-LOGIC/Game-Thesis.md"
+        "body": "RPG는 그 사람의 손과 관계와 무공이다. 수리, 의약, 운송, 호위, 교섭, 탐사도 칼만큼 자란다. 훈련은 한 일이다. 맞으면 몸이 세지고, 고치면 손이 는다. 스킬 트리를 열지 않는다.",
+        "sourcePath": "GDD/Game-Thesis.md"
       },
       {
         "kind": "Fantasy",
-        "body": "한 역 사회에 흘러든 무명 인물이며, 작은 파티를 꾸리고 생업과 의뢰를 수행하면서 이름을 얻습니다.",
-        "sourcePath": "GAME-LOGIC/Game-Thesis.md"
+        "body": "실패는 세계에 남는다. 부상, 포획, 죽음, 물자, 원한. 인물이 정치의 단위다. 품계와 기억과 후계가 나라의 손을 바꾼다. 노선이 땅이자 물자다. 모든 변화는 원장으로 추적된다.",
+        "sourcePath": "GDD/Game-Thesis.md"
       }
     ]
   },
@@ -664,55 +669,55 @@
       "panels": [
         {
           "heading": "수",
-          "body": "서울에는 총 16개 국가가 존재합니다.",
-          "sourcePath": "GAME-LOGIC/Sixteen-States.md"
+          "body": "개막 서울에는 나라가 열여섯이다.",
+          "sourcePath": "LORE/factions/Sixteen-States.md"
         },
         {
           "heading": "강국",
-          "body": "이 가운데 강국은 5개이고 약소국은 11개입니다.",
-          "sourcePath": "GAME-LOGIC/Sixteen-States.md"
+          "body": "강국은 다섯이고 약소국은 열하나다.",
+          "sourcePath": "LORE/factions/Sixteen-States.md"
         },
         {
           "heading": "그릇",
-          "body": "국가는 영토, 자원, 직위, 조약과 정통성을 담는 그릇입니다.",
-          "sourcePath": "GAME-LOGIC/Ambitions-and-Relations.md"
+          "body": "국가는 영토, 자원, 직위, 조약과 정통성을 담는 그릇이다.",
+          "sourcePath": "LORE/characters/Ambitions-and-Relations.md"
         }
       ]
     },
     "mechanics": [
       {
         "name": "권역",
-        "body": "16국은 서울의 평면 구획이 아니라 정수, 차량기지, 시장, 환승, 산성 회랑을 묶은 생활권입니다.",
-        "sourcePath": "GAME-LOGIC/Sixteen-States.md"
+        "body": "16국은 서울의 평면 구획이 아니다. 정수와 차량기지와 본사와 총회와 환승과 산성 회랑을 묶어 생활권으로 읽힌다. 이 배치는 개막 시점의 창작 통제권이며 공개된 시설 위치만 실측으로 표시한다.",
+        "sourcePath": "LORE/factions/Sixteen-States.md"
       },
       {
         "name": "관계 상한",
-        "body": "인물당 일반 관계는 12개 이하로 유지합니다.",
-        "sourcePath": "GAME-LOGIC/Ambitions-and-Relations.md"
+        "body": "인물당 일반 관계는 12개 이하로 유지한다. 낮은 강도의 관계가 밀려나도 사건 원장은 남기 때문에 다시 만났을 때 과거를 복원할 수 있다.",
+        "sourcePath": "LORE/characters/Ambitions-and-Relations.md"
       }
     ],
     "dynamics": [
       {
         "name": "인물 정치",
-        "body": "같은 국가도 지도자와 핵심 직위자가 바뀌면 팽창국, 교역국, 중립국, 연방국으로 변할 수 있습니다.",
-        "sourcePath": "GAME-LOGIC/Ambitions-and-Relations.md"
+        "body": "국가는 영토, 자원, 직위, 조약과 정통성을 담는 그릇이다. `호전적인 국가`, `영원한 동맹`, `배신 확률` 같은 고정 성격은 두지 않는다. 같은 국가도 지도자와 핵심 직위자가 바뀌면 팽창국, 교역국, 중립국, 연방국으로 변할 수 있다.",
+        "sourcePath": "LORE/characters/Ambitions-and-Relations.md"
       },
       {
         "name": "슬롯",
-        "body": "캠페인이 진행되면 16개 영토 슬롯은 유지되더라도 국호, 지도자, 정통성과 동맹은 바뀔 수 있습니다.",
-        "sourcePath": "GAME-LOGIC/Sixteen-States.md"
+        "body": "캠페인이 진행되면 16개 영토 슬롯은 유지되더라도 국호, 지도자, 정통성과 동맹은 바뀔 수 있다.",
+        "sourcePath": "LORE/factions/Sixteen-States.md"
       }
     ],
     "aesthetics": [
       {
         "kind": "Narrative",
-        "body": "노선 연합, 독립 역 사회, 지상·지하 공동체, 교역망 패권, 기술 복구 체제처럼 플레이 과정에서 형성된 정통성에 따라 여러 질서가 등장합니다.",
-        "sourcePath": "GAME-LOGIC/Game-Thesis.md"
+        "body": "서울을 한 나라로 모으는 결말만 두지 않는다. 노선 연합, 독립 역, 강단의 치, 교역망, 기술 복구. 플레이가 만든 정통성이 질서가 된다.",
+        "sourcePath": "GDD/Game-Thesis.md"
       },
       {
         "kind": "Expression",
-        "body": "국가는 영토, 자원, 직위, 조약과 정통성을 담는 그릇입니다.",
-        "sourcePath": "GAME-LOGIC/Ambitions-and-Relations.md"
+        "body": "국가는 영토, 자원, 직위, 조약과 정통성을 담는 그릇이다.",
+        "sourcePath": "LORE/characters/Ambitions-and-Relations.md"
       }
     ]
   },
@@ -767,15 +772,15 @@
       },
       {
         "name": "전투 저장",
-        "body": "중간 저장을 읽을 때 캠페인을 다시 조회하지 않고 저장된 불변 컨텍스트와 전투 명령 기록을 복원합니다.",
+        "body": "중간 저장을 읽을 때 캠페인을 다시 조회하지 않고 저장된 불변 컨텍스트와 수락된 전투 명령 기록을 복원합니다. 일시정지 중 확인된 교체 명령은 재개 뒤 다음 시뮬레이션 스텝에서 같은 순서로 적용되어야 합니다. 저장은 실시간 전투에 턴이나 새 시간 간격을 만들지 않습니다. 같은 체크포인트와 명령 기록은 같은 결과와 검사값을 내야 합니다.",
         "sourcePath": "GAME-LOGIC/Save-and-Determinism.md"
       }
     ],
     "aesthetics": [
       {
         "kind": "Submission",
-        "body": "모든 상태 변화는 설명 가능해야 합니다.",
-        "sourcePath": "GAME-LOGIC/Game-Thesis.md"
+        "body": "모든 변화는 원장으로 추적된다.",
+        "sourcePath": "GDD/Game-Thesis.md"
       },
       {
         "kind": "Challenge",
@@ -795,7 +800,7 @@
       "panels": [
         {
           "heading": "Core",
-          "body": "ID, 시간, 명령, 사건, 노선, 캠페인, 정산, 실시간 진형·카드 전투",
+          "body": "| `Janseon.Core` | ID, 시간, 명령, 사건, 노선, 캠페인, 정산, 현재 카드 전투 POC | 금지 |",
           "sourcePath": "GAME-LOGIC/Unity-Architecture.md"
         },
         {
@@ -805,8 +810,8 @@
         },
         {
           "heading": "순서",
-          "body": "아래 검증 단계는 시각 수용·슬롯 연결·시각 게이트를 끝내는 순서다.",
-          "sourcePath": "GAME-LOGIC/Development-Roadmap.md"
+          "body": "현재 Unity 전투 Core는 카드 규칙이다. 아래 검증 단계는 그 POC를 끝내는 순서이며, 카드 문법을 새 목표로 올리지 않는다.",
+          "sourcePath": "GDD/Development-Roadmap.md"
         }
       ]
     },
@@ -841,7 +846,7 @@
       {
         "name": "게이트",
         "body": "각 단계는 실패하면 다음 단계로 넘어가지 않는다.",
-        "sourcePath": "GAME-LOGIC/Development-Roadmap.md"
+        "sourcePath": "GDD/Development-Roadmap.md"
       },
       {
         "name": "현재 모듈",
@@ -920,8 +925,8 @@
     "aesthetics": [
       {
         "kind": "Challenge",
-        "body": "보급, 동맹, 퇴로와 거점 상태가 카드와 사기로 전장에 들어옵니다.",
-        "sourcePath": "GAME-LOGIC/Game-Thesis.md"
+        "body": "전쟁은 병력 수 비교가 아니라 접근로, 보급, 사기, 퇴로와 점령 후 유지 능력을 둘러싼 연속 과정입니다.",
+        "sourcePath": "GAME-LOGIC/Warfare-and-Sieges.md"
       },
       {
         "kind": "Narrative",
@@ -937,11 +942,11 @@
     "onePage": {
       "title": "이동과 조우",
       "audience": "designers",
-      "pictureNote": "4방향, 같은 격자",
+      "pictureNote": "전략맵 노선 구간, 환승·봉쇄·현장 거래",
       "panels": [
         {
-          "heading": "방향",
-          "body": "동, 서, 남, 북 네 방향만 사용합니다.",
+          "heading": "이동",
+          "body": "전략맵(결정 10)에서 원정은 노선 구간을 골라 진행합니다.",
           "sourcePath": "GAME-LOGIC/Travel-and-Encounters.md"
         },
         {
@@ -953,8 +958,8 @@
     },
     "mechanics": [
       {
-        "name": "4방향",
-        "body": "동, 서, 남, 북 네 방향만 사용합니다.",
+        "name": "구간",
+        "body": "이동 감각과 거리 판단은 전략맵의 지형과 구간 상태에서 나옵니다.",
         "sourcePath": "GAME-LOGIC/Travel-and-Encounters.md"
       },
       {
@@ -978,7 +983,7 @@
     "aesthetics": [
       {
         "kind": "Discovery",
-        "body": "세계 지도에서는 노선, 환승과 봉쇄를 비교합니다.",
+        "body": "막힌 연결은 사라지지 않고 원인, 위험도와 복구 조건을 보여 줍니다.",
         "sourcePath": "GAME-LOGIC/Travel-and-Encounters.md"
       },
       {
@@ -1000,17 +1005,17 @@
         {
           "heading": "경로",
           "body": "HTML 목업에서 레이아웃·안정 이름을 먼저 고정한 뒤, 같은 계약을 uGUI Canvas로 옮깁니다.",
-          "sourcePath": "GAME-LOGIC/Ui-Implementation-Pipeline.md"
+          "sourcePath": "GDD/Ui-Implementation-Pipeline.md"
         },
         {
           "heading": "타이틀",
           "body": "플레이어가 지나가는 화면",
-          "sourcePath": "GAME-LOGIC/Ui-Implementation-Pipeline.md"
+          "sourcePath": "GDD/Ui-Implementation-Pipeline.md"
         },
         {
           "heading": "전투",
           "body": "플레이어가 지나가는 화면",
-          "sourcePath": "GAME-LOGIC/Ui-Implementation-Pipeline.md"
+          "sourcePath": "GDD/Ui-Implementation-Pipeline.md"
         }
       ]
     },
@@ -1018,44 +1023,44 @@
       {
         "name": "타이틀",
         "body": "플레이어가 지나가는 화면",
-        "sourcePath": "GAME-LOGIC/Ui-Implementation-Pipeline.md"
+        "sourcePath": "GDD/Ui-Implementation-Pipeline.md"
       },
       {
         "name": "거점",
         "body": "플레이어가 지나가는 화면",
-        "sourcePath": "GAME-LOGIC/Ui-Implementation-Pipeline.md"
+        "sourcePath": "GDD/Ui-Implementation-Pipeline.md"
       },
       {
         "name": "원정",
         "body": "플레이어가 지나가는 화면",
-        "sourcePath": "GAME-LOGIC/Ui-Implementation-Pipeline.md"
+        "sourcePath": "GDD/Ui-Implementation-Pipeline.md"
       },
       {
         "name": "조우",
         "body": "플레이어가 지나가는 화면",
-        "sourcePath": "GAME-LOGIC/Ui-Implementation-Pipeline.md"
+        "sourcePath": "GDD/Ui-Implementation-Pipeline.md"
       },
       {
         "name": "진형",
         "body": "플레이어가 지나가는 화면",
-        "sourcePath": "GAME-LOGIC/Ui-Implementation-Pipeline.md"
+        "sourcePath": "GDD/Ui-Implementation-Pipeline.md"
       },
       {
         "name": "전투 HUD",
         "body": "플레이어가 지나가는 화면",
-        "sourcePath": "GAME-LOGIC/Ui-Implementation-Pipeline.md"
+        "sourcePath": "GDD/Ui-Implementation-Pipeline.md"
       },
       {
         "name": "정산",
         "body": "플레이어가 지나가는 화면",
-        "sourcePath": "GAME-LOGIC/Ui-Implementation-Pipeline.md"
+        "sourcePath": "GDD/Ui-Implementation-Pipeline.md"
       }
     ],
     "dynamics": [
       {
         "name": "빌더",
         "body": "`UguiHudBuilder`가 Canvas와 `UiElementNames`를 만든다.",
-        "sourcePath": "GAME-LOGIC/Ui-Implementation-Pipeline.md"
+        "sourcePath": "GDD/Ui-Implementation-Pipeline.md"
       },
       {
         "name": "프레임워크",
@@ -1141,54 +1146,54 @@
     "onePage": {
       "title": "역 내부에 들어가면",
       "audience": "designers",
-      "pictureNote": "입장 후 층·격자·시설",
+      "pictureNote": "입장 후 대합실·승강장·연결 상태·시설 슬롯",
       "panels": [
         {
           "heading": "입장",
-          "body": "이 문서는 **역에 들어갔을 때 무엇이 열리는지**, 그리고 **시설을 어떻게 돌리는지**를 적는다.",
-          "sourcePath": "GAME-LOGIC/Station-Interior-Construction.md"
+          "body": "역 문에 들어섰을 때 대합실과 승강장이 어떻게 열리고, 그 안의 시설을 어떤 순서로 돌리는지를 적는다.",
+          "sourcePath": "LORE/places/Station-Interior-Construction.md"
         },
         {
-          "heading": "격자",
-          "body": "한 칸 1.5m, 북동남서만.",
-          "sourcePath": "GAME-LOGIC/Station-Interior-Construction.md"
+          "heading": "현재 상태",
+          "body": "입장 명령과 내부 격자 스폰, 시설 슬롯은 아직 없다.",
+          "sourcePath": "LORE/places/Station-Interior-Construction.md"
         }
       ]
     },
     "mechanics": [
       {
         "name": "대상",
-        "body": "카탈로그의 모든 역(서울 안 이름 있는 334곳과 정수장·차량기지·시장)이 입장 절차의 대상이다.",
-        "sourcePath": "GAME-LOGIC/Station-Interior-Construction.md"
+        "body": "카탈로그의 모든 역이 입장 절차의 대상이다.",
+        "sourcePath": "LORE/places/Station-Interior-Construction.md"
       },
       {
         "name": "슬롯",
-        "body": "일반 역 기본 2(1–4), 환승역 기본 3.",
-        "sourcePath": "GAME-LOGIC/Station-Interior-Construction.md"
+        "body": "시설 슬롯을 채울 때 일반 역은 기본 2(1–4), 환승역은 기본 3이다.",
+        "sourcePath": "LORE/places/Station-Interior-Construction.md"
       }
     ],
     "dynamics": [
       {
         "name": "층",
-        "body": "기본으로 대합실을 연다.",
-        "sourcePath": "GAME-LOGIC/Station-Interior-Construction.md"
+        "body": "그 역의 `StationLayer`를 고르고 기본으로 대합실을 연다.",
+        "sourcePath": "LORE/places/Station-Interior-Construction.md"
       },
       {
         "name": "정산과 분리",
         "body": "역 내부 구축은 별도의 입장 명령이다.",
-        "sourcePath": "GAME-LOGIC/Station-Interior-Construction.md"
+        "sourcePath": "LORE/places/Station-Interior-Construction.md"
       }
     ],
     "aesthetics": [
       {
         "kind": "Discovery",
-        "body": "이 문서는 **역에 들어갔을 때 무엇이 열리는지**, 그리고 **시설을 어떻게 돌리는지**를 적는다.",
-        "sourcePath": "GAME-LOGIC/Station-Interior-Construction.md"
+        "body": "승강장·환승·심층은 연결 상태가 정상이면 펼치고, 봉쇄·침수된 층은 원인과 복구 조건을 보여 준 뒤 못 들어가게 한다.",
+        "sourcePath": "LORE/places/Station-Interior-Construction.md"
       },
       {
         "kind": "Submission",
-        "body": "사람, 시설과 연결을 다시 작동시켜야 하는 전략 거점입니다.",
-        "sourcePath": "GAME-LOGIC/Strongholds-and-Territory.md"
+        "body": "사람, 시설과 연결을 다시 작동시켜야 하는 전략 거점이다.",
+        "sourcePath": "LORE/economy/Strongholds-and-Territory.md"
       }
     ]
   },
@@ -1199,42 +1204,42 @@
     "onePage": {
       "title": "캐릭터 미술 방향",
       "audience": "art",
-      "pictureNote": "TOS식 SD, 2.5등신",
+      "pictureNote": "애니메이션풍 정비율 목표, 오드랜드 원본은 POC",
       "panels": [
         {
           "heading": "비율",
-          "body": "2.5등신 SD 비율",
+          "body": "애니메이션풍 정비율. SD·2.5등신 목표를 다시 열지 않는다",
           "sourcePath": "GAME-LOGIC/Character-Art-Direction.md"
         },
         {
-          "heading": "하이브리드",
-          "body": "POC 사람 표현은 오드랜드 Spine이다.",
-          "sourcePath": "Intent.md"
+          "heading": "POC",
+          "body": "POC 사람 표현은 오드랜드 원본 어셋 as-is다",
+          "sourcePath": "GAME-LOGIC/Character-Art-Direction.md"
         }
       ]
     },
     "mechanics": [
       {
-        "name": "머리",
-        "body": "큰 머리와 분명한 얼굴 면",
+        "name": "얼굴과 무기",
+        "body": "분명한 얼굴 면과 읽기 쉬운 무기 외곽선",
         "sourcePath": "GAME-LOGIC/Character-Art-Direction.md"
       },
       {
-        "name": "방향",
-        "body": "동, 서, 남, 북 네 방향 전용 표현",
+        "name": "직업과 상태",
+        "body": "화면 안에서 직업과 상태를 구분할 수 있는 색과 장비",
         "sourcePath": "GAME-LOGIC/Character-Art-Direction.md"
       }
     ],
     "dynamics": [
       {
-        "name": "결합",
-        "body": "전신 전술 모델은 오드랜드 Spine이다.",
+        "name": "전술 표면",
+        "body": "전신 전술 모델은 오드랜드 Spine·3D 원본이다.",
         "sourcePath": "GAME-LOGIC/Character-Art-Direction.md"
       },
       {
-        "name": "계약",
-        "body": "Spine 에셋은 POC 사람 표현으로 쓴다.",
-        "sourcePath": "Intent.md"
+        "name": "초상 표면",
+        "body": "UI 제3 표면은 눈·머리·얼굴·옷처럼 교체 가능한 **원본 2D 플레이트**를 정해진 슬롯 순서로 **오프라인 합성**한다.",
+        "sourcePath": "GAME-LOGIC/Character-Art-Direction.md"
       }
     ],
     "aesthetics": [
@@ -1245,8 +1250,8 @@
       },
       {
         "kind": "Fantasy",
-        "body": "POC 사람 표현은 오드랜드 Spine이다.",
-        "sourcePath": "Intent.md"
+        "body": "제품 목표 인물은 애니메이션풍 정비율이다.",
+        "sourcePath": "GAME-LOGIC/Character-Art-Direction.md"
       }
     ]
   }

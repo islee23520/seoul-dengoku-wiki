@@ -7,11 +7,11 @@ Canonical hand-authored game-rules corpus — 30 Markdown files, ~8.9k lines: sy
 | Task | Location | Notes |
 |------|----------|-------|
 | Expedition core loop | `Campaign-Loop.md` | Five outcomes: return/settle/conquer/wander/trade |
-| Realtime battle contract | `Realtime-Formation-Card-Battle.md` | Formation-card rules, cooldowns, HP aggregation |
+| Realtime battle contract | `Realtime-Formation-Card-Battle.md` | Unit selection/orders and exits; card constants are labeled POC history |
 | Campaign tension/crisis math | `Campaign-Progression.md` | Weighted metrics, crisis probability, edge cases |
 | Travel, encounters, sieges | `Travel-and-Encounters.md`, `Warfare-and-Sieges.md` | |
-| Strategy-battle roundtrip | `Strategy-Battle-Roundtrip.md` | One battle ends in one ResultId |
-| Save/determinism contract | `Save-and-Determinism.md` | Event ledger, per-purpose RNG streams, checksummed saves |
+| Strategy-battle roundtrip | `Strategy-Battle-Roundtrip.md` | One immutable ResultId, exactly-once settlement, expedition may continue |
+| Save/determinism contract | `Save-and-Determinism.md` | Event ledger, deterministic checkpoints, per-purpose RNG streams |
 | Unity contract trio | `Unity-Architecture.md`, `Unity-System-Design.md`, `Unity-Architecture-Implementation-Plan.md` | All three live HERE — not under `GDD/system-design/` |
 | Cross-game mechanism hub | `Ref-Mechanism-Index.md` | Maps every Ref-* to mechanisms, adoption status, open questions |
 | One game's encyclopedia | `Ref-<Game>.md` (16) | FE/FFT, K-System, Bannerlord, CK3, XCOM 2, Nobunaga, ROTK, … |
@@ -29,6 +29,9 @@ Canonical hand-authored game-rules corpus — 30 Markdown files, ~8.9k lines: sy
 - Never carry numbers or rules across games or editions (FE phases ≠ FFT CT; per-edition Nobunaga/ROTK differ).
 - Never fill [미확인] with speculation or generic RPG defaults; never treat community wikis as verified implementation.
 - Do not edit the derivatives: `site/rules/*.md` mirrors and `GDD/design-store/canon/` renders regenerate from these files.
+- Keep target rules separate from dated POC history. After the unanswered-question timeout, use 3D free-command pan/orbit/zoom and party-local battle pause as recommended design defaults, not owner-explicit decisions.
+- Paused battles allow preview/confirm/cancel. Accepted replacements apply in deterministic order at the next simulation step after resume; never pause the shared campaign or other parties.
+- Target orders replace the selected unit's current order after confirmation. No queue, waypoints, speed controls, cards, or direct hero action. Top-down schematics are documentation blueprints, not rendered game screens.
 
 ## NOTES
 - Publication and render layers have their own guides: `site/AGENTS.md` (VitePress staging) and `GDD/design-store/AGENTS.md` (generated store).
