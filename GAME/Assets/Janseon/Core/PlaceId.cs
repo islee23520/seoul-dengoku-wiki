@@ -19,6 +19,7 @@ namespace Janseon.Core
     {
         public PlaceKind Kind { get; }
         public string StableId { get; }
+        public bool IsValid => Enum.IsDefined(typeof(PlaceKind), Kind) && !string.IsNullOrEmpty(StableId);
 
         public PlaceId(PlaceKind kind, string stableId)
         {
@@ -62,6 +63,14 @@ namespace Janseon.Core
         }
 
         public override string ToString() => Kind + ":" + StableId;
+
+        public void EnsureValid()
+        {
+            if (!IsValid)
+            {
+                throw new ArgumentException("Place id must contain a defined kind and nonempty stable id.");
+            }
+        }
 
         public static bool operator ==(PlaceId left, PlaceId right) => left.Equals(right);
         public static bool operator !=(PlaceId left, PlaceId right) => !left.Equals(right);
@@ -163,6 +172,7 @@ namespace Janseon.Core
 
         public PlaceDefinition(PlaceId id, string displayName, PlaceMetadata metadata = null)
         {
+            id.EnsureValid();
             Id = id;
             DisplayName = displayName == null ? string.Empty : displayName.Trim();
             Metadata = metadata ?? PlaceMetadata.Empty;

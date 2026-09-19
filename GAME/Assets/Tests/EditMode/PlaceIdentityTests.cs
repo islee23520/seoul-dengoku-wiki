@@ -88,10 +88,22 @@ namespace Janseon.Foundation.Tests
         [Test]
         public void UndefinedPlaceKindIsRejected()
         {
-            var error = Assert.Throws<ArgumentException>(
-                () => new PlaceId((PlaceKind)999, "station.invalid"));
+            var negative = Assert.Throws<ArgumentException>(
+                () => new PlaceId((PlaceKind)(-1), "station.invalid-negative"));
+            var large = Assert.Throws<ArgumentException>(
+                () => new PlaceId((PlaceKind)int.MaxValue, "station.invalid-large"));
 
-            StringAssert.Contains("kind", error.Message.ToLowerInvariant());
+            StringAssert.Contains("kind", negative.Message.ToLowerInvariant());
+            StringAssert.Contains("kind", large.Message.ToLowerInvariant());
+        }
+
+        [Test]
+        public void DefaultPlaceIdCannotEnterCatalog()
+        {
+            var catalog = new PlaceDefinitionCatalog(null);
+
+            Assert.Throws<ArgumentException>(() => new PlaceDefinition(default, "invalid"));
+            Assert.AreEqual(0, catalog.Count);
         }
 
         [Test]
