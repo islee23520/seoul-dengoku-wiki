@@ -6,10 +6,11 @@ Repository-only ESM/Python tooling, not shipped with Unity; score 12, distinct b
 ## STRUCTURE
 - `wiki/`: publishing and world-atlas projections; separate child guidance.
 - `art/`: candidate generation and runtime provenance; separate child guidance.
-- `regions/`: dated geography assembly and independent source verification.
+- `regions/`: dated geography assembly and independent source verification; own child guidance.
+- `strategy-map/`: deterministic Seoul strategy-map bakes; own child guidance.
 - `architecture/`, `policy/`: Unity ownership and delivery-authority gates.
 - `unity/`: headless/remote wrappers and UI evidence validator.
-- `design-store/`, `store/`: SQLite canon and source-bound capture.
+- `design-store/`, `store/`: SQLite canon and source-bound capture; `design-store/` has own child guidance.
 - `cast/`: roster draft generators.
 
 ## WHERE TO LOOK
@@ -17,22 +18,24 @@ Repository-only ESM/Python tooling, not shipped with Unity; score 12, distinct b
 |------|----------|-------|
 | Dependencies and npm test scope | `package.json` | Private `janseon-tools`, Node >=20 |
 | Wiki publishing and atlas rules | `wiki/AGENTS.md` | Rendering, safe cleanup, projections and suite coverage |
-| Region pipeline contracts | `regions/README.md` | Geometry-only verification is intermediate, not authored completeness |
-| SQLite canon and source capture | `design-store/mda-store.mjs`, `store/design-store-capture.mjs` | Separate npm test scripts |
+| Region pipeline contracts | `regions/README.md`, `regions/AGENTS.md` | Geometry-only verification is intermediate, not authored completeness |
+| Strategy-map bakes | `strategy-map/AGENTS.md` | Deterministic terrain/texture/building bakes; child guidance |
+| SQLite canon and source capture | `design-store/AGENTS.md`, `store/design-store-capture.mjs` | Separate npm test scripts |
 | Cast roster/relationship checks | `wiki/verify-cast.mjs` | `verifyCast` export, rule-coded violations |
 | Surname/bongwan/hangnyeol data contract | `wiki/verify-hangnyeol.mjs` | `verifyHangnyeol` export; quotes are matched against `RESEARCH/verification/hangnyeol/raw/` |
 | Strategy formula checks | `wiki/test-strategy-formulas.mjs` | Separate executable, not npm test |
 | Unity architecture gate | `architecture/check-unity-architecture.mjs` | C# scans plus scene YAML/build order |
 | Delivery-policy consistency | `policy/check-repo-delivery-policy.mjs` | Approved plan, ADR-001, live origin |
 | Capture evidence validation | `unity/validate-ui-captures.mjs` | PNG content and source-bound receipts |
+| Unity remote setup/start/CLI | npm `remote:setup`, `remote:start`, `remote:cli` | Wrappers over `unity/` scripts; token in `Game/.unity-remote-token` |
 | LFS hydration gate | `check-lfs-hydration.mjs` | Pointers in `GAME/Assets` or `GAME-REFERENCE/assets` fail closed |
 | Art planning and provenance | `art/AGENTS.md` | Separate domain guide |
 
 ## CONVENTIONS
-- `npm --prefix TOOL/tools test` runs only wiki build and Unity architecture-doc tests.
+- `npm --prefix TOOL/tools test` runs `policy/normalize-creative-names.mjs`, the wiki build test, and the Unity architecture-doc test.
 - Other gates/tests are explicit script entry points; npm test is not the full tooling suite.
 - `entities`, `mdast-util-from-markdown`, and `parse5` belong to wiki parsing; no game bundle is produced.
-- `test:design-store`, `test:mda-store`, and `test:unity-remote` are separately selected npm scripts.
+- `test:design-store`, `test:mda-store`, and `test:unity-remote` are separately selected npm scripts; so are `remote:setup`, `remote:start`, and `remote:cli`.
 - Region scripts use Python with pyosmium, Shapely, Rasterio/GDAL and NumPy; do not replace original-source verification with summary counts.
 - Capture validation covers five states at 1280x720 and 1920x1080; PNG hashes, playing-state receipts, HEAD, and dirty-tree fingerprint must agree.
 - Architecture validation checks serialized lifetime scopes as well as C#; changing only a code allowlist does not update scene expectations.

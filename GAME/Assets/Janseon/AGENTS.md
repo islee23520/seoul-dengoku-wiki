@@ -9,9 +9,13 @@ Production domains, Unity composition, and art import boundary; score 8, distinc
 | Typed IDs, RNG, replay primitives | `Core/DeterministicCore.cs` | `CoreApi`, `PurposeRng`, request index and ledger |
 | Travel graph | `Core/RouteDomain.cs` | `RouteApi`, station identifiers and traversal |
 | Campaign stages | `Core/CampaignDomain.cs` | `CampaignApi`, encounter choices and battle handoff |
-| Realtime formation/card combat | `Core/Battle/` | `BattleSim`, tick commands, cards, terrain-aware arena state |
+| Strategy-map world model | `Core/Grid.cs`, `Core/HeightmapDomain.cs`, `Core/StrategyMapCatalog.cs`, `Core/SeoulWorldGraphCatalog.cs` | Grid, heightmap, Seoul graph and schematic catalogs (engine-free) |
+| Catalog contracts | `Core/Data/ContentCatalogContracts.cs` | Engine-free interfaces the Data assembly projects into |
+| Realtime formation/card combat | `Core/Battle/` | `Sim/` (BattleSim, card/combat/morale/outcome/reinforcement rules, formation resolver, intent planner) + `Contracts/` tick-command contracts |
 | Exact-once settlement | `Core/SettlementDomain.cs` | `SettlementApi`, result IDs and receipts |
 | Screen transitions | `Foundation/AppFlow/` | State machine, coordinator, loader/lease interfaces |
+| Battle session runtime | `Foundation/Battle/` | `BattleSessionDriver` (ITickable, fixed 30 Hz from `BattleRules`), `FoundationBattleView(+Host)`, `BattleViewportPointer` |
+| Strategy-map presentation | `Foundation/Presentation/` | `StrategyMapPresenter`/`StrategyMapScreen`, `HeightmapVoxelWorld`, placeholder voxel world, building/landmark/asset catalogs; `LocalReview/` + `Resources/LocalReview/` hold per-asset review receipts (PNG/manifest/provenance) |
 | DI and scene lifetime | `Foundation/Composition/` | App scope, content scopes, Unity loader |
 | Session-to-core bridge | `Foundation/UI/PocCoreLoopController.cs` | Scoped campaign, battle, ledgers, settlement book |
 | Runtime uGUI construction | `Foundation/UI/UguiHudBuilder.cs`, `Foundation/UI/Presenters/` | Canvas screens and presenter hosts |

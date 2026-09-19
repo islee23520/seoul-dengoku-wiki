@@ -13,7 +13,7 @@ Unity project and its serialized runtime contract; score 8, distinct engine/buil
 | Runtime and editor code | `Assets/Janseon/` | See its scoped guidance |
 | Unity test assemblies | `Assets/Tests/` | See its scoped guidance |
 | Scene authoring/build entry points | `Assets/Janseon/Foundation/Editor/FoundationProjectBuilder.cs` | Batchmode authoring and development-player build |
-| Browser-only prototype | `play/model.mjs`, `play/app.js`, `play/Design.md` | Separate vanilla-JS experiment, not Unity runtime authority |
+| Browser-only prototype | `play/` (see its AGENTS.md) | Vanilla-JS experiment, not Unity runtime authority; staged copy of `GAME-LOGIC/site/dist/play`; `world-data.js` is a generated 702KB OSM Seoul blob |
 | Headless execution contract | `../TOOL/docs/Unity-Headless-Workflow.md` | Mandatory batchmode-only workflow |
 | Unity quality gateway | this file | Procedure, regressions and done-means below |
 
@@ -33,12 +33,11 @@ Run from the repository root; `UNITY_EDITOR` denotes the installed pinned Unity 
 "$UNITY_EDITOR" -batchmode -projectPath "$PWD/GAME" -runTests -testPlatform EditMode -testResults /tmp/janseon-editmode.xml -logFile /tmp/janseon-editmode.log
 "$UNITY_EDITOR" -batchmode -projectPath "$PWD/GAME" -runTests -testPlatform PlayMode -testResults /tmp/janseon-playmode.xml -logFile /tmp/janseon-playmode.log
 "$UNITY_EDITOR" -batchmode -quit -projectPath "$PWD/GAME" -executeMethod Janseon.Foundation.Editor.FoundationProjectBuilder.BuildStandaloneOsxDevelopmentPlayer
+"$UNITY_EDITOR" -batchmode -quit -projectPath "$PWD/GAME" -executeMethod Janseon.Foundation.Editor.FoundationProjectBuilder.BuildWebGlPlayer
 ```
-- Player output accepts `-buildOutput` or `UNITY_PLAYER_OUTPUT`; the fallback is under repo `.omo/evidence/`.
-- The macOS builder requests `BuildOptions.Development` without `AllowDebugging`.
-- These are available entry points, not a claim that the current checkout passed Unity validation.
-- Run hydration checks in `../TOOL/tools/AGENTS.md` before Unity validation; retain exit codes, logs and XML.
-- `Packages/manifest.json` still points Unity Remote at old `../../tools/unity-remote/unity-package`; the checkout is under `TOOL/unity-remote`. Verify package resolution before claiming compile success.
+- Player output accepts `-buildOutput` or `UNITY_PLAYER_OUTPUT`; fallback is repo `.omo/evidence/`. The macOS builder requests `BuildOptions.Development` without `AllowDebugging`; the WebGL builder writes `GAME/Builds/WebGL` and logs `BUILD_WEBGL_OK`.
+- These are entry points, not a claim that this checkout passed Unity validation. Run hydration checks per `../TOOL/tools/AGENTS.md` first; retain exit codes, logs and XML.
+- Unity Remote resolves via `file:../../TOOL/unity-remote/unity-package` in `Packages/manifest.json`; the dependency path matches the checkout.
 
 ## QUALITY GATEWAY
 
@@ -66,8 +65,7 @@ When the change touches that system, verify the matching items:
 - Runtime art slots require Node provenance plus Unity import; `Art/Staging` and quarantine paths are not runtime-reachable.
 
 ### Done means
-- Requested behavior matches the confirmed scope of the current design.
-- Undecided numbers or content were not invented to close the task.
+- Requested behavior matches the confirmed design scope; undecided numbers or content were not invented to close the task.
 - Reference-game or older draft rules were not mistaken for this game's rules.
 - Editor compilation has no errors; every new warning is explained or resolved.
 - Relevant automated tests and needed PlayMode / visual verification were performed.
@@ -78,6 +76,5 @@ When the change touches that system, verify the matching items:
 ## ANTI-PATTERNS
 - Do not launch interactive Editor/Test Runner, `unity open`, manual Play, GUI automation or `unicli`.
 - Do not include TRELLIS, quarantine, or StationPropValidation scenes in playable builds.
-- Do not replace the development-player builder with a bare build that drops its options.
-- Do not enable managed debugging for headless smoke runs: the builder documents debugger-agent stalls.
+- Do not replace the development-player builder with a bare build that drops its options, and do not enable managed debugging for headless smoke runs: the builder documents debugger-agent stalls.
 - Do not change the JSON genre contract independently of its C# constants and contract tests.

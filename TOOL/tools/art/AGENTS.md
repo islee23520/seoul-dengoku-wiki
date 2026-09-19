@@ -11,6 +11,9 @@ Asset planning, candidate assembly, and fail-closed runtime provenance; score 8,
 | Manifest required fields and validation | `asset-manifest.schema.json`, `asset-manifest.mjs` | `validateManifest` checks reviewed/promoted receipts |
 | Host availability | `host.mjs` | TRELLIS probe deliberately returns false |
 | Remote TRELLIS identity | `trellis-host-contract.mjs`, `trellis-host-pin.json` | Direct-Python host/model/weight pins |
+| Oddland donor intake | `import-oddland-donor.mjs` | Copies owner-authorized payload into quarantine; writes/verifies SHA-256 manifest |
+| Oddland donor classification | `catalog-oddland-donor.mjs` | Classifies `GAME/Assets/Quarantine/Oddland`; catalog BOM under `GAME-REFERENCE/assets/bom/donor/` |
+| Blender character GLB gate | `blender-character-gate.py` | `--glb` JSON verdict; fail-closed exit 2 on missing mesh |
 | UI kit file families and BOM checks | `poc-ui-kit-contract.mjs` | Required IDs, paths, source files |
 | Runtime reachability and evidence | `runtime-asset-provenance.mjs` | `auditRuntimeProvenance`, `evaluatePromotedAsset` |
 | Runtime audit CLI | `check-runtime-asset-provenance.mjs` | JSON and evidence-output options |
@@ -31,6 +34,8 @@ Asset planning, candidate assembly, and fail-closed runtime provenance; score 8,
 - Unity bridge callers still contain old `tools/art/...` arguments; the current scripts live here under `TOOL/tools/art/`. Audit success alone does not prove that import boundary executes.
 - Python assemblers emit draft assets with unknown rights and empty reviews; successful assembly is not promotion.
 - Python image tools require Pillow; UI candidate assembly also imports NumPy.
+- The Oddland donor payload is gitignored (LFS quota); only its SHA-256 manifest and catalog are tracked.
+- Portrait layer compositing moved to the `TOOL/portrait-gen` submodule; `test-portrait-layer-*.mjs` here still import the old in-directory module and fail until retargeted.
 
 ## COMMANDS
 Run from repository root; these are separate from the parent npm test command.
@@ -50,3 +55,4 @@ python3 -m unittest discover -s TOOL/tools/art -p 'test_*.py'
 - Do not overwrite existing runtime slots or asset IDs; promotion refuses replacement, path traversal, symlink escape, and non-candidate sources.
 - Alternate promotion BOM paths are fixture-only, not a production bypass.
 - Do not write UI draft assembly into `GAME/Assets` or reuse an existing output directory; the generator rejects both.
+- Donor catalog dispositions (`tooling-runtime`, `excluded-artifact`) are binding; do not promote cataloged files past their disposition.

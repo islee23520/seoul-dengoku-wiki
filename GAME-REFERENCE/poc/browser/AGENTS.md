@@ -1,7 +1,7 @@
 # BROWSER REFERENCE KNOWLEDGE BASE
 
 ## OVERVIEW
-Frozen browser interaction/visual reference for the Unity port; score 9 (28 files, 24 code files, dense symbols, 45 exported functions), distinct prototype domain.
+Frozen browser interaction/visual reference for the Unity port; score 9 (29 files, dense symbols, ~45 exported functions), distinct prototype domain. Freeze provenance: stage 6 of `Wikis/game-logic/Ui-Implementation-Pipeline.md`; the Korean `README.md` states the contract.
 
 ## WHERE TO LOOK
 | Task | Location | Notes |
@@ -18,7 +18,7 @@ Frozen browser interaction/visual reference for the Unity port; score 9 (28 file
 | Model assertions | Sibling `*.test.js` files | Node test runner; models imported directly |
 
 ## CONVENTIONS
-- These are browser ES modules, not a bundled application; Three.js imports pin CDN version `0.180.0`.
+- These are browser ES modules, not a bundled application; each `app.js` imports `three@0.180.0` from the jsdelivr CDN.
 - State/rule modules stay separate from DOM and Three.js `app.js` consumers.
 - Battle model uses 30 ticks/second and at most four simulation steps per frame.
 - Formation state crosses review surfaces using `janseon.review.formation.v1`.
