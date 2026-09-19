@@ -67,9 +67,9 @@
         "sourcePath": "GDD/Design-Requirements.md"
       },
       {
-        "heading": "요구 카드 부여 #98",
-        "body": "전투는 붙기 전에 자리를 고르고, 붙은 뒤에는 몸이 말한다. 카드는 타이밍이지 한 칸 이동이 아니다.",
-        "sourcePath": "GAME-LOGIC/Game-Thesis.md"
+        "heading": "요구 카드 제외",
+        "body": "덱·드로우·재충전·오너 카드를 새 목표로 승격하지 않는다.",
+        "sourcePath": "GDD/Design-Requirements.md"
       },
       {
         "heading": "요구 부대 명령",
@@ -130,9 +130,9 @@
       "sourcePath": "Intent.md"
     },
     {
-      "body": "전투 화면은 캐릭터가 왼쪽·오른쪽만 보는 사이드스크롤이다. 사람과 소품은 오드랜드 원본 자산을 그대로 쓴다.",
-      "sourcePath": "GAME-LOGIC/Game-Thesis.md",
-      "name": "실루엣"
+      "name": "실루엣",
+      "body": "애니메이션풍 정비율. SD·2.5등신 목표를 다시 열지 않는다",
+      "sourcePath": "GAME-LOGIC/Character-Art-Direction.md"
     },
     {
       "name": "POC 인물",
@@ -162,7 +162,7 @@
       "name": "조우 선택"
     },
     {
-      "body": "전열, 후열, 측면에 분대를 배치하고 정면(왼쪽·오른쪽)을 정합니다.",
+      "body": "전투 전이나 허용된 재편 상태에서 진형과 정면을 정한다.",
       "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md",
       "name": "진형"
     },
@@ -177,13 +177,13 @@
       "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
     },
     {
-      "body": "결과가 원장에 남는다. 부상, 시간, 물자, 평판, 역의 주인.",
+      "body": "정산 뒤에도 원정은 계속될 수 있으며, 귀환은 저장이나 결과 반영의 다른 이름이 아니다.",
       "sourcePath": "GAME-LOGIC/Campaign-Loop.md",
       "name": "결과 반영"
     },
     {
-      "body": "전투는 붙기 전에 자리를 고르고, 붙은 뒤에는 몸이 말한다. 카드는 타이밍이지 한 칸 이동이 아니다.",
-      "sourcePath": "GAME-LOGIC/Game-Thesis.md",
+      "body": "정산 뒤에도 원정은 계속될 수 있으며, 귀환은 저장이나 결과 반영의 다른 이름이 아니다.",
+      "sourcePath": "GAME-LOGIC/Campaign-Loop.md",
       "name": "전략 결과"
     }
   ],
@@ -205,8 +205,8 @@
     },
     {
       "kind": "Challenge",
-      "body": "전투는 붙기 전에 자리를 고르고, 붙은 뒤에는 몸이 말한다. 카드는 타이밍이지 한 칸 이동이 아니다.",
-      "sourcePath": "GAME-LOGIC/Game-Thesis.md"
+      "body": "전투는 붙기 전에 부대를 편성하고, 붙은 뒤에는 고른 부대의 현재 지시를 교체한다.",
+      "sourcePath": "GDD/Game-Thesis.md"
     },
     {
       "kind": "Fellowship",

@@ -25,7 +25,7 @@
         },
         {
           "heading": "정산",
-          "body": "결과가 원장에 남는다. 부상, 시간, 물자, 평판, 역의 주인.",
+          "body": "전투든 비전투 조우든 결과는 한 번만 원장에 남는다.",
           "sourcePath": "GAME-LOGIC/Campaign-Loop.md"
         }
       ]
@@ -98,7 +98,7 @@
         },
         {
           "heading": "진형",
-          "body": "전열, 후열, 측면에 분대를 배치하고 정면(왼쪽·오른쪽)을 정합니다.",
+          "body": "전투 전이나 허용된 재편 상태에서 진형과 정면을 정한다.",
           "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
         },
         {
@@ -120,8 +120,8 @@
         "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
       },
       {
-        "name": "지휘 반경",
-        "body": "리더의 지휘 반경 안에 있는 인물만 카드와 협공 대상이 됩니다.",
+        "name": "선택",
+        "body": "한 부대 또는 함께 지시할 부대들을 선택한다.",
         "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
       },
       {
@@ -185,8 +185,8 @@
     "aesthetics": [
       {
         "kind": "Challenge",
-        "body": "전투는 붙기 전에 자리를 고르고, 붙은 뒤에는 몸이 말한다. 카드는 타이밍이지 한 칸 이동이 아니다.",
-        "sourcePath": "GAME-LOGIC/Game-Thesis.md"
+        "body": "미리보기와 확정 때 모두 같은 전투 컨텍스트로 유효성을 검사하되, 미리보기 자체는 상태를 바꾸지 않는다.",
+        "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
       },
       {
         "kind": "Sensation",
@@ -206,7 +206,7 @@
       "panels": [
         {
           "heading": "그래프",
-          "body": "세계는 그 칸들을 이은 그래프다.",
+          "body": "세계는 그 층들을 이은 그래프다.",
           "sourcePath": "GAME-LOGIC/World-and-Subway-Layers.md"
         },
         {
@@ -586,7 +586,7 @@
         },
         {
           "heading": "파티",
-          "body": "파티는 이동과 전투의 기본 단위로 읽힌다.",
+          "body": "파티는 캠페인에서 동행·물자·부상자·지휘를 묶는 단위다.",
           "sourcePath": "GAME-LOGIC/Characters-Factions-and-Professions.md"
         },
         {
@@ -925,8 +925,8 @@
     "aesthetics": [
       {
         "kind": "Challenge",
-        "body": "전투는 붙기 전에 자리를 고르고, 붙은 뒤에는 몸이 말한다. 카드는 타이밍이지 한 칸 이동이 아니다.",
-        "sourcePath": "GAME-LOGIC/Game-Thesis.md"
+        "body": "전쟁은 병력 수 비교가 아니라 접근로, 보급, 사기, 퇴로와 점령 후 유지 능력을 둘러싼 연속 과정입니다.",
+        "sourcePath": "GAME-LOGIC/Warfare-and-Sieges.md"
       },
       {
         "kind": "Narrative",
@@ -1208,7 +1208,7 @@
       "panels": [
         {
           "heading": "비율",
-          "body": "오드랜드 원본 비율 그대로(리타깃·SD 변환 금지, 결정 10)",
+          "body": "애니메이션풍 정비율. SD·2.5등신 목표를 다시 열지 않는다",
           "sourcePath": "GAME-LOGIC/Character-Art-Direction.md"
         },
         {
@@ -1225,8 +1225,8 @@
         "sourcePath": "GAME-LOGIC/Character-Art-Direction.md"
       },
       {
-        "name": "방향",
-        "body": "좌우 페이싱 전용 표현(사이드스크롤 전투)",
+        "name": "직업과 상태",
+        "body": "화면 안에서 직업과 상태를 구분할 수 있는 색과 장비",
         "sourcePath": "GAME-LOGIC/Character-Art-Direction.md"
       }
     ],
