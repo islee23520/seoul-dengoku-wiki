@@ -1,0 +1,387 @@
+path	kind	status	note
+GDD/AGENTS.md	guidance	G	hand-authored GDD knowledge base; mount/ingest contract
+GDD/Asset-Pipeline.md	product-canon	E	top-level GDD; mount.mjs + seed ingest; active target prose
+GDD/Design-Requirements.md	product-canon	E	top-level GDD; mount.mjs + seed ingest; active target prose
+GDD/Development-Roadmap.md	product-canon	E	top-level GDD; mount.mjs + seed ingest; active target prose
+GDD/Game-References.md	product-canon	E	top-level GDD; mount.mjs + seed ingest; active target prose
+GDD/Game-Thesis.md	product-canon	E	top-level GDD; mount.mjs + seed ingest; active target prose
+GDD/Home.md	product-canon	E	top-level GDD; mount.mjs + seed ingest; active target prose
+GDD/Online-User-Journey.md	product-canon	E	top-level GDD; mount.mjs + seed ingest; active target prose
+GDD/Research-Sources.md	product-canon	K	top-level GDD; mount+seed ingest; retain
+GDD/Ui-Implementation-Pipeline.md	product-canon	E	top-level GDD; mount.mjs + seed ingest; active target prose
+GDD/Unofficial-Fan-AU-Notice.md	product-canon	K	top-level GDD; mount+seed ingest; retain
+GDD/adr/ADR-001-repository-delivery-policy.md	adr	K	accepted decision record; status line authoritative
+GDD/adr/ADR-002-character-candidate-retrospective.md	adr	A	accepted decision record; status line authoritative
+GDD/adr/ADR-003-real-place-and-station-naming.md	adr	K	accepted decision record; status line authoritative
+GDD/adr/ADR-004-root-domain-structure.md	adr	K	accepted decision record; status line authoritative
+GDD/adr/ADR-005-backend-host-session-multiplayer.md	adr	K	accepted decision record; status line authoritative
+GDD/adr/ADR-006-backend-aspnet-core-coordinator.md	adr	K	accepted decision record; status line authoritative
+GDD/design-store/AGENTS.md	guidance	G	generated-tree contract; never edit HTML beside it
+GDD/design-store/battle/index.html	generated-domain	R	exportDocumentPage from janseon-core.json or catalog.json; never hand-edit
+GDD/design-store/campaign-loop/index.html	generated-domain	R	exportDocumentPage from janseon-core.json or catalog.json; never hand-edit
+GDD/design-store/campaign-progression/index.html	generated-domain	R	exportDocumentPage from janseon-core.json or catalog.json; never hand-edit
+GDD/design-store/canon/_sidebar/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/_template/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/ambitions-and-relations/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/asset-pipeline/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/campaign-loop/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/campaign-progression/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/cast-corridors-index/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/cast-index/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/cast-profile-contract/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/cast-relations/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/cast-state-01/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/cast-state-02/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/cast-state-03/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/cast-state-04/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/cast-state-05/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/cast-state-06/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/cast-state-07/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/cast-state-08/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/cast-state-09/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/cast-state-10/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/cast-state-11/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/cast-state-12/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/cast-state-13/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/cast-state-14/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/cast-state-15/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/cast-state-16/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/character-art-direction/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/characters-factions-and-professions/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/conscription-remnants/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/core-characters/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/design-requirements/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/development-roadmap/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/diaspora-corridors/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/economy-and-production/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/era-arms-and-tech-level/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/external-theaters/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/factions-and-diplomacy/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/faith-culture-schism/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/game-references/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/game-thesis/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hangnyeol-and-bon-gwan/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/heirs-names-and-world-ledger/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/home/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hostile-ecology-index/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hostile-group-g01/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hostile-group-g02/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hostile-group-g03/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hostile-group-g04/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hostile-group-g05/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hostile-group-g06/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hostile-group-g07/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hostile-group-g08/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hostile-group-g09/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hostile-group-g10/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hostile-group-g11/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hostile-group-g12/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hostile-group-g13/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hostile-group-g14/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hostile-group-g15/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hostile-group-g16/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hostile-group-g17/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hostile-group-g18/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hostile-group-g19/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hostile-group-g20/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hostile-group-g21/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hostile-group-g22/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hostile-group-g23/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hostile-group-g24/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hostile-group-g25/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hostile-group-g26/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/hostile-group-g27/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/logistics-and-infrastructure/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/lost-technology-lineage/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m001/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m002/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m003/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m004/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m005/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m006/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m008/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m009/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m010/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m011/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m012/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m013/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m014/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m015/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m016/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m017/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m018/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m019/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m020/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m021/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m022/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m023/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m024/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m025/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m026/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m027/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m028/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m029/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m030/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m031/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m032/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m033/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m034/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m035/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m036/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m037/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m038/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m039/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m040/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m041/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-m042/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/monster-batch-manifest/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/name-pools--cast-backfill-draft/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/operating-houses/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/random-cast-roster/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/realtime-formation-card-battle/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/ref-bannerlord/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/ref-battle-brothers/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/ref-cross-synthesis/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/ref-crusader-kings-3/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/ref-darkest-dungeon/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/ref-farland-wog-triangle/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/ref-fire-emblem-fft/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/ref-into-the-breach/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/ref-k-system/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/ref-mechanism-index/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/ref-nobunagas-ambition/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/ref-ravelen-chronicles/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/ref-songs-of-silence/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/ref-taikou-risshiden/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/ref-three-kingdoms/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/ref-unicorn-overlord/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/ref-xcom-2/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/regional-physical-ai-arcs/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/regions--readme/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/research-sources/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/save-and-determinism/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/scenario-timeline/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/seoul-station-catalog/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/sixteen-states/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/starting-presets/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/station-interior-construction/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b001/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b002/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b003/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b004/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b005/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b006/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b007/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b008/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b009/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b010/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b011/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b012/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b013/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b014/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b015/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b016/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b018/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b019/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b021/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b022/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b023/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b024/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b025/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b026/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b027/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b028/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b029/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b030/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b031/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b032/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b033/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b034/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b035/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b036/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b037/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b038/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b039/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b040/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b041/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b042/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b043/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b044/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b045/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b046/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-b047/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/story-batch-manifest/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/strategy-battle-roundtrip/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/strongholds-and-territory/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/synthetic-actors/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/travel-and-encounters/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/ui-implementation-pipeline/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/unity-architecture-implementation-plan/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/unity-architecture/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/unity-system-design/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/unofficial-fan-au-notice/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/vassal-dynasty-politics/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/warfare-and-sieges/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/world-and-subway-layers/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/world-expansion-index/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/world-map-construction/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/world-narrative-atlas/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/canon/world-relation-ledger/index.html	generated-canon	R	seed ingest of LORE/GAME-LOGIC/top-level GDD; heading snapshot only; not authority
+GDD/design-store/character-art/index.html	generated-domain	R	exportDocumentPage from janseon-core.json or catalog.json; never hand-edit
+GDD/design-store/characters/index.html	generated-domain	R	exportDocumentPage from janseon-core.json or catalog.json; never hand-edit
+GDD/design-store/economy/index.html	generated-domain	R	exportDocumentPage from janseon-core.json or catalog.json; never hand-edit
+GDD/design-store/factions/index.html	generated-domain	R	exportDocumentPage from janseon-core.json or catalog.json; never hand-edit
+GDD/design-store/implementation/index.html	generated-domain	R	exportDocumentPage from janseon-core.json or catalog.json; never hand-edit
+GDD/design-store/index.html	generated-index	R	exportIndexPage from 18 catalog+core documents
+GDD/design-store/janseon-core/index.html	generated-domain	R	exportDocumentPage from janseon-core.json or catalog.json; never hand-edit
+GDD/design-store/logistics/index.html	generated-domain	R	exportDocumentPage from janseon-core.json or catalog.json; never hand-edit
+GDD/design-store/save-determinism/index.html	generated-domain	R	exportDocumentPage from janseon-core.json or catalog.json; never hand-edit
+GDD/design-store/sixteen-states/index.html	generated-domain	R	exportDocumentPage from janseon-core.json or catalog.json; never hand-edit
+GDD/design-store/station-interior/index.html	generated-domain	R	exportDocumentPage from janseon-core.json or catalog.json; never hand-edit
+GDD/design-store/strongholds/index.html	generated-domain	R	exportDocumentPage from janseon-core.json or catalog.json; never hand-edit
+GDD/design-store/travel/index.html	generated-domain	R	exportDocumentPage from janseon-core.json or catalog.json; never hand-edit
+GDD/design-store/ui-pipeline/index.html	generated-domain	R	exportDocumentPage from janseon-core.json or catalog.json; never hand-edit
+GDD/design-store/warfare/index.html	generated-domain	R	exportDocumentPage from janseon-core.json or catalog.json; never hand-edit
+GDD/design-store/world-layers/index.html	generated-domain	R	exportDocumentPage from janseon-core.json or catalog.json; never hand-edit
+GDD/proposals/Narrative-Direction.md	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/Scenario-Hold-the-Gate.md	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/2026-2-solo-dev-business-plan.html	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/2026-2-solo-dev-business-plan.md	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/README.md	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/assets/atlas.svg	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/assets/battle-rules.svg	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/assets/game-example-01.jpg	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/assets/game-example-02.jpg	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/assets/game-example-03.jpg	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/assets/game-example-04.jpg	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/assets/game-example.mp4	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/assets/layers.svg	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/assets/layers2.svg	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/assets/loop.svg	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/assets/portrait-canon.jpg	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/assets/portrait-composite.jpg	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/assets/portrait-poc-sheet.jpg	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/assets/portrait-variants.jpg	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/assets/sieges.svg	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/assets/strongholds.svg	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/assets/thesis.svg	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/assets/ui-cards.png	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/assets/ui-encounter.jpg	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/assets/unity-battle.png	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/assets/unity-encounter.png	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/assets/unity-route.png	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/assets/unity-settlement.png	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/assets/web-battle.jpg	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/assets/web-encounter.jpg	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/draft-a4.pdf	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/draft-fullpage.png	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/gonggo-prvtext.txt	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/metaversehub_2026-2_solo_developer_notice_fullpage.png	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/preview-gonggo.png	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/preview-yangsig.png	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/★(공고문) 2026 가상융합산업허브 가상융합랩 1인 개발자 인프라 & 공간 무상 지원 기업 모집(2026-2차).hwp	proposal	P	exploratory / frozen submission; not accepted design
+GDD/proposals/metaverse-hub-2026-2/붙임_신청서_양식.hwp	proposal	P	exploratory / frozen submission; not accepted design
+GDD/system-design/README.md	system-design	K	hand-authored studio viz; not ingested by mount.mjs
+GDD/system-design/index.html	system-design	E	hand-authored architecture viz; POC vs target split needed
+GDD/system-design/regions/DESIGN.md	system-design	K	hand-authored studio viz; not ingested by mount.mjs
+GDD/system-design/regions/app.js	system-design	K	hand-authored studio viz; not ingested by mount.mjs
+GDD/system-design/regions/atlas-data.js	system-design	K	hand-authored studio viz; not ingested by mount.mjs
+GDD/system-design/regions/index.html	system-design	K	hand-authored studio viz; not ingested by mount.mjs
+GDD/system-design/regions/style.css	system-design	K	hand-authored studio viz; not ingested by mount.mjs
+LORE/AGENTS.md	agents	K	전수 분류 완료; 이번 전투·아트 개정에 사실 변경 없음
+LORE/Hostile-Ecology-Index.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Hostile-Group-G01.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Hostile-Group-G02.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Hostile-Group-G03.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Hostile-Group-G04.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Hostile-Group-G05.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Hostile-Group-G06.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Hostile-Group-G07.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Hostile-Group-G08.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Hostile-Group-G09.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Hostile-Group-G10.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Hostile-Group-G11.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Hostile-Group-G12.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Hostile-Group-G13.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Hostile-Group-G14.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Hostile-Group-G15.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Hostile-Group-G16.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Hostile-Group-G17.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Hostile-Group-G18.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Hostile-Group-G19.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Hostile-Group-G20.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Hostile-Group-G21.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Hostile-Group-G22.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Hostile-Group-G23.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Hostile-Group-G24.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Hostile-Group-G25.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Hostile-Group-G26.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Hostile-Group-G27.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M001.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M002.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M003.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M004.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M005.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M006.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M008.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M009.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M010.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M011.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M012.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M013.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M014.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M015.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M016.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M017.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M018.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M019.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M020.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M021.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M022.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M023.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M024.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M025.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M026.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M027.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M028.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M029.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M030.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M031.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M032.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M033.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M034.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M035.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M036.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M037.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M038.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M039.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M040.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M041.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-M042.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Monster-Batch-Manifest.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Operating-Houses.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/README.md	hand-authored-md	K	전수 분류 완료; 이번 전투·아트 개정에 사실 변경 없음
+LORE/Regional-Physical-AI-Arcs.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Story-Batch-B001.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Story-Batch-B002.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Story-Batch-B003.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Story-Batch-B004.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Story-Batch-B005.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Story-Batch-B006.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Story-Batch-B007.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Story-Batch-B008.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Story-Batch-B009.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Story-Batch-B010.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Story-Batch-B011.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Story-Batch-B012.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Story-Batch-B013.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Story-Batch-B014.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Story-Batch-B015.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Story-Batch-B016.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Story-Batch-B018.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Story-Batch-B019.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Story-Batch-B021.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Story-Batch-B022.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+LORE/Story-Batch-B023.md	atlas-projection	K-generated	atlas 원본 사실 불변; 투영물 보존
+
+[Showing lines 1-385 of 527 (50.0KB limit). Use offset=386 to continue.]
