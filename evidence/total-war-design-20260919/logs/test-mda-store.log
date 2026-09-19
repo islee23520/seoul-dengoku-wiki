@@ -1,0 +1,24 @@
+✔ empty document is rejected (0.534833ms)
+✔ unknown aesthetic kind is rejected (0.148625ms)
+✔ put then verify PASS (12.573625ms)
+✔ verify FAILS when a document row is deleted (10.736041ms)
+✔ verify FAILS when an extra document row exists (14.164209ms)
+✔ verify FAILS when stored DB bytes are mutated (10.0735ms)
+✔ mechanics without a name are rejected (0.139416ms)
+✔ export page HTML contains a mechanics string from SQLite (11.672167ms)
+✔ schema keeps foreign keys and lookup tables (11.320166ms)
+✔ orphan mechanic row is rejected by foreign key (12.098292ms)
+✔ deleting a document cascades child rows (12.272917ms)
+✔ export index lists the document title from SQLite (10.403958ms)
+✔ ingestCanonDir stores one row per markdown file and hub lists it (14.328208ms)
+✔ ingestCanonDir excludes project guidance files across canon domains (12.557375ms)
+✔ verify FAILS when a canon_files row is deleted (12.3235ms)
+✔ schema version 3 exposes canon_files (9.670083ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 211.682792

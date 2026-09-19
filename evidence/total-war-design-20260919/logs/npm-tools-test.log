@@ -1,0 +1,53 @@
+npm notice run janseon-tools@0.0.0 test
+npm notice run node policy/normalize-creative-names.mjs && node wiki/test-build-wiki.mjs && node wiki/test-unity-architecture-docs.mjs
+Verified creative names: 0 occurrences in 0 files.
+PASS  happy path: banner, link rewrite, asset copy, stale cleanup, .git preserved
+PASS  happy path: generator rewrites its own sentinel after cleanup
+PASS  banned prose is rejected (Korean)
+PASS  banned prose is rejected case-insensitively
+PASS  banned clone wording still matches clones
+PASS  banned prose is rejected (reference abbreviation)
+PASS  banned prose is rejected (long reference abbreviation)
+PASS  banned prose is rejected (reference style alias)
+PASS  banned reference abbreviation is rejected case-insensitively
+PASS  malformed reference tokens are still inspected
+PASS  successor-edition names and stat tables are not the reference abbreviation
+PASS  dangerous output roots are refused by a path guard without touching disk
+PASS  source and asset roots can never be reused as the output root
+PASS  an existing empty output directory cannot bootstrap without a sentinel
+PASS  output root without the generated sentinel is refused before any deletion
+PASS  a fresh wiki clone containing only .git bootstraps the sentinel
+PASS  a symlinked output root is refused and its target survives
+PASS  the sentinel itself must be a regular file, not a symlink
+PASS  a symlink child inside the output root is unlinked without following it
+PASS  a symlinked source page (Leak.md) is refused and never published
+PASS  a symlinked asset is refused and never published
+PASS  a symlinked source or asset root is refused
+PASS  raw HTML element text is inspected
+PASS  raw HTML attributes that render as visible text are inspected
+PASS  form-control values that render as visible text are inspected
+PASS  form-control values that never render are not visible text
+PASS  HTML comments are removed so a comment-split term is caught
+PASS  an HTML comment body alone is not visible text
+PASS  character references are decoded before inspection
+PASS  NFKC normalization and case folding are applied
+PASS  zero-width and Unicode format characters are stripped before inspection
+PASS  only URL destinations are exempt from the visible-text gate
+PASS  repository-hosted canonical image URLs are rewritten to local assets
+PASS  a repository-hosted image without a local asset fails the build
+PASS  a relative asset link without a local asset fails the build
+PASS  unrelated external URLs are preserved
+PASS  every generated image path in the real repository wiki resolves on disk
+PASS  project guidance files are excluded from public source pages
+PASS  malformed markup is still inspected instead of crashing
+PASS  commitSha remains mandatory
+PASS  the tools-only parser stack is exactly pinned and lockfile-consistent
+PASS  the root parser stack is exactly pinned and lockfile-consistent
+PASS  unpublished fragment pages listed in Cast-Index are not emitted
+PASS  Cast-Index 게시 rows still emit their fragment page
+PASS  strategic pages keep their calculable contract
+
+45 passed, 0 failed
+temp fixtures removed: /var/folders/6r/g20fxk_s1ds24_h6lm971wt00000gn/T/janseon-wiki-test-rwtGJC
+wiki build contract passed
+unity architecture wiki contract passed

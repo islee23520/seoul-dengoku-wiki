@@ -1,0 +1,395 @@
+✔︎ Opened a new tab and set it active: tabs[0], page → 서울:전국 · 부대 지휘 UI 설계 템플릿 (http://127.0.0.1:4319/total-war-ui/?qa=red1)
+- title: "서울:전국 · 부대 지휘 UI 설계 템플릿" [url=http://127.0.0.1:4319/total-war-ui/?qa=red1]
+- link "화면 내용으로 건너뛰기" [ref=e1]
+- banner: "INTERACTION BLUEPRINT / TARGET UI\n         서울:전국\n         원정 부대 지휘 설계 템플릿\n      \n      \n         원정  서남선 조사대\n         현재 구간  신도림 → 구로\n         예시 데이터 · 밸런스/정사 미확정"
+- navigation "설계 화면" [ref=e2]:
+  - button "원정 경로" [ref=e3]: "01  원정 경로"
+  - button "파티 편성" [ref=e4]: "02  파티 편성"
+  - button "조우 대응" [ref=e5]: "03  조우 대응"
+  - button "전투 배치" [ref=e6]: "04  전투 배치"
+  - button "부대 지휘" [ref=e7]: "05  부대 지휘"
+  - button "결과와 다음 선택" [ref=e8]: "06  결과와 다음 선택"
+- main:
+  - region "원정은 귀환만을 뜻하지 않는다" [ref=e9]:
+    - text: "CAMPAIGN / ROUTE"
+    - heading "원정은 귀환만을 뜻하지 않는다" [level=1]
+    - text: "노선을 따라 이동하고 조우를 해결한 뒤에도 원정을 계속할 수 있다. 아래 장소와 수치는 화면 검토용 예시다."
+    - region "서남선 이동 경로" [ref=e10]:
+      - text: "ROUTE GRAPH"
+      - heading "서남선 이동 경로" [level=2]
+      - text: "이동 중"
+      - button "영등포, 출발 완료" [ref=e11]: "영등포 출발 거점"
+      - button "신도림, 현재 위치" [ref=e12]: "신도림 현재 · 폐쇄 승강장"
+      - button "구로, 다음 목적지" [ref=e13]: "구로 다음 · 공방 교섭"
+      - button "대림, 우회 후보" [ref=e14]: "대림 우회 후보"
+      - text: "지나온 구간 현재 도달 가능"
+    - complementary:
+      - text: "NEXT LEG"
+      - heading "구로 공방 연결로" [level=2]
+      - text: "SW-03\n             예상 소요 반나절  예시 통행 상태 부분 봉쇄 물자 식량 3일  예시 관계 공방 중립\n             이동 판단 본선의 잔해를 치우는 동안 측선 감시가 필요하다. 교섭이 결렬되면 전투 세션으로 분리된다."
+      - button "동행 편성 확인" [ref=e15]: "동행 편성 확인 →"
+- contentinfo: "UI/UX 목표 설계 문서 · 질문 무응답 뒤 채택한 카메라/일시정지 기본값 · POC 구현 사실이나 소유자 명시 결정이 아님 total-war-ui-20260919-v1"
+No changes detected
+
+ACTION 파티 편성 - title: "서울:전국 · 부대 지휘 UI 설계 템플릿" [url=http://127.0.0.1:4319/total-war-ui/?qa=red1]
+- link "화면 내용으로 건너뛰기" [ref=e1]
+- banner: "INTERACTION BLUEPRINT / TARGET UI\n         서울:전국\n         원정 부대 지휘 설계 템플릿\n      \n      \n         원정  서남선 조사대\n         현재 구간  신도림 → 구로\n         예시 데이터 · 밸런스/정사 미확정"
+- navigation "설계 화면" [ref=e2]:
+  - button "원정 경로" [ref=e3]: "01  원정 경로"
+  - button "파티 편성" [ref=e4] [focused]: "02  파티 편성"
+  - button "조우 대응" [ref=e5]: "03  조우 대응"
+  - button "전투 배치" [ref=e6]: "04  전투 배치"
+  - button "부대 지휘" [ref=e7]: "05  부대 지휘"
+  - button "결과와 다음 선택" [ref=e8]: "06  결과와 다음 선택"
+- main:
+  - region "캠페인 파티와 전장 부대를 구분한다" [ref=e16]:
+    - text: "PARTY / COMPOSITION"
+    - heading "캠페인 파티와 전장 부대를 구분한다" [level=1]
+    - text: "동행 인물·물자·부상 상태를 확인하고 실제 교전에 참가할 부대를 편성한다. 인원 수와 이름은 예시다."
+    - region "서남선 조사대 · 7명 예시" [ref=e17]:
+      - text: "EXPEDITION PARTY"
+      - heading "서남선 조사대 · 7명 예시" [level=2]
+      - text: "참가 3 / 지원 1"
+      - button "임초원 조사대 지휘 · 참가 양호" [ref=e18]
+      - button "류은비 의무 담당 · 지원 피로" [ref=e19]
+      - button "김도윤 정비 담당 · 참가 양호" [ref=e20]
+      - text: "초상·전신 아트 슬롯 애니메이션풍, 자연스러운 인체 비례. 생업과 상태가 전투력 과장보다 먼저 읽혀야 한다. 이 도형은 배치 영역 표기이며 완성 아트가 아니다."
+    - region:
+      - text: "BATTLE COMPOSITION"
+      - heading "교전 참가 편성" [level=2]
+      - text: "예시 구성"
+      - article: "I 선로 경비조 전열 · 8명 예시 참가"
+      - article: "II 측선 정찰조 기동 · 5명 예시 참가"
+      - article: "III 구호 작업조 후열 · 4명 예시 참가"
+      - text: "식량 3일  예시 의약품 보통 운반 여유 낮음\n             설계 경계  새 군단 정원이나 무제한 인원 규칙을 제안하지 않는다. 캠페인 파티가 보유한 참가자만 전장 부대로 묶는다."
+      - button "경로로 출발" [ref=e21]: "경로로 출발 →"
+- contentinfo: "UI/UX 목표 설계 문서 · 질문 무응답 뒤 채택한 카메라/일시정지 기본값 · POC 구현 사실이나 소유자 명시 결정이 아님 total-war-ui-20260919-v1"
+No changes detected
+
+ACTION 류은비 @@ -5 +5 @@
+-  - button "파티 편성" [ref=e4] [focused]: "02  파티 편성"
++  - button "파티 편성" [ref=e4]: "02  파티 편성"
+@@ -20 +20 @@
+-      - button "류은비 의무 담당 · 지원 피로" [ref=e19]
++      - button "류은비 의무 담당 · 지원 피로" [ref=e19] [focused]
+
+ROSTER_SELECTION 임초원조사대 지휘 · 참가양호
+No changes detected
+
+ACTION 부대 지휘 - title: "서울:전국 · 부대 지휘 UI 설계 템플릿" [url=http://127.0.0.1:4319/total-war-ui/?qa=red1]
+- link "화면 내용으로 건너뛰기" [ref=e1]
+- banner: "INTERACTION BLUEPRINT / TARGET UI\n         서울:전국\n         원정 부대 지휘 설계 템플릿\n      \n      \n         원정  서남선 조사대\n         현재 구간  신도림 → 구로\n         예시 데이터 · 밸런스/정사 미확정"
+- navigation "설계 화면" [ref=e2]:
+  - button "원정 경로" [ref=e3]: "01  원정 경로"
+  - button "파티 편성" [ref=e4]: "02  파티 편성"
+  - button "조우 대응" [ref=e5]: "03  조우 대응"
+  - button "전투 배치" [ref=e6]: "04  전투 배치"
+  - button "부대 지휘" [ref=e7] [focused]: "05  부대 지휘"
+  - button "결과와 다음 선택" [ref=e8]: "06  결과와 다음 선택"
+- main:
+  - region "구로 연결로 차단전" [ref=e22]:
+    - text: "LIVE UNIT COMMAND / SCHEMATIC"
+    - heading "구로 연결로 차단전" [level=1]
+    - text: "목표 통행로 확보 퇴로  남측 개방 전황  교착 · 예시"
+    - button "이 파티 전투만 일시정지" [ref=e23]
+    - text: "질문 무응답 뒤 채택한 설계 기본값 3D 자유 지휘 카메라: 팬 · 오빗 · 줌 (각도/FOV 수치 미정)일시정지는 이 파티의 닫힌 전투만 멈추며 캠페인 세계와 다른 파티는 계속된다."
+    - complementary "아군 부대 목록":
+      - text: "부대"
+      - button "선택 해제" [ref=e24]
+      - button "I 선로 경비조 현재: 차단선 유지 결속 양호" [ref=e25]
+      - button "II 측선 정찰조 현재: 좌측 엄폐 이동 결속 양호" [ref=e26]
+      - button "III 구호 작업조 현재: 후열 대기 결속 주의" [ref=e27]
+      - text: "부대를 선택해야 명령할 수 있다. 영웅 직접 조작이 아닌 부대 단위 지휘다."
+    - region "명령 대상과 위치를 선택하는 전장 도식" [ref=e28]:
+      - text: "탑다운 DOCUMENTATION SCHEMATIC · 실제 3D 게임 렌더 아님 잔해 · 통과 불가"
+      - button "이동 목적지 북측 차단선" [ref=e29]: "이동 지점 A"
+      - button "이동 목적지 동측 엄폐" [ref=e30]: "이동 지점 B"
+      - button "선로 경비조" [ref=e31]: "I 경비조"
+      - button "측선 정찰조" [ref=e32]: "II 정찰조"
+      - button "구호 작업조" [ref=e33]: "III 구호조"
+      - button "공방 전열대, 공격 대상" [ref=e34]: "A 공방 전열대"
+      - button "공방 지원대, 공격 대상" [ref=e35]: "B 공방 지원대"
+    - complementary:
+      - region:
+        - text: "SELECTED UNIT"
+        - heading "선택된 부대 없음" [level=2]
+        - text: "부대를 선택하면 현재 지시와 교체할 명령을 검토할 수 있다."
+      - region "부대 명령" [ref=e36]:
+        - button "M 이동 목적지 선택" [ref=e37] [disabled]
+        - button "A 공격 대상 선택" [ref=e38] [disabled]
+        - button "F 방향 조절 전열 정렬 예시" [ref=e39] [disabled]
+        - button "H 정지 즉시 교체" [ref=e40] [disabled]
+      - region:
+        - text: "ORDER STATE"
+        - heading "명령 대기" [level=3]
+        - text: "이동 또는 공격을 고른 뒤 유효한 도식 대상에서 미리보기를 만든다.재개 대기 명령 없음"
+        - button "취소 · 기존 지시 유지" [ref=e41] [disabled]
+        - button "명령 교체 확인" [ref=e42] [disabled]
+      - button "철수 · 항복 검토" [ref=e43]
+    - text: "수락 기록"
+    - list:
+      - listitem "세션 시작 · 배치 확정" [ref=e44]
+    - text: "시뮬레이션 진행 중"
+- contentinfo: "UI/UX 목표 설계 문서 · 질문 무응답 뒤 채택한 카메라/일시정지 기본값 · POC 구현 사실이나 소유자 명시 결정이 아님 total-war-ui-20260919-v1"
+No changes detected
+
+ACTION 철수 · 항복 검토 @@ -8 +8 @@
+-  - button "부대 지휘" [ref=e7] [focused]: "05  부대 지휘"
++  - button "부대 지휘" [ref=e7]: "05  부대 지휘"
+@@ -54,0 +54,13 @@
++    - dialog "전투 종료 방식을 확인한다":
++      - text: "EXIT DECISION"
++      - heading "전투 종료 방식을 확인한다" [level=2]
++      - text: "질서 철수는 합법 퇴로가 필요하다. 항복은 적의 수락 뒤에만 종료되며 포획을 자동 확정하지 않는다.\n            문서 시연 상태"
++      - button "퇴로 봉쇄 예시로 전환" [ref=e45]
++      - label:
++        - radio "질서 철수 요청남측 측선으로 통제된 철수" [ref=e46] [checked]
++        - text: "질서 철수 요청 남측 측선으로 통제된 철수"
++      - label:
++        - radio "항복 제안적 수락 필요 · 포획 여부는 별도 결과 사실" [ref=e47]
++        - text: "항복 제안 적 수락 필요 · 포획 여부는 별도 결과 사실"
++      - button "취소 · 전투 상태 유지" [ref=e48] [focused]
++      - button "선택한 종료 확인" [ref=e49]
+
+No changes detected
+
+ACTION 퇴로 봉쇄 예시로 전환 @@ -14 +14 @@
+-    - text: "목표 통행로 확보 퇴로  남측 개방 전황  교착 · 예시"
++    - text: "목표 통행로 확보 퇴로  봉쇄 · 질서 철수 불가 전황  교착 · 예시"
+@@ -58 +58 @@
+-      - button "퇴로 봉쇄 예시로 전환" [ref=e45]
++      - button "퇴로 개방 예시로 전환" [ref=e50] [focused]
+@@ -60,2 +60,2 @@
+-        - radio "질서 철수 요청남측 측선으로 통제된 철수" [ref=e46] [checked]
+-        - text: "질서 철수 요청 남측 측선으로 통제된 철수"
++        - radio "질서 철수 요청봉쇄됨 · LegalFallback 실패로 선택 불가" [ref=e51] [disabled]
++        - text: "질서 철수 요청 봉쇄됨 · LegalFallback 실패로 선택 불가"
+@@ -63 +63 @@
+-        - radio "항복 제안적 수락 필요 · 포획 여부는 별도 결과 사실" [ref=e47]
++        - radio "항복 제안적 수락 필요 · 포획 여부는 별도 결과 사실" [ref=e47] [checked]
+@@ -65 +65 @@
+-      - button "취소 · 전투 상태 유지" [ref=e48] [focused]
++      - button "취소 · 전투 상태 유지" [ref=e48]
+
+No changes detected
+
+ACTION 취소 · 전투 상태 유지 @@ -49 +49 @@
+-      - button "철수 · 항복 검토" [ref=e43]
++      - button "철수 · 항복 검토" [ref=e43] [focused]
+@@ -54,13 +54,0 @@
+-    - dialog "전투 종료 방식을 확인한다":
+-      - text: "EXIT DECISION"
+-      - heading "전투 종료 방식을 확인한다" [level=2]
+-      - text: "질서 철수는 합법 퇴로가 필요하다. 항복은 적의 수락 뒤에만 종료되며 포획을 자동 확정하지 않는다.\n            문서 시연 상태"
+-      - button "퇴로 개방 예시로 전환" [ref=e50] [focused]
+-      - label:
+-        - radio "질서 철수 요청봉쇄됨 · LegalFallback 실패로 선택 불가" [ref=e51] [disabled]
+-        - text: "질서 철수 요청 봉쇄됨 · LegalFallback 실패로 선택 불가"
+-      - label:
+-        - radio "항복 제안적 수락 필요 · 포획 여부는 별도 결과 사실" [ref=e47] [checked]
+-        - text: "항복 제안 적 수락 필요 · 포획 여부는 별도 결과 사실"
+-      - button "취소 · 전투 상태 유지" [ref=e48]
+-      - button "선택한 종료 확인" [ref=e49]
+
+ROUTE_CANCEL { before: '남측 개방', after: '봉쇄 · 질서 철수 불가' }
+No changes detected
+
+ACTION 결과와 다음 선택 - title: "서울:전국 · 부대 지휘 UI 설계 템플릿" [url=http://127.0.0.1:4319/total-war-ui/?qa=red1]
+- link "화면 내용으로 건너뛰기" [ref=e1]
+- banner: "INTERACTION BLUEPRINT / TARGET UI\n         서울:전국\n         원정 부대 지휘 설계 템플릿\n      \n      \n         원정  서남선 조사대\n         현재 구간  신도림 → 구로\n         예시 데이터 · 밸런스/정사 미확정"
+- navigation "설계 화면" [ref=e2]:
+  - button "원정 경로" [ref=e3]: "01  원정 경로"
+  - button "파티 편성" [ref=e4]: "02  파티 편성"
+  - button "조우 대응" [ref=e5]: "03  조우 대응"
+  - button "전투 배치" [ref=e6]: "04  전투 배치"
+  - button "부대 지휘" [ref=e7]: "05  부대 지휘"
+  - button "결과와 다음 선택" [ref=e8] [focused]: "06  결과와 다음 선택"
+- main:
+  - region "전투 결과를 검사하고 원정을 잇는다" [ref=e52]:
+    - text: "OUTCOME INSPECTION / EXACTLY ONCE"
+    - heading "전투 결과를 검사하고 원정을 잇는다" [level=1]
+    - text: "ResultId BTW-SW03-EXAMPLE-01"
+    - region:
+      - text: "TERMINAL STATE"
+      - heading "승리 · 통행로 확보" [level=2]
+      - text: "검사 가능"
+      - button "승리" [ref=e53]
+      - button "패배" [ref=e54]
+      - button "질서 철수" [ref=e55]
+      - button "패주" [ref=e56]
+      - button "수락된 항복" [ref=e57]
+      - text: "목표를 달성하고 지휘 통제를 유지했다. 생존자 신병 처리는 전투 종료 유형과 별도다."
+      - article: "아군 상태 부상 2 · 전사 0 (예시)사상 사실은 종료 유형과 별도 기록"
+      - article: "신병·구금 구금 없음 항복·패주와 자동 등치하지 않음"
+      - article: "물자 변화 식량 −1일  예시 캠페인 반영 대상"
+      - article: "위치 구로 연결로 결과 반영이 귀환 명령은 아님"
+      - button "결과를 캠페인에 한 번 반영" [ref=e58]
+      - text: "아직 반영하지 않음 · 같은 ResultId의 중복 적용은 세계를 다시 바꾸지 않는다."
+    - complementary:
+      - text: "NEXT CAMPAIGN CHOICE"
+      - heading "다음 행선" [level=2]
+      - button "주요 선택 원정 계속 현재 위치에서 다음 구간을 고른다" [ref=e59] [disabled]
+      - text: "또는 원정의 결말 선택"
+      - button "귀환" [ref=e60] [disabled]: "귀환 거점 장부로 돌아간다"
+      - button "정착" [ref=e61] [disabled]: "정착 현재 지역에 남는다"
+      - button "정복" [ref=e62] [disabled]: "정복 역과 기반 시설을 장악한다"
+      - button "방랑" [ref=e63] [disabled]: "방랑 거점 없이 노선을 잇는다"
+      - button "교역" [ref=e64] [disabled]: "교역 다른 장부로 물자를 넘긴다"
+      - text: "결과 반영 뒤 선택할 수 있다."
+- contentinfo: "UI/UX 목표 설계 문서 · 질문 무응답 뒤 채택한 카메라/일시정지 기본값 · POC 구현 사실이나 소유자 명시 결정이 아님 total-war-ui-20260919-v1"
+No changes detected
+
+ACTION 결과를 캠페인에 한 번 반영 @@ -9 +9 @@
+-  - button "결과와 다음 선택" [ref=e8] [focused]: "06  결과와 다음 선택"
++  - button "결과와 다음 선택" [ref=e8]: "06  결과와 다음 선택"
+@@ -18 +18 @@
+-      - text: "검사 가능"
++      - text: "반영 완료"
+@@ -29,2 +29,2 @@
+-      - button "결과를 캠페인에 한 번 반영" [ref=e58]
+-      - text: "아직 반영하지 않음 · 같은 ResultId의 중복 적용은 세계를 다시 바꾸지 않는다."
++      - button "반영 완료 · 같은 ResultId 재적용 없음" [ref=e65] [disabled]
++      - text: "BTW-SW03-EXAMPLE-01 영수증 생성 · 위치, 물자, 부상 사실을 한 번 반영했다."
+@@ -34 +34 @@
+-      - button "주요 선택 원정 계속 현재 위치에서 다음 구간을 고른다" [ref=e59] [disabled]
++      - button "주요 선택 원정 계속 현재 위치에서 다음 구간을 고른다" [ref=e59]
+@@ -36,6 +36,6 @@
+-      - button "귀환" [ref=e60] [disabled]: "귀환 거점 장부로 돌아간다"
+-      - button "정착" [ref=e61] [disabled]: "정착 현재 지역에 남는다"
+-      - button "정복" [ref=e62] [disabled]: "정복 역과 기반 시설을 장악한다"
+-      - button "방랑" [ref=e63] [disabled]: "방랑 거점 없이 노선을 잇는다"
+-      - button "교역" [ref=e64] [disabled]: "교역 다른 장부로 물자를 넘긴다"
+-      - text: "결과 반영 뒤 선택할 수 있다."
++      - button "귀환" [ref=e60]: "귀환 거점 장부로 돌아간다"
++      - button "정착" [ref=e61]: "정착 현재 지역에 남는다"
++      - button "정복" [ref=e62]: "정복 역과 기반 시설을 장악한다"
++      - button "방랑" [ref=e63]: "방랑 거점 없이 노선을 잇는다"
++      - button "교역" [ref=e64]: "교역 다른 장부로 물자를 넘긴다"
++      - text: "반영 완료. 원정 계속이 주요 선택이며 다섯 결말도 선택 가능하다."
+
+No changes detected
+
+ACTION 부대 지휘 - title: "서울:전국 · 부대 지휘 UI 설계 템플릿" [url=http://127.0.0.1:4319/total-war-ui/?qa=red1]
+- link "화면 내용으로 건너뛰기" [ref=e1]
+- banner: "INTERACTION BLUEPRINT / TARGET UI\n         서울:전국\n         원정 부대 지휘 설계 템플릿\n      \n      \n         원정  서남선 조사대\n         현재 구간  신도림 → 구로\n         예시 데이터 · 밸런스/정사 미확정"
+- navigation "설계 화면" [ref=e2]:
+  - button "원정 경로" [ref=e3]: "01  원정 경로"
+  - button "파티 편성" [ref=e4]: "02  파티 편성"
+  - button "조우 대응" [ref=e5]: "03  조우 대응"
+  - button "전투 배치" [ref=e6]: "04  전투 배치"
+  - button "부대 지휘" [ref=e7] [focused]: "05  부대 지휘"
+  - button "결과와 다음 선택" [ref=e8]: "06  결과와 다음 선택"
+- main:
+  - region "구로 연결로 차단전" [ref=e22]:
+    - text: "LIVE UNIT COMMAND / SCHEMATIC"
+    - heading "구로 연결로 차단전" [level=1]
+    - text: "목표 통행로 확보 퇴로  봉쇄 · 질서 철수 불가 전황  교착 · 예시"
+    - button "이 파티 전투만 일시정지" [ref=e23]
+    - text: "질문 무응답 뒤 채택한 설계 기본값 3D 자유 지휘 카메라: 팬 · 오빗 · 줌 (각도/FOV 수치 미정)일시정지는 이 파티의 닫힌 전투만 멈추며 캠페인 세계와 다른 파티는 계속된다."
+    - complementary "아군 부대 목록":
+      - text: "부대"
+      - button "선택 해제" [ref=e24]
+      - button "I 선로 경비조 현재: 차단선 유지 결속 양호" [ref=e25]
+      - button "II 측선 정찰조 현재: 좌측 엄폐 이동 결속 양호" [ref=e26]
+      - button "III 구호 작업조 현재: 후열 대기 결속 주의" [ref=e27]
+      - text: "부대를 선택해야 명령할 수 있다. 영웅 직접 조작이 아닌 부대 단위 지휘다."
+    - region "명령 대상과 위치를 선택하는 전장 도식" [ref=e28]:
+      - text: "탑다운 DOCUMENTATION SCHEMATIC · 실제 3D 게임 렌더 아님 잔해 · 통과 불가"
+      - button "이동 목적지 북측 차단선" [ref=e29]: "이동 지점 A"
+      - button "이동 목적지 동측 엄폐" [ref=e30]: "이동 지점 B"
+      - button "선로 경비조" [ref=e31]: "I 경비조"
+      - button "측선 정찰조" [ref=e32]: "II 정찰조"
+      - button "구호 작업조" [ref=e33]: "III 구호조"
+      - button "공방 전열대, 공격 대상" [ref=e34]: "A 공방 전열대"
+      - button "공방 지원대, 공격 대상" [ref=e35]: "B 공방 지원대"
+    - complementary:
+      - region:
+        - text: "SELECTED UNIT"
+        - heading "선택된 부대 없음" [level=2]
+        - text: "부대를 선택하면 현재 지시와 교체할 명령을 검토할 수 있다."
+      - region "부대 명령" [ref=e36]:
+        - button "M 이동 목적지 선택" [ref=e37] [disabled]
+        - button "A 공격 대상 선택" [ref=e38] [disabled]
+        - button "F 방향 조절 전열 정렬 예시" [ref=e39] [disabled]
+        - button "H 정지 즉시 교체" [ref=e40] [disabled]
+      - region:
+        - text: "ORDER STATE"
+        - heading "명령 대기" [level=3]
+        - text: "이동 또는 공격을 고른 뒤 유효한 도식 대상에서 미리보기를 만든다.재개 대기 명령 없음"
+        - button "취소 · 기존 지시 유지" [ref=e41] [disabled]
+        - button "명령 교체 확인" [ref=e42] [disabled]
+      - button "철수 · 항복 검토" [ref=e43]
+    - text: "수락 기록"
+    - list:
+      - listitem "세션 시작 · 배치 확정" [ref=e44]
+    - text: "시뮬레이션 진행 중"
+- contentinfo: "UI/UX 목표 설계 문서 · 질문 무응답 뒤 채택한 카메라/일시정지 기본값 · POC 구현 사실이나 소유자 명시 결정이 아님 total-war-ui-20260919-v1"
+No changes detected
+
+ACTION 철수 · 항복 검토 @@ -8 +8 @@
+-  - button "부대 지휘" [ref=e7] [focused]: "05  부대 지휘"
++  - button "부대 지휘" [ref=e7]: "05  부대 지휘"
+@@ -54,0 +54,13 @@
++    - dialog "전투 종료 방식을 확인한다":
++      - text: "EXIT DECISION"
++      - heading "전투 종료 방식을 확인한다" [level=2]
++      - text: "질서 철수는 합법 퇴로가 필요하다. 항복은 적의 수락 뒤에만 종료되며 포획을 자동 확정하지 않는다.\n            문서 시연 상태"
++      - button "퇴로 개방 예시로 전환" [ref=e50]
++      - label:
++        - radio "질서 철수 요청봉쇄됨 · LegalFallback 실패로 선택 불가" [ref=e51] [disabled]
++        - text: "질서 철수 요청 봉쇄됨 · LegalFallback 실패로 선택 불가"
++      - label:
++        - radio "항복 제안적 수락 필요 · 포획 여부는 별도 결과 사실" [ref=e47] [checked]
++        - text: "항복 제안 적 수락 필요 · 포획 여부는 별도 결과 사실"
++      - button "취소 · 전투 상태 유지" [ref=e48] [focused]
++      - button "선택한 종료 확인" [ref=e49]
+
+No changes detected
+
+ACTION 선택한 종료 확인 - title: "서울:전국 · 부대 지휘 UI 설계 템플릿" [url=http://127.0.0.1:4319/total-war-ui/?qa=red1]
+- link "화면 내용으로 건너뛰기" [ref=e1]
+- banner: "INTERACTION BLUEPRINT / TARGET UI\n         서울:전국\n         원정 부대 지휘 설계 템플릿\n      \n      \n         원정  서남선 조사대\n         현재 구간  신도림 → 구로\n         예시 데이터 · 밸런스/정사 미확정"
+- navigation "설계 화면" [ref=e2]:
+  - button "원정 경로" [ref=e3]: "01  원정 경로"
+  - button "파티 편성" [ref=e4]: "02  파티 편성"
+  - button "조우 대응" [ref=e5]: "03  조우 대응"
+  - button "전투 배치" [ref=e6]: "04  전투 배치"
+  - button "부대 지휘" [ref=e7]: "05  부대 지휘"
+  - button "결과와 다음 선택" [ref=e8]: "06  결과와 다음 선택"
+- main:
+  - region "전투 결과를 검사하고 원정을 잇는다" [ref=e52]:
+    - text: "OUTCOME INSPECTION / EXACTLY ONCE"
+    - heading "전투 결과를 검사하고 원정을 잇는다" [level=1]
+    - text: "ResultId BTW-SW03-EXAMPLE-01"
+    - region:
+      - text: "TERMINAL STATE"
+      - heading "수락된 항복 · 교전 종료" [level=2]
+      - text: "검사 가능"
+      - button "승리" [ref=e53]
+      - button "패배" [ref=e54]
+      - button "질서 철수" [ref=e55]
+      - button "패주" [ref=e56]
+      - button "수락된 항복" [ref=e57]
+      - text: "아군이 제안하고 적이 수락해 교전이 끝났다. 항복은 퇴로 개방을 요구하지 않으며 전원 포획을 자동 확정하지 않는다."
+      - article: "아군 상태 부상 2 · 전사 0 (예시)사상 사실은 종료 유형과 별도 기록"
+      - article: "신병·구금 대표 1명 구금 협의 (예시)항복·패주와 자동 등치하지 않음"
+      - article: "물자 변화 식량 −1일  예시 캠페인 반영 대상"
+      - article: "위치 구로 연결로 결과 반영이 귀환 명령은 아님"
+      - button "결과를 캠페인에 한 번 반영" [ref=e66]
+      - text: "아직 반영하지 않음 · 같은 ResultId의 중복 적용은 세계를 다시 바꾸지 않는다."
+    - complementary:
+      - text: "NEXT CAMPAIGN CHOICE"
+      - heading "다음 행선" [level=2]
+      - button "주요 선택 원정 계속 현재 위치에서 다음 구간을 고른다" [ref=e59] [disabled]
+      - text: "또는 원정의 결말 선택"
+      - button "귀환" [ref=e60] [disabled]: "귀환 거점 장부로 돌아간다"
+      - button "정착" [ref=e61] [disabled]: "정착 현재 지역에 남는다"
+      - button "정복" [ref=e62] [disabled]: "정복 역과 기반 시설을 장악한다"
+      - button "방랑" [ref=e63] [disabled]: "방랑 거점 없이 노선을 잇는다"
+      - button "교역" [ref=e64] [disabled]: "교역 다른 장부로 물자를 넘긴다"
+      - text: "결과 반영 뒤 선택할 수 있다."
+- contentinfo: "UI/UX 목표 설계 문서 · 질문 무응답 뒤 채택한 카메라/일시정지 기본값 · POC 구현 사실이나 소유자 명시 결정이 아님 total-war-ui-20260919-v1"
+REAPPLICATION { id: 'BTW-SW03-EXAMPLE-01', disabled: false, status: '검사 가능' } original BTW-SW03-EXAMPLE-01
+SCREENSHOT /Users/ilseoblee/.aside/u/0/sessions/2026-09-19_6IFvToNx9WkDu6gm/artifacts/ui-regression-red.png
+CLEANUP_REGRESSION_TAB_CLOSED
+[ok | 3873ms]
