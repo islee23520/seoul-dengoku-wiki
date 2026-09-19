@@ -1,0 +1,9 @@
+git cat-file -t c9940638c4cb22a890c8c4111d5e5b9f55ebec82 -> commit
+git diff --exit-code 3ae995fb8aa39b7c225fce775387e81e24a5416d HEAD -- allowed task-01 paths -> 0
+git rev-list --min-parents=2 c9940638c4cb22a890c8c4111d5e5b9f55ebec82..HEAD -> empty, 0
+node --test task-01-clean-history/verify-lineage.mjs -> 3 passed, 0 failed
+node validate-conflict-disposition.mjs conflict-disposition.tsv -> rows 10, errors [], 0
+node TOOL/tools/architecture/check-unity-architecture.mjs -> 0
+node TOOL/tools/check-lfs-hydration.mjs -> 0, pointers [], errors []
+npm --prefix TOOL/tools test -> failed: missing local package entities; no product files changed
+old gate report: .omo/evidence/task-01-gate-review.md
