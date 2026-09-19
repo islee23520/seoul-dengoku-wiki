@@ -12,6 +12,7 @@ for path in \
   Concept.md Design.md Intent.md ToDo.md index.html \
   GAME-LOGIC GDD LORE GAME/play GAME-REFERENCE/ui-layout-moodboard \
   GAME-REFERENCE/portrait-demo GAME-REFERENCE/ui-ux-refs GAME-REFERENCE/assets/wiki \
+  GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json \
   RESEARCH/canon-reference TOOL/tools TOOL/portrait-gen; do
   mkdir -p "$WORK_ROOT/$(dirname "$path")"
   tar -C "$SOURCE_ROOT" \
@@ -32,6 +33,7 @@ node GAME-LOGIC/site/scripts/build-world-index.mjs
 npm --prefix GAME-LOGIC/site run docs:build
 node GAME-LOGIC/site/scripts/gate.mjs
 node TOOL/tools/design-store/seed-from-canon.mjs
+node GDD/system-design/total-war-ui/generate-map-data.mjs
 
 npm --prefix GAME-LOGIC/wiki-react run build
 npm --prefix GAME-LOGIC/wiki-react run test:contract -- --json "$OUTPUT_ROOT/react-contract.json"

@@ -5,22 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>서울:전국 · 부대 지휘 UI 설계 템플릿</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="app.js" defer></script>
+  <script type="importmap">
+    {"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"}}
+  </script>
+  <script src="seoul-map-data.js"></script>
+  <script type="module" src="app.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#screen-content">화면 내용으로 건너뛰기</a>
   <div class="app-shell">
-    <header class="topbar">
+    <header class="topbar wh3-topbar">
+      <div class="system-cluster" aria-label="시스템 도구"><button type="button" title="메뉴">☰</button><button type="button" title="도움말">?</button><button type="button" title="도감">▣</button></div>
       <div class="brand-block">
         <span class="eyebrow">INTERACTION BLUEPRINT / TARGET UI</span>
         <strong>서울:전국</strong>
         <span class="brand-sub">원정 부대 지휘 설계 템플릿</span>
       </div>
-      <div class="session-strip" aria-label="예시 세션 정보">
-        <span><b>원정</b> 서남선 조사대</span>
-        <span><b>현재 구간</b> 신도림 → 구로</span>
-        <span class="sample-tag">예시 데이터 · 밸런스/정사 미확정</span>
-      </div>
+      <div class="resource-cluster" aria-label="캠페인 자원"><span><b>식량</b> 12일</span><span><b>의약</b> 7</span><span><b>전력</b> +18</span><span><b>권위</b> 64</span></div>
+      <div class="session-strip" aria-label="예시 세션 정보"><span><b>원정</b> 서남선 조사대</span><span><b>현재 구간</b> 신도림 → 구로</span><span class="sample-tag">예시 데이터 · 정사 미확정</span></div>
     </header>
 
     <aside class="design-links" aria-label="Archify UI UX 설계 자료">
@@ -28,6 +30,7 @@
       <a href="flow.html">캠페인·전투 흐름</a>
       <a href="ux-flow.html">UX 상태 전이</a>
       <a href="wireframes.html">데스크톱 와이어프레임</a>
+      <a href="https://interfaceingame.com/games/total-war-warhammer-ii/" target="_blank" rel="noreferrer">1차 UI 레퍼런스 · Interface In Game</a>
     </aside>
 
     <nav class="screen-tabs" aria-label="설계 화면">
@@ -45,24 +48,24 @@
           <div><span class="kicker">CAMPAIGN / ROUTE</span><h1 id="campaign-title">원정은 귀환만을 뜻하지 않는다</h1></div>
           <p>노선을 따라 이동하고 조우를 해결한 뒤에도 원정을 계속할 수 있다. 아래 장소와 수치는 화면 검토용 예시다.</p>
         </div>
-        <div class="campaign-layout">
-          <section class="panel route-panel" aria-labelledby="route-title">
-            <div class="panel-head"><div><span class="kicker">ROUTE GRAPH</span><h2 id="route-title">서남선 이동 경로</h2></div><span class="status-chip live">이동 중</span></div>
-            <div class="route-map" aria-label="영등포에서 신도림을 거쳐 구로로 향하는 예시 경로">
-              <div class="route-line"></div>
-              <button class="station done" type="button" aria-label="영등포, 출발 완료"><i></i><span>영등포</span><small>출발 거점</small></button>
-              <button class="station current" type="button" aria-label="신도림, 현재 위치"><i></i><span>신도림</span><small>현재 · 폐쇄 승강장</small></button>
-              <button class="station next" type="button" aria-label="구로, 다음 목적지"><i></i><span>구로</span><small>다음 · 공방 교섭</small></button>
-              <button class="station optional" type="button" aria-label="대림, 우회 후보"><i></i><span>대림</span><small>우회 후보</small></button>
-            </div>
-            <div class="route-legend"><span><i class="dot done"></i>지나온 구간</span><span><i class="dot live"></i>현재</span><span><i class="dot next"></i>도달 가능</span></div>
+        <div class="campaign-shell">
+          <section class="campaign-map-stage" aria-labelledby="route-title">
+            <div id="strategy-map" class="strategy-map" aria-label="서울 전역 3D 하이트맵 전략 지도"></div>
+            <div class="map-hud-title"><span class="kicker">SEOUL STRATEGY MAP · THREE.JS</span><h2 id="route-title">서울 전역 3D 하이트맵</h2><small id="map-camera-state">자유 팬 · 오빗 · 줌</small></div>
+            <div class="map-compass" aria-hidden="true">N</div>
+            <div class="map-legend"><span><i class="swatch controlled"></i>현재 통제</span><span><i class="swatch allied"></i>협력권</span><span><i class="swatch hostile"></i>경계권</span><span><i class="swatch route"></i>지하철 연결</span></div>
+            <div class="map-layers" aria-label="전략 지도 정보 층"><b>지도 정보</b><button type="button" data-map-layer="territory" aria-pressed="true">통제권</button><button type="button" data-map-layer="routes" aria-pressed="true">노선</button><button type="button" data-map-layer="stations" aria-pressed="true">역·거점</button><button type="button" id="map-reset">서울 전역</button></div>
+            <div class="map-controls-hint">왼쪽 드래그 이동 · 오른쪽 드래그 회전 · 휠 확대</div>
           </section>
-          <aside class="panel travel-card">
-            <div class="panel-head"><div><span class="kicker">NEXT LEG</span><h2>구로 공방 연결로</h2></div><span class="route-code">SW-03</span></div>
-            <dl class="fact-grid"><div><dt>예상 소요</dt><dd>반나절 <em>예시</em></dd></div><div><dt>통행 상태</dt><dd>부분 봉쇄</dd></div><div><dt>물자</dt><dd>식량 3일 <em>예시</em></dd></div><div><dt>관계</dt><dd>공방 중립</dd></div></dl>
-            <div class="brief"><b>이동 판단</b><p>본선의 잔해를 치우는 동안 측선 감시가 필요하다. 교섭이 결렬되면 전투 세션으로 분리된다.</p></div>
-            <button class="primary wide" type="button" data-nav="roster">동행 편성 확인 <span>→</span></button>
+          <aside class="campaign-context panel">
+            <div class="panel-head"><div><span class="kicker">SELECTED EXPEDITION</span><h2>서남선 조사대</h2></div><span class="status-chip live">이동 가능</span></div>
+            <div class="commander-card"><span class="portrait portrait-a" aria-hidden="true"><i></i></span><div><b>임초원</b><small>원정 지휘 · 영웅 별도 인물</small><strong>병졸 17 · 3개 분대</strong></div></div>
+            <dl class="fact-grid"><div><dt>현재 위치</dt><dd id="selected-station">신도림</dd></div><div><dt>행동력</dt><dd>62%</dd></div><div><dt>보급</dt><dd>식량 3일</dd></div><div><dt>태세</dt><dd>조사 행군</dd></div></dl>
+            <div class="army-card-rail"><button type="button"><i>H</i><span>영웅</span></button><button type="button"><i>I</i><span>8 / 20</span></button><button type="button"><i>II</i><span>5 / 20</span></button><button type="button"><i>III</i><span>4 / 20</span></button></div>
+            <div class="brief"><b>워해머 3 참고 구조</b><p>중앙 3D 지도, 상단 자원대, 선택 대상의 문맥 패널, 하단 군대 카드와 우측 순환 행동 메뉴로 화면 위계를 잡았다.</p></div>
           </aside>
+          <div class="campaign-bottom-panel"><div class="settlement-strip"><span><b>영등포</b><small>출발 거점</small></span><span class="is-current"><b>신도림</b><small>현재 원정</small></span><span><b>구로</b><small>공방 교섭</small></span></div><button class="primary" type="button" data-nav="roster">부대 편성</button></div>
+          <aside class="turn-orb" aria-label="캠페인 주요 행동"><button type="button" title="임무">◎</button><button type="button" title="외교">◇</button><button type="button" title="기술">△</button><button class="turn-main" type="button" data-nav="roster"><span>현재 원정</span><b>다음 행동</b></button></aside>
         </div>
       </section>
 
@@ -105,6 +108,8 @@
       <section class="screen" id="screen-battle" data-screen-panel="battle" aria-labelledby="battle-title" hidden>
         <div class="battle-header"><div><span class="kicker">LIVE UNIT COMMAND / SCHEMATIC</span><h1 id="battle-title">구로 연결로 차단전</h1></div><div class="objective"><span>목표</span><b>통행로 확보</b></div><div class="battle-state"><span>퇴로 <b id="route-state">남측 개방</b></span><span>전황 <b>교착 · 예시</b></span></div><button type="button" id="battle-pause" aria-pressed="false"><span>이 파티 전투만</span><b id="battle-pause-label">일시정지</b></button></div>
         <div class="adopted-default"><b>질문 무응답 뒤 채택한 설계 기본값</b><span>3D 자유 지휘 카메라: 팬 · 오빗 · 줌 (각도/FOV 수치 미정)</span><span>일시정지는 이 파티의 닫힌 전투만 멈추며 캠페인 세계와 다른 파티는 계속된다.</span></div>
+        <div class="battle-balance" aria-label="전투 전력 균형"><span>서남선 조사대</span><div><i></i></div><span>구로 공방대</span><small>전력 균형 · 예시</small></div>
+        <div class="battle-time-controls" aria-label="전투 시간 제어"><button type="button">Ⅰ</button><button type="button" class="is-active">▶</button><button type="button">Ⅱ</button><button type="button">Ⅲ</button></div>
         <div class="battle-layout">
           <aside class="unit-rail" aria-label="아군 부대 목록"><div class="rail-title"><span>부대</span><button type="button" id="selection-clear">선택 해제</button></div>
              <button type="button" data-unit="leader"><i>H</i><span><b>영웅 지휘 인물</b><small data-unit-order="leader">현재: 중앙 지휘</small></span><em>병졸 수 제외</em></button>
@@ -120,6 +125,7 @@
              <button type="button" class="unit-token ally hero u4" data-field-unit="leader" aria-label="영웅 지휘 인물"><i>H</i><span>영웅</span></button><button type="button" class="unit-token ally u1" data-field-unit="guard" aria-label="선로 경비조"><i>I</i><span>경비조</span></button><button type="button" class="unit-token ally u2" data-field-unit="scout" aria-label="측선 정찰조"><i>II</i><span>정찰조</span></button><button type="button" class="unit-token ally u3" data-field-unit="relief" aria-label="구호 작업조"><i>III</i><span>구호조</span></button>
             <button type="button" class="unit-token foe e1" data-target="barricade" aria-label="공방 전열대, 공격 대상"><i>A</i><span>공방 전열대</span></button><button type="button" class="unit-token foe e2" data-target="support" aria-label="공방 지원대, 공격 대상"><i>B</i><span>공방 지원대</span></button><div class="north" aria-hidden="true">N ↑</div>
             <div class="preview-line" id="preview-line" hidden></div>
+            <div class="battle-minimap" aria-label="전장 미니맵"><i class="mini-friendly m1"></i><i class="mini-friendly m2"></i><i class="mini-friendly m3"></i><i class="mini-hostile m4"></i><i class="mini-hostile m5"></i><span></span></div>
           </section>
 
           <aside class="command-panel">

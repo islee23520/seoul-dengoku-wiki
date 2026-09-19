@@ -1,3 +1,6 @@
+import * as THREE from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+
 (() => {
   "use strict";
 
@@ -59,6 +62,218 @@
 
   const all = (selector, root = document) => [...root.querySelectorAll(selector)];
   const one = (selector, root = document) => root.querySelector(selector);
+
+  function bootStrategyMap() {
+    const host = one("#strategy-map");
+    if (!host) return;
+
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0x17201d);
+    scene.fog = new THREE.FogExp2(0x17201d, 0.013);
+
+    const camera = new THREE.PerspectiveCamera(42, 1, 0.1, 240);
+    camera.position.set(0, 31, 34);
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: "high-performance" });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    renderer.outputColorSpace = THREE.SRGBColorSpace;
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    renderer.domElement.dataset.renderer = "three-strategy-map";
+    renderer.domElement.setAttribute("aria-label", "서울 전역 지형과 지하철 연결, 거점과 세력권을 표시하는 Three.js 전략 지도");
+    host.append(renderer.domElement);
+
+    const controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.075;
+    controls.screenSpacePanning = true;
+    controls.minDistance = 18;
+    controls.maxDistance = 64;
+    controls.maxPolarAngle = Math.PI * 0.475;
+    controls.target.set(0, 0, 0);
+
+    scene.add(new THREE.HemisphereLight(0xc7d8cf, 0x101714, 1.55));
+    const sun = new THREE.DirectionalLight(0xffe6b5, 2.35);
+    sun.position.set(-16, 34, 22);
+    sun.castShadow = true;
+    sun.shadow.mapSize.set(1536, 1536);
+    sun.shadow.camera.left = -35;
+    sun.shadow.camera.right = 35;
+    sun.shadow.camera.top = 35;
+    sun.shadow.camera.bottom = -35;
+    scene.add(sun);
+
+    const heightAt = (x, z) => {
+      const ridge = Math.sin(x * 0.27) * 1.45 + Math.cos(z * 0.22) * 1.1;
+      const north = Math.max(0, z + 2) * 0.12;
+      const basin = -2.9 * Math.exp(-((x * x) / 120 + (z * z) / 42));
+      const peaks = 4.8 * Math.exp(-(((x + 13) ** 2) / 24 + ((z - 7) ** 2) / 16))
+        + 3.9 * Math.exp(-(((x - 14) ** 2) / 30 + ((z - 8) ** 2) / 20));
+      return Math.max(-1.6, ridge + north + basin + peaks);
+    };
+
+    const geometry = new THREE.PlaneGeometry(52, 35, 104, 70);
+    geometry.rotateX(-Math.PI / 2);
+    const position = geometry.attributes.position;
+    const colors = [];
+    for (let i = 0; i < position.count; i += 1) {
+      const x = position.getX(i);
+      const z = position.getZ(i);
+      const y = heightAt(x, z);
+      position.setY(i, y);
+      const low = new THREE.Color(0x334f43);
+      const high = new THREE.Color(0x8b8061);
+      low.lerp(high, THREE.MathUtils.clamp((y + 1.4) / 7.2, 0, 1));
+      colors.push(low.r, low.g, low.b);
+    }
+    geometry.setAttribute("color", new THREE.Float32BufferAttribute(colors, 3));
+    geometry.computeVertexNormals();
+    const terrain = new THREE.Mesh(geometry, new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 0.95, metalness: 0.02 }));
+    terrain.receiveShadow = true;
+    terrain.userData.layer = "territory";
+    scene.add(terrain);
+
+    const riverCurve = new THREE.CatmullRomCurve3([
+      new THREE.Vector3(-26, -0.7, 1.4), new THREE.Vector3(-15, -1.05, 0.4), new THREE.Vector3(-4, -1.2, 1.2),
+      new THREE.Vector3(7, -1.1, 0), new THREE.Vector3(18, -0.8, -0.8), new THREE.Vector3(26, -0.4, -1.8),
+    ]);
+    const river = new THREE.Mesh(new THREE.TubeGeometry(riverCurve, 90, 0.8, 10, false), new THREE.MeshStandardMaterial({ color: 0x3f7790, roughness: 0.4, metalness: 0.15, emissive: 0x163b4a, emissiveIntensity: 0.32 }));
+    river.userData.layer = "territory";
+    scene.add(river);
+
+    const routeGroup = new THREE.Group();
+    routeGroup.userData.layer = "routes";
+    const stationGroup = new THREE.Group();
+    stationGroup.userData.layer = "stations";
+    scene.add(routeGroup, stationGroup);
+
+    const graph = window.SEOUL_MAP_DATA;
+    if (!graph?.stations?.length || !graph?.connections?.length) throw new Error("서울 전략맵 데이터가 없습니다.");
+    const minLon = Math.min(...graph.stations.map((station) => station.lon));
+    const maxLon = Math.max(...graph.stations.map((station) => station.lon));
+    const minLat = Math.min(...graph.stations.map((station) => station.lat));
+    const maxLat = Math.max(...graph.stations.map((station) => station.lat));
+    const projectStation = (station) => ({
+      x: ((station.lon - minLon) / (maxLon - minLon) - 0.5) * 48,
+      z: -((station.lat - minLat) / (maxLat - minLat) - 0.5) * 31,
+    });
+    const stateFor = (station) => {
+      if (["영등포", "신도림"].includes(station.nameKo)) return "controlled";
+      if (["용산구", "종로구", "중구", "마포구", "성동구"].includes(station.district)) return "allied";
+      return "hostile";
+    };
+    const stationDefs = graph.stations.map((station) => {
+      const projected = projectStation(station);
+      return [station.nameKo, projected.x, projected.z, stateFor(station), station.id];
+    });
+    const colorsByState = { controlled: 0xd5ad54, allied: 0x68a58f, hostile: 0xa8584d };
+    const stationMeshes = new Map();
+
+    const makeLabel = (text) => {
+      const canvas = document.createElement("canvas");
+      canvas.width = 320;
+      canvas.height = 80;
+      const ctx = canvas.getContext("2d");
+      ctx.fillStyle = "rgba(20,27,24,.9)";
+      ctx.fillRect(4, 8, 312, 64);
+      ctx.strokeStyle = "rgba(213,173,84,.75)";
+      ctx.strokeRect(4, 8, 312, 64);
+      ctx.fillStyle = "#f5f0df";
+      ctx.font = '700 30px "Noto Sans KR", sans-serif';
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText(text, 160, 41);
+      const texture = new THREE.CanvasTexture(canvas);
+      texture.colorSpace = THREE.SRGBColorSpace;
+      const sprite = new THREE.Sprite(new THREE.SpriteMaterial({ map: texture, transparent: true, depthWrite: false }));
+      sprite.scale.set(4.8, 1.2, 1);
+      return sprite;
+    };
+
+    for (const [name, x, z, stateName, id] of stationDefs) {
+      const y = heightAt(x, z) + 0.55;
+      const group = new THREE.Group();
+      group.position.set(x, y, z);
+      group.userData.station = name;
+      const marker = new THREE.Mesh(new THREE.CylinderGeometry(0.14, 0.22, 0.58, 7), new THREE.MeshStandardMaterial({ color: colorsByState[stateName], emissive: colorsByState[stateName], emissiveIntensity: 0.16, roughness: 0.55 }));
+      marker.castShadow = true;
+      marker.userData.station = name;
+      group.add(marker);
+      const ring = new THREE.Mesh(new THREE.RingGeometry(0.24, 0.32, 18), new THREE.MeshBasicMaterial({ color: colorsByState[stateName], transparent: true, opacity: 0.74, side: THREE.DoubleSide }));
+      ring.rotation.x = -Math.PI / 2;
+      ring.position.y = -0.28;
+      group.add(ring);
+      if (["서울역", "영등포", "신도림", "구로", "강남"].includes(name)) {
+        const label = makeLabel(name);
+        label.position.y = 1.7;
+        group.add(label);
+      }
+      stationGroup.add(group);
+      stationMeshes.set(id, group);
+      stationMeshes.set(name, group);
+    }
+
+    for (const [a, b] of graph.connections) {
+      if (!stationMeshes.has(a) || !stationMeshes.has(b)) continue;
+      const start = stationMeshes.get(a).position.clone();
+      const end = stationMeshes.get(b).position.clone();
+      const mid = start.clone().lerp(end, 0.5);
+      mid.y += 0.38;
+      const curve = new THREE.QuadraticBezierCurve3(start, mid, end);
+      routeGroup.add(new THREE.Mesh(new THREE.TubeGeometry(curve, 8, 0.025, 4, false), new THREE.MeshBasicMaterial({ color: 0xc6b77c, transparent: true, opacity: 0.44 })));
+    }
+
+    const raycaster = new THREE.Raycaster();
+    const pointer = new THREE.Vector2();
+    renderer.domElement.addEventListener("click", (event) => {
+      const rect = renderer.domElement.getBoundingClientRect();
+      pointer.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+      pointer.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+      raycaster.setFromCamera(pointer, camera);
+      const hit = raycaster.intersectObjects([...stationMeshes.values()], true).find((entry) => entry.object.userData.station || entry.object.parent?.userData.station);
+      const station = hit?.object.userData.station || hit?.object.parent?.userData.station;
+      if (!station) return;
+      one("#selected-station").textContent = station;
+      const target = stationMeshes.get(station).position;
+      controls.target.copy(target);
+      controls.update();
+    });
+
+    all("[data-map-layer]").forEach((button) => button.addEventListener("click", () => {
+      const layer = button.dataset.mapLayer;
+      const next = button.getAttribute("aria-pressed") !== "true";
+      button.setAttribute("aria-pressed", String(next));
+      scene.traverse((object) => { if (object.userData.layer === layer) object.visible = next; });
+    }));
+
+    const resetMap = () => {
+      camera.position.set(0, 31, 34);
+      controls.target.set(0, 0, 0);
+      controls.update();
+      one("#map-camera-state").textContent = "서울 전역 · 자유 팬 · 오빗 · 줌";
+    };
+    one("#map-reset").addEventListener("click", resetMap);
+
+    const resize = () => {
+      const width = host.clientWidth;
+      const height = host.clientHeight;
+      renderer.setSize(width, height, false);
+      camera.aspect = width / Math.max(1, height);
+      camera.updateProjectionMatrix();
+    };
+    new ResizeObserver(resize).observe(host);
+    resize();
+
+    let frame = 0;
+    const animate = () => {
+      controls.update();
+      renderer.render(scene, camera);
+      frame = requestAnimationFrame(animate);
+    };
+    animate();
+    window.addEventListener("pagehide", () => cancelAnimationFrame(frame), { once: true });
+    resetMap();
+  }
 
   function showScreen(name) {
     state.screen = name;
@@ -416,5 +631,6 @@
   renderSelection();
   renderPauseState();
   renderResult();
+  bootStrategyMap();
   showScreen("campaign");
 })();

@@ -19,6 +19,8 @@ test('Docker builder is reproducible and exports the complete deployment contrac
   assert.match(script, /seoul-dengoku-site\.tar/)
   assert.match(script, /WORK_ROOT=\$\{WORK_ROOT:-\$OUTPUT_ROOT\/work\}/)
   assert.match(script, /GAME-REFERENCE\/assets\/wiki/)
+  assert.match(script, /GAME\/Assets\/Janseon\/Data\/Content\/SeoulWorldGraph\.json/)
+  assert.match(script, /generate-map-data\.mjs/)
   assert.match(script, /TOOL\/portrait-gen/)
   assert.match(script, /rm -rf "\$WORK_ROOT"/)
   assert.match(script, /--hub-index index\.html/)
