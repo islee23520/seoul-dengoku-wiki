@@ -11,6 +11,9 @@ nl -ba verify-required-lineage-cases.mjs -> 28 lines; independent authority 3-10
 nl -ba test-required-lineage-cases.mjs -> 28 lines; tamper fixtures 7-25
 cleanup binding check: cleanup.json content_evidence_commit equals parent commit of receipt commit; receipt commit hash is intentionally absent from cleanup.json
 final binding repair: a new content receipt note is followed by a receipt commit whose parent is the full 40-hex content hash
+node generate-source-anchor-index.mjs -> source-anchor-index.json and source-line-index.txt generated
+node verify-quality-anchors.mjs -> quality anchors verified: 10
+node --test test-quality-anchors.mjs -> quality anchor self-tests: 3 passed; clean/SHA drift/unknown anchor probes
 NEUTRALIZE_MUTANT_ID=mutant.subject-only -> exit 1, required-case inventory mismatch and ID absent
 NEUTRALIZE_MUTANT_ID=mutant.parent-chain-noop -> exit 1, required-case inventory mismatch and ID absent
 NEUTRALIZE_MUTANT_ID=mutant.optional-reflog -> exit 1, required-case inventory mismatch and ID absent
