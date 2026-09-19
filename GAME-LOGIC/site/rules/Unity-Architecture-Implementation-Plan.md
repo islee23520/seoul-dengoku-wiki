@@ -2,6 +2,8 @@
 
 이 계획은 [Unity 시스템 설계 계약](/rules/Unity-System-Design)을 코드로 옮기는 순서와 각 단계의 중단 조건을 정의합니다. 설계 계약과 계획이 Wiki에 먼저 합쳐지기 전에는 제품 코드를 변경하지 않습니다.
 
+> 이 문서는 Foundation 아키텍처와 기존 Unity POC를 만든 역사적 구현 계획입니다. 현재 부대 지휘 전투 개정은 문서 전용이며 이 계획에 새 런타임 작업을 추가하지 않습니다.
+
 ## 계약 요약
 
 현재 증분은 `Foundation` 모듈 하나에 한정합니다. `Bootstrap.unity`가 App VContainer scope와 **FSM**을 소유하고, `Foundation.unity`는 명시적 child scope를 가진 화면이 됩니다. static **Singleton**과 service locator를 금지하며, 미래 **Repository**는 Unity-free inward contract로 둡니다. **저장과 결정성**, **실패와 취소**, 테스트 및 **품질 게이트**의 상세 규칙은 시스템 설계 계약을 따릅니다.

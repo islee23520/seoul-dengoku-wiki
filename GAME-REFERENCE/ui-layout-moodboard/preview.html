@@ -3,488 +3,216 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>잔선 · 게임뷰 HUD 오버레이</title>
+<title>서울:전국 · 목표 부대 지휘 문서 시연</title>
 <style>
-:root{
-  --bg-void:#0B111C; --bg-panel:#141C2A; --bg-raised:#1B2536; --bg-well:#0E1622;
-  --stroke:#2A3548; --focus:#C9A227; --danger:#8B3A3A;
-  --text:#E6EAF0; --text-2:#9AA6B2; --muted:#6B7684;
-  --line:#3D7EA6; --safe:#3F6B54; --talk:#5B6B8A; --fight:#8B4A3A;
-  --gold:#C9A227; --gold-frame:#AD8C47;
-  --font:"Apple SD Gothic Neo","Pretendard","Noto Sans KR",sans-serif;
-  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%;background:#05080d;color:var(--text);font-family:var(--font)}
-body{display:flex;flex-direction:column}
-.chrome{flex:0 0 auto;padding:10px 16px;border-bottom:1px solid var(--stroke);background:#080d14}
-.chrome h1{font-size:14px;font-weight:600}
-.chrome p{font-size:12px;color:var(--text-2);margin-top:4px;max-width:96ch;word-break:keep-all}
-.tabs{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
-.tabs button{appearance:none;border:1px solid var(--stroke);background:var(--bg-panel);color:var(--text-2);
-  font:inherit;font-size:12px;padding:5px 10px;cursor:pointer}
-.tabs button[aria-current="true"]{border-color:var(--focus);color:var(--gold)}
-.note{margin-top:8px;font:11px/1.5 var(--mono);color:var(--muted)}
-.stage-wrap{flex:1;overflow:auto;padding:16px;display:flex;justify-content:center}
-.game{width:1280px;height:720px;flex:0 0 1280px;position:relative;overflow:hidden;
-  background:#070b12;border:1px solid var(--stroke)}
-
-.world{position:absolute;inset:0;overflow:hidden}
-.layer{display:none;position:absolute;inset:0}
-body[data-mode="title"] .layer-title,
-body[data-mode="hub"] .layer-hub,
-body[data-mode="campaign"] .layer-campaign,
-body[data-mode="worldmap"] .layer-worldmap,
-body[data-mode="encounter"] .layer-encounter,
-body[data-mode="formation"] .layer-battle,
-body[data-mode="battle"] .layer-battle,
-body[data-mode="card"] .layer-battle,
-body[data-mode="settle"] .layer-hub{display:block}
-
-.sky{position:absolute;inset:0}
-.sky-void{background:
-  radial-gradient(ellipse at 50% 30%, #152033 0%, transparent 50%),
-  linear-gradient(#0b111c,#070b12)}
-.sky-hub{background:linear-gradient(#1a2432,#0c121c 70%)}
-.sky-map{background:#081018}
-.sky-enc{background:linear-gradient(#0a1018,#121820 40%, #070b12)}
-.sky-battle{background:
-  radial-gradient(ellipse at 50% 18%, #1a2736 0%, transparent 42%),
-  linear-gradient(#0d1520, #070b12 55%, #05080d)}
-.folds{position:absolute;inset:0;opacity:.28;background:
-  linear-gradient(90deg, transparent 199px, #3D7EA6 200px, transparent 201px),
-  linear-gradient(45deg, transparent 49.7%, #2A3548 50%, transparent 50.3%)}
-
-/* TITLE world — void + line folds, no station, no squads */
-.logo-ghost{position:absolute;left:50%;top:38%;transform:translate(-50%,-50%);
-  width:420px;height:8px;background:linear-gradient(90deg,transparent,#3D7EA6,transparent);opacity:.45}
-.logo-ghost:after{content:"";position:absolute;left:50%;top:-40px;width:12px;height:12px;border-radius:50%;
-  background:#3D7EA6;transform:translateX(-50%)}
-
-/* HUB world — concourse, bulletin, party idle. No enemy squads */
-.concourse{position:absolute;left:8%;right:8%;top:18%;bottom:8%;background:#1c2734;
-  border:2px solid #3a4d62;box-shadow:0 24px 0 #0a1018;transform:perspective(900px) rotateX(12deg)}
-.concourse .pillars{position:absolute;inset:0}
-.concourse .p{position:absolute;width:22px;top:8%;bottom:8%;background:linear-gradient(90deg,#2a3544,#4a5a6c)}
-.board{position:absolute;left:8%;top:12%;width:220px;height:140px;background:#101820;border:1px solid #4d8bac}
-.board span{display:block;padding:8px 10px;font-size:12px;color:#cfe3ee}
-.sleep{position:absolute;right:10%;bottom:18%;width:180px;height:48px;background:#2a3544;border:1px solid #3a4d62}
-.person{position:absolute;width:14px;height:30px;border-radius:7px 7px 3px 3px;background:linear-gradient(#6aa8c4,#2e6a86)}
-
-/* CAMPAIGN map — Line 2 three-station schematic, party token */
-.cmap{position:absolute;inset:80px 80px 80px 80px}
-.cmap svg{width:100%;height:100%}
-.token{position:absolute;width:18px;height:18px;border-radius:50%;background:#c9a227;border:2px solid #fff;
-  box-shadow:0 0 0 4px rgba(201,162,39,.25)}
-
-/* WORLD map — Seoul districts, many nodes, not the 3-station rail */
-.wmap{position:absolute;inset:40px 60px 40px 60px}
-.wmap svg{width:100%;height:100%}
-
-/* ENCOUNTER — tunnel corridor, two groups, not 6v6 battle */
-.tunnel{position:absolute;left:10%;right:10%;top:22%;bottom:16%;background:
-  linear-gradient(#0e1620,#1a222c 20%, #121820);
-  clip-path:polygon(8% 0,92% 0,100% 100%,0 100%)}
-.rails{position:absolute;left:8%;right:8%;bottom:18%;height:8px;background:#c9a227;opacity:.35}
-.rails:before,.rails:after{content:"";position:absolute;left:0;right:0;height:8px;background:#3a4d62}
-.rails:before{top:-16px}.rails:after{top:16px}
-.enc-ally,.enc-foe{position:absolute;bottom:28%}
-.enc-ally{left:18%}.enc-foe{right:18%}
-.blob{display:inline-block;width:16px;height:34px;margin:0 4px;border-radius:8px 8px 3px 3px;vertical-align:bottom}
-.enc-ally .blob{background:linear-gradient(#6aa8c4,#2e6a86)}
-.enc-foe .blob{background:linear-gradient(#c07064,#7a3a34)}
-
-/* BATTLE / FORMATION — platform + squads. Shared world, different HUD */
-.iso-stage{position:absolute;left:50%;top:46%;width:920px;height:520px;
-  transform:translate(-50%,-50%) rotateX(35.264deg) rotateZ(-45deg);transform-origin:center}
-.platform{position:absolute;inset:48px 90px 80px 90px;background:linear-gradient(#243140,#1a2430 40%, #151e28);
-  border:2px solid #3a4d62;box-shadow:22px 22px 0 #0a1018}
-.edge{position:absolute;left:90px;right:90px;bottom:70px;height:18px;background:#0d141c;border-top:2px solid #c9a22733}
-.pillar{position:absolute;width:32px;height:128px;background:linear-gradient(90deg,#2a3544,#5a6a7c 38%,#1c2632);
-  box-shadow:6px 0 0 #0a1018}
-.bench{position:absolute;width:78px;height:16px;background:#3d4a58}
-.sign{position:absolute;padding:4px 8px;background:#111820;border:1px solid #4d8bac;color:#cfe3ee;
-  font-size:11px;white-space:nowrap;transform:rotateZ(45deg) rotateX(-35.264deg)}
-.squad{position:absolute;width:72px;height:72px}
-.squad .ring{position:absolute;inset:-8px;border:2px solid var(--gold);border-radius:50%;opacity:0}
-.squad.sel .ring{opacity:.9}
-.fig{position:absolute;width:16px;height:32px;border-radius:8px 8px 3px 3px;transform:rotateZ(45deg) rotateX(-18deg)}
-.fig.lead{width:18px;height:36px;filter:brightness(1.15);left:26px;top:18px}
-.squad.ally .fig{background:linear-gradient(#6aa8c4,#2e6a86)}
-.squad.foe .fig{background:linear-gradient(#c07064,#7a3a34)}
-.fig:nth-child(2){left:28px;top:8px}
-.fig:nth-child(3){left:8px;top:22px}
-.fig:nth-child(4){left:44px;top:22px}
-.fig:nth-child(5){left:20px;top:36px}
-body[data-mode="formation"] .squad.foe{opacity:.35}
-
-.hud{position:absolute;inset:0;pointer-events:none}
-.hud *{pointer-events:auto}
-.glass{background:rgba(14,22,34,.82);border:1px solid rgba(42,53,72,.95);backdrop-filter:blur(6px)}
-.btn{border:1px solid var(--stroke);background:var(--bg-raised);color:var(--text);font:inherit;font-size:13px;
-  padding:6px 10px;cursor:pointer}
-.btn.primary{border-bottom:2px solid var(--line)}
-.btn:focus{outline:2px solid var(--focus);outline-offset:1px}
-.chip{height:26px;padding:0 10px;border:1px solid var(--stroke);background:rgba(20,28,42,.9);color:var(--text-2);
-  font-size:12px;display:inline-flex;align-items:center}
-.chip.now{border-color:var(--focus);color:var(--text);box-shadow:inset 0 -2px 0 var(--gold)}
-.label{font-size:12px;color:var(--text-2)}
-.meter{height:8px;background:#0b131d;border:1px solid var(--stroke)}
-.meter>i{display:block;height:100%}
-.screen{display:none}
-body[data-mode="title"] #hud-title,
-body[data-mode="hub"] #hud-hub,
-body[data-mode="campaign"] #hud-campaign,
-body[data-mode="worldmap"] #hud-worldmap,
-body[data-mode="encounter"] #hud-encounter,
-body[data-mode="formation"] #hud-formation,
-body[data-mode="battle"] #hud-battle,
-body[data-mode="card"] #hud-battle,
-body[data-mode="settle"] #hud-settle{display:block}
-
-#hud-title .stack{position:absolute;left:50%;top:52%;transform:translate(-50%,-50%);width:320px;text-align:center}
-#hud-title .mark{width:280px;height:120px;margin:0 auto 14px;display:flex;align-items:center;justify-content:center;
-  font-size:36px;font-weight:500;letter-spacing:.02em;border:1px solid rgba(42,53,72,.6)}
-#hud-title .sub{font-size:15px;color:var(--text-2);margin-bottom:18px;word-break:keep-all}
-#hud-title .start{width:280px;height:56px;font-size:18px}
-
-#hud-hub .rail,#hud-campaign .rail,#hud-worldmap .rail{
-  position:absolute;left:24px;top:16px;right:24px;height:48px;display:flex;align-items:center;gap:8px;padding:0 12px}
-#hud-hub .route{position:absolute;left:16px;top:76px;width:280px;padding:12px;display:flex;flex-direction:column;gap:8px}
-#hud-hub .party{position:absolute;left:312px;top:76px;display:flex;gap:6px}
-#hud-hub .slot{width:120px;height:36px;display:flex;align-items:center;padding:0 10px;font-size:12px;color:var(--text-2)}
-
-#hud-campaign .legend,#hud-worldmap .legend{position:absolute;left:16px;bottom:16px;display:flex;gap:6px}
-
-#hud-encounter .sheet{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);width:420px;padding:16px}
-#hud-encounter h2{font-size:18px;margin-bottom:10px}
-#hud-encounter .btn{display:block;width:100%;text-align:left;margin-top:8px}
-#hud-encounter .talk{border-top:3px solid var(--talk)}
-#hud-encounter .safe{border-top:3px solid var(--safe)}
-#hud-encounter .fight{border-top:3px solid var(--fight)}
-
-#hud-formation .status{position:absolute;left:16px;top:12px;right:16px;height:40px;display:flex;align-items:center;gap:10px;padding:0 10px}
-#hud-formation .pause{margin-left:auto}
-#hud-formation .inspect{position:absolute;top:60px;right:16px;width:200px;padding:10px;display:flex;flex-direction:column;gap:6px}
-#hud-formation .inspect h2{font-size:14px}
-.units{display:grid;grid-template-columns:1fr 1fr;gap:5px}
-.units .u{height:40px;border:1px solid var(--stroke);background:#0b1320;font-size:13px;display:flex;align-items:center;padding:0 10px}
-.units .u.sel{outline:2px solid var(--gold)}
-.slots{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
-.slots .s{height:40px;border:1px solid var(--stroke);background:#182432;font-size:11px;display:flex;align-items:center;justify-content:center}
-.slots .s.empty{background:#101b27;color:var(--muted)}
-.facing{display:flex;gap:6px}
-.facing .btn{flex:1}
-.form-actions{display:flex;gap:8px;margin-top:auto}
-#hud-formation .legend{position:absolute;left:16px;top:16px;display:flex;gap:6px}
-
-#hud-battle .status{position:absolute;left:16px;top:12px;right:16px;height:40px;display:flex;align-items:center;gap:10px;padding:0 10px}
-#hud-battle .pause{margin-left:auto}
-.dock{position:absolute;left:16px;right:16px;bottom:12px;height:214px;display:flex;gap:10px;padding:10px;align-items:stretch}
-.roster{width:148px;display:flex;flex-direction:column;gap:6px}
-.portrait{width:32px;height:32px;border:2px solid var(--gold-frame);background:#142b35}
-.tray{flex:1;display:flex;align-items:flex-end;gap:8px}
-.card{width:132px;height:180px;border:2px solid var(--gold-frame);border-radius:4px;background:#151F2C;
-  position:relative;flex:0 0 132px;overflow:hidden;cursor:pointer}
-.card .art{position:absolute;top:5px;left:5px;right:5px;height:107px;background:#142b35;border:1px solid var(--stroke);
-  display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted)}
-.card .ttl{position:absolute;left:6px;right:6px;bottom:8px;height:42px;font-size:14px;text-align:center;color:#e8e6d9;
-  display:flex;align-items:flex-end;justify-content:center}
-.card .veil{position:absolute;left:0;right:0;bottom:0;height:46%;background:rgba(3,9,16,.74);border-top:1px solid var(--gold);
-  font:10px var(--mono);color:var(--gold);display:flex;align-items:flex-end;justify-content:center;padding-bottom:6px}
-.guide{width:196px;display:flex;flex-direction:column;gap:6px;justify-content:flex-end}
-.zoom{display:flex;gap:6px;align-items:center}
-.zoom .btn{width:44px;height:44px;padding:0}
-.dirs{font:12px var(--mono);color:var(--gold)}
-body[data-mode="card"] .card#c-move{height:187px;transform:translateY(-7px)}
-body[data-mode="card"] .dirs{display:block}
-body:not([data-mode="card"]) .dirs{display:none}
-body[data-mode="card"] .veil-demo{display:flex}
-.veil-demo{display:none}
-
-#hud-settle .ticket{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:520px;height:300px;
-  background:#d5ccb5;color:#2a2418;padding:20px}
-#hud-settle h2{font-size:18px;margin-bottom:10px}
-#hud-settle p{font-size:14px;line-height:1.65;word-break:keep-all}
-#hud-settle .actions{position:absolute;right:20px;bottom:20px;display:flex;gap:8px}
-#hud-settle .btn{background:#2a3548;color:var(--text)}
+:root{--bg:#0B111C;--panel:#141C2A;--raised:#1B2536;--stroke:#2A3548;--focus:#C9A227;--text:#E6EAF0;--muted:#9AA6B2;--line:#3D7EA6}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.65 "Apple SD Gothic Neo","Noto Sans KR",sans-serif;word-break:keep-all}
+header,main,footer{width:1280px;margin:auto}header{padding:20px 0 12px;border-bottom:1px solid var(--stroke)}
+h1{font-size:25px;margin:4px 0}h2{font-size:21px;margin:0 0 16px}h3{font-size:16px;margin:0 0 10px}p{margin:8px 0 14px}a{color:#8ebcdb}small,.muted{color:var(--muted)}
+nav,.actions{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}button,select{font:inherit;color:var(--text);background:var(--raised);border:1px solid var(--stroke);padding:8px 12px;border-radius:3px}
+button{cursor:pointer}button:disabled{opacity:.45;cursor:default}button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
+button[aria-current="true"],button[aria-pressed="true"]{border-color:var(--focus)}.primary{border-bottom:3px solid var(--line)}
+main{padding:24px 0}.columns{display:grid;grid-template-columns:1fr 1fr;gap:20px}.panel{background:var(--panel);border:1px solid var(--stroke);padding:20px}.battle-layout{display:grid;grid-template-columns:300px 1fr 360px;gap:16px}
+.roster button{display:block;width:100%;text-align:left;margin:8px 0}.roster small{display:block}.route{display:flex;justify-content:space-between;border-bottom:3px solid var(--line);padding:48px 20px}
+.kicker{font:12px ui-monospace,monospace;color:var(--focus);letter-spacing:.08em}.notice{border-left:3px solid var(--line);padding-left:14px;color:var(--muted)}
+dl{margin:0}dt{color:var(--muted);margin-top:12px}dd{margin:0}table{width:100%;border-collapse:collapse}th,td{padding:10px;text-align:left;border-bottom:1px solid var(--stroke)}
+#history{max-height:140px;overflow:auto;padding-left:24px}#order-current,#order-preview,#receipt-status{overflow-wrap:anywhere}footer{padding:12px 0 28px;color:var(--muted);font-size:13px}
+[hidden]{display:none}
 </style>
 </head>
-<body data-mode="hub">
-  <header class="chrome">
-    <h1>서울:전국 — 화면마다 다른 게임뷰, HUD는 그 위</h1>
-    <p>타이틀·거점·캠페인 맵·월드 맵·조우·전투는 같은 승강장을 딤 처리한 것이 아니다. 탭을 바꾸면 카메라가 보는 공간이 바뀐다. 진형과 전투만 같은 전장 월드를 공유한다.</p>
-    <div class="tabs" role="tablist">
-      <button type="button" data-mode="title">타이틀</button>
-      <button type="button" data-mode="hub" aria-current="true">거점</button>
-      <button type="button" data-mode="campaign">캠페인 맵</button>
-      <button type="button" data-mode="worldmap">월드 맵</button>
-      <button type="button" data-mode="encounter">조우</button>
-      <button type="button" data-mode="formation">진형</button>
-      <button type="button" data-mode="battle">전투</button>
-      <button type="button" data-mode="card">카드 선택</button>
-      <button type="button" data-mode="settle">정산</button>
-    </div>
-    <p class="note" id="note">거점 대합실. 게시판·잠자리·파티. 적 분대 없음.</p>
-  </header>
-  <div class="stage-wrap">
-    <div class="game" id="game">
-      <div class="world">
-        <div class="layer layer-title">
-          <div class="sky sky-void"></div>
-          <div class="folds"></div>
-          <div class="logo-ghost"></div>
-        </div>
-        <div class="layer layer-hub">
-          <div class="sky sky-hub"></div>
-          <div class="concourse">
-            <div class="p" style="left:18%"></div>
-            <div class="p" style="left:50%"></div>
-            <div class="p" style="left:82%"></div>
-            <div class="board"><span>영등포 B1 게시판</span><span>보급선 의뢰 · 신도림</span></div>
-            <div class="sleep"></div>
-          </div>
-          <div class="person" style="left:38%;bottom:14%"></div>
-          <div class="person" style="left:41%;bottom:13%"></div>
-          <div class="person" style="left:44%;bottom:14%"></div>
-        </div>
-        <div class="layer layer-campaign">
-          <div class="sky sky-map"></div>
-          <div class="cmap">
-            <svg viewBox="0 0 1120 560" aria-hidden="true">
-              <path d="M80 280 H1040" stroke="#33b254" stroke-width="10" fill="none"/>
-              <circle cx="180" cy="280" r="16" fill="#0b111c" stroke="#e6eaf0" stroke-width="4"/>
-              <circle cx="560" cy="280" r="16" fill="#0b111c" stroke="#e6eaf0" stroke-width="4"/>
-              <circle cx="940" cy="280" r="16" fill="#0b111c" stroke="#6b7684" stroke-width="3"/>
-              <text x="180" y="330" text-anchor="middle" fill="#e6eaf0" font-size="18">영등포</text>
-              <text x="560" y="330" text-anchor="middle" fill="#e6eaf0" font-size="18">신도림</text>
-              <text x="940" y="330" text-anchor="middle" fill="#9aa6b2" font-size="18">구로</text>
-            </svg>
-            <div class="token" style="left:154px;top:246px"></div>
-          </div>
-        </div>
-        <div class="layer layer-worldmap">
-          <div class="sky sky-map"></div>
-          <div class="wmap">
-            <svg viewBox="0 0 1160 640" aria-hidden="true">
-              <path d="M80 320 C 220 120, 420 80, 580 200 S 900 360, 1080 240" stroke="#3D7EA6" stroke-width="8" fill="none"/>
-              <path d="M140 480 C 360 500, 520 300, 760 420 S 980 520, 1100 400" stroke="#33b254" stroke-width="6" fill="none"/>
-              <path d="M300 80 V 560" stroke="#8B4A3A" stroke-width="4" fill="none" opacity=".7"/>
-              <circle cx="180" cy="300" r="10" fill="#c9a227"/>
-              <circle cx="420" cy="180" r="8" fill="#e6eaf0"/>
-              <circle cx="580" cy="210" r="8" fill="#e6eaf0"/>
-              <circle cx="760" cy="300" r="8" fill="#e6eaf0"/>
-              <circle cx="940" cy="250" r="8" fill="#9aa6b2"/>
-              <circle cx="360" cy="480" r="8" fill="#e6eaf0"/>
-              <circle cx="760" cy="420" r="8" fill="#e6eaf0"/>
-              <text x="180" y="340" fill="#c9a227" font-size="14">영등포</text>
-              <text x="560" y="190" fill="#9aa6b2" font-size="13">한강</text>
-              <text x="40" y="40" fill="#6b7684" font-size="12">서울 노선 개요 · 캠페인 3역이 아님</text>
-            </svg>
-          </div>
-        </div>
-        <div class="layer layer-encounter">
-          <div class="sky sky-enc"></div>
-          <div class="tunnel"></div>
-          <div class="rails"></div>
-          <div class="enc-ally"><i class="blob"></i><i class="blob"></i><i class="blob"></i></div>
-          <div class="enc-foe"><i class="blob"></i><i class="blob"></i></div>
-        </div>
-        <div class="layer layer-battle">
-          <div class="sky sky-battle"></div>
-          <div class="iso-stage">
-            <div class="platform"></div>
-            <div class="edge"></div>
-            <div class="pillar" style="left:210px;top:70px"></div>
-            <div class="pillar" style="left:520px;top:70px"></div>
-            <div class="pillar" style="left:210px;top:320px"></div>
-            <div class="pillar" style="left:520px;top:320px"></div>
-            <div class="bench" style="left:250px;top:200px"></div>
-            <div class="bench" style="left:430px;top:200px"></div>
-            <div class="squad ally sel" style="left:280px;top:250px"><i class="ring"></i><i class="fig"></i><i class="fig"></i><i class="fig lead"></i><i class="fig"></i><i class="fig"></i></div>
-            <div class="squad ally" style="left:210px;top:280px"><i class="ring"></i><i class="fig"></i><i class="fig"></i><i class="fig lead"></i><i class="fig"></i><i class="fig"></i></div>
-            <div class="squad ally" style="left:340px;top:300px"><i class="ring"></i><i class="fig"></i><i class="fig"></i><i class="fig lead"></i><i class="fig"></i><i class="fig"></i></div>
-            <div class="squad ally" style="left:250px;top:330px"><i class="ring"></i><i class="fig"></i><i class="fig"></i><i class="fig lead"></i><i class="fig"></i><i class="fig"></i></div>
-            <div class="squad ally" style="left:180px;top:310px"><i class="ring"></i><i class="fig"></i><i class="fig"></i><i class="fig lead"></i><i class="fig"></i><i class="fig"></i></div>
-            <div class="squad ally" style="left:320px;top:350px"><i class="ring"></i><i class="fig"></i><i class="fig"></i><i class="fig lead"></i><i class="fig"></i><i class="fig"></i></div>
-            <div class="squad foe" style="left:500px;top:140px"><i class="ring"></i><i class="fig"></i><i class="fig"></i><i class="fig lead"></i><i class="fig"></i><i class="fig"></i></div>
-            <div class="squad foe" style="left:560px;top:160px"><i class="ring"></i><i class="fig"></i><i class="fig"></i><i class="fig lead"></i><i class="fig"></i><i class="fig"></i></div>
-            <div class="squad foe" style="left:470px;top:180px"><i class="ring"></i><i class="fig"></i><i class="fig"></i><i class="fig lead"></i><i class="fig"></i><i class="fig"></i></div>
-            <div class="squad foe" style="left:540px;top:200px"><i class="ring"></i><i class="fig"></i><i class="fig"></i><i class="fig lead"></i><i class="fig"></i><i class="fig"></i></div>
-            <div class="squad foe" style="left:490px;top:220px"><i class="ring"></i><i class="fig"></i><i class="fig"></i><i class="fig lead"></i><i class="fig"></i><i class="fig"></i></div>
-            <div class="squad foe" style="left:580px;top:230px"><i class="ring"></i><i class="fig"></i><i class="fig"></i><i class="fig lead"></i><i class="fig"></i><i class="fig"></i></div>
-          </div>
-          <div class="sign" style="left:46%;top:34%">영등포 동측 승강장</div>
-        </div>
-      </div>
-
-      <div class="hud">
-        <div class="screen" id="hud-title">
-          <div class="stack">
-            <div class="mark glass">서울:전국</div>
-            <p class="sub">붕괴한 서울의 지하철망에서 노선의 질서를 세운다</p>
-            <button class="btn primary start" type="button">원정 시작</button>
-          </div>
-        </div>
-        <div class="screen" id="hud-hub">
-          <div class="glass rail">
-            <span class="chip now">거점 준비</span>
-            <span class="chip">원정</span>
-            <span class="chip">조우</span>
-            <span class="chip">해결</span>
-            <span class="chip">정산</span>
-            <span class="chip">복귀</span>
-          </div>
-          <aside class="glass route">
-            <button class="btn primary" type="button">출정</button>
-            <p class="label">임시 잠자리 · 영등포 대합실</p>
-          </aside>
-          <div class="party">
-            <div class="glass slot">탐험가</div>
-            <div class="glass slot">의무병</div>
-            <div class="glass slot">순찰대</div>
-          </div>
-        </div>
-        <div class="screen" id="hud-campaign">
-          <div class="glass rail">
-            <span class="chip">거점</span>
-            <span class="chip now">원정</span>
-            <span class="chip">조우</span>
-            <span class="label" style="margin-left:auto">경로 · 2호선 서부</span>
-          </div>
-          <div class="legend">
-            <span class="chip">현재 역</span>
-            <span class="chip">인접</span>
-            <span class="chip">잠김</span>
-          </div>
-        </div>
-        <div class="screen" id="hud-worldmap">
-          <div class="glass rail">
-            <span class="chip now">서울 개요</span>
-            <span class="label" style="margin-left:auto">16국 · 노선 세력</span>
-          </div>
-          <div class="legend">
-            <span class="chip">보유 거점</span>
-            <span class="chip">미접촉</span>
-          </div>
-        </div>
-        <div class="screen" id="hud-encounter">
-          <div class="glass sheet">
-            <h2>조우 선택</h2>
-            <button class="btn talk" type="button">교섭 · 자원 -5 / 평판 +3</button>
-            <button class="btn safe" type="button">우회 · 자원 -2 / 평판 -1</button>
-            <button class="btn fight" type="button">전투 · 실시간 분대 교전</button>
-          </div>
-        </div>
-        <div class="screen" id="hud-formation">
-          <div class="glass status">
-            <span>서울:전국 · 배치</span>
-            <span class="label">HP</span>
-            <div class="meter" style="width:72px"><i style="width:70%;background:#e66b60"></i></div>
-            <span class="label">사기</span>
-            <div class="meter" style="width:72px"><i style="width:60%;background:#73c770"></i></div>
-            <button class="btn pause" type="button" disabled>일시정지</button>
-          </div>
-          <aside class="glass inspect">
-            <h2>서윤 · 근위</h2>
-            <p class="label">방벽 01 · 전열 좌</p>
-            <p class="label">인스펙터. 주 동사 아님.</p>
-          </aside>
-          <div class="glass dock">
-            <div class="roster">
-              <span class="label">배치 중 서윤</span>
-              <div class="portrait"></div>
-              <div class="units" style="grid-template-columns:1fr;width:100%">
-                <div class="u sel">서윤</div>
-                <div class="u">민재</div>
-              </div>
-            </div>
-            <div class="tray" style="align-items:center;flex-wrap:wrap">
-              <div class="slots" style="width:340px">
-                <div class="s">서윤</div><div class="s">하린</div><div class="s">민재</div>
-                <div class="s empty">빈 슬롯</div><div class="s">도윤</div><div class="s empty">빈 슬롯</div>
-                <div class="s">지우</div><div class="s empty">빈 슬롯</div><div class="s">은호</div>
-              </div>
-              <div class="facing" style="width:200px">
-                <button class="btn" type="button">북</button>
-                <button class="btn" type="button">동</button>
-                <button class="btn" type="button">남</button>
-                <button class="btn" type="button">서</button>
-              </div>
-            </div>
-            <div class="guide">
-              <button class="btn primary" type="button">확정</button>
-              <button class="btn" type="button">취소</button>
-              <span class="label">하단이 주 동사. 전투 카드 독과 같은 슬롯.</span>
-            </div>
-          </div>
-        </div>
-        <div class="screen" id="hud-battle">
-          <div class="glass status">
-            <span>서울:전국 · 지휘관 카드 전투</span>
-            <span class="label">HP</span>
-            <div class="meter" style="width:72px"><i style="width:70%;background:#e66b60"></i></div>
-            <span class="label">사기</span>
-            <div class="meter" style="width:72px"><i style="width:60%;background:#73c770"></i></div>
-            <button class="btn pause" type="button">일시정지</button>
-          </div>
-          <div class="glass dock">
-            <div class="roster">
-              <span class="label">소유자 서윤</span>
-              <div class="portrait"></div>
-              <button class="btn" type="button">진형 배치</button>
-            </div>
-            <div class="tray">
-              <div class="card"><div class="art">아트 107</div><div class="ttl">방벽 수호</div></div>
-              <div class="card"><div class="art">아트 107</div><div class="ttl">사기 고무</div><div class="veil veil-demo">재충전 600</div></div>
-              <div class="card"><div class="art">아트 107</div><div class="ttl">협공 집중</div></div>
-              <div class="card" id="c-move"><div class="art">아트 107</div><div class="ttl">기동 재집결</div></div>
-            </div>
-            <div class="guide">
-              <span class="dirs">↑ N  → E  ↓ S  ← W</span>
-              <span class="label">카드 그림이 클릭 타깃</span>
-              <div class="zoom">
-                <button class="btn" type="button">−</button>
-                <span style="width:44px;text-align:center">100%</span>
-                <button class="btn" type="button">+</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="screen" id="hud-settle">
-          <div class="ticket">
-            <h2>정산</h2>
-            <p>부상은 다음 원정에 이어진다. 물자 −2, 평판 +1. 결과는 한 번만 반영한다.</p>
-            <div class="actions">
-              <button class="btn" type="button">정산 적용</button>
-              <button class="btn primary" type="button">복귀</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<body>
+<header>
+  <span class="kicker">TARGET UI / DESKTOP DOCUMENT DEMONSTRATOR / 2026-09-19</span>
+  <h1>서울:전국 — 목표 부대 지휘 문서 시연</h1>
+  <p>목표 정보구조와 상호작용을 확인하는 예시다. 게임·3D 카메라·전투 시뮬레이션 구현이 아니다.
+    <a href="./index.html#poc-history">2026-09-11 POC 역사와 구분</a> ·
+    <a href="https://seoul-dengoku.linalab.io/total-war-ui/wireframes.html">공식 Archify 와이어프레임</a> ·
+    <a href="../../GDD/system-design/total-war-ui/wireframes.html">저장소 와이어프레임</a></p>
+  <nav aria-label="목표 설계 화면">
+    <button type="button" data-screen="campaign" aria-current="true">캠페인</button>
+    <button type="button" data-screen="roster">파티 편성</button>
+    <button type="button" data-screen="encounter">조우</button>
+    <button type="button" data-screen="deployment">전장 배치</button>
+    <button type="button" data-screen="command">부대 지휘</button>
+    <button type="button" data-screen="exit">종료 확인</button>
+    <button type="button" data-screen="result">결과·다음 행선</button>
+  </nav>
+</header>
+<main>
+<section id="screen-campaign">
+  <h2>목표 — 현재 위치에서 원정을 잇는다</h2>
+  <div class="columns"><article class="panel"><h3>서울 역·노선 경로</h3>
+    <div class="route"><span>영등포 · 출발</span><strong>신도림 · 현재 예시</strong><span>구로 · 다음 구간</span></div>
+    <p class="notice">역 연결을 읽는 문서 표기다. 네 방향 타일 이동이나 실제 지형 렌더가 아니다.</p>
+    <p>무명 인물과 파티의 생업·관계·직위·후계를 유지한다. 지역에서 살아가는 판단이 전투에 앞선다.</p></article>
+    <article class="panel"><h3>다음 구간 판단</h3><dl><dt>통행·예상 소요</dt><dd>노선 정보와 출발 조건 확인</dd><dt>물자·부상·관계</dt><dd>동행 인물과 지원 역할 확인</dd></dl>
+      <button type="button" class="primary" data-screen="roster">동행 편성 확인</button><p id="campaign-feedback" aria-live="polite">문서 예시 · 수치와 정사 추가 없음</p></article></div>
+</section>
+<section id="screen-roster" hidden>
+  <h2>목표 — 인물과 병졸 분대를 분리한다</h2>
+  <div class="columns"><article class="panel"><h3>파티 인물</h3><p>임초원 · 영웅 지휘 인물 예시 / 병졸 수 제외</p>
+    <p>캠페인 인물의 생업·부상·지원 역할과 교전 참가 여부를 구분한다. 영웅은 별도 부대로 지휘하며 직접 액션으로 조작하지 않는다.</p>
+    <p class="notice">인물 표현 목표: 애니메이션풍 정비율. 이 문서의 이름 표기는 완성 초상이나 런타임 자산이 아니다.</p></article>
+    <article class="panel"><h3>전장 참가 구성 예시</h3><table><tr><th>단위</th><th>인원 표기</th></tr>
+      <tr><td>선로 경비조</td><td>병졸 8 / 20</td></tr><tr><td>측선 정찰조</td><td>병졸 5 / 20</td></tr></table>
+      <p>현재 인원은 공식 템플릿의 예시다. 병졸 한 분대 최대 20명 외에 영웅 수·전체 분대 수·군단 상한을 정하지 않는다.</p>
+      <button type="button" class="primary" data-screen="encounter">조우 대응 검토</button></article></div>
+</section>
+<section id="screen-encounter" hidden>
+  <h2>목표 — 조우 응답과 전투 진입을 구분한다</h2>
+  <div class="columns"><article class="panel"><h3>연결로 통행 조건 검토 · 상황 예시</h3><p>상대의 요구와 알려진 우회로를 읽는다. 현장 거래는 원정 결말인 교역과 다르다.</p>
+    <div class="actions"><button type="button" data-response="negotiate">교섭 예시</button><button type="button" data-response="bypass">우회 예시</button><button type="button" data-response="trade">현장 거래 예시</button></div>
+    <p id="response-state" aria-live="polite">응답을 선택하면 문서의 비전투 해결 예시를 확인한다.</p></article>
+    <article class="panel"><h3>전투 선택</h3><p>참가자·목표·지형·퇴로를 확인한 뒤 닫힌 전투 세션으로 분리한다.</p><button type="button" class="primary" data-screen="deployment">전투 배치 검토</button></article></div>
+</section>
+<section id="screen-deployment" hidden>
+  <h2>목표 — 전장 조건과 배치를 검토한다</h2>
+  <div class="columns"><article class="panel"><h3>닫힌 세션의 조건</h3><dl><dt>목표</dt><dd>연결로 통행 확보 · 문서 예시</dd><dt>퇴로</dt><dd>LegalFallback은 종료 확인에서 검토</dd><dt>참가자·지형</dt><dd>영웅과 병졸 분대 별도 배치 / 지형과 진형 방향 확인</dd></dl>
+    <p class="notice">전투 중 캠페인 세계를 다시 읽지 않는다. 3D 자유 지휘 카메라의 팬·오빗·줌은 질문 무응답 뒤 채택한 기본안이며 소유자 직접 결정이 아니다. 이 정보 패널은 실제 전장 렌더가 아니다.</p></article>
+    <article class="panel"><h3>배치 문서 상태</h3><label for="deployment-facing">진형 방향 예시</label>
+      <select id="deployment-facing"><option value="approach">통행로 정면</option><option value="cover">엄폐 방향</option></select>
+      <p>고정 격자나 네 방향 제한을 만들지 않는다. 위치와 방향의 세부 입력은 공식 설계 템플릿에서 검토한다.</p>
+      <div class="actions"><button type="button" id="deployment-confirm" class="primary">배치 확인 · 지휘 시연</button><button type="button" id="deployment-cancel">배치 취소</button></div>
+      <p id="deployment-state" aria-live="polite">배치 미리보기 · 미확정</p></article></div>
+</section>
+<section id="screen-command" hidden>
+  <h2>목표 — 선택 부대의 현재 지시를 교체한다</h2>
+  <p class="notice">파티의 닫힌 전투만 일시정지·재개하는 설계 기본안이다. 공유 캠페인과 다른 파티는 계속된다.
+    정지 중에도 미리보기·확인·취소를 허용한다. 재개 뒤 다음 단계 적용은 이 문서의 상태 전이로만 시연한다.</p>
+  <div class="battle-layout">
+    <aside class="panel roster"><h3>별도 전장 단위 · 예시</h3>
+      <button type="button" data-unit="hero" data-actor-kind="hero">임초원 · 영웅<small>병졸 수 제외</small></button>
+      <button type="button" data-unit="guard" data-actor-kind="soldier-squad" data-soldiers="8">선로 경비조<small>병졸 8 / 20</small></button>
+      <button type="button" data-unit="scout" data-actor-kind="soldier-squad" data-soldiers="5">측선 정찰조<small>병졸 5 / 20</small></button>
+      <button type="button" id="selection-clear">선택 해제</button><p class="muted">영웅 직접 액션·카드 자원·드로우·재충전 없음</p></aside>
+    <article class="panel"><h3 id="selected-name">선택된 부대 없음</h3><p id="order-current">현재 지시 없음</p>
+      <div class="actions"><button type="button" data-command="move" disabled>이동</button><button type="button" data-command="attack" disabled>공격</button><button type="button" data-command="face" disabled>진형 방향</button><button type="button" data-command="stop" disabled>정지</button></div>
+      <label for="order-target">문서 미리보기 대상</label><select id="order-target" disabled></select>
+      <p id="order-preview" aria-live="polite">미리보기 없음</p>
+      <div class="actions"><button type="button" id="order-cancel" disabled>취소 · 기존 지시 유지</button><button type="button" id="order-confirm" class="primary" disabled>명령 교체 확인</button></div>
+      <p class="muted">확인한 명령만 수락 기록에 남긴다. 새 확정은 기존 지시를 교체한다. 명령 큐·웨이포인트·감속·배속 없음.</p></article>
+    <aside class="panel"><h3>문서 시연 상태</h3><button type="button" id="pause" aria-pressed="false">이 파티 전투 일시정지</button>
+      <p id="simulation-state" aria-live="polite">문서 단계 진행</p><p id="pending-state">재개 대기 없음</p>
+      <h3>수락 기록</h3><ol id="history"></ol><button type="button" data-screen="exit">철수·항복 검토</button></aside>
   </div>
+</section>
+<section id="screen-exit" hidden>
+  <h2>목표 — 종료 선택을 확인한다</h2>
+  <div class="columns"><article class="panel"><h3>질서 철수와 자발적 항복</h3>
+    <label><input type="checkbox" id="fallback-blocked" /> 문서 예시: LegalFallback 봉쇄</label>
+    <div class="actions"><button type="button" id="withdraw">질서 철수 확인</button><button type="button" id="surrender">항복 제안</button></div>
+    <p id="exit-status" aria-live="polite">퇴로 개방 예시 · 항복은 상대 수락이 필요하다.</p>
+    <button type="button" id="surrender-accept" hidden>문서 예시: 상대 수락 확인</button>
+    <button type="button" id="exit-cancel">취소 · 전투 상태 유지</button></article>
+    <article class="panel"><h3>결과 유형 검토 · 자동 판정 아님</h3><p>패주는 사기 붕괴에 따른 비자발 이탈이며 철수 명령이 아니다.
+      포획은 인물별 신병 결과이지 항복·패배·패주의 동의어가 아니다. 확률·임계값은 추가하지 않는다.</p>
+      <div class="actions"><button type="button" data-outcome="victory">승리 결과 예시</button><button type="button" data-outcome="defeat">패배 결과 예시</button><button type="button" data-outcome="rout">비자발 패주 결과 예시</button></div></article></div>
+</section>
+<section id="screen-result" hidden>
+  <h2>목표 — 결과 영수증과 다음 행선을 분리한다</h2>
+  <div class="columns"><article class="panel"><h3 id="outcome">종료 결과 없음</h3><p>ResultId: <code id="result-id">미발급</code></p>
+    <p>부상·물자·관계·위치 변화와 인물별 신병을 종료 유형과 별도로 확인한다. 이 시연은 밸런스 수치나 포획 결과를 생성하지 않는다.</p>
+    <button type="button" id="result-apply" class="primary" disabled>결과 한 번 반영</button><p id="receipt-status" aria-live="polite">아직 반영하지 않음</p></article>
+    <article class="panel"><h3>다음 행선</h3><button type="button" id="continue" class="primary" disabled>원정 계속 · 현재 위치의 경로로</button>
+      <p>결과 반영은 귀환 명령이 아니다. 다음은 서로 다른 원정 결말이다.</p>
+      <div class="actions"><button type="button" data-ending="return" disabled>귀환</button><button type="button" data-ending="settle" disabled>정착</button><button type="button" data-ending="conquer" disabled>정복</button><button type="button" data-ending="wander" disabled>방랑</button><button type="button" data-ending="trade" disabled>교역</button></div>
+      <p id="ending-state" aria-live="polite">결과 반영 뒤 선택 가능</p></article></div>
+</section>
+</main>
+<footer>목표 설계 시연만 제공한다. <a href="./index.html#poc-history">카드·격자·사이드스크롤·SD는 과거 POC 기록</a>이며 Unity·Oddland·이미지 원본은 변경하지 않았다.</footer>
 <script>
-const notes = {
-  title: "타이틀 카메라. void + 노선 폴드. 승강장·분대 없음.",
-  hub: "거점 대합실. 게시판·잠자리·파티. 적 분대 없음.",
-  campaign: "캠페인 맵. 2호선 3역 경로. 파티 토큰. 전투 승강장이 아님.",
-  worldmap: "월드 맵. 서울 노선 개요. 캠페인 3역 레일과 다름.",
-  encounter: "조우 터널. 마주친 무리. 6v6 교전 전장 아님.",
-  formation: "전장 월드 공유. 상단 미터·하단 독(3×3). 우측은 인스펙터만. 전투와 같은 슬롯.",
-  battle: "같은 전장 월드. HUD는 상단 미터·하단 카드 독. 칸 클릭 보드 없음.",
-  card: "같은 전장. 선택 카드 +7px. 월드는 그대로.",
-  settle: "거점 대합실로 돌아온 위 정산 티켓."
+const $ = (id) => document.getElementById(id);
+const units = {
+  hero: {name:'임초원 · 영웅 / 병졸 수 제외', order:{command:'hold', target:'central'}},
+  guard: {name:'선로 경비조 · 병졸 8 / 20', order:{command:'hold', target:'line'}},
+  scout: {name:'측선 정찰조 · 병졸 5 / 20', order:{command:'hold', target:'cover'}}
 };
-document.querySelectorAll(".tabs button").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const mode = btn.getAttribute("data-mode");
-    document.body.setAttribute("data-mode", mode);
-    document.querySelectorAll(".tabs button").forEach((b) => b.removeAttribute("aria-current"));
-    btn.setAttribute("aria-current", "true");
-    document.getElementById("note").textContent = notes[mode] || "";
-  });
+const labels = {hold:'유지',move:'이동',attack:'공격',face:'진형 방향',stop:'정지',central:'중앙 지휘',line:'차단선',cover:'엄폐 방향',passage:'통행로',enemy:'상대 전열',support:'상대 지원대',approach:'통행로 정면',current:'현재 위치'};
+const outcomes = {victory:'승리',defeat:'패배',rout:'비자발 패주',withdrawal:'질서 철수',surrender:'수락된 항복',noncombat:'비전투 해결'};
+const targets = {move:['passage','cover'],attack:['enemy','support'],face:['approach','cover'],stop:['current']};
+let selected=null, preview=null, paused=false, terminal=false, result=null, receipt=null, resultSequence=0;
+let deployment='approach';
+const accepted=[], pending=new Map(), receipts=new Map();
+function show(screen){
+  document.querySelectorAll('main > section').forEach(el=>{el.hidden=el.id!==`screen-${screen}`;});
+  document.querySelectorAll('nav [data-screen]').forEach(el=>{el.setAttribute('aria-current',String(el.dataset.screen===screen));});
+}
+function describe(order){return `${labels[order.command]} · ${labels[order.target]}`;}
+function render(){
+  $('selected-name').textContent=selected?units[selected].name:'선택된 부대 없음';
+  $('order-current').textContent=selected?`현재 지시: ${describe(units[selected].order)}`:'현재 지시 없음';
+  $('order-current').dataset.command=selected?units[selected].order.command:'';
+  document.querySelectorAll('button[data-unit]').forEach(el=>{el.setAttribute('aria-pressed',String(el.dataset.unit===selected));});
+  document.querySelectorAll('button[data-command]').forEach(el=>{el.disabled=!selected||terminal;});
+  $('order-confirm').disabled=!preview||terminal; $('order-cancel').disabled=!preview;
+  $('order-target').disabled=!preview||terminal;
+  $('order-preview').textContent=preview?`미리보기: ${describe(preview)} · 현재 지시는 확인 전 유지`:'미리보기 없음';
+  $('pause').disabled=terminal; $('pause').setAttribute('aria-pressed',String(paused));
+  $('pause').textContent=paused?'이 파티 전투 재개':'이 파티 전투 일시정지';
+  $('simulation-state').textContent=terminal?'문서 전투 종료':paused?'문서 단계 정지 · 공유 캠페인은 계속':'문서 단계 진행';
+  $('pending-state').textContent=pending.size?`재개 뒤 다음 문서 단계 적용: ${[...pending.keys()].map(id=>units[id].name).join(', ')}`:'재개 대기 없음';
+  $('withdraw').disabled=terminal||$('fallback-blocked').checked;
+  $('surrender').disabled=terminal;
+  document.querySelectorAll('[data-outcome],[data-response]').forEach(el=>{el.disabled=terminal;});
+  $('deployment-confirm').disabled=terminal;
+  $('outcome').textContent=result?`${outcomes[result.outcome]} · 문서 결과`:'종료 결과 없음';
+  $('result-id').textContent=result?result.id:'미발급';
+  $('result-apply').disabled=!result;
+  $('continue').disabled=!receipt;
+  document.querySelectorAll('[data-ending]').forEach(el=>{el.disabled=!receipt;});
+}
+function finish(outcome){
+  if(terminal)return;
+  terminal=true; preview=null; pending.clear();
+  result=Object.freeze({id:`MOODBOARD-EXAMPLE-${++resultSequence}`,outcome});
+  $('surrender-accept').hidden=true; render(); show('result');
+}
+document.querySelectorAll('[data-screen]').forEach(el=>{el.addEventListener('click',()=>show(el.dataset.screen));});
+document.querySelectorAll('button[data-unit]').forEach(el=>{el.addEventListener('click',()=>{selected=el.dataset.unit;preview=null;render();});});
+$('selection-clear').addEventListener('click',()=>{selected=null;preview=null;render();});
+document.querySelectorAll('button[data-command]').forEach(el=>{el.addEventListener('click',()=>{
+  const command=el.dataset.command;
+  $('order-target').replaceChildren(...targets[command].map(target=>new Option(labels[target],target)));
+  preview={command,target:targets[command][0]}; render();
+});});
+$('order-target').addEventListener('change',()=>{preview={...preview,target:$('order-target').value};render();});
+$('order-cancel').addEventListener('click',()=>{preview=null;render();});
+$('order-confirm').addEventListener('click',()=>{
+  const order=Object.freeze({...preview});
+  const entry=Object.freeze({sequence:accepted.length+1,unit:selected,...order});accepted.push(entry);
+  const li=document.createElement('li');li.dataset.sequence=entry.sequence;li.dataset.unit=selected;li.dataset.command=order.command;
+  li.textContent=`${entry.sequence}. ${units[selected].name} → ${describe(order)}`;$('history').append(li);
+  if(paused)pending.set(selected,entry);else units[selected].order=order;
+  preview=null;render();
 });
+$('pause').addEventListener('click',()=>{
+  paused=!paused;
+  if(!paused){
+    [...pending.values()].sort((a,b)=>a.sequence-b.sequence).forEach(entry=>{units[entry.unit].order={command:entry.command,target:entry.target};});
+    pending.clear();
+  }
+  render();
+});
+$('deployment-confirm').addEventListener('click',()=>{deployment=$('deployment-facing').value;$('deployment-state').textContent=`배치 확인: ${labels[deployment]} · 문서 상태`;show('command');});
+$('deployment-cancel').addEventListener('click',()=>{$('deployment-facing').value=deployment;$('deployment-state').textContent='배치 취소 · 기존 확정 방향 유지';});
+$('fallback-blocked').addEventListener('change',()=>{$('exit-status').textContent=$('fallback-blocked').checked?'LegalFallback 봉쇄 · 질서 철수 불가, 항복 제안은 가능':'퇴로 개방 예시 · 항복은 상대 수락 필요';render();});
+$('withdraw').addEventListener('click',()=>finish('withdrawal'));
+$('surrender').addEventListener('click',()=>{$('surrender-accept').hidden=false;$('exit-status').textContent='항복 제안 중 · 상대 수락 전 전투 종료 아님';});
+$('surrender-accept').addEventListener('click',()=>finish('surrender'));
+$('exit-cancel').addEventListener('click',()=>{$('surrender-accept').hidden=true;$('exit-status').textContent='종료 검토 취소 · 기존 전투 상태 유지';show('command');});
+document.querySelectorAll('[data-outcome]').forEach(el=>{el.addEventListener('click',()=>finish(el.dataset.outcome));});
+document.querySelectorAll('[data-response]').forEach(el=>{el.addEventListener('click',()=>{$('response-state').textContent='선택한 비전투 해결의 결과 예시 · 게임 판정 아님';finish('noncombat');});});
+$('result-apply').addEventListener('click',()=>{
+  const duplicate=receipts.has(result.id);
+  if(!duplicate)receipts.set(result.id,Object.freeze({resultId:result.id,outcome:result.outcome}));
+  receipt=receipts.get(result.id);
+  $('receipt-status').dataset.appliedCount=receipts.size;
+  $('receipt-status').textContent=duplicate?'기존 영수증 확인 · 같은 ResultId 재반영 없음':'문서 영수증 반영 완료 · 게임 세계 변경 아님';
+  render();
+});
+$('continue').addEventListener('click',()=>{$('campaign-feedback').textContent='원정 계속 선택 · 현재 위치 유지 · 결과 영수증 보존';show('campaign');});
+document.querySelectorAll('[data-ending]').forEach(el=>{el.addEventListener('click',()=>{$('ending-state').dataset.ending=el.dataset.ending;$('ending-state').textContent=`원정 결말 검토: ${el.textContent} · 게임 실행 아님`;});});
+render();
 </script>
 </body>
 </html>

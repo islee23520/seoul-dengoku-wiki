@@ -235,13 +235,17 @@ export function verifyStore({ dbPath }) {
 
 export function listMarkdownFiles(rootDir) {
   const out = [];
+  const excludedDirectories = new Set(['node_modules', 'dist', 'coverage']);
   function walk(dir, prefix) {
     for (const name of readdirSync(dir).sort()) {
       if (name.startsWith('.')) continue;
       const rel = prefix ? `${prefix}/${name}` : name;
       const full = join(dir, name);
       const st = statSync(full);
-      if (st.isDirectory()) walk(full, rel);
+      if (st.isDirectory()) {
+        if (excludedDirectories.has(name)) continue;
+        walk(full, rel);
+      }
       else if (name.endsWith('.md')) out.push(rel);
     }
   }
@@ -285,7 +289,7 @@ export function ingestCanonDir({ dbPath, canonRoot, pathPrefix = 'LORE', canonDo
   );
   let fileCount = 0;
   for (const { root, prefix, exclude = () => false } of domains) {
-  for (const rel of listMarkdownFiles(root).filter((candidate) => !exclude(candidate))) {
+  for (const rel of listMarkdownFiles(root).filter((candidate) => candidate !== 'AGENTS.md' && !candidate.endsWith('/AGENTS.md') && !exclude(candidate))) {
     fileCount += 1;
     const sourcePath = `${prefix}/${rel}`;
     ensureSource(db, sourcePath);

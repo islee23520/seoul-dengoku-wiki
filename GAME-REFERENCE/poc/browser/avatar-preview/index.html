@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Pilgrimage 방식의 방향별 픽셀 아바타를 적용한 서울:전국 로컬 검토용 POC"
+      content="2026-09-07 카드·픽셀 아바타 역사 POC와 현재 부대 지휘 목표를 구분하는 로컬 검토 표면"
     />
-    <title>서울:전국 · 지휘관 카드 전투</title>
+    <title>서울:전국 · 역사 지휘관 카드·아바타 POC</title>
     <link rel="stylesheet" href="../formation-editor/styles.css?v=windows-html-poc-20260909" />
     <link rel="stylesheet" href="../battle-preview/styles.css?v=windows-html-poc-20260909" />
     <link rel="stylesheet" href="./styles.css?v=portrait-card-20260909" />
@@ -31,10 +31,15 @@
         </div>
       </header>
 
+      <section class="reference-boundary" aria-labelledby="target-boundary-title">
+        <div class="history-status"><strong>2026-09-07 역사 POC</strong><span>아래 카드 소유자 슬롯·재사용 대기·48+12 표현·Pilgrimage 픽셀 atlas는 당시 로컬 검토 기록이며 목표 아트나 현재 전투가 아닙니다.</span></div>
+        <div class="target-status"><p class="section-kicker">CURRENT TARGET · DOCUMENTATION ONLY</p><h2 id="target-boundary-title">현재 목표: 카드가 아닌 부대 명령</h2><p>부대 선택·이동·공격·진형 방향·정지·철수 확인을 설계합니다. 이름 있는 영웅은 병졸 수에서 제외되는 별도 지휘 인물이고 병졸 분대는 최대 20명입니다. 영웅 직접 액션·카드·격자·강제 귀환은 없습니다.</p><div><a href="../../../../GDD/system-design/total-war-ui/index.html">현재 목표 설계</a><a href="../../../../GDD/system-design/total-war-ui/wireframes.html">Archify 와이어프레임</a></div></div>
+      </section>
+
       <main class="workspace avatar-workspace">
         <section class="control-section commander-card-section" aria-labelledby="commander-card-title">
           <div class="section-title-row">
-            <h3 id="commander-card-title">지휘관 카드</h3>
+            <h3 id="commander-card-title">역사 POC 지휘관 카드</h3>
             <span class="card-owner-identity">
               <canvas id="card-owner-portrait" width="64" height="64" aria-hidden="true"></canvas>
               <span id="card-owner"></span>

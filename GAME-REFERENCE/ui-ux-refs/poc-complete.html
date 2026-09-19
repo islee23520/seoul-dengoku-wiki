@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko"><head><meta charset="utf-8"><title>서울:전국 — POC 예상 화면 (10면)</title>
+<html lang="ko"><head><meta charset="utf-8"><title>서울:전국 — 목표 합성 목업과 역사 POC</title>
 <style>
 :root{--void:#101719;--panel:#182326;--panel2:#1d2a2e;--face:#26363A;--frame:#657579;--edge-l:#AAB7B3;--edge-d:#080E10;--text:#E8E5D8;--muted:#AFB8B4;--ticket:#D5CCB5;--tink:#182326;--rA:#63B7AF;--rB:#D7AF58;--rC:#9CAAC4;--focus:#D5EDC3;--warn:#F0BA58;--danger:#E66C62}
 *{box-sizing:border-box;margin:0}body{background:#05080a;color:var(--text);font-family:"Noto Sans KR","Malgun Gothic",sans-serif;font-size:16px}
@@ -73,7 +73,31 @@ h2.sec::before{content:"";width:4px;height:22px;background:var(--rA)}
 .src-tag{display:inline-block;font-size:10px;padding:1px 5px;border:1px solid;margin:1px;font-weight:600;white-space:nowrap}
 footer{color:#5c6a66;font-size:12px;margin-top:40px;border-top:1px solid rgba(101,117,121,.3);padding-top:14px}
 </style></head><body><div class="wrap">
-<header class="masthead"><h1>서울:전국 — POC 예상 화면</h1>
+<header class="masthead" id="target-composite"><h1>서울:전국 — 부대 지휘 목표 합성 목업</h1>
+<div class="sub">2026-09-19 결정 11 기준 · 정적 설계 문서 · 새 전투 구현이나 실제 렌더가 아니다</div>
+<p style="margin-top:14px;line-height:1.7">인물 중심 캠페인 → 출격 편성 → 원정 경로·여행 → 조우 → 전장 배치 → 부대 지휘 → 결과 확인 → 다음 행선. 아래 목표 요약과 접힌 2026-09-06 역사 원안을 구분한다. 원안의 수치와 초상은 보존 자료이며 현재 밸런스·미술 승인이 아니다.</p>
+<p style="margin-top:12px"><a style="color:var(--rA)" href="/total-war-ui/">현재 Archify 목표 UI</a> · <a style="color:var(--rA)" href="/total-war-ui/ux-flow.html">UX 상태 전이</a> · <a style="color:var(--rA)" href="/total-war-ui/wireframes.html">데스크톱 와이어프레임</a> · <a style="color:var(--rA)" href="index.html">레퍼런스 색인</a></p>
+</header>
+<section class="shell" id="target-command" style="padding:24px;line-height:1.8;margin-bottom:20px" aria-labelledby="target-command-title">
+<h2 id="target-command-title">목표 편성·배치·부대 지휘</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:16px">
+<div><h3>영웅 · 별도 지휘 인물</h3><p>이름·관계·직위·부상 상태를 읽는다. 영웅은 병졸 수에서 제외하며 직접 이동·공격·회피를 연속 조작하는 액션이 아니다.</p><h3 style="margin-top:16px">병졸 분대 · 분대별 최대 20명</h3><p>분대 인원·진형·현재 지시를 따로 읽는다. 영웅 수·전체 분대 수·군단 상한은 정하지 않는다.</p></div>
+<div><h3>선택 → 미리보기 → 확인 / 취소</h3><p>부대 선택 뒤 이동·공격·진형 방향·정지를 검토한다. 확인한 지시만 수락 기록에 남고 선택 부대의 현재 지시를 교체한다. 취소하면 기존 지시를 유지한다.</p><p>카드·덱·드로우·재충전, AP·턴·고정 격자, 명령 큐·웨이포인트·감속·배속은 현재 목표가 아니다.</p></div>
+</div>
+<p style="margin-top:16px">목표 미술은 애니메이션풍 정비율이다. 전략맵 목표는 서울 전역 3D 하이트맵이며 역·노선 연결을 유지한다. 전투의 3D 자유 지휘(팬·오빗·줌)와 일시정지는 질문 무응답 뒤 채택한 기본안이다. 탑다운 도식은 문서용 청사진이다.</p>
+<p>일시정지는 이 파티의 닫힌 전투만 멈춘다. 정지 중에도 미리보기·확인·취소를 허용한다. 확인 지시는 결정론적 수락 순서에 남고 재개 뒤 다음 시뮬레이션 단계에 적용한다. 같은 부대에 다시 확인한 지시는 이전 지시를 교체한다. 공유 캠페인과 다른 파티는 계속된다.</p>
+</section>
+<section class="shell" id="target-result" style="padding:24px;line-height:1.8;margin-bottom:24px" aria-labelledby="target-result-title">
+<h2 id="target-result-title">목표 결과 확인 · 정확히 한 번 반영 · 원정 계속</h2>
+<p style="margin-top:12px">닫힌 전투의 결과를 ResultId별 한 번만 반영한다. 같은 ID를 다시 확인해도 세계 변화는 중복 적용하지 않는다. 영웅 상태와 병졸 분대 피해를 합산 표기로 섞지 않는다.</p>
+<p>질서 있는 철수는 LegalFallback을 확인하는 명령이다. 패주는 사기 붕괴에 따른 비자발 이탈이며 항복은 자발 선택이다. 퇴로가 막혀도 항복을 지우지 않는다. 포획은 종료 유형과 별도의 인물 신병 결과다.</p>
+<div class="ticket" style="margin-top:16px"><h3>다음 행선: 원정 계속</h3><p>결과 반영은 귀환 명령이 아니다. 현재 위치에서 다음 구간을 검토한다.</p><p>별개 결말 선택: 귀환 · 정착 · 정복 · 방랑 · 교역</p></div>
+<p style="margin-top:12px">이 면은 규칙을 설명하는 정적 목업이다. 적용·명령 버튼을 실행하는 게임이 아니며, 상태 전이 예시는 위 Archify 목표 UI에서 확인한다.</p>
+</section>
+<details id="historical-poc">
+<summary style="padding:20px;border:2px solid var(--warn);cursor:pointer;color:var(--warn);font-size:20px">역사 POC 원안 펼치기 · 2026-09-06 · 격자·AP·강제 복귀는 현재 목표 아님</summary>
+<p style="padding:16px;line-height:1.7">이하 전체는 역사 원안이다. 2D 전용 전략맵, 아이소·5×5·AP 전투, 개인 배치 상한, 복귀 전용 정산 및 모든 수치는 폐기 또는 미승인 POC 기록으로만 읽는다. 초상·이미지는 원본을 보존하며 현재 미술 목표를 증명하지 않는다.</p>
+<header class="masthead"><h2>역사 POC — 2026-09-06 예상 화면</h2>
 <div class="sub">3-표면 구조: S 전략 노선도(2D 평면) · W 역간 여행(연결도) · B 전투(하이트맵 아이소) + N 비지도 관리면 · 2026-09-06 · 모든 조사 통합</div>
 <div style="margin-top:8px"><span class="tag up">장르 문법: genre-map-structure.md</span><span class="tag">비상운영판: iig-grammar 13규칙</span><span class="tag">인물·선택: CK3</span><span class="tag">지형·부상: BB</span><span class="tag" style="border-color:var(--rB);color:var(--rB)">시작 프리셋: K 결핍축 + BB 기원</span><span class="tag" style="border-color:var(--danger);color:var(--danger)">부상 이행: BB 영구부상</span><span class="tag d">플레이러블 아님 — 정적 예상안</span></div>
 <div style="margin-top:6px;font-size:12px;color:var(--muted)">합성 지도: <b style="color:var(--rA)">game-logic-synthesis.html</b> 참조 — 13게임 차용 요소 매핑</div></header>
@@ -365,4 +389,5 @@ footer{color:#5c6a66;font-size:12px;margin-top:40px;border-top:1px solid rgba(10
 </section>
 
 <footer>서울:전국 POC 예상 — 2026-09-06 · 근거: genre-map-structure.md (S/W/B 3표면·전환 계약) · iig-grammar (비상운영판 13규칙) · ck3-ui-reference (인물·선택 투명성) · bb-ui-reference (지형 비용·부상 이행·로스터) · FE/FFT REPORT (범위·예상·순서) · 플레이러블 아님</footer>
+</details>
 </div></body></html>

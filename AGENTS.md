@@ -5,7 +5,7 @@
 **Branch:** main
 
 ## OVERVIEW
-Character-centered grand-strategy 4X RPG set in post-collapse Seoul's subway network. Unity 6000.7.0a5 runs the game; Node/Python tooling validates documentation, architecture, assets and captures, while Backend hosts a .NET 8 ASP.NET Core host-session coordinator.
+Character-centered grand-strategy 4X RPG set in post-collapse Seoul's subway network. Product target combat (Intent decision 11, 2026-09-19) is Total War-style unit command with anime natural proportions. Current Unity remains an Oddland/card-combat POC and is not the new game. Unity 6000.7.0a5 runs the game; Node/Python tooling validates documentation, architecture, assets and captures, while Backend hosts a .NET 8 ASP.NET Core host-session coordinator.
 
 ## STRUCTURE
 ```text
@@ -38,6 +38,7 @@ seoul-kenshi/
 | Task | Location | Notes |
 |------|----------|-------|
 | Design entry and navigation | `GDD/Home.md`, `GAME-LOGIC/_Sidebar.md` | Sidebar lives in GAME-LOGIC, not GDD |
+| Target unit-command UI (docs) | `GDD/system-design/total-war-ui/`, `Design.md` §0 | Documentation templates only; not a runtime claim |
 | Architecture and rollout | `GAME-LOGIC/Unity-Architecture.md`, `GAME-LOGIC/Unity-System-Design.md`, `GAME-LOGIC/Unity-Architecture-Implementation-Plan.md` | System-design doc lives in GAME-LOGIC |
 | Save and randomness contracts | `GAME-LOGIC/Save-and-Determinism.md` | Versioning, event records, separated RNG streams |
 | World canon edits | `LORE/AGENTS.md` | Only `World-Narrative-Atlas.md` is hand-edited; other LORE root .md are generated projections |
@@ -100,7 +101,16 @@ Writer-digest LSP/ast-grep findings plus retained root symbols; C# LSP coverage 
 - Do not silently recover unsupported/corrupt saves: the documented save contract requires explicit errors.
 - Do not substitute a backend when TRELLIS is unavailable; its designated execution host is separate from this macOS checkout.
 - Unity execution is batchmode-only in a background session, one Editor per `GAME` path: no GUI, Test Runner, manual Play or unicli. Author serialized assets with Unity APIs/SerializedObject, not hand-edited YAML.
-- Do not invent undecided numbers or content, and do not treat design pages as shipped implementation.
+- Do not invent undecided numbers or content, and do not treat design pages as shipped implementation. Decision 11 does not implement the new combat; Oddland/Unity/POC stay untouched in this docs lane.
+
+## 텍스트 정합성 우선과 웹 검증 범위
+
+- 이 저장소의 텍스트 변경은 문서·규칙·파생물 사이의 논리 정합성을 최우선으로 검증한다.
+- 웹사이트의 멀티 플랫폼 지원 기능(반응형·모바일, 브라우저·운영체제별 대응)은 구현하거나 테스트하지 않는다.
+- 웹 문서 산출물은 대표 데스크톱 표면에서 내용, 핵심 상호작용과 가독성만 확인한다. 플랫폼별 지원을 완료 조건이나 증거로 삼지 않는다.
+- 플랫폼별 구현·QA 때문에 정본 문구나 게임 규칙 개정을 늦추거나 범위를 넓히지 않는다.
+
+- After the unanswered camera/pause questions timed out, the adopted design defaults are a 3D free-command camera (pan/orbit/zoom, no invented angles/FOV) and orders while paused inside this party-closed battle only. Do not treat those defaults as owner-explicit decisions. Do not pause the shared campaign world or other parties. Do not add slow/speed/queue. Top-down battle schematics are documentation blueprints, not rendered game captures.
 - Do not turn region surface adjacency into movement edges, merge same-name facilities, or advance later narrative events to opening day. Geometry-only validation is intermediate.
 - Do not author the deliberately unwritten LORE projections (M007, B017, B020): the `미저작` exclusion gate (`confirmed-integration-manifest.json`) rejects merges with `E_EXCLUDED_ID`.
 - Do not hand-edit generated layers: LORE root projections (except `World-Narrative-Atlas.md`), `GDD/design-store/`, `GAME-LOGIC/site` mirrors, `store/` captures.
@@ -108,8 +118,8 @@ Writer-digest LSP/ast-grep findings plus retained root symbols; C# LSP coverage 
 - On the remote Windows ComfyUI host, do not bypass PNGAL's loopback-only policy (`--listen`/netsh portproxy) or add watchdog/auto-restart machinery. Tailnet access uses `tailscale serve`, and service start/stop stays manual.
 
 ## UNIQUE STYLES
-- The strategy screen is a 3D heightmap map of all Seoul with a perspective free-pan/zoom camera; the battle screen is a left/right side-scroll view (Intent decision 10, 2026-09-18).
-- The serialized genre contract keeps `combatResolution: realtime-formation-card`; isometric angles, four-direction grid, tile, and SD silhouette keys are retired (`GenreContractTests` enforces absence).
+- The strategy screen is a 3D heightmap map of all Seoul with a perspective free-pan/zoom camera (Intent decision 10, 2026-09-18). Target combat is unit/formation command (decision 11, 2026-09-19). The current battle screen's left/right side-scroll is POC presentation. The target battle camera is a 3D free-command default adopted after the unanswered question timed out, not an owner-explicit decision.
+- The serialized Unity genre contract still keeps `combatResolution: realtime-formation-card` as current POC. Target combat is not card economy or direct hero action. Isometric angles, four-direction grid, tile, and SD silhouette keys are retired (`GenreContractTests` enforces absence).
 - Enabled scene order is Bootstrap -> MainTitle -> Foundation; Bootstrap owns app DI and content screens use exclusive child scopes.
 - Runtime screens use uGUI builders/presenters; retained UXML/USS is not automatically the current surface. Data projects ScriptableObjects into validated Core catalogs and canonical fingerprints.
 - Distinguish the 334-station movement graph, Area 1 three-station content catalog and 427-dong authored atlas. `GAME-REFERENCE/poc-diegetic/DIRECTION.md` is a candidate, not an approved UI mandate.
@@ -145,7 +155,7 @@ dotnet run --project Backend/server/Coordinator/SeoulKenshi.Coordinator.csproj -
 - Region atlas verify currently fails on every region: all 427 `canon_refs` in `LORE/regions/content/*.json` still point at pre-reorg `docs/game-logic/…` paths; rewrite to `LORE/…` to restore. `LORE/regions/README.md` command block and two of its links are stale the same way.
 - Atlas rebuild needs the sibling bundle `../seoul-kenshi-data/seoul-geography-20260830` (outside the repo).
 - Inbound stale links: `GDD/Online-User-Journey.md`, `GDD/Home.md` and `GAME-LOGIC/site/**` mirrors still link pre-reorg `../LORE/Sixteen-States.md` / `../LORE/Scenario-Timeline.md` (now `LORE/factions/`, `LORE/chronology/`). Markdown has no redirects — fix the outbound paths.
-- Root `README.md` still cites `https://seoul-kenshi.vercel.app/play/` for the web POC; fix it when the Vercel removal step in `SERVICES.md` executes. `.omo/README.md` likewise still names Vercel as public docs (predates the 2026-09-18 hub switch).
+- Root `README.md` now names `https://seoul-dengoku.linalab.io/play/` as the public web POC and keeps the old Vercel URL as the pending-removal address. `.omo/README.md` still names Vercel as public docs (predates the 2026-09-18 hub switch).
 - `TOOL/tools/design-store` `openSchema` DROPs all tables when `user_version < 3` — wipe, not migration.
 - Backend is the ASP.NET Core coordinator on :1219 with no external stores (ADR-006).
 - The macOS development-player builder does not enable AllowDebugging.

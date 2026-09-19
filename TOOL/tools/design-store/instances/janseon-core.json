@@ -4,7 +4,7 @@
   "onePage": {
     "title": "서울:전국",
     "audience": "production",
-    "pictureNote": "인물 중심 4X + RPG, 2.5D 시야, 실시간 진형·카드",
+    "pictureNote": "인물 중심 4X + RPG. 이름 있는 영웅은 별도 전술 행위자, 병사 분대는 최대 20명(예시: 병사 20명)이며 영웅은 그 20명에 포함하지 않음. 둘 다 부대 명령으로 지휘하고 영웅 콤보를 직접 조작하지 않음.",
     "panels": [
       {
         "heading": "제품",
@@ -13,32 +13,37 @@
       },
       {
         "heading": "시작",
-        "body": "한 역 사회에 흘러든 무명 인물이며, 작은 파티를 꾸리고 생업과 의뢰를 수행하면서 이름을 얻습니다.",
+        "body": "무명으로 흘러드는 것은 착생 갈래 하나다. 혈연과 소속을 가진 몸으로 시작할 수도 있다.",
         "sourcePath": "GAME-LOGIC/Game-Thesis.md"
       },
       {
         "heading": "시야",
-        "body": "시야와 카메라는 용사주식회사 채널의 2.5D 전투 화면을 따른다.",
+        "body": "목표 전장 카메라는 3D 자유 지휘다.",
+        "sourcePath": "Design.md"
+      },
+      {
+        "heading": "입력",
+        "body": "전투의 주 입력은 부대·진형 지휘다.",
         "sourcePath": "Intent.md"
       },
       {
         "heading": "격자",
-        "body": "한 타일은 1.5m이며 일반 통로는 최소 두 타일 폭입니다.",
+        "body": "전략맵은 3D 하이트맵으로 서울 전역을 세운다(결정 10).",
         "sourcePath": "GAME-LOGIC/Game-Thesis.md"
       },
       {
         "heading": "루프",
-        "body": "교섭, 거래, 작업, 은신, 회피 또는 전투를 선택합니다.",
+        "body": "마주치면 말하거나 숨거나 붙는다.",
         "sourcePath": "GAME-LOGIC/Campaign-Loop.md"
       },
       {
         "heading": "전투",
-        "body": "전투 형태는 Songs of Silence와 같은 실시간 진형·카드 전투다.",
-        "sourcePath": "Intent.md"
+        "body": "직접 조작하는 대상은 개별 영웅이 아니라 선택한 부대다.",
+        "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
       },
       {
         "heading": "정산",
-        "body": "부상, 포획, 사망, 물자 손실과 관계 악화가 정산됩니다.",
+        "body": "실패는 세계에 남는다. 부상, 포획, 죽음, 물자, 원한.",
         "sourcePath": "GAME-LOGIC/Game-Thesis.md"
       },
       {
@@ -48,137 +53,137 @@
       },
       {
         "heading": "인물 표현",
-        "body": "Spine 에셋은 POC 사람 표현으로 쓴다.",
-        "sourcePath": "Intent.md"
+        "body": "제품 목표 인물은 애니메이션풍 정비율이다.",
+        "sourcePath": "GAME-LOGIC/Character-Art-Direction.md"
       },
       {
         "heading": "구현 순서",
-        "body": "아래 검증 단계는 시각 수용·슬롯 연결·시각 게이트를 끝내는 순서다.",
-        "sourcePath": "GAME-LOGIC/Development-Roadmap.md"
+        "body": "그 다음 제품 문서는 부대 지휘다.",
+        "sourcePath": "GDD/Design-Requirements.md"
       },
       {
-        "heading": "요구 시야 #97",
-        "body": "시야와 카메라는 용사주식회사 채널의 2.5D 전투 화면을 따른다.",
-        "sourcePath": "Intent.md"
+        "heading": "요구 카메라",
+        "body": "카메라는 팬·오빗·줌의 3D 자유 지휘 시점이고 각도·FOV는 없다.",
+        "sourcePath": "GDD/Design-Requirements.md"
       },
       {
-        "heading": "요구 카드 부여 #98",
-        "body": "보급, 동맹, 퇴로와 거점 상태가 카드와 사기로 전장에 들어옵니다.",
-        "sourcePath": "GAME-LOGIC/Game-Thesis.md"
+        "heading": "요구 카드 제외",
+        "body": "덱·드로우·재충전·오너 카드를 새 목표로 승격하지 않는다.",
+        "sourcePath": "GDD/Design-Requirements.md"
       },
       {
-        "heading": "요구 분대 명령 #99",
-        "body": "actor 기반 분대 이동(Move), 목표 적 지정 공격(Attack), 방향 전환(SetFacing)을 내립니다.",
+        "heading": "요구 부대 명령",
+        "body": "확인하면 새 지시가 그 부대의 현재 지시를 교체한다. 취소하면 기존 지시를 그대로 둔다.",
         "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
       },
       {
-        "heading": "요구 사상자 #100",
-        "body": "초기 생존수는 `ceil(4 * 시작Hp / MaxHp)`로 정합니다(Hp가 0이면 0).",
+        "heading": "요구 전투 결과",
+        "body": "각 전투는 위 종료 상태 가운데 하나와 전투 사실을 담은 불변 결과를 한 번만 발행한다.",
         "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
       }
     ]
   },
   "mechanics": [
     {
-      "body": "시야와 카메라는 용사주식회사 채널의 2.5D 전투 화면을 따른다.",
-      "sourcePath": "Intent.md",
-      "name": "시야"
+      "name": "시야",
+      "body": "목표 전장 카메라는 3D 자유 지휘다.",
+      "sourcePath": "Design.md"
     },
     {
+      "name": "세계 그래프",
       "body": "지하철망을 지상·지하 다층 전략 그래프로 다루는",
-      "sourcePath": "Concept.md",
-      "name": "세계 그래프"
+      "sourcePath": "Concept.md"
     },
     {
-      "body": "탐색, 상호작용과 전투는 같은 4방향 타일 격자에서 이어집니다.",
+      "body": "전략맵은 3D 하이트맵으로 서울 전역을 세운다(결정 10).",
       "sourcePath": "GAME-LOGIC/Game-Thesis.md",
       "name": "격자"
     },
     {
-      "body": "한 타일은 1.5m이며 일반 통로는 최소 두 타일 폭입니다.",
+      "body": "전략맵은 3D 하이트맵으로 서울 전역을 세운다(결정 10).",
       "sourcePath": "GAME-LOGIC/Game-Thesis.md",
       "name": "타일"
     },
     {
-      "body": "시뮬레이션은 30Hz 고정 간격으로 진행됩니다.",
-      "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md",
-      "name": "틱"
+      "name": "규칙 간격",
+      "body": "시뮬레이션은 고정된 규칙 간격으로 진행한다.",
+      "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
     },
     {
-      "body": "거점 카드는 최대 2슬롯이며 아군 분대 전체가 공유합니다.",
-      "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md",
-      "name": "거점 카드"
+      "name": "명령 범위",
+      "body": "이동, 공격, 방향 전환, 진형 변경, 정지 가운데 하나를 고른다.",
+      "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
     },
     {
+      "name": "결정론",
       "body": "같은 seed와 command log는 같은 상태와 원장 hash를 만들어야 합니다.",
-      "sourcePath": "Concept.md",
-      "name": "결정론"
+      "sourcePath": "Concept.md"
     },
     {
+      "name": "UI",
       "body": "UI는 **uGUI(Canvas)** 로 만든다.",
-      "sourcePath": "Intent.md",
-      "name": "UI"
+      "sourcePath": "Intent.md"
     },
     {
+      "name": "텍스트",
       "body": "텍스트 스택은 uGUI 표준인 TextMeshPro(TMP)를 따른다.",
-      "sourcePath": "Intent.md",
-      "name": "텍스트"
+      "sourcePath": "Intent.md"
     },
     {
-      "body": "캐릭터는 해당 시점에 맞춘 2.5등신 SD 실루엣과 네 방향 표현을 사용합니다.",
-      "sourcePath": "GAME-LOGIC/Game-Thesis.md",
-      "name": "실루엣"
+      "name": "실루엣",
+      "body": "애니메이션풍 정비율. SD·2.5등신 목표를 다시 열지 않는다",
+      "sourcePath": "GAME-LOGIC/Character-Art-Direction.md"
     },
     {
-      "body": "Spine 에셋은 POC 사람 표현으로 쓴다.",
-      "sourcePath": "Intent.md",
-      "name": "인물 표현"
+      "name": "POC 인물",
+      "body": "POC 사람 표현은 오드랜드 원본 어셋 as-is다",
+      "sourcePath": "GAME-LOGIC/Character-Art-Direction.md"
     }
   ],
   "dynamics": [
     {
-      "body": "전투 형태는 Songs of Silence와 같은 실시간 진형·카드 전투다.",
-      "sourcePath": "Intent.md",
-      "name": "전투 형태"
+      "name": "전투 형태",
+      "body": "플레이어는 부대를 골라 지시하며, 전투는 변경할 수 없는 `ResultId` 하나를 내고 끝난다.",
+      "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
     },
     {
-      "body": "정보, 의뢰, 계약과 관계 문제를 살핍니다.",
+      "body": "거점에서 길을 나선다. 반드시 돌아오라는 뜻이 아니다.",
       "sourcePath": "GAME-LOGIC/Campaign-Loop.md",
       "name": "거점 할 일"
     },
     {
-      "body": "파티, 장비, 식량, 의약품, 경로와 통행권을 준비합니다.",
+      "body": "준비는 같다. 사람, 식량, 약, 통행, 관계.",
       "sourcePath": "GAME-LOGIC/Campaign-Loop.md",
       "name": "원정 준비"
     },
     {
-      "body": "교섭, 거래, 작업, 은신, 회피 또는 전투를 선택합니다.",
+      "body": "마주치면 말하거나 숨거나 붙는다.",
       "sourcePath": "GAME-LOGIC/Campaign-Loop.md",
       "name": "조우 선택"
     },
     {
-      "body": "전열, 후열, 측면에 분대를 배치하고 4방향 정면을 정합니다.",
+      "body": "전투 전이나 허용된 재편 상태에서 진형과 정면을 정한다.",
       "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md",
       "name": "진형"
     },
     {
-      "body": "actor 기반 분대 이동(Move), 목표 적 지정 공격(Attack), 방향 전환(SetFacing)을 내립니다.",
-      "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md",
-      "name": "분대 명령"
+      "name": "부대 명령",
+      "body": "확인하면 새 지시가 그 부대의 현재 지시를 교체한다. 취소하면 기존 지시를 그대로 둔다.",
+      "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
     },
     {
-      "body": "인물 카드는 `(OwnerUnitId, CardId)` 쌍으로 상태를 관리하며 소유자마다 독립된 재충전 타이머를 가집니다.",
-      "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md",
-      "name": "카드 소유"
+      "name": "일시정지",
+      "body": "일시정지 중에도 부대를 선택하고 명령을 미리 본 뒤 확인하거나 취소할 수 있다.",
+      "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
     },
     {
-      "body": "부상, 시간, 물자, 관계, 평판, 거점과 노선 상태가 바뀝니다.",
+      "body": "정산 뒤에도 원정은 계속될 수 있으며, 귀환은 저장이나 결과 반영의 다른 이름이 아니다.",
       "sourcePath": "GAME-LOGIC/Campaign-Loop.md",
       "name": "결과 반영"
     },
     {
-      "body": "보급, 동맹, 퇴로와 거점 상태가 카드와 사기로 전장에 들어옵니다.",
-      "sourcePath": "GAME-LOGIC/Game-Thesis.md",
+      "body": "정산 뒤에도 원정은 계속될 수 있으며, 귀환은 저장이나 결과 반영의 다른 이름이 아니다.",
+      "sourcePath": "GAME-LOGIC/Campaign-Loop.md",
       "name": "전략 결과"
     }
   ],
@@ -190,22 +195,22 @@
     },
     {
       "kind": "Fantasy",
-      "body": "한 역 사회에 흘러든 무명 인물이며, 작은 파티를 꾸리고 생업과 의뢰를 수행하면서 이름을 얻습니다.",
+      "body": "무명으로 흘러드는 것은 착생 갈래 하나다. 혈연과 소속을 가진 몸으로 시작할 수도 있다.",
       "sourcePath": "GAME-LOGIC/Game-Thesis.md"
     },
     {
       "kind": "Narrative",
-      "body": "노선 연합, 독립 역 사회, 지상·지하 공동체, 교역망 패권, 기술 복구 체제처럼 플레이 과정에서 형성된 정통성에 따라 여러 질서가 등장합니다.",
+      "body": "서울을 한 나라로 모으는 결말만 두지 않는다. 노선 연합, 독립 역, 강단의 치, 교역망, 기술 복구. 플레이가 만든 정통성이 질서가 된다.",
       "sourcePath": "GAME-LOGIC/Game-Thesis.md"
     },
     {
       "kind": "Challenge",
-      "body": "보급, 동맹, 퇴로와 거점 상태가 카드와 사기로 전장에 들어옵니다.",
-      "sourcePath": "GAME-LOGIC/Game-Thesis.md"
+      "body": "전투는 붙기 전에 부대를 편성하고, 붙은 뒤에는 고른 부대의 현재 지시를 교체한다.",
+      "sourcePath": "GDD/Game-Thesis.md"
     },
     {
       "kind": "Fellowship",
-      "body": "수리, 의료, 운송, 경비, 교섭과 탐사도 전투만큼 중요한 성장 경로입니다.",
+      "body": "RPG는 그 사람의 손과 관계와 무공이다. 수리, 의약, 운송, 호위, 교섭, 탐사도 칼만큼 자란다.",
       "sourcePath": "GAME-LOGIC/Game-Thesis.md"
     },
     {
@@ -215,7 +220,7 @@
     },
     {
       "kind": "Expression",
-      "body": "직위, 관계, 기억과 계승이 세력의 행동을 바꿉니다.",
+      "body": "인물이 정치의 단위다. 품계와 기억과 후계가 나라의 손을 바꾼다.",
       "sourcePath": "GAME-LOGIC/Game-Thesis.md"
     },
     {

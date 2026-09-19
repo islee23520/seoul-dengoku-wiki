@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "deliver",
+  "type": "workflow",
+  "input": "/Volumes/gameWorkspace/worktrees/seoul-kenshi/total-war-design-20260919/GDD/system-design/total-war-ui/flow.json",
+  "output": "/Volumes/gameWorkspace/worktrees/seoul-kenshi/total-war-design-20260919/GDD/system-design/total-war-ui/flow.html",
+  "specification": {
+    "sha256": "66824a05f26db818d06f620157e0fe817b73ca990c46c818c8808004262f6136",
+    "bytes": 2966
+  },
+  "artifact": {
+    "sha256": "9616c02fd87b1f9624c2c4554172e8a2cfafcf4e83e160b5818a00b438d12287",
+    "bytes": 807730
+  },
+  "validation": {
+    "checksPassed": 9,
+    "checkCount": 9,
+    "compositionProfile": "standard",
+    "compositionStatus": "pass",
+    "errors": 0,
+    "warnings": 0
+  }
+}

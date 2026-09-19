@@ -1,11 +1,29 @@
-# 《서울:전국》 Design.md — POC UI 시각 계약
+# 《서울:전국》 Design.md — 목표 UI 계약과 POC 시각 계약
 
-상태: 2026-09-06 개정 — UI 프레임워크를 uGUI로 고정(소유자 결정, [Intent](/design/Intent) 참조). 구현·캡처·검수는 이 문서를 기준으로 한다.
-대상 해상도: `1280×720`, `1920×1080` (16:9). uGUI(Canvas) 전용. 텍스트는 TextMeshPro(TMP).
+상태: 2026-09-19 개정 — [Intent.md](/design/Intent) 결정 11. 제품 목표 UI는 토탈워식 부대 지휘다. 0절이 계약이고, 1절 이하는 현 Unity POC 시각 계약을 그대로 남긴다. uGUI 프레임워크 고정(2026-09-06) 자체는 유효하다.
+목표 설계 해상도: 설계 템플릿 검수용 1440×900·1600×1000·1920×1080·390×844. POC 캡처는 `1280×720`, `1920×1080` (16:9). uGUI(Canvas) 전용. 텍스트는 TextMeshPro(TMP).
 
 ---
 
-## 1. 시각 테제 (Visual Thesis)
+## 0. 목표 UI 계약 (2026-09-19, 결정 11)
+
+이 절은 제품 목표 화면의 설계 계약이다. 현 Unity 요소 이름을 개명하지 않으며, 새 전투가 구현됐다고 쓰지 않는다. 실물 레이아웃은 `GDD/system-design/total-war-ui/`에 둔다.
+
+지휘 대상은 전장에 참가한 부대다. 영웅 직접 조작을 만들지 않는다. 부대 목록은 카드 덱이 아니며, 자원 소비·드로우·재충전을 넣지 않는다. 선택한 부대에 새 명령을 내면 현재 지시를 교체한다. 미리보기를 취소하면 기존 지시를 유지한다. 확인된 지시만 수락 기록에 남긴다. 웨이포인트 연쇄, 명령 큐, 감속·배속은 이번 범위 밖이다.
+
+이름 있는 영웅 캐릭터와 병졸 분대는 전장 단위가 다르다. 영웅은 병졸 수에 포함되지 않는 별도 지휘 인물이며, 병졸 한 분대는 20명 이하로 표시한다. 영웅 수, 전체 분대 수와 군단 상한은 정하지 않는다. UI는 영웅 초상·상태와 병졸 분대 인원·진형을 같은 숫자로 합치지 않는다.
+
+필수 화면: 캠페인 노선·여행, 파티 편성, 조우 응답, 전장 배치, 부대 지휘, 철수·항복 확인, 결과 확인, 다음 행선. 조우 현장 거래는 `현장 거래`로 쓰고, 원정 결말 `교역`과 섞어 쓰지 않는다. 결과를 반영한 뒤 원정을 계속할 수 있다. 귀환·정착·정복·방랑·교역은 서로 다른 결말이다. 질서 있는 철수는 명령, 패주는 사기 붕괴, 항복은 자발이다. 막힌 퇴로만으로 항복 선택을 지우지 않는다. 포획은 인물 신병 결과이며 종료 상태와 같은 말로 쓰지 않는다.
+
+목표 전장 카메라는 3D 자유 지휘다. 팬·오빗·줌으로 부대를 읽고, 각도·시야각 수치는 이 문서가 만들지 않는다. 상단 전장 도식은 문서용 청사진이며 실제 게임 렌더가 아니다. 이 카메라 기본안은 2026-09-19 질문 시간 초과 뒤 채택했으며, 소유자 직접 결정이 아니다. 좌우 사이드스크롤은 1절 이하 POC다.
+
+목표 지휘 HUD는 실제 일시정지·재개 상태를 보여 준다. 정지는 그 파티의 닫힌 전투만 멈추며 공유 캠페인 월드와 다른 파티를 멈추지 않는다. 정지 중에도 부대 선택, 명령 미리보기, 취소, 확인을 할 수 있다. 확인된 지시는 결정론적 수락 순서에 남고, 재개 뒤 다음 시뮬레이션 단계에서 적용된다. 같은 부대에 다시 확정한 지시는 이전 지시를 교체한다. 비활성 자리표시로 일시정지를 그리지 않는다. 감속·배속은 없다. 이 시간 제어도 질문 시간 초과 뒤 채택한 기본안이다.
+
+인물 표현은 애니메이션풍 정비율이다. SD나 반실사 초상을 목표로 쓰지 않는다. 오드랜드·카드 HUD·아이소 도표는 1절 이하 POC 기록이다.
+
+---
+
+## 1. POC 시각 테제 (Visual Thesis, 현 Unity 계약)
 
 붕괴 이후 서울 지하철은 네온 사이버펑크가 아니라 **젖은 콘크리트, 꺼진 안내판, 비상 전원, 녹슨 선로, 손때 묻은 노선도**다.
 
@@ -85,7 +103,7 @@
 - 안전 여백: 24px.
 - 타이틀: 세로 중앙 스택 (로고 영역 280×120, 액션 열 320).
 - 캠페인: 상단 스테이지 레일 64px, 좌 노선 360, 우 상세 860.
-- 전투: 게임뷰는 좌우 사이드스크롤 전장을 채운다(결정 10). HUD는 그 위 오버레이(상단 미터, 하단 카드 독 높이 214, 카드 132×180). 중앙 5×5 셀 HUD·칸 클릭 SRPG 보드가 아니다. 시간은 30Hz 실시간 진형·카드.
+- 전투: 게임뷰는 좌우 사이드스크롤 전장을 채운다(결정 10, POC 화면). HUD는 그 위 오버레이(상단 미터, 하단 카드 독 높이 214, 카드 132×180). 중앙 5×5 셀 HUD·칸 클릭 SRPG 보드가 아니다. 시간은 30Hz 실시간 진형·카드. 결정 11 목표 HUD는 0절이며, 이 수치는 POC다.
 - 정산: 중앙 카드 520 폭.
 
 ### 3.2 1920×1080
@@ -99,14 +117,14 @@
 - 루트는 `flex-grow: 1`, 전체 화면. 스크롤은 조우 카드 목록·전투 로그만.
 - 모달은 쓰지 않는다. 조우/정산은 같은 gameplay document 내 패널 전환.
 
-### 3.4 HUD 영역 문법 (진형과 전투가 같은 뼈대)
+### 3.4 POC HUD 영역 문법 (진형과 전투가 같은 뼈대)
 
-진형(배치 명령)과 전투(카드 독)는 다른 화면이 아니다. **슬롯은 고정**하고 **내용만 교체**한다. 근거: interfaceingame.com의 실시간 전술 HUD — Clash Royale(하단 4카드), StarCraft II / Company of Heroes 2(하단 커맨드 그리드), Desperados III(계획·실행이 같은 하단 능력 바), Northgard / Stellaris(우측은 인스펙터이지 주 동사가 아님).
+아래는 현 Unity POC HUD다. 결정 11 목표 화면은 0절과 `GDD/system-design/total-war-ui/`다. 진형(배치 명령)과 전투(카드 독)는 다른 화면이 아니다. **슬롯은 고정**하고 **내용만 교체**한다. 근거: interfaceingame.com의 실시간 전술 HUD — Clash Royale(하단 4카드), StarCraft II / Company of Heroes 2(하단 커맨드 그리드), Desperados III(계획·실행이 같은 하단 능력 바), Northgard / Stellaris(우측은 인스펙터이지 주 동사가 아님).
 
 | 영역 | 고정 역할 | 진형에서 | 전투에서 |
 |---|---|---|---|
 | 중앙 | 게임뷰. 전장 승강장이 카메라를 채움 | 같은 전장. 적은 참고 실루엣 | 같은 전장. 분대 교전 |
-| 상단 | 미터·일시정지 | 사기/HP 자리 + 일시정지(비활성 가능) | HP·사기·증원·일시정지 |
+| 상단 | 미터·일시정지 | 사기/HP 자리 + 일시정지(POC) | HP·사기·증원·일시정지(POC). 목표 일시정지는 0절 |
 | 하단 | **주 동사 독** 높이 214 | 3×3 슬롯 + facing + 확정/취소 | 지휘관 카드 4장 132×180 |
 | 하단 좌 | 선택 지휘관 초상 | 배치 중인 분대 | 카드 소유자 |
 | 우측 | 인스펙터만. 주 동사 금지 | 선택 분대 상세(접을 수 있음) | 접거나 적 정보만 |
@@ -158,16 +176,16 @@
 | 조우 선택 | `encounter-choices`, `choice-negotiate`, `choice-bypass`, `choice-combat` | `CampaignStage.Resolution` |
 | 전투 | `battle-hud`, `battle-hp`, `battle-morale`, `battle-reinforcement-forecast`, `card-general-recharge`, `battle-card-guard-shieldwall`, `battle-card-encourage-morale`, `battle-card-pincer-focus`, `battle-card-mobility-regroup`, `battle-play-pause`, `battle-dock` | `BattleSimState` + `BattleSessionDriver.Paused`. 게임뷰는 승강장 위 분대(6v6, 분대당 병사 4+리더). `battle-grid`/`battle-cell`은 플레이어 HUD가 아니다. |
 | 진형 편집 | `edit-formation`, `formation-edit`, `formation-edit-confirm`, `formation-edit-cancel`, `formation-edit-facing-n`, `formation-edit-facing-e`, `formation-edit-facing-s`, `formation-edit-facing-w` | 보류 진형(pending formation) 상태 |
-| 정산·복귀 | `settlement-panel`, `settlement-outcome`, `return-action` | settlement receipt fields |
+| 정산 | `settlement-panel`, `settlement-outcome`, `return-action` | settlement receipt fields. POC 루프는 복귀를 보여 준다. 결정 11 목표에서는 결과 반영 뒤 원정 계속이 가능하다. |
 
 `edit-formation`은 `formation-edit` 패널을 연다. `formation-edit-confirm`은 보류 진형을 확정 배치하고, `formation-edit-cancel`은 패널을 닫는다. facing 네 버튼(`formation-edit-facing-n/e/s/w`)은 보류 진형의 방향을 지정한다.
 
 스냅샷은 동일 seed/state에 대해 요소 이름 집합·current 표시·그리드 점유가 결정론적이어야 한다.
 
-### 5.3 코어 루프 액션 (Todo 12)
+### 5.3 POC 코어 루프 액션 (Todo 12)
 
 - Start → Foundation lease.
-- 출정 → 역 이동 → 조우 → 해결 → 교섭/우회/전투 → 정산 → 복귀는 scoped `PocCoreLoopController`가 Core API로 처리한다.
+- 출정 → 역 이동 → 조우 → 해결 → 교섭/우회/전투 → 정산 → 복귀는 scoped `PocCoreLoopController`가 Core API로 처리한다. 이 복귀는 POC 화면이다. 결정 11 목표는 결과 반영 뒤 원정 계속을 연다.
 - 전투 중에는 노선 패널을 숨겨 HUD·5×5 격자·전투 기록의 가로 공간을 확보하고 정산 시 복원한다.
 
 ---
@@ -208,7 +226,7 @@
 ## 9. 수용된 부채 (Accepted Debt)
 
 - 커스텀 한글 폰트·아이콘 세트는 Todo 13.
-- 전투 입력은 전투 전 진형 교대, 카드 사용, 일시정지/재개로 제한한다. 개별 유닛 직접 이동과 턴/AP 입력은 현재 계약이 아니다.
+- POC 전투 입력은 전투 전 진형 교대, 카드 사용, 일시정지/재개로 제한한다. 개별 유닛 직접 이동과 턴/AP 입력은 POC 계약이 아니다. 결정 11 목표는 부대 선택과 현재 지시 교체다. 목표 템플릿의 일시정지·재개는 닫힌 전투 안에서만 미리보기·확인을 허용하며, 이 동작은 질문 시간 초과 뒤 채택한 기본안이다.
 - 역사 3D/캐릭터 메시는 Todo 14–16. 본 계약은 UI 평면만.
 - PanelSettings는 단일 공유 에셋. 테마 런타임 스위치 없음.
 
@@ -235,7 +253,7 @@
 
 ---
 
-## 11. 안정 요소 이름 (기계 계약)
+## 11. POC 안정 요소 이름 (기계 계약, 개명하지 않음)
 
 ```
 main-title-root
@@ -284,7 +302,8 @@ settlement-outcome
 return-action
 ```
 
-위 이름은 현재 Unity에서 사용 중인 계약이며 개명하지 않는다. #101의 12면과
+위 이름은 현재 Unity에서 사용 중인 POC 계약이며 개명하지 않는다. 결정 11 목표
+화면은 이 표를 런타임 식별자로 승격하지 않는다. #101의 12면과
 사망·후계 보조 목업에서 새로 필요한 이름은 아래와 같다. **신규** 이름은 화면
 설계 계약이지 현 Unity `UiElementNames`에 이미 구현되었다는 뜻이 아니다.
 HTML 목업에서 먼저 같은 이름을 붙이고, Unity 구현 이슈에서 상수·바인딩·
@@ -302,8 +321,8 @@ EditMode·캡처 검사를 추가한다. 장식용 문구에는 기계 이름을
 | 역간 여행 | `travel-path`, `travel-cost`, `travel-forecast`, `travel-state` | `travel-panel`, `travel-confirm-action` |
 | 조우 | `encounter-choices`, `choice-negotiate`, `choice-bypass`, `choice-combat` | `encounter-panel`, `encounter-context` |
 | 전투 전 진형 편집 | `formation-edit`, `formation-edit-unit-{unitId}`, `formation-edit-slot-{slotId}`, `formation-edit-confirm`, `formation-edit-cancel` | 핵심 조작은 기존 이름으로 충족 |
-| 전투 | `battle-dock`, `battle-hud`, `battle-play-pause`, 기존 카드·사기 이름 | 핵심 조작은 기존 이름으로 충족 |
-| 정산 | `settlement-panel`, `settlement-outcome`, `return-action` | `settlement-world-change-list` |
+| 전투 | `battle-dock`, `battle-hud`, `battle-play-pause`, 기존 카드·사기 이름 | POC 핵심 조작은 기존 이름으로 충족. 결정 11 목표 지휘 HUD는 이 이름을 개명하지 않고 별도 설계 템플릿에 둔다 |
+| 정산 | `settlement-panel`, `settlement-outcome`, `return-action` | `settlement-world-change-list`. POC는 복귀를 보여 주고, 목표 화면은 결과 확인 뒤 원정 계속을 연다 |
 
 | 보조 목업 | 신규 안정 요소 이름 |
 |---|---|
@@ -326,3 +345,6 @@ EditMode·캡처 검사를 추가한다. 장식용 문구에는 기계 이름을
 ## 12. 검수 소품의 현재 연결
 
 Foundation의 여섯 역사 소품은 동일 화면 lease의 카메라가 RenderTexture로 렌더링하고 노선 패널에 표시한다. 프리뷰는 런타임 3D 모델·재질을 사용하며 정적 screenshot 대체물이 아니다. 카메라·프리뷰 RenderTexture는 Foundation unload 시 해제된다. 소품은 보존된 원본 hash, 실제 독립 검수 파일과 현재 import/runtime 증거로 BOM에 연결한다. 캐릭터·타이틀·아이콘·역사 텍스처의 미확인 서비스 경로와 검수는 별도 미완료 상태다.
+
+---
+

@@ -41,7 +41,7 @@
 * [이 시대의 기술과 무구](Era-Arms-and-Tech-Level)
 * [잃어버린 기술](Lost-Technology-Lineage)
 * [이동과 조우](Travel-and-Encounters)
-* [전투](Realtime-Formation-Card-Battle)
+* [부대 지휘 전투](Realtime-Formation-Card-Battle)
 * [무공](Martial-Paths)
 * [설계 요구 티켓](Design-Requirements)
 * [전략에서 전투로](Strategy-Battle-Roundtrip)

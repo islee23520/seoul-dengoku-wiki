@@ -300,7 +300,7 @@ async function collectMarkdownFiles(canonicalRoot) {
       if (!stats.isFile()) {
         throw new Error(`refusing to publish the non-file source page ${name}: ${path}`);
       }
-      if (!name.endsWith('.md') || name === 'README.md') continue;
+      if (!name.endsWith('.md') || name === 'README.md' || name === 'AGENTS.md') continue;
       files.push({ page: name, path });
     }
   }
@@ -681,7 +681,6 @@ function generationBanner(page, commitSha, origin = 'Wikis/game-logic') {
     '> [!NOTE]',
     '> 자동 생성 문서입니다. GitHub Wiki에서 직접 수정하지 마세요.',
     `> 원본: \`${origin}/${page}\` · 커밋: \`${commitSha}\``,
-    '> <span class="janseon-unofficial-au">비공식·비상업 팬 AU</span> · [비공식 팬 AU 고지](Unofficial-Fan-AU-Notice)',
   ].join('\n');
 }
 

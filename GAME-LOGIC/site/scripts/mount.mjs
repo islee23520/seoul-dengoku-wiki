@@ -1,7 +1,7 @@
 // mount.mjs v2 — 3루트(LORE/GAME-LOGIC/GDD) + 루트 문서 → GAME-LOGIC/site/{world,rules,design} 스테이징
 // 폴더=도메인: LORE/**/*.md(평면 스템)→world, GAME-LOGIC/*.md→rules, GDD/*.md(평면)→design + 루트 4문서→design
 // 유니온 pageByFile/pageByStem로 도메인 간 베어 링크 재작성 (스켑틱 #10)
-import { readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs'
+import { readFileSync, readdirSync, rmSync, statSync, writeFileSync } from 'node:fs'
 import { basename, dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -20,7 +20,7 @@ const DOMAIN_ROOTS = [
 ]
 const ROOT_DOCS = ['Concept.md', 'Design.md', 'ToDo.md', 'Intent.md']
 
-const EXCLUDED_NAMES = new Set(['_Sidebar.md', '_TEMPLATE.md'])
+const EXCLUDED_NAMES = new Set(['_Sidebar.md', '_TEMPLATE.md', 'AGENTS.md'])
 const LORE_SKIP_DIRS = new Set(['name-pools', 'regions'])
 
 function listMarkdown(dir) {
@@ -119,6 +119,16 @@ for (const { domain, dir } of DOMAIN_ROOTS) {
 }
 for (const name of ROOT_DOCS) {
   candidates.push({ name, src: join(repoRoot, name), domain: 'design' })
+}
+
+const currentDestinations = new Set(candidates.map(({ name, domain }) => join(docsSiteRoot, domain, name)))
+for (const domain of ['world', 'rules', 'design']) {
+  for (const name of listMarkdown(join(docsSiteRoot, domain))) {
+    if (name === 'index.md') continue
+    if (domain === 'rules' && name.startsWith('Rules-')) continue
+    const path = join(docsSiteRoot, domain, name)
+    if (!currentDestinations.has(path)) rmSync(path, { force: true })
+  }
 }
 
 // 유니온 맵 (도메인 간 베어 링크 재작성용)

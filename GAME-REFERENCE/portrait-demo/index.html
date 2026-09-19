@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>서울:전국 — 애니메 풍 초상 레이어 합성 데모</title>
+<title>서울:전국 — 목표 인물 표현과 역사 POC 초상 합성</title>
 <style>
   :root { color-scheme: dark; }
   * { box-sizing: border-box; }
@@ -15,6 +15,9 @@
   header { text-align: center; margin-bottom: 18px; }
   header h1 { font-size: 20px; margin: 0 0 6px; letter-spacing: 0.02em; }
   header p { margin: 0; color: #9aa0a8; font-size: 13px; }
+  .contract { max-width: 900px; width: 100%; margin-bottom: 20px; line-height: 1.6; }
+  .contract h2 { font-size: 17px; margin: 0 0 8px; }
+  .contract p { font-size: 14px; margin: 6px 0; }
   main { display: flex; gap: 28px; flex-wrap: wrap; justify-content: center; max-width: 900px; width: 100%; }
   .stage { display: flex; flex-direction: column; align-items: center; gap: 12px; }
   canvas {
@@ -60,17 +63,28 @@
 </head>
 <body>
 <header>
-  <h1>《잔선》 애니메 풍 초상 — 레이어 합성 데모</h1>
-  <p>눈·머리·얼굴·옷은 교체 가능한 2D 슬롯. 정해진 순서로 겹쳐 한 장의 PNG가 된다.</p>
+  <h1>《서울:전국》 목표 인물 표현과 역사 POC 초상 합성</h1>
+  <p>2026-09-19 목표 설계와 기존 합성 표본을 구분합니다. 새 전투나 목표 아트의 구현을 뜻하지 않습니다.</p>
 </header>
-<main>
+<section class="contract" id="target-contract" aria-labelledby="target-title">
+  <h2 id="target-title">목표 설계 — 애니메이션풍 정비율과 별도 영웅 지휘 인물</h2>
+  <p>목표 인물 표현은 자연스러운 인체 비례의 애니메이션풍입니다. 반실사·SD 비례나 흉상 전용 표현을 목표로 강제하지 않습니다. 초상과 전신은 쓰임을 구분합니다.</p>
+  <p>이름 있는 영웅은 병졸 분대와 구분되는 별도 지휘 인물입니다. UI는 영웅의 초상·상태와 병졸 분대의 인원·진형을 따로 표시하는 것이 목표입니다. 병졸 한 분대는 최대 20명이며 영웅은 그 수에 포함하지 않습니다. 전체 분대 수·영웅 수·군단 상한은 정하지 않습니다.</p>
+  <p>인물 중심 캠페인을 유지하며, 목표 전투 입력은 토탈워식 부대·진형 지휘입니다. 영웅 직접 액션이나 카드 덱 조작이 아닙니다. 아래 합성 시연은 이 전투 기능의 구현이 아닙니다.</p>
+</section>
+<section class="contract" id="historical-note" aria-labelledby="historical-title">
+  <h2 id="historical-title">역사 POC — 기존 초상 플레이트 합성 표본</h2>
+  <p>아래 이미지는 기존 POC 원본을 보존한 역사 표본이며 현재 정비율 목표 아트가 아닙니다. 표본의 비례·화풍·흉상 구도는 목표 규격을 정하지 않습니다.</p>
+  <p>눈·머리·얼굴·옷의 2D 슬롯을 정해진 순서로 겹치는 과정을 시연합니다. 오프라인 플레이트 합성 구조는 유지하되, 기존 이미지의 목표 아트 승인이나 런타임 승격을 뜻하지 않습니다.</p>
+</section>
+<main id="historical-compositor" aria-labelledby="historical-title">
   <div class="stage">
     <canvas id="cv" width="256" height="256"></canvas>
-    <div class="cap" id="cap">기본 표본 · 슬롯 12장 source-over</div>
+    <div class="cap" id="cap">역사 POC · 기본 표본 · 슬롯 12장 source-over</div>
   </div>
   <div class="side">
     <fieldset>
-      <legend>정체성 토큰 교체</legend>
+      <legend>역사 POC · 정체성 토큰 교체</legend>
       <div class="picks" id="picks">
         <label><input type="radio" name="v" value="base" checked>기본 표본</label>
         <label><input type="radio" name="v" value="hair-eyes">머리·눈</label>
@@ -79,22 +93,22 @@
       </div>
     </fieldset>
     <fieldset>
-      <legend>슬롯 (위가 뒤 · 아래가 앞)</legend>
+      <legend>역사 POC · 슬롯 (위가 뒤 · 아래가 앞)</legend>
       <div class="rows" id="rows"></div>
     </fieldset>
     <fieldset>
-      <legend>한 장씩 쌓기</legend>
+      <legend>역사 POC · 한 장씩 쌓기</legend>
       <div class="step">
         <span>0</span>
         <input type="range" id="stepR" min="0" max="12" value="12">
         <span class="n" id="stepN">12 / 12</span>
-        <button class="btn" id="replay">replay</button>
+         <button type="button" class="btn" id="replay">replay</button>
       </div>
     </fieldset>
   </div>
 </main>
 <footer>
-  이 화면은 오프라인 합성 파이프의 브라우저 재현입니다. 런타임 에셋이나 게임 빌드가 아닙니다.
+  아래 합성 시연은 역사 POC 오프라인 합성 파이프의 브라우저 재현입니다. 런타임 에셋이나 게임 빌드가 아니며 목표 아트 구현 증거도 아닙니다.
   전술 시트·메시 표면과는 파이프를 섞지 않으며, 공유하는 것은 정체성 토큰뿐입니다.
 </footer>
 <script>
@@ -123,10 +137,10 @@
     { z: 0, id: 'bg', tk: '' },
   ];
   const VARIANTS = {
-    base: { cap: '기본 표본 · 슬롯 12장 source-over' },
-    'hair-eyes': { cap: '머리·눈 토큰 교체 (hair #6b4a2f · eyes #5b3a24)' },
-    outfit: { cap: '의상 팔레트 교체 (clothes #8a4b2d)' },
-    mix: { cap: '조합 (은발 #9a9aa2 · 청록 눈 #2e6e64 · 차콜 의상)' },
+    base: { cap: '역사 POC · 기본 표본 · 슬롯 12장 source-over' },
+    'hair-eyes': { cap: '역사 POC · 머리·눈 토큰 교체 (hair #6b4a2f · eyes #5b3a24)' },
+    outfit: { cap: '역사 POC · 의상 팔레트 교체 (clothes #8a4b2d)' },
+    mix: { cap: '역사 POC · 조합 (은발 #9a9aa2 · 청록 눈 #2e6e64 · 차콜 의상)' },
   };
   const cv = document.getElementById('cv');
   const ctx = cv.getContext('2d');

@@ -7,11 +7,18 @@ header p { margin: 0 0 5px; color: var(--blue); font-size: 10px; font-weight: 80
 h1 { margin: 0; font-size: clamp(34px, 7vw, 68px); letter-spacing: -.045em; }
 header span, section p, .surface-grid span, footer { color: var(--muted); }
 .primary { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin: 24px 0 12px; padding: 22px; border: 1px solid var(--blue); background: linear-gradient(120deg, rgba(77,139,172,.17), rgba(17,26,38,.96)); }
+.primary.target { border-color: var(--signal); background: linear-gradient(120deg, rgba(201,162,39,.14), rgba(17,26,38,.96)); }
 .primary small { color: var(--signal); font-weight: 800; letter-spacing: .15em; }
 .primary h2 { margin: 5px 0 3px; font-size: 25px; }
 .primary p { margin: 0; }
 .primary a { flex: 0 0 auto; padding: 13px 17px; border: 1px solid var(--blue); background: #234256; color: var(--text); text-decoration: none; }
-.surface-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.primary-links { display: grid; gap: 8px; flex: 0 0 auto; }
+.primary-links a:last-child { border-color: var(--stroke); background: var(--well); }
+.history-heading { margin: 28px 0 12px; }
+.history-heading small { color: var(--signal); font-weight: 800; letter-spacing: .15em; }
+.history-heading h2 { margin: 5px 0 4px; font-size: 25px; }
+.history-heading p { max-width: 850px; margin: 0; color: var(--muted); }
+.surface-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
 .surface-grid a { min-height: 155px; display: flex; flex-direction: column; padding: 18px; border: 1px solid var(--stroke); background: rgba(17,26,38,.94); color: var(--text); text-decoration: none; }
 .surface-grid a:hover { border-color: var(--signal); }
 .surface-grid b { color: var(--signal); font: 24px ui-monospace, monospace; }

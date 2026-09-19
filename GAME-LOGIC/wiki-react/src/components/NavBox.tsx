@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 interface NavBoxProps {
   title: string
@@ -25,10 +26,10 @@ export default function NavBox({ title, groups }: NavBoxProps) {
               </div>
               <div className="flex flex-wrap gap-1">
                 {g.links.map(l => (
-                  <a key={l.label} href={l.to}
+                  <Link key={l.label} to={l.to}
                     className="rounded border border-gray-200 bg-table-alt px-2.5 py-1 text-xs text-gray-700 transition-colors hover:border-accent hover:bg-accent hover:text-white">
                     {l.label}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>

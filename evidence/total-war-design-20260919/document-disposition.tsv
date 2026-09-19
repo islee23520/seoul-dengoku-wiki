@@ -1,0 +1,526 @@
+path	kind	status	note
+GDD/AGENTS.md	guide	K-guide	프로젝트 작업 지침; 공개 문서 입력 제외
+GDD/Asset-Pipeline.md	source	E	새 전투·아트 계약 영향 문서
+GDD/Design-Requirements.md	source	E	새 전투·아트 계약 영향 문서
+GDD/Development-Roadmap.md	source	E	새 전투·아트 계약 영향 문서
+GDD/Game-References.md	source	E	새 전투·아트 계약 영향 문서
+GDD/Game-Thesis.md	source	E	새 전투·아트 계약 영향 문서
+GDD/Home.md	source	E	새 전투·아트 계약 영향 문서
+GDD/Online-User-Journey.md	source	E	새 전투·아트 계약 영향 문서
+GDD/Research-Sources.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+GDD/Ui-Implementation-Pipeline.md	source	E	새 전투·아트 계약 영향 문서
+GDD/Unofficial-Fan-AU-Notice.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+GDD/adr/ADR-001-repository-delivery-policy.md	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/adr/ADR-002-character-candidate-retrospective.md	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/adr/ADR-003-real-place-and-station-naming.md	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/adr/ADR-004-root-domain-structure.md	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/adr/ADR-005-backend-host-session-multiplayer.md	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/adr/ADR-006-backend-aspnet-core-coordinator.md	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/design-store/AGENTS.md	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/battle/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/campaign-loop/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/campaign-progression/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/_sidebar/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/_template/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/ambitions-and-relations/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/asset-pipeline/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/campaign-loop/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/campaign-progression/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/cast-corridors-index/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/cast-index/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/cast-profile-contract/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/cast-relations/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/cast-state-01/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/cast-state-02/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/cast-state-03/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/cast-state-04/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/cast-state-05/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/cast-state-06/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/cast-state-07/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/cast-state-08/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/cast-state-09/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/cast-state-10/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/cast-state-11/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/cast-state-12/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/cast-state-13/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/cast-state-14/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/cast-state-15/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/cast-state-16/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/character-art-direction/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/characters-factions-and-professions/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/conscription-remnants/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/core-characters/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/design-requirements/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/development-roadmap/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/diaspora-corridors/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/economy-and-production/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/era-arms-and-tech-level/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/external-theaters/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/factions-and-diplomacy/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/faith-culture-schism/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/game-references/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/game-thesis/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hangnyeol-and-bon-gwan/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/heirs-names-and-world-ledger/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/home/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hostile-ecology-index/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hostile-group-g01/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hostile-group-g02/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hostile-group-g03/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hostile-group-g04/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hostile-group-g05/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hostile-group-g06/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hostile-group-g07/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hostile-group-g08/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hostile-group-g09/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hostile-group-g10/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hostile-group-g11/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hostile-group-g12/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hostile-group-g13/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hostile-group-g14/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hostile-group-g15/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hostile-group-g16/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hostile-group-g17/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hostile-group-g18/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hostile-group-g19/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hostile-group-g20/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hostile-group-g21/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hostile-group-g22/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hostile-group-g23/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hostile-group-g24/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hostile-group-g25/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hostile-group-g26/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/hostile-group-g27/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/logistics-and-infrastructure/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/lost-technology-lineage/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m001/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m002/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m003/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m004/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m005/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m006/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m008/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m009/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m010/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m011/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m012/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m013/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m014/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m015/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m016/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m017/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m018/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m019/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m020/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m021/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m022/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m023/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m024/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m025/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m026/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m027/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m028/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m029/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m030/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m031/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m032/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m033/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m034/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m035/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m036/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m037/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m038/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m039/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m040/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m041/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-m042/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/monster-batch-manifest/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/name-pools--cast-backfill-draft/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/operating-houses/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/random-cast-roster/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/realtime-formation-card-battle/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/ref-bannerlord/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/ref-battle-brothers/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/ref-cross-synthesis/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/ref-crusader-kings-3/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/ref-darkest-dungeon/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/ref-farland-wog-triangle/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/ref-fire-emblem-fft/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/ref-into-the-breach/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/ref-k-system/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/ref-mechanism-index/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/ref-nobunagas-ambition/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/ref-ravelen-chronicles/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/ref-songs-of-silence/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/ref-taikou-risshiden/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/ref-three-kingdoms/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/ref-unicorn-overlord/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/ref-xcom-2/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/regional-physical-ai-arcs/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/regions--readme/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/research-sources/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/save-and-determinism/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/scenario-timeline/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/seoul-station-catalog/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/sixteen-states/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/starting-presets/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/station-interior-construction/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b001/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b002/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b003/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b004/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b005/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b006/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b007/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b008/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b009/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b010/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b011/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b012/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b013/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b014/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b015/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b016/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b018/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b019/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b021/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b022/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b023/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b024/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b025/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b026/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b027/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b028/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b029/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b030/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b031/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b032/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b033/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b034/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b035/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b036/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b037/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b038/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b039/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b040/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b041/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b042/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b043/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b044/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b045/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b046/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-b047/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/story-batch-manifest/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/strategy-battle-roundtrip/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/strongholds-and-territory/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/synthetic-actors/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/travel-and-encounters/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/ui-implementation-pipeline/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/unity-architecture-implementation-plan/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/unity-architecture/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/unity-system-design/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/unofficial-fan-au-notice/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/vassal-dynasty-politics/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/warfare-and-sieges/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/world-and-subway-layers/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/world-expansion-index/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/world-map-construction/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/world-narrative-atlas/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/canon/world-relation-ledger/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/character-art/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/characters/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/economy/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/factions/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/implementation/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/janseon-core/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/logistics/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/save-determinism/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/sixteen-states/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/station-interior/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/strongholds/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/travel/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/ui-pipeline/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/warfare/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/design-store/world-layers/index.html	generated	K-generated	설계 저장소 생성물; 입력 정본으로 재생성
+GDD/proposals/Narrative-Direction.md	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/Scenario-Hold-the-Gate.md	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/2026-2-solo-dev-business-plan.html	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/2026-2-solo-dev-business-plan.md	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/README.md	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/assets/atlas.svg	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/assets/battle-rules.svg	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/assets/game-example-01.jpg	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/assets/game-example-02.jpg	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/assets/game-example-03.jpg	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/assets/game-example-04.jpg	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/assets/game-example.mp4	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/assets/layers.svg	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/assets/layers2.svg	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/assets/loop.svg	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/assets/portrait-canon.jpg	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/assets/portrait-composite.jpg	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/assets/portrait-poc-sheet.jpg	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/assets/portrait-variants.jpg	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/assets/sieges.svg	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/assets/strongholds.svg	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/assets/thesis.svg	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/assets/ui-cards.png	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/assets/ui-encounter.jpg	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/assets/unity-battle.png	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/assets/unity-encounter.png	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/assets/unity-route.png	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/assets/unity-settlement.png	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/assets/web-battle.jpg	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/assets/web-encounter.jpg	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/draft-a4.pdf	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/draft-fullpage.png	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/gonggo-prvtext.txt	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/metaversehub_2026-2_solo_developer_notice_fullpage.png	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/preview-gonggo.png	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/preview-yangsig.png	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/★(공고문) 2026 가상융합산업허브 가상융합랩 1인 개발자 인프라 & 공간 무상 지원 기업 모집(2026-2차).hwp	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/proposals/metaverse-hub-2026-2/붙임_신청서_양식.hwp	history	K-history	결정·제안·제출 원본 사실 보존
+GDD/system-design/README.md	source	E	새 전투·아트 계약 영향 문서
+GDD/system-design/index.html	source	E	새 전투·아트 계약 영향 문서
+GDD/system-design/regions/DESIGN.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+GDD/system-design/regions/app.js	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+GDD/system-design/regions/atlas-data.js	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+GDD/system-design/regions/index.html	artifact	K-history	기존 시스템/POC 시각 기록 보존
+GDD/system-design/regions/style.css	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/AGENTS.md	guide	K-guide	프로젝트 작업 지침; 공개 문서 입력 제외
+LORE/Hostile-Ecology-Index.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Hostile-Group-G01.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Hostile-Group-G02.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Hostile-Group-G03.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Hostile-Group-G04.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Hostile-Group-G05.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Hostile-Group-G06.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Hostile-Group-G07.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Hostile-Group-G08.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Hostile-Group-G09.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Hostile-Group-G10.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Hostile-Group-G11.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Hostile-Group-G12.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Hostile-Group-G13.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Hostile-Group-G14.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Hostile-Group-G15.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Hostile-Group-G16.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Hostile-Group-G17.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Hostile-Group-G18.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Hostile-Group-G19.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Hostile-Group-G20.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Hostile-Group-G21.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Hostile-Group-G22.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Hostile-Group-G23.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Hostile-Group-G24.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Hostile-Group-G25.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Hostile-Group-G26.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Hostile-Group-G27.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M001.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M002.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M003.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M004.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M005.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M006.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M008.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M009.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M010.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M011.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M012.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M013.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M014.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M015.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M016.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M017.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M018.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M019.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M020.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M021.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M022.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M023.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M024.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M025.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M026.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M027.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M028.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M029.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M030.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M031.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M032.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M033.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M034.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M035.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M036.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M037.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M038.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M039.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M040.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M041.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-M042.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Monster-Batch-Manifest.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Operating-Houses.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/README.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Regional-Physical-AI-Arcs.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B001.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B002.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B003.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B004.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B005.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B006.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B007.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B008.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B009.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B010.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B011.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B012.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B013.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B014.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B015.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B016.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B018.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B019.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B021.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B022.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B023.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B024.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B025.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B026.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B027.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B028.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B029.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B030.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B031.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B032.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B033.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B034.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B035.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B036.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B037.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B038.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B039.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B040.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B041.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B042.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B043.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B044.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B045.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B046.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-B047.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Story-Batch-Manifest.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/Synthetic-Actors.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/World-Expansion-Index.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/World-Narrative-Atlas.md	atlas-source	K	아틀라스 원본 사실 불변
+LORE/World-Relation-Ledger.md	projection	K-generated	LORE 루트 투영물; 원본 사실 불변
+LORE/ailments/Ailments.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/AGENTS.md	guide	K-guide	프로젝트 작업 지침; 공개 문서 입력 제외
+LORE/characters/Ambitions-and-Relations.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/Cast-Corridors-Index.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/Cast-Index-S4.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/Cast-Index.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/Cast-Profile-Contract.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/Cast-Registration-Template.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/Cast-Relations.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/Cast-State-01.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/Cast-State-02.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/Cast-State-03.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/Cast-State-04.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/Cast-State-05.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/Cast-State-06.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/Cast-State-07.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/Cast-State-08.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/Cast-State-09.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/Cast-State-10.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/Cast-State-11.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/Cast-State-12.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/Cast-State-13.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/Cast-State-14.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/Cast-State-15.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/Cast-State-16.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/Cast-Unaffiliated.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/Characters-Factions-and-Professions.md	source	E	새 전투·아트 계약 영향 문서
+LORE/characters/Core-Characters.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/Hangnyeol-and-Bon-gwan.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/Heirs-Names-and-World-Ledger.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/Random-Cast-Roster.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/characters/Starting-Presets.md	source	E	새 전투·아트 계약 영향 문서
+LORE/characters/Vassal-Dynasty-Politics.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/chronology/Scenario-Timeline.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/culture/AGENTS.md	guide	K-guide	프로젝트 작업 지침; 공개 문서 입력 제외
+LORE/culture/Faith-Culture-Schism.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/culture/Food-Culture.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/culture/Martial-Paths.md	source	E	새 전투·아트 계약 영향 문서
+LORE/culture/Oral-Stories.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/culture/Values-and-Policy-Scales.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/economy/Economy-and-Production.md	source	E	새 전투·아트 계약 영향 문서
+LORE/economy/Logistics-and-Infrastructure.md	source	E	새 전투·아트 계약 영향 문서
+LORE/economy/Strongholds-and-Territory.md	source	E	새 전투·아트 계약 영향 문서
+LORE/factions/AGENTS.md	guide	K-guide	프로젝트 작업 지침; 공개 문서 입력 제외
+LORE/factions/Chaebol-Houses-and-Century-Factions.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/factions/Conscription-Remnants.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/factions/Diaspora-Corridors.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/factions/External-Theaters.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/factions/Factions-and-Diplomacy.md	source	E	새 전투·아트 계약 영향 문서
+LORE/factions/Sixteen-States.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/goods/Era-Arms-and-Tech-Level.md	source	E	새 전투·아트 계약 영향 문서
+LORE/name-pools/AGENTS.md	guide	K-guide	프로젝트 작업 지침; 공개 문서 입력 제외
+LORE/name-pools/cast-backfill-draft.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/name-pools/cast-backfill-draft.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/name-pools/cast-hangnyeol.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/name-pools/clan-hangnyeol-tables.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/name-pools/clans-hangnyeol.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/name-pools/existing-names.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/name-pools/given-female.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/name-pools/given-male.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/name-pools/hangnyeol-schema.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/name-pools/hangnyeol-systems.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/name-pools/roster-100.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/name-pools/surnames-bongwan.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/name-pools/surnames.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/name-pools/values-cast.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/name-pools/values-orgs.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/offices/Offices-and-Ranks.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/overview/World-Unbinding.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/people-and-machines/People-and-Machines.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/places/AGENTS.md	guide	K-guide	프로젝트 작업 지침; 공개 문서 입력 제외
+LORE/places/Building-Reuse-Geography.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/places/Seoul-Station-Catalog.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/places/Station-Interior-Construction.md	source	E	새 전투·아트 계약 영향 문서
+LORE/places/World-Map-Construction.md	source	E	새 전투·아트 계약 영향 문서
+LORE/places/World-and-Subway-Layers.md	source	E	새 전투·아트 계약 영향 문서
+LORE/regions/AGENTS.md	guide	K-guide	프로젝트 작업 지침; 공개 문서 입력 제외
+LORE/regions/README.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/regions/content/11110.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/regions/content/11140.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/regions/content/11170.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/regions/content/11200.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/regions/content/11215.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/regions/content/11230.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/regions/content/11260.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/regions/content/11290.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/regions/content/11305.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/regions/content/11320.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/regions/content/11350.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/regions/content/11380.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/regions/content/11410.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/regions/content/11440.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/regions/content/11470.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/regions/content/11500.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/regions/content/11530.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/regions/content/11545.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/regions/content/11560.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/regions/content/11590.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/regions/content/11620.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/regions/content/11650.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/regions/content/11680.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/regions/content/11710.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/regions/content/11740.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/regions/sources/.gitignore	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/regions/sources/admdongkor-20260701.geojson	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/regions/sources/boundary-comparison.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/regions/sources/observed-levels-join.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/regions/sources/selection.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/regions/sources/seoul-metro-station-architecture-20250310.csv	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/regions/station-interiors.json	data	K-data	ID·수치·연혁 데이터 불변
+LORE/structures/Structures.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음
+LORE/technology/Lost-Technology-Lineage.md	source	K	전수 검토 완료; 이번 방향 전환에 사실 변경 없음

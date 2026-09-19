@@ -2,7 +2,9 @@
 
 ## 제품
 
-《서울:전국》은 붕괴 이후 **후세 서울**의 지하철망을 지상·지하 다층 전략 그래프로 다루는, 인물 중심 **4X + RPG**입니다. 전투는 2026-09-07 소유자 결정으로 **실시간 진형·카드 전투**로 확정됐고 기준 레퍼런스는 Songs of Silence입니다([Intent.md](/design/Intent) 결정 3). 전략 화면은 2026-09-18 결정 10으로 서울 전역 3D 하이트맵 전략맵이고, 전투 화면은 캐릭터가 왼쪽·오른쪽만 보는 사이드스크롤입니다.
+《서울:전국》은 붕괴 이후 **후세 서울**의 지하철망을 지상·지하 다층 전략 그래프로 다루는, 인물 중심 **4X + RPG**입니다. 2026-09-19 결정 11로 제품 목표 전투는 **토탈워식 부대 지휘**이고, 인물은 **애니메이션풍 정비율**입니다. 개별 영웅 액션 조작과 무쌍식 전투는 채택하지 않습니다. 2026-09-07 결정 3의 실시간 진형·카드와 Songs of Silence 기준은 목표에서 대체됐고, 현 Unity POC의 `rtfc-owner-cards-v2` 기록으로 남습니다([Intent.md](/design/Intent) 결정 3·11). 전략 화면은 2026-09-18 결정 10의 서울 전역 3D 하이트맵입니다. 전투 화면의 좌우 사이드스크롤은 POC 표현입니다. 목표 카메라는 2026-09-19 질문 시간 초과 뒤 채택한 3D 자유 지휘 기본안(팬·오빗·줌)이며, 소유자가 직접 고른 결정이 아닙니다. 각도·시야각 수치는 잠그지 않습니다.
+
+전장에서는 이름 있는 영웅 캐릭터와 병졸 분대를 구분합니다. 영웅은 병졸 인원에 포함되지 않는 별도 지휘 인물이고, 병졸 한 분대는 최대 20명입니다. 이 상한은 소규모 노선 사회의 규모를 지키기 위한 것이며, 전체 분대 수나 영웅 수를 새로 고정하지 않습니다.
 
 ## 기술 기준선
 
@@ -24,12 +26,12 @@ VContainer 외 Makcha-Unity 패키지는 현재 모듈에 실제 호출자와 �
 - Repository와 domain contract는 Unity-free 경계를 유지합니다.
 - 같은 seed와 command log는 같은 상태와 원장 hash를 만들어야 합니다.
 
-상세 계약은 [`GDD/system-design/Unity-System-Design.md`](/rules/Unity-System-Design), 실행 순서는 [`GAME-LOGIC/Unity-Architecture-Implementation-Plan.md`](/rules/Unity-Architecture-Implementation-Plan)를 따릅니다.
+상세 계약은 [`GAME-LOGIC/Unity-System-Design.md`](/rules/Unity-System-Design), 실행 순서는 [`GAME-LOGIC/Unity-Architecture-Implementation-Plan.md`](/rules/Unity-Architecture-Implementation-Plan)를 따릅니다.
 
 ## 현재 구현 범위
 
-현재 모듈 `Unity POC 통합 코어 루프`는 `Bootstrap` App scope/FSM, 배타적 `MainTitle`/`Foundation` 화면 lease, uGUI 화면, 세 역 노선과 교섭·우회·전투·정산·복귀를 구현했습니다. 전투 Core는 30Hz 고정 틱의 실시간 진형·카드 규칙(`rtfc-owner-cards-v2`)이며, 분대 명령·집계 사상자 표현의 완료 검증은 남아 있습니다([실시간 진형·카드 전투](/rules/Realtime-Formation-Card-Battle)). 동일 seed 재현과 중복 정산 거부를 실제 batchmode PlayMode에서 검증합니다. 생성 아트 슬롯 승인·연결은 별도 수용 조건이며, 코드 검증만으로 모듈 전체가 완료되지는 않습니다.
+현재 모듈 `Unity POC 통합 코어 루프`는 `Bootstrap` App scope/FSM, 배타적 `MainTitle`/`Foundation` 화면 lease, uGUI 화면, 세 역 노선과 교섭·우회·전투·정산·복귀를 구현했습니다. 이 구현은 POC이며, 결정 11 목표 전투가 아닙니다. 전투 Core는 30Hz 고정 틱의 실시간 진형·카드 규칙(`rtfc-owner-cards-v2`)이며, 분대 명령·집계 사상자 표현의 완료 검증은 남아 있습니다([실시간 진형·카드 전투](/rules/Realtime-Formation-Card-Battle)). 동일 seed 재현과 중복 정산 거부를 실제 batchmode PlayMode에서 검증합니다. 생성 아트 슬롯 승인·연결은 별도 수용 조건이며, 코드 검증만으로 모듈 전체가 완료되지는 않습니다.
 
 ## 완료 판단
 
-Foundation 아키텍처 모듈은 Wiki 계약, 정적 아키텍처 게이트, Unity compile, EditMode/PlayMode, 실제 Editor Play Mode와 네 축 시각 리뷰를 통과한 기준선입니다. 현재 모듈 `Unity POC 통합 코어 루프`는 타이틀→거점→원정→조우→전투/비전투→정산→복귀 한 바퀴와 검수된 생성 에셋이 실제 화면에 연결된 뒤에만 완료됩니다.
+Foundation 아키텍처 모듈은 Wiki 계약, 정적 아키텍처 게이트, Unity compile, EditMode/PlayMode, 실제 Editor Play Mode와 네 축 시각 리뷰를 통과한 기준선입니다. 현재 모듈 `Unity POC 통합 코어 루프`는 타이틀→거점→원정→조우→전투/비전투→정산→복귀 한 바퀴와 검수된 생성 에셋이 실제 화면에 연결된 뒤에만 완료됩니다. 결정 11의 부대 지휘 목표는 문서 계약이며, 이 POC 완료 조건을 대체하지 않습니다.

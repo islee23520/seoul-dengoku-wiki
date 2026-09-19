@@ -10,7 +10,7 @@ html, body { min-height: 100%; margin: 0; background: var(--void); color: var(--
 body { background: radial-gradient(circle at 35% 0%, #1a2634 0, transparent 42%), var(--void); }
 button, input { font: inherit; }
 a { color: #70a8c7; }
-.campaign-shell { min-height: 100vh; display: grid; grid-template-rows: auto auto 1fr auto; }
+.campaign-shell { min-height: 100vh; display: grid; grid-template-rows: auto auto auto 1fr auto; }
 .campaign-header { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 13px clamp(16px, 3vw, 36px); border-bottom: 1px solid var(--stroke); background: rgba(8, 13, 20, .94); }
 .brand { color: var(--text); text-decoration: none; }
 .brand span { display: block; color: var(--blue); font-size: 10px; font-weight: 800; letter-spacing: .18em; }
@@ -21,10 +21,21 @@ a { color: #70a8c7; }
 .resources small, .resources b { display: block; }
 .resources small { color: var(--muted); font-size: 9px; }
 .resources b { margin-top: 2px; font-family: ui-monospace, monospace; font-size: 15px; }
+.reference-boundary { display: grid; grid-template-columns: minmax(260px, .7fr) minmax(600px, 1.3fr); gap: 12px; padding: 10px clamp(16px, 3vw, 36px); border-bottom: 1px solid var(--stroke); background: rgba(8,13,20,.72); }
+.history-status, .target-status { padding: 11px 14px; border: 1px solid var(--stroke); background: var(--well); }
+.history-status { border-left: 3px solid var(--signal); }
+.history-status strong, .history-status span { display: block; }
+.history-status strong, .target-status small { color: var(--signal); font-size: 10px; letter-spacing: .12em; }
+.history-status span, .target-status p { margin: 4px 0 0; color: var(--muted); font-size: 10px; line-height: 1.55; }
+.target-status { border-color: var(--blue); }
+.target-status h1 { display: inline; margin: 0 0 0 7px; font-size: 14px; }
+.target-status div { display: flex; gap: 12px; margin-top: 6px; }
+.target-status a { font-size: 10px; }
 .stage-rail { display: grid; grid-template-columns: repeat(6, 1fr); padding: 0 clamp(16px, 3vw, 36px); border-bottom: 1px solid var(--stroke); background: #0a111a; }
 .stage-rail span { padding: 9px 6px; border-bottom: 2px solid transparent; color: #657383; font-size: 10px; text-align: center; }
 .stage-rail span.is-current { border-bottom-color: var(--signal); color: var(--text); background: rgba(201,162,39,.08); }
 .stage-rail span.is-done { color: #78929f; }
+.stage-rail small { display: block; margin-top: 2px; color: var(--signal); font-size: 7px; }
 #campaign-view { min-height: 0; padding: clamp(16px, 3vw, 38px); }
 .screen { min-height: calc(100vh - 185px); display: grid; align-content: center; }
 .hero { position: relative; overflow: hidden; min-height: min(610px, calc(100vh - 215px)); display: grid; place-items: center; border: 1px solid var(--stroke); background: linear-gradient(145deg, rgba(17,26,38,.82), rgba(8,13,20,.96)); }

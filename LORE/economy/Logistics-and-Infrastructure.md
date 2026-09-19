@@ -2,6 +2,8 @@
 
 ![보급 경로와 병목의 아이소 연결](https://github.com/islee23520/seoul-kenshi/blob/main/GAME-REFERENCE/assets/wiki/isometric-logistics.svg?raw=true)
 
+2026-09-07 위키 도표. 4방향 칸 연결은 당시 그림의 문법이며 처리량 공식이 아니다. 문서용 평면도이며 실제 게임 화면이 아니다.
+
 보급 경로의 병목과 처리량을 구간 연결과 지형으로 예측·관리합니다.
 
 물류는 재고가 있다는 사실이 아니라 필요한 종류의 물자가 허가된 경로를 통해 제때 도착하는 능력이다. 표의 수치는 모두 설계 가정으로 둔다.

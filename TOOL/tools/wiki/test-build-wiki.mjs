@@ -120,7 +120,6 @@ await testCase('happy path: banner, link rewrite, asset copy, stale cleanup, .gi
   const gitHead = await readFile(join(output, '.git', 'HEAD'), 'utf8');
 
   assert.match(home, /janseon-unofficial-au/);
-  assert.match(home, /Unofficial-Fan-AU-Notice/);
   assert.match(home, /원본: `Wikis\/game-logic\/Home\.md`/);
   assert.match(home, /커밋: `abc1234`/);
   assert.match(home, /\]\(assets\/figure\.svg\)/);
@@ -129,7 +128,6 @@ await testCase('happy path: banner, link rewrite, asset copy, stale cleanup, .gi
   assert.match(home, /\[외부 명세\]\(https:\/\/example\.com\/spec\.md#part\)/, 'external .md URL must not be rewritten');
   assert.equal(home.endsWith('\n\n'), false);
   assert.doesNotMatch(sidebar, /janseon-unofficial-au/);
-  assert.doesNotMatch(sidebar, /Unofficial-Fan-AU-Notice/);
   assert.doesNotMatch(sidebar, /원본:/);
   assert.equal(sidebar.endsWith('\n\n'), false);
   assert.match(figure, /<svg/);
@@ -624,6 +622,17 @@ await testCase('every generated image path in the real repository wiki resolves 
     }
   }
   assert.ok(checked >= 10, `expected at least 10 local image references, got ${checked}`);
+});
+
+await testCase('project guidance files are excluded from public source pages', async () => {
+  const sourceDir = await sourceWith('project-guidance', {
+    'AGENTS.md': '# 내부 지침\n\n게시 대상이 아니다.\n',
+    'Public.md': '# 공개 문서\n',
+  });
+  const outputDir = await generatedOutput('project-guidance');
+  await buildWiki({ sourceDir, assetDir: assets, outputDir, commitSha: 'guidancecheck' });
+  assert.equal(await exists(join(outputDir, 'AGENTS.md')), false, 'AGENTS.md must not be published');
+  assert.equal(await exists(join(outputDir, 'Public.md')), true, 'ordinary Markdown must still publish');
 });
 
 // ---------------------------------------------------------------------------

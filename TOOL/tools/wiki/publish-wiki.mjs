@@ -23,7 +23,7 @@ export const REQUIRED_PAGES = [
   'Campaign-Loop.md',
 ];
 
-export const CONDITIONAL_PAGES = ['Unofficial-Fan-AU-Notice.md'];
+export const CONDITIONAL_PAGES = [];
 
 const GENERATED_SENTINEL = '.janseon-wiki-generated';
 const VCS_DIRECTORY = '.git';

@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser",
+    "--headless",
+    "--disable-gpu",
+    "--no-pdf-header-footer",
+    "--print-to-pdf=/Users/ilseoblee/workspace/seoul-kenshi/GDD/proposals/metaverse-hub-2026-2/draft-a4.pdf",
+    "file:///Users/ilseoblee/workspace/seoul-kenshi/GDD/proposals/metaverse-hub-2026-2/2026-2-solo-dev-business-plan.html"
+  ],
+  "code": 0,
+  "stdout": "",
+  "stderr": "[34820:45091199:0919/205224.702387:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[34820:45091199:0919/205224.703375:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[34820:45091199:0919/205224.703441:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[34820:45091199:0919/205224.703516:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[34820:45091199:0919/205224.816033:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[34820:45091199:0919/205224.816163:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n[34820:45091199:0919/205224.816372:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670\n1065029 bytes written to file /Users/ilseoblee/workspace/seoul-kenshi/GDD/proposals/metaverse-hub-2026-2/draft-a4.pdf\n",
+  "pdfinfo_code": 0,
+  "pdfinfo": "Title:           사업계획서(콘텐츠소개서) — 가상융합랩 2026-2차 · 서울:전국\nCreator:         Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36\nProducer:        Skia/PDF m153\nCreationDate:    Sat Sep 19 20:52:25 2026 KST\nModDate:         Sat Sep 19 20:52:25 2026 KST\nCustom Metadata: no\nMetadata Stream: no\nTagged:          yes\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           6\nEncrypted:       no\nPage size:       594.96 x 841.92 pts (A4)\nPage rot:        0\nFile size:       1065029 bytes\nOptimized:       no\nPDF version:     1.4\n",
+  "size": 1065029
+}

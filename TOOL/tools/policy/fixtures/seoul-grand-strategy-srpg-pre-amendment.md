@@ -59,7 +59,7 @@ Your next move: Momus가 이 전체 계획을 무조건 승인하기 전에는 U
 
 ### Must NOT have (guardrails, anti-slop, scope boundaries)
 
-- Do not copy 日本三國 characters/polities/plot, Kenshi/TOS visual identity, Taiko historical content, or any reference title/trade dress into production names, prompts, art, UI, marketing, or Wiki.
+- Do not copy external characters, polities, plots, visual identities, historical content, titles, or trade dress into production names, prompts, art, UI, marketing, or Wiki.
 - Do not copy the full Makcha project, `Makcha.*` assemblies, Hunter02 art, generated assets, WIP handoffs, GUID-bound scenes/settings, caches, secrets, builds, or product balance.
 - Do not put UnityEngine references or static mutable state in Core/WorldGraph/Battle/Sim.
 - Do not add Entities, Addressables, glTFast, VContainer, Cinemachine, LitMotion, or other packages before a named caller and acceptance test justify each dependency.
@@ -211,7 +211,7 @@ Your next move: Momus가 이 전체 계획을 무조건 승인하기 전에는 U
   What to do / Must NOT do: Model named actors, sparse meaningful relationships, parties, professions, offices, factions and legitimacy sources; support blood, adoption, apprenticeship, organizational and appointed succession; implement promotion/demotion between active and aggregate records. Avoid all-pairs relationships and fixed good/evil factions.
   Recommended task executor category: `deep` — interconnected domain invariants and succession edge cases.
   Parallelization: Wave 1 | Blocked by: 5, 8, 9 | Blocks: 11, 12, 17, 23
-  References: `SYNTHESIS.md` people/factions section; 日本三國 `wave-1-nippon-story.md`; Taiko `wave-1-reference-games.md`; `wave-3-strategy-contract.md` invariants.
+  References: `SYNTHESIS.md` people/factions section; external reference research; `wave-3-strategy-contract.md` invariants.
   Acceptance criteria: TDD covers join/leave, leader death, capture, office vacancy, multiple succession claims, sparse relationship eviction, aggregate promotion/demotion and no invalid reciprocal references; every change emits cause-linked events.
   QA scenarios: happy — simulate an unknown courier rising through station office and faction leadership by missions/relations; failure — kill/capture the leader with an empty successor set and verify deterministic vacancy/party handling. Evidence `<attemptDir>/task-10-seoul-grand-strategy-srpg.json`.
   Commit: Y | `feat(sim): add character and faction progression`

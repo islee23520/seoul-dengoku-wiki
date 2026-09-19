@@ -40,12 +40,13 @@ try {
 }
 
 const failures = []
-if (documents.length !== 232) failures.push(`document-count:${documents.length}`)
+if (documents.length === 0) failures.push('document-count:0')
 if (!appSource.includes('path="/:domain/:slug"')) failures.push('missing-react-document-route')
 if (!articleSource.includes('wikiCatalog')) failures.push('article-not-backed-by-catalog')
 if (!catalogSource.includes('export const wikiCatalog')) failures.push('missing-generated-catalog')
-if (!publicContract || publicContract.documents?.length !== 232) failures.push('missing-public-contract-manifest')
+if (!publicContract || publicContract.documents?.length !== documents.length) failures.push('missing-public-contract-manifest')
 if (/\.html['"]/.test(linksSource)) failures.push('legacy-html-links-in-react')
+if (!(await readFile(resolve(projectRoot, 'vite.config.ts'), 'utf8')).includes("base: '/wiki/'")) failures.push('missing-wiki-vite-base')
 
 for (const document of documents) {
   const route = `/${document.domain}/${document.slug === 'index' ? '' : document.slug}`

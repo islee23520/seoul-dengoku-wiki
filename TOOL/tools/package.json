@@ -16,7 +16,11 @@
     "remote:setup": "node unity/setup-unity-remote.mjs",
     "remote:start": "node unity/start-unity-remote.mjs",
     "remote:cli": "node unity/run-unity-remote-cli.mjs",
-    "test:unity-remote": "node --test unity/test-unity-remote.mjs"
+    "test:unity-remote": "node --test unity/test-unity-remote.mjs",
+    "deploy:hub:test": "node --test deploy/test-hub-deploy.mjs deploy/test-hub-docker-contract.mjs",
+    "test:retired-reference-terms": "node --test wiki/test-retired-reference-terms.mjs",
+    "deploy:hub:build": "node deploy/build-hub-docker.mjs",
+    "deploy:hub": "node deploy/deploy-hub.mjs"
   },
   "dependencies": {
     "entities": "8.0.0",

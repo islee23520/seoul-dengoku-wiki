@@ -229,14 +229,16 @@
       《서울:전국》은 붕괴 이후 지하철망을 영토로 쓰는 인물 중심 4X+RPG다.
       규칙(세계가 어떻게 바뀌는지)은 Unity 없이 <code>Janseon.Core</code>에 두고,
       화면·씬·입력은 <code>Janseon.Foundation</code>이 명령을 보낼 뿐이다.
-      코어 루프는 POC에서 출발했고 현재 이동 그래프는 OSM 작업 카탈로그를 읽는다. 지역 전체의 면적·시설·내용은 별도의 <a href="regions/">서울 지역 총람</a>에서 확인한다. 16국 시뮬레이션과 파일 저장은 아직 구현 범위 밖이다.
+      2026-09-19 목표에서 전투의 주 입력은 부대 지휘이고, 인물 그림은 애니메이션풍 정비율이다. 카메라·일시정지는 질문 만료 뒤 채택한 설계 기본값(3D 자유 지휘, 닫힌 전투 안에서만 정지 중 명령)이며 소유자 명시 결정이 아니다.
+      아래 조립·수치·아이소 그림은 현재 Unity POC 측정이다. 카드 전투와 격자 문법을 새 목표로 읽지 않는다.
+      코어 루프는 POC에서 출발했고 현재 이동 그래프는 OSM 작업 카탈로그를 읽는다. 지역 전체의 면적·시설·내용은 별도의 <a href="regions/">서울 지역 총람</a>에서 확인한다. 부대 지휘 화면 초안은 <a href="total-war-ui/">total-war-ui</a>다. 16국 시뮬레이션과 파일 저장은 아직 구현 범위 밖이다.
     </p>
     <p class="src">
       근거:
-      <code>docs/game-logic/Home.md</code>,
-      <code>Game-Thesis.md</code>,
-      <code>Unity-Architecture.md</code>,
-      <code>Unity-System-Design.md</code>,
+      <code>GDD/Home.md</code>,
+      <code>GDD/Game-Thesis.md</code>,
+      <code>GAME-LOGIC/Unity-Architecture.md</code>,
+      <code>GAME-LOGIC/Unity-System-Design.md</code>,
       <code>Concept.md</code>
     </p>
   </header>
@@ -294,7 +296,7 @@
         <text x="772" y="322" font-size="13">PurposeRng</text>
         <text x="772" y="342" font-size="11" fill="#6b6256">World/Battle/Encounter/Loot</text>
       </svg>
-      <p class="src">의존 방향은 Foundation → Core 한 쪽이다. Core는 Unity·VContainer를 모른다. <code>Game/Assets/Janseon/AGENTS.md</code>, <code>Core/Core.asmdef</code>.</p>
+      <p class="src">의존 방향은 Foundation → Core 한 쪽이다. Core는 Unity·VContainer를 모른다. <code>GAME/Assets/Janseon/AGENTS.md</code>, <code>Core/Core.asmdef</code>.</p>
     </section>
 
     <section id="assemblies">
@@ -308,7 +310,7 @@
         </button>
         <div class="layer-detail" id="d-core">
           엔진 없는 규칙이다. 전역 가변 상태를 두지 않는다. 화면이 상태를 직접 고치지 않고 명령을 보내면, 결과는 사건 원장에 남는다.
-          파일: <span class="path">Game/Assets/Janseon/Core/DeterministicCore.cs</span>,
+          파일: <span class="path">GAME/Assets/Janseon/Core/DeterministicCore.cs</span>,
           <span class="path">RouteDomain.cs</span>,
           <span class="path">CampaignDomain.cs</span>,
           <span class="path">SettlementDomain.cs</span>,
@@ -321,7 +323,7 @@
         </button>
         <div class="layer-detail" id="d-data">
           규칙이 아니라 에디터에서 찍는 데이터다. Repository 인터페이스와 DTO는 Core 쪽에 두고, 파일·Unity API 구현만 어댑터가 갖는다.
-          근거: <span class="path">docs/game-logic/Unity-Architecture.md</span> 영역별 책임 표,
+          근거: <span class="path">GAME-LOGIC/Unity-Architecture.md</span> 영역별 책임 표,
           <span class="path">Unity-System-Design.md</span> Repository 경계.
         </div>
         <button class="layer" data-layer="foundation" type="button">
@@ -373,7 +375,7 @@
               </tr>
             </tbody>
           </table>
-          <p class="src"><code>Game/AGENTS.md</code> · <code>ProjectSettings/EditorBuildSettings.asset</code> · <code>Unity-System-Design.md</code> 씬 소유권.</p>
+          <p class="src"><code>GAME/AGENTS.md</code> · <code>GAME/ProjectSettings/EditorBuildSettings.asset</code> · <code>GAME-LOGIC/Unity-System-Design.md</code> 씬 소유권.</p>
         </div>
         <div>
           <p>설계 초안 표는 Booting→Foundation 직행이었다. 코드는 타이틀 lease가 생겨 <strong>Booting에서 OpenMainTitle만</strong> 받는다. SceneLoadSucceeded enum은 있으나 전이표는 쓰지 않고, ready 뒤 <code>TryCommitPendingTarget()</code>가 안정 상태로 옮긴다.</p>
@@ -403,8 +405,9 @@
 
     <section id="loop">
       <h2>캠페인 루프를 코드 단계로 옮기는 방식</h2>
+      <p><span class="badge partial">현재 POC 보드</span> 아래 여섯 칸과 아이소 그림은 Unity POC의 거점 왕복이다. 원정 설계의 결말은 귀환·정착·정복·방랑·교역이며, 정산이 곧 귀환은 아니다.</p>
       <img class="wiki" src="../../GAME-REFERENCE/assets/wiki/isometric-campaign-loop.svg" alt="출격하고 돌아오는 여섯 단계 아이소 그림">
-      <p>디자인 여섯 단계(<code>Campaign-Loop.md</code>)는 <code>CampaignStage</code> enum과 명령 종류로 그대로 옮겼다. 규모(16국, 하루/주 경제)는 아직 없다.</p>
+      <p>디자인 여섯 단계(<code>GAME-LOGIC/Campaign-Loop.md</code>)는 <code>CampaignStage</code> enum과 명령 종류로 그대로 옮겼다. 규모(16국, 하루/주 경제)는 아직 없다.</p>
       <div class="loop" id="loop-stages">
         <button class="stage-btn" type="button" data-stage="0" aria-pressed="true">1 거점 준비<small>BasePreparation · Depart / Rest</small></button>
         <button class="stage-btn" type="button" data-stage="1">2 원정<small>ExpeditionTravel · Travel</small></button>
@@ -414,12 +417,12 @@
         <button class="stage-btn" type="button" data-stage="5">6 복귀<small>BaseReady · CompleteReturn</small></button>
       </div>
       <div class="stage-panel" id="loop-panel"></div>
-      <p class="src"><code>Game/Assets/Janseon/Core/CampaignDomain.cs</code> <code>CampaignStage</code>, <code>CampaignCommandKind</code>, <code>CampaignApi</code>. 규칙 버전 <code>poc-campaign-loop-v1</code>.</p>
+      <p class="src"><code>GAME/Assets/Janseon/Core/CampaignDomain.cs</code> <code>CampaignStage</code>, <code>CampaignCommandKind</code>, <code>CampaignApi</code>. 규칙 버전 <code>poc-campaign-loop-v1</code>.</p>
     </section>
 
     <section id="world">
       <h2>월드맵 — 노선 그래프, 층, 격자</h2>
-      <p>세계 진실은 역과 연결의 그래프다. 화면은 지금 필요한 노선만 보여 주고, 역을 고르면 같은 그래프에서 4방향 격자를 펼친다. 대각 입력은 행동을 쓰지 않고 거절한다.</p>
+      <p>세계 진실은 역과 연결의 그래프다. <span class="badge ship">현재 POC</span> 화면은 지금 필요한 노선만 보여 주고, 역을 고르면 같은 그래프에서 4방향 격자를 펼친다. 대각 입력은 행동을 쓰지 않고 거절한다. 이 격자 문법은 POC 측정이며 2026-09-19 목표 전장이 아니다.</p>
       <img class="wiki" src="../../GAME-REFERENCE/assets/wiki/isometric-subway-layers.svg" alt="지하철 다층 공간의 층과 시야">
       <div class="grid-2">
         <article class="card">
@@ -439,9 +442,9 @@
           <ul class="tight">
             <li>이동 거절: SameNode, UnknownNode, NotAdjacent.</li>
             <li>칸 문법: <code>GridCoord</code>와 <code>CardinalDirection</code> (북·동·남·서). 한 칸은 1.5m / 1.5 Unity 유닛. 이 숫자는 <code>Grid.cs</code>가 아니라 <code>GenreContract.json</code>에 있다.</li>
-            <li>탐색과 전투가 같은 격자를 쓴다. <code>loop.explorationAndCombatShareGrid</code>.</li>
+            <li>POC는 탐색과 전투가 같은 격자를 쓴다. <code>loop.explorationAndCombatShareGrid</code>. 새 목표 전장은 이 칸 규칙을 승격하지 않는다.</li>
           </ul>
-          <p class="src"><code>Core/RouteDomain.cs</code> <code>CreateYeongdeungpoSindorimGuro</code> · <code>Core/Grid.cs</code> · <code>Game/ProjectSettings/GenreContract.json</code></p>
+          <p class="src"><code>Core/RouteDomain.cs</code> <code>CreateYeongdeungpoSindorimGuro</code> · <code>Core/Grid.cs</code> · <code>GAME/ProjectSettings/GenreContract.json</code></p>
         </article>
         <article class="card">
           <h3>문서에만 있는 서울</h3>
@@ -527,12 +530,16 @@
     </section>
 
     <section id="battle">
-      <h2>전투장 — 같은 격자, 다른 시계</h2>
-      <p>카메라를 바꾸지 않는다. 탐색에 쓰던 고정 직교 아이소(yaw 45°, pitch 35.264°)와 1.5m 칸 위에서 시간만 30Hz 틱으로 흐른다. 병사 한 명을 한 칸씩 옮기는 턴제가 아니다.</p>
+      <h2>전투장 — 현재 POC와 2026-09-19 목표</h2>
+      <div class="callout">
+        <strong>목표 (문서).</strong> 주 입력은 부대 선택과 현재 지시 교체다. 이동·공격·진형 방향·정지·철수를 내린다. 미리보기 취소는 이전 지시를 남긴다. 영웅 직접 조작·카드 덱·명령 큐·감속·배속은 없다. 인물 그림은 애니메이션풍 정비율이다. 카메라·일시정지는 질문 만료 뒤 채택한 설계 기본값이며 소유자 명시 결정이 아니다. 카메라는 팬·오빗·줌의 3D 자유 지휘 시점이고 각도·FOV는 없다. 일시정지는 그 파티의 닫힌 전투만 멈추며, 정지 중 미리보기·확정을 받는다. 수락된 명령은 재개 뒤 다음 시뮬레이션 단계에서 입력 순서대로 현재 지시를 교체한다. 문서의 탑다운 도식은 공간 설명용 청사진이며 실제 게임 렌더가 아니다.
+        화면 초안은 <a href="total-war-ui/">total-war-ui</a>.
+      </div>
+      <p><span class="badge ship">아래는 현재 Unity POC 측정</span> 카메라를 바꾸지 않는다. 탐색에 쓰던 고정 직교 아이소(yaw 45°, pitch 35.264°)와 1.5m 칸 위에서 시간만 30Hz 틱으로 흐른다. 병사 한 명을 한 칸씩 옮기는 턴제가 아니다. 이 아이소·카드 수치는 새 목표가 아니다.</p>
       <img class="wiki" src="../../GAME-REFERENCE/assets/wiki/isometric-realtime-formation-card-battle.svg" alt="실시간 진형·카드 전투 아이소">
       <div class="grid-2">
         <article class="card">
-          <h3>한 판이 시작될 때</h3>
+          <h3>한 판이 시작될 때 (POC)</h3>
           <p><span class="badge ship">BattleContext 동결</span></p>
           <p>캠페인이 넘기는 묶음: 캠페인 ID, 역(<code>StationId</code>), 세계 시드, 틱, 물자, 평판, 규칙 버전, 조우 identity, 시작 HP. 여기서 <code>BattleId</code>와 컨텍스트 해시를 만든다. 전투가 시작된 뒤 바깥 세계를 다시 읽지 않는다.</p>
           <ul class="tight">
@@ -545,16 +552,16 @@
         </article>
         <article class="card">
           <h3>플레이어가 하는 일 / 안 하는 일</h3>
-          <p><span class="badge partial">규칙 있음, 분대 명령 미완</span></p>
+          <p><span class="badge partial">POC 규칙 있음, 분대 명령 미완</span></p>
           <ul class="tight">
-            <li>하는 일: 전투 전 전열·후열·측면과 4방향 정면. 전투 중 인물 카드 <code>(OwnerUnitId, CardId)</code>와 거점 카드 최대 2장. 재충전 300~900틱. 덱 구축·무작위 드로우 없음.</li>
-            <li>안 하는 일: 개별 병사 한 칸 조작. UI Transform으로 Core 이동을 대신하기.</li>
-            <li>시계: 30틱/초, 칸 이동 10틱, 공격 쿨 30틱, 한 판 상한 9000틱. D1 드라이버만 프레임당 최대 4스텝.</li>
-            <li>사기 기본 60, 경고 40, 회복 상한 80. 항복은 사기 20 이하·지휘관 HP 50% 이하·퇴로가 모두 참일 때만. 지휘관 타일 점거는 퇴로 차단이 아니다.</li>
+            <li>POC가 하는 일: 전투 전 전열·후열·측면과 4방향 정면. 전투 중 인물 카드 <code>(OwnerUnitId, CardId)</code>와 거점 카드 최대 2장. 재충전 300~900틱. 덱 구축·무작위 드로우 없음.</li>
+            <li>POC도 목표도 안 하는 일: 개별 병사 한 칸 조작. 영웅 콤보 직접 입력. UI Transform으로 Core 이동을 대신하기.</li>
+            <li>POC 시계: 30틱/초, 칸 이동 10틱, 공격 쿨 30틱, 한 판 상한 9000틱. D1 드라이버만 프레임당 최대 4스텝.</li>
+            <li>POC 항복: 사기 기본 60, 경고 40, 회복 상한 80. 사기 20 이하·지휘관 HP 50% 이하·퇴로가 모두 참일 때만. 이 세 조건 합은 POC 기록이며 새 항복 조건이 아니다. 막힌 퇴로에서도 항복 선택은 남는다.</li>
           </ul>
           <p>문서의 전장 원형(작은 역사, 환승역, 종착역, 터널, 지상 폐허, 차량기지, 한강 횡단)은 설계다. 런타임은 12×8 또는 Heightmap 크기만 연다.</p>
-          <p><span class="badge plan">설계만</span> 분대 Move/Attack/SetFacing 완료 검증, 0..4 집계 생존수 표시. 정산은 논리 UnitId와 남은 HP만 본다.</p>
-          <p class="src"><code>Realtime-Formation-Card-Battle.md</code> · <code>Strategy-Battle-Roundtrip.md</code> · <code>Intent.md</code> 결정 3</p>
+          <p><span class="badge plan">POC 미완 / 목표 문서</span> 분대 Move/Attack/SetFacing은 목표 부대 지휘와 맞닿는다. 카드 HUD·0..4 집계 표시는 POC 계약이다. 정산은 논리 UnitId와 남은 HP만 본다.</p>
+          <p class="src"><code>GAME-LOGIC/Realtime-Formation-Card-Battle.md</code> · <code>GAME-LOGIC/Strategy-Battle-Roundtrip.md</code> · <code>Intent.md</code> 결정 3(카드, POC) · 2026-09-19 부대 지휘</p>
         </article>
       </div>
     </section>
@@ -583,7 +590,7 @@
           </ul>
         </article>
       </div>
-      <p class="src"><code>docs/game-logic/Save-and-Determinism.md</code> · <code>Unity-System-Design.md</code> 저장과 결정성 · <code>ToDo.md</code> 비목표</p>
+      <p class="src"><code>GAME-LOGIC/Save-and-Determinism.md</code> · <code>GAME-LOGIC/Unity-System-Design.md</code> 저장과 결정성 · <code>ToDo.md</code> 비목표. 목표 문장은 전투 턴 경계를 만들지 않는다.</p>
     </section>
 
     <section id="status">
@@ -615,14 +622,14 @@
             <td><span class="badge ship">POC 지도</span></td>
           </tr>
           <tr class="ship-row">
-            <td>BattleContext 동결, 전장 12×8 또는 Heightmap, 30Hz 진형·카드</td>
+            <td>BattleContext 동결, 전장 12×8 또는 Heightmap, 30Hz 진형·카드 (POC, 새 목표 아님)</td>
             <td><code>BattleContext</code> · <code>ArenaState</code> · <code>rtfc-owner-cards-v2</code></td>
-            <td><span class="badge ship">전투 Core</span></td>
+            <td><span class="badge ship">전투 Core POC</span></td>
           </tr>
           <tr class="ship-row">
-            <td>장르 계약: 카메라 45/35.264, 타일 1.5, 2.5등신</td>
-            <td><code>ProjectSettings/GenreContract.json</code></td>
-            <td><span class="badge ship">잠금</span></td>
+            <td>장르 계약: 카메라 45/35.264, 타일 1.5, 2.5등신 (현재 POC 잠금. 목표 그림은 정비율 애니메이션풍. 목표 카메라 기본값은 팬·오빗·줌, 각도/FOV 수치 없음)</td>
+            <td><code>GAME/ProjectSettings/GenreContract.json</code></td>
+            <td><span class="badge ship">POC 잠금</span></td>
           </tr>
           <tr class="plan-row">
             <td>생성 아트 슬롯을 실제 HUD/월드에 연결</td>
@@ -655,14 +662,14 @@
             <td><span class="badge plan">비목표</span></td>
           </tr>
           <tr class="plan-row">
-            <td>분대 명령·집계 사상자 표현 완료 검증</td>
-            <td>전투 표시 계약 0..4</td>
-            <td><span class="badge plan">미완료</span></td>
+            <td>POC 분대 명령·집계 사상자 표현 완료 검증. 목표 문서의 부대 지휘와 숫자를 섞지 않는다</td>
+            <td>전투 표시 계약 0..4 (POC)</td>
+            <td><span class="badge plan">POC 미완료</span></td>
           </tr>
           <tr class="plan-row">
-            <td>카메라 회전, 원근, 대각 이동, 네 번째 gameplay 씬</td>
+            <td>카메라 회전, 원근, 대각 이동, 네 번째 gameplay 씬 — 현재 POC 금지. 목표 기본값의 팬·오빗·줌을 이 POC 금지 목록으로 읽지 않는다</td>
             <td>—</td>
-            <td><span class="badge plan">금지</span></td>
+            <td><span class="badge plan">POC 금지</span></td>
           </tr>
         </tbody>
       </table>
@@ -684,7 +691,7 @@
 
   <footer>
     근거를 읽은 날짜 기준 작업 사본. 제품 코드를 이 폴더가 바꾸지 않는다.
-    위키 그림은 <code>docs/assets/wiki/</code>의 기존 SVG를 상대 경로로 연다.
+    위키 그림은 <code>GAME-REFERENCE/assets/wiki/</code>의 기존 SVG를 상대 경로로 연다. 아이소 그림은 POC 기록이다.
   </footer>
 
   <script>
