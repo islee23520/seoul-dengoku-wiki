@@ -39,6 +39,8 @@ npm --prefix GAME-LOGIC/wiki-react run test:links
 npm --prefix GAME-LOGIC/wiki-react run test:states
 npm --prefix GAME-LOGIC/wiki-react run test:assets
 npm --prefix GAME-LOGIC/wiki-react run test:people
+npm --prefix GAME-LOGIC/wiki-react run test:person-details
+npm --prefix GAME-LOGIC/wiki-react run test:territory-map
 npm --prefix GAME-LOGIC/wiki-react run test:discovery
 node --test TOOL/tools/wiki/test-retired-reference-terms.mjs
 node --test TOOL/tools/wiki/test-wiki-parity.mjs

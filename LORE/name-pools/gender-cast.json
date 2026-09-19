@@ -1,0 +1,7178 @@
+{
+  "schema": "seoul-dengoku.cast-gender.v2",
+  "owner_decision": "2026-09-19 사용자 확정: 성별 범주는 여성·남성만 사용한다. 기존 사용자 지정 성별은 as-is로 보존하고, 미지정 인물은 국가별 설정에 따라 배정한다.",
+  "count": 1004,
+  "categories": [
+    "여성",
+    "남성"
+  ],
+  "assignment": "이름 인상을 사용하지 않는다. 사용자 지정 성별을 먼저 잠그고, 국가별 조직 설정의 여성 비율을 장부 순서 전체에 균등 분산한다. 같은 입력은 항상 같은 결과를 만든다.",
+  "policies": [
+    {
+      "state": "S00",
+      "people": 2,
+      "female_ratio": 0.5,
+      "female_count": 1,
+      "male_count": 1,
+      "reason": "무소속 이동 일행은 여성·남성 동수"
+    },
+    {
+      "state": "S01",
+      "people": 65,
+      "female_ratio": 0.5,
+      "female_count": 32,
+      "male_count": 33,
+      "reason": "급수·배급 당직은 여성·남성 동수"
+    },
+    {
+      "state": "S02",
+      "people": 65,
+      "female_ratio": 0.45,
+      "female_count": 29,
+      "male_count": 36,
+      "reason": "공단·규격 조합은 남성 55%, 여성 45%"
+    },
+    {
+      "state": "S03",
+      "people": 65,
+      "female_ratio": 0.45,
+      "female_count": 29,
+      "male_count": 36,
+      "reason": "차체·정비 산업국은 남성 55%, 여성 45%"
+    },
+    {
+      "state": "S04",
+      "people": 66,
+      "female_ratio": 0.5,
+      "female_count": 33,
+      "male_count": 33,
+      "reason": "장로회 구휼·당직 조직은 여성·남성 동수"
+    },
+    {
+      "state": "S05",
+      "people": 65,
+      "female_ratio": 0.35,
+      "female_count": 23,
+      "male_count": 42,
+      "reason": "상수 군정은 남성 65%, 여성 35%"
+    },
+    {
+      "state": "S06",
+      "people": 61,
+      "female_ratio": 0.5,
+      "female_count": 30,
+      "male_count": 31,
+      "reason": "정부 기록·행정 조직은 여성·남성 동수"
+    },
+    {
+      "state": "S07",
+      "people": 61,
+      "female_ratio": 0.4,
+      "female_count": 24,
+      "male_count": 37,
+      "reason": "철도 환적·울타리 당직은 남성 60%, 여성 40%"
+    },
+    {
+      "state": "S08",
+      "people": 61,
+      "female_ratio": 0.5,
+      "female_count": 30,
+      "male_count": 31,
+      "reason": "교무·교당 당직은 여성·남성 동수"
+    },
+    {
+      "state": "S09",
+      "people": 62,
+      "female_ratio": 0.5,
+      "female_count": 31,
+      "male_count": 31,
+      "reason": "경제 연합회·송신 조직은 여성·남성 동수"
+    },
+    {
+      "state": "S10",
+      "people": 62,
+      "female_ratio": 0.5,
+      "female_count": 31,
+      "male_count": 31,
+      "reason": "종단·구휼 조직은 여성·남성 동수"
+    },
+    {
+      "state": "S11",
+      "people": 61,
+      "female_ratio": 0.5,
+      "female_count": 30,
+      "male_count": 31,
+      "reason": "기업형 냉각·전산 조직은 여성·남성 동수"
+    },
+    {
+      "state": "S12",
+      "people": 62,
+      "female_ratio": 0.4,
+      "female_count": 25,
+      "male_count": 37,
+      "reason": "호송·배차 조직은 남성 60%, 여성 40%"
+    },
+    {
+      "state": "S13",
+      "people": 62,
+      "female_ratio": 0.55,
+      "female_count": 34,
+      "male_count": 28,
+      "reason": "의약·치료 조직은 여성 55%, 남성 45%"
+    },
+    {
+      "state": "S14",
+      "people": 62,
+      "female_ratio": 0.35,
+      "female_count": 22,
+      "male_count": 40,
+      "reason": "관문 군정은 남성 65%, 여성 35%"
+    },
+    {
+      "state": "S15",
+      "people": 61,
+      "female_ratio": 0.5,
+      "female_count": 30,
+      "male_count": 31,
+      "reason": "교구·배급 인준 조직은 여성·남성 동수"
+    },
+    {
+      "state": "S16",
+      "people": 61,
+      "female_ratio": 0.45,
+      "female_count": 27,
+      "male_count": 34,
+      "reason": "노동·건설 총연맹은 남성 55%, 여성 45%"
+    }
+  ],
+  "people": [
+    {
+      "name": "조재표",
+      "state": "S00",
+      "gender": "남성",
+      "source": "S00 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "이연",
+      "state": "S00",
+      "gender": "여성",
+      "source": "사용자 확정 성인 여성",
+      "user_locked": true
+    },
+    {
+      "name": "한재목",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "이서담",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "김태운",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "박누리",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "최한결",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "정모란",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "장필규",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "임바다",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "유세진",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "허도담",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "구태윤",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "진하겸",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "채온결",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "표시완",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "명우재",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "제윤",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "변고운",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "허은찬",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "구하온",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "진세빈",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "채한솔",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "고늘결",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "배초담",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "류한뫼",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "엄새울",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "여리안",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "기바름",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "우오름",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "이민석",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "송은지",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "성수현",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "임건우",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "백미래",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "이늘민",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "송재현",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "성사현",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "임서나",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "백산석",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "이다민",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "송하지",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "성달현",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "임람나",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "백차래",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "이하석",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "송다지",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "차자원",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "한북우",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "허바우",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "최아아",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "고늘진",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "구람희",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "신차민",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "노솔호",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "조바원",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "양자태",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "김빛호",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "안새민",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "성하현",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "임달나",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "남아은",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "정남준",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "문숲민",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "민차현",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "안구민",
+      "state": "S01",
+      "gender": "남성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "곽가현",
+      "state": "S01",
+      "gender": "여성",
+      "source": "S01 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "강민서",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "정시우",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "김나율",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "이강묵",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "박소언",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "최다인",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "장우석",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "임채원",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "한지온",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "허다온",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "구찬솔",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "진우람",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "채리울",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "표강호",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "명소이",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "제하온",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "변시람",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "표예담",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "명다해",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "제문석",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "변주아",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "종마루",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "고모래",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "배온결",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "류겨레",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "엄누리",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "여시온",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "기필호",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "박도윤",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "류동현",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "차예원",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "한현우",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "허하우",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "박하은",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "류람현",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "차차환",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "한하서",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "허다우",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "박바윤",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "류동연",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "차름환",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "한나우",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "허파서",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "박솔윤",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "류바현",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "주타인",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "오별서",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "유돌훈",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "정카준",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "문달은",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "민나우",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "권파윤",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "하구재",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "윤가율",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "손타연",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "이산민",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "송다현",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "차동환",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "한름서",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "심카현",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "강늘유",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "양람태",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "진파혁",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "송강현",
+      "state": "S02",
+      "gender": "남성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "성라현",
+      "state": "S02",
+      "gender": "여성",
+      "source": "S02 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "정호준",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "정하린",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "최은재",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "이봄결",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "김도하",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "유민호",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "박진솔",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "장예린",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "임시온",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "허서겸",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "구연재",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "진채온",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "채봄",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "표지안",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "명해솔",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "제라온",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "변태온",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "허미리",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "구선율",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "진마루",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "채무진",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "우다온",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "고초윤",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "배서율",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "류하늘",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "엄도한",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "여다솜",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "기서진",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "송별하",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "최수아",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "홍상훈",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "주다인",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "오바서",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "유세훈",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "최름아",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "홍나원",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "주우석",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "오솔서",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "유바영",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "최자훈",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "홍북원",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "주바인",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "오마호",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "유은영",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "최구아",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "홍가훈",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "우금민",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "서빛은",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "남새원",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "조동준",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "양름태",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "진마린",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "황은아",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "곽강호",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "장라원",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "배금원",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "박다은",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "홍자원",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "주북석",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "서돌서",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "노하호",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "조달원",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "배마원",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "김은호",
+      "state": "S03",
+      "gender": "남성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "류숲현",
+      "state": "S03",
+      "gender": "여성",
+      "source": "S03 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "임하준",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "임초원",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "오경재",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "한소미",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "박세린",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "김보람",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "이준택",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "최나래",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "정가온",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "장민재",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "유하은",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "허겸",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "구도영",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "진모래",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "채구름",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "표산하",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "명강산",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "제하율",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "변오름",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "표누리",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "명우솔",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "제바름",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "변석훈",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "종나솔",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "고은하",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "배나경",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "류다인",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "엄미래",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "여민우",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "기하겸",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "정예은",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "고영호",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "우경민",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "서다은",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "남재원",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "정바준",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "고유진",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "우은민",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "서구서",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "남가은",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "정타준",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "고별호",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "우돌진",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "서아서",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "남남원",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "정강은",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "고라호",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "구서결",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "신산빈",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "노바아",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "윤북율",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "손바호",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "김아호",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "안남늘",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "성숲현",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "임사우",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "백서래",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "최바아",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "고타진",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "우별민",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "신새민",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "하동재",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "윤름율",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "백아래",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "이남민",
+      "state": "S04",
+      "gender": "남성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "홍람원",
+      "state": "S04",
+      "gender": "여성",
+      "source": "S04 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "배우진",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "김우찬",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "정소율",
+      "state": "S05",
+      "gender": "여성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "장석윤",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "이윤서",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "박하율",
+      "state": "S05",
+      "gender": "여성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "최도윤",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "임겨레",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "한보라",
+      "state": "S05",
+      "gender": "여성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "양필호",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "주은솔",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "차나루",
+      "state": "S05",
+      "gender": "여성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "설강우",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "지목현",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "마길상",
+      "state": "S05",
+      "gender": "여성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "연하진",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "나효원",
+      "state": "S05",
+      "gender": "여성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "양기석",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "주단아",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "차윤목",
+      "state": "S05",
+      "gender": "여성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "설봄이",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "우지호",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "종하린",
+      "state": "S05",
+      "gender": "여성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "고재민",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "배은찬",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "류가온",
+      "state": "S05",
+      "gender": "여성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "엄시완",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "여서하",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "남휘강",
+      "state": "S05",
+      "gender": "여성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "강지유",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "문가은",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "구한결",
+      "state": "S05",
+      "gender": "여성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "신수빈",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "심별현",
+      "state": "S05",
+      "gender": "여성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "강하준",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "문아은",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "구남희",
+      "state": "S05",
+      "gender": "여성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "신강민",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "심라현",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "강금유",
+      "state": "S05",
+      "gender": "여성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "문빛민",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "구새희",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "신카빈",
+      "state": "S05",
+      "gender": "여성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "심늘양",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "강숲유",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "문사은",
+      "state": "S05",
+      "gender": "여성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "민하현",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "권다윤",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "하자은",
+      "state": "S05",
+      "gender": "여성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "장별린",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "배돌민",
+      "state": "S05",
+      "gender": "여성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "이카석",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "송늘지",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "차람원",
+      "state": "S05",
+      "gender": "여성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "한차우",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "유솔훈",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "정가준",
+      "state": "S05",
+      "gender": "여성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "문금은",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "구빛희",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "황바아",
+      "state": "S05",
+      "gender": "여성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "곽북호",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "장바원",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "허카우",
+      "state": "S05",
+      "gender": "여성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "박늘은",
+      "state": "S05",
+      "gender": "남성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "고나진",
+      "state": "S05",
+      "gender": "여성",
+      "source": "S05 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "윤서린",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "강예준",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "조하린",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "윤지율",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "오서율",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "서라온",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "지서윤",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "마도한",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "연지우",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "나선재",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "양해온",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "주리안",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "차세온",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "설다흰",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "지한솔",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "마은결",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "연태솔",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "나봄결",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "홍예준",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "추서윤",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "어태산",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "란지호",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "섭도윤",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "평예준",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "조이록",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "조예준",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "양서현",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "민시현",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "권금윤",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "노주아",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "조새준",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "양카태",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "민연우",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "권숲윤",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "노사호",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "조서원",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "양산태",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "민다현",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "권하린",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "노달호",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "조람준",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "양차현",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "진솔린",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "황바진",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "곽타호",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "임빛나",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "백새래",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "박하윤",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "류달현",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "주나인",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "오파서",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "남구원",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "강라준",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "양서태",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "민산우",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "안자늘",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "성별현",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "임돌우",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "유하훈",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "최달아",
+      "state": "S06",
+      "gender": "남성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "문마은",
+      "state": "S06",
+      "gender": "여성",
+      "source": "S06 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "박태겸",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "신가온",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "권시온",
+      "state": "S07",
+      "gender": "여성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "황지호",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "송이든",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "강다은",
+      "state": "S07",
+      "gender": "여성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "양건우",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "주서람",
+      "state": "S07",
+      "gender": "여성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "차호민",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "설민우",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "지온유",
+      "state": "S07",
+      "gender": "여성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "마하린",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "연시완",
+      "state": "S07",
+      "gender": "여성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "나길호",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "양채윤",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "주하음",
+      "state": "S07",
+      "gender": "여성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "차라온",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "설우찬",
+      "state": "S07",
+      "gender": "여성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "단시온",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "순가온",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "홍재민",
+      "state": "S07",
+      "gender": "여성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "추한결",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "어지율",
+      "state": "S07",
+      "gender": "여성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "란하율",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "권해진",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "윤시우",
+      "state": "S07",
+      "gender": "여성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "손나연",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "진채린",
+      "state": "S07",
+      "gender": "여성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "황우진",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "하세은",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "윤다율",
+      "state": "S07",
+      "gender": "여성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "손수호",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "진달린",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "황람아",
+      "state": "S07",
+      "gender": "여성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "하차재",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "윤하율",
+      "state": "S07",
+      "gender": "여성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "손다연",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "진바혁",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "황동아",
+      "state": "S07",
+      "gender": "여성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "하름은",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "윤나우",
+      "state": "S07",
+      "gender": "여성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "손파연",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "김구연",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "안가민",
+      "state": "S07",
+      "gender": "여성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "성금현",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "한산우",
+      "state": "S07",
+      "gender": "여성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "허다서",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "최동아",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "홍름훈",
+      "state": "S07",
+      "gender": "여성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "우마민",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "서은은",
+      "state": "S07",
+      "gender": "여성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "심강현",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "조사준",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "손하호",
+      "state": "S07",
+      "gender": "여성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "진다린",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "송타지",
+      "state": "S07",
+      "gender": "여성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "차빛원",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "한새우",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "남동원",
+      "state": "S07",
+      "gender": "여성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "정름준",
+      "state": "S07",
+      "gender": "남성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "양아태",
+      "state": "S07",
+      "gender": "여성",
+      "source": "S07 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "오해린",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "조민재",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "윤서하",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "신태산",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "서나연",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "오도윤",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "지윤재",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "마솔",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "연가온",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "나태경",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "양이든",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "주나경",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "차진아",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "설초아",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "지마루",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "마하율",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "연은재",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "나루희",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "섭다은",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "평서아",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "단노을",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "순재민",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "홍지훈",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "추보람",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "어도윤",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "장주원",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "배태민",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "김서연",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "안성민",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "곽다호",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "장하린",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "배동민",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "김름호",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "안나늘",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "곽파호",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "장솔원",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "배바원",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "김자호",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "안북민",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "곽바현",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "장마원",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "배은민",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "이강민",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "송라지",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "차서환",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "오다호",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "남자원",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "정북은",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "고바호",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "구아결",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "신남빈",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "노숲아",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "윤차율",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "배솔민",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "김바호",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "류금현",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "주산인",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "오다서",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "심북현",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "강바준",
+      "state": "S08",
+      "gender": "남성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "손카호",
+      "state": "S08",
+      "gender": "여성",
+      "source": "S08 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "최지우",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "권미래",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "황은설",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "송재민",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "오하늘",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "조은우",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "두봉",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "모봉용",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "봉소",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "용복",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "소감",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "복두모",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "국두봉",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "감봉",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "두용",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "모국",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "봉용",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "용소",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "란세온",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "섭달호",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "평지우",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "단보람",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "순한결",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "홍우찬",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "추우찬",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "류해담",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "임유나",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "백현석",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "이지민",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "송솔지",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "성대현",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "임자나",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "백북래",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "이바석",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "송마지",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "성은현",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "임구우",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "백가래",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "이타민",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "송별현",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "성돌현",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "임아나",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "백남석",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "박숲윤",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "류사연",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "주하인",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "서바서",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "심타양",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "강별유",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "문돌은",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "민카현",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "권늘윤",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "하람은",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "장파린",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "백구래",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "이가석",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "홍서훈",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "우다민",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "서바은",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "노별아",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "조돌준",
+      "state": "S09",
+      "gender": "남성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "배하민",
+      "state": "S09",
+      "gender": "여성",
+      "source": "S09 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "백온",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "신보람",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "황세린",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "강태산",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "윤초아",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "오한결",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "두감",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "모봉",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "봉감",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "용국",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "소두",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "복모",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "국봉",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "감용",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "두소",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "모감",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "봉두",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "용두",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "어하은",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "란민준",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "섭서연",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "평은우",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "단유진",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "순지민",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "홍은서",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "윤산호",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "한민서",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "허진우",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "박은윤",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "류소연",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "차지환",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "한타우",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "허은서",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "박돌윤",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "류아현",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "차남원",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "한강우",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "허라우",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "박금은",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "류빛현",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "차새환",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "한카서",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "허늘우",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "최람훈",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "홍차원",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "우솔진",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "신가빈",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "노금호",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "조빛준",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "양새현",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "진하린",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "황달진",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "곽나호",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "임은나",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "허강서",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "박라윤",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "문솔은",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "구바결",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "신자빈",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "하빛은",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "윤새율",
+      "state": "S10",
+      "gender": "남성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "백동래",
+      "state": "S10",
+      "gender": "여성",
+      "source": "S10 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "이홍원",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "송하율",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "조우찬",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "서진아",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "권도하",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "황노을",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "두모",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "모소",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "봉복",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "용모",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "소봉",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "복두",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "국두",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "감두",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "두국",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "모복",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "봉국",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "용두봉",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "추지훈",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "어예린",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "란진아",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "섭채원",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "평채원",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "단건우",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "순하준",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "오윤서",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "유하영",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "최지훈",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "홍혜원",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "주라인",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "오지호",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "유빛영",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "최새아",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "홍카훈",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "주늘인",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "오숲서",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "유사훈",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "최서아",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "홍산원",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "주다석",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "오하서",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "유달영",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "정나준",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "고파호",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "구구희",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "권라린",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "하서은",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "윤산우",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "배바민",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "김동연",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "안름민",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "성마현",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "한남우",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "유숲영",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "최사아",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "양구현",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "민가현",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "권타윤",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "곽산호",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "장다린",
+      "state": "S11",
+      "gender": "남성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "허북서",
+      "state": "S11",
+      "gender": "여성",
+      "source": "S11 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "장세화",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "안도한",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "전미리",
+      "state": "S12",
+      "gender": "여성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "문시온",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "하세온",
+      "state": "S12",
+      "gender": "여성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "곽태산",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "소두감",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "복봉",
+      "state": "S12",
+      "gender": "여성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "국용",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "감국",
+      "state": "S12",
+      "gender": "여성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "두복",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "복감",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "봉모",
+      "state": "S12",
+      "gender": "여성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "용봉",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "국소",
+      "state": "S12",
+      "gender": "여성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "복용",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "국감",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "감모",
+      "state": "S12",
+      "gender": "여성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "탁미르",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "범온결",
+      "state": "S12",
+      "gender": "여성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "창다흰",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "초나루",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "석봄우",
+      "state": "S12",
+      "gender": "여성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "근솔이",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "흥지완",
+      "state": "S12",
+      "gender": "여성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "서온결",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "서준서",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "남시은",
+      "state": "S12",
+      "gender": "여성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "정서준",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "고숲호",
+      "state": "S12",
+      "gender": "여성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "우하진",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "서서서",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "남산원",
+      "state": "S12",
+      "gender": "여성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "정다은",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "고하호",
+      "state": "S12",
+      "gender": "여성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "우달민",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "서람은",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "남차원",
+      "state": "S12",
+      "gender": "여성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "정하준",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "고다진",
+      "state": "S12",
+      "gender": "여성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "우바민",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "서동서",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "남름은",
+      "state": "S12",
+      "gender": "여성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "강마유",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "문은민",
+      "state": "S12",
+      "gender": "여성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "민강현",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "황사아",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "곽하현",
+      "state": "S12",
+      "gender": "여성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "장다원",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "백자석",
+      "state": "S12",
+      "gender": "여성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "이북민",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "송바지",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "차아환",
+      "state": "S12",
+      "gender": "여성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "오늘호",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "남람원",
+      "state": "S12",
+      "gender": "여성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "정차은",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "손강연",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "진라린",
+      "state": "S12",
+      "gender": "여성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "황금진",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "성다현",
+      "state": "S12",
+      "gender": "여성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "한자우",
+      "state": "S12",
+      "gender": "남성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "유별영",
+      "state": "S12",
+      "gender": "여성",
+      "source": "S12 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "류은비",
+      "state": "S13",
+      "gender": "남성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "심달호",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "은채윤",
+      "state": "S13",
+      "gender": "남성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "라세영",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "남호성",
+      "state": "S13",
+      "gender": "남성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "전솔",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "천다움",
+      "state": "S13",
+      "gender": "남성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "동늘솔",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "방한울",
+      "state": "S13",
+      "gender": "남성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "수초롱",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "선나휘",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "원미루",
+      "state": "S13",
+      "gender": "남성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "영늘빛",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "판한들",
+      "state": "S13",
+      "gender": "남성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "천다올",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "동주하",
+      "state": "S13",
+      "gender": "남성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "방미산",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "수효은",
+      "state": "S13",
+      "gender": "남성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "매하루",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "탁은솔",
+      "state": "S13",
+      "gender": "남성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "범초이",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "창해온",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "석라온",
+      "state": "S13",
+      "gender": "남성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "근우람",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "흥다온",
+      "state": "S13",
+      "gender": "남성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "백여울",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "신승민",
+      "state": "S13",
+      "gender": "남성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "심다현",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "강달유",
+      "state": "S13",
+      "gender": "남성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "문철민",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "구소희",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "신하빈",
+      "state": "S13",
+      "gender": "남성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "심태양",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "강바유",
+      "state": "S13",
+      "gender": "남성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "문동은",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "구름결",
+      "state": "S13",
+      "gender": "남성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "신나빈",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "심파현",
+      "state": "S13",
+      "gender": "남성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "강솔준",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "문바은",
+      "state": "S13",
+      "gender": "남성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "구자희",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "신북민",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "심바현",
+      "state": "S13",
+      "gender": "남성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "조아원",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "양남태",
+      "state": "S13",
+      "gender": "남성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "진숲혁",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "안차민",
+      "state": "S13",
+      "gender": "남성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "성솔현",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "임바나",
+      "state": "S13",
+      "gender": "남성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "허타우",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "박별윤",
+      "state": "S13",
+      "gender": "남성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "류돌연",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "주카인",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "서달서",
+      "state": "S13",
+      "gender": "남성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "심나양",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "강파유",
+      "state": "S13",
+      "gender": "남성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "배숲민",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "김사연",
+      "state": "S13",
+      "gender": "남성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "안서민",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "차바환",
+      "state": "S13",
+      "gender": "남성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "오타호",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "남빛원",
+      "state": "S13",
+      "gender": "여성",
+      "source": "S13 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "고서준",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "문하율",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "안기준",
+      "state": "S14",
+      "gender": "여성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "하윤목",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "곽민재",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "심가은",
+      "state": "S14",
+      "gender": "여성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "선솔우",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "원예나",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "영석온",
+      "state": "S14",
+      "gender": "여성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "판늘샘",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "천초윤",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "동새봄",
+      "state": "S14",
+      "gender": "여성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "방마름",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "수지완",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "선늘봄",
+      "state": "S14",
+      "gender": "여성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "원다결",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "영한뫼",
+      "state": "S14",
+      "gender": "여성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "판초담",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "매서담",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "탁윤재",
+      "state": "S14",
+      "gender": "여성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "범한들",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "창지안",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "초태온",
+      "state": "S14",
+      "gender": "여성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "석주아",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "근바름",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "권태윤",
+      "state": "S14",
+      "gender": "여성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "노윤호",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "조채원",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "양기태",
+      "state": "S14",
+      "gender": "여성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "민파현",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "권예린",
+      "state": "S14",
+      "gender": "여성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "노바호",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "조자준",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "양북현",
+      "state": "S14",
+      "gender": "여성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "민바현",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "권마윤",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "노은아",
+      "state": "S14",
+      "gender": "여성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "조구준",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "양가태",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "민타우",
+      "state": "S14",
+      "gender": "여성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "권별윤",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "노돌호",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "윤카율",
+      "state": "S14",
+      "gender": "여성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "손늘연",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "김람호",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "송파현",
+      "state": "S14",
+      "gender": "여성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "차구환",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "한가서",
+      "state": "S14",
+      "gender": "여성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "유금영",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "최빛훈",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "홍새원",
+      "state": "S14",
+      "gender": "여성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "구동희",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "신름빈",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "노마호",
+      "state": "S14",
+      "gender": "여성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "조은준",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "백람석",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "이차민",
+      "state": "S14",
+      "gender": "여성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "류솔연",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "주가인",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "서금서",
+      "state": "S14",
+      "gender": "여성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "심산양",
+      "state": "S14",
+      "gender": "남성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "이일섭",
+      "state": "S14",
+      "gender": "여성",
+      "source": "S14 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "남윤경",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "은태호",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "라진우",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "전나경",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "남시윤",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "문도윤",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "천나솔",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "동미온",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "방늘재",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "수한별",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "선다솜",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "원주온",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "영미결",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "판효담",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "천솔빛",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "동예솔",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "방석담",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "흥예나",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "매리울",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "탁필호",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "범채온",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "창고운",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "초시람",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "석오름",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "함도겸",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "황지아",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "하민재",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "윤소율",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "손마연",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "진준혁",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "황구아",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "하가은",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "윤타우",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "손별연",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "진돌린",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "황아진",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "하남은",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "윤강율",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "손라호",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "진금린",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "황빛아",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "하새재",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "장하원",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "배달원",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "이나민",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "류은현",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "주강석",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "오라서",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "남서은",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "정산준",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "고다호",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "민북현",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "권바린",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "하아은",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "윤남우",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "허나우",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "박파윤",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "홍구원",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "우라진",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "신서빈",
+      "state": "S15",
+      "gender": "남성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "노다호",
+      "state": "S15",
+      "gender": "여성",
+      "source": "S15 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "정유라",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "하서진",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "곽은재",
+      "state": "S16",
+      "gender": "여성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "심유리",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "은보람",
+      "state": "S16",
+      "gender": "여성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "안태경",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "수늘결",
+      "state": "S16",
+      "gender": "여성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "선초별",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "원새울",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "영마온",
+      "state": "S16",
+      "gender": "여성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "판지솔",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "천늘우",
+      "state": "S16",
+      "gender": "여성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "동새결",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "방마빛",
+      "state": "S16",
+      "gender": "여성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "선한솜",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "원초온",
+      "state": "S16",
+      "gender": "여성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "천늘샘",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "근주하",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "흥미리",
+      "state": "S16",
+      "gender": "여성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "매도한",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "탁세온",
+      "state": "S16",
+      "gender": "여성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "범하겸",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "창은찬",
+      "state": "S16",
+      "gender": "여성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "초진솔",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "노세람",
+      "state": "S16",
+      "gender": "여성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "안하늘",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "곽성호",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "장돌원",
+      "state": "S16",
+      "gender": "여성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "배지원",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "김준호",
+      "state": "S16",
+      "gender": "여성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "안강민",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "곽지현",
+      "state": "S16",
+      "gender": "여성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "장금원",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "배빛민",
+      "state": "S16",
+      "gender": "여성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "김새연",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "안카민",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "곽늘호",
+      "state": "S16",
+      "gender": "여성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "장숲린",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "배사민",
+      "state": "S16",
+      "gender": "여성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "김서호",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "안산늘",
+      "state": "S16",
+      "gender": "여성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "성바현",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "임동우",
+      "state": "S16",
+      "gender": "여성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "백름래",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "박마은",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "홍남원",
+      "state": "S16",
+      "gender": "여성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "우숲민",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "서사서",
+      "state": "S16",
+      "gender": "여성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "심하현",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "강다유",
+      "state": "S16",
+      "gender": "여성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "문바민",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "진별혁",
+      "state": "S16",
+      "gender": "여성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "황돌아",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "곽카현",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "장늘원",
+      "state": "S16",
+      "gender": "여성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "유마영",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "최은훈",
+      "state": "S16",
+      "gender": "여성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "고강호",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "구사희",
+      "state": "S16",
+      "gender": "여성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "황솔아",
+      "state": "S16",
+      "gender": "남성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    },
+    {
+      "name": "하바은",
+      "state": "S16",
+      "gender": "여성",
+      "source": "S16 국가별 설정 배정",
+      "user_locked": false
+    }
+  ]
+}
