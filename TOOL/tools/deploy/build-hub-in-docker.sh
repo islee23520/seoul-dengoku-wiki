@@ -13,7 +13,7 @@ for path in \
   GAME-LOGIC GDD LORE GAME/play GAME-REFERENCE/ui-layout-moodboard \
   GAME-REFERENCE/portrait-demo GAME-REFERENCE/ui-ux-refs GAME-REFERENCE/assets/wiki \
   GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json \
-  RESEARCH/canon-reference TOOL/tools TOOL/portrait-gen; do
+  RESEARCH/canon-reference RESEARCH/verification TOOL/tools TOOL/portrait-gen; do
   mkdir -p "$WORK_ROOT/$(dirname "$path")"
   tar -C "$SOURCE_ROOT" \
     --exclude='**/node_modules' \
