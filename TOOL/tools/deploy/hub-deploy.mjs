@@ -44,13 +44,17 @@ export const validateManifest = async (root, pages) => {
   }
 }
 
-export const stageHub = async ({ root, output, wikiDist, pages }) => {
+export const stageHub = async ({ root, output, hubIndex = 'index.html', wikiDist, pages }) => {
   await validateManifest(root, pages)
   await rm(output, { recursive: true, force: true })
   await mkdir(output, { recursive: true })
-  await cp(resolve(root, wikiDist), output, { recursive: true, force: true, filter: (source) => !source.split('/').at(-1)?.startsWith('._') })
+  await cp(resolve(root, hubIndex), resolve(output, 'index.html'), { force: true })
+  await cp(resolve(root, wikiDist), resolve(output, 'wiki'), { recursive: true, force: true, filter: (source) => !source.split('/').at(-1)?.startsWith('._') })
 
-  const stagedPages = [{ id: 'wiki', target: '/', source: wikiDist }]
+  const stagedPages = [
+    { id: 'hub', target: '/', source: hubIndex },
+    { id: 'wiki', target: '/wiki/', source: wikiDist },
+  ]
   for (const page of pages) {
     const source = resolve(root, page.source)
     if (!(await fileExists(resolve(source, page.entry)))) continue
@@ -74,12 +78,13 @@ const main = async () => {
   const rootIndex = process.argv.indexOf('--root')
   const outputIndex = process.argv.indexOf('--output')
   const wikiIndex = process.argv.indexOf('--wiki-dist')
+  const hubIndex = process.argv.indexOf('--hub-index')
   const manifestIndex = process.argv.indexOf('--manifest')
   const root = resolve(rootIndex >= 0 ? process.argv[rootIndex + 1] : repoRoot)
   const output = resolve(outputIndex >= 0 ? process.argv[outputIndex + 1] : join(root, '.hub-deploy-stage'))
   const wikiDist = wikiIndex >= 0 ? process.argv[wikiIndex + 1] : 'GAME-LOGIC/wiki-react/dist'
   const pages = await loadHubPages(manifestIndex >= 0 ? resolve(process.argv[manifestIndex + 1]) : undefined)
-  const result = await stageHub({ root, output, wikiDist, pages })
+  const result = await stageHub({ root, output, hubIndex: hubIndex >= 0 ? process.argv[hubIndex + 1] : 'index.html', wikiDist, pages })
   console.log(`HUB_STAGE_PASS files=${result.files} pages=${result.pages.length} output=${output}`)
 }
 

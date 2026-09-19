@@ -9,7 +9,7 @@ Korean-prose canon for every named character of post-collapse Seoul: roster inde
 | Task | Location |
 |------|----------|
 | Roster of the original 423 | `Cast-Index.md` (also the publication ledger; `관계 수` counts sender edges only) |
-| The additional 578 (1001 total) | `Cast-Index-S4.md` |
+| The additional 578 (1004 total including core-only and unaffiliated cards) | `Cast-Index-S4.md` |
 | One state's character cards | `Cast-State-01.md`–`Cast-State-16.md` (1694–1804 lines each) |
 | T0 core cast | `Core-Characters.md` (the T0 list is derived from its `## 인물 목록`; the 18 `주요` are locked in `../name-pools/values-cast.json`) |
 | Directed relation edges | `Cast-Relations.md` (11 types: 친족·양자·사제·지휘·계약·빚·맹세·경쟁·원한·보호체류·배신) |
@@ -26,7 +26,7 @@ Korean-prose canon for every named character of post-collapse Seoul: roster inde
 - No age fields anywhere. Opening day is 2126; locking a birth year requires calendar-vs-biography evidence. Never use founding-era dates like 붕괴 1년/2027 in biographies.
 - Negative numbers use `−` (U+2212), matching neighbor cards; value/desire axes span −100..100.
 - New character flow: GitHub issue (label `인물`, usually `quality:medium`) → duplicate-name check against `Cast-Index.md`, `Cast-Index-S4.md`, `Cast-Corridors-Index.md`, `../name-pools/values-cast.json` → template → review (see `../CONTRIBUTING.md`).
-- `Cast-Unaffiliated.md` cards require a unique stable `캐릭터 ID` (also for external-source / same-name-risk newcomers); the 1001 state-ledger cards never retrofit one.
+- `Cast-Unaffiliated.md` cards require a unique stable `캐릭터 ID` (also for external-source / same-name-risk newcomers); state-ledger cards never retrofit one.
 
 ## ANTI-PATTERNS
 - Never machine-merge the old `docs/cast-*` branches into main (no auto merge, rerere, or ours/theirs batch).

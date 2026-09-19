@@ -87,7 +87,8 @@ try {
     $count = (Get-ChildItem $next -Recurse -File).Count
     if ($count -lt 500) { throw "배포 파일 수 부족: $count" }
     if (-not (Test-Path (Join-Path $next "index.html"))) { throw "index.html 없음" }
-    $assetCount = (Get-ChildItem (Join-Path $next "assets") -File).Count
+    if (-not (Test-Path (Join-Path $next "wiki\index.html"))) { throw "wiki/index.html 없음" }
+    $assetCount = (Get-ChildItem (Join-Path $next "wiki\assets") -File).Count
     if ($assetCount -lt 230) { throw "React 문서 청크 수 부족: $assetCount" }
     Invoke-Native "node" @($manifestVerifier, $next, (Join-Path $root "staged-release-verify.json"))
 

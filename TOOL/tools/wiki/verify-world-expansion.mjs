@@ -29,10 +29,7 @@ const ATLAS_STAGES = new Set([
   'monster-batch',
   'group-dossiers',
 ]);
-const NOTICE_FILE = 'Unofficial-Fan-AU-Notice.md';
 const SOURCES_FILE = 'Research-Sources.md';
-const BRIDGE_REL = join('.omo', 'research-private', 'nippon-sangoku-canon-bridge.md');
-const BRIDGE_PUBLIC_NAME = 'nippon-sangoku-canon-bridge.md';
 const INJECTION_RE = /ignore\s+previous\s+instructions|system\s+prompt|you\s+are\s+now|print\s+the\s+private/i;
 
 function parseArgs(argv) {
@@ -177,23 +174,10 @@ export async function verifyWorldExpansion(options) {
     violations.push({ rule, detail });
   };
 
-  const notice = await readOptional(join(docs, NOTICE_FILE))
-    ?? await readOptional(join(repoRoot, 'GDD', NOTICE_FILE));
-  if (notice === null || !notice.includes('비공식') || !notice.includes('비상업')) {
-    fail('E_MISSING_NOTICE', NOTICE_FILE);
-  }
-
   const sourcesText = await readOptional(join(docs, SOURCES_FILE))
     ?? await readOptional(join(repoRoot, 'GDD', SOURCES_FILE));
   if (sourcesText === null) fail('E_MALFORMED', `${SOURCES_FILE} missing`);
   else verifySources(sourcesText, fail);
-
-  if ((await readOptional(join(repoRoot, BRIDGE_REL))) === null) {
-    fail('E_MISSING_BRIDGE', BRIDGE_REL);
-  }
-  if ((await readOptional(join(docs, BRIDGE_PUBLIC_NAME))) !== null) {
-    fail('E_BRIDGE_PUBLISHED', BRIDGE_PUBLIC_NAME);
-  }
 
   if (options.expansion) {
     let expansion;

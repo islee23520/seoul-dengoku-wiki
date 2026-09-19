@@ -24,7 +24,8 @@ const runBatch = (start, end) => new Promise((resolvePromise, reject) => {
   })
 })
 
-for (let start = 0; start < 232; start += 12) batches.push(await runBatch(start, Math.min(start + 12, 232)))
+const contract = JSON.parse(await (await fetch('https://seoul-dengoku.linalab.io/wiki/wiki-contract.json')).text())
+for (let start = 0; start < contract.documents.length; start += 12) batches.push(await runBatch(start, Math.min(start + 12, contract.documents.length)))
 const pageScript = pageTemplate.replace('__ROUTES__', JSON.stringify(pageManifest.pages.map(({ id, target }) => ({ id, target }))))
 const pageResult = await new Promise((resolvePromise, reject) => {
   const child = spawn('aside-agent', ['repl', pageScript], { stdio: ['ignore', 'pipe', 'pipe'] })

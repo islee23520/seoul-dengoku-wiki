@@ -49,6 +49,7 @@ try {
     Write-Release $postNext 'new'
     & powershell.exe -NoProfile -ExecutionPolicy Bypass -File $script -Current $postCurrent -Next $postNext -Previous $postPrevious | Out-Null
     Assert-Release $postCurrent 'new'
+    if ((Get-ChildItem $postCurrent -Recurse -File).Count -ne 1) { throw 'promotion merged files instead of replacing release' }
     & powershell.exe -NoProfile -ExecutionPolicy Bypass -File $rollbackScript -Current $postCurrent -Previous $postPrevious | Out-Null
     Assert-Release $postCurrent 'old'
     $nginxTarget = Join-Path $postCase 'nginx.conf'

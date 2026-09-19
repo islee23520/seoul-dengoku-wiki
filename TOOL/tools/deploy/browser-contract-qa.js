@@ -1,7 +1,7 @@
 const start1 = __START__;
 const end1 = __END__;
-const page1 = await openTab(`https://seoul-dengoku.linalab.io/?hub-deploy-browser-qa=${start1}`);
-const contract1 = await page1.evaluate(async ({ start, end }) => (await (await fetch('/wiki-contract.json', { cache: 'no-store' })).json()).documents.slice(start, end), { start: start1, end: end1 });
+const page1 = await openTab(`https://seoul-dengoku.linalab.io/wiki/?hub-deploy-browser-qa=${start1}`);
+const contract1 = await page1.evaluate(async ({ start, end }) => (await (await fetch('/wiki/wiki-contract.json', { cache: 'no-store' })).json()).documents.slice(start, end), { start: start1, end: end1 });
 const failures1 = [];
 for (const document1 of contract1) {
   const row1 = await page1.evaluate(async (wikiDocument) => {
@@ -14,7 +14,7 @@ for (const document1 of contract1) {
     await new Promise((resolve, reject) => {
       const timer = setTimeout(() => reject(new Error(`timeout:${wikiDocument.route}`)), 12000);
       frame.onload = () => { clearTimeout(timer); resolve(); };
-      frame.src = `${wikiDocument.route}?hub-deploy-browser-qa=1`;
+      frame.src = `/wiki${wikiDocument.route}?hub-deploy-browser-qa=1`;
     });
     const child = frame.contentDocument;
     await new Promise((resolve, reject) => {
@@ -28,14 +28,23 @@ for (const document1 of contract1) {
       observer.observe(child.body, { childList: true, subtree: true });
       setTimeout(() => { observer.disconnect(); reject(new Error(`content:${wikiDocument.route}`)); }, 12000);
     });
+    await Promise.all([...child.images].map((image) => {
+      if (image.complete) return Promise.resolve();
+      return new Promise((resolve) => {
+        image.addEventListener('load', resolve, { once: true });
+        image.addEventListener('error', resolve, { once: true });
+        setTimeout(resolve, 12000);
+      });
+    }));
     return {
       route: wikiDocument.route,
       title: child.querySelector('h1')?.textContent?.trim(),
       marker: Boolean(child.querySelector('[data-wiki-shell="react-official"]')),
       sidebar: child.querySelector('nav')?.textContent?.includes('공식 위키') ?? false,
+      brokenImages: [...child.images].filter((image) => !image.complete || image.naturalWidth === 0).map((image) => image.src),
     };
   }, document1);
-  if (!row1.marker || !row1.sidebar || row1.title !== document1.title) failures1.push({ expected: document1, actual: row1 });
+  if (!row1.marker || !row1.sidebar || row1.title !== document1.title || row1.brokenImages.length > 0) failures1.push({ expected: document1, actual: row1 });
 }
 await closeTab(page1);
 console.log(`HUB_WIKI_DOM_BATCH=${JSON.stringify({ start: start1, end: end1, documents: contract1.length, failureCount: failures1.length, failures: failures1 })}`);
