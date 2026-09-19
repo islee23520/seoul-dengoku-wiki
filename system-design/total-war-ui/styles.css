@@ -4,3 +4,4 @@
 @media(max-width:760px){.battle-header{grid-template-columns:1fr 1fr}.battle-header>div:first-child,.adopted-default{grid-column:1/-1}.adopted-default{display:grid;gap:4px}.history-bar{flex-wrap:wrap}.history-bar strong{width:100%}}
 @media(max-width:420px){.battle-header{grid-template-columns:1fr}.battle-header>div:first-child,.adopted-default{grid-column:auto}#battle-pause{width:100%}}
 .unit-token.hero{border-color:var(--gold);box-shadow:0 0 0 2px rgba(156,125,66,.28),var(--shadow)}.battlefield .u4{left:48%;bottom:43%}
+.design-links{display:flex;align-items:center;gap:14px;padding:9px 28px;background:#d8d3c3;border-bottom:1px solid var(--line);font-size:11px}.design-links b{color:var(--jade);letter-spacing:.1em}.design-links a{color:var(--ink);font-weight:800;text-decoration:none;border-bottom:1px solid transparent}.design-links a:hover,.design-links a:focus-visible{border-color:var(--gold)}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "서울:전국 · 부대 지휘 UX 상태 전이",
+    "quality_profile": "standard",
+    "legend": { "mode": "hidden" }
+  },
+  "lanes": [
+    { "id": "campaign", "label": "캠페인 판단" },
+    { "id": "battle", "label": "닫힌 전투 세션" },
+    { "id": "settlement", "label": "결과 반영과 다음 행선" }
+  ],
+  "mainPath": ["campaign", "roster", "encounter", "deployment", "command", "exit"],
+  "nodes": [
+    { "id": "campaign", "lane": "campaign", "col": 0, "type": "frontend", "label": "원정 경로", "sublabel": "현재 위치 · 다음 구간" },
+    { "id": "roster", "lane": "campaign", "col": 1, "type": "frontend", "label": "파티 편성", "sublabel": "영웅 · 분대 · 물자" },
+    { "id": "encounter", "lane": "campaign", "col": 2, "type": "frontend", "label": "조우 대응", "sublabel": "교섭 · 우회 · 전투" },
+    { "id": "deployment", "lane": "battle", "col": 3, "type": "frontend", "label": "전투 배치", "sublabel": "목표 · 지형 · 퇴로" },
+    { "id": "command", "lane": "battle", "col": 4, "type": "frontend", "label": "부대 지휘", "sublabel": "선택 · 미리보기 · 확인" },
+    { "id": "exit", "lane": "battle", "col": 5, "type": "frontend", "label": "종료 확인", "sublabel": "철수 · 항복 · 취소" },
+    { "id": "result", "lane": "settlement", "col": 4, "type": "database", "label": "결과 영수증", "sublabel": "ResultId 한 번 반영" },
+    { "id": "next", "lane": "settlement", "col": 5, "type": "frontend", "label": "다음 행선", "sublabel": "계속 · 다섯 결말" }
+  ],
+  "edges": [
+    { "from": "campaign", "to": "roster", "label": "동행 확인", "role": "main" },
+    { "from": "roster", "to": "encounter", "label": "원정 진행", "role": "main" },
+    { "from": "encounter", "to": "deployment", "label": "전투 선택", "role": "main" },
+    { "from": "deployment", "to": "command", "label": "배치 확정", "role": "main" },
+    { "from": "command", "to": "exit", "label": "종료 검토", "role": "main" },
+    { "from": "exit", "to": "command", "label": "취소 · 상태 유지", "role": "return" },
+    { "from": "exit", "to": "result", "label": "종료 확정", "role": "branch" },
+    { "from": "encounter", "to": "result", "label": "비전투 해결", "role": "branch" },
+    { "from": "result", "to": "next", "label": "한 번 반영", "role": "branch" },
+    { "from": "next", "to": "campaign", "label": "원정 계속", "role": "return" }
+  ],
+  "cards": [
+    {
+      "dot": "slate",
+      "title": "UX 불변조건",
+      "items": [
+        "선택 없음: 명령 비활성. 미리보기 취소: 기존 지시 유지.",
+        "영웅은 별도 지휘 인물. 병졸 한 분대는 최대 20명.",
+        "카드 자원·영웅 직접 액션 없음. 같은 ResultId는 다시 반영하지 않음."
+      ]
+    }
+  ]
+}
