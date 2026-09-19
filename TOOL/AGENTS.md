@@ -8,6 +8,7 @@ Repo automation plus independently versioned tool checkouts; score 9, distinct i
 |------|----------|-------|
 | Repository gates and generation | `tools/AGENTS.md` | Node/Python scripts owned by this repository |
 | Unity execution policy | `docs/Unity-Headless-Workflow.md` | Janseon batchmode-only execution contract |
+| Art pipeline bootstrap contracts | `docs/contracts/art-pipeline/` | Project-specific reference and portable execution contract |
 | Remote bridge integration | `docs/Unity-Remote.md`, `docs/Unity-Remote-Development.md` | Setup and integration documentation |
 | Remote broker/package implementation | `unity-remote/AGENTS.md` | Separate Git submodule and its own toolchain |
 | Portrait asset inventory workspace | `portrait-gen/README.md` | Separate Git submodule: SQLite asset DB, gates, slot reviews |
