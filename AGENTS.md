@@ -61,7 +61,7 @@ seoul-kenshi/
 | Backend service | `Backend/AGENTS.md`, `Backend/server/Coordinator/` | Host-session coordinator: REST + WebSocket on Kestrel :1219, in-process identity |
 | Asset rights and reviews | `GAME-REFERENCE/assets/bom/` | Source evidence, runtime-slot records, quality gates |
 | Delivery and publishing | `GDD/adr/ADR-001-repository-delivery-policy.md` | Accepted authority over historical local-only clauses |
-| Web hub deploy | `SERVICES.md`, `index.html` | User-facing URL is `https://seoul-dengoku.linalab.io` — self-hosted: desktop `E:\git\seoul-dengoku-web` docker (nginx + cloudflared tunnel `seoul-dengoku`), Cloudflare Access contributor gate. Legacy `seoul-kenshi.vercel.app` stays read-only until removed after migration is verified. |
+| Web hub deploy | `SERVICES.md`, `index.html` | User-facing URL is `https://seoul-dengoku.linalab.io` — self-hosted: desktop `E:\git\seoul-dengoku-web` docker (nginx + cloudflared tunnel `seoul-dengoku`), Cloudflare Access contributor gate. Legacy `seoul-kenshi.vercel.app` is **paused** (no new deployments as of 2026-09-19); removal pending owner decision after self-hosted migration is verified. |
 
 ## CODE MAP
 Digest LSP/ast-grep findings plus retained root symbol locations; C# LSP coverage was partial. Repo-wide reference centrality is unmeasured, not zero.
@@ -89,7 +89,7 @@ Digest LSP/ast-grep findings plus retained root symbol locations; C# LSP coverag
 - Do not label planned campaign or tactical features as shipped merely because design pages exist; even Home's implementation summary may lag code.
 - No direct push to main, force-push, or shared-history rewrite. ADR-001 requires a dedicated branch and PR, with owner-only merging.
 - Authorized origin: `https://github.com/islee23520/seoul-kenshi.git`; the unrelated shooter repository is not a delivery target. Do not publish or maintain GitHub Wiki.
-- Do not create any Vercel project, alias, or `*.vercel.app` site. The web hub is self-hosted at `seoul-dengoku.linalab.io` (see `SERVICES.md`). Nested static pages (for example `GAME-REFERENCE/portrait-demo/`) go on that hub as a subpath via the composite staging in `SERVICES.md`; never deploy a nested folder as its own site.
+- Do not deploy to Vercel — the existing `seoul-kenshi` project is paused (2026-09-19 owner directive). All deployments go to the self-hosted hub at `seoul-dengoku.linalab.io` (see `SERVICES.md`). Nested static pages (for example `GAME-REFERENCE/portrait-demo/`) go on that hub as a subpath via the composite staging in `SERVICES.md`; never deploy a nested folder as its own site.
 - Candidate generation, provider eligibility, or showcase import does not authorize a runtime dependency.
 - Guessed rights, synthetic review hashes, model/software licenses, and zero-cost receipts are not proof of asset-output rights or actual service terms. Source-rights research is not quality approval or a legal guarantee.
 - Do not silently recover unsupported/corrupt saves: the documented save contract requires explicit errors.
