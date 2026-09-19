@@ -223,6 +223,7 @@ namespace Janseon.Foundation.Tests
             File.WriteAllText(outputPath, json.ToString());
             TestContext.Progress.WriteLine("TASK02_RUN_BINDING " + runNonce + " " + runtimeManifest);
             TestContext.WriteLine("TASK02_RUN_BINDING " + runNonce + " " + runtimeManifest);
+            Debug.Log("TASK02_RUN_BINDING " + runNonce + " " + runtimeManifest);
             TestContext.WriteLine("PLACE_ID_MANUAL_QA=" + outputPath);
         }
 
