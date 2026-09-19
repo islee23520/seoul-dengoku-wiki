@@ -1,4 +1,4 @@
-import { mkdir } from 'node:fs/promises'
+import { access, mkdir } from 'node:fs/promises'
 import { spawn } from 'node:child_process'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -16,6 +16,11 @@ const run = (command, args) => new Promise((resolvePromise, reject) => {
 })
 
 await mkdir(output, { recursive: true })
+try {
+  await access(resolve(repoRoot, 'TOOL/portrait-gen/index.html'))
+} catch {
+  await run('git', ['submodule', 'update', '--init', '--recursive', 'TOOL/portrait-gen'])
+}
 await run('docker', ['build', '-f', resolve(deployDir, 'hub.Dockerfile'), '-t', image, deployDir])
 await run('docker', [
   'run', '--rm',
