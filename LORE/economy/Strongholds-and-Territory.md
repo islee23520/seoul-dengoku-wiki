@@ -1,7 +1,5 @@
 # 거점과 영토
 
-![거점 점유와 통합의 아이소 공간](https://github.com/islee23520/seoul-kenshi/blob/main/GAME-REFERENCE/assets/wiki/isometric-strongholds.svg?raw=true)
-
 2026-09-07 위키 도표. 아이소 점유 칸은 당시 설명이며 전장 격자가 아니다. 문서용 평면도이며 실제 게임 화면이 아니다.
 
 거점 점유 후 안정화와 영토 통합을 전략맵 연결과 지형으로 관리합니다.

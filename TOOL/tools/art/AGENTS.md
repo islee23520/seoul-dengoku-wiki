@@ -12,7 +12,6 @@ Asset planning, candidate assembly, and fail-closed runtime provenance; score 8,
 | Host availability | `host.mjs` | TRELLIS probe deliberately returns false |
 | Remote TRELLIS identity | `trellis-host-contract.mjs`, `trellis-host-pin.json` | Direct-Python host/model/weight pins |
 | Oddland donor intake | `import-oddland-donor.mjs` | Copies owner-authorized payload into quarantine; writes/verifies SHA-256 manifest |
-| Oddland donor classification | `catalog-oddland-donor.mjs` | Classifies `GAME/Assets/Quarantine/Oddland`; catalog BOM under `GAME-REFERENCE/assets/bom/donor/` |
 | Blender character GLB gate | `blender-character-gate.py` | `--glb` JSON verdict; fail-closed exit 2 on missing mesh |
 | UI kit file families and BOM checks | `poc-ui-kit-contract.mjs` | Required IDs, paths, source files |
 | Runtime reachability and evidence | `runtime-asset-provenance.mjs` | `auditRuntimeProvenance`, `evaluatePromotedAsset` |
@@ -30,7 +29,7 @@ Asset planning, candidate assembly, and fail-closed runtime provenance; score 8,
 - Runtime promotion additionally binds real raw/output/runtime bytes, rights evidence, review files, and source-binding JSON by SHA-256.
 - Slot files must match contract keys and destination directories under `GAME/Assets/Janseon/Art/`.
 - `prepare` validates candidate inputs and refuses destination overwrites; `commit` validates imported runtime files before appending the BOM row.
-- The slot contract names the runtime BOM under `GAME-REFERENCE/assets/bom/runtime/` and Unity catalog under `GAME/Assets/Janseon/Foundation/Art/`.
+- The retired reference BOM contract no longer grants runtime eligibility. Unity runtime slots and new evidence under `GAME/Assets/Janseon/Foundation/Art/` are authoritative.
 - Unity bridge callers still contain old `tools/art/...` arguments; the current scripts live here under `TOOL/tools/art/`. Audit success alone does not prove that import boundary executes.
 - Python assemblers emit draft assets with unknown rights and empty reviews; successful assembly is not promotion.
 - Python image tools require Pillow; UI candidate assembly also imports NumPy.

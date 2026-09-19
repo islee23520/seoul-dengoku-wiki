@@ -30,7 +30,7 @@ Repository-only ESM/Python tooling, not shipped with Unity; score 12, distinct b
 | Capture evidence validation | `unity/validate-ui-captures.mjs` | PNG content and source-bound receipts |
 | Self-hosted hub deployment | `deploy/hub-pages.json`, `deploy/build-hub-docker.mjs`, `deploy/deploy-hub.mjs` | Read-only Docker build, manifest-driven page staging, Windows nginx atomic swap |
 | Unity remote setup/start/CLI | npm `remote:setup`, `remote:start`, `remote:cli` | Wrappers over `unity/` scripts; token in `Game/.unity-remote-token` |
-| LFS hydration gate | `check-lfs-hydration.mjs` | Pointers in `GAME/Assets` or `GAME-REFERENCE/assets` fail closed |
+| LFS hydration gate | `check-lfs-hydration.mjs` | Pointers in runtime `GAME/Assets` fail closed |
 | Art planning and provenance | `art/AGENTS.md` | Separate domain guide |
 
 ## CONVENTIONS

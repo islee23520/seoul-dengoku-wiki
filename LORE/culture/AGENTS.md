@@ -10,7 +10,7 @@ The value/policy scale system behind cast and org numbers, the faith schism, the
 |------|----------|
 | 10 person value axes + 5 desire axes + org policy slots | `Values-and-Policy-Scales.md` — the numeric ledger lives in `../name-pools/values-cast.json` / `values-orgs.json` |
 | Faith schism | `Faith-Culture-Schism.md` — 2026 religious makeup sourced (Pew 2010); five campaign axes that change rules |
-| Five martial schools | `Martial-Paths.md` — skills read as lived-in habits from 2026 work, not race-locked slots |
+| Five martial schools | `Martial-Paths.md` — 60 original techniques across 내숨·외손·경보·연장·제압·손고침; unit-command expression only |
 | Food / distribution | `Food-Culture.md` — station-window rations first; numbers continue into `../economy/Economy-and-Production.md` |
 | Oral creation story | `Oral-Stories.md` — 대정전 canon; the five oral titles are locked by `../chronology/Scenario-Timeline.md` |
 
@@ -18,7 +18,7 @@ The value/policy scale system behind cast and org numbers, the faith schism, the
 - Scales span −100..100 (− is U+2212, matching cast cards); 0 means not yet tipped on that axis. New persons/orgs never go up with axis cells empty.
 - Leader change ⇒ charter numbers re-reviewed; fixed national personalities are banned (same rule as `../characters/Ambitions-and-Relations.md` — note `Values-and-Policy-Scales.md`'s link to that file is stale, missing `../characters/`).
 - Faith grows from events (blackout nights, opened sluices, deaths at the platform edge), never from a 총재 decree; occupying a gu does not change temperament.
-- Denominations grown from subway wreckage are fiction: no real church proper nouns (여의도순복음-style), no living pastors or denomination logos as opening figures; generic terms (제사·당집·금기·이단·강단·제대) are fine.
+- The four locked theocratic state names remain real institution successors. Do not add living clergy, denomination logos, local 노회 names or extra religious states; wreckage rites and splinter names remain fiction.
 - Design borrowings (Stellaris ethics pairs, EU4 policy slots) import mechanics only — never proper nouns, iconography, or event text.
 - Food canon keeps the water-first-then-rice habit; the ration chain 영등포 정수 당직 → 신정 기지 밥솔 → 암사 호위 hands off to `../economy/` docs.
 

@@ -52,7 +52,7 @@ function findNamedMarkdown(root, fileName) {
 }
 
 function resolveCanonPath(sourcePath) {
-  for (const dir of ['LORE', 'GAME-LOGIC', 'GDD']) {
+  for (const dir of ['LORE', 'GDD']) {
     const prefix = `${dir}/`;
     if (sourcePath.startsWith(prefix)) {
       const rest = sourcePath.slice(prefix.length);
@@ -71,11 +71,11 @@ function resolveCanonPath(sourcePath) {
   if (legacy) {
     const rest = legacy[1];
     const fileName = rest.split('/').pop();
-    for (const dir of ['GAME-LOGIC', 'LORE', 'GDD']) {
+    for (const dir of ['GDD', 'LORE']) {
       const nested = findNamedMarkdown(join(repoRoot, dir), fileName);
       if (nested) return nested;
     }
-    return join(repoRoot, 'GAME-LOGIC', rest);
+    return join(repoRoot, 'GDD', rest);
   }
   return join(repoRoot, sourcePath);
 }
@@ -131,8 +131,7 @@ const ingested = ingestCanonDir({
   dbPath,
   canonDomains: [
     { root: join(repoRoot, 'LORE'), prefix: 'LORE', exclude: (rel) => rel.endsWith('AGENTS.md') },
-    { root: join(repoRoot, 'GAME-LOGIC'), prefix: 'GAME-LOGIC', exclude: (rel) => rel.startsWith('site/') || rel.startsWith('wiki-react/') || rel.endsWith('AGENTS.md') },
-    { root: join(repoRoot, 'GDD'), prefix: 'GDD', exclude: (rel) => rel.includes('/') || rel === 'AGENTS.md' },
+    { root: join(repoRoot, 'GDD'), prefix: 'GDD', exclude: (rel) => rel === 'AGENTS.md' || rel.startsWith('design-store/') },
   ],
 });
 exportIndexPage({ dbPath, outPath: join(outRoot, 'index.html') });

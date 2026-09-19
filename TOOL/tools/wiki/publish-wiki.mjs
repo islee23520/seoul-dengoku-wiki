@@ -134,7 +134,7 @@ export async function assertPublishableBuild(outputDir, { sourceDirs, assetDir }
 }
 
 export const GITHUB_WIKI_RETIRED =
-  'GitHub Wiki is retired; serve GAME-LOGIC/site locally and publish https://seoul-kenshi.vercel.app';
+  'GitHub Wiki is retired; serve WEB/wiki-source locally and publish https://seoul-kenshi.vercel.app';
 
 export async function publishWiki({
   repositoryRoot,
@@ -161,8 +161,8 @@ export async function publishWiki({
 
   const repo = resolve(repositoryRoot);
   const live = assertSafeOutputRoot(wikiDir);
-  const sources = sourceDir ? [resolve(sourceDir)] : ['LORE', 'GAME-LOGIC', 'GDD'].map((dir) => resolve(join(repo, dir)));
-  const assets = resolve(assetDir ?? join(repo, 'GAME-REFERENCE', 'assets', 'wiki'));
+  const sources = sourceDir ? [resolve(sourceDir)] : ['LORE', 'GDD'].map((dir) => resolve(join(repo, dir)));
+  const assets = assetDir ? resolve(assetDir) : null;
 
   if (live === repo || sources.includes(live) || live === assets) {
     throw new Error('refusing to use the repository, source, or asset directory as the live wiki checkout');

@@ -172,8 +172,8 @@ M040 배치에 포함된 로스트 기체 군집은 지정된 봉인 관로에�
 
 ## 연결
 
-- [적대 생태 총람](../Hostile-Ecology-Index.md)
-- [몬스터 배치 원장](../Monster-Batch-Manifest.md)
+- [적대 생태 총람](../bestiary/Hostile-Ecology-Index.md)
+- [서울 생태·변이 도감](../bestiary/Hostile-Ecology-Index.md)
 - [운영가문](../Operating-Houses.md)
 - [서울 십육국](../factions/Sixteen-States.md)
 - [이 시대의 기술과 무구](../goods/Era-Arms-and-Tech-Level.md)

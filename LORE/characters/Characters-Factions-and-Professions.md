@@ -1,7 +1,5 @@
 # 인물·세력·생업
 
-![인물과 파티가 어느 칸에 서 있고 어느 쪽을 보며 어디까지 보이는지](https://github.com/islee23520/seoul-kenshi/blob/main/GAME-REFERENCE/assets/wiki/isometric-grammar.svg?raw=true)
-
 2026-09-07 위키 도표. 칸·방향·시야 그림은 당시 문법 설명이며 목표 전투의 개인 조작이 아니다. 문서용 평면도이며 실제 게임 화면이 아니다.
 
 ## 인물

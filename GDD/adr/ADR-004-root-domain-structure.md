@@ -1,6 +1,6 @@
-# ADR-004 — 루트 7도메인 구조 고정
+# ADR-004 — 루트 도메인과 단일 설계 정본
 
-- 상태: 수용됨 (소유자 승인 2026-09-18, "규칙으로 락킹")
+- 상태: 2026-09-20 개정 수용됨 (소유자 결정: GDD 단일 설계 정본)
 - 선행: ADR-001 (인도 정책 — 본 구조 재편의 인도는 ADR-001 소유자 권한 아래 수행됐다)
 - 시행 커밋: `befb8da9` (2026-09-18 루트 7도메인 전면 재편)
 
@@ -14,9 +14,9 @@
 
 | 도메인 | 책임 |
 |---|---|
-| `GDD/` | 스튜디오 기획 산출(adr·proposals·system-design·design-store) + 게시 design계 10페이지 |
+| `GDD/` | 모든 게임 설계 정본: 제품·규칙·레퍼런스·아키텍처·아트·ADR·제안·시스템 설계 |
 | `LORE/` | 세계관 정본(world계 175 + name-pools + regions) |
-| `GAME-LOGIC/` | 규칙·시스템 정본 + `site/`(VitePress 게시면, mount 스크립트 포함) |
+| `WEB/` | React 공식 위키와 VitePress 생성·검증 표면. 정본이 아님 |
 | `GAME-REFERENCE/` | 에셋 BOM·UX 레퍼런스·무드보드·POC·지리 데이터(data) |
 | `RESEARCH/` | canon-reference·verification |
 | `TOOL/` | 저장소 Node 패키지(tools)·skills·서브모듈(unity-remote, character-forge)·Unity 문서 |
@@ -31,11 +31,11 @@
 
 1. **구조 불변**: 신규 루트 디렉터리·루트 파일 추가는 이 ADR 개정(또는 후속 ADR) 없이 불가다. 정책 검사가 거부한다.
 2. **구 세계 금지**: `Wikis/`·`Design/`·`Reference/`·`data/`·`Research/`·`Tool/`·`Game/`(구 케이스) 최상위 재생성 금지.
-3. **문서 배치 계약**: 세계관은 LORE, 규칙은 GAME-LOGIC, 기획은 GDD, 레퍼런스는 GAME-REFERENCE, 조사는 RESEARCH에만 둔다. 코퍼스 분류는 `GAME-LOGIC/site/scripts/mount.mjs`의 폴더=도메인 규칙을 따른다.
-4. **배포면**: 공개 문서는 `GAME-LOGIC/site/dist`(로컬 prebuilt, `.vercelignore` 8행 체인)만 쓴다. 서브 경로 서빙은 SERVICES.md 표 + 복합 스테이징을 따른다.
+3. **문서 배치 계약**: 세계관은 LORE, 모든 게임 설계와 규칙은 GDD, 시각·실물 참고는 GAME-REFERENCE, 조사는 RESEARCH에만 둔다. WEB은 정본을 읽어 게시할 뿐 의미를 소유하지 않는다.
+4. **배포면**: 공개 문서는 `WEB/wiki-source/dist`(로컬 prebuilt, `.vercelignore` 8행 체인)만 쓴다. 서브 경로 서빙은 SERVICES.md 표 + 복합 스테이징을 따른다.
 5. **인도**: 본 구조 변경사항의 인도 절차는 ADR-001을 따른다.
 
 ## 폐기
 
 - 2026-09-14 7폴더 구조(Game/GDD/Design/Research/Reference/Tool/Backend 최상위)와 `Wikis/` 최상위 게시 정본 체계는 이 ADR로 대체된다.
-- `wiki-vs-gdd` 분류 락의 경로 표기(Wikis/game-logic)는 LORE/GAME-LOGIC/GDD 3분할로 대체되며, 분류 원칙(게시 정본 vs 스튜디오 산출) 자체는 유지된다.
+- 2026-09-18의 LORE/GAME-LOGIC/GDD 3분할은 2026-09-20 소유자 결정으로 폐기한다. 설계 정본은 GDD 하나이며 게시 표면은 WEB로 분리한다.

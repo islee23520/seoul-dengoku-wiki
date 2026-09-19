@@ -27,15 +27,15 @@ li { margin:6px 0; }
 <h2>한 장</h2>
 <p class="layer">각 칸은 그 요소가 무엇인지.</p>
 <h3>제품</h3><p>인물 중심 **4X + RPG**입니다</p><p class="src">Concept.md</p>
-<h3>시작</h3><p>무명으로 흘러드는 것은 착생 갈래 하나다. 혈연과 소속을 가진 몸으로 시작할 수도 있다.</p><p class="src">GAME-LOGIC/Game-Thesis.md</p>
+<h3>시작</h3><p>무명으로 흘러드는 것은 착생 갈래 하나다. 혈연과 소속을 가진 몸으로 시작할 수도 있다.</p><p class="src">GDD/Game-Thesis.md</p>
 <h3>시야</h3><p>목표 전장 카메라는 3D 자유 지휘다.</p><p class="src">Design.md</p>
 <h3>입력</h3><p>전투의 주 입력은 부대·진형 지휘다.</p><p class="src">Intent.md</p>
-<h3>격자</h3><p>전략맵은 3D 하이트맵으로 서울 전역을 세운다(결정 10).</p><p class="src">GAME-LOGIC/Game-Thesis.md</p>
-<h3>루프</h3><p>마주치면 말하거나 숨거나 붙는다.</p><p class="src">GAME-LOGIC/Campaign-Loop.md</p>
-<h3>전투</h3><p>직접 조작하는 대상은 개별 영웅이 아니라 선택한 부대다.</p><p class="src">GAME-LOGIC/Realtime-Formation-Card-Battle.md</p>
-<h3>정산</h3><p>실패는 세계에 남는다. 부상, 포획, 죽음, 물자, 원한.</p><p class="src">GAME-LOGIC/Game-Thesis.md</p>
+<h3>격자</h3><p>전략맵은 3D 하이트맵으로 서울 전역을 세운다(결정 10).</p><p class="src">GDD/Game-Thesis.md</p>
+<h3>루프</h3><p>마주치면 말하거나 숨거나 붙는다.</p><p class="src">GDD/rules/Campaign-Loop.md</p>
+<h3>전투</h3><p>직접 조작하는 대상은 개별 영웅이 아니라 선택한 부대다.</p><p class="src">GDD/rules/Realtime-Formation-Card-Battle.md</p>
+<h3>정산</h3><p>실패는 세계에 남는다. 부상, 포획, 죽음, 물자, 원한.</p><p class="src">GDD/Game-Thesis.md</p>
 <h3>화면</h3><p>UI는 **uGUI(Canvas)** 로 만든다.</p><p class="src">Intent.md</p>
-<h3>인물 표현</h3><p>제품 목표 인물은 애니메이션풍 정비율이다.</p><p class="src">GAME-LOGIC/Character-Art-Direction.md</p>
+<h3>인물 표현</h3><p>제품 목표 인물은 애니메이션풍 정비율이다.</p><p class="src">GDD/art/Character-Art-Direction.md</p>
 <h3>구현 순서</h3><p>그 다음 제품 문서는 부대 지휘다.</p><p class="src">GDD/Design-Requirements.md</p>
 </section>
 <section>
@@ -43,47 +43,47 @@ li { margin:6px 0; }
 <p class="layer">MDA 층은 설계 어휘다. 개발 단위는 GitHub 이슈다.</p>
 <h3>요구 카메라</h3><p>카메라는 팬·오빗·줌의 3D 자유 지휘 시점이고 각도·FOV는 없다.</p><p class="src">GDD/Design-Requirements.md</p>
 <h3>요구 카드 제외</h3><p>덱·드로우·재충전·오너 카드를 새 목표로 승격하지 않는다.</p><p class="src">GDD/Design-Requirements.md</p>
-<h3>요구 부대 명령</h3><p>확인하면 새 지시가 그 부대의 현재 지시를 교체한다. 취소하면 기존 지시를 그대로 둔다.</p><p class="src">GAME-LOGIC/Realtime-Formation-Card-Battle.md</p>
-<h3>요구 전투 결과</h3><p>각 전투는 위 종료 상태 가운데 하나와 전투 사실을 담은 불변 결과를 한 번만 발행한다.</p><p class="src">GAME-LOGIC/Realtime-Formation-Card-Battle.md</p>
+<h3>요구 부대 명령</h3><p>확인하면 새 지시가 그 부대의 현재 지시를 교체한다. 취소하면 기존 지시를 그대로 둔다.</p><p class="src">GDD/rules/Realtime-Formation-Card-Battle.md</p>
+<h3>요구 전투 결과</h3><p>각 전투는 위 종료 상태 가운데 하나와 전투 사실을 담은 불변 결과를 한 번만 발행한다.</p><p class="src">GDD/rules/Realtime-Formation-Card-Battle.md</p>
 </section>
 <section>
 <h2>Mechanics</h2>
 <p class="layer">규칙·동사·수치. 시스템이 가진 데이터와 알고리즘.</p>
 <ul><li><b>시야</b> — 목표 전장 카메라는 3D 자유 지휘다. <span class="src">Design.md</span></li>
 <li><b>세계 그래프</b> — 지하철망을 지상·지하 다층 전략 그래프로 다루는 <span class="src">Concept.md</span></li>
-<li><b>격자</b> — 전략맵은 3D 하이트맵으로 서울 전역을 세운다(결정 10). <span class="src">GAME-LOGIC/Game-Thesis.md</span></li>
-<li><b>타일</b> — 전략맵은 3D 하이트맵으로 서울 전역을 세운다(결정 10). <span class="src">GAME-LOGIC/Game-Thesis.md</span></li>
-<li><b>규칙 간격</b> — 시뮬레이션은 고정된 규칙 간격으로 진행한다. <span class="src">GAME-LOGIC/Realtime-Formation-Card-Battle.md</span></li>
-<li><b>명령 범위</b> — 이동, 공격, 방향 전환, 진형 변경, 정지 가운데 하나를 고른다. <span class="src">GAME-LOGIC/Realtime-Formation-Card-Battle.md</span></li>
+<li><b>격자</b> — 전략맵은 3D 하이트맵으로 서울 전역을 세운다(결정 10). <span class="src">GDD/Game-Thesis.md</span></li>
+<li><b>타일</b> — 전략맵은 3D 하이트맵으로 서울 전역을 세운다(결정 10). <span class="src">GDD/Game-Thesis.md</span></li>
+<li><b>규칙 간격</b> — 시뮬레이션은 고정된 규칙 간격으로 진행한다. <span class="src">GDD/rules/Realtime-Formation-Card-Battle.md</span></li>
+<li><b>명령 범위</b> — 이동, 공격, 방향 전환, 진형 변경, 정지 가운데 하나를 고른다. <span class="src">GDD/rules/Realtime-Formation-Card-Battle.md</span></li>
 <li><b>결정론</b> — 같은 seed와 command log는 같은 상태와 원장 hash를 만들어야 합니다. <span class="src">Concept.md</span></li>
 <li><b>UI</b> — UI는 **uGUI(Canvas)** 로 만든다. <span class="src">Intent.md</span></li>
 <li><b>텍스트</b> — 텍스트 스택은 uGUI 표준인 TextMeshPro(TMP)를 따른다. <span class="src">Intent.md</span></li>
-<li><b>실루엣</b> — 애니메이션풍 정비율. SD·2.5등신 목표를 다시 열지 않는다 <span class="src">GAME-LOGIC/Character-Art-Direction.md</span></li>
-<li><b>POC 인물</b> — POC 사람 표현은 오드랜드 원본 어셋 as-is다 <span class="src">GAME-LOGIC/Character-Art-Direction.md</span></li></ul>
+<li><b>실루엣</b> — 애니메이션풍 정비율. SD·2.5등신 목표를 다시 열지 않는다 <span class="src">GDD/art/Character-Art-Direction.md</span></li>
+<li><b>POC 인물</b> — POC 사람 표현은 오드랜드 원본 어셋 as-is다 <span class="src">GDD/art/Character-Art-Direction.md</span></li></ul>
 </section>
 <section>
 <h2>Dynamics</h2>
 <p class="layer">그 규칙이 플레이어 입력과 만나 시간에 따라 만드는 런타임.</p>
-<ul><li><b>전투 형태</b> — 플레이어는 부대를 골라 지시하며, 전투는 변경할 수 없는 `ResultId` 하나를 내고 끝난다. <span class="src">GAME-LOGIC/Realtime-Formation-Card-Battle.md</span></li>
-<li><b>거점 할 일</b> — 거점에서 길을 나선다. 반드시 돌아오라는 뜻이 아니다. <span class="src">GAME-LOGIC/Campaign-Loop.md</span></li>
-<li><b>원정 준비</b> — 준비는 같다. 사람, 식량, 약, 통행, 관계. <span class="src">GAME-LOGIC/Campaign-Loop.md</span></li>
-<li><b>조우 선택</b> — 마주치면 말하거나 숨거나 붙는다. <span class="src">GAME-LOGIC/Campaign-Loop.md</span></li>
-<li><b>진형</b> — 전투 전이나 허용된 재편 상태에서 진형과 정면을 정한다. <span class="src">GAME-LOGIC/Realtime-Formation-Card-Battle.md</span></li>
-<li><b>부대 명령</b> — 확인하면 새 지시가 그 부대의 현재 지시를 교체한다. 취소하면 기존 지시를 그대로 둔다. <span class="src">GAME-LOGIC/Realtime-Formation-Card-Battle.md</span></li>
-<li><b>일시정지</b> — 일시정지 중에도 부대를 선택하고 명령을 미리 본 뒤 확인하거나 취소할 수 있다. <span class="src">GAME-LOGIC/Realtime-Formation-Card-Battle.md</span></li>
-<li><b>결과 반영</b> — 정산 뒤에도 원정은 계속될 수 있으며, 귀환은 저장이나 결과 반영의 다른 이름이 아니다. <span class="src">GAME-LOGIC/Campaign-Loop.md</span></li>
-<li><b>전략 결과</b> — 정산 뒤에도 원정은 계속될 수 있으며, 귀환은 저장이나 결과 반영의 다른 이름이 아니다. <span class="src">GAME-LOGIC/Campaign-Loop.md</span></li></ul>
+<ul><li><b>전투 형태</b> — 플레이어는 부대를 골라 지시하며, 전투는 변경할 수 없는 `ResultId` 하나를 내고 끝난다. <span class="src">GDD/rules/Realtime-Formation-Card-Battle.md</span></li>
+<li><b>거점 할 일</b> — 거점에서 길을 나선다. 반드시 돌아오라는 뜻이 아니다. <span class="src">GDD/rules/Campaign-Loop.md</span></li>
+<li><b>원정 준비</b> — 준비는 같다. 사람, 식량, 약, 통행, 관계. <span class="src">GDD/rules/Campaign-Loop.md</span></li>
+<li><b>조우 선택</b> — 마주치면 말하거나 숨거나 붙는다. <span class="src">GDD/rules/Campaign-Loop.md</span></li>
+<li><b>진형</b> — 전투 전이나 허용된 재편 상태에서 진형과 정면을 정한다. <span class="src">GDD/rules/Realtime-Formation-Card-Battle.md</span></li>
+<li><b>부대 명령</b> — 확인하면 새 지시가 그 부대의 현재 지시를 교체한다. 취소하면 기존 지시를 그대로 둔다. <span class="src">GDD/rules/Realtime-Formation-Card-Battle.md</span></li>
+<li><b>일시정지</b> — 일시정지 중에도 부대를 선택하고 명령을 미리 본 뒤 확인하거나 취소할 수 있다. <span class="src">GDD/rules/Realtime-Formation-Card-Battle.md</span></li>
+<li><b>결과 반영</b> — 정산 뒤에도 원정은 계속될 수 있으며, 귀환은 저장이나 결과 반영의 다른 이름이 아니다. <span class="src">GDD/rules/Campaign-Loop.md</span></li>
+<li><b>전략 결과</b> — 정산 뒤에도 원정은 계속될 수 있으며, 귀환은 저장이나 결과 반영의 다른 이름이 아니다. <span class="src">GDD/rules/Campaign-Loop.md</span></li></ul>
 </section>
 <section>
 <h2>Aesthetics</h2>
 <p class="layer">플레이어가 느끼는 반응. Sensation, Fantasy, Narrative, Challenge, Fellowship, Discovery, Expression, Submission.</p>
 <ul><li><b>Sensation</b> — 젖은 콘크리트, 꺼진 안내판, 비상 전원, 녹슨 선로, 손때 묻은 노선도 <span class="src">Design.md</span></li>
-<li><b>Fantasy</b> — 무명으로 흘러드는 것은 착생 갈래 하나다. 혈연과 소속을 가진 몸으로 시작할 수도 있다. <span class="src">GAME-LOGIC/Game-Thesis.md</span></li>
-<li><b>Narrative</b> — 서울을 한 나라로 모으는 결말만 두지 않는다. 노선 연합, 독립 역, 강단의 치, 교역망, 기술 복구. 플레이가 만든 정통성이 질서가 된다. <span class="src">GAME-LOGIC/Game-Thesis.md</span></li>
+<li><b>Fantasy</b> — 무명으로 흘러드는 것은 착생 갈래 하나다. 혈연과 소속을 가진 몸으로 시작할 수도 있다. <span class="src">GDD/Game-Thesis.md</span></li>
+<li><b>Narrative</b> — 서울을 한 나라로 모으는 결말만 두지 않는다. 노선 연합, 독립 역, 강단의 치, 교역망, 기술 복구. 플레이가 만든 정통성이 질서가 된다. <span class="src">GDD/Game-Thesis.md</span></li>
 <li><b>Challenge</b> — 전투는 붙기 전에 부대를 편성하고, 붙은 뒤에는 고른 부대의 현재 지시를 교체한다. <span class="src">GDD/Game-Thesis.md</span></li>
-<li><b>Fellowship</b> — RPG는 그 사람의 손과 관계와 무공이다. 수리, 의약, 운송, 호위, 교섭, 탐사도 칼만큼 자란다. <span class="src">GAME-LOGIC/Game-Thesis.md</span></li>
+<li><b>Fellowship</b> — RPG는 그 사람의 손과 관계와 무공이다. 수리, 의약, 운송, 호위, 교섭, 탐사도 칼만큼 자란다. <span class="src">GDD/Game-Thesis.md</span></li>
 <li><b>Discovery</b> — 지하철망을 지상·지하 다층 전략 그래프로 다루는 <span class="src">Concept.md</span></li>
-<li><b>Expression</b> — 인물이 정치의 단위다. 품계와 기억과 후계가 나라의 손을 바꾼다. <span class="src">GAME-LOGIC/Game-Thesis.md</span></li>
+<li><b>Expression</b> — 인물이 정치의 단위다. 품계와 기억과 후계가 나라의 손을 바꾼다. <span class="src">GDD/Game-Thesis.md</span></li>
 <li><b>Submission</b> — 살아남기 위한 행정 <span class="src">Design.md</span></li></ul>
 </section>
 </main>

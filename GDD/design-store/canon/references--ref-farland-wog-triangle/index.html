@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>파랜드 택틱스 · 창세기전 · Triangle Strategy 게임 시스템 백과 — 정본</title>
+<style>
+:root { --ink:#1a1714; --paper:#f4efe4; --line:#c9b896; --metro:#1d4e89; --mute:#6b6256; }
+body { margin:0; font:16px/1.55 "Apple SD Gothic Neo","Noto Sans KR",sans-serif; color:var(--ink); background:var(--paper); }
+main { max-width:880px; margin:0 auto; padding:36px 24px 80px; }
+.kicker { letter-spacing:.14em; font-size:11px; color:var(--mute); }
+h1 { font-family:"Song Myung","Apple Myungjo",serif; font-size:32px; margin:8px 0 12px; }
+section { margin:28px 0; padding:18px; background:#fffdf8; border:1px solid var(--line); }
+.src { font-size:12px; color:var(--mute); }
+</style>
+</head>
+<body>
+<main>
+<p class="kicker">정본 파일 · SQLite</p>
+<p><a href="../" style="color:var(--metro)">설계 목차</a></p>
+<h1>파랜드 택틱스 · 창세기전 · Triangle Strategy 게임 시스템 백과</h1>
+<p class="src">GDD/references/Ref-Farland-Wog-Triangle.md · 97011 bytes · ac72dc67a068fa5f14bb2b03aad3f09489d84842a25b4ca9e4d0fa66a91a1d47</p>
+<section>
+<h2>머리글</h2>
+<ul><li>H1 파랜드 택틱스 · 창세기전 · Triangle Strategy 게임 시스템 백과</li>
+<li>H3 읽는 법과 판본 경계</li>
+<li>H2 A. 파랜드 택틱스 1·2</li>
+<li>H3 A1. 개요</li>
+<li>H3 A2. 코어 루프</li>
+<li>H3 A3. 진행 구조</li>
+<li>H4 1편의 전체 진행</li>
+<li>H4 2편의 진행일과 난이도</li>
+<li>H3 A4. 경제 시스템</li>
+<li>H4 자원 흐름</li>
+<li>H3 A5. 캐릭터·파티·장비</li>
+<li>H4 1편 고정 동료 9명</li>
+<li>H4 성장과 상태</li>
+<li>H4 장비의 기능과 실제 수치 예</li>
+<li>H4 2편의 주요 동료와 판본상 주의</li>
+<li>H3 A6. 전투 시스템</li>
+<li>H4 턴·명령·쿼터뷰</li>
+<li>H4 대시 공격과 사거리</li>
+<li>H4 마법·상태·협력</li>
+<li>H3 A7. 지도·세계 구조</li>
+<li>H3 A8. 외교·세력</li>
+<li>H3 A9. 이벤트·내러티브</li>
+<li>H3 A10. 난이도·압박·실패</li>
+<li>H2 B. 창세기전: 판본별 시스템</li>
+<li>H3 B1. 개요</li>
+<li>H3 B2. 코어 루프</li>
+<li>H3 B3. 진행 구조·에피소드</li>
+<li>H4 W2: 피리어드와 시점 전환</li>
+<li>H4 W3: 세 에피소드</li>
+<li>H4 W3P2와 RG</li>
+<li>H3 B4. 경제 시스템</li>
+<li>H4 W3의 장비가 자원 흐름을 바꾸는 예</li>
+<li>H4 W3P2 경험치 경제</li>
+<li>H3 B5. 캐릭터·파티·인터미션</li>
+<li>H4 W2: 클래스·초필살기·영입</li>
+<li>H4 W3: 이벤트 모집은 전역 인사 상태를 바꾼다</li>
+<li>H4 RG 인터미션 전체 기능군</li>
+<li>H3 B6. 전투·전쟁 시스템</li>
+<li>H4 자원·시간 사전: SC/BP 혼동 방지</li>
+<li>H4 W2: 링 커맨드·전술·특수전</li>
+<li>H4 W3: 군단과 용병 명령</li>
+<li>H4 W3P2: 행동력 차용·군단 개선</li>
+<li>H4 RG: 접촉 전 모험과 턴 전술의 분리</li>
+<li>H3 B7. 지도·세계 구조</li>
+<li>H3 B8. 외교·세력·정복·반란</li>
+<li>H3 B9. 이벤트·내러티브·분기 지속성</li>
+<li>H3 B10. 난이도·압박·실패</li>
+<li>H2 C. Triangle Strategy</li>
+<li>H3 C1. 개요</li>
+<li>H3 C2. 코어 루프</li>
+<li>H3 C3. 진행 구조</li>
+<li>H3 C4. 경제 시스템</li>
+<li>H4 네 자원을 분리한다</li>
+<li>H4 실제 구매 가격·해금 예</li>
+<li>H4 전술 포인트 지급 예</li>
+<li>H4 무한 반복과 희소성</li>
+<li>H3 C5. 캐릭터·모집·성장</li>
+<li>H4 전 동료 30명의 모집 조건</li>
+<li>H4 레벨·승급·무기·장신구</li>
+<li>H4 관계·전투불능·이탈</li>
+<li>H3 C6. 전투 시스템</li>
+<li>H4 개인 행동순서</li>
+<li>H4 위치·고저·추격·반격</li>
+<li>H4 지형 변환</li>
+<li>H4 상태이상·상태 효과</li>
+<li>H4 비장의 카드: 일회성 발동과 영구 해금</li>
+<li>H4 명중·피해 공식: 확인 가능한 부분과 미확인 부분</li>
+<li>H3 C7. 지도·세계·탐색</li>
+<li>H3 C8. 외교·세력·정치</li>
+<li>H3 C9. 신념·투표·분기·엔딩</li>
+<li>H4 신념의 3축</li>
+<li>H4 신념의 저울: 실제 결정 절차</li>
+<li>H4 모든 주요 투표 지점</li>
+<li>H4 황금 경로의 조건과 충돌 처리</li>
+<li>H4 결말과 장기 결과</li>
+<li>H3 C10. 난이도·실패·회차 압박</li>
+<li>H2 D. 출처·정합성 기록</li>
+<li>H3 D1. 미확인·충돌 항목의 사용 제한</li>
+<li>H3 D2. 원문 출처</li></ul>
+</section>
+</main>
+</body>
+</html>

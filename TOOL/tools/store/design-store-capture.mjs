@@ -31,7 +31,7 @@ function listFiles(dir, ext) {
 }
 
 /** 코퍼스 규칙: 루트 설계문서, game-logic 최상위 MD, reference, name-pools JSON, site 전용 규칙.
- * 마운트 사본(GAME-LOGIC/site/rules 중 코퍼스 최상위와同名)은 정본이 아니므로 제외한다. */
+ * 마운트 사본(WEB/wiki-source/rules 중 코퍼스 최상위와同名)은 정본이 아니므로 제외한다. */
 export function enumerateCorpus(repoRoot) {
   const entries = [];
   for (const name of ROOT_PLANNING_FILES) {
@@ -45,7 +45,7 @@ export function enumerateCorpus(repoRoot) {
   }
   const corpusDirs = [
     { dir: join(repoRoot, 'LORE'), label: 'LORE' },
-    { dir: join(repoRoot, 'GAME-LOGIC'), label: 'GAME-LOGIC' },
+    { dir: join(repoRoot, 'GDD'), label: 'GDD' },
     { dir: join(repoRoot, 'GDD'), label: 'GDD' },
   ];
   const corpusBasenames = new Set();
@@ -61,9 +61,9 @@ export function enumerateCorpus(repoRoot) {
   for (const name of listFiles(join(repoRoot, 'LORE/name-pools'), '.json')) {
     entries.push({ path: `LORE/name-pools/${name}`, fileSet: 'name-pools' });
   }
-  for (const name of listFiles(join(repoRoot, 'GAME-LOGIC/site/rules'), '.md')) {
+  for (const name of listFiles(join(repoRoot, 'WEB/wiki-source/rules'), '.md')) {
     if (corpusBasenames.has(name)) continue; // 마운트 사본 제외
-    entries.push({ path: `GAME-LOGIC/site/rules/${name}`, fileSet: 'site-rules-authored' });
+    entries.push({ path: `WEB/wiki-source/rules/${name}`, fileSet: 'site-rules-authored' });
   }
   entries.sort((a, b) => (a.path < b.path ? -1 : a.path > b.path ? 1 : 0));
   return entries;

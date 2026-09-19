@@ -12,13 +12,13 @@ Character-centered grand-strategy 4X RPG set in post-collapse Seoul's subway net
 seoul-kenshi/
 |-- Concept.md, Intent.md, Design.md, ToDo.md, README.md, AGENTS.md, SERVICES.md  # root guidance keepers
 |-- GAME/                  # Unity project root; contract in GAME/AGENTS.md
-|   |-- play/              # staged copy of GAME-LOGIC/site/dist/play (web POC, /play/); edits belong upstream
+|   |-- play/              # staged copy of WEB/wiki-source/dist/play (web POC, /play/); edits belong upstream
 |   |-- Assets/Janseon/    # Core (engine-free) + Data + Foundation; see Janseon/AGENTS.md
 |   |-- Assets/Tests/      # EditMode & PlayMode validation
 |   `-- ProjectSettings/
-|-- GDD/                   # design hub: adr/, proposals/, system-design/, generated design-store/
-|-- GAME-LOGIC/            # hand-authored rules corpus + Ref-* encyclopedias + site/ (VitePress)
+|-- GDD/                   # single game-design canon: rules/, references/, architecture/, art/, adr/, proposals/, system-design/
 |-- LORE/                  # world atlas canon; AGENTS.md covers root projections
+|   |-- bestiary/          # group-owned ecology/variant encyclopedia; 27 G pages, 422 entries
 |   |-- characters/        # 1001-cast roster hubs, Cast-State ledgers, relation graph
 |   |-- name-pools/        # machine-verified naming/values JSON datasets
 |   |-- regions/           # 427-dong authored atlas content + pipeline contract
@@ -27,6 +27,7 @@ seoul-kenshi/
 |-- RESEARCH/              # citation-tiered canon reference + verification artifacts
 |-- Reference/             # wiki diagram assets (assets/wiki); NOT the same as GAME-REFERENCE
 |-- TOOL/                  # skills/, docs/, tools/ (repo npm package), unity-remote/ (only submodule)
+|-- WEB/                   # official React wiki + VitePress staging/gates; never canon
 |-- Backend/               # ASP.NET Core host-session coordinator (server/Coordinator) + tests
 |-- evidence/              # append-only test-evidence bundles (seoul-strategy-map-gdd/, pr-144/); new evidence = new dated dir
 |-- store/                 # frozen design-store capture run-4343cc0-160339 (pinned @ 4343cc0, 2026-09-13); root planning docs are the LIVE copies
@@ -37,10 +38,10 @@ seoul-kenshi/
 ## WHERE TO LOOK
 | Task | Location | Notes |
 |------|----------|-------|
-| Design entry and navigation | `GDD/Home.md`, `GAME-LOGIC/_Sidebar.md` | Sidebar lives in GAME-LOGIC, not GDD |
+| Design entry and navigation | `GDD/Home.md`, `WEB/wiki-source/_Sidebar.md` | GDD is canon; sidebar is publication chrome |
 | Target unit-command UI (docs) | `GDD/system-design/total-war-ui/`, `Design.md` §0 | Documentation templates only; not a runtime claim |
-| Architecture and rollout | `GAME-LOGIC/Unity-Architecture.md`, `GAME-LOGIC/Unity-System-Design.md`, `GAME-LOGIC/Unity-Architecture-Implementation-Plan.md` | System-design doc lives in GAME-LOGIC |
-| Save and randomness contracts | `GAME-LOGIC/Save-and-Determinism.md` | Versioning, event records, separated RNG streams |
+| Architecture and rollout | `GDD/architecture/Unity-Architecture.md`, `GDD/architecture/Unity-System-Design.md`, `GDD/architecture/Unity-Architecture-Implementation-Plan.md` | All design canon lives under GDD |
+| Save and randomness contracts | `GDD/rules/Save-and-Determinism.md` | Versioning, event records, separated RNG streams |
 | World canon edits | `LORE/AGENTS.md` | Only `World-Narrative-Atlas.md` is hand-edited; other LORE root .md are generated projections |
 | Cast corpus | `LORE/characters/AGENTS.md`, `LORE/characters/Cast-Index.md` | 16 Cast-State ledgers; edits gated by `verify-cast.mjs` |
 | Naming/value datasets | `LORE/name-pools/AGENTS.md` | `values-cast.json` (schema v2) canon; `verify-hangnyeol` gate |
@@ -51,9 +52,9 @@ seoul-kenshi/
 | Unity tests and captures | `GAME/Assets/Tests/AGENTS.md` | Test-mode ownership and evidence receipts |
 | Tooling and checks | `TOOL/AGENTS.md`, `TOOL/tools/AGENTS.md` | Child files: art, wiki, design-store, regions, strategy-map |
 | Asset processing | `GDD/Asset-Pipeline.md`, `TOOL/tools/art/AGENTS.md` | Design contract versus executable promotion checks |
-| Wiki/world-atlas pipeline | `TOOL/tools/wiki/AGENTS.md`, `GAME-LOGIC/site/AGENTS.md` | `mount.mjs` stages canon; `gate.mjs` scans rendered dist |
+| Wiki/world-atlas pipeline | `TOOL/tools/wiki/AGENTS.md`, `WEB/wiki-source/AGENTS.md` | `mount.mjs` stages canon; `gate.mjs` scans rendered dist |
 | Browser comparison reference | `GAME-REFERENCE/AGENTS.md`, `GAME-REFERENCE/poc/browser/AGENTS.md` | Frozen four-surface prototype, not the product runtime |
-| Web POC runtime copy | `GAME/play/AGENTS.md` | Staged byte-copy of `GAME-LOGIC/site/dist/play`; `node --test model.test.mjs`; `world-data.js` generated, never hand-edit |
+| Web POC runtime copy | `GAME/play/AGENTS.md` | Staged byte-copy of `WEB/wiki-source/dist/play`; `node --test model.test.mjs`; `world-data.js` generated, never hand-edit |
 | Backend service | `Backend/AGENTS.md`, `Backend/server/Coordinator/` | REST + WebSocket on Kestrel :1219, in-process identity |
 | Research citation policy | `RESEARCH/AGENTS.md` | Citation tiers, verification records, banned-term JSONs |
 | Delivery and publishing | `GDD/adr/ADR-001-repository-delivery-policy.md` | Accepted authority over historical local-only clauses |
@@ -83,13 +84,13 @@ Writer-digest LSP/ast-grep findings plus retained root symbols; C# LSP coverage 
 ## CONVENTIONS
 - The Unity project root is `GAME/`, not the repository root. Its editor pin is an alpha release, not a generic Unity LTS target.
 - `Janseon.Core` is engine-free; Foundation integrates Core with Unity and VContainer.
-- Repository documentation is authoritative. Serve `GAME-LOGIC/site` locally (`npm run docs:dev`) and publish `https://seoul-dengoku.linalab.io` (self-hosted via Cloudflare Tunnel); the remote Wiki, VitePress publication and HTML mirrors are derivatives. Edits go in canon dirs (`GAME-LOGIC/`, `GDD/`, `LORE/`), never in `GAME-LOGIC/site/{rules,world,design}` generated mirrors.
+- Repository documentation is authoritative. Serve `WEB/wiki-source` locally (`npm run docs:dev`) and publish `https://seoul-dengoku.linalab.io` (self-hosted via Cloudflare Tunnel); the remote Wiki, VitePress publication and HTML mirrors are derivatives. Edits go in `GDD/` and `LORE/`, never in `WEB/wiki-source/{rules,world,design}` generated mirrors.
 - Design pages use Korean prose, English hyphenated filenames, ordinary relative Markdown links, and GitHub image URLs with `?raw=true`; canonical page names use Title-Case-With-Hyphens.
 - Repo automation is the private ESM package `TOOL/tools`; `TOOL/unity-remote` is the ONLY Git submodule (character-forge was removed). VitePress requires Node >=22 <27.
 - `Reference/` (wiki diagram assets) and `GAME-REFERENCE/` (BOMs, UX refs, prototypes) both exist at root — do not merge or confuse them.
 - Commits follow Korean conventional-commit style (`feat(tools): …`, `fix(map): …`).
 - Canonical git paths are `TOOL/…` / `RESEARCH/…`; lowercase `Tool/`/`Research/` spellings (used in some schema docs) only resolve on case-insensitive checkouts.
-- After any `GAME-LOGIC` canon edit, re-stage site mirrors with `mount.mjs` and run `gate.mjs` after `docs:build`; the design store rebuilds only via `seed-from-canon.mjs`.
+- After any GDD/LORE canon edit, re-stage site mirrors with `WEB/wiki-source/scripts/mount.mjs` and run `gate.mjs` after `docs:build`; the design store rebuilds only via `seed-from-canon.mjs`.
 
 ## ANTI-PATTERNS
 - Do not label planned campaign or tactical features as shipped merely because design pages exist; even Home's implementation summary may lag code.
@@ -113,7 +114,7 @@ Writer-digest LSP/ast-grep findings plus retained root symbols; C# LSP coverage 
 - After the unanswered camera/pause questions timed out, the adopted design defaults are a 3D free-command camera (pan/orbit/zoom, no invented angles/FOV) and orders while paused inside this party-closed battle only. Do not treat those defaults as owner-explicit decisions. Do not pause the shared campaign world or other parties. Do not add slow/speed/queue. Top-down battle schematics are documentation blueprints, not rendered game captures.
 - Do not turn region surface adjacency into movement edges, merge same-name facilities, or advance later narrative events to opening day. Geometry-only validation is intermediate.
 - Do not author the deliberately unwritten LORE projections (M007, B017, B020): the `미저작` exclusion gate (`confirmed-integration-manifest.json`) rejects merges with `E_EXCLUDED_ID`.
-- Do not hand-edit generated layers: LORE root projections (except `World-Narrative-Atlas.md`), `GDD/design-store/`, `GAME-LOGIC/site` mirrors, `store/` captures.
+- Do not hand-edit generated layers: LORE root projections (except `World-Narrative-Atlas.md`), `GDD/design-store/`, `WEB/wiki-source` mirrors, `store/` captures.
 - Pre-review artifacts (`LORE/name-pools/roster-100.json` (CC BY 4.0, NVIDIA attribution duty), `cast-backfill-draft.*`) never enter cast canon without human review.
 - On the remote Windows ComfyUI host, do not bypass PNGAL's loopback-only policy (`--listen`/netsh portproxy) or add watchdog/auto-restart machinery. Tailnet access uses `tailscale serve`, and service start/stop stays manual.
 
@@ -141,10 +142,10 @@ Run from the repository root. Unity launch, test and capture commands belong to 
 npm ci --prefix TOOL/tools
 npm --prefix TOOL/tools test
 node TOOL/tools/policy/check-repo-delivery-policy.mjs
-npm --prefix GAME-LOGIC/site run docs:dev
-npm --prefix GAME-LOGIC/site run docs:build
-node GAME-LOGIC/site/scripts/mount.mjs
-node GAME-LOGIC/site/scripts/gate.mjs
+npm --prefix WEB/wiki-source run docs:dev
+npm --prefix WEB/wiki-source run docs:build
+node WEB/wiki-source/scripts/mount.mjs
+node WEB/wiki-source/scripts/gate.mjs
 node TOOL/tools/design-store/seed-from-canon.mjs
 dotnet test Backend/server/Coordinator.Tests -c Debug
 dotnet run --project Backend/server/Coordinator/SeoulKenshi.Coordinator.csproj -c Debug --no-launch-profile
@@ -154,7 +155,7 @@ dotnet run --project Backend/server/Coordinator/SeoulKenshi.Coordinator.csproj -
 - `npm --prefix TOOL/tools test` runs policy name normalization + wiki build test + Unity architecture-doc test; architecture behavior, art, capture, atlas, regions and store have separate gates.
 - Region atlas verify currently fails on every region: all 427 `canon_refs` in `LORE/regions/content/*.json` still point at pre-reorg `docs/game-logic/…` paths; rewrite to `LORE/…` to restore. `LORE/regions/README.md` command block and two of its links are stale the same way.
 - Atlas rebuild needs the sibling bundle `../seoul-kenshi-data/seoul-geography-20260830` (outside the repo).
-- Inbound stale links: `GDD/Online-User-Journey.md`, `GDD/Home.md` and `GAME-LOGIC/site/**` mirrors still link pre-reorg `../LORE/Sixteen-States.md` / `../LORE/Scenario-Timeline.md` (now `LORE/factions/`, `LORE/chronology/`). Markdown has no redirects — fix the outbound paths.
+- Inbound stale links: `GDD/Online-User-Journey.md`, `GDD/Home.md` and `WEB/wiki-source/**` mirrors still link pre-reorg `../LORE/Sixteen-States.md` / `../LORE/Scenario-Timeline.md` (now `LORE/factions/`, `LORE/chronology/`). Markdown has no redirects — fix the outbound paths.
 - Root `README.md` now names `https://seoul-dengoku.linalab.io/play/` as the public web POC and keeps the old Vercel URL as the pending-removal address. `.omo/README.md` still names Vercel as public docs (predates the 2026-09-18 hub switch).
 - `TOOL/tools/design-store` `openSchema` DROPs all tables when `user_version < 3` — wipe, not migration.
 - Backend is the ASP.NET Core coordinator on :1219 with no external stores (ADR-006).

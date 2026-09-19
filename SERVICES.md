@@ -1,6 +1,6 @@
 # SERVICES.md — 서비스 레이어 계약
 
-배포 표면의 구성 계약. 각 서비스는 루트 바로 아래 자기 디렉터리 서브 경로로 열린다. 2026-09-19 확인한 루트 `/`는 서울:전국 공식 위키다. 저장소의 이전 허브 `index.html`로 현재 루트를 덮어쓰지 않는다. GitHub Wiki는 유지하지 않는다. 정본은 `GDD/`, `GAME-LOGIC/`, `LORE/`에 두고, VitePress 파생 문서는 `npm --prefix GAME-LOGIC/site run docs:dev`로 확인한다.
+배포 표면의 구성 계약. 각 서비스는 루트 바로 아래 자기 디렉터리 서브 경로로 열린다. 2026-09-19 확인한 루트 `/`는 서울:전국 공식 위키다. 저장소의 이전 허브 `index.html`로 현재 루트를 덮어쓰지 않는다. GitHub Wiki는 유지하지 않는다. 정본은 `GDD/`와 `LORE/`에 두고, VitePress 파생 문서는 `npm --prefix WEB/wiki-source run docs:dev`로 확인한다.
 
 ## 배포 표면 (2026-09-18 전환)
 
@@ -41,7 +41,7 @@ npm --prefix TOOL/tools run deploy:hub -- --host oliver@100.77.98.25
 | `/system-design/regions/` | `GDD/system-design/regions/` | 서울 25구·427동 지역 총람. 2026-09-13 |
 | `/design-store/` | `GDD/design-store/` | MDA 시트 + LORE 정본 전량. SQLite에서 렌더한 HTML |
 | `/ui-ux-refs/` | `GAME-REFERENCE/ui-ux-refs/` | UI/UX 레퍼런스 취합. 이슈 #101. 2026-09-14 |
-| `/design/` `/world/` `/rules/` | `GAME-LOGIC/wiki-react/` + 정본 `GDD/`·`LORE/`·`GAME-LOGIC/` | React 공식 위키 셸. VitePress는 정본 렌더·링크 품질 게이트에 사용 |
+| `/design/` `/world/` `/rules/` | `WEB/wiki/` + 정본 `GDD/`·`LORE/` | React 공식 위키 셸. VitePress는 정본 렌더·링크 품질 게이트에 사용 |
 
 ## 등록 기준
 

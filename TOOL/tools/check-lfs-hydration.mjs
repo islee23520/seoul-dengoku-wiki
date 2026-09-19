@@ -34,6 +34,6 @@ function scan(path, requiredRoot = false) {
   }
 }
 
-for (const path of ['GAME/Assets', 'GAME-REFERENCE/assets']) scan(path, true);
+scan('GAME/Assets', true);
 console.log(JSON.stringify(report, null, 2));
 process.exitCode = report.pointers.length || report.errors.length ? 1 : 0;

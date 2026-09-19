@@ -16,11 +16,10 @@ Safe public wiki generation and deterministic world-atlas projections; score 9, 
 | Confirmed integration exceptions | `confirmed-integration-manifest.json` | Recognized monster pages retained by projection checks |
 | Roster constraints | `verify-cast.mjs` | Rule-coded violations, separate regression executable |
 | Core isometric diagrams | `generate-core-isometric-diagrams.mjs`, `core-isometric-diagrams.json` | Renders manifest SVGs into `Reference/assets/wiki` |
-| Isometric SVG contracts | `world-atlas-isometric.mjs` | `projectIsometric`, `assertIsometricSvgContracts`, `verifyDiagramRecords` |
 | World-site structural gates | `test-wiki-parity.mjs` | 16-state index, LORE README sections, VitePress theme components |
 | Values-cast characterization | `test-values-cast.mjs` | `validateValuesCast` pins `LORE/name-pools/values-cast.json` against `LORE/Cast-Unaffiliated.md` |
 | Jaepyo/Iyen narrative contract | `verify-jaepyo-iyen-narrative.mjs` | Cast-Unaffiliated, Starting-Presets and source ledger stay consistent |
-| Monster batch roster | `verify-monster-batches-M021-M030.mjs` | Batch membership vs confirmed-integration manifest |
+| Hostile bestiary roster | `test-world-atlas.mjs`, `verify-world-expansion.mjs` | 27 group pages own all 422 authored entries; M IDs are provenance only |
 
 ## CONVENTIONS
 - `build-wiki.mjs` positional CLI inputs are source directory, asset directory, output directory and commit SHA.

@@ -13,7 +13,7 @@ Unity project and its serialized runtime contract; score 8, distinct engine/buil
 | Runtime and editor code | `Assets/Janseon/` | See its scoped guidance |
 | Unity test assemblies | `Assets/Tests/` | See its scoped guidance |
 | Scene authoring/build entry points | `Assets/Janseon/Foundation/Editor/FoundationProjectBuilder.cs` | Batchmode authoring and development-player build |
-| Browser-only prototype | `play/` (see its AGENTS.md) | Vanilla-JS experiment, not Unity runtime authority; staged copy of `GAME-LOGIC/site/dist/play`; `world-data.js` is a generated 702KB OSM Seoul blob |
+| Browser-only prototype | `play/` (see its AGENTS.md) | Vanilla-JS experiment, not Unity runtime authority; staged copy of `WEB/wiki-source/dist/play`; `world-data.js` is a generated 702KB OSM Seoul blob |
 | Headless execution contract | `../TOOL/docs/Unity-Headless-Workflow.md` | Mandatory batchmode-only workflow |
 | Unity quality gateway | this file | Procedure, regressions and done-means below |
 

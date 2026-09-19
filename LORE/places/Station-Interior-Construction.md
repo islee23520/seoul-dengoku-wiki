@@ -6,8 +6,6 @@ summary: 역 입장 이후 층·구역과 시설이 열리는 절차
 
 # 역 내부에 들어가면
 
-![거점 점유와 통합](https://github.com/islee23520/seoul-kenshi/blob/main/GAME-REFERENCE/assets/wiki/isometric-strongholds.svg?raw=true)
-
 2026-09-07 위키 도표. 거점 칸 그림은 당시 설명이며 입장 절차의 전장 격자가 아니다. 문서용 평면도이며 실제 게임 화면이 아니다.
 
 역 문에 들어섰을 때 대합실과 승강장이 어떻게 열리고, 그 안의 시설을 어떤 순서로 돌리는지를 적는다. 캠페인 조우를 한 번만 반영하는 `SettlementApi`와는 다른 일이다.
@@ -16,7 +14,7 @@ summary: 역 입장 이후 층·구역과 시설이 열리는 절차
 
 입장 명령과 내부 격자 스폰, 시설 슬롯은 아직 없다. 영등포·신도림·구로 세 역 시범 구현은 노선 이동·교섭·우회·전투·정산만 닫혀 있다.
 
-관련 문서는 [월드맵을 어떻게 구성하나](../places/World-Map-Construction.md), [거점과 영토](../economy/Strongholds-and-Territory.md), [경제와 생산](../economy/Economy-and-Production.md), [원정](../../GAME-LOGIC/Campaign-Loop.md)과 같이 읽는다.
+관련 문서는 [월드맵을 어떻게 구성하나](../places/World-Map-Construction.md), [거점과 영토](../economy/Strongholds-and-Territory.md), [경제와 생산](../economy/Economy-and-Production.md), [원정](../../GDD/rules/Campaign-Loop.md)과 같이 읽는다.
 
 ## 이름 함정
 

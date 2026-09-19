@@ -5,7 +5,7 @@ import test from 'node:test'
 import { fileURLToPath } from 'node:url'
 
 const repoRoot = resolve(import.meta.dirname, '../../..')
-const roots = ['LORE', 'GAME-LOGIC', 'GDD', 'TOOL/tools']
+const roots = ['LORE', 'GDD', 'TOOL/tools']
 const forbidden = [
   /일본삼국/u, /日本三國/u, /日本三国/u, /小学館/u,
   /Shogakukan/iu, /nippon-sangoku/iu, /Nippon Sangoku/iu,

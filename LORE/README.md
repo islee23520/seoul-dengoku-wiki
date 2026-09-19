@@ -9,6 +9,7 @@
 - [사람과 기체](people-and-machines/People-and-Machines.md)
 
 ## 3. 연표
+- [서울전국 백년실록 — 2026~2126](chronology/Century-Annals.md)
 - [시나리오 타임라인](chronology/Scenario-Timeline.md)
 
 ## 4. 지명
@@ -25,7 +26,7 @@
 - [징집 잔존과 군 장부](factions/Conscription-Remnants.md)
 - [이주민 회랑](factions/Diaspora-Corridors.md)
 - [바깥](factions/External-Theaters.md)
-- [적대 생태 색인](Hostile-Ecology-Index.md)
+- [서울 생태·변이 도감](bestiary/Hostile-Ecology-Index.md)
 
 ## 6. 직책
 - [관직](offices/Offices-and-Ranks.md)
@@ -74,7 +75,7 @@
 - [세계 확장 관계 원장](World-Relation-Ledger.md)
 - [세계 확장 색인](World-Expansion-Index.md)
 
-투영물 안내: `LORE/` 루트의 `Hostile-*.md`, `Hostile-Group-G01~G27.md`, `Monster-Batch-*.md`, `Story-Batch-*.md`, `Operating-Houses.md`, `Synthetic-Actors.md`, `Regional-Physical-AI-Arcs.md` 파일은 World-Narrative-Atlas의 읽기 전용 투영물입니다. 각 파일 머리의 원본 앵커와 해시가 정본이며, 수정은 원본 총람에만 반영합니다.
+투영물 안내: `LORE/bestiary/`의 색인과 27개 집단 도감, `LORE/` 루트의 `Story-Batch-*.md`, `Operating-Houses.md`, `Synthetic-Actors.md`, `Regional-Physical-AI-Arcs.md`는 World-Narrative-Atlas의 읽기 전용 투영물입니다. 몬스터 배치 본문 페이지는 폐기했고, M번호는 집단 도감 안 개체의 출처 정보로만 남습니다. 수정은 원본 총람에만 반영합니다.
 
 ---
 

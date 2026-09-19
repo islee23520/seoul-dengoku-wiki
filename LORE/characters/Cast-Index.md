@@ -70,7 +70,6 @@ G07–G24는 기록된 SHA에는 파일이 없었으나 `ea81bb9` 착지 본문�
 | G22 | 게시 | `docs/game-logic/Hostile-Group-G22.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`) | ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인 |
 | G23 | 게시 | `docs/game-logic/Hostile-Group-G23.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`) | ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인 |
 | G24 | 게시 | `docs/game-logic/Hostile-Group-G24.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`) | ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인 |
-| ISO-world-atlas | 게시 | `docs/assets/wiki/world-atlas-isometric.svg` @ `7b4e27b91510c024e936ed7cc4322714ff280313` (`docs/cast-iso-atlas-v2`) | 게시 승인 (국호 일치, SoT Sixteen-States.md와 SVG 텍스트 일치, 빌드에서 fragment 생성됨) |
 | ISO-house-influence | 게시 | `docs/assets/wiki/house-influence-isometric.svg` @ `7b4e27b91510c024e936ed7cc4322714ff280313` (`docs/cast-iso-atlas-v2`) | 게시 승인 (운영가문/HP/HC 라벨 일치, Cast-Relations 및 Operating-Houses.md와 정합, 빌드 fragment 확인) |
 | ISO-hostile-ecology | 게시 | `docs/assets/wiki/hostile-ecology-isometric.svg` @ `7b4e27b91510c024e936ed7cc4322714ff280313` (`docs/cast-iso-atlas-v2`) | 게시 승인 (G01–G24 라벨 및 Hostile-Ecology-Index.md와 일치, G07+ 미완성 무시, 빌드 fragment 확인) |
 

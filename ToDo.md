@@ -25,7 +25,7 @@
 - [ ] 행동 변경은 RED-first EditMode/PlayMode/Node 테스트
 - [ ] 베이크 산출은 두 번 실행 SHA-256 동일(결정론) — 청크 9, nodata는 수면
 - [ ] Unity `6000.7.0a5` batchmode PlayMode로 전략맵 화면 캡처(1280×720·1920×1080)
-- [ ] 공개 금지어(GAME-LOGIC/site/scripts/gate.mjs 금지 목록) 렌더 가시 0
+- [ ] 공개 금지어(WEB/wiki-source/scripts/gate.mjs 금지 목록) 렌더 가시 0
 - [ ] 임시 리소스 cleanup receipt
 
 ## 주차 백로그 (이전 모듈 잔여)

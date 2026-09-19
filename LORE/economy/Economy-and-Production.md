@@ -1,7 +1,5 @@
 # 경제와 생산
 
-![생산 시설과 노동 배치의 아이소 흐름](https://github.com/islee23520/seoul-kenshi/blob/main/GAME-REFERENCE/assets/wiki/isometric-economy-production.svg?raw=true)
-
 2026-09-07 위키 도표. 방향별 칸 배치는 당시 그림의 문법이다. 문서용 평면도이며 실제 게임 화면이 아니다.
 
 생산 시설 주변에 노동을 배치하고 노선 용량과 재고 흐름을 맞춘다.
