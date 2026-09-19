@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="서울:전국 UI 레이아웃 설계 영역별 무드보드 — 2026-09-11 기준" />
+<meta name="description" content="서울:전국 목표 부대 지휘 정보구조와 2026-09-11 POC 역사 — 구현 보고 아님" />
 <title>서울:전국 · UI 레이아웃 설계 무드보드</title>
 <style>
 :root{
@@ -146,25 +146,68 @@ footer{border-top:1px solid var(--stroke-quiet);margin-top:70px;padding-top:24px
 </head>
 <body>
 
-<nav class="toc" aria-label="영역 목록">
-  <div class="in">
-    <span class="brand">JANSEON:UI MOODBOARD</span>
-    <a href="#s1">시각 언어</a>
-    <a href="#s2">앱 흐름</a>
-    <a href="#s3">타이틀</a>
-    <a href="#s4">캠페인</a>
-    <a href="#s5">조우</a>
-    <a href="#s6">전투</a>
-    <a href="#s7">진형</a>
-    <a href="#s8">지휘관 카드</a>
-    <a href="#s9">정산</a>
-    <a href="#s10">공간 문법</a>
-    <a href="#s11">파이프라인</a>
-    <a href="./preview.html">실측 미리보기</a>
-  </div>
-</nav>
+<nav class="toc" aria-label="목표 설계와 역사 목록"><div class="in">
+  <span class="brand">SEOUL / TARGET &amp; HISTORY</span>
+  <a href="#target-campaign">캠페인·편성</a><a href="#target-deployment">배치·지휘</a>
+  <a href="#target-result">종료·결과</a><a href="#poc-history">POC 역사</a>
+  <a href="./preview.html">목표 상호작용 시연</a>
+  <a href="https://seoul-dengoku.linalab.io/total-war-ui/wireframes.html">공식 Archify 와이어프레임</a>
+</div></nav>
 
 <main>
+<header class="panel" id="target-summary" style="margin-top:28px">
+  <p class="kicker">TARGET UI / 2026-09-19 / DESKTOP</p>
+  <h1>서울:전국 — 목표 부대 지휘 정보구조</h1>
+  <p>이 문서는 목표 UI 설계와 과거 POC를 분리한다. 새 전투 구현 보고가 아니다.
+    인물 중심 캠페인과 파티, 생업·관계·직위·후계, 서울 역·노선 연결을 유지한다.
+    전투의 주 입력은 부대·진형 지휘이며 영웅의 이동·공격·회피를 직접 연속 조작하지 않는다.</p>
+  <p>기준은 <a href="../../Intent.md">Intent 결정 11</a>과 <a href="../../Design.md">Design 0절</a>이다.
+    <a href="./preview.html">데스크톱 목표 상호작용 시연</a>은 문서 상태만 바꾸며 게임을 실행하지 않는다.
+    <a href="https://seoul-dengoku.linalab.io/total-war-ui/wireframes.html">공식 total-war-ui Archify 와이어프레임</a>과
+    <a href="../../GDD/system-design/total-war-ui/wireframes.html">저장소 와이어프레임</a>을 함께 읽는다.</p>
+  <p class="note">아래 2026-09-11 이미지와 문장은 접힌 POC 역사다. 카드·격자·사이드스크롤·SD 표현은 목표가 아니며,
+    기존 이미지가 영웅 분리·병졸 상한·애니메이션풍 정비율을 구현했다는 뜻도 아니다.</p>
+</header>
+<section id="target-campaign">
+  <div class="sec-head"><span class="sec-no">01</span><h2>목표 — 캠페인 경로와 파티 편성</h2></div>
+  <div class="cols"><article class="panel"><h3 style="margin-top:0">경로 판단 → 동행 확인 → 조우 대응</h3>
+    <p>현재 위치와 다음 구간, 알려진 통행 상태·예상 소요·물자·관계를 먼저 읽는다.
+      파티 인물의 생업·부상·지원 역할과 전장 참가 대상을 구분한다.</p>
+    <p>조우에서는 교섭·우회·현장 거래·전투 준비를 검토한다. 현장 거래는 원정 결말인 교역과 다르다.</p></article>
+    <article class="panel"><h3 style="margin-top:0">영웅과 병졸 분대는 별도 전장 단위</h3>
+      <table><tr><th>표시 대상</th><th>목표 정보</th></tr>
+      <tr><td>영웅 지휘 인물</td><td>이름·초상·상태·현재 지시 / 병졸 수 제외</td></tr>
+      <tr><td>병졸 분대</td><td>현재 병졸 / 20 · 진형·사기·현재 지시</td></tr></table>
+      <p>병졸 한 분대는 최대 20명이다. 영웅 수·전체 분대 수·군단 상한은 정하지 않는다.
+      인물 표현 목표는 애니메이션풍 정비율이며 기존 초상은 역사 참고다.</p></article></div>
+</section>
+<section id="target-deployment">
+  <div class="sec-head"><span class="sec-no">02</span><h2>목표 — 전장 배치와 선택 부대 지휘</h2></div>
+  <table><tr><th>정보 우선순위</th><th>목표 내용과 상태</th></tr>
+    <tr><td>배치</td><td>닫힌 세션의 참가자·목표·지형·퇴로를 확인하고 부대 위치와 진형 방향을 검토한다.</td></tr>
+    <tr><td>전장과 부대 목록</td><td>영웅과 병졸 분대를 별도로 선택한다. 선택이 없으면 명령은 비활성이다.</td></tr>
+    <tr><td>현재 지시 → 미리보기</td><td>이동·공격·진형 방향·정지를 검토한다. 확인은 선택 부대의 현재 지시를 교체한다. 취소는 기존 지시를 유지한다.</td></tr>
+    <tr><td>수락 기록</td><td>확인된 지시만 결정론적 수락 순서에 남긴다. 카드 자원·드로우·재충전·명령 큐·웨이포인트 연쇄는 없다.</td></tr>
+  </table>
+  <p class="note">질문 무응답 뒤 채택한 설계 기본안: 3D 자유 지휘 카메라의 팬·오빗·줌, 그리고 파티의 닫힌 전투만 일시정지·재개.
+    소유자의 직접 선택으로 쓰지 않는다. 공유 캠페인 월드와 다른 파티는 멈추지 않는다.
+    정지 중 확인된 지시는 재개 뒤 다음 시뮬레이션 단계에서 적용하며 같은 부대의 새 확정 지시가 이전 지시를 교체한다.
+    감속·배속은 없다. 전장 도식은 문서용 청사진이지 실제 렌더가 아니다.</p>
+</section>
+<section id="target-result">
+  <div class="sec-head"><span class="sec-no">03</span><h2>목표 — 종료 확인·결과 영수증·다음 행선</h2></div>
+  <ul class="facts"><li>질서 있는 철수는 LegalFallback을 확인하는 명령이다. 패주는 사기 붕괴에 따른 비자발 이탈이다.</li>
+    <li>항복은 자발적 제안이며 상대 수락 뒤 종료한다. 퇴로 봉쇄만으로 항복 선택을 없애지 않는다.</li>
+    <li>포획은 인물별 신병 결과다. 항복·패주·패배의 다른 이름이 아니며 새 확률이나 정원을 만들지 않는다.</li>
+    <li>종료 뒤 불변 ResultId의 결과를 한 번만 반영한다. 중복 적용은 기존 영수증을 보여 주며 세계를 다시 바꾸지 않는다.</li>
+    <li>결과 반영은 귀환 명령이 아니다. 원정 계속을 먼저 제시하고 귀환·정착·정복·방랑·교역을 서로 다른 결말로 둔다.</li></ul>
+  <p>색·선·타이포의 참고는 아래 역사 자료에 보존한다. 역사 자료의 런타임 이름·수치·검증 완료 문구를 목표 승인으로 승격하지 않는다.</p>
+</section>
+<details id="poc-history" style="margin-top:64px">
+  <summary class="panel"><strong>2026-09-11 POC 역사 열기 — 아래 모든 문장·도표·캡처는 현 목표가 아님</strong></summary>
+  <p class="note">당시 보고서의 표현과 상태를 보존한 역사 자료다. 당시의 ‘계약 확정’, ‘완료’, ‘검증’은 현재 구현 증거가 아니다.
+    모바일 캡처도 과거 자료일 뿐이며 이번 검수는 데스크톱만 다룬다. Unity·Oddland·이미지 원본은 수정하지 않는다.</p>
+
 
 <header class="hero">
   <div class="panel">
@@ -184,7 +227,7 @@ footer{border-top:1px solid var(--stroke-quiet);margin-top:70px;padding-top:24px
   </div>
   <figure>
     <img src="images/wiki/janseon-seoul-cover.png" alt="서울:전국 커버 아트" loading="lazy" />
-    <figcaption>커버 아트 · <code>docs/assets/wiki/janseon-seoul-cover.png</code></figcaption>
+    <figcaption>2026-09-11 POC 역사 · 현 목표 아님 · 커버 아트 · <code>docs/assets/wiki/janseon-seoul-cover.png</code></figcaption>
   </figure>
 </header>
 
@@ -266,7 +309,7 @@ footer{border-top:1px solid var(--stroke-quiet);margin-top:70px;padding-top:24px
   <div class="cols">
     <figure>
       <img src="images/wiki/isometric-subway-layers.svg" alt="서울과 지하철 레이어 다이어그램" loading="lazy" />
-      <figcaption>세계 레이어 개념도 · <code>docs/assets/wiki/isometric-subway-layers.svg</code></figcaption>
+      <figcaption>2026-09-11 POC 역사 · 현 목표 아님 · 세계 레이어 개념도 · <code>docs/assets/wiki/isometric-subway-layers.svg</code></figcaption>
     </figure>
     <div class="panel">
       <h3 style="margin-top:0">모듈 책임</h3>
@@ -279,8 +322,8 @@ footer{border-top:1px solid var(--stroke-quiet);margin-top:70px;padding-top:24px
       </table>
     </div>
   </div>
-  <p class="src">출처 — <a href="../../LORE/Unity-System-Design.md">docs/game-logic/Unity-System-Design.md</a> ·
-    <a href="../../LORE/Unity-Architecture.md">docs/game-logic/Unity-Architecture.md</a> ·
+  <p class="src">출처 — <a href="../../GAME-LOGIC/Unity-System-Design.md">docs/game-logic/Unity-System-Design.md</a> ·
+    <a href="../../GAME-LOGIC/Unity-Architecture.md">docs/game-logic/Unity-Architecture.md</a> ·
     <a href="../../Design.md">Design.md</a> §5·§6</p>
 </section>
 
@@ -303,12 +346,12 @@ footer{border-top:1px solid var(--stroke-quiet);margin-top:70px;padding-top:24px
     </div>
     <figure>
       <img src="images/frozen/campaign-title-1280x720.png" alt="메인 타이틀 동결 캡처" loading="lazy" />
-      <figcaption>동결 캡처 · 회수 캠페인 타이틀 화면 · 1280×720
+      <figcaption>2026-09-11 POC 역사 · 현 목표 아님 · 동결 캡처 · 회수 캠페인 타이틀 화면 · 1280×720
         (원본 <code>.omo/evidence/windows-html-poc-20260909</code>, worktree 보관)</figcaption>
     </figure>
   </div>
   <p class="src">출처 — <a href="../../Design.md">Design.md</a> §3.1·§5.1 ·
-    <a href="../../LORE/Ui-Implementation-Pipeline.md">docs/game-logic/Ui-Implementation-Pipeline.md</a></p>
+    <span>당시 참조: docs/game-logic/Ui-Implementation-Pipeline.md (현재 경로 없음)</span></p>
 </section>
 
 <!-- 04 캠페인 -->
@@ -344,16 +387,16 @@ footer{border-top:1px solid var(--stroke-quiet);margin-top:70px;padding-top:24px
   <div class="cols">
     <figure>
       <img src="images/mockups/recovered-campaign.png" alt="회수 캠페인 통합 목업 라이브 캡처" loading="lazy" />
-      <figcaption>동결 목업 실재생 캡처(2026-09-11, 1440×900) · <code>poc/browser/recovered-campaign/</code> —
+      <figcaption>2026-09-11 POC 역사 · 현 목표 아님 · 동결 목업 실재생 캡처(2026-09-11, 1440×900) · <code>poc/browser/recovered-campaign/</code> —
         관리·원정·조우·진형·실시간 전투 탭이 한 흐름으로 연결된 통합 원정 표면</figcaption>
     </figure>
     <figure>
       <img src="images/wiki/isometric-campaign-loop.svg" alt="출격하고 돌아오는 흐름 다이어그램" loading="lazy" />
-      <figcaption>캠페인 순환 개념도 · <code>docs/assets/wiki/isometric-campaign-loop.svg</code></figcaption>
+      <figcaption>2026-09-11 POC 역사 · 현 목표 아님 · 캠페인 순환 개념도 · <code>docs/assets/wiki/isometric-campaign-loop.svg</code></figcaption>
     </figure>
   </div>
   <p class="src">출처 — <a href="../../Design.md">Design.md</a> §3.1·§5.2 ·
-    <a href="../../LORE/Campaign-Loop.md">docs/game-logic/Campaign-Loop.md</a> ·
+    <a href="../../GAME-LOGIC/Campaign-Loop.md">docs/game-logic/Campaign-Loop.md</a> ·
     <a href="../poc/browser/recovered-campaign/index.html">poc/browser/recovered-campaign/</a></p>
 </section>
 
@@ -378,11 +421,11 @@ footer{border-top:1px solid var(--stroke-quiet);margin-top:70px;padding-top:24px
   </div>
   <figure>
     <img src="images/frozen/campaign-encounter-1280x720.png" alt="조우 선택 동결 캡처" loading="lazy" />
-    <figcaption>동결 캡처 · 조우 선택 화면 · 1280×720
+    <figcaption>2026-09-11 POC 역사 · 현 목표 아님 · 동결 캡처 · 조우 선택 화면 · 1280×720
       (원본 <code>.omo/evidence/windows-html-poc-20260909</code>, worktree 보관)</figcaption>
   </figure>
   <p class="src">출처 — <a href="../../Design.md">Design.md</a> §5.2 ·
-    <a href="../../LORE/Travel-and-Encounters.md">docs/game-logic/Travel-and-Encounters.md</a></p>
+    <a href="../../GAME-LOGIC/Travel-and-Encounters.md">docs/game-logic/Travel-and-Encounters.md</a></p>
 </section>
 
 <!-- 06 전투 -->
@@ -405,30 +448,30 @@ footer{border-top:1px solid var(--stroke-quiet);margin-top:70px;padding-top:24px
   <div class="cols">
     <figure>
       <img src="images/frozen/battle-step2-review-paused-1280x720.png" alt="실시간 전투 일시정지 동결 캡처" loading="lazy" />
-      <figcaption>동결 캡처 · 실시간 전투(일시정지) · 1280×720 · <code>poc/browser/battle-preview/</code> —
+      <figcaption>2026-09-11 POC 역사 · 현 목표 아님 · 동결 캡처 · 실시간 전투(일시정지) · 1280×720 · <code>poc/browser/battle-preview/</code> —
         좌측 격자 전장, 우측 370px대 분대 지휘 패널</figcaption>
     </figure>
     <figure>
       <img src="images/unity/U3-1280x720.png" alt="Unity 전투 HUD 카드 4장 캡처" loading="lazy" />
-      <figcaption>Unity 구현 캡처 · task-11 U3(그래픽 재촬영본) — 진형 확정 후 전투 대기 상태,
+      <figcaption>2026-09-11 POC 역사 · 현 목표 아님 · Unity 구현 캡처 · task-11 U3(그래픽 재촬영본) — 진형 확정 후 전투 대기 상태,
         132×180 캐릭터 카드 네 장이 서윤 스프라이트를 바인딩한 모습</figcaption>
     </figure>
   </div>
   <div class="cols">
     <figure>
       <img src="images/unity/U5-1280x720.png" alt="Unity 타깃팅 화살표 캡처" loading="lazy" />
-      <figcaption>Unity 구현 캡처 · task-11 U5 — 기동 재집결 카드 선택 후 생존 아군 지정:
+      <figcaption>2026-09-11 POC 역사 · 현 목표 아님 · Unity 구현 캡처 · task-11 U5 — 기동 재집결 카드 선택 후 생존 아군 지정:
         금 링과 네 방향 화살표, Core 차단 지점은 적색</figcaption>
     </figure>
     <figure>
       <img src="images/wiki/isometric-battle-roundtrip.svg" alt="전략에서 전투로 왕복 다이어그램" loading="lazy" />
-      <figcaption>전략↔전투 왕복 개념도 · <code>docs/assets/wiki/isometric-battle-roundtrip.svg</code></figcaption>
+      <figcaption>2026-09-11 POC 역사 · 현 목표 아님 · 전략↔전투 왕복 개념도 · <code>docs/assets/wiki/isometric-battle-roundtrip.svg</code></figcaption>
     </figure>
   </div>
   <p class="src">출처 — <a href="../../Design.md">Design.md</a> §3.1·§5.2 ·
-    <a href="../../LORE/Realtime-Formation-Card-Battle.md">docs/game-logic/Realtime-Formation-Card-Battle.md</a> ·
-    <a href="../../LORE/Strategy-Battle-Roundtrip.md">docs/game-logic/Strategy-Battle-Roundtrip.md</a> ·
-    Unity 캡처 <a href="../../.omo/evidence/unity-html-poc-ui-parity/task-09/pointer-targeting.png">task-09/11</a>(작업 트리 <code>unity-poc-mac</code> 보관)</p>
+    <a href="../../GAME-LOGIC/Realtime-Formation-Card-Battle.md">docs/game-logic/Realtime-Formation-Card-Battle.md</a> ·
+    <a href="../../GAME-LOGIC/Strategy-Battle-Roundtrip.md">docs/game-logic/Strategy-Battle-Roundtrip.md</a> ·
+    Unity 캡처 <a href="images/unity/pointer-targeting.png">task-09/11</a>(작업 트리 <code>unity-poc-mac</code> 보관)</p>
 </section>
 
 <!-- 07 진형 -->
@@ -442,7 +485,7 @@ footer{border-top:1px solid var(--stroke-quiet);margin-top:70px;padding-top:24px
       <ul class="facts">
         <li>1. 대원 선택 — 여섯 유닛 카드(서윤·민재·하린·도윤·지우·은호)</li>
         <li>2. 목적 슬롯 — 전열·중열·후열 × 좌·중앙·우, 빈 슬롯은 배치 가능 표시</li>
-        <li>3. 정면 — 북·동·남·서 네 버튼(<code>formation-edit-facing-n/e../code>)</li>
+        <li>3. 정면 — 북·동·남·서 네 버튼(<code>formation-edit-facing-n/e...</code>)</li>
         <li>확정·취소 — <code>formation-edit-confirm</code> · <code>formation-edit-cancel</code></li>
         <li>레일 폭 약 370px · 편집기가 열리면 카드 독은 숨김</li>
       </ul>
@@ -451,22 +494,22 @@ footer{border-top:1px solid var(--stroke-quiet);margin-top:70px;padding-top:24px
     </div>
     <figure>
       <img src="images/frozen/formation-step1-final-1280x720.png" alt="진형 편집 동결 캡처" loading="lazy" />
-      <figcaption>동결 캡처 · 출격 진형 편집 · 1280×720 · <code>poc/browser/formation-editor/</code> —
+      <figcaption>2026-09-11 POC 역사 · 현 목표 아님 · 동결 캡처 · 출격 진형 편집 · 1280×720 · <code>poc/browser/formation-editor/</code> —
         좌측 아이소메트릭 승강장 배치도 + 우측 FORMATION CONTROL 레일</figcaption>
     </figure>
   </div>
   <div class="cols">
     <figure>
       <img src="images/unity/U1-1280x720.png" alt="Unity 진형 레일 캡처" loading="lazy" />
-      <figcaption>Unity 구현 캡처 · task-11 U1(그래픽 재촬영본) — 배치 요청 직후 진형 편집기 오픈 상태</figcaption>
+      <figcaption>2026-09-11 POC 역사 · 현 목표 아님 · Unity 구현 캡처 · task-11 U1(그래픽 재촬영본) — 배치 요청 직후 진형 편집기 오픈 상태</figcaption>
     </figure>
     <figure>
       <img src="images/frozen/formation-step1-final-confirmed-1920x1080.png" alt="진형 확정 1080p 동결 캡처" loading="lazy" />
-      <figcaption>동결 캡처 · 진형 확정 직후 · 1920×1080 — 1080p에서 같은 비율 스케일을 유지한다</figcaption>
+      <figcaption>2026-09-11 POC 역사 · 현 목표 아님 · 동결 캡처 · 진형 확정 직후 · 1920×1080 — 1080p에서 같은 비율 스케일을 유지한다</figcaption>
     </figure>
   </div>
   <p class="src">출처 — <a href="../../Design.md">Design.md</a> §5.2 ·
-    <a href="../../LORE/Realtime-Formation-Card-Battle.md">docs/game-logic/Realtime-Formation-Card-Battle.md</a> 전장의 기본 형태 ·
+    <a href="../../GAME-LOGIC/Realtime-Formation-Card-Battle.md">docs/game-logic/Realtime-Formation-Card-Battle.md</a> 전장의 기본 형태 ·
     <a href="../poc/browser/formation-editor/index.html">poc/browser/formation-editor/</a></p>
 </section>
 
@@ -494,21 +537,21 @@ footer{border-top:1px solid var(--stroke-quiet);margin-top:70px;padding-top:24px
   <div class="cols">
     <figure>
       <img src="images/frozen/avatar-cards-720p-initial.png" alt="지휘관 카드 초기 상태" loading="lazy" />
-      <figcaption>동결 캡처 · 지휘관 카드 전투 초기 상태(720p) · <code>poc/browser/avatar-preview/</code></figcaption>
+      <figcaption>2026-09-11 POC 역사 · 현 목표 아님 · 동결 캡처 · 지휘관 카드 전투 초기 상태(720p) · <code>poc/browser/avatar-preview/</code></figcaption>
     </figure>
     <figure>
       <img src="images/frozen/avatar-cards-1080p-card-effect.png" alt="카드 발동 효과" loading="lazy" />
-      <figcaption>동결 캡처 · 카드 발동(1080p) — 카드 선택 → 아군 분대 → 지면 방향의 입력 흐름</figcaption>
+      <figcaption>2026-09-11 POC 역사 · 현 목표 아님 · 동결 캡처 · 카드 발동(1080p) — 카드 선택 → 아군 분대 → 지면 방향의 입력 흐름</figcaption>
     </figure>
   </div>
   <div class="cols">
     <figure>
       <img src="images/frozen/zoom-1280-min.png" alt="최소 줌" loading="lazy" />
-      <figcaption>동결 캡처 · 줌 하한(0.72) — 넓은 전장 조망</figcaption>
+      <figcaption>2026-09-11 POC 역사 · 현 목표 아님 · 동결 캡처 · 줌 하한(0.72) — 넓은 전장 조망</figcaption>
     </figure>
     <figure>
       <img src="images/frozen/zoom-1280-max.png" alt="최대 줌" loading="lazy" />
-      <figcaption>동결 캡처 · 줌 상한(1.75) — 분대 근접 확인</figcaption>
+      <figcaption>2026-09-11 POC 역사 · 현 목표 아님 · 동결 캡처 · 줌 상한(1.75) — 분대 근접 확인</figcaption>
     </figure>
   </div>
   <h3>초상 파이프라인과 반응형</h3>
@@ -526,13 +569,13 @@ footer{border-top:1px solid var(--stroke-quiet);margin-top:70px;padding-top:24px
     캐릭터 방향은 TOS식 SD, 3D 바디 + 2D 도트 헤드의 2.5등신 실루엣</p>
   <figure style="max-width:420px">
     <img src="images/frozen/commander-mobile-ready.png" alt="모바일 지휘관 카드" loading="lazy" />
-    <figcaption>동결 캡처 · 모바일(390) 브레이크포인트의 지휘관 카드 준비 상태 —
+    <figcaption>2026-09-11 POC 역사 · 현 목표 아님 · 동결 캡처 · 모바일(390) 브레이크포인트의 지휘관 카드 준비 상태 —
       좁은 폭에서도 카드 독과 조작이 살아남는지가 검증 지점이었다</figcaption>
   </figure>
   <p class="src">출처 — <a href="../poc/browser/avatar-preview/index.html">poc/browser/avatar-preview/</a> ·
     <a href="../poc/browser/README.md">poc/browser/README.md</a> ·
-    <a href="../../LORE/Character-Art-Direction.md">docs/game-logic/Character-Art-Direction.md</a> ·
-    <a href="../../LORE/Cast-Profile-Contract.md">docs/game-logic/Cast-Profile-Contract.md</a></p>
+    <a href="../../GAME-LOGIC/Character-Art-Direction.md">docs/game-logic/Character-Art-Direction.md</a> ·
+    <a href="../../LORE/characters/Cast-Profile-Contract.md">docs/game-logic/Cast-Profile-Contract.md</a></p>
 </section>
 
 <!-- 09 정산 -->
@@ -552,12 +595,12 @@ footer{border-top:1px solid var(--stroke-quiet);margin-top:70px;padding-top:24px
     </div>
     <figure>
       <img src="images/frozen/campaign-settlement-1280x720.png" alt="정산 화면 동결 캡처" loading="lazy" />
-      <figcaption>동결 캡처 · 정산·복귀 화면 · 1280×720
+      <figcaption>2026-09-11 POC 역사 · 현 목표 아님 · 동결 캡처 · 정산·복귀 화면 · 1280×720
         (원본 <code>.omo/evidence/windows-html-poc-20260909</code>, worktree 보관)</figcaption>
     </figure>
   </div>
   <p class="src">출처 — <a href="../../Design.md">Design.md</a> §3.1·§5.2 ·
-    <a href="../../LORE/Campaign-Loop.md">docs/game-logic/Campaign-Loop.md</a> 6단계</p>
+    <a href="../../GAME-LOGIC/Campaign-Loop.md">docs/game-logic/Campaign-Loop.md</a> 6단계</p>
 </section>
 
 <!-- 10 공간 문법 -->
@@ -568,17 +611,17 @@ footer{border-top:1px solid var(--stroke-quiet);margin-top:70px;padding-top:24px
   <div class="cols">
     <figure>
       <img src="images/wiki/isometric-grammar.svg" alt="칸·방향·시야 규칙 다이어그램" loading="lazy" />
-      <figcaption>격자 문법 — 칸에 누가 서 있고 어느 쪽을 보는지 · <code>docs/assets/wiki/isometric-grammar.svg</code></figcaption>
+      <figcaption>2026-09-11 POC 역사 · 현 목표 아님 · 격자 문법 — 칸에 누가 서 있고 어느 쪽을 보는지 · <code>docs/assets/wiki/isometric-grammar.svg</code></figcaption>
     </figure>
     <figure>
       <img src="images/wiki/isometric-travel-encounters.svg" alt="이동과 조우 다이어그램" loading="lazy" />
-      <figcaption>이동과 조우 — 지상·역사·터널의 4방향 원정 · <code>docs/assets/wiki/isometric-travel-encounters.svg</code></figcaption>
+      <figcaption>2026-09-11 POC 역사 · 현 목표 아님 · 이동과 조우 — 지상·역사·터널의 4방향 원정 · <code>docs/assets/wiki/isometric-travel-encounters.svg</code></figcaption>
     </figure>
   </div>
   <div class="cols">
     <figure>
       <img src="images/frozen/station-crop-720.png" alt="역사 클로즈업" loading="lazy" />
-      <figcaption>동결 캡처 · 역사(승강장) 클로즈업 — 기둥·장벽·안전선의 무대 소품</figcaption>
+      <figcaption>2026-09-11 POC 역사 · 현 목표 아님 · 동결 캡처 · 역사(승강장) 클로즈업 — 기둥·장벽·안전선의 무대 소품</figcaption>
     </figure>
     <div class="panel">
       <h3 style="margin-top:0">잠긴 계약 수치</h3>
@@ -594,9 +637,9 @@ footer{border-top:1px solid var(--stroke-quiet);margin-top:70px;padding-top:24px
         계약 JSON과 Foundation 씬 카메라를 대조한다.</p>
     </div>
   </div>
-  <p class="src">출처 — <a href="../../LORE/Unity-System-Design.md">docs/game-logic/Unity-System-Design.md</a> 테스트 전략 ·
-    <a href="../../LORE/Travel-and-Encounters.md">docs/game-logic/Travel-and-Encounters.md</a> ·
-    <a href="../../LORE/Character-Art-Direction.md">docs/game-logic/Character-Art-Direction.md</a></p>
+  <p class="src">출처 — <a href="../../GAME-LOGIC/Unity-System-Design.md">docs/game-logic/Unity-System-Design.md</a> 테스트 전략 ·
+    <a href="../../GAME-LOGIC/Travel-and-Encounters.md">docs/game-logic/Travel-and-Encounters.md</a> ·
+    <a href="../../GAME-LOGIC/Character-Art-Direction.md">docs/game-logic/Character-Art-Direction.md</a></p>
 </section>
 
 <!-- 11 파이프라인 -->
@@ -640,39 +683,30 @@ footer{border-top:1px solid var(--stroke-quiet);margin-top:70px;padding-top:24px
   <div class="cols">
     <figure>
       <img src="images/frozen/formation-integrated-1280x720.png" alt="통합 진형 화면" loading="lazy" />
-      <figcaption>동결 캡처 · 회수 캠페인에 진형 편집이 통합된 모습 · 1280×720</figcaption>
+      <figcaption>2026-09-11 POC 역사 · 현 목표 아님 · 동결 캡처 · 회수 캠페인에 진형 편집이 통합된 모습 · 1280×720</figcaption>
     </figure>
     <figure>
       <img src="images/frozen/formation-mobile-390x844.png" alt="모바일 진형" loading="lazy" />
-      <figcaption>동결 캡처 · 모바일(390×844) 진형 — 목업 단계에서 좁은 폭 동작까지 확인한다</figcaption>
+      <figcaption>2026-09-11 POC 역사 · 현 목표 아님 · 동결 캡처 · 모바일(390×844) 진형 — 목업 단계에서 좁은 폭 동작까지 확인한다</figcaption>
     </figure>
   </div>
   <figure>
     <img src="images/unity/pointer-targeting.png" alt="Unity 포인터 타깃팅 증명" loading="lazy" />
-    <figcaption>Unity 구현 증명 · task-09 — PlayMode 실제 포인터 경로로 카드 선택→아군→방향 지정을 확인한 흔적</figcaption>
+    <figcaption>2026-09-11 POC 역사 · 현 목표 아님 · Unity 구현 증명 · task-09 — PlayMode 실제 포인터 경로로 카드 선택→아군→방향 지정을 확인한 흔적</figcaption>
   </figure>
-  <p class="src">출처 — <a href="../../LORE/Ui-Implementation-Pipeline.md">docs/game-logic/Ui-Implementation-Pipeline.md</a> ·
+  <p class="src">출처 — <span>당시 참조: docs/game-logic/Ui-Implementation-Pipeline.md (현재 경로 없음)</span> ·
     <a href="../poc/browser/README.md">poc/browser/README.md</a> ·
-    <a href="../../LORE/Unity-Architecture.md">docs/game-logic/Unity-Architecture.md</a> ·
-    <a href="../../LORE/Development-Roadmap.md">docs/game-logic/Development-Roadmap.md</a></p>
+    <a href="../../GAME-LOGIC/Unity-Architecture.md">docs/game-logic/Unity-Architecture.md</a> ·
+    <a href="../../GDD/Development-Roadmap.md">docs/game-logic/Development-Roadmap.md</a></p>
 </section>
 
+</details>
 <footer>
-  <p><strong>이 보고서의 성립 방식</strong> — 2026-09-11 기준. 본문의 수치와 구조는
-  <a href="../../Design.md">Design.md</a>, <a href="../../LORE/Ui-Implementation-Pipeline.md">Ui-Implementation-Pipeline.md</a>,
-  <a href="../../LORE/Realtime-Formation-Card-Battle.md">Realtime-Formation-Card-Battle.md</a>,
-  <a href="../../LORE/Unity-System-Design.md">Unity-System-Design.md</a>,
-  <a href="../../LORE/Unity-Architecture.md">Unity-Architecture.md</a>,
-  <a href="../../LORE/Campaign-Loop.md">Campaign-Loop.md</a>에서 뽑았다.
-  이미지는 세 출처다 — (1) 동결 캡처: 작업 트리 <code>html-formation-step1/.omo/evidence</code>의
-  1280×720·1920×1080·390 원본 사본, (2) 라이브 캡처: <code>poc/browser/recovered-campaign</code>을
-  2026-09-11 실재생해 찍은 스크린샷, (3) Unity 구현 캡처: 작업 트리 <code>unity-poc-mac</code> task-09/11 PNG.
-  초상은 표시용으로 512px로 줄인 사본이며 원본은 <code>docs/assets/wiki/portraits/</code>에 그대로 있다.
-  새로 생성한 이미지는 없다.</p>
-  <p>문서 형식 — 단일 HTML, 외부 의존 없음. 저장 위치
-  <code>docs/verification/ui-layout-moodboard-20260911/</code>.</p>
+  <p>2026-09-19 목표 계약 대조 · 역사 자료 기준 2026-09-11. 새 게임 구현·배포·이미지 제작을 뜻하지 않는다.</p>
+  <p>소스: GAME-REFERENCE/ui-layout-moodboard/ · 게시 경로:
+    <a href="https://seoul-dengoku.linalab.io/ui-layout-moodboard/">공식 UI 레이아웃 무드보드</a>.
+    이 수정본의 게시 여부는 별도다.</p>
 </footer>
-
 </main>
 </body>
 </html>

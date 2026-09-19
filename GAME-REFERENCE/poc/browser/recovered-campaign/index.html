@@ -25,13 +25,18 @@
         </div>
       </header>
 
+      <section class="reference-boundary" aria-labelledby="target-boundary-title">
+        <div class="history-status"><strong>2026-09-07 역사 POC</strong><span>아래 캠페인의 진형·실시간 전투·정산 뒤 복귀 연결은 회수된 당시 흐름이며 현재 목표가 아닙니다.</span></div>
+        <div class="target-status"><small>CURRENT TARGET · DOCUMENTATION ONLY</small><h1 id="target-boundary-title">현재 목표: 원정을 계속할 수 있는 부대 지휘 흐름</h1><p>영웅은 병졸과 분리된 지휘 인물이며 병졸 한 분대는 최대 20명입니다. 카드·고정 격자·영웅 직접 액션은 없고, 결과 반영은 귀환 명령이 아닙니다.</p><div><a href="../../../../GDD/system-design/total-war-ui/index.html">현재 목표 설계</a><a href="../../../../GDD/system-design/total-war-ui/wireframes.html">Archify 와이어프레임</a></div></div>
+      </section>
+
       <nav class="stage-rail" aria-label="회수 게임 루프">
         <span data-rail="hub">관리</span>
         <span data-rail="route">원정</span>
         <span data-rail="encounter">조우</span>
-        <span data-rail="formation">진형</span>
-        <span data-rail="battle">실시간 전투</span>
-        <span data-rail="settlement">정산</span>
+        <span data-rail="formation">진형 <small>역사</small></span>
+        <span data-rail="battle">실시간 전투 <small>역사</small></span>
+        <span data-rail="settlement">정산·복귀 <small>역사</small></span>
       </nav>
 
       <main id="campaign-view" tabindex="-1"></main>

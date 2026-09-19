@@ -68,36 +68,44 @@ footer{margin-top:56px;border-top:1px solid var(--stroke-quiet);padding-top:18px
 <body>
 <nav class="toc"><div class="in">
   <span class="brand">JANSEON · UI/UX REFS</span>
-  <a href="#map">노선도</a>
-  <a href="#shots">실측 화면</a>
+  <a href="#target">현재 목표</a>
+  <a href="#map">역사 도식</a>
+  <a href="#shots">역사 POC 캡처</a>
   <a href="#owners">화면 소유</a>
   <a href="#loan">시스템 대출</a>
   <a href="#contract">게임이 아닌 계약</a>
 </div></nav>
 <main>
   <p class="kicker" style="font-family:var(--mono-stack);font-size:12px;color:var(--signal-live);letter-spacing:.14em;margin-top:28px">ISSUE #101</p>
-  <h1>누가 어느 화면을 소유하나</h1>
-  <p class="lead">잔선 화면이 누구에게서 무엇을 빌리는지 한 장으로 고정한다. 이 보고서는 구현 모듈이 아니다. GitHub 이슈 <a href="https://github.com/islee23520/seoul-kenshi/issues/101">#101</a>의 그림판이다.</p>
-  <p class="note">노선도 SVG, 동결 POC 캡처, 다이제틱 앵커, <code>poc-complete.html</code> 열 면. 정본은 <code>Game-References.md</code>, 각 <code>Ref-*.md</code>, Intent 결정 1·2·3·5·6.</p>
+  <h1>현재 목표 설계와 역사 POC 레퍼런스</h1>
+  <p class="lead">《서울:전국》의 현재 목표는 토탈워식 실시간 부대 지휘다. 이 페이지는 목표 설계와 과거 비교 자료를 구분하며, 새 전투의 구현을 뜻하지 않는다. <a href="https://github.com/islee23520/seoul-kenshi/issues/101">#101</a>의 화면 연구를 결정 11에 맞춰 읽는다.</p>
+  <section id="target">
+    <div class="sec-head"><span class="sec-no">TARGET</span><h2>부대 지휘 · 현재 목표 계약</h2></div>
+    <p>영웅은 별도 지휘 인물이며 병졸 수에서 제외한다. 병졸 한 분대는 최대 20명이다. 전체 분대 수·영웅 수·군단 상한은 정하지 않는다. 인물 중심 캠페인의 생업·관계·직위·후계와 역·노선 연결은 유지한다.</p>
+    <p>부대 선택 → 이동·공격·진형 방향·정지 → 미리보기 → 확인 또는 취소. 확인한 새 명령은 선택 부대의 현재 지시를 교체하고, 취소는 기존 지시를 유지한다. 확인된 지시만 수락 기록에 남긴다. 영웅 직접 액션, 카드·덱·드로우·재충전, 명령 큐·웨이포인트·감속·배속은 목표가 아니다.</p>
+    <p>닫힌 전투 결과는 ResultId별 정확히 한 번 반영한다. 결과 반영은 귀환 명령이 아니며 원정을 계속할 수 있다. 귀환·정착·정복·방랑·교역은 별개의 결말이다. 철수는 LegalFallback을 확인하는 명령, 패주는 비자발 이탈, 항복은 자발 선택이다. 막힌 퇴로만으로 항복을 지우지 않으며 포획은 별도 신병 결과다.</p>
+    <p>미술 목표는 애니메이션풍 정비율이다. 3D 자유 지휘 카메라(팬·오빗·줌)와 파티의 닫힌 전투만 일시정지하는 기능은 질문 무응답 뒤 채택한 설계 기본안이다. 정지 중 확인한 지시는 수락 순서에 남고 재개 뒤 다음 시뮬레이션 단계에 적용한다. 공유 세계와 다른 파티는 멈추지 않는다.</p>
+    <p class="note">현재 Archify 설계: <a href="/total-war-ui/">목표 UI 템플릿</a> · <a href="/total-war-ui/ux-flow.html">UX 상태 전이</a> · <a href="/total-war-ui/wireframes.html">데스크톱 와이어프레임</a>. <a href="poc-complete.html#target-composite">합성 목업의 목표 개정면</a>. 모두 문서용 설계이며 실제 게임 렌더나 구현 증거가 아니다.</p>
+  </section>
 
   <section id="map">
-    <div class="sec-head"><span class="sec-no">01</span><h2>화면 소유 노선도</h2></div>
+    <div class="sec-head"><span class="sec-no">01</span><h2>역사 POC · 이전 화면 소유 노선도</h2></div>
     <figure>
-      <img src="diagram.svg" alt="시야는 용사주식회사, 전투 입력은 Songs of Silence, 사람 POC는 오드랜드 Spine, 초상은 크루세이더 킹즈 3" />
-      <figcaption>노선 한 줄. 실선 위는 화면에 남는 게임, 점선 아래는 규칙만 빌려 온 항목.</figcaption>
+      <img src="diagram.svg" alt="역사 POC 도식: 이전 카메라·카드 입력·오드랜드 표현 차용 기록, 현재 목표 아님" />
+      <figcaption>역사 자료 그대로 보존. 그림 안의 카드 입력·2.5D 시야·오드랜드 표현과 poc-complete 목표 표기는 당시 POC 판단이며 현재 목표가 아니다. 현재 계약은 위 TARGET와 Archify 설계를 따른다.</figcaption>
     </figure>
   </section>
 
   <section id="shots">
-    <div class="sec-head"><span class="sec-no">02</span><h2>이미 있는 화면</h2></div>
-    <p class="lead">화면 목표는 <code>.omo/design/poc-complete.html</code> 열 면이다. 아래는 그 샷과 동결 캡처다.</p>
+    <div class="sec-head"><span class="sec-no">02</span><h2>역사 POC 캡처 · 현재 목표 렌더 아님</h2></div>
+    <p class="lead">아래 이미지는 원본을 보존한 역사 POC 캡처다. HTML은 목표 개정면과 접힌 역사 원안을 구분하며, PNG는 개정 전 화면이다. 포함된 수치·격자·카드·복귀 흐름은 현재 규칙의 근거가 아니다.</p>
     <div class="grid">
       <article class="card">
         <img src="images/poc-complete.png" alt="poc-complete 열 면 샷" style="height:auto;max-height:360px;object-fit:contain;background:#05080a" />
         <div class="b">
-          <div class="k">화면 목표 · Intent 결정 6</div>
-          <h3>poc-complete 열 면</h3>
-          <p>시작 프리셋, 캐릭터 생성, 모집, 거점 허브, 대화, 전략 노선도, 역간 여행, 조우, 전투, 정산. <a href="poc-complete.html">열 면 HTML</a>.</p>
+          <div class="k">역사 POC · Intent 결정 6 당시</div>
+          <h3>개정 전 합성 POC 캡처</h3>
+          <p>시작 프리셋, 캐릭터 생성, 모집, 거점 허브, 대화, 전략 노선도, 역간 여행, 조우, 전투, 정산. <a href="poc-complete.html">목표 개정면과 역사 원안 HTML</a>.</p>
         </div>
       </article>
       <article class="card">
@@ -105,7 +113,7 @@ footer{margin-top:56px;border-top:1px solid var(--stroke-quiet);padding-top:18px
         <div class="b">
           <div class="k">타이틀 · #8</div>
           <h3>젖은 콘크리트 테제</h3>
-          <p>시각 테제 계약. 타이틀 COMPOSITION은 #8이 소유한다.</p>
+          <p>역사 POC의 시각 테제 연구. 젖은 콘크리트 표현을 참고하며 목표 전투 구현으로 보지 않는다.</p>
         </div>
       </article>
       <article class="card">
@@ -113,7 +121,7 @@ footer{margin-top:56px;border-top:1px solid var(--stroke-quiet);padding-top:18px
         <div class="b">
           <div class="k">조우 · CK3 투명성</div>
           <h3>비용·효과·위험을 미리 보여 준다</h3>
-          <p>크루세이더 킹즈 3의 선택 공개. 화면 이름은 Design.md 조우 패널.</p>
+          <p>역사 POC의 선택 공개 연구. 현재 목표에서는 비용·효과·위험의 가독성만 참고한다.</p>
         </div>
       </article>
       <article class="card">
@@ -121,15 +129,15 @@ footer{margin-top:56px;border-top:1px solid var(--stroke-quiet);padding-top:18px
         <div class="b">
           <div class="k">진형 · Songs of Silence · #76</div>
           <h3>전투 전 배치가 입력이다</h3>
-          <p>전열·후열·측면, 4방향 정면. 유니콘 오버로드의 편성판과 겹친다. 시야는 용사주식회사(#97).</p>
+          <p>역사 POC의 전열·후열·측면, 4방향 정면과 격자 배치. 현재는 영웅과 병졸 분대를 분리한 부대 배치이며 이 고정 격자·시야를 채택하지 않는다.</p>
         </div>
       </article>
       <article class="card">
         <img src="images/battle.png" alt="전투 일시정지 동결 캡처" />
         <div class="b">
           <div class="k">전투 · Songs of Silence · 라벨렌</div>
-          <h3>카드 타이밍과 사기 게이지</h3>
-          <p>전투 전 진형과 전투 중 카드 타이밍. 예보 칸은 인투 더 브리치, 사기 수치는 라벨렌(#77·#100).</p>
+          <h3>역사 POC의 카드·사기 연구</h3>
+          <p>당시 카드 타이밍·예보 칸·사기 수치 연구(#77·#100). 현재 목표는 부대 선택·명령 교체이며 카드·재충전·고정 격자를 사용하지 않는다.</p>
         </div>
       </article>
       <article class="card">
@@ -137,24 +145,24 @@ footer{margin-top:56px;border-top:1px solid var(--stroke-quiet);padding-top:18px
         <div class="b">
           <div class="k">문법 · 다이제틱</div>
           <h3>관제 콘솔로 읽히게</h3>
-          <p>2026-09-12 소유자 결정. 안내판·계기·노선도·관제 콘솔. 앵커는 <code>poc-diegetic/battle-hud/</code>.</p>
+          <p>역사 다이제틱 앵커의 안내판·계기·관제 콘솔 표현을 참고한다. 이미지 속 카드·재충전·격자·지휘 반경은 현 목표 규칙이 아니다.</p>
         </div>
       </article>
     </div>
   </section>
 
   <section id="owners">
-    <div class="sec-head"><span class="sec-no">03</span><h2>화면에 남는 게임</h2></div>
+    <div class="sec-head"><span class="sec-no">03</span><h2>외부 레퍼런스와 서울 적용 판단</h2></div>
     <table>
-      <thead><tr><th>레퍼런스</th><th>화면에 남기는 일</th><th>이슈</th></tr></thead>
+      <thead><tr><th>레퍼런스</th><th>현재 목표에서 참고할 범위 / 역사 구분</th><th>이슈</th></tr></thead>
       <tbody>
-        <tr><td>용사주식회사</td><td>시야와 카메라. 2.5D 전투 화면</td><td><a href="https://github.com/islee23520/seoul-kenshi/issues/97">#97</a></td></tr>
-        <tr><td>Songs of Silence</td><td>진형 편집, 카드 타이밍, 일시정지</td><td><a href="https://github.com/islee23520/seoul-kenshi/issues/76">#76</a> <a href="https://github.com/islee23520/seoul-kenshi/issues/77">#77</a> <a href="https://github.com/islee23520/seoul-kenshi/issues/98">#98</a> <a href="https://github.com/islee23520/seoul-kenshi/issues/99">#99</a> <a href="https://github.com/islee23520/seoul-kenshi/issues/100">#100</a></td></tr>
-        <tr><td>오드랜드 Spine</td><td>POC 사람 표현. 2.5등신, 네 방향</td><td><a href="https://github.com/islee23520/seoul-kenshi/issues/58">#58</a></td></tr>
+        <tr><td>용사주식회사</td><td>역사 POC의 2.5D 시야 출처. 현재 카메라 목표는 3D 자유 지휘</td><td><a href="https://github.com/islee23520/seoul-kenshi/issues/97">#97</a></td></tr>
+        <tr><td>Songs of Silence</td><td>역사 POC의 진형·카드 연구 출처. 현재 카드 입력은 제외, 일시정지는 닫힌 전투 설계 기본안</td><td><a href="https://github.com/islee23520/seoul-kenshi/issues/76">#76</a> <a href="https://github.com/islee23520/seoul-kenshi/issues/77">#77</a> <a href="https://github.com/islee23520/seoul-kenshi/issues/98">#98</a> <a href="https://github.com/islee23520/seoul-kenshi/issues/99">#99</a> <a href="https://github.com/islee23520/seoul-kenshi/issues/100">#100</a></td></tr>
+        <tr><td>오드랜드 Spine</td><td>오드랜드는 POC 자산 기록. 2.5등신·네 방향 목표는 폐기, 현재 미술 목표는 애니메이션풍 정비율</td><td><a href="https://github.com/islee23520/seoul-kenshi/issues/58">#58</a></td></tr>
         <tr><td>크루세이더 킹즈 3</td><td>초상·관계·경고 배지, 지도 정보 모드</td><td>이슈 없음</td></tr>
-        <tr><td>인투 더 브리치</td><td>위협 칸·적 의도 사전 공개</td><td>이슈 없음</td></tr>
-        <tr><td>유니콘 오버로드</td><td>리더 토큰, 전열·후열 편성판</td><td><a href="https://github.com/islee23520/seoul-kenshi/issues/76">#76</a></td></tr>
-        <tr><td>라벨렌 전기</td><td>사기 게이지, 지휘 반경, 항복 3조건</td><td><a href="https://github.com/islee23520/seoul-kenshi/issues/77">#77</a> <a href="https://github.com/islee23520/seoul-kenshi/issues/100">#100</a></td></tr>
+        <tr><td>인투 더 브리치</td><td>적 의도 사전 공개의 가독성 참고. 원작 위협 칸을 서울의 격자 규칙으로 이식하지 않음</td><td>이슈 없음</td></tr>
+        <tr><td>유니콘 오버로드</td><td>편성 가독성 참고. 서울은 영웅 별도·병졸 분대 최대 20명으로 구분</td><td><a href="https://github.com/islee23520/seoul-kenshi/issues/76">#76</a></td></tr>
+        <tr><td>라벨렌 전기</td><td>사기·항복 연구의 역사 출처. 기존 반경·임계 수치를 새 목표로 승격하지 않음; 막힌 퇴로도 항복 선택 유지</td><td><a href="https://github.com/islee23520/seoul-kenshi/issues/77">#77</a> <a href="https://github.com/islee23520/seoul-kenshi/issues/100">#100</a></td></tr>
         <tr><td>파이어 엠블렘·FFT</td><td>확정/취소, 공격 예상</td><td>Design.md, 이슈 없음</td></tr>
         <tr><td>창세기전·트라이앵글</td><td>거점 허브</td><td><code>stage-base-prep</code>, 이슈 없음</td></tr>
       </tbody>
@@ -163,7 +171,7 @@ footer{margin-top:56px;border-top:1px solid var(--stroke-quiet);padding-top:18px
 
   <section id="loan">
     <div class="sec-head"><span class="sec-no">04</span><h2>시스템 대출</h2></div>
-    <p>아래는 규칙·경제·성장을 빌려 온 항목이다. HUD 레이아웃의 주인이 아니다.</p>
+    <p>아래는 외부 규칙·경제·성장의 연구 출처다. 서울의 적용 판단은 참고 방향이며 구현 완료나 새 밸런스 확정을 뜻하지 않는다. HUD 레이아웃의 주인이 아니다.</p>
     <table>
       <thead><tr><th>레퍼런스</th><th>빌린 것</th><th>이슈</th></tr></thead>
       <tbody>
@@ -183,14 +191,14 @@ footer{margin-top:56px;border-top:1px solid var(--stroke-quiet);padding-top:18px
     <table>
       <thead><tr><th>계약</th><th>내용</th><th>이슈</th></tr></thead>
       <tbody>
-        <tr><td>uGUI + TMP</td><td>Canvas 전용, 텍스트 TMP</td><td><a href="https://github.com/islee23520/seoul-kenshi/issues/59">#59</a> 닫힘</td></tr>
+        <tr><td>uGUI + TMP</td><td>Unity 프레임워크 계약: Canvas·TMP. 이 HTML은 런타임 구현이 아님</td><td><a href="https://github.com/islee23520/seoul-kenshi/issues/59">#59</a> 닫힘</td></tr>
         <tr><td>시각 테제</td><td>젖은 콘크리트, 꺼진 안내판, 비상 전원</td><td><a href="https://github.com/islee23520/seoul-kenshi/issues/8">#8</a> <a href="https://github.com/islee23520/seoul-kenshi/issues/23">#23</a></td></tr>
         <tr><td>다이제틱 방향</td><td>안내판·계기·노선도·관제 콘솔</td><td>이슈 없음</td></tr>
         <tr><td>화면 파이프라인</td><td>HTML 목업 → 안정 이름 → uGUI</td><td>타이틀 0 … 정산 7</td></tr>
-        <tr><td>레이아웃 무드보드</td><td>영역별 동결 캡처 색인</td><td><a href="../../Design/ui-layout-moodboard/">/ui-layout-moodboard/</a></td></tr>
+        <tr><td>레이아웃 무드보드</td><td>영역별 동결 캡처 색인</td><td><a href="/ui-layout-moodboard/">/ui-layout-moodboard/</a></td></tr>
       </tbody>
     </table>
-    <p class="src">정본: docs/game-logic/Game-References.md · Intent.md 결정 1·2·3·5 · Design.md · Character-Art-Direction.md · Ui-Implementation-Pipeline.md. 캡처는 ui-layout-moodboard/images/frozen과 poc-diegetic/battle-hud/anchor-capture.png.</p>
+    <p class="src">현재 정본: Intent.md 결정 11 · Design.md 0절 · GDD/system-design/total-war-ui/ (Archify UX·와이어프레임). 외부 레퍼런스 연구: GDD/Game-References.md · GAME-LOGIC/Ref-*.md. 이 페이지의 SVG·PNG는 역사 자료로 보존하며 Unity·오드랜드 구현을 변경하지 않는다.</p>
   </section>
 </main>
 <footer>

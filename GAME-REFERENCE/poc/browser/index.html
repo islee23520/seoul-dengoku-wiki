@@ -3,31 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="서울:전국 통합 브라우저 POC 표면 목록" />
-    <title>서울:전국 · 통합 브라우저 POC</title>
+    <meta name="description" content="서울:전국 현재 목표 UI 설계와 2026-09-07 역사 브라우저 POC를 구분하는 레퍼런스 색인" />
+    <title>서울:전국 · 브라우저 레퍼런스 색인</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main>
       <header>
-        <p>JANSEON: SEOUL / BROWSER REVIEW</p>
-        <h1>통합 브라우저 POC</h1>
-        <span>Windows .omo 회수 작업과 기존 승인 표면을 한 경로에서 검토합니다.</span>
+        <p>JANSEON: SEOUL / REFERENCE INDEX</p>
+        <h1>현재 목표와 역사 POC</h1>
+        <span>이 색인은 구현 화면이 아니라 현재 설계 문서와 2026-09-07 POC 증거를 구분해 검토하는 데스크톱 레퍼런스입니다.</span>
       </header>
-      <section class="primary">
-        <div><small>COMMANDER CARDS</small><h2>지휘관 카드 전투</h2><p>카드 선택 → 아군 분대 → 지면 방향. 지휘관별 기동 재집결과 재사용 대기시간.</p></div>
-        <a href="./avatar-preview/">지휘관 카드 전투 열기</a>
+      <section class="primary target">
+        <div><small>CURRENT TARGET · DOCUMENTATION ONLY</small><h2>부대 지휘 UI 설계 템플릿</h2><p>부대 선택·이동·공격·진형 방향·정지·철수 확인. 영웅은 병졸과 분리된 지휘 인물이며 병졸 분대는 최대 20명입니다. 카드·격자·영웅 직접 액션·강제 귀환은 목표가 아닙니다.</p></div>
+        <div class="primary-links"><a href="../../../GDD/system-design/total-war-ui/index.html">현재 목표 열기</a><a href="../../../GDD/system-design/total-war-ui/wireframes.html">Archify 와이어프레임</a></div>
       </section>
-      <section class="primary">
-        <div><small>INTEGRATED LOOP</small><h2>회수 캠페인 시작</h2><p>생성 → 허브 → 대화 → 노선 → 조우 → 진형 → 실시간 전투 → 정산.</p></div>
-        <a href="./recovered-campaign/">통합 원정 열기</a>
+      <section class="history-heading">
+        <small>HISTORICAL EXECUTABLES</small>
+        <h2>2026-09-07 역사 POC</h2>
+        <p>아래 실행 표면의 카드·고정 격자·지휘관 소유 슬롯·복귀 흐름은 당시 검토 기록입니다. 현재 목표나 구현 완료를 뜻하지 않습니다.</p>
       </section>
       <section class="surface-grid">
-        <a href="./formation-editor/"><b>01</b><strong>진형 편집</strong><span>승인된 6분대 배치 계약</span></a>
-        <a href="./battle-preview/"><b>02</b><strong>실시간 전투</strong><span>30Hz · pause · squad orders</span></a>
-        <a href="./avatar-preview/"><b>03</b><strong>지휘관 카드 전투</strong><span>전투 병사 48 + 지휘관 표현 12</span></a>
+        <a href="./recovered-campaign/"><b>01</b><strong>회수 캠페인</strong><span>역사 POC · 결과 뒤 복귀 흐름 포함</span></a>
+        <a href="./formation-editor/"><b>02</b><strong>진형 편집</strong><span>역사 POC · 고정 격자와 6개 인물 슬롯</span></a>
+        <a href="./battle-preview/"><b>03</b><strong>실시간 전투</strong><span>역사 POC · 30Hz 직접 분대 명령</span></a>
+        <a href="./avatar-preview/"><b>04</b><strong>지휘관 카드·아바타</strong><span>역사 POC · 카드 소유자와 외부 atlas</span></a>
       </section>
-      <footer><a href="./recovered-campaign/SOURCE-COMPARISON.md">Windows 소스 비교·선정 근거</a><span>고정 카메라 45° / 35.264° · Unity 구현 아님</span></footer>
+      <footer><a href="./recovered-campaign/SOURCE-COMPARISON.md">Windows 소스 비교·선정 근거</a><span>역사 실행 증거 보존 · 현재 목표 구현 주장 아님</span></footer>
     </main>
   </body>
 </html>

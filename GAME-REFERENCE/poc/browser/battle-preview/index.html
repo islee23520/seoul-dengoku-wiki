@@ -30,11 +30,16 @@
         </div>
       </header>
 
+      <section class="reference-boundary" aria-labelledby="target-boundary-title">
+        <div class="history-status"><strong>2026-09-07 역사 POC</strong><span>아래 6대6·48명·동서남북 버튼·즉시 명령 화면은 당시 실행 기록이며 현재 목표나 밸런스가 아닙니다.</span></div>
+        <div class="target-status"><p class="section-kicker">CURRENT TARGET · DOCUMENTATION ONLY</p><h2 id="target-boundary-title">현재 목표: 부대 명령의 미리보기·취소·확인</h2><p>부대 선택·이동·공격·진형 방향·정지·철수 확인을 설계합니다. 영웅은 별도 지휘 인물이고 병졸 분대는 최대 20명입니다. 카드·고정 격자·영웅 직접 액션·결과 뒤 강제 귀환은 없습니다.</p><div><a href="../../../../GDD/system-design/total-war-ui/index.html">현재 목표 설계</a><a href="../../../../GDD/system-design/total-war-ui/wireframes.html">Archify 와이어프레임</a></div></div>
+      </section>
+
       <main class="workspace battle-workspace">
         <section class="scene-panel" aria-labelledby="scene-title">
           <div class="scene-heading">
             <div>
-              <p class="section-kicker">고정 대형 분대 전투</p>
+              <p class="section-kicker">역사 POC · 고정 대형 분대 전투</p>
               <h2 id="scene-title">영등포 동측 승강장 교전도</h2>
             </div>
             <div class="scene-specs" aria-label="장면 규격">
@@ -81,13 +86,13 @@
           </div>
 
           <div class="battle-actions">
-            <button id="start-action" class="button button-primary">
+            <button type="button" id="start-action" class="button button-primary">
               교전 시작
             </button>
-            <button id="pause-action" class="button" disabled>
+            <button type="button" id="pause-action" class="button" disabled>
               일시정지
             </button>
-            <button id="reset-action" class="button button-quiet">
+            <button type="button" id="reset-action" class="button button-quiet">
               전투 초기화
             </button>
           </div>
