@@ -1,12 +1,17 @@
 import assert from 'node:assert/strict'
-import { readFile } from 'node:fs/promises'
+import { readdir, readFile } from 'node:fs/promises'
 import test from 'node:test'
 
 test('document index links every generated canon document', async () => {
   const catalog = await readFile(new URL('../src/generated/wikiCatalog.ts', import.meta.url), 'utf8')
   const page = await readFile(new URL('../src/pages/DocumentsPage.tsx', import.meta.url), 'utf8')
   const routes = [...catalog.matchAll(/route: '([^']+)'/g)].map((match) => match[1])
-  assert.ok(routes.length > 200)
+  const contentRoot = new URL('../src/content/', import.meta.url)
+  let generatedCount = 0
+  for (const domain of ['world', 'rules', 'design']) {
+    generatedCount += (await readdir(new URL(`${domain}/`, contentRoot))).filter((name) => name.endsWith('.md')).length
+  }
+  assert.equal(routes.length, generatedCount)
   assert.equal(new Set(routes).size, routes.length)
   assert.match(page, /wikiCatalog\.length/)
   assert.match(page, /to=\{document\.route\}/)
