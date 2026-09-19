@@ -30,7 +30,7 @@ for (const person of batch) {
       observer.observe(child.body, { childList: true, subtree: true });
       setTimeout(() => { observer.disconnect(); reject(new Error(`content:${entry.href}`)); }, 12000);
     });
-    return { h1: child.querySelector('h1')?.textContent?.trim(), id: child.querySelector('[data-person-id]')?.getAttribute('data-person-id'), tables: [...child.querySelectorAll('.person-data-section h2')].map((node) => node.textContent?.trim()), sections: [...child.querySelectorAll('.person-canon-prose h3')].map((node) => node.textContent?.trim()), rowCount: child.querySelectorAll('.person-data-table tr').length };
+    return { h1: child.querySelector('h1')?.textContent?.trim(), id: child.querySelector('[data-person-id]')?.getAttribute('data-person-id'), tables: [...child.querySelectorAll('.person-data-section h2')].map((node) => node.textContent?.trim()), sections: [...child.querySelectorAll('.person-canon-prose h3')].map((node) => node.textContent?.trim()), rowCount: child.querySelectorAll('.person-data-table tr').length, commonTier: [...child.querySelectorAll('.person-data-section:first-of-type tr')].find((row) => row.querySelector('th')?.textContent?.includes('공통 티어'))?.querySelector('td')?.textContent?.trim() };
       }, person);
       break;
     } catch (error) {
@@ -38,7 +38,7 @@ for (const person of batch) {
     }
   }
   if (!result) { failures.push({ person, error: lastError }); continue; }
-  if (result.h1 !== person.name || !result.id || result.tables.length !== 4 || result.sections.length !== 9 || result.rowCount < 25) failures.push({ person, result });
+  if (result.h1 !== person.name || !result.id || result.tables.length !== 4 || result.sections.length !== 9 || result.rowCount < 26 || !/^T[1-5]$/u.test(result.commonTier ?? '')) failures.push({ person, result });
 }
 console.log(`PEOPLE_DETAIL_BATCH=${JSON.stringify({ start, end, discovered: rows.length, uniqueRoutes: new Set(rows.map((row) => row.href)).size, count: batch.length, failures })}`);
 await closeTab(page);

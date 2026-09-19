@@ -62,7 +62,7 @@ export default function PersonDetailPage() {
 
   const basicRows: Array<[string, string | number]> = [
     ['이름', detail.name], ['국가', detail.stateName || '무소속'], ['국가 ID', detail.state],
-    ['직위', detail.position], ['직급', detail.rank], ['직업', detail.occupation], ['성별', detail.gender], ['단계', detail.stage], ['세대', detail.generation],
+    ['직위', detail.position], ['직급(공통 티어)', detail.commonTier], ['국가 품계', detail.rank], ['직업', detail.occupation], ['성별', detail.gender], ['단계', detail.stage], ['세대', detail.generation],
     ...Object.entries(detail.fields).filter(([label]) => !['가치관', '욕망', '직위', '소속'].includes(label)),
   ]
   const relationRows = [...detail.relations.outgoing.map((relation) => [`→ ${relation.to} · ${relation.type}`, relation.basis] as [string, string]), ...detail.relations.incoming.map((relation) => [`← ${relation.from} · ${relation.type}`, relation.basis] as [string, string])]

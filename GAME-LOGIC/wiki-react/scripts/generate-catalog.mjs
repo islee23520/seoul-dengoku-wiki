@@ -107,6 +107,10 @@ await writeFile(resolve(generatedRoot, 'wikiCatalog.ts'), `${lines.join('\n')}\n
 await writeFile(resolve(publicRoot, 'wiki-contract.json'), `${JSON.stringify({ documents: documents.map(({ domain, slug, route, title }) => ({ domain, slug, route, title })) }, null, 2)}\n`)
 
 const stateSource = await readFile(resolve(repoRoot, 'LORE/factions/Sixteen-States.md'), 'utf8')
+const officesSource = await readFile(resolve(repoRoot, 'LORE/offices/Offices-and-Ranks.md'), 'utf8')
+const officeTable = officesSource.match(/\| 국가 \| 티어1 \|[\s\S]*?(?=\n## )/)?.[0] ?? ''
+const tiersByState = new Map([...officeTable.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$/gm)]
+  .map((match) => [match[1].trim(), match.slice(2).map((rank) => rank.trim())]))
 const stateTable = stateSource.match(/\| 국명 \|[\s\S]*?(?=\n## )/)?.[0] ?? ''
 const stateRows = [...stateTable.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$/gm)]
   .map((match) => match.slice(1).map((cell) => cell.trim()))
@@ -228,12 +232,16 @@ const peopleCatalog = peopleSource.map((person, index) => {
   const position = fields['직함'] ?? fields['직위'] ?? office.match(/직함은 ([^.]+)\./u)?.[1]?.trim() ?? person.title
   const rank = fields['품계'] ?? office.match(/품계 ([^.]+)\./u)?.[1]?.trim() ?? '미등록'
   const occupation = fields['생업'] ?? office.match(/생업 별명은 ([^.]+)\./u)?.[1]?.trim() ?? '미등록'
+  const stateTiers = tiersByState.get(person.state_name)
+  const tierIndex = stateTiers?.indexOf(rank) ?? -1
+  const commonTier = person.state === 'S00' ? 'T5' : tierIndex >= 0 ? `T${tierIndex + 1}` : (() => { throw new Error(`E_PERSON_TIER_MISSING:${person.name}:${person.state_name}:${rank}`) })()
   return {
     id: `person-${String(index + 1).padStart(4, '0')}`,
     name: person.name,
     title: person.title,
     position,
     rank,
+    commonTier,
     occupation,
     gender: genderByName.get(person.name)?.gender ?? (() => { throw new Error(`E_PERSON_GENDER_MISSING:${person.name}`) })(),
     stage: person.stage,
