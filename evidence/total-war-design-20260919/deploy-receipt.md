@@ -46,3 +46,5 @@ Aside Browser의 로그인 세션으로 공개 URL을 열었다. 페이지 제�
 - 인증 Aside: `FINAL_UI_BUNDLE_PASS 서울:전국 · 부대 지휘 UI 설계 템플릿`
 - 인증 Aside: `FINAL_ROOT_BUNDLE_PASS 서울:전국 — 공식 위키`
 - 정리: `CLEANUP_FINAL_BUNDLE_TABS_CLOSED`
+
+그 뒤 다른 세션의 공식 위키 재배포가 한 차례 더 지나갔다. 원격 모니터에서 `FINAL_ORIGIN_UI_READY`를 확인하고 인증 Aside로 다시 열어 `SURVIVAL_UI_PASS`, `SURVIVAL_ROOT_PASS`, `CLEANUP_SURVIVAL_TABS_CLOSED`를 얻었다. 즉, 빌드 오버레이와 배포 보존 계약 아래에서 `/total-war-ui/`와 공식 위키 루트가 함께 유지된다.
