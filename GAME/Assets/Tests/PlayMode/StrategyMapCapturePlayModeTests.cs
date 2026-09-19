@@ -38,11 +38,18 @@ namespace Janseon.Foundation.Tests
             Assert.That(Directory.Exists(Path.Combine(ProjectRoot(), BakedDir)), Is.True,
                 "baked strategy map assets are required (run bake_seoul_terrain.py + bake_map_texture.py)");
 
-            List<Mesh> meshes = LoadChunkAssets<Mesh>("t:Mesh");
-            List<Texture2D> textures = LoadChunkAssets<Texture2D>("t:Texture2D");
-            List<TextAsset> buildingBins = LoadChunkAssets<TextAsset>("t:TextAsset", "buildings-");
-            string landmarksManifest = LoadTextAsset("landmarks-manifest");
-            List<GameObject> landmarkPrefabs = LoadLandmarkPrefabs();
+            // Unity asset-consumption lock: consume the validated catalog,
+            // never path-based FindAssets loads.
+            var catalog = LoadCatalog();
+            Assert.That(catalog, Is.Not.Null, "StrategyMapAssetCatalog must be built (Janseon/Data/Build Strategy Map Asset Catalog)");
+            Assert.That(catalog.IsComplete, Is.True,
+                "catalog incomplete: 9 meshes + 9 textures + 9 buildings + manifest + 14 landmark prefabs required");
+
+            List<Mesh> meshes = catalog.chunkMeshes.ToList();
+            List<Texture2D> textures = catalog.chunkTextures.ToList();
+            List<TextAsset> buildingBins = catalog.buildingBinaries.ToList();
+            string landmarksManifest = catalog.landmarksManifest != null ? catalog.landmarksManifest.text : null;
+            List<GameObject> landmarkPrefabs = catalog.landmarkPrefabs.Where(p => p != null).ToList();
             Assert.That(meshes.Count, Is.EqualTo(9), "nine baked chunk meshes expected");
             Assert.That(textures.Count, Is.EqualTo(9), "nine baked chunk textures expected");
             Assert.That(buildingBins.Count, Is.EqualTo(9), "nine building binaries expected");
@@ -146,6 +153,17 @@ namespace Janseon.Foundation.Tests
         private static string ProjectRoot()
         {
             return Directory.GetParent(Application.dataPath)!.FullName;
+        }
+
+        /// <summary>Loads the well-known catalog asset (single path constant, per the asset-consumption lock).</summary>
+        private static Janseon.Data.Authoring.StrategyMapAssetCatalog LoadCatalog()
+        {
+#if UNITY_EDITOR
+            return UnityEditor.AssetDatabase.LoadAssetAtPath<Janseon.Data.Authoring.StrategyMapAssetCatalog>(
+                Janseon.Data.Authoring.StrategyMapAssetCatalog.CatalogAssetPath);
+#else
+            return null; // catalog is editor-baked; player builds consume the projected repository
+#endif
         }
 
         private static List<T> LoadChunkAssets<T>(string filter, string namePrefix = "chunk-") where T : Object
