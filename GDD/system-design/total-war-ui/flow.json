@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "서울:전국 · 원정과 부대 지휘",
+    "quality_profile": "standard",
+    "legend": { "mode": "hidden" }
+  },
+  "lanes": [
+    { "id": "campaign", "label": "인물과 캠페인" },
+    { "id": "battle", "label": "파티의 전투 세션" },
+    { "id": "choice", "label": "다음 행선 선택" }
+  ],
+  "mainPath": ["party", "encounter", "deployment", "command", "result"],
+  "nodes": [
+    { "id": "party", "lane": "campaign", "col": 0, "type": "frontend", "label": "파티 편성", "sublabel": "인물 · 장비 · 물자" },
+    { "id": "encounter", "lane": "campaign", "col": 1, "type": "frontend", "label": "원정과 조우", "sublabel": "경로 · 위험 · 대응" },
+    { "id": "peace", "lane": "campaign", "col": 3, "type": "frontend", "label": "비전투 해결", "sublabel": "교섭 · 현장 거래 · 우회" },
+    { "id": "deployment", "lane": "battle", "col": 2, "type": "frontend", "label": "전투 배치", "sublabel": "참가 부대 · 지형 · 퇴로" },
+    { "id": "command", "lane": "battle", "col": 3, "type": "frontend", "label": "부대 지휘", "sublabel": "이동 · 공격 · 진형" },
+    { "id": "result", "lane": "campaign", "col": 4, "type": "frontend", "label": "결과 확인", "sublabel": "생사 · 물자 · 현재 위치" },
+    { "id": "continue", "lane": "choice", "col": 2, "type": "frontend", "label": "원정 계속", "sublabel": "현 위치에서 다음 구간" },
+    { "id": "ending", "lane": "choice", "col": 5, "type": "frontend", "label": "원정 결말 선택", "sublabel": "다섯 갈래 중 선택" }
+  ],
+  "edges": [
+    { "from": "party", "to": "encounter", "role": "main" },
+    { "from": "encounter", "to": "deployment", "label": "전투 선택", "role": "main" },
+    { "from": "deployment", "to": "command", "label": "배치 확정", "role": "main" },
+    { "from": "command", "to": "result", "label": "전투 종료", "role": "main" },
+    { "from": "encounter", "to": "peace", "label": "비전투 선택", "role": "branch" },
+    { "from": "peace", "to": "result", "label": "조우 해결", "role": "branch" },
+    { "from": "result", "to": "continue", "label": "계속 이동", "role": "branch" },
+    { "from": "continue", "to": "encounter", "label": "다음 조우", "role": "return" },
+    { "from": "result", "to": "ending", "label": "원정을 마침", "role": "branch" }
+  ],
+  "cards": [
+    {
+      "dot": "slate",
+      "title": "결과를 읽는 기준",
+      "items": [
+        "승패, 명령 철수, 사기 붕괴에 따른 패주, 수락된 항복은 서로 구분합니다.",
+        "포획은 인물의 신병 처리 결과이며 항복·부상과 같은 뜻이 아닙니다.",
+        "결과는 한 번만 반영합니다. 반영 뒤 거점으로 자동 귀환하지 않습니다.",
+        "원정의 다섯 결말은 귀환·정착·정복·방랑·교역입니다."
+      ]
+    }
+  ]
+}
