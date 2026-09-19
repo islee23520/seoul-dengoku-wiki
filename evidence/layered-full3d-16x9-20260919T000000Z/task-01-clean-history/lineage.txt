@@ -1,7 +1,9 @@
 base: c9940638c4cb22a890c8c4111d5e5b9f55ebec82
-git log --format='%H %P %s' base..HEAD
+git log --format='%H %P %s' base..HEAD (captured before final receipt commit)
+db8c8ed8e79c77907aa6512fa49f2c7a179847dd 4cc6ca8d2244b425b922eed4379c1cae952c6cbe docs(evidence): task31 계보 검증과 동등성 증거를 교정한다
+4cc6ca8d2244b425b922eed4379c1cae952c6cbe 59b6322d76903a6eb20c27f644706467a95051cd docs(evidence): task1 계보와 품질 게이트를 결속한다
 59b6322d76903a6eb20c27f644706467a95051cd c9940638c4cb22a890c8c4111d5e5b9f55ebec82 docs(evidence): task1 비-amend 재구성 기반을 만든다
 
-reflog inspected: new branch has ordinary commit A only before this receipt commit; no amend marker and no merge parent.
+reflog inspected: all branch actions are ordinary `commit:` records; no amend marker and no merge parent.
 merge_count: 0
 amend_count: 0

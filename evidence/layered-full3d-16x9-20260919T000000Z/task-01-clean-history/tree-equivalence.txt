@@ -1,6 +1,6 @@
 command: git diff --exit-code 3ae995fb8aa39b7c225fce775387e81e24a5416d HEAD -- AGENTS.md CLAUDE.md Intent.md Concept.md Design.md ToDo.md evidence/layered-full3d-16x9-20260919T000000Z/task-01
 old HEAD: 3ae995fb8aa39b7c225fce775387e81e24a5416d
-new HEAD at generation: 4cc6ca8d2244b425b922eed4379c1cae952c6cbe
+new HEAD at generation: db8c8ed8e79c77907aa6512fa49f2c7a179847dd
 allowed paths: AGENTS.md, CLAUDE.md, Intent.md, Concept.md, Design.md, ToDo.md, evidence/layered-full3d-16x9-20260919T000000Z/task-01/**
 scope excludes: evidence/layered-full3d-16x9-20260919T000000Z/task-01-clean-history/**
 full output:
