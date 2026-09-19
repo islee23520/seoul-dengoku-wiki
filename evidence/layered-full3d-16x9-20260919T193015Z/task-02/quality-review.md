@@ -12,3 +12,12 @@
 - broad catch/shim/dead: broad catch, 호환 shim, dead abstraction이 없다.
 
 suffix path, 전체 artifact nonce rewrite, request commit, begin=end, before/after HEAD, registration, realpath, project path, artifact hash, extra key가 각각 독립적으로 거부됐다.
+
+## 최종 parser 검토
+
+- parser complexity: NUnit 전체 XML 범용 파서를 만들지 않고 정확한 target test-case/output 경계만 순차 탐색한다. 전역 broad regex나 backtracking 패턴이 없다.
+- exact schemas: request, manual, begin, end, execution, cleanup 및 모든 nested source item은 required/allowed key 집합과 타입·schema version을 고정한다.
+- XML: `ManualDataSurfaceRecordsIdentityAndConflict`의 단일 output만 읽는다. 기존 Unity의 Progress+NUnit 동일 emission 두 줄만 수렴시키며 세 번째·충돌·외부 marker·prefix/suffix junk를 거부한다.
+- log: 줄 시작 exact marker 한 개만 허용하고 duplicate·conflict·substring을 거부한다.
+- broad catch/swallow: verifier에는 오류를 무시하는 catch가 없다. Git ancestor 확인 실패만 명시적 검증 오류로 변환한다.
+- test quality: artifact hash를 일관되게 재생성한 뒤 schema·parser 단계가 실제로 결함을 잡는지 검증한다. 구현 미러링·tautology·deletion-only·과잉 fixture가 없다.
