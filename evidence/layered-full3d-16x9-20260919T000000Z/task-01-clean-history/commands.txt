@@ -9,6 +9,7 @@ node --test test-required-lineage-cases.mjs -> receipt tamper probes: 8 passed; 
 nl -ba verify-lineage.mjs -> 191 lines; mutant anchors 128-144, 145-166, 167-186
 nl -ba verify-required-lineage-cases.mjs -> 28 lines; independent authority 3-10, schema 12-28
 nl -ba test-required-lineage-cases.mjs -> 28 lines; tamper fixtures 7-25
+cleanup binding check: cleanup.json content_evidence_commit equals parent commit of receipt commit; receipt commit hash is intentionally absent from cleanup.json
 NEUTRALIZE_MUTANT_ID=mutant.subject-only -> exit 1, required-case inventory mismatch and ID absent
 NEUTRALIZE_MUTANT_ID=mutant.parent-chain-noop -> exit 1, required-case inventory mismatch and ID absent
 NEUTRALIZE_MUTANT_ID=mutant.optional-reflog -> exit 1, required-case inventory mismatch and ID absent
