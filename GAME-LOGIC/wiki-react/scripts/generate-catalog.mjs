@@ -133,6 +133,15 @@ const genderByName = new Map(genderSource.map((person) => [person.name, person])
 const stateNameById = new Map(peopleSource.filter((person) => /^S(?:0[1-9]|1[0-6])$/u.test(person.state)).map((person) => [person.state, person.state_name]))
 const regionAtlasSource = await readFile(resolve(repoRoot, 'GDD/system-design/regions/atlas-data.js'), 'utf8')
 const regionAtlas = JSON.parse(regionAtlasSource.replace(/^window\.SEOUL_REGION_ATLAS=/, '').replace(/;\s*$/, ''))
+const creativeNameLedger = JSON.parse(await readFile(resolve(repoRoot, 'RESEARCH/verification/creative-name-normalization.json'), 'utf8'))
+const normalizePublicNames = (text) => {
+  let normalized = text
+  for (const entry of [...creativeNameLedger.replacements].sort((left, right) => right.old.length - left.old.length)) {
+    if (entry.old !== entry.new) normalized = normalized.split(entry.old).join(entry.new)
+  }
+  for (const entry of creativeNameLedger.pattern_replacements) normalized = normalized.replace(new RegExp(entry.pattern, 'gu'), entry.new)
+  return normalized
+}
 const geometryRings = (geometry) => geometry.type === 'Polygon' ? geometry.coordinates : geometry.coordinates.flat()
 const allMapPoints = regionAtlas.regions.flatMap((region) => geometryRings(region.map_geometry).flat())
 const mapBounds = allMapPoints.reduce((bounds, [x, y]) => ({
@@ -176,8 +185,8 @@ const openingTerritories = {
       path: geometryPath(region.map_geometry),
       polities,
       status: polities.length === 1 ? 'held' : 'contested',
-      openingState: region.content.opening_state,
-      summary: region.content.summary,
+      openingState: normalizePublicNames(region.content.opening_state),
+      summary: normalizePublicNames(region.content.summary),
       stationCount: region.station_ids.length,
     }
   }),

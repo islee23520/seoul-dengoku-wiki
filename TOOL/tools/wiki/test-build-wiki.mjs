@@ -119,7 +119,7 @@ await testCase('happy path: banner, link rewrite, asset copy, stale cleanup, .gi
   const figure = await readFile(join(output, 'assets', 'figure.svg'), 'utf8');
   const gitHead = await readFile(join(output, '.git', 'HEAD'), 'utf8');
 
-  assert.match(home, /janseon-unofficial-au/);
+  assert.doesNotMatch(home, /janseon-unofficial-au/);
   assert.match(home, /원본: `Wikis\/game-logic\/Home\.md`/);
   assert.match(home, /커밋: `abc1234`/);
   assert.match(home, /\]\(assets\/figure\.svg\)/);
