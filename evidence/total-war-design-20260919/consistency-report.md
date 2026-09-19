@@ -41,7 +41,7 @@
 
 레퍼런스 문서의 외부 작품 사실은 유지했다. `Ref-Songs-of-Silence.md`, `Ref-Ravelen-Chronicles.md`, `Ref-Cross-Synthesis.md`, `Ref-Mechanism-Index.md`에서 잔선 적용을 현재 채택처럼 쓰던 9개 위치만 2026-09-07 POC 채택 기록·미채택 연구 제안으로 내렸다. 로스터·배치 정원, 카드·재충전, 항복 3조건 수치를 새 목표에 들이지 않는다.
 
-수정된 10개 문서는 patina 오프라인 점수 0~13.3, 모두 30 이하였고 `git diff --check`를 통과했다. 전체 위키 문서 회귀는 45/45 통과했다.
+교차검토에서 보완한 10개 문서는 patina 오프라인 점수 0~13.3, 모두 30 이하였고 `git diff --check`를 통과했다. 최종 커밋 기준 변경 Markdown 전체도 별도 일괄 게이트로 확인했으며, 완료 표식은 `logs/patina-all.log` 끝에 남겼다. 전체 위키 문서 회귀는 45/45 통과했다.
 
 ## 금지 범위 확인
 

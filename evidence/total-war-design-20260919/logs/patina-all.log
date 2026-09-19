@@ -8089,3 +8089,376 @@ FILE /Volumes/gameWorkspace/worktrees/seoul-kenshi/total-war-design-20260919/ToD
     "preference": "deterministic-only"
   }
 }
+FILE /Volumes/gameWorkspace/worktrees/seoul-kenshi/total-war-design-20260919/evidence/total-war-design-20260919/baseline.md
+{
+  "mode": "score",
+  "format": "json",
+  "overall": 19,
+  "categories": [],
+  "register": null,
+  "mps": null,
+  "gateResult": {
+    "threshold": 30,
+    "overall": 19,
+    "passed": true,
+    "exitCode": 0
+  },
+  "persona": null,
+  "output": "Overall: 19\nInterpretation: mostly human\nScoring: deterministic only; LLM-judged categories unavailable.\nParagraphs: 21\nHot paragraphs: 4\nSignal score: 2.5\nEvidence floor: 0",
+  "scores": {
+    "llm": null,
+    "deterministic": {
+      "overall": 19,
+      "evidenceFloor": 0,
+      "shortFormFloor": 0,
+      "interpretation": "mostly human",
+      "skipped": false,
+      "skipReason": null,
+      "paragraphCount": 21,
+      "hotParagraphs": 4,
+      "signalScore": 2.5,
+      "bands": {
+        "burstiness": {
+          "low": 3,
+          "mid": 4,
+          "high": 2,
+          "null": 12
+        },
+        "mattr": {
+          "low": 0,
+          "mid": 0,
+          "high": 19,
+          "null": 2
+        },
+        "lexicon": {
+          "hot": 0,
+          "threshold": 3
+        },
+        "koDiagnostics": {
+          "hot": 0,
+          "thresholds": {
+            "minSentences": 4,
+            "minEojeols": 20,
+            "spacing": {
+              "maxEojeolLengthCV": 0.38
+            },
+            "comma": {
+              "maxPerSentence": 1
+            },
+            "posProxy": {
+              "minMatchedCount": 10,
+              "maxClassDiversity": 0.26
+            }
+          }
+        },
+        "markupLeakage": {
+          "leaked": false,
+          "hits": 0,
+          "floor": 90
+        },
+        "discourseTells": {
+          "hot": false,
+          "fakeCandor": {
+            "count": 0,
+            "hits": [],
+            "hot": false,
+            "threshold": 2
+          },
+          "thematicBreaks": {
+            "count": 0,
+            "adjacentToHeading": 0,
+            "hot": false,
+            "threshold": 3
+          }
+        },
+        "structuralClassifier": {
+          "available": false,
+          "hot": null,
+          "score": null,
+          "floor": 0
+        }
+      }
+    },
+    "preference": "deterministic-only"
+  }
+}
+FILE /Volumes/gameWorkspace/worktrees/seoul-kenshi/total-war-design-20260919/evidence/total-war-design-20260919/consistency-report.md
+{
+  "mode": "score",
+  "format": "json",
+  "overall": 5.9,
+  "categories": [],
+  "register": null,
+  "mps": null,
+  "gateResult": {
+    "threshold": 30,
+    "overall": 5.9,
+    "passed": true,
+    "exitCode": 0
+  },
+  "persona": null,
+  "output": "Overall: 5.9\nInterpretation: human\nScoring: deterministic only; LLM-judged categories unavailable.\nParagraphs: 17\nHot paragraphs: 1\nSignal score: 0\nEvidence floor: 0",
+  "scores": {
+    "llm": null,
+    "deterministic": {
+      "overall": 5.9,
+      "evidenceFloor": 0,
+      "shortFormFloor": 0,
+      "interpretation": "human",
+      "skipped": false,
+      "skipReason": null,
+      "paragraphCount": 17,
+      "hotParagraphs": 1,
+      "signalScore": 0,
+      "bands": {
+        "burstiness": {
+          "low": 0,
+          "mid": 2,
+          "high": 0,
+          "null": 15
+        },
+        "mattr": {
+          "low": 0,
+          "mid": 0,
+          "high": 14,
+          "null": 3
+        },
+        "lexicon": {
+          "hot": 0,
+          "threshold": 3
+        },
+        "koDiagnostics": {
+          "hot": 0,
+          "thresholds": {
+            "minSentences": 4,
+            "minEojeols": 20,
+            "spacing": {
+              "maxEojeolLengthCV": 0.38
+            },
+            "comma": {
+              "maxPerSentence": 1
+            },
+            "posProxy": {
+              "minMatchedCount": 10,
+              "maxClassDiversity": 0.26
+            }
+          }
+        },
+        "markupLeakage": {
+          "leaked": false,
+          "hits": 0,
+          "floor": 90
+        },
+        "discourseTells": {
+          "hot": false,
+          "fakeCandor": {
+            "count": 0,
+            "hits": [],
+            "hot": false,
+            "threshold": 2
+          },
+          "thematicBreaks": {
+            "count": 0,
+            "adjacentToHeading": 0,
+            "hot": false,
+            "threshold": 3
+          }
+        },
+        "structuralClassifier": {
+          "available": false,
+          "hot": null,
+          "score": null,
+          "floor": 0
+        }
+      }
+    },
+    "preference": "deterministic-only"
+  }
+}
+FILE /Volumes/gameWorkspace/worktrees/seoul-kenshi/total-war-design-20260919/evidence/total-war-design-20260919/deploy-receipt.md
+{
+  "mode": "score",
+  "format": "json",
+  "overall": 0,
+  "categories": [],
+  "register": null,
+  "mps": null,
+  "gateResult": {
+    "threshold": 30,
+    "overall": 0,
+    "passed": true,
+    "exitCode": 0
+  },
+  "persona": null,
+  "output": "Overall: 0\nInterpretation: human\nScoring: deterministic only; LLM-judged categories unavailable.\nParagraphs: 12\nHot paragraphs: 0\nSignal score: 0\nEvidence floor: 0",
+  "scores": {
+    "llm": null,
+    "deterministic": {
+      "overall": 0,
+      "evidenceFloor": 0,
+      "shortFormFloor": 0,
+      "interpretation": "human",
+      "skipped": false,
+      "skipReason": null,
+      "paragraphCount": 12,
+      "hotParagraphs": 0,
+      "signalScore": 0,
+      "bands": {
+        "burstiness": {
+          "low": 0,
+          "mid": 1,
+          "high": 1,
+          "null": 10
+        },
+        "mattr": {
+          "low": 0,
+          "mid": 0,
+          "high": 9,
+          "null": 3
+        },
+        "lexicon": {
+          "hot": 0,
+          "threshold": 3
+        },
+        "koDiagnostics": {
+          "hot": 0,
+          "thresholds": {
+            "minSentences": 4,
+            "minEojeols": 20,
+            "spacing": {
+              "maxEojeolLengthCV": 0.38
+            },
+            "comma": {
+              "maxPerSentence": 1
+            },
+            "posProxy": {
+              "minMatchedCount": 10,
+              "maxClassDiversity": 0.26
+            }
+          }
+        },
+        "markupLeakage": {
+          "leaked": false,
+          "hits": 0,
+          "floor": 90
+        },
+        "discourseTells": {
+          "hot": false,
+          "fakeCandor": {
+            "count": 0,
+            "hits": [],
+            "hot": false,
+            "threshold": 2
+          },
+          "thematicBreaks": {
+            "count": 0,
+            "adjacentToHeading": 0,
+            "hot": false,
+            "threshold": 3
+          }
+        },
+        "structuralClassifier": {
+          "available": false,
+          "hot": null,
+          "score": null,
+          "floor": 0
+        }
+      }
+    },
+    "preference": "deterministic-only"
+  }
+}
+FILE /Volumes/gameWorkspace/worktrees/seoul-kenshi/total-war-design-20260919/evidence/total-war-design-20260919/ui-qa-receipt.md
+{
+  "mode": "score",
+  "format": "json",
+  "overall": 5.9,
+  "categories": [],
+  "register": null,
+  "mps": null,
+  "gateResult": {
+    "threshold": 30,
+    "overall": 5.9,
+    "passed": true,
+    "exitCode": 0
+  },
+  "persona": null,
+  "output": "Overall: 5.9\nInterpretation: human\nScoring: deterministic only; LLM-judged categories unavailable.\nParagraphs: 17\nHot paragraphs: 1\nSignal score: 0.1\nEvidence floor: 0",
+  "scores": {
+    "llm": null,
+    "deterministic": {
+      "overall": 5.9,
+      "evidenceFloor": 0,
+      "shortFormFloor": 0,
+      "interpretation": "human",
+      "skipped": false,
+      "skipReason": null,
+      "paragraphCount": 17,
+      "hotParagraphs": 1,
+      "signalScore": 0.1,
+      "bands": {
+        "burstiness": {
+          "low": 1,
+          "mid": 3,
+          "high": 0,
+          "null": 13
+        },
+        "mattr": {
+          "low": 0,
+          "mid": 1,
+          "high": 13,
+          "null": 3
+        },
+        "lexicon": {
+          "hot": 0,
+          "threshold": 3
+        },
+        "koDiagnostics": {
+          "hot": 0,
+          "thresholds": {
+            "minSentences": 4,
+            "minEojeols": 20,
+            "spacing": {
+              "maxEojeolLengthCV": 0.38
+            },
+            "comma": {
+              "maxPerSentence": 1
+            },
+            "posProxy": {
+              "minMatchedCount": 10,
+              "maxClassDiversity": 0.26
+            }
+          }
+        },
+        "markupLeakage": {
+          "leaked": false,
+          "hits": 0,
+          "floor": 90
+        },
+        "discourseTells": {
+          "hot": false,
+          "fakeCandor": {
+            "count": 0,
+            "hits": [],
+            "hot": false,
+            "threshold": 2
+          },
+          "thematicBreaks": {
+            "count": 0,
+            "adjacentToHeading": 0,
+            "hot": false,
+            "threshold": 3
+          }
+        },
+        "structuralClassifier": {
+          "available": false,
+          "hot": null,
+          "score": null,
+          "floor": 0
+        }
+      }
+    },
+    "preference": "deterministic-only"
+  }
+}
+PATINA_ALL_PASS count=91
