@@ -11,7 +11,7 @@
 | `/play/` | `GAME/play/` | 코어 루프 웹 POC. 2026-09-14. 자립형 HTML |
 | `/ui-layout-moodboard/` | `GAME-REFERENCE/ui-layout-moodboard/` | UI 레이아웃 무드보드. 2026-09-11 작성, 2026-09-12 루트로 승격 |
 | `/portrait-demo/` | `GAME-REFERENCE/portrait-demo/` | 애니메 풍 초상 레이어 합성 브라우저 재현. 정적 페이지, 런타임 아님 |
-| `/potray-generator/` | `TOOL/portrait-gen/` | 애니메 풍 초상 제작·큐레이션 브라우저와 `.omo/evidence` SQLite 자산 SSoT. 정적 도구, 런타임 아님 — 스테이징: `node TOOL/portrait-gen/tools/portrait/stage-potrait-generator.mjs` |
+| `/portrait-gen/` | `TOOL/portrait-gen/` | 애니메 풍 초상 제작·큐레이션 브라우저와 `.omo/evidence` SQLite 자산 SSoT. 정적 도구, 런타임 아님 — 스테이징: `node TOOL/portrait-gen/tools/portrait/stage-potrait-generator.mjs` |
 | `/system-design/` | `GDD/system-design/` | 시스템 구조 보고 HTML |
 | `/system-design/regions/` | `GDD/system-design/regions/` | 서울 25구·427동 지역 총람. 2026-09-13 |
 | `/design-store/` | `GDD/design-store/` | MDA 시트 + LORE 정본 전량. SQLite에서 렌더한 HTML |

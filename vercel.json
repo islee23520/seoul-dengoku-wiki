@@ -3,12 +3,12 @@
   "buildCommand": null,
   "rewrites": [
     {
-      "source": "/portrait-generator",
-      "destination": "/potrait-generator/"
+      "source": "/portrait-gen",
+      "destination": "/portrait-gen/"
     },
     {
-      "source": "/portrait-generator/:path*",
-      "destination": "/potrait-generator/:path*"
+      "source": "/portrait-gen/:path*",
+      "destination": "/portrait-gen/:path*"
     },
     {
       "source": "/prototype/:path*",
