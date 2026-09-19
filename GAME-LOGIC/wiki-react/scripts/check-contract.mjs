@@ -23,6 +23,7 @@ const appSource = await readFile(resolve(projectRoot, 'src/App.tsx'), 'utf8')
 const linksSource = await readFile(resolve(projectRoot, 'src/wikiLinks.ts'), 'utf8')
 const articleSource = await readFile(resolve(projectRoot, 'src/pages/ArticlePage.tsx'), 'utf8')
 const deploySource = await readFile(resolve(projectRoot, 'deploy/deploy-windows.ps1'), 'utf8')
+const packageSource = await readFile(resolve(projectRoot, 'package.json'), 'utf8')
 const catalogPath = resolve(projectRoot, 'src/generated/wikiCatalog.ts')
 const publicContractPath = resolve(projectRoot, 'public/wiki-contract.json')
 
@@ -49,6 +50,9 @@ if (!publicContract || publicContract.documents?.length !== 232) failures.push('
 if (/\.html['"]/.test(linksSource)) failures.push('legacy-html-links-in-react')
 if (!deploySource.includes('total-war-ui') || !deploySource.includes('Copy-Item')) {
   failures.push('missing-total-war-ui-preservation')
+}
+if (!packageSource.includes('copy-static-services.mjs')) {
+  failures.push('missing-total-war-ui-build-overlay')
 }
 
 for (const document of documents) {
