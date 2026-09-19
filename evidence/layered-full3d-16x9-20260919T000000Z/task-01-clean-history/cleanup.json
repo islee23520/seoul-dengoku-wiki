@@ -17,5 +17,5 @@
   "quality_anchor_authority": "verify-quality-anchors.mjs frozen EXPECTED_ANCHORS; source-anchor-index.json supplies computed lines and SHA only",
   "content_manifest_sha256": "586a24f6ffa80bec87518bcd94c24bee33e22cf76e00b14e3711424dfcccaa60",
   "binding_semantics": "cleanup binds exact task31 evidence content manifest; independent of Git parent or HEAD; cleanup and manifest files are excluded to avoid recursion"
-  ,"removed_paths": []
+  ,"removed_paths": [{"path": "/tmp/task31-cleanup-existing", "expectedAbsent": true}]
 }
