@@ -14,7 +14,6 @@ Studio design hub: hand-authored top-level design pages plus ADRs, proposals, a 
 | Decision records | `adr/ADR-001` … `ADR-006` | One decision each; the status line is authoritative |
 | Backend decisions | `adr/ADR-005`, `adr/ADR-006` | ADR-006 supersedes ADR-005's transport/identity/storage clauses |
 | Naming policy | `adr/ADR-003` | Creative names anchor to real district/station names |
-| Fan-AU legal scope | `Unofficial-Fan-AU-Notice.md` | Non-commercial fan-AU disclaimer; original-canon layers stay separable |
 | Root domain structure | `adr/ADR-004` | Seven top-level domains, owner-locked 2026-09-18 |
 | Proposals | `proposals/` | `metaverse-hub-2026-2/` business plan (+assets), `Scenario-Hold-the-Gate.md`, `Narrative-Direction.md` |
 | Regions visualization | `system-design/regions/` | Standalone static web app (`atlas-data.js`, `app.js`); browser artifact, not Unity |

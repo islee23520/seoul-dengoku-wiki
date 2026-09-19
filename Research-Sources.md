@@ -12,13 +12,6 @@
 {
   "records": [
     {
-      "id": "SRC-SHOGUKAN-PICTURE",
-      "source_kind": "verified",
-      "url": "https://www.shogakukan.co.jp/picture",
-      "accessed": "2026-09-04",
-      "quotation": ""
-    },
-    {
       "id": "SRC-BUNKA-COPYRIGHT",
       "source_kind": "verified",
       "url": "https://www.bunka.go.jp/seisaku/chosakuken/taisetsu/",
