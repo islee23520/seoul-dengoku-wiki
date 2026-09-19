@@ -15,3 +15,18 @@ await rm(destination, { recursive: true, force: true })
 await cp(source, destination, { recursive: true })
 
 console.log(`STATIC_SERVICE_OVERLAY_PASS: total-war-ui ${sentinel}`)
+
+const referenceServices = [
+  ['GAME-REFERENCE/portrait-demo', 'portrait-demo'],
+  ['GAME-REFERENCE/ui-layout-moodboard', 'ui-layout-moodboard'],
+  ['GAME-REFERENCE/ui-ux-refs', 'ui-ux-refs'],
+]
+
+for (const [sourcePath, publicPath] of referenceServices) {
+  const serviceSource = resolve(repoRoot, sourcePath)
+  const serviceDestination = resolve(projectRoot, 'dist', publicPath)
+  await readFile(resolve(serviceSource, 'index.html'), 'utf8')
+  await rm(serviceDestination, { recursive: true, force: true })
+  await cp(serviceSource, serviceDestination, { recursive: true })
+  console.log(`STATIC_SERVICE_OVERLAY_PASS: ${publicPath}`)
+}

@@ -54,6 +54,13 @@ if (!deploySource.includes('total-war-ui') || !deploySource.includes('Copy-Item'
 if (!packageSource.includes('copy-static-services.mjs')) {
   failures.push('missing-total-war-ui-build-overlay')
 }
+for (const service of ['portrait-demo', 'ui-layout-moodboard', 'ui-ux-refs']) {
+  if (!packageSource.includes('copy-static-services.mjs') || !deploySource.includes('total-war-ui')) continue
+  const overlaySource = await readFile(resolve(projectRoot, 'scripts/copy-static-services.mjs'), 'utf8')
+  if (!overlaySource.includes(`GAME-REFERENCE/${service}`)) failures.push(`missing-static-overlay-${service}`)
+}
+const overlaySource = await readFile(resolve(projectRoot, 'scripts/copy-static-services.mjs'), 'utf8')
+if (overlaySource.includes('codex-ux-refs')) failures.push('forbidden-codex-ux-overlay')
 
 for (const document of documents) {
   const route = `/${document.domain}/${document.slug === 'index' ? '' : document.slug}`
