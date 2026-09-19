@@ -17,7 +17,6 @@ Repository-only ESM/Python tooling, not shipped with Unity; score 12, distinct b
 | Task | Location | Notes |
 |------|----------|-------|
 | Dependencies and npm test scope | `package.json` | Private `janseon-tools`, Node >=20 |
-| Blender character authoring CLI | `character-tool/README.md` | Separate installable package; `npm --prefix TOOL/tools/character-tool test` uses real Blender |
 | Wiki publishing and atlas rules | `wiki/AGENTS.md` | Rendering, safe cleanup, projections and suite coverage |
 | Region pipeline contracts | `regions/README.md`, `regions/AGENTS.md` | Geometry-only verification is intermediate, not authored completeness |
 | Strategy-map bakes | `strategy-map/AGENTS.md` | Deterministic terrain/texture/building bakes; child guidance |
