@@ -105,6 +105,7 @@ Writer-digest LSP/ast-grep findings plus retained root symbols; C# LSP coverage 
 - Do not author the deliberately unwritten LORE projections (M007, B017, B020): the `미저작` exclusion gate (`confirmed-integration-manifest.json`) rejects merges with `E_EXCLUDED_ID`.
 - Do not hand-edit generated layers: LORE root projections (except `World-Narrative-Atlas.md`), `GDD/design-store/`, `GAME-LOGIC/site` mirrors, `store/` captures.
 - Pre-review artifacts (`LORE/name-pools/roster-100.json` (CC BY 4.0, NVIDIA attribution duty), `cast-backfill-draft.*`) never enter cast canon without human review.
+- On the remote Windows ComfyUI host, do not bypass PNGAL's loopback-only policy (`--listen`/netsh portproxy) or add watchdog/auto-restart machinery. Tailnet access uses `tailscale serve`, and service start/stop stays manual.
 
 ## UNIQUE STYLES
 - The strategy screen is a 3D heightmap map of all Seoul with a perspective free-pan/zoom camera; the battle screen is a left/right side-scroll view (Intent decision 10, 2026-09-18).
@@ -116,6 +117,13 @@ Writer-digest LSP/ast-grep findings plus retained root symbols; C# LSP coverage 
 - Capture evidence binds images to git HEAD and the dirty-source fingerprint; `.omo/` output is excluded from that fingerprint.
 - LORE entity IDs are permanent, never renumbered: `K001–K412`, `S01–S16`, `HC/HP/XT`, `G01–G27`, `GxxEyy`, `Mxxx`, `Bxxx`; LORE root projections carry `원본 앵커` + `원본 해시` provenance headers.
 - LORE prose contract: Korean 3rd-person 한다체 narrative / 합니다체 guidance, one cause-effect per paragraph; no real company names/logos/executives in fiction; synthetics are never omniscient, infinite-memory, or fully networked.
+
+## REMOTE COMFYUI HOST
+- Host: `desktop-bo514et` (`100.77.98.25`), SSH alias `windows`, non-admin `oliver` account.
+- ComfyUI 0.28.0 lives at `E:\git\linalab\PNGAL\environment\ComfyUI-pngal-0.28.0` and must bind `127.0.0.1:8188`.
+- Tailnet exposure is the persisted Tailscale TCP serve rule `tailscale serve --bg --tcp=8188 tcp://127.0.0.1:8188`; use `http://100.77.98.25:8188/` or `http://desktop-bo514et.tailaa2378.ts.net:8188/`.
+- Start manually with `ssh windows 'cd /e/git/linalab/PNGAL && MSYS2_ARG_CONV_EXCL="*" PNGAL_START_NONINTERACTIVE=1 cmd.exe /d /c start.bat'`. If a stale startup state blocks it, run `stop.bat` before a fresh start; never stop a healthy instance.
+- Saved workflows are opened from ComfyUI's workflow library, not origin-bound browser hash links. Current server-side workflows are `portrait-dualtarget-seethrough-node.json` and the superseded `portrait-civitai-target-reference-seethrough.json`.
 
 ## COMMANDS
 Run from the repository root. Unity launch, test and capture commands belong to `GAME/AGENTS.md` and `TOOL/docs/Unity-Headless-Workflow.md`; WebGL builds run via `FoundationProjectBuilder.BuildWebGlPlayer` (menu `Janseon/Build WebGL Player`).
