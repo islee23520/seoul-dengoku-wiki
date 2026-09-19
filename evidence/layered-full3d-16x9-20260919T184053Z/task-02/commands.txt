@@ -1,0 +1,22 @@
+parent_before_task2_exact_binding=9b7832c965def922bf6945834e385f304a72e48e
+implementation_commit_k=b29d351e802ced619090ac60531b95ba6fba3f28
+implementation_tree=27d428d43203ccbc7ef9cd7ae2b5edec2897f048
+evidence_tools_commit=fd6c9db6
+unity=/Applications/Unity/Hub/Editor/6000.7.0a5/Unity.app/Contents/MacOS/Unity
+
+red:
+- red/default-place-id.xml: total=1 failed=1; Expected ArgumentException, But was null
+- prior undefined enum RED remains evidence/layered-full3d-16x9-20260919T182411Z/task-02/red/undefined-kind.xml
+
+green:
+- green/place-identity.xml: total=10 passed=10 failed=0 skipped=0
+- green-receipt.json binds implementation K, exact XML SHA, and exact case list
+
+regression:
+- regression/route-traversal.xml: total=6 passed=6 failed=0 skipped=0
+
+evidence:
+- source-fingerprint.json reads frozen source blobs from K via git show argument vector
+- verifier recomputes K tree blobs and requires K/manual/green receipt equality
+- strict schemas reject unknown, missing, duplicate, and wrong-type fields
+- stale 6e306aa1 and a valid nonancestor commit are rejected

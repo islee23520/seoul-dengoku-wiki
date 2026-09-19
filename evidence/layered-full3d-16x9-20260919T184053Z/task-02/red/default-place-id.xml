@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Failed(Child)" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-19 18:41:06Z" end-time="2026-09-19 18:41:06Z" duration="0.0247716">
+  <test-suite type="TestSuite" id="1000" name="서울:전국" fullname="서울:전국" runstate="Runnable" testcasecount="239" result="Failed" site="Child" start-time="2026-09-19 18:41:06Z" end-time="2026-09-19 18:41:06Z" duration="0.024772" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1275" name="Janseon.Foundation.EditModeTests.dll" fullname="/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/ScriptAssemblies/Janseon.Foundation.EditModeTests.dll" runstate="Runnable" testcasecount="238" result="Failed" site="Child" start-time="2026-09-19 18:41:06Z" end-time="2026-09-19 18:41:06Z" duration="0.020653" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="46515" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1276" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="238" result="Failed" site="Child" start-time="2026-09-19 18:41:06Z" end-time="2026-09-19 18:41:06Z" duration="0.019351" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1279" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="203" result="Failed" site="Child" start-time="2026-09-19 18:41:06Z" end-time="2026-09-19 18:41:06Z" duration="0.014679" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="1280" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="203" result="Failed" site="Child" start-time="2026-09-19 18:41:06Z" end-time="2026-09-19 18:41:06Z" duration="0.013505" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestFixture" id="1145" name="PlaceIdentityTests" fullname="Janseon.Foundation.Tests.PlaceIdentityTests" classname="Janseon.Foundation.Tests.PlaceIdentityTests" runstate="Runnable" testcasecount="9" result="Failed" site="Child" start-time="2026-09-19 18:41:06Z" end-time="2026-09-19 18:41:06Z" duration="0.011298" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="1151" name="DefaultPlaceIdCannotEnterCatalog" fullname="Janseon.Foundation.Tests.PlaceIdentityTests.DefaultPlaceIdCannotEnterCatalog" methodname="DefaultPlaceIdCannotEnterCatalog" classname="Janseon.Foundation.Tests.PlaceIdentityTests" runstate="Runnable" seed="1290626443" result="Failed" start-time="2026-09-19 18:41:06Z" end-time="2026-09-19 18:41:06Z" duration="0.005317" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Expected: <System.ArgumentException>
+  But was:  null
+]]></message>
+                  <stack-trace><![CDATA[at Janseon.Foundation.Tests.PlaceIdentityTests.DefaultPlaceIdCannotEnterCatalog () [0x00007] in /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Assets/Tests/EditMode/PlaceIdentityTests.cs:105
+]]></stack-trace>
+                </failure>
+                <output><![CDATA[Saving results to: /Users/ilseoblee/Library/Application Support/Janseon Studio/서울_전국/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
