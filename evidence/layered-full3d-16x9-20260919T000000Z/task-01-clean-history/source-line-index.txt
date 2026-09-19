@@ -1,0 +1,12 @@
+verify-lineage.mjs lines=191
+  inventory=6-34
+  structural-validator=37-76
+  subjectOnlyMutant=128-144
+  parentChainNoopMutant=145-166
+  optionalReflogMutant=167-186
+  inventory-assertion=188-191
+verify-required-lineage-cases.mjs lines=28
+  expected-independent-ids=3-10
+  schema-and-exact-comparison=12-28
+test-required-lineage-cases.mjs lines=28
+  independent-tamper-fixtures=7-25
