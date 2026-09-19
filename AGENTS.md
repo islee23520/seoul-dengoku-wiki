@@ -22,6 +22,7 @@ Studio design hub: hand-authored top-level design pages plus ADRs, proposals, a 
 ## CONVENTIONS
 - ADR filenames are English kebab-case (`ADR-00N-kebab-title.md`); bodies mix English and Korean. Every ADR carries a status line (`Status: Accepted` / `상태: 승인` / `수용됨`) — check it and any supersession link before citing.
 - Top-level `*.md` are the `design` domain input: `mount.mjs` stages them into `GAME-LOGIC/site/design/` and `seed-from-canon.mjs` renders them into `GDD/design-store/`. Top-level files only — subdirectories are not ingested, so `proposals/` and `system-design/` changes never require a remount.
+- 게임 UI 레퍼런스 조사는 `https://interfaceingame.com/`을 항상 1차 기준으로 삼는다. 정확한 작품이 없으면 같은 시리즈의 가장 가까운 항목을 먼저 분석하고, 부족한 화면만 공식 자료와 실제 게임 영상으로 보완한다. 레퍼런스의 아트·문양·아이콘을 복제하지 않고 정보 위계와 레이아웃 구조만 추출한다.
 
 ## ANTI-PATTERNS
 - Proposals are exploratory documents — do not cite them as accepted design.
