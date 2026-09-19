@@ -31,7 +31,7 @@ seoul-kenshi/
 |-- evidence/              # append-only test-evidence bundles (seoul-strategy-map-gdd/, pr-144/); new evidence = new dated dir
 |-- store/                 # frozen design-store capture run-4343cc0-160339 (pinned @ 4343cc0, 2026-09-13); root planning docs are the LIVE copies
 |-- Wikis/                 # legacy remnant (3 files); design-store seed remaps its old paths
-`-- .omo/                  # tracked canon + untracked session state; AGENTS.md is local-only
+`-- .omo/                  # untracked local state (whole directory ignored, 2026-09-19 owner directive); AGENTS.md is local-only
 ```
 
 ## WHERE TO LOOK
@@ -144,5 +144,5 @@ dotnet run --project Backend/server/Coordinator/SeoulKenshi.Coordinator.csproj -
 - TRELLIS targets a Windows RTX 4080 direct-Python host; local `probeHost()` reports it unavailable.
 - Capture validation requires ten state/resolution PNGs plus matching receipts; image dimensions alone do not establish valid evidence.
 - The Wiki public-term gate checks visible rendered content, not raw Markdown alone; it is not a source-wide naming ban.
-- `.omo/AGENTS.md` is git-ignored (repo allowlist has no exception for it) — it ships local-only unless the owner extends the allowlist.
+- The whole `.omo/` directory is git-ignored since 2026-09-19 (owner directive: always untracked, previously tracked files removed from the index); `.omo/AGENTS.md` ships local-only.
 - This root guide synthesizes writer digests and retained root guidance. Commands listed here were not executed as part of writing it.
