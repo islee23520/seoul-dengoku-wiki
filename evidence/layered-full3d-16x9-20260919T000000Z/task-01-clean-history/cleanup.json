@@ -10,5 +10,7 @@
   "final_receipt_binds": "8700482cfd8d33fcace64394c68fbc3bf19b3200",
   "prior_gate_review": ".omo/evidence/task31-gate-review.md",
   "temporary_alternate_probes_removed": true,
-  "mutation_mutants_killed": ["subjectOnlyMutant", "parentChainNoopMutant", "optionalReflogMutant"]
+  "mutation_mutants_killed": ["subjectOnlyMutant", "parentChainNoopMutant", "optionalReflogMutant"],
+  "required_case_count": 16,
+  "deletion_probes_nonzero": ["mutant.subject-only", "mutant.parent-chain-noop", "mutant.optional-reflog"]
 }

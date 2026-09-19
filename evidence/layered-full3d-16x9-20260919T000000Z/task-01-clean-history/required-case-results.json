@@ -1,0 +1,38 @@
+{
+  "passedRequiredCases": [
+    "mutant.optional-reflog",
+    "mutant.parent-chain-noop",
+    "mutant.subject-only",
+    "struct.amend-action",
+    "struct.commit-hash",
+    "struct.disconnected-parent",
+    "struct.duplicate-hash",
+    "struct.first-parent",
+    "struct.merge-parents",
+    "struct.missing-reflog",
+    "struct.parent-hash",
+    "struct.reflog-action",
+    "struct.reflog-hash",
+    "struct.subject-ignored",
+    "struct.unknown-reflog",
+    "struct.valid-chain"
+  ],
+  "requiredCaseIds": [
+    "mutant.optional-reflog",
+    "mutant.parent-chain-noop",
+    "mutant.subject-only",
+    "struct.amend-action",
+    "struct.commit-hash",
+    "struct.disconnected-parent",
+    "struct.duplicate-hash",
+    "struct.first-parent",
+    "struct.merge-parents",
+    "struct.missing-reflog",
+    "struct.parent-hash",
+    "struct.reflog-action",
+    "struct.reflog-hash",
+    "struct.subject-ignored",
+    "struct.unknown-reflog",
+    "struct.valid-chain"
+  ]
+}
