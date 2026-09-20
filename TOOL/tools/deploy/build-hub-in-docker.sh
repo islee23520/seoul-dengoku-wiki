@@ -43,6 +43,7 @@ npm --prefix WEB/wiki run test:assets
 npm --prefix WEB/wiki run test:people
 npm --prefix WEB/wiki run test:person-details
 npm --prefix WEB/wiki run test:territory-map
+npm --prefix WEB/wiki run test:timeline
 npm --prefix WEB/wiki run test:discovery
 node --test TOOL/tools/wiki/test-retired-reference-terms.mjs
 node --test TOOL/tools/wiki/test-wiki-parity.mjs
