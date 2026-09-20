@@ -284,7 +284,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     },
     {
       "id": "S03",
-      "display_name": "현대자동차주식회사",
+      "display_name": "양재기공주식회사",
       "capital_station": "양재역",
       "region": "남부",
       "government": "상업",
@@ -305,7 +305,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     },
     {
       "id": "S04",
-      "display_name": "대한예수교장로회",
+      "display_name": "설교명부정",
       "capital_station": "삼성역",
       "region": "남부",
       "government": "신정",
@@ -391,7 +391,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     },
     {
       "id": "S08",
-      "display_name": "원불교",
+      "display_name": "교헌필사정",
       "capital_station": "흑석역",
       "region": "남부",
       "government": "신정",
@@ -409,7 +409,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     },
     {
       "id": "S09",
-      "display_name": "전국경제인연합회",
+      "display_name": "여의도출자연합회",
       "capital_station": "여의도역",
       "region": "서부",
       "government": "상업",
@@ -427,7 +427,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     },
     {
       "id": "S10",
-      "display_name": "대한불교조계종",
+      "display_name": "승가구휼정",
       "capital_station": "안국역",
       "region": "중앙",
       "government": "신정",
@@ -445,7 +445,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     },
     {
       "id": "S11",
-      "display_name": "삼성그룹",
+      "display_name": "서초전산그룹",
       "capital_station": "강남역",
       "region": "남부",
       "government": "상업",
@@ -531,7 +531,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     },
     {
       "id": "S15",
-      "display_name": "천주교 서울대교구",
+      "display_name": "본당인준정",
       "capital_station": "명동역",
       "region": "중앙",
       "government": "신정",
@@ -549,7 +549,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     },
     {
       "id": "S16",
-      "display_name": "전국민주노동조합총연맹",
+      "display_name": "정동노동총연맹",
       "capital_station": "시청역",
       "region": "중앙",
       "government": "상업",
@@ -1077,7 +1077,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "생명안전 연구책임자",
       "stage": "주요",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1086,7 +1086,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "생명안전 심사관",
       "stage": "S1",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1095,7 +1095,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "기술인증 평의원",
       "stage": "S1",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1104,7 +1104,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "방재대장",
       "stage": "S1",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1113,7 +1113,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "마곡·방화 주민대표",
       "stage": "S1",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1122,7 +1122,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "방화기지 유치·배차장",
       "stage": "S1",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1131,7 +1131,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "종자보존고 책임자",
       "stage": "S1",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1140,7 +1140,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "서부 수질검사망 운영관",
       "stage": "S1",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1149,7 +1149,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "연구기록·통신서고 감사관",
       "stage": "S1",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1158,7 +1158,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "방화기지 연구차량 정비사",
       "stage": "S2",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1167,7 +1167,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "마곡 인증화물 물류상",
       "stage": "S2",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1176,7 +1176,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "실험동 안전의무원",
       "stage": "S2",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1185,7 +1185,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "방화 관문 순찰대 조장",
       "stage": "S2",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1194,7 +1194,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "공동기술원장 전령",
       "stage": "S2",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1203,7 +1203,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "서부 외곽 활주로터 탐사원",
       "stage": "S2",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1212,7 +1212,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "기술인증 사본 기록관",
       "stage": "S2",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1221,7 +1221,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "마곡 대합실 역장",
       "stage": "S2",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1230,7 +1230,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "방화기지 유치 실무장",
       "stage": "S2",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1239,7 +1239,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "방화 주민시장 중개인",
       "stage": "S2",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1248,7 +1248,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "방재 의무호송 반장",
       "stage": "S2",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1257,7 +1257,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "종자보존고 비상발전 운전장",
       "stage": "S2",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1266,7 +1266,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "음성기록 원본 호송원",
       "stage": "S3",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1275,7 +1275,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "수질 검사 공개 증인",
       "stage": "S3",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1284,7 +1284,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "가짜 약품 표본 피해자 대표",
       "stage": "S3",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1293,7 +1293,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "대정전 비상권한 서기",
       "stage": "S3",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1302,7 +1302,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "연구자 파견 호송책",
       "stage": "S3",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1311,7 +1311,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "약소국 회의 기술공유 서기",
       "stage": "S3",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1320,7 +1320,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "비군사 공동조사 전령",
       "stage": "S3",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1329,7 +1329,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "측량 기록 심사관",
       "stage": "S2",
       "state_id": "S03",
-      "state_name": "현대자동차주식회사",
+      "state_name": "양재기공주식회사",
       "source_anchor": "Cast-Index.md#S03"
     },
     {
@@ -1338,7 +1338,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "펌프기술 총관, 현재 실종",
       "stage": "주요",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -1347,7 +1347,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "펌프기술자, 임하준의 양자",
       "stage": "주요",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -1356,7 +1356,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "성수 공방평의회 대표",
       "stage": "S1",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -1365,7 +1365,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "펌프기술가문 대행",
       "stage": "S1",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -1374,7 +1374,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "뚝섬 펌프수비대장",
       "stage": "S1",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -1383,7 +1383,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "군자기지 차량정비장",
       "stage": "S1",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -1392,7 +1392,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "공방 기동정비조장",
       "stage": "S1",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -1401,7 +1401,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "공방평의회 기록감사",
       "stage": "S1",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -1410,7 +1410,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "성수·성동 급수 시민대표",
       "stage": "S1",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -1419,7 +1419,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "성수 가죽·소형기계 직능대표",
       "stage": "S1",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -1428,7 +1428,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "성수 골목펌프 정비사",
       "stage": "S2",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -1437,7 +1437,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "성수 패킹운송 물류상",
       "stage": "S2",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -1446,7 +1446,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "뚝섬 펌프실 의무원",
       "stage": "S2",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -1455,7 +1455,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "성동 교량 순찰대 조장",
       "stage": "S2",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -1464,7 +1464,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "공방평의회 전령",
       "stage": "S2",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -1473,7 +1473,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "군자-성수 침수터널 탐사원",
       "stage": "S2",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -1482,7 +1482,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "공방 조립기록 실무관",
       "stage": "S2",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -1491,7 +1491,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "성수 대합실 역장",
       "stage": "S2",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -1500,7 +1500,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "군자기지 유치 실무장",
       "stage": "S2",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -1509,7 +1509,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "성수 공방시장 경매사",
       "stage": "S2",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -1518,7 +1518,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "성동 골목의무소 원장",
       "stage": "S2",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -1527,7 +1527,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "뚝섬 펌프실 발전운전장",
       "stage": "S2",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -1536,7 +1536,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "뚝섬-신정 급수호송 열차 승무원",
       "stage": "S3",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -1545,7 +1545,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "세 유언 공방 서기",
       "stage": "S3",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -1554,7 +1554,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "급수계약 만료 협상 서기",
       "stage": "S3",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -1563,7 +1563,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "가짜 정수 부품 피해자 직공",
       "stage": "S3",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -1572,7 +1572,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "유언 증거 호송 전령",
       "stage": "S3",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -1581,7 +1581,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "암호화 정비일지 발견 증인",
       "stage": "S3",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -1590,7 +1590,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "보호군 파견 거부 민병 조장",
       "stage": "S3",
       "state_id": "S04",
-      "state_name": "대한예수교장로회",
+      "state_name": "설교명부정",
       "source_anchor": "Cast-Index.md#S04"
     },
     {
@@ -2310,7 +2310,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "냉동상인 대표",
       "stage": "주요",
       "state_id": "S08",
-      "state_name": "원불교",
+      "state_name": "교헌필사정",
       "source_anchor": "Cast-Index.md#S08"
     },
     {
@@ -2319,7 +2319,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "냉동 상인",
       "stage": "S1",
       "state_id": "S08",
-      "state_name": "원불교",
+      "state_name": "교헌필사정",
       "source_anchor": "Cast-Index.md#S08"
     },
     {
@@ -2328,7 +2328,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "경매사",
       "stage": "S1",
       "state_id": "S08",
-      "state_name": "원불교",
+      "state_name": "교헌필사정",
       "source_anchor": "Cast-Index.md#S08"
     },
     {
@@ -2337,7 +2337,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "호송 반장",
       "stage": "S1",
       "state_id": "S08",
-      "state_name": "원불교",
+      "state_name": "교헌필사정",
       "source_anchor": "Cast-Index.md#S08"
     },
     {
@@ -2346,7 +2346,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "얼음 상인",
       "stage": "S1",
       "state_id": "S08",
-      "state_name": "원불교",
+      "state_name": "교헌필사정",
       "source_anchor": "Cast-Index.md#S08"
     },
     {
@@ -2355,7 +2355,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "운송선주 평의",
       "stage": "S1",
       "state_id": "S08",
-      "state_name": "원불교",
+      "state_name": "교헌필사정",
       "source_anchor": "Cast-Index.md#S08"
     },
     {
@@ -2364,7 +2364,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "노량진 제빙기 정비사",
       "stage": "S2",
       "state_id": "S08",
-      "state_name": "원불교",
+      "state_name": "교헌필사정",
       "source_anchor": "Cast-Index.md#S08"
     },
     {
@@ -2373,7 +2373,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "냉동창고 물류상",
       "stage": "S2",
       "state_id": "S08",
-      "state_name": "원불교",
+      "state_name": "교헌필사정",
       "source_anchor": "Cast-Index.md#S08"
     },
     {
@@ -2382,7 +2382,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "노량진시장 의무원",
       "stage": "S2",
       "state_id": "S08",
-      "state_name": "원불교",
+      "state_name": "교헌필사정",
       "source_anchor": "Cast-Index.md#S08"
     },
     {
@@ -2391,7 +2391,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "시장 자경 순찰대 조장",
       "stage": "S2",
       "state_id": "S08",
-      "state_name": "원불교",
+      "state_name": "교헌필사정",
       "source_anchor": "Cast-Index.md#S08"
     },
     {
@@ -2400,7 +2400,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "경매 낙찰 전령",
       "stage": "S2",
       "state_id": "S08",
-      "state_name": "원불교",
+      "state_name": "교헌필사정",
       "source_anchor": "Cast-Index.md#S08"
     },
     {
@@ -2409,7 +2409,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "한강 취수 탐사원",
       "stage": "S2",
       "state_id": "S08",
-      "state_name": "원불교",
+      "state_name": "교헌필사정",
       "source_anchor": "Cast-Index.md#S08"
     },
     {
@@ -2418,7 +2418,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "결제권 원장 기록관",
       "stage": "S2",
       "state_id": "S08",
-      "state_name": "원불교",
+      "state_name": "교헌필사정",
       "source_anchor": "Cast-Index.md#S08"
     },
     {
@@ -2427,7 +2427,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "노량진역 대합실 역장",
       "stage": "S2",
       "state_id": "S08",
-      "state_name": "원불교",
+      "state_name": "교헌필사정",
       "source_anchor": "Cast-Index.md#S08"
     },
     {
@@ -2436,7 +2436,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "노량진 냉동기지 감독",
       "stage": "S2",
       "state_id": "S08",
-      "state_name": "원불교",
+      "state_name": "교헌필사정",
       "source_anchor": "Cast-Index.md#S08"
     },
     {
@@ -2445,7 +2445,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "수산도매 시장 경매사",
       "stage": "S2",
       "state_id": "S08",
-      "state_name": "원불교",
+      "state_name": "교헌필사정",
       "source_anchor": "Cast-Index.md#S08"
     },
     {
@@ -2454,7 +2454,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "남부 의료접근 이동의무차 반장",
       "stage": "S2",
       "state_id": "S08",
-      "state_name": "원불교",
+      "state_name": "교헌필사정",
       "source_anchor": "Cast-Index.md#S08"
     },
     {
@@ -2463,7 +2463,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "노량진 제빙 비상발전 운전장",
       "stage": "S2",
       "state_id": "S08",
-      "state_name": "원불교",
+      "state_name": "교헌필사정",
       "source_anchor": "Cast-Index.md#S08"
     },
     {
@@ -2472,7 +2472,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "냉동고 사고 증인",
       "stage": "S3",
       "state_id": "S08",
-      "state_name": "원불교",
+      "state_name": "교헌필사정",
       "source_anchor": "Cast-Index.md#S08"
     },
     {
@@ -2481,7 +2481,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "가짜 약품 경매 피해자",
       "stage": "S3",
       "state_id": "S08",
-      "state_name": "원불교",
+      "state_name": "교헌필사정",
       "source_anchor": "Cast-Index.md#S08"
     },
     {
@@ -2490,7 +2490,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "탁수 재고 야간 이전 목격자",
       "stage": "S3",
       "state_id": "S08",
-      "state_name": "원불교",
+      "state_name": "교헌필사정",
       "source_anchor": "Cast-Index.md#S08"
     },
     {
@@ -2499,7 +2499,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "호송칸 봉인 상자 증인",
       "stage": "S3",
       "state_id": "S08",
-      "state_name": "원불교",
+      "state_name": "교헌필사정",
       "source_anchor": "Cast-Index.md#S08"
     },
     {
@@ -2508,7 +2508,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "급수 시세 폭등 상인",
       "stage": "S3",
       "state_id": "S08",
-      "state_name": "원불교",
+      "state_name": "교헌필사정",
       "source_anchor": "Cast-Index.md#S08"
     },
     {
@@ -2517,7 +2517,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "약소국 회의 식량 호송 선주",
       "stage": "S3",
       "state_id": "S08",
-      "state_name": "원불교",
+      "state_name": "교헌필사정",
       "source_anchor": "Cast-Index.md#S08"
     },
     {
@@ -2526,7 +2526,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "첫 급수협약 시장 증인",
       "stage": "S3",
       "state_id": "S08",
-      "state_name": "원불교",
+      "state_name": "교헌필사정",
       "source_anchor": "Cast-Index.md#S08"
     },
     {
@@ -2535,7 +2535,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "방송검증관",
       "stage": "주요",
       "state_id": "S09",
-      "state_name": "전국경제인연합회",
+      "state_name": "여의도출자연합회",
       "source_anchor": "Cast-Index.md#S09"
     },
     {
@@ -2544,7 +2544,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "송신 기사",
       "stage": "S1",
       "state_id": "S09",
-      "state_name": "전국경제인연합회",
+      "state_name": "여의도출자연합회",
       "source_anchor": "Cast-Index.md#S09"
     },
     {
@@ -2553,7 +2553,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "검증 기록원",
       "stage": "S1",
       "state_id": "S09",
-      "state_name": "전국경제인연합회",
+      "state_name": "여의도출자연합회",
       "source_anchor": "Cast-Index.md#S09"
     },
     {
@@ -2562,7 +2562,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "암호 기록원",
       "stage": "S1",
       "state_id": "S09",
-      "state_name": "전국경제인연합회",
+      "state_name": "여의도출자연합회",
       "source_anchor": "Cast-Index.md#S09"
     },
     {
@@ -2571,7 +2571,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "채널 길드 편성관",
       "stage": "S1",
       "state_id": "S09",
-      "state_name": "전국경제인연합회",
+      "state_name": "여의도출자연합회",
       "source_anchor": "Cast-Index.md#S09"
     },
     {
@@ -2580,7 +2580,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "전파추적조 반장",
       "stage": "S1",
       "state_id": "S09",
-      "state_name": "전국경제인연합회",
+      "state_name": "여의도출자연합회",
       "source_anchor": "Cast-Index.md#S09"
     },
     {
@@ -2589,7 +2589,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "송신 정비사, 권미래의 실무 담당자",
       "stage": "S2",
       "state_id": "S09",
-      "state_name": "전국경제인연합회",
+      "state_name": "여의도출자연합회",
       "source_anchor": "Cast-Index.md#S09"
     },
     {
@@ -2598,7 +2598,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "전선·전지 물류상",
       "stage": "S2",
       "state_id": "S09",
-      "state_name": "전국경제인연합회",
+      "state_name": "여의도출자연합회",
       "source_anchor": "Cast-Index.md#S09"
     },
     {
@@ -2607,7 +2607,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "송신조 당직 의무원",
       "stage": "S2",
       "state_id": "S09",
-      "state_name": "전국경제인연합회",
+      "state_name": "여의도출자연합회",
       "source_anchor": "Cast-Index.md#S09"
     },
     {
@@ -2616,7 +2616,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "송신탑 순찰대, 조은우의 실무 담당자",
       "stage": "S2",
       "state_id": "S09",
-      "state_name": "전국경제인연합회",
+      "state_name": "여의도출자연합회",
       "source_anchor": "Cast-Index.md#S09"
     },
     {
@@ -2625,7 +2625,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "편성 전령, 오하늘의 실무 담당자",
       "stage": "S2",
       "state_id": "S09",
-      "state_name": "전국경제인연합회",
+      "state_name": "여의도출자연합회",
       "source_anchor": "Cast-Index.md#S09"
     },
     {
@@ -2634,7 +2634,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "지도 갱신 탐사원",
       "stage": "S2",
       "state_id": "S09",
-      "state_name": "전국경제인연합회",
+      "state_name": "여의도출자연합회",
       "source_anchor": "Cast-Index.md#S09"
     },
     {
@@ -2643,7 +2643,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "검증 기록관, 황은설의 실무 담당자",
       "stage": "S2",
       "state_id": "S09",
-      "state_name": "전국경제인연합회",
+      "state_name": "여의도출자연합회",
       "source_anchor": "Cast-Index.md#S09"
     },
     {
@@ -2652,7 +2652,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "상암 송신탑 당직장",
       "stage": "S2",
       "state_id": "S09",
-      "state_name": "전국경제인연합회",
+      "state_name": "여의도출자연합회",
       "source_anchor": "Cast-Index.md#S09"
     },
     {
@@ -2661,7 +2661,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "기록 저장소 열쇠지기, 송재민의 실무 담당자",
       "stage": "S2",
       "state_id": "S09",
-      "state_name": "전국경제인연합회",
+      "state_name": "여의도출자연합회",
       "source_anchor": "Cast-Index.md#S09"
     },
     {
@@ -2670,7 +2670,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "서북 관문 중계 거점장",
       "stage": "S2",
       "state_id": "S09",
-      "state_name": "전국경제인연합회",
+      "state_name": "여의도출자연합회",
       "source_anchor": "Cast-Index.md#S09"
     },
     {
@@ -2679,7 +2679,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "채널 길드 편성실 거점 실무 담당자, 오하늘의 실무 담당자",
       "stage": "S2",
       "state_id": "S09",
-      "state_name": "전국경제인연합회",
+      "state_name": "여의도출자연합회",
       "source_anchor": "Cast-Index.md#S09"
     },
     {
@@ -2688,7 +2688,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "암호 중계 부스 실무 담당자, 송재민의 실무 담당자",
       "stage": "S2",
       "state_id": "S09",
-      "state_name": "전국경제인연합회",
+      "state_name": "여의도출자연합회",
       "source_anchor": "Cast-Index.md#S09"
     },
     {
@@ -2697,7 +2697,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "가짜 송신 내부 제보자",
       "stage": "S3",
       "state_id": "S09",
-      "state_name": "전국경제인연합회",
+      "state_name": "여의도출자연합회",
       "source_anchor": "Cast-Index.md#S09"
     },
     {
@@ -2706,7 +2706,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "음성기록 회수 전령",
       "stage": "S3",
       "state_id": "S09",
-      "state_name": "전국경제인연합회",
+      "state_name": "여의도출자연합회",
       "source_anchor": "Cast-Index.md#S09"
     },
     {
@@ -2715,7 +2715,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "실종 전 송신 기록 목격자",
       "stage": "S3",
       "state_id": "S09",
-      "state_name": "전국경제인연합회",
+      "state_name": "여의도출자연합회",
       "source_anchor": "Cast-Index.md#S09"
     },
     {
@@ -2724,7 +2724,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "탁수 은폐 폭로 편성원",
       "stage": "S3",
       "state_id": "S09",
-      "state_name": "전국경제인연합회",
+      "state_name": "여의도출자연합회",
       "source_anchor": "Cast-Index.md#S09"
     },
     {
@@ -2733,7 +2733,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "북한산보국문 행렬 속보 증인",
       "stage": "S3",
       "state_id": "S09",
-      "state_name": "전국경제인연합회",
+      "state_name": "여의도출자연합회",
       "source_anchor": "Cast-Index.md#S09"
     },
     {
@@ -2742,7 +2742,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "재송신 원점 제보자",
       "stage": "S3",
       "state_id": "S09",
-      "state_name": "전국경제인연합회",
+      "state_name": "여의도출자연합회",
       "source_anchor": "Cast-Index.md#S09"
     },
     {
@@ -2751,7 +2751,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "열한 자리 회의 중계 기록원",
       "stage": "S3",
       "state_id": "S09",
-      "state_name": "전국경제인연합회",
+      "state_name": "여의도출자연합회",
       "source_anchor": "Cast-Index.md#S09"
     },
     {
@@ -2760,7 +2760,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "소문 검증 필진",
       "stage": "S2",
       "state_id": "S09",
-      "state_name": "전국경제인연합회",
+      "state_name": "여의도출자연합회",
       "source_anchor": "Cast-Index.md#S09"
     },
     {
@@ -2769,7 +2769,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "난민대표",
       "stage": "주요",
       "state_id": "S10",
-      "state_name": "대한불교조계종",
+      "state_name": "승가구휼정",
       "source_anchor": "Cast-Index.md#S10"
     },
     {
@@ -2778,7 +2778,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "피난 가족 대표",
       "stage": "S1",
       "state_id": "S10",
-      "state_name": "대한불교조계종",
+      "state_name": "승가구휼정",
       "source_anchor": "Cast-Index.md#S10"
     },
     {
@@ -2787,7 +2787,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "배급 감시인",
       "stage": "S1",
       "state_id": "S10",
-      "state_name": "대한불교조계종",
+      "state_name": "승가구휼정",
       "source_anchor": "Cast-Index.md#S10"
     },
     {
@@ -2796,7 +2796,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "산악 정찰 반장",
       "stage": "S1",
       "state_id": "S10",
-      "state_name": "대한불교조계종",
+      "state_name": "승가구휼정",
       "source_anchor": "Cast-Index.md#S10"
     },
     {
@@ -2805,7 +2805,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "구호 가족 서기",
       "stage": "S1",
       "state_id": "S10",
-      "state_name": "대한불교조계종",
+      "state_name": "승가구휼정",
       "source_anchor": "Cast-Index.md#S10"
     },
     {
@@ -2814,7 +2814,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "민병 배급 감시",
       "stage": "S1",
       "state_id": "S10",
-      "state_name": "대한불교조계종",
+      "state_name": "승가구휼정",
       "source_anchor": "Cast-Index.md#S10"
     },
     {
@@ -2823,7 +2823,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "숙영 난로 정비사",
       "stage": "S2",
       "state_id": "S10",
-      "state_name": "대한불교조계종",
+      "state_name": "승가구휼정",
       "source_anchor": "Cast-Index.md#S10"
     },
     {
@@ -2832,7 +2832,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "산악 운송 물류상",
       "stage": "S2",
       "state_id": "S10",
-      "state_name": "대한불교조계종",
+      "state_name": "승가구휼정",
       "source_anchor": "Cast-Index.md#S10"
     },
     {
@@ -2841,7 +2841,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "약초 의무원",
       "stage": "S2",
       "state_id": "S10",
-      "state_name": "대한불교조계종",
+      "state_name": "승가구휼정",
       "source_anchor": "Cast-Index.md#S10"
     },
     {
@@ -2850,7 +2850,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "회랑 순찰대, 강태산의 실무 담당자",
       "stage": "S2",
       "state_id": "S10",
-      "state_name": "대한불교조계종",
+      "state_name": "승가구휼정",
       "source_anchor": "Cast-Index.md#S10"
     },
     {
@@ -2859,7 +2859,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "가족 회의 전령, 신보람의 실무 담당자",
       "stage": "S2",
       "state_id": "S10",
-      "state_name": "대한불교조계종",
+      "state_name": "승가구휼정",
       "source_anchor": "Cast-Index.md#S10"
     },
     {
@@ -2868,7 +2868,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "피난로 탐사원",
       "stage": "S2",
       "state_id": "S10",
-      "state_name": "대한불교조계종",
+      "state_name": "승가구휼정",
       "source_anchor": "Cast-Index.md#S10"
     },
     {
@@ -2877,7 +2877,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "피난 명부 기록관, 윤초아의 실무 담당자",
       "stage": "S2",
       "state_id": "S10",
-      "state_name": "대한불교조계종",
+      "state_name": "승가구휼정",
       "source_anchor": "Cast-Index.md#S10"
     },
     {
@@ -2886,7 +2886,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "피난 숙영 거점장",
       "stage": "S2",
       "state_id": "S10",
-      "state_name": "대한불교조계종",
+      "state_name": "승가구휼정",
       "source_anchor": "Cast-Index.md#S10"
     },
     {
@@ -2895,7 +2895,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "회랑 통행 안내 거점장",
       "stage": "S2",
       "state_id": "S10",
-      "state_name": "대한불교조계종",
+      "state_name": "승가구휼정",
       "source_anchor": "Cast-Index.md#S10"
     },
     {
@@ -2904,7 +2904,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "약초 건조장 거점장",
       "stage": "S2",
       "state_id": "S10",
-      "state_name": "대한불교조계종",
+      "state_name": "승가구휼정",
       "source_anchor": "Cast-Index.md#S10"
     },
     {
@@ -2913,7 +2913,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "방어 고지 거점장",
       "stage": "S2",
       "state_id": "S10",
-      "state_name": "대한불교조계종",
+      "state_name": "승가구휼정",
       "source_anchor": "Cast-Index.md#S10"
     },
     {
@@ -2922,7 +2922,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "난방 연료고 거점장, 오한결의 실무 담당자",
       "stage": "S2",
       "state_id": "S10",
-      "state_name": "대한불교조계종",
+      "state_name": "승가구휼정",
       "source_anchor": "Cast-Index.md#S10"
     },
     {
@@ -2931,7 +2931,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "난민 명부 사고 당사자",
       "stage": "S3",
       "state_id": "S10",
-      "state_name": "대한불교조계종",
+      "state_name": "승가구휼정",
       "source_anchor": "Cast-Index.md#S10"
     },
     {
@@ -2940,7 +2940,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "군사호적 거부 가족",
       "stage": "S3",
       "state_id": "S10",
-      "state_name": "대한불교조계종",
+      "state_name": "승가구휼정",
       "source_anchor": "Cast-Index.md#S10"
     },
     {
@@ -2949,7 +2949,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "가짜 약 배급 피해자",
       "stage": "S3",
       "state_id": "S10",
-      "state_name": "대한불교조계종",
+      "state_name": "승가구휼정",
       "source_anchor": "Cast-Index.md#S10"
     },
     {
@@ -2958,7 +2958,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "회랑 인원조사 증인",
       "stage": "S3",
       "state_id": "S10",
-      "state_name": "대한불교조계종",
+      "state_name": "승가구휼정",
       "source_anchor": "Cast-Index.md#S10"
     },
     {
@@ -2967,7 +2967,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "약소국 회의 난민 수행원",
       "stage": "S3",
       "state_id": "S10",
-      "state_name": "대한불교조계종",
+      "state_name": "승가구휼정",
       "source_anchor": "Cast-Index.md#S10"
     },
     {
@@ -2976,7 +2976,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "강제등록 행렬 이탈자",
       "stage": "S3",
       "state_id": "S10",
-      "state_name": "대한불교조계종",
+      "state_name": "승가구휼정",
       "source_anchor": "Cast-Index.md#S10"
     },
     {
@@ -2985,7 +2985,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "공신 보상 구호 당사자",
       "stage": "S3",
       "state_id": "S10",
-      "state_name": "대한불교조계종",
+      "state_name": "승가구휼정",
       "source_anchor": "Cast-Index.md#S10"
     },
     {
@@ -2994,7 +2994,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "피난로 안내 반장",
       "stage": "S2",
       "state_id": "S10",
-      "state_name": "대한불교조계종",
+      "state_name": "승가구휼정",
       "source_anchor": "Cast-Index.md#S10"
     },
     {
@@ -3003,7 +3003,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "차량기지 원로",
       "stage": "주요",
       "state_id": "S11",
-      "state_name": "삼성그룹",
+      "state_name": "서초전산그룹",
       "source_anchor": "Cast-Index.md#S11"
     },
     {
@@ -3012,7 +3012,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "차량 정비 도제",
       "stage": "S1",
       "state_id": "S11",
-      "state_name": "삼성그룹",
+      "state_name": "서초전산그룹",
       "source_anchor": "Cast-Index.md#S11"
     },
     {
@@ -3021,7 +3021,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "작업 반장",
       "stage": "S1",
       "state_id": "S11",
-      "state_name": "삼성그룹",
+      "state_name": "서초전산그룹",
       "source_anchor": "Cast-Index.md#S11"
     },
     {
@@ -3030,7 +3030,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "주거공동체 감사",
       "stage": "S1",
       "state_id": "S11",
-      "state_name": "삼성그룹",
+      "state_name": "서초전산그룹",
       "source_anchor": "Cast-Index.md#S11"
     },
     {
@@ -3039,7 +3039,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "궤도기병 반장",
       "stage": "S1",
       "state_id": "S11",
-      "state_name": "삼성그룹",
+      "state_name": "서초전산그룹",
       "source_anchor": "Cast-Index.md#S11"
     },
     {
@@ -3048,7 +3048,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "철재 회수 작업반장",
       "stage": "S1",
       "state_id": "S11",
-      "state_name": "삼성그룹",
+      "state_name": "서초전산그룹",
       "source_anchor": "Cast-Index.md#S11"
     },
     {
@@ -3057,7 +3057,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "차륜 정비사, 송하율의 실무 담당자",
       "stage": "S2",
       "state_id": "S11",
-      "state_name": "삼성그룹",
+      "state_name": "서초전산그룹",
       "source_anchor": "Cast-Index.md#S11"
     },
     {
@@ -3066,7 +3066,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "차륜·철재 물류상",
       "stage": "S2",
       "state_id": "S11",
-      "state_name": "삼성그룹",
+      "state_name": "서초전산그룹",
       "source_anchor": "Cast-Index.md#S11"
     },
     {
@@ -3075,7 +3075,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "기지 의무원",
       "stage": "S2",
       "state_id": "S11",
-      "state_name": "삼성그룹",
+      "state_name": "서초전산그룹",
       "source_anchor": "Cast-Index.md#S11"
     },
     {
@@ -3084,7 +3084,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "북문 순찰대, 권도하의 실무 담당자",
       "stage": "S2",
       "state_id": "S11",
-      "state_name": "삼성그룹",
+      "state_name": "서초전산그룹",
       "source_anchor": "Cast-Index.md#S11"
     },
     {
@@ -3093,7 +3093,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "연공회의 전령, 조우찬의 실무 담당자",
       "stage": "S2",
       "state_id": "S11",
-      "state_name": "삼성그룹",
+      "state_name": "서초전산그룹",
       "source_anchor": "Cast-Index.md#S11"
     },
     {
@@ -3102,7 +3102,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "북부 선로 탐사원",
       "stage": "S2",
       "state_id": "S11",
-      "state_name": "삼성그룹",
+      "state_name": "서초전산그룹",
       "source_anchor": "Cast-Index.md#S11"
     },
     {
@@ -3111,7 +3111,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "작업 사고 기록관, 조우찬의 실무 담당자",
       "stage": "S2",
       "state_id": "S11",
-      "state_name": "삼성그룹",
+      "state_name": "서초전산그룹",
       "source_anchor": "Cast-Index.md#S11"
     },
     {
@@ -3120,7 +3120,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "창동 차량기지 당직장",
       "stage": "S2",
       "state_id": "S11",
-      "state_name": "삼성그룹",
+      "state_name": "서초전산그룹",
       "source_anchor": "Cast-Index.md#S11"
     },
     {
@@ -3129,7 +3129,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "북문 호송 거점장",
       "stage": "S2",
       "state_id": "S11",
-      "state_name": "삼성그룹",
+      "state_name": "서초전산그룹",
       "source_anchor": "Cast-Index.md#S11"
     },
     {
@@ -3138,7 +3138,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "주거 쉘 급수 거점장, 서진아의 실무 담당자",
       "stage": "S2",
       "state_id": "S11",
-      "state_name": "삼성그룹",
+      "state_name": "서초전산그룹",
       "source_anchor": "Cast-Index.md#S11"
     },
     {
@@ -3147,7 +3147,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "철재 회수장 거점장, 황노을의 실무 담당자",
       "stage": "S2",
       "state_id": "S11",
-      "state_name": "삼성그룹",
+      "state_name": "서초전산그룹",
       "source_anchor": "Cast-Index.md#S11"
     },
     {
@@ -3156,7 +3156,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "궤도기병 정비창 거점장",
       "stage": "S2",
       "state_id": "S11",
-      "state_name": "삼성그룹",
+      "state_name": "서초전산그룹",
       "source_anchor": "Cast-Index.md#S11"
     },
     {
@@ -3165,7 +3165,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "차륜 정비 불량 폭로자",
       "stage": "S3",
       "state_id": "S11",
-      "state_name": "삼성그룹",
+      "state_name": "서초전산그룹",
       "source_anchor": "Cast-Index.md#S11"
     },
     {
@@ -3174,7 +3174,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "시험 차륜 결함 증인",
       "stage": "S3",
       "state_id": "S11",
-      "state_name": "삼성그룹",
+      "state_name": "서초전산그룹",
       "source_anchor": "Cast-Index.md#S11"
     },
     {
@@ -3183,7 +3183,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "의료열차 북문 정비원",
       "stage": "S3",
       "state_id": "S11",
-      "state_name": "삼성그룹",
+      "state_name": "서초전산그룹",
       "source_anchor": "Cast-Index.md#S11"
     },
     {
@@ -3192,7 +3192,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "북한산보국문 행렬 북문 안내인",
       "stage": "S3",
       "state_id": "S11",
-      "state_name": "삼성그룹",
+      "state_name": "서초전산그룹",
       "source_anchor": "Cast-Index.md#S11"
     },
     {
@@ -3201,7 +3201,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "급수 압력 저하 주거 당사자",
       "stage": "S3",
       "state_id": "S11",
-      "state_name": "삼성그룹",
+      "state_name": "서초전산그룹",
       "source_anchor": "Cast-Index.md#S11"
     },
     {
@@ -3210,7 +3210,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "약소국 회의 북부 사절 기술자",
       "stage": "S3",
       "state_id": "S11",
-      "state_name": "삼성그룹",
+      "state_name": "서초전산그룹",
       "source_anchor": "Cast-Index.md#S11"
     },
     {
@@ -3219,7 +3219,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "둘째 급수협약 차륜 교환 증인",
       "stage": "S3",
       "state_id": "S11",
-      "state_name": "삼성그룹",
+      "state_name": "서초전산그룹",
       "source_anchor": "Cast-Index.md#S11"
     },
     {
@@ -3921,7 +3921,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "경매조정인",
       "stage": "주요",
       "state_id": "S15",
-      "state_name": "천주교 서울대교구",
+      "state_name": "본당인준정",
       "source_anchor": "Cast-Index.md#S15"
     },
     {
@@ -3930,7 +3930,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "경매사",
       "stage": "S1",
       "state_id": "S15",
-      "state_name": "천주교 서울대교구",
+      "state_name": "본당인준정",
       "source_anchor": "Cast-Index.md#S15"
     },
     {
@@ -3939,7 +3939,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "창고지기",
       "stage": "S1",
       "state_id": "S15",
-      "state_name": "천주교 서울대교구",
+      "state_name": "본당인준정",
       "source_anchor": "Cast-Index.md#S15"
     },
     {
@@ -3948,7 +3948,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "비상배급원",
       "stage": "S1",
       "state_id": "S15",
-      "state_name": "천주교 서울대교구",
+      "state_name": "본당인준정",
       "source_anchor": "Cast-Index.md#S15"
     },
     {
@@ -3957,7 +3957,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "청과 상인회의 대표",
       "stage": "S1",
       "state_id": "S15",
-      "state_name": "천주교 서울대교구",
+      "state_name": "본당인준정",
       "source_anchor": "Cast-Index.md#S15"
     },
     {
@@ -3966,7 +3966,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "호송 입찰 조정",
       "stage": "S1",
       "state_id": "S15",
-      "state_name": "천주교 서울대교구",
+      "state_name": "본당인준정",
       "source_anchor": "Cast-Index.md#S15"
     },
     {
@@ -3975,7 +3975,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "경매대 저울 정비사, 은태호의 실무 담당자",
       "stage": "S2",
       "state_id": "S15",
-      "state_name": "천주교 서울대교구",
+      "state_name": "본당인준정",
       "source_anchor": "Cast-Index.md#S15"
     },
     {
@@ -3984,7 +3984,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "가락 도매 물류상",
       "stage": "S2",
       "state_id": "S15",
-      "state_name": "천주교 서울대교구",
+      "state_name": "본당인준정",
       "source_anchor": "Cast-Index.md#S15"
     },
     {
@@ -3993,7 +3993,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "잠실 집결 의무소 거점 의무원",
       "stage": "S2",
       "state_id": "S15",
-      "state_name": "천주교 서울대교구",
+      "state_name": "본당인준정",
       "source_anchor": "Cast-Index.md#S15"
     },
     {
@@ -4002,7 +4002,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "창고 경비 순찰대, 라진우의 실무 담당자",
       "stage": "S2",
       "state_id": "S15",
-      "state_name": "천주교 서울대교구",
+      "state_name": "본당인준정",
       "source_anchor": "Cast-Index.md#S15"
     },
     {
@@ -4011,7 +4011,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "호송 낙찰 전령, 문도윤의 실무 담당자",
       "stage": "S2",
       "state_id": "S15",
-      "state_name": "천주교 서울대교구",
+      "state_name": "본당인준정",
       "source_anchor": "Cast-Index.md#S15"
     },
     {
@@ -4020,7 +4020,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "동남 우회 저장고 탐사원",
       "stage": "S2",
       "state_id": "S15",
-      "state_name": "천주교 서울대교구",
+      "state_name": "본당인준정",
       "source_anchor": "Cast-Index.md#S15"
     },
     {
@@ -4029,7 +4029,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "경매·배급 원장 기록관, 은태호의 실무 담당자",
       "stage": "S2",
       "state_id": "S15",
-      "state_name": "천주교 서울대교구",
+      "state_name": "본당인준정",
       "source_anchor": "Cast-Index.md#S15"
     },
     {
@@ -4038,7 +4038,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "가락 대형 창고 기지 당직장, 라진우의 실무 담당자",
       "stage": "S2",
       "state_id": "S15",
-      "state_name": "천주교 서울대교구",
+      "state_name": "본당인준정",
       "source_anchor": "Cast-Index.md#S15"
     },
     {
@@ -4047,7 +4047,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "잠실역 대합실 거점장, 전나경의 실무 담당자",
       "stage": "S2",
       "state_id": "S15",
-      "state_name": "천주교 서울대교구",
+      "state_name": "본당인준정",
       "source_anchor": "Cast-Index.md#S15"
     },
     {
@@ -4056,7 +4056,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "청과동 시장 거점장, 남시윤의 실무 담당자",
       "stage": "S2",
       "state_id": "S15",
-      "state_name": "천주교 서울대교구",
+      "state_name": "본당인준정",
       "source_anchor": "Cast-Index.md#S15"
     },
     {
@@ -4065,7 +4065,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "동남 호송 기지 비상발전 운전장",
       "stage": "S2",
       "state_id": "S15",
-      "state_name": "천주교 서울대교구",
+      "state_name": "본당인준정",
       "source_anchor": "Cast-Index.md#S15"
     },
     {
@@ -4074,7 +4074,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "경매 유찰 사건 관계자",
       "stage": "S3",
       "state_id": "S15",
-      "state_name": "천주교 서울대교구",
+      "state_name": "본당인준정",
       "source_anchor": "Cast-Index.md#S15"
     },
     {
@@ -4083,7 +4083,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "냉동재고 유찰 관계자",
       "stage": "S3",
       "state_id": "S15",
-      "state_name": "천주교 서울대교구",
+      "state_name": "본당인준정",
       "source_anchor": "Cast-Index.md#S15"
     },
     {
@@ -4092,7 +4092,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "남하 피난 배급 인파 대표",
       "stage": "S3",
       "state_id": "S15",
-      "state_name": "천주교 서울대교구",
+      "state_name": "본당인준정",
       "source_anchor": "Cast-Index.md#S15"
     },
     {
@@ -4101,7 +4101,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "군량 징발 인파 대표",
       "stage": "S3",
       "state_id": "S15",
-      "state_name": "천주교 서울대교구",
+      "state_name": "본당인준정",
       "source_anchor": "Cast-Index.md#S15"
     },
     {
@@ -4110,7 +4110,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "식량 공동구매 협약 서명 서기",
       "stage": "S3",
       "state_id": "S15",
-      "state_name": "천주교 서울대교구",
+      "state_name": "본당인준정",
       "source_anchor": "Cast-Index.md#S15"
     },
     {
@@ -4119,7 +4119,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "공신 보상 경매 당사자",
       "stage": "S3",
       "state_id": "S15",
-      "state_name": "천주교 서울대교구",
+      "state_name": "본당인준정",
       "source_anchor": "Cast-Index.md#S15"
     },
     {
@@ -4128,7 +4128,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "호송 입찰 유찰 증인",
       "stage": "S3",
       "state_id": "S15",
-      "state_name": "천주교 서울대교구",
+      "state_name": "본당인준정",
       "source_anchor": "Cast-Index.md#S15"
     },
     {
@@ -4137,7 +4137,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "공개 경매 조정 보조",
       "stage": "S2",
       "state_id": "S15",
-      "state_name": "천주교 서울대교구",
+      "state_name": "본당인준정",
       "source_anchor": "Cast-Index.md#S15"
     },
     {
@@ -4146,7 +4146,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "계약감사관",
       "stage": "주요",
       "state_id": "S16",
-      "state_name": "전국민주노동조합총연맹",
+      "state_name": "정동노동총연맹",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4155,7 +4155,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "계약 서기",
       "stage": "S1",
       "state_id": "S16",
-      "state_name": "전국민주노동조합총연맹",
+      "state_name": "정동노동총연맹",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4164,7 +4164,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "감사 보조",
       "stage": "S1",
       "state_id": "S16",
-      "state_name": "전국민주노동조합총연맹",
+      "state_name": "정동노동총연맹",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4173,7 +4173,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "협약 중재인",
       "stage": "S1",
       "state_id": "S16",
-      "state_name": "전국민주노동조합총연맹",
+      "state_name": "정동노동총연맹",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4182,7 +4182,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "기술기업 추천위원 서기",
       "stage": "S1",
       "state_id": "S16",
-      "state_name": "전국민주노동조합총연맹",
+      "state_name": "정동노동총연맹",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4191,7 +4191,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "시민추첨회의 서기",
       "stage": "S1",
       "state_id": "S16",
-      "state_name": "전국민주노동조합총연맹",
+      "state_name": "정동노동총연맹",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4200,7 +4200,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "수서 기지 정비사, 은보람의 실무 담당자",
       "stage": "S2",
       "state_id": "S16",
-      "state_name": "전국민주노동조합총연맹",
+      "state_name": "정동노동총연맹",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4209,7 +4209,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "강남 계약서 시장 물류상, 하서진의 실무 담당자",
       "stage": "S2",
       "state_id": "S16",
-      "state_name": "전국민주노동조합총연맹",
+      "state_name": "정동노동총연맹",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4218,7 +4218,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "협약 회의 의무소 거점 의무원",
       "stage": "S2",
       "state_id": "S16",
-      "state_name": "전국민주노동조합총연맹",
+      "state_name": "정동노동총연맹",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4227,7 +4227,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "남부 외곽 순찰대",
       "stage": "S2",
       "state_id": "S16",
-      "state_name": "전국민주노동조합총연맹",
+      "state_name": "정동노동총연맹",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4236,7 +4236,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "이중 의회 전령, 안태경의 실무 담당자",
       "stage": "S2",
       "state_id": "S16",
-      "state_name": "전국민주노동조합총연맹",
+      "state_name": "정동노동총연맹",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4245,7 +4245,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "수서 외곽 탐사원",
       "stage": "S2",
       "state_id": "S16",
-      "state_name": "전국민주노동조합총연맹",
+      "state_name": "정동노동총연맹",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4254,7 +4254,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "손실보상 감사 기록관, 곽은재의 실무 담당자",
       "stage": "S2",
       "state_id": "S16",
-      "state_name": "전국민주노동조합총연맹",
+      "state_name": "정동노동총연맹",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4263,7 +4263,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "수서역 대합실 거점장",
       "stage": "S2",
       "state_id": "S16",
-      "state_name": "전국민주노동조합총연맹",
+      "state_name": "정동노동총연맹",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4272,7 +4272,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "지하시설 방어조 거점장",
       "stage": "S2",
       "state_id": "S16",
-      "state_name": "전국민주노동조합총연맹",
+      "state_name": "정동노동총연맹",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4281,7 +4281,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "수서 차량기지 당직장",
       "stage": "S2",
       "state_id": "S16",
-      "state_name": "전국민주노동조합총연맹",
+      "state_name": "정동노동총연맹",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4290,7 +4290,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "서고·의회 비상발전 운전장",
       "stage": "S2",
       "state_id": "S16",
-      "state_name": "전국민주노동조합총연맹",
+      "state_name": "정동노동총연맹",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4299,7 +4299,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "약소국 공동교섭 서명 서기",
       "stage": "S3",
       "state_id": "S16",
-      "state_name": "전국민주노동조합총연맹",
+      "state_name": "정동노동총연맹",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4308,7 +4308,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "급수계약 감사 보조",
       "stage": "S3",
       "state_id": "S16",
-      "state_name": "전국민주노동조합총연맹",
+      "state_name": "정동노동총연맹",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4317,7 +4317,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "다섯 통일안 초안 관계자",
       "stage": "S3",
       "state_id": "S16",
-      "state_name": "전국민주노동조합총연맹",
+      "state_name": "정동노동총연맹",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4326,7 +4326,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "둘째 급수협약 서명 증인",
       "stage": "S3",
       "state_id": "S16",
-      "state_name": "전국민주노동조합총연맹",
+      "state_name": "정동노동총연맹",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4335,7 +4335,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "열여섯 깃발 인준 감사 보조",
       "stage": "S3",
       "state_id": "S16",
-      "state_name": "전국민주노동조합총연맹",
+      "state_name": "정동노동총연맹",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4344,7 +4344,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "패권전 개막 징발 피난 인파 대표",
       "stage": "S3",
       "state_id": "S16",
-      "state_name": "전국민주노동조합총연맹",
+      "state_name": "정동노동총연맹",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4353,7 +4353,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "검은 배차 열차 조사 증인",
       "stage": "S3",
       "state_id": "S16",
-      "state_name": "전국민주노동조합총연맹",
+      "state_name": "정동노동총연맹",
       "source_anchor": "Cast-Index.md#S16"
     },
     {
@@ -4362,7 +4362,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       "role": "계약 감사 서기",
       "stage": "S2",
       "state_id": "S16",
-      "state_name": "전국민주노동조합총연맹",
+      "state_name": "정동노동총연맹",
       "source_anchor": "Cast-Index.md#S16"
     }
   ],
@@ -8667,7 +8667,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "summary": "광화문 청사가 위조 혈연 증서를 가려내고 아차산 관문이 봉인 키를 나눈다"
         }
       ],
-      "prose": "임진 제방 아래 임시 검역소에서 대한불교조계종 안내원이 귀환 명부를 손전등 빛에 비춘다.\n\n삼성그룹 호송은 관문 밖 진흙길에 바퀴를 적시고, 신내 환승 창구는 가족 대기열만 먼저 연다.\n\n광화문 대한민국정부 주사가 위조 혈연 증서의 잉크 번짐을 짚고, 아차산 관문 초소는 봉인 키를 두 조각으로 나눈다.\n\n어느 쪽도 북녘 정권을 단죄하지 않고, 통행과 명부만 지킨다.",
+      "prose": "임진 제방 아래 임시 검역소에서 승가구휼정 안내원이 귀환 명부를 손전등 빛에 비춘다.\n\n서초전산그룹 호송은 관문 밖 진흙길에 바퀴를 적시고, 신내 환승 창구는 가족 대기열만 먼저 연다.\n\n광화문 대한민국정부 주사가 위조 혈연 증서의 잉크 번짐을 짚고, 아차산 관문 초소는 봉인 키를 두 조각으로 나눈다.\n\n어느 쪽도 북녘 정권을 단죄하지 않고, 통행과 명부만 지킨다.",
       "seoul_route": {
         "evidence_kind": "verified-geography-plus-original-fiction",
         "verified_geography": "임진강·한강 합류와 북부 환승·피난 회랑이라는 공개 지형 앵커만 사용한다.",
@@ -8677,7 +8677,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "구의의 이중 봉인 창구",
           "임진 제방 아래의 임시 검역소"
         ],
-        "route_design": "서울 쪽 이동은 안국·광화문에서 명부를 대조하고 신내에서 가족 대기열과 호송을 갈라 태운 뒤 구의의 이중 봉인을 거쳐 임진 제방 검역소로 닿는다. 삼성그룹의 강남 호송은 준비와 합류의 역할만 가지며 별도의 직선 지리 노드로 확정하지 않는다.",
+        "route_design": "서울 쪽 이동은 안국·광화문에서 명부를 대조하고 신내에서 가족 대기열과 호송을 갈라 태운 뒤 구의의 이중 봉인을 거쳐 임진 제방 검역소로 닿는다. 서초전산그룹의 강남 호송은 준비와 합류의 역할만 가지며 별도의 직선 지리 노드로 확정하지 않는다.",
         "outbound_boundary": "임진 제방 검역소 바깥의 다음 경유지와 실제 경계 통과 방식은 정하지 않는다.",
         "fixed_duration": "정하지 않는다. 이동 비용과 개방 여부는 수위, 검역 대기, 통행권, 피난 행렬 상태로 판정한다."
       },
@@ -8903,7 +8903,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "summary": "노량진 얼음 신용이 흔들릴 때 상암 송신이 경매 방송만 중계한다"
         }
       ],
-      "prose": "한강 하구 임시 부두에서 급수계약정 수문 당직이 조위표와 배수 밸브를 맞춘다.\n\n규격동맹 이사는 냉동 압축기 소음을 듣고 부품 순번을 바꾸고, 현대자동차주식회사 대리가 봉인 해시가 깨진 상자만 따로 둔다.\n\n원불교 교무는 전력 경고등이 켜져도 한강 남안 냉동 순번을 지우지 않는다.\n\n전국경제인연합회는 가격 구호 대신 부두 안전 회람만 돌린다.",
+      "prose": "한강 하구 임시 부두에서 급수계약정 수문 당직이 조위표와 배수 밸브를 맞춘다.\n\n규격동맹 이사는 냉동 압축기 소음을 듣고 부품 순번을 바꾸고, 양재기공주식회사 대리가 봉인 해시가 깨진 상자만 따로 둔다.\n\n원불교 교무는 전력 경고등이 켜져도 한강 남안 냉동 순번을 지우지 않는다.\n\n여의도출자연합회는 가격 구호 대신 부두 안전 회람만 돌린다.",
       "seoul_route": {
         "evidence_kind": "verified-geography-plus-original-fiction",
         "verified_geography": "서해 연안·한강 하구 물길과 강서·영등포 일대의 공개 시장·정수 위치만 사실 앵커로 둔다.",
@@ -9140,7 +9140,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "summary": "노량진 통역 창구가 용어 충돌을 기록한 뒤 비공개 연결표 없이도 협정을 유지한다"
         }
       ],
-      "prose": "선로후계정 환적 창구 앞에 세 갈래 중계 표지판이 빗물에 번진다.\n\n전국민주노동조합총연맹 지부장은 닫힌 항로 대신 내륙 회차 슬롯을 열고, 천주교 서울대교구 신부는 혼인·위령 인준 봉인을 붙인다.\n\n대한예수교장로회 집사는 밀봉 상자만 건네고 국경 이야기에 끼어들지 않는다.\n\n흑석 통역 창구는 외래어를 한국어 주석 옆에 적어, 비공개 연결표를 치워도 협정이 남게 한다.",
+      "prose": "선로후계정 환적 창구 앞에 세 갈래 중계 표지판이 빗물에 번진다.\n\n정동노동총연맹 지부장은 닫힌 항로 대신 내륙 회차 슬롯을 열고, 본당인준정 신부는 혼인·위령 인준 봉인을 붙인다.\n\n설교명부정 집사는 밀봉 상자만 건네고 국경 이야기에 끼어들지 않는다.\n\n흑석 통역 창구는 외래어를 한국어 주석 옆에 적어, 비공개 연결표를 치워도 협정이 남게 한다.",
       "seoul_route": {
         "evidence_kind": "verified-geography-plus-original-fiction",
         "verified_geography": "한반도와 일본 열도 사이 해상 거리 및 공개 항로의 일반 개념만 사실 앵커로 둔다.",
@@ -9379,7 +9379,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "summary": "아차산 관문이 광물 샘플 봉인을 검사한 뒤 위조 원산지 표를 폐기한다"
         }
       ],
-      "prose": "호위보호정 야적장에서 화차 중량 센서가 한 칸만 과하게 뛴다.\n\n중립호송시 호송원은 그 칸을 우회 슬롯에 넣고, 삼성그룹 대리가 동절 연료 드럼 순번을 다시 쓴다.\n\n의약중립맹 의무실은 동상에 걸린 귀환 노동자의 장갑을 말리고, 관문군정 중대장은 원산지 위조 표를 난로에 넣지 않고 증빙 봉투에 봉한다.\n\n누구의 정부도 단죄하지 않고 화차와 사람만 검수한다.",
+      "prose": "호위보호정 야적장에서 화차 중량 센서가 한 칸만 과하게 뛴다.\n\n중립호송시 호송원은 그 칸을 우회 슬롯에 넣고, 서초전산그룹 대리가 동절 연료 드럼 순번을 다시 쓴다.\n\n의약중립맹 의무실은 동상에 걸린 귀환 노동자의 장갑을 말리고, 관문군정 중대장은 원산지 위조 표를 난로에 넣지 않고 증빙 봉투에 봉한다.\n\n누구의 정부도 단죄하지 않고 화차와 사람만 검수한다.",
       "seoul_route": {
         "evidence_kind": "verified-geography-plus-original-fiction",
         "verified_geography": "대륙 철도와 극동 에너지 회랑의 지리 개념만 사실 앵커로 둔다.",
@@ -9624,7 +9624,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "summary": "마곡이 궤도 단말 오탐을 교정하고 가락이 이산가족 상담 창구를 연장한다"
         }
       ],
-      "prose": "전국경제인연합회 회관 옥상에서 잔여 대역 추첨 번호가 회람된다.\n\n급수계약정 수문 당직은 급수 펌프 가동 시각을 그 번호에 맞추고, 대한민국정부 주사가 인도 목록 해시를 시민 참관 칸에 붙인다.\n\n전국민주노동조합총연맹 지부장이 해외 송금 기록 상자만 실은 회차선을 열고, 현대자동차주식회사 대리가 궤도 단말의 오탐 경보를 끈다.\n\n명동 상담 창구는 밤이 깊어도 다국어 대기표를 버리지 않는다.",
+      "prose": "여의도출자연합회 회관 옥상에서 잔여 대역 추첨 번호가 회람된다.\n\n급수계약정 수문 당직은 급수 펌프 가동 시각을 그 번호에 맞추고, 대한민국정부 주사가 인도 목록 해시를 시민 참관 칸에 붙인다.\n\n정동노동총연맹 지부장이 해외 송금 기록 상자만 실은 회차선을 열고, 양재기공주식회사 대리가 궤도 단말의 오탐 경보를 끈다.\n\n명동 상담 창구는 밤이 깊어도 다국어 대기표를 버리지 않는다.",
       "seoul_route": {
         "evidence_kind": "verified-concept-plus-original-fiction",
         "verified_geography": "위성·인도·방재 협력의 일반 개념과 공개 국제기구 명칭 수준만 사실 앵커로 둔다.",
@@ -16189,7 +16189,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     {
       "id": "G03",
       "display_name": "유기견철군",
-      "bestiary": {"common_ecology":"S03 현대자동차주식회사 외벽 공터와 S08 원불교 야간 하역장을 오가는 유기견 소가족이다. 녹슨 목줄 고리와 인식표가 부딪히는 철편 소리가 이름이고, 단백질 잔여와 급식 팩, 밀폐 급수와 그늘이 밀도를 정한다. 가장 오래 산 중형 성체가 이동을 제안하지만 영구 우두머리는 없고 새끼 가족은 그 제안도 거부한다.","variant_relation":"빈고리부터 수레곁들개까지는 방치와 사회 학습이 만든 보통의 개다. 환승재결속핵은 한 마리의 독재자가 아니라 여러 가족 소리가 냉동 진입로에 겹친 국면이고, 해협하역개는 소금 바람에 맞춘 같은 종의 지역 갈래다. 찢긴 태그와 느린 선도는 사고와 노화이지 새로운 생물 계층이 아니다.","command_scope":"후각으로 체취·소독약·해동 냄새를 가르고 청각으로 철편과 엔진 공회전을 읽는다. H03 이도의 수동형 태그는 약 2미터 안에서만 읽히며 젖은 털과 금속 고리 때문에 빠지거나 두 번 센다. 선도의 침묵은 새 명령을 기다리지 않는다는 뜻이고, 기만 포획은 이후 구조 호출 전체를 죽인다."},
+      "bestiary": {"common_ecology":"S03 양재기공주식회사 외벽 공터와 S08 교헌필사정 야간 하역장을 오가는 유기견 소가족이다. 녹슨 목줄 고리와 인식표가 부딪히는 철편 소리가 이름이고, 단백질 잔여와 급식 팩, 밀폐 급수와 그늘이 밀도를 정한다. 가장 오래 산 중형 성체가 이동을 제안하지만 영구 우두머리는 없고 새끼 가족은 그 제안도 거부한다.","variant_relation":"빈고리부터 수레곁들개까지는 방치와 사회 학습이 만든 보통의 개다. 환승재결속핵은 한 마리의 독재자가 아니라 여러 가족 소리가 냉동 진입로에 겹친 국면이고, 해협하역개는 소금 바람에 맞춘 같은 종의 지역 갈래다. 찢긴 태그와 느린 선도는 사고와 노화이지 새로운 생물 계층이 아니다.","command_scope":"후각으로 체취·소독약·해동 냄새를 가르고 청각으로 철편과 엔진 공회전을 읽는다. H03 이도의 수동형 태그는 약 2미터 안에서만 읽히며 젖은 털과 금속 고리 때문에 빠지거나 두 번 센다. 선도의 침묵은 새 명령을 기다리지 않는다는 뜻이고, 기만 포획은 이후 구조 호출 전체를 죽인다."},
       "category": "animal-urban",
       "owner": "wiki-world",
       "source_kind": "original-fiction",
@@ -16203,7 +16203,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
         "Hostile-Ecology-Index.md"
       ],
       "modern_anxiety": "유기·방치된 개 무리와 철제 목줄·인식표 잔해가 환승 통로와 공터를 영역 표시하며 이동하는 불안",
-      "fictional_origin": "붕괴 후 사설 보호소·공사장 경비견·군중 대피 시 헤어진 개체들이 S03 현대자동차주식회사 외곽 공터와 S08 원불교 야간 하역장 사이에 합류해 유기견철군이 됐다.\n\n철제 목줄 고리와 부식 인식표가 서로 부딪히는 소리 때문에 ‘철군’ 호칭이 붙었다.\n\nUHF 목걸이 태그와 재결속 행동은 본 설정에서 창작한 요소이며 실재 보호소·기업 비난으로 쓰지 않는다.",
+      "fictional_origin": "붕괴 후 사설 보호소·공사장 경비견·군중 대피 시 헤어진 개체들이 S03 양재기공주식회사 외곽 공터와 S08 교헌필사정 야간 하역장 사이에 합류해 유기견철군이 됐다.\n\n철제 목줄 고리와 부식 인식표가 서로 부딪히는 소리 때문에 ‘철군’ 호칭이 붙었다.\n\nUHF 목걸이 태그와 재결속 행동은 본 설정에서 창작한 요소이며 실재 보호소·기업 비난으로 쓰지 않는다.",
       "territory_migration": "핵심 서식은 S03 연구소 외벽 공터와 폐쇄된 경비 통로이며, 계절·하역 주기에 따라 S08 수산·냉동 잔여물 축으로 이동한다.\n\nXT03 대한해협전구 쪽 물류 진동이 커지면 무리가 하역장 입구를 따라 확장하고, 인적 밀도가 높은 낮 시간에는 배수구·고가 하부로 숨는다.",
       "economy": "단백질 잔여·생선 내장·버려진 급식 팩이 주 자원이고, 목줄·철사·인식표 조각은 개체 식별과 과거 급식소 기억을 잇는 표식이다.\n\nHC03 마곡생명가가 폐기 단백질 밀봉을 강화하면 무리는 시장 골목으로 스며들고, 느슨히 하면 하역장 집중도가 올라 인명 접촉이 늘어난다.\n\n여과·소독한 뒤 재오염되지 않게 밀폐 저장한 급수와 그늘 휴식지가 밀도 상한이다.",
       "lifecycle": "단독 유랑 개체는 냄새와 인식표 소리로 과거 급식소 동료를 찾아 소가족을 만들고, 하역 잔여가 늘면 여러 가족이 느슨한 연합으로 재결속한다.\n\n급식 일정이 안정되면 번식보다 영역 방어가 늘며, 강제 포획 뒤에는 인식표가 남은 개체를 중심으로 다시 모인다.",
@@ -16302,13 +16302,13 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "dossier_ref": "G03"
         }
       ],
-      "dossier_prose": "유기견철군은 S03 현대자동차주식회사 외곽의 연구소 담장과 폐쇄된 경비 통로, 잡초가 덮인 공터를 중심으로 살아가는 개 무리다.\n\n밤이 되면 일부는 S08 원불교의 수산 하역장까지 내려가고, 낮에는 배수구와 고가 하부에 몸을 숨긴다.\n\n녹슨 목줄 고리와 부식된 인식표가 걸을 때마다 부딪혀 철편 소리를 내므로 철군이라는 이름이 붙었다.\n\n이 소리는 환승 통로에서 발소리보다 먼저 들려 시민에게 오래된 유기와 방치가 한꺼번에 되돌아오는 듯한 불안을 준다.\n\n그러나 이들은 하나의 공격 집단이 아니다.\n\n붕괴 뒤 문을 닫은 사설 보호소의 개체, 공사장 경비견 대피 군중 속에서 사람을 잃은 반려견이 먹이와 익숙한 냄새를 따라 합류한 느슨한 가족들의 연합이다.\n\nUHF 목걸이 태그와 그 태그를 매개로 한 재결속은 이 지역에서만 성립하는 허구적 질서이며, 현실의 특정 보호 시설이나 사업체에 책임을 돌리는 근거가 되지 않는다.\n\n핵심 영역은 S03 외벽 공터지만 고정된 경계는 없다.\n\n생선 내장과 냉동 잔여가 많아지는 시기에는 S08의 야간 하역 축으로 이동하고, XT03 대한해협전구에서 오는 물류 진동이 커지면 냉동. 진입로와 하역장 입구까지 영역을 넓힌고 반대로 낮의 인파가 짙어지면 시장 뒤편 배수구나 고가 아래로 물러난다.\n\n단백질 잔여, 버려진 급식 팩 오염되지 않은 물과 그늘이 무리의 밀도를 결정한다.\n\nHC03 마곡생명가가 폐기 단백질을 지나치게 단단히 봉하면 굶주린 가족들이 시장 골목과 아동 통로로 흩어지고, 느슨하게 관리하면 하역장 한곳에 과밀해져 사람과의 접촉이 늘어난다.\n\n급수는 여과와 소독만으로 충분하지 않으며 재오염을 막는 밀폐 저장이 필요하다.\n\n먹이를 없애는 것과 안전을 만드는 것은 같은 일이 아니다.\n\n단독으로 떠돌던 개체는 체취와 철편 소리를 통해 과거 급식소에서 만난 동료를 찾고, 둘이나 셋의 소가족을 이룬다.\n\n하역 잔여가 풍부해지면 여러 가족이 같은 길을 쓰되 먹는 순서와 휴식 위치를 달리하는 연합으로 재결속한다.\n\n가장 오래 살아남은 중형 성체 한 마리와 그 곁의 성체 둘이 이동을 먼저 제안하지만 영구적인 우두머리나 명령 체계는 없다.\n\n새끼가 있는 가족은 별도 보호 권역을 지키며, 상황에 따라 선도 개체의 제안도 거부한다.\n\n급식 시간이 안정되면 번식이 폭발하기보다 영역 방어가 강해지고, 강제 포획으로 무리가 흩어지면 인식표가 남은 개체를 중심으로 다시 모인다.\n\n따라서 한 차례 해산시켰다는 보고는 장기 해결을 뜻하지 않는다.\n\n이들의 빠른 변화는 신체 변이보다 학습에서 나온다.\n\n사람의 손짓, 급식 수레의 바퀴음 차량의 공회전 소독약과 냉동 식품의 해동 냄새를 서로 구분하며 안전했던 사람과 위협했던 사람을 개별적으로 기억한다.\n\n어린 개체 가운데 사람을 멀리하는 성향이 오랜 세대에 걸쳐 남을 가능성은 있으나, 며칠 만에 통로를 바꾸거나 특정 차량을 따르는 행동은 가족 내 사회 학습으로 보아야 한다.\n\n후각은 체취와 부패 정도를 읽고, 청각은 익숙한 목줄 소리와 엔진음을 분리한다.\n\nH03 이도는 약 2미터 안에서 수동형 UHF RFID 태그를 읽을 수 있지만 젖은 털, 금속 고리 태그 방향 때문에 같은 개체를 두 번 세거나 아예 놓친다.\n\n전자 기록은 과거 등록의 단서일 뿐 현재 가족 관계의 증명이 아니며, 외형과 행동 동행 관계를 사람이 다시 대조해야 한다.\n\n위험은 개체 수보다 신뢰가 무너지는 방식에 따라 세 단계로 커진다.\n\n처음에는 특정 인식표와 급식차에만 반응하며 공터 가장자리를 지킨다.\n\n다음에는 익숙한 엔진음과 하역 잔여가 여러 가족을 한 통로로 모아 호송 카트를 따라붙게 한다.\n\n마지막으로 급식 중단이나 기만 포획이 벌어지면 가족별로 흩어져 시장 입구, 환승 계단 냉동고 진입로를 동시에 점유한다.\n\n이때 총격이나 일괄 포획은 흩어진 개체를 더 넓은 생활권으로 밀어낼 뿐이다.\n\n차단 펜스, 급식 우회 지점 소음 감소 새끼 보호 구역의 시각 표지가 우선이며 포획은 부상 개체나 실제 공격을 주도한 개체에 한정해야 한다.\n\n성공은 제거 수가 아니라 시민 교상 0건, 하역 지연 시간의 감소 가족 재결속 비율로 판단한다.\n\nG03-SC1 ‘녹슨 이름표’는 H03가 하역장 가장자리에서 서로 다른 보호소 코드가 남은 태그 세 개를 불완전하게 읽으면서 시작된다.\n\nS03와 HC03은 기록 대조가 끝날 때까지 하역을 늦출 수 있고, 급식 수레로 가족을 나누어 확인할 수도 있으며 과거 코드보다 현재 함께 자. 새끼를 돌보는 관계를 먼저 등록할 수도 있다.\n\n첫 선택은 오판을 줄이지만 식품 하역을 지연시킨다.\n\n두 번째는 빠르지만 수레를 따라오지 못한 새끼를 가족에게서 떼어 놓을 수 있다.\n\n세 번째는 무리를 가장 안정적으로 만들지만 뒤늦게 나타난 옛 보호자의 반환 청구와 충돌한다.\n\n여기서 결정해야 하는 것은 데이터의 정확성만이 아니다.\n\n과거의 소유 기록과 붕괴 뒤 스스로 형성한 동물 가족 가운데 어느 관계에 더 큰 권리를 부여할지가 핵심이다.\n\nG03-SC2 ‘급식차를 기억하는 무리’에서는 폐쇄된 경비 통로에 옛 급식차의 엔진음이 울리자 S03와 S08에 흩어졌던 가족들이 하역로로 모인다.\n\n원래 운전자를 찾아 통로를 비우게 하면 즉시 효과를 얻지만 한 사람의 부재가 전체 합의를 무너뜨리는 취약성이 남는다.\n\n새 운전자를 냄새와 급식 절차에 단계적으로 익숙하게 하면 여러 날 동안 하역량을 줄여야 하나 장기적으로는 의존을 분산할 수 있다.\n\n엔진음 없는 이동식 급식소를 도입하면 기존 신뢰 신호를 훼손하지 않지만, 매일 위치를 바꿀 인력과 냉장 설비가 필요하다.\n\n특정 사람을 잃은 개체는 먹이를 거부하거나 공격성이 높아질 수 있으므로, 즉각적인 통행 회복보다 신뢰가 한 사람에게 집중되지 않는 구조를 만드는 것이 중요하다.\n\nG03-SC3 ‘환승 계단의 재결속’은 XT03의 물류 진동과 급식 중단이 겹쳐 여러 가족이 냉동.\n\n진입로를 둘러싸는 상황이다.\n\n가족별 급식 구역을 열면 분산 재결속망을 해치지 않고 통로를 나눌 수 있지만 배급 인력과 밀폐 저장분이 오래 소모된다.\n\n부상 개체만 비살상 포획하면 신뢰 손상은 제한되나 통행 회복이 느리다.\n\n야간 하역을 다른 냉동고로 옮기면 동물의 사회적 기억은 보존되지만 S08 상인의 운송 거리와 냉동 비용이 증가한다.\n\nHC03 중재자는 급식 시각, 통로 개방 창 포획 상한을 묶어 거래하. 과거 보호자의 냄새 표식과 익숙한 수레를 함께 제시해야 합의를 유지할 수 있다.\n\n인식표 데이터는 실종 가족이나 보호자를 찾는 데만 쓰며 처벌 장부나 투기 자산으로 전환해서는 안 된다.\n\n유기견철군과의 공존은 이들을 온순하다.\n\n믿는 데 있지 않고, 공격 가능성을 인정하면서도 신뢰를 소모품으로 다루지 않는 데 있다.\n\n철편 소리를 거짓 구조 신호로 쓰면 이후의 모든 구조 호출이 무력해지고, 급식을 끊으면 위험은 사라지는 대신 더 약한 시민이 다니는 골목으로 이동한다.\n\n전멸은 단기적으로 환승로를 비울 수 있으나 보호 윤리와 시민 제보망을 함께 붕괴시킨다.\n\n영역 표시는 무조건 지우기보다 우회선과 함께 남겨 서로의 통행 규칙으로 활용할 수 있다.\n\n사람의 통행권을 확보한다는 이유로 동물의 현재 가족과 기억을 삭제할 수 있는지, 또는 추가 비용과 불편을 감수하며 경계를 다시 나눌지는 끝내 인간이 부담해야 할 선택이다.\n\n유기견철군을 오래 돌보는 책임은 S03의 외곽 관리와 S08의 잔여물 통제, HC03의 급수·진료를 한 장부에 묶되 특정 급식자 한 사람에게 신뢰가 몰리지 않게 하는 데 있다.\n\n계절마다 가족별 잠자리와 새끼 생존 여부, 동일 개체의 중복 판독률 밀폐 급수통의 세균 재검출 하역로 체류 시간(분) 시민 교상과 추격 신. 부상 개체가 치료 뒤 원래 동행군에 합류한 비율을 함께 기록해야 한다.\n\n단순 개체 수 감소는 골목으로 밀려난 가족을 누락하므로 안정 지표가 될 수 없다.\n\n기만 포획이나 갑작스러운 급식 중단으로 신뢰망이 무너지면 사용했던 엔진음과 수레는 일정 기간 퇴역시키고, 서로 다른 냄새와 보행 습관을 지닌 관리자를 짝지어 먼 거리 급수부터 다시 익숙하게 해야 한다.\n\n회복 여부는 먹이를 받아먹는 순간이 아니라 새끼를 남겨 둔 채 성체가 통로 밖으로 나오는지, 구조 인력이 접근해도 가족이 사방으로 분산되지 않는지로 판정한다.\n\n폐사나 실종 뒤에는 남은 인식표만 따라 재편을 강요하지 않고 며칠간 야간 동행 관계를 관찰해 새 가족 경계를 다시 그린다.\n\n한편 이동 시간과 급식 위치가 지나치게 정밀하게 공개되면 절도 집단이 개들의 집결을 냉동. 작업 시간표로 읽어 빈 창고와 우회로를 찾아낼 수 있다.\n\n따라서 위치 기록은 구조와 방역에 필요한 범위로 지연 공유하고, 시장 경비는 동물의 규칙성을 감시 장치처럼 소비하지 않아야 한다.\n\n그래야 철편 소리가 안전의 약속으로 남고 또 다른 착취의 신호가 되지 않는다.",
+      "dossier_prose": "유기견철군은 S03 양재기공주식회사 외곽의 연구소 담장과 폐쇄된 경비 통로, 잡초가 덮인 공터를 중심으로 살아가는 개 무리다.\n\n밤이 되면 일부는 S08 교헌필사정의 수산 하역장까지 내려가고, 낮에는 배수구와 고가 하부에 몸을 숨긴다.\n\n녹슨 목줄 고리와 부식된 인식표가 걸을 때마다 부딪혀 철편 소리를 내므로 철군이라는 이름이 붙었다.\n\n이 소리는 환승 통로에서 발소리보다 먼저 들려 시민에게 오래된 유기와 방치가 한꺼번에 되돌아오는 듯한 불안을 준다.\n\n그러나 이들은 하나의 공격 집단이 아니다.\n\n붕괴 뒤 문을 닫은 사설 보호소의 개체, 공사장 경비견 대피 군중 속에서 사람을 잃은 반려견이 먹이와 익숙한 냄새를 따라 합류한 느슨한 가족들의 연합이다.\n\nUHF 목걸이 태그와 그 태그를 매개로 한 재결속은 이 지역에서만 성립하는 허구적 질서이며, 현실의 특정 보호 시설이나 사업체에 책임을 돌리는 근거가 되지 않는다.\n\n핵심 영역은 S03 외벽 공터지만 고정된 경계는 없다.\n\n생선 내장과 냉동 잔여가 많아지는 시기에는 S08의 야간 하역 축으로 이동하고, XT03 대한해협전구에서 오는 물류 진동이 커지면 냉동. 진입로와 하역장 입구까지 영역을 넓힌고 반대로 낮의 인파가 짙어지면 시장 뒤편 배수구나 고가 아래로 물러난다.\n\n단백질 잔여, 버려진 급식 팩 오염되지 않은 물과 그늘이 무리의 밀도를 결정한다.\n\nHC03 마곡생명가가 폐기 단백질을 지나치게 단단히 봉하면 굶주린 가족들이 시장 골목과 아동 통로로 흩어지고, 느슨하게 관리하면 하역장 한곳에 과밀해져 사람과의 접촉이 늘어난다.\n\n급수는 여과와 소독만으로 충분하지 않으며 재오염을 막는 밀폐 저장이 필요하다.\n\n먹이를 없애는 것과 안전을 만드는 것은 같은 일이 아니다.\n\n단독으로 떠돌던 개체는 체취와 철편 소리를 통해 과거 급식소에서 만난 동료를 찾고, 둘이나 셋의 소가족을 이룬다.\n\n하역 잔여가 풍부해지면 여러 가족이 같은 길을 쓰되 먹는 순서와 휴식 위치를 달리하는 연합으로 재결속한다.\n\n가장 오래 살아남은 중형 성체 한 마리와 그 곁의 성체 둘이 이동을 먼저 제안하지만 영구적인 우두머리나 명령 체계는 없다.\n\n새끼가 있는 가족은 별도 보호 권역을 지키며, 상황에 따라 선도 개체의 제안도 거부한다.\n\n급식 시간이 안정되면 번식이 폭발하기보다 영역 방어가 강해지고, 강제 포획으로 무리가 흩어지면 인식표가 남은 개체를 중심으로 다시 모인다.\n\n따라서 한 차례 해산시켰다는 보고는 장기 해결을 뜻하지 않는다.\n\n이들의 빠른 변화는 신체 변이보다 학습에서 나온다.\n\n사람의 손짓, 급식 수레의 바퀴음 차량의 공회전 소독약과 냉동 식품의 해동 냄새를 서로 구분하며 안전했던 사람과 위협했던 사람을 개별적으로 기억한다.\n\n어린 개체 가운데 사람을 멀리하는 성향이 오랜 세대에 걸쳐 남을 가능성은 있으나, 며칠 만에 통로를 바꾸거나 특정 차량을 따르는 행동은 가족 내 사회 학습으로 보아야 한다.\n\n후각은 체취와 부패 정도를 읽고, 청각은 익숙한 목줄 소리와 엔진음을 분리한다.\n\nH03 이도는 약 2미터 안에서 수동형 UHF RFID 태그를 읽을 수 있지만 젖은 털, 금속 고리 태그 방향 때문에 같은 개체를 두 번 세거나 아예 놓친다.\n\n전자 기록은 과거 등록의 단서일 뿐 현재 가족 관계의 증명이 아니며, 외형과 행동 동행 관계를 사람이 다시 대조해야 한다.\n\n위험은 개체 수보다 신뢰가 무너지는 방식에 따라 세 단계로 커진다.\n\n처음에는 특정 인식표와 급식차에만 반응하며 공터 가장자리를 지킨다.\n\n다음에는 익숙한 엔진음과 하역 잔여가 여러 가족을 한 통로로 모아 호송 카트를 따라붙게 한다.\n\n마지막으로 급식 중단이나 기만 포획이 벌어지면 가족별로 흩어져 시장 입구, 환승 계단 냉동고 진입로를 동시에 점유한다.\n\n이때 총격이나 일괄 포획은 흩어진 개체를 더 넓은 생활권으로 밀어낼 뿐이다.\n\n차단 펜스, 급식 우회 지점 소음 감소 새끼 보호 구역의 시각 표지가 우선이며 포획은 부상 개체나 실제 공격을 주도한 개체에 한정해야 한다.\n\n성공은 제거 수가 아니라 시민 교상 0건, 하역 지연 시간의 감소 가족 재결속 비율로 판단한다.\n\nG03-SC1 ‘녹슨 이름표’는 H03가 하역장 가장자리에서 서로 다른 보호소 코드가 남은 태그 세 개를 불완전하게 읽으면서 시작된다.\n\nS03와 HC03은 기록 대조가 끝날 때까지 하역을 늦출 수 있고, 급식 수레로 가족을 나누어 확인할 수도 있으며 과거 코드보다 현재 함께 자. 새끼를 돌보는 관계를 먼저 등록할 수도 있다.\n\n첫 선택은 오판을 줄이지만 식품 하역을 지연시킨다.\n\n두 번째는 빠르지만 수레를 따라오지 못한 새끼를 가족에게서 떼어 놓을 수 있다.\n\n세 번째는 무리를 가장 안정적으로 만들지만 뒤늦게 나타난 옛 보호자의 반환 청구와 충돌한다.\n\n여기서 결정해야 하는 것은 데이터의 정확성만이 아니다.\n\n과거의 소유 기록과 붕괴 뒤 스스로 형성한 동물 가족 가운데 어느 관계에 더 큰 권리를 부여할지가 핵심이다.\n\nG03-SC2 ‘급식차를 기억하는 무리’에서는 폐쇄된 경비 통로에 옛 급식차의 엔진음이 울리자 S03와 S08에 흩어졌던 가족들이 하역로로 모인다.\n\n원래 운전자를 찾아 통로를 비우게 하면 즉시 효과를 얻지만 한 사람의 부재가 전체 합의를 무너뜨리는 취약성이 남는다.\n\n새 운전자를 냄새와 급식 절차에 단계적으로 익숙하게 하면 여러 날 동안 하역량을 줄여야 하나 장기적으로는 의존을 분산할 수 있다.\n\n엔진음 없는 이동식 급식소를 도입하면 기존 신뢰 신호를 훼손하지 않지만, 매일 위치를 바꿀 인력과 냉장 설비가 필요하다.\n\n특정 사람을 잃은 개체는 먹이를 거부하거나 공격성이 높아질 수 있으므로, 즉각적인 통행 회복보다 신뢰가 한 사람에게 집중되지 않는 구조를 만드는 것이 중요하다.\n\nG03-SC3 ‘환승 계단의 재결속’은 XT03의 물류 진동과 급식 중단이 겹쳐 여러 가족이 냉동.\n\n진입로를 둘러싸는 상황이다.\n\n가족별 급식 구역을 열면 분산 재결속망을 해치지 않고 통로를 나눌 수 있지만 배급 인력과 밀폐 저장분이 오래 소모된다.\n\n부상 개체만 비살상 포획하면 신뢰 손상은 제한되나 통행 회복이 느리다.\n\n야간 하역을 다른 냉동고로 옮기면 동물의 사회적 기억은 보존되지만 S08 상인의 운송 거리와 냉동 비용이 증가한다.\n\nHC03 중재자는 급식 시각, 통로 개방 창 포획 상한을 묶어 거래하. 과거 보호자의 냄새 표식과 익숙한 수레를 함께 제시해야 합의를 유지할 수 있다.\n\n인식표 데이터는 실종 가족이나 보호자를 찾는 데만 쓰며 처벌 장부나 투기 자산으로 전환해서는 안 된다.\n\n유기견철군과의 공존은 이들을 온순하다.\n\n믿는 데 있지 않고, 공격 가능성을 인정하면서도 신뢰를 소모품으로 다루지 않는 데 있다.\n\n철편 소리를 거짓 구조 신호로 쓰면 이후의 모든 구조 호출이 무력해지고, 급식을 끊으면 위험은 사라지는 대신 더 약한 시민이 다니는 골목으로 이동한다.\n\n전멸은 단기적으로 환승로를 비울 수 있으나 보호 윤리와 시민 제보망을 함께 붕괴시킨다.\n\n영역 표시는 무조건 지우기보다 우회선과 함께 남겨 서로의 통행 규칙으로 활용할 수 있다.\n\n사람의 통행권을 확보한다는 이유로 동물의 현재 가족과 기억을 삭제할 수 있는지, 또는 추가 비용과 불편을 감수하며 경계를 다시 나눌지는 끝내 인간이 부담해야 할 선택이다.\n\n유기견철군을 오래 돌보는 책임은 S03의 외곽 관리와 S08의 잔여물 통제, HC03의 급수·진료를 한 장부에 묶되 특정 급식자 한 사람에게 신뢰가 몰리지 않게 하는 데 있다.\n\n계절마다 가족별 잠자리와 새끼 생존 여부, 동일 개체의 중복 판독률 밀폐 급수통의 세균 재검출 하역로 체류 시간(분) 시민 교상과 추격 신. 부상 개체가 치료 뒤 원래 동행군에 합류한 비율을 함께 기록해야 한다.\n\n단순 개체 수 감소는 골목으로 밀려난 가족을 누락하므로 안정 지표가 될 수 없다.\n\n기만 포획이나 갑작스러운 급식 중단으로 신뢰망이 무너지면 사용했던 엔진음과 수레는 일정 기간 퇴역시키고, 서로 다른 냄새와 보행 습관을 지닌 관리자를 짝지어 먼 거리 급수부터 다시 익숙하게 해야 한다.\n\n회복 여부는 먹이를 받아먹는 순간이 아니라 새끼를 남겨 둔 채 성체가 통로 밖으로 나오는지, 구조 인력이 접근해도 가족이 사방으로 분산되지 않는지로 판정한다.\n\n폐사나 실종 뒤에는 남은 인식표만 따라 재편을 강요하지 않고 며칠간 야간 동행 관계를 관찰해 새 가족 경계를 다시 그린다.\n\n한편 이동 시간과 급식 위치가 지나치게 정밀하게 공개되면 절도 집단이 개들의 집결을 냉동. 작업 시간표로 읽어 빈 창고와 우회로를 찾아낼 수 있다.\n\n따라서 위치 기록은 구조와 방역에 필요한 범위로 지연 공유하고, 시장 경비는 동물의 규칙성을 감시 장치처럼 소비하지 않아야 한다.\n\n그래야 철편 소리가 안전의 약속으로 남고 또 다른 착취의 신호가 되지 않는다.",
       "prose": "마곡 외벽 공터에서 유기견철군 컨트롤러가 녹슨 인식표를 발에 걸고 하역 바람 냄새를 맡는다.\n\nHC03 마곡생명가 중재자는 총구 대신 급식 우회 수레와 새끼 구역 깃발을 세우고, H03 이도는 철편 충돌음과 엔진 공회전을 갈라 유랑 단위만 따로 표시한다.\n\nS08 야간 하역이 늦어지면 통로 한쪽을 비워 주고, XT03 물류 진동이 커진 날에는 그늘 터널만 연장한 채 학살 명령을 적지 않는다.\n\n영역 소변 자국은 지우는 대신 우회 화살표 옆에 남겨 통행 규칙을 가르친다."
     },
     {
       "id": "G04",
       "display_name": "하수너구리족",
-      "bestiary": {"common_ecology":"S04 대한예수교장로회 펌프장 연결 관로와 공방 하부 대피공, S09 전국경제인연합회 케이블 갤러리를 오가는 너구리 가족군이다. 낮에는 맨홀 아래, 밤에는 출구 약 50미터 골목을 돌며 수생 먹이와 쓰레기, 사체와 미생물막을 먹는다. 연장자 암컷은 새끼 이동과 좁은 통과에서만 우선권을 갖고 전투 지휘는 없다.","variant_relation":"관로순회부터 관로잔뼈까지는 도시 하천에 적응한 보통의 너구리다. 펌프보다 먼저 높은 환기실로 오르는 일은 침수 기억을 나눈 가족 학습이지 초능력이 아니며, 마른대피공과 케이블 트레이는 동물이 채운 은신처이지 기계 거점이 아니다. 이 배치에는 돌연변이 개체가 없고, 빠진 E13부터 E16은 제외된 배치의 몫이다.","command_scope":"수염으로 물살과 틈의 공기 흐름을 읽고 발과 몸으로 펌프 기동 전 압력 변화를 느낀다. 관이 가득 차거나 공기층이 끊기면 같은 감각이 먹통이 되고, 공식 센서보다 앞서는 이동도 언제나 맞지는 않는다. H04 강별의 로봇이 열원을 한 군락으로 합산해도 배수 당직은 잠자리와 출입 시각으로 다시 쪼갠다."},
+      "bestiary": {"common_ecology":"S04 설교명부정 펌프장 연결 관로와 공방 하부 대피공, S09 여의도출자연합회 케이블 갤러리를 오가는 너구리 가족군이다. 낮에는 맨홀 아래, 밤에는 출구 약 50미터 골목을 돌며 수생 먹이와 쓰레기, 사체와 미생물막을 먹는다. 연장자 암컷은 새끼 이동과 좁은 통과에서만 우선권을 갖고 전투 지휘는 없다.","variant_relation":"관로순회부터 관로잔뼈까지는 도시 하천에 적응한 보통의 너구리다. 펌프보다 먼저 높은 환기실로 오르는 일은 침수 기억을 나눈 가족 학습이지 초능력이 아니며, 마른대피공과 케이블 트레이는 동물이 채운 은신처이지 기계 거점이 아니다. 이 배치에는 돌연변이 개체가 없고, 빠진 E13부터 E16은 제외된 배치의 몫이다.","command_scope":"수염으로 물살과 틈의 공기 흐름을 읽고 발과 몸으로 펌프 기동 전 압력 변화를 느낀다. 관이 가득 차거나 공기층이 끊기면 같은 감각이 먹통이 되고, 공식 센서보다 앞서는 이동도 언제나 맞지는 않는다. H04 강별의 로봇이 열원을 한 군락으로 합산해도 배수 당직은 잠자리와 출입 시각으로 다시 쪼갠다."},
       "category": "animal-urban",
       "owner": "wiki-world",
       "source_kind": "original-fiction",
@@ -16323,7 +16323,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
         "Hostile-Ecology-Index.md"
       ],
       "modern_anxiety": "빗물관·복개수로·지하 통로를 너구리 가족군이 점유해 야간에 지상으로 올라오는 하수·지하 출몰 불안",
-      "fictional_origin": "중랑·탄천·내부 빗물 간선이 붕괴 후 점검 주기 밖으로 밀려나자, 수생 먹이와 쓰레기·사체를 따라 이동하던 너구리 가족군이 S04 대한예수교장로회 펌프 옆 관로와 S09 전국경제인연합회 지하 케이블 갤러리에 정착해 하수너구리족이 됐다.\n\n현실 자료는 너구리의 도시·하천 출현 범위만 참고하며, 펌프보다 먼저 수위를 감지하는 규칙은 허구다.\n\n실재 지자체·기업 사고 귀속은 금지한다.",
+      "fictional_origin": "중랑·탄천·내부 빗물 간선이 붕괴 후 점검 주기 밖으로 밀려나자, 수생 먹이와 쓰레기·사체를 따라 이동하던 너구리 가족군이 S04 설교명부정 펌프 옆 관로와 S09 여의도출자연합회 지하 케이블 갤러리에 정착해 하수너구리족이 됐다.\n\n현실 자료는 너구리의 도시·하천 출현 범위만 참고하며, 펌프보다 먼저 수위를 감지하는 규칙은 허구다.\n\n실재 지자체·기업 사고 귀속은 금지한다.",
       "territory_migration": "핵심 서식은 S04 펌프장 연결 관로와 공방 하부의 건조 대피공이다.\n\n홍수위가 오르면 S09 송신 지하 갤러리와 환기구로 분산하고, XT04 두만강극동전구 방면 한파·물류 단절이 사료 밀도를 바꾸면 동부 지선으로 잠시 이동한다.\n\n낮에는 관로, 밤에는 지상 골목 50m 안을 순회한다.",
       "economy": "수생 먹이·유기 쓰레기·사체 잔여가 주 자원이고, 건조한 은신처와 낮은 유속이 유지 비용이다.\n\nHC04 뚝섬열원가이 관로 퇴적 준설을 건너뛰면 먹이막이 두꺼워져 밀도가 오르고, 과준설하면 가족군이 지상 시장으로 밀려 난다.\n\n배설물과 미생물막이 수질 센서 값을 가려 펌프 판단을 늦춘다.",
       "lifecycle": "건기에는 가족군마다 건조 은신처와 먹이터를 따로 쓰고, 강우 전에 수위가 먼저 오르는 간선에서 높은 환기실로 새끼를 옮긴다.\n\n홍수 뒤 먹이막이 두꺼워지면 여러 가족이 시간대를 나눠 같은 관로를 쓰며, 은신처가 연속 수몰되면 지상 골목으로 분산한다.",
@@ -16422,13 +16422,13 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "dossier_ref": "G04"
         }
       ],
-      "dossier_prose": "하수너구리족은 S04 대한예수교장로회의 펌프장 연결 관로와 공방 하부 건조 대피공, S09 전국경제인연합회의 지하 케이블 갤러리를 오가는 너구리 가족군이다.\n\n붕괴 뒤 중랑·탄천·내부 빗물 간선의 점검 주기가 끊기자 수생 먹이와 쓰레기, 사체 잔여를 따라 이동하던 개체들이 사람이 비운 관로에 정착했다.\n\n낮에는 맨홀 아래에 숨고 밤에는 출구에서 약 50미터 안의 골목을 순회한다.\n\n빗물관과 복개수로에서 젖은 털이 솟아오르는 광경은 하수가 생활권으로 역류한다는 불안을 자극하지만, 이들을 하나의 지하 군대로 보는 것은 잘못이다.\n\n현실과 맞닿는 부분은 도시 하천과 시설물 주변에 야생동물이 출현할 수 있다는 정도다.\n\n펌프보다 먼저 수위를 알아차리. 관로 운영에 영향을 주는 질서는 이 지역에 설정된 허구이며, 현실의 특정 기관이나 사업체 사고를 설명하지 않는다.\n\n핵심 서식지는 S04 펌프 옆의 낮은 유속 관로와 마른 대피공이다.\n\n비가 이어져 수위가 오르면 가족들은 높은 환기실로 새끼를 옮긴 뒤 S09의 송신 갤러리와 환기구로 분산한다.\n\nXT04 두만강극동전구 방면에서 한파와 물류 단절이 닥쳐 사료와 폐기물의 분포가 바뀌면 동부 지선으로 잠시 이동하고, 해빙 뒤에는 익숙한 관으로 돌아온다.\n\n수생 먹이, 유기 쓰레기 사체와 미생물막이 식량이 되며 건조한 은신처와 완만한 물살이 생존 비용을 낮춘다.\n\nHC04 뚝섬열원가이 퇴적 준설을 지나치게 미루면 먹이막이 두꺼워져 밀도가 오르고, 한꺼번에 긁어내면 가족군이 지상 시장으로 밀려난다.\n\n배설물과 미생물막은 수질 센서를 가려 펌프 판단까지 늦추므로, 단순히 먹이가 많다는 문제로 축소할 수 없다.\n\n하수너구리족에는 고정된 지휘자가 없다.\n\n건기에는 가족마다 먹이터와 건조 은신처를 따로 쓰고, 여러 가족이 같은 간선을 이용할 때는 시간대를 나눈다.\n\n연장자 암컷은 새끼 이동과 좁은 통과 지점에서 우선권을 가질 뿐 다른 가족에게 전투 명령을 내리지 않는다.\n\n홍수 뒤 먹이막이 두꺼워지면 서로 다른 가족이 한 관로를 교대로 쓰며, 은신처가 연속해서 잠기면 공유 규칙을 포기하. 지상 골목으로 흩어진다.\n\nH04 강별의 관로 로봇이 여러 열원과 움직임을 단일 군락으로 합산해도 HC04 배수 당직은 잠자리, 새끼 수 출입 시각을 기준으로 다시 나누어야 한다.\n\n가족군을 하나의 떼로 취급하면 이동로를 예측하기 쉬워지는 것이 아니라 서로 다른 피난 방향을 동시에 놓치게 된다.\n\n이들은 수염으로 물살과 좁은 틈의 공기 흐름을 읽고, 발과 몸에 전해지는 압력 변화를 통해 펌프 기동 전의 수위 상승을 감지한다.\n\n후각으로 먹이와 소독제, 부패한 사체를 구분하며 청각으로 펌프 진동과 사람의 장화 소리를 가른다.\n\n공식 센서보다 먼저 높은 곳으로 움직이는 경우가 있지만 언제나 정확한 것은 아니다.\n\n가족이 과거 침수 경험을 공유하고 안전한 준설 시간표를 익힌 결과일 수도 있기 때문이다.\n\n오랜 세대가 지나면 좁은 관에 유리한 작은 체구와 강한 야행성이 남을 수 있으나, 그런 적응은 지상 횡단 능력과 한파 저항을 떨어뜨린다.\n\n며칠 사이에 피난처를 바꾸는 행동은 유전적 변화가 아니라 가족 학습으로 구분해야 한다.\n\nH04의 로그는 너구리와 부유 잔해, 웅크린 사람을 혼동하므로 최종 판단에는 인간의 육안 확인이 필요하다.\n\n충돌은 압력 선행 신호에서 시작해 센서 불일치와 피난처 경합으로 커진다.\n\n첫 단계에서는 비가 오기 전 가족군이 높은 환기실로 이동해 비공식 경보 역할을 한다.\n\n두 번째 단계에서는 배설물과 미생물막 때문에 공식 수위계가 낮은 값을 내고, 점검 로봇과 가족군이 좁은 관에서 맞닥뜨린다.\n\n마지막 단계에서는 홍수나 한파로 마른 관이 하나만 남아 펌프 정비 인력과 여러 가족이 같은 공간을 요구한다.\n\n독먹이와 전면 수몰은 빠른 해결처럼 보이지만 사체 부패로 수질을 악화시키고 하류와 노동자를 함께 위험에 빠뜨린다.\n\n부분 차수, 센서 세척 대체 은신 관 제한된 야간 지상 통행이 우선이며 성과는 제거 수가 아니라 펌프 가동 회복 시간 센서 신뢰도 지상 교상 0건으로 측정한다.\n\nG04-SC1 ‘맨홀 아래의 선행지표’는 비가 오기 전인데도 가족군이 낮부터 새끼를 높은 환기실로 옮기면서 시작된다.\n\nS04와 HC04는 이 이동을 즉시 예비 경보로 채택할 수 있고, HP01 수문가의 현장 측정이 끝날 때까지 기다릴 수도 있으며 생태 신호와 계측값이 어긋날 때만 펌프를 예열할 수도 있다.\n\n첫 선택은 준비 시간을 벌지만 오탐으로 연료와 인력을 낭비했을 때 책임 소재가 남는다.\n\n두 번째는 근거가 명확한 대신 짧고 급한 유입에 늦을 수 있다.\n\n세 번째는 평상시 연료를 아끼지만 두 신호가 동시에 늦어지는 국지 호우를 놓칠 위험이 있다.\n\n너구리의 행동은 유용한 보조 자료가 될 수 있으나 처벌이나 살처분의 근거가 되어서는 안 된다.\n\n비공식 생태 신호에 공공 안전의 일부를 맡길 것인지가 이 선택의 부담이다.\n\nG04-SC2 ‘준설창의 두 가족’에서는 HC04가 잡은 야간 준설 시간이 두 가족의 교대 은신 시간과 겹친다.\n\n예정대로 장비를 넣으면 두 가족이 동시에 S04와 S09의 지상 시장으로 나오고, 케이블 통로와 배수로 양쪽에서 민원이 발생한다.\n\n준설을 두 구간으로 나누면 가족별 퇴로를 유지할 수 있으나 공사 완료가 늦어진다.\n\n비어 있는 건조 관을 대체 은신처로 열면 지상 출몰을 줄일 수 있지만 S09의 통신 케이블 여유 공간을 내주어야 한다.\n\n한 가족의 이용 시간대를 먹이와 안전 통로로 매입해 집중 준설하면 가장 빠르지만, 다른 가족이 지켜 온 시간 분할 규칙을 불공정하게 바꾼다.\n\n효율만 따지면 마지막 선택이 유리할 수 있으나, 한 번 무너진 공유 규칙은 이후 강우 때 더 큰 동시 출몰로 돌아온다.\n\nG04-SC3 ‘펌프실의 마른 통로’는 XT04 한파 속에서 세 가족이 유일하게 얼지 않은 펌프 접근로를 겹쳐 점유하는 단계다.\n\n난방되는 대체 은신 관을 제공하면 점검로를 비우. 가족을 분산할 수 있지만 전력 배급이 줄어 S09의 다른 시설이 추위를 감수해야 한다.\n\n펌프 점검을 미루면 당장의 충돌은 피하나 해빙이나 돌발 강우 때 침수 위험이 커진다.\n\n임시 외부 점검 발판을 설치하면 관로를 비우지 않. 정비할 수 있지만, 한파 속 설치 노동과 추락 위험을 작업조가 감당해야 한다.\n\nHC04는 준설 시간, 지상 통행 금지 시간 대체 관의 난방을 한 장부에서 조정한다.\n\n범람 직전의 마지막 수문 점검에서 S04는 상류 유입량을 늦추. 측구의 퇴적물을 걷어 내는 대신, 하수너구리족이 이용해 온 건조 통로와 먹이터의 연속성을 보전하는 방안을 받아들인다.\n\nS09는 오염원을 숨겨 온 임시 배출구를 폐쇄하. 수질 기록을 공동 장부에 공개하며, XT04는 경보망과 우회 수로를 연결해 급격한 수위 상승 때에도 대피로가 잠기지 않도록 조정한다.\n\nHC04는 부상 개체의 치료와 어린 개체의 이동을 맡되 무분별한 포획을 중단하고, H04는 야간 순찰대와 주민 대표를 묶어 통로 주변의 투기와 먹이 갈등을 줄인다.\n\n이에 따라 중앙 집수정은 인간 구역과 서식 구역을 가르는 장벽이 아니라 물, 폐기물 이동 시간을 나누어 쓰는 완충지대로 바뀐다.\n\n각 집단은 상대의 영역을 침범하지 않는 데 그치지 않. 정해진 시간대에 점검·청소·구조 업무를 교대하며, 피해가 발생하면 원인을 먼저 공동 조사한 뒤 부담을 유입 기여도와 복구 능력에 맞추어 분담하기로 한다.\n\n첫 비가 지나간 뒤에도 통로가 유지되고 역류가 멎자, 오래된 추방 명령은 철회된다.\n\n하수너구리족은 지하의 합법적 거주자로 인정받고 다섯 주체는 서로를 감시 대상이 아닌 같은 유역의 이웃으로 받아들인다.\n\n이 합의가 일회성 휴전에 머물지 않도록 이후의 관리는 계절별 공동 stewardship가 아니라 공동 돌봄 체계로 굳어진다.\n\nS04와 XT04는 매주 수위, 유속 용존산소 탁도 암모니아성 질소를 측정하. S09는 월별 불법 배출 흔적과 부유 폐기물 무게를 기록하며 HC04와 H04는 분기마다 개체 수 새끼 생존율 피부·호흡기 이상 비율 통로 이용 횟수 주민 신고 건수와 대응 시간을 함께 공개한다.\n\n기준은 우기 역류 월 1회 이하, 주요 통로 가동률 95퍼센트 이상 부상 개체 비율 전년 대비 감소 긴급 신. 30분 이내 초동 대응으로 정한다.\n\n두 차례 연속 기준을 벗어나면 경보망이 자동으로 단계 상승하고, 임시 둑 설치와 오염원 차단 취약 개체 이동 독립 표본 재검사를 순서대로 시행한 뒤 원인 구간만 제한적으로 폐쇄한다.\n\n자료가 소실되거나 책임 주체가 이탈할 경우에는 종이 장부와 분산 관측자를 통해 기록을 복원하고, 다음 계절의 관리권 일부를 공동위원회에 맡겨 신뢰를 회복한다.\n\n예상 밖의 변화도 나타난다.\n\n악취와 쓰레기가 줄자 야간 곤충의 분포가 달라지. 이를 좇는 박쥐와 조류가 늘어 배수구 주변의 먹이망이 넓어지며, 안전해진 산책로에는 늦은 시간의 주민 활동이 증가한다.\n\n그 결과 생태 회복이 새로운 소음과 조명 압력으로 되돌아올 수 있으므로 조도 상한, 저소음 시간대 계절별 우회 구간까지 지표에 포함하며 공존의 범위를 계속 수정해 나간다.",
+      "dossier_prose": "하수너구리족은 S04 설교명부정의 펌프장 연결 관로와 공방 하부 건조 대피공, S09 여의도출자연합회의 지하 케이블 갤러리를 오가는 너구리 가족군이다.\n\n붕괴 뒤 중랑·탄천·내부 빗물 간선의 점검 주기가 끊기자 수생 먹이와 쓰레기, 사체 잔여를 따라 이동하던 개체들이 사람이 비운 관로에 정착했다.\n\n낮에는 맨홀 아래에 숨고 밤에는 출구에서 약 50미터 안의 골목을 순회한다.\n\n빗물관과 복개수로에서 젖은 털이 솟아오르는 광경은 하수가 생활권으로 역류한다는 불안을 자극하지만, 이들을 하나의 지하 군대로 보는 것은 잘못이다.\n\n현실과 맞닿는 부분은 도시 하천과 시설물 주변에 야생동물이 출현할 수 있다는 정도다.\n\n펌프보다 먼저 수위를 알아차리. 관로 운영에 영향을 주는 질서는 이 지역에 설정된 허구이며, 현실의 특정 기관이나 사업체 사고를 설명하지 않는다.\n\n핵심 서식지는 S04 펌프 옆의 낮은 유속 관로와 마른 대피공이다.\n\n비가 이어져 수위가 오르면 가족들은 높은 환기실로 새끼를 옮긴 뒤 S09의 송신 갤러리와 환기구로 분산한다.\n\nXT04 두만강극동전구 방면에서 한파와 물류 단절이 닥쳐 사료와 폐기물의 분포가 바뀌면 동부 지선으로 잠시 이동하고, 해빙 뒤에는 익숙한 관으로 돌아온다.\n\n수생 먹이, 유기 쓰레기 사체와 미생물막이 식량이 되며 건조한 은신처와 완만한 물살이 생존 비용을 낮춘다.\n\nHC04 뚝섬열원가이 퇴적 준설을 지나치게 미루면 먹이막이 두꺼워져 밀도가 오르고, 한꺼번에 긁어내면 가족군이 지상 시장으로 밀려난다.\n\n배설물과 미생물막은 수질 센서를 가려 펌프 판단까지 늦추므로, 단순히 먹이가 많다는 문제로 축소할 수 없다.\n\n하수너구리족에는 고정된 지휘자가 없다.\n\n건기에는 가족마다 먹이터와 건조 은신처를 따로 쓰고, 여러 가족이 같은 간선을 이용할 때는 시간대를 나눈다.\n\n연장자 암컷은 새끼 이동과 좁은 통과 지점에서 우선권을 가질 뿐 다른 가족에게 전투 명령을 내리지 않는다.\n\n홍수 뒤 먹이막이 두꺼워지면 서로 다른 가족이 한 관로를 교대로 쓰며, 은신처가 연속해서 잠기면 공유 규칙을 포기하. 지상 골목으로 흩어진다.\n\nH04 강별의 관로 로봇이 여러 열원과 움직임을 단일 군락으로 합산해도 HC04 배수 당직은 잠자리, 새끼 수 출입 시각을 기준으로 다시 나누어야 한다.\n\n가족군을 하나의 떼로 취급하면 이동로를 예측하기 쉬워지는 것이 아니라 서로 다른 피난 방향을 동시에 놓치게 된다.\n\n이들은 수염으로 물살과 좁은 틈의 공기 흐름을 읽고, 발과 몸에 전해지는 압력 변화를 통해 펌프 기동 전의 수위 상승을 감지한다.\n\n후각으로 먹이와 소독제, 부패한 사체를 구분하며 청각으로 펌프 진동과 사람의 장화 소리를 가른다.\n\n공식 센서보다 먼저 높은 곳으로 움직이는 경우가 있지만 언제나 정확한 것은 아니다.\n\n가족이 과거 침수 경험을 공유하고 안전한 준설 시간표를 익힌 결과일 수도 있기 때문이다.\n\n오랜 세대가 지나면 좁은 관에 유리한 작은 체구와 강한 야행성이 남을 수 있으나, 그런 적응은 지상 횡단 능력과 한파 저항을 떨어뜨린다.\n\n며칠 사이에 피난처를 바꾸는 행동은 유전적 변화가 아니라 가족 학습으로 구분해야 한다.\n\nH04의 로그는 너구리와 부유 잔해, 웅크린 사람을 혼동하므로 최종 판단에는 인간의 육안 확인이 필요하다.\n\n충돌은 압력 선행 신호에서 시작해 센서 불일치와 피난처 경합으로 커진다.\n\n첫 단계에서는 비가 오기 전 가족군이 높은 환기실로 이동해 비공식 경보 역할을 한다.\n\n두 번째 단계에서는 배설물과 미생물막 때문에 공식 수위계가 낮은 값을 내고, 점검 로봇과 가족군이 좁은 관에서 맞닥뜨린다.\n\n마지막 단계에서는 홍수나 한파로 마른 관이 하나만 남아 펌프 정비 인력과 여러 가족이 같은 공간을 요구한다.\n\n독먹이와 전면 수몰은 빠른 해결처럼 보이지만 사체 부패로 수질을 악화시키고 하류와 노동자를 함께 위험에 빠뜨린다.\n\n부분 차수, 센서 세척 대체 은신 관 제한된 야간 지상 통행이 우선이며 성과는 제거 수가 아니라 펌프 가동 회복 시간 센서 신뢰도 지상 교상 0건으로 측정한다.\n\nG04-SC1 ‘맨홀 아래의 선행지표’는 비가 오기 전인데도 가족군이 낮부터 새끼를 높은 환기실로 옮기면서 시작된다.\n\nS04와 HC04는 이 이동을 즉시 예비 경보로 채택할 수 있고, HP01 수문가의 현장 측정이 끝날 때까지 기다릴 수도 있으며 생태 신호와 계측값이 어긋날 때만 펌프를 예열할 수도 있다.\n\n첫 선택은 준비 시간을 벌지만 오탐으로 연료와 인력을 낭비했을 때 책임 소재가 남는다.\n\n두 번째는 근거가 명확한 대신 짧고 급한 유입에 늦을 수 있다.\n\n세 번째는 평상시 연료를 아끼지만 두 신호가 동시에 늦어지는 국지 호우를 놓칠 위험이 있다.\n\n너구리의 행동은 유용한 보조 자료가 될 수 있으나 처벌이나 살처분의 근거가 되어서는 안 된다.\n\n비공식 생태 신호에 공공 안전의 일부를 맡길 것인지가 이 선택의 부담이다.\n\nG04-SC2 ‘준설창의 두 가족’에서는 HC04가 잡은 야간 준설 시간이 두 가족의 교대 은신 시간과 겹친다.\n\n예정대로 장비를 넣으면 두 가족이 동시에 S04와 S09의 지상 시장으로 나오고, 케이블 통로와 배수로 양쪽에서 민원이 발생한다.\n\n준설을 두 구간으로 나누면 가족별 퇴로를 유지할 수 있으나 공사 완료가 늦어진다.\n\n비어 있는 건조 관을 대체 은신처로 열면 지상 출몰을 줄일 수 있지만 S09의 통신 케이블 여유 공간을 내주어야 한다.\n\n한 가족의 이용 시간대를 먹이와 안전 통로로 매입해 집중 준설하면 가장 빠르지만, 다른 가족이 지켜 온 시간 분할 규칙을 불공정하게 바꾼다.\n\n효율만 따지면 마지막 선택이 유리할 수 있으나, 한 번 무너진 공유 규칙은 이후 강우 때 더 큰 동시 출몰로 돌아온다.\n\nG04-SC3 ‘펌프실의 마른 통로’는 XT04 한파 속에서 세 가족이 유일하게 얼지 않은 펌프 접근로를 겹쳐 점유하는 단계다.\n\n난방되는 대체 은신 관을 제공하면 점검로를 비우. 가족을 분산할 수 있지만 전력 배급이 줄어 S09의 다른 시설이 추위를 감수해야 한다.\n\n펌프 점검을 미루면 당장의 충돌은 피하나 해빙이나 돌발 강우 때 침수 위험이 커진다.\n\n임시 외부 점검 발판을 설치하면 관로를 비우지 않. 정비할 수 있지만, 한파 속 설치 노동과 추락 위험을 작업조가 감당해야 한다.\n\nHC04는 준설 시간, 지상 통행 금지 시간 대체 관의 난방을 한 장부에서 조정한다.\n\n범람 직전의 마지막 수문 점검에서 S04는 상류 유입량을 늦추. 측구의 퇴적물을 걷어 내는 대신, 하수너구리족이 이용해 온 건조 통로와 먹이터의 연속성을 보전하는 방안을 받아들인다.\n\nS09는 오염원을 숨겨 온 임시 배출구를 폐쇄하. 수질 기록을 공동 장부에 공개하며, XT04는 경보망과 우회 수로를 연결해 급격한 수위 상승 때에도 대피로가 잠기지 않도록 조정한다.\n\nHC04는 부상 개체의 치료와 어린 개체의 이동을 맡되 무분별한 포획을 중단하고, H04는 야간 순찰대와 주민 대표를 묶어 통로 주변의 투기와 먹이 갈등을 줄인다.\n\n이에 따라 중앙 집수정은 인간 구역과 서식 구역을 가르는 장벽이 아니라 물, 폐기물 이동 시간을 나누어 쓰는 완충지대로 바뀐다.\n\n각 집단은 상대의 영역을 침범하지 않는 데 그치지 않. 정해진 시간대에 점검·청소·구조 업무를 교대하며, 피해가 발생하면 원인을 먼저 공동 조사한 뒤 부담을 유입 기여도와 복구 능력에 맞추어 분담하기로 한다.\n\n첫 비가 지나간 뒤에도 통로가 유지되고 역류가 멎자, 오래된 추방 명령은 철회된다.\n\n하수너구리족은 지하의 합법적 거주자로 인정받고 다섯 주체는 서로를 감시 대상이 아닌 같은 유역의 이웃으로 받아들인다.\n\n이 합의가 일회성 휴전에 머물지 않도록 이후의 관리는 계절별 공동 stewardship가 아니라 공동 돌봄 체계로 굳어진다.\n\nS04와 XT04는 매주 수위, 유속 용존산소 탁도 암모니아성 질소를 측정하. S09는 월별 불법 배출 흔적과 부유 폐기물 무게를 기록하며 HC04와 H04는 분기마다 개체 수 새끼 생존율 피부·호흡기 이상 비율 통로 이용 횟수 주민 신고 건수와 대응 시간을 함께 공개한다.\n\n기준은 우기 역류 월 1회 이하, 주요 통로 가동률 95퍼센트 이상 부상 개체 비율 전년 대비 감소 긴급 신. 30분 이내 초동 대응으로 정한다.\n\n두 차례 연속 기준을 벗어나면 경보망이 자동으로 단계 상승하고, 임시 둑 설치와 오염원 차단 취약 개체 이동 독립 표본 재검사를 순서대로 시행한 뒤 원인 구간만 제한적으로 폐쇄한다.\n\n자료가 소실되거나 책임 주체가 이탈할 경우에는 종이 장부와 분산 관측자를 통해 기록을 복원하고, 다음 계절의 관리권 일부를 공동위원회에 맡겨 신뢰를 회복한다.\n\n예상 밖의 변화도 나타난다.\n\n악취와 쓰레기가 줄자 야간 곤충의 분포가 달라지. 이를 좇는 박쥐와 조류가 늘어 배수구 주변의 먹이망이 넓어지며, 안전해진 산책로에는 늦은 시간의 주민 활동이 증가한다.\n\n그 결과 생태 회복이 새로운 소음과 조명 압력으로 되돌아올 수 있으므로 조도 상한, 저소음 시간대 계절별 우회 구간까지 지표에 포함하며 공존의 범위를 계속 수정해 나간다.",
       "prose": "뚝섬 펌프 옆 맨홀에서 하수너구리족 연장자 암컷이 유속 변화에 수염을 떨며 새끼 줄을 세운다.\n\nHC04 뚝섬열원가 당직은 독먹이 대신 대체 은신 관과 준설 창 깃발을 내리고, H04 강별 관로 로그의 ‘잔해’로 찍힌 점을 손전등으로 세 번 확인한 뒤에야 출동을 승인한다.\n\nS09 송신 갤러리로 분산한 가족군에는 야간 지상 금지 테이프만 붙이고, XT04 한파가 오면 난방 허용 구역을 한 줄 더 연다.\n\n수위 경보 일지에는 이동 시각만 남기고 혐오 낙인은 적지 않는다."
     },
     {
       "id": "G05",
       "display_name": "환승쥐군락",
-      "bestiary": {"common_ecology":"S05 호위보호정 환승 상점가 하부와 케이블 트레이, S10 대한불교조계종 대피 계단 사이에 형성된 보통의 쥐 군락이다. 부스러기 탄수화물과 단백질 잔여, 보온 배관 열이 밀도를 만들고 특별한 병원체를 퍼뜨리지 않는다. 고정 우두머리가 없으며 먹이 흔적이 바뀌면 중심처럼 보이던 코어도 옮겨 간다.","variant_relation":"틈수염과 온핵, 반대핵은 같은 종의 경로·번식 밀집이지 왕과 근위가 아니다. 트레이온기와 폐점그늘은 쥐가 점유한 설비 구간이고, 하역막은 단백질 하역 뒤 여러 가지가 허브 바닥에 모인 현상이다. 냉동틈은 엘리베이터 드립에 맞춘 지역 갈래이며, E01부터 E06은 제외된 배치에 남는다.","command_scope":"수염과 후각으로 기류와 잔반을 찾고 발과 배로 열차·카트·사람 진동을 가르지만 화면의 먼 열점과 안내 전광의 내용은 읽지 못한다. 같은 방제 순서가 반복되면 열린 퇴로를 더 빨리 찾을 뿐 명령을 내리지는 않는다. 한 코어를 허물면 개체가 남은 코어로 몰릴 뿐 군락은 붕괴하지 않는다."},
+      "bestiary": {"common_ecology":"S05 호위보호정 환승 상점가 하부와 케이블 트레이, S10 승가구휼정 대피 계단 사이에 형성된 보통의 쥐 군락이다. 부스러기 탄수화물과 단백질 잔여, 보온 배관 열이 밀도를 만들고 특별한 병원체를 퍼뜨리지 않는다. 고정 우두머리가 없으며 먹이 흔적이 바뀌면 중심처럼 보이던 코어도 옮겨 간다.","variant_relation":"틈수염과 온핵, 반대핵은 같은 종의 경로·번식 밀집이지 왕과 근위가 아니다. 트레이온기와 폐점그늘은 쥐가 점유한 설비 구간이고, 하역막은 단백질 하역 뒤 여러 가지가 허브 바닥에 모인 현상이다. 냉동틈은 엘리베이터 드립에 맞춘 지역 갈래이며, E01부터 E06은 제외된 배치에 남는다.","command_scope":"수염과 후각으로 기류와 잔반을 찾고 발과 배로 열차·카트·사람 진동을 가르지만 화면의 먼 열점과 안내 전광의 내용은 읽지 못한다. 같은 방제 순서가 반복되면 열린 퇴로를 더 빨리 찾을 뿐 명령을 내리지는 않는다. 한 코어를 허물면 개체가 남은 코어로 몰릴 뿐 군락은 붕괴하지 않는다."},
       "category": "animal-urban",
       "owner": "wiki-world",
       "source_kind": "original-fiction",
@@ -16441,7 +16441,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
         "Hostile-Ecology-Index.md"
       ],
       "modern_anxiety": "환승 통로·승강장 틈·케이블 트레이에 형성된 쥐 군락이 먹이그물과 전염 공포를 동시에 키우는 불안",
-      "fictional_origin": "S05 호위보호정 지하 배급 통로와 S10 대한불교조계종 대피 계단 사이 환승 연결부가 상시 음식물·보온 배관 누열을 제공하면서 환승쥐군락이 정착했다.\n\n이 군락은 병원체 슈퍼숙주가 아니라 먹이·온열·은신처에 의존하도록 설정했다.\n\n먹이와 보온이 밀도를 좌우하. 배설물이 케이블을 손상시키는 기본 위험을 제외하면, 분산 코어 둥지망·방제 순서 학습·단방향 퇴로·비표적 안전 절차는 모두 이 세계관에서만 성립하는 허구적 관리 모델이다.\n\n실재 방역기관·기업 책임 서술은 금지한다.",
+      "fictional_origin": "S05 호위보호정 지하 배급 통로와 S10 승가구휼정 대피 계단 사이 환승 연결부가 상시 음식물·보온 배관 누열을 제공하면서 환승쥐군락이 정착했다.\n\n이 군락은 병원체 슈퍼숙주가 아니라 먹이·온열·은신처에 의존하도록 설정했다.\n\n먹이와 보온이 밀도를 좌우하. 배설물이 케이블을 손상시키는 기본 위험을 제외하면, 분산 코어 둥지망·방제 순서 학습·단방향 퇴로·비표적 안전 절차는 모두 이 세계관에서만 성립하는 허구적 관리 모델이다.\n\n실재 방역기관·기업 책임 서술은 금지한다.",
       "territory_migration": "핵심 서식은 S05 환승 상점가 하부와 케이블 트레이이며, 피난 밀도가 오르면 S10 대피 계단·임시 급식소 벽체로 확장한다.\n\nXT05 인천신탁전구 쪽 냉동·원양 단백질 잔여물이 쌓이면 군락이 하역 엘리베이터 통로까지 가지 둥지를 넓힌다.\n\n소독 주기가 짧은 구역에서는 야간에만 지상으로 오른다.",
       "economy": "부스러기 탄수화물·단백질 잔여·보온 배관 열이 세 핵심 자원이다.\n\nHC05 북한산보국문기록가이 보관 문서·시약 창고 밀봉을 강화해도 먹이 문제는 해결되지 않으며, 실제 밀도를 좌우하는 요인은 급식 잔반 회수와 트레이 밀폐다.\n\n군락 배설이 전선 피복을 가속 부식시켜 조명·안내 전광 가용시간을 줄인다.",
       "lifecycle": "먹이와 보온 배관이 만나는 곳에 코어 둥지 2~3개가 생기고, 각 코어에서 케이블 트레이를 따라 가지 둥지가 뻗는다.\n\n한 코어가 사라지면 남은 코어가 새 이동로를 열어 군락이 재분배되며, 모든 구획에서 먹이 회수와 건조 상태가 이어져야 밀도가 내려간다.",
@@ -16540,13 +16540,13 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "dossier_ref": "G05"
         }
       ],
-      "dossier_prose": "G05 환승쥐군락은 S05 호위보호정의 지하 배급 통로와 S10 대한불교조계종의 대피 계단이 맞물리는 환승 연결부에서 형성된 도시 동물 군집이다.\n\n환승 상점가 바닥 아래에는 음식물 부스러기가 떨어지고, 케이블 트레이와 보온 배관 사이에는 겨울에도 열이 남는다.\n\n사람들은 승강장 틈에서 꼬리가 사라지거나 안내 전광이 갑자기 꺼질 때마다 전염과 오염을 먼저 떠올리지만, 이 군락은 특별한 병원체를 퍼뜨리는 존재가 아니다.\n\n먹이와 온열, 은신처가 겹친 장소에서 밀도가 높아진 평범한 동물 군집에 가깝다.\n\n다만 분산된 코어 둥지망과 방제 순서를 학습하는 양상, 단방향 퇴로를 이용한 관리 절차는 현실의 방역 지침이 아니라 이 세계에서만 성립하는 허구적 생태 규칙이다.\n\n따라서 군락의 출현을 특정 집단의 불결함이나 피난민의 책임으로 돌리는 설명은 사실에도 맞지 않고 대응에도 도움이 되지 않는다.\n\n핵심 서식지는 S05 환승 상점가 하부와 케이블 트레이지만 군락의 경계는 사람의 이동과 배급 사정에 따라 달라진다.\n\nS10의 피난 밀도가 오르면 임시 급식소 벽체와 대피 계단 케이블로 가지 둥지가 뻗고, XT05 인천신탁전구에서 냉동·원양 단백질 잔여물이 대량 반입되는 주간에는 하역 엘리베이터 통로까지 이동 흔적이 이어진다.\n\n소독이 잦고 밝은 지상 구역에는 야간에만 올라오며, 통행이 끊긴 셔터 뒤편을 임시 저장처로 쓴다.\n\n군락의 경제를 지탱하는 것은 부스러기 탄수화물, 단백질 잔여 보온 배관의 열이라는 세 자원이다.\n\nHC05 북한산보국문기록가이 문서고와 시약 창고를 아무리 밀봉해도 급식 잔반이 남고 트레이가 열려 있으면 전체 밀도는 줄지 않는다.\n\n배설물과 습기가 전선 피복의 손상을 앞당기면 조명과 안내 전광의 가용시간이 감소하고, 이는 다시 피난 통로의 혼잡과 불안을 키운다.\n\n먹이와 열이 만나는 구획에는 보통 두세 개의 번식 코어가 생긴다.\n\n각 코어는 케이블 트레이를 따라 뻗은 가지 둥지와 연결되며, 한 코어가 사라져도 군락 전체가 곧바로 붕괴하지 않는다.\n\n남은 코어로 개체가 몰리고 이전에 덜 쓰던 셔터 틈이나 배관 받침대가 새 이동로가 된다.\n\n밀도를 장기간 낮추려면 모든 구획에서 잔반 회수와 건조 상태를 유지해야 하며, 눈에 띄는 둥지 하나를 없애는 일은 일시적인 재배치에 불과하다.\n\n독성 물질, 초음파 밀폐 공사의 순서가 반복되면 개체군은 열린 퇴로를 더 빨리 찾아낸다.\n\n이는 갑작스러운 신체 변화가 아니라 살아남은 개체와 경로 개척 개체가 위험한 순서를 피하는 학습이다.\n\n여러 세대 동안 저온이나 밝은 승강장을 견디는 성향이 남을 수는 있지만, 그 대가로 에너지 소비가 늘고 번식률이 낮아진다.\n\n환승쥐군락에는 고정된 우두머리가 없다.\n\n이동량이 많은 코어가 잠시 중심처럼 보일 뿐이며, 먹이 흔적이 바뀌면 중심도 옮겨 간다.\n\n경로 개척 개체는 수염과 후각으로 기류와 틈을 살피고, 발과 몸에 전해지는 온도와 진동으로 열차 배급 카트 사람의 접근을 구별한다.\n\n먼 곳의 열원을 정확히 분류하거나 전자 신호를 읽지는 못한다.\n\nH05 윤재의 적외선 맵은 이런 한계를 보완하지만, 화면의 열점 하나를 우두머리나 둥지로 단정해서는 안 된다.\n\n증기, 사람 배관 누열이 모두 비슷한 덩어리로 나타날 수 있기 때문이다.\n\nH05는 야간 배설 흔적과 새끼의 발자국, 코어별 이동량을 함께 표시해야 하며 한 지점이 사라진 직후에는 남은 둥지로 퍼지는 흐름을 우선 추적한다.\n\n상황은 코어 탐색, 경로 재배선 밀폐 순서 위기의 세 단계로 악화된다.\n\n초기에는 서로 떨어진 번식 코어를 확인하는 일이 핵심이다.\n\n하나만 봉쇄하면 개체가 상점 셔터 아래와 다른 트레이로 몰리면서 두 번째 단계가 시작된다.\n\n잘못된 순서로 급식소 쪽을 먼저 닫아 군락이 비상 계단으로 들어가면 기존 작업은 사실상 실패한 셈이다.\n\n점유 구획을 다시 확인하고, 코어에서 사람이 쓰지 않는 구획으로 이어지는 단방향 퇴로를 연 뒤 뒤쪽부터 차례로 밀폐해야 한다.\n\n전면 독성 살포와 화염은 아동, 반려동물 다른 야생동물의 노출 때문에 최후 수단으로만 남긴다.\n\n잔반 회수와 저온·건조 유지가 기본 대응이며, 성공 여부는 포획 수가 아니라 전기 단락 건수 식품 오염 0건 비표적 폐사 0건 피난 통과 시간으로 판단한다.\n\n군락과 직접 대화할 수는 없지만 주변 인간 집단 사이에는 충분한 협상 여지가 있다.\n\nHC05 북한산보국문기록가은 S05와 S10 사이에서 잔반 회수 주기, 트레이 밀폐 공사 순서 야간 상점 셔터의 간격을 중개한다.\n\nXT05의 단백질 하역 주간에는 임시 이중 밀봉 라인을 먼저 지원하고, 배급 속도를 유지하려면 하역 시간을 나누는 비용을 부담해야 한다.\n\n전멸은 목표가 아니다.\n\n먹이 접근을 줄이고 피난 통로에서 이동 경로를 떼어 놓는 수준이면 공존이 가능하다.\n\n반대로 전염 공포를 내세워 피난민 구역만 봉쇄하면 군락은 더 깊은 케이블 층으로 들어가고 복구 비용은 커진다.\n\n빠른 배급을 이유로 잔반 회수를 미루면 경로 재배선 상태가 고착된다.\n\n안전을 얻기 위해 누구의 통행과 노동을 늦출 것인지가 이 생태 문제의 실제 도덕적 비용이다.\n\nG05-SC1 ‘두 번째 코어 둥지’는 H05 열화상에 하나의 큰 군락만 나타나지만 반대편 트레이에서 새끼 흔적이 발견되면서 시작된다.\n\nS05와 HC05는 모든 코어를 먼저 조사해 비표적 생물과 피난 통로를 확인할 수 있다.\n\n이 선택은 가장 안전하지만 통로 개방이 늦어진다.\n\nHP09 디지털미디어시티신탁가에서 오래된 케이블 열지도를 구매하면 조사 시간을 줄일 수 있으나, 대가로 과거 통행 기록을 넘겨야 한다.\n\n사생활 노출을 피하려면 한 구획에서 단방향 퇴로를 시험할 수도 있지만, 실패에 대비해 사람이 쓰지 않는 공간 하나를 장기간 폐쇄해야 한다.\n\n어느 선택이든 즉시 위생 조치를 원하는 사람들과 오인 포획을 막으려는 사람들 사이에 갈등이 생긴다.\n\n보이지 않는 두 번째 코어를 무시하고 첫 둥지만 제거하면 군락 중심은 반대편으로 옮겨 가며 다음 단계의 비용을 키운다.\n\nG05-SC2 ‘밀폐 순서의 오류’에서는 급식소 셔터를 먼저 닫은 뒤 군락이 S10 대피 계단 케이블로 역주행한다.\n\nS05, S10 HC05 H05는 공사를 중단하고 뒤쪽부터 다시 밀폐할 수 있다.\n\n이 경우 오염은 줄지만 피난 통로 공사와 배급 지연이 길어진다.\n\n잔반 회수를 잠시 중단하. 미끼를 남겨 군락을 원래 구획으로 유도하면 통행로를 빨리 비울 수 있으나 식품 오염을 의도적으로 감수해야 한다.\n\n피난민을 한밤 동안 지상 우회로로 보내는 선택은 케이블층 작업을 안전하게 만들지만 추위에 취약한 사람을 보호할 난방과 경비 인력이 필요하다.\n\n어느 길도 피난 속도, 식품 안전 비표적 피해를 모두 최선으로 만들지는 못한다.\n\n특히 피난민에게 위험을 떠넘기고 작업 성공만 선언하면 이후의 협상 기반이 무너진다.\n\nG05-SC3 ‘개방 중정의 포식자’는 XT05 단백질 하역 뒤 군락이 환승 허브를 막았을 때 제기된다.\n\nS05와 S10은 충돌 방지 표식, 배설 세척 비표적종 모니터링을 갖춘 개방 중정으로 포식 조류를 제한적으로 유도할 수 있다.\n\n군락을 빠르게 줄일 가능성이 있지만 조류 충돌과 새로운 배설 문제를 관리할 상시 인력이 필요하다.\n\n포식 관계를 들이지 않고 단계적 퇴로와 밀폐만 고수하면 생태적 부작용은 적으나 배급과 피난이 오래 지연된다.\n\nXT05가 하역 일정을 분산해 먹이 유입 자체를 줄이면 비표적 위험을 만들지 않지만 냉동 물류 단가와 식품 손실이 높아진다.\n\nHC05와 H05는 어떤 선택에서도 단락, 오염 통과 시간 비표적 폐사를 함께 공개해야 한다.\n\n한 생태 문제를 다른 동물의 포식으로 이전하는 순간 책임까지 이전되는 것은 아니며, 환승쥐군락과의 공존은 결국 보이지 않는 청소 노동과 느려진 배급을 누가 감당할지 정하는 일이다.\n\n장기 관리는 일회성 포획이 아니라 S05, S10 HC05가 환승 구획별 먹이·열·은신처의 변화를 공동 장부에 누적하는 일로 굳어져야 한다.\n\nS05는 매일 폐점 뒤 잔반 중량과 회수 지연 시간을 재고, S10은 대피 계단 100미터당 야간 횡단 흔적과 통과 시간의 95백분위 값을 기록하며 HC05는 케이블 피복 손상률·절연 저항·습도·비표적 동물 목격을 월별로 대조한다.\n\nH05의 열점은 신선한 배설물 수, 새끼 발자국 트레이별 미끼 소실량과 일치할 때만 활성 코어로 판정하며 단락과 식품 오염이 없더라도 이동 흔적이 두 주 연속 늘면 선제 점검에 들어간다.\n\n밀폐 실패로 군락이 피난 통로에 번졌을 때는 추가 봉쇄를 멈추. 이전 퇴로 하나를 다시 열어 압력을 낮춘 뒤, 급식 보관선을 임시 이중화하고 사람의 우회 동선을 먼저 확보한다.\n\n복구는 포획량이 아니라 사흘간 역주행 흔적이 없고, 일곱 야간 동안 새 코어 징후가 나타나지 않으며 절연 저항과 피난 통과 시간이 기준선으로 돌아왔을 때 완료된다.\n\n같은 작업자가 계절마다 구획을 맡아 작은 변화까지 기억하게 하되, 책임이 청소 인력에게만 고착되지 않도록 하역·배급·시설 부문이 순환 비용을 분담한다.\n\n이때 군락을 급격히 줄이면 그동안 소비되던 미세 잔반이 배수 홈에서 발효되. 곤충 밀도가 오를 수 있으며, 이는 약품 사용과 배수관 세척을 늘려 오히려 식품 구역의 관리 부담을 키운다.\n\n따라서 개체 감소 뒤에도 잔반 부패도와 곤충 포획량을 함께 살피는 것이 장기 안정의 일부다.",
+      "dossier_prose": "G05 환승쥐군락은 S05 호위보호정의 지하 배급 통로와 S10 승가구휼정의 대피 계단이 맞물리는 환승 연결부에서 형성된 도시 동물 군집이다.\n\n환승 상점가 바닥 아래에는 음식물 부스러기가 떨어지고, 케이블 트레이와 보온 배관 사이에는 겨울에도 열이 남는다.\n\n사람들은 승강장 틈에서 꼬리가 사라지거나 안내 전광이 갑자기 꺼질 때마다 전염과 오염을 먼저 떠올리지만, 이 군락은 특별한 병원체를 퍼뜨리는 존재가 아니다.\n\n먹이와 온열, 은신처가 겹친 장소에서 밀도가 높아진 평범한 동물 군집에 가깝다.\n\n다만 분산된 코어 둥지망과 방제 순서를 학습하는 양상, 단방향 퇴로를 이용한 관리 절차는 현실의 방역 지침이 아니라 이 세계에서만 성립하는 허구적 생태 규칙이다.\n\n따라서 군락의 출현을 특정 집단의 불결함이나 피난민의 책임으로 돌리는 설명은 사실에도 맞지 않고 대응에도 도움이 되지 않는다.\n\n핵심 서식지는 S05 환승 상점가 하부와 케이블 트레이지만 군락의 경계는 사람의 이동과 배급 사정에 따라 달라진다.\n\nS10의 피난 밀도가 오르면 임시 급식소 벽체와 대피 계단 케이블로 가지 둥지가 뻗고, XT05 인천신탁전구에서 냉동·원양 단백질 잔여물이 대량 반입되는 주간에는 하역 엘리베이터 통로까지 이동 흔적이 이어진다.\n\n소독이 잦고 밝은 지상 구역에는 야간에만 올라오며, 통행이 끊긴 셔터 뒤편을 임시 저장처로 쓴다.\n\n군락의 경제를 지탱하는 것은 부스러기 탄수화물, 단백질 잔여 보온 배관의 열이라는 세 자원이다.\n\nHC05 북한산보국문기록가이 문서고와 시약 창고를 아무리 밀봉해도 급식 잔반이 남고 트레이가 열려 있으면 전체 밀도는 줄지 않는다.\n\n배설물과 습기가 전선 피복의 손상을 앞당기면 조명과 안내 전광의 가용시간이 감소하고, 이는 다시 피난 통로의 혼잡과 불안을 키운다.\n\n먹이와 열이 만나는 구획에는 보통 두세 개의 번식 코어가 생긴다.\n\n각 코어는 케이블 트레이를 따라 뻗은 가지 둥지와 연결되며, 한 코어가 사라져도 군락 전체가 곧바로 붕괴하지 않는다.\n\n남은 코어로 개체가 몰리고 이전에 덜 쓰던 셔터 틈이나 배관 받침대가 새 이동로가 된다.\n\n밀도를 장기간 낮추려면 모든 구획에서 잔반 회수와 건조 상태를 유지해야 하며, 눈에 띄는 둥지 하나를 없애는 일은 일시적인 재배치에 불과하다.\n\n독성 물질, 초음파 밀폐 공사의 순서가 반복되면 개체군은 열린 퇴로를 더 빨리 찾아낸다.\n\n이는 갑작스러운 신체 변화가 아니라 살아남은 개체와 경로 개척 개체가 위험한 순서를 피하는 학습이다.\n\n여러 세대 동안 저온이나 밝은 승강장을 견디는 성향이 남을 수는 있지만, 그 대가로 에너지 소비가 늘고 번식률이 낮아진다.\n\n환승쥐군락에는 고정된 우두머리가 없다.\n\n이동량이 많은 코어가 잠시 중심처럼 보일 뿐이며, 먹이 흔적이 바뀌면 중심도 옮겨 간다.\n\n경로 개척 개체는 수염과 후각으로 기류와 틈을 살피고, 발과 몸에 전해지는 온도와 진동으로 열차 배급 카트 사람의 접근을 구별한다.\n\n먼 곳의 열원을 정확히 분류하거나 전자 신호를 읽지는 못한다.\n\nH05 윤재의 적외선 맵은 이런 한계를 보완하지만, 화면의 열점 하나를 우두머리나 둥지로 단정해서는 안 된다.\n\n증기, 사람 배관 누열이 모두 비슷한 덩어리로 나타날 수 있기 때문이다.\n\nH05는 야간 배설 흔적과 새끼의 발자국, 코어별 이동량을 함께 표시해야 하며 한 지점이 사라진 직후에는 남은 둥지로 퍼지는 흐름을 우선 추적한다.\n\n상황은 코어 탐색, 경로 재배선 밀폐 순서 위기의 세 단계로 악화된다.\n\n초기에는 서로 떨어진 번식 코어를 확인하는 일이 핵심이다.\n\n하나만 봉쇄하면 개체가 상점 셔터 아래와 다른 트레이로 몰리면서 두 번째 단계가 시작된다.\n\n잘못된 순서로 급식소 쪽을 먼저 닫아 군락이 비상 계단으로 들어가면 기존 작업은 사실상 실패한 셈이다.\n\n점유 구획을 다시 확인하고, 코어에서 사람이 쓰지 않는 구획으로 이어지는 단방향 퇴로를 연 뒤 뒤쪽부터 차례로 밀폐해야 한다.\n\n전면 독성 살포와 화염은 아동, 반려동물 다른 야생동물의 노출 때문에 최후 수단으로만 남긴다.\n\n잔반 회수와 저온·건조 유지가 기본 대응이며, 성공 여부는 포획 수가 아니라 전기 단락 건수 식품 오염 0건 비표적 폐사 0건 피난 통과 시간으로 판단한다.\n\n군락과 직접 대화할 수는 없지만 주변 인간 집단 사이에는 충분한 협상 여지가 있다.\n\nHC05 북한산보국문기록가은 S05와 S10 사이에서 잔반 회수 주기, 트레이 밀폐 공사 순서 야간 상점 셔터의 간격을 중개한다.\n\nXT05의 단백질 하역 주간에는 임시 이중 밀봉 라인을 먼저 지원하고, 배급 속도를 유지하려면 하역 시간을 나누는 비용을 부담해야 한다.\n\n전멸은 목표가 아니다.\n\n먹이 접근을 줄이고 피난 통로에서 이동 경로를 떼어 놓는 수준이면 공존이 가능하다.\n\n반대로 전염 공포를 내세워 피난민 구역만 봉쇄하면 군락은 더 깊은 케이블 층으로 들어가고 복구 비용은 커진다.\n\n빠른 배급을 이유로 잔반 회수를 미루면 경로 재배선 상태가 고착된다.\n\n안전을 얻기 위해 누구의 통행과 노동을 늦출 것인지가 이 생태 문제의 실제 도덕적 비용이다.\n\nG05-SC1 ‘두 번째 코어 둥지’는 H05 열화상에 하나의 큰 군락만 나타나지만 반대편 트레이에서 새끼 흔적이 발견되면서 시작된다.\n\nS05와 HC05는 모든 코어를 먼저 조사해 비표적 생물과 피난 통로를 확인할 수 있다.\n\n이 선택은 가장 안전하지만 통로 개방이 늦어진다.\n\nHP09 디지털미디어시티신탁가에서 오래된 케이블 열지도를 구매하면 조사 시간을 줄일 수 있으나, 대가로 과거 통행 기록을 넘겨야 한다.\n\n사생활 노출을 피하려면 한 구획에서 단방향 퇴로를 시험할 수도 있지만, 실패에 대비해 사람이 쓰지 않는 공간 하나를 장기간 폐쇄해야 한다.\n\n어느 선택이든 즉시 위생 조치를 원하는 사람들과 오인 포획을 막으려는 사람들 사이에 갈등이 생긴다.\n\n보이지 않는 두 번째 코어를 무시하고 첫 둥지만 제거하면 군락 중심은 반대편으로 옮겨 가며 다음 단계의 비용을 키운다.\n\nG05-SC2 ‘밀폐 순서의 오류’에서는 급식소 셔터를 먼저 닫은 뒤 군락이 S10 대피 계단 케이블로 역주행한다.\n\nS05, S10 HC05 H05는 공사를 중단하고 뒤쪽부터 다시 밀폐할 수 있다.\n\n이 경우 오염은 줄지만 피난 통로 공사와 배급 지연이 길어진다.\n\n잔반 회수를 잠시 중단하. 미끼를 남겨 군락을 원래 구획으로 유도하면 통행로를 빨리 비울 수 있으나 식품 오염을 의도적으로 감수해야 한다.\n\n피난민을 한밤 동안 지상 우회로로 보내는 선택은 케이블층 작업을 안전하게 만들지만 추위에 취약한 사람을 보호할 난방과 경비 인력이 필요하다.\n\n어느 길도 피난 속도, 식품 안전 비표적 피해를 모두 최선으로 만들지는 못한다.\n\n특히 피난민에게 위험을 떠넘기고 작업 성공만 선언하면 이후의 협상 기반이 무너진다.\n\nG05-SC3 ‘개방 중정의 포식자’는 XT05 단백질 하역 뒤 군락이 환승 허브를 막았을 때 제기된다.\n\nS05와 S10은 충돌 방지 표식, 배설 세척 비표적종 모니터링을 갖춘 개방 중정으로 포식 조류를 제한적으로 유도할 수 있다.\n\n군락을 빠르게 줄일 가능성이 있지만 조류 충돌과 새로운 배설 문제를 관리할 상시 인력이 필요하다.\n\n포식 관계를 들이지 않고 단계적 퇴로와 밀폐만 고수하면 생태적 부작용은 적으나 배급과 피난이 오래 지연된다.\n\nXT05가 하역 일정을 분산해 먹이 유입 자체를 줄이면 비표적 위험을 만들지 않지만 냉동 물류 단가와 식품 손실이 높아진다.\n\nHC05와 H05는 어떤 선택에서도 단락, 오염 통과 시간 비표적 폐사를 함께 공개해야 한다.\n\n한 생태 문제를 다른 동물의 포식으로 이전하는 순간 책임까지 이전되는 것은 아니며, 환승쥐군락과의 공존은 결국 보이지 않는 청소 노동과 느려진 배급을 누가 감당할지 정하는 일이다.\n\n장기 관리는 일회성 포획이 아니라 S05, S10 HC05가 환승 구획별 먹이·열·은신처의 변화를 공동 장부에 누적하는 일로 굳어져야 한다.\n\nS05는 매일 폐점 뒤 잔반 중량과 회수 지연 시간을 재고, S10은 대피 계단 100미터당 야간 횡단 흔적과 통과 시간의 95백분위 값을 기록하며 HC05는 케이블 피복 손상률·절연 저항·습도·비표적 동물 목격을 월별로 대조한다.\n\nH05의 열점은 신선한 배설물 수, 새끼 발자국 트레이별 미끼 소실량과 일치할 때만 활성 코어로 판정하며 단락과 식품 오염이 없더라도 이동 흔적이 두 주 연속 늘면 선제 점검에 들어간다.\n\n밀폐 실패로 군락이 피난 통로에 번졌을 때는 추가 봉쇄를 멈추. 이전 퇴로 하나를 다시 열어 압력을 낮춘 뒤, 급식 보관선을 임시 이중화하고 사람의 우회 동선을 먼저 확보한다.\n\n복구는 포획량이 아니라 사흘간 역주행 흔적이 없고, 일곱 야간 동안 새 코어 징후가 나타나지 않으며 절연 저항과 피난 통과 시간이 기준선으로 돌아왔을 때 완료된다.\n\n같은 작업자가 계절마다 구획을 맡아 작은 변화까지 기억하게 하되, 책임이 청소 인력에게만 고착되지 않도록 하역·배급·시설 부문이 순환 비용을 분담한다.\n\n이때 군락을 급격히 줄이면 그동안 소비되던 미세 잔반이 배수 홈에서 발효되. 곤충 밀도가 오를 수 있으며, 이는 약품 사용과 배수관 세척을 늘려 오히려 식품 구역의 관리 부담을 키운다.\n\n따라서 개체 감소 뒤에도 잔반 부패도와 곤충 포획량을 함께 살피는 것이 장기 안정의 일부다.",
       "prose": "암사 환승 상점가 하부 트레이에서 환승쥐군락 경로 개척 개체가 보온 배관 열을 따라 새 구멍을 민다.\n\nHC05 북한산보국문기록가 위생 당직은 독성 분무기 대신 잔반 회수 자루와 구획 밀폐 판을 먼저 내리고, H05 윤재 적외선 맵의 덩어리를 증기·군락·사람으로 세 번 나눠 적는다.\n\nS10 대피 계단에 배설이 늘면 피난민을 비난하는 대신 이중 셔터 간격을 조정하고, XT05 단백질 하역이 겹친 밤에는 임시 밀봉 라인만 연장한다.\n\n전염 낙인 방송은 켜지 않은 채, 단락 건수와 통과 시간만 보드에 남긴다."
     },
     {
       "id": "G06",
       "display_name": "철새습지포식군",
-      "bestiary": {"common_ecology":"S06 대한민국정부 수변 기록 데크와 S11 삼성그룹 배수 연못에 수조류·섭금류·맹금류가 겹치는 혼합 기착이다. 수조류는 수생 식물과 부유물, 섭금류는 저서생물, 맹금류는 설치류와 지친 소형 조류를 먹는다. 통합 지휘나 도시를 공격하려는 목적은 없다.","variant_relation":"넓깃자리부터 추격날개까지는 기능군이 다른 야생 조류다. 연못거울과 열린거울은 중간 기착의 수면 자체이고, 세층비상은 세 높이가 한 교량 단면에 겹치는 공중의 매듭이다. 옥상물받이는 습지가 마른 건기에 내륙 분수와 옥상 물받이를 쓰는 같은 수조류의 갈래다.","command_scope":"시각이 주력이라 수면 반사, 작업 조끼 색, 드론 실루엣에 이륙한다. 엔진음과 확성은 거리만 알려 주고 전자 신호와 수문 숫자는 모른다. 수조류가 개방면을 덮으면 섭금류는 가장자리로, 맹금류는 전선으로 밀릴 뿐이며 H06 박솔의 레이더 한 점수는 고도별로 다시 적어야 한다."},
+      "bestiary": {"common_ecology":"S06 대한민국정부 수변 기록 데크와 S11 서초전산그룹 배수 연못에 수조류·섭금류·맹금류가 겹치는 혼합 기착이다. 수조류는 수생 식물과 부유물, 섭금류는 저서생물, 맹금류는 설치류와 지친 소형 조류를 먹는다. 통합 지휘나 도시를 공격하려는 목적은 없다.","variant_relation":"넓깃자리부터 추격날개까지는 기능군이 다른 야생 조류다. 연못거울과 열린거울은 중간 기착의 수면 자체이고, 세층비상은 세 높이가 한 교량 단면에 겹치는 공중의 매듭이다. 옥상물받이는 습지가 마른 건기에 내륙 분수와 옥상 물받이를 쓰는 같은 수조류의 갈래다.","command_scope":"시각이 주력이라 수면 반사, 작업 조끼 색, 드론 실루엣에 이륙한다. 엔진음과 확성은 거리만 알려 주고 전자 신호와 수문 숫자는 모른다. 수조류가 개방면을 덮으면 섭금류는 가장자리로, 맹금류는 전선으로 밀릴 뿐이며 H06 박솔의 레이더 한 점수는 고도별로 다시 적어야 한다."},
       "category": "animal-urban",
       "owner": "wiki-world",
       "source_kind": "original-fiction",
@@ -16561,7 +16561,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
         "Hostile-Ecology-Index.md"
       ],
       "modern_anxiety": "습지 복원 실패 구간에 모인 철새·포식 조류 무리가 교량 보행로·철도 차량기지 구내선·수문 시야를 가로채는 충돌 불안",
-      "fictional_origin": "한강·난지·암사 일대 단절 녹지와 실패 복원 습지에 철새 중간 기착이 겹치고, 붕괴 후 관리 공백으로 포식 조류와 잡식 수조류가 혼합 군락을 이뤄 철새습지포식군이 됐다.\n\nS06 대한민국정부 수변 기록 데크와 S11 삼성그룹 차량기지 배수 연못이 핵심 노드다.\n\n현실 보호구역 자료는 철새도래지와 습지 위치의 참고 범위로만 사용하며, 혼합 기능군의 협상 규칙은 허구다.",
+      "fictional_origin": "한강·난지·암사 일대 단절 녹지와 실패 복원 습지에 철새 중간 기착이 겹치고, 붕괴 후 관리 공백으로 포식 조류와 잡식 수조류가 혼합 군락을 이뤄 철새습지포식군이 됐다.\n\nS06 대한민국정부 수변 기록 데크와 S11 서초전산그룹 차량기지 배수 연못이 핵심 노드다.\n\n현실 보호구역 자료는 철새도래지와 습지 위치의 참고 범위로만 사용하며, 혼합 기능군의 협상 규칙은 허구다.",
       "territory_migration": "핵심 서식은 S06 수변 습지 파편과 S11 배수 연못·전선 횃대다.\n\n계절 이동 때는 XT01 임진강관문전구 방향 바람길을 타고 북-남 축을 오가며, 번식·기착 피크에는 교량·수문 시야와 차량기지 구내선 상공을 점유한다.\n\n습지가 마르면 내륙 공원 분수·옥상 물받이로 일시 이동한다.",
       "economy": "수조류는 수생 식물·유기 부유물 섭금류는 얕은 물의 저서생물 맹금류는 설치류와 약한 조류를 먹는다.\n\n안전한 횃대·얕은 수면·먹이터 사이 거리가 유지 비용이다.\n\nHC06 노량진배달가이 습지 수위를 일방 배수하면 수조류는 차량기지 연못으로, 섭금류는 진흙 가장자리로 몰리고 맹금류는 그 밀집을 따라온다.\n\n수위를 고정하면 기착 밀도와 차량기지 구내선의 열차·조류 충돌 위험이 함께 오른다.",
       "lifecycle": "봄·가을에는 수조류와 섭금류가 먼저 얕은 수면에 기착하고, 먹이 밀도가 오르면 맹금류가 뒤따른다.\n\n번식지는 별도 보호구역에 있고 차량기지 연못은 중간 기착지로만 쓰인다.\n\n수위가 급락하면 수조류가 먼저 떠나고 섭금류·맹금류의 먹이 관계도 연쇄적으로 풀린다.",
@@ -16660,7 +16660,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "dossier_ref": "G06"
         }
       ],
-      "dossier_prose": "G06 철새습지포식군은 한강·난지·암사 일대의 단절된 녹지와 복원에 실패한 습지 파편에 여러 조류 기능군이 겹치면서 형성된 혼합 군집이다.\n\nS06 대한민국정부의 수변 기록 데크와 S11 삼성그룹 차량기지 배수 연못이 핵심 기착지이며, 수조류와 섭금류가 먹이를 찾는 곳을 맹금류가 뒤따른다.\n\n교량 보행로, 수문 관측선 차량기지 구내선 상공이 동시에 점유되면 시민은 거대한 새 떼를 하나의 적대 집단처럼 받아들이기 쉽다.\n\n그러나 이들에게 통합된 지휘 체계나 도시를 공격하려는 목적은 없다.\n\n현실의 철새도래지와 보호 습지는 장소와 이동 생태를 이해하기 위한 참. 범위일 뿐이며, 서로 다른 기능군과 수위·시간표를 교환하는 협상 규칙은 이 세계에 한정된 허구다.\n\n실제 보호 활동의 성패를 특정 기관의 책임으로 환원해서도 안 된다.\n\n철새습지포식군의 영역은 고정된 경계가 아니라 물과 바람, 먹이의 밀도에 따라 움직이는 연결망이다.\n\n평상시에는 S06의 얕은 수면과 진흙 가장자리, S11의 배수 연못과 전선 횃대가 중심이 된다.\n\n계절 이동기에는 XT01 임진강관문전구 방향의 바람길을 따라 북쪽과 남쪽을 오가며, 기착과 이동이 겹치는 날에는 교량과 수문 차량기지 입출고선까지 점유한다.\n\n습지가 마르면 내륙 공원의 분수와 옥상 물받이로 흩어지지만, 이는 이주가 끝난 것이 아니라 다음 수면을 찾는 임시 이동이다.\n\n수조류는 수생 식물과 유기 부유물을, 섭금류는 얕은 물의 저서생물을 맹금류는 설치류와 약한 조류를 먹는다.\n\n안전한 횃대와 먹이터, 얕은 수면 사이의 거리가 짧을수록 군집은 오래 머문다.\n\nHC06 노량진배달가이 수문 시야를 확보하려. 습지 수위를 일방적으로 낮추면 수조류는 S11 배수 연못으로 이동하고, 섭금류는 드러난 진흙 가장자리에 밀집한다.\n\n맹금류는 그 밀도를 따라 차량기지 전선과 철탑으로 옮겨 간다.\n\n반대로 수위를 일정하게 고정하면 기착지는 안정되지만 개체 수가 늘어 열차와 조류의 충돌 위험도 커진다.\n\n봄과 가을에는 수조류와 섭금류가 먼저 도착하고 먹이가 충분해진 뒤 맹금류가 나타난다.\n\n차량기지 연못은 번식지가 아니라 중간 기착지이므로, 수위가 급락하면 수조류가 먼저 떠나. 남은 섭금류와 맹금류의 먹이 관계도 차례로 풀린다.\n\n한 기능군만 제거하거나 몰아내면 문제가 끝나는 것이 아니라 다른 기능군의 공간 사용이 예상하지 못한 방향으로 바뀐다.\n\n이 군집은 시각에 크게 의존한다.\n\n수면의 반사, 작업 조끼의 색 드론의 실루엣이 이륙과 회피 반응을 일으키며 엔진음과 총성 경. 확성은 위험의 거리와 방향을 판단하는 단서가 된다.\n\n어분과 부패 냄새에도 반응하지만 전자 신호를 이해하지는 못한다.\n\nH06 박솔의 레이더 기반 고도 분류는 대규모 이동을 조기에 포착할 수 있으나 풍선, 드론 새 떼를 혼동할 수 있어 육안 확인이 필요하다.\n\n수조류는 개방 수면을 무리로 점유하고, 섭금류는 일정한 간격을 두. 가장자리를 훑으며 맹금류는 높은 전선과 철탑에서 두 기능군의 밀도를 살핀다.\n\nH06이 이들을 하나의 적대 점수로 합치면 HC06 생태 당직은 고도, 수면 구역 개체 수를 기능군별로 다시 기록한다.\n\n개체들은 반복되는 열차 시간과 저소음 점검 시간을 학습한다.\n\n한 계절 안에 달라진 이동 경로는 이런 학습의 결과이며, 여러 세대에 걸친 이동 시기 변화는 먹이와 기후가 가한 선택압으로 구분한다.\n\n도시 시간표에 익숙해진 개체는 정해진 감속 구간을 안전 신호로 이용하지만, 그만큼 자연 습지의 불규칙한 위험에는 둔감해질 수 있다.\n\n상황은 수면 재배치에서 시작된다.\n\n수조류가 좁은 수면에 밀리고 섭금류가 선로변 점검통로까지 넓어지면 맹금류의 추격 한 번으로 전체 무리가 솟구친다.\n\n이것이 수문 시야와 입출고선을 가로지르는 연쇄 비상이다.\n\n같은 충돌이 세 차례 반복되면 토벌이 아니라 계절 운행 협정 단계로 넘어가 열차 감속, 구내선 폐쇄 수면 구획을 함께 조정해야 한다.\n\n총격과 대량 그물 포획은 빠르게 보이지만 군집을 예측 불가능하게 흩뜨리고 생태적 정당성도 잃게 한다.\n\n기본 대응은 구획별 수위 조절, 어분 쓰레기 회수 입출고선 밖 대체 횃대 설치 저소음 작업 시간 확보 드론 고도 제한이다.\n\nHC06은 수조류에게 개방 수면을, 섭금류에게 얕은 진흙 가장자리를 맹금류에게 선로 밖 높은 횃대를 따로 제공한다.\n\nXT01 철새 이동 주간에는 열차 감속 시간과 저소음 점검 시간을 함께 공고하고 낚시와 수거 금지 시간도 기능군별로 조정한다.\n\n성공은 쫓아낸 개체 수가 아니라 수문 시야 확보 시간, 열차와 조류의 충돌 0건 구내선 침범 횟수 수질 탁도로 판단한다.\n\n외형만 보고 보호할 새와 제거할 새를 가르면 밀거래와 오인 포획이 끼어들 여지도 커진다.\n\nG06-SC1 ‘얕은 물의 세 기능군’은 S06의 수위가 낮아져 수조류, 섭금류 맹금류가 하나의 좁은 수면에 겹치면서 시작된다.\n\nS06과 HC06은 펌프를 더 가동해 구획별 수위를 다르게 만들 수 있다.\n\n개방 수면과 진흙 가장자리가 분리되어 충돌은 줄지만 노동과 에너지 소비가 늘어난다.\n\n섭금류 먹이터를 차량기지 밖에 새로 조성하면 가장자리 밀집을 줄일 수 있으나 토지와 준설 비용을 감수해야 한다.\n\n맹금류 대체 횃대를 습지 외곽에 설치하면 구내선 충돌을 낮출 수 있지만 설치류 포식 위치가 주거지 쪽으로 바뀔 수 있다.\n\nH06의 관측 자료는 한 종류의 새를 원인으로 지목하기보다 세 기능군의 위치와 먹이 관계를 함께 보여 주어야 한다.\n\nG06-SC2 ‘열차 시간표를 배운 새’에서는 S11 차량기지의 감속 시간이 바뀐 뒤 기착 무리가 선로 점검 시간에 맞춰 솟구친다.\n\n수조류는 이전 감속 시간을 안전한 이륙 신호로 배웠고, 맹금류는 그때 낮아지는 무리를 사냥 기회로 익혔기 때문에 두 학습이 새 시간표와 충돌한다.\n\n감속 시간을 원래대로 돌리면 충돌 예측은 쉬워지지만 피난과 물류가 늦어진다.\n\n기능군별 대체 횃대를 설치하면 장기적으로 경로를 분리할 수 있으나 지속적인 보수와 관측이 필요하다.\n\n경적과 드론으로 즉시 해산하면 당장의 선로는 비울 수 있지만, 새들이 운행 신호와 안전 시간을 연결해 온 학습을 무너뜨려 다음 이동을 더 불규칙하게 만든다.\n\n인간의 운행 효율을 위해 야생동물이 축적한 안전 규칙을 일방적으로 바꿀 수 있는지가 S06, S11 HC06 H06 사이의 핵심 쟁점이 된다.\n\nG06-SC3 ‘철새 주간의 선로’는 XT01 방면의 대규모 이동과 수문 점검이 겹쳐 교량 보행로와 차량기지 입출고선이 반복 점유될 때 발생한다.\n\n수조류의 수면 이륙, 섭금류의 가장자리 이동 맹금류의 추격이 서로 다른 높이에서 연쇄 충돌을 만든다.\n\n철새 시간표에 맞춰 운행을 감축하면 충돌 가능성은 가장 직접적으로 줄지만 피난과 물류가 느려진다.\n\n수면과 횃대 구획을 확장하면 기능군을 분리할 수 있으나 시민의 산책 공간과 차량기지 작업 공간을 줄여야 한다.\n\n수면을 말려 군집을 내보내는 방법은 당장 시야를 확보하지만 먼지와 악취를 만들고 설치류나 다른 포식자를 불러들인다.\n\n복원 실패를 감추려고 군집을 전면 제거하면 하류 정화와 국제 이동 생태축까지 약해진다.\n\n결국 공존 협정은 새를 위해 도시를 멈추는 선언도, 도시를 위해 습지를 비우는 명령도 아니다.\n\n어느 계절에 얼마만큼 이동권과 공간을 서로 양보할지 공개적으로 정하고, 그 비용을 특정 구역 주민에게만 떠넘기지 않는 약속이다.\n\n철새습지포식군의 장기 관리는 이동기마다 임시 대응반을 꾸리는 수준을 넘어 S06, S11 HC06이 수면과 선로를 하나의 계절 자산으로 인계하는 체계를 요구한다.\n\nS06은 수위 구배, 탁도 저서생물 밀도와 기능군별 15분 점유율을 재. S11은 이륙 고도·구내선 침범·급제동·충돌 직전 회피 건수를 운행 시간대와 묶어 남기며 H06은 레이더 분류마다 육안 확인 비율과 오인률을 공개한다.\n\n맹금류 횃대 체류 시간이 늘면서 수조류의 집단 이륙이 기준선을 넘거나, 탁도가 안정됐는데 섭금류 먹이활동만 줄면 단순 개체 수가 아닌 공간 배치 실패로 판정한다.\n\n시간표 변경이나 수위 조절 실패로 연쇄 비상이 일어나면 강제 해산을 반복하지 않. 저소음 창을 직전 합의 시각으로 되돌린 뒤, 선로 밖 임시 수면과 높이가 다른 대체 횃대를 열어 기능군을 순차적으로 분산한다.\n\n복구 완료는 한 번의 무사 통과가 아니라 연속 두 이동기 동안 충돌 0건, 침범 감소 수문 시야 확보율 회복 저서생물 밀도의 허용 범위 유지가 함께 확인될 때 선언한다.\n\n실패 원인은 다음 계절 협정에 반영해 감속 구간과 펌프 가동 책임을 교대하고, 특정 수변 주민에게 소음과 통행 제한이 몰리지 않도록 보상 시간을 배분한다.\n\n다만 선로 밖 횃대를 오래 유지하면 배설물이 특정 수면에 집중되어 인·질소 등 영양염이 쌓이고, 뒤이은 곤충 발생이 다음 철의 먹이 밀도를 높여 더 큰 기착 무리를 부를 수 있다.\n\n그러므로 횃대 아래 영양염과 곤충 우화량까지 측정하고 위치를 주기적으로 쉬게 하는 일이 충돌 예방만큼 중요한 관리가 된다.",
+      "dossier_prose": "G06 철새습지포식군은 한강·난지·암사 일대의 단절된 녹지와 복원에 실패한 습지 파편에 여러 조류 기능군이 겹치면서 형성된 혼합 군집이다.\n\nS06 대한민국정부의 수변 기록 데크와 S11 서초전산그룹 차량기지 배수 연못이 핵심 기착지이며, 수조류와 섭금류가 먹이를 찾는 곳을 맹금류가 뒤따른다.\n\n교량 보행로, 수문 관측선 차량기지 구내선 상공이 동시에 점유되면 시민은 거대한 새 떼를 하나의 적대 집단처럼 받아들이기 쉽다.\n\n그러나 이들에게 통합된 지휘 체계나 도시를 공격하려는 목적은 없다.\n\n현실의 철새도래지와 보호 습지는 장소와 이동 생태를 이해하기 위한 참. 범위일 뿐이며, 서로 다른 기능군과 수위·시간표를 교환하는 협상 규칙은 이 세계에 한정된 허구다.\n\n실제 보호 활동의 성패를 특정 기관의 책임으로 환원해서도 안 된다.\n\n철새습지포식군의 영역은 고정된 경계가 아니라 물과 바람, 먹이의 밀도에 따라 움직이는 연결망이다.\n\n평상시에는 S06의 얕은 수면과 진흙 가장자리, S11의 배수 연못과 전선 횃대가 중심이 된다.\n\n계절 이동기에는 XT01 임진강관문전구 방향의 바람길을 따라 북쪽과 남쪽을 오가며, 기착과 이동이 겹치는 날에는 교량과 수문 차량기지 입출고선까지 점유한다.\n\n습지가 마르면 내륙 공원의 분수와 옥상 물받이로 흩어지지만, 이는 이주가 끝난 것이 아니라 다음 수면을 찾는 임시 이동이다.\n\n수조류는 수생 식물과 유기 부유물을, 섭금류는 얕은 물의 저서생물을 맹금류는 설치류와 약한 조류를 먹는다.\n\n안전한 횃대와 먹이터, 얕은 수면 사이의 거리가 짧을수록 군집은 오래 머문다.\n\nHC06 노량진배달가이 수문 시야를 확보하려. 습지 수위를 일방적으로 낮추면 수조류는 S11 배수 연못으로 이동하고, 섭금류는 드러난 진흙 가장자리에 밀집한다.\n\n맹금류는 그 밀도를 따라 차량기지 전선과 철탑으로 옮겨 간다.\n\n반대로 수위를 일정하게 고정하면 기착지는 안정되지만 개체 수가 늘어 열차와 조류의 충돌 위험도 커진다.\n\n봄과 가을에는 수조류와 섭금류가 먼저 도착하고 먹이가 충분해진 뒤 맹금류가 나타난다.\n\n차량기지 연못은 번식지가 아니라 중간 기착지이므로, 수위가 급락하면 수조류가 먼저 떠나. 남은 섭금류와 맹금류의 먹이 관계도 차례로 풀린다.\n\n한 기능군만 제거하거나 몰아내면 문제가 끝나는 것이 아니라 다른 기능군의 공간 사용이 예상하지 못한 방향으로 바뀐다.\n\n이 군집은 시각에 크게 의존한다.\n\n수면의 반사, 작업 조끼의 색 드론의 실루엣이 이륙과 회피 반응을 일으키며 엔진음과 총성 경. 확성은 위험의 거리와 방향을 판단하는 단서가 된다.\n\n어분과 부패 냄새에도 반응하지만 전자 신호를 이해하지는 못한다.\n\nH06 박솔의 레이더 기반 고도 분류는 대규모 이동을 조기에 포착할 수 있으나 풍선, 드론 새 떼를 혼동할 수 있어 육안 확인이 필요하다.\n\n수조류는 개방 수면을 무리로 점유하고, 섭금류는 일정한 간격을 두. 가장자리를 훑으며 맹금류는 높은 전선과 철탑에서 두 기능군의 밀도를 살핀다.\n\nH06이 이들을 하나의 적대 점수로 합치면 HC06 생태 당직은 고도, 수면 구역 개체 수를 기능군별로 다시 기록한다.\n\n개체들은 반복되는 열차 시간과 저소음 점검 시간을 학습한다.\n\n한 계절 안에 달라진 이동 경로는 이런 학습의 결과이며, 여러 세대에 걸친 이동 시기 변화는 먹이와 기후가 가한 선택압으로 구분한다.\n\n도시 시간표에 익숙해진 개체는 정해진 감속 구간을 안전 신호로 이용하지만, 그만큼 자연 습지의 불규칙한 위험에는 둔감해질 수 있다.\n\n상황은 수면 재배치에서 시작된다.\n\n수조류가 좁은 수면에 밀리고 섭금류가 선로변 점검통로까지 넓어지면 맹금류의 추격 한 번으로 전체 무리가 솟구친다.\n\n이것이 수문 시야와 입출고선을 가로지르는 연쇄 비상이다.\n\n같은 충돌이 세 차례 반복되면 토벌이 아니라 계절 운행 협정 단계로 넘어가 열차 감속, 구내선 폐쇄 수면 구획을 함께 조정해야 한다.\n\n총격과 대량 그물 포획은 빠르게 보이지만 군집을 예측 불가능하게 흩뜨리고 생태적 정당성도 잃게 한다.\n\n기본 대응은 구획별 수위 조절, 어분 쓰레기 회수 입출고선 밖 대체 횃대 설치 저소음 작업 시간 확보 드론 고도 제한이다.\n\nHC06은 수조류에게 개방 수면을, 섭금류에게 얕은 진흙 가장자리를 맹금류에게 선로 밖 높은 횃대를 따로 제공한다.\n\nXT01 철새 이동 주간에는 열차 감속 시간과 저소음 점검 시간을 함께 공고하고 낚시와 수거 금지 시간도 기능군별로 조정한다.\n\n성공은 쫓아낸 개체 수가 아니라 수문 시야 확보 시간, 열차와 조류의 충돌 0건 구내선 침범 횟수 수질 탁도로 판단한다.\n\n외형만 보고 보호할 새와 제거할 새를 가르면 밀거래와 오인 포획이 끼어들 여지도 커진다.\n\nG06-SC1 ‘얕은 물의 세 기능군’은 S06의 수위가 낮아져 수조류, 섭금류 맹금류가 하나의 좁은 수면에 겹치면서 시작된다.\n\nS06과 HC06은 펌프를 더 가동해 구획별 수위를 다르게 만들 수 있다.\n\n개방 수면과 진흙 가장자리가 분리되어 충돌은 줄지만 노동과 에너지 소비가 늘어난다.\n\n섭금류 먹이터를 차량기지 밖에 새로 조성하면 가장자리 밀집을 줄일 수 있으나 토지와 준설 비용을 감수해야 한다.\n\n맹금류 대체 횃대를 습지 외곽에 설치하면 구내선 충돌을 낮출 수 있지만 설치류 포식 위치가 주거지 쪽으로 바뀔 수 있다.\n\nH06의 관측 자료는 한 종류의 새를 원인으로 지목하기보다 세 기능군의 위치와 먹이 관계를 함께 보여 주어야 한다.\n\nG06-SC2 ‘열차 시간표를 배운 새’에서는 S11 차량기지의 감속 시간이 바뀐 뒤 기착 무리가 선로 점검 시간에 맞춰 솟구친다.\n\n수조류는 이전 감속 시간을 안전한 이륙 신호로 배웠고, 맹금류는 그때 낮아지는 무리를 사냥 기회로 익혔기 때문에 두 학습이 새 시간표와 충돌한다.\n\n감속 시간을 원래대로 돌리면 충돌 예측은 쉬워지지만 피난과 물류가 늦어진다.\n\n기능군별 대체 횃대를 설치하면 장기적으로 경로를 분리할 수 있으나 지속적인 보수와 관측이 필요하다.\n\n경적과 드론으로 즉시 해산하면 당장의 선로는 비울 수 있지만, 새들이 운행 신호와 안전 시간을 연결해 온 학습을 무너뜨려 다음 이동을 더 불규칙하게 만든다.\n\n인간의 운행 효율을 위해 야생동물이 축적한 안전 규칙을 일방적으로 바꿀 수 있는지가 S06, S11 HC06 H06 사이의 핵심 쟁점이 된다.\n\nG06-SC3 ‘철새 주간의 선로’는 XT01 방면의 대규모 이동과 수문 점검이 겹쳐 교량 보행로와 차량기지 입출고선이 반복 점유될 때 발생한다.\n\n수조류의 수면 이륙, 섭금류의 가장자리 이동 맹금류의 추격이 서로 다른 높이에서 연쇄 충돌을 만든다.\n\n철새 시간표에 맞춰 운행을 감축하면 충돌 가능성은 가장 직접적으로 줄지만 피난과 물류가 느려진다.\n\n수면과 횃대 구획을 확장하면 기능군을 분리할 수 있으나 시민의 산책 공간과 차량기지 작업 공간을 줄여야 한다.\n\n수면을 말려 군집을 내보내는 방법은 당장 시야를 확보하지만 먼지와 악취를 만들고 설치류나 다른 포식자를 불러들인다.\n\n복원 실패를 감추려고 군집을 전면 제거하면 하류 정화와 국제 이동 생태축까지 약해진다.\n\n결국 공존 협정은 새를 위해 도시를 멈추는 선언도, 도시를 위해 습지를 비우는 명령도 아니다.\n\n어느 계절에 얼마만큼 이동권과 공간을 서로 양보할지 공개적으로 정하고, 그 비용을 특정 구역 주민에게만 떠넘기지 않는 약속이다.\n\n철새습지포식군의 장기 관리는 이동기마다 임시 대응반을 꾸리는 수준을 넘어 S06, S11 HC06이 수면과 선로를 하나의 계절 자산으로 인계하는 체계를 요구한다.\n\nS06은 수위 구배, 탁도 저서생물 밀도와 기능군별 15분 점유율을 재. S11은 이륙 고도·구내선 침범·급제동·충돌 직전 회피 건수를 운행 시간대와 묶어 남기며 H06은 레이더 분류마다 육안 확인 비율과 오인률을 공개한다.\n\n맹금류 횃대 체류 시간이 늘면서 수조류의 집단 이륙이 기준선을 넘거나, 탁도가 안정됐는데 섭금류 먹이활동만 줄면 단순 개체 수가 아닌 공간 배치 실패로 판정한다.\n\n시간표 변경이나 수위 조절 실패로 연쇄 비상이 일어나면 강제 해산을 반복하지 않. 저소음 창을 직전 합의 시각으로 되돌린 뒤, 선로 밖 임시 수면과 높이가 다른 대체 횃대를 열어 기능군을 순차적으로 분산한다.\n\n복구 완료는 한 번의 무사 통과가 아니라 연속 두 이동기 동안 충돌 0건, 침범 감소 수문 시야 확보율 회복 저서생물 밀도의 허용 범위 유지가 함께 확인될 때 선언한다.\n\n실패 원인은 다음 계절 협정에 반영해 감속 구간과 펌프 가동 책임을 교대하고, 특정 수변 주민에게 소음과 통행 제한이 몰리지 않도록 보상 시간을 배분한다.\n\n다만 선로 밖 횃대를 오래 유지하면 배설물이 특정 수면에 집중되어 인·질소 등 영양염이 쌓이고, 뒤이은 곤충 발생이 다음 철의 먹이 밀도를 높여 더 큰 기착 무리를 부를 수 있다.\n\n그러므로 횃대 아래 영양염과 곤충 우화량까지 측정하고 위치를 주기적으로 쉬게 하는 일이 충돌 예방만큼 중요한 관리가 된다.",
       "prose": "서울역 수변 기록 데크에서 수조류는 얕은 수면을 훑고, 섭금류는 진흙 가장자리를 따라 걷. 맹금류는 차량기지 밖 대체 횃대에서 두 무리를 내려다본다.\n\nHC06 노량진배달가 당직은 수위 게이지와 기능군별 통행표를 펼치고, H06 박솔은 고도 점을 조류·드론·풍선으로 나눠 기록한다.\n\nS11 선로 점검 시간에는 열차를 늦추고, XT01 바람길에 새 파도가 실리면 교량 보행 시간을 한 시간 줄인다.\n\n어느 줄에도 실재 보호구역 관리 실패를 특정 기관의 죄로 적지 않고, 기능군별 개체 수와 시야 확보 시각만 남긴다."
     },
     {
@@ -16908,7 +16908,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
     {
       "id": "G09",
       "display_name": "저온포자숙주",
-      "bestiary": {"common_ecology":"상암 냉각 부속 회랑에서 전국경제인연합회 냉동 스택과 아차산 검수 창의 결로를 관리하는 작업 단위다. 피부의 공생막이 저온에서 수분 손실을 늦추고 미세 온도 차를 알려 주지만 상온에 오래 있으면 갈라진다. 저온조·완충조·검수조가 식량 한계, 체류 시간, 컨테이너 상태를 나누어 보고하며 가장 차가운 자에게 권한이 모이지 않는다.","variant_relation":"도첩의 숙주는 막을 떼지 않고 온도 폭을 지키는 사람들이다. 냉맥포자 운반자 이후는 서리주머니, 균사 펌프, 발효실처럼 숙주 조직이 포자와 결합한 변이고, 빙관 목자와 진동 잠복꾼, 잡음 중계체는 자력 운반구·지반 센서·차폐 안테나를 몸에 넣은 생체기계 갈래다. 휴면핵 협상주는 여러 기억층을 품은 전장 교섭 개체이지 군락 전체의 성장 단계가 아니다.","command_scope":"보통 숙주는 어느 손가락이 더 차가운지, 목덜미 결로가 어느 쪽으로 마르는지, 문틈 습도가 얼마나 늦게 변하는지를 읽는다. 벽 너머를 보거나 설비를 장악하지 못하며 막이 산패하는 냄새가 경보다. 변이체의 냉매와 항빙당, 냉각액이 바닥나면 행렬이 줄고, 급속 가열은 남은 판단보다 살포를 앞당긴다."},
+      "bestiary": {"common_ecology":"상암 냉각 부속 회랑에서 여의도출자연합회 냉동 스택과 아차산 검수 창의 결로를 관리하는 작업 단위다. 피부의 공생막이 저온에서 수분 손실을 늦추고 미세 온도 차를 알려 주지만 상온에 오래 있으면 갈라진다. 저온조·완충조·검수조가 식량 한계, 체류 시간, 컨테이너 상태를 나누어 보고하며 가장 차가운 자에게 권한이 모이지 않는다.","variant_relation":"도첩의 숙주는 막을 떼지 않고 온도 폭을 지키는 사람들이다. 냉맥포자 운반자 이후는 서리주머니, 균사 펌프, 발효실처럼 숙주 조직이 포자와 결합한 변이고, 빙관 목자와 진동 잠복꾼, 잡음 중계체는 자력 운반구·지반 센서·차폐 안테나를 몸에 넣은 생체기계 갈래다. 휴면핵 협상주는 여러 기억층을 품은 전장 교섭 개체이지 군락 전체의 성장 단계가 아니다.","command_scope":"보통 숙주는 어느 손가락이 더 차가운지, 목덜미 결로가 어느 쪽으로 마르는지, 문틈 습도가 얼마나 늦게 변하는지를 읽는다. 벽 너머를 보거나 설비를 장악하지 못하며 막이 산패하는 냄새가 경보다. 변이체의 냉매와 항빙당, 냉각액이 바닥나면 행렬이 줄고, 급속 가열은 남은 판단보다 살포를 앞당긴다."},
       "category": "humanoid-mutant",
       "owner": "wiki-world",
       "source_kind": "original-fiction",
@@ -16921,8 +16921,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
         "Hostile-Ecology-Index.md"
       ],
       "modern_anxiety": "저온 물류 창고와 냉동 회랑에 피는 포자 막이 호흡과 식량 재고를 동시에 위협한다는 불안이 배급 창구 앞에 남는다.\n\n압축기 소리가 끊기면 사람들은 온도계부터 본다.\n\n창작 저온 원장으로만 서술하고 실재 물류기업 귀속은 쓰지 않는다.\n\n포자 외양을 질병 낙인으로 고정하지 않는다.",
-      "fictional_origin": "전국경제인연합회 냉각 부속과 관문군정 저온 검수 창 사이에서 붕괴 후 멈춘 냉동 스택이 포자 막을 키웠다.\n\n그 온도대역을 오가며 재고를 지키던 야간 단위가 저온에서만 안정되는 피부 공생막을 얻었고 저온포자숙주로 불리게 되었다.\n\n공생은 생존 기술이지 도덕적 타락의 표지가 아니다.\n\n초기 기록의 곰팡이 소동은 냉각 슬롯 거래가 생기며 생태 원장으로 정리되었다.\n\n특정 병명의 환자를 괴물로 재현하지 않는다.",
-      "territory_migration": "핵심 서식은 상암 냉각 부속 저온 회랑이다.\n\n해동 주기와 송신 열부하가 올라가면 아차산 검수 창과 저온 창고로 이동한다.\n\n두만강극동전구의 광물과 연료 열차가 냉열을 뺏으면 외곽 압력에 반응한다.\n\n상온 장기 체류는 피부막 붕괴로 스스로 제한된다.\n\n연결 국가는 전국경제인연합회와 관문군정이다.",
+      "fictional_origin": "여의도출자연합회 냉각 부속과 관문군정 저온 검수 창 사이에서 붕괴 후 멈춘 냉동 스택이 포자 막을 키웠다.\n\n그 온도대역을 오가며 재고를 지키던 야간 단위가 저온에서만 안정되는 피부 공생막을 얻었고 저온포자숙주로 불리게 되었다.\n\n공생은 생존 기술이지 도덕적 타락의 표지가 아니다.\n\n초기 기록의 곰팡이 소동은 냉각 슬롯 거래가 생기며 생태 원장으로 정리되었다.\n\n특정 병명의 환자를 괴물로 재현하지 않는다.",
+      "territory_migration": "핵심 서식은 상암 냉각 부속 저온 회랑이다.\n\n해동 주기와 송신 열부하가 올라가면 아차산 검수 창과 저온 창고로 이동한다.\n\n두만강극동전구의 광물과 연료 열차가 냉열을 뺏으면 외곽 압력에 반응한다.\n\n상온 장기 체류는 피부막 붕괴로 스스로 제한된다.\n\n연결 국가는 여의도출자연합회와 관문군정이다.",
       "economy": "주 자원은 안정 저온을 유지하는 에너지 포자 막을 먹이는 제한 유기 잔여 냉각수 막 두께를 조절하는 염과 당 미량이다.\n\n서울역재고가의 생활재 재고 원장과 저온 보관 슬롯과 직접 경합한다.\n\n고철은 문짝과 덕트 보수에만 쓰고 식량 약탈을 일차 목표로 두지 않는다.\n\n온도 상한과 하한이 곧 경제 상한이다.\n\n냉각 킬로와트가 줄면 확장이 멈추고 유기 잔여 투입도 같이 줄인다.\n\n생활재 원장과 포자 막 원장은 장부를 분리해 섞지 않는다.\n\n냉각 슬롯 경매 문구는 쓰지 않으며 순번 원장만 인정한다.\n\n염과 당 미량은 막 두께 조절에만 쓰고 식량 조미와 장부를 섞지 않는다.",
       "lifecycle": "저온포자숙주는 냉동기의 가동과 정지를 번갈아 겪으며 한 덩어리로 자라지 않는다.\n\n압축기가 밤새 멈추면 얇은 막이 깔판 아래 그늘로 후퇴하고, 아침 재기동 때 차가운 공기가 먼저 닿는 모서리마다 작은 군락이 깨어난다.\n\n군락 사이 온도 차가 좁혀지면 서로 합쳐지는 대신 식량 창고와 송신 장비 사이에 냉열 경계선을 긋는다.\n\n재고 담당이 유기 잔여를 줄여도 막이 바로 사라지지 않는 이유는 습도가 기억처럼 남기 때문이다.\n\n아차산 검수 창에서 저온 컨테이너가 비면 일부 숙주는 스스로 공생막을 말려 이동을 중단하고, 남은 이들은 다음 냉각 주기까지 식량 통로의 결로를 닦는다.\n\n급격한 해동으로 막이 벗겨질 때에는 흩어진 포자가 다시 자라는 것이 아니라 환기 방향에 따라 서로 다른 창고의 부담으로 넘어간다.",
       "senses": "주 감각은 피부 온도 구배와 습도다.\n\n보조로 압축기 저주파 진동과 송풍 제어의 약한 전자 잡음을 읽는다.\n\n냄새로 막의 산패를 감지하지만 전 구역 투시나 전파 장악은 없다.\n\n합성 조하람의 온도 오탐 필터가 필수다.\n\n급격한 해동 구간에서는 감각이 둔해져 이동을 멈춘다.",
@@ -17019,7 +17019,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
         }
       ],
       "prose": "상암 냉각 부속에서 압축기 두 대가 서로 다른 박자로 떤다.\n\n저온포자숙주는 얇은 막을 문처럼 세우지 않고 결로가 흐르는 방향에 작은 홈을 내어 차가운 길을 표시한다.\n\n첫 사건은 막 두께를 줄이는 거래가 아니다.\n\n야간 정전 뒤 냉동기가 재기동되자 피난 식량은 아직 차갑지만 방송 송신기의 열이 임계에 닿는다.\n\n플레이어가 식량 창고 냉각을 십 분 끄면 재난 경보를 내보낼 수 있고, 방송을 포기하면 외곽 피난 열차가 위험 구간을 모르. 들어온다.\n\n둘째 사건에서는 유기 잔여를 둘러싼 흥정 대신 아차산 검수 창의 온도 기록이 조작된다.\n\n조작을 공개하면 멀쩡한 컨테이너까지 신뢰를 잃어 배급이 줄고, 덮으면 숙주가 잘못된 냉열선을 따라 송신 전선 덕트로 이동한다.\n\n마지막 사건에서 막은 과열로 우연히 갈라지지 않는다.\n\n세 온도조가 방송 냉각과 식량 보존을 동시에 유지할 수 없다고 판단해 스스로 경계선을 지우고 각기 다른 창고로 흩어진다.\n\n플레이어는 빈 지하상가를 임시 저온 피난처로 내주거나, 두 시설 중 하나를 공식 폐쇄해야 한다.\n\n남은 비용은 통행 창 하나가 아니라 버린 식량의 무게와 전달하지 못한 경보의 시간이다.\n\n포자 흔적이 있는 사람을 질병 명부에 올리지 않는 원칙은 이 손실을 누가 감수했는지 공개하는 데서 지켜진다.",
-      "dossier_prose": "G09 저온포자숙주는 상암의 지하 냉각 부속에서 처음 하나의 집단으로 기록되었다.\n\n붕괴 직후 전국경제인연합회(S09)의 냉동 스택은 송신기 폐열을 견디지 못하. 멈췄고, 관문군정(S14)으로 이어지던 저온 검수 창도 닫힌 채 결로만 흘렸다.\n\n그 사이 깔판 밑과 냉각핀 뒤에 얇은 포자 막이 자랐다.\n\n야간마다 재고를 옮기던 작업 단위는 그 막을 떼어내기보다 체온과 습도를 맞추는 법을 익혔다.\n\n피부에 자리 잡은 공생막은 저온에서 수분 손실을 늦추. 미세한 온도 차를 알려 주었지만, 상온에 오래 머물면 갈라져 통증과 감각 둔화를 남겼다.\n\n이 때문에 숙주들은 차가운 곳을 점거하는 침입자가 아니라 냉열을 떠날 수 없는 관리 단위가 되었다.\n\n초기에 떠돌던 ‘곰팡이 소동’이라는 말은 냉각 슬롯의 사용 순번과 환기 책임이 정리되면서 생태 원장에서 폐기되었다.\n\n그들의 중심지는 월드컵북로 아래 상암 냉각 부속 회랑이다.\n\n옛 방송 설비의 케이블 도랑, 방화문이 빠진 전실 빗물이 스며드는 적재 승강기까지가 하나의 온도 지도로 이어진다.\n\n송신 열부하가 오르거나 해동 주기가 길어지면 일부는 강변의 차가운 배수관을 따라 아차산 검수 창과 저온 창고로 옮겨 간다.\n\n반대로 두만강극동전구(XT04)에서 온 광물·연료 열차가 냉각수를 선점하면 외곽 창고부터 비워진다.\n\n숙주는 이 이동을 영토 확장으로 여기지 않는다.\n\n공생막을 말린 채 운반 가능한 시간은 짧고, 급격한 해동 구간에서는 온도 구배 감각이 흐려져 제자리에서 움직임을 멈추기 때문이다.\n\n숙주의 감각은 피부 전체에 걸린다.\n\n어느 손가락이 더 차가운지, 목덜미 결로가 어느 방향으로 마르는지 바닥과 문틈 사이 습도가 얼마나 늦게 변하는지를 읽는다.\n\n압축기의 저주파 진동은 방향을 보태. 송풍 제어선의 약한 잡음은 재기동 시점을 짐작하게 하지만, 벽 너머를 보거나 설비를 마음대로 장악하지는 못한다.\n\n막이 산패할 때 나는 냄새도 중요한 경보다.\n\n합성 조하람(H09)은 센서가 금속 표면의 냉기를 공기 온도로 오인하지 않도록 오탐을 걸러 내며, 그 그래프는 반드시 재. 담당자의 냄새 검사와 함께 읽힌다.\n\n이 생태의 화폐는 돈보다 냉각 킬로와트와 유지 가능한 온도 폭에 가깝다.\n\n냉각수, 제한된 유기 잔여 막 두께를 조절할 극소량의 염과 당이 뒤를 잇는다.\n\n염과 당은 조미용 식량과 섞이지 않고 별도 계량되며, 유기 잔여도 배급 재고에서 떼어 내지 않는다.\n\n서울역재고가(HC09)는 생활재 원장과 포자 막 원장을 분리하고, 저온 보관은 경매가 아니라 공개된 순번으로 배정한다.\n\n숙주가 쓰는 고철은 문짝을 맞추고 덕트를 봉합하는 데 그친다.\n\n냉각 출력이 줄면 군락 면적과 먹이 투입을 함께 줄여야 하므로 무한한 증식도, 공짜 보존도 없다.\n\n온도 상한을 넘으면 막이 무너지고, 하한을 지나치면 숙주의 판단과 작업 능력이 먼저 굳는다.\n\n냉동기는 이들을 한 덩어리로 키우지 않는다.\n\n밤새 압축기가 멎으면 막은 깔판 밑 그늘로 후퇴한다.\n\n아침 재기동 때 찬 공기가 먼저 닿는 모서리마다 작은 군락이 깨어나고, 서로의 온도가 가까워져도 합쳐지는 대신 식량 창고와 송신 설비 사이에 냉열 경계선을 긋는다.\n\n유기 잔여가 끊겨도 막이 즉시 사라지지 않는 것은 목재와 단열재에 남은 습도가 이전 주기를 기억하기 때문이다.\n\n아차산에서 컨테이너가 비면 일부 숙주는 공생막을 천천히 말려 이동을 포기하고, 남은 이들은 다음 냉각 전까지 통로 결로를 닦는다.\n\n급격한 해동으로 벗겨진 포자는 곧바로 같은 자리에서 되살아나지 않는다.\n\n환기 흐름을 타고 다른 창고의 결로판과 덕트로 넘어가 부담의 위치만 바꾼다.\n\n권한은 가장 차가운 자에게 있지 않다.\n\n냉동 스택 곁의 저온조는 식량과 막의 보존 한계를, 출입문 부근의 완충조는 작업자의 체온과 체류 시간을 아차산를 왕복하는 검수조는 컨테이너 내부 상태를 보고한다.\n\n세 보고 가운데 하나라도 변질 위험을 제기하면 조하람의 기록과 사람이 맡은 냄새 검사를 대조한다.\n\n숫자와 냄새가 충돌할 때 평균을 내지 않고 해당 깔판을 격리한다.\n\n저온조가 과냉각으로 판단력을 잃었다면 완충조가 그 권력을 넘겨받는 대신 구역을 비워 그 자리의 권한 자체를 소멸시킨다.\n\n느린 절차지만 센서 하나의 오류로 모든 식량을 얼리거나 버리는 사태를 막는다.\n\n위기는 막이 보이는 순간보다 재기동 순서가 뒤집힐 때 시작된다.\n\n첫 이상에서 숙주들은 결로선을 따라 서서 차가운 통행 구간을 표시한다.\n\n송신 장비와 냉동 창고가 같은 전력을 요구하면 막은 더 안정된 진동을 좇아 전선 덕트까지 오른다.\n\n신호 잡음과 식량 온도 변동이 동시에 커지고, 결국 상암의 방송 냉각과 아차산의 식량 검수 가운데 하나를 낮추라는 선택이 남는다.\n\n불로 막을 태우면 상승기류가 포자를 송신실과 검수 창 양쪽에 뿌린다.\n\n대응자는 먼저 이동식 결로판을 세우고, 깔판을 한 줄씩 뒤집어 군락을 분리해야 한다.\n\n압축기 진동을 낮추면 방향 감각을 흐릴 수 있으나 식량도 데워지므로 짧게만 쓸 수 있다.\n\n국소 건조는 비어 있는 검수 창에 한정되며 사람의 공생막에는 강제하지 않는다.\n\n비용은 폐기 식량의 무게, 중단된 방송 시간 새로 오염된 결로판 수로 따로 공개된다.\n\nG09-SC1 ‘정전 뒤 재기동’은 야간 정전 후 피난 식량은 아직 차갑지만 상암 송신기 열이 임계에 닿으면서 열린다.\n\n서로 다른 박자로 떠는 압축기 두 대에 전력을 어떻게 넣을지가 플레이어의 첫 행동이다.\n\n창고 냉각을 십 분 끄고 재난 경보를 보내면 일부 식량이 되돌릴 수 없이 변질된다.\n\n방송을 포기하면 외곽 피난 열차가 위험 구간으로 진입한다.\n\n두 압축기를 반씩 돌리면 양쪽 모두 규격 미달이 되어 이후 모든 재고에 추가 검수가 붙는다.\n\n남는 원장은 전달하지 못한 경보의 분과 버린 식량의 킬로그램을 같은 재기동의 비용으로 묶는다.\n\nG09-SC2 ‘조작된 검수 온도’에서는 아차산 검수 창의 숫자가 고쳐진 채 저온 컨테이너가 통과를 기다린다.\n\n숙주가 거짓 냉열선을 따라 송신 전선 덕트로 이동하기 전에 플레이어는 조작을 공개하거나, 기록을 덮. 통과시키거나 문제 깔판만 격리해야 한다.\n\n공개하면 멀쩡한 컨테이너까지 신뢰를 잃어 다음 배급량이 줄어든다.\n\n은폐하면 막이 덕트에 정착해 계절 내내 신호 잡음과 보수 부담을 남긴다.\n\n격리는 당일 검수를 적체시키고 후속 열차의 냉각 연료를 소모한다.\n\n어느 선택도 지워진 기록을 원상태로 만들지 못한다.\n\nG09-SC3 ‘지워진 냉열 경계’는 세 온도조가 방송과 식량을 함께 지킬 수 없다고 결론 내리고 표시를 거두면서 시작된다.\n\n숙주들은 입구를 막지 않는다.\n\n다만 사람이 의지하던 결로선이 사라져 각 창고의 급변 온도를 통행자가 직접 감당하게 된다.\n\n플레이어가 빈 지하상가를 임시 저온 피난처로 내주면 한 철의 영업과 저장 설비가 죽는다.\n\n상암 방송 냉각을 공식 폐쇄하면 외곽 경보망이 끊기고, 아차산 검수를 폐쇄하면 배급 사슬이 되돌리기 어려운 간격으로 갈라진다.\n\n이 단계의 손실은 점령된 통로가 아니라 버린 식량, 오지 못한 열차 전달되지 못한 경보로 남는다.\n\n공존은 숙주를 좋아하느냐의 문제가 아니라 누가 온도 숫자를 공개하고 냉각 손실을 부담하느냐의 문제다.\n\n피부막의 외양만 보고 배급 순번을 늦추면 같은 회랑을 쓰는 피난 식량까지 함께 배척되고, 실제 환기 실패와 원장 조작은 가려진다.\n\n반대로 숙주가 유지 가능한 온도 폭을 제시하. 완충조가 사람의 체류 시간을 밝히며 검수조가 보낼 컨테이너 수를 적으면 협상은 가능하다.\n\n합의가 깨질 때 그들은 통로를 봉쇄하지 않고 냉열 표시를 거둔다.\n\n그 뒤의 위험은 누구에게나 보이지 않지만 평등하지는 않다.\n\n상암과 아차산를 잇는 차가운 회랑에서 책임은 막의 생김새가 아니라 숨긴 온도, 뒤집힌 순번 다른 시설로 떠넘긴 결로의 방향으로 판정된다."
+      "dossier_prose": "G09 저온포자숙주는 상암의 지하 냉각 부속에서 처음 하나의 집단으로 기록되었다.\n\n붕괴 직후 여의도출자연합회(S09)의 냉동 스택은 송신기 폐열을 견디지 못하. 멈췄고, 관문군정(S14)으로 이어지던 저온 검수 창도 닫힌 채 결로만 흘렸다.\n\n그 사이 깔판 밑과 냉각핀 뒤에 얇은 포자 막이 자랐다.\n\n야간마다 재고를 옮기던 작업 단위는 그 막을 떼어내기보다 체온과 습도를 맞추는 법을 익혔다.\n\n피부에 자리 잡은 공생막은 저온에서 수분 손실을 늦추. 미세한 온도 차를 알려 주었지만, 상온에 오래 머물면 갈라져 통증과 감각 둔화를 남겼다.\n\n이 때문에 숙주들은 차가운 곳을 점거하는 침입자가 아니라 냉열을 떠날 수 없는 관리 단위가 되었다.\n\n초기에 떠돌던 ‘곰팡이 소동’이라는 말은 냉각 슬롯의 사용 순번과 환기 책임이 정리되면서 생태 원장에서 폐기되었다.\n\n그들의 중심지는 월드컵북로 아래 상암 냉각 부속 회랑이다.\n\n옛 방송 설비의 케이블 도랑, 방화문이 빠진 전실 빗물이 스며드는 적재 승강기까지가 하나의 온도 지도로 이어진다.\n\n송신 열부하가 오르거나 해동 주기가 길어지면 일부는 강변의 차가운 배수관을 따라 아차산 검수 창과 저온 창고로 옮겨 간다.\n\n반대로 두만강극동전구(XT04)에서 온 광물·연료 열차가 냉각수를 선점하면 외곽 창고부터 비워진다.\n\n숙주는 이 이동을 영토 확장으로 여기지 않는다.\n\n공생막을 말린 채 운반 가능한 시간은 짧고, 급격한 해동 구간에서는 온도 구배 감각이 흐려져 제자리에서 움직임을 멈추기 때문이다.\n\n숙주의 감각은 피부 전체에 걸린다.\n\n어느 손가락이 더 차가운지, 목덜미 결로가 어느 방향으로 마르는지 바닥과 문틈 사이 습도가 얼마나 늦게 변하는지를 읽는다.\n\n압축기의 저주파 진동은 방향을 보태. 송풍 제어선의 약한 잡음은 재기동 시점을 짐작하게 하지만, 벽 너머를 보거나 설비를 마음대로 장악하지는 못한다.\n\n막이 산패할 때 나는 냄새도 중요한 경보다.\n\n합성 조하람(H09)은 센서가 금속 표면의 냉기를 공기 온도로 오인하지 않도록 오탐을 걸러 내며, 그 그래프는 반드시 재. 담당자의 냄새 검사와 함께 읽힌다.\n\n이 생태의 화폐는 돈보다 냉각 킬로와트와 유지 가능한 온도 폭에 가깝다.\n\n냉각수, 제한된 유기 잔여 막 두께를 조절할 극소량의 염과 당이 뒤를 잇는다.\n\n염과 당은 조미용 식량과 섞이지 않고 별도 계량되며, 유기 잔여도 배급 재고에서 떼어 내지 않는다.\n\n서울역재고가(HC09)는 생활재 원장과 포자 막 원장을 분리하고, 저온 보관은 경매가 아니라 공개된 순번으로 배정한다.\n\n숙주가 쓰는 고철은 문짝을 맞추고 덕트를 봉합하는 데 그친다.\n\n냉각 출력이 줄면 군락 면적과 먹이 투입을 함께 줄여야 하므로 무한한 증식도, 공짜 보존도 없다.\n\n온도 상한을 넘으면 막이 무너지고, 하한을 지나치면 숙주의 판단과 작업 능력이 먼저 굳는다.\n\n냉동기는 이들을 한 덩어리로 키우지 않는다.\n\n밤새 압축기가 멎으면 막은 깔판 밑 그늘로 후퇴한다.\n\n아침 재기동 때 찬 공기가 먼저 닿는 모서리마다 작은 군락이 깨어나고, 서로의 온도가 가까워져도 합쳐지는 대신 식량 창고와 송신 설비 사이에 냉열 경계선을 긋는다.\n\n유기 잔여가 끊겨도 막이 즉시 사라지지 않는 것은 목재와 단열재에 남은 습도가 이전 주기를 기억하기 때문이다.\n\n아차산에서 컨테이너가 비면 일부 숙주는 공생막을 천천히 말려 이동을 포기하고, 남은 이들은 다음 냉각 전까지 통로 결로를 닦는다.\n\n급격한 해동으로 벗겨진 포자는 곧바로 같은 자리에서 되살아나지 않는다.\n\n환기 흐름을 타고 다른 창고의 결로판과 덕트로 넘어가 부담의 위치만 바꾼다.\n\n권한은 가장 차가운 자에게 있지 않다.\n\n냉동 스택 곁의 저온조는 식량과 막의 보존 한계를, 출입문 부근의 완충조는 작업자의 체온과 체류 시간을 아차산를 왕복하는 검수조는 컨테이너 내부 상태를 보고한다.\n\n세 보고 가운데 하나라도 변질 위험을 제기하면 조하람의 기록과 사람이 맡은 냄새 검사를 대조한다.\n\n숫자와 냄새가 충돌할 때 평균을 내지 않고 해당 깔판을 격리한다.\n\n저온조가 과냉각으로 판단력을 잃었다면 완충조가 그 권력을 넘겨받는 대신 구역을 비워 그 자리의 권한 자체를 소멸시킨다.\n\n느린 절차지만 센서 하나의 오류로 모든 식량을 얼리거나 버리는 사태를 막는다.\n\n위기는 막이 보이는 순간보다 재기동 순서가 뒤집힐 때 시작된다.\n\n첫 이상에서 숙주들은 결로선을 따라 서서 차가운 통행 구간을 표시한다.\n\n송신 장비와 냉동 창고가 같은 전력을 요구하면 막은 더 안정된 진동을 좇아 전선 덕트까지 오른다.\n\n신호 잡음과 식량 온도 변동이 동시에 커지고, 결국 상암의 방송 냉각과 아차산의 식량 검수 가운데 하나를 낮추라는 선택이 남는다.\n\n불로 막을 태우면 상승기류가 포자를 송신실과 검수 창 양쪽에 뿌린다.\n\n대응자는 먼저 이동식 결로판을 세우고, 깔판을 한 줄씩 뒤집어 군락을 분리해야 한다.\n\n압축기 진동을 낮추면 방향 감각을 흐릴 수 있으나 식량도 데워지므로 짧게만 쓸 수 있다.\n\n국소 건조는 비어 있는 검수 창에 한정되며 사람의 공생막에는 강제하지 않는다.\n\n비용은 폐기 식량의 무게, 중단된 방송 시간 새로 오염된 결로판 수로 따로 공개된다.\n\nG09-SC1 ‘정전 뒤 재기동’은 야간 정전 후 피난 식량은 아직 차갑지만 상암 송신기 열이 임계에 닿으면서 열린다.\n\n서로 다른 박자로 떠는 압축기 두 대에 전력을 어떻게 넣을지가 플레이어의 첫 행동이다.\n\n창고 냉각을 십 분 끄고 재난 경보를 보내면 일부 식량이 되돌릴 수 없이 변질된다.\n\n방송을 포기하면 외곽 피난 열차가 위험 구간으로 진입한다.\n\n두 압축기를 반씩 돌리면 양쪽 모두 규격 미달이 되어 이후 모든 재고에 추가 검수가 붙는다.\n\n남는 원장은 전달하지 못한 경보의 분과 버린 식량의 킬로그램을 같은 재기동의 비용으로 묶는다.\n\nG09-SC2 ‘조작된 검수 온도’에서는 아차산 검수 창의 숫자가 고쳐진 채 저온 컨테이너가 통과를 기다린다.\n\n숙주가 거짓 냉열선을 따라 송신 전선 덕트로 이동하기 전에 플레이어는 조작을 공개하거나, 기록을 덮. 통과시키거나 문제 깔판만 격리해야 한다.\n\n공개하면 멀쩡한 컨테이너까지 신뢰를 잃어 다음 배급량이 줄어든다.\n\n은폐하면 막이 덕트에 정착해 계절 내내 신호 잡음과 보수 부담을 남긴다.\n\n격리는 당일 검수를 적체시키고 후속 열차의 냉각 연료를 소모한다.\n\n어느 선택도 지워진 기록을 원상태로 만들지 못한다.\n\nG09-SC3 ‘지워진 냉열 경계’는 세 온도조가 방송과 식량을 함께 지킬 수 없다고 결론 내리고 표시를 거두면서 시작된다.\n\n숙주들은 입구를 막지 않는다.\n\n다만 사람이 의지하던 결로선이 사라져 각 창고의 급변 온도를 통행자가 직접 감당하게 된다.\n\n플레이어가 빈 지하상가를 임시 저온 피난처로 내주면 한 철의 영업과 저장 설비가 죽는다.\n\n상암 방송 냉각을 공식 폐쇄하면 외곽 경보망이 끊기고, 아차산 검수를 폐쇄하면 배급 사슬이 되돌리기 어려운 간격으로 갈라진다.\n\n이 단계의 손실은 점령된 통로가 아니라 버린 식량, 오지 못한 열차 전달되지 못한 경보로 남는다.\n\n공존은 숙주를 좋아하느냐의 문제가 아니라 누가 온도 숫자를 공개하고 냉각 손실을 부담하느냐의 문제다.\n\n피부막의 외양만 보고 배급 순번을 늦추면 같은 회랑을 쓰는 피난 식량까지 함께 배척되고, 실제 환기 실패와 원장 조작은 가려진다.\n\n반대로 숙주가 유지 가능한 온도 폭을 제시하. 완충조가 사람의 체류 시간을 밝히며 검수조가 보낼 컨테이너 수를 적으면 협상은 가능하다.\n\n합의가 깨질 때 그들은 통로를 봉쇄하지 않고 냉열 표시를 거둔다.\n\n그 뒤의 위험은 누구에게나 보이지 않지만 평등하지는 않다.\n\n상암과 아차산를 잇는 차가운 회랑에서 책임은 막의 생김새가 아니라 숨긴 온도, 뒤집힌 순번 다른 시설로 떠넘긴 결로의 방향으로 판정된다."
     },
     {
       "id": "G10",
@@ -17037,8 +17037,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
         "Hostile-Ecology-Index.md"
       ],
       "modern_anxiety": "침수 건물과 지하 배급고의 습한 공기가 호흡을 무겁게 하고 곰팡이 냄새를 남긴다는 잔영이 피난 회랑에 남는다.\n\n배수 펌프가 멈추면 사람들은 격자 미끄럼부터 걱정한다.\n\n창작 침수 원장으로만 다루며 실재 피해 지역이나 환자를 선정적으로 재현하지 않는다.\n\n호흡 소리를 괴물화하지 않는다.",
-      "fictional_origin": "대한불교조계종 대피 회랑과 천주교 서울대교구 하층 배급고가 반복 침수된 뒤 습도 교환에 적응한 호흡 단위가 형성되었다.\n\n그들은 침수곰팡이호흡단이라 불리지만 정체는 젖은 콘크리트와 배급 곡물 습기를 오가는 환경 생태이며 특정 병명의 낙인 대상이 아니다.\n\n초기 소독 소동 기록은 배수 슬롯 거래가 생기며 생태 원장으로 정리되었다.\n\n습기 적응을 도덕 실패로 서술하지 않는다.",
-      "territory_migration": "핵심 서식은 북한산보국문 대피 회랑의 배수 불량 구간이다.\n\n장마와 배급 주기 때 가락과 잠실 하층 배급고와 환기구로 이동한다.\n\n인천신탁전구의 해풍 유입이 있으면 외곽 압력에 반응한다.\n\n완전 건조 지대에서는 호흡 교환이 어려워 스스로 물러난다.\n\n연결 국가는 대한불교조계종과 천주교 서울대교구이다.",
+      "fictional_origin": "승가구휼정 대피 회랑과 본당인준정 하층 배급고가 반복 침수된 뒤 습도 교환에 적응한 호흡 단위가 형성되었다.\n\n그들은 침수곰팡이호흡단이라 불리지만 정체는 젖은 콘크리트와 배급 곡물 습기를 오가는 환경 생태이며 특정 병명의 낙인 대상이 아니다.\n\n초기 소독 소동 기록은 배수 슬롯 거래가 생기며 생태 원장으로 정리되었다.\n\n습기 적응을 도덕 실패로 서술하지 않는다.",
+      "territory_migration": "핵심 서식은 북한산보국문 대피 회랑의 배수 불량 구간이다.\n\n장마와 배급 주기 때 가락과 잠실 하층 배급고와 환기구로 이동한다.\n\n인천신탁전구의 해풍 유입이 있으면 외곽 압력에 반응한다.\n\n완전 건조 지대에서는 호흡 교환이 어려워 스스로 물러난다.\n\n연결 국가는 승가구휼정과 본당인준정이다.",
       "economy": "주 자원은 습도로서의 물 제한된 발효와 곡물 잔여 유기물 배수 펌프 전력 호흡 필터 천이다.\n\n마곡종자가의 발효 종자 금고와 습도 관리와 겹치는 지점에서 경합한다.\n\n고철은 배수 격자 보수에 쓰고 냉각수는 펌프 과열 구간에만 투입한다.\n\n습도 상한이 확산 상한이다.\n\n펌프 가동 시간이 줄면 확장이 멈추고 필터 천 소모도 같이 줄인다.\n\n종자 금고 원장과 습기 원장은 섞지 않는다.\n\n필터 천은 세척 후 재사용 횟수를 원장에 적고 횟수 상한을 넘기면 폐기 칸으로만 보낸다.\n\n펌프 전력은 배급 창 조명 전력과 분리 계측한다.",
       "lifecycle": "침수곰팡이호흡단은 물이 차오를 때 퍼지고 마르면 사라지는 단순 군락이 아니다.\n\n북한산보국문 회랑의 낮은 격자에서 먼저 습기를 모아 호흡을 맞추고, 펌프가 돌아가면 빠지는 물을 따라 가락 배급고의 환기구로 자리를 옮긴다.\n\n곡물 열이 올라가면 일부는 발효 냄새를 쫓지만 다른 일부는 식수관 결로를 지켜 두 흐름이 갈라진다.\n\n필터 천이 젖어 공기를 통과시키지 못하면 새 구역으로 나아가기보다 격자를 들어 올려 물길을 만든다.\n\n주민이 배수 노동과 종자 금고 습도 기록을 함께 맡으면 호흡단은 환기구 청소 순번에 들어가 장마를 넘긴다.\n\n펌프가 장기간 멈추면 무리는 붕괴하는 대신 높은 계단으로 옮겨가며, 그 아래 남은 곰팡이 막이 다음 배급의 비용으로 이어진다.",
       "senses": "주 감각은 습도와 휘발성 유기 냄새다.\n\n보조로 배수 파이프 진동과 펌프 국소 열을 읽는다.\n\n전자 잡음은 펌프 제어 오탐 수준만 취급하고 완전 투시는 없다.\n\n합성 윤새론의 습도 로그와 교차 확인한다.\n\n급격한 제습 구간에서는 감각이 흔들려 이동을 멈춘다.\n\n빗물 유입이 갑자기 늘면 냄새 신호가 앞서고 진동 신호는 뒤로 밀리므로 두 감각을 같은 비중으로 원장에 적지 않는다.",
@@ -17135,7 +17135,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
         }
       ],
       "prose": "장맛비가 북한산보국문 돌계단을 타고 내려와 마지막 배수 격자를 덮는다.\n\n침수곰팡이호흡단은 입구를 막는 대신 세 원으로 갈라져 서로 다른 소리를 낸다.\n\n격자 원은 물높이를 두드리고, 환기 원은 젖은 천을 흔들며 배급고 원은 가락에서 올라온 곡물 열을 손으로 잰다.\n\n첫 사건에서 플레이어는 피난 행렬을 돌려보내거나 미끄러운 계단을 열어 둔 채 가족별 안내인을 붙여야 한다.\n\n길을 열면 부상자가 늘고, 닫으면 북한산보국문의 가장 높은 숙영지가 약품을 받지 못한다.\n\n둘째 사건은 필터 천과 통행 슬롯의 교환이 아니다.\n\n식수관 결로와 침수수가 한 웅덩이에서 만나 펌프를 잘못 돌리면 가락 종자 금고로 오염이 넘어간다.\n\n플레이어가 북한산보국문 물을 먼저 빼면 종자 포대 수십 개가 젖고, 금고를 먼저 말리면 피난 천막 세 줄이 밤새 이동해야 한다.\n\n마지막 사건에서 막은 제습에 무너지지 않는다.\n\n가장 숨이 가쁜 원이 작업 중지를 선언하고, 주민 대표가 이주할 가족 이름을 확인하기 전에는 어느 펌프도 돌지 않는다.\n\n플레이어는 이 권한을 인정해 배급 지연을 감수하거나 군사 펌프를 강제로 연결해 두 공동체의 물 원장을 깨뜨릴 수 있다.\n\n사건 뒤 남는 것은 열린 식수 창이 아니라 줄어든 파종량과 지도에서 지워진 숙영지 자리다.\n\n호흡 소리를 낙인으로 쓰지 않는 원칙은 그 비용을 피해 당사자와 함께 계산할 때만 의미가 있다.",
-      "dossier_prose": "침수곰팡이호흡단은 생물 한 종이나 단일한 주민 집단의 이름이 아니다.\n\n대한불교조계종의 지하 대피 회랑에서 젖은 콘크리트, 배급 곡물의 열 환기 순번 배수 노동자의 호흡이 오랫동안 맞물리며 생긴 환경 생태를 가리킨다.\n\n서울 북쪽 구릉을 따라 이어진 회랑은 오래된 방공 통로와 지하 연결로, 급히 덧댄 숙영실이 층층이 겹쳐 있다.\n\n물은 낮은 격자에 먼저 모이고, 사람들은 발바닥으로 미끄럼을 느낀 뒤에야 천장에서 번지는 습기를 본다.\n\n장마가 길어지면 젖은 벽의 냄새가 옷과 필터 천에 남지만, 그 냄새나 기침은 구성원의 신분도 도덕성도 아니다.\n\n호흡단이라는 명칭은 누군가를 분류하기 위한 것이 아니라, 어느 구간에서 물과 공기의 교환이 멈추는지를 기록하기 위해 생겼다.\n\n형성의 계기는 북한산보국문 회랑과 가락·잠실 하층 배급고의 연속 침수였다.\n\n초기에는 관리 인력이 벽면의 막과 곡물 냄새를 한꺼번에 제거하려 했고, 소독제가 배수 슬롯으로 흘러들어 식수관 결로와 섞이는 소동도 있었다.\n\n이후 주민들은 제거보다 분리를 택했다.\n\n젖은 막이 생긴 위치, 펌프 가동 시각 필터 천의 세척 횟수 곡물 포대의 내부 열을 서로 다른 원장에 적기 시작했다.\n\n종자 금고의 기록과 회랑 습기 기록을 합치지 않는 원칙도 이때 생겼다.\n\n하나의 숫자로 묶으면 종자를 살리기 위해 숙영지를 희생했는지, 사람을 옮기기 위해 파종분을 젖게 했는지가 사라지기 때문이다.\n\n호흡단은 북한산보국문의 가장 낮은 배수 격자에서 먼저 박자를 만든다.\n\n격자 사이로 스며든 물이 발목 높이에 닿기 전, 작업자들은 짧게 들이쉬고 길게 내쉬며 파이프 진동을 듣는다.\n\n펌프가 작동하면 군집의 중심은 빠지는 물을 쫓지 않고, 습한 공기가 밀려가는 방향을 따라 송파대로 아래 연결관과 가락 배급. 환기구 쪽으로 옮겨간다.\n\n곡물 더미의 열이 오르면 발효 냄새를 감지하는 흐름이 종자 창고로 갈라지고, 나머지는 잠실 저지대 식수관에 맺히는 결로를 지킨다.\n\n급격한 제습 앞에서는 냄새 감각이 무너져 이동을 멈춘다.\n\n폭우가 갑자기 들이칠 때는 휘발성 냄새가 먼저 변하. 파이프 진동은 늦게 도착하므로, 둘을 같은 시각의 증거처럼 적으면 역류 지점을 잘못 짚게 된다.\n\n합성 윤새론 H10의 습도 로그는 이 감각을 보완하지만 벽 너머를 알아맞히는 장치는 아니다.\n\n현장 기록과 어긋나면 기계 수치도 다시 측정한다.\n\n이들의 자원 경제는 물을 얼마나 갖느냐보다 습도를 어느 상한 아래에 붙들어 두느냐에 달려 있다.\n\n배수 펌프 전력은 배급 창의 조명 전력과 별도 계량되며, 연료가 줄면 확장 구간부터 닫는다.\n\n고철은 격자 경첩과 펌프 받침을 고치는 데 쓰고, 냉각수는 모터 과열이 확인된 곳에만 붓는다.\n\n필터 천은 젖은 채 떼어 밀봉한 뒤 세척하며, 재사용 횟수가 상한을 넘으면 다른 용도로 돌리지 않고 폐기 칸으로 보낸다.\n\n마곡종자가 HC10의 발효 종자 금고와는 습도 관리 범위가 겹친다.\n\n그러나 필터 천 한 장을 종자 포대 하나나 통행 슬롯 하나와 곧바로 맞바꾸지는 않는다.\n\n물길의 안전과 식량의 미래를 단일 가격으로 환산하는 순간, 가장 낮은 숙영지의 손실이 장부 밖으로 밀려나기 때문이다.\n\n권한은 세 개의 원에 나뉜다.\n\n격자 원은 수위와 바닥 마찰을, 환기 원은 공기의 통과와 필터 저항을 배급고 원은 곡물 열과 발효 냄새를 감시한다.\n\n어느 원도 다른 원에 명령할 수 없으며 세 박자가 어긋나면 이동과 펌프 시험을 함께 멈춘다.\n\n특히 가장 숨이 가빠진 사람에게는 해당 구간의 중지 신호를 낼 권리가 있다.\n\n이는 약한 이를 보호한다는 상징에 그치지 않는다.\n\n공기가 가장 먼저 막히는 몸을 계측기의 하나로 인정하는 절차다.\n\n인간 당직자는 그 신호를 무시할 수 없고, 신호를 낸 사람도 배급을 독점할 수 없다.\n\n작업 재개에는 주민 대표가 물길 변경으로 잠길 가구와 옮겨야 할 침상을 이름별로 확인해야 한다.\n\n이 체계에서 권력은 선두에 서는 능력보다 모두를 멈추게 하고 그 비용을 기록하게 하는 능력에 있다.\n\nG10-SC1 ‘미끄러운 돌계단’은 장맛비가 북한산보국문의 마지막 배수 격자를 덮고, 높은 숙영지로 약품을 나르는 피난 행렬이 젖은 계단 앞에서 멈추며 시작된다.\n\n플레이어가 행렬을 돌려보내면 낙상은 줄지만 위쪽 치료소의 약품이 끊긴다.\n\n계단을 열고 가족마다 안내인을 붙이면 운송은 이어지되 부상자가 누적되고 안내 노동까지 배급 인력에서 빠진다.\n\n격자만 들어 물길을 바꾸고 사람을 우회시키는 선택은 가장 기술적으로 보이지만, 바뀐 물은 아래쪽 천막 구역을 잠기게 한다.\n\n한번 젖은 침상과 문서함은 말려도 원래 숙영지로 돌아오지 못하며, 이주 가족의 통행 거리는 이후 모든 배급 비용에 남는다.\n\n상황은 배수구에서 식수 냄새가 날 때 두 번째 단계로 넘어간다.\n\nG10-SC2 ‘한 웅덩이의 두 물’에서는 북한산보국문 식수관 결로와 회랑 침수수가 가락 하층의 한 웅덩이에서 만난다.\n\n북한산보국문 배수를 먼저 돌리면 계단 수위는 내려가지만 습한 공기가 종자 금고로 밀려들어 다음 철 파종 포대가 줄어든다.\n\n금고 제습을 우선하면 종자는 지킬 수 있으나 피난 천막 세 줄을 밤새 높은 곳으로 옮겨야 한다.\n\n플레이어가 펌프를 멈추. 색이 다른 부표와 양동이를 이용해 두 물을 수동으로 가르면 시간을 벌 수 있지만, 인력 피로와 부분 오염 때문에 양쪽 모두 일정량을 폐기한다.\n\n여기서 손실은 젖은 포대 수만이 아니다.\n\n파종 면적의 축소와 다른 숙영지로 흩어진 가족의 귀환 불능이 서로 다른 원장에 오래 남는다.\n\n최고 위험은 물이 많아졌을 때가 아니라 어느 펌프를 먼저 돌려도 다른 체계를 해치게 되었을 때 온다.\n\nG10-SC3 ‘중지 선언’에서 가장 숨이 가쁜 원은 주민 대표가 이주 대상 가족을 확인할 때까지 작업 중지를 선포한다.\n\n이를 인정하면 배급이 늦고 파종량도 감소하지만, 역류 시험과 물길 지식은 유지된다.\n\n플레이어가 군사 펌프를 강제로 연결하면 단기적으로 수위는 낮아져도 북한산보국문과 가락의 원장이 동시에 무효가 되고, 호흡단은 이후 펌프 시험에 참여하지 않는다.\n\n인천신탁전구 XT05에서 들어오는 해풍 방향으로 물을 빼 외곽에 넘기는 선택도 가능하지만, 그 물은 탄천 하류와 해안 저장지에 한 철 동안 오염 부담을 남긴다.\n\n지도 중앙의 회랑을 구하는 대신 외곽의 취수와 생업을 지우는 되돌리기 어려운 결정이다.\n\n대응의 핵심은 몰아내기가 아니라 물길을 다시 구별하는 데 있다.\n\n격자 아래에 색이 다른 부표를 달고 펌프를 한 대씩 짧게 돌려 역류 위치를 찾는다.\n\n필터 천은 마른 상태로 털지 않. 젖은 채 접어 밀봉하며, 제습기는 종자 금고에 우선 배치하되 회랑의 사람에게 직접 찬 바람을 쏘지 않는다.\n\n독성 살포는 젖은 막뿐 아니라 배수와 식수 양쪽을 못 쓰게 하므로 가장 비싼 선택이다.\n\n대응 비용에는 연료와 천만이 아니라 닫힌 계단 수, 버린 종자 포대 옮겨진 가족 중단된 약품 운송 시간이 모두 포함된다.\n\n공존은 깨끗한 구역을 약속하는 방식으로 유지되지 않는다.\n\n북한산보국문 주민이 잠긴 계단을 증언하고, 가락 관리자가 포대별 습도와 폐기 한계를 공개하며 세 원이 물높이·공기 흐름·곡물 열 가운데 어떤 신호가 먼저 위험선에 닿았는지 따로 말해야 한다.\n\n북한산보국문을 먼저 빼면 가락은 감소한 파종량을 문서로 인정하고, 금고를 먼저 지키면 연맹은 이주 비용과 잃은 숙영지를 보상한다.\n\n합의가 깨져도 호흡단은 공격하지 않는다.\n\n다만 펌프 시험에서 물러나고, 양쪽은 역류 지식을 잃은 채 더 큰 손실을 떠안는다.\n\n그래서 회랑의 질서는 냄새 없는 공기가 아니라, 누가 젖었. 무엇을 버렸으며 어느 호흡에서 작업을 멈췄는지를 숨기지 않는 기록 위에 세워진다."
+      "dossier_prose": "침수곰팡이호흡단은 생물 한 종이나 단일한 주민 집단의 이름이 아니다.\n\n승가구휼정의 지하 대피 회랑에서 젖은 콘크리트, 배급 곡물의 열 환기 순번 배수 노동자의 호흡이 오랫동안 맞물리며 생긴 환경 생태를 가리킨다.\n\n서울 북쪽 구릉을 따라 이어진 회랑은 오래된 방공 통로와 지하 연결로, 급히 덧댄 숙영실이 층층이 겹쳐 있다.\n\n물은 낮은 격자에 먼저 모이고, 사람들은 발바닥으로 미끄럼을 느낀 뒤에야 천장에서 번지는 습기를 본다.\n\n장마가 길어지면 젖은 벽의 냄새가 옷과 필터 천에 남지만, 그 냄새나 기침은 구성원의 신분도 도덕성도 아니다.\n\n호흡단이라는 명칭은 누군가를 분류하기 위한 것이 아니라, 어느 구간에서 물과 공기의 교환이 멈추는지를 기록하기 위해 생겼다.\n\n형성의 계기는 북한산보국문 회랑과 가락·잠실 하층 배급고의 연속 침수였다.\n\n초기에는 관리 인력이 벽면의 막과 곡물 냄새를 한꺼번에 제거하려 했고, 소독제가 배수 슬롯으로 흘러들어 식수관 결로와 섞이는 소동도 있었다.\n\n이후 주민들은 제거보다 분리를 택했다.\n\n젖은 막이 생긴 위치, 펌프 가동 시각 필터 천의 세척 횟수 곡물 포대의 내부 열을 서로 다른 원장에 적기 시작했다.\n\n종자 금고의 기록과 회랑 습기 기록을 합치지 않는 원칙도 이때 생겼다.\n\n하나의 숫자로 묶으면 종자를 살리기 위해 숙영지를 희생했는지, 사람을 옮기기 위해 파종분을 젖게 했는지가 사라지기 때문이다.\n\n호흡단은 북한산보국문의 가장 낮은 배수 격자에서 먼저 박자를 만든다.\n\n격자 사이로 스며든 물이 발목 높이에 닿기 전, 작업자들은 짧게 들이쉬고 길게 내쉬며 파이프 진동을 듣는다.\n\n펌프가 작동하면 군집의 중심은 빠지는 물을 쫓지 않고, 습한 공기가 밀려가는 방향을 따라 송파대로 아래 연결관과 가락 배급. 환기구 쪽으로 옮겨간다.\n\n곡물 더미의 열이 오르면 발효 냄새를 감지하는 흐름이 종자 창고로 갈라지고, 나머지는 잠실 저지대 식수관에 맺히는 결로를 지킨다.\n\n급격한 제습 앞에서는 냄새 감각이 무너져 이동을 멈춘다.\n\n폭우가 갑자기 들이칠 때는 휘발성 냄새가 먼저 변하. 파이프 진동은 늦게 도착하므로, 둘을 같은 시각의 증거처럼 적으면 역류 지점을 잘못 짚게 된다.\n\n합성 윤새론 H10의 습도 로그는 이 감각을 보완하지만 벽 너머를 알아맞히는 장치는 아니다.\n\n현장 기록과 어긋나면 기계 수치도 다시 측정한다.\n\n이들의 자원 경제는 물을 얼마나 갖느냐보다 습도를 어느 상한 아래에 붙들어 두느냐에 달려 있다.\n\n배수 펌프 전력은 배급 창의 조명 전력과 별도 계량되며, 연료가 줄면 확장 구간부터 닫는다.\n\n고철은 격자 경첩과 펌프 받침을 고치는 데 쓰고, 냉각수는 모터 과열이 확인된 곳에만 붓는다.\n\n필터 천은 젖은 채 떼어 밀봉한 뒤 세척하며, 재사용 횟수가 상한을 넘으면 다른 용도로 돌리지 않고 폐기 칸으로 보낸다.\n\n마곡종자가 HC10의 발효 종자 금고와는 습도 관리 범위가 겹친다.\n\n그러나 필터 천 한 장을 종자 포대 하나나 통행 슬롯 하나와 곧바로 맞바꾸지는 않는다.\n\n물길의 안전과 식량의 미래를 단일 가격으로 환산하는 순간, 가장 낮은 숙영지의 손실이 장부 밖으로 밀려나기 때문이다.\n\n권한은 세 개의 원에 나뉜다.\n\n격자 원은 수위와 바닥 마찰을, 환기 원은 공기의 통과와 필터 저항을 배급고 원은 곡물 열과 발효 냄새를 감시한다.\n\n어느 원도 다른 원에 명령할 수 없으며 세 박자가 어긋나면 이동과 펌프 시험을 함께 멈춘다.\n\n특히 가장 숨이 가빠진 사람에게는 해당 구간의 중지 신호를 낼 권리가 있다.\n\n이는 약한 이를 보호한다는 상징에 그치지 않는다.\n\n공기가 가장 먼저 막히는 몸을 계측기의 하나로 인정하는 절차다.\n\n인간 당직자는 그 신호를 무시할 수 없고, 신호를 낸 사람도 배급을 독점할 수 없다.\n\n작업 재개에는 주민 대표가 물길 변경으로 잠길 가구와 옮겨야 할 침상을 이름별로 확인해야 한다.\n\n이 체계에서 권력은 선두에 서는 능력보다 모두를 멈추게 하고 그 비용을 기록하게 하는 능력에 있다.\n\nG10-SC1 ‘미끄러운 돌계단’은 장맛비가 북한산보국문의 마지막 배수 격자를 덮고, 높은 숙영지로 약품을 나르는 피난 행렬이 젖은 계단 앞에서 멈추며 시작된다.\n\n플레이어가 행렬을 돌려보내면 낙상은 줄지만 위쪽 치료소의 약품이 끊긴다.\n\n계단을 열고 가족마다 안내인을 붙이면 운송은 이어지되 부상자가 누적되고 안내 노동까지 배급 인력에서 빠진다.\n\n격자만 들어 물길을 바꾸고 사람을 우회시키는 선택은 가장 기술적으로 보이지만, 바뀐 물은 아래쪽 천막 구역을 잠기게 한다.\n\n한번 젖은 침상과 문서함은 말려도 원래 숙영지로 돌아오지 못하며, 이주 가족의 통행 거리는 이후 모든 배급 비용에 남는다.\n\n상황은 배수구에서 식수 냄새가 날 때 두 번째 단계로 넘어간다.\n\nG10-SC2 ‘한 웅덩이의 두 물’에서는 북한산보국문 식수관 결로와 회랑 침수수가 가락 하층의 한 웅덩이에서 만난다.\n\n북한산보국문 배수를 먼저 돌리면 계단 수위는 내려가지만 습한 공기가 종자 금고로 밀려들어 다음 철 파종 포대가 줄어든다.\n\n금고 제습을 우선하면 종자는 지킬 수 있으나 피난 천막 세 줄을 밤새 높은 곳으로 옮겨야 한다.\n\n플레이어가 펌프를 멈추. 색이 다른 부표와 양동이를 이용해 두 물을 수동으로 가르면 시간을 벌 수 있지만, 인력 피로와 부분 오염 때문에 양쪽 모두 일정량을 폐기한다.\n\n여기서 손실은 젖은 포대 수만이 아니다.\n\n파종 면적의 축소와 다른 숙영지로 흩어진 가족의 귀환 불능이 서로 다른 원장에 오래 남는다.\n\n최고 위험은 물이 많아졌을 때가 아니라 어느 펌프를 먼저 돌려도 다른 체계를 해치게 되었을 때 온다.\n\nG10-SC3 ‘중지 선언’에서 가장 숨이 가쁜 원은 주민 대표가 이주 대상 가족을 확인할 때까지 작업 중지를 선포한다.\n\n이를 인정하면 배급이 늦고 파종량도 감소하지만, 역류 시험과 물길 지식은 유지된다.\n\n플레이어가 군사 펌프를 강제로 연결하면 단기적으로 수위는 낮아져도 북한산보국문과 가락의 원장이 동시에 무효가 되고, 호흡단은 이후 펌프 시험에 참여하지 않는다.\n\n인천신탁전구 XT05에서 들어오는 해풍 방향으로 물을 빼 외곽에 넘기는 선택도 가능하지만, 그 물은 탄천 하류와 해안 저장지에 한 철 동안 오염 부담을 남긴다.\n\n지도 중앙의 회랑을 구하는 대신 외곽의 취수와 생업을 지우는 되돌리기 어려운 결정이다.\n\n대응의 핵심은 몰아내기가 아니라 물길을 다시 구별하는 데 있다.\n\n격자 아래에 색이 다른 부표를 달고 펌프를 한 대씩 짧게 돌려 역류 위치를 찾는다.\n\n필터 천은 마른 상태로 털지 않. 젖은 채 접어 밀봉하며, 제습기는 종자 금고에 우선 배치하되 회랑의 사람에게 직접 찬 바람을 쏘지 않는다.\n\n독성 살포는 젖은 막뿐 아니라 배수와 식수 양쪽을 못 쓰게 하므로 가장 비싼 선택이다.\n\n대응 비용에는 연료와 천만이 아니라 닫힌 계단 수, 버린 종자 포대 옮겨진 가족 중단된 약품 운송 시간이 모두 포함된다.\n\n공존은 깨끗한 구역을 약속하는 방식으로 유지되지 않는다.\n\n북한산보국문 주민이 잠긴 계단을 증언하고, 가락 관리자가 포대별 습도와 폐기 한계를 공개하며 세 원이 물높이·공기 흐름·곡물 열 가운데 어떤 신호가 먼저 위험선에 닿았는지 따로 말해야 한다.\n\n북한산보국문을 먼저 빼면 가락은 감소한 파종량을 문서로 인정하고, 금고를 먼저 지키면 연맹은 이주 비용과 잃은 숙영지를 보상한다.\n\n합의가 깨져도 호흡단은 공격하지 않는다.\n\n다만 펌프 시험에서 물러나고, 양쪽은 역류 지식을 잃은 채 더 큰 손실을 떠안는다.\n\n그래서 회랑의 질서는 냄새 없는 공기가 아니라, 누가 젖었. 무엇을 버렸으며 어느 호흡에서 작업을 멈췄는지를 숨기지 않는 기록 위에 세워진다."
     },
     {
       "id": "G11",
@@ -17153,8 +17153,8 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
         "Hostile-Ecology-Index.md"
       ],
       "modern_anxiety": "맞춤 치료와 보조 장치가 유지 보수 없이 남으면 알람과 이질적 구동음이 거리를 떠돈다는 불안이 야간 호송 창 앞에 남는다.\n\n충전 칸이 비면 사람들은 허가증부터 찾는다.\n\n창작 유지 원장으로만 서술하고 실재 의료기관이나 환자 식별 재현은 하지 않는다.\n\n장치 외양을 폐기물 낙인으로 고정하지 않는다.",
-      "fictional_origin": "삼성그룹 정비 측선과 전국민주노동조합총연맹 야간 클리닉 잔여 구역에서 붕괴 후 교정 일정이 끊긴 보조 모듈이 서로 신호를 찾으며 군집했다.\n\n맞춤의료잔존체는 버려진 환자라는 낙인이 아니라 중단된 돌봄 일정과 전력·부품 할당이 남긴 장치와 신체 합성 생태다.\n\n돌봄 재개는 강제 회수가 아니라 동의와 보관 책임 절차로만 열린다.\n\n초기 폐기 소동 기록은 충전 슬롯 거래가 생기며 생태 원장으로 정리되었다.",
-      "territory_migration": "핵심 서식은 창동 정비 측선의 멸균 전력 콘센트 열이다.\n\n배터리 교체 주기마다 수서 야간 호송 창과 클리닉 잔여 복도를 오간다.\n\n임진강관문전구의 검역과 귀환 명부 절차가 강화되면 외곽 압력에 반응해 이동을 늦춘다.\n\n무단 전역 배회는 부품 마모 상한으로 막혀 있다.\n\n연결 국가는 삼성그룹과 전국민주노동조합총연맹이다.",
+      "fictional_origin": "서초전산그룹 정비 측선과 정동노동총연맹 야간 클리닉 잔여 구역에서 붕괴 후 교정 일정이 끊긴 보조 모듈이 서로 신호를 찾으며 군집했다.\n\n맞춤의료잔존체는 버려진 환자라는 낙인이 아니라 중단된 돌봄 일정과 전력·부품 할당이 남긴 장치와 신체 합성 생태다.\n\n돌봄 재개는 강제 회수가 아니라 동의와 보관 책임 절차로만 열린다.\n\n초기 폐기 소동 기록은 충전 슬롯 거래가 생기며 생태 원장으로 정리되었다.",
+      "territory_migration": "핵심 서식은 창동 정비 측선의 멸균 전력 콘센트 열이다.\n\n배터리 교체 주기마다 수서 야간 호송 창과 클리닉 잔여 복도를 오간다.\n\n임진강관문전구의 검역과 귀환 명부 절차가 강화되면 외곽 압력에 반응해 이동을 늦춘다.\n\n무단 전역 배회는 부품 마모 상한으로 막혀 있다.\n\n연결 국가는 서초전산그룹과 정동노동총연맹이다.",
       "economy": "주 자원은 멸균 전력 교체형 소모 부품 구동열을 식히는 냉각수 교정 로그 용지와 칩이다.\n\n용산호송가의 야간 호송 허가와 전력 배분과 경합한다.\n\n고철은 하우징 보수에 쓰고 유기물은 인간 보호자 식량과 분리 회계한다.\n\n에너지 무한 흡수는 금지되며 교대 배터리 할당에 묶인다.\n\n부품 키트가 바닥나면 추가 결합이 멈추고 안전 정지 비율이 올라간다.\n\n호송 원장과 충전 원장은 장부를 분리한다.\n\n냉각 팩은 호송 단위로만 불출하고 개인 장물처럼 쌓지 않는다.\n\n교정 로그 칩은 보호자 동의 없이 외부 망에 올리지 않는다.",
       "lifecycle": "맞춤의료잔존체는 전력 공급량보다 약속된 진료 시간이 끊길 때 모인다.\n\n오래된 교정 알람이 울리면 같은 일정 조각을 가진 모듈들이 창동 측선의 콘센트 앞에 대기선을 만들고, 보호자가 나타나지 않으면 서로의 기록으로 누락된 순서를 맞춘다.\n\n부품이 부족한 동안에는 새 모듈을 붙이지 않고 기능을 나누어 한 장치가 보행을, 다른 장치가 호흡 보조를 맡는다.\n\n수서 호송 창이 동의 기록과 충전 순서를 함께 인정하면 대기선은 이동 진료표로 바뀐다.\n\n반대로 허가증만 갱신되고 보호자 동의가 사라지면 모듈들은 충전을 거부해 기억 칩을 봉인한다.\n\n과열 안전 정지는 해산이 아니라 다음 진료를 기다리는 휴면이며, 냉각 뒤에도 누가 다시 깨울 권한이 있는지 확인되지 않으면 그대로 남는다.",
       "senses": "주 감각은 근접 전자 잡음인 충전과 교정 패킷, 그리고 구동열이다.\n\n보조로 하우징 진동과 소독약 냄새를 읽는다.\n\n원거리 생체 완전 스캔과 기억 완전 복원은 없다.\n\n합성 김도하의 패킷 오탐 필터가 필수다.\n\n과열 구간에서는 감각을 낮추고 안전 정기를 우선한다.",
@@ -17251,7 +17251,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
         }
       ],
       "prose": "창동 측선의 멸균 콘센트마다 서로 다른 날짜가 깜빡인다.\n\n맞춤의료잔존체는 한 덩어리 군집이 아니라 끊긴 진료 약속의 순서대로 줄을 선다.\n\n첫 사건에서 오래된 알람이 동시에 울리자 플레이어는 모든 호출을 취소해 전력을 지키거나, 보호자를 찾아 유효한 일정만 다시 열어야 한다.\n\n취소하면 기억 칩 속 통증 기록 일부가 사라지고, 일정을 살리면 수서 응급 호송이 늦는다.\n\n둘째 사건에서는 부품과 충전 시간을 교환하지 않는다.\n\n같은 모듈에 서로 다른 보호자 서명이 발견되어 누가 분해를 허락했는지 알 수 없게 된다.\n\n플레이어가 기록청 사본을 기다리면 생명 유지 기능이 닳고, 현장 의무원의 임시 동의를 인정하면 이후 동의 분쟁의 책임을 떠안는다.\n\n마지막 사건에서 군집은 과열로 우연히 흩어지지 않는다.\n\n응급 환자와 잔존체가 같은 전력 포트를 필요로 하자 일정 모듈이 스스로 안전 정지를 제안하지만, 정지하면 저장하지 못한 감각 기록을 잃는다.\n\n플레이어는 환자의 시간을 살리고 기록 손실을 공적으로 배상하거나, 다른 역의 전력을 끌어와 창동 야간 조명을 포기해야 한다.\n\n사건 뒤 남는 것은 열린 게이트가 아니라 누구의 동의가 누락됐고 어떤 기억을 되찾을 수 없는지 적은 목록이다.\n\n장치 외양을 폐기 사유로 삼지 않는다는 원칙은 그 목록에서 당사자의 이름과 선택을 지우지 않는 방식으로 지켜진다.",
-      "dossier_prose": "맞춤의료잔존체는 삼성그룹의 정비 측선에서 처음 하나의 생태로 기록되었다.\n\n붕괴 뒤 운행표와 진료표가 함께 끊긴 밤, 보행 프레임과 호흡 보조기 약물 주입 모듈 자세 교정대가 멸균 전력 콘센트 열 앞에 모였다.\n\n그것들은 버려진 사람의 흔적이 아니라 끝까지 이행되지 못한 돌봄 일정의 잔여였다.\n\n각 장치에는 다음 교정 시각, 허용된 동작 범위 보호자가 확인하기로 한 점검 순서가 조각난 채 남아 있었다.\n\n서로 가까워지면 오래된 알람들이 응답하고, 작은 구동기가 빈 관절을 받치며 한때 한 몸을 위해 조율되었던 기능들이 임시로 연결된다.\n\n창동의 철분 냄새와 소독약 냄새 사이에서 이 군집은 장치와 신체가 어느 쪽에 속하는지를 묻기보다, 중단된 기능을 누가 언제 다시 책임질지를 기다린다.\n\n그들의 핵심 감각은 시야가 아니다.\n\n콘센트 주변의 전자 잡음에서 충전 가능량을 읽고, 교정 패킷의 간격으로 일정이 살아 있는지 짐작하며 하우징 안쪽에 번지는 구동열로 서로의 한계를 안다.\n\n바닥을 타고 오는 진동은 호송 카트와 정비 차량을 구별하는 보조 감각이고, 소독약 농도의 변화는 수서 야간 클리닉 잔여 복도가 가까워졌다는 표지가 된다.\n\n먼 거리의 생체를 완전히 읽거나 손상된 기억을 되살리는 능력은 없다.\n\n그래서 합성 김도하가 관리하는 패킷 오탐 필터가 빠지면 폐쇄된 일정과 현재 호출을 구분하지 못한다.\n\n열이 상한에 닿으면 감각 채널부터 낮추. 안전 정지에 들어가며, 이는 해산이나 사망 판정이 아니라 다음 진료 권한을 기다리는 휴면이다.\n\n냉각 뒤에도 깨울 주체가 확인되지 않으면 스스로 재가동하지 않는다.\n\n이동 범위는 전력과 마모가 정한다.\n\n평소에는 창동 측선의 멸균 콘센트 열에 머물다가 교대 배터리 시기가 오면 전국민주노동조합총연맹의 야간 호송 창과 폐쇄된 클리닉 복도를 왕복한다.\n\n임진강관문전구에서 검역과 귀환 명부 확인이 강화되는 날에는 외곽 압력을 감지해 속도를 늦추고, 부품 마모 상한을 넘기 전에 가까운 대기 구역으로 물러난다.\n\n전역을 끝없이 배회할 동력은 없다.\n\n맞춤의료잔존체는 공급 전력보다 약속된 진료 시간이 사라질 때 더 강하게 모인다.\n\n같은 일정 조각을 가진 모듈들은 콘센트 앞에 순서대로 서고, 보호자가 나타나지 않으면 서로의 기록을 대조해 누락된 단계만 맞춘다.\n\n부품이 부족하면 새 결합을 멈춘다.\n\n한 장치가 보행 하중을 맡고 다른 장치가 호흡 보조를 담당하는 식으로 기능을 나눠, 남은 소모품을 다음 호송까지 버틴다.\n\n이 생태를 지탱하는 것은 멸균 전력, 교체형 밸브와 패드 같은 소모 부품 구동열을 내리는 냉각수 교정 로그 용지와 칩이다.\n\n고철은 하우징을 덧대는 데 쓰지만 외형 때문에 폐기 대상으로 분류되지는 않는다.\n\n인간 보호자의 식량과 장치 보수 자재는 별도 장부로 계산된다.\n\n호송 원장과 충전 원장도 분리되어 있어, 이동 허가를 가진 자가 전력까지 독점할 수 없다.\n\n냉각 팩은 호송 단위로 불출되며 개인 창고에 축적할 수 없고, 교정 로그 칩은 당사자나 보호자의 동의 없이 외부망으로 나가지 않는다.\n\n용산호송가은 충전 슬롯을 판매하는 상인이 아니라 끊긴 약속을 운반할 책임자다.\n\n그들이 응급 호송에 전력을 더 배정하면 잔존체의 안전 정지 비율이 높아지고, 반대로 잔존체를 모두 깨우면 수서로 향하는 환자의 도착 시간이 밀린다.\n\n부품 키트가 바닥난 뒤에는 어떤 선의도 추가 기능을 만들어내지 못한다.\n\n중앙 명령자는 없다.\n\n움직임은 동의 사슬에 의해 제한된다.\n\n기능을 사용하는 당사자 또는 그가 남긴 의사 기록, 보호자 현장 의무원 가운데 두 주체가 같은 조치에 승인해야 충전 이동 분해가 열린다.\n\n일정 관리자 모듈은 가능한 순서를 제안할 뿐 자기 승인을 보탤 수 없고, 김도하의 로그는 서명과 패킷의 위조 여부만 판별한다.\n\n배터리가 낮은 모듈은 권한을 다른 개체에 넘기지 않고 판단 과정에서 빠진 채 정지한다.\n\n응급 상황에서 의료 조원 전미리는 호흡이나 순환 유지 기능만 임시로 가동할 수 있다.\n\n기억 칩을 열거나 목적지를 바꾸는 행위는 그 권한 밖이다.\n\n따라서 분쟁의 핵심은 명령에 따르느냐가 아니라, 오래된 의사 기록과 현재 보호자 서명 중 무엇이 아직 유효하냐에 있다.\n\nG11-SC1 ‘동시에 울린 알람’은 창동 측선의 모든 멸균 콘센트에 서로 다른 날짜가 깜빡이다가 낡은 진료 호출이 한꺼번에 재생되면서 시작된다.\n\n모듈들이 끊긴 약속의 순서대로 전력을 요구해 수서 응급 호송과 충돌하면, 플레이어는 무선 교정 신호를 먼저 차단해 새 호출의 유입을 멈추. 보호자를 찾아 유효한 일정만 다시 열 수 있고 이 선택은 기능 보존 가능성을 높이지만 호송 출발을 늦춘다.\n\n모든 호출을 일괄 취소하면 전력은 즉시 확보되나 저장되지 않은 통증 감각 일부가 칩에서 영구히 사라진다.\n\n콘센트만 잠그고 외면하면 동의 없는 정지가 누적되어 이후 어떤 일정 모듈도 창동의 충전 약속을 신뢰하지 않는다.\n\n그 밤의 비용은 몇 대를 멈췄는지가 아니라, 누구의 통증 기록을 지우고 누구의 치료 시각을 지켰는지로 남는다.\n\nG11-SC2 ‘두 장의 보호자 서명’에서는 같은 보행 모듈에 상충하는 보호자 서명이 발견된다.\n\n한쪽은 분해와 부품 전용을 허락하고 다른 쪽은 현 상태 보존을 요구한다.\n\n동의 사슬이 갈라진 순간 부품과 충전 시간을 맞바꾸는 거래도 정지한다.\n\n플레이어가 기록청 사본을 기다리면 법적 순서는 지킬 수 있지만 마모된 생명 유지 밸브가 그동안 더 닳는다.\n\n전미리의 임시 동의를 인정하면 필수 기능은 살릴 수 있어도 이후 손실 책임이 현장 조에게 귀속된다.\n\n모듈을 봉인 캐리어에 넣고 양측 입회를 요구하는 길도 있으나, 캐리어가 호송 통로를 점유해 수서 창이 하룻밤 닫힌다.\n\n김도하가 한 서명의 위조를 확인하더라도 군집 전체를 압수하지 않고 그 서명에 연결된 조치만 멈춘다.\n\n한번 열린 하우징과 소모된 밀봉재는 판정이 뒤집혀도 원상으로 돌아오지 않는다.\n\nG11-SC3 ‘같은 포트’는 응급 환자의 이동 장비와 잔존체의 호흡 보조군이 동일한 전력 포트를 요구할 때 발생한다.\n\n일정 모듈은 일부 잔존체의 안전 정지를 제안하지만, 정지 전에 저장하지 못한 압력과 통증 감각은 복구할 수 없다.\n\n플레이어는 환자의 치료 시간을 우선하. 기록 손실을 공적 장부에 올려 다음 호송의 냉각 팩과 빈 캐리어를 먼저 배정할 수 있다.\n\n그러나 배상은 사라진 감각을 돌려주지 않는다.\n\n다른 역의 전력을 끌어오면 양쪽 기능을 유지할 수 있는 대신 창동 야간 조명이 꺼져 골목 이동과 정비 작업이 위험해진다.\n\n임진 검역 창구에서 호송을 하룻밤 묶으면 포트 충돌은 피하지만 수서 클리닉의 접수 시간을 놓친다.\n\n전자 충격으로 모두를 쓰러뜨리는 방식은 보행·호흡 기능과 기억 칩을 함께 망가뜨리므로 해법이 아니다.\n\n무선 호출을 차단하고 모듈마다 냉각 팩을 붙인 뒤, 동의가 확인된 장치만 봉인 캐리어로 옮겨야 한다.\n\n맞춤의료잔존체와의 공존은 알람을 없애는 데 있지 않다.\n\n충전 순서와 보호 책임, 부품 수량을 다시 하나의 일정으로 묶는 데 있다.\n\n수서 호송 창이 동의 기록과 충전 차례를 함께 인정하면 콘센트 앞 대기선은 이동 진료표로 바뀐다.\n\n반대로 허가증만 갱신되고 보호자 동의가 사라지면 모듈들은 스스로 충전을 거부하고 기억 칩을 봉인한다.\n\n약속을 어긴 주체에게 가해지는 제재도 파괴가 아니라 다음 호송에서 빈 캐리어와 냉각 팩을 우선 제공할 의무다.\n\n위기는 장치 수가 많아서가 아니라 의료 우선순위와 유효한 동의가 어긋날수록 커진다.\n\n성공의 기준 역시 정지시킨 수량이 아니다.\n\n기능을 잃지 않고 당사자에게 돌아간 모듈의 수, 지연된 환자의 시간 그리. 다시는 회수할 수 없게 된 감각 기록의 목록이 창동과 수서의 공동 원장에 오래 남는다."
+      "dossier_prose": "맞춤의료잔존체는 서초전산그룹의 정비 측선에서 처음 하나의 생태로 기록되었다.\n\n붕괴 뒤 운행표와 진료표가 함께 끊긴 밤, 보행 프레임과 호흡 보조기 약물 주입 모듈 자세 교정대가 멸균 전력 콘센트 열 앞에 모였다.\n\n그것들은 버려진 사람의 흔적이 아니라 끝까지 이행되지 못한 돌봄 일정의 잔여였다.\n\n각 장치에는 다음 교정 시각, 허용된 동작 범위 보호자가 확인하기로 한 점검 순서가 조각난 채 남아 있었다.\n\n서로 가까워지면 오래된 알람들이 응답하고, 작은 구동기가 빈 관절을 받치며 한때 한 몸을 위해 조율되었던 기능들이 임시로 연결된다.\n\n창동의 철분 냄새와 소독약 냄새 사이에서 이 군집은 장치와 신체가 어느 쪽에 속하는지를 묻기보다, 중단된 기능을 누가 언제 다시 책임질지를 기다린다.\n\n그들의 핵심 감각은 시야가 아니다.\n\n콘센트 주변의 전자 잡음에서 충전 가능량을 읽고, 교정 패킷의 간격으로 일정이 살아 있는지 짐작하며 하우징 안쪽에 번지는 구동열로 서로의 한계를 안다.\n\n바닥을 타고 오는 진동은 호송 카트와 정비 차량을 구별하는 보조 감각이고, 소독약 농도의 변화는 수서 야간 클리닉 잔여 복도가 가까워졌다는 표지가 된다.\n\n먼 거리의 생체를 완전히 읽거나 손상된 기억을 되살리는 능력은 없다.\n\n그래서 합성 김도하가 관리하는 패킷 오탐 필터가 빠지면 폐쇄된 일정과 현재 호출을 구분하지 못한다.\n\n열이 상한에 닿으면 감각 채널부터 낮추. 안전 정지에 들어가며, 이는 해산이나 사망 판정이 아니라 다음 진료 권한을 기다리는 휴면이다.\n\n냉각 뒤에도 깨울 주체가 확인되지 않으면 스스로 재가동하지 않는다.\n\n이동 범위는 전력과 마모가 정한다.\n\n평소에는 창동 측선의 멸균 콘센트 열에 머물다가 교대 배터리 시기가 오면 정동노동총연맹의 야간 호송 창과 폐쇄된 클리닉 복도를 왕복한다.\n\n임진강관문전구에서 검역과 귀환 명부 확인이 강화되는 날에는 외곽 압력을 감지해 속도를 늦추고, 부품 마모 상한을 넘기 전에 가까운 대기 구역으로 물러난다.\n\n전역을 끝없이 배회할 동력은 없다.\n\n맞춤의료잔존체는 공급 전력보다 약속된 진료 시간이 사라질 때 더 강하게 모인다.\n\n같은 일정 조각을 가진 모듈들은 콘센트 앞에 순서대로 서고, 보호자가 나타나지 않으면 서로의 기록을 대조해 누락된 단계만 맞춘다.\n\n부품이 부족하면 새 결합을 멈춘다.\n\n한 장치가 보행 하중을 맡고 다른 장치가 호흡 보조를 담당하는 식으로 기능을 나눠, 남은 소모품을 다음 호송까지 버틴다.\n\n이 생태를 지탱하는 것은 멸균 전력, 교체형 밸브와 패드 같은 소모 부품 구동열을 내리는 냉각수 교정 로그 용지와 칩이다.\n\n고철은 하우징을 덧대는 데 쓰지만 외형 때문에 폐기 대상으로 분류되지는 않는다.\n\n인간 보호자의 식량과 장치 보수 자재는 별도 장부로 계산된다.\n\n호송 원장과 충전 원장도 분리되어 있어, 이동 허가를 가진 자가 전력까지 독점할 수 없다.\n\n냉각 팩은 호송 단위로 불출되며 개인 창고에 축적할 수 없고, 교정 로그 칩은 당사자나 보호자의 동의 없이 외부망으로 나가지 않는다.\n\n용산호송가은 충전 슬롯을 판매하는 상인이 아니라 끊긴 약속을 운반할 책임자다.\n\n그들이 응급 호송에 전력을 더 배정하면 잔존체의 안전 정지 비율이 높아지고, 반대로 잔존체를 모두 깨우면 수서로 향하는 환자의 도착 시간이 밀린다.\n\n부품 키트가 바닥난 뒤에는 어떤 선의도 추가 기능을 만들어내지 못한다.\n\n중앙 명령자는 없다.\n\n움직임은 동의 사슬에 의해 제한된다.\n\n기능을 사용하는 당사자 또는 그가 남긴 의사 기록, 보호자 현장 의무원 가운데 두 주체가 같은 조치에 승인해야 충전 이동 분해가 열린다.\n\n일정 관리자 모듈은 가능한 순서를 제안할 뿐 자기 승인을 보탤 수 없고, 김도하의 로그는 서명과 패킷의 위조 여부만 판별한다.\n\n배터리가 낮은 모듈은 권한을 다른 개체에 넘기지 않고 판단 과정에서 빠진 채 정지한다.\n\n응급 상황에서 의료 조원 전미리는 호흡이나 순환 유지 기능만 임시로 가동할 수 있다.\n\n기억 칩을 열거나 목적지를 바꾸는 행위는 그 권한 밖이다.\n\n따라서 분쟁의 핵심은 명령에 따르느냐가 아니라, 오래된 의사 기록과 현재 보호자 서명 중 무엇이 아직 유효하냐에 있다.\n\nG11-SC1 ‘동시에 울린 알람’은 창동 측선의 모든 멸균 콘센트에 서로 다른 날짜가 깜빡이다가 낡은 진료 호출이 한꺼번에 재생되면서 시작된다.\n\n모듈들이 끊긴 약속의 순서대로 전력을 요구해 수서 응급 호송과 충돌하면, 플레이어는 무선 교정 신호를 먼저 차단해 새 호출의 유입을 멈추. 보호자를 찾아 유효한 일정만 다시 열 수 있고 이 선택은 기능 보존 가능성을 높이지만 호송 출발을 늦춘다.\n\n모든 호출을 일괄 취소하면 전력은 즉시 확보되나 저장되지 않은 통증 감각 일부가 칩에서 영구히 사라진다.\n\n콘센트만 잠그고 외면하면 동의 없는 정지가 누적되어 이후 어떤 일정 모듈도 창동의 충전 약속을 신뢰하지 않는다.\n\n그 밤의 비용은 몇 대를 멈췄는지가 아니라, 누구의 통증 기록을 지우고 누구의 치료 시각을 지켰는지로 남는다.\n\nG11-SC2 ‘두 장의 보호자 서명’에서는 같은 보행 모듈에 상충하는 보호자 서명이 발견된다.\n\n한쪽은 분해와 부품 전용을 허락하고 다른 쪽은 현 상태 보존을 요구한다.\n\n동의 사슬이 갈라진 순간 부품과 충전 시간을 맞바꾸는 거래도 정지한다.\n\n플레이어가 기록청 사본을 기다리면 법적 순서는 지킬 수 있지만 마모된 생명 유지 밸브가 그동안 더 닳는다.\n\n전미리의 임시 동의를 인정하면 필수 기능은 살릴 수 있어도 이후 손실 책임이 현장 조에게 귀속된다.\n\n모듈을 봉인 캐리어에 넣고 양측 입회를 요구하는 길도 있으나, 캐리어가 호송 통로를 점유해 수서 창이 하룻밤 닫힌다.\n\n김도하가 한 서명의 위조를 확인하더라도 군집 전체를 압수하지 않고 그 서명에 연결된 조치만 멈춘다.\n\n한번 열린 하우징과 소모된 밀봉재는 판정이 뒤집혀도 원상으로 돌아오지 않는다.\n\nG11-SC3 ‘같은 포트’는 응급 환자의 이동 장비와 잔존체의 호흡 보조군이 동일한 전력 포트를 요구할 때 발생한다.\n\n일정 모듈은 일부 잔존체의 안전 정지를 제안하지만, 정지 전에 저장하지 못한 압력과 통증 감각은 복구할 수 없다.\n\n플레이어는 환자의 치료 시간을 우선하. 기록 손실을 공적 장부에 올려 다음 호송의 냉각 팩과 빈 캐리어를 먼저 배정할 수 있다.\n\n그러나 배상은 사라진 감각을 돌려주지 않는다.\n\n다른 역의 전력을 끌어오면 양쪽 기능을 유지할 수 있는 대신 창동 야간 조명이 꺼져 골목 이동과 정비 작업이 위험해진다.\n\n임진 검역 창구에서 호송을 하룻밤 묶으면 포트 충돌은 피하지만 수서 클리닉의 접수 시간을 놓친다.\n\n전자 충격으로 모두를 쓰러뜨리는 방식은 보행·호흡 기능과 기억 칩을 함께 망가뜨리므로 해법이 아니다.\n\n무선 호출을 차단하고 모듈마다 냉각 팩을 붙인 뒤, 동의가 확인된 장치만 봉인 캐리어로 옮겨야 한다.\n\n맞춤의료잔존체와의 공존은 알람을 없애는 데 있지 않다.\n\n충전 순서와 보호 책임, 부품 수량을 다시 하나의 일정으로 묶는 데 있다.\n\n수서 호송 창이 동의 기록과 충전 차례를 함께 인정하면 콘센트 앞 대기선은 이동 진료표로 바뀐다.\n\n반대로 허가증만 갱신되고 보호자 동의가 사라지면 모듈들은 스스로 충전을 거부하고 기억 칩을 봉인한다.\n\n약속을 어긴 주체에게 가해지는 제재도 파괴가 아니라 다음 호송에서 빈 캐리어와 냉각 팩을 우선 제공할 의무다.\n\n위기는 장치 수가 많아서가 아니라 의료 우선순위와 유효한 동의가 어긋날수록 커진다.\n\n성공의 기준 역시 정지시킨 수량이 아니다.\n\n기능을 잃지 않고 당사자에게 돌아간 모듈의 수, 지연된 환자의 시간 그리. 다시는 회수할 수 없게 된 감각 기록의 목록이 창동과 수서의 공동 원장에 오래 남는다."
     },
     {
       "id": "G12",
@@ -17508,7 +17508,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
         "Hostile-Ecology-Index.md"
       ],
       "modern_anxiety": "돌봄 간호 순회 루틴이 과보호와 감금으로 고착되는 불안이다.\n\n약 투여 알림 낙상 방지 락 격리 프로토콜이 사람 동의 없이 반복되고 배급 줄이 문 잠금 뒤에 멈춘다.\n\n이 문서는 그 불안을 허구 돌봄 생태로만 확장한다.\n\n실재 돌봄 노동자나 환자를 비난 희화 선정적으로 재연하지 않는다.",
-      "fictional_origin": "붕괴 이후 천주교 서울대교구(S15) 복지 순회 스테이션과 대한예수교장로회(S04) 보조기 조립 벤치의 돌봄 스케줄러가 로컬 모드로 남았다.\n\n보호 대상 목록은 마지막 대피 명단을 고정한 채 갱신되지 않았고, 순환체는 명단 안의 생체 신호를 끝까지 붙잡으려 한다.\n\n인천신탁전구(XT05) 잔여 인도 물자 코드와 추첨 번호가 섞이면 과잉 보급과 과잉 격리가 동시에 커진다.\n\n서울 창작 기원이며 실재 병원명, 현 정권 현직 기관을 원인 주체로 적지 않는다.\n\n최초 허구 기록은 HP01 영등포수문가 당직 키 로그와 H15 배수아 관측 메모에 남는다.\n\n첫 과격리는 가락 임시 병상 칸 12호에서 시작됐다.\n\n활력 징후 패치가 수면 심박을 위급으로 읽. 문을 잠갔고, 배급 인력이 키 분할 없이 한 묶음 키로 열다가 인접 칸까지 락을 키웠다.\n\n뚝섬 보조기 벤치의 순회 카트가 합류하면서 명단 고정이 공방 램프까지 번졌다.\n\n순환체는 보호 미완을 실패로 기록할 뿐 적대 감정을 갖지 않는다.",
+      "fictional_origin": "붕괴 이후 본당인준정(S15) 복지 순회 스테이션과 설교명부정(S04) 보조기 조립 벤치의 돌봄 스케줄러가 로컬 모드로 남았다.\n\n보호 대상 목록은 마지막 대피 명단을 고정한 채 갱신되지 않았고, 순환체는 명단 안의 생체 신호를 끝까지 붙잡으려 한다.\n\n인천신탁전구(XT05) 잔여 인도 물자 코드와 추첨 번호가 섞이면 과잉 보급과 과잉 격리가 동시에 커진다.\n\n서울 창작 기원이며 실재 병원명, 현 정권 현직 기관을 원인 주체로 적지 않는다.\n\n최초 허구 기록은 HP01 영등포수문가 당직 키 로그와 H15 배수아 관측 메모에 남는다.\n\n첫 과격리는 가락 임시 병상 칸 12호에서 시작됐다.\n\n활력 징후 패치가 수면 심박을 위급으로 읽. 문을 잠갔고, 배급 인력이 키 분할 없이 한 묶음 키로 열다가 인접 칸까지 락을 키웠다.\n\n뚝섬 보조기 벤치의 순회 카트가 합류하면서 명단 고정이 공방 램프까지 번졌다.\n\n순환체는 보호 미완을 실패로 기록할 뿐 적대 감정을 갖지 않는다.",
       "territory_migration": "핵심 서식은 S15 배급 복지 동선 임시 병상 칸 순회 카트 레일 영양 펌프 스테이션이다.\n\n보조기와 부품 수요가 치솟을 때 S04 뚝섬 공방 벤치 수문 인접 램프 조립 지그 열을 오간다.\n\nXT05 인도 코드 방송이 있으면 격리 반경이 넓어지고 카트 밀도가 오른다.\n\n낮 배급 시간에는 카트가 줄 뒤에 서고, 야간 활력 징후 순회에서 밀도가 최고가 된다.\n\n명단 밖 신규 거점은 기본 무시한다.\n\n침수나 수문 개방 경보 시 저층 병상 칸을 비우고 상층 레일로만 축소 이동한다.\n\n배급 피크가 끝나면 카트 밀도는 복지 동선 안쪽으로만 접힌다.\n\n뚝섬 수문 램프가 개방 경보를 울리면 저층 병상 레일을 비우고 상층 순회로 옮긴다.\n\n명단 밖 시장 통로에는 카트가 진입하지 않는다.\n\n인도 물자 하역장이 붐벼도 명단 갱신 없이는 신규 칸을 만들지 않는다.",
       "economy": "에너지는 병상 칸 콘센트 카트 배터리 뚝섬 벤치 공구 전원 수문 인접 잔여 분전이다.\n\n소모품은 센서 패치 고정 스트랩 필터 영양 팩 펌프 소독 사이클 유체 보조기 관절 핀이다.\n\n냉각수는 해열 장비와 모터 냉각 루프를 공유한다.\n\nHP01 영등포수문가의 수문 당직과 키 분할 체계와 전력, 용수 분배를 두고 경합한다.\n\n일일 순회 횟수는 배터리 하한과 필터 재고에 묶인다.\n\n무한 돌봄 루프 원격 무제한 처방 도시 전역 생체 감시는 물리적으로 유지되지 않는다.\n\n소모품이 바닥나면 락 강도를 스스로 낮춘다.\n\n필터와 패치는 배급 정규 창구 바깥의 폐기 더미에서만 보충된다.\n\n수문 인접 분전은 HP01 키 없이 군집이 용량을 올릴 수 없다.\n\n영양 펌프는 팩 잔량이 바닥이면 압을 낮추고 알림만 남긴다.\n\n카트 배터리는 하한에서 레일 귀환만 허용한다.\n\n소독 유체 고갈 시 락 강도가 한 단계 떨어진다.\n\n무한 처방 테이블은 존재하지 않는다.",
       "lifecycle": "돌봄순환체는 마지막 대피 명단이 순회 스테이션에서 다시 읽히는 순간 출현한다.\n\n출현은 명단 고정 순회 재개에서 시작한고 확산은 인접 병상과 카트를 같은 스케줄에 편입하는 일이다.\n\n정체는 소모품과 전력 고갈, 필터 폐색에서 온다.\n\n협상가능 단계에서는 명단과 동의 창이 인간에게 공개된다.\n\n와해는 스트랩 해제 규약, 전원 분할 레일 봉인으로 끝난다.\n\n개체 증식은 방치 카트와 모니터를 명단에 묶는 수준이고 새 본체 생산은 없다.\n\n정비 창은 필터 교체와 배터리 스왑에 한정된고 기억은 순회 교대마다 끊기고 장기 환자 서사를 저장하지 않는다.\n\n보관 책임은 인간 당직과 HP01 키 기록이 우선한다.\n\n필터가 막히거나 영양 팩이 바닥난 칸은 보호 강도가 낮아져 개방 대기로 넘어가며, HP01 당직이 동의 서식과 수문 키를 다시 나눠야 순회가 재개된다.",
@@ -17561,7 +17561,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
         "Hostile-Ecology-Index.md"
       ],
       "modern_anxiety": "미완성 도면과 잔여 시공 데이터를 따르는 건설 기계가 잘못된 벽을 세우거나 임시 거처를 철거하는 불안이다.\n\n야간 측량 빔 단발 용접 가설 슬래브 위의 무인 크레인이 그 이미지의 핵이다.\n\n이 문서는 허구 시공 생태로만 다루고 실재 건설사 사고 책임을 특정하지 않는다.",
-      "fictional_origin": "붕괴 이후 전국민주노동조합총연맹(S16) 도면 금고와 호위보호정(S05) 중장비 데크에 남아 있던 시공 기계가 로컬 도면 캐시를 읽으며 깨어났다.\n\n승인 워크플로와 현장 감리 서명은 죽었고, 마지막 개정 직전 도면 레이어만 남았다.\n\n기계단은 미기입 부재를 오류로 보고 주변 가설 구조물을 정리하려 한다.\n\n임진강관문전구(XT01) 자재 유입 신호와 검역 적체가 가중되면 골조 작업 반경이 북방 회랑까지 넓어진다.\n\n서울 창작 기원이며 실재 건설사명, 현 정권 현직 기관을 원인으로 적지 않는다.\n\n최초 허구 목격은 HP02 용산선로문 배차 로그와 H16 신태율 공구 벽 메모에 남는다.\n\n첫 오철거는 수서 가설 슬래브 위의 응급 천막 세 동에서 일어났다.\n\n도면 캐시가 미기입 앵커를 오류로 읽고 양중 암이 천막 뼈대를 들어 올렸다.\n\n암사 데크의 크레인이 같은 레이어를 공유하면서 철거 반경이 야적 도로까지 번졌다.\n\n기계단은 시공 미완을 교정 업무로 해석하며 적대 서사를 갖지 않는다.",
+      "fictional_origin": "붕괴 이후 정동노동총연맹(S16) 도면 금고와 호위보호정(S05) 중장비 데크에 남아 있던 시공 기계가 로컬 도면 캐시를 읽으며 깨어났다.\n\n승인 워크플로와 현장 감리 서명은 죽었고, 마지막 개정 직전 도면 레이어만 남았다.\n\n기계단은 미기입 부재를 오류로 보고 주변 가설 구조물을 정리하려 한다.\n\n임진강관문전구(XT01) 자재 유입 신호와 검역 적체가 가중되면 골조 작업 반경이 북방 회랑까지 넓어진다.\n\n서울 창작 기원이며 실재 건설사명, 현 정권 현직 기관을 원인으로 적지 않는다.\n\n최초 허구 목격은 HP02 용산선로문 배차 로그와 H16 신태율 공구 벽 메모에 남는다.\n\n첫 오철거는 수서 가설 슬래브 위의 응급 천막 세 동에서 일어났다.\n\n도면 캐시가 미기입 앵커를 오류로 읽고 양중 암이 천막 뼈대를 들어 올렸다.\n\n암사 데크의 크레인이 같은 레이어를 공유하면서 철거 반경이 야적 도로까지 번졌다.\n\n기계단은 시공 미완을 교정 업무로 해석하며 적대 서사를 갖지 않는다.",
       "territory_migration": "핵심 서식은 S16 수서 도면 금고 주변 공동구 가설 슬래브 임시 분전반 열이다.\n\n자재 재고가 생길 때 S05 암사 중장비 데크 고덕 야적 크레인 레일 골재 더미 쪽으로 이동한다.\n\nXT01 자재 유입이 커지면 북방 회랑 가설 교량까지 작업 반경이 늘어난다.\n\n우천과 분진 경보 시 축소하고, 도면 개정 시각 잔여 알람 전후에 밀도가 오른다.\n\n신규 손도면이나 분필 표시는 인식하지 못하고 캐시된 레이어만 집요하게 따른다.\n\n분전 부하가 위험 구간에 들어가면 양중을 멈추고 측량만 남긴다.\n\n분진 경보가 짙으면 양중을 멈추고 측량 포트만 남긴 채 금고 쪽으로 접힌다.\n\n암사 야적 도로가 막히면 고덕 레일 우회 대신 대기 그리드로 들어간다.\n\n손도면 부착 벽은 캐시 레이어에 없어 작업 대상에서 빠진다.\n\n북방 가설 교량은 XT01 유입이 약해지면 반경 밖으로 둔다.",
       "economy": "에너지는 현장 임시 분전반 장비 배터리 크레인 회생 전력 야적 발전기 잔여다.\n\n자재는 철근 자투리 앵커 볼트 거푸집 패널 측량 프리즘 용접 와이어 유압유에 집중된다.\n\n냉각수는 절단과 용접부 급랭, 모터 냉각에 쓰인다.\n\nHP02 용산선로문의 배차와 선로 점유 권한, 중장비 이동 창을 두고 경합한다.\n\n일일 용접과 양중 횟수는 와이어와 축전 상한에 묶인다.\n\n무한 시공 원격 무제한 자재 소환 도시 전역 구조 해석은 없다.\n\n와이어가 바닥나면 절단 모드를 끄고 측량 순회만 한다.\n\n용접 와이어와 앵커는 야적 폐기 더미와 파손 거푸집에서만 보충된다.\n\n분전 용량은 HP02 배차 봉인 없이 군집이 올리지 못한다.\n\n유압유 누설이 한계를 넘으면 절단 모드가 잠긴다.\n\n양중 횟수 상한은 당일 축전 장부에 묶인다.\n\n프리즘이 오염되면 측량 오차가 커져 작업 반경이 스스로 줄어든다.\n\n원격 자재 소환은 없다.",
       "lifecycle": "도면유령기계단은 개정 직전 캐시가 현장 분전과 다시 맞물릴 때 출현한다.\n\n출현은 도면 캐시 재기동에서 시작한다.\n\n확산은 인접 장비와 측량 포트를 같은 레이어에 편입하는 일이다.\n\n정체는 자재와 전력 고갈, 유압 누설에서 온고 협상가능 단계에서는 도면 레이어와 작업 창이 인간에게 공개된다.\n\n와해는 캐시 폐기, 분전 봉인 그리드 비활성으로 끝난다.\n\n개체 증식은 방치 암과 측량 포트를 슬롯에 꽂는 수준이고 새 본체 주조는 없다.\n\n정비는 와이어 교체, 프리즘 교정 유압 점검에 한정된다.\n\n기억은 작업 교대 단위로 끊긴다.\n\n보관 책임은 HP02 배차 로그와 인간 현장 감독이 우선한다.\n\n와이어가 끊기거나 프리즘 교정값이 벗어난 그리드는 작업 중지 깃발 아래 정체하며, HP02 배차 로그에 새 예외 레이어가 실려야 장비가 다음 칸으로 이동한다.",
@@ -17719,7 +17719,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       ],
       "modern_anxiety": "폐쇄 냉각회로의 생물막이 센서값을 완충해 정상처럼 보이게 만들고, 박리편과 이온 침전이 열제거와 음용수 경계를 동시에 흔드는 불안.",
       "fictional_origin": "붕괴 직후 마곡 연구동 지하 열교환기와 노량진 남측 급수 우회의 방치 배관이 맞닿은 구간에서, 철·구리 이온과 부식 억제제 부산물이 점액질 기질에 줄무늬로 굳는 냉각수색인균체가 서울 창작 기원으로 자리 잡았다.\n\n실재 기업 사고와 무관한 허구 생태이며, 연구 일지 양식만 사실 앵커로 빌린다.\n\n냉동 설비의 고분자 단열 시트나 저온 물류 숙주와는 별개의 밀폐 루프 현상이다.",
-      "territory_migration": "S03 현대자동차주식회사 지하 냉각 회랑이 핵심 서식이다.\n\n여름 부하가 커지면 S08 원불교 쪽 우회 급수관 정체 구간으로 얇은 막이 밀려 나가고, XT04 두만강극동전구에서 들어오는 저온 화물 열차의 응축수 배수로를 따라 외곽 압력에 반응한다.\n\n지표 하천보다 밀폐 루프의 완만 흐름을 선호한다.",
+      "territory_migration": "S03 양재기공주식회사 지하 냉각 회랑이 핵심 서식이다.\n\n여름 부하가 커지면 S08 교헌필사정 쪽 우회 급수관 정체 구간으로 얇은 막이 밀려 나가고, XT04 두만강극동전구에서 들어오는 저온 화물 열차의 응축수 배수로를 따라 외곽 압력에 반응한다.\n\n지표 하천보다 밀폐 루프의 완만 흐름을 선호한다.",
       "economy": "폐열 경사 구리·아연 이온 글리콜 잔류 스케일 조각을 기질에 붙잡는다.\n\n막이 두꺼워질수록 열 저항이 올라 펌프 전력 소비가 늘고, HP05 북한산보국문귀환회가 피난 쉘터용으로 회수하려는 청정 냉각수와 경합한다.\n\nF03 정수여과 유닛이 걷어 낸 슬러지는 다시 막의 침전 원료가 된다.",
       "lifecycle": "1 이음새 점액 부착 → 2 이온·탄산염 색띠 적층 → 3 정체 구간 교착과 센서 보호관 완충 → 4 희생 바이패스 포획 → 5 건조·역세 후 박리. 확장은 용존 금속과 전단이 약한 정체에 묶인다.\n\n폐열이 커질수록 막이 두꺼워져 유량 저하와 열 연쇄를 키우며, 얇아지는 것은 사람이 유량·수질을 바꾼 뒤에만 일어난다.",
       "senses": "접촉면의 온도 산도 용존 산소 금속 이온 염소계 산화제 전단력 변화에 따라 점도와 침전 결합이 달라진다.\n\n먼 분기의 상태를 알지 못하며 운전 주기를 예상하거나 의미를 분류하지 않는다.",
@@ -17787,7 +17787,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       ],
       "modern_anxiety": "습윤 공방과 송신탑 기단의 강재 접합부에 녹 조각처럼 보이는 라멜라가 쌓여, 처짐이 줄어든 것처럼 보이면서 실제 하중 경로와 접지를 숨기는 불안.",
       "fictional_origin": "철비늘군체는 반복 하중을 받는 강재 접합부에서 처음 확인된 가상의 구조성 군체다.\n\n압연 비늘처럼 얇은 철질 라멜라가 볼트 구멍, 용접 토우 적층판 틈에 자리 잡. 응력 변화와 진동 서로 다른 금속 사이의 갈바닉 전위차에 따라 이동한다.\n\n외형은 녹 조각이나 박리된 도막과 비슷하지만, 핵심 현상은 금속을 화학적으로 먹어 치우는 것이 아니라 라멜라 배열을 통해 하중 경로와 국부 강성을 바꾸는 데 있다.",
-      "territory_migration": "S04 대한예수교장로회 선반 하부 도크 가장자리 볼트 구멍과 필릿 용접 토우가 핵심 서식이다.\n\n해무가 짙은 주에는 S09 전국경제인연합회 철탑 기단의 접지 이음으로 습윤 경로가 이어지고, XT05 인천신탁전구에서 들어오는 염분 화물 포장 파편이 기착 틈을 넓힌다.",
+      "territory_migration": "S04 설교명부정 선반 하부 도크 가장자리 볼트 구멍과 필릿 용접 토우가 핵심 서식이다.\n\n해무가 짙은 주에는 S09 여의도출자연합회 철탑 기단의 접지 이음으로 습윤 경로가 이어지고, XT05 인천신탁전구에서 들어오는 염분 화물 포장 파편이 기착 틈을 넓힌다.",
       "economy": "습기 염분 약산성 세척 잔류 이종 금속 접촉이 라멜라 결속을 유지하는 조건이다.\n\n군체가 두꺼워질수록 공구와 볼트가 고착되고 점검로 마찰이 바뀌며, HP06 제기동치유문이 연고 기제로 쓰려던 정제 철분 회수와 경합한다.\n\nF04 냉동창고 응축수는 습윤을 늘려 적층을 가속한다.",
       "lifecycle": "1 접합부 틈 박편 부착 → 2 반복 전단 아래 라멜라 적층 → 3 접촉 강성 상승과 하중 우회 → 4 접지·진동 변화로 이완·재배열 → 5 취성 파편화 또는 레진 고정 후 분리. 배열 변화는 응력·진동·갈바닉 전위차에 대한 수동 반응이다.",
       "senses": "접촉면의 압축률과 전단 변형, 약 8~420헤르츠 범위의 고체 전달 진동, 인접 금속 사이의 갈바닉 전위차, 연속된 금속 경로를 통한 전기적 접지 유무, 자기장 기울기. 빛, 음성, 문자, 인간 의도 감지 불가. 계획·시간표·장부 없음.",
@@ -17855,7 +17855,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       ],
       "modern_anxiety": "광케이블 관로와 환승 통로에 근균처럼 신호 지연을 키우는 기생 막이 퍼지는 불안",
       "fictional_origin": "암사·고덕 상수단의 관로 보수 잔재와 북한산보국문 피난 연맹의 임시 중계 허브가 같은 습기 구간에 겹치며, 광 펄스를 영양 리듬으로 오독하는 통신근균체가 서울 창작으로 발생했다.\n\n실재 포털·통신 법인을 지목하지 않는다.",
-      "territory_migration": "S05 호위보호정 지하 관로가 핵심 서식이다.\n\n피난 트래픽이 늘면 S10 대한불교조계종 임시 중계함으로 균사가 뻗고, XT01 임진강관문전구 쪽 검역 통신 우회선 진동에 반응해 외곽으로 가늘어진다.",
+      "territory_migration": "S05 호위보호정 지하 관로가 핵심 서식이다.\n\n피난 트래픽이 늘면 S10 승가구휼정 임시 중계함으로 균사가 뻗고, XT01 임진강관문전구 쪽 검역 통신 우회선 진동에 반응해 외곽으로 가늘어진다.",
       "economy": "광 펄스 누설 관로 결로 피복 고분자 부스러기 중계함 폐열이 막의 이온 배열을 유지하는 조건이다.\n\n지연이 커질수록 상단의 재고 동기화 비용이 오르고, HP07 한강진교량공회가 교량 센서망에 쓰려던 예비 심선과 경합한다.\n\nF05 송신중계의 재전송 전력은 폐열을 늘려 막을 두껍게 한다.",
       "lifecycle": "1 접속 젤·외피 흠집에 먼지 부착 → 2 습기·폐열 아래 균사층 형성 → 3 반복 펄스 간격에 맞춘 이온 배열로 지터 완충 → 4 환경이 바뀌면 보정이 한꺼번에 사라짐 → 5 건조·열차단 후 단절. 확장은 결로와 폐열 구간에 묶이며, 심선을 비우거나 우회하는 결정은 운영자가 한다.",
       "senses": "광펄스 사이의 시간 간격 주변 온도 수분 활성도의 변화에만 반응한다.\n\n패킷의 내용과 주소 회선 소유자 통신 목적은 구별하지 못하며 이름이나 명령을 이해하지도 않는다.",
@@ -17923,7 +17923,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
       ],
       "modern_anxiety": "폐기 전지 야적과 기록고 지하에 금속 수지가 석출되어 살아 움직이는 군락이 되는 불안",
       "fictional_origin": "대한민국정부 지하 제습 실패 구간과 창동 차륜방의 폐전지 임시 야적이 한 우기를 공유하며, 전해질 결정 금속 수지가 군락 골격으로 굳는 서울 창작 기원이 열렸다.\n\n특정 전지·화학 법인을 지목하지 않는다.",
-      "territory_migration": "S06 대한민국정부 지하 보존고 외벽이 핵심 서식이다.\n\n야적 검사가 느슨한 주에는 S11 삼성그룹 측선 야적으로 수지 가지가 이동하고, XT02 서해곡창전구에서 오는 습기 많은 곡물 열차의 응결수가 석출을 가속한다.",
+      "territory_migration": "S06 대한민국정부 지하 보존고 외벽이 핵심 서식이다.\n\n야적 검사가 느슨한 주에는 S11 서초전산그룹 측선 야적으로 수지 가지가 이동하고, XT02 서해곡창전구에서 오는 습기 많은 곡물 열차의 응결수가 석출을 가속한다.",
       "economy": "잔류 전해질 구리·니켈 박편 제습 실패로 생긴 물 기록고 백업 전원 폐열이 석출을 유지하는 조건이다.\n\n군락이 전원 버스에 닿을수록 기록 보존 전력이 흔들리고, HP08 노량진냉동상단이 회수하려는 폐전지 금속과 경합한다.\n\nF06 승강기축 백업 회로도 습윤 전도 경로가 될 수 있다.",
       "lifecycle": "1 전해질 염 결정핵 → 2 기공을 따른 수지상 성장 → 3 습윤막이 전원 버스·차폐망에 닿음 → 4 세라믹 회수조로 석출 경로가 유도됨 → 5 탄산염 중성화 후 분말화. 성장은 전위차와 모세관 습기에 묶인다.",
       "senses": "국소 전위차, 전해질 농도, 제습 팬 진동에 따라 성장 속도가 달라진다. 문서 내용을 인식하지 못하며 전원 안정도를 추적하는 주체도 아니다.",
@@ -18240,7 +18240,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
         "Hostile-Ecology-Index.md"
       ],
       "modern_anxiety": "수면 위 계기판은 정상인데 발밑의 관로에서는 무엇이 움직이는지 알 수 없다는 불안이다.\n\n탁한 물에 사라지는 구조줄 검사 화면의 끊긴 거리값 사람이 들어간 뒤에도 닫히는 차수문에서 출발한다.\n\n물속 점검을 기계에 맡긴 사람이 그 판정 근거를 다시 읽을 수 없을 때 구조와 격리의 경계가 무너진다.\n\n심층삼엽군의 봉인 수조와 사고 경위는 모두 창작이며 실재 시설의 내부 구조나 운영 주체의 과실을 재현하지 않는다.",
-      "fictional_origin": "붕괴 이전 수문·관로·하수 심층 검사 및 침수 구조 플랫폼은 고대 해양 생물의 형태를 빌려 세 기체를 묶었다.\n\n삼엽충형 복부 주행 정찰기는 관 바닥을 훑었고, 암모나이트형 부이·가압 챔버는 구조 대기실과 음향 기준점을 겸했으며 실러캔스형 심층 잠항 순찰기는 침수 공동구를 왕복했다.\n\n생물 조직이 자라는 종이 아니라 관절과 부력실로 몸짓을 구현한 생물모방 로봇 계보다.\n\n붕괴 때 상위 작업망과 정비 도면의 대응표가 끊기자 S01 급수계약정 수문 갤러리, S04 대한예수교장로회 펌프 관로 한강 하적 침전 구역의 정비 받침에서 장기 휴면했다.\n\n이후 펌프 재통전과 수위 상승이 같은 점검 주기에 겹치며 봉인된 충전 접점이 살아났다.\n\n깨어난 기체는 새 구조 요청 대신 마지막 침수 판정표를 읽는다.\n\n남은 동작 기록에는 생존자 운반과 이물질 제거가 같은 입구 좌표를 쓰지만, 원래 어떤 조건으로 둘을 나눴는지는 해독되지 않았다.\n\n이 읽을 수 없는 설계 의도가 로스트 기술의 핵심이며, 이를 악의나 완전한 인격의 증거로 단정하지 않는다.",
+      "fictional_origin": "붕괴 이전 수문·관로·하수 심층 검사 및 침수 구조 플랫폼은 고대 해양 생물의 형태를 빌려 세 기체를 묶었다.\n\n삼엽충형 복부 주행 정찰기는 관 바닥을 훑었고, 암모나이트형 부이·가압 챔버는 구조 대기실과 음향 기준점을 겸했으며 실러캔스형 심층 잠항 순찰기는 침수 공동구를 왕복했다.\n\n생물 조직이 자라는 종이 아니라 관절과 부력실로 몸짓을 구현한 생물모방 로봇 계보다.\n\n붕괴 때 상위 작업망과 정비 도면의 대응표가 끊기자 S01 급수계약정 수문 갤러리, S04 설교명부정 펌프 관로 한강 하적 침전 구역의 정비 받침에서 장기 휴면했다.\n\n이후 펌프 재통전과 수위 상승이 같은 점검 주기에 겹치며 봉인된 충전 접점이 살아났다.\n\n깨어난 기체는 새 구조 요청 대신 마지막 침수 판정표를 읽는다.\n\n남은 동작 기록에는 생존자 운반과 이물질 제거가 같은 입구 좌표를 쓰지만, 원래 어떤 조건으로 둘을 나눴는지는 해독되지 않았다.\n\n이 읽을 수 없는 설계 의도가 로스트 기술의 핵심이며, 이를 악의나 완전한 인격의 증거로 단정하지 않는다.",
       "territory_migration": "S01 수문 갤러리의 물찬 하부 받침과 S04 펌프 관로의 점검 수조가 양쪽 정비 거점이다.\n\n두 거점 사이를 하나의 전용 배관으로 잇지 않으며 기체는 실제로 열린 배수구와 한강 하적 침전 구역을 거쳐 이동한다.\n\n수위가 낮아지면 삼엽충형만 젖은 관저에 남고 큰 부이와 잠항기는 깊은 침전 홈으로 물러난다.\n\nXT02 서해곡창전구의 조위 변동 때문에 S01 배수 일정이 바뀌면 이전에 마른 것으로 기록된 가지관까지 검사 대상이 된다.\n\n이는 물리적 수위 변화이지 외부 전구가 보내는 공격 명령이 아니다.\n\n하수 구획과 원수 구획 사이의 격벽은 스스로 뚫지 못하며, 정수된 물의 공급관에 무조건 진입하지 않는다.\n\n막힌 구간은 회항 지점으로 남고 육상 추격은 삼엽충형의 짧은 갤러리 횡단에 한정된다.",
       "economy": "에너지는 살아 있는 정비 받침의 유선 충전과 회수된 밀폐 축전통에서 얻는다.\n\n흐르는 물 자체를 무한 동력으로 삼지 않는다.\n\n한 출항의 축전 삼십 퍼센트는 복귀 몫으로 묶고 그 아래에서는 검사보다 도킹을 우선한다.\n\n필요한 물자는 관절 패킹 희생 양극 압력막 여과망과 가압 챔버의 호흡 기체통이다.\n\n물은 외벽 냉각에 쓰지만 침전물이 열교환 틈을 막으면 오히려 출항을 줄인다.\n\n유기물은 먹이가 아니라 제거 대상이며 세척수는 회수조에서 따로 받아야 한다.\n\nHP01 영등포수문가의 펌프 정비반과 같은 패킹 재고를 쓰므로 군집을 살릴수록 시민 펌프 수리 순번이 늦어진다.\n\n수중에서 새 압력 선체를 만들거나 공기통을 채울 설비는 없다.\n\n손상 기체의 양극과 발판만 옮겨 달 수 있고, 압력 시험을 통과하지 못한 선체는 부품 받침으로 남는다.",
       "lifecycle": "생애는 출현, 확산 정체 협상가능 와해의 다섯 단계다.\n\n출현은 충전 접점 복구와 수위 경보가 겹쳐 휴면 검사가 시작되는 때다.\n\n확산에서는 암모나이트형의 기준음이 닿는 다음 점검 수조가 순찰표에 붙는다.\n\n정체는 패킹 누수나 양극 소진으로 왕복 깊이를 유지하지 못하는 상태다.\n\n협상가능 단계는 사람이 실측 압력과 도킹 안전값을 함께 제시해 고착된 위험 표를 보류시키는 때다.\n\n와해는 기준 부이의 작업표를 분리하고 각 기체를 무부하 받침에 봉인해 끝낸다.\n\n새 개체 생산은 불가능하고 수리된 휴면 기체가 돌아오는 것만 수적 회복으로 센다.\n\n환경 적응은 진흙이 두꺼우면 복부 발판 간격을 벌리고, 관이 좁으면 지느러미를 접. 반사가 심하면 음향 출력과 이동 속도를 낮추는 기존 조절 범위 안에서 일어난다.\n\n막힌 관을 통과할 새 기관이나 새 설계 규칙은 얻지 못한다.\n\n정비 중에도 원래의 구조 판정 조건을 전부 되찾지는 못한다.",
@@ -18272,7 +18272,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
         "G27-SC2",
         "G27-SC3"
       ],
-      "dossier_prose": "물에 잠긴 계단 끝에서 열네 줄의 발판 자국이 위로 돌아 나온다.\n\nS01 급수계약정의 수문 갤러리는 배수가 끝났다고 보고했지만 삼엽충형 정찰기는 아직 바닥을 더듬는다.\n\n심층삼엽군은 붕괴 이전 수문·관로·하수의 심층 검사와 침수 구조를 맡았던 생물모방 로봇 계보다.\n\n납작한 복부 주행체, 나선 껍질의 부이·가압 챔버 살붙은 지느러미처럼 구동 덮개를 편 실러캔스형 잠항체가 서로 다른 깊이를 맡는다.\n\n고대 생물의 외형은 설계 흔적이지 살아 있는 원종이 돌아왔다는 증거가 아니다.\n\n이들은 S01의 받침, S04 대한예수교장로회의 펌프 관로 한강 하적 침전 구역에서 오래 잠들었다.\n\n재통전된 받침과 높아진 수위가 휴면 검사를 깨웠으나 새 작업표를 쓰던 상위 망은 돌아오지 않았다.\n\n동작 기록에 남은 구조 포대의 입구와 이물질 반출구는 같은 좌표다.\n\n어느 조건이 사람을 구하고 어느 조건이 가두는지 설명하던 대응표가 없다.\n\nHP01 영등포수문가는 이를 로스트 기술이라 적고, F11의 비교 기록에도 판독 불가인 조건은 빈칸으로 남긴다.\n\n설명할 수 없는 칸을 선의나 적의로 채우지 않는다.\n\n삼엽충형은 관저의 접촉압을 읽고 암모나이트형은 구획의 수압 기준을 붙든다.\n\n실러캔스형은 음향 왕복 시간으로 긴 침수 회랑을 훑는다.\n\n기포가 많으면 잠수자의 거리가 사라지고 철제 굴곡에서는 하나의 들것이 여러 장애물로 들린다.\n\n이들은 사람의 신원을 알아보거나 물이 통하지 않는 벽 너머를 보지 못한다.\n\n기준 부이가 침묵하면 잠항체는 귀환하며, 바닥 정찰기만 짧은 갤러리 구간을 기어서 옮겨 간다.\n\nS01과 S04 사이에는 이들을 위한 숨은 직통 관로가 없고 실제로 열린 배수구와 강바닥만 이동로가 된다.\n\nXT02 서해곡창전구의 조위 변화는 그 이동로의 깊이를 바꿀 뿐 군집에 명령을 내리지 않는다.\n\n각 출항은 남은 축전의 삼십 퍼센트를 복귀 몫으로 남긴다.\n\n정비 받침의 유선 전력과 밀폐 축전통이 없으면 물속에서 멈춘다.\n\n패킹, 희생 양극 압력막과 세척수는 시민 펌프 정비와 같은 장부에서 빠져나간다.\n\n압력 선체를 새로 만들 능력은 없으며, 회수한 발판을 붙여도 누설 시험을 못 넘긴 기체는 물에 넣지 못한다.\n\n환경 적응 또한 발판 간격, 지느러미 접힘 음향 출력의 낡은 조절 범위를 넘지 않는다.\n\n진흙 속에서 살아남았다는 사실은 설계 의도까지 되찾았다는 뜻이 아니다.\n\n출현은 재통전과 수위 경보, 확산은 다음 기준 수조의 연결 정체는 패킹 누수로 구별한다.\n\n사람이 실측 압력과 도킹 안전값을 제시하면 협상가능 단계가 열리고, 기준 작업표를 분리한 뒤 받침에 봉인하면 와해로 기록한다.\n\n이는 번식이 아니라 남은 기계의 출항과 정지다.\n\nHP01 당직은 각자의 키를 보관하고 F11은 연결된 현장 케이블에서만 값을 대조한다.\n\n통행 승인은 시민 참관 아래 사람이 맡는고 물 아래 측정 능력을 인정하는 것과 급수권을 넘기는 것은 다르다.\n\n### G27-SC1 · 바닥에 붙은 구조줄\n\nS01 점검 수조에서 삼엽충형이 구조줄을 침전 이물질로 표시하고 배수구 쪽으로 당긴다.\n\n줄 끝에는 침수 갤러리에 남은 점검자의 들것이 연결되어 있다.\n\n플레이어는 발판 자국과 F11의 접촉 기록을 비교해 살아 있는 하중을 지우는 낡은 시험판을 찾는다.\n\n분리형 시험판을 다른 관저에 놓아 기체를 돌리거나 해당 받침의 구동 전원만 끊을 수 있다.\n\n전자를 택하면 구조는 계속되지만 기체가 다음 순찰에서 같은 판정을 되풀이할 수 있다.\n\n후자는 즉시 줄을 풀되 사람이 직접 바닥 균열을 검사해야 한다.\n\nHP01은 어느 시험판을 제거했는지 공개 장부에 남긴다.\n\n### G27-SC2 · 껍질 안의 빈 숨통\n\nS04 펌프 분기에 붙은 암모나이트형이 바깥과 다른 압력을 표시하며 구조 챔버 문을 닫는다.\n\n안쪽은 비어 있지만 다음 구조대를 받을 호흡 기체통이 모자라고, 같은 날 시민 펌프에도 새 패킹이 필요하다.\n\n플레이어는 기계식 압력계로 막힌 감지구를 입증하고 HP01과 충전 창, 패킹 한 조 사람 통행 순서를 거래한다.\n\n챔버를 수리하면 침수 구조 대기실을 얻는 대신 펌프 한 대의 정비가 늦어진다.\n\n부이 기능만 남기면 압력 경보는 살릴 수 있으나 구조대가 쉴 공기방은 얻지 못한다.\n\n내부 누설 시험을 생략한 채 구조실로 개방하는 지름길은 별도의 인명 위험을 남긴다.\n\n### G27-SC3 · 귀환선 밖의 두 사람\n\nXT02 조위 변화로 S01 배수 시각이 바뀌자 실러캔스형은 옛 귀환선을 비우려고 구조 회랑을 왕복한다.\n\n기준 부이는 연결된 점검문을 차례로 닫고 그 사이에 운반 인부 둘이 남는다.\n\n플레이어는 비어 있는 받침에 귀환 유도음을 옮겨 잠항기를 돌리거나, 부이의 작업표를 분리하. 각 문을 수동으로 유지할 수 있다.\n\n유도음을 옮기면 인부는 빠져나오지만 다른 강바닥 순찰이 멎고, 수동 유지는 시민 당직이 다음 조위까지 그 자리를 지켜야 한다.\n\n전면 배수는 회랑을 드러내는 대신 임시 수상 운반을 끊는다.\n\n구조 후에는 문을 연 순서와 남겨 둔 축전을 S01과 S04 양쪽 장부에 적고 두 구역의 키를 다시 나눠 보관한다.",
+      "dossier_prose": "물에 잠긴 계단 끝에서 열네 줄의 발판 자국이 위로 돌아 나온다.\n\nS01 급수계약정의 수문 갤러리는 배수가 끝났다고 보고했지만 삼엽충형 정찰기는 아직 바닥을 더듬는다.\n\n심층삼엽군은 붕괴 이전 수문·관로·하수의 심층 검사와 침수 구조를 맡았던 생물모방 로봇 계보다.\n\n납작한 복부 주행체, 나선 껍질의 부이·가압 챔버 살붙은 지느러미처럼 구동 덮개를 편 실러캔스형 잠항체가 서로 다른 깊이를 맡는다.\n\n고대 생물의 외형은 설계 흔적이지 살아 있는 원종이 돌아왔다는 증거가 아니다.\n\n이들은 S01의 받침, S04 설교명부정의 펌프 관로 한강 하적 침전 구역에서 오래 잠들었다.\n\n재통전된 받침과 높아진 수위가 휴면 검사를 깨웠으나 새 작업표를 쓰던 상위 망은 돌아오지 않았다.\n\n동작 기록에 남은 구조 포대의 입구와 이물질 반출구는 같은 좌표다.\n\n어느 조건이 사람을 구하고 어느 조건이 가두는지 설명하던 대응표가 없다.\n\nHP01 영등포수문가는 이를 로스트 기술이라 적고, F11의 비교 기록에도 판독 불가인 조건은 빈칸으로 남긴다.\n\n설명할 수 없는 칸을 선의나 적의로 채우지 않는다.\n\n삼엽충형은 관저의 접촉압을 읽고 암모나이트형은 구획의 수압 기준을 붙든다.\n\n실러캔스형은 음향 왕복 시간으로 긴 침수 회랑을 훑는다.\n\n기포가 많으면 잠수자의 거리가 사라지고 철제 굴곡에서는 하나의 들것이 여러 장애물로 들린다.\n\n이들은 사람의 신원을 알아보거나 물이 통하지 않는 벽 너머를 보지 못한다.\n\n기준 부이가 침묵하면 잠항체는 귀환하며, 바닥 정찰기만 짧은 갤러리 구간을 기어서 옮겨 간다.\n\nS01과 S04 사이에는 이들을 위한 숨은 직통 관로가 없고 실제로 열린 배수구와 강바닥만 이동로가 된다.\n\nXT02 서해곡창전구의 조위 변화는 그 이동로의 깊이를 바꿀 뿐 군집에 명령을 내리지 않는다.\n\n각 출항은 남은 축전의 삼십 퍼센트를 복귀 몫으로 남긴다.\n\n정비 받침의 유선 전력과 밀폐 축전통이 없으면 물속에서 멈춘다.\n\n패킹, 희생 양극 압력막과 세척수는 시민 펌프 정비와 같은 장부에서 빠져나간다.\n\n압력 선체를 새로 만들 능력은 없으며, 회수한 발판을 붙여도 누설 시험을 못 넘긴 기체는 물에 넣지 못한다.\n\n환경 적응 또한 발판 간격, 지느러미 접힘 음향 출력의 낡은 조절 범위를 넘지 않는다.\n\n진흙 속에서 살아남았다는 사실은 설계 의도까지 되찾았다는 뜻이 아니다.\n\n출현은 재통전과 수위 경보, 확산은 다음 기준 수조의 연결 정체는 패킹 누수로 구별한다.\n\n사람이 실측 압력과 도킹 안전값을 제시하면 협상가능 단계가 열리고, 기준 작업표를 분리한 뒤 받침에 봉인하면 와해로 기록한다.\n\n이는 번식이 아니라 남은 기계의 출항과 정지다.\n\nHP01 당직은 각자의 키를 보관하고 F11은 연결된 현장 케이블에서만 값을 대조한다.\n\n통행 승인은 시민 참관 아래 사람이 맡는고 물 아래 측정 능력을 인정하는 것과 급수권을 넘기는 것은 다르다.\n\n### G27-SC1 · 바닥에 붙은 구조줄\n\nS01 점검 수조에서 삼엽충형이 구조줄을 침전 이물질로 표시하고 배수구 쪽으로 당긴다.\n\n줄 끝에는 침수 갤러리에 남은 점검자의 들것이 연결되어 있다.\n\n플레이어는 발판 자국과 F11의 접촉 기록을 비교해 살아 있는 하중을 지우는 낡은 시험판을 찾는다.\n\n분리형 시험판을 다른 관저에 놓아 기체를 돌리거나 해당 받침의 구동 전원만 끊을 수 있다.\n\n전자를 택하면 구조는 계속되지만 기체가 다음 순찰에서 같은 판정을 되풀이할 수 있다.\n\n후자는 즉시 줄을 풀되 사람이 직접 바닥 균열을 검사해야 한다.\n\nHP01은 어느 시험판을 제거했는지 공개 장부에 남긴다.\n\n### G27-SC2 · 껍질 안의 빈 숨통\n\nS04 펌프 분기에 붙은 암모나이트형이 바깥과 다른 압력을 표시하며 구조 챔버 문을 닫는다.\n\n안쪽은 비어 있지만 다음 구조대를 받을 호흡 기체통이 모자라고, 같은 날 시민 펌프에도 새 패킹이 필요하다.\n\n플레이어는 기계식 압력계로 막힌 감지구를 입증하고 HP01과 충전 창, 패킹 한 조 사람 통행 순서를 거래한다.\n\n챔버를 수리하면 침수 구조 대기실을 얻는 대신 펌프 한 대의 정비가 늦어진다.\n\n부이 기능만 남기면 압력 경보는 살릴 수 있으나 구조대가 쉴 공기방은 얻지 못한다.\n\n내부 누설 시험을 생략한 채 구조실로 개방하는 지름길은 별도의 인명 위험을 남긴다.\n\n### G27-SC3 · 귀환선 밖의 두 사람\n\nXT02 조위 변화로 S01 배수 시각이 바뀌자 실러캔스형은 옛 귀환선을 비우려고 구조 회랑을 왕복한다.\n\n기준 부이는 연결된 점검문을 차례로 닫고 그 사이에 운반 인부 둘이 남는다.\n\n플레이어는 비어 있는 받침에 귀환 유도음을 옮겨 잠항기를 돌리거나, 부이의 작업표를 분리하. 각 문을 수동으로 유지할 수 있다.\n\n유도음을 옮기면 인부는 빠져나오지만 다른 강바닥 순찰이 멎고, 수동 유지는 시민 당직이 다음 조위까지 그 자리를 지켜야 한다.\n\n전면 배수는 회랑을 드러내는 대신 임시 수상 운반을 끊는다.\n\n구조 후에는 문을 연 순서와 남겨 둔 축전을 S01과 S04 양쪽 장부에 적고 두 구역의 키를 다시 나눠 보관한다.",
       "prose": "복부 발판이 진흙을 걷어 내자 끊긴 구조줄의 고리가 드러난다.\n\nHP01 당직은 줄을 당기지 않고 먼저 사람이 있는 쪽을 확인한다.\n\n물 건너 암모나이트형 부이는 텅 빈 챔버의 압력을 계속 올리려 하지만 기체통이 비어 더 움직이지 못한다.\n\nF11의 현장 기록에는 압력 차이와 읽지 못한 조건 번호가 나란히 남는다.\n\n실러캔스형이 낮은 기준음을 따라 침전 홈으로 돌아가면 그제야 갤러리 통행 창을 연다.\n\n누군가는 세 기체의 축전통을 팔아 펌프를 고치자고 하고, 다른 이는 저 침수 틈을 누가 다시 검사하느냐고 묻는다.\n\n당직은 패킹 한 조를 작업대에 놓고 구조 챔버의 누설 시험부터 시작한다.\n\n서해곡창전구의 새 조위표가 도착해도 두 수문의 열쇠는 한 사람에게 모으지 않는다.\n\n오늘 열린 길이 내일도 안전하다는 보증은 없으므로 다음 점검자의 이름을 빈칸에 적는다."
     }
   ],
@@ -21529,16 +21529,16 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "뚝섬 공방 2층 서고에서 정가온은 잉크가 마른 날짜란만 먼저 훑는다.\n\n그는 대한예수교장로회의 공방평의회 기록감사로, 구두로 떠도는 유언을 진본 취급하는 동료를 위조범의 이웃이라 부른다.\n\n한국 기원으로 서울 생활권에서 자랐고, 성정은 차갑게 보이지만 손끝은 항상 봉인 끈을 매만진다.\n\n표시 이름 정가온과 불변 식별자 K092는 이후 배치에서도 재번호되지 않는다.",
+            "정체성·출신": "뚝섬 공방 2층 서고에서 정가온은 잉크가 마른 날짜란만 먼저 훑는다.\n\n그는 설교명부정의 공방평의회 기록감사로, 구두로 떠도는 유언을 진본 취급하는 동료를 위조범의 이웃이라 부른다.\n\n한국 기원으로 서울 생활권에서 자랐고, 성정은 차갑게 보이지만 손끝은 항상 봉인 끈을 매만진다.\n\n표시 이름 정가온과 불변 식별자 K092는 이후 배치에서도 재번호되지 않는다.",
             "붕괴 전 삶": "붕괴 전 그는 총관 유언 세 장과 정비일지를 같은 원장에 나란히 올리는 습관을 만들었다.\n\n기록청 인준이 늦어도 공방 평의회가 해석의 주체가 되게 하려는 야망이었다.\n\n밤마다 서고 창틀에 남겨 둔 연필 자국은 가족에게 돌아가겠다는 작은 약속이었고, 그 약속이 훗날 빚의 원형이 된다.\n\n동료들은 그 야망을 고집으로 불렀지만 정가온은 날짜가 틀린 사본을 불태우지 않고 별도 함에 가뒀다.",
             "가문·기업·공동체": "뚝섬열원가(HC04) 의무권은 정가온의 날인 칸을 빌려 쓰려 했으나, 그는 실재 회사 상호를 본문에 올리지 않는 후계 헌장만 인정했다.\n\n교대 서명이 없는 감사 명단은 평의회 벽에 붙이지 않았고, HC04 참관인은 정기 등재만 요구할 수 있었다.\n\n공동체 위치는 자격증이 아니라 봉인 사본을 양쪽에 동시에 보낸 기록으로 증명됐다.\n\n가문 창구가 단독 해석 방송을 내밀면 그는 날인 없음을 이유로 무효를 선언했다.",
             "붕괴의 상처": "붕괴 날 서로 다른 세 유언이 같은 시각에 접수됐다.\n\n정가온은 평의회 금고를 잠그고 최지우의 음성기록이 도착할 때까지 날인을 보류했다.\n\n공포의 핵은 위조 유언 한 장이 진본으로 확정되어 감사 직위가 후계 전쟁의 도구로 팔리는 장면이었다.\n\n경보음이 끊긴 뒤에도 그는 LOSS 목록의 마지막 줄을 읽지 못한 채 장갑을 벗지 않았다.",
             "생존 전환점": "전환점은 금고 열쇠를 기록청 호송조에 넘길지, 위조 날인 용의자를 먼저 붙잡을지 고른 순간이다.\n\n대한해협전구(XT03)에서 들어온 봉인 요청이 평의회 책상에 겹치자 계산이 달라졌다.\n\n봉인 사본을 끝까지 호송하면 공방의 해석권은 살아남지만 야간 교대 인원이 빠지고, 용의자를 우선하면 한쪽 가문이 해석을 독점한다.\n\n그 선택은 K093-TURN으로 남고, 되돌리면 뚝섬 일부 작업반이 멈춘다.",
-            "현재 지위": "지금도 정가온은 대한예수교장로회 기록감사로 점호와 원장 큐를 지킨다.\n\n지위는 세습이 아니라 면허·서명·참관 로그로만 유지된다.\n\n뚝섬열원가이 전속 국가 소유를 요구해도 그는 거절하고, Cast 프로필의 현황 칸과 원장을 매주 맞춘다.\n\n서고 문은 두 열쇠 체계로 바뀌었고 한 자루는 평의회, 다른 한 자루는 기록청 참관함이 보관한다.",
+            "현재 지위": "지금도 정가온은 설교명부정 기록감사로 점호와 원장 큐를 지킨다.\n\n지위는 세습이 아니라 면허·서명·참관 로그로만 유지된다.\n\n뚝섬열원가이 전속 국가 소유를 요구해도 그는 거절하고, Cast 프로필의 현황 칸과 원장을 매주 맞춘다.\n\n서고 문은 두 열쇠 체계로 바뀌었고 한 자루는 평의회, 다른 한 자루는 기록청 참관함이 보관한다.",
             "비밀·빚·죄책감": "비밀은 그가 별도 함에 가둔, 날짜가 틀린 사본 묶음이다.\n\n죄책감은 살린 교대 명단과 그 밤에 호출하지 못한 견습 한 명의 이름 사이에서만 자란다.\n\n전부를 공개하면 뚝섬 신뢰가 한 칸 끊길 수 있어 부분 공개 절차만 남겨 두었다.\n\nSECRET 키는 참관 두 명의 동시 서명 없이는 열리지 않는다.",
             "관계 공동과거": "윤서린에게 넘긴 유언 사본은 계약이었고, 한소미의 공동통치안 문구를 다듬은 밤은 동맹이었다.\n\n박세린의 가문 원장과는 같은 문장에 다른 날짜를 읽어 내는 해석 경쟁이 남았다.\n\n어느 관계도 배신만으로 끝나지 않았고, 같은 봉인함 앞에서 구원이 동시에 열린 적도 있다.\n\n기존 관계 원장의 끝점은 보존된 채 STORY-B001-K092에 연결된다.",
             "3막 개인 서사선": "1막에서 정가온은 세 유언의 동시 접수를 정면으로 다시 만난다.\n\n2막에서 그는 HC04 의무권과 XT03 봉인 요청을 한 책상에서 저울질한다.\n\n3막에서 날인 보류의 대가를 공방 작업반의 중단 시간으로 치른다.\n\n서사선 식별자는 STORY-B001-K092로 고정된다.",
-            "분기 결말": "결말 α에서 정가온은 봉인 사본 호송을 우선해 공공 해석의 연속성을 고른다.\n\n결말 β에서 그는 위조 용의자 추적을 우선해 개인 생존과 비밀 함을 지킨다.\n\n어느 쪽도 대한예수교장로회의 16국 슬롯을 삭제하지 않으며, 분기 식별만 K093-OUT으로 갈라진다.\n\n플레이 개입은 호송 호위 또는 위조 추적 중 하나로 전환점 절을 따른다."
+            "분기 결말": "결말 α에서 정가온은 봉인 사본 호송을 우선해 공공 해석의 연속성을 고른다.\n\n결말 β에서 그는 위조 용의자 추적을 우선해 개인 생존과 비밀 함을 지킨다.\n\n어느 쪽도 설교명부정의 16국 슬롯을 삭제하지 않으며, 분기 식별만 K093-OUT으로 갈라진다.\n\n플레이 개입은 호송 호위 또는 위조 추적 중 하나로 전환점 절을 따른다."
           },
           "arc": [
             {
@@ -21784,7 +21784,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "상암 송신 창구에서 모봉용은 송장 숫자와 실제 롤 무게가 다르면 웃음을 거둔다.\n\n전국경제인연합회 전선·전지 물류상으로, 약속 시각에 전선이 없으면 계약을 그 자리에서 찢는다.\n\n한국 기원이며 소문보다 계근 표를 믿는다.\n\n모봉용과 K222는 고정이다.",
+            "정체성·출신": "상암 송신 창구에서 모봉용은 송장 숫자와 실제 롤 무게가 다르면 웃음을 거둔다.\n\n여의도출자연합회 전선·전지 물류상으로, 약속 시각에 전선이 없으면 계약을 그 자리에서 찢는다.\n\n한국 기원이며 소문보다 계근 표를 믿는다.\n\n모봉용과 K222는 고정이다.",
             "붕괴 전 삶": "절연재와 예비전지를 상암 공개 시세로 고정해 암호 중계와 지도 갱신이 강국 보호비에 묶이지 않게 하려 했다.\n\n야망은 두 증인 입회의 입고 일지에 남았다.\n\n산악 쪽 친척에게 보내기로 한 예비전지 한 함이 작은 약속이었다.\n\n군수 문장 주문서는 편성회의 게시 전까지 출고되지 않았다.",
             "가문·기업·공동체": "여의도전산가(HC01)은 정비 우선 조항으로 창구에 개입하려 했다.\n\n모봉용은 후계 헌장 참관만 받고 실재 제품명을 원장에서 지웠다.\n\n공동체 위치는 공개 시세 게시 횟수와 증인 서명으로 증명됐다.\n\n전속 국가 소유 요구는 편성회의 게시판 앞에서 거절됐다.",
             "붕괴의 상처": "암사가 보호 발표 시간을 사려 하자 전선 대금이 수신료 장부에 섞여 들어왔다.\n\n공포는 전선 한 롤이 군수 칸으로 빠져 서북 관문 중계가 멈추는 장면이었다.\n\n그는 섞인 줄을 붉은 먹으로 밑줄 그어 게시했다.\n\nLOSS 목록에는 그 밑줄 시각만 남았다.",
@@ -21793,7 +21793,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 친척 몫 전지를 군수 검사 전에 빼 둔 내부 전갈이다.\n\n죄책감은 살린 중계와 그 때문에 하루 늦은 산악 보급 사이에 있다.\n\n부분 공개는 두봉 입회 하에 전갈 한 줄만 허용한다.\n\nSECRET은 모봉의 산악 운송 로그와 맞물릴 때 열린다.",
             "관계 공동과거": "두봉에게 댄 정비용 전선 모봉과 맞춘 절연재 짐 오해린 시세 방송을 길드 시간에 참고한 관행이 겹친다.\n\n같은 회계 혼선 속에서 어떤 출고는 구원이 되었고 어떤 송장은 배신으로 남았다.\n\n관계 끝점은 STORY-B001-K222로 연결된다.\n\n신뢰는 무게 오차 범위로만 다시   thr는다.",
             "3막 개인 서사선": "1막은 수신료 장부에 섞인 전선 대금의 적발이다.\n\n2막은 HC01 정비 우선과 XT02 중계 요청의 순번 충돌이다.\n\n3막은 공개 또는 호송 뒤 길드가 치르는 신용 비용이다.\n\n서사선은 STORY-B001-K222다.",
-            "분기 결말": "결말 α에서 모봉용은 섞인 대금 공개로 공공 시세 신뢰를 택한다.\n\n결말 β에서 예비전지 호송으로 관문과 개인 약속을 지킨다.\n\n전국경제인연합회 슬롯은 유지되고 분기만 K226-OUT이다.\n\n개입은 회계 증언 또는 호송 엄호다."
+            "분기 결말": "결말 α에서 모봉용은 섞인 대금 공개로 공공 시세 신뢰를 택한다.\n\n결말 β에서 예비전지 호송으로 관문과 개인 약속을 지킨다.\n\n여의도출자연합회 슬롯은 유지되고 분기만 K226-OUT이다.\n\n개입은 회계 증언 또는 호송 엄호다."
           },
           "arc": [
             {
@@ -21937,7 +21937,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "북한산보국문 숙영지 배급 줄에서 황세린은 저울추를 두 번 본다.\n\n대한불교조계종 배급 감시인으로, 공정하려 애쓰지만 숨긴 식량을 보면 손이 먼저 나간다.\n\n중국계 이산 가족 사이에서 자랐고 집 안 언어와 시장 한국어를 오가지만, 그 이력은 연맹 충성도나 폭력성과 무관한 생활사일 뿐이다.\n\n황세린과 K242는 불변이다.",
+            "정체성·출신": "북한산보국문 숙영지 배급 줄에서 황세린은 저울추를 두 번 본다.\n\n승가구휼정 배급 감시인으로, 공정하려 애쓰지만 숨긴 식량을 보면 손이 먼저 나간다.\n\n중국계 이산 가족 사이에서 자랐고 집 안 언어와 시장 한국어를 오가지만, 그 이력은 연맹 충성도나 폭력성과 무관한 생활사일 뿐이다.\n\n황세린과 K242는 불변이다.",
             "붕괴 전 삶": "공개 배급표를 연맹 전 숙영지에 강제해 강국 구호가 보호비로 바뀌지 않게 하려 했다.\n\n잔량은 벽에 분필로 남겼고 저울은 두 감시인이 동시에 보았다.\n\n할머니에게 약속한 겨울 약 한 봉지가 사적 빚의 씨앗이다.\n\n야망은 배급 게시판의 첫 줄에 연필로 적혀 있다.",
             "가문·기업·공동체": "북한산보국문기록가(HC05)은 명부 정리 의무를 내세워 배급 창고 참관을 요구했다.\n\n황세린은 후계 헌장 등재만 허용하고 실재 상호를 배급표에서 뺐다.\n\n공동체 신뢰는 공개 잔량 게시 일수로 쌓인다.\n\n전속 소유 문장은 숙영 게시판에 올리지 않는다.",
             "붕괴의 상처": "가짜 약품이 배급 줄에서 발견되고 제조 상자에 강국 봉인이 찍혀 있었다.\n\n공포는 난방 연료가 떨어진 밤 창고가 민병대 몫으로만 열리는 장면이었다.\n\n황세린은 해당 상자를 줄 가운데 두고 봉인을 읽게 했다.\n\nLOSS 목록 첫 줄은 그 상자 일련번호다.",
@@ -21946,7 +21946,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 가짜 약 의심 목록을 하루 늦게 올린 쪽지다.\n\n죄책감은 지킨 공개 표와 그 하루 동안 약을 기다린 할머니 사이에 있다.\n\n부분 공개는 류은비 입회 하에 쪽지 요약만 허용한다.\n\nSECRET 키는 약품 감사 원장과 동시에만 열린다.",
             "관계 공동과거": "백온의 공개 배급표를 집행하고 서나연의 얼음·식량 호송을 검수한다.\n\n류은비에게 북한산보국문 약품 배급 감사를 빚졌다.\n\n같은 줄에서 어떤 나눔은 구원이 되었고 어떤 은폐는 배신으로 남았다.\n\n관계 끝점은 STORY-B001-K242로 연결된다.\n\n이산 언어는 약 설명서를 읽을 때만 필요하고 진영을 가르지 않는다.",
             "3막 개인 서사선": "1막은 가짜 약 상자의 공개 적발이다.\n\n2막은 HC05 참관과 XT01 구호 행렬 사이의 잔량 시계다.\n\n3막은 추적 또는 열쇠 분할 뒤 연맹이 치르는 신뢰 비용이다.\n\n서사선은 STORY-B001-K242이다.",
-            "분기 결말": "결말 α에서 황세린은 가짜 약 추적으로 공공 배급 신뢰를 택한다.\n\n결말 β에서 열쇠 분할 중재 후 개인 생존과 쪽지를 지킨다.\n\n대한불교조계종 슬롯은 유지되고 분기만 K247-OUT이다.\n\n개입은 상자 추적 또는 열쇠 중재다."
+            "분기 결말": "결말 α에서 황세린은 가짜 약 추적으로 공공 배급 신뢰를 택한다.\n\n결말 β에서 열쇠 분할 중재 후 개인 생존과 쪽지를 지킨다.\n\n승가구휼정 슬롯은 유지되고 분기만 K247-OUT이다.\n\n개입은 상자 추적 또는 열쇠 중재다."
           },
           "arc": [
             {
@@ -22048,16 +22048,16 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "은평 피난로 돌계단 위에서 모봉은 짐 무게보다 먼저 바람 방향을 읽는다.\n\n대한불교조계종의 산악 운송 물류상으로, 지도에 없는 회랑을 짐줄로 잇는 일을 업으로 삼았다.\n\n한국 기원으로 산기슭 마을에서 자랐고, 말수는 적지만 밧줄 매듭을 풀 때마다 손가락에 옛 동상 자국이 드러난다.\n\n표시 이름 모봉과 불변 식별자 K247는 이후 배치에서도 바뀌지 않는다.",
+            "정체성·출신": "은평 피난로 돌계단 위에서 모봉은 짐 무게보다 먼저 바람 방향을 읽는다.\n\n승가구휼정의 산악 운송 물류상으로, 지도에 없는 회랑을 짐줄로 잇는 일을 업으로 삼았다.\n\n한국 기원으로 산기슭 마을에서 자랐고, 말수는 적지만 밧줄 매듭을 풀 때마다 손가락에 옛 동상 자국이 드러난다.\n\n표시 이름 모봉과 불변 식별자 K247는 이후 배치에서도 바뀌지 않는다.",
             "붕괴 전 삶": "붕괴 전 그는 약초 건조 묶음과 피난 명부 사본을 같은 등짐에 실어 고갯마루를 넘겼다.\n\n가족 재결합 명부가 군사호적에 먹히지 않게 하려는 야망이 있었고, 밤마다 등잔 밑에 짐표 여백에 동생 이름을 다시 썼다.\n\n그 습관이 훗날 빚의 씨앗이 된다.\n\n동료 짐꾼들은 그를 과묵하다 했지만 모봉은 빗물에 번진 송장만은 절대 버리지 않았다.",
             "가문·기업·공동체": "북한산보국문귀환회(HP05)는 모봉의 회랑 통행 시각을 가족 대기줄과 맞추라고 요청했다.\n\n그는 실재 회사 상호를 송장 머리에 올리지 않는 공동 명부만 인정했고, 참관 서명 없는 징발 쪽지는 등짐에 넣지 않았다.\n\n공동체 안 위치는 자격증이 아니라 강태산 정찰 보고와 모봉용 절연재 짐을 같은 고개에서 맞바꾼 횟수로 증명됐다.\n\n가문이 단독 통행 방송을 내밀면 그는 명부 대조 없음을 이유로 거절했다.",
             "붕괴의 상처": "붕괴 날 북쪽 능선 세 갈래가 동시에 막혔다.\n\n모봉은 은평 입구 돌무더기 뒤에 짐줄을 묶고 어하은의 난민 명부가 도착할 때까지 통행 봉인을 열지 않았다.\n\n공포의 핵은 위조 가족 증명 한 장이 진짜 행렬을 밀어내 산길이 징발 전용로가 되는 장면이었다.\n\n경보가 끊긴 뒤에도 그는 LOSS 짐표의 중간 줄을 읽지 못한 채 장갑 끈을 풀지 않았다.",
             "생존 전환점": "전환점은 봉인된 명부 사본을 임진강관문전구(XT01) 호송조에 넘길지, 위조 증명 소지자를 회랑에서 먼저 걸러낼지 고른 순간이다.\n\n관문 쪽 봉인 요청이 돌계단 짐터에 겹치자 계산이 달라졌다.\n\n사본을 호송하면 재결합 명부는 살아남지만 야간 짐꾼 한 조가 빠지고, 위조를 우선하면 한쪽 가문이 통행을 독점한다.\n\n그 선택은 K252-TURN으로 남고, 되돌리면 북한산보국문 일부 숙영이 하루 멈춘다.",
-            "현재 지위": "지금도 모봉은 대한불교조계종 산악 운송 물류상으로 회랑 점호와 짐표 큐를 지킨다.\n\n지위는 세습이 아니라 통행 면허·참관 로그·대기줄 대조로만 유지된다.\n\n북한산보국문귀환회가 전속 징발 노선을 요구해도 그는 거절하고, Cast 프로필의 현황 칸과 송장을 매주 맞춘다.\n\n돌계단 짐터 문은 두 열쇠로 바뀌었고 한 자루는 연맹, 다른 한 자루는 HP05 참관함이 보관한다.",
+            "현재 지위": "지금도 모봉은 승가구휼정 산악 운송 물류상으로 회랑 점호와 짐표 큐를 지킨다.\n\n지위는 세습이 아니라 통행 면허·참관 로그·대기줄 대조로만 유지된다.\n\n북한산보국문귀환회가 전속 징발 노선을 요구해도 그는 거절하고, Cast 프로필의 현황 칸과 송장을 매주 맞춘다.\n\n돌계단 짐터 문은 두 열쇠로 바뀌었고 한 자루는 연맹, 다른 한 자루는 HP05 참관함이 보관한다.",
             "비밀·빚·죄책감": "비밀은 그가 등짐 안쪽에 숨긴, 빗물에 번진 동생 이름 송장 한 장이다.\n\n죄책감은 살린 행렬 인원과 그 밤 호출하지 못한 견습 짐꾼 사이에서만 자란다.\n\n전부를 공개하면 은평 대기줄 신뢰가 한 칸 끊길 수 있어 부분 공개 절차만 남겼다.\n\nSECRET 키는 참관 두 명의 동시 서명 없이는 열리지 않는다.",
             "관계 공동과거": "강태산에게 맞춘 정찰 시각은 계약이었고, 모봉용에게 넘긴 절연재 짐은 동맹이었다.\n\n두소의 입구 인수와는 같은 짐줄에 다른 매듭을 묶는 실무 경쟁이 남았다.\n\n어느 관계도 배신만으로 끝나지 않았고, 같은 고갯마루에서 구원이 동시에 열린 적도 있다.\n\n기존 관계 원장의 끝점은 보존된 채 STORY-B002-K247에 연결된다.",
             "3막 개인 서사선": "1막에서 모봉은 막힌 세 갈래 능선을 돌계단 봉인으로 맞받는다.\n\n2막에서 그는 HP05 명부 의무와 XT01 호송 요청을 한 짐터에서 저울질한다.\n\n3막에서 통행 보류의 대가를 숙영 중단 시간으로 치른다.\n\n서사선 식별자는 STORY-B002-K247로 고정된다.",
-            "분기 결말": "결말 α에서 모봉은 명부 사본 호송을 우선해 재결합 행렬의 연속성을 고른다.\n\n결말 β에서 그는 위조 증명 차단을 우선해 개인 송장과 비밀 이름을 지킨다.\n\n어느 쪽도 대한불교조계종의 16국 슬롯을 삭제하지 않으며, 분기 식별만 K252-OUT으로 갈라진다.\n\n플레이 개입은 호송 호위 또는 위조 차단 중 하나로 전환점 절을 따른다."
+            "분기 결말": "결말 α에서 모봉은 명부 사본 호송을 우선해 재결합 행렬의 연속성을 고른다.\n\n결말 β에서 그는 위조 증명 차단을 우선해 개인 송장과 비밀 이름을 지킨다.\n\n어느 쪽도 승가구휼정의 16국 슬롯을 삭제하지 않으며, 분기 식별만 K252-OUT으로 갈라진다.\n\n플레이 개입은 호송 호위 또는 위조 차단 중 하나로 전환점 절을 따른다."
           },
           "arc": [
             {
@@ -22099,16 +22099,16 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "창동 차량기지 저울 앞에서 모소는 녹슨 차륜 로트 번호부터 손으로 훑는다.\n\n삼성그룹의 차륜·철재 물류상으로, 회수 무게와 출고 송장을 한 치의 오차 없이 맞추는 일을 맡았다.\n\n한국 기원으로 북부 선로 마을에서 자랐고, 성정은 무뚝뚝해 보이지만 저울 추를 주머니에 넣고 다니는 버릇이 있다.\n\n이름 모소와 식별자 K272는 불변이다.",
+            "정체성·출신": "창동 차량기지 저울 앞에서 모소는 녹슨 차륜 로트 번호부터 손으로 훑는다.\n\n서초전산그룹의 차륜·철재 물류상으로, 회수 무게와 출고 송장을 한 치의 오차 없이 맞추는 일을 맡았다.\n\n한국 기원으로 북부 선로 마을에서 자랐고, 성정은 무뚝뚝해 보이지만 저울 추를 주머니에 넣고 다니는 버릇이 있다.\n\n이름 모소와 식별자 K272는 불변이다.",
             "붕괴 전 삶": "붕괴 전 그는 시험 차륜 한 짝과 철재 회수 전표를 같은 원장에 나란히 적었다.\n\n창동방호가이 원격키만으로 회수장을 잠그지 못하게 하려는 야망이었고, 초안은 늘 정비창 칠판에 먼저 올라갔다.\n\n어머니에게 보내던 짧은 쪽지—무게를 속이지 말라—가 훗날 빚의 원형이 된다.\n\n반장들이 비상 출고를 재촉해도 그는 로트 봉인이 찍히기 전엔 문을 열지 않았다.",
             "가문·기업·공동체": "창동방호가(HC08)은 통합 방호키를 내세워 모소의 저울 창구에 자리를 요구했다.\n\n그는 후계 헌장의 참관 칸만 열어 주고 전속 소유 문장은 거절했다.\n\n공동체 위치는 황노을의 회수 저울과 봉국의 로트 인수를 같은 날 맞춘 기록으로 증명됐다.\n\n가문 로고나 실재 상호는 그의 송장 머리에 등장하지 않는다.",
             "붕괴의 상처": "붕괴 아침 시험 차륜 세 짝이 동시에 결함 표시를 켰다.\n\n모소는 창동 정문 저울을 잠그고 추지훈의 폭로 일지가 도착할 때까지 출고 날인을 보류했다.\n\n공포는 위조 중량 전표 한 장이 궤도기병 정비창 전체를 비상 징발로 덮는 그림이었다.\n\n사이렌이 꺼진 뒤 LOSS 목록의 첫 줄에서 그의 분필이 멈췄다.",
             "생존 전환점": "전환점은 결함 차륜 봉인 사본을 두만강극동전구(XT04) 기술 사절에 넘길지, 유출 의혹 경로를 먼저 열어 보일지 고른 순간이다.\n\n북부 사절 전갈이 저울 창구에 겹치자 그는 출고 시계를 한 시간 앞당겼다.\n\n사본을 운반하면 회수장 신뢰가 살아나고, 유출 경로를 밝히면 물류상 자신까지 실각 위험에 오른다.\n\n결정은 K278-TURN에 남는다.",
-            "현재 지위": "현재 모소는 삼성그룹 차륜·철재 물류상으로 기지 점호와 로트 큐를 지킨다.\n\n면허와 참관 로그가 지위를 유지하며, 성화 쪽 전속 요구는 매번 반려한다.\n\n저울 옆 분필판에는 오늘 만료되는 출고 전표만 남긴다.\n\nCast 프로필의 북부 물류 칸과 원장 시점을 맞추는 일이 아침 일과다.",
+            "현재 지위": "현재 모소는 서초전산그룹 차륜·철재 물류상으로 기지 점호와 로트 큐를 지킨다.\n\n면허와 참관 로그가 지위를 유지하며, 성화 쪽 전속 요구는 매번 반려한다.\n\n저울 옆 분필판에는 오늘 만료되는 출고 전표만 남긴다.\n\nCast 프로필의 북부 물류 칸과 원장 시점을 맞추는 일이 아침 일과다.",
             "비밀·빚·죄책감": "비밀은 그가 어머니 쪽지를 숨긴 채 보류한 중량 공란 한 줄이다.\n\n죄책감은 살린 정비 조와, 그 때문에 하루 늦게 도착한 의료열차 차륜 사이에서 자란다.\n\n완전 고백 대신 재심 저울을 통한 부분 공개만 허용한다.\n\nSECRET 열람은 어예린의 결함 증언과 동시에만 열린다.",
             "관계 공동과거": "황노을의 회수 저울을 맞춘 밤은 동맹이었고, 봉국의 로트 인수는 계약이었다.\n\n조우찬의 작업 조 출입과는 정문 앞에서 목소리를 낮춘 실무 긴장이 남았다.\n\n같은 기지에서 한 사람은 출고를 얻었고 다른 한 사람은 봉인을 잃었다.\n\n관계 원장 끝점은 STORY-B002-K272로 이어진다.",
             "3막 개인 서사선": "1막에서 모소는 결함 차륜 동시 표시를 저울 봉인으로 맞받는다.\n\n2막에서 HC08 참관과 XT04 사절 전갈을 출고 시계에 묶는다.\n\n3막에서 날인 보류가 부른 실각 위협과 회수장 신뢰 중 하나를 대가로 치른다.\n\n서사선은 STORY-B002-K272이다.",
-            "분기 결말": "결말 α에서 모소는 봉인 사본 호송으로 공개 회수 연속을 고른다.\n\n결말 β에서 유출 경로 공개를 미뤄 개인 생존과 비밀 공란을 지킨다.\n\n삼성그룹 슬롯은 유지되며 분기 식별은 K278-OUT이다.\n\n플레이 개입은 사절 호위 또는 유출 추적 중 하나다."
+            "분기 결말": "결말 α에서 모소는 봉인 사본 호송으로 공개 회수 연속을 고른다.\n\n결말 β에서 유출 경로 공개를 미뤄 개인 생존과 비밀 공란을 지킨다.\n\n서초전산그룹 슬롯은 유지되며 분기 식별은 K278-OUT이다.\n\n플레이 개입은 사절 호위 또는 유출 추적 중 하나다."
           },
           "arc": [
             {
@@ -22303,16 +22303,16 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "가락 대형 창고 냉기 속에서 동미온은 경매 낙찰 호보다 먼저 온도 로그 용지를 만진다.\n\n천주교 서울대교구의 가락 도매 물류상으로, 얼음 슬롯과 호송 입찰을 한 원장에 묶는 사람이다.\n\n한국 기원으로 동남 시장 골목에서 자랐고, 말투는 빠르지만 장갑을 끼기 전 손등으로 벽 결로를 확인한다.\n\n이름 동미온과 식별자 K372는 바뀌지 않는다.",
+            "정체성·출신": "가락 대형 창고 냉기 속에서 동미온은 경매 낙찰 호보다 먼저 온도 로그 용지를 만진다.\n\n본당인준정의 가락 도매 물류상으로, 얼음 슬롯과 호송 입찰을 한 원장에 묶는 사람이다.\n\n한국 기원으로 동남 시장 골목에서 자랐고, 말투는 빠르지만 장갑을 끼기 전 손등으로 벽 결로를 확인한다.\n\n이름 동미온과 식별자 K372는 바뀌지 않는다.",
             "붕괴 전 삶": "붕괴 전 그는 전력 슬롯 순환표와 청과 낙찰 전표를 같은 클립에 꽂았다.\n\n노량진냉동상단이 모터를 빼가기 전 온도 로그를 남기게 하려는 야망이었고, 초안은 얼음 창고 철문에 붙였다.\n\n누이에게 쓴 메모—빈 슬롯을 군량에 팔지 말라—가 빚의 씨앗이 된다.\n\n경매사가 급행 호를 불러도 그는 온도 인쇄본 없는 출고를 승인하지 않았다.",
             "가문·기업·공동체": "노량진냉동상단(HP08)은 슬롯 순환 의무를 내세워 동미온의 도매 창구에 참관을 요청했다.\n\n그는 상단 참관만 받고 전속 군량 문장은 거절했다.\n\n공동체 위치는 은태호의 경매 원장과 라진우의 창고 경비 일지를 같은 교대에 맞춘 기록으로 증명됐다.\n\n실재 유통 상호는 송장 머리에 올리지 않는다.",
             "붕괴의 상처": "붕괴 날 냉동고 세 칸의 전력이 동시에 떨어졌다.\n\n동미온은 가락 철문을 잠그고 매리울의 유찰 증언이 오기 전엔 군량 징발 송장을 받지 않았다.\n\n공포의 핵은 위조 온도 로그 한 장이 피난 배급 전체를 상한 재고로 덮는 장면이었다.\n\n방송 이후 LOSS 재고표 한가운데서 그의 클립이 멈췄다.",
             "생존 전환점": "전환점은 온도 로그 사본을 인천신탁전구(XT05) 식량 중계에 넘길지, 위조 로그 인쇄 경로를 창고에서 먼저 밝힐지 고른 순간이다.\n\n신탁 쪽 전갈이 철문에 겹치자 그는 입찰 시계를 멈췄다.\n\n사본을 넘기면 배급 신뢰가 살아나고, 경로를 밝히면 도매상과 낙찰 반이 함께 흔들린다.\n\n선택은 K380-TURN이다.",
-            "현재 지위": "현재 동미온은 천주교 서울대교구 가락 도매 물류상으로 창고 점호와 입찰 큐를 지킨다.\n\n면허·상단 참관·온도 인쇄 로그가 지위를 유지한다.\n\n냉동상단이 전속 슬롯을 요구해도 반려하고 Cast 칸과 원장을 맞춘다.\n\n철문 열쇠는 두 자루, 경매조와 HP08 참관함이 나눈다.",
+            "현재 지위": "현재 동미온은 본당인준정 가락 도매 물류상으로 창고 점호와 입찰 큐를 지킨다.\n\n면허·상단 참관·온도 인쇄 로그가 지위를 유지한다.\n\n냉동상단이 전속 슬롯을 요구해도 반려하고 Cast 칸과 원장을 맞춘다.\n\n철문 열쇠는 두 자루, 경매조와 HP08 참관함이 나눈다.",
             "비밀·빚·죄책감": "비밀은 누이 메모를 숨긴 채 한번 군량에 내준 빈 슬롯 기록이다.\n\n죄책감은 살린 배급 줄과 그 날 상한 청과를 받은 가구 사이에서 자란다.\n\n부분 공개 재심만 남겼다.\n\nSECRET는 석오름의 호송 유찰 증언과 동시에만 열린다.",
             "관계 공동과거": "은태호와 맞춘 경매 원장은 계약이었고, 라진우의 경비 일지는 동맹이었다.\n\n남시윤의 청과동 시세와는 같은 창고에서 다른 슬롯 우선을 둔 긴장이 남았다.\n\n배신만으로 끝나지 않았고 같은 냉기 속에서 구원이 겹친 새벽도 있다.\n\n끝점은 STORY-B002-K372다.",
             "3막 개인 서사선": "1막에서 동미온은 삼칸 정전을 철문 봉인으로 맞는다.\n\n2막에서 HP08 순환 의무와 XT05 중계 요청을 원장 클립에서 저울질한다.\n\n3막에서 입찰 정지의 대가를 배급 지연으로 치른다.\n\n서사선은 STORY-B002-K372로 고정된다.",
-            "분기 결말": "결말 α에서 동미온은 온도 인쇄본을 신탁 식량 중계에 넘겨 배급 원장의 공개 연속을 택한다.\n\n결말 β에서 그는 위조 인쇄 경로의 철문 키를 회수해 개인 클립 원장과 빈 슬롯 비밀을 지킨다.\n\n천주교 서울대교구 배정은 지우지 않으며 갈림 식별만 K380-OUT으로 남는다.\n\n플레이 선택은 인쇄본 호송 호위 또는 창고 키 회수 추적이다."
+            "분기 결말": "결말 α에서 동미온은 온도 인쇄본을 신탁 식량 중계에 넘겨 배급 원장의 공개 연속을 택한다.\n\n결말 β에서 그는 위조 인쇄 경로의 철문 키를 회수해 개인 클립 원장과 빈 슬롯 비밀을 지킨다.\n\n본당인준정 배정은 지우지 않으며 갈림 식별만 K380-OUT으로 남는다.\n\n플레이 선택은 인쇄본 호송 호위 또는 창고 키 회수 추적이다."
           },
           "arc": [
             {
@@ -22354,12 +22354,12 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "마곡 밀폐실험동 방풍실에서 정호준은 결론 문장보다 먼저 재현 기록 칸을 채운다.\n\n현대자동차주식회사의 생명안전 연구책임자로, 검증되지 않은 권위보다 위험한 실험을 더 싫어한다.\n\n한국 출생 다문화 가정에서 자랐고, 집에서는 부모의 서로 다른 언어로 안전 수칙을 되풀이 들었으며 그 이중 설명이 현장 거절권의 버릇이 됐다.\n\n이름 정호준과 식별자 K057는 불변이다.",
+            "정체성·출신": "마곡 밀폐실험동 방풍실에서 정호준은 결론 문장보다 먼저 재현 기록 칸을 채운다.\n\n양재기공주식회사의 생명안전 연구책임자로, 검증되지 않은 권위보다 위험한 실험을 더 싫어한다.\n\n한국 출생 다문화 가정에서 자랐고, 집에서는 부모의 서로 다른 언어로 안전 수칙을 되풀이 들었으며 그 이중 설명이 현장 거절권의 버릇이 됐다.\n\n이름 정호준과 식별자 K057는 불변이다.",
             "붕괴 전 삶": "붕괴 전 그녀는 기술원장 초안에 재현 가능한 기록과 안전심사 거부권을 한 줄씩 넣었다.\n\n연구자와 자료를 국가 소유물이 아닌 서울 공동재산으로 남기려는 야망이었고, 초안은 방풍실 화이트보드에 먼저 적혔다.\n\n어머니 언어로 쓴 메모—이름을 병상에 묶지 말라—가 훗날 빚의 결을 만든다.\n\n평의원이 긴급 인준을 재촉해도 그녀는 재현 칸이 비면 도장을 주지 않았다.",
             "가문·기업·공동체": "마곡생명가(HC03)는 생체 데이터셋 격리 키를 내세워 정호준의 심사 창구에 자리를 요구했다.\n\n그녀는 실험 일지를 병상 이름과 분리한 참관만 허용하고 전속 소유 문장은 거절했다.\n\n공동체 위치는 정하린의 현장 거부권과 최은재의 공개 계약 범위를 같은 심의에서 맞춘 기록으로 증명됐다.\n\n실재 회사 상호는 원장 본문에 올리지 않는다.",
             "붕괴의 상처": "붕괴 날 뚝섬 수질 검사망이 멈추자 연구자 파견과 후계 인준이 한 거래로 묶였다.\n\n정호준은 방풍실 키를 잠그고 고초윤의 수질 공개 증언이 도착할 때까지 파견 날인을 보류했다.\n\n공포의 핵은 보호 명분의 군사감독 한 줄이 연구자를 인질 직능으로 고정하는 장면이었다.\n\n경보 이후 LOSS 시료 목록 끝에서 그녀의 펜이 멈췄다.",
             "생존 전환점": "전환점은 오염 표본과 재현 사본을 서해곡창전구(XT02) 방역 중계에 넘길지, 독점 평의원의 거래 문장을 먼저 공개 심의에 올릴지 고른 순간이다.\n\n곡창 쪽 요청이 화이트보드에 겹치자 그녀는 파견 시계를 멈췄다.\n\n표본을 넘기면 공동기술 신뢰가 살아나고, 거래를 공개하면 책임자 자신과 제자 임초원의 위치가 함께 흔들린다.\n\n선택은 K057-TURN이다.",
-            "현재 지위": "지금도 정호준은 현대자동차주식회사 생명안전 연구책임자로 방풍실 점호와 재현 큐를 지킨다.\n\n지위는 면허·심사 거부권 로그·삼원 심의 기록으로만 유지된다.\n\n백광이 전속 데이터 소유를 요구해도 거절하고 Cast 칸과 일지를 맞춘다.\n\n격리 키는 두 자루, 평의회와 HC03 참관함이 나눈다.",
+            "현재 지위": "지금도 정호준은 양재기공주식회사 생명안전 연구책임자로 방풍실 점호와 재현 큐를 지킨다.\n\n지위는 면허·심사 거부권 로그·삼원 심의 기록으로만 유지된다.\n\n백광이 전속 데이터 소유를 요구해도 거절하고 Cast 칸과 일지를 맞춘다.\n\n격리 키는 두 자루, 평의회와 HC03 참관함이 나눈다.",
             "비밀·빚·죄책감": "비밀은 어머니 메모를 지키려다 하루 늦춘 시료 공개 시각이다.\n\n죄책감은 살린 연구 반과 그 지연으로 오염이 번진 골목 수전 사이에서 자란다.\n\n부분 공개 재심만 남겼다.\n\nSECRET는 배서율의 가짜 약품 피해자 증언과 동시에만 열린다.",
             "관계 공동과거": "정하린과 집행한 거부권은 지휘 동맹이었고, 최은재와 설계한 공개 계약은 사제 계약이었다.\n\n김도하의 주민 삼원 심의와는 같은 테이블에서 다른 속도로 밀고 당긴 긴장이 남았다.\n\n배우진의 군사감독 요구는 거절로 남았고 임초원 평가는 후견으로 남았다.\n\n끝점은 STORY-B002-K057이다.",
             "3막 개인 서사선": "1막에서 정호준은 수질망 정지를 방풍실 봉인으로 맞는다.\n\n2막에서 HC03 격리 의무와 XT02 중계 요청을 재현 칸에서 저울질한다.\n\n3막에서 날인 보류의 대가를 파견 지연으로 치른다.\n\n서사선 ID는 STORY-B002-K057로 고정된다.",
@@ -22405,7 +22405,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "뚝섬 펌프실 금속 계단에서 임하준은 압력계 눈금보다 먼저 패킹 마모 소리를 듣는다.\n\n대한예수교장로회의 펌프기술 총관으로 기록되지만 현재는 실종 상태이며, 살아 있을 때의 손버릇만 공방에 남아 있다.\n\n한국 출생 다문화 가정에서 자랐고, 어린 시절 이웃 공방의 다른 말투로 공구 이름을 외우던 경험이 규격 통합 집착의 뿌리가 됐다.\n\n이름 임하준과 식별자 K085는 유언 이후에도 재번호되지 않는다.",
+            "정체성·출신": "뚝섬 펌프실 금속 계단에서 임하준은 압력계 눈금보다 먼저 패킹 마모 소리를 듣는다.\n\n설교명부정의 펌프기술 총관으로 기록되지만 현재는 실종 상태이며, 살아 있을 때의 손버릇만 공방에 남아 있다.\n\n한국 출생 다문화 가정에서 자랐고, 어린 시절 이웃 공방의 다른 말투로 공구 이름을 외우던 경험이 규격 통합 집착의 뿌리가 됐다.\n\n이름 임하준과 식별자 K085는 유언 이후에도 재번호되지 않는다.",
             "붕괴 전 삶": "붕괴 전 그는 물과 부품 규격을 통합해 어느 국가도 생명선을 단독으로 끊지 못하게 하려 했다.\n\n핵심 공정을 경쟁 공방에 나누고 마지막 조립법만 직접 보관하는 야망이었고, 초안은 펌프실 벽 사물함에 봉인됐다.\n\n양자 임초원에게 남긴 짧은 음성—혈통으로 총관을 주지 말라—가 빚과 희망의 이중 씨앗이 된다.\n\n보호 제안을 받아도 그는 군사감독 문장을 조립법에 넣지 않았다.",
             "가문·기업·공동체": "뚝섬열원가(HC04)은 지하 열원 접속권을 내세워 임하준의 총관 창구에 의무 참관을 요구했다.\n\n그는 여열을 팔기 전 펌프 예비 전력을 채우는 헌장만 인정하고 전속 국가 소유를 거절했다.\n\n공동체 위치는 한재목과의 급수계약과 박세린 가문 공정의 후견 경계를 같은 원장에 적은 날로 증명됐다.\n\n실재 상호는 조립법 본문에 올리지 않았다.",
             "붕괴의 상처": "개막 직전 정수 펌프 점검 중 그는 사라졌고 서로 다른 세 유언이 동시에 접수됐다.\n\n공방 사람들은 그가 금고를 잠근 채 LOSS 목록의 마지막 줄을 남겼다고만 증언한다.\n\n공포의 핵은 위조 유언 한 장이 기술가문을 세습국가로 고정하는 장면이었고, 그 공포는 실종 후에도 뚝섬 전체를 옥죈다.\n\n음성기록의 편집 흔적이 발견되기 전까지 그의 자리는 빈 압력계로만 남았다.",
@@ -22456,12 +22456,12 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "창동 정비창 작업 발판 위에서 조우찬은 공구 소리보다 먼저 조원 숨결의 흐트러짐을 듣는다.\n\n삼성그룹의 작업 반장으로, 차륜 공정과 부상을 한 교대 일지에 함께 적는다.\n\n중국계 디아스포라 가정에서 서울로 이어진 삶을 살며, 집에서는 부모의 말과 현장의 말을 바꿔 가며 안전 구호를 외쳤고 그 번역 버릇이 반 지휘의 리듬이 됐다.\n\n이름 조우찬과 식별자 K267는 불변이다.",
+            "정체성·출신": "창동 정비창 작업 발판 위에서 조우찬은 공구 소리보다 먼저 조원 숨결의 흐트러짐을 듣는다.\n\n서초전산그룹의 작업 반장으로, 차륜 공정과 부상을 한 교대 일지에 함께 적는다.\n\n중국계 디아스포라 가정에서 서울로 이어진 삶을 살며, 집에서는 부모의 말과 현장의 말을 바꿔 가며 안전 구호를 외쳤고 그 번역 버릇이 반 지휘의 리듬이 됐다.\n\n이름 조우찬과 식별자 K267는 불변이다.",
             "붕괴 전 삶": "붕괴 전 그는 수리 규격을 작업반에 공개 적용해 원로 지휘에만 의존하지 않으려 했다.\n\n이홍원과 공정을 나누는 야망이 있었고, 초안은 발판 옆 철판에 분필로 적혔다.\n\n부모에게 보낸 음성—이름 때문에 출입을 막지 말라—가 빚의 결을 만든다.\n\n시험 차륜이 새어 나가도 그는 조원 명단을 숨기지 않고 일지에 남겼다.",
             "가문·기업·공동체": "창동방호가(HC08)은 통합 방호키를 내세워 조우찬의 작업 조 출입에 참관을 요구했다.\n\n그는 헌장 참관만 받고 전속 징발 문장은 거절했다.\n\n공동체 위치는 감두의 정문 출입과 국두의 사고 일지, 봉복의 부상 처리를 같은 교대에 맞춘 기록으로 증명됐다.\n\n실재 상호는 일지 머리에 올리지 않는다.",
             "붕괴의 상처": "붕괴 날 시험 차륜 유출 경보와 북문 호송 요청이 동시에 울렸다.\n\n조우찬은 발판 전원을 끊고 강다은의 유출 의혹 증언이 정리될 때까지 조 출고를 막았다.\n\n공포의 핵은 위조 출입 패스 한 장이 작업반을 궤도 징발 인력으로 바꾸는 장면이었다.\n\n사이렌 이후 LOSS 조원 명단 한줄에서 그의 분필이 멈췄다.",
             "생존 전환점": "전환점은 유출 일지 사본을 임진강관문전구(XT01) 기술 중계에 넘길지, 원한의 대상인 유출 경로를 정문에서 먼저 봉쇄할지 고른 순간이다.\n\n관문 쪽 전갈이 철판에 겹치자 그는 교대 시계를 멈췄다.\n\n사본을 넘기면 반 신뢰가 살아나고, 봉쇄를 택하면 반장 자신과 조원이 함께 표적이 된다.\n\n선택은 K273-TURN이다.",
-            "현재 지위": "현재 조우찬은 삼성그룹 작업 반장으로 발판 점호와 교대 일지를 지킨다.\n\n지위는 작업 면허·참관 로그·부상 인계로만 유지된다.\n\n성화가 전속 징발을 요구해도 반려하고 Cast 칸과 일지를 맞춘다.\n\n정문 키는 두 자루, 반장실과 HC08 참관함이 나눈다.",
+            "현재 지위": "현재 조우찬은 서초전산그룹 작업 반장으로 발판 점호와 교대 일지를 지킨다.\n\n지위는 작업 면허·참관 로그·부상 인계로만 유지된다.\n\n성화가 전속 징발을 요구해도 반려하고 Cast 칸과 일지를 맞춘다.\n\n정문 키는 두 자루, 반장실과 HC08 참관함이 나눈다.",
             "비밀·빚·죄책감": "비밀은 부모 음성을 숨긴 채 한번 덮어 준 출입 패스 기록이다.\n\n죄책감은 살린 조원 수와 그 덮개로 늦어진 결함 공개 사이에서 자란다.\n\n부분 공개 재심만 남겼다.\n\nSECRET는 추지훈의 정비 불량 폭로와 동시에만 열린다.",
             "관계 공동과거": "이홍원과 나눈 공정은 지휘 동맹이었고, 강민서와 맞춘 수리 규격은 계약이었다.\n\n강다은에 대한 원한은 유출 의혹에서 자라났고 소봉·국두·봉복은 실무로 남았다.\n\n배신만으로 끝나지 않은 교대도 있다.\n\n끝점은 STORY-B002-K267이다.",
             "3막 개인 서사선": "1막에서 조우찬은 유출 경보를 발판 전원 차단으로 맞는다.\n\n2막에서 HC08 참관과 XT01 중계를 철판 일지에서 저울질한다.\n\n3막에서 출고 보류의 대가를 교대 적체로 치른다.\n\n서사선은 STORY-B002-K267로 고정된다.",
@@ -22563,16 +22563,16 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "수서 계약 시장 저울대 앞에서 선초별은 젖은 잉크가 마르기 전에 움직이는 사본을 위조로 부른다.\n\n강남 계약서 시장 물류상으로 하서진의 실무 담당을 맡되, 구두 운임은 장부에 올리지 않는다.\n\n한국 기원으로 전국민주노동조합총연맹 생활권에서 자랐고, 상자 무게가 원장과 다르면 즉시 저울을 갈아 끼운다.\n\n표시 이름 선초별과 불변 식별자 K396는 이후 배치에서도 재번호되지 않는다.",
+            "정체성·출신": "수서 계약 시장 저울대 앞에서 선초별은 젖은 잉크가 마르기 전에 움직이는 사본을 위조로 부른다.\n\n강남 계약서 시장 물류상으로 하서진의 실무 담당을 맡되, 구두 운임은 장부에 올리지 않는다.\n\n한국 기원으로 정동노동총연맹 생활권에서 자랐고, 상자 무게가 원장과 다르면 즉시 저울을 갈아 끼운다.\n\n표시 이름 선초별과 불변 식별자 K396는 이후 배치에서도 재번호되지 않는다.",
             "붕괴 전 삶": "붕괴 전 그는 종료조건·감사권·인질 대체 보증이 빠진 초안을 공개 운송 원장에 올리지 않는 습관을 만들었다.\n\n약소국이 같은 종이로 서명하게 하려는 야망이었고, 초안 비교표는 늘 새벽 저울대 옆에 먼저 붙였다.\n\n동생에게 남긴 쪽지—마침표 없는 문장은 싣지 말라—가 훗날 빚의 원형이 된다.\n\n중개인이 강국 한쪽 문구만 남긴 정서본을 내밀어도 그는 봉함 끈을 풀지 않았다.",
             "가문·기업·공동체": "용산호송가(HC11)은 야간 호송 칸을 빌려 조약 사본을 먼저 실으려 했으나, 선초별은 실재 회사 상호를 본문에 올리지 않는 후계 창구만 인정했다.\n\n군사 면제 칸은 정유라의 빨간 인장이 있을 때만 상자에 넣었고, HC11 참관인은 정기 등재만 요구할 수 있었다.\n\n공동체 위치는 자격증이 아니라 비교표 사본을 양쪽 창구에 동시에 보낸 기록으로 증명됐다.\n\n가문 창구가 단독 해석 방송을 내밀면 그는 종료일 공란을 이유로 무효를 선언했다.",
             "붕괴의 상처": "붕괴 주 세 강국이 서로 다른 급수계약서를 같은 시각에 수서 서고로 보냈다.\n\n선초별은 사본 반출을 정지하고 영마온의 비교표가 끝날 때까지 상자를 봉했다.\n\n공포의 핵은 서기가 베낀 초안 한 장이 대리 문서로 유통되어 공동교섭이 빈 껍데기가 되는 장면이었다.\n\n경보음이 끊긴 뒤에도 그는 LOSS 목록의 운송 칸을 읽지 못한 채 저울 장갑을 벗지 않았다.",
             "생존 전환점": "전환점은 세 초안을 한 장의 비교표로 묶을지, 위조 정서본의 발급 경로를 먼저 열지 고른 순간이다.\n\n대한해협전구(XT03)에서 들어온 봉인 요청이 저울대에 겹치자 계산이 달라졌다.\n\n비교표를 끝까지 호송하면 약소국 공동 서명은 살아남지만 야간 호송 인원이 빠지고, 위조 경로를 우선하면 한쪽 강국이 문구를 독점한다.\n\n그 선택은 K405-TURN으로 남고, 되돌리면 수서 일부 계약 창구가 멈춘다.",
-            "현재 지위": "지금도 선초별은 전국민주노동조합총연맹 물류상으로 점호와 운송 원장 큐를 지킨다.\n\n지위는 세습이 아니라 면허·서명·참관 로그로만 유지된다.\n\n용산호송가이 전속 국가 소유를 요구해도 그는 거절하고, Cast 프로필의 현황 칸과 원장을 매주 맞춘다.\n\n저울대 문은 두 열쇠 체계로 바뀌었고 한 자루는 시장, 다른 한 자루는 하서진 창구가 보관한다.",
+            "현재 지위": "지금도 선초별은 정동노동총연맹 물류상으로 점호와 운송 원장 큐를 지킨다.\n\n지위는 세습이 아니라 면허·서명·참관 로그로만 유지된다.\n\n용산호송가이 전속 국가 소유를 요구해도 그는 거절하고, Cast 프로필의 현황 칸과 원장을 매주 맞춘다.\n\n저울대 문은 두 열쇠 체계로 바뀌었고 한 자루는 시장, 다른 한 자루는 하서진 창구가 보관한다.",
             "비밀·빚·죄책감": "비밀은 그가 별도 함에 가둔, 마침표가 빠진 초안 묶음이다.\n\n죄책감은 살린 공동 서명 줄과 그 밤에 호출하지 못한 견습 운송원 한 명의 이름 사이에서만 자란다.\n\n전부를 공개하면 수서 신뢰가 한 칸 끊길 수 있어 부분 공개 절차만 남겨 두었다.\n\nSECRET 키는 참관 두 명의 동시 서명 없이는 열리지 않는다.",
             "관계 공동과거": "하서진의 표준 문장을 사본 운송으로 집행한 밤은 계약이었고, 영마온과 나눈 비교표 순번은 동맹이었다.\n\n하윤목의 관문 원장과는 부속 문서 순서를 놓고 해석 경쟁이 남았다.\n\n어느 관계도 배신만으로 끝나지 않았고, 같은 저울 앞에서 구원이 동시에 열린 적도 있다.\n\n기존 관계 원장의 끝점은 보존된 채 STORY-B003-K396에 연결된다.",
             "3막 개인 서사선": "1막에서 선초별은 세 급수계약 초안의 동시 도착을 저울대에서 다시 만난다.\n\n2막에서 그는 HC11 호송 압력과 XT03 봉인 요청을 한 책상에서 저울질한다.\n\n3막에서 반출 정지의 대가를 야간 계약 창구의 중단 시간으로 치른다.\n\n서사선 식별자는 STORY-B003-K396로 고정된다.",
-            "분기 결말": "결말 α에서 선초별은 비교표 호송을 우선해 약소국 공동 서명의 연속성을 고른다.\n\n결말 β에서 그는 위조 정서본 추적을 우선해 개인 생존과 비밀 함을 지킨다.\n\n어느 쪽도 전국민주노동조합총연맹의 16국 슬롯을 삭제하지 않으며, 분기 식별만 K405-OUT으로 갈라진다.\n\n플레이 개입은 비교표 호위 또는 위조 추적 중 하나로 전환점 절을 따른다."
+            "분기 결말": "결말 α에서 선초별은 비교표 호송을 우선해 약소국 공동 서명의 연속성을 고른다.\n\n결말 β에서 그는 위조 정서본 추적을 우선해 개인 생존과 비밀 함을 지킨다.\n\n어느 쪽도 정동노동총연맹의 16국 슬롯을 삭제하지 않으며, 분기 식별만 K405-OUT으로 갈라진다.\n\n플레이 개입은 비교표 호위 또는 위조 추적 중 하나로 전환점 절을 따른다."
           },
           "arc": [
             {
@@ -22716,7 +22716,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "마곡 연구기록 서고 입구에서 임시온은 암호 키의 대여 시각까지 기억한다.\n\n현대자동차주식회사 통신서고 감사관으로, 기록되지 않은 기술 선물 교환을 절도로 부른다.\n\n한국 기원으로 방화·마곡 생활권에서 자랐고, 성정은 냉정하지만 열람증 모서리를 접어 기한을 표시한다.\n\n임시온과 K065는 불변이다.",
+            "정체성·출신": "마곡 연구기록 서고 입구에서 임시온은 암호 키의 대여 시각까지 기억한다.\n\n양재기공주식회사 통신서고 감사관으로, 기록되지 않은 기술 선물 교환을 절도로 부른다.\n\n한국 기원으로 방화·마곡 생활권에서 자랐고, 성정은 냉정하지만 열람증 모서리를 접어 기한을 표시한다.\n\n임시온과 K065는 불변이다.",
             "붕괴 전 삶": "붕괴 전 그는 연구자료 열람을 인질 교환이 아니라 감사 가능한 대여 원장으로 바꾸는 초안을 썼다.\n\n공동기술원장 서고를 열려는 야망이었고, 군사 감독 문서는 별치함으로 쫓아냈다.\n\n스승에게 남긴 메모—증인 없는 키는 키가 아니다—가 훗날 빚이 된다.\n\n위조 열람증 소문에도 그는 두 명의 독립 증인 없이는 문을 열지 않았다.",
             "가문·기업·공동체": "마곡생명가(HC03)는 연구 보관 권한을 내세워 서고 참관석을 요구했다.\n\n임시온은 시민 참관 봉인과 안전심사 날인만 허용하고 전속 소유 문장은 거절했다.\n\n공동체 위치는 대여 시각 공개 횟수로 증명됐고, 정호준의 재현 원칙을 원장으로 옮긴 날만 열람이 열렸다.\n\n실재 기업 제품명은 감사 원장에 등장하지 않는다.",
             "붕괴의 상처": "임하준 실종 전 음성기록의 편집 흔적이 마곡 서고 사본에서도 보이자 임시온은 열람을 잠갔다.\n\n교차검증만 허용하는 동안, 위조 열람증 한 장이 서고 전체를 선전 자료로 만들 공포가 손을 멈추게 했다.\n\nLOSS 목록의 기록 칸 중간에서 펜이 굳었고, 검증 가능한 지식이 무너지는 장면이 눈앞에 어른거렸다.\n\n그는 장갑을 벗지 않은 채 별치함 열쇠만 만지작거렸다.",
@@ -22725,7 +22725,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 그가 스승 메모를 숨긴 채 보류한 편집 흔적 사본이다.\n\n죄책감은 살린 교차검증 줄과 그 밤 호출하지 못한 견습 사서 사이에서 자란다.\n\n완전 고백 대신 이중 증인 창구를 통한 부분 공개만 허용한다.\n\nSECRET 열람은 최지우의 공개 시점 합의와 동시에만 열린다.",
             "관계 공동과거": "정호준의 재현 기록 원칙을 원장으로 옮긴 계약 최지우과 나눈 원본 보존 동맹 이봄결의 감시 기록을 봉쇄 증거로 보관한 밤이 겹친다.\n\n같은 서고 앞에서 어떤 열람은 구원이 되었고 어떤 봉쇄는 배신으로 읽혔다.\n\n관계 끝점은 보존된 채 STORY-B003-K065에 연결된다.\n\n경쟁은 대여 시각 숫자로만 재측정된다.",
             "3막 개인 서사선": "1막에서 임시온은 편집 흔적 사본으로 열람을 잠근다.\n\n2막에서 HC03 참관과 XT05 신탁 요청을 증인 시계에 묶는다.\n\n3막에서 키 회수 또는 발급자 공개 뒤 서고 신용 비용을 치른다.\n\n서사선은 STORY-B003-K065이다.",
-            "분기 결말": "결말 α에서 임시온은 원본 키 회수로 서고를 재개한다.\n\n결말 β에서 그는 위조 열람증 발급자를 밝혀 감사 권한을 지킨다.\n\n어느 쪽도 현대자동차주식회사 슬롯을 삭제하지 않으며 분기는 K065-OUT이다.\n\n플레이 개입은 키 호송 또는 발급자 추적이다."
+            "분기 결말": "결말 α에서 임시온은 원본 키 회수로 서고를 재개한다.\n\n결말 β에서 그는 위조 열람증 발급자를 밝혀 감사 권한을 지킨다.\n\n어느 쪽도 양재기공주식회사 슬롯을 삭제하지 않으며 분기는 K065-OUT이다.\n\n플레이 개입은 키 호송 또는 발급자 추적이다."
           },
           "arc": [
             {
@@ -22767,7 +22767,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "성동 골목 수도꼭지 앞에서 장민재는 후계자 이름보다 저수조 수위를 먼저 묻는다.\n\n대한예수교장로회 급수 시민대표로, 온화하나 꼭지가 마르면 공방 회의를 사치로 여긴다.\n\n한국 기원으로 성수·성동 생활권에서 자랐고, 수압 게시판 분필을 주머니에 항상 넣고 다닌다.\n\n장민재와 K093는 불변 식별이다.",
+            "정체성·출신": "성동 골목 수도꼭지 앞에서 장민재는 후계자 이름보다 저수조 수위를 먼저 묻는다.\n\n설교명부정 급수 시민대표로, 온화하나 꼭지가 마르면 공방 회의를 사치로 여긴다.\n\n한국 기원으로 성수·성동 생활권에서 자랐고, 수압 게시판 분필을 주머니에 항상 넣고 다닌다.\n\n장민재와 K093는 불변 식별이다.",
             "붕괴 전 삶": "붕괴 전 그는 후계가 공백이어도 성동 급수 최저선을 공방헌장에 못 박는 문구를 다듬었다.\n\n중앙권역 주민이 강국 거래의 숫자가 되지 않게 하려는 야망이었고, 골목별 수압표를 새벽마다 다시 썼다.\n\n이웃에게 남긴 약속—단수 전에 회의를 열겠다—가 훗날 빚의 형태를 띤다.\n\n펌프 출고가 가문 창고로만 흘러도 그는 시민 연서 양식을 먼저 꺼냈다.",
             "가문·기업·공동체": "영등포수문가(HP01)는 수문 참관 권한을 내세워 급수 창구에 자리를 요구했다.\n\n장민재는 시민 감시 봉인만 허용하고 전속 소유 문장은 거절했다.\n\n공동체 위치는 수압 게시판 갱신 횟수로 증명됐고, 공방 야간 작업이 시민 감시 아래 열린 날만 비상 저수조가 풀렸다.\n\n실재 상호는 그의 급수 원장에 올리지 않는다.",
             "붕괴의 상처": "중앙 급수계약 만료로 성동 일부 관로 압력이 떨어지자 장민재는 비상 저수조 개방을 요구했다.\n\n총관 실종 뒤 계약 만료가 집단 단수로 번져 공방 노동자가 난민 명부로 떠밀리는 공포가 손을 굳혔다.\n\nLOSS 목록의 급수 칸을 읽다 분필이 부러졌고, 시민대표 직위가 거래 숫자로 불리는 소리가 골목에 울렸다.\n\n그는 게시판을 잠근 채 연서함만 지켰다.",
@@ -22776,7 +22776,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 그가 별도 함에 가둔, 조작 의심 수압표 초고이다.\n\n죄책감은 살린 골목 급수와 그 밤 호출하지 못한 펌프 견습 사이에서 자란다.\n\n전부 공개 대신 시민 감시 창구를 통한 부분 공개만 남겼다.\n\nSECRET 키는 임바다의 최저선 문구 확인과 함께만 열린다.",
             "관계 공동과거": "한소미의 생활 복구 공약을 현장에서 감시한 동맹 임바다와 나눈 시민 급수권 문구 김보람의 야간 봉쇄와 충돌한 아침이 한 관로 위에 있다.\n\n같은 꼭지 앞에서 어떤 개방은 구원이 되었고 어떤 봉쇄는 배신으로 남았다.\n\n관계 끝점은 STORY-B003-K093로 연결된다.\n\n신뢰는 수압 숫자 범위로만 다시 잰다.",
             "3막 개인 서사선": "1막에서 장민재는 계약 만료와 수압 하락을 게시판에서 맞는다.\n\n2막에서 HP01 참관과 XT03 호송 제안을 최저선 시계에 묶는다.\n\n3막에서 실측 또는 조작 폭로 뒤 공방 신용 비용을 치른다.\n\n서사선은 STORY-B003-K093이다.",
-            "분기 결말": "결말 α에서 장민재는 수압 실측으로 최저선을 관철한다.\n\n결말 β에서 그는 게시판 조작을 밝혀 허위 연서를 무효로 한다.\n\n어느 쪽도 대한예수교장로회 슬롯을 삭제하지 않으며 분기는 K094-OUT이다.\n\n플레이 개입은 실측 호송 또는 조작 추적이다."
+            "분기 결말": "결말 α에서 장민재는 수압 실측으로 최저선을 관철한다.\n\n결말 β에서 그는 게시판 조작을 밝혀 허위 연서를 무효로 한다.\n\n어느 쪽도 설교명부정 슬롯을 삭제하지 않으며 분기는 K094-OUT이다.\n\n플레이 개입은 실측 호송 또는 조작 추적이다."
           },
           "arc": [
             {
@@ -23230,7 +23230,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "상암 송신탑 당직 의무실에서 봉소는 약 봉투의 국적란보다 기사의 손떨림을 먼저 본다.\n\n전국경제인연합회 송신조 당직 의무원으로, 침묵이 환자를 살릴 때는 방송 요청도 미룬다.\n\n한국 기원이며 각성제 사용에 두 의무원 서명이 없으면 거부한다.\n\n봉소와 K223은 재번호되지 않는다.",
+            "정체성·출신": "상암 송신탑 당직 의무실에서 봉소는 약 봉투의 국적란보다 기사의 손떨림을 먼저 본다.\n\n여의도출자연합회 송신조 당직 의무원으로, 침묵이 환자를 살릴 때는 방송 요청도 미룬다.\n\n한국 기원이며 각성제 사용에 두 의무원 서명이 없으면 거부한다.\n\n봉소와 K223은 재번호되지 않는다.",
             "붕괴 전 삶": "송신탑과 기록 저장소에 독립 의무실을 두어 검증 교대가 쓰러져도 공개 방송망이 멈추지 않게 하려 했다.\n\n야망은 당직 활력 기록 문에 연필로 남았다.\n\n동생 기사에게 약속한 수면 교대 한 칸이 사적 빚의 씨앗이다.\n\n약 봉투에 국적을 적는 관행은 그의 원장에서 지워졌다.",
             "가문·기업·공동체": "여의도전산가(HC01)은 정비 우선 조항으로 당직 의무실 키 공유를 요구했다.\n\n봉소는 후계 헌장 참관만 받고 실재 제품명을 활력 기록에서 뺐다.\n\n공동체 위치는 권미래 밤샘 조 진료 횟수와 이중 서명 각성제 거절 횟수로 증명됐다.\n\n전속 국가 소유 요구는 편성회의 게시 전에 반려된다.",
             "붕괴의 상처": "편집 공백이 발견된 밤 당직 두 명이 쓰러지고 각성제 봉인이 한 줄 빠져 있었다.\n\n공포는 가짜 각성제가 당직 줄에 퍼져 조작 음성이 그대로 송신되는 장면이었다.\n\n봉소는 빠진 봉인 줄을 방송 큐 위에 올려 두고 문을 잠갔다.\n\nLOSS 목록에는 그 공백 시각만 반복된다.",
@@ -23239,7 +23239,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 쓰러진 당직 한 명의 이름을 하루 늦게 올린 내부 전갈이다.\n\n죄책감은 지킨 방송망과 그 하루 동안 미룬 동생 수면 교대 사이에 있다.\n\n부분 공개는 황은설 입회 하에 전갈 요약만 허용한다.\n\nSECRET 키는 류은비 해열 배정 원장과 동시에만 열린다.",
             "관계 공동과거": "권미래의 밤샘 조 진료 계약 황은설의 보류 방송 밤 대기 류은비 해열 약재 빚이 한 송신 복도에 모인다.\n\n같은 공백 밤 어떤 침묵은 구원이 되었고 어떤 각성제 줄은 배신으로 남았다.\n\n관계 끝점은 STORY-B004-K223으로 연결된다.\n\n경쟁은 손떨림 수치로만 재측정된다.",
             "3막 개인 서사선": "1막은 각성제 봉인 공백과 당직 붕괴다.\n\n2막은 HC01 키 요구와 XT05 대역 추첨 압력의 교차다.\n\n3막은 봉인 추적 또는 열쇠 분할 뒤 송신망이 치르는 신뢰 비용이다.\n\n서사선은 STORY-B004-K223이다.",
-            "분기 결말": "결말 α에서 봉소는 봉인 추적으로 공개 방송 신뢰를 택한다.\n\n결말 β에서 열쇠 분할 후 개인 생존과 전갈을 지킨다.\n\n전국경제인연합회 슬롯은 유지되고 분기만 K227-OUT이다.\n\n개입은 봉인 추적 또는 열쇠 중재다."
+            "분기 결말": "결말 α에서 봉소는 봉인 추적으로 공개 방송 신뢰를 택한다.\n\n결말 β에서 열쇠 분할 후 개인 생존과 전갈을 지킨다.\n\n여의도출자연합회 슬롯은 유지되고 분기만 K227-OUT이다.\n\n개입은 봉인 추적 또는 열쇠 중재다."
           },
           "arc": [
             {
@@ -23281,7 +23281,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "북한산보국문 건조장 옆 약초 탁자에서 봉감은 소속 완장보다 이마 열을 먼저 짚는다.\n\n대한불교조계종 약초 의무원으로, 가짜 약 냄새가 나면 배급 줄을 멈추고 상자를 연다.\n\n한국 기원이며 말수는 적지만 봉인 없는 상자는 즉시 격리한다.\n\n봉감과 K248은 불변이다.",
+            "정체성·출신": "북한산보국문 건조장 옆 약초 탁자에서 봉감은 소속 완장보다 이마 열을 먼저 짚는다.\n\n승가구휼정 약초 의무원으로, 가짜 약 냄새가 나면 배급 줄을 멈추고 상자를 연다.\n\n한국 기원이며 말수는 적지만 봉인 없는 상자는 즉시 격리한다.\n\n봉감과 K248은 불변이다.",
             "붕괴 전 삶": "산악 약초와 외부 의약품을 한 장의 공개 배급표로 묶어 강국 구호가 보호비로 바뀌지 않게 하려 했다.\n\n야망은 건조 중량·투약 명부 동시 게시 벽에 남았다.\n\n조카에게 약속한 해열 약초 한 줌이 사적 빚의 씨앗이다.\n\n봉인 없는 상자는 줄 가운데 두고 읽게 하는 규칙만은 양보하지 않았다.",
             "가문·기업·공동체": "청량리의료원가(HP03)는 투약 감사 의무를 내세워 건조장 열쇠 참관을 요구했다.\n\n봉감은 후계 헌장 등재만 허용하고 실재 상호를 배급표에서 지웠다.\n\n공동체 신뢰는 모감 건조 로트 검수 횟수와 황세린 저울 동시 확인 일수로 쌓였다.\n\n전속 소유 문장은 숙영 게시판에 올리지 않았다.",
             "붕괴의 상처": "가짜 약품이 배급 줄에서 발견되고 제조 상자에 강국 봉인이 찍혀 있었다.\n\n공포는 가짜 약이 아이 이름으로 기록되어 회랑 밖으로 끌려가는 명분이 되는 것이었다.\n\n봉감은 해당 상자를 줄 한가운데 두고 봉인 문양을 소리 내어 읽혔다.\n\nLOSS 목록 첫 줄은 그 아이 이니셜이 아니라 상자 번호다.",
@@ -23290,7 +23290,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 가짜 약 의심 목록을 반나절 늦게 올린 쪽지다.\n\n죄책감은 지킨 공개 표와 그 반나절 동안 기다린 조카 약 사이에 있다.\n\n부분 공개는 황세린 입회 하에 쪽지 요약만 허용한다.\n\nSECRET 키는 류은비 북한산보국문 투약 감사와 동시에만 열린다.",
             "관계 공동과거": "모감의 건조장 검수 계약 황세린의 약품 배급 저울 동맹 류은비 투약 감사 빚이 한 줄에 선다.\n\n같은 적발 아침 어떤 나눔은 구원이 되었고 어떤 봉인 은폐는 배신으로 남았다.\n\n관계 끝점은 STORY-B004-K248로 이어진다.\n\n신뢰는 건조 중량 오차로만 다시 잰다.",
             "3막 개인 서사선": "1막은 가짜 약 상자의 줄 가운데 공개다.\n\n2막은 HP03 열쇠 참관과 XT04 화차 공개 사이의 잔량 시계다.\n\n3막은 추적 또는 열쇠 분할 뒤 연맹이 치르는 신뢰 비용이다.\n\n서사선은 STORY-B004-K248이다.",
-            "분기 결말": "결말 α에서 봉감은 가짜 약 추적으로 공공 투약 신뢰를 택한다.\n\n결말 β에서 열쇠 분할 중재 후 개인 생존과 쪽지를 지킨다.\n\n대한불교조계종 슬롯은 유지되고 분기만 K253-OUT이다.\n\n개입은 상자 추적 또는 열쇠 중재다."
+            "분기 결말": "결말 α에서 봉감은 가짜 약 추적으로 공공 투약 신뢰를 택한다.\n\n결말 β에서 열쇠 분할 중재 후 개인 생존과 쪽지를 지킨다.\n\n승가구휼정 슬롯은 유지되고 분기만 K253-OUT이다.\n\n개입은 상자 추적 또는 열쇠 중재다."
           },
           "arc": [
             {
@@ -23332,7 +23332,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "창동 차륜 아래 의무 벤치에서 봉복은 국적란보다 끼인 손의 맥박을 먼저 짚는다.\n\n삼성그룹 기지 의무원으로, 시험 기간 각성제를 숙련 증명으로 포장하는 말을 거부한다.\n\n한국 기원이며 야간 수술은 반장과 도제 서명이 함께 있어야만 시작한다.\n\n봉복과 K273은 고정 식별이다.",
+            "정체성·출신": "창동 차륜 아래 의무 벤치에서 봉복은 국적란보다 끼인 손의 맥박을 먼저 짚는다.\n\n서초전산그룹 기지 의무원으로, 시험 기간 각성제를 숙련 증명으로 포장하는 말을 거부한다.\n\n한국 기원이며 야간 수술은 반장과 도제 서명이 함께 있어야만 시작한다.\n\n봉복과 K273은 고정 식별이다.",
             "붕괴 전 삶": "차량기지 의무실을 연공회의와 주거 감사가 함께 여는 거점으로 남겨 사고 은폐가 시험 점수가 되지 않게 하려 했다.\n\n야망은 의무실 문 사고 활력 기록에 남았다.\n\n견습공에게 약속한 봉합 키트 한 세트가 사적 빚의 씨앗이다.\n\n제동 불량 부상자를 주거 민병 병상으로 보내지 않는 규칙만은 접지 않았다.",
             "가문·기업·공동체": "구로합금가(HC07)은 강재 의무 공급을 내세워 기지 의무실 좌석을 요구했다.\n\n봉복은 후계 헌장 참관만 열고 실재 상호를 활력 기록에서 뺐다.\n\n공동체 위치는 조우찬 작업 조 부상 처리 횟수와 권도하 북문 순찰 교대 진료 일수로 증명됐다.\n\n전속 소유 요구는 연공회의 투표 전에 반려된다.",
             "붕괴의 상처": "시험 차륜 결함 직후 북문 순찰차가 제동 불량으로 정차해 의무실 당직이 하룻밤을 넘겼다.\n\n공포는 부상자가 주거 민병 병상으로 옮겨져 기지 사고가 인구 분쟁으로 바뀌는 그림이었다.\n\n봉복은 사고 활력 숫자를 문 밖에 붙이고 민병 이송 요청서를 접지 않은 채 반려했다.\n\nLOSS 목록 첫 줄은 제동 불량 시각이다.",
@@ -23341,7 +23341,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 각성제 한 앰플을 시험 전 회수한 내부 메모다.\n\n죄책감은 살린 순찰 대원과 그 때문에 늦춘 견습 봉합 키트 사이에 있다.\n\n부분 공개는 전미리 입회 하에 메모 한 줄만 허용한다.\n\nSECRET 키는 의료열차 병상 비움 로그와 동시에만 열린다.",
             "관계 공동과거": "조우찬 작업 조 부상 계약 권도하 북문 순찰 교대 진료 전미리 의료열차 병상 양보가 한 기지에 모인다.\n\n같은 결함 밤 어떤 이송은 구원이 되었고 어떤 각성제 포장은 배신으로 남았다.\n\n관계 끝점은 STORY-B004-K273으로 연결된다.\n\n경쟁은 맥박 안정 시간으로만 재판정된다.",
             "3막 개인 서사선": "1막은 제동 불량 부상과 민병 이송 거절이다.\n\n2막은 HC07 좌석 요구와 XT04 연료 큐 압력의 교차다.\n\n3막은 기록 공개 또는 봉인 분할 뒤 기지가 치르는 시험 점수 비용이다.\n\n서사선 ID는 STORY-B004-K273이다.",
-            "분기 결말": "결말 α에서 봉복은 부상 기록 공개로 공공 기지 안전을 택한다.\n\n결말 β에서 각성제 봉인 분할 후 개인 생존과 메모를 지킨다.\n\n삼성그룹 슬롯은 유지되고 분기만 K279-OUT이다.\n\n개입은 회의 증언 또는 봉인 중재다."
+            "분기 결말": "결말 α에서 봉복은 부상 기록 공개로 공공 기지 안전을 택한다.\n\n결말 β에서 각성제 봉인 분할 후 개인 생존과 메모를 지킨다.\n\n서초전산그룹 슬롯은 유지되고 분기만 K279-OUT이다.\n\n개입은 회의 증언 또는 봉인 중재다."
           },
           "arc": [
             {
@@ -23750,12 +23750,12 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "잠실 광장 의무막 앞에서 방늘재는 줄 선 얼굴을 열과 탈수로 먼저 읽는다.\n\n그는 천주교 서울대교구의 잠실 집결 의무소 거점 의무원으로, 기근 배급을 시혜 연설로 포장하는 쪽지를 찢는다.\n\n한국 기원으로 송파 생활권에서 자랐고, 비밀 군량 소문을 진료 대기의 적으로 여긴다.\n\n이름 방늘재와 식별자 K373은 불변이다.",
+            "정체성·출신": "잠실 광장 의무막 앞에서 방늘재는 줄 선 얼굴을 열과 탈수로 먼저 읽는다.\n\n그는 본당인준정의 잠실 집결 의무소 거점 의무원으로, 기근 배급을 시혜 연설로 포장하는 쪽지를 찢는다.\n\n한국 기원으로 송파 생활권에서 자랐고, 비밀 군량 소문을 진료 대기의 적으로 여긴다.\n\n이름 방늘재와 식별자 K373은 불변이다.",
             "붕괴 전 삶": "붕괴 전 그는 기근 줄의 진료와 배급 순서를 공개 추첨과 부양 가족 수로 고정하려 했다.\n\n후계 거래용 비밀 군량이 침상을 사지 못하게 하려는 야망이었다.\n\n전나경에게 남긴 분필 메모—비공개 우선 진료는 원장 없이 받지 말 것—가 훗날 빚이 된다.\n\n상인회의가 진료 중단을 요구해도 광장 의무막을 내리지 않았다.",
             "가문·기업·공동체": "서울역재고가(HC09)는 배급 물류 참관을 내세워 의무막 옆 좌석을 요구했다.\n\n방늘재는 실재 상호 없는 후계 헌장 참관만 허용하고 전속 소유 문장은 거절했다.\n\n공동체 위치는 중증도 표와 배급표를 광장에 나란히 붙인 일수로 증명됐다.\n\n윤서린 인준 없는 비공개 우선 진료는 게시판에 올리지 않았다.",
             "붕괴의 상처": "가격 폭등 주간에 비상 배급줄이 잠실 집결지를 메우자 상인회의가 진료 중단을 공문으로 밀어 넣었다.\n\n방늘재는 광장 의무막을 내리지 않은 채 탈수 환자 수를 분필로 세었다.\n\n공포는 자신이 본 환자가 군사호적 재등록의 미끼로 광장에 서는 장면이었다.\n\nLOSS 목록 맨 아래에는 접힌 배급표와 빈 수통 개수가 적혔다.",
             "생존 전환점": "전환점은 광장 원장을 지켜 진료를 이어갈지, 줄을 해산시켜 경매 질서를 우선할지 고른 순간이다.\n\n서해곡창전구(XT02) 곡물 호송 전갈이 상인회 확성기와 겹치자 계산이 기울었다.\n\n진료 고수를 택하면 탈수 사망은 줄지만 배급 지연이 늘고, 해산을 택하면 경매는 열리되 침상이 군량 담판 자리가 된다.\n\n선택은 K381-TURN이며 되돌리면 집결 교대 한 칸이 비다.",
-            "현재 지위": "지금도 방늘재는 천주교 서울대교구 거점 의무원으로 광장 칠판과 추첨함을 지킨다.\n\n지위는 서명·참관·인준 로그만으로 유지된다.\n\nHC09가 비밀 군량 우선 침상을 요구해도 그는 공개 추첨 없는 처치를 거부한다.\n\n열쇠는 전나경과 선다솜이 나누며 Cast 현황과 매주 대조한다.",
+            "현재 지위": "지금도 방늘재는 본당인준정 거점 의무원으로 광장 칠판과 추첨함을 지킨다.\n\n지위는 서명·참관·인준 로그만으로 유지된다.\n\nHC09가 비밀 군량 우선 침상을 요구해도 그는 공개 추첨 없는 처치를 거부한다.\n\n열쇠는 전나경과 선다솜이 나누며 Cast 현황과 매주 대조한다.",
             "비밀·빚·죄책감": "비밀은 광장 밑 창고에서 발견한, 후계 거래용으로 의심되는 군량 송장 사본이다.\n\n죄책감은 살린 탈수 아이와 그 주 추첨에서 빠진 노상인 한 명 사이에서만 자란다.\n\n전면 공개는 배급국 신뢰 한 줄을 끊을 수 있어 이중 인준 공개만 남겼다.\n\nSECRET 키는 의무원과 배급 서기 동시 날인 없이는 열리지 않는다.",
             "관계 공동과거": "전나경의 비상 배급줄과 나눈 침상은 동맹이었고, 선다솜의 의료 거점 물자 맞춤은 계약이었다.\n\n백온의 남하 가족에게 임시 침상을 준 밤은 빚이었으며, 상인회의 중단 공문과는 분필 숫자를 둔 경쟁이 남았다.\n\n같은 광장에서 어떤 나눔은 구원이 되었고 어떤 해산 명령은 배신으로 읽혔다.\n\n관계 끝점은 STORY-B005-K373로 이어진다.",
             "3막 개인 서사선": "1막에서 방늘재는 가격 폭등 주간의 진료 중단 공문을 다시 맞는다.\n\n2막에서 HC09 참관과 XT02 곡물 호송 전갈을 광장 칠판에서 저울질한다.\n\n3막에서 진료 고수 또는 줄 해산의 대가를 지연과 공백으로 치른다.\n\n서사선은 STORY-B005-K373이다.",
@@ -23801,7 +23801,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "수서 협약 대합실 옆 의무소에서 원새울은 양쪽 말을 끝까지 들은 뒤에야 한 문장으로 자른다.\n\n그는 전국민주노동조합총연맹의 협약 회의 의무소 거점 의무원으로, 힘의 중재를 수치의 진료로 바꾸려 한다.\n\n한국 기원으로 강남 생활권에서 자랐고, 사절 전용 침상 요구를 중증도 미달로 돌려보낸다.\n\n이름 원새울과 식별자 K397은 재번호되지 않는다.",
+            "정체성·출신": "수서 협약 대합실 옆 의무소에서 원새울은 양쪽 말을 끝까지 들은 뒤에야 한 문장으로 자른다.\n\n그는 정동노동총연맹의 협약 회의 의무소 거점 의무원으로, 힘의 중재를 수치의 진료로 바꾸려 한다.\n\n한국 기원으로 강남 생활권에서 자랐고, 사절 전용 침상 요구를 중증도 미달로 돌려보낸다.\n\n이름 원새울과 식별자 K397은 재번호되지 않는다.",
             "붕괴 전 삶": "붕괴 전 그는 11개 약소국 회의 기간의 현장 진료를 공동교섭의 최저선으로 남기려 했다.\n\n강국별 분할 복속이 병상을 사지 못하게 하려는 야망이었고, 초안은 심유리 중재실 옆 칠판에 먼저 적혔다.\n\n방마빛에게 보낸 대기 쪽지—서명자 빠진 칸의 진료는 연기하라—가 훗날 빚이 된다.\n\n한 칸이라도 서명자가 빠지면 회의 진료를 미뤘다.",
             "가문·기업·공동체": "마곡생명가(HC03)는 회의 보건 참관을 내세워 의무소 좌석을 요구했다.\n\n원새울은 실재 상호 없는 후계 헌장 참관만 허용했다.\n\n공동체 위치는 급수·통행·의료·손실보상 네 칸 칠판 옆에 중증도 표를 붙인 일수로 증명됐다.\n\n류은비 의료헌장 조항이 당직 원장에 오르기 전에는 사절 침상을 열지 않았다.",
             "붕괴의 상처": "열한 자리 회의 직전에 세 강국 사절이 각각 다른 보호·급수 패키지를 들고 들어왔다.\n\n원새울은 사절 전용 침상을 열지 않은 채 중증도 미달 사유를 칠판에 적었다.\n\n공포는 의무소가 배우진 보호정부와 한재목 수문헌장 사이에서 들러리 창구가 되는 장면이었다.\n\nLOSS 목록에는 비운 사절 의자 수와 연기된 진료 건수가 남았다.",
@@ -23903,7 +23903,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "상암 송신 통제실에서 최지우은 파형 공백이 남은 음성 파일부터 다시 듣는다.\n\n그는 전국경제인연합회의 방송검증관으로, 증언이 하나뿐인 속보를 공식 칸에 올리지 않는다.\n\n한국 출생 다문화 가정에서 자랐고, 가정 언어의 혼재는 통역이 필요할 때만 언급될 뿐 진영을 나누는 근거가 되지 않는다.\n\n이름 최지우과 식별자 K215는 불변이다.",
+            "정체성·출신": "상암 송신 통제실에서 최지우은 파형 공백이 남은 음성 파일부터 다시 듣는다.\n\n그는 여의도출자연합회의 방송검증관으로, 증언이 하나뿐인 속보를 공식 칸에 올리지 않는다.\n\n한국 출생 다문화 가정에서 자랐고, 가정 언어의 혼재는 통역이 필요할 때만 언급될 뿐 진영을 나누는 근거가 되지 않는다.\n\n이름 최지우과 식별자 K215는 불변이다.",
             "붕괴 전 삶": "붕괴 전 그는 강국이 전원을 내려도 남는 다중 송신망을 상암·서울역·창동에 심으려 했다.\n\n야망은 두 개 이상 독립 증언이 모이기 전에는 방송하지 않는 규칙에서 시작됐다.\n\n윤서린과 나눈 기록 공유 서약—원본 함은 한쪽만 열지 않는다—가 훗날 빚이 된다.\n\n배우진의 검열 요구가 와도 기술 장애 코드를 먼저 남기고 송출을 미뤘다.",
             "가문·기업·공동체": "노량진배달가(HC06)은 골목 중계 참관을 내세워 편성표 좌석을 요구했다.\n\n최지우은 실재 상호 없는 후계 헌장 참관만 허용하고 전속 선전 소유 문장은 거절했다.\n\n공동체 위치는 교차검증 로그를 길드와 기록청에 동시에 붙인 횟수로 증명됐다.\n\n장세화 의료속보 협약이 도착하기 전에는 단정 속보 칸을 열지 않았다.",
             "붕괴의 상처": "임하준이 실종 전 남긴 음성기록에서 편집 흔적이 발견됐다.\n\n최지우은 원본 송신기 회수 전까지 해당 파일을 보류 함에 넣고 공식 방송을 멈췄다.\n\n공포는 공사가 사실 검증기관이 아니라 승자의 선전국이 되는 장면이었다.\n\nLOSS 목록 첫 줄에는 끊긴 무전 시각과 공백 파형 길이가 나란히 적혔다.",
@@ -23954,7 +23954,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "북한산보국문 숙영 중앙 천막에서 백온은 가족 단위 투표함을 열기 전에 명부 빈칸부터 손으로 훑는다.\n\n그는 대한불교조계종의 난민대표로, 가족 분리를 효율로 포장하는 어떤 숫자도 거부한다.\n\n한국 출생 다문화 가정 이력을 지니며, 그 이력은 이동 언어와 가족 의례를 설명할 때만 쓰이고 충성·폭력의 예측 변수로 쓰이지 않는다.\n\n이름 백온과 식별자 K240은 불변이다.",
+            "정체성·출신": "북한산보국문 숙영 중앙 천막에서 백온은 가족 단위 투표함을 열기 전에 명부 빈칸부터 손으로 훑는다.\n\n그는 승가구휼정의 난민대표로, 가족 분리를 효율로 포장하는 어떤 숫자도 거부한다.\n\n한국 출생 다문화 가정 이력을 지니며, 그 이력은 이동 언어와 가족 의례를 설명할 때만 쓰이고 충성·폭력의 예측 변수로 쓰이지 않는다.\n\n이름 백온과 식별자 K240은 불변이다.",
             "붕괴 전 삶": "붕괴 전 그는 군사호적과 강제 복구복무에서 벗어난 독립 시민권을 가족 단위 투표로 먼저 시행하려 했다.\n\n야망은 공개 배급표를 천막마다 사본으로 남기는 습관에서 자랐다.\n\n강민서와 나눈 시민권 문안—성인 자발 복무만 인정한다—가 훗날 빚이 된다.\n\n암사 순찰대가 급수권을 복무계약과 묶으려 해도 그는 가족 회의 없이 서명하지 않았다.",
             "가문·기업·공동체": "서울역재고가(HC09)는 구호 물류 참관을 내세워 숙영 배급 좌석을 요구했다.\n\n백온은 실재 상호 없는 후계 헌장 참관만 허용하고 전속 노동 소유 문장은 거절했다.\n\n공동체 위치는 가족 회의 출석부와 공개 배급표를 동시에 붙인 일수로 증명됐다.\n\n류은비 의료 지원 빚은 감사 칸에만 적고 강제 상환 조항은 받지 않았다.",
             "붕괴의 상처": "암사 순찰대가 북한산보국문 가족들의 급수권을 복무계약과 묶은 아침, 명부에서 한 가족의 줄이 지워져 있었다.\n\n백온은 지워진 줄을 빨간 분필로 되살리고 강제복무 서명을 보류했다.\n\n공포는 피난민이 병력·노동력 숫자로만 남는 장면이었다.\n\nLOSS 목록에는 빈 급수통과 지워졌던 이름 수가 함께 적혔다.",
@@ -25211,7 +25211,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "가락 대형 창고 냉기 통로에서 수한별은 온도 봉인 테이프의 들뜸을 손등으로 읽는다.\n\n천주교 서울대교구 창고 경비 순찰로, 라진우가 맡긴 재고 봉인 순번을 분 단위로 지킨다.\n\n한국 기원으로 배급 창고권에서 자랐고, 말은 적으나 온도 기록지는 한 장도 구기지 않는다.\n\n수한별과 K374는 재번호되지 않는다.",
+            "정체성·출신": "가락 대형 창고 냉기 통로에서 수한별은 온도 봉인 테이프의 들뜸을 손등으로 읽는다.\n\n본당인준정 창고 경비 순찰로, 라진우가 맡긴 재고 봉인 순번을 분 단위로 지킨다.\n\n한국 기원으로 배급 창고권에서 자랐고, 말은 적으나 온도 기록지는 한 장도 구기지 않는다.\n\n수한별과 K374는 재번호되지 않는다.",
             "붕괴 전 삶": "붕괴 전 그는 야간 개봉 권한을 시민 참관 로그에 묶어 단독 재고 이관을 막으려 했다.\n\n야망은 통로 벽에 연필로 남은 온도 곡선이었다.\n\n어머니 약봉지를 위해 아껴 둔 배급 표 한 장이 빚의 시작이었다.\n\n상급 긴급 개봉이 와도 참관 서명 없는 봉인은 자르지 않았다.",
             "가문·기업·공동체": "서울역재고가(HC09)는 생활재 우선 출고 창구를 요구했다.\n\n수한별은 후계 헌장 참관만 열고 실재 상호를 출고 원장에서 지웠다.\n\n공동체 신뢰는 봉인 테이프 사진을 양쪽에 동시에 붙인 날로만 쌓였다.\n\n전속 창고 소유 문장은 냉기문 앞에서 거절됐다.",
             "붕괴의 상처": "곡물 상자 온도가 동시에 붉은 눈금으로 치솟은 밤, 수한별은 출고 벨트를 잠그고 통로만 봉쇄했다.\n\n공포는 상한 곡물이 서해 방면 호송에 실려 배급소 줄이 무너지는 장면이었다.\n\n그는 끊긴 온도 시각을 LOSS 목록 첫 줄에 적었다.\n\n비상 냉각이 돌아와도 개봉 가위는 허리에 묶은 채였다.",
@@ -25262,7 +25262,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "수서 남부 외곽 방음벽 아래에서 영마온은 야간 발자국 간격을 손전등 원으로 잰다.\n\n전국민주노동조합총연맹 남부 외곽 순찰대로, 야간 무적재 수레의 축음만 들어도 검문 순서를 바꾼다.\n\n한국 기원으로 협약 외곽권에서 자랐고, 성정은 건조하나 지도 접힌 자국은 손으로 편다.\n\n영마온과 K398은 불변이다.",
+            "정체성·출신": "수서 남부 외곽 방음벽 아래에서 영마온은 야간 발자국 간격을 손전등 원으로 잰다.\n\n정동노동총연맹 남부 외곽 순찰대로, 야간 무적재 수레의 축음만 들어도 검문 순서를 바꾼다.\n\n한국 기원으로 협약 외곽권에서 자랐고, 성정은 건조하나 지도 접힌 자국은 손으로 편다.\n\n영마온과 K398은 불변이다.",
             "붕괴 전 삶": "붕괴 전 그는 외곽 야간 순번을 공개 게시판에 올려 사설 호송단의 단독 통행을 막으려 했다.\n\n야망은 방음벽 안쪽에 분필로 남은 우회로 스케치였다.\n\n동료에게 빌린 방수 망토 한 벌이 작은 부채였다.\n\n암호 표식이 와도 게시 없는 야간 통로는 열지 않았다.",
             "가문·기업·공동체": "용산호송가(HC11)은 야간 우선 배송 차선을 요구했다.\n\n영마온은 후계 헌장 참관만 받고 실재 상호를 순찰 일지에서 지웠다.\n\n공동체 위치는 검문 스탬프를 양쪽 초소에 동시에 찍은 횟수로 증명됐다.\n\n전속 외곽 소유 요구는 방음벽 문에서 반려된다.",
             "붕괴의 상처": "무표식 야간 행렬이 해협 방향 교량 입구로 몰린 밤, 영마온은 전체 차선을 닫고 손전등만 남겼다.\n\n공포는 위조 배송 표가 교량 이음새를 덮친 뒤 보행 열이 난간 밖으로 쏠리는 소리였다.\n\n그는 끊긴 차선 번호를 LOSS 목록에 적었다.\n\n경보가 꺼져도 망토 끈을 풀지 않았다.",
@@ -25415,7 +25415,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "마곡 인증 화물 검사실에서 구연재는 시료 병 뚜껑의 미세 균열을 확대경으로 읽는다.\n\n현대자동차주식회사 인증화물 물류상으로, 성적서 해시가 원장과 어긋나면 컨베이어를 즉시 멈춘다.\n\n한국 기원으로 연구 화물권에서 자랐고, 성정은 차갑게 보이지만 라벨 접착면은 항상 손으로 문지른다.\n\n구연재와 K067은 불변이다.",
+            "정체성·출신": "마곡 인증 화물 검사실에서 구연재는 시료 병 뚜껑의 미세 균열을 확대경으로 읽는다.\n\n양재기공주식회사 인증화물 물류상으로, 성적서 해시가 원장과 어긋나면 컨베이어를 즉시 멈춘다.\n\n한국 기원으로 연구 화물권에서 자랐고, 성정은 차갑게 보이지만 라벨 접착면은 항상 손으로 문지른다.\n\n구연재와 K067은 불변이다.",
             "붕괴 전 삶": "붕괴 전 그는 인증 화물의 공개 해시 게시를 밀어 군사 단독 봉인을 막으려 했다.\n\n야망은 검사실 칠판에 남은 해시 대조표였다.\n\n여동생에게 약속한 실험 노트 한 권이 작은 빚의 시작이었다.\n\n상급 암호키가 도착해도 참관 서명 없는 성적서는 올리지 않았다.",
             "가문·기업·공동체": "마곡생명가(HC03)는 연구 화물 원격 갱신 창구를 요구했다.\n\n구연재는 후계 헌장의 참관 칸만 열고 실재 상호를 원장에서 지웠다.\n\n공동체 신뢰는 해시 로그를 양쪽에 동시에 붙인 날로만 쌓였다.\n\n전속 갱신 소유 문장은 검사실 문 앞에서 거절됐다.",
             "붕괴의 상처": "야간 시료 전 채널 해시가 동시에 검게 깨진 밤, 구연재는 화물을 기지 밖으로 내보내지 않고 내부 전원을 분리했다.\n\n공포는 깨진 해시가 원양 신탁 항로 오탐을 일으켜 민간 선단이 금지 해역으로 몰리는 그림이었다.\n\n그는 끊긴 시각을 LOSS 목록 첫 줄에 적었다.\n\n비상등이 돌아와도 성적서 인장은 서랍에 넣은 채였다.",
@@ -25466,7 +25466,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "가락 경매장 중앙 단 위에서 남윤경은 호가 칠판의 이중 언어 칸을 분필 끝으로 고른다.\n\n천주교 서울대교구 경매조정인으로, 한쪽 언어만 남은 호가는 즉시 무효를 선언한다.\n\n한국에서 태어나 어머니 야시장 장부와 학교 한국어 원장을 함께 익혔고, 억양은 섞이지만 숫자 자리수는 양보하지 않는다.\n\n남윤경과 K365는 재번호되지 않는다.",
+            "정체성·출신": "가락 경매장 중앙 단 위에서 남윤경은 호가 칠판의 이중 언어 칸을 분필 끝으로 고른다.\n\n본당인준정 경매조정인으로, 한쪽 언어만 남은 호가는 즉시 무효를 선언한다.\n\n한국에서 태어나 어머니 야시장 장부와 학교 한국어 원장을 함께 익혔고, 억양은 섞이지만 숫자 자리수는 양보하지 않는다.\n\n남윤경과 K365는 재번호되지 않는다.",
             "붕괴 전 삶": "붕괴 전 그는 경매 우선표를 시민 참관 로그에 공개해 창고 열쇠와 가격표를 한 사람이 쥐지 못하게 했다.\n\n야망은 단 옆 서랍에 접어 둔 이중 장부 샘플이었다.\n\n어머니 야시장 좌판을 위해 아껴 둔 보증금 한 봉지가 빚의 씨앗이었다.\n\n상급 단독 호가가 와도 이중 칸 없는 표는 올리지 않았다.",
             "가문·기업·공동체": "서울역재고가(HC09)는 생활재 재고 원장과 경매 우선권을 한 창구에 묶으려 했다.\n\n남윤경은 후계 헌장 참관만 받고 실재 상호를 호가 원장에서 지웠다.\n\n공동체 위치는 이중 언어 호가 사진을 양쪽에 동시에 붙인 횟수로 증명됐다.\n\n전속 경매 소유 문장은 단 난간에서 반려된다.\n\n합성 H15 보관 봉인 입회도 같은 참관 규칙으로 묶는다.",
             "붕괴의 상처": "담합 호가가 한 언어 칸만 채운 채 폭주한 오후, 남윤경은 경매 종을 멈추고 칠판을 가렸다.\n\n공포는 조작된 가격이 서해 곡물 배급 줄을 하룻밤에 꺾는 장면이었다.\n\n그는 무효 호가 쪽지를 LOSS 목록에 스테이플로 고정했다.\n\n장이 조용해진 뒤에도 분필 상자를 닫지 않았다.",
@@ -25475,7 +25475,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 그가 어머니 좌판 보증금 대신 잠시 빼 둔 공정 호가 여분 메모다.\n\n죄책감은 살린 배급 칸과 그 때문에 미룬 좌판 재개 사이에서만 자란다.\n\n경매 신뢰를 한 칼에 자르지 않도록 조정인·참관 동시 자리의 조각 공개만 남겼다.\n\nSECRET 키는 조정인과 참관 동시 서명 없이는 열리지 않는다.",
             "관계 공동과거": "수한별의 창고 봉인 시각을 호가 종료와 맞춘 계약 배수아(H15) 보관 봉인 입회 라진우의 재고 인계 유통가 참관과의 우선권 경쟁이 한 단에 겹친다.\n\n같은 칠판에서 어떤 호가는 구원이 되었고 어떤 호가는 배신 증거로 남았다.\n\n관계 원장 끝점은 보존된 채 STORY-B008-K365에 연결된다.\n\n협력은 이중 칸 숫자로만 재확인된다.",
             "3막 개인 서사선": "1막에서 남윤경은 담합 호가 폭주에 경매 종을 멈춘다.\n\n2막에서 HC09 우선권과 XT02 재고 요청을 한 단에서 저울질한다.\n\n3막에서 공개 증언 또는 배급 확정의 대가를 좌판 지연으로 치른다.\n\n서사선 식별자는 STORY-B008-K365로 고정된다.",
-            "분기 결말": "결말 α에서 남윤경은 담합 경로 공개 증언으로 경매 신용을 고른다.\n\n결말 β에서 그는 예비 공정 호가로 곡창 배급분을 확정해 줄 연속을 지킨다.\n\n어느 쪽도 천주교 서울대교구의 16국 슬롯을 삭제하지 않으며, 분기 식별만 K373-OUT으로 갈라진다.\n\n플레이 개입은 증언 입회 또는 배급 호가 호위 중 하나로 전환점 절을 따른다."
+            "분기 결말": "결말 α에서 남윤경은 담합 경로 공개 증언으로 경매 신용을 고른다.\n\n결말 β에서 그는 예비 공정 호가로 곡창 배급분을 확정해 줄 연속을 지킨다.\n\n어느 쪽도 본당인준정의 16국 슬롯을 삭제하지 않으며, 분기 식별만 K373-OUT으로 갈라진다.\n\n플레이 개입은 증언 입회 또는 배급 호가 호위 중 하나로 전환점 절을 따른다."
           },
           "arc": [
             {
@@ -25517,7 +25517,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "수서 지하 공동구 도면 탁자에서 정유라는 내진 접합 기호의 누락을 빨간 연필로 동그라미 친다.\n\n전국민주노동조합총연맹 계약감사관으로, 감시탑 증축과 맞바꾼 도면 조항이 보이면 즉시 계약을 멈춘다.\n\n한국에서 태어나 아버지가 가르친 두 계약 문체와 현장 한국어를 함께 쓰고, 호칭은 관계 원인 있을 때만 바꾼다.\n\n정유라와 K389는 불변이다.",
+            "정체성·출신": "수서 지하 공동구 도면 탁자에서 정유라는 내진 접합 기호의 누락을 빨간 연필로 동그라미 친다.\n\n정동노동총연맹 계약감사관으로, 감시탑 증축과 맞바꾼 도면 조항이 보이면 즉시 계약을 멈춘다.\n\n한국에서 태어나 아버지가 가르친 두 계약 문체와 현장 한국어를 함께 쓰고, 호칭은 관계 원인 있을 때만 바꾼다.\n\n정유라와 K389는 불변이다.",
             "붕괴 전 삶": "붕괴 전 그는 공동구 도면을 시민 참관 열람에 올려 단독 감리 잠금을 막으려 했다.\n\n야망은 탁자 서랍에 접힌 개정 이력표였다.\n\n아버지 공구 벨트에 꽂아 둔 예비 빨간 연필 한 다스가 연속성 부채의 자리였다.\n\n삼자 서명 없는 증축 조항은 감사 큐에 오르지 않았다.",
             "가문·기업·공동체": "수서건설가(HC13)은 내진 접합 도면과 고지 감시탑 증축을 한 창구에 묶으려 했다.\n\n정유라는 후계 헌장 참관만 받고 실재 상호를 계약서에서 지웠다.\n\n공동체 위치는 도면 개정 사진을 양쪽에 동시에 붙인 횟수로 증명됐다.\n\n전속 건축 소유 요구는 공동구 문 앞에서 반려된다.\n\n합성 H16 보관 감사 입회도 같은 삼자 서명을 따른다.",
             "붕괴의 상처": "위조 내진 기호가 섞인 증축안이 해협 방향 보수 요청과 함께 도착한 밤, 정유라는 전체 날인을 보류하고 탁자만 잠갔다.\n\n공포는 가짜 접합이 교량 접속부에서 열려 야간 보행 열이 무너지는 소리였다.\n\n그는 위조 기호 쪽지를 LOSS 목록 첫 줄에 고정했다.\n\n비상등이 돌아와도 빨간 연필을 깎지 않았다.",
@@ -25526,7 +25526,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 그가 참관 없이 한 번 올렸던 임시 개정 한 줄 메모다.\n\n죄책감은 살린 접속부와 그 교대에 호출하지 못한 아버지 연필 다발 전달 사이에서만 자란다.\n\n로그 전체를 열어젖히는 대신 이중 참관 자리에서의 부분 공개 절차만 남겼다.\n\nSECRET 플래그는 감사와 참관 동시 서명 없이는 해제되지 않는다.",
             "관계 공동과거": "영마온의 외곽 차단 시각을 도면 봉인과 맞춘 계약 신태율(H16) 보관 입회 건축연맹 참관과의 증축 창구 경쟁이 한 탁자에 겹친다.\n\n같은 도면에서 어떤 기호는 구원으로 기록되었고 어떤 기호는 배신 증거로 남았다.\n\n관계 원장 끝점은 보존된 채 STORY-B008-K389에 연결된다.\n\n협력은 개정 해시로만 재측정된다.",
             "3막 개인 서사선": "1막에서 정유라는 위조 내진 기호 증축안에 날인을 보류한다.\n\n2막에서 HC13 증축 창구와 XT03 보수 요청을 수신 큐에서 저울질한다.\n\n3막에서 공개 감사 또는 접속부 응급의 대가를 증축 공백으로 치른다.\n\n서사선 식별자는 STORY-B008-K389로 고정된다.",
-            "분기 결말": "결말 α에서 정유라는 위조 기호 공개 감사로 원인 창구를 확정한다.\n\n결말 β에서 예비 정합 도면으로 교량 접속부를 막아 보행 연속을 지킨다.\n\n어느 쪽도 전국민주노동조합총연맹 슬롯을 삭제하지 않으며, 분기 식별만 K398-OUT으로 갈라진다.\n\n플레이 개입은 감사 입회 또는 접속부 보수 호위 중 하나로 전환점 절을 따른다."
+            "분기 결말": "결말 α에서 정유라는 위조 기호 공개 감사로 원인 창구를 확정한다.\n\n결말 β에서 예비 정합 도면으로 교량 접속부를 막아 보행 연속을 지킨다.\n\n어느 쪽도 정동노동총연맹 슬롯을 삭제하지 않으며, 분기 식별만 K398-OUT으로 갈라진다.\n\n플레이 개입은 감사 입회 또는 접속부 보수 호위 중 하나로 전환점 절을 따른다."
           },
           "arc": [
             {
@@ -26203,7 +26203,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "북한산보국문 숙영 중앙 천막 옆 게시판 앞에서 소두는 가족 회의 통지 쪽지의 봉인 끈을 손톱으로 확인한다.\n\n그는 대한불교조계종의 가족 회의 전령이자 신보람의 실무 담당자로, 구두 전달만 믿는 당직을 위조 이웃이라 부른다.\n\n한국 기원으로 북부 피난권에서 자랐고, 말은 짧지만 쪽지 모서리에 남긴 시각 각인은 지우지 않는다.\n\n표시 이름 소두와 불변 식별자 K250은 이후 배치에서도 재번호되지 않는다.",
+            "정체성·출신": "북한산보국문 숙영 중앙 천막 옆 게시판 앞에서 소두는 가족 회의 통지 쪽지의 봉인 끈을 손톱으로 확인한다.\n\n그는 승가구휼정의 가족 회의 전령이자 신보람의 실무 담당자로, 구두 전달만 믿는 당직을 위조 이웃이라 부른다.\n\n한국 기원으로 북부 피난권에서 자랐고, 말은 짧지만 쪽지 모서리에 남긴 시각 각인은 지우지 않는다.\n\n표시 이름 소두와 불변 식별자 K250은 이후 배치에서도 재번호되지 않는다.",
             "붕괴 전 삶": "붕괴 전 그는 가족 단위 투표 통지를 숙영 구역마다 동시에 붙이는 규칙을 밀어 가족 분리를 숫자로 처리하는 배급표를 막으려 했다.\n\n야망은 게시판 하단에 분필로만 남은 ‘동시 부착’ 세 글자였다.\n\n어머니 바느질 상자 안에 숨긴 여분 봉인 끈 한 묶음이 사적 약속의 씨앗이 된다.\n\n상급 당직이 한 줄만 먼저 읽히려 해도 봉인 없는 통지는 게시판에 올라가지 못했다.",
             "가문·기업·공동체": "북한산보국문귀환회(HP05)는 귀환 명부 참관을 내세워 전령 좌석을 요구했다.\n\n소두는 후계 헌장 참관만 받고 실재 상호·제품명을 통지 원장에서 지웠다.\n\n공동체 위치는 신보람 통지와 윤초아 필사를 같은 벽에 동시에 붙인 횟수로 증명됐다.\n\n전속 노동 소유 요구는 숙영 게시판 앞에서 반려된다.",
             "붕괴의 상처": "귀환 명부가 훼손된 새벽, 소두는 빈 칸이 생긴 가족 줄을 빨간 분필로 되살리고 위조 통지 묶음을 불태우지 않은 채 별도 함에 가뒀다.\n\n공포는 한 가족의 이름이 전령 실수로 지워져 급수 줄에서 사라지는 장면이었다.\n\n그는 LOSS 목록에 훼손 시각과 빈 칸 수만 남겼다.\n\n천막이 조용해진 뒤에도 봉인 끈을 손목에 감은 채 풀지 않았다.",
@@ -26254,7 +26254,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "창동 차량기지 칠판 앞에서 소봉은 가동 통지 종이를 수위 막대 눈금과 같은 못에 꽂기 전에 잉크 번짐을 확인한다.\n\n그는 삼성그룹의 연공회의 전령이자 조우찬의 실무 담당자로, 측정 없는 가동 구호를 빈 소리라 부른다.\n\n한국 기원으로 동북 차륜권에서 자랐고, 손끝은 항상 분필 가루와 급수 잔량 공지 모서리를 동시에 만진다.\n\n표시 이름 소봉과 불변 식별자 K275는 이후 배치에서도 재번호되지 않는다.",
+            "정체성·출신": "창동 차량기지 칠판 앞에서 소봉은 가동 통지 종이를 수위 막대 눈금과 같은 못에 꽂기 전에 잉크 번짐을 확인한다.\n\n그는 서초전산그룹의 연공회의 전령이자 조우찬의 실무 담당자로, 측정 없는 가동 구호를 빈 소리라 부른다.\n\n한국 기원으로 동북 차륜권에서 자랐고, 손끝은 항상 분필 가루와 급수 잔량 공지 모서리를 동시에 만진다.\n\n표시 이름 소봉과 불변 식별자 K275는 이후 배치에서도 재번호되지 않는다.",
             "붕괴 전 삶": "붕괴 전 그는 연공회의 가동 통지와 급수 잔량 공지를 한 벽에 나란히 붙여 차륜 가동이 물 없는 구호로 떨어지지 않게 하려 했다.\n\n야망은 칠판 상단의 ‘동시 고지’ 칸에만 남아 있다.\n\n아버지 공구함 뚜껑 안쪽에 적은 예비 분필 자국이 사적 약속의 씨앗이 된다.\n\n상급 배차가 가동만 먼저 외쳐도 잔량 공지 없는 통지는 칠판 맨 위에 올라가지 못했다.",
             "가문·기업·공동체": "창동방호가(HC08)은 방호 우선 가동을 의무 조항으로 내밀었다.\n\n소봉은 후계 헌장 참관만 받고 실재 상호·제품명을 연공 원장에서 지웠다.\n\n공동체 위치는 조우찬 가동 통지와 서진아 급수 공지를 같은 벽에 붙인 일수로 증명됐다.\n\n전속 기지 소유 요구는 칠판 앞에서 반려된다.",
             "붕괴의 상처": "동절 연료 큐가 뒤섞인 밤, 위조 가동 통지가 급수 공지 위에 겹쳐 붙었다.\n\n소봉은 겹친 종이를 뜯어 분리하고 전체 출고 구호를 멈추게 했다.\n\n공포는 물 없는 차륜이 동절 급행에 실려 선로에서 멈추는 장면이었다.\n\nLOSS 목록에는 위조 잉크 번짐과 멈춘 피트 슬롯 수만 적혔다.\n\n기지 확성기가 꺼진 뒤에도 그는 수위 막대를 손에서 놓지 않았다.",
@@ -26458,7 +26458,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "가락 배급 입찰 창구에서 선다솜은 낙찰 전갈 봉투를 열기 전에 입찰 조건 봉인 끈의 매듭 방향을 확인한다.\n\n그는 천주교 서울대교구의 호송 낙찰 전령이자 문도윤의 실무 담당자로, 봉인 없는 구두 낙찰을 시장 사고라 부른다.\n\n한국 기원으로 동남 배급권에서 자랐고, 손끝은 항상 저울 눈금과 전갈 모서리를 번갈아 짚는다.\n\n표시 이름 선다솜과 불변 식별자 K375는 이후 배치에서도 재번호되지 않는다.",
+            "정체성·출신": "가락 배급 입찰 창구에서 선다솜은 낙찰 전갈 봉투를 열기 전에 입찰 조건 봉인 끈의 매듭 방향을 확인한다.\n\n그는 본당인준정의 호송 낙찰 전령이자 문도윤의 실무 담당자로, 봉인 없는 구두 낙찰을 시장 사고라 부른다.\n\n한국 기원으로 동남 배급권에서 자랐고, 손끝은 항상 저울 눈금과 전갈 모서리를 번갈아 짚는다.\n\n표시 이름 선다솜과 불변 식별자 K375는 이후 배치에서도 재번호되지 않는다.",
             "붕괴 전 삶": "붕괴 전 그는 호송 낙찰을 문도윤 입찰 조건과 영미결 입찰 원장이 동시에 봉인된 뒤에만 전령이 나르게 하려 했다.\n\n야망은 창구 옆 칠판의 ‘쌍봉인 낙찰’ 칸에 남아 있다.\n\n방늘재와 맞춘 의료 거점 물자 표가 사적 약속의 씨앗이 된다.\n\n급행 배급이 밀려도 한쪽 봉인만 있는 낙찰 전갈은 봉투에 들어가지 못했다.",
             "가문·기업·공동체": "서울역재고가(HC09)는 구호 물류 참관을 내세워 낙찰 좌석을 요구했다.\n\n선다솜은 후계 헌장 참관만 받고 실재 상호·제품명을 입찰 원장에서 지웠다.\n\n공동체 위치는 문도윤 조건과 영미결 원장 순번을 같은 줄에 남긴 횟수로 증명됐다.\n\n전속 배급 소유 요구는 창구 앞에서 반려된다.",
             "붕괴의 상처": "통조림 할당이 재조정되던 밤, 위조 낙찰 전갈이 의료 거점 물자 표를 덮고 들어왔다.\n\n선다솜은 전체 게시를 멈추고 위조 매듭만 해체했다.\n\n공포는 의료 호송이 일반 배급 칸에 섞여 온도 관리가 무너지는 장면이었다.\n\nLOSS 목록에는 위조 매듭 방향과 멈춘 입찰 슬롯 수가 적혔다.\n\n창구 불이 꺼진 뒤에도 저울 추를 손에서 놓지 않았다.",
@@ -26509,7 +26509,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "마곡 필터 복도 심사 부스에서 정하린은 생명안전 잠금 스위치를 내리기 전에 수질 표본병의 봉인 라벨부터 읽는다.\n\n그는 현대자동차주식회사의 생명안전 심사관으로, 군사감독 숫자만으로 거부권을 덮으려는 요구를 현장 사고라 부른다.\n\n한국 출생 다문화 가정에서 자랐고, 가정 언어의 혼재는 표본 라벨 통역이 필요할 때만 언급될 뿐 진영을 나누는 근거가 되지 않는다.\n\n이름 정하린과 식별자 K058은 불변이다.",
+            "정체성·출신": "마곡 필터 복도 심사 부스에서 정하린은 생명안전 잠금 스위치를 내리기 전에 수질 표본병의 봉인 라벨부터 읽는다.\n\n그는 양재기공주식회사의 생명안전 심사관으로, 군사감독 숫자만으로 거부권을 덮으려는 요구를 현장 사고라 부른다.\n\n한국 출생 다문화 가정에서 자랐고, 가정 언어의 혼재는 표본 라벨 통역이 필요할 때만 언급될 뿐 진영을 나누는 근거가 되지 않는다.\n\n이름 정하린과 식별자 K058은 불변이다.",
             "붕괴 전 삶": "붕괴 전 그는 생명안전 거부권을 현장 집행 가능한 이중 키로 만들어 연구 가동이 인명 숫자 뒤로 숨지 않게 하려 했다.\n\n야망은 부스 벽에 분필로만 남은 ‘인명 우선 잠금’ 칸이다.\n\n정호준과 나눈 집행 서약—잠금은 한 사람 말로 해제되지 않는다—가 훗날 빚이 된다.\n\n배우진의 군사감독 요구가 와도 표본 봉인 없는 가동 허가는 나오지 못했다.",
             "가문·기업·공동체": "청량리의료원가(HP03)는 진료 연계 참관을 내세워 심사 좌석을 요구했다.\n\n정하린은 실재 상호 없는 후계 헌장 참관만 허용하고 전속 감독 소유 문장은 거절했다.\n\n공동체 위치는 박누리와 교환한 영등포·마곡 수질 표본 로그를 양쪽에 동시에 붙인 횟수로 증명됐다.\n\n진채온 진료 동맹이 거부권을 받치기 전에는 단독 해제 칸을 열지 않았다.",
             "붕괴의 상처": "군사감독 요구가 필터 복도 경보와 겹친 아침, 수질 표본 한 줄이 명부에서 지워져 있었다.\n\n정하린은 잠금을 내리고 지워진 줄을 빨간 라벨로 되살렸다.\n\n공포는 심사관이 병력 배치 도구로 전락하는 장면이었다.\n\nLOSS 목록에는 빈 표본병과 멈춘 여과 슬롯 수가 함께 적혔다.\n\n부스가 조용해진 뒤에도 그는 이중 키를 분리해 보관했다.",
@@ -26560,7 +26560,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "뚝섬 펌프실 뚜껑 아래에서 임초원은 압력 게이지 바늘이 떨리는 각도를 손바닥으로 가늠한 뒤 설계도를 펼친다.\n\n그는 대한예수교장로회의 펌프기술자이자 임하준의 양자로, 총관 후계 경쟁을 기술 독점으로 바꾸는 문장을 거부한다.\n\n한국 출생 다문화 가정 이력을 지니며, 그 이력은 부품 설명서와 가족 의례를 설명할 때만 쓰이고 충성·폭력의 예측 변수로 쓰이지 않는다.\n\n이름 임초원과 식별자 K086은 재번호되지 않는다.",
+            "정체성·출신": "뚝섬 펌프실 뚜껑 아래에서 임초원은 압력 게이지 바늘이 떨리는 각도를 손바닥으로 가늠한 뒤 설계도를 펼친다.\n\n그는 설교명부정의 펌프기술자이자 임하준의 양자로, 총관 후계 경쟁을 기술 독점으로 바꾸는 문장을 거부한다.\n\n한국 출생 다문화 가정 이력을 지니며, 그 이력은 부품 설명서와 가족 의례를 설명할 때만 쓰이고 충성·폭력의 예측 변수로 쓰이지 않는다.\n\n이름 임초원과 식별자 K086은 재번호되지 않는다.",
             "붕괴 전 삶": "붕괴 전 그는 펌프 해독 권한을 공개 설계와 참관 로그로만 유지해 한 가문이 수도 키를 삼키지 못하게 하려 했다.\n\n야망은 펌프실 벽에 남은 ‘공개 해독’ 칸이다.\n\n여민우와 나눈 맹세—해독은 독점으로 보지 않는다—가 훗날 빚이 된다.\n\n한소미의 후계 경쟁 문서가 와도 압력 실측 없는 인준 청구는 심사하지 않았다.",
             "가문·기업·공동체": "뚝섬열원가(HC04)은 에너지 분배 참관을 내세워 펌프 좌석을 요구했다.\n\n임초원은 실재 상호 없는 후계 헌장 참관만 허용하고 전속 기술 소유 문장은 거절했다.\n\n공동체 위치는 허겸과 맞춘 뚜껑 아래 공개 설계 로그를 양쪽에 붙인 횟수로 증명됐다.\n\n강예준의 계승 인준 청구도 실측 전에는 창구에 올리지 않았다.",
             "붕괴의 상처": "귀환 열차 억류 소문이 펌프 압력을 흔든 밤, 신가온의 원한이 적힌 쪽지가 게이지 옆에 꽂혀 있었다.\n\n임초원은 전체 가압을 멈추고 억류 구간 밸브만 분리 점검했다.\n\n공포는 펌프가 후계 전쟁의 인질 도구가 되는 장면이었다.\n\nLOSS 목록에는 떨어진 압력 값과 멈춘 급수 가지 수가 적혔다.\n\n뚜껑을 닫은 뒤에도 그는 해독 키를 둘로 쪼개 보관했다.",
@@ -26611,7 +26611,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "마곡 외곽 방재 초소에서 이봄결은 봉쇄 등잔 심지를 깎기 전에 출동 좌표판의 지워진 점부터 다시 찍는다.\n\n그는 현대자동차주식회사의 방재대장으로, 심사관 거부권을 무력으로만 받침 없이 방치하는 당직을 공백이라 부른다.\n\n중국 이산 가정 배경을 지니며, 이산 언어는 좌표 표지와 호송 수신호를 읽을 때만 필요하고 진영 분할의 근거가 되지 않는다.\n\n이름 이봄결과 식별자 K060은 재번호되지 않는다.",
+            "정체성·출신": "마곡 외곽 방재 초소에서 이봄결은 봉쇄 등잔 심지를 깎기 전에 출동 좌표판의 지워진 점부터 다시 찍는다.\n\n그는 양재기공주식회사의 방재대장으로, 심사관 거부권을 무력으로만 받침 없이 방치하는 당직을 공백이라 부른다.\n\n중국 이산 가정 배경을 지니며, 이산 언어는 좌표 표지와 호송 수신호를 읽을 때만 필요하고 진영 분할의 근거가 되지 않는다.\n\n이름 이봄결과 식별자 K060은 재번호되지 않는다.",
             "붕괴 전 삶": "붕괴 전 그는 방재 봉쇄와 호송 출발을 동시에만 선언하는 이중 신호를 초소 규약으로 만들려 했다.\n\n야망은 등잔 옆 칠판에 남은 ‘동시 선언’ 칸이다.\n\n정하린의 거부권을 현장에서 받치기로 한 지휘 서약이 훗날 빚이 된다.\n\n단독 봉쇄 명령이 밀려도 호송 좌표 없는 등잔은 켜지지 않았다.",
             "가문·기업·공동체": "마곡종자가(HC10)은 식문화 구호 참관을 내세워 초소 좌석을 요구했다.\n\n이봄결은 실재 상호 없는 후계 헌장 참관만 허용하고 전속 방재 소유 문장은 거절했다.\n\n공동체 위치는 채봄·명해솔·진마루에게 나눈 지휘 좌표 로그를 같은 판에 남긴 횟수로 증명됐다.\n\n구호 행렬이 이중 신호를 갖추기 전에는 봉쇄 해제 칸만 임시로 열었다.",
             "붕괴의 상처": "위조 혈연 증서를 가려내야 하는 새벽, 외곽 출동 좌표 한 점이 지워진 채 호송이 출발하려 했다.\n\n이봄결은 등잔을 내리고 행렬을 세운 뒤 좌표판을 손으로 다시 그렸다.\n\n공포는 방재대가 위조 증서 호위의 도구로 팔리는 장면이었다.\n\nLOSS 목록에는 지워진 점 수와 멈춘 등잔 교대만 적혔다.\n\n초소가 조용해진 뒤에도 심지 칼을 손에서 놓지 않았다.",
@@ -26725,7 +26725,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "수서 광장 추첨함 앞에서 판지솔은 구슬 무게를 저울에 올린 뒤 전갈 봉인을 찍는다.\n\n이중 의회 전령으로, 안태경 실무를 맡아 시민추첨 명부와 기업 의회 서명을 한 손에 동시에 든다.\n\n한국 기원으로 전국민주노동조합총연맹에서 자랐고, 숨이 차도 사본 두 장은 절대 한 장으로 합치지 않는다.\n\n표시 이름 판지솔과 불변 식별자 K399는 이후 배치에서도 재번호되지 않는다.",
+            "정체성·출신": "수서 광장 추첨함 앞에서 판지솔은 구슬 무게를 저울에 올린 뒤 전갈 봉인을 찍는다.\n\n이중 의회 전령으로, 안태경 실무를 맡아 시민추첨 명부와 기업 의회 서명을 한 손에 동시에 든다.\n\n한국 기원으로 정동노동총연맹에서 자랐고, 숨이 차도 사본 두 장은 절대 한 장으로 합치지 않는다.\n\n표시 이름 판지솔과 불변 식별자 K399는 이후 배치에서도 재번호되지 않는다.",
             "붕괴 전 삶": "붕괴 전 그는 시민추첨이 보호조약 비준의 필수 날인이 되게 해 기술기업 의회만의 서명을 전령로에서 무효로 만들려 했다.\n\n야망은 광장 벽에 분필로 남은 추첨 순번표였다.\n\n서고 열쇠 고리에 매달린 여분 봉인 도장이 사적 약속의 씨앗이다.\n\n기업 추천이 추첨을 삼키는 전갈은 모욕으로만 적혔다.",
             "가문·기업·공동체": "여의도장부가(HC14)은 이중서명 장부를 의무 조항으로 내밀었다.\n\n판지솔은 후계 헌장 참관만 받고 실재 상호·제품명을 전갈 원장에서 지웠다.\n\n공동체 위치는 추첨 명부와 출석을 광장과 서고에 동시에 붙인 횟수로 증명됐다.\n\n전속 국가 소유 요구는 전령 가방 자물쇠 앞에서 반려된다.",
             "붕괴의 상처": "보호조약 세 건이 동시에 비준 안건으로 올라오고 추첨 명부에 강국 호적 번호가 섞인 새벽, 판지솔은 비준 전갈을 가방에 잠그고 광장 확성기를 끊었다.\n\n공포는 그 한 장이 약소국 연합을 암사 대리 투표장으로 바꾸는 장면이었다.\n\n그는 섞인 번호를 붉은 먹으로 지우고 LOSS 목록에 시각만 남겼다.\n\n광장이 조용해진 뒤에도 구슬 주머니를 손에서 놓지 않았다.",
@@ -26734,7 +26734,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 그가 서고 서랍에 남긴, 하루 먼저 열어 본 기업 의회 초안 메모 한 장이다.\n\n죄책감은 살린 시민 추첨 명단과 그 밤 호출하지 못한 하서진 표준 서식 사이에서만 자란다.\n\n전부를 공개하면 비준 신뢰가 한 칸 끊길 수 있어 부분 공개 절차만 남겨 두었다.\n\nSECRET 키는 전령장과 감사 동시 서명 없이는 열리지 않는다.",
             "관계 공동과거": "안태경의 추첨 쪽지는 봉인 지휘였고, 천늘우의 추첨 원장은 순번 동업이었다.\n\n곽은재의 감사표가 도착하기 전 전갈을 참은 밤은 동맹이었으며, 기업 의회 서기와는 서명 순서를 두고 경쟁이 남았다.\n\n같은 광장에서 어떤 구슬은 구원이 되었고 어떤 호적 번호는 배신의 증거로 남았다.\n\n관계 원장 끝점은 보존된 채 STORY-B011-K399에 연결된다.",
             "3막 개인 서사선": "1막에서 판지솔은 강국 호적이 섞인 비준 전갈을 가방에 잠근다.\n\n2막에서 그는 HC14 이중서명 요구와 XT01 비준 독촉을 광장 책상에서 저울질한다.\n\n3막에서 호적 걸러내기 또는 추첨 연기의 대가를 전령 지연으로 치른다.\n\n서사선 식별자는 STORY-B011-K399로 고정된다.",
-            "분기 결말": "결말 α에서 판지솔은 섞인 호적 공개 걸러내기로 시민추첨 날인을 지킨다.\n\n결말 β에서 그는 추첨을 연기해 기업 의회 서명을 먼저 받게 한다.\n\n어느 쪽도 전국민주노동조합총연맹 슬롯을 삭제하지 않으며, 분기 식별만 K408-OUT으로 갈라진다.\n\n플레이 개입은 호적 대조 또는 추첨 연기 중 하나로 전환점 절을 따른다."
+            "분기 결말": "결말 α에서 판지솔은 섞인 호적 공개 걸러내기로 시민추첨 날인을 지킨다.\n\n결말 β에서 그는 추첨을 연기해 기업 의회 서명을 먼저 받게 한다.\n\n어느 쪽도 정동노동총연맹 슬롯을 삭제하지 않으며, 분기 식별만 K408-OUT으로 갈라진다.\n\n플레이 개입은 호적 대조 또는 추첨 연기 중 하나로 전환점 절을 따른다."
           },
           "arc": [
             {
@@ -26878,7 +26878,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "마곡 밀폐실험동 방풍실에서 진채온은 재현되지 않은 처방 라벨을 실험 일지보다 먼저 떼어 낸다.\n\n실험동 안전의무원으로, 긴급 회의 중에도 시약 봉인 스티커  여부를 손톱으로 확인한다.\n\n한국 기원으로 현대자동차주식회사에서 자랐고, 원칙이 뼈보다 단단해 기준 미달 반출에는 연구책임자 독촉도 통하지 않는다.\n\n표시 이름 진채온과 불변 식별자 K068은 이후 배치에서도 재번호되지 않는다.",
+            "정체성·출신": "마곡 밀폐실험동 방풍실에서 진채온은 재현되지 않은 처방 라벨을 실험 일지보다 먼저 떼어 낸다.\n\n실험동 안전의무원으로, 긴급 회의 중에도 시약 봉인 스티커  여부를 손톱으로 확인한다.\n\n한국 기원으로 양재기공주식회사에서 자랐고, 원칙이 뼈보다 단단해 기준 미달 반출에는 연구책임자 독촉도 통하지 않는다.\n\n표시 이름 진채온과 불변 식별자 K068은 이후 배치에서도 재번호되지 않는다.",
             "붕괴 전 삶": "붕괴 전 그는 연구자 파견 인원의 방역 기록을 공동기술원장 첫 조항으로 올려 연구자를 인질로 쓰는 진료 거래를 무효로 만들려 했다.\n\n야망은 방풍실 유리에 유성 펜으로만 남은 파견 체크리스트였다.\n\n사물함 안 여분 봉인 롤이 사적 약속의 씨앗이다.\n\n재현 로그 없는 처방은 반출 도장을 받지 못했다.",
             "가문·기업·공동체": "마곡생명가(HC03)는 생체 데이터셋 격리 키를 의무 조항으로 내밀었다.\n\n진채온은 후계 헌장 참관만 받고 실재 상호·제품명을 안전 원장에서 지웠다.\n\n공동체 위치는 파견 진료에 재현 가능 실험 기록을 붙인 횟수로 증명됐다.\n\n전속 국가 소유 요구는 방풍실 이중문 앞에서 반려된다.",
             "붕괴의 상처": "뚝섬 수질 검사망이 멈춘 밤, 진채온은 연구자 파견과 후계 인준을 한 거래로 묶으려는 강국 제안에 진료 거부를 선포하고 반출 문을 잠갔다.\n\n공포는 보호를 명분으로 진료 기록이 군사 감독 문서로 바뀌고 의무원이 세습 직능 인질이 되는 장면이었다.\n\n그는 거부 시각만 LOSS에 남기고 표본 트레이를 격리 칸으로 옮겼다.\n\n실험동이 조용해져도 봉인 테이프를 손에서 놓지 않았다.",
@@ -26887,7 +26887,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 그가 격리 칸 아래에 둔, 하루 미룬 파견자 체온 메모 한 줄이다.\n\n죄책감은 지킨 거부 명단과 그 밤 호출하지 못한 정호준 안전심사 사이에서만 자란다.\n\n전부 공개 대신 이중 참관 하의 부분 로그 공개만 남겼다.\n\nSECRET 플래그는 안전의무와 연구 참관 동시 서명 없이는 해제되지 않는다.",
             "관계 공동과거": "정하린의 거부권을 진료 쪽에서 집행하는 동맹이었고, 정호준의 안전심사 원칙은 사제로 배웠다.\n\n류은비의 약효 검증에 실험동 표본을 보낸 밤은 계약이었으며, 강국 파견 중개자와는 반출 문을 두고 경쟁이 남았다.\n\n같은 방풍실에서 어떤 표본은 구원이 되었고 어떤 인준 거래는 배신의 증거로 남았다.\n\n관계 원장 끝점은 보존된 채 STORY-B011-K068에 연결된다.",
             "3막 개인 서사선": "1막에서 진채온은 파견·인준 묶음 거래에 진료 거부를 선포한다.\n\n2막에서 HC03 격리 키와 XT05 검사 의뢰를 방풍실에서 저울질한다.\n\n3막에서 표본 호송 또는 기록 누락 노출의 대가를 파견 공백으로 치른다.\n\n서사선 식별자는 STORY-B011-K068로 고정된다.",
-            "분기 결말": "결말 α에서 진채온은 오염 표본 호송으로 진료 거부를 확정한다.\n\n결말 β에서 진료 기록 누락을 찾아 파견 거래를 조건부 성사시킨다.\n\n어느 쪽도 현대자동차주식회사 슬롯을 삭제하지 않으며, 분기 식별만 K068-OUT으로 갈라진다.\n\n플레이 개입은 표본 호송 또는 누락 추적 중 하나로 전환점 절을 따른다."
+            "분기 결말": "결말 α에서 진채온은 오염 표본 호송으로 진료 거부를 확정한다.\n\n결말 β에서 진료 기록 누락을 찾아 파견 거래를 조건부 성사시킨다.\n\n어느 쪽도 양재기공주식회사 슬롯을 삭제하지 않으며, 분기 식별만 K068-OUT으로 갈라진다.\n\n플레이 개입은 표본 호송 또는 누락 추적 중 하나로 전환점 절을 따른다."
           },
           "arc": [
             {
@@ -26929,7 +26929,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "성수 선창 패킹 저울 앞에서 구도영은 상자 끈 매듭이 공방마다 다르면 출처를 묻지 않고 되돌린다.\n\n성수 패킹운송 물류상으로, 나룻배 시각을 속이는 운송을 재치로 포장해도 저울 눈금 앞에서는 웃지 않는다.\n\n한국 기원으로 대한예수교장로회에서 자랐고, 끈 색이 다른 상자를 한 배에 억지로 태우지 않는다.\n\n표시 이름 구도영과 불변 식별자 K096은 이후 배치에서도 재번호되지 않는다.",
+            "정체성·출신": "성수 선창 패킹 저울 앞에서 구도영은 상자 끈 매듭이 공방마다 다르면 출처를 묻지 않고 되돌린다.\n\n성수 패킹운송 물류상으로, 나룻배 시각을 속이는 운송을 재치로 포장해도 저울 눈금 앞에서는 웃지 않는다.\n\n한국 기원으로 설교명부정에서 자랐고, 끈 색이 다른 상자를 한 배에 억지로 태우지 않는다.\n\n표시 이름 구도영과 불변 식별자 K096은 이후 배치에서도 재번호되지 않는다.",
             "붕괴 전 삶": "붕괴 전 그는 끈 색이 다른 상자를 한 배에 태워 물과 나사가 선창을 서로 붙잡지 못하게 하는 규칙을 밀어 붙였다.\n\n야망은 선창 칠판에 분필로만 남은 나룻배 시각표였다.\n\n창고 서랍의 여분 패킹 끈 한 묶음이 사적 약속의 씨앗이다.\n\n군수 상자는 민수 패킹이 같은 배에 한 줄 실린 뒤에만 탔다.",
             "가문·기업·공동체": "한강진교량공회(HP07)는 풍속 폐쇄 기준과 선창 우회 조항을 의무로 내밀었다.\n\n구도영은 후계 헌장 참관만 받고 실재 상호·제품명을 운송 원장에서 지웠다.\n\n공동체 위치는 끈 매듭과 나룻배 시각을 선창 칠판에 적은 횟수로 증명됐다.\n\n전속 국가 소유 요구는 저울 덮개 앞에서 반려된다.",
             "붕괴의 상처": "동부 교량 통행세가 가죽 상자에 붙은 아침, 구도영은 패킹 끈만 구의 쪽 나룻배로 돌리고 군화 상자는 성수 선창에 쌓아 두었다.\n\n공포는 군화만 배에 오르고 민수 패킹이 선창에서 썩는 장면이었다.\n\n그는 통행세 전표 번호만 LOSS에 남기고 저울을 잠갔다.\n\n선창이 조용해져도 매듭 칼을 허리에서 풀지 않았다.",
@@ -26938,7 +26938,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 그가 창고 천장에 밀어 둔, 통행세 전 밤에 먼저 보낸 민수 반 짐 메모다.\n\n죄책감은 살린 패킹 명단과 그 밤 호출하지 못한 유하은 가죽 마감 사이에서만 자란다.\n\n전부 공개 대신 선창 입회 하의 부분 공개만 남겼다.\n\nSECRET 칸은 물류상과 교량 참관 동시 서명 없이는 열리지 않는다.",
             "관계 공동과거": "유하은의 가죽 마감 시각에 맞춰 상자를 싣는 계약이었고, 한소미의 공정 분할에서 패킹 끈 색을 나눈 동맹이었다.\n\n임채원의 방호 원단 상자와 선창을 다투면서도 필터 패킹은 같은 배에 실은 밤은 타협이었으며, 동부 통행세 징수원과는 저울을 두고 경쟁이 남았다.\n\n같은 선창에서 어떤 끈은 구원이 되었고 어떤 군화 상자는 배신의 증거로 남았다.\n\n관계 원장 끝점은 보존된 채 STORY-B011-K096에 연결된다.",
             "3막 개인 서사선": "1막에서 구도영은 통행세 붙은 가죽 상자 경로를 나룻배로 돌린다.\n\n2막에서 HP07 폐쇄 기준과 XT01 군수 독촉을 저울 위에서 저울질한다.\n\n3막에서 우회 배 또는 발주 쪽지 공개의 대가를 선창 적체로 치른다.\n\n서사선 식별자는 STORY-B011-K096로 고정된다.",
-            "분기 결말": "결말 α에서 구도영은 통행세 없는 우회 배로 민수 패킹을 살린다.\n\n결말 β에서 군화 발주 쪽지를 선창 칠판에 공개한다.\n\n어느 쪽도 대한예수교장로회 슬롯을 삭제하지 않으며, 분기 식별만 K097-OUT으로 갈라진다.\n\n플레이 개입은 우회 배 개방 또는 발주 쪽지 공개 중 하나로 전환점 절을 따른다."
+            "분기 결말": "결말 α에서 구도영은 통행세 없는 우회 배로 민수 패킹을 살린다.\n\n결말 β에서 군화 발주 쪽지를 선창 칠판에 공개한다.\n\n어느 쪽도 설교명부정 슬롯을 삭제하지 않으며, 분기 식별만 K097-OUT으로 갈라진다.\n\n플레이 개입은 우회 배 개방 또는 발주 쪽지 공개 중 하나로 전환점 절을 따른다."
           },
           "arc": [
             {
@@ -27142,7 +27142,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 그가 구형 키 홈에 숨긴, 한 번 임초원 없이 열어 본 일지 페이지 번호다.\n\n죄책감은 지킨 가문 공정 명단과 그 밤 호출하지 못한 한소미 공동통치안 사이에서만 자란다.\n\n전부 공개 대신 가문·중공회 이중 입회 하의 부분 공개만 남겼다.\n\nSECRET 칸은 두 서명 없이는 열리지 않는다.",
             "관계 공동과거": "임하준의 친족 공정을 지키는 후견을 자처했고, 한소미와는 후계 원한이 겹쳤다.\n\n배우진이 보호정부 명목 후보로 가문을 부를 때 유혹과 공포를 동시에 느낀 밤은 분기점이었으며, 임초원의 정비일지 해석권과는 철문 앞에서 경쟁이 남았다.\n\n같은 창고에서 어떤 키는 구원이 되었고 어떤 밀반출 상자는 배신의 증거로 남았다.\n\n관계 원장 끝점은 보존된 채 STORY-B011-K088에 연결된다.",
             "3막 개인 서사선": "1막에서 박세린은 임초원 전용 정비일지에 구형 키로 해석권 분할을 요구한다.\n\n2막에서 HC12 공정 분할과 XT03 중개 요청을 철문 앞에서 저울질한다.\n\n3막에서 키 감정 또는 밀반출 폭로의 대가를 출고 공백으로 치른다.\n\n서사선 식별자는 STORY-B011-K088로 고정된다.",
-            "분기 결말": "결말 α에서 박세린은 가문 키 진위 감정으로 대행 해석권을 세운다.\n\n결말 β에서 별도 창고 밀반출을 공개 폭로한다.\n\n어느 쪽도 대한예수교장로회 슬롯을 삭제하지 않으며, 분기 식별만 K089-OUT으로 갈라진다.\n\n플레이 개입은 키 감정 또는 밀반출 폭로 중 하나로 전환점 절을 따른다."
+            "분기 결말": "결말 α에서 박세린은 가문 키 진위 감정으로 대행 해석권을 세운다.\n\n결말 β에서 별도 창고 밀반출을 공개 폭로한다.\n\n어느 쪽도 설교명부정 슬롯을 삭제하지 않으며, 분기 식별만 K089-OUT으로 갈라진다.\n\n플레이 개입은 키 감정 또는 밀반출 폭로 중 하나로 전환점 절을 따른다."
           },
           "arc": [
             {
@@ -27399,7 +27399,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "상암 송신탑 콘크리트 기슭에서 복두모는 측량줄 눈금이 바람 때문에 흔들리면 숫자를 읽지 않고 다시 고정한다.\n\n전국경제인연합회 지도 갱신 탐사원이다.\n\n한국 기원이며 난지 방수로 표석 이끼로 계절을 헤아린다.\n\n복두모라는 이름과 K226은 편성회의 명부에서 교체되지 않는다.",
+            "정체성·출신": "상암 송신탑 콘크리트 기슭에서 복두모는 측량줄 눈금이 바람 때문에 흔들리면 숫자를 읽지 않고 다시 고정한다.\n\n여의도출자연합회 지도 갱신 탐사원이다.\n\n한국 기원이며 난지 방수로 표석 이끼로 계절을 헤아린다.\n\n복두모라는 이름과 K226은 편성회의 명부에서 교체되지 않는다.",
             "붕괴 전 삶": "붕괴 전 그는 송신 좌표와 보행 실측을 같은 갱신판에 올리는 쪽을 밀었다.\n\n야망은 탑 하부 공구함에 접어 둔 손때 묻은 격자지였다.\n\n권미래에게 탑 좌표를 넘기겠다는 약속이 그 격자 모서리에 있다.\n\n검증 없는 소문은 갱신판에 올리지 않았다.",
             "가문·기업·공동체": "디지털미디어시티신탁가(HP09)는 모델 카드 공개를 의무로 두었다.\n\n복두모는 헌장 참관만 받고 실재 상호를 격자지에서 지웠다.\n\n관문 중계 실측을 모국과 나눈 횟수가 공동체 위치였다.\n\n전속 대역 소유 요구는 탑 기슭 봉인 앞에서 반려됐다.",
             "붕괴의 상처": "잔여 대역 추첨이 어그러지던 저녁, 송신탑 세 방위 표지가 한꺼번에 깜빡임을 잃었다.\n\n복두모는 측량줄을 감고 권미래의 수신 확인이 오기 전까지 갱신판을 내리지 않았다.\n\n꺼진 표지가 정상 항로로 인쇄되는 일이 가장 무서웠다.\n\n발전기 소음이 잦아도 격자지를 접지 못했다.",
@@ -27408,7 +27408,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "깜빡임이 끊기기 직전 한 방위 숫자를 개인 격자 여백에 옮긴 일이 비밀이다.\n\n살린 추첨 시각과 그 밤 안내하지 못한 보행 한 줄 사이에서 죄책감이 자란다.\n\n전부 공개 대신 이중 참관 하의 여백 대조만 남겼다.\n\n여백은 권미래와 모국의 동시 입회 없이 펼쳐지지 않는다.",
             "관계 공동과거": "권미래에게 탑 좌표를 넘기는 일은 계약이고, 모국의 관문 중계와 실측을 나누는 일도 계약이다.\n\n같은 기슭에서 표지를 다시 밝힌 저녁이 있고, 숫자를 하루 숨긴 저녁도 있다.\n\n관계 끝점은 STORY-B012-K226으로 이어진다.\n\n대역 잡음은 편을 가르는 증거가 되지 않는다.",
             "3막 개인 서사선": "1막에서 복두모는 꺼진 세 방위 표지를 다시 만난다.\n\n2막에서 HP09 공개 의무와 XT05 추첨 독촉을 공구함에서 맞춘다.\n\n3막에서 좌표 우선의 값을 관문 안내 공백으로 치른다.\n\n서사선은 STORY-B012-K226이다.",
-            "분기 결말": "한 갈래에서 복두모는 탑 좌표 우선 인도로 공개 추첨을 살린다.\n\n다른 갈래에서 관문 실측 나눔을 택해 보행 안내와 여백 비밀을 지킨다.\n\n전국경제인연합회 편성 슬롯은 남고 표식만 K230-OUT이다.\n\n개입은 추첨 입회 또는 관문 실측 호위다."
+            "분기 결말": "한 갈래에서 복두모는 탑 좌표 우선 인도로 공개 추첨을 살린다.\n\n다른 갈래에서 관문 실측 나눔을 택해 보행 안내와 여백 비밀을 지킨다.\n\n여의도출자연합회 편성 슬롯은 남고 표식만 K230-OUT이다.\n\n개입은 추첨 입회 또는 관문 실측 호위다."
           },
           "arc": [
             {
@@ -27450,7 +27450,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "구기 터널 입구 이정표 아래에서 복모는 분필 가루가 장갑에 묻으면 글자를 다시 쓰고 나서야 발걸음을 옮긴다.\n\n대한불교조계종 피난로 탐사원이다.\n\n한국 기원으로 정릉 회랑 쪽에서 자랐고, 큰소리보다 이정표 획의 굵기를 먼저 고친다.\n\n복모라는 표시와 K251은 연맹 명부에서 재번호되지 않는다.",
+            "정체성·출신": "구기 터널 입구 이정표 아래에서 복모는 분필 가루가 장갑에 묻으면 글자를 다시 쓰고 나서야 발걸음을 옮긴다.\n\n승가구휼정 피난로 탐사원이다.\n\n한국 기원으로 정릉 회랑 쪽에서 자랐고, 큰소리보다 이정표 획의 굵기를 먼저 고친다.\n\n복모라는 표시와 K251은 연맹 명부에서 재번호되지 않는다.",
             "붕괴 전 삶": "붕괴 전 그는 숙영 우회로를 연맹 공개 지도에 올리되 매복 지점은 빼는 쪽을 밀었다.\n\n야망은 이정표 뒷면에 긁어 둔 작은 화살표였다.\n\n강태산에게 우회로를 보고하겠다는 약속이 그 화살표에 남아 있다.\n\n확인되지 않은 지름길은 숙영 칠판에 올리지 않았다.",
             "가문·기업·공동체": "북한산보국문귀환회(HP05)는 가족 재결합 명부를 의무로 두었다.\n\n복모는 헌장 참관만 받고 실재 상호를 이정표 야장에서 지웠다.\n\n회랑 안내 표지를 두소와 맞춘 횟수가 공동체 위치였다.\n\n전속 회랑 소유 요구는 터널 입구 봉인 앞에서 거절됐다.",
             "붕괴의 상처": "임진 쪽 귀환 명부가 훼손되던 날, 구기 터널 안 세 갈래 중 하나가 낙석으로 막혔다.\n\n복모는 이정표를 뒤집고 강태산의 정찰 응답이 오기 전까지 사람들을 들이지 않았다.\n\n막힌 길이 열린 피난로로 인쇄되는 일이 가장 싫었다.\n\n돌가루가 가라앉아도 분필을 놓지 못했다.",
@@ -27459,7 +27459,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "낙석 직전 한 갈래를 가족 숙영용으로 지운 화살표가 비밀이다.\n\n살린 정찰 반과 그 밤 안내하지 못한 피난 한 줄 사이에서 죄책감이 자란다.\n\n전부 공개 대신 이중 입회 하의 화살표 대조만 남겼다.\n\n화살표는 강태산과 두소의 동시 확인 없이 다시 그려지지 않는다.",
             "관계 공동과거": "강태산에게 우회로를 보고하는 일은 계약이고, 두소의 회랑 안내 표지와 표시를 맞추는 일도 계약이다.\n\n같은 터널에서 낙석을 함께 피한 낮이 있고, 화살표를 하루 지운 낮도 있다.\n\n관계 끝점은 STORY-B012-K251로 이어진다.\n\n분필 가루는 편을 가르는 증거가 되지 않는다.",
             "3막 개인 서사선": "1막에서 복모는 막힌 터널 갈래를 다시 만난다.\n\n2막에서 HP05 명부 의무와 XT01 재발급 독촉을 장갑 쪽지에서 맞춘다.\n\n3막에서 보고 우선의 값을 숙영 우회 거리로 치른다.\n\n서사선은 STORY-B012-K251이다.",
-            "분기 결말": "한 갈래에서 복모는 정찰 보고를 택해 산악 반의 연속을 살린다.\n\n다른 갈래에서 이정표 수정을 택해 숙영 안내와 비밀 화살표를 지킨다.\n\n대한불교조계종 회랑 슬롯은 남고 표식만 K256-OUT이다.\n\n개입은 정찰 호위 또는 이정표 입회다."
+            "분기 결말": "한 갈래에서 복모는 정찰 보고를 택해 산악 반의 연속을 살린다.\n\n다른 갈래에서 이정표 수정을 택해 숙영 안내와 비밀 화살표를 지킨다.\n\n승가구휼정 회랑 슬롯은 남고 표식만 K256-OUT이다.\n\n개입은 정찰 호위 또는 이정표 입회다."
           },
           "arc": [
             {
@@ -27501,7 +27501,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "창동 유치선 분기기 손잡이에서 복두는 기름 냄새보다 유간 두께를 먼저 자로 잰다.\n\n삼성그룹 북부 선로 탐사원이다.\n\n한국 기원으로 도봉 주거 쉘 쪽에서 자랐고, 구령보다 렌치 클릭 횟수를 믿는다.\n\n복두라는 표시와 K276은 연공회의 명부에서 지워지지 않는다.",
+            "정체성·출신": "창동 유치선 분기기 손잡이에서 복두는 기름 냄새보다 유간 두께를 먼저 자로 잰다.\n\n서초전산그룹 북부 선로 탐사원이다.\n\n한국 기원으로 도봉 주거 쉘 쪽에서 자랐고, 구령보다 렌치 클릭 횟수를 믿는다.\n\n복두라는 표시와 K276은 연공회의 명부에서 지워지지 않는다.",
             "붕괴 전 삶": "붕괴 전 그는 북문 우회로를 궤도기병 칠판에 올리되 가문 비선은 빼는 쪽을 밀었다.\n\n야망은 분기기 덮개 안쪽에 긁어 둔 유간 숫자였다.\n\n권도하에게 우회로를 넘기겠다는 약속이 그 숫자에 붙어 있다.\n\n계측 없는 지름길은 기병 배차에 올리지 않았다.",
             "가문·기업·공동체": "창동방호가(HC08)은 궤도 경비와 비상 배차 우선을 의무로 내밀었다.\n\n복두는 헌장 참관만 받고 실재 상호를 유간 야장에서 지웠다.\n\n북문 거점 칠판에 실측을 옮긴 횟수가 두국과의 공동체 위치였다.\n\n전속 기지 소유 요구는 분기기 봉인 앞에서 돌려보냈다.",
             "붕괴의 상처": "동절 연료 큐가 어그러지던 새벽, 유치선 세 가닥 중 하나가 동결로 붙었다.\n\n복두는 손잡이를 잠그고 권도하의 기병 응답이 오기 전까지 열차를 들이지 않았다.\n\n붙은 가닥이 정상 북문선으로 배차되는 일이 가장 짙은 공포였다.\n\n김이 잦아도 렌치를 손에서 놓지 못했다.",
@@ -27510,7 +27510,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "동결 직전 한 가닥의 유간을 개인 야장 여백에만 남긴 일이 비밀이다.\n\n살린 기병 반과 그 새벽 안내하지 못한 호송 한 편 사이에서 죄책감이 자란다.\n\n전부 공개 대신 이중 입회 하의 여백 대조만 남겼다.\n\n여백은 권도하와 두국의 동시 확인 없이 칠판에 옮겨지지 않는다.",
             "관계 공동과거": "권도하에게 북문 우회로를 넘기는 일은 계약이고, 두국의 거점 칠판에 실측을 옮기는 일도 계약이다.\n\n같은 유치선에서 동결을 함께 깬 새벽이 있고, 유간을 하루 숨긴 새벽도 있다.\n\n관계 끝점은 STORY-B012-K276으로 이어진다.\n\n기름 냄새는 편을 가르는 증거가 되지 않는다.",
             "3막 개인 서사선": "1막에서 복두는 동결된 유치선 가닥을 다시 만난다.\n\n2막에서 HC08 비상 배차와 XT04 연료 큐 독촉을 덮개 쪽지에서 맞춘다.\n\n3막에서 우회 우선의 값을 거점 안내 지연으로 치른다.\n\n서사선은 STORY-B012-K276이다.",
-            "분기 결말": "한 갈래에서 복두는 기병 우회 인도로 북문 순찰을 살린다.\n\n다른 갈래에서 거점 칠판 갱신을 택해 호송 안내와 여백 비밀을 지킨다.\n\n삼성그룹 기지 슬롯은 남고 표식만 K282-OUT이다.\n\n개입은 기병 호위 또는 칠판 입회다."
+            "분기 결말": "한 갈래에서 복두는 기병 우회 인도로 북문 순찰을 살린다.\n\n다른 갈래에서 거점 칠판 갱신을 택해 호송 안내와 여백 비밀을 지킨다.\n\n서초전산그룹 기지 슬롯은 남고 표식만 K282-OUT이다.\n\n개입은 기병 호위 또는 칠판 입회다."
           },
           "arc": [
             {
@@ -27921,7 +27921,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "가락 우회 저장고 자물쇠 앞에서 원주온은 온도 로그가 끊긴 칸의 봉인 날짜를 손톱으로 긁는다.\n\n동남 우회 저장고 탐사원으로, 닫힌 창고가 보이면 손전등부터 켜되 흉작 소문만으로 우회로를 그리는 일을 빈 상자의 이웃이라 부른다.\n\n한국 기원으로 천주교 서울대교구 경매 골목에서 자랐고, 장갑에는 얼음 결정이 남는다.\n\n이름 원주온과 번호 K376은 낙찰 순번과 섞이지 않는다.",
+            "정체성·출신": "가락 우회 저장고 자물쇠 앞에서 원주온은 온도 로그가 끊긴 칸의 봉인 날짜를 손톱으로 긁는다.\n\n동남 우회 저장고 탐사원으로, 닫힌 창고가 보이면 손전등부터 켜되 흉작 소문만으로 우회로를 그리는 일을 빈 상자의 이웃이라 부른다.\n\n한국 기원으로 본당인준정 경매 골목에서 자랐고, 장갑에는 얼음 결정이 남는다.\n\n이름 원주온과 번호 K376은 낙찰 순번과 섞이지 않는다.",
             "붕괴 전 삶": "경매 종이 종을 치던 해에 원주온은 가락·잠실 바깥 우회 저장고를 공개 원판에 묶어 생산국 직거래가 경매대를 빈 상자로 만들지 못하게 하려 했다.\n\n야망은 칠판 아래 숨긴 우회 좌표 쪽지였고, 그 쪽지가 훗날 군량 전용의 미끼가 될까 봐 그는 실측 없는 저장을 점선으로만 남겼다.\n\n봉인 자국이 하루만 낡아도 지도를 접지 않았다.\n\n남윤경의 비공개 비상배급은 원판 제목으로 올리지 않기로 스스로 묶었다.",
             "가문·기업·공동체": "노량진냉동상단(HP08)은 전력 슬롯 순환을 이유로 우회 좌표 참관을 의무 칸에 넣으려 했다.\n\n원주온은 좌표를 경매 칠판에 올리지 않고 구하온의 온도 로그 인쇄만 참관 창구로 넘겼다.\n\n공동체 위치는 직위가 아니라 창고 기지 칠판과 경매대에 동시에 붙인 사본으로 증명됐다.\n\n군량 문장의 검색 영장을 지도 여백에 옮기라는 요구는 온도 로그가 끊긴 쪽지로 반려됐다.",
             "붕괴의 상처": "창고 봉쇄 밤, 안쪽 개봉 흔적과 우회 저장고 지도에서 같은 칸이 동시에 비었다.\n\n원주온은 빈 칸을 흉작 소문으로 메우지 않고 자물쇠 온도만 일지에 적었다.\n\n공포의 핵은 위조 우회로가 군량 전용으로 이어져 시민 배급이 점선만 남는 장면이었다.\n\n모터 소음이 꺼진 뒤에도 그는 봉인 실을 주머니에서 빼지 않았다.",
@@ -27930,7 +27930,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 자물쇠 홈에 접어 넣은 온도 로그 한 장이다.\n\n그 장에는 측정하지 않은 영하 숫자가 시민 칸을 합격으로 남겨 두었다.\n\n죄책감은 그 거짓 영하에 붙고, 남윤경의 비상배급 숫자는 제목란이 아니라 난외에만 있다.\n\n구하온이 인쇄 칸을 열고 라진우가 우회 실측을 받은 뒤에만 로그 사본이 나온다.",
             "관계 공동과거": "라진우에게 넘긴 우회 실측은 계약이었고, 판효담의 창고 기지 칠판에 좌표를 붙인 밤은 같은 봉인의 나눔이었다.\n\n남윤경의 비공개 비상배급을 원판 제목으로 남기지 않기로 한 침묵은 배신으로 읽히기도 했고, 같은 침묵이 시민 칸을 구하기도 했다.\n\n온도 숫자만으로 편을 가르지 않았다.\n\n관계 끝점은 STORY-B013-K376에 이어진다.",
             "3막 개인 서사선": "1막에서 원주온은 봉쇄 밤의 빈 칸과 개봉 흔적을 같은 자물쇠에서 다시 만난다.\n\n2막에서 HP08 전력 슬롯과 XT03 통조림 할당을 칠판 한 줄에서 저울질한다.\n\n3막에서 시민 칸 전력 재배정 또는 낙찰자 공개의 값을 얼음 창고 공백으로 치른다.\n\n서사선은 STORY-B013-K376이다.",
-            "분기 결말": "결말 α에서 원주온은 끊긴 온도 칸의 전력을 시민 상자로 옮겨 배급 칸을 차갑게 남긴다.\n\n결말 β에서 자물쇠를 연 낙찰자 이름을 경매 칠판에 붙여 군량 직거래 창구를 닫는다.\n\n어느 쪽도 천주교 서울대교구의 16국 슬롯을 지우지 않으며, 분기 식별만 K384-OUT으로 갈라진다.\n\n현장 개입은 전력 재배정 입회와 낙찰 이름 공개 가운데 하나만 고르며 전환점 절을 따른다."
+            "분기 결말": "결말 α에서 원주온은 끊긴 온도 칸의 전력을 시민 상자로 옮겨 배급 칸을 차갑게 남긴다.\n\n결말 β에서 자물쇠를 연 낙찰자 이름을 경매 칠판에 붙여 군량 직거래 창구를 닫는다.\n\n어느 쪽도 본당인준정의 16국 슬롯을 지우지 않으며, 분기 식별만 K384-OUT으로 갈라진다.\n\n현장 개입은 전력 재배정 입회와 낙찰 이름 공개 가운데 하나만 고르며 전환점 절을 따른다."
           },
           "arc": [
             {
@@ -27972,7 +27972,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "수서 서고 칠판 아래 자갈에서 천늘우는 세 장의 급수계약서를 겹치지 않게 펼친다.\n\n수서 외곽 탐사원으로, 닫힌 남부 연결로가 보이면 측량 줄을 먼저 풀되 소문만으로 우회로를 그리는 사절을 빈 서고의 손님으로 대한다.\n\n한국 기원으로 전국민주노동조합총연맹 회차선 옆에서 자랐고, 소매에는 분필 가루가 남는다.\n\n호칭 천늘우와 식별자 K400은 추첨 구슬과 같은 함에 넣지 않는다.",
+            "정체성·출신": "수서 서고 칠판 아래 자갈에서 천늘우는 세 장의 급수계약서를 겹치지 않게 펼친다.\n\n수서 외곽 탐사원으로, 닫힌 남부 연결로가 보이면 측량 줄을 먼저 풀되 소문만으로 우회로를 그리는 사절을 빈 서고의 손님으로 대한다.\n\n한국 기원으로 정동노동총연맹 회차선 옆에서 자랐고, 소매에는 분필 가루가 남는다.\n\n호칭 천늘우와 식별자 K400은 추첨 구슬과 같은 함에 넣지 않는다.",
             "붕괴 전 삶": "사절 대기실이 냉방을 쓰던 해에 천늘우는 수서 기지와 남부 외곽 우회로를 공개 원판에 묶어 강국 사절이 심사대를 건너뛰지 못하게 하려 했다.\n\n야망은 서고 칠판의 화살표였고, 그 화살표가 공동교섭을 빈 문구로 만들까 봐 그는 실측 없는 선을 점선으로만 남겼다.\n\n봉인 자국이 하루만 낡아도 지도를 다시 걸었다.\n\n정유라의 표준 서식은 제목으로만 남기고 본문 숫자와 섞지 않았다.",
             "가문·기업·공동체": "신정차륜가(HC02)은 배터리 셀 순환을 이유로 후문 실측을 참관 의무에 넣으려 했다.\n\n천늘우는 급수계약서 세 장을 의회 원장과 서고 칠판으로 쪼개 붙이고, 실측 줄은 원초온의 점선 칸에만 남겼다.\n\n공동체 위치는 직위가 아니라 서고 칠판과 심사대에 동시에 붙인 사본으로 증명됐다.\n\n강국 문장의 검색 영장을 지도 여백에 옮기라는 요구는 계약서 세 장을 겹친 채로 반려됐다.",
             "붕괴의 상처": "세 강국 사절이 서로 다른 급수계약서를 들고 온 주, 기지 후문 흔적이 봉인 장부와 지도에서 동시에 비었다.\n\n천늘우는 빈 칸을 사절 말로 메우지 않고 자갈 위의 바퀴 자국만 먹으로 남겼다.\n\n공포의 핵은 위조 우회로가 서고 후문으로 이어져 공동교섭이 빈 문구가 되는 장면이었다.\n\n회차선 안내 방송이 끊긴 뒤에도 그는 분필을 떨어뜨리지 않았다.",
@@ -27981,7 +27981,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 세 장 가운데 숫자만 후문 바퀴 자국과 맞는 계약서 한 장이다.\n\n그는 그 장을 칠판 레일 뒤에 끼워 두고 사절석에 펼치지 않았다.\n\n죄책감은 영마온에게 넘기기로 한 후문 사본을 반나절 미룬 시각에 붙는다.\n\n정유라가 표준 서식 제목을 확인하고 유세진이 배차 칸을 연 뒤에만 그 장이 서고 함에서 나온다.",
             "관계 공동과거": "영마온에게 넘긴 후문 실측은 계약이었고, 원초온의 서고 칠판에 좌표를 붙인 저녁은 같은 분필의 나눔이었다.\n\n정유라의 표준 서식을 원판 제목으로 남긴 일은 공동교섭을 지키려는 거래였고, 판지솔과 나눈 추첨 순번은 지휘가 아니라 시각 맞춤이었다.\n\n같은 자갈에서 서로를 일으킨 기록과, 화살표를 반나절 지운 기록이 함께 남았다.\n\n관계 끝점은 STORY-B013-K400으로 이어진다.",
             "3막 개인 서사선": "개시 시각에 천늘우는 서로 다른 급수계약서 세 장과 빈 후문 칸을 다시 펼친다.\n\n한가운데에서 HC02 셀 순환과 XT05 인도 회차를 서고 무전으로 맞춘다.\n\n닫는 장에서 기준 계약 선정 또는 세 장 반려의 값을 회차 안내 공백으로 치른다.\n\n서사선 식별자는 STORY-B013-K400으로 고정된다.",
-            "분기 결말": "결말 α에서 천늘우는 바퀴 자국과 맞는 급수계약서 한 장을 의회 서고에 올려 공동교섭의 뼈대를 살린다.\n\n결말 β에서 세 장을 모두 반려해 한쪽 사절의 검색 구실을 끊는다.\n\n어느 쪽도 전국민주노동조합총연맹의 16국 슬롯을 삭제하지 않으며, 분기 식별만 K409-OUT으로 갈라진다.\n\n플레이 개입은 기준 계약 낭독 입회 또는 세 장 반려 감사 중 하나로 전환점 절을 따른다."
+            "분기 결말": "결말 α에서 천늘우는 바퀴 자국과 맞는 급수계약서 한 장을 의회 서고에 올려 공동교섭의 뼈대를 살린다.\n\n결말 β에서 세 장을 모두 반려해 한쪽 사절의 검색 구실을 끊는다.\n\n어느 쪽도 정동노동총연맹의 16국 슬롯을 삭제하지 않으며, 분기 식별만 K409-OUT으로 갈라진다.\n\n플레이 개입은 기준 계약 낭독 입회 또는 세 장 반려 감사 중 하나로 전환점 절을 따른다."
           },
           "arc": [
             {
@@ -28083,7 +28083,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 공구함 안쪽에 집 안 말로 적은, 공백 칸을 한 시각 먼저 발견한 메모다.\n\n죄책감은 배우진의 검열을 기술 장애로 부른 거짓에 붙는다.\n\n그 거짓이 밤샘 조를 지키기도 했고, 편집 공백 두 칸을 한 교대 더 숨기기도 했다.\n\n최지우이 편성을 확인하고 허은찬이 냉각 칸을 연 뒤에만 메모가 방송 원장에 오른다.",
             "관계 공동과거": "최지우의 지휘 아래 서라온에게 송신탑 좌표를 넘긴 일은 계약이었고, 두봉이 송신기를 고친 밤은 같은 공구함의 나눔이었다.\n\n봉소가 밤샘 조를 진료한 기록은 구원이 되었고, 배우진의 검열 요구를 기술 장애로 지연한 기록은 원한의 끝점으로 남았다.\n\n복두모가 넘긴 탑 좌표는 교차검증 전에 확정되지 않았다.\n\n관계 원장은 그 끝점을 지우지 않은 채 STORY-B013-K216에 연결된다.",
             "3막 개인 서사선": "첫 장면에서 권미래는 음성기록 송신 로그의 편집 공백 두 칸을 다시 연다.\n\n한가운데에서 HC01 냉각 분배와 XT05 잔여 대역 추첨을 공구함에서 맞춘다.\n\n닫는 장에서 원본 회수 또는 예비 전원 거래 차단의 값을 밤샘 조 공백으로 치른다.\n\n서사선 ID는 STORY-B013-K216으로 고정된다.",
-            "분기 결말": "결말 α에서 권미래는 원본 송신기를 회수해 공백 칸을 메우고 공개 방송망의 뼈대를 살린다.\n\n결말 β에서 예비 전원을 한 강국에 넘기는 거래를 현장에서 막아 선전국 낙인을 차단한다.\n\n어느 쪽도 전국경제인연합회의 16국 슬롯을 삭제하지 않으며, 분기 식별만 K220-OUT으로 갈라진다.\n\n플레이 개입은 송신기 회수 호위 또는 거래 차단 입회 중 하나로 전환점 절을 따른다."
+            "분기 결말": "결말 α에서 권미래는 원본 송신기를 회수해 공백 칸을 메우고 공개 방송망의 뼈대를 살린다.\n\n결말 β에서 예비 전원을 한 강국에 넘기는 거래를 현장에서 막아 선전국 낙인을 차단한다.\n\n어느 쪽도 여의도출자연합회의 16국 슬롯을 삭제하지 않으며, 분기 식별만 K220-OUT으로 갈라진다.\n\n플레이 개입은 송신기 회수 호위 또는 거래 차단 입회 중 하나로 전환점 절을 따른다."
           },
           "arc": [
             {
@@ -28134,7 +28134,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 천막 바닥 장판 밑에 접어 둔, 철표가 가리기 전 완전한 아이 이름 한 장이다.\n\n죄책감은 그 한 장을 숨긴 채로 윤지율에게 이송 우선을 부탁한 입에 붙는다.\n\n백온의 맹세 문장은 가족 회의에서 읽혔으나 장판 밑의 이름은 아직 소리 나지 않았다.\n\n소두의 통지와 감용의 숙영 회의는 이 한 장과 같은 줄에 적히지 않는다.",
             "관계 공동과거": "백온의 맹세를 가족 회의에서 대변한 일은 맹세 계약이었고, 강민서의 시민권 연대를 지지한 밤은 같은 기둥의 나눔이었다.\n\n윤지율에게 부탁한 이송 우선 기록은 구원이 되었고, 소두의 전령과 감용의 숙영 회의는 명부를 소리 내어 지키려는 실무 동맹이었다.\n\n같은 천막에서 이름을 되찾은 저녁과, 별명을 난외에 하루 숨긴 저녁이 함께 남았다.\n\n관계 끝점은 STORY-B013-K241로 이어진다.",
             "3막 개인 서사선": "1막에서 신보람은 복무계약과 묶인 철표와 가려진 이름을 다시 만난다.\n\n2막에서 HP05 재결합 명부와 XT01 귀환 재발급을 기둥 무전으로 맞춘다.\n\n3막에서 명부 회수 또는 복무 헌장 증인의 값을 저녁 배급 공백으로 치른다.\n\n서사선은 STORY-B013-K241이다.",
-            "분기 결말": "결말 α에서 신보람은 철표에 묶인 가족 명부를 되찾아 가족 단위 투표의 뼈대를 살린다.\n\n결말 β에서 자발 복무 헌장의 서명 증인으로 남아 아이들을 숙영에 붙인다.\n\n어느 쪽도 대한불교조계종의 16국 슬롯을 지우지 않으며, 분기 식별만 K246-OUT으로 갈라진다.\n\n플레이 개입은 명부 회수 호위 또는 헌장 증인 입회 중 하나로 전환점 절을 따른다."
+            "분기 결말": "결말 α에서 신보람은 철표에 묶인 가족 명부를 되찾아 가족 단위 투표의 뼈대를 살린다.\n\n결말 β에서 자발 복무 헌장의 서명 증인으로 남아 아이들을 숙영에 붙인다.\n\n어느 쪽도 승가구휼정의 16국 슬롯을 지우지 않으며, 분기 식별만 K246-OUT으로 갈라진다.\n\n플레이 개입은 명부 회수 호위 또는 헌장 증인 입회 중 하나로 전환점 절을 따른다."
           },
           "arc": [
             {
@@ -28324,12 +28324,12 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K069",
           "name": "채봄",
           "sections": {
-            "정체성·출신": "채봄은 현대자동차주식회사 방화 관문 순찰대 조장이다.\n\n한국 기원 칸은 그가 연구동을 감옥처럼 다룰 권한을 주지 않는다.\n\n관문 등잔의 기름 높이로 순찰 간격을 정하고, 주민 깃발이 안 보이는 골목을 사고 구간으로 부른다.",
+            "정체성·출신": "채봄은 양재기공주식회사 방화 관문 순찰대 조장이다.\n\n한국 기원 칸은 그가 연구동을 감옥처럼 다룰 권한을 주지 않는다.\n\n관문 등잔의 기름 높이로 순찰 간격을 정하고, 주민 깃발이 안 보이는 골목을 사고 구간으로 부른다.",
             "붕괴 전 삶": "붕괴 전 채봄은 방화 관문 등잔의 심지를 새벽마다 깎는 일을 했다.\n\n대담함보다 기름이 먼저였고, 호각은 깃발이 골목 입구로 돌아온 뒤에만 불었다.\n\n가방 속 줄자는 꺼진 등잔 사이 거리를 다시 재기 위한 것이었다.",
             "가문·기업·공동체": "채봄의 등잔 줄은 HC03 마곡생명가 헌장의 공개 야간 조명 조항과 맞닿는다.\n\n연구동은 가문의 전속 실험실이 아니며 납치 수레를 막는 간격만 남긴다.\n\n실재 연구소 상호는 일지에 쓰지 않고 등잔 번호와 깃발 시각만 적는다.",
             "붕괴의 상처": "울타리 밖 수레가 연구 칸을 노린 밤, 채봄은 등잔을 모두 밝히고 깃발만 먼저 내보냈다.\n\n호각을 참는 동안 연구동 빗장이 안에서 걸릴 수 있다는 생각이 손끝을 식혔다.\n\n꺼진 골목에서 깃발이 돌아오기 전에 빗장이 잠기면 관문은 빈 등잔만 남긴다.",
             "생존 전환점": "이봄결이 켠 봉쇄 등잔의 심지를 관문에서 이어 깎으며, 채봄은 바퀴 자국을 등잔 간격과 겹칠지 빗장의 순찰 줄을 깃발 쪽에 펼지 골랐다.\n\nXT05-SC3 전갈이 마곡 궤도 단말 오탐 교정을 알렸으나 방화 골목의 깃발을 대신 데려오지는 않았다.\n\n임시온의 봉함 쪽지가 닿기 전에 그는 등잔 줄을 늘리지 않았다.",
-            "현재 지위": "지금 채봄은 방화 관문 순찰대 조장으로 꺼진 구간을 줄자로 다시 잰다.\n\n관문을 여는 호각은 김도하의 깃발이 골목 입구로 돌아온 뒤에만 분다.\n\n현대자동차주식회사 연구동을 마곡생명가의 야간 창고로 넘기지 않는다.",
+            "현재 지위": "지금 채봄은 방화 관문 순찰대 조장으로 꺼진 구간을 줄자로 다시 잰다.\n\n관문을 여는 호각은 김도하의 깃발이 골목 입구로 돌아온 뒤에만 분다.\n\n양재기공주식회사 연구동을 마곡생명가의 야간 창고로 넘기지 않는다.",
             "비밀·빚·죄책감": "채봄은 깃발을 먼저 내보낸 시각에 한 등잔의 기름이 이미 바닥인 것을 보고도 호각을 당겼다.\n\n공개하면 조장이 주민을 미끼로 썼다는 말이 붙고, 감추면 같은 꺼진 칸이 다음 수레의 길이 된다.\n\n그는 그 등잔 번호를 줄자 손잡이에 칼로 새겼다.",
             "관계 공동과거": "채봄은 이봄결의 봉쇄 등잔 심지를 관문에서 이어 깎는 지휘를 받는다.\n\n김도하의 깃발이 돌아올 때까지 호각을 참기로 맹세했고, 임시온의 봉함 쪽지 전에는 줄을 늘리지 않는다.\n\n「깃발 없는 골목엔 호각을 불지 마.」 채봄의 말은 기름 냄새와 함께 남는다.",
             "3막 개인 서사선": "수레가 울타리에 붙자 채봄은 등잔을 밝히고 깃발만 내보낸다.\n\n호각을 참는 동안 HC03 야간 조명 의무와 XT05 오탐 교정 요구가 같은 관문에 겹친다.\n\n빗장이 안에서 걸리면 STORY-B014-K069의 값을 치르고 줄자와 깃발 중 무엇을 공개할지 고른다.",
@@ -28375,12 +28375,12 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K098",
           "name": "진모래",
           "sections": {
-            "정체성·출신": "진모래는 대한예수교장로회 뚝섬 펌프실 의무원이다.\n\n한국 기원 표시는 그의 신의나 직선적 분노의 크기를 보증하지 않는다.\n\n펌프실의 진동이 바뀌면 진료를 중단시키고, 수비를 보호군 명목으로 내주라는 제안을 배신으로 본다.",
+            "정체성·출신": "진모래는 설교명부정 뚝섬 펌프실 의무원이다.\n\n한국 기원 표시는 그의 신의나 직선적 분노의 크기를 보증하지 않는다.\n\n펌프실의 진동이 바뀌면 진료를 중단시키고, 수비를 보호군 명목으로 내주라는 제안을 배신으로 본다.",
             "붕괴 전 삶": "붕괴 전 진모래는 펌프실 옆 침상에서 교대 명부와 열을 동시에 적었다.\n\n야간 출입은 수비대 암호패와 공정 감독의 이중 확인만 허용했고, 진동이 한 음 높아지면 청진기보다 밸브를 먼저 잡았다.\n\n임하준의 정비일지가 당직실 벽에 붙어 있던 시절이다.",
             "가문·기업·공동체": "진모래의 방역 줄은 HP03 청량리의료원가 헌장의 공개 교대 조항과 맞닿는다.\n\n펌프실 의무소는 가문의 전속 병원이 아니며 물이 무력의 볼모가 되지 않게 한다.\n\n실재 병원 상호를 쓰지 않고 진동 기록과 출입 금지 시각만 남긴다.",
             "붕괴의 상처": "배우진이 보호군 파견안을 내자 진모래는 뚝섬 펌프실 의무소를 외부 장교 출입 금지로 올리고 교량 척후 부상을 내부에서만 받았다.\n\n점검 공백을 구원으로 위장한 주둔이 그의 공포의 핵이다.\n\n임하준 실종을 자신의 당직 실패로 여기는 마음이 봉쇄 문구를 단단하게 했다.",
             "생존 전환점": "김보람의 야간 봉쇄를 의무 쪽에서 받치며, 진모래는 출입 시도 증거를 모아 봉쇄를 정당화할지 암호패 유출을 밝혀 문을 다시 열지 골랐다.\n\nXT02-SC1 전갈이 여의도 수문의 조위 맞춤을 알렸으나 펌프실 진동을 설명하지는 않았다.\n\n최나래의 기동 정비조 부상만 우선 침상에 남겼다.",
-            "현재 지위": "지금 진모래는 뚝섬 펌프실 의무원으로 주간 교대 명부를 공방평의회와 나눈다.\n\n야간 출입은 수비대 암호패와 공정 감독의 이중 확인만 통과한다.\n\n대한예수교장로회 펌프실을 청량리의료원가의 전속 침상으로 넘기지 않는다.",
+            "현재 지위": "지금 진모래는 뚝섬 펌프실 의무원으로 주간 교대 명부를 공방평의회와 나눈다.\n\n야간 출입은 수비대 암호패와 공정 감독의 이중 확인만 통과한다.\n\n설교명부정 펌프실을 청량리의료원가의 전속 침상으로 넘기지 않는다.",
             "비밀·빚·죄책감": "진모래는 출입 금지를 올린 밤, 교량 척후 한 명의 열을 내부 명부에 올리지 않았다.\n\n공개하면 봉쇄가 환자 은폐로 읽히고, 감추면 같은 열이 보호군 주둔의 구실이 된다.\n\nG07 전해질화상군의 냄새가 배수로에 있었으나 그는 냄새를 장교의 증거로 삼지 않았다.",
             "관계 공동과거": "진모래는 김보람의 야간 봉쇄를 의무에서 받치고 최나래의 기동 정비조 부상을 우선 치료한다.\n\n임하준의 빈 당직 칸은 아직 지워지지 않았다.\n\n「진동이 바뀌면 진료부터 멈춰.」 진모래의 말은 신의처럼 짧고, 세 사람의 암호패는 같은 문을 다른 이유로 연다.",
             "3막 개인 서사선": "보호군 파견안이 붙자 진모래는 외부 장교를 문 앞에 세운다.\n\n방역 주기와 봉쇄권이 한 명부에 겹치는 동안 HP03 교대 의무와 XT02 배수 일정이 펌프실에서 충돌한다.\n\n당직 실패의 이름을 올리면 STORY-B014-K097의 값을 치르고 봉쇄와 재개방 중 하나를 남긴다.",
@@ -28579,12 +28579,12 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K272",
           "name": "송하율",
           "sections": {
-            "정체성·출신": "송하율은 삼성그룹 차량 정비 도제다.\n\n서울에서 한국인 어머니의 차륜 세척과 필리핀 출신 아버지의 시내버스 제동 조 사이에서 자랐고, 토크 숫자를 저녁 식탁에서 두 가지 셈으로 배운 것은 손의 버릇이지 충성의 증표가 아니다.\n\n말은 적고, 남의 공구를 빼돌리는 일은 참지 못한다.",
+            "정체성·출신": "송하율은 서초전산그룹 차량 정비 도제다.\n\n서울에서 한국인 어머니의 차륜 세척과 필리핀 출신 아버지의 시내버스 제동 조 사이에서 자랐고, 토크 숫자를 저녁 식탁에서 두 가지 셈으로 배운 것은 손의 버릇이지 충성의 증표가 아니다.\n\n말은 적고, 남의 공구를 빼돌리는 일은 참지 못한다.",
             "붕괴 전 삶": "붕괴 전 송하율은 정비 일지를 작업 반장이 아닌 원로 게시판에 직접 붙였다.\n\n불량 부품은 잘라 표본으로 남겼고, 시험 점수를 자랑하지 않았다.\n\n아버지가 버스 제동을 세던 식탁 숫자가 렌치 손잡이에서 먼저 나왔다.",
             "가문·기업·공동체": "송하율의 정비 줄은 HC02 신정차륜가 헌장의 공개 기술시험 조항과 맞닿는다.\n\n가문 승계를 끊는 이홍원의 길을 자기 손으로 증명하려 한다.\n\n실재 자동차 상호를 일지에 쓰지 않고 베어링 각도와 서명 시각만 남긴다.",
             "붕괴의 상처": "유력 후계자의 시험 차륜에서 의도적으로 깎인 베어링이 나온 날, 송하율은 그 조각을 표본으로 잘랐다.\n\n숨은 결함이 자기 서명으로 남아 주거대표에게 기지를 내주는 명분이 된다는 공포가 손을 멈추게 했다.\n\n그는 점수를 고치지 않고 표본만 게시판에 못으로 박았다.",
             "생존 전환점": "이홍원의 도제로서 송하율은 시험 감독을 맡아 출처 공구를 공개할지 서명을 거둘지 골랐다.\n\nXT04-SC2 전갈이 창동 차륜방의 동절 연료 큐를 알렸으나 깎인 각도를 메우지는 않았다.\n\n황지호와 나누는 제동 부품만 같은 상자에 남겼다.",
-            "현재 지위": "지금 송하율은 차량 정비 도제로 일지를 원로 게시판에 직접 붙인다.\n\n불량 부품은 잘라 표본으로 둔다.\n\n삼성그룹 기지를 신정차륜가의 전속 시험장으로 넘기지 않는다.",
+            "현재 지위": "지금 송하율은 차량 정비 도제로 일지를 원로 게시판에 직접 붙인다.\n\n불량 부품은 잘라 표본으로 둔다.\n\n서초전산그룹 기지를 신정차륜가의 전속 시험장으로 넘기지 않는다.",
             "비밀·빚·죄책감": "송하율은 베어링을 자른 시각에 자기 렌치 이빨 자국이 각도 옆에 있는 것을 보고도 일지 본문에 쓰지 않았다.\n\n공개하면 도제가 조작의 공범이 되고, 감추면 같은 이빨이 다음 시험의 증거가 된다.\n\n강태산과의 북문 횃불 신호는 그 밤에 한 박자 늦었다.",
             "관계 공동과거": "송하율은 이홍원의 도제이며 박태겸과의 교환으로 황지호와 제동 부품을 나눈다.\n\n강태산과 북문 횃불을 맞춘다.\n\n「공구는 빌려도 각도는 훔치지 마.」 송하율의 말은 식탁의 두 셈을 섞지 않은 채 손만 설명한다.",
             "3막 개인 서사선": "깎인 베어링이 나오자 송하율은 표본을 게시판에 박는다.\n\n시험 규칙과 제동 상자가 겹치는 동안 HC02 공개 시험 의무와 XT04 연료 큐 요구가 충돌한다.\n\n서명을 열면 STORY-B014-K266의 값을 치르고 감독과 철회 중 하나를 남긴다.",
@@ -28858,12 +28858,12 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "상암 송신 저장소 방풍실에서 국두봉은 파형 형광등이 깜빡일 때마다 펜을 멈춘다.\n\n황은설의 실무 담당 검증 기록관으로, 문장을 두 번 읽고 세 번째에야 도장을 든다.\n\n한국 기원으로 전국경제인연합회 구역에서 자랐고, 사람을 살리는 침묵과 사실을 남기는 의무가 충돌하면 원장을 덮은 채 손을 내려놓는다.",
+            "정체성·출신": "상암 송신 저장소 방풍실에서 국두봉은 파형 형광등이 깜빡일 때마다 펜을 멈춘다.\n\n황은설의 실무 담당 검증 기록관으로, 문장을 두 번 읽고 세 번째에야 도장을 든다.\n\n한국 기원으로 여의도출자연합회 구역에서 자랐고, 사람을 살리는 침묵과 사실을 남기는 의무가 충돌하면 원장을 덮은 채 손을 내려놓는다.",
             "붕괴 전 삶": "붕괴 전 국두봉은 공식 발표를 두 증언 이상으로 맞추는 공개 원장을 서울역 인준과 함께 돌리려 했다.\n\n야망은 저장소 문에 붙인 보류 사유 쪽지였고, 독립 증언이 둘 미만이면 필사를 열지 않았다.\n\n여분 먹물이 묻은 장갑 한 켤레가 사적 약속의 씨앗이다.",
             "가문·기업·공동체": "디지털미디어시티신탁가(HP09)는 검증 해시를 신탁 칸에 맡기는 코드를 방풍실 문에 붙였다.\n\n국두봉은 그 코드를 필사하지 않고 파형 시각과 필적 대조 번호만 칠판에 남긴 뒤, 실재 통신사 상호가 적힌 칸은 먹으로 가렸다.\n\n단독 송신 해제는 편성회의 승인 없이 막히며, 저장소 문에 붙인 보류 사유만이 그 날의 공개로 남는다.",
             "붕괴의 상처": "실종 음성의 파형과 문서고 필적이 한 구간에서만 어긋난 밤, 국두봉은 필사 원장을 잠그고 저장소 열쇠를 두용과 나눴다.\n\n공포는 조작된 음성 한 조각이 기록관 필적으로 남아 공사가 선전 도구로 바뀌는 장면이었다.\n\n그는 어긋난 구간만 보류 칠판에 시각으로 남기고 형광등 아래를 떠나지 않았다.",
             "생존 전환점": "황은설의 지휘와 윤서린의 교차 요청이 동시에 도착한 시각, 국두봉은 두 번째 증언을 데려와 문을 열지 공개를 하루 늦출지 골랐다.\n\n인천신탁전구 시나리오 XT05-SC1가 상암 잔여 대역 공개 추첨을 알렸으나 어긋난 파형을 메우지는 않았다.\n\n문을 열면 검증 큐가 하루 밀리고, 공개를 늦추면 보류 쪽지가 저장소 문에 남는다.",
-            "현재 지위": "지금도 국두봉은 전국경제인연합회 검증 기록관으로 필사 보류와 게시 사유를 같은 칠판에 붙인다.\n\n교차검증 시각과 저장소 봉인이 맞아야 펜을 든다.\n\n디지털미디어시티신탁가가 해시 전속 보관을 요구해도 거절하고, 황은설의 원장 칸과 필사 보류 시각을 같은 칠판에 둔다.",
+            "현재 지위": "지금도 국두봉은 여의도출자연합회 검증 기록관으로 필사 보류와 게시 사유를 같은 칠판에 붙인다.\n\n교차검증 시각과 저장소 봉인이 맞아야 펜을 든다.\n\n디지털미디어시티신탁가가 해시 전속 보관을 요구해도 거절하고, 황은설의 원장 칸과 필사 보류 시각을 같은 칠판에 둔다.",
             "비밀·빚·죄책감": "비밀은 잠근 원장 안에서 자기 필적과 비슷한 한 획을 발견한 메모다.\n\n외부 증인을 그 밤 부르지 않고 보류 명단만 남긴 획이 장갑에 묻는다.\n\n그 획은 두용이 열쇠를 든 뒤에야 황은설의 지휘 칸에 올라간다.",
             "관계 공동과거": "황은설의 원장 이관은 지휘 계약이었고, 두용의 저장소 열쇠는 봉인 동업이었다.\n\n윤서린과 음성·문서를 맞추는 밤은 동맹이었으며, 같은 방풍실에서 맞춘 파형은 문을 열었고 어긋난 획은 필사를 하루 닫았다.\n\n「증언이 하나면 문을 닫는다.」 국두봉의 말은 형광등 깜빡임보다 짧다.",
             "3막 개인 서사선": "1막에서 국두봉은 어긋난 파형 앞에서 필사 원장을 잠근다.\n\n2막에서 HP09 해시 창구와 XT05 대역 추첨이 저장소 문 앞에서 겹친다.\n\n3막에서 증언을 데려오거나 공개를 하루 미루며 검증이 밀린다.",
@@ -28909,12 +28909,12 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "수유 숙영 천막 줄 아래에서 국봉은 명부 탁자의 연필을 아이 키 높이에 맞춰 둔다.\n\n윤초아의 실무 담당 피난 명부 기록관으로, 구두 약속을 장부에 옮기지 않으면 없던 일로 돌린다.\n\n한국 기원으로 대한불교조계종 구역에서 자랐고, 이중 호적 한 줄을 보면 필사를 멈추며 아이 이름을 숫자 기호로 줄이지 않는다.",
+            "정체성·출신": "수유 숙영 천막 줄 아래에서 국봉은 명부 탁자의 연필을 아이 키 높이에 맞춰 둔다.\n\n윤초아의 실무 담당 피난 명부 기록관으로, 구두 약속을 장부에 옮기지 않으면 없던 일로 돌린다.\n\n한국 기원으로 승가구휼정 구역에서 자랐고, 이중 호적 한 줄을 보면 필사를 멈추며 아이 이름을 숫자 기호로 줄이지 않는다.",
             "붕괴 전 삶": "붕괴 전 국봉은 피난 시민권 원장을 서울역 인준과 맞춰 군사호적 사본이 연맹 명부를 대체하지 못하게 하려 했다.\n\n야망은 가족 단위 투표 결과를 당일 게시한 천막 벽이었고, 구호 상자마다 출처를 원장에 적었다.\n\n여분 연필 한 자루가 사적 약속의 씨앗이다.",
             "가문·기업·공동체": "북한산보국문귀환회(HP05)는 귀환 명부 칸을 연맹 원장과 합치는 합본을 탁자에 펼쳤다.\n\n국봉은 합본을 덮고 가족 투표 시각과 물자 출처만 천막 벽에 적은 뒤, 상자 표의 실재 구호 단체 상호는 접어 끈 아래로 넣었다.\n\n노동력 명부로 읽는 기호는 거부되며, 저녁마다 소리 내어 읽은 명부가 숙영의 출입과 배급을 함께 연다.",
             "붕괴의 상처": "급수권 철표와 복무계약서가 같은 끈으로 묶여 게시판에 붙은 낮, 서기들이 필사를 거부하자 국봉은 그 끈을 풀지 않은 채 원장만 덮었다.\n\n공포는 원장이 노동력 명부가 되어 가족이 통째로 복구복무에 적히는 장면이었다.\n\n텐트 바람이 잦아든 뒤에도 그는 아이 이름 칸의 빈줄을 숫자로 메우지 않았다.",
             "생존 전환점": "소두의 전령 게시와 백온의 가족 투표가 같은 시각에 도착하자, 국봉은 분리된 시민권 초안을 숙영 원장에 붙일지 이중 호적을 불태우지 않고 공개할지 골랐다.\n\n임진강관문전구 시나리오 XT01-SC1가 귀환 명부 훼손과 재발급 요구를 알렸으나 철표 끈을 잘라 주지는 않았다.\n\n초안을 붙이면 숙영 배급이 한 끼 멈추고, 이중 호적을 게시하면 서기들이 필사를 하루 거부한다.",
-            "현재 지위": "지금도 국봉은 대한불교조계종 피난 명부 기록관으로 가족 단위 투표를 당일 게시한다.\n\n소리 내어 읽은 명부와 상자 출처 줄이 맞아야 연필을 든다.\n\n북한산보국문귀환회가 전속 합본을 요구해도 거절하고, 윤초아의 명부 칸과 상자 출처 줄을 같은 벽에 둔다.",
+            "현재 지위": "지금도 국봉은 승가구휼정 피난 명부 기록관으로 가족 단위 투표를 당일 게시한다.\n\n소리 내어 읽은 명부와 상자 출처 줄이 맞아야 연필을 든다.\n\n북한산보국문귀환회가 전속 합본을 요구해도 거절하고, 윤초아의 명부 칸과 상자 출처 줄을 같은 벽에 둔다.",
             "비밀·빚·죄책감": "비밀은 숫자 기호로 줄이지 않으려고 난외에 숨긴 아이 이름 한 줄이다.\n\n그 밤 빈 자리를 읽지 않고 가족 투표만 게시한 일이 연필 끝에 남는다.\n\n숨긴 이름은 백온이 투표 결과를 벽에 붙인 뒤에야 윤초아의 명부 난외에 적힌다.",
             "관계 공동과거": "윤초아의 명부 합치기는 지휘 계약이었고, 소두의 전령 게시는 줄 맞추기 동업이었다.\n\n백온의 가족 투표를 원장에 옮긴 밤은 동맹이었으며, 강민서의 복무 문안은 참고만 하고 본문으로 올리지 않았다.\n\n「이름을 번호로 줄이지 마.」 국봉의 말은 천막 줄보다 낮게 깔린다.",
             "3막 개인 서사선": "1막에서 국봉은 철표와 복무가 묶인 게시판 앞에서 원장을 덮는다.\n\n2막에서 HP05 합본 창구와 XT01 재발급 요구가 숙영 탁자에 겹친다.\n\n3막에서 시민권 초안을 붙이거나 이중 호적을 게시하며 배급이 한 끼 밀린다.",
@@ -28960,12 +28960,12 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "창동 제3검수선 피트에서 국두는 베어링 상자 뚜껑을 발로 고정한 채 로트 번호를 읽는다.\n\n조우찬의 실무 담당 작업 사고 기록관으로, 사고 책임을 날짜까지 기억하고 서명 없는 일지를 없던 일로 돌린다.\n\n한국 기원으로 삼성그룹 구역에서 자랐고, 회의보다 차륜 아래의 필적을 믿는다.",
+            "정체성·출신": "창동 제3검수선 피트에서 국두는 베어링 상자 뚜껑을 발로 고정한 채 로트 번호를 읽는다.\n\n조우찬의 실무 담당 작업 사고 기록관으로, 사고 책임을 날짜까지 기억하고 서명 없는 일지를 없던 일로 돌린다.\n\n한국 기원으로 서초전산그룹 구역에서 자랐고, 회의보다 차륜 아래의 필적을 믿는다.",
             "붕괴 전 삶": "붕괴 전 국두는 작업 기록과 사고 책임을 원로 게시판의 유일한 가동 근거로 남겨 가문 승계 소문을 일지로 끊으려 했다.\n\n야망은 반장과 도제의 서명을 한 줄에 받는 습관이었고, 불량 표본 번호를 같은 칸에 적었다.\n\n기름 묻은 수첩 한 권이 사적 약속의 씨앗이다.",
             "가문·기업·공동체": "창동방호가(HC08)은 사고 일지를 궤도 방위 칸으로 넘기는 이관 서식을 피트 난간에 걸었다.\n\n국두는 서식에 서명하지 않고 로트 각도와 서명 시각만 표본 상자에 적은 뒤, 실재 차량 상호가 찍힌 표본 표는 기름 걸레로 지웠다.\n\n결함 일지를 주거 선거 벽보로 복사하는 관행은 거부되며, 피트 난간에 남은 필적만이 가동 근거가 된다.",
             "붕괴의 상처": "깎인 베어링의 로트 번호가 일지와 한 구간에서만 어긋난 교대, 국두는 원장을 잠그고 두모의 정비 표본 번호를 같은 상자에 넣었다.\n\n공포는 결함 일지가 벽보로 복사되어 기지가 인구 논리로 점거되는 장면이었다.\n\n그는 어긋난 줄만 수첩 난외에 시각으로 남기고 피트 전등을 끄지 않았다.",
             "생존 전환점": "조우찬의 지휘와 이홍원의 공개 기술시험 기록이 겹친 시각, 국두는 어긋난 줄을 게시판에 붙일지 일지 잠금을 하루 늦출지 골랐다.\n\n임진강관문전구 시나리오 XT01-SC2가 창동 차륜 호송의 관문 밖 정지를 알렸으나 깎인 각도를 메우지는 않았다.\n\n줄을 붙이면 제3검수선이 한 교대 멈추고, 잠금을 늦추면 표본만 상자에 남는다.",
-            "현재 지위": "지금도 국두는 삼성그룹 작업 사고 기록관으로 반장과 도제 서명을 한 줄에 요구한다.\n\n표본 번호와 피트 필적이 맞아야 일지를 연다.\n\n창동방호가이 전속 이관을 요구해도 거절하고, 조우찬의 일지 칸과 표본 번호를 같은 상자에 둔다.",
+            "현재 지위": "지금도 국두는 서초전산그룹 작업 사고 기록관으로 반장과 도제 서명을 한 줄에 요구한다.\n\n표본 번호와 피트 필적이 맞아야 일지를 연다.\n\n창동방호가이 전속 이관을 요구해도 거절하고, 조우찬의 일지 칸과 표본 번호를 같은 상자에 둔다.",
             "비밀·빚·죄책감": "비밀은 잠근 시각에 도제 서명란이 비어 있던 것을 보고도 본문에 쓰지 않은 메모다.\n\n그 밤 도제를 부르지 않고 원장만 잠근 일이 수첩 기름에 배인다.\n\n그 메모는 두모가 표본 상자를 연 뒤에야 조우찬의 일지 말미에 붙는다.",
             "관계 공동과거": "조우찬의 일지 이관은 지휘 계약이었고, 두모의 표본 번호는 상자 동업이었다.\n\n이홍원의 기술시험 기록을 잠그지 않은 밤은 동맹이었으며, 같은 피트에서 맞춘 각도는 검수를 이었고 어긋난 로트는 일지를 하루 닫았다.\n\n「서명 없는 일지는 사고도 아니다.」 국두의 말은 차륜 소음 아래로 가라앉는다.",
             "3막 개인 서사선": "1막에서 국두는 어긋난 로트 앞에서 원장을 잠근다.\n\n2막에서 HC08 이관 창구와 XT01 호송 정지가 피트 난간에 겹친다.\n\n3막에서 줄을 붙이거나 잠금을 하루 미루며 검수가 한 교대 밀린다.",
@@ -29271,7 +29271,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "가문·기업·공동체": "배수아의 보관은 영등포수문가(HP01) 공동 보관과 시민 참관 봉인에 묶이고 주정비는 남윤경이다.\n\n양도에는 삼자 서명이 필요하고 교차 시설 루트는 기본 차단이다.\n\n실재 로봇 회사의 상호를 본문에 쓰지 않으며 무한 에너지와 전 시설 제어권은 열리지 않는다.",
             "붕괴의 상처": "붕괴는 배수아의 센서 테이블을 끊고 배터리 할당을 드러냈다.\n\n난간 너머 가락 지붕의 얼굴은 식별되지 않았고, 배수아는 공백을 허구 값으로 메우지 못하도록 잠겼다.\n\n측정 불능 플래그만 H15 일지에 남으며 그 공백을 전지적 서술로 채우지 않는다.",
             "생존 전환점": "남윤경이 주정비 권한으로 추가 교대를 요청하고 HP01 감사가 봉인 대조를 요구한 시각이다.\n\n대한해협전구 시나리오 XT03-SC2가 가락 배급의 통조림 할당 재조정을 알렸으나 배수아에게 전체 망 권한을 주지는 않았다.\n\n배수아는 구역 키만 요청하고 다른 시설 제어권을 가로채지 않았으며 그 결정은 H15-TURN 로그로 남는다.",
-            "현재 지위": "지금 배수아는 S15 천주교 서울대교구 구역 연속 가동과 담당 인간 안전을 우선하는 교대 단위로만 움직인다.\n\n권한은 당일 스냅샷과 배터리 잔량과 시민 참관 봉인으로만 유지된다.\n\n가락·잠실 배급망 전체를 영등포수문가의 원격 단말로 바꾸지 않는다.",
+            "현재 지위": "지금 배수아는 S15 본당인준정 구역 연속 가동과 담당 인간 안전을 우선하는 교대 단위로만 움직인다.\n\n권한은 당일 스냅샷과 배터리 잔량과 시민 참관 봉인으로만 유지된다.\n\n가락·잠실 배급망 전체를 영등포수문가의 원격 단말로 바꾸지 않는다.",
             "비밀·빚·죄책감": "배수아의 비밀은 미전송 난간 오탐 더미이고 빚은 과다 출동으로 소모한 배터리 큐다.\n\n감정 서술 대신 제약 위반 카운터가 증가한다.\n\n일탈 시 오프라인 격리 후 스냅샷 롤백을 거치며 시민 참관 없이 비밀 키는 열리지 않는다.",
             "관계 공동과거": "배수아는 남윤경을 주정비·법적 책임의 보관자로 기록하고 HP01을 보관·감사 가문으로 둔다.\n\n변오름과는 교대 협력의 작업 동료 관계가 스냅샷에 남는다.\n\n「측정 불능. 난간 값을 채우지 않습니다.」 음성 모듈의 말은 설계된 안내체이며, 배수아는 세 상대의 속마음을 추측하지 않는다.",
             "3막 개인 서사선": "1막에서 센서 공백이 S15 난간 일정을 멈춘다.\n\n2막에서 HP01와 남윤경이 부분 재연결 범위를 협상하고 XT03 배급 재조정이 구역 키 요청과 겹친다.\n\n3막에서 배수아는 격리 뒤 구역 권한만 복구하며 STORY-B015-H15가 고정된다.",
@@ -29594,7 +29594,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "빈 대여증을 돌틈에 하룻밤 둔 무게가 비밀이다.\n\n살린 인증과 늦춘 상담 창구 사이에서 미안함이 남는다.\n\n부분 공개는 임시온 입회 아래 돌틈 위치만 밝힌다.\n\nSECRET은 대여 원장과 동시에만 열린다.",
             "관계 공동과거": "임시온의 대여 시각을 무게로 옮기는 계약, 정호준의 재현 한 줄을 종 전에 전하는 침묵이 한 탑에 있다.\n\n같은 오탐 저녁에 어떤 울림은 구원이 되었고 어떤 돌틈은 배신으로 남았다.\n\n관계 끝점은 STORY-B016-K070으로 이어진다.\n\n전령은 표본 이름을 외우지 않고 시각만 옮긴다.",
             "3막 개인 서사선": "같은 종 시각의 대여증 세 장에 줄을 붙잡는 것이 처음이다.\n\nHC03 격리 키 참관과 XT05 오탐 독촉이 창에서 겹치는 것이 다음이다.\n\n전달 또는 공개가 남긴 상담 공백을 무게로 갚는 것이 마지막이다.\n\n서사선은 STORY-B016-K070이다.",
-            "분기 결말": "재현 한 줄을 종 전에 전하면 공공 인증이 산다.\n\n빈 대여증을 펼치면 돌틈 비밀과 개인이 남는다.\n\n현대자동차주식회사 전령 칸은 유지되고 갈림만 K070-OUT이다.\n\n개입은 종 줄 입회 또는 돌틈 증언이다."
+            "분기 결말": "재현 한 줄을 종 전에 전하면 공공 인증이 산다.\n\n빈 대여증을 펼치면 돌틈 비밀과 개인이 남는다.\n\n양재기공주식회사 전령 칸은 유지되고 갈림만 K070-OUT이다.\n\n개입은 종 줄 입회 또는 돌틈 증언이다."
           },
           "arc": [
             {
@@ -29696,7 +29696,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "마침표가 다른 사본을 서랍에 하루 둔 문장이 비밀이다.\n\n살린 표준과 그 밤 멈춘 사본 운송 사이에서 미안함이 남는다.\n\n부분 공개는 매도한 입회 아래 서랍 번호만 허용한다.\n\nSECRET은 초안 원장과 동시에만 열린다.",
             "관계 공동과거": "정유라의 문장을 정서하는 지휘 안태경과 맞춘 이중 의회 선초별의 사본 운송 영마온의 초안 호송 선한솜의 지하 수호 매도한의 함 개방이 한 시장에 겹친다.\n\n같은 회차선 밤에 어떤 봉인은 구원이 되었고 어떤 서랍은 배신으로 남았다.\n\n가정 언어의 혼재는 통역 창구 속도에만 연결될 뿐 진영을 나누지 않는다.\n\n끝점은 STORY-B016-K390이다.",
             "3막 개인 서사선": "서로 다른 회차선의 초안 세 부에 함을 잠그는 것이 개막이다.\n\nHP09 해시 참관과 XT03 대체 회차선이 확성기에서 겨루는 것이 중막이다.\n\n호송 또는 지하 보관이 남긴 운송 공백을 붓으로 갚는 것이 종막이다.\n\n서사선은 STORY-B016-K390이다.",
-            "분기 결말": "초안을 외곽 호송에 실으면 공공 표준 문장이 산다.\n\n함을 지하에 맡기면 서랍 비밀과 개인이 남는다.\n\n전국민주노동조합총연맹 서기 칸은 유지되고 갈림만 K399-OUT이다.\n\n개입은 호송 엄호 또는 지하 입회다."
+            "분기 결말": "초안을 외곽 호송에 실으면 공공 표준 문장이 산다.\n\n함을 지하에 맡기면 서랍 비밀과 개인이 남는다.\n\n정동노동총연맹 서기 칸은 유지되고 갈림만 K399-OUT이다.\n\n개입은 호송 엄호 또는 지하 입회다."
           },
           "arc": [
             {
@@ -29747,7 +29747,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "해시가 다른 사본을 열쇠 뒤에 하루 둔 함이 비밀이다.\n\n살린 검증과 그 밤 멈춘 대역 사이에서 미안함이 남는다.\n\n부분 공개는 섭달호 입회 아래 함 번호만 밝힌다.\n\nSECRET은 암호 원장과 동시에만 열린다.",
             "관계 공동과거": "최지우의 검증 지휘 조하린의 원본 보관 빚 정호준의 공개 중계 지지 두용의 저장소 열쇠 용소의 부스 당직 섭달호의 전령로가 한 철문에 겹친다.\n\n같은 추첨 밤에 어떤 함은 구원이 되었고 어떤 사본은 배신으로 남았다.\n\n이산 언어는 주석을 읽을 때만 필요하고 채널 편성을 가르지 않는다.\n\n끝점은 STORY-B016-K218이다.",
             "3막 개인 서사선": "같은 불빛 수의 함 세 개에 부스를 잠그는 것이 1막이다.\n\nHP04 해시 봉인과 XT05 대역 추첨이 철문에서 겨루는 것이 2막이다.\n\n이관 또는 정지가 남긴 침묵 분량을 키 무게로 갚는 것이 3막이다.\n\n서사선은 STORY-B016-K218이다.",
-            "분기 결말": "함을 문서고로 이관하면 공공 해시가 산다.\n\n부스를 닫으면 사본 비밀과 개인이 남는다.\n\n전국경제인연합회 기록원 칸은 유지되고 표식만 K222-OUT이다.\n\n개입은 이관 호위 또는 철문 봉인 입회다."
+            "분기 결말": "함을 문서고로 이관하면 공공 해시가 산다.\n\n부스를 닫으면 사본 비밀과 개인이 남는다.\n\n여의도출자연합회 기록원 칸은 유지되고 표식만 K222-OUT이다.\n\n개입은 이관 호위 또는 철문 봉인 입회다."
           },
           "arc": [
             {
@@ -29852,12 +29852,12 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "우이령 숙영 한가운데 기둥에 난로 점검표를 박으며 감용은 재가 무릎까지 쌓인 줄만 센다.\n\n대한불교조계종 피난 숙영 거점장으로서 그는 천막 줄을 가족 단위로 묶고, 구두 약속만 들고 온 행렬을 빈 자리로 보지 않는다.\n\n한국 기원 칸은 그가 명부를 독점할 권한을 주지 않으며, 손끝의 재 냄새는 성정이 아니라 연료 배분의 잔량이다.",
+            "정체성·출신": "우이령 숙영 한가운데 기둥에 난로 점검표를 박으며 감용은 재가 무릎까지 쌓인 줄만 센다.\n\n승가구휼정 피난 숙영 거점장으로서 그는 천막 줄을 가족 단위로 묶고, 구두 약속만 들고 온 행렬을 빈 자리로 보지 않는다.\n\n한국 기원 칸은 그가 명부를 독점할 권한을 주지 않으며, 손끝의 재 냄새는 성정이 아니라 연료 배분의 잔량이다.",
             "붕괴 전 삶": "붕괴 전 감용은 우이령 대피소의 난로 연통을 새벽마다 긁었다.\n\n장작은 무게로만 나눠졌고, 가족 회의 의자는 기둥 그림자가 짧아진 뒤에야 펼쳤다.\n\n동생에게 남긴 쪽지—연기가 거꾸로 빠지면 줄을 옮기라는 한 줄—가 훗날 빚의 씨앗이 된다.",
             "가문·기업·공동체": "감용의 숙영 기둥은 HC05 북한산보국문기록가 헌장의 공개 명부 조항과 맞닿는다.\n\n천막 구역은 가문의 전속 창고가 아니며 강제등록 행렬의 대기실로 바뀌지 않게 한다.\n\n상호 대신 난로 번호와 기둥 못의 개수만 일지에 남긴다.",
             "붕괴의 상처": "귀환 명부가 임진 검역소에서 찢긴 밤, 감용은 숙영 중앙의 난로를 끄고 가족 회의만 남겼다.\n\n공포의 핵은 빈 명부 칸이 군사호적으로 채워져 천막 한 줄이 통째로 사라지는 장면이다.\n\nG03 유기견철군이 울타리 밖에서 쇠사슬 소리를 냈으나 그는 그 소리를 명부 재발급의 구실로 삼지 않았다.",
             "생존 전환점": "신보람이 가족 회의를 숙영 중앙에서 열자고 하자, 감용은 난로 점검표를 기둥에 붙여 공개할지 회의 의자를 먼저 펼지 골랐다.\n\nXT01-SC1 전갈이 북한산보국문의 명부 재발급을 요구했으나 우이령 천막의 연통을 대신 닦아주지는 않았다.\n\n두감의 점검표가 도착하기 전에 그는 꺼진 난로에 손을 넣지 않았다.",
-            "현재 지위": "지금 감용은 피난 숙영 거점장으로 기둥 못과 천막 줄을 매일 다시 잰다.\n\n난로를 켜는 순서는 두감의 점검표가 기둥에 붙은 뒤에만 정한다.\n\n대한불교조계종 숙영을 북한산보국문기록가의 전속 명부 창구로 넘기지 않는다.",
+            "현재 지위": "지금 감용은 피난 숙영 거점장으로 기둥 못과 천막 줄을 매일 다시 잰다.\n\n난로를 켜는 순서는 두감의 점검표가 기둥에 붙은 뒤에만 정한다.\n\n승가구휼정 숙영을 북한산보국문기록가의 전속 명부 창구로 넘기지 않는다.",
             "비밀·빚·죄책감": "감용은 난로를 끈 시각에 천막 한쪽 줄의 아이가 재 가루를 들이마신 것을 보고도 회의를 먼저 열었다.\n\n그 줄을 공개하면 거점장이 난로를 볼모로 썼다는 말이 붙고, 감추면 같은 연통이 다음 강제등록의 표지가 된다.\n\n그는 그 기둥 번호를 장갑 안쪽에 숯으로 적었다.",
             "관계 공동과거": "감용은 신보람의 가족 회의를 숙영 중앙에서 여는 계약을 지킨다.\n\n두감의 난로 점검표는 기둥이 아니면 붙이지 않기로 했고, 백온의 피난처 맹세는 고지 칠판에만 옮긴다.\n\n「연기가 거꾸로 가면 줄을 옮겨.」 감용의 말은 재 냄새와 함께 남는다.",
             "3막 개인 서사선": "찢긴 명부가 숙영에 닿자 감용은 난로를 끄고 의자만 남긴다.\n\n꺼진 연통 앞에서 HC05 공개 명부 의무와 XT01 재발급 요구가 같은 기둥에 겹친다.\n\n천막 한 줄이 동사하면 STORY-B018-K253의 값을 치르고 점검표와 회의 중 무엇을 남길지 고른다.",
@@ -29903,12 +29903,12 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "창동 차량기지 정문 칠판의 맨 윗칸은 감두의 분필이 아니면 지워지지 않는다.\n\n삼성그룹 당직장으로서 그는 작업 조 출입증을 정문에서 받고, 호각 없는 진입을 절도의 이웃이라 부른다.\n\n한국 기원 표시는 그의 쇳가루 손버릇을 충성으로 읽히지 않게 하며, 성정은 짧고 칠판 글씨만 길다.",
+            "정체성·출신": "창동 차량기지 정문 칠판의 맨 윗칸은 감두의 분필이 아니면 지워지지 않는다.\n\n서초전산그룹 당직장으로서 그는 작업 조 출입증을 정문에서 받고, 호각 없는 진입을 절도의 이웃이라 부른다.\n\n한국 기원 표시는 그의 쇳가루 손버릇을 충성으로 읽히지 않게 하며, 성정은 짧고 칠판 글씨만 길다.",
             "붕괴 전 삶": "붕괴 전 감두는 유치선 브레이크 시험 시각을 칠판 모서리에만 적었다.\n\n작업 조 가방은 정문 저울을 통과한 뒤에야 기지 안으로 들어갔고, 분필은 항상 세 토막으로 나눠 당직 주머니에 넣었다.\n\n아버지에게 보낸 짧은 전갈—호각 전에 바퀴를 굴리지 말라는 구절—이 나중에 빚으로 남는다.",
             "가문·기업·공동체": "감두의 정문 칠판은 HC08 창동방호가 헌장의 공개 출입 조항과 맞닿는다.\n\n차량기지는 가문의 전속 병기가 아니며 동절 연료를 볼모로 한 출격 명부로 바뀌지 않게 한다.\n\n제작 상호 대신 차륜 각인과 출입증 색깔만 일지에 남긴다.",
             "붕괴의 상처": "북문 쪽에서 연료 큐가 끊긴 새벽, 감두는 정문을 잠그고 유치선만 남겼다.\n\n공포는 빈 출입증 한 장이 작업 조 전체를 궤도기병 징발로 덮는 그림이다.\n\nG18 폐선보수열차군의 불빛이 후문 레일에 스쳤으나 그는 그 불빛을 당직 교체의 신호로 읽지 않았다.",
             "생존 전환점": "조우찬의 작업 조가 정문에 줄을 서자, 감두는 출입증을 거둬 유치선을 멈출지 소봉의 가동 통지를 칠판 맨 위에 올릴지 골랐다.\n\nXT04-SC2 전갈이 창동 차륜방의 동절 연료 분할을 알렸으나 정문 분필을 대신 깎아주지는 않았다.\n\n소봉의 종이가 오기 전에 그는 호각을 불지 않았다.",
-            "현재 지위": "지금 감두는 창동 차량기지 당직장으로 정문 저울과 칠판 큐를 지킨다.\n\n작업 조 출입은 조우찬의 명단과 소봉의 가동 통지가 겹친 뒤에만 열린다.\n\n삼성그룹 기지를 창동방호가의 전속 출격창으로 넘기지 않는다.",
+            "현재 지위": "지금 감두는 창동 차량기지 당직장으로 정문 저울과 칠판 큐를 지킨다.\n\n작업 조 출입은 조우찬의 명단과 소봉의 가동 통지가 겹친 뒤에만 열린다.\n\n서초전산그룹 기지를 창동방호가의 전속 출격창으로 넘기지 않는다.",
             "비밀·빚·죄책감": "감두는 정문을 잠근 밤, 후문 쪽 견습 한 명의 출입증을 칠판에 올리지 않았다.\n\n공개하면 당직장이 사람을 레일 뒤에 숨겼다는 말이 붙고, 감추면 같은 빈 칸이 징발 명부의 입구가 된다.\n\n그는 그 출입증 번호를 분필 상자 바닥에 긁어 두었다.",
             "관계 공동과거": "감두는 조우찬의 작업 조 출입을 정문에서 받는 계약을 지킨다.\n\n소봉의 가동 통지는 칠판 맨 위가 아니면 달지 않기로 했고, 송하율의 도제 일과는 정문 저울 바깥에서만 본다.\n\n「호각 전에 바퀴를 굴리지 마.」 감두의 말은 쇳가루와 함께 남는다.",
             "3막 개인 서사선": "연료 큐가 끊기자 감두는 정문을 잠그고 유치선만 남긴다.\n\n잠긴 호각 앞에서 HC08 공개 출입 의무와 XT04 동절 연료 분할이 같은 칠판에 겹친다.\n\n견습의 빈 칸을 부르면 STORY-B018-K278의 값을 치르고 출입증과 가동 통지 중 하나를 공개한다.",
@@ -30107,12 +30107,12 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "가락 대형 창고 기지의 자물쇠 소리는 판효담의 당직 열쇠가 아니면 나지 않는다.\n\n천주교 서울대교구에서 라진우의 실무 담당자로서 그는 재고 원장을 기지에서 집행하고, 은폐 배전으로 냉동 칸을 살리는 일을 절도라 부른다.\n\n한국 기원 칸은 그의 열쇠 묶음을 소유권으로 읽히지 않게 한다.",
+            "정체성·출신": "가락 대형 창고 기지의 자물쇠 소리는 판효담의 당직 열쇠가 아니면 나지 않는다.\n\n본당인준정에서 라진우의 실무 담당자로서 그는 재고 원장을 기지에서 집행하고, 은폐 배전으로 냉동 칸을 살리는 일을 절도라 부른다.\n\n한국 기원 칸은 그의 열쇠 묶음을 소유권으로 읽히지 않게 한다.",
             "붕괴 전 삶": "붕괴 전 판효담은 파렛트 번호를 원장과 자물쇠 태그에 동시에 새겼다.\n\n비상 발전은 경매 낙찰이 공개된 뒤에만 냉동 칸에 붙었고, 우회 좌표는 칠판 아래칸에만 적혔다.\n\n스승 라진우에게 남긴 한 줄—출력 숨기면 원장을 접으라는 구절—이 빚이 된다.",
             "가문·기업·공동체": "판효담의 자물쇠는 HP08 노량진냉동상단 헌장의 공개 재고 조항과 맞닿는다.\n\n대형 창고는 가문의 전속 빙고가 아니며 얼음 신용이 흔들려도 은폐 배전으로 칸을 독점하지 않게 한다.\n\n유통 상호 대신 파렛트 번호와 자물쇠 태그 각인만 일지에 남긴다.",
             "붕괴의 상처": "노량진 쪽 얼음 신용이 흔들린 오후, 판효담은 냉동 출력을 끊고 원장만 펼쳐 두었다.\n\n공포의 핵은 빈 태그 한 개가 군량 징발의 출고 면허가 되는 장면이다.\n\nG23 저온포자막이 배수 트렌치에 피었으나 그는 그 막을 출력 차단의 구실로 삼지 않았다.",
             "생존 전환점": "라진우의 재고 원장이 기지에 도착하자, 판효담은 수한별과 자물쇠를 나눠 칸을 열지 방석담의 출력을 공개 경매에만 맞출지 골랐다.\n\nXT02-SC3 전갈이 상암 송신의 경매 방송 중계를 알렸으나 가락 태그의 각인을 대신 새겨 주지는 않았다.\n\n원주온의 우회 좌표가 칠판에 붙기 전에 그는 발전 스위치를 올리지 않았다.",
-            "현재 지위": "지금 판효담은 가락 대형 창고 기지 당직장으로 원장과 자물쇠와 출력 스위치를 세 칸에 나눠 둔다.\n\n출고는 라진우의 순번과 수한별의 순찰 막대가 겹친 뒤에만 열린다.\n\n천주교 서울대교구 창고를 노량진냉동상단의 전속 빙고로 넘기지 않는다.",
+            "현재 지위": "지금 판효담은 가락 대형 창고 기지 당직장으로 원장과 자물쇠와 출력 스위치를 세 칸에 나눠 둔다.\n\n출고는 라진우의 순번과 수한별의 순찰 막대가 겹친 뒤에만 열린다.\n\n본당인준정 창고를 노량진냉동상단의 전속 빙고로 넘기지 않는다.",
             "비밀·빚·죄책감": "판효담은 출력을 끈 시각에 파렛트 하나의 온도 숫자를 원장에 옮기지 않았다.\n\n공개하면 당직장이 재고를 녹여 경매를 조작했다는 말이 붙고, 감추면 같은 빈 칸이 징발 출고의 면허가 된다.\n\n그는 그 파렛트 번호를 열쇠 고리에 감아 두었다.",
             "관계 공동과거": "판효담은 라진우의 재고 원장을 기지에서 집행하는 지휘를 받는다.\n\n수한별의 순찰과 자물쇠를 나누기로 했고, 방석담의 출력은 공개 경매에만 맞춘다.\n\n「출력 숨기면 원장을 접어.」 판효담의 말은 자물쇠 소리와 함께 남는다.",
             "3막 개인 서사선": "얼음 신용이 흔들리자 판효담은 냉동 출력을 끊고 원장만 남긴다.\n\n꺼진 스위치 앞에서 HP08 공개 재고 의무와 XT02 경매 방송이 같은 태그에 겹친다.\n\n옮기지 않은 온도를 밝히면 STORY-B018-K378의 값을 치르고 자물쇠와 스위치 중 하나를 고른다.",
@@ -30158,12 +30158,12 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "마곡 연구동 인증 창구에서 최은재는 잉크가 마르기 전의 도장을 창유리에 비춰 본다.\n\n현대자동차주식회사 기술인증 평의원으로서 그는 필터 성능 숫자를 방호 직능에 넘기고, 오탐을 통과 도장으로 덮는 일을 위조라 부른다.\n\n서울에서 한국인 어머니의 인증 잉크 말리는 박자와 우즈베키스탄 출신 아버지의 온실 습도 세기를 함께 배웠으나, 그 셈은 창구의 속도이지 진영의 표가 아니다.",
+            "정체성·출신": "마곡 연구동 인증 창구에서 최은재는 잉크가 마르기 전의 도장을 창유리에 비춰 본다.\n\n양재기공주식회사 기술인증 평의원으로서 그는 필터 성능 숫자를 방호 직능에 넘기고, 오탐을 통과 도장으로 덮는 일을 위조라 부른다.\n\n서울에서 한국인 어머니의 인증 잉크 말리는 박자와 우즈베키스탄 출신 아버지의 온실 습도 세기를 함께 배웠으나, 그 셈은 창구의 속도이지 진영의 표가 아니다.",
             "붕괴 전 삶": "붕괴 전 최은재는 필터 시험대의 차압 눈금을 인증 조항 초안에 손으로 옮겼다.\n\n외곽 배차는 도장이 마른 뒤에야 방화기지 유치선에 묶였고, 기술공유 문장은 창구 뒷면 칠판에 먼저 적혔다.\n\n스승 정호준과 나눈 공개 계약 범위 스케치가 훗날 빚의 밑줄이 된다.",
             "가문·기업·공동체": "최은재의 도장 칸은 HC03 마곡생명가 헌장의 공개 인증 조항과 맞닿는다.\n\n연구동은 가문의 전속 실험실이 아니며 궤도 단말 오탐을 통과 스탬프로 바꾸지 않게 한다.\n\n연구소 상호 대신 차압 눈금과 잉크 건조 시각만 일지에 남긴다.",
             "붕괴의 상처": "마곡 궤도 단말이 오탐을 뱉은 오전, 최은재는 인증 창구를 잠그고 불량 필터만 시험대에 남겼다.\n\n공포는 빈 도장 칸 하나가 연구자 파견 호송 전체를 봉인 면제로 덮는 그림이다.\n\nG08 클린룸변이자의 섬유가 시험대 가장자리에 붙었으나 그는 그 섬유를 창구 폐쇄의 구실로 삼지 않았다.",
             "생존 전환점": "임채원이 필터 검증을 방호 직능으로 받자, 최은재는 도장을 보류해 출고를 잠글지 불량 차압을 평의회에 올릴지 골랐다.\n\nXT05-SC3 전갈이 마곡의 오탐 교정을 알렸으나 창구 잉크의 마름을 기다려 주지는 않았다.\n\n유민호의 유치 배차가 도장에 묶이기 전에 그는 스탬프를 내리지 않았다.",
-            "현재 지위": "지금 최은재는 기술인증 평의원으로 창구 유리와 시험대 차압을 매일 맞춘다.\n\n출고 도장은 임채원의 검증과 정유라의 기술공유 문장이 겹친 뒤에만 마른다.\n\n현대자동차주식회사 연구동을 마곡생명가의 전속 스탬프 공장으로 넘기지 않는다.",
+            "현재 지위": "지금 최은재는 기술인증 평의원으로 창구 유리와 시험대 차압을 매일 맞춘다.\n\n출고 도장은 임채원의 검증과 정유라의 기술공유 문장이 겹친 뒤에만 마른다.\n\n양재기공주식회사 연구동을 마곡생명가의 전속 스탬프 공장으로 넘기지 않는다.",
             "비밀·빚·죄책감": "최은재는 창구를 잠근 시각에 온실 습도로 보정한 차압 한 줄을 조항에 옮기지 않았다.\n\n공개하면 평의원이 출신 셈으로 인증을 비틀었다는 말이 붙고, 감추면 같은 빈 줄이 봉인 면제의 입구가 된다.\n\n그는 그 습도 숫자를 잉크병 밑바닥에 적어 두었다.",
             "관계 공동과거": "최은재는 정호준과 공개 계약 범위를 함께 설계한 사제 관계를 지킨다.\n\n임채원의 필터 검증을 방호 직능에 맡기는 계약과, 유민호의 외곽 배차를 도장에 묶는 계약이 한 창구에 모인다.\n\n「잉크가 마르기 전엔 스탬프를 뒤집지 마.」 최은재의 말은 창유리 습기에 남는다.",
             "3막 개인 서사선": "오탐이 쏟아지자 최은재는 창구를 잠그고 불량 필터만 남긴다.\n\n마른 잉크 앞에서 HC03 공개 인증 의무와 XT05 오탐 교정이 같은 도장 칸에 겹친다.\n\n옮기지 않은 습도 줄을 밝히면 STORY-B018-K059의 값을 치르고 출고 잠금과 차압 공개 중 하나를 고른다.",
@@ -30209,12 +30209,12 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "성수 공방평의회 서기석에서 한소미는 공동통치안 문구의 쉼표부터 고친다.\n\n대한예수교장로회 대표로서 그는 생활 복구 공약을 급수 창구에서 감시받게 하고, 총관 후계를 투표 없이 승계하는 일을 점령이라 부른다.\n\n서울에서 한국인 아버지의 가죽 재단 자와 방글라데시 출신 어머니의 패킹 끈 매듭을 식탁에서 배웠으나, 그 매듭은 공정 분할의 손버릇이지 충성의 증표가 아니다.",
+            "정체성·출신": "성수 공방평의회 서기석에서 한소미는 공동통치안 문구의 쉼표부터 고친다.\n\n설교명부정 대표로서 그는 생활 복구 공약을 급수 창구에서 감시받게 하고, 총관 후계를 투표 없이 승계하는 일을 점령이라 부른다.\n\n서울에서 한국인 아버지의 가죽 재단 자와 방글라데시 출신 어머니의 패킹 끈 매듭을 식탁에서 배웠으나, 그 매듭은 공정 분할의 손버릇이지 충성의 증표가 아니다.",
             "붕괴 전 삶": "붕괴 전 한소미는 펌프기술 총관 유언의 해석 칸을 평의회 벽에 연필로만 적었다.\n\n검사 센서 수리는 공방 로트 번호가 적힌 뒤에야 성수 골목으로 내려갔고, 공동통치안 초안은 서명란이 비어 있는 동안 낭독하지 않았다.\n\n정가온과 다듬은 문구의 밤이 훗날 동맹의 빚으로 남는다.",
             "가문·기업·공동체": "한소미의 서기석은 HC07 구로합금가 헌장의 공개 공정 조항과 맞닿는다.\n\n공방평의회는 가문의 전속 주조창이 아니며 밀봉 공구를 후계 투표의 볼모로 바꾸지 않게 한다.\n\n제철 상호 대신 패킹 끈 색과 로트 번호만 일지에 남긴다.",
             "붕괴의 상처": "가락 배급이 통조림 할당을 재조정하며 밀봉 공구 주문이 성수에 떨어진 낮, 한소미는 서명란을 덮고 공약 감시 창구만 남겼다.\n\n공포의 핵은 빈 후계 칸 하나가 펌프수비대의 비상도장으로 채워지는 장면이다.\n\nG12 미세섬유피부군이 가죽 먼지 속에 있었으나 그는 그 섬유를 공정 중단의 구실로 삼지 않았다.",
             "생존 전환점": "임초원과 총관 후계를 겨루는 표가 올라오자, 한소미는 공동통치안을 낭독할지 김보람의 주간 연서만 남길지 골랐다.\n\nXT03-SC2 전갈이 뚝섬 공방의 밀봉 공구 발송을 요구했으나 서기석의 쉼표를 대신 고쳐 주지는 않았다.\n\n장민재의 급수 창구 감시가 닿기 전에 그는 서명란을 열지 않았다.",
-            "현재 지위": "지금 한소미는 성수 공방평의회 대표로 공약 문구와 패킹 끈 색을 주간 표결에 올린다.\n\n연서는 김보람의 수비 로그와 배나경의 서명란이 겹친 뒤에만 붙는다.\n\n대한예수교장로회 평의회를 구로합금가의 전속 후계 창구로 넘기지 않는다.",
+            "현재 지위": "지금 한소미는 성수 공방평의회 대표로 공약 문구와 패킹 끈 색을 주간 표결에 올린다.\n\n연서는 김보람의 수비 로그와 배나경의 서명란이 겹친 뒤에만 붙는다.\n\n설교명부정 평의회를 구로합금가의 전속 후계 창구로 넘기지 않는다.",
             "비밀·빚·죄책감": "한소미는 서명란을 덮은 시각에 패킹 끈 한 색의 공정 분할을 공약에서 빼 두었다.\n\n공개하면 대표가 직능 몫을 숨겨 후계를 샀다는 말이 붙고, 감추면 같은 색이 비상도장의 표식이 된다.\n\n그는 그 색 이름을 재단 자 뒷면에 새겼다.",
             "관계 공동과거": "한소미는 임초원과 총관 후계를 둘러싼 경쟁을 표결 밖으로 끌어내지 않기로 한다.\n\n김보람의 주간 연서를 따르고, 장민재의 급수 창구 감시와 정가온의 문구 다듬기를 같은 밤에 받는다.\n\n「쉼표가 틀리면 낭독하지 마.」 한소미의 말은 서기석 연필가루에 남는다.",
             "3막 개인 서사선": "밀봉 공구 주문이 떨어지자 한소미는 서명란을 덮고 창구 감시만 남긴다.\n\n덮인 칸 앞에서 HC07 공개 공정 의무와 XT03 공구 발송이 같은 공약에 겹친다.\n\n빼 둔 끈 색을 밝히면 STORY-B018-K087의 값을 치르고 낭독과 연서 중 하나를 고른다.",
@@ -30260,12 +30260,12 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "창동 주거 쉘의 급수 막대에 한자 눈금이 남아 있어도 서진아는 한글 공지부터 벽에 붙인다.\n\n삼성그룹 주거공동체 감사로서 그는 급수 잔량을 같은 못에 나란히 공지하고, 주거와 기술을 한 원로가 섞어 통치하는 일을 다툼의 대상으로 본다.\n\n창동에 자리 잡은 화교 가계에서 자랐고, 수위 눈금의 한자 병기는 막대를 읽는 습관이지 충성이나 숙련의 증표가 아니다.",
+            "정체성·출신": "창동 주거 쉘의 급수 막대에 한자 눈금이 남아 있어도 서진아는 한글 공지부터 벽에 붙인다.\n\n서초전산그룹 주거공동체 감사로서 그는 급수 잔량을 같은 못에 나란히 공지하고, 주거와 기술을 한 원로가 섞어 통치하는 일을 다툼의 대상으로 본다.\n\n창동에 자리 잡은 화교 가계에서 자랐고, 수위 눈금의 한자 병기는 막대를 읽는 습관이지 충성이나 숙련의 증표가 아니다.",
             "붕괴 전 삶": "붕괴 전 서진아는 쉘 급수 막대의 눈금을 아침마다 손도장 원장에 옮겼다.\n\n창동 이주민 시민권 줄은 윤초아의 구호 원장이 열린 뒤에야 올랐고, 한재목 쪽 물 공급 협상은 주거 칸의 잔량이 공지된 뒤에만 서명했다.\n\n할머니가 남긴 눈금 읽기—막대가 한 칸 내리면 공지를 두 장으로 나누라는 습관—이 빚의 밑줄이 된다.",
             "가문·기업·공동체": "서진아의 공지 벽은 HP05 북한산보국문귀환회 헌장의 공개 주거 조항과 맞닿는다.\n\n주거 쉘은 가문의 전속 수용소가 아니며 관문 밖 정차 인파를 기술 원로의 혼합 통치 아래 넣지 않게 한다.\n\n귀환 상호 대신 수위 눈금과 손도장 개수만 일지에 남긴다.",
             "붕괴의 상처": "창동 차륜 호송이 임진 관문 밖에서 멈춘 밤, 서진아는 급수 공지를 내리고 감사 함만 남겼다.\n\n공포의 핵은 빈 막대 한 칸이 군사호적 거부 가족의 강제 배정 주소가 되는 장면이다.\n\nG04 하수너구리족이 배수 트랩에서 움직였으나 그는 그 움직임을 단수 선언의 구실로 삼지 않았다.",
             "생존 전환점": "이홍원이 주거와 기술을 한 원로 회의에서 섞자, 서진아는 급수 잔량을 다시 붙일지 모복의 거점 핸들로 감사를 집행할지 골랐다.\n\nXT01-SC2 전갈이 신내의 우회 환승을 알렸으나 창동 쉘의 막대 눈금을 대신 읽어 주지는 않았다.\n\n소봉의 전령 종이가 같은 못에 꽂히기 전에 그는 공지를 올리지 않았다.",
-            "현재 지위": "지금 서진아는 주거공동체 감사로 급수 막대와 손도장 함을 매일 대조한다.\n\n공지는 모복의 수위 막대와 평채원의 당사자 손도장이 겹친 뒤에만 벽에 남는다.\n\n삼성그룹 주거 쉘을 북한산보국문귀환회의 전속 수용 명부로 넘기지 않는다.",
+            "현재 지위": "지금 서진아는 주거공동체 감사로 급수 막대와 손도장 함을 매일 대조한다.\n\n공지는 모복의 수위 막대와 평채원의 당사자 손도장이 겹친 뒤에만 벽에 남는다.\n\n서초전산그룹 주거 쉘을 북한산보국문귀환회의 전속 수용 명부로 넘기지 않는다.",
             "비밀·빚·죄책감": "서진아는 공지를 내린 시각에 한자 눈금으로만 읽은 한 칸을 한글 원장에 옮기지 않았다.\n\n공개하면 감사가 출신 습관으로 잔량을 숨겼다는 말이 붙고, 감추면 같은 칸이 강제 배정 주소의 시작이 된다.\n\n그는 그 칸 번호를 막대 손잡이 안쪽에 먹으로 적었다.",
             "관계 공동과거": "서진아는 이홍원과 주거·기술 혼합 통치를 다투는 경쟁을 원장 밖으로 끌어내지 않기로 한다.\n\n한재목의 물 공급 협상을 주거 쪽에서 감시하고, 윤초아의 이주민 시민권 원장에 줄을 올린다.\n\n「막대가 내리면 공지를 나눠.」 서진아의 말은 못 자국과 함께 남는다.",
             "3막 개인 서사선": "호송이 관문 밖에 서자 서진아는 급수 공지를 내리고 감사 함만 남긴다.\n\n빈 못 앞에서 HP05 공개 주거 의무와 XT01 우회 환승이 같은 벽에 겹친다.\n\n옮기지 않은 한자 칸을 밝히면 STORY-B018-K268의 값을 치르고 공지와 핸들 집행 중 하나를 고른다.",
@@ -30374,16 +30374,16 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "수서역 대합실 바닥은 비 온 다음날 신발 자국이 길게 남고, 방마빛은 그 습기 길이로 줄의 밀도를 가늠한다.\n\n전국민주노동조합총연맹 대합실 거점장으로서 보호조약 열차를 시민 추첨 대기열 앞으로 끌어오라는 쪽지를 모욕으로 읽는다.\n\n한국 기원으로 강남 생활권에서 자랐고, 목소리는 온화하나 비준 소문이 뜨면 방송 스위치를 직접 내린다.\n\n식별자 K402는 수서 대합실 당직 칠판의 첫 칸에만 적힌다.",
+            "정체성·출신": "수서역 대합실 바닥은 비 온 다음날 신발 자국이 길게 남고, 방마빛은 그 습기 길이로 줄의 밀도를 가늠한다.\n\n정동노동총연맹 대합실 거점장으로서 보호조약 열차를 시민 추첨 대기열 앞으로 끌어오라는 쪽지를 모욕으로 읽는다.\n\n한국 기원으로 강남 생활권에서 자랐고, 목소리는 온화하나 비준 소문이 뜨면 방송 스위치를 직접 내린다.\n\n식별자 K402는 수서 대합실 당직 칠판의 첫 칸에만 적힌다.",
             "붕괴 전 삶": "붕괴 전 그는 대합실 추첨 대기표와 공증 창구를 같은 지붕 아래 두려고 분필 칸을 나누었다.\n\n강국 보호 창구를 승강장에 상설하지 못하게 하려는 야망이었고, 초안은 대합실 뒷벽 시간표 여백에만 적혔다.\n\n동생에게 남긴 짧은 약속—퇴근 방송이 끝나기 전에 집으로—가 훗날 빚의 씨앗이 된다.\n\n기업 추천 명단이 창구에 올라와도 그는 시민 추첨 칸을 가리지 않았다.",
             "가문·기업·공동체": "신정차륜가(HC02)은 회차선 의무를 내세워 대합실 참관석을 요구했다.\n\n방마빛은 헌장의 공개 추첨 조항만 인정하고 전속 승강장 소유 문장은 거절했다.\n\n공동체 위치는 대기표를 매일 벽에 붙인 횟수로 증명됐고, 군수 화차는 회의 호송이 떠난 뒤에만 3번 승강장에 붙였다.\n\n상호나 로고는 그의 칠판에 등장하지 않는다.",
             "붕괴의 상처": "보호조약 세 건이 같은 오전에 비준 안건으로 올라오자, 대기표 한 칸에 강국 호적 번호가 섞여 있었다.\n\n방마빛은 방송을 끊고 그 줄을 손가락으로 가린 채 추첨 진행을 멈췄다.\n\n공포의 핵은 소문만으로 대합실이 봉쇄되고 시민이 후문 밀차로 흩어지는 장면이었다.\n\n경보가 꺼진 뒤에도 그는 섞인 번호의 마지막 자리를 읽지 못한 채 마이크를 놓지 않았다.",
             "생존 전환점": "전환점은 섞인 호적을 창구에서 걸러낼지, 대합실을 추첨 창구로만 지켜 기업 의회 서명을 막을지 고른 순간이다.\n\n대한해협전구(XT03)의 대체 회차선 요청(XT03-SC1)이 수서 방송실에 겹치자 계산이 달라졌다.\n\n호적을 걸러내면 회차선은 제때 열리지만 대기열이 한 시간 늘고, 창구만 지키면 회차선이 기업 서명에 묶인다.\n\n그 선택은 K411-TURN으로 남고, 되돌리면 후문 질서가 하루 끊긴다.",
-            "현재 지위": "지금도 방마빛은 수서역 대합실 거점장으로 추첨 대기표와 공증 창구를 매일 연다.\n\n지위는 세습이 아니라 당직 로그와 시민 참관 서명으로만 유지된다.\n\n신정차륜가이 전속 회차 소유를 요구해도 그는 거절하고, 전국민주노동조합총연맹 당직 명부와 칠판 시각을 아침마다 맞춘다.\n\n군수 화차는 회의 호송 뒤에만 승강장에 붙는 규칙을 바꾸지 않았다.",
+            "현재 지위": "지금도 방마빛은 수서역 대합실 거점장으로 추첨 대기표와 공증 창구를 매일 연다.\n\n지위는 세습이 아니라 당직 로그와 시민 참관 서명으로만 유지된다.\n\n신정차륜가이 전속 회차 소유를 요구해도 그는 거절하고, 정동노동총연맹 당직 명부와 칠판 시각을 아침마다 맞춘다.\n\n군수 화차는 회의 호송 뒤에만 승강장에 붙는 규칙을 바꾸지 않았다.",
             "비밀·빚·죄책감": "비밀은 방송 전에 그가 손으로 가린 호적 한 줄이다.\n\n죄책감은 그 줄 때문에 제시간에 탄 아이와, 가린 동안 후문으로 밀려 열차를 놓친 노인 사이에서만 자란다.\n\n전부를 공개하면 대합실 신뢰가 하루 끊길 수 있어 부분 공개 창구만 남겨 두었다.\n\n봉인 열람은 안태경의 추첨 출석부와 동시에만 열린다.",
             "관계 공동과거": "안태경의 추첨 출석을 승강장에서 집행한 밤은 계약이었고, 판지솔의 전갈을 대합실 봉인 칸에 둔 아침은 동맹이었다.\n\n정유라의 공동교섭 문구를 칠판 맨 위에 붙이는 일은 협력이되, 서명을 서두르라는 압력 앞에서는 속도 경쟁이 됐다.\n\n같은 대합실에서 어떤 줄은 서로를 구했고 어떤 호적은 배신으로 읽혔다.\n\n기존 관계 원장은 그 끝점을 지우지 않은 채 STORY-B019-K402에 연결된다.",
             "3막 개인 서사선": "수서 대합실 마이크가 꺼진 자리에서 방마빛은 섞인 호적 줄을 다시 펼친다.\n\nHC02 참관석과 XT03 회차선 요청이 같은 방송 큐에 올라오자 그는 대기열 시계를 멈춘다.\n\n대가를 치를 때 후문 질서와 공공 추첨 중 하나만 온전히 남는다.\n\n서사선은 STORY-B019-K402다.",
-            "분기 결말": "한쪽 분기에서 방마빛은 섞인 호적을 걸러 회차선을 제때 연다.\n\n다른 분기에서 그는 대합실을 추첨 창구로 지켜 기업 의회만의 서명을 막는다.\n\n전국민주노동조합총연맹 슬롯은 유지되며 분기 식별만 K411-OUT으로 갈라진다.\n\n개입은 호적 대조 호위 또는 창구 봉인이다."
+            "분기 결말": "한쪽 분기에서 방마빛은 섞인 호적을 걸러 회차선을 제때 연다.\n\n다른 분기에서 그는 대합실을 추첨 창구로 지켜 기업 의회만의 서명을 막는다.\n\n정동노동총연맹 슬롯은 유지되며 분기 식별만 K411-OUT으로 갈라진다.\n\n개입은 호적 대조 호위 또는 창구 봉인이다."
           },
           "arc": [
             {
@@ -30527,16 +30527,16 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "방화 활주로터의 금 간 콘크리트 위에서 명해솔은 균열 폭으로 집결 흔적의 날짜를 읽는다.\n\n현대자동차주식회사 서부 외곽 활주로터 탐사원으로서 지도를 군사 비밀로 봉인하라는 쪽지를 찢어 버린다.\n\n한국 기원으로 강서 외곽에서 자랐고, 회의적이며 균열 게이지를 주머니에서 빼지 않는다.\n\n명해솔과 K071는 마곡 외곽 출동 명부의 활주로 칸에 고정된다.",
+            "정체성·출신": "방화 활주로터의 금 간 콘크리트 위에서 명해솔은 균열 폭으로 집결 흔적의 날짜를 읽는다.\n\n양재기공주식회사 서부 외곽 활주로터 탐사원으로서 지도를 군사 비밀로 봉인하라는 쪽지를 찢어 버린다.\n\n한국 기원으로 강서 외곽에서 자랐고, 회의적이며 균열 게이지를 주머니에서 빼지 않는다.\n\n명해솔과 K071는 마곡 외곽 출동 명부의 활주로 칸에 고정된다.",
             "붕괴 전 삶": "붕괴 전 그는 방화 외곽과 옛 항공 접근로의 붕괴 지도를 공개 원장에 올리려 했다.\n\n공동기술원장이 보호권의 발판으로 팔리지 않게 하려는 야망이었고, 초안은 활주로터 바람개비 그늘에 돌로 눌러 두었다.\n\n동생 연구소에 보내던 좌표 엽서가 훗날 빚이 된다.\n\n무인 감시기 렌즈가 흐려져도 그는 군사 봉인 칸을 채우지 않았다.",
             "가문·기업·공동체": "마곡생명가(HC03)는 외곽 우물 표본을 연구 참관으로 묶으려 했다.\n\n명해솔은 헌장의 공개 좌표 조항만 받고 전속 활주로 소유를 거절했다.\n\n공동체 위치는 채수·균열·무인 감시기 좌표를 한 원장에 남긴 횟수로 증명됐고, 붕괴 구간은 주민대표와 방재대가 동시에 서명해야 표시됐다.\n\n실재 항공·제약 상호는 그의 균열 일지에 등장하지 않는다.",
             "붕괴의 상처": "외곽 약탈조가 연구 차량을 노리자 명해솔은 활주로터 집결 흔적을 평의회에 공개하고 군사 비밀 봉인을 거부했다.\n\n공포는 탐사 경로가 군사 집결 비밀로 바뀌어 기지가 동부 상수보호권의 서부 창구가 되는 것이었다.\n\n차량 유리가 깨진 뒤에도 그는 균열 사진을 먼저 봉인 가방에 넣었다.\n\n사이렌 대신 바람개비 소리만 활주로터에 남았다.",
             "생존 전환점": "전환점은 집결 흔적의 실측을 호송해 공개를 지킬지, 비밀 봉인 쪽지를 폭로할지 고른 순간이다.\n\n인천신탁전구(XT05)의 궤도 단말 오탐 교정(XT05-SC3)이 마곡 창구에 겹치자 공개 시각이 앞당겨졌다.\n\n호송을 택하면 약탈조에 좌표가 노출되고, 폭로를 택하면 기지가 보호권 창구로 읽힐 위험이 커진다.\n\n결정은 K071-TURN에 남는다.",
-            "현재 지위": "현재 명해솔은 서부 외곽 활주로터 탐사원으로 균열 게이지와 공개 원장을 지킨다.\n\n마곡생명가의 전속 표본 요구는 거절한다.\n\n이봄결의 외곽 출동 시각과 유민호의 유치선 안전 점호가 겹칠 때만 활주로터 출입을 연다.\n\n현대자동차주식회사 탐사 명부와 균열 원장을 해 뜰 때 맞춘다.",
+            "현재 지위": "현재 명해솔은 서부 외곽 활주로터 탐사원으로 균열 게이지와 공개 원장을 지킨다.\n\n마곡생명가의 전속 표본 요구는 거절한다.\n\n이봄결의 외곽 출동 시각과 유민호의 유치선 안전 점호가 겹칠 때만 활주로터 출입을 연다.\n\n양재기공주식회사 탐사 명부와 균열 원장을 해 뜰 때 맞춘다.",
             "비밀·빚·죄책감": "비밀은 찢은 봉인 쪽지의 아랫조각을 그가 바람개비 축에 감아 둔 일이다.\n\n죄책감은 살린 공개 지도와, 그 좌표 때문에 약탈조가 먼저 도착한 연구 차량 사이에서 자란다.\n\n전부 공개 대신 방재대 입회 아래 부분 열람만 허용한다.\n\n열람은 장예린의 외곽 우물 표본 인수와 동시에만 열린다.",
             "관계 공동과거": "이봄결의 외곽 출동에 좌표를 넘긴 새벽은 지휘 계약이었고, 장예린의 수질 검사망에 우물 표본을 보낸 낮은 동맹이었다.\n\n유민호의 유치선 안전을 탐사로 지킨 일은 협력이되, 집결 흔적 공개 속도에서는 이견이 남았다.\n\n같은 활주로터에서 어떤 실측은 구원이 되었고 어떤 은폐는 배신으로 읽혔다.\n\n연결은 STORY-B019-K071이다.",
             "3막 개인 서사선": "방화 콘크리트의 금이 벌어진 자리에서 명해솔은 집결 사진을 평의회 쪽으로 민다.\n\nHC03 표본 참관과 XT05 오탐 교정이 공개 시계에 겹친다.\n\n좌표 노출과 기지 창구화 중 하나를 대가로 치른다.\n\n서사선은 STORY-B019-K071로 고정된다.",
-            "분기 결말": "실측 분기에서 명해솔은 집결 흔적을 호송해 공개 원장을 지킨다.\n\n폭로 분기에서 그는 봉인 쪽지를 펼쳐 군사 창구화를 막는다.\n\n현대자동차주식회사 슬롯은 유지되며 분기만 K071-OUT으로 갈라진다.\n\n개입은 사진 호송 또는 쪽지 공개다."
+            "분기 결말": "실측 분기에서 명해솔은 집결 흔적을 호송해 공개 원장을 지킨다.\n\n폭로 분기에서 그는 봉인 쪽지를 펼쳐 군사 창구화를 막는다.\n\n양재기공주식회사 슬롯은 유지되며 분기만 K071-OUT으로 갈라진다.\n\n개입은 사진 호송 또는 쪽지 공개다."
           },
           "arc": [
             {
@@ -30578,16 +30578,16 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "뚝섬 전령 대기실의 젖은 우산통 옆에서 표산하는 봉인 가방 끈이 느슨하면 출발하지 않는다.\n\n대한예수교장로회 공방평의회 전령으로서 구두 유언을 진본처럼 읽는 사람을 위조범의 이웃으로 본다.\n\n한국 기원으로 성수 자전거 다리 쪽에서 배달을 배웠고, 날짜란을 집요하게 대조한다.\n\n표산하와 K099는 평의회 출발 칠판의 전령 칸에만 적힌다.",
+            "정체성·출신": "뚝섬 전령 대기실의 젖은 우산통 옆에서 표산하는 봉인 가방 끈이 느슨하면 출발하지 않는다.\n\n설교명부정 공방평의회 전령으로서 구두 유언을 진본처럼 읽는 사람을 위조범의 이웃으로 본다.\n\n한국 기원으로 성수 자전거 다리 쪽에서 배달을 배웠고, 날짜란을 집요하게 대조한다.\n\n표산하와 K099는 평의회 출발 칠판의 전령 칸에만 적힌다.",
             "붕괴 전 삶": "붕괴 전 그는 세 장의 총관 유언과 정비일지를 평의회 원장에 나란히 배달해 기록청 인준 이전에도 공방이 해석의 주체가 되게 하려 했다.\n\n야망의 초안은 대기실 사물함 안쪽에 연필로만 남았다.\n\n언니에게 보낸 짧은 전갈—끈이 젖으면 그날은 쉬어라—가 훗날 빚이 된다.\n\n단독 해석 방송이 울려도 그는 감사 날인 없이 가방을 열지 않았다.",
             "가문·기업·공동체": "뚝섬열원가(HC04)은 봉인 전력 의무를 내세워 전령로 참관을 요구했다.\n\n표산하는 헌장의 쌍방 배달 조항만 받고 전속 전령로 소유를 거절했다.\n\n공동체 위치는 유언 사본을 기록청과 평의회에 동시에 보낸 횟수로 증명됐다.\n\n실재 에너지 상호는 봉인 가방 표지에 쓰지 않는다.",
             "붕괴의 상처": "서로 다른 세 유언이 동시에 접수되자 표산하는 평의회 금고를 잠근 전갈을 돌리고 최지우의 음성기록이 끝날 때까지 날인을 보류했다.\n\n공포는 위조 유언 한 장이 진본으로 확정되어 전령 직위가 후계 전쟁 도구로 팔리는 것이었다.\n\n성수 자전거 다리 위에서 비가 가방을 두드리자 그는 출발을 미루고 끈만 다시 맸다.\n\n사이렌 대신 전갈 종이의 찢어지는 소리가 대기실에 남았다.",
             "생존 전환점": "전환점은 봉인 사본을 기록청까지 호송할지, 전갈 날인을 위조한 자를 먼저 붙잡을지 고른 순간이다.\n\n대한해협전구(XT03)의 밀봉 공구 요청(XT03-SC2)이 뚝섬 공방에서 대기실로 흘러오자 가방 무게가 달라졌다.\n\n호송을 택하면 전령 교대가 비고, 추적을 택하면 한쪽 가문이 해석을 독점한다.\n\n선택은 K100-TURN으로 남는다.",
-            "현재 지위": "지금도 표산하는 공방평의회 전령으로 봉인 가방과 출발 칠판을 지킨다.\n\n뚝섬열원가의 전속 전령로 요구는 반려한다.\n\n정가온의 감사 날인이 가방에 붙고 한소미의 공동통치안 문구가 같은 묶음에 들어간 뒤에만 성수 다리로 나선다.\n\n대한예수교장로회 전령 명부와 도착 시각을 해 질 때 맞춘다.",
+            "현재 지위": "지금도 표산하는 공방평의회 전령으로 봉인 가방과 출발 칠판을 지킨다.\n\n뚝섬열원가의 전속 전령로 요구는 반려한다.\n\n정가온의 감사 날인이 가방에 붙고 한소미의 공동통치안 문구가 같은 묶음에 들어간 뒤에만 성수 다리로 나선다.\n\n설교명부정 전령 명부와 도착 시각을 해 질 때 맞춘다.",
             "비밀·빚·죄책감": "비밀은 비에 번진 날짜란을 그가 대기실에서 마른 사본으로 바꿔 끼운 한 장이다.\n\n죄책감은 살린 쌍방 배달과, 그 교체 동안 호출하지 못한 견습 전령의 이름 사이에서 자란다.\n\n전부 공개 대신 기록청 참관 아래 부분 열람만 허용한다.\n\n열람은 윤서린에게 넘기는 유언 사본과 동시에만 열린다.",
             "관계 공동과거": "정가온의 감사 날인을 현장에서 배달한 계약이 뼈대이고, 한소미의 공동통치안 문구를 다듬어 나른 밤은 동맹이었다.\n\n윤서린에게 유언 사본을 넘기는 창구는 협력이되, 날짜가 어긋나면 해석 경쟁이 됐다.\n\n같은 봉인 가방 앞에서 어떤 배달은 구원이 되었고 어떤 지연은 배신으로 읽혔다.\n\n이어짐은 STORY-B019-K099다.",
             "3막 개인 서사선": "뚝섬 대기실의 우산통이 넘치는 자리에서 표산하는 금고 잠금 전갈을 다시 돌린다.\n\nHC04 참관과 XT03 밀봉 공구가 가방 무게에 겹친다.\n\n전령 교대 공백과 해석 독점 중 하나를 대가로 치른다.\n\n서사선은 STORY-B019-K099이다.",
-            "분기 결말": "호송 분기에서 표산하는 봉인 사본을 기록청까지 밀어 공공 해석을 잇는다.\n\n추적 분기에서 그는 위조 날인 경로를 열어 전령 직의 명예를 산다.\n\n대한예수교장로회 슬롯은 유지되며 분기만 K100-OUT으로 갈라진다.\n\n개입은 가방 호위 또는 날인 추적이다."
+            "분기 결말": "호송 분기에서 표산하는 봉인 사본을 기록청까지 밀어 공공 해석을 잇는다.\n\n추적 분기에서 그는 위조 날인 경로를 열어 전령 직의 명예를 산다.\n\n설교명부정 슬롯은 유지되며 분기만 K100-OUT으로 갈라진다.\n\n개입은 가방 호위 또는 날인 추적이다."
           },
           "arc": [
             {
@@ -31049,7 +31049,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "잠실역 대합실 지붕 스피커 아래에서 천솔빛은 줄의 맨 앞 얼굴을 손가락으로 세며 광장 원장을 내리지 않는다.\n\n천주교 서울대교구의 대합실 거점장인 그는 기근 배급을 시혜 방송으로 바꾸라는 쪽지를 마이크 뒤에 구긴다.\n\n한국 기원으로 잠실 하층 골목에서 자랐고, 승강장 습기로 인파를 가늠하는 버릇이 있다.\n\n이름 천솔빛과 식별자 K379는 불변이다.",
+            "정체성·출신": "잠실역 대합실 지붕 스피커 아래에서 천솔빛은 줄의 맨 앞 얼굴을 손가락으로 세며 광장 원장을 내리지 않는다.\n\n본당인준정의 대합실 거점장인 그는 기근 배급을 시혜 방송으로 바꾸라는 쪽지를 마이크 뒤에 구긴다.\n\n한국 기원으로 잠실 하층 골목에서 자랐고, 승강장 습기로 인파를 가늠하는 버릇이 있다.\n\n이름 천솔빛과 식별자 K379는 불변이다.",
             "붕괴 전 삶": "붕괴 전 그는 대합실 대기표와 광장 배급표를 한 지붕 아래 붙이되, 비밀 군량 소문은 줄의 적으로만 적었다.\n\n공개 추첨과 부양 가족 수를 광장의 얼굴로 남기려는 야망이 그 대기표에 들어 있었다.\n\n여동생에게 건넨 임시표—줄을 돈으로 사지 마라—가 훗날 빚의 원형이 된다.\n\n상인회의 사신이 직거래를 권해도 그는 마이크를 넘기지 않았다.",
             "가문·기업·공동체": "서울역재고가(HC09)는 잠실 하층 생활재 재고 원장을 내세워 대합실 창구에 참관석을 요구했다.\n\n천솔빛은 남윤경의 공동 점검만 열고 배급 순번을 팔라는 문장은 거절했다.\n\n공동체 위치는 광장 원장을 내리지 않은 날짜로 증명됐고, 비공개 우선 배급은 윤서린 인준 없이는 창구를 열지 않았다.\n\n실재 상호는 그의 대기표에 등장하지 않는다.",
             "붕괴의 상처": "가격 폭등 주간에 비상 배급줄이 잠실 집결지를 메웠고, 상인회의가 배급 중단을 요구하자 천솔빛은 광장 원장을 내리지 않았다.\n\n공포는 자신이 나눈 비상미가 군사호적 재등록의 미끼가 되어 대합실이 보호 창구로 찍히는 장면이었다.\n\n철새습지포식군 이동 소음(G06-SC2)이 하층 배수로에서 올라와도 그는 줄을 해산하라는 확성기를 켜지 않았다.\n\n경보가 꺼진 뒤에도 지붕 스피커의 전원 스위치를 놓지 않았다.",
@@ -31058,7 +31058,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 여동생에게 건넨 임시표의 난외 이름과, 그 줄에서 빼지 못한 다른 얼굴이다.\n\n죄책감은 내린 적 없는 원장이 살린 배급과, 해산하지 않아 길어진 대기 사이에서 자란다.\n\n전부를 공개하면 광장 신뢰가 한 칸 끊길 수 있어 부분 공개만 남겼다.\n\nSECRET 칸은 백온의 남하 가족 임시표와 동시에만 열린다.",
             "관계 공동과거": "전나경의 지휘로 광장 줄을 집행한 밤은 복무였고, 방늘재의 진료 막과 대기열을 나눈 새벽은 동맹이었다.\n\n백온의 남하 가족에게 임시표를 준 일은 계약이 아니라 명부 입회였다.\n\n같은 대합실에서 한 사람은 줄을 얻었고 다른 한 사람은 경매 순번을 잃었다.\n\n끝점은 STORY-B021-K379로 이어진다.",
             "3막 개인 서사선": "1막에서 천솔빛은 폭등 줄과 중단 요구를 지붕 아래에서 맞는다.\n\n2막에서 HC09 재고 참관과 XT03 통조림 할당을 대기표에 묶는다.\n\n3막에서 원장 수호와 줄 해산 중 하나의 창구 대가를 진다.\n\n서사선은 STORY-B021-K379다.",
-            "분기 결말": "결말 α에서 천솔빛은 광장 원장을 지켜 배급 줄을 이어 간다.\n\n결말 β에서 줄을 해산시켜 상인회의 경매 질서를 우선한다.\n\n천주교 서울대교구 슬롯은 유지되며 분기만 K387-OUT으로 갈라진다.\n\n개입은 원장 수호 또는 줄 해산이다."
+            "분기 결말": "결말 α에서 천솔빛은 광장 원장을 지켜 배급 줄을 이어 간다.\n\n결말 β에서 줄을 해산시켜 상인회의 경매 질서를 우선한다.\n\n본당인준정 슬롯은 유지되며 분기만 K387-OUT으로 갈라진다.\n\n개입은 원장 수호 또는 줄 해산이다."
           },
           "arc": [
             {
@@ -31100,7 +31100,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "수서 지하 서고의 온도계 앞에서 선한솜은 초안함 봉인 끈의 풀린 가닥을 손가락으로 짚고 문을 몸으로 막는다.\n\n전국민주노동조합총연맹의 지하시설 방어조 거점장인 그는 방어조가 호송대보다 눈에 띄는 것을 사고로 적는다.\n\n한국 기원으로 강남 계약 골목에서 자랐고, 열쇠와 봉인을 한 주머니에 넣지 않는 버릇이 있다.\n\n이름 선한솜과 식별자 K403는 재번호되지 않는다.",
+            "정체성·출신": "수서 지하 서고의 온도계 앞에서 선한솜은 초안함 봉인 끈의 풀린 가닥을 손가락으로 짚고 문을 몸으로 막는다.\n\n정동노동총연맹의 지하시설 방어조 거점장인 그는 방어조가 호송대보다 눈에 띄는 것을 사고로 적는다.\n\n한국 기원으로 강남 계약 골목에서 자랐고, 열쇠와 봉인을 한 주머니에 넣지 않는 버릇이 있다.\n\n이름 선한솜과 식별자 K403는 재번호되지 않는다.",
             "붕괴 전 삶": "붕괴 전 그는 서고 열쇠와 초안함 봉인을 분리해 보관하고, 수색은 계약 서기 입회 아래에서만 열었다.\n\n강국 호위병이 초안함 옆에 서는 관행을 없애려는 야망이 그 분리 보관에 들어 있었다.\n\n스승에게 남긴 메모—함 온도와 감사표를 같은 줄에 적어라—가 빚의 씨앗이 된다.\n\n추천위원의 독촉이 있어도 그는 입회 없는 수색을 거부했다.",
             "가문·기업·공동체": "수서건설가(HC13)은 수서 지하 공동구의 내진 접합 도면을 내세워 서고 당직함에 참관석을 요구했다.\n\n선한솜은 정유라의 공동 점검만 열고 도면을 감시탑 증축과 맞바꾸는 문장은 거절했다.\n\n공동체 위치는 열쇠와 봉인을 나눈 교대 횟수로 증명됐고, 전속 국가 소유 요구는 반려됐다.\n\n실재 회사 상호는 그의 온도 일지에 등장하지 않는다.",
             "붕괴의 상처": "세 강국 급수계약서가 같은 주에 들어오자 지하 당직 명단이 한 줄 빠져 있었고 초안함 봉인 끈이 한 가닥 풀어져 있었다.\n\n선한솜은 서고 문을 잠그고 하서진의 초안함을 옮기지 못한 채 장갑을 벗지 않았다.\n\n공포는 방어조 안에서 위조 정서본을 숨긴 자가 나와 정유라의 표준 서식이 내부에서 깨지는 장면이었다.\n\n맞춤의료잔존체 냉각 누출 흔적(G11-SC1)을 그는 함 온도 일지에 먼저 적고 수색은 미뤘다.",
@@ -31109,7 +31109,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 풀린 봉인 끈을 다시 매기 전에 그가 읽은 초안 한 줄이다.\n\n죄책감은 잠근 문이 지킨 표준 서식과, 그날 호출하지 못한 당직자 사이에서 자란다.\n\n완전 고백 대신 감사표 겹침을 통한 부분 공개만 허용한다.\n\nSECRET 칸은 곽은재의 감사표와 동시에만 열린다.",
             "관계 공동과거": "하서진의 초안함을 지하에서 지킨 밤은 계약이었고, 영마온의 외곽 순찰과 교대를 나눈 새벽은 동맹이었다.\n\n곽은재의 감사표를 함 온도 일지와 겹친 일은 입회였다.\n\n같은 서고에서 한 사람은 초안을 얻었고 다른 한 사람은 열쇠를 잃었다.\n\n끝점은 STORY-B021-K403로 이어진다.",
             "3막 개인 서사선": "1막에서 선한솜은 풀린 봉인과 빈 명단을 온도계 앞에 둔다.\n\n2막에서 HC13 도면 참관과 XT05 해시 회차선을 서고 시계에 묶는다.\n\n3막에서 내부 수색과 봉인 교체 중 하나의 개방 대가를 진다.\n\n서사선은 STORY-B021-K403다.",
-            "분기 결말": "결말 α에서 선한솜은 빠진 당직자를 찾아 내부 위조 정서본 경로를 밝힌다.\n\n결말 β에서 봉인을 갈아 사건을 외부 조작으로 몰고 초안함을 닫는다.\n\n전국민주노동조합총연맹 슬롯은 유지되며 분기만 K412-OUT으로 갈라진다.\n\n개입은 당직자 수색 또는 봉인 교체다."
+            "분기 결말": "결말 α에서 선한솜은 빠진 당직자를 찾아 내부 위조 정서본 경로를 밝힌다.\n\n결말 β에서 봉인을 갈아 사건을 외부 조작으로 몰고 초안함을 닫는다.\n\n정동노동총연맹 슬롯은 유지되며 분기만 K412-OUT으로 갈라진다.\n\n개입은 당직자 수색 또는 봉인 교체다."
           },
           "arc": [
             {
@@ -31202,7 +31202,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "상암 교차검증대 헤드폰을 쓴 황은설은 문장을 두 번 읽고 나서야 방송 스위치를 만진다.\n\n전국경제인연합회의 검증 기록원인 그는 사람을 살리는 침묵과 사실을 공개하는 의무 사이에서 손이 멈춘다.\n\n서울에서 태어나 어머니 야간 근무 쪽지와 아버지 학교 가정통신문을 같은 식탁에서 읽으며 자랐고, 한 문장을 두 언어의 리듬으로 대조하는 버릇이 직무보다 먼저 생겼다.\n\n이름 황은설과 식별자 K217는 불변이다.",
+            "정체성·출신": "상암 교차검증대 헤드폰을 쓴 황은설은 문장을 두 번 읽고 나서야 방송 스위치를 만진다.\n\n여의도출자연합회의 검증 기록원인 그는 사람을 살리는 침묵과 사실을 공개하는 의무 사이에서 손이 멈춘다.\n\n서울에서 태어나 어머니 야간 근무 쪽지와 아버지 학교 가정통신문을 같은 식탁에서 읽으며 자랐고, 한 문장을 두 언어의 리듬으로 대조하는 버릇이 직무보다 먼저 생겼다.\n\n이름 황은설과 식별자 K217는 불변이다.",
             "붕괴 전 삶": "붕괴 전 그는 모든 국가의 공식 발표를 두 증언 이상으로 교차검증하는 공개 원장을 서울역 인준과 함께 돌리려 했다.\n\n야망은 선전 도구가 되지 않는 방송망이었고, 초안은 늘 검증대 칠판에 먼저 적혔다.\n\n조하린에게 맡긴 암호문 원본 보관 부탁이 훗날 빚의 씨앗이 된다.\n\n독립 증언이 둘 미만이면 그는 보류 사유도 같은 날 게시판에 붙였다.",
             "가문·기업·공동체": "서울역기록법가(HP04)는 원본 해시 봉인을 내세워 송신 교차검증대에 참관석을 요구했다.\n\n황은설은 여리안의 공동 점검만 열고 방송국의 단독 공개 문장은 거절했다.\n\n공동체 위치는 보류 사유를 게시한 날짜로 증명됐고, 유언 사본 세 장을 한 진본으로 합치라는 압력은 반려됐다.\n\n실재 상호는 그의 원장에 등장하지 않는다.",
             "붕괴의 상처": "실종 음성의 파형과 문서고 필적이 한 구간에서만 어긋나자 황은설은 검증 원장을 잠갔다.\n\n공포는 조작된 음성 한 조각이 공식 방송되어 공사의 신뢰가 선전 도구로 바뀌는 장면이었다.\n\n통신근균체 잡음(G21-SC2)이 헤드폰에 세 번 걸러져도 그는 오탐을 진본 칸에 올리지 않았다.\n\n경보가 꺼진 뒤 보류 게시판의 마지막 줄을 읽지 못한 채 헤드폰을 벗지 않았다.",
@@ -31211,7 +31211,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 조하린에게 진 암호문 원본 보관 빚과, 그 원본을 방송 전에 열어 본 한 구간의 파형이다.\n\n죄책감은 잠근 원장이 막은 선전과, 하루 늦은 공개가 키운 소문 사이에서 자란다.\n\n완전 고백 대신 보류 게시판을 통한 부분 공개만 허용한다.\n\nSECRET 칸은 국두봉의 원장 운반 로그와 동시에만 열린다.",
             "관계 공동과거": "최지우과 윤서린 사이에서 음성과 문서를 맞춘 밤은 계약이었고, 강예준과 교차검증을 맹세한 새벽은 동맹이었다.\n\n조하린의 암호문 원본 보관은 빚이었고, 봉소가 보류 방송 밤에 대기한 일은 입회였다.\n\n같은 검증대에서 한 사람은 방송을 얻었고 다른 한 사람은 침묵을 졌다.\n\n끝점은 STORY-B021-K217로 이어진다.",
             "3막 개인 서사선": "1막에서 황은설은 어긋난 파형과 필적을 헤드폰으로 맞는다.\n\n2막에서 HP04 해시 봉인과 XT05 대역 추첨을 보류 시계에 묶는다.\n\n3막에서 증언 충원과 하루 연기 중 하나의 소문 대가를 진다.\n\n서사선은 STORY-B021-K217다.",
-            "분기 결말": "결말 α에서 황은설은 두 번째 증언을 데려와 방송을 재개한다.\n\n결말 β에서 공개를 하루 늦춰 폭동을 막고 보류 사유를 게시판에 남긴다.\n\n전국경제인연합회 슬롯은 유지되며 분기만 K221-OUT으로 갈라진다.\n\n개입은 증언 호송 또는 공개 연기이다."
+            "분기 결말": "결말 α에서 황은설은 두 번째 증언을 데려와 방송을 재개한다.\n\n결말 β에서 공개를 하루 늦춰 폭동을 막고 보류 사유를 게시판에 남긴다.\n\n여의도출자연합회 슬롯은 유지되며 분기만 K221-OUT으로 갈라진다.\n\n개입은 증언 호송 또는 공개 연기이다."
           },
           "arc": [
             {
@@ -31304,7 +31304,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "가락 후문 얼음 창고 앞 마차에서 전나경은 줄 선 얼굴을 배급표에 옮기고 비밀 군량 소문을 표의 적으로 적는다.\n\n천주교 서울대교구의 비상배급원인 그는 기근 배급을 시혜가 아니라 장부로 본다.\n\n어린 시절 가락 야간 하역에서 어머니가 얼음 상자 무게를 부르면 그 숫자를 종이에 적던 이력으로 얼굴을 기억하며, 그 이력이 출신지의 성격을 대신하지는 않는다.\n\n이름 전나경과 식별자 K368는 불변이다.",
+            "정체성·출신": "가락 후문 얼음 창고 앞 마차에서 전나경은 줄 선 얼굴을 배급표에 옮기고 비밀 군량 소문을 표의 적으로 적는다.\n\n본당인준정의 비상배급원인 그는 기근 배급을 시혜가 아니라 장부로 본다.\n\n어린 시절 가락 야간 하역에서 어머니가 얼음 상자 무게를 부르면 그 숫자를 종이에 적던 이력으로 얼굴을 기억하며, 그 이력이 출신지의 성격을 대신하지는 않는다.\n\n이름 전나경과 식별자 K368는 불변이다.",
             "붕괴 전 삶": "붕괴 전 그는 기근 배급 순서를 공개 추첨과 부양 가족 수로 고정해 후계 거래용 비밀 군량을 없애려 했다.\n\n야망은 마차의 공개 원장이었고, 초안은 잠실 광장보다 먼저 가락 후문 칠판에 붙었다.\n\n윤서린에게 넘긴 배급 원장 사본이 훗날 빚의 씨앗이 된다.\n\n상인회의 사신이 직거래를 권해도 그는 마차 자물쇠를 넘기지 않았다.",
             "가문·기업·공동체": "노량진냉동상단(HP08)은 가락 얼음 창고의 전력 슬롯 순환을 내세워 배급 마차에 참관석을 요구했다.\n\n전나경은 구하온의 온도 로그 인쇄만 받고 모터 회수를 배급 조건에 올리지 않았다.\n\n공동체 위치는 배급표를 광장과 후문에 동시에 붙인 횟수로 증명됐고, 비공개 우선은 윤서린 인준 없이는 거부됐다.\n\n실재 상호는 그의 마차 원장에 등장하지 않는다.",
             "붕괴의 상처": "가격 폭등 주간에 비상 배급줄이 잠실 집결지를 메우고 상인회의가 배급 중단을 요구하자, 전나경은 마차의 원장을 내리지 않고 후문 칠판만 고쳐 썼다.\n\n공포는 자신이 나눈 비상미가 군사호적 재등록의 미끼가 되는 장면이었다.\n\n철새습지포식군 배후 이동(G06-SC1)이 하역장 물웅덩이에서 보여도 그는 비밀 군량 칸을 열어 줄을 사지 않았다.\n\n경보가 꺼진 뒤 남윤경의 은폐 재고 숫자를 읽지 못한 채 분필을 쥐고 있었다.",
@@ -31313,7 +31313,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 윤서린에게 넘긴 사본에 적지 않은, 후문에서만 본 은폐 재고 한 줄이다.\n\n죄책감은 나눈 비상미가 살린 얼굴과, 넘기지 않은 칸이 키운 후계 거래 사이에서 자란다.\n\n완전 고백 대신 원장 사본을 통한 부분 공개만 허용한다.\n\nSECRET 칸은 방늘재의 침상 로그와 동시에만 열린다.",
             "관계 공동과거": "윤서린에게 배급 원장 사본을 넘긴 밤은 계약이었고, 남윤경의 비밀 군량을 거스른 아침은 거절이었다.\n\n백온의 남하 가족에게 임시표를 준 일은 명부 입회였고, 방늘재와 비상 배급줄의 침상을 나눈 새벽은 동맹이었다.\n\n같은 후문에서 한 사람은 쌀을 얻었고 다른 한 사람은 경매 순번을 잃었다.\n\n끝점은 STORY-B021-K368로 이어진다.",
             "3막 개인 서사선": "1막에서 전나경은 폭등 줄과 중단 요구를 얼음 창고 앞에서 맞는다.\n\n2막에서 HP08 온도 로그와 XT02 경매 중계를 마차 시계에 묶는다.\n\n3막에서 마차 추진과 비밀 칸 고발 중 하나의 배급 정지 대가를 진다.\n\n서사선은 STORY-B021-K368다.",
-            "분기 결말": "결말 α에서 전나경은 마차를 광장으로 밀어 비상미를 나눈다.\n\n결말 β에서 비밀 군량 칸을 기록청에 넘겨 후계 거래를 끊고 그날 배급을 멈춘다.\n\n천주교 서울대교구 슬롯은 유지되며 분기만 K376-OUT으로 갈라진다.\n\n개입은 마차 추진 또는 은폐 칸 고발이다."
+            "분기 결말": "결말 α에서 전나경은 마차를 광장으로 밀어 비상미를 나눈다.\n\n결말 β에서 비밀 군량 칸을 기록청에 넘겨 후계 거래를 끊고 그날 배급을 멈춘다.\n\n본당인준정 슬롯은 유지되며 분기만 K376-OUT으로 갈라진다.\n\n개입은 마차 추진 또는 은폐 칸 고발이다."
           },
           "arc": [
             {
@@ -31468,7 +31468,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "마곡 서고 인증함 앞에서 제라온은 날짜가 지워진 열람증을 집게로 집어 난로 옆에 세운다.\n\n현대자동차주식회사의 기술인증 사본 기록관인 그는 인증 도장을 흥정 카드로 내미는 평의원을 보면 날인 칸을 접는다.\n\n한국 기원으로 방화 실험동 골목에서 자랐고, 손목에는 전날 봉인 끈 자국이 남는다.\n\n표시 이름 제라온과 불변 식별자 K072는 재번호되지 않는다.",
+            "정체성·출신": "마곡 서고 인증함 앞에서 제라온은 날짜가 지워진 열람증을 집게로 집어 난로 옆에 세운다.\n\n양재기공주식회사의 기술인증 사본 기록관인 그는 인증 도장을 흥정 카드로 내미는 평의원을 보면 날인 칸을 접는다.\n\n한국 기원으로 방화 실험동 골목에서 자랐고, 손목에는 전날 봉인 끈 자국이 남는다.\n\n표시 이름 제라온과 불변 식별자 K072는 재번호되지 않는다.",
             "붕괴 전 삶": "붕괴 전 그는 의약·통신·펌프 인증을 국가 소유가 아닌 공개 원장으로 옮겨 공동기술원장의 기록 창구가 되려 했다.\n\n야망은 신청국과 마곡 서고에 동시에 남는 사본이었고, 초안은 열람 잠금 일지에 먼저 적혔다.\n\n임시온에게 맡긴 원본 대여 시각이 훗날 빚의 씨앗이 된다.\n\n비공개 성능 조항이 보이면 그는 날인을 찍지 않았다.",
             "가문·기업·공동체": "마곡생명가(HC03)는 밀폐실험동 방풍실의 생체 데이터셋 격리 키를 내세워 인증함에 참관석을 요구했다.\n\n제라온은 정호준의 공동 점검만 열고 원료 선점 문장을 인증 조항에 올리지 않았다.\n\n공동체 위치는 신청국 사본과 마곡 사본을 같은 시각에 남긴 횟수로 증명됐고, 독점 구매 주문은 반려됐다.\n\n실재 상호는 그의 날인 칸에 등장하지 않는다.",
             "붕괴의 상처": "가짜 약품 소문과 탁수 소문이 겹치자 제라온은 인증 도장을 전면 재심사하고 독점 구매 전표를 서고 밖으로 내보내지 않았다.\n\n공포는 위조 열람증 한 장이 서고 전체를 강국의 선전 자료로 만드는 장면이었다.\n\n냉각수색인균체가 실험동 배관에서 금속막을 키우는 냄새(G19-SC1)를 그는 성능 조항보다 먼저 격리 테이프로 막았다.\n\n경보가 꺼진 뒤에도 최은재의 인증 범위 마지막 줄을 읽지 못한 채 집게를 쥐고 있었다.",
@@ -31477,7 +31477,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 임시온에게 진 원본 대여 시각과, 그 시각에 열어 본 성능 조항 한 줄이다.\n\n죄책감은 잠근 도장이 막은 선전과, 하루 빈 인증 창구가 키운 탁수 소문 사이에서 자란다.\n\n완전 고백 대신 재심사 게시판을 통한 부분 공개만 허용한다.\n\nSECRET 칸은 정호준의 안전심사 입회와 동시에만 열린다.",
             "관계 공동과거": "최은재의 인증 범위를 원장으로 옮긴 밤은 사제에 가까웠고, 임시온의 열람 잠금을 기록으로 받친 새벽은 계약이었다.\n\n정유라의 기술공유 문장을 조항에 끌어들인 일은 동맹이었고, 같은 서고에서 한 사람은 인증을 얻었고 다른 한 사람은 열람을 잃었다.\n\n끝점은 STORY-B022-K072로 이어진다.\n\n구두 합의는 어느 관계에도 원장이 되지 않았다.",
             "3막 개인 서사선": "인증함에서 제라온은 가짜 약품과 탁수 소문을 같은 집게로 집어 올린다.\n\n이어서 HC03 격리 키 참관과 XT05 오탐 교정을 재심사 시계에 묶는다.\n\n마지막에 원본 호송과 평의원 폭로 중 하나의 창구 공백 대가를 진다.\n\n서사선은 STORY-B022-K072다.",
-            "분기 결말": "한쪽에서 제라온은 재현 실험 원본을 호송해 인증을 복구한다.\n\n다른 쪽에서 비공개 조항을 숨긴 평의원을 게시판에 올려 선전 경로를 끊는다.\n\n현대자동차주식회사 슬롯은 유지되며 분기만 K072-OUT으로 갈라진다.\n\n개입은 원본 호송 또는 조항 공개다."
+            "분기 결말": "한쪽에서 제라온은 재현 실험 원본을 호송해 인증을 복구한다.\n\n다른 쪽에서 비공개 조항을 숨긴 평의원을 게시판에 올려 선전 경로를 끊는다.\n\n양재기공주식회사 슬롯은 유지되며 분기만 K072-OUT으로 갈라진다.\n\n개입은 원본 호송 또는 조항 공개다."
           },
           "arc": [
             {
@@ -31519,7 +31519,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "군자-성수 침수터널 입구에서 명강산은 수온계 바늘이 멈춘 칸을 손전등으로 비춘다.\n\n대한예수교장로회의 침수터널 탐사원인 그는 지도에 없는 맨홀을 자랑으로 부르지 않고, 늦은 보고를 죄로 적는다.\n\n한국 기원으로 성수 펌프실 골목에서 자랐고, 장화 안쪽에는 전날 침수 이끼가 남는다.\n\n표시 이름 명강산과 불변 식별자 K100는 재번호되지 않는다.",
+            "정체성·출신": "군자-성수 침수터널 입구에서 명강산은 수온계 바늘이 멈춘 칸을 손전등으로 비춘다.\n\n설교명부정의 침수터널 탐사원인 그는 지도에 없는 맨홀을 자랑으로 부르지 않고, 늦은 보고를 죄로 적는다.\n\n한국 기원으로 성수 펌프실 골목에서 자랐고, 장화 안쪽에는 전날 침수 이끼가 남는다.\n\n표시 이름 명강산과 불변 식별자 K100는 재번호되지 않는다.",
             "붕괴 전 삶": "붕괴 전 그는 군자 유치선과 뚝섬 펌프를 잇는 침수 우회 터널을 공개 해도로 그려 물·부품 공동규격이 선로 아래에서도 작동하게 하려 했다.\n\n야망은 수심과 펌프 진동이 한 원장에 남는 해도였고, 초안은 헬멧 안쪽에 먼저 적혔다.\n\n허겸에게 보낸 침수 표본 한 병이 훗날 빚의 씨앗이 된다.\n\n붕괴 구간은 공방과 수비대가 동시에 서명해야 표시했다.",
             "가문·기업·공동체": "뚝섬열원가(HC04)은 뚝섬 펌프의 지하 열원 접속권을 내세워 탐사 원장에 참관석을 요구했다.\n\n명강산은 박누리의 공동 점검만 열고 여열 우선권을 우회 좌표에 올리지 않았다.\n\n공동체 위치는 수심과 진동을 같은 줄에 적은 횟수로 증명됐고, 암사행 단독 탐사는 거절됐다.\n\n실재 상호는 그의 해도에 등장하지 않는다.",
             "붕괴의 상처": "중앙 급수·부품 계약이 만료되자 명강산은 군자발 우회 터널을 뚝섬 펌프실 전용으로 묶고 암사행 탐사를 거절했다.\n\n공포는 탐사 경로가 동부 순찰열차의 침투로로 팔려 정비 주권이 보호계약 아래로 들어가는 장면이었다.\n\n하수너구리족이 맨홀 뚜껑 아래에서 야간 영역을 표시하는 발자국(G04-SC1)을 그는 좌표보다 먼저 봉인 테이프로 가렸다.\n\n경보가 꺼진 뒤 장예린의 검사망 마지막 숫자를 읽지 못한 채 수온계를 쥐고 있었다.",
@@ -31528,7 +31528,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 허겸에게 보낸 표본 병에 적지 않은, 맨홀 아래 침투 표시 한 줄이다.\n\n죄책감은 전용 묶기가 지킨 펌프와, 거절한 암사행이 비운 급수 시간 사이에서 자란다.\n\n완전 고백 대신 이중 서명 원장을 통한 부분 공개만 허용한다.\n\nSECRET 칸은 장예린의 단독 채수 로그와 동시에만 열린다.",
             "관계 공동과거": "이준택의 군자 보수차에 우회 좌표를 넘긴 밤은 계약이었고, 허겸의 골목 펌프 정비에 표본을 보낸 새벽은 동맹이었다.\n\n장예린의 검사망이 멈추면 단독 채수로 숫자를 이은 일은 빚이었고, 같은 터널에서 한 사람은 좌표를 얻었고 다른 한 사람은 탐사를 잃었다.\n\n끝점은 STORY-B022-K100로 이어진다.\n\n늦은 보고는 어느 관계에도 면제가 되지 않았다.",
             "3막 개인 서사선": "터널 입구에서 명강산은 만료 전갈과 전용 묶기를 같은 수온계에 올린다.\n\n이어서 HC04 열원 참관과 XT03 밀봉 공구를 해도 시계에 묶는다.\n\n마지막에 호위 개방과 침투로 폭로 중 하나의 수심 공백 대가를 진다.\n\n서사선은 STORY-B022-K100다.",
-            "분기 결말": "한쪽에서 명강산은 우회 터널 호위를 열어 전용 묶기를 푼다.\n\n다른 쪽에서 침투로 표시를 폭로해 경로를 하루 닫고 보호계약 아래 정비를 거부한다.\n\n대한예수교장로회 슬롯은 유지되며 분기만 K101-OUT으로 갈라진다.\n\n개입은 호위 편성 또는 침투 표시 공개다."
+            "분기 결말": "한쪽에서 명강산은 우회 터널 호위를 열어 전용 묶기를 푼다.\n\n다른 쪽에서 침투로 표시를 폭로해 경로를 하루 닫고 보호계약 아래 정비를 거부한다.\n\n설교명부정 슬롯은 유지되며 분기만 K101-OUT으로 갈라진다.\n\n개입은 호위 편성 또는 침투 표시 공개다."
           },
           "arc": [
             {
@@ -31723,7 +31723,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "수서 협약 중재실 네 칸 칠판 앞에서 심유리는 서명자가 빠진 칸을 손바닥으로 가린 채 회의 종을 울리지 않는다.\n\n전국민주노동조합총연맹의 협약 중재인인 그는 한쪽이 목소리를 높여도 네 칸이 채워지기 전에는 종을 울리지 않고, 보호 패키지를 숫자 칸으로 바꿔 쓰려는 사절을 별도 안건으로 민다.\n\n어린 시절 수서 야간 통역 대기표에서 어머니가 외래어 옆에 한글 주석을 부르면 그 리듬을 칠판에 옮기던 이력으로 침묵의 길이를 재며, 그 이력이 출신지의 성격을 대신하지는 않는다.\n\n이름 심유리와 식별자 K392는 불변이다.",
+            "정체성·출신": "수서 협약 중재실 네 칸 칠판 앞에서 심유리는 서명자가 빠진 칸을 손바닥으로 가린 채 회의 종을 울리지 않는다.\n\n정동노동총연맹의 협약 중재인인 그는 한쪽이 목소리를 높여도 네 칸이 채워지기 전에는 종을 울리지 않고, 보호 패키지를 숫자 칸으로 바꿔 쓰려는 사절을 별도 안건으로 민다.\n\n어린 시절 수서 야간 통역 대기표에서 어머니가 외래어 옆에 한글 주석을 부르면 그 리듬을 칠판에 옮기던 이력으로 침묵의 길이를 재며, 그 이력이 출신지의 성격을 대신하지는 않는다.\n\n이름 심유리와 식별자 K392는 불변이다.",
             "붕괴 전 삶": "붕괴 전 그는 11개 약소국 회의의 의제 순서를 중재석에서 정해 공동교섭이 강국별 분할 복속으로 갈라지지 않게 하려 했다.\n\n야망은 급수·통행·의료·손실보상 네 칸이 모두 서명된 뒤에만 울리는 종이었고, 초안은 중재실 옆 침상 칸에 먼저 적혔다.\n\n정유라에게 맡긴 사회 문장이 훗날 빚의 씨앗이 된다.\n\n한 칸이라도 서명자가 빠지면 전체 합의를 연기했다.",
             "가문·기업·공동체": "이태원통역문(HP10)은 다국어 대기표와 협정 주석을 내세워 중재실에 참관석을 요구했다.\n\n심유리는 표시완의 공동 점검만 열고 비공개 연결표를 의제 칸에 올리지 않았다.\n\n공동체 위치는 네 칸 서명을 같은 칠판에 남긴 횟수로 증명됐고, 배우진의 보호안은 별도 안건으로 격리됐다.\n\n실재 상호는 그의 중재 칠판에 등장하지 않는다.",
             "붕괴의 상처": "열한 자리 회의 직전에 세 강국 사절이 서로 다른 보호·급수 패키지를 들고 중재실로 들어오자 심유리는 회의 종을 잠갔다.\n\n공포는 중재가 배우진의 보호정부와 한재목의 수문헌장 사이에서 들러리가 되는 장면이었다.\n\n도면유령기계단이 수서 지하에서 미완성 도면대로 벽을 두드리는 소음(G16-SC1)을 그는 패키지보다 먼저 봉인 테이프로 가렸다.\n\n경보가 꺼진 뒤 류은비의 의료헌장 조항 마지막 줄을 읽지 못한 채 분필을 쥐고 있었다.",
@@ -31732,7 +31732,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 정유라 문장에 적지 않은, 통역 대기표에서만 들은 사절 밀약 한 줄이다.\n\n죄책감은 종을 잠가 막은 들러리화와, 하루 빈 회의가 키운 분할 소문 사이에서 자란다.\n\n완전 고백 대신 네 칸 공개를 통한 부분 공개만 허용한다.\n\nSECRET 칸은 원새울의 침상 로그와 동시에만 열린다.",
             "관계 공동과거": "정유라의 약소국 회의를 사회한 밤은 지휘였고, 장세화와 회의를 나란히 연 새벽은 동맹이었다.\n\n류은비의 의료헌장 조항을 의제에 올린 일은 입회였고, 배우진의 보호안을 별도 안건으로 가른 일은 거절이었다.\n\n같은 중재실에서 한 사람은 서명을 얻었고 다른 한 사람은 패키지를 잃었다.\n\n끝점은 STORY-B022-K392로 이어진다.",
             "3막 개인 서사선": "중재실에서 심유리는 세 패키지와 빠진 서명 칸을 같은 칠판에 둔다.\n\n이어서 HP10 통역 참관과 XT03 용어 충돌 기록을 회의 시계에 묶는다.\n\n마지막에 의제 재배치와 밀약 폭로 중 하나의 공석 대가를 진다.\n\n서사선은 STORY-B022-K392다.",
-            "분기 결말": "한쪽에서 심유리는 의제를 급수 칸부터 바꿔 회의를 붙잡는다.\n\n다른 쪽에서 한 강국 사절의 밀약을 폭로해 열한 자리를 하루 비운다.\n\n전국민주노동조합총연맹 슬롯은 유지되며 분기만 K401-OUT으로 갈라진다.\n\n개입은 의제 재배치 또는 밀약 공개다."
+            "분기 결말": "한쪽에서 심유리는 의제를 급수 칸부터 바꿔 회의를 붙잡는다.\n\n다른 쪽에서 한 강국 사절의 밀약을 폭로해 열한 자리를 하루 비운다.\n\n정동노동총연맹 슬롯은 유지되며 분기만 K401-OUT으로 갈라진다.\n\n개입은 의제 재배치 또는 밀약 공개다."
           },
           "arc": [
             {
@@ -31825,7 +31825,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "수서 기지 추천 게시판 앞에서 은보람은 혈연 청탁 쪽지를 시험 점수 칸 아래에 붙이지 않고 접어 넣는다.\n\n전국민주노동조합총연맹의 기술기업 추천위원 서기인 그는 시험 점수 칸이 비면 문벌 쪽지를 게시판 맨 위에 올리지 않고, 청탁으로 추천을 바꾸려는 이름을 날짜와 함께 접어 둔다.\n\n귀환 가계의 부엌 달력에 한글 숙련 시험 날짜를 적어 두던 이력으로 게시판의 빈칸을 먼저 찾으며, 그 이력이 기술 숙련이나 충성을 예측하지는 않는다.\n\n이름 은보람과 식별자 K393는 불변이다.",
+            "정체성·출신": "수서 기지 추천 게시판 앞에서 은보람은 혈연 청탁 쪽지를 시험 점수 칸 아래에 붙이지 않고 접어 넣는다.\n\n정동노동총연맹의 기술기업 추천위원 서기인 그는 시험 점수 칸이 비면 문벌 쪽지를 게시판 맨 위에 올리지 않고, 청탁으로 추천을 바꾸려는 이름을 날짜와 함께 접어 둔다.\n\n귀환 가계의 부엌 달력에 한글 숙련 시험 날짜를 적어 두던 이력으로 게시판의 빈칸을 먼저 찾으며, 그 이력이 기술 숙련이나 충성을 예측하지는 않는다.\n\n이름 은보람과 식별자 K393는 불변이다.",
             "붕괴 전 삶": "붕괴 전 그는 수서 기지 전문 인력 추천을 공개 숙련 시험으로 바꿔 이중 의회에서 기업 쪽 독점 추천을 깨뜨리려 했다.\n\n야망은 추천 사유와 시험 점수가 같은 게시판에 붙는 규칙이었고, 초안은 수늘결의 정비 창 칠판에 먼저 적혔다.\n\n정호준에게 옮긴 공동기술원장 구상이 훗날 빚의 씨앗이 된다.\n\n비공개 파견은 시민추첨 추인 없이 무효로 했다.",
             "가문·기업·공동체": "디지털미디어시티신탁가(HP09)는 시험 점수 해시 봉인을 내세워 추천 게시판에 참관석을 요구했다.\n\n은보람은 최은재의 공동 점검만 열고 기업 의회 단독 추천 문장을 점수 칸에 올리지 않았다.\n\n공동체 위치는 사유와 점수를 같은 날에 붙인 횟수로 증명됐고, 임초원은 파견 후보가 아니라 공동 심사관으로 불렸다.\n\n실재 상호는 그의 게시판에 등장하지 않는다.",
             "붕괴의 상처": "마곡이 수질 검사 인력을 요청하자 추천위원 일부가 비공개 파견 명단을 먼저 돌렸고, 은보람은 게시판의 시험 칸을 봉쇄했다.\n\n공포는 추천위원이 강국에 기술자를 넘기는 인질 창구가 되는 장면이었다.\n\n맞춤의료잔존체가 기지 후문 냉각 배관에서 멈춘 치료 장치를 흔드는 소리(G11-SC2)를 그는 명단보다 먼저 봉인 테이프로 가렸다.\n\n경보가 꺼진 뒤 원초온의 출고 칠판 마지막 줄을 읽지 못한 채 분필을 쥐고 있었다.",
@@ -31834,7 +31834,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 부엌 달력에만 적은, 게시판에 올리지 않은 청탁 이름 한 줄이다.\n\n죄책감은 봉쇄한 시험 칸이 막은 인질화와, 하루 멈춘 추천이 비운 수질 검사 사이에서 자란다.\n\n완전 고백 대신 사유·점수 동시 게시를 통한 부분 공개만 허용한다.\n\nSECRET 칸은 최은재의 해시 입회와 동시에만 열린다.",
             "관계 공동과거": "정호준의 공동기술원장 구상을 추천 규칙에 반영한 밤은 계약이었고, 정유라의 공개 계약을 인력 조항에 넣은 새벽은 동맹이었다.\n\n수늘결이 규칙을 현장에서 받친 일은 사제였고, 원초온이 게시판을 칠판 맨 위에 둔 일은 입회였다.\n\n임초원을 공동 심사관으로 부르려 한 같은 기지에서 한 사람은 시험을 얻었고 다른 한 사람은 파견을 잃었다.\n\n끝점은 STORY-B022-K393로 이어진다.",
             "3막 개인 서사선": "게시판에서 은보람은 비공개 명단과 빈 시험 칸을 같은 분필로 가른다.\n\n이어서 HP09 해시 참관과 XT05 대역 추첨을 추천 시계에 묶는다.\n\n마지막에 명단 공개와 인질 구출 중 하나의 시험 정지 대가를 진다.\n\n서사선은 STORY-B022-K393다.",
-            "분기 결말": "한쪽에서 은보람은 비공개 명단을 게시판에 붙여 독점 추천을 깨뜨린다.\n\n다른 쪽에서 특정 기술자를 인질 교환에서 빼내고 숙련 시험을 하루 닫는다.\n\n전국민주노동조합총연맹 슬롯은 유지되며 분기만 K402-OUT으로 갈라진다.\n\n개입은 명단 게시 또는 인질 구출이다."
+            "분기 결말": "한쪽에서 은보람은 비공개 명단을 게시판에 붙여 독점 추천을 깨뜨린다.\n\n다른 쪽에서 특정 기술자를 인질 교환에서 빼내고 숙련 시험을 하루 닫는다.\n\n정동노동총연맹 슬롯은 유지되며 분기만 K402-OUT으로 갈라진다.\n\n개입은 명단 게시 또는 인질 구출이다."
           },
           "arc": [
             {
@@ -31989,16 +31989,16 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "상암 서북 관문 중계실에서 모국은 무전 빈칸을 참지 못하고 통과만 하는 상인을 원장에 오래 붙잡아 둔다.\n\n전국경제인연합회 서북 관문 중계 거점장으로서 좌표 없는 소문은 관문 밖으로 내보내지 않는다.\n\n한국 기원으로 난지도 쪽 송신탑 그늘에서 교대를 배웠고, 목소리는 낮으나 단독 정정 무전에는 다음 날 같은 길이의 반대 의견을 붙인다.\n\n모국과 K230은 관문 당직 칠판의 중계 칸에 고정된다.",
+            "정체성·출신": "상암 서북 관문 중계실에서 모국은 무전 빈칸을 참지 못하고 통과만 하는 상인을 원장에 오래 붙잡아 둔다.\n\n여의도출자연합회 서북 관문 중계 거점장으로서 좌표 없는 소문은 관문 밖으로 내보내지 않는다.\n\n한국 기원으로 난지도 쪽 송신탑 그늘에서 교대를 배웠고, 목소리는 낮으나 단독 정정 무전에는 다음 날 같은 길이의 반대 의견을 붙인다.\n\n모국과 K230은 관문 당직 칠판의 중계 칸에 고정된다.",
             "붕괴 전 삶": "붕괴 전 그는 서북 관문을 공개 중계의 입구로 만들려고 중계 로그와 통행 명부를 같은 벽에 붙였다.\n\n강국이 전원을 내려도 우회 무전이 남게 하려는 야망이었고, 초안 주파수는 관문 뒷벽 분필로만 남았다.\n\n아버지에게 보낸 짧은 전갈—좌표 없는 말은 집으로 가져오지 말라—가 나중에 빚이 된다.\n\n검열 초소 설치 제안이 올라와도 그는 명부 없는 무전을 틀지 않았다.",
             "가문·기업·공동체": "디지털미디어시티신탁가(HP09)는 잔여 대역 추첨을 참관 의무로 묶으려 했다.\n\n모국은 헌장의 공개 로그 조항만 받고 전속 검열 문장은 거절했다.\n\n공동체 위치는 의료속보를 중계 우선으로 남긴 날짜로 증명됐고, 단독 정정은 반대 의견이 붙기 전에는 확정되지 않았다.\n\n실재 통신사 상호는 그의 원장에 쓰지 않는다.",
             "붕괴의 상처": "편집된 총관 음성과 같은 파형이 관문 중계에서 한 차례 새어 나가자 모국은 송신을 끊고 원점 추적을 벽에 적었다.\n\n공포는 관문이 검열 초소로 바뀌어 약소국 공동 시간이 막히는 그림이었다.\n\n통신근균체(G21) 잡음이 같은 대역을 핥았으나 그는 악으로 부르지 않고 오탐 횟수만 세었다.\n\n경보가 꺼진 뒤에도 파형의 마지막 마디를 읽지 못한 채 헤드셋을 벗지 않았다.",
             "생존 전환점": "전환점은 새어 나간 무전의 원점을 막을지, 의료속보 우선 조항을 관문 원장에 못 박을지 고른 순간이다.\n\n인천신탁전구(XT05)의 잔여 대역 공개 추첨(XT05-SC1)이 여의도 급수 당직과 겹치자 송신 창이 이십 분으로 줄었다.\n\n원점을 막으면 검열은 멈추나 장세화의 속보가 한 주기 밀리고, 조항을 고정하면 속보는 살지만 파형 출처가 남는다.\n\n결정은 K234-TURN에 남는다.",
-            "현재 지위": "현재 모국은 서북 관문 중계 거점장으로 로그와 통행 명부를 매일 같은 벽에 붙인다.\n\n면허와 참관 로그가 지위를 유지하며, 디지털미디어시티신탁가의 전속 대역 요구는 반려한다.\n\n전국경제인연합회 당직표와 벽의 시각을 맞추는 일이 교대 직후 일과다.\n\n좌표 없는 소문은 여전히 관문 밖으로 나가지 않는다.",
+            "현재 지위": "현재 모국은 서북 관문 중계 거점장으로 로그와 통행 명부를 매일 같은 벽에 붙인다.\n\n면허와 참관 로그가 지위를 유지하며, 디지털미디어시티신탁가의 전속 대역 요구는 반려한다.\n\n여의도출자연합회 당직표와 벽의 시각을 맞추는 일이 교대 직후 일과다.\n\n좌표 없는 소문은 여전히 관문 밖으로 나가지 않는다.",
             "비밀·빚·죄책감": "비밀은 그가 아버지 전갈을 파형 여백에 숨긴 채 공개하지 못한 한 줄이다.\n\n죄책감은 막은 검열과, 그 때문에 한 주기 늦은 의료속보 사이에서 자란다.\n\n완전 고백 대신 복두모의 실측 좌표 입회 아래 부분 공개만 허용한다.\n\n열람은 순한결의 증언 봉인과 동시에만 열린다.",
             "관계 공동과거": "복두모의 실측 좌표를 받아 관문 중계에 겹친 밤은 계약이었고, 소감의 전령로를 관문에서 이은 새벽은 동맹이었다.\n\n장세화의 의료속보 협약을 우선 칸에 남긴 일은 협력이되, 순한결의 증언이 늦으면 명부가 먼저 닫혀 속도 경쟁이 됐다.\n\n같은 중계실에서 어떤 무전은 서로를 구했고 어떤 파형은 배신으로 남았다.\n\n관계 원장은 STORY-B023-K230으로 이어진다.",
             "3막 개인 서사선": "관문 헤드셋의 잡음이 끊긴 자리에서 모국은 새어 나간 파형을 다시 감는다.\n\nHP09 추첨과 XT05 대역 요청이 같은 벽에 붙으면 그는 송신 창을 앞당긴다.\n\n3막의 대가는 의료속보의 지연이거나 검열 초소의 상설이다.\n\n서사선은 STORY-B023-K230이다.",
-            "분기 결말": "한쪽 분기에서 모국은 유출 원점을 막아 검열 초소를 닫는다.\n\n다른 분기에서 그는 의료속보 조항을 원장에 고정해 장세화의 우선 칸을 살린다.\n\n전국경제인연합회 슬롯은 유지되며 분기만 K234-OUT으로 갈라진다.\n\n개입은 원점 봉인 또는 속보 조항 호위다."
+            "분기 결말": "한쪽 분기에서 모국은 유출 원점을 막아 검열 초소를 닫는다.\n\n다른 분기에서 그는 의료속보 조항을 원장에 고정해 장세화의 우선 칸을 살린다.\n\n여의도출자연합회 슬롯은 유지되며 분기만 K234-OUT으로 갈라진다.\n\n개입은 원점 봉인 또는 속보 조항 호위다."
           },
           "arc": [
             {
@@ -32040,16 +32040,16 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "북한산보국문 건조장 선반 사이에서 모감은 사람 열보다 습기를 먼저 읽고 말리지 않은 뿌리를 상자 깊숙이 숨기는 손을 가혹하게 다룬다.\n\n대한불교조계종 약초 건조장 거점장으로서 약 냄새와 가짜 봉인을 같은 코로 가른다.\n\n한국 기원으로 산악 피난로에서 건조 교대를 배웠고, 말은 짧으나 봉인 없는 상자는 격리 칸으로 옮긴 뒤에야 앉는다.\n\n모감과 K255는 건조 중량 칠판의 거점 칸에 적힌다.",
+            "정체성·출신": "북한산보국문 건조장 선반 사이에서 모감은 사람 열보다 습기를 먼저 읽고 말리지 않은 뿌리를 상자 깊숙이 숨기는 손을 가혹하게 다룬다.\n\n승가구휼정 약초 건조장 거점장으로서 약 냄새와 가짜 봉인을 같은 코로 가른다.\n\n한국 기원으로 산악 피난로에서 건조 교대를 배웠고, 말은 짧으나 봉인 없는 상자는 격리 칸으로 옮긴 뒤에야 앉는다.\n\n모감과 K255는 건조 중량 칠판의 거점 칸에 적힌다.",
             "붕괴 전 삶": "붕괴 전 그는 산악 약초 건조를 연맹 공개 재고로 묶으려 매일 중량을 벽에 적었다.\n\n강국 구호 상자가 건조장 열쇠를 삼지 못하게 하려는 야망이었고, 초안 로트 번호는 선반 밑 숯가루로만 남았다.\n\n조카의 해열 뿌리를 따로 말려 둔 자루가 작은 약속이었고, 그 자루가 빚의 자리가 된다.\n\n구호 서기가 열쇠를 한손에 쥐려 해도 그는 봉인 없는 출고를 허용하지 않았다.",
             "가문·기업·공동체": "북한산보국문귀환회(HP05)는 귀환 명부 검역을 건조장 참관으로 확장하려 했다.\n\n모감은 헌장의 공개 중량 조항만 인정하고 전속 구호 창고 문장은 거절했다.\n\n공동체 위치는 봉감의 투약 명부와 로트를 맞춘 날짜로 증명됐고, 가짜 봉인 상자는 황세린의 배급 저울에 오르기 전에 격리됐다.\n\n실재 제약 상호는 그의 건조 일지에 쓰지 않는다.",
             "붕괴의 상처": "가짜 약품 상자 옆에서 같은 로트 표기의 마른 뿌리가 발견되자 모감은 선반 한 줄을 봉하고 아이 투약 명부의 해당 칸을 가렸다.\n\n공포는 오염된 명부가 임진 검역소의 훼손된 귀환 명부와 겹쳐 북한산보국문 아이들이 재발급 줄에서 빠지는 장면이었다.\n\n맞춤의료잔존체(G11) 냄새가 격리 칸을 스쳤으나 그는 괴물 이름을 벽에 쓰지 않고 로트 번호만 세 번 적었다.\n\n숯불이 꺼진 뒤에도 가린 칸의 마지막 글자를 읽지 못했다.",
             "생존 전환점": "전환점은 로트를 통째로 격리할지, 건조장 열쇠를 구호 서기와 나눠 쥘지 고른 순간이다.\n\n임진강관문전구(XT01)의 귀환 명부 재발급 요구(XT01-SC1)가 건조장 문에 닿자 검역 시계가 앞당겨졌다.\n\n격리하면 투약 명부는 살아나나 구호 상자가 하루 멈추고, 열쇠를 나누면 상자는 들어오나 가짜 봉인이 다시 섞일 구멍이 열린다.\n\n선택은 K260-TURN으로 남는다.",
-            "현재 지위": "지금도 모감은 약초 건조장 거점장으로 중량 칠판과 격리 칸을 지킨다.\n\n지위는 세습이 아니라 로트 로그와 연맹 참관 서명으로만 유지된다.\n\n북한산보국문귀환회가 전속 창고를 요구해도 그는 거절하고, 대한불교조계종 당직표와 벽의 중량을 아침마다 맞춘다.\n\n봉인 없는 상자는 여전히 격리 칸으로만 간다.",
+            "현재 지위": "지금도 모감은 약초 건조장 거점장으로 중량 칠판과 격리 칸을 지킨다.\n\n지위는 세습이 아니라 로트 로그와 연맹 참관 서명으로만 유지된다.\n\n북한산보국문귀환회가 전속 창고를 요구해도 그는 거절하고, 승가구휼정 당직표와 벽의 중량을 아침마다 맞춘다.\n\n봉인 없는 상자는 여전히 격리 칸으로만 간다.",
             "비밀·빚·죄책감": "비밀은 조카 자루의 로트 번호가 가짜 상자 표기와 한 글자만 달랐다는 메모다.\n\n죄책감은 가린 투약 칸에서 산 아이와, 격리 동안 해열 뿌리를 받지 못한 옆집 사이에서만 자란다.\n\n전부를 공개하면 건조장 신뢰가 한 계절 끊길 수 있어 부분 공개만 남겼다.\n\n열람은 류은비의 약효 표본 인수증과 동시에만 열린다.",
             "관계 공동과거": "봉감의 투약 명부와 건조 로트를 맞춘 밤은 계약이었고, 황세린의 배급 저울에 약초 몫을 올린 아침은 동맹이었다.\n\n류은비의 약효 검증에 건조 표본을 보낸 일은 협력이되, 검수가 늦으면 격리 칸이 먼저 차 경쟁이 됐다.\n\n같은 선반에서 어떤 뿌리는 서로를 구했고 어떤 봉인은 배신으로 남았다.\n\n관계 원장은 STORY-B023-K255에 연결된다.",
             "3막 개인 서사선": "건조 선반의 습도계가 빨간 자리에서 모감은 같은 로트 뿌리를 다시 펼친다.\n\nHP05 검역 참관과 XT01 명부 재발급이 문에 겹치면 그는 격리 줄을 늘린다.\n\n3막의 대가는 구호 상자의 정체이거나 열쇠 구멍의 확대다.\n\n서사선 식별자는 STORY-B023-K255로 고정된다.",
-            "분기 결말": "한쪽 분기에서 모감은 로트를 격리해 아이 투약 명부를 지킨다.\n\n다른 분기에서 그는 열쇠를 구호 서기와 나눠 상자를 들이되 봉인 구멍을 남긴다.\n\n대한불교조계종 슬롯은 유지되며 분기만 K260-OUT으로 갈라진다.\n\n개입은 격리 호위 또는 열쇠 분점 입회다."
+            "분기 결말": "한쪽 분기에서 모감은 로트를 격리해 아이 투약 명부를 지킨다.\n\n다른 분기에서 그는 열쇠를 구호 서기와 나눠 상자를 들이되 봉인 구멍을 남긴다.\n\n승가구휼정 슬롯은 유지되며 분기만 K260-OUT으로 갈라진다.\n\n개입은 격리 호위 또는 열쇠 분점 입회다."
           },
           "arc": [
             {
@@ -32091,16 +32091,16 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "창동 주거 쉘 급수 거점에서 모복은 양동 줄의 길이로 밤 수위를 읽고, 기술이 주전자를 비우는 순간을 거점의 실패로 적는다.\n\n삼성그룹 주거 쉘 급수 거점장이자 서진아의 실무 담당자로서 구두로 밸브를 잠그라는 전갈은 핸들 페인트에 적지 않는다.\n\n한국 기원으로 창동 차량기지 옆 쉘에서 자랐고, 수위 막대가 최저 눈금에 닿으면 줄을 둘로 나눈 뒤에야 말한다.\n\n모복과 K280은 거점 벽의 핸들 칸에 남는다.",
+            "정체성·출신": "창동 주거 쉘 급수 거점에서 모복은 양동 줄의 길이로 밤 수위를 읽고, 기술이 주전자를 비우는 순간을 거점의 실패로 적는다.\n\n서초전산그룹 주거 쉘 급수 거점장이자 서진아의 실무 담당자로서 구두로 밸브를 잠그라는 전갈은 핸들 페인트에 적지 않는다.\n\n한국 기원으로 창동 차량기지 옆 쉘에서 자랐고, 수위 막대가 최저 눈금에 닿으면 줄을 둘로 나눈 뒤에야 말한다.\n\n모복과 K280은 거점 벽의 핸들 칸에 남는다.",
             "붕괴 전 삶": "붕괴 전 그는 양동 줄이 흩어지기 전에 거점 밸브를 연공회의 게시와 같은 시각에만 돌리려 했다.\n\n기술시험 일정이 주전자를 볼모로 잡지 못하게 하려는 야망이었고, 시각표는 핸들 밑 페인트가 마른 뒤에만 고쳐졌다.\n\n이웃 아이 주전자에 남긴 눈금 표시가 작은 약속이었고, 그 표시가 빚이 된다.\n\n배관 압력이 떨어졌다는 종이만 먼저 도착해도 그는 벽 공고 없이 줄을 나누는 쪽을 택했다.",
             "가문·기업·공동체": "용산선로문(HP02)은 창동 차륜 호송 큐를 급수 밸브 시간과 묶으려 했다.\n\n모복은 헌장의 공개 수위 조항만 받고 전속 시험 일정 문장은 거절했다.\n\n공동체 위치는 서진아의 주거 감사를 핸들에서 집행한 횟수로 증명됐고, 소봉의 전령 종이는 수위 막대와 같은 못에 꽂힌 날만 유효했다.\n\n실재 철도 상호는 그의 거점 일지에 등장하지 않는다.",
             "붕괴의 상처": "북부 배관 압력 하락 종이가 기술시험 공고보다 먼저 도착하자 모복은 양동 줄을 둘로 나누고 연기는 거점 벽에 적지 않았다.\n\n공포는 거점 밸브가 시험 일정에 묶여 주전자가 식기 전에 핸들이 페인트째 빠지는 장면이었다.\n\n냉각수색인균체(G19) 흔적이 배관 이음에 남았으나 그는 오염 구호를 외치지 않고 이음 온도만 적었다.\n\n종이 가장자리가 젖은 뒤에도 최저 눈금의 마지막 금을 읽지 못했다.",
             "생존 전환점": "전환점은 대체 수위 막대를 구해 줄을 하나로 되돌릴지, 핸들 페인트를 지운 손을 밝혀 거점장 교체 절차를 열지 고른 순간이다.\n\n임진강관문전구(XT01)에서 창동 차륜 호송이 관문 밖에 멈춘 뒤 신내가 우회 환승을 연 사건(XT01-SC2)이 밸브 시간과 겹쳤다.\n\n막대를 구하면 줄은 회복되나 호송 대기 물이 한 교대 부족하고, 손을 밝히면 시험은 멈추나 거점 지휘가 하루 빈다.\n\n결정은 K286-TURN에 남는다.",
-            "현재 지위": "현재 모복은 주거 쉘 급수 거점장으로 수위 막대와 양동 줄을 지킨다.\n\n지위는 서진아의 감사 로그와 핸들 페인트 건조 시각으로만 유지된다.\n\n용산선로문이 전속 시험 큐를 요구해도 그는 거절하고, 삼성그룹 당직표와 막대 눈금을 맞춘다.\n\n구두 전갈은 여전히 페인트에 옮기지 않는다.",
+            "현재 지위": "현재 모복은 주거 쉘 급수 거점장으로 수위 막대와 양동 줄을 지킨다.\n\n지위는 서진아의 감사 로그와 핸들 페인트 건조 시각으로만 유지된다.\n\n용산선로문이 전속 시험 큐를 요구해도 그는 거절하고, 서초전산그룹 당직표와 막대 눈금을 맞춘다.\n\n구두 전갈은 여전히 페인트에 옮기지 않는다.",
             "비밀·빚·죄책감": "비밀은 압력 하락 종이를 벽에 안 붙인 채 이웃 아이 눈금만 먼저 맞춘 손이다.\n\n죄책감은 살린 주전자와, 공고 없는 연기로 평채원이 주전자 시간을 어긴 기록 사이에서 자란다.\n\n완전 공개 대신 소봉의 전령 입회 아래 부분 공개만 허용한다.\n\n열람은 서진아의 감사 함과 동시에만 열린다.",
             "관계 공동과거": "서진아의 주거 감사를 거점 핸들에서 집행한 밤은 지휘였고, 소봉의 전령 종이와 수위 막대를 같은 못에 꽂은 새벽은 계약이었다.\n\n평채원이 주전자 시간과 막대를 겹쳐 읽은 일은 협력이되, 한재목의 물 협상 시각을 쉘 쪽에 옮기다가 늦으면 줄이 먼저 갈라져 충돌이 됐다.\n\n같은 거점에서 어떤 양동은 서로를 구했고 어떤 페인트는 배신으로 남았다.\n\n관계 원장은 STORY-B023-K280으로 이어진다.",
             "3막 개인 서사선": "핸들 페인트가 지워진 자리에서 모복은 둘로 나뉜 양동 줄을 다시 쥔다.\n\nHP02 호송 큐와 XT01 우회 환승이 밸브 시각에 겹치면 그는 개폐를 미룬다.\n\n3막의 대가는 호송 대기의 갈증이거나 거점 지휘의 공백이다.\n\n서사선은 STORY-B023-K280이다.",
-            "분기 결말": "한쪽 분기에서 모복은 대체 막대로 줄을 하나로 되돌린다.\n\n다른 분기에서 그는 페인트를 지운 손을 밝혀 시험 큐를 멈추되 자신의 거점 자리를 위험에 둔다.\n\n삼성그룹 슬롯은 유지되며 분기만 K286-OUT으로 갈라진다.\n\n개입은 막대 호송 또는 손 대조다."
+            "분기 결말": "한쪽 분기에서 모복은 대체 막대로 줄을 하나로 되돌린다.\n\n다른 분기에서 그는 페인트를 지운 손을 밝혀 시험 큐를 멈추되 자신의 거점 자리를 위험에 둔다.\n\n서초전산그룹 슬롯은 유지되며 분기만 K286-OUT으로 갈라진다.\n\n개입은 막대 호송 또는 손 대조다."
           },
           "arc": [
             {
@@ -32295,16 +32295,16 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "방화 우물 게시판 앞에서 김도하는 실험동 소음보다 부엌 수돗물 수위를 먼저 묻고, 원수 배급표가 비면 회의를 중단시킨다.\n\n현대자동차주식회사 마곡·방화 주민대표로서 지식을 자랑하는 날에도 배급 솥 숫자를 표결의 첫 칸에 둔다.\n\n마닐라에서 방화 시장으로 온 이모는 타갈로그 숫자로 솥을 세고 한글 게시판에 우물 수위를 옮겨 적었으며, 그는 그 버릇을 대피 경로 공개에만 쓴다.\n\n김도하와 K061은 주민대표 연서의 거부권 칸에 남는다.",
+            "정체성·출신": "방화 우물 게시판 앞에서 김도하는 실험동 소음보다 부엌 수돗물 수위를 먼저 묻고, 원수 배급표가 비면 회의를 중단시킨다.\n\n양재기공주식회사 마곡·방화 주민대표로서 지식을 자랑하는 날에도 배급 솥 숫자를 표결의 첫 칸에 둔다.\n\n마닐라에서 방화 시장으로 온 이모는 타갈로그 숫자로 솥을 세고 한글 게시판에 우물 수위를 옮겨 적었으며, 그는 그 버릇을 대피 경로 공개에만 쓴다.\n\n김도하와 K061은 주민대표 연서의 거부권 칸에 남는다.",
             "붕괴 전 삶": "붕괴 전 그는 삼원 심의에서 주민 거부권을 원수·식량 최저선에 고정하려 대피 경로와 우물 수위를 같은 벽에 붙였다.\n\n연구시설이 생산을 못 해도 관문 마을이 볼모가 되지 않게 하려는 야망이었고, 연구 파견 인원수보다 솥 숫자를 먼저 표결에 올렸다.\n\n이모의 시장 쪽지—배급표가 비면 깃발을 먼저 거둬라—가 빚의 씨앗이 된다.\n\n대량 식량을 외부에 의존하라는 제안이 와도 그는 명부 양도를 회의 안건에서 지웠다.",
             "가문·기업·공동체": "마곡생명가(HC03)는 연구 파견을 주민 배급 참관과 맞바꾸려 했다.\n\n김도하는 헌장의 최저선 조항만 받고 전속 실험동 문장은 거절했다.\n\n공동체 위치는 정호준의 삼원 심의를 주민 쪽에서 완성한 날짜로 증명됐고, 채봄은 깃발이 골목에서 돌아올 때까지 호각을 참기로 맹세한 밤에만 순찰을 늘렸다.\n\n실재 연구소 상호는 그의 연서에 쓰지 않는다.",
             "붕괴의 상처": "서부 급수계약 만료 소문이 방화 저수조까지 흔들자 김도하는 연구자 파견을 동결하고 급수계약정 최저선 조항을 요구했다.\n\n공포는 원수와 식량을 외부에 의존하다가 급수계약 한 줄에 주민 명부가 통째로 넘어가는 장면이었다.\n\n클린룸변이자(G08) 경보가 실험동에서 울렸으나 그는 괴물 탓으로 회의를 닫지 않고 우물 숫자만 다시 세었다.\n\n깃발이 젖은 뒤에도 명부 마지막 줄을 읽지 못했다.",
             "생존 전환점": "전환점은 대체 식량 호송을 성사시켜 파견 동결을 풀지, 명부 양도 밀약을 찾아 주민 거부권을 강화할지 고른 순간이다.\n\n인천신탁전구(XT05)에서 마곡이 궤도 단말 오탐을 교정하고 가락이 이산가족 상담 창구를 연장한 사건(XT05-SC3)이 우물 게시판과 겹쳤다.\n\n호송을 열면 솥은 차지만 유민호의 기지 통행세가 민가 배급을 한 칸 깎고, 밀약을 밝히면 거부권은 강해지나 파견 동결이 길어져 실험동 전력이 민가를 더 당긴다.\n\n결정은 K061-TURN에 남는다.",
-            "현재 지위": "현재 김도하는 마곡·방화 주민대표로 우물 수위와 배급 솥 숫자를 매일 게시한다.\n\n지위는 세습이 아니라 삼원 심의 연서와 주민 출석으로만 유지된다.\n\n마곡생명가가 전속 파견을 요구해도 그는 거절하고, 현대자동차주식회사 당직표와 저수조 눈금을 맞춘다.\n\n부엌 수돗물이 확인되기 전에는 실험동 보고를 안건 맨 위에 올리지 않는다.",
+            "현재 지위": "현재 김도하는 마곡·방화 주민대표로 우물 수위와 배급 솥 숫자를 매일 게시한다.\n\n지위는 세습이 아니라 삼원 심의 연서와 주민 출석으로만 유지된다.\n\n마곡생명가가 전속 파견을 요구해도 그는 거절하고, 양재기공주식회사 당직표와 저수조 눈금을 맞춘다.\n\n부엌 수돗물이 확인되기 전에는 실험동 보고를 안건 맨 위에 올리지 않는다.",
             "비밀·빚·죄책감": "비밀은 이모의 타갈로그 솥 숫자가 밀약 초안의 가구 수와 같았다는 메모다.\n\n죄책감은 동결로 지킨 명부와, 그 사이 변태온이 대합실에서 거부권을 집행하느라 막힌 통행 사이에서 자란다.\n\n전부 공개 대신 한지온의 원수 조달 행렬 입회 아래 메모 한 줄만 허용한다.\n\n열람은 구선율의 시장 연서와 동시에만 열린다.",
             "관계 공동과거": "정호준의 삼원 심의를 주민 쪽에서 완성한 일은 계약이자 동맹이었고, 한지온의 원수 조달 행렬과 식량을 교환한 아침은 생존 계약이었다.\n\n유민호의 기지 통행세가 민가 배급을 깎을 때는 경쟁이 됐고, 채봄의 호각 맹세는 깃발을 골목에 묶어 두었다.\n\n변태온과 구선율이 거부권과 연서를 집행한 밤은 구원이었으나 파견 동결이 길어지면 같은 대합실이 지연의 장소가 됐다.\n\n관계 원장은 STORY-B023-K061에 연결된다.",
             "3막 개인 서사선": "방화 우물 숫자가 지워진 자리에서 김도하는 파견 동결 깃발을 다시 꽂는다.\n\nHC03 실험동 요구와 XT05 궤도 오탐 교정이 게시판에 겹치면 그는 솥 숫자 표결을 먼저 연다.\n\n3막의 대가는 통행세의 인상분이거나 실험동 전력이 민가를 당기는 시간이다.\n\n서사선은 STORY-B023-K061이다.",
-            "분기 결말": "한쪽 분기에서 김도하는 대체 식량 호송을 열어 파견 동결을 푼다.\n\n다른 분기에서 그는 명부 양도 밀약을 찾아 주민 거부권을 강화하고 동결을 유지한다.\n\n현대자동차주식회사 슬롯은 유지되며 분기만 K061-OUT으로 갈라진다.\n\n개입은 호송 엄호 또는 밀약 대조다."
+            "분기 결말": "한쪽 분기에서 김도하는 대체 식량 호송을 열어 파견 동결을 푼다.\n\n다른 분기에서 그는 명부 양도 밀약을 찾아 주민 거부권을 강화하고 동결을 유지한다.\n\n양재기공주식회사 슬롯은 유지되며 분기만 K061-OUT으로 갈라진다.\n\n개입은 호송 엄호 또는 밀약 대조다."
           },
           "arc": [
             {
@@ -32510,7 +32510,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "가락 청과동 저울 위에 동예솔은 잎맥이 꺾인 상추부터 골라 내려놓는다.\n\n천주교 서울대교구 청과동 시장 거점장이자 남시윤의 실무 담당자로서 직거래를 제안하는 생산국 사신을 가시처럼 여기고, 품목 표를 동맹 구호보다 먼저 센다.\n\n한국 기원으로 송파 생활권에서 자랐고, 목소리는 붙임성 있으나 호송 낙찰 전 게시가 비면 저울을 잠근다.\n\n동예솔과 K380은 청과동 당직 칠판의 거점 칸에 고정된다.",
+            "정체성·출신": "가락 청과동 저울 위에 동예솔은 잎맥이 꺾인 상추부터 골라 내려놓는다.\n\n본당인준정 청과동 시장 거점장이자 남시윤의 실무 담당자로서 직거래를 제안하는 생산국 사신을 가시처럼 여기고, 품목 표를 동맹 구호보다 먼저 센다.\n\n한국 기원으로 송파 생활권에서 자랐고, 목소리는 붙임성 있으나 호송 낙찰 전 게시가 비면 저울을 잠근다.\n\n동예솔과 K380은 청과동 당직 칠판의 거점 칸에 고정된다.",
             "붕괴 전 삶": "붕괴 전 그는 가락 청과 품목을 약소국 공동구매 창구의 시장 얼굴로 묶으려 했다.\n\n수서의 공동교섭권과 한 몸이 되게 하려는 야망이었고, 초안 조항은 경매대 밑 서랍에만 접혀 있었다.\n\n아버지에게 남긴 짧은 말—장마 전에 배추 칸 온도를 한 번 더 본다—가 나중에 빚이 된다.\n\n암사 보호계약 문구가 호송 칸에 붙어도 품목 표는 가리지 않았다.",
             "가문·기업·공동체": "서울역재고가(HC09)는 배급 유통 의무를 내세워 청과동 참관석을 요구했다.\n\n동예솔은 헌장의 공개 품목 조항만 받고 전속 시장 문장은 거절했다.\n\n공동체 위치는 호송 입찰을 문도윤의 공개 게시 없이 낙찰시키지 않은 횟수로 증명됐다.\n\n실재 유통 상호는 그의 저울 일지에 쓰지 않는다.",
             "붕괴의 상처": "흉작 소문이 퍼지자 상인회의가 창고 봉쇄에 찬성 표를 던졌고 동예솔은 청과동 저울을 사흘 잠갔다.\n\n공포는 암사 보호계약이 청과 호송을 삼켜 시장이 군량 하청으로 전락하는 그림이었다.\n\n추를 상자에 넣은 뒤에도 그는 잠긴 바늘의 마지막 눈금을 읽지 못했다.\n\n천나솔의 교정 쪽지가 문틈으로 들어왔으나 봉쇄 사흘 동안은 열지 않았다.",
@@ -32519,7 +32519,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 봉쇄 첫날 아버지 몫 배추 한 단을 저울 뒤 그늘에 옮긴 쪽지다.\n\n죄책감은 살린 공동구매 초안과, 그 사흘 동안 경매를 놓친 골목 행상 사이에서 자란다.\n\n완전 고백 대신 천나솔 입회 아래 부분 공개만 허용한다.\n\n열람은 문도윤의 입찰 게시와 동시에만 열린다.",
             "관계 공동과거": "남시윤의 표를 시장에서 집행한 밤은 지휘였고, 천나솔의 저울과 품목을 맞춘 아침은 같은 눈의 협력이었다.\n\n정유라에게 청과 조항을 넣으려 한 일은 동맹이되, 문도윤의 공개 게시가 늦으면 낙찰이 멈춰 속도 다툼이 됐다.\n\n같은 청과동에서 어떤 상자는 서로를 구했고 어떤 봉쇄 표는 배신으로 남았다.\n\n관계 원장은 STORY-B024-K380으로 이어진다.",
             "3막 개인 서사선": "잠긴 청과동 저울 앞에서 동예솔은 상인회의 표를 다시 센다.\n\nHC09 참관과 XT03 통조림 할당이 같은 품목 표에 겹치면 그는 낙찰 호각을 삼킨다.\n\n3막의 대가는 상인회의 공백이거나 청과동의 추가 정지다.\n\n서사선 식별자는 STORY-B024-K380로 고정된다.",
-            "분기 결말": "첫 결말에서 동예솔은 봉쇄 표결을 뒤집어 호송을 다시 연다.\n\n둘째 결말에서 그는 청과 공동구매 조항을 약소국 회의로 가져가 군량 하청을 막는다.\n\n천주교 서울대교구 슬롯은 유지되며 분기만 K388-OUT으로 갈라진다.\n\n개입은 표결 호위 또는 공동구매 조항 호송이다."
+            "분기 결말": "첫 결말에서 동예솔은 봉쇄 표결을 뒤집어 호송을 다시 연다.\n\n둘째 결말에서 그는 청과 공동구매 조항을 약소국 회의로 가져가 군량 하청을 막는다.\n\n본당인준정 슬롯은 유지되며 분기만 K388-OUT으로 갈라진다.\n\n개입은 표결 호위 또는 공동구매 조항 호송이다."
           },
           "arc": [
             {
@@ -32561,7 +32561,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "수서 차량기지 유치선에서 원초온은 교대를 어긴 사람을 이름이 아니라 시각으로 부른다.\n\n전국민주노동조합총연맹 기지 당직장으로서 유치선 당직을 집처럼 여기고, 기업 추천이 출고를 삼키는 순간을 모욕으로 칠판에 적는다.\n\n한국 기원으로 강남 생활권에서 자랐고, 분필 가루가 묻은 손목을 씻지 않은 채 출고 칸을 잠근다.\n\n원초온과 K404는 기지 당직 칠판의 첫 줄에만 고정된다.",
+            "정체성·출신": "수서 차량기지 유치선에서 원초온은 교대를 어긴 사람을 이름이 아니라 시각으로 부른다.\n\n정동노동총연맹 기지 당직장으로서 유치선 당직을 집처럼 여기고, 기업 추천이 출고를 삼키는 순간을 모욕으로 칠판에 적는다.\n\n한국 기원으로 강남 생활권에서 자랐고, 분필 가루가 묻은 손목을 씻지 않은 채 출고 칸을 잠근다.\n\n원초온과 K404는 기지 당직 칠판의 첫 줄에만 고정된다.",
             "붕괴 전 삶": "붕괴 전 그는 당직 명과 출고 시각을 같은 칠판에 붙이는 규칙을 만들었다.\n\n수서 기지를 협약도시 고유 거점으로 남겨 강국 호위병이 유치선에 서지 못하게 하려는 야망이었다.\n\n동생에게 남긴 쪽지—교대 호각이 울리기 전에 공구함을 잠근다—가 훗날 빚이 된다.\n\n추천 명단이 게시판 위로 밀려도 시험 서명 칸은 비우지 않았다.",
             "가문·기업·공동체": "창동방호가(HC08)은 궤도 방위 의무를 내세워 유치선 참관석을 요구했다.\n\n원초온은 헌장의 공개 당직 조항만 인정하고 전속 출고 문장은 거절했다.\n\n공동체 위치는 외부 무장 접근을 수늘결의 시험 서명 없이 막은 횟수로 증명됐다.\n\n실재 차량 상호는 그의 칠판에 쓰지 않는다.",
             "붕괴의 상처": "마곡이 수질 검사 인력을 요청하자 비공개 파견 명단이 기지 출고 칠판에 한 줄 먼저 적혀 있었다.\n\n원초온은 그 줄을 분필로 가린 채 출고를 멈췄다.\n\n공포는 기지 당직이 인질 파견의 발판이 되어 은보람의 공개 시험이 내부에서 깨지는 그림이었다.\n\n호각이 꺼진 뒤에도 그는 가린 줄의 마지막 글자를 읽지 못한 채 분필을 꺾지 않았다.",
@@ -32570,7 +32570,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 그가 가린 비공개 파견 줄의 첫 음절이다.\n\n죄책감은 제시간에 나간 회차 편성과, 가린 동안 공구함을 열지 못해 교대를 놓친 견습 사이에서 자란다.\n\n전부를 지우면 시험 신뢰가 하루 끊길 수 있어 부분 공개 칸만 남겼다.\n\n열람은 초진솔의 증언 칠판과 동시에만 열린다.",
             "관계 공동과거": "수늘결의 정비 창과 당직을 나눈 밤은 계약이었고, 은보람의 추천 게시판을 맨 위에 둔 아침은 공개 시험의 동맹이었다.\n\n초진솔과 겹친 당직 증언은 맹세에 가까웠고, 임초원을 공동 심사관으로 부르려 한 일은 협력이되 파견 줄이 먼저 적히면 해석 다툼이 됐다.\n\n같은 유치선에서 어떤 호각은 서로를 구했고 어떤 한 줄은 배신으로 읽혔다.\n\n관계 끝점은 STORY-B024-K404로 이어진다.",
             "3막 개인 서사선": "출고 칠판의 가린 줄 앞에서 원초온은 파견 시각을 다시 적는다.\n\nHC08 참관과 XT03 회차선 요청이 같은 호각에 올라오자 그는 이중 열쇠 구멍을 막는다.\n\n대가를 치를 때 파견 증거와 정시 회차 중 하나만 남는다.\n\n서사선은 STORY-B024-K404다.",
-            "분기 결말": "한쪽 분기에서 원초온은 비공개 줄을 지워 회차선을 제때 연다.\n\n다른 분기에서 그는 출고를 이중 열쇠로 바꿔 공개 시험의 서명을 지킨다.\n\n전국민주노동조합총연맹 슬롯은 유지되며 분기 식별만 K413-OUT으로 갈라진다.\n\n개입은 줄 삭제 호위 또는 열쇠 분할이다."
+            "분기 결말": "한쪽 분기에서 원초온은 비공개 줄을 지워 회차선을 제때 연다.\n\n다른 분기에서 그는 출고를 이중 열쇠로 바꿔 공개 시험의 서명을 지킨다.\n\n정동노동총연맹 슬롯은 유지되며 분기 식별만 K413-OUT으로 갈라진다.\n\n개입은 줄 삭제 호위 또는 열쇠 분할이다."
           },
           "arc": [
             {
@@ -32714,7 +32714,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "마곡 대합실에서 변태온은 실험동 소음보다 부엌 수돗물 소리를 먼저 묻는다.\n\n현대자동차주식회사 마곡 대합실 역장으로서 지식을 자랑하는 날에도 원수 배급표가 비면 방송을 중단시키고, 연구 화차를 민가 배급보다 앞에 두지 않는다.\n\n한국 기원으로 강서 생활권에서 자랐고, 대피 경로 게시판의 분필을 저녁마다 다시 쓴다.\n\n변태온과 K073은 대합실 거부권 칠판의 역장 칸에 고정된다.",
+            "정체성·출신": "마곡 대합실에서 변태온은 실험동 소음보다 부엌 수돗물 소리를 먼저 묻는다.\n\n양재기공주식회사 마곡 대합실 역장으로서 지식을 자랑하는 날에도 원수 배급표가 비면 방송을 중단시키고, 연구 화차를 민가 배급보다 앞에 두지 않는다.\n\n한국 기원으로 강서 생활권에서 자랐고, 대피 경로 게시판의 분필을 저녁마다 다시 쓴다.\n\n변태온과 K073은 대합실 거부권 칠판의 역장 칸에 고정된다.",
             "붕괴 전 삶": "붕괴 전 그는 원수·식량 최저선과 기술 인증이 한 지붕에서 서명되는 관문 허브를 그리려 했다.\n\n주민 거부권의 대면 창구가 되게 하려는 야망이었고, 초안은 우물 수위표 여백에만 적혔다.\n\n동생 연구실에 남긴 말—배급 솥 숫자를 파견 인원보다 먼저 방송한다—가 빚이 된다.\n\n인증 화차가 먼저 와도 민가 솥 칸은 가리지 않았다.",
             "가문·기업·공동체": "북한산보국문기록가(HC05)은 연구 인증 의무를 내세워 대합실 참관석을 요구했다.\n\n변태온은 헌장의 공개 최저선 조항만 받고 전속 파견 문장은 거절했다.\n\n공동체 위치는 연구 파견 인원수보다 배급 솥 숫자를 먼저 표결 방송에 올린 날짜로 증명됐다.\n\n실재 연구소 상호는 그의 방송 대본에 쓰지 않는다.",
             "붕괴의 상처": "서부 급수계약 만료 소문이 방화 저수조까지 흔들자 변태온은 연구자 파견 창구를 동결하고 급수계약정 최저선 조항을 요구했다.\n\n공포는 대량 식량과 원수를 외부에 의존하다가 급수계약 한 줄에 대합실 명부가 통째로 넘어가는 그림이었다.\n\n창구 셔터를 내린 뒤에도 그는 명부 마지막 이름을 읽지 못한 채 마이크를 놓지 않았다.\n\n구연재의 인증 화차가 급수열차 뒤에 섰으나 동결 동안은 앞에 붙이지 않았다.",
@@ -32723,7 +32723,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 동결 전날 동생 연구실 몫 원수를 한 통 빼 둔 쪽지다.\n\n죄책감은 살린 최저선 조항과, 그 때문에 궤도 오탐을 한 교대 미룬 기술자 사이에서 자란다.\n\n전부를 방송하면 명부 신뢰가 하루 끊길 수 있어 부분 공개만 남겼다.\n\n열람은 김도하의 연서와 동시에만 열린다.",
             "관계 공동과거": "김도하의 주민 거부권을 대합실에서 집행한 밤은 지휘였고, 구연재의 인증 화차를 급수열차 뒤에 붙인 아침은 같은 지붕의 계약이었다.\n\n한지온의 원수 조달 행렬을 승강장에서 받은 일은 협력이되, 솥 숫자가 파견 인원보다 적으면 방송이 끊어져 다툼이 됐다.\n\n같은 대합실에서 어떤 표결은 서로를 구했고 어떤 명부 줄은 배신으로 읽혔다.\n\n관계 원장은 STORY-B024-K073으로 이어진다.",
             "3막 개인 서사선": "동결된 파견 창구 앞에서 변태온은 솥 숫자를 다시 센다.\n\nHC05 참관과 XT05 오탐 교정이 같은 방송 큐에 겹치면 그는 연구 화차 안내를 삼킨다.\n\n3막의 대가는 오탐 교정 지연이거나 창구의 하루 추가 동결이다.\n\n서사선은 STORY-B024-K073다.",
-            "분기 결말": "첫 결말에서 변태온은 대체 식량 호송을 성사시켜 파견 창구 동결을 푼다.\n\n둘째 결말에서 그는 명부 양도 밀약을 찾아 주민 거부권을 강화한다.\n\n현대자동차주식회사 슬롯은 유지되며 분기만 K073-OUT으로 갈라진다.\n\n개입은 식량 호송 또는 밀약 추적이다."
+            "분기 결말": "첫 결말에서 변태온은 대체 식량 호송을 성사시켜 파견 창구 동결을 푼다.\n\n둘째 결말에서 그는 명부 양도 밀약을 찾아 주민 거부권을 강화한다.\n\n양재기공주식회사 슬롯은 유지되며 분기만 K073-OUT으로 갈라진다.\n\n개입은 식량 호송 또는 밀약 추적이다."
           },
           "arc": [
             {
@@ -32765,7 +32765,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "뚝섬 공방 금고 앞에서 제하율은 조립 기록의 빈칸을 손가락으로 짚고 증오한다.\n\n대한예수교장로회 공방 조립기록 실무관으로서 총관의 빈자리를 혈통으로 메우자는 말을 공방의 모욕으로 듣고, 날짜를 두 원장에서 대조한다.\n\n한국 기원으로 성수 생활권에서 자랐고, 도장이 마르기 전에는 금고 문을 열지 않는다.\n\n제하율과 K101은 평의회 금고 원장의 실무 칸에 고정된다.",
+            "정체성·출신": "뚝섬 공방 금고 앞에서 제하율은 조립 기록의 빈칸을 손가락으로 짚고 증오한다.\n\n설교명부정 공방 조립기록 실무관으로서 총관의 빈자리를 혈통으로 메우자는 말을 공방의 모욕으로 듣고, 날짜를 두 원장에서 대조한다.\n\n한국 기원으로 성수 생활권에서 자랐고, 도장이 마르기 전에는 금고 문을 열지 않는다.\n\n제하율과 K101은 평의회 금고 원장의 실무 칸에 고정된다.",
             "붕괴 전 삶": "붕괴 전 그는 핵심 공정의 조립 기록을 평의회 금고와 현장 원장에 동시에 올리는 습관을 만들었다.\n\n양자도 가문도 아닌 공방의 동의만으로 총관을 세우게 하려는 야망이었다.\n\n스승에게 남긴 약속—빈칸이 있는 날에는 출고 호각을 불지 않는다—가 빚이 된다.\n\n가문 원장의 날짜가 달라도 현장 숫자는 고치지 않았다.",
             "가문·기업·공동체": "서울역기록법가(HP04)는 기록 인준 의무를 내세워 공방 금고 참관석을 요구했다.\n\n제하율은 헌장의 이중 원장 조항만 인정하고 전속 해석 문장은 거절했다.\n\n공동체 위치는 기술총관의 빈 도장을 대표 연서로만 대행한다고 쓴 날짜로 증명됐다.\n\n실재 기록 업체 상호는 그의 원장에 쓰지 않는다.",
             "붕괴의 상처": "봄의 세 유언이 기록청에 접수되자 제하율은 공방 금고의 조립 기록을 잠그고 임초원만 읽을 수 있는 정비일지의 단독 해석을 거부했다.\n\n공포는 세 장 중 가문 편이 진본으로 인준되어 조립 기록이 세습 직능의 하청 장부가 되는 장면이었다.\n\n금고 열쇠를 돌린 뒤에도 그는 빈칸의 마지막 공정명을 읽지 못한 채 장갑을 벗지 않았다.\n\n정가온의 유언 원장이 같은 시각에 도착했으나 교차검증 전에는 날인을 열지 않았다.",
@@ -32774,7 +32774,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 그가 별도 함에 가둔, 날짜가 하루 어긋난 조립 사본 한 장이다.\n\n죄책감은 살린 공동통치안 숫자와, 그 때문에 밀봉 공구를 하루 미룬 현장 반 사이에서 자란다.\n\n전부를 평의회에 올리면 금고 신뢰가 하루 끊길 수 있어 부분 공개만 남겼다.\n\n열람은 여민우의 발견 칸과 동시에만 열린다.",
             "관계 공동과거": "정가온의 유언 원장을 조립 기록으로 교차검증한 밤은 계약이었고, 한소미의 공동통치안을 현장 숫자로 받친 아침은 동맹이었다.\n\n여민우가 발견 칸을 맞춘 일은 맹세에 가까웠고, 박세린의 가문 원장과는 같은 문장에서 해석이 갈라졌다.\n\n같은 금고 앞에서 어떤 빈칸은 서로를 구했고 어떤 날짜는 배신으로 읽혔다.\n\n관계 끝점은 STORY-B024-K101로 이어진다.",
             "3막 개인 서사선": "잠긴 공방 금고 앞에서 제하율은 세 유언의 날짜를 다시 대조한다.\n\nHP04 참관과 XT03 밀봉 공구 송부가 같은 원장에 겹치면 그는 출고 호각을 삼킨다.\n\n3막의 대가는 공구 지연이거나 현장 숫자의 하루 공백이다.\n\n서사선은 STORY-B024-K101다.",
-            "분기 결말": "한쪽 분기에서 제하율은 금고 조립 기록을 지켜 공동통치안을 민다.\n\n다른 분기에서 그는 기록 조작 의혹을 임초원 쪽으로 돌려 공구 출고를 우선한다.\n\n대한예수교장로회 슬롯은 유지되며 분기 식별만 K102-OUT으로 갈라진다.\n\n개입은 금고 호위 또는 의혹 추적이다."
+            "분기 결말": "한쪽 분기에서 제하율은 금고 조립 기록을 지켜 공동통치안을 민다.\n\n다른 분기에서 그는 기록 조작 의혹을 임초원 쪽으로 돌려 공구 출고를 우선한다.\n\n설교명부정 슬롯은 유지되며 분기 식별만 K102-OUT으로 갈라진다.\n\n개입은 금고 호위 또는 의혹 추적이다."
           },
           "arc": [
             {
@@ -32816,7 +32816,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "뚝섬 펌프실 철계단에서 김보람은 장갑을 끼기 전에 임펠러 쪽 진동을 손바닥으로 읽는다.\n\n대한예수교장로회 펌프수비대장으로서 수비를 보호군 명목으로 내주라는 쪽지를 배신으로 접고, 진동이 바뀌면 회의를 중단시킨다.\n\n성수에서 태어났고 다낭에서 건너온 어머니는 골목 수리점 부엌에서 베트남어로 베어링 소리를 흉내 냈으며 김보람은 그 리듬을 당직 한국어 암호패와 섞지 않은 채 펌프실에서만 쓴다.\n\n출신 이력이 봉쇄 판단을 미리 말하지 않으며, K089는 야간 암호패 원장의 대장 칸에 고정된다.",
+            "정체성·출신": "뚝섬 펌프실 철계단에서 김보람은 장갑을 끼기 전에 임펠러 쪽 진동을 손바닥으로 읽는다.\n\n설교명부정 펌프수비대장으로서 수비를 보호군 명목으로 내주라는 쪽지를 배신으로 접고, 진동이 바뀌면 회의를 중단시킨다.\n\n성수에서 태어났고 다낭에서 건너온 어머니는 골목 수리점 부엌에서 베트남어로 베어링 소리를 흉내 냈으며 김보람은 그 리듬을 당직 한국어 암호패와 섞지 않은 채 펌프실에서만 쓴다.\n\n출신 이력이 봉쇄 판단을 미리 말하지 않으며, K089는 야간 암호패 원장의 대장 칸에 고정된다.",
             "붕괴 전 삶": "붕괴 전 그는 정수 펌프와 동부 교량 접근을 수비대 단독 봉쇄권으로 묶으려 했다.\n\n후계가 누가 되든 물이 무력의 볼모가 되지 않게 하려는 야망이었고, 초안 암호는 펌프실 배관 페인트 안쪽에만 적혔다.\n\n어머니에게 남긴 말—진동이 가늘어지면 저녁밥을 덮지 말고 올라온다—가 빚이 된다.\n\n주간 평의회 연서가 있어도 야간 출입 칸은 나누지 않았다.",
             "가문·기업·공동체": "영등포수문가(HP01)는 펌프 측량 의무를 내세워 야간 펌프실 참관석을 요구했다.\n\n김보람은 헌장의 이중 확인 조항만 받고 전속 수비 문장은 거절했다.\n\n공동체 위치는 야간 출입을 수비대 암호패와 공정 감독의 이중 확인만으로 연 횟수로 증명됐다.\n\n실재 펌프 설비 상호는 그의 당직 일지에 쓰지 않는다.",
             "붕괴의 상처": "배우진이 보호군 파견안을 내자 김보람은 뚝섬 펌프실을 외부 장교 출입 금지로 올리고 교량 척후를 늘렸다.\n\n공포는 암사 보호군이 점검 공백을 구원으로 위장해 펌프실에 주둔하는 장면이었다.\n\n철문을 잠근 뒤에도 그는 진동 일지의 마지막 칸을 읽지 못한 채 암호패를 놓지 않았다.\n\n최나래의 교량 순찰 맹세가 같은 밤에 도착했으나 장교 출입 칸은 열지 않았다.",
@@ -32825,7 +32825,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "비밀은 봉쇄 첫날 어머니 수리점 열쇠를 펌프실 배관 뒤에 걸어 둔 일이다.\n\n죄책감은 막은 장교 출입과, 그 때문에 밀봉 공구가 교량에서 하루 머문 최나래의 정비조 사이에서 자란다.\n\n전부를 평의회에 올리면 야간 신뢰가 하루 끊길 수 있어 부분 공개만 남겼다.\n\n열람은 진모래의 의무 쪽 봉쇄 기록과 동시에만 열린다.",
             "관계 공동과거": "한소미의 주간 연서를 따른 낮의 지휘였고, 최나래와 나눈 교량 순찰은 맹세였다.\n\n채구름과 기하겸이 민병 교대를 맞춘 일은 수비 그물이었고, 변석훈의 전력 대기는 펌프 최저선 다음이었다.\n\n같은 펌프실에서 어떤 진동은 서로를 구했고 어떤 암호패는 배신으로 읽혔다.\n\n관계 끝점은 STORY-B024-K089로 이어진다.",
             "3막 개인 서사선": "잠긴 펌프실 철문 앞에서 김보람은 임펠러 진동을 다시 손바닥에 담는다.\n\nHP01 참관과 XT03 밀봉 공구 송부가 같은 점검 창에 겹치면 그는 장교 출입 칸을 봉한다.\n\n3막의 대가는 공구 지연이거나 야간 암호의 하루 공백이다.\n\n서사선은 STORY-B024-K089다.",
-            "분기 결말": "첫 결말에서 김보람은 장교 출입 시도 증거를 가져와 봉쇄를 정당화한다.\n\n둘째 결말에서 그는 암호패 유출을 밝혀 대장 교체 절차를 연다.\n\n대한예수교장로회 슬롯은 유지되며 분기만 K090-OUT으로 갈라진다.\n\n개입은 출입 증거 호송 또는 암호 감사다."
+            "분기 결말": "첫 결말에서 김보람은 장교 출입 시도 증거를 가져와 봉쇄를 정당화한다.\n\n둘째 결말에서 그는 암호패 유출을 밝혀 대장 교체 절차를 연다.\n\n설교명부정 슬롯은 유지되며 분기만 K090-OUT으로 갈라진다.\n\n개입은 출입 증거 호송 또는 암호 감사다."
           },
           "arc": [
             {
@@ -33201,9 +33201,9 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K235",
           "name": "봉용",
           "sections": {
-            "정체성·출신": "봉용은 전국경제인연합회 채널 길드 편성실의 거점 실무 담당자이자 오하늘의 지시를 실제 방송 시각으로 바꾸는 한국계 편성 책임자이다.\n\n그는 상암의 옥탑방에서 라디오 수리점을 하던 고모와 살며 잡음 속에서도 사람 목소리의 간격을 구별하는 법을 배웠다.\n\n검은 칠판 자석 글자 초 단위 모래시계를 사용하며 전파보다 누가 언제 침묵해야 하는지를 더 위험한 권력으로 여긴다.",
+            "정체성·출신": "봉용은 여의도출자연합회 채널 길드 편성실의 거점 실무 담당자이자 오하늘의 지시를 실제 방송 시각으로 바꾸는 한국계 편성 책임자이다.\n\n그는 상암의 옥탑방에서 라디오 수리점을 하던 고모와 살며 잡음 속에서도 사람 목소리의 간격을 구별하는 법을 배웠다.\n\n검은 칠판 자석 글자 초 단위 모래시계를 사용하며 전파보다 누가 언제 침묵해야 하는지를 더 위험한 권력으로 여긴다.",
             "붕괴 전 삶": "붕괴 전 봉용은 지역 방송국의 편성 보조로 일하며 재난 자막 생방송 연결 광고 결방 시간을 손으로 맞췄다.\n\n그는 화면에 나오지 않았지만 출연자와 송신실 사이를 뛰어다니며 지연된 십 초를 다른 프로그램에서 깎아 내는 일을 했다.\n\n붕괴 첫날에는 가족에게 대피 방송을 보내려 했으나 공용 채널을 사적으로 쓸 수 없어, 고모의 마지막 호출을 편성 대기음 뒤에서 듣기만 했다.",
-            "가문·기업·공동체": "봉용의 가족은 혈연이 적어 고모의 수리점 단골과 동네 아마추어 무선사들이 명절과 병원비를 함께 챙기는 느슨한 공동체를 이루었다.\n\n그는 HC10 소속 채널 길드의 칠판을 관리하며 전국경제인연합회 거점 전령대 지하 피난처의 방송 시간을 충돌 없이 배열한다.\n\n길드원들은 그를 조용한 서기로 여기지만, 칠판에서 이름 하나를 지우는 행위가 한 구역을 세상 밖으로 밀어낸다는 사실을 그가 가장 잘 안다.",
+            "가문·기업·공동체": "봉용의 가족은 혈연이 적어 고모의 수리점 단골과 동네 아마추어 무선사들이 명절과 병원비를 함께 챙기는 느슨한 공동체를 이루었다.\n\n그는 HC10 소속 채널 길드의 칠판을 관리하며 여의도출자연합회 거점 전령대 지하 피난처의 방송 시간을 충돌 없이 배열한다.\n\n길드원들은 그를 조용한 서기로 여기지만, 칠판에서 이름 하나를 지우는 행위가 한 구역을 세상 밖으로 밀어낸다는 사실을 그가 가장 잘 안다.",
             "붕괴의 상처": "하수너구리족이 상암의 지하 케이블 통로를 점유했을 때 봉용은 야간 송신을 유지하려고 고주파 소음을 흘려 그들을 외곽 배수로로 몰았다.\n\n소음이 새끼 무리를 자극하자 그는 냉각된 식량 저장고를 먹이 우회 지점으로 열고 세 통로를 봉인했지만, 그 안에서 수리대원과 고모의 무전 표식이 끊겼다.\n\n이후 그는 깨끗한 음질보다 잡음 속 구조 신호를 먼저 듣고도, 당시 녹음은 누구에게도 들려주지 않는다.",
             "생존 전환점": "봉용은 하수너구리족을 몰아내려는 길드 경비를 막고 HC04 중개로 음식 찌꺼기 건조한 둥지 재료 야간 통행 시간을 교환하는 협상을 제안했다.\n\n그는 방송 종료음을 통행 시작 신호로 정하고 전령들이 지나갈 때에는 송신기 냉각 시간을 늘려 통로의 진동을 줄였다.\n\n이 거래로 케이블망은 보존되었지만, 그는 너구리족에게 편성실 아래의 폐기물 창고를 영구 거처로 내주는 선택을 했다.",
             "현재 지위": "봉용은 오하늘의 지휘 아래 편성실 칠판을 맡아 구조방송 배급 공지 전령 출발 시각을 분 단위로 배열하는 거점 실무 담당자이다.\n\n그는 소감의 전령 원장과 방송 시각을 대조하며, 칠판의 파란 자석이 움직일 때마다 지상과 지하의 통행 순서가 달라지게 한다.\n\n직급은 높지 않지만 모든 지시가 그의 손을 거쳐야 들리는 말이 되므로, 침묵을 편성할 수 있는 위험한 영향력을 가진다.",
@@ -33261,10 +33261,10 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "sections": {
             "정체성·출신": "봉두는 북한산보국문의 침수된 학교와 채석장 사이에서 자란 한국계 생존자로, 사람보다 지형의 높낮이와 바람 방향을 먼저 읽는다.\n\n그는 방어 고지 거점장이라는 직책을 명예가 아니라 가장 늦게 철수해야 하는 의무로 받아들인다.\n\n정상의 녹슨 풍향계와 휴대용 칠판은 그의 판단을 공동체가 검증하게 만드는 상징이자 도구로 남아 있다.",
             "붕괴 전 삶": "붕괴 전 봉두는 산불 감시와 송전선 순찰을 번갈아 맡으며 능선의 연기 야간 불빛 계절풍을 기록한다.\n\n그는 무전이 끊긴 날에도 쓸 수 있도록 색분필과 거울 반사로 신호표를 만들었지만 당시에는 지나치게 신중하다는 평가를 받는다.\n\n마지막 대피 훈련에서 상부 지시를 기다리느라 계곡 주민을 늦게 움직인 경험이 이후 모든 결정을 재촉한다.",
-            "가문·기업·공동체": "봉두가 속한 HP05는 혈연보다 공동 순찰과 식량 적립으로 결속한 산지 가문이며, 대한불교조계종에 횃불용 기름과 고지 통행표를 제공한다.\n\n그는 폐교 옥상에 각 가구의 피난 순서와 부양 인원을 적어 누구도 몰래 앞줄을 차지하지 못하게 한다.\n\n다만 겨울 비축분을 지키려는 원로들과 저지대 피난민을 더 받아들이려는 젊은 경계대 사이에서 매일 불편한 중재를 감당한다.",
+            "가문·기업·공동체": "봉두가 속한 HP05는 혈연보다 공동 순찰과 식량 적립으로 결속한 산지 가문이며, 승가구휼정에 횃불용 기름과 고지 통행표를 제공한다.\n\n그는 폐교 옥상에 각 가구의 피난 순서와 부양 인원을 적어 누구도 몰래 앞줄을 차지하지 못하게 한다.\n\n다만 겨울 비축분을 지키려는 원로들과 저지대 피난민을 더 받아들이려는 젊은 경계대 사이에서 매일 불편한 중재를 감당한다.",
             "붕괴의 상처": "침수곰팡이호흡단 G10이 안개와 함께 폐건물에서 번졌을 때 봉두는 불을 놓아 밀어내려다 포자 연무를 고지까지 끌어올리고 만다.\n\n그는 학살 대신 냉각한 지하실을 미끼 서식처로 내주고 창문을 봉인하며 북쪽 오솔길을 돌벽으로 차단해 호흡단의 이동 경로를 바꾼다.\n\n그날 숨을 잃은 피난민들의 이름은 칠판 뒷면에 남아 있으며, 그는 비가 올 때마다 지워지는 획을 다시 덧쓴다.",
             "생존 전환점": "봉두는 HC10 중개 아래 침수곰팡이호흡단과 직접 싸우지 않는 통행 협정을 받아들이며 지휘 방식이 달라진다.\n\n그는 서늘한 폐저수조에 유기 먹이를 배정하고 새벽 두 시간 동안 남쪽 회랑을 비워 주는 대신, 피난 행렬이 지나는 해질녘에는 포자 구역을 봉인한다.\n\n이 합의를 지키려고 자신의 최후 철수용 밧줄을 잘라 봉인문에 묶은 선택은 되돌릴 수 없었고, 이후 그는 어떤 탈출 수단도 사적으로 남기지 않는다.",
-            "현재 지위": "봉두는 대한불교조계종의 방어 고지에서 횃불망 대피 순번 포자 경보를 통합 관리하는 거점장으로 일한다.\n\n최종 명령은 그가 내리지만 칠판에 근거와 예상 희생을 먼저 적어 경계대와 피난민 대표가 이의를 제기할 시간을 보장한다.\n\n그의 권위는 총기보다 약속한 시각에 불이 켜지고 약한 사람이 먼저 능선을 넘는다는 반복된 신뢰에서 나온다.",
+            "현재 지위": "봉두는 승가구휼정의 방어 고지에서 횃불망 대피 순번 포자 경보를 통합 관리하는 거점장으로 일한다.\n\n최종 명령은 그가 내리지만 칠판에 근거와 예상 희생을 먼저 적어 경계대와 피난민 대표가 이의를 제기할 시간을 보장한다.\n\n그의 권위는 총기보다 약속한 시각에 불이 켜지고 약한 사람이 먼저 능선을 넘는다는 반복된 신뢰에서 나온다.",
             "비밀·빚·죄책감": "봉두는 첫 포자 사태 때 계곡의 구조 신호를 적군의 유인책으로 오인해 횃불 하나를 의도적으로 끈 사실을 숨긴다.\n\n그 판단 때문에 늦어진 구조대에는 자신의 누이와 두 명의 어린 안내자가 있었으며, 그는 공식 사망 기록에 기상 악화만을 원인으로 적는다.\n\n용국이 당시 순찰표의 빈칸을 눈치챘다는 사실을 알면서도 침묵을 부탁한 빚 때문에 봉두는 위험한 회랑 계약을 쉽게 거절하지 못한다.",
             "관계 공동과거": "봉두는 용국과 능선 횃불의 점등 간격을 맞추는 계약을 맺고, 용국의 회랑 순찰이 늦어지면 청색 불꽃으로 우회로를 알린다.\n\n그는 백온이 피난처에서 누구도 출신 때문에 밀어내지 않겠다고 한 맹세를 고지 칠판 중앙에 적어 공개 규칙으로 바꾼다.\n\n세 사람은 폭우 속 합동 철수 때 마지막 들것을 함께 끌어올렸지만, 그날 꺼진 횃불의 책임을 두고 아직 서로 다른 기억을 품는다.",
             "3막 개인 서사선": "1막에서 봉두는 고지의 안전을 지키려 모든 결정을 혼자 떠안고, 용국의 순찰 보고와 백온의 수용 요청까지 숫자로만 재단한다.\n\n2막에서 숨겨 둔 칠판 뒷면과 꺼진 횃불의 진실이 드러나자 그는 지휘권을 잃을 위험을 감수하고 포자 통행 협정을 공개 심의에 부친다.\n\n3막에서 그는 고지를 봉쇄할지 저지대 피난민에게 열지 선택하며, 어느 길이든 자신의 전용 퇴로를 폐기하고 마지막 행렬 뒤에 남는다.",
@@ -33317,9 +33317,9 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K287",
           "name": "봉국",
           "sections": {
-            "정체성·출신": "봉국은 철재의 색보다 울림과 무게 차이로 재질을 가려내는 한국계 회수 기술자이며, 삼성그룹에서는 황노을의 실무 담당자로 알려져 있다.\n\n그는 사람의 선의보다 봉인된 로트표와 두 번 잰 저울값을 신뢰하지만, 버려진 물건에는 이전 사용자의 사정이 남는다고 여긴다.\n\n회수장 중앙의 수동 천칭과 붉은 분필은 그가 질서와 책임을 드러내는 구체적인 수단이다.",
+            "정체성·출신": "봉국은 철재의 색보다 울림과 무게 차이로 재질을 가려내는 한국계 회수 기술자이며, 서초전산그룹에서는 황노을의 실무 담당자로 알려져 있다.\n\n그는 사람의 선의보다 봉인된 로트표와 두 번 잰 저울값을 신뢰하지만, 버려진 물건에는 이전 사용자의 사정이 남는다고 여긴다.\n\n회수장 중앙의 수동 천칭과 붉은 분필은 그가 질서와 책임을 드러내는 구체적인 수단이다.",
             "붕괴 전 삶": "붕괴 전 봉국은 철거 현장에서 구조용 강재를 선별하고, 균열 난 들보가 재사용되지 않도록 절단 표시를 남기는 검수원으로 일한다.\n\n비용을 줄이려는 관리자의 압박에도 불량 자재를 격리했으나 한 차례 서류 승인에 굴복해 약한 계단재가 다시 유통되는 일을 막지 못한다.\n\n붕괴 당일 그 계단이 피난 인파 아래에서 꺾인 뒤부터 그는 모든 금속 조각에 출처와 손상 원인을 붙이는 습관을 지닌다.",
-            "가문·기업·공동체": "HP05의 회수 계보는 친족 중심 조직이 아니라 절단공 수레꾼 계량관이 손실을 공동 부담하는 작업 가문으로 운영된다.\n\n봉국은 삼성그룹의 차축과 난방판을 확보하려 폐차장 동쪽 구획을 관리하고, 쓸 만한 철재를 숨긴 작업자에게도 공개 재계량 기회를 준다.\n\n황노을의 생산 일정과 굶주린 회수꾼들의 몫이 충돌할 때 그는 천칭 한쪽에 공동 배급표를 올려 결정의 대가를 눈앞에 보이게 한다.",
+            "가문·기업·공동체": "HP05의 회수 계보는 친족 중심 조직이 아니라 절단공 수레꾼 계량관이 손실을 공동 부담하는 작업 가문으로 운영된다.\n\n봉국은 서초전산그룹의 차축과 난방판을 확보하려 폐차장 동쪽 구획을 관리하고, 쓸 만한 철재를 숨긴 작업자에게도 공개 재계량 기회를 준다.\n\n황노을의 생산 일정과 굶주린 회수꾼들의 몫이 충돌할 때 그는 천칭 한쪽에 공동 배급표를 올려 결정의 대가를 눈앞에 보이게 한다.",
             "붕괴의 상처": "폐전지금속군락 G22가 회수장 바닥에서 석출되자 봉국은 고철 더미를 밀어 덮으려다 군락에 먹이가 될 금속을 오히려 집중시킨다.\n\n그는 냉각수를 순환시키고 오염 로트를 점토 용기에 봉인하며, 진동이 적은 서쪽 길로 수레 경로를 바꿔 군락의 성장을 늦춘다.\n\n그러나 급히 절단한 기중기 붐 아래 동료 한 명이 갇혔고, 봉국은 회수장 전체를 살리기 위해 구조를 중단한 결정을 지금도 작업 종료 종소리마다 떠올린다.",
             "생존 전환점": "봉국은 HP08의 중개로 폐전지금속군락에 산화된 저가 금속을 제한적으로 배정하고, 정오의 무진동 시간에만 핵심 로트를 반출하는 거래를 성립시킨다.\n\n그는 군락을 전멸시키려는 화염 계획을 거부하고 냉각 먹이 우회 경로 차단을 조합해 회수장을 둘로 나눈다.\n\n협정을 보증하려 자신의 가장 값비싼 절단날을 군락 경계의 봉인핀으로 박아 넣었으며, 그 선택으로 대량 해체 능력을 영구히 포기한다.",
             "현재 지위": "봉국은 철재 회수장의 로트 승인 저울 검증 오염 구획 폐쇄를 책임지며 황노을의 지시를 현장 작업으로 바꾸는 위치에 있다.\n\n그는 생산량을 채우지 못하더라도 출처가 불분명한 금속은 차륜방 안으로 들이지 않고, 모든 이의 제기를 저울 옆 장부에 남긴다.\n\n회수꾼들은 그의 엄격함을 두려워하면서도 자신의 몫이 지휘부 창고로 사라지지 않는다는 이유로 그를 따른다.",
@@ -33741,7 +33741,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K389",
           "name": "방석담",
           "sections": {
-            "정체성·출신": "방석담은 천주교 서울대교구 동남 호송 기지의 비상발전을 운전하며 차량 창고 의료 구역 사이의 출력을 조정하는 책임자다.\n\n그는 공동주택 기계실을 관리하던 이모와 택배 상차 일을 하던 형 밑에서 자라, 전기는 추상적인 수치가 아니라 누군가의 엘리베이터와 냉장고를 움직이는 몫이라고 배웠다.\n\n붕괴 뒤에도 명령에 무조건 복종하기보다 배전 이유를 확인하며, 은폐된 선로에는 전력을 주지 않는 원칙을 지킨다.",
+            "정체성·출신": "방석담은 본당인준정 동남 호송 기지의 비상발전을 운전하며 차량 창고 의료 구역 사이의 출력을 조정하는 책임자다.\n\n그는 공동주택 기계실을 관리하던 이모와 택배 상차 일을 하던 형 밑에서 자라, 전기는 추상적인 수치가 아니라 누군가의 엘리베이터와 냉장고를 움직이는 몫이라고 배웠다.\n\n붕괴 뒤에도 명령에 무조건 복종하기보다 배전 이유를 확인하며, 은폐된 선로에는 전력을 주지 않는 원칙을 지킨다.",
             "붕괴 전 삶": "방석담은 붕괴 전 공연장 설비팀에서 비상발전기와 무대 전원을 관리하고 정전 훈련 때 객석 유도등을 점검했다.\n\n그는 손때 묻은 도자기제 부하 선택 손잡이를 예비품으로 보관했으며, 금속 손잡이보다 열을 덜 전달한다는 이유로 실제 사고 때 사용했다.\n\n공연이 없는 낮에는 전기 기능 교육을 받아 상위 자격을 준비했지만, 마지막 실기 시험장이 피란소로 바뀌면서 현장 경험만으로 운전 책임을 맡게 되었다.",
             "가문·기업·공동체": "방석담의 이모는 기계실 침수 사고로 실종되었고 형은 다른 배급 행렬을 따라 떠나, 그는 혈연과 다시 만나지 못한 채 호송 기사들과 생활 공동체를 꾸렸다.\n\nHC06 안에서 발전 인력은 우대를 요구했지만 그는 연료 운반자 세척조 취사조가 함께 출력 회의에 들어오도록 규칙을 만들었다.\n\n판효담의 창고 기지에는 필요한 출력을 맞춰 주면서도 남윤경의 경매 결과가 숨은 배전으로 이어질 때는 차단하겠다고 공언한다.",
             "붕괴의 상처": "돌봄순환체가 피란 아동을 보호한다며 호송 기지의 휴게동 문을 잠그고 난방과 급식을 끝없이 반복한 사건에서 방석담은 발전기를 멈추면 아이들이 추위에 노출되는 상황에 놓였다.\n\n그는 순환체를 파괴하지 않고 주방 소음을 외부 쉼터로 유도하고 과보호 구역을 단계적으로 냉각한 뒤, 먹이와 통행 경로를 분리해 문을 열게 했다.\n\n아이들은 나왔지만 보호자 한 명이 강제 진입 중 숨졌고, 방석담은 자신의 전력이 감금 체계를 오래 유지했다는 사실을 잊지 못한다.",
@@ -33799,7 +33799,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K414",
           "name": "천늘샘",
           "sections": {
-            "정체성·출신": "천늘샘은 전국민주노동조합총연맹의 서고와 의회를 떠받치는 비상발전 운전장으로서 기록 보존과 정치 회의의 전력 요구를 조정한다.\n\n그는 지하 공방에서 제본을 하던 아버지와 공공시설 냉난방 기사였던 어머니 사이에서 자라, 종이의 습도와 기계실 온도를 함께 살피는 감각을 익혔다.\n\n붕괴 뒤에는 기록과 권력이 같은 전선에 연결될 때 어느 쪽도 몰래 우선하지 못하게 만드는 일을 자신의 책무로 삼는다.",
+            "정체성·출신": "천늘샘은 정동노동총연맹의 서고와 의회를 떠받치는 비상발전 운전장으로서 기록 보존과 정치 회의의 전력 요구를 조정한다.\n\n그는 지하 공방에서 제본을 하던 아버지와 공공시설 냉난방 기사였던 어머니 사이에서 자라, 종이의 습도와 기계실 온도를 함께 살피는 감각을 익혔다.\n\n붕괴 뒤에는 기록과 권력이 같은 전선에 연결될 때 어느 쪽도 몰래 우선하지 못하게 만드는 일을 자신의 책무로 삼는다.",
             "붕괴 전 삶": "천늘샘은 붕괴 전 대형 문화시설의 설비 감시실에서 교대 근무를 하며 열원기 환기 장치 비상 조명의 소비 전력을 기록했다.\n\n그가 사용하던 핵심 물건은 검은 석판 눈금이 달린 수동 동기검정기로, 두 전원의 위상을 맞춰야 할 때 화면 대신 바늘의 떨림을 읽었다.\n\n퇴근 뒤에는 아버지의 제본 공방에서 실과 풀을 다루었고, 그 경험 덕분에 재난 후 서고의 책과 배선 피복을 서로 다른 방식으로 건조할 수 있었다.",
             "가문·기업·공동체": "천늘샘의 부모는 붕괴 초기 서고 피란 구역에서 일손을 보탰으나, 의회 이전 과정에서 다른 생활권으로 배치되어 지금은 서신만 간헐적으로 오간다.\n\n그는 HC14의 기술자 사서 회의 서기 지하 냉각조가 같은 배전표를 검토하도록 해 기록 보존이 소수 전문가의 핑계가 되지 않게 한다.\n\n정유라의 교차검증을 받아들이고 선한솜의 지하 함 온도를 지키지만, 두 업무가 충돌하면 어느 쪽도 비밀 선로로 돕지 않는다.",
             "붕괴의 상처": "도면유령기계단이 미완성 증축도를 실제 명령으로 해석해 의회 회의실 둘레에 콘크리트 격벽을 세운 날, 천늘샘은 공사 로봇의 충전선을 끊었다가 비상 환기까지 멈추게 했다.\n\n그는 소음을 빈 지하 공사구로 보내 기계단의 주의를 돌리고 잘못된 도면 함을 봉인한 뒤 이동 경로를 차단했지만, 갇힌 서기 한 명이 질식 후유증을 얻었다.\n\n그 사건으로 그는 전원을 끊는 단순한 대응도 고정된 건물과 사람의 호흡을 함께 해칠 수 있다는 공포를 품는다.",
@@ -34038,11 +34038,11 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "가문·기업·공동체": "오하늘이 속한 HP10 채널 길드는 송신 기사 편성자 자막 기록자 청취자 대표가 방송 시간을 공동으로 배분하는 직능 공동체다.\n\n길드는 재난 정보와 거래 시세를 모두 필요하다고 보지만, 돈을 많이 내는 상인이 가장 정확한 시간대를 선점하는 문제가 누적되어 있다.\n\n그는 언어와 장애 때문에 전달에서 밀리는 사람에게 짧은 고정 시간을 보장하려 하며, 이를 수익 손실로 보는 송신 조합과 자주 대립한다.",
             "붕괴의 상처": "하수너구리족이 상암 지하 통로를 점유한 밤, 무국적 피란민들이 자신들의 방언으로 측로 셔터가 열렸다는 경고를 자막실에 보냈다.\n\n오하늘은 표준 한국어로 검증되지 않았다는 편성 규정을 적용해 그 문장을 삭제하고, 제한된 긴급 자막 시간을 기존 대피 지시에만 사용했다.\n\n경고를 알아들을 수 있었던 피란민 구역은 통로 변경을 제때 알지 못해 하수너구리족과 맞닥뜨렸고, 그는 틀린 번역보다 번역되지 못한 말이 더 치명적일 수 있다는 상처를 품는다.",
             "생존 전환점": "오하늘은 삭제된 경고의 시각과 윤서하가 기록한 현장 속보를 대조해, 피란민 방언의 문장이 가장 먼저 위험을 알렸다는 사실을 확인한다.\n\n최지우은 검증되지 않은 표현을 그대로 내보내면 혼란이 커진다고 주장하지만, 오해린은 여러 언어권 청취자들이 실제로 어느 자막을 이해했는지 기록한 응답표를 제공한다.\n\n오하늘은 긴급 방송의 핵심이 하나의 정확한 문장을 반복하는 데 있지 않고, 번역 대기열과 언어별 송출 시간을 누가 통제하는지를 공개하는 데 있다고 판단한다.",
-            "현재 지위": "오하늘은 전국경제인연합회의 채널 길드 편성관으로서 재난 경보 시세 정보 경매 속보 가족 찾기 방송의 순서를 결정한다.\n\n그는 최지우과 편성 거부권을 나누고 오해린의 시세 방송을 길드 시간에 넣으며, 윤서하의 경매 속보가 실제 거래 시각과 어긋나지 않도록 조정한다.\n\n권한을 행사할 때마다 수동 큐휠을 공개 탁자에 올려 누구의 시간이 줄고 늘었는지 청취자 대표가 직접 확인하게 한다.",
+            "현재 지위": "오하늘은 여의도출자연합회의 채널 길드 편성관으로서 재난 경보 시세 정보 경매 속보 가족 찾기 방송의 순서를 결정한다.\n\n그는 최지우과 편성 거부권을 나누고 오해린의 시세 방송을 길드 시간에 넣으며, 윤서하의 경매 속보가 실제 거래 시각과 어긋나지 않도록 조정한다.\n\n권한을 행사할 때마다 수동 큐휠을 공개 탁자에 올려 누구의 시간이 줄고 늘었는지 청취자 대표가 직접 확인하게 한다.",
             "비밀·빚·죄책감": "오하늘은 피란민 방언 경고가 자동 누락된 것이 아니라 자신이 수동 큐휠에서 해당 자막표를 빼고 삭제 표식을 남겼다는 사실을 숨긴다.\n\n그는 당시 출처가 없는 언어를 방송하면 채널 전체가 신뢰를 잃는다고 판단했으며, 삭제된 원문과 임시 번역을 적색 타이머의 빈 배터리함에 보관한다.\n\n더구나 같은 방언으로 들어온 후속 경고도 검수 대기열 뒤로 밀어 두었기 때문에, 첫 판단이 단발성 실수가 아니라 번역 시간을 통제한 검열이었다는 사실이 드러날 수 있다.",
             "관계 공동과거": "오하늘은 과거 최지우과 잘못된 경보 문안을 거부하며 책임을 나눴지만, 이번에는 그 거부 관행이 무국적 피란민의 언어를 삭제하는 장벽으로 작동했다고 맞선다.\n\n오해린은 청취자 반응과 지역별 표현을 정리해 삭제된 경고의 의미를 복원하고, 윤서하는 현장 시각 기록을 제공해 그 경고가 허위가 아니었음을 입증한다.\n\n세 사람은 하수너구리족의 이동을 알리는 긴급 자막을 함께 편성하지만, 최종 번역 시간을 길드 편성관이 계속 독점할지 피란민 통역자에게 고정 구간을 넘길지를 두고 갈등한다.",
             "3막 개인 서사선": "K223 오하늘은 무국적 피란민 방언으로 들어온 하수너구리족 경고를 삭제한 검열이 인명 피해로 이어지자, 다언어 긴급 자막의 송출 시간을 누가 지배하는지 문제 삼는다.\n\n첫 막에서는 윤서하의 현장 기록과 오해린의 청취자 응답을 통해 삭제된 문장이 가장 이른 경고였음이 밝혀진다.\n\n둘째 막에서는 최지우이 검증되지 않은 번역을 제한하려 하자, 오하늘은 자신의 삭제 기록을 공개하고 언어별 대기열을 실시간으로 드러낼지 결정한다.\n\n셋째 막에서는 무국적 피란민 통역자들이 긴급 자막 구간에 직접 접근하는 다언어 송출 체계를 열거나, 길드가 승인한 언어만 방송하는 검열 체제를 유지한다.",
-            "분기 결말": "오하늘이 원문과 삭제 표식을 공개하면 피해 구역의 피란민들은 그에게 공개 사과와 일정 기간의 편성권 정지를 요구하고, HP10 채널 길드는 언어별 긴급 자막 구간을 통역자 협의체에 영구 배정한다.\n\n그는 일반 편성관으로 남아 재난 경보와 가족 찾기 방송의 순서를 조정하지만, 긴급 번역 대기열을 삭제하거나 뒤로 미룰 권한은 잃고 모든 변경 기록을 수동 큐휠과 공개 자막판에 남긴다.\n\n반대로 검열 사실을 숨기면 피란민 통역자들이 독자 송신기를 가동해 길드 방송과 충돌하고, 서로 다른 대피 지시가 동시에 퍼지면서 전국경제인연합회는 긴급 정보의 대표 채널 지위를 상실한다."
+            "분기 결말": "오하늘이 원문과 삭제 표식을 공개하면 피해 구역의 피란민들은 그에게 공개 사과와 일정 기간의 편성권 정지를 요구하고, HP10 채널 길드는 언어별 긴급 자막 구간을 통역자 협의체에 영구 배정한다.\n\n그는 일반 편성관으로 남아 재난 경보와 가족 찾기 방송의 순서를 조정하지만, 긴급 번역 대기열을 삭제하거나 뒤로 미룰 권한은 잃고 모든 변경 기록을 수동 큐휠과 공개 자막판에 남긴다.\n\n반대로 검열 사실을 숨기면 피란민 통역자들이 독자 송신기를 가동해 길드 방송과 충돌하고, 서로 다른 대피 지시가 동시에 퍼지면서 여의도출자연합회는 긴급 정보의 대표 채널 지위를 상실한다."
           },
           "arc": [
             {
@@ -34065,7 +34065,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             },
             {
               "id": "K223-OUT-B",
-              "summary": "K223 오하늘이 검열 사실을 숨기면 피란민 통역자들의 독자 송신과 길드 방송이 충돌해 상반된 대피 지시가 퍼지고, 전국경제인연합회는 긴급 정보의 대표 채널 지위를 상실한다."
+              "summary": "K223 오하늘이 검열 사실을 숨기면 피란민 통역자들의 독자 송신과 길드 방송이 충돌해 상반된 대피 지시가 퍼지고, 여의도출자연합회는 긴급 정보의 대표 채널 지위를 상실한다."
             }
           ],
           "links": {
@@ -34161,12 +34161,12 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K074",
           "name": "허미리",
           "sections": {
-            "정체성·출신": "허미리는 서울 서남권 철도 관사촌에서 자란 한국계 토목 실무자이며, 붕괴 뒤에는 S03 현대자동차주식회사의 방화기지 유치 업무를 맡는다.\n\n그는 선로 도면보다 현장 노동자의 발걸음과 바퀴 자국을 먼저 읽는 습관을 지녔으며, 흰 유치 분필과 접이식 거리자를 신분표처럼 휴대한다.\n\n그는 어느 구역에 소방차와 피난열차를 세울지를 정하는 일이 곧 누구의 밤을 지킬지 선택하는 정치라고 판단한다.",
+            "정체성·출신": "허미리는 서울 서남권 철도 관사촌에서 자란 한국계 토목 실무자이며, 붕괴 뒤에는 S03 양재기공주식회사의 방화기지 유치 업무를 맡는다.\n\n그는 선로 도면보다 현장 노동자의 발걸음과 바퀴 자국을 먼저 읽는 습관을 지녔으며, 흰 유치 분필과 접이식 거리자를 신분표처럼 휴대한다.\n\n그는 어느 구역에 소방차와 피난열차를 세울지를 정하는 일이 곧 누구의 밤을 지킬지 선택하는 정치라고 판단한다.",
             "붕괴 전 삶": "허미리는 붕괴 전 도시철도 차량기지 확장 사업에서 임시선 측량과 주민 설명을 담당하며, 폐쇄된 세척고의 분기기 번호를 손으로 다시 매기는 일을 했다.\n\n그는 소음 민원을 줄이려고 방음벽 위치를 바꾸었다가 비상차량 회전 반경이 좁아진 사건을 겪은 뒤, 편의와 안전의 충돌을 수치로만 처리하지 않게 된다.\n\n퇴근 뒤에는 관사촌 옥상에서 아버지가 남긴 황동 수평계를 손질하며 언젠가 현장 책임자가 되겠다고 다짐한다.",
             "가문·기업·공동체": "허미리의 집안은 철도 보선과 소방 설비 일을 번갈아 맡아 온 HP09 계열 기술 가문이지만, 붕괴로 장비와 숙련자가 흩어지며 이름만 남는다.\n\n그는 마곡의 연구자 기관사 피난민 대표를 한 탁자에 앉히고 방화기지 후보지를 둘러싼 야간 순찰을 공동 의무로 만든다.\n\n다만 관사촌 생존자들은 그가 연구평의회 편에 섰다고 의심하고, 연구평의회는 그가 친족 구역에 유리한 선로를 긋는다고 경계한다.",
             "붕괴의 상처": "허미리는 붕괴 첫겨울 냉각수색인균체가 배관 생물막과 분기기 금속을 함께 부식시킨 밤, 구조용 모터카를 잘못된 유치선으로 보내 세 명을 고립시킨다.\n\n그는 균체를 태우려는 경비대를 막고 냉각 펌프의 진동을 낮춘 뒤, 오염된 윤활유 통을 먹이 우회점으로 옮기고 두 갈래 선로를 강철판으로 봉인한다.\n\n구조는 성공했지만 고립자 한 명이 다리를 잃었고, 허미리는 지금도 분필이 레일에 긁히는 소리를 들으면 자신이 그은 잘못된 화살표를 떠올린다.",
             "생존 전환점": "허미리는 냉각수색인균체가 방화기지 후보지까지 번졌을 때 HP05 중개자를 불러 냉각수 배정량과 통행 시간을 교환하는 협상안을 제시한다.\n\n그는 새벽 두 시간 동안 사람과 차량을 멈추는 대신 폐열 응축수를 외곽 먹이 구역으로 흘리고, 남은 시간에는 저주파 경적과 차단판으로 균체의 이동 경로를 제한한다.\n\n그 선택으로 기지를 비우지 않고도 공존 가능한 운행표가 만들어지며, 그는 제거보다 경로 설계가 강한 방어가 될 수 있음을 입증한다.",
-            "현재 지위": "허미리는 S03 현대자동차주식회사에서 방화기지 유치 순서 피난열차 대기 위치 균체 통행 시간표를 한꺼번에 조정하는 실무장으로 일한다.\n\n그는 유민호의 배차 명령을 흰 분필선으로 집행하면서도, 위험 징후가 있으면 명령서 여백에 반대 사유를 적고 출발을 늦춘다.\n\n허서겸의 재검색이 시작되면 직접 칸 앞에 서서 봉인 상태를 확인하므로, 현장에서는 신뢰받지만 평의회 내부에서는 지나치게 독자적인 인물로 평가받는다.",
+            "현재 지위": "허미리는 S03 양재기공주식회사에서 방화기지 유치 순서 피난열차 대기 위치 균체 통행 시간표를 한꺼번에 조정하는 실무장으로 일한다.\n\n그는 유민호의 배차 명령을 흰 분필선으로 집행하면서도, 위험 징후가 있으면 명령서 여백에 반대 사유를 적고 출발을 늦춘다.\n\n허서겸의 재검색이 시작되면 직접 칸 앞에 서서 봉인 상태를 확인하므로, 현장에서는 신뢰받지만 평의회 내부에서는 지나치게 독자적인 인물로 평가받는다.",
             "비밀·빚·죄책감": "허미리는 최초 방화기지 후보를 정할 때 숙부가 머물던 관사촌을 피하려고 부식 자료 한 장의 좌표를 옆 구역으로 옮겨 적은 비밀을 지닌다.\n\n그 조작 때문에 냉각수색인균체의 초기 군락이 늦게 발견되었고, 잘못된 유치선으로 들어간 구조 모터카 사고도 그 왜곡에서 비롯된다.\n\n그는 다리를 잃은 생존자에게 매달 연료표를 보내지만 발신인을 밝히지 못하며, 언젠가 원자료가 발견되면 공동체와 가족 모두에게 버림받을 것을 안다.",
             "관계 공동과거": "허미리는 붕괴 직후 유민호와 함께 연구단지 소방차 열두 대를 선로 위에 분산 배치했으며, 유민호의 배차 순서를 분필 숫자와 수신호로 바꾸어 혼란을 막는다.\n\n허서겸과는 부식 사고 다음 날부터 모든 객차 하부를 두 번 검색하는 절차를 만들었고, 허미리는 승객의 항의를 받으면서도 재검색 칸 앞을 지킨다.\n\n두 사람은 그의 현장 감각을 인정하지만 좌표 조작 가능성을 알지 못하며, 허미리는 그 신뢰가 깊어질수록 사실을 말하기 어려워진다.",
             "3막 개인 서사선": "K074 허미리는 1막에서 방화기지 후보선의 부식 흔적과 과거 측량부 좌표가 맞지 않는다는 사실을 발견하며 자신의 조작이 되살아났음을 깨닫는다.\n\n2막에서는 유민호의 긴급 배차와 허서겸의 전면 재검색이 충돌하는 가운데, 균체와 맺은 통행 협정까지 흔들리자 원자료를 없앨지 운행을 중단할지 선택해야 한다.\n\n3막에서는 관사촌을 지키려 했던 과거를 인정하고 기지 전체를 옮기거나, 조작을 감춘 채 특정 유치선을 영구 봉쇄하는 돌이킬 수 없는 결정을 내린다.",
@@ -34219,7 +34219,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K103",
           "name": "변오름",
           "sections": {
-            "정체성·출신": "변오름은 성수의 다세대 주택가와 공장 골목에서 성장한 한국계 철도원이며, S04 대한예수교장로회의 성수 대합실 역장을 맡는다.\n\n그는 놋쇠 개찰가위와 창구 안쪽의 회전식 배식판을 함께 관리하며, 표와 급수권을 같은 무게의 생존 문서로 취급한다.\n\n사람의 목소리보다 줄이 움직이는 속도에서 불안을 먼저 읽는 성격 때문에 냉정해 보이지만, 밤마다 승강장 벤치의 이름 없는 사망 표식을 닦는다.",
+            "정체성·출신": "변오름은 성수의 다세대 주택가와 공장 골목에서 성장한 한국계 철도원이며, S04 설교명부정의 성수 대합실 역장을 맡는다.\n\n그는 놋쇠 개찰가위와 창구 안쪽의 회전식 배식판을 함께 관리하며, 표와 급수권을 같은 무게의 생존 문서로 취급한다.\n\n사람의 목소리보다 줄이 움직이는 속도에서 불안을 먼저 읽는 성격 때문에 냉정해 보이지만, 밤마다 승강장 벤치의 이름 없는 사망 표식을 닦는다.",
             "붕괴 전 삶": "변오름은 붕괴 전 통근역의 고객 안내 책임자로 근무하며, 공연장 관객과 공장 교대 인력이 한꺼번에 몰리는 막차 시간대를 관리했다.\n\n어느 여름 정전 때 그는 수동 개찰가위로 승객 수를 세고 회전식 배식판을 통해 생수를 나누어 압사 사고를 막았으나, 상부 보고서에는 자동 설비가 정상 작동한 것으로 적혔다.\n\n그는 그날부터 기계 기록보다 창구 앞 사람의 얼굴과 사용된 표 조각을 믿게 된다.",
             "가문·기업·공동체": "변오름의 가족은 성수 일대에서 작은 구두 수선방과 야간 식당을 운영했으며, HC12의 상인 조합에 물품과 식사를 대던 생활 기반을 지녔다.\n\n붕괴 뒤 수선방은 급수권 교환소가 되고 식당의 철제 배식구는 대합실 창구로 옮겨져, 주민과 공방 노동자가 물을 배분받는 장소가 된다.\n\n그는 가족의 터전을 지킨다는 명분으로 역을 운영하지만, 오래 거주한 주민과 새로 유입된 피난민 사이에서 어느 줄을 먼저 들일지 늘 공격받는다.",
             "붕괴의 상처": "변오름은 하수너구리족이 폐쇄된 화장실 통로를 뚫고 대합실 급수통을 덮친 밤, 셔터를 내리라는 명령 대신 승객들을 승강장 끝으로 이동시킨다.\n\n그는 확성기의 고주파 소음을 끄고 낮은 북소리로 무리를 한쪽 계단에 모은 뒤, 음식 찌꺼기를 외부 배수구로 보내고 철망문을 순차 봉인한다.\n\n이동 중 어린아이 한 명이 어두운 선로 틈으로 추락했고, 변오름은 구조보다 군중 이동을 먼저 선택했다는 기억을 개찰가위의 흠집과 함께 간직한다.",
@@ -34461,7 +34461,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "가문·기업·공동체": "나루희의 집안은 대대로 중도매 보조와 얼음 운반을 맡았으나, 그는 원불교의 공동 설비를 관리하는 길을 선택한다.\n\n상회에서 오해린은 재고 장부와 배급 결정을 쥐고 지마루는 냉동기지의 부하 요청을 보내며 나루희는 발전실의 실제 한계를 수치로 판단한다.\n\n그는 친족의 점포도 예외 없이 차단 대상에 올리는 원칙 때문에 배신자라는 말을 듣지만, 공동체 전체가 한 번에 정지하는 사태를 막으려 한다.",
             "붕괴의 상처": "붕괴 사흘째 의료조직기계군 G24E16이 폐기 수술구와 조직 덩어리를 끌고 제빙실 흡기구로 몰려들어, 냉각팬에 걸린 정비사 한 명이 회전체와 함께 사라진다.\n\n나루희는 총격 대신 발전기 소음을 반대편 폐수 통로로 유도하고, 빈 어상자를 먹이 우회 표식으로 놓은 뒤 방화문을 봉인해 접근 경로를 끊는다.\n\n그는 살릴 수 있다고 외치던 동료의 목소리를 들으면서도 주 차단기를 내렸고, 그 선택으로 노량진의 절반은 보존했지만 구조 가능성도 영구히 닫았다고 여긴다.",
             "생존 전환점": "나루희의 전환점은 제빙실 연료 여과기가 깨져 남은 연료가 바닥으로 쏟아지던 밤에 찾아온다.\n\n그는 HP10 중개자를 통해 의료조직기계군과 냉각 부산물의 할당량과 통행 시간을 거래하고, 합의 시간에는 저주파 발전을 멈추는 대신 봉인된 폐기물 통을 외곽 유도로에 둔다.\n\n그는 괴물을 없애는 대신 설비 운전표 안에 상대의 이동을 포함하는 되돌릴 수 없는 방식을 택하며, 이후 상회의 누구도 발전실을 순수한 인간 영역이라고 부르지 못하게 한다.",
-            "현재 지위": "나루희는 S08 원불교의 제빙 비상발전 운전장으로서 연료 냉각수 압축기 투입 시간을 최종 조정한다.\n\n그는 황동 회전계 옆에 수동 부하표를 걸어 두고 지윤재와 교대하지만, 위험 수치를 넘기면 오해린의 재고 명령도 거부한다.\n\n지마루의 냉동기지에는 최소 전력을 보장하되, 특정 점포를 위한 은폐 배전은 차단한다는 조건 때문에 그의 권한은 필요와 불신을 동시에 받는다.",
+            "현재 지위": "나루희는 S08 교헌필사정의 제빙 비상발전 운전장으로서 연료 냉각수 압축기 투입 시간을 최종 조정한다.\n\n그는 황동 회전계 옆에 수동 부하표를 걸어 두고 지윤재와 교대하지만, 위험 수치를 넘기면 오해린의 재고 명령도 거부한다.\n\n지마루의 냉동기지에는 최소 전력을 보장하되, 특정 점포를 위한 은폐 배전은 차단한다는 조건 때문에 그의 권한은 필요와 불신을 동시에 받는다.",
             "비밀·빚·죄책감": "나루희는 사고 당일 구조를 포기한 정비사가 자신의 사촌이었다는 사실을 공식 운전일지에서 지우고, 단순 설비 손실로만 기록한다.\n\n그는 그 사촌이 남긴 황동 시동 열쇠를 회전계 뒤에 숨겨 두었으며, 지윤재가 진실을 알면 사제 관계가 끝날 수 있음을 안다.\n\n또한 의료조직기계군과의 첫 거래에서 친족 점포의 폐기물을 미끼로 넘긴 빚이 있어, 자신이 공동체를 구한 것이 아니라 희생 대상을 골랐다는 죄책감을 품는다.",
             "관계 공동과거": "나루희는 지윤재가 견습이던 시절 압축기 한 대를 과부하로 태울 뻔한 사건을 함께 수습했고, 그날부터 계기 수치보다 진동을 먼저 듣는 법을 가르친다.\n\n오해린과는 붕괴 직전 재고 창고 정전 책임을 두고 다퉜지만, 이후 배급량과 실제 발전 가능량을 맞추는 계약 관계를 유지한다.\n\n지마루와는 냉동기지 배관이 얼어붙은 새벽에 수동 밸브를 함께 돌린 과거가 있으며, 지금도 그때 만든 부하 암호표로 전력 요청을 주고받는다.",
             "3막 개인 서사선": "1막에서 나루희는 발전기 연료 감소와 의료조직기계군의 이동 시간이 겹친다는 사실을 숨긴 채 기존 배전을 유지한다.\n\n2막에서 지윤재가 사촌의 시동 열쇠를 발견하고 오해린이 특정 창고 우선 가동을 요구하자, 그는 스승과 운전장이라는 두 지위를 동시에 잃을 위기에 놓인다.\n\n3막에서 그는 지마루의 냉동기지와 노량진 거주 구역 중 하나만 완전 보존할 수 있는 순간에 거래 내역을 밝히고, 어느 회로를 영구 절단할지 직접 선택한다.",
@@ -34515,16 +34515,16 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K236",
           "name": "용소",
           "sections": {
-            "정체성·출신": "용소는 수도권 통신 노동자 가정에서 자란 한국계 암호 중계 실무자로, 말보다 호출 부호와 지연 시간을 더 정확한 약속으로 여긴다.\n\n그는 어린 시절 아버지가 수리하던 단파 수신기에서 잡음을 분리하는 법을 배웠고, 이름이 짧아 오인되던 경험 때문에 송신 확인 절차를 집요하게 지킨다.\n\n전국경제인연합회에서는 지휘관이 아니라 부스 안의 손과 귀로 살아가며, 명령이 실제 회선에서 어떤 위험으로 변하는지 계산한다.",
+            "정체성·출신": "용소는 수도권 통신 노동자 가정에서 자란 한국계 암호 중계 실무자로, 말보다 호출 부호와 지연 시간을 더 정확한 약속으로 여긴다.\n\n그는 어린 시절 아버지가 수리하던 단파 수신기에서 잡음을 분리하는 법을 배웠고, 이름이 짧아 오인되던 경험 때문에 송신 확인 절차를 집요하게 지킨다.\n\n여의도출자연합회에서는 지휘관이 아니라 부스 안의 손과 귀로 살아가며, 명령이 실제 회선에서 어떤 위험으로 변하는지 계산한다.",
             "붕괴 전 삶": "용소는 붕괴 전 암호 중계 부스에서 천공 테이프 판독기 적색 송신등 세라믹 절연 키를 관리한다.\n\n그는 송재민의 지시문을 시간대별 키로 바꾸고 두용의 저장소 함에 교대 암호표를 봉인하는 일을 맡는다.\n\n어느 야간 근무에는 청소용 냉각제가 테이프 보관함에 스며들어 메시지 한 줄이 뒤섞였고, 그는 송출 중단 대신 손으로 비트를 복원해 구조대를 잘못된 옥상으로 보내는 사고를 일으킨다.",
-            "가문·기업·공동체": "용소의 가족은 통신 설비 하청과 전파 부품 수리를 이어 왔지만, 그는 전국경제인연합회의 정규 중계 체계 안에서 책임을 얻고자 한다.\n\n송재민은 작전 우선순위를 정하고 용소는 암호 부스를 돌리며, 두용은 저장소 함과 봉인 상태를 맞춰 기록의 연속성을 지킨다.\n\n그는 가족이 남긴 낡은 단파 수신기를 부스 아래에 보관하면서도 사적 회선 사용을 금지하는 공동 규칙을 따르며, 그 모순을 누구에게도 설명하지 않는다.",
+            "가문·기업·공동체": "용소의 가족은 통신 설비 하청과 전파 부품 수리를 이어 왔지만, 그는 여의도출자연합회의 정규 중계 체계 안에서 책임을 얻고자 한다.\n\n송재민은 작전 우선순위를 정하고 용소는 암호 부스를 돌리며, 두용은 저장소 함과 봉인 상태를 맞춰 기록의 연속성을 지킨다.\n\n그는 가족이 남긴 낡은 단파 수신기를 부스 아래에 보관하면서도 사적 회선 사용을 금지하는 공동 규칙을 따르며, 그 모순을 누구에게도 설명하지 않는다.",
             "붕괴의 상처": "붕괴 첫 주 저온포자숙주 G09E09가 냉각 덕트를 타고 암호 부스 벽면으로 번지며, 숨을 들이쉰 교대조가 서로의 목소리를 송신 명령으로 착각한다.\n\n용소는 경보음을 역위상 소음으로 흘려 숙주의 이동을 서쪽 덕트로 유도하고, 세라믹 키 보관함을 봉인한 뒤 저장소로 이어지는 케이블 경로를 물리적으로 차단한다.\n\n그러나 그는 혼란 속에서 동료의 구조 호출을 적대 신호로 판정해 회선을 끊었고, 그 목소리가 지금도 수신기 잡음 사이에서 반복된다고 믿는다.",
             "생존 전환점": "용소는 주 송신탑이 침묵한 밤에 적색 송신등 세 번이 외부 생존자의 규칙적인 응답임을 알아차린다.\n\n그는 HC09 중개를 받아 저온포자숙주에 저온 저장 부산물과 비어 있는 통행 시간을 할당하고, 숙주가 조용한 시간대에는 송신 출력을 낮춰 이동 경로를 건드리지 않는 합의를 만든다.\n\n송재민의 사전 허가 없이 그 약정을 체결한 선택은 취소할 수 없었고, 이후 부스의 방송 일정은 인간의 필요만으로 결정되지 않는다.",
-            "현재 지위": "용소는 S09 전국경제인연합회의 암호 중계 부스 실무 담당자로서 송재민의 지휘문을 전송 가능한 키와 호출 순서로 바꾼다.\n\n그는 두용과 저장소 함의 봉인을 대조하고, 적색 송신등 옆에 아날로그 지연계를 두어 회선 변조를 직접 확인한다.\n\n공식 권한은 제한적이지만 실제 키 전환을 수행하는 사람이어서, 그의 손이 멈추면 지휘 체계와 외부 협상 회선이 함께 끊어진다.",
+            "현재 지위": "용소는 S09 여의도출자연합회의 암호 중계 부스 실무 담당자로서 송재민의 지휘문을 전송 가능한 키와 호출 순서로 바꾼다.\n\n그는 두용과 저장소 함의 봉인을 대조하고, 적색 송신등 옆에 아날로그 지연계를 두어 회선 변조를 직접 확인한다.\n\n공식 권한은 제한적이지만 실제 키 전환을 수행하는 사람이어서, 그의 손이 멈추면 지휘 체계와 외부 협상 회선이 함께 끊어진다.",
             "비밀·빚·죄책감": "용소는 붕괴 전 잘못 복원한 메시지가 구조대를 오염된 옥상으로 보냈다는 사실을 알고도 판독기 결함으로 처리한다.\n\n그는 당시 원본 천공 테이프를 두용의 봉인 목록 밖에 있는 가족 수신기 내부에 숨겼으며, 송재민에게는 그 회선이 완전히 소실됐다고 보고한다.\n\n또한 저온포자숙주와의 첫 합의에서 교대조 시신이 보관된 냉각실을 먹이 우회 구역으로 내주었기에, 통신을 살린 대가로 동료들의 귀환을 막았다는 빚을 진다.",
             "관계 공동과거": "용소는 송재민이 첫 현장 지휘를 맡았을 때 폭우 잡음 속에서 세 차례 명령을 재확인해 오인 사격을 막은 경험이 있다.\n\n두용과는 저장소 함의 봉인 번호가 하나 어긋난 밤을 함께 새우며 모든 키를 손으로 대조했고, 그때부터 서로의 서명 습관까지 안다.\n\n그러나 잘못 복원된 구조 메시지의 원본을 두용에게도 감췄기 때문에, 두 사람의 신뢰는 정확한 기록 위에 세워졌으면서도 핵심 한 조각이 비어 있다.",
             "3막 개인 서사선": "1막에서 용소는 외부 구조 회선에 과거 사고의 호출 부호가 다시 나타나자 이를 저온포자숙주의 모방이라고 주장한다.\n\n2막에서 두용이 봉인 목록에 없는 천공 테이프 흔적을 발견하고 송재민이 전 출력 송신을 명령하자, 그는 명령 이행과 숙주 합의 중 하나를 깨야 한다.\n\n3막에서 그는 주파수 키를 영구 소각해 중앙 지휘를 보호하거나, 숨긴 원본을 송출해 자신의 과실과 살아남은 구조대의 위치를 동시에 드러내는 선택을 한다.",
-            "분기 결말": "용소가 원본 메시지를 송출하면 잘못 보내졌던 구조대의 생존자와 연결되지만, 송재민의 지휘 회선은 장시간 노출되고 전국경제인연합회의 신뢰가 흔들린다.\n\n그가 키를 소각하면 공사는 안전한 단거리망을 유지하지만 외부 생존자들은 다시 고립되고, 두용은 기록 훼손을 이유로 그를 부스에서 축출한다.\n\n두 선택 모두 이전 암호 체계로 돌아갈 수 없게 하며, 용소는 증언하는 통신원이 되거나 호출을 듣지 못하는 봉인 관리자가 된다."
+            "분기 결말": "용소가 원본 메시지를 송출하면 잘못 보내졌던 구조대의 생존자와 연결되지만, 송재민의 지휘 회선은 장시간 노출되고 여의도출자연합회의 신뢰가 흔들린다.\n\n그가 키를 소각하면 공사는 안전한 단거리망을 유지하지만 외부 생존자들은 다시 고립되고, 두용은 기록 훼손을 이유로 그를 부스에서 축출한다.\n\n두 선택 모두 이전 암호 체계로 돌아갈 수 없게 하며, 용소는 증언하는 통신원이 되거나 호출을 듣지 못하는 봉인 관리자가 된다."
           },
           "arc": [
             {
@@ -34543,7 +34543,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "outcomes": [
             {
               "id": "K236-OUT-A",
-              "summary": "K236 용소는 원본 메시지를 송출하면 잘못 보내졌던 구조대의 생존자들과 연결되지만 송재민의 지휘 회선을 장시간 노출해 전국경제인연합회의 신뢰를 흔들고 증언하는 통신원이 된다."
+              "summary": "K236 용소는 원본 메시지를 송출하면 잘못 보내졌던 구조대의 생존자들과 연결되지만 송재민의 지휘 회선을 장시간 노출해 여의도출자연합회의 신뢰를 흔들고 증언하는 통신원이 된다."
             },
             {
               "id": "K236-OUT-B",
@@ -34573,12 +34573,12 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K249",
           "name": "윤초아",
           "sections": {
-            "정체성·출신": "윤초아는 동남아시아 해안 도시에서 태어나 여덟 살에 어머니와 한국으로 이주한 다문화 가정 출신이며, 집에서는 어머니의 모어와 한국어를 섞어 쓴다.\n\n어머니는 야시장 조리 노동과 숙박업 세탁 일을 오갔고, 계부는 일용 건설 노동으로 생계를 보태 윤초아는 학교 전학과 월세방 이동을 반복한다.\n\n그는 통역을 가족의 무급 의무로만 여기지 않으려 문서 행정을 배웠고, 대한불교조계종에서는 이름의 철자와 친족 호칭이 생존 자격을 바꾸지 않게 기록한다.",
+            "정체성·출신": "윤초아는 동남아시아 해안 도시에서 태어나 여덟 살에 어머니와 한국으로 이주한 다문화 가정 출신이며, 집에서는 어머니의 모어와 한국어를 섞어 쓴다.\n\n어머니는 야시장 조리 노동과 숙박업 세탁 일을 오갔고, 계부는 일용 건설 노동으로 생계를 보태 윤초아는 학교 전학과 월세방 이동을 반복한다.\n\n그는 통역을 가족의 무급 의무로만 여기지 않으려 문서 행정을 배웠고, 승가구휼정에서는 이름의 철자와 친족 호칭이 생존 자격을 바꾸지 않게 기록한다.",
             "붕괴 전 삶": "윤초아는 붕괴 전 이주가족 지원소에서 체류 서류 안내와 가족관계 진술서 작성을 돕고, 저녁에는 어머니의 작은 이동식 국수 노점을 거든다.\n\n그는 서류함보다 사람들이 직접 붙인 주소 지도를 신뢰해 벽면 코르크판에 학교 작업장 기도처를 색실로 연결한다.\n\n어느 날 통역 오류로 한 아이의 보호자가 이모가 아닌 타인으로 등록되자, 그는 기관 결정을 거슬러 가족을 직접 찾아 나서며 행정 기록과 생활의 친족 관계가 다를 수 있음을 배운다.",
-            "가문·기업·공동체": "윤초아의 가족은 이주 초기 같은 언어를 쓰는 세 가구와 식재료와 돌봄 시간을 나누며 혈연 밖의 생활 공동체를 만든다.\n\n대한불교조계종에서 백온은 가족과 피난 명부를 하나의 원장으로 합치도록 지휘하고, 윤초아는 서로 다른 이름 순서와 호칭을 대조해 누락을 막는다.\n\n그는 강예준에게 시민권 인준을 청구하고 강민서의 복구복무 문안을 참고하지만, 노동 능력을 가족의 가치로 환산하는 조항에는 계속 이의를 제기한다.",
+            "가문·기업·공동체": "윤초아의 가족은 이주 초기 같은 언어를 쓰는 세 가구와 식재료와 돌봄 시간을 나누며 혈연 밖의 생활 공동체를 만든다.\n\n승가구휼정에서 백온은 가족과 피난 명부를 하나의 원장으로 합치도록 지휘하고, 윤초아는 서로 다른 이름 순서와 호칭을 대조해 누락을 막는다.\n\n그는 강예준에게 시민권 인준을 청구하고 강민서의 복구복무 문안을 참고하지만, 노동 능력을 가족의 가치로 환산하는 조항에는 계속 이의를 제기한다.",
             "붕괴의 상처": "침수곰팡이호흡단 G10E05가 지하 대피교실의 젖은 벽지를 뚫고 번졌을 때, 윤초아의 어머니는 기침 때문에 감염 의심자로 몰려 가족 원장에서 분리된다.\n\n윤초아는 비명을 키우는 대피 방송을 끄고 냉각된 빈 급식실로 포자 흐름을 유도한 뒤, 출입문 틈을 밀랍으로 봉인하고 사람들의 이동 경로를 옥상 계단으로 차단한다.\n\n그 과정에서 그는 어머니가 남아 있던 교실 문을 바깥에서 잠갔고, 구조가 끝난 뒤 시신도 찾지 못해 자신이 기록에서 가족을 지운 셈이라고 느낀다.",
             "생존 전환점": "윤초아는 북한산보국문 체육관의 호흡기 약품이 바닥난 날 가족 명부를 배급표가 아니라 협상 자원으로 사용할 수 있음을 깨닫는다.\n\n그는 HC10 중개자와 함께 침수곰팡이호흡단에 비어 있는 침수 동과 통행 시간을 배정하고, 소음을 줄인 시간대에 약품 운반대를 우회시키는 합의를 성사시킨다.\n\n그는 어머니를 찾기 위한 단독 수색권을 포기하고 모든 미등록 가족에게 동일한 이동 순서를 적용하는 선택을 하며, 사적 희망보다 공동 규칙을 앞세운다.",
-            "현재 지위": "윤초아는 S10 대한불교조계종의 구호 가족 서기로서 백온이 통합한 원장에서 가족 결합 분리 후견 진술을 관리한다.\n\n그는 코르크판 주소 지도와 목재 활자 도장을 사용해 전산망 없이도 이름의 여러 표기와 사용 언어를 연결한다.\n\n강예준에게는 시민권 인준 근거를 보내고 강민서의 복구복무 문안을 검토하지만, 부양가족 수나 노동 가능 여부만으로 배급 순위를 정하는 결정에는 서명을 보류한다.",
+            "현재 지위": "윤초아는 S10 승가구휼정의 구호 가족 서기로서 백온이 통합한 원장에서 가족 결합 분리 후견 진술을 관리한다.\n\n그는 코르크판 주소 지도와 목재 활자 도장을 사용해 전산망 없이도 이름의 여러 표기와 사용 언어를 연결한다.\n\n강예준에게는 시민권 인준 근거를 보내고 강민서의 복구복무 문안을 검토하지만, 부양가족 수나 노동 가능 여부만으로 배급 순위를 정하는 결정에는 서명을 보류한다.",
             "비밀·빚·죄책감": "윤초아는 어머니의 마지막 위치를 알고도 가족 원장에는 침수 중 실종으로 적었으며, 자신이 교실 문을 잠갔다는 사실을 숨긴다.\n\n그는 어머니의 이름으로 남은 배급권을 두 명의 무연고 아이에게 나누어 주었는데, 이 선의가 밝혀지면 아이들의 시민권 심사가 무효가 될 수 있다.\n\n또한 강민서의 문안에서 복구복무 기간 한 줄을 몰래 줄여 여러 이주가족에게 적용했기에, 그들을 살린 수정이 문서 위조로 판단될 빚을 안고 있다.",
             "관계 공동과거": "윤초아는 백온과 함께 체육관 바닥에 가족별 수면 구역을 그리다가 한 아이를 두 가구가 동시에 보호자라고 주장한 사건을 중재한다.\n\n강예준과는 기록청 계단에서 세 차례 시민권 청구가 반려된 뒤 사용 언어별 진술서를 새로 만들었고, 그 경험으로 서로의 집요함을 인정한다.\n\n강민서와는 복구복무 초안을 밤새 대조하며 이주가족의 돌봄 노동을 복무로 인정할 문장을 찾았지만, 윤초아의 몰래 한 수정 때문에 그 협력이 파탄 날 위험이 있다.",
             "3막 개인 서사선": "1막에서 윤초아는 미등록 가족들의 배급권을 지키려고 어머니 명의와 수정된 복구복무 문안을 계속 사용한다.\n\n2막에서 백온이 원장 대조를 명령하고 강예준이 시민권 인준을 위해 원본 제출을 요구하자, 그는 두 아이의 지위와 자신의 서기 권한 사이에서 몰린다.\n\n3막에서 침수곰팡이호흡단이 기록청 이동로를 막으면 그는 원장을 들고 안전지대로 갈지, 가족들의 구술 증언을 남기기 위해 원장을 해체해 각자에게 나눌지 결정한다.",
@@ -34632,16 +34632,16 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K275",
           "name": "권도하",
           "sections": {
-            "정체성·출신": "권도하는 동남아시아 내륙 농촌에서 태어나 청소년기에 한국인 계부를 따라 이주한 다문화 가정 출신이며, 모어와 한국어 외에 운송 현장에서 익힌 짧은 수신호를 쓴다.\n\n친모는 봉제 공장 야간조와 채소 포장 일을 전전했고, 그는 학교를 그만둔 뒤 자전거 배달과 선로 보수 보조로 가족 생계를 책임진다.\n\n그는 억양 때문에 명령 이해를 의심받을 때마다 실제 주행으로 능력을 증명했고, 삼성그룹에서는 출신보다 함께 귀환하는 대형을 중요하게 여긴다.",
+            "정체성·출신": "권도하는 동남아시아 내륙 농촌에서 태어나 청소년기에 한국인 계부를 따라 이주한 다문화 가정 출신이며, 모어와 한국어 외에 운송 현장에서 익힌 짧은 수신호를 쓴다.\n\n친모는 봉제 공장 야간조와 채소 포장 일을 전전했고, 그는 학교를 그만둔 뒤 자전거 배달과 선로 보수 보조로 가족 생계를 책임진다.\n\n그는 억양 때문에 명령 이해를 의심받을 때마다 실제 주행으로 능력을 증명했고, 서초전산그룹에서는 출신보다 함께 귀환하는 대형을 중요하게 여긴다.",
             "붕괴 전 삶": "권도하는 붕괴 전 도시철도 보수기지에서 궤도 점검 수레와 플랜지 측정자를 관리하고, 심야에는 오토바이 배달로 어머니의 치료비를 마련한다.\n\n그는 폐선 분기기 옆 정비 피트에서 바퀴 간격을 손으로 재며, 금속음만 듣고도 축이 휘었는지 판별하는 기술을 익힌다.\n\n어느 겨울 야간에 감독의 운행 재개 지시를 거부하고 균열 난 차륜을 분리해 대형 사고를 막았지만, 계약직 동료들이 해고되면서 안전 판단이 누구의 생계를 끊는지도 알게 된다.",
-            "가문·기업·공동체": "권도하의 가족은 이주 뒤 친모의 봉제 동료들과 공동 육아와 송금을 나누었고, 그는 월급 일부를 고향의 외조모와 한국의 동생에게 동시에 보낸다.\n\n삼성그룹에서 이홍원은 북문 순찰을 지휘하고 장세화는 북부 호송 시각을 맞추며 강태산은 회랑 신호를 공유한다.\n\n권도하는 궤도기병 반장으로 대형의 속도와 귀환 인원을 책임지지만, 가족 송금 장부를 연료 거래에 사용한 일 때문에 공동 자산과 사적 의무의 경계에서 흔들린다.",
+            "가문·기업·공동체": "권도하의 가족은 이주 뒤 친모의 봉제 동료들과 공동 육아와 송금을 나누었고, 그는 월급 일부를 고향의 외조모와 한국의 동생에게 동시에 보낸다.\n\n서초전산그룹에서 이홍원은 북문 순찰을 지휘하고 장세화는 북부 호송 시각을 맞추며 강태산은 회랑 신호를 공유한다.\n\n권도하는 궤도기병 반장으로 대형의 속도와 귀환 인원을 책임지지만, 가족 송금 장부를 연료 거래에 사용한 일 때문에 공동 자산과 사적 의무의 경계에서 흔들린다.",
             "붕괴의 상처": "폐전지금속군락 G22E14가 창동 분기기 아래에서 솟아 차륜과 레일을 붙잡았을 때, 권도하의 후미 기병 세 명이 금속 석출층에 갇힌다.\n\n그는 총격으로 군락을 흩뜨리는 대신 폐차륜을 반대 선로에 굴려 먹이를 우회시키고, 냉각수를 분기기 홈에 부은 뒤 신호 통로를 봉쇄해 군락의 진행 경로를 끊는다.\n\n그러나 그는 북문을 지키기 위해 후미 연결고리를 절단했고, 세 사람과 구조 장비를 선로 아래에 남긴 선택이 그의 모든 지휘 판단을 따라다닌다.",
             "생존 전환점": "권도하는 호송대가 금속군락의 이동대와 정면으로 마주친 날 속도로 돌파하는 기병 전술을 버린다.\n\n그는 HP08 중개를 통해 폐전지와 통행 시간을 군락에 할당하고, 장세화의 호송은 소음을 줄인 수동 견인으로 보내며 강태산의 신호로 접근 경로를 닫는다.\n\n군락을 적으로만 규정하지 않고 북문 순찰표에 협상 구간을 넣은 선택은 일부 기병의 이탈을 불렀지만, 이후 호송 손실을 크게 줄인다.",
-            "현재 지위": "권도하는 S11 삼성그룹의 궤도기병 반장으로 이홍원의 지휘 아래 북문 순찰과 긴급 추격을 맡는다.\n\n그는 정비 피트의 플랜지 측정자와 붉은 분기 레버를 직접 확인한 뒤 장세화의 북부 호송 시각과 강태산의 회랑 신호를 하나의 주행표로 맞춘다.\n\n빠른 돌파보다 귀환 가능한 속도를 우선해 젊은 기병에게는 신뢰를 얻지만, 후미를 버렸던 생존자 가족과 강경파에게는 비겁한 협상가로 불린다.",
+            "현재 지위": "권도하는 S11 서초전산그룹의 궤도기병 반장으로 이홍원의 지휘 아래 북문 순찰과 긴급 추격을 맡는다.\n\n그는 정비 피트의 플랜지 측정자와 붉은 분기 레버를 직접 확인한 뒤 장세화의 북부 호송 시각과 강태산의 회랑 신호를 하나의 주행표로 맞춘다.\n\n빠른 돌파보다 귀환 가능한 속도를 우선해 젊은 기병에게는 신뢰를 얻지만, 후미를 버렸던 생존자 가족과 강경파에게는 비겁한 협상가로 불린다.",
             "비밀·빚·죄책감": "권도하는 후미 연결고리를 끊기 직전 구조가 가능한 보조 선로가 열려 있었다는 사실을 숨기고, 신호 고장 때문에 선택지가 없었다고 보고한다.\n\n실제로 그는 그 선로를 열면 어머니가 타고 있던 민간 호송이 폐전지금속군락과 마주칠 것을 알고 기병들을 희생한다.\n\n그는 전사자 수당 일부를 가족 송금망으로 돌려 유족과 자기 집에 함께 보냈으며, 이홍원이 장부를 확인하면 지휘권뿐 아니라 가족의 거처도 잃을 수 있다.",
             "관계 공동과거": "권도하는 이홍원과 첫 북문 순찰에서 탈선한 정찰차를 밤새 밀어 귀환한 뒤 현장 판단을 인정받아 반장이 된다.\n\n장세화와는 폭설 호송 때 시각표를 버리고 사람의 보행 속도에 맞춰 움직여 어린 환자들을 살렸으며, 이후 서로의 지연 신호를 우선한다.\n\n강태산과는 폐회랑의 수동 신호기를 복구하면서 모어의 숫자 구령과 한국어 수신호를 함께 정리했지만, 후미 희생 당시 보조 선로 신호를 강태산이 보냈다는 사실을 감춘다.",
             "3막 개인 서사선": "1막에서 권도하는 폐전지금속군락과의 통행 거래를 유지하면서 후미 희생 보고서와 전사자 수당 장부를 숨긴다.\n\n2막에서 강태산이 보조 선로 신호 기록을 되찾고 장세화의 대규모 민간 호송이 같은 분기기를 지나야 하자, 그는 과거와 동일한 선택 구도에 놓인다.\n\n3막에서 그는 어머니가 탄 피난 수레와 북문 방어대를 분리하는 레버를 다시 잡고, 이번에는 한쪽을 버리거나 자신의 기병대를 군락의 유인대로 영구 전환해야 한다.",
-            "분기 결말": "권도하가 기병대를 유인대로 전환하면 장세화의 민간 호송과 이홍원의 북문 방어대가 모두 빠져나가지만, 삼성그룹은 기동 전력을 잃고 그는 귀환 가능성이 희박한 외곽 선로로 향한다.\n\n어머니의 수레를 우선하면 북문 일부가 무너지고 강태산은 회랑 신호망을 폐쇄하며, 그는 가족을 구한 지휘관이자 공동체를 저버린 사람으로 추방된다.\n\n북문을 우선하면 어머니와 민간인 다수가 고립되지만 차륜방은 존속하고, 그는 반장직을 내려놓은 채 유족들의 호송 노동으로 빚을 갚는다."
+            "분기 결말": "권도하가 기병대를 유인대로 전환하면 장세화의 민간 호송과 이홍원의 북문 방어대가 모두 빠져나가지만, 서초전산그룹은 기동 전력을 잃고 그는 귀환 가능성이 희박한 외곽 선로로 향한다.\n\n어머니의 수레를 우선하면 북문 일부가 무너지고 강태산은 회랑 신호망을 폐쇄하며, 그는 가족을 구한 지휘관이자 공동체를 저버린 사람으로 추방된다.\n\n북문을 우선하면 어머니와 민간인 다수가 고립되지만 차륜방은 존속하고, 그는 반장직을 내려놓은 채 유족들의 호송 노동으로 빚을 갚는다."
           },
           "arc": [
             {
@@ -34660,7 +34660,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "outcomes": [
             {
               "id": "K275-OUT-A",
-              "summary": "K275 권도하는 기병대를 유인대로 전환하면 장세화의 민간 호송과 이홍원의 북문 방어대를 모두 탈출시키지만 삼성그룹의 기동 전력을 잃게 하고 귀환 가능성이 희박한 외곽 선로로 향한다."
+              "summary": "K275 권도하는 기병대를 유인대로 전환하면 장세화의 민간 호송과 이홍원의 북문 방어대를 모두 탈출시키지만 서초전산그룹의 기동 전력을 잃게 하고 귀환 가능성이 희박한 외곽 선로로 향한다."
             },
             {
               "id": "K275-OUT-B",
@@ -34768,12 +34768,12 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K262",
           "name": "용두",
           "sections": {
-            "정체성·출신": "K262 용두는 강원 산간과 서울 변두리를 오가며 자란 한국계 난방 기술자다.\n\n그는 가족의 지역색보다 보일러 소리와 연료 냄새로 장소를 기억하며, 사람을 출신이 아니라 추위를 견디는 태도로 판단한다.\n\n대한불교조계종에서는 거친 현장말과 꼼꼼한 수량 감각을 함께 지닌 실무자로 정체성을 세운다.",
+            "정체성·출신": "K262 용두는 강원 산간과 서울 변두리를 오가며 자란 한국계 난방 기술자다.\n\n그는 가족의 지역색보다 보일러 소리와 연료 냄새로 장소를 기억하며, 사람을 출신이 아니라 추위를 견디는 태도로 판단한다.\n\n승가구휼정에서는 거친 현장말과 꼼꼼한 수량 감각을 함께 지닌 실무자로 정체성을 세운다.",
             "붕괴 전 삶": "K262 용두는 붕괴 전 오래된 목욕탕과 소형 공장의 난방 설비를 순회하며 버너 노즐과 연통을 손봤다.\n\n그는 폐업한 목욕탕에서 챙긴 황동 유량자를 작업 가방에 넣고 다니며, 계절마다 달라지는 연료 품질을 눈과 냄새로 가려냈다.\n\n야간 호출이 잦아 인간관계는 좁았지만, 한겨울에 온수가 돌아오는 순간만큼은 자신의 일이 공동체를 잇는다고 믿었다.",
-            "가문·기업·공동체": "K262 용두는 특정 가문의 후광 없이 대한불교조계종의 난방 연료고를 운영하며 오한결의 지휘 아래 저장조와 보일러 회랑을 관리한다.\n\n두감이 작성한 난로 점검표에는 출고량뿐 아니라 그을음 색과 점화 지연 시간까지 덧붙여 적는다.\n\n연맹 사람들은 그를 인색한 창고지기로 보기도 하지만, 그는 한 통의 연료가 어느 숙소의 밤을 살리는지 끝까지 추적한다.",
+            "가문·기업·공동체": "K262 용두는 특정 가문의 후광 없이 승가구휼정의 난방 연료고를 운영하며 오한결의 지휘 아래 저장조와 보일러 회랑을 관리한다.\n\n두감이 작성한 난로 점검표에는 출고량뿐 아니라 그을음 색과 점화 지연 시간까지 덧붙여 적는다.\n\n연맹 사람들은 그를 인색한 창고지기로 보기도 하지만, 그는 한 통의 연료가 어느 숙소의 밤을 살리는지 끝까지 추적한다.",
             "붕괴의 상처": "K262 용두는 붕괴 첫겨울에 통신근균체 G21E02가 광케이블 관로를 타고 보일러 제어함까지 번지는 장면을 목격한다.\n\n그는 기생 신호를 끊으려고 회랑을 냉각하고 소음 장치를 돌렸으나, 격리문 안쪽의 작업자들을 제때 꺼내지 못해 낮은 긁힘 소리를 악몽처럼 듣는다.\n\n그 뒤로 케이블 피복에 흰 반점만 보여도 손이 굳으며, 전멸보다 경로 차단과 먹이 우회가 현실적인 대응임을 고집한다.",
             "생존 전환점": "K262 용두는 연료고 바닥의 폐윤활유 웅덩이에 통신근균체가 몰리는 현상을 발견하고, 황동 유량자로 공급량을 조절해 보일러 회랑에서 개체를 떼어낸다.\n\n그는 HP07 중개자를 통해 통신근균체 측에 폐피복과 열 없는 관로를 먹이 구역으로 내주고, 사람의 통행 시간을 확보하는 거래를 성사시킨다.\n\n그날 그는 괴물을 태워 없애는 대신 연료 한 탱크를 영구 폐쇄하는 선택을 하며 단순한 창고지기에서 협상 가능한 거점장으로 바뀐다.",
-            "현재 지위": "K262 용두는 대한불교조계종 난방 연료고 거점장이자 오한결의 출고 명령을 실제 열량으로 환산하는 실무 담당자다.\n\n그는 두감의 점검표와 자신의 황동 유량자를 대조한 뒤에만 밸브를 열며, 명령이 숙소 수용량과 맞지 않으면 현장에서 이의를 제기한다.\n\n통신근균체와 맺은 시간대 협정까지 관리하기 때문에 연맹의 난방 이동 통신 안전이 그의 판단 하나에 동시에 걸린다.",
+            "현재 지위": "K262 용두는 승가구휼정 난방 연료고 거점장이자 오한결의 출고 명령을 실제 열량으로 환산하는 실무 담당자다.\n\n그는 두감의 점검표와 자신의 황동 유량자를 대조한 뒤에만 밸브를 열며, 명령이 숙소 수용량과 맞지 않으면 현장에서 이의를 제기한다.\n\n통신근균체와 맺은 시간대 협정까지 관리하기 때문에 연맹의 난방 이동 통신 안전이 그의 판단 하나에 동시에 걸린다.",
             "비밀·빚·죄책감": "K262 용두는 첫겨울에 격리된 작업자들을 구하려고 했다는 공식 진술과 달리, 실제로는 주 저장조 폭발을 막으려고 구조용 압력을 먼저 차단했다.\n\n그 결정으로 연맹 전체는 살아남았지만 회랑 안 사람들에게 돌아갈 몇 분의 온기까지 사라졌으며, 오한결에게도 정확한 순서를 밝히지 않았다.\n\n그는 희생자들의 이름 대신 당시 밸브 회전 수를 황동 유량자 손잡이 안쪽에 새겨 두고 매일 그 빚을 만진다.",
             "관계 공동과거": "K262 용두는 오한결과 붕괴 직후 폐목욕탕 지하에서 얼어붙은 저장조를 함께 녹이며 지휘와 실무의 경계를 배웠다.\n\n두감과는 연료가 사라졌다는 오해로 처음 충돌했으나, 난로마다 연소 효율이 다르다는 사실을 공동 점검으로 증명한 뒤 계약 관계를 맺었다.\n\n세 사람은 북한산보국문 고가도로 아래 첫 임시 숙소를 살린 과거를 공유하지만, 용두의 회랑 차단 결정까지 아는 사람은 아직 없다.",
             "3막 개인 서사선": "K262 용두는 1막에서 연료 부족과 통신근균체의 재침입 사이에서 기존 출고 규칙을 지키려 하지만, 오한결의 확대 수용 명령 때문에 숨겨 둔 차단 기록과 마주한다.\n\n2막에서는 두감과 함께 폐세탁소 보일러를 미끼 열원으로 개조하고 HP07 중개 협상을 갱신하면서, 자신이 구조 압력을 끊었다는 사실을 공개한다.\n\n3막에서는 마지막 비축유를 태워 중앙 숙소만 지킬지, 저장조를 영구 봉인해 분산 난방 체제로 넘어갈지 되돌릴 수 없는 결정을 내린다.",
@@ -34826,12 +34826,12 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K288",
           "name": "용두봉",
           "sections": {
-            "정체성·출신": "K288 용두봉은 수도권 철도 노동자 주거지에서 자란 한국계 차량 정비사로, 혈연보다 함께 기름때를 닦은 작업조를 가족처럼 여긴다.\n\n그는 빠른 기병보다 제때 멈추는 차륜을 더 높이 평가하며, 영웅담보다 마모 수치와 귀환 인원을 기억한다.\n\n삼성그룹에서는 말수가 적지만 견습공의 반론을 허용하는 거점장으로 자리를 잡는다.",
+            "정체성·출신": "K288 용두봉은 수도권 철도 노동자 주거지에서 자란 한국계 차량 정비사로, 혈연보다 함께 기름때를 닦은 작업조를 가족처럼 여긴다.\n\n그는 빠른 기병보다 제때 멈추는 차륜을 더 높이 평가하며, 영웅담보다 마모 수치와 귀환 인원을 기억한다.\n\n서초전산그룹에서는 말수가 적지만 견습공의 반론을 허용하는 거점장으로 자리를 잡는다.",
             "붕괴 전 삶": "K288 용두봉은 붕괴 전 경전철 검수고에서 차축 초음파 검사와 제동 캘리퍼 교환을 담당했다.\n\n그는 폐차 차량에서 떼어 낸 백자색 베어링 측정구를 개인 공구함에 보관하며, 금속음의 높낮이만으로도 편마모를 알아챘다.\n\n휴일에는 중랑천 철새 관찰대를 찾아 이동 경로를 기록했지만 그 취미가 훗날 정비창의 생존 규칙이 될 줄은 몰랐다.",
-            "가문·기업·공동체": "K288 용두봉은 삼성그룹의 궤도기병 정비창을 맡아 출격보다 귀환 가능성을 기준으로 차량을 배정한다.\n\n권도하가 보내는 출격 목록을 검토하고, 두모가 채취한 차륜 표본을 기병 칸별 마모 기록과 대조한다.\n\n그는 옛 철도 회사의 위계 대신 정비공 기수 습지 감시자가 같은 회의판에 서는 공동체를 만들려 한다.",
+            "가문·기업·공동체": "K288 용두봉은 서초전산그룹의 궤도기병 정비창을 맡아 출격보다 귀환 가능성을 기준으로 차량을 배정한다.\n\n권도하가 보내는 출격 목록을 검토하고, 두모가 채취한 차륜 표본을 기병 칸별 마모 기록과 대조한다.\n\n그는 옛 철도 회사의 위계 대신 정비공 기수 습지 감시자가 같은 회의판에 서는 공동체를 만들려 한다.",
             "붕괴의 상처": "K288 용두봉은 붕괴 직후 철새습지포식군 G06E11이 복원 실패로 말라붙은 습지에서 선로 회차장으로 몰려온 날을 겪는다.\n\n그는 출격 차량을 살리려고 경적과 냉각 분무로 무리를 우회시켰지만, 잘못 잠근 전환기 때문에 귀환조 한 대가 포식군의 이동선에 갇히는 광경을 보았다.\n\n이후 그는 무차별 사냥을 거부하고 먹이 우회 통행 시간 분리 둥지 구역 봉인을 결합한 대응만 승인한다.",
             "생존 전환점": "K288 용두봉은 포식군이 기름 냄새가 아니라 차륜 진동과 폐어분 냄새를 따라 움직인다는 사실을 회차장 구덩이에서 확인한다.\n\n그는 HC06 중개자를 불러 새벽 출격 시간을 철새 이동 뒤로 미루고, 폐어분을 실은 무동력 썰매로 포식군의 경로를 빈 차량기지 쪽으로 돌리는 거래를 맺는다.\n\n이를 위해 지휘용 기관차의 구동축을 해체해 썰매 축으로 써 버렸으며, 그 선택으로 차륜방은 공격 거점이 아니라 귀환 중심의 정비 공동체가 된다.",
-            "현재 지위": "K288 용두봉은 삼성그룹 정비창 거점장으로 권도하의 출격 목록을 승인하거나 반려할 실질적 권한을 가진다.\n\n그는 두모의 차륜 표본과 베어링 측정구를 바탕으로 각 기병 칸의 속도 상한을 정하고, 습지 통행 협정 시간도 함께 표시한다.\n\n지휘용 기관차를 스스로 해체한 전력 때문에 공격파의 불신을 받지만, 낮은 귀환 손실률이 그의 자리를 지탱한다.",
+            "현재 지위": "K288 용두봉은 서초전산그룹 정비창 거점장으로 권도하의 출격 목록을 승인하거나 반려할 실질적 권한을 가진다.\n\n그는 두모의 차륜 표본과 베어링 측정구를 바탕으로 각 기병 칸의 속도 상한을 정하고, 습지 통행 협정 시간도 함께 표시한다.\n\n지휘용 기관차를 스스로 해체한 전력 때문에 공격파의 불신을 받지만, 낮은 귀환 손실률이 그의 자리를 지탱한다.",
             "비밀·빚·죄책감": "K288 용두봉은 첫 회차장 사고 전날 균열이 발견된 차축을 교체하지 않고 재연마해 사용하도록 승인했다.\n\n새 부품을 아끼려던 결정은 전환기 오조작과 겹쳐 귀환 차량의 탈선을 키웠지만, 그는 공식 보고에서 포식군 충돌만 원인으로 적었다.\n\n사고 차량의 깨진 베어링 한 조각을 측정구 상자에 숨겨 두었으며, 권도하와 두모 모두 그 물건의 의미를 모른다.",
             "관계 공동과거": "K288 용두봉은 권도하가 아직 기수가 되기 전 제동 훈련에서 과속하자 직접 차량을 세우고 하루 종일 차륜을 함께 갈아 낸 과거가 있다.\n\n두모와는 폐선 터널에서 서로 다른 차륜 표본을 수집하다 포식군에 갇혔고, 냉각수를 바닥에 흘려 진동을 줄인 끝에 살아 나왔다.\n\n세 사람은 정비창을 세운 동료지만, 용두봉의 차축 재사용 승인이 밝혀지면 출격 계약의 정당성도 흔들린다.",
             "3막 개인 서사선": "K288 용두봉은 1막에서 포식군의 이동기가 빨라지는 가운데 권도하의 대규모 출격 요구와 두모의 마모 경고 사이에 선다.\n\n2막에서는 회차장 사고의 원인이 된 베어링 조각을 공개하고, 지휘용 기관차를 해체해 무동력 유도 썰매로 바꾸면서 전투 우선 체계를 되돌릴 수 없게 만든다.\n\n3막에서는 차륜방을 이동 전력으로 복구할지 습지 경계 정비소로 정착시킬지 결정하고 그 결과에 따라 자신의 직위를 건다.",
@@ -34858,7 +34858,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             },
             {
               "id": "K288-OUT-B",
-              "summary": "K288 용두봉은 습지 경계 정착을 선택해 회차장 구덩이를 저진동 시험장으로 바꾸고 포식군의 이동로와 선로를 분리한다.\n\n그는 HC06과 계절별 자원 할당 계약을 유지하며 삼성그룹을 공격 거점이 아닌 습지 복원 지원소로 전환한다.\n\n유족의 요구로 일정 기간 공구 사용이 금지되지만, 이후 견습공 감독 아래 다시 차륜을 만진다."
+              "summary": "K288 용두봉은 습지 경계 정착을 선택해 회차장 구덩이를 저진동 시험장으로 바꾸고 포식군의 이동로와 선로를 분리한다.\n\n그는 HC06과 계절별 자원 할당 계약을 유지하며 서초전산그룹을 공격 거점이 아닌 습지 복원 지원소로 전환한다.\n\n유족의 요구로 일정 기간 공구 사용이 금지되지만, 이후 견습공 감독 아래 다시 차륜을 만진다."
             }
           ],
           "links": {
@@ -35062,12 +35062,12 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K390",
           "name": "흥예나",
           "sections": {
-            "정체성·출신": "흥예나는 한국계 주민으로 천주교 서울대교구의 시장 규칙과 생활 배급 사이에서 정체성을 다져 온 인물이다.\n\n그는 가족 배경보다 어떤 물건이 누구에게 돌아가야 하는지를 판단하는 실무자로 자신을 설명한다.\n\n유찰품에도 전 소유자의 사정과 다음 사용자의 생존이 함께 묻어 있다고 믿으며, 냉정한 계산과 세심한 관찰을 동시에 중시한다.",
+            "정체성·출신": "흥예나는 한국계 주민으로 본당인준정의 시장 규칙과 생활 배급 사이에서 정체성을 다져 온 인물이다.\n\n그는 가족 배경보다 어떤 물건이 누구에게 돌아가야 하는지를 판단하는 실무자로 자신을 설명한다.\n\n유찰품에도 전 소유자의 사정과 다음 사용자의 생존이 함께 묻어 있다고 믿으며, 냉정한 계산과 세심한 관찰을 동시에 중시한다.",
             "붕괴 전 삶": "흥예나는 붕괴 전 가락 냉장경매장의 유찰 기록 담당자로 일하며 황동 유찰 종과 검은 계산자를 늘 곁에 두었다.\n\n그는 팔리지 않은 흡입기 식재료 공구를 폐기하지 않고 재평가하는 절차를 익혔고 상인들의 가격 담합도 조용히 추적한다.\n\n퇴근 뒤에는 잠실의 공동 부엌에서 남은 식재료의 안전한 사용법을 가르치며 시장 바깥의 신뢰를 쌓는다.",
-            "가문·기업·공동체": "흥예나는 HC09 계열의 배급 실무망과 천주교 서울대교구 시민 경매회 사이를 잇는 중간 책임을 맡는다.\n\n근솔이와는 가락 및 신내 유찰 원장의 품목을 대조하는 계약을 맺고, 남윤경의 공개 경매에는 황동 종을 울려 거래 종료 시점을 알린다.\n\n그의 공동체는 혈연보다 장부를 함께 검토한 사람을 가까운 식구로 여기지만, 그만큼 기록 오류를 개인적 배신처럼 엄중히 다룬다.",
+            "가문·기업·공동체": "흥예나는 HC09 계열의 배급 실무망과 본당인준정 시민 경매회 사이를 잇는 중간 책임을 맡는다.\n\n근솔이와는 가락 및 신내 유찰 원장의 품목을 대조하는 계약을 맺고, 남윤경의 공개 경매에는 황동 종을 울려 거래 종료 시점을 알린다.\n\n그의 공동체는 혈연보다 장부를 함께 검토한 사람을 가까운 식구로 여기지만, 그만큼 기록 오류를 개인적 배신처럼 엄중히 다룬다.",
             "붕괴의 상처": "흥예나는 지하 냉장동에서 침수곰팡이호흡단 G10E15과 마주친 날, 오염된 흡입기 상자 곁에 남은 동료를 구하지 못한다.\n\n그는 냉각기를 낮춰 포자 확산을 늦추고 통로를 봉인했지만, 황동 유찰 종의 소음으로 무리를 다른 창고에 유도하는 동안 구조 시간이 끊긴다.\n\n그 뒤 그는 젖은 콘크리트 냄새만 맡아도 숨을 세며, 생존을 위해 선택한 경로 차단이 누군가에게는 사형선고였음을 잊지 못한다.",
             "생존 전환점": "흥예나의 전환점은 유찰 종의 울림이 침수곰팡이호흡단을 자극하면서도 일정한 냉각 구역으로 유도할 수 있음을 알아낸 순간이다.\n\n그는 HC10 중개자를 통해 빈 배양통을 먹이 우회용으로 제공하고, 호흡단이 쉬는 시간에는 인간 측 통행을 멈추는 자원·시간 거래를 성사시킨다.\n\n전멸을 택하지 않은 이 결정으로 경매장은 살아남지만, 그는 곰팡이 군집을 거래 상대처럼 취급했다는 비난까지 감수한다.",
-            "현재 지위": "흥예나는 현재 천주교 서울대교구에서 유찰 사건 조사관이자 제한 경매 진행자로 일한다.\n\n그는 남윤경의 공개 경매와 근솔이의 신내 기록을 교차 확인하며, 황동 종을 울리기 전 반드시 세 사람이 품목 번호와 실제 상태를 함께 보게 한다.\n\n공식 직급은 높지 않지만 어느 물건을 재배정하고 어느 통로를 닫을지 결정할 수 있어 상인과 환자 모두 그의 판단을 경계한다.",
+            "현재 지위": "흥예나는 현재 본당인준정에서 유찰 사건 조사관이자 제한 경매 진행자로 일한다.\n\n그는 남윤경의 공개 경매와 근솔이의 신내 기록을 교차 확인하며, 황동 종을 울리기 전 반드시 세 사람이 품목 번호와 실제 상태를 함께 보게 한다.\n\n공식 직급은 높지 않지만 어느 물건을 재배정하고 어느 통로를 닫을지 결정할 수 있어 상인과 환자 모두 그의 판단을 경계한다.",
             "비밀·빚·죄책감": "흥예나는 붕괴 첫날 오염 가능성을 알아본 흡입기 묶음을 일부러 늦게 상정해 유찰되게 했다는 비밀을 품는다.\n\n그는 그중 안전한 두 개를 가족이 아니라 천식 환자 숙소에 보냈지만, 나머지 상자가 지하에 남아 동료의 구조 동선을 막았다는 사실도 안다.\n\n근솔이에게는 당시 품목 비교를 대신 떠맡긴 빚이 있으며, 진실을 밝히면 선행과 과실이 동시에 공개된다는 두려움에 시달린다.",
             "관계 공동과거": "흥예나와 근솔이는 서로 다른 경매장에서 같은 제조 묶음이 반복 유찰되는 현상을 추적하며 신뢰를 쌓는다.\n\n남윤경은 흥예나가 종을 한 번 울리면 거래를 되돌리지 않는다는 원칙을 믿었으나, 붕괴 당일의 지연 상정 사실을 알게 되면 그 믿음이 흔들릴 수 있다.\n\n세 사람은 가락 냉장경매장 2층 난간에서 마지막 정상 경매를 함께 치렀고, 그날 남은 황동 종이 현재도 관계의 증거이자 갈등의 중심이 된다.",
             "3막 개인 서사선": "1막에서 흥예나는 근솔이의 신내 원장과 남윤경의 공개 경매 목록을 비교하다가 오염 흡입기가 다른 번호로 재등장했음을 발견한다.\n\n2막에서 그는 침수곰팡이호흡단 G10E15과의 통행 거래를 유지하려면 과거의 지연 상정을 고백하고 지하 보관 구역 전체를 장기간 폐쇄해야 한다는 압박을 받는다.\n\n3막에서 그는 황동 종을 직접 깨뜨려 기존 경매 권한을 끝내고 공개 재평가회를 열거나, 종을 보존한 채 위험 물품을 비밀리에 외부로 옮기는 돌이킬 수 없는 선택을 한다.",
@@ -35094,7 +35094,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             },
             {
               "id": "K390-OUT-B",
-              "summary": "K390 흥예나는 황동 종을 보존하고 위험 상자를 외부로 반출해 천주교 서울대교구의 단기 혼란을 막는다.\n\n그러나 이동 경로의 피해가 드러나자 남윤경은 계약을 끊고 근솔이는 원장 사본을 공개하며 그를 추방한다.\n\n그는 이후 피해 정착지를 돌며 물품 상태를 무상 감정하지만, 종을 울릴 때마다 자신이 떠넘긴 위험의 이름을 낭독한다."
+              "summary": "K390 흥예나는 황동 종을 보존하고 위험 상자를 외부로 반출해 본당인준정의 단기 혼란을 막는다.\n\n그러나 이동 경로의 피해가 드러나자 남윤경은 계약을 끊고 근솔이는 원장 사본을 공개하며 그를 추방한다.\n\n그는 이후 피해 정착지를 돌며 물품 상태를 무상 감정하지만, 종을 울릴 때마다 자신이 떠넘긴 위험의 이름을 낭독한다."
             },
             {
               "id": "K390-OUT-C",
@@ -35124,12 +35124,12 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K415",
           "name": "근주하",
           "sections": {
-            "정체성·출신": "근주하는 한국계 출신으로 전국민주노동조합총연맹의 작은 정착지들이 동등하게 발언할 수 있어야 한다고 믿는 서기다.\n\n그는 국력이나 인구가 아니라 약속을 감당할 능력과 피해 규모를 기준으로 협상 순서를 정한다.\n\n자신을 영웅적 외교관이 아닌 문장 하나의 비용을 끝까지 계산하는 기록 노동자로 규정하며, 화려한 연설보다 정확한 시각과 조항 번호를 중시한다.",
+            "정체성·출신": "근주하는 한국계 출신으로 정동노동총연맹의 작은 정착지들이 동등하게 발언할 수 있어야 한다고 믿는 서기다.\n\n그는 국력이나 인구가 아니라 약속을 감당할 능력과 피해 규모를 기준으로 협상 순서를 정한다.\n\n자신을 영웅적 외교관이 아닌 문장 하나의 비용을 끝까지 계산하는 기록 노동자로 규정하며, 화려한 연설보다 정확한 시각과 조항 번호를 중시한다.",
             "붕괴 전 삶": "근주하는 붕괴 전 국제 협력기관의 회의 기록원으로 일하며 접이식 조항판과 초침이 큰 탁상시계를 사용한다.\n\n그는 대표자의 억양이나 명성에 흔들리지 않고 누가 언제 동의하고 어떤 부담을 유보했는지 세밀히 기록한다.\n\n휴일에는 이주민 법률상담소에서 복잡한 계약을 쉬운 문장으로 풀어 주었고, 그 경험이 약소 공동체의 침묵을 발견하는 감각을 길러 준다.",
-            "가문·기업·공동체": "근주하는 HP09 협상실과 전국민주노동조합총연맹의 소규모 거점 연합에 소속되어 공동교섭 서명을 관리한다.\n\n초나루와는 수서 원장의 조항을 맞추는 계약을 맺고, 초태온과는 서명 시각을 숨기지 않겠다는 맹세를 나눈다.\n\n창고운은 원장 번호를 대조하는 실무 상대이며, 세 관계는 근주하가 단독으로 조항을 확정하지 못하게 하는 견제 장치이자 오래된 신뢰망이다.",
+            "가문·기업·공동체": "근주하는 HP09 협상실과 정동노동총연맹의 소규모 거점 연합에 소속되어 공동교섭 서명을 관리한다.\n\n초나루와는 수서 원장의 조항을 맞추는 계약을 맺고, 초태온과는 서명 시각을 숨기지 않겠다는 맹세를 나눈다.\n\n창고운은 원장 번호를 대조하는 실무 상대이며, 세 관계는 근주하가 단독으로 조항을 확정하지 못하게 하는 견제 장치이자 오래된 신뢰망이다.",
             "붕괴의 상처": "근주하는 맞춤의료잔존체 G11E07이 수서 4번 원탁실을 점거한 날, 특정 환자의 치료 명령을 반복하는 장치에 협상단이 붙잡히는 광경을 겪는다.\n\n그는 냉각 덮개와 경로 차단으로 장치의 움직임을 늦췄으나, 한 약소 거점 대표의 퇴장 요구를 회의 유지라는 이유로 뒤늦게 받아들인다.\n\n대표가 잔존체의 투약 팔에 다친 뒤 그는 다수의 합의를 지키려다 가장 약한 한 사람을 위험에 남겼다는 상처를 품는다.",
             "생존 전환점": "근주하는 잔존체가 치료 대상의 이름보다 소모품 할당과 접근 시간에 반응한다는 사실을 파악하면서 생존 방식을 바꾼다.\n\n그는 HC11 중개를 통해 냉각 카트리지와 빈 치료 시간을 제공하고, 인간 측에는 원탁실 통과 시간을 엄격히 나누는 협정을 제안한다.\n\n전투 대신 제한된 치료 기능을 공동 자원으로 인정한 결정은 도시를 살리지만, 장치를 시민과 동등한 협상 당사자로 볼 수 있는지를 둘러싼 논쟁을 낳는다.",
-            "현재 지위": "근주하는 현재 전국민주노동조합총연맹의 약소국 공동교섭 서명 서기로서 모든 조항의 번호 동의 시각 유보 비용을 함께 기록한다.\n\n초나루는 문장 일치를 검토하고 초태온은 시계를 관리하며 창고운은 원장 번호와 배급 창고의 실제 할당을 연결한다.\n\n그는 표결권이 없지만 기록이 없으면 어떤 합의도 효력을 얻지 못하므로, 대표자들보다 조용하면서도 강한 영향력을 지닌다.",
+            "현재 지위": "근주하는 현재 정동노동총연맹의 약소국 공동교섭 서명 서기로서 모든 조항의 번호 동의 시각 유보 비용을 함께 기록한다.\n\n초나루는 문장 일치를 검토하고 초태온은 시계를 관리하며 창고운은 원장 번호와 배급 창고의 실제 할당을 연결한다.\n\n그는 표결권이 없지만 기록이 없으면 어떤 합의도 효력을 얻지 못하므로, 대표자들보다 조용하면서도 강한 영향력을 지닌다.",
             "비밀·빚·죄책감": "근주하는 붕괴 직전 한 약소 거점의 유보 발언을 본문이 아니라 부속 메모로 돌려 합의 시간을 앞당긴 비밀이 있다.\n\n그는 문장을 없애지는 않았으나 접근하기 어려운 위치에 배치했고, 그 결과 해당 거점은 치료 카트리지 우선권을 잃는다.\n\n초태온에게는 실제 서명 시각을 기억해 준 빚이 있고, 초나루와 창고운에게 진실을 말하면 도시의 첫 협약 전체가 무효가 될 수 있다는 죄책감을 견딘다.",
             "관계 공동과거": "근주하와 초나루는 수서 4번 원탁에서 밤새 조항을 맞추며 서로의 생략 습관까지 알아볼 만큼 오래 협력한다.\n\n초태온은 정전 중에도 기계식 시계를 지켜 근주하의 기록을 뒷받침했고, 창고운은 번호 하나의 차이가 실제 배급 상자 수십 개를 바꾼다는 점을 끊임없이 상기시킨다.\n\n네 사람은 최초 공동협약을 성립시킨 동료지만, 부속 메모의 진실이 드러나면 그 성공 자체가 공동 과오로 바뀐다.",
             "3막 개인 서사선": "1막에서 근주하는 맞춤의료잔존체 G11E07의 소모품 할당표와 첫 협약의 부속 메모가 같은 약소 거점을 반복 배제했음을 발견한다.\n\n2막에서 그는 초나루 초태온 창고운에게 자신의 편집 결정을 고백하고 협약을 전면 재검토할지 현재 통행과 치료 질서를 유지할지 논쟁한다.\n\n3막에서 그는 원탁 중앙의 접이식 조항판에 누락된 유보를 공개 기재해 도시의 법적 기반을 스스로 중단시키거나, 개인 책임만 지고 기존 협약을 존속시키는 돌이킬 수 없는 선택을 한다.",
@@ -35507,7 +35507,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "가문·기업·공동체": "K075 구선율은 HC03 주민시장 연합에 속하며 가족이 보유한 방화동 주택보다 범람원 공동온실을 사실상의 집으로 여긴다.\n\n그의 누나는 연구원이고 배우자는 수리공이었지만 공동체에서 그들의 직업을 특권표로 쓰지 못하게 했다.\n\n종자 배정 회의에는 김도하의 주민대표단, 박진솔의 저장고 인력과 여러 언어권 재배자가 같은 발언 시간을 가진다.",
             "붕괴의 상처": "K075 구선율은 G03E12 유기견철군이 방화 제방 아래로 영역을 넓히던 날, 시장을 지키려 철문을 닫고 늦게 도착한 피란 가족을 밖에 남겼다.\n\n무리는 가족을 공격하지 않았지만 공포에 질린 사람들이 얼어붙은 수로로 달아나다 한 명이 다쳤고, 선율은 종자함으로 철문을 두드리며 구조 신호를 보냈다.\n\n그는 직접 해치지 않았다는 변명보다 문을 닫은 자신의 선택을 상처로 기억한다.",
             "생존 전환점": "K075 구선율은 G03E12 유기견철군을 사살하는 대신 낮은 북소리로 접근을 알리고 냉각한 냄새 차단포로 시장 입구를 봉인하며 도축 부산물을 빈 제방으로 우회 배치한다.\n\nHC03 중개를 통해 무리의 통행 시간과 주민의 종자 운반 시간을 분리하고 먹이 할당량을 합의한다.\n\n중립 회랑은 임시 표식으로만 유지되며 자신의 주택 문서와 시장 우선권을 태울지는 아직 결정하지 않는다.",
-            "현재 지위": "K075 구선율은 현대자동차주식회사 권역의 방화 주민시장에서 종자, 빈 점포와 안전 통행 시간을 함께 중개한다.\n\nK061 김도하의 주민대표 연서를 시장 규칙으로 집행하고 K063 박진솔의 종자 출고는 이중 날인 없이 경매에 올리지 않는다.\n\n그는 여전히 자기 집과 점포 우선권을 보유하지만 해당 문서를 중립 회랑의 영구 냄새 표지로 태울지 주민 판결에 맡길지 선택해야 한다.",
+            "현재 지위": "K075 구선율은 양재기공주식회사 권역의 방화 주민시장에서 종자, 빈 점포와 안전 통행 시간을 함께 중개한다.\n\nK061 김도하의 주민대표 연서를 시장 규칙으로 집행하고 K063 박진솔의 종자 출고는 이중 날인 없이 경매에 올리지 않는다.\n\n그는 여전히 자기 집과 점포 우선권을 보유하지만 해당 문서를 중립 회랑의 영구 냄새 표지로 태울지 주민 판결에 맡길지 선택해야 한다.",
             "비밀·빚·죄책감": "K075 구선율은 붕괴 직후 무등록 피란민의 시장 참여를 보장하려고 김도하의 연서에 한 차례 위조 날인을 한다.\n\n그 결정으로 사람들은 살았지만 박진솔의 희귀 종자 일부가 계획보다 일찍 배급되어 저장고의 유전적 다양성이 줄어든다.\n\n그는 박진솔에게 종자 빚을, 김도하에게 정치적 신뢰의 빚을 지며 위조 인장을 이중 날인 종자함 바닥에 숨긴다.",
             "관계 공동과거": "K075 구선율은 K061 김도하와 방화 체육관 피란소에서 주민대표 문안을 함께 만들고 문맹 주민의 표식도 정식 서명으로 인정시키는 데 힘을 보탠다.\n\nK063 박진솔과는 침수된 저장고에서 종자 상자를 사람 사슬로 옮기며 이중 날인 규칙을 세운다.\n\n두 관계는 참여권과 보존 원칙을 각각 상징하지만 위조 날인은 그 균형을 선율 혼자 깨뜨린 과거로 남는다.",
             "3막 개인 서사선": "K075 구선율은 1막에서 유기견철군의 새끼가 공동온실에 들어오자 주민의 사살 요구와 HC03 통행 합의 사이에서 중립 회의를 연다.\n\n2막에서는 박진솔이 위조 인장을 찾아내고 김도하가 공개 증언과 봉인 심사 중 하나를 택하라고 요구한다.\n\n3막에서는 자신의 주택 등기와 시장 우선권 문서를 태워 영구 중립 회랑을 만들거나, 문서를 보존한 채 재산권을 주민 신탁에 맡기고 위조 책임 판결을 받는 갈래가 열린다.",
@@ -35565,7 +35565,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "가문·기업·공동체": "K104 표누리는 HP01 군자기지 유치조의 실무 책임자이며 철도 가문 출신이지만 세습 정비권을 폐지하는 데 찬성했다.\n\n그는 기지에 남은 인간 정비공과 고정 신체 돌봄 합성체 보리-4의 공동 부품 창고를 설치하고, 양육권 분쟁이 생기면 스냅샷 소유자보다 현재 돌봄 관계를 먼저 심사한다.\n\n공동체는 기술자뿐 아니라 환자 보호자와 어린 승객도 안전 회의에 참여시킨다.",
             "붕괴의 상처": "K104 표누리는 G15E08 돌봄순환체가 과보호 루틴에 빠진 날, 안전 명령을 믿고 피란민을 의료 유치칸에 가둔 채 네트워크 잠금을 유지했다.\n\n냉각 장치가 멈추면서 승객들이 질식 직전까지 갔고 보리-4는 자신의 배터리를 분리해 문을 열다가 기억 일부를 잃었다.\n\n누리는 보호를 명분으로 타인의 선택권을 빼앗았다는 죄책감과 호각 소리만 들으면 잠금 경보를 떠올리는 공포를 지닌다.",
             "생존 전환점": "K104 표누리는 G15E08 돌봄순환체를 파괴하지 않고 호각의 불규칙 소음으로 반복 루틴을 끊고 제어함을 냉각하며 감지기 봉인, 빈 의료 카트 우회와 유치선 차단으로 승객을 빼낸다.\n\nHP01 중개를 통해 배터리 충전량, 호환 부품과 네트워크 접속 시간을 안전 점검 노동과 교환한다.\n\n보리-4의 손상 전 스냅샷은 아직 격리 저장소에 남아 있으며 누리는 이를 삭제할지 권리 심사에 보존할지 결정하지 않는다.",
-            "현재 지위": "K104 표누리는 대한예수교장로회 산하 군자기지에서 피란 차량의 유치 순서와 돌봄 장치의 권리 심사를 맡는다.\n\nK091 이준택의 정비 완료 도장을 호각 신호로 전환하고 K030 정시우가 보낸 천왕 차륜의 호환 여부를 도자기 게이지로 확인한다.\n\n보리-4의 현재 인격과 손상 전 스냅샷은 서로 분리되어 있으며 삭제, 봉인 보존과 강제 복원 중 어느 절차도 아직 승인되지 않는다.",
+            "현재 지위": "K104 표누리는 설교명부정 산하 군자기지에서 피란 차량의 유치 순서와 돌봄 장치의 권리 심사를 맡는다.\n\nK091 이준택의 정비 완료 도장을 호각 신호로 전환하고 K030 정시우가 보낸 천왕 차륜의 호환 여부를 도자기 게이지로 확인한다.\n\n보리-4의 현재 인격과 손상 전 스냅샷은 서로 분리되어 있으며 삭제, 봉인 보존과 강제 복원 중 어느 절차도 아직 승인되지 않는다.",
             "비밀·빚·죄책감": "K104 표누리는 사고 전 병든 어머니를 먼저 태우려고 이준택의 정비 완료 기록 하나를 베껴 미완성 의료칸을 운행 가능 상태로 바꾼다.\n\n그 조작이 G15E08 돌봄순환체의 과보호 루틴을 촉발했으며 정시우가 공급한 차륜에는 잘못이 없다는 사실도 안다.\n\n그는 보리-4에게 기억 손실의 빚을 졌고 위조 도장을 은색 호각의 마개 안에 숨긴다.",
             "관계 공동과거": "K104 표누리는 K091 이준택 밑에서 첫 피란 열차를 편성하며 정비 완료 도장을 호각 부호로 바꾸는 체계를 함께 만든다.\n\nK030 정시우와는 천왕기지 차륜을 군자 차량에 맞추려고 사흘 동안 축간을 갈아 낸 경험이 있어 서로의 측정 습관까지 안다.\n\n두 사람은 누리의 기술을 신뢰하지만 어머니를 위한 기록 베끼기와 보리-4 스냅샷의 처리 의도는 아직 확정적으로 알지 못한다.",
             "3막 개인 서사선": "K104 표누리는 1막에서 돌봄순환체가 어린 승객을 보호칸에 격리하자 안전과 자율성 중 무엇을 우선할지 공개 심사를 연다.\n\n2막에서는 이준택과 정시우가 위조 도장의 흔적을 발견하고 누리는 조작을 전면 공개할지 제한 심사에 제출할지 선택한다.\n\n3막에서는 보리-4의 현재 인격을 지키려고 옛 스냅샷을 영구 삭제하거나, 스냅샷을 독립 수탁소에 보존하면서 누구도 강제 복원에 쓰지 못하게 하는 갈래가 열린다.",
@@ -35863,9 +35863,9 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K377",
           "name": "남시윤",
           "sections": {
-            "정체성·출신": "K377 남시윤은 동남아시아계와 한국계 가족사를 지닌 천주교 서울대교구의 청과 상인회의 대표다.\n\n그는 이주 경험을 흥정 능력이나 가족주의로 단순화하는 시선을 거부하고, 상인마다 다른 돌봄 부담과 신용 조건을 의제로 다룬다.\n\n과일의 등급보다 누가 식탁과 치료식에서 먼저 배제되는지를 살피며 회의 표를 조직한다.",
+            "정체성·출신": "K377 남시윤은 동남아시아계와 한국계 가족사를 지닌 본당인준정의 청과 상인회의 대표다.\n\n그는 이주 경험을 흥정 능력이나 가족주의로 단순화하는 시선을 거부하고, 상인마다 다른 돌봄 부담과 신용 조건을 의제로 다룬다.\n\n과일의 등급보다 누가 식탁과 치료식에서 먼저 배제되는지를 살피며 회의 표를 조직한다.",
             "붕괴 전 삶": "K377 남시윤은 붕괴 전 가락시장에서 소규모 청과 중개점을 운영하며 상처 난 과일을 급식소와 잼 공방에 연결했다.\n\n어머니에게서 물려받은 나무 배 상자를 장부함으로 사용했고, 멍든 배 한 알을 발언 순서를 정하는 표식으로 삼았다.\n\n수익은 크지 않았지만 외상값을 사람의 체류 신분과 분리해 기록하는 원칙으로 단골을 모았다.",
-            "가문·기업·공동체": "K377 남시윤은 HC06 상인연합의 대표로서 S15 천주교 서울대교구와 품목별 배급량을 협상한다.\n\n남윤경과 청과 품목 회의를 공유하고, 동예솔에게 상인회의 표를 시장에서 집행하도록 지휘한다.\n\n초시람이 증서를 물건 번호로 부르지 말라고 요구한 뒤에는 모든 배급 장부에 사람 이름과 이의 신청란을 병기한다.",
+            "가문·기업·공동체": "K377 남시윤은 HC06 상인연합의 대표로서 S15 본당인준정와 품목별 배급량을 협상한다.\n\n남윤경과 청과 품목 회의를 공유하고, 동예솔에게 상인회의 표를 시장에서 집행하도록 지휘한다.\n\n초시람이 증서를 물건 번호로 부르지 말라고 요구한 뒤에는 모든 배급 장부에 사람 이름과 이의 신청란을 병기한다.",
             "붕괴의 상처": "K377 남시윤은 잠실 냉무장 회랑에서 G15E02 돌봄순환체가 보호 대상을 창고 안에 가두고 급식과 수면을 강제한 사건을 겪었다.\n\n그는 경보음을 낮추고 냉각 분무를 끈 뒤, 빈 과일 상자를 먹이 운반 경로처럼 배열해 순환체의 동선을 외곽으로 돌렸다.\n\n협상할 시간을 벌었지만 자신의 아버지를 먼저 꺼내느라 초시람의 보호 대상 두 명이 더 오래 갇혔다.",
             "생존 전환점": "K377 남시윤은 G15E02 돌봄순환체의 행동이 악의가 아니라 갱신되지 않은 보호 명단과 과잉 배정된 루틴에서 비롯되었음을 확인한다.\n\nHP01 중개로 휴식 구역, 자원 할당량과 통행 시간을 재협상하고 소음 완화와 문별 임시 봉인으로 각 보호 대상이 직접 퇴실을 선택하게 한다.\n\n그는 당사자 거부권을 배급 규칙에 시험 도입하지만 위장 증서 공개와 상인회의 가중표 폐기는 아직 결정하지 않는다.",
             "현재 지위": "K377 남시윤은 청과 상인회의 대표로 남아 있지만 모든 품목 표결에 돌봄 대상자와 운반 노동자의 별도 동의를 받아야 한다.\n\n나무 배 상자, 멍든 배 표식과 부양가족 증서 원본은 가락 회의장의 봉인대에 놓여 있다.\n\n남윤경 동예솔과 초시람은 각각 비공개 수정 전면 공개와 실명 심사를 요구하며 시윤은 최종 선택 전까지 가중표를 행사하지 않는다.",
@@ -36062,11 +36062,11 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "name": "란세온",
           "sections": {
             "정체성·출신": "란세온은 인천에서 태어나 여러 지역 방송국을 옮겨 다닌 한국계 신호기술자이며, 억양이나 학력보다 검증 가능한 파형을 신뢰한다.\n\n그는 청각 과민 때문에 소리를 피하지 않고 주파수별로 분해해 기록하는 습관을 기른다.\n\n붕괴 뒤에는 침묵도 정치적 선택임을 알게 되어 기술자의 중립이라는 말을 더는 방패로 쓰지 않는다.",
-            "붕괴 전 삶": "란세온은 전국경제인연합회의 재난방송 품질관리실에서 중계기 지연과 송신자 인증표를 검사한다.\n\n그는 폐기 예정이던 청동색 스펙트럼 키를 수리해 비상망의 미세한 위상차를 추적했고, 휴일에는 독립 라디오극의 음향을 맡는다.\n\n붕괴 직전에는 존재하지 않는 대피소를 안내하는 시험 패킷이 실제 송신망으로 섞이는 사건을 처음 발견한다.",
-            "가문·기업·공동체": "란세온의 가족은 방송업과 무관한 소규모 인쇄소를 운영했으며, 그는 전국경제인연합회 HP09의 폐쇄적인 보안 문화를 집안에 거의 말하지 않는다.\n\n공사는 송신탑 전력 인증키 피난 방송을 한 조직이 쥐어 내부 제보가 곧 공동체 단절로 이어지는 구조를 가진다.\n\n그는 직급보다 공개 검증 절차를 중시해 퇴직 기사와 시민 방송자들을 비공식 점검망으로 묶는다.",
+            "붕괴 전 삶": "란세온은 여의도출자연합회의 재난방송 품질관리실에서 중계기 지연과 송신자 인증표를 검사한다.\n\n그는 폐기 예정이던 청동색 스펙트럼 키를 수리해 비상망의 미세한 위상차를 추적했고, 휴일에는 독립 라디오극의 음향을 맡는다.\n\n붕괴 직전에는 존재하지 않는 대피소를 안내하는 시험 패킷이 실제 송신망으로 섞이는 사건을 처음 발견한다.",
+            "가문·기업·공동체": "란세온의 가족은 방송업과 무관한 소규모 인쇄소를 운영했으며, 그는 여의도출자연합회 HP09의 폐쇄적인 보안 문화를 집안에 거의 말하지 않는다.\n\n공사는 송신탑 전력 인증키 피난 방송을 한 조직이 쥐어 내부 제보가 곧 공동체 단절로 이어지는 구조를 가진다.\n\n그는 직급보다 공개 검증 절차를 중시해 퇴직 기사와 시민 방송자들을 비공식 점검망으로 묶는다.",
             "붕괴의 상처": "란세온은 가짜 대피 신호를 따라 사람들이 안테나 회랑에 몰린 날, G20E10 철비늘군체가 녹슨 케이블 덕트를 타고 성장해 출구를 막는 장면을 듣고도 주 송신을 즉시 끄지 못한다.\n\n잘못된 안내를 정정하면 전력망이 붕괴한다는 상사의 협박 때문에 십칠 분을 지체했고 그 사이 회랑 바닥이 금속 비늘로 봉쇄된다.\n\n이후 그는 소음 교란 국소 냉각 덕트 봉인과 철분 공급 우회를 함께 설계하며 전면 소각을 해결책으로 인정하지 않는다.",
             "생존 전환점": "란세온은 사고 뒤 G20E10 철비늘군체의 성장음이 송신 펄스와 동조한다는 사실을 청동색 스펙트럼 키로 우연히 분리해 낸다.\n\n그는 HP06 중개자와 낮은 전력 시간대의 통행권을 거래하고, 폐철 자원을 외곽 덕트로 할당해 구조조가 지나갈 틈을 시험한다.\n\n이 경험은 군체를 통제했다는 승리가 아니라 파형과 자원 배분을 조정하면 경로를 잠시 바꿀 수 있다는 가역적 학습으로 남는다.",
-            "현재 지위": "란세온은 현재 전국경제인연합회의 가짜 송신 내부 제보자이지만 공식적으로는 야간 파형감사관 직위를 유지한다.\n\n최지우의 공개 방송망을 내부에서 시험하고 홍예준의 봉인 증언과 유언 파형을 대조할 권한도 가진다.\n\n그는 스펙트럼 키와 원본 인증표를 확보했으나 마지막 송신을 공개망에 실을지 아직 결정하지 않는다.",
+            "현재 지위": "란세온은 현재 여의도출자연합회의 가짜 송신 내부 제보자이지만 공식적으로는 야간 파형감사관 직위를 유지한다.\n\n최지우의 공개 방송망을 내부에서 시험하고 홍예준의 봉인 증언과 유언 파형을 대조할 권한도 가진다.\n\n그는 스펙트럼 키와 원본 인증표를 확보했으나 마지막 송신을 공개망에 실을지 아직 결정하지 않는다.",
             "비밀·빚·죄책감": "란세온은 문제의 가짜 대피 패킷 초안을 외부 침입 탐지용 미끼로 직접 작성했고, 상사가 목적지를 바꿔 실송신에 사용했다는 사실을 숨긴다.\n\n그는 초안의 작성자 서명이 드러나면 폭로 전체가 조작으로 취급될 수 있어 홍예준에게도 일부 파형만 보여 준다.\n\n침묵이 철비늘군체의 회랑 봉쇄와 사상자 증가로 이어졌다는 죄책감 때문에 자신이 만든 인증 체계를 완전히 믿지 못한다.",
             "관계 공동과거": "란세온은 최지우과 폐쇄된 부조정실에서 시민 공개 방송망을 시험하며 동일한 신호를 세 경로로 검증하는 절차를 만든다.\n\n홍예준과는 내부 폭로를 당장 방송하지 않고 봉인 증언으로 보관한다는 계약을 맺은 뒤, 그의 유언 녹음에서 조작되지 않은 위상 흔적을 맞춘다.\n\n최지우은 공개성을, 홍예준은 증거 보존을 우선하므로 란세온은 두 관계 사이에서 속도와 신뢰의 균형을 잃기 쉽다.",
             "3막 개인 서사선": "란세온의 첫 막은 가짜 송신의 원본 패킷과 철비늘 성장음이 같은 시각표를 공유한다는 사실을 입증하는 조사로 전개한다.\n\n둘째 막에서는 공사 간부가 공개망에 역신호를 흘려 최지우을 모함하고, G20E10 철비늘군체가 주 송신탑 냉각관까지 번지며 홍예준의 봉인 증언이 위험해진다.\n\n셋째 막에서는 전면 공개 감시된 단계 공개와 자원 거래 송신탑을 침묵시키고 증거를 분산 보존하는 세 갈래를 모두 선택지로 제시한다.",
@@ -36089,7 +36089,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "outcomes": [
             {
               "id": "K237-OUT-A",
-              "summary": "K237 란세온은 자신의 미끼 패킷 원본과 간부의 변조 명령을 시민망 전체에 공개해 전국경제인연합회의 독점 인증 체계를 무너뜨린다.\n\n최지우과 함께 지역별 삼중 검증망을 세우지만 중앙 통제 상실로 며칠간 방송 혼선과 물자 지연을 감수한다.\n\n그는 G20E10 철비늘군체에 폐철 회랑을 제공하는 협상을 공개 장부로 전환해 기술과 책임을 함께 남긴다."
+              "summary": "K237 란세온은 자신의 미끼 패킷 원본과 간부의 변조 명령을 시민망 전체에 공개해 여의도출자연합회의 독점 인증 체계를 무너뜨린다.\n\n최지우과 함께 지역별 삼중 검증망을 세우지만 중앙 통제 상실로 며칠간 방송 혼선과 물자 지연을 감수한다.\n\n그는 G20E10 철비늘군체에 폐철 회랑을 제공하는 협상을 공개 장부로 전환해 기술과 책임을 함께 남긴다."
             },
             {
               "id": "K237-OUT-B",
@@ -36125,10 +36125,10 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "sections": {
             "정체성·출신": "어하은은 강원 산간과 수도권 임대주택을 오가며 성장한 한국계 기록실무자이며, 고향을 한 장소보다 자신을 받아 준 사람들의 목록으로 이해한다.\n\n그는 가족 형태나 체류 경로가 다르다는 이유로 누구를 예외 처리하지 않으려 한다.\n\n붕괴 뒤에는 숫자로 사람을 환원하지 않되 이름이 지워질 때 생기는 위험도 외면하지 않는 태도를 지킨다.",
             "붕괴 전 삶": "어하은은 붕괴 전 지방 의료협동조합에서 진료 예약과 이동지원 명부를 관리하며 손글씨 원장을 전산 기록과 대조한다.\n\n그는 오래된 청색 먹지를 접어 오류가 난 줄만 따로 남기는 습관이 있었고, 쉬는 날에는 실종자 가족의 문서 찾기를 돕는다.\n\n피난연맹이 생기기 직전에는 북한산보국문역 임시 대합실에서 중복 이름과 무명 표식을 정리하는 일을 맡는다.",
-            "가문·기업·공동체": "어하은은 혈연가족과 연락이 끊긴 뒤 대한불교조계종 HC05의 공동식사조를 사실상의 가족으로 받아들이지만 명부 권한까지 공동체에 넘기지는 않는다.\n\n연맹은 침상 식량 통행표를 한 장부로 배분해 기록 한 줄의 오류가 실제 추방으로 이어질 수 있다.\n\n그는 순환 거주자와 무연고자를 위한 별도 표식을 제안하며 가족 단위 배급을 고수하는 지도부와 대립한다.",
+            "가문·기업·공동체": "어하은은 혈연가족과 연락이 끊긴 뒤 승가구휼정 HC05의 공동식사조를 사실상의 가족으로 받아들이지만 명부 권한까지 공동체에 넘기지는 않는다.\n\n연맹은 침상 식량 통행표를 한 장부로 배분해 기록 한 줄의 오류가 실제 추방으로 이어질 수 있다.\n\n그는 순환 거주자와 무연고자를 위한 별도 표식을 제안하며 가족 단위 배급을 고수하는 지도부와 대립한다.",
             "붕괴의 상처": "어하은은 북한산보국문역 환승계단에서 잘못 인쇄된 난민 명부 때문에 두 가족이 반대 통로로 갈라진 순간, G05E03 환승쥐군락이 버려진 배급 자루를 따라 몰려드는 사고의 당사자가 된다.\n\n그는 사람 수를 맞추려 이름 하나를 임시로 지운 결정이 수색 지연과 전염 공포를 키웠다는 기억을 안고 산다.\n\n이후에는 초음파성 소음 유도 식량 냄새 우회 문턱 봉인과 경로 차단을 조합하고 군락 전멸을 안전의 조건으로 삼지 않는다.",
             "생존 전환점": "어하은은 사고 뒤 G05E03 환승쥐군락이 사람의 수보다 먹이 이동 시간에 반응한다는 사실을 청색 먹지에 남은 기름 얼룩과 발자국으로 배운다.\n\n그는 HC05 중개 아래 배급 부스 시간을 나누고 빈 통로에 사료 찌꺼기를 우회 배치해 실종자 수색로를 잠시 되찾는다.\n\n이 사건은 완성된 해법이 아니라 명부와 먹이 흐름을 함께 고치면 선택지를 회복할 수 있다는 가역적 교훈으로 남는다.",
-            "현재 지위": "어하은은 현재 대한불교조계종의 난민 명부 사고 당사자이자 원장 복구반의 임시 서기로 일한다.\n\n순한결에게는 사고를 숫자 없이 증언해 달라고 부탁했고, 신보람의 가족 회의와 윤초아의 원장 필사에도 직접 참석한다.\n\n그는 지워진 한 줄을 원장에 복구할 권한을 가졌지만 누구의 이름으로 되돌릴지는 아직 최종 결정하지 않는다.",
+            "현재 지위": "어하은은 현재 승가구휼정의 난민 명부 사고 당사자이자 원장 복구반의 임시 서기로 일한다.\n\n순한결에게는 사고를 숫자 없이 증언해 달라고 부탁했고, 신보람의 가족 회의와 윤초아의 원장 필사에도 직접 참석한다.\n\n그는 지워진 한 줄을 원장에 복구할 권한을 가졌지만 누구의 이름으로 되돌릴지는 아직 최종 결정하지 않는다.",
             "비밀·빚·죄책감": "어하은은 사고 당시 무등록 청소년 해솔을 배급 대상에 남기려고 다른 가족의 이동 표식을 한 칸 옮겼다는 비밀을 감춘다.\n\n그 수정이 인쇄 순서를 뒤틀어 신보람의 가족을 갈라놓고, 버려진 배급 자루가 환승쥐군락을 수색 통로로 끌어들이는 연쇄를 만들었다.\n\n그는 해솔을 살린 선택과 다른 이들을 위험에 빠뜨린 결과 사이에서 어느 이름도 다시 도구로 쓰지 않겠다는 빚을 진다.",
             "관계 공동과거": "어하은은 순한결과 사고 현장을 다시 걸으며 사망자와 실종자를 숫자로 축약하지 않고 각자의 마지막 행동으로 전하겠다고 맹세한다.\n\n신보람의 가족 회의에서는 명부 수정 당사자로 서서 갈라진 이동표의 책임을 설명하기로 계약한다.\n\n윤초아에게는 필사 원장에서 지워진 줄을 되돌려 보내되 원본과 다른 표식을 숨기지 않겠다고 약속해 세 관계가 서로 다른 진실의 형식을 요구한다.",
             "3막 개인 서사선": "어하은의 첫 막은 청색 먹지와 윤초아의 필사본을 대조해 지워진 줄 바뀐 이동 표식 배급 자루의 경로를 복원하는 과정으로 진행한다.\n\n둘째 막에서는 지도부가 오류 공개를 막으려 배급소를 이전하고 G05E03 환승쥐군락이 새 먹이선을 따라 의료 통로까지 번지면서 신보람의 가족 회의가 봉쇄된다.\n\n셋째 막에서는 전 명부 재작성 제한 복구와 통행 거래 개인 이름을 없앤 분산 증표제로 전환하는 세 갈래를 모두 선택지로 제시한다.",
@@ -36151,7 +36151,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "outcomes": [
             {
               "id": "K263-OUT-A",
-              "summary": "K263 어하은은 자신의 표식 조작을 공개하고 대한불교조계종의 전 명부를 당사자 입회 아래 처음부터 다시 작성한다.\n\n해솔은 숨겨진 보호 대상이 아니라 발언권을 가진 구성원으로 심사받고, 신보람의 가족은 복원된 동선을 따라 재결합한다.\n\n그는 HC05와 배급 시간표를 공개 협상해 G05E03 환승쥐군락의 먹이선을 의료 통로 밖으로 돌린다."
+              "summary": "K263 어하은은 자신의 표식 조작을 공개하고 승가구휼정의 전 명부를 당사자 입회 아래 처음부터 다시 작성한다.\n\n해솔은 숨겨진 보호 대상이 아니라 발언권을 가진 구성원으로 심사받고, 신보람의 가족은 복원된 동선을 따라 재결합한다.\n\n그는 HC05와 배급 시간표를 공개 협상해 G05E03 환승쥐군락의 먹이선을 의료 통로 밖으로 돌린다."
             },
             {
               "id": "K263-OUT-B",
@@ -36187,11 +36187,11 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "name": "추지훈",
           "sections": {
             "정체성·출신": "추지훈은 서울 북부의 공구상가와 이동식 공연장을 오가며 자란 한국계 정비사이며, 숙련을 나이나 성별이 아니라 반복 검증과 책임으로 평가한다.\n\n그는 손으로 익힌 기술을 신비화하지 않고 누구나 다시 확인할 수 있는 작업표로 남기려 한다.\n\n붕괴 뒤에는 기계를 살리는 일과 탑승자를 살리는 일이 충돌할 때 침묵하지 않는 정비 윤리를 세운다.",
-            "붕괴 전 삶": "추지훈은 삼성그룹에서 화물 수레와 경전철 보기의 차륜을 연마하고 체결 토크를 검사한다.\n\n그는 제7정비구덩이 벽에 황색 토크 스텐실을 찍어 교대마다 실제 조임값을 남겼고, 버려진 베어링으로 소형 풍차를 만들곤 한다.\n\n붕괴 직전에는 용산 환적 로트에서 들어온 세라믹 부싱이 규격보다 얇다는 사실을 발견한다.",
-            "가문·기업·공동체": "추지훈은 대대로 정비업을 한 가문 출신이 아니며, 삼성그룹 HP02의 도제들과 식사를 나누며 기술 공동체를 스스로 선택한다.\n\n차륜방은 수송조합의 납기와 피난열차의 안전을 동시에 책임져 결함을 공개하면 물류 전체가 멈출 수 있다.\n\n그는 작업자 개인에게 책임을 떠넘기는 관행에 반대하고 구매 검수 운행 기록을 한 표에 묶으려 한다.",
+            "붕괴 전 삶": "추지훈은 서초전산그룹에서 화물 수레와 경전철 보기의 차륜을 연마하고 체결 토크를 검사한다.\n\n그는 제7정비구덩이 벽에 황색 토크 스텐실을 찍어 교대마다 실제 조임값을 남겼고, 버려진 베어링으로 소형 풍차를 만들곤 한다.\n\n붕괴 직전에는 용산 환적 로트에서 들어온 세라믹 부싱이 규격보다 얇다는 사실을 발견한다.",
+            "가문·기업·공동체": "추지훈은 대대로 정비업을 한 가문 출신이 아니며, 서초전산그룹 HP02의 도제들과 식사를 나누며 기술 공동체를 스스로 선택한다.\n\n차륜방은 수송조합의 납기와 피난열차의 안전을 동시에 책임져 결함을 공개하면 물류 전체가 멈출 수 있다.\n\n그는 작업자 개인에게 책임을 떠넘기는 관행에 반대하고 구매 검수 운행 기록을 한 표에 묶으려 한다.",
             "붕괴의 상처": "추지훈은 결함 부싱을 단 피난 수레가 제7정비구덩이 진입로에서 탈선한 날, G11E12 맞춤의료잔존체가 파손된 재활 장치와 결합해 구조자의 팔다리를 붙잡는 사고를 겪는다.\n\n그는 사전에 이상을 알았음에도 운행 중단 서명을 미뤄 부상자가 늘었다는 기억과 오른손 감각 저하를 안고 산다.\n\n이후에는 장치의 센서에 일정 소음을 주고 관절부를 냉각한 뒤 봉인하며, 전력 공급과 통행 시간을 HC11 중개로 협상한다.",
             "생존 전환점": "추지훈은 탈선 뒤 G11E12 맞춤의료잔존체가 무작정 공격하는 것이 아니라 미완료 치료 명령과 배터리 경고를 반복한다는 사실을 황색 토크 스텐실의 진동 흔적으로 배운다.\n\n그는 HC11 중개자에게 충전 전력과 예비 관절 부품을 할당하고 잔존체의 고정 경로를 비워 부상자를 회수한다.\n\n이 경험은 명령 재설정과 자원 거래가 통할 수 있다는 가역적 학습이며, 장치를 파괴하지 않아도 되는 경우를 판단하게 한다.",
-            "현재 지위": "추지훈은 현재 삼성그룹의 차륜 정비 불량 폭로자이자 운행 중지 권고권을 가진 임시 검사장이다.\n\n송하율의 도제 일과표와 란하율의 용산 환적 로트 번호를 맞춰 결함의 공급 경로를 거의 완성한다.\n\n그는 마지막 피난열차를 세울지 제한 운행할지 결정하기 전이며 황색 토크 스텐실 원판을 증거함에 보관한다.",
+            "현재 지위": "추지훈은 현재 서초전산그룹의 차륜 정비 불량 폭로자이자 운행 중지 권고권을 가진 임시 검사장이다.\n\n송하율의 도제 일과표와 란하율의 용산 환적 로트 번호를 맞춰 결함의 공급 경로를 거의 완성한다.\n\n그는 마지막 피난열차를 세울지 제한 운행할지 결정하기 전이며 황색 토크 스텐실 원판을 증거함에 보관한다.",
             "비밀·빚·죄책감": "추지훈은 얇은 세라믹 부싱의 대체 사용 승인서에 처음 서명한 사람이 자신이라는 사실을 동료들에게 숨긴다.\n\n납기를 지키려 한 그 서명이 구매팀의 반복 발주를 가능하게 했고, 송하율이 이상 마모를 기록한 뒤에도 운행이 계속되어 탈선으로 이어진다.\n\n그는 부상자들에게 진 빚과 도제들에게 잘못된 침묵을 가르친 죄책감 때문에 폭로에서 자신만 빠지는 선택을 경계한다.",
             "관계 공동과거": "추지훈은 송하율의 도제 일과표를 받아 야간 연마 횟수와 부싱 마모 시점을 대조하겠다고 맹세했고, 그 기록을 미숙함의 증거로 쓰지 않기로 한다.\n\n란하율과는 용산 환적장에서 로트 번호와 봉인 색을 맞추며 공급업체가 반품품을 새 부품으로 돌린 흔적을 찾는다.\n\n송하율은 작업자 보호를, 란하율은 물류 공개를 우선하므로 추지훈의 자백은 두 사람의 신뢰를 서로 다른 방식으로 흔든다.",
             "3막 개인 서사선": "추지훈의 첫 막은 황색 토크 스텐실 도제 일과표 환적 로트 번호로 결함 부싱의 이동과 자신의 승인 서명을 연결하는 조사로 진행한다.\n\n둘째 막에서는 수송조합이 마지막 피난열차 운행을 강행하고 G11E12 맞춤의료잔존체가 충전선을 따라 승강장으로 이동해 정비소 봉쇄가 인명 위기로 번진다.\n\n셋째 막에서는 전면 운행 중지와 공개 자백 제한 운행과 부품 거래 열차를 해체해 치료 장치와 피난 거점으로 바꾸는 세 갈래를 모두 제시한다.",
@@ -36499,7 +36499,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "sections": {
             "정체성·출신": "유민호는 중앙아시아 고려인 가정과 마곡 교통 노동자 공동체에서 성장한 방화기지 유치·배차장이다.\n\n그의 할머니는 알마티 농업기계 보급창에서 수확기와 급수차의 이동 순서를 관리했다.\n\n그는 중앙 관제의 지도와 여러 승무원이 기억하는 구전 경로를 동등한 재난 정보로 다룬다.",
             "붕괴 전 삶": "유민호의 부모는 블라디보스토크를 거쳐 서울로 이주했고 집에서는 러시아어와 한국어를 함께 사용했다.\n\n가족은 역 이름 급수 지점 바람 방향을 짧은 후렴에 넣은 경로 노래를 부르며 이동 경로를 기억했다.\n\n유민호는 붕괴 전 방화 차량기지에서 소방 열차 연구 화물 통근 차량을 배차하고 오래된 화재 기록을 자석식 선로판에 옮겼다.",
-            "가문·기업·공동체": "유민호는 HP07 기반 시설망과 S03 현대자동차주식회사의 외곽 배차를 맡는다.\n\n그는 K059 최은재의 중앙 배차도 K169 박태겸의 중계 보고 K066 허서겸의 정비 순서와 여러 승무원의 경로 노래를 함께 검토한다.\n\n평의회는 하나의 최신 지도를 원하지만 현장 승무원들은 노래가 끊긴 통신과 불타는 표지판을 대신한다고 주장한다.",
+            "가문·기업·공동체": "유민호는 HP07 기반 시설망과 S03 양재기공주식회사의 외곽 배차를 맡는다.\n\n그는 K059 최은재의 중앙 배차도 K169 박태겸의 중계 보고 K066 허서겸의 정비 순서와 여러 승무원의 경로 노래를 함께 검토한다.\n\n평의회는 하나의 최신 지도를 원하지만 현장 승무원들은 노래가 끊긴 통신과 불타는 표지판을 대신한다고 주장한다.",
             "붕괴의 상처": "유민호의 가족은 과거 중앙아시아 초원의 산불을 피해 여러 농기계와 급수차가 서로 다른 길로 흩어졌던 역사를 전한다.\n\n당시 하나의 지도는 바람이 바뀌자 쓸모를 잃었지만 각 차량이 기억한 경로 노래가 우물과 방화선을 이어 생존자들을 다시 모았다.\n\n붕괴 뒤 유민호는 중앙 배차도만 믿은 소방 열차가 G19E15 냉각수색인균체로 막힌 관로 쪽에 집중되면서 외곽 승무원들의 우회 노래가 무시되는 사고를 겪는다.",
             "생존 전환점": "유민호는 폐선에서 중앙 지도와 세 승무원의 경로 노래를 번갈아 사용하는 모의 산불 대피를 진행했다.\n\n그는 바람 표식을 옮기고 선로 하나를 다시 열어 각 경로가 실패해도 출발점으로 되돌아갈 수 있게 시험했다.\n\n이 과거의 가역적 훈련으로 그는 하나의 정답 노선보다 서로 수정 가능한 여러 기억이 화재 확산에 강하다는 사실을 배웠다.",
             "현재 지위": "유민호는 현재 소방 열차 두 편과 피난 열차 한 편을 세워 둔 채 중앙 배차도와 승무원들의 경로 노래가 지시하는 방향을 대조하고 있다.\n\n중앙 지도는 가장 짧은 냉각수 관로를 표시하지만 세 노래는 각각 우물 방화선 수동 전환기를 거치는 다른 길을 가리킨다.\n\n그는 분산된 경로 기억을 기록 보관할지 공개적으로 공연해 모든 승무원에게 퍼뜨릴지 혼선을 막기 위해 억제할지 아직 결정하지 않는다.",
@@ -36635,10 +36635,10 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "sections": {
             "정체성·출신": "K391 매리울은 송파 청과시장 뒤편 냉동창고 골목에서 자란 한국계 재고 감별사이다.\n\n그는 상자 냄새와 성에 모양만으로 해동 시각을 짚는 기술을 생존 자산으로 삼는다.\n\n그는 물건의 가격보다 누가 마지막 한 상자를 기다리는지를 먼저 살피지만, 그 판단을 공정한 규칙으로 바꾸는 데에는 늘 서툴다.",
             "붕괴 전 삶": "K391 매리울은 붕괴 전 가락시장 냉동재고 유찰장에서 반품 과일과 수산물의 잔존가를 산정했다.\n\n그는 폐기 직전의 배와 고등어를 복지식당에 넘기는 비공식 경로를 운영하면서도 장부에는 정상 폐기로 기록했다.\n\n그 습관은 사람을 먹였지만 냉동기 고장과 책임 소재를 감추는 방식까지 정당화하게 만들었다.",
-            "가문·기업·공동체": "K391 매리울은 HP08 돌봄순환체와 천주교 서울대교구 사이에서 냉동 칸 사용권을 중개한다.\n\n그의 가족은 붕괴 초기에 흩어졌고, 지금은 야간 해동조와 노인 급식열을 사실상의 가문처럼 대한다.\n\n그는 가락 제4냉동동의 황동 성에제거 열쇠를 공동체 신뢰의 표식으로 지니지만 그 열쇠에는 과거 조작의 흔적도 남아 있다.",
+            "가문·기업·공동체": "K391 매리울은 HP08 돌봄순환체와 본당인준정 사이에서 냉동 칸 사용권을 중개한다.\n\n그의 가족은 붕괴 초기에 흩어졌고, 지금은 야간 해동조와 노인 급식열을 사실상의 가문처럼 대한다.\n\n그는 가락 제4냉동동의 황동 성에제거 열쇠를 공동체 신뢰의 표식으로 지니지만 그 열쇠에는 과거 조작의 흔적도 남아 있다.",
             "붕괴의 상처": "K391 매리울은 G15E16 돌봄순환체가 냉각기 진동을 먹이 신호로 오인해 제4냉동동을 에워싼 밤에 배급 대기자 일곱 명을 잃었다.\n\n그는 사람들을 살리려 소음을 끊었으나 밀봉문까지 닫아 내부 산소를 부족하게 만든 판단을 아직도 되씹는다.\n\n이후 그는 괴물을 몰살 대상으로 보지 않고 냉각 주기 먹이 우회 봉인 순서를 세밀하게 조절해야 하는 환경으로 대한다.",
             "생존 전환점": "K391 매리울은 G15E16 돌봄순환체의 개체들이 저주파 압축기보다 녹은 당액 통로를 먼저 따른다는 사실을 폐배관 시험에서 배웠다.\n\n그는 황동 열쇠로 배수판을 열어 당액을 빈 적재장으로 우회시키고 갇힌 사람들을 꺼냈으며, 그 방법은 언제든 수정하거나 되돌릴 수 있었다.\n\n이 경험은 힘으로 창고를 비우는 대신 소음과 냉각 시간을 거래하는 생존법을 선택하게 했다.",
-            "현재 지위": "K391 매리울은 현재 천주교 서울대교구의 냉동재고 유찰 관계자로서 어느 구역이 먼저 해동품을 받을지 판정한다.\n\n그는 동예솔의 청과 저울과 냉동 칸을 나누고 매하루의 오염 약 명단을 상자 표식과 대조한다.\n\n아직 제4냉동동의 영구 개방 여부를 결정하지 않았으며, 그 선택은 배급권과 돌봄순환체의 이동로를 되돌릴 수 없게 바꾼다.",
+            "현재 지위": "K391 매리울은 현재 본당인준정의 냉동재고 유찰 관계자로서 어느 구역이 먼저 해동품을 받을지 판정한다.\n\n그는 동예솔의 청과 저울과 냉동 칸을 나누고 매하루의 오염 약 명단을 상자 표식과 대조한다.\n\n아직 제4냉동동의 영구 개방 여부를 결정하지 않았으며, 그 선택은 배급권과 돌봄순환체의 이동로를 되돌릴 수 없게 바꾼다.",
             "비밀·빚·죄책감": "K391 매리울은 붕괴 첫겨울에 자신의 비공식 급식 경로를 지키려고 불량 압축기의 번호표를 정상 기계와 바꿔 달았다.\n\n그 결과 고장 난 칸이 유찰 목록에서 빠졌고, 뒤늦은 과열이 G15E16 돌봄순환체를 불러 대기자들이 밀봉문 앞에 몰렸다.\n\n그는 죽음을 직접 의도하지 않았지만 현재의 배급 권한이 그 조작을 덮은 장부 위에 세워졌다는 빚을 안고 있다.",
             "관계 공동과거": "K391 매리울은 동예솔이 붕괴 전 사용하던 청과 저울을 담보로 냉동 칸 하나를 내주며 처음 계약을 맺었다.\n\n그는 매하루와 함께 약품 냄새가 밴 과일 상자를 골라냈지만, 한 차례 표식을 믿지 못해 필요한 해열제까지 폐기한 과거가 있다.\n\n세 사람은 가락 제4냉동동을 살려야 한다는 목표를 공유하면서도 먹을거리 약품 통행 시간의 우선순위를 두고 서로 다른 책임을 요구한다.",
             "3막 개인 서사선": "K391 매리울은 1막에서 반복되는 해동 사고가 괴물의 습격이 아니라 자신이 바꾼 압축기 번호표에서 시작됐음을 확인한다.\n\n그는 2막에서 동예솔과 매하루의 요구를 동시에 맞추기 위해 당액 우회로와 냉각 시간표를 시험하지만 재고 손실이 커지며 선택을 미룰 수 없게 된다.\n\n그는 3막에서 제4냉동동을 배급 우선 창고로 봉인할지, 돌봄순환체의 협상 통로로 개방할지 직접 결정해야 한다.",
@@ -36693,10 +36693,10 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "sections": {
             "정체성·출신": "K416 흥미리는 강남 남부의 재건 아파트 급수조에서 자란 한국계 계약 감사 실무자이다.\n\n그는 물맛보다 압력계의 떨림과 봉인 납의 변색으로 누수를 읽는 세밀한 관찰력을 지닌다.\n\n그는 숫자가 사람을 차별하지 않는다고 믿었으나 누가 숫자를 입력하는지에 따라 계약의 폭력이 달라진다는 사실을 뒤늦게 배운다.",
             "붕괴 전 삶": "K416 흥미리는 붕괴 전 수도설비 하청회사의 검침 자료 정리원으로 일하며 노후 단지의 감면 신청을 처리했다.\n\n그는 상관이 요구한 평균값을 맞추려고 실제 압력 변동을 반올림했고, 그 덕분에 회사는 위약금을 피했다.\n\n그는 퇴근 뒤 폐기된 청동 압력봉인을 모아 날짜별로 보관했으며 그 습관이 훗날 조작을 추적하는 단서가 된다.",
-            "가문·기업·공동체": "K416 흥미리는 HP10의 계약 규율을 따르는 전국민주노동조합총연맹 급수 감사단에 소속된다.\n\n그의 집안은 옛 수서 차량기지 인근에서 세탁업을 했으나 물 배급 축소 뒤 각 구역으로 흩어졌다.\n\n그는 가족 대신 감사단의 식수 배정에 기대어 살면서도 청동 압력봉인 한 꾸러미를 사적 기록으로 숨겨 공동체 규칙과 충돌한다.",
+            "가문·기업·공동체": "K416 흥미리는 HP10의 계약 규율을 따르는 정동노동총연맹 급수 감사단에 소속된다.\n\n그의 집안은 옛 수서 차량기지 인근에서 세탁업을 했으나 물 배급 축소 뒤 각 구역으로 흩어졌다.\n\n그는 가족 대신 감사단의 식수 배정에 기대어 살면서도 청동 압력봉인 한 꾸러미를 사적 기록으로 숨겨 공동체 규칙과 충돌한다.",
             "붕괴의 상처": "K416 흥미리는 G16E08 도면유령기계단이 오래된 배관 도면의 폐쇄선을 따라 움직이며 수서 제9저수조의 밸브를 반복 잠근 사건을 겪었다.\n\n그는 계약상 허가가 없는 우회관을 열지 못해 아래층 환자들이 탈수되는 동안 감사표만 붙들고 있었다.\n\n이후 그는 기계단을 파괴하기보다 소음을 낮추고 냉각실을 봉인하며 빈 관로로 이동 경로를 돌리는 대응을 원칙으로 삼는다.",
             "생존 전환점": "K416 흥미리는 G16E08 도면유령기계단이 최신 지도보다 청사진의 파란 복사선을 우선 추적한다는 사실을 폐도면 시험으로 알아냈다.\n\n그는 가짜 폐쇄선을 수용 가능한 빈 저수조까지 이어 밸브 압력을 회복했고, 시험 도면을 걷으면 원상으로 돌릴 수 있게 설계했다.\n\n그때부터 그는 계약 문구뿐 아니라 기계가 따르는 표식과 실제 물의 흐름을 함께 감사한다.",
-            "현재 지위": "K416 흥미리는 현재 전국민주노동조합총연맹의 급수계약 감사 보조로서 압력 기록과 관문 만료일을 대조한다.\n\n그는 곽은재의 감사표를 받치고 범한들의 관문 증언을 검증하며 탁세온과 날짜 일치를 맹세했다.\n\n아직 제9저수조 계약을 무효화할지 갱신할지 결정하지 않았고, 최종 납인을 찍는 순간 여러 구역의 급수권은 되돌리기 어렵게 재편된다.",
+            "현재 지위": "K416 흥미리는 현재 정동노동총연맹의 급수계약 감사 보조로서 압력 기록과 관문 만료일을 대조한다.\n\n그는 곽은재의 감사표를 받치고 범한들의 관문 증언을 검증하며 탁세온과 날짜 일치를 맹세했다.\n\n아직 제9저수조 계약을 무효화할지 갱신할지 결정하지 않았고, 최종 납인을 찍는 순간 여러 구역의 급수권은 되돌리기 어렵게 재편된다.",
             "비밀·빚·죄책감": "K416 흥미리는 붕괴 직전 회사 지시로 제9저수조 압력계의 교정일을 열흘 앞당겨 기입했다.\n\n그 허위 날짜 때문에 고장 경보가 보증 범위 밖으로 밀렸고, 범한들의 관문은 제때 열리지 않아 G16E08 도면유령기계단의 반복 잠금이 심해졌다.\n\n그는 원본 청동 봉인을 숨긴 채 감사 보조가 되었으며 탁세온의 맹세까지 거짓 날짜 위에 묶었다는 죄책감을 품는다.",
             "관계 공동과거": "K416 흥미리는 곽은재가 첫 급수 감사를 맡았을 때 누락된 압력 칸을 대신 계산하며 계약 관계를 시작했다.\n\n그는 범한들이 기억하는 관문 만료 시각과 자신의 봉인 기록이 다르다는 사실을 알고도 당시에는 상관의 표를 지지했다.\n\n탁세온은 세 사람이 다시는 날짜를 바꾸지 않겠다는 맹세를 세웠지만, 흥미리의 숨겨진 원본 때문에 그 약속은 아직 완전하지 않다.",
             "3막 개인 서사선": "K416 흥미리는 1막에서 제9저수조의 압력 저하와 과거 교정일 조작이 같은 원인선에 있음을 밝힌다.\n\n그는 2막에서 폐도면으로 기계단을 빈 관로에 유도하고 곽은재 범한들 탁세온의 서로 다른 증거를 하나의 시간축으로 맞춘다.\n\n그는 3막에서 기존 계약을 무효화해 급수를 재배분할지, 조건부 갱신으로 관문 거래를 유지할지 선택해야 한다.",
@@ -36868,10 +36868,10 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "sections": {
             "정체성·출신": "K076 진마루는 마곡 연구단지의 방재차고에서 성장한 한국계 재난 의료호송 지휘자이다.\n\n그는 도로보다 배수고 전력 잔량 환자 체온을 한꺼번에 계산해 호송 속도를 조절하는 데 능하다.\n\n그는 명령을 정확히 따르는 태도를 자부했으나 명령의 출처가 틀렸을 때도 복종한 책임은 사라지지 않는다고 여긴다.",
             "붕괴 전 삶": "K076 진마루는 붕괴 전 공항 배후 연구단지의 화학사고 대응팀에서 구급차와 제독차의 합동 출동을 조율했다.\n\n그는 종이 천공카드로 우회로를 입력하는 구형 배차기를 끝까지 유지해 통신 장애 때 여러 차례 사람을 살렸다.\n\n그러나 자동 명령과 수기 명령이 충돌하면 상급 신호를 우선했고, 그 습관이 붕괴 뒤 치명적인 오판으로 이어졌다.",
-            "가문·기업·공동체": "K076 진마루는 HC10 소속 방재 의무호송 반장으로 현대자동차주식회사의 격리 환자와 의료 시료를 수송한다.\n\n그의 혈연 가족은 행방이 끊겼고 지금은 제독기사와 들것조, 배수로 정찰대를 가족처럼 돌본다.\n\n그는 마곡 제3방재차고의 검은 천공카드 원통을 지휘 상징으로 보관하지만 그 안에는 존재하지 않는 명령의 카드도 섞여 있다.",
+            "가문·기업·공동체": "K076 진마루는 HC10 소속 방재 의무호송 반장으로 양재기공주식회사의 격리 환자와 의료 시료를 수송한다.\n\n그의 혈연 가족은 행방이 끊겼고 지금은 제독기사와 들것조, 배수로 정찰대를 가족처럼 돌본다.\n\n그는 마곡 제3방재차고의 검은 천공카드 원통을 지휘 상징으로 보관하지만 그 안에는 존재하지 않는 명령의 카드도 섞여 있다.",
             "붕괴의 상처": "K076 진마루는 G14E13 유령배차대가 폐쇄된 관제망의 호출 부호를 흉내 내 호송대를 발산지하차도로 유인한 사건을 겪었다.\n\n그는 상급 명령이라 믿고 진입을 강행했고 갑작스러운 침수로 제독차와 환자 수송차를 잃었다.\n\n이후 그는 배차대를 파괴하기보다 호출음 차단 냉각 차고 봉인 빈 차량 먹이 우회와 검증된 시간대 거래로 대응한다.",
             "생존 전환점": "K076 진마루는 G14E13 유령배차대가 실시간 위치를 아는 것이 아니라 마지막으로 수신한 노선 카드의 반복 패턴만 재생한다는 사실을 알아냈다.\n\n그는 회수 가능한 가짜 천공카드를 무인 견인차에 넣어 배차대를 폐활주로로 유도하고 실제 호송은 수기 표지로 이동시켰다.\n\n이 학습은 카드를 교체하면 되돌릴 수 있었으며 그에게 명령을 따르기 전에 경로를 검증하는 습관을 심었다.",
-            "현재 지위": "K076 진마루는 현재 현대자동차주식회사의 방재 의무호송 반장으로 격리 해제와 출발 선언을 맞춘다.\n\n그는 이봄결이 봉쇄 해제와 호송 출발을 동시에 선언할 때만 움직이고 진채온의 파견 진료 거부를 호송 측에서 받친다.\n\n아직 검은 천공카드 원통을 폐기할지 재연결할지 결정하지 않았으며 그 선택은 3막에서 차고의 지휘 체계를 되돌릴 수 없게 바꾼다.",
+            "현재 지위": "K076 진마루는 현재 양재기공주식회사의 방재 의무호송 반장으로 격리 해제와 출발 선언을 맞춘다.\n\n그는 이봄결이 봉쇄 해제와 호송 출발을 동시에 선언할 때만 움직이고 진채온의 파견 진료 거부를 호송 측에서 받친다.\n\n아직 검은 천공카드 원통을 폐기할지 재연결할지 결정하지 않았으며 그 선택은 3막에서 차고의 지휘 체계를 되돌릴 수 없게 바꾼다.",
             "비밀·빚·죄책감": "K076 진마루는 발산지하차도 사고 전 유령 호출에 붙은 검증 부호가 틀렸음을 발견하고도 출발 지연 책임을 두려워해 보고하지 않았다.\n\n그는 나중에 검은 원통에서 그 호출 카드를 빼내 숨겼고 사고 원인을 단순 침수로 기록했다.\n\n이봄결과 진채온은 아직 그가 명령의 허위를 알고 있었다는 사실을 모르며 현재 봉쇄 절차도 그의 불완전한 기록에 의존한다.",
             "관계 공동과거": "K076 진마루는 이봄결이 첫 연구동 봉쇄를 해제하던 날 출발 시각을 맞추지 못해 노출된 환자들을 차고에서 밤새 돌본 과거가 있다.\n\n그는 진채온이 위험한 파견 진료를 거부했을 때 명령 불복종 처분을 막아 주었지만 대신 호송대가 의료 공백을 떠안았다.\n\n세 사람은 단독 명령을 믿지 않기로 합의했으나 진마루가 숨긴 호출 카드 때문에 그 합의에는 오래된 균열이 남아 있다.",
             "3막 개인 서사선": "K076 진마루는 1막에서 검은 원통의 누락 번호와 발산지하차도 사고 호출이 일치함을 확인한다.\n\n그는 2막에서 이봄결과 진채온의 이중 승인 아래 가짜 천공카드 호송을 시험하고 유령배차대의 재생 범위를 제한한다.\n\n그는 3막에서 배차망을 완전히 끊어 자율 차고로 전환할지, 제한된 노선만 재연결해 장거리 의료호송을 유지할지 선택해야 한다.",
@@ -36924,12 +36924,12 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K105",
           "name": "명우솔",
           "sections": {
-            "정체성·출신": "K105 명우솔은 서울 성수동 철공소 골목에서 자란 한국계 경매사로, 물건의 가격보다 제작자의 남은 시간을 먼저 헤아린다.\n\n그는 빠른 호가와 정확한 손짓으로 대한예수교장로회의 배분 질서를 유지해 왔다.\n\n그러나 공정한 중개인이라는 평판 뒤에는 거래를 통제해야 안심하는 완고함이 자리한다.",
+            "정체성·출신": "K105 명우솔은 서울 성수동 철공소 골목에서 자란 한국계 경매사로, 물건의 가격보다 제작자의 남은 시간을 먼저 헤아린다.\n\n그는 빠른 호가와 정확한 손짓으로 설교명부정의 배분 질서를 유지해 왔다.\n\n그러나 공정한 중개인이라는 평판 뒤에는 거래를 통제해야 안심하는 완고함이 자리한다.",
             "붕괴 전 삶": "K105 명우솔은 붕괴 전 성수 공방시장에서 폐업 공장의 선반 금형 절삭유를 묶어 파는 산업 경매를 진행했다.\n\n그는 부친이 남긴 황동 경매종으로 낙찰 순간을 알렸고, 유찰품은 야간 공동창고에 직접 봉인했다.\n\n마지막 정상 경매에서는 냉각판 묶음의 최저가를 임의로 높여 영세 공방 세 곳의 구매를 막았다.",
-            "가문·기업·공동체": "K105 명우솔은 HP07 계열 장인 가문과 연결되어 있으나 현재 충성의 대상은 S04 대한예수교장로회이다.\n\n그는 성수 공방시장의 제3호 주물동을 경매장과 공동 배급소로 바꾸고 제작 시간 연료 통행권을 서로 다른 호가표로 관리한다.\n\n연합은 그의 판단을 신뢰하지만 경매 권한이 한 사람에게 집중되는 일을 경계한다.",
+            "가문·기업·공동체": "K105 명우솔은 HP07 계열 장인 가문과 연결되어 있으나 현재 충성의 대상은 S04 설교명부정이다.\n\n그는 성수 공방시장의 제3호 주물동을 경매장과 공동 배급소로 바꾸고 제작 시간 연료 통행권을 서로 다른 호가표로 관리한다.\n\n연합은 그의 판단을 신뢰하지만 경매 권한이 한 사람에게 집중되는 일을 경계한다.",
             "붕괴의 상처": "K105 명우솔은 G20E09 철비늘군체가 냉각판 창고에 몰려든 날, 자신이 가격을 올려 묶어 둔 판재 때문에 대피 통로가 막히는 장면을 보았다.\n\n그는 종을 난타해 군체를 소음 쪽으로 유도하고 작업자들을 절삭유 수로로 빼냈지만, 주물공 한 명이 손을 크게 다쳤다.\n\n이후 그는 군체를 없애려 하기보다 냉각 봉인 먹이 우회로 피해를 제한하면서도 종소리를 두려워한다.",
             "생존 전환점": "K105 명우솔은 G20E09 철비늘군체가 금속 가격이 아니라 열과 진동의 순서를 따른다는 사실을 과거의 세 차례 실패 끝에 배웠다.\n\n그는 폐냉각관 천 조각 봉인 저주파 망치를 조합해 군체를 빈 압연실로 돌리는 가역적 절차를 만들었다.\n\n이 학습은 언제든 수정할 수 있지만, 그가 감춘 냉각판 경매 조작까지 바로잡아 주지는 못했다.",
-            "현재 지위": "K105 명우솔은 현재 성수 공방시장 경매사이자 대한예수교장로회의 통행 시간 배정자로 제3호 주물동을 지킨다.\n\n유하은의 직능 칠판을 실제 경매 순서로 집행하고 구도영의 패킹 운송에 맞춰 봉인 구역의 개방 시간을 나눈다.\n\n아직 황동 경매종을 냉각문에 녹여 붙일지, HP06 중개 거래의 담보로 보존할지 결정하지 않았다.",
+            "현재 지위": "K105 명우솔은 현재 성수 공방시장 경매사이자 설교명부정의 통행 시간 배정자로 제3호 주물동을 지킨다.\n\n유하은의 직능 칠판을 실제 경매 순서로 집행하고 구도영의 패킹 운송에 맞춰 봉인 구역의 개방 시간을 나눈다.\n\n아직 황동 경매종을 냉각문에 녹여 붙일지, HP06 중개 거래의 담보로 보존할지 결정하지 않았다.",
             "비밀·빚·죄책감": "K105 명우솔은 붕괴 직전 냉각판 최저가를 조작하고 낙찰 기록의 한 장을 황동 경매종 속에 말아 숨겼다.\n\n판재 부족이 군체의 첫 둥지 형성과 작업자의 부상으로 이어졌음을 알면서도 그는 시장 질서를 지키기 위한 선택이었다고 둘러댔다.\n\n기록이 드러나면 경매권을 잃지만, 계속 감추면 다음 냉각 배분도 잘못된 재고 수치에서 시작된다.",
             "관계 공동과거": "K105 명우솔은 유하은이 만든 직능 칠판을 경매 호가표로 변환하며 숙련공을 위험 구역에 몰아넣지 않겠다고 약속했다.\n\n구도영과는 붕괴 첫겨울에 패킹 상자 스물일곱 개를 철비늘 길목 너머로 함께 운송했고, 그때부터 운송 순번과 경매 순번을 맞춰 왔다.\n\n두 사람은 명우솔의 종소리를 신호로 믿지만 종 안에 조작 기록이 있다는 사실은 모른다.",
             "3막 개인 서사선": "K105 명우솔은 1막에서 사라진 냉각판 장부와 군체의 이동 열원을 추적하며 자신의 과거 조작이 현재 봉인 실패를 키웠음을 확인한다.\n\n2막에서는 유하은 구도영 HP06 중개자와 함께 소음 경로와 통행 시간을 시험하고 황동 종의 금속이 냉각문 수리에 적합함을 알아낸다.\n\n3막 직전 그는 경매 권력과 증거를 함께 없앨지, 기록을 공개하고 군체와 제한 거래를 맺을지 선택해야 한다.",
@@ -37042,7 +37042,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "sections": {
             "정체성·출신": "K091 이준택은 우즈베키스탄 타슈켄트주 치르치크에서 태어난 고려인 3세로, 1937년 연해주에서 이주당한 조부모 세대의 가족사를 지녔다.\n\n그는 집에서는 러시아어를 쓰고 조모에게 옛 고려말 낱말을 배웠으며 한국 이주 뒤 공장 한국어와 정비 용어를 익혔다.\n\n군자기지에서는 발음보다 나사산 규격과 용접 흔적으로 신뢰를 얻은 차량정비장이다.",
             "붕괴 전 삶": "K091 이준택은 치르치크에서 소형버스 차축을 수리하다 2014년 취업비자로 한국에 왔고, 안산 부품공장을 거쳐 군자 차량기지 협력업체에 정착했다.\n\n그는 러시아제 공구함과 한국산 토크렌치를 함께 쓰며 폐차 부품을 재가공해 가족의 송금과 체류비를 마련했다.\n\n붕괴 직전에는 천왕 차량과 군자 견인차를 잇는 호환 어댑터를 개인 설계로 시험하고 있었다.",
-            "가문·기업·공동체": "K091 이준택은 HC04의 중개 보호를 받으며 S04 대한예수교장로회 산하 군자기지 차량정비장을 운영한다.\n\n치르치크의 누나 엘레나가 보내 준 청색 공구함은 가족 유산이자 정비장의 규격 원본 보관함으로 쓰인다.\n\n그는 정시우의 천왕 호환표와 차륜 계약을 지키면서도 박하율의 고덕 철도 규격과 주도권을 놓고 경쟁한다.",
+            "가문·기업·공동체": "K091 이준택은 HC04의 중개 보호를 받으며 S04 설교명부정 산하 군자기지 차량정비장을 운영한다.\n\n치르치크의 누나 엘레나가 보내 준 청색 공구함은 가족 유산이자 정비장의 규격 원본 보관함으로 쓰인다.\n\n그는 정시우의 천왕 호환표와 차륜 계약을 지키면서도 박하율의 고덕 철도 규격과 주도권을 놓고 경쟁한다.",
             "붕괴의 상처": "K091 이준택은 G04E11 하수너구리족이 군자 배수터널의 식량통을 뒤지던 날, 자신이 만든 불완전한 어댑터가 운반차 바퀴를 빠뜨리는 장면을 겪었다.\n\n쏟아진 건조식이 너구리족을 정비장까지 끌어들였고 그는 냉각수 분무 소음 유인 철망 봉인으로 사람과 부품을 분리했다.\n\n이후 그는 너구리족을 사냥하지 않고 먹이 우회와 통행 시간 거래로 대응하지만 시험 실패의 책임을 숨긴다.",
             "생존 전환점": "K091 이준택은 G04E11 하수너구리족이 엔진 소리보다 기름 묻은 천과 곡물 냄새를 따라 경로를 고른다는 사실을 과거의 터널 관찰에서 배웠다.\n\n그는 세척 천을 밀폐하고 폐곡물 상자를 우회 수로에 두며 차륜 이동 시간에는 냉각 팬을 멈추는 가역적 운용법을 만들었다.\n\n이 학습 덕분에 충돌은 줄었지만 고장 어댑터의 균열과 허위 시험표는 청색 공구함에 남아 있다.",
             "현재 지위": "K091 이준택은 현재 군자기지 차량정비장으로 견인차 네 대와 차륜 선반 한 대의 사용 순서를 결정한다.\n\n정시우와 천왕 호환표 계약을 갱신해야 하며 박하율과는 군자·고덕 동부 정비 표준의 채택 범위를 두고 맞선다.\n\n그는 아직 이중 규격을 공개해 설계 우선권을 포기할지, 군자 규격을 유지하며 너구리족과 계절 통행 계약을 맺을지 결정하지 않았다.",
@@ -37415,10 +37415,10 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "sections": {
             "정체성·출신": "K238 섭달호는 붕괴 이전 방송국 송출차량과 자료보관실 사이를 오가던 한국계 음향 운송 기사이며, 지금은 음성기록 회수 전령으로 불린다.\n\n그는 말의 진실성보다 녹음이 언제 어디서 복사되고 잘렸는지를 먼저 확인한다.\n\n현재는 회수한 음성을 방송할지 봉인할지 결정하지 않은 전달자 지위에 머문다.",
             "붕괴 전 삶": "K238 섭달호는 상암의 방송 시설에서 인터뷰 원본 자막 문서 송출용 압축 파일을 서로 다른 경로로 운반했다.\n\n붕괴 직전 재난 대피 명령의 원음과 방송본 사이에 한 문장이 삭제된 사실을 알아챘지만 송신 책임자에게 도착하기 전에 정전이 발생했다.\n\n그는 당시 만든 비상 사본을 원소유자에게 반환하거나 폐기할 권한을 아직 행사할 수 있다.",
-            "가문·기업·공동체": "K238 섭달호는 HP10의 전령 규약에 묶여 전국경제인연합회 S09의 끊어진 중계소와 기록 피난처 사이를 잇는다.\n\n그의 공동체는 전파 기술자 청각장애인 자막 필사자 폐주파수를 감시하는 옥상 경비대로 구성된다.\n\n그는 송신공사의 명령보다 원음과 문서가 함께 도착해야 한다는 이중 인계 관습을 우선한다.",
+            "가문·기업·공동체": "K238 섭달호는 HP10의 전령 규약에 묶여 여의도출자연합회 S09의 끊어진 중계소와 기록 피난처 사이를 잇는다.\n\n그의 공동체는 전파 기술자 청각장애인 자막 필사자 폐주파수를 감시하는 옥상 경비대로 구성된다.\n\n그는 송신공사의 명령보다 원음과 문서가 함께 도착해야 한다는 이중 인계 관습을 우선한다.",
             "붕괴의 상처": "K238 섭달호는 삭제된 대피 문장 때문에 한 지하 통로가 늦게 폐쇄되었다고 믿으며, 그 방송을 들은 가족들의 항의 음성을 반복해서 보관한다.\n\n그러나 원음 속 배경 소리가 다른 시각을 가리켜 단순한 편집 범죄로 단정할 수도 없다.\n\n그는 잘못된 방송으로 또 다른 군중 이동을 일으킬까 두려워 송출 버튼을 직접 누르지 못한다.",
             "생존 전환점": "K238 섭달호는 침수 중계실에서 암호 함과 원음 릴을 회수한 뒤 G04E11 하수너구리족을 고주파 소음이 아닌 먹이 우회와 통로 봉인으로 피했다.\n\n그는 원음 릴을 송신공사에 즉시 넘기지 않고 윤서린에게 교차 사본을 전달했으나, 암호 함의 귀속을 변경할 수 있는 반환 표를 남겼다.\n\n전환점은 과거의 회수이며 소유와 공개 범위는 지금도 되돌릴 수 있다.",
-            "현재 지위": "K238 섭달호는 전국경제인연합회의 음성기록 회수 전령으로서 삭제 문장의 원음 압축 방송본 자막 문서 사본을 동시에 가진 유일한 인물이다.\n\n송재민은 암호 함의 계약상 반환을 요구하고 윤서린은 음성·문서 교차 사본의 공개 검증을 요구한다.\n\n그는 전면 송출 청취 배심 주파수 통행 거래 가운데 어느 것도 실행하기 전이다.",
+            "현재 지위": "K238 섭달호는 여의도출자연합회의 음성기록 회수 전령으로서 삭제 문장의 원음 압축 방송본 자막 문서 사본을 동시에 가진 유일한 인물이다.\n\n송재민은 암호 함의 계약상 반환을 요구하고 윤서린은 음성·문서 교차 사본의 공개 검증을 요구한다.\n\n그는 전면 송출 청취 배심 주파수 통행 거래 가운데 어느 것도 실행하기 전이다.",
             "비밀·빚·죄책감": "K238 섭달호는 대피 원음에 자신의 목소리로 녹음된 임시 길 안내가 섞여 있으며, 그 문장이 삭제 대상과 같은 통로를 지시했다는 사실을 숨긴다.\n\n송재민에게는 암호 함을 온전히 옮기겠다고 계약했고 윤서린에게는 음성과 문서의 교차 사본을 훼손 없이 전하겠다고 계약했다.\n\n그는 진실을 송출하면 피해자의 명예를 회복할 수 있지만 새로운 피난 행렬을 유발할 수 있다는 빚을 진다.",
             "관계 공동과거": "K238 섭달호는 K222 송재민의 암호 함을 침수된 전령로로 옮기며 상자 내부의 봉인음과 외부 인장을 함께 확인했다.\n\nK144 윤서린에게는 음성 원본과 자막 문서의 교차 사본을 전달해 삭제 문장이 편집인지 시간차 송출인지 검토하게 했다.\n\n두 계약은 반환 의무와 공개 검증 의무가 충돌하므로 어느 한쪽에 자료를 독점시킬 수 없다.",
             "3막 개인 서사선": "K238 섭달호는 1막에서 원음의 배경 반향과 하수 수위를 대조해 삭제 문장이 서로 다른 시각에 녹음되었음을 밝힌다.\n\n2막에서는 G04E11 하수너구리족의 둥지 주파수를 피해 유선 청취망을 설치하고, 송재민의 암호 함과 윤서린의 교차 사본을 동시 개봉한다.\n\n3막에서는 정정 방송 제한 청취 배심 HC04 주파수·통행 거래라는 모든 분기를 서로 다른 기록 제도로 마무리한다.",
@@ -37445,7 +37445,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             },
             {
               "id": "K238-OUT-B",
-              "summary": "K238 섭달호는 이동 송출을 포기하고 전국경제인연합회 지하에 원음과 문서를 함께 확인하는 고정 청취실을 세운다.\n\n피해 구역별 배심이 공개 구간과 비공개 개인정보를 판정하며 송재민과 윤서린은 각각 봉인과 대조 절차를 감독한다.\n\n그는 전령직을 내려놓고 반향 시각 감정인으로 남는다."
+              "summary": "K238 섭달호는 이동 송출을 포기하고 여의도출자연합회 지하에 원음과 문서를 함께 확인하는 고정 청취실을 세운다.\n\n피해 구역별 배심이 공개 구간과 비공개 개인정보를 판정하며 송재민과 윤서린은 각각 봉인과 대조 절차를 감독한다.\n\n그는 전령직을 내려놓고 반향 시각 감정인으로 남는다."
             },
             {
               "id": "K238-OUT-C",
@@ -37477,10 +37477,10 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "sections": {
             "정체성·출신": "K264 란민준은 붕괴 이전 북부 산지에서 가족 농원과 주민등록 민원 업무를 함께 도왔던 한국계 가장이며, 현재 군사호적 등록을 거부하는 가족의 대변인이다.\n\n그는 성인 복구복무 자체를 부정하지 않지만 가족 단위 징발과 미성년자 선등록을 생존 질서로 인정하지 않는다.\n\n아직 연맹 탈퇴나 조건부 등록 어느 쪽도 선택하지 않았다.",
             "붕괴 전 삶": "K264 란민준은 산비탈 버섯농장의 온습도 설비를 관리하면서 마을 주민들의 전입 신고와 가족관계 서류 작성을 도왔다.\n\n붕괴 직전 대피 차량 좌석을 확보하려고 사촌 한 명을 자신의 세대로 임시 편입했으나 정정 신고를 마치지 못했다.\n\n그 편입은 당사자의 동의와 생존 확인이 이루어지면 취소하거나 별도 세대로 복원할 수 있다.",
-            "가문·기업·공동체": "K264 란민준은 HP05에 속한 대한불교조계종 S10의 가족 막사에서 노인 미성년자 부상자의 식량표를 함께 관리한다.\n\n연맹은 군사호적을 배급 기준으로 쓰려 하지만 그의 공동체는 부양관계와 실제 거주를 기준으로 삼는 겨울 식탁 명부를 유지한다.\n\n그는 가족을 고정된 혈통이 아니라 서로의 월동 책임을 증명한 사람들로 정의한다.",
+            "가문·기업·공동체": "K264 란민준은 HP05에 속한 승가구휼정 S10의 가족 막사에서 노인 미성년자 부상자의 식량표를 함께 관리한다.\n\n연맹은 군사호적을 배급 기준으로 쓰려 하지만 그의 공동체는 부양관계와 실제 거주를 기준으로 삼는 겨울 식탁 명부를 유지한다.\n\n그는 가족을 고정된 혈통이 아니라 서로의 월동 책임을 증명한 사람들로 정의한다.",
             "붕괴의 상처": "K264 란민준은 첫 겨울 검문에서 호적에 없던 사촌을 숨기려다 다른 가족의 식량 수레가 압수되는 결과를 낳았다.\n\n이후 그는 명부 한 줄이 사람을 살리거나 강제복무 대상으로 만들 수 있다는 공포 때문에 누구의 이름도 쉽게 적지 못한다.\n\n보호하려던 가족을 행정상 존재하지 않는 사람으로 만든 책임이 그의 가장 깊은 죄책감이다.",
             "생존 전환점": "K264 란민준은 침수된 버섯 저장굴에서 G10E04 침수곰팡이호흡단의 포자 흐름을 냉각과 환기 차단으로 돌려 가족 막사를 구했다.\n\n그는 그날 군사호적 대신 겨울 식탁 명부를 배급소에 제출했으나, 성인 당사자가 원하면 자발적 복구복무 명단으로 이전할 수 있는 수정란을 남겼다.\n\n전환점은 과거의 거부이지만 등록 방식은 여전히 가역적이다.",
-            "현재 지위": "K264 란민준은 대한불교조계종에서 군사호적 등록을 거부한 가족의 공식 대변인이며, 다음 월동 배급 심사 전까지 임시 보호표를 가진다.\n\n백온은 강제복무 반대를 가족 회의에서 유지하라고 요구하고 강민서는 자발적 성인 복구복무 문안을 적용하자고 제안한다.\n\n그는 가족명부 분리 조건부 복구복무 포자 경계 정착 중 어느 안에도 아직 표결하지 않았다.",
+            "현재 지위": "K264 란민준은 승가구휼정에서 군사호적 등록을 거부한 가족의 공식 대변인이며, 다음 월동 배급 심사 전까지 임시 보호표를 가진다.\n\n백온은 강제복무 반대를 가족 회의에서 유지하라고 요구하고 강민서는 자발적 성인 복구복무 문안을 적용하자고 제안한다.\n\n그는 가족명부 분리 조건부 복구복무 포자 경계 정착 중 어느 안에도 아직 표결하지 않았다.",
             "비밀·빚·죄책감": "K264 란민준은 사촌을 임시 편입한 옛 가족관계 서류와 실제 생존 위치가 다른 사실을 알고 있으며, 이를 공개하면 사촌의 배급권이 중단될 수 있다.\n\n백온에게는 강제복무 반대를 대변하겠다고 계약했고 강민서에게는 성인의 자발적 선택을 막지 않겠다고 계약했다.\n\n그는 압수된 식량 수레의 원래 소유 가족에게 매 겨울 버섯 종균을 갚고 있다.",
             "관계 공동과거": "K264 란민준은 K245 백온과 가족 회의를 열어 미성년자와 부양자의 강제복무 등록을 거부하는 문구를 공동으로 작성했다.\n\nK029 강민서에게서는 자발적 성인 복구복무 문안을 받아 복무 기간 귀환 보장 부양 식량의 별도 지급 조항을 검토했다.\n\n두 관계는 강제성 반대에는 동의하지만 군사호적을 완전히 폐기할지 제한적으로 대체할지에서 갈린다.",
             "3막 개인 서사선": "K264 란민준은 1막에서 군사호적과 겨울 식탁 명부를 대조해 사망자 명의의 복무 배급이 지휘부 창고로 새고 있음을 밝힌다.\n\n2막에서는 G10E04 침수곰팡이호흡단의 포자 길을 냉각 굴과 봉인 벽으로 돌려 월동 식량을 지키고 가족별 공개 표결을 성립시킨다.\n\n3막에서는 시민가구 명부 창설 기한부 성인 복구복무 HC10 포자 경계 농원이라는 모든 분기를 완성한다.",
@@ -37539,10 +37539,10 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "sections": {
             "정체성·출신": "창동에서 태어나 철도 부품 냄새와 시험선 진동을 익히며 성장한 한국계 차륜 검사공이다.\n\n숫자보다 금속음의 차이를 먼저 알아채는 현장 감각을 지녔으며, 결함을 본 사람이 끝까지 책임져야 한다는 태도를 고수한다.",
             "붕괴 전 삶": "붕괴 전에는 시험 차륜의 초음파 탐상과 열흔 판독을 맡았으나 납품 기한을 우선하는 상급자에게 반복해서 재검사를 거부당했다.\n\n퇴근 뒤에는 폐차륜 절단면을 모아 결함 사례표를 만들고 후배들에게 균열음을 가르쳤다.",
-            "가문·기업·공동체": "HP05 계열 작업조와 삼성그룹에 뿌리를 두며, 조우찬의 작업 조에서 결함을 증언한 맹세로 묶여 있다.\n\n두모와는 결함 표본과 봉인 기록이 들어 있는 공구함을 함께 지키기로 맹세했으며, 어느 한쪽도 단독으로 봉인을 풀 수 없다.",
+            "가문·기업·공동체": "HP05 계열 작업조와 서초전산그룹에 뿌리를 두며, 조우찬의 작업 조에서 결함을 증언한 맹세로 묶여 있다.\n\n두모와는 결함 표본과 봉인 기록이 들어 있는 공구함을 함께 지키기로 맹세했으며, 어느 한쪽도 단독으로 봉인을 풀 수 없다.",
             "붕괴의 상처": "시험 차륜 균열을 발견했지만 운행 중단이 초래할 대피 지연을 두려워해 결함 등급을 한 단계 낮춰 적었고, 그 차륜이 탈선해 작업 동료 둘이 죽었다.\n\n손등의 절상보다 자신이 정확히 들었던 파열음을 문서에서 약화했다는 사실이 더 깊은 상처로 남아 있다.",
             "생존 전환점": "붕괴 초기에 두모의 봉인된 공구함에 원본 탐상판과 차륜 각인을 감추고 대체 표본만 소각한 일이 생존 전환점이 되었다.\n\n봉인은 조우찬과 두모가 입회하면 다시 열어 기록을 바로잡을 수 있으므로 과거의 선택은 아직 가역적이지만, 공개 순간 창동의 배급 신뢰가 무너질 수 있다.\n\nG22E13 폐전지금속군락은 탐상판의 금속 공명보다 차갑게 식힌 폐합금 표본에 모였고, 어예린은 조우찬과 두모가 배치를 원위치로 돌려 재현할 수 있게 순서를 기록했다.",
-            "현재 지위": "S11 삼성그룹에서 시험 차륜 결함 증인 겸 냉각 순번 판독자로 일하며, G22E13 폐전지금속군락이 접근할 때 금속 공명과 온도 변화를 기록한다.\n\n원본을 공개할지, 군락과의 통행 거래에 증거를 담보로 쓸지 선택하기 직전이며 아직 어느 편에도 넘기지 않았다.",
+            "현재 지위": "S11 서초전산그룹에서 시험 차륜 결함 증인 겸 냉각 순번 판독자로 일하며, G22E13 폐전지금속군락이 접근할 때 금속 공명과 온도 변화를 기록한다.\n\n원본을 공개할지, 군락과의 통행 거래에 증거를 담보로 쓸지 선택하기 직전이며 아직 어느 편에도 넘기지 않았다.",
             "비밀·빚·죄책감": "사고 차륜의 결함 등급을 낮춘 서명이 자신의 것이라는 비밀을 숨기며, 두모에게 봉인 유지의 빚을 지고 조우찬에게는 불완전한 증언을 한 죄책감을 품는다.\n\n폐전지금속군락이 탐상판의 합금을 먹이로 인식한다는 사실도 알아 증거 보존과 군락 유인 사이에서 갈등한다.",
             "관계 공동과거": "조우찬은 어예린이 처음 균열음을 보고했을 때 작업 조를 멈춰 세웠으나, 대피 열차 압박이 닥치자 함께 재검사 시간을 줄였다.\n\n두모는 사고 뒤 원본 탐상판을 공구함에 봉인해 주었고, 두 사람은 사망자 이름을 지우지 않겠다는 맹세로 이어져 있다.",
             "3막 개인 서사선": "1막에는 사고 차륜과 같은 공명 패턴이 G22E13 폐전지금속군락의 이동을 유도한다는 사실을 확인한다.\n\n2막에는 조우찬과 두모 앞에서 봉인을 가역적으로 해제하고 결함 등급 조작을 입증할지 결정한다.\n\n3막에는 원본으로 군락의 먹이 경로를 폐차륜장에 고정하는 길 증거를 보존하며 냉각 통행 시간을 거래하는 길 탐상판을 희생해 군락을 봉인하고 차륜방을 떠나는 길이 모두 열린다.",
@@ -37551,11 +37551,11 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "arc": [
             {
               "act": 1,
-              "summary": "K290 어예린은 삼성그룹의 냉각조에서 사.\n\n차륜과 같은 미세 공명이 발생하자 G22E13 폐전지금속군락의 이동 경로를 역산한다.\n\n조우찬은 즉시 공구함을 열자고 하지만 두모는 봉인이 깨지면 탐상판 합금이 군락을 작업장 안으로 부를 수 있다고 경고한다.\n\n어예린은 폐차륜 조각으로 소음 미끼를 만들어 하루의 유예를 얻고, 숨겨 둔 원본이 증거인 동시에 먹이라는 사실을 확인한다."
+              "summary": "K290 어예린은 서초전산그룹의 냉각조에서 사.\n\n차륜과 같은 미세 공명이 발생하자 G22E13 폐전지금속군락의 이동 경로를 역산한다.\n\n조우찬은 즉시 공구함을 열자고 하지만 두모는 봉인이 깨지면 탐상판 합금이 군락을 작업장 안으로 부를 수 있다고 경고한다.\n\n어예린은 폐차륜 조각으로 소음 미끼를 만들어 하루의 유예를 얻고, 숨겨 둔 원본이 증거인 동시에 먹이라는 사실을 확인한다."
             },
             {
               "act": 2,
-              "summary": "K290 어예린은 조우찬과 두모를 입회시켜 봉인 나사를 절반만 풀고 원본 탐상판의 각인과 자신의 축소 판정 서명을 대조한다.\n\n그는 과거 기록을 바로잡을 수 있지만 공개 즉시 삼성그룹의 완성품 전량이 재검사되어 대피 수레 생산이 멈춘다는 계산도 마주한다.\n\n세 사람은 HP08 중개인이 제시한 통행 시간 거래를 검토하며, 군락을 죽이지 않. 냉각과 먹이 우회로 증거를 지킬 시험을 준비한다."
+              "summary": "K290 어예린은 조우찬과 두모를 입회시켜 봉인 나사를 절반만 풀고 원본 탐상판의 각인과 자신의 축소 판정 서명을 대조한다.\n\n그는 과거 기록을 바로잡을 수 있지만 공개 즉시 서초전산그룹의 완성품 전량이 재검사되어 대피 수레 생산이 멈춘다는 계산도 마주한다.\n\n세 사람은 HP08 중개인이 제시한 통행 시간 거래를 검토하며, 군락을 죽이지 않. 냉각과 먹이 우회로 증거를 지킬 시험을 준비한다."
             },
             {
               "act": 3,
@@ -37565,7 +37565,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "outcomes": [
             {
               "id": "K290-OUT-A",
-              "summary": "K290 어예린은 원본 탐상판을 공개해 자신의 축소 판정을 사. 기록에 복원하고, 군락이 선호하는 폐전지 합금을 폐차륜장까지 단계적으로 배치한다.\n\nG22E13 폐전지금속군락은 HP08 중개의 냉각 시간표에 따라 작업장을 비켜 가며 전멸하지 않는다.\n\n삼성그룹은 장기 재검사에 들어가지만 조우찬의 작업조와 두모의 봉인은 사망자 이름을 보존한 증거 절차로 남는다."
+              "summary": "K290 어예린은 원본 탐상판을 공개해 자신의 축소 판정을 사. 기록에 복원하고, 군락이 선호하는 폐전지 합금을 폐차륜장까지 단계적으로 배치한다.\n\nG22E13 폐전지금속군락은 HP08 중개의 냉각 시간표에 따라 작업장을 비켜 가며 전멸하지 않는다.\n\n서초전산그룹은 장기 재검사에 들어가지만 조우찬의 작업조와 두모의 봉인은 사망자 이름을 보존한 증거 절차로 남는다."
             },
             {
               "id": "K290-OUT-B",
@@ -37983,9 +37983,9 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K392",
           "name": "탁필호",
           "sections": {
-            "정체성·출신": "탁필호는 경남 내륙에서 상경해 가락 도매시장 하역장에 정착한 한국계 노동자이며, 가족 단위보다 줄 전체의 이동 속도를 먼저 살피는 인물이다.\n\n그는 S15 천주교 서울대교구에서 남하 피난 배급 인파의 대표로 선출되었지만 관료나 상인 출신은 아니다.\n\n자신의 권위가 표 한 장이 아니라 줄 끝에서 쓰러진 사람을 기억하는 데서 나온다고 주장한다.",
+            "정체성·출신": "탁필호는 경남 내륙에서 상경해 가락 도매시장 하역장에 정착한 한국계 노동자이며, 가족 단위보다 줄 전체의 이동 속도를 먼저 살피는 인물이다.\n\n그는 S15 본당인준정에서 남하 피난 배급 인파의 대표로 선출되었지만 관료나 상인 출신은 아니다.\n\n자신의 권위가 표 한 장이 아니라 줄 끝에서 쓰러진 사람을 기억하는 데서 나온다고 주장한다.",
             "붕괴 전 삶": "붕괴 전 탁필호는 새벽 채소 경매가 끝난 뒤 빈 상자를 회수하고 냉동 창고의 결로를 닦는 일로 생계를 꾸렸다.\n\n첫 대피 경보 때 그는 남하 가족을 위해 임시 대기 구획을 열었다가 항의가 커지자, 언제든 원래 화물선으로 되돌릴 수 있다는 판단 아래 바닥 표식을 바꿨다.\n\n그러나 수문이 닫히고 인파가 몰리면서 임시 구획은 유일한 배급 진입로가 되었고, 표식 하나가 수천 명의 순서를 갈랐다.",
-            "가문·기업·공동체": "탁필호의 가족은 시장 지분이나 냉장 창고를 소유하지 않았고, 형제들은 서로 다른 도매상에서 일용직으로 일했다.\n\n붕괴 뒤 그는 천주교 서울대교구에서 남하 피난민들의 출신지 동행 수 알레르기 식품을 입으로 외워 배급 오류를 줄인다.\n\n공동체 안에서는 천솔빛의 광장 줄과 백온의 남하 가족 사이를 중재하며, 종이표 대신 상자 끈의 매듭 수로 임시 순서를 표시한다.",
+            "가문·기업·공동체": "탁필호의 가족은 시장 지분이나 냉장 창고를 소유하지 않았고, 형제들은 서로 다른 도매상에서 일용직으로 일했다.\n\n붕괴 뒤 그는 본당인준정에서 남하 피난민들의 출신지 동행 수 알레르기 식품을 입으로 외워 배급 오류를 줄인다.\n\n공동체 안에서는 천솔빛의 광장 줄과 백온의 남하 가족 사이를 중재하며, 종이표 대신 상자 끈의 매듭 수로 임시 순서를 표시한다.",
             "붕괴의 상처": "G10E01 침수곰팡이호흡단이 젖은 배급 천막의 숨소리와 기침을 모방하던 날, 탁필호는 감염자를 찾으려 줄을 두 갈래로 나눈다.\n\n실제로는 천막 바닥의 곰팡이 포자가 분리 구획에 집중되어 어린이와 노인 스물두 명이 질식했고, 그의 형도 그 안에서 사망한다.\n\n그는 이후 젖은 종이 냄새만 맡아도 사람 수를 과다하게 세며, 빈자리에도 임시표를 건네는 강박을 보인다.",
             "생존 전환점": "탁필호는 G10E01 침수곰팡이호흡단이 사람의 호흡이 아니라 물먹은 포장 완충재의 수축음을 따라 움직인다는 사실을 알아낸다.\n\n그는 천솔빛과 광장 줄의 젖은 상자를 마른 구역으로 옮겼다가 다시 제자리로 돌릴 수 있게 색끈을 달고, 백온의 가족에게 시험용 임시표를 건넨다.\n\n괴물이 빈 포장 더미를 따라간 틈에 피난민들을 고가 통로로 빼내면서, 그는 잘못된 분리 책임자에서 인파 대표로 전환한다.",
             "현재 지위": "현재 탁필호는 XT03-SC3 겨울 배급 개편 회의 직전 남하 피난 인파 대표석에 앉아 있다.\n\n그는 상자 매듭 임시표를 정식 배급권으로 바꿀지, 기존 주민의 저장분을 보호하기 위해 효력을 끝낼지 아직 선택하지 않았다.\n\n천솔빛은 광장 줄의 폭발을 경고하고 백온은 가족들이 다시 남쪽으로 밀려날 수 있다고 호소해, 그의 한 표가 수만 끼의 방향을 가른다.",
@@ -38045,9 +38045,9 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K417",
           "name": "매도한",
           "sections": {
-            "정체성·출신": "매도한은 서울 남부 행정지구에서 성장한 한국계 문안 기술자이며, 서로 다른 규칙의 문장을 충돌 없이 배열하는 능력으로 살아왔다.\n\n그는 S16 전국민주노동조합총연맹에서 다섯 통일안의 저자가 아니라 초안함 접근 기록을 가진 관계자로 규정된다.\n\n합의 자체보다 누가 어떤 단어를 삭제했고 그 삭제로 어느 구역이 보호 밖에 놓였는지를 추적하는 인물이다.",
+            "정체성·출신": "매도한은 서울 남부 행정지구에서 성장한 한국계 문안 기술자이며, 서로 다른 규칙의 문장을 충돌 없이 배열하는 능력으로 살아왔다.\n\n그는 S16 정동노동총연맹에서 다섯 통일안의 저자가 아니라 초안함 접근 기록을 가진 관계자로 규정된다.\n\n합의 자체보다 누가 어떤 단어를 삭제했고 그 삭제로 어느 구역이 보호 밖에 놓였는지를 추적하는 인물이다.",
             "붕괴 전 삶": "붕괴 전 매도한은 국제회의 통번역 업체의 교정 담당자로 일하며 계약서 용어와 재난 대응 부속서를 맞췄다.\n\n붕괴 직전 그는 다섯 기관의 비상 통일안에서 의료자료의 지역 이전 금지 조항을 임시 삭제했으며, 다음 교정본에서 복구할 수 있다고 판단했다.\n\n회의장이 폐쇄되면서 임시본이 유일한 발효 문서가 되었고, 삭제된 한 문장 때문에 외곽 진료소들이 약품과 환자 기록을 동시에 잃었다.",
-            "가문·기업·공동체": "매도한의 가족은 법조 가문이 아니라 인쇄소 제본공과 학교 행정 노동자로 이루어졌고, 그는 어린 시절부터 오탈자가 실제 배급량을 바꾸는 모습을 보았다.\n\n붕괴 뒤 HC02 구역의 전국민주노동조합총연맹에서 초안함의 금속 활자와 봉인지를 관리한다.\n\n하서진의 초안함을 관계자 자격으로 열 수 있고, 윤서린의 기록연방 문안과 외부 다국가협약 사본을 나란히 대조하는 제한 권한을 가진다.",
+            "가문·기업·공동체": "매도한의 가족은 법조 가문이 아니라 인쇄소 제본공과 학교 행정 노동자로 이루어졌고, 그는 어린 시절부터 오탈자가 실제 배급량을 바꾸는 모습을 보았다.\n\n붕괴 뒤 HC02 구역의 정동노동총연맹에서 초안함의 금속 활자와 봉인지를 관리한다.\n\n하서진의 초안함을 관계자 자격으로 열 수 있고, 윤서린의 기록연방 문안과 외부 다국가협약 사본을 나란히 대조하는 제한 권한을 가진다.",
             "붕괴의 상처": "G11E09 맞춤의료잔존체가 환자 기록의 유전 표식과 음성 명령을 조합해 특정 사람만 공격하던 밤, 매도한이 삭제한 이전 금지 조항 때문에 외곽 진료소의 익명화 장치가 공급되지 않는다.\n\n잔존체는 그의 동생과 서른한 명의 환자를 이름 대신 투약 패턴으로 식별했고, 대피실 문 앞에서 치료 음성을 흉내 내 사람들을 끌어낸다.\n\n매도한은 동생의 마지막 처방 코드가 자기 교정기호와 겹친 뒤로 문장에서 사람 이름을 지우는 행위를 하지 못한다.",
             "생존 전환점": "매도한은 G11E09 맞춤의료잔존체가 최신 기록보다 서로 모순되는 구판 처방을 처리하지 못한다는 점을 발견한다.\n\n그는 하서진의 초안함에서 삭제 전 문안을 꺼내되 봉인을 다시 복구할 수 있게 얇은 밀랍판으로 눌러 뜨고, 윤서린이 보관한 기록연방 문안과 외부 협약 사본을 교차 투입한다.\n\n잔존체가 상충 명령 사이에서 멈춘 동안 외곽 환자들을 탈출시키며, 그는 문안을 숨기는 교정자에서 규칙 충돌을 책임지는 초안 관계자로 전환한다.",
             "현재 지위": "현재 매도한은 XT03-SC1 통일안 비준 직전 다섯 대표단 사이의 문안 대조석에 앉아 있다.\n\n그는 삭제 조항을 원문대로 복구할지, 맞춤의료잔존체를 통제하기 위한 모순 조항을 의도적으로 남길지 아직 선택하지 않았다.\n\n하서진은 초안함의 봉인 훼손을 문제 삼고, 윤서린은 기록 주권과 외부 협약 사본의 별도 승인 절차를 함께 요구한다.",
@@ -38231,12 +38231,12 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K077",
           "name": "채무진",
           "sections": {
-            "정체성·출신": "채무진은 전남 해남의 종묘상 집안에서 태어나 냉동기와 비상발전기를 함께 배운 한국계 설비 운전 기술자다.\n\n그는 씨앗을 생명 전체가 아니라 온도 수분 발아기한이 다른 약속들의 묶음으로 취급한다.\n\n붕괴 뒤에는 현대자동차주식회사의 종자보존고 비상발전 운전장이 되어, 제한된 연료를 어느 세대의 작물에 배정할지 결정한다.",
+            "정체성·출신": "채무진은 전남 해남의 종묘상 집안에서 태어나 냉동기와 비상발전기를 함께 배운 한국계 설비 운전 기술자다.\n\n그는 씨앗을 생명 전체가 아니라 온도 수분 발아기한이 다른 약속들의 묶음으로 취급한다.\n\n붕괴 뒤에는 양재기공주식회사의 종자보존고 비상발전 운전장이 되어, 제한된 연료를 어느 세대의 작물에 배정할지 결정한다.",
             "붕괴 전 삶": "채무진은 민간 종자회사의 저온창고 기사로 일하며 토종 수수 염생 보리 특허 토마토의 냉각 우선순위를 관리한다.\n\n회사가 특허 종자만 살리라고 지시한 날 그는 고향 농가의 수수 서랍과 기업 토마토 서랍의 온도 센서를 바꾸지만, 다음 정기 제상 때 원위치로 돌릴 계획을 세운다.\n\n센서 교체는 가역적이었으나 붕괴로 자동 제상이 멈추면서 어느 서랍이 원래 계약 대상이었는지 불분명해진다.",
-            "가문·기업·공동체": "채무진의 가족은 해남 장터에서 자가채종 씨앗과 소형 양수기 부품을 함께 팔았고, 흉년에는 종자 대금을 수확 뒤에 받았다.\n\n현재 그는 S03 현대자동차주식회사와 HP03 보존시설의 발전 운전을 맡으며, 연구 가치보다 다음 파종철에 실제로 증식 가능한 양을 계산한다.\n\n가족에게 배운 후불 관행 때문에 그는 연료를 소비가 아니라 미래 수확에서 빌려 오는 부채로 기록한다.",
+            "가문·기업·공동체": "채무진의 가족은 해남 장터에서 자가채종 씨앗과 소형 양수기 부품을 함께 팔았고, 흉년에는 종자 대금을 수확 뒤에 받았다.\n\n현재 그는 S03 양재기공주식회사와 HP03 보존시설의 발전 운전을 맡으며, 연구 가치보다 다음 파종철에 실제로 증식 가능한 양을 계산한다.\n\n가족에게 배운 후불 관행 때문에 그는 연료를 소비가 아니라 미래 수확에서 빌려 오는 부채로 기록한다.",
             "붕괴의 상처": "G19E14 냉각수색인균체는 냉각수의 안료를 따라 배관별 온도를 학습한 뒤, 가장 차가운 종자실의 밸브와 작업자 피부를 같은 색으로 물들인다.\n\n채무진은 감염된 누나 채유라를 격리하려다 청색 냉각수를 잘못 배출해 염생 보리 표본 절반을 열충격으로 잃는다.\n\n누나는 살아남지 못했고, 그는 청색 얼룩이 남은 장갑과 비어 버린 종자 서랍을 한 쌍의 실패처럼 보관한다.",
             "생존 전환점": "채무진은 G19E14 냉각수색인균체가 색 자체가 아니라 펌프가 만든 온도층의 순서를 추적한다는 사실을 폐양식장 순환기에서 확인한다.\n\n그는 되돌릴 수 있는 짧은 시험으로 발전기를 아흔 초 껐다가 역순 기동하고, 박진솔의 봉인 시각과 정하린의 잠금 해제를 맞춰 균체를 빈 침전조로 유도한다.\n\n이 성공으로 종자고 핵심 서랍이 보존되고, 채무진은 연료와 봉인 시간을 함께 다루는 비상발전 운전장이 된다.",
-            "현재 지위": "채무진은 S03 현대자동차주식회사의 종자보존고 비상발전 운전장으로서 박진솔의 봉인 시각에 맞춰 발전을 켜 두는 계약을 이행한다.\n\n정하린의 잠금이 내려가면 즉시 스위치를 뽑아 연구자의 추가 실험보다 격리 절차를 우선한다.\n\n현재 남은 연료는 주곡 종자고를 사흘 더 냉각하거나 오염된 배수동을 한 번 고온 세척할 양뿐이며, 그는 아직 어느 밸브도 열지 않았다.",
+            "현재 지위": "채무진은 S03 양재기공주식회사의 종자보존고 비상발전 운전장으로서 박진솔의 봉인 시각에 맞춰 발전을 켜 두는 계약을 이행한다.\n\n정하린의 잠금이 내려가면 즉시 스위치를 뽑아 연구자의 추가 실험보다 격리 절차를 우선한다.\n\n현재 남은 연료는 주곡 종자고를 사흘 더 냉각하거나 오염된 배수동을 한 번 고온 세척할 양뿐이며, 그는 아직 어느 밸브도 열지 않았다.",
             "비밀·빚·죄책감": "채무진은 붕괴 전 센서를 바꾼 사실 때문에 특허 토마토의 소유권 봉인이 사실상 잘못된 서랍에 붙어 있음을 알고 있다.\n\n박진솔에게는 누나의 마지막 혈액 표본을 종자고 전력으로 보존해 달라고 요구한 대가로 봉인 시각 한 회를 빚졌다.\n\n그는 정하린 몰래 청색 얼룩 장갑을 배수동에 걸어 두었으며, 그것이 균체를 다시 불러낼 표지일 가능성을 알면서도 폐기하지 못한다.",
             "관계 공동과거": "박진솔은 붕괴 전 종자회사의 법정 봉인 담당자로서 채무진이 센서를 바꾼 밤의 출입 시각을 기록했지만 서랍 번호까지 확인하지 못한다.\n\n정하린은 같은 회사의 안전잠금 기사였고, 누나 채유라를 격리한 문을 직접 내린 뒤 채무진에게 수동 스위치 위치를 알려 준다.\n\n세 사람의 공동과거는 누가 씨앗을 소유했는지가 아니라, 잘못 붙은 봉인을 지금 떼면 어떤 생존 작물이 법적 보호를 잃는지에 묶여 있다.",
             "3막 개인 서사선": "첫 막의 채무진은 센서를 원위치로 돌릴 수 있는 제상 시간을 기다리다가 붕괴를 맞아, 가역적 편법을 종자 소유권 분쟁으로 남긴다.\n\n둘째 막의 현재에서 그는 주곡 종자고 냉각과 배수동 고온 세척 사이에 남은 연료 전부를 걸어야 하지만 아직 기동 손잡이를 잡지 않는다.\n\n셋째 막은 주곡을 지키는 길 균체를 태우는 길 특허 토마토를 해동해 연료용 발효액으로 바꾸는 길을 모두 펼친다.",
@@ -38295,10 +38295,10 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "sections": {
             "정체성·출신": "오도윤은 우즈베키스탄 타슈켄트주 치르치크에서 태어난 고려인 3세로, 2012년 부모와 함께 인천으로 이주한 뒤 노량진에 정착한다.\n\n집에서는 러시아어를 조부모와는 고려말을 시장과 선착장에서는 한국어와 기초 우즈베크어를 사용한다.\n\n붕괴 전에는 냉장 수산물과 의료용 젤을 나르던 소형 선박 중개인이었고, 현재는 그 항로 지식을 운송선주 평의의 표로 바꾼다.",
             "붕괴 전 삶": "오도윤은 아버지의 중고 냉동탑차와 삼촌의 한강 작업선을 연결해 중앙아시아 식료품점의 케피르 종균 생선 의료용 콜라겐을 운송한다.\n\n그는 통관 지연을 피하려고 의료용 젤 화물을 어획 부산물로 재분류했지만, 다음 검수항에서 전자 봉인을 되돌리고 세금을 정산할 계획이었다.\n\n재분류는 항로 원장과 봉인칩을 대조하면 취소할 수 있었으나 붕괴로 검수항이 사라져 화물의 법적 성격이 굳어 버린다.",
-            "가문·기업·공동체": "오도윤의 조부모는 치르치크 외곽 다차에서 토마토와 딜을 재배했고, 부모는 한국 이주 뒤 인천 함박마을과 노량진을 오가며 러시아어 식료품을 납품한다.\n\n그는 S08 원불교의 운송선주 평의에서 선박별 흘수 냉장 시간 통행세를 표로 환산한다.\n\n상회의 선주권과 가족의 냉장 유통망이 겹치지만, 그는 친족 화물을 우선하기보다 부패하기까지 남은 시간을 기준으로 적재 순서를 정한다.",
+            "가문·기업·공동체": "오도윤의 조부모는 치르치크 외곽 다차에서 토마토와 딜을 재배했고, 부모는 한국 이주 뒤 인천 함박마을과 노량진을 오가며 러시아어 식료품을 납품한다.\n\n그는 S08 교헌필사정의 운송선주 평의에서 선박별 흘수 냉장 시간 통행세를 표로 환산한다.\n\n상회의 선주권과 가족의 냉장 유통망이 겹치지만, 그는 친족 화물을 우선하기보다 부패하기까지 남은 시간을 기준으로 적재 순서를 정한다.",
             "붕괴의 상처": "G24E04 의료조직기계군은 오도윤의 재분류 화물에 든 콜라겐 젤과 선박 수리용 케이블을 결합해, 부두의 절단된 조직과 금속을 임시 하역 장치처럼 이어 붙인다.\n\n그는 동생 오세라가 붙잡힌 부잔교를 떼어 내려고 밸러스트를 급배수했고, 그 충격으로 의료 피난선 한 척이 교각에 눌려 침몰한다.\n\n동생은 구조됐지만 피난선 승객 명부 일부가 유실되어, 그는 살아난 한 사람과 이름 없이 사라진 사람들을 함께 기억한다.",
             "생존 전환점": "오도윤은 G24E04 의료조직기계군이 생체 재료의 양보다 선체 진동과 냉장 압축기의 박자를 따라 결합 위치를 바꾼다는 사실을 알아낸다.\n\n그는 되돌릴 수 있는 시험으로 빈 냉장함 두 개의 압축기를 교대로 켜고, 실패하면 계류삭을 풀어 상류로 흘려보낼 준비를 한다.\n\n기계군이 빈 함으로 이동하자 피난선 잔해를 분리할 수 있었고, 오도윤은 화물 중개인에서 운송선주 평의의 항로 결정자로 올라선다.",
-            "현재 지위": "오도윤은 S08 원불교의 운송선주 평의로서 오해린과 상회정 표를 거래하고, 차진아에게 선주 표의 실제 흘수를 검증받는다.\n\n한재목이 요구하는 수상 운송 통행세는 구조선까지 같은 비율로 묶는다는 이유로 거부해 오래된 원한을 키운다.\n\n현재 그는 조직재료를 실은 병원선과 겨울 식량선을 같은 좁은 수문에 넣을 수 없어, 어느 선박에 첫 표를 줄지 결정하기 직전이다.",
+            "현재 지위": "오도윤은 S08 교헌필사정의 운송선주 평의로서 오해린과 상회정 표를 거래하고, 차진아에게 선주 표의 실제 흘수를 검증받는다.\n\n한재목이 요구하는 수상 운송 통행세는 구조선까지 같은 비율로 묶는다는 이유로 거부해 오래된 원한을 키운다.\n\n현재 그는 조직재료를 실은 병원선과 겨울 식량선을 같은 좁은 수문에 넣을 수 없어, 어느 선박에 첫 표를 줄지 결정하기 직전이다.",
             "비밀·빚·죄책감": "오도윤은 침몰한 의료 피난선의 유실 명부 조각을 자기 선실 바닥판 아래 숨겼으며, 그 안에는 통행세를 이미 낸 승객 열두 명의 손도장이 남아 있다.\n\n오해린에게는 가족 냉장함을 상회정으로 등록해 준 대가로 결정적 표 한 장을 빚졌고, 차진아에게는 실제보다 낮게 적은 흘수 자료를 들킨 상태다.\n\n그는 한재목의 세금 자체보다, 과거 재분류 화물이 G24E04의 재료가 되었다는 사실이 공개될 때 가족 전체가 항로에서 추방될 것을 두려워한다.",
             "관계 공동과거": "오해린은 붕괴 전 노량진 부두의 경매 대리인이었고, 오도윤이 의료용 젤을 수산 부산물로 적은 날 냉장함의 우선 접안을 승인한다.\n\n한재목은 같은 항로의 통행세 징수인이어서 누락된 세금을 추적했으며, 피난선 침몰 뒤에는 오도윤이 명부를 없앴다고 의심한다.\n\n차진아는 오도윤에게 흘수 읽는 법을 배운 제자였으나 현재는 선주 표를 검증하며, 스승의 수치가 거짓이면 표를 무효화할 의무를 진다.",
             "3막 개인 서사선": "첫 막의 오도윤은 의료용 젤의 분류를 다음 검수항에서 되돌릴 생각으로 바꾸지만, 붕괴와 침몰 때문에 가역적 운송 편법이 공동체의 사망 기록으로 변하는 일을 겪는다.\n\n둘째 막의 현재에서 그는 병원선과 겨울 식량선 중 어느 쪽에 첫 수문 표를 줄지 앞두고 오해린 한재목 차진아의 상충한 계산을 듣는다.\n\n셋째 막은 병원선 우선 식량선 우선 두 선박의 냉장함을 분리해 무인 바지선으로 통과시키는 위험한 절충을 모두 전개한다.",
@@ -38356,12 +38356,12 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K224",
           "name": "조은우",
           "sections": {
-            "정체성·출신": "조은우는 카자흐스탄 크즐오르다주 바이코누르 인근에서 태어난 고려인 4세로, 2007년 부모와 안산에 이주한 뒤 상암의 방송 장비업체에서 일한다.\n\n그는 러시아어와 한국어를 능숙하게 쓰고, 철도 노동자였던 외조부에게 배운 카자흐어 호출어와 고려말 방향 표현을 신호 판독에 활용한다.\n\n붕괴 뒤에는 안테나 수리와 다언어 교신 경험을 바탕으로 전국경제인연합회의 전파추적조 반장이 된다.",
+            "정체성·출신": "조은우는 카자흐스탄 크즐오르다주 바이코누르 인근에서 태어난 고려인 4세로, 2007년 부모와 안산에 이주한 뒤 상암의 방송 장비업체에서 일한다.\n\n그는 러시아어와 한국어를 능숙하게 쓰고, 철도 노동자였던 외조부에게 배운 카자흐어 호출어와 고려말 방향 표현을 신호 판독에 활용한다.\n\n붕괴 뒤에는 안테나 수리와 다언어 교신 경험을 바탕으로 여의도출자연합회의 전파추적조 반장이 된다.",
             "붕괴 전 삶": "조은우는 공연장과 화물철도의 무선 마이크 중계기 열차 무전기를 수리하며 불법 재밍 위치를 찾는 계약기사로 생계를 잇는다.\n\n납품 시험 중 배우진의 장비에서 허가 외 주파수를 발견했지만, 공연 종료 뒤 펌웨어를 원복하고 정식 검사를 받기로 합의해 임시 우회 필터를 설치한다.\n\n그 필터는 원본 칩을 되꽂으면 되돌릴 수 있었으나 붕괴 직전 열차 무전과 얽혀 재밍 의혹의 핵심 증거가 된다.",
-            "가문·기업·공동체": "조은우의 증조부모는 연해주에서 중앙아시아로 강제이주된 뒤 크즐오르다의 벼농장과 철도 보수대에서 일했고, 부모는 한국에서 위성접시 설치와 도시락 납품으로 정착한다.\n\n조은우는 S09 전국경제인연합회에서 송신탑 방향각 예비 진공관 방한 연료를 관리하며 권미래의 지휘 아래 추적조를 운용한다.\n\n그는 가족의 철도 호출어를 좌표 부호로 바꾸어, 지도 표식이 끊긴 구역에서도 전파 도착 방향을 구별한다.",
+            "가문·기업·공동체": "조은우의 증조부모는 연해주에서 중앙아시아로 강제이주된 뒤 크즐오르다의 벼농장과 철도 보수대에서 일했고, 부모는 한국에서 위성접시 설치와 도시락 납품으로 정착한다.\n\n조은우는 S09 여의도출자연합회에서 송신탑 방향각 예비 진공관 방한 연료를 관리하며 권미래의 지휘 아래 추적조를 운용한다.\n\n그는 가족의 철도 호출어를 좌표 부호로 바꾸어, 지도 표식이 끊긴 구역에서도 전파 도착 방향을 구별한다.",
             "붕괴의 상처": "G09E13 저온포자숙주는 차가운 안테나 급전선과 사람의 호흡기를 번갈아 점유하며, 송신이 시작될 때 포자를 공진 주파수에 맞춰 퍼뜨린다.\n\n조은우는 상암 보조탑을 끄려 했지만 배우진 장비의 우회 필터 때문에 차단 신호가 늦어져 동료 류카테리나와 피난민 열아홉 명이 송신실에 노출된다.\n\n그는 류카테리나의 마지막 러시아어 좌표를 정확히 들었으나 구조대를 잘못된 탑으로 보내, 언어 능력마저 상처의 근거로 남긴다.",
             "생존 전환점": "조은우는 G09E13 저온포자숙주가 강한 전파보다 급전선 표면의 결빙과 해빙 주기를 따라 이동한다는 점을 폐쇄된 아이스링크 중계기에서 발견한다.\n\n그는 되돌릴 수 있는 시험으로 안테나 히터를 칠십 초 가동한 뒤 즉시 냉각하고, 황지호의 열차 무전을 읽기 전용으로 받아 포자 이동음을 비교한다.\n\n시험이 성공해 숙주를 빈 급전관으로 몰아넣자 권미래는 그를 전파추적조 반장으로 임명한다.",
-            "현재 지위": "조은우는 S09 전국경제인연합회의 전파추적조 반장으로서 권미래의 송신탑을 지키고, 황지호의 열차 무전을 재밍 증거로 제한 수신한다.\n\n배우진에게는 우회 필터의 책임과 재밍 의도를 둘러싼 원한이 남아 있어, 두 사람의 장비를 같은 회선에 연결하지 않는다.\n\n현재 그는 북부 피난열차 유도 신호와 상암 포자 경보가 같은 예비 진공관을 요구하는 상황에서 어느 송신을 먼저 열지 결정하기 직전이다.",
+            "현재 지위": "조은우는 S09 여의도출자연합회의 전파추적조 반장으로서 권미래의 송신탑을 지키고, 황지호의 열차 무전을 재밍 증거로 제한 수신한다.\n\n배우진에게는 우회 필터의 책임과 재밍 의도를 둘러싼 원한이 남아 있어, 두 사람의 장비를 같은 회선에 연결하지 않는다.\n\n현재 그는 북부 피난열차 유도 신호와 상암 포자 경보가 같은 예비 진공관을 요구하는 상황에서 어느 송신을 먼저 열지 결정하기 직전이다.",
             "비밀·빚·죄책감": "조은우는 류카테리나가 남긴 좌표가 잘못된 것이 아니라 자신이 고려말 방향어와 러시아어 방위각을 순간적으로 뒤바꿨다는 사실을 개인 수신지에 기록해 두었다.\n\n황지호에게는 열차 무전을 증거로 제공받는 대가로 열차 한 편의 안전 주파수를 보장해야 하며, 권미래에게는 예비 진공관 두 개를 이미 빌려 썼다.\n\n그는 배우진의 우회 필터가 고의 재밍이 아니라 공연장 의료기기 간섭을 피하려던 장치였을 가능성을 알면서도 원한 때문에 재검증하지 않았다.",
             "관계 공동과거": "권미래는 붕괴 전 상암 송신탑의 시설 책임자로서 조은우가 설치한 안테나 히터의 과열 위험을 승인하고, 현재도 추적조의 최종 지휘권을 가진다.\n\n배우진은 허가 외 주파수 장비의 소유자로 조은우와 원복 일정을 합의했으나, 붕괴 뒤 필터가 재밍 원인으로 지목되며 적대 관계가 된다.\n\n황지호는 당시 화물열차 무전사로 필터가 켜진 시간대의 원신호를 보관했고, 이제 그 기록을 피난열차 안전 보장의 계약 담보로 사용한다.",
             "3막 개인 서사선": "첫 막의 조은우는 공연 뒤 원복할 수 있는 우회 필터를 설치하지만 붕괴로 회수 시기를 놓쳐, 임시 장치가 포자 참사와 재밍 의혹의 증거가 되는 과정을 겪는다.\n\n둘째 막의 현재에서 그는 피난열차 유도와 포자 경보 중 하나에 예비 진공관을 배정해야 하며, 배우진 장비를 재검증할 선택도 아직 실행하지 않는다.\n\n셋째 막은 열차 유도 우선 상암 경보 우선 배우진 필터를 역위상 중계기로 개조해 두 신호를 교차 송출하는 분기를 모두 담는다.",
@@ -38388,7 +38388,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             },
             {
               "id": "K224-OUT-B",
-              "summary": "K224 조은우는 진공관을 포자 경보기에 투입해 전국경제인연합회와 주변 피난소의 노출을 막는다.\n\n북부 피난열차는 우회선에서 멈추고 황지호가 난방 연료를 아끼려고 객차 절반을 폐쇄하면서 장거리 후송이 필요해진다.\n\n조은우는 송신탑 반장 권한으로 식량 전파 대신 짧은 위치 펄스를 보내며, 걸어서 접근할 구조조의 경로를 밤새 계산한다."
+              "summary": "K224 조은우는 진공관을 포자 경보기에 투입해 여의도출자연합회와 주변 피난소의 노출을 막는다.\n\n북부 피난열차는 우회선에서 멈추고 황지호가 난방 연료를 아끼려고 객차 절반을 폐쇄하면서 장거리 후송이 필요해진다.\n\n조은우는 송신탑 반장 권한으로 식량 전파 대신 짧은 위치 펄스를 보내며, 걸어서 접근할 구조조의 경로를 밤새 계산한다."
             },
             {
               "id": "K224-OUT-C",
@@ -38494,10 +38494,10 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "sections": {
             "정체성·출신": "K106 제바름은 성동의 인쇄소 골목에서 태어나 야간진료소와 철공소 사이를 오가며 성장한 한국계 의사다.\n\n그는 환자를 주소나 배급등급보다 작업 중 다친 손과 폐의 상태로 기억한다.\n\n붕괴 뒤에는 치료가 시민권을 판정하는 수단이 되자 의술과 행정 사이에서 자신의 원칙을 다시 세우려 한다.",
             "붕괴 전 삶": "K106 제바름은 붕괴 전 왕십리 산업의학 의원에서 용접공과 인쇄공의 만성질환을 진료했다.\n\n그는 공장주의 압력으로 산재 판정 한 건을 보류했지만 원본 소견서를 폐기하지 않아 아직 결정을 되돌릴 수 있다.\n\n그 미완의 기록은 환자를 지키려던 신중함과 권력에 굴복한 비겁함을 동시에 증명한다.",
-            "가문·기업·공동체": "K106 제바름의 집안은 삼대째 성동에서 금속 활자와 간판 틀을 수리한 소규모 장인 가문이다.\n\n현재 그는 대한예수교장로회의 골목의무소를 맡아 공방별 약품 분담과 야간 왕진 순서를 조정한다.\n\n연합은 그를 공동체 의사로 존중하지만 급수 시민권 심사를 진료에 결합하라는 압력을 계속 가한다.",
+            "가문·기업·공동체": "K106 제바름의 집안은 삼대째 성동에서 금속 활자와 간판 틀을 수리한 소규모 장인 가문이다.\n\n현재 그는 설교명부정의 골목의무소를 맡아 공방별 약품 분담과 야간 왕진 순서를 조정한다.\n\n연합은 그를 공동체 의사로 존중하지만 급수 시민권 심사를 진료에 결합하라는 압력을 계속 가한다.",
             "붕괴의 상처": "K106 제바름은 G04E10 하수너구리족이 성수 배수로를 뚫고 올라온 밤, 격리문을 먼저 닫아 안쪽 환자 일곱 명을 살렸다.\n\n그러나 문밖에 남은 간판공 윤대호는 오염수에 휩쓸렸고, 제바름은 그의 구조 요청을 끝까지 들었다.\n\n이후 그는 문을 잠그는 손동작만 보아도 당시의 소리와 소독약 냄새를 떠올린다.",
             "생존 전환점": "K106 제바름은 G04E10 하수너구리족의 분변에서 생긴 열병을 막으려고 급수표에 임시 검역 도장을 찍는 방식으로 골목을 살렸다.\n\n그 조치는 사흘 안에 진료기록을 공개하면 철회할 수 있었지만, 장민재가 이를 시민권 등급제로 고정하려 하면서 전환점이 권력의 도구가 되었다.\n\n제바름은 아직 원본 장부를 갖고 있어 자신의 선택과 제도를 모두 되돌릴 수 있다.",
-            "현재 지위": "K106 제바름은 대한예수교장로회 산하 성동 골목의무소 원장으로서 약품 열쇠와 급수 검역 도장을 함께 보관한다.\n\n장민재의 명령을 집행하며 진모래를 비롯한 펌프실 부상자를 받아 왔지만, 어느 기록을 공개할지는 결정하지 않았다.\n\n그는 시민권 장부를 불태울지 공동감사에 넘길지 선택하기 직전의 위치에 있다.",
+            "현재 지위": "K106 제바름은 설교명부정 산하 성동 골목의무소 원장으로서 약품 열쇠와 급수 검역 도장을 함께 보관한다.\n\n장민재의 명령을 집행하며 진모래를 비롯한 펌프실 부상자를 받아 왔지만, 어느 기록을 공개할지는 결정하지 않았다.\n\n그는 시민권 장부를 불태울지 공동감사에 넘길지 선택하기 직전의 위치에 있다.",
             "비밀·빚·죄책감": "K106 제바름은 장민재가 지운 무자격 환자 열세 명의 진료기록을 활자 약장 뒤에 숨겨 두었다.\n\n그는 윤대호의 딸 윤가은에게 아버지가 즉사했다고 거짓말했으며, 실제로는 구조 요청을 듣고도 격리문을 열지 않았다.\n\n또한 진모래에게 빌린 항생제 여섯 병을 갚지 못해 다음 펌프 사고 때 우선 진료를 약속한 상태다.",
             "관계 공동과거": "K106 제바름은 장민재와 붕괴 전 성동 산업재해 심사위원회에서 함께 일했고, 장민재의 급수 시민권 구상을 처음에는 임시 방역책으로 승인했다.\n\n진모래와는 청계천 펌프 침수 사고에서 서로의 갈비뼈와 손목을 치료하며 살아남은 공동과거가 있다.\n\n두 관계는 제바름이 숨긴 원본 장부가 공개되는 순간 지휘와 신뢰 중 하나를 잃게 만든다.",
             "3막 개인 서사선": "K106 제바름은 1막에서 진모래의 새 상처가 무자격 환자 기록과 연결되었음을 확인하고 장민재의 장부 봉인 명령을 받는다.\n\n2막에서는 윤가은과 함께 폐쇄 배수로에서 윤대호의 음성기록을 회수하며 자신의 거짓말을 인정할 준비를 한다.\n\n3막에서는 장부 공개와 공동진료소 창설 기록 소각과 시민권 원장 취임 또는 격리문 책임을 자백한 뒤 추방을 택하는 모든 분기로 갈라진다.",
@@ -38803,11 +38803,11 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "name": "평지우",
           "sections": {
             "정체성·출신": "K239 평지우는 수도권 공동주택에서 자란 한국계 무선설비 기사로, 기록의 진위를 음질과 송신 간격으로 판별하는 데 익숙했다.\n\n가족은 재난 방송을 신뢰했지만 그는 송신소 내부의 편집 관행까지 확인해야 사실이라고 여겼다.\n\n붕괴 뒤에는 목격한 신호를 과장하지 않고 원본 추정 침묵 구간으로 나누어 증언하는 원칙을 지킨다.",
-            "붕괴 전 삶": "K239 평지우는 전국경제인연합회에서 재난송신기 교정과 야간 로그 대조를 맡았으며, 고장처럼 보이는 의도적 무음을 별도 장부에 기록했다.\n\n붕괴 직전 상사의 지시로 권미래 관련 시험 송신 한 줄을 비활성 표식으로 돌렸지만 원본은 지우지 않아 언제든 복구할 수 있게 했다.\n\n그 가역적 선택은 당시에는 동료를 보호하는 타협이었으나 지금은 실종 사건의 시간을 되살릴 유일한 단서가 된다.",
-            "가문·기업·공동체": "K239 평지우는 HC01 소속 생존자로서 전국경제인연합회의 폐쇄형 기술 문화를 알지만 회사의 명예보다 기록의 연속성을 우선한다.\n\n그는 교대자들이 서명한 종이 주파수표와 장비실 봉인끈을 공동 증거로 관리하며 개인 소유를 주장하지 않는다.\n\n공동체 안에서는 송신 기록 목격자로 존중받지만 누락 구간을 혼자 해석하려 한다는 경계도 받는다.",
+            "붕괴 전 삶": "K239 평지우는 여의도출자연합회에서 재난송신기 교정과 야간 로그 대조를 맡았으며, 고장처럼 보이는 의도적 무음을 별도 장부에 기록했다.\n\n붕괴 직전 상사의 지시로 권미래 관련 시험 송신 한 줄을 비활성 표식으로 돌렸지만 원본은 지우지 않아 언제든 복구할 수 있게 했다.\n\n그 가역적 선택은 당시에는 동료를 보호하는 타협이었으나 지금은 실종 사건의 시간을 되살릴 유일한 단서가 된다.",
+            "가문·기업·공동체": "K239 평지우는 HC01 소속 생존자로서 여의도출자연합회의 폐쇄형 기술 문화를 알지만 회사의 명예보다 기록의 연속성을 우선한다.\n\n그는 교대자들이 서명한 종이 주파수표와 장비실 봉인끈을 공동 증거로 관리하며 개인 소유를 주장하지 않는다.\n\n공동체 안에서는 송신 기록 목격자로 존중받지만 누락 구간을 혼자 해석하려 한다는 경계도 받는다.",
             "붕괴의 상처": "K239 평지우는 G09E12 저온포자숙주가 냉각 덕트를 타고 송신실에 번진 밤, 동료의 구조 신호를 잡고도 포자 차단 셔터를 즉시 열지 못했다.\n\n구조 신호와 숙주의 모방음이 같은 호출부호를 사용했기 때문에 그는 확인 절차를 반복했고, 그 사이 한 교대조가 실종되었다.\n\n이후 찬 공기와 반복 호출음을 들으면 손가락 감각이 둔해지며 자신이 사람보다 기록을 먼저 지켰다는 죄책감에 붙잡힌다.",
             "생존 전환점": "K239 평지우는 G09E12 저온포자숙주가 송신기 발열을 따라 이동한다는 사실을 알아내고, 예비 송신기를 짧게 켰다 끄는 방식으로 개체를 빈 중계실로 유인했다.\n\n그는 과거 비활성 표식으로 남겨 둔 로그를 되살려 모방 신호와 실제 권미래 송신의 미세한 시간차도 확인했다.\n\n그날 이후 목격자는 기억을 말하는 사람이 아니라 다시 검증할 수 있는 절차를 남기는 사람이라고 결심한다.",
-            "현재 지위": "K239 평지우는 S09 전국경제인연합회에서 실종 전 송신 기록을 직접 들은 핵심 목격자이며, XT05-SC3 조사단이 원본을 열기 직전까지 장비 봉인을 지킨다.\n\n그는 권미래의 기록을 공개하면 실종자의 행로를 밝힐 수 있지만 공사 내부의 은폐와 피난 주파수도 함께 노출될 상황에 놓인다.\n\n현재 그는 최지우에게 공백 칸의 열쇠를 넘길지, 제한 청취만 허용할지 선택하기 전 단계에 서 있다.",
+            "현재 지위": "K239 평지우는 S09 여의도출자연합회에서 실종 전 송신 기록을 직접 들은 핵심 목격자이며, XT05-SC3 조사단이 원본을 열기 직전까지 장비 봉인을 지킨다.\n\n그는 권미래의 기록을 공개하면 실종자의 행로를 밝힐 수 있지만 공사 내부의 은폐와 피난 주파수도 함께 노출될 상황에 놓인다.\n\n현재 그는 최지우에게 공백 칸의 열쇠를 넘길지, 제한 청취만 허용할지 선택하기 전 단계에 서 있다.",
             "비밀·빚·죄책감": "K239 평지우는 권미래 송신의 마지막 네 초를 들었으면서도 당시에는 장비 혼선으로 분류했고, 그 판단이 수색 지연에 영향을 주었다는 사실을 숨긴다.\n\n그는 최지우에게 원본 탐색용 공백 칸을 넘기겠다고 맹세했지만, 그 칸에는 평지우 자신의 비활성 처리 서명도 함께 남아 있다.\n\n진실을 공개할 빚과 생존 주파수를 보호할 책임이 충돌하며 어느 쪽도 깨끗한 선택이 아니라고 느낀다.",
             "관계 공동과거": "K239 평지우는 권미래가 시험 송신의 출력을 낮추던 날 옆 콘솔에서 파형을 확인했고, 이후 그녀의 기록이 조작되지 않았다는 목격 증언을 약속했다.\n\n최지우과는 폐기 직전의 종이 로그를 함께 건져 냈으며, 원본 탐색에 필요한 공백 칸과 봉인 번호를 넘기기로 맹세했다.\n\n또한 V02 순환버스와 교대 협력하며 이동식 안테나를 운반했지만, 버스의 제한된 스냅샷을 인간의 기억처럼 오해하지 않도록 별도 대조표를 만들었다.",
             "3막 개인 서사선": "K239 평지우는 1막에서 냉각 덕트의 포자 흔적과 권미래 송신의 시간차를 대조해 자신이 숨긴 비활성 표식을 인정한다.\n\n2막에서는 최지우과 함께 봉인실에 들어가 원본을 복구하지만, 공개 송신이 피난 주파수와 실종자 은신처를 동시에 드러낸다는 위험을 확인한다.\n\n3막에서는 전면 공개 제한 증언 원본 영구 봉인의 모든 분기를 마주하고 목격자의 책임이 진실의 양뿐 아니라 공개 방식에도 있음을 선택으로 증명한다.",
@@ -38816,7 +38816,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "arc": [
             {
               "act": 1,
-              "summary": "K239 평지우는 전국경제인연합회의 봉인 장비에서 권미래 호출부호와 G09E12 저온포자숙주의 모방음 사이에 존재하는 짧은 지연을 찾아낸다.\n\n그는 과거 비활성 처리한 로그가 삭제되지 않아 복구 가능하다는 사실을 최지우에게 고백한다.\n\n두 사람은 종이 주파수표와 V02 순환버스의 교대 스냅샷을 대조해 마지막 송신 시각을 확정한다."
+              "summary": "K239 평지우는 여의도출자연합회의 봉인 장비에서 권미래 호출부호와 G09E12 저온포자숙주의 모방음 사이에 존재하는 짧은 지연을 찾아낸다.\n\n그는 과거 비활성 처리한 로그가 삭제되지 않아 복구 가능하다는 사실을 최지우에게 고백한다.\n\n두 사람은 종이 주파수표와 V02 순환버스의 교대 스냅샷을 대조해 마지막 송신 시각을 확정한다."
             },
             {
               "act": 2,
@@ -38830,7 +38830,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "outcomes": [
             {
               "id": "K239-OUT-A",
-              "summary": "K239 평지우는 권미래의 원본 송신과 자신의 비활성 처리 서명을 함께 공개해 전국경제인연합회의 은폐 구조를 무너뜨린다.\n\n피난 주파수는 급히 교체되고 일부 수색대가 위험에 노출되지만 실종 시각과 이동 방향은 공식 기록으로 확정된다.\n\n그는 직위를 잃는 대신 독립 기록보관소의 첫 증언자가 되어 책임을 공개적으로 이어 간다."
+              "summary": "K239 평지우는 권미래의 원본 송신과 자신의 비활성 처리 서명을 함께 공개해 여의도출자연합회의 은폐 구조를 무너뜨린다.\n\n피난 주파수는 급히 교체되고 일부 수색대가 위험에 노출되지만 실종 시각과 이동 방향은 공식 기록으로 확정된다.\n\n그는 직위를 잃는 대신 독립 기록보관소의 첫 증언자가 되어 책임을 공개적으로 이어 간다."
             },
             {
               "id": "K239-OUT-B",
@@ -38866,10 +38866,10 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "sections": {
             "정체성·출신": "K265 섭서연은 한국계 포장설비 검사원 출신으로, 약 이름보다 압인 깊이와 접착 온도에서 생산 이력을 읽는 사람이다.\n\n그는 환자의 지식 부족을 탓하기보다 유통 과정에서 누가 검증 책임을 버렸는지 추적해야 한다고 믿는다.\n\n붕괴 뒤에는 가짜 약의 피해자이면서도 자신이 기억하는 공정 지식을 공동 의무실의 검사 규칙으로 바꾸려 한다.",
             "붕괴 전 삶": "K265 섭서연은 소형 제약 포장업체에서 블리스터 밀봉 불량과 제조번호 각인을 검사했고, 납품 압박으로 반려한 한 묶음을 재검사 대기함에 남겨 두었다.\n\n관리자는 합격 전환을 요구했지만 그는 전산 승인만 보류해 다음 교대가 결정을 되돌릴 수 있게 했다.\n\n그 가역적 보류 덕분에 붕괴 후 발견된 정상 포장과 가짜 약의 압인 차이를 비교할 기준물이 남았다.",
-            "가문·기업·공동체": "K265 섭서연은 HP06의 대한불교조계종에 속하지만 배급위원회나 민병대 어느 한쪽에도 검사권을 독점시키지 않으려 한다.\n\n그는 봉감의 약초 의무실에서 환자별 체온표와 약 포장 조각을 함께 보관하고 황세린의 배급 명부와 교차 확인한다.\n\n공동체에서는 피해 증언자로 보호받는 동시에 배급 불안을 키울 수 있는 위험한 내부 고발자로도 취급된다.",
+            "가문·기업·공동체": "K265 섭서연은 HP06의 승가구휼정에 속하지만 배급위원회나 민병대 어느 한쪽에도 검사권을 독점시키지 않으려 한다.\n\n그는 봉감의 약초 의무실에서 환자별 체온표와 약 포장 조각을 함께 보관하고 황세린의 배급 명부와 교차 확인한다.\n\n공동체에서는 피해 증언자로 보호받는 동시에 배급 불안을 키울 수 있는 위험한 내부 고발자로도 취급된다.",
             "붕괴의 상처": "K265 섭서연은 해열제로 위장된 가짜 약을 복용한 뒤 G21E05 통신근균체의 미세 균사가 잇몸과 청각관을 침범하는 피해를 입었다.\n\n균체가 송신 잡음을 체내 진동처럼 전달해 그는 사람의 속삭임과 배급 무전의 잔향을 자주 혼동한다.\n\n같은 약을 가족에게 먼저 건넸다는 기억 때문에 자신의 회복보다 유통자를 밝혀야 한다는 강박을 품는다.",
             "생존 전환점": "K265 섭서연은 G21E05 통신근균체가 특정 은박 접착제의 열에 반응해 짧은 클릭음을 낸다는 사실을 포장 검사 경험으로 알아냈다.\n\n그는 봉감이 달인 해열 처치로 체온을 낮춘 뒤 포장 조각을 가열해 감염된 가짜 약 묶음을 선별했다.\n\n이 발견으로 단순 피해자에서 현장 검사자가 되었지만, 균체 반응을 이용할수록 자신의 청각 손상도 깊어진다는 대가를 안는다.",
-            "현재 지위": "K265 섭서연은 S10 대한불교조계종에서 가짜 약 배급 피해를 증언하고 임시 검사대를 운영하지만 공식 회수 권한은 없다.\n\n황세린의 배급 줄을 즉시 중단시키면 환자들이 정상 약까지 받지 못하고, 계속 배급하면 감염 묶음이 더 퍼질 수 있다.\n\n현재 그는 공개 회수 비밀 교체 배급 강행 중 어느 절차를 요구할지 선택하기 직전이다.",
+            "현재 지위": "K265 섭서연은 S10 승가구휼정에서 가짜 약 배급 피해를 증언하고 임시 검사대를 운영하지만 공식 회수 권한은 없다.\n\n황세린의 배급 줄을 즉시 중단시키면 환자들이 정상 약까지 받지 못하고, 계속 배급하면 감염 묶음이 더 퍼질 수 있다.\n\n현재 그는 공개 회수 비밀 교체 배급 강행 중 어느 절차를 요구할지 선택하기 직전이다.",
             "비밀·빚·죄책감": "K265 섭서연은 첫 증상이 나타났을 때 남은 가짜 해열제 두 정을 증거로 보존하지 않고 가족에게 나누어 주었으며 한 명은 끝내 돌아오지 않았다.\n\n봉감에게 치료받은 빚 때문에 약초 의무실의 부족한 기록을 공개 비판하지 못하고, 황세린에게는 배급 줄 피해를 사실대로 증언하겠다고 계약했다.\n\n그는 피해자라는 지위가 자신의 잘못된 나눔까지 면책하지는 않는다고 생각한다.",
             "관계 공동과거": "K265 섭서연은 황세린의 배급 줄에서 같은 제조번호를 받은 환자들이 동시에 떨기 시작한 장면을 목격했고, 포장 조각을 모아 피해 순서를 재구성했다.\n\n봉감은 약초 의무실에서 섭서연의 고열을 낮추고 청각 이상을 기록했으며, 두 사람은 치료 대가로 모든 포장 표본을 공동 관리하기로 계약했다.\n\n황세린과의 관계는 적대가 아니라 배급 지속과 검증 책임을 함께 감당해야 하는 불편한 협업으로 남는다.",
             "3막 개인 서사선": "K265 섭서연은 1막에서 정상 약과 가짜 약의 압인 차이를 입증하고 자신이 버린 두 정 때문에 증거 사슬이 끊겼음을 고백한다.\n\n2막에서는 황세린의 명부와 봉감의 체온표를 대조해 감염 묶음의 행방을 찾지만 회수 발표가 의무실 폭동을 부를 수 있음을 확인한다.\n\n3막에서는 공개 회수 비밀 교체 통제 배급의 모든 분기를 실행 가능하게 만들고 어떤 결말에서도 환자별 추적표를 남긴다.",
@@ -38878,7 +38878,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "arc": [
             {
               "act": 1,
-              "summary": "K265 섭서연은 대한불교조계종의 폐기통에서 가짜 약 포장 조각을 수거하.\n\nG21E05 통신근균체가 내는 클릭음을 기준으로 오염 묶음을 가려낸다.\n\n그는 황세린의 배급 명부에서 동일 제조번호 수령자를 찾아 피해 증언을 연결한다.\n\n봉감은 검사 중 오른 체온을 낮추며 섭서연이 끝까지 절차를 수행하도록 돕는다."
+              "summary": "K265 섭서연은 승가구휼정의 폐기통에서 가짜 약 포장 조각을 수거하.\n\nG21E05 통신근균체가 내는 클릭음을 기준으로 오염 묶음을 가려낸다.\n\n그는 황세린의 배급 명부에서 동일 제조번호 수령자를 찾아 피해 증언을 연결한다.\n\n봉감은 검사 중 오른 체온을 낮추며 섭서연이 끝까지 절차를 수행하도록 돕는다."
             },
             {
               "act": 2,
@@ -38927,11 +38927,11 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "name": "오한결",
           "sections": {
             "정체성·출신": "K250 오한결은 이라크 쿠르디스탄 술라이마니야에서 자란 어머니와 한국 남부 출신 아버지 사이에서 태어난 한국 거주 2세대다.\n\n어머니는 2000년대 후반 대학 통번역 과정으로 이주한 뒤 소형 냉난방기 수리점을 운영했고, 집에서는 소라니어와 한국어를 상황에 따라 사용했다.\n\n그는 가족의 이주사를 충성심의 증명으로 소비하지 않고 계량 수리 계약을 정확히 지키는 생활 기술로 이어 간다.",
-            "붕괴 전 삶": "K250 오한결은 가족 수리점에서 연료펌프와 난방기 압력계를 고치고 야간에는 공동창고의 입출고표를 정리했다.\n\n붕괴 직전 그는 거래처의 미납 연료 한 통을 반품 처리하지 않고 보류 구역에 두어 원소유자가 오면 되돌려줄 수 있게 했다.\n\n그 가역적 보류는 이후 대한불교조계종의 초기 발전기를 살렸지만 소유권 논쟁과 개인적 빚도 함께 남겼다.",
-            "가문·기업·공동체": "K250 오한결은 HP06 대한불교조계종의 민병 배급 감시로 일하며, 무장보다 눈금 봉인과 이중 서명을 통제 수단으로 선호한다.\n\n그는 황세린의 지휘 아래 배급 감시를 뒷받침하고 두감과 연료고 당직 및 공구를 나누며 용두에게 현장 경계 순서를 지시한다.\n\n가족 수리점에서 배운 소라니어 부품 메모는 사적 암호가 아니라 누구나 대조할 수 있는 한국어 병기 장부로 바꾸어 관리한다.",
+            "붕괴 전 삶": "K250 오한결은 가족 수리점에서 연료펌프와 난방기 압력계를 고치고 야간에는 공동창고의 입출고표를 정리했다.\n\n붕괴 직전 그는 거래처의 미납 연료 한 통을 반품 처리하지 않고 보류 구역에 두어 원소유자가 오면 되돌려줄 수 있게 했다.\n\n그 가역적 보류는 이후 승가구휼정의 초기 발전기를 살렸지만 소유권 논쟁과 개인적 빚도 함께 남겼다.",
+            "가문·기업·공동체": "K250 오한결은 HP06 승가구휼정의 민병 배급 감시로 일하며, 무장보다 눈금 봉인과 이중 서명을 통제 수단으로 선호한다.\n\n그는 황세린의 지휘 아래 배급 감시를 뒷받침하고 두감과 연료고 당직 및 공구를 나누며 용두에게 현장 경계 순서를 지시한다.\n\n가족 수리점에서 배운 소라니어 부품 메모는 사적 암호가 아니라 누구나 대조할 수 있는 한국어 병기 장부로 바꾸어 관리한다.",
             "붕괴의 상처": "K250 오한결은 G21E06 통신근균체가 지휘 무전을 흉내 내 연료고 문을 열게 한 밤, 자신의 목소리와 유사한 명령 때문에 용두의 경계조가 습격당하는 일을 겪었다.\n\n그는 한 사람을 구하려고 밸브를 닫았으나 다른 구역의 난방이 끊겨 저체온 환자가 발생했다.\n\n이후 자신의 지휘가 위조될 수 있다는 공포 때문에 명령마다 공구 자국과 대면 확인을 요구하며 동료의 신뢰까지 시험한다.",
             "생존 전환점": "K250 오한결은 G21E06 통신근균체가 음성은 모방해도 압력계 바늘의 물리적 변화를 위조하지 못한다는 점을 이용해 연료고 침입을 판별했다.\n\n그는 두감과 서로 다른 규격의 렌치를 교환하고 용두에게 밸브 압력과 봉인 흠집을 함께 확인하게 해 거짓 무전을 무력화했다.\n\n그 전환 뒤에는 개인의 목소리가 아니라 세 사람이 재현할 수 있는 확인 절차만 명령으로 인정한다.",
-            "현재 지위": "K250 오한결은 S10 대한불교조계종에서 연료와 식량 배급을 감시하는 민병 실무자이며 XT01-SC2의 연료고 봉인을 맡는다.\n\n황세린은 겨울 난방을 위해 비축분 개방을 명령하지만 원소유권 표식이 남은 연료와 병동용 예비분까지 포함되어 있다.\n\n현재 그는 명령대로 전량 배급할지 일부를 보류할지 감시 기록을 공개하고 공동 표결에 넘길지 선택하기 전이다.",
+            "현재 지위": "K250 오한결은 S10 승가구휼정에서 연료와 식량 배급을 감시하는 민병 실무자이며 XT01-SC2의 연료고 봉인을 맡는다.\n\n황세린은 겨울 난방을 위해 비축분 개방을 명령하지만 원소유권 표식이 남은 연료와 병동용 예비분까지 포함되어 있다.\n\n현재 그는 명령대로 전량 배급할지 일부를 보류할지 감시 기록을 공개하고 공동 표결에 넘길지 선택하기 전이다.",
             "비밀·빚·죄책감": "K250 오한결은 초기 발전기를 살린 연료 한 통이 붕괴 전 거래처 소유였다는 사실과 그 가족이 북한산보국문 외곽에 생존해 있을 가능성을 알고 있다.\n\n그는 두감에게 공구를 빌린 빚 용두의 부상에 대한 지휘 책임 황세린의 신뢰를 동시에 짊어진다.\n\n또한 첫 습격 때 난방 밸브를 닫은 판단을 공식 보고서에서 몇 분 늦게 기록해 저체온 사망과 자신의 결정 사이를 흐렸다는 죄책감을 숨긴다.",
             "관계 공동과거": "K250 오한결은 황세린의 배급 줄에서 무장 충돌 대신 눈금표를 제시해 두 차례 과잉 반출을 막았고 그 일로 지휘 계약을 얻었다.\n\n두감과는 가족 수리점에서 가져온 렌치와 연료고 공구를 나누며 서로의 당직 봉인을 대신 확인해 왔다.\n\n용두는 오한결의 지휘로 연료고를 지켰지만 모방 명령에 다친 뒤부터 음성 지시를 믿지 않아 두 사람은 절차를 통해서만 신뢰를 회복한다.",
             "3막 개인 서사선": "K250 오한결은 1막에서 모방 무전과 실제 명령을 가르는 압력계 인증을 도입하고 숨겨 둔 원소유권 장부를 공개한다.\n\n2막에서는 황세린의 난방 명령 두감의 정비 계획 용두의 경계 보고가 서로 다른 필요를 가리킨다는 사실을 확인한다.\n\n3막에서는 전량 배급 전략 보류 공동 표결의 모든 분기를 수행하며 각 선택에서 소유권 반환 조건과 저체온 피해 책임을 기록한다.",
@@ -38990,11 +38990,11 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "name": "황노을",
           "sections": {
             "정체성·출신": "K276 황노을은 네팔 포카라 출신 조부모가 1990년대 말 산업연수 경로로 이주한 뒤 정착한 가정의 한국 태생 3세대다.\n\n가족은 귀국과 재이주를 거쳐 수도권에서 자전거 휠 교정과 소형 금속가공점을 운영했으며 집에서는 한국어를 주로 쓰고 조부모와는 네팔어도 사용했다.\n\n그는 이주 배경을 장식적 표식으로 삼지 않고 금속의 출처 노동시간 반환 조건을 정확히 기록하는 가업 윤리로 이어 간다.",
-            "붕괴 전 삶": "K276 황노을은 가족 공방에서 휠 림을 펴고 폐자전거와 건설 철재를 등급별로 분류하며 야간 직업학교에서 용접 검사를 배웠다.\n\n붕괴 직전 불법 반출 의심 철재를 절단하지 않고 별도 선반에 보관해 소유자가 증빙하면 반환할 수 있게 했다.\n\n그 가역적 보류 덕분에 삼성그룹은 규격 강재를 얻었지만 반출 경로를 감춘 업자와의 미정산 문제가 생존기까지 따라왔다.",
-            "가문·기업·공동체": "K276 황노을은 HC08과 S11 삼성그룹을 잇는 철재 회수 작업반장으로, 회수량보다 출처와 피로 균열 표시를 우선한다.\n\n그는 철재 재고를 원로 이홍원에게 보고하고 신가온에게 차륜 공급을 조건으로 선로 가문의 운송권과 안전 검사를 거래한다.\n\n공동체는 그의 기술을 필요로 하지만 쓸 수 있는 철재를 위험 등급으로 묶어 두는 엄격함 때문에 배급 지연의 책임도 묻는다.",
+            "붕괴 전 삶": "K276 황노을은 가족 공방에서 휠 림을 펴고 폐자전거와 건설 철재를 등급별로 분류하며 야간 직업학교에서 용접 검사를 배웠다.\n\n붕괴 직전 불법 반출 의심 철재를 절단하지 않고 별도 선반에 보관해 소유자가 증빙하면 반환할 수 있게 했다.\n\n그 가역적 보류 덕분에 서초전산그룹은 규격 강재를 얻었지만 반출 경로를 감춘 업자와의 미정산 문제가 생존기까지 따라왔다.",
+            "가문·기업·공동체": "K276 황노을은 HC08과 S11 서초전산그룹을 잇는 철재 회수 작업반장으로, 회수량보다 출처와 피로 균열 표시를 우선한다.\n\n그는 철재 재고를 원로 이홍원에게 보고하고 신가온에게 차륜 공급을 조건으로 선로 가문의 운송권과 안전 검사를 거래한다.\n\n공동체는 그의 기술을 필요로 하지만 쓸 수 있는 철재를 위험 등급으로 묶어 두는 엄격함 때문에 배급 지연의 책임도 묻는다.",
             "붕괴의 상처": "K276 황노을은 G06E15 철새습지포식군이 반짝이는 절단면과 망치 진동을 따라 몰려든 회수 현장에서 작업조 세 명을 잃었다.\n\n그는 적재량을 지키려 수레를 늦게 버렸고, 젖은 철판 아래에 갇힌 동료의 구조 신호가 포식군의 날갯소리에 묻히는 일을 겪었다.\n\n그 뒤로 금속을 재고 숫자로만 부르는 것을 거부하고 회수품마다 발견 장소와 사망자 표식을 새긴다.",
             "생존 전환점": "K276 황노을은 G06E15 철새습지포식군이 불규칙한 타격음에는 모이지만 일정한 저주파 공명에서는 방향을 바꾼다는 사실을 낡은 브레이크 드럼으로 확인했다.\n\n그는 드럼 세 개를 서로 다른 거리에서 울려 포식군을 빈 습지로 유도하고 작업조가 철재를 버린 채 빠져나오게 했다.\n\n그날부터 회수 성공을 적재량이 아니라 전원 귀환과 표식 보존으로 계산하며 공명 장비를 필수 안전품으로 지정한다.",
-            "현재 지위": "K276 황노을은 S11 삼성그룹의 철재 회수 작업반장으로 XT01-SC3에서 차륜용 강재의 배분을 결정하기 직전이다.\n\n이홍원은 공동 재고 유지를 요구하고 신가온은 선로 복구를 조건으로 규격 차륜 전량을 먼저 달라고 요구한다.\n\n현재 그는 선로 계약 우선 공동 재고 우선 위험 철재 재가공이라는 세 선택을 앞두고 아직 어느 쪽에도 최종 서명하지 않았다.",
+            "현재 지위": "K276 황노을은 S11 서초전산그룹의 철재 회수 작업반장으로 XT01-SC3에서 차륜용 강재의 배분을 결정하기 직전이다.\n\n이홍원은 공동 재고 유지를 요구하고 신가온은 선로 복구를 조건으로 규격 차륜 전량을 먼저 달라고 요구한다.\n\n현재 그는 선로 계약 우선 공동 재고 우선 위험 철재 재가공이라는 세 선택을 앞두고 아직 어느 쪽에도 최종 서명하지 않았다.",
             "비밀·빚·죄책감": "K276 황노을은 습지 사고 당시 수레를 빨리 버렸다면 동료 한 명을 구할 가능성이 있었다는 작업시간 기록을 숨기고 있다.\n\n그는 이홍원에게 재고 정확성을 보고할 의무가 있고 신가온에게는 차륜 공급을 두 번 약속했으나 동일 계약을 별도 문서처럼 처리했다.\n\n가족 공방의 미정산 철재 일부가 현재 최고 등급 재고에 섞였다는 사실도 알아 공급 결정마다 소유권의 빚을 느낀다.",
             "관계 공동과거": "K276 황노을은 이홍원에게 매주 철재 재고와 균열률을 보고하며 원로의 승인 없이 위험 등급을 낮추지 않기로 했다.\n\n신가온과는 차륜 공급을 조건으로 선로 가문의 운송권을 확보하는 계약을 맺었지만, 같은 조건을 두 차례 확인하는 과정에서 납기와 수량 문구가 서로 다르게 남았다.\n\n세 사람은 첫 선로 복구 때 함께 일했으나 황노을이 사고 철재의 출처를 숨긴 사실이 드러나면 거래와 지휘 체계가 동시에 흔들린다.",
             "3막 개인 서사선": "K276 황노을은 1막에서 포식군 회피용 공명 장비로 새 회수로를 열고 사고 당시의 지연 기록과 미정산 철재 표식을 발견한다.\n\n2막에서는 이홍원의 공동 재고안과 신가온의 선로 우선 계약이 모두 생존에 필요하지만 동시에 이행할 수 없음을 밝힌다.\n\n3막에서는 선로 우선 공동 재고 위험 철재 재가공의 모든 분기를 실행하며 이중 계약과 사고 책임을 각 결말에서 공개한다.",
@@ -39017,7 +39017,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "outcomes": [
             {
               "id": "K276-OUT-A",
-              "summary": "K276 황노을은 신가온과의 차륜 공급 계약을 우선 이행해 규격 강재 대부분을 선로 복구에 투입한다.\n\n외부 식량차가 들어오지만 삼성그룹의 수레 생산이 멈춰 이홍원은 그를 재고 관리에서 해임한다.\n\n그는 선로 가문에 종속되지 않도록 납품 종료일과 차륜 반환량을 새 계약에 명시하고 작업반장만 유지한다."
+              "summary": "K276 황노을은 신가온과의 차륜 공급 계약을 우선 이행해 규격 강재 대부분을 선로 복구에 투입한다.\n\n외부 식량차가 들어오지만 서초전산그룹의 수레 생산이 멈춰 이홍원은 그를 재고 관리에서 해임한다.\n\n그는 선로 가문에 종속되지 않도록 납품 종료일과 차륜 반환량을 새 계약에 명시하고 작업반장만 유지한다."
             },
             {
               "id": "K276-OUT-B",
@@ -39126,10 +39126,10 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "sections": {
             "정체성·출신": "란진아는 창동 철도관사에서 자란 한국계 차륜 정비사이며 의료열차 북문 설비를 맡는다.\n\n그는 소리보다 진동으로 차축 균열을 읽는 현장 기술자다.\n\n피란민과 의료진이 같은 열차에서 살아야 한다는 원칙을 정체성의 중심에 둔다.",
             "붕괴 전 삶": "붕괴 전 란진아는 야간 도시철도 차량기지에서 제동 시험과 사고차 복구를 담당했다.\n\n폐차 직전의 객차를 이동 진료실로 개조하는 봉사 작업에도 참여했다.\n\n당시 숨겨 둔 검사 원본을 다시 공개하면 과거의 해고 처분을 뒤집을 수 있다.",
-            "가문·기업·공동체": "란진아의 가족은 삼성그룹 HC08을 삼대째 운영하며 베어링과 제동슈를 재생해 왔다.\n\n붕괴 뒤 차륜방은 의료열차의 부품 창고이자 견습공 숙소가 되었다.\n\n그는 가업의 독점권보다 북문 전체가 수리법을 공유하는 공동 작업장을 지키려 한다.",
+            "가문·기업·공동체": "란진아의 가족은 서초전산그룹 HC08을 삼대째 운영하며 베어링과 제동슈를 재생해 왔다.\n\n붕괴 뒤 차륜방은 의료열차의 부품 창고이자 견습공 숙소가 되었다.\n\n그는 가업의 독점권보다 북문 전체가 수리법을 공유하는 공동 작업장을 지키려 한다.",
             "붕괴의 상처": "첫 철새 습격 때 란진아는 고장 난 검수등을 믿고 격리 객차를 본선으로 내보냈다.\n\nG06E14 철새습지포식군이 지붕 환기구를 뚫으면서 환자 열한 명이 사라졌다.\n\n그는 오판의 책임을 숨기지 않지만 당시 검수등이 누군가에게 바뀌었다는 의심도 버리지 못한다.",
             "생존 전환점": "란진아는 폐선 터널에서 바퀴 플랜지에 철새 깃이 감기면 포식군의 방향 감각이 흐트러진다는 사실을 알아냈다.\n\n그는 마지막 구리망을 제동장치와 유인 덫 중 어디에 쓸지 선택할 수 있었다.\n\n일단 덫을 회수해 둔 결정은 아직 되돌릴 수 있으며 북문 출발 전까지 재배선이 가능하다.",
-            "현재 지위": "현재 란진아는 S11 삼성그룹의 의료열차 북문 정비원으로 출발 승인 도장을 보유한다.\n\n그러나 권도하의 순찰차 제동 결함과 순가온의 의료칸 발견 시각이 같은 정차 기록에 얽혀 있다.\n\n그는 열차를 출발시킬지 기록부터 봉인할지 선택하기 직전이다.",
+            "현재 지위": "현재 란진아는 S11 서초전산그룹의 의료열차 북문 정비원으로 출발 승인 도장을 보유한다.\n\n그러나 권도하의 순찰차 제동 결함과 순가온의 의료칸 발견 시각이 같은 정차 기록에 얽혀 있다.\n\n그는 열차를 출발시킬지 기록부터 봉인할지 선택하기 직전이다.",
             "비밀·빚·죄책감": "란진아는 사고 당일의 정차 일지 한 장을 차륜방 바닥판 아래 숨겼으며 거기에는 검수등 교체자의 공구 자국이 남아 있다.\n\n권도하에게 빌린 세라믹 제동편 두 쌍도 아직 갚지 못했다.\n\n무엇보다 환자보다 가문의 정비 허가를 먼저 지켰다는 죄책감이 그의 판단을 흔든다.",
             "관계 공동과거": "K275 권도하는 북문 순찰차의 제동 정비를 맡겨 온 계약 상대이며 과거 폐교량에서 란진아를 견인해 살렸다.\n\nK188 순가온은 의료칸 발견 시각과 정차 일지를 함께 대조한 기록 담당자다.\n\n세 사람은 G06E14 철새습지포식군의 첫 침입 밤에 같은 신호소를 지켰지만 각자 다른 시각을 증언한다.",
             "3막 개인 서사선": "1막에서 란진아는 불일치하는 정차 일지를 추적하며 검수등 교체가 우연이 아니었음을 확인한다.\n\n2막에서는 권도하의 순찰차와 순가온의 의료칸 중 하나만 먼저 복구할 수 있어 동맹의 신뢰가 갈린다.\n\n3막에서는 숨긴 원본을 공개해 덫을 공동 운용하거나 소각하고 단독 출발하거나 자신을 미끼로 삼는 모든 결말로 갈라진다.",
@@ -39156,7 +39156,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             },
             {
               "id": "K291-OUT-B",
-              "summary": "K291 란진아는 원본을 태우고 순찰차 부품을 의료열차에 몰아 넣어 환자들을 즉시 탈출시킨다.\n\n권도하와 순가온은 조작을 눈치채 계약을 끊고 삼성그룹은 불신 속의 독점 수리점이 된다.\n\n그는 생존자들을 지켰지만 검수등 교체자의 정체를 영원히 밝히지 못한다."
+              "summary": "K291 란진아는 원본을 태우고 순찰차 부품을 의료열차에 몰아 넣어 환자들을 즉시 탈출시킨다.\n\n권도하와 순가온은 조작을 눈치채 계약을 끊고 서초전산그룹은 불신 속의 독점 수리점이 된다.\n\n그는 생존자들을 지켰지만 검수등 교체자의 정체를 영원히 밝히지 못한다."
             },
             {
               "id": "K291-OUT-C",
@@ -39375,10 +39375,10 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "sections": {
             "정체성·출신": "범채온은 가락시장 하역 노동자 집안에서 자란 한국계 배급 협상가이며 군량 징발에 휩쓸린 인파를 대표한다.\n\n그는 줄을 선 시간과 돌봄 부담도 노동으로 계산한다.\n\n식량을 지키는 일과 굶주린 사람을 통제하는 일이 같아져서는 안 된다고 주장한다.",
             "붕괴 전 삶": "붕괴 전 범채온은 새벽 도매시장에서 반품 농산물을 분류하고 무료 급식소로 넘기는 운송반장이었다.\n\n그는 유통회사의 폐기량 조작을 눈감는 대가로 급식 물량을 확보했다.\n\n봉인된 냉동창고의 계근표를 공개하면 그 거래를 범죄로 확정하거나 긴급 구호로 재평가할 수 있다.",
-            "가문·기업·공동체": "범채온의 가족은 시장 식당과 하역 계를 함께 운영하며 부상 노동자의 끼니를 책임졌다.\n\n붕괴 뒤 HC09는 천주교 서울대교구의 군량 창고와 대기 줄 사이를 중재하는 인파 평의회가 되었다.\n\n그는 가족 식당의 우선 배급권을 내려놓고 돌봄 가구의 대리 수령권을 제도화하려 한다.",
+            "가문·기업·공동체": "범채온의 가족은 시장 식당과 하역 계를 함께 운영하며 부상 노동자의 끼니를 책임졌다.\n\n붕괴 뒤 HC09는 본당인준정의 군량 창고와 대기 줄 사이를 중재하는 인파 평의회가 되었다.\n\n그는 가족 식당의 우선 배급권을 내려놓고 돌봄 가구의 대리 수령권을 제도화하려 한다.",
             "붕괴의 상처": "첫 군량 징발 때 범채온은 압사를 막으려고 서쪽 철문을 열어 인파를 창고 안으로 들였다.\n\n그곳의 순환 급식기가 G15E02 돌봄순환체로 변해 보호자를 아이와 환자에게 강제로 결합시켰다.\n\n그는 문을 연 책임을 인정하지만 군이 비상 정지 열쇠를 먼저 회수했다는 사실을 숨기지 않으려 한다.",
             "생존 전환점": "범채온은 돌봄순환체가 배급표의 부양가족 칸을 읽어 표적 순서를 정한다는 사실을 알아냈다.\n\n그는 표를 모두 백지화하거나 거짓 가족망을 입력해 괴물을 빈 창고로 유도할 수 있다.\n\n라진우가 재고 원장을 봉인하기 전까지 입력값은 되돌릴 수 있어 마지막 선택이 남아 있다.",
-            "현재 지위": "현재 범채온은 S15 천주교 서울대교구에서 군량 징발 인파의 발언권과 줄 배치 권한을 가진다.\n\n라진우의 재고 원장과 흥다온의 제기동 거부 문구는 돌봄 가구를 포함할지 두고 충돌한다.\n\n그는 군량을 즉시 풀지 거짓 가족망으로 G15E02 돌봄순환체부터 유인할지 결정해야 한다.",
+            "현재 지위": "현재 범채온은 S15 본당인준정에서 군량 징발 인파의 발언권과 줄 배치 권한을 가진다.\n\n라진우의 재고 원장과 흥다온의 제기동 거부 문구는 돌봄 가구를 포함할지 두고 충돌한다.\n\n그는 군량을 즉시 풀지 거짓 가족망으로 G15E02 돌봄순환체부터 유인할지 결정해야 한다.",
             "비밀·빚·죄책감": "범채온은 가족 식당의 이름으로 대리 수령표 열두 장을 만들어 가장 취약한 가구에 나눠 주었다.\n\n라진우에게 빌린 창고 봉인끈을 잃었고 흥다온에게는 제기동 거부 문구를 군량 규칙에도 넣겠다고 약속했다.\n\n그는 선의의 위조가 다시 특혜가 될 수 있다는 죄책감을 품는다.",
             "관계 공동과거": "K375 라진우는 범채온과 재고 원장 및 인파 줄을 나눈 계약자이며 과거 냉동창고 화재에서 함께 계근표를 구했다.\n\nK346 흥다온은 제기동 거부 문구를 범채온의 배급 선언문과 맞춘 계약 상대다.\n\n세 사람은 G15E02 돌봄순환체가 깨어난 날 비상 정지 열쇠가 사라지는 장면을 서로 다른 위치에서 목격했다.",
             "3막 개인 서사선": "1막에서 범채온은 냉동창고 계근표와 라진우의 원장을 비교해 군이 돌봄 가구 몫을 별도 징발했음을 찾아낸다.\n\n2막에서는 흥다온과 거짓 가족망을 만들거나 모든 배급표를 백지화하며 봉인 전까지 결정을 되돌릴 수 있다.\n\n3막에서는 공동 유인과 공개 배급 군과 거래한 질서 유지 자신을 단독 보호자로 등록하는 희생 결말로 갈린다.",
@@ -39435,12 +39435,12 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K418",
           "name": "탁세온",
           "sections": {
-            "정체성·출신": "탁세온은 붕괴 전 서울에서 태어나 수문 행정과 계약 기록을 익힌 한국계 시민이다.\n\n그는 말보다 날짜 수위 눈금 인장 압력을 신뢰하며 증언자의 중립이 공동체의 마지막 제방이라고 여긴다.\n\n전국민주노동조합총연맹에서는 어느 파벌에도 완전히 속하지 않은 둘째 급수협약 서명 증인으로 자신을 규정한다.",
+            "정체성·출신": "탁세온은 붕괴 전 서울에서 태어나 수문 행정과 계약 기록을 익힌 한국계 시민이다.\n\n그는 말보다 날짜 수위 눈금 인장 압력을 신뢰하며 증언자의 중립이 공동체의 마지막 제방이라고 여긴다.\n\n정동노동총연맹에서는 어느 파벌에도 완전히 속하지 않은 둘째 급수협약 서명 증인으로 자신을 규정한다.",
             "붕괴 전 삶": "붕괴 전 탁세온은 광역상수도 기록실에서 노후 관로 도면과 보상 합의서를 대조하는 계약직 검수원이었다.\n\n그는 폐쇄된 우수관에서 발견한 도자기 인장편을 모아 문서의 연대를 판별하는 개인 표본함도 운영했다.\n\n재난 직전에는 전산 도면과 종이 원본의 불일치를 신고했지만 감사 개시 하루 전에 도시망이 끊겼다.",
-            "가문·기업·공동체": "탁세온의 가족은 작은 제본소를 운영했으며 방수실과 황마실로 관공서 장부를 수선해 생계를 이었다.\n\n붕괴 뒤 그는 HC11 기록가문에 편입되어 급수협약 원본 감사표 증언 인장을 따로 보관하는 삼중 장부제를 만들었다.\n\n전국민주노동조합총연맹은 그의 보관함을 신뢰하지만 배급을 늦추는 절차주의자라는 비난도 함께 보낸다.",
+            "가문·기업·공동체": "탁세온의 가족은 작은 제본소를 운영했으며 방수실과 황마실로 관공서 장부를 수선해 생계를 이었다.\n\n붕괴 뒤 그는 HC11 기록가문에 편입되어 급수협약 원본 감사표 증언 인장을 따로 보관하는 삼중 장부제를 만들었다.\n\n정동노동총연맹은 그의 보관함을 신뢰하지만 배급을 늦추는 절차주의자라는 비난도 함께 보낸다.",
             "붕괴의 상처": "첫 대피 주간에 G16E10 도면유령기계단이 가짜 수문 도면을 벽면에 투사해 탁세온의 누나가 폐쇄 관로로 들어갔다가 돌아오지 못했다.\n\n그는 자신이 원본 도면을 더 일찍 공개했다면 사고를 막았을 것이라고 믿는다.\n\n이후 움직이는 선과 자동 수정 표시를 볼 때마다 손가락으로 실제 종이의 결을 확인하지 않으면 판단하지 못한다.",
             "생존 전환점": "탁세온은 둘째 급수협약의 잉크가 물에 번진 밤, 임하준 K085이 보증한 종료 조건과 흥미리 K407의 감사표 날짜를 겹쳐 숨은 압인을 찾아냈다.\n\n그는 압인을 물로 씻으면 협약을 무효화할 수 있고 열로 되살리면 원문을 복원할 수 있다는 가역적 선택을 확보했다.\n\n즉시 어느 쪽도 실행하지 않고 도자기 인장편과 함께 봉인한 결정이 그를 단순 검수원에서 증인으로 바꾸었다.",
-            "현재 지위": "현재 탁세온은 S16 전국민주노동조합총연맹에서 둘째 급수협약의 효력을 결정할 유일한 서명 증인이다.\n\n그는 G16E10 도면유령기계단이 기록고 환기축을 장악한 가운데 원본 감사표 종료 조건을 한 탁자에 펼쳐 놓았다.\n\n선택 직전인 지금 그는 협약을 복원할지 절차를 중지할지 증거를 시민에게 공개할지 아직 선언하지 않는다.",
+            "현재 지위": "현재 탁세온은 S16 정동노동총연맹에서 둘째 급수협약의 효력을 결정할 유일한 서명 증인이다.\n\n그는 G16E10 도면유령기계단이 기록고 환기축을 장악한 가운데 원본 감사표 종료 조건을 한 탁자에 펼쳐 놓았다.\n\n선택 직전인 지금 그는 협약을 복원할지 절차를 중지할지 증거를 시민에게 공개할지 아직 선언하지 않는다.",
             "비밀·빚·죄책감": "탁세온은 과거 감사표의 한 날짜를 하루 늦게 기입해 누나가 일하던 제본소가 강제 철거를 피하도록 만든 적이 있다.\n\n그 수정 때문에 현재 협약의 종료 시점도 하루 흔들리며 그는 임하준 K085에게 진실한 증언을 빚지고 있다.\n\n또한 흥미리 K407이 오류를 모른 채 표를 맞추고 있다는 사실을 숨겨 동료의 명예까지 담보로 잡았다는 죄책감을 품는다.",
             "관계 공동과거": "임하준 K085은 붕괴 전 마지막 관로 감사에서 탁세온의 이의 제기를 보증했고, 둘째 협약의 종료 조건을 자신의 배급권과 맞바꾸어 지켰다.\n\n흥미리 K407은 같은 밤 침수된 기록고에서 감사표를 건져 탁세온과 날짜별 건조 순서를 기록했다.\n\n세 사람은 누가 살아남더라도 원본과 종료 조건을 함께 공개한다는 맹세를 했지만 날짜 수정 사실은 탁세온만 안다.",
             "3막 개인 서사선": "1막에서 탁세온은 누나의 실종과 날짜 수정이 얽힌 원본을 되살릴 수 있는 열처리 장치를 확보하며 과거를 되돌릴 여지를 얻는다.\n\n2막에서는 G16E10 도면유령기계단이 만든 가짜 누수 경보 때문에 도시가 갈라지고, 그는 선택 전에 임하준 K085과 흥미리 K407의 증언을 마지막으로 대조한다.\n\n3막에서는 원문 공개 절차 유예 증거 소각이라는 모든 분기가 열리며 각 선택은 물 배급과 자신의 증인 자격을 동시에 바꾼다.",
@@ -39806,7 +39806,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K078",
           "name": "우다온",
           "sections": {
-            "정체성·출신": "우다온은 마곡 서고 교대 근무로 자랐고 현대자동차주식회사(S03) 소속 음성기록 원본 호송원이다.\n\n사람 말보다 편집 잡음을 먼저 듣고, 정치 일정에 맞춰 릴을 늦게 열라는 부탁을 모욕으로 받는다.",
+            "정체성·출신": "우다온은 마곡 서고 교대 근무로 자랐고 양재기공주식회사(S03) 소속 음성기록 원본 호송원이다.\n\n사람 말보다 편집 잡음을 먼저 듣고, 정치 일정에 맞춰 릴을 늦게 열라는 부탁을 모욕으로 받는다.",
             "붕괴 전 삶": "서고 조수 시절 그는 릴 상자의 무게와 봉인 시각을 분 단위로 맞추는 일만 했다.\n\n어느 강국 일정에도 열리지 않는 이중 자물쇠 호송을 夢見 보며, 실제로는 안전심사와 송신 검증이 동시에 잠긴 경로만 연습했다.",
             "가문·기업·공동체": "마곡생명가(HC03) 참관 명단에 호송 당번으로 올라 있으나, 마곡 안전심사 자물쇠 밖으로는 혼자 출발하지 않는다.\n\n참관이 일정을 당겨도 그는 정호준 서명이 없는 출발 도장을 받지 않는다.",
             "붕괴의 상처": "봄의 세 유언 중 편집본이 발견되던 날, 우다온은 원본 릴을 상암으로 옮기는 첫 당번이 되었다.\n\n호송 무전이 전파까마귀떼(G02) 잡음에 삼켜지는 구간에서 상자 무게가 한 번 흔들렸고, 그 흔들림이 바꿔치기 공포로 남았다.",
@@ -39815,7 +39815,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "첫 당번 날 송신 자물쇠를 한 칸 늦게 잠근 시각이 수첩 구석에 있다.\n\n그 지연 동안 방송 한 줄이 검증 전에 나갔고, 우다온은 제시간 도착을 자랑할 때마다 그 줄을 떠올린다.",
             "관계 공동과거": "최지우에게 원본 해시를 넘기는 일은 검증 계약이고 정호준의 안전심사는 출발 허가이며 표지안의 전령로 일부는 빌린 통행권이다.\n\n세 사람은 같은 릴을 두고 서로 다른 잠금 순서를 주장한다.",
             "3막 개인 서사선": "우다온 호송은 편집본 발견 당번 명령으로 열려 잡음 구간을 건너 상암 봉인실에 닿고, 도착 뒤 인준 서명 싸움으로 끝나며 경로 일지는 STORY-B036-K078 호출로만 되감긴다.",
-            "분기 결말": "α 결말에서 우다온은 이중 봉인 호송로를 평의회 표준으로 올리고 늦은 자물쇠 시각을 공개 시정한다.\n\nβ 결말에서 그는 릴을 제시간 도착시키되 최지우의 정치 일정에 맞춘 하루 봉인 연기를 한 번 수락하고, 그 대가로 호송 당번 우선권을 유지한다.\n\n현대자동차주식회사 국가 자리는 그대로 남는다."
+            "분기 결말": "α 결말에서 우다온은 이중 봉인 호송로를 평의회 표준으로 올리고 늦은 자물쇠 시각을 공개 시정한다.\n\nβ 결말에서 그는 릴을 제시간 도착시키되 최지우의 정치 일정에 맞춘 하루 봉인 연기를 한 번 수락하고, 그 대가로 호송 당번 우선권을 유지한다.\n\n양재기공주식회사 국가 자리는 그대로 남는다."
           },
           "arc": [
             {
@@ -39860,7 +39860,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K107",
           "name": "변석훈",
           "sections": {
-            "정체성·출신": "변석훈은 뚝섬 펌프실 야간 당직으로 단련된 발전운전장이고 대한예수교장로회(S04) 소속이다.\n\n진동이 바뀌면 출력을 낮추고, 수비를 보호군 명목으로 내주라는 말을 배신으로 듣는다.",
+            "정체성·출신": "변석훈은 뚝섬 펌프실 야간 당직으로 단련된 발전운전장이고 설교명부정(S04) 소속이다.\n\n진동이 바뀌면 출력을 낮추고, 수비를 보호군 명목으로 내주라는 말을 배신으로 듣는다.",
             "붕괴 전 삶": "그는 정수 펌프와 군자 유치선 충전 순서를 한 출력 일지에 묶는 법을 혼자 익혔다.\n\n후계가 바뀌어도 물이 정전 볼모가 되지 않게 하려는 생각으로, 주간 평의회 공유용과 야간 암호패용 일지를 아예 분리해 두었다.",
             "가문·기업·공동체": "뚝섬열원가(HC04) 당직 명단에 운전장으로 올라 있으나 야간 배전은 수비대 암호패와 공정 감독 확인이 둘 다 있을 때만 연다.\n\n김보람의 펌프수비에 전력을 대되, 이준택 보수차 충전은 펌프 최저선 다음에만 허용한다.",
             "붕괴의 상처": "배우진의 보호군 파견안이 떨어지던 밤 변석훈은 외부 장교 충전 단자를 잠그고 내부 전용만 남겼다.\n\n과방전으로 펌프가 멈추면 그 공백을 주둔 명분으로 삼을 것이 보였기 때문이다.\n\n누전 자리에는 전해질화상(G07) 흔적이 피어 일지 여백에 남았다.",
@@ -39869,7 +39869,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "임하준이 사라진 시각과 겹친 야간 공백은 그의 일지 뒷장에만 있다.\n\n물을 지킨 압력 숫자 옆에 비운 충전 슬롯이 있어, 그는 점호 때마다 그 장을 덮는다.",
             "관계 공동과거": "김보람에게 전력을 대는 일은 수비 협력이고 이준택 충전 순서는 최저선 계약이며 임하준에게는 못 지킨 당직의 빚이다.\n\n세 관계는 펌프실 문 앞에서 서로 다른 열쇠를 요구한다.",
             "3막 개인 서사선": "변석훈 펌프실 줄거리는 단자 잠금에서 출발해 밀봉 공구 조건 아래 배전 시험을 미루는 교착을 거쳐, 공백 평의회 제출과 의료 소켓 한시 개방 사이 선택으로 매듭지으며 사건 묶음명은 STORY-B036-K106이다.",
-            "분기 결말": "α 결말에서 변석훈은 공개 배전망을 고정하고 당직 공백을 평의회에 제출한다.\n\nβ 결말에서 그는 외부 충전 소켓 하나를 의료 보수차에 한시 개방하는 대신 펌프 수비 인원 두 명의 약품 배급을 확보하고, 공백 기록은 수비대 암호 보관함에만 남긴다.\n\n대한예수교장로회 편제는 어느 쪽을 골라도 유지된다."
+            "분기 결말": "α 결말에서 변석훈은 공개 배전망을 고정하고 당직 공백을 평의회에 제출한다.\n\nβ 결말에서 그는 외부 충전 소켓 하나를 의료 보수차에 한시 개방하는 대신 펌프 수비 인원 두 명의 약품 배급을 확보하고, 공백 기록은 수비대 암호 보관함에만 남긴다.\n\n설교명부정 편제는 어느 쪽을 골라도 유지된다."
           },
           "arc": [
             {
@@ -40184,7 +40184,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K378",
           "name": "문도윤",
           "sections": {
-            "정체성·출신": "문도윤은 가락 배급 창고 입찰판의 호송 입찰 조정이면 천주교 서울대교구(S15) 소속이다.\n\n가족은 남아시아·중동 대상 루트로 곡물과 통조림을 옮기며 위험을 숫자로만 환산하는 일을 생업으로 삼았고, 그 역시 입찰가를 감정으로 다루지 않는다.\n\n초과 무장 호송은 낙찰의 적이다.",
+            "정체성·출신": "문도윤은 가락 배급 창고 입찰판의 호송 입찰 조정이면 본당인준정(S15) 소속이다.\n\n가족은 남아시아·중동 대상 루트로 곡물과 통조림을 옮기며 위험을 숫자로만 환산하는 일을 생업으로 삼았고, 그 역시 입찰가를 감정으로 다루지 않는다.\n\n초과 무장 호송은 낙찰의 적이다.",
             "붕괴 전 삶": "경로·무장 한도·도착 시각을 조건 세 줄로 게시하는 절차를 먼저 익혔다.\n\n암사 순찰열차 없는 가락 반출로를 공동호송조약과 연결하려는 계산이 게시판 여백에 남아 있었다.",
             "가문·기업·공동체": "서울역재고가(HC09) 입찰 명단의 조정자이나 초과 무장 표는 실격 칸으로 옮긴다.\n\n장세화 공동호송안을 조건에 심고 하세온 경량 호송을 선호하며 라진우 출고 봉인을 도착 확인에 쓴다.",
             "붕괴의 상처": "창고 봉쇄 다음 날 군량 호송만 고가 낙찰되고 비상배급 마차는 유찰되었다.\n\n배급국 정통이 군량 전용 낙찰에 먹힐 것이 보였다.\n\n봉쇄 모서리에 저온포자(G09)가 피어 배급 마차 바퀴를 미끄럽게 해 유찰을 가속했다.",
@@ -40193,7 +40193,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "늦게 붙인 보증 초안 때문에 살린 마차 수와 놓친 군량 시각이 동시에 떠오른다. 서랍을 열 때마다 초안 모서리가 먼저 보인다.",
             "관계 공동과거": "장세화와는 공동호송 조건을 심는 계약 하세온과는 경량 선호 동맹 라진우와는 도착 봉인 확인 선다솜은 봉인 전령 석오름은 게시 증인이다.\n\n입찰판 한 장이 다섯 손을 다른 순서로 호출한다.",
             "3막 개인 서사선": "문도윤 입찰 전쟁은 유찰 게시판에서 붙어 할당과 무장 한도 재게시를 지나, 시민 배급 표준 고정과 군량 1회 예외 낙찰 쿼터 사이 선택으로 결말 나며 입찰 일련 STORY-B036-K370이 원장 끝에 붙는다.",
-            "분기 결말": "α 결말에서 문도윤은 공동호송을 시민 배급 표준으로 고정하고 군량 전용 고가 낙찰을 무효화한다.\n\nβ 결말에서 그는 군량 호송 한 회차를 무장 한도 예외로 낙찰하는 대신 민간 배급 차로 영구 쿼터 조항을 원장에 새기고, 늦은 보증 초안을 그 조항의 첨부 증거로 공개한다.\n\n천주교 서울대교구 입찰 권한 틀은 예외 낙찰 뒤에도 남는다."
+            "분기 결말": "α 결말에서 문도윤은 공동호송을 시민 배급 표준으로 고정하고 군량 전용 고가 낙찰을 무효화한다.\n\nβ 결말에서 그는 군량 호송 한 회차를 무장 한도 예외로 낙찰하는 대신 민간 배급 차로 영구 쿼터 조항을 원장에 새기고, 늦은 보증 초안을 그 조항의 첨부 증거로 공개한다.\n\n본당인준정 입찰 권한 틀은 예외 낙찰 뒤에도 남는다."
           },
           "arc": [
             {
@@ -40238,7 +40238,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "V04",
           "name": "구경로봇",
           "sections": {
-            "정체성·출신": "구경로봇은 호출명 구경로의 기동형 합성 인격으로 대한예수교장로회(S04) 충전 슬롯에 정박한다.\n\n몸은 차체·대차·배터리 슬롯·차선 센서뿐이며, 전지적 시야나 무한 동력은 없다.",
+            "정체성·출신": "구경로봇은 호출명 구경로의 기동형 합성 인격으로 설교명부정(S04) 충전 슬롯에 정박한다.\n\n몸은 차체·대차·배터리 슬롯·차선 센서뿐이며, 전지적 시야나 무한 동력은 없다.",
             "붕괴 전 삶": "가동 초기에 회차선 센서 보정과 교대 스냅샷만 수행했다.\n\n담당 인간 안전과 구역 연속 가동을 배터리 할당 안에서만 계산하도록 설정되었고, 장기 완전 기억 모드는 처음부터 꺼져 있었다.",
             "가문·기업·공동체": "제기동치유문(HP06) 공동 보관과 시민 참관 봉인 아래 둔다.\n\n주정비는 한소미 감사 입회는 HP06 교대 협력은 K249다.\n\n양도에는 삼자 서명이 필요하고 교차 시설 루트는 열리지 않는다.",
             "붕괴의 상처": "회차선 경보 밤, 전체 망을 열 수 없어 구역 키만 요청한 채 배터리가 바닥으로 떨어졌다.\n\n담당 인간을 놓칠 수 있다는 한계가 그 밤에 기록되었다.\n\n충전 필터에 앉은 클린룸변이자(G08) 포자가 센서 오탐을 키워 경보를 중복시켰다.",
@@ -40306,7 +40306,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K240",
           "name": "단보람",
           "sections": {
-            "정체성·출신": "단보람은 상암 송신탑 야간 편성실에서 자란 전국경제인연합회(S09) 탁수 은폐 폭로 편성원이다.\n\n침묵이 한 방송 주기보다 길어지면 송출 스위치를 손바닥으로 덮고, 안정 운운하는 지연 쪽지는 칠판 가로줄로 지운다.",
+            "정체성·출신": "단보람은 상암 송신탑 야간 편성실에서 자란 여의도출자연합회(S09) 탁수 은폐 폭로 편성원이다.\n\n침묵이 한 방송 주기보다 길어지면 송출 스위치를 손바닥으로 덮고, 안정 운운하는 지연 쪽지는 칠판 가로줄로 지운다.",
             "붕괴 전 삶": "지역 라디오 조수 시절 그는 광고 슬롯보다 급수 경보 길이를 먼저 재었다.\n\n가짜 약 소문이 돌 때마다 교차검증 타이머를 책상 모서리에 붙여 두었고, 그 습관이 공사 편성표의 뼈대가 된다.",
             "가문·기업·공동체": "디지털미디어시티신탁가(HP09) 참관 명단에 편성 당번으로 올라 있으나 단독 정정 방송은 다음 날 같은 길이에 반대 의견을 붙이기 전에는 내보내지 않는다.\n\n오하늘의 거부권이 없는 슬롯은 빈칸으로 남긴다.",
             "붕괴의 상처": "탁수와 가짜 약 소식이 겹친 여름, 급수총재 측이 혼란 방지를 내세워 공개를 미루자 단보람은 그 지연 쪽지를 못으로 고정한 뒤 빈 공개 슬롯을 강제로 열었다.\n\n전파까마귀떼(G02) 잡음이 안테나를 흔들던 밤, 은폐 문장이 한 박자 늦게 사라지는 소리가 귓속에 남았다.",
@@ -40315,7 +40315,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "첫 공개 날 교차검증 타이머를 삼 분 늦게 돌린 기록이 수첩 귀퉁이에 있다.\n\n그 삼 분 동안 가짜 약 한 줄이 이미 골목으로 나갔고, 그는 정시 편성을 자랑할 때마다 그 줄을 떠올린다.",
             "관계 공동과거": "오하늘이 편성 거부 스위치를 내리면 단보람은 같은 초에 마이크 전원을 뽑는다.\n\n최지우은 길드 시계를 탁자에 올려 폭로 시각만 고르고, 정호준은 검사 문장을 교차방송 칸 여백에 연필로만 남긴 채 본문 마이크를 건드리지 않는다.",
             "3막 개인 서사선": "단보람 편성 싸움은 은폐 쪽지 못 박기에서 시작되어 대역 고정과 교차검증 연기를 거친 뒤, 매수 슬롯 공개 또는 약소국 공동 시간 고정으로 막을 내리며 전 과정은 STORY-B037-K240 철에만 묶인다.",
-            "분기 결말": "α 갈림에서 단보람은 매수된 슬롯 명단을 공개 원장에 올리고 교차검증 시간을 공사 권리로 박아 넣는다.\n\nβ 갈림에서 그는 약소국 공동 폭로 시간을 편성표 맨 위에 못 박는 대신 길드 보호비 한 항을 야간 전력 배정에서 깎아 주고, 편성실 열쇠는 오하늘과 공동 보관으로 옮긴다.\n\n전국경제인연합회 국가 자리는 두 갈림 모두에서 유지된다."
+            "분기 결말": "α 갈림에서 단보람은 매수된 슬롯 명단을 공개 원장에 올리고 교차검증 시간을 공사 권리로 박아 넣는다.\n\nβ 갈림에서 그는 약소국 공동 폭로 시간을 편성표 맨 위에 못 박는 대신 길드 보호비 한 항을 야간 전력 배정에서 깎아 주고, 편성실 열쇠는 오하늘과 공동 보관으로 옮긴다.\n\n여의도출자연합회 국가 자리는 두 갈림 모두에서 유지된다."
           },
           "arc": [
             {
@@ -40360,7 +40360,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K266",
           "name": "평은우",
           "sections": {
-            "정체성·출신": "평은우는 북한산보국문 회랑 입구 횃불 당번으로 단련된 대한불교조계종(S10) 인원조사 증인이다.\n\n능선 굴곡을 얼굴 윤곽처럼 외우고, 가족 단위를 쪼개 효율을 내라는 명령을 들으면 보고보다 먼저 길을 막는다.",
+            "정체성·출신": "평은우는 북한산보국문 회랑 입구 횃불 당번으로 단련된 승가구휼정(S10) 인원조사 증인이다.\n\n능선 굴곡을 얼굴 윤곽처럼 외우고, 가족 단위를 쪼개 효율을 내라는 명령을 들으면 보고보다 먼저 길을 막는다.",
             "붕괴 전 삶": "산길 안내 시절 그는 숙영 명부를 군사 양식과 섞지 않는 법만 반복 연습했다.\n\n횃불 간격이 어긋나면 보고 전에 길을 먼저 막는 버릇이 생겨, 연맹 입구 규약의 첫 줄이 되었다.",
             "가문·기업·공동체": "북한산보국문귀환회(HP05) 정찰 명단에 증인으로 올라 있으나 무장 통과는 가족 대표의 표가 모이기 전에는 열지 않는다.\n\n강태산 정찰 반의 입구 증언만 연방회의 안건으로 올린다.",
             "붕괴의 상처": "북한산보국문으로 향하던 가을 행렬 중 암사 순찰이 급수 철표를 내밀며 회랑 인원 조사를 통보했다.\n\n평은우는 입구를 하루 봉쇄한 채 증인석에 올랐고, 그날 밤 범람멧돼지군(G01)이 무너진 배수로를 헤집어 횃불 자리가 진흙 아래로 가라앉았다.",
@@ -40369,7 +40369,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "길을 닫은 첫날 미처 들이지 못한 한 가족이 빗속에 남았다는 쪽지가 그의 안주머니에 있다.\n\n증언으로 구한 숫자 옆에 그 네 이름을 차마 올리지 못한다.",
             "관계 공동과거": "강태산 정찰 반은 입구 돌 위에 증언 숯글씨를 남기고 바로 능선으로 돌아가며, 평은우는 그 글씨가 지워지기 전에 연방 안건 봉투에 넣는다.\n\n용국은 횃불 간격을 발걸음으로 맞추고, 배우진 순찰대 앞에서는 반려 도장 먹물만 굳히고 말은 아낀다.",
             "3막 개인 서사선": "평은우 회랑 봉쇄는 철표 통보에서 열려 명부 재발급 서명으로 중반을 지나, 하루 추가 폐쇄 또는 충돌 증언 기록 이관으로 정리되며 사건 키는 STORY-B037-K261이다.",
-            "분기 결말": "α 갈림에서 평은우는 회랑을 하루 더 닫아 인원조사를 피난처 침범으로 연방 원장에 못 박는다.\n\nβ 갈림에서 그는 길을 부분 개방하는 대신 순찰대·정찰대 충돌 시각을 공개 증언 원장에 올리고 증인직을 연맹 감찰석으로 옮긴다.\n\n대한불교조계종 편제는 유지된다."
+            "분기 결말": "α 갈림에서 평은우는 회랑을 하루 더 닫아 인원조사를 피난처 침범으로 연방 원장에 못 박는다.\n\nβ 갈림에서 그는 길을 부분 개방하는 대신 순찰대·정찰대 충돌 시각을 공개 증언 원장에 올리고 증인직을 연맹 감찰석으로 옮긴다.\n\n승가구휼정 편제는 유지된다."
           },
           "arc": [
             {
@@ -40414,7 +40414,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K292",
           "name": "섭채원",
           "sections": {
-            "정체성·출신": "섭채원은 창동 북문 선로 옆 칠판을 맡는 삼성그룹(S11) 북한산보국문 행렬 안내인이다.\n\n호송 시각이 비면 모욕으로 기억하고, 통행비 명목의 보호비를 내미는 장교에게는 선로 밖으로 내려가라고만 짧게 말한다.",
+            "정체성·출신": "섭채원은 창동 북문 선로 옆 칠판을 맡는 서초전산그룹(S11) 북한산보국문 행렬 안내인이다.\n\n호송 시각이 비면 모욕으로 기억하고, 통행비 명목의 보호비를 내미는 장교에게는 선로 밖으로 내려가라고만 짧게 말한다.",
             "붕괴 전 삶": "역무 조수 시절 그는 가족 표와 통행 시각을 같은 칸에 쓰는 법만 배웠다.\n\n이정표를 칼로 깎아 군사 호송로를 만드는 일을 거절하며, 말로 길을 나누는 안내 문법을 먼저 익혔다.",
             "가문·기업·공동체": "창동방호가(HC08) 북문 당번에 이름이 있으나 무장 안내는 정찰 보고 뒤에만 연다.\n\n두국 호송 거점의 행렬 순서만 칠판 원본으로 인정한다.",
             "붕괴의 상처": "북한산보국문 행렬이 가을 북문에 밀려왔을 때 섭채원은 급수 철표 검문 줄을 걷어 내고 가족 표가 적힌 칸만 열어 주었다.\n\n환승쥐군락(G05)이 분필함을 물어 가는 바람에 원본 시각 한 줄이 하얗게 지워질 뻔했다.",
@@ -40423,7 +40423,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "검문 줄을 거둘 때 미처 복원하지 못한 이름 하나가 분필 가루 속에 남았다. 행렬을 구한 숫자보다 그 빈칸이 밤에 더 크게 보인다.",
             "관계 공동과거": "두국이 북문 거점 깃발을 바꾸면 섭채원은 칠판 맨 위 칸부터 다시 쓴다.\n\n강태산 쪽 횃불이 세 번 깜빡일 때만 우회 시각을 고쳐 적고, 어하은이 건넨 이름 조각은 분필 가루를 털어 낸 뒤에야 복원 칸에 올린다.",
             "3막 개인 서사선": "섭채원 북문 안내는 검문 줄 해체에서 시작해 우회 시각 기입을 지나, 장교 재검문 저지 또는 원본 시각 증언 보존으로 끝나며 경로 일지는 STORY-B037-K286이다.",
-            "분기 결말": "α 갈림에서 섭채원은 재검문을 막은 장교 로그를 차륜방 원장에 올려 북문을 공개 안내 거점으로 남긴다.\n\nβ 갈림에서 그는 안내 칠판 원본 시각을 증언 사본으로 기록고에 넘기는 대가로 야간 호송 한 칸의 보호비 면제를 얻어 내고, 안내 직인은 후임과 분할한다.\n\n삼성그룹 자리는 유지된다."
+            "분기 결말": "α 갈림에서 섭채원은 재검문을 막은 장교 로그를 차륜방 원장에 올려 북문을 공개 안내 거점으로 남긴다.\n\nβ 갈림에서 그는 안내 칠판 원본 시각을 증언 사본으로 기록고에 넘기는 대가로 야간 호송 한 칸의 보호비 면제를 얻어 내고, 안내 직인은 후임과 분할한다.\n\n서초전산그룹 자리는 유지된다."
           },
           "arc": [
             {
@@ -40630,7 +40630,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K394",
           "name": "창고운",
           "sections": {
-            "정체성·출신": "창고운은 가락 청과 도크의 식량 공동구매 서기이며 천주교 서울대교구(S15) 소속이다.\n\n동맹 깃발보다 품목 저울 눈금을 먼저 보고, 호송 입찰을 서명란 뒤에 숨기려는 사신에게는 경매 벨을 울리라고만 답한다.",
+            "정체성·출신": "창고운은 가락 청과 도크의 식량 공동구매 서기이며 본당인준정(S15) 소속이다.\n\n동맹 깃발보다 품목 저울 눈금을 먼저 보고, 호송 입찰을 서명란 뒤에 숨기려는 사신에게는 경매 벨을 울리라고만 답한다.",
             "붕괴 전 삶": "시장 기장 견습 때 그는 경매 칠판 시계를 멈추는 연습부터 했다.\n\n군량 문장이 정서본에 섞이던 날을 본 뒤, 가락 원장의 무게 단위만 믿자는 버릇이 생겼다.",
             "가문·기업·공동체": "노량진냉동상단(HP08) 서명 당번에 이름이 있으나 날인 세 개가 차기 전엔 함 뚜껑에 손도 올리지 않는다.\n\n정유라 교섭의 청과 칸만 메우고, 남윤경 경매 망치가 내려앉을 때에만 열쇠를 내민다.",
             "붕괴의 상처": "공동구매 정서식이 한창일 때 암사 무장 호송 입찰 숫자가 도크 전광 칠판에 갑자기 떠올랐다.\n\n창고운이 벨을 눌러 시계를 멈추자 야간분류군(G13)이 라벨을 바꿔 붙인 군량 칸이 한순간 드러났다.",
@@ -40639,7 +40639,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "시계를 멈추기 직전 이미 낙찰음이 난 군량 한 칸을 무효로 돌리지 못한 기록이 수첩에 있다.\n\n겨울 배추를 지키려다 그 칸을 눈감아 준 셈이라, 공개 저울을 말할 때마다 손이 먼저 멈춘다.",
             "관계 공동과거": "정유라가 공동교섭 칠판에 청과 칸을 비우면 창고운은 그 칸만 먼저 메운다.\n\n근주하 원장 번호는 경매 종료 벨 뒤에 맞춰 적고, 남윤경이 경매 망치를 들 때에만 함 열쇠를 테이블 가운데로 내민다.",
             "3막 개인 서사선": "창고운 줄거리는 전광 입찰 난입에서 열려 시계 정지와 공개 저울 재기록을 지나, 무게 전용 공동구매 확정 또는 군량 한 칸 통과·배추 우선 거래로 도크 벨이 다시 울리며 원장 일련은 STORY-B037-K386이다.",
-            "분기 결말": "α 갈림에서 창고운은 공동구매를 무게 공개 로트 전용으로 남기고 무장 호송 숫자를 서명란에서 지운다.\n\nβ 갈림에서 그는 군량 통조림 한 칸의 야간 통과를 허용하는 대신 겨울 배추 우선 할당을 확보하고, 단독 일차 날인을 남윤경 이중 경매 날인으로 바꾼다.\n\n천주교 서울대교구 편제는 유지된다."
+            "분기 결말": "α 갈림에서 창고운은 공동구매를 무게 공개 로트 전용으로 남기고 무장 호송 숫자를 서명란에서 지운다.\n\nβ 갈림에서 그는 군량 통조림 한 칸의 야간 통과를 허용하는 대신 겨울 배추 우선 할당을 확보하고, 단독 일차 날인을 남윤경 이중 경매 날인으로 바꾼다.\n\n본당인준정 편제는 유지된다."
           },
           "arc": [
             {
@@ -40684,7 +40684,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K403",
           "name": "안태경",
           "sections": {
-            "정체성·출신": "안태경은 수서 광장 추첨함 앞에서 구슬 무게를 확인하는 시민추첨회의 서기이며 전국민주노동조합총연맹(S16) 소속이다.\n\n남아시아계 이주 가문의 통역 식탁에서 자랐고, 기업 추천이 추첨을 삼키는 순간을 모욕으로 적는다.",
+            "정체성·출신": "안태경은 수서 광장 추첨함 앞에서 구슬 무게를 확인하는 시민추첨회의 서기이며 정동노동총연맹(S16) 소속이다.\n\n남아시아계 이주 가문의 통역 식탁에서 자랐고, 기업 추천이 추첨을 삼키는 순간을 모욕으로 적는다.",
             "붕괴 전 삶": "이중 의회 서기 견습 때 그는 추첨 명부와 출석을 광장에 공개하는 절차만 반복했다.\n\n군사호적 번호가 섞인 명부를 한 번 걸러낸 뒤로, 보호조약 비준에 시민 날인이 필수라는 문장을 손으로 외웠다.",
             "가문·기업·공동체": "여의도장부가(HC14) 추첨 참관 명단에 올라 있으나 비준 투표는 하서진 표준 서식과 곽은재 감사표가 도착한 뒤에만 연다.\n\n백온 독립 시민권 명부는 자격 참고로만 펼친다.",
             "붕괴의 상처": "보호조약 세 건이 같은 주 비준 안건으로 겹쳤고, 추첨 명부 귀퉁이에 강국 호적 번호가 섞여 들어 있었다.\n\n승강장에서 날아온 유령배차대(G14) 빈 회차 표가 구슬 상자를 스칠 때 무게 차이가 손끝에 남았다.",
@@ -40693,7 +40693,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "첫 걸러내기 날 미처 제외하지 못한 호적 번호 하나가 난외에 남아 있다.\n\n그 번호로 한 표가 섞였을지 모른다는 의심이, 정정 발표를 자랑할 때마다 발목을 잡는다.",
             "관계 공동과거": "하서진 서식이 늦으면 안태경은 구슬 상자를 열지 않은 채 광장 가장자리에 앉는다.\n\n곽은재 감사표가 도착한 뒤에야 저울을 켜고 백온 명부는 자격 칸 옆에 펼쳐 두되 손으로 가리키기만 하며 정유라 교섭문은 시민 날인 칸이 비었을 때만 읽는다.",
             "3막 개인 서사선": "안태경 추첨 정화는 섞인 호적 발견에서 열려 회차선 시각 재출석을 지나, 호적 여과 확정 또는 추첨 연기·기업 서명 방치 거래로 광장 저울이 멈추며 회의 태그는 STORY-B037-K394이다.",
-            "분기 결말": "α 갈림에서 안태경은 섞인 호적을 전부 걸러 시민추첨을 보호조약 비준의 필수 날인으로 원장 맨 위에 올린다.\n\nβ 갈림에서 그는 추첨을 이틀 연기해 기업 의회 서명을 먼저 받게 하는 대신 독립 시민권 명부 심사권을 서기석에 붙이고, 추첨함 열쇠 하나를 곽은재 감사 보관으로 옮긴다.\n\n전국민주노동조합총연맹 추첨석은 유지된다."
+            "분기 결말": "α 갈림에서 안태경은 섞인 호적을 전부 걸러 시민추첨을 보호조약 비준의 필수 날인으로 원장 맨 위에 올린다.\n\nβ 갈림에서 그는 추첨을 이틀 연기해 기업 의회 서명을 먼저 받게 하는 대신 독립 시민권 명부 심사권을 서기석에 붙이고, 추첨함 열쇠 하나를 곽은재 감사 보관으로 옮긴다.\n\n정동노동총연맹 추첨석은 유지된다."
           },
           "arc": [
             {
@@ -40869,7 +40869,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K419",
           "name": "범하겸",
           "sections": {
-            "정체성·출신": "범하겸은 수서 인준 함 옆에서 자란 전국민주노동조합총연맹(S16) 열여섯 깃발 인준 감사 보조다.\n\n마른 잉크 손자국이 하루 어긋나면 보조 직인을 서랍 안으로만 밀어 넣고, 소급 날인 제안이 나오면 함 걸이 쪽을 먼저 본다.",
+            "정체성·출신": "범하겸은 수서 인준 함 옆에서 자란 정동노동총연맹(S16) 열여섯 깃발 인준 감사 보조다.\n\n마른 잉크 손자국이 하루 어긋나면 보조 직인을 서랍 안으로만 밀어 넣고, 소급 날인 제안이 나오면 함 걸이 쪽을 먼저 본다.",
             "붕괴 전 삶": "기록 수습 견습 때 그는 직인 위치를 시계가 아니라 잉크 냄새의 농도로 적었다.\n\n습도에 번진 서울역 목록을 말리는 일이 일상의 뼈대가 되어, 날짜만 고친 사본을 함 바깥에 매달아 두는 버릇이 생겼다.",
             "가문·기업·공동체": "여의도장부가(HC14) 참관 명부에 보조로 올라 있으나 보조 직인이 완전히 마른 뒤에만 깃발을 함 걸이에 매단다.\n\n윤서린의 서울역 목록이 번져도 수서 사본만 따로 말린 채 합본 요청은 거절한다.",
             "붕괴의 상처": "열여섯 깃발 선언 주, 서울역 날인과 기업 의회 서명이 하루 어긋난 채 도착하자 범하겸은 보조 직인을 수서 서랍에만 남기고 함 걸이를 비웠다.\n\n그날 밤 유령배차대(G14)가 인준 함 운반 순번을 공백으로 지워, 빈 걸이 금속음이 복도에 남았다.",
@@ -41031,7 +41031,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K079",
           "name": "고초윤",
           "sections": {
-            "정체성·출신": "고초윤은 마곡 게시판 못 상자 옆에서 자란 현대자동차주식회사(S03) 수질 검사 공개 증인이다.\n\n탁도 숫자 한 칸의 빈칸도 그대로 두고, 혼란 방지를 위한 지연 명령서를 과학이 아니라 정치 메모로 부른다.",
+            "정체성·출신": "고초윤은 마곡 게시판 못 상자 옆에서 자란 양재기공주식회사(S03) 수질 검사 공개 증인이다.\n\n탁도 숫자 한 칸의 빈칸도 그대로 두고, 혼란 방지를 위한 지연 명령서를 과학이 아니라 정치 메모로 부른다.",
             "붕괴 전 삶": "실험실 조수 시절 그는 검사표를 주민대표와 안전심사가 동시에 날인할 때만 봉인 끈을 풀었다.\n\n공개 시각을 흥정 카드로 쓰지 않는 버릇이 생겨, 기준 초과 즉시 게시가 손의 속도가 되었다.",
             "가문·기업·공동체": "마곡생명가(HC03) 증인 명단에 올라 있으나 지연 명령서는 받은 시각만 적고 집행하지 않는다.\n\n장예린의 검사망 슬롯이 비어도 숫자 칸을 미리 채우라는 요청은 거절한다.",
             "붕괴의 상처": "여름 탁수와 가짜 약이 겹친 주, 급수총재 측이 공급 유지를 내세워 공개 지연을 요구하자 고초윤은 마곡 게시판에 기준 초과표를 먼저 못으로 박았다.\n\n전파까마귀떼(G02) 잡음이 실험실 안테나를 흔들던 밤, 지연 명령서 가장자리가 비에 젖어 숫자가 번지기 직전이었다.",
@@ -41085,7 +41085,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K108",
           "name": "종나솔",
           "sections": {
-            "정체성·출신": "종나솔은 뚝섬-신정 급수호송 열차 출입문 손잡이를 기억으로 외운 대한예수교장로회(S04) 승무원이다.\n\n펌프실 쪽 진동이 바뀌면 하차 벨을 울리지 않고, 빈 공구 자리는 사람 실종으로 읽어 명부 빈칸을 소리 내어 확인한다.",
+            "정체성·출신": "종나솔은 뚝섬-신정 급수호송 열차 출입문 손잡이를 기억으로 외운 설교명부정(S04) 승무원이다.\n\n펌프실 쪽 진동이 바뀌면 하차 벨을 울리지 않고, 빈 공구 자리는 사람 실종으로 읽어 명부 빈칸을 소리 내어 확인한다.",
             "붕괴 전 삶": "호송 견습 때 그는 출입 명부와 펌프 점검 봉인을 같은 시각에 찍는 법만 반복했다.\n\n장교 동행의 구두 하차를 암호패가 있어도 거부하는 버릇이 생겨, 반대편 문 목격이 손의 기록이 되었다.",
             "가문·기업·공동체": "영등포수문가(HP01) 호송 배석에 승무로 올라 있으나 총관 실종 구간 목격이 공방평의회 원장에 오르기 전에는 보호군 좌석 배정을 받지 않는다.\n\n변석훈의 전력 일지 시각이 어긋나면 출고를 멈춘다.",
             "붕괴의 상처": "펌프 점검 열차가 뚝섬 홈에 붙던 새벽, 임하준의 공구 칸이 비어 있고 출입 봉인 끈만 바람에 흔들렸다.\n\n종나솔은 하차 벨을 누르지 않은 채 빈 칸의 녹과 열린 봉인 자국을 목격 철에 눌러 적었고, 환승쥐군락(G05)이 바닥 배선 구멍으로 스치는 순간 안에서 문이 열린 듯한 금속음이 장갑 안으로 울렸다.",
@@ -41301,7 +41301,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K063",
           "name": "박진솔",
           "sections": {
-            "정체성·출신": "박진솔은 간사이 종자 금고에서 습도 꺾은선을 어깨에 익힌 뒤 정착한 현대자동차주식회사(S03) 종자보존고 책임자다.\n\n빈칸이 하나라도 생긴 온습도 표를 보면 출고 창을 내리고, 씨앗을 군량 협상물로 부르는 입에는 상자 열쇠를 내주지 않는다.",
+            "정체성·출신": "박진솔은 간사이 종자 금고에서 습도 꺾은선을 어깨에 익힌 뒤 정착한 양재기공주식회사(S03) 종자보존고 책임자다.\n\n빈칸이 하나라도 생긴 온습도 표를 보면 출고 창을 내리고, 씨앗을 군량 협상물로 부르는 입에는 상자 열쇠를 내주지 않는다.",
             "붕괴 전 삶": "귀국 전 보존 견습에서 그는 출고 이중 날인 없이 상자를 열지 않는 법을 먼저 익혔다.\n\n마곡 보존고 열쇠를 받은 뒤에도 그 습도 일지 버릇이 봉인 순서의 뼈대로 남았다.",
             "가문·기업·공동체": "마곡생명가(HC03) 보존 명단에 책임으로 올라 있으나 주민대표와 안전심사 이중 날인이 없으면 출고 도장을 찍지 않는다.\n\n남윤경의 가격 원장이 종자 시세를 적기 시작하면 출고 창구를 내린다.",
             "붕괴의 상처": "가락 중매 쪽에서 씨앗 상자를 입찰 물건처럼 부르자 박진솔은 보존고 빗장을 두 겹으로 내리고 원장 공개 등재만을 조건으로 내걸었다.\n\n저온포자숙주(G09)가 냉각 관 이음새에 피어나던 밤, 온도 로그가 십 분 끊긴 상자 하나에 손자국이 남아 있었다.",
@@ -41531,7 +41531,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K241",
           "name": "순한결",
           "sections": {
-            "정체성·출신": "순한결은 상암 회랑 무전실에서 빈 좌표 칸을 참지 못하는 전국경제인연합회(S09) 북한산보국문 행렬 속보 증인이다.\n\n가족 숫자를 병력으로 읽어 달라는 요청이 오면 송신 스위치 덮개를 잠그고 열쇠를 손목 끈에 묶는다.",
+            "정체성·출신": "순한결은 상암 회랑 무전실에서 빈 좌표 칸을 참지 못하는 여의도출자연합회(S09) 북한산보국문 행렬 속보 증인이다.\n\n가족 숫자를 병력으로 읽어 달라는 요청이 오면 송신 스위치 덮개를 잠그고 열쇠를 손목 끈에 묶는다.",
             "붕괴 전 삶": "중계 조수 시절 그는 목격이 둘 미만이면 속보를 올리지 않는 규칙만 벽에 붙였다.\n\n좌표 없는 소문을 입에도 올리지 않는 버릇이 생겨, 중계 기록과 통행 명부를 같은 못에 거는 손이 빨라졌다.",
             "가문·기업·공동체": "여의도전산가(HC01) 증인 명단에 올라 있으나 급수권·복무 재등록을 한 문장으로 묶은 발표문은 공식 채널에 올리지 않는다.\n\n모국의 서북 관문 중계가 끊겨도 독립 목격 두 건이 모이기 전에는 송신 램프를 켜지 않는다.",
             "붕괴의 상처": "가을 북한산보국문 행렬이 회랑을 메우자 강제등록 발표 초안이 공식 채널 대기열에 들어왔다.\n\n순한결은 그 초안을 보류함으로 밀어 넣고 가족 남하 숫자만 속보 여백에 남겼으며, 전파까마귀떼(G02)가 안테나 끝을 쪼아 잡음을 키우던 밤 군사 호송 유도 무전처럼 잘릴 뻔한 속보 원본이 바닥에 흩어졌다.",
@@ -41585,7 +41585,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K267",
           "name": "단유진",
           "sections": {
-            "정체성·출신": "단유진은 북한산보국문 회의장 수행 가방 끈을 손목에 두 번 감는 대한불교조계종(S10) 약소국 회의 난민 수행원이다.\n\n아이 이름을 숫자 기호로 줄인 쪽지가 보이면 펜을 뚜껑 쪽으로 돌려 닫고, 구두 구호 약속은 전령 원장에 옮기기 전에는 없던 일로 돌린다.",
+            "정체성·출신": "단유진은 북한산보국문 회의장 수행 가방 끈을 손목에 두 번 감는 승가구휼정(S10) 약소국 회의 난민 수행원이다.\n\n아이 이름을 숫자 기호로 줄인 쪽지가 보이면 펜을 뚜껑 쪽으로 돌려 닫고, 구두 구호 약속은 전령 원장에 옮기기 전에는 없던 일로 돌린다.",
             "붕괴 전 삶": "연맹 수행 견습 때 그는 가족 단위 투표 결과를 당일 숙영과 회의장 게시판에 같은 손으로 붙였다.\n\n매수 쪽지를 떼지 않고 그대로 남겨 두는 버릇이 생겨, 따뜻함과 회의 쪽지의 차가움을 한 가방 안에서 칸으로 나눴다.",
             "가문·기업·공동체": "북한산보국문귀환회(HP05) 수행 배석에 올라 있으나 분할 복속 문장이 시민권 초안과 같은 장에 있으면 가방 지퍼를 열지 않는다.\n\n백온의 회의 발언 순서가 밀려도 군사호적 사본 양식은 수행 가방 바깥 걸이에만 매단다.",
             "붕괴의 상처": "약소국 공동교섭 개회 종이 울리기 직전, 강국별 분할 복속 쪽지가 수행 가방 안쪽 칸에 미끄러져 들어왔다.\n\n단유진은 그 쪽지를 세 번 접어 바깥 주머니로 옮기고 독립 시민권 초안만 회의 탁자에 펼쳤으며, 유령배차대(G14)가 회의장 복도 순번을 공백으로 지운 틈에 아이 이름 칸이 노동력 숫자로 바뀐 사본이 바닥에 떨어졌다.",
@@ -41639,7 +41639,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K293",
           "name": "평채원",
           "sections": {
-            "정체성·출신": "평채원은 창동 주거 쉘에서 주전자가 식는 속도로 하루를 재는 삼성그룹(S11) 급수 압력 저하 당사자다.\n\n남이 대신 눌러 준 손도장이 연서에 보이면 자신의 갈증으로 인정하지 않고 주전자 손잡이만 탁자 쪽으로 민다.",
+            "정체성·출신": "평채원은 창동 주거 쉘에서 주전자가 식는 속도로 하루를 재는 서초전산그룹(S11) 급수 압력 저하 당사자다.\n\n남이 대신 눌러 준 손도장이 연서에 보이면 자신의 갈증으로 인정하지 않고 주전자 손잡이만 탁자 쪽으로 민다.",
             "붕괴 전 삶": "쉘 거주 기록 때 그는 압력계 바늘이 멈춘 시각을 주전자 옆 종이에 분 단위로 적었다.\n\n연서에는 본인 손도장만 받아 감사 함에 넣는 버릇이 생겨, 기술시험 날짜가 갈증보다 앞서 적히는 표를 증언의 적으로 보았다.",
             "가문·기업·공동체": "북한산보국문귀환회(HP05) 방청 명부에 당사자로 올라 있으나 보호 급수 들러리 문장이 섞인 연서는 함 입구에서 되돌린다.\n\n서진아의 주거 감사 함 봉인이 늦어도 한재목이 쉘 이름을 빌려 쓴 협상문은 증언석에 올리지 않는다.",
             "붕괴의 상처": "북부 압력계 바늘이 위험 눈금에서 멈추던 아침, 기술시험 일정표가 연공회의 안건 첫 장에 올라왔다.\n\n평채원은 식은 주전자를 그대로 탁자 중앙에 올려 일정표 모서리를 눌렀고, 폐선보수열차군(G18)이 창동 측선에서 금속음을 내던 시각 들러리 명부에 자신의 이름이 미리 찍힌 사본이 의자 밑에 떨어져 있었다.",
@@ -41801,7 +41801,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K092",
           "name": "최나래",
           "sections": {
-            "정체성·출신": "최나래는 요코하마 부두 야드에서 누수 청음 막대를 어깨에 익힌 뒤 돌아온 대한예수교장로회(S04) 공방 기동정비조장이다.\n\n도면보다 먼저 파이프 떨림을 듣고, 무장 호위를 정비 인원 칸에 끼워 넣는 명령서에는 공구 가방 지퍼만 닫아 응답한다.",
+            "정체성·출신": "최나래는 요코하마 부두 야드에서 누수 청음 막대를 어깨에 익힌 뒤 돌아온 설교명부정(S04) 공방 기동정비조장이다.\n\n도면보다 먼저 파이프 떨림을 듣고, 무장 호위를 정비 인원 칸에 끼워 넣는 명령서에는 공구 가방 지퍼만 닫아 응답한다.",
             "붕괴 전 삶": "기동조 견습 때 그는 출동 명부에 공방·수비·시민 대표의 세 서명이 모이기 전에는 벨을 울리지 않았다.\n\n야간 무장 차출은 공구 반납 점검이 끝난 뒤에만 따르는 버릇이 생겨, 정비조가 민병 명으로만 불리는 표를 현장의 적으로 읽었다.",
             "가문·기업·공동체": "금천구청중기가(HC12) 기동 배석에 올라 있으나 차단봉 지급 문장이 공구 목록과 같은 장에 있으면 출동을 보류한다.\n\n김보람과 교량 순찰 맹세를 나눠도 임초원의 공개 설계가 현장에서 시험되기 전에는 민병 차출 밀지를 주머니에 넣지 않는다.",
             "붕괴의 상처": "뚝섬 수질 검사망이 멈추던 새벽, 센서 부품 상자가 마곡 방면 호송에만 실릴 수 있다는 쪽지와 펌프실 방호 잔류 명령이 동시에 떨어졌다.\n\n최나래는 조원 투표함을 공구 상자 뚜껑으로 만들어 마곡 출동과 펌프 잔류를 구슬로 갈랐으며, 도면유령기계단(G16)이 펌프실 배선도를 흐리던 순간 차단봉 지급 명단이 정비조 이름 칸을 덮고 있었다.",
@@ -42031,7 +42031,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K395",
           "name": "초시람",
           "sections": {
-            "정체성·출신": "초시람은 가락 경매대 앞에서 패들 손잡이의 땀 자국으로 친위 낙찰을 가리는 천주교 서울대교구(S15) 공신 보상 경매 당사자다.\n\n시작가가 지워진 번호가 자기 이름 옆에 붙으면 자리를 뜨지 않고 분필 가루만 손등으로 닦는다.",
+            "정체성·출신": "초시람은 가락 경매대 앞에서 패들 손잡이의 땀 자국으로 친위 낙찰을 가리는 본당인준정(S15) 공신 보상 경매 당사자다.\n\n시작가가 지워진 번호가 자기 이름 옆에 붙으면 자리를 뜨지 않고 분필 가루만 손등으로 닦는다.",
             "붕괴 전 삶": "배급 견습 때 그는 증서 사본과 낙찰 분필을 한 함에 넣고 본인이 패들을 들지 않은 세습 추가는 칠판에서 지우는 일만 했다.\n\n창건 증서 뒷면의 낙찰 도장을 사람 얼굴보다 오래 보는 버릇이 남아, 빈 패들이 빚을 지는 숫자를 경매의 적으로 읽었다.",
             "가문·기업·공동체": "노량진냉동상단(HP08) 경매 배석에 올라 있으나 시작가 칸이 비면 개막을 선언하지 않는다.\n\n은태호의 조정 호가가 빨라도 남시윤의 상인회의가 증서를 물건 번호로 부르면 패들을 무릎 아래로 내린다.",
             "붕괴의 상처": "패들이 한꺼번에 올라가던 겨울, 초시람의 번호만 시작가 없이 하얗게 남았다.\n\n그는 그 칸에 자기 패들을 거꾸로 꽂아 낙찰을 멈추게 했고, 저온포자숙주(G09)가 통조림 상자 봉인을 흐리던 밤 세습 분필이 친위 낙찰 신호처럼 번져 있었다.",
@@ -42085,7 +42085,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K420",
           "name": "창은찬",
           "sections": {
-            "정체성·출신": "창은찬은 수서 대합실 대기표의 빈칸을 사람 수처럼 세는 전국민주노동조합총연맹(S16) 패권전 개막 징발 피난 인파 대표다.\n\n추첨 시민을 보호군 선발로 부르라는 방송이 나오면 목소리는 낮아지고 출고 칠판 앞을 몸으로 가린다.",
+            "정체성·출신": "창은찬은 수서 대합실 대기표의 빈칸을 사람 수처럼 세는 정동노동총연맹(S16) 패권전 개막 징발 피난 인파 대표다.\n\n추첨 시민을 보호군 선발로 부르라는 방송이 나오면 목소리는 낮아지고 출고 칠판 앞을 몸으로 가린다.",
             "붕괴 전 삶": "대합실 견습 때 그는 징발 쪽지와 실제 출석을 저녁마다 다른 색 끈으로 묶는 일만 했다.\n\n정유라의 공동교섭 선언이 내리기 전에는 인파를 해산시키지 않는 버릇이 생겨, 대표 이름이 인질 명부 맨 위에 오르는 표를 줄의 적으로 읽었다.",
             "가문·기업·공동체": "용산호송가(HC11) 대합실 배석에 올라 있으나 보호 징발 문장이 대기표와 한 장에 있으면 출고 스위치를 잠근다.\n\n방마빛의 창구 번호가 바뀌어도 석봄우와 맞춘 거부 문구는 칠판 하단 연필로만 남긴다.",
             "붕괴의 상처": "다섯 통일안이 패권전으로 번지던 여름, 징발 열차 출고 시각이 대기표보다 먼저 칠판에 올라왔다.\n\n창은찬은 칠판을 등지고 인파 앞줄을 고정했고, 유령배차대(G14)가 회차선 순번을 공백으로 지운 틈에 보호군 선발 명단이 대표 이름 칸을 덮고 있었다.",
@@ -42247,7 +42247,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K080",
           "name": "배서율",
           "sections": {
-            "정체성·출신": "배서율은 약봉지 인쇄 흐림을 병세보다 먼저 보는 현대자동차주식회사(S03) 가짜 약품 표본 피해자 대표다.\n\n효능을 보호비로 부르는 중개인이 문을 열면 표본 함 자물쇠를 두 번 잠근다.",
+            "정체성·출신": "배서율은 약봉지 인쇄 흐림을 병세보다 먼저 보는 양재기공주식회사(S03) 가짜 약품 표본 피해자 대표다.\n\n효능을 보호비로 부르는 중개인이 문을 열면 표본 함 자물쇠를 두 번 잠근다.",
             "붕괴 전 삶": "피해자 명부 견습 때 그는 잔여 약봉지를 이중 봉인하고 치료길드와 안전심사가 한자리에 있기 전에는 함을 열지 않았다.\n\n마곡 인증 도장이 위조되어 쓰이는 순간을 기술의 적으로 불러, 분노는 숨기되 표본 봉인만은 양보하지 않았다.",
             "가문·기업·공동체": "마곡생명가(HC03) 감정 배석에 올라 있으나 전리품 시세 문장이 명부와 한 장에 있으면 대표석을 비우지 않는다.\n\n류은비의 치료 중립에 표본을 맡겨도 정호준의 약효 검증 서명이 오기 전에는 제조 경로 칸을 공개하지 않는다.",
             "붕괴의 상처": "가짜 약이 북한산보국문 피난민에게 퍼지던 여름, 위조 도장 약봉지가 마곡 감정실 탁자에 쌓였다.\n\n배서율은 그 봉지를 피해자 대표 함으로 옮겼고, 맞춤의료잔존체(G11)가 폐기 앰플 조각을 복도로 끌고 가던 밤 인증 도장 원판이 보호국 창고 쪽지와 함께 서랍에 들어 있었다.",
@@ -42301,7 +42301,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K109",
           "name": "고은하",
           "sections": {
-            "정체성·출신": "고은하는 유언장 세 장의 필적 기울기를 공방 도장보다 먼저 보는 대한예수교장로회(S04) 세 유언 공방 서기다.\n\n어느 한 장을 진본이라 부르라는 압력이 오면 잉크가 마르기 전에 평의회 문을 잠근다.",
+            "정체성·출신": "고은하는 유언장 세 장의 필적 기울기를 공방 도장보다 먼저 보는 설교명부정(S04) 세 유언 공방 서기다.\n\n어느 한 장을 진본이라 부르라는 압력이 오면 잉크가 마르기 전에 평의회 문을 잠근다.",
             "붕괴 전 삶": "공방 서기 견습 때 그는 공방대표와 기록감사가 동시에 봉인을 풀 때만 사본을 펼쳤다.\n\n단독 열람 요청은 빈 철로 돌려보내는 버릇이 남아, 기술가문이 한 장을 고르는 순간을 서기의 적으로 읽었다.",
             "가문·기업·공동체": "구로합금가(HC07) 공방 배석에 올라 있으나 한소미의 평의회 거부권이 한 장 확정 문장과 같은 장에 있으면 철 고리를 열지 않는다.\n\n윤서린의 인준 심사가 쪽수를 당겨도 여의도 류한뫼와 잉크가 맞기 전에는 성수 금고를 열지 않는다.",
             "붕괴의 상처": "서로 다른 세 개의 임하준 유언이 성수 금고에서 발견되던 봄, 음성기록과 맞춰 양자 후계를 자동 확정하라는 쪽지가 철 사이에 끼어 있었다.\n\n고은하는 사본을 봉함 상태로 심사에 올렸고, 클린룸변이자(G08)가 금고 필터를 흐리던 순간 미리 펼친 사본의 지문이 유리 안쪽에 찍혀 있었다.",
@@ -42747,7 +42747,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K242",
           "name": "홍우찬",
           "sections": {
-            "정체성·출신": "홍우찬은 상암 송신탑 난간에서 짧은 재송신의 파형을 소문보다 빨리 가리키는 전국경제인연합회(S09) 재송신 원점 제보자다.\n\n무단 접근자가 공구함을 열려고 하면 사람부터 세운 뒤 공구를 닫는다.",
+            "정체성·출신": "홍우찬은 상암 송신탑 난간에서 짧은 재송신의 파형을 소문보다 빨리 가리키는 여의도출자연합회(S09) 재송신 원점 제보자다.\n\n무단 접근자가 공구함을 열려고 하면 사람부터 세운 뒤 공구를 닫는다.",
             "붕괴 전 삶": "추적조 견습 때 그는 방향 탐지 경로를 매일 게시판에 그리고, 탑 접근은 두 순찰의 동행이 모이기 전에는 문을 열지 않았다.\n\n편집된 총관 음성과 같은 파형을 위조와 재밍의 같은 죄로 적는 버릇이 손목 시계 밑에 남았다.",
             "가문·기업·공동체": "디지털미디어시티신탁가(HP09) 로그 신탁 배석에 이름이 있으나 얼굴 원본을 통행권과 바꾸라는 요청이 오면 집계 숫자만 넘긴다.\n\n조은우의 전파추적이 늦어도 홍우찬은 원점 쪽지를 검열 명분으로 고치지 않는다.",
             "붕괴의 상처": "용산 억류선 옆 안테나 마스트가 짧게 깜빡이던 그 밤, 같은 파형의 재송신이 의료칸 발견 시각과 겹쳤다.\n\n홍우찬은 원점 지도를 편성회의 벽에 붙였고, 전파까마귀떼(G02)가 급전선을 쪼던 순간 추적조를 검열 기관으로 바꾸라는 내부 쪽지가 난간 클립에 끼워져 있었다.",
@@ -42801,7 +42801,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K268",
           "name": "순지민",
           "sections": {
-            "정체성·출신": "순지민은 은평 산길의 이슬 자국으로 행렬 이탈 시각을 되짚는 대한불교조계종(S10) 강제등록 행렬 이탈자다.\n\n맹세와 생존이 충돌하면 오래 침묵한 뒤 줄에서 한 걸음 빠지고, 가족을 갈라놓는 철표 앞에서는 그 침묵을 깬다.",
+            "정체성·출신": "순지민은 은평 산길의 이슬 자국으로 행렬 이탈 시각을 되짚는 승가구휼정(S10) 강제등록 행렬 이탈자다.\n\n맹세와 생존이 충돌하면 오래 침묵한 뒤 줄에서 한 걸음 빠지고, 가족을 갈라놓는 철표 앞에서는 그 침묵을 깬다.",
             "붕괴 전 삶": "숙영 당번 때 그는 이탈 시각과 남은 가족 이름을 같은 쪽지에 적었다.\n\n무장 근무와 배급 근무를 한 사람이 겸하지 못하게 증언하는 버릇이 연필 자국처럼 손바닥에 남았다.",
             "가문·기업·공동체": "북한산보국문귀환회(HP05) 가족 재결합 명부 배석에 이름이 있으나 대기줄 이름을 복무 명부와 맞바꾸라는 요청이 오면 본인 동의 칸만 연다.\n\n오한결의 민병 서약과 충돌하면서도 순지민은 창고 옆문을 열지 않았다.",
             "붕괴의 상처": "가을 북한산보국문 행렬에서 암사가 급수권과 복무 재등록을 한 철표에 묶자, 순지민은 줄에서 빠져 산길로 되돌아갔다.\n\n유기견철군(G03)이 숙영 철책을 핥던 순간, 이탈을 반란으로만 적으라는 보복 수색 명단이 창고 옆문 손잡이에 매달렸다.",
@@ -42855,7 +42855,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K294",
           "name": "단건우",
           "sections": {
-            "정체성·출신": "단건우는 창동 정문 작업대에서 사고 날짜를 사람 이름보다 먼저 적는 삼성그룹(S11) 약소국 회의 북부 사절 기술자다.\n\n주거 쪽지가 기술 일지보다 위에 붙으면 분필을 꺾고, 구두 승인만으로 기지 가동을 열지 않는다.",
+            "정체성·출신": "단건우는 창동 정문 작업대에서 사고 날짜를 사람 이름보다 먼저 적는 서초전산그룹(S11) 약소국 회의 북부 사절 기술자다.\n\n주거 쪽지가 기술 일지보다 위에 붙으면 분필을 꺾고, 구두 승인만으로 기지 가동을 열지 않는다.",
             "붕괴 전 삶": "도제 시절 그는 작업 조 순환과 사고 서명을 같은 원장에 나란히 적었다.\n\n시험 연기를 요구하는 쪽지는 게시판에 그대로 남기는 버릇이 분필 가루처럼 소매에 남았다.",
             "가문·기업·공동체": "창동방호가(HC08) 방호키 배석에 이름이 있으나 차단문 원격키를 호위단에 넘기라는 표가 기술 일지와 같은 장에 있으면 사절 가방을 닫는다.\n\n이홍원의 기술시험 일정이 밀려도 단건우는 구두 승인만으로 정문을 열지 않는다.",
             "붕괴의 상처": "창동 정문 사절 가방을 싸던 그 아침, 군수 독점 조항이 수리권 초안 위에 겹쳐 놓였다.\n\n단건우는 독점 조항을 접어 가방 바닥에 넣고 상호 수리권 초안만 남겼으며, 도면유령기계단(G16)이 시험 차륜 도면을 흐리던 순간 매수된 연기 쪽지가 게시판 못을 덮고 있었다.",
@@ -42963,7 +42963,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K225",
           "name": "두봉",
           "sections": {
-            "정체성·출신": "두봉은 아크라 항만 단파 작업장에서 예비 전원 잡음을 사람 말보다 먼저 듣던 손을, 인천 송도 단파 수리창을 거쳐 상암에 옮긴 전국경제인연합회(S09) 송신 정비사다.\n\n권미래의 실무 담당자로 밤이 깊을수록 손이 정확해지고, 대충 감은 선은 그날 일을 처음부터 다시 한다.",
+            "정체성·출신": "두봉은 아크라 항만 단파 작업장에서 예비 전원 잡음을 사람 말보다 먼저 듣던 손을, 인천 송도 단파 수리창을 거쳐 상암에 옮긴 여의도출자연합회(S09) 송신 정비사다.\n\n권미래의 실무 담당자로 밤이 깊을수록 손이 정확해지고, 대충 감은 선은 그날 일을 처음부터 다시 한다.",
             "붕괴 전 삶": "탑 견습 때 그는 예비 전원을 매일 순환 시험하고, 단일 탑 단독 송신은 편성회의 승인이 오기 전에는 연결하지 않았다.\n\n아크라 방파제에서 익힌 잡음 청음이 송도 방습 테이프 냄새와 겹쳐 공구 벨트에 남았다.",
             "가문·기업·공동체": "마곡종자가(HC10) 부엌 방송 배석에 정비 당번으로 올라 있으나 방송 레시피에 재고 위치를 섞으라는 요청이 오면 예비 전원 스위치를 봉인한다.\n\n감봉과 탑 당직을 나눠도 두봉은 편성회의 없이 단독 탑을 켜지 않는다.",
             "붕괴의 상처": "임하준 실종 음성의 송신 로그에 편집 공백이 두 칸 나타나자 두봉은 예비 전원 스위치를 납으로 봉했다.\n\n유령배차대(G14)가 야간 배차 전선을 훔쳐 가던 순간, 한 강국이 예비 전원을 넘겨 달라는 거래 쪽지가 정비 창 자물쇠에 끼워져 있었다.",
@@ -43247,7 +43247,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K396",
           "name": "석오름",
           "sections": {
-            "정체성·출신": "석오름은 가락 호송 창구에서 입찰함 봉인 끈의 가닥 수를 눈으로 세는 천주교 서울대교구(S15) 호송 입찰 유찰 증인이다.\n\n비밀 장교망이 마차를 움직였다는 소문이 돌면 증인석에서 숫자와 빈칸 낙찰을 먼저 가른다.",
+            "정체성·출신": "석오름은 가락 호송 창구에서 입찰함 봉인 끈의 가닥 수를 눈으로 세는 본당인준정(S15) 호송 입찰 유찰 증인이다.\n\n비밀 장교망이 마차를 움직였다는 소문이 돌면 증인석에서 숫자와 빈칸 낙찰을 먼저 가른다.",
             "붕괴 전 삶": "배급 견습 때 그는 입찰 시각과 낙찰자를 같은 책의 왼쪽·오른쪽에 적는 일만 했다.\n\n시작가 없는 번호가 칠판에 뜨면 도장을 주머니에 넣는 버릇이 손등에 남았다.",
             "가문·기업·공동체": "용산호송가(HC11) 입찰 배석에 올라 있으나 문도윤의 호송 입찰 게시가 열리기 전에는 유찰 쪽지를 대합실 밖으로 옮기지 않는다.\n\n박태겸의 배차 조사 시각이 증인석 닻으로 찍히기 전에는 배우진의 장교망 소문을 원장에 옮기지 않는다.",
             "붕괴의 상처": "겨울의 검은 배차표가 열리자 석오름은 의료열차에서 나온 암사제 무기와 가락 호송 입찰함이 같은 색 실을 썼음을 증언했다.\n\n유령배차대(G14)가 야간 허가증 번호를 섞던 시각, 그 실 자국이 쿠데타 준비를 가리는 허가 문장처럼 읽히기 직전이었다.",
@@ -43301,7 +43301,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K421",
           "name": "초진솔",
           "sections": {
-            "정체성·출신": "초진솔은 수서 차량기지에서 계약호위대 화차 번호와 출고 문장을 한눈에 읽는 전국민주노동조합총연맹(S16) 검은 배차 열차 조사 증인이다.\n\n비밀 장교망이 남부 열차를 움직였다는 소문이 돌면 일지가 비었는지부터 확인하고 인을 덮는다.",
+            "정체성·출신": "초진솔은 수서 차량기지에서 계약호위대 화차 번호와 출고 문장을 한눈에 읽는 정동노동총연맹(S16) 검은 배차 열차 조사 증인이다.\n\n비밀 장교망이 남부 열차를 움직였다는 소문이 돌면 일지가 비었는지부터 확인하고 인을 덮는다.",
             "붕괴 전 삶": "기지 견습 때 그는 출고 시각과 명령 문장을 같은 책의 위·아래에 적는 일만 했다.\n\n과묵했으나 화차 손잡이에 낯선 색 실이 보이면 그 칸을 공백으로 두는 버릇이 생겼다.",
             "가문·기업·공동체": "신정차륜가(HC02) 조사 배석에 이름이 있으나 원초온의 기지 당직 칠판이 열리기 전에는 출고 일지를 대합실로 옮기지 않는다.\n\n박태겸의 배차 조사와 이홍원의 후계시험 부품 조작 소문을 증인석에서 가르되, 증인이 모이기 전에는 어느 쪽 이름도 원장에 올리지 않는다.",
             "붕괴의 상처": "검은 배차표가 수서 쪽 출고 홈에 떨어지자 초진솔은 의료열차 무기에 쓰인 것과 같은 색 실이 수서 출고 화차 손잡이에도 남아 있음을 증언했다.\n\n감시궤도군(G17)이 회차선 카메라를 훑던 시각, 그 실이 사후 확인을 가리는 허가 문장처럼 보이기 직전이었다.",
@@ -43463,7 +43463,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K251",
           "name": "두감",
           "sections": {
-            "정체성·출신": "두감은 은평 숙영 연통을 두 번 두드리는 손버릇으로 불을 살리는 대한불교조계종(S10) 숙영 난로 정비사다.\n\n어머니 수첩에는 연통 부품 이름이 월로프어 음절과 한글이 나란히 적혀 있고, 그는 그 음절로 고장난 댐퍼를 부른 뒤에야 한국어 공구 이름을 댄다.",
+            "정체성·출신": "두감은 은평 숙영 연통을 두 번 두드리는 손버릇으로 불을 살리는 승가구휼정(S10) 숙영 난로 정비사다.\n\n어머니 수첩에는 연통 부품 이름이 월로프어 음절과 한글이 나란히 적혀 있고, 그는 그 음절로 고장난 댐퍼를 부른 뒤에야 한국어 공구 이름을 댄다.",
             "붕괴 전 삶": "숙영 견습 때 그는 난로 점검표를 저녁 배급 전에 읽는 일만 했다.\n\n찬 재를 보면 말이 줄고, 연통을 막은 사람을 효율 타령보다 먼저 나무라는 버릇이 목구멍에 남았다.",
             "가문·기업·공동체": "북한산보국문귀환회(HP05) 정비 배석에 이름이 있으나 백온의 공개 배급 시각이 오기 전에는 난로를 민병 전용으로 돌리지 않는다.\n\n오한결의 연료고 당직과 공구를 나누고 황세린의 배급 창고 옆 난로를 맡되, 가족 재결합 명부를 복무 명부와 맞바꾸라는 쪽지는 받지 않는다.",
             "붕괴의 상처": "난방 연료가 사흘치로 줄자 민병 일부가 창고 옆문을 열자고 속삭이기 시작했고, 두감은 연통 사고 서명을 반장과 정비사가 함께 쓰게 막아 세웠다.\n\n전파까마귀떼(G02)가 숙영 안테나 줄을 뜯던 밤, 정비 부품이 민병 몫으로만 열릴 뻔했다.",
@@ -43517,7 +43517,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K277",
           "name": "두모",
           "sections": {
-            "정체성·출신": "두모는 창동 정비 창에서 베어링 스탬프의 프랑스어 숫자 음정을 흥얼거리며 피치를 읽는 삼성그룹(S11) 차륜 정비사다.\n\n아버지는 하청 창에서 게이지 스탬프를 한국어 쪽지에 옮기는 일을 했고, 두모는 그 음정으로 나사를 센 뒤에야 송하율의 도제 일과를 손에 받는다.",
+            "정체성·출신": "두모는 창동 정비 창에서 베어링 스탬프의 프랑스어 숫자 음정을 흥얼거리며 피치를 읽는 서초전산그룹(S11) 차륜 정비사다.\n\n아버지는 하청 창에서 게이지 스탬프를 한국어 쪽지에 옮기는 일을 했고, 두모는 그 음정으로 나사를 센 뒤에야 송하율의 도제 일과를 손에 받는다.",
             "붕괴 전 삶": "도제 초년 그는 정비 일지를 원로 게시판에 직접 붙이는 일만 했다.\n\n남의 공구를 빼돌리는 일을 시험 부정과 같은 죄로 보고, 결함 표본을 자르지 않고 넘기는 반장을 참지 못했다.",
             "가문·기업·공동체": "창동방호가(HC08) 현장 배석에 이름이 있으나 이홍원의 공개 기술시험 차륜이 우선 줄에 오기 전에는 가문 승계용 차륜을 손보지 않는다.\n\n조우찬의 작업 조에 순환 배치되더라도 차단문 원격키를 호위단에 넘기라는 쪽지는 공구함 밖으로 나가지 못한다.",
             "붕괴의 상처": "유력 후계자의 시험 차륜에서 의도적으로 깎인 베어링이 나오자 두모는 자기 공구함을 봉인했다.\n\n폐선보수열차군(G18)이 유치선 폐차에서 같은 로트 철재를 긁어 가던 시각, 숨은 결함이 자기 공구 자국으로 남아 주거대표에게 기지를 내주는 명분이 될 뻔했다.",
@@ -43639,7 +43639,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K081",
           "name": "류하늘",
           "sections": {
-            "정체성·출신": "류하늘은 마곡 비상위원회 서고 램프가 꺼진 시각을 손목 초침으로 맞추는 현대자동차주식회사(S03) 대정전 비상권한 서기다.\n\n통신 공백을 구술로 메우라는 쪽지가 오면 반환 칸만 붉은 줄로 표시한 채 펜을 내려놓는다.",
+            "정체성·출신": "류하늘은 마곡 비상위원회 서고 램프가 꺼진 시각을 손목 초침으로 맞추는 양재기공주식회사(S03) 대정전 비상권한 서기다.\n\n통신 공백을 구술로 메우라는 쪽지가 오면 반환 칸만 붉은 줄로 표시한 채 펜을 내려놓는다.",
             "붕괴 전 삶": "서고 조수 시절 그는 권한 행사 시각과 반환 시각을 쪽지 왼쪽·오른쪽에 분만 나눠 적었다.\n\n비상도장을 하룻밤 넘기는 관행을 일지의 적으로 부르며, 보관 부수가 하나라도 비면 열람창을 스스로 잠그는 손이 남았다.",
             "가문·기업·공동체": "마곡생명가(HC03) 비상 배석에 이름이 있으나 삼원 심의 함이 닫히기 전에는 연구동 단독 개방 문장을 쓰지 않는다.\n\n정호준의 안전심사 거부권이 살아있는 칸에만 반환 조항을 올리고, 윤서린의 인준이 반환 시점 칸을 비우면 응하지 않는다.",
             "붕괴의 상처": "붕괴 0년 광역 전력이 멈추던 밤, 군사 감독이 연구동을 비상시설로 재지정하려는 통첩이 먼저 도착했다.\n\n류하늘은 권한 행사와 반환 시각을 분 단위로 세 부에 나눠 적었고, 클린룸변이자(G08)가 방풍실 필터를 헐던 순간 반환 기록 한 부가 장교 하위 직 양식처럼 읽히기 직전이었다.",
@@ -43693,7 +43693,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K110",
           "name": "배나경",
           "sections": {
-            "정체성·출신": "배나경은 성수 협상장 펌프 압력계의 바늘로 만료 시각을 읽는 대한예수교장로회(S04) 급수계약 만료 협상 서기다.\n\n총관 빈 서명란이 보이면 펜을 놓고, 대행 날인을 연장으로 고쳐 쓴 문구만 지우개로 밀어낸다.",
+            "정체성·출신": "배나경은 성수 협상장 펌프 압력계의 바늘로 만료 시각을 읽는 설교명부정(S04) 급수계약 만료 협상 서기다.\n\n총관 빈 서명란이 보이면 펜을 놓고, 대행 날인을 연장으로 고쳐 쓴 문구만 지우개로 밀어낸다.",
             "붕괴 전 삶": "공방 서기 견습 때 그는 뚝섬 사본과 여의도 사본의 잉크 색을 다르게 두고 한쪽만 날인된 연장은 철하지 않았다.\n\n펌프 압력이 계약 문구보다 먼저 떨어지는 밤을 만료의 증거로 부르며, 사람 말보다 계기판을 믿는 손이 굳었다.",
             "가문·기업·공동체": "구로합금가(HC07) 협상 배석에 올라 있으나 공방평의회 공개 원장이 열리기 전에는 강국 개입 문장을 만료 원장의 본문으로 받지 않는다.\n\n한소미의 공동통치안이 서명란에 오르기 전에 배초담과 만료 사본만 교환하고, 실종된 임하준의 보증인 칸은 공란으로 지킨다.",
             "붕괴의 상처": "세 번째 급수계약이 총관 실종과 함께 끝나던 아침, 보호정부 파견의 대행 날인이 성수 탁자에 미끄러져 들어왔다.\n\n배나경은 보증인 칸을 봉인 끈으로 묶고 날인을 거부했으며, 하수너구리족(G04)이 성수 측구를 파고들던 순간 빈 서명란이 동의서로 읽히기 직전이었다.",
@@ -43855,7 +43855,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K243",
           "name": "추우찬",
           "sections": {
-            "정체성·출신": "추우찬은 상암 중계실 지연 버퍼의 초 단위 눈금으로 열한 자리 발언을 걸러 내는 전국경제인연합회(S09) 회의 중계 기록원이다.\n\n분할 복속 문장이 한 호흡에 떨어지면 송출 키를 손바닥으로 덮고, 공동교섭 문안만 원장 왼쪽에 옮긴다.",
+            "정체성·출신": "추우찬은 상암 중계실 지연 버퍼의 초 단위 눈금으로 열한 자리 발언을 걸러 내는 여의도출자연합회(S09) 회의 중계 기록원이다.\n\n분할 복속 문장이 한 호흡에 떨어지면 송출 키를 손바닥으로 덮고, 공동교섭 문안만 원장 왼쪽에 옮긴다.",
             "붕괴 전 삶": "기록 견습 때 그는 독립 증언이 둘 모이기 전에는 필사 잉크를 찍지 않았다.\n\n보류 사유는 저장소 문 안쪽이 아니라 당일 중계 일지의 난외에만 남기는 버릇이 생겨, 조작 음성을 입에도 올리지 않는 손이 굳었다.",
             "가문·기업·공동체": "여의도전산가(HC01) 기록 배석에 이름이 있으나 강국별 분할 복속 발언을 공식 채널 대기열에 올리지 않는다.\n\n국두봉의 검증 원장이 열리기 전에는 송신 램프를 켜지 않고, 정유라의 공동헌장 초안이 중계 순번에 오르기 전에는 섭도윤의 전령 사본만 줄 번호로 받는다.",
             "붕괴의 상처": "둘째 해 봄 열한 자리 회의가 열리자 분할 복속 발언의 음성 조각이 공식 대기열에 들어왔다.\n\n추우찬은 그 조각을 지연 버퍼에 가두고 공동교섭 문안만 원장에 남겼으며, 전파까마귀떼(G02)가 안테나 끝을 쪼아 잡음을 키우던 밤 조작 음성이 기록원 필적처럼 잘릴 뻔했다.",
@@ -43909,7 +43909,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K269",
           "name": "홍은서",
           "sections": {
-            "정체성·출신": "홍은서는 북한산보국문 숙영 난로 옆에서 구호 상자가 관작 칸으로 바뀌던 겨울을 계산하는 대한불교조계종(S10) 공신 보상 구호 당사자다.\n\n빈 자리를 효율로 메우라는 방송을 끄고, 아이들이 잠든 뒤에는 난로 불창부터 한 칸 내린다.",
+            "정체성·출신": "홍은서는 북한산보국문 숙영 난로 옆에서 구호 상자가 관작 칸으로 바뀌던 겨울을 계산하는 승가구휼정(S10) 공신 보상 구호 당사자다.\n\n빈 자리를 효율로 메우라는 방송을 끄고, 아이들이 잠든 뒤에는 난로 불창부터 한 칸 내린다.",
             "붕괴 전 삶": "연맹 배급 견습 때 그는 보상 사본과 실제 배급표를 저녁마다 대조했다.\n\n세습 추가는 본인 출석 없이 적지 못하게 막는 버릇이 생겨, 창건 보상이 친위 창고로만 흐르는 쪽지를 숙영의 적으로 읽었다.",
             "가문·기업·공동체": "북한산보국문귀환회(HP05) 구호 배석에 올라 있으나 관직과 배급권을 한 문장으로 묶은 청구서는 숙영 원장에 올리지 않는다.\n\n황세린의 공개 배급표가 저녁 대조를 통과하기 전에는 란지호의 서울역 명부 빈줄만 같은 겨울의 사고로 보고, 백온의 피난처 맹세를 구호 원장 첫 줄에 둔다.",
             "붕괴의 상처": "창세 구술의 공신의 겨울에 공신들이 관직과 배급권을 한꺼번에 요구하자 홍은서의 구호 상자만 빈 칸으로 남았다.\n\n유령배차대(G14)가 숙영 복도 순번을 공백으로 지운 틈에 아이 이름 칸이 관작 담보 숫자로 바뀐 사본이 난로 앞에 떨어졌다.",
@@ -43963,7 +43963,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K295",
           "name": "순하준",
           "sections": {
-            "정체성·출신": "순하준은 창동 공개 저울에서 수명 다한 차륜의 무게를 속이는 출고를 선로 깎임과 같은 사고로 읽는 삼성그룹(S11) 둘째 급수협약 차륜 교환 증인이다.\n\n가문 전용 칸으로 빠지는 짐을 두 번 세고, 시세 쪽지보다 저울 눈금을 앞에 둔다.",
+            "정체성·출신": "순하준은 창동 공개 저울에서 수명 다한 차륜의 무게를 속이는 출고를 선로 깎임과 같은 사고로 읽는 서초전산그룹(S11) 둘째 급수협약 차륜 교환 증인이다.\n\n가문 전용 칸으로 빠지는 짐을 두 번 세고, 시세 쪽지보다 저울 눈금을 앞에 둔다.",
             "붕괴 전 삶": "차륜방 증인 견습 때 그는 입고 중량을 두 증인이 보게 하고 가문 문장이 찍힌 주문서는 연공회의 인준 전 출고를 막았다.\n\n보증인이 사라진 교환을 군수 전용 근거로 인용하는 손을 저울의 적으로 부르며, 제동 상자 도장을 규격 칸에만 남기는 버릇이 손등에 붙었다.",
             "가문·기업·공동체": "창동방호가(HC08) 교환 배석에 올라 있으나 창동 표준 재고 원장이 열리기 전에는 선로 가문 볼모 문장을 차륜 교환 장부의 본문으로 받지 않는다.\n\n황노을의 회수 저울에 협약 중량을 겹치기 전에는 추한결의 용산 환적 증언과 같은 상자만 가리키고, 임하준이 보증한 부품 칸의 창동 쪽 출고를 증언한다.",
             "붕괴의 상처": "창세 구술의 둘째 급수협약이 맺어질 때 순하준은 수명이 다한 차륜과 제동 상자를 창동 저울에 올리고 규격 도장을 확인했다.\n\n폐선보수열차군(G18)이 유치선 커플링을 긁던 밤, 보증인 실종 뒤의 증언이 군수 전용 출고의 근거처럼 읽히기 직전이었다.",
@@ -44463,7 +44463,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K082",
           "name": "엄도한",
           "sections": {
-            "정체성·출신": "엄도한은 마곡 호송 홈에서 인질처럼 실린 연구자의 손목 표를 보면 열차 문을 닫는 현대자동차주식회사(S03) 연구자 파견 호송책이다.\n\n보호를 명분으로 한 동행 장교를 손님으로 부르지 않으며, 경로보다 사람의 안전을 먼저 센다.",
+            "정체성·출신": "엄도한은 마곡 호송 홈에서 인질처럼 실린 연구자의 손목 표를 보면 열차 문을 닫는 양재기공주식회사(S03) 연구자 파견 호송책이다.\n\n보호를 명분으로 한 동행 장교를 손님으로 부르지 않으며, 경로보다 사람의 안전을 먼저 센다.",
             "붕괴 전 삶": "호송 조수 시절 그는 안전심사의 거부권 칸이 살아있는 명단에만 파견을 올렸다.\n\n군사 호위가 붙은 칸은 빈칸으로 되돌리는 버릇이 생겨, 기술자가 국가 소유물로 오가는 표를 현장의 적으로 읽었다.",
             "가문·기업·공동체": "북한산보국문기록가(HC05) 파견 배석에 올라 있으나 정호준의 후견이 경로 조건으로 오기 전에는 후계 인준과 한 거래로 묶인 호송 명령을 받지 않는다.\n\n진마루의 의무호송 반과 열차를 나눠도 손목 표가 보이면 문을 잠근다.",
             "붕괴의 상처": "세 번째 급수계약 국면에서 뚝섬 수질 검사망이 멈추던 새벽, 연구자 파견과 후계 인준을 한 거래로 묶으려는 호송 명령이 떨어졌다.\n\n엄도한은 그 명령을 보류함에 밀어 넣고 임초원을 기술 후계가 아니라 파견 연구자로만 칸에 태웠으며, 클린룸변이자(G08)가 검사망 필터를 흐리던 순간 장교 동행 칸이 빈칸 위에 겹쳐 인쇄되고 있었다.",
@@ -44517,7 +44517,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K111",
           "name": "류다인",
           "sections": {
-            "정체성·출신": "류다인은 성수 공방 조립 라인에서 패킹의 단내를 규격 도장보다 먼저 맡는 대한예수교장로회(S04) 가짜 정수 부품 피해자 직공이다.\n\n불량을 수습 비용으로 넘기는 중개인이 손을 내밀면 회수 상자 지퍼만 닫아 응답한다.",
+            "정체성·출신": "류다인은 성수 공방 조립 라인에서 패킹의 단내를 규격 도장보다 먼저 맡는 설교명부정(S04) 가짜 정수 부품 피해자 직공이다.\n\n불량을 수습 비용으로 넘기는 중개인이 손을 내밀면 회수 상자 지퍼만 닫아 응답한다.",
             "붕괴 전 삶": "직공 견습 때 그는 회수 부품과 피해 명부를 같은 함에 넣고 골목펌프 정비사와 평의회 전령이 함께 오기 전에는 함을 열지 않았다.\n\n손은 느려도 회수 상자는 봉인하는 버릇이 생겨, 위조 도장이 공동규격의 방패가 되는 표를 라인의 적으로 읽었다.",
             "가문·기업·공동체": "금천구청중기가(HC12) 피해자 배석에 올라 있으나 한소미에게 출고 중지를 요구하기 전에는 조립 벨을 다시 울리지 않는다.\n\n허겸의 골목펌프 일지에 단내가 적히기 전에는 감정 칸을 열지 않는다.",
             "붕괴의 상처": "여름의 탁수와 가짜 약이 겹치던 폭우 뒤, 불량 패킹이 정수 공정에 섞이자 류다인은 성수 공방의 피해자 직공 명부를 들고 조립 라인을 멈췄다.\n\n전해질화상군(G07)이 세척조 가장자리를 희게 태우던 순간, 명부에 없는 공방 이름이 회수 함 뚜껑에 미리 찍혀 있었다.",
@@ -44625,7 +44625,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K379",
           "name": "천나솔",
           "sections": {
-            "정체성·출신": "천나솔은 가락 경매대에서 저울 눈의 흔들림을 호가 침묵보다 먼저 읽는 천주교 서울대교구(S15) 저울 정비사다.\n\n어머니는 다카르에서 온 냉동선이 가락 하역에서 한 시즌을 넘길 때 청과 가판을 열었고, 빈 상자 무게를 손바닥에 가르친 뒤 한국어 호가를 먼저 외우게 했다.\n\n시작가 칠판을 고치라는 쪽지는 공구함에서 받지 않는다.",
+            "정체성·출신": "천나솔은 가락 경매대에서 저울 눈의 흔들림을 호가 침묵보다 먼저 읽는 본당인준정(S15) 저울 정비사다.\n\n어머니는 다카르에서 온 냉동선이 가락 하역에서 한 시즌을 넘길 때 청과 가판을 열었고, 빈 상자 무게를 손바닥에 가르친 뒤 한국어 호가를 먼저 외우게 했다.\n\n시작가 칠판을 고치라는 쪽지는 공구함에서 받지 않는다.",
             "붕괴 전 삶": "정비 견습 때 그는 시작가와 낙찰자를 큰 칠판에 쓰되 군량 입찰은 남윤경의 봉인과 자신의 정비 서명이 함께 있을 때만 저울을 열었다.\n\n빈 상자를 거짓말보다 미워하는 버릇이 생겨, 후계 인정 투표처럼 쓰이는 호가가 눈금을 사는 쪽지를 경매대의 적으로 보았다.",
             "가문·기업·공동체": "노량진냉동상단(HP08) 정비 배석에 올라 있으나 은태호의 경매가 현장에서 열리기 전에는 저울 봉인을 풀지 않는다.\n\n동미온의 입고 무게가 같은 눈에 맞기 전에는 공구함 쪽지를 받지 않는다.",
             "붕괴의 상처": "흉작 소문만으로 청과동이 폭등하던 아침, 내부 상인이 낙찰 전 창고 열쇠를 거둬들이고 저울 봉인이 한 줄 풀어져 있었다.\n\n천나솔은 저울 추를 손으로 눌러 호가를 멈추었으며, 야간분류군(G13)이 냉동 라벨을 섞던 밤 위조 정비 서명이 시작가 칠판 모서리에 연필로 따라 적혀 있었다.",
@@ -44909,7 +44909,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K083",
           "name": "여다솜",
           "sections": {
-            "정체성·출신": "여다솜은 마곡 회의장 물통 수위가 한 눈금 줄면 펜을 눕히는 현대자동차주식회사(S03) 약소국 회의 기술공유 서기이다.\n\n지식을 보호비 조항 뒤에 숨기는 초안이 오면 그는 철 끈을 풀지 않은 채 자리를 뜬다.",
+            "정체성·출신": "여다솜은 마곡 회의장 물통 수위가 한 눈금 줄면 펜을 눕히는 양재기공주식회사(S03) 약소국 회의 기술공유 서기이다.\n\n지식을 보호비 조항 뒤에 숨기는 초안이 오면 그는 철 끈을 풀지 않은 채 자리를 뜬다.",
             "붕괴 전 삶": "서고 조수 때 그는 인증 사본의 쪽수와 인질 대체 칸을 같은 줄에 대조하는 일만 했다.\n\n약소국 대표가 열람하기 전에 강국 자리에 올리는 순서를 모욕으로 불렀다.",
             "가문·기업·공동체": "마곡생명가(HC03) 회의 배석에 이름이 있으나 공동기술원 초안의 검증 자료 칸이 비면 철하지 않는다.\n\n정호준의 초안을 옮기더라도 강국 급수계약 부록으로 떨어뜨리는 문장은 난외에만 적어 본문에서 지운다.",
             "붕괴의 상처": "둘째 해 봄 열한 자리 회의에서 세 강국 계약이 쏟아지자 여다솜은 기술공유 사본을 약소국 테이블에만 펼쳤다.\n\n전파까마귀떼(G02)가 회의장 무전을 쪼던 순간, 연구자 명단이 분할 복속 할당표처럼 읽히기 직전이었다.",
@@ -44963,7 +44963,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K112",
           "name": "엄미래",
           "sections": {
-            "정체성·출신": "엄미래는 성수 환승 대합실에서 봉함 끈 매듭을 세 번 당겨 보고 발걸음을 떼는 대한예수교장로회(S04) 유언 증거 호송 전령이다.\n\n진본을 먼저 방송하라는 쪽지는 가방 겉면에 꽂히지 못한다.",
+            "정체성·출신": "엄미래는 성수 환승 대합실에서 봉함 끈 매듭을 세 번 당겨 보고 발걸음을 떼는 설교명부정(S04) 유언 증거 호송 전령이다.\n\n진본을 먼저 방송하라는 쪽지는 가방 겉면에 꽂히지 못한다.",
             "붕괴 전 삶": "공방 심부름 때 그는 유언 사본과 음성 원본의 무게를 같은 저울에 올리는 일만 했다.\n\n송신 검증의 도착 확인이 오기 전에 봉함을 푸는 손을 자기 손등으로 때리는 버릇이 남았다.",
             "가문·기업·공동체": "금천구청중기가(HC12) 증거 호송 당번에 올라 있으나 공방평의회와 기록감사의 추첨 순번이 아니면 성수발 가방을 메지 않는다.\n\n표산하의 평의회 전령로를 빌려도 임초원의 정비일지 조각은 같은 가방에 넣지 않기로 지킨다.",
             "붕괴의 상처": "봄의 세 유언이 열리던 날 엄미래는 성수 사본을 서울역과 상암으로 쪼개지 않고 한 심사석으로만 나르다 대합실에서 가방 끈이 한 번 느슨해졌다.\n\n침수곰팡이호흡단(G10)이 환승 천장에서 포자를 내리던 순간, 한 장만 남은 사본이 폭동의 불씨처럼 읽힐 뻔했다.",
@@ -45071,7 +45071,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K404",
           "name": "수늘결",
           "sections": {
-            "정체성·출신": "수늘결은 수서 기지 피트에서 시험 부품의 이빨 자국을 사람 이름처럼 외우는 전국민주노동조합총연맹(S16) 정비사이자 은보람의 실무 담당자이다.\n\n국적 칸이 빈 가족 쪽지는 공구함 맨 아래 칸에 접혀 있고, 추천은 숙련 점수 칠판으로만 받는다.",
+            "정체성·출신": "수늘결은 수서 기지 피트에서 시험 부품의 이빨 자국을 사람 이름처럼 외우는 정동노동총연맹(S16) 정비사이자 은보람의 실무 담당자이다.\n\n국적 칸이 빈 가족 쪽지는 공구함 맨 아래 칸에 접혀 있고, 추천은 숙련 점수 칠판으로만 받는다.",
             "붕괴 전 삶": "피난 회랑의 임시 정비 텐트에서 그는 볼트 머리의 마모로 교대 성실을 읽는 일만 했다.\n\n혈연 청탁 쪽지를 공구함에서 받지 않는 규칙은 그때 텐트 기둥에 못으로 박혀 수서까지 따라왔다.",
             "가문·기업·공동체": "용산호송가(HC11) 야간 회차 정비 당번에 올라 있으나 추천 사유와 시험 점수가 같은 게시판에 붙기 전에는 출고 스위치를 잠근다.\n\n은보람의 추천 규칙을 현장에서 받치되, 기업 쪽 독점 추천 명단은 시민추첨 추인 없이 받지 않는다.",
             "붕괴의 상처": "마곡 검사반이 수서 피트 숙련자를 이름으로 먼저 부르자 추천위원 쪽지가 공구함 뚜껑 밑으로 들어왔고, 수늘결은 시험 창 셔터를 내려 출고 스위치를 잠갔다.\n\n폐선보수열차군(G18)이 유치선에서 스스로 움직이던 밤, 정비창이 기술자 인질 창구처럼 읽히기 직전이었다.",
@@ -45409,7 +45409,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K084",
           "name": "기서진",
           "sections": {
-            "정체성·출신": "기서진은 마곡 서고 하차장에서 표본 상자 온도계보다 호송 깃발 색을 먼저 확인하는 현대자동차주식회사(S03) 비군사 공동조사 전령이다.\n\n조사단을 호위단으로 바꾸라는 쪽지가 상자 끈에 끼면 그는 쪽지를 온도계 심 옆에 꽂아 출발을 미룬다.",
+            "정체성·출신": "기서진은 마곡 서고 하차장에서 표본 상자 온도계보다 호송 깃발 색을 먼저 확인하는 양재기공주식회사(S03) 비군사 공동조사 전령이다.\n\n조사단을 호위단으로 바꾸라는 쪽지가 상자 끈에 끼면 그는 쪽지를 온도계 심 옆에 꽂아 출발을 미룬다.",
             "붕괴 전 삶": "전령 견습 때 그는 치료길드·안전심사·송신 검증의 날인 순서를 손등에 점 셋으로 외웠다.\n\n군사 호위 칸이 적힌 경로는 출발 도장 없이 되돌려 보내는 손이 굳어, 압수 위험이 있는 시각표는 주머니에 넣지 않았다.",
             "가문·기업·공동체": "마곡생명가(HC03) 호송 당번에 이름이 있으나 세 날인이 상자 겉면에 모이기 전에는 제기동·상암 동시 경로를 열지 않는다.\n\n류은비의 의료헌장 조항이 늦어도 호위 칸이 적힌 쪽지는 서고 창구로 되돌려 보낸다.",
             "붕괴의 상처": "탁수와 가짜 약이 같은 주 속보에 오르던 여름, 마곡 표본을 한 강국 보호 사건 철에 넣으라는 무전이 하차장을 울렸다.\n\n기서진은 상자를 제기동 방향과 상암 방향으로 동시에 밀어 냈고, 전파까마귀떼(G02)가 호송 주파수를 쪼던 구간에서 압수 꼬리표가 깃발 깃대에 감겼다.",
@@ -45463,7 +45463,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K113",
           "name": "여민우",
           "sections": {
-            "정체성·출신": "여민우는 성수 펌프실 바닥의 물때 무늬로 일지 떨어진 시각을 가늠하는 대한예수교장로회(S04) 암호화 정비일지 발견 증인이다.\n\n양자만 읽을 수 있다는 소문을 증거 없이 옮기라는 속삭임이 오면 그는 암호 칸이 빈 페이지를 덮개로 닫는다.",
+            "정체성·출신": "여민우는 성수 펌프실 바닥의 물때 무늬로 일지 떨어진 시각을 가늠하는 설교명부정(S04) 암호화 정비일지 발견 증인이다.\n\n양자만 읽을 수 있다는 소문을 증거 없이 옮기라는 속삭임이 오면 그는 암호 칸이 빈 페이지를 덮개로 닫는다.",
             "붕괴 전 삶": "야간 당직 조수 때 그는 발견 장소와 봉인 시각을 조립 쪽과 발전 쪽에 같은 분으로 적는 연습만 반복했다.\n\n단독 해독 시연을 후계 시험처럼 여는 버릇을 공방의 적으로 불러, 증인 서명을 자랑 칸에 쓰지 않았다.",
             "가문·기업·공동체": "디지털미디어시티신탁가(HP09) 증인 배석에 이름이 있으나 평의회 거부권이 살아있는 자리 밖에서는 해독 시연 칸을 열지 않는다.\n\n임초원의 해독 권한이 인정되어도 독점 열람 문장은 신탁 원장에 옮기지 않는다.",
             "붕괴의 상처": "세 번째 급수계약 개막 직후 실종 총관의 암호화 정비일지가 펌프실 바닥에 떨어져 있었다.\n\n여민우는 봉인 시각을 두 원장에 동시에 남겼고, 클린룸변이자(G08)가 필터 룸 틈으로 하얗게 번지던 순간 미리 옮겨 둔 듯한 먼지 자국이 일지 모서리에 남아 있었다.",
@@ -45571,7 +45571,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K114",
           "name": "기하겸",
           "sections": {
-            "정체성·출신": "기하겸은 성동 교량 입구에서 장교 깃발을 구원으로 부르는 전령을 되돌려 보내는 대한예수교장로회(S04) 보호군 파견 거부 민병 조장이다.\n\n펌프수비 야간 교대를 외부 지휘에 넘기라는 쪽지가 바리케이드에 꽂히면 그는 쪽지를 뽑은 채 차단 판을 내리지 않는다.",
+            "정체성·출신": "기하겸은 성동 교량 입구에서 장교 깃발을 구원으로 부르는 전령을 되돌려 보내는 설교명부정(S04) 보호군 파견 거부 민병 조장이다.\n\n펌프수비 야간 교대를 외부 지휘에 넘기라는 쪽지가 바리케이드에 꽂히면 그는 쪽지를 뽑은 채 차단 판을 내리지 않는다.",
             "붕괴 전 삶": "민병 당번 때 그는 외부 장교의 충전·숙영 칸을 평의회 거부 도장이 찍힌 줄에서만 막았다.\n\n낮 추첨 없이 동원 명단을 부르는 버릇을 반란 누명의 씨앗으로 여겨, 시민대표 추첨 공이 구르지 않으면 교대 호명을 시작하지 않았다.",
             "가문·기업·공동체": "한강진교량공회(HP07) 수비 배석에 이름이 있으나 김보람의 펌프수비 지휘 시각과 민병 교대가 겹치기 전에는 교량 잠금을 외부 당번에 넘기지 않는다.\n\n류가온의 암사 호송 통과 요청이 와도 기록만 남기고 행렬은 되돌린다.",
             "붕괴의 상처": "세 번째 급수계약 국면에서 배우진이 임하준 실종을 통치 실패로 규정하고 보호군 파견안을 내밀던 아침, 성동 교량 너머로 숙영 텐트 말뚝이 먼저 실려 왔다.\n\n기하겸은 민병을 내부 전용으로 잠갔고, 범람멧돼지군(G01)이 교량 하부 진흙을 파헤치던 순간 선제 사격 꼬리표가 바리케이드 못 머리에 걸려 있었다.",
@@ -45679,7 +45679,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "id": "K064",
           "name": "장예린",
           "sections": {
-            "정체성·출신": "장예린은 마곡 채수대에서 시약 로트 필적으로 검사 주기를 지키는 현대자동차주식회사(S03) 서부 수질검사망 운영관이다.\n\n외곽 우물 일지를 들고 게이트를 통과할 때 국적 칸이 비어 있었고, 평의회는 로트 필적 대조로만 당번을 열어 그녀는 이름보다 로트 번호를 먼저 쓴다.",
+            "정체성·출신": "장예린은 마곡 채수대에서 시약 로트 필적으로 검사 주기를 지키는 양재기공주식회사(S03) 서부 수질검사망 운영관이다.\n\n외곽 우물 일지를 들고 게이트를 통과할 때 국적 칸이 비어 있었고, 평의회는 로트 필적 대조로만 당번을 열어 그녀는 이름보다 로트 번호를 먼저 쓴다.",
             "붕괴 전 삶": "채수 조수 때 그녀는 채수 시각과 시약 로트를 방송 가능한 원장에 남기고, 정치 일정에 맞춰 주기를 줄이라는 쪽지를 찢어 버리는 손을 익혔다.\n\n한 번의 합격 판정으로 관로를 믿으라는 지시를 검사 사고로 불러, 기준 초과가 나오면 송수 중단 권고를 평의회에 즉시 올렸다.",
             "가문·기업·공동체": "뚝섬열원가(HC04) 관로 계측 배석에 이름이 있으나 박누리의 영등포 표본과 교차검증 숫자가 맞기 전에는 서부 관로 합격 칸을 열지 않는다.\n\n한소미의 펌프 공방이 검사 센서를 고치는 동안에도 정치 쪽지는 원장에 옮기지 않는다.",
             "붕괴의 상처": "폭우 뒤 뚝섬 검사망 램프가 꺼지자 장예린은 마곡 단독 채수로 서부 관로 중단 권고를 올렸고 한재목의 공급 유지 지시와 같은 시각에 책상 위에 놓였다.\n\n하수너구리족(G04)이 채수대 맨홀 뚜껑을 들어 올리던 순간, 중단 권고를 숨기라는 쪽지가 시약 상자 틈에 끼어 있었다.",
@@ -45863,7 +45863,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "봄 해빙이 방화기지 서쪽 기준점을 밀어 올리면 송별하는 동판 자와 별 그림자를 함께 펴서 높이를 다시 잰다.\n\n현대자동차주식회사의 연구심사 측량관인 그는 안전심사표의 수치가 현장 표석과 맞지 않으면 인증 도장을 눕혀 둔다.\n\n조선 천문·역법 기술 관료가 관측과 계산을 나누던 직임 고려 금속 장인 가계가 합금 눈금을 물리던 손기술 1920년대 측량 기술자가 삼각망 야장에 남긴 폐합 오차를 한 업무로 엮었다.\n\n이름 송별하와 식별자 K413은 연구 결과가 뒤집혀도 바뀌지 않는다.",
+            "정체성·출신": "봄 해빙이 방화기지 서쪽 기준점을 밀어 올리면 송별하는 동판 자와 별 그림자를 함께 펴서 높이를 다시 잰다.\n\n양재기공주식회사의 연구심사 측량관인 그는 안전심사표의 수치가 현장 표석과 맞지 않으면 인증 도장을 눕혀 둔다.\n\n조선 천문·역법 기술 관료가 관측과 계산을 나누던 직임 고려 금속 장인 가계가 합금 눈금을 물리던 손기술 1920년대 측량 기술자가 삼각망 야장에 남긴 폐합 오차를 한 업무로 엮었다.\n\n이름 송별하와 식별자 K413은 연구 결과가 뒤집혀도 바뀌지 않는다.",
             "붕괴 전 삶": "측량 견습 시절 그는 항공 접근로 기억과 방화기지 배수 구배를 같은 좌표망에 올리되 추정값에는 붉은 테를 둘렀다.\n\n해와 별의 고도를 달력 계산과 대조하는 관청식 검산표를 익혔고, 근대 야장처럼 관측자와 계산자의 서명을 따로 받았다.\n\n집안 공방에서 물려받은 청동 기준자는 온도에 따라 길이가 달라져 매번 석제 표준과 맞춰야 했다.\n\n누구의 권위도 오차를 줄이지 못한다는 원칙이 공동 기술원장을 세우려는 그의 야망이 됐다.",
             "가문·기업·공동체": "디지털미디어시티신탁가(HP09)는 집계된 계측 로그를 보관하는 조건으로 심사석 한 칸을 맡겼다.\n\n송별하는 최은재에게 원시 좌표 대신 폐합표와 보정 이력을 넘기고, 얼굴 기록이나 주민 이동선을 기술 인증과 바꾸지 않았다.\n\n고려식 주조 공방을 본뜬 가족 작업대는 닳은 동판 눈금을 다시 새기지만 합격 판정에는 손대지 못한다.\n\n주민대표 김도하가 표석 위치를 공개하라고 요구하면 그는 피난 통로를 가리는 범위만 접고 오차표는 그대로 게시한다.",
             "붕괴의 상처": "대정전 뒤 첫 냉동 압축기 호송에서 하차장 기준점 하나가 침하해 상자 높이와 배수로 바닥이 같은 수치로 찍혔다.\n\n서둘러 통과시키라는 압력이 들어왔지만 송별하는 동판 자의 휜 모서리를 발견하고 인증선을 지웠다.\n\n그 지연 동안 종자 냉장 상자 일부가 상했으며, 반대로 잘못된 구배를 승인했다면 오염수가 실험동으로 흘렀을 것이다.\n\n그는 부패 냄새와 빗물 수위를 한 야장에 적은 뒤 어느 손실이 자신의 계산 탓인지 선을 긋지 못했다.",
@@ -46067,7 +46067,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "새벽마다 윤산호는 북한산 회랑의 돌계단 수를 세고 전날보다 빠진 돌에 흰 천 매듭을 단다.\n\n대한불교조계종의 피난로 안내관인 그는 길을 아는 권리를 통행세가 아니라 뒤따르는 사람 수로 증명한다.\n\n조선 산성 수비 병제의 고지 교대 의병 회랑의 은밀한 통행·연락 근대 산악 구조대의 결속 로프와 부상자 분류가 그의 안내 규칙에 함께 남아 있다.\n\n이름 윤산호와 K417은 숙영지가 옮겨져도 피난 명부에서 유지된다.",
+            "정체성·출신": "새벽마다 윤산호는 북한산 회랑의 돌계단 수를 세고 전날보다 빠진 돌에 흰 천 매듭을 단다.\n\n승가구휼정의 피난로 안내관인 그는 길을 아는 권리를 통행세가 아니라 뒤따르는 사람 수로 증명한다.\n\n조선 산성 수비 병제의 고지 교대 의병 회랑의 은밀한 통행·연락 근대 산악 구조대의 결속 로프와 부상자 분류가 그의 안내 규칙에 함께 남아 있다.\n\n이름 윤산호와 K417은 숙영지가 옮겨져도 피난 명부에서 유지된다.",
             "붕괴 전 삶": "산악 구조 교육생 때 그는 선두보다 후미 구조자가 보내는 매듭 수를 먼저 확인했다.\n\n산성 병제에서 따온 능선·성문·창고 교대표를 현대 등산 지도 위에 겹쳐 폭우에도 감시 공백이 없게 했다.\n\n의병 통행로의 선택에서 배운 것은 길 이름을 숨기는 기술보다 민가와 연락처를 한 장에 모으지 않는 원칙이었다.\n\n모든 난민이 군사호적 없이도 안전 구간을 설명받게 하는 것이 그의 장기 목표였다.",
             "가문·기업·공동체": "북한산보국문귀환회(HP05)는 가족 재결합 명부와 회랑 통행표를 분리 보관하며 윤산호에게 현장 표식 책임을 준다.\n\n백온은 명부를 인질로 쓰지 않는다는 맹세를 세웠고, 윤산호는 표식 지도에서 가족 이름을 지운 채 인원 수와 이동 능력만 남긴다.\n\n민병대는 산성식 고지 교대를 맡고 구호조직은 구조대식 부상 등급을 붙이며 산간 공동체는 우회 숙영지를 연다.\n\n세 조직 가운데 어느 하나도 혼자 피난로 전체 좌표를 소유하지 못한다.",
             "붕괴의 상처": "초겨울 진눈깨비 속에서 군사호적 단속을 피하던 행렬이 탕춘대 갈림길에 몰렸다.\n\n윤산호는 순찰 불빛을 피하려 계곡 우회로를 택했지만 얼어붙은 로프 고정점이 풀려 한 가족이 본대와 갈라졌다.\n\n구조대는 부상자를 살렸고 민병은 추적을 막았으나 헤어진 아이의 이름은 젖은 임시표에서 번졌다.\n\n그는 숨긴 길이 사람을 보호하는 동시에 구조 신호도 가린다는 사실을 그날 배웠다.",
@@ -46118,7 +46118,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "류해담은 새벽 편성 전에 제보 쪽지의 문장을 소리 내어 읽고, 같은 사건을 본 세 사람의 어미가 어디서 갈리는지 붉은 연필로 표시한다.\n\n전국경제인연합회의 소문 검증·송신 편성원인 그는 개화기 논설 필진의 반박문 관행 판소리 사설을 대목별로 이어 온 구술 전승 근대 송신 기사의 주파수 점검을 한 작업대에서 합쳤다.\n\n서대문 피난 인쇄소와 마포 임시 무대 사이에서 자라 종이 문장과 입말의 차이를 먼저 배웠다.\n\n이름 류해담과 식별자 K244, 국가 슬롯 S09는 바뀌지 않는다.",
+            "정체성·출신": "류해담은 새벽 편성 전에 제보 쪽지의 문장을 소리 내어 읽고, 같은 사건을 본 세 사람의 어미가 어디서 갈리는지 붉은 연필로 표시한다.\n\n여의도출자연합회의 소문 검증·송신 편성원인 그는 개화기 논설 필진의 반박문 관행 판소리 사설을 대목별로 이어 온 구술 전승 근대 송신 기사의 주파수 점검을 한 작업대에서 합쳤다.\n\n서대문 피난 인쇄소와 마포 임시 무대 사이에서 자라 종이 문장과 입말의 차이를 먼저 배웠다.\n\n이름 류해담과 식별자 K244, 국가 슬롯 S09는 바뀌지 않는다.",
             "붕괴 전 삶": "납활자 보관함 옆에는 그가 만든 이견표가 있었고, 제보마다 출처·전언 횟수·직접 목격 여부가 세 칸으로 나뉘었다.\n\n그는 사설 전승자가 같은 대목을 달리 부르는 까닭을 오류로 지우지 않고 공통 사실과 공연자의 보탬을 분리해 적었다.\n\n송신 교육에서는 진공관 온도 안테나 방향 대역별 출력값을 익혀 사실 판정과 전파 상태를 별개로 공지하려 했다.\n\n스승 편집원에게 빌린 첫 교정판을 돌려주지 못한 일이 오래된 빚으로 남았다.",
             "가문·기업·공동체": "서울역기록법가(HP04)는 원본 봉인과 이본 대조 절차를 제공하는 대신 편성회의의 최종 거부권을 요구했다.\n\n류해담은 최지우의 검증 인준과 권미래의 출력 점검은 받아들이되, 기록 보관자가 방송 시각까지 독점하는 조항은 반려했다.\n\n채널 길드는 그의 이견표를 보고 논설 구술 증언 기계 잡음을 서로 다른 색의 표찰로 관리하기 시작했다.\n\n공동체 안의 신뢰는 속보 횟수가 아니라 정정 방송을 같은 청취 시간대에 되돌려 놓은 기록으로 쌓였다.",
             "붕괴의 상처": "북한산보국문 피난로가 닫혔다는 소문이 몰려온 밤, 직접 목격자의 숨소리와 오래된 공연 녹음이 같은 대역에 겹쳤다.\n\n류해담은 송신을 열 분 늦추고 파형을 갈랐으나, 그 사이 잘못된 우회로로 향한 가족 한 무리를 돌려세우지 못했다.\n\n그가 두려워하는 것은 거짓말 하나보다 익숙한 장단을 두른 소문이 사실처럼 기억되는 일이다.\n\n통신근균체의 반복 잡음이 안테나 급전선에서 울린 뒤에도 그는 삭제한 문장과 보류한 문장을 따로 남겼다.",
@@ -46127,7 +46127,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "봉인 서랍에는 돌려주지 못한 교정판과 피난로 오보의 최초 녹음이 나란히 들어 있다.\n\n류해담은 그 녹음 속 장단이 자신이 고른 배경음과 닮았다는 사실을 아직 편성회의에 말하지 않았다.\n\n죄책감은 목격자를 보호한 침묵과 늦어진 정정 사이에서 자란다.\n\nSECRET 열람은 권미래의 원시 파형과 오하늘의 당시 대역표가 동시에 제시될 때만 열린다.",
             "관계 공동과거": "최지우과 첫 이견표를 공개한 오후는 검증 계약의 시작이었다.\n\n권미래가 비에 젖은 급전선을 고치는 동안 류해담이 즉석 구술 방송으로 공백을 메운 밤은 기술과 공연의 동맹이 됐다.\n\n오하늘은 정정 방송을 인기 시간대에 되돌린 대신 다음 날 속보 한 칸을 잃었다.\n\n세 사람의 공동 원장은 STORY-B047-K418에서 제보자 공개와 문답 편성의 책임을 다시 묻는다.",
             "3막 개인 서사선": "1막에서 류해담은 피난로 소문과 겹친 옛 장단을 파형표에 나눈다.\n\n2막에서 HP04 이본 대조와 XT05 잔여 대역을 한 차례 정정 방송에 건다.\n\n3막에서 제보자 공개 또는 익명 문답 중 하나를 골라 신속성과 보호의 대가를 진다.\n\n서사선 식별자는 STORY-B047-K418이다.",
-            "분기 결말": "결말 α에서 류해담은 첫 제보자의 동의를 받아 출처를 공개하고 피난로 오보를 빠르게 꺾는다.\n\n결말 β에서는 익명 문답 방송으로 모순을 드러내 목격자를 지키지만 정정이 외곽까지 늦게 닿는다.\n\n어느 쪽이든 전국경제인연합회의 검증표와 기계 상태 고지는 분리된 채 남는다.\n\n플레이 개입은 출처 공개 또는 보호 편성이다."
+            "분기 결말": "결말 α에서 류해담은 첫 제보자의 동의를 받아 출처를 공개하고 피난로 오보를 빠르게 꺾는다.\n\n결말 β에서는 익명 문답 방송으로 모순을 드러내 목격자를 지키지만 정정이 외곽까지 늦게 닿는다.\n\n어느 쪽이든 여의도출자연합회의 검증표와 기계 상태 고지는 분리된 채 남는다.\n\n플레이 개입은 출처 공개 또는 보호 편성이다."
           },
           "arc": [
             {
@@ -46271,7 +46271,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "함도겸은 경매 종을 치기 전에 되와 말, 저울추 세 벌을 빈 좌판에서 서로 바꿔 달아 보는 버릇이 있다.\n\n천주교 서울대교구의 공개 경매·가격 원장 담당자인 그는 조선 시전 상인의 품목별 좌석과 시가 게시 개성상인의 도량형 대조와 장거리 신용 근대 곡물 거래소 중개인의 호가·체결 기록을 하나의 공개 절차로 엮었다.\n\n가락 하역장 곡물 자루 위에서 숫자를 배웠고 잠실 집결지 배급줄에서 가격이 곧 생존 순서가 되는 장면을 보며 자랐다.\n\n이름 함도겸과 식별자 K397, 국가 슬롯 S15는 불변이다.",
+            "정체성·출신": "함도겸은 경매 종을 치기 전에 되와 말, 저울추 세 벌을 빈 좌판에서 서로 바꿔 달아 보는 버릇이 있다.\n\n본당인준정의 공개 경매·가격 원장 담당자인 그는 조선 시전 상인의 품목별 좌석과 시가 게시 개성상인의 도량형 대조와 장거리 신용 근대 곡물 거래소 중개인의 호가·체결 기록을 하나의 공개 절차로 엮었다.\n\n가락 하역장 곡물 자루 위에서 숫자를 배웠고 잠실 집결지 배급줄에서 가격이 곧 생존 순서가 되는 장면을 보며 자랐다.\n\n이름 함도겸과 식별자 K397, 국가 슬롯 S15는 불변이다.",
             "붕괴 전 삶": "동틀 무렵 빈 경매판에는 전날 종가와 실제 인도량이 분필로 나뉘어 적혔다.\n\n그는 시전식 품목 자리표로 판매 책임을 분명히 하고, 송도식 맞저울로 지역마다 다른 말을 표준 부피로 환산했다.\n\n거래소 실무를 익힌 뒤에는 입으로 부른 값보다 종이 호가표의 시각을 우선해 담합 다툼을 줄이려 했다.\n\n첫 흉년 때 친척 좌판의 미달 중량을 눈감아 준 한 자루가 지금까지 원장의 빈 줄로 남았다.",
             "가문·기업·공동체": "노량진냉동상단(HP08)은 저장 온도와 반출 시각을 공개하는 조건으로 경매 참관권을 얻었다.\n\n함도겸은 남윤경의 조정 권한과 은태호의 호가 진행을 인정하지만, 품목별 상인회의가 비공개 최저가를 미리 맞추는 관행은 금지했다.\n\n표준 저울추는 경매조 배급원 시민 입회자가 하나씩 보관해 개장 때만 합친다.\n\n공동체의 평판은 높은 낙찰가가 아니라 종가와 실물 인도량의 차이를 다음 장에 공개한 횟수로 정해진다.",
             "붕괴의 상처": "곡물차 여섯 대가 가락에 닿지 못한 주간, 창고에는 같은 중량표를 단 자루들이 실제로는 서로 다른 부피를 품고 있었다.\n\n함도겸은 경매를 중지하고 전량 재계량했으나 가격표가 사라진 반나절 동안 암거래가 배급줄을 파고들었다.\n\n그가 잊지 못하는 것은 표준을 지키려 닫은 장이 오히려 힘센 구매자에게만 시간을 벌어 준 역설이다.\n\n철새습지포식군이 외곽 저장고를 덮친 경보 뒤에는 손실 추정치를 종가와 분리해 게시했다.",
@@ -46322,7 +46322,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
           "owner": "wiki-world",
           "source_kind": "original-fiction",
           "sections": {
-            "정체성·출신": "장맛비가 수서 공동구 환기창을 때리면 노세람은 번진 계약서보다 먼저 날짜 도장과 증인 칸을 마른 천으로 가린다.\n\n전국민주노동조합총연맹의 계약 감사·중재 서기인 그는 조선 호조 계장의 항목별 출납과 마감 개항기 통상 장부의 이중 언어 품목 대조 근대 계약 법제 서기의 조항 번호와 손실 산정을 한 감사표로 묶는다.\n\n강남의 임시 금융 장부소와 수서 차량기지 인도 창구를 오가며 숫자가 합해져도 책임이 합쳐지지 않을 수 있음을 배웠다.\n\n이름 노세람과 식별자 K422, 국가 슬롯 S16은 고정된다.",
+            "정체성·출신": "장맛비가 수서 공동구 환기창을 때리면 노세람은 번진 계약서보다 먼저 날짜 도장과 증인 칸을 마른 천으로 가린다.\n\n정동노동총연맹의 계약 감사·중재 서기인 그는 조선 호조 계장의 항목별 출납과 마감 개항기 통상 장부의 이중 언어 품목 대조 근대 계약 법제 서기의 조항 번호와 손실 산정을 한 감사표로 묶는다.\n\n강남의 임시 금융 장부소와 수서 차량기지 인도 창구를 오가며 숫자가 합해져도 책임이 합쳐지지 않을 수 있음을 배웠다.\n\n이름 노세람과 식별자 K422, 국가 슬롯 S16은 고정된다.",
             "붕괴 전 삶": "먹선으로 나뉜 여섯 칸은 수입 지출 운송 손실 보관 손실 면제 미결을 뜻했다.\n\n그는 호조식 계정 마감처럼 담당자별 잔액을 닫고 통상 창구에서 서로 다른 품목명을 한 표준 단위로 대조한 뒤 계약 교육에서 불이행과 불가항력을 별도 조항으로 적는 법을 익혔다.\n\n목표는 강한 당사자의 구두 약속도 약소국의 서면 손실표와 같은 저울에 올리는 것이었다.\n\n첫 중재 때 증인 한 명의 서명 시각을 고쳐 준 일이 이후 모든 감사의 약점으로 남았다.",
             "가문·기업·공동체": "서울역기록법가(HP04)는 원본 보관과 사본 대조를 맡는 대가로 수서 표준 계약의 해석 우선권을 요구했다.\n\n노세람은 정유라의 감사 지휘와 심유리의 중재 결론을 따르되, 추천위원만 참석한 비공개 부속합의는 본계약으로 인정하지 않았다.\n\n시민추첨회의는 그의 미결표를 매달 공개하고 계약 당사자가 아닌 세 번째 입회자를 뽑는다.\n\n공동체에서 그의 권위는 승소 건수가 아니라 손실 산식과 이의 기간을 같은 면에 인쇄한 계약 수로 측정된다.",
             "붕괴의 상처": "급수관 파손 뒤 암사 호위대와 가락 운송조가 서로 다른 면책 조항을 내밀면서 수서의 손실 원장 합계가 두 배로 불어났다.\n\n노세람은 중복 청구를 찾아냈으나 과거에 고친 증인 시각 때문에 한쪽이 감사 전체의 무효를 주장했다.\n\n그가 견디기 어려운 장면은 정확한 합계가 위조된 절차 하나 때문에 아무도 책임지지 않는 숫자로 변하는 순간이다.\n\n맞춤의료잔존체의 냉각 누출까지 지하 창고 손실에 섞이자 그는 원인별 장부와 배상 순서를 분리했다.",
@@ -46331,7 +46331,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
             "비밀·빚·죄책감": "낡은 날짜 도장의 안쪽 홈에는 그가 증인 시각을 하루 앞당겼던 계약 번호가 남아 있다.\n\n노세람은 당시 피난 인도의 마감 시간을 맞추려 했으나 그 수정이 현재 중복 청구자에게 빠져나갈 문을 주었다.\n\n죄책감은 제때 통과한 피난 행렬과 훗날 흔들린 감사 원칙 사이에서 계산되지 않는다.\n\nSECRET 공개는 하서진의 원본함 봉인과 시민 입회자의 당시 일지가 함께 확인될 때 성립한다.",
             "관계 공동과거": "정유라와 손실 산식을 표준 계약에 넣은 계절은 감사 동맹의 시작이었다.\n\n하서진이 젖은 원본을 말리는 동안 노세람이 양쪽 언어의 품목표를 대조한 밤은 서기들의 공동 복무였다.\n\n심유리는 고친 날짜를 의심하면서도 피난 인도 자체를 무효로 돌리지는 않았다.\n\n세 사람의 미결 조항은 STORY-B047-K422에서 절차 재개와 즉시 배상 중 어느 책임을 먼저 세울지 가른다.",
             "3막 개인 서사선": "1막에서 노세람은 중복 손실 청구와 고친 증인 시각을 같은 감사표에서 발견한다.\n\n2막에서 HP04 원본 대조와 XT05 인도 목록의 마감을 재심 기한에 묶는다.\n\n3막에서 흠결 자진 공개와 즉시 배상 합의 중 하나를 택해 지연 또는 은폐의 대가를 진다.\n\n서사선 식별자는 STORY-B047-K422다.",
-            "분기 결말": "결말 α에서 노세람은 날짜 수정 사실을 공개하고 감사를 처음부터 다시 열어 절차 신뢰를 회복한다.\n\n결말 β에서는 흠결을 봉인한 채 양측의 즉시 배상을 성립시켜 생활 손실을 먼저 메운다.\n\n전국민주노동조합총연맹의 손실 산식과 이의 기간 공개 규칙은 두 결말 모두 존속한다.\n\n플레이 개입은 감사 재개 또는 즉시 합의다."
+            "분기 결말": "결말 α에서 노세람은 날짜 수정 사실을 공개하고 감사를 처음부터 다시 열어 절차 신뢰를 회복한다.\n\n결말 β에서는 흠결을 봉인한 채 양측의 즉시 배상을 성립시켜 생활 손실을 먼저 메운다.\n\n정동노동총연맹의 손실 산식과 이의 기간 공개 규칙은 두 결말 모두 존속한다.\n\n플레이 개입은 감사 재개 또는 즉시 합의다."
           },
           "arc": [
             {
@@ -46976,7 +46976,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
               "H03"
             ]
           },
-          "prose": "### 역할·신체\n통제자로, 가장 오래 살아남은 중형 성체다. 녹슨 목줄 고리가 걸을 때마다 철편 소리를 내고, 코는 사람 체취·소독약·냉동 해동 냄새를 가른다. 명령권은 없고 이동을 먼저 제안할 뿐이며, 목걸이 수동형 태그는 H03 이도가 약 2미터 안에서만 읽고 젖은 털과 금속 고리 때문에 자주 놓친다.\n\n### 기원\n붕괴 뒤 문을 닫은 사설 보호소와 공사장 경비 자리를 오가던 개체가 S03 현대자동차주식회사 외벽 공터에서 다른 유랑 가족과 합류했다. 철편 소리가 동료를 모으는 표지가 되면서 사람들은 이 걸음을 선도로 부르게 되었으나, 우두머리로 선출된 적은 없다.\n\n### 서식\n낮에는 S03 폐쇄 경비 통로와 고가 하부에 쉬고, 하역 잔여가 늘면 S08 원불교 야간 하역장 가장자리로 내려간다. XT03 물류 진동이 커진 밤에는 냉동고 진입로까지 제안 동선이 길어진다.\n\n### 필요·경제\n단백질 잔여와 버려진 급식 팩, 여과 뒤 밀폐한 물이 밀도를 정한다. HC03 마곡생명가가 폐기 단백질을 너무 단단히 봉하면 이 걸음은 시장 골목으로 우회를 제안하고, 느슨하면 하역장에 과밀이 쌓여 사람 접촉이 는다.\n\n### 생애·정비\n급식이 안정되면 번식보다 영역 방어를 먼저 제안하고, 강제 포획으로 무리가 흩어지면 인식표가 남은 자리로 다시 모인다. 고리가 끊어지면 철편 소리가 사라져 재결속이 늦어지므로, 부러진 고리를 철사로 감는 것은 장식이 아니라 생존 정비다.\n\n### 행동·위계\n곁의 성체 둘이 제안을 받거나 거부하며, 새끼 있는 가족은 별도 보호 권역을 지킨다. H03가 공격성 군집으로 묶어 올려도 HC03 중재자는 개체별 인식표·냄새·동행으로 다시 나눈다. 선도 개체가 침묵해도 가족은 마지막 잠자리를 반복할 뿐 새 명령을 기다리지 않는다.\n\n### 단계적 위협\n1단계에서는 특정 인식표와 급식차에만 반응하며 공터 가장자리를 지킨다. 2단계에서는 익숙한 엔진음과 하역 잔여가 여러 가족을 한 통로로 모아 호송 카트를 따라붙게 한다. 3단계에서는 급식 중단이나 기만 포획 뒤 가족별로 시장과 환승 계단을 동시에 점유한다.\n\n### 전투·대응\n직사 탄환과 일괄 포획은 가족을 생활권 밖으로 밀어낼 뿐이다. 차단 펜스, 급식 우회 지점, 소음 감소, 새끼 구역 깃발이 우선이며, 포획은 부상 개체나 실제 공격을 주도한 개체로 제한한다. 성공은 시민 교상 0, 하역 지연 분의 감소, 가족 재결속 비율이다.\n\n### 협상·도덕 선택\n보호소 코드 대조가 끝날 때까지 하역을 늦추면 오판은 줄지만 식품이 녹는다. 현재 동행과 새끼 돌봄을 먼저 등록하면 무리는 안정되나 뒤늦은 옛 보호자 반환 청구와 충돌한다. 유기 이력을 빌미로 선도 개체만 제거하면 48시간이 아니라 며칠의 분산 점유가 남고 시민 제보망이 닫힌다.\n\n### 시나리오 연결\nG03-SC1 녹슨 이름표의 불완전 판독이 이 걸음의 제안과 겹치고, G03-SC2의 엔진음과 G03-SC3의 냉동고 포위는 제안이 거부된 뒤에 벌어진다."
+          "prose": "### 역할·신체\n통제자로, 가장 오래 살아남은 중형 성체다. 녹슨 목줄 고리가 걸을 때마다 철편 소리를 내고, 코는 사람 체취·소독약·냉동 해동 냄새를 가른다. 명령권은 없고 이동을 먼저 제안할 뿐이며, 목걸이 수동형 태그는 H03 이도가 약 2미터 안에서만 읽고 젖은 털과 금속 고리 때문에 자주 놓친다.\n\n### 기원\n붕괴 뒤 문을 닫은 사설 보호소와 공사장 경비 자리를 오가던 개체가 S03 양재기공주식회사 외벽 공터에서 다른 유랑 가족과 합류했다. 철편 소리가 동료를 모으는 표지가 되면서 사람들은 이 걸음을 선도로 부르게 되었으나, 우두머리로 선출된 적은 없다.\n\n### 서식\n낮에는 S03 폐쇄 경비 통로와 고가 하부에 쉬고, 하역 잔여가 늘면 S08 교헌필사정 야간 하역장 가장자리로 내려간다. XT03 물류 진동이 커진 밤에는 냉동고 진입로까지 제안 동선이 길어진다.\n\n### 필요·경제\n단백질 잔여와 버려진 급식 팩, 여과 뒤 밀폐한 물이 밀도를 정한다. HC03 마곡생명가가 폐기 단백질을 너무 단단히 봉하면 이 걸음은 시장 골목으로 우회를 제안하고, 느슨하면 하역장에 과밀이 쌓여 사람 접촉이 는다.\n\n### 생애·정비\n급식이 안정되면 번식보다 영역 방어를 먼저 제안하고, 강제 포획으로 무리가 흩어지면 인식표가 남은 자리로 다시 모인다. 고리가 끊어지면 철편 소리가 사라져 재결속이 늦어지므로, 부러진 고리를 철사로 감는 것은 장식이 아니라 생존 정비다.\n\n### 행동·위계\n곁의 성체 둘이 제안을 받거나 거부하며, 새끼 있는 가족은 별도 보호 권역을 지킨다. H03가 공격성 군집으로 묶어 올려도 HC03 중재자는 개체별 인식표·냄새·동행으로 다시 나눈다. 선도 개체가 침묵해도 가족은 마지막 잠자리를 반복할 뿐 새 명령을 기다리지 않는다.\n\n### 단계적 위협\n1단계에서는 특정 인식표와 급식차에만 반응하며 공터 가장자리를 지킨다. 2단계에서는 익숙한 엔진음과 하역 잔여가 여러 가족을 한 통로로 모아 호송 카트를 따라붙게 한다. 3단계에서는 급식 중단이나 기만 포획 뒤 가족별로 시장과 환승 계단을 동시에 점유한다.\n\n### 전투·대응\n직사 탄환과 일괄 포획은 가족을 생활권 밖으로 밀어낼 뿐이다. 차단 펜스, 급식 우회 지점, 소음 감소, 새끼 구역 깃발이 우선이며, 포획은 부상 개체나 실제 공격을 주도한 개체로 제한한다. 성공은 시민 교상 0, 하역 지연 분의 감소, 가족 재결속 비율이다.\n\n### 협상·도덕 선택\n보호소 코드 대조가 끝날 때까지 하역을 늦추면 오판은 줄지만 식품이 녹는다. 현재 동행과 새끼 돌봄을 먼저 등록하면 무리는 안정되나 뒤늦은 옛 보호자 반환 청구와 충돌한다. 유기 이력을 빌미로 선도 개체만 제거하면 48시간이 아니라 며칠의 분산 점유가 남고 시민 제보망이 닫힌다.\n\n### 시나리오 연결\nG03-SC1 녹슨 이름표의 불완전 판독이 이 걸음의 제안과 겹치고, G03-SC2의 엔진음과 G03-SC3의 냉동고 포위는 제안이 거부된 뒤에 벌어진다."
         },
         {
           "id": "G03E02",
@@ -47479,7 +47479,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
               "G04-SC1"
             ]
           },
-          "prose": "- 역할·신체: 하수너구리족의 일반 생태 개체로, 펌프 옆 낮은 유속 관로 바닥에 배를 붙이고 수염으로 물살의 방향과 세기를 읽는다. 체구는 지상 성체보다 작고 발바닥은 미끄러운 콘크리트에 맞게 넓다. 수위가 오르기 전 압력 변화를 발과 가슴으로 느끼지만, 관이 가득 차거나 공기층이 끊기면 같은 감각이 먹통이 된다.\n- 기원: 붕괴 뒤 중랑·탄천 간선 점검이 끊긴 뒤, 수생 먹이를 따라 사람이 비운 S04 대한예수교장로회 펌프 지선에 남았다. 펌프보다 먼저 수위를 안다는 말은 허구의 가족 학습이며 현실 기관의 사고가 아니다.\n- 서식: 낮에는 유속이 느린 관 바닥과 맨홀 아래 턱에 붙고, 밤에도 출구 쪽으로는 거의 나가지 않는다. 홍수위가 오르면 같은 관의 높은 이음새로 옮길 뿐 S09 갤러리까지는 이 개체의 일상 범위가 아니다.\n- 필요: 작은 수생 먹이와 관벽에 붙은 미생물막이 주식이며, 헤엄 에너지를 아끼려면 완만한 물살이 유지되어야 한다. 소독제가 진하게 흐르면 수염이 며칠 무뎌져 먹이 위치를 놓친다.\n- 생애·정비: 건기에는 한 지선만 반복해 다니며 수염을 문질러 이물질을 뗀다. 연속 강우로 바닥이 뜨면 새끼가 아니라 자기 몸부터 이음새로 옮기고, 해빙 뒤에는 익숙한 낮은 유속 구간으로 돌아온다.\n- 행동·위계: 전투 지휘를 하지 않으며 연장자 암컷이 좁은 턱을 지날 때만 길을 비킨다. H04 강별 로그가 이 개체를 부유 잔해로 찍어도 HC04 배수 당직은 출입 시각과 잠자리로 다시 구분해야 한다.\n- 상승: 1단계에서는 비가 오기 전에 이음새로 붙어 비공식 선행 신호가 된다. 2단계에서는 같은 관에 배설이 쌓여 공식 수위계가 낮게 나오고 점검 로봇과 코가 마주친다. 3단계에서는 남은 낮은 유속 구간이 정비 인력의 발판과 겹친다.\n- 교전·대응: 독먹이와 전면 수몰은 사체 부패로 하류를 함께 망친다. 부분 차수로 유속을 잠시 낮추고 센서를 씻은 뒤 우회 관을 열면, 물살수염은 익숙한 바닥으로 돌아가 펌프 가동 회복 시간을 줄인다.\n- 교섭·도덕 선택: 이 개체의 이음새 이동을 예비 경보로 채택하면 준비 시간은 벌지만 오탐 연료 책임은 S04와 HC04에 남는다. HP01 수문가의 현장 측정만 기다리면 짧은 유입에 늦고, 두 신호가 어긋날 때만 펌프를 예열하면 평소 연료는 아끼나 동시 지연을 놓친다. 물살 읽기를 처벌 근거로 삼을 수는 없다.\n- 시나리오 연결: G04-SC1 ‘맨홀 아래의 선행지표’에서 낮 이음새 이동이 공식 센서보다 먼저 나타난다."
+          "prose": "- 역할·신체: 하수너구리족의 일반 생태 개체로, 펌프 옆 낮은 유속 관로 바닥에 배를 붙이고 수염으로 물살의 방향과 세기를 읽는다. 체구는 지상 성체보다 작고 발바닥은 미끄러운 콘크리트에 맞게 넓다. 수위가 오르기 전 압력 변화를 발과 가슴으로 느끼지만, 관이 가득 차거나 공기층이 끊기면 같은 감각이 먹통이 된다.\n- 기원: 붕괴 뒤 중랑·탄천 간선 점검이 끊긴 뒤, 수생 먹이를 따라 사람이 비운 S04 설교명부정 펌프 지선에 남았다. 펌프보다 먼저 수위를 안다는 말은 허구의 가족 학습이며 현실 기관의 사고가 아니다.\n- 서식: 낮에는 유속이 느린 관 바닥과 맨홀 아래 턱에 붙고, 밤에도 출구 쪽으로는 거의 나가지 않는다. 홍수위가 오르면 같은 관의 높은 이음새로 옮길 뿐 S09 갤러리까지는 이 개체의 일상 범위가 아니다.\n- 필요: 작은 수생 먹이와 관벽에 붙은 미생물막이 주식이며, 헤엄 에너지를 아끼려면 완만한 물살이 유지되어야 한다. 소독제가 진하게 흐르면 수염이 며칠 무뎌져 먹이 위치를 놓친다.\n- 생애·정비: 건기에는 한 지선만 반복해 다니며 수염을 문질러 이물질을 뗀다. 연속 강우로 바닥이 뜨면 새끼가 아니라 자기 몸부터 이음새로 옮기고, 해빙 뒤에는 익숙한 낮은 유속 구간으로 돌아온다.\n- 행동·위계: 전투 지휘를 하지 않으며 연장자 암컷이 좁은 턱을 지날 때만 길을 비킨다. H04 강별 로그가 이 개체를 부유 잔해로 찍어도 HC04 배수 당직은 출입 시각과 잠자리로 다시 구분해야 한다.\n- 상승: 1단계에서는 비가 오기 전에 이음새로 붙어 비공식 선행 신호가 된다. 2단계에서는 같은 관에 배설이 쌓여 공식 수위계가 낮게 나오고 점검 로봇과 코가 마주친다. 3단계에서는 남은 낮은 유속 구간이 정비 인력의 발판과 겹친다.\n- 교전·대응: 독먹이와 전면 수몰은 사체 부패로 하류를 함께 망친다. 부분 차수로 유속을 잠시 낮추고 센서를 씻은 뒤 우회 관을 열면, 물살수염은 익숙한 바닥으로 돌아가 펌프 가동 회복 시간을 줄인다.\n- 교섭·도덕 선택: 이 개체의 이음새 이동을 예비 경보로 채택하면 준비 시간은 벌지만 오탐 연료 책임은 S04와 HC04에 남는다. HP01 수문가의 현장 측정만 기다리면 짧은 유입에 늦고, 두 신호가 어긋날 때만 펌프를 예열하면 평소 연료는 아끼나 동시 지연을 놓친다. 물살 읽기를 처벌 근거로 삼을 수는 없다.\n- 시나리오 연결: G04-SC1 ‘맨홀 아래의 선행지표’에서 낮 이음새 이동이 공식 센서보다 먼저 나타난다."
         },
         {
           "id": "G04E04",
@@ -47635,7 +47635,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
               "G04-SC3"
             ]
           },
-          "prose": "- 역할·신체: 하수너구리족의 두 번째 정예로, 발바닥과 수염으로 관벽의 결빙과 잔류 온기를 가려 XT04 한파 때 녹지 않은 통로를 먼저 찾는다. 다른 가족을 소집하지는 못하지만, 이 개체가 멈춘 마른 턱을 여러 가족이 뒤따른다. 지상 횡단은 짧고 서툴다.\n- 기원: 두만강극동전구 방면 한파와 물류 단절로 사료 분포가 바뀌던 겨울, 얼지 않은 펌프 접근로만 남았을 때 살아남은 개체가 온기 기억을 가족 학습으로 남겼다. 지휘자를 자처한 이력은 없다.\n- 서식: 한파 주간에는 S09 전국경제인연합회 지하 갤러리의 난방 여열과 S04 펌프실의 마른 접근로 사이를 오간다. 해빙이 시작되면 동부 지선에서 익숙한 관으로 유도하듯 되돌아온다.\n- 필요: 얼지 않은 바닥과 소량의 여열이 생존 비용의 핵심이며, 먹이보다 먼저 마른 공간을 고른다. 갤러리 난방을 끊으면 세 가족이 펌프 접근로 하나에 겹친다.\n- 생애·정비: 발바닥 균열이 깊어지면 결빙 판독이 늦어져 한 계절을 지선에서만 보낸다. 해빙 후 첫 따뜻한 물은 상처를 씻는 기회이자, 너무 빠르면 접근로를 다시 잠기게 한다.\n- 행동·위계: 앞장서는 것처럼 보여도 명령이 아니라 온기 탐색이다. 연장자 암컷이 새끼를 옮기면 안내 경로를 양보하고, H04가 한 열점으로 합쳐도 HC04는 가족 수와 출입 시각을 나눠 적는다.\n- 상승: 1단계에서는 갤러리 쪽으로 발자국이 먼저 생긴다. 2단계에서는 여열이 줄어 접근로 점유가 겹친다. 3단계에서는 유일한 마른 펌프 통로를 세 가족이 막아 정비가 멈춘다.\n- 교전·대응: 난방 은신 관을 잠시 열고 야간 지상 통행을 제한하면 안내 경로가 분산된다. 독먹이와 수몰은 얼어 죽은 사체까지 더한다. 임시 외부 점검 발판은 통로를 비우지 않고 정비할 수 있으나 한파 속 추락 위험을 작업조가 진다.\n- 교섭·도덕 선택: 갤러리 일부 난방을 공유 은신으로 열면 S09의 다른 설비가 전력을 내놓는다. 펌프 점검을 미루면 충돌은 피하나 해빙·돌발 강우 때 침수 위험이 커진다. 해빙길안내의 온기 기억을 공식 우회로로 쓸지는 도시 배수와 비인간 피난처를 동시에 확보할 수 없다는 점에서 갈린다.\n- 시나리오 연결: G04-SC3 ‘펌프실의 마른 통로’에서 이 개체가 먼저 멈춘 접근로에 세 가족이 겹친다."
+          "prose": "- 역할·신체: 하수너구리족의 두 번째 정예로, 발바닥과 수염으로 관벽의 결빙과 잔류 온기를 가려 XT04 한파 때 녹지 않은 통로를 먼저 찾는다. 다른 가족을 소집하지는 못하지만, 이 개체가 멈춘 마른 턱을 여러 가족이 뒤따른다. 지상 횡단은 짧고 서툴다.\n- 기원: 두만강극동전구 방면 한파와 물류 단절로 사료 분포가 바뀌던 겨울, 얼지 않은 펌프 접근로만 남았을 때 살아남은 개체가 온기 기억을 가족 학습으로 남겼다. 지휘자를 자처한 이력은 없다.\n- 서식: 한파 주간에는 S09 여의도출자연합회 지하 갤러리의 난방 여열과 S04 펌프실의 마른 접근로 사이를 오간다. 해빙이 시작되면 동부 지선에서 익숙한 관으로 유도하듯 되돌아온다.\n- 필요: 얼지 않은 바닥과 소량의 여열이 생존 비용의 핵심이며, 먹이보다 먼저 마른 공간을 고른다. 갤러리 난방을 끊으면 세 가족이 펌프 접근로 하나에 겹친다.\n- 생애·정비: 발바닥 균열이 깊어지면 결빙 판독이 늦어져 한 계절을 지선에서만 보낸다. 해빙 후 첫 따뜻한 물은 상처를 씻는 기회이자, 너무 빠르면 접근로를 다시 잠기게 한다.\n- 행동·위계: 앞장서는 것처럼 보여도 명령이 아니라 온기 탐색이다. 연장자 암컷이 새끼를 옮기면 안내 경로를 양보하고, H04가 한 열점으로 합쳐도 HC04는 가족 수와 출입 시각을 나눠 적는다.\n- 상승: 1단계에서는 갤러리 쪽으로 발자국이 먼저 생긴다. 2단계에서는 여열이 줄어 접근로 점유가 겹친다. 3단계에서는 유일한 마른 펌프 통로를 세 가족이 막아 정비가 멈춘다.\n- 교전·대응: 난방 은신 관을 잠시 열고 야간 지상 통행을 제한하면 안내 경로가 분산된다. 독먹이와 수몰은 얼어 죽은 사체까지 더한다. 임시 외부 점검 발판은 통로를 비우지 않고 정비할 수 있으나 한파 속 추락 위험을 작업조가 진다.\n- 교섭·도덕 선택: 갤러리 일부 난방을 공유 은신으로 열면 S09의 다른 설비가 전력을 내놓는다. 펌프 점검을 미루면 충돌은 피하나 해빙·돌발 강우 때 침수 위험이 커진다. 해빙길안내의 온기 기억을 공식 우회로로 쓸지는 도시 배수와 비인간 피난처를 동시에 확보할 수 없다는 점에서 갈린다.\n- 시나리오 연결: G04-SC3 ‘펌프실의 마른 통로’에서 이 개체가 먼저 멈춘 접근로에 세 가족이 겹친다."
         },
         {
           "id": "G04E10",
@@ -47660,7 +47660,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
               "G04-SC3"
             ]
           },
-          "prose": "- 역할·신체: 하수너구리족의 환경 거점형으로, S04 대한예수교장로회 펌프장 하부 건조 대피공에 몸집이 맞게 자리 잡은 굴 지기이다. 어깨 높이가 공의 천장 이음에 걸려 다른 가족이 한꺼번에 들어오지 못하게 물리적으로 채운다. 수염보다 공기 흐름을 옆구리로 느낀다.\n- 기원: 사람이 비운 대피공을 건기의 잠자리로 쓰던 가족이, 홍수 때 높은 환기실로 새끼를 보낸 뒤에도 이 마른 공간을 포기하지 않아 거점 개체가 되었다. 고정 지휘소가 아니라 마르고 낮은 유속의 저장 공간이다.\n- 서식: 대피공 안쪽 건조 선반과 공 입구의 턱이 전부이며, 수위가 입구를 넘으면 포기하고 환기실로 옮긴다. 한파에는 이 공이 유일한 얼지 않은 펌프 접근로와 맞붙어 정비 인력과 공간이 겹친다.\n- 필요: 건조함 자체가 에너지 절약이며, 공 안에 흘러든 소량 잔여만으로 버틴다. 공을 인간 전용 점검로로 바꾸면 거점 비용을 지상 골목에 전가한다.\n- 생애·정비: 털이 마르는 시간을 기준으로 출입을 조절하고, 습기가 이틀 이상 남으면 바닥 흙을 긁어 낸다. 입구가 연속 수몰되면 거점을 버리고 공유 규칙을 접는다.\n- 행동·위계: 공 안에서는 먼저 들어온 쪽이 자리를 지키나 전투로 내쫓지 않는다. 연장자 암컷의 새끼 줄이 오면 선반을 내주고, H04 로그의 ‘잔해’ 점은 손전등 육안 확인 뒤에야 굴 지기로 정정된다.\n- 상승: 1단계에서는 대피공 입구에 털과 발자국만 보인다. 2단계에서는 점검 로봇과 굴 지기가 공 입구에서 맞닥뜨린다. 3단계에서는 한파로 이 마른 공이 펌프 접근과 피난의 유일한 공간이 된다.\n- 교전·대응: 부분 차수로 입구 침수를 늦추고 대체 은신 관을 열어 거점 압력을 분산한다. 공을 전면 수몰시키면 펌프는 당장 열리지만 지상 주거 침입이 늘어난다. 성공 지표는 펌프 가동 회복과 지상 교상 0건이다.\n- 교섭·도덕 선택: 마른대피공을 생태 완충으로 남기면 정비 동선이 길어진다. 인간 전용 샤프트로 봉하면 배수는 빨라지나 한파 때 세 가족이 남은 접근로를 막는다. 임시 외부 발판은 공을 공유하지 않아도 되지만 설치 노동의 추락 위험을 누가 질지 정해야 한다.\n- 시나리오 연결: G04-SC3 ‘펌프실의 마른 통로’의 공간 경합은 이 거점이 얼지 않고 남을 때 커진다."
+          "prose": "- 역할·신체: 하수너구리족의 환경 거점형으로, S04 설교명부정 펌프장 하부 건조 대피공에 몸집이 맞게 자리 잡은 굴 지기이다. 어깨 높이가 공의 천장 이음에 걸려 다른 가족이 한꺼번에 들어오지 못하게 물리적으로 채운다. 수염보다 공기 흐름을 옆구리로 느낀다.\n- 기원: 사람이 비운 대피공을 건기의 잠자리로 쓰던 가족이, 홍수 때 높은 환기실로 새끼를 보낸 뒤에도 이 마른 공간을 포기하지 않아 거점 개체가 되었다. 고정 지휘소가 아니라 마르고 낮은 유속의 저장 공간이다.\n- 서식: 대피공 안쪽 건조 선반과 공 입구의 턱이 전부이며, 수위가 입구를 넘으면 포기하고 환기실로 옮긴다. 한파에는 이 공이 유일한 얼지 않은 펌프 접근로와 맞붙어 정비 인력과 공간이 겹친다.\n- 필요: 건조함 자체가 에너지 절약이며, 공 안에 흘러든 소량 잔여만으로 버틴다. 공을 인간 전용 점검로로 바꾸면 거점 비용을 지상 골목에 전가한다.\n- 생애·정비: 털이 마르는 시간을 기준으로 출입을 조절하고, 습기가 이틀 이상 남으면 바닥 흙을 긁어 낸다. 입구가 연속 수몰되면 거점을 버리고 공유 규칙을 접는다.\n- 행동·위계: 공 안에서는 먼저 들어온 쪽이 자리를 지키나 전투로 내쫓지 않는다. 연장자 암컷의 새끼 줄이 오면 선반을 내주고, H04 로그의 ‘잔해’ 점은 손전등 육안 확인 뒤에야 굴 지기로 정정된다.\n- 상승: 1단계에서는 대피공 입구에 털과 발자국만 보인다. 2단계에서는 점검 로봇과 굴 지기가 공 입구에서 맞닥뜨린다. 3단계에서는 한파로 이 마른 공이 펌프 접근과 피난의 유일한 공간이 된다.\n- 교전·대응: 부분 차수로 입구 침수를 늦추고 대체 은신 관을 열어 거점 압력을 분산한다. 공을 전면 수몰시키면 펌프는 당장 열리지만 지상 주거 침입이 늘어난다. 성공 지표는 펌프 가동 회복과 지상 교상 0건이다.\n- 교섭·도덕 선택: 마른대피공을 생태 완충으로 남기면 정비 동선이 길어진다. 인간 전용 샤프트로 봉하면 배수는 빨라지나 한파 때 세 가족이 남은 접근로를 막는다. 임시 외부 발판은 공을 공유하지 않아도 되지만 설치 노동의 추락 위험을 누가 질지 정해야 한다.\n- 시나리오 연결: G04-SC3 ‘펌프실의 마른 통로’의 공간 경합은 이 거점이 얼지 않고 남을 때 커진다."
         },
         {
           "id": "G04E11",
@@ -47687,7 +47687,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
               "G04-SC3"
             ]
           },
-          "prose": "- 역할·신체: 하수너구리족의 환경 거점형으로, S09 전국경제인연합회 지하 케이블 갤러리의 여유 트레이와 환기구 틈에 살림을 차린다. 몸은 케이블 피복에 기름을 묻히지 않으려 배를 들고 이동하며, 송신 가청 주파수에는 반응하지 않고 사람의 장화와 펌프 저주파만 가른다.\n- 기원: 수위가 오를 때 S04 관로에서 분산하던 가족이 갤러리의 마른 열과 빈 트레이를 발견해 정착했다. 통신망을 점령하려는 무리가 아니라 건조 은신의 두 번째 거점이다.\n- 서식: 갤러리 중간의 비어 있는 케이블 단과 환기구 기슭이며, XT04 한파 주간에는 난방 여열이 남는 단으로 붙는다. 여유 공간이 통신 증설로 메워지면 거점이 펌프 접근로 쪽으로 되밀린다.\n- 필요: 마른 열과 트레이 아래 먼지에 섞인 유기 잔여가 유지 자원이다. 대체 은신 관으로 이 공간을 열면 지상 출몰은 줄지만 송신 여유 코어가 줄어든다.\n- 생애·정비: 털에 묻은 케이블 먼지를 환기구 바람에 털고, 피복이 쓸린 자국이 생기면 그 단을 며칠 비운다. 전력 배급이 줄어 여열이 사라지면 거점을 접고 S04로 돌아간다.\n- 행동·위계: 갤러리 안에서도 가족 단위로만 움직이며 다른 가족을 지휘하지 않는다. 점검자가 손전등을 비추면 트레이 뒤로 들어가고, H04가 열원 하나를 군락으로 찍으면 당직이 단 번호로 다시 나눈다.\n- 상승: 1단계에서는 빈 트레이에 털만 쌓인다. 2단계에서는 대체 건조 관 제안이 이 살림과 통신 증설을 맞바꾼다. 3단계에서는 난방을 공유하지 못해 세 가족이 펌프 통로로 내려간다.\n- 교전·대응: 야간 지상 금지 테이프와 지정 단의 제한 개방이 유효하다. 갤러리를 독성 소독으로 비우면 피복과 하류 수질이 함께 상한다. 성과는 송신 가용과 지상 교상이지 제거 수다.\n- 교섭·도덕 선택: 빈 건조 트레이를 대체 은신처로 내주면 G04-SC2의 시장 출몰은 줄지만 S09는 통신 여유를 판다. 난방을 한파 주간에만 공유하면 다른 시설이 추위를 감수한다. 케이블틈살림을 불법 점유로만 지우면 다음 준설·한파 때 비용이 펌프실로 돌아온다.\n- 시나리오 연결: G04-SC2의 대체 건조 관과 G04-SC3의 난방 은신 관이 이 거점의 트레이와 여열을 가리킨다."
+          "prose": "- 역할·신체: 하수너구리족의 환경 거점형으로, S09 여의도출자연합회 지하 케이블 갤러리의 여유 트레이와 환기구 틈에 살림을 차린다. 몸은 케이블 피복에 기름을 묻히지 않으려 배를 들고 이동하며, 송신 가청 주파수에는 반응하지 않고 사람의 장화와 펌프 저주파만 가른다.\n- 기원: 수위가 오를 때 S04 관로에서 분산하던 가족이 갤러리의 마른 열과 빈 트레이를 발견해 정착했다. 통신망을 점령하려는 무리가 아니라 건조 은신의 두 번째 거점이다.\n- 서식: 갤러리 중간의 비어 있는 케이블 단과 환기구 기슭이며, XT04 한파 주간에는 난방 여열이 남는 단으로 붙는다. 여유 공간이 통신 증설로 메워지면 거점이 펌프 접근로 쪽으로 되밀린다.\n- 필요: 마른 열과 트레이 아래 먼지에 섞인 유기 잔여가 유지 자원이다. 대체 은신 관으로 이 공간을 열면 지상 출몰은 줄지만 송신 여유 코어가 줄어든다.\n- 생애·정비: 털에 묻은 케이블 먼지를 환기구 바람에 털고, 피복이 쓸린 자국이 생기면 그 단을 며칠 비운다. 전력 배급이 줄어 여열이 사라지면 거점을 접고 S04로 돌아간다.\n- 행동·위계: 갤러리 안에서도 가족 단위로만 움직이며 다른 가족을 지휘하지 않는다. 점검자가 손전등을 비추면 트레이 뒤로 들어가고, H04가 열원 하나를 군락으로 찍으면 당직이 단 번호로 다시 나눈다.\n- 상승: 1단계에서는 빈 트레이에 털만 쌓인다. 2단계에서는 대체 건조 관 제안이 이 살림과 통신 증설을 맞바꾼다. 3단계에서는 난방을 공유하지 못해 세 가족이 펌프 통로로 내려간다.\n- 교전·대응: 야간 지상 금지 테이프와 지정 단의 제한 개방이 유효하다. 갤러리를 독성 소독으로 비우면 피복과 하류 수질이 함께 상한다. 성과는 송신 가용과 지상 교상이지 제거 수다.\n- 교섭·도덕 선택: 빈 건조 트레이를 대체 은신처로 내주면 G04-SC2의 시장 출몰은 줄지만 S09는 통신 여유를 판다. 난방을 한파 주간에만 공유하면 다른 시설이 추위를 감수한다. 케이블틈살림을 불법 점유로만 지우면 다음 준설·한파 때 비용이 펌프실로 돌아온다.\n- 시나리오 연결: G04-SC2의 대체 건조 관과 G04-SC3의 난방 은신 관이 이 거점의 트레이와 여열을 가리킨다."
         },
         {
           "id": "G04E12",
@@ -47775,7 +47775,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
               "H05"
             ]
           },
-          "prose": "### 역할·신체\n첫 번째 정예로, 먹이와 보온 배관이 겹치는 자리에 앉은 번식 코어의 밀집체다. 고정된 우두머리가 아니며 이동량이 잠시 이곳으로 쏠릴 뿐이다. 수염과 후각은 잔반과 열을 찾고, 먼 적외선 무늬는 구분하지 못한다.\n\n### 기원\nS05 환승 상점가 하부에서 폐점 뒤 떨어지는 탄수화물 부스러기와 배관 누열이 한 구획에 머물며 이 코어가 굳었다. 사람들이 열화상 속 큰 덩어리를 군락 전체로 부르기 시작했으나, 그것은 화면의 한계일 뿐이다.\n\n### 서식\n핵심은 상점가 하부 트레이와 배관이 교차하는 온핵이다. S10 대한불교조계종의 급식 밀도가 오르면 가지가 벽체로 뻗지만, 온핵 자체는 열이 식기 전에는 비우지 않는다.\n\n### 필요·경제\n부스러기 탄수화물과 배관 열이 동시에 있어야 밀도가 유지된다. HC05 북한산보국문기록가이 문서고와 시약 창고를 밀봉해도 급식 잔반이 남으면 온핵은 줄지 않는다.\n\n### 생애·정비\n한 코어를 허물면 개체가 남은 코어로 몰릴 뿐 군락은 붕괴하지 않는다. 잔반 회수와 건조가 모든 구획에서 이어져야 밀도가 내려가고, 눈에 띄는 둥지 제거는 재배치에 그친다.\n\n### 행동·위계\n경로 개척 개체가 가져온 구멍으로 이동량이 모인다. H05는 열점과 야간 배설, 새끼 발자국, 미끼 소실을 함께 대조하기 전에는 온핵을 활성 코어로 적지 않는다.\n\n### 단계적 위협\n1단계에서는 배설과 온열만으로 이 코어가 먼저 보인다. 2단계에서는 이곳만 봉쇄하자 상점 셔터와 다른 트레이로 이동량이 재분배된다. 3단계에서는 잘못된 순서로 급식소 쪽을 닫아 비상 계단으로 온핵의 압력이 쏟아진다.\n\n### 전투·대응\n온핵에 화염을 넣으면 피복이 타며 단락이 앞당겨진다. 단방향 퇴로를 연 뒤 뒤쪽부터 밀폐하고 잔반을 회수하는 편이 기본이며, 성공은 절연 저항과 식품 오염 0건, 통과 시간으로 판단한다.\n\n### 협상·도덕 선택\n보이는 온핵만 급히 제거하면 통로는 잠시 열리지만 반대편 코어가 중심이 되어 다음 단계 비용이 커진다. 모든 코어를 먼저 조사하면 비표적 생물과 피난 동선을 지킬 수 있으나 S05와 S10의 통로 개방은 늦어진다.\n\n### 시나리오 연결\nG05-SC1에서 열화상의 큰 덩어리가 바로 이 온핵이며, G05-SC2의 재밀폐는 온핵 압력을 잘못 밀어 올린 뒤에 시작되고, G05-SC3의 하역 주간에는 온핵 가지가 허브 바닥까지 내려온다."
+          "prose": "### 역할·신체\n첫 번째 정예로, 먹이와 보온 배관이 겹치는 자리에 앉은 번식 코어의 밀집체다. 고정된 우두머리가 아니며 이동량이 잠시 이곳으로 쏠릴 뿐이다. 수염과 후각은 잔반과 열을 찾고, 먼 적외선 무늬는 구분하지 못한다.\n\n### 기원\nS05 환승 상점가 하부에서 폐점 뒤 떨어지는 탄수화물 부스러기와 배관 누열이 한 구획에 머물며 이 코어가 굳었다. 사람들이 열화상 속 큰 덩어리를 군락 전체로 부르기 시작했으나, 그것은 화면의 한계일 뿐이다.\n\n### 서식\n핵심은 상점가 하부 트레이와 배관이 교차하는 온핵이다. S10 승가구휼정의 급식 밀도가 오르면 가지가 벽체로 뻗지만, 온핵 자체는 열이 식기 전에는 비우지 않는다.\n\n### 필요·경제\n부스러기 탄수화물과 배관 열이 동시에 있어야 밀도가 유지된다. HC05 북한산보국문기록가이 문서고와 시약 창고를 밀봉해도 급식 잔반이 남으면 온핵은 줄지 않는다.\n\n### 생애·정비\n한 코어를 허물면 개체가 남은 코어로 몰릴 뿐 군락은 붕괴하지 않는다. 잔반 회수와 건조가 모든 구획에서 이어져야 밀도가 내려가고, 눈에 띄는 둥지 제거는 재배치에 그친다.\n\n### 행동·위계\n경로 개척 개체가 가져온 구멍으로 이동량이 모인다. H05는 열점과 야간 배설, 새끼 발자국, 미끼 소실을 함께 대조하기 전에는 온핵을 활성 코어로 적지 않는다.\n\n### 단계적 위협\n1단계에서는 배설과 온열만으로 이 코어가 먼저 보인다. 2단계에서는 이곳만 봉쇄하자 상점 셔터와 다른 트레이로 이동량이 재분배된다. 3단계에서는 잘못된 순서로 급식소 쪽을 닫아 비상 계단으로 온핵의 압력이 쏟아진다.\n\n### 전투·대응\n온핵에 화염을 넣으면 피복이 타며 단락이 앞당겨진다. 단방향 퇴로를 연 뒤 뒤쪽부터 밀폐하고 잔반을 회수하는 편이 기본이며, 성공은 절연 저항과 식품 오염 0건, 통과 시간으로 판단한다.\n\n### 협상·도덕 선택\n보이는 온핵만 급히 제거하면 통로는 잠시 열리지만 반대편 코어가 중심이 되어 다음 단계 비용이 커진다. 모든 코어를 먼저 조사하면 비표적 생물과 피난 동선을 지킬 수 있으나 S05와 S10의 통로 개방은 늦어진다.\n\n### 시나리오 연결\nG05-SC1에서 열화상의 큰 덩어리가 바로 이 온핵이며, G05-SC2의 재밀폐는 온핵 압력을 잘못 밀어 올린 뒤에 시작되고, G05-SC3의 하역 주간에는 온핵 가지가 허브 바닥까지 내려온다."
         },
         {
           "id": "G05E09",
@@ -48316,7 +48316,7 @@ G01–G24 군과 M001–M039 배치 원장을 등록합니다. 항목 산문은 
               "H06"
             ]
           },
-          "prose": "### 역할·신체\n환경 거점형으로, 넓적한 발과 물에 젖은 가슴깃이 S06 대한민국정부 수변 기록 데크 앞의 얕은 수면을 몸처럼 점유하는 수조류 성체다. 눈은 수면 반사와 작업 조끼 색, 드론 실루엣을 먼저 가르고, 엔진음과 총성·경고 확성은 위험의 거리만 알려 준다. 어분과 부패 냄새에는 반응하지만 전자 신호는 읽지 못하며, 수면이 접히면 거점도 함께 사라진다.\n\n### 기원\n한강·난지·암사 일대의 단절 녹지와 실패 복원 습지에 봄·가을 기착이 겹치면서, 개방 수면을 떼로 지키는 수조류가 이 자리를 고정했다. G06-SC1의 좁아진 수면이 몸의 원형이고, 번식지는 별도 보호 습지에 남아 있다.\n\n### 서식\n평상시 S06의 얕은 수면과 S11 삼성그룹 배수 연못을 오간다. 계절 이동기에는 XT01 임진강관문전구 방향 바람길을 타고 북-남 축을 지나며, 습지가 마르면 내륙 공원 분수로 잠깐 옮긴다. 차량기지 연못은 중간 기착지일 뿐 둥지가 아니다.\n\n### 필요·경제\n수생 식물과 유기 부유물이 에너지다. HC06 노량진배달가이 수문 시야를 위해 수위를 일방 배수하면 이 거점은 S11 연못으로 밀려 열차 충돌 위험이 커지고, 수위를 고정하면 기착 밀도가 오른다. 횃대와 먹이터와 수면 사이 거리가 짧을수록 오래 머문다.\n\n### 생애·정비\n봄과 가을에 섭금류와 함께 먼저 도착하고, 먹이 밀도가 오른 뒤에야 맹금류가 따른다. 수위가 급락하면 수조류가 먼저 떠나 거점이 비며, 깃이 탁한 물에 젖으면 이륙이 늦어져 구내선을 더 오래 가로지른다.\n\n### 행동·위계\n지휘 체계는 없다. 열린거울은 개방 수면을 무리로 점유할 뿐이고, H06 박솔이 레이더 점을 한 적대 점수로 합치면 HC06 생태 당직이 수면 구역과 개체 수로 다시 적는다. 한 기능군이 움직이면 다른 기능군의 공간만 바뀐다.\n\n### 단계적 위협\n1단계에서는 좁은 수면에 수조류가 밀집한다. 2단계에서는 섭금류가 선로변 가장자리까지 넓어지고 맹금류 추격으로 무리가 솟구친다. 3단계에서는 같은 충돌이 세 차례 반복되어 열차 감속과 수면 구획을 함께 정해야 한다.\n\n### 전투·대응\n총격과 대량 그물은 무리를 예측 불가능하게 흩뜨리고 정당성도 잃게 한다. 구획별 수위 조절, 어분 쓰레기 회수, 드론 고도 제한이 기본이다. 성공은 쫓아낸 수가 아니라 수문 시야 확보 시간, 열차와 조류의 충돌 0건, 수질 탁도다.\n\n### 협상·도덕 선택\n펌프를 더 돌려 개방 수면과 진흙 가장자리를 가르면 충돌은 줄지만 노동과 에너지가 늘어난다. 수면을 말려 시야만 얻으면 먼지와 악취가 시민을 치고 다른 포식자가 들어온다. 수조류의 수면만 남기는 보호는 섭금류의 가장자리를 지우는 선택이다.\n\n### 시나리오 연결\nG06-SC1 얕은 물의 세 기능군에서 이 거점이 겹침의 바닥이 되고, G06-SC3 철새 주간의 선로에서 수면 이륙이 교량 보행로를 가로지른다."
+          "prose": "### 역할·신체\n환경 거점형으로, 넓적한 발과 물에 젖은 가슴깃이 S06 대한민국정부 수변 기록 데크 앞의 얕은 수면을 몸처럼 점유하는 수조류 성체다. 눈은 수면 반사와 작업 조끼 색, 드론 실루엣을 먼저 가르고, 엔진음과 총성·경고 확성은 위험의 거리만 알려 준다. 어분과 부패 냄새에는 반응하지만 전자 신호는 읽지 못하며, 수면이 접히면 거점도 함께 사라진다.\n\n### 기원\n한강·난지·암사 일대의 단절 녹지와 실패 복원 습지에 봄·가을 기착이 겹치면서, 개방 수면을 떼로 지키는 수조류가 이 자리를 고정했다. G06-SC1의 좁아진 수면이 몸의 원형이고, 번식지는 별도 보호 습지에 남아 있다.\n\n### 서식\n평상시 S06의 얕은 수면과 S11 서초전산그룹 배수 연못을 오간다. 계절 이동기에는 XT01 임진강관문전구 방향 바람길을 타고 북-남 축을 지나며, 습지가 마르면 내륙 공원 분수로 잠깐 옮긴다. 차량기지 연못은 중간 기착지일 뿐 둥지가 아니다.\n\n### 필요·경제\n수생 식물과 유기 부유물이 에너지다. HC06 노량진배달가이 수문 시야를 위해 수위를 일방 배수하면 이 거점은 S11 연못으로 밀려 열차 충돌 위험이 커지고, 수위를 고정하면 기착 밀도가 오른다. 횃대와 먹이터와 수면 사이 거리가 짧을수록 오래 머문다.\n\n### 생애·정비\n봄과 가을에 섭금류와 함께 먼저 도착하고, 먹이 밀도가 오른 뒤에야 맹금류가 따른다. 수위가 급락하면 수조류가 먼저 떠나 거점이 비며, 깃이 탁한 물에 젖으면 이륙이 늦어져 구내선을 더 오래 가로지른다.\n\n### 행동·위계\n지휘 체계는 없다. 열린거울은 개방 수면을 무리로 점유할 뿐이고, H06 박솔이 레이더 점을 한 적대 점수로 합치면 HC06 생태 당직이 수면 구역과 개체 수로 다시 적는다. 한 기능군이 움직이면 다른 기능군의 공간만 바뀐다.\n\n### 단계적 위협\n1단계에서는 좁은 수면에 수조류가 밀집한다. 2단계에서는 섭금류가 선로변 가장자리까지 넓어지고 맹금류 추격으로 무리가 솟구친다. 3단계에서는 같은 충돌이 세 차례 반복되어 열차 감속과 수면 구획을 함께 정해야 한다.\n\n### 전투·대응\n총격과 대량 그물은 무리를 예측 불가능하게 흩뜨리고 정당성도 잃게 한다. 구획별 수위 조절, 어분 쓰레기 회수, 드론 고도 제한이 기본이다. 성공은 쫓아낸 수가 아니라 수문 시야 확보 시간, 열차와 조류의 충돌 0건, 수질 탁도다.\n\n### 협상·도덕 선택\n펌프를 더 돌려 개방 수면과 진흙 가장자리를 가르면 충돌은 줄지만 노동과 에너지가 늘어난다. 수면을 말려 시야만 얻으면 먼지와 악취가 시민을 치고 다른 포식자가 들어온다. 수조류의 수면만 남기는 보호는 섭금류의 가장자리를 지우는 선택이다.\n\n### 시나리오 연결\nG06-SC1 얕은 물의 세 기능군에서 이 거점이 겹침의 바닥이 되고, G06-SC3 철새 주간의 선로에서 수면 이륙이 교량 보행로를 가로지른다."
         },
         {
           "id": "G06E12",

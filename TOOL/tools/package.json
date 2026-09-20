@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "node policy/normalize-creative-names.mjs && node wiki/test-build-wiki.mjs && node wiki/test-unity-architecture-docs.mjs",
-    "test:names": "node policy/normalize-creative-names.mjs",
+    "test:names": "node policy/normalize-creative-names.mjs && node --test policy/test-private-organization-names.mjs",
     "write:names": "node policy/normalize-creative-names.mjs --write",
     "test:design-store": "node --test store/test-design-store-capture.mjs",
     "test:mda-store": "node --test design-store/test-mda-store.mjs",
