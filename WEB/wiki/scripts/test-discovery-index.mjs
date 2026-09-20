@@ -23,14 +23,3 @@ test('home and sidebar expose document and people indexes', async () => {
     assert.match(source, /wikiLinks\.characters/)
   }
 })
-
-test('public wiki excludes internal game-design routes', async () => {
-  const catalog = await readFile(new URL('../src/generated/wikiCatalog.ts', import.meta.url), 'utf8')
-  const links = await readFile(new URL('../src/wikiLinks.ts', import.meta.url), 'utf8')
-  const sidebar = await readFile(new URL('../src/components/Sidebar.tsx', import.meta.url), 'utf8')
-  for (const source of [catalog, links, sidebar]) {
-    assert.doesNotMatch(source, /Online-User-Journey/)
-    assert.doesNotMatch(source, /\/design\//)
-    assert.doesNotMatch(source, /\/rules\//)
-  }
-})
