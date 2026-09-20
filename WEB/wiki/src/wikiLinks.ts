@@ -4,7 +4,6 @@ export const wikiLinks = {
   documents: '/documents',
   worldIndex: '/world/',
   overview: '/world/World-Unbinding',
-  onlineJourney: '/design/Online-User-Journey',
   timeline: '/world/Scenario-Timeline',
   offices: '/world/Offices-and-Ranks',
   houses: '/world/Chaebol-Houses-and-Century-Factions',
@@ -25,6 +24,4 @@ export const wikiLinks = {
   logistics: '/world/Logistics-and-Infrastructure',
   peopleAndMachines: '/world/People-and-Machines',
   ailments: '/world/Ailments',
-  rules: '/rules/',
-  design: '/design/',
 } as const

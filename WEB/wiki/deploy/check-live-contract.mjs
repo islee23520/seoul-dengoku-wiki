@@ -12,8 +12,6 @@ const compatibilityRoutes = [
   '/wiki/world/World-Unbinding.html',
   '/wiki/world/World-Unbinding',
   '/wiki/world/',
-  '/wiki/rules/',
-  '/wiki/design/',
 ]
 const regressionRoutes = ['/', '/wiki/', '/wiki/states', '/play/']
 const removedRoutes = ['/system-design/regions/']

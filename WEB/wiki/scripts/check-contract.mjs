@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = resolve(projectRoot, '../..')
-const domains = ['world', 'rules', 'design']
+const domains = ['world']
 const outputArg = process.argv.indexOf('--json')
 const outputPath = outputArg >= 0 ? process.argv[outputArg + 1] : null
 
@@ -63,7 +63,7 @@ for (const domain of domains) {
       const href = match[1]
       if (!href.startsWith('http') && /\.html(?:#|$)/i.test(href)) failures.push(`legacy-content-link:${domain}/${name}:${href}`)
       if (!href.startsWith('/') && !href.startsWith('#') && !href.startsWith('http')) failures.push(`relative-content-link:${domain}/${name}:${href}`)
-      if (/^\/(world|rules|design)\//.test(href)) {
+      if (/^\/world\//.test(href)) {
         const route = href.split('#', 1)[0]
         if (!catalogSource.includes(`route: '${route}'`)) failures.push(`unregistered-content-link:${domain}/${name}:${href}`)
       }
