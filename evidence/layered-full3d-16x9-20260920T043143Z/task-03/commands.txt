@@ -2,18 +2,19 @@
 
 Worktree: worktree `layered-full3d-16x9-wave1-clean`, branch `feat/layered-full3d-16x9-wave1-clean`
 Evidence dir: evidence/layered-full3d-16x9-20260920T043143Z/task-03
-K3 (implementation commit): 141c6dd5e2d6a217424a4d32c736a3386b6b81dd
+K3b (implementation commit): 12ba7383bcd9a6f2dae93fbe29edb2700832ffd8
 
-## 1. RED (behavioral) — 새 테스트 52개를 HEAD 965ab671 동작에 대해 실행
-HEAD 모놀리스를 계약 어댑터로 분리한 임시 트리(/tmp/red-state/repo)에서 실행:
-$ node TOOL/tools/strategy-map/test-osm-pbf-reader.mjs      -> exit=1, tests 26 / pass 3 / fail 23
-$ node TOOL/tools/strategy-map/test-subway-topology.mjs    -> exit=1, tests 26 / pass 0 / fail 26
-실패 전부 행위 단정(경계 거절 코드 부재, 331<334, 처분/카테고리 부재, 모듈 미존재 아님).
+## 1. RED (behavioral) — 새 테스트를 HEAD 965ab671 동작에 대해 실행
+HEAD 모놀리스를 task-03/red의 범위 제한 어댑터로 연결한 임시 트리에서 실행:
+$ node TOOL/tools/strategy-map/test-osm-pbf-reader.mjs      -> exit=1, tests 32 / pass 30 / fail 2
+$ node TOOL/tools/strategy-map/test-subway-topology.mjs    -> exit=1, tests 26 / pass 23 / fail 3
+토폴로지 26개는 모두 prior 구현의 alias/role/security/output 행위 단정으로 실패했으며 ReferenceError/module-missing이 없다. 리더 로그는 prior reader의 경계 동작 부재를 행위 실패로 기록한다.
 로그: red/red-reader-head-behavior.txt, red/red-topology-head-behavior.txt
+어댑터: red/red-reader-adapter.mjs, red/red-topology-adapter.mjs
 
-## 2. GREEN — K3 구현으로 재실행
-$ node TOOL/tools/strategy-map/test-osm-pbf-reader.mjs      -> exit=0, tests 26 / pass 26
-$ node TOOL/tools/strategy-map/test-subway-topology.mjs    -> exit=0, tests 26 / pass 26
+## 2. GREEN — K3b 구현으로 재실행
+$ node TOOL/tools/strategy-map/test-osm-pbf-reader.mjs      -> exit=0, tests 32 / pass 32 / fail 0 / skipped 0
+$ node TOOL/tools/strategy-map/test-subway-topology.mjs    -> exit=0, tests 26 / pass 26 / fail 0 / skipped 0
 로그: green/green-reader.txt, green/green-topology.txt
 
 ## 3. 실빌드 2회 + 결정론

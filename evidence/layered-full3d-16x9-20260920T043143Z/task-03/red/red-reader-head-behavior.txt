@@ -1,45 +1,60 @@
-✔ valid minimal PBF parses through the bounded reader (0.992792ms)
-✖ oversized blob header length is rejected by default limits (0.101875ms)
-✖ oversized blob body is rejected before allocation (2.043625ms)
-✔ blob at the exact byte boundary is accepted (0.091416ms)
-✖ decompression bomb exceeding default maxRawBytes is rejected (509.776625ms)
-✖ decompression bomb is rejected against a small maxRawBytes override (0.437375ms)
-✔ inflated output exactly at maxRawBytes boundary succeeds (0.250541ms)
-✖ raw and zlib payloads are mutually exclusive (0.142792ms)
-✖ blob with neither raw nor zlib payload is rejected (0.113375ms)
-✖ raw_size must match the actual payload length (0.118084ms)
-✖ varint longer than 10 bytes is rejected (0.1855ms)
-✖ unsafe integer ids beyond the safe range are rejected (0.120875ms)
-✖ packed arrays above maxPackedValues are rejected (0.12675ms)
-✖ dense ids and lats length mismatch is rejected (0.129292ms)
-✖ relation memids/roles/types length mismatch is rejected (0.130959ms)
-✖ plain node keys/vals length mismatch is rejected (0.1575ms)
-✖ dense keys_vals unterminated run is rejected (0.090125ms)
-✖ string table index out of range is rejected (0.096292ms)
-✖ OSMData before OSMHeader is rejected (0.088708ms)
-✖ duplicate OSMHeader is rejected (0.0875ms)
-✖ missing OSMHeader is rejected (0.067042ms)
-✖ field number 0 is rejected (0.071833ms)
-✖ unsupported wire type is rejected (0.091834ms)
-✖ duplicate singular field is rejected (0.098875ms)
-✖ file beyond maxTotalPbfBytes is rejected (0.088208ms)
-✖ readEntities keeps wanted ways and their node coordinates (0.127041ms)
-ℹ tests 26
+✖ valid minimal PBF parses through the bounded reader (1.0185ms)
+✖ oversized blob header length is rejected by default limits (0.129583ms)
+✖ oversized blob body is rejected before allocation (0.049208ms)
+✔ blob at the exact byte boundary is accepted (0.131583ms)
+✖ decompression bomb exceeding default maxRawBytes is rejected (535.066583ms)
+✖ decompression bomb is rejected against a small maxRawBytes override (0.503958ms)
+✔ inflated output exactly at maxRawBytes boundary succeeds (0.260375ms)
+✖ raw and zlib payloads are mutually exclusive (0.155333ms)
+✖ blob with neither raw nor zlib payload is rejected (0.111417ms)
+✖ raw_size must match the actual payload length (0.118208ms)
+✖ varint longer than 10 bytes is rejected (0.199958ms)
+✖ unsafe integer ids beyond the safe range are rejected (0.118084ms)
+✖ packed arrays above maxPackedValues are rejected (0.13ms)
+✖ dense ids and lats length mismatch is rejected (0.110041ms)
+✖ relation memids/roles/types length mismatch is rejected (0.160542ms)
+✖ plain node keys/vals length mismatch is rejected (0.159209ms)
+✖ dense keys_vals unterminated run is rejected (0.087834ms)
+✖ string table index out of range is rejected (0.097417ms)
+✖ OSMData before OSMHeader is rejected (0.082542ms)
+✖ duplicate OSMHeader is rejected (0.082083ms)
+✖ missing OSMHeader is rejected (0.067667ms)
+✖ field number 0 is rejected (0.071875ms)
+✖ unsupported wire type is rejected (0.102208ms)
+✖ duplicate singular field is rejected (0.085125ms)
+✖ file beyond maxTotalPbfBytes is rejected (0.089625ms)
+✖ cumulative dense id deltas that collapse at 2^53 are rejected (0.215ms)
+✖ cumulative id overflow beyond int64 is rejected (0.104ms)
+✖ negative underflow below int64 is rejected (0.088459ms)
+✖ lat accumulation beyond the safe integer range is rejected before coordinate math (0.075833ms)
+✖ way ref accumulation beyond the safe integer range is rejected (0.122292ms)
+✖ readEntities honors the maxTotalPbfBytes override below, equal, and above (0.1585ms)
+✖ readEntities keeps wanted ways and their node coordinates (0.094708ms)
+ℹ tests 32
 ℹ suites 0
-ℹ pass 3
-ℹ fail 23
+ℹ pass 2
+ℹ fail 30
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 519.061375
+ℹ duration_ms 543.602708
 
 ✖ failing tests:
 
+test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:77:1
+✖ valid minimal PBF parses through the bounded reader (1.0185ms)
+  TypeError: Cannot read properties of undefined (reading 'length')
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:79:26)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17)
+
 test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:83:1
-✖ oversized blob header length is rejected by default limits (0.101875ms)
-  RangeError [ERR_OUT_OF_RANGE]: The value of "size" is out of range. It must be >= 0 && <= 9007199254740991. Received 9_007_199_254_740_992
+✖ oversized blob header length is rejected by default limits (0.129583ms)
+  RangeError [ERR_OUT_OF_RANGE]: The value of "size" is out of range. It must be >= 0 && <= 9007199254740991. Received NaN
       at Buffer.alloc (node:buffer:434:3)
-      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:84:23)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:84:23)
       at Test.runInAsyncScope (node:async_hooks:226:14)
       at Test.run (node:internal/test_runner/test:1382:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
@@ -50,33 +65,26 @@ test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:83:1
   }
 
 test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:92:1
-✖ oversized blob body is rejected before allocation (2.043625ms)
-  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
-  
-    assert.ok(err instanceof PbfLimitError)
-  
-      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:98:10)
+✖ oversized blob body is rejected before allocation (0.049208ms)
+  RangeError: The number NaN cannot be converted to a BigInt because it is not an integer
+      at BigInt (<anonymous>)
+      at pv (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:11:11)
+      at vint (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:22:56)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:93:63)
       at Test.runInAsyncScope (node:async_hooks:226:14)
       at Test.run (node:internal/test_runner/test:1382:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
       at Test.postRun (node:internal/test_runner/test:1522:19)
       at Test.run (node:internal/test_runner/test:1447:12)
-      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
-    generatedMessage: true,
-    code: 'ERR_ASSERTION',
-    actual: false,
-    expected: true,
-    operator: '==',
-    diff: 'simple'
-  }
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
 
 test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:112:1
-✖ decompression bomb exceeding default maxRawBytes is rejected (509.776625ms)
+✖ decompression bomb exceeding default maxRawBytes is rejected (535.066583ms)
   AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
   
     assert.ok(err instanceof PbfLimitError)
   
-      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:116:10)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:116:10)
       at Test.runInAsyncScope (node:async_hooks:226:14)
       at Test.run (node:internal/test_runner/test:1382:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
@@ -92,12 +100,12 @@ test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:112:1
   }
 
 test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:120:1
-✖ decompression bomb is rejected against a small maxRawBytes override (0.437375ms)
+✖ decompression bomb is rejected against a small maxRawBytes override (0.503958ms)
   AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
   
     assert.ok(err instanceof PbfLimitError)
   
-      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:124:10)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:124:10)
       at Test.runInAsyncScope (node:async_hooks:226:14)
       at Test.run (node:internal/test_runner/test:1382:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
@@ -113,12 +121,12 @@ test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:120:1
   }
 
 test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:136:1
-✖ raw and zlib payloads are mutually exclusive (0.142792ms)
+✖ raw and zlib payloads are mutually exclusive (0.155333ms)
   AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
   
     assert.ok(err instanceof PbfLimitError)
   
-      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:140:10)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:140:10)
       at Test.runInAsyncScope (node:async_hooks:226:14)
       at Test.run (node:internal/test_runner/test:1382:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
@@ -134,12 +142,12 @@ test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:136:1
   }
 
 test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:144:1
-✖ blob with neither raw nor zlib payload is rejected (0.113375ms)
+✖ blob with neither raw nor zlib payload is rejected (0.111417ms)
   AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
   
     assert.ok(err instanceof PbfLimitError)
   
-      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:147:10)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:147:10)
       at Test.runInAsyncScope (node:async_hooks:226:14)
       at Test.run (node:internal/test_runner/test:1382:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
@@ -155,12 +163,12 @@ test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:144:1
   }
 
 test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:151:1
-✖ raw_size must match the actual payload length (0.118084ms)
+✖ raw_size must match the actual payload length (0.118208ms)
   AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
   
     assert.ok(errRaw instanceof PbfLimitError)
   
-      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:155:10)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:155:10)
       at Test.runInAsyncScope (node:async_hooks:226:14)
       at Test.run (node:internal/test_runner/test:1382:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
@@ -176,12 +184,12 @@ test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:151:1
   }
 
 test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:164:1
-✖ varint longer than 10 bytes is rejected (0.1855ms)
+✖ varint longer than 10 bytes is rejected (0.199958ms)
   AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
   
     assert.ok(err instanceof PbfLimitError)
   
-      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:168:10)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:168:10)
       at Test.runInAsyncScope (node:async_hooks:226:14)
       at Test.run (node:internal/test_runner/test:1382:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
@@ -197,12 +205,12 @@ test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:164:1
   }
 
 test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:172:1
-✖ unsafe integer ids beyond the safe range are rejected (0.120875ms)
+✖ unsafe integer ids beyond the safe range are rejected (0.118084ms)
   AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
   
     assert.ok(err instanceof PbfLimitError)
   
-      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:179:10)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:179:10)
       at Test.runInAsyncScope (node:async_hooks:226:14)
       at Test.run (node:internal/test_runner/test:1382:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
@@ -218,12 +226,12 @@ test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:172:1
   }
 
 test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:183:1
-✖ packed arrays above maxPackedValues are rejected (0.12675ms)
+✖ packed arrays above maxPackedValues are rejected (0.13ms)
   AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
   
     assert.ok(err instanceof PbfLimitError)
   
-      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:188:10)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:188:10)
       at Test.runInAsyncScope (node:async_hooks:226:14)
       at Test.run (node:internal/test_runner/test:1382:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
@@ -239,12 +247,12 @@ test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:183:1
   }
 
 test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:194:1
-✖ dense ids and lats length mismatch is rejected (0.129292ms)
+✖ dense ids and lats length mismatch is rejected (0.110041ms)
   AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
   
     assert.ok(err instanceof PbfLimitError)
   
-      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:198:10)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:198:10)
       at Test.runInAsyncScope (node:async_hooks:226:14)
       at Test.run (node:internal/test_runner/test:1382:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
@@ -260,12 +268,12 @@ test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:194:1
   }
 
 test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:202:1
-✖ relation memids/roles/types length mismatch is rejected (0.130959ms)
+✖ relation memids/roles/types length mismatch is rejected (0.160542ms)
   AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
   
     assert.ok(err instanceof PbfLimitError)
   
-      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:206:10)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:206:10)
       at Test.runInAsyncScope (node:async_hooks:226:14)
       at Test.run (node:internal/test_runner/test:1382:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
@@ -281,12 +289,12 @@ test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:202:1
   }
 
 test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:210:1
-✖ plain node keys/vals length mismatch is rejected (0.1575ms)
+✖ plain node keys/vals length mismatch is rejected (0.159209ms)
   AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
   
     assert.ok(err instanceof PbfLimitError)
   
-      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:214:10)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:214:10)
       at Test.runInAsyncScope (node:async_hooks:226:14)
       at Test.run (node:internal/test_runner/test:1382:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
@@ -302,12 +310,12 @@ test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:210:1
   }
 
 test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:218:1
-✖ dense keys_vals unterminated run is rejected (0.090125ms)
+✖ dense keys_vals unterminated run is rejected (0.087834ms)
   AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
   
     assert.ok(err instanceof PbfLimitError)
   
-      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:222:10)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:222:10)
       at Test.runInAsyncScope (node:async_hooks:226:14)
       at Test.run (node:internal/test_runner/test:1382:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
@@ -323,12 +331,12 @@ test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:218:1
   }
 
 test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:226:1
-✖ string table index out of range is rejected (0.096292ms)
+✖ string table index out of range is rejected (0.097417ms)
   AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
   
     assert.ok(err instanceof PbfLimitError)
   
-      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:230:10)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:230:10)
       at Test.runInAsyncScope (node:async_hooks:226:14)
       at Test.run (node:internal/test_runner/test:1382:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
@@ -344,12 +352,12 @@ test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:226:1
   }
 
 test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:236:1
-✖ OSMData before OSMHeader is rejected (0.088708ms)
+✖ OSMData before OSMHeader is rejected (0.082542ms)
   AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
   
     assert.ok(err instanceof PbfLimitError)
   
-      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:239:10)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:239:10)
       at Test.runInAsyncScope (node:async_hooks:226:14)
       at Test.run (node:internal/test_runner/test:1382:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
@@ -365,12 +373,12 @@ test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:236:1
   }
 
 test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:243:1
-✖ duplicate OSMHeader is rejected (0.0875ms)
+✖ duplicate OSMHeader is rejected (0.082083ms)
   AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
   
     assert.ok(err instanceof PbfLimitError)
   
-      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:246:10)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:246:10)
       at Test.runInAsyncScope (node:async_hooks:226:14)
       at Test.run (node:internal/test_runner/test:1382:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
@@ -386,12 +394,12 @@ test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:243:1
   }
 
 test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:250:1
-✖ missing OSMHeader is rejected (0.067042ms)
+✖ missing OSMHeader is rejected (0.067667ms)
   AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
   
     assert.ok(err instanceof PbfLimitError)
   
-      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:252:10)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:252:10)
       at Test.runInAsyncScope (node:async_hooks:226:14)
       at Test.run (node:internal/test_runner/test:1382:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
@@ -407,12 +415,12 @@ test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:250:1
   }
 
 test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:256:1
-✖ field number 0 is rejected (0.071833ms)
+✖ field number 0 is rejected (0.071875ms)
   AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
   
     assert.ok(err instanceof PbfLimitError)
   
-      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:259:10)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:259:10)
       at Test.runInAsyncScope (node:async_hooks:226:14)
       at Test.run (node:internal/test_runner/test:1382:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
@@ -428,12 +436,12 @@ test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:256:1
   }
 
 test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:263:1
-✖ unsupported wire type is rejected (0.091834ms)
+✖ unsupported wire type is rejected (0.102208ms)
   AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
   
     assert.ok(err instanceof PbfLimitError)
   
-      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:267:10)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:267:10)
       at Test.runInAsyncScope (node:async_hooks:226:14)
       at Test.run (node:internal/test_runner/test:1382:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
@@ -449,12 +457,12 @@ test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:263:1
   }
 
 test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:271:1
-✖ duplicate singular field is rejected (0.098875ms)
+✖ duplicate singular field is rejected (0.085125ms)
   AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
   
     assert.ok(err instanceof PbfLimitError)
   
-      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:275:10)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:275:10)
       at Test.runInAsyncScope (node:async_hooks:226:14)
       at Test.run (node:internal/test_runner/test:1382:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
@@ -470,12 +478,12 @@ test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:271:1
   }
 
 test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:279:1
-✖ file beyond maxTotalPbfBytes is rejected (0.088208ms)
+✖ file beyond maxTotalPbfBytes is rejected (0.089625ms)
   AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
   
     assert.ok(err instanceof PbfLimitError)
   
-      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:282:10)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:282:10)
       at Test.runInAsyncScope (node:async_hooks:226:14)
       at Test.run (node:internal/test_runner/test:1382:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
@@ -491,9 +499,117 @@ test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:279:1
   }
 
 test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:288:1
-✖ readEntities keeps wanted ways and their node coordinates (0.127041ms)
+✖ cumulative dense id deltas that collapse at 2^53 are rejected (0.215ms)
+  AssertionError [ERR_ASSERTION]: expected PbfLimitError, got null
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:294:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:298:1
+✖ cumulative id overflow beyond int64 is rejected (0.104ms)
+  AssertionError [ERR_ASSERTION]: expected PbfLimitError, got null
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:303:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:307:1
+✖ negative underflow below int64 is rejected (0.088459ms)
+  AssertionError [ERR_ASSERTION]: expected PbfLimitError, got null
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:312:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:316:1
+✖ lat accumulation beyond the safe integer range is rejected before coordinate math (0.075833ms)
+  AssertionError [ERR_ASSERTION]: expected PbfLimitError, got null
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:321:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:325:1
+✖ way ref accumulation beyond the safe integer range is rejected (0.122292ms)
+  AssertionError [ERR_ASSERTION]: expected PbfLimitError, got null
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:330:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:334:1
+✖ readEntities honors the maxTotalPbfBytes override below, equal, and above (0.1585ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:336:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /file_too_large|pbf:/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:347:1
+✖ readEntities keeps wanted ways and their node coordinates (0.094708ms)
   TypeError: Cannot read properties of undefined (reading 'refs')
-      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:293:29)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-Us6Xth/TOOL/tools/strategy-map/test-osm-pbf-reader.mjs:352:29)
       at Test.runInAsyncScope (node:async_hooks:226:14)
       at Test.run (node:internal/test_runner/test:1382:25)
       at Test.processPendingSubtests (node:internal/test_runner/test:960:18)

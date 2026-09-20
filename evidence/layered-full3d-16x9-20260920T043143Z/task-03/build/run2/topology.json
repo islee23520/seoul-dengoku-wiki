@@ -34905,7 +34905,32 @@
           "anchor-ref"
         ]
       },
-      "buildingRefs": []
+      "buildingRefs": [
+        {
+          "anchor": "osm:node:11023972804",
+          "name": "경복초등학교",
+          "observedUse": "학교",
+          "role": "support"
+        },
+        {
+          "anchor": "osm:node:368622792",
+          "name": "선화예술고등학교",
+          "observedUse": "학교",
+          "role": "support"
+        },
+        {
+          "anchor": "osm:node:368899079",
+          "name": "구의2동 주민센터",
+          "observedUse": "주민센터",
+          "role": "support"
+        },
+        {
+          "anchor": "osm:node:6039313612",
+          "name": "아차산",
+          "observedUse": "역",
+          "role": "core-station"
+        }
+      ]
     },
     {
       "id": "아현",
@@ -37973,7 +37998,32 @@
           "anchor-ref"
         ]
       },
-      "buildingRefs": []
+      "buildingRefs": [
+        {
+          "anchor": "osm:node:368900391",
+          "name": "장안1동 주민센터",
+          "observedUse": "주민센터",
+          "role": "support"
+        },
+        {
+          "anchor": "osm:node:368921864",
+          "name": "장평중학교",
+          "observedUse": "학교",
+          "role": "support"
+        },
+        {
+          "anchor": "osm:node:4639712057",
+          "name": "영동병원",
+          "observedUse": "병원",
+          "role": "support"
+        },
+        {
+          "anchor": "osm:node:6039313616",
+          "name": "장한평",
+          "observedUse": "역",
+          "role": "core-station"
+        }
+      ]
     },
     {
       "id": "정릉",

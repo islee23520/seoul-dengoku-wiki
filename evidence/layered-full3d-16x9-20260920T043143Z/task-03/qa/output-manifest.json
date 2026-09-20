@@ -1,117 +1,127 @@
 {
   "schema": "task03-output-manifest-v1",
-  "k3": "141c6dd5e2d6a217424a4d32c736a3386b6b81dd",
-  "note": "output-manifest.json 자신은 제외; RED/GREEN 로그 .txt 개명 반영판",
+  "k3": "12ba7383bcd9a6f2dae93fbe29edb2700832ffd8",
+  "note": "output-manifest.json 자신은 제외; K3b 증거 및 RED/GREEN 로그 반영",
   "files": [
     {
-      "path": "task-03/cleanup.json",
-      "bytes": 659,
-      "sha256": "9874c1d72ec6e33d78d1a7da64f866efd8b9f06984ae07100554b741b1ba382f"
+      "path": "build/determinism.txt",
+      "bytes": 167,
+      "sha256": "8664b65603241732948ba190eb9a154ce521fb4b58875152ad46af0785080f2d"
     },
     {
-      "path": "task-03/commands.txt",
-      "bytes": 2318,
-      "sha256": "f63941ee09be2feb9dab2a85d0bce32d1c2bd3eb86e727c667d82105007d59c1"
-    },
-    {
-      "path": "task-03/coverage.json",
-      "bytes": 42221,
-      "sha256": "042e4fbf795ca7251317bff8b6a873dba53d13238ce1b1347f59848208c94fec"
-    },
-    {
-      "path": "task-03/quality-review.md",
-      "bytes": 3457,
-      "sha256": "3bc88f80970de74063f5b0cdcf98f1beb1e7b1529c6f91dadeb75ddf612ed2c1"
-    },
-    {
-      "path": "task-03/topology.json",
-      "bytes": 12642066,
-      "sha256": "e56b03848cf66f969fbf36cfb25a87efdeeb0d31508cb10cf63447bb7c6a95bf"
-    },
-    {
-      "path": "task-03/build/determinism.txt",
-      "bytes": 662,
-      "sha256": "6a0353584975f4697e990ece4eae4078c44e6d2906dae9f49d7265fcc81d1a76"
-    },
-    {
-      "path": "task-03/build/run1-stdout.json",
+      "path": "build/run1-stdout.json",
       "bytes": 764,
       "sha256": "dbd6fa629f863805375ff334f3a3840d2d96526e220c4dab53fc28ed1b322789"
     },
     {
-      "path": "task-03/build/run2-stdout.json",
+      "path": "build/run1/coverage.json",
+      "bytes": 42221,
+      "sha256": "c788ec0f076ad73b8056ab3216f06ba6dd769a3e3e25f010615a3b5bdf20a3fb"
+    },
+    {
+      "path": "build/run1/topology.json",
+      "bytes": 12643416,
+      "sha256": "29c8dcc155808cfcc08f9ad9c04596512e6b0d0fa5bc9abac0f0b853399389e0"
+    },
+    {
+      "path": "build/run2-stdout.json",
       "bytes": 764,
       "sha256": "3e5326a8511da0335a4c4b371af878d4254fd30fc2cf9e00f4b1a41cc0a44f48"
     },
     {
-      "path": "task-03/build/run1/coverage.json",
+      "path": "build/run2/coverage.json",
       "bytes": 42221,
-      "sha256": "042e4fbf795ca7251317bff8b6a873dba53d13238ce1b1347f59848208c94fec"
+      "sha256": "c788ec0f076ad73b8056ab3216f06ba6dd769a3e3e25f010615a3b5bdf20a3fb"
     },
     {
-      "path": "task-03/build/run1/topology.json",
-      "bytes": 12642066,
-      "sha256": "e56b03848cf66f969fbf36cfb25a87efdeeb0d31508cb10cf63447bb7c6a95bf"
+      "path": "build/run2/topology.json",
+      "bytes": 12643416,
+      "sha256": "29c8dcc155808cfcc08f9ad9c04596512e6b0d0fa5bc9abac0f0b853399389e0"
     },
     {
-      "path": "task-03/build/run2/coverage.json",
+      "path": "cleanup.json",
+      "bytes": 270,
+      "sha256": "35241e4184acdbd9d81f3b9365143bb8a97b012ee924baeb30a4a4e7f830384b"
+    },
+    {
+      "path": "commands.txt",
+      "bytes": 2542,
+      "sha256": "f2c737af67c1106f3168536c531670b9f1801891d01ca31126c398bb1d66737d"
+    },
+    {
+      "path": "coverage.json",
       "bytes": 42221,
-      "sha256": "042e4fbf795ca7251317bff8b6a873dba53d13238ce1b1347f59848208c94fec"
+      "sha256": "c788ec0f076ad73b8056ab3216f06ba6dd769a3e3e25f010615a3b5bdf20a3fb"
     },
     {
-      "path": "task-03/build/run2/topology.json",
-      "bytes": 12642066,
-      "sha256": "e56b03848cf66f969fbf36cfb25a87efdeeb0d31508cb10cf63447bb7c6a95bf"
+      "path": "green/green-reader.txt",
+      "bytes": 2236,
+      "sha256": "2f22ab46669e4969af0c96a7d49b61f1fc0361c763a06aeb775124f1b9516de7"
     },
     {
-      "path": "task-03/green/green-reader.txt",
-      "bytes": 1761,
-      "sha256": "3b2db0215addbb41c16237af5e32f356d42fe45e3abef0510c340675cf68dc79"
+      "path": "green/green-topology.txt",
+      "bytes": 2438,
+      "sha256": "ec9c03ee110678635becaa328beb894d4f9703fdf4f3d33d8400b4903828c48b"
     },
     {
-      "path": "task-03/green/green-topology.txt",
-      "bytes": 2434,
-      "sha256": "9e2779ec0258677ab7af24630c74c42d3378e491099fa7b3d9db092665f2c367"
-    },
-    {
-      "path": "task-03/qa/pyosmium-oracle.json",
+      "path": "qa/pyosmium-oracle.json",
       "bytes": 851,
       "sha256": "822c735995d66e3732089b43058f1c47d76c3c449ffd69e7013cff2b63e9c91a"
     },
     {
-      "path": "task-03/qa/st_01a0bcbb-manual-qa.md",
+      "path": "qa/st_01a0bcbb-manual-qa.md",
       "bytes": 8873,
       "sha256": "9e21991ab28f58e3115b1a4610a5c8f37691ea294cf763686515e4acb944367a"
     },
     {
-      "path": "task-03/qa/test-inventory-reader.txt",
-      "bytes": 1213,
-      "sha256": "cfbf0468b44090f17dd5dd5eb8727725dfe975f49df65b2f85545feee5fbf9fd"
+      "path": "qa/test-inventory-reader.txt",
+      "bytes": 2280,
+      "sha256": "d04d5fb7383cf1e011bc777fbeb1c12f04c4eba56290d728fc069d5d5d976977"
     },
     {
-      "path": "task-03/qa/test-inventory-topology.txt",
-      "bytes": 1868,
-      "sha256": "eaebae857c11d1df01884acc4931faca8983173e22a98a84690a54215e3544e6"
+      "path": "qa/test-inventory-topology.txt",
+      "bytes": 2463,
+      "sha256": "c213c7695e3d65f12755497daf7faa5cedddae42278c787f4d96e5c34ab084a8"
     },
     {
-      "path": "task-03/qa/verification.json",
+      "path": "qa/verification.json",
       "bytes": 351,
-      "sha256": "028351568d72bfb06d3051dacfffd56790cbd0ebf245fa792d507ed4e79f5761"
+      "sha256": "eb984c8cb4df0c4ce5ab03a6492b3a740d16819fa0face5c0a23ff7c4b0e8edb"
     },
     {
-      "path": "task-03/qa/verify-task03-evidence.mjs",
+      "path": "qa/verify-task03-evidence.mjs",
       "bytes": 8408,
       "sha256": "4dd1c9f3681357c7fd822c8a17c570faa0ac017e2248104661fdb3440fdb4999"
     },
     {
-      "path": "task-03/red/red-reader-head-behavior.txt",
-      "bytes": 22536,
-      "sha256": "43dbd5450243c654b846ec000197ec5a7470c5edb3e8be703de90132bb8a0c37"
+      "path": "quality-review.md",
+      "bytes": 3484,
+      "sha256": "78795a6d15018a35cf683e007804a3c4c902dfbd077bd1ca0b25f4d585daaf5f"
     },
     {
-      "path": "task-03/red/red-topology-head-behavior.txt",
-      "bytes": 28285,
-      "sha256": "4359bb2069f0bd278b090ff66946c5a981c9fc93778be254bdf792033880905b"
+      "path": "red/red-reader-adapter.mjs",
+      "bytes": 692,
+      "sha256": "a7cc6c17b0ead9b3bbcbcace10efd79b374344dcba77acba7ae2c29c803251b1"
+    },
+    {
+      "path": "red/red-reader-head-behavior.txt",
+      "bytes": 28922,
+      "sha256": "dd293a1ca844ae05606f5ef5d87e16466eece50f297b47a8093f5773d84c2d44"
+    },
+    {
+      "path": "red/red-topology-adapter.mjs",
+      "bytes": 1409,
+      "sha256": "853201cec620769e81d0f6071dbd7d1075bb60b8380427ec14d2bca0cc47ce1e"
+    },
+    {
+      "path": "red/red-topology-head-behavior.txt",
+      "bytes": 26184,
+      "sha256": "4d7fd6f1625c3fdefdb8f44af17182b580dcf6af23030c8016cca347a7e20268"
+    },
+    {
+      "path": "topology.json",
+      "bytes": 12643416,
+      "sha256": "29c8dcc155808cfcc08f9ad9c04596512e6b0d0fa5bc9abac0f0b853399389e0"
     }
   ]
 }

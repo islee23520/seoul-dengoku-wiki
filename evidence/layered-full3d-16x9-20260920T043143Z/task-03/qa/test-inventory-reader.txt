@@ -1,26 +1,34 @@
-valid minimal PBF parses through the bounded reader
-oversized blob header length is rejected by default limits
-oversized blob body is rejected before allocation
-blob at the exact byte boundary is accepted
-decompression bomb exceeding default maxRawBytes is rejected
-decompression bomb is rejected against a small maxRawBytes override
-inflated output exactly at maxRawBytes boundary succeeds
-raw and zlib payloads are mutually exclusive
-blob with neither raw nor zlib payload is rejected
-raw_size must match the actual payload length
-varint longer than 10 bytes is rejected
-unsafe integer ids beyond the safe range are rejected
-packed arrays above maxPackedValues are rejected
-dense ids and lats length mismatch is rejected
-relation memids/roles/types length mismatch is rejected
-plain node keys/vals length mismatch is rejected
-dense keys_vals unterminated run is rejected
-string table index out of range is rejected
-OSMData before OSMHeader is rejected
-duplicate OSMHeader is rejected
-missing OSMHeader is rejected
-field number 0 is rejected
-unsupported wire type is rejected
-duplicate singular field is rejected
-file beyond maxTotalPbfBytes is rejected
-readEntities keeps wanted ways and their node coordinates
+source=TOOL/tools/strategy-map/test-osm-pbf-reader.mjs
+tests=32
+1. test('valid minimal PBF parses through the bounded reader', () => {
+2. test('oversized blob header length is rejected by default limits', () => {
+3. test('oversized blob body is rejected before allocation', () => {
+4. test('blob at the exact byte boundary is accepted', () => {
+5. test('decompression bomb exceeding default maxRawBytes is rejected', () => {
+6. test('decompression bomb is rejected against a small maxRawBytes override', () => {
+7. test('inflated output exactly at maxRawBytes boundary succeeds', () => {
+8. test('raw and zlib payloads are mutually exclusive', () => {
+9. test('blob with neither raw nor zlib payload is rejected', () => {
+10. test('raw_size must match the actual payload length', () => {
+11. test('varint longer than 10 bytes is rejected', () => {
+12. test('unsafe integer ids beyond the safe range are rejected', () => {
+13. test('packed arrays above maxPackedValues are rejected', () => {
+14. test('dense ids and lats length mismatch is rejected', () => {
+15. test('relation memids/roles/types length mismatch is rejected', () => {
+16. test('plain node keys/vals length mismatch is rejected', () => {
+17. test('dense keys_vals unterminated run is rejected', () => {
+18. test('string table index out of range is rejected', () => {
+19. test('OSMData before OSMHeader is rejected', () => {
+20. test('duplicate OSMHeader is rejected', () => {
+21. test('missing OSMHeader is rejected', () => {
+22. test('field number 0 is rejected', () => {
+23. test('unsupported wire type is rejected', () => {
+24. test('duplicate singular field is rejected', () => {
+25. test('file beyond maxTotalPbfBytes is rejected', () => {
+26. test('cumulative dense id deltas that collapse at 2^53 are rejected', () => {
+27. test('cumulative id overflow beyond int64 is rejected', () => {
+28. test('negative underflow below int64 is rejected', () => {
+29. test('lat accumulation beyond the safe integer range is rejected before coordinate math', () => {
+30. test('way ref accumulation beyond the safe integer range is rejected', () => {
+31. test('readEntities honors the maxTotalPbfBytes override below, equal, and above', () => {
+32. test('readEntities keeps wanted ways and their node coordinates', () => {

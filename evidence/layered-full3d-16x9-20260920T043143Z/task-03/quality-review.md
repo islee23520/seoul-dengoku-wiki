@@ -1,7 +1,7 @@
 # task3 gate-fix 품질 판정 (quality review)
 
-- 대상 커밋: K3 = 141c6dd5e2d6a217424a4d32c736a3386b6b81dd (구현) + 본 증거 커밋
-- 검증 근거: qa/verification.json (verified true, failures 0), green 테스트 52/52, 재현빌드 바이트 동일
+- 대상 커밋: K3b = 12ba7383bcd9a6f2dae93fbe29edb2700832ffd8 (구현) + 본 증거 커밋
+- 검증 근거: qa/verification.json (verified true, failures 0), green 테스트 58/58 (reader 32 + topology 26), 재현빌드 바이트 동일
 - 판정일 기준 스코프: TOOL/tools/strategy-map의 task3 파일 6개 + 본 증거 디렉터리
 
 ## 프로그래밍 품질
@@ -20,7 +20,7 @@
 
 ## 테스트 품질
 
-- 총 52개(osm-pbf-reader 26 + subway-topology 26), 전부 node:test. 실행 1회 통과, sleep/폴링/시간 의존 0.
+- 총 58개(osm-pbf-reader 32 + subway-topology 26), 전부 node:test. 실행 1회 통과, sleep/폴링/시간 의존 0.
 - 요구 패턴 충족: same-name 2, missing-source 2, unknown-floor 1(+실데이터 69 null 보존 통합 1). 각 패턴이 실제 사례(실측 픽스처/실 PBF)를 선택한다.
 - RED는 행위 단정이다: HEAD 965ab671 동작에 대한 실패 23+26건(모듈 미존재/문법 오류 아님). red/*head-behavior.log 참조.
 - 통합 단정은 검증된 실입수에 고정: 334/334, 분류 {rail 327, canonical-alias 3, monorail 2, nonrail-misclassified 2}, R=2951=해소, connections 2573(1040+1527+6), stop 발생 5767 별도 집계.
