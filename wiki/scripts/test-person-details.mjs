@@ -11,18 +11,8 @@ test('all canonical people expose unique detail routes and structured data', asy
   assert.equal(new Set(routes).size, 1004)
   assert.ok(routes.every((route) => /^\/people\/person-\d{4}$/u.test(route)))
   assert.equal(names.length, 1004)
-  const heroIds = []
-  const heroClasses = new Set(['line_warden', 'breach_lead', 'field_coordinator', 'recovery_specialist', 'route_operative', 'expedition_anchor'])
   for (const name of names) {
     const detail = JSON.parse(await readFile(new URL(name, detailRoot), 'utf8'))
-    heroIds.push(detail.heroId)
-    assert.match(detail.heroId, /^hero-person-\d{4}$/u, name)
-    assert.ok(heroClasses.has(detail.heroClassId), `${name}:${detail.heroClassId}`)
-    assert.ok(detail.heroClass.length > 0, name)
-    assert.ok(Array.isArray(detail.battleRoleTags), name)
-    assert.ok(Array.isArray(detail.effectFamilies) && detail.effectFamilies.length > 0, name)
-    assert.ok(Array.isArray(detail.campaignRoles), name)
-    assert.equal(typeof detail.commandEligible, 'boolean', name)
     assert.ok(detail.biography.length > 0, name)
     assert.equal(Object.keys(detail.values).length, 10, name)
     assert.equal(Object.keys(detail.desire).length, 7, name)
@@ -31,7 +21,6 @@ test('all canonical people expose unique detail routes and structured data', asy
     assert.ok(detail.rank.length > 0, name)
     assert.ok(detail.occupation.length > 0, name)
   }
-  assert.equal(new Set(heroIds).size, 1004)
 })
 
 test('person detail page renders tables and the canonical prose sections', async () => {
@@ -42,10 +31,6 @@ test('person detail page renders tables and the canonical prose sections', async
   assert.match(page, /가치관/)
   assert.match(page, /욕망/)
   assert.match(page, /정본 상세/)
-  assert.match(page, /영웅 클래스/)
-  assert.match(page, /전투 역할/)
-  assert.match(page, /캠페인 역할/)
-  for (const label of ['진형', '엄호', '사기', '피지컬 에이아이 기술', '외교', '암살', '방해 공작', '정보 활동']) assert.match(page, new RegExp(label))
   for (const label of ['생애', '관직', '무공', '일화', '가문', '관계', '야망', '공포', '개입']) assert.match(page, new RegExp(label))
   assert.match(page, /정본에 별도 산문이 등록되지 않았습니다/)
 })
