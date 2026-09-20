@@ -692,6 +692,7 @@ namespace Janseon.Core
         public CampaignStage Stage;
         public Tick Tick;
         public StationId Node;
+        public PlaceId Location;
         public StationId HomeBase;
         public StartingPreset StartingPreset;
         public int PartyMemberCount;
@@ -730,6 +731,7 @@ namespace Janseon.Core
                 Stage = Stage,
                 Tick = Tick,
                 Node = Node,
+                Location = Location,
                 HomeBase = HomeBase,
                 StartingPreset = StartingPreset,
                 PartyMemberCount = PartyMemberCount,
@@ -809,6 +811,7 @@ namespace Janseon.Core
                 Stage = CampaignStage.BasePreparation,
                 Tick = new Tick(0),
                 Node = homeBase,
+                Location = new PlaceId(PlaceKind.Station, homeBase.Value),
                 HomeBase = homeBase,
                 StartingPreset = preset,
                 PartyMemberCount = partyMemberCount,
@@ -997,6 +1000,7 @@ namespace Janseon.Core
             var routeState = new RouteState
             {
                 Current = state.Node,
+                Location = state.Location.IsValid ? state.Location : new PlaceId(PlaceKind.Station, state.Node.Value),
                 Tick = state.Tick,
                 HopCount = 0
             };
