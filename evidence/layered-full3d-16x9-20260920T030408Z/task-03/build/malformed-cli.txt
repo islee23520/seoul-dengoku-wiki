@@ -1,0 +1,14 @@
+file:///Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/TOOL/tools/strategy-map/build-subway-topology.mjs:246
+    if (headerLen <= 0 || pos + headerLen > buf.length) throw new Error('pbf: truncated blob header');
+                                                              ^
+
+Error: pbf: truncated blob header
+    at parsePbf (file:///Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/TOOL/tools/strategy-map/build-subway-topology.mjs:246:63)
+    at main (file:///Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/TOOL/tools/strategy-map/build-subway-topology.mjs:519:15)
+    at file:///Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/TOOL/tools/strategy-map/build-subway-topology.mjs:555:85
+    at ModuleJob.run (node:internal/modules/esm/module_job:447:25)
+    at async node:internal/modules/esm/loader:646:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v26.4.0
+malformed-cli exit=1

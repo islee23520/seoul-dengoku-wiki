@@ -1,11 +1,13 @@
-import { useEffect, useMemo, useState } from 'react'
+import { lazy, Suspense, useEffect, useMemo, useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import type { Components } from 'react-markdown'
 import { wikiCatalog, type WikiDomain } from '../generated/wikiCatalog'
 import { normalizeWikiHref, toWikiPath } from '../wikiRouting'
-import OpeningTerritoryMap from '../components/OpeningTerritoryMap'
+
+const OpeningTerritoryMap = lazy(() => import('../components/OpeningTerritoryMap'))
+const TimelineOverview = lazy(() => import('../components/TimelineOverview'))
 
 const markdownModules = import.meta.glob<string>('../content/**/*.md', {
   query: '?raw',
@@ -109,9 +111,11 @@ export default function ArticlePage() {
         <span className="wiki-canon-badge">정본</span>
       </header>
 
+      {domain === 'world' && normalizedSlug === 'World-and-Subway-Layers' && <Suspense fallback={<div className="wiki-loading">3D 개막 영토 지도를 준비하고 있습니다.</div>}><OpeningTerritoryMap /></Suspense>}
+      {domain === 'world' && normalizedSlug === 'Scenario-Timeline' && <Suspense fallback={<div className="wiki-loading">백년실록 전체 줄거리를 준비하고 있습니다.</div>}><TimelineOverview /></Suspense>}
+
       <div className="wiki-article-grid">
         <div className="wiki-prose">
-          {domain === 'world' && normalizedSlug === 'World-and-Subway-Layers' && <OpeningTerritoryMap />}
           <ReactMarkdown remarkPlugins={[remarkGfm]} components={markdownComponents}>
             {markdown}
           </ReactMarkdown>

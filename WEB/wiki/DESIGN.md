@@ -57,6 +57,14 @@
 - 구조: 가로 스크롤 래퍼 + 정렬 가능한 표.
 - 상태: default, hover, sorted ascending/descending, focus-visible.
 
+### `TerritoryMap3D`
+- 구조: Three.js WebGL canvas + 16국 HTML 국가명·깃발 overlay + 국가 필터 + 지역 상세.
+- 시각: 지정 서울 3D 아틀라스 레퍼런스처럼 원근 미니어처 지형, 단순화한 동 경계 돌출, 따뜻한 주광과 차가운 림 조명을 쓴다. 실제 측량 디지털 트윈을 주장하지 않는다.
+- 높이: 지배지는 경합지보다 높고 역 객체 수를 낮은 배율로 더한다. 가독성을 위해 높이를 과장했다는 설명을 화면에 남긴다.
+- 상호작용: 왼쪽 드래그 오빗, 휠 줌, 오른쪽 드래그 팬. 지역 선택은 raycast, 키보드 접근은 16국 라벨·범례 버튼과 지역 선택표가 맡는다.
+- 국기: 3:2, 2색, 무문자·무실존 로고. 색만으로 구분하지 않고 16개 기하 모티프와 국가명을 함께 노출한다.
+- 성능: DPR 1.75 상한, 427개 동 geometry는 초기화 때만 만들고 resize observer·RAF·geometry/material/control/renderer를 unmount 때 모두 해제한다.
+
 ## 6. 동작과 모션
 
 - 전환은 색·배경 150ms ease-out만 사용한다. 레이아웃 속성 애니메이션은 쓰지 않는다.

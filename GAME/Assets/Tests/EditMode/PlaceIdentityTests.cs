@@ -1,0 +1,336 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Security.Cryptography;
+using System.Text;
+using Janseon.Core;
+using NUnit.Framework;
+using UnityEngine;
+
+namespace Janseon.Foundation.Tests
+{
+    [TestFixture]
+    public sealed class PlaceIdentityTests
+    {
+        [Test]
+        public void StationIdUsesExactOrdinalIdentity()
+        {
+            var canonical = new StationId("Sindorim");
+            var same = new StationId("Sindorim");
+            var differentCase = new StationId("sindorim");
+
+            Assert.AreEqual(canonical, same);
+            Assert.AreEqual(canonical.GetHashCode(), same.GetHashCode());
+            Assert.AreNotEqual(canonical, differentCase);
+        }
+
+        [Test]
+        public void IdentityIgnoresObservedLevel()
+        {
+            var identity = new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.1.2");
+            var unknownLevel = new PlaceDefinition(
+                identity,
+                "신도림 1호선 2번 승강장",
+                PlaceMetadata.ForPlatform("platform.sindorim.1.2", null));
+            var observedLevel = new PlaceDefinition(
+                identity,
+                "신도림 1호선 2번 승강장",
+                PlaceMetadata.ForPlatform("platform.sindorim.1.2", 3));
+            var differentPlatform = new PlaceId(
+                PlaceKind.StationLayerOrPlatform,
+                "platform.sindorim.1.3");
+
+            Assert.AreEqual(unknownLevel.Id, observedLevel.Id);
+            Assert.AreEqual(unknownLevel.Id.GetHashCode(), observedLevel.Id.GetHashCode());
+            Assert.IsNull(unknownLevel.ObservedPlatformLevel);
+            Assert.AreEqual(3, observedLevel.ObservedPlatformLevel);
+            Assert.AreNotEqual(identity, differentPlatform);
+        }
+
+        [Test]
+        public void DuplicateIdWithConflictingMetadataIsRejected()
+        {
+            var id = new PlaceId(PlaceKind.TunnelSegment, "tunnel.sindorim.guro");
+            var original = new PlaceDefinition(
+                id,
+                "신도림-구로 터널",
+                PlaceMetadata.ForConnection(
+                    new PlaceId(PlaceKind.Station, "station.sindorim"),
+                    new PlaceId(PlaceKind.Station, "station.guro")));
+            var conflict = new PlaceDefinition(
+                id,
+                "신도림-구로 터널",
+                PlaceMetadata.ForConnection(
+                    new PlaceId(PlaceKind.Station, "station.sindorim"),
+                    new PlaceId(PlaceKind.Station, "station.daerim")));
+            var catalog = new PlaceDefinitionCatalog(new[] { original });
+            var beforeFingerprint = catalog.Fingerprint();
+
+            var error = Assert.Throws<PlaceDefinitionConflictException>(() => catalog.Add(conflict));
+
+            Assert.AreEqual(id, error.PlaceId);
+            Assert.AreEqual(beforeFingerprint, catalog.Fingerprint());
+            Assert.AreEqual(1, catalog.Count);
+        }
+
+        [Test]
+        public void StableIdBoundaryRejectsNullOrWhitespaceAndPreservesOrdinalIdentity()
+        {
+            Assert.Throws<ArgumentException>(() => new PlaceId(PlaceKind.Station, null));
+            Assert.Throws<ArgumentException>(() => new PlaceId(PlaceKind.Station, "  \t "));
+
+            var trimmed = new PlaceId(PlaceKind.Station, "  station.Sindorim  ");
+            var canonical = new PlaceId(PlaceKind.Station, "station.Sindorim");
+            var differentCase = new PlaceId(PlaceKind.Station, "station.sindorim");
+
+            Assert.AreEqual("station.Sindorim", trimmed.StableId);
+            Assert.AreEqual(trimmed, canonical);
+            Assert.AreNotEqual(trimmed, differentCase);
+        }
+
+        [Test]
+        public void UndefinedPlaceKindIsRejected()
+        {
+            var negative = Assert.Throws<ArgumentException>(
+                () => new PlaceId((PlaceKind)(-1), "station.invalid-negative"));
+            var large = Assert.Throws<ArgumentException>(
+                () => new PlaceId((PlaceKind)int.MaxValue, "station.invalid-large"));
+
+            StringAssert.Contains("kind", negative.Message.ToLowerInvariant());
+            StringAssert.Contains("kind", large.Message.ToLowerInvariant());
+        }
+
+        [Test]
+        public void DefaultPlaceIdCannotEnterCatalog()
+        {
+            var catalog = new PlaceDefinitionCatalog(null);
+
+            Assert.Throws<ArgumentException>(() => new PlaceDefinition(default, "invalid"));
+            Assert.AreEqual(0, catalog.Count);
+        }
+
+        [Test]
+        public void DefaultPlaceIdReportsInvalid()
+        {
+            Assert.IsFalse(default(PlaceId).IsValid);
+        }
+
+        [Test]
+        public void IdenticalDuplicateIsIdempotent()
+        {
+            var definition = new PlaceDefinition(
+                new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.1.2"),
+                "신도림 승강장",
+                PlaceMetadata.ForPlatform("platform.sindorim.1.2", 3));
+            var catalog = new PlaceDefinitionCatalog(new[] { definition });
+            var beforeFingerprint = catalog.Fingerprint();
+
+            Assert.DoesNotThrow(() => catalog.Add(new PlaceDefinition(
+                definition.Id,
+                definition.DisplayName,
+                PlaceMetadata.ForPlatform("platform.sindorim.1.2", 3))));
+
+            Assert.AreEqual(1, catalog.Count);
+            Assert.AreEqual(beforeFingerprint, catalog.Fingerprint());
+        }
+
+        [Test]
+        public void SameDisplayNameWithDifferentStableIdRemainsDistinct()
+        {
+            var first = new PlaceDefinition(
+                new PlaceId(PlaceKind.BuildingOrFacility, "facility.market.east"),
+                "중앙시장");
+            var second = new PlaceDefinition(
+                new PlaceId(PlaceKind.BuildingOrFacility, "facility.market.west"),
+                "중앙시장");
+
+            Assert.AreNotEqual(first.Id, second.Id);
+        }
+
+        [Test]
+        public void ManualDataSurfaceRecordsIdentityAndConflict()
+        {
+            var id = new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.1.2");
+            var unknown = new PlaceDefinition(id, "신도림 승강장", PlaceMetadata.ForPlatform(id.StableId, null));
+            var observed = new PlaceDefinition(id, "신도림 승강장", PlaceMetadata.ForPlatform(id.StableId, 3));
+            var differentPlatform = new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.1.3");
+            var tunnelId = new PlaceId(PlaceKind.TunnelSegment, "tunnel.sindorim.guro");
+            var original = new PlaceDefinition(
+                tunnelId,
+                "신도림-구로 터널",
+                PlaceMetadata.ForConnection(
+                    new PlaceId(PlaceKind.Station, "station.sindorim"),
+                    new PlaceId(PlaceKind.Station, "station.guro")));
+            var conflict = new PlaceDefinition(
+                tunnelId,
+                "신도림-구로 터널",
+                PlaceMetadata.ForConnection(
+                    new PlaceId(PlaceKind.Station, "station.sindorim"),
+                    new PlaceId(PlaceKind.Station, "station.daerim")));
+            var catalog = new PlaceDefinitionCatalog(new[] { original });
+            var before = catalog.Fingerprint();
+            var error = Assert.Throws<PlaceDefinitionConflictException>(() => catalog.Add(conflict));
+            var after = catalog.Fingerprint();
+            var identityEqual = unknown.Id == observed.Id;
+            var hashEqual = unknown.Id.GetHashCode() == observed.Id.GetHashCode();
+            var differentPlatformUnequal = id != differentPlatform;
+            var catalogUnchanged = string.Equals(before, after, StringComparison.Ordinal);
+
+            Assert.IsTrue(identityEqual);
+            Assert.IsTrue(hashEqual);
+            Assert.IsTrue(differentPlatformUnequal);
+            Assert.IsTrue(catalogUnchanged);
+
+            var outputPath = Environment.GetEnvironmentVariable("JANSEON_PLACE_ID_QA_OUTPUT");
+            var runNonce = Environment.GetEnvironmentVariable("TASK02_RUN_NONCE");
+            Assert.IsFalse(string.IsNullOrWhiteSpace(outputPath));
+            Assert.IsFalse(string.IsNullOrWhiteSpace(runNonce));
+            var repoRoot = Path.GetFullPath(Path.Combine(Application.dataPath, "..", ".."));
+            var sourceHashes = new SortedDictionary<string, string>(StringComparer.Ordinal)
+            {
+                ["GAME/Assets/Janseon/Core/PlaceId.cs"] = FileSha256(Path.Combine(repoRoot, "GAME/Assets/Janseon/Core/PlaceId.cs")),
+                ["GAME/Assets/Tests/EditMode/PlaceIdentityTests.cs"] = FileSha256(Path.Combine(repoRoot, "GAME/Assets/Tests/EditMode/PlaceIdentityTests.cs"))
+            };
+            var runtimeManifest = SourceManifestSha256(sourceHashes);
+            Directory.CreateDirectory(Path.GetDirectoryName(outputPath));
+            var json = new StringBuilder();
+            json.AppendLine("{");
+            json.AppendLine("  \"schema_version\": \"task02-manual-place-id.v3\",");
+            json.AppendLine("  \"behavior_contract_version\": \"place-identity.v2\",");
+            json.AppendLine("  \"run_nonce\": \"" + runNonce + "\",");
+            json.AppendLine("  \"runtime_source_manifest_sha256\": \"" + runtimeManifest + "\",");
+            json.AppendLine("  \"runtime_source_files\": [");
+            var sourceIndex = 0;
+            foreach (var source in sourceHashes)
+            {
+                json.Append("    { \"path\": \"").Append(source.Key).Append("\", \"sha256\": \"").Append(source.Value).Append("\" }");
+                json.AppendLine(sourceIndex < sourceHashes.Count - 1 ? "," : string.Empty);
+                sourceIndex++;
+            }
+            json.AppendLine("  ],");
+            json.AppendLine("  \"canonical_id\": \"" + id + "\",");
+            json.AppendLine("  \"unknown_observed_level\": " + NullableIntJson(unknown.ObservedPlatformLevel) + ",");
+            json.AppendLine("  \"observed_level\": " + NullableIntJson(observed.ObservedPlatformLevel) + ",");
+            json.AppendLine("  \"identity_equal\": " + BooleanJson(identityEqual) + ",");
+            json.AppendLine("  \"hash_equal\": " + BooleanJson(hashEqual) + ",");
+            json.AppendLine("  \"different_platform_id\": \"" + differentPlatform + "\",");
+            json.AppendLine("  \"different_platform_unequal\": " + BooleanJson(differentPlatformUnequal) + ",");
+            json.AppendLine("  \"conflict_error\": \"" + error.GetType().Name + "\",");
+            json.AppendLine("  \"catalog_fingerprint_before\": \"" + before + "\",");
+            json.AppendLine("  \"catalog_fingerprint_after\": \"" + after + "\",");
+            json.AppendLine("  \"catalog_unchanged\": " + BooleanJson(catalogUnchanged));
+            json.AppendLine("}");
+            File.WriteAllText(outputPath, json.ToString());
+            TestContext.Progress.WriteLine("TASK02_RUN_BINDING " + runNonce + " " + runtimeManifest);
+            TestContext.WriteLine("TASK02_RUN_BINDING " + runNonce + " " + runtimeManifest);
+            Debug.Log("TASK02_RUN_BINDING " + runNonce + " " + runtimeManifest);
+            TestContext.WriteLine("PLACE_ID_MANUAL_QA=" + outputPath);
+        }
+
+        [Test]
+        public void ExplicitTransferAndVerticalRoute()
+        {
+            var graph = RouteGraph.CreateFromConnections(new[]
+            {
+                new RouteConnection(new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.surface"), new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.b1"), RouteConnectionKind.Transfer, RouteGrade.Entrance, PassageState.Open),
+                new RouteConnection(new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.b1"), new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.b2"), RouteConnectionKind.Vertical, RouteGrade.Stair, PassageState.Open),
+                new RouteConnection(new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.surface"), new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.elevated"), RouteConnectionKind.Rail, RouteGrade.Elevated, PassageState.Open)
+            });
+
+            Assert.IsTrue(graph.CanTraverse(new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.surface"), new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.b1")));
+            Assert.IsTrue(graph.CanTraverse(new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.b1"), new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.b2")));
+            Assert.AreEqual(RouteGrade.Elevated, graph.GetConnection(new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.surface"), new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.elevated")).Grade);
+        }
+
+        [Test]
+        public void BlockedTransferDoesNotBlockUnrelatedPlatform()
+        {
+            var surface = new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.surface");
+            var lower = new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.b1");
+            var rail = new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.elevated");
+            var graph = RouteGraph.CreateFromConnections(new[]
+            {
+                new RouteConnection(surface, lower, RouteConnectionKind.Transfer, RouteGrade.Entrance, PassageState.Blocked, "flooded", "pump"),
+                new RouteConnection(surface, rail, RouteConnectionKind.Rail, RouteGrade.Elevated, PassageState.Open),
+                new RouteConnection(surface, surface, RouteConnectionKind.Walk, RouteGrade.Surface, PassageState.Open)
+            });
+
+            Assert.IsFalse(graph.CanTraverse(surface, lower));
+            Assert.IsTrue(graph.CanTraverse(surface, rail));
+            Assert.AreEqual(0, graph.CountImplicitSameCoordinateEdges());
+            Assert.AreEqual("flooded", graph.GetConnection(surface, lower).Cause);
+            Assert.AreEqual("pump", graph.GetConnection(surface, lower).Recovery);
+        }
+
+        [Test]
+        public void ControlUsesBuildingOwnershipAndDongInfluence()
+        {
+            var controlType = typeof(CampaignState).Assembly.GetType("Janseon.Core.CampaignControlState");
+            Assert.IsNotNull(controlType, "CampaignControlState must own building, dong, and station control.");
+            var create = controlType.GetMethod("Create");
+            Assert.IsNotNull(create);
+            var control = create.Invoke(null, new object[] { "dong-1", "station-1" });
+            var occupy = controlType.GetMethod("OccupyBuilding");
+            Assert.IsNotNull(occupy);
+            control = occupy.Invoke(control, new object[] { "faction-a", "building-core", 60 });
+            Assert.AreEqual("Held", controlType.GetProperty("DongStatus").GetValue(control, null).ToString());
+            control = occupy.Invoke(control, new object[] { "faction-b", "building-school", 30 });
+            var status = controlType.GetProperty("DongStatus").GetValue(control, null).ToString();
+            Assert.AreEqual("Contested", status);
+            Assert.LessOrEqual((int)controlType.GetProperty("TotalInfluence").GetValue(control, null), 100);
+            control = controlType.GetMethod("ControlStation").Invoke(control, new object[] { "faction-a" });
+            var lose = controlType.GetMethod("ApplyStationLoss");
+            Assert.IsNotNull(lose);
+            control = lose.Invoke(control, new object[] { "faction-a", "building-core" });
+            Assert.AreEqual(30, controlType.GetMethod("InfluenceOf").Invoke(control, new object[] { "faction-a" }));
+        }
+
+        [Test]
+        public void SurfaceAndUndergroundControlAreIndependent()
+        {
+            var controlType = typeof(CampaignState).Assembly.GetType("Janseon.Core.CampaignControlState");
+            Assert.IsNotNull(controlType);
+            var control = controlType.GetMethod("Create").Invoke(null, new object[] { "dong-1", "station-1" });
+            var occupy = controlType.GetMethod("OccupyBuilding");
+            control = occupy.Invoke(control, new object[] { "faction-a", "building-core", 60 });
+            Assert.AreEqual("Uncontrolled", controlType.GetProperty("StationController").GetValue(control, null));
+            control = controlType.GetMethod("ControlStation").Invoke(control, new object[] { "faction-a" });
+            var lose = controlType.GetMethod("ApplyStationLoss");
+            control = lose.Invoke(control, new object[] { "faction-a", "building-core" });
+            control = lose.Invoke(control, new object[] { "faction-a", "building-core" });
+            Assert.AreEqual(30, controlType.GetMethod("InfluenceOf").Invoke(control, new object[] { "faction-a" }));
+        }
+
+        static string BooleanJson(bool value) => value ? "true" : "false";
+        static string NullableIntJson(int? value) => value.HasValue ? value.Value.ToString() : "null";
+
+        static string FileSha256(string path)
+        {
+            using (var stream = File.OpenRead(path))
+            using (var hash = SHA256.Create())
+            {
+                return Hex(hash.ComputeHash(stream));
+            }
+        }
+
+        static string SourceManifestSha256(IEnumerable<KeyValuePair<string, string>> sources)
+        {
+            var material = new StringBuilder();
+            foreach (var source in sources)
+            {
+                material.Append(source.Key).Append('\0').Append(source.Value).Append('\n');
+            }
+            using (var hash = SHA256.Create())
+            {
+                return Hex(hash.ComputeHash(Encoding.UTF8.GetBytes(material.ToString())));
+            }
+        }
+
+        static string Hex(byte[] bytes)
+        {
+            var result = new StringBuilder(bytes.Length * 2);
+            for (var i = 0; i < bytes.Length; i++) result.Append(bytes[i].ToString("x2"));
+            return result.ToString();
+        }
+    }
+}

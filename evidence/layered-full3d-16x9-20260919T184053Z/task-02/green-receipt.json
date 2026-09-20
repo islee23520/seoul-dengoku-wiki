@@ -1,0 +1,22 @@
+{
+  "schema_version": "task02-green-receipt.v1",
+  "implementation_commit": "b29d351e802ced619090ac60531b95ba6fba3f28",
+  "xml_path": "evidence/layered-full3d-16x9-20260919T184053Z/task-02/green/place-identity.xml",
+  "xml_sha256": "99a9024a5da07a4680403705128f440eb23ce9d0ad4c046874d2083c991b0279",
+  "total": 10,
+  "passed": 10,
+  "failed": 0,
+  "skipped": 0,
+  "required_cases": [
+    "DefaultPlaceIdCannotEnterCatalog",
+    "DefaultPlaceIdReportsInvalid",
+    "DuplicateIdWithConflictingMetadataIsRejected",
+    "IdenticalDuplicateIsIdempotent",
+    "IdentityIgnoresObservedLevel",
+    "ManualDataSurfaceRecordsIdentityAndConflict",
+    "SameDisplayNameWithDifferentStableIdRemainsDistinct",
+    "StableIdBoundaryRejectsNullOrWhitespaceAndPreservesOrdinalIdentity",
+    "StationIdUsesExactOrdinalIdentity",
+    "UndefinedPlaceKindIsRejected"
+  ]
+}

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="10" result="Passed" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-19 19:07:49Z" end-time="2026-09-19 19:07:49Z" duration="0.0369355">
+  <test-suite type="TestSuite" id="1000" name="서울:전국" fullname="서울:전국" runstate="Runnable" testcasecount="240" result="Passed" start-time="2026-09-19 19:07:49Z" end-time="2026-09-19 19:07:49Z" duration="0.036936" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1276" name="Janseon.Foundation.EditModeTests.dll" fullname="/Volumes/gameWorkspace/worktrees/seoul-kenshi/task2-verify-K2/GAME/Library/ScriptAssemblies/Janseon.Foundation.EditModeTests.dll" runstate="Runnable" testcasecount="239" result="Passed" start-time="2026-09-19 19:07:49Z" end-time="2026-09-19 19:07:49Z" duration="0.028537" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="51246" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1277" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="239" result="Passed" start-time="2026-09-19 19:07:49Z" end-time="2026-09-19 19:07:49Z" duration="0.027085" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1280" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="204" result="Passed" start-time="2026-09-19 19:07:49Z" end-time="2026-09-19 19:07:49Z" duration="0.025599" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1281" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="204" result="Passed" start-time="2026-09-19 19:07:49Z" end-time="2026-09-19 19:07:49Z" duration="0.024313" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1145" name="PlaceIdentityTests" fullname="Janseon.Foundation.Tests.PlaceIdentityTests" classname="Janseon.Foundation.Tests.PlaceIdentityTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-09-19 19:07:49Z" end-time="2026-09-19 19:07:49Z" duration="0.022026" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1151" name="DefaultPlaceIdCannotEnterCatalog" fullname="Janseon.Foundation.Tests.PlaceIdentityTests.DefaultPlaceIdCannotEnterCatalog" methodname="DefaultPlaceIdCannotEnterCatalog" classname="Janseon.Foundation.Tests.PlaceIdentityTests" runstate="Runnable" seed="285013885" result="Passed" start-time="2026-09-19 19:07:49Z" end-time="2026-09-19 19:07:49Z" duration="0.006786" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1152" name="DefaultPlaceIdReportsInvalid" fullname="Janseon.Foundation.Tests.PlaceIdentityTests.DefaultPlaceIdReportsInvalid" methodname="DefaultPlaceIdReportsInvalid" classname="Janseon.Foundation.Tests.PlaceIdentityTests" runstate="Runnable" seed="1503683433" result="Passed" start-time="2026-09-19 19:07:49Z" end-time="2026-09-19 19:07:49Z" duration="0.000177" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1148" name="DuplicateIdWithConflictingMetadataIsRejected" fullname="Janseon.Foundation.Tests.PlaceIdentityTests.DuplicateIdWithConflictingMetadataIsRejected" methodname="DuplicateIdWithConflictingMetadataIsRejected" classname="Janseon.Foundation.Tests.PlaceIdentityTests" runstate="Runnable" seed="897261087" result="Passed" start-time="2026-09-19 19:07:49Z" end-time="2026-09-19 19:07:49Z" duration="0.002260" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1153" name="IdenticalDuplicateIsIdempotent" fullname="Janseon.Foundation.Tests.PlaceIdentityTests.IdenticalDuplicateIsIdempotent" methodname="IdenticalDuplicateIsIdempotent" classname="Janseon.Foundation.Tests.PlaceIdentityTests" runstate="Runnable" seed="1272312023" result="Passed" start-time="2026-09-19 19:07:49Z" end-time="2026-09-19 19:07:49Z" duration="0.000475" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1147" name="IdentityIgnoresObservedLevel" fullname="Janseon.Foundation.Tests.PlaceIdentityTests.IdentityIgnoresObservedLevel" methodname="IdentityIgnoresObservedLevel" classname="Janseon.Foundation.Tests.PlaceIdentityTests" runstate="Runnable" seed="58998791" result="Passed" start-time="2026-09-19 19:07:49Z" end-time="2026-09-19 19:07:49Z" duration="0.000764" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1155" name="ManualDataSurfaceRecordsIdentityAndConflict" fullname="Janseon.Foundation.Tests.PlaceIdentityTests.ManualDataSurfaceRecordsIdentityAndConflict" methodname="ManualDataSurfaceRecordsIdentityAndConflict" classname="Janseon.Foundation.Tests.PlaceIdentityTests" runstate="Runnable" seed="1573333732" result="Passed" start-time="2026-09-19 19:07:49Z" end-time="2026-09-19 19:07:49Z" duration="0.003400" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[TASK02_RUN_BINDING 88e62d50301d49476d809762fb3d224adf1c37d73e4f5be5cffb07e1ee828b1c ec25b9ba8b318d8561b2930335d81091ea0b37f54cb3eaf3d822e877247fb624
+TASK02_RUN_BINDING 88e62d50301d49476d809762fb3d224adf1c37d73e4f5be5cffb07e1ee828b1c ec25b9ba8b318d8561b2930335d81091ea0b37f54cb3eaf3d822e877247fb624
+PLACE_ID_MANUAL_QA=/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/evidence/layered-full3d-16x9-20260919T190703Z/task-02/manual-place-id.json
+]]></output>
+              </test-case>
+              <test-case id="1154" name="SameDisplayNameWithDifferentStableIdRemainsDistinct" fullname="Janseon.Foundation.Tests.PlaceIdentityTests.SameDisplayNameWithDifferentStableIdRemainsDistinct" methodname="SameDisplayNameWithDifferentStableIdRemainsDistinct" classname="Janseon.Foundation.Tests.PlaceIdentityTests" runstate="Runnable" seed="1090254284" result="Passed" start-time="2026-09-19 19:07:49Z" end-time="2026-09-19 19:07:49Z" duration="0.000113" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1149" name="StableIdBoundaryRejectsNullOrWhitespaceAndPreservesOrdinalIdentity" fullname="Janseon.Foundation.Tests.PlaceIdentityTests.StableIdBoundaryRejectsNullOrWhitespaceAndPreservesOrdinalIdentity" methodname="StableIdBoundaryRejectsNullOrWhitespaceAndPreservesOrdinalIdentity" classname="Janseon.Foundation.Tests.PlaceIdentityTests" runstate="Runnable" seed="327952114" result="Passed" start-time="2026-09-19 19:07:49Z" end-time="2026-09-19 19:07:49Z" duration="0.000170" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1146" name="StationIdUsesExactOrdinalIdentity" fullname="Janseon.Foundation.Tests.PlaceIdentityTests.StationIdUsesExactOrdinalIdentity" methodname="StationIdUsesExactOrdinalIdentity" classname="Janseon.Foundation.Tests.PlaceIdentityTests" runstate="Runnable" seed="1514033247" result="Passed" start-time="2026-09-19 19:07:49Z" end-time="2026-09-19 19:07:49Z" duration="0.000207" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1150" name="UndefinedPlaceKindIsRejected" fullname="Janseon.Foundation.Tests.PlaceIdentityTests.UndefinedPlaceKindIsRejected" methodname="UndefinedPlaceKindIsRejected" classname="Janseon.Foundation.Tests.PlaceIdentityTests" runstate="Runnable" seed="1862415491" result="Passed" start-time="2026-09-19 19:07:49Z" end-time="2026-09-19 19:07:49Z" duration="0.000544" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: /Users/ilseoblee/Library/Application Support/Janseon Studio/서울_전국/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

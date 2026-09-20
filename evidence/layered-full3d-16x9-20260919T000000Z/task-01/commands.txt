@@ -1,0 +1,48 @@
+git -C /Users/ilseoblee/workspace/seoul-kenshi status --short
+exit=0
+key_output=shared main existing dirty files recorded; unchanged after follow-up
+
+git -C /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1 status --short
+exit=0
+key_output=clean before follow-up
+
+ssh -o BatchMode=yes -o ConnectTimeout=10 desktop powershell.exe -NoProfile -EncodedCommand <base64 UTF-16LE command>; PowerShell sets UTF-8 output and reads pinned binary, shim, GPU
+exit=0
+key_output={"Path":"E:\\Unity\\Editor\\6000.7.0a5\\Editor\\Unity.exe","Length":279976,"Version":"6000.7.0.10572341","GPU":"NVIDIA GeForce RTX 4080","ShimPath":"C:\\Users\\oliver\\AppData\\Local\\Microsoft\\WindowsApps\\unity.exe","ShimLength":0}
+rejected_windowsapps_shim=0-byte/non-pinned
+
+node TOOL/tools/check-lfs-hydration.mjs /var/folders/6r/g20fxk_s1ds24_h6lm971wt00000gn/T/task1-lfs-gw0hmeub
+exit=1 expected=1
+key_output={"filesScanned":1,"pointers":["GAME/Assets/fixture-pointer.bin"],"errors":[]}
+
+git -C /var/folders/6r/g20fxk_s1ds24_h6lm971wt00000gn/T/task1-worktree-72wj63k9 worktree add -b occupied-branch /var/folders/6r/g20fxk_s1ds24_h6lm971wt00000gn/T/task1-worktree-72wj63k9/occupied HEAD
+exit=255 expected=nonzero
+key_output=Preparing worktree (new branch 'occupied-branch') fatal: a branch named 'occupied-branch' already exists
+
+node evidence/layered-full3d-16x9-20260919T000000Z/task-01/validate-conflict-disposition.mjs /var/folders/6r/g20fxk_s1ds24_h6lm971wt00000gn/T/task1-conflict-169ievv9/bad.tsv
+exit=1 expected=1
+key_output={"rows":1,"errors":["active docs-only conflict AGENTS.md:1","invalid status AGENTS.md:1"]}
+
+node TOOL/tools/check-lfs-hydration.mjs
+exit=0
+key_output={"filesScanned":1029,"pointers":[],"errors":[]}
+
+git diff --check
+exit=0
+key_output=empty
+
+node TOOL/tools/architecture/check-unity-architecture.mjs
+exit=0
+key_output=unity architecture gate passed (84 runtime files, 3 scene scopes verified)
+
+node TOOL/tools/policy/check-repo-delivery-policy.mjs
+exit=0
+key_output=result PASS
+
+patina --score --offline AGENTS.md CLAUDE.md Intent.md Concept.md Design.md ToDo.md
+exit=0
+key_output=all deterministic scores <=30
+
+git ls-files --error-unmatch evidence/layered-full3d-16x9-20260919T000000Z/task-01/commands.txt
+exit=0
+key_output=tracked commands receipt

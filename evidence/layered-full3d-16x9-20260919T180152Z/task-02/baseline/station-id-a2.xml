@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-19 18:04:13Z" end-time="2026-09-19 18:04:13Z" duration="0.0296072">
+  <test-suite type="TestSuite" id="1000" name="서울:전국" fullname="서울:전국" runstate="Runnable" testcasecount="231" result="Passed" start-time="2026-09-19 18:04:13Z" end-time="2026-09-19 18:04:13Z" duration="0.029607" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1267" name="Janseon.Foundation.EditModeTests.dll" fullname="/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/ScriptAssemblies/Janseon.Foundation.EditModeTests.dll" runstate="Runnable" testcasecount="230" result="Passed" start-time="2026-09-19 18:04:13Z" end-time="2026-09-19 18:04:13Z" duration="0.025429" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="44586" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1268" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="230" result="Passed" start-time="2026-09-19 18:04:13Z" end-time="2026-09-19 18:04:13Z" duration="0.020976" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1271" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="195" result="Passed" start-time="2026-09-19 18:04:13Z" end-time="2026-09-19 18:04:13Z" duration="0.016626" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1272" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="195" result="Passed" start-time="2026-09-19 18:04:13Z" end-time="2026-09-19 18:04:13Z" duration="0.015378" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1145" name="PlaceIdentityTests" fullname="Janseon.Foundation.Tests.PlaceIdentityTests" classname="Janseon.Foundation.Tests.PlaceIdentityTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-09-19 18:04:13Z" end-time="2026-09-19 18:04:13Z" duration="0.013111" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1146" name="StationIdUsesExactOrdinalIdentity" fullname="Janseon.Foundation.Tests.PlaceIdentityTests.StationIdUsesExactOrdinalIdentity" methodname="StationIdUsesExactOrdinalIdentity" classname="Janseon.Foundation.Tests.PlaceIdentityTests" runstate="Runnable" seed="155109222" result="Passed" start-time="2026-09-19 18:04:13Z" end-time="2026-09-19 18:04:13Z" duration="0.006846" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: /Users/ilseoblee/Library/Application Support/Janseon Studio/서울_전국/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

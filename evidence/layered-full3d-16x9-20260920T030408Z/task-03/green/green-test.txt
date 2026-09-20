@@ -1,0 +1,20 @@
+✔ same-name stops remain distinct topology nodes and never merge into a fabricated edge (1.685ms)
+✔ route relation without ref or name yields only nontraversable connections (0.17ms)
+✔ route relation with ref produces a traversable edge bound to ref and source (0.147833ms)
+✔ null observed floors stay null and are never coerced (0.123ms)
+✔ same-district proximity without route evidence produces no edge (0.098834ms)
+✔ platform members and non-route relations never create edges (0.121ms)
+✔ unmatched or missing stop nodes yield nontraversable connections with reasons (0.161708ms)
+✔ name match beyond the distance limit is refused, not crosswalked (0.067709ms)
+✔ alias resolves OSM name to canonical graph id deterministically (0.193333ms)
+✔ parser reads the real Seoul PBF with manifest-grade counts and hash (1240.122ms)
+✔ crosswalk covers the exact 334-station graph and preserves 69 null floors (18.032917ms)
+✔ malformed PBF inputs fail loudly (3.469875ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1268.219625

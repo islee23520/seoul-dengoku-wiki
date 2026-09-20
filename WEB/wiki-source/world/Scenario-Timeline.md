@@ -4,11 +4,51 @@
 
 이 타임라인은 정해진 역사를 재생하는 각본으로 읽히지 않는다. 사건은 조건을 만들고, 결론은 살아 있는 인물의 야망과 공포, 관계와 기억, 직위에 따라 달라진다. 핵심 인물이 죽거나 포획되거나 설득되면 같은 사건도 다른 행위자가 다른 결과로 이끈다.
 
-서기 앵커는 2026 기동권 이탈과 2126 캠페인 개막으로 잠근다. 그 사이 101개 연도의 사건·물자·제도 변화는 [서울전국 백년 연초](/world/Century-Annals)가 정본이다. 이 문서는 개막 이후 조건부 사건, 계절 연대기와 프로토타입 카드를 소유한다. 원인 이름은 [기동권 이탈](/world/World-Unbinding)에 있다.
+서기 앵커는 2026 기동권 이탈과 2126 캠페인 개막으로 잠근다. 그 사이 101개 연도의 사건·물자·제도 변화는 [서울전국 백년실록](/world/Century-Annals)이 정본이다. 이 문서는 개막 이후 조건부 사건, 계절 연대기와 프로토타입 카드를 소유한다. 원인 이름은 [기동권 이탈](/world/World-Unbinding)에 있다.
 
 개막 세대는 이탈을 살지 않았다. 첫 급수협약, 군사호적, 열여섯 깃발, 공신의 겨울, 둘째 급수협약은 창세 구술이다. 장부에 적힌 창건자와 개막에 앉아 있는 사람을 같은 몸으로 읽지 않는다.
 
 첫해 사계절과 둘째 해 패권전은 개막 이후 캠페인 시간이다. 서기를 제목에 넣지 않는다. 기술·법령 출발점은 2026이다. [이 시대의 기술과 무구](/world/Era-Arms-and-Tech-Level). 총수 일가·구 정부·외부 전구·변혁 가문은 [가문](/world/Chaebol-Houses-and-Century-Factions).
+
+## 백년실록 시대별 총람
+
+[서울전국 백년실록](/world/Century-Annals)은 2026년 기동권 이탈부터 2126년 캠페인 개막까지 해마다 장소·행위자·물자 압력·결정·결과를 기록한다. 아래 시대 구분은 사건을 압축해 찾기 위한 색인이지, 각 해의 원인과 책임을 대신하지 않는다.
+
+| 시기 | 시대 | 인과의 중심 | 2126년에 남은 것 |
+| --- | --- | --- | --- |
+| 2026–2039 | 기동권 이탈과 생존 당직 | 호출망·위성·인가 서버가 함께 멎자 정수·차량기지·청사·병원·강단의 현장 당직이 자기 구획을 살린다. | 비상권한 반환 시점을 둘러싼 첫 미결 기록과 종이 명부가 남는다. |
+| 2040–2054 | 첫 급수협약과 생활권 장부 | 물·전력·의약·철도 부품을 한 지휘자가 독점할 수 없어 수문 키와 냉각 당직을 분할한다. | 급수계약정의 계약 관습과 시설 키를 빌리는 운영가문 문법이 생긴다. |
+| 2055–2069 | 군사호적과 열여섯 깃발 | 징집 잔존 명부, 호송권, 피난 명부와 시민권이 충돌하며 생활권 대표들이 서로 다른 깃발을 세운다. | 군정·신정·상업·봉건의 권한 티어는 같되 직함은 달라진다. |
+| 2070–2084 | 공신의 겨울과 세습 인준 | 창건 공신의 배급권·작위·세습 요구를 제한하는 대신 당직과 키의 승계를 조건부로 인정한다. | 창건자와 개막 세대를 같은 사람으로 읽지 않는 원칙, 본관·항렬·후계 인준이 굳어진다. |
+| 2085–2099 | 둘째 급수협약과 기관 후신 | 임시 펌프와 열차 부품의 수명이 끝나며 실제 기관·기업·종단의 명부와 부동산이 국가 후신의 근거가 된다. | 삼성·현대·전경련과 네 신정의 국호, GDD·LORE에서 쓰는 16국 기원이 갈라진다. |
+| 2100–2114 | 16국 국호와 역 수도의 확정 | 마곡·가락·수서·창동 같은 옛 슬롯을 비우고 기관 본사와 전철역을 수도로 다시 연결한다. | 영등포·구로·양재·삼성·광화문 등 현재 16개 역 수도가 확정된다. |
+| 2115–2126 | 세 번째 급수계약 전야와 개막 | 수장 실종, 냉각·식량·의약 부채, 다섯 외부전구의 상충 기록이 동시에 급수계약 갱신을 압박한다. | 플레이어는 2126년 봄을 재생하지 않고 개막일의 선택부터 역사를 바꾼다. |
+
+## 2026–2126 연도별 진입
+
+- [2026년](/world/Century-Annals#2026년) · [2027년](/world/Century-Annals#2027년) · [2028년](/world/Century-Annals#2028년) · [2029년](/world/Century-Annals#2029년) · [2030년](/world/Century-Annals#2030년) · [2031년](/world/Century-Annals#2031년) · [2032년](/world/Century-Annals#2032년) · [2033년](/world/Century-Annals#2033년) · [2034년](/world/Century-Annals#2034년) · [2035년](/world/Century-Annals#2035년)
+- [2036년](/world/Century-Annals#2036년) · [2037년](/world/Century-Annals#2037년) · [2038년](/world/Century-Annals#2038년) · [2039년](/world/Century-Annals#2039년) · [2040년](/world/Century-Annals#2040년) · [2041년](/world/Century-Annals#2041년) · [2042년](/world/Century-Annals#2042년) · [2043년](/world/Century-Annals#2043년) · [2044년](/world/Century-Annals#2044년) · [2045년](/world/Century-Annals#2045년)
+- [2046년](/world/Century-Annals#2046년) · [2047년](/world/Century-Annals#2047년) · [2048년](/world/Century-Annals#2048년) · [2049년](/world/Century-Annals#2049년) · [2050년](/world/Century-Annals#2050년) · [2051년](/world/Century-Annals#2051년) · [2052년](/world/Century-Annals#2052년) · [2053년](/world/Century-Annals#2053년) · [2054년](/world/Century-Annals#2054년) · [2055년](/world/Century-Annals#2055년)
+- [2056년](/world/Century-Annals#2056년) · [2057년](/world/Century-Annals#2057년) · [2058년](/world/Century-Annals#2058년) · [2059년](/world/Century-Annals#2059년) · [2060년](/world/Century-Annals#2060년) · [2061년](/world/Century-Annals#2061년) · [2062년](/world/Century-Annals#2062년) · [2063년](/world/Century-Annals#2063년) · [2064년](/world/Century-Annals#2064년) · [2065년](/world/Century-Annals#2065년)
+- [2066년](/world/Century-Annals#2066년) · [2067년](/world/Century-Annals#2067년) · [2068년](/world/Century-Annals#2068년) · [2069년](/world/Century-Annals#2069년) · [2070년](/world/Century-Annals#2070년) · [2071년](/world/Century-Annals#2071년) · [2072년](/world/Century-Annals#2072년) · [2073년](/world/Century-Annals#2073년) · [2074년](/world/Century-Annals#2074년) · [2075년](/world/Century-Annals#2075년)
+- [2076년](/world/Century-Annals#2076년) · [2077년](/world/Century-Annals#2077년) · [2078년](/world/Century-Annals#2078년) · [2079년](/world/Century-Annals#2079년) · [2080년](/world/Century-Annals#2080년) · [2081년](/world/Century-Annals#2081년) · [2082년](/world/Century-Annals#2082년) · [2083년](/world/Century-Annals#2083년) · [2084년](/world/Century-Annals#2084년) · [2085년](/world/Century-Annals#2085년)
+- [2086년](/world/Century-Annals#2086년) · [2087년](/world/Century-Annals#2087년) · [2088년](/world/Century-Annals#2088년) · [2089년](/world/Century-Annals#2089년) · [2090년](/world/Century-Annals#2090년) · [2091년](/world/Century-Annals#2091년) · [2092년](/world/Century-Annals#2092년) · [2093년](/world/Century-Annals#2093년) · [2094년](/world/Century-Annals#2094년) · [2095년](/world/Century-Annals#2095년)
+- [2096년](/world/Century-Annals#2096년) · [2097년](/world/Century-Annals#2097년) · [2098년](/world/Century-Annals#2098년) · [2099년](/world/Century-Annals#2099년) · [2100년](/world/Century-Annals#2100년) · [2101년](/world/Century-Annals#2101년) · [2102년](/world/Century-Annals#2102년) · [2103년](/world/Century-Annals#2103년) · [2104년](/world/Century-Annals#2104년) · [2105년](/world/Century-Annals#2105년)
+- [2106년](/world/Century-Annals#2106년) · [2107년](/world/Century-Annals#2107년) · [2108년](/world/Century-Annals#2108년) · [2109년](/world/Century-Annals#2109년) · [2110년](/world/Century-Annals#2110년) · [2111년](/world/Century-Annals#2111년) · [2112년](/world/Century-Annals#2112년) · [2113년](/world/Century-Annals#2113년) · [2114년](/world/Century-Annals#2114년) · [2115년](/world/Century-Annals#2115년)
+- [2116년](/world/Century-Annals#2116년) · [2117년](/world/Century-Annals#2117년) · [2118년](/world/Century-Annals#2118년) · [2119년](/world/Century-Annals#2119년) · [2120년](/world/Century-Annals#2120년) · [2121년](/world/Century-Annals#2121년) · [2122년](/world/Century-Annals#2122년) · [2123년](/world/Century-Annals#2123년) · [2124년](/world/Century-Annals#2124년) · [2125년](/world/Century-Annals#2125년)
+- [2126년](/world/Century-Annals#2126년)
+
+## 개막일 동시 사건
+
+세 번째 급수계약이 열리는 2126년 개막일에는 서울 안의 계약만 움직이지 않는다. 외부전구의 첫 사건도 같은 날의 물·명부·호송·통역 장부를 압박한다. 사건 ID는 결과를 고정하지 않고 플레이어가 진입할 갈등과 필요한 인준만 지정한다.
+
+| 사건 | 서울 쪽 촉발 | 첫 판단 |
+| --- | --- | --- |
+| XT01-SC1 · 임진강관문전구 | 훼손된 귀환 명부가 안국 재발급과 광화문 진위 심사를 갈라놓는다. | 가족 대기열과 의약 상자 가운데 어느 인계를 먼저 확인할지 정한다. |
+| XT02-SC1 · 서해곡창전구 | 하구 조위가 바뀌어 영등포 수문과 냉동 화물 적재창이 충돌한다. | 배수를 먼저 열지, 손상 화물을 격리하고 적재를 늦출지 정한다. |
+| XT03-SC1 · 대한해협전구 | 세 갈래 중계 가운데 한곳이 닫히고 용산 대체 회차표와 명동 인준 봉인이 맞지 않는다. | 통역 불일치 화물을 격리할지 제한 회차로 돌릴지 정한다. |
+| XT04-SC1 · 두만강극동전구 | 암사 중량 로그의 이상과 신내 환승 슬롯 재배정이 연료·의료 호송을 한 창에 몰아넣는다. | 환자 호송과 연료 화차 가운데 어느 창을 먼저 열지 정한다. |
+| XT05-SC1 · 인천신탁전구 | 잔여 대역 추첨과 급수 펌프 시간표가 겹치고 인도 목록은 참관 해시를 갖추지 못한다. | 수신 로그만 있는 의약 캡슐을 배급 장부에 올릴지 정한다. |
 
 ## 연결된 도시, 2026 직전
 

@@ -30,7 +30,7 @@ VContainer 외 Makcha-Unity 패키지는 현재 모듈에 실제 호출자와 �
 
 ## 현재 구현 범위
 
-현재 모듈 `Unity POC 통합 코어 루프`는 `Bootstrap` App scope/FSM, 배타적 `MainTitle`/`Foundation` 화면 lease, uGUI 화면, 세 역 노선과 교섭·우회·전투·정산·복귀를 구현했습니다. 이 구현은 POC이며, 결정 11 목표 전투가 아닙니다. 전투 Core는 30Hz 고정 틱의 실시간 진형·카드 규칙(`rtfc-owner-cards-v2`)이며, 분대 명령·집계 사상자 표현의 완료 검증은 남아 있습니다([실시간 진형·카드 전투](GDD/rules/Realtime-Formation-Card-Battle.md)). 동일 seed 재현과 중복 정산 거부를 실제 batchmode PlayMode에서 검증합니다. 생성 아트 슬롯 승인·연결은 별도 수용 조건이며, 코드 검증만으로 모듈 전체가 완료되지는 않습니다.
+현재 모듈 `Unity POC 통합 코어 루프`는 `Bootstrap` App scope/FSM, 배타적 `MainTitle`/`Foundation` 화면 lease, uGUI 화면, 세 역 노선과 교섭·우회·전투·정산·복귀를 구현한 역사적 POC입니다. 이 구현은 풀 3D 부대 지휘 목표의 완료 증거가 아닙니다. 기존 전투 Core의 30Hz 고정 틱 실시간 진형·카드 규칙(`rtfc-owner-cards-v2`)은 POC 계약으로 보존하며, 활성 목표는 병졸별 상태를 가진 풀 3D 부대 지휘와 분리된 영웅·병졸 표현입니다. 새 시간 기준은 Unity PlayerLoop의 `FixedUpdate`와 실행 시점 `Time.fixedDeltaTime`을 사용하며 특정 Hz를 잠그지 않습니다. 생성 아트 슬롯 승인·연결은 별도 수용 조건이며, 코드 검증만으로 모듈 전체가 완료되지는 않습니다.
 
 ## 완료 판단
 

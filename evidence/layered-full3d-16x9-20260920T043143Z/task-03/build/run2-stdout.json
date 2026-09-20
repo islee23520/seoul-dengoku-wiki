@@ -1,0 +1,21 @@
+{
+  "topology": "/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/evidence/layered-full3d-16x9-20260920T043143Z/task-03/build/run2/topology.json",
+  "coverage": "/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/evidence/layered-full3d-16x9-20260920T043143Z/task-03/build/run2/coverage.json",
+  "relationsTotal": 19013,
+  "routeRelations": 244,
+  "stopOccurrences": 5767,
+  "lines": 244,
+  "stations": 334,
+  "matched": 334,
+  "uncovered": 0,
+  "classificationCounts": {
+    "rail": 327,
+    "canonical-alias": 3,
+    "monorail": 2,
+    "nonrail-misclassified": 2
+  },
+  "edges": 436,
+  "unresolvedRequiredEdges": 0,
+  "graphEdgesWithoutObservedStopEvidence": 6,
+  "nontraversableConnectionRecords": 2573
+}
