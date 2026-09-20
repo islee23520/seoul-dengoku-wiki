@@ -229,7 +229,7 @@ namespace Janseon.Core.Battle.Sim
                 }
             }
             ClearUnavailableActorOrders(state);
-            ReinforcementRules.Resolve(state); if (state.Outcome != ContractOutcome.Ongoing) { ClearAllOrders(state); TickCards(state); ledger.Events.Add(new TypedEvent { Id=new EventId("btick-"+state.Tick.ToString(CultureInfo.InvariantCulture)), At=new Tick(state.Tick), SummaryHash=state.Fingerprint() }); state.Tick++; return; } IntentPlanner.Resolve(state); CombatRules.Resolve(state); MoraleRules.Resolve(state); state.Sides[1].RetreatCovered = OutcomeRules.RetreatCovered(state); OutcomeRules.Resolve(state); ClearInvalidOrders(state);
+            ReinforcementRules.Resolve(state); if (state.Outcome != ContractOutcome.Ongoing) { ClearAllOrders(state); TickCards(state); ledger.Events.Add(new TypedEvent { Id=new EventId("btick-"+state.Tick.ToString(CultureInfo.InvariantCulture)), At=new Tick(state.Tick), SummaryHash=state.Fingerprint() }); state.Tick++; return; } IntentPlanner.Resolve(state); ResolveIndividualCombat(state, fixedDeltaTime); MoraleRules.Resolve(state); state.Sides[1].RetreatCovered = OutcomeRules.RetreatCovered(state); OutcomeRules.Resolve(state); ClearInvalidOrders(state);
             TickCards(state);
             ledger.Events.Add(new TypedEvent { Id=new EventId("btick-"+state.Tick.ToString(CultureInfo.InvariantCulture)), At=new Tick(state.Tick), SummaryHash=state.Fingerprint() }); state.Tick++;
             state.PublishFrame();
@@ -243,6 +243,61 @@ namespace Janseon.Core.Battle.Sim
             for (var i = 0; i < roster.Length; i++)
                 if (roster[i] == null || roster[i].Side != side || string.IsNullOrEmpty(roster[i].Id.Value) || !ids.Add(roster[i].Id.Value))
                     throw new ArgumentException("Roster contains an invalid, duplicate, or mismatched soldier.");
+        }
+
+        static void ResolveIndividualCombat(BattleSimState state, float fixedDeltaTime)
+        {
+            var damage = new int[state.Units.Length];
+            var attackers = new List<UnitState>(state.Units);
+            attackers.Sort((a, b) => string.CompareOrdinal(a.Id.Value, b.Id.Value));
+            for (var i = 0; i < attackers.Count; i++)
+            {
+                var attacker = attackers[i];
+                if (attacker.CooldownTicksLeft > 0)
+                    attacker.CooldownTicksLeft = Math.Max(0, attacker.CooldownTicksLeft - Math.Max(1, (int)Math.Round(fixedDeltaTime * BattleRules.TicksPerSecond)));
+                if (attacker.State != "Active" || attacker.Hp <= 0 || attacker.CooldownTicksLeft > 0) continue;
+                var targets = new List<int>();
+                for (var j = 0; j < state.Units.Length; j++) targets.Add(j);
+                targets.Sort((a, b) =>
+                {
+                    var left = state.Units[a]; var right = state.Units[b];
+                    var distance = attacker.Cell.ManhattanTo(left.Cell).CompareTo(attacker.Cell.ManhattanTo(right.Cell));
+                    return distance != 0 ? distance : string.CompareOrdinal(left.Id.Value, right.Id.Value);
+                });
+                for (var j = 0; j < targets.Count; j++)
+                {
+                    var target = state.Units[targets[j]];
+                    if (target.Side == attacker.Side || target.State != "Active" || target.Hp <= 0) continue;
+                    var distance = attacker.Cell.ManhattanTo(target.Cell);
+                    if (distance < attacker.RangeMin || distance > attacker.RangeMax || !HasLineOfSight(state, attacker.Cell, target.Cell)) continue;
+                    if (attacker.OrderKind == BattleOrderKind.Attack && !attacker.OrderTargetUnitId.Equals(target.Id)) continue;
+                    state.Rng.Consume(RngPurpose.Battle);
+                    damage[targets[j]] += attacker.Power;
+                    attacker.CooldownTicksLeft = attacker.AttackCooldownTicks;
+                    break;
+                }
+            }
+            for (var i = 0; i < state.Units.Length; i++)
+            {
+                if (damage[i] <= 0) continue;
+                var unit = state.Units[i];
+                unit.Hp = Math.Max(0, unit.Hp - damage[i]);
+                unit.SurvivorCount = Math.Min(unit.SurvivorCount, unit.Hp <= 0 ? 0 : (int)((4L * unit.Hp + unit.MaxHp - 1L) / unit.MaxHp));
+                if (unit.Hp == 0) unit.State = "Down";
+            }
+        }
+
+        static bool HasLineOfSight(BattleSimState state, GridCoord from, GridCoord to)
+        {
+            if (state.Terrain == null) return true;
+            var dx = Math.Sign(to.X - from.X); var dy = Math.Sign(to.Y - from.Y);
+            var x = from.X + dx; var y = from.Y + dy;
+            while (x != to.X || y != to.Y)
+            {
+                if (state.Terrain.IsWater(x, y)) return false;
+                x += dx; y += dy;
+            }
+            return true;
         }
         static void TickCards(BattleSimState state)
         {
