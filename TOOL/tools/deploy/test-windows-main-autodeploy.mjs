@@ -15,7 +15,7 @@ test('main pushes deploy through the dedicated Windows runner', async () => {
   assert.match(workflow, /\.git\\modules\\TOOL\\unity-remote/)
   assert.match(workflow, /submodules: false/)
   assert.match(workflow, /lfs: true/)
-  assert.match(workflow, /git lfs pull --include="WEB\/wiki\/public\/state-flags\/\*\.webp"/)
+  assert.match(workflow, /git lfs pull --include="WEB\/wiki\/public\/\*\*,GAME-REFERENCE\/portrait-demo\/\*\*,GAME-REFERENCE\/ui-layout-moodboard\/\*\*,GAME-REFERENCE\/ui-ux-refs\/\*\*"/)
   assert.match(workflow, /git -C TOOL\/portrait-gen lfs pull/)
   assert.match(workflow, /git submodule update --init --recursive --force/)
   assert.match(workflow, /token: \$\{\{ secrets\.SUBMODULES_PAT \}\}/)

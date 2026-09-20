@@ -56,7 +56,7 @@ jobs:
           }
           git submodule sync --recursive
           git submodule update --init --recursive --force
-          git lfs pull --include="WEB/wiki/public/state-flags/*.webp"
+          git lfs pull --include="WEB/wiki/public/**,GAME-REFERENCE/portrait-demo/**,GAME-REFERENCE/ui-layout-moodboard/**,GAME-REFERENCE/ui-ux-refs/**"
           git -C TOOL/portrait-gen lfs pull
 
       - name: Build, verify, and atomically deploy the hub
