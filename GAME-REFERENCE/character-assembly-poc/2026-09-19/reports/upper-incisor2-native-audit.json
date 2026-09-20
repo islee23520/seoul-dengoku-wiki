@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "triangles": 87,
+  "tolerance_source_units": 4.19921875e-10,
+  "degenerate_triangles": [],
+  "intersections": [],
+  "point_contacts": [
+    {
+      "triangles": [
+        0,
+        21
+      ],
+      "type": "NONADJACENT_POINT_CONTACT"
+    },
+    {
+      "triangles": [
+        1,
+        21
+      ],
+      "type": "NONADJACENT_POINT_CONTACT"
+    }
+  ]
+}

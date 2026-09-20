@@ -1,0 +1,136 @@
+{
+  "source": "work/all-quad-patches-review.blend",
+  "removed_detached_debris": [
+    {
+      "vertices": 10,
+      "faces": 8,
+      "min": [
+        -0.8462797403335571,
+        0.05982404947280884,
+        1.4261126518249512
+      ],
+      "max": [
+        -0.8398371934890747,
+        0.06427250057458878,
+        1.4325551986694336
+      ]
+    },
+    {
+      "vertices": 10,
+      "faces": 8,
+      "min": [
+        -0.8462797403335571,
+        0.06028423458337784,
+        1.4261126518249512
+      ],
+      "max": [
+        -0.8398371934890747,
+        0.06457928568124771,
+        1.4325551986694336
+      ]
+    },
+    {
+      "vertices": 10,
+      "faces": 8,
+      "min": [
+        0.839837372303009,
+        0.05982426926493645,
+        1.4261126518249512
+      ],
+      "max": [
+        0.8462799787521362,
+        0.06427272409200668,
+        1.4325551986694336
+      ]
+    },
+    {
+      "vertices": 10,
+      "faces": 8,
+      "min": [
+        0.839837372303009,
+        0.06028445065021515,
+        1.4261126518249512
+      ],
+      "max": [
+        0.8462799787521362,
+        0.06457950919866562,
+        1.4325551986694336
+      ]
+    },
+    {
+      "vertices": 4,
+      "faces": 2,
+      "min": [
+        -0.8306334018707275,
+        0.01058428455144167,
+        1.4882376194000244
+      ],
+      "max": [
+        -0.8306334018707275,
+        0.011044468730688095,
+        1.4886977672576904
+      ]
+    },
+    {
+      "vertices": 4,
+      "faces": 2,
+      "min": [
+        0.8306336402893066,
+        0.01058450248092413,
+        1.4882376194000244
+      ],
+      "max": [
+        0.8306336402893066,
+        0.011044686660170555,
+        1.4886977672576904
+      ]
+    }
+  ],
+  "source_half_vertex_positions_unchanged": true,
+  "remaining_connected_components": 1,
+  "seam_definition": "SeamRelax_Only vertex group created from actual bridge and three neighbor rows",
+  "sides": {
+    "negative_x": {
+      "hard_failures": {
+        "unexpected_boundary": 0,
+        "junctions": 0,
+        "winding": 0,
+        "wire": 0,
+        "degenerate": 0,
+        "duplicates": 0
+      },
+      "structural_pass": true,
+      "seam_vertices": 335,
+      "seam_edges": 623,
+      "seam_angle": {
+        "median": 5.1275711396561965,
+        "p90": 9.122455809246581,
+        "max": 18.12966822719374,
+        "over90": 0
+      },
+      "seam_valence_max": 6
+    },
+    "positive_x": {
+      "hard_failures": {
+        "unexpected_boundary": 0,
+        "junctions": 0,
+        "winding": 0,
+        "wire": 0,
+        "degenerate": 0,
+        "duplicates": 0
+      },
+      "structural_pass": true,
+      "seam_vertices": 340,
+      "seam_edges": 632,
+      "seam_angle": {
+        "median": 6.739247335648146,
+        "p90": 12.746364132841686,
+        "max": 35.50134596596156,
+        "over90": 0
+      },
+      "seam_valence_max": 6
+    }
+  },
+  "visual_review_pending": true,
+  "symmetry_not_applied": true
+}

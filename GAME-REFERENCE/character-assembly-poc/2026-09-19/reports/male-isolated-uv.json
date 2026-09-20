@@ -1,0 +1,44 @@
+{
+  "isolated_half_receipts": [
+    {
+      "side": -1,
+      "faces": 33715,
+      "copied_loops": 134326
+    },
+    {
+      "side": 1,
+      "faces": 33715,
+      "copied_loops": 134326
+    }
+  ],
+  "degenerate_uv_triangles": [
+    8920
+  ],
+  "source_uv_preserved": true,
+  "geometry_preserved": true,
+  "half_bounds": [
+    {
+      "side": -1,
+      "min": [
+        0.015939999371767044,
+        0.26594001054763794
+      ],
+      "max": [
+        0.481219619512558,
+        0.7340600490570068
+      ]
+    },
+    {
+      "side": 1,
+      "min": [
+        0.5159634947776794,
+        0.26594001054763794
+      ],
+      "max": [
+        0.9619091153144836,
+        0.7340599894523621
+      ]
+    }
+  ],
+  "overlap_verification_pending": true
+}

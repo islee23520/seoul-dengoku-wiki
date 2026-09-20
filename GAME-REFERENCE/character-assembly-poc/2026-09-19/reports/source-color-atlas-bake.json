@@ -1,0 +1,26 @@
+{
+  "resolution": 4096,
+  "image": "/Users/danny/workspace/seoul-kenshi/GAME-REFERENCE/character-assembly-poc/2026-09-19/work/textures/source-atlas/Male_SourceColor_4096.png",
+  "bake_type": "EMIT",
+  "new_lighting_baked": false,
+  "source_lighting_already_present_not_removed": true,
+  "source_bindings": [
+    {
+      "slot": 0,
+      "source_material": "d6e8a657_1e69_41d4_8206_158024c81080.002",
+      "source_images": [
+        "muscular_human_figure_3d_model_basecolor"
+      ]
+    },
+    {
+      "slot": 1,
+      "source_material": "b8dc850c_16b0_4c13_8f65_6a9f8aa08dc7.001",
+      "source_images": [
+        "bald_head_3d_model_basecolor"
+      ]
+    }
+  ],
+  "geometry_preserved": true,
+  "margin_pixels": 4,
+  "status": "COLOR_TRANSFER_ONLY_PATCH_CORRECTION_PENDING"
+}

@@ -1,0 +1,37 @@
+{
+  "before": {
+    "vertices": 266,
+    "faces": 268,
+    "area": 0.07707925286104,
+    "boundary": 24
+  },
+  "after": {
+    "vertices": 265,
+    "faces": 268,
+    "area": 0.07685670886075968,
+    "boundary": 20,
+    "junctions": 0,
+    "winding_errors": 0,
+    "components": 1
+  },
+  "root_interface_coordinates_unchanged": true,
+  "max_distance_new_vertices_to_original_vertex_cloud": 0.00647073145955801,
+  "surface_area_ratio": 0.9971127898621237,
+  "patches": [
+    {
+      "boundary_edges": 12,
+      "span": 2,
+      "offset": 5,
+      "quad_faces": 8,
+      "new_vertices": 3,
+      "boundary_displacement_m": 0,
+      "center": [
+        -0.07328282296657562,
+        -0.1868489682674408,
+        0.2790120542049408
+      ]
+    }
+  ],
+  "visual_review_pending": true,
+  "root_cap_not_added": "Separate tongue attaches inside mouth; root interface deliberately open and documented"
+}

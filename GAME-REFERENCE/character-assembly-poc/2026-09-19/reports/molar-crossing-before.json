@@ -1,0 +1,45 @@
+{
+  "ok": false,
+  "triangles": 204,
+  "tolerance_source_units": 3.515625e-10,
+  "degenerate_triangles": [],
+  "intersections": [
+    {
+      "triangles": [
+        34,
+        140
+      ],
+      "type": "PROPER_INTERSECTION",
+      "segment_length": 1.8801045528254654e-08,
+      "shared_vertices": 0
+    },
+    {
+      "triangles": [
+        34,
+        150
+      ],
+      "type": "PROPER_INTERSECTION",
+      "segment_length": 0.0005638265089673493,
+      "shared_vertices": 1
+    },
+    {
+      "triangles": [
+        140,
+        146
+      ],
+      "type": "PROPER_INTERSECTION",
+      "segment_length": 2.2181150610537954e-08,
+      "shared_vertices": 0
+    },
+    {
+      "triangles": [
+        146,
+        150
+      ],
+      "type": "PROPER_INTERSECTION",
+      "segment_length": 0.0005638265088796217,
+      "shared_vertices": 1
+    }
+  ],
+  "point_contacts": []
+}

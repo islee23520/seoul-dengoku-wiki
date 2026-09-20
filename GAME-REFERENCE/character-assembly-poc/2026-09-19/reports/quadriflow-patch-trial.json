@@ -1,0 +1,27 @@
+{
+  "operator_status": [
+    "FINISHED"
+  ],
+  "before": {
+    "vertices": 420,
+    "faces": 367,
+    "boundaries": [
+      42,
+      64
+    ]
+  },
+  "after": {
+    "vertices": 512,
+    "faces": 448,
+    "boundaries": [
+      64,
+      64
+    ],
+    "all_quads": true,
+    "winding_errors": 0,
+    "junctions": 0,
+    "boundary_coordinates_unchanged": false
+  },
+  "scope": "disposable patch only",
+  "can_stitch_without_boundary_rework": false
+}

@@ -1,0 +1,1870 @@
+[
+  {
+    "object": "Male_Upper_GumArch",
+    "role": "gum_arch",
+    "vertices": 618,
+    "ok": false,
+    "triangles": 963,
+    "tolerance_source_units": 2.16796875e-09,
+    "degenerate_triangles": [],
+    "intersections": [
+      {
+        "triangles": [
+          131,
+          133
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0010523168761146216,
+        "shared_vertices": 0,
+        "polygons": [
+          131,
+          133
+        ],
+        "center": [
+          0.09562180439631145,
+          -0.20719398061434427,
+          0.3089193006356557
+        ]
+      }
+    ],
+    "point_contacts": [
+      {
+        "triangles": [
+          0,
+          3
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          0,
+          4
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          0,
+          5
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          0,
+          146
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          0,
+          154
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          0,
+          157
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          0,
+          158
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          0,
+          159
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          0,
+          160
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          1,
+          3
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          1,
+          4
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          1,
+          5
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          1,
+          146
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          1,
+          157
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          1,
+          158
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          2,
+          146
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          2,
+          157
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          2,
+          158
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          129,
+          131
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          129,
+          132
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          129,
+          133
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          130,
+          132
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          130,
+          133
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      }
+    ]
+  },
+  {
+    "object": "Male_Upper_RecoveredCrown1",
+    "role": "recovered_crown_candidate",
+    "vertices": 108,
+    "ok": false,
+    "triangles": 196,
+    "tolerance_source_units": 3.515625e-10,
+    "degenerate_triangles": [],
+    "intersections": [
+      {
+        "triangles": [
+          24,
+          108
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.004243685719065421,
+        "shared_vertices": 1,
+        "polygons": [
+          24,
+          80
+        ],
+        "center": [
+          -0.08105462789535522,
+          -0.2222493514418602,
+          0.3023275037606557
+        ]
+      },
+      {
+        "triangles": [
+          29,
+          118
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0022180304448758403,
+        "shared_vertices": 0,
+        "polygons": [
+          29,
+          85
+        ],
+        "center": [
+          -0.07552077372868855,
+          -0.22086588541666666,
+          0.3057454725106557
+        ]
+      },
+      {
+        "triangles": [
+          29,
+          119
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0011062880399935315,
+        "shared_vertices": 0,
+        "polygons": [
+          29,
+          85
+        ],
+        "center": [
+          -0.07592767477035522,
+          -0.220947265625,
+          0.3056640923023224
+        ]
+      },
+      {
+        "triangles": [
+          29,
+          121
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.003163870577134656,
+        "shared_vertices": 1,
+        "polygons": [
+          29,
+          86
+        ],
+        "center": [
+          -0.07478835185368855,
+          -0.220703125,
+          0.3053385714689891
+        ]
+      },
+      {
+        "triangles": [
+          29,
+          190
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.001123030943676103,
+        "shared_vertices": 0,
+        "polygons": [
+          29,
+          121
+        ],
+        "center": [
+          -0.07324212789535522,
+          -0.22037760416666666,
+          0.3051758110523224
+        ]
+      },
+      {
+        "triangles": [
+          30,
+          118
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0010268928137406636,
+        "shared_vertices": 0,
+        "polygons": [
+          30,
+          85
+        ],
+        "center": [
+          -0.0763345758120219,
+          -0.220947265625,
+          0.3048502902189891
+        ]
+      },
+      {
+        "triangles": [
+          30,
+          119
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.00014218806493583027,
+        "shared_vertices": 0,
+        "polygons": [
+          30,
+          85
+        ],
+        "center": [
+          -0.07674147685368855,
+          -0.22102864583333334,
+          0.3047689100106557
+        ]
+      },
+      {
+        "triangles": [
+          30,
+          121
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0036285494143873448,
+        "shared_vertices": 1,
+        "polygons": [
+          30,
+          86
+        ],
+        "center": [
+          -0.0756021539370219,
+          -0.22078450520833334,
+          0.3044433891773224
+        ]
+      },
+      {
+        "triangles": [
+          30,
+          190
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0025191983908305826,
+        "shared_vertices": 0,
+        "polygons": [
+          30,
+          121
+        ],
+        "center": [
+          -0.07405592997868855,
+          -0.220458984375,
+          0.3042806287606557
+        ]
+      },
+      {
+        "triangles": [
+          108,
+          121
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.001583587411261694,
+        "shared_vertices": 0,
+        "polygons": [
+          80,
+          86
+        ],
+        "center": [
+          -0.07861322164535522,
+          -0.22167968998352686,
+          0.3024902641773224
+        ]
+      },
+      {
+        "triangles": [
+          118,
+          121
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0062282346292017125,
+        "shared_vertices": 1,
+        "polygons": [
+          85,
+          86
+        ],
+        "center": [
+          -0.07698561747868855,
+          -0.221435546875,
+          0.3044433891773224
+        ]
+      },
+      {
+        "triangles": [
+          120,
+          190
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.004758035413105246,
+        "shared_vertices": 1,
+        "polygons": [
+          86,
+          121
+        ],
+        "center": [
+          -0.0738931695620219,
+          -0.22037760416666666,
+          0.3043620089689891
+        ]
+      }
+    ],
+    "point_contacts": []
+  },
+  {
+    "object": "Male_Upper_RecoveredCrown2",
+    "role": "recovered_crown_candidate",
+    "vertices": 51,
+    "ok": false,
+    "triangles": 87,
+    "tolerance_source_units": 4.19921875e-10,
+    "degenerate_triangles": [],
+    "intersections": [
+      {
+        "triangles": [
+          52,
+          76
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0007773728048515588,
+        "shared_vertices": 1,
+        "polygons": [
+          31,
+          43
+        ],
+        "center": [
+          -0.0012206309863055746,
+          -0.3228352566560109,
+          0.2910156548023224
+        ]
+      },
+      {
+        "triangles": [
+          74,
+          76
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.005175770898468488,
+        "shared_vertices": 1,
+        "polygons": [
+          42,
+          43
+        ],
+        "center": [
+          -0.0012206310445132356,
+          -0.3224283556143443,
+          0.2958170870939891
+        ]
+      }
+    ],
+    "point_contacts": [
+      {
+        "triangles": [
+          0,
+          21
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          1,
+          21
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      }
+    ]
+  },
+  {
+    "object": "Male_Upper_RecoveredCrown3",
+    "role": "recovered_crown_candidate",
+    "vertices": 50,
+    "ok": false,
+    "triangles": 88,
+    "tolerance_source_units": 4.19921875e-10,
+    "degenerate_triangles": [],
+    "intersections": [
+      {
+        "triangles": [
+          11,
+          23
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0023707757384180414,
+        "shared_vertices": 1,
+        "polygons": [
+          10,
+          16
+        ],
+        "center": [
+          -0.0002440682437736541,
+          -0.3247070014476776,
+          0.2914225558439891
+        ]
+      },
+      {
+        "triangles": [
+          23,
+          26
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.01060424506822298,
+        "shared_vertices": 1,
+        "polygons": [
+          16,
+          18
+        ],
+        "center": [
+          -0.00024406854208791628,
+          -0.3224283556143443,
+          0.2958170870939891
+        ]
+      }
+    ],
+    "point_contacts": []
+  },
+  {
+    "object": "Male_Lower_GumArch",
+    "role": "gum_arch",
+    "vertices": 694,
+    "ok": false,
+    "triangles": 1091,
+    "tolerance_source_units": 2.099609375e-09,
+    "degenerate_triangles": [
+      443
+    ],
+    "intersections": [
+      {
+        "triangles": [
+          15,
+          421
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.005691223048671485,
+        "shared_vertices": 1,
+        "polygons": [
+          15,
+          289
+        ],
+        "center": [
+          -0.04923495898644129,
+          -0.2819010118643443,
+          0.2671712537606557
+        ]
+      },
+      {
+        "triangles": [
+          18,
+          454
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.004540819996787745,
+        "shared_vertices": 1,
+        "polygons": [
+          18,
+          305
+        ],
+        "center": [
+          -0.05940748875339826,
+          -0.2639159858226776,
+          0.2695312798023224
+        ]
+      },
+      {
+        "triangles": [
+          36,
+          444
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0006905339660024879,
+        "shared_vertices": 1,
+        "polygons": [
+          36,
+          300
+        ],
+        "center": [
+          -0.04101555421948433,
+          -0.3097330431143443,
+          0.2663574516773224
+        ]
+      },
+      {
+        "triangles": [
+          50,
+          418
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0019557795718171405,
+        "shared_vertices": 1,
+        "polygons": [
+          50,
+          287
+        ],
+        "center": [
+          -0.04801425586144129,
+          -0.2867838243643443,
+          0.2674153943856557
+        ]
+      },
+      {
+        "triangles": [
+          51,
+          420
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0004477489399594952,
+        "shared_vertices": 0,
+        "polygons": [
+          51,
+          288
+        ],
+        "center": [
+          -0.04972324023644129,
+          -0.2851562201976776,
+          0.2687174777189891
+        ]
+      },
+      {
+        "triangles": [
+          51,
+          421
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.005045276573808108,
+        "shared_vertices": 0,
+        "polygons": [
+          51,
+          289
+        ],
+        "center": [
+          -0.04996738086144129,
+          -0.2835286160310109,
+          0.2679036756356557
+        ]
+      },
+      {
+        "triangles": [
+          105,
+          870
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.004674233446025721,
+        "shared_vertices": 1,
+        "polygons": [
+          105,
+          513
+        ],
+        "center": [
+          0.058105532079935074,
+          -0.2645670274893443,
+          0.2701823214689891
+        ]
+      },
+      {
+        "triangles": [
+          118,
+          809
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0013610753896221707,
+        "shared_vertices": 0,
+        "polygons": [
+          118,
+          483
+        ],
+        "center": [
+          0.038004626209537186,
+          -0.2921549181143443,
+          0.2597656548023224
+        ]
+      },
+      {
+        "triangles": [
+          118,
+          810
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.004522159062496022,
+        "shared_vertices": 1,
+        "polygons": [
+          118,
+          483
+        ],
+        "center": [
+          0.037434964130322136,
+          -0.2901204129060109,
+          0.2596842745939891
+        ]
+      },
+      {
+        "triangles": [
+          118,
+          819
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.006770465173818027,
+        "shared_vertices": 1,
+        "polygons": [
+          118,
+          488
+        ],
+        "center": [
+          0.03971360934277376,
+          -0.2886555691560109,
+          0.2616373995939891
+        ]
+      },
+      {
+        "triangles": [
+          121,
+          127
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.007036727036924959,
+        "shared_vertices": 1,
+        "polygons": [
+          121,
+          127
+        ],
+        "center": [
+          0.0652669941385587,
+          -0.2702636420726776,
+          0.2697754204273224
+        ]
+      },
+      {
+        "triangles": [
+          287,
+          454
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.00416623503729085,
+        "shared_vertices": 1,
+        "polygons": [
+          222,
+          305
+        ],
+        "center": [
+          -0.05900058771173159,
+          -0.2634277045726776,
+          0.2682291964689891
+        ]
+      },
+      {
+        "triangles": [
+          418,
+          419
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0024181072337027916,
+        "shared_vertices": 0,
+        "polygons": [
+          287,
+          288
+        ],
+        "center": [
+          -0.04728183398644129,
+          -0.2851562201976776,
+          0.2666829725106557
+        ]
+      },
+      {
+        "triangles": [
+          418,
+          420
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.00316107140651162,
+        "shared_vertices": 0,
+        "polygons": [
+          287,
+          288
+        ],
+        "center": [
+          -0.04744459440310796,
+          -0.2857258816560109,
+          0.2672526339689891
+        ]
+      },
+      {
+        "triangles": [
+          748,
+          870
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.004024843025229783,
+        "shared_vertices": 1,
+        "polygons": [
+          452,
+          513
+        ],
+        "center": [
+          0.05769863103826841,
+          -0.2640787462393443,
+          0.2688802381356557
+        ]
+      },
+      {
+        "triangles": [
+          820,
+          823
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0004639808030796472,
+        "shared_vertices": 0,
+        "polygons": [
+          488,
+          490
+        ],
+        "center": [
+          0.04565436393022537,
+          -0.2864583035310109,
+          0.2674967745939891
+        ]
+      },
+      {
+        "triangles": [
+          821,
+          823
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.000881617072822017,
+        "shared_vertices": 0,
+        "polygons": [
+          489,
+          490
+        ],
+        "center": [
+          0.04728196809689204,
+          -0.2851562201976776,
+          0.2687174777189891
+        ]
+      }
+    ],
+    "point_contacts": [
+      {
+        "triangles": [
+          18,
+          360
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          52,
+          436
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          101,
+          792
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          115,
+          792
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          121,
+          879
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          121,
+          880
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          128,
+          879
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          128,
+          880
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          360,
+          453
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          360,
+          454
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          391,
+          393
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          582,
+          613
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          819,
+          846
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          820,
+          846
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          821,
+          846
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          822,
+          846
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          977,
+          983
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          977,
+          984
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          978,
+          983
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      },
+      {
+        "triangles": [
+          978,
+          984
+        ],
+        "type": "NONADJACENT_POINT_CONTACT"
+      }
+    ]
+  },
+  {
+    "object": "Male_Lower_RecoveredCrown1",
+    "role": "recovered_crown_candidate",
+    "vertices": 101,
+    "ok": false,
+    "triangles": 183,
+    "tolerance_source_units": 5.224609375e-10,
+    "degenerate_triangles": [],
+    "intersections": [
+      {
+        "triangles": [
+          0,
+          122
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.00015741348399156072,
+        "shared_vertices": 0,
+        "polygons": [
+          0,
+          90
+        ],
+        "center": [
+          -0.05940748502810796,
+          -0.2935383816560109,
+          0.2658691704273224
+        ]
+      },
+      {
+        "triangles": [
+          4,
+          34
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0001156455592105335,
+        "shared_vertices": 0,
+        "polygons": [
+          4,
+          34
+        ],
+        "center": [
+          -0.05753574023644129,
+          -0.2919921576976776,
+          0.2689616183439891
+        ]
+      },
+      {
+        "triangles": [
+          4,
+          35
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0005179004745018657,
+        "shared_vertices": 0,
+        "polygons": [
+          4,
+          35
+        ],
+        "center": [
+          -0.05721021940310796,
+          -0.2922362983226776,
+          0.2697754204273224
+        ]
+      },
+      {
+        "triangles": [
+          28,
+          122
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0021416239804013856,
+        "shared_vertices": 0,
+        "polygons": [
+          28,
+          90
+        ],
+        "center": [
+          -0.05916334440310796,
+          -0.2937825222810109,
+          0.2690429985523224
+        ]
+      },
+      {
+        "triangles": [
+          28,
+          123
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0005965825435039409,
+        "shared_vertices": 0,
+        "polygons": [
+          28,
+          91
+        ],
+        "center": [
+          -0.05883782356977463,
+          -0.2941080431143443,
+          0.2704264620939891
+        ]
+      },
+      {
+        "triangles": [
+          31,
+          123
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.00216841341413641,
+        "shared_vertices": 0,
+        "polygons": [
+          31,
+          91
+        ],
+        "center": [
+          -0.05769850065310796,
+          -0.2937011420726776,
+          0.2727051079273224
+        ]
+      },
+      {
+        "triangles": [
+          31,
+          129
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.00045318028612584835,
+        "shared_vertices": 0,
+        "polygons": [
+          31,
+          94
+        ],
+        "center": [
+          -0.05664055794477463,
+          -0.2936197618643443,
+          0.2733561495939891
+        ]
+      },
+      {
+        "triangles": [
+          34,
+          122
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 9.171014272944811e-05,
+        "shared_vertices": 0,
+        "polygons": [
+          34,
+          90
+        ],
+        "center": [
+          -0.05777988086144129,
+          -0.2923176785310109,
+          0.2695312798023224
+        ]
+      },
+      {
+        "triangles": [
+          34,
+          128
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0001772637230005513,
+        "shared_vertices": 0,
+        "polygons": [
+          34,
+          93
+        ],
+        "center": [
+          -0.05680331836144129,
+          -0.2919921576976776,
+          0.2693685193856557
+        ]
+      },
+      {
+        "triangles": [
+          35,
+          122
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0005618214328879248,
+        "shared_vertices": 0,
+        "polygons": [
+          35,
+          90
+        ],
+        "center": [
+          -0.05745436002810796,
+          -0.2925618191560109,
+          0.2703450818856557
+        ]
+      },
+      {
+        "triangles": [
+          35,
+          128
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0013225295454873972,
+        "shared_vertices": 0,
+        "polygons": [
+          35,
+          93
+        ],
+        "center": [
+          -0.05647779752810796,
+          -0.2922362983226776,
+          0.2701823214689891
+        ]
+      },
+      {
+        "triangles": [
+          35,
+          129
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0010407639712430733,
+        "shared_vertices": 0,
+        "polygons": [
+          35,
+          94
+        ],
+        "center": [
+          -0.05607089648644129,
+          -0.2928059597810109,
+          0.2723795870939891
+        ]
+      },
+      {
+        "triangles": [
+          35,
+          130
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0007860327427662496,
+        "shared_vertices": 0,
+        "polygons": [
+          35,
+          94
+        ],
+        "center": [
+          -0.05566399544477463,
+          -0.2924804389476776,
+          0.2714030245939891
+        ]
+      },
+      {
+        "triangles": [
+          36,
+          128
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0005602585356617694,
+        "shared_vertices": 0,
+        "polygons": [
+          36,
+          93
+        ],
+        "center": [
+          -0.05598951627810796,
+          -0.2922362983226776,
+          0.2706706027189891
+        ]
+      },
+      {
+        "triangles": [
+          36,
+          129
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0009451898169682178,
+        "shared_vertices": 0,
+        "polygons": [
+          36,
+          94
+        ],
+        "center": [
+          -0.05558261523644129,
+          -0.2928059597810109,
+          0.2728678683439891
+        ]
+      },
+      {
+        "triangles": [
+          36,
+          130
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0009351642898687749,
+        "shared_vertices": 0,
+        "polygons": [
+          36,
+          94
+        ],
+        "center": [
+          -0.05517571419477463,
+          -0.2924804389476776,
+          0.2718913058439891
+        ]
+      },
+      {
+        "triangles": [
+          37,
+          127
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0001267608588837758,
+        "shared_vertices": 0,
+        "polygons": [
+          37,
+          93
+        ],
+        "center": [
+          -0.05639641731977463,
+          -0.2909342149893443,
+          0.2677409152189891
+        ]
+      },
+      {
+        "triangles": [
+          39,
+          52
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0016830452920706587,
+        "shared_vertices": 0,
+        "polygons": [
+          39,
+          52
+        ],
+        "center": [
+          -0.05192050586144129,
+          -0.2901204129060109,
+          0.2672526339689891
+        ]
+      },
+      {
+        "triangles": [
+          39,
+          127
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0005200248723914364,
+        "shared_vertices": 0,
+        "polygons": [
+          39,
+          93
+        ],
+        "center": [
+          -0.05379225065310796,
+          -0.2907714545726776,
+          0.2679036756356557
+        ]
+      },
+      {
+        "triangles": [
+          39,
+          145
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.001870539441508,
+        "shared_vertices": 0,
+        "polygons": [
+          39,
+          102
+        ],
+        "center": [
+          -0.05086256315310796,
+          -0.2901204129060109,
+          0.2686360975106557
+        ]
+      },
+      {
+        "triangles": [
+          39,
+          146
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0017784980695298735,
+        "shared_vertices": 0,
+        "polygons": [
+          39,
+          102
+        ],
+        "center": [
+          -0.05192050586144129,
+          -0.2910155951976776,
+          0.2705078423023224
+        ]
+      },
+      {
+        "triangles": [
+          40,
+          146
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0004870744647681714,
+        "shared_vertices": 0,
+        "polygons": [
+          40,
+          102
+        ],
+        "center": [
+          -0.05167636523644129,
+          -0.2913411160310109,
+          0.2712402641773224
+        ]
+      },
+      {
+        "triangles": [
+          41,
+          48
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0004693608900254,
+        "shared_vertices": 0,
+        "polygons": [
+          41,
+          48
+        ],
+        "center": [
+          -0.05013014127810796,
+          -0.2927245795726776,
+          0.2728678683439891
+        ]
+      },
+      {
+        "triangles": [
+          41,
+          49
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.002436203947817594,
+        "shared_vertices": 1,
+        "polygons": [
+          41,
+          49
+        ],
+        "center": [
+          -0.05183912565310796,
+          -0.2919921576976776,
+          0.2719726860523224
+        ]
+      },
+      {
+        "triangles": [
+          41,
+          113
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.006888572486885867,
+        "shared_vertices": 1,
+        "polygons": [
+          41,
+          86
+        ],
+        "center": [
+          -0.04964186002810796,
+          -0.2923176785310109,
+          0.2709961235523224
+        ]
+      },
+      {
+        "triangles": [
+          41,
+          146
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0009367493558130697,
+        "shared_vertices": 0,
+        "polygons": [
+          41,
+          102
+        ],
+        "center": [
+          -0.05167636523644129,
+          -0.2913411160310109,
+          0.2714844048023224
+        ]
+      },
+      {
+        "triangles": [
+          42,
+          127
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 4.910406256727483e-05,
+        "shared_vertices": 0,
+        "polygons": [
+          42,
+          93
+        ],
+        "center": [
+          -0.05598951627810796,
+          -0.2910155951976776,
+          0.2681478162606557
+        ]
+      },
+      {
+        "triangles": [
+          42,
+          128
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.00021284891531273144,
+        "shared_vertices": 0,
+        "polygons": [
+          42,
+          93
+        ],
+        "center": [
+          -0.05623365690310796,
+          -0.2916666368643443,
+          0.2690429985523224
+        ]
+      },
+      {
+        "triangles": [
+          43,
+          127
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 7.07402048526441e-05,
+        "shared_vertices": 0,
+        "polygons": [
+          43,
+          93
+        ],
+        "center": [
+          -0.05476881315310796,
+          -0.2907714545726776,
+          0.2688802381356557
+        ]
+      },
+      {
+        "triangles": [
+          43,
+          146
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0006804768773217085,
+        "shared_vertices": 0,
+        "polygons": [
+          43,
+          102
+        ],
+        "center": [
+          -0.05289706836144129,
+          -0.2910155951976776,
+          0.2714844048023224
+        ]
+      },
+      {
+        "triangles": [
+          44,
+          127
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 7.39570324789371e-05,
+        "shared_vertices": 0,
+        "polygons": [
+          44,
+          93
+        ],
+        "center": [
+          -0.05550123502810796,
+          -0.2909342149893443,
+          0.2684733370939891
+        ]
+      },
+      {
+        "triangles": [
+          44,
+          128
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.00023114393183970268,
+        "shared_vertices": 0,
+        "polygons": [
+          44,
+          93
+        ],
+        "center": [
+          -0.05574537565310796,
+          -0.2915852566560109,
+          0.2693685193856557
+        ]
+      },
+      {
+        "triangles": [
+          45,
+          128
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0002454088965212855,
+        "shared_vertices": 0,
+        "polygons": [
+          45,
+          93
+        ],
+        "center": [
+          -0.05582675586144129,
+          -0.2919107774893443,
+          0.2701823214689891
+        ]
+      },
+      {
+        "triangles": [
+          46,
+          146
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.00044789240589493775,
+        "shared_vertices": 0,
+        "polygons": [
+          46,
+          102
+        ],
+        "center": [
+          -0.05265292773644129,
+          -0.2913411160310109,
+          0.2724609673023224
+        ]
+      },
+      {
+        "triangles": [
+          49,
+          146
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0023480942809078007,
+        "shared_vertices": 0,
+        "polygons": [
+          49,
+          102
+        ],
+        "center": [
+          -0.05216464648644129,
+          -0.2917480170726776,
+          0.2731120089689891
+        ]
+      },
+      {
+        "triangles": [
+          49,
+          148
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0002153364298060813,
+        "shared_vertices": 0,
+        "polygons": [
+          49,
+          103
+        ],
+        "center": [
+          -0.05183912565310796,
+          -0.2910155951976776,
+          0.2747396131356557
+        ]
+      },
+      {
+        "triangles": [
+          50,
+          142
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 4.8390935721993124e-05,
+        "shared_vertices": 0,
+        "polygons": [
+          50,
+          100
+        ],
+        "center": [
+          -0.05346672981977463,
+          -0.2931314806143443,
+          0.2761230766773224
+        ]
+      },
+      {
+        "triangles": [
+          50,
+          147
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0004392627814196067,
+        "shared_vertices": 0,
+        "polygons": [
+          50,
+          103
+        ],
+        "center": [
+          -0.05273430794477463,
+          -0.2920735379060109,
+          0.2767741183439891
+        ]
+      },
+      {
+        "triangles": [
+          50,
+          148
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0002368576322252771,
+        "shared_vertices": 0,
+        "polygons": [
+          50,
+          103
+        ],
+        "center": [
+          -0.05192050586144129,
+          -0.2915852566560109,
+          0.2759603162606557
+        ]
+      },
+      {
+        "triangles": [
+          109,
+          122
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0001423598580575225,
+        "shared_vertices": 0,
+        "polygons": [
+          84,
+          90
+        ],
+        "center": [
+          -0.05916334440310796,
+          -0.2933756212393443,
+          0.2643229464689891
+        ]
+      },
+      {
+        "triangles": [
+          110,
+          121
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0011078407673753947,
+        "shared_vertices": 0,
+        "polygons": [
+          84,
+          90
+        ],
+        "center": [
+          -0.05916334440310796,
+          -0.2925618191560109,
+          0.2651367485523224
+        ]
+      },
+      {
+        "triangles": [
+          110,
+          122
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0008933448442684129,
+        "shared_vertices": 0,
+        "polygons": [
+          84,
+          90
+        ],
+        "center": [
+          -0.05875644336144129,
+          -0.2927245795726776,
+          0.2661133110523224
+        ]
+      },
+      {
+        "triangles": [
+          126,
+          127
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0025671070367203615,
+        "shared_vertices": 1,
+        "polygons": [
+          92,
+          93
+        ],
+        "center": [
+          -0.05639641731977463,
+          -0.2908528347810109,
+          0.2672526339689891
+        ]
+      },
+      {
+        "triangles": [
+          129,
+          131
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0008918176646552178,
+        "shared_vertices": 0,
+        "polygons": [
+          94,
+          95
+        ],
+        "center": [
+          -0.05517571419477463,
+          -0.2933756212393443,
+          0.2744954725106557
+        ]
+      },
+      {
+        "triangles": [
+          129,
+          132
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.00023770886775579506,
+        "shared_vertices": 0,
+        "polygons": [
+          94,
+          95
+        ],
+        "center": [
+          -0.05485019336144129,
+          -0.2937011420726776,
+          0.2753092745939891
+        ]
+      },
+      {
+        "triangles": [
+          129,
+          134
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0002066097566624386,
+        "shared_vertices": 0,
+        "polygons": [
+          94,
+          96
+        ],
+        "center": [
+          -0.05460605273644129,
+          -0.2935383816560109,
+          0.2750651339689891
+        ]
+      },
+      {
+        "triangles": [
+          133,
+          142
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.0011923317498568394,
+        "shared_vertices": 0,
+        "polygons": [
+          96,
+          100
+        ],
+        "center": [
+          -0.05411777148644129,
+          -0.2928873399893443,
+          0.2754720350106557
+        ]
+      },
+      {
+        "triangles": [
+          134,
+          142
+        ],
+        "type": "PROPER_INTERSECTION",
+        "segment_length": 0.00032725198916321854,
+        "shared_vertices": 0,
+        "polygons": [
+          96,
+          100
+        ],
+        "center": [
+          -0.05411777148644129,
+          -0.2933756212393443,
+          0.2763672173023224
+        ]
+      }
+    ],
+    "point_contacts": []
+  }
+]
