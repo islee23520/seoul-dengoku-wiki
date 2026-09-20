@@ -79,9 +79,7 @@ try {
 
     Write-Host "DEPLOY_STAGE extract-next"
     New-Item -ItemType Directory -Path $next -Force | Out-Null
-    Push-Location $releaseRoot
-    Invoke-Native "tar" @("-xf", "seoul-dengoku-site.tar", "-C", "..\..\site-next")
-    Pop-Location
+    Invoke-Native "tar" @("-xf", $archive, "-C", $next)
 
     Get-ChildItem $next -Recurse -Filter "._*" -Force -ErrorAction SilentlyContinue |
         Remove-Item -Force -ErrorAction SilentlyContinue
