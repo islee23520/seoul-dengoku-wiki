@@ -5,6 +5,135 @@ using System.Text;
 
 namespace Janseon.Core
 {
+    public enum CampaignDongStatus
+    {
+        Vacant = 0,
+        Contested = 1,
+        Held = 2
+    }
+
+    public sealed class CampaignControlState
+    {
+        readonly Dictionary<string, int> _influence;
+        readonly Dictionary<string, string> _buildings;
+        readonly HashSet<string> _stationLosses;
+
+        public string DongId { get; }
+        public string StationId { get; }
+        public string StationController { get; }
+        public int TotalInfluence
+        {
+            get
+            {
+                var total = 0;
+                foreach (var value in _influence.Values) total += value;
+                return total;
+            }
+        }
+
+        public CampaignDongStatus DongStatus
+        {
+            get
+            {
+                if (_influence.Count == 0) return CampaignDongStatus.Vacant;
+                var strongest = 0;
+                var active = 0;
+                foreach (var value in _influence.Values)
+                {
+                    if (value <= 0) continue;
+                    active++;
+                    if (value > strongest) strongest = value;
+                }
+                return active == 1 && strongest >= 50
+                    ? CampaignDongStatus.Held
+                    : CampaignDongStatus.Contested;
+            }
+        }
+
+        CampaignControlState(string dongId, string stationId, string stationController,
+            Dictionary<string, int> influence, Dictionary<string, string> buildings, HashSet<string> stationLosses)
+        {
+            DongId = dongId;
+            StationId = stationId;
+            StationController = stationController;
+            _influence = influence;
+            _buildings = buildings;
+            _stationLosses = stationLosses;
+        }
+
+        public static CampaignControlState Create(string dongId, string stationId)
+        {
+            if (string.IsNullOrWhiteSpace(dongId)) throw new ArgumentException("Dong id is required.", nameof(dongId));
+            if (string.IsNullOrWhiteSpace(stationId)) throw new ArgumentException("Station id is required.", nameof(stationId));
+            return new CampaignControlState(dongId.Trim(), stationId.Trim(), "Uncontrolled",
+                new Dictionary<string, int>(StringComparer.Ordinal),
+                new Dictionary<string, string>(StringComparer.Ordinal),
+                new HashSet<string>(StringComparer.Ordinal));
+        }
+
+        public int InfluenceOf(string factionId)
+        {
+            return factionId != null && _influence.TryGetValue(factionId, out var value) ? value : 0;
+        }
+
+        public CampaignControlState OccupyBuilding(string factionId, string buildingId, int influence)
+        {
+            if (string.IsNullOrWhiteSpace(factionId)) throw new ArgumentException("Faction id is required.", nameof(factionId));
+            if (string.IsNullOrWhiteSpace(buildingId)) throw new ArgumentException("Building id is required.", nameof(buildingId));
+            if (influence < 0 || influence > 100) throw new ArgumentOutOfRangeException(nameof(influence));
+            var nextInfluence = new Dictionary<string, int>(_influence, StringComparer.Ordinal);
+            var previousFaction = _buildings.TryGetValue(buildingId, out var existing) ? existing : null;
+            if (previousFaction != null && nextInfluence.TryGetValue(previousFaction, out var previous))
+                nextInfluence[previousFaction] = Math.Max(0, previous - influence);
+            nextInfluence[factionId] = Math.Min(100, InfluenceOf(factionId) + influence);
+            TrimInfluence(nextInfluence);
+            var buildings = new Dictionary<string, string>(_buildings, StringComparer.Ordinal) { [buildingId] = factionId };
+            return new CampaignControlState(DongId, StationId, StationController, nextInfluence, buildings,
+                new HashSet<string>(_stationLosses, StringComparer.Ordinal));
+        }
+
+        public CampaignControlState ControlStation(string factionId)
+        {
+            if (string.IsNullOrWhiteSpace(factionId)) throw new ArgumentException("Faction id is required.", nameof(factionId));
+            return new CampaignControlState(DongId, StationId, factionId.Trim(),
+                new Dictionary<string, int>(_influence, StringComparer.Ordinal),
+                new Dictionary<string, string>(_buildings, StringComparer.Ordinal),
+                new HashSet<string>(_stationLosses, StringComparer.Ordinal));
+        }
+
+        public CampaignControlState ApplyStationLoss(string factionId, string buildingId)
+        {
+            var key = (factionId ?? string.Empty) + "\0" + (buildingId ?? string.Empty);
+            if (!_stationLosses.Add(key)) return this;
+            var nextInfluence = new Dictionary<string, int>(_influence, StringComparer.Ordinal);
+            if (buildingId == "building-core" && string.Equals(StationController, factionId, StringComparison.Ordinal))
+            {
+                nextInfluence[factionId] = InfluenceOf(factionId) / 2;
+                return new CampaignControlState(DongId, StationId, "Uncontrolled", nextInfluence,
+                    new Dictionary<string, string>(_buildings, StringComparer.Ordinal), _stationLosses);
+            }
+            return new CampaignControlState(DongId, StationId, StationController, nextInfluence,
+                new Dictionary<string, string>(_buildings, StringComparer.Ordinal), _stationLosses);
+        }
+
+        static void TrimInfluence(Dictionary<string, int> influence)
+        {
+            var total = 0;
+            foreach (var value in influence.Values) total += value;
+            if (total <= 100) return;
+            var excess = total - 100;
+            var keys = new List<string>(influence.Keys);
+            keys.Sort(StringComparer.Ordinal);
+            foreach (var key in keys)
+            {
+                if (excess == 0) break;
+                var reduction = Math.Min(excess, influence[key]);
+                influence[key] -= reduction;
+                excess -= reduction;
+            }
+        }
+    }
+
     /// <summary>
     /// Six-stage campaign loop (docs/Campaign-Loop + Concept 거점→원정→조우→해결→정산→복귀).
     /// </summary>
