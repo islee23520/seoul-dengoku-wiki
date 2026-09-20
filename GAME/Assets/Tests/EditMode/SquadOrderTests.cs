@@ -13,6 +13,7 @@ namespace Janseon.Foundation.Tests
         {
             var context = BattleContext.Create("campaign", default(StationId), 314159, new Tick(0), 0, 0, BattleRules.RulesVersion, "task12", UnitHpSnapshot.DefaultParty());
             var setup = BattleSetup.FromContext(context);
+            setup.PlayerHeroId = new HeroId("hero-0");
             var state = BattleSim.Open(setup);
             ledger = new Ledger();
             var deploy = new BattleTickCommand { Id = new CommandId("deploy"), At = new Tick(0), Seq = 0, Kind = BattleTickCommandKind.Deploy, Formation = setup.PlayerFormation };
@@ -30,12 +31,19 @@ namespace Janseon.Foundation.Tests
             Assert.IsTrue(preview.Accepted);
             Assert.AreEqual(before, state.Fingerprint());
             Assert.IsTrue(BattleSim.ConfirmOrder(state, ledger, order).Accepted);
+            var replayEvents = ledger.Events.Count;
+            Assert.IsTrue(BattleSim.ConfirmOrder(state, ledger, order).Accepted);
+            Assert.AreEqual(replayEvents, ledger.Events.Count);
             BattleSim.Step(state, ledger);
             Assert.AreEqual(BattleOrderKind.Move, state.Units[0].OrderKind);
             var replacement = order.Clone(); replacement.CommandId = new CommandId("order-2"); replacement.Kind = BattleOrderKind.Attack; replacement.TargetUnitId = state.Units[6].Id;
             Assert.IsTrue(BattleSim.ConfirmOrder(state, ledger, replacement).Accepted);
             Assert.IsTrue(BattleSim.CancelOrder(state, replacement.CommandId));
             Assert.IsTrue(BattleSim.StopOrder(state, ledger, replacement.CommandId, new[] { "ally-0" }).Accepted);
+            var hero = state.Heroes[0];
+            var heroOrder = new SquadOrder { CommandId = new CommandId("hero-order"), ActorIds = new[] { hero.Id.Value }, Kind = BattleOrderKind.Move, Destination = new GridCoord(2, 2) };
+            Assert.IsTrue(BattleSim.ConfirmOrder(state, ledger, heroOrder).Accepted);
+            Assert.AreEqual(BattleOrderKind.Move, hero.OrderKind);
         }
 
         [Test]

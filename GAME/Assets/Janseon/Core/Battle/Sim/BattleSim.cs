@@ -156,13 +156,31 @@ namespace Janseon.Core.Battle.Sim
                 if (OrderEquals(existing, order)) return new SquadOrderResult { Accepted = true, Order = existing.Clone() };
                 return new SquadOrderResult { Conflict = true, Rejection = new ContractRejection { Reason = ContractRejectReason.CommandConflict, Detail = "commandId payload conflict" } };
             }
+            for (var i = state.Pending.Count - 1; i >= 0; i--)
+            {
+                var pending = state.Pending[i];
+                for (var j = 0; j < order.ActorIds.Length; j++)
+                    if (pending.ActorUnitId.Value == order.ActorIds[j]) { state.Pending.RemoveAt(i); break; }
+            }
+            for (var i = 0; i < order.ActorIds.Length; i++)
+            {
+                var oldActor = FindUnit(state, new UnitId(order.ActorIds[i]));
+                if (oldActor != null) ClearOrder(oldActor);
+                var oldHero = FindHero(state, order.ActorIds[i]);
+                if (oldHero != null) { oldHero.OrderKind = BattleOrderKind.None; oldHero.OrderDestination = new GridCoord(); oldHero.OrderTargetUnitId = new UnitId(); }
+            }
             var snapshot = state.Clone();
             var ledgerCount = ledger.Events.Count;
             var commands = new List<BattleTickCommand>();
             for (var i = 0; i < order.ActorIds.Length; i++)
             {
                 var actor = FindUnit(snapshot, new UnitId(order.ActorIds[i]));
-                if (actor == null && FindHero(snapshot, order.ActorIds[i]) != null) continue;
+                if (actor == null && FindHero(snapshot, order.ActorIds[i]) != null)
+                {
+                    var hero = FindHero(snapshot, order.ActorIds[i]);
+                    hero.OrderKind = order.Kind; hero.OrderDestination = order.Destination; hero.OrderTargetUnitId = order.TargetUnitId;
+                    continue;
+                }
                 if (actor == null) return new SquadOrderResult { Rejection = new ContractRejection { Reason = ContractRejectReason.UnknownActor } };
                 commands.Add(new BattleTickCommand { Id = new CommandId(order.CommandId.Value + ":" + i), Seq = i, At = new Tick(state.Tick), Kind = order.Kind == BattleOrderKind.Move ? BattleTickCommandKind.Move : BattleTickCommandKind.Attack, ActorUnitId = actor.Id, Target = order.Destination, TargetUnitId = order.TargetUnitId });
             }
