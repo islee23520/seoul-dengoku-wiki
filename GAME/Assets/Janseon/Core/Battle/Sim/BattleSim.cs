@@ -181,6 +181,14 @@ namespace Janseon.Core.Battle.Sim
             }
             return new SquadOrderResult { Accepted = true, Order = stop };
         }
+        public static bool CancelOrder(BattleSimState state, CommandId commandId)
+        {
+            if (state == null) return false;
+            var removed = state.AcceptedOrders.Remove(commandId.Value);
+            for (var i = state.Pending.Count - 1; i >= 0; i--)
+                if (state.Pending[i].Id.Value.StartsWith(commandId.Value + ":", StringComparison.Ordinal)) { state.Pending.RemoveAt(i); removed = true; }
+            return removed;
+        }
         static SquadOrderResult ValidateOrder(BattleSimState state, SquadOrder order)
         {
             if (state == null || order == null || order.ActorIds == null || order.ActorIds.Length == 0 || order.Kind == BattleOrderKind.None)
