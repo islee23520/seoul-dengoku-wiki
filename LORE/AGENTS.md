@@ -31,3 +31,4 @@ The root atlas (`World-Narrative-Atlas.md`) owns machine registries and generate
 - No real company names, logos, slogans, products, or current executives in fiction; no real institution as the subject of fictional crime.
 - Synthetics: no omniscient narration, no infinite energy, no long-term complete memory, no full network access, no facility control outside the assigned sector.
 - Keep the mixed shape when extending the atlas: Korean narrative prose, English structural terms, JSON `연결` fields for cross-links.
+- Every proper name and displayed term follows `../GDD/Korean-Terminology-and-Naming.md`. The rule covers states, organizations, houses, offices, people, martial schools, technology, goods, places, events and UI/data display names—not only martial arts.
