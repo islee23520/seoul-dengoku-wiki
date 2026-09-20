@@ -10,6 +10,7 @@ test('main pushes deploy through the dedicated Windows runner', async () => {
   assert.match(workflow, /cancel-in-progress: false/)
   assert.match(workflow, /runs-on: \[self-hosted, Windows, X64, seoul-dengoku\]/)
   assert.match(workflow, /submodules: recursive/)
+  assert.match(workflow, /token: \$\{\{ secrets\.SUBMODULES_PAT \}\}/)
   assert.match(workflow, /TOOL\\tools\\deploy\\deploy-hub-local-windows\.ps1/)
   assert.match(workflow, /E:\\git\\seoul-dengoku-web/)
 })
