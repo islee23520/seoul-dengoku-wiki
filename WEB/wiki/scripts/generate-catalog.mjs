@@ -8,7 +8,7 @@ const repoRoot = resolve(projectRoot, '../..')
 const contentRoot = resolve(projectRoot, 'src/content')
 const generatedRoot = resolve(projectRoot, 'src/generated')
 const publicRoot = resolve(projectRoot, 'public')
-const domains = ['world', 'rules', 'design']
+const domains = ['world']
 const wikiAssetTarget = resolve(publicRoot, 'wiki-assets')
 
 const normalizeTitle = (markdown, fallback) =>
@@ -78,7 +78,7 @@ for (const document of documents) {
 }
 
 const lines = [
-  'export type WikiDomain = \'world\' | \'rules\' | \'design\'',
+  'export type WikiDomain = \'world\'',
   '',
   'export type WikiDocument = {',
   '  readonly domain: WikiDomain',

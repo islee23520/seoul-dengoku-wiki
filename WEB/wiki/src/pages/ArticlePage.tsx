@@ -15,12 +15,12 @@ const markdownModules = import.meta.glob<string>('../content/**/*.md', {
 })
 
 const isWikiDomain = (value: string | undefined): value is WikiDomain =>
-  value === 'world' || value === 'rules' || value === 'design'
+  value === 'world'
 
 const markdownComponents: Components = {
   a: ({ href, children, ...props }) => {
     const normalizedHref = normalizeWikiHref(href)
-    if (normalizedHref.startsWith('/world/') || normalizedHref.startsWith('/rules/') || normalizedHref.startsWith('/design/')) {
+    if (normalizedHref.startsWith('/world/')) {
       return <Link to={normalizedHref} {...props}>{children}</Link>
     }
     return <a href={normalizedHref.startsWith('/') ? toWikiPath(normalizedHref) : normalizedHref} rel={normalizedHref.startsWith('http') ? 'noreferrer' : undefined} {...props}>{children}</a>
@@ -98,7 +98,7 @@ export default function ArticlePage() {
       <nav aria-label="현재 위치" className="wiki-breadcrumbs">
         <Link to="/">대문</Link>
         <span aria-hidden="true">›</span>
-        <Link to={`/${domain}/`}>{domain === 'world' ? '세계관' : domain === 'rules' ? '게임 규칙' : '기획서'}</Link>
+        <Link to={`/${domain}/`}>세계관</Link>
         <span aria-hidden="true">›</span>
         <strong>{wikiDocument.title}</strong>
       </nav>
