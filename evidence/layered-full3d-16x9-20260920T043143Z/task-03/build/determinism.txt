@@ -1,0 +1,6 @@
+== determinism: two independent builds ==
+042e4fbf795ca7251317bff8b6a873dba53d13238ce1b1347f59848208c94fec  evidence/layered-full3d-16x9-20260920T043143Z/task-03/build/run1/coverage.json
+e56b03848cf66f969fbf36cfb25a87efdeeb0d31508cb10cf63447bb7c6a95bf  evidence/layered-full3d-16x9-20260920T043143Z/task-03/build/run1/topology.json
+042e4fbf795ca7251317bff8b6a873dba53d13238ce1b1347f59848208c94fec  evidence/layered-full3d-16x9-20260920T043143Z/task-03/build/run2/coverage.json
+e56b03848cf66f969fbf36cfb25a87efdeeb0d31508cb10cf63447bb7c6a95bf  evidence/layered-full3d-16x9-20260920T043143Z/task-03/build/run2/topology.json
+VERDICT: byte-identical (DETERMINISTIC)

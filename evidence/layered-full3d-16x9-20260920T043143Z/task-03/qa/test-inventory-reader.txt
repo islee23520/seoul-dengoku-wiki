@@ -1,0 +1,26 @@
+valid minimal PBF parses through the bounded reader
+oversized blob header length is rejected by default limits
+oversized blob body is rejected before allocation
+blob at the exact byte boundary is accepted
+decompression bomb exceeding default maxRawBytes is rejected
+decompression bomb is rejected against a small maxRawBytes override
+inflated output exactly at maxRawBytes boundary succeeds
+raw and zlib payloads are mutually exclusive
+blob with neither raw nor zlib payload is rejected
+raw_size must match the actual payload length
+varint longer than 10 bytes is rejected
+unsafe integer ids beyond the safe range are rejected
+packed arrays above maxPackedValues are rejected
+dense ids and lats length mismatch is rejected
+relation memids/roles/types length mismatch is rejected
+plain node keys/vals length mismatch is rejected
+dense keys_vals unterminated run is rejected
+string table index out of range is rejected
+OSMData before OSMHeader is rejected
+duplicate OSMHeader is rejected
+missing OSMHeader is rejected
+field number 0 is rejected
+unsupported wire type is rejected
+duplicate singular field is rejected
+file beyond maxTotalPbfBytes is rejected
+readEntities keeps wanted ways and their node coordinates

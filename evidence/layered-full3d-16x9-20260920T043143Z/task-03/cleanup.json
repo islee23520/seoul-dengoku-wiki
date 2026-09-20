@@ -1,0 +1,13 @@
+{
+  "schema": "task03-cleanup-v1",
+  "commit": "141c6dd5e2d6a217424a4d32c736a3386b6b81dd",
+  "cleaned": [
+    "/tmp/red-state (RED 재현 임시 트리: HEAD 모놀리스 + 계약 어댑터)",
+    "/tmp/dbg-pbf.mjs (파서 디버그 스크립트)",
+    "/tmp/garbage.pbf, /tmp/garbage-out (malformed CLI 픽스처)",
+    "/tmp/split-check, /tmp/task03_ev_dir, /tmp/K3 (임시 상태 파일)",
+    "이전 라운드 임시 산출물 /tmp/build-subway-topology.mjs.bak"
+  ],
+  "worktreeUntrackedAfterEvidenceCommit": [],
+  "notes": "worktree 내부에는 task3 이외 파일을 만들지 않았고, 증거 커밋 이후 untracked 파일이 남지 않는다."
+}

@@ -1,0 +1,37 @@
+# task3 gate-fix execution commands (surface: terminal CLI, cwd = worktree root)
+
+Worktree: worktree `layered-full3d-16x9-wave1-clean`, branch `feat/layered-full3d-16x9-wave1-clean`
+Evidence dir: evidence/layered-full3d-16x9-20260920T043143Z/task-03
+K3 (implementation commit): 141c6dd5e2d6a217424a4d32c736a3386b6b81dd
+
+## 1. RED (behavioral) — 새 테스트 52개를 HEAD 965ab671 동작에 대해 실행
+HEAD 모놀리스를 계약 어댑터로 분리한 임시 트리(/tmp/red-state/repo)에서 실행:
+$ node TOOL/tools/strategy-map/test-osm-pbf-reader.mjs      -> exit=1, tests 26 / pass 3 / fail 23
+$ node TOOL/tools/strategy-map/test-subway-topology.mjs    -> exit=1, tests 26 / pass 0 / fail 26
+실패 전부 행위 단정(경계 거절 코드 부재, 331<334, 처분/카테고리 부재, 모듈 미존재 아님).
+로그: red/red-reader-head-behavior.log, red/red-topology-head-behavior.log
+
+## 2. GREEN — K3 구현으로 재실행
+$ node TOOL/tools/strategy-map/test-osm-pbf-reader.mjs      -> exit=0, tests 26 / pass 26
+$ node TOOL/tools/strategy-map/test-subway-topology.mjs    -> exit=0, tests 26 / pass 26
+로그: green/green-reader.log, green/green-topology.log
+
+## 3. 실빌드 2회 + 결정론
+$ node TOOL/tools/strategy-map/build-subway-topology.mjs --out <ev>/build/run1   -> exit=0
+$ node TOOL/tools/strategy-map/build-subway-topology.mjs --out <ev>/build/run2   -> exit=0
+$ cmp run1/topology.json run2/topology.json && cmp run1/coverage.json run2/coverage.json
+byte-identical (build/determinism.txt)
+
+## 4. 독립 오라클 (pyosmium, 별도 구현 측정)
+$ python3 (osmium.SimpleHandler 2-pass) -> qa/pyosmium-oracle.json
+relations 19013 / route 244 / stop 5632 / entry 82 / exit 53 + 노드 좌표 표본 7개
+
+## 5. 증거 검증기 (K3 결합 + 불변식 + 변조 자가검사)
+$ node <ev>/qa/verify-task03-evidence.mjs --commit 141c6dd5... -> exit=0, verified true
+검사: K3 블롭 6파일 결합, 테스트 재실행, 재현빌드 2회 바이트 일치,
+coverage 불변식(334/334, R 산술, G-O 분류, connections 합계), 오라클 대조,
+변조 자가검사(matched=333 거절, stale commit 거절, canonical 출력 바이트 결합).
+
+## 6. 최종 커밋 상태
+$ git log --oneline -2
+K3 구현 커밋(141c6dd5) 이후 증거 커밋. task1/2/31 파일 미변경, push/PR 없음.
