@@ -29,6 +29,7 @@ seoul-kenshi/
 |-- TOOL/                  # skills/, docs/, tools/ (repo npm package), unity-remote/ (only submodule)
 |-- WEB/                   # official React wiki + VitePress staging/gates; never canon
 |-- Backend/               # ASP.NET Core host-session coordinator (server/Coordinator) + tests
+|-- SOCIAL-MEDIA/          # operator X/Threads serial; NOT a hub page (see SOCIAL-MEDIA/AGENTS.md)
 |-- evidence/              # append-only test-evidence bundles (seoul-strategy-map-gdd/, pr-144/); new evidence = new dated dir
 |-- store/                 # frozen design-store capture run-4343cc0-160339 (pinned @ 4343cc0, 2026-09-13); root planning docs are the LIVE copies
 |-- Wikis/                 # legacy remnant (3 files); design-store seed remaps its old paths
@@ -59,6 +60,7 @@ seoul-kenshi/
 | Research citation policy | `RESEARCH/AGENTS.md` | Citation tiers, verification records, banned-term JSONs |
 | Delivery and publishing | `GDD/adr/ADR-001-repository-delivery-policy.md` | Accepted authority over historical local-only clauses |
 | Web hub deploy | `SERVICES.md`, `index.html` | `https://seoul-dengoku.linalab.io` self-hosted (docker nginx + cloudflared, Cloudflare Access); Vercel read-only pending removal; hub overlays: `GAME-REFERENCE/ui-layout-moodboard/`, `portrait-demo/`, `ui-ux-refs/` |
+| Operator social serial | `SOCIAL-MEDIA/` | X English / Threads Korean. Not a hub path. |
 
 ## CODE MAP
 Writer-digest LSP/ast-grep findings plus retained root symbols; C# LSP coverage was partial. Repo-wide reference centrality is unmeasured, not zero.
@@ -96,7 +98,7 @@ Writer-digest LSP/ast-grep findings plus retained root symbols; C# LSP coverage 
 - Do not label planned campaign or tactical features as shipped merely because design pages exist; even Home's implementation summary may lag code.
 - No direct push to main, force-push, or shared-history rewrite. ADR-001 requires a dedicated branch and PR, with owner-only merging.
 - Authorized origin: `https://github.com/islee23520/seoul-kenshi.git`; the unrelated shooter repository is not a delivery target. Do not publish or maintain GitHub Wiki.
-- Do not deploy to Vercel — the existing `seoul-kenshi` project is paused (2026-09-19 owner directive). All deployments go to the self-hosted hub at `seoul-dengoku.linalab.io` (see `SERVICES.md`); nested static pages ride that hub as subpaths, never as their own site. `GAME-REFERENCE/codex-ux-refs/` must never be hub-published (legacy `서울켄시` marker baked into its PNGs).
+- Do not deploy to Vercel — the existing `seoul-kenshi` project is paused (2026-09-19 owner directive). All deployments go to the self-hosted hub at `seoul-dengoku.linalab.io` (see `SERVICES.md`); nested static pages ride that hub as subpaths, never as their own site. `GAME-REFERENCE/codex-ux-refs/` must never be hub-published (legacy `서울켄시` marker baked into its PNGs). `SOCIAL-MEDIA/` is operator serial only — never a hub subpath, never VitePress `ROOT_DOCS`.
 - Candidate generation, provider eligibility, or showcase import does not authorize a runtime dependency.
 - Guessed rights, synthetic review hashes, model/software licenses, and zero-cost receipts are not proof of asset-output rights or actual service terms.
 - Do not silently recover unsupported/corrupt saves: the documented save contract requires explicit errors.

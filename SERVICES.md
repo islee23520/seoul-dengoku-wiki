@@ -1,6 +1,6 @@
 # SERVICES.md — 서비스 레이어 계약
 
-배포 표면의 구성 계약. 각 서비스는 루트 바로 아래 자기 디렉터리 서브 경로로 열린다. 2026-09-19 확인한 루트 `/`는 서울:전국 공식 위키다. 저장소의 이전 허브 `index.html`로 현재 루트를 덮어쓰지 않는다. GitHub Wiki는 유지하지 않는다. 정본은 `GDD/`와 `LORE/`에 두고, VitePress 파생 문서는 `npm --prefix WEB/wiki-source run docs:dev`로 확인한다.
+배포 표면의 구성 계약. 각 서비스는 루트 바로 아래 자기 디렉터리 서브 경로로 열린다. 2026-09-19 확인한 루트 `/`는 서울:전국 공식 위키다. 저장소의 이전 허브 `index.html`로 현재 루트를 덮어쓰지 않는다. GitHub Wiki는 유지하지 않는다. 정본은 `GDD/`와 `LORE/`에 두고, VitePress 파생 문서는 `npm --prefix WEB/wiki-source run docs:dev`로 확인한다. 루트 `SOCIAL-MEDIA/`는 운영자 연재 계약이며 허브 서브 경로로 올리지 않는다.
 
 ## 배포 표면 (2026-09-18 전환)
 

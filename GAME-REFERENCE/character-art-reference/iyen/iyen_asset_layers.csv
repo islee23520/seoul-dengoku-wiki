@@ -1,0 +1,38 @@
+id,category,part_name,position,detach_stage,variation_candidates,production_note,reference_board_scope,style_lock_status
+HAIR_001,hair,front_bangs,forehead,locked,"split, long, wind","Preserve eye-covering silhouette",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+HAIR_002,hair,left_side_hair,left_face,locked,"ear_visible, ear_hidden","Keep below hair ornament",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+HAIR_003,hair,right_side_hair,right_face,locked,"thin, full","Do not hide cheek contour",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+HAIR_004,hair,back_hair_mass,back_body,locked,"default, wind, wet","Main silhouette anchor",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+HAIR_005,hair,lower_wave_strands,lower_back,locked,"short, long","Separate into several physics chains",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+ACC_001,accessory,rose_disc_hair_ornament,left_head,locked_anchor,"metal_color, gem_color","Primary character identifier",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+ACC_002,accessory,hair_ornament_tassel,left_head_lower,optional,"short, long","Physics candidate",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+ACC_003,accessory,ring_earrings,both_ears,optional,"gem, chain","Needs view-specific placement",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+ACC_004,accessory,ruby_drop_gems,earring_bottom,optional,"ruby, amethyst","Small but important color accent",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+FACE_001,face,pink_red_eyes,face,locked,"emotion_set","Expression sheet needed",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+FACE_002,face,smile_mouth,face,locked,"closed, smile, talk","Lip-sync slot candidate",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+NAIL_001,accessory,wine_long_nails,fingertips,optional,"short, glove","Maintain hand silhouette",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+TOP_001,clothing,black_high_collar,neck,shared,"choker, lace","Check chin overlap",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+TOP_002,clothing,chest_center_ring,upper_chest,locked_anchor,"ring, gem_brooch","Shared top anchor",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+TOP_003,clothing,y_harness_strap,neck_to_chest,optional,"cross, asymmetric","Avoid stretch distortion",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+TOP_004,clothing,black_bikini_cups,chest,bikini_base,"lace, leather, fabric","Base fitting layer",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+TOP_005,clothing,cup_lace_trim,bust_edge,optional,"light, dense","Separate from cup",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+TOP_006,clothing,off_shoulder_skinline,shoulders,locked_design,"shawl, jacket","Skin boundary guide",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+ARM_001,clothing,left_offshoulder_sleeve,left_arm,optional,"removed, tight, puff","Separate cloth bones",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+ARM_002,clothing,right_offshoulder_sleeve,right_arm,optional,"removed, tight, puff","Allows asymmetric variants",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+ARM_003,clothing,upper_arm_straps,upper_arms,optional,"single, double, chain","Check elbow bend",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+ARM_004,clothing,wrist_frill_cuffs,wrists,optional,"frill, leather_cuff","Layer above hands",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+WAIST_001,clothing,waist_belt_body,waist,optional,"corset, thin_belt","Hides torso/hip seam",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+WAIST_002,clothing,waist_center_ring,lower_waist,locked_anchor,"ring, gem_brooch","Front centerline anchor",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+WAIST_003,clothing,vertical_drop_ribbon,center_waist_down,optional,"short, chain","Physics candidate",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+WAIST_004,clothing,diagonal_chain_straps,waist_to_hips,optional,"single, double, chain","Define over/under robe order",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+BOTTOM_001,clothing,front_skirt_panel,front_hips,optional,"short, long","Remove for bikini base",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+BOTTOM_002,clothing,left_long_robe,left_leg_outer,optional,"short_cape, long_cape","Large silhouette change",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+BOTTOM_003,clothing,right_long_robe,right_leg_outer,optional,"short_cape, long_cape","Separate left/right rigging",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+BOTTOM_004,clothing,back_robe_cloth,back_legs,optional,"mesh, heavy_coat","Back-view lock element",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+BOTTOM_005,clothing,magenta_lining,robe_inner,optional,"low_sat, high_sat","Visible in motion",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+LEG_001,clothing,translucent_black_stockings,both_legs,optional,"bare_leg, fishnet, overknee","Alpha layer over skin",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+LEG_002,clothing,thigh_lace_bands,upper_thighs,optional,"garter, removed","Check with bikini base",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+SHOE_001,clothing,left_high_heel_boot,left_foot,optional,"sandal, long_boot, bare_base","Separate ankle and toe",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+SHOE_002,clothing,right_high_heel_boot,right_foot,optional,"sandal, long_boot, bare_base","Mirror consistency",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+SHOE_003,accessory,boot_chain_gems,ankle_foot,optional,"removed, enhanced","Small swing parts",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock
+PROP_001,prop,gothic_room_motif,background,unused,"ui_card, illustration_bg","Exclude from Spine body source",boards_01_06_retained; boards_07_16_deleted,board_01_only_style_lock

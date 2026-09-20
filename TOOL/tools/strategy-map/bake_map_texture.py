@@ -196,22 +196,21 @@ def bake_textures(bundle_dir: Path, baked_dir: Path, grid: int = 128) -> dict:
         wz1 = -(y0 - origin_y) * scale
 
         # --- base: hillshade over the DEM grid ---
-        # Benchmark palette (seoul-3d-atlas): soft pastel — sat ≤ 0.26, val ≥ 0.54.
-        # Compress shade to a high, narrow band so the terrain reads as a pale
-        # wash instead of harsh black-to-white relief.
+        # Benchmark palette: soft pastel but with READABLE relief (atlas has
+        # visible terrain shading, not a white sheet). Range [0.55, 0.95].
         block = elev.shape[0] // grid
         means = elev.reshape(grid, block, grid, block).mean(axis=(1, 3))
         means = np.where(means == NODATA, 0.0, means)
         shade = hillshade(means)
-        pastel = 0.78 + 0.22 * shade  # val ∈ [0.78, 1.0]
+        pastel = 0.55 + 0.40 * shade  # val ∈ [0.55, 0.95]
         base = (pastel * 255).astype(np.uint8)
         resample = getattr(Image, "Resampling", Image).BILINEAR
         img = Image.fromarray(base, mode="L").resize((TEXTURE_SIZE, TEXTURE_SIZE), resample).convert("RGB")
-        # pale warm-cream terrain (atlas-style beige-green wash)
+        # warm sage-cream terrain (atlas-style beige-green)
         arr = np.asarray(img).astype(np.float32)
-        arr[:, :, 0] = arr[:, :, 0] * 0.98 + 10
-        arr[:, :, 1] = arr[:, :, 1] * 0.97 + 12
-        arr[:, :, 2] = arr[:, :, 2] * 0.96 + 10
+        arr[:, :, 0] = arr[:, :, 0] * 0.96 + 14
+        arr[:, :, 1] = arr[:, :, 1] * 0.95 + 16
+        arr[:, :, 2] = arr[:, :, 2] * 0.94 + 12
         img = Image.fromarray(arr.astype(np.uint8))
 
         # --- rasterize 3857 features into texture pixels ---
@@ -230,9 +229,9 @@ def bake_textures(bundle_dir: Path, baked_dir: Path, grid: int = 128) -> dict:
         overlay = Image.new("RGBA", (TEXTURE_SIZE, TEXTURE_SIZE), (0, 0, 0, 0))
         draw = ImageDraw.Draw(overlay)
         color_map = {
-            "building": (168, 160, 152, 200),       # pale warm gray (soft concrete)
-            "vegetation": (116, 158, 112, 170),     # soft sage green
-            "water": (118, 156, 186, 220),          # pale powder blue
+            "building": (140, 132, 124, 220),       # soft warm gray (readable)
+            "vegetation": (96, 142, 92, 190),       # clear sage green
+            "water": (86, 134, 172, 230),           # distinct powder blue
         }
         for k, ring in polygons_here:
             if k == "water" and len(ring) >= 3:
@@ -263,9 +262,9 @@ def bake_textures(bundle_dir: Path, baked_dir: Path, grid: int = 128) -> dict:
             state = STATE_OF_GU.get(gu_name)
             if state is None:
                 continue
-            r, g, b = hsv_to_rgb(state_hue(state), 0.26, 0.88)  # pastel region wash (atlas benchmark ≤0.26 sat)
-            rdraw.polygon(px, fill=(r, g, b, 90), outline=(30, 30, 36, 200), width=6)
-            rdraw.polygon(px, outline=(min(r + 60, 255), min(g + 60, 255), min(b + 60, 255), 220), width=2)
+            r, g, b = hsv_to_rgb(state_hue(state), 0.38, 0.82)  # readable pastel region wash
+            rdraw.polygon(px, fill=(r, g, b, 110), outline=(30, 30, 36, 220), width=6)
+            rdraw.polygon(px, outline=(min(r + 50, 255), min(g + 50, 255), min(b + 50, 255), 240), width=2)
         img = Image.alpha_composite(img.convert("RGBA"), overlay)
         img = Image.alpha_composite(img, region).convert("RGB")
 
