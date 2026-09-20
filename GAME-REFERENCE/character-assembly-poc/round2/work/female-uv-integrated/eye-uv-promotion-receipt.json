@@ -1,0 +1,32 @@
+{
+  "sources": {
+    "eye_fixed": "/Users/danny/workspace/seoul-kenshi-character-round2/GAME-REFERENCE/character-assembly-poc/round2/work/genshin-public-shader/female-underwear-eye-visible.blend",
+    "uv_verified": "/Users/danny/workspace/seoul-kenshi-character-round2/GAME-REFERENCE/character-assembly-poc/round2/work/female-uv-integrated/female-underwear-uv-integrated.blend"
+  },
+  "source_sha256": {
+    "target": "564d52d4f84894318b02969d23fc59b2fbe7688dec9bb112c078d35f27f4027c",
+    "uv_source": "23cb882f06f6a4298ad18fdcae44fe0936f0ca520a0a0df992a646489436e721"
+  },
+  "candidate": "/Users/danny/workspace/seoul-kenshi-character-round2/GAME-REFERENCE/character-assembly-poc/round2/work/female-uv-integrated/female-underwear-eye-uv-integrated.blend",
+  "candidate_sha256": "75f4c9278000c2addaa02a5ca642db46bf90dbac66c851aebb3d90f84a8d05c8",
+  "copied": [
+    {
+      "object": "Female_SmoothDoll_Body",
+      "layer": "AtlasUV",
+      "loops": 184862
+    },
+    {
+      "object": "Female_Bandeau_Measured",
+      "layer": "GarmentUV_4K",
+      "loops": 4460
+    },
+    {
+      "object": "Female_Briefs_Panel",
+      "layer": "GarmentUV_4K",
+      "loops": 3176
+    }
+  ],
+  "geometry_exact": true,
+  "eyes_saved_visible": true,
+  "status": "UV_AND_EYE_REOPEN_GATES_REQUIRED"
+}

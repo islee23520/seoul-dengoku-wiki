@@ -1,0 +1,535 @@
+{
+  "atlas_size": 4096,
+  "chart_count": 9,
+  "charts": [
+    {
+      "chart": "Bandeau_Measured_inner",
+      "world_area_m2": 0.09862493793933436,
+      "uv_area": 0.07147353467863121,
+      "aggregate_density_px_per_m": 3486.897705134296,
+      "triangle_density_min_max_px_per_m": [
+        3032.8844958855952,
+        4009.5312843858846
+      ],
+      "area_weighted_anisotropy_quantiles": {
+        "0.5": 1.0201098683829763,
+        "0.9": 1.0434316371405559,
+        "0.95": 1.0572558751840375,
+        "0.99": 1.0720130781049675,
+        "1.0": 1.373270400827044
+      },
+      "positive_orientation": 0,
+      "negative_orientation": 964,
+      "bounds": [
+        [
+          0.0048828125,
+          0.47101303935050964
+        ],
+        [
+          0.5990630984306335,
+          0.699556291103363
+        ]
+      ],
+      "boundary_segments": 136
+    },
+    {
+      "chart": "Bandeau_Measured_outer",
+      "world_area_m2": 0.09801413048323726,
+      "uv_area": 0.07103088230866639,
+      "aggregate_density_px_per_m": 3486.8977064729365,
+      "triangle_density_min_max_px_per_m": [
+        3030.7162890641134,
+        4979.735483216387
+      ],
+      "area_weighted_anisotropy_quantiles": {
+        "0.5": 1.02027304465099,
+        "0.9": 1.0434198858081614,
+        "0.95": 1.0570230850217235,
+        "0.99": 1.0715872034022829,
+        "1.0": 2.0250805889275374
+      },
+      "positive_orientation": 0,
+      "negative_orientation": 964,
+      "bounds": [
+        [
+          0.0048828125,
+          0.704439103603363
+        ],
+        [
+          0.5962825417518616,
+          0.9319056272506714
+        ]
+      ],
+      "boundary_segments": 136
+    },
+    {
+      "chart": "Bandeau_Measured_rim_1",
+      "world_area_m2": 0.0005089803530154343,
+      "uv_area": 0.0003688627722525234,
+      "aggregate_density_px_per_m": 3486.9189411342218,
+      "triangle_density_min_max_px_per_m": [
+        3378.289001986114,
+        3597.184911740698
+      ],
+      "area_weighted_anisotropy_quantiles": {
+        "0.5": 1.048934035884765,
+        "0.9": 1.1855072083379308,
+        "0.95": 1.2512212666737892,
+        "0.99": 1.3216705563712488,
+        "1.0": 1.3222354792540054
+      },
+      "positive_orientation": 0,
+      "negative_orientation": 176,
+      "bounds": [
+        [
+          0.0048828125,
+          0.9529598951339722
+        ],
+        [
+          0.7894057631492615,
+          0.9534460306167603
+        ]
+      ],
+      "boundary_segments": 178
+    },
+    {
+      "chart": "Bandeau_Measured_rim_2",
+      "world_area_m2": 0.0003178574623390182,
+      "uv_area": 0.0002303542369343492,
+      "aggregate_density_px_per_m": 3486.918883050379,
+      "triangle_density_min_max_px_per_m": [
+        3467.813266534176,
+        3562.9723916396174
+      ],
+      "area_weighted_anisotropy_quantiles": {
+        "0.5": 1.1092682764759503,
+        "0.9": 1.183131130895607,
+        "0.95": 1.2025854798972189,
+        "0.99": 1.3581774277573226,
+        "1.0": 1.3581774277573226
+      },
+      "positive_orientation": 64,
+      "negative_orientation": 0,
+      "bounds": [
+        [
+          0.0048828125,
+          0.9422144889831543
+        ],
+        [
+          0.4947035014629364,
+          0.9427056312561035
+        ]
+      ],
+      "boundary_segments": 66
+    },
+    {
+      "chart": "Briefs_Panel_inner",
+      "world_area_m2": 0.18405379431330615,
+      "uv_area": 0.13338386492250015,
+      "aggregate_density_px_per_m": 3486.89772494834,
+      "triangle_density_min_max_px_per_m": [
+        2986.0425780346923,
+        4754.69745623878
+      ],
+      "area_weighted_anisotropy_quantiles": {
+        "0.5": 1.0334456698548247,
+        "0.9": 1.0774228711807219,
+        "0.95": 1.1294721104410999,
+        "0.99": 1.212827593347479,
+        "1.0": 1.3413523318027964
+      },
+      "positive_orientation": 0,
+      "negative_orientation": 650,
+      "bounds": [
+        [
+          0.5035492777824402,
+          0.0048828125
+        ],
+        [
+          0.9951073527336121,
+          0.4633919894695282
+        ]
+      ],
+      "boundary_segments": 124
+    },
+    {
+      "chart": "Briefs_Panel_outer",
+      "world_area_m2": 0.18492169057178606,
+      "uv_area": 0.13401282829139413,
+      "aggregate_density_px_per_m": 3486.897706374213,
+      "triangle_density_min_max_px_per_m": [
+        2977.561014364723,
+        4754.859216603088
+      ],
+      "area_weighted_anisotropy_quantiles": {
+        "0.5": 1.0334259990887666,
+        "0.9": 1.0796733370365674,
+        "0.95": 1.1288453810109442,
+        "0.99": 1.2145490384861766,
+        "1.0": 1.3357855746009877
+      },
+      "positive_orientation": 0,
+      "negative_orientation": 650,
+      "bounds": [
+        [
+          0.0048828125,
+          0.0048828125
+        ],
+        [
+          0.4986664652824402,
+          0.46613022685050964
+        ]
+      ],
+      "boundary_segments": 124
+    },
+    {
+      "chart": "Briefs_Panel_rim_1",
+      "world_area_m2": 0.00047038762775464477,
+      "uv_area": 0.00034087139023714075,
+      "aggregate_density_px_per_m": 3486.8019384526674,
+      "triangle_density_min_max_px_per_m": [
+        3435.2892626635416,
+        3580.5709798740836
+      ],
+      "area_weighted_anisotropy_quantiles": {
+        "0.5": 1.057524813999134,
+        "0.9": 1.2025582820277865,
+        "0.95": 1.2758275901438223,
+        "0.99": 1.3220468828549603,
+        "1.0": 1.3248444217185995
+      },
+      "positive_orientation": 0,
+      "negative_orientation": 92,
+      "bounds": [
+        [
+          0.0048828125,
+          0.9475884437561035
+        ],
+        [
+          0.72825688123703,
+          0.9480770826339722
+        ]
+      ],
+      "boundary_segments": 94
+    },
+    {
+      "chart": "Briefs_Panel_rim_2",
+      "world_area_m2": 0.000323456913072277,
+      "uv_area": 0.00023439747409526035,
+      "aggregate_density_px_per_m": 3486.809277653005,
+      "triangle_density_min_max_px_per_m": [
+        3447.6937042955547,
+        3594.9654065329873
+      ],
+      "area_weighted_anisotropy_quantiles": {
+        "0.5": 1.1474209643319029,
+        "0.9": 1.3036885048881268,
+        "0.95": 1.4157076281745151,
+        "0.99": 1.5163160576621613,
+        "1.0": 1.5163160576621613
+      },
+      "positive_orientation": 50,
+      "negative_orientation": 0,
+      "bounds": [
+        [
+          0.5017674565315247,
+          0.9367884397506714
+        ],
+        [
+          0.9937084913253784,
+          0.9373316764831543
+        ]
+      ],
+      "boundary_segments": 52
+    },
+    {
+      "chart": "Briefs_Panel_rim_3",
+      "world_area_m2": 0.000323496620064168,
+      "uv_area": 0.00023442413735497158,
+      "aggregate_density_px_per_m": 3486.793578657227,
+      "triangle_density_min_max_px_per_m": [
+        3445.272787383904,
+        3627.513890569034
+      ],
+      "area_weighted_anisotropy_quantiles": {
+        "0.5": 1.144051739895304,
+        "0.9": 1.30435367749722,
+        "0.95": 1.416671843391485,
+        "0.99": 1.5214097834868034,
+        "1.0": 1.5214097834868034
+      },
+      "positive_orientation": 0,
+      "negative_orientation": 50,
+      "bounds": [
+        [
+          0.0048828125,
+          0.9367884397506714
+        ],
+        [
+          0.49688464403152466,
+          0.9373316764831543
+        ]
+      ],
+      "boundary_segments": 52
+    }
+  ],
+  "inter_chart_gaps": [
+    {
+      "charts": [
+        "Bandeau_Measured_inner",
+        "Bandeau_Measured_outer"
+      ],
+      "gap_px_4k": 20.00008663704946
+    },
+    {
+      "charts": [
+        "Bandeau_Measured_inner",
+        "Bandeau_Measured_rim_1"
+      ],
+      "gap_px_4k": 1037.941162109375
+    },
+    {
+      "charts": [
+        "Bandeau_Measured_inner",
+        "Bandeau_Measured_rim_2"
+      ],
+      "gap_px_4k": 993.927978515625
+    },
+    {
+      "charts": [
+        "Bandeau_Measured_inner",
+        "Briefs_Panel_inner"
+      ],
+      "gap_px_4k": 443.8051391249805
+    },
+    {
+      "charts": [
+        "Bandeau_Measured_inner",
+        "Briefs_Panel_outer"
+      ],
+      "gap_px_4k": 68.9915803242738
+    },
+    {
+      "charts": [
+        "Bandeau_Measured_inner",
+        "Briefs_Panel_rim_1"
+      ],
+      "gap_px_4k": 1015.939697265625
+    },
+    {
+      "charts": [
+        "Bandeau_Measured_inner",
+        "Briefs_Panel_rim_2"
+      ],
+      "gap_px_4k": 972.6569929379687
+    },
+    {
+      "charts": [
+        "Bandeau_Measured_inner",
+        "Briefs_Panel_rim_3"
+      ],
+      "gap_px_4k": 971.702880859375
+    },
+    {
+      "charts": [
+        "Bandeau_Measured_outer",
+        "Bandeau_Measured_rim_1"
+      ],
+      "gap_px_4k": 86.23828125
+    },
+    {
+      "charts": [
+        "Bandeau_Measured_outer",
+        "Bandeau_Measured_rim_2"
+      ],
+      "gap_px_4k": 42.22509765625
+    },
+    {
+      "charts": [
+        "Bandeau_Measured_outer",
+        "Briefs_Panel_inner"
+      ],
+      "gap_px_4k": 1104.2745117574198
+    },
+    {
+      "charts": [
+        "Bandeau_Measured_outer",
+        "Briefs_Panel_outer"
+      ],
+      "gap_px_4k": 988.2965622971749
+    },
+    {
+      "charts": [
+        "Bandeau_Measured_outer",
+        "Briefs_Panel_rim_1"
+      ],
+      "gap_px_4k": 64.23681640625
+    },
+    {
+      "charts": [
+        "Bandeau_Measured_outer",
+        "Briefs_Panel_rim_2"
+      ],
+      "gap_px_4k": 209.01040703958174
+    },
+    {
+      "charts": [
+        "Bandeau_Measured_outer",
+        "Briefs_Panel_rim_3"
+      ],
+      "gap_px_4k": 20.0
+    },
+    {
+      "charts": [
+        "Bandeau_Measured_rim_1",
+        "Bandeau_Measured_rim_2"
+      ],
+      "gap_px_4k": 42.00146484375
+    },
+    {
+      "charts": [
+        "Bandeau_Measured_rim_1",
+        "Briefs_Panel_inner"
+      ],
+      "gap_px_4k": 2017.6917278980488
+    },
+    {
+      "charts": [
+        "Bandeau_Measured_rim_1",
+        "Briefs_Panel_outer"
+      ],
+      "gap_px_4k": 1994.0543212890625
+    },
+    {
+      "charts": [
+        "Bandeau_Measured_rim_1",
+        "Briefs_Panel_rim_1"
+      ],
+      "gap_px_4k": 20.0
+    },
+    {
+      "charts": [
+        "Bandeau_Measured_rim_1",
+        "Briefs_Panel_rim_2"
+      ],
+      "gap_px_4k": 64.01318359375
+    },
+    {
+      "charts": [
+        "Bandeau_Measured_rim_1",
+        "Briefs_Panel_rim_3"
+      ],
+      "gap_px_4k": 64.01318359375
+    },
+    {
+      "charts": [
+        "Bandeau_Measured_rim_2",
+        "Briefs_Panel_inner"
+      ],
+      "gap_px_4k": 2038.2992201470863
+    },
+    {
+      "charts": [
+        "Bandeau_Measured_rim_2",
+        "Briefs_Panel_outer"
+      ],
+      "gap_px_4k": 1950.0411376953125
+    },
+    {
+      "charts": [
+        "Bandeau_Measured_rim_2",
+        "Briefs_Panel_rim_1"
+      ],
+      "gap_px_4k": 20.0
+    },
+    {
+      "charts": [
+        "Bandeau_Measured_rim_2",
+        "Briefs_Panel_rim_2"
+      ],
+      "gap_px_4k": 35.33164172129157
+    },
+    {
+      "charts": [
+        "Bandeau_Measured_rim_2",
+        "Briefs_Panel_rim_3"
+      ],
+      "gap_px_4k": 20.0
+    },
+    {
+      "charts": [
+        "Briefs_Panel_inner",
+        "Briefs_Panel_outer"
+      ],
+      "gap_px_4k": 20.486047377527914
+    },
+    {
+      "charts": [
+        "Briefs_Panel_inner",
+        "Briefs_Panel_rim_1"
+      ],
+      "gap_px_4k": 1998.915283203125
+    },
+    {
+      "charts": [
+        "Briefs_Panel_inner",
+        "Briefs_Panel_rim_2"
+      ],
+      "gap_px_4k": 1939.0318603515625
+    },
+    {
+      "charts": [
+        "Briefs_Panel_inner",
+        "Briefs_Panel_rim_3"
+      ],
+      "gap_px_4k": 2014.5699893645008
+    },
+    {
+      "charts": [
+        "Briefs_Panel_outer",
+        "Briefs_Panel_rim_1"
+      ],
+      "gap_px_4k": 1972.0528564453125
+    },
+    {
+      "charts": [
+        "Briefs_Panel_outer",
+        "Briefs_Panel_rim_2"
+      ],
+      "gap_px_4k": 2006.243833356561
+    },
+    {
+      "charts": [
+        "Briefs_Panel_outer",
+        "Briefs_Panel_rim_3"
+      ],
+      "gap_px_4k": 1927.8160400390625
+    },
+    {
+      "charts": [
+        "Briefs_Panel_rim_1",
+        "Briefs_Panel_rim_2"
+      ],
+      "gap_px_4k": 42.01171875
+    },
+    {
+      "charts": [
+        "Briefs_Panel_rim_1",
+        "Briefs_Panel_rim_3"
+      ],
+      "gap_px_4k": 42.01171875
+    },
+    {
+      "charts": [
+        "Briefs_Panel_rim_2",
+        "Briefs_Panel_rim_3"
+      ],
+      "gap_px_4k": 20.0
+    }
+  ],
+  "minimum_inter_chart_padding_px": 20.0,
+  "minimum_tile_border_px": 20.0,
+  "atlas_surface_occupancy": 0.41131002021206614,
+  "chart_density_max_min_ratio": 1.0000359535126375,
+  "owner_approved_density_target": false
+}

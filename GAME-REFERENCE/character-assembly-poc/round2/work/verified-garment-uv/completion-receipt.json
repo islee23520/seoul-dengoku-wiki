@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "candidate": "female-garment-uv.blend",
+  "candidate_sha256": "da21ee3cfd1aae404497d3776231c32a5c4eb8019f837290a35338321408f112",
+  "source_sha256": "0ac891a2625bb1330c1b5942945854c041d503e678da7406e304034264160a02",
+  "scope": "two verified clothing objects only; no body output",
+  "native_uv_verdict": "native-verdict.json",
+  "quality": "quality.json",
+  "geometry_certificate_reuse": "Exact native geometry/material/world-matrix fingerprint equality, not rerun geometry audit",
+  "certificate_sha256": {
+    "final-v4-verification.json": "43ec1b58801e83e74b6c6121ee4f1627a882c4378058118df4cc29d98988d2e7",
+    "continuous-clearance-v4.json": "1368da95f669054b28a4b29164d61a16c6aedf97f88e66d4f04564cf1171aedd"
+  },
+  "continuous_clearance": {
+    "Female_Bandeau_Measured": {
+      "status": "PASS",
+      "native_triangles": 2168,
+      "nearest_queries": 299468,
+      "accepted_covering_patches": 150818,
+      "maximum_depth": 9,
+      "minimum_signed_sample_m": 0.0008457743679173291,
+      "continuous_distance_lower_bound_m": 5.000663906626067e-05,
+      "numerical_guard_m": 1e-05,
+      "required_lower_bound_m": 5e-05,
+      "failed_patches": []
+    },
+    "Female_Briefs_Panel": {
+      "status": "PASS",
+      "native_triangles": 1492,
+      "nearest_queries": 519776,
+      "accepted_covering_patches": 260634,
+      "maximum_depth": 11,
+      "minimum_signed_sample_m": 0.0005780050414614379,
+      "continuous_distance_lower_bound_m": 5.0000844163940514e-05,
+      "numerical_guard_m": 1e-05,
+      "required_lower_bound_m": 5e-05,
+      "failed_patches": []
+    }
+  },
+  "gate_sha256": {
+    "uv_audit.py": "518ba12c0c6e00e77c87a16b317bc9181e30e0fefa620386d1dc77b68710336d",
+    "uv_report.py": "e56fd7716022fe8b2b0b45f462409af6fbda47071439cbce347826f8cf26b296",
+    "geometry_audit.py": "60dbb57c50e642bf2da6d7d57aa7bb184161d4373cc135e8134103eef4fb4741",
+    "intersections.py": "0d20df4d217bc88eaa9b7104222e4e64acc742ee8b70795765eab5e805729c39"
+  },
+  "reusable_assignment_replayed_on_source": true,
+  "owned_live_blender_processes": [],
+  "final_views_reviewed": [
+    "front",
+    "back",
+    "side",
+    "bandeau-front",
+    "briefs-front",
+    "briefs-back",
+    "crotch"
+  ],
+  "reviewed_atlas_views": [
+    "named-atlas.png",
+    "named-chart-details.png"
+  ],
+  "parent_visual_approval": "pending parent review; not claimed",
+  "failure_evidence": "failure-record.md; baseline-inspection.json; numbered attempt files retained"
+}

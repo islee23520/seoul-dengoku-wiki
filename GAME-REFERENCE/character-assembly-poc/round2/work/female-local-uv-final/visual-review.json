@@ -1,0 +1,56 @@
+{
+  "camera_comparison": [
+    {
+      "view": "front",
+      "changed_pixels": 142,
+      "total_pixels": 1048576,
+      "world_camera_identical": true
+    },
+    {
+      "view": "back",
+      "changed_pixels": 7,
+      "total_pixels": 1048576,
+      "world_camera_identical": true
+    },
+    {
+      "view": "side",
+      "changed_pixels": 47,
+      "total_pixels": 1048576,
+      "world_camera_identical": true
+    },
+    {
+      "view": "quarter",
+      "changed_pixels": 110,
+      "total_pixels": 1048576,
+      "world_camera_identical": true
+    },
+    {
+      "view": "head-neck",
+      "changed_pixels": 399,
+      "total_pixels": 1048576,
+      "world_camera_identical": true
+    },
+    {
+      "view": "left-hand",
+      "changed_pixels": 397,
+      "total_pixels": 1048576,
+      "world_camera_identical": true
+    },
+    {
+      "view": "right-hand",
+      "changed_pixels": 0,
+      "total_pixels": 1048576,
+      "world_camera_identical": true
+    },
+    {
+      "view": "feet",
+      "changed_pixels": 79,
+      "total_pixels": 1048576,
+      "world_camera_identical": true
+    }
+  ],
+  "render_pass": "AtlasUV 64-frequency unlit checker",
+  "visual_assessment": "Whole-body placement and broad chart readability preserved. Head facial features, fingers and toes remain visibly fragmented from the inherited atlas. Local changes are small at these views; no claim of full artistic UV quality.",
+  "color_status": "UNPROVEN; see COLOR-STATUS.md",
+  "evidence_sha256": "5ac097dd7bfd5c74155ecea884e8f985200207288be809411de3d7c2d3b78471"
+}

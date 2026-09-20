@@ -1,0 +1,230 @@
+{
+  "source": "/Users/danny/workspace/seoul-kenshi-character-round2/GAME-REFERENCE/character-assembly-poc/round2/work/female-local-uv-final/female-local-uv-final.blend",
+  "sha256": "5f22e7587e6acde250b5d1d634fd132658c4f7e2e7cb29ed378f7dc68be8626c",
+  "views": [
+    {
+      "view": "front",
+      "source_world_bounds": [
+        [
+          -0.7276201844215393,
+          -0.18372133374214172,
+          0.0
+        ],
+        [
+          0.7275757193565369,
+          0.0928158164024353,
+          1.6508512496948242
+        ]
+      ],
+      "camera_world": [
+        -2.2232532501220703e-05,
+        -4.998006343841553,
+        0.8254256248474121
+      ],
+      "center_world": [
+        -2.2232532501220703e-05,
+        -0.04545275866985321,
+        0.8254256248474121
+      ],
+      "ortho_scale": 1.8819704246520994,
+      "path": "/Users/danny/workspace/seoul-kenshi-character-round2/GAME-REFERENCE/character-assembly-poc/round2/work/female-local-uv-final/renders/after-worldframed-v2/front.png",
+      "sha256": "6ed109452b4c46659744a960b519c9ecf9daf68ca90580f0d1d61b7ebf955a47"
+    },
+    {
+      "view": "back",
+      "source_world_bounds": [
+        [
+          -0.7276201844215393,
+          -0.18372133374214172,
+          0.0
+        ],
+        [
+          0.7275757193565369,
+          0.0928158164024353,
+          1.6508512496948242
+        ]
+      ],
+      "camera_world": [
+        -2.2232532501220703e-05,
+        4.907101154327393,
+        0.8254256248474121
+      ],
+      "center_world": [
+        -2.2232532501220703e-05,
+        -0.04545275866985321,
+        0.8254256248474121
+      ],
+      "ortho_scale": 1.8819704246520994,
+      "path": "/Users/danny/workspace/seoul-kenshi-character-round2/GAME-REFERENCE/character-assembly-poc/round2/work/female-local-uv-final/renders/after-worldframed-v2/back.png",
+      "sha256": "885b23adbfb6445368386886c6b772e0665ad338ab4613c4d0f14bba367a8e06"
+    },
+    {
+      "view": "side",
+      "source_world_bounds": [
+        [
+          -0.7276201844215393,
+          -0.18372133374214172,
+          0.0
+        ],
+        [
+          0.7275757193565369,
+          0.0928158164024353,
+          1.6508512496948242
+        ]
+      ],
+      "camera_world": [
+        4.952531337738037,
+        -0.04545275866985321,
+        0.8254256248474121
+      ],
+      "center_world": [
+        -2.2232532501220703e-05,
+        -0.04545275866985321,
+        0.8254256248474121
+      ],
+      "ortho_scale": 1.8819704246520994,
+      "path": "/Users/danny/workspace/seoul-kenshi-character-round2/GAME-REFERENCE/character-assembly-poc/round2/work/female-local-uv-final/renders/after-worldframed-v2/side.png",
+      "sha256": "34088da4c14773f11b66edbe667be7db7c6805ce63599f9ad4d5cd4c0c91cdb1"
+    },
+    {
+      "view": "quarter",
+      "source_world_bounds": [
+        [
+          -0.7276201844215393,
+          -0.18372133374214172,
+          0.0
+        ],
+        [
+          0.7275757193565369,
+          0.0928158164024353,
+          1.6508512496948242
+        ]
+      ],
+      "camera_world": [
+        2.8406457901000977,
+        -4.102347373962402,
+        0.8254256248474121
+      ],
+      "center_world": [
+        -2.2232532501220703e-05,
+        -0.04545275866985321,
+        0.8254256248474121
+      ],
+      "ortho_scale": 1.8819704246520994,
+      "path": "/Users/danny/workspace/seoul-kenshi-character-round2/GAME-REFERENCE/character-assembly-poc/round2/work/female-local-uv-final/renders/after-worldframed-v2/quarter.png",
+      "sha256": "8bc04712f717068426e458136a46c0e4eec7b8651053678e3f788bba5c0ca218"
+    },
+    {
+      "view": "head-neck",
+      "source_world_bounds": [
+        [
+          -0.19800563156604767,
+          -0.15102015435695648,
+          1.2056727409362793
+        ],
+        [
+          0.19796119630336761,
+          0.0928158164024353,
+          1.6508512496948242
+        ]
+      ],
+      "camera_world": [
+        -2.2217631340026855e-05,
+        -4.981656074523926,
+        1.4282619953155518
+      ],
+      "center_world": [
+        -2.2217631340026855e-05,
+        -0.02910216897726059,
+        1.4282619953155518
+      ],
+      "ortho_scale": 0.5075034999847412,
+      "path": "/Users/danny/workspace/seoul-kenshi-character-round2/GAME-REFERENCE/character-assembly-poc/round2/work/female-local-uv-final/renders/after-worldframed-v2/head-neck.png",
+      "sha256": "5e9b3a07101d0d0e574845611e92ebcae29d98f84b5274dc42bbdf52faa1946f"
+    },
+    {
+      "view": "left-hand",
+      "source_world_bounds": [
+        [
+          -0.7276201844215393,
+          -0.03443392366170883,
+          1.2348192930221558
+        ],
+        [
+          -0.5385228991508484,
+          0.02599189803004265,
+          1.3705997467041016
+        ]
+      ],
+      "camera_world": [
+        -0.6330715417861938,
+        -4.956774711608887,
+        1.3027095794677734
+      ],
+      "center_world": [
+        -0.6330715417861938,
+        -0.004221012815833092,
+        1.3027095198631287
+      ],
+      "ortho_scale": 0.21557090520858763,
+      "path": "/Users/danny/workspace/seoul-kenshi-character-round2/GAME-REFERENCE/character-assembly-poc/round2/work/female-local-uv-final/renders/after-worldframed-v2/left-hand.png",
+      "sha256": "696707a8275f62ce98ec2933a82345592509a499d246b6be340d879bc8b39086"
+    },
+    {
+      "view": "right-hand",
+      "source_world_bounds": [
+        [
+          0.538478434085846,
+          -0.0344337597489357,
+          1.2348192930221558
+        ],
+        [
+          0.7275757193565369,
+          0.025992047041654587,
+          1.3705997467041016
+        ]
+      ],
+      "camera_world": [
+        0.6330270767211914,
+        -4.956774711608887,
+        1.3027095794677734
+      ],
+      "center_world": [
+        0.6330270767211914,
+        -0.004220856353640556,
+        1.3027095198631287
+      ],
+      "ortho_scale": 0.21557090520858763,
+      "path": "/Users/danny/workspace/seoul-kenshi-character-round2/GAME-REFERENCE/character-assembly-poc/round2/work/female-local-uv-final/renders/after-worldframed-v2/right-hand.png",
+      "sha256": "fd21d04abb603ccec24900e38679f2bcd06d21130cbce7ab975288784d34b544"
+    },
+    {
+      "view": "feet",
+      "source_world_bounds": [
+        [
+          -0.27336013317108154,
+          -0.18372133374214172,
+          0.0
+        ],
+        [
+          0.27331578731536865,
+          0.0366552360355854,
+          0.2445468157529831
+        ]
+      ],
+      "camera_world": [
+        2.8406460285186768,
+        -4.130427360534668,
+        0.12227340787649155
+      ],
+      "center_world": [
+        -2.2172927856445312e-05,
+        -0.07353304885327816,
+        0.12227340787649155
+      ],
+      "ortho_scale": 0.58801200976187,
+      "path": "/Users/danny/workspace/seoul-kenshi-character-round2/GAME-REFERENCE/character-assembly-poc/round2/work/female-local-uv-final/renders/after-worldframed-v2/feet.png",
+      "sha256": "6994bd46188194e91ac90984bdc0a8b2047a3049dd5b52eebaf3027a0f630caf"
+    }
+  ]
+}
