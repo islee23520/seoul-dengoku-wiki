@@ -155,10 +155,39 @@ const geometryPath = (geometry) => geometryRings(geometry).map((ring) => {
   const points = simplifyRing(ring).map(mapPoint)
   return points.map(([x, y], index) => `${index === 0 ? 'M' : 'L'}${x},${y}`).join(' ') + ' Z'
 }).join(' ')
+const polygonMetrics = (points) => {
+  let twiceArea = 0
+  let weightedX = 0
+  let weightedY = 0
+  for (let index = 0; index < points.length; index += 1) {
+    const [x1, y1] = points[index]
+    const [x2, y2] = points[(index + 1) % points.length]
+    const cross = x1 * y2 - x2 * y1
+    twiceArea += cross
+    weightedX += (x1 + x2) * cross
+    weightedY += (y1 + y2) * cross
+  }
+  const area = Math.abs(twiceArea) / 2
+  if (area === 0) throw new Error('E_TERRITORY_ZERO_AREA')
+  return {
+    area,
+    x: Number((weightedX / (3 * twiceArea)).toFixed(2)),
+    y: Number((weightedY / (3 * twiceArea)).toFixed(2)),
+  }
+}
 const territoryStates = [...stateNameById.entries()].sort(([left], [right]) => left.localeCompare(right)).map(([id, name]) => {
   const state = stateCatalog.find((candidate) => candidate.name === name)
   if (!state) throw new Error(`E_TERRITORY_STATE_NOT_FOUND:${id}:${name}`)
-  return { id, name, slug: state.slug, power: state.power }
+  const candidates = regionAtlas.regions
+    .filter((region) => region.content.polity_contexts.length === 1 && region.content.polity_contexts[0] === id)
+    .map((region) => {
+      const points = simplifyRing(geometryRings(region.map_geometry)[0]).map(mapPoint)
+      return { id: region.id, ...polygonMetrics(points) }
+    })
+    .sort((left, right) => right.area - left.area || left.id.localeCompare(right.id))
+  const label = candidates[0]
+  if (!label) throw new Error(`E_TERRITORY_LABEL_NOT_FOUND:${id}:${name}`)
+  return { id, name, slug: state.slug, power: state.power, labelX: label.x, labelY: label.y }
 })
 const openingTerritories = {
   schema: 'seoul-opening-territories.v1',
@@ -183,6 +212,46 @@ const openingTerritories = {
   }),
 }
 await writeFile(resolve(publicRoot, 'opening-territories.json'), `${JSON.stringify(openingTerritories)}\n`)
+
+const centuryAnnalsSource = await readFile(resolve(repoRoot, 'LORE/chronology/Century-Annals.md'), 'utf8')
+const timelineField = (body, field) => body.match(new RegExp(`^- ${field}:\\s*(.+)$`, 'm'))?.[1]?.trim()
+  ?? body.match(new RegExp(`^\\| ${field} \\| (.+) \\|$`, 'm'))?.[1]?.trim()
+  ?? ''
+const firstSentence = (text) => text.match(/^.*?[.!?](?:\s|$)/u)?.[0]?.trim() ?? text.trim()
+const relatedTimelineDocuments = (text) => {
+  const related = [{ title: '서울전국 백년실록', route: '/world/Century-Annals' }]
+  const add = (title, route) => { if (!related.some((entry) => entry.route === route)) related.push({ title, route }) }
+  if (territoryStates.some((state) => text.includes(state.id) || text.includes(state.name)) || /열여섯|십육국|국호/u.test(text)) add('서울 십육국', '/world/Sixteen-States')
+  if (/HC\d{2}|HP\d{2}|가문|총수|본관|항렬|법인 후계/u.test(text)) add('가문', '/world/Chaebol-Houses-and-Century-Factions')
+  if (/교회|성당|불교|원불교|예배|신정|위령|신앙|종단|교구/u.test(text)) add('신앙과 문화의 분열', '/world/Faith-Culture-Schism')
+  if (/휴머노이드|기술|무구|인가 서버|공장|제작|배터리|전지|도면|정비/u.test(text)) add('이 시대의 기술과 무구', '/world/Era-Arms-and-Tech-Level')
+  if (/XT0[1-5]|외부전구|임진|서해|대한해협|두만강|인천신탁|바깥/u.test(text)) add('바깥', '/world/External-Theaters')
+  if (peopleSource.some((person) => text.includes(person.name))) add('등장인물 전체', '/people')
+  return related
+}
+const yearHeadings = [...centuryAnnalsSource.matchAll(/^### (20\d{2}|21\d{2})년$/gm)]
+const timelineYears = yearHeadings.map((heading, index) => {
+  const year = Number(heading[1])
+  const body = centuryAnnalsSource.slice(heading.index + heading[0].length, yearHeadings[index + 1]?.index ?? centuryAnnalsSource.length).trim()
+  const prose = body.split(/\n(?=[-|])/u)[0].split(/\n\s*\n/u).map((paragraph) => paragraph.trim()).filter(Boolean)
+  const summary = prose.slice(0, 2).join(' ')
+  const pressure = timelineField(body, '압력') || firstSentence(prose[0] ?? '')
+  const decision = timelineField(body, '결정') || firstSentence(prose[1] ?? prose[0] ?? '')
+  const immediate = timelineField(body, '즉시') || firstSentence(prose.at(-1) ?? '')
+  const aftermath = timelineField(body, '뒤') || immediate
+  return {
+    year,
+    summary,
+    pressure,
+    decision,
+    immediate,
+    aftermath,
+    sourceRoute: `/world/Century-Annals#${year}년`,
+    relatedDocuments: relatedTimelineDocuments(`${body}\n${summary}`),
+  }
+})
+if (timelineYears.length !== 101 || timelineYears[0]?.year !== 2026 || timelineYears.at(-1)?.year !== 2126) throw new Error(`E_TIMELINE_YEAR_COVERAGE:${timelineYears.length}`)
+await writeFile(resolve(publicRoot, 'timeline-overview.json'), `${JSON.stringify({ schema: 'seoul-timeline-overview.v1', years: timelineYears, states: territoryStates }, null, 2)}\n`)
 
 const personCards = new Map()
 const addPersonCards = (text, file, pattern) => {
