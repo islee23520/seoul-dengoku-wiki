@@ -2,6 +2,7 @@ using System;
 using System.Threading.Tasks;
 using Janseon.Core;
 using Janseon.Core.Battle.Sim;
+using Janseon.Core.Data;
 using Janseon.Foundation.Composition;
 using UnityEngine;
 using VContainer;
@@ -24,6 +25,7 @@ namespace Janseon.Foundation.UI
             new(TaskCreationOptions.RunContinuationsAsynchronously);
 
         GameplayPresenter presenter;
+        IReadOnlyCampaignDefinition campaignDefinition;
         UiScreenDocumentLease documentLease;
 
         RectTransform canvasRoot;
@@ -52,10 +54,12 @@ namespace Janseon.Foundation.UI
         public void Construct(
             GameplayPresenter gameplayPresenter,
             UiScreenDocumentLease lease,
-            Janseon.Foundation.AppFlow.ApplicationFlowCoordinator coordinator)
+            Janseon.Foundation.AppFlow.ApplicationFlowCoordinator coordinator,
+            IReadOnlyCampaignDefinition campaignDefinition)
         {
             presenter = gameplayPresenter ?? throw new ArgumentNullException(nameof(gameplayPresenter));
             documentLease = lease ?? throw new ArgumentNullException(nameof(lease));
+            this.campaignDefinition = campaignDefinition ?? throw new ArgumentNullException(nameof(campaignDefinition));
 
             // Canvas-only: the gameplay canvas is built below via UguiHudBuilder (task 13).
             if (!documentLease.TryAttach("gameplay"))
@@ -104,7 +108,10 @@ namespace Janseon.Foundation.UI
                 PocCoreLoopController.DefaultSeed,
                 StationId.Yeongdeungpo,
                 PocCoreLoopController.DefaultCampaignId,
-                coordinator.SelectedStartingPreset), null);
+                coordinator.SelectedStartingPreset,
+                this.campaignDefinition.BattleRulesVersion,
+                this.campaignDefinition.PersistentPartyUnitId,
+                this.campaignDefinition.PersistentPartyMaxHp), null);
 
             IsReady = true;
             signaled = true;
@@ -124,7 +131,7 @@ namespace Janseon.Foundation.UI
             }
 
             GameplayUiSnapshot snapshot = GameplayUiSnapshot.FromCampaign(
-                campaign, battle, battlePaused, pendingFormation, graph);
+                campaign, battle, battlePaused, pendingFormation, graph, campaignDefinition);
             presenter.ApplySnapshot(snapshot);
         }
 

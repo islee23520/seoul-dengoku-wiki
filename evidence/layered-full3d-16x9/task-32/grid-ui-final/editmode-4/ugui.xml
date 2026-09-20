@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="16" result="Passed" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-20 14:28:37Z" end-time="2026-09-20 14:28:37Z" duration="0.3873111">
+  <test-suite type="TestSuite" id="1000" name="서울:전국" fullname="서울:전국" runstate="Runnable" testcasecount="160" result="Passed" start-time="2026-09-20 14:28:37Z" end-time="2026-09-20 14:28:37Z" duration="0.387311" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1187" name="Janseon.Foundation.EditModeTests.dll" fullname="/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave3-task32/GAME/Library/ScriptAssemblies/Janseon.Foundation.EditModeTests.dll" runstate="Runnable" testcasecount="159" result="Passed" start-time="2026-09-20 14:28:37Z" end-time="2026-09-20 14:28:37Z" duration="0.382909" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="47775" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1188" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="159" result="Passed" start-time="2026-09-20 14:28:37Z" end-time="2026-09-20 14:28:37Z" duration="0.381606" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1191" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="122" result="Passed" start-time="2026-09-20 14:28:37Z" end-time="2026-09-20 14:28:37Z" duration="0.377100" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1192" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="122" result="Passed" start-time="2026-09-20 14:28:37Z" end-time="2026-09-20 14:28:37Z" duration="0.376013" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1161" name="UguiScreenTests" fullname="Janseon.Foundation.Tests.UguiScreenTests" classname="Janseon.Foundation.Tests.UguiScreenTests" runstate="Runnable" testcasecount="16" result="Passed" start-time="2026-09-20 14:28:37Z" end-time="2026-09-20 14:28:37Z" duration="0.374196" total="16" passed="16" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1166" name="A_P0StartingPresets_DivergeOnSupplyAndYeongdeungpoBulletinOnly" fullname="Janseon.Foundation.Tests.UguiScreenTests.A_P0StartingPresets_DivergeOnSupplyAndYeongdeungpoBulletinOnly" methodname="A_P0StartingPresets_DivergeOnSupplyAndYeongdeungpoBulletinOnly" classname="Janseon.Foundation.Tests.UguiScreenTests" runstate="Runnable" seed="429046303" result="Passed" start-time="2026-09-20 14:28:37Z" end-time="2026-09-20 14:28:37Z" duration="0.117173" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1175" name="ActiveLease_RejectsSecondCanvasScreen" fullname="Janseon.Foundation.Tests.UguiScreenTests.ActiveLease_RejectsSecondCanvasScreen" methodname="ActiveLease_RejectsSecondCanvasScreen" classname="Janseon.Foundation.Tests.UguiScreenTests" runstate="Runnable" seed="2044367793" result="Passed" start-time="2026-09-20 14:28:37Z" end-time="2026-09-20 14:28:37Z" duration="0.000191" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1177" name="Gameplay_BuildGameplayCanvas_ExposesAllRequiredNames" fullname="Janseon.Foundation.Tests.UguiScreenTests.Gameplay_BuildGameplayCanvas_ExposesAllRequiredNames" methodname="Gameplay_BuildGameplayCanvas_ExposesAllRequiredNames" classname="Janseon.Foundation.Tests.UguiScreenTests" runstate="Runnable" seed="2090370357" result="Passed" start-time="2026-09-20 14:28:37Z" end-time="2026-09-20 14:28:37Z" duration="0.007336" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1167" name="Gameplay_CampaignChrome_TerritoryRelationsTravelDetail_ExistOutsideBattleHud" fullname="Janseon.Foundation.Tests.UguiScreenTests.Gameplay_CampaignChrome_TerritoryRelationsTravelDetail_ExistOutsideBattleHud" methodname="Gameplay_CampaignChrome_TerritoryRelationsTravelDetail_ExistOutsideBattleHud" classname="Janseon.Foundation.Tests.UguiScreenTests" runstate="Runnable" seed="603051163" result="Passed" start-time="2026-09-20 14:28:37Z" end-time="2026-09-20 14:28:37Z" duration="0.008184" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1168" name="Gameplay_Canvas_ExposesRequiredStableNames" fullname="Janseon.Foundation.Tests.UguiScreenTests.Gameplay_Canvas_ExposesRequiredStableNames" methodname="Gameplay_Canvas_ExposesRequiredStableNames" classname="Janseon.Foundation.Tests.UguiScreenTests" runstate="Runnable" seed="279661422" result="Passed" start-time="2026-09-20 14:28:37Z" end-time="2026-09-20 14:28:37Z" duration="0.010684" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1170" name="Gameplay_ClockLabel_MatchesCoreTick_AfterInspectCancelAndMove" fullname="Janseon.Foundation.Tests.UguiScreenTests.Gameplay_ClockLabel_MatchesCoreTick_AfterInspectCancelAndMove" methodname="Gameplay_ClockLabel_MatchesCoreTick_AfterInspectCancelAndMove" classname="Janseon.Foundation.Tests.UguiScreenTests" runstate="Runnable" seed="690864130" result="Passed" start-time="2026-09-20 14:28:37Z" end-time="2026-09-20 14:28:37Z" duration="0.012371" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1176" name="Gameplay_DonenessCopy_MissionChoicesWhyParty" fullname="Janseon.Foundation.Tests.UguiScreenTests.Gameplay_DonenessCopy_MissionChoicesWhyParty" methodname="Gameplay_DonenessCopy_MissionChoicesWhyParty" classname="Janseon.Foundation.Tests.UguiScreenTests" runstate="Runnable" seed="1550744739" result="Passed" start-time="2026-09-20 14:28:37Z" end-time="2026-09-20 14:28:37Z" duration="0.008716" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1174" name="Gameplay_FocusOrder_MatchesDesignContract_ForEncounterActions" fullname="Janseon.Foundation.Tests.UguiScreenTests.Gameplay_FocusOrder_MatchesDesignContract_ForEncounterActions" methodname="Gameplay_FocusOrder_MatchesDesignContract_ForEncounterActions" classname="Janseon.Foundation.Tests.UguiScreenTests" runstate="Runnable" seed="1564948397" result="Passed" start-time="2026-09-20 14:28:37Z" end-time="2026-09-20 14:28:37Z" duration="0.018098" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1172" name="Gameplay_Presenter_AppliesNamedVisibleFlags_RouteStageKeepsRailsAndStationLabels" fullname="Janseon.Foundation.Tests.UguiScreenTests.Gameplay_Presenter_AppliesNamedVisibleFlags_RouteStageKeepsRailsAndStationLabels" methodname="Gameplay_Presenter_AppliesNamedVisibleFlags_RouteStageKeepsRailsAndStationLabels" classname="Janseon.Foundation.Tests.UguiScreenTests" runstate="Runnable" seed="299409187" result="Passed" start-time="2026-09-20 14:28:37Z" end-time="2026-09-20 14:28:37Z" duration="0.009293" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1171" name="Gameplay_Presenter_AppliesSnapshot_ToNamedCanvasControls" fullname="Janseon.Foundation.Tests.UguiScreenTests.Gameplay_Presenter_AppliesSnapshot_ToNamedCanvasControls" methodname="Gameplay_Presenter_AppliesSnapshot_ToNamedCanvasControls" classname="Janseon.Foundation.Tests.UguiScreenTests" runstate="Runnable" seed="1431797909" result="Passed" start-time="2026-09-20 14:28:37Z" end-time="2026-09-20 14:28:37Z" duration="0.007761" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1169" name="Gameplay_Snapshot_IsDeterministic_ForRouteStageAndEncounter" fullname="Janseon.Foundation.Tests.UguiScreenTests.Gameplay_Snapshot_IsDeterministic_ForRouteStageAndEncounter" methodname="Gameplay_Snapshot_IsDeterministic_ForRouteStageAndEncounter" classname="Janseon.Foundation.Tests.UguiScreenTests" runstate="Runnable" seed="774603875" result="Passed" start-time="2026-09-20 14:28:37Z" end-time="2026-09-20 14:28:37Z" duration="0.001224" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1162" name="MainTitle_BuildMainTitleCanvas_ExposesRequiredNames" fullname="Janseon.Foundation.Tests.UguiScreenTests.MainTitle_BuildMainTitleCanvas_ExposesRequiredNames" methodname="MainTitle_BuildMainTitleCanvas_ExposesRequiredNames" classname="Janseon.Foundation.Tests.UguiScreenTests" runstate="Runnable" seed="1664409614" result="Passed" start-time="2026-09-20 14:28:37Z" end-time="2026-09-20 14:28:37Z" duration="0.001144" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1173" name="MainTitle_FocusOrder_MatchesDesignContract" fullname="Janseon.Foundation.Tests.UguiScreenTests.MainTitle_FocusOrder_MatchesDesignContract" methodname="MainTitle_FocusOrder_MatchesDesignContract" classname="Janseon.Foundation.Tests.UguiScreenTests" runstate="Runnable" seed="1749880842" result="Passed" start-time="2026-09-20 14:28:37Z" end-time="2026-09-20 14:28:37Z" duration="0.001486" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1163" name="MainTitle_MarkIsTextAndStartIsButton" fullname="Janseon.Foundation.Tests.UguiScreenTests.MainTitle_MarkIsTextAndStartIsButton" methodname="MainTitle_MarkIsTextAndStartIsButton" classname="Janseon.Foundation.Tests.UguiScreenTests" runstate="Runnable" seed="1110091563" result="Passed" start-time="2026-09-20 14:28:37Z" end-time="2026-09-20 14:28:37Z" duration="0.028633" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1165" name="MainTitle_P0PresetToggle_DefaultsWanderer_AndSelectsStationMaster" fullname="Janseon.Foundation.Tests.UguiScreenTests.MainTitle_P0PresetToggle_DefaultsWanderer_AndSelectsStationMaster" methodname="MainTitle_P0PresetToggle_DefaultsWanderer_AndSelectsStationMaster" classname="Janseon.Foundation.Tests.UguiScreenTests" runstate="Runnable" seed="109653375" result="Passed" start-time="2026-09-20 14:28:37Z" end-time="2026-09-20 14:28:37Z" duration="0.000837" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1164" name="MainTitle_Start_CallsOpenFoundationOnPublicCoordinator" fullname="Janseon.Foundation.Tests.UguiScreenTests.MainTitle_Start_CallsOpenFoundationOnPublicCoordinator" methodname="MainTitle_Start_CallsOpenFoundationOnPublicCoordinator" classname="Janseon.Foundation.Tests.UguiScreenTests" runstate="Runnable" seed="681667567" result="Passed" start-time="2026-09-20 14:28:37Z" end-time="2026-09-20 14:28:37Z" duration="0.133500" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[The character with Unicode value \u2600 was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \U0001F4DC was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \u2600 was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \U0001F4DC was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \u2600 was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \U0001F4DC was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \u2600 was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \U0001F4DC was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \u2600 was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \U0001F4DC was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+Saving results to: /Users/ilseoblee/Library/Application Support/Janseon Studio/서울_전국/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

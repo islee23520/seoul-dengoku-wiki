@@ -1,0 +1,31 @@
+{
+  "verification_status": "observed_complete",
+  "repository_tests": "passed",
+  "observed_runtime_artifacts": [
+    "builder3",
+    "projection3",
+    "validation3",
+    "repository2",
+    "strategy1",
+    "visual3"
+  ],
+  "runtime_artifact_details": {
+    "final-acceptance/builder.xml": { "observed": 3, "expected": 3 },
+    "projection-r2.xml": { "observed": 3, "expected": 3 },
+    "validation.xml": { "observed": 3, "expected": 3 },
+    "repository-final-4.xml": { "observed": 2, "expected": 2 },
+    "strategy-map-final.xml": { "observed": 1, "expected": 1 },
+    "fixture-object-injection.../playmode-parent.xml": { "observed": 3, "expected": 3 },
+    "fixture-object-injection.../catalog-render-parent.png": { "width": 1280, "height": 720 },
+    "authoring/happy.log": { "return_code": 0, "campaign_sha_unchanged": true },
+    "authoring/invalid-correct-receipt.json": { "return_code": 1, "unchanged": true }
+  },
+  "active_unity_processes": [],
+  "large_changed_blobs": [],
+  "notes": [
+    "Optional landmarks source is 0 prefabs + null manifest until Task16.",
+    "No active Unity process.",
+    "No changed blob exceeds 50MB.",
+    "No false claim is made about TMP font resource."
+  ]
+}

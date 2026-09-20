@@ -1,2 +1,97 @@
-using NUnit.Framework;using UnityEngine;using Janseon.Core;using Janseon.Core.Battle.Contracts;using Janseon.Core.Data;using Janseon.Data.Authoring;using Janseon.Data.Repositories;using Janseon.Data.Validation;
-namespace Janseon.Foundation.Tests { public sealed class Area1CatalogProjectionTests { static GameDataCatalogAsset Catalog(){var c=ScriptableObject.CreateInstance<GameDataCatalogAsset>();c.contentSchema=1;c.contentVersion="area1-static-content-v1";c.fingerprintVersion="content-fingerprint-v1";c.cards=new CardDefinitionAsset[6];string[] ids={"guard-shieldwall","encourage-morale","pincer-focus","mobility-regroup","supply-heal","passage-retreat"};int[] recharge={300,600,450,600,900,750};int[] effect={-3,10,1,1,5,1};string[] keys={"front_damage","morale","front_damage","cardinal_reposition","front_heal","retreat"};for(int i=0;i<6;i++){c.cards[i]=ScriptableObject.CreateInstance<CardDefinitionAsset>();c.cards[i].stableId="card."+ids[i];c.cards[i].coreCardId=ids[i];c.cards[i].kind=i<4?CardKind.Character:CardKind.Stronghold;c.cards[i].rechargeTicks=recharge[i];c.cards[i].effect=effect[i];c.cards[i].effectKey=keys[i];}c.unitRoles=new UnitRoleDefinitionAsset[3];string[] roleIds={"guard","assault","archer"};string[] roleNames={"근위","돌격","궁수"};int[] hp={30,20,14},power={4,6,3},max={1,1,3};for(int i=0;i<3;i++){c.unitRoles[i]=ScriptableObject.CreateInstance<UnitRoleDefinitionAsset>();c.unitRoles[i].stableId="unit.role."+roleIds[i];c.unitRoles[i].coreRole=roleNames[i];c.unitRoles[i].maxHp=hp[i];c.unitRoles[i].power=power[i];c.unitRoles[i].rangeMin=1;c.unitRoles[i].rangeMax=max[i];c.unitRoles[i].moveTicksPerCell=10;c.unitRoles[i].attackCooldownTicks=30;}var f=ScriptableObject.CreateInstance<FormationDefinitionAsset>();f.stableId="formation.default-3x3";f.rowCount=3;f.columnCount=3;f.slots=new FormationSlotDefinition[6];for(int i=0;i<6;i++)f.slots[i]=new FormationSlotDefinition{roleStableId=c.unitRoles[i/2].stableId,row=i/2,column=i%2-1,facing=CardinalDirection.East};c.formations=new[]{f};c.stations=new StationDefinitionAsset[3];string[] sid={"yeongdeungpo","sindorim","guro"},core={"Yeongdeungpo","Sindorim","Guro"};string[][] ns={new[]{"station.sindorim"},new[]{"station.yeongdeungpo","station.guro"},new[]{"station.sindorim"}};for(int i=0;i<3;i++){c.stations[i]=ScriptableObject.CreateInstance<StationDefinitionAsset>();c.stations[i].stableId="station."+sid[i];c.stations[i].coreStationId=core[i];c.stations[i].neighbors=ns[i];}return c;}[Test]public void GeneratedCatalog_ProjectsExactlySixApprovedCards(){var c=Catalog();var i=GameDataCatalogIndexBuilder.Build(c);Assert.AreEqual(6,i.Cards.Count);string[] ids={"card.encourage-morale","card.guard-shieldwall","card.mobility-regroup","card.passage-retreat","card.pincer-focus","card.supply-heal"};CardKind[] k={CardKind.Character,CardKind.Character,CardKind.Character,CardKind.Stronghold,CardKind.Character,CardKind.Stronghold};int[] r={600,300,600,750,450,900},e={10,-3,1,1,1,5};for(int n=0;n<6;n++){var x=i.Cards[n];Assert.AreEqual(ids[n],x.StableId);Assert.AreEqual(ids[n].Substring(5),x.CoreCardId);Assert.AreEqual(k[n],x.Kind);Assert.AreEqual(r[n],x.RechargeTicks);Assert.AreEqual(e[n],x.Effect);}Assert.AreEqual(3,i.UnitRoles.Count);Assert.AreEqual("unit.role.archer",i.UnitRoles[0].StableId);Assert.AreEqual("궁수",i.UnitRoles[0].CoreRole);Assert.AreEqual(14,i.UnitRoles[0].MaxHp);Assert.AreEqual(3,i.UnitRoles[0].Power);Assert.AreEqual("unit.role.guard",i.UnitRoles[2].StableId);Assert.AreEqual(1,i.UnitRoles[2].RangeMax);Assert.AreEqual(1,i.Formations.Count);Assert.AreEqual(6,i.Formations[0].Slots.Count);Assert.AreEqual(CardinalDirection.East,i.Formations[0].Slots[0].Facing);Assert.AreEqual(3,i.Stations.Count);Assert.AreEqual(2,i.Stations[1].NeighborStableIds.Count);var cards=new CardCatalogRepository(i);CardCatalogItem card;Assert.IsTrue(cards.TryGetByCoreId("guard-shieldwall",out card));Assert.AreEqual("card.guard-shieldwall",card.StableId);var stations=new StationCatalogRepository(i);StationCatalogItem station;Assert.IsTrue(stations.TryGetByCoreId(StationId.Sindorim,out station));Assert.AreEqual("station.sindorim",station.StableId);Assert.IsTrue(cards.TryGet("card.supply-heal",out card));}}}
+using Janseon.Core;
+using Janseon.Data.Editor;
+using Janseon.Data.Fingerprints;
+using Janseon.Data.Repositories;
+using Janseon.Data.Validation;
+using Janseon.Foundation.Tests.Fixtures;
+using NUnit.Framework;
+using UnityEditor;
+
+namespace Janseon.Foundation.Tests
+{
+    public sealed class Area1CatalogProjectionTests
+    {
+        [Test]
+        public void Build_ProjectsSuppliedCampaignAndStationFields()
+        {
+            var catalog = TestGameDataCatalog.Create();
+            try
+            {
+                var index = GameDataCatalogIndexBuilder.Build(catalog);
+
+                Assert.That(index.CampaignDefinition.BattleRulesVersion,
+                    Is.EqualTo(catalog.campaignDefinition.BattleRulesVersion));
+                Assert.That(index.CampaignDefinition.PersistentPartyUnitId,
+                    Is.EqualTo(catalog.campaignDefinition.PersistentPartyUnitId));
+                Assert.That(index.CampaignDefinition.PersistentPartyMaxHp,
+                    Is.EqualTo(catalog.campaignDefinition.PersistentPartyMaxHp));
+                Assert.That(index.Stations[0].StableId, Is.EqualTo(catalog.stations[0].stableId));
+                Assert.That(index.Stations[0].CoreStationId.Value,
+                    Is.EqualTo(catalog.stations[0].coreStationId));
+                Assert.That(index.Stations[0].NeighborStableIds,
+                    Is.EqualTo(catalog.stations[0].neighbors));
+            }
+            finally
+            {
+                TestGameDataCatalog.Destroy(catalog);
+            }
+        }
+
+        [Test]
+        public void Build_ProjectsSerializedCampaignChangeAndChangesCanonicalFingerprint()
+        {
+            var catalog = TestGameDataCatalog.Create();
+            try
+            {
+                var baseline = GameDataCatalogIndexBuilder.Build(catalog);
+                var baselineFingerprint = CanonicalContentFingerprint.Compute(baseline);
+                var serializedCampaign = new SerializedObject(catalog.campaignDefinition);
+                var battleRulesVersion = serializedCampaign.FindProperty("battleRulesVersion");
+                var expectedBattleRulesVersion = battleRulesVersion.stringValue + "-updated";
+                battleRulesVersion.stringValue = expectedBattleRulesVersion;
+                serializedCampaign.ApplyModifiedPropertiesWithoutUndo();
+
+                var projected = GameDataCatalogIndexBuilder.Build(catalog);
+                var projectedFingerprint = CanonicalContentFingerprint.Compute(projected);
+                var repository = new CampaignDefinitionRepository(projected);
+
+                Assert.That(projected.CampaignDefinition.BattleRulesVersion,
+                    Is.EqualTo(catalog.campaignDefinition.BattleRulesVersion));
+                Assert.That(projected.CampaignDefinition.BattleRulesVersion,
+                    Is.EqualTo(expectedBattleRulesVersion));
+                Assert.That(repository.BattleRulesVersion, Is.EqualTo(expectedBattleRulesVersion));
+                Assert.That(projectedFingerprint, Is.Not.EqualTo(baselineFingerprint));
+            }
+            finally
+            {
+                TestGameDataCatalog.Destroy(catalog);
+            }
+        }
+
+        [Test]
+        public void Repositories_LookUpProjectedCampaignAndStations()
+        {
+            var catalog = TestGameDataCatalog.Create();
+            try
+            {
+                var index = GameDataCatalogIndexBuilder.Build(catalog);
+                var campaign = new CampaignDefinitionRepository(index);
+                var stations = new StationCatalogRepository(index);
+
+                Assert.That(campaign.PersistentPartyUnitId,
+                    Is.EqualTo(catalog.campaignDefinition.PersistentPartyUnitId));
+                Assert.That(stations.TryGet(catalog.stations[0].stableId, out var station), Is.True);
+                Assert.That(station.CoreStationId.Value,
+                    Is.EqualTo(catalog.stations[0].coreStationId));
+                Assert.That(stations.TryGetByCoreId(
+                    new StationId(catalog.stations[1].coreStationId), out var stationByCoreId), Is.True);
+                Assert.That(stationByCoreId.StableId, Is.EqualTo(catalog.stations[1].stableId));
+            }
+            finally
+            {
+                TestGameDataCatalog.Destroy(catalog);
+            }
+        }
+
+    }
+}

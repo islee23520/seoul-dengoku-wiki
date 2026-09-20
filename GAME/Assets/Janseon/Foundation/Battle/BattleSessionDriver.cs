@@ -8,35 +8,20 @@ using UnityEngine;
 namespace Janseon.Foundation.Battle
 {
     /// <summary>
-    /// D1 session driver: pumps the attached Core battle session on a fixed 30 Hz
-    /// cadence driven by an injected monotonic seconds source, decoupled from the
-    /// rendered frame rate. At most <see cref="MaxStepsPerFrame"/> BattleSim.Step
-    /// calls run per Tick() (rendered frame). A frame whose elapsed time exceeds
-    /// that budget sacrifices its excess instead of bursting later; sub-tick
-    /// residue is preserved, so leftover accumulator carry stays bounded below
-    /// one tick interval. Pause lives here, outside Core: the driver only gates
-    /// its own pump and discards paused wall-time, so BattleSimState, Ledger,
-    /// and their fingerprints never observe a pause. Command consumption mirrors
-    /// BattleSim.Replay ((At, Seq)-sorted inbox, due commands submitted before
-    /// their tick's Step), so a driver-driven run replays identically to a
-    /// direct Core replay of the same command schedule.
+    /// D1 session driver: pumps the attached Core battle session once per
+    /// PlayerLoop tick using the supplied elapsed seconds. Pause lives here,
+    /// outside Core: the driver only gates its own pump, so BattleSimState,
+    /// Ledger, and their fingerprints never observe paused time. Commands are
+    /// ordered by elapsed seconds and sequence before they are submitted.
     /// </summary>
     public sealed class BattleSessionDriver
     {
-        public const int TicksPerSecond = BattleRules.TicksPerSecond;
-        public const int MaxStepsPerFrame = 4;
-
         readonly List<BattleTickCommand> inbox = new List<BattleTickCommand>();
-        public BattleSessionDriver() { }
-        public BattleSessionDriver(Func<double> _) { }
 
         public BattleSimState State { get; private set; }
         public Ledger Ledger { get; private set; }
         public bool Paused { get; set; }
         public long TotalSteps { get; private set; }
-        public double AccumulatorSeconds => 0.0;
-        public int MaxTicks { get; set; } = BattleRules.MaxTicks;
-
         public event Action<object> CommandRejected;
         public event Action StateAdvanced;
         public event Action<int> FrameProcessed;
@@ -60,24 +45,39 @@ namespace Janseon.Foundation.Battle
 
         public void Enqueue(BattleTickCommand command)
         {
-            if (command == null) throw new ArgumentNullException(nameof(command));
-            if (State == null) throw new InvalidOperationException("Attach a battle session before enqueueing commands.");
-            if (command.At.Value < State.Tick)
+            if (command == null)
+            {
+                throw new ArgumentNullException(nameof(command));
+            }
+
+            if (State == null)
+            {
+                throw new InvalidOperationException("Attach a battle session before enqueueing commands.");
+            }
+
+            if (command.AtSeconds < State.ElapsedSeconds)
             {
                 Reject(BattleSim.Submit(State, Ledger, command));
                 return;
             }
             inbox.Add(command.Clone());
-            inbox.Sort((a, b) => a.At.Value != b.At.Value
-                ? a.At.Value.CompareTo(b.At.Value)
+            inbox.Sort((a, b) => a.AtSeconds != b.AtSeconds
+                ? a.AtSeconds.CompareTo(b.AtSeconds)
                 : a.Seq.CompareTo(b.Seq));
         }
 
         public void SubmitCurrentCommands()
         {
-            if (State == null || Ledger == null) return;
+            if (State == null || Ledger == null)
+            {
+                return;
+            }
+
             SubmitDueCommands();
-            if (State.Outcome != BattleOutcomeKind.Ongoing) Detach();
+            if (State.Outcome != BattleOutcomeKind.Ongoing)
+            {
+                Detach();
+            }
         }
 
         public void FixedUpdate(float fixedDeltaTime)
@@ -87,35 +87,38 @@ namespace Janseon.Foundation.Battle
                 FrameProcessed?.Invoke(0);
                 return;
             }
-            if (State.Outcome != BattleOutcomeKind.Ongoing || State.Tick >= MaxTicks)
+            if (State.Outcome != BattleOutcomeKind.Ongoing)
             {
                 Detach();
                 FrameProcessed?.Invoke(0);
                 return;
             }
-            var steps = 0;
-            while (State != null
-                   && steps < MaxStepsPerFrame
-                   && State.Tick < MaxTicks
-                   && State.Outcome == BattleOutcomeKind.Ongoing
-                   )
+            SubmitDueCommands();
+            if (State == null || State.Outcome != BattleOutcomeKind.Ongoing)
             {
-                SubmitDueCommands();
-                if (State == null || State.Outcome != BattleOutcomeKind.Ongoing) break;
-                BattleSim.Step(State, Ledger, fixedDeltaTime);
-                TotalSteps++;
-                steps++;
-                StateAdvanced?.Invoke();
+                FrameProcessed?.Invoke(0);
+                return;
             }
-            if (State != null && (State.Outcome != BattleOutcomeKind.Ongoing || State.Tick >= MaxTicks)) Detach();
-            FrameProcessed?.Invoke(steps);
+
+            BattleSim.Step(State, Ledger, fixedDeltaTime);
+            TotalSteps++;
+            StateAdvanced?.Invoke();
+            if (State != null && State.Outcome != BattleOutcomeKind.Ongoing)
+            {
+                Detach();
+            }
+
+            FrameProcessed?.Invoke(1);
         }
 
-        public void Tick() => FixedUpdate(Time.fixedDeltaTime);
+        public void Tick()
+        {
+            FixedUpdate(Time.fixedDeltaTime);
+        }
 
         void SubmitDueCommands()
         {
-            while (inbox.Count > 0 && inbox[0].At.Value <= State.Tick)
+            while (inbox.Count > 0 && inbox[0].AtSeconds <= State.ElapsedSeconds)
             {
                 var command = inbox[0];
                 inbox.RemoveAt(0);
@@ -125,7 +128,10 @@ namespace Janseon.Foundation.Battle
 
         void Reject(object rejection)
         {
-            if (rejection != null) CommandRejected?.Invoke(rejection);
+            if (rejection != null)
+            {
+                CommandRejected?.Invoke(rejection);
+            }
         }
     }
 }

@@ -5,11 +5,11 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Janseon.Core;
-using Janseon.Core.Battle.Contracts;
-using Janseon.Core.Battle.Sim;
+using Janseon.Core.Data;
 using Janseon.Foundation.AppFlow;
 using Janseon.Foundation.Composition;
 using Janseon.Foundation.UI;
+using Janseon.Tests.EditMode.Fixtures;
 using NUnit.Framework;
 using UnityEngine;
 
@@ -120,10 +120,8 @@ namespace Janseon.Foundation.Tests
         [Test]
         public void A_P0StartingPresets_DivergeOnSupplyAndYeongdeungpoBulletinOnly()
         {
-            CampaignState wanderer = CampaignApi.StartNewGame(
-                22, StationId.Yeongdeungpo, "wanderer", StartingPreset.Wanderer);
-            CampaignState stationMaster = CampaignApi.StartNewGame(
-                22, StationId.Yeongdeungpo, "station-master", StartingPreset.StationMaster);
+            CampaignState wanderer = CampaignApi.StartNewGame(22, StationId.Yeongdeungpo, "wanderer", StartingPreset.Wanderer, TestCampaignDefinition.Instance.BattleRulesVersion, TestCampaignDefinition.Instance.PersistentPartyUnitId, TestCampaignDefinition.Instance.PersistentPartyMaxHp);
+            CampaignState stationMaster = CampaignApi.StartNewGame(22, StationId.Yeongdeungpo, "station-master", StartingPreset.StationMaster, TestCampaignDefinition.Instance.BattleRulesVersion, TestCampaignDefinition.Instance.PersistentPartyUnitId, TestCampaignDefinition.Instance.PersistentPartyMaxHp);
 
             Assert.That(wanderer.PartyMemberCount, Is.EqualTo(3));
             Assert.That(wanderer.Resources, Is.EqualTo(30));
@@ -138,7 +136,7 @@ namespace Janseon.Foundation.Tests
             Assert.That(stationMaster.HomeBase, Is.EqualTo(StationId.Yeongdeungpo));
 
             RectTransform root = UguiHudBuilder.BuildGameplay(null);
-            var presenter = new GameplayPresenter();
+            var presenter = CreateGameplayPresenter();
             Assert.That(presenter.BindForTest(root), Is.True);
 
             presenter.ApplySnapshot(GameplayUiSnapshot.FromCampaign(wanderer, null));
@@ -185,9 +183,8 @@ namespace Janseon.Foundation.Tests
                 }
             }
 
-            CampaignState stationMaster = CampaignApi.StartNewGame(
-                22, StationId.Yeongdeungpo, "station-master", StartingPreset.StationMaster);
-            var presenter = new GameplayPresenter();
+            CampaignState stationMaster = CampaignApi.StartNewGame(22, StationId.Yeongdeungpo, "station-master", StartingPreset.StationMaster, TestCampaignDefinition.Instance.BattleRulesVersion, TestCampaignDefinition.Instance.PersistentPartyUnitId, TestCampaignDefinition.Instance.PersistentPartyMaxHp);
+            var presenter = CreateGameplayPresenter();
             Assert.That(presenter.BindForTest(root), Is.True,
                 "presenter bind must succeed once all campaign chrome names are built");
             presenter.ApplySnapshot(GameplayUiSnapshot.FromCampaign(stationMaster, null));
@@ -216,96 +213,33 @@ namespace Janseon.Foundation.Tests
                 Assert.That(UguiHudBuilder.Find(gameplayRoot, name), Is.Not.Null, "missing Canvas object name " + name);
             }
 
-            for (int y = 0; y < 5; y++)
+            string[] retiredSelectors =
             {
-                for (int x = 0; x < 5; x++)
-                {
-                    string cell = UiElementNames.BattleCell(x, y);
-                    Assert.That(UguiHudBuilder.Find(gameplayRoot, cell), Is.Not.Null, "missing " + cell);
-                }
-            }
-        }
-
-        [Test]
-        public void Gameplay_RealtimeBattleHud_ExposesStableTmpCardMoraleAndReinforcementElements()
-        {
-            RectTransform root = UguiHudBuilder.BuildGameplay(null);
-            Assert.That(UguiHudBuilder.Find(root, UiElementNames.BattleHud), Is.Not.Null);
-            Assert.That(UguiHudBuilder.Find(root, "battle-ap"), Is.Null);
-
-            string[] required =
-            {
-                UiElementNames.BattleCardTray,
-                UiElementNames.BattleCardOwner,
-                UiElementNames.BattleCardCooldown,
-                UiElementNames.BattleCardCooldownMask,
-                UiElementNames.BattleCardCooldownText,
-                UiElementNames.BattleCardTargetRing,
-                UiElementNames.BattleCardDirectionNorth,
-                UiElementNames.BattleCardDirectionEast,
-                UiElementNames.BattleCardDirectionSouth,
-                UiElementNames.BattleCardDirectionWest,
-                UiElementNames.BattleCardCancel,
-                UiElementNames.BattleCardCancelPath,
-                UiElementNames.BattleMoralePlayer,
-                UiElementNames.BattleMoraleEnemy,
-                UiElementNames.BattleReinforcement,
+                "formation-swap-front",
+                "edit-formation",
+                "formation-edit",
+                "formation-edit-confirm",
+                "formation-edit-cancel",
+                "formation-edit-reedit",
+                "formation-edit-reset",
             };
-            foreach (string name in required)
+            Transform[] descendants = gameplayRoot.GetComponentsInChildren<Transform>(true);
+            Assert.That(descendants.Any(element => element.name.StartsWith("battle-cell-", StringComparison.Ordinal)),
+                Is.False, "retired 5x5 battle-cell controls must not be built");
+            foreach (string selector in retiredSelectors)
             {
-                Transform element = UguiHudBuilder.Find(root, name);
-                Assert.That(element, Is.Not.Null, "missing " + name);
-                if (name != UiElementNames.BattleCardCooldownMask)
-                {
-                    Assert.That(element.GetComponentInChildren<TMPro.TextMeshProUGUI>(true), Is.Not.Null,
-                        name + " must use TMP");
-                    Assert.That(element.GetComponentInChildren<UnityEngine.UI.Text>(true), Is.Null,
-                        name + " must not use native Text");
-                }
+                Assert.That(UguiHudBuilder.Find(gameplayRoot, selector), Is.Null,
+                    "retired formation/grid selector must not be built: " + selector);
             }
+            Assert.That(descendants.Any(element => element.name.StartsWith("formation-edit-", StringComparison.Ordinal)),
+                Is.False, "retired formation editor descendants must not be built");
         }
 
         [Test]
-        public void Gameplay_RealtimeBattleHud_BindsActingCardMoraleSidesAndTelegraph()
-        {
-            RectTransform root = UguiHudBuilder.BuildGameplay(null);
-            var presenter = new GameplayPresenter();
-            Assert.That(presenter.BindForTest(root), Is.True);
-
-            var graph = RouteGraph.CreateYeongdeungpoSindorimGuro();
-            var ledger = new Ledger();
-            CampaignState state = CampaignApi.Start(90421, StationId.Yeongdeungpo, "realtime-hud");
-            state = (CampaignState)CampaignApi.Apply(graph, state, ledger, new CampaignCommand { Id = new CommandId("d"), Kind = CampaignCommandKind.Depart });
-            state = (CampaignState)CampaignApi.Apply(graph, state, ledger, new CampaignCommand { Id = new CommandId("t"), Kind = CampaignCommandKind.Travel, TravelDestination = StationId.Sindorim });
-            state = (CampaignState)CampaignApi.Apply(graph, state, ledger, new CampaignCommand { Id = new CommandId("f"), Kind = CampaignCommandKind.FaceEncounter });
-            state = (CampaignState)CampaignApi.Apply(graph, state, ledger, new CampaignCommand { Id = new CommandId("r"), Kind = CampaignCommandKind.EnterResolution });
-            var combat = (BattleRequired)CampaignApi.Apply(graph, state, ledger, new CampaignCommand { Id = new CommandId("c"), Kind = CampaignCommandKind.ChooseCombat });
-            var battle = BattleSim.Open(BattleSetup.FromContext(combat.Context));
-            state = (CampaignState)CampaignApi.AttachPendingBattle(state, ledger, combat.Context, new CommandId("a"));
-            var commanderCard = System.Array.Find(battle.Cards, card => card.OwnerUnitId.Equals(battle.PlayerCommanderId) && card.Id == "encourage-morale");
-            Assert.That(commanderCard, Is.Not.Null);
-            commanderCard.RechargeTicksLeft = 17;
-
-            GameplayUiSnapshot snapshot = GameplayUiSnapshot.FromCampaign(state, battle);
-            presenter.ApplySnapshot(snapshot);
-
-            Assert.That(UguiHudBuilder.Find(root, UiElementNames.BattleCardOwner).GetComponentInChildren<TMPro.TextMeshProUGUI>(true).text,
-                Does.Contain(battle.PlayerCommanderId.ToString()));
-            Assert.That(UguiHudBuilder.Find(root, UiElementNames.BattleCardCooldownText).GetComponentInChildren<TMPro.TextMeshProUGUI>(true).text,
-                Does.Contain("17"));
-            Assert.That(UguiHudBuilder.Find(root, UiElementNames.BattleMoralePlayer).GetComponentInChildren<TMPro.TextMeshProUGUI>(true).text,
-                Does.Contain(battle.Sides[0].Morale.ToString()));
-            Assert.That(UguiHudBuilder.Find(root, UiElementNames.BattleMoraleEnemy).GetComponentInChildren<TMPro.TextMeshProUGUI>(true).text,
-                Does.Contain(battle.Sides[1].Morale.ToString()));
-            Assert.That(UguiHudBuilder.Find(root, UiElementNames.BattleReinforcement).GetComponentInChildren<TMPro.TextMeshProUGUI>(true).text,
-                Does.Contain("증원"));
-        }
-
-        [Test]
-        public void Gameplay_Snapshot_IsDeterministic_ForRouteStageEncounterBattleSettlement()
+        public void Gameplay_Snapshot_IsDeterministic_ForRouteStageAndEncounter()
         {
             const int seed = 90421;
-            CampaignState baseState = CampaignApi.Start(seed, StationId.Yeongdeungpo, "ui-snap-campaign");
+            CampaignState baseState = CampaignApi.Start(seed, StationId.Yeongdeungpo, "ui-snap-campaign", TestCampaignDefinition.Instance.BattleRulesVersion, TestCampaignDefinition.Instance.PersistentPartyUnitId, TestCampaignDefinition.Instance.PersistentPartyMaxHp);
             GameplayUiSnapshot a = GameplayUiSnapshot.FromCampaign(baseState, battle: null);
             GameplayUiSnapshot b = GameplayUiSnapshot.FromCampaign(baseState.Clone(), battle: null);
             Assert.That(a.Fingerprint, Is.EqualTo(b.Fingerprint));
@@ -350,61 +284,18 @@ namespace Janseon.Foundation.Tests
                 GameplayUiSnapshot.FromCampaign(s.Clone(), null).Fingerprint,
                 Is.EqualTo(encounter.Fingerprint));
 
-            // Battle open from combat choice handoff on the realtime public surface.
-            object combat = CampaignApi.Apply(graph, s, ledger, new CampaignCommand
-            {
-                Id = new CommandId("c1"),
-                Kind = CampaignCommandKind.ChooseCombat,
-            });
-            Assert.That(combat, Is.TypeOf<BattleRequired>());
-            var battleCtx = ((BattleRequired)combat).Context;
-            BattleSimState battle = BattleSim.Open(BattleSetup.FromContext(battleCtx));
-            object attached = CampaignApi.AttachPendingBattle(s, ledger, battleCtx, new CommandId("a1"));
-            s = (CampaignState)attached;
-
-            GameplayUiSnapshot battleSnap = GameplayUiSnapshot.FromCampaign(s, battle);
-            Assert.That(battleSnap.VisiblePanel, Is.EqualTo(GameplayPanelId.Battle));
-            Assert.That(battleSnap.BattleCellOccupancy.Count, Is.GreaterThan(0));
-            Assert.That(
-                GameplayUiSnapshot.FromCampaign(s.Clone(), battle.Clone()).Fingerprint,
-                Is.EqualTo(battleSnap.Fingerprint));
-
-            // Settlement after a real terminal realtime result.
-            for (var i = 0; i < battle.Units.Length; i++)
-            {
-                battle.Units[i].State = "Active";
-                battle.Units[i].Hp = Math.Max(1, battle.Units[i].Hp);
-                battle.Units[i].MoveTicksLeft = 10000;
-                battle.Units[i].CooldownTicksLeft = 10000;
-            }
-            battle.Tick = BattleRules.MaxTicks - 1;
-            BattleSim.Step(battle, new Ledger());
-            Assert.That(battle.Outcome, Is.EqualTo(BattleOutcomeKind.Draw));
-            var book = new SettlementBook();
-            EncounterResult result = SettlementApi.FromRealtimeResult(BattleSim.Result(battle));
-            object settled = SettlementApi.Apply(s, ledger, book, result);
-            Assert.That(settled, Is.TypeOf<SettlementSuccess>(),
-                settled is SettlementRejection rejected ? rejected.Reason.ToString() : settled?.GetType().Name);
-            s = ((SettlementSuccess)settled).State;
-
-            GameplayUiSnapshot settlement = GameplayUiSnapshot.FromCampaign(s, battle: null);
-            Assert.That(settlement.VisiblePanel, Is.EqualTo(GameplayPanelId.Settlement));
-            Assert.That(settlement.NamedFlags.ContainsKey(UiElementNames.ReturnAction + ":visible"), Is.True);
-            Assert.That(
-                GameplayUiSnapshot.FromCampaign(s.Clone(), null).Fingerprint,
-                Is.EqualTo(settlement.Fingerprint));
         }
 
         [Test]
         public void Gameplay_ClockLabel_MatchesCoreTick_AfterInspectCancelAndMove()
         {
             RectTransform root = UguiHudBuilder.BuildGameplay(null);
-            var presenter = new GameplayPresenter();
+            var presenter = CreateGameplayPresenter();
             Assert.That(presenter.BindForTest(root), Is.True);
 
             var graph = RouteGraph.CreateYeongdeungpoSindorimGuro();
             var ledger = new Ledger();
-            CampaignState state = CampaignApi.Start(21, StationId.Yeongdeungpo, "clock-hud");
+            CampaignState state = CampaignApi.Start(21, StationId.Yeongdeungpo, "clock-hud", TestCampaignDefinition.Instance.BattleRulesVersion, TestCampaignDefinition.Instance.PersistentPartyUnitId, TestCampaignDefinition.Instance.PersistentPartyMaxHp);
             presenter.ApplySnapshot(GameplayUiSnapshot.FromCampaign(state, null));
 
             var clock = UguiHudBuilder.TextNamed(root, UiElementNames.ClockLabel);
@@ -436,10 +327,10 @@ namespace Janseon.Foundation.Tests
         public void Gameplay_Presenter_AppliesSnapshot_ToNamedCanvasControls()
         {
             RectTransform root = UguiHudBuilder.BuildGameplay(null);
-            var presenter = new GameplayPresenter();
+            var presenter = CreateGameplayPresenter();
             Assert.That(presenter.BindForTest(root), Is.True);
 
-            CampaignState state = CampaignApi.Start(11, StationId.Yeongdeungpo, "bind-campaign");
+            CampaignState state = CampaignApi.Start(11, StationId.Yeongdeungpo, "bind-campaign", TestCampaignDefinition.Instance.BattleRulesVersion, TestCampaignDefinition.Instance.PersistentPartyUnitId, TestCampaignDefinition.Instance.PersistentPartyMaxHp);
             GameplayUiSnapshot snap = GameplayUiSnapshot.FromCampaign(state, null);
             presenter.ApplySnapshot(snap);
 
@@ -453,10 +344,10 @@ namespace Janseon.Foundation.Tests
         public void Gameplay_Presenter_AppliesNamedVisibleFlags_RouteStageKeepsRailsAndStationLabels()
         {
             RectTransform root = UguiHudBuilder.BuildGameplay(null);
-            var presenter = new GameplayPresenter();
+            var presenter = CreateGameplayPresenter();
             Assert.That(presenter.BindForTest(root), Is.True);
 
-            CampaignState state = CampaignApi.Start(90421, StationId.Yeongdeungpo, "named-visible-route");
+            CampaignState state = CampaignApi.Start(90421, StationId.Yeongdeungpo, "named-visible-route", TestCampaignDefinition.Instance.BattleRulesVersion, TestCampaignDefinition.Instance.PersistentPartyUnitId, TestCampaignDefinition.Instance.PersistentPartyMaxHp);
             GameplayUiSnapshot snap = GameplayUiSnapshot.FromCampaign(state, null);
             Assert.That(snap.VisiblePanel, Is.EqualTo(GameplayPanelId.RouteStage));
             Assert.That(snap.NamedFlags.ContainsKey(UiElementNames.RouteRail + ":visible"), Is.True);
@@ -520,7 +411,7 @@ namespace Janseon.Foundation.Tests
         public void Gameplay_FocusOrder_MatchesDesignContract_ForEncounterActions()
         {
             RectTransform root = UguiHudBuilder.BuildGameplay(null);
-            var presenter = new GameplayPresenter();
+            var presenter = CreateGameplayPresenter();
             Assert.That(presenter.BindForTest(root), Is.True);
             CollectionAssert.AreEqual(UiElementNames.GameplayFocusOrder, presenter.FocusOrderNames);
         }
@@ -542,10 +433,10 @@ namespace Janseon.Foundation.Tests
         public void Gameplay_DonenessCopy_MissionChoicesWhyParty()
         {
             RectTransform root = UguiHudBuilder.BuildGameplay(null);
-            var presenter = new GameplayPresenter();
+            var presenter = CreateGameplayPresenter();
             Assert.That(presenter.BindForTest(root), Is.True);
 
-            CampaignState state = CampaignApi.Start(2026, StationId.Yeongdeungpo, "doneness-copy");
+            CampaignState state = CampaignApi.Start(2026, StationId.Yeongdeungpo, "doneness-copy", TestCampaignDefinition.Instance.BattleRulesVersion, TestCampaignDefinition.Instance.PersistentPartyUnitId, TestCampaignDefinition.Instance.PersistentPartyMaxHp);
             GameplayUiSnapshot snap = GameplayUiSnapshot.FromCampaign(state, null);
             presenter.ApplySnapshot(snap);
 
@@ -598,6 +489,40 @@ namespace Janseon.Foundation.Tests
             var scaler = canvas.GetComponent<UnityEngine.UI.CanvasScaler>();
             Assert.That(scaler, Is.Not.Null, "gameplay canvas must have a CanvasScaler");
             Assert.That(scaler.referenceResolution, Is.EqualTo(new Vector2(1280f, 720f)));
+        }
+
+        static GameplayPresenter CreateGameplayPresenter()
+        {
+            return new GameplayPresenter(
+                new TestStationCatalog(),
+                TestCampaignDefinition.Instance,
+                new TestContentFingerprint());
+        }
+
+        sealed class TestStationCatalog : IReadOnlyStationCatalog
+        {
+            public IReadOnlyList<StationCatalogItem> All { get; } = new List<StationCatalogItem>();
+
+            public bool TryGet(string stableId, out StationCatalogItem item)
+            {
+                item = null;
+                return false;
+            }
+
+            public bool TryGetByCoreId(StationId coreId, out StationCatalogItem item)
+            {
+                item = null;
+                return false;
+            }
+        }
+
+        sealed class TestContentFingerprint : IContentFingerprint
+        {
+            public string Sha256 { get; } = "0000000000000000000000000000000000000000000000000000000000000000";
+            public ContentVersionStamp Version { get; } = new ContentVersionStamp(
+                937,
+                "test-content-v937",
+                "test-fingerprint-v937");
         }
 
 

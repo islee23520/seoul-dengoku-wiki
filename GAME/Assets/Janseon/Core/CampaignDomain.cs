@@ -240,12 +240,22 @@ namespace Janseon.Core
             }
         }
 
-        /// <summary>Default opening party keyed by the stable realtime unit id.</summary>
-        public static UnitHpSnapshot DefaultParty()
+        /// <summary>Creates the opening party from authored campaign identity and HP data.</summary>
+        public static UnitHpSnapshot DefaultParty(string persistentPartyUnitId, int persistentPartyMaxHp)
         {
+            if (string.IsNullOrWhiteSpace(persistentPartyUnitId))
+            {
+                throw new ArgumentException("Persistent party unit id is required.", nameof(persistentPartyUnitId));
+            }
+
+            if (persistentPartyMaxHp <= 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(persistentPartyMaxHp));
+            }
+
             return new UnitHpSnapshot(new Dictionary<string, int>
             {
-                [Battle.Contracts.RealtimeBattleApi.PersistentAllyId] = Battle.Contracts.RealtimeBattleApi.PersistentMaxHp
+                [persistentPartyUnitId.Trim()] = persistentPartyMaxHp
             });
         }
 
@@ -260,12 +270,24 @@ namespace Janseon.Core
             return false;
         }
 
-        /// <summary>True when every stored HP is inside [minInclusive, maxInclusive].</summary>
-        public bool IsWithinRange(int minInclusive, int maxInclusive)
+        /// <summary>
+        /// Validates an exact participant HP payload against authored per-unit maximum HP.
+        /// Every authored participant must be present, no unknown participant may appear,
+        /// and each current HP must be within that participant's [0, max] range.
+        /// </summary>
+        public bool IsValidAgainst(UnitHpSnapshot maximumHp)
         {
-            foreach (var value in _hp.Values)
+            if (maximumHp == null || _hp.Count != maximumHp._hp.Count)
             {
-                if (value < minInclusive || value > maxInclusive)
+                return false;
+            }
+
+            foreach (var entry in _hp)
+            {
+                if (!maximumHp._hp.TryGetValue(entry.Key, out var maxHp)
+                    || maxHp <= 0
+                    || entry.Value < 0
+                    || entry.Value > maxHp)
                 {
                     return false;
                 }
@@ -325,12 +347,14 @@ namespace Janseon.Core
         readonly string[] unitIds;
         readonly int[] hp;
         readonly bool[] participating;
+        readonly int maxHp;
 
-        internal DeploymentState(string[] unitIds, int[] hp, bool[] participating)
+        internal DeploymentState(string[] unitIds, int[] hp, bool[] participating, int maxHp)
         {
             this.unitIds = (string[])unitIds.Clone();
             this.hp = (int[])hp.Clone();
             this.participating = (bool[])participating.Clone();
+            this.maxHp = maxHp;
         }
 
         public int RosterCount => unitIds.Length;
@@ -355,7 +379,7 @@ namespace Janseon.Core
         public string UnitIdAt(int index) => unitIds[index];
         public int HpAt(int index) => hp[index];
         public bool IsParticipatingAt(int index) => participating[index];
-        public bool IsWoundedAt(int index) => hp[index] < Battle.Contracts.RealtimeBattleApi.PersistentMaxHp;
+        public bool IsWoundedAt(int index) => hp[index] < maxHp;
 
         public bool IsParticipating(string unitId)
         {
@@ -366,7 +390,7 @@ namespace Janseon.Core
         public bool IsWounded(string unitId)
         {
             var index = IndexOf(unitId);
-            return index >= 0 && hp[index] < Battle.Contracts.RealtimeBattleApi.PersistentMaxHp;
+            return index >= 0 && hp[index] < maxHp;
         }
 
         internal int IndexOf(string unitId)
@@ -386,7 +410,7 @@ namespace Janseon.Core
         {
             var next = (bool[])participating.Clone();
             next[index] = value;
-            return new DeploymentState(unitIds, hp, next);
+            return new DeploymentState(unitIds, hp, next, maxHp);
         }
 
         public string Fingerprint()
@@ -415,11 +439,16 @@ namespace Janseon.Core
 
         public static string UnitId(int rosterIndex) => "ally-" + rosterIndex.ToString(CultureInfo.InvariantCulture);
 
-        public static DeploymentState Create(int rosterCount, UnitHpSnapshot partyHp)
+        public static DeploymentState Create(int rosterCount, UnitHpSnapshot partyHp, int maxHp)
         {
             if (rosterCount < 0)
             {
                 throw new ArgumentOutOfRangeException(nameof(rosterCount));
+            }
+
+            if (maxHp <= 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(maxHp));
             }
 
             var ids = new string[rosterCount];
@@ -431,21 +460,21 @@ namespace Janseon.Core
                 ids[i] = UnitId(i);
                 hp[i] = partyHp != null && partyHp.TryGet(ids[i], out var storedHp)
                     ? storedHp
-                    : Battle.Contracts.RealtimeBattleApi.PersistentMaxHp;
-                if (hp[i] < 0 || hp[i] > Battle.Contracts.RealtimeBattleApi.PersistentMaxHp)
+                    : maxHp;
+                if (hp[i] < 0 || hp[i] > maxHp)
                 {
                     throw new ArgumentOutOfRangeException(nameof(partyHp), "Deployment HP must be within battle HP bounds.");
                 }
 
                 // Wounded leftovers rest by default; healthy members fill up to the deploy cap.
-                participating[i] = hp[i] == Battle.Contracts.RealtimeBattleApi.PersistentMaxHp && selected < DeployCap;
+                participating[i] = hp[i] == maxHp && selected < DeployCap;
                 if (participating[i])
                 {
                     selected++;
                 }
             }
 
-            return new DeploymentState(ids, hp, participating);
+            return new DeploymentState(ids, hp, participating, maxHp);
         }
 
         public static object SetParticipation(
@@ -512,6 +541,8 @@ namespace Janseon.Core
         /// Units absent from the snapshot open at their realtime roster default.
         /// </summary>
         public readonly UnitHpSnapshot StartHp;
+        /// <summary>Authored maximum HP for every participant in <see cref="StartHp"/>.</summary>
+        public readonly UnitHpSnapshot ParticipantMaxHp;
 
         public BattleContext(
             string battleId,
@@ -525,6 +556,7 @@ namespace Janseon.Core
             string identityKey,
             string contextHash,
             UnitHpSnapshot startHp,
+            UnitHpSnapshot participantMaxHp,
             string seedIdentityHash,
             string seedIdentityBattleId)
         {
@@ -536,7 +568,12 @@ namespace Janseon.Core
             Reputation = reputation;
             RulesVersion = rulesVersion ?? string.Empty;
             IdentityKey = identityKey ?? string.Empty;
-            StartHp = startHp;
+            StartHp = startHp ?? throw new ArgumentNullException(nameof(startHp));
+            ParticipantMaxHp = participantMaxHp ?? throw new ArgumentNullException(nameof(participantMaxHp));
+            if (!StartHp.IsValidAgainst(ParticipantMaxHp))
+            {
+                throw new ArgumentException("Opening HP must exactly match authored participant limits.", nameof(startHp));
+            }
 
             DeriveIdentity(
                 CampaignId,
@@ -548,6 +585,7 @@ namespace Janseon.Core
                 RulesVersion,
                 IdentityKey,
                 StartHp,
+                ParticipantMaxHp,
                 out var expectedBattleId,
                 out var expectedContextHash,
                 out var expectedSeedIdentityHash,
@@ -573,8 +611,24 @@ namespace Janseon.Core
             int reputation,
             string rulesVersion,
             string identityKey,
-            UnitHpSnapshot startHp)
+            UnitHpSnapshot startHp,
+            UnitHpSnapshot participantMaxHp)
         {
+            if (startHp == null)
+            {
+                throw new ArgumentNullException(nameof(startHp));
+            }
+
+            if (participantMaxHp == null)
+            {
+                throw new ArgumentNullException(nameof(participantMaxHp));
+            }
+
+            if (!startHp.IsValidAgainst(participantMaxHp))
+            {
+                throw new ArgumentException("Opening HP must exactly match authored participant limits.", nameof(startHp));
+            }
+
             DeriveIdentity(
                 campaignId,
                 location,
@@ -585,6 +639,7 @@ namespace Janseon.Core
                 rulesVersion,
                 identityKey,
                 startHp,
+                participantMaxHp,
                 out var battleId,
                 out var contextHash,
                 out var seedIdentityHash,
@@ -602,6 +657,7 @@ namespace Janseon.Core
                 identityKey,
                 contextHash,
                 startHp,
+                participantMaxHp,
                 seedIdentityHash,
                 seedIdentityBattleId);
         }
@@ -618,6 +674,7 @@ namespace Janseon.Core
                 RulesVersion,
                 IdentityKey,
                 StartHp,
+                ParticipantMaxHp,
                 out var battleId,
                 out var contextHash,
                 out var seedIdentityHash,
@@ -639,6 +696,7 @@ namespace Janseon.Core
             string rulesVersion,
             string identityKey,
             UnitHpSnapshot startHp,
+            UnitHpSnapshot participantMaxHp,
             out string battleId,
             out string contextHash,
             out string seedIdentityHash,
@@ -657,7 +715,8 @@ namespace Janseon.Core
             seedIdentityHash = CoreApi.StableHashHex(material);
             seedIdentityBattleId = "battle-" + seedIdentityHash.Substring(0, 16);
             var contextMaterial = material
-                + ";hp=" + (startHp != null ? startHp.Fingerprint() : string.Empty);
+                + ";hp=" + (startHp != null ? startHp.Fingerprint() : string.Empty)
+                + ";maxHp=" + (participantMaxHp != null ? participantMaxHp.Fingerprint() : string.Empty);
             contextHash = CoreApi.StableHashHex(contextMaterial);
             battleId = "battle-" + contextHash.Substring(0, 16);
         }
@@ -689,6 +748,9 @@ namespace Janseon.Core
     public sealed class CampaignState
     {
         public string CampaignId;
+        public string BattleRulesVersion;
+        public string PersistentPartyUnitId;
+        public int PersistentPartyMaxHp;
         public CampaignStage Stage;
         public Tick Tick;
         public StationId Node;
@@ -716,6 +778,8 @@ namespace Janseon.Core
         /// result payload. Immutable snapshot type — Clone may share the reference safely.
         /// </summary>
         public UnitHpSnapshot PartyHp;
+        /// <summary>Authored per-unit maximum HP for the current battle participants.</summary>
+        public UnitHpSnapshot PartyMaxHp;
         /// <summary>Current roster participation decision; immutable and capped at three.</summary>
         public DeploymentState Deployment;
         /// <summary>ResultId last applied via SettlementApi (exact-once). Empty if none.</summary>
@@ -728,6 +792,9 @@ namespace Janseon.Core
             return new CampaignState
             {
                 CampaignId = CampaignId,
+                BattleRulesVersion = BattleRulesVersion,
+                PersistentPartyUnitId = PersistentPartyUnitId,
+                PersistentPartyMaxHp = PersistentPartyMaxHp,
                 Stage = Stage,
                 Tick = Tick,
                 Node = Node,
@@ -750,6 +817,7 @@ namespace Janseon.Core
                 PendingReputationDelta = PendingReputationDelta,
                 PendingBattle = PendingBattle,
                 PartyHp = PartyHp,
+                PartyMaxHp = PartyMaxHp,
                 Deployment = Deployment,
                 SettledResultId = SettledResultId,
                 LastReceiptHash = LastReceiptHash
@@ -765,30 +833,33 @@ namespace Janseon.Core
         public const int NegotiateReputationDelta = 3;
         public const int BypassResourceDelta = -2;
         public const int BypassReputationDelta = -1;
-        public const string RulesVersion = "poc-campaign-loop-v1";
         public const int ConfirmedMoveTicks = 1;
         public const int ConfirmedMoveResourceDelta = -2;
         public const int RestTicks = 2;
 
-        public static CampaignState Start(int seed, StationId homeBase, string campaignId)
+        public static CampaignState Start(int seed, StationId homeBase, string campaignId, string battleRulesVersion, string persistentPartyUnitId, int persistentPartyMaxHp)
         {
-            return CreateStart(seed, homeBase, campaignId, 100, StartingPreset.Wanderer, 1, false, false, string.Empty);
+            return CreateStart(seed, homeBase, campaignId, battleRulesVersion, persistentPartyUnitId, persistentPartyMaxHp, 100, StartingPreset.Wanderer, 1, false, false, string.Empty);
         }
 
         public static CampaignState StartNewGame(
             int seed,
             StationId homeBase,
             string campaignId,
-            StartingPreset preset)
+            StartingPreset preset,
+            string battleRulesVersion,
+            string persistentPartyUnitId,
+            int persistentPartyMaxHp)
         {
             switch (preset)
             {
                 case StartingPreset.Wanderer:
                     return CreateStart(
-                        seed, homeBase, campaignId, 30, preset, 3, false, false,
+                        seed, homeBase, campaignId, battleRulesVersion, persistentPartyUnitId, persistentPartyMaxHp,
+                        30, preset, 3, false, false,
                         "영등포 대합실에서 하룻밤 잠자리만 허락받았다.");
                 case StartingPreset.StationMaster:
-                    return CreateStart(seed, homeBase, campaignId, 40, preset, 3, true, true, string.Empty);
+                    return CreateStart(seed, homeBase, campaignId, battleRulesVersion, persistentPartyUnitId, persistentPartyMaxHp, 40, preset, 3, true, true, string.Empty);
                 default:
                     throw new ArgumentOutOfRangeException(nameof(preset));
             }
@@ -798,6 +869,9 @@ namespace Janseon.Core
             int seed,
             StationId homeBase,
             string campaignId,
+            string battleRulesVersion,
+            string persistentPartyUnitId,
+            int persistentPartyMaxHp,
             int resources,
             StartingPreset preset,
             int partyMemberCount,
@@ -805,9 +879,28 @@ namespace Janseon.Core
             bool hasBulletin,
             string overnightCopy)
         {
+            if (string.IsNullOrWhiteSpace(battleRulesVersion))
+            {
+                throw new ArgumentException("Battle rules version is required.", nameof(battleRulesVersion));
+            }
+
+            if (string.IsNullOrWhiteSpace(persistentPartyUnitId))
+            {
+                throw new ArgumentException("Persistent party unit id is required.", nameof(persistentPartyUnitId));
+            }
+
+            if (persistentPartyMaxHp <= 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(persistentPartyMaxHp));
+            }
+
+            var partyHp = UnitHpSnapshot.DefaultParty(persistentPartyUnitId, persistentPartyMaxHp);
             return new CampaignState
             {
                 CampaignId = campaignId ?? "campaign-0",
+                BattleRulesVersion = battleRulesVersion.Trim(),
+                PersistentPartyUnitId = persistentPartyUnitId.Trim(),
+                PersistentPartyMaxHp = persistentPartyMaxHp,
                 Stage = CampaignStage.BasePreparation,
                 Tick = new Tick(0),
                 Node = homeBase,
@@ -829,8 +922,9 @@ namespace Janseon.Core
                 PendingResourceDelta = 0,
                 PendingReputationDelta = 0,
                 PendingBattle = null,
-                PartyHp = UnitHpSnapshot.DefaultParty(),
-                Deployment = DeploymentApi.Create(partyMemberCount, UnitHpSnapshot.DefaultParty()),
+                PartyHp = partyHp,
+                PartyMaxHp = partyHp,
+                Deployment = DeploymentApi.Create(partyMemberCount, partyHp, persistentPartyMaxHp),
                 SettledResultId = string.Empty,
                 LastReceiptHash = string.Empty
             };
@@ -847,7 +941,7 @@ namespace Janseon.Core
                 throw new ArgumentNullException(nameof(state));
             }
 
-            DeploymentState current = state.Deployment ?? DeploymentApi.Create(state.PartyMemberCount, state.PartyHp);
+            DeploymentState current = state.Deployment ?? DeploymentApi.Create(state.PartyMemberCount, state.PartyHp, state.PersistentPartyMaxHp);
             object changed = DeploymentApi.SetParticipation(
                 current,
                 unitId,
@@ -1120,10 +1214,11 @@ namespace Janseon.Core
                 state.Tick,
                 state.Resources,
                 state.Reputation,
-                Battle.Contracts.BattleRules.RulesVersion,
+                state.BattleRulesVersion,
                 cmd.Id.Value,
-                // Seed opening HP from the canonical campaign store (leftover HP roundtrip).
-                state.PartyHp);
+                // Seed opening HP and authored participant limits from campaign-owned data.
+                state.PartyHp,
+                state.PartyMaxHp);
             return new BattleRequired(context);
         }
 
@@ -1235,6 +1330,9 @@ namespace Janseon.Core
             else
             {
                 sb.Append("id=").Append(state.CampaignId ?? string.Empty);
+                sb.Append(";battleRules=").Append(state.BattleRulesVersion ?? string.Empty);
+                sb.Append(";persistentUnit=").Append(state.PersistentPartyUnitId ?? string.Empty);
+                sb.Append(";persistentMaxHp=").Append(state.PersistentPartyMaxHp.ToString(CultureInfo.InvariantCulture));
                 sb.Append(";stage=").Append(((int)state.Stage).ToString(CultureInfo.InvariantCulture));
                 sb.Append(";tick=").Append(state.Tick.Value.ToString(CultureInfo.InvariantCulture));
                 sb.Append(";node=").Append(state.Node.Value ?? string.Empty);
@@ -1248,6 +1346,7 @@ namespace Janseon.Core
                 sb.Append(";rep=").Append(state.Reputation.ToString(CultureInfo.InvariantCulture));
                 sb.Append(";seed=").Append(state.Seed.ToString(CultureInfo.InvariantCulture));
                 sb.Append(";hp=").Append(state.PartyHp != null ? state.PartyHp.Fingerprint() : string.Empty);
+                sb.Append(";maxHp=").Append(state.PartyMaxHp != null ? state.PartyMaxHp.Fingerprint() : string.Empty);
                 sb.Append(";deploy=").Append(state.Deployment != null ? state.Deployment.Fingerprint() : string.Empty);
                 sb.Append(";choice=").Append(((int)state.Choice).ToString(CultureInfo.InvariantCulture));
                 sb.Append(";locked=").Append(state.ChoiceLocked ? "1" : "0");

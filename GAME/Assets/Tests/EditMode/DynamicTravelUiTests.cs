@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using Janseon.Core;
 using Janseon.Foundation.Composition;
 using Janseon.Foundation.UI;
+using Janseon.Tests.EditMode.Fixtures;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,8 +15,7 @@ namespace Janseon.Tests.EditMode
         static CampaignState DepartedFromYeongdeungpo(out RouteGraph graph)
         {
             graph = RouteGraph.CreateSeoul();
-            var state = CampaignApi.StartNewGame(
-                1234, StationId.Yeongdeungpo, "dynamic-travel", StartingPreset.Wanderer);
+            var state = CampaignApi.StartNewGame(1234, StationId.Yeongdeungpo, "dynamic-travel", StartingPreset.Wanderer, TestCampaignDefinition.Instance.BattleRulesVersion, TestCampaignDefinition.Instance.PersistentPartyUnitId, TestCampaignDefinition.Instance.PersistentPartyMaxHp);
             var ledger = new Ledger();
             state = (CampaignState)CampaignApi.Apply(
                 graph,
@@ -88,8 +88,7 @@ namespace Janseon.Tests.EditMode
         public void Presenter_OutsideTravelStage_DynamicNeighborButtonsHidden()
         {
             var graph = RouteGraph.CreateSeoul();
-            var state = CampaignApi.StartNewGame(
-                1234, StationId.Yeongdeungpo, "dynamic-travel-idle", StartingPreset.Wanderer);
+            var state = CampaignApi.StartNewGame(1234, StationId.Yeongdeungpo, "dynamic-travel-idle", StartingPreset.Wanderer, TestCampaignDefinition.Instance.BattleRulesVersion, TestCampaignDefinition.Instance.PersistentPartyUnitId, TestCampaignDefinition.Instance.PersistentPartyMaxHp);
             var snap = GameplayUiSnapshot.FromCampaign(state, null, false, null, graph);
             Assert.IsFalse(snap.ShowTravelActions);
 

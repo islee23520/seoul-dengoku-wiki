@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="3" result="Passed" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-20 14:30:32Z" end-time="2026-09-20 14:30:34Z" duration="1.7979191">
+  <test-suite type="TestSuite" id="1034" name="서울:전국" fullname="서울:전국" runstate="Runnable" testcasecount="15" result="Passed" start-time="2026-09-20 14:30:32Z" end-time="2026-09-20 14:30:34Z" duration="1.797919" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1027" name="Janseon.Foundation.PlayModeTests.dll" fullname="/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave3-task32/GAME/Library/ScriptAssemblies/Janseon.Foundation.PlayModeTests.dll" runstate="Runnable" testcasecount="15" result="Passed" start-time="2026-09-20 14:30:32Z" end-time="2026-09-20 14:30:34Z" duration="1.793246" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="54900" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1028" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="15" result="Passed" start-time="2026-09-20 14:30:32Z" end-time="2026-09-20 14:30:34Z" duration="1.792562" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1029" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="15" result="Passed" start-time="2026-09-20 14:30:32Z" end-time="2026-09-20 14:30:34Z" duration="1.792129" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1030" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="15" result="Passed" start-time="2026-09-20 14:30:32Z" end-time="2026-09-20 14:30:34Z" duration="1.791829" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1016" name="Full3dBattleVisualTests" fullname="Janseon.Foundation.Tests.Full3dBattleVisualTests" classname="Janseon.Foundation.Tests.Full3dBattleVisualTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-20 14:30:32Z" end-time="2026-09-20 14:30:34Z" duration="1.791043" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-suite type="ParameterizedMethod" id="1022" name="CatalogPrefabsRenderInGameView1280x720" fullname="Janseon.Foundation.Tests.Full3dBattleVisualTests.CatalogPrefabsRenderInGameView1280x720" classname="Janseon.Foundation.Tests.Full3dBattleVisualTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-09-20 14:30:32Z" end-time="2026-09-20 14:30:34Z" duration="1.775486" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                </properties>
+                <test-case id="1021" name="CatalogPrefabsRenderInGameView1280x720(TemporaryBattleVisualCatalog (Janseon.Foundation.Battle.TemporaryBattleVisualCatalog))" fullname="Janseon.Foundation.Tests.Full3dBattleVisualTests.CatalogPrefabsRenderInGameView1280x720(TemporaryBattleVisualCatalog (Janseon.Foundation.Battle.TemporaryBattleVisualCatalog))" methodname="CatalogPrefabsRenderInGameView1280x720" classname="Janseon.Foundation.Tests.Full3dBattleVisualTests" runstate="Runnable" seed="985286594" result="Passed" start-time="2026-09-20 14:30:32Z" end-time="2026-09-20 14:30:34Z" duration="1.770213" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1020" name="OddlandAndSpineAreNotBattleCombatants" fullname="Janseon.Foundation.Tests.Full3dBattleVisualTests.OddlandAndSpineAreNotBattleCombatants" classname="Janseon.Foundation.Tests.Full3dBattleVisualTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-09-20 14:30:34Z" end-time="2026-09-20 14:30:34Z" duration="0.007762" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1019" name="OddlandAndSpineAreNotBattleCombatants(TemporaryBattleVisualCatalog (Janseon.Foundation.Battle.TemporaryBattleVisualCatalog))" fullname="Janseon.Foundation.Tests.Full3dBattleVisualTests.OddlandAndSpineAreNotBattleCombatants(TemporaryBattleVisualCatalog (Janseon.Foundation.Battle.TemporaryBattleVisualCatalog))" methodname="OddlandAndSpineAreNotBattleCombatants" classname="Janseon.Foundation.Tests.Full3dBattleVisualTests" runstate="Runnable" seed="491730959" result="Passed" start-time="2026-09-20 14:30:34Z" end-time="2026-09-20 14:30:34Z" duration="0.003696" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1018" name="TemporaryHeroAndSoldierMeshesAreDistinct" fullname="Janseon.Foundation.Tests.Full3dBattleVisualTests.TemporaryHeroAndSoldierMeshesAreDistinct" classname="Janseon.Foundation.Tests.Full3dBattleVisualTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-09-20 14:30:34Z" end-time="2026-09-20 14:30:34Z" duration="0.006080" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1017" name="TemporaryHeroAndSoldierMeshesAreDistinct(TemporaryBattleVisualCatalog (Janseon.Foundation.Battle.TemporaryBattleVisualCatalog))" fullname="Janseon.Foundation.Tests.Full3dBattleVisualTests.TemporaryHeroAndSoldierMeshesAreDistinct(TemporaryBattleVisualCatalog (Janseon.Foundation.Battle.TemporaryBattleVisualCatalog))" methodname="TemporaryHeroAndSoldierMeshesAreDistinct" classname="Janseon.Foundation.Tests.Full3dBattleVisualTests" runstate="Runnable" seed="1045708762" result="Passed" start-time="2026-09-20 14:30:34Z" end-time="2026-09-20 14:30:34Z" duration="0.005452" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[Saving results to: /Users/ilseoblee/Library/Application Support/Janseon Studio/서울_전국/TestResults.xml
+]]></output>
+                </test-case>
+              </test-suite>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

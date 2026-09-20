@@ -35,7 +35,6 @@ namespace Janseon.Foundation.UI
         public const string BattleHudTitle = "battle-hud-title";
         public const string LocalReviewProvenanceBanner = "local-review-provenance-banner";
         public const string BattleDock = "battle-dock";
-        public const string BattleGrid = "battle-grid";
         public const string BattleHp = "battle-hp";
         public const string BattleHpMeter = "battle-hp-meter";
         public const string BattleHpFill = "battle-hp-fill";
@@ -44,26 +43,6 @@ namespace Janseon.Foundation.UI
         public const string BattleMoraleEnemy = "battle-morale-enemy";
         public const string BattleReinforcementForecast = "battle-reinforcement-forecast";
         public const string BattleReinforcement = "battle-reinforcement";
-        public const string BattleCardTray = "battle-card-tray";
-        public const string BattleCardOwner = "battle-card-owner";
-        public const string BattleCardOwnerPortrait = "battle-card-owner-portrait";
-        public const string BattleStrongholdSwitch = "battle-card-stronghold-switch";
-        public const string BattleZoomOut = "battle-zoom-out";
-        public const string BattleZoomValue = "battle-zoom-value";
-        public const string BattleZoomIn = "battle-zoom-in";
-        public const string BattleZoomReset = "battle-zoom-reset";
-        public const string DataContractDisclosure = "data-contract-disclosure";
-        public const string DataContractBody = "data-contract-body";
-        public const string BattleCardCooldown = "battle-card-cooldown";
-        public const string BattleCardCooldownMask = "battle-card-cooldown-mask";
-        public const string BattleCardCooldownText = "battle-card-cooldown-text";
-        public const string BattleCardTargetRing = "battle-card-target-ring";
-        public const string BattleCardDirectionNorth = "battle-card-direction-n";
-        public const string BattleCardDirectionEast = "battle-card-direction-e";
-        public const string BattleCardDirectionSouth = "battle-card-direction-s";
-        public const string BattleCardDirectionWest = "battle-card-direction-w";
-        public const string BattleCardCancel = "battle-card-cancel";
-        public const string BattleCardCancelPath = "battle-card-cancel-path";
         public const string BattleLog = "battle-log";
 
         public const string SettlementPanel = "settlement-panel";
@@ -77,51 +56,6 @@ namespace Janseon.Foundation.UI
         public const string ActionSettle = "action-settle";
         public const string BattlePlayPause = "battle-play-pause";
         public const string BattleReset = "battle-reset";
-        public const string CardGeneralRecharge = "card-general-recharge";
-        public const string CardGeneralUse = "battle-card-encourage-morale";
-        public const string FormationSwapFront = "formation-swap-front";
-        public const string FormationSelection = "formation-selection";
-        public const string EditFormation = "edit-formation";
-        public const string FormationEdit = "formation-edit";
-        public const string FormationEditConfirm = "formation-edit-confirm";
-        public const string FormationEditCancel = "formation-edit-cancel";
-        public const string FormationEditReedit = "formation-edit-reedit";
-        public const string FormationEditReset = "formation-edit-reset";
-        public const string FormationEditSelectedName = "formation-edit-selected-name";
-        public const string FormationEditSelectedRole = "formation-edit-selected-role";
-        public const string FormationEditSelectedCallsign = "formation-edit-selected-callsign";
-        public const string FormationEditFacingN = "formation-edit-facing-n";
-        public const string FormationEditFacingE = "formation-edit-facing-e";
-        public const string FormationEditFacingS = "formation-edit-facing-s";
-        public const string FormationEditFacingW = "formation-edit-facing-w";
-
-        public static string FormationEditUnit(string unitId) => "formation-edit-unit-" + unitId;
-
-        public static string FormationEditSlot(string slotId) => "formation-edit-slot-" + slotId;
-
-        public static readonly string[] FormationEditUnitIds =
-        {
-            "ally-guard-1",
-            "ally-guard-2",
-            "ally-assault-1",
-            "ally-assault-2",
-            "ally-archer-1",
-            "ally-archer-2",
-        };
-
-        public static readonly string[] FormationEditSlotIds =
-        {
-            "front-left",
-            "front-center",
-            "front-right",
-            "middle-left",
-            "middle-center",
-            "middle-right",
-            "rear-left",
-            "rear-center",
-            "rear-right",
-        };
-        public const string MobilityRegroup = "battle-card-mobility-regroup";
         public const string MissionConsole = "mission-console";
         public const string HubOvernightCopy = "hub-overnight-copy";
         public const string HubBulletinPanel = "hub-bulletin-panel";
@@ -149,25 +83,14 @@ namespace Janseon.Foundation.UI
         public const string DataContentVersion = "data-content-version";
         public const string DataContentCounts = "data-content-counts";
         public const string DataContentFingerprint = "data-content-fingerprint";
+        public const string DataContractDisclosure = "data-contract-disclosure";
+        public const string DataContractBody = "data-contract-body";
 
         public static string DeployToggle(int rosterIndex) => "deploy-toggle-" + rosterIndex;
 
-        public static string BattleCard(string cardId) => "battle-card-" + cardId;
-
-        // Shared card offering selectors (bf615e4 accidentally moved this private and left
-        // GameplayPresenter referencing it; centralized here again).
-        public static readonly string[] CharacterOfferingIds =
-        {
-            "guard-shieldwall",
-            "encourage-morale",
-            "pincer-focus",
-            "mobility-regroup",
-        };
 
         public const string Res720Class = "jk-res-720";
         public const string Res1080Class = "jk-res-1080";
-
-        public static string BattleCell(int x, int y) => "battle-cell-" + x + "-" + y;
 
         public static readonly string[] MainTitleRequired =
         {
@@ -207,7 +130,6 @@ namespace Janseon.Foundation.UI
             ChoiceBypass,
             ChoiceCombat,
             BattleHud,
-            BattleGrid,
             BattleHp,
             BattleHpMeter,
             BattleHpFill,
@@ -216,66 +138,13 @@ namespace Janseon.Foundation.UI
             BattleMoraleEnemy,
             BattleReinforcementForecast,
             BattleReinforcement,
-            BattleCardTray,
-            BattleCardOwner,
-            BattleCardOwnerPortrait,
             BattleHudTitle,
             BattleDock,
-            BattleStrongholdSwitch,
-            BattleZoomOut,
-            BattleZoomValue,
-            BattleZoomIn,
-            BattleZoomReset,
             DataContractDisclosure,
             DataContractBody,
-            "battle-card-guard-shieldwall",
-            "battle-card-encourage-morale",
-            "battle-card-pincer-focus",
-            "battle-card-mobility-regroup",
-            BattleCardCooldown,
-            BattleCardCooldownMask,
-            BattleCardCooldownText,
-            BattleCardTargetRing,
-            BattleCardDirectionNorth,
-            BattleCardDirectionEast,
-            BattleCardDirectionSouth,
-            BattleCardDirectionWest,
-            BattleCardCancel,
-            BattleCardCancelPath,
             BattleLog,
             BattlePlayPause,
             BattleReset,
-            CardGeneralRecharge,
-            FormationSwapFront,
-            FormationSelection,
-            EditFormation,
-            FormationEdit,
-            FormationEditConfirm,
-            FormationEditCancel,
-            FormationEditReedit,
-            FormationEditReset,
-            FormationEditSelectedName,
-            FormationEditSelectedRole,
-            FormationEditSelectedCallsign,
-            FormationEditUnit("ally-guard-1"),
-            FormationEditUnit("ally-guard-2"),
-            FormationEditUnit("ally-assault-1"),
-            FormationEditUnit("ally-assault-2"),
-            FormationEditUnit("ally-archer-1"),
-            FormationEditUnit("ally-archer-2"),
-            FormationEditSlot("front-left"),
-            FormationEditSlot("front-center"),
-            FormationEditSlot("front-right"),
-            FormationEditSlot("middle-left"),
-            FormationEditSlot("middle-center"),
-            FormationEditSlot("middle-right"),
-            FormationEditSlot("rear-left"),
-            FormationEditSlot("rear-center"),
-            FormationEditSlot("rear-right"),
-            FormationEditFacingN,
-            FormationEditFacingE,
-            FormationEditFacingS,
-            FormationEditFacingW,
             SettlementPanel,
             SettlementOutcome,
             ActionSettle,
@@ -315,12 +184,6 @@ namespace Janseon.Foundation.UI
             ChoiceNegotiate,
             ChoiceBypass,
             ChoiceCombat,
-            FormationSwapFront,
-            EditFormation,
-            BattleCard("guard-shieldwall"),
-            CardGeneralUse,
-            BattleCard("pincer-focus"),
-            MobilityRegroup,
             BattlePlayPause,
             BattleReset,
             ActionSettle,

@@ -415,13 +415,10 @@ namespace Janseon.Core
             // Result payload HP (Strategy-Battle-Roundtrip 부상 왕복): combat results must carry
             // the leftover party HP snapshot, and a present snapshot outside 0..DefaultMaxHp is
             // corrupt input — rejected, never clamped or silently defaulted.
-            if (result.UnitHp != null && !result.UnitHp.IsWithinRange(0, Battle.Contracts.RealtimeBattleApi.PersistentMaxHp))
-            {
-                return new SettlementRejection(SettlementRejectReason.InvalidResult, state.Stage, result.ResultId);
-            }
-
             if (isCombat
-                && (result.UnitHp == null || !result.UnitHp.TryGet(Battle.Contracts.RealtimeBattleApi.PersistentAllyId, out _)))
+                && (result.UnitHp == null
+                    || state.PendingBattle.ParticipantMaxHp == null
+                    || !result.UnitHp.IsValidAgainst(state.PendingBattle.ParticipantMaxHp)))
             {
                 return new SettlementRejection(SettlementRejectReason.InvalidResult, state.Stage, result.ResultId);
             }
@@ -463,7 +460,7 @@ namespace Janseon.Core
             next.PartyHp = result.UnitHp != null ? result.UnitHp : state.PartyHp;
             // A newly wounded leftover must return to the deploy panel as resting. Rebuild the
             // default decision from canonical HP; an explicit wounded override is per-decision.
-            next.Deployment = DeploymentApi.Create(next.PartyMemberCount, next.PartyHp);
+            next.Deployment = DeploymentApi.Create(next.PartyMemberCount, next.PartyHp, next.PersistentPartyMaxHp);
 
             var cmd = new CampaignCommand
             {
@@ -558,7 +555,7 @@ namespace Janseon.Core
         /// <summary>
         /// Build a combat EncounterResult from a terminal battle state. Does not mutate battle.
         /// </summary>
-        public static EncounterResult FromRealtimeResult(Janseon.Core.Battle.Contracts.BattleResult battle)
+        public static EncounterResult FromBattleResult(Janseon.Core.Battle.Contracts.BattleResult battle)
         {
             if (battle == null) throw new ArgumentNullException(nameof(battle));
             if (battle.Outcome == Janseon.Core.Battle.Contracts.BattleOutcomeKind.Ongoing)

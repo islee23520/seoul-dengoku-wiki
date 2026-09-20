@@ -5,6 +5,7 @@ using Janseon.Data.Fingerprints;
 using Janseon.Data.Repositories;
 using Janseon.Data.Validation;
 using Janseon.Foundation.Battle;
+using Janseon.Foundation.Presentation;
 using Janseon.Foundation.UI;
 using Janseon.Foundation.Art;
 using UnityEngine;
@@ -23,18 +24,21 @@ namespace Janseon.Foundation.Composition
         {
             if (runtimeSlots == null) throw new System.InvalidOperationException("Foundation runtime slot catalog missing");
             if (gameDataCatalog == null) throw new InvalidOperationException("Foundation game data catalog missing");
-            GameDataCatalogIndex index = GameDataCatalogIndexBuilder.Build(gameDataCatalog);
-            builder.RegisterInstance(index);
-            builder.Register<CardCatalogRepository>(Lifetime.Singleton).As<IReadOnlyCardCatalog>();
-            builder.Register<UnitRoleCatalogRepository>(Lifetime.Singleton).As<IReadOnlyUnitRoleCatalog>();
-            builder.Register<FormationCatalogRepository>(Lifetime.Singleton).As<IReadOnlyFormationCatalog>();
+            if (strategyMapAssets == null) throw new InvalidOperationException("Foundation strategy map assets missing");
+            builder.RegisterInstance(gameDataCatalog);
+            builder.Register<GameDataCatalogIndexProvider>(Lifetime.Singleton).AsSelf();
+            builder.Register(
+                resolver => resolver.Resolve<GameDataCatalogIndexProvider>().Index,
+                Lifetime.Singleton);
             builder.Register<StationCatalogRepository>(Lifetime.Singleton).As<IReadOnlyStationCatalog>();
+            builder.Register<CampaignDefinitionRepository>(Lifetime.Singleton).As<IReadOnlyCampaignDefinition>();
             builder.Register<ContentFingerprintProvider>(Lifetime.Singleton).As<IContentFingerprint>();
             builder.RegisterInstance<IRuntimeSlotCatalog>(runtimeSlots);
-            if (strategyMapAssets != null)
-            {
-                builder.RegisterInstance(strategyMapAssets);
-            }
+            builder.Register(
+                _ => new StrategyMapAssetRepository(strategyMapAssets),
+                Lifetime.Singleton)
+                .As<IReadOnlyStrategyMapAssetCatalog>();
+builder.RegisterComponentInHierarchy<StrategyMapScreen>();
             builder.Register<UiScreenDocumentLease>(Lifetime.Scoped).AsSelf();
             builder.Register<GameplayPresenter>(Lifetime.Scoped).AsSelf();
             builder.RegisterComponentInHierarchy<GameplayUiHost>();

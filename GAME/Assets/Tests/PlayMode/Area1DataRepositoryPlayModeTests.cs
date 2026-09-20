@@ -1,90 +1,102 @@
 using System;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using Janseon.Core;
-using Janseon.Core.Battle.Contracts;
 using Janseon.Core.Data;
+using Janseon.Data.Authoring;
+using Janseon.Data.Repositories;
 using Janseon.Foundation.AppFlow;
 using Janseon.Foundation.Composition;
 using Janseon.Foundation.UI;
-using Janseon.Data.Fingerprints;
 using NUnit.Framework;
-using TMPro;
 using UnityEngine;
-using VContainer;
 using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
 using UnityEngine.UI;
+using VContainer;
+using VContainer.Unity;
 
 namespace Janseon.Foundation.Tests
 {
     public sealed class Area1DataRepositoryPlayModeTests
     {
         [UnityTest]
-        public System.Collections.IEnumerator ProductionFoundation_RendersRepositoryBackedContentReceipt()
+        public System.Collections.IEnumerator BootstrapToFoundation_ResolvesSerializedCatalogRepositories()
         {
-            return Run().AsCoroutine();
+            return RunBootstrapToFoundation().AsCoroutine();
         }
 
-        async Task Run()
+        [Test]
+        public void ScopeWithoutIndexProviderRegistration_FailsExplicitly()
         {
-            Task mainTitleLoaded = WaitForSceneAsync(FoundationScenes.MainTitle, TimeSpan.FromSeconds(15));
+            GameDataCatalogAsset fixture = ScriptableObject.CreateInstance<GameDataCatalogAsset>();
+            LifetimeScope scope = LifetimeScope.Create(builder => builder.RegisterInstance(fixture));
+
+            try
+            {
+                Assert.Throws<VContainerException>(
+                    () => scope.Container.Resolve<GameDataCatalogIndexProvider>());
+            }
+            finally
+            {
+                scope.Dispose();
+                UnityEngine.Object.DestroyImmediate(fixture);
+            }
+        }
+
+        static async Task RunBootstrapToFoundation()
+        {
+            Task mainTitleLoaded = WaitForSceneLoadedAsync(FoundationScenes.MainTitle, TimeSpan.FromSeconds(15));
             await AwaitAsyncOperation(SceneManager.LoadSceneAsync(FoundationScenes.Bootstrap, LoadSceneMode.Single));
             await mainTitleLoaded;
 
             MainTitleUiHost titleHost = UnityEngine.Object.FindAnyObjectByType<MainTitleUiHost>();
             Assert.That(titleHost, Is.Not.Null);
             await titleHost.Ready;
-            AppLifetimeScope appScope = UnityEngine.Object.FindObjectsByType<AppLifetimeScope>(FindObjectsSortMode.None).Single();
+
+            AppLifetimeScope appScope = UnityEngine.Object
+                .FindObjectsByType<AppLifetimeScope>(FindObjectsSortMode.None)
+                .Single();
             ApplicationFlowCoordinator coordinator = appScope.Container.Resolve<ApplicationFlowCoordinator>();
             await coordinator.CurrentTransition;
 
-            Task foundationLoaded = WaitForSceneAsync(FoundationScenes.Foundation, TimeSpan.FromSeconds(15));
+            Task foundationLoaded = WaitForSceneLoadedAsync(FoundationScenes.Foundation, TimeSpan.FromSeconds(15));
             Task titleUnloaded = WaitForSceneUnloadedAsync(FoundationScenes.MainTitle, TimeSpan.FromSeconds(15));
             Button start = UguiHudBuilder.ButtonNamed(titleHost.CanvasRoot, UiElementNames.MainTitleStart);
             Assert.That(start, Is.Not.Null);
             start.onClick.Invoke();
+            Task<TransitionOutcome> transition = coordinator.CurrentTransition;
+            TransitionOutcome outcome = await AwaitTaskResult(transition, TimeSpan.FromSeconds(15), "MainTitle-to-Foundation transition");
+            Assert.That(outcome.Status, Is.EqualTo(TransitionStatus.Completed), "MainTitle-to-Foundation transition must complete");
             await foundationLoaded;
             await titleUnloaded;
 
-            GameplayUiHost host = UnityEngine.Object.FindAnyObjectByType<GameplayUiHost>();
-            Assert.That(host, Is.Not.Null);
-            await host.Ready;
-            await host.CoreLoopReady;
-            Assert.That(SceneManager.GetSceneByPath(FoundationScenes.Foundation).isLoaded, Is.True);
+            GameplayUiHost gameplayHost = UnityEngine.Object.FindAnyObjectByType<GameplayUiHost>();
+            Assert.That(gameplayHost, Is.Not.Null);
+            await gameplayHost.Ready;
+            await gameplayHost.CoreLoopReady;
 
             FoundationLifetimeScope scope = UnityEngine.Object.FindAnyObjectByType<FoundationLifetimeScope>();
             Assert.That(scope, Is.Not.Null);
-            IReadOnlyCardCatalog cards = scope.Container.Resolve<IReadOnlyCardCatalog>();
-            IReadOnlyUnitRoleCatalog roles = scope.Container.Resolve<IReadOnlyUnitRoleCatalog>();
-            IReadOnlyFormationCatalog formations = scope.Container.Resolve<IReadOnlyFormationCatalog>();
-            IReadOnlyStationCatalog stations = scope.Container.Resolve<IReadOnlyStationCatalog>();
-            IContentFingerprint fingerprint = scope.Container.Resolve<IContentFingerprint>();
 
-            Assert.That(fingerprint.Version.ContentVersion, Is.EqualTo("area1-static-content-v1"));
-            Assert.That(cards.All.Count, Is.EqualTo(6));
-            Assert.That(roles.All.Count, Is.EqualTo(3));
-            Assert.That(formations.All.Count, Is.EqualTo(1));
-            Assert.That(stations.All.Count, Is.EqualTo(3));
-            Assert.That(BattleRules.RulesVersion, Is.EqualTo("rtfc-owner-cards-v2"));
-            Assert.That(fingerprint.Sha256, Is.EqualTo(scope.Container.Resolve<IContentFingerprint>().Sha256));
+            IReadOnlyStationCatalog stations = AssertSingleton<IReadOnlyStationCatalog>(scope);
+            IContentFingerprint fingerprint = AssertSingleton<IContentFingerprint>(scope);
+            GameDataCatalogIndexProvider indexProvider = AssertSingleton<GameDataCatalogIndexProvider>(scope);
 
-            AssertReceiptText(host.CanvasRoot, UiElementNames.DataContentVersion);
-            AssertReceiptText(host.CanvasRoot, UiElementNames.DataContentCounts);
-            AssertReceiptText(host.CanvasRoot, UiElementNames.DataContentFingerprint);
-            Assert.That(UguiHudBuilder.Find(host.CanvasRoot, UiElementNames.DataContractPanel), Is.Not.Null);
-            TMP_Text fingerprintText = UguiHudBuilder.Find(host.CanvasRoot, UiElementNames.DataContentFingerprint)
-                .GetComponent<TMP_Text>();
-            Assert.That(fingerprintText.text, Does.Contain(fingerprint.Sha256.Substring(0, 12)));
+            Assert.That(stations.All, Is.Not.Empty);
+            Assert.That(indexProvider.Index, Is.Not.Null);
+            Assert.That(fingerprint.Sha256, Does.Match("^[0-9a-f]{64}$"));
+            Assert.That(
+                scope.Container.Resolve<IContentFingerprint>().Sha256,
+                Is.SameAs(fingerprint.Sha256));
         }
 
-        static void AssertReceiptText(RectTransform root, string name)
+        static T AssertSingleton<T>(FoundationLifetimeScope scope)
         {
-            Transform element = UguiHudBuilder.Find(root, name);
-            Assert.That(element, Is.Not.Null, name);
-            TMP_Text text = element.GetComponent<TMP_Text>();
-            Assert.That(text, Is.Not.Null, name + " must use TMP");
-            Assert.That(text.text, Is.Not.Empty, name);
+            T first = scope.Container.Resolve<T>();
+            T second = scope.Container.Resolve<T>();
+            Assert.That(second, Is.SameAs(first));
+            return first;
         }
 
         static Task AwaitAsyncOperation(AsyncOperation operation)
@@ -94,7 +106,7 @@ namespace Janseon.Foundation.Tests
             return completion.Task;
         }
 
-        static async Task WaitForSceneAsync(string path, TimeSpan timeout)
+        static async Task WaitForSceneLoadedAsync(string path, TimeSpan timeout)
         {
             var signal = new TaskCompletionSource<bool>(TaskCreationOptions.RunContinuationsAsynchronously);
             void OnLoaded(Scene scene, LoadSceneMode _) { if (scene.path == path) signal.TrySetResult(true); }
@@ -102,9 +114,14 @@ namespace Janseon.Foundation.Tests
             try
             {
                 if (SceneManager.GetSceneByPath(path).isLoaded) signal.TrySetResult(true);
-                Assert.That(await Task.WhenAny(signal.Task, Task.Delay(timeout)), Is.SameAs(signal.Task));
+                Task completed = await Task.WhenAny(signal.Task, Task.Delay(timeout));
+                Assert.That(completed, Is.SameAs(signal.Task), "Timed out waiting for scene loaded: " + path);
+                await signal.Task;
             }
-            finally { SceneManager.sceneLoaded -= OnLoaded; }
+            finally
+            {
+                SceneManager.sceneLoaded -= OnLoaded;
+            }
         }
 
         static async Task WaitForSceneUnloadedAsync(string path, TimeSpan timeout)
@@ -115,9 +132,22 @@ namespace Janseon.Foundation.Tests
             try
             {
                 if (!SceneManager.GetSceneByPath(path).isLoaded) signal.TrySetResult(true);
-                Assert.That(await Task.WhenAny(signal.Task, Task.Delay(timeout)), Is.SameAs(signal.Task));
+                Task completed = await Task.WhenAny(signal.Task, Task.Delay(timeout));
+                Assert.That(completed, Is.SameAs(signal.Task), "Timed out waiting for scene unloaded: " + path);
+                await signal.Task;
             }
-            finally { SceneManager.sceneUnloaded -= OnUnloaded; }
+            finally
+            {
+                SceneManager.sceneUnloaded -= OnUnloaded;
+            }
+        }
+
+        static async Task<T> AwaitTaskResult<T>(Task<T> task, TimeSpan timeout, string label)
+        {
+            Assert.That(task, Is.Not.Null, label + " task missing");
+            Task completed = await Task.WhenAny(task, Task.Delay(timeout));
+            Assert.That(completed, Is.SameAs(task), "Timed out waiting for " + label);
+            return await task;
         }
     }
 
@@ -125,8 +155,15 @@ namespace Janseon.Foundation.Tests
     {
         public static System.Collections.IEnumerator AsCoroutine(this Task task)
         {
-            while (!task.IsCompleted) yield return null;
-            if (task.IsFaulted) throw task.Exception;
+            while (!task.IsCompleted)
+            {
+                yield return null;
+            }
+
+            if (task.IsFaulted)
+            {
+                throw task.Exception;
+            }
         }
     }
 }

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Failed(Child)" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-20 09:54:32Z" end-time="2026-09-20 09:54:32Z" duration="0.0259233">
+  <test-suite type="TestSuite" id="1060" name="서울:전국" fullname="서울:전국" runstate="Runnable" testcasecount="41" result="Failed" site="Child" start-time="2026-09-20 09:54:32Z" end-time="2026-09-20 09:54:32Z" duration="0.025923" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1053" name="Janseon.Foundation.PlayModeTests.dll" fullname="/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave3-task13/GAME/Library/ScriptAssemblies/Janseon.Foundation.PlayModeTests.dll" runstate="Runnable" testcasecount="41" result="Failed" site="Child" start-time="2026-09-20 09:54:32Z" end-time="2026-09-20 09:54:32Z" duration="0.020298" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="13875" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1054" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="40" result="Failed" site="Child" start-time="2026-09-20 09:54:32Z" end-time="2026-09-20 09:54:32Z" duration="0.019153" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1055" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="40" result="Failed" site="Child" start-time="2026-09-20 09:54:32Z" end-time="2026-09-20 09:54:32Z" duration="0.018369" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="1056" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="40" result="Failed" site="Child" start-time="2026-09-20 09:54:32Z" end-time="2026-09-20 09:54:32Z" duration="0.017727" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestFixture" id="1041" name="Full3dBattleVisualTests" fullname="Janseon.Foundation.Tests.Full3dBattleVisualTests" classname="Janseon.Foundation.Tests.Full3dBattleVisualTests" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2026-09-20 09:54:32Z" end-time="2026-09-20 09:54:32Z" duration="0.015882" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="1043" name="OddlandAndSpineAreNotBattleCombatants" fullname="Janseon.Foundation.Tests.Full3dBattleVisualTests.OddlandAndSpineAreNotBattleCombatants" methodname="OddlandAndSpineAreNotBattleCombatants" classname="Janseon.Foundation.Tests.Full3dBattleVisualTests" runstate="Runnable" seed="1482951231" result="Failed" start-time="2026-09-20 09:54:32Z" end-time="2026-09-20 09:54:32Z" duration="0.007747" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Task13 requires a separately authored generated-combatant catalog
+  Expected: not null
+  But was:  null
+]]></message>
+                  <stack-trace><![CDATA[at Janseon.Foundation.Tests.Full3dBattleVisualTests.OddlandAndSpineAreNotBattleCombatants () [0x0000a] in /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave3-task13/GAME/Assets/Tests/PlayMode/Full3dBattleVisualTests.cs:40
+]]></stack-trace>
+                </failure>
+                <output><![CDATA[Saving results to: /Users/ilseoblee/Library/Application Support/Janseon Studio/서울_전국/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

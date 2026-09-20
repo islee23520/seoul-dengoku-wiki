@@ -47,9 +47,9 @@ namespace Janseon.Foundation.Tests
             cells[1] = 5;
             cells[2] = 2;
             var map = new Heightmap(5, 5, 8, 2, 1, LayerId.B1, cells);
-            Assert.That(map.MoveCost(new GridCoord(0, 0), new GridCoord(1, 0)), Is.EqualTo(1 + 2));
-            Assert.That(map.MoveCost(new GridCoord(1, 0), new GridCoord(2, 0)), Is.EqualTo(-1));
-            Assert.That(map.MoveCost(new GridCoord(0, 0), new GridCoord(2, 0)), Is.EqualTo(-1));
+            Assert.That(map.MoveCost(new TerrainSampleCoord(0, 0), new TerrainSampleCoord(1, 0)), Is.EqualTo(1 + 2));
+            Assert.That(map.MoveCost(new TerrainSampleCoord(1, 0), new TerrainSampleCoord(2, 0)), Is.EqualTo(-1));
+            Assert.That(map.MoveCost(new TerrainSampleCoord(0, 0), new TerrainSampleCoord(2, 0)), Is.EqualTo(-1));
         }
 
         [Test]
