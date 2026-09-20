@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Failed(Child)" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-20 06:53:46Z" end-time="2026-09-20 06:53:46Z" duration="0.0299491">
+  <test-suite type="TestSuite" id="1000" name="서울:전국" fullname="서울:전국" runstate="Runnable" testcasecount="246" result="Failed" site="Child" start-time="2026-09-20 06:53:46Z" end-time="2026-09-20 06:53:46Z" duration="0.029949" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1282" name="Janseon.Foundation.EditModeTests.dll" fullname="/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-task6/GAME/Library/ScriptAssemblies/Janseon.Foundation.EditModeTests.dll" runstate="Runnable" testcasecount="245" result="Failed" site="Child" start-time="2026-09-20 06:53:46Z" end-time="2026-09-20 06:53:46Z" duration="0.021642" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="55007" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1283" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="245" result="Failed" site="Child" start-time="2026-09-20 06:53:46Z" end-time="2026-09-20 06:53:46Z" duration="0.019406" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1284" name="Tests" fullname="Janseon.Tests" runstate="Runnable" testcasecount="37" result="Failed" site="Child" start-time="2026-09-20 06:53:46Z" end-time="2026-09-20 06:53:46Z" duration="0.017863" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="1285" name="EditMode" fullname="Janseon.Tests.EditMode" runstate="Runnable" testcasecount="37" result="Failed" site="Child" start-time="2026-09-20 06:53:46Z" end-time="2026-09-20 06:53:46Z" duration="0.017527" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestFixture" id="1026" name="RouteTraversalTests" fullname="Janseon.Tests.EditMode.RouteTraversalTests" classname="Janseon.Tests.EditMode.RouteTraversalTests" runstate="Runnable" testcasecount="8" result="Failed" site="Child" start-time="2026-09-20 06:53:46Z" end-time="2026-09-20 06:53:46Z" duration="0.013404" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="1033" name="SurfaceToSubwayJourney" fullname="Janseon.Tests.EditMode.RouteTraversalTests.SurfaceToSubwayJourney" methodname="SurfaceToSubwayJourney" classname="Janseon.Tests.EditMode.RouteTraversalTests" runstate="Runnable" seed="1555107509" result="Failed" start-time="2026-09-20 06:53:46Z" end-time="2026-09-20 06:53:46Z" duration="0.007333" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Expected: 3
+  But was:  0
+]]></message>
+                  <stack-trace><![CDATA[at Janseon.Tests.EditMode.RouteTraversalTests.SurfaceToSubwayJourney () [0x0008c] in /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-task6/GAME/Assets/Tests/EditMode/RouteTraversalTests.cs:228
+]]></stack-trace>
+                </failure>
+                <output><![CDATA[Saving results to: /Users/ilseoblee/Library/Application Support/Janseon Studio/서울_전국/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
