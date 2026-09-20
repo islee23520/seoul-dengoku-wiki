@@ -5,11 +5,38 @@ using Janseon.Core;
 
 namespace Janseon.Core.Battle.Contracts
 {
+    public readonly struct SoldierId : IEquatable<SoldierId>
+    {
+        public readonly string Value;
+        public SoldierId(string value) { Value = value ?? string.Empty; }
+        public bool Equals(SoldierId other) => string.Equals(Value, other.Value, StringComparison.Ordinal);
+        public override bool Equals(object obj) => obj is SoldierId other && Equals(other);
+        public override int GetHashCode() => StringComparer.Ordinal.GetHashCode(Value ?? string.Empty);
+        public override string ToString() => Value;
+    }
+    public readonly struct SquadId : IEquatable<SquadId>
+    {
+        public readonly string Value;
+        public SquadId(string value) { Value = value ?? string.Empty; }
+        public bool Equals(SquadId other) => string.Equals(Value, other.Value, StringComparison.Ordinal);
+        public override bool Equals(object obj) => obj is SquadId other && Equals(other);
+        public override int GetHashCode() => StringComparer.Ordinal.GetHashCode(Value ?? string.Empty);
+        public override string ToString() => Value;
+    }
+    public readonly struct HeroId : IEquatable<HeroId>
+    {
+        public readonly string Value;
+        public HeroId(string value) { Value = value ?? string.Empty; }
+        public bool Equals(HeroId other) => string.Equals(Value, other.Value, StringComparison.Ordinal);
+        public override bool Equals(object obj) => obj is HeroId other && Equals(other);
+        public override int GetHashCode() => StringComparer.Ordinal.GetHashCode(Value ?? string.Empty);
+        public override string ToString() => Value;
+    }
     public enum BattleOutcomeKind { Ongoing, PlayerVictory, EnemyVictory, PlayerRetreat, EnemySurrender, PlayerRout, Draw }
 
     public sealed class RosterUnit
     {
-        public UnitId Id; public int Side; public string Role; public int Hp; public int MaxHp; public int Power;
+        public UnitId Id; public SoldierId SoldierId; public SquadId SquadId; public int Side; public string Role; public int Hp; public int MaxHp; public int Power;
         public float Morale = 1f;
         public int RangeMin; public int RangeMax; public int MoveTicksPerCell; public int AttackCooldownTicks;
     }
@@ -21,7 +48,8 @@ namespace Janseon.Core.Battle.Contracts
         public BattleContext Context; public RosterUnit[] PlayerUnits; public RosterUnit[] EnemyUnits;
         public FormationSlot[] PlayerFormation; public FormationSlot[] EnemyFormation; public UnitId EnemyCommanderId;
         public TelegraphPlan[] Telegraphs; public Heightmap Terrain;
-        public UnitId PlayerHeroId;
+        public HeroId PlayerHeroId;
+        public SquadId PlayerSquadId;
         public static BattleSetup FromContext(BattleContext ctx)
         {
             return FromContext(ctx, null);

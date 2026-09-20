@@ -35,6 +35,16 @@ namespace Janseon.Core.Battle.Sim
         public string[] StrongholdCardIds;
         public BattleContext Context;
         public float ElapsedSeconds;
+        public UnitState[] Soldiers => Units ?? new UnitState[0];
+        public HeroState[] Heroes = new HeroState[0];
+        public SquadState[] Squads = new SquadState[0];
+        public BattleFrame Frame { get; private set; }
+
+        public void PublishFrame()
+        {
+            var units = Units == null ? new UnitState[0] : Array.ConvertAll(Units, x => x.Clone());
+            Frame = new BattleFrame(ElapsedSeconds, Tick, units);
+        }
 
 
         public BattleSimState Clone()
@@ -72,11 +82,36 @@ namespace Janseon.Core.Battle.Sim
     }
     public sealed class UnitState
     {
-        public UnitId Id; public int Side; public GridCoord Cell; public CardinalDirection Facing;
+        public UnitId Id; public SoldierId SoldierId; public SquadId SquadId; public HeroId HeroId; public int Side; public GridCoord Cell; public CardinalDirection Facing;
         public int Hp; public int MaxHp; public int SurvivorCount; public int Power; public int RangeMin; public int RangeMax;
         public int MoveTicksPerCell; public int MoveTicksLeft; public int AttackCooldownTicks; public int CooldownTicksLeft; public string State = "Active";
         public BattleOrderKind OrderKind; public GridCoord OrderDestination; public UnitId OrderTargetUnitId;
         public UnitState Clone() { return (UnitState)MemberwiseClone(); }
+    }
+    public sealed class BattleFrame
+    {
+        public readonly float ElapsedSeconds;
+        public readonly int Tick;
+        public readonly UnitState[] Units;
+        public BattleFrame(float elapsedSeconds, int tick, UnitState[] units)
+        {
+            ElapsedSeconds = elapsedSeconds;
+            Tick = tick;
+            Units = units ?? new UnitState[0];
+        }
+    }
+    public sealed class HeroState
+    {
+        public HeroId Id;
+        public int Hp;
+        public GridCoord Cell;
+        public HeroState Clone() => new HeroState { Id = Id, Hp = Hp, Cell = Cell };
+    }
+    public sealed class SquadState
+    {
+        public SquadId Id;
+        public BattleOrderKind CurrentOrder;
+        public FormationSlot[] Formation;
     }
     public sealed class SideState
     {

@@ -23,15 +23,24 @@ namespace Janseon.Core.Battle.Sim
             var arena = terrain != null ? new ArenaState { Width = terrain.Width, Height = terrain.Height } : new ArenaState();
             ValidateRoster(setup.PlayerUnits, 0);
             ValidateRoster(setup.EnemyUnits, 1);
+            if (!string.IsNullOrEmpty(setup.PlayerSquadId.Value))
+                for (var i = 0; i < setup.PlayerUnits.Length; i++)
+                    if (!setup.PlayerUnits[i].SquadId.Equals(setup.PlayerSquadId))
+                        throw new ArgumentException("Soldier does not belong to the declared squad.");
+            if (!string.IsNullOrEmpty(setup.PlayerSquadId.Value))
+                for (var i = 0; i < setup.PlayerUnits.Length; i++)
+                    if (!setup.PlayerUnits[i].SquadId.Equals(setup.PlayerSquadId))
+                        throw new ArgumentException("Soldier does not belong to the declared squad.");
             var s = new BattleSimState { Tick = 0, Outcome = ContractOutcome.Ongoing, Rng = new PurposeRng(seed), Arena = arena, Terrain = terrain, Context = setup.Context };
             s.Sides = new[] { new SideState { Morale = BattleRules.MoraleBase, CommanderHpPercent = 100 }, new SideState { Morale = BattleRules.MoraleBase, CommanderHpPercent = 100 } };
             s.PlayerCommanderId = setup.PlayerFormation != null && setup.PlayerFormation.Length > 0 ? setup.PlayerFormation[0].Unit : (setup.PlayerUnits != null && setup.PlayerUnits.Length > 0 ? setup.PlayerUnits[0].Id : new UnitId());
             s.EnemyCommanderId = setup.EnemyCommanderId;
+            s.Heroes = string.IsNullOrEmpty(setup.PlayerHeroId.Value) ? new HeroState[0] : new[] { new HeroState { Id = setup.PlayerHeroId, Hp = 100, Cell = new GridCoord(1, 0) } };
             var roster = new List<RosterUnit>(); if (setup.PlayerUnits != null) roster.AddRange(setup.PlayerUnits); if (setup.EnemyUnits != null) roster.AddRange(setup.EnemyUnits);
             s.Arena.EnemyRetreatEdge = new GridCoord[s.Arena.Height - 2];
             for (var y = 0; y < s.Arena.EnemyRetreatEdge.Length; y++) s.Arena.EnemyRetreatEdge[y] = new GridCoord(s.Arena.Width - 1, y + 1);
             s.Units = new UnitState[roster.Count];
-            for (var i = 0; i < roster.Count; i++) { var u = roster[i]; s.Units[i] = new UnitState { Id=u.Id, Side=u.Side, Hp=u.Hp, MaxHp=u.MaxHp, SurvivorCount=AggregateSurvivorRules.FromHp(u.Hp, u.MaxHp), Power=u.Power, RangeMin=u.RangeMin, RangeMax=u.RangeMax, MoveTicksPerCell=u.MoveTicksPerCell, AttackCooldownTicks=u.AttackCooldownTicks, Cell=new GridCoord(u.Side == 0 ? 1 : 10, i % 6 + 1), Facing=u.Side == 0 ? CardinalDirection.East : CardinalDirection.West, MoveTicksLeft=u.MoveTicksPerCell }; }
+            for (var i = 0; i < roster.Count; i++) { var u = roster[i]; s.Units[i] = new UnitState { Id=u.Id, SoldierId=string.IsNullOrEmpty(u.SoldierId.Value) ? new SoldierId(u.Id.Value) : u.SoldierId, SquadId=u.SquadId, Side=u.Side, Hp=u.Hp, MaxHp=u.MaxHp, SurvivorCount=AggregateSurvivorRules.FromHp(u.Hp, u.MaxHp), Power=u.Power, RangeMin=u.RangeMin, RangeMax=u.RangeMax, MoveTicksPerCell=u.MoveTicksPerCell, AttackCooldownTicks=u.AttackCooldownTicks, Cell=new GridCoord(u.Side == 0 ? 1 : 10, i % 6 + 1), Facing=u.Side == 0 ? CardinalDirection.East : CardinalDirection.West, MoveTicksLeft=u.MoveTicksPerCell }; }
             var definitions = CardCatalog.All();
             var cardStates = new List<CardState>();
             for (var definitionIndex = 0; definitionIndex < definitions.Count; definitionIndex++)
@@ -46,6 +55,7 @@ namespace Janseon.Core.Battle.Sim
                     if (s.Units[unitIndex].Side == 0) cardStates.Add(new CardState { OwnerUnitId = s.Units[unitIndex].Id, Id = definition.Id });
             }
             s.Cards = cardStates.ToArray();
+            s.Squads = new[] { new SquadState { Id = setup.PlayerSquadId, CurrentOrder = BattleOrderKind.None, Formation = setup.PlayerFormation } };
             FormationResolver.Resolve(s, setup.EnemyFormation);
             if (terrain != null)
             {
@@ -54,6 +64,7 @@ namespace Janseon.Core.Battle.Sim
             s.PreviousHp = new int[s.Units.Length]; s.PreviousStates = new string[s.Units.Length];
             for (var i = 0; i < s.Units.Length; i++) { s.PreviousHp[i] = s.Units[i].Hp; s.PreviousStates[i] = s.Units[i].State; }
             var plans = setup.Telegraphs ?? new TelegraphPlan[0]; s.Telegraphs = new TelegraphState[plans.Length]; for (var i=0;i<plans.Length;i++) s.Telegraphs[i] = new TelegraphState { Cell=plans[i].Cell, ArrivalTick=plans[i].ArrivalTick, Count=plans[i].Count };
+            s.PublishFrame();
             return s;
         }
         public static object PreviewCard(BattleSimState state, BattleTickCommand cmd)
@@ -153,6 +164,7 @@ namespace Janseon.Core.Battle.Sim
             ReinforcementRules.Resolve(state); if (state.Outcome != ContractOutcome.Ongoing) { ClearAllOrders(state); TickCards(state); ledger.Events.Add(new TypedEvent { Id=new EventId("btick-"+state.Tick.ToString(CultureInfo.InvariantCulture)), At=new Tick(state.Tick), SummaryHash=state.Fingerprint() }); state.Tick++; return; } IntentPlanner.Resolve(state); CombatRules.Resolve(state); MoraleRules.Resolve(state); state.Sides[1].RetreatCovered = OutcomeRules.RetreatCovered(state); OutcomeRules.Resolve(state); ClearInvalidOrders(state);
             TickCards(state);
             ledger.Events.Add(new TypedEvent { Id=new EventId("btick-"+state.Tick.ToString(CultureInfo.InvariantCulture)), At=new Tick(state.Tick), SummaryHash=state.Fingerprint() }); state.Tick++;
+            state.PublishFrame();
         }
 
         static void ValidateRoster(RosterUnit[] roster, int side)

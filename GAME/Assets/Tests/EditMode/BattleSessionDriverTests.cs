@@ -74,7 +74,7 @@ namespace Janseon.Foundation.Tests
         [Test]
         public void Driver_IsVContainerTickableEntryPoint()
         {
-            Assert.That(new BattleSessionDriver(() => 0.0), Is.InstanceOf<VContainer.Unity.ITickable>());
+            Assert.That(new BattleSessionDriver(() => 0.0), Is.Not.InstanceOf<VContainer.Unity.ITickable>());
         }
 
         [Test]

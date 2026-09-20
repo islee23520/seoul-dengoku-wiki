@@ -38,6 +38,7 @@ namespace Janseon.Foundation.Composition
             builder.Register<UiScreenDocumentLease>(Lifetime.Scoped).AsSelf();
             builder.Register<GameplayPresenter>(Lifetime.Scoped).AsSelf();
             builder.RegisterComponentInHierarchy<GameplayUiHost>();
+            builder.RegisterComponentInHierarchy<BattleSessionDriverHost>();
             builder.RegisterEntryPoint<PocCoreLoopController>(Lifetime.Scoped).AsSelf();
             builder.Register<BattleSessionDriver>(Lifetime.Scoped).AsSelf();
         }

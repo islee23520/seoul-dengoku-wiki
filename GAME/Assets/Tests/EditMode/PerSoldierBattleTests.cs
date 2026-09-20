@@ -14,13 +14,23 @@ namespace Janseon.Foundation.Tests
             var setup = BattleSetup.FromContext(BattleContext.Create("campaign", default(StationId), 7, new Tick(0), 0, 0, BattleRules.RulesVersion, "task7", UnitHpSnapshot.DefaultParty()));
             setup.PlayerUnits = new RosterUnit[20];
             for (var i = 0; i < setup.PlayerUnits.Length; i++)
-                setup.PlayerUnits[i] = new RosterUnit { Id = new UnitId("soldier-" + i), Side = 0, Hp = 10, MaxHp = 10, Power = 1 };
+                setup.PlayerUnits[i] = new RosterUnit { Id = new UnitId("soldier-" + i), SoldierId = new SoldierId("soldier-" + i), SquadId = new SquadId("squad-1"), Side = 0, Hp = 10, MaxHp = 10, Power = 1 };
+            setup.PlayerHeroId = new HeroId("hero-1");
             var state = BattleSim.Open(setup);
             var before = state.Fingerprint();
             BattleSim.Step(state, new Ledger());
             Assert.That(state.Fingerprint(), Is.Not.EqualTo(before));
             Assert.That(Array.FindAll(state.Units, unit => unit.Side == 0).Length, Is.EqualTo(20));
             Assert.That(state.Units[0].Id.Value, Is.EqualTo("soldier-0"));
+            Assert.That(state.Units[0].SoldierId.Value, Is.EqualTo("soldier-0"));
+            Assert.That(state.Units[0].SquadId.Value, Is.EqualTo("squad-1"));
+            Assert.That(state.Frame, Is.Not.Null);
+            Assert.That(state.Frame.Units, Is.Not.SameAs(state.Units));
+            var clone = state.Clone();
+            clone.PublishFrame();
+            Assert.That(state.Frame, Is.Not.SameAs(clone.Frame));
+            Assert.That(state.Heroes.Length, Is.EqualTo(1));
+            Assert.That(state.Squads.Length, Is.EqualTo(1));
         }
 
         [Test]
@@ -29,7 +39,7 @@ namespace Janseon.Foundation.Tests
             var setup = BattleSetup.FromContext(BattleContext.Create("campaign", default(StationId), 7, new Tick(0), 0, 0, BattleRules.RulesVersion, "task7", UnitHpSnapshot.DefaultParty()));
             setup.PlayerUnits = new RosterUnit[21];
             for (var i = 0; i < setup.PlayerUnits.Length; i++)
-                setup.PlayerUnits[i] = new RosterUnit { Id = new UnitId(i == 20 ? "soldier-0" : "soldier-" + i), Side = 0, Hp = 10, MaxHp = 10 };
+                setup.PlayerUnits[i] = new RosterUnit { Id = new UnitId(i == 20 ? "soldier-0" : "soldier-" + i), SoldierId = new SoldierId(i == 20 ? "soldier-0" : "soldier-" + i), SquadId = new SquadId("squad-1"), Side = 0, Hp = 10, MaxHp = 10 };
             Assert.Throws<ArgumentException>(() => BattleSim.Open(setup));
         }
     }

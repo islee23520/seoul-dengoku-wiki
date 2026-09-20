@@ -59,7 +59,7 @@ namespace Janseon.Foundation.Tests
 
             BattleSessionDriver driver = scope.Container.Resolve<BattleSessionDriver>();
             Assert.That(driver, Is.Not.Null, "Foundation scope must expose BattleSessionDriver");
-            Assert.That(driver, Is.InstanceOf<VContainer.Unity.ITickable>(), "driver must be a VContainer entry point");
+            Assert.That(driver, Is.Not.InstanceOf<VContainer.Unity.ITickable>(), "driver must be pumped by the Unity FixedUpdate host");
             Assert.That(driver.Paused, Is.False, "driver must start unpaused");
 
             GameplayUiHost host = UnityEngine.Object.FindAnyObjectByType<GameplayUiHost>();
