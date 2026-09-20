@@ -5,24 +5,10 @@ import { fileURLToPath } from 'node:url'
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '../../..')
 const read = (p) => readFileSync(resolve(root, p), 'utf8')
 
-// ── 수장: Sixteen-States 수령 서술에서 「이름은 국가 직위다」 패턴 파싱 ──
-const TIER1 = ['역장','위원장','회장','당회장','사령관','대통령','종정','교정원장','대주교','이사장','대표']
-const sixteenRaw = read('LORE/factions/Sixteen-States.md')
-const leaderByState = {}
-const rulerRe = new RegExp('([가-힣]{2,4})은 (대한민국정부|여의도출자연합회|서초전산그룹|양재기공주식회사|설교명부정|본당인준정|승가구휼정|교헌필사정|정동노동총연맹|급수계약정|규격동맹|선로후계정|호위보호정|관문군정|중립호송시|의약중립맹) (' + TIER1.join('|') + ')', 'g')
-for (const m of sixteenRaw.matchAll(rulerRe)) {
-  if (!leaderByState[m[2]]) leaderByState[m[2]] = m[1]
-}
-const rulerRe2 = new RegExp('([가-힣]{2,4})(?:는|은) (대한민국정부|여의도출자연합회|서초전산그룹|양재기공주식회사|설교명부정|본당인준정|승가구휼정|교헌필사정|정동노동총연맹|급수계약정|규격동맹|선로후계정|호위보호정|관문군정|중립호송시|의약중립맹) (' + TIER1.join('|') + ')', 'g')
-for (const m of sixteenRaw.matchAll(rulerRe2)) {
-  if (!leaderByState[m[2]]) leaderByState[m[2]] = m[1]
-}
-// 승계 문장이 있으면 현직자로 덮어쓴다(임하준 실종→오경재 승계)
-for (const m of sixteenRaw.matchAll(/([가-힣]{2,4})가 [^.]{0,40}(?:뒤를 이어|승계해?|이어서) ([가-힣]{2,4})?(?:으)?로? ([가-힣]{2,6})[에에]?(?: 앉| 즉임| 취임)/g)) {
-  if (m[1] && Object.values(leaderByState).includes(m[1]) === false) continue
-}
-const succ = sixteenRaw.match(/([가-힣]{2,4})가 총회 인준으로 그 뒤를 이어 당회장에 앉았다/)
-if (succ) { const st = Object.keys(leaderByState).find(k => leaderByState[k] === '임하준'); if (st) leaderByState[st] = succ[1] }
+// ── 수장: 영구 국가 ID와 잠금 수장을 한 행에 둔 정본 표에서 파싱 ──
+const housesRaw = read('LORE/factions/Chaebol-Houses-and-Century-Factions.md')
+const leaderByState = Object.fromEntries([...housesRaw.matchAll(/^\| S\d{2} ([^|]+) \| [^|]+ \| [^|]+ \| ([^|]+) \|/gm)]
+  .map((match) => [match[1].trim(), match[2].trim()]))
 // 국명 유사 매칭(소속 축약 대비)
 const core = read('LORE/characters/Core-Characters.md')
 

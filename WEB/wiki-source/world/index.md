@@ -13,7 +13,7 @@
 | [호위보호정](Sixteen-States.html) | 암사역 | 군정 | 강국 | 배우진 |
 | [대한민국정부](Sixteen-States.html) | 광화문역 | 봉건(운영가문) | 약소 | 윤서린 |
 | [선로후계정](Sixteen-States.html) | 용산역 | 봉건(선로 가문) | 강국 | 박태겸 |
-| [교헌필사정](Sixteen-States.html) | 흑석역 | 신정 | 약소 | - |
+| [교헌필사정](Sixteen-States.html) | 흑석역 | 신정 | 약소 | 오해린 |
 | [여의도출자연합회](Sixteen-States.html) | 여의도역 | 상업(기업형) | 약소 | 최지우 |
 | [승가구휼정](Sixteen-States.html) | 안국역 | 신정 | 약소 | 백온 |
 | [서초전산그룹](Sixteen-States.html) | 강남역 | 상업(주식회사) | 약소 | 이홍원 |
