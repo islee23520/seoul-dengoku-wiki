@@ -54,7 +54,7 @@ test('Docker builder is reproducible and exports the complete deployment contrac
   assert.ok(manifest.pages.some((page) => page.target === 'system-design'))
   assert.ok(manifest.pages.some((page) => page.target === 'portrait-gen'))
   assert.ok(manifest.pages.some((page) => page.target === 'total-war-ui'))
-  assert.ok(manifest.pages.some((page) => page.target === 'portrait-demo'))
+  assert.ok(!manifest.pages.some((page) => page.target === 'portrait-demo'))
   assert.ok(manifest.pages.some((page) => page.target === 'ui-layout-moodboard'))
   assert.ok(manifest.pages.some((page) => page.target === 'ui-ux-refs'))
   const wikiPackage = JSON.parse(await readFile(resolve(deployDir, '../../../WEB/wiki/package.json'), 'utf8'))
