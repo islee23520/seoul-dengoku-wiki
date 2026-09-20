@@ -1,0 +1,56 @@
+name: Deploy Windows Hub
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: seoul-dengoku-windows-production
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: [self-hosted, Windows, X64, seoul-dengoku]
+    timeout-minutes: 90
+    defaults:
+      run:
+        shell: powershell
+    steps:
+      - name: Checkout the triggering main commit
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: recursive
+          clean: false
+
+      - name: Verify the dedicated E drive workspace
+        run: |
+          if (-not $env:GITHUB_WORKSPACE.StartsWith('E:\git\', [System.StringComparison]::OrdinalIgnoreCase)) {
+            throw "Runner workspace must live under E:\git, got $env:GITHUB_WORKSPACE"
+          }
+          git fetch origin main --prune
+          if ($env:GITHUB_EVENT_NAME -eq 'push') {
+            git checkout --detach $env:GITHUB_SHA
+          } else {
+            git checkout --detach origin/main
+          }
+          git submodule update --init --recursive
+
+      - name: Build, verify, and atomically deploy the hub
+        run: |
+          & "$env:GITHUB_WORKSPACE\TOOL\tools\deploy\deploy-hub-local-windows.ps1" `
+            -RepositoryRoot $env:GITHUB_WORKSPACE `
+            -DeployRoot 'E:\git\seoul-dengoku-web'
+
+      - name: Upload deployment receipts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seoul-dengoku-deploy-${{ github.sha }}
+          path: .omo/evidence/hub-docker-deploy/latest
+          if-no-files-found: warn
+          retention-days: 30
