@@ -7,10 +7,10 @@ test('opening territory map covers every Seoul dong and all sixteen states', asy
   assert.equal(data.regions.length, 427)
   assert.equal(data.states.length, 16)
   const expectedStates = {
-    S01: '급수계약정', S02: '규격동맹', S03: '양재기공주식회사', S04: '기독교',
-    S05: '호위보호정', S06: '대한민국정부', S07: '선로후계정', S08: '원불교',
-    S09: '여의도출자연합회', S10: '불교', S11: '서초전산그룹', S12: '중립호송시',
-    S13: '의약중립맹', S14: '관문군정', S15: '천주교', S16: '정동노동총연맹',
+    S01: '급수계약정', S02: '규격동맹', S03: '양재기공주식회사', S04: '설교명부정',
+    S05: '호위보호정', S06: '대한민국정부', S07: '선로후계정', S08: '교헌필사정',
+    S09: '여의도출자연합회', S10: '승가구휼정', S11: '서초전산그룹', S12: '중립호송시',
+    S13: '의약중립맹', S14: '관문군정', S15: '본당인준정', S16: '정동노동총연맹',
   }
   assert.deepEqual(Object.fromEntries(data.states.map((state) => [state.id, state.name])), expectedStates)
   assert.equal(new Set(data.regions.map((region) => region.id)).size, 427)
