@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict'
-import { mkdtemp, mkdir, readFile, writeFile } from 'node:fs/promises'
+import { createHash } from 'node:crypto'
+import { mkdtemp, mkdir, readFile, rm, writeFile } from 'node:fs/promises'
 import { spawnSync } from 'node:child_process'
 import { tmpdir } from 'node:os'
 import { dirname, join, resolve } from 'node:path'
@@ -72,4 +73,21 @@ test('stage keeps hub index at root and React wiki under /wiki', async () => {
 
   assert.equal(await readFile(join(output, 'index.html'), 'utf8'), '<h1>hub</h1>')
   assert.equal(await readFile(join(output, 'wiki', 'index.html'), 'utf8'), '<h1>wiki</h1>')
+})
+
+test('staged release verifier rejects Git LFS pointers masquerading as web assets', async () => {
+  const root = await mkdtemp(join(tmpdir(), 'hub-lfs-pointer-'))
+  const pointer = 'version https://git-lfs.github.com/spec/v1\noid sha256:0000000000000000000000000000000000000000000000000000000000000000\nsize 15184\n'
+  const flag = join(root, 'wiki', 'state-flags', 'S01.webp')
+  await mkdir(dirname(flag), { recursive: true })
+  await writeFile(flag, pointer)
+  await writeFile(join(root, 'deployment-manifest.json'), JSON.stringify({
+    files: 1,
+    pages: [],
+    artifacts: [{ path: 'wiki/state-flags/S01.webp', bytes: Buffer.byteLength(pointer), sha256: createHash('sha256').update(pointer).digest('hex') }],
+  }))
+  const result = spawnSync(process.execPath, [resolve(deployDir, 'verify-staged-release.mjs'), root], { encoding: 'utf8' })
+  assert.notEqual(result.status, 0)
+  assert.match(result.stdout, /lfs-pointer:wiki\/state-flags\/S01\.webp/)
+  await rm(root, { recursive: true, force: true })
 })
