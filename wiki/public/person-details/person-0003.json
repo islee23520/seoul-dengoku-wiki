@@ -1,11 +1,25 @@
 {
   "id": "person-0003",
+  "heroId": "hero-person-0003",
   "name": "김태운",
   "title": "수문경비대장",
   "position": "수문경비대장",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "line_warden",
+  "heroClass": "전열수호",
+  "battleRoleTags": [
+    "formation",
+    "screening",
+    "route-control"
+  ],
+  "effectFamilies": [
+    "morale",
+    "gear"
+  ],
+  "campaignRoles": [],
+  "commandEligible": true,
   "gender": "여성",
   "stage": "S1",
   "state": "S01",

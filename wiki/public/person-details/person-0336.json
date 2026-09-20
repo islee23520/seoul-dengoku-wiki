@@ -1,11 +1,26 @@
 {
   "id": "person-0336",
+  "heroId": "hero-person-0336",
   "name": "판한들",
   "title": "청량리역 대합실 거점장",
   "position": "청량리역 대합실 거점장",
   "rank": "주임",
   "commonTier": "T4",
   "occupation": "미등록",
+  "heroClassId": "expedition_anchor",
+  "heroClass": "원정중추",
+  "battleRoleTags": [
+    "formation",
+    "sustain"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S2",
   "state": "S13",

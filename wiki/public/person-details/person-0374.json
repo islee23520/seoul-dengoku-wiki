@@ -1,11 +1,30 @@
 {
   "id": "person-0374",
+  "heroId": "hero-person-0374",
   "name": "남윤경",
   "title": "경매조정인",
   "position": "본당인준정 대주교",
   "rank": "대주교",
   "commonTier": "T1",
   "occupation": "경매조정인",
+  "heroClassId": "field_coordinator",
+  "heroClass": "전장조율",
+  "battleRoleTags": [
+    "formation",
+    "supply",
+    "negotiation",
+    "records"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "intelligence"
+  ],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "주요",
   "state": "S15",

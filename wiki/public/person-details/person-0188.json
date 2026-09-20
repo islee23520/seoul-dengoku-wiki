@@ -1,11 +1,30 @@
 {
   "id": "person-0188",
+  "heroId": "hero-person-0188",
   "name": "단시온",
   "title": "배차 기록 열람 청구인",
   "position": "배차 기록 열람 청구인",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "route_operative",
+  "heroClass": "경로공작",
+  "battleRoleTags": [
+    "recon",
+    "covert",
+    "route-control",
+    "records"
+  ],
+  "effectFamilies": [
+    "information",
+    "physical-ai-tech",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "intelligence"
+  ],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S3",
   "state": "S07",

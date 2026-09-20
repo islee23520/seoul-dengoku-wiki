@@ -1,11 +1,27 @@
 {
   "id": "person-0153",
+  "heroId": "hero-person-0153",
   "name": "연지우",
   "title": "서울역 의무실 의무원",
   "position": "서울역 의무실 의무원",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "recovery_specialist",
+  "heroClass": "회복지원",
+  "battleRoleTags": [
+    "sustain",
+    "repair",
+    "triage",
+    "supply"
+  ],
+  "effectFamilies": [
+    "medicine",
+    "gear",
+    "morale"
+  ],
+  "campaignRoles": [],
+  "commandEligible": false,
   "gender": "여성",
   "stage": "S2",
   "state": "S06",

@@ -1,11 +1,27 @@
 {
   "id": "person-0123",
+  "heroId": "hero-person-0123",
   "name": "임겨레",
   "title": "동부 관문세·보호계약 감사관",
   "position": "동부 관문세·보호계약 감사관",
   "rank": "병장",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "recovery_specialist",
+  "heroClass": "회복지원",
+  "battleRoleTags": [
+    "sustain",
+    "repair",
+    "triage",
+    "supply"
+  ],
+  "effectFamilies": [
+    "medicine",
+    "gear",
+    "morale"
+  ],
+  "campaignRoles": [],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S1",
   "state": "S05",

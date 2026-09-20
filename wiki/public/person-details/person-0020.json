@@ -1,11 +1,27 @@
 {
   "id": "person-0020",
+  "heroId": "hero-person-0020",
   "name": "진세빈",
   "title": "양천 이동의무차 반장",
   "position": "양천 이동의무차 반장",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "recovery_specialist",
+  "heroClass": "회복지원",
+  "battleRoleTags": [
+    "sustain",
+    "repair",
+    "triage",
+    "supply"
+  ],
+  "effectFamilies": [
+    "medicine",
+    "gear",
+    "morale"
+  ],
+  "campaignRoles": [],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S2",
   "state": "S01",

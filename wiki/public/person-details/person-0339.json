@@ -1,11 +1,26 @@
 {
   "id": "person-0339",
+  "heroId": "hero-person-0339",
   "name": "방미산",
   "title": "청량리 진료소 거점장, 은채윤의 실무 담당자",
   "position": "청량리 진료소 거점장, 은채윤의 실무 담당자",
   "rank": "주임",
   "commonTier": "T4",
   "occupation": "미등록",
+  "heroClassId": "expedition_anchor",
+  "heroClass": "원정중추",
+  "battleRoleTags": [
+    "formation",
+    "sustain"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": false,
   "gender": "여성",
   "stage": "S2",
   "state": "S13",

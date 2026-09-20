@@ -1,11 +1,29 @@
 {
   "id": "person-0161",
+  "heroId": "hero-person-0161",
   "name": "연태솔",
   "title": "중앙 재난의료 조정 실무관",
   "position": "중앙 재난의료 조정 실무관",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "recovery_specialist",
+  "heroClass": "회복지원",
+  "battleRoleTags": [
+    "sustain",
+    "repair",
+    "triage",
+    "supply"
+  ],
+  "effectFamilies": [
+    "medicine",
+    "gear",
+    "morale"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": false,
   "gender": "여성",
   "stage": "S2",
   "state": "S06",

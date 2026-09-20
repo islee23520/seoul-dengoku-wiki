@@ -1,11 +1,25 @@
 {
   "id": "person-0100",
+  "heroId": "hero-person-0100",
   "name": "채구름",
   "title": "성동 교량 순찰대 조장",
   "position": "성동 교량 순찰대 조장",
   "rank": "교사",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "line_warden",
+  "heroClass": "전열수호",
+  "battleRoleTags": [
+    "formation",
+    "screening",
+    "route-control"
+  ],
+  "effectFamilies": [
+    "morale",
+    "gear"
+  ],
+  "campaignRoles": [],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "S2",
   "state": "S04",

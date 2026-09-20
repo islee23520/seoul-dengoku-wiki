@@ -1,11 +1,29 @@
 {
   "id": "person-0323",
+  "heroId": "hero-person-0323",
   "name": "류은비",
   "title": "치료길드 대표",
   "position": "의약중립맹 이사장",
   "rank": "이사장",
   "commonTier": "T1",
   "occupation": "치료길드 대표",
+  "heroClassId": "recovery_specialist",
+  "heroClass": "회복지원",
+  "battleRoleTags": [
+    "sustain",
+    "repair",
+    "triage",
+    "supply"
+  ],
+  "effectFamilies": [
+    "medicine",
+    "gear",
+    "morale"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "주요",
   "state": "S13",

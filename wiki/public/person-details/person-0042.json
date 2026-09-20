@@ -1,11 +1,29 @@
 {
   "id": "person-0042",
+  "heroId": "hero-person-0042",
   "name": "표강호",
   "title": "제작규격 전령",
   "position": "제작규격 전령",
   "rank": "조합원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "breach_lead",
+  "heroClass": "돌파선도",
+  "battleRoleTags": [
+    "pressure",
+    "route-control",
+    "repair"
+  ],
+  "effectFamilies": [
+    "gear",
+    "physical-ai-tech"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "intelligence",
+    "sabotage"
+  ],
+  "commandEligible": true,
   "gender": "여성",
   "stage": "S2",
   "state": "S02",

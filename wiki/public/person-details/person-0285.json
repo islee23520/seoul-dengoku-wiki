@@ -1,11 +1,25 @@
 {
   "id": "person-0285",
+  "heroId": "hero-person-0285",
   "name": "감두",
   "title": "창동 차량기지 당직장",
   "position": "창동 차량기지 당직장",
   "rank": "대리",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "breach_lead",
+  "heroClass": "돌파선도",
+  "battleRoleTags": [
+    "pressure",
+    "route-control",
+    "repair"
+  ],
+  "effectFamilies": [
+    "gear",
+    "physical-ai-tech"
+  ],
+  "campaignRoles": [],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "S2",
   "state": "S11",

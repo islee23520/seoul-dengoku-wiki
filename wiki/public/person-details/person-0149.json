@@ -1,11 +1,27 @@
 {
   "id": "person-0149",
+  "heroId": "hero-person-0149",
   "name": "오서율",
   "title": "계약 공증관",
   "position": "계약 공증관",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "recovery_specialist",
+  "heroClass": "회복지원",
+  "battleRoleTags": [
+    "sustain",
+    "repair",
+    "triage",
+    "supply"
+  ],
+  "effectFamilies": [
+    "medicine",
+    "gear",
+    "morale"
+  ],
+  "campaignRoles": [],
+  "commandEligible": false,
   "gender": "여성",
   "stage": "S1",
   "state": "S06",

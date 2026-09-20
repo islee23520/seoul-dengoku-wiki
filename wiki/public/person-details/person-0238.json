@@ -1,11 +1,24 @@
 {
   "id": "person-0238",
+  "heroId": "hero-person-0238",
   "name": "란세온",
   "title": "가짜 송신 내부 제보자",
   "position": "가짜 송신 내부 제보자",
   "rank": "직원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "expedition_anchor",
+  "heroClass": "원정중추",
+  "battleRoleTags": [
+    "formation",
+    "sustain"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information"
+  ],
+  "campaignRoles": [],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S3",
   "state": "S09",

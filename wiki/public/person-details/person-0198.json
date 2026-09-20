@@ -1,11 +1,26 @@
 {
   "id": "person-0198",
+  "heroId": "hero-person-0198",
   "name": "신태산",
   "title": "호송 반장",
   "position": "호송 반장",
   "rank": "교도",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "expedition_anchor",
+  "heroClass": "원정중추",
+  "battleRoleTags": [
+    "formation",
+    "sustain"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S1",
   "state": "S08",

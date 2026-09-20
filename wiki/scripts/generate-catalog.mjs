@@ -379,6 +379,33 @@ const parseCardFields = (body) => Object.fromEntries(
 const personDetailsRoot = resolve(publicRoot, 'person-details')
 await rm(personDetailsRoot, { recursive: true, force: true })
 await mkdir(personDetailsRoot, { recursive: true })
+const heroClasses = {
+  line_warden: { label: '전열수호', battleRoleTags: ['formation', 'screening', 'route-control'], effectFamilies: ['morale', 'gear'] },
+  breach_lead: { label: '돌파선도', battleRoleTags: ['pressure', 'route-control', 'repair'], effectFamilies: ['gear', 'physical-ai-tech'] },
+  field_coordinator: { label: '전장조율', battleRoleTags: ['formation', 'supply', 'negotiation', 'records'], effectFamilies: ['morale', 'information', 'agitation'] },
+  recovery_specialist: { label: '회복지원', battleRoleTags: ['sustain', 'repair', 'triage', 'supply'], effectFamilies: ['medicine', 'gear', 'morale'] },
+  route_operative: { label: '경로공작', battleRoleTags: ['recon', 'covert', 'route-control', 'records'], effectFamilies: ['information', 'physical-ai-tech', 'agitation'] },
+  expedition_anchor: { label: '원정중추', battleRoleTags: ['formation', 'sustain'], effectFamilies: ['morale', 'information'] },
+}
+const heroClassFor = (occupation, title) => {
+  const source = `${occupation} ${title}`
+  if (/의무|의료|치료|간호|약|위생|구휼/u.test(source)) return 'recovery_specialist'
+  if (/정비|기공|공병|기술|차량|펌프|제작|수리|구난/u.test(source)) return 'breach_lead'
+  if (/순찰|호위|경비|사령|방호|군정|병장|전투/u.test(source)) return 'line_warden'
+  if (/전령|탐사|정찰|통역|정보|배차|운송|철도/u.test(source)) return 'route_operative'
+  if (/기록|서기|감사|조정|중재|대표|회장|위원장|역장|대통령|장로|사제|총무|이사/u.test(source)) return 'field_coordinator'
+  if (/물류|상인|보급|배급|창고|냉동/u.test(source)) return 'field_coordinator'
+  return 'expedition_anchor'
+}
+const campaignRolesFor = ({ heroClassId, occupation, position, values }) => {
+  const source = `${occupation} ${position}`
+  const roles = new Set()
+  if (/조정|중재|대표|회장|위원장|역장|대통령|장로|통역|상인/u.test(source) || values['개방'] >= 20) roles.add('diplomacy')
+  if ((heroClassId === 'line_warden' || heroClassId === 'route_operative') && values['무력'] >= 20 && values['공개'] <= -20) roles.add('assassination')
+  if ((heroClassId === 'breach_lead' || heroClassId === 'route_operative') && values['변혁'] >= 10) roles.add('sabotage')
+  if (['route_operative', 'field_coordinator'].includes(heroClassId) || /기록|전령|탐사|정찰|정보/u.test(source)) roles.add('intelligence')
+  return [...roles].sort()
+}
 const peopleCatalog = peopleSource.map((person, index) => {
   const cards = personCards.get(person.name) ?? []
   const primary = [...cards].sort((left, right) => right.body.length - left.body.length)[0]
@@ -393,14 +420,24 @@ const peopleCatalog = peopleSource.map((person, index) => {
   const stateTiers = tiersByState.get(person.state_name)
   const tierIndex = stateTiers?.indexOf(rank) ?? -1
   const commonTier = person.state === 'S00' ? 'T5' : tierIndex >= 0 ? `T${tierIndex + 1}` : (() => { throw new Error(`E_PERSON_TIER_MISSING:${person.name}:${person.state_name}:${rank}`) })()
+  const heroClassId = heroClassFor(occupation, `${position} ${person.title}`)
+  const heroClass = heroClasses[heroClassId]
+  const campaignRoles = campaignRolesFor({ heroClassId, occupation, position, values: person.values })
   return {
     id: `person-${String(index + 1).padStart(4, '0')}`,
+    heroId: `hero-person-${String(index + 1).padStart(4, '0')}`,
     name: person.name,
     title: person.title,
     position,
     rank,
     commonTier,
     occupation,
+    heroClassId,
+    heroClass: heroClass.label,
+    battleRoleTags: heroClass.battleRoleTags,
+    effectFamilies: heroClass.effectFamilies,
+    campaignRoles,
+    commandEligible: ['T1', 'T2', 'T3'].includes(commonTier) || ['line_warden', 'breach_lead', 'field_coordinator'].includes(heroClassId),
     gender: genderByName.get(person.name)?.gender ?? (() => { throw new Error(`E_PERSON_GENDER_MISSING:${person.name}`) })(),
     stage: person.stage,
     state: person.state,

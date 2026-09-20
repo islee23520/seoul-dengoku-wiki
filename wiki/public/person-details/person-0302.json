@@ -1,11 +1,29 @@
 {
   "id": "person-0302",
+  "heroId": "hero-person-0302",
   "name": "곽태산",
   "title": "의료열차 수비대장",
   "position": "의료열차 수비대장",
   "rank": "호송원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "recovery_specialist",
+  "heroClass": "회복지원",
+  "battleRoleTags": [
+    "sustain",
+    "repair",
+    "triage",
+    "supply"
+  ],
+  "effectFamilies": [
+    "medicine",
+    "gear",
+    "morale"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S1",
   "state": "S12",

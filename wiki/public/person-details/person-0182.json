@@ -1,11 +1,29 @@
 {
   "id": "person-0182",
+  "heroId": "hero-person-0182",
   "name": "연시완",
   "title": "열차 배차원장 기록관",
   "position": "열차 배차원장 기록관",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "route_operative",
+  "heroClass": "경로공작",
+  "battleRoleTags": [
+    "recon",
+    "covert",
+    "route-control",
+    "records"
+  ],
+  "effectFamilies": [
+    "information",
+    "physical-ai-tech",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "intelligence"
+  ],
+  "commandEligible": false,
   "gender": "여성",
   "stage": "S2",
   "state": "S07",

@@ -1,11 +1,27 @@
 {
   "id": "person-0311",
+  "heroId": "hero-person-0311",
   "name": "국소",
   "title": "신내 차량기지 당직장",
   "position": "신내 차량기지 당직장",
   "rank": "호송원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "breach_lead",
+  "heroClass": "돌파선도",
+  "battleRoleTags": [
+    "pressure",
+    "route-control",
+    "repair"
+  ],
+  "effectFamilies": [
+    "gear",
+    "physical-ai-tech"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": true,
   "gender": "여성",
   "stage": "S2",
   "state": "S12",

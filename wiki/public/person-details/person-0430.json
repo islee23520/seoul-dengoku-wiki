@@ -1,11 +1,30 @@
 {
   "id": "person-0430",
+  "heroId": "hero-person-0430",
   "name": "윤시우",
   "title": "배차 서기",
   "position": "배차 서기",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "route_operative",
+  "heroClass": "경로공작",
+  "battleRoleTags": [
+    "recon",
+    "covert",
+    "route-control",
+    "records"
+  ],
+  "effectFamilies": [
+    "information",
+    "physical-ai-tech",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "intelligence",
+    "sabotage"
+  ],
+  "commandEligible": false,
   "gender": "여성",
   "stage": "S4",
   "state": "S07",

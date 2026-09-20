@@ -1,11 +1,25 @@
 {
   "id": "person-0092",
+  "heroId": "hero-person-0092",
   "name": "이준택",
   "title": "군자기지 차량정비장",
   "position": "군자기지 차량정비장",
   "rank": "교사",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "breach_lead",
+  "heroClass": "돌파선도",
+  "battleRoleTags": [
+    "pressure",
+    "route-control",
+    "repair"
+  ],
+  "effectFamilies": [
+    "gear",
+    "physical-ai-tech"
+  ],
+  "campaignRoles": [],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "S1",
   "state": "S04",

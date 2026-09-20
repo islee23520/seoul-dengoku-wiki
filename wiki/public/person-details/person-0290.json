@@ -1,11 +1,25 @@
 {
   "id": "person-0290",
+  "heroId": "hero-person-0290",
   "name": "추지훈",
   "title": "차륜 정비 불량 폭로자",
   "position": "차륜 정비 불량 폭로자",
   "rank": "대리",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "breach_lead",
+  "heroClass": "돌파선도",
+  "battleRoleTags": [
+    "pressure",
+    "route-control",
+    "repair"
+  ],
+  "effectFamilies": [
+    "gear",
+    "physical-ai-tech"
+  ],
+  "campaignRoles": [],
+  "commandEligible": true,
   "gender": "여성",
   "stage": "S3",
   "state": "S11",

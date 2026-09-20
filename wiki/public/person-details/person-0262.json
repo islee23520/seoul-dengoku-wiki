@@ -1,11 +1,26 @@
 {
   "id": "person-0262",
+  "heroId": "hero-person-0262",
   "name": "봉두",
   "title": "방어 고지 거점장",
   "position": "방어 고지 거점장",
   "rank": "스님",
   "commonTier": "T4",
   "occupation": "미등록",
+  "heroClassId": "expedition_anchor",
+  "heroClass": "원정중추",
+  "battleRoleTags": [
+    "formation",
+    "sustain"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S2",
   "state": "S10",

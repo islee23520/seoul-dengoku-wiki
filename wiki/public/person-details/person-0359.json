@@ -1,11 +1,29 @@
 {
   "id": "person-0359",
+  "heroId": "hero-person-0359",
   "name": "천초윤",
   "title": "관문 공동승인 전령, 하윤목의 실무 담당자",
   "position": "관문 공동승인 전령, 하윤목의 실무 담당자",
   "rank": "병장",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "route_operative",
+  "heroClass": "경로공작",
+  "battleRoleTags": [
+    "recon",
+    "covert",
+    "route-control",
+    "records"
+  ],
+  "effectFamilies": [
+    "information",
+    "physical-ai-tech",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "intelligence"
+  ],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S2",
   "state": "S14",

@@ -1,11 +1,29 @@
 {
   "id": "person-0344",
+  "heroId": "hero-person-0344",
   "name": "창해온",
   "title": "의료헌장 협약 서명 서기",
   "position": "의료헌장 협약 서명 서기",
   "rank": "회원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "recovery_specialist",
+  "heroClass": "회복지원",
+  "battleRoleTags": [
+    "sustain",
+    "repair",
+    "triage",
+    "supply"
+  ],
+  "effectFamilies": [
+    "medicine",
+    "gear",
+    "morale"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": false,
   "gender": "여성",
   "stage": "S3",
   "state": "S13",

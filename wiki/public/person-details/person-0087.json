@@ -1,11 +1,28 @@
 {
   "id": "person-0087",
+  "heroId": "hero-person-0087",
   "name": "임초원",
   "title": "펌프기술자, 임하준의 양자",
   "position": "펌프기술자, 임하준의 양자",
   "rank": "교사",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "breach_lead",
+  "heroClass": "돌파선도",
+  "battleRoleTags": [
+    "pressure",
+    "route-control",
+    "repair"
+  ],
+  "effectFamilies": [
+    "gear",
+    "physical-ai-tech"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "sabotage"
+  ],
+  "commandEligible": true,
   "gender": "여성",
   "stage": "주요",
   "state": "S04",

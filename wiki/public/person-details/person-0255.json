@@ -1,11 +1,27 @@
 {
   "id": "person-0255",
+  "heroId": "hero-person-0255",
   "name": "용국",
   "title": "회랑 순찰대, 강태산의 실무 담당자",
   "position": "회랑 순찰대, 강태산의 실무 담당자",
   "rank": "신도",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "line_warden",
+  "heroClass": "전열수호",
+  "battleRoleTags": [
+    "formation",
+    "screening",
+    "route-control"
+  ],
+  "effectFamilies": [
+    "morale",
+    "gear"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": true,
   "gender": "여성",
   "stage": "S2",
   "state": "S10",

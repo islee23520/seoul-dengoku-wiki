@@ -1,11 +1,30 @@
 {
   "id": "person-0088",
+  "heroId": "hero-person-0088",
   "name": "오경재",
   "title": "당회장",
   "position": "설교명부정 당회장",
   "rank": "당회장",
   "commonTier": "T1",
   "occupation": "정수원리 전승자",
+  "heroClassId": "field_coordinator",
+  "heroClass": "전장조율",
+  "battleRoleTags": [
+    "formation",
+    "supply",
+    "negotiation",
+    "records"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "intelligence"
+  ],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "주요",
   "state": "S04",

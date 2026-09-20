@@ -1,11 +1,30 @@
 {
   "id": "person-0200",
+  "heroId": "hero-person-0200",
   "name": "오도윤",
   "title": "운송선주 평의",
   "position": "운송선주 평의",
   "rank": "수석교무",
   "commonTier": "T2",
   "occupation": "미등록",
+  "heroClassId": "route_operative",
+  "heroClass": "경로공작",
+  "battleRoleTags": [
+    "recon",
+    "covert",
+    "route-control",
+    "records"
+  ],
+  "effectFamilies": [
+    "information",
+    "physical-ai-tech",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "intelligence"
+  ],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "S1",
   "state": "S08",

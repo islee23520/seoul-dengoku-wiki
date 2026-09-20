@@ -1,11 +1,30 @@
 {
   "id": "person-0394",
+  "heroId": "hero-person-0394",
   "name": "범채온",
   "title": "군량 징발 인파 대표",
   "position": "군량 징발 인파 대표",
   "rank": "수사",
   "commonTier": "T3",
   "occupation": "미등록",
+  "heroClassId": "field_coordinator",
+  "heroClass": "전장조율",
+  "battleRoleTags": [
+    "formation",
+    "supply",
+    "negotiation",
+    "records"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "intelligence"
+  ],
+  "commandEligible": true,
   "gender": "여성",
   "stage": "S3",
   "state": "S15",

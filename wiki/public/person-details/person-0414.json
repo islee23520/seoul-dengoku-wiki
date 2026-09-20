@@ -1,11 +1,28 @@
 {
   "id": "person-0414",
+  "heroId": "hero-person-0414",
   "name": "원초온",
   "title": "수서 차량기지 당직장",
   "position": "수서 차량기지 당직장",
   "rank": "조합원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "breach_lead",
+  "heroClass": "돌파선도",
+  "battleRoleTags": [
+    "pressure",
+    "route-control",
+    "repair"
+  ],
+  "effectFamilies": [
+    "gear",
+    "physical-ai-tech"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "sabotage"
+  ],
+  "commandEligible": true,
   "gender": "여성",
   "stage": "S2",
   "state": "S16",

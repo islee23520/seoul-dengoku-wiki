@@ -1,11 +1,30 @@
 {
   "id": "person-0143",
+  "heroId": "hero-person-0143",
   "name": "여서하",
   "title": "검은 배차표 조사 서기",
   "position": "검은 배차표 조사 서기",
   "rank": "병장",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "route_operative",
+  "heroClass": "경로공작",
+  "battleRoleTags": [
+    "recon",
+    "covert",
+    "route-control",
+    "records"
+  ],
+  "effectFamilies": [
+    "information",
+    "physical-ai-tech",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "assassination",
+    "intelligence"
+  ],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S3",
   "state": "S05",

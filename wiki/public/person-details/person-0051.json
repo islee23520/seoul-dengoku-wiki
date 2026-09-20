@@ -1,11 +1,29 @@
 {
   "id": "person-0051",
+  "heroId": "hero-person-0051",
   "name": "고모래",
   "title": "복구복무 거부 증언 서기",
   "position": "복구복무 거부 증언 서기",
   "rank": "조합원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "field_coordinator",
+  "heroClass": "전장조율",
+  "battleRoleTags": [
+    "formation",
+    "supply",
+    "negotiation",
+    "records"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "intelligence"
+  ],
+  "commandEligible": true,
   "gender": "여성",
   "stage": "S3",
   "state": "S02",

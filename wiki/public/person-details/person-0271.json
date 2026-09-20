@@ -1,11 +1,26 @@
 {
   "id": "person-0271",
+  "heroId": "hero-person-0271",
   "name": "윤산호",
   "title": "피난로 안내 반장",
   "position": "피난로 안내 반장",
   "rank": "신도",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "expedition_anchor",
+  "heroClass": "원정중추",
+  "battleRoleTags": [
+    "formation",
+    "sustain"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": false,
   "gender": "여성",
   "stage": "S2",
   "state": "S10",

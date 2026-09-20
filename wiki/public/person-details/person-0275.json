@@ -1,11 +1,29 @@
 {
   "id": "person-0275",
+  "heroId": "hero-person-0275",
   "name": "서진아",
   "title": "주거공동체 감사",
   "position": "주거공동체 감사",
   "rank": "대리",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "field_coordinator",
+  "heroClass": "전장조율",
+  "battleRoleTags": [
+    "formation",
+    "supply",
+    "negotiation",
+    "records"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "intelligence"
+  ],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "S1",
   "state": "S11",

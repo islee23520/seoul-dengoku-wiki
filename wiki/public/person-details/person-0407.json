@@ -1,11 +1,29 @@
 {
   "id": "person-0407",
+  "heroId": "hero-person-0407",
   "name": "원새울",
   "title": "협약 회의 의무소 거점 의무원",
   "position": "협약 회의 의무소 거점 의무원",
   "rank": "조합원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "recovery_specialist",
+  "heroClass": "회복지원",
+  "battleRoleTags": [
+    "sustain",
+    "repair",
+    "triage",
+    "supply"
+  ],
+  "effectFamilies": [
+    "medicine",
+    "gear",
+    "morale"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S2",
   "state": "S16",

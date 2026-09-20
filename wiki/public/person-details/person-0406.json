@@ -1,11 +1,29 @@
 {
   "id": "person-0406",
+  "heroId": "hero-person-0406",
   "name": "선초별",
   "title": "강남 계약서 시장 물류상, 하서진의 실무 담당자",
   "position": "강남 계약서 시장 물류상, 하서진의 실무 담당자",
   "rank": "조합원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "recovery_specialist",
+  "heroClass": "회복지원",
+  "battleRoleTags": [
+    "sustain",
+    "repair",
+    "triage",
+    "supply"
+  ],
+  "effectFamilies": [
+    "medicine",
+    "gear",
+    "morale"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S2",
   "state": "S16",

@@ -1,11 +1,29 @@
 {
   "id": "person-0191",
+  "heroId": "hero-person-0191",
   "name": "추한결",
   "title": "둘째 급수협약 환적 증인",
   "position": "둘째 급수협약 환적 증인",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "recovery_specialist",
+  "heroClass": "회복지원",
+  "battleRoleTags": [
+    "sustain",
+    "repair",
+    "triage",
+    "supply"
+  ],
+  "effectFamilies": [
+    "medicine",
+    "gear",
+    "morale"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S3",
   "state": "S07",

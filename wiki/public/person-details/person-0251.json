@@ -1,11 +1,30 @@
 {
   "id": "person-0251",
+  "heroId": "hero-person-0251",
   "name": "오한결",
   "title": "민병 배급 감시",
   "position": "민병 배급 감시",
   "rank": "신도",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "field_coordinator",
+  "heroClass": "전장조율",
+  "battleRoleTags": [
+    "formation",
+    "supply",
+    "negotiation",
+    "records"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "intelligence"
+  ],
+  "commandEligible": true,
   "gender": "여성",
   "stage": "S1",
   "state": "S10",

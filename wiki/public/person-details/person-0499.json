@@ -1,11 +1,30 @@
 {
   "id": "person-0499",
+  "heroId": "hero-person-0499",
   "name": "우하진",
   "title": "의무호송 기록관",
   "position": "의무호송 기록관",
   "rank": "호송원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "recovery_specialist",
+  "heroClass": "회복지원",
+  "battleRoleTags": [
+    "sustain",
+    "repair",
+    "triage",
+    "supply"
+  ],
+  "effectFamilies": [
+    "medicine",
+    "gear",
+    "morale"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "intelligence"
+  ],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S4",
   "state": "S12",

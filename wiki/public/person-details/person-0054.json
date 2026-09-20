@@ -1,11 +1,24 @@
 {
   "id": "person-0054",
+  "heroId": "hero-person-0054",
   "name": "엄누리",
   "title": "후계시험 부품 감정 직공",
   "position": "후계시험 부품 감정 직공",
   "rank": "조합원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "expedition_anchor",
+  "heroClass": "원정중추",
+  "battleRoleTags": [
+    "formation",
+    "sustain"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information"
+  ],
+  "campaignRoles": [],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S3",
   "state": "S02",

@@ -1,11 +1,28 @@
 {
   "id": "person-0029",
+  "heroId": "hero-person-0029",
   "name": "강민서",
   "title": "제작평의회 중재자",
   "position": "규격동맹 위원장",
   "rank": "위원장",
   "commonTier": "T1",
   "occupation": "제작평의회 중재자",
+  "heroClassId": "breach_lead",
+  "heroClass": "돌파선도",
+  "battleRoleTags": [
+    "pressure",
+    "route-control",
+    "repair"
+  ],
+  "effectFamilies": [
+    "gear",
+    "physical-ai-tech"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "sabotage"
+  ],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "주요",
   "state": "S02",

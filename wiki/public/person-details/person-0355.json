@@ -1,11 +1,25 @@
 {
   "id": "person-0355",
+  "heroId": "hero-person-0355",
   "name": "선솔우",
   "title": "구의 펌프실 정비사, 곽민재의 실무 담당자",
   "position": "구의 펌프실 정비사, 곽민재의 실무 담당자",
   "rank": "병장",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "breach_lead",
+  "heroClass": "돌파선도",
+  "battleRoleTags": [
+    "pressure",
+    "route-control",
+    "repair"
+  ],
+  "effectFamilies": [
+    "gear",
+    "physical-ai-tech"
+  ],
+  "campaignRoles": [],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "S2",
   "state": "S14",

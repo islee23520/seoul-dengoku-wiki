@@ -1,11 +1,30 @@
 {
   "id": "person-0132",
+  "heroId": "hero-person-0132",
   "name": "나효원",
   "title": "암사역 대합실 역장",
   "position": "암사역 대합실 역장",
   "rank": "중대장",
   "commonTier": "T4",
   "occupation": "미등록",
+  "heroClassId": "field_coordinator",
+  "heroClass": "전장조율",
+  "battleRoleTags": [
+    "formation",
+    "supply",
+    "negotiation",
+    "records"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "intelligence"
+  ],
+  "commandEligible": true,
   "gender": "여성",
   "stage": "S2",
   "state": "S05",

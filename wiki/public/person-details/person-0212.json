@@ -1,11 +1,26 @@
 {
   "id": "person-0212",
+  "heroId": "hero-person-0212",
   "name": "나루희",
   "title": "노량진 제빙 비상발전 운전장",
   "position": "노량진 제빙 비상발전 운전장",
   "rank": "교생",
   "commonTier": "T4",
   "occupation": "미등록",
+  "heroClassId": "expedition_anchor",
+  "heroClass": "원정중추",
+  "battleRoleTags": [
+    "formation",
+    "sustain"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S2",
   "state": "S08",

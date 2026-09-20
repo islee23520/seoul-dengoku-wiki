@@ -1,11 +1,25 @@
 {
   "id": "person-0108",
+  "heroId": "hero-person-0108",
   "name": "변석훈",
   "title": "뚝섬 펌프실 발전운전장",
   "position": "뚝섬 펌프실 발전운전장",
   "rank": "집사",
   "commonTier": "T4",
   "occupation": "미등록",
+  "heroClassId": "breach_lead",
+  "heroClass": "돌파선도",
+  "battleRoleTags": [
+    "pressure",
+    "route-control",
+    "repair"
+  ],
+  "effectFamilies": [
+    "gear",
+    "physical-ai-tech"
+  ],
+  "campaignRoles": [],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "S2",
   "state": "S04",

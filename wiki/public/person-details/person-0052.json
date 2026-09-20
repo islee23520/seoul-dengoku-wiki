@@ -1,11 +1,29 @@
 {
   "id": "person-0052",
+  "heroId": "hero-person-0052",
   "name": "배온결",
   "title": "공신 보상 원장 서기",
   "position": "공신 보상 원장 서기",
   "rank": "조합원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "field_coordinator",
+  "heroClass": "전장조율",
+  "battleRoleTags": [
+    "formation",
+    "supply",
+    "negotiation",
+    "records"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "intelligence"
+  ],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "S3",
   "state": "S02",

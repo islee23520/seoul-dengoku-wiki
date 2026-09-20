@@ -1,11 +1,29 @@
 {
   "id": "person-0284",
+  "heroId": "hero-person-0284",
   "name": "국두",
   "title": "작업 사고 기록관, 조우찬의 실무 담당자",
   "position": "작업 사고 기록관, 조우찬의 실무 담당자",
   "rank": "대리",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "field_coordinator",
+  "heroClass": "전장조율",
+  "battleRoleTags": [
+    "formation",
+    "supply",
+    "negotiation",
+    "records"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "intelligence"
+  ],
+  "commandEligible": true,
   "gender": "여성",
   "stage": "S2",
   "state": "S11",

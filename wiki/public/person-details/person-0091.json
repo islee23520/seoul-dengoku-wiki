@@ -1,11 +1,25 @@
 {
   "id": "person-0091",
+  "heroId": "hero-person-0091",
   "name": "김보람",
   "title": "뚝섬 펌프수비대장",
   "position": "뚝섬 펌프수비대장",
   "rank": "교사",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "breach_lead",
+  "heroClass": "돌파선도",
+  "battleRoleTags": [
+    "pressure",
+    "route-control",
+    "repair"
+  ],
+  "effectFamilies": [
+    "gear",
+    "physical-ai-tech"
+  ],
+  "campaignRoles": [],
+  "commandEligible": true,
   "gender": "여성",
   "stage": "S1",
   "state": "S04",

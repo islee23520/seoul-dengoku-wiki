@@ -1,11 +1,26 @@
 {
   "id": "person-0320",
+  "heroId": "hero-person-0320",
   "name": "근솔이",
   "title": "중립시장 경매 유찰 관계자",
   "position": "중립시장 경매 유찰 관계자",
   "rank": "호송원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "expedition_anchor",
+  "heroClass": "원정중추",
+  "battleRoleTags": [
+    "formation",
+    "sustain"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S3",
   "state": "S12",

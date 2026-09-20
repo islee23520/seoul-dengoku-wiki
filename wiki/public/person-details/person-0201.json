@@ -1,11 +1,27 @@
 {
   "id": "person-0201",
+  "heroId": "hero-person-0201",
   "name": "지윤재",
   "title": "노량진 제빙기 정비사",
   "position": "노량진 제빙기 정비사",
   "rank": "교도",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "breach_lead",
+  "heroClass": "돌파선도",
+  "battleRoleTags": [
+    "pressure",
+    "route-control",
+    "repair"
+  ],
+  "effectFamilies": [
+    "gear",
+    "physical-ai-tech"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": true,
   "gender": "여성",
   "stage": "S2",
   "state": "S08",

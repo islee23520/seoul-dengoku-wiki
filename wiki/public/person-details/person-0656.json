@@ -1,11 +1,25 @@
 {
   "id": "person-0656",
+  "heroId": "hero-person-0656",
   "name": "성돌현",
   "title": "안테나 정비사",
   "position": "안테나 정비사",
   "rank": "직원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "breach_lead",
+  "heroClass": "돌파선도",
+  "battleRoleTags": [
+    "pressure",
+    "route-control",
+    "repair"
+  ],
+  "effectFamilies": [
+    "gear",
+    "physical-ai-tech"
+  ],
+  "campaignRoles": [],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "S4",
   "state": "S09",

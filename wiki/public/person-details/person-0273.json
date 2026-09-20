@@ -1,11 +1,25 @@
 {
   "id": "person-0273",
+  "heroId": "hero-person-0273",
   "name": "송하율",
   "title": "차량 정비 도제",
   "position": "차량 정비 도제",
   "rank": "대리",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "breach_lead",
+  "heroClass": "돌파선도",
+  "battleRoleTags": [
+    "pressure",
+    "route-control",
+    "repair"
+  ],
+  "effectFamilies": [
+    "gear",
+    "physical-ai-tech"
+  ],
+  "campaignRoles": [],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "S1",
   "state": "S11",

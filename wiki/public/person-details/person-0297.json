@@ -1,11 +1,29 @@
 {
   "id": "person-0297",
+  "heroId": "hero-person-0297",
   "name": "장세화",
   "title": "배차의무관",
   "position": "중립호송시 대표",
   "rank": "대표",
   "commonTier": "T1",
   "occupation": "배차의무관",
+  "heroClassId": "recovery_specialist",
+  "heroClass": "회복지원",
+  "battleRoleTags": [
+    "sustain",
+    "repair",
+    "triage",
+    "supply"
+  ],
+  "effectFamilies": [
+    "medicine",
+    "gear",
+    "morale"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "주요",
   "state": "S12",

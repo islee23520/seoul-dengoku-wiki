@@ -1,11 +1,29 @@
 {
   "id": "person-0131",
+  "heroId": "hero-person-0131",
   "name": "연하진",
   "title": "상수행정 급수원장 기록관",
   "position": "상수행정 급수원장 기록관",
   "rank": "병장",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "field_coordinator",
+  "heroClass": "전장조율",
+  "battleRoleTags": [
+    "formation",
+    "supply",
+    "negotiation",
+    "records"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "intelligence"
+  ],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "S2",
   "state": "S05",

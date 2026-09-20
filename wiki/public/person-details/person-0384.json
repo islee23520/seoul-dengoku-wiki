@@ -1,11 +1,30 @@
 {
   "id": "person-0384",
+  "heroId": "hero-person-0384",
   "name": "선다솜",
   "title": "호송 낙찰 전령, 문도윤의 실무 담당자",
   "position": "호송 낙찰 전령, 문도윤의 실무 담당자",
   "rank": "교우",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "route_operative",
+  "heroClass": "경로공작",
+  "battleRoleTags": [
+    "recon",
+    "covert",
+    "route-control",
+    "records"
+  ],
+  "effectFamilies": [
+    "information",
+    "physical-ai-tech",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "intelligence"
+  ],
+  "commandEligible": false,
   "gender": "여성",
   "stage": "S2",
   "state": "S15",
