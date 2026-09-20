@@ -10,6 +10,7 @@ test('main pushes deploy through the dedicated Windows runner', async () => {
   assert.match(workflow, /cancel-in-progress: false/)
   assert.match(workflow, /runs-on: \[self-hosted, Windows, X64, seoul-dengoku\]/)
   assert.match(workflow, /Repair stale private submodule metadata/)
+  assert.match(workflow, /git -C \$env:GITHUB_WORKSPACE submodule deinit -f --all/)
   assert.match(workflow, /\.git\\modules\\TOOL\\portrait-gen/)
   assert.match(workflow, /\.git\\modules\\TOOL\\unity-remote/)
   assert.match(workflow, /submodules: false/)

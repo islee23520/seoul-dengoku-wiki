@@ -22,6 +22,9 @@ jobs:
     steps:
       - name: Repair stale private submodule metadata
         run: |
+          if (Test-Path "$env:GITHUB_WORKSPACE\.git") {
+            git -C $env:GITHUB_WORKSPACE submodule deinit -f --all
+          }
           foreach ($path in @(
             "$env:GITHUB_WORKSPACE\TOOL\portrait-gen",
             "$env:GITHUB_WORKSPACE\TOOL\unity-remote",
