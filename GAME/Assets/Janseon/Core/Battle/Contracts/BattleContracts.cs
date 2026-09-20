@@ -115,7 +115,7 @@ namespace Janseon.Core.Battle.Contracts
         public string Id; public CardKind Kind; public int RechargeTicks; public int Effect; public string EffectKey;
     }
     public sealed class BattleRejection { public BattleRejectReason Reason; public string Detail; }
-    public sealed class BattleRules { public const int TicksPerSecond=30, MoveTicksPerCell=10, AttackCooldownTicks=30, MoraleBase=60, MoraleWarn=40, MoraleRecoverCap=80, MoraleRecoveryPerSecond=5, MoraleLossPerDeath=5, MoraleLossCommanderBelowHalf=10, SurrenderMoraleMax=20, SurrenderCommanderHpPercentMax=50, StrongholdCardSlots=2, CardEffectTicks=150, MaxTicks=9000, CommandRadius=3, MoraleLock=0, FormationRows=3, FormationColumns=3, CardRechargeMinTicks=300, CardRechargeMaxTicks=900; public const string LegacyRulesVersion="poc-rtfc-v1", RulesVersion="rtfc-owner-cards-v2"; }
+    public sealed class BattleRules { public const int TicksPerSecond=30, MoveTicksPerCell=10, AttackCooldownTicks=30, MoraleBase=10000, MoraleWarn=4000, MoraleRecoverCap=10000, MoraleRecoveryPerSecond=500, MoraleLossPerDeath=500, MoraleLossCommanderBelowHalf=1000, SurrenderMoraleMax=2000, SurrenderCommanderHpPercentMax=50, StrongholdCardSlots=2, CardEffectTicks=150, MaxTicks=9000, CommandRadius=3, MoraleLock=0, FormationRows=3, FormationColumns=3, CardRechargeMinTicks=300, CardRechargeMaxTicks=900; public const string LegacyRulesVersion="poc-rtfc-v1", RulesVersion="rtfc-owner-cards-v2"; }
     public static class BattleRoleRules { public static readonly string[] Roles={"근위","돌격","궁수"}; public static readonly int[] MaxHp={30,20,14}; public static readonly int[] Power={4,6,3}; public static readonly int[] RangeMax={1,1,3}; }
 
     public static class RealtimeBattleApi

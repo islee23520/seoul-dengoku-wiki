@@ -229,7 +229,14 @@ namespace Janseon.Core.Battle.Sim
                 }
             }
             ClearUnavailableActorOrders(state);
-            ReinforcementRules.Resolve(state); if (state.Outcome != ContractOutcome.Ongoing) { ClearAllOrders(state); TickCards(state); ledger.Events.Add(new TypedEvent { Id=new EventId("btick-"+state.Tick.ToString(CultureInfo.InvariantCulture)), At=new Tick(state.Tick), SummaryHash=state.Fingerprint() }); state.Tick++; return; } IntentPlanner.Resolve(state); ResolveIndividualCombat(state, fixedDeltaTime); MoraleRules.Resolve(state); state.Sides[1].RetreatCovered = OutcomeRules.RetreatCovered(state); OutcomeRules.Resolve(state); ClearInvalidOrders(state);
+            ReinforcementRules.Resolve(state); if (state.Outcome != ContractOutcome.Ongoing) { ClearAllOrders(state); TickCards(state); ledger.Events.Add(new TypedEvent { Id=new EventId("btick-"+state.Tick.ToString(CultureInfo.InvariantCulture)), At=new Tick(state.Tick), SummaryHash=state.Fingerprint() }); state.Tick++; return; }
+            var previousElapsed = state.ElapsedSeconds - fixedDeltaTime;
+            var enemyDecisionInterval = 0.5f;
+            var enemyDecisionDue = (int)Math.Floor(state.ElapsedSeconds / enemyDecisionInterval) > (int)Math.Floor(previousElapsed / enemyDecisionInterval);
+            if (enemyDecisionDue) ResolveEnemyIntent(state);
+            IntentPlanner.Resolve(state); ResolveIndividualCombat(state, fixedDeltaTime); MoraleRules.Resolve(state); state.Sides[1].RetreatCovered = OutcomeRules.RetreatCovered(state);
+            if (state.Sides[1].Morale <= BattleRules.MoraleLock && HasLivingSide(state, 0)) state.Outcome = ContractOutcome.PlayerRout;
+            else OutcomeRules.Resolve(state); ClearInvalidOrders(state);
             TickCards(state);
             ledger.Events.Add(new TypedEvent { Id=new EventId("btick-"+state.Tick.ToString(CultureInfo.InvariantCulture)), At=new Tick(state.Tick), SummaryHash=state.Fingerprint() }); state.Tick++;
             state.PublishFrame();
@@ -285,6 +292,47 @@ namespace Janseon.Core.Battle.Sim
                 unit.SurvivorCount = Math.Min(unit.SurvivorCount, unit.Hp <= 0 ? 0 : (int)((4L * unit.Hp + unit.MaxHp - 1L) / unit.MaxHp));
                 if (unit.Hp == 0) unit.State = "Down";
             }
+        }
+
+        static void ResolveEnemyIntent(BattleSimState state)
+        {
+            var enemies = new List<UnitState>(state.Units);
+            enemies.Sort((a, b) => string.CompareOrdinal(a.Id.Value, b.Id.Value));
+            for (var i = 0; i < enemies.Count; i++)
+            {
+                var enemy = enemies[i];
+                if (enemy.Side != 1 || enemy.State != "Active" || enemy.Hp <= 0) continue;
+                var target = FindUnit(state, enemy.OrderTargetUnitId);
+                if (!IsLivingPlayer(target)) target = NearestLivingPlayer(state, enemy);
+                if (!IsLivingPlayer(target)) target = BattlefieldTargetAnchor(state, enemy);
+                if (target == null) continue;
+                enemy.OrderKind = BattleOrderKind.Attack;
+                enemy.OrderTargetUnitId = target.Id;
+            }
+        }
+
+        static UnitState NearestLivingPlayer(BattleSimState state, UnitState actor)
+        {
+            UnitState best = null; var distance = int.MaxValue;
+            for (var i = 0; i < state.Units.Length; i++)
+            {
+                var candidate = state.Units[i]; if (!IsLivingPlayer(candidate)) continue;
+                var d = actor.Cell.ManhattanTo(candidate.Cell);
+                if (d < distance || d == distance && string.CompareOrdinal(candidate.Id.Value, best == null ? string.Empty : best.Id.Value) < 0) { best = candidate; distance = d; }
+            }
+            return best;
+        }
+
+        static UnitState BattlefieldTargetAnchor(BattleSimState state, UnitState actor)
+        {
+            var best = NearestLivingPlayer(state, actor);
+            return best;
+        }
+
+        static bool HasLivingSide(BattleSimState state, int side)
+        {
+            for (var i = 0; i < state.Units.Length; i++) if (state.Units[i].Side == side && state.Units[i].State != "Down" && state.Units[i].Hp > 0) return true;
+            return false;
         }
 
         static bool HasLineOfSight(BattleSimState state, GridCoord from, GridCoord to)

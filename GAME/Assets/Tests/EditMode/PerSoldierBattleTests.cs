@@ -159,6 +159,49 @@ namespace Janseon.Foundation.Tests
             Assert.That(replay.Fingerprint(), Is.EqualTo(state.Fingerprint()));
         }
 
+        [Test]
+        public void AiMoraleAndTerminalOutcome()
+        {
+            var setup = BattleSetup.FromContext(BattleContext.Create("campaign", default(StationId), 7, new Tick(0), 0, 0, BattleRules.RulesVersion, "task11-happy", UnitHpSnapshot.DefaultParty()));
+            setup.PlayerUnits = new[] { Soldier("ally-a", "A", 10000, 1, 1, 1) };
+            setup.EnemyUnits = new[] { Soldier("foe-a", "E-A", 10000, 1, 1, 1, 1) };
+            var state = BattleSim.Open(setup);
+            state.Units[0].Cell = new GridCoord(3, 3);
+            state.Units[1].Cell = new GridCoord(8, 3);
+            var before = state.Units[1].Cell;
+            BattleSim.Step(state, new Ledger(), 0.5f);
+            Assert.That(state.Units[1].Cell, Is.Not.EqualTo(before));
+            state.Units[1].Hp = 0;
+            state.Sides[1].Morale = 2000;
+            BattleSim.Step(state, new Ledger(), 0.5f);
+            Assert.That(state.Sides[1].Morale, Is.LessThan(2000));
+            Assert.That(state.Outcome, Is.EqualTo(BattleOutcomeKind.PlayerVictory).Or.EqualTo(BattleOutcomeKind.EnemySurrender).Or.EqualTo(BattleOutcomeKind.PlayerRout));
+        }
+
+        [Test]
+        public void BlockedRetreatStillAllowsSurrenderProposal()
+        {
+            var setup = BattleSetup.FromContext(BattleContext.Create("campaign", default(StationId), 7, new Tick(0), 0, 0, BattleRules.RulesVersion, "task11-failure", UnitHpSnapshot.DefaultParty()));
+            setup.PlayerUnits = new[] { Soldier("ally-a", "A", 10000, 1, 1, 1) };
+            setup.EnemyUnits = new[] { Soldier("foe-a", "E-A", 10000, 1, 1, 1, 1) };
+            var state = BattleSim.Open(setup);
+            state.Deployed = true;
+            state.Sides[1].Morale = 1000;
+            state.Sides[1].CommanderHpPercent = 10;
+            state.Arena.EnemyRetreatEdge = new[] { new GridCoord(3, 3) };
+            state.Units[0].Cell = new GridCoord(2, 3);
+            var retreat = BattleSim.Submit(state, new Ledger(), new BattleTickCommand { Id = new CommandId("retreat"), At = new Tick(0), Seq = 0, Kind = BattleTickCommandKind.OrderRetreat });
+            Assert.That(((BattleRejection)retreat).Reason, Is.EqualTo(BattleRejectReason.RetreatUnavailable));
+            var ledger = new Ledger();
+            var surrender = BattleSim.Submit(state, ledger, new BattleTickCommand { Id = new CommandId("surrender"), At = new Tick(0), Seq = 1, Kind = BattleTickCommandKind.DemandSurrender });
+            Assert.That(surrender, Is.Null);
+            var result = BattleSim.Result(state);
+            Assert.That(result.Outcome, Is.EqualTo(BattleOutcomeKind.EnemySurrender));
+            Assert.That(ledger.Events.Count, Is.EqualTo(1));
+            BattleSim.Step(state, ledger);
+            Assert.That(ledger.Events.Count, Is.EqualTo(1));
+        }
+
         static RosterUnit Soldier(string id, string soldierId, int hp, int power, int minRange, int maxRange, int side = 0)
         {
             return new RosterUnit { Id = new UnitId(id), SoldierId = new SoldierId(soldierId), SquadId = new SquadId("squad-1"), Side = side, Hp = hp, MaxHp = Math.Max(1, hp), Power = power, RangeMin = minRange, RangeMax = maxRange, AttackCooldownTicks = 30, MoveTicksPerCell = 1 };
