@@ -42,6 +42,8 @@ test('Docker builder is reproducible and exports the complete deployment contrac
   assert.match(windowsDeploy, /if \(\$promoted -and \(Test-Path \$previous\)\)/)
   assert.match(windowsDeploy, /manifestVerifier/)
   assert.doesNotMatch(windowsDeploy, /-lt 230/)
+  assert.match(windowsDeploy, /Invoke-Native "node" @\(\$postVerifyScript/)
+  assert.doesNotMatch(windowsDeploy, /Invoke-Native "bash" @\(\$postVerifyScript/)
   assert.match(await readFile(resolve(deployDir, '../../../WEB/wiki-source/scripts/mount.mjs'), 'utf8'), /'AGENTS\.md'/)
   assert.match(await readFile(resolve(deployDir, '../design-store/seed-from-canon.mjs'), 'utf8'), /endsWith\('AGENTS\.md'\)/)
   assert.match(await readFile(resolve(deployDir, '../design-store/seed-from-canon.mjs'), 'utf8'), /startsWith\('design-store\/'\)/)
