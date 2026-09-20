@@ -1,0 +1,1653 @@
+[
+  {
+    "object": "Male_Upper_GumArch",
+    "before_intersections": 1,
+    "root_vertex_count": 84,
+    "changed_constraint": "Keep anatomical84/82root fixed; defective socket vertices may move within .0015 normalized head units",
+    "limits": {
+      "maximum_move_source_units": 0.0015,
+      "area_ratio": [
+        0.995,
+        1.005
+      ]
+    },
+    "candidates": [
+      {
+        "strength": 0.001,
+        "intersections": 1,
+        "pairs": [
+          {
+            "triangles": [
+              131,
+              133
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0010419404065460905,
+            "shared_vertices": 0
+          }
+        ],
+        "contacts": 18,
+        "new_contacts": 0,
+        "max_move": 1.2282480410410412e-05,
+        "socket_boundary_max_move": 1.2282480410410412e-05,
+        "area_ratio": 0.9999960287267113,
+        "eligible": false
+      },
+      {
+        "strength": 0.005,
+        "intersections": 1,
+        "pairs": [
+          {
+            "triangles": [
+              131,
+              133
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0010006601889013798,
+            "shared_vertices": 0
+          }
+        ],
+        "contacts": 18,
+        "new_contacts": 0,
+        "max_move": 6.110678240503226e-05,
+        "socket_boundary_max_move": 6.110678240503226e-05,
+        "area_ratio": 0.9999802605211207,
+        "eligible": false
+      },
+      {
+        "strength": 0.01,
+        "intersections": 1,
+        "pairs": [
+          {
+            "triangles": [
+              131,
+              133
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0009494906472712783,
+            "shared_vertices": 0
+          }
+        ],
+        "contacts": 18,
+        "new_contacts": 0,
+        "max_move": 0.0001214791117576482,
+        "socket_boundary_max_move": 0.0001214791117576482,
+        "area_ratio": 0.9999607743784305,
+        "eligible": false
+      },
+      {
+        "strength": 0.025,
+        "intersections": 1,
+        "pairs": [
+          {
+            "triangles": [
+              131,
+              133
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0007987576082059799,
+            "shared_vertices": 0
+          }
+        ],
+        "contacts": 18,
+        "new_contacts": 0,
+        "max_move": 0.000298309889122047,
+        "socket_boundary_max_move": 0.000298309889122047,
+        "area_ratio": 0.9999037551927082,
+        "eligible": false
+      },
+      {
+        "strength": 0.05,
+        "intersections": 1,
+        "pairs": [
+          {
+            "triangles": [
+              131,
+              133
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0005564515319600551,
+            "shared_vertices": 0
+          }
+        ],
+        "contacts": 18,
+        "new_contacts": 0,
+        "max_move": 0.0005795121621762355,
+        "socket_boundary_max_move": 0.0005795121621762355,
+        "area_ratio": 0.9998132470083544,
+        "eligible": false
+      },
+      {
+        "strength": 0.1,
+        "intersections": 1,
+        "pairs": [
+          {
+            "triangles": [
+              131,
+              133
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.00010211277645205382,
+            "shared_vertices": 0
+          }
+        ],
+        "contacts": 18,
+        "new_contacts": 0,
+        "max_move": 0.001096552956629516,
+        "socket_boundary_max_move": 0.001096552956629516,
+        "area_ratio": 0.9996472881138336,
+        "eligible": false
+      },
+      {
+        "strength": 0.2,
+        "intersections": 0,
+        "pairs": [],
+        "contacts": 18,
+        "new_contacts": 0,
+        "max_move": 0.0019817165977990153,
+        "socket_boundary_max_move": 0.0019817165977990153,
+        "area_ratio": 0.9993646502893766,
+        "eligible": false
+      },
+      {
+        "strength": 0.35,
+        "intersections": 1,
+        "pairs": [
+          {
+            "triangles": [
+              127,
+              878
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.010634443660615535,
+            "shared_vertices": 1
+          }
+        ],
+        "contacts": 18,
+        "new_contacts": 0,
+        "max_move": 0.003035829261265723,
+        "socket_boundary_max_move": 0.003035829261265723,
+        "area_ratio": 0.9990405423352108,
+        "eligible": false
+      },
+      {
+        "strength": 0.5,
+        "intersections": 0,
+        "pairs": [],
+        "contacts": 18,
+        "new_contacts": 0,
+        "max_move": 0.003862763501332265,
+        "socket_boundary_max_move": 0.003862763501332265,
+        "area_ratio": 0.9987943285245896,
+        "eligible": false
+      },
+      {
+        "strength": 1.0,
+        "intersections": 0,
+        "pairs": [],
+        "contacts": 18,
+        "new_contacts": 0,
+        "max_move": 0.005696376339239429,
+        "socket_boundary_max_move": 0.005696376339239429,
+        "area_ratio": 0.9981965247633849,
+        "eligible": false
+      },
+      {
+        "strength": 2.0,
+        "intersections": 0,
+        "pairs": [],
+        "contacts": 18,
+        "new_contacts": 0,
+        "max_move": 0.007542776092908882,
+        "socket_boundary_max_move": 0.007542776092908882,
+        "area_ratio": 0.9973969510143292,
+        "eligible": false
+      }
+    ],
+    "selected": null
+  },
+  {
+    "object": "Male_Lower_GumArch",
+    "before_intersections": 17,
+    "root_vertex_count": 82,
+    "changed_constraint": "Keep anatomical84/82root fixed; defective socket vertices may move within .0015 normalized head units",
+    "limits": {
+      "maximum_move_source_units": 0.0015,
+      "area_ratio": [
+        0.995,
+        1.005
+      ]
+    },
+    "candidates": [
+      {
+        "strength": 0.001,
+        "intersections": 16,
+        "pairs": [
+          {
+            "triangles": [
+              15,
+              421
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.005692419610808392,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              18,
+              454
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.004531278812347737,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              50,
+              418
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0019515311523492485,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              51,
+              420
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.00044716546640461916,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              51,
+              421
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.005039755774553719,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              105,
+              870
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.00466901941313278,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              118,
+              809
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0013580705358157748,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              118,
+              810
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.004519640699125115,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              118,
+              819
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.006762648788356269,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              121,
+              127
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.00703269103154144,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              287,
+              454
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.004176897940283794,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              418,
+              419
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.002414529761784797,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              418,
+              420
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.003153284850636928,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              748,
+              870
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.004030769009388609,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              820,
+              823
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0004574043471337226,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              821,
+              823
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0008703809180988249,
+            "shared_vertices": 0
+          }
+        ],
+        "contacts": 8,
+        "new_contacts": 0,
+        "max_move": 2.265510846032991e-05,
+        "socket_boundary_max_move": 2.265510846032991e-05,
+        "area_ratio": 0.9999576117531198,
+        "eligible": false
+      },
+      {
+        "strength": 0.005,
+        "intersections": 16,
+        "pairs": [
+          {
+            "triangles": [
+              15,
+              421
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.005697161049719517,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              18,
+              454
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.004493418169093649,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              50,
+              418
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.001934589645476268,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              51,
+              420
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0004450614655705787,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              51,
+              421
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.005017688274178378,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              105,
+              870
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.004648193414504738,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              118,
+              809
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.001346191545949013,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              118,
+              810
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.00450961214441864,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              118,
+              819
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.006731547372685982,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              121,
+              127
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.007016281258747827,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              287,
+              454
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.004219219401559739,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              418,
+              419
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.002400230295193456,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              418,
+              420
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0031222163818127075,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              748,
+              870
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.004054452594535448,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              820,
+              823
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.00043124425038853706,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              821,
+              823
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0008253911610289957,
+            "shared_vertices": 0
+          }
+        ],
+        "contacts": 8,
+        "new_contacts": 0,
+        "max_move": 0.00011268508842164591,
+        "socket_boundary_max_move": 0.00011268508842164591,
+        "area_ratio": 0.9997894535127012,
+        "eligible": false
+      },
+      {
+        "strength": 0.01,
+        "intersections": 16,
+        "pairs": [
+          {
+            "triangles": [
+              15,
+              421
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.005703083259814286,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              18,
+              454
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.004447064356088975,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              50,
+              418
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0019138642289039508,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              51,
+              420
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0004427037893589506,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              51,
+              421
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.004990186553950948,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              105,
+              870
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.004622541146639229,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              118,
+              809
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0013315841208240775,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              118,
+              810
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0044970702687132155,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              118,
+              819
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0066930126750567144,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              121,
+              127
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.006996253778749445,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              287,
+              454
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0042711612584060005,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              418,
+              419
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0023826267306072636,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              418,
+              420
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.003083940471177585,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              748,
+              870
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.00408367335592704,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              820,
+              823
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0003988802322900595,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              821,
+              823
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0007690766700903188,
+            "shared_vertices": 0
+          }
+        ],
+        "contacts": 8,
+        "new_contacts": 0,
+        "max_move": 0.0002240446906164051,
+        "socket_boundary_max_move": 0.0002240446906164051,
+        "area_ratio": 0.9995826720458221,
+        "eligible": false
+      },
+      {
+        "strength": 0.025,
+        "intersections": 16,
+        "pairs": [
+          {
+            "triangles": [
+              15,
+              421
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.005720600721698102,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              18,
+              454
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.004314163012176846,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              50,
+              418
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.001854065151718614,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              51,
+              420
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.00043746227885994686,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              51,
+              421
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.004908276056840996,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              105,
+              870
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.00454787585361264,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              118,
+              809
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0012893389714668984,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              118,
+              810
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0044594946834326694,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              118,
+              819
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.006579434015426554,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              121,
+              127
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.006938031952950334,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              287,
+              454
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.004420728412080735,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              418,
+              419
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.002331413778841197,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              418,
+              420
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.002972368043949837,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              748,
+              870
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.004168855814573481,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              820,
+              823
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0003038252762499645,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              821,
+              823
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0005991528871503865,
+            "shared_vertices": 0
+          }
+        ],
+        "contacts": 8,
+        "new_contacts": 0,
+        "max_move": 0.0005506904178282756,
+        "socket_boundary_max_move": 0.0005506904178282756,
+        "area_ratio": 0.9989838064761193,
+        "eligible": false
+      },
+      {
+        "strength": 0.05,
+        "intersections": 16,
+        "pairs": [
+          {
+            "triangles": [
+              15,
+              421
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.00574891377073725,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              18,
+              454
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0041113708846806825,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              50,
+              418
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0017623333834546721,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              51,
+              420
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.00043424824346475696,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              51,
+              421
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.00477392759219493,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              105,
+              870
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.004430704432635351,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              118,
+              809
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0012237867635311568,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              118,
+              810
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.004397041758331844,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              118,
+              819
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.006396587240347946,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              121,
+              127
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.006847528530331923,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              287,
+              454
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.004650864451843263,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              418,
+              419
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0022512413789877927,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              418,
+              420
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0027969081967100223,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              748,
+              870
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.004303089819225528,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              820,
+              823
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.00015189052117822038,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              821,
+              823
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.00031153836155429007,
+            "shared_vertices": 0
+          }
+        ],
+        "contacts": 8,
+        "new_contacts": 0,
+        "max_move": 0.0010714477855005772,
+        "socket_boundary_max_move": 0.0010714477855005772,
+        "area_ratio": 0.9980522214439803,
+        "eligible": false
+      },
+      {
+        "strength": 0.1,
+        "intersections": 14,
+        "pairs": [
+          {
+            "triangles": [
+              15,
+              421
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.00580215116516313,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              18,
+              454
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.003763606341217321,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              50,
+              418
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0016055879063304771,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              51,
+              420
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.00044561428777558504,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              51,
+              421
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0045136774932407805,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              105,
+              870
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.004220470984132182,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              118,
+              809
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0011090554726928136,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              118,
+              810
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0042730746172301454,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              118,
+              819
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.006052788454907007,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              121,
+              127
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0066885411690425205,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              287,
+              454
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0050507819867455,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              418,
+              419
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0021073845173617285,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              418,
+              420
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.002480051770172825,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              748,
+              870
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.004545282462230324,
+            "shared_vertices": 1
+          }
+        ],
+        "contacts": 8,
+        "new_contacts": 0,
+        "max_move": 0.002033127402579583,
+        "socket_boundary_max_move": 0.002033127402579583,
+        "area_ratio": 0.9964053235372442,
+        "eligible": false
+      },
+      {
+        "strength": 0.2,
+        "intersections": 14,
+        "pairs": [
+          {
+            "triangles": [
+              15,
+              421
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.00589419067109131,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              18,
+              454
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0032364838274966472,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              50,
+              418
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0013811248816815152,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              51,
+              420
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0005208667062846853,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              51,
+              421
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.004029080851298017,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              105,
+              870
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0038789732359535076,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              118,
+              809
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0009316744305926663,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              118,
+              810
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.00403132586415871,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              118,
+              819
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.00543676222795735,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              121,
+              127
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.006448617795914516,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              287,
+              454
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.005669470970915531,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              418,
+              419
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0018700442292838822,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              418,
+              420
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0019529242434770853,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              748,
+              870
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.004941335432599331,
+            "shared_vertices": 1
+          }
+        ],
+        "contacts": 8,
+        "new_contacts": 0,
+        "max_move": 0.003692904430797809,
+        "socket_boundary_max_move": 0.003692904430797809,
+        "area_ratio": 0.9937747837037729,
+        "eligible": false
+      },
+      {
+        "strength": 0.35,
+        "intersections": 13,
+        "pairs": [
+          {
+            "triangles": [
+              15,
+              421
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.005999068495881823,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              18,
+              454
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.002708222319029472,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              51,
+              419
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.004025212448765214,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              51,
+              420
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0007079496768092209,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              51,
+              421
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.003392663340703689,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              105,
+              870
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0035099022165993687,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              118,
+              809
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0007506643511230413,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              118,
+              810
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.00369168320621724,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              118,
+              819
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.004642851386575621,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              287,
+              454
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0063021542260088955,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              418,
+              419
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0015510986826427354,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              418,
+              420
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0013441829429511202,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              748,
+              870
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.005370677429247538,
+            "shared_vertices": 1
+          }
+        ],
+        "contacts": 8,
+        "new_contacts": 0,
+        "max_move": 0.005692436769368862,
+        "socket_boundary_max_move": 0.005692436769368862,
+        "area_ratio": 0.9909154564252759,
+        "eligible": false
+      },
+      {
+        "strength": 0.5,
+        "intersections": 13,
+        "pairs": [
+          {
+            "triangles": [
+              15,
+              421
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.006072116976523361,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              18,
+              454
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.002362834809102972,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              51,
+              419
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.003630028124922218,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              51,
+              420
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0009290325049752263,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              51,
+              421
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0028557150005593035,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              105,
+              870
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.003256264887684889,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              118,
+              809
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0004319390430422808,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              118,
+              810
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0033921276950153348,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              118,
+              819
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.00395463854966548,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              287,
+              454
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0067178294251414895,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              418,
+              419
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0010039941632367182,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              418,
+              420
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0008734085751817569,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              748,
+              870
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.00566411431035033,
+            "shared_vertices": 1
+          }
+        ],
+        "contacts": 8,
+        "new_contacts": 0,
+        "max_move": 0.007279045595232643,
+        "socket_boundary_max_move": 0.007279045595232643,
+        "area_ratio": 0.9888386947584935,
+        "eligible": false
+      },
+      {
+        "strength": 1.0,
+        "intersections": 6,
+        "pairs": [
+          {
+            "triangles": [
+              15,
+              421
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.006180025317878933,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              51,
+              419
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.00263391921889507,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              51,
+              420
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0014043958807628786,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              51,
+              421
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.001589693232950733,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              105,
+              870
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0028405313316379613,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              748,
+              870
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.006125564152315237,
+            "shared_vertices": 1
+          }
+        ],
+        "contacts": 8,
+        "new_contacts": 0,
+        "max_move": 0.01085737349665332,
+        "socket_boundary_max_move": 0.01085737349665332,
+        "area_ratio": 0.9845817956905019,
+        "eligible": false
+      },
+      {
+        "strength": 2.0,
+        "intersections": 4,
+        "pairs": [
+          {
+            "triangles": [
+              15,
+              421
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.006195949847495474,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              51,
+              419
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.0010321896024308723,
+            "shared_vertices": 1
+          },
+          {
+            "triangles": [
+              51,
+              420
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.001070314974660625,
+            "shared_vertices": 0
+          },
+          {
+            "triangles": [
+              51,
+              421
+            ],
+            "type": "PROPER_INTERSECTION",
+            "segment_length": 0.00023954904815437234,
+            "shared_vertices": 0
+          }
+        ],
+        "contacts": 8,
+        "new_contacts": 0,
+        "max_move": 0.014567285161433042,
+        "socket_boundary_max_move": 0.014567285161433042,
+        "area_ratio": 0.9806150343186526,
+        "eligible": false
+      }
+    ],
+    "selected": null
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "gender": "Male",
+    "row_counts": [
+      64,
+      56,
+      48,
+      42
+    ],
+    "removed_source_rows": {
+      "head": 3,
+      "body": 4
+    },
+    "patch_faces": 431,
+    "patch_all_quads": true,
+    "source_faces_retained": 27408,
+    "status": "NECK_TRIAL_ONLY_SOURCE_DEFECTS_NOT_YET_REPAIRED"
+  },
+  {
+    "gender": "Female",
+    "row_counts": [
+      56,
+      48,
+      42,
+      36
+    ],
+    "removed_source_rows": {
+      "head": 2,
+      "body": 3
+    },
+    "patch_faces": 374,
+    "patch_all_quads": true,
+    "source_faces_retained": 49436,
+    "status": "NECK_TRIAL_ONLY_SOURCE_DEFECTS_NOT_YET_REPAIRED"
+  }
+]

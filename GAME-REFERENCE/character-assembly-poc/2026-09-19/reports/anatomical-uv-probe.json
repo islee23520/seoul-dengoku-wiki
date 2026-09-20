@@ -1,0 +1,98 @@
+{
+  "vertices": 66943,
+  "faces": 67430,
+  "local_bounds": [
+    [
+      -0.9419983625411987,
+      -0.1449582874774933,
+      2.4320676028644073e-10
+    ],
+    [
+      0.9419983625411987,
+      0.15600259602069855,
+      1.814997673034668
+    ]
+  ],
+  "unwrap_properties": [
+    {
+      "name": "method",
+      "type": "ENUM",
+      "options": [
+        "ANGLE_BASED",
+        "CONFORMAL",
+        "MINIMUM_STRETCH"
+      ],
+      "default": "CONFORMAL"
+    },
+    {
+      "name": "fill_holes",
+      "type": "BOOLEAN",
+      "options": null,
+      "default": false
+    },
+    {
+      "name": "correct_aspect",
+      "type": "BOOLEAN",
+      "options": null,
+      "default": true
+    },
+    {
+      "name": "use_subsurf_data",
+      "type": "BOOLEAN",
+      "options": null,
+      "default": false
+    },
+    {
+      "name": "use_original_bounds",
+      "type": "BOOLEAN",
+      "options": null,
+      "default": false
+    },
+    {
+      "name": "margin_method",
+      "type": "ENUM",
+      "options": [
+        "SCALED",
+        "ADD",
+        "FRACTION"
+      ],
+      "default": "SCALED"
+    },
+    {
+      "name": "margin",
+      "type": "FLOAT",
+      "options": null,
+      "default": 0.0010000000474974513
+    },
+    {
+      "name": "no_flip",
+      "type": "BOOLEAN",
+      "options": null,
+      "default": false
+    },
+    {
+      "name": "iterations",
+      "type": "INT",
+      "options": null,
+      "default": 10
+    },
+    {
+      "name": "use_weights",
+      "type": "BOOLEAN",
+      "options": null,
+      "default": false
+    },
+    {
+      "name": "weight_group",
+      "type": "STRING",
+      "options": null,
+      "default": "uv_importance"
+    },
+    {
+      "name": "weight_factor",
+      "type": "FLOAT",
+      "options": null,
+      "default": 1.0
+    }
+  ]
+}

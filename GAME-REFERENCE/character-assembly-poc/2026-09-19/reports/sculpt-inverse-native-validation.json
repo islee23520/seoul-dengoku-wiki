@@ -1,0 +1,37 @@
+{
+  "native_blender": "5.2.2 LTS",
+  "scene_unchanged": true,
+  "candidate_applied_to_user_mesh": false,
+  "folds": [
+    {
+      "heldout_sector": 0,
+      "native_seam_edges": 14,
+      "median_angle_deg": 7.754630941625059,
+      "p90_angle_deg": 23.354855832826225,
+      "max_angle_deg": 37.47535601345987,
+      "seam_winding_errors": 0,
+      "float32_evaluation_max_difference_m": 8.388624721944522e-08,
+      "outside_roi_move_m": 0.0
+    },
+    {
+      "heldout_sector": 1,
+      "native_seam_edges": 26,
+      "median_angle_deg": 5.96413420330324,
+      "p90_angle_deg": 10.334652084553689,
+      "max_angle_deg": 11.025443329943615,
+      "seam_winding_errors": 0,
+      "float32_evaluation_max_difference_m": 8.388624721944522e-08,
+      "outside_roi_move_m": 0.0
+    },
+    {
+      "heldout_sector": 2,
+      "native_seam_edges": 16,
+      "median_angle_deg": 3.950147485479668,
+      "p90_angle_deg": 8.653436451961369,
+      "max_angle_deg": 8.920390126803087,
+      "seam_winding_errors": 0,
+      "float32_evaluation_max_difference_m": 8.346216991315364e-08,
+      "outside_roi_move_m": 0.0
+    }
+  ]
+}

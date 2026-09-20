@@ -1,0 +1,423 @@
+[
+  {
+    "object": "Male_UpperGum_WithTeeth_Review.001",
+    "component": 0,
+    "vertices": 818,
+    "faces": 786,
+    "area": 0.04771586202824096,
+    "boundary": 344,
+    "junction": 10,
+    "status": "FAILED",
+    "error": "AssertionError: Repair touches protected boundary"
+  },
+  {
+    "object": "Male_UpperGum_WithTeeth_Review.001",
+    "component": 1,
+    "vertices": 207,
+    "faces": 252,
+    "area": 0.0059122650789333875,
+    "boundary": 33,
+    "junction": 2,
+    "after": {
+      "vertices": 201,
+      "faces": 240,
+      "area": 0.006124897170906252,
+      "boundary": 12,
+      "junction": 0,
+      "winding": 0,
+      "patches": 3,
+      "preserved_loops": [
+        12
+      ]
+    },
+    "retained_area_ratio": 1.0359645734983223,
+    "status": "STRUCTURAL_CANDIDATE_NOT_SHAPE_APPROVED"
+  },
+  {
+    "object": "Male_UpperGum_WithTeeth_Review.001",
+    "component": 2,
+    "vertices": 106,
+    "faces": 124,
+    "area": 0.0037174100098695817,
+    "boundary": 42,
+    "junction": 6,
+    "after": {
+      "vertices": 56,
+      "faces": 66,
+      "area": 0.0022570354174149543,
+      "boundary": 0,
+      "junction": 0,
+      "winding": 0,
+      "patches": 2,
+      "preserved_loops": []
+    },
+    "retained_area_ratio": 0.6071526711938181,
+    "status": "STRUCTURAL_CANDIDATE_NOT_SHAPE_APPROVED"
+  },
+  {
+    "object": "Male_UpperGum_WithTeeth_Review.001",
+    "component": 3,
+    "vertices": 102,
+    "faces": 122,
+    "area": 0.0030560658375407,
+    "boundary": 12,
+    "junction": 0,
+    "after": {
+      "vertices": 102,
+      "faces": 122,
+      "area": 0.003056065738746838,
+      "boundary": 12,
+      "junction": 0,
+      "winding": 0,
+      "patches": 0,
+      "preserved_loops": [
+        12
+      ]
+    },
+    "retained_area_ratio": 0.999999967672862,
+    "status": "STRUCTURAL_CANDIDATE_NOT_SHAPE_APPROVED"
+  },
+  {
+    "object": "Male_UpperGum_WithTeeth_Review.001",
+    "component": 4,
+    "vertices": 101,
+    "faces": 121,
+    "area": 0.0026648489282479204,
+    "boundary": 14,
+    "junction": 4,
+    "after": {
+      "vertices": 99,
+      "faces": 113,
+      "area": 0.002632959785728417,
+      "boundary": 12,
+      "junction": 0,
+      "winding": 0,
+      "patches": 1,
+      "preserved_loops": [
+        12
+      ]
+    },
+    "retained_area_ratio": 0.9880334145093659,
+    "status": "STRUCTURAL_CANDIDATE_NOT_SHAPE_APPROVED"
+  },
+  {
+    "object": "Male_UpperGum_WithTeeth_Review.001",
+    "component": 5,
+    "vertices": 100,
+    "faces": 123,
+    "area": 0.0026893330989423703,
+    "boundary": 12,
+    "junction": 0,
+    "after": {
+      "vertices": 100,
+      "faces": 123,
+      "area": 0.0026893323420154047,
+      "boundary": 12,
+      "junction": 0,
+      "winding": 0,
+      "patches": 0,
+      "preserved_loops": [
+        12
+      ]
+    },
+    "retained_area_ratio": 0.9999997185447329,
+    "status": "STRUCTURAL_CANDIDATE_NOT_SHAPE_APPROVED"
+  },
+  {
+    "object": "Male_UpperGum_WithTeeth_Review.001",
+    "component": 6,
+    "vertices": 67,
+    "faces": 86,
+    "area": 0.0021292148481961704,
+    "boundary": 12,
+    "junction": 2,
+    "status": "FAILED",
+    "error": "AssertionError: Repair touches protected boundary"
+  },
+  {
+    "object": "Male_UpperGum_WithTeeth_Review.001",
+    "component": 7,
+    "vertices": 66,
+    "faces": 82,
+    "area": 0.002126052248428323,
+    "boundary": 17,
+    "junction": 3,
+    "after": {
+      "vertices": 61,
+      "faces": 75,
+      "area": 0.002301592770578509,
+      "boundary": 0,
+      "junction": 0,
+      "winding": 0,
+      "patches": 1,
+      "preserved_loops": []
+    },
+    "retained_area_ratio": 1.0825664196540579,
+    "status": "STRUCTURAL_CANDIDATE_NOT_SHAPE_APPROVED"
+  },
+  {
+    "object": "Male_UpperGum_WithTeeth_Review.001",
+    "component": 8,
+    "vertices": 53,
+    "faces": 61,
+    "area": 0.0019891063151646904,
+    "boundary": 24,
+    "junction": 4,
+    "after": {
+      "vertices": 40,
+      "faces": 46,
+      "area": 0.001695472783438845,
+      "boundary": 0,
+      "junction": 0,
+      "winding": 0,
+      "patches": 1,
+      "preserved_loops": []
+    },
+    "retained_area_ratio": 0.8523791667206417,
+    "status": "STRUCTURAL_CANDIDATE_NOT_SHAPE_APPROVED"
+  },
+  {
+    "object": "Male_UpperGum_WithTeeth_Review.001",
+    "component": 9,
+    "vertices": 53,
+    "faces": 60,
+    "area": 0.0018635880384749726,
+    "boundary": 15,
+    "junction": 0,
+    "after": {
+      "vertices": 53,
+      "faces": 60,
+      "area": 0.0018635881542081734,
+      "boundary": 15,
+      "junction": 0,
+      "winding": 0,
+      "patches": 0,
+      "preserved_loops": [
+        15
+      ]
+    },
+    "retained_area_ratio": 1.0000000621023521,
+    "status": "STRUCTURAL_CANDIDATE_NOT_SHAPE_APPROVED"
+  },
+  {
+    "object": "Male_UpperGum_WithTeeth_Review.001",
+    "component": 10,
+    "vertices": 51,
+    "faces": 55,
+    "area": 0.0018625309726303385,
+    "boundary": 15,
+    "junction": 0,
+    "status": "FAILED",
+    "error": "AssertionError: Repair touches protected boundary"
+  },
+  {
+    "object": "Male_UpperGum_WithTeeth_Review.001",
+    "component": 11,
+    "vertices": 51,
+    "faces": 52,
+    "area": 0.001865501904831035,
+    "boundary": 15,
+    "junction": 0,
+    "status": "FAILED",
+    "error": "AssertionError: Repair touches protected boundary"
+  },
+  {
+    "object": "Male_Tongue_Review.001",
+    "component": 0,
+    "vertices": 266,
+    "faces": 268,
+    "area": 0.07707925286104,
+    "boundary": 24,
+    "junction": 0,
+    "after": {
+      "vertices": 265,
+      "faces": 268,
+      "area": 0.07685670886075968,
+      "boundary": 20,
+      "junction": 0,
+      "winding": 0,
+      "patches": 1,
+      "preserved_loops": [
+        20
+      ]
+    },
+    "retained_area_ratio": 0.9971127898621237,
+    "status": "STRUCTURAL_CANDIDATE_NOT_SHAPE_APPROVED"
+  },
+  {
+    "object": "Male_LowerGum_WithTeeth_Review.001",
+    "component": 0,
+    "vertices": 786,
+    "faces": 760,
+    "area": 0.053910758331966235,
+    "boundary": 349,
+    "junction": 20,
+    "status": "FAILED",
+    "error": "AssertionError: Repair touches protected boundary"
+  },
+  {
+    "object": "Male_LowerGum_WithTeeth_Review.001",
+    "component": 1,
+    "vertices": 265,
+    "faces": 326,
+    "area": 0.008806958704013823,
+    "boundary": 50,
+    "junction": 5,
+    "status": "FAILED",
+    "error": "AssertionError: Repair touches protected boundary"
+  },
+  {
+    "object": "Male_LowerGum_WithTeeth_Review.001",
+    "component": 2,
+    "vertices": 201,
+    "faces": 248,
+    "area": 0.0063575559652235825,
+    "boundary": 31,
+    "junction": 2,
+    "status": "FAILED",
+    "error": "AssertionError: Repair touches protected boundary"
+  },
+  {
+    "object": "Male_LowerGum_WithTeeth_Review.001",
+    "component": 3,
+    "vertices": 147,
+    "faces": 177,
+    "area": 0.0062657918309128036,
+    "boundary": 32,
+    "junction": 3,
+    "after": {
+      "vertices": 138,
+      "faces": 160,
+      "area": 0.006504791698830559,
+      "boundary": 9,
+      "junction": 0,
+      "winding": 0,
+      "patches": 2,
+      "preserved_loops": [
+        9
+      ]
+    },
+    "retained_area_ratio": 1.038143601697495,
+    "status": "STRUCTURAL_CANDIDATE_NOT_SHAPE_APPROVED"
+  },
+  {
+    "object": "Male_LowerGum_WithTeeth_Review.001",
+    "component": 4,
+    "vertices": 106,
+    "faces": 124,
+    "area": 0.003101398822906276,
+    "boundary": 15,
+    "junction": 0,
+    "after": {
+      "vertices": 102,
+      "faces": 123,
+      "area": 0.0032208794902146565,
+      "boundary": 0,
+      "junction": 0,
+      "winding": 0,
+      "patches": 1,
+      "preserved_loops": []
+    },
+    "retained_area_ratio": 1.0385247670908757,
+    "status": "STRUCTURAL_CANDIDATE_NOT_SHAPE_APPROVED"
+  },
+  {
+    "object": "Male_LowerGum_WithTeeth_Review.001",
+    "component": 5,
+    "vertices": 106,
+    "faces": 122,
+    "area": 0.0031335631221338645,
+    "boundary": 11,
+    "junction": 0,
+    "after": {
+      "vertices": 106,
+      "faces": 122,
+      "area": 0.0031335631221338645,
+      "boundary": 11,
+      "junction": 0,
+      "winding": 0,
+      "patches": 0,
+      "preserved_loops": [
+        11
+      ]
+    },
+    "retained_area_ratio": 1.0,
+    "status": "STRUCTURAL_CANDIDATE_NOT_SHAPE_APPROVED"
+  },
+  {
+    "object": "Male_LowerGum_WithTeeth_Review.001",
+    "component": 6,
+    "vertices": 66,
+    "faces": 76,
+    "area": 0.00238042047953968,
+    "boundary": 17,
+    "junction": 0,
+    "status": "FAILED",
+    "error": "AssertionError: Repair touches protected boundary"
+  },
+  {
+    "object": "Male_LowerGum_WithTeeth_Review.001",
+    "component": 7,
+    "vertices": 51,
+    "faces": 51,
+    "area": 0.001627632721692862,
+    "boundary": 13,
+    "junction": 0,
+    "after": {
+      "vertices": 51,
+      "faces": 51,
+      "area": 0.001627632721692862,
+      "boundary": 13,
+      "junction": 0,
+      "winding": 0,
+      "patches": 0,
+      "preserved_loops": [
+        13
+      ]
+    },
+    "retained_area_ratio": 1.0,
+    "status": "STRUCTURAL_CANDIDATE_NOT_SHAPE_APPROVED"
+  },
+  {
+    "object": "Male_LowerGum_WithTeeth_Review.001",
+    "component": 8,
+    "vertices": 51,
+    "faces": 54,
+    "area": 0.0016464072178905553,
+    "boundary": 16,
+    "junction": 0,
+    "after": {
+      "vertices": 52,
+      "faces": 54,
+      "area": 0.0016474513628281784,
+      "boundary": 0,
+      "junction": 0,
+      "winding": 0,
+      "patches": 1,
+      "preserved_loops": []
+    },
+    "retained_area_ratio": 1.0006341960398843,
+    "status": "STRUCTURAL_CANDIDATE_NOT_SHAPE_APPROVED"
+  },
+  {
+    "object": "Male_LowerGum_WithTeeth_Review.001",
+    "component": 9,
+    "vertices": 48,
+    "faces": 53,
+    "area": 0.001476675361487878,
+    "boundary": 12,
+    "junction": 3,
+    "after": {
+      "vertices": 38,
+      "faces": 42,
+      "area": 0.001382563589658048,
+      "boundary": 0,
+      "junction": 0,
+      "winding": 0,
+      "patches": 1,
+      "preserved_loops": []
+    },
+    "retained_area_ratio": 0.9362677984042448,
+    "status": "STRUCTURAL_CANDIDATE_NOT_SHAPE_APPROVED"
+  }
+]
