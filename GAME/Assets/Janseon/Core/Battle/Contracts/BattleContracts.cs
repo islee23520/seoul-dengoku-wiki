@@ -91,6 +91,22 @@ namespace Janseon.Core.Battle.Contracts
 
     public enum BattleTickCommandKind { Deploy, PlayCard, OrderRetreat, DemandSurrender, SetFacing, Move, Attack }
     public enum BattleOrderKind { None, Move, Attack }
+    public sealed class SquadOrder
+    {
+        public CommandId CommandId;
+        public string[] ActorIds;
+        public BattleOrderKind Kind;
+        public GridCoord Destination;
+        public UnitId TargetUnitId;
+        public SquadOrder Clone() => new SquadOrder { CommandId=CommandId, ActorIds=ActorIds == null ? null : (string[])ActorIds.Clone(), Kind=Kind, Destination=Destination, TargetUnitId=TargetUnitId };
+    }
+    public sealed class SquadOrderResult
+    {
+        public bool Accepted;
+        public bool Conflict;
+        public BattleRejection Rejection;
+        public SquadOrder Order;
+    }
     public sealed class BattleTickCommand
     {
         public CommandId Id; public int Seq; public Tick At; public BattleTickCommandKind Kind;
@@ -108,7 +124,7 @@ namespace Janseon.Core.Battle.Contracts
             };
         }
     }
-    public enum BattleRejectReason { TickMismatch, BattleStarted, NotDeployed, CardUnknown, CardRecharging, CardOutOfRadius, CommandsLocked, SurrenderConditionsUnmet, BattleEnded, UnknownActor, MalformedCommand, RetreatUnavailable, CardOwnerRequired, CardInvalidOwner, CardInvalidTarget, CardDestinationBlocked, CardDestinationOutOfBounds }
+    public enum BattleRejectReason { TickMismatch, BattleStarted, NotDeployed, CardUnknown, CardRecharging, CardOutOfRadius, CommandsLocked, SurrenderConditionsUnmet, BattleEnded, UnknownActor, MalformedCommand, RetreatUnavailable, CardOwnerRequired, CardInvalidOwner, CardInvalidTarget, CardDestinationBlocked, CardDestinationOutOfBounds, CommandConflict }
     public enum CardKind { Character, Stronghold }
     public sealed class CardDefinition
     {

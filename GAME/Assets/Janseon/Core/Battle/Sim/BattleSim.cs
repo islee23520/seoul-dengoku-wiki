@@ -140,6 +140,70 @@ namespace Janseon.Core.Battle.Sim
             CardValidation validation;
             return ValidateCard(state, cmd, out validation);
         }
+        public static SquadOrderResult PreviewOrder(BattleSimState state, SquadOrder order)
+        {
+            var result = ValidateOrder(state, order);
+            if (result.Rejection != null) return result;
+            result.Order = order.Clone();
+            return result;
+        }
+        public static SquadOrderResult ConfirmOrder(BattleSimState state, Ledger ledger, SquadOrder order)
+        {
+            var preview = PreviewOrder(state, order);
+            if (!preview.Accepted && !preview.Conflict) return preview;
+            if (state.AcceptedOrders.TryGetValue(order.CommandId.Value, out var existing))
+            {
+                if (OrderEquals(existing, order)) return new SquadOrderResult { Accepted = true, Order = existing.Clone() };
+                return new SquadOrderResult { Conflict = true, Rejection = new ContractRejection { Reason = ContractRejectReason.CommandConflict, Detail = "commandId payload conflict" } };
+            }
+            var commands = new List<BattleTickCommand>();
+            for (var i = 0; i < order.ActorIds.Length; i++)
+            {
+                var actor = FindUnit(state, new UnitId(order.ActorIds[i]));
+                commands.Add(new BattleTickCommand { Id = new CommandId(order.CommandId.Value + ":" + i), Seq = i, At = new Tick(state.Tick), Kind = order.Kind == BattleOrderKind.Move ? BattleTickCommandKind.Move : BattleTickCommandKind.Attack, ActorUnitId = actor.Id, Target = order.Destination, TargetUnitId = order.TargetUnitId });
+            }
+            for (var i = 0; i < commands.Count; i++)
+            {
+                var rejection = Submit(state, ledger, commands[i]);
+                if (rejection != null) return new SquadOrderResult { Rejection = (ContractRejection)rejection };
+            }
+            state.AcceptedOrders[order.CommandId.Value] = order.Clone();
+            return new SquadOrderResult { Accepted = true, Order = order.Clone() };
+        }
+        public static SquadOrderResult StopOrder(BattleSimState state, Ledger ledger, CommandId commandId, string[] actorIds)
+        {
+            var stop = new SquadOrder { CommandId = commandId, ActorIds = actorIds, Kind = BattleOrderKind.None };
+            for (var i = 0; i < actorIds.Length; i++)
+            {
+                var actor = FindUnit(state, new UnitId(actorIds[i]));
+                if (!IsLivingPlayer(actor)) return new SquadOrderResult { Rejection = new ContractRejection { Reason = ContractRejectReason.UnknownActor } };
+                ClearOrder(actor);
+            }
+            return new SquadOrderResult { Accepted = true, Order = stop };
+        }
+        static SquadOrderResult ValidateOrder(BattleSimState state, SquadOrder order)
+        {
+            if (state == null || order == null || order.ActorIds == null || order.ActorIds.Length == 0 || order.Kind == BattleOrderKind.None)
+                return new SquadOrderResult { Rejection = new ContractRejection { Reason = ContractRejectReason.MalformedCommand } };
+            if (state.Outcome != ContractOutcome.Ongoing) return new SquadOrderResult { Rejection = new ContractRejection { Reason = ContractRejectReason.BattleEnded } };
+            var seen = new HashSet<string>(StringComparer.Ordinal);
+            for (var i = 0; i < order.ActorIds.Length; i++)
+            {
+                if (!seen.Add(order.ActorIds[i])) return new SquadOrderResult { Rejection = new ContractRejection { Reason = ContractRejectReason.MalformedCommand } };
+                var actor = FindUnit(state, new UnitId(order.ActorIds[i]));
+                if (!IsLivingPlayer(actor)) return new SquadOrderResult { Rejection = new ContractRejection { Reason = ContractRejectReason.UnknownActor } };
+                if (order.Kind == BattleOrderKind.Move && !state.Arena.InBounds(order.Destination)) return new SquadOrderResult { Rejection = new ContractRejection { Reason = ContractRejectReason.CardDestinationOutOfBounds } };
+                var target = FindUnit(state, order.TargetUnitId);
+                if (order.Kind == BattleOrderKind.Attack && (target == null || target.Side != 1 || target.State != "Active" || target.Hp <= 0)) return new SquadOrderResult { Rejection = new ContractRejection { Reason = ContractRejectReason.UnknownActor } };
+            }
+            return new SquadOrderResult { Accepted = true };
+        }
+        static bool OrderEquals(SquadOrder a, SquadOrder b)
+        {
+            if (a.Kind != b.Kind || !a.Destination.Equals(b.Destination) || !a.TargetUnitId.Equals(b.TargetUnitId) || a.ActorIds.Length != b.ActorIds.Length) return false;
+            for (var i = 0; i < a.ActorIds.Length; i++) if (a.ActorIds[i] != b.ActorIds[i]) return false;
+            return true;
+        }
         public static object Submit(BattleSimState state, Ledger ledger, BattleTickCommand cmd)
         {
             if (state == null || ledger == null || cmd == null) return new ContractRejection { Reason=ContractRejectReason.MalformedCommand };

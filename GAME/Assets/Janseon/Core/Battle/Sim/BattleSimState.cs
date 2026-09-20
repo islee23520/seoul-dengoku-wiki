@@ -51,6 +51,7 @@ namespace Janseon.Core.Battle.Sim
         public BattleFrame Frame { get; private set; }
         public string SpatialHash;
         public Dictionary<IntPointMm, List<UnitId>> SpatialBuckets = new Dictionary<IntPointMm, List<UnitId>>();
+        public Dictionary<string, SquadOrder> AcceptedOrders = new Dictionary<string, SquadOrder>(StringComparer.Ordinal);
 
         public void PublishFrame()
         {
@@ -74,6 +75,7 @@ namespace Janseon.Core.Battle.Sim
             c.Cards = Cards == null ? null : System.Array.ConvertAll(Cards, x => x.Clone());
             c.StrongholdCardIds = StrongholdCardIds == null ? null : (string[])StrongholdCardIds.Clone();
             c.Context = Context;
+            foreach (var pair in AcceptedOrders) c.AcceptedOrders[pair.Key] = pair.Value.Clone();
             return c;
         }
         public string Fingerprint()
