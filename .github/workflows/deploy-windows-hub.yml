@@ -57,6 +57,7 @@ jobs:
           git submodule sync --recursive
           git submodule update --init --recursive --force
           git lfs pull --include="WEB/wiki/public/state-flags/*.webp"
+          git -C TOOL/portrait-gen lfs pull
 
       - name: Build, verify, and atomically deploy the hub
         run: |
