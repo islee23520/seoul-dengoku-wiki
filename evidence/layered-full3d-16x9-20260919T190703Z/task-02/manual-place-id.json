@@ -1,0 +1,21 @@
+{
+  "schema_version": "task02-manual-place-id.v3",
+  "behavior_contract_version": "place-identity.v2",
+  "run_nonce": "88e62d50301d49476d809762fb3d224adf1c37d73e4f5be5cffb07e1ee828b1c",
+  "runtime_source_manifest_sha256": "ec25b9ba8b318d8561b2930335d81091ea0b37f54cb3eaf3d822e877247fb624",
+  "runtime_source_files": [
+    { "path": "GAME/Assets/Janseon/Core/PlaceId.cs", "sha256": "8b82d0dcfb74f56efcd6c3bdb937b63ca4fdc6bbe868dfa9a012b03222096d9d" },
+    { "path": "GAME/Assets/Tests/EditMode/PlaceIdentityTests.cs", "sha256": "9a7dbcde6ce7a53d5a24553c0bdc74c7fbd78fe98b3b2f9812ab1bdfb60369fe" }
+  ],
+  "canonical_id": "StationLayerOrPlatform:platform.sindorim.1.2",
+  "unknown_observed_level": null,
+  "observed_level": 3,
+  "identity_equal": true,
+  "hash_equal": true,
+  "different_platform_id": "StationLayerOrPlatform:platform.sindorim.1.3",
+  "different_platform_unequal": true,
+  "conflict_error": "PlaceDefinitionConflictException",
+  "catalog_fingerprint_before": "16b786187dc2bb15e613c7ae679c0c0ceb69f7a09c44117f49f74d6cbdc683b4",
+  "catalog_fingerprint_after": "16b786187dc2bb15e613c7ae679c0c0ceb69f7a09c44117f49f74d6cbdc683b4",
+  "catalog_unchanged": true
+}

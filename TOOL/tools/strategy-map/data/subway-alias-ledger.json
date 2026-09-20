@@ -1,0 +1,107 @@
+{
+  "schema": "subway-alias-ledger-v2",
+  "description": "task3 crosswalk 별칭 장부. 모든 항목은 출처(OSM 관계/노드 ID)와 사유를 적는다. 데이터 감사(st_01a0bce2 계열) 확정 분류를 반영한다.",
+  "normalization": {
+    "unicode": "NFKC",
+    "trim": true,
+    "collapseWhitespace": true,
+    "parenthesisSpacing": "괄호에 인접한 공백을 양쪽 모두 제거한다 (예: '총신대입구 (이수)' -> '총신대입구(이수)'). 다른 문부호 규칙은 하지 않는다."
+  },
+  "matchingOrder": [
+    "1. 노드 태그 name:ko ?? name 을 정규화해 카탈로그 id와 정확히 일치하면 바인딩(거리 검증 750m 이내, 초과 시 distance_mismatch). 정규화 키가 카탈로그 여러 개와 충돌하면 모호로 거절하되, 좌표가 문서화된 허용오차 이내로 유일하게 일치하는 후보가 있으면 그곳에 바인딩한다.",
+    "2. 1에서 실패하면 별칭 장부(aliases)로 해소한다. 별칭 대상도 카탈로그 정규화 이름보다 우선하지 않는다(서울역은 카탈로그 id이므로 서울 별칭보다 정확 일치가 이긴다).",
+    "3. 정류소 증거로도 남는 카탈로그가 없으면 coordinateExactMatches(문서화된 노드 ID + 좌표 허용오차 1e-6도)로 카탈로그 노드를 검증해 분류한다. 이 결합은 역 기록 crosswalk일 뿐이고 노선/엣지 증거를 만들지 않는다.",
+    "4. 그래프 자체 별칭(세계그래프 aliases: 구로/신도림/영등포)은 1단계 정확 일치 대상에 포함된다."
+  ],
+  "coordinateToleranceDeg": 1e-06,
+  "distanceGuardM": 750,
+  "aliases": [
+    {
+      "catalogId": "남부터미널",
+      "osmName": "남부터미널(예술의전당)",
+      "reason": "OSM stop 노드 이름이 '남부터미널(예술의전당)'로만 존재한다. 카탈로그 id는 '남부터미널'.",
+      "source": "route=subway ref=3 관계 4729445/443803 stop 노드 6033544550/1939100051, 카탈로그 좌표에서 5-6m"
+    },
+    {
+      "catalogId": "총신대입구(이수)",
+      "osmName": "총신대입구 (이수)",
+      "reason": "괄호 앞 공백 차이만 있는 이름. normalization(parenthesisSpacing)으로도 해소되지만 감사 지시에 따라 장부에 명기한다.",
+      "source": "route=subway ref=4 stop 노드 6036160365, 카탈로그 좌표에서 27m"
+    },
+    {
+      "catalogId": "경복궁",
+      "osmName": "경복궁(정부서울청사)",
+      "reason": "경복궁(정부서울청사)은 경복궁의 중복 실역(약 5m). 정식 카탈로그는 경복궁이며, 이 이름의 stop은 경복궁으로 해소하고 중복 카탈로그 기록은 canonical-alias로 분류한다. 중복 노드 엣지를 만들지 않는다.",
+      "source": "route=subway ref=3 관계 443803 stop 노드(경복궁(정부서울청사) 37.5757585,126.9735668) vs 카탈로그 경복궁(37.5757873,126.973526)"
+    }
+  ],
+  "canonicalAliases": [
+    {
+      "fromCatalogId": "경복궁(정부서울청사)",
+      "toCatalogId": "경복궁",
+      "osmName": "경복궁(정부서울청사)",
+      "reason": "중복 실역(4.8m, 종로구). 정식 카탈로그는 경복궁. 원 기록은 canonical-alias로 보존한다.",
+      "source": "route=subway ref=3 관계 443803; 좌표 37.5757585,126.9735668 vs 37.5757873,126.973526"
+    },
+    {
+      "fromCatalogId": "남부터미널(예술의전당)",
+      "toCatalogId": "남부터미널",
+      "osmName": "남부터미널(예술의전당)",
+      "reason": "중복 실역(5.7m, 서초구). 정식 카탈로그는 남부터미널. 데이터 감사: OSM stop 이름 남부터미널(예술의전당)을 남부터미널로 바인딩.",
+      "source": "route=subway ref=3 관계 4729445/443803 stop 노드 6033544550/1939100051; 좌표 37.4849718,127.0162904 vs 37.484943,127.0163445"
+    },
+    {
+      "fromCatalogId": "총신대입구 (이수)",
+      "toCatalogId": "총신대입구(이수)",
+      "osmName": "총신대입구 (이수)",
+      "reason": "중복 실역(27.5m, 동작구). 정식 카탈로그는 공백 없는 총신대입구(이수). 데이터 감사: OSM 총신대입구 (이수)는 ref=4 문맥으로 정식 id에 바인딩.",
+      "source": "route=subway ref=4 stop 노드 6036160365; 좌표 37.487026,126.9822046 vs 37.48678,126.9822371"
+    }
+  ],
+  "coordinateExactMatches": [
+    {
+      "catalogId": "대현산배수지공원 모노레일 대현산배수지공원승강장",
+      "osmNodeId": 8598785500,
+      "osmName": "대현산배수지공원 모노레일 대현산배수지공원승강장",
+      "classification": "monorail",
+      "reason": "모노레일 stop_position(monorail=yes) 노드. 지하철 route relation 멤버가 아니므로 rail 엣지를 만들지 않고 monorail로 분류한다.",
+      "source": "OSM 노드 8598785500 (37.5586955,127.0214177), 카탈로그 좌표와 1e-6도 이내 일치"
+    },
+    {
+      "catalogId": "대현산배수지공원 모노레일 시점승강장",
+      "osmNodeId": 8598757059,
+      "osmName": "대현산배수지공원 모노레일 시점승강장",
+      "classification": "monorail",
+      "reason": "모노레일 stop_position(monorail=yes) 노드. 근방 30m의 8598757094는 좌표가 일치하지 않아 배제된다(유일 좌표 일치).",
+      "source": "OSM 노드 8598757059 (37.5594056,127.0205117), 카탈로그 좌표와 1e-6도 이내 일치"
+    },
+    {
+      "catalogId": "메트로호텔",
+      "osmNodeId": 11464378955,
+      "osmName": "메트로호텔",
+      "classification": "nonrail-misclassified",
+      "reason": "railway/public_transport 태그 없는 호텔 노드(tourism=hotel). 철도 위상에서 제외하고 분류만 보고한다.",
+      "source": "OSM 노드 11464378955 (37.5651052,126.983621), 카탈로그 좌표와 1e-6도 이내 일치"
+    },
+    {
+      "catalogId": "생태공원앞",
+      "osmNodeId": 414683239,
+      "osmName": "생태공원앞",
+      "classification": "nonrail-misclassified",
+      "reason": "highway=traffic_signals 노드. 철도 위상에서 제외하고 분류만 보고한다. 22m 밖의 8436624771은 좌표 일치로 배제.",
+      "source": "OSM 노드 414683239 (37.5381107,127.1523456), 카탈로그 좌표와 1e-6도 이내 일치"
+    }
+  ],
+  "excludedAliases": [
+    {
+      "wouldBeAlias": "서울역 -> 서울",
+      "reason": "거절: '서울역'은 그 자체가 카탈로그 id다. exact-name 규칙이 서울역 stop을 서울역에 바인딩하고, 카탈로그 '서울'은 exact-name '서울' stop(stop_entry_only/stop_exit_only 포함)으로만 바인딩한다.",
+      "source": "카탈로그에 서울(37.5545547,126.9707793)과 서울역이 공존"
+    },
+    {
+      "wouldBeAlias": "이수 -> 총신대입구(이수)",
+      "reason": "보류: '이수' 이름의 OSM stop이 ref=7 문맥에서만 확인되며, 감사 지시상 명시적 노드/stop-area 규칙을 넣을 때만 포함한다. 이번 판에는 포함하지 않는다.",
+      "source": "데이터 감사 지시문"
+    }
+  ]
+}

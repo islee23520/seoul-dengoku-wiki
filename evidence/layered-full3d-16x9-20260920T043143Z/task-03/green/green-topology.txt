@@ -1,0 +1,34 @@
+✔ same-name stops stay distinct stop nodes and never merge into a fabricated edge (2.993875ms)
+✔ same-name duplicate catalog variant resolves to canonical without duplicate edges (1.144084ms)
+✔ route relation without ref or name yields only nontraversable unknown_line connections (0.89275ms)
+✔ route relation with ref produces a traversable edge bound to links and sources (0.35925ms)
+✔ unsupported stop-like member breaks the segment: A(stop) B(stop_entry_only) C(stop) has no A-C edge (0.790791ms)
+✔ directional stop roles are supported and preserved on edge links (0.368166ms)
+✔ unknown-floor interiors keep observed_levels null and are never coerced (0.214542ms)
+✔ missing-source observed floors throw an explicit error instead of passing silently (0.263542ms)
+✔ missing-source catalog records without interiors entries keep null floors with unknown status (0.179ms)
+✔ same-district proximity without route evidence produces no edge (0.175ms)
+✔ platform members and non-route relations never create edges (0.174459ms)
+✔ unmatched or missing stop nodes yield nontraversable connections with reasons (0.240625ms)
+✔ name match beyond the distance guard is refused, not crosswalked by proximity (0.124708ms)
+✔ ambiguous normalized keys reject unless a unique coordinate-exact candidate exists (0.158625ms)
+✔ alias resolves OSM name to canonical graph id deterministically (0.376875ms)
+✔ monorail and nonrail dispositions come only from validated ledger entries (0.318667ms)
+✔ parser reads the real Seoul PBF with manifest-grade counts and hash (14033.04525ms)
+✔ crosswalk covers the exact 334 catalog records with explicit dispositions (0.586209ms)
+✔ unresolved required edges are zero and honest categories are named (0.310625ms)
+✔ null floors are preserved across the real 334 (69 unknown) (0.113708ms)
+✔ connection records distinguish unique pairs from stop occurrences (0.125333ms)
+✔ byte-stable outputs carry repo-relative inputs only (19.768375ms)
+✔ every traversable edge binds lines, sources, and supported roles (1.178167ms)
+✔ dong content crosswalk is bounded, sourced, and sparse (13.080625ms)
+✔ CLI rejects unknown, duplicate, and valueless options (6.61225ms)
+✔ normalizeName applies NFKC, whitespace collapse, and parenthesis spacing only (0.109333ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 14201.950416

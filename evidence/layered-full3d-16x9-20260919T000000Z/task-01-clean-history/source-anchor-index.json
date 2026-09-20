@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "anchors": [
+    {
+      "id": "runner-inventory",
+      "file": "verify-lineage.mjs",
+      "startLine": 6,
+      "endLine": 37,
+      "startToken": "const REQUIRED_CASE_IDS",
+      "endToken": "function parseRecords",
+      "startText": "const REQUIRED_CASE_IDS = Object.freeze([",
+      "endText": "function parseRecords(input, kind) {",
+      "sha256": "73be9456fee12a6329a8d687e862229e1b4e351ee120b578c666ab992310f428"
+    },
+    {
+      "id": "mutant-proof-helper",
+      "file": "verify-lineage.mjs",
+      "startLine": 21,
+      "endLine": 27,
+      "startToken": "function expectMutantKilled",
+      "endToken": "function writeRequiredReceipt",
+      "startText": "function expectMutantKilled(id, mutantActual, literalExpected) {",
+      "endText": "function writeRequiredReceipt() {",
+      "sha256": "73be9456fee12a6329a8d687e862229e1b4e351ee120b578c666ab992310f428"
+    },
+    {
+      "id": "structural-validator",
+      "file": "verify-lineage.mjs",
+      "startLine": 51,
+      "endLine": 75,
+      "startToken": "export function validateLineage",
+      "endToken": "const h =",
+      "startText": "export function validateLineage({ baseHash, commits, reflog }) {",
+      "endText": "const h = (digit) => digit.repeat(40);",
+      "sha256": "73be9456fee12a6329a8d687e862229e1b4e351ee120b578c666ab992310f428"
+    },
+    {
+      "id": "subject-only-mutant",
+      "file": "verify-lineage.mjs",
+      "startLine": 122,
+      "endLine": 136,
+      "startToken": "function subjectOnlyMutant",
+      "endToken": "const amended =",
+      "startText": "function subjectOnlyMutant({ commits, reflog }) {",
+      "endText": "const amended = {",
+      "sha256": "73be9456fee12a6329a8d687e862229e1b4e351ee120b578c666ab992310f428"
+    },
+    {
+      "id": "parent-chain-noop-mutant",
+      "file": "verify-lineage.mjs",
+      "startLine": 146,
+      "endLine": 155,
+      "startToken": "function parentChainNoopMutant",
+      "endToken": "const disconnected =",
+      "startText": "function parentChainNoopMutant({ baseHash, commits, reflog }) {",
+      "endText": "const disconnected = {",
+      "sha256": "73be9456fee12a6329a8d687e862229e1b4e351ee120b578c666ab992310f428"
+    },
+    {
+      "id": "optional-reflog-mutant",
+      "file": "verify-lineage.mjs",
+      "startLine": 168,
+      "endLine": 176,
+      "startToken": "function optionalReflogMutant",
+      "endToken": "const missingEvidence =",
+      "startText": "function optionalReflogMutant({ baseHash, commits }) {",
+      "endText": "const missingEvidence = {",
+      "sha256": "73be9456fee12a6329a8d687e862229e1b4e351ee120b578c666ab992310f428"
+    },
+    {
+      "id": "inventory-completion",
+      "file": "verify-lineage.mjs",
+      "startLine": 188,
+      "endLine": 188,
+      "startToken": "test('writes exact required case inventory'",
+      "endToken": null,
+      "startText": "test('writes exact required case inventory', () => {",
+      "endText": "test('writes exact required case inventory', () => {",
+      "sha256": "73be9456fee12a6329a8d687e862229e1b4e351ee120b578c666ab992310f428"
+    },
+    {
+      "id": "independent-expected-ids",
+      "file": "verify-required-lineage-cases.mjs",
+      "startLine": 3,
+      "endLine": 12,
+      "startToken": "const EXPECTED_REQUIRED_CASE_IDS",
+      "endToken": "const receiptPath",
+      "startText": "const EXPECTED_REQUIRED_CASE_IDS = Object.freeze([",
+      "endText": "const receiptPath = process.argv[2];",
+      "sha256": "1bdd884a70056fa420aea102fe7698f23a245ee18d816ac8806011ba9a413c3b"
+    },
+    {
+      "id": "receipt-schema-verifier",
+      "file": "verify-required-lineage-cases.mjs",
+      "startLine": 18,
+      "endLine": 18,
+      "startToken": "function validateArray",
+      "endToken": null,
+      "startText": "function validateArray(name) {",
+      "endText": "function validateArray(name) {",
+      "sha256": "1bdd884a70056fa420aea102fe7698f23a245ee18d816ac8806011ba9a413c3b"
+    },
+    {
+      "id": "tamper-tests",
+      "file": "test-required-lineage-cases.mjs",
+      "startLine": 9,
+      "endLine": 28,
+      "startToken": "const clean =",
+      "endToken": "console.log('receipt tamper probes",
+      "startText": "const clean = { required: [...ids], passed: [...ids] };",
+      "endText": "console.log('receipt tamper probes: 8 passed');",
+      "sha256": "dbada19dad3b2efc10cecf7f31085f28bc51ba3349dc49b890d00c84d42e7cfa"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+== determinism: two independent build runs ==
+run1:
+e2eedb402006c4476253da148270e46b98f07eb2821fd7a36fa4205e96d72019  evidence/layered-full3d-16x9-20260920T030408Z/task-03/build/run1/topology.json
+1365f90aea755d103c06cacc80acb0d6dddb72f1e0051cf55a3c5aa88a606a4d  evidence/layered-full3d-16x9-20260920T030408Z/task-03/build/run1/coverage.json
+run2:
+e2eedb402006c4476253da148270e46b98f07eb2821fd7a36fa4205e96d72019  evidence/layered-full3d-16x9-20260920T030408Z/task-03/build/run2/topology.json
+1365f90aea755d103c06cacc80acb0d6dddb72f1e0051cf55a3c5aa88a606a4d  evidence/layered-full3d-16x9-20260920T030408Z/task-03/build/run2/coverage.json
+VERDICT: byte-identical (DETERMINISTIC)
+
+== canonical copies ==
+e2eedb402006c4476253da148270e46b98f07eb2821fd7a36fa4205e96d72019  evidence/layered-full3d-16x9-20260920T030408Z/task-03/topology.json
+1365f90aea755d103c06cacc80acb0d6dddb72f1e0051cf55a3c5aa88a606a4d  evidence/layered-full3d-16x9-20260920T030408Z/task-03/coverage.json

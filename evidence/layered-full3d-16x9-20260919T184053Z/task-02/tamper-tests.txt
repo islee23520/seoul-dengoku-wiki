@@ -1,0 +1,4 @@
+tests=13
+pass=13
+fail=0
+cases=accept-exact-tree,manual-extra-key,manifest-extra-key,missing-key,wrong-type,source-add,source-drop,duplicate-source,green-extra-key,green-commit-mismatch,consistent-hash-tamper,stale-6e306aa1,valid-nonancestor

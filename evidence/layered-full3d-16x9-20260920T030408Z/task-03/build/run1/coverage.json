@@ -1,0 +1,106 @@
+{
+  "schema": "subway-topology-coverage-v1",
+  "pbf": {
+    "relations": 19013,
+    "ways": 730540,
+    "nodes": 4895437,
+    "taggedNodes": 261469,
+    "routeRelations": 244,
+    "stopMembers": 5632,
+    "nonNodeStopMembers": 0,
+    "stopRoleVariants": 135,
+    "routeKinds": {
+      "light_rail": 8,
+      "subway": 161,
+      "train": 75
+    }
+  },
+  "graph": {
+    "schema": "seoul-world-graph-v1",
+    "stations": 334,
+    "edges": 435,
+    "districts": 25
+  },
+  "stationInteriors": {
+    "schema": "station-interior.v1",
+    "stations": 334,
+    "nullFloors": 69,
+    "floorsMissing": []
+  },
+  "crosswalk": {
+    "distanceLimitM": 750,
+    "stopsTotal": 5632,
+    "stopOccurrencesResolved": 3109,
+    "unmatchedByReason": {
+      "missing_stop_node": 1057,
+      "unknown_station": 1462,
+      "unnamed_stop": 4
+    },
+    "unknownStopNames": 215
+  },
+  "stations": {
+    "graph": 334,
+    "matched": 327,
+    "coveredByEdges": 327,
+    "uncovered": [
+      "남부터미널",
+      "대현산배수지공원 모노레일 대현산배수지공원승강장",
+      "대현산배수지공원 모노레일 시점승강장",
+      "메트로호텔",
+      "생태공원앞",
+      "서울",
+      "총신대입구(이수)"
+    ]
+  },
+  "lines": {
+    "total": 244,
+    "identifiable": 244,
+    "unidentifiable": [],
+    "withoutRef": 29
+  },
+  "edges": {
+    "topology": 434,
+    "graph": 435,
+    "graphEdgesWithoutEvidence": [
+      {
+        "a": "가산디지털단지",
+        "b": "광명사거리"
+      },
+      {
+        "a": "공덕",
+        "b": "마곡나루"
+      },
+      {
+        "a": "봉화산",
+        "b": "신내"
+      }
+    ],
+    "topologyPairsNotInGraph": [
+      {
+        "a": "경복궁(정부서울청사)",
+        "b": "독립문"
+      },
+      {
+        "a": "경복궁(정부서울청사)",
+        "b": "안국"
+      }
+    ],
+    "rejectedSelfAdjacency": 1,
+    "nontraversableConnections": 2498
+  },
+  "inputs": {
+    "pbf": {
+      "path": "/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME-REFERENCE/data/seoul-geography-20260830/osm-current-bbbike/Seoul.osm.pbf",
+      "bytes": 51794961,
+      "sha256": "eec1fcac44d0b7b1600c81437ba0a0ea56cd645d16f4eaf55a00786597e0e7e8"
+    },
+    "worldGraph": {
+      "path": "/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json",
+      "sha256": "6eaaf9490442e96a24ea122ba50304b7268f0e7de530c5f447a5a6c5f50e935d"
+    },
+    "stationInteriors": {
+      "path": "/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/LORE/regions/station-interiors.json",
+      "sha256": "c86b3d1ded4aec5553f8d700a1609738f26c43a54ad3bf8ea5b3015b566ebfc3"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": "build-task31-evidence-manifest.mjs",
+      "sha256": "e627c2efb2de9e01baf03652bb280e30ad6ebee778c417a3198265c1cd95fc6e"
+    },
+    {
+      "path": "commands.txt",
+      "sha256": "6ff9406a789cb538a01484eca760d05b3432eba07ec8851185d6a3b2b753e601"
+    },
+    {
+      "path": "generate-source-anchor-index.mjs",
+      "sha256": "714434dff0d4bce390db9540b4cc5e25751e1abef7d3c44c8b26eb791a9a3602"
+    },
+    {
+      "path": "lineage.txt",
+      "sha256": "2d3633b5db1f891a370f4e9e236c4650196bf364e56ad3df53c75240008f5855"
+    },
+    {
+      "path": "quality-review.md",
+      "sha256": "d573db98f3d7d477ca98d087286c306fba949d7f63fe8f514d6c3821a9354693"
+    },
+    {
+      "path": "required-case-results.json",
+      "sha256": "0a08c063d998e9e669ef2856c09a9a487fd3139ba3aa3e11cf73e59ae5ff857b"
+    },
+    {
+      "path": "source-anchor-index.json",
+      "sha256": "f9f79638f8fffd59430ad99874fdec283e19617b90faf0da510f7713f6091f32"
+    },
+    {
+      "path": "source-line-index.txt",
+      "sha256": "fdf8e578a19a780f2e0a554a912353c0706971f8d908472cb409adc6636fea28"
+    },
+    {
+      "path": "test-quality-anchors.mjs",
+      "sha256": "58ed8e8444373e0da7977a0fb48d3b1a629ffe445627a4122436084d8e7e3d8c"
+    },
+    {
+      "path": "test-required-lineage-cases.mjs",
+      "sha256": "dbada19dad3b2efc10cecf7f31085f28bc51ba3349dc49b890d00c84d42e7cfa"
+    },
+    {
+      "path": "test-task31-cleanup.mjs",
+      "sha256": "449f3c3ace7e04211cdddca06966fb726cac7d0fd90686c322bc342cbf41896e"
+    },
+    {
+      "path": "test-task31-evidence-manifest.mjs",
+      "sha256": "ee07eac96f5b8c3029077e8a0f4a38b1579617442d382f82fc74036aa27cbc10"
+    },
+    {
+      "path": "tree-equivalence.txt",
+      "sha256": "6d570b0e190a5f60571b481e8c1fca5ede256aa24e0bc7a08dc20be82a6b3518"
+    },
+    {
+      "path": "verify-lineage.mjs",
+      "sha256": "73be9456fee12a6329a8d687e862229e1b4e351ee120b578c666ab992310f428"
+    },
+    {
+      "path": "verify-quality-anchors.mjs",
+      "sha256": "1b8730d5faf37170d5319f027b78cbf2f463db8ce33cdc158969212ee7b6c572"
+    },
+    {
+      "path": "verify-required-lineage-cases.mjs",
+      "sha256": "1bdd884a70056fa420aea102fe7698f23a245ee18d816ac8806011ba9a413c3b"
+    },
+    {
+      "path": "verify-task31-cleanup.mjs",
+      "sha256": "9e63b66c10193f74b3a47bd4744f97519edf28351d4908bc12dca74b1fc7039b"
+    },
+    {
+      "path": "verify-task31-evidence-manifest.mjs",
+      "sha256": "ae8393bfdfa4b3006f8f749a45f88b7ee4bf2d9d821ec48c12bd80c24404fffe"
+    }
+  ],
+  "manifestSha256": "ed9df26d8d57506c31b092e9fa1a67a2b252fe62afa3a89650bc703a51db4b55"
+}
