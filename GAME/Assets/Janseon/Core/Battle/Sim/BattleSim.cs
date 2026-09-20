@@ -10,6 +10,30 @@ namespace Janseon.Core.Battle.Sim
 {
     public static class BattleSim
     {
+        public sealed class FormationUnit { public readonly string SoldierId; public readonly int Slot; public FormationUnit(string id, int slot) { SoldierId=id; Slot=slot; } }
+        public sealed class BattlefieldSurface
+        {
+            readonly bool[] blocked; readonly int[] heights; readonly System.Collections.Generic.Dictionary<string, GridCoord> anchors = new System.Collections.Generic.Dictionary<string, GridCoord>();
+            BattlefieldSurface(int w, int h) { Width=w; Height=h; blocked=new bool[w*h]; heights=new int[w*h]; for(var i=0;i<heights.Length;i++) heights[i]=1; }
+            public int Width { get; } public int Height { get; }
+            public static BattlefieldSurface Create(int w,int h) { return new BattlefieldSurface(w,h); }
+            public BattlefieldSurface WithHeights(int[] v) { if(v==null||v.Length!=heights.Length) throw new ArgumentException("height data"); Array.Copy(v,heights,v.Length); return this; }
+            public BattlefieldSurface WithBlocked(params GridCoord[] cells) { foreach(var c in cells) if(In(c)) blocked[c.Y*Width+c.X]=true; return this; }
+            public BattlefieldSurface WithPassage(GridCoord a, GridCoord b) { if(In(a)&&In(b)){blocked[a.Y*Width+a.X]=false;blocked[b.Y*Width+b.X]=false;} return this; }
+            public BattlefieldSurface WithAnchor(string id, GridCoord c) { anchors[id]=c; return this; }
+            bool In(GridCoord c)=>c.X>=0&&c.Y>=0&&c.X<Width&&c.Y<Height;
+            public sealed class Result { public bool Success; public string Error; public System.Collections.Generic.List<GridCoord> Path=new System.Collections.Generic.List<GridCoord>(); public string FormationHash; }
+            public Result Project(FormationUnit[] units,string entry,string exit,GridCoord[] requested,bool tuning) { return ProjectFormation(this,units,entry,exit,requested,tuning); }
+            internal bool IsOpen(GridCoord c)=>In(c)&&!blocked[c.Y*Width+c.X]; internal int HeightAt(GridCoord c)=>heights[c.Y*Width+c.X]; internal bool TryAnchor(string id,out GridCoord c)=>anchors.TryGetValue(id,out c);
+        }
+        public static BattlefieldSurface.Result ProjectFormation(BattlefieldSurface s, FormationUnit[] units,string entry,string exit,GridCoord[] requested=null,bool tuning=true)
+        {
+            var r=new BattlefieldSurface.Result(); if(s==null||units==null||units.Length==0){r.Error="formation is empty";return r;} if(!tuning){r.Error="missing tuning";return r;}
+            GridCoord a,b; if(!s.TryAnchor(entry,out a)||!s.TryAnchor(exit,out b)){r.Error="anchor missing";return r;} if(requested!=null) foreach(var c in requested) if(!s.IsOpen(c)){r.Error="formation slot is blocked";return r;}
+            var q=new System.Collections.Generic.Queue<GridCoord>(); var prev=new System.Collections.Generic.Dictionary<GridCoord,GridCoord>(); q.Enqueue(a); prev[a]=new GridCoord(int.MinValue,int.MinValue);
+            while(q.Count>0){var c=q.Dequeue(); if(c.Equals(b))break; foreach(var d in new[]{CardinalDirection.North,CardinalDirection.East,CardinalDirection.South,CardinalDirection.West}){var n=c.Step(d); if(s.IsOpen(n)&&!prev.ContainsKey(n)){prev[n]=c;q.Enqueue(n);}}}
+            if(!prev.ContainsKey(b)){r.Error="anchors disconnected";return r;} for(var c=b;;c=prev[c]){r.Path.Add(c);if(c.Equals(a))break;} r.Path.Reverse(); var text=string.Join(";",r.Path); foreach(var u in units) text+="|"+u.SoldierId+":"+u.Slot; r.FormationHash=CoreApi.StableHashHex(text); r.Success=true; return r;
+        }
         public static BattleSimState Open(BattleSetup setup)
         {
             if (setup == null) throw new ArgumentNullException(nameof(setup));
