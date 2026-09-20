@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-20 06:03:31Z" end-time="2026-09-20 06:03:31Z" duration="0.0979974">
-  <test-suite type="TestSuite" id="1000" name="서울:전국" fullname="서울:전국" runstate="Runnable" testcasecount="242" result="Passed" start-time="2026-09-20 06:03:31Z" end-time="2026-09-20 06:03:31Z" duration="0.097997" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-20 06:11:14Z" end-time="2026-09-20 06:11:14Z" duration="0.0444134">
+  <test-suite type="TestSuite" id="1000" name="서울:전국" fullname="서울:전국" runstate="Runnable" testcasecount="242" result="Passed" start-time="2026-09-20 06:11:14Z" end-time="2026-09-20 06:11:14Z" duration="0.044413" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
     <properties>
       <property name="platform" value="EditMode" />
     </properties>
-    <test-suite type="Assembly" id="1278" name="Janseon.Foundation.EditModeTests.dll" fullname="/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-task4/GAME/Library/ScriptAssemblies/Janseon.Foundation.EditModeTests.dll" runstate="Runnable" testcasecount="241" result="Passed" start-time="2026-09-20 06:03:31Z" end-time="2026-09-20 06:03:31Z" duration="0.075114" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <test-suite type="Assembly" id="1278" name="Janseon.Foundation.EditModeTests.dll" fullname="/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-task4/GAME/Library/ScriptAssemblies/Janseon.Foundation.EditModeTests.dll" runstate="Runnable" testcasecount="241" result="Passed" start-time="2026-09-20 06:11:14Z" end-time="2026-09-20 06:11:14Z" duration="0.037527" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
       <properties>
-        <property name="_PID" value="33052" />
+        <property name="_PID" value="59800" />
         <property name="_APPDOMAIN" value="Unity Child Domain" />
         <property name="platform" value="EditMode" />
         <property name="EditorOnly" value="True" />
       </properties>
-      <test-suite type="TestSuite" id="1279" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="241" result="Passed" start-time="2026-09-20 06:03:31Z" end-time="2026-09-20 06:03:31Z" duration="0.070597" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <test-suite type="TestSuite" id="1279" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="241" result="Passed" start-time="2026-09-20 06:11:14Z" end-time="2026-09-20 06:11:14Z" duration="0.035444" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
         <properties />
-        <test-suite type="TestSuite" id="1282" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="206" result="Passed" start-time="2026-09-20 06:03:31Z" end-time="2026-09-20 06:03:31Z" duration="0.063775" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <test-suite type="TestSuite" id="1282" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="206" result="Passed" start-time="2026-09-20 06:11:14Z" end-time="2026-09-20 06:11:14Z" duration="0.033342" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
           <properties />
-          <test-suite type="TestSuite" id="1283" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="206" result="Passed" start-time="2026-09-20 06:03:31Z" end-time="2026-09-20 06:03:31Z" duration="0.059445" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <test-suite type="TestSuite" id="1283" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="206" result="Passed" start-time="2026-09-20 06:11:14Z" end-time="2026-09-20 06:11:14Z" duration="0.024348" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
             <properties />
-            <test-suite type="TestFixture" id="1145" name="PlaceIdentityTests" fullname="Janseon.Foundation.Tests.PlaceIdentityTests" classname="Janseon.Foundation.Tests.PlaceIdentityTests" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-09-20 06:03:31Z" end-time="2026-09-20 06:03:31Z" duration="0.053160" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <test-suite type="TestFixture" id="1145" name="PlaceIdentityTests" fullname="Janseon.Foundation.Tests.PlaceIdentityTests" classname="Janseon.Foundation.Tests.PlaceIdentityTests" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-09-20 06:11:14Z" end-time="2026-09-20 06:11:14Z" duration="0.020145" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
               <properties />
-              <test-case id="1157" name="BlockedTransferDoesNotBlockUnrelatedPlatform" fullname="Janseon.Foundation.Tests.PlaceIdentityTests.BlockedTransferDoesNotBlockUnrelatedPlatform" methodname="BlockedTransferDoesNotBlockUnrelatedPlatform" classname="Janseon.Foundation.Tests.PlaceIdentityTests" runstate="Runnable" seed="1906052885" result="Passed" start-time="2026-09-20 06:03:31Z" end-time="2026-09-20 06:03:31Z" duration="0.024931" asserts="0">
+              <test-case id="1157" name="BlockedTransferDoesNotBlockUnrelatedPlatform" fullname="Janseon.Foundation.Tests.PlaceIdentityTests.BlockedTransferDoesNotBlockUnrelatedPlatform" methodname="BlockedTransferDoesNotBlockUnrelatedPlatform" classname="Janseon.Foundation.Tests.PlaceIdentityTests" runstate="Runnable" seed="1742529069" result="Passed" start-time="2026-09-20 06:11:14Z" end-time="2026-09-20 06:11:14Z" duration="0.009593" asserts="0">
                 <properties>
                   <property name="retryIteration" value="0" />
                   <property name="repeatIteration" value="0" />
