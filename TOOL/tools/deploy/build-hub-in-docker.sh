@@ -11,7 +11,7 @@ mkdir -p "$WORK_ROOT" "$OUTPUT_ROOT"
 for path in \
   Concept.md Design.md Intent.md ToDo.md index.html \
   GDD LORE WEB GAME/play GAME-REFERENCE/ui-layout-moodboard \
-  GAME-REFERENCE/portrait-demo GAME-REFERENCE/ui-ux-refs \
+  GAME-REFERENCE/ui-ux-refs \
   GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json \
   RESEARCH/canon-reference RESEARCH/verification TOOL/tools TOOL/portrait-gen; do
   mkdir -p "$WORK_ROOT/$(dirname "$path")"
