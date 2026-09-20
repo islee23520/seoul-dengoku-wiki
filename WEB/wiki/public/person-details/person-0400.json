@@ -1,11 +1,29 @@
 {
   "id": "person-0400",
+  "heroId": "hero-person-0400",
   "name": "하서진",
   "title": "계약 서기",
   "position": "계약 서기",
   "rank": "조합원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "recovery_specialist",
+  "heroClass": "회복지원",
+  "battleRoleTags": [
+    "sustain",
+    "repair",
+    "triage",
+    "supply"
+  ],
+  "effectFamilies": [
+    "medicine",
+    "gear",
+    "morale"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S1",
   "state": "S16",

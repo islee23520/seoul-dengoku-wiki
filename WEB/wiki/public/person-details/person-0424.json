@@ -1,11 +1,29 @@
 {
   "id": "person-0424",
+  "heroId": "hero-person-0424",
   "name": "이민석",
   "title": "배급구역 서기",
   "position": "배급구역 서기",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "field_coordinator",
+  "heroClass": "전장조율",
+  "battleRoleTags": [
+    "formation",
+    "supply",
+    "negotiation",
+    "records"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "intelligence"
+  ],
+  "commandEligible": true,
   "gender": "여성",
   "stage": "S4",
   "state": "S01",

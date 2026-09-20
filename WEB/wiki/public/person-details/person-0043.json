@@ -1,11 +1,30 @@
 {
   "id": "person-0043",
+  "heroId": "hero-person-0043",
   "name": "명소이",
   "title": "남서 외곽선로 탐사원",
   "position": "남서 외곽선로 탐사원",
   "rank": "조합원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "route_operative",
+  "heroClass": "경로공작",
+  "battleRoleTags": [
+    "recon",
+    "covert",
+    "route-control",
+    "records"
+  ],
+  "effectFamilies": [
+    "information",
+    "physical-ai-tech",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "intelligence",
+    "sabotage"
+  ],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S2",
   "state": "S02",

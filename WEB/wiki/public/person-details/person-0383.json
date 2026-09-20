@@ -1,11 +1,27 @@
 {
   "id": "person-0383",
+  "heroId": "hero-person-0383",
   "name": "수한별",
   "title": "창고 경비 순찰대, 라진우의 실무 담당자",
   "position": "창고 경비 순찰대, 라진우의 실무 담당자",
   "rank": "교우",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "line_warden",
+  "heroClass": "전열수호",
+  "battleRoleTags": [
+    "formation",
+    "screening",
+    "route-control"
+  ],
+  "effectFamilies": [
+    "morale",
+    "gear"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "S2",
   "state": "S15",

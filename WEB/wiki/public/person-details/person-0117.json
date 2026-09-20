@@ -1,11 +1,27 @@
 {
   "id": "person-0117",
+  "heroId": "hero-person-0117",
   "name": "김우찬",
   "title": "상수호위단 참모장",
   "position": "상수호위단 참모장",
   "rank": "병장",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "line_warden",
+  "heroClass": "전열수호",
+  "battleRoleTags": [
+    "formation",
+    "screening",
+    "route-control"
+  ],
+  "effectFamilies": [
+    "morale",
+    "gear"
+  ],
+  "campaignRoles": [
+    "assassination"
+  ],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "S1",
   "state": "S05",

@@ -1,11 +1,27 @@
 {
   "id": "person-0116",
+  "heroId": "hero-person-0116",
   "name": "배우진",
   "title": "상수호위사령",
   "position": "호위보호정 사령관",
   "rank": "사령관",
   "commonTier": "T1",
   "occupation": "상수호위사령",
+  "heroClassId": "line_warden",
+  "heroClass": "전열수호",
+  "battleRoleTags": [
+    "formation",
+    "screening",
+    "route-control"
+  ],
+  "effectFamilies": [
+    "morale",
+    "gear"
+  ],
+  "campaignRoles": [
+    "assassination"
+  ],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "주요",
   "state": "S05",

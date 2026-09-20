@@ -1,11 +1,30 @@
 {
   "id": "person-0145",
+  "heroId": "hero-person-0145",
   "name": "윤서린",
   "title": "기록청장",
   "position": "대한민국정부 대통령",
   "rank": "대통령",
   "commonTier": "T1",
   "occupation": "기록청장",
+  "heroClassId": "field_coordinator",
+  "heroClass": "전장조율",
+  "battleRoleTags": [
+    "formation",
+    "supply",
+    "negotiation",
+    "records"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "intelligence"
+  ],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "주요",
   "state": "S06",

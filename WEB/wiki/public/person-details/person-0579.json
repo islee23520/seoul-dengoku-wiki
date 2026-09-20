@@ -1,11 +1,30 @@
 {
   "id": "person-0579",
+  "heroId": "hero-person-0579",
   "name": "우달민",
   "title": "대기열 탐사원",
   "position": "대기열 탐사원",
   "rank": "호송원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "route_operative",
+  "heroClass": "경로공작",
+  "battleRoleTags": [
+    "recon",
+    "covert",
+    "route-control",
+    "records"
+  ],
+  "effectFamilies": [
+    "information",
+    "physical-ai-tech",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "intelligence"
+  ],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S4",
   "state": "S12",

@@ -1,11 +1,26 @@
 {
   "id": "person-0396",
+  "heroId": "hero-person-0396",
   "name": "초시람",
   "title": "공신 보상 경매 당사자",
   "position": "공신 보상 경매 당사자",
   "rank": "교우",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "expedition_anchor",
+  "heroClass": "원정중추",
+  "battleRoleTags": [
+    "formation",
+    "sustain"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": false,
   "gender": "여성",
   "stage": "S3",
   "state": "S15",

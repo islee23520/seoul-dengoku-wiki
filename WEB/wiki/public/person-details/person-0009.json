@@ -1,11 +1,29 @@
 {
   "id": "person-0009",
+  "heroId": "hero-person-0009",
   "name": "유세진",
   "title": "신정기지 철도통행 배차관",
   "position": "신정기지 철도통행 배차관",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "route_operative",
+  "heroClass": "경로공작",
+  "battleRoleTags": [
+    "recon",
+    "covert",
+    "route-control",
+    "records"
+  ],
+  "effectFamilies": [
+    "information",
+    "physical-ai-tech",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "intelligence"
+  ],
+  "commandEligible": false,
   "gender": "여성",
   "stage": "S1",
   "state": "S01",

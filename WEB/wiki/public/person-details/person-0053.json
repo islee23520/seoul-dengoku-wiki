@@ -1,11 +1,31 @@
 {
   "id": "person-0053",
+  "heroId": "hero-person-0053",
   "name": "류겨레",
   "title": "난민 수용 전령",
   "position": "난민 수용 전령",
   "rank": "조합원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "route_operative",
+  "heroClass": "경로공작",
+  "battleRoleTags": [
+    "recon",
+    "covert",
+    "route-control",
+    "records"
+  ],
+  "effectFamilies": [
+    "information",
+    "physical-ai-tech",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "intelligence",
+    "sabotage"
+  ],
+  "commandEligible": false,
   "gender": "여성",
   "stage": "S3",
   "state": "S02",

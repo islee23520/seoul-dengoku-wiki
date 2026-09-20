@@ -1,11 +1,30 @@
 {
   "id": "person-0247",
+  "heroId": "hero-person-0247",
   "name": "신보람",
   "title": "피난 가족 대표",
   "position": "피난 가족 대표",
   "rank": "신도",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "field_coordinator",
+  "heroClass": "전장조율",
+  "battleRoleTags": [
+    "formation",
+    "supply",
+    "negotiation",
+    "records"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "intelligence"
+  ],
+  "commandEligible": true,
   "gender": "여성",
   "stage": "S1",
   "state": "S10",

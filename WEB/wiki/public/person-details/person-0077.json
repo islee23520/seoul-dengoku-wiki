@@ -1,11 +1,26 @@
 {
   "id": "person-0077",
+  "heroId": "hero-person-0077",
   "name": "채무진",
   "title": "종자보존고 비상발전 운전장",
   "position": "종자보존고 비상발전 운전장",
   "rank": "대리",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "expedition_anchor",
+  "heroClass": "원정중추",
+  "battleRoleTags": [
+    "formation",
+    "sustain"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": false,
   "gender": "여성",
   "stage": "S2",
   "state": "S03",

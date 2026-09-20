@@ -1,11 +1,30 @@
 {
   "id": "person-0249",
+  "heroId": "hero-person-0249",
   "name": "강태산",
   "title": "산악 정찰 반장",
   "position": "산악 정찰 반장",
   "rank": "신도",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "route_operative",
+  "heroClass": "경로공작",
+  "battleRoleTags": [
+    "recon",
+    "covert",
+    "route-control",
+    "records"
+  ],
+  "effectFamilies": [
+    "information",
+    "physical-ai-tech",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "intelligence"
+  ],
+  "commandEligible": false,
   "gender": "여성",
   "stage": "S1",
   "state": "S10",

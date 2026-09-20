@@ -1,11 +1,24 @@
 {
   "id": "person-0162",
+  "heroId": "hero-person-0162",
   "name": "나봄결",
   "title": "문서고 비상발전 운전장",
   "position": "문서고 비상발전 운전장",
   "rank": "국장",
   "commonTier": "T4",
   "occupation": "미등록",
+  "heroClassId": "expedition_anchor",
+  "heroClass": "원정중추",
+  "battleRoleTags": [
+    "formation",
+    "sustain"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information"
+  ],
+  "campaignRoles": [],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S2",
   "state": "S06",

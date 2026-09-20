@@ -1,11 +1,29 @@
 {
   "id": "person-0361",
+  "heroId": "hero-person-0361",
   "name": "방마름",
   "title": "관문 통과 기록관, 하윤목의 실무 담당자",
   "position": "관문 통과 기록관, 하윤목의 실무 담당자",
   "rank": "병장",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "field_coordinator",
+  "heroClass": "전장조율",
+  "battleRoleTags": [
+    "formation",
+    "supply",
+    "negotiation",
+    "records"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "intelligence"
+  ],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "S2",
   "state": "S14",

@@ -1,11 +1,29 @@
 {
   "id": "person-0324",
+  "heroId": "hero-person-0324",
   "name": "심달호",
   "title": "약재상",
   "position": "약재상",
   "rank": "회원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "recovery_specialist",
+  "heroClass": "회복지원",
+  "battleRoleTags": [
+    "sustain",
+    "repair",
+    "triage",
+    "supply"
+  ],
+  "effectFamilies": [
+    "medicine",
+    "gear",
+    "morale"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": false,
   "gender": "여성",
   "stage": "S1",
   "state": "S13",

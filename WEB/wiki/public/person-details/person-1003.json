@@ -1,11 +1,30 @@
 {
   "id": "person-1003",
+  "heroId": "hero-person-1003",
   "name": "조재표",
   "title": "유명 낭인 지휘자",
   "position": "유명 낭인 지휘자 — 이동 경로·호위 계약·철수 판단에 서명 (사용자 확정)",
   "rank": "미등록",
   "commonTier": "T5",
   "occupation": "주 탐사원 / 부 순찰대 (창작 제안)",
+  "heroClassId": "recovery_specialist",
+  "heroClass": "회복지원",
+  "battleRoleTags": [
+    "sustain",
+    "repair",
+    "triage",
+    "supply"
+  ],
+  "effectFamilies": [
+    "medicine",
+    "gear",
+    "morale"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "intelligence"
+  ],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S1",
   "state": "S00",

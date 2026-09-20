@@ -1,11 +1,29 @@
 {
   "id": "person-0140",
+  "heroId": "hero-person-0140",
   "name": "배은찬",
   "title": "보호조항 병참 서기",
   "position": "보호조항 병참 서기",
   "rank": "병장",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "field_coordinator",
+  "heroClass": "전장조율",
+  "battleRoleTags": [
+    "formation",
+    "supply",
+    "negotiation",
+    "records"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "intelligence"
+  ],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "S3",
   "state": "S05",

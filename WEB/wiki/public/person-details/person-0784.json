@@ -1,11 +1,24 @@
 {
   "id": "person-0784",
+  "heroId": "hero-person-0784",
   "name": "강별유",
   "title": "송신 당직",
   "position": "송신 당직",
   "rank": "직원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "expedition_anchor",
+  "heroClass": "원정중추",
+  "battleRoleTags": [
+    "formation",
+    "sustain"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information"
+  ],
+  "campaignRoles": [],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S4",
   "state": "S09",

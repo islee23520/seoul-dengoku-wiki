@@ -1,11 +1,30 @@
 {
   "id": "person-0180",
+  "heroId": "hero-person-0180",
   "name": "지온유",
   "title": "후국회의 전령",
   "position": "후국회의 전령",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "route_operative",
+  "heroClass": "경로공작",
+  "battleRoleTags": [
+    "recon",
+    "covert",
+    "route-control",
+    "records"
+  ],
+  "effectFamilies": [
+    "information",
+    "physical-ai-tech",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "intelligence"
+  ],
+  "commandEligible": false,
   "gender": "여성",
   "stage": "S2",
   "state": "S07",

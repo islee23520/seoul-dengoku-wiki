@@ -1,11 +1,29 @@
 {
   "id": "person-0055",
+  "heroId": "hero-person-0055",
   "name": "여시온",
   "title": "제작헌장 전령",
   "position": "제작헌장 전령",
   "rank": "조합원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "breach_lead",
+  "heroClass": "돌파선도",
+  "battleRoleTags": [
+    "pressure",
+    "route-control",
+    "repair"
+  ],
+  "effectFamilies": [
+    "gear",
+    "physical-ai-tech"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "intelligence",
+    "sabotage"
+  ],
+  "commandEligible": true,
   "gender": "여성",
   "stage": "S3",
   "state": "S02",

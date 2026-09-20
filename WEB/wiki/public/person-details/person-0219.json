@@ -1,11 +1,29 @@
 {
   "id": "person-0219",
+  "heroId": "hero-person-0219",
   "name": "어도윤",
   "title": "첫 급수협약 시장 증인",
   "position": "첫 급수협약 시장 증인",
   "rank": "교도",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "recovery_specialist",
+  "heroClass": "회복지원",
+  "battleRoleTags": [
+    "sustain",
+    "repair",
+    "triage",
+    "supply"
+  ],
+  "effectFamilies": [
+    "medicine",
+    "gear",
+    "morale"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": false,
   "gender": "여성",
   "stage": "S3",
   "state": "S08",

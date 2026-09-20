@@ -1,11 +1,24 @@
 {
   "id": "person-0144",
+  "heroId": "hero-person-0144",
   "name": "남휘강",
   "title": "수문 교량 봉쇄 지휘관",
   "position": "수문 교량 봉쇄 지휘관",
   "rank": "병장",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "expedition_anchor",
+  "heroClass": "원정중추",
+  "battleRoleTags": [
+    "formation",
+    "sustain"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information"
+  ],
+  "campaignRoles": [],
+  "commandEligible": false,
   "gender": "여성",
   "stage": "S2",
   "state": "S05",

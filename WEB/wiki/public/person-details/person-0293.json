@@ -1,11 +1,24 @@
 {
   "id": "person-0293",
+  "heroId": "hero-person-0293",
   "name": "섭채원",
   "title": "북한산보국문 행렬 북문 안내인",
   "position": "북한산보국문 행렬 북문 안내인",
   "rank": "대리",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "expedition_anchor",
+  "heroClass": "원정중추",
+  "battleRoleTags": [
+    "formation",
+    "sustain"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information"
+  ],
+  "campaignRoles": [],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S3",
   "state": "S11",

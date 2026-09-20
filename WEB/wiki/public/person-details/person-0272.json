@@ -1,11 +1,27 @@
 {
   "id": "person-0272",
+  "heroId": "hero-person-0272",
   "name": "이홍원",
   "title": "차량기지 원로",
   "position": "서초전산그룹 회장",
   "rank": "회장",
   "commonTier": "T1",
   "occupation": "차량기지 원로",
+  "heroClassId": "breach_lead",
+  "heroClass": "돌파선도",
+  "battleRoleTags": [
+    "pressure",
+    "route-control",
+    "repair"
+  ],
+  "effectFamilies": [
+    "gear",
+    "physical-ai-tech"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "주요",
   "state": "S11",

@@ -1,11 +1,24 @@
 {
   "id": "person-0105",
+  "heroId": "hero-person-0105",
   "name": "표누리",
   "title": "군자기지 유치 실무장",
   "position": "군자기지 유치 실무장",
   "rank": "집사",
   "commonTier": "T4",
   "occupation": "미등록",
+  "heroClassId": "expedition_anchor",
+  "heroClass": "원정중추",
+  "battleRoleTags": [
+    "formation",
+    "sustain"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information"
+  ],
+  "campaignRoles": [],
+  "commandEligible": false,
   "gender": "여성",
   "stage": "S2",
   "state": "S04",

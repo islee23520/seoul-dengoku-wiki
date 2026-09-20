@@ -1,11 +1,30 @@
 {
   "id": "person-0345",
+  "heroId": "hero-person-0345",
   "name": "석라온",
   "title": "남하 피난 환자 대표",
   "position": "남하 피난 환자 대표",
   "rank": "회원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "field_coordinator",
+  "heroClass": "전장조율",
+  "battleRoleTags": [
+    "formation",
+    "supply",
+    "negotiation",
+    "records"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "intelligence"
+  ],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "S3",
   "state": "S13",

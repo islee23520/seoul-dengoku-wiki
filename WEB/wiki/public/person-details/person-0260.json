@@ -1,11 +1,26 @@
 {
   "id": "person-0260",
+  "heroId": "hero-person-0260",
   "name": "두소",
   "title": "회랑 통행 안내 거점장",
   "position": "회랑 통행 안내 거점장",
   "rank": "스님",
   "commonTier": "T4",
   "occupation": "미등록",
+  "heroClassId": "expedition_anchor",
+  "heroClass": "원정중추",
+  "battleRoleTags": [
+    "formation",
+    "sustain"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S2",
   "state": "S10",

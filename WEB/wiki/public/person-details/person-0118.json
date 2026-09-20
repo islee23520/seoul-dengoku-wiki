@@ -1,11 +1,24 @@
 {
   "id": "person-0118",
+  "heroId": "hero-person-0118",
   "name": "정소율",
   "title": "상수행정청장",
   "position": "상수행정청장",
   "rank": "대대장",
   "commonTier": "T3",
   "occupation": "미등록",
+  "heroClassId": "expedition_anchor",
+  "heroClass": "원정중추",
+  "battleRoleTags": [
+    "formation",
+    "sustain"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information"
+  ],
+  "campaignRoles": [],
+  "commandEligible": true,
   "gender": "여성",
   "stage": "S1",
   "state": "S05",

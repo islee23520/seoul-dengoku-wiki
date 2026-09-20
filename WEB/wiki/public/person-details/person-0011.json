@@ -1,11 +1,29 @@
 {
   "id": "person-0011",
+  "heroId": "hero-person-0011",
   "name": "구태윤",
   "title": "양천 급수시장 물류상",
   "position": "양천 급수시장 물류상",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "field_coordinator",
+  "heroClass": "전장조율",
+  "battleRoleTags": [
+    "formation",
+    "supply",
+    "negotiation",
+    "records"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "intelligence"
+  ],
+  "commandEligible": true,
   "gender": "여성",
   "stage": "S2",
   "state": "S01",

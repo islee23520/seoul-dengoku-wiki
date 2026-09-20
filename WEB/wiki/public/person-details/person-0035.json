@@ -1,11 +1,28 @@
 {
   "id": "person-0035",
+  "heroId": "hero-person-0035",
   "name": "장우석",
   "title": "수리규격 감사기록관",
   "position": "수리규격 감사기록관",
   "rank": "조합원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "breach_lead",
+  "heroClass": "돌파선도",
+  "battleRoleTags": [
+    "pressure",
+    "route-control",
+    "repair"
+  ],
+  "effectFamilies": [
+    "gear",
+    "physical-ai-tech"
+  ],
+  "campaignRoles": [
+    "intelligence",
+    "sabotage"
+  ],
+  "commandEligible": true,
   "gender": "여성",
   "stage": "S1",
   "state": "S02",

@@ -1,11 +1,31 @@
 {
   "id": "person-0071",
+  "heroId": "hero-person-0071",
   "name": "명해솔",
   "title": "서부 외곽 활주로터 탐사원",
   "position": "서부 외곽 활주로터 탐사원",
   "rank": "대리",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "route_operative",
+  "heroClass": "경로공작",
+  "battleRoleTags": [
+    "recon",
+    "covert",
+    "route-control",
+    "records"
+  ],
+  "effectFamilies": [
+    "information",
+    "physical-ai-tech",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "intelligence",
+    "sabotage"
+  ],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S2",
   "state": "S03",

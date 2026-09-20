@@ -1,11 +1,30 @@
 {
   "id": "person-0360",
+  "heroId": "hero-person-0360",
   "name": "동새봄",
   "title": "교량 하부 탐사원, 심가은의 실무 담당자",
   "position": "교량 하부 탐사원, 심가은의 실무 담당자",
   "rank": "병장",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "route_operative",
+  "heroClass": "경로공작",
+  "battleRoleTags": [
+    "recon",
+    "covert",
+    "route-control",
+    "records"
+  ],
+  "effectFamilies": [
+    "information",
+    "physical-ai-tech",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "assassination",
+    "intelligence"
+  ],
+  "commandEligible": false,
   "gender": "여성",
   "stage": "S2",
   "state": "S14",

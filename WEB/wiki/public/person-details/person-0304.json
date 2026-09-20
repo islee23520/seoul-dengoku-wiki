@@ -1,11 +1,30 @@
 {
   "id": "person-0304",
+  "heroId": "hero-person-0304",
   "name": "복봉",
   "title": "환승 중계 물류상",
   "position": "환승 중계 물류상",
   "rank": "호송원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "field_coordinator",
+  "heroClass": "전장조율",
+  "battleRoleTags": [
+    "formation",
+    "supply",
+    "negotiation",
+    "records"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "intelligence"
+  ],
+  "commandEligible": true,
   "gender": "여성",
   "stage": "S2",
   "state": "S12",

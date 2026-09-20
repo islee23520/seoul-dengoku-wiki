@@ -1,11 +1,27 @@
 {
   "id": "person-0280",
+  "heroId": "hero-person-0280",
   "name": "봉복",
   "title": "기지 의무원",
   "position": "기지 의무원",
   "rank": "대리",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "recovery_specialist",
+  "heroClass": "회복지원",
+  "battleRoleTags": [
+    "sustain",
+    "repair",
+    "triage",
+    "supply"
+  ],
+  "effectFamilies": [
+    "medicine",
+    "gear",
+    "morale"
+  ],
+  "campaignRoles": [],
+  "commandEligible": false,
   "gender": "여성",
   "stage": "S2",
   "state": "S11",

@@ -1,11 +1,30 @@
 {
   "id": "person-0002",
+  "heroId": "hero-person-0002",
   "name": "이서담",
   "title": "양천 배급구역 대표",
   "position": "양천 배급구역 대표",
   "rank": "구역장",
   "commonTier": "T3",
   "occupation": "미등록",
+  "heroClassId": "field_coordinator",
+  "heroClass": "전장조율",
+  "battleRoleTags": [
+    "formation",
+    "supply",
+    "negotiation",
+    "records"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "intelligence"
+  ],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "S1",
   "state": "S01",

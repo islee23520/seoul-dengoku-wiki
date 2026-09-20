@@ -1,11 +1,27 @@
 {
   "id": "person-0164",
+  "heroId": "hero-person-0164",
   "name": "추서윤",
   "title": "급수계약 인준 청구 증인",
   "position": "급수계약 인준 청구 증인",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "recovery_specialist",
+  "heroClass": "회복지원",
+  "battleRoleTags": [
+    "sustain",
+    "repair",
+    "triage",
+    "supply"
+  ],
+  "effectFamilies": [
+    "medicine",
+    "gear",
+    "morale"
+  ],
+  "campaignRoles": [],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S3",
   "state": "S06",

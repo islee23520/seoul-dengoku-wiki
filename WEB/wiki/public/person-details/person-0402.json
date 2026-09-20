@@ -1,11 +1,29 @@
 {
   "id": "person-0402",
+  "heroId": "hero-person-0402",
   "name": "심유리",
   "title": "협약 중재인",
   "position": "협약 중재인",
   "rank": "조합원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "recovery_specialist",
+  "heroClass": "회복지원",
+  "battleRoleTags": [
+    "sustain",
+    "repair",
+    "triage",
+    "supply"
+  ],
+  "effectFamilies": [
+    "medicine",
+    "gear",
+    "morale"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S1",
   "state": "S16",

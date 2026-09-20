@@ -1,11 +1,25 @@
 {
   "id": "person-0151",
+  "heroId": "hero-person-0151",
   "name": "지서윤",
   "title": "서울역 문서고 제습 정비사",
   "position": "서울역 문서고 제습 정비사",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "breach_lead",
+  "heroClass": "돌파선도",
+  "battleRoleTags": [
+    "pressure",
+    "route-control",
+    "repair"
+  ],
+  "effectFamilies": [
+    "gear",
+    "physical-ai-tech"
+  ],
+  "campaignRoles": [],
+  "commandEligible": true,
   "gender": "여성",
   "stage": "S2",
   "state": "S06",

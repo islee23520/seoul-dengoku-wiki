@@ -1,11 +1,29 @@
 {
   "id": "person-0346",
+  "heroId": "hero-person-0346",
   "name": "근우람",
   "title": "군사호적 치료 거부 증인",
   "position": "군사호적 치료 거부 증인",
   "rank": "회원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "recovery_specialist",
+  "heroClass": "회복지원",
+  "battleRoleTags": [
+    "sustain",
+    "repair",
+    "triage",
+    "supply"
+  ],
+  "effectFamilies": [
+    "medicine",
+    "gear",
+    "morale"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": false,
   "gender": "여성",
   "stage": "S3",
   "state": "S13",

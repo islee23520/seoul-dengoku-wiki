@@ -1,11 +1,27 @@
 {
   "id": "person-0038",
+  "heroId": "hero-person-0038",
   "name": "허다온",
   "title": "천왕기지 차륜 정비사",
   "position": "천왕기지 차륜 정비사",
   "rank": "조합원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "breach_lead",
+  "heroClass": "돌파선도",
+  "battleRoleTags": [
+    "pressure",
+    "route-control",
+    "repair"
+  ],
+  "effectFamilies": [
+    "gear",
+    "physical-ai-tech"
+  ],
+  "campaignRoles": [
+    "sabotage"
+  ],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "S2",
   "state": "S02",

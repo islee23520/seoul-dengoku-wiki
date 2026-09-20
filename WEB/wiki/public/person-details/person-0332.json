@@ -1,11 +1,27 @@
 {
   "id": "person-0332",
+  "heroId": "hero-person-0332",
   "name": "수초롱",
   "title": "제기동 동측 방역 순찰대, 라세영의 실무 담당자",
   "position": "제기동 동측 방역 순찰대, 라세영의 실무 담당자",
   "rank": "회원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "line_warden",
+  "heroClass": "전열수호",
+  "battleRoleTags": [
+    "formation",
+    "screening",
+    "route-control"
+  ],
+  "effectFamilies": [
+    "morale",
+    "gear"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": true,
   "gender": "여성",
   "stage": "S2",
   "state": "S13",

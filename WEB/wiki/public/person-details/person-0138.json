@@ -1,11 +1,30 @@
 {
   "id": "person-0138",
+  "heroId": "hero-person-0138",
   "name": "종하린",
   "title": "북한산보국문 행렬 급수-복무 전령",
   "position": "북한산보국문 행렬 급수-복무 전령",
   "rank": "병장",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "route_operative",
+  "heroClass": "경로공작",
+  "battleRoleTags": [
+    "recon",
+    "covert",
+    "route-control",
+    "records"
+  ],
+  "effectFamilies": [
+    "information",
+    "physical-ai-tech",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "assassination",
+    "intelligence"
+  ],
+  "commandEligible": false,
   "gender": "여성",
   "stage": "S3",
   "state": "S05",

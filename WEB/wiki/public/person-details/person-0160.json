@@ -1,11 +1,24 @@
 {
   "id": "person-0160",
+  "heroId": "hero-person-0160",
   "name": "마은결",
   "title": "종로 공증사본 시장 경매사",
   "position": "종로 공증사본 시장 경매사",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "expedition_anchor",
+  "heroClass": "원정중추",
+  "battleRoleTags": [
+    "formation",
+    "sustain"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information"
+  ],
+  "campaignRoles": [],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S2",
   "state": "S06",

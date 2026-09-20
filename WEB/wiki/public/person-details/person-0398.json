@@ -1,11 +1,30 @@
 {
   "id": "person-0398",
+  "heroId": "hero-person-0398",
   "name": "함도겸",
   "title": "공개 경매 조정 보조",
   "position": "공개 경매 조정 보조",
   "rank": "교우",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "field_coordinator",
+  "heroClass": "전장조율",
+  "battleRoleTags": [
+    "formation",
+    "supply",
+    "negotiation",
+    "records"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "intelligence"
+  ],
+  "commandEligible": true,
   "gender": "여성",
   "stage": "S2",
   "state": "S15",

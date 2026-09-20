@@ -1,11 +1,27 @@
 {
   "id": "person-0036",
+  "heroId": "hero-person-0036",
   "name": "임채원",
   "title": "방호복 직능 대표",
   "position": "방호복 직능 대표",
   "rank": "이사",
   "commonTier": "T3",
   "occupation": "미등록",
+  "heroClassId": "line_warden",
+  "heroClass": "전열수호",
+  "battleRoleTags": [
+    "formation",
+    "screening",
+    "route-control"
+  ],
+  "effectFamilies": [
+    "morale",
+    "gear"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "S1",
   "state": "S02",

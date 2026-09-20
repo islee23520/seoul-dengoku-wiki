@@ -1,11 +1,29 @@
 {
   "id": "person-0001",
+  "heroId": "hero-person-0001",
   "name": "한재목",
   "title": "급수총재",
   "position": "급수계약정 역장",
   "rank": "역장",
   "commonTier": "T1",
   "occupation": "급수총재",
+  "heroClassId": "recovery_specialist",
+  "heroClass": "회복지원",
+  "battleRoleTags": [
+    "sustain",
+    "repair",
+    "triage",
+    "supply"
+  ],
+  "effectFamilies": [
+    "medicine",
+    "gear",
+    "morale"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "주요",
   "state": "S01",

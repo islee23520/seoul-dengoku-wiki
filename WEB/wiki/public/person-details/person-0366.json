@@ -1,11 +1,25 @@
 {
   "id": "person-0366",
+  "heroId": "hero-person-0366",
   "name": "판초담",
   "title": "구의 펌프실 비상발전 운전장",
   "position": "구의 펌프실 비상발전 운전장",
   "rank": "중대장",
   "commonTier": "T4",
   "occupation": "미등록",
+  "heroClassId": "breach_lead",
+  "heroClass": "돌파선도",
+  "battleRoleTags": [
+    "pressure",
+    "route-control",
+    "repair"
+  ],
+  "effectFamilies": [
+    "gear",
+    "physical-ai-tech"
+  ],
+  "campaignRoles": [],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "S2",
   "state": "S14",

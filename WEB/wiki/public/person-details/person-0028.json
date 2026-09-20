@@ -1,11 +1,27 @@
 {
   "id": "person-0028",
+  "heroId": "hero-person-0028",
   "name": "우오름",
   "title": "약소국 회의 급수병참 서기",
   "position": "약소국 회의 급수병참 서기",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "recovery_specialist",
+  "heroClass": "회복지원",
+  "battleRoleTags": [
+    "sustain",
+    "repair",
+    "triage",
+    "supply"
+  ],
+  "effectFamilies": [
+    "medicine",
+    "gear",
+    "morale"
+  ],
+  "campaignRoles": [],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S3",
   "state": "S01",

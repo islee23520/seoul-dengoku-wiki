@@ -1,11 +1,26 @@
 {
   "id": "person-0874",
+  "heroId": "hero-person-0874",
   "name": "홍자원",
   "title": "수질 계측원",
   "position": "수질 계측원",
   "rank": "대리",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "expedition_anchor",
+  "heroClass": "원정중추",
+  "battleRoleTags": [
+    "formation",
+    "sustain"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S4",
   "state": "S03",

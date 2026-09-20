@@ -1,11 +1,27 @@
 {
   "id": "person-0114",
+  "heroId": "hero-person-0114",
   "name": "여민우",
   "title": "암호화 정비일지 발견 증인",
   "position": "암호화 정비일지 발견 증인",
   "rank": "교사",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "breach_lead",
+  "heroClass": "돌파선도",
+  "battleRoleTags": [
+    "pressure",
+    "route-control",
+    "repair"
+  ],
+  "effectFamilies": [
+    "gear",
+    "physical-ai-tech"
+  ],
+  "campaignRoles": [
+    "sabotage"
+  ],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "S3",
   "state": "S04",

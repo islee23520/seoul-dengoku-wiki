@@ -1,11 +1,24 @@
 {
   "id": "person-0372",
+  "heroId": "hero-person-0372",
   "name": "석주아",
   "title": "열여섯 깃발 관문 인준 관계자",
   "position": "열여섯 깃발 관문 인준 관계자",
   "rank": "병장",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "expedition_anchor",
+  "heroClass": "원정중추",
+  "battleRoleTags": [
+    "formation",
+    "sustain"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information"
+  ],
+  "campaignRoles": [],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S3",
   "state": "S14",

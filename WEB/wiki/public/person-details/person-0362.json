@@ -1,11 +1,24 @@
 {
   "id": "person-0362",
+  "heroId": "hero-person-0362",
   "name": "수지완",
   "title": "구의역 대합실 거점장",
   "position": "구의역 대합실 거점장",
   "rank": "중대장",
   "commonTier": "T4",
   "occupation": "미등록",
+  "heroClassId": "expedition_anchor",
+  "heroClass": "원정중추",
+  "battleRoleTags": [
+    "formation",
+    "sustain"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information"
+  ],
+  "campaignRoles": [],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S2",
   "state": "S14",

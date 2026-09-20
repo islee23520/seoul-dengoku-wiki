@@ -1,11 +1,24 @@
 {
   "id": "person-0024",
+  "heroId": "hero-person-0024",
   "name": "류한뫼",
   "title": "유언 사본 입회 증인",
   "position": "유언 사본 입회 증인",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "expedition_anchor",
+  "heroClass": "원정중추",
+  "battleRoleTags": [
+    "formation",
+    "sustain"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information"
+  ],
+  "campaignRoles": [],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S3",
   "state": "S01",

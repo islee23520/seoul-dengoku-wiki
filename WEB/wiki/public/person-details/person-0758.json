@@ -1,11 +1,30 @@
 {
   "id": "person-0758",
+  "heroId": "hero-person-0758",
   "name": "류은현",
   "title": "호송 물류상",
   "position": "호송 물류상",
   "rank": "교우",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "field_coordinator",
+  "heroClass": "전장조율",
+  "battleRoleTags": [
+    "formation",
+    "supply",
+    "negotiation",
+    "records"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "intelligence"
+  ],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "S4",
   "state": "S15",

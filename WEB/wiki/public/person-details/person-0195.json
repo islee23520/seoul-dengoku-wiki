@@ -1,11 +1,30 @@
 {
   "id": "person-0195",
+  "heroId": "hero-person-0195",
   "name": "오해린",
   "title": "냉동상인 대표",
   "position": "원불교 교정원장",
   "rank": "교정원장",
   "commonTier": "T1",
   "occupation": "냉동상인 대표",
+  "heroClassId": "field_coordinator",
+  "heroClass": "전장조율",
+  "battleRoleTags": [
+    "formation",
+    "supply",
+    "negotiation",
+    "records"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "intelligence"
+  ],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "주요",
   "state": "S08",

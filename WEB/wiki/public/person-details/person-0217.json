@@ -1,11 +1,30 @@
 {
   "id": "person-0217",
+  "heroId": "hero-person-0217",
   "name": "홍지훈",
   "title": "급수 시세 폭등 상인",
   "position": "급수 시세 폭등 상인",
   "rank": "교도",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "field_coordinator",
+  "heroClass": "전장조율",
+  "battleRoleTags": [
+    "formation",
+    "supply",
+    "negotiation",
+    "records"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "intelligence"
+  ],
+  "commandEligible": true,
   "gender": "여성",
   "stage": "S3",
   "state": "S08",

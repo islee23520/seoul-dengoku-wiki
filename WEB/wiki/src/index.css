@@ -251,11 +251,12 @@ summary:focus-visible {
 .people-table th, .people-table td { border: 1px solid var(--wiki-line); padding: 0.55rem 0.7rem; text-align: start; overflow-wrap: anywhere; }
 .people-table th { background: var(--wiki-nav); color: white; }
 .people-col-name { inline-size: 8%; }
-.people-col-state { inline-size: 14%; }
-.people-col-position { inline-size: 31%; }
-.people-col-tier { inline-size: 7%; }
-.people-col-occupation { inline-size: 32%; }
-.people-col-gender { inline-size: 8%; }
+.people-col-state { inline-size: 12%; }
+.people-col-position { inline-size: 24%; }
+.people-col-tier { inline-size: 6%; }
+.people-col-occupation { inline-size: 26%; }
+.people-col-gender { inline-size: 7%; }
+.people-col-hero { inline-size: 17%; }
 .people-table th:nth-child(1), .people-table td:nth-child(1),
 .people-table th:nth-child(2), .people-table td:nth-child(2),
 .people-table th:nth-child(4), .people-table td:nth-child(4),

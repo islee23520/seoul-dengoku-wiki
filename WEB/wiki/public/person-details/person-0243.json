@@ -1,11 +1,26 @@
 {
   "id": "person-0243",
+  "heroId": "hero-person-0243",
   "name": "홍우찬",
   "title": "재송신 원점 제보자",
   "position": "재송신 원점 제보자",
   "rank": "직원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "expedition_anchor",
+  "heroClass": "원정중추",
+  "battleRoleTags": [
+    "formation",
+    "sustain"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": false,
   "gender": "여성",
   "stage": "S3",
   "state": "S09",

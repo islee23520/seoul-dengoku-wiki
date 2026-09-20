@@ -1,11 +1,26 @@
 {
   "id": "person-0300",
+  "heroId": "hero-person-0300",
   "name": "문시온",
   "title": "통행 심사관",
   "position": "통행 심사관",
   "rank": "호송원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "expedition_anchor",
+  "heroClass": "원정중추",
+  "battleRoleTags": [
+    "formation",
+    "sustain"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S1",
   "state": "S12",

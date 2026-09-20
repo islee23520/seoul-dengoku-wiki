@@ -1,11 +1,25 @@
 {
   "id": "person-0349",
+  "heroId": "hero-person-0349",
   "name": "고서준",
   "title": "능선수비대장",
   "position": "관문군정 사령관",
   "rank": "사령관",
   "commonTier": "T1",
   "occupation": "능선수비대장",
+  "heroClassId": "line_warden",
+  "heroClass": "전열수호",
+  "battleRoleTags": [
+    "formation",
+    "screening",
+    "route-control"
+  ],
+  "effectFamilies": [
+    "morale",
+    "gear"
+  ],
+  "campaignRoles": [],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "주요",
   "state": "S14",

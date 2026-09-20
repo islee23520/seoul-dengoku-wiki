@@ -1,11 +1,27 @@
 {
   "id": "person-0296",
+  "heroId": "hero-person-0296",
   "name": "순하준",
   "title": "둘째 급수협약 차륜 교환 증인",
   "position": "둘째 급수협약 차륜 교환 증인",
   "rank": "대리",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "recovery_specialist",
+  "heroClass": "회복지원",
+  "battleRoleTags": [
+    "sustain",
+    "repair",
+    "triage",
+    "supply"
+  ],
+  "effectFamilies": [
+    "medicine",
+    "gear",
+    "morale"
+  ],
+  "campaignRoles": [],
+  "commandEligible": false,
   "gender": "여성",
   "stage": "S3",
   "state": "S11",

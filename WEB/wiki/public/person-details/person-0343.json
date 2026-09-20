@@ -1,11 +1,29 @@
 {
   "id": "person-0343",
+  "heroId": "hero-person-0343",
   "name": "범초이",
   "title": "의무호송 사고 당사자",
   "position": "의무호송 사고 당사자",
   "rank": "회원",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "recovery_specialist",
+  "heroClass": "회복지원",
+  "battleRoleTags": [
+    "sustain",
+    "repair",
+    "triage",
+    "supply"
+  ],
+  "effectFamilies": [
+    "medicine",
+    "gear",
+    "morale"
+  ],
+  "campaignRoles": [
+    "diplomacy"
+  ],
+  "commandEligible": false,
   "gender": "여성",
   "stage": "S3",
   "state": "S13",

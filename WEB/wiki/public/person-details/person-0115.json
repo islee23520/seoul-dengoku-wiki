@@ -1,11 +1,24 @@
 {
   "id": "person-0115",
+  "heroId": "hero-person-0115",
   "name": "기하겸",
   "title": "보호군 파견 거부 민병 조장",
   "position": "보호군 파견 거부 민병 조장",
   "rank": "교사",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "expedition_anchor",
+  "heroClass": "원정중추",
+  "battleRoleTags": [
+    "formation",
+    "sustain"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information"
+  ],
+  "campaignRoles": [],
+  "commandEligible": false,
   "gender": "여성",
   "stage": "S3",
   "state": "S04",

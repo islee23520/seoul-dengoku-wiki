@@ -1,11 +1,29 @@
 {
   "id": "person-0148",
+  "heroId": "hero-person-0148",
   "name": "윤지율",
   "title": "의료이송 기록관",
   "position": "의료이송 기록관",
   "rank": "주사",
   "commonTier": "T5",
   "occupation": "미등록",
+  "heroClassId": "recovery_specialist",
+  "heroClass": "회복지원",
+  "battleRoleTags": [
+    "sustain",
+    "repair",
+    "triage",
+    "supply"
+  ],
+  "effectFamilies": [
+    "medicine",
+    "gear",
+    "morale"
+  ],
+  "campaignRoles": [
+    "intelligence"
+  ],
+  "commandEligible": false,
   "gender": "남성",
   "stage": "S1",
   "state": "S06",

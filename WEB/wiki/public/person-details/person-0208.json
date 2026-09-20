@@ -1,11 +1,30 @@
 {
   "id": "person-0208",
+  "heroId": "hero-person-0208",
   "name": "설초아",
   "title": "노량진역 대합실 역장",
   "position": "노량진역 대합실 역장",
   "rank": "교생",
   "commonTier": "T4",
   "occupation": "미등록",
+  "heroClassId": "field_coordinator",
+  "heroClass": "전장조율",
+  "battleRoleTags": [
+    "formation",
+    "supply",
+    "negotiation",
+    "records"
+  ],
+  "effectFamilies": [
+    "morale",
+    "information",
+    "agitation"
+  ],
+  "campaignRoles": [
+    "diplomacy",
+    "intelligence"
+  ],
+  "commandEligible": true,
   "gender": "남성",
   "stage": "S2",
   "state": "S08",
