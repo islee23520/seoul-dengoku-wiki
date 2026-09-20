@@ -227,6 +227,41 @@ namespace Janseon.Foundation.Tests
             TestContext.WriteLine("PLACE_ID_MANUAL_QA=" + outputPath);
         }
 
+        [Test]
+        public void ExplicitTransferAndVerticalRoute()
+        {
+            var graph = RouteGraph.CreateFromConnections(new[]
+            {
+                new RouteConnection(new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.surface"), new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.b1"), RouteConnectionKind.Transfer, RouteGrade.Entrance, PassageState.Open),
+                new RouteConnection(new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.b1"), new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.b2"), RouteConnectionKind.Vertical, RouteGrade.Stair, PassageState.Open),
+                new RouteConnection(new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.surface"), new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.elevated"), RouteConnectionKind.Rail, RouteGrade.Elevated, PassageState.Open)
+            });
+
+            Assert.IsTrue(graph.CanTraverse(new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.surface"), new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.b1")));
+            Assert.IsTrue(graph.CanTraverse(new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.b1"), new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.b2")));
+            Assert.AreEqual(RouteGrade.Elevated, graph.GetConnection(new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.surface"), new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.elevated")).Grade);
+        }
+
+        [Test]
+        public void BlockedTransferDoesNotBlockUnrelatedPlatform()
+        {
+            var surface = new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.surface");
+            var lower = new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.b1");
+            var rail = new PlaceId(PlaceKind.StationLayerOrPlatform, "platform.sindorim.elevated");
+            var graph = RouteGraph.CreateFromConnections(new[]
+            {
+                new RouteConnection(surface, lower, RouteConnectionKind.Transfer, RouteGrade.Entrance, PassageState.Blocked, "flooded", "pump"),
+                new RouteConnection(surface, rail, RouteConnectionKind.Rail, RouteGrade.Elevated, PassageState.Open),
+                new RouteConnection(surface, surface, RouteConnectionKind.Walk, RouteGrade.Surface, PassageState.Open)
+            });
+
+            Assert.IsFalse(graph.CanTraverse(surface, lower));
+            Assert.IsTrue(graph.CanTraverse(surface, rail));
+            Assert.AreEqual(0, graph.CountImplicitSameCoordinateEdges());
+            Assert.AreEqual("flooded", graph.GetConnection(surface, lower).Cause);
+            Assert.AreEqual("pump", graph.GetConnection(surface, lower).Recovery);
+        }
+
         static string BooleanJson(bool value) => value ? "true" : "false";
         static string NullableIntJson(int? value) => value.HasValue ? value.Value.ToString() : "null";
 

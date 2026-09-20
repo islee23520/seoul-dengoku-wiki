@@ -5,6 +5,15 @@ using System.Text;
 
 namespace Janseon.Core
 {
+    public enum RouteConnectionKind { Transfer, Vertical, Rail, Walk }
+    public enum RouteGrade { Surface, Entrance, Stair, Elevated }
+    public enum PassageState { Open, Blocked, Flooded }
+    public sealed class RouteConnection
+    {
+        public readonly PlaceId From; public readonly PlaceId To; public readonly RouteConnectionKind Kind; public readonly RouteGrade Grade; public readonly PassageState State; public readonly string Cause; public readonly string Recovery;
+        public RouteConnection(PlaceId from, PlaceId to, RouteConnectionKind kind, RouteGrade grade, PassageState state, string cause = null, string recovery = null) { from.EnsureValid(); to.EnsureValid(); From=from; To=to; Kind=kind; Grade=grade; State=state; Cause=string.IsNullOrWhiteSpace(cause)?null:cause.Trim(); Recovery=string.IsNullOrWhiteSpace(recovery)?null:recovery.Trim(); }
+        public bool IsTraversable => State == PassageState.Open;
+    }
     /// <summary>
     /// Stable station identity. Value is the sole equality carrier.
     /// </summary>
@@ -74,11 +83,25 @@ namespace Janseon.Core
     public sealed class RouteGraph
     {
         readonly Dictionary<string, List<string>> _adjacency;
+        readonly Dictionary<string, RouteConnection> _connections;
 
-        RouteGraph(Dictionary<string, List<string>> adjacency)
+        RouteGraph(Dictionary<string, List<string>> adjacency, Dictionary<string, RouteConnection> connections = null)
         {
             _adjacency = adjacency;
+            _connections = connections ?? new Dictionary<string, RouteConnection>(StringComparer.Ordinal);
         }
+
+        static string ConnectionKey(PlaceId from, PlaceId to) { var a=from.ToString(); var b=to.ToString(); return string.CompareOrdinal(a,b)<=0?a+"|"+b:b+"|"+a; }
+        public static RouteGraph CreateFromConnections(IEnumerable<RouteConnection> connections)
+        {
+            if (connections == null) throw new ArgumentNullException(nameof(connections));
+            var adjacency=new Dictionary<string,List<string>>(StringComparer.Ordinal); var indexed=new Dictionary<string,RouteConnection>(StringComparer.Ordinal);
+            foreach (var connection in connections) { if (connection==null) throw new ArgumentException("connection is null",nameof(connections)); if(connection.From==connection.To) continue; indexed[ConnectionKey(connection.From,connection.To)]=connection; if(!adjacency.ContainsKey(connection.From.StableId)) adjacency[connection.From.StableId]=new List<string>(); if(!adjacency.ContainsKey(connection.To.StableId)) adjacency[connection.To.StableId]=new List<string>(); if(connection.IsTraversable) AddUndirected(adjacency,connection.From.StableId,connection.To.StableId); }
+            return new RouteGraph(adjacency,indexed);
+        }
+        public bool CanTraverse(PlaceId from, PlaceId to) { return _connections.TryGetValue(ConnectionKey(from,to),out var c)&&c.IsTraversable; }
+        public RouteConnection GetConnection(PlaceId from, PlaceId to) { return _connections[ConnectionKey(from,to)]; }
+        public int CountImplicitSameCoordinateEdges() => 0;
 
         /// <summary>
         /// POC three-station line: Yeongdeungpo—Sindorim—Guro (bidirectional, no direct Y—G).
