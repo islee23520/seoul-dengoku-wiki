@@ -18,6 +18,9 @@ $nginxTarget = Join-Path $root "nginx\default.conf"
 $nginxPrevious = Join-Path $root "nginx\default.conf.previous"
 $checksumPath = Join-Path $releaseRoot "seoul-dengoku-site.tar.sha256"
 $manifestVerifier = Join-Path $releaseRoot "verify-staged-release.mjs"
+$postVerifyScript = Join-Path $releaseRoot "check-live-contract.mjs"
+$wikiCatalog = Join-Path $releaseRoot "wikiCatalog.ts"
+$postVerifyJson = Join-Path $root "live-http-green.json"
 $promoteScript = Join-Path $releaseRoot "promote-release.ps1"
 $rollbackScript = Join-Path $releaseRoot "rollback-release.ps1"
 $lockPath = Join-Path $root "deploy.lock"
@@ -110,8 +113,7 @@ try {
 
     Write-Host "DEPLOY_STAGE post-verify"
     if (-not $SkipContainer) {
-        $verifyUnix = $releaseRoot.Replace('E:', '/e').Replace('\', '/')
-        Invoke-Native "bash" @("-lc", "HUB_RELEASE_ROOT='$verifyUnix' '$verifyUnix/verify-hub-deploy.sh'")
+        Invoke-Native "node" @($postVerifyScript, "http://127.0.0.1:8080", $postVerifyJson, $wikiCatalog)
     }
     Write-Host "DEPLOY_PASS files=$count http=200"
 } catch {
