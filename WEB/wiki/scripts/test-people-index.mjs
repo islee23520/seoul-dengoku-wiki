@@ -49,3 +49,13 @@ test('people page exposes state common tier occupation and gender filters and re
   for (const field of ['stateName', 'position', 'commonTier', 'occupation', 'gender']) assert.match(page, new RegExp(`person\\.${field}`))
   assert.match(page, /필터 초기화/)
 })
+
+test('people table reserves an on-screen semantic column for gender', async () => {
+  const page = await readFile(new URL('../src/pages/PeoplePage.tsx', import.meta.url), 'utf8')
+  const css = await readFile(new URL('../src/index.css', import.meta.url), 'utf8')
+  assert.match(page, /<colgroup>/)
+  assert.match(page, /className="people-col-gender"/)
+  assert.match(page, /<th scope="col">성별<\/th>/)
+  assert.match(css, /\.people-table\s*\{[^}]*table-layout:\s*fixed/s)
+  assert.match(css, /\.people-col-gender\s*\{[^}]*inline-size:/s)
+})

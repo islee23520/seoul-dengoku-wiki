@@ -247,9 +247,19 @@ summary:focus-visible {
 .people-filters label { display: grid; gap: 0.3rem; color: var(--wiki-muted); font-size: 0.75rem; font-weight: 700; }
 .people-filters select, .people-filters button { min-inline-size: 0; border: 1px solid var(--wiki-line); background: var(--wiki-paper); color: var(--wiki-text); padding: 0.55rem; }
 .people-filters button { align-self: end; cursor: pointer; font-weight: 700; }
-.people-table { min-inline-size: 48rem; width: 100%; border-collapse: collapse; }
-.people-table th, .people-table td { border: 1px solid var(--wiki-line); padding: 0.55rem 0.7rem; text-align: start; white-space: nowrap; }
+.people-table { min-inline-size: 0; width: 100%; table-layout: fixed; border-collapse: collapse; }
+.people-table th, .people-table td { border: 1px solid var(--wiki-line); padding: 0.55rem 0.7rem; text-align: start; overflow-wrap: anywhere; }
 .people-table th { background: var(--wiki-nav); color: white; }
+.people-col-name { inline-size: 8%; }
+.people-col-state { inline-size: 14%; }
+.people-col-position { inline-size: 31%; }
+.people-col-tier { inline-size: 7%; }
+.people-col-occupation { inline-size: 32%; }
+.people-col-gender { inline-size: 8%; }
+.people-table th:nth-child(1), .people-table td:nth-child(1),
+.people-table th:nth-child(2), .people-table td:nth-child(2),
+.people-table th:nth-child(4), .people-table td:nth-child(4),
+.people-table th:nth-child(6), .people-table td:nth-child(6) { white-space: nowrap; }
 .person-detail-layout { display: grid; grid-template-columns: minmax(18rem, 24rem) minmax(0, 1fr); gap: 1.5rem; align-items: start; }
 .person-data-panel { display: grid; gap: 1rem; position: sticky; inset-block-start: 1rem; }
 .person-data-section h2 { margin-block: 0 0.35rem; font-size: 1rem; }

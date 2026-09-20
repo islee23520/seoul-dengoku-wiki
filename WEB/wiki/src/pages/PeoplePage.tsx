@@ -48,7 +48,15 @@ export default function PeoplePage() {
       <p className="wiki-domain-label" aria-live="polite">검색 결과 {filtered.length}명</p>
       <div className="wiki-table-wrap">
         <table className="people-table">
-          <thead><tr><th>이름</th><th>국가</th><th>직위</th><th>직급</th><th>직업</th><th>성별</th></tr></thead>
+          <colgroup>
+            <col className="people-col-name" />
+            <col className="people-col-state" />
+            <col className="people-col-position" />
+            <col className="people-col-tier" />
+            <col className="people-col-occupation" />
+            <col className="people-col-gender" />
+          </colgroup>
+          <thead><tr><th scope="col">이름</th><th scope="col">국가</th><th scope="col">직위</th><th scope="col">직급</th><th scope="col">직업</th><th scope="col">성별</th></tr></thead>
           <tbody>{filtered.map((person) => (
             <tr key={person.id}>
               <td><Link to={person.detailRoute}>{person.name}</Link></td><td>{person.stateName || '무소속'}</td><td>{person.position}</td><td>{person.commonTier}</td><td>{person.occupation}</td><td>{person.gender}</td>
