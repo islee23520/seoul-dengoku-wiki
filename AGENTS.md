@@ -102,7 +102,7 @@ Writer-digest LSP/ast-grep findings plus retained root symbols; C# LSP coverage 
 - Do not silently recover unsupported/corrupt saves: the documented save contract requires explicit errors.
 - Do not substitute a backend when TRELLIS is unavailable; its designated execution host is separate from this macOS checkout.
 - Unity execution is batchmode-only in a background session, one Editor per `GAME` path: no GUI, Test Runner, manual Play or unicli. Author serialized assets with Unity APIs/SerializedObject, not hand-edited YAML.
-- Do not invent undecided numbers or content, and do not treat design pages as shipped implementation. Decision 11 does not implement the new combat; Oddland/Unity/POC stay untouched in this docs lane.
+- Do not invent undecided numbers or content, and do not treat design pages as shipped implementation. The layered full-3D/unit-command target is an active implementation authority for the approved plan, not a claim that it is already shipped. Oddland assets remain preserved and are not combatants for the new target; existing Unity/POC surfaces remain historical until the target is implemented and proven.
 
 ## 텍스트 정합성 우선과 웹 검증 범위
 
@@ -120,7 +120,7 @@ Writer-digest LSP/ast-grep findings plus retained root symbols; C# LSP coverage 
 
 ## UNIQUE STYLES
 - The strategy screen is a 3D heightmap map of all Seoul with a perspective free-pan/zoom camera (Intent decision 10, 2026-09-18). Target combat is unit/formation command (decision 11, 2026-09-19). The current battle screen's left/right side-scroll is POC presentation. The target battle camera is a 3D free-command default adopted after the unanswered question timed out, not an owner-explicit decision.
-- The serialized Unity genre contract still keeps `combatResolution: realtime-formation-card` as current POC. Target combat is not card economy or direct hero action. Isometric angles, four-direction grid, tile, and SD silhouette keys are retired (`GenreContractTests` enforces absence).
+- The serialized Unity genre contract still records `combatResolution: realtime-formation-card` as the current historical POC; it is not the target authority. The active target is full-3D unit command with separate heroes and soldiers, a surface plus real-subway layered strategy map, uGUI in 16:9, and Unity PlayerLoop/`FixedUpdate` timing using the project's `Time.fixedDeltaTime` without a fixed-rate lock. Target combat is not card economy or direct hero action. Isometric angles, four-direction grid, tile, and SD silhouette keys are retired (`GenreContractTests` enforces absence).
 - Enabled scene order is Bootstrap -> MainTitle -> Foundation; Bootstrap owns app DI and content screens use exclusive child scopes.
 - Runtime screens use uGUI builders/presenters; retained UXML/USS is not automatically the current surface. Data projects ScriptableObjects into validated Core catalogs and canonical fingerprints.
 - Distinguish the 334-station movement graph, Area 1 three-station content catalog and 427-dong authored atlas. `GAME-REFERENCE/poc-diegetic/DIRECTION.md` is a candidate, not an approved UI mandate.

@@ -1,0 +1,17 @@
+{
+  "schema_version": "task02-manual-place-id.v2",
+  "behavior_contract_version": "place-identity.v2",
+  "implementation_commit": "b29d351e802ced619090ac60531b95ba6fba3f28",
+  "source_manifest_sha256": "0145176296ef20d8e2475e71cedc987a94603a0ab0b239c45cc49b8b2e4b0dec",
+  "canonical_id": "StationLayerOrPlatform:platform.sindorim.1.2",
+  "unknown_observed_level": null,
+  "observed_level": 3,
+  "identity_equal": true,
+  "hash_equal": true,
+  "different_platform_id": "StationLayerOrPlatform:platform.sindorim.1.3",
+  "different_platform_unequal": true,
+  "conflict_error": "PlaceDefinitionConflictException",
+  "catalog_fingerprint_before": "16b786187dc2bb15e613c7ae679c0c0ceb69f7a09c44117f49f74d6cbdc683b4",
+  "catalog_fingerprint_after": "16b786187dc2bb15e613c7ae679c0c0ceb69f7a09c44117f49f74d6cbdc683b4",
+  "catalog_unchanged": true
+}

@@ -1,0 +1,494 @@
+{
+  "topology": "/private/tmp/task3-red-h1eJWC/evidence/subway-topology-20260920T045903Z/topology.json",
+  "coverage": "/private/tmp/task3-red-h1eJWC/evidence/subway-topology-20260920T045903Z/coverage.json",
+  "relationsTotal": 19013,
+  "routeRelations": 244,
+  "stopMembers": 5632,
+  "lines": 244,
+  "stations": 334,
+  "matched": 327,
+  "uncovered": 7,
+  "edges": 434,
+  "nontraversableConnections": 2498,
+  "rejectedSelfAdjacency": 1
+}
+✖ same-name stops stay distinct stop nodes and never merge into a fabricated edge (1.779041ms)
+✖ same-name duplicate catalog variant resolves to canonical without duplicate edges (0.324625ms)
+✖ route relation without ref or name yields only nontraversable unknown_line connections (1.862375ms)
+✖ route relation with ref produces a traversable edge bound to links and sources (0.271875ms)
+✖ unsupported stop-like member breaks the segment: A(stop) B(stop_entry_only) C(stop) has no A-C edge (0.179834ms)
+✖ directional stop roles are supported and preserved on edge links (0.191125ms)
+✖ unknown-floor interiors keep observed_levels null and are never coerced (0.197417ms)
+✖ missing-source observed floors throw an explicit error instead of passing silently (0.139875ms)
+✖ missing-source catalog records without interiors entries keep null floors with unknown status (0.09875ms)
+✔ same-district proximity without route evidence produces no edge (0.124083ms)
+✔ platform members and non-route relations never create edges (0.084125ms)
+✔ unmatched or missing stop nodes yield nontraversable connections with reasons (0.154125ms)
+✖ name match beyond the distance guard is refused, not crosswalked by proximity (0.107709ms)
+✖ ambiguous normalized keys reject unless a unique coordinate-exact candidate exists (0.09175ms)
+✖ alias resolves OSM name to canonical graph id deterministically (0.115375ms)
+✖ monorail and nonrail dispositions come only from validated ledger entries (0.118083ms)
+✖ parser reads the real Seoul PBF with manifest-grade counts and hash (0.098125ms)
+✖ crosswalk covers the exact 334 catalog records with explicit dispositions (0.068208ms)
+✖ unresolved required edges are zero and honest categories are named (0.065875ms)
+✖ null floors are preserved across the real 334 (69 unknown) (0.039417ms)
+✖ connection records distinguish unique pairs from stop occurrences (0.047875ms)
+✖ byte-stable outputs carry repo-relative inputs only (0.06725ms)
+✖ every traversable edge binds lines, sources, and supported roles (0.056167ms)
+✖ dong content crosswalk is bounded, sourced, and sparse (0.070333ms)
+✖ CLI rejects unknown, duplicate, and valueless options (1149.93725ms)
+✖ normalizeName applies NFKC, whitespace collapse, and parenthesis spacing only (0.356708ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 3
+ℹ fail 23
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1162.449959
+
+✖ failing tests:
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:41:1
+✖ same-name stops stay distinct stop nodes and never merge into a fabricated edge (1.779041ms)
+  AssertionError [ERR_ASSERTION]: both OSM stop nodes remain distinct
+  + actual - expected
+  
+  + []
+  - [
+  -   'n101',
+  -   'n102'
+  - ]
+  
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:52:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [],
+    expected: [Array],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:55:1
+✖ same-name duplicate catalog variant resolves to canonical without duplicate edges (0.324625ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+  + undefined
+  - {
+  -   'canonical-alias': 1,
+  -   rail: 2
+  - }
+  
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:64:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: [Object],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:80:1
+✖ route relation without ref or name yields only nontraversable unknown_line connections (1.862375ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(topology.connections.some((c) => c.reason === 'unknown_line' && c.a.graphStation === '동묘앞' && c.b.graphStation === '신설동'))
+  
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:88:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:92:1
+✖ route relation with ref produces a traversable edge bound to links and sources (0.271875ms)
+  TypeError: Cannot read properties of undefined (reading 'length')
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:103:27)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:108:1
+✖ unsupported stop-like member breaks the segment: A(stop) B(stop_entry_only) C(stop) has no A-C edge (0.179834ms)
+  AssertionError [ERR_ASSERTION]: no edge may skip the unsupported stop-like member
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:117:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:122:1
+✖ directional stop roles are supported and preserved on edge links (0.191125ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 1
+  
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:131:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:140:1
+✖ unknown-floor interiors keep observed_levels null and are never coerced (0.197417ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + undefined
+  - 'unknown'
+  
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:151:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 'unknown',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:157:1
+✖ missing-source observed floors throw an explicit error instead of passing silently (0.139875ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:160:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /INVALID_OBSERVED_FLOORS/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:163:1
+✖ missing-source catalog records without interiors entries keep null floors with unknown status (0.09875ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + undefined
+  - 'unknown'
+  
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:169:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 'unknown',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:218:1
+✖ name match beyond the distance guard is refused, not crosswalked by proximity (0.107709ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  
+  undefined !== []
+  
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:227:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:231:1
+✖ ambiguous normalized keys reject unless a unique coordinate-exact candidate exists (0.09175ms)
+  TypeError: Cannot read properties of undefined (reading 'length')
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:239:76)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:249:1
+✖ alias resolves OSM name to canonical graph id deterministically (0.115375ms)
+  TypeError: Cannot read properties of undefined (reading 'graphStation')
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:260:65)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:263:1
+✖ monorail and nonrail dispositions come only from validated ledger entries (0.118083ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+  + undefined
+  - {
+  -   'nonrail-misclassified': 1,
+  -   monorail: 1
+  - }
+  
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:278:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: [Object],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:301:1
+✖ parser reads the real Seoul PBF with manifest-grade counts and hash (0.098125ms)
+  Error: ENOENT: no such file or directory, open '/private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/data/subway-alias-ledger.json'
+      at readFileSync (node:fs:539:20)
+      at loadLedger (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/subway-topology.mjs:14:21)
+      at loadReal (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:289:20)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:302:24)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/data/subway-alias-ledger.json'
+  }
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:312:1
+✖ crosswalk covers the exact 334 catalog records with explicit dispositions (0.068208ms)
+  Error: ENOENT: no such file or directory, open '/private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/data/subway-alias-ledger.json'
+      at readFileSync (node:fs:539:20)
+      at loadLedger (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/subway-topology.mjs:14:21)
+      at loadReal (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:289:20)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:313:34)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/data/subway-alias-ledger.json'
+  }
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:335:1
+✖ unresolved required edges are zero and honest categories are named (0.065875ms)
+  Error: ENOENT: no such file or directory, open '/private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/data/subway-alias-ledger.json'
+      at readFileSync (node:fs:539:20)
+      at loadLedger (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/subway-topology.mjs:14:21)
+      at loadReal (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:289:20)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:336:34)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/data/subway-alias-ledger.json'
+  }
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:357:1
+✖ null floors are preserved across the real 334 (69 unknown) (0.039417ms)
+  Error: ENOENT: no such file or directory, open '/private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/data/subway-alias-ledger.json'
+      at readFileSync (node:fs:539:20)
+      at loadLedger (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/subway-topology.mjs:14:21)
+      at loadReal (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:289:20)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:358:24)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/data/subway-alias-ledger.json'
+  }
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:362:1
+✖ connection records distinguish unique pairs from stop occurrences (0.047875ms)
+  Error: ENOENT: no such file or directory, open '/private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/data/subway-alias-ledger.json'
+      at readFileSync (node:fs:539:20)
+      at loadLedger (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/subway-topology.mjs:14:21)
+      at loadReal (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:289:20)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:363:24)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/data/subway-alias-ledger.json'
+  }
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:375:1
+✖ byte-stable outputs carry repo-relative inputs only (0.06725ms)
+  Error: ENOENT: no such file or directory, open '/private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/data/subway-alias-ledger.json'
+      at readFileSync (node:fs:539:20)
+      at loadLedger (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/subway-topology.mjs:14:21)
+      at loadReal (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:289:20)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:376:24)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/data/subway-alias-ledger.json'
+  }
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:389:1
+✖ every traversable edge binds lines, sources, and supported roles (0.056167ms)
+  Error: ENOENT: no such file or directory, open '/private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/data/subway-alias-ledger.json'
+      at readFileSync (node:fs:539:20)
+      at loadLedger (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/subway-topology.mjs:14:21)
+      at loadReal (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:289:20)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:390:24)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/data/subway-alias-ledger.json'
+  }
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:407:1
+✖ dong content crosswalk is bounded, sourced, and sparse (0.070333ms)
+  Error: ENOENT: no such file or directory, open '/private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/data/subway-alias-ledger.json'
+      at readFileSync (node:fs:539:20)
+      at loadLedger (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/subway-topology.mjs:14:21)
+      at loadReal (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:289:20)
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:408:34)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/data/subway-alias-ledger.json'
+  }
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:433:1
+✖ CLI rejects unknown, duplicate, and valueless options (1149.93725ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:435:10)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /unknown option --bogus/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:441:1
+✖ normalizeName applies NFKC, whitespace collapse, and parenthesis spacing only (0.356708ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + '총신대입구 (이수)'
+  - '총신대입구(이수)'
+          ^
+  
+      at TestContext.<anonymous> (file:///private/tmp/task3-red-h1eJWC/TOOL/tools/strategy-map/test-subway-topology.mjs:442:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '총신대입구 (이수)',
+    expected: '총신대입구(이수)',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

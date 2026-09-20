@@ -1,0 +1,37 @@
+# task 3 execution commands (surface: terminal CLI, cwd = worktree root)
+
+Worktree: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean
+Branch: feat/layered-full3d-16x9-wave1-clean
+Evidence dir: evidence/layered-full3d-16x9-20260920T030408Z/task-03
+
+## 1. TDD RED (builder does not exist yet)
+$ node TOOL/tools/strategy-map/test-subway-topology.mjs > <ev>/red/red-test.txt 2>&1
+exit=1   # Cannot find module build-subway-topology.mjs
+
+## 2. GREEN (after implementing builder)
+$ node TOOL/tools/strategy-map/test-subway-topology.mjs > <ev>/green/green-test.txt 2>&1
+exit=0   # tests 12 / pass 12 / fail 0
+
+## 3. Build run 1 (real PBF 51,794,961 bytes)
+$ node TOOL/tools/strategy-map/build-subway-topology.mjs --out <ev>/build/run1 > <ev>/build/run1-stdout.json 2>&1
+exit=0   # relationsTotal 19013, routeRelations 244, stopMembers 5632, lines 244, stations 334, matched 327, uncovered 7, edges 434, nontraversable 2498, selfAdjacency 1
+
+## 4. Build run 2 (determinism repeat)
+$ node TOOL/tools/strategy-map/build-subway-topology.mjs --out <ev>/build/run2 > <ev>/build/run2-stdout.json 2>&1
+exit=0
+$ shasum -a 256 <ev>/build/run{1,2}/{topology,coverage}.json && diff -q run1 run2
+byte-identical (see build/determinism.txt)
+
+## 5. Malformed input at CLI level
+$ printf 'garbage not a pbf' > /tmp/garbage.pbf
+$ node TOOL/tools/strategy-map/build-subway-topology.mjs --pbf /tmp/garbage.pbf --out /tmp/garbage-out > <ev>/build/malformed-cli.txt 2>&1
+exit=1   # Error: pbf: truncated blob header
+
+## 6. Independent parser cross-check (pyosmium, separate implementation)
+$ python3 (osmium.SimpleHandler) > <ev>/qa/pyosmium-crosscheck.json
+relationsTotal 19013, routeRelations 244, stopMembers 5632, kinds {subway:161, train:75, light_rail:8}
+-> identical to node parser output in coverage.json
+
+## 7. Final test re-run (post distance-guard test, 12 tests)
+$ node TOOL/tools/strategy-map/test-subway-topology.mjs > <ev>/green/green-test.txt 2>&1
+exit=0   # tests 12 / pass 12 / fail 0

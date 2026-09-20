@@ -1,0 +1,667 @@
+Unity Editor version:    6000.7.0a5 (a15235a53881)
+Branch:                  trunk
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 26.6.2 (Build 25G83)
+Darwin version:          25.6.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        65536 MB
+Date:                    2026-09-19T18:41:44Z
+VBCSCompilerPreWarmer: pre-warm launched (dotnet PID 56097)
+VBCSCompiler prewarm took 2.02 ms
+
+The following diagnostic switches are modified from their default values:
+	DebugAllocatorMode: ReleaseMemory (default DecommitMemory)
+
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-ilseoblee" at "2026-09-19T18:41:44.730144Z"
+Launching external process: /Applications/Unity/Hub/Editor/6000.7.0a5/Unity.app/Contents/Helpers/PackageManager/Server/UnityPackageManager
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/6000.7.0a5/Unity.app/Contents/MacOS/Unity
+-batchmode
+-nographics
+-projectPath
+/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME
+-runTests
+-testPlatform
+EditMode
+-assemblyNames
+Janseon.Foundation.EditModeTests
+-testFilter
+Janseon.Foundation.Tests.PlaceIdentityTests.StationIdUsesExactOrdinalIdentity;Janseon.Foundation.Tests.PlaceIdentityTests.IdentityIgnoresObservedLevel;Janseon.Foundation.Tests.PlaceIdentityTests.DuplicateIdWithConflictingMetadataIsRejected;Janseon.Foundation.Tests.PlaceIdentityTests.StableIdBoundaryRejectsNullOrWhitespaceAndPreservesOrdinalIdentity;Janseon.Foundation.Tests.PlaceIdentityTests.UndefinedPlaceKindIsRejected;Janseon.Foundation.Tests.PlaceIdentityTests.DefaultPlaceIdCannotEnterCatalog;Janseon.Foundation.Tests.PlaceIdentityTests.IdenticalDuplicateIsIdempotent;Janseon.Foundation.Tests.PlaceIdentityTests.SameDisplayNameWithDifferentStableIdRemainsDistinct
+-testResults
+/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/evidence/layered-full3d-16x9-20260919T184053Z/task-02/precommit/place-identity.xml
+-logFile
+/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/evidence/layered-full3d-16x9-20260919T184053Z/task-02/precommit/place-identity.log
+Successfully changed project path to: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME
+/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-entities-archetype-allocator-budget=16777216"
+    "memorysetup-entities-query-allocator-budget=16777216"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-remapper-allocator-initial-capacity=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=1"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Logging is directed to a specific file, skipping project log.
+Player connection [8456692096]  Target information:
+
+Player connection [8456692096]  * "[IP] 192.168.0.218 [Port] 55504 [Flags] 2 [Guid] 3900512178 [EditorId] 3900512178 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro-2.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [8456692096]  * "[IP] 100.71.30.111 [Port] 55504 [Flags] 2 [Guid] 3900512178 [EditorId] 3900512178 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro-2.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [8456692096]  * "[IP] 192.168.0.208 [Port] 55504 [Flags] 2 [Guid] 3900512178 [EditorId] 3900512178 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro-2.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [8456692096] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8456692096] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-56096" after 0.1 seconds.
+[Licensing::Module] Licensing is not yet initialized.
+Launching external process: /Applications/Unity/Hub/Editor/6000.7.0a5/Unity.app/Contents/Helpers/UnityLicensingClient.app/Contents/MacOS/Unity.Licensing.Client
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.19.0-rc.1'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-ilseoblee"
+[Licensing::IpcConnector] LicenseClient-ilseoblee channel disconnected successfully.
+[Licensing::IpcConnector] Channel LicenseClient-ilseoblee-6000.7.0 doesn't exist
+[Licensing::Module] Successfully launched the LicensingClient (PId: 56099)
+Initialising UDS system complete:
+  - System type: Client
+  - Resource namespace: c6f206a421be32f375f3807cfb1477e4
+  - Shared memory size: 1073741824
+  - Command buffer id: 1052672
+  - Command buffer size: 8192
+  - Hashmap size: 4194304
+  - Service connected: false
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-ilseoblee-6000.7.0" at "2026-09-19T18:41:45.033326Z"
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.19.0-rc.1+a1d64c6
+  Session Id:              a3fcf3a62d0e4944835c66736f6cdf0f
+  Correlation Id:          b13abb276cb83a9ecae84e78e547db44
+  External correlation Id: 3756769737856866459
+  Machine Id:              JxhzwWg3pWfWMny3n9AfODBHuIE=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-ilseoblee-6000.7.0" (connect: 0.11s, validation: 0.01s, handshake: 0.04s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-ilseoblee-6000.7.0-notifications" at "2026-09-19T18:41:45.086831Z"
+[Licensing::Module] Connected to LicensingClient (PId: 56099, launch time: 0.00, total connection time: 0.16s)
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 86166-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Module] Licensing Background thread has ended after 0.36s
+[Licensing::Module] Licensing is initialized (took 0.20s).
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+Launching Unity Data Store - /Applications/Unity/Hub/Editor/6000.7.0a5/Unity.app/Contents/Helpers/Unity.DataStore 
+Unity Data Store artifact dir = Library/DataStore, working dir = /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Unity Data Store running and initialised
+Initialize engine version: 6000.7.0a5 (a15235a53881)
+[EntityIdStore] init: VM path (explicit commit), pageSize=16384, blockCount=262144, entitiesPerBlock=1024, slots reserved=4294967296 bytes
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.7.0a5/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Assets
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/6000.7.0a5/Unity.app/Contents/Resources/Scripting/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/6000.7.0a5/Unity.app/Contents/Resources/Scripting/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = '/Applications/Unity/Hub/Editor/6000.7.0a5/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/6000.7.0a5/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56096
+CodeReloadManager initialized
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/6000.7.0a5/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/6000.7.0a5/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/6000.7.0a5/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+[Licensing::Client] Successfully resolved entitlement details
+Register platform support module: /Applications/Unity/Hub/Editor/6000.7.0a5/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+[Licensing::Client] Successfully resolved entitlement details
+Register platform support module: /Applications/Unity/Hub/Editor/6000.7.0a5/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/6000.7.0a5/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.001962 seconds.
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-서울:전국
+Package Manager log level set to [2]
+Native extension for LinuxStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+[usbmuxd] Send listen message
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Licensing::Client] Successfully resolved entitlement details
+Diagnostic switches are active and may impact performance or degrade your user experience. Switches can be configured through the Diagnostics section in the Preferences window.
+	DebugAllocatorMode: 0
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  3.573 seconds
+Domain Reload Profiling: 3913ms
+	BeginReloadAssembly (59ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (3ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (235ms)
+		LoadAssemblies (41ms)
+		TypeCache.Refresh (129ms)
+			TypeCache.ScanAssembly (120ms)
+		AnalyzeDomain (1ms)
+	FinalizeReload (3573ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			BeforeProcessingInitializeOnLoad (80ms)
+			ProcessInitializeOnLoadAttributes (30ms)
+			ProcessInitializeOnLoadMethodAttributes (3282ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 59 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.ide.rider@3.0.38 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.ide.rider@1f60b3138684)
+    com.unity.ide.visualstudio@2.0.26 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.ide.visualstudio@a99d56dec63f)
+    com.unity.inputsystem@1.20.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.inputsystem@7a4e1a2a8194)
+    com.unity.nuget.newtonsoft-json@3.2.2 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.nuget.newtonsoft-json@4dfd81071c64)
+    com.unity.searcher@4.9.5 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.searcher@a463122f2c00)
+    com.unity.nuget.mono-cecil@1.11.6 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.nuget.mono-cecil@ecb9724e46ff)
+  Built-in packages:
+    com.unity.render-pipelines.universal@17.7.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.render-pipelines.universal@c657e0850617)
+    com.unity.test-framework@1.8.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.test-framework@4c309923fa3b)
+    com.unity.ugui@2.7.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.ugui@8e276752998c)
+    com.unity.modules.accessibility@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.physics2d)
+    com.unity.modules.physicscore2d@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.physicscore2d)
+    com.unity.modules.screencapture@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.screencapture)
+    com.unity.modules.smartstrings@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.smartstrings)
+    com.unity.modules.terrain@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.terrainphysics)
+    com.unity.modules.tetgen@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.tetgen)
+    com.unity.modules.tilemap@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.tilemap)
+    com.unity.modules.timelinefoundation@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.timelinefoundation)
+    com.unity.modules.ui@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.video)
+    com.unity.modules.wind@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.modules.hierarchycore)
+    com.unity.ext.nunit@2.1.1 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.ext.nunit@f6178be85c6e)
+    com.unity.render-pipelines.core@17.7.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.render-pipelines.core@c86064616c0c)
+    com.unity.shadergraph@17.7.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.shadergraph@f32f227ad317)
+    com.unity.render-pipelines.universal-config@17.7.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.render-pipelines.universal-config@767fc04a69c2)
+    com.unity.graph-authoring@1.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.graph-authoring@cfd2588851ee)
+    com.unity.burst@2.0.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.burst@626e66ab421b)
+    com.unity.collections@6.7.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.collections@642e35c36221)
+    com.unity.profiling.core@1.0.3 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.profiling.core@9f367c25a5d3)
+    com.unity.test-framework.performance@6.6.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/com.unity.test-framework.performance@2779acc3f9c0)
+  Local packages:
+    com.islee.unity-remote@file:/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/TOOL/unity-remote/unity-package (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/TOOL/unity-remote/unity-package)
+  Git packages:
+    jp.hadashikick.vcontainer@https://github.com/hadashiA/VContainer.git?path=VContainer/Assets/VContainer#1.19.0 (location: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.00 seconds
+ADB: OOP importers: 'AudioImporter' is OOP-eligible (per-importer)
+ADB: OOP importers: 'ComputeShaderImporter' is OOP-eligible (per-importer)
+ADB: OOP importers: 'FBXImporter' is OOP-eligible (per-importer)
+ADB: OOP importers: 'Mesh3DSImporter' is OOP-eligible (per-importer)
+ADB: OOP importers: 'PrefabImporter' is OOP-eligible (per-importer)
+ADB: OOP importers: 'RayTracingShaderImporter' is OOP-eligible (per-importer)
+ADB: OOP importers: 'ShaderImporter' is OOP-eligible (per-importer)
+ADB: OOP importers: 'TextScriptImporter' is OOP-eligible (per-importer)
+ADB: OOP importers: 'TextureImporter' is OOP-eligible (per-importer)
+ADB: OOP importers: 'TrueTypeFontImporter' is OOP-eligible (per-importer)
+ADB: OOP importers: 'VideoClipImporter' is OOP-eligible (per-importer)
+ADB: OOP importers: queue -1003 composition: TextureImporter, TextureImporter, TextureImporter, TextureImporter, TextureImporter, TextureImporter, TextureImporter, TextureImporter, TextureImporter, TextureImporter, TextureImporter, TextureImporter, TextureImporter, TextureImporter, TextureImporter (only the named importers above run OOP; the rest stay in-process)
+ADB: OOP importers: queue -1001 composition: ShaderImporter, ComputeShaderImporter, RayTracingShaderImporter (only the named importers above run OOP; the rest stay in-process)
+ADB: OOP importers: queue 2 composition: TrueTypeFontImporter, TrueTypeFontImporter, TrueTypeFontImporter, TrueTypeFontImporter (only the named importers above run OOP; the rest stay in-process)
+ADB: OOP importers: queue 100 composition: Mesh3DSImporter, FBXImporter, FBXImporter, FBXImporter, FBXImporter, FBXImporter, FBXImporter, FBXImporter, FBXImporter, FBXImporter, FBXImporter (only the named importers above run OOP; the rest stay in-process)
+ADB: OOP importers: queue 1050 composition: TextScriptImporter, TextScriptImporter, TextScriptImporter, TextScriptImporter, TextScriptImporter, TextScriptImporter, TextScriptImporter, TextScriptImporter, TextScriptImporter, TextScriptImporter, TextScriptImporter, TextScriptImporter (only the named importers above run OOP; the rest stay in-process)
+ADB: OOP importers: queue 1100 composition: AudioImporter, AudioImporter, AudioImporter, AudioImporter, AudioImporter, AudioImporter, AudioImporter, AudioImporter, AudioImporter, AudioImporter (only the named importers above run OOP; the rest stay in-process)
+ADB: OOP importers: queue 1500 composition: PrefabImporter (only the named importers above run OOP; the rest stay in-process)
+ADB: OOP importers: queue 1700 composition: VideoClipImporter, VideoClipImporter, VideoClipImporter, VideoClipImporter, VideoClipImporter, VideoClipImporter, VideoClipImporter, VideoClipImporter, VideoClipImporter, VideoClipImporter (only the named importers above run OOP; the rest stay in-process)
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+Starting: /Applications/Unity/Hub/Editor/6000.7.0a5/Unity.app/Contents/Resources/BuildPipeline/bee_backend --ipc --defer-dag-verification --dagfile="Library/Bee/200b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME
+DisplayProgressbar: Compiling Scripts
+warn: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly unityeditor.ios.extensions.xcode has duplicate hint path. Ignoring "/Applications/Unity/Hub/Editor/6000.7.0a5/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll" in favor of "/Applications/Unity/Hub/Editor/6000.7.0a5/PlaybackEngines/MacStandaloneSupport/UnityEditor.iOS.Extensions.Xcode.dll"
+warn: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.runtime.interopservices.windowsruntime has duplicate hint path. Ignoring "/Applications/Unity/Hub/Editor/6000.7.0a5/Unity.app/Contents/Resources/Scripting/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll" in favor of "/Applications/Unity/Hub/Editor/6000.7.0a5/Unity.app/Contents/Resources/Scripting/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
+warn: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.componentmodel.composition has duplicate hint path. Ignoring "/Applications/Unity/Hub/Editor/6000.7.0a5/Unity.app/Contents/Resources/Scripting/UnityReferenceAssemblies/unity-4.8-api/System.ComponentModel.Composition.dll" in favor of "/Applications/Unity/Hub/Editor/6000.7.0a5/Unity.app/Contents/Resources/Scripting/NetStandard/compat/2.1.0/shims/netfx/System.ComponentModel.Composition.dll"
+ExitCode: 0 Duration: 1s655ms
+[580/763    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[731/763    0s] Csc Library/Bee/artifacts/200b0aE.dag/Janseon.Core.dll (+2 others)
+[732/763    0s] ILPostProcess Library/Bee/artifacts/200b0aE.dag/post-processed/Janseon.Core.dll (+pdb)
+Processing assembly Library/Bee/artifacts/200b0aE.dag/Janseon.Core.dll, with 143 defines and 143 references
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+1 processor(s) skipped this assembly
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+[733/763    0s] Csc Library/Bee/artifacts/200b0aE.dag/Janseon.Data.dll (+2 others)
+[734/763    0s] CopyFiles Library/ScriptAssemblies/Janseon.Core.pdb
+[735/763    0s] CopyFiles Library/ScriptAssemblies/Janseon.Core.dll
+[736/763    0s] ILPostProcess Library/Bee/artifacts/200b0aE.dag/post-processed/Janseon.Data.dll (+pdb)
+Processing assembly Library/Bee/artifacts/200b0aE.dag/Janseon.Data.dll, with 143 defines and 305 references
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+1 processor(s) skipped this assembly
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+[737/763    0s] CopyFiles Library/ScriptAssemblies/Janseon.Data.dll
+[738/763    0s] CopyFiles Library/ScriptAssemblies/Janseon.Data.pdb
+[739/763    0s] Csc Library/Bee/artifacts/200b0aE.dag/Janseon.Data.Editor.dll (+2 others)
+[740/763    0s] Csc Library/Bee/artifacts/200b0aE.dag/Janseon.Foundation.dll (+2 others)
+[741/763    0s] ILPostProcess Library/Bee/artifacts/200b0aE.dag/post-processed/Janseon.Data.Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/200b0aE.dag/Janseon.Data.Editor.dll, with 141 defines and 315 references
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+1 processor(s) skipped this assembly
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+[742/763    0s] CopyFiles Library/ScriptAssemblies/Janseon.Data.Editor.pdb
+[743/763    0s] CopyFiles Library/ScriptAssemblies/Janseon.Data.Editor.dll
+[744/763    0s] ILPostProcess Library/Bee/artifacts/200b0aE.dag/post-processed/Janseon.Foundation.dll (+pdb)
+Processing assembly Library/Bee/artifacts/200b0aE.dag/Janseon.Foundation.dll, with 143 defines and 308 references
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+1 processor(s) skipped this assembly
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+[745/763    0s] CopyFiles Library/ScriptAssemblies/Janseon.Foundation.pdb
+[746/763    0s] CopyFiles Library/ScriptAssemblies/Janseon.Foundation.dll
+[747/763    0s] Csc Library/Bee/artifacts/200b0aE.dag/Janseon.Foundation.Editor.dll (+2 others)
+Assets/Janseon/Foundation/Editor/FoundationProjectBuilder.cs(59,29): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets/Janseon/Foundation/Editor/FoundationProjectBuilder.cs(63,35): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+[748/763    0s] Csc Library/Bee/artifacts/200b0aE.dag/Janseon.Foundation.EditModeTests.dll (+2 others)
+Assets/Tests/EditMode/UguiVisualQaDefectTests.cs(125,18): warning CS8321: The local function 'Add' is declared but never used
+[749/763    0s] Csc Library/Bee/artifacts/200b0aE.dag/Janseon.Foundation.PlayModeTests.dll (+2 others)
+Assets/Tests/PlayMode/Area1DataRepositoryPlayModeTests.cs(38,96): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets/Tests/PlayMode/Area1DataRepositoryPlayModeTests.cs(38,41): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets/Tests/PlayMode/Area1VisionCaptureTests.cs(49,96): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets/Tests/PlayMode/Area1VisionCaptureTests.cs(49,41): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets/Tests/PlayMode/FoundationSceneFlowTests.cs(114,35): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets/Tests/PlayMode/FoundationSceneFlowTests.cs(115,74): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets/Tests/PlayMode/FoundationSceneFlowTests.cs(115,29): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs(768,21): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs(767,29): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs(1425,96): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs(1425,41): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs(1475,96): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs(1475,41): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+[750/763    0s] ILPostProcess Library/Bee/artifacts/200b0aE.dag/post-processed/Janseon.Foundation.Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/200b0aE.dag/Janseon.Foundation.Editor.dll, with 141 defines and 317 references
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+1 processor(s) skipped this assembly
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+[751/763    0s] CopyFiles Library/ScriptAssemblies/Janseon.Foundation.Editor.dll
+[752/763    0s] CopyFiles Library/ScriptAssemblies/Janseon.Foundation.Editor.pdb
+[753/763    0s] ILPostProcess Library/Bee/artifacts/200b0aE.dag/post-processed/Janseon.Foundation.PlayModeTests.dll (+pdb)
+Processing assembly Library/Bee/artifacts/200b0aE.dag/Janseon.Foundation.PlayModeTests.dll, with 143 defines and 301 references
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+1 processor(s) skipped this assembly
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+[754/763    0s] ILPostProcess Library/Bee/artifacts/200b0aE.dag/post-processed/Janseon.Foundation.EditModeTests.dll (+pdb)
+Processing assembly Library/Bee/artifacts/200b0aE.dag/Janseon.Foundation.EditModeTests.dll, with 141 defines and 315 references
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+1 processor(s) skipped this assembly
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+[755/763    0s] CopyFiles Library/ScriptAssemblies/Janseon.Foundation.PlayModeTests.pdb
+[756/763    0s] CopyFiles Library/ScriptAssemblies/Janseon.Foundation.PlayModeTests.dll
+[757/763    0s] CopyFiles Library/ScriptAssemblies/Janseon.Foundation.EditModeTests.pdb
+[758/763    0s] CopyFiles Library/ScriptAssemblies/Janseon.Foundation.EditModeTests.dll
+[759/763    0s] Csc Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+Assets/Janseon/Art/Editor/UiCandidateShowcase.cs(129,13): warning CS0618: 'TextureImporterSettings.spriteGenerateFallbackPhysicsShape' is obsolete: 'TextureImporterSettings.spriteGenerateFallbackPhysicsShape is deprecated. Use TextureImporterSettings.spriteGenerateFallbackPhysicsOutline instead (UnityUpgradable) -> spriteGenerateFallbackPhysicsOutline'
+[760/763    0s] ILPostProcess Library/Bee/artifacts/200b0aE.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp-Editor.dll, with 141 defines and 359 references
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+1 processor(s) skipped this assembly
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+[761/763    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+[762/763    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+*** Tundra build success (1.59 seconds), 33 items updated, 763 evaluated
+[ApiUpdater] Total time: 750ms, Parse response file: 34ms, Collect updater configs: 266ms, Update: 449ms, Save: 1ms Files: 1 modified / 1 visited / 4 total (Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp-Editor.dll).
+[API Updater] Updated Files:
+Skipping ScriptUpdater consent dialog. Consent declined based on command line parameters.
+Finished running ScriptUpdaters
+Assets/Janseon/Foundation/Editor/FoundationProjectBuilder.cs(59,29): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets/Janseon/Foundation/Editor/FoundationProjectBuilder.cs(63,35): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets/Tests/EditMode/UguiVisualQaDefectTests.cs(125,18): warning CS8321: The local function 'Add' is declared but never used
+Assets/Tests/PlayMode/Area1DataRepositoryPlayModeTests.cs(38,96): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets/Tests/PlayMode/Area1DataRepositoryPlayModeTests.cs(38,41): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets/Tests/PlayMode/Area1VisionCaptureTests.cs(49,96): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets/Tests/PlayMode/Area1VisionCaptureTests.cs(49,41): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets/Tests/PlayMode/FoundationSceneFlowTests.cs(114,35): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets/Tests/PlayMode/FoundationSceneFlowTests.cs(115,74): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets/Tests/PlayMode/FoundationSceneFlowTests.cs(115,29): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs(768,21): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs(767,29): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs(1425,96): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs(1425,41): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs(1475,96): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs(1475,41): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets/Tests/PlayMode/Area1VisionCaptureTests.cs(49,96): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets/Tests/PlayMode/Area1VisionCaptureTests.cs(49,41): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets/Tests/PlayMode/FoundationSceneFlowTests.cs(114,35): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets/Tests/PlayMode/FoundationSceneFlowTests.cs(115,74): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets/Tests/PlayMode/FoundationSceneFlowTests.cs(115,29): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs(768,21): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs(767,29): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs(1425,96): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs(1425,41): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs(1475,96): warning CS0618: 'FindObjectsSortMode' is obsolete: 'FindObjectsSortMode has been deprecated. Use the FindObjectsByType overloads that do not take a FindObjectsSortMode parameter.'
+Assets/Tests/PlayMode/CoreLoopPlayModeTests.cs(1475,41): warning CS0618: 'Object.FindObjectsByType<T>(FindObjectsSortMode)' is obsolete: 'FindObjectsByType with FindObjectsSortMode parameter has been deprecated. Use FindObjectsByType<T>() or FindObjectsByType<T>(FindObjectsInactive) instead. InstanceID will be replaced in the future with EntityId and previous sort order cannot be maintained.'
+dation/Editor/FoundationProjectBuilder.cs(63,35): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Assets/Janseon/Art/Editor/UiCandidateShowcase.cs(129,13): warning CS0618: 'TextureImporterSettings.spriteGenerateFallbackPhysicsShape' is obsolete: 'TextureImporterSettings.spriteGenerateFallbackPhysicsShape is deprecated. Use TextureImporterSettings.spriteGenerateFallbackPhysicsOutline instead (UnityUpgradable) -> spriteGenerateFallbackPhysicsOutline'
+AssetDatabase: script compilation time: 2.813431s
+Total cache size 220435548
+Total cache size after purge 220435548, took 00:00:00.0818828
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.render-pipelines.core/Editor/Deprecated.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Native extension for LinuxStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:False
+Diagnostic switches are active and may impact performance or degrade your user experience. Switches can be configured through the Diagnostics section in the Preferences window.
+	DebugAllocatorMode: 0
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.345 seconds
+Domain Reload Profiling: 734ms
+	BeginReloadAssembly (103ms)
+		DisableScriptedObjects (9ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (4ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (244ms)
+		LoadAssemblies (100ms)
+		TypeCache.Refresh (50ms)
+			TypeCache.ScanAssembly (42ms)
+		AnalyzeDomain (21ms)
+			BuildScriptInfoCaches (19ms)
+	FinalizeReload (346ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			BeforeProcessingInitializeOnLoad (49ms)
+			ProcessInitializeOnLoadAttributes (55ms)
+			ProcessInitializeOnLoadMethodAttributes (33ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Starting new worker id: 0 with log in /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Logs/AssetImportWorkerHW0.log
+Worker ready: AssetImportWorkerHW0 0
+
+Asset Pipeline Refresh (id=d720d9528779c42a793e4407efff3da6): Total: 4.947 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=646 ms
+		Asset DB Callback time: managed=1079 ms, native=4 ms
+		Scripting: domain reloads=1, domain reload time=402 ms, compile time=2814 ms, other=0 ms
+		Project Asset Count: scripts=981, non-scripts=1966
+		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Scan Filter Count: 1
+	InvokePackagesCallback: 4.208ms
+	ApplyChangesToAssetFolders: 0.202ms
+	Scan: 201.768ms
+	Collect global state as custom dependencies: 3.087ms
+	OnSourceAssetsModified: 0.236ms
+	CategorizeScriptCompilationAssets: 9.579ms
+	ProcessAssetsWithTransientArtifactChanges: 18.042ms
+	CategorizeAssets: 25.465ms
+	CompileScripts: 2814.086ms
+	ImportOutOfDateAssets: 348.788ms (347.173ms without children)
+		UnloadImportedAssets: 0.114ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.242ms
+		ImportSchedulerStart: 1.258ms
+	PostProcessAllAssets: 1079.610ms
+		MonoPostProcessAllAssets: 1079.333ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 1030.431ms
+			AssetPostprocessor.OnPostprocessAllAssets 26.267ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 4.760ms
+			SyncVS.PostprocessSyncProject 3.586ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 2.766ms
+			AssetChangedListener.OnPostprocessAllAssets 0.786ms
+			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 0.718ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 0.713ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 0.651ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 0.559ms
+			MaterialPostprocessor.OnPostprocessAllAssets 0.318ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.213ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.157ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.146ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.139ms
+			PostProcessor.OnPostprocessAllAssets 0.134ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.128ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.127ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.110ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.106ms
+			AssetEvents.OnPostprocessAllAssets 0.106ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 0.103ms
+			InputActionJsonNameModifierAssetProcessor.OnPostprocessAllAssets 0.099ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 0.085ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.084ms
+			Postprocessor.OnPostprocessAllAssets 0.083ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.069ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.061ms
+			ThemePostprocessor.OnPostprocessAllAssets 0.052ms
+	PostAssetChangesProfiler: 0.430ms
+	UnloadStreamsBegin: 1.307ms
+	PersistCurrentRevisions: 0.056ms
+	GenerateScriptTypeHashes: 0.826ms
+	GenerateScriptTypeSerializationHashes: 1.726ms
+	Untracked: 434.960ms
+
+Application.AssetDatabase Initial Refresh End
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Scanning for USB devices : 0.223ms
+Initializing Unity extensions:
+Unloading 284 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3902 unused Assets / (6.1 MB). Loaded Objects now: 4856.
+Memory consumption went from 0.52 GB to 0.51 GB.
+Total: 5.616667 ms (FindLiveObjects: 0.247875 ms CreateObjectMapping: 0.053250 ms MarkObjects: 4.013250 ms  DeleteObjects: 1.252000 ms)
+
+[Project] Loading completed in 10.270 seconds
+	Project init time: 				9.914 seconds
+		Template init time: 		0.000 seconds
+		Package Manager init time: 		0.273 seconds
+		Asset Database init time: 		0.098 seconds
+		Global illumination init time: 	0.001 seconds
+		Assemblies load time: 			3.927 seconds
+		Unity extensions init time: 	0.005 seconds
+		Asset Database refresh time: 	4.947 seconds
+	Scene opening time: 			0.319 seconds
+##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1789843314995,"processId":56096,"projectLoad":10.269626958,"projectInit":9.914168583,"templateInit":0.0,"packageManagerInit":0.273217334,"assetDatabaseInit":0.098494125,"globalIlluminationInit":0.000794875,"assembliesLoad":3.926995333,"unityExtensionsInit":0.004932208,"assetDatabaseRefresh":4.946934042,"sceneOpening":0.318955208}
+##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1789843314995,"processId":56096,"editorVersion":"6000.7.0a5 (a15235a53881)","branch":"trunk","buildType":"Release","platform":"OSX"}
+Asset Pipeline Refresh (id=700df7de495b849568ff21ab8a47d1b0): Total: 0.091 seconds - Initiated by RefreshV2(ForceSynchronousImport)
+[Licensing::Client] Successfully resolved entitlement details
+Running tests for ExecutionSettings with details:
+targetPlatform = 
+playerHeartbeatTimeout = 600
+filters[0] = 
+   Filter with settings:
+   testMode = EditMode
+   targetPlatform = 
+   testNames = null
+   groupNames = Janseon.Foundation.Tests.PlaceIdentityTests.StationIdUsesExactOrdinalIdentity, Janseon.Foundation.Tests.PlaceIdentityTests.IdentityIgnoresObservedLevel, Janseon.Foundation.Tests.PlaceIdentityTests.DuplicateIdWithConflictingMetadataIsRejected, Janseon.Foundation.Tests.PlaceIdentityTests.StableIdBoundaryRejectsNullOrWhitespaceAndPreservesOrdinalIdentity, Janseon.Foundation.Tests.PlaceIdentityTests.UndefinedPlaceKindIsRejected, Janseon.Foundation.Tests.PlaceIdentityTests.DefaultPlaceIdCannotEnterCatalog, Janseon.Foundation.Tests.PlaceIdentityTests.IdenticalDuplicateIsIdempotent, Janseon.Foundation.Tests.PlaceIdentityTests.SameDisplayNameWithDifferentStableIdRemainsDistinct
+   categoryNames = null
+   assemblyNames = Janseon.Foundation.EditModeTests
+ignoreTests = {}
+featureFlags = null
+
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+UnityEditor.TestTools.TestRunner.CommandLineTest.Executer:InitializeAndExecuteRun (string[]) (at ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/CommandLineTest/Executer.cs:53)
+UnityEditor.TestTools.TestRunner.CommandLineTest.TestStarter:InitializeAndExecuteRun () (at ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/CommandLineTest/TestStarter.cs:64)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:463)
+
+(Filename: ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/CommandLineTest/Executer.cs Line: 53)
+
+[UnityConnectServicesConfig] config is NOT valid, switching to default
+Created GICache directory at /Users/ilseoblee/Library/Caches/com.unity3d.UnityEditor/GiCache. Took: 0.005s, timestamps: [10.271 - 10.276]
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (4.5 KB). Loaded Objects now: 5017.
+Memory consumption went from 425.6 MB to 425.5 MB.
+Total: 5.107250 ms (FindLiveObjects: 0.135917 ms CreateObjectMapping: 0.026958 ms MarkObjects: 4.871000 ms  DeleteObjects: 0.016792 ms)
+
+Executing IPrebuildSetup for: Unity.PerformanceTesting.Editor.TestRunBuilder.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+UnityEditor.TestTools.TestRunner.TestRun.Tasks.BuildActionTaskBase`1/<ExecuteMethods>d__8<UnityEngine.TestTools.IPrebuildSetup>:MoveNext () (at ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/TestRun/Tasks/BuildActionTaskBase.cs:48)
+UnityEditor.TestTools.TestRunner.TestRun.Tasks.BuildActionTaskBase`1/<Execute>d__7<UnityEngine.TestTools.IPrebuildSetup>:MoveNext () (at ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/TestRun/Tasks/BuildActionTaskBase.cs:34)
+UnityEditor.TestTools.TestRunner.TestRun.TestJobRunner:ExecuteStep () (at ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/TestRun/TestJobRunner.cs:194)
+UnityEditor.TestTools.TestRunner.TestRun.TestJobRunner:ExecuteCallback () (at ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/TestRun/TestJobRunner.cs:129)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:463)
+
+(Filename: ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/TestRun/Tasks/BuildActionTaskBase.cs Line: 48)
+
+Saving results to: /Users/ilseoblee/Library/Application Support/Janseon Studio/서울_전국/TestResults.xml
+Saving results to: /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/evidence/layered-full3d-16x9-20260919T184053Z/task-02/precommit/place-identity.xml
+Executing IPostBuildCleanup for: Unity.PerformanceTesting.Editor.TestRunBuilder.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+UnityEditor.TestTools.TestRunner.TestRun.Tasks.BuildActionTaskBase`1/<ExecuteMethods>d__8<UnityEngine.TestTools.IPostBuildCleanup>:MoveNext () (at ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/TestRun/Tasks/BuildActionTaskBase.cs:48)
+UnityEditor.TestTools.TestRunner.TestRun.Tasks.BuildActionTaskBase`1/<Execute>d__7<UnityEngine.TestTools.IPostBuildCleanup>:MoveNext () (at ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/TestRun/Tasks/BuildActionTaskBase.cs:34)
+UnityEditor.TestTools.TestRunner.TestRun.TestJobRunner:ExecuteStep () (at ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/TestRun/TestJobRunner.cs:194)
+UnityEditor.TestTools.TestRunner.TestRun.TestJobRunner:ExecuteCallback () (at ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/TestRun/TestJobRunner.cs:129)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:463)
+
+(Filename: ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/TestRun/Tasks/BuildActionTaskBase.cs Line: 48)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (0 B). Loaded Objects now: 5018.
+Memory consumption went from 426.6 MB to 426.6 MB.
+Total: 4.911667 ms (FindLiveObjects: 0.116500 ms CreateObjectMapping: 0.028417 ms MarkObjects: 4.712791 ms  DeleteObjects: 0.003625 ms)
+
+DisplayProgressbar: Undo
+Test run completed. Exiting with code 0 (Ok). Run completed.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:23)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+UnityEditor.TestTools.TestRunner.CommandLineTest.Executer:ExitApplication (UnityEditor.TestTools.TestRunner.CommandLineTest.Executer/ReturnCodes,string) (at ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/CommandLineTest/Executer.cs:81)
+UnityEditor.TestTools.TestRunner.CommandLineTest.Executer:ExitIfRunIsCompleted () (at ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/CommandLineTest/Executer.cs:74)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:463)
+
+(Filename: ./Library/PackageCache/com.unity.test-framework@4c309923fa3b/UnityEditor.TestRunner/CommandLineTest/Executer.cs Line: 81)
+
+MonoPathRemapper: Attempts to remap: 13465; Successful remaps: 224
+Serialized file version minimum: 0, current 23
+Killing ADB server in 0.028677 seconds.
+Thread 0x16de67000 may have been prematurely finalized
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+Thread 0x16e727000 may have been prematurely finalized
+Thread 0x16e7b3000 may have been prematurely finalized
+Thread 0x16e9e3000 may have been prematurely finalized
+Thread 0x16e957000 may have been prematurely finalized
+Thread 0x16ec13000 may have been prematurely finalized
+Thread 0x16ec9f000 may have been prematurely finalized
+Thread 0x16e83f000 may have been prematurely finalized
+Thread 0x16e8cb000 may have been prematurely finalized
+Thread 0x16ea6f000 may have been prematurely finalized
+Thread 0x16eafb000 may have been prematurely finalized
+Thread 0x16eb87000 may have been prematurely finalized
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+[Licensing::IpcConnector] LicenseClient-ilseoblee-6000.7.0-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-ilseoblee-6000.7.0 channel disconnected successfully.
+Lingering sessions upon destruction of worker manager
+Unity Data Store service was successfully shut down
+UDS shutting down local client system
+Shut down UDS service system complete
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+debugger-agent: Unable to listen on 52
+[usbmuxd] Stop listen thread
+[usbmuxd] Error: 
+[usbmuxd] Listen thread exiting

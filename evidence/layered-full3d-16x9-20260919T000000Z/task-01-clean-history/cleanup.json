@@ -1,0 +1,6 @@
+{
+  "schemaVersion": 1,
+  "content_manifest_sha256": "ed9df26d8d57506c31b092e9fa1a67a2b252fe62afa3a89650bc703a51db4b55",
+  "binding_semantics": "cleanup binds exact task31 evidence content manifest; independent of Git parent or HEAD; cleanup and manifest files are excluded to avoid recursion",
+  "removed_paths": [{"path": "/tmp/task31-cleanup-existing", "expectedAbsent": true}]
+}

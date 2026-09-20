@@ -1,0 +1,2030 @@
+{
+  "schema": "subway-topology-coverage-v2",
+  "pbf": {
+    "relations": 19013,
+    "ways": 730540,
+    "nodes": 4895437,
+    "taggedNodes": 261469,
+    "routeRelations": 244,
+    "roleHistogram": {
+      "": 21204,
+      "backward": 561,
+      "forward": 434,
+      "platform": 36,
+      "platform_entry_only": 2,
+      "platform_exit_only": 2,
+      "stop": 5632,
+      "stop_entry_only": 82,
+      "stop_exit_only": 53
+    }
+  },
+  "graph": {
+    "schema": "seoul-world-graph-v1",
+    "stations": 334,
+    "edges": 435,
+    "districts": 25,
+    "aliases": 3
+  },
+  "stationInteriors": {
+    "schema": "station-interior.v1",
+    "stations": 334,
+    "nullFloors": 69,
+    "observedWithNullLevels": 14
+  },
+  "aliasLedger": {
+    "aliases": 3,
+    "canonicalAliases": 3,
+    "coordinateExactMatches": 4,
+    "excludedAliases": 2
+  },
+  "crosswalk": {
+    "stopOccurrences": {
+      "total": 5767,
+      "resolved": 3180,
+      "byReason": {
+        "unknown_station": 1493,
+        "missing_stop_node": 1090,
+        "unnamed_stop": 4
+      },
+      "byRole": {
+        "stop": 5632,
+        "stop_entry_only": 82,
+        "stop_exit_only": 53
+      }
+    },
+    "unknownStopNames": [
+      {
+        "name": "가재울",
+        "occurrences": 2
+      },
+      {
+        "name": "가정",
+        "occurrences": 2
+      },
+      {
+        "name": "가정중앙시장",
+        "occurrences": 2
+      },
+      {
+        "name": "가천대",
+        "occurrences": 14
+      },
+      {
+        "name": "간석",
+        "occurrences": 16
+      },
+      {
+        "name": "간석오거리",
+        "occurrences": 2
+      },
+      {
+        "name": "갈매",
+        "occurrences": 6
+      },
+      {
+        "name": "갈산",
+        "occurrences": 2
+      },
+      {
+        "name": "강매",
+        "occurrences": 4
+      },
+      {
+        "name": "걸포북변",
+        "occurrences": 2
+      },
+      {
+        "name": "검단사거리",
+        "occurrences": 2
+      },
+      {
+        "name": "검단오류",
+        "occurrences": 2
+      },
+      {
+        "name": "검단호수공원",
+        "occurrences": 2
+      },
+      {
+        "name": "검바위",
+        "occurrences": 2
+      },
+      {
+        "name": "검암",
+        "occurrences": 4
+      },
+      {
+        "name": "경기광주",
+        "occurrences": 4
+      },
+      {
+        "name": "경마공원",
+        "occurrences": 10
+      },
+      {
+        "name": "경인교대입구",
+        "occurrences": 2
+      },
+      {
+        "name": "계산",
+        "occurrences": 2
+      },
+      {
+        "name": "계양",
+        "occurrences": 4
+      },
+      {
+        "name": "고촌",
+        "occurrences": 2
+      },
+      {
+        "name": "곡산",
+        "occurrences": 6
+      },
+      {
+        "name": "과천",
+        "occurrences": 10
+      },
+      {
+        "name": "관악",
+        "occurrences": 19
+      },
+      {
+        "name": "광교중앙",
+        "occurrences": 2
+      },
+      {
+        "name": "광명",
+        "occurrences": 7
+      },
+      {
+        "name": "구래",
+        "occurrences": 2
+      },
+      {
+        "name": "구리",
+        "occurrences": 6
+      },
+      {
+        "name": "국제업무지구",
+        "occurrences": 2
+      },
+      {
+        "name": "군포",
+        "occurrences": 21
+      },
+      {
+        "name": "굴포천",
+        "occurrences": 4
+      },
+      {
+        "name": "귤현",
+        "occurrences": 2
+      },
+      {
+        "name": "금곡",
+        "occurrences": 6
+      },
+      {
+        "name": "금정",
+        "occurrences": 33
+      },
+      {
+        "name": "까치울",
+        "occurrences": 4
+      },
+      {
+        "name": "남동구청",
+        "occurrences": 2
+      },
+      {
+        "name": "남동인더스파크",
+        "occurrences": 10
+      },
+      {
+        "name": "남위례",
+        "occurrences": 4
+      },
+      {
+        "name": "남한산성입구",
+        "occurrences": 4
+      },
+      {
+        "name": "능곡",
+        "occurrences": 8
+      },
+      {
+        "name": "다산",
+        "occurrences": 4
+      },
+      {
+        "name": "단대오거리",
+        "occurrences": 4
+      },
+      {
+        "name": "달미",
+        "occurrences": 4
+      },
+      {
+        "name": "달월",
+        "occurrences": 10
+      },
+      {
+        "name": "당정",
+        "occurrences": 19
+      },
+      {
+        "name": "대곡",
+        "occurrences": 14
+      },
+      {
+        "name": "대공원",
+        "occurrences": 5
+      },
+      {
+        "name": "대공원 (서울랜드)",
+        "occurrences": 5
+      },
+      {
+        "name": "대화",
+        "occurrences": 2
+      },
+      {
+        "name": "덕소",
+        "occurrences": 2
+      },
+      {
+        "name": "도농",
+        "occurrences": 2
+      },
+      {
+        "name": "도심",
+        "occurrences": 2
+      },
+      {
+        "name": "도원",
+        "occurrences": 16
+      },
+      {
+        "name": "도화",
+        "occurrences": 16
+      },
+      {
+        "name": "독정",
+        "occurrences": 2
+      },
+      {
+        "name": "동구릉",
+        "occurrences": 4
+      },
+      {
+        "name": "동막",
+        "occurrences": 2
+      },
+      {
+        "name": "동수",
+        "occurrences": 2
+      },
+      {
+        "name": "동암",
+        "occurrences": 21
+      },
+      {
+        "name": "동인천",
+        "occurrences": 23
+      },
+      {
+        "name": "동천",
+        "occurrences": 2
+      },
+      {
+        "name": "동춘",
+        "occurrences": 2
+      },
+      {
+        "name": "마두",
+        "occurrences": 2
+      },
+      {
+        "name": "마산",
+        "occurrences": 2
+      },
+      {
+        "name": "마전",
+        "occurrences": 2
+      },
+      {
+        "name": "만수",
+        "occurrences": 2
+      },
+      {
+        "name": "망월사",
+        "occurrences": 30
+      },
+      {
+        "name": "명학",
+        "occurrences": 19
+      },
+      {
+        "name": "모란",
+        "occurrences": 18
+      },
+      {
+        "name": "모래내시장",
+        "occurrences": 2
+      },
+      {
+        "name": "문학경기장",
+        "occurrences": 2
+      },
+      {
+        "name": "미금",
+        "occurrences": 16
+      },
+      {
+        "name": "미사",
+        "occurrences": 2
+      },
+      {
+        "name": "박촌",
+        "occurrences": 2
+      },
+      {
+        "name": "백마",
+        "occurrences": 3
+      },
+      {
+        "name": "백석",
+        "occurrences": 2
+      },
+      {
+        "name": "백운",
+        "occurrences": 16
+      },
+      {
+        "name": "범계",
+        "occurrences": 10
+      },
+      {
+        "name": "별내",
+        "occurrences": 10
+      },
+      {
+        "name": "별내별가람",
+        "occurrences": 4
+      },
+      {
+        "name": "부개",
+        "occurrences": 19
+      },
+      {
+        "name": "부천",
+        "occurrences": 31
+      },
+      {
+        "name": "부천시청",
+        "occurrences": 4
+      },
+      {
+        "name": "부천종합운동장",
+        "occurrences": 8
+      },
+      {
+        "name": "부평",
+        "occurrences": 32
+      },
+      {
+        "name": "부평구청",
+        "occurrences": 6
+      },
+      {
+        "name": "부평삼거리",
+        "occurrences": 2
+      },
+      {
+        "name": "부평시장",
+        "occurrences": 2
+      },
+      {
+        "name": "사릉",
+        "occurrences": 6
+      },
+      {
+        "name": "사우",
+        "occurrences": 2
+      },
+      {
+        "name": "산곡",
+        "occurrences": 4
+      },
+      {
+        "name": "산본",
+        "occurrences": 10
+      },
+      {
+        "name": "산성",
+        "occurrences": 4
+      },
+      {
+        "name": "삼동",
+        "occurrences": 4
+      },
+      {
+        "name": "삼산체육관",
+        "occurrences": 4
+      },
+      {
+        "name": "삼송",
+        "occurrences": 2
+      },
+      {
+        "name": "상동",
+        "occurrences": 4
+      },
+      {
+        "name": "상현",
+        "occurrences": 2
+      },
+      {
+        "name": "서구청",
+        "occurrences": 1
+      },
+      {
+        "name": "서부여성회관",
+        "occurrences": 2
+      },
+      {
+        "name": "서해구청",
+        "occurrences": 1
+      },
+      {
+        "name": "서현",
+        "occurrences": 14
+      },
+      {
+        "name": "석남",
+        "occurrences": 6
+      },
+      {
+        "name": "석바위시장",
+        "occurrences": 2
+      },
+      {
+        "name": "석천사거리",
+        "occurrences": 2
+      },
+      {
+        "name": "선바위",
+        "occurrences": 10
+      },
+      {
+        "name": "선부",
+        "occurrences": 4
+      },
+      {
+        "name": "선학",
+        "occurrences": 2
+      },
+      {
+        "name": "성균관대",
+        "occurrences": 24
+      },
+      {
+        "name": "성남",
+        "occurrences": 2
+      },
+      {
+        "name": "성복",
+        "occurrences": 2
+      },
+      {
+        "name": "센트럴파크",
+        "occurrences": 2
+      },
+      {
+        "name": "소래포구",
+        "occurrences": 12
+      },
+      {
+        "name": "소사",
+        "occurrences": 23
+      },
+      {
+        "name": "소새울",
+        "occurrences": 4
+      },
+      {
+        "name": "송내",
+        "occurrences": 30
+      },
+      {
+        "name": "송도",
+        "occurrences": 10
+      },
+      {
+        "name": "송도달빛축제공원",
+        "occurrences": 2
+      },
+      {
+        "name": "수내",
+        "occurrences": 14
+      },
+      {
+        "name": "수리산",
+        "occurrences": 6
+      },
+      {
+        "name": "수지구청",
+        "occurrences": 2
+      },
+      {
+        "name": "수진",
+        "occurrences": 4
+      },
+      {
+        "name": "숭의",
+        "occurrences": 10
+      },
+      {
+        "name": "시민공원",
+        "occurrences": 2
+      },
+      {
+        "name": "시우",
+        "occurrences": 4
+      },
+      {
+        "name": "시흥능곡",
+        "occurrences": 4
+      },
+      {
+        "name": "시흥대야",
+        "occurrences": 4
+      },
+      {
+        "name": "시흥시청",
+        "occurrences": 4
+      },
+      {
+        "name": "신검단중앙",
+        "occurrences": 2
+      },
+      {
+        "name": "신연수",
+        "occurrences": 2
+      },
+      {
+        "name": "신중동",
+        "occurrences": 4
+      },
+      {
+        "name": "신천",
+        "occurrences": 4
+      },
+      {
+        "name": "신포",
+        "occurrences": 10
+      },
+      {
+        "name": "신현",
+        "occurrences": 4
+      },
+      {
+        "name": "신흥",
+        "occurrences": 4
+      },
+      {
+        "name": "아라",
+        "occurrences": 2
+      },
+      {
+        "name": "아시아드경기장",
+        "occurrences": 2
+      },
+      {
+        "name": "안양",
+        "occurrences": 24
+      },
+      {
+        "name": "야당",
+        "occurrences": 4
+      },
+      {
+        "name": "야탑",
+        "occurrences": 14
+      },
+      {
+        "name": "양정",
+        "occurrences": 2
+      },
+      {
+        "name": "양촌",
+        "occurrences": 2
+      },
+      {
+        "name": "역곡",
+        "occurrences": 30
+      },
+      {
+        "name": "연수",
+        "occurrences": 12
+      },
+      {
+        "name": "예술회관",
+        "occurrences": 2
+      },
+      {
+        "name": "오남",
+        "occurrences": 4
+      },
+      {
+        "name": "오리",
+        "occurrences": 14
+      },
+      {
+        "name": "오이도",
+        "occurrences": 20
+      },
+      {
+        "name": "완정",
+        "occurrences": 2
+      },
+      {
+        "name": "왕길",
+        "occurrences": 2
+      },
+      {
+        "name": "운길산",
+        "occurrences": 2
+      },
+      {
+        "name": "운양",
+        "occurrences": 2
+      },
+      {
+        "name": "운연",
+        "occurrences": 2
+      },
+      {
+        "name": "운정중앙",
+        "occurrences": 2
+      },
+      {
+        "name": "원당",
+        "occurrences": 2
+      },
+      {
+        "name": "원릉",
+        "occurrences": 2
+      },
+      {
+        "name": "원시",
+        "occurrences": 4
+      },
+      {
+        "name": "원인재",
+        "occurrences": 14
+      },
+      {
+        "name": "원종",
+        "occurrences": 4
+      },
+      {
+        "name": "원흥",
+        "occurrences": 2
+      },
+      {
+        "name": "월곶",
+        "occurrences": 10
+      },
+      {
+        "name": "의왕",
+        "occurrences": 24
+      },
+      {
+        "name": "이매",
+        "occurrences": 18
+      },
+      {
+        "name": "인덕원",
+        "occurrences": 10
+      },
+      {
+        "name": "인천",
+        "occurrences": 28
+      },
+      {
+        "name": "인천가좌",
+        "occurrences": 2
+      },
+      {
+        "name": "인천논현",
+        "occurrences": 12
+      },
+      {
+        "name": "인천대공원",
+        "occurrences": 2
+      },
+      {
+        "name": "인천대입구",
+        "occurrences": 2
+      },
+      {
+        "name": "인천시청",
+        "occurrences": 4
+      },
+      {
+        "name": "인천터미널",
+        "occurrences": 2
+      },
+      {
+        "name": "인하대",
+        "occurrences": 12
+      },
+      {
+        "name": "일산",
+        "occurrences": 6
+      },
+      {
+        "name": "일영",
+        "occurrences": 2
+      },
+      {
+        "name": "임학",
+        "occurrences": 2
+      },
+      {
+        "name": "작전",
+        "occurrences": 2
+      },
+      {
+        "name": "장기",
+        "occurrences": 2
+      },
+      {
+        "name": "장암",
+        "occurrences": 4
+      },
+      {
+        "name": "장자호수공원",
+        "occurrences": 4
+      },
+      {
+        "name": "장흥",
+        "occurrences": 2
+      },
+      {
+        "name": "정발산",
+        "occurrences": 2
+      },
+      {
+        "name": "정부과천청사",
+        "occurrences": 10
+      },
+      {
+        "name": "정왕",
+        "occurrences": 14
+      },
+      {
+        "name": "정자",
+        "occurrences": 16
+      },
+      {
+        "name": "제물포",
+        "occurrences": 21
+      },
+      {
+        "name": "주안",
+        "occurrences": 25
+      },
+      {
+        "name": "주안국가산단",
+        "occurrences": 2
+      },
+      {
+        "name": "주엽",
+        "occurrences": 2
+      },
+      {
+        "name": "중동",
+        "occurrences": 19
+      },
+      {
+        "name": "지식정보단지",
+        "occurrences": 2
+      },
+      {
+        "name": "지축",
+        "occurrences": 2
+      },
+      {
+        "name": "진접",
+        "occurrences": 6
+      },
+      {
+        "name": "천마산",
+        "occurrences": 6
+      },
+      {
+        "name": "철산",
+        "occurrences": 8
+      },
+      {
+        "name": "청라국제도시",
+        "occurrences": 2
+      },
+      {
+        "name": "초월",
+        "occurrences": 4
+      },
+      {
+        "name": "초지",
+        "occurrences": 4
+      },
+      {
+        "name": "춘의",
+        "occurrences": 4
+      },
+      {
+        "name": "캠퍼스타운",
+        "occurrences": 2
+      },
+      {
+        "name": "킨텍스",
+        "occurrences": 2
+      },
+      {
+        "name": "탄현",
+        "occurrences": 4
+      },
+      {
+        "name": "태평",
+        "occurrences": 14
+      },
+      {
+        "name": "테크노파크",
+        "occurrences": 2
+      },
+      {
+        "name": "퇴계원",
+        "occurrences": 6
+      },
+      {
+        "name": "판교",
+        "occurrences": 6
+      },
+      {
+        "name": "팔당",
+        "occurrences": 2
+      },
+      {
+        "name": "평내호평",
+        "occurrences": 8
+      },
+      {
+        "name": "평촌",
+        "occurrences": 10
+      },
+      {
+        "name": "풍무",
+        "occurrences": 2
+      },
+      {
+        "name": "풍산",
+        "occurrences": 6
+      },
+      {
+        "name": "하남검단산",
+        "occurrences": 2
+      },
+      {
+        "name": "하남시청",
+        "occurrences": 2
+      },
+      {
+        "name": "하남풍산",
+        "occurrences": 2
+      },
+      {
+        "name": "한국항공대",
+        "occurrences": 4
+      },
+      {
+        "name": "행신",
+        "occurrences": 4
+      },
+      {
+        "name": "호구포",
+        "occurrences": 10
+      },
+      {
+        "name": "화정",
+        "occurrences": 2
+      }
+    ],
+    "note": "crosswalk.stopOccurrences는 역할 멤버 발생 수(occurrence) 기록이고, connections는 관계 내 인접 쌍 기록이다. 두 카운트를 섞지 않는다."
+  },
+  "stations": {
+    "graph": 334,
+    "matched": 334,
+    "uncovered": [],
+    "matchedBy": {
+      "name": 854,
+      "alias": 0,
+      "canonical_alias": 5,
+      "coordinate_exact": 0,
+      "catalog_node_coordinate_exact": 4
+    },
+    "classificationCounts": {
+      "rail": 327,
+      "canonical-alias": 3,
+      "monorail": 2,
+      "nonrail-misclassified": 2
+    },
+    "note": "matched는 명시적 처분(rail 바인딩, canonical-alias, monorail, nonrail-misclassified)을 모두 포함한다"
+  },
+  "lines": {
+    "total": 244,
+    "identifiable": 244,
+    "withoutRef": 29,
+    "withOperatorTag": 240,
+    "gradeObserved": 244,
+    "geometryWays": 8501,
+    "geometryPoints": 96999,
+    "geometryMissingNodeCoords": 0
+  },
+  "edges": {
+    "graph": 435,
+    "topology": 436,
+    "graphEdgesWithTraversingEvidence": 429,
+    "graph_edges_without_observed_stop_evidence": [
+      {
+        "a": "가산디지털단지",
+        "b": "광명사거리",
+        "classification": "contracted_path"
+      },
+      {
+        "a": "공덕",
+        "b": "마곡나루",
+        "classification": "contracted_path"
+      },
+      {
+        "a": "교대(법원·검찰청)",
+        "b": "남부터미널(예술의전당)",
+        "classification": "canonical_variant_endpoint",
+        "canonicalOf": {
+          "a": "교대(법원·검찰청)",
+          "b": "남부터미널"
+        }
+      },
+      {
+        "a": "남부터미널(예술의전당)",
+        "b": "양재",
+        "classification": "canonical_variant_endpoint",
+        "canonicalOf": {
+          "a": "남부터미널",
+          "b": "양재"
+        }
+      },
+      {
+        "a": "동작",
+        "b": "총신대입구 (이수)",
+        "classification": "canonical_variant_endpoint",
+        "canonicalOf": {
+          "a": "동작",
+          "b": "총신대입구(이수)"
+        }
+      },
+      {
+        "a": "사당",
+        "b": "총신대입구 (이수)",
+        "classification": "canonical_variant_endpoint",
+        "canonicalOf": {
+          "a": "사당",
+          "b": "총신대입구(이수)"
+        }
+      }
+    ],
+    "graph_edges_with_truncated_stop_evidence": [],
+    "unresolved_required_edges": [],
+    "unresolvedRequiredArithmetic": "R=2951; resolvedIntoEdges=2951; unresolved=0; 분류 근거는 topology.unresolvedRequired.definition 참조",
+    "observed_topology_pairs_absent_from_graph": [
+      {
+        "a": "Yeongdeungpo",
+        "b": "서울",
+        "sources": [
+          "r10882384",
+          "r13781614",
+          "r13781616"
+        ]
+      },
+      {
+        "a": "Yeongdeungpo",
+        "b": "용산",
+        "sources": [
+          "r13781771",
+          "r13781772",
+          "r13781773",
+          "r13781774",
+          "r13781775",
+          "r13781776",
+          "r13799112"
+        ]
+      },
+      {
+        "a": "교대(법원·검찰청)",
+        "b": "남부터미널",
+        "sources": [
+          "r443803",
+          "r4729445"
+        ]
+      },
+      {
+        "a": "남부터미널",
+        "b": "양재",
+        "sources": [
+          "r443803",
+          "r4729445"
+        ]
+      },
+      {
+        "a": "동작",
+        "b": "총신대입구(이수)",
+        "sources": [
+          "r10727605",
+          "r10727606",
+          "r10727607",
+          "r10727608",
+          "r10746635",
+          "r10947038",
+          "r13675921",
+          "r13675922",
+          "r13938877",
+          "r13938878",
+          "r15801808",
+          "r15801809",
+          "r15870296",
+          "r15870297",
+          "r2718884",
+          "r4744311"
+        ]
+      },
+      {
+        "a": "사당",
+        "b": "총신대입구(이수)",
+        "sources": [
+          "r10727605",
+          "r10727606",
+          "r10727607",
+          "r10727608",
+          "r10746635",
+          "r10947038",
+          "r13675921",
+          "r13675922",
+          "r13938877",
+          "r13938878",
+          "r15801808",
+          "r15801809",
+          "r15870296",
+          "r15870297",
+          "r2718884",
+          "r4744311"
+        ]
+      },
+      {
+        "a": "서울역",
+        "b": "연신내",
+        "sources": [
+          "r18828088",
+          "r18828089"
+        ]
+      }
+    ],
+    "rejectedSelfAdjacency": 1,
+    "nontraversableConnectionRecords": 2573
+  },
+  "connections": {
+    "total": 2573,
+    "byReason": {
+      "missing_stop_node": 1040,
+      "unknown_station": 1527,
+      "unnamed_stop": 6
+    },
+    "uniquePairs": 866,
+    "arithmetic": "2573 == total 2573 (인접 쌍 기록 기준; 발생 수는 crosswalk.stopOccurrences 참조)"
+  },
+  "operatorLedger": {
+    "1": {
+      "networks": [
+        "수도권 전철"
+      ],
+      "operators": [
+        "서울교통공사",
+        "서울교통공사;한국철도공사",
+        "한국철도공사",
+        "한국철도공사;서울교통공사"
+      ],
+      "lines": [
+        "r10565521",
+        "r10685370",
+        "r10685371",
+        "r10685419",
+        "r10685420",
+        "r10700967",
+        "r10700968",
+        "r10700978",
+        "r10700979",
+        "r10713876",
+        "r10776760",
+        "r10776761",
+        "r10776791",
+        "r10776869",
+        "r10869816",
+        "r10881612",
+        "r11073605",
+        "r11073606",
+        "r11079448",
+        "r12640223",
+        "r12640266",
+        "r13528564",
+        "r13528565",
+        "r13695367",
+        "r13695368",
+        "r14138331",
+        "r14181831",
+        "r14181832",
+        "r15044496",
+        "r15044497",
+        "r15044498",
+        "r15044499",
+        "r15044580",
+        "r15055925",
+        "r15055926",
+        "r15055927",
+        "r15802274",
+        "r15802275",
+        "r15833199",
+        "r15833652",
+        "r15833653",
+        "r15833654",
+        "r15833655",
+        "r15833656",
+        "r15833657",
+        "r15833658",
+        "r15833659",
+        "r15885692",
+        "r15885884",
+        "r15885937",
+        "r16107776",
+        "r16534608",
+        "r16534787",
+        "r16534788",
+        "r16665710",
+        "r16665711",
+        "r16665712",
+        "r16665713",
+        "r16665714",
+        "r16665759",
+        "r16665760",
+        "r16665761",
+        "r16712689",
+        "r16712690",
+        "r16712691",
+        "r16712692",
+        "r16712693",
+        "r16712694",
+        "r16712695",
+        "r16712696",
+        "r16850861",
+        "r16850862",
+        "r16850863",
+        "r16850864",
+        "r16851102",
+        "r16851103",
+        "r16851104",
+        "r4748705",
+        "r8691809",
+        "r8691898",
+        "r8692707",
+        "r8692830",
+        "r8692927",
+        "r8692928",
+        "r8820537",
+        "r8820538",
+        "r9849062",
+        "r9849094"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "2": {
+      "networks": [
+        "수도권 전철"
+      ],
+      "operators": [
+        "서울교통공사"
+      ],
+      "lines": [
+        "r2404374",
+        "r4729405",
+        "r4729406",
+        "r4729407",
+        "r4729408",
+        "r4729409"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "3": {
+      "networks": [
+        "수도권 전철"
+      ],
+      "operators": [
+        "서울교통공사;한국철도공사"
+      ],
+      "lines": [
+        "r443803",
+        "r4729445"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "4": {
+      "networks": [
+        "수도권 전철"
+      ],
+      "operators": [
+        "서울교통공사",
+        "서울교통공사;한국철도공사",
+        "한국철도공사",
+        "한국철도공사;서울교통공사"
+      ],
+      "lines": [
+        "r10727605",
+        "r10727606",
+        "r10727607",
+        "r10727608",
+        "r10746635",
+        "r10947038",
+        "r13675921",
+        "r13675922",
+        "r13938877",
+        "r13938878",
+        "r15801808",
+        "r15801809",
+        "r15870296",
+        "r15870297",
+        "r16665960",
+        "r16665961",
+        "r16665962",
+        "r16665963",
+        "r16665964",
+        "r16665965",
+        "r16665966",
+        "r16665967",
+        "r16665968",
+        "r16665969",
+        "r16665970",
+        "r2718884",
+        "r4744311"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "5": {
+      "networks": [
+        "수도권 전철"
+      ],
+      "operators": [
+        "서울교통공사"
+      ],
+      "lines": [
+        "r12497485",
+        "r12497486",
+        "r19427674",
+        "r19427675",
+        "r4744337",
+        "r4744338",
+        "r4744339",
+        "r4744340"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "6": {
+      "networks": [
+        "수도권 전철"
+      ],
+      "operators": [
+        "서울교통공사"
+      ],
+      "lines": [
+        "r11509732",
+        "r12080315",
+        "r4727111",
+        "r7919153"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "7": {
+      "networks": [
+        "수도권 전철"
+      ],
+      "operators": [
+        "서울교통공사",
+        "서울교통공사;인천교통공사",
+        "인천교통공사;서울교통공사"
+      ],
+      "lines": [
+        "r10727492",
+        "r10727493",
+        "r10828181",
+        "r10828182",
+        "r12746493",
+        "r12746494",
+        "r12746498",
+        "r12746499"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "8": {
+      "networks": [
+        "수도권 전철"
+      ],
+      "operators": [
+        "서울교통공사"
+      ],
+      "lines": [
+        "r17953733",
+        "r17953734",
+        "r17953804",
+        "r17953805",
+        "r2718901",
+        "r7919018"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "9": {
+      "networks": [
+        "수도권 전철"
+      ],
+      "operators": [
+        "서울시메트로9호선",
+        "서울시메트로9호선;서울교통공사"
+      ],
+      "lines": [
+        "r2718888",
+        "r4784126",
+        "r7883314",
+        "r9079536"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "201": {
+      "networks": [
+        "코레일"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r6094786",
+        "r8266158"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) ITX-청춘: 용산 → 춘천": {
+      "networks": [
+        "코레일"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r14115749"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) ITX-청춘: 춘천 → 용산": {
+      "networks": [
+        "코레일"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r14115750"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) 강릉선 KTX: 서울 → 강릉": {
+      "networks": [
+        "KTX"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r12239797"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) 경부선 ITX-새마을 (필수정차): 서울 → 부산": {
+      "networks": [
+        "코레일"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r13781616"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) 경부선 KTX: 서울 → 대전": {
+      "networks": [
+        "KTX"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r11214335"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) 경부선 KTX: 서울 → 동대구": {
+      "networks": [
+        "KTX"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r11208903"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) 경부선 KTX: 서울 → 부산": {
+      "networks": [
+        "KTX"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r11214334"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) 경부선 KTX: 서울 → 부산 (구포경유)": {
+      "networks": [
+        "KTX"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r11208904"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) 경부선 KTX: 서울 → 부산 (수원경유)": {
+      "networks": [
+        "KTX"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r10882384"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) 경부선 KTX: 수서 → 부산": {
+      "networks": [
+        "KTX"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r11214688"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) 경부선 무궁화호 (필수정차): 서울 → 부산": {
+      "networks": [
+        "코레일"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r13781614"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) 교외선 무궁화호: 대곡 → 의정부": {
+      "networks": [
+        "코레일"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r18581442"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) 교외선 무궁화호: 의정부 → 대곡": {
+      "networks": [
+        "코레일"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r18581443"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) 장항선 새마을호: 용산 → 익산": {
+      "networks": [
+        "코레일"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r13799112"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) 전라선 ITX-새마을 (필수정차): 용산 → 여수엑스포": {
+      "networks": [
+        "코레일"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r13781776"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) 전라선 KTX: 용산 → 여수엑스포": {
+      "networks": [
+        "KTX"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r11272647"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) 전라선 KTX: 용산 → 여수엑스포 (서대전경유)": {
+      "networks": [
+        "KTX"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r11314594"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) 전라선 KTX: 용산 → 전주": {
+      "networks": [
+        "KTX"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r11314593"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) 전라선 무궁화호 (필수정차): 용산 → 여수엑스포": {
+      "networks": [
+        "코레일"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r13781775"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) 호남선 ITX-새마을 (필수정차): 용산 → 광주": {
+      "networks": [
+        "코레일"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r13781773"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) 호남선 ITX-새마을 (필수정차): 용산 → 목포": {
+      "networks": [
+        "코레일"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r13781771"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) 호남선 KTX: 수서 → 광주송정": {
+      "networks": [
+        "KTX"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r11214689"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) 호남선 KTX: 수서 → 목포": {
+      "networks": [
+        "KTX"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r11214690"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) 호남선 KTX: 용산 → 광주송정": {
+      "networks": [
+        "KTX"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r11272645"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) 호남선 KTX: 용산 → 목포": {
+      "networks": [
+        "KTX"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r11272646"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) 호남선 KTX: 용산 → 목포 (서대전경유)": {
+      "networks": [
+        "KTX"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r11314592"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) 호남선 KTX: 용산 → 장성": {
+      "networks": [
+        "KTX"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r11314591"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) 호남선 무궁화호 (필수정차): 용산 → 광주": {
+      "networks": [
+        "코레일"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r13781772"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "(no-ref) 호남선 무궁화호 (필수정차): 용산 → 목포": {
+      "networks": [
+        "코레일"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r13781774"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "AREX": {
+      "networks": [],
+      "operators": [
+        "공항철도주식회사"
+      ],
+      "lines": [
+        "r9961459",
+        "r9961460"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "GTX-A": {
+      "networks": [
+        "수도권 전철"
+      ],
+      "operators": [
+        "지티엑스에이운영주식회사"
+      ],
+      "lines": [
+        "r17413294",
+        "r17413296",
+        "r18828088",
+        "r18828089"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "I2": {
+      "networks": [
+        "수도권 전철;인천도시철도"
+      ],
+      "operators": [
+        "인천교통공사"
+      ],
+      "lines": [
+        "r7527496",
+        "r7527497"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "Silim": {
+      "networks": [
+        "수도권 전철"
+      ],
+      "operators": [
+        "로템SRS"
+      ],
+      "lines": [
+        "r14191876",
+        "r14191877"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "W": {
+      "networks": [],
+      "operators": [],
+      "lines": [
+        "r7533582",
+        "r7533583"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "경강": {
+      "networks": [
+        "수도권 전철"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r12144933",
+        "r12144934",
+        "r6462562",
+        "r6462563"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "경의·중앙": {
+      "networks": [
+        "수도권 전철"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r5993211",
+        "r5993212",
+        "r8667955",
+        "r8667956"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "경춘": {
+      "networks": [
+        "수도권 전철"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r8656357",
+        "r8656358",
+        "r8656359",
+        "r8656362",
+        "r8656363",
+        "r8656364"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "공항철도": {
+      "networks": [
+        "수도권 전철"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r2911378",
+        "r7919000"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "김포 골드라인": {
+      "networks": [
+        "수도권 전철"
+      ],
+      "operators": [
+        "김포골드라인SRS"
+      ],
+      "lines": [
+        "r10092719",
+        "r10092720"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "서해": {
+      "networks": [
+        "수도권 전철"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r16244687",
+        "r16244688",
+        "r8725314",
+        "r8725315"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "수인·분당": {
+      "networks": [
+        "수도권 전철"
+      ],
+      "operators": [
+        "한국철도공사"
+      ],
+      "lines": [
+        "r10791318",
+        "r10791319",
+        "r10791320",
+        "r10791329",
+        "r10799694",
+        "r10799695",
+        "r11625555",
+        "r11625556",
+        "r11634611",
+        "r11634612",
+        "r11634613",
+        "r11634614",
+        "r11636212",
+        "r11636213",
+        "r11651118",
+        "r11651119",
+        "r2718887",
+        "r3012654",
+        "r6064104",
+        "r6064114",
+        "r6064115",
+        "r8016134"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "신분당": {
+      "networks": [
+        "수도권 전철"
+      ],
+      "operators": [
+        "네오트랜스주식회사"
+      ],
+      "lines": [
+        "r12814871",
+        "r6060963"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    },
+    "인천1": {
+      "networks": [
+        "수도권 전철"
+      ],
+      "operators": [
+        "인천교통공사"
+      ],
+      "lines": [
+        "r19425645",
+        "r19425646"
+      ],
+      "officialOperator": null,
+      "comparisonStatus": "no_official_source_in_repo"
+    }
+  },
+  "dongContent": {
+    "files": 25,
+    "records": 427,
+    "stationsWithDong": 2,
+    "stationsWithBuildingRefs": 2
+  },
+  "inputs": {
+    "pbf": {
+      "path": "GAME-REFERENCE/data/seoul-geography-20260830/osm-current-bbbike/Seoul.osm.pbf",
+      "bytes": 51794961,
+      "sha256": "eec1fcac44d0b7b1600c81437ba0a0ea56cd645d16f4eaf55a00786597e0e7e8"
+    },
+    "worldGraph": {
+      "path": "GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json",
+      "sha256": "6eaaf9490442e96a24ea122ba50304b7268f0e7de530c5f447a5a6c5f50e935d"
+    },
+    "stationInteriors": {
+      "path": "LORE/regions/station-interiors.json",
+      "sha256": "c86b3d1ded4aec5553f8d700a1609738f26c43a54ad3bf8ea5b3015b566ebfc3"
+    },
+    "aliasLedger": {
+      "path": "TOOL/tools/strategy-map/data/subway-alias-ledger.json",
+      "sha256": "8114b465a461493f54aa4b05703fc6d27b7d11300ded4495e76ed7c22c617625"
+    },
+    "dongContent": {
+      "path": "LORE/regions/content",
+      "sha256": "ec2b6fe401bffc96976c3bdc8a74f7ac70a77566eacd2488686ba4f443c7c376"
+    }
+  }
+}

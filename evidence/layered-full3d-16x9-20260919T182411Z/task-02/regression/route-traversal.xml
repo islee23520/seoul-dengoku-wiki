@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="6" result="Passed" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-19 18:29:19Z" end-time="2026-09-19 18:29:19Z" duration="0.0282076">
+  <test-suite type="TestSuite" id="1000" name="서울:전국" fullname="서울:전국" runstate="Runnable" testcasecount="238" result="Passed" start-time="2026-09-19 18:29:19Z" end-time="2026-09-19 18:29:19Z" duration="0.028208" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1274" name="Janseon.Foundation.EditModeTests.dll" fullname="/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/GAME/Library/ScriptAssemblies/Janseon.Foundation.EditModeTests.dll" runstate="Runnable" testcasecount="237" result="Passed" start-time="2026-09-19 18:29:19Z" end-time="2026-09-19 18:29:19Z" duration="0.023325" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="90609" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1275" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="237" result="Passed" start-time="2026-09-19 18:29:19Z" end-time="2026-09-19 18:29:19Z" duration="0.018104" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1276" name="Tests" fullname="Janseon.Tests" runstate="Runnable" testcasecount="35" result="Passed" start-time="2026-09-19 18:29:19Z" end-time="2026-09-19 18:29:19Z" duration="0.016722" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1277" name="EditMode" fullname="Janseon.Tests.EditMode" runstate="Runnable" testcasecount="35" result="Passed" start-time="2026-09-19 18:29:19Z" end-time="2026-09-19 18:29:19Z" duration="0.016428" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1026" name="RouteTraversalTests" fullname="Janseon.Tests.EditMode.RouteTraversalTests" classname="Janseon.Tests.EditMode.RouteTraversalTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-09-19 18:29:19Z" end-time="2026-09-19 18:29:19Z" duration="0.015641" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1027" name="AdjacentLinks_AreLegal_BothDirections" fullname="Janseon.Tests.EditMode.RouteTraversalTests.AdjacentLinks_AreLegal_BothDirections" methodname="AdjacentLinks_AreLegal_BothDirections" classname="Janseon.Tests.EditMode.RouteTraversalTests" runstate="Runnable" seed="822118767" result="Passed" start-time="2026-09-19 18:29:19Z" end-time="2026-09-19 18:29:19Z" duration="0.007332" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1032" name="ConsumerSurface_LegalPathAndIllegalJump_Observable" fullname="Janseon.Tests.EditMode.RouteTraversalTests.ConsumerSurface_LegalPathAndIllegalJump_Observable" methodname="ConsumerSurface_LegalPathAndIllegalJump_Observable" classname="Janseon.Tests.EditMode.RouteTraversalTests" runstate="Runnable" seed="1005650845" result="Passed" start-time="2026-09-19 18:29:19Z" end-time="2026-09-19 18:29:19Z" duration="0.001704" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[ROUTE_QA_FINAL_NODE=Guro
+ROUTE_QA_FINAL_TICK=2
+ROUTE_QA_FINAL_HASH=63c1aa6373dfb158f3bc8a2ccb4db0b5882497117910427f565b8112d36d6efc
+ROUTE_QA_ILLEGAL_REASON=NotAdjacent
+ROUTE_QA_ILLEGAL_BEFORE_HASH=dd86458cd849e14f3d3a168166be0f74f53ff69f3f706fd3f09a1754a4059c18
+ROUTE_QA_ILLEGAL_AFTER_HASH=dd86458cd849e14f3d3a168166be0f74f53ff69f3f706fd3f09a1754a4059c18
+ROUTE_QA_ARTIFACT=/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1-clean/.omo/evidence/unity-poc-core-loop/task-6-route/manual-qa/manual-qa-result.txt
+]]></output>
+              </test-case>
+              <test-case id="1028" name="NoDirectYeongdeungpoGuroJump_RejectsWithoutMutation" fullname="Janseon.Tests.EditMode.RouteTraversalTests.NoDirectYeongdeungpoGuroJump_RejectsWithoutMutation" methodname="NoDirectYeongdeungpoGuroJump_RejectsWithoutMutation" classname="Janseon.Tests.EditMode.RouteTraversalTests" runstate="Runnable" seed="1373259503" result="Passed" start-time="2026-09-19 18:29:19Z" end-time="2026-09-19 18:29:19Z" duration="0.000184" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1029" name="SameCommandsProduceSameRouteStateAndHash" fullname="Janseon.Tests.EditMode.RouteTraversalTests.SameCommandsProduceSameRouteStateAndHash" methodname="SameCommandsProduceSameRouteStateAndHash" classname="Janseon.Tests.EditMode.RouteTraversalTests" runstate="Runnable" seed="441248202" result="Passed" start-time="2026-09-19 18:29:19Z" end-time="2026-09-19 18:29:19Z" duration="0.000116" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1030" name="SameNodeTraversal_IsRejectedWithoutMutation" fullname="Janseon.Tests.EditMode.RouteTraversalTests.SameNodeTraversal_IsRejectedWithoutMutation" methodname="SameNodeTraversal_IsRejectedWithoutMutation" classname="Janseon.Tests.EditMode.RouteTraversalTests" runstate="Runnable" seed="838103553" result="Passed" start-time="2026-09-19 18:29:19Z" end-time="2026-09-19 18:29:19Z" duration="0.000097" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1031" name="UnknownNodeTraversal_IsRejectedWithoutMutation" fullname="Janseon.Tests.EditMode.RouteTraversalTests.UnknownNodeTraversal_IsRejectedWithoutMutation" methodname="UnknownNodeTraversal_IsRejectedWithoutMutation" classname="Janseon.Tests.EditMode.RouteTraversalTests" runstate="Runnable" seed="751298900" result="Passed" start-time="2026-09-19 18:29:19Z" end-time="2026-09-19 18:29:19Z" duration="0.000113" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: /Users/ilseoblee/Library/Application Support/Janseon Studio/서울_전국/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

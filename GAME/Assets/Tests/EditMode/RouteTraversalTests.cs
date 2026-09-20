@@ -210,5 +210,50 @@ namespace Janseon.Tests.EditMode
             File.WriteAllText(outPath, sb.ToString(), Encoding.UTF8);
             TestContext.WriteLine("ROUTE_QA_ARTIFACT=" + outPath);
         }
+
+        [Test]
+        public void SurfaceToSubwayJourney()
+        {
+            var surface = new PlaceId(PlaceKind.SurfaceDistrict, "yeongdeungpo-surface");
+            var entrance = new PlaceId(PlaceKind.StationLayerOrPlatform, "yeongdeungpo-entrance");
+            var transfer = new PlaceId(PlaceKind.Interchange, "sindorim-transfer");
+            var destination = new PlaceId(PlaceKind.Station, "guro");
+            var graph = RouteGraph.CreateFromConnections(new[] {
+                new RouteConnection(surface, entrance, RouteConnectionKind.Walk, RouteGrade.Surface, PassageState.Open),
+                new RouteConnection(entrance, transfer, RouteConnectionKind.Vertical, RouteGrade.Entrance, PassageState.Open),
+                new RouteConnection(transfer, destination, RouteConnectionKind.Transfer, RouteGrade.Elevated, PassageState.Open) });
+            var state = RouteApi.StartAt(surface, new Tick(0));
+            var ledger = new Ledger();
+            var preview = RouteApi.PreviewJourney(graph, state, destination);
+            Assert.AreEqual(3, preview.Faces.Count);
+            Assert.AreEqual(0, state.Tick.Value);
+            state = (RouteState)RouteApi.ConfirmJourney(graph, state, ledger, preview, new CommandId("surface-subway"));
+            Assert.AreEqual(destination, state.Location);
+            Assert.AreEqual(3, state.Tick.Value);
+            Assert.AreEqual(3, ledger.Events.Count);
+        }
+
+        [Test]
+        public void RouteBlockedAfterPreviewLeavesStateUnchanged()
+        {
+            var surface = new PlaceId(PlaceKind.SurfaceDistrict, "yeongdeungpo-surface");
+            var entrance = new PlaceId(PlaceKind.StationLayerOrPlatform, "yeongdeungpo-entrance");
+            var transfer = new PlaceId(PlaceKind.Interchange, "sindorim-transfer");
+            var destination = new PlaceId(PlaceKind.Station, "guro");
+            var graph = RouteGraph.CreateFromConnections(new[] {
+                new RouteConnection(surface, entrance, RouteConnectionKind.Walk, RouteGrade.Surface, PassageState.Open),
+                new RouteConnection(entrance, transfer, RouteConnectionKind.Vertical, RouteGrade.Entrance, PassageState.Open),
+                new RouteConnection(transfer, destination, RouteConnectionKind.Transfer, RouteGrade.Elevated, PassageState.Blocked) });
+            var state = RouteApi.StartAt(surface, new Tick(0));
+            var ledger = new Ledger();
+            var before = RouteApi.ComputeRouteHash(state, ledger);
+            var preview = RouteApi.PreviewJourney(graph, state, destination);
+            Assert.IsInstanceOf<TravelRejection>(RouteApi.ConfirmJourney(graph, state, ledger, preview, new CommandId("blocked")));
+            Assert.AreEqual(before, RouteApi.ComputeRouteHash(state, ledger));
+            Assert.AreEqual(surface, state.Location);
+            Assert.AreEqual(0, state.Tick.Value);
+            Assert.AreEqual(0, ledger.Events.Count);
+            Assert.IsFalse(graph.CanTraverse(new PlaceId(PlaceKind.Station, "yeongdeungpo"), destination));
+        }
     }
 }

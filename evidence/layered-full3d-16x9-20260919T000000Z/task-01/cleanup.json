@@ -1,0 +1,31 @@
+{
+  "task": "task-01",
+  "sharedMain": {
+    "statusAfter": " M GAME-LOGIC/site/design/Design.md\n M TOOL/tools/strategy-map/bake_map_texture.py\n D evidence/pr-144/strategy-map-final-day-buildings-landmarks.png\n D evidence/pr-144/strategy-map-season-Autumn-1280x720.png\n D evidence/pr-144/strategy-map-season-Summer-1280x720.png\n D evidence/pr-144/strategy-map-season-Winter-1280x720.png\n D evidence/pr-144/strategy-map-weather-Day-1280x720.png\n D evidence/pr-144/strategy-map-weather-Night-1280x720.png\n D evidence/pr-144/strategy-map-weather-Rain-1280x720.png\n D evidence/pr-144/strategy-map-weather-Snow-1280x720.png\n D evidence/pr-144/strategy-map-weather-Sunset-1280x720.png\n D evidence/seoul-strategy-map-gdd/strategy-map-sweep-center.png\n M evidence/total-war-design-20260919/screenshots/poc-baseline-ui-ux-refs.png\n M evidence/total-war-design-20260919/screenshots/poc-final-poc-plan.png\n M evidence/total-war-design-20260919/screenshots/poc-final-ui-ux-refs.png\n?? GAME-REFERENCE/character-art-reference/\n?? GDD/system-design/ck3-wiki-mockup.html\n?? GDD/system-design/ck3-wiki-target-structure.html\n?? GDD/system-design/ck3-wiki-wireframe.html\n?? evidence/proposal-review-20260919/application-form-prvtext.txt\n?? evidence/proposal-review-20260919/baseline/\n?? evidence/proposal-review-20260919/final/contact-sheet.png\n?? evidence/proposal-review-20260919/final/page-1.png\n?? evidence/proposal-review-20260919/final/page-2.png\n?? evidence/proposal-review-20260919/final/page-3.png\n?? evidence/proposal-review-20260919/final/page-4.png\n?? evidence/proposal-review-20260919/final/page-5.png\n?? evidence/proposal-review-20260919/notice-bodytext.txt\n?? test-regex.mjs\n?? update_states.py\n",
+    "modifiedByTask": false
+  },
+  "worktree": {
+    "path": "/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave1",
+    "branch": "feat/layered-full3d-16x9-wave1",
+    "base": "c9940638c4cb22a890c8c4111d5e5b9f55ebec82",
+    "temporaryProcesses": [],
+    "editorStarted": false
+  },
+  "cleanup": "Worktree retained for lead; no temporary process or external project started.",
+  "negativeFixtureCleanup": [
+    {"path": "/var/folders/6r/g20fxk_s1ds24_h6lm971wt00000gn/T/task1-lfs-gw0hmeub", "removed": true, "testCommand": "test ! -e /var/folders/6r/g20fxk_s1ds24_h6lm971wt00000gn/T/task1-lfs-gw0hmeub", "exit": 0},
+    {"path": "/var/folders/6r/g20fxk_s1ds24_h6lm971wt00000gn/T/task1-worktree-72wj63k9", "removed": true, "testCommand": "test ! -e /var/folders/6r/g20fxk_s1ds24_h6lm971wt00000gn/T/task1-worktree-72wj63k9", "exit": 0},
+    {"path": "/var/folders/6r/g20fxk_s1ds24_h6lm971wt00000gn/T/task1-conflict-169ievv9", "removed": true, "testCommand": "test ! -e /var/folders/6r/g20fxk_s1ds24_h6lm971wt00000gn/T/task1-conflict-169ievv9", "exit": 0}
+  ],
+  "doneClaim": {
+    "priorCommit": "0f991483",
+    "evidence_commit_sha": "eb1220b2",
+    "receipt_binding": "parent_commit; cleanup binding is in 3ef8ee86 to commit A, validator correction is c4e62788",
+    "final_followup_commit": "c4e62788",
+    "changedFiles": ["AGENTS.md", "CLAUDE.md", "Intent.md", "Concept.md", "Design.md", "ToDo.md", "evidence/layered-full3d-16x9-20260919T000000Z/task-01/*"],
+    "tests": ["git diff --check", "architecture gate", "repository delivery policy", "patina --score --offline", "clean LFS hydration", "three isolated negative QA fixtures"],
+    "manualQA": "PASS; direct diff and all 10 disposition rows read; historical POC labeled; no implementation-complete claim; shared main dirty state preserved",
+    "risks": ["Windows target project root E:\\git\\seoul-layered-full3d-16x9 is not provisioned", "Unity Editor was not started by task-1", "GenreContract remains historical until task25"],
+    "shipping": "No push, PR, merge, or shared-main mutation; lead owns shipping."
+  }
+}
