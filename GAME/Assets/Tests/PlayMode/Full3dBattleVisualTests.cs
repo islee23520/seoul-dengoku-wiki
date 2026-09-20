@@ -7,17 +7,48 @@ using NUnit.Framework;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.TestTools;
+using VContainer;
 
 namespace Janseon.Foundation.Tests
 {
     public sealed class Full3dBattleVisualTests
     {
-        const string CatalogPath = "Assets/Janseon/Data/Authoring/TemporaryBattleVisualCatalog.asset";
+        TemporaryBattleVisualCatalog catalog;
+        GameObject fixtureRoot;
+
+        [Inject]
+        public void Construct(TemporaryBattleVisualCatalog injectedCatalog)
+        {
+            catalog = injectedCatalog;
+        }
+
+        void LoadInjectedFixture(TemporaryBattleVisualCatalog assignedCatalog)
+        {
+            catalog = null;
+            fixtureRoot = new GameObject("Full3dBattleVisualFixture");
+            fixtureRoot.SetActive(false);
+            var scope = fixtureRoot.AddComponent<Full3dBattleVisualFixtureScope>();
+            scope.Initialize(assignedCatalog, this);
+            fixtureRoot.SetActive(true);
+            Assert.AreSame(assignedCatalog, catalog, "The fixture scope must inject the supplied catalog object");
+            Assert.IsNotNull(catalog);
+            Assert.IsTrue(EditorUtility.IsPersistent(catalog), "The fixture must reference the authored catalog asset");
+        }
+
+        [TearDown]
+        public void UnloadFixture()
+        {
+            if (fixtureRoot != null) UnityEngine.Object.DestroyImmediate(fixtureRoot);
+            fixtureRoot = null;
+            catalog = null;
+        }
 
         [Test]
-        public void TemporaryHeroAndSoldierMeshesAreDistinct()
+        public void TemporaryHeroAndSoldierMeshesAreDistinct(
+            [ValueSource(typeof(Full3dBattleVisualFixtureAuthoring), nameof(Full3dBattleVisualFixtureAuthoring.Catalogs))]
+            TemporaryBattleVisualCatalog assignedCatalog)
         {
-            TemporaryBattleVisualCatalog catalog = AssetDatabase.LoadAssetAtPath<TemporaryBattleVisualCatalog>(CatalogPath);
+            LoadInjectedFixture(assignedCatalog);
             Assert.IsNotNull(catalog, "Task13 requires the serialized temporary battle visual catalog");
             var serialized = new SerializedObject(catalog);
             SerializedProperty prefabs = serialized.FindProperty("prefabs");
@@ -100,20 +131,23 @@ namespace Janseon.Foundation.Tests
         }
 
         [Test]
-        public void OddlandAndSpineAreNotBattleCombatants()
+        public void OddlandAndSpineAreNotBattleCombatants(
+            [ValueSource(typeof(Full3dBattleVisualFixtureAuthoring), nameof(Full3dBattleVisualFixtureAuthoring.Catalogs))]
+            TemporaryBattleVisualCatalog assignedCatalog)
         {
-            TemporaryBattleVisualCatalog catalog = AssetDatabase.LoadAssetAtPath<TemporaryBattleVisualCatalog>(CatalogPath);
+            LoadInjectedFixture(assignedCatalog);
             Assert.IsNotNull(catalog, "Task13 requires a separately authored generated-combatant catalog");
             var serialized = new SerializedObject(catalog);
             Assert.AreEqual("unity-generated-blockout", serialized.FindProperty("source").stringValue);
             Assert.AreEqual("temporary-gameplay-mesh", serialized.FindProperty("use").stringValue);
-            foreach (string path in AssetDatabase.GetDependencies(CatalogPath, true))
+            foreach (UnityEngine.Object dependency in EditorUtility.CollectDependencies(new UnityEngine.Object[] { catalog }))
             {
+                string path = AssetDatabase.GetAssetPath(dependency);
                 string lower = path.ToLowerInvariant();
                 Assert.IsFalse(lower.Contains("oddland") || lower.Contains("spine") || lower.Contains("character"), path);
             }
 
-            string runtimeCatalogSource = File.ReadAllText(Path.Combine(Application.dataPath, "Janseon/Foundation/Battle/TemporaryBattleVisualCatalog.cs"));
+            string runtimeCatalogSource = MonoScript.FromScriptableObject(catalog).text;
             Assert.IsFalse(runtimeCatalogSource.Contains("AssetDatabase"), "runtime catalog cannot search the editor database");
             Assert.IsFalse(runtimeCatalogSource.Contains("Resources.Load"), "runtime catalog cannot search paths");
             Assert.IsFalse(runtimeCatalogSource.Contains("CreatePrimitive"), "runtime catalog must instantiate bounded serialized prefabs");
@@ -121,11 +155,13 @@ namespace Janseon.Foundation.Tests
         }
 
         [UnityTest]
-        public IEnumerator CatalogPrefabsRenderInGameView1280x720()
+        public IEnumerator CatalogPrefabsRenderInGameView1280x720(
+            [ValueSource(typeof(Full3dBattleVisualFixtureAuthoring), nameof(Full3dBattleVisualFixtureAuthoring.Catalogs))]
+            TemporaryBattleVisualCatalog assignedCatalog)
         {
+            LoadInjectedFixture(assignedCatalog);
             string output = Environment.GetEnvironmentVariable("TASK13_CAPTURE_PATH");
             Assert.IsFalse(string.IsNullOrWhiteSpace(output), "TASK13_CAPTURE_PATH must bind the tracked PNG");
-            TemporaryBattleVisualCatalog catalog = AssetDatabase.LoadAssetAtPath<TemporaryBattleVisualCatalog>(CatalogPath);
             Assert.IsNotNull(catalog);
 
             var cameraObject = new GameObject("Task13GameViewCamera");
@@ -166,7 +202,6 @@ namespace Janseon.Foundation.Tests
                     instances.Add(instance);
                 }
 
-                yield return null;
                 target = new RenderTexture(1280, 720, 24, RenderTextureFormat.ARGB32);
                 camera.targetTexture = target;
                 camera.Render();
@@ -189,6 +224,7 @@ namespace Janseon.Foundation.Tests
                 if (pixels != null) UnityEngine.Object.DestroyImmediate(pixels);
                 if (target != null) UnityEngine.Object.DestroyImmediate(target);
             }
+            yield break;
         }
 
         static float RendererBoundsHeight(GameObject instance)

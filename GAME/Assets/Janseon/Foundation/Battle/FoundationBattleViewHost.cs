@@ -1,50 +1,39 @@
 using System;
 using System.Collections.Generic;
 using Janseon.Core.Battle.Sim;
+using Janseon.Data.Authoring;
 using Janseon.Foundation.UI;
 using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.EventSystems;
-using UnityEngine.SceneManagement;
 
 namespace Janseon.Foundation.Battle
 {
-    /// <summary>
-    /// Scene-local bridge to the existing gameplay lease. Replaces the legacy occupancy
-    /// graphics at runtime, leaving HUD authoring and Core occupancy untouched.
-    /// </summary>
+    /// <summary>Connects the current battle state to its continuous world-space view.</summary>
     public sealed class FoundationBattleViewHost : MonoBehaviour
     {
+        [Serializable]
+        sealed class RoleVisualMapping
+        {
+            [SerializeField] string visualKindId;
+            [SerializeField] TemporaryCombatantKind kind;
+
+            public string VisualKindId => visualKindId;
+            public TemporaryCombatantKind Kind => kind;
+
+            public bool Matches(UnitState unit)
+            {
+                return !string.IsNullOrWhiteSpace(visualKindId) && string.Equals(unit.VisualKindId, visualKindId.Trim(), StringComparison.Ordinal);
+            }
+        }
+
+        [SerializeField] TemporaryBattleVisualCatalog visualCatalog;
+        [SerializeField] RoleVisualMapping[] roleVisualMappings = Array.Empty<RoleVisualMapping>();
+
         GameplayUiHost host;
         PocCoreLoopController controller;
-        BattleSimState displayed;
-        RectTransform viewport;
-        UnityEngine.UI.RawImage image;
-        RenderTexture texture;
-        readonly List<(UnityEngine.UI.Button button, UnityAction action)> bindings = new();
-        float zoom = 1f;
+        BattleSimState displayedState;
+
         public FoundationBattleView View { get; private set; }
-        public RectTransform Viewport => viewport;
         public event Action Presented;
-
-        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
-        static void Register()
-        {
-            SceneManager.sceneLoaded -= AttachToScene;
-            SceneManager.sceneLoaded += AttachToScene;
-        }
-
-        static void AttachToScene(Scene scene, LoadSceneMode mode)
-        {
-            foreach (var root in scene.GetRootGameObjects())
-                foreach (var gameplay in root.GetComponentsInChildren<GameplayUiHost>(true))
-                {
-                    if (gameplay.GetComponent<FoundationBattleViewHost>() == null)
-                        gameplay.gameObject.AddComponent<FoundationBattleViewHost>();
-                    if (gameplay.GetComponent<BattleSessionDriverHost>() == null)
-                        gameplay.gameObject.AddComponent<BattleSessionDriverHost>();
-                }
-        }
 
         async void Start()
         {
@@ -52,165 +41,108 @@ namespace Janseon.Foundation.Battle
             try
             {
                 await host.CoreLoopReady;
-                if (this == null) return;
+                if (this == null)
+                {
+                    return;
+                }
+
                 controller = (PocCoreLoopController)host.CoreLoop;
-                BindViewport();
                 controller.StateChanged += Synchronize;
                 Synchronize();
             }
-            catch (Exception exception) { Debug.LogException(exception, this); }
-        }
-
-        void BindViewport()
-        {
-            viewport = (RectTransform)UguiHudBuilder.Find(host.CanvasRoot, UiElementNames.BattleGrid);
-            // Preserve the named container for presenter visibility, but replace all cell graphics.
-            viewport.GetComponent<UnityEngine.UI.GridLayoutGroup>().enabled = false;
-            foreach (Transform cell in viewport) cell.gameObject.SetActive(false);
-            var layout = viewport.GetComponent<UnityEngine.UI.LayoutElement>();
-            layout.minHeight = 200f;
-            layout.preferredHeight = 326f;
-            layout.flexibleHeight = 1f;
-            image = viewport.gameObject.AddComponent<UnityEngine.UI.RawImage>();
-            image.color = Color.white;
-            image.raycastTarget = true;
-            texture = new RenderTexture(1280, 720, 24) { name = "FoundationBattleViewport", filterMode = FilterMode.Bilinear };
-            texture.Create();
-            image.texture = texture;
-            var events = viewport.gameObject.AddComponent<BattleViewportPointer>();
-            events.Moved += data => Point(data, false);
-            AddPointer(events, EventTriggerType.PointerClick, data => Point(data, true));
-            AddPointer(events, EventTriggerType.PointerExit, _ => View?.ClearHover());
-            string[] cards = { "guard-shieldwall", "encourage-morale", "pincer-focus", "mobility-regroup" };
-            foreach (string card in cards)
-                Bind(UiElementNames.BattleCard(card), () => { controller.Targeting?.BeginCard(card); Synchronize(); });
-            Bind(UiElementNames.BattleCardCancel, CancelTargeting);
-            Bind(UiElementNames.BattleZoomOut, () => StepZoom(-0.05f));
-            Bind(UiElementNames.BattleZoomIn, () => StepZoom(0.05f));
-            Bind(UiElementNames.BattleZoomReset, () => { zoom = 1f; ApplyZoom(); });
-            UguiHudBuilder.BindLocalReviewPortraits(host.CanvasRoot);
-            // Keep cancel reachable on the battlefield even when the legacy dock overflows.
-            // It remains a HUD raycast target, never a world selection.
-            var cancel = (RectTransform)UguiHudBuilder.Find(host.CanvasRoot, UiElementNames.BattleCardCancel);
-            cancel.SetParent(viewport, false);
-            cancel.anchorMin = cancel.anchorMax = cancel.pivot = Vector2.one;
-            cancel.anchoredPosition = new Vector2(-8f, -8f);
-            // Direction and ring placeholders in the dock must never masquerade as world graphics.
-            string[] graphics = { UiElementNames.BattleCardTargetRing, UiElementNames.BattleCardDirectionNorth,
-                UiElementNames.BattleCardDirectionEast, UiElementNames.BattleCardDirectionSouth, UiElementNames.BattleCardDirectionWest };
-            foreach (string name in graphics) UguiHudBuilder.Find(host.CanvasRoot, name).gameObject.SetActive(false);
-        }
-
-        void Bind(string name, UnityAction action)
-        {
-            var button = UguiHudBuilder.ButtonNamed(host.CanvasRoot, name);
-            button.onClick.AddListener(action);
-            bindings.Add((button, action));
-        }
-
-        static void AddPointer(EventTrigger trigger, EventTriggerType type, Action<PointerEventData> action)
-        {
-            var entry = new EventTrigger.Entry { eventID = type };
-            entry.callback.AddListener(data => action((PointerEventData)data));
-            trigger.triggers.Add(entry);
-        }
-
-        void Point(PointerEventData data, bool click)
-        {
-            if (View == null || !viewport.gameObject.activeInHierarchy
-                || (click && data.button != PointerEventData.InputButton.Left)
-                || !RectTransformUtility.ScreenPointToLocalPointInRectangle(
-                    viewport, data.position, data.pressEventCamera, out Vector2 local)) return;
-            Rect rect = viewport.rect;
-            if (!rect.Contains(local)) { View.ClearHover(); return; }
-            var normalized = new Vector3((local.x - rect.xMin) / rect.width, (local.y - rect.yMin) / rect.height, 0);
-            // View selection runs the owner-card machine; only its fresh Confirm preview
-            // can reach PocCoreLoopController -> BattleSessionDriver.Enqueue/Submit.
-            View.Point(View.ViewCamera.ViewportPointToRay(normalized), click);
-            Synchronize();
-        }
-
-        void CancelTargeting()
-        {
-            controller.Targeting?.Cancel();
-            Synchronize();
-        }
-
-        void Update()
-        {
-            // Use the production input module's Cancel mapping (Escape), independent of
-            // which HUD button has keyboard focus. Pausing gates ticks, not this input.
-            if (controller?.Targeting == null || controller.Targeting.Stage == CardTargetingStage.Idle) return;
-            if (EventSystem.current?.currentInputModule is StandaloneInputModule input
-                && input.input.GetButtonDown(input.cancelButton)) CancelTargeting();
+            catch (Exception exception)
+            {
+                Debug.LogException(exception, this);
+            }
         }
 
         public void Synchronize()
         {
-            if (controller == null) return;
-            if (!ReferenceEquals(displayed, controller.Battle))
+            if (controller == null)
             {
-                if (View != null) { View.gameObject.SetActive(false); Destroy(View.gameObject); }
-                View = null;
-                displayed = controller.Battle;
-                if (displayed != null)
+                return;
+            }
+
+            BattleSimState currentState = controller.Battle;
+            if (!ReferenceEquals(displayedState, currentState))
+            {
+                ReleaseView();
+                displayedState = currentState;
+                if (displayedState != null)
                 {
-                    View = FoundationBattleView.Create(transform, displayed, controller.Targeting);
-                    View.ViewCamera.targetTexture = texture;
-                    View.ViewCamera.enabled = true;
+                    View = FoundationBattleView.Create(
+                        transform,
+                        displayedState,
+                        visualCatalog,
+                        ResolveCombatantKind);
                 }
             }
-            if (View != null)
+            else if (View != null)
             {
                 View.Refresh();
-                float aspect = viewport.rect.height > 0 ? viewport.rect.width / viewport.rect.height : 16f / 9f;
-                View.FrameCamera(aspect);
-                View.SetZoom(zoom);
-                ApplyHudChrome();
             }
-            UguiHudBuilder.Find(host.CanvasRoot, UiElementNames.BattleCardCancel).gameObject.SetActive(
-                controller.Targeting != null && controller.Targeting.Stage != CardTargetingStage.Idle);
+
             Presented?.Invoke();
         }
 
-        void StepZoom(float delta)
+        TemporaryCombatantKind ResolveCombatantKind(UnitState unit)
         {
-            zoom = Mathf.Clamp(zoom + delta, 0.72f, 1.75f);
-            ApplyZoom();
-        }
-
-        void ApplyZoom()
-        {
-            if (View != null) View.SetZoom(zoom);
-            ApplyHudChrome();
-        }
-
-        void ApplyHudChrome()
-        {
-            if (host?.CanvasRoot == null) return;
-            UguiHudBuilder.BindLocalReviewPortraits(host.CanvasRoot);
-            if (controller?.Targeting == null) return;
-            UguiHudBuilder.SetSelectedCard(host.CanvasRoot, controller.Targeting.CardId);
-            string[] cards = { "guard-shieldwall", "encourage-morale", "pincer-focus", "mobility-regroup" };
-            int[] totals = { 300, 600, 450, 600 };
-            for (int i = 0; i < cards.Length; i++)
+            HashSet<string> visualKindIds = new HashSet<string>(StringComparer.Ordinal);
+            for (int index = 0; index < roleVisualMappings.Length; index++)
             {
-                int remaining = controller.Targeting.RechargeTicksLeft(cards[i]) ?? 0;
-                UguiHudBuilder.SetCardRechargeVeil(host.CanvasRoot, cards[i], remaining, totals[i]);
+                RoleVisualMapping mapping = roleVisualMappings[index];
+                if (mapping == null)
+                {
+                    throw new InvalidOperationException(
+                        "Battle visual kind mapping at index " + index + " is null.");
+                }
+
+                string visualKindId = mapping.VisualKindId;
+                if (string.IsNullOrWhiteSpace(visualKindId))
+                {
+                    throw new InvalidOperationException(
+                        "Battle visual kind mapping at index " + index + " has no visual kind ID.");
+                }
+
+                if (!visualKindIds.Add(visualKindId.Trim()))
+                {
+                    throw new InvalidOperationException(
+                        "Duplicate battle visual kind mapping for visual kind ID " + visualKindId.Trim() + ".");
+                }
             }
-            Transform zoomValue = UguiHudBuilder.Find(host.CanvasRoot, UiElementNames.BattleZoomValue);
-            var zoomLabel = zoomValue != null ? zoomValue.GetComponent<TMPro.TextMeshProUGUI>() : null;
-            if (zoomLabel != null) zoomLabel.text = Mathf.RoundToInt(zoom * 100f) + "%";
+
+            foreach (RoleVisualMapping mapping in roleVisualMappings)
+            {
+                if (mapping.Matches(unit))
+                {
+                    return mapping.Kind;
+                }
+            }
+
+            throw new InvalidOperationException(
+                "No authored visual kind mapping matches battle unit " + unit.Id.Value + ".");
         }
 
-        void LateUpdate() => Synchronize();
+        void ReleaseView()
+        {
+            if (View == null)
+            {
+                return;
+            }
+
+            View.gameObject.SetActive(false);
+            Destroy(View.gameObject);
+            View = null;
+        }
 
         void OnDestroy()
         {
-            if (controller != null) controller.StateChanged -= Synchronize;
-            foreach (var binding in bindings)
-                if (binding.button != null) binding.button.onClick.RemoveListener(binding.action);
-            if (texture != null) { texture.Release(); Destroy(texture); }
+            if (controller != null)
+            {
+                controller.StateChanged -= Synchronize;
+            }
+
+            ReleaseView();
         }
     }
 }

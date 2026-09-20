@@ -21,6 +21,11 @@ Unity project and its serialized runtime contract; score 8, distinct engine/buil
 - Target `Game/` as the Unity project; Unity asset paths start at `Assets/`, not `GAME/Assets/`.
 - Use pinned `6000.7.0a5` batchmode processes in a dedicated background session, one per worktree/project.
 - Scene, prefab, asset and serialized-reference edits use Unity APIs / `SerializedObject`, not hand-edited YAML.
+- Product gameplay content, balance, tuning, map values and catalog values are authored in serialized ScriptableObjects or canonical data.
+- Scene and `LifetimeScope` references are injected through VContainer repositories/interfaces; Core consumes only validated immutable snapshots.
+- Runtime, tests and Editor validators must not locate product assets through `Resources.Load`, `AssetDatabase.LoadAssetAtPath`, or hardcoded `Assets` paths.
+- Builders validate and bind authored assets; they never seed product IDs, numbers, coordinates or colors.
+- Test fixtures use explicit synthetic repositories injected into the scope under test; they never duplicate product expected constants.
 - Bootstrap owns the application scope; MainTitle and Foundation are content scenes.
 - Build settings keep Bootstrap first, then MainTitle, then Foundation.
 - The strategy-map camera is a free-pan/zoom 3D view over Seoul; the battle screen is left/right side-scroll (Intent decision 10).
@@ -60,7 +65,7 @@ When the change touches that system, verify the matching items:
 - `SceneManager.LoadScene*` runs only through the App scene-loader adapter.
 - Runtime has no `FindObject*` / `GameObject.Find` and no mutable static `Instance` / `Current`.
 - `Janseon.Core` stays engine-free.
-- Genre contract stays locked: `combatResolution: realtime-formation-card`; isometric/grid/tile/SD keys are retired; JSON and C# move together.
+- Genre authority is the full-3D unit-command target, which isn't shipped yet. `combatResolution: realtime-formation-card` and the left/right side-scroll surface record the historical POC only. Isometric/grid/tile/SD keys stay retired; JSON and C# move together.
 - New runtime UI is uGUI; do not add UI Toolkit surfaces.
 - Runtime art slots require Node provenance plus Unity import; `Art/Staging` and quarantine paths are not runtime-reachable.
 

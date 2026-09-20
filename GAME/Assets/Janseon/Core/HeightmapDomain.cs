@@ -4,8 +4,45 @@ using System.Text;
 
 namespace Janseon.Core
 {
+    public readonly struct TerrainSampleCoord : IEquatable<TerrainSampleCoord>
+    {
+        public readonly int X;
+        public readonly int Y;
+
+        public TerrainSampleCoord(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
+
+        public int ManhattanDistanceTo(TerrainSampleCoord other)
+        {
+            return Math.Abs(X - other.X) + Math.Abs(Y - other.Y);
+        }
+
+        public bool Equals(TerrainSampleCoord other)
+        {
+            return X == other.X && Y == other.Y;
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is TerrainSampleCoord other && Equals(other);
+        }
+
+        public override int GetHashCode()
+        {
+            return unchecked((X * 397) ^ Y);
+        }
+
+        public override string ToString()
+        {
+            return X.ToString(CultureInfo.InvariantCulture) + "," + Y.ToString(CultureInfo.InvariantCulture);
+        }
+    }
+
     /// <summary>
-    /// Discrete vertical layer for stations and battle grids (지상/B1/B2/B3).
+    /// Discrete vertical layer for terrain samples (지상/B1/B2/B3).
     /// </summary>
     public enum LayerId
     {
@@ -91,14 +128,20 @@ namespace Janseon.Core
             return cells[y * Width + x];
         }
 
-        public int Get(GridCoord coord) => Get(coord.X, coord.Y);
+        public int Get(TerrainSampleCoord coord)
+        {
+            return Get(coord.X, coord.Y);
+        }
 
         public bool InBounds(int x, int y)
         {
             return x >= 0 && y >= 0 && x < Width && y < Height;
         }
 
-        public bool IsWater(int x, int y) => Get(x, y) <= WaterLevel;
+        public bool IsWater(int x, int y)
+        {
+            return Get(x, y) <= WaterLevel;
+        }
 
         public HeightMaterial MaterialAt(int x, int y)
         {
@@ -106,16 +149,16 @@ namespace Janseon.Core
         }
 
         /// <summary>
-        /// Cardinal step cost: 1 AP plus 1 AP per elevation step. Water is impassable (returns -1).
+        /// Adjacent terrain sample cost: 1 AP plus 1 AP per elevation step. Water is impassable (returns -1).
         /// </summary>
-        public int MoveCost(GridCoord from, GridCoord to)
+        public int MoveCost(TerrainSampleCoord from, TerrainSampleCoord to)
         {
             if (!InBounds(from.X, from.Y) || !InBounds(to.X, to.Y))
             {
                 return -1;
             }
 
-            if (from.ManhattanTo(to) != 1)
+            if (from.ManhattanDistanceTo(to) != 1)
             {
                 return -1;
             }

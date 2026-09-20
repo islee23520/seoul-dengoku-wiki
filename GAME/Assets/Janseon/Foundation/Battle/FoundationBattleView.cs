@@ -1,390 +1,212 @@
 using System;
 using System.Collections.Generic;
-using Janseon.Core;
 using Janseon.Core.Battle.Contracts;
 using Janseon.Core.Battle.Sim;
-using Janseon.Foundation.UI;
 using UnityEngine;
 
 namespace Janseon.Foundation.Battle
 {
-    /// <summary>Read-only Core projection. All positions, including gizmos, use the same 1.5m grid.</summary>
+    /// <summary>Projects the latest battle simulation frame onto authored combatant prefabs.</summary>
     public sealed class FoundationBattleView : MonoBehaviour
     {
-        // Battle-internal presentation numbers (Intent 결정 10 retired the shared grid contract).
-        private const float PocCameraPitchDegrees = 35.264f;
-        private const float PocCameraYawDegrees = 45f;
-        private const float BattleCellUnityUnits = 1.5f;
+        const float MillimetersToMeters = 0.001f;
+        const float MilliDegreesToDegrees = 0.001f;
 
-        public static readonly Color Cyan = new Color32(0x86, 0xbe, 0xd0, 0xff);
-        public static readonly Color HoverGold = new Color32(0xff, 0xe4, 0x9b, 0xff);
-        public static readonly Color IllegalRed = new Color32(0xcf, 0x62, 0x58, 0xff);
-        public const string LocalReviewSpriteResource = "LocalReview/ally-guard-1-local-review";
-        public const string LocalReviewCommanderUnitId = "ally-guard-1";
-        const float LocalReviewCellPixels = 64f;
-        const int LocalReviewWalkFrames = 8;
-        const int LocalReviewIdleRows = 4;
-        readonly Dictionary<UnitId, Transform> units = new Dictionary<UnitId, Transform>();
-        readonly Dictionary<int, Sprite> localReviewSprites = new Dictionary<int, Sprite>();
-        readonly List<UnityEngine.Object> owned = new List<UnityEngine.Object>();
-        readonly Transform[] arrows = new Transform[4];
-        readonly bool[] legalDirections = new bool[4];
-        BattleSimState battle;
-        OwnerCardTargetingMachine targeting;
-        Material allyMaterial, enemyMaterial, goldMaterial, groundMaterial;
-        Transform selectionRing, targetRing, hoverRing;
-        UnitId? hoveredUnit;
-        int hoveredDirection = -1;
-        float zoom = 1f;
-        float baseOrthographicSize;
+        readonly Dictionary<UnitId, TemporaryBattleCombatantVisual> visualsByUnitId =
+            new Dictionary<UnitId, TemporaryBattleCombatantVisual>();
 
-        public IReadOnlyDictionary<UnitId, Transform> Units => units;
-        public Transform SelectionRing => selectionRing;
-        public Transform TargetRing => targetRing;
-        public IReadOnlyList<Transform> Arrows => arrows;
-        public Camera ViewCamera { get; private set; }
-        public int VisibleArrowCount
+        BattleSimState state;
+        TemporaryBattleVisualCatalog catalog;
+        Func<UnitState, TemporaryCombatantKind> kindResolver;
+        UnitId selectedUnitId;
+        bool hasSelection;
+
+        public BattleSimState State => state;
+        public TemporaryBattleVisualCatalog Catalog => catalog;
+        public IReadOnlyDictionary<UnitId, TemporaryBattleCombatantVisual> Units => visualsByUnitId;
+
+        public static FoundationBattleView Create(
+            Transform parent,
+            BattleSimState state,
+            TemporaryBattleVisualCatalog catalog,
+            Func<UnitState, TemporaryCombatantKind> kindResolver)
         {
-            get { int count = 0; foreach (var arrow in arrows) if (arrow.gameObject.activeSelf) count++; return count; }
-        }
+            if (state == null)
+            {
+                throw new ArgumentNullException(nameof(state));
+            }
 
-        public static FoundationBattleView Create(Transform parent, BattleSimState state, OwnerCardTargetingMachine machine)
-        {
-            var root = new GameObject("FoundationBattleView");
-            root.transform.SetParent(parent, false);
-            // Isolate the tactical stage from the campaign's heightmap without changing its camera or layers.
-            root.transform.localPosition = new Vector3(1000f, 0f, 1000f);
-            var view = root.AddComponent<FoundationBattleView>();
-            view.battle = state ?? throw new ArgumentNullException(nameof(state));
-            view.targeting = machine ?? throw new ArgumentNullException(nameof(machine));
-            view.Build();
+            if (catalog == null)
+            {
+                throw new ArgumentNullException(nameof(catalog));
+            }
+
+            if (kindResolver == null)
+            {
+                throw new ArgumentNullException(nameof(kindResolver));
+            }
+
+            var viewObject = new GameObject(nameof(FoundationBattleView));
+            viewObject.transform.SetParent(parent, false);
+
+            var view = viewObject.AddComponent<FoundationBattleView>();
+            view.state = state;
+            view.catalog = catalog;
+            view.kindResolver = kindResolver;
             view.Refresh();
             return view;
         }
 
-        public Vector3 CellWorld(GridCoord cell) => transform.TransformPoint(
-            new Vector3(cell.X * BattleCellUnityUnits, 0f, cell.Y * BattleCellUnityUnits));
-
-        void Build()
-        {
-            allyMaterial = Material(Cyan);
-            enemyMaterial = Material(IllegalRed);
-            goldMaterial = Material(HoverGold);
-            groundMaterial = Material(new Color32(0x25, 0x35, 0x40, 0xff));
-            var ground = Box(transform, "Arena", groundMaterial,
-                new Vector3((battle.Arena.Width - 1) * 0.75f, -0.16f, (battle.Arena.Height - 1) * 0.75f),
-                new Vector3(battle.Arena.Width * 1.5f, 0.3f, battle.Arena.Height * 1.5f));
-            // World-space seams describe the full Core arena, not a HUD occupancy field.
-            var seam = Material(new Color32(0x34, 0x49, 0x54, 0xff));
-            for (int x = 0; x <= battle.Arena.Width; x++)
-                Box(transform, "GridX", seam, new Vector3(x * 1.5f - 0.75f, 0.002f, ground.localPosition.z),
-                    new Vector3(0.018f, 0.01f, battle.Arena.Height * 1.5f));
-            for (int y = 0; y <= battle.Arena.Height; y++)
-                Box(transform, "GridY", seam, new Vector3(ground.localPosition.x, 0.002f, y * 1.5f - 0.75f),
-                    new Vector3(battle.Arena.Width * 1.5f, 0.01f, 0.018f));
-            selectionRing = Ring("SelectionRing", 0.57f, allyMaterial);
-            targetRing = Ring("TargetRing", 0.69f, allyMaterial);
-            hoverRing = Ring("HoverRing", 0.62f, goldMaterial);
-            for (int i = 0; i < arrows.Length; i++)
-            {
-                arrows[i] = Graphic("Direction_" + (CardinalDirection)i, new[]
-                {
-                    new Vector3(-0.12f, 0, -0.25f), new Vector3(0.12f, 0, -0.25f),
-                    new Vector3(0.12f, 0, 0.02f), new Vector3(0.29f, 0, 0.02f),
-                    new Vector3(0, 0, 0.36f), new Vector3(-0.29f, 0, 0.02f), new Vector3(-0.12f, 0, 0.02f),
-                }, new[] { 0, 2, 1, 0, 6, 2, 6, 4, 2, 2, 4, 3, 6, 5, 4 }, allyMaterial);
-                Vector3 direction = Direction((CardinalDirection)i);
-                arrows[i].localRotation = Quaternion.LookRotation(direction);
-            }
-            var cameraObject = new GameObject("BattleCamera");
-            cameraObject.transform.SetParent(transform, false);
-            ViewCamera = cameraObject.AddComponent<Camera>();
-            ViewCamera.enabled = false;
-            ViewCamera.orthographic = true;
-            ViewCamera.clearFlags = CameraClearFlags.SolidColor;
-            ViewCamera.backgroundColor = new Color32(0x0b, 0x14, 0x21, 0xff);
-            ViewCamera.nearClipPlane = 0.1f;
-            ViewCamera.farClipPlane = 100f;
-            ViewCamera.allowHDR = false;
-            ViewCamera.allowMSAA = false;
-            ViewCamera.transform.rotation = Quaternion.Euler(PocCameraPitchDegrees, PocCameraYawDegrees, 0);
-            ViewCamera.transform.position = CellWorld(new GridCoord(0, 0))
-                + new Vector3((battle.Arena.Width - 1) * 0.75f, 0.3f, (battle.Arena.Height - 1) * 0.75f)
-                - ViewCamera.transform.forward * 35f;
-            FrameCamera(16f / 9f);
-        }
-
-        public void FrameCamera(float aspect)
-        {
-            float width = battle.Arena.Width * BattleCellUnityUnits;
-            float depth = battle.Arena.Height * BattleCellUnityUnits;
-            ViewCamera.aspect = aspect;
-            baseOrthographicSize = Mathf.Max((width + depth) * 0.205f + 1f,
-                (width + depth) * 0.354f / aspect + 1f);
-            ApplyZoom();
-        }
-
-        public void SetZoom(float value)
-        {
-            zoom = Mathf.Clamp(value, 0.72f, 1.75f);
-            ApplyZoom();
-        }
-
-        public float Zoom => zoom;
-
-        void ApplyZoom()
-        {
-            if (ViewCamera == null || baseOrthographicSize <= 0f)
-            {
-                return;
-            }
-
-            ViewCamera.orthographicSize = baseOrthographicSize / zoom;
-        }
-
+        /// <summary>Synchronizes authored combatant visuals with the latest published simulation state.</summary>
         public void Refresh()
         {
-            foreach (UnitState unit in battle.Units)
+            UnitState[] currentUnits = state.Frame == null ? state.Units : state.Frame.Units;
+            currentUnits = currentUnits ?? Array.Empty<UnitState>();
+
+            var currentUnitIds = new HashSet<UnitId>();
+            foreach (UnitState unit in currentUnits)
             {
-                if (!units.TryGetValue(unit.Id, out Transform token))
+                if (unit == null)
                 {
-                    token = new GameObject("Unit_" + unit.Id.Value).transform;
-                    token.SetParent(transform, false);
-                    if (!TryBindLocalReviewSprite(token, unit))
-                    {
-                        var material = unit.Side == 0 ? allyMaterial : enemyMaterial;
-                        Box(token, "Body", material, new Vector3(0, 0.48f, 0), new Vector3(0.48f, 0.66f, 0.34f));
-                        Box(token, "Head", goldMaterial, new Vector3(0, 1f, 0), Vector3.one * 0.4f);
-                        Box(token, "Facing", material, new Vector3(0, 0.72f, 0.28f), new Vector3(0.16f, 0.15f, 0.3f));
-                    }
-                    units.Add(unit.Id, token);
+                    continue;
                 }
-                token.position = CellWorld(unit.Cell);
-                Transform localReview = token.Find("LocalReviewSprite");
-                if (localReview != null)
+
+                currentUnitIds.Add(unit.Id);
+                if (!visualsByUnitId.TryGetValue(unit.Id, out TemporaryBattleCombatantVisual visual))
                 {
-                    token.rotation = Quaternion.identity;
-                    if (ViewCamera != null)
-                        localReview.rotation = Quaternion.LookRotation(-ViewCamera.transform.forward, Vector3.up);
-                    var renderer = localReview.GetComponent<SpriteRenderer>();
-                    if (renderer != null)
-                        renderer.sprite = LocalReviewFrame(unit, battle.Tick);
+                    visual = CreateVisual(unit);
+                    visualsByUnitId.Add(unit.Id, visual);
                 }
-                else
-                {
-                    token.rotation = Quaternion.LookRotation(Direction(unit.Facing));
-                }
-                token.gameObject.SetActive(unit.Hp > 0 && unit.State != "Down");
+
+                ApplyUnitState(visual, unit);
             }
-            var currentIds = new HashSet<UnitId>();
-            foreach (var unit in battle.Units) currentIds.Add(unit.Id);
-            var removed = new List<UnitId>();
-            foreach (var pair in units) if (!currentIds.Contains(pair.Key)) removed.Add(pair.Key);
-            foreach (var id in removed) { Release(units[id].gameObject); units.Remove(id); }
-            Anchor(selectionRing, targeting.SelectedOwner);
-            Anchor(targetRing, targeting.SelectedTarget);
-            targetRing.GetComponent<Renderer>().sharedMaterial = targeting.LastRejection == null ? allyMaterial : enemyMaterial;
-            bool choosing = targeting.Stage == CardTargetingStage.ChoosingDirection && targeting.CardId == "mobility-regroup";
-            for (int i = 0; i < arrows.Length; i++)
+
+            RemoveMissingVisuals(currentUnitIds);
+            ApplySelection();
+        }
+
+        /// <summary>Selects one combatant visual by its simulation unit identifier.</summary>
+        public bool Select(UnitId unitId)
+        {
+            if (!visualsByUnitId.ContainsKey(unitId))
             {
-                arrows[i].gameObject.SetActive(choosing && targetRing.gameObject.activeSelf);
-                if (!arrows[i].gameObject.activeSelf) continue;
-                arrows[i].position = targetRing.position + Direction((CardinalDirection)i) * 1.03f;
-                legalDirections[i] = BattleSim.PreviewCard(battle, new BattleTickCommand
-                {
-                    At = new Tick(battle.Tick), Kind = BattleTickCommandKind.PlayCard, CardId = targeting.CardId,
-                    OwnerUnitId = targeting.SelectedOwner, TargetUnitId = targeting.SelectedTarget, Facing = (CardinalDirection)i,
-                }) == null;
-                arrows[i].GetComponent<Renderer>().sharedMaterial = !legalDirections[i] ? enemyMaterial
-                    : hoveredDirection == i ? goldMaterial : allyMaterial;
+                return false;
             }
-            hoverRing.gameObject.SetActive(hoveredUnit.HasValue && Anchor(hoverRing, hoveredUnit.GetValueOrDefault()));
-            if (hoveredUnit.HasValue)
-            {
-                var unit = Array.Find(battle.Units, u => u.Id.Equals(hoveredUnit.Value));
-                bool legal = unit != null && unit.Side == 0 && unit.Hp > 0 && unit.State != "Down";
-                if (legal && targeting.Stage == CardTargetingStage.ChoosingAlly)
-                {
-                    var rejection = BattleSim.PreviewCard(battle, new BattleTickCommand
-                    {
-                        At = new Tick(battle.Tick), Kind = BattleTickCommandKind.PlayCard, CardId = targeting.CardId,
-                        OwnerUnitId = targeting.SelectedOwner, TargetUnitId = unit.Id,
-                    });
-                    legal = rejection == null || (targeting.RequiresDirection && rejection is BattleRejection r
-                        && (r.Reason == BattleRejectReason.CardDestinationBlocked || r.Reason == BattleRejectReason.CardDestinationOutOfBounds));
-                }
-                hoverRing.GetComponent<Renderer>().sharedMaterial = legal ? goldMaterial : enemyMaterial;
-            }
-        }
 
-        public bool SelectUnit(UnitId id)
-        {
-            bool accepted = targeting.Stage == CardTargetingStage.Idle ? targeting.SelectOwner(id)
-                : targeting.Stage == CardTargetingStage.Confirm && targeting.SelectedTarget.Equals(id)
-                    ? targeting.Confirm() : targeting.SelectTarget(id);
-            Refresh();
-            return accepted;
-        }
-
-        public bool SelectDirection(CardinalDirection direction)
-        {
-            if (targeting.Stage != CardTargetingStage.ChoosingDirection) return false;
-            bool accepted = targeting.PreviewDirection(direction);
-            Refresh();
-            return accepted;
-        }
-
-        public void Point(Ray ray, bool click)
-        {
-            hoveredUnit = null;
-            hoveredDirection = -1;
-            if (new Plane(Vector3.up, transform.position).Raycast(ray, out float distance))
-            {
-                var point = ray.GetPoint(distance);
-                for (int i = 0; i < arrows.Length; i++)
-                    if (arrows[i].gameObject.activeSelf && Vector3.Distance(point, arrows[i].position) < 0.42f)
-                    { hoveredDirection = i; break; }
-                if (hoveredDirection < 0)
-                    foreach (var pair in units)
-                        if (pair.Value.gameObject.activeSelf && Vector3.Distance(point, pair.Value.position) < 0.72f)
-                        { hoveredUnit = pair.Key; break; }
-            }
-            if (click && hoveredDirection >= 0) SelectDirection((CardinalDirection)hoveredDirection);
-            else if (click && hoveredUnit.HasValue) SelectUnit(hoveredUnit.Value);
-            Refresh();
-        }
-
-        public void ClearHover() { hoveredUnit = null; hoveredDirection = -1; Refresh(); }
-
-        bool UsesLocalReviewSprite(UnitState unit)
-        {
-            if (unit == null || unit.Side != 0) return false;
-            string id = unit.Id.Value ?? string.Empty;
-            return unit.Id.Equals(battle.PlayerCommanderId)
-                || id == LocalReviewCommanderUnitId
-                || id.IndexOf("서윤", StringComparison.Ordinal) >= 0;
-        }
-
-        bool TryBindLocalReviewSprite(Transform token, UnitState unit)
-        {
-            if (!UsesLocalReviewSprite(unit)) return false;
-            if (!EnsureLocalReviewSprites()) return false;
-            var spriteObject = new GameObject("LocalReviewSprite", typeof(SpriteRenderer));
-            spriteObject.transform.SetParent(token, false);
-            spriteObject.transform.localPosition = new Vector3(0f, 0.02f, 0f);
-            var renderer = spriteObject.GetComponent<SpriteRenderer>();
-            renderer.sprite = LocalReviewFrame(unit, 0);
-            renderer.color = Color.white;
+            selectedUnitId = unitId;
+            hasSelection = true;
+            ApplySelection();
             return true;
         }
 
-        bool EnsureLocalReviewSprites()
+        public void ClearSelection()
         {
-            if (localReviewSprites.Count > 0) return true;
-            Texture2D texture = Resources.Load<Texture2D>(LocalReviewSpriteResource);
-            if (texture == null) return false;
-            float pixelsPerUnit = LocalReviewCellPixels / 1.2f;
-            Vector2 pivot = new Vector2(0.5f, 48.5f / LocalReviewCellPixels);
-            for (int row = 0; row < 8; row++)
+            hasSelection = false;
+            ApplySelection();
+        }
+
+        TemporaryBattleCombatantVisual CreateVisual(UnitState unit)
+        {
+            TemporaryCombatantKind kind = kindResolver(unit);
+            TemporaryBattleVisualEntry entry = FindCatalogEntry(kind);
+            GameObject instance = Instantiate(entry.Prefab, transform);
+            instance.name = "Unit_" + unit.Id.Value;
+
+            TemporaryBattleCombatantVisual visual = instance.GetComponent<TemporaryBattleCombatantVisual>();
+            if (visual != null)
             {
-                int frames = row < LocalReviewIdleRows ? 1 : LocalReviewWalkFrames;
-                for (int col = 0; col < frames; col++)
+                return visual;
+            }
+
+            Release(instance);
+            throw new InvalidOperationException(
+                "Temporary combatant prefab for " + kind
+                + " requires a TemporaryBattleCombatantVisual component.");
+        }
+
+        TemporaryBattleVisualEntry FindCatalogEntry(TemporaryCombatantKind kind)
+        {
+            foreach (TemporaryBattleVisualEntry entry in catalog.Entries)
+            {
+                if (entry != null && entry.Kind == kind && entry.Prefab != null)
                 {
-                    float y = texture.height - (row + 1) * LocalReviewCellPixels;
-                    var rect = new Rect(col * LocalReviewCellPixels, y, LocalReviewCellPixels, LocalReviewCellPixels);
-                    Sprite sprite = Sprite.Create(texture, rect, pivot, pixelsPerUnit);
-                    owned.Add(sprite);
-                    localReviewSprites[row * LocalReviewWalkFrames + col] = sprite;
+                    return entry;
                 }
             }
-            return true;
+
+            throw new InvalidOperationException("Temporary combatant prefab is not serialized for " + kind + ".");
         }
 
-        Sprite LocalReviewFrame(UnitState unit, int walkPhase)
+        static void ApplyUnitState(TemporaryBattleCombatantVisual visual, UnitState unit)
         {
-            int facingRow = unit.Facing == CardinalDirection.East ? 1
-                : unit.Facing == CardinalDirection.North ? 2
-                : unit.Facing == CardinalDirection.West ? 3
-                : 0;
-            bool walking = unit.OrderKind == BattleOrderKind.Move;
-            int row = walking ? facingRow + LocalReviewIdleRows : facingRow;
-            int col = walking ? ((walkPhase % LocalReviewWalkFrames) + LocalReviewWalkFrames) % LocalReviewWalkFrames : 0;
-            Sprite sprite;
-            return localReviewSprites.TryGetValue(row * LocalReviewWalkFrames + col, out sprite) ? sprite : null;
+            Transform visualTransform = visual.transform;
+            visualTransform.localPosition = new Vector3(
+                unit.Position.X * MillimetersToMeters,
+                unit.Position.Y * MillimetersToMeters,
+                unit.Position.Z * MillimetersToMeters);
+            visualTransform.localRotation = Quaternion.Euler(
+                0f,
+                unit.Facing.YawMilliDegrees * MilliDegreesToDegrees,
+                0f);
+            visual.SetPose(ResolvePose(unit));
         }
 
-        bool Anchor(Transform ring, UnitId id)
+        void RemoveMissingVisuals(HashSet<UnitId> currentUnitIds)
         {
-            Transform unit = null;
-            bool visible = !string.IsNullOrEmpty(id.Value) && units.TryGetValue(id, out unit) && unit.gameObject.activeSelf;
-            ring.gameObject.SetActive(visible);
-            if (visible) ring.position = unit.position + Vector3.up * 0.035f;
-            return visible;
-        }
-
-        static Vector3 Direction(CardinalDirection direction)
-        {
-            GridCoord step = new GridCoord(0, 0).Step(direction);
-            return new Vector3(step.X, 0, step.Y);
-        }
-
-        Material Material(Color color)
-        {
-            var material = new Material(Shader.Find("Janseon/UnlitVoxel")) { color = color };
-            owned.Add(material);
-            return material;
-        }
-
-        Transform Box(Transform parent, string name, Material material, Vector3 position, Vector3 scale)
-        {
-            var box = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            box.name = name;
-            box.transform.SetParent(parent, false);
-            box.transform.localPosition = position;
-            box.transform.localScale = scale;
-            box.GetComponent<Renderer>().sharedMaterial = material;
-            box.GetComponent<Collider>().enabled = false;
-            Release(box.GetComponent<Collider>());
-            return box.transform;
-        }
-
-        Transform Ring(string name, float radius, Material material)
-        {
-            const int segments = 48;
-            var vertices = new Vector3[segments * 2];
-            var triangles = new int[segments * 6];
-            for (int i = 0; i < segments; i++)
+            var removedUnitIds = new List<UnitId>();
+            foreach (KeyValuePair<UnitId, TemporaryBattleCombatantVisual> pair in visualsByUnitId)
             {
-                float angle = i * Mathf.PI * 2 / segments;
-                Vector3 radial = new Vector3(Mathf.Cos(angle), 0, Mathf.Sin(angle));
-                vertices[i * 2] = radial * radius;
-                vertices[i * 2 + 1] = radial * (radius - 0.055f);
-                int next = (i + 1) % segments * 2;
-                int offset = i * 6;
-                triangles[offset] = i * 2; triangles[offset + 1] = i * 2 + 1; triangles[offset + 2] = next;
-                triangles[offset + 3] = next; triangles[offset + 4] = i * 2 + 1; triangles[offset + 5] = next + 1;
+                if (!currentUnitIds.Contains(pair.Key))
+                {
+                    removedUnitIds.Add(pair.Key);
+                }
             }
-            return Graphic(name, vertices, triangles, material);
+
+            foreach (UnitId unitId in removedUnitIds)
+            {
+                Release(visualsByUnitId[unitId].gameObject);
+                visualsByUnitId.Remove(unitId);
+            }
         }
 
-        Transform Graphic(string name, Vector3[] vertices, int[] triangles, Material material)
+        void ApplySelection()
         {
-            var mesh = new Mesh { name = name, vertices = vertices, triangles = triangles };
-            mesh.RecalculateNormals();
-            mesh.RecalculateBounds();
-            owned.Add(mesh);
-            var graphic = new GameObject(name, typeof(MeshFilter), typeof(MeshRenderer));
-            graphic.transform.SetParent(transform, false);
-            graphic.GetComponent<MeshFilter>().sharedMesh = mesh;
-            graphic.GetComponent<MeshRenderer>().sharedMaterial = material;
-            return graphic.transform;
+            foreach (KeyValuePair<UnitId, TemporaryBattleCombatantVisual> pair in visualsByUnitId)
+            {
+                pair.Value.SetSelected(hasSelection && pair.Key.Equals(selectedUnitId));
+            }
+        }
+
+        static TemporaryCombatantPose ResolvePose(UnitState unit)
+        {
+            switch (unit.Status)
+            {
+                case BattleUnitStatus.Active:
+                    return unit.OrderKind == BattleOrderKind.Move
+                        ? TemporaryCombatantPose.Moving
+                        : TemporaryCombatantPose.Idle;
+                case BattleUnitStatus.Hit:
+                    return TemporaryCombatantPose.Hit;
+                case BattleUnitStatus.Down:
+                case BattleUnitStatus.Dead:
+                    return TemporaryCombatantPose.Dead;
+                case BattleUnitStatus.Routing:
+                    return TemporaryCombatantPose.Moving;
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(unit.Status), unit.Status, "Unsupported battle unit status.");
+            }
         }
 
         static void Release(UnityEngine.Object value)
         {
-            if (Application.isPlaying) Destroy(value); else DestroyImmediate(value);
+            if (Application.isPlaying)
+            {
+                Destroy(value);
+            }
+            else
+            {
+                DestroyImmediate(value);
+            }
         }
-
-        void OnDestroy() { foreach (var resource in owned) Release(resource); }
     }
 }

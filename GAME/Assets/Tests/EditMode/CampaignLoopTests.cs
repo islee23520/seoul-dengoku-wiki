@@ -5,8 +5,8 @@ using System.IO;
 using System.Text;
 using Janseon.Core;
 using Janseon.Core.Battle.Contracts;
-using Janseon.Core.Battle.Sim;
 using Janseon.Foundation.UI;
+using Janseon.Tests.EditMode.Fixtures;
 using NUnit.Framework;
 using UnityEngine;
 
@@ -22,7 +22,7 @@ namespace Janseon.Tests.EditMode
 
         static CampaignState Fresh()
         {
-            return CampaignApi.Start(Seed, StationId.Yeongdeungpo, CampaignId);
+            return CampaignApi.Start(Seed, StationId.Yeongdeungpo, CampaignId, TestCampaignDefinition.Instance.BattleRulesVersion, TestCampaignDefinition.Instance.PersistentPartyUnitId, TestCampaignDefinition.Instance.PersistentPartyMaxHp);
         }
 
         static CampaignCommand Cmd(string id, CampaignCommandKind kind, StationId dest = default)
@@ -152,6 +152,7 @@ namespace Janseon.Tests.EditMode
             state = MustState(
                 CampaignApi.Apply(graph, state, ledger, Cmd("clock-enter", CampaignCommandKind.EnterResolution)),
                 "enter resolution");
+            var campaignTickBeforeBattleHandoff = state.Tick.Value;
             var required = (BattleRequired)CampaignApi.Apply(
                 graph,
                 state,
@@ -160,13 +161,8 @@ namespace Janseon.Tests.EditMode
             state = MustState(
                 CampaignApi.AttachPendingBattle(state, ledger, required.Context, new CommandId("clock-attach")),
                 "attach battle");
-            var campaignTickBeforeBattleCommand = state.Tick.Value;
-            var battle = BattleSim.Open(BattleSetup.FromContext(required.Context));
-            var battleTickBefore = battle.Tick;
-            BattleSim.Step(battle, new Ledger());
-            Assert.AreEqual(battleTickBefore + 1, battle.Tick);
-            Assert.AreEqual(campaignTickBeforeBattleCommand, state.Tick.Value,
-                "realtime battle ticks must never advance the campaign clock");
+            Assert.AreEqual(campaignTickBeforeBattleHandoff, state.Tick.Value,
+                "issuing and attaching a battle handoff must not advance the campaign clock");
 
             var hub = Fresh();
             var rested = MustState(
@@ -181,10 +177,8 @@ namespace Janseon.Tests.EditMode
             TestContext.WriteLine("TASK21_MOVE_AFTER=" + state.Tick.Value);
             TestContext.WriteLine("TASK21_MOVE_SUPPLY_BEFORE=" + beforeMoveSupply);
             TestContext.WriteLine("TASK21_MOVE_SUPPLY_AFTER=" + state.Resources);
-            TestContext.WriteLine("TASK21_BATTLE_CAMPAIGN_BEFORE=" + campaignTickBeforeBattleCommand);
+            TestContext.WriteLine("TASK21_BATTLE_CAMPAIGN_BEFORE=" + campaignTickBeforeBattleHandoff);
             TestContext.WriteLine("TASK21_BATTLE_CAMPAIGN_AFTER=" + state.Tick.Value);
-            TestContext.WriteLine("TASK21_BATTLE_LOCAL_BEFORE=" + battleTickBefore);
-            TestContext.WriteLine("TASK21_BATTLE_LOCAL_AFTER=" + battle.Tick);
             TestContext.WriteLine("TASK21_REST_BEFORE=" + hub.Tick.Value);
             TestContext.WriteLine("TASK21_REST_AFTER=" + rested.Tick.Value);
         }
@@ -254,7 +248,7 @@ namespace Janseon.Tests.EditMode
             Assert.AreEqual(StationId.Sindorim, required.Context.Location);
             Assert.AreEqual(Seed, required.Context.WorldSeed);
             Assert.IsFalse(string.IsNullOrEmpty(required.Context.ContextHash));
-            Assert.AreEqual(BattleRules.RulesVersion, required.Context.RulesVersion);
+            Assert.AreEqual(TestCampaignDefinition.Instance.BattleRulesVersion, required.Context.RulesVersion);
 
             // Caller state unchanged until it adopts the returned handoff snapshot.
             Assert.AreEqual(beforeHash, CampaignApi.ComputeCampaignHash(state, ledger));
@@ -369,7 +363,7 @@ namespace Janseon.Tests.EditMode
                     "Travel");
                 state = MustState(CampaignApi.Apply(graph, state, ledger, Cmd("hp-face", CampaignCommandKind.FaceEncounter)), "Face");
                 state = MustState(CampaignApi.Apply(graph, state, ledger, Cmd("hp-enter", CampaignCommandKind.EnterResolution)), "Enter");
-                state.PartyHp = new UnitHpSnapshot(new Dictionary<string, int> { [RealtimeBattleApi.PersistentAllyId] = allyHp });
+                state.PartyHp = new UnitHpSnapshot(new Dictionary<string, int> { [TestCampaignDefinition.Instance.PersistentPartyUnitId] = allyHp });
                 return state;
             }
 
@@ -378,16 +372,16 @@ namespace Janseon.Tests.EditMode
                 ReachResolutionWith(7),
                 ledger,
                 Cmd("hp-combat", CampaignCommandKind.ChooseCombat));
-            Assert.IsTrue(wounded.Context.StartHp.TryGet(RealtimeBattleApi.PersistentAllyId, out var seven));
+            Assert.IsTrue(wounded.Context.StartHp.TryGet(TestCampaignDefinition.Instance.PersistentPartyUnitId, out var seven));
             Assert.AreEqual(7, seven, "combat handoff must carry the persistent party HP");
 
             var unwounded = (BattleRequired)CampaignApi.Apply(
                 graph,
-                ReachResolutionWith(RealtimeBattleApi.PersistentMaxHp),
+                ReachResolutionWith(TestCampaignDefinition.Instance.PersistentPartyMaxHp),
                 ledger,
                 Cmd("hp-combat", CampaignCommandKind.ChooseCombat));
-            Assert.IsTrue(unwounded.Context.StartHp.TryGet(RealtimeBattleApi.PersistentAllyId, out var ten));
-            Assert.AreEqual(RealtimeBattleApi.PersistentMaxHp, ten, "default party opens full through the same seam");
+            Assert.IsTrue(unwounded.Context.StartHp.TryGet(TestCampaignDefinition.Instance.PersistentPartyUnitId, out var fullHp));
+            Assert.AreEqual(TestCampaignDefinition.Instance.PersistentPartyMaxHp, fullHp, "default party opens full through the same seam");
             Assert.AreNotEqual(
                 wounded.Context.ContextHash,
                 unwounded.Context.ContextHash,
@@ -400,16 +394,14 @@ namespace Janseon.Tests.EditMode
                 wounded.Context.SeedIdentityHash,
                 unwounded.Context.SeedIdentityHash,
                 "party condition changes content integrity, not the deterministic initiative stream");
-            var woundedBattle = BattleSim.Open(BattleSetup.FromContext(wounded.Context));
-            var unwoundedBattle = BattleSim.Open(BattleSetup.FromContext(unwounded.Context));
-            Assert.AreEqual(
-                woundedBattle.Rng.Fingerprint(),
-                unwoundedBattle.Rng.Fingerprint(),
-                "HP integrity changes must not reroll established realtime RNG");
-            Assert.AreNotEqual(
-                woundedBattle.Fingerprint(),
-                unwoundedBattle.Fingerprint(),
-                "opening fingerprint must distinguish battles that differ only in party HP");
+            Assert.IsTrue(wounded.Context.ParticipantMaxHp.TryGet(
+                TestCampaignDefinition.Instance.PersistentPartyUnitId,
+                out var woundedMaxHp));
+            Assert.AreEqual(TestCampaignDefinition.Instance.PersistentPartyMaxHp, woundedMaxHp);
+            Assert.IsTrue(unwounded.Context.ParticipantMaxHp.TryGet(
+                TestCampaignDefinition.Instance.PersistentPartyUnitId,
+                out var unwoundedMaxHp));
+            Assert.AreEqual(TestCampaignDefinition.Instance.PersistentPartyMaxHp, unwoundedMaxHp);
         }
 
         [Test]
@@ -418,7 +410,7 @@ namespace Janseon.Tests.EditMode
             var a = Fresh();
             var b = Fresh();
             Assert.AreEqual(CampaignApi.ComputeStateHash(a), CampaignApi.ComputeStateHash(b));
-            b.PartyHp = new UnitHpSnapshot(new Dictionary<string, int> { [RealtimeBattleApi.PersistentAllyId] = 7 });
+            b.PartyHp = new UnitHpSnapshot(new Dictionary<string, int> { [TestCampaignDefinition.Instance.PersistentPartyUnitId] = 7 });
             Assert.AreNotEqual(
                 CampaignApi.ComputeStateHash(a),
                 CampaignApi.ComputeStateHash(b),

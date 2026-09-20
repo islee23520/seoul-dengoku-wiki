@@ -1,2 +1,70 @@
-using System;using System.Globalization;using System.Linq;using System.Security.Cryptography;using System.Text;using Janseon.Core.Data;using Janseon.Data.Validation;
-namespace Janseon.Data.Fingerprints { public static class CanonicalContentFingerprint { static void F(StringBuilder b,string x){x=x??string.Empty;var z=Encoding.UTF8.GetBytes(x.Normalize(NormalizationForm.FormC));b.Append(z.Length.ToString(CultureInfo.InvariantCulture)).Append(':');b.Append(Encoding.UTF8.GetString(z));} public static string Compute(GameDataCatalogIndex x){var b=new StringBuilder();F(b,"content-schema");F(b,x.Version.ContentSchema.ToString(CultureInfo.InvariantCulture));F(b,"content-version");F(b,x.Version.ContentVersion);F(b,"fingerprint-version");F(b,x.Version.FingerprintVersion);foreach(var a in x.Cards.OrderBy(q=>q.StableId,StringComparer.Ordinal)){F(b,"card");F(b,a.StableId);F(b,a.CoreCardId);F(b,((int)a.Kind).ToString(CultureInfo.InvariantCulture));F(b,a.RechargeTicks.ToString(CultureInfo.InvariantCulture));F(b,a.Effect.ToString(CultureInfo.InvariantCulture));F(b,a.EffectKey);}foreach(var a in x.UnitRoles.OrderBy(q=>q.StableId,StringComparer.Ordinal)){F(b,"unit-role");F(b,a.StableId);F(b,a.CoreRole);F(b,a.MaxHp.ToString(CultureInfo.InvariantCulture));F(b,a.Power.ToString(CultureInfo.InvariantCulture));F(b,a.RangeMin.ToString(CultureInfo.InvariantCulture));F(b,a.RangeMax.ToString(CultureInfo.InvariantCulture));F(b,a.MoveTicksPerCell.ToString(CultureInfo.InvariantCulture));F(b,a.AttackCooldownTicks.ToString(CultureInfo.InvariantCulture));}foreach(var a in x.Formations.OrderBy(q=>q.StableId,StringComparer.Ordinal)){F(b,"formation");F(b,a.StableId);F(b,a.RowCount.ToString(CultureInfo.InvariantCulture));F(b,a.ColumnCount.ToString(CultureInfo.InvariantCulture));foreach(var q in a.Slots.OrderBy(q=>q.Row).ThenBy(q=>q.Column).ThenBy(q=>q.RoleStableId,StringComparer.Ordinal)){F(b,q.RoleStableId);F(b,q.Row.ToString(CultureInfo.InvariantCulture));F(b,q.Column.ToString(CultureInfo.InvariantCulture));F(b,((int)q.Facing).ToString(CultureInfo.InvariantCulture));}}foreach(var a in x.Stations.OrderBy(q=>q.StableId,StringComparer.Ordinal)){F(b,"station");F(b,a.StableId);F(b,a.CoreStationId.Value);foreach(var q in a.NeighborStableIds.OrderBy(q=>q,StringComparer.Ordinal))F(b,q);}using(var h=SHA256.Create()){var bytes=h.ComputeHash(Encoding.UTF8.GetBytes(b.ToString()));return string.Concat(bytes.Select(q=>q.ToString("x2",CultureInfo.InvariantCulture)));}}}}
+using System;
+using System.Globalization;
+using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
+using Janseon.Data.Validation;
+
+namespace Janseon.Data.Fingerprints
+{
+    /// <summary>
+    /// Computes a stable, order-independent SHA-256 fingerprint for a
+    /// <see cref="GameDataCatalogIndex"/>. The fingerprint covers the
+    /// campaign definition, stations, and content version fields.
+    /// </summary>
+    public static class CanonicalContentFingerprint
+    {
+        /// <summary>
+        /// Appends a length-prefixed UTF-8 field value to <paramref name="buffer"/>.
+        /// Null is treated as empty string. The value is NFC-normalised before
+        /// encoding so that equivalent Unicode sequences hash identically.
+        /// </summary>
+        private static void AppendField(StringBuilder buffer, string value)
+        {
+            value = value ?? string.Empty;
+            byte[] encoded = Encoding.UTF8.GetBytes(value.Normalize(NormalizationForm.FormC));
+            buffer.Append(encoded.Length.ToString(CultureInfo.InvariantCulture));
+            buffer.Append(':');
+            buffer.Append(Encoding.UTF8.GetString(encoded));
+        }
+
+        /// <summary>
+        /// Returns the canonical lowercase SHA-256 hex fingerprint for
+        /// <paramref name="catalog"/>.
+        /// </summary>
+        public static string Compute(GameDataCatalogIndex catalog)
+        {
+            var buffer = new StringBuilder();
+
+            AppendField(buffer, "content-schema");
+            AppendField(buffer, catalog.Version.ContentSchema.ToString(CultureInfo.InvariantCulture));
+            AppendField(buffer, "content-version");
+            AppendField(buffer, catalog.Version.ContentVersion);
+            AppendField(buffer, "fingerprint-version");
+            AppendField(buffer, catalog.Version.FingerprintVersion);
+
+            AppendField(buffer, "campaign-definition");
+            AppendField(buffer, catalog.CampaignDefinition.BattleRulesVersion);
+            AppendField(buffer, catalog.CampaignDefinition.PersistentPartyUnitId);
+            AppendField(buffer, catalog.CampaignDefinition.PersistentPartyMaxHp.ToString(CultureInfo.InvariantCulture));
+
+            foreach (var station in catalog.Stations.OrderBy(s => s.StableId, StringComparer.Ordinal))
+            {
+                AppendField(buffer, "station");
+                AppendField(buffer, station.StableId);
+                AppendField(buffer, station.CoreStationId.Value);
+
+                foreach (var neighborId in station.NeighborStableIds.OrderBy(id => id, StringComparer.Ordinal))
+                {
+                    AppendField(buffer, neighborId);
+                }
+            }
+
+            using (var sha256 = SHA256.Create())
+            {
+                byte[] hashBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(buffer.ToString()));
+                return string.Concat(hashBytes.Select(b => b.ToString("x2", CultureInfo.InvariantCulture)));
+            }
+        }
+    }
+}
