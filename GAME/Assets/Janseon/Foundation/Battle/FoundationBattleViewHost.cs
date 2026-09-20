@@ -38,8 +38,12 @@ namespace Janseon.Foundation.Battle
         {
             foreach (var root in scene.GetRootGameObjects())
                 foreach (var gameplay in root.GetComponentsInChildren<GameplayUiHost>(true))
+                {
                     if (gameplay.GetComponent<FoundationBattleViewHost>() == null)
                         gameplay.gameObject.AddComponent<FoundationBattleViewHost>();
+                    if (gameplay.GetComponent<BattleSessionDriverHost>() == null)
+                        gameplay.gameObject.AddComponent<BattleSessionDriverHost>();
+                }
         }
 
         async void Start()
