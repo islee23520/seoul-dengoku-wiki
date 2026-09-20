@@ -272,22 +272,43 @@ summary:focus-visible {
 .territory-map-section { max-inline-size: none; margin-block-end: 2rem; border-block-end: 2px solid var(--wiki-line); padding-block-end: 1.5rem; }
 .territory-toolbar { display: flex; flex-wrap: wrap; align-items: end; gap: 0.75rem; margin-block: 1rem; }
 .territory-toolbar button { border: 1px solid var(--wiki-line); background: var(--wiki-paper); color: var(--wiki-text); padding: 0.5rem 0.75rem; cursor: pointer; font-weight: 700; }
+.territory-camera-controls { display: grid; grid-template-columns: repeat(3, auto); gap: 0.25rem; }
+.territory-camera-controls button { min-inline-size: 4.75rem; padding: 0.38rem 0.5rem; font-size: 0.7rem; }
 .territory-controls-help { margin-inline-start: auto; color: var(--wiki-muted); font-size: 0.75rem; font-weight: 700; }
 .territory-filter { display: flex; align-items: center; gap: 0.5rem; }
 .territory-filter span { font-weight: 700; }
 .territory-filter select { border: 1px solid var(--wiki-line); background: var(--wiki-paper); padding: 0.5rem; }
-.territory-map-layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(17rem, 1fr); gap: 1rem; align-items: start; }
+.territory-map-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1rem; align-items: start; }
 .territory-map-canvas { min-inline-size: 0; overflow: hidden; border: 1px solid var(--wiki-line); background: #e9e5dc; }
 .territory-map-canvas-3d { position: relative; min-block-size: 42rem; background: #07151c; isolation: isolate; }
 .territory-map-canvas-3d canvas { position: absolute; inset: 0; display: block; inline-size: 100%; block-size: 100%; cursor: grab; }
 .territory-map-canvas-3d canvas:active { cursor: grabbing; }
-.territory-state-markers { position: absolute; inset: 0; pointer-events: none; }
-.territory-state-marker { position: absolute; z-index: 2; display: inline-flex; align-items: center; gap: 0.35rem; min-inline-size: 8.5rem; max-inline-size: 12rem; border: 1px solid rgb(255 255 255 / 0.55); background: rgb(7 21 28 / 0.86); color: white; padding: 0.28rem 0.4rem; translate: -50% -50%; pointer-events: auto; cursor: pointer; font: inherit; text-align: start; backdrop-filter: blur(2px); }
+.territory-marker-connectors { position: absolute; inset: 0; z-index: 2; inline-size: 100%; block-size: 100%; pointer-events: none; }
+.territory-marker-connectors line { stroke: rgb(255 214 107 / 0.8); stroke-width: 0.18; vector-effect: non-scaling-stroke; }
+.territory-state-markers { position: absolute; inset: 0; z-index: 5; pointer-events: none; }
+.territory-state-marker { position: absolute; z-index: 6; display: inline-flex; align-items: center; gap: 0.3rem; inline-size: 8.5rem; border: 1px solid rgb(255 255 255 / 0.65); background: rgb(7 21 28 / 0.88); color: white; padding: 0.2rem 0.3rem; translate: -50% -115%; pointer-events: auto; cursor: pointer; font: inherit; text-align: start; }
 .territory-state-marker:hover, .territory-state-marker[aria-pressed="true"] { border-color: #fff; background: rgb(143 45 39 / 0.94); }
+.territory-capital-marker { border-width: 2px; border-color: #ffd66b; box-shadow: 0 0 0 2px rgb(7 21 28 / 0.72), 0 0 1rem rgb(255 214 107 / 0.4); }
+.territory-capital-marker::after { content: ''; position: absolute; inset-inline-start: 50%; inset-block-start: 100%; inline-size: 0.16rem; block-size: 1rem; background: #ffd66b; translate: -50% 0; }
+.territory-capital-marker strong { color: #ffe7a3; }
 .territory-state-marker:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
 .territory-state-marker span { display: grid; min-inline-size: 0; line-height: 1.2; font-size: 0.68rem; overflow-wrap: anywhere; }
 .territory-state-marker strong { font-size: 0.62rem; letter-spacing: 0.08em; }
-.state-flag { flex: 0 0 auto; inline-size: 2rem; aspect-ratio: 3 / 2; border: 1px solid rgb(255 255 255 / 0.65); }
+.territory-station-markers { position: absolute; inset: 0; z-index: 3; pointer-events: none; }
+.territory-station-hit-targets { position: absolute; inset: 0; z-index: 4; pointer-events: none; }
+.territory-station-hit { position: absolute; inline-size: 0.62rem; block-size: 0.62rem; translate: -50% -50%; border: 2px solid #f8f1cf; border-radius: 50%; background: rgb(4 17 23 / 0.82); padding: 0; pointer-events: auto; cursor: help; }
+.territory-station-hit:hover, .territory-station-hit:focus-visible { inline-size: 0.9rem; block-size: 0.9rem; outline: 2px solid #fff; outline-offset: 2px; }
+.territory-station-marker { position: absolute; z-index: 2; display: inline-block; translate: -50% -50%; border: 1px solid rgb(158 233 255 / 0.6); background: rgb(4 17 23 / 0.8); color: #d9f8ff; padding: 0.12rem 0.24rem; font-size: 0.58rem; font-weight: 700; line-height: 1.15; white-space: nowrap; }
+.territory-station-marker::before { content: ''; position: absolute; inset-inline-start: 50%; inset-block-start: 100%; inline-size: 1px; block-size: 0.6rem; background: rgb(158 233 255 / 0.75); }
+.territory-station-tooltip { position: absolute; z-index: 7; display: grid; gap: 0.45rem; inline-size: min(19rem, calc(100% - 1.5rem)); translate: 0.75rem -50%; border: 2px solid #9ee9ff; background: rgb(4 17 23 / 0.96); color: #f8f1cf; padding: 0.65rem; pointer-events: none; box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 0.4); }
+.territory-station-tooltip strong { font-size: 0.95rem; }
+.territory-station-tooltip dl { display: grid; gap: 0.25rem; margin: 0; }
+.territory-station-tooltip dl div { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr); gap: 0.5rem; }
+.territory-station-tooltip dt { color: #9ee9ff; font-size: 0.68rem; font-weight: 800; }
+.territory-station-tooltip dd { margin: 0; font-size: 0.72rem; line-height: 1.45; }
+.territory-tooltip-lines { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.territory-tooltip-lines span { border: 1px solid currentColor; padding: 0.12rem 0.28rem; font-size: 0.66rem; font-weight: 800; }
+.state-flag { flex: 0 0 auto; inline-size: 2rem; aspect-ratio: 3 / 2; border: 1px solid rgb(255 255 255 / 0.65); object-fit: cover; }
 .territory-region { stroke: #f6f1e8; stroke-width: 1.1; cursor: pointer; vector-effect: non-scaling-stroke; }
 .territory-region:hover, .territory-region.selected { stroke: #111; stroke-width: 3; }
 .territory-region:focus-visible { outline: none; stroke: #fff; stroke-width: 6; filter: drop-shadow(0 0 3px #111); }
@@ -299,7 +320,14 @@ summary:focus-visible {
 .territory-legend button { display: inline-flex; align-items: center; gap: 0.35rem; border: 1px solid var(--wiki-line); background: var(--wiki-paper); color: var(--wiki-text); padding: 0.3rem 0.5rem; font-size: 0.72rem; cursor: pointer; }
 .territory-legend button[aria-pressed="true"] { border-color: var(--wiki-accent); background: var(--wiki-toc); }
 .territory-legend .state-flag { inline-size: 2.4rem; border-color: var(--wiki-line); }
+.territory-line-legend { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-block: 0.75rem 1rem; }
+.territory-line-legend button { display: inline-flex; align-items: center; gap: 0.3rem; border: 1px solid var(--wiki-line); background: var(--wiki-paper); color: var(--wiki-text); padding: 0.28rem 0.45rem; cursor: pointer; font-size: 0.68rem; font-weight: 700; }
+.territory-line-legend button[aria-pressed="true"] { outline: 2px solid var(--wiki-accent); outline-offset: 1px; }
+.territory-line-legend button span { inline-size: 1.4rem; block-size: 0.28rem; }
 .territory-contested-key { align-self: center; padding-inline: 0.4rem; font-size: 0.75rem; font-weight: 700; }
+.territory-flag-provenance { margin-block-start: 1rem; border: 1px solid var(--wiki-line); background: var(--wiki-paper); padding: 0.7rem; }
+.territory-flag-provenance summary { cursor: pointer; font-weight: 800; }
+.territory-flag-provenance img { display: block; max-inline-size: min(100%, 44rem); margin-block-start: 0.75rem; border: 1px solid var(--wiki-line); }
 .timeline-overview { max-inline-size: none; margin-block-end: 2rem; border-block-end: 2px solid var(--wiki-line); padding-block-end: 1.5rem; }
 .timeline-periods { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-block: 1rem; }
 .timeline-periods button { border: 1px solid var(--wiki-line); background: var(--wiki-paper); color: var(--wiki-text); padding: 0.45rem 0.65rem; cursor: pointer; font-weight: 700; }

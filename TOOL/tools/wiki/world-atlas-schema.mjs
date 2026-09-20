@@ -5,20 +5,20 @@ export const SOURCE_KINDS = Object.freeze(['verified', 'inference', 'original-fi
 export const STATES = Object.freeze([
   ['S01', '급수계약정'],
   ['S02', '규격동맹'],
-  ['S03', '현대자동차주식회사'],
-  ['S04', '대한예수교장로회'],
+  ['S03', '양재기공주식회사'],
+  ['S04', '설교명부정'],
   ['S05', '호위보호정'],
   ['S06', '대한민국정부'],
   ['S07', '선로후계정'],
-  ['S08', '원불교'],
-  ['S09', '전국경제인연합회'],
-  ['S10', '대한불교조계종'],
-  ['S11', '삼성그룹'],
+  ['S08', '교헌필사정'],
+  ['S09', '여의도출자연합회'],
+  ['S10', '승가구휼정'],
+  ['S11', '서초전산그룹'],
   ['S12', '중립호송시'],
   ['S13', '의약중립맹'],
   ['S14', '관문군정'],
-  ['S15', '천주교 서울대교구'],
-  ['S16', '전국민주노동조합총연맹'],
+  ['S15', '본당인준정'],
+  ['S16', '정동노동총연맹'],
 ].map(([id, name]) => Object.freeze({ id, name })));
 
 export const STATE_BY_ID = Object.freeze(Object.fromEntries(STATES.map((s) => [s.id, s])));
