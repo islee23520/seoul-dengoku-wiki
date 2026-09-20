@@ -34,11 +34,12 @@ namespace Janseon.Core.Battle.Sim
         public CardState[] Cards;
         public string[] StrongholdCardIds;
         public BattleContext Context;
+        public float ElapsedSeconds;
 
 
         public BattleSimState Clone()
         {
-            var c = new BattleSimState { Tick=Tick, Deployed=Deployed, Outcome=Outcome, Rng=Rng == null ? null : Rng.Clone(), Arena=Arena == null ? null : Arena.Clone(), Terrain=Terrain == null ? null : Terrain.Snapshot() };
+            var c = new BattleSimState { Tick=Tick, Deployed=Deployed, Outcome=Outcome, ElapsedSeconds=ElapsedSeconds, Rng=Rng == null ? null : Rng.Clone(), Arena=Arena == null ? null : Arena.Clone(), Terrain=Terrain == null ? null : Terrain.Snapshot() };
             c.Units = Units == null ? null : Array.ConvertAll(Units, x => x.Clone());
             c.Sides = Sides == null ? null : Array.ConvertAll(Sides, x => x.Clone());
             c.Telegraphs = Telegraphs == null ? null : Array.ConvertAll(Telegraphs, x => x.Clone());

@@ -39,8 +39,7 @@ namespace Janseon.Foundation.Composition
             builder.Register<GameplayPresenter>(Lifetime.Scoped).AsSelf();
             builder.RegisterComponentInHierarchy<GameplayUiHost>();
             builder.RegisterEntryPoint<PocCoreLoopController>(Lifetime.Scoped).AsSelf();
-            builder.RegisterInstance<Func<double>>(() => Time.realtimeSinceStartupAsDouble);
-            builder.RegisterEntryPoint<BattleSessionDriver>(Lifetime.Scoped).AsSelf();
+            builder.Register<BattleSessionDriver>(Lifetime.Scoped).AsSelf();
         }
     }
 }

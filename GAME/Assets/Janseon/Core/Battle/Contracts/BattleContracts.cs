@@ -10,6 +10,7 @@ namespace Janseon.Core.Battle.Contracts
     public sealed class RosterUnit
     {
         public UnitId Id; public int Side; public string Role; public int Hp; public int MaxHp; public int Power;
+        public float Morale = 1f;
         public int RangeMin; public int RangeMax; public int MoveTicksPerCell; public int AttackCooldownTicks;
     }
     public sealed class FormationSlot { public UnitId Unit; public int Row; public int Column; public CardinalDirection Facing; }
@@ -20,6 +21,7 @@ namespace Janseon.Core.Battle.Contracts
         public BattleContext Context; public RosterUnit[] PlayerUnits; public RosterUnit[] EnemyUnits;
         public FormationSlot[] PlayerFormation; public FormationSlot[] EnemyFormation; public UnitId EnemyCommanderId;
         public TelegraphPlan[] Telegraphs; public Heightmap Terrain;
+        public UnitId PlayerHeroId;
         public static BattleSetup FromContext(BattleContext ctx)
         {
             return FromContext(ctx, null);

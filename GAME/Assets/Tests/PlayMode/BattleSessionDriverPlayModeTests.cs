@@ -24,6 +24,14 @@ namespace Janseon.Foundation.Tests
     public sealed class BattleSessionDriverPlayModeTests
     {
         [Test]
+        public void UsesUnityFixedUpdateDelta()
+        {
+            var driver = new BattleSessionDriver();
+            Assert.That(driver, Is.Not.InstanceOf<VContainer.Unity.ITickable>());
+            Assert.That(typeof(BattleSessionDriverHost).GetMethod("FixedUpdate", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic), Is.Not.Null);
+        }
+
+        [Test]
         public async Task ProductionCoreLoop_DriverOwnsLiveBattleLifecycle_EndToEnd()
         {
             await UnloadContentScenesAsync();

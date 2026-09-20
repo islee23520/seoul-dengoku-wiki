@@ -21,6 +21,8 @@ namespace Janseon.Core.Battle.Sim
             var seed = unchecked((int)uint.Parse(CoreApi.StableHashHex(seedHash).Substring(0, 8), NumberStyles.HexNumber, CultureInfo.InvariantCulture));
             var terrain = setup.Terrain != null ? setup.Terrain.Snapshot() : null;
             var arena = terrain != null ? new ArenaState { Width = terrain.Width, Height = terrain.Height } : new ArenaState();
+            ValidateRoster(setup.PlayerUnits, 0);
+            ValidateRoster(setup.EnemyUnits, 1);
             var s = new BattleSimState { Tick = 0, Outcome = ContractOutcome.Ongoing, Rng = new PurposeRng(seed), Arena = arena, Terrain = terrain, Context = setup.Context };
             s.Sides = new[] { new SideState { Morale = BattleRules.MoraleBase, CommanderHpPercent = 100 }, new SideState { Morale = BattleRules.MoraleBase, CommanderHpPercent = 100 } };
             s.PlayerCommanderId = setup.PlayerFormation != null && setup.PlayerFormation.Length > 0 ? setup.PlayerFormation[0].Unit : (setup.PlayerUnits != null && setup.PlayerUnits.Length > 0 ? setup.PlayerUnits[0].Id : new UnitId());
@@ -98,7 +100,14 @@ namespace Janseon.Core.Battle.Sim
         }
         public static void Step(BattleSimState state, Ledger ledger)
         {
+            Step(state, ledger, 1f / BattleRules.TicksPerSecond);
+        }
+
+        public static void Step(BattleSimState state, Ledger ledger, float fixedDeltaTime)
+        {
             if (state == null || ledger == null || state.Outcome != ContractOutcome.Ongoing) return;
+            if (fixedDeltaTime <= 0f) throw new ArgumentOutOfRangeException(nameof(fixedDeltaTime));
+            state.ElapsedSeconds += fixedDeltaTime;
             state.Pending.Sort((a,b) => a.At.Value != b.At.Value ? a.At.Value.CompareTo(b.At.Value) : a.Seq.CompareTo(b.Seq));
             while (state.Pending.Count > 0 && state.Pending[0].At.Value == state.Tick)
             {
@@ -144,6 +153,16 @@ namespace Janseon.Core.Battle.Sim
             ReinforcementRules.Resolve(state); if (state.Outcome != ContractOutcome.Ongoing) { ClearAllOrders(state); TickCards(state); ledger.Events.Add(new TypedEvent { Id=new EventId("btick-"+state.Tick.ToString(CultureInfo.InvariantCulture)), At=new Tick(state.Tick), SummaryHash=state.Fingerprint() }); state.Tick++; return; } IntentPlanner.Resolve(state); CombatRules.Resolve(state); MoraleRules.Resolve(state); state.Sides[1].RetreatCovered = OutcomeRules.RetreatCovered(state); OutcomeRules.Resolve(state); ClearInvalidOrders(state);
             TickCards(state);
             ledger.Events.Add(new TypedEvent { Id=new EventId("btick-"+state.Tick.ToString(CultureInfo.InvariantCulture)), At=new Tick(state.Tick), SummaryHash=state.Fingerprint() }); state.Tick++;
+        }
+
+        static void ValidateRoster(RosterUnit[] roster, int side)
+        {
+            if (roster == null) return;
+            if (roster.Length > 20) throw new ArgumentException("A squad may contain at most 20 soldiers.");
+            var ids = new HashSet<string>(StringComparer.Ordinal);
+            for (var i = 0; i < roster.Length; i++)
+                if (roster[i] == null || roster[i].Side != side || string.IsNullOrEmpty(roster[i].Id.Value) || !ids.Add(roster[i].Id.Value))
+                    throw new ArgumentException("Roster contains an invalid, duplicate, or mismatched soldier.");
         }
         static void TickCards(BattleSimState state)
         {
