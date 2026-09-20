@@ -15,7 +15,8 @@ const compatibilityRoutes = [
   '/wiki/rules/',
   '/wiki/design/',
 ]
-const regressionRoutes = ['/', '/wiki/', '/wiki/states', '/play/', '/system-design/regions/']
+const regressionRoutes = ['/', '/wiki/', '/wiki/states', '/play/']
+const removedRoutes = ['/system-design/regions/']
 const failures = []
 
 const checkReactRoute = async (route, expectedTitle) => {
@@ -34,12 +35,18 @@ for (const route of regressionRoutes) {
   if (response.status !== 200) failures.push(`regression-http:${response.status}:${route}`)
 }
 
+for (const route of removedRoutes) {
+  const response = await fetch(`${baseUrl}${route}`, { redirect: 'manual' })
+  if (response.status !== 404) failures.push(`removed-http:${response.status}:${route}`)
+}
+
 const result = {
   status: failures.length === 0 ? 'PASS' : 'FAIL',
   baseUrl,
   documents: documents.length,
   compatibilityRoutes: compatibilityRoutes.length,
   regressionRoutes: regressionRoutes.length,
+  removedRoutes: removedRoutes.length,
   failures,
 }
 

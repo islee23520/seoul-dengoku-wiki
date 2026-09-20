@@ -24,7 +24,7 @@ const rewriteRelativeHref = (href, domain, routeBySlug) => {
   const documentRoute = routeBySlug.get(`${domain}:${slug}`) ?? routeBySlug.get(`any:${slug}`)
   if (documentRoute) return `${documentRoute}${hash ? `#${hash}` : ''}`
 
-  if (path.includes('regions/')) return '/system-design/regions/'
+  if (path.includes('regions/')) return '/world/World-and-Subway-Layers'
   if (path.includes('GAME-REFERENCE/ui-layout-moodboard')) return '/ui-layout-moodboard/'
   if (path.includes('GAME-REFERENCE/ui-ux-refs')) return '/ui-ux-refs/'
   if (path.includes('.omo/decisions/issue-101')) return '/ui-ux-refs/'
@@ -39,7 +39,7 @@ const normalizeMarkdown = (markdown, domain, routeBySlug) => markdown
   .replace(/^#\s+.+\n+/, '')
   .replace(/<InfoBox[\s\S]*?<\/InfoBox>/g, '')
   .replace(/<NavBox[\s\S]*?<\/NavBox>/g, '')
-  .replace(/\]\(([^)]+)\)/g, (full, href) => `](${rewriteRelativeHref(href, domain, routeBySlug)})`)
+  .replace(/\]\(([^)]+)\)/g, (_full, href) => `](${rewriteRelativeHref(href, domain, routeBySlug)})`)
 
 await rm(contentRoot, { recursive: true, force: true })
 await mkdir(contentRoot, { recursive: true })
@@ -123,7 +123,7 @@ const peopleSource = JSON.parse(await readFile(resolve(repoRoot, 'LORE/name-pool
 const genderSource = JSON.parse(await readFile(resolve(repoRoot, 'LORE/name-pools/gender-cast.json'), 'utf8')).people
 const genderByName = new Map(genderSource.map((person) => [person.name, person]))
 const stateNameById = new Map(peopleSource.filter((person) => /^S(?:0[1-9]|1[0-6])$/u.test(person.state)).map((person) => [person.state, person.state_name]))
-const regionAtlasSource = await readFile(resolve(repoRoot, 'GDD/system-design/regions/atlas-data.js'), 'utf8')
+const regionAtlasSource = await readFile(resolve(repoRoot, 'TOOL/tools/regions/data/atlas-data.js'), 'utf8')
 const regionAtlas = JSON.parse(regionAtlasSource.replace(/^window\.SEOUL_REGION_ATLAS=/, '').replace(/;\s*$/, ''))
 const seoulGraph = JSON.parse(await readFile(resolve(repoRoot, 'GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json'), 'utf8'))
 const officialLineData = JSON.parse(await readFile(resolve(repoRoot, 'WEB/wiki/scripts/official-seoul-lines.json'), 'utf8'))
