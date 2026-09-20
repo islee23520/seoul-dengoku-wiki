@@ -126,7 +126,7 @@ namespace Janseon.Core.Battle.Sim
         public BattleOrderKind OrderKind;
         public GridCoord OrderDestination;
         public UnitId OrderTargetUnitId;
-        public HeroState Clone() => new HeroState { Id = Id, Hp = Hp, Cell = Cell };
+        public HeroState Clone() => new HeroState { Id = Id, Hp = Hp, Cell = Cell, OrderKind = OrderKind, OrderDestination = OrderDestination, OrderTargetUnitId = OrderTargetUnitId };
     }
     public sealed class SquadState
     {

@@ -190,9 +190,17 @@ namespace Janseon.Core.Battle.Sim
                 if (rejection != null) return new SquadOrderResult { Rejection = (ContractRejection)rejection };
             }
             state.Pending = snapshot.Pending;
+            for (var i = 0; i < order.ActorIds.Length; i++)
+            {
+                var targetHero = FindHero(state, order.ActorIds[i]);
+                if (targetHero != null) { targetHero.OrderKind = order.Kind; targetHero.OrderDestination = order.Destination; targetHero.OrderTargetUnitId = order.TargetUnitId; }
+            }
             while (ledger.Events.Count > ledgerCount) ledger.Events.RemoveAt(ledger.Events.Count - 1);
             state.Pending.Sort((a,b) => a.At.Value != b.At.Value ? a.At.Value.CompareTo(b.At.Value) : a.Seq.CompareTo(b.Seq));
             state.AcceptedOrders[order.CommandId.Value] = order.Clone();
+            for (var i = 0; i < state.Heroes.Length; i++)
+                for (var j = 0; j < order.ActorIds.Length; j++)
+                    if (state.Heroes[i].Id.Value == order.ActorIds[j]) { state.Heroes[i].OrderKind = order.Kind; state.Heroes[i].OrderDestination = order.Destination; state.Heroes[i].OrderTargetUnitId = order.TargetUnitId; }
             return new SquadOrderResult { Accepted = true, Order = order.Clone() };
         }
         public static SquadOrderResult StopOrder(BattleSimState state, Ledger ledger, CommandId commandId, string[] actorIds)

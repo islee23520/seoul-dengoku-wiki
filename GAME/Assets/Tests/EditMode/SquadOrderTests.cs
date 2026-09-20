@@ -41,6 +41,7 @@ namespace Janseon.Foundation.Tests
             Assert.IsTrue(BattleSim.ConfirmOrder(state, ledger, replacement).Accepted);
             Assert.IsTrue(BattleSim.CancelOrder(state, replacement.CommandId));
             Assert.IsTrue(BattleSim.StopOrder(state, ledger, replacement.CommandId, new[] { "ally-0" }).Accepted);
+            state = State(out ledger);
             var hero = state.Heroes[0];
             var heroOrder = new SquadOrder { CommandId = new CommandId("hero-order"), ActorIds = new[] { hero.Id.Value }, Kind = BattleOrderKind.Move, Destination = new GridCoord(2, 2) };
             Assert.IsTrue(BattleSim.ConfirmOrder(state, ledger, heroOrder).Accepted);
