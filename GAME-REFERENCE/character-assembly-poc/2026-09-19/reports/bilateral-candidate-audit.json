@@ -1,0 +1,184 @@
+[
+  {
+    "candidate": "user-sculpt",
+    "file": "/Users/danny/workspace/seoul-kenshi/GAME-REFERENCE/character-assembly-poc/2026-09-19/work/user-left-sculpt-preserved.blend",
+    "sha256": "e62086ae1be8bce9138cd9020b030537680c7bab36ed9ee3635d99575eeacfbf",
+    "object": "Male_Protected_Body_Neck_Trial",
+    "center_x": -1.050000075250864,
+    "world_origin": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "symmetry_allowed_by_owner_for_this_undecorated_base": true,
+    "intentional_asymmetry_review": "No asymmetric adornments; owner explicitly permits base symmetry. Preserve originals.",
+    "nearest_reflected_vertex_error": {
+      "median": 2.3909169044600276e-07,
+      "p95": 0.0004602671542670578,
+      "max": 0.007086116820573807,
+      "not_a_connectivity_equivalence_test": true
+    },
+    "sides": {
+      "negative_x": {
+        "vertices": 33002,
+        "faces": 32991,
+        "hard_failures": {
+          "unexpected_boundary_edges": 263,
+          "junction_edges": 99,
+          "winding_errors": 8,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "degenerate_faces": 1,
+          "duplicate_faces": 0
+        },
+        "structural_pass": false,
+        "head_failures": {
+          "unexpected_boundaries": 34,
+          "junctions": 21,
+          "winding": 0
+        },
+        "neck_edges": 2962,
+        "neck_angle_degrees": {
+          "median": 5.538014282355188,
+          "p90": 15.669809577804774,
+          "max": 123.81105765087457,
+          "over90_count": 3
+        },
+        "neck_vertex_valence": {
+          "max": 8,
+          "over6_count": 2
+        },
+        "repair_faces": 0,
+        "repair_nonquads": 0
+      },
+      "positive_x": {
+        "vertices": 33050,
+        "faces": 33023,
+        "hard_failures": {
+          "unexpected_boundary_edges": 295,
+          "junction_edges": 107,
+          "winding_errors": 15,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "degenerate_faces": 3,
+          "duplicate_faces": 0
+        },
+        "structural_pass": false,
+        "head_failures": {
+          "unexpected_boundaries": 36,
+          "junctions": 18,
+          "winding": 1
+        },
+        "neck_edges": 2982,
+        "neck_angle_degrees": {
+          "median": 5.774858135457961,
+          "p90": 19.74169805622997,
+          "max": 168.36468213519123,
+          "over90_count": 6
+        },
+        "neck_vertex_valence": {
+          "max": 7,
+          "over6_count": 3
+        },
+        "repair_faces": 0,
+        "repair_nonquads": 0
+      }
+    },
+    "route": "REPAIR_BEFORE_ANY_HALF_REPLACEMENT",
+    "provisional_neck_preference": null,
+    "visual_flow_approval": false,
+    "final_goal_pass": false,
+    "geometry_changed": false
+  },
+  {
+    "candidate": "structure-repaired",
+    "file": "/Users/danny/workspace/seoul-kenshi/GAME-REFERENCE/character-assembly-poc/2026-09-19/work/all-quad-patches-review.blend",
+    "sha256": "6ff15d1c49e9dc2136c1db7c1116a4ac4fa96d796af272e28dd496386f140171",
+    "object": "Male_Quad_Repair_Review",
+    "center_x": 0.0,
+    "world_origin": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "symmetry_allowed_by_owner_for_this_undecorated_base": true,
+    "intentional_asymmetry_review": "No asymmetric adornments; owner explicitly permits base symmetry. Preserve originals.",
+    "nearest_reflected_vertex_error": {
+      "median": 2.3888378564151935e-07,
+      "p95": 0.00046050548553466797,
+      "max": 0.01467552874237299,
+      "not_a_connectivity_equivalence_test": true
+    },
+    "sides": {
+      "negative_x": {
+        "vertices": 33138,
+        "faces": 33144,
+        "hard_failures": {
+          "unexpected_boundary_edges": 0,
+          "junction_edges": 0,
+          "winding_errors": 0,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "degenerate_faces": 0,
+          "duplicate_faces": 1
+        },
+        "structural_pass": false,
+        "head_failures": {
+          "unexpected_boundaries": 0,
+          "junctions": 0,
+          "winding": 0
+        },
+        "neck_edges": 2969,
+        "neck_angle_degrees": {
+          "median": 5.4945593381950975,
+          "p90": 15.687522819643565,
+          "max": 152.17803538723146,
+          "over90_count": 9
+        },
+        "neck_vertex_valence": {
+          "max": 6,
+          "over6_count": 0
+        },
+        "repair_faces": 914,
+        "repair_nonquads": 0
+      },
+      "positive_x": {
+        "vertices": 33084,
+        "faces": 33080,
+        "hard_failures": {
+          "unexpected_boundary_edges": 0,
+          "junction_edges": 0,
+          "winding_errors": 0,
+          "wire_edges": 0,
+          "loose_vertices": 0,
+          "degenerate_faces": 0,
+          "duplicate_faces": 1
+        },
+        "structural_pass": false,
+        "head_failures": {
+          "unexpected_boundaries": 0,
+          "junctions": 0,
+          "winding": 0
+        },
+        "neck_edges": 2998,
+        "neck_angle_degrees": {
+          "median": 5.823802203833216,
+          "p90": 17.739272543482386,
+          "max": 166.53902721156018,
+          "over90_count": 12
+        },
+        "neck_vertex_valence": {
+          "max": 7,
+          "over6_count": 1
+        },
+        "repair_faces": 908,
+        "repair_nonquads": 0
+      }
+    },
+    "route": "REPAIR_BEFORE_ANY_HALF_REPLACEMENT",
+    "provisional_neck_preference": null,
+    "visual_flow_approval": false,
+    "final_goal_pass": false,
+    "geometry_changed": false
+  }
+]

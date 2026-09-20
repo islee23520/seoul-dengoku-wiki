@@ -1,0 +1,44 @@
+{
+  "front_axis": "-Y",
+  "units": "meters",
+  "diameter_m": 0.024,
+  "objects": [
+    {
+      "name": "Eye_Core_Sclera_Iris_Pupil",
+      "vertices": 2242,
+      "faces": 2304,
+      "quads": 2176,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "winding_errors": 0,
+      "signed_volume": 7.099693308979157e-06,
+      "materials": [
+        "Eye_Sclera_Ivory",
+        "Eye_Iris_Brown_Adjustable",
+        "Eye_Pupil_Black"
+      ],
+      "uv": [
+        "EyeUV"
+      ]
+    },
+    {
+      "name": "Eye_Cornea_Lens",
+      "vertices": 1666,
+      "faces": 1728,
+      "quads": 1600,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "winding_errors": 0,
+      "signed_volume": 1.4203744524559718e-08,
+      "materials": [
+        "Eye_Cornea_Clear_IOR_1_376"
+      ],
+      "uv": [
+        "EyeUV"
+      ]
+    }
+  ],
+  "user_scene_changed": false,
+  "fitted_to_characters": false,
+  "procedural_iris_requires_bake_for_engine_export": true
+}

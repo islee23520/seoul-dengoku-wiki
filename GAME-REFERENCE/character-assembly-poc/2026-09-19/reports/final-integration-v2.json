@@ -1,0 +1,22 @@
+{
+  "objects": [
+    "Female_Base_Assembly",
+    "Male_Base_Symmetric",
+    "Male_UpperGum_SubsetReview",
+    "Male_Upper_RecoveredCrown3",
+    "Male_Upper_RecoveredCrown2",
+    "Male_Upper_RecoveredCrown1",
+    "Male_Upper_GumArch",
+    "Male_LowerGum_SubsetReview",
+    "Male_Lower_RecoveredCrown1",
+    "Male_Lower_GumArch",
+    "Male_Tongue_Repaired",
+    "Eye_female_L",
+    "Eye_female_R",
+    "Eye_male_L",
+    "Eye_male_R"
+  ],
+  "female_material": "ToonWithTexture (baked + Toon BSDF)",
+  "male_material": "ToonFlat (flat color + Toon BSDF)",
+  "renders": "evidence/final-integration/both-*.png"
+}

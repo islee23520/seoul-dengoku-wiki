@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "shared_across_genders": true,
+  "heads": [
+    {
+      "gender": "Male",
+      "head_max_vertex_delta_m": 0.0,
+      "head_topology_unchanged": true,
+      "eye_socket_geometry_unchanged": true,
+      "left_right_meshes_linked": true,
+      "eye_material_slots": [
+        "Eye_Sclera_Ivory",
+        "Eye_Iris_Brown_Adjustable",
+        "Eye_Pupil_Black"
+      ],
+      "cornea_material": "Eye_Cornea_Clear_IOR_1_376",
+      "visual_evidence": [
+        "evidence/shared-eyes-fitted/Male-front.png",
+        "evidence/shared-eyes-fitted/Male-quarter.png",
+        "evidence/shared-eyes-fitted/Male-side.png"
+      ]
+    },
+    {
+      "gender": "Female",
+      "head_max_vertex_delta_m": 0.0,
+      "head_topology_unchanged": true,
+      "eye_socket_geometry_unchanged": true,
+      "left_right_meshes_linked": true,
+      "eye_material_slots": [
+        "Eye_Sclera_Ivory",
+        "Eye_Iris_Brown_Adjustable",
+        "Eye_Pupil_Black"
+      ],
+      "cornea_material": "Eye_Cornea_Clear_IOR_1_376",
+      "visual_evidence": [
+        "evidence/shared-eyes-fitted/Female-front.png",
+        "evidence/shared-eyes-fitted/Female-quarter.png",
+        "evidence/shared-eyes-fitted/Female-side.png"
+      ]
+    }
+  ],
+  "scope": "Static fit on original heads; final assembled-body transfer remains pending",
+  "source_head_defects_not_repaired_by_this_task": true
+}

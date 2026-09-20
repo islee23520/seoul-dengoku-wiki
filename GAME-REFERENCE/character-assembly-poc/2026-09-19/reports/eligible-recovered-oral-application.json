@@ -1,0 +1,54 @@
+[
+  {
+    "object": "Male_Upper_GumArch",
+    "applied": false,
+    "reason": "No eligible boundary-fixed candidate",
+    "source_coordinate_hash": "7290efca127a49e90d61ed7d2a80cd0ed5894075bf1b4d8b22ce11e40da70a88"
+  },
+  {
+    "object": "Male_Upper_RecoveredCrown1",
+    "applied": false,
+    "reason": "No eligible boundary-fixed candidate",
+    "source_coordinate_hash": "de5919312b83b8c1e24da996ced37f29d390fd2cfba639318742094181fca4ec"
+  },
+  {
+    "object": "Male_Upper_RecoveredCrown2",
+    "applied": true,
+    "vertices": 51,
+    "faces": 49,
+    "source_coordinate_hash": "204ec6c8e024ae9edf31c74cc5f191cc3ab343e5f0b543d7fe556c5c0b208605",
+    "max_displacement_source_units": 3.846027129886008e-06,
+    "boundary_displacement": 0,
+    "outside_region_displacement": 0,
+    "uv_preserved": true,
+    "topology_preserved": true,
+    "native_triangles": "Male_Upper_RecoveredCrown2-eligible-native-triangles.npz",
+    "visual_review_pending": true
+  },
+  {
+    "object": "Male_Upper_RecoveredCrown3",
+    "applied": true,
+    "vertices": 50,
+    "faces": 49,
+    "source_coordinate_hash": "400cabfc6e153fc6e54c2f909c41cc36b036a4c4e889d55c606067d020a8ec7e",
+    "max_displacement_source_units": 3.846041899862948e-06,
+    "boundary_displacement": 0,
+    "outside_region_displacement": 0,
+    "uv_preserved": true,
+    "topology_preserved": true,
+    "native_triangles": "Male_Upper_RecoveredCrown3-eligible-native-triangles.npz",
+    "visual_review_pending": true
+  },
+  {
+    "object": "Male_Lower_GumArch",
+    "applied": false,
+    "reason": "No eligible boundary-fixed candidate",
+    "source_coordinate_hash": "c46835c51717cf9c95053cf4d94aa1c15a46bbf86c384a3f74e0a52ef60199c5"
+  },
+  {
+    "object": "Male_Lower_RecoveredCrown1",
+    "applied": false,
+    "reason": "No eligible boundary-fixed candidate",
+    "source_coordinate_hash": "59cd97593f636d9281b395c234523b3dedc5f11512feef944c631e00d7fe2950"
+  }
+]

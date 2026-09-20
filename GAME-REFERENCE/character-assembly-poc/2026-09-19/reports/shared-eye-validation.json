@@ -1,0 +1,52 @@
+{
+  "objects": [
+    {
+      "name": "Eye_Core_Sclera_Iris_Pupil",
+      "vertices": 2242,
+      "faces": 2304,
+      "boundaries": 0,
+      "winding_errors": 0,
+      "signed_volume": 7.099693308979157e-06,
+      "uv": {
+        "EyeUV": {
+          "zero_area_triangles": 0,
+          "min_triangle_area": 0.000229779165238142
+        },
+        "EyeAtlas": {
+          "zero_area_triangles": 0,
+          "min_triangle_area": 0.00016323506165960566
+        }
+      },
+      "materials": [
+        "Eye_Sclera_Ivory",
+        "Eye_Iris_Brown_Adjustable",
+        "Eye_Pupil_Black"
+      ]
+    },
+    {
+      "name": "Eye_Cornea_Lens",
+      "vertices": 1666,
+      "faces": 1728,
+      "boundaries": 0,
+      "winding_errors": 0,
+      "signed_volume": 1.4203744524559718e-08,
+      "uv": {
+        "EyeUV": {
+          "zero_area_triangles": 0,
+          "min_triangle_area": 0.0003124997019767761
+        },
+        "EyeAtlas": {
+          "zero_area_triangles": 0,
+          "min_triangle_area": 0.00022199952292467628
+        }
+      },
+      "materials": [
+        "Eye_Cornea_Clear_IOR_1_376"
+      ]
+    }
+  ],
+  "axis": "-Y forward +Z up",
+  "diameter_m": 0.024,
+  "render_review_pending": true,
+  "fitted_to_heads": false
+}

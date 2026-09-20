@@ -1,0 +1,91 @@
+{
+  "before_intersections": 1,
+  "before_point_contacts": 23,
+  "method": "Orthogonal separation into a triangle-plane half-space; compare both directions and moved sides",
+  "candidates": [
+    {
+      "fixed_triangle": 131,
+      "moved_triangle": 133,
+      "side": -1,
+      "changed_vertex_ids": [
+        209,
+        616
+      ],
+      "max_move_source_units": 0.002818491292940754,
+      "squared_displacement": 1.0402476708248898e-05,
+      "area_ratio": 0.9997820528393271,
+      "root_max_move": 0.0,
+      "intersections": 4,
+      "point_contacts": 19,
+      "new_contacts": 0,
+      "eligible": false
+    },
+    {
+      "fixed_triangle": 131,
+      "moved_triangle": 133,
+      "side": 1,
+      "changed_vertex_ids": [
+        211
+      ],
+      "max_move_source_units": 0.0010848263104737404,
+      "squared_displacement": 1.1768481238960682e-06,
+      "area_ratio": 0.9999519473810583,
+      "root_max_move": 0.0,
+      "intersections": 0,
+      "point_contacts": 23,
+      "new_contacts": 0,
+      "eligible": true
+    },
+    {
+      "fixed_triangle": 133,
+      "moved_triangle": 131,
+      "side": -1,
+      "changed_vertex_ids": [
+        202,
+        208
+      ],
+      "max_move_source_units": 0.0020647313697910665,
+      "squared_displacement": 7.060412437809304e-06,
+      "area_ratio": 0.9994250371051283,
+      "root_max_move": 0.0,
+      "intersections": 0,
+      "point_contacts": 23,
+      "new_contacts": 0,
+      "eligible": false
+    },
+    {
+      "fixed_triangle": 133,
+      "moved_triangle": 131,
+      "side": 1,
+      "changed_vertex_ids": [
+        617
+      ],
+      "max_move_source_units": 0.0008989548438552452,
+      "squared_displacement": 8.081198112908083e-07,
+      "area_ratio": 0.999932900069017,
+      "root_max_move": 0.0,
+      "intersections": 0,
+      "point_contacts": 22,
+      "new_contacts": 0,
+      "eligible": true
+    }
+  ],
+  "selection": {
+    "fixed_triangle": 133,
+    "moved_triangle": 131,
+    "side": 1,
+    "changed_vertex_ids": [
+      617
+    ],
+    "max_move_source_units": 0.0008989548438552452,
+    "squared_displacement": 8.081198112908083e-07,
+    "area_ratio": 0.999932900069017,
+    "root_max_move": 0.0,
+    "intersections": 0,
+    "point_contacts": 22,
+    "new_contacts": 0,
+    "eligible": true
+  },
+  "original_source_unchanged": true,
+  "status": "NUMERIC_CANDIDATE_REQUIRES_NATIVE_SOCKET_AND_RENDER_QA"
+}
