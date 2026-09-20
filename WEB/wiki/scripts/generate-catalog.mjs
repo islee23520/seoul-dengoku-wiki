@@ -1,6 +1,7 @@
 import { mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises'
 import { basename, dirname, extname, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import proj4 from 'proj4'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = resolve(projectRoot, '../..')
@@ -107,9 +108,9 @@ const stateRows = [...stateTable.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| 
   .map((match) => match.slice(1).map((cell) => cell.trim()))
   .filter(([name]) => name !== '국명' && !name.startsWith('---'))
 const rulerByState = new Map([
-  ['대한민국정부', '윤서린'], ['전국경제인연합회', '최지우'], ['삼성그룹', '이홍원'], ['현대자동차주식회사', '정호준'],
-  ['대한예수교장로회', '오경재'], ['천주교 서울대교구', '남윤경'], ['대한불교조계종', '백온'], ['원불교', '오해린'],
-  ['전국민주노동조합총연맹', '정유라'], ['급수계약정', '한재목'], ['규격동맹', '강민서'], ['선로후계정', '박태겸'],
+  ['대한민국정부', '윤서린'], ['여의도출자연합회', '최지우'], ['서초전산그룹', '이홍원'], ['양재기공주식회사', '정호준'],
+  ['설교명부정', '오경재'], ['본당인준정', '남윤경'], ['승가구휼정', '백온'], ['교헌필사정', '오해린'],
+  ['정동노동총연맹', '정유라'], ['급수계약정', '한재목'], ['규격동맹', '강민서'], ['선로후계정', '박태겸'],
   ['호위보호정', '배우진'], ['관문군정', '고서준'], ['중립호송시', '장세화'], ['의약중립맹', '류은비'],
 ])
 const stateSlug = (index) => `s${String(index + 1).padStart(2, '0')}`
@@ -124,6 +125,19 @@ const genderByName = new Map(genderSource.map((person) => [person.name, person])
 const stateNameById = new Map(peopleSource.filter((person) => /^S(?:0[1-9]|1[0-6])$/u.test(person.state)).map((person) => [person.state, person.state_name]))
 const regionAtlasSource = await readFile(resolve(repoRoot, 'GDD/system-design/regions/atlas-data.js'), 'utf8')
 const regionAtlas = JSON.parse(regionAtlasSource.replace(/^window\.SEOUL_REGION_ATLAS=/, '').replace(/;\s*$/, ''))
+const seoulGraph = JSON.parse(await readFile(resolve(repoRoot, 'GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json'), 'utf8'))
+const officialLineData = JSON.parse(await readFile(resolve(repoRoot, 'WEB/wiki/scripts/official-seoul-lines.json'), 'utf8'))
+const stationControlLedger = JSON.parse(await readFile(resolve(repoRoot, 'LORE/places/station-control-overrides.json'), 'utf8'))
+const stationControlOverrides = new Map(stationControlLedger.overrides.map((entry) => [entry.stationId, entry]))
+proj4.defs('EPSG:5179', '+proj=tmerc +lat_0=38 +lon_0=127.5 +k=0.9996 +x_0=1000000 +y_0=2000000 +ellps=GRS80 +units=m +no_defs')
+
+const regionContentById = new Map()
+for (const entry of await readdir(resolve(repoRoot, 'LORE/regions/content'), { withFileTypes: true })) {
+  if (!entry.isFile() || !/^\d{5}\.json$/u.test(entry.name)) continue
+  const district = JSON.parse(await readFile(resolve(repoRoot, 'LORE/regions/content', entry.name), 'utf8'))
+  for (const region of district.regions) regionContentById.set(region.region_id, region.content)
+}
+if (regionContentById.size !== 427) throw new Error(`E_REGION_CONTENT_COVERAGE:${regionContentById.size}`)
 const creativeNameLedger = JSON.parse(await readFile(resolve(repoRoot, 'RESEARCH/verification/creative-name-normalization.json'), 'utf8'))
 const normalizePublicNames = (text) => {
   let normalized = text
@@ -155,6 +169,73 @@ const geometryPath = (geometry) => geometryRings(geometry).map((ring) => {
   const points = simplifyRing(ring).map(mapPoint)
   return points.map(([x, y], index) => `${index === 0 ? 'M' : 'L'}${x},${y}`).join(' ') + ' Z'
 }).join(' ')
+const pointInPolygon = ([x, y], points) => {
+  let inside = false
+  for (let index = 0, previous = points.length - 1; index < points.length; previous = index, index += 1) {
+    const [currentX, currentY] = points[index]
+    const [previousX, previousY] = points[previous]
+    if ((currentY > y) !== (previousY > y) && x < ((previousX - currentX) * (y - currentY)) / (previousY - currentY) + currentX) inside = !inside
+  }
+  return inside
+}
+const capitalSource = await readFile(resolve(repoRoot, 'LORE/factions/Chaebol-Houses-and-Century-Factions.md'), 'utf8')
+const capitalTable = capitalSource.match(/\| 국가 \| 수도 \| 티어 1 \| 잠금 수장 \|[\s\S]*?(?=\n## |$)/u)?.[0] ?? ''
+const capitalNameByState = new Map([...capitalTable.matchAll(/^\| (S\d{2}) [^|]+ \| ([^|]+) \|/gm)]
+  .map((match) => [match[1], match[2].trim().replace(/역$/u, '')]))
+if (capitalNameByState.size !== 16) throw new Error(`E_CAPITAL_CANON_COVERAGE:${capitalNameByState.size}`)
+const stationById = new Map(seoulGraph.stations.map((station) => [station.id, station]))
+const stationIdByName = new Map(seoulGraph.stations.map((station) => [station.nameKo.replace(/역$/u, ''), station.id]))
+const stationDegree = new Map(seoulGraph.stations.map((station) => [station.id, 0]))
+for (const edge of seoulGraph.edges) {
+  if (!stationById.has(edge.a) || !stationById.has(edge.b)) throw new Error(`E_SUBWAY_EDGE_STATION:${edge.a}:${edge.b}`)
+  stationDegree.set(edge.a, (stationDegree.get(edge.a) ?? 0) + 1)
+  stationDegree.set(edge.b, (stationDegree.get(edge.b) ?? 0) + 1)
+}
+const capitalStationIds = new Set([...capitalNameByState.entries()].map(([stateId, name]) => {
+  const stationId = stationIdByName.get(name)
+  if (!stationId) throw new Error(`E_CAPITAL_STATION_NOT_FOUND:${stateId}:${name}`)
+  return stationId
+}))
+const mapStations = seoulGraph.stations.map((station) => {
+  const [east, north] = proj4('EPSG:4326', 'EPSG:5179', [station.lon, station.lat])
+  const [x, y] = mapPoint([east, north])
+  if (x < 0 || x > mapWidth || y < 0 || y > mapHeight) throw new Error(`E_STATION_MAP_BOUNDS:${station.id}:${x}:${y}`)
+  const region = regionAtlas.regions.find((candidate) => pointInPolygon([x, y], simplifyRing(geometryRings(candidate.map_geometry)[0]).map(mapPoint)))
+  const lineIds = officialLineData.stations[station.id] ?? []
+  const content = region ? regionContentById.get(region.id) : null
+  const baselinePolityIds = content?.polity_contexts ?? []
+  const delta = stationControlOverrides.get(station.id) ?? null
+  const polityIds = delta?.polityIds ?? baselinePolityIds
+  return {
+    id: station.id,
+    name: station.nameKo,
+    district: station.district,
+    x,
+    y,
+    degree: stationDegree.get(station.id) ?? 0,
+    lineIds,
+    control: {
+      source: delta ? 'control-delta' : region ? 'derived-from-surface' : 'outside-surface-atlas',
+      deltaId: delta?.id ?? null,
+      status: delta?.status ?? (!region ? 'unknown' : polityIds.length === 1 ? 'held' : 'contested'),
+      polityIds,
+      polityNames: polityIds.map((id) => stateNameById.get(id) ?? id),
+      surfaceRegionId: region?.id ?? null,
+      surfaceRegionName: region?.name ?? null,
+      hierarchy: {
+        state: polityIds.map((id) => stateNameById.get(id) ?? id).join(' · ') || '미확인',
+        regionalAuthority: delta?.regionalAuthority ?? (region ? `${region.district_name} 권역 책임자` : '서울 영토 원장 밖 · 미확인'),
+        stationManager: delta?.stationManager ?? `${station.nameKo.replace(/역$/u, '')}역장`,
+      },
+    },
+  }
+})
+const majorStationIds = mapStations.filter((station) => station.degree >= 7 || capitalStationIds.has(station.id)).map((station) => station.id).sort((left, right) => left.localeCompare(right, 'ko'))
+const stationLines = new Map(mapStations.map((station) => [station.id, station.lineIds]))
+const mapEdges = seoulGraph.edges.map((edge) => ({
+  ...edge,
+  lineIds: stationLines.get(edge.a).filter((lineId) => stationLines.get(edge.b).includes(lineId)),
+}))
 const polygonMetrics = (points) => {
   let twiceArea = 0
   let weightedX = 0
@@ -187,7 +268,10 @@ const territoryStates = [...stateNameById.entries()].sort(([left], [right]) => l
     .sort((left, right) => right.area - left.area || left.id.localeCompare(right.id))
   const label = candidates[0]
   if (!label) throw new Error(`E_TERRITORY_LABEL_NOT_FOUND:${id}:${name}`)
-  return { id, name, slug: state.slug, power: state.power, labelX: label.x, labelY: label.y }
+  const capitalStationId = stationIdByName.get(capitalNameByState.get(id))
+  const capital = mapStations.find((station) => station.id === capitalStationId)
+  if (!capital) throw new Error(`E_CAPITAL_STATION_COORDINATE:${id}`)
+  return { id, name, slug: state.slug, power: state.power, labelX: label.x, labelY: label.y, capitalStationId, capitalX: capital.x, capitalY: capital.y }
 })
 const openingTerritories = {
   schema: 'seoul-opening-territories.v1',
@@ -196,8 +280,13 @@ const openingTerritories = {
   height: mapHeight,
   attribution: regionAtlas.attribution,
   states: territoryStates,
+  lines: officialLineData.lines,
+  stations: mapStations,
+  edges: mapEdges,
+  majorStationIds,
   regions: regionAtlas.regions.map((region) => {
-    const polities = region.content.polity_contexts
+    const content = regionContentById.get(region.id)
+    const polities = content.polity_contexts
     return {
       id: region.id,
       name: region.name,
@@ -205,8 +294,8 @@ const openingTerritories = {
       path: geometryPath(region.map_geometry),
       polities,
       status: polities.length === 1 ? 'held' : 'contested',
-      openingState: normalizePublicNames(region.content.opening_state),
-      summary: normalizePublicNames(region.content.summary),
+      openingState: normalizePublicNames(content.opening_state),
+      summary: normalizePublicNames(content.summary),
       stationCount: region.station_ids.length,
     }
   }),
