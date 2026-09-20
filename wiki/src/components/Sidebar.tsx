@@ -8,7 +8,6 @@ const sections: { title: string; items: SidebarItem[] }[] = [
     { label: '정본 문서 전체', to: wikiLinks.documents, spa: true },
     { label: '개요', to: wikiLinks.overview, spa: true },
     { label: '기동권 이탈', to: wikiLinks.overview, spa: true },
-    { label: '온라인 유저 여정', to: wikiLinks.onlineJourney, spa: true },
   ]},
   { title: '세계관', items: [
     { label: '등장인물 전체', to: wikiLinks.characters, spa: true },
