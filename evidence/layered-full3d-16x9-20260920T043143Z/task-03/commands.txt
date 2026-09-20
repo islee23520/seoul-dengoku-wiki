@@ -9,12 +9,12 @@ HEAD 모놀리스를 계약 어댑터로 분리한 임시 트리(/tmp/red-state/
 $ node TOOL/tools/strategy-map/test-osm-pbf-reader.mjs      -> exit=1, tests 26 / pass 3 / fail 23
 $ node TOOL/tools/strategy-map/test-subway-topology.mjs    -> exit=1, tests 26 / pass 0 / fail 26
 실패 전부 행위 단정(경계 거절 코드 부재, 331<334, 처분/카테고리 부재, 모듈 미존재 아님).
-로그: red/red-reader-head-behavior.log, red/red-topology-head-behavior.log
+로그: red/red-reader-head-behavior.txt, red/red-topology-head-behavior.txt
 
 ## 2. GREEN — K3 구현으로 재실행
 $ node TOOL/tools/strategy-map/test-osm-pbf-reader.mjs      -> exit=0, tests 26 / pass 26
 $ node TOOL/tools/strategy-map/test-subway-topology.mjs    -> exit=0, tests 26 / pass 26
-로그: green/green-reader.log, green/green-topology.log
+로그: green/green-reader.txt, green/green-topology.txt
 
 ## 3. 실빌드 2회 + 결정론
 $ node TOOL/tools/strategy-map/build-subway-topology.mjs --out <ev>/build/run1   -> exit=0

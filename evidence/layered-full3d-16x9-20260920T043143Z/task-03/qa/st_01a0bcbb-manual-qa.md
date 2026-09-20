@@ -67,8 +67,8 @@
 | A1 | 소스 | 경계화된 PBF 리더 | TOOL/tools/strategy-map/osm-pbf-reader.mjs (K3) |
 | A2 | 소스 | crosswalk/조립 v2 | TOOL/tools/strategy-map/subway-topology.mjs (K3) |
 | A3 | 데이터 | 별칭 장부 v2(aliases/canonicalAliases/coordinateExactMatches/excludedAliases) | TOOL/tools/strategy-map/data/subway-alias-ledger.json (K3) |
-| A4 | 로그 | green: reader 26/26 + topology 26/26 | green/green-reader.log, green/green-topology.log |
-| A5 | 로그 | RED(HEAD 동작 대비 행위 실패): reader 23 fail, topology 26 fail | red/red-reader-head-behavior.log, red/red-topology-head-behavior.log |
+| A4 | 로그 | green: reader 26/26 + topology 26/26 | green/green-reader.txt, green/green-topology.txt |
+| A5 | 로그 | RED(HEAD 동작 대비 행위 실패): reader 23 fail, topology 26 fail | red/red-reader-head-behavior.txt, red/red-topology-head-behavior.txt |
 | A6 | 데이터 | canonical topology.json(334 처분, stops 1370, 엣지 436, 기하 96,999점) | topology.json |
 | A7 | 데이터 | canonical coverage.json(카테고리/산술/분류) | coverage.json |
 | A8 | 로그 | 빌드 2회 + 결정론 | build/run1, build/run2, build/determinism.txt, build/run1-stdout.json |

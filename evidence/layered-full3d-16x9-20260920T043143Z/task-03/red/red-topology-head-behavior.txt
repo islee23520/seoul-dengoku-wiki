@@ -1,0 +1,424 @@
+✖ same-name stops stay distinct stop nodes and never merge into a fabricated edge (0.707375ms)
+✖ same-name duplicate catalog variant resolves to canonical without duplicate edges (0.099667ms)
+✖ route relation without ref or name yields only nontraversable unknown_line connections (0.124375ms)
+✖ route relation with ref produces a traversable edge bound to links and sources (0.084458ms)
+✖ unsupported stop-like member breaks the segment: A(stop) B(stop_entry_only) C(stop) has no A-C edge (0.095ms)
+✖ directional stop roles are supported and preserved on edge links (0.06675ms)
+✖ unknown-floor interiors keep observed_levels null and are never coerced (0.06175ms)
+✖ missing-source observed floors throw an explicit error instead of passing silently (0.417542ms)
+✖ missing-source catalog records without interiors entries keep null floors with unknown status (0.313417ms)
+✖ same-district proximity without route evidence produces no edge (0.099792ms)
+✖ platform members and non-route relations never create edges (0.071584ms)
+✖ unmatched or missing stop nodes yield nontraversable connections with reasons (0.098458ms)
+✖ name match beyond the distance guard is refused, not crosswalked by proximity (0.066ms)
+✖ ambiguous normalized keys reject unless a unique coordinate-exact candidate exists (0.066ms)
+✖ alias resolves OSM name to canonical graph id deterministically (0.0685ms)
+✖ monorail and nonrail dispositions come only from validated ledger entries (0.491708ms)
+✖ parser reads the real Seoul PBF with manifest-grade counts and hash (0.071458ms)
+✖ crosswalk covers the exact 334 catalog records with explicit dispositions (0.081083ms)
+✖ unresolved required edges are zero and honest categories are named (0.066ms)
+✖ null floors are preserved across the real 334 (69 unknown) (0.035959ms)
+✖ connection records distinguish unique pairs from stop occurrences (0.04275ms)
+✖ byte-stable outputs carry repo-relative inputs only (0.058833ms)
+✖ every traversable edge binds lines, sources, and supported roles (0.049833ms)
+✖ dong content crosswalk is bounded, sourced, and sparse (0.03425ms)
+✖ CLI rejects unknown, duplicate, and valueless options (1.078792ms)
+✖ normalizeName applies NFKC, whitespace collapse, and parenthesis spacing only (0.235667ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 0
+ℹ fail 26
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8.0865
+
+✖ failing tests:
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:41:1
+✖ same-name stops stay distinct stop nodes and never merge into a fabricated edge (0.707375ms)
+  ReferenceError: ROUTE_KINDS is not defined
+      at assembleLegacy (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:59:35)
+      at assembleFromParsed (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:232:15)
+      at run (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:37:3)
+      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:44:24)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17)
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:55:1
+✖ same-name duplicate catalog variant resolves to canonical without duplicate edges (0.099667ms)
+  ReferenceError: ROUTE_KINDS is not defined
+      at assembleLegacy (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:59:35)
+      at assembleFromParsed (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:232:15)
+      at run (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:37:3)
+      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:59:34)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3)
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:80:1
+✖ route relation without ref or name yields only nontraversable unknown_line connections (0.124375ms)
+  ReferenceError: ROUTE_KINDS is not defined
+      at assembleLegacy (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:59:35)
+      at assembleFromParsed (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:232:15)
+      at run (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:37:3)
+      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:81:24)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:92:1
+✖ route relation with ref produces a traversable edge bound to links and sources (0.084458ms)
+  ReferenceError: ROUTE_KINDS is not defined
+      at assembleLegacy (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:59:35)
+      at assembleFromParsed (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:232:15)
+      at run (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:37:3)
+      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:93:24)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:108:1
+✖ unsupported stop-like member breaks the segment: A(stop) B(stop_entry_only) C(stop) has no A-C edge (0.095ms)
+  ReferenceError: ROUTE_KINDS is not defined
+      at assembleLegacy (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:59:35)
+      at assembleFromParsed (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:232:15)
+      at run (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:37:3)
+      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:112:24)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:122:1
+✖ directional stop roles are supported and preserved on edge links (0.06675ms)
+  ReferenceError: ROUTE_KINDS is not defined
+      at assembleLegacy (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:59:35)
+      at assembleFromParsed (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:232:15)
+      at run (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:37:3)
+      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:126:24)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:140:1
+✖ unknown-floor interiors keep observed_levels null and are never coerced (0.06175ms)
+  ReferenceError: ROUTE_KINDS is not defined
+      at assembleLegacy (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:59:35)
+      at assembleFromParsed (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:232:15)
+      at run (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:37:3)
+      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:143:24)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:157:1
+✖ missing-source observed floors throw an explicit error instead of passing silently (0.417542ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:160:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /INVALID_OBSERVED_FLOORS/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:163:1
+✖ missing-source catalog records without interiors entries keep null floors with unknown status (0.313417ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + undefined
+  - 'unknown'
+  
+      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:169:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 'unknown',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:174:1
+✖ same-district proximity without route evidence produces no edge (0.099792ms)
+  ReferenceError: ROUTE_KINDS is not defined
+      at assembleLegacy (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:59:35)
+      at assembleFromParsed (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:232:15)
+      at run (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:37:3)
+      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:177:24)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:186:1
+✖ platform members and non-route relations never create edges (0.071584ms)
+  ReferenceError: ROUTE_KINDS is not defined
+      at assembleLegacy (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:59:35)
+      at assembleFromParsed (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:232:15)
+      at run (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:37:3)
+      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:187:24)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:201:1
+✖ unmatched or missing stop nodes yield nontraversable connections with reasons (0.098458ms)
+  ReferenceError: ROUTE_KINDS is not defined
+      at assembleLegacy (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:59:35)
+      at assembleFromParsed (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:232:15)
+      at run (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:37:3)
+      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:204:24)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:218:1
+✖ name match beyond the distance guard is refused, not crosswalked by proximity (0.066ms)
+  ReferenceError: ROUTE_KINDS is not defined
+      at assembleLegacy (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:59:35)
+      at assembleFromParsed (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:232:15)
+      at run (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:37:3)
+      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:221:34)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:231:1
+✖ ambiguous normalized keys reject unless a unique coordinate-exact candidate exists (0.066ms)
+  ReferenceError: ROUTE_KINDS is not defined
+      at assembleLegacy (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:59:35)
+      at assembleFromParsed (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:232:15)
+      at run (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:37:3)
+      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:234:17)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:249:1
+✖ alias resolves OSM name to canonical graph id deterministically (0.0685ms)
+  ReferenceError: ROUTE_KINDS is not defined
+      at assembleLegacy (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:59:35)
+      at assembleFromParsed (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:232:15)
+      at run (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:37:3)
+      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:256:17)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:263:1
+✖ monorail and nonrail dispositions come only from validated ledger entries (0.491708ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+  + undefined
+  - {
+  -   'nonrail-misclassified': 1,
+  -   monorail: 1
+  - }
+  
+      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:278:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: [Object],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:301:1
+✖ parser reads the real Seoul PBF with manifest-grade counts and hash (0.071458ms)
+  ReferenceError: readFileSync is not defined
+      at loadLedger (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:221:15)
+      at loadReal (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:289:20)
+      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:302:24)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:312:1
+✖ crosswalk covers the exact 334 catalog records with explicit dispositions (0.081083ms)
+  ReferenceError: readFileSync is not defined
+      at loadLedger (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:221:15)
+      at loadReal (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:289:20)
+      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:313:34)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:335:1
+✖ unresolved required edges are zero and honest categories are named (0.066ms)
+  ReferenceError: readFileSync is not defined
+      at loadLedger (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:221:15)
+      at loadReal (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:289:20)
+      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:336:34)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:357:1
+✖ null floors are preserved across the real 334 (69 unknown) (0.035959ms)
+  ReferenceError: readFileSync is not defined
+      at loadLedger (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:221:15)
+      at loadReal (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:289:20)
+      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:358:24)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:362:1
+✖ connection records distinguish unique pairs from stop occurrences (0.04275ms)
+  ReferenceError: readFileSync is not defined
+      at loadLedger (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:221:15)
+      at loadReal (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:289:20)
+      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:363:24)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:375:1
+✖ byte-stable outputs carry repo-relative inputs only (0.058833ms)
+  ReferenceError: readFileSync is not defined
+      at loadLedger (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:221:15)
+      at loadReal (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:289:20)
+      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:376:24)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:389:1
+✖ every traversable edge binds lines, sources, and supported roles (0.049833ms)
+  ReferenceError: readFileSync is not defined
+      at loadLedger (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:221:15)
+      at loadReal (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:289:20)
+      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:390:24)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:407:1
+✖ dong content crosswalk is bounded, sourced, and sparse (0.03425ms)
+  ReferenceError: readFileSync is not defined
+      at loadLedger (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/subway-topology.mjs:221:15)
+      at loadReal (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:289:20)
+      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:408:24)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:416:1
+✖ CLI rejects unknown, duplicate, and valueless options (1.078792ms)
+  file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/build-subway-topology.mjs:2
+  import { assemble } from './subway-topology.mjs';
+           ^^^^^^^^
+  SyntaxError: The requested module './subway-topology.mjs' does not provide an export named 'assemble'
+      at #asyncInstantiate (node:internal/modules/esm/module_job:335:21)
+      at async ModuleJob.run (node:internal/modules/esm/module_job:439:5)
+      at async node:internal/modules/esm/loader:646:26
+      at async TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:417:20)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at TOOL/tools/strategy-map/test-subway-topology.mjs:424:1
+✖ normalizeName applies NFKC, whitespace collapse, and parenthesis spacing only (0.235667ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + '총신대입구 (이수)'
+  - '총신대입구(이수)'
+          ^
+  
+      at TestContext.<anonymous> (file:///private/tmp/red-state/repo/TOOL/tools/strategy-map/test-subway-topology.mjs:425:10)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '총신대입구 (이수)',
+    expected: '총신대입구(이수)',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

@@ -1,0 +1,34 @@
+✔ valid minimal PBF parses through the bounded reader (1.085917ms)
+✔ oversized blob header length is rejected by default limits (0.128ms)
+✔ oversized blob body is rejected before allocation (0.367584ms)
+✔ blob at the exact byte boundary is accepted (0.101375ms)
+✔ decompression bomb exceeding default maxRawBytes is rejected (211.609459ms)
+✔ decompression bomb is rejected against a small maxRawBytes override (0.410833ms)
+✔ inflated output exactly at maxRawBytes boundary succeeds (0.942667ms)
+✔ raw and zlib payloads are mutually exclusive (0.142167ms)
+✔ blob with neither raw nor zlib payload is rejected (0.14475ms)
+✔ raw_size must match the actual payload length (0.273ms)
+✔ varint longer than 10 bytes is rejected (0.282667ms)
+✔ unsafe integer ids beyond the safe range are rejected (0.174417ms)
+✔ packed arrays above maxPackedValues are rejected (0.125083ms)
+✔ dense ids and lats length mismatch is rejected (0.145792ms)
+✔ relation memids/roles/types length mismatch is rejected (0.126959ms)
+✔ plain node keys/vals length mismatch is rejected (0.252417ms)
+✔ dense keys_vals unterminated run is rejected (0.114667ms)
+✔ string table index out of range is rejected (0.095ms)
+✔ OSMData before OSMHeader is rejected (0.107375ms)
+✔ duplicate OSMHeader is rejected (0.086708ms)
+✔ missing OSMHeader is rejected (0.038791ms)
+✔ field number 0 is rejected (0.077709ms)
+✔ unsupported wire type is rejected (0.084083ms)
+✔ duplicate singular field is rejected (0.073ms)
+✔ file beyond maxTotalPbfBytes is rejected (0.055833ms)
+✔ readEntities keeps wanted ways and their node coordinates (0.449208ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 221.541125
