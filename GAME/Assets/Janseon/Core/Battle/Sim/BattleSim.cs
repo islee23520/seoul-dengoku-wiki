@@ -156,17 +156,24 @@ namespace Janseon.Core.Battle.Sim
                 if (OrderEquals(existing, order)) return new SquadOrderResult { Accepted = true, Order = existing.Clone() };
                 return new SquadOrderResult { Conflict = true, Rejection = new ContractRejection { Reason = ContractRejectReason.CommandConflict, Detail = "commandId payload conflict" } };
             }
+            var snapshot = state.Clone();
+            var ledgerCount = ledger.Events.Count;
             var commands = new List<BattleTickCommand>();
             for (var i = 0; i < order.ActorIds.Length; i++)
             {
-                var actor = FindUnit(state, new UnitId(order.ActorIds[i]));
+                var actor = FindUnit(snapshot, new UnitId(order.ActorIds[i]));
+                if (actor == null && FindHero(snapshot, order.ActorIds[i]) != null) continue;
+                if (actor == null) return new SquadOrderResult { Rejection = new ContractRejection { Reason = ContractRejectReason.UnknownActor } };
                 commands.Add(new BattleTickCommand { Id = new CommandId(order.CommandId.Value + ":" + i), Seq = i, At = new Tick(state.Tick), Kind = order.Kind == BattleOrderKind.Move ? BattleTickCommandKind.Move : BattleTickCommandKind.Attack, ActorUnitId = actor.Id, Target = order.Destination, TargetUnitId = order.TargetUnitId });
             }
             for (var i = 0; i < commands.Count; i++)
             {
-                var rejection = Submit(state, ledger, commands[i]);
+                var rejection = Submit(snapshot, ledger, commands[i]);
                 if (rejection != null) return new SquadOrderResult { Rejection = (ContractRejection)rejection };
             }
+            state.Pending = snapshot.Pending;
+            while (ledger.Events.Count > ledgerCount) ledger.Events.RemoveAt(ledger.Events.Count - 1);
+            state.Pending.Sort((a,b) => a.At.Value != b.At.Value ? a.At.Value.CompareTo(b.At.Value) : a.Seq.CompareTo(b.Seq));
             state.AcceptedOrders[order.CommandId.Value] = order.Clone();
             return new SquadOrderResult { Accepted = true, Order = order.Clone() };
         }
@@ -199,12 +206,19 @@ namespace Janseon.Core.Battle.Sim
             {
                 if (!seen.Add(order.ActorIds[i])) return new SquadOrderResult { Rejection = new ContractRejection { Reason = ContractRejectReason.MalformedCommand } };
                 var actor = FindUnit(state, new UnitId(order.ActorIds[i]));
-                if (!IsLivingPlayer(actor)) return new SquadOrderResult { Rejection = new ContractRejection { Reason = ContractRejectReason.UnknownActor } };
+                if (actor == null && FindHero(state, order.ActorIds[i]) == null) return new SquadOrderResult { Rejection = new ContractRejection { Reason = ContractRejectReason.UnknownActor } };
+                if (actor != null && !IsLivingPlayer(actor)) return new SquadOrderResult { Rejection = new ContractRejection { Reason = ContractRejectReason.UnknownActor } };
                 if (order.Kind == BattleOrderKind.Move && !state.Arena.InBounds(order.Destination)) return new SquadOrderResult { Rejection = new ContractRejection { Reason = ContractRejectReason.CardDestinationOutOfBounds } };
                 var target = FindUnit(state, order.TargetUnitId);
                 if (order.Kind == BattleOrderKind.Attack && (target == null || target.Side != 1 || target.State != "Active" || target.Hp <= 0)) return new SquadOrderResult { Rejection = new ContractRejection { Reason = ContractRejectReason.UnknownActor } };
             }
             return new SquadOrderResult { Accepted = true };
+        }
+        static HeroState FindHero(BattleSimState state, string id)
+        {
+            if (state.Heroes == null) return null;
+            for (var i = 0; i < state.Heroes.Length; i++) if (state.Heroes[i].Id.Value == id) return state.Heroes[i];
+            return null;
         }
         static bool OrderEquals(SquadOrder a, SquadOrder b)
         {

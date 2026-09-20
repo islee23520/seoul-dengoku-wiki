@@ -81,6 +81,7 @@ namespace Janseon.Core.Battle.Sim
         public string Fingerprint()
         {
             var s = "rules=" + (Context == null ? string.Empty : Context.RulesVersion) + ";" + Tick + ";" + (int)Outcome + ";" + Deployed;
+            if (Heroes != null) for (var i=0; i<Heroes.Length; i++) { var h=Heroes[i]; s += ";hero=" + h.Id + ":" + h.Cell + ":" + h.Hp + ":" + (int)h.OrderKind + ":" + h.OrderDestination + ":" + h.OrderTargetUnitId; }
             if (Units != null) for (var i=0; i<Units.Length; i++) { var u=Units[i]; s += ";" + u.Id + ":" + u.Cell + ":" + (int)u.Facing + ":" + u.Hp + ":" + u.SurvivorCount + ":" + u.State + ":" + u.MoveTicksLeft + ":" + u.CooldownTicksLeft + ":" + (int)u.OrderKind + ":" + u.OrderDestination + ":" + u.OrderTargetUnitId; }
             if (Terrain != null) s += ";terrain=" + Terrain.Fingerprint();
             if (Sides != null) for (var i=0; i<Sides.Length; i++) { var x=Sides[i]; s += ";m" + x.Morale + ":" + x.CommandsLocked; }
@@ -121,6 +122,9 @@ namespace Janseon.Core.Battle.Sim
         public HeroId Id;
         public int Hp;
         public GridCoord Cell;
+        public BattleOrderKind OrderKind;
+        public GridCoord OrderDestination;
+        public UnitId OrderTargetUnitId;
         public HeroState Clone() => new HeroState { Id = Id, Hp = Hp, Cell = Cell };
     }
     public sealed class SquadState
