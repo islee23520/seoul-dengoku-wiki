@@ -20,10 +20,6 @@ type PersonDetail = (typeof peopleCatalog)[number] & {
 }
 
 const sectionOrder = ['생애', '관직', '무공', '일화', '가문', '관계', '야망', '공포', '개입']
-const battleRoleLabels: Record<string, string> = { formation: '진형', screening: '엄호', pressure: '압박', 'route-control': '경로 통제', sustain: '지속 지원', repair: '정비', triage: '응급 처치', supply: '보급', negotiation: '교섭', covert: '은밀 공작', recon: '정찰', records: '기록' }
-const effectFamilyLabels: Record<string, string> = { morale: '사기', medicine: '의료', agitation: '선동', gear: '장비', information: '정보', 'physical-ai-tech': '피지컬 에이아이 기술' }
-const campaignRoleLabels: Record<string, string> = { diplomacy: '외교', assassination: '암살', sabotage: '방해 공작', intelligence: '정보 활동' }
-const labelsFor = (values: readonly string[], labels: Record<string, string>) => values.map((value) => labels[value] ?? value).join(' · ')
 
 function DataTable({ title, rows }: { title: string; rows: Array<[string, string | number]> }) {
   return (
@@ -69,14 +65,6 @@ export default function PersonDetailPage() {
     ['직위', detail.position], ['직급(공통 티어)', detail.commonTier], ['국가 품계', detail.rank], ['직업', detail.occupation], ['성별', detail.gender], ['단계', detail.stage], ['세대', detail.generation],
     ...Object.entries(detail.fields).filter(([label]) => !['가치관', '욕망', '직위', '소속'].includes(label)),
   ]
-  const heroRows: Array<[string, string | number]> = [
-    ['영웅 ID', detail.heroId],
-    ['영웅 클래스', detail.heroClass],
-    ['전투 역할', labelsFor(detail.battleRoleTags, battleRoleLabels) || '기본 원정 역할'],
-    ['효과 계열', labelsFor(detail.effectFamilies, effectFamilyLabels)],
-    ['캠페인 역할', labelsFor(detail.campaignRoles, campaignRoleLabels) || '등록된 요원 역할 없음'],
-    ['정식 지휘 가능', detail.commandEligible ? '가능' : '별도 지휘 자격 필요'],
-  ]
   const relationRows = [...detail.relations.outgoing.map((relation) => [`→ ${relation.to} · ${relation.type}`, relation.basis] as [string, string]), ...detail.relations.incoming.map((relation) => [`← ${relation.from} · ${relation.type}`, relation.basis] as [string, string])]
 
   return (
@@ -86,7 +74,6 @@ export default function PersonDetailPage() {
       <div className="person-detail-layout">
         <aside className="person-data-panel" aria-label="인물 구조화 데이터">
           <DataTable title="기본 정보" rows={basicRows} />
-          <DataTable title="영웅 클래스" rows={heroRows} />
           <DataTable title="가치관" rows={Object.entries(detail.values)} />
           <DataTable title="욕망" rows={Object.entries(detail.desire)} />
           <DataTable title={`관계 ${relationRows.length}건`} rows={relationRows.length ? relationRows : [['관계', '등록된 방향성 관계 없음']]} />

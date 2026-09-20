@@ -42,11 +42,11 @@ test('people page sorts the complete roster by Korean name order', async () => {
   assert.match(page, /koreanNameOrder\.compare\(left\.name, right\.name\)/)
 })
 
-test('people page exposes state common tier occupation gender and hero class filters and required columns', async () => {
+test('people page exposes state common tier occupation and gender filters and required columns', async () => {
   const page = await readFile(new URL('../src/pages/PeoplePage.tsx', import.meta.url), 'utf8')
-  for (const label of ['국가', '직급(공통 티어)', '직업', '성별', '영웅 클래스']) assert.ok(page.includes(label), label)
+  for (const label of ['국가', '직급(공통 티어)', '직업', '성별']) assert.ok(page.includes(label), label)
   assert.doesNotMatch(page, /<label>직위<select/)
-  for (const field of ['stateName', 'position', 'commonTier', 'occupation', 'gender', 'heroClass']) assert.match(page, new RegExp(`person\\.${field}`))
+  for (const field of ['stateName', 'position', 'commonTier', 'occupation', 'gender']) assert.match(page, new RegExp(`person\\.${field}`))
   assert.match(page, /필터 초기화/)
 })
 
@@ -55,9 +55,7 @@ test('people table reserves an on-screen semantic column for gender', async () =
   const css = await readFile(new URL('../src/index.css', import.meta.url), 'utf8')
   assert.match(page, /<colgroup>/)
   assert.match(page, /className="people-col-gender"/)
-  assert.match(page, /className="people-col-hero"/)
   assert.match(page, /<th scope="col">성별<\/th>/)
-  assert.match(page, /<th scope="col">영웅 클래스<\/th>/)
   assert.match(css, /\.people-table\s*\{[^}]*table-layout:\s*fixed/s)
   assert.match(css, /\.people-col-gender\s*\{[^}]*inline-size:/s)
 })
