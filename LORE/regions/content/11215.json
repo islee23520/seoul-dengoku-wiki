@@ -27,8 +27,7 @@
           "docs/game-logic/Cast-State-04.md"
         ],
         "polity_contexts": [
-          "S14",
-          "S04"
+          "S14"
         ],
         "inhabitants": [
           "일감호 양수조",
@@ -252,15 +251,11 @@
           }
         ],
         "territory": {
-          "status": "contested",
+          "status": "held",
           "holders": [
             {
               "polity": "S14",
-              "control": 57
-            },
-            {
-              "polity": "S04",
-              "control": 43
+              "control": 100
             }
           ]
         },
@@ -290,8 +285,7 @@
           "docs/game-logic/Cast-State-04.md"
         ],
         "polity_contexts": [
-          "S14",
-          "S04"
+          "S14"
         ],
         "inhabitants": [
           "아사달 양수조",
@@ -502,15 +496,11 @@
           }
         ],
         "territory": {
-          "status": "contested",
+          "status": "held",
           "holders": [
             {
               "polity": "S14",
-              "control": 57
-            },
-            {
-              "polity": "S04",
-              "control": 43
+              "control": 100
             }
           ]
         },
@@ -2171,8 +2161,7 @@
           "docs/game-logic/Cast-State-04.md"
         ],
         "polity_contexts": [
-          "S14",
-          "S04"
+          "S14"
         ],
         "inhabitants": [
           "구의 대합실 잔압 서기",
@@ -2397,15 +2386,11 @@
           }
         ],
         "territory": {
-          "status": "contested",
+          "status": "held",
           "holders": [
             {
               "polity": "S14",
-              "control": 57
-            },
-            {
-              "polity": "S04",
-              "control": 43
+              "control": 100
             }
           ]
         },
