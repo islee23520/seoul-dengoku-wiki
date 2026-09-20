@@ -17,6 +17,7 @@ Safe public wiki generation and deterministic world-atlas projections; score 9, 
 | Roster constraints | `verify-cast.mjs` | Rule-coded violations, separate regression executable |
 | Core isometric diagrams | `generate-core-isometric-diagrams.mjs`, `core-isometric-diagrams.json` | Renders manifest SVGs into `Reference/assets/wiki` |
 | World-site structural gates | `test-wiki-parity.mjs` | 16-state index, LORE README sections, VitePress theme components |
+| Reader-prose human gate | `patina-human-gate.mjs`, `patina-human-receipt.json` | Every mounted public LORE Markdown must have a current SHA-bound Patina interpretation of exactly `human` |
 | Values-cast characterization | `test-values-cast.mjs` | `validateValuesCast` pins `LORE/name-pools/values-cast.json` against `LORE/Cast-Unaffiliated.md` |
 | Jaepyo/Iyen narrative contract | `verify-jaepyo-iyen-narrative.mjs` | Cast-Unaffiliated, Starting-Presets and source ledger stay consistent |
 | Hostile bestiary roster | `test-world-atlas.mjs`, `verify-world-expansion.mjs` | 27 group pages own all 422 authored entries; M IDs are provenance only |
@@ -32,6 +33,7 @@ Safe public wiki generation and deterministic world-atlas projections; score 9, 
 - For an output directory named `game-logic`, diagram assets are routed to sibling `assets/wiki/`.
 - `generate-core-isometric-diagrams.mjs` spells its manifest path `Tool/tools/wiki/...` (case differs from `TOOL/`); it breaks on case-sensitive checkouts.
 - Keep source canon distinct from generated projections; source hashes describe the atlas Markdown used to produce them.
+- Regenerate `patina-human-receipt.json` with the installed Patina CLI after any public LORE prose change. `mostly human`, `mixed` and `AI-like` all fail publication.
 
 ## COMMANDS
 From repository root; these extend the parent package's default test coverage.
@@ -42,6 +44,8 @@ node TOOL/tools/wiki/test-world-expansion.mjs
 node TOOL/tools/wiki/test-confirmed-integration.mjs
 node TOOL/tools/wiki/verify-jaepyo-iyen-narrative.mjs
 node TOOL/tools/wiki/verify-monster-batches-M021-M030.mjs
+node TOOL/tools/wiki/patina-human-gate.mjs write
+node TOOL/tools/wiki/patina-human-gate.mjs verify
 ```
 
 ## ANTI-PATTERNS
