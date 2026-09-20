@@ -1,0 +1,13 @@
+{
+  "mesh": "Male_Base_Symmetric",
+  "method": "pack_islands(margin=0.002, rotate=True)",
+  "raw_overlap_pairs": 740,
+  "non_adjacent_overlap_pairs": 0,
+  "ok": true,
+  "texel_density": {
+    "count": 67430,
+    "mean": 0.29099251500553386,
+    "cv": 0.49441016721027753,
+    "p95_p5_ratio": 4.776756154864933
+  }
+}

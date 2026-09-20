@@ -1,0 +1,36 @@
+[
+  {
+    "gender": "Male",
+    "height_m": 1.75,
+    "head_height_estimate_m": 0.22605197841265906,
+    "estimated_heads_tall": 7.741582322298307,
+    "head_scale_source": 0.15,
+    "head_translation_source": [
+      0.0,
+      -0.0044999998062849045,
+      0.7784960865974426
+    ],
+    "source_to_meters": 1.8849169487770274,
+    "chin_source_z_assumed": 0.2,
+    "source_head": 6,
+    "source_body": 9,
+    "status": "UNJOINED_PROPORTION_STUDY_NOT_APPROVED"
+  },
+  {
+    "gender": "Female",
+    "height_m": 1.65,
+    "head_height_estimate_m": 0.22144504210192045,
+    "estimated_heads_tall": 7.451058666016937,
+    "head_scale_source": 0.19,
+    "head_translation_source": [
+      0.0,
+      0.010700000450015068,
+      0.8994914293289185
+    ],
+    "source_to_meters": 1.5145971051386993,
+    "chin_source_z_assumed": 0.23,
+    "source_head": 11,
+    "source_body": 8,
+    "status": "UNJOINED_PROPORTION_STUDY_NOT_APPROVED"
+  }
+]

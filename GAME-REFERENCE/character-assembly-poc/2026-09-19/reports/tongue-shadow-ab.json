@@ -1,0 +1,25 @@
+{
+  "geometry_hash": "d58399e56322c497bad1f424450a1d1150b497e879d6d9d86fdcad3ffb033083",
+  "settings": [
+    {
+      "name": "baseline",
+      "shadow": true,
+      "geometry_offset": 0.0
+    },
+    {
+      "name": "without-shadow",
+      "shadow": false,
+      "geometry_offset": 0.0
+    },
+    {
+      "name": "terminator-offset",
+      "shadow": true,
+      "geometry_offset": 0.20000000298023224
+    }
+  ],
+  "object_cycles_properties": [
+    "shadow_terminator_offset",
+    "shadow_terminator_geometry_offset"
+  ],
+  "geometry_unchanged": true
+}

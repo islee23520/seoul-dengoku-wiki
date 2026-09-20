@@ -1,0 +1,345 @@
+{
+  "data": "sculpt-inverse-data.npz",
+  "metrics": {
+    "vertices": 66456,
+    "faces": 66850,
+    "changed_vertices": 487,
+    "changed_left_vertices": 421,
+    "roi_vertices": 1681,
+    "left_evaluation_vertices": 816,
+    "move_mm": {
+      "count": 421,
+      "median": 1.9238505798381684,
+      "p90": 5.738791267033,
+      "max": 10.722050900589759,
+      "mean": 2.5295991342362396
+    },
+    "normal_move_mm": {
+      "count": 421,
+      "median": -0.8410112151677751,
+      "p90": 0.047357310087203786,
+      "max": 1.2499860354688863,
+      "mean": -1.3856757947762721
+    },
+    "tangent_move_mm": {
+      "count": 421,
+      "median": 1.3131085212544027,
+      "p90": 4.359705357521498,
+      "max": 10.167816623317583,
+      "mean": 1.8627385391155147
+    },
+    "normal_energy_fraction": 0.40579298584179374,
+    "seam_border_before_degrees": {
+      "count": 64,
+      "median": 13.635050717922626,
+      "p90": 28.908275862986457,
+      "max": 157.08063589043988,
+      "mean": 19.952228691599643
+    },
+    "seam_border_after_degrees": {
+      "count": 64,
+      "median": 4.279706887697133,
+      "p90": 9.559366361866193,
+      "max": 15.473696234468214,
+      "mean": 5.358304712364337
+    },
+    "edges_over90_before": 11,
+    "edges_over90_after": 0,
+    "winding_before": 0,
+    "winding_after": 0,
+    "laplacian_energy_reduction": 0.5734598034316282,
+    "squared_dihedral_energy_reduction": 0.7452824786577459,
+    "face_above_neck_max_move_m": 0.0,
+    "lower_body_max_move_m": 0.0
+  },
+  "endpoint_inverse": {
+    "target_conditioned_not_prediction": true,
+    "scalar_energy_explained": 0.8731456101649574,
+    "normal_tangent_energy_explained": 0.9298118436929219,
+    "normal_tangent_residual_mm": {
+      "count": 421,
+      "median": 0.2585231734275965,
+      "p90": 1.4399416211238394,
+      "max": 3.874288344949366,
+      "mean": 0.5431930341394191
+    }
+  },
+  "explicit_spatial_cv": {
+    "energy_explained": 0.49437889655999223,
+    "folds": [
+      {
+        "heldout_sector": 0,
+        "chosen": {
+          "operator": "explicit_uniform",
+          "sigma_hops": 4.0,
+          "steps": 16,
+          "lambda": 0.5
+        },
+        "rmse_mm": 1.4949773945358036,
+        "energy_explained": 0.4855024458813392,
+        "candidate_index": 31
+      },
+      {
+        "heldout_sector": 1,
+        "chosen": {
+          "operator": "explicit_uniform",
+          "sigma_hops": 4.0,
+          "steps": 16,
+          "lambda": 0.5
+        },
+        "rmse_mm": 1.1710285184797138,
+        "energy_explained": 0.7896627320554627,
+        "candidate_index": 31
+      },
+      {
+        "heldout_sector": 2,
+        "chosen": {
+          "operator": "explicit_uniform",
+          "sigma_hops": 1.5,
+          "steps": 32,
+          "lambda": 0.5
+        },
+        "rmse_mm": 2.6059804752315854,
+        "energy_explained": 0.10034039354410396,
+        "candidate_index": 9
+      }
+    ]
+  },
+  "implicit_spatial_cv": {
+    "energy_explained": 0.5126756063383868,
+    "folds": [
+      {
+        "heldout_sector": 0,
+        "chosen": {
+          "operator": "implicit_uniform",
+          "sigma_hops": 4.0,
+          "duration": 12.0
+        },
+        "rmse_mm": 1.5508901394512926,
+        "energy_explained": 0.44629794869152006,
+        "candidate_index": 27
+      },
+      {
+        "heldout_sector": 1,
+        "chosen": {
+          "operator": "implicit_uniform",
+          "sigma_hops": 4.0,
+          "duration": 12.0
+        },
+        "rmse_mm": 1.137026542217455,
+        "energy_explained": 0.8017001020595991,
+        "candidate_index": 27
+      },
+      {
+        "heldout_sector": 2,
+        "chosen": {
+          "operator": "implicit_uniform",
+          "sigma_hops": 1.5,
+          "duration": 20.0
+        },
+        "rmse_mm": 2.500283587857313,
+        "energy_explained": 0.1718396251804699,
+        "candidate_index": 6
+      }
+    ]
+  },
+  "adaptive_spatial_cv": {
+    "energy_explained": 0.6483656417373771,
+    "folds": [
+      {
+        "heldout_sector": 0,
+        "chosen": {
+          "operator": "adaptive_implicit",
+          "sigma_hops": 6.0,
+          "roughness_power": 2.0,
+          "duration": 2.0
+        },
+        "rmse_mm": 1.4652624016592648,
+        "energy_explained": 0.5057520522893719,
+        "candidate_index": 48
+      },
+      {
+        "heldout_sector": 1,
+        "chosen": {
+          "operator": "adaptive_implicit",
+          "sigma_hops": 6.0,
+          "roughness_power": 2.0,
+          "duration": 2.0
+        },
+        "rmse_mm": 0.9530532002318087,
+        "energy_explained": 0.8606793239690309,
+        "candidate_index": 48
+      },
+      {
+        "heldout_sector": 2,
+        "chosen": {
+          "operator": "adaptive_implicit",
+          "sigma_hops": 2.5,
+          "roughness_power": 1.0,
+          "duration": 8.0
+        },
+        "rmse_mm": 1.9983775800590005,
+        "energy_explained": 0.47095696158090705,
+        "candidate_index": 8
+      }
+    ]
+  },
+  "heldout_geometry": [
+    {
+      "sector": 0,
+      "edges": 14,
+      "before_degrees": {
+        "count": 14,
+        "median": 17.714648857750838,
+        "p90": 63.71446908088627,
+        "max": 101.4100315884704,
+        "mean": 25.962924647514075
+      },
+      "human_degrees": {
+        "count": 14,
+        "median": 5.367613228837829,
+        "p90": 13.143096866064987,
+        "max": 15.473696234468214,
+        "mean": 6.936503732486645
+      },
+      "model_degrees": {
+        "count": 14,
+        "median": 5.204344974382872,
+        "p90": 23.53686744045014,
+        "max": 41.59500748793528,
+        "mean": 9.315971507689792
+      },
+      "outside_roi_max_move_m": 0.0
+    },
+    {
+      "sector": 1,
+      "edges": 26,
+      "before_degrees": {
+        "count": 26,
+        "median": 22.773740947675314,
+        "p90": 29.133450465958305,
+        "max": 44.474817761673044,
+        "mean": 19.802563802765892
+      },
+      "human_degrees": {
+        "count": 26,
+        "median": 4.183505380784796,
+        "p90": 8.220793913799367,
+        "max": 10.378812245745584,
+        "mean": 4.873671784953756
+      },
+      "model_degrees": {
+        "count": 26,
+        "median": 5.460990616139225,
+        "p90": 9.748418241107313,
+        "max": 13.206290140699446,
+        "mean": 6.5625581640157975
+      },
+      "outside_roi_max_move_m": 0.0
+    },
+    {
+      "sector": 2,
+      "edges": 16,
+      "before_degrees": {
+        "count": 16,
+        "median": 8.797870193471399,
+        "p90": 13.134786745656559,
+        "max": 18.318563938879613,
+        "mean": 8.938162332384312
+      },
+      "human_degrees": {
+        "count": 16,
+        "median": 4.2118792672574985,
+        "p90": 8.154845876041955,
+        "max": 9.334408019758934,
+        "mean": 4.299108046704661
+      },
+      "model_degrees": {
+        "count": 16,
+        "median": 4.328502552198399,
+        "p90": 8.941907983679787,
+        "max": 8.990481552228557,
+        "mean": 5.396661743551203
+      },
+      "outside_roi_max_move_m": 0.0
+    }
+  ],
+  "adaptive_heldout_geometry": [
+    {
+      "sector": 0,
+      "model_degrees": {
+        "count": 14,
+        "median": 7.753867174264054,
+        "p90": 23.351879304859022,
+        "max": 37.473303990534006,
+        "mean": 10.922326058963591
+      },
+      "human_degrees": {
+        "count": 14,
+        "median": 5.367613228837829,
+        "p90": 13.143096866064987,
+        "max": 15.473696234468214,
+        "mean": 6.936503732486645
+      },
+      "unchanged_human_region_max_drift_mm": 2.835355005216935,
+      "outside_roi_max_move_m": 0.0
+    },
+    {
+      "sector": 1,
+      "model_degrees": {
+        "count": 26,
+        "median": 5.964305419054025,
+        "p90": 10.334357580980942,
+        "max": 11.02435577200028,
+        "mean": 6.290998080541462
+      },
+      "human_degrees": {
+        "count": 26,
+        "median": 4.183505380784796,
+        "p90": 8.220793913799367,
+        "max": 10.378812245745584,
+        "mean": 4.873671784953756
+      },
+      "unchanged_human_region_max_drift_mm": 1.7987084576650771,
+      "outside_roi_max_move_m": 0.0
+    },
+    {
+      "sector": 2,
+      "model_degrees": {
+        "count": 16,
+        "median": 3.9504737150574107,
+        "p90": 8.653402159234837,
+        "max": 8.920693319593964,
+        "mean": 4.93330156347294
+      },
+      "human_degrees": {
+        "count": 16,
+        "median": 4.2118792672574985,
+        "p90": 8.154845876041955,
+        "max": 9.334408019758934,
+        "mean": 4.299108046704661
+      },
+      "unchanged_human_region_max_drift_mm": 3.5944850393225716,
+      "outside_roi_max_move_m": 0.0
+    }
+  ],
+  "normal_relation": {
+    "identity_error_m2": 0.0,
+    "affected_valid_triangles": 1094,
+    "nonlinear_term_fraction": {
+      "count": 1094,
+      "median": 0.07645046571023281,
+      "p90": 0.2893887013885327,
+      "max": 1.1743077357737817,
+      "mean": 0.11923356215797348
+    },
+    "preexisting_degenerate_triangles": 13
+  },
+  "limits": [
+    "One subject and one final sculpt, not cross-subject validation.",
+    "Endpoint inverse uses target positions/normals; not automatic reproduction.",
+    "Fold selection uses before-geometry angular sectors, not random adjacent vertices.",
+    "Model families were explored on this same example; spatial CV is exploratory, not an untouched final test.",
+    "No Blender scene or user mesh was changed by this analysis."
+  ]
+}

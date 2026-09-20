@@ -1,0 +1,26 @@
+{
+  "source": "male-tongue-generated-normals-review.blend",
+  "donor": "positive_x",
+  "center_source_units": -0.00391,
+  "donor_max_distance_after": 3.725290298461914e-09,
+  "donor_faces_before": 101,
+  "donor_faces_after": 101,
+  "source_root_loop_size": 20,
+  "result_root_loop_size": 24,
+  "root_max_displacement_source_units": 0.001095223007723689,
+  "surface_area_ratio": 1.0041530408989812,
+  "bbox_max_change_source_units": 0.0004882737994194031,
+  "vertices": 287,
+  "faces": 278,
+  "face_sizes": {
+    "3": 12,
+    "4": 262,
+    "5": 4
+  },
+  "quad_internal_angle_max": 41.26909764942312,
+  "symmetry_max_error_source_units": 7.450580596923828e-09,
+  "connected_components": 1,
+  "winding_errors": 0,
+  "unintended_boundary_loops": 0,
+  "status": "SYMMETRY_COMPARISON_REQUIRES_ROOT_AND_VISUAL_REVIEW"
+}

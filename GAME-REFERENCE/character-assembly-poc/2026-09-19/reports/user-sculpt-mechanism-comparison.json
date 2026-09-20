@@ -1,0 +1,30 @@
+{
+  "left_changed_vertices": 421,
+  "normal_inward_median_mm": 1.2650638236664236,
+  "tangential_median_mm": 1.3131085357537335,
+  "user_changed_but_our_mask_protected": 118,
+  "excluded_bounds": {
+    "min": [
+      -1.1132984161376953,
+      -0.07288499921560287,
+      1.5084857940673828
+    ],
+    "max": [
+      -1.0516107082366943,
+      0.10722319781780243,
+      1.611368179321289
+    ]
+  },
+  "left_boundary_angles_before": {
+    "max": 157.08063589043988,
+    "median": 13.635050717922626,
+    "p90": 27.969824434235438
+  },
+  "left_boundary_angles_after_user": {
+    "max": 15.473696234468214,
+    "median": 4.279706887697133,
+    "p90": 9.478348280101429
+  },
+  "far_body_unchanged": true,
+  "face_above_neck_unchanged": true
+}

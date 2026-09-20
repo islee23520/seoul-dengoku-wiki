@@ -1,0 +1,233 @@
+{
+  "object": "Male_Quad_Repair_Review",
+  "attributes": [
+    {
+      "name": ".sculpt_mask",
+      "domain": "POINT",
+      "type": "FLOAT"
+    },
+    {
+      "name": "ProtectedEndpoint",
+      "domain": "POINT",
+      "type": "INT"
+    },
+    {
+      "name": "VerifiedQuadRepair",
+      "domain": "FACE",
+      "type": "INT"
+    },
+    {
+      "name": "custom_normal",
+      "domain": "CORNER",
+      "type": "INT16_2D"
+    },
+    {
+      "name": "Attribute",
+      "domain": "CORNER",
+      "type": "FLOAT2"
+    },
+    {
+      "name": ".select_vert",
+      "domain": "POINT",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": ".select_edge",
+      "domain": "EDGE",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "sharp_edge",
+      "domain": "EDGE",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": ".select_poly",
+      "domain": "FACE",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": ".uv_select_vert",
+      "domain": "CORNER",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": ".uv_select_edge",
+      "domain": "CORNER",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": ".uv_select_face",
+      "domain": "FACE",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "material_index",
+      "domain": "FACE",
+      "type": "INT"
+    },
+    {
+      "name": "position",
+      "domain": "POINT",
+      "type": "FLOAT_VECTOR"
+    },
+    {
+      "name": ".edge_verts",
+      "domain": "EDGE",
+      "type": "INT32_2D"
+    },
+    {
+      "name": ".corner_vert",
+      "domain": "CORNER",
+      "type": "INT"
+    },
+    {
+      "name": ".corner_edge",
+      "domain": "CORNER",
+      "type": "INT"
+    },
+    {
+      "name": "sharp_face",
+      "domain": "FACE",
+      "type": "BOOLEAN"
+    }
+  ],
+  "vertex_groups": [
+    {
+      "name": "SeamRelax_Only",
+      "vertices": 689,
+      "min": [
+        -0.06193777173757553,
+        -0.05019596591591835,
+        1.5418119430541992
+      ],
+      "max": [
+        0.06253182888031006,
+        0.07820204645395279,
+        1.6242809295654297
+      ]
+    }
+  ],
+  "components": [
+    {
+      "index": 0,
+      "vertices": 66579,
+      "faces": 67041,
+      "area": 2.1808527550302115,
+      "bbox_min": [
+        -0.9419983625411987,
+        -0.1449582874774933,
+        2.4320026548174667e-10
+      ],
+      "bbox_max": [
+        0.9419983625411987,
+        0.15600265562534332,
+        1.815000057220459
+      ],
+      "boundaries": 94
+    },
+    {
+      "index": 1,
+      "vertices": 10,
+      "faces": 8,
+      "area": 7.37289410608355e-05,
+      "bbox_min": [
+        -0.8462797403335571,
+        0.05982404947280884,
+        1.4261126518249512
+      ],
+      "bbox_max": [
+        -0.8398371934890747,
+        0.06427250057458878,
+        1.4325551986694336
+      ],
+      "boundaries": 0
+    },
+    {
+      "index": 2,
+      "vertices": 10,
+      "faces": 8,
+      "area": 7.234617169160629e-05,
+      "bbox_min": [
+        -0.8462797403335571,
+        0.06028423458337784,
+        1.4261126518249512
+      ],
+      "bbox_max": [
+        -0.8398371934890747,
+        0.06457928568124771,
+        1.4325551986694336
+      ],
+      "boundaries": 0
+    },
+    {
+      "index": 3,
+      "vertices": 10,
+      "faces": 8,
+      "area": 7.372956679319032e-05,
+      "bbox_min": [
+        0.839837372303009,
+        0.05982426926493645,
+        1.4261126518249512
+      ],
+      "bbox_max": [
+        0.8462799787521362,
+        0.06427272409200668,
+        1.4325551986694336
+      ],
+      "boundaries": 0
+    },
+    {
+      "index": 4,
+      "vertices": 10,
+      "faces": 8,
+      "area": 7.234625536511885e-05,
+      "bbox_min": [
+        0.839837372303009,
+        0.06028445065021515,
+        1.4261126518249512
+      ],
+      "bbox_max": [
+        0.8462799787521362,
+        0.06457950919866562,
+        1.4325551986694336
+      ],
+      "boundaries": 0
+    },
+    {
+      "index": 5,
+      "vertices": 4,
+      "faces": 2,
+      "area": 2.8242357075214386e-07,
+      "bbox_min": [
+        -0.8306334018707275,
+        0.01058428455144167,
+        1.4882376194000244
+      ],
+      "bbox_max": [
+        -0.8306334018707275,
+        0.011044468730688095,
+        1.4886977672576904
+      ],
+      "boundaries": 0
+    },
+    {
+      "index": 6,
+      "vertices": 4,
+      "faces": 2,
+      "area": 2.823944669216871e-07,
+      "bbox_min": [
+        0.8306336402893066,
+        0.01058450248092413,
+        1.4882376194000244
+      ],
+      "bbox_max": [
+        0.8306336402893066,
+        0.011044686660170555,
+        1.4886977672576904
+      ],
+      "boundaries": 0
+    }
+  ],
+  "selected_faces": 12
+}
