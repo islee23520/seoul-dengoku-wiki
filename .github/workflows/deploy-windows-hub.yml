@@ -20,11 +20,22 @@ jobs:
       run:
         shell: powershell
     steps:
+      - name: Repair stale private submodule metadata
+        run: |
+          foreach ($path in @(
+            "$env:GITHUB_WORKSPACE\TOOL\portrait-gen",
+            "$env:GITHUB_WORKSPACE\TOOL\unity-remote",
+            "$env:GITHUB_WORKSPACE\.git\modules\TOOL\portrait-gen",
+            "$env:GITHUB_WORKSPACE\.git\modules\TOOL\unity-remote"
+          )) {
+            if (Test-Path $path) { Remove-Item $path -Recurse -Force }
+          }
+
       - name: Checkout the triggering main commit
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          submodules: recursive
+          submodules: false
           clean: false
           token: ${{ secrets.SUBMODULES_PAT }}
 
@@ -39,7 +50,8 @@ jobs:
           } else {
             git checkout --detach origin/main
           }
-          git submodule update --init --recursive
+          git submodule sync --recursive
+          git submodule update --init --recursive --force
 
       - name: Build, verify, and atomically deploy the hub
         run: |
