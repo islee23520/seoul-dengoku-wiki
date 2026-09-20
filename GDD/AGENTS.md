@@ -20,7 +20,7 @@ Single game-design canon: product pages, rules, references, architecture, art di
 | Naming policy | `adr/ADR-003` | Creative names anchor to real district/station names |
 | Root domain structure | `adr/ADR-004` | Seven top-level domains, owner-locked 2026-09-18 |
 | Proposals | `proposals/` | `metaverse-hub-2026-2/` business plan (+assets), `Scenario-Hold-the-Gate.md`, `Narrative-Direction.md` |
-| Regions visualization | `system-design/regions/` | Standalone static web app (`atlas-data.js`, `app.js`); browser artifact, not Unity |
+| Region data and official map | `../LORE/regions/`, `../WEB/wiki/src/components/OpeningTerritoryMap.tsx` | 427-dong canon stays in LORE; the official wiki owns the public map |
 | Generated design-store | `design-store/AGENTS.md` | Never hand-edit; regenerate |
 
 ## CONVENTIONS

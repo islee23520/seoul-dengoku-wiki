@@ -12,7 +12,7 @@
 
 브라우저에서 코어 루프를 직접 돌리는 웹 POC는 [`GAME/play/`](GAME/play/)입니다. 거점 → 427동 목적지 → 조우(협상·우회·전투) → 진형 → 실시간 카드 전투 → 정산 한 번 → 귀환. 이 루프의 귀환은 POC 화면입니다. 공개 주소는 `https://seoul-dengoku.linalab.io/play/`이고, 구 주소 `https://seoul-kenshi.vercel.app/play/`는 전환 검증 후 제거합니다. 이동 비용은 직선 거리 웹 규칙이고 Unity 코어 전체가 아닙니다. PR [#90](https://github.com/islee23520/seoul-kenshi/pull/90)으로 main에 들어왔습니다.
 
-서울 지역 총람은 [`LORE/regions/`](LORE/regions/README.md)와 [`GDD/system-design/regions/`](GDD/system-design/regions/)입니다. 선택 경계는 2026-07-01 행정동 25구·427동입니다. OSM 스냅샷은 2026-09-04T23:00:00Z입니다. 역 334는 이동 그래프이지 서울 면적의 증명이 아닙니다. 부대 지휘 설계 템플릿은 [`GDD/system-design/total-war-ui/`](GDD/system-design/total-war-ui/)이며 게시 경로는 `/total-war-ui/`입니다.
+서울 지역 정본은 [`LORE/regions/`](LORE/regions/README.md)입니다. 선택 경계는 2026-07-01 행정동 25구·427동이며, 공식 지도는 [`World-and-Subway-Layers`](https://seoul-dengoku.linalab.io/wiki/world/World-and-Subway-Layers)에서 봅니다. OSM 스냅샷은 2026-09-04T23:00:00Z입니다. 역 334는 이동 그래프이지 서울 면적의 증명이 아닙니다. 부대 지휘 설계 템플릿은 [`GDD/system-design/total-war-ui/`](GDD/system-design/total-war-ui/)이며 게시 경로는 `/total-war-ui/`입니다.
 
 들어온 구현:
 
@@ -24,7 +24,7 @@
 - Area 1 데이터 코어(ScriptableObject + VContainer) ([#75](https://github.com/islee23520/seoul-kenshi/issues/75))
 - 진형 편집 PlayMode 경로 ([#76](https://github.com/islee23520/seoul-kenshi/issues/76))
 - 웹 코어 루프 POC: `GAME/play/` (2026-09-14, [#90](https://github.com/islee23520/seoul-kenshi/pull/90))
-- 서울 지역 총람: 행정동 427동 저작·검증 파이프라인 `TOOL/tools/regions/` (2026-09-13). Unity 내부 공간 아님
+- 서울 지역 데이터: 행정동 427동 저작·검증 파이프라인 `TOOL/tools/regions/` (2026-09-13). Unity 내부 공간 아님
 
 남은 열린 이슈:
 

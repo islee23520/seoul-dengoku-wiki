@@ -75,6 +75,29 @@ test('stage keeps hub index at root and React wiki under /wiki', async () => {
   assert.equal(await readFile(join(output, 'wiki', 'index.html'), 'utf8'), '<h1>wiki</h1>')
 })
 
+test('stage excludes retired nested routes from a published page', async () => {
+  const { stageHub } = await import(modulePath)
+  const root = await mkdtemp(join(tmpdir(), 'hub-deploy-exclude-'))
+  const output = join(root, 'output')
+  await mkdir(join(root, 'wiki'), { recursive: true })
+  await mkdir(join(root, 'system-design', 'regions'), { recursive: true })
+  await writeFile(join(root, 'index.html'), '<h1>hub</h1>')
+  await writeFile(join(root, 'wiki', 'index.html'), '<h1>wiki</h1>')
+  await writeFile(join(root, 'system-design', 'index.html'), '<h1>system</h1>')
+  await writeFile(join(root, 'system-design', 'regions', 'index.html'), '<h1>retired</h1>')
+
+  await stageHub({
+    root,
+    output,
+    hubIndex: 'index.html',
+    wikiDist: 'wiki',
+    pages: [{ id: 'system-design', source: 'system-design', target: 'system-design', required: true, entry: 'index.html', exclude: ['regions'] }],
+  })
+
+  assert.equal(await readFile(join(output, 'system-design', 'index.html'), 'utf8'), '<h1>system</h1>')
+  await assert.rejects(readFile(join(output, 'system-design', 'regions', 'index.html'), 'utf8'), /ENOENT/)
+})
+
 test('staged release verifier rejects Git LFS pointers masquerading as web assets', async () => {
   const root = await mkdtemp(join(tmpdir(), 'hub-lfs-pointer-'))
   const pointer = 'version https://git-lfs.github.com/spec/v1\noid sha256:0000000000000000000000000000000000000000000000000000000000000000\nsize 15184\n'

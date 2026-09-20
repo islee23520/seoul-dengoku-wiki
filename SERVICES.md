@@ -56,7 +56,6 @@ GitHub `main`에 새 커밋이 push되면 `.github/workflows/deploy-windows-hub.
 | `/portrait-gen/` | `TOOL/portrait-gen/` | 애니메 풍 초상 제작·큐레이션 브라우저와 `.omo/evidence` SQLite 자산 SSoT. 정적 도구, 런타임 아님 — 스테이징: `node TOOL/portrait-gen/tools/portrait/stage-potrait-generator.mjs` |
 | `/system-design/` | `GDD/system-design/` | 시스템 구조 보고 HTML |
 | `/total-war-ui/` | `GDD/system-design/total-war-ui/` | 토탈워식 부대 지휘와 애니메이션풍 정비율 방향의 UI/UX 설계 템플릿. 게임 런타임·오드랜드 POC와 별개 |
-| `/system-design/regions/` | `GDD/system-design/regions/` | 서울 25구·427동 지역 총람. 2026-09-13 |
 | `/design-store/` | `GDD/design-store/` | MDA 시트 + LORE 정본 전량. SQLite에서 렌더한 HTML |
 | `/ui-ux-refs/` | `GAME-REFERENCE/ui-ux-refs/` | UI/UX 레퍼런스 취합. 이슈 #101. 2026-09-14 |
 | `/design/` `/world/` `/rules/` | `WEB/wiki/` + 정본 `GDD/`·`LORE/` | React 공식 위키 셸. VitePress는 정본 렌더·링크 품질 게이트에 사용 |

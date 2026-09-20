@@ -20,7 +20,7 @@ export const wikiLinks = {
   structures: '/world/Structures',
   subway: '/world/World-and-Subway-Layers',
   stations: '/world/Seoul-Station-Catalog',
-  regions: '/system-design/regions/',
+  regions: '/world/World-and-Subway-Layers',
   economy: '/world/Economy-and-Production',
   logistics: '/world/Logistics-and-Infrastructure',
   peopleAndMachines: '/world/People-and-Machines',

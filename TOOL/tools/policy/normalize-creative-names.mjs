@@ -25,7 +25,7 @@ const excludedPrefixes = [
   '.omo/',
   'RESEARCH/canon-reference/',
   'RESEARCH/verification/worktree-cleanup/',
-  'GDD/system-design/regions/',
+  'TOOL/tools/regions/data/',
   'LORE/regions/content/',
   'LORE/regions/sources/',
 ];

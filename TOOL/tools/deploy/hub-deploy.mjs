@@ -58,7 +58,13 @@ export const stageHub = async ({ root, output, hubIndex = 'index.html', wikiDist
   for (const page of pages) {
     const source = resolve(root, page.source)
     if (!(await fileExists(resolve(source, page.entry)))) continue
-    await cp(source, resolve(output, page.target), { recursive: true, force: true, filter: (path) => !path.split('/').at(-1)?.startsWith('._') })
+    const excluded = (page.exclude ?? []).map((path) => resolve(source, path))
+    await cp(source, resolve(output, page.target), {
+      recursive: true,
+      force: true,
+      filter: (path) => !path.split('/').at(-1)?.startsWith('._')
+        && !excluded.some((retired) => path === retired || path.startsWith(`${retired}/`)),
+    })
     stagedPages.push({ id: page.id, target: `/${page.target}/`, source: page.source })
   }
 

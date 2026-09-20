@@ -1,7 +1,7 @@
 {
   "pages": [
     { "id": "play", "source": "GAME/play", "target": "play", "required": true, "entry": "index.html" },
-    { "id": "system-design", "source": "GDD/system-design", "target": "system-design", "required": true, "entry": "index.html" },
+    { "id": "system-design", "source": "GDD/system-design", "target": "system-design", "required": true, "entry": "index.html", "exclude": ["regions"] },
     { "id": "total-war-ui", "source": "GDD/system-design/total-war-ui", "target": "total-war-ui", "required": true, "entry": "index.html" },
     { "id": "ui-layout-moodboard", "source": "GAME-REFERENCE/ui-layout-moodboard", "target": "ui-layout-moodboard", "required": true, "entry": "index.html" },
     { "id": "portrait-gen", "source": "TOOL/portrait-gen", "target": "portrait-gen", "required": true, "entry": "index.html" },

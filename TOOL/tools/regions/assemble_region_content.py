@@ -43,9 +43,9 @@ def combine_content(atlas, documents):
     return result
 
 
-def write_view(atlas, directory, objects_path):
-    """Export every region and every assigned station/facility, without raw contacts."""
-    directory.mkdir(parents=True, exist_ok=True)
+def write_map_data(atlas, output_path, objects_path):
+    """Export map input for the official wiki without creating another public viewer."""
+    output_path.parent.mkdir(parents=True, exist_ok=True)
     region_rows = []
     for region in atlas["regions"]:
         display_geometry = shape(region["geometry_5179"]).simplify(6, preserve_topology=True)
@@ -80,8 +80,8 @@ def write_view(atlas, directory, objects_path):
               "map_note": "표시 지도는 EPSG:5179에서 6m 단순화. 전수 검증은 단순화 전 원본 도형으로 수행.",
               "attribution": "통계청 SGIS · vuski/admdongkor (CC BY 4.0), © OpenStreetMap contributors (ODbL). Mapzen/USGS 지형."}
     payload = json.dumps(result, ensure_ascii=False, separators=(",", ":"), allow_nan=False).replace("</", "<\\/")
-    (directory / "atlas-data.js").write_text("window.SEOUL_REGION_ATLAS=" + payload + ";\n", encoding="utf-8")
-    return {"regions": len(region_rows), "sites": len(sites), "bytes": (directory / "atlas-data.js").stat().st_size}
+    output_path.write_text("window.SEOUL_REGION_ATLAS=" + payload + ";\n", encoding="utf-8")
+    return {"regions": len(region_rows), "sites": len(sites), "bytes": output_path.stat().st_size}
 
 
 def prose_text(document):
@@ -98,7 +98,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--atlas", required=True, type=Path)
     parser.add_argument("--content-dir", required=True, type=Path)
-    parser.add_argument("--view-dir", required=True, type=Path)
+    parser.add_argument("--map-data", required=True, type=Path)
     args = parser.parse_args()
     paths = sorted(args.content_dir.glob("*.json"))
     documents = [load(path) for path in paths]
@@ -111,7 +111,7 @@ def main():
     prose_dir.mkdir(exist_ok=True)
     for path, document in zip(paths, documents):
         (prose_dir / path.with_suffix(".md").name).write_text(prose_text(document), encoding="utf-8")
-    result = write_view(atlas, args.view_dir, args.atlas.parent / atlas["files"]["objects"])
+    result = write_map_data(atlas, args.map_data, args.atlas.parent / atlas["files"]["objects"])
     print(json.dumps(result, ensure_ascii=False))
 
 

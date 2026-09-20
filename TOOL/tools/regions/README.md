@@ -13,6 +13,10 @@ python3 Tool/tools/regions/verify_region_atlas.py --atlas .omo/evidence/seoul-re
 python3 Tool/tools/regions/verify_region_atlas.py --atlas .omo/evidence/seoul-regions/atlas.json
 ```
 
+Authored content assembly writes the official-wiki map input to
+`TOOL/tools/regions/data/atlas-data.js`. It does not create a separate public
+region viewer.
+
 The final command intentionally exits 1 while dong content is null. Geometry-only
 success is explicitly intermediate, never a complete authored-atlas claim.
 Rebuilding overwrites generated artifacts, including authored content if added to
