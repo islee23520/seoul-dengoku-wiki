@@ -114,7 +114,7 @@ test('territory map is a real Three.js scene with state labels and flags', async
   assert.match(map, /pan:/)
   assert.match(map, /zoom:/)
   assert.doesNotMatch(map, /side === 'left'/)
-  assert.match(flags, /state-flags\/\$\{normalizedId\}\.webp/)
+  assert.match(flags, /state-flags\/\$\{normalizedId\}\.webp\?v=20260920-1/)
   assert.doesNotMatch(flags, /<svg|<path|<text/)
   assert.match(map, /state-flags\/concept-sheet\.webp/)
 })
