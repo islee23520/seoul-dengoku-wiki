@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="8" result="Passed" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-20 13:07:27Z" end-time="2026-09-20 13:07:27Z" duration="0.0377149">
+  <test-suite type="TestSuite" id="1000" name="서울:전국" fullname="서울:전국" runstate="Runnable" testcasecount="169" result="Passed" start-time="2026-09-20 13:07:27Z" end-time="2026-09-20 13:07:27Z" duration="0.037715" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1197" name="Janseon.Foundation.EditModeTests.dll" fullname="/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave3-task32/GAME/Library/ScriptAssemblies/Janseon.Foundation.EditModeTests.dll" runstate="Runnable" testcasecount="168" result="Passed" start-time="2026-09-20 13:07:27Z" end-time="2026-09-20 13:07:27Z" duration="0.033643" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="60354" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1198" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="168" result="Passed" start-time="2026-09-20 13:07:27Z" end-time="2026-09-20 13:07:27Z" duration="0.032567" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1201" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="131" result="Passed" start-time="2026-09-20 13:07:27Z" end-time="2026-09-20 13:07:27Z" duration="0.031476" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1202" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="131" result="Passed" start-time="2026-09-20 13:07:27Z" end-time="2026-09-20 13:07:27Z" duration="0.027644" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1117" name="PerSoldierBattleTests" fullname="Janseon.Foundation.Tests.PerSoldierBattleTests" classname="Janseon.Foundation.Tests.PerSoldierBattleTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-09-20 13:07:27Z" end-time="2026-09-20 13:07:27Z" duration="0.025770" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1118" name="Open_AllowsTwentySoldiers_AndKeepsHeroSeparateFromSoldierRoster" fullname="Janseon.Foundation.Tests.PerSoldierBattleTests.Open_AllowsTwentySoldiers_AndKeepsHeroSeparateFromSoldierRoster" methodname="Open_AllowsTwentySoldiers_AndKeepsHeroSeparateFromSoldierRoster" classname="Janseon.Foundation.Tests.PerSoldierBattleTests" runstate="Runnable" seed="1206113402" result="Passed" start-time="2026-09-20 13:07:27Z" end-time="2026-09-20 13:07:27Z" duration="0.010744" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1120" name="Open_RejectsDuplicateSoldierId" fullname="Janseon.Foundation.Tests.PerSoldierBattleTests.Open_RejectsDuplicateSoldierId" methodname="Open_RejectsDuplicateSoldierId" classname="Janseon.Foundation.Tests.PerSoldierBattleTests" runstate="Runnable" seed="1184985648" result="Passed" start-time="2026-09-20 13:07:27Z" end-time="2026-09-20 13:07:27Z" duration="0.000921" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1119" name="Open_RejectsTwentyFirstSoldier" fullname="Janseon.Foundation.Tests.PerSoldierBattleTests.Open_RejectsTwentyFirstSoldier" methodname="Open_RejectsTwentyFirstSoldier" classname="Janseon.Foundation.Tests.PerSoldierBattleTests" runstate="Runnable" seed="1104569547" result="Passed" start-time="2026-09-20 13:07:27Z" end-time="2026-09-20 13:07:27Z" duration="0.000159" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1124" name="Step_UsesAiIntervalAndNonCardinalPath_AndResolvesMoraleAndOutcome" fullname="Janseon.Foundation.Tests.PerSoldierBattleTests.Step_UsesAiIntervalAndNonCardinalPath_AndResolvesMoraleAndOutcome" methodname="Step_UsesAiIntervalAndNonCardinalPath_AndResolvesMoraleAndOutcome" classname="Janseon.Foundation.Tests.PerSoldierBattleTests" runstate="Runnable" seed="807197005" result="Passed" start-time="2026-09-20 13:07:27Z" end-time="2026-09-20 13:07:27Z" duration="0.004640" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1125" name="Submit_InvalidPathIsRejectedWithoutChangingBattleState" fullname="Janseon.Foundation.Tests.PerSoldierBattleTests.Submit_InvalidPathIsRejectedWithoutChangingBattleState" methodname="Submit_InvalidPathIsRejectedWithoutChangingBattleState" classname="Janseon.Foundation.Tests.PerSoldierBattleTests" runstate="Runnable" seed="1701097599" result="Passed" start-time="2026-09-20 13:07:27Z" end-time="2026-09-20 13:07:27Z" duration="0.000697" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1123" name="SubmitAndStep_CrowdedMovementDoesNotTeleportOrOverlapSoldierRadii" fullname="Janseon.Foundation.Tests.PerSoldierBattleTests.SubmitAndStep_CrowdedMovementDoesNotTeleportOrOverlapSoldierRadii" methodname="SubmitAndStep_CrowdedMovementDoesNotTeleportOrOverlapSoldierRadii" classname="Janseon.Foundation.Tests.PerSoldierBattleTests" runstate="Runnable" seed="483571210" result="Passed" start-time="2026-09-20 13:07:27Z" end-time="2026-09-20 13:07:27Z" duration="0.001320" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1122" name="SubmitAndStep_ReplayWithSameDeltaAndCommandsIsDeterministic" fullname="Janseon.Foundation.Tests.PerSoldierBattleTests.SubmitAndStep_ReplayWithSameDeltaAndCommandsIsDeterministic" methodname="SubmitAndStep_ReplayWithSameDeltaAndCommandsIsDeterministic" classname="Janseon.Foundation.Tests.PerSoldierBattleTests" runstate="Runnable" seed="1294944900" result="Passed" start-time="2026-09-20 13:07:27Z" end-time="2026-09-20 13:07:27Z" duration="0.000403" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1121" name="SubmitAndStep_ResolveIndividualMeleeAndRangedCasualtiesAtRangeBoundaries" fullname="Janseon.Foundation.Tests.PerSoldierBattleTests.SubmitAndStep_ResolveIndividualMeleeAndRangedCasualtiesAtRangeBoundaries" methodname="SubmitAndStep_ResolveIndividualMeleeAndRangedCasualtiesAtRangeBoundaries" classname="Janseon.Foundation.Tests.PerSoldierBattleTests" runstate="Runnable" seed="1686170534" result="Passed" start-time="2026-09-20 13:07:27Z" end-time="2026-09-20 13:07:27Z" duration="0.000524" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: /Users/ilseoblee/Library/Application Support/Janseon Studio/서울_전국/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
