@@ -21,6 +21,7 @@ $manifestVerifier = Join-Path $releaseRoot "verify-staged-release.mjs"
 $postVerifyScript = Join-Path $releaseRoot "check-live-contract.mjs"
 $wikiCatalog = Join-Path $releaseRoot "wikiCatalog.ts"
 $postVerifyJson = Join-Path $root "live-http-green.json"
+$tarExecutable = Join-Path $env:SystemRoot "System32\tar.exe"
 $promoteScript = Join-Path $releaseRoot "promote-release.ps1"
 $rollbackScript = Join-Path $releaseRoot "rollback-release.ps1"
 $lockPath = Join-Path $root "deploy.lock"
@@ -79,7 +80,7 @@ try {
 
     Write-Host "DEPLOY_STAGE extract-next"
     New-Item -ItemType Directory -Path $next -Force | Out-Null
-    Invoke-Native "tar" @("-xf", $archive, "-C", $next)
+    Invoke-Native $tarExecutable @("-xf", $archive, "-C", $next)
 
     Get-ChildItem $next -Recurse -Filter "._*" -Force -ErrorAction SilentlyContinue |
         Remove-Item -Force -ErrorAction SilentlyContinue
