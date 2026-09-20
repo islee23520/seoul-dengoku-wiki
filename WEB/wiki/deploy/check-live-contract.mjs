@@ -13,7 +13,7 @@ const compatibilityRoutes = [
   '/wiki/world/World-Unbinding',
   '/wiki/world/',
 ]
-const regressionRoutes = ['/', '/wiki/', '/wiki/states', '/play/']
+const regressionRoutes = ['/', '/wiki/', '/wiki/states', '/gdd/', '/gdd/documents', '/gdd/data', '/play/']
 const removedRoutes = ['/system-design/regions/']
 const failures = []
 
