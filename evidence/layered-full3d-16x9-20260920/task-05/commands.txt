@@ -1,6 +1,8 @@
 BASE=5588cea0c91b4fdce5f071e59f0b5897c2b1e326
 RED: EDITMODE_RUN(Janseon.Foundation.Tests.PlaceIdentityTests.ControlUsesBuildingOwnershipAndDongInfluence, /tmp/task5-red/happy.xml) -> exit 2
 RED: EDITMODE_RUN(Janseon.Foundation.Tests.PlaceIdentityTests.SurfaceAndUndergroundControlAreIndependent, /tmp/task5-red/failure.xml) -> exit 2
+RED assertion evidence: RED-happy.xml names ControlUsesBuildingOwnershipAndDongInfluence and fails `CampaignControlState must own building, dong, and station control.`
+RED assertion evidence: RED-failure.xml names SurfaceAndUndergroundControlAreIndependent and fails because CampaignControlState is absent.
 GREEN: EDITMODE_RUN(Janseon.Foundation.Tests.PlaceIdentityTests.ControlUsesBuildingOwnershipAndDongInfluence, /tmp/task5-green2/happy.xml) -> exit 0
 GREEN: EDITMODE_RUN(Janseon.Foundation.Tests.PlaceIdentityTests.SurfaceAndUndergroundControlAreIndependent, /tmp/task5-green2/failure.xml) -> exit 0
 REGRESSION: EDITMODE_RUN(Janseon.Foundation.Tests.PlaceIdentityTests, /tmp/task5-full/full.xml) -> exit 0 (12/12)
