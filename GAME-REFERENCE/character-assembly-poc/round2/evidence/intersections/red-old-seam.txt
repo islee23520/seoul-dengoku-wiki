@@ -1,0 +1,11 @@
+Command: uv run --with pytest --with numpy pytest GAME-REFERENCE/character-assembly-poc/round2/tests/test_intersections.py -q
+Observed before replacement: 1 failed, 1 passed.
+
+The immutable round-one audit raised ValueError instead of returning a rejecting
+verdict for an empty (0, 3) triangle array:
+
+  ValueError: zero-size array to reduction operation minimum which has no identity
+
+The second regression, a proper crossing rescaled from units to 1e-6 units,
+still failed as expected. This RED is an actual behavioral defect, not a missing
+module or empty stub. The immutable source was read and executed without writes.

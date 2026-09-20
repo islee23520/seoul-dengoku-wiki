@@ -1,0 +1,76 @@
+FF                                                                       [100%]
+=================================== FAILURES ===================================
+_ test_spatially_separated_vertices_do_not_require_all_pair_distances[duplicates] _
+
+operation = 'duplicates'
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x106ad2ea0>
+
+    @pytest.mark.parametrize("operation", ["duplicates", "symmetry"])
+    def test_spatially_separated_vertices_do_not_require_all_pair_distances(
+        operation: str, monkeypatch: pytest.MonkeyPatch,
+    ) -> None:
+        # Given: exact mirror pairs, each YZ location far beyond the search tolerance.
+        vertices = [point for index in range(1000) for point in ((-1.0, float(index), 0.0), (1.0, float(index), 0.0))]
+        calls = 0
+        real_distance = geometry_audit.dist
+    
+        def counted_distance(first, second):
+            nonlocal calls
+            calls += 1
+            return real_distance(first, second)
+    
+        monkeypatch.setattr(geometry_audit, "dist", counted_distance)
+        # When: the actual duplicate or full-coverage symmetry check runs.
+        match operation:
+            case "duplicates":
+                measured = geometry_audit.audit_topology(vertices, [], [(0, 1, 2)], frozenset(), 1e-12, 1e-6)
+                assert measured.duplicate_vertex_pairs == ()
+            case "symmetry":
+                symmetry = geometry_audit.audit_symmetry(vertices, 0.0, 1e-9, 1e-6)
+                assert symmetry.unmatched_vertex_ids == ()
+            case _:
+                raise AssertionError(operation)
+        # Then: work follows local candidates, not all two million distant pairs.
+>       assert calls < 20_000
+E       assert 1999000 < 20000
+
+tests/test_geometry_gate.py:170: AssertionError
+_ test_spatially_separated_vertices_do_not_require_all_pair_distances[symmetry] _
+
+operation = 'symmetry'
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x106ad2fd0>
+
+    @pytest.mark.parametrize("operation", ["duplicates", "symmetry"])
+    def test_spatially_separated_vertices_do_not_require_all_pair_distances(
+        operation: str, monkeypatch: pytest.MonkeyPatch,
+    ) -> None:
+        # Given: exact mirror pairs, each YZ location far beyond the search tolerance.
+        vertices = [point for index in range(1000) for point in ((-1.0, float(index), 0.0), (1.0, float(index), 0.0))]
+        calls = 0
+        real_distance = geometry_audit.dist
+    
+        def counted_distance(first, second):
+            nonlocal calls
+            calls += 1
+            return real_distance(first, second)
+    
+        monkeypatch.setattr(geometry_audit, "dist", counted_distance)
+        # When: the actual duplicate or full-coverage symmetry check runs.
+        match operation:
+            case "duplicates":
+                measured = geometry_audit.audit_topology(vertices, [], [(0, 1, 2)], frozenset(), 1e-12, 1e-6)
+                assert measured.duplicate_vertex_pairs == ()
+            case "symmetry":
+                symmetry = geometry_audit.audit_symmetry(vertices, 0.0, 1e-9, 1e-6)
+                assert symmetry.unmatched_vertex_ids == ()
+            case _:
+                raise AssertionError(operation)
+        # Then: work follows local candidates, not all two million distant pairs.
+>       assert calls < 20_000
+E       assert 1000000 < 20000
+
+tests/test_geometry_gate.py:170: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_geometry_gate.py::test_spatially_separated_vertices_do_not_require_all_pair_distances[duplicates]
+FAILED tests/test_geometry_gate.py::test_spatially_separated_vertices_do_not_require_all_pair_distances[symmetry]
+2 failed, 28 deselected in 0.27s

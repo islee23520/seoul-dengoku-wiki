@@ -1,0 +1,41 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_______ test_manifest_criteria_can_validate_real_unannotated_extraction ________
+
+tmp_path = PosixPath('/private/var/folders/3w/2wxm65v16vncz3bwq6q4xp1w0000gn/T/pytest-of-danny/pytest-35/test_manifest_criteria_can_val0')
+
+    def test_manifest_criteria_can_validate_real_unannotated_extraction(tmp_path: Path) -> None:
+        # Given: native-style measurements contain no repair-authored approval criteria.
+        payload = _positive()
+        criteria = payload.pop("criteria")
+        payload["ratios"] = {}
+        meshes = payload["meshes"]
+        assert isinstance(meshes, list)
+        for mesh in meshes:
+            assert isinstance(mesh, dict)
+            mesh["role"] = None
+        manifest = {"schema_version": 1, "criteria": criteria}
+        input_path = tmp_path / "native.json"
+        manifest_path = tmp_path / "manifest.json"
+        output_path = tmp_path / "report.json"
+        input_path.write_text(json.dumps(payload), encoding="utf-8")
+        manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+        # When: the CLI binds independently declared roles/criteria to measured objects.
+        completed = subprocess.run(
+            [sys.executable, "-m", "gate.geometry_report", "--input", str(input_path),
+             "--manifest", str(manifest_path), "--output", str(output_path)],
+            cwd=ROUND2, capture_output=True, text=True, check=False, timeout=30,
+        )
+        # Then: missing measured ratios remain UNPROVEN, not syntax error or fake PASS.
+>       assert output_path.exists(), completed.stderr
+E       AssertionError: usage: python -m gate.geometry_report [-h] --input INPUT --output OUTPUT
+E         python -m gate.geometry_report: error: unrecognized arguments: --manifest /private/var/folders/3w/2wxm65v16vncz3bwq6q4xp1w0000gn/T/pytest-of-danny/pytest-35/test_manifest_criteria_can_val0/manifest.json
+E         
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('/private/var/folders/3w/2wxm65v16vncz3bwq6q4xp1w0000gn/T/pytest-of-danny/pytest-35/test_manifest_criteria_can_val0/report.json').exists
+
+tests/test_geometry_gate.py:297: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_geometry_gate.py::test_manifest_criteria_can_validate_real_unannotated_extraction
+1 failed, 32 deselected in 0.09s

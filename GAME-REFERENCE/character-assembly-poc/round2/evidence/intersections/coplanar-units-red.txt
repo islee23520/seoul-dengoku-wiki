@@ -1,0 +1,26 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+__________ test_coplanar_clip_uses_area_units_for_edge_side_tolerance __________
+
+    def test_coplanar_clip_uses_area_units_for_edge_side_tolerance() -> None:
+        # Given: tiny coplanar triangles with overlapping AABBs but a real gap.
+        # Every point of the second triangle satisfies x+y > 0.0007.
+        triangles = np.asarray([
+            [[0.0, 0.0, 0.0], [0.0007, 0.0, 0.0], [0.0, 0.0007, 0.0]],
+            [[0.000351, 0.000351, 0.0], [0.000701, 0.000351, 0.0], [0.000351, 0.000701, 0.0]],
+            [[1.0, 1.0, 0.0], [1.1, 1.0, 0.0], [1.0, 1.1, 0.0]],
+            [[1.0, 1.0, 1.65], [1.1, 1.0, 1.65], [1.0, 1.1, 1.65]],
+        ])
+        # When: linear scene tolerance is compared against the clip's cross product.
+        result = audit_triangle_soup(triangles)
+        # Then: clipping must not manufacture positive overlap across that gap.
+>       assert result.status == "PASS"
+E       AssertionError: assert 'FAIL' == 'PASS'
+E         
+E         - PASS
+E         + FAIL
+
+tests/test_intersections.py:75: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_intersections.py::test_coplanar_clip_uses_area_units_for_edge_side_tolerance
+1 failed, 10 deselected in 0.07s

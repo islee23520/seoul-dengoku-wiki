@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "criteria_version": "round2-world-triangle-intersection-v1",
+  "implementation": {
+    "triangle_source": "evaluated Blender mesh loop_triangles",
+    "coordinate_space": "world",
+    "vertex_identity": "object_name_full plus evaluated vertex index",
+    "broadphase": "median-split AABB BVH with bounded leaf size; no full-body O(n^2) loop and no bbox-volume bin expansion",
+    "exact_classification": [
+      "PROPER_INTERSECTION",
+      "COPLANAR_POSITIVE_AREA",
+      "POINT_CONTACT",
+      "POINT_OR_EDGE_CONTACT",
+      "TOPOLOGY_CONTACT"
+    ],
+    "epsilon": "linear=max(extent*1e-9, spacing(extent)*64); area=max(extent^2*1e-16, spacing(extent^2)*64)"
+  },
+  "verification": {
+    "focused_tests": "9 passed",
+    "round2_suite_clean_run": "79 passed from round2 working directory before an unrelated concurrent geometry-report test appeared",
+    "latest_round2_suite": "79 passed, 1 unrelated failure: geometry_report CLI lacks --manifest; file is outside this task ownership",
+    "mutation": "dropping TRIANGLE_INTERSECTION hard failure produced 5 RED failures; restoration returned 9 passed",
+    "namespacing_mutation": "same local IDs across Body/Tongue yielded shared_vertices=0; removing object namespace yielded shared_vertices=3",
+    "native_fixture_exit_codes": {
+      "clean": 0,
+      "crossing": 2
+    }
+  },
+  "real_audits": [
+    {
+      "source": "recovered-oral-final-contact-review.blend",
+      "sha256": "edd53c249a8eaa5bc01a215b7f191115c8c4ccfdfabcc828c9a153cb415bd366",
+      "triangles": 2609,
+      "status": "FAIL",
+      "intersections": 386
+    },
+    {
+      "source": "male-tongue-curvature-refined-review.blend",
+      "sha256": "352e6125516c4105348779c5725f20358db46b10573e3acda0a5d9bd480e9bf9",
+      "triangles": 2208,
+      "status": "PASS",
+      "intersections": 0
+    },
+    {
+      "source": "male-base-patch-color-review.blend",
+      "sha256": "f9d9ef8a5a7f553a80b78f1166c8fbcd5e563459e3b4c323a815d5c4371d4a63",
+      "triangles": 133792,
+      "status": "FAIL",
+      "intersections": 1716,
+      "coverage": "full evaluated mesh; no triangle sampling or truncation"
+    }
+  ],
+  "limitations": [
+    "This is a geometric hard gate, not anatomical intent approval.",
+    "Boundary-only non-topological contacts remain diagnostics and do not fail.",
+    "Native verification requires Blender bpy; pure classifier tests require numpy."
+  ],
+  "cleanup": {
+    "active_monitors": 0,
+    "fixture_backups_removed": true,
+    "source_files_modified": false
+  }
+}

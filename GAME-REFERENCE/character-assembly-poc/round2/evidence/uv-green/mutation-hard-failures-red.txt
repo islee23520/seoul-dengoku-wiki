@@ -1,0 +1,59 @@
+..FFF..                                                                  [100%]
+=================================== FAILURES ===================================
+________ test_dict_shaped_positive_overlap_is_preserved_in_typed_result ________
+
+    def test_dict_shaped_positive_overlap_is_preserved_in_typed_result() -> None:
+        # Given
+        triangles = np.asarray(
+            [
+                [[0.0, 0.0], [1.0, 0.0], [0.0, 1.0]],
+                [[0.0, 1.0], [1.0, 0.0], [0.0, 0.0]],
+            ]
+        )
+    
+        # When
+        result = audit_triangles(triangles)
+    
+        # Then
+>       assert result.status == "FAIL"
+E       AssertionError: assert 'PASS' == 'FAIL'
+E         
+E         - FAIL
+E         + PASS
+
+tests/uv_red/test_round1_uv_false_approval_red.py:68: AssertionError
+____________________ test_nonfinite_failure_is_conjunctive _____________________
+
+    def test_nonfinite_failure_is_conjunctive() -> None:
+        # Given / When
+        result = audit_triangles(
+            np.asarray([[[0.0, 0.0], [np.nan, 0.0], [0.0, 1.0]]])
+        )
+    
+        # Then
+>       assert result.hard_failures == ("NONFINITE_UV",)
+E       AssertionError: assert () == ('NONFINITE_UV',)
+E         
+E         Right contains one more item: 'NONFINITE_UV'
+E         Use -v to get more diff
+
+tests/uv_red/test_round1_uv_false_approval_red.py:79: AssertionError
+____________________ test_degenerate_failure_is_conjunctive ____________________
+
+    def test_degenerate_failure_is_conjunctive() -> None:
+        # Given / When
+        result = audit_triangles(
+            np.asarray([[[0.0, 0.0], [0.5, 0.0], [1.0, 0.0]]])
+        )
+    
+        # Then
+>       assert "DEGENERATE_UV_TRIANGLE" in result.hard_failures
+E       AssertionError: assert 'DEGENERATE_UV_TRIANGLE' in ()
+E        +  where () = AuditResult(status='PASS', triangle_count=1, degenerate_triangle_ids=(0,), overlaps=(), exact_intersection_tests=0, hard_failures=()).hard_failures
+
+tests/uv_red/test_round1_uv_false_approval_red.py:89: AssertionError
+=========================== short test summary info ============================
+FAILED tests/uv_red/test_round1_uv_false_approval_red.py::test_dict_shaped_positive_overlap_is_preserved_in_typed_result
+FAILED tests/uv_red/test_round1_uv_false_approval_red.py::test_nonfinite_failure_is_conjunctive
+FAILED tests/uv_red/test_round1_uv_false_approval_red.py::test_degenerate_failure_is_conjunctive
+3 failed, 4 passed in 0.57s

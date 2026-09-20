@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "criteria": {
+    "area_epsilon_m2": 1e-12,
+    "duplicate_vertex_epsilon_m": 1e-8,
+    "symmetry": {},
+    "declared_openings": {},
+    "protected_vertices": {},
+    "ratio_targets": {},
+    "required_roles": {
+      "base_body": {
+        "object_name": "Female_Body_candidate-a-neck-fit_PROVISIONAL_UNJOINED",
+        "landmark_envelope": {"min": [-2, -2, -0.001], "max": [2, 2, 2]}
+      },
+      "base_head": {
+        "object_name": "Female_Head_Skin_candidate-a-neck-fit_PROVISIONAL_UNJOINED",
+        "landmark_envelope": {"min": [-2, -2, -0.001], "max": [2, 2, 2]}
+      }
+    }
+  },
+  "claim_scope": "Coarse coordinate envelope only, not anatomical fit. No boundary exemptions: unjoined source defects must fail. Ratio remains UNPROVEN."
+}

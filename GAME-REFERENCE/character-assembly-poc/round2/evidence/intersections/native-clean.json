@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "criteria_version": "round2-world-triangle-intersection-v1",
+  "status": "PASS",
+  "source": {
+    "path": "/Users/danny/workspace/seoul-kenshi-character-round2/GAME-REFERENCE/character-assembly-poc/round2/fixtures/intersections/clean.blend",
+    "sha256": "9c0c98cbb238d94063a89d512199ab6c9b0a6534ec2cc617b0176647e4478f08",
+    "blender_version": "5.2.2 LTS"
+  },
+  "extraction": {
+    "object_count": 2,
+    "objects": [
+      {
+        "object_name": "Body",
+        "vertex_count": 3,
+        "evaluated_loop_triangles": 1,
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "object_name": "Tongue",
+        "vertex_count": 3,
+        "evaluated_loop_triangles": 1,
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    ],
+    "empty_mesh_objects": [],
+    "evaluated_loop_triangles": 2,
+    "coordinate_space": "WORLD",
+    "vertex_identity": "object_name_full+evaluated_vertex_index"
+  },
+  "measurements": {
+    "triangle_count": 2,
+    "intersection_count": 0,
+    "diagnostic_contact_count": 0,
+    "topology_contact_count": 0,
+    "degenerate_triangle_count": 0,
+    "broadphase_candidate_pairs": 1,
+    "exact_intersection_tests": 1,
+    "tolerance_world_units": 1e-09,
+    "area_tolerance_world_units2": 1.4210854715202004e-14
+  },
+  "hard_failures": [],
+  "intersections": [],
+  "contacts": [],
+  "degenerate_triangle_ids": [],
+  "unproven": []
+}

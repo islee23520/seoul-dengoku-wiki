@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "status": "FAIL",
+  "criteria_version": "round2-geometry-hard-gate-v1",
+  "sources": [
+    {
+      "path": "/Users/danny/workspace/seoul-kenshi/GAME-REFERENCE/character-assembly-poc/2026-09-19/work/female-base-symmetric.blend",
+      "sha256": "ad60f8affdef8fb67659214a25b887bc3795c86c207279d224b3ca5da3d0976d",
+      "blender_version": "5.2.2 LTS",
+      "observed": {
+        "object": "Female_Base_Assembly",
+        "vertices": 45777,
+        "native_loop_triangles": 91428,
+        "legacy_symmetry_ignored_off_center_vertices": 14866,
+        "head_to_total_height_ratio": 0.5063884631375987
+      }
+    },
+    {
+      "path": "/Users/danny/workspace/seoul-kenshi/GAME-REFERENCE/character-assembly-poc/2026-09-19/deliverables/final-integration.blend",
+      "sha256": "295cb6e7abfb6658f9943294a51583aee7b7ba4cadb3df504dc59582ac10622f",
+      "blender_version": "5.2.2 LTS",
+      "observed": {
+        "mesh_objects": 19,
+        "male_oral_centroid_z_range_m": [0.2482910230755806, 0.3237304836511612],
+        "female_required_oral_roles_present": 0,
+        "female_required_oral_roles_total": 4
+      }
+    }
+  ],
+  "hard_failures": [
+    "SYMMETRY_COVERAGE_INCOMPLETE",
+    "ROLE_OUTSIDE_LANDMARK_ENVELOPE",
+    "REQUIRED_ROLE_MISSING"
+  ],
+  "unproven": [
+    "MEASURED_RATIO_TARGETS",
+    "SELF_INTERSECTION",
+    "PRODUCTION_CHARACTER_QUALITY"
+  ],
+  "reasoning": "Raw historical ratios are preserved, but no cross-sex ratio rule is used. The candidate is rejected by incomplete reflected coverage and absent/out-of-envelope declared roles. Missing landmark and measured ratio criteria remain UNPROVEN rather than PASS."
+}

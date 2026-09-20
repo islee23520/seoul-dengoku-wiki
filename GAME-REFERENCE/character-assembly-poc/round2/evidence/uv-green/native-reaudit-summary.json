@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "archive_sources": [
+    {
+      "path": "/Users/danny/workspace/seoul-kenshi/GAME-REFERENCE/character-assembly-poc/2026-09-19/scripts/uv_overlap_audit.py",
+      "expected": "fe3c2d57a3d625785d55b8d1cb4557b75bd24a304d81240011ef94ede760f5a6",
+      "actual": "fe3c2d57a3d625785d55b8d1cb4557b75bd24a304d81240011ef94ede760f5a6",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/danny/workspace/seoul-kenshi/GAME-REFERENCE/character-assembly-poc/2026-09-19/scripts/unwrap_female_uv2.py",
+      "expected": "4f278e5f020e8b1ed289ac06f554dd64d3ea732b6529c46fbb56ade131be7b2b",
+      "actual": "4f278e5f020e8b1ed289ac06f554dd64d3ea732b6529c46fbb56ade131be7b2b",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/danny/workspace/seoul-kenshi/GAME-REFERENCE/character-assembly-poc/2026-09-19/scripts/retry_male_uv.py",
+      "expected": "6ce4fa4db7622398e3d3b27bfbaaa949418924c1f03177365f80bd086cec90e5",
+      "actual": "6ce4fa4db7622398e3d3b27bfbaaa949418924c1f03177365f80bd086cec90e5",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/danny/workspace/seoul-kenshi/GAME-REFERENCE/character-assembly-poc/2026-09-19/review/package_blends.py",
+      "expected": "8f375018993964fc77311dd90ab39e2018b0433f4cf0c62ba44c88f3abce7ef3",
+      "actual": "8f375018993964fc77311dd90ab39e2018b0433f4cf0c62ba44c88f3abce7ef3",
+      "unchanged": true
+    }
+  ],
+  "all_archive_sources_unchanged": true,
+  "native_reaudits": [
+    {
+      "name": "female",
+      "source": {
+        "path": "/Users/danny/workspace/seoul-kenshi-character-round2/GAME-REFERENCE/character-assembly-poc/2026-09-19/work/female-base-uv-v2.blend",
+        "sha256": "1c3276b2f183b6d1f0d06a3f0dde7bbac12e49232ce64c904f1fca2f03e17d67",
+        "blender_version": "5.2.2 LTS"
+      },
+      "mesh_count": 1,
+      "triangle_count": 91428,
+      "status": "FAIL",
+      "hard_failures": [
+        "DEGENERATE_UV_TRIANGLE",
+        "POSITIVE_AREA_UV_OVERLAP"
+      ],
+      "unproven": [
+        "ANATOMICAL_SEAMS",
+        "ISLAND_CONNECTIVITY",
+        "PADDING",
+        "PACKING_QUALITY",
+        "TEXEL_DENSITY",
+        "STRETCH",
+        "CHECKER_RENDER",
+        "SOURCE_COLOR_RENDER"
+      ],
+      "measurements": [
+        {
+          "triangle_count": 91428,
+          "degenerate_triangle_count": 40853,
+          "positive_area_overlap_count": 1630,
+          "exact_intersection_tests": 370310
+        }
+      ]
+    },
+    {
+      "name": "male",
+      "source": {
+        "path": "/Users/danny/workspace/seoul-kenshi-character-round2/GAME-REFERENCE/character-assembly-poc/2026-09-19/work/male-base-uv-retry.blend",
+        "sha256": "6d2b37460adfd64e4a7f42036c76eb437d956e2dd43b8388b7a115d9f833c16d",
+        "blender_version": "5.2.2 LTS"
+      },
+      "mesh_count": 1,
+      "triangle_count": 133792,
+      "status": "PASS",
+      "hard_failures": [],
+      "unproven": [
+        "ANATOMICAL_SEAMS",
+        "ISLAND_CONNECTIVITY",
+        "PADDING",
+        "PACKING_QUALITY",
+        "TEXEL_DENSITY",
+        "STRETCH",
+        "CHECKER_RENDER",
+        "SOURCE_COLOR_RENDER"
+      ],
+      "measurements": [
+        {
+          "triangle_count": 133792,
+          "degenerate_triangle_count": 0,
+          "positive_area_overlap_count": 0,
+          "exact_intersection_tests": 590249
+        }
+      ]
+    }
+  ]
+}

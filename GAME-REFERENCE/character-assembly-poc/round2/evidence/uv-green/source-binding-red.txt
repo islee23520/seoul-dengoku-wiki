@@ -1,0 +1,24 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_______________ test_verdict_binds_to_the_extracted_source_hash ________________
+
+    def test_verdict_binds_to_the_extracted_source_hash() -> None:
+        # Given: the same clean triangles in two independently identified inputs.
+        payload = _triangle_payload([[[0.0, 0.0], [0.5, 0.0], [0.0, 0.5]]])
+        payload["source"] = {
+            "path": "/measured/input.blend",
+            "sha256": "a1" * 32,
+            "blender_version": "5.2.2 LTS",
+        }
+        # When: a verdict is emitted independently of the input extraction file.
+        report = audit_extraction(payload)
+        # Then: reviewers can bind the verdict back to the exact measured input.
+>       assert report.get("source") == payload["source"]
+E       AssertionError: assert None == {'path': '/measured/input.blend', 'sha256': 'a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1', 'blender_version': '5.2.2 LTS'}
+E        +  where None = <built-in method get of dict object at 0x10b35bf00>('source')
+E        +    where <built-in method get of dict object at 0x10b35bf00> = {'schema_version': 1, 'status': 'PASS', 'criteria_version': 'round2-uv-hard-gate-v1', 'epsilon': {'unit': 'normalized_uv_squared', 'minimum_triangle_area': 1e-14, 'positive_overlap_area': 1e-13}, ...}.get
+
+tests/test_uv_gate.py:220: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_uv_gate.py::test_verdict_binds_to_the_extracted_source_hash
+1 failed, 17 deselected in 0.07s

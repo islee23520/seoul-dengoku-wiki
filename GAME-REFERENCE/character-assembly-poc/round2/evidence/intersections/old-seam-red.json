@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "immutable_source": {
+    "path": "GAME-REFERENCE/character-assembly-poc/2026-09-19/scripts/triangle_intersection_audit.py",
+    "sha256": "48118ff78721e846c8880b804d2d2e7a7c74fda918697727dc02cebf8ee70db8"
+  },
+  "observations": [
+    {
+      "case": "empty-triangle-array",
+      "expected": "typed rejecting verdict",
+      "observed": "ValueError: zero-size array to reduction operation minimum which has no identity",
+      "false_pass": false
+    },
+    {
+      "case": "fractional-index-2.5",
+      "expected": "MALFORMED_TRIANGLE_INDEX",
+      "observed": {
+        "ok": true,
+        "triangles": 1,
+        "degenerate_triangles": [],
+        "intersections": [],
+        "point_contacts": []
+      },
+      "cause": "np.asarray(..., dtype=np.int64) silently truncated 2.5 to 2",
+      "false_pass": true
+    }
+  ]
+}

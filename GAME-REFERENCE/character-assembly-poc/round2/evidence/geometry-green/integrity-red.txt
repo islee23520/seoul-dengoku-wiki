@@ -1,0 +1,105 @@
+FFFFFF                                                                   [100%]
+=================================== FAILURES ===================================
+____________ test_fixture_status_cannot_bypass_topology_validation _____________
+
+    def test_fixture_status_cannot_bypass_topology_validation() -> None:
+        # Given: a known broken closed mesh with a forged testing-only status.
+        payload = _positive()
+        body = _mesh(payload, "Body")
+        body["status"] = "SYMMETRY_ONLY_FIXTURE"
+        body["triangles"] = []
+        # When: it reaches the same report boundary as real assets.
+        report = audit_extraction(payload)
+        # Then: no testing escape hatch may turn an empty surface into approval.
+>       assert report["status"] != "PASS"
+E       AssertionError: assert 'PASS' != 'PASS'
+
+tests/test_geometry_gate.py:139: AssertionError
+______________ test_invalid_numeric_criteria_cannot_approve[nan] _______________
+
+bad_epsilon = nan
+
+    @pytest.mark.parametrize("bad_epsilon", [float("nan"), float("inf"), -1.0])
+    def test_invalid_numeric_criteria_cannot_approve(bad_epsilon: float) -> None:
+        # Given: a normal candidate with nonphysical validator thresholds.
+        payload = _positive()
+        _mapping(payload, "criteria")["duplicate_vertex_epsilon_m"] = bad_epsilon
+        # When/Then: invalid criteria must be rejected, not weaken the check.
+>       assert audit_extraction(payload)["status"] == "ERROR"
+E       AssertionError: assert 'PASS' == 'ERROR'
+E         
+E         - ERROR
+E         + PASS
+
+tests/test_geometry_gate.py:148: AssertionError
+______________ test_invalid_numeric_criteria_cannot_approve[inf] _______________
+
+bad_epsilon = inf
+
+    @pytest.mark.parametrize("bad_epsilon", [float("nan"), float("inf"), -1.0])
+    def test_invalid_numeric_criteria_cannot_approve(bad_epsilon: float) -> None:
+        # Given: a normal candidate with nonphysical validator thresholds.
+        payload = _positive()
+        _mapping(payload, "criteria")["duplicate_vertex_epsilon_m"] = bad_epsilon
+        # When/Then: invalid criteria must be rejected, not weaken the check.
+>       assert audit_extraction(payload)["status"] == "ERROR"
+E       AssertionError: assert 'FAIL' == 'ERROR'
+E         
+E         - ERROR
+E         + FAIL
+
+tests/test_geometry_gate.py:148: AssertionError
+______________ test_invalid_numeric_criteria_cannot_approve[-1.0] ______________
+
+bad_epsilon = -1.0
+
+    @pytest.mark.parametrize("bad_epsilon", [float("nan"), float("inf"), -1.0])
+    def test_invalid_numeric_criteria_cannot_approve(bad_epsilon: float) -> None:
+        # Given: a normal candidate with nonphysical validator thresholds.
+        payload = _positive()
+        _mapping(payload, "criteria")["duplicate_vertex_epsilon_m"] = bad_epsilon
+        # When/Then: invalid criteria must be rejected, not weaken the check.
+>       assert audit_extraction(payload)["status"] == "ERROR"
+E       AssertionError: assert 'PASS' == 'ERROR'
+E         
+E         - ERROR
+E         + PASS
+
+tests/test_geometry_gate.py:148: AssertionError
+_________ test_required_role_cannot_be_satisfied_by_wrong_named_object _________
+
+    def test_required_role_cannot_be_satisfied_by_wrong_named_object() -> None:
+        # Given: an unrelated object claims the expected role label.
+        payload = _positive()
+        tongue = _mesh(payload, "Tongue")
+        tongue["object_name"] = "UnrelatedObject"
+        # When/Then: role identity is bound to the manifest, not self-claimed labels.
+        report = audit_extraction(payload)
+>       assert "REQUIRED_ROLE_OBJECT_MISMATCH" in report["hard_failures"]
+E       AssertionError: assert 'REQUIRED_ROLE_OBJECT_MISMATCH' in []
+
+tests/test_geometry_gate.py:158: AssertionError
+_________ test_duplicate_role_claim_is_ambiguous_not_last_object_wins __________
+
+    def test_duplicate_role_claim_is_ambiguous_not_last_object_wins() -> None:
+        # Given: two different objects claim a single required tongue role.
+        payload = _positive()
+        duplicate = copy.deepcopy(_mesh(payload, "Tongue"))
+        duplicate["object_name"] = "SecondTongue"
+        meshes = payload["meshes"]
+        assert isinstance(meshes, list)
+        meshes.append(duplicate)
+        # When/Then: the gate must not silently overwrite a role assignment.
+        report = audit_extraction(payload)
+>       assert "DUPLICATE_ROLE_ASSIGNMENT" in report["hard_failures"]
+E       AssertionError: assert 'DUPLICATE_ROLE_ASSIGNMENT' in []
+
+tests/test_geometry_gate.py:171: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_geometry_gate.py::test_fixture_status_cannot_bypass_topology_validation
+FAILED tests/test_geometry_gate.py::test_invalid_numeric_criteria_cannot_approve[nan]
+FAILED tests/test_geometry_gate.py::test_invalid_numeric_criteria_cannot_approve[inf]
+FAILED tests/test_geometry_gate.py::test_invalid_numeric_criteria_cannot_approve[-1.0]
+FAILED tests/test_geometry_gate.py::test_required_role_cannot_be_satisfied_by_wrong_named_object
+FAILED tests/test_geometry_gate.py::test_duplicate_role_claim_is_ambiguous_not_last_object_wins
+6 failed, 22 deselected in 0.05s

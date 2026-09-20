@@ -1,0 +1,1152 @@
+{
+  "schema_version": 1,
+  "status": "EXPECTED_RED_BASELINE_NOT_PRODUCTION_ACCEPTANCE",
+  "engine": {
+    "blender": "5.2.2 LTS"
+  },
+  "units": "meters",
+  "extraction": "evaluated dependency graph mesh with native mesh.calc_loop_triangles()",
+  "source_hashes": {
+    "unjoined": {
+      "path": "/Users/danny/Documents/Character-Assembly-POC/2026-09-19/work/proportion-study-unjoined.blend",
+      "before": "fc1ac9a620f460de3c11753c59f682d4b9678109a8ec069969e95a0be559512e",
+      "after": "fc1ac9a620f460de3c11753c59f682d4b9678109a8ec069969e95a0be559512e",
+      "unchanged": true
+    },
+    "female_failed": {
+      "path": "/Users/danny/workspace/seoul-kenshi/GAME-REFERENCE/character-assembly-poc/2026-09-19/work/female-base-symmetric.blend",
+      "before": "ad60f8affdef8fb67659214a25b887bc3795c86c207279d224b3ca5da3d0976d",
+      "after": "ad60f8affdef8fb67659214a25b887bc3795c86c207279d224b3ca5da3d0976d",
+      "unchanged": true
+    },
+    "integration": {
+      "path": "/Users/danny/workspace/seoul-kenshi/GAME-REFERENCE/character-assembly-poc/2026-09-19/deliverables/final-integration.blend",
+      "before": "295cb6e7abfb6658f9943294a51583aee7b7ba4cadb3df504dc59582ac10622f",
+      "after": "295cb6e7abfb6658f9943294a51583aee7b7ba4cadb3df504dc59582ac10622f",
+      "unchanged": true
+    },
+    "male_guided": {
+      "path": "/Users/danny/Documents/Character-Assembly-POC/2026-09-19/work/male-base-symmetric-review.blend",
+      "before": "c14a95356d45dee26d2de0022ab419e68623ce317f907dad1b3707d0d5f1ed56",
+      "after": "c14a95356d45dee26d2de0022ab419e68623ce317f907dad1b3707d0d5f1ed56",
+      "unchanged": true
+    },
+    "source_lock": {
+      "path": "/Users/danny/workspace/seoul-kenshi-character-round2/GAME-REFERENCE/character-assembly-poc/round2/inputs/source-lock.json",
+      "before": "da33181861c6884f0b379d1e8a82bc92e802a965dd4ede4f7eb14c7672f8fa66",
+      "after": "da33181861c6884f0b379d1e8a82bc92e802a965dd4ede4f7eb14c7672f8fa66",
+      "unchanged": true
+    },
+    "legacy_symmetry": {
+      "path": "/Users/danny/workspace/seoul-kenshi/GAME-REFERENCE/character-assembly-poc/2026-09-19/scripts/symmetrize_female.py",
+      "before": "b14bf52f8f3f83022c0794bfca8566f613f2703a1dcae5e610b1f6d0c47168f3",
+      "after": "b14bf52f8f3f83022c0794bfca8566f613f2703a1dcae5e610b1f6d0c47168f3",
+      "unchanged": true
+    }
+  },
+  "scenes": {
+    "unjoined_female_source": {
+      "head": {
+        "object": "Female_Study_Head",
+        "origin_world": [
+          1.0499999523162842,
+          0.0,
+          0.0
+        ],
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.0499999523162842
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "bounds_world": {
+          "min": [
+            0.9415931105613708,
+            -0.09936688095331192,
+            1.362367033958435
+          ],
+          "max": [
+            1.1584067344665527,
+            0.131779283285141,
+            1.649999976158142
+          ]
+        },
+        "vertices": 25459,
+        "faces": 26010,
+        "native_loop_triangles": 50096,
+        "finite_vertices": true,
+        "material_role_bounds": [
+          {
+            "material_index": 0,
+            "material": "tripo_705ef0c2_aea4_4acf_aedf_bf55c1c12875.001",
+            "vertices": 25459,
+            "bounds_world": {
+              "min": [
+                0.9415931105613708,
+                -0.09936688095331192,
+                1.362367033958435
+              ],
+              "max": [
+                1.1584067344665527,
+                0.131779283285141,
+                1.649999976158142
+              ]
+            }
+          }
+        ]
+      },
+      "body": {
+        "object": "Female_Study_Body",
+        "origin_world": [
+          1.0499999523162842,
+          0.0,
+          0.0
+        ],
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.0499999523162842
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "bounds_world": {
+          "min": [
+            0.2930712103843689,
+            -0.14384225010871887,
+            6.672215668857007e-09
+          ],
+          "max": [
+            1.8069286346435547,
+            0.143842414021492,
+            1.4709635972976685
+          ]
+        },
+        "vertices": 28628,
+        "faces": 30314,
+        "native_loop_triangles": 57241,
+        "finite_vertices": true,
+        "material_role_bounds": [
+          {
+            "material_index": 0,
+            "material": "tripo_67827e40_968c_4dc4_b460_8c37155f325c.003",
+            "vertices": 28628,
+            "bounds_world": {
+              "min": [
+                0.2930712103843689,
+                -0.14384225010871887,
+                6.672215668857007e-09
+              ],
+              "max": [
+                1.8069286346435547,
+                0.143842414021492,
+                1.4709635972976685
+              ]
+            }
+          }
+        ]
+      },
+      "uniform_scale_cancellation": {
+        "head_object_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "body_object_scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "provenance": "proportion-study-unjoined.blend objects authored by gui_proportion_blockout.py; separate native bounds retained"
+      }
+    },
+    "failed_female_symmetric": {
+      "object": "Female_Base_Assembly",
+      "origin_world": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds_world": {
+        "min": [
+          -0.4177704453468323,
+          -0.3357265889644623,
+          5.069331177054437e-09
+        ],
+        "max": [
+          0.4177704453468323,
+          0.33572664856910706,
+          1.6500000953674316
+        ]
+      },
+      "vertices": 45777,
+      "faces": 48382,
+      "native_loop_triangles": 91428,
+      "finite_vertices": true,
+      "material_role_bounds": [
+        {
+          "material_index": 0,
+          "material": "tripo_105239fe_6293_4e4e_9d9f_d949e0720d54.005",
+          "vertices": 26618,
+          "bounds_world": {
+            "min": [
+              -0.4177704453468323,
+              -0.07939066737890244,
+              5.069331177054437e-09
+            ],
+            "max": [
+              0.4177704453468323,
+              0.21776308119297028,
+              0.8536441922187805
+            ]
+          }
+        },
+        {
+          "material_index": 1,
+          "material": "tripo_705ef0c2_aea4_4acf_aedf_bf55c1c12875.001",
+          "vertices": 19219,
+          "bounds_world": {
+            "min": [
+              -0.31490954756736755,
+              -0.3357265889644623,
+              0.8144590854644775
+            ],
+            "max": [
+              0.31490954756736755,
+              0.33572664856910706,
+              1.6500000953674316
+            ]
+          }
+        }
+      ],
+      "height_m": 1.6500000902981005,
+      "head_role": {
+        "material_index": 1,
+        "material": "tripo_705ef0c2_aea4_4acf_aedf_bf55c1c12875.001",
+        "vertices": 19219,
+        "bounds_world": {
+          "min": [
+            -0.31490954756736755,
+            -0.3357265889644623,
+            0.8144590854644775
+          ],
+          "max": [
+            0.31490954756736755,
+            0.33572664856910706,
+            1.6500000953674316
+          ]
+        }
+      },
+      "head_to_total_height_ratio": 0.5063884631375987,
+      "legacy_symmetry": {
+        "method": "Round 1 rounded-YZ buckets; only buckets with exactly two vertices",
+        "pairs_checked": 15317,
+        "max_x_asymmetry_m": 0.0,
+        "ignored_off_center_vertices": 14866
+      },
+      "proportion_provenance": "assemble_female_base.py transforms both head and body by the same head_scale before final whole-model scaling, so their relative proportion is unchanged"
+    },
+    "owner_guided_male": {
+      "object": "Male_Base_Symmetric",
+      "origin_world": [
+        -1.0500000715255737,
+        0.0,
+        0.0
+      ],
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.0500000715255737
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bounds_world": {
+        "min": [
+          -1.9919984340667725,
+          -0.1449582874774933,
+          2.4320676028644073e-10
+        ],
+        "max": [
+          -0.108001708984375,
+          0.15600259602069855,
+          1.814997673034668
+        ]
+      },
+      "vertices": 66919,
+      "faces": 67382,
+      "native_loop_triangles": 133744,
+      "finite_vertices": true,
+      "material_role_bounds": [
+        {
+          "material_index": 0,
+          "material": "d6e8a657_1e69_41d4_8206_158024c81080.002",
+          "vertices": 53992,
+          "bounds_world": {
+            "min": [
+              -1.9919984340667725,
+              -0.1449582874774933,
+              2.4320676028644073e-10
+            ],
+            "max": [
+              -0.108001708984375,
+              0.15600259602069855,
+              1.6994473934173584
+            ]
+          }
+        },
+        {
+          "material_index": 1,
+          "material": "b8dc850c_16b0_4c13_8f65_6a9f8aa08dc7.001",
+          "vertices": 13247,
+          "bounds_world": {
+            "min": [
+              -1.1514016389846802,
+              -0.13335327804088593,
+              1.5557317733764648
+            ],
+            "max": [
+              -0.9485985040664673,
+              0.11638180166482925,
+              1.814997673034668
+            ]
+          }
+        }
+      ],
+      "height_m": 1.8149976727914612,
+      "head_role": {
+        "material_index": 1,
+        "material": "b8dc850c_16b0_4c13_8f65_6a9f8aa08dc7.001",
+        "vertices": 13247,
+        "bounds_world": {
+          "min": [
+            -1.1514016389846802,
+            -0.13335327804088593,
+            1.5557317733764648
+          ],
+          "max": [
+            -0.9485985040664673,
+            0.11638180166482925,
+            1.814997673034668
+          ]
+        }
+      },
+      "head_to_total_height_ratio": 0.14284640886588737,
+      "status": "independent positive control; owner-guided successful shape"
+    },
+    "failed_final_integration": {
+      "male_base": {
+        "object": "Male_Base_Symmetric",
+        "origin_world": [
+          -0.6000000238418579,
+          0.0,
+          0.0
+        ],
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.6000000238418579
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "bounds_world": {
+          "min": [
+            -1.5419983863830566,
+            -0.1449582874774933,
+            2.4320676028644073e-10
+          ],
+          "max": [
+            0.3419983386993408,
+            0.15600259602069855,
+            1.814997673034668
+          ]
+        },
+        "vertices": 66943,
+        "faces": 67430,
+        "native_loop_triangles": 133792,
+        "finite_vertices": true,
+        "material_role_bounds": [
+          {
+            "material_index": 0,
+            "material": "ToonFlat",
+            "vertices": 66943,
+            "bounds_world": {
+              "min": [
+                -1.5419983863830566,
+                -0.1449582874774933,
+                2.4320676028644073e-10
+              ],
+              "max": [
+                0.3419983386993408,
+                0.15600259602069855,
+                1.814997673034668
+              ]
+            }
+          }
+        ]
+      },
+      "recognizable_landmarks": {
+        "male_eye_core_origins_z_m": [
+          1.6308482885360718,
+          1.6308482885360718
+        ],
+        "male_eye_mean_z_m": 1.6308482885360718,
+        "male_head_material_bounds_z_m": [
+          1.5557317733764648,
+          1.814997673034668
+        ],
+        "provenance": "eye object origins from final-integration.blend; head material-index bounds from the same Male_Base_Symmetric geometry in owner-guided male source before integration replaced materials"
+      },
+      "male_oral_placement": {
+        "objects": [
+          {
+            "object": "Male_UpperGum_SubsetReview",
+            "origin_world": [
+              -0.6000000238418579,
+              0.0,
+              0.0
+            ],
+            "matrix_world": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                -0.6000000238418579
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "bounds_world": {
+              "min": [
+                -0.7091308236122131,
+                -0.3303222358226776,
+                0.2797851860523224
+              ],
+              "max": [
+                -0.49233394861221313,
+                -0.1682128608226776,
+                0.353515625
+              ]
+            },
+            "vertices": 827,
+            "faces": 776,
+            "native_loop_triangles": 1334,
+            "finite_vertices": true,
+            "material_role_bounds": [
+              {
+                "material_index": 0,
+                "material": "b8dc850c_16b0_4c13_8f65_6a9f8aa08dc7.003",
+                "vertices": 827,
+                "bounds_world": {
+                  "min": [
+                    -0.7091308236122131,
+                    -0.3303222358226776,
+                    0.2797851860523224
+                  ],
+                  "max": [
+                    -0.49233394861221313,
+                    -0.1682128608226776,
+                    0.353515625
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "object": "Male_Upper_RecoveredCrown3",
+            "origin_world": [
+              -0.6000000238418579,
+              0.0,
+              0.0
+            ],
+            "matrix_world": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                -0.6000000238418579
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "bounds_world": {
+              "min": [
+                -0.6002441048622131,
+                -0.3298339545726776,
+                0.2797851860523224
+              ],
+              "max": [
+                -0.5685058236122131,
+                -0.3088378608226776,
+                0.3217773735523224
+              ]
+            },
+            "vertices": 50,
+            "faces": 49,
+            "native_loop_triangles": 88,
+            "finite_vertices": true,
+            "material_role_bounds": [
+              {
+                "material_index": 0,
+                "material": "b8dc850c_16b0_4c13_8f65_6a9f8aa08dc7.003",
+                "vertices": 50,
+                "bounds_world": {
+                  "min": [
+                    -0.6002441048622131,
+                    -0.3298339545726776,
+                    0.2797851860523224
+                  ],
+                  "max": [
+                    -0.5685058236122131,
+                    -0.3088378608226776,
+                    0.3217773735523224
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "object": "Male_Upper_RecoveredCrown2",
+            "origin_world": [
+              -0.6000000238418579,
+              0.0,
+              0.0
+            ],
+            "matrix_world": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                -0.6000000238418579
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "bounds_world": {
+              "min": [
+                -0.6329589486122131,
+                -0.3298339545726776,
+                0.2797851860523224
+              ],
+              "max": [
+                -0.6012206673622131,
+                -0.3088378608226776,
+                0.3217773735523224
+              ]
+            },
+            "vertices": 50,
+            "faces": 49,
+            "native_loop_triangles": 88,
+            "finite_vertices": true,
+            "material_role_bounds": [
+              {
+                "material_index": 0,
+                "material": "b8dc850c_16b0_4c13_8f65_6a9f8aa08dc7.003",
+                "vertices": 50,
+                "bounds_world": {
+                  "min": [
+                    -0.6329589486122131,
+                    -0.3298339545726776,
+                    0.2797851860523224
+                  ],
+                  "max": [
+                    -0.6012206673622131,
+                    -0.3088378608226776,
+                    0.3217773735523224
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "object": "Male_Upper_RecoveredCrown1",
+            "origin_world": [
+              -0.6000000238418579,
+              0.0,
+              0.0
+            ],
+            "matrix_world": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                -0.6000000238418579
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "bounds_world": {
+              "min": [
+                -0.6935058236122131,
+                -0.2458496242761612,
+                0.2885742485523224
+              ],
+              "max": [
+                -0.6583495736122131,
+                -0.218017578125,
+                0.3173828423023224
+              ]
+            },
+            "vertices": 108,
+            "faces": 124,
+            "native_loop_triangles": 196,
+            "finite_vertices": true,
+            "material_role_bounds": [
+              {
+                "material_index": 0,
+                "material": "b8dc850c_16b0_4c13_8f65_6a9f8aa08dc7.003",
+                "vertices": 108,
+                "bounds_world": {
+                  "min": [
+                    -0.6935058236122131,
+                    -0.2458496242761612,
+                    0.2885742485523224
+                  ],
+                  "max": [
+                    -0.6583495736122131,
+                    -0.218017578125,
+                    0.3173828423023224
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "object": "Male_Upper_GumArch",
+            "origin_world": [
+              -0.6000000238418579,
+              0.0,
+              0.0
+            ],
+            "matrix_world": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                -0.6000000238418579
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "bounds_world": {
+              "min": [
+                -0.7091308236122131,
+                -0.3303222358226776,
+                0.2939453423023224
+              ],
+              "max": [
+                -0.49233394861221313,
+                -0.1682128608226776,
+                0.353515625
+              ]
+            },
+            "vertices": 618,
+            "faces": 554,
+            "native_loop_triangles": 963,
+            "finite_vertices": true,
+            "material_role_bounds": [
+              {
+                "material_index": 0,
+                "material": "b8dc850c_16b0_4c13_8f65_6a9f8aa08dc7.003",
+                "vertices": 618,
+                "bounds_world": {
+                  "min": [
+                    -0.7091308236122131,
+                    -0.3303222358226776,
+                    0.2939453423023224
+                  ],
+                  "max": [
+                    -0.49233394861221313,
+                    -0.1682128608226776,
+                    0.353515625
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "object": "Male_LowerGum_SubsetReview",
+            "origin_world": [
+              -0.6000000238418579,
+              0.0,
+              0.0
+            ],
+            "matrix_world": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                -0.6000000238418579
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "bounds_world": {
+              "min": [
+                -0.7057128548622131,
+                -0.3234862983226776,
+                0.2138672024011612
+              ],
+              "max": [
+                -0.49575191736221313,
+                -0.1447753757238388,
+                0.2949219048023224
+              ]
+            },
+            "vertices": 795,
+            "faces": 745,
+            "native_loop_triangles": 1274,
+            "finite_vertices": true,
+            "material_role_bounds": [
+              {
+                "material_index": 0,
+                "material": "b8dc850c_16b0_4c13_8f65_6a9f8aa08dc7.003",
+                "vertices": 795,
+                "bounds_world": {
+                  "min": [
+                    -0.7057128548622131,
+                    -0.3234862983226776,
+                    0.2138672024011612
+                  ],
+                  "max": [
+                    -0.49575191736221313,
+                    -0.1447753757238388,
+                    0.2949219048023224
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "object": "Male_Lower_RecoveredCrown1",
+            "origin_world": [
+              -0.6000000238418579,
+              0.0,
+              0.0
+            ],
+            "matrix_world": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                -0.6000000238418579
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "bounds_world": {
+              "min": [
+                -0.6744628548622131,
+                -0.3107909858226776,
+                0.2426758110523224
+              ],
+              "max": [
+                -0.6378417611122131,
+                -0.2673339545726776,
+                0.2949219048023224
+              ]
+            },
+            "vertices": 101,
+            "faces": 121,
+            "native_loop_triangles": 183,
+            "finite_vertices": true,
+            "material_role_bounds": [
+              {
+                "material_index": 0,
+                "material": "b8dc850c_16b0_4c13_8f65_6a9f8aa08dc7.003",
+                "vertices": 101,
+                "bounds_world": {
+                  "min": [
+                    -0.6744628548622131,
+                    -0.3107909858226776,
+                    0.2426758110523224
+                  ],
+                  "max": [
+                    -0.6378417611122131,
+                    -0.2673339545726776,
+                    0.2949219048023224
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "object": "Male_Lower_GumArch",
+            "origin_world": [
+              -0.6000000238418579,
+              0.0,
+              0.0
+            ],
+            "matrix_world": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                -0.6000000238418579
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "bounds_world": {
+              "min": [
+                -0.7057128548622131,
+                -0.3234862983226776,
+                0.2138672024011612
+              ],
+              "max": [
+                -0.49575191736221313,
+                -0.1447753757238388,
+                0.28271484375
+              ]
+            },
+            "vertices": 694,
+            "faces": 624,
+            "native_loop_triangles": 1091,
+            "finite_vertices": true,
+            "material_role_bounds": [
+              {
+                "material_index": 0,
+                "material": "b8dc850c_16b0_4c13_8f65_6a9f8aa08dc7.003",
+                "vertices": 694,
+                "bounds_world": {
+                  "min": [
+                    -0.7057128548622131,
+                    -0.3234862983226776,
+                    0.2138672024011612
+                  ],
+                  "max": [
+                    -0.49575191736221313,
+                    -0.1447753757238388,
+                    0.28271484375
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "object": "Male_Tongue_Repaired",
+            "origin_world": [
+              -0.6000000238418579,
+              0.0,
+              0.0
+            ],
+            "matrix_world": [
+              [
+                1.0,
+                0.0,
+                0.0,
+                -0.6000000238418579
+              ],
+              [
+                0.0,
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "bounds_world": {
+              "min": [
+                -0.678436815738678,
+                -0.305959552526474,
+                0.23335108160972595
+              ],
+              "max": [
+                -0.5293832421302795,
+                -0.0637206882238388,
+                0.3137970268726349
+              ]
+            },
+            "vertices": 1129,
+            "faces": 1104,
+            "native_loop_triangles": 2208,
+            "finite_vertices": true,
+            "material_role_bounds": [
+              {
+                "material_index": 0,
+                "material": "b8dc850c_16b0_4c13_8f65_6a9f8aa08dc7.002",
+                "vertices": 1129,
+                "bounds_world": {
+                  "min": [
+                    -0.678436815738678,
+                    -0.305959552526474,
+                    0.23335108160972595
+                  ],
+                  "max": [
+                    -0.5293832421302795,
+                    -0.0637206882238388,
+                    0.3137970268726349
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "all_objects_in_head_landmark_band": false,
+        "oral_centroid_z_range_m": [
+          0.2482910230755806,
+          0.3237304836511612
+        ],
+        "eye_to_oral_vertical_separation_m": 1.2773326635360718
+      },
+      "female_oral_objects": {
+        "required_roles": [
+          "upper_gums_teeth",
+          "lower_gums_teeth",
+          "inner_mouth",
+          "tongue"
+        ],
+        "present_roles": [],
+        "object_count": 0
+      }
+    }
+  },
+  "artifacts": [
+    "01-unjoined-female-front.png",
+    "02-unjoined-female-side.png",
+    "03-failed-female-front.png",
+    "04-failed-female-side.png",
+    "05-failed-female-neck-closeup.png",
+    "06-final-integration-mouth-cutaway.png"
+  ]
+}

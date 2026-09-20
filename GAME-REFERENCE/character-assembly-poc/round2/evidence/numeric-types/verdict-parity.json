@@ -1,0 +1,26 @@
+[
+  {
+    "case": "male-uv",
+    "equal": true,
+    "normalized_sha256": "00e704fcda3f9b36830865b059224b1ef4de088e873e1b75764d263afc2671d8",
+    "status": "PASS"
+  },
+  {
+    "case": "female-uv",
+    "equal": true,
+    "normalized_sha256": "f18a1765efa04efb9a7a2cd4885371c5e20751b5e5dea4d9b23575490d364eb2",
+    "status": "FAIL"
+  },
+  {
+    "case": "native-clean",
+    "equal": true,
+    "normalized_sha256": "13aafc18f622de5b0b0cf50f488389064d2155b1c06d0f1e274408bddf4d7279",
+    "status": "PASS"
+  },
+  {
+    "case": "native-crossing",
+    "equal": true,
+    "normalized_sha256": "c30c76bdc36c7a50da94f3acdf3ba72666a6f449e11f790c7e52ee64b06f591b",
+    "status": "FAIL"
+  }
+]

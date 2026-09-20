@@ -1,0 +1,697 @@
+{
+  "schema_version": 1,
+  "status": "FAIL",
+  "criteria_version": "round2-geometry-hard-gate-v1",
+  "source": {
+    "path": "/Users/danny/workspace/seoul-kenshi-character-round2/GAME-REFERENCE/character-assembly-poc/round2/work/female-blockout/female-blockout-candidate-a-neck-fit.blend",
+    "sha256": "c65c1b34501dca3257d9456bc9cc383d31a08ff4d334a720b7fc1d0b4d2ce60b",
+    "blender_version": "5.2.2 LTS"
+  },
+  "hard_failures": [
+    "DEGENERATE_TRIANGLE",
+    "WINDING_CONFLICT",
+    "NON_MANIFOLD_EDGE",
+    "UNDECLARED_BOUNDARY",
+    "DECLARED_OPENING_MISMATCH"
+  ],
+  "unproven": [
+    "SELF_INTERSECTION",
+    "PRODUCTION_CHARACTER_QUALITY",
+    "MEASURED_RATIO_TARGETS"
+  ],
+  "checks": [
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Body_candidate-a-neck-fit_PROVISIONAL_UNJOINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "DEGENERATE_TRIANGLE",
+        "WINDING_CONFLICT",
+        "NON_MANIFOLD_EDGE",
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 26275,
+        "triangle_count": 52505,
+        "boundary_edge_count": 83,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 63,
+        "winding_conflict_count": 1,
+        "non_manifold_edge_count": 16
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_OralChild_01_candidate-a-neck-fit_RETAINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 1420,
+        "triangle_count": 2768,
+        "boundary_edge_count": 70,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 0,
+        "winding_conflict_count": 0,
+        "non_manifold_edge_count": 0
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_OralChild_02_candidate-a-neck-fit_RETAINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 1222,
+        "triangle_count": 2394,
+        "boundary_edge_count": 48,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 0,
+        "winding_conflict_count": 0,
+        "non_manifold_edge_count": 0
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_OralChild_03_candidate-a-neck-fit_RETAINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 567,
+        "triangle_count": 1102,
+        "boundary_edge_count": 30,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 0,
+        "winding_conflict_count": 0,
+        "non_manifold_edge_count": 0
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_OralChild_04_candidate-a-neck-fit_RETAINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 185,
+        "triangle_count": 346,
+        "boundary_edge_count": 22,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 0,
+        "winding_conflict_count": 0,
+        "non_manifold_edge_count": 0
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_OralChild_05_candidate-a-neck-fit_RETAINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 185,
+        "triangle_count": 346,
+        "boundary_edge_count": 22,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 0,
+        "winding_conflict_count": 0,
+        "non_manifold_edge_count": 0
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_OralChild_06_candidate-a-neck-fit_RETAINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 185,
+        "triangle_count": 346,
+        "boundary_edge_count": 22,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 0,
+        "winding_conflict_count": 0,
+        "non_manifold_edge_count": 0
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_OralChild_07_candidate-a-neck-fit_RETAINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "DEGENERATE_TRIANGLE",
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 185,
+        "triangle_count": 346,
+        "boundary_edge_count": 22,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 1,
+        "winding_conflict_count": 0,
+        "non_manifold_edge_count": 0
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_OralChild_08_candidate-a-neck-fit_RETAINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 171,
+        "triangle_count": 319,
+        "boundary_edge_count": 21,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 0,
+        "winding_conflict_count": 0,
+        "non_manifold_edge_count": 0
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_OralChild_09_candidate-a-neck-fit_RETAINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 170,
+        "triangle_count": 318,
+        "boundary_edge_count": 20,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 0,
+        "winding_conflict_count": 0,
+        "non_manifold_edge_count": 0
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_OralChild_10_candidate-a-neck-fit_RETAINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 170,
+        "triangle_count": 318,
+        "boundary_edge_count": 20,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 0,
+        "winding_conflict_count": 0,
+        "non_manifold_edge_count": 0
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_OralChild_11_candidate-a-neck-fit_RETAINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 169,
+        "triangle_count": 316,
+        "boundary_edge_count": 20,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 0,
+        "winding_conflict_count": 0,
+        "non_manifold_edge_count": 0
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_OralChild_12_candidate-a-neck-fit_RETAINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 168,
+        "triangle_count": 314,
+        "boundary_edge_count": 20,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 0,
+        "winding_conflict_count": 0,
+        "non_manifold_edge_count": 0
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_OralChild_13_candidate-a-neck-fit_RETAINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 168,
+        "triangle_count": 314,
+        "boundary_edge_count": 20,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 0,
+        "winding_conflict_count": 0,
+        "non_manifold_edge_count": 0
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_OralChild_14_candidate-a-neck-fit_RETAINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 166,
+        "triangle_count": 310,
+        "boundary_edge_count": 20,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 0,
+        "winding_conflict_count": 0,
+        "non_manifold_edge_count": 0
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_OralChild_15_candidate-a-neck-fit_RETAINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 166,
+        "triangle_count": 310,
+        "boundary_edge_count": 20,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 0,
+        "winding_conflict_count": 0,
+        "non_manifold_edge_count": 0
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_OralChild_16_candidate-a-neck-fit_RETAINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 149,
+        "triangle_count": 272,
+        "boundary_edge_count": 24,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 0,
+        "winding_conflict_count": 0,
+        "non_manifold_edge_count": 0
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_OralChild_17_candidate-a-neck-fit_RETAINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 131,
+        "triangle_count": 245,
+        "boundary_edge_count": 15,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 0,
+        "winding_conflict_count": 0,
+        "non_manifold_edge_count": 0
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_OralChild_18_candidate-a-neck-fit_RETAINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 131,
+        "triangle_count": 245,
+        "boundary_edge_count": 15,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 0,
+        "winding_conflict_count": 0,
+        "non_manifold_edge_count": 0
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_OralChild_19_candidate-a-neck-fit_RETAINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 131,
+        "triangle_count": 245,
+        "boundary_edge_count": 15,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 0,
+        "winding_conflict_count": 0,
+        "non_manifold_edge_count": 0
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_OralChild_20_candidate-a-neck-fit_RETAINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 131,
+        "triangle_count": 245,
+        "boundary_edge_count": 15,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 0,
+        "winding_conflict_count": 0,
+        "non_manifold_edge_count": 0
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_OralChild_21_candidate-a-neck-fit_RETAINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 90,
+        "triangle_count": 163,
+        "boundary_edge_count": 15,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 0,
+        "winding_conflict_count": 0,
+        "non_manifold_edge_count": 0
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_OralChild_22_candidate-a-neck-fit_RETAINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 88,
+        "triangle_count": 159,
+        "boundary_edge_count": 15,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 0,
+        "winding_conflict_count": 0,
+        "non_manifold_edge_count": 0
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_OralChild_23_candidate-a-neck-fit_RETAINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 87,
+        "triangle_count": 160,
+        "boundary_edge_count": 12,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 0,
+        "winding_conflict_count": 0,
+        "non_manifold_edge_count": 0
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_OralChild_24_candidate-a-neck-fit_RETAINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 87,
+        "triangle_count": 160,
+        "boundary_edge_count": 12,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 0,
+        "winding_conflict_count": 0,
+        "non_manifold_edge_count": 0
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_OralChild_25_candidate-a-neck-fit_RETAINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 85,
+        "triangle_count": 154,
+        "boundary_edge_count": 14,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 0,
+        "winding_conflict_count": 0,
+        "non_manifold_edge_count": 0
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_OralChild_26_candidate-a-neck-fit_RETAINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 85,
+        "triangle_count": 154,
+        "boundary_edge_count": 14,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 0,
+        "winding_conflict_count": 0,
+        "non_manifold_edge_count": 0
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_OralChild_27_candidate-a-neck-fit_RETAINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 75,
+        "triangle_count": 136,
+        "boundary_edge_count": 12,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 0,
+        "winding_conflict_count": 0,
+        "non_manifold_edge_count": 0
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_OralChild_28_candidate-a-neck-fit_RETAINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 75,
+        "triangle_count": 136,
+        "boundary_edge_count": 12,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 0,
+        "winding_conflict_count": 0,
+        "non_manifold_edge_count": 0
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "Female_Head_Skin_candidate-a-neck-fit_PROVISIONAL_UNJOINED",
+      "status": "FAIL",
+      "hard_failures": [
+        "DEGENERATE_TRIANGLE",
+        "WINDING_CONFLICT",
+        "NON_MANIFOLD_EDGE",
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 18817,
+        "triangle_count": 37455,
+        "boundary_edge_count": 197,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 16,
+        "winding_conflict_count": 2,
+        "non_manifold_edge_count": 10
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "LOCKED_BODY_IMPORT_READ_ONLY_REFERENCE",
+      "status": "FAIL",
+      "hard_failures": [
+        "DEGENERATE_TRIANGLE",
+        "WINDING_CONFLICT",
+        "NON_MANIFOLD_EDGE",
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 26275,
+        "triangle_count": 52505,
+        "boundary_edge_count": 83,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 79,
+        "winding_conflict_count": 1,
+        "non_manifold_edge_count": 16
+      }
+    },
+    {
+      "check_id": "geometry-topology",
+      "object_name": "LOCKED_HEAD_IMPORT_READ_ONLY_REFERENCE",
+      "status": "FAIL",
+      "hard_failures": [
+        "DEGENERATE_TRIANGLE",
+        "WINDING_CONFLICT",
+        "NON_MANIFOLD_EDGE",
+        "UNDECLARED_BOUNDARY",
+        "DECLARED_OPENING_MISMATCH"
+      ],
+      "measurements": {
+        "vertex_count": 25459,
+        "triangle_count": 50096,
+        "boundary_edge_count": 784,
+        "wire_edge_count": 0,
+        "duplicate_vertex_pair_count": 0,
+        "duplicate_face_count": 0,
+        "degenerate_triangle_count": 17,
+        "winding_conflict_count": 2,
+        "non_manifold_edge_count": 10
+      }
+    },
+    {
+      "check_id": "geometry-role-placement",
+      "object_name": "Female_Body_candidate-a-neck-fit_PROVISIONAL_UNJOINED",
+      "status": "PASS",
+      "hard_failures": [],
+      "measurements": {
+        "role": "base_body",
+        "vertex_count": 26275
+      }
+    },
+    {
+      "check_id": "geometry-role-placement",
+      "object_name": "Female_Head_Skin_candidate-a-neck-fit_PROVISIONAL_UNJOINED",
+      "status": "PASS",
+      "hard_failures": [],
+      "measurements": {
+        "role": "base_head",
+        "vertex_count": 18817
+      }
+    }
+  ]
+}

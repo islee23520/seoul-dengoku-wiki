@@ -1,0 +1,15 @@
+{
+  "venvPath": "../..",
+  "venv": ".venv",
+  "pythonVersion": "3.13",
+  "extraPaths": [
+    "../../.venv/lib/python3.14/site-packages",
+    "../.."
+  ],
+  "include": [
+    "../../gate",
+    "../../scripts/extract_uv.py",
+    "../../tests/test_uv_gate.py",
+    "../../tests/uv_red"
+  ]
+}
