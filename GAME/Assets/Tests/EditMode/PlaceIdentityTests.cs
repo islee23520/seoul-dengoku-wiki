@@ -227,6 +227,45 @@ namespace Janseon.Foundation.Tests
             TestContext.WriteLine("PLACE_ID_MANUAL_QA=" + outputPath);
         }
 
+        [Test]
+        public void ControlUsesBuildingOwnershipAndDongInfluence()
+        {
+            var controlType = typeof(CampaignState).Assembly.GetType("Janseon.Core.CampaignControlState");
+            Assert.IsNotNull(controlType, "CampaignControlState must own building, dong, and station control.");
+            var create = controlType.GetMethod("Create");
+            Assert.IsNotNull(create);
+            var control = create.Invoke(null, new object[] { "dong-1", "station-1" });
+            var occupy = controlType.GetMethod("OccupyBuilding");
+            Assert.IsNotNull(occupy);
+            control = occupy.Invoke(control, new object[] { "faction-a", "building-core", 60 });
+            Assert.AreEqual("Held", controlType.GetProperty("DongStatus").GetValue(control, null).ToString());
+            control = occupy.Invoke(control, new object[] { "faction-b", "building-school", 30 });
+            var status = controlType.GetProperty("DongStatus").GetValue(control, null).ToString();
+            Assert.AreEqual("Contested", status);
+            Assert.LessOrEqual((int)controlType.GetProperty("TotalInfluence").GetValue(control, null), 100);
+            control = controlType.GetMethod("ControlStation").Invoke(control, new object[] { "faction-a" });
+            var lose = controlType.GetMethod("ApplyStationLoss");
+            Assert.IsNotNull(lose);
+            control = lose.Invoke(control, new object[] { "faction-a", "building-core" });
+            Assert.AreEqual(30, controlType.GetMethod("InfluenceOf").Invoke(control, new object[] { "faction-a" }));
+        }
+
+        [Test]
+        public void SurfaceAndUndergroundControlAreIndependent()
+        {
+            var controlType = typeof(CampaignState).Assembly.GetType("Janseon.Core.CampaignControlState");
+            Assert.IsNotNull(controlType);
+            var control = controlType.GetMethod("Create").Invoke(null, new object[] { "dong-1", "station-1" });
+            var occupy = controlType.GetMethod("OccupyBuilding");
+            control = occupy.Invoke(control, new object[] { "faction-a", "building-core", 60 });
+            Assert.AreEqual("Uncontrolled", controlType.GetProperty("StationController").GetValue(control, null));
+            control = controlType.GetMethod("ControlStation").Invoke(control, new object[] { "faction-a" });
+            var lose = controlType.GetMethod("ApplyStationLoss");
+            control = lose.Invoke(control, new object[] { "faction-a", "building-core" });
+            control = lose.Invoke(control, new object[] { "faction-a", "building-core" });
+            Assert.AreEqual(30, controlType.GetMethod("InfluenceOf").Invoke(control, new object[] { "faction-a" }));
+        }
+
         static string BooleanJson(bool value) => value ? "true" : "false";
         static string NullableIntJson(int? value) => value.HasValue ? value.Value.ToString() : "null";
 
