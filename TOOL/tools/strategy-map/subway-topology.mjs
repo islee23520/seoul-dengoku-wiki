@@ -532,17 +532,19 @@ function loadDongIndex(dir) {
     for (const region of data.regions) {
       recordCount += 1;
       const hit = { regionId: region.region_id, name: region.name, via: [], buildingRefs: [] };
+      const nodeRefs = [];
       for (const anchor of region.content.anchor_refs ?? []) {
         const m = /^osm:node:(\d+)$/.exec(anchor);
-        if (m) register(byNode, Number(m[1]), hit, 'anchor-ref');
+        if (m) nodeRefs.push({ nodeId: Number(m[1]), via: 'anchor-ref' });
       }
       for (const building of region.content.buildings ?? []) {
         const m = /^osm:node:(\d+)$/.exec(building.anchor_ref ?? '');
         if (m) {
-          register(byNode, Number(m[1]), hit, 'building-anchor');
           hit.buildingRefs.push({ anchor: building.anchor_ref, name: building.name, observedUse: building.observed_use ?? null, role: building.role ?? null });
+          nodeRefs.push({ nodeId: Number(m[1]), via: 'building-anchor' });
         }
       }
+      for (const { nodeId, via } of nodeRefs) register(byNode, nodeId, hit, via);
     }
   }
   return { fileCount: files.length, recordCount, byNode };

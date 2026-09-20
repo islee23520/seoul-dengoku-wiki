@@ -3,7 +3,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync } from 'node:fs';
 import { assembleFromParsed, buildTopology, loadLedger, normalizeName, SUPPORTED_STOP_ROLES } from './subway-topology.mjs';
 import { readRelations } from './osm-pbf-reader.mjs';
 
@@ -405,10 +405,27 @@ test('every traversable edge binds lines, sources, and supported roles', () => {
 });
 
 test('dong content crosswalk is bounded, sourced, and sparse', () => {
-  const { coverage } = loadReal();
+  const { topology, coverage } = loadReal();
   assert.equal(coverage.dongContent.files, 25);
   assert.equal(coverage.dongContent.records, 427);
   assert.equal(coverage.dongContent.stationsWithDong, 2);
+  assert.ok(coverage.dongContent.stationsWithBuildingRefs > 0);
+  const sourceBuildingAnchors = new Set();
+  for (const file of readdirSync(`${root}LORE/regions/content`).filter((f) => f.endsWith('.json'))) {
+    const data = JSON.parse(readFileSync(`${root}LORE/regions/content/${file}`, 'utf8'));
+    for (const region of data.regions) {
+      for (const building of region.content.buildings ?? []) {
+        if (/^osm:node:\d+$/.test(building.anchor_ref ?? '')) sourceBuildingAnchors.add(building.anchor_ref);
+      }
+    }
+  }
+  const buildingRefStations = topology.stations.filter((station) => station.buildingRefs.length > 0);
+  assert.equal(coverage.dongContent.stationsWithBuildingRefs, buildingRefStations.length);
+  assert.ok(buildingRefStations.length > 0);
+  for (const station of buildingRefStations) {
+    assert.ok(station.dong !== null, `${station.id} building refs require a dong binding`);
+    assert.ok(station.buildingRefs.every((ref) => sourceBuildingAnchors.has(ref.anchor)));
+  }
 });
 
 // --- CLI contract -----------------------------------------------------------------

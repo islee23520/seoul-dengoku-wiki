@@ -36,6 +36,8 @@ export const DEFAULT_LIMITS = {
 
 const MAX_VARIANT_BYTES = 10; // uint64 varint 최대 바이트
 const UINT64_MAX = (1n << 64n) - 1n;
+const INT64_MIN = -(1n << 63n);
+const INT64_MAX = (1n << 63n) - 1n;
 let ACTIVE = { ...DEFAULT_LIMITS };
 
 function readVarint(buf, pos, end) {
@@ -118,6 +120,12 @@ function decodePacked(buf, start, end, kind) {
 }
 
 const packedSafe = (values, code) => values.map((v) => safeNumber(zigzagBig(v), code));
+const addInt64 = (current, delta) => {
+  const next = current + delta;
+  if (next > INT64_MAX) fail('int64_overflow', `integer ${next} exceeds int64 range`);
+  if (next < INT64_MIN) fail('int64_underflow', `integer ${next} is below int64 range`);
+  return next;
+};
 
 function decodeStringTable(payload) {
   const strings = [];
@@ -190,17 +198,22 @@ function parseDenseGroup(group, block, sink) {
   if (lats.length !== ids.length || lons.length !== ids.length) {
     fail('field_length_mismatch', `dense ids(${ids.length}) lats(${lats.length}) lons(${lons.length}) length mismatch`);
   }
-  const idList = packedSafe(ids, 'unsafe_integer');
-  const latList = packedSafe(lats, 'unsafe_integer');
-  const lonList = packedSafe(lons, 'unsafe_integer');
-  let id = 0;
-  let latAcc = 0;
-  let lonAcc = 0;
+  const idList = ids.map(zigzagBig);
+  const latList = lats.map(zigzagBig);
+  const lonList = lons.map(zigzagBig);
+  let id = 0n;
+  let latAcc = 0n;
+  let lonAcc = 0n;
+  const cumulative = [];
   let kv = 0;
   for (let i = 0; i < idList.length; i += 1) {
-    id += idList[i];
-    latAcc += latList[i];
-    lonAcc += lonList[i];
+    id = addInt64(id, idList[i]);
+    latAcc = addInt64(latAcc, latList[i]);
+    lonAcc = addInt64(lonAcc, lonList[i]);
+    cumulative.push({ id, latAcc, lonAcc });
+  }
+  for (let i = 0; i < cumulative.length; i += 1) {
+    const { id: idValue, latAcc: latValue, lonAcc: lonValue } = cumulative[i];
     const tags = {};
     if (kv < kvs.length && kvs[kv] !== 0n) {
       while (kv < kvs.length && kvs[kv] !== 0n) {
@@ -214,7 +227,7 @@ function parseDenseGroup(group, block, sink) {
     }
     kv += 1; // 0 종결자
     if (kv > kvs.length) fail('keys_vals_unterminated', 'dense keys_vals run missing 0 terminator');
-    sink.node({ id, lat: block.latOf(latAcc), lon: block.lonOf(lonAcc), tags });
+    sink.node({ id: safeNumber(idValue, 'unsafe_integer'), lat: block.latOf(safeNumber(latValue, 'unsafe_integer')), lon: block.lonOf(safeNumber(lonValue, 'unsafe_integer')), tags });
     sink.counts.nodes += 1;
     if (Object.keys(tags).length > 0) sink.counts.taggedNodes += 1;
   }
@@ -249,7 +262,7 @@ function parseWay(payload, block, sink, keepWay) {
   let vals = [];
   walkFields(payload, 0, payload.length, new Set([1]), (f, wt, v, bytes) => {
     if (f === 1 && wt === 0) id = safeNumber(v, 'unsafe_integer');
-    else if (f === 8 && wt === 2) refs = packedSafe(decodePacked(bytes, 0, bytes.length, 'way.refs'), 'unsafe_integer');
+    else if (f === 8 && wt === 2) refs = decodePacked(bytes, 0, bytes.length, 'way.refs');
     else if (f === 2 && wt === 2) keys = decodePacked(bytes, 0, bytes.length, 'way.keys');
     else if (f === 3 && wt === 2) vals = decodePacked(bytes, 0, bytes.length, 'way.vals');
   });
@@ -257,10 +270,10 @@ function parseWay(payload, block, sink, keepWay) {
   sink.counts.ways += 1;
   if (!keepWay || !keepWay(id)) return;
   const tags = decodeTags(keys, vals, block.strings, 'way');
-  let ref = 0;
+  let ref = 0n;
   const nodeRefs = refs.map((delta) => {
-    ref += delta;
-    return ref;
+    ref = addInt64(ref, zigzagBig(delta));
+    return safeNumber(ref, 'unsafe_integer');
   });
   sink.ways.set(id, { id, refs: nodeRefs, tags });
 }
@@ -289,12 +302,12 @@ function parseRelation(payload, block, sink, keepRelation) {
   if (!keepRelation) return;
   const tags = decodeTags(keys, vals, block.strings, 'relation');
   if (!keepRelation(id, tags)) return;
-  let ref = 0;
+  let ref = 0n;
   const members = memids.map((delta, i) => {
-    ref += safeNumber(zigzagBig(delta), 'unsafe_integer');
+    ref = addInt64(ref, zigzagBig(delta));
     const typeIndex = safeNumber(types[i], 'member_type_overflow');
     if (typeIndex < 0 || typeIndex >= MEMBER_TYPES.length) fail('member_type_invalid', `relation ${id}: member type ${typeIndex} invalid`);
-    return { type: MEMBER_TYPES[typeIndex], ref, role: str(stringAt(block.strings, roles[i])) };
+    return { type: MEMBER_TYPES[typeIndex], ref: safeNumber(ref, 'unsafe_integer'), role: str(stringAt(block.strings, roles[i])) };
   });
   sink.relations.push({ id, tags, members });
 }
@@ -444,7 +457,7 @@ export function readEntities(input, { limits = {}, wantWayIds, wantNodeIds } = {
   applyLimits(limits);
   try {
     const buf = typeof input === 'string' ? readFileSync(input) : input;
-    if (buf.length > DEFAULT_LIMITS.maxTotalPbfBytes) fail('file_too_large', `file ${buf.length} exceeds ${DEFAULT_LIMITS.maxTotalPbfBytes}`);
+    if (buf.length > ACTIVE.maxTotalPbfBytes) fail('file_too_large', `file ${buf.length} exceeds ${ACTIVE.maxTotalPbfBytes}`);
     // pass 1: ways
     const waySink = {
       nodes: new Map(),

@@ -283,6 +283,65 @@ test('file beyond maxTotalPbfBytes is rejected', () => {
   assert.equal(err.code, 'file_too_large');
 });
 
+// --- 누적 델타 안전 (게이트 2): varint개별은 안전해도 누적이 무너질 수 있다 -------
+
+test('cumulative dense id deltas that collapse at 2^53 are rejected', () => {
+  // 9007199254740990 에서 +2, +2: Number 누적이면 마지막 두 노드가 2^53으로 합쳐진다.
+  const d1 = zigzag(9007199254740990n); // 18014398509481980 (자체는 안전한 varint)
+  const group = denseGroup({ ids: [d1, 2n, 2n], lats: [37500000n, 0n, 0n], lons: [12700000000n, 0n, 0n], kvs: [0, 0, 0] });
+  const buf = Buffer.concat([blobBlock('OSMHeader', headerBlock()), blobBlock('OSMData', primitiveBlock({ groups: [group] }))]);
+  const err = parseOrError(buf);
+  assert.ok(err instanceof PbfLimitError, `expected PbfLimitError, got ${err}`);
+  assert.equal(err.code, 'unsafe_integer');
+});
+
+test('cumulative id overflow beyond int64 is rejected', () => {
+  const d = zigzag(4611686018427387904n); // 2^62
+  const group = denseGroup({ ids: [4611686018427387904n, 4611686018427387904n], lats: [37500000n, 0n], lons: [12700000000n, 0n], kvs: [0, 0] });
+  const buf = Buffer.concat([blobBlock('OSMHeader', headerBlock()), blobBlock('OSMData', primitiveBlock({ groups: [group] }))]);
+  const err = parseOrError(buf);
+  assert.ok(err instanceof PbfLimitError, `expected PbfLimitError, got ${err}`);
+  assert.equal(err.code, 'int64_overflow');
+});
+
+test('negative underflow below int64 is rejected', () => {
+  const d = zigzag(-4611686018427387904n); // -2^62
+  const group = denseGroup({ ids: [-4611686018427387904n, -4611686018427387904n, -4611686018427387904n, -4611686018427387904n], lats: [0n, 0n, 0n, 0n], lons: [0n, 0n, 0n, 0n], kvs: [0, 0, 0, 0] });
+  const buf = Buffer.concat([blobBlock('OSMHeader', headerBlock()), blobBlock('OSMData', primitiveBlock({ groups: [group] }))]);
+  const err = parseOrError(buf);
+  assert.ok(err instanceof PbfLimitError, `expected PbfLimitError, got ${err}`);
+  assert.equal(err.code, 'int64_underflow');
+});
+
+test('lat accumulation beyond the safe integer range is rejected before coordinate math', () => {
+  const big = 6000000000000000n; // 6e15, 자체는 안전
+  const group = denseGroup({ ids: [1n, 2n], lats: [zigzag(big), zigzag(big)], lons: [0n, 0n], kvs: [0, 0] });
+  const buf = Buffer.concat([blobBlock('OSMHeader', headerBlock()), blobBlock('OSMData', primitiveBlock({ groups: [group] }))]);
+  const err = parseOrError(buf);
+  assert.ok(err instanceof PbfLimitError, `expected PbfLimitError, got ${err}`);
+  assert.equal(err.code, 'unsafe_integer');
+});
+
+test('way ref accumulation beyond the safe integer range is rejected', () => {
+  const way = len(3, [...vint(1, 77n), ...packed(8, [zigzag(9007199254740990n), zigzag(2n), zigzag(2n)])]);
+  const buf = Buffer.concat([blobBlock('OSMHeader', headerBlock()), blobBlock('OSMData', primitiveBlock({ groups: [way] }))]);
+  let err = null;
+  try { readEntities(buf, { wantWayIds: new Set([77]) }); } catch (error) { err = error; }
+  assert.ok(err instanceof PbfLimitError, `expected PbfLimitError, got ${err}`);
+  assert.equal(err.code, 'unsafe_integer');
+});
+
+test('readEntities honors the maxTotalPbfBytes override below, equal, and above', () => {
+  const file = minimalFile();
+  assert.throws(() => readEntities(file, { limits: { maxTotalPbfBytes: file.length - 1 } }), /file_too_large|pbf:/);
+  const below = (() => { try { readEntities(file, { limits: { maxTotalPbfBytes: file.length - 1 } }); return null; } catch (e) { return e; } })();
+  assert.equal(below.code, 'file_too_large');
+  const equal = (() => { try { return readEntities(file, { limits: { maxTotalPbfBytes: file.length } }); } catch (e) { return e; } })();
+  assert.ok(equal.taggedNodes !== undefined, 'exact-boundary file parses');
+  const above = (() => { try { return readEntities(file, { limits: { maxTotalPbfBytes: file.length + 100 } }); } catch (e) { return e; } })();
+  assert.ok(above.nodeCoords instanceof Map, 'larger limit parses');
+});
+
 // --- entity API sanity (ways + wanted coordinates) -------------------------------
 
 test('readEntities keeps wanted ways and their node coordinates', () => {
