@@ -1,0 +1,31 @@
+{
+  "source": "work/symmetry-donor-clean-review.blend",
+  "donor": "negative_x",
+  "reason": "Both structural gates pass; lower median/p90/max seam dihedral and better cheek/neck multiview shape",
+  "visual_evidence": "evidence/bilateral-donor-world-corrected",
+  "eligible_case": "Owner-authorized undecorated symmetric base",
+  "operation": "native mesh.symmetrize NEGATIVE_X",
+  "weld_threshold_m": 1e-06,
+  "donor_vertex_max_change_m": 0.0,
+  "donor_face_connectivity_preserved": true,
+  "reflected_coordinate_error_m": 4.656612873077393e-10,
+  "vertices": 66919,
+  "faces": 67382,
+  "quads": 66266,
+  "triangles": 1068,
+  "ngons": 48,
+  "center_edges": 431,
+  "center_all_manifold": true,
+  "eye_boundary_sizes": [
+    47,
+    47
+  ],
+  "connected_components": 1,
+  "duplicate_faces": 0,
+  "unexpected_boundaries": 0,
+  "winding_errors": 0,
+  "degenerate_faces": 0,
+  "signed_volume": 0.07901899280681914,
+  "uv_status": "Mirrored SourceUV preserved for transfer only; nonoverlapping atlas required next",
+  "status": "STRUCTURE_PASS_POST_SYMMETRY_VISUAL_REVIEW_REQUIRED"
+}

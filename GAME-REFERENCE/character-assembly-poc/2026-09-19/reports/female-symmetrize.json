@@ -1,0 +1,19 @@
+{
+  "gender": "Female",
+  "donor": "positive_x",
+  "direction": "POSITIVE (keep +X, mirror to -X)",
+  "method": "bpy.ops.mesh.symmetrize (edit mode)",
+  "vertices": 45777,
+  "faces": 48382,
+  "quads": 43038,
+  "connected_components": 1,
+  "boundary_groups": [
+    63,
+    63
+  ],
+  "junction_edges": 0,
+  "winding_errors": 0,
+  "degenerate_faces": 2,
+  "symmetry_pairs_checked": 15317,
+  "max_x_asymmetry_m": 0.0
+}

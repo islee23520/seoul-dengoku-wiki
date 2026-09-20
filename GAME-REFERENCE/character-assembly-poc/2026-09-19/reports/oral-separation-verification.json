@@ -1,0 +1,44 @@
+{
+  "scene": "Oral_Surface_Assigned_Review",
+  "verified_roles": [
+    {
+      "object": "Male_UpperGum_WithTeeth_Review.001",
+      "role": "UpperGum_WithTeeth",
+      "vertices": 1775,
+      "polygons": 1924
+    },
+    {
+      "object": "Male_LowerGum_WithTeeth_Review.001",
+      "role": "LowerGum_WithTeeth",
+      "vertices": 1827,
+      "polygons": 1991
+    },
+    {
+      "object": "Male_Tongue_Review.001",
+      "role": "Tongue",
+      "vertices": 266,
+      "polygons": 268
+    },
+    {
+      "object": "Female_UpperGum_WithTeeth_Review.001",
+      "role": "UpperGum_WithTeeth",
+      "vertices": 3081,
+      "polygons": 3108
+    },
+    {
+      "object": "Female_LowerGum_WithTeeth_Review.001",
+      "role": "LowerGum_WithTeeth",
+      "vertices": 2994,
+      "polygons": 3037
+    },
+    {
+      "object": "Female_Tongue_Review.001",
+      "role": "Tongue",
+      "vertices": 567,
+      "polygons": 554
+    }
+  ],
+  "visual_evidence": "evidence/oral-surface-assigned-review",
+  "repair_complete": false,
+  "inner_mouth_separated": false
+}

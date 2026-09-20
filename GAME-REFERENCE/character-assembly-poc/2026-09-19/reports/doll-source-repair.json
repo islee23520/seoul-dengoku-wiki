@@ -1,0 +1,1685 @@
+[
+  {
+    "name": "Female_Head_DollRepair",
+    "source": "SRC_11_tripo_705ef0c2_aea4_4acf_aedf_bf55c1c12875",
+    "before": {
+      "vertices": 18817,
+      "faces": 19311,
+      "boundary_edges": 197,
+      "junctions": 10
+    },
+    "after": {
+      "vertices": 18826,
+      "faces": 19290,
+      "quads": 18182,
+      "junctions": 0,
+      "winding_errors": 0,
+      "zero_area": 0,
+      "remaining_boundaries": [
+        63,
+        63,
+        56
+      ]
+    },
+    "protected_openings": [
+      {
+        "role": "eye",
+        "vertices": 63
+      },
+      {
+        "role": "eye",
+        "vertices": 63
+      },
+      {
+        "role": "neck",
+        "vertices": 56
+      }
+    ],
+    "patches": [
+      {
+        "boundary_edges": 30,
+        "span": 2,
+        "offset": 13,
+        "quad_faces": 26,
+        "new_vertices": 12,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.15170900523662567,
+          -0.25792643427848816,
+          0.49327805638313293
+        ]
+      },
+      {
+        "boundary_edges": 22,
+        "span": 5,
+        "offset": 2,
+        "quad_faces": 30,
+        "new_vertices": 20,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.1427556574344635,
+          -0.2615855932235718,
+          0.493297278881073
+        ]
+      },
+      {
+        "boundary_edges": 16,
+        "span": 1,
+        "offset": 0,
+        "quad_faces": 7,
+        "new_vertices": 0,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.2535095512866974,
+          0.048736635595560074,
+          0.47784423828125
+        ]
+      },
+      {
+        "boundary_edges": 14,
+        "span": 3,
+        "offset": 4,
+        "quad_faces": 12,
+        "new_vertices": 6,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.11178161948919296,
+          -0.2647530734539032,
+          0.500802218914032
+        ]
+      },
+      {
+        "boundary_edges": 14,
+        "span": 3,
+        "offset": 4,
+        "quad_faces": 12,
+        "new_vertices": 6,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.10829372704029083,
+          -0.26416015625,
+          0.5019880533218384
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 3,
+        "offset": 1,
+        "quad_faces": 9,
+        "new_vertices": 4,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.06648757308721542,
+          -0.2547607421875,
+          0.5104573965072632
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 4,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.06355787813663483,
+          -0.2666015625,
+          0.5106608271598816
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Male_Head_DollRepair",
+    "source": "SRC_06_b8dc850c_16b0_4c13_8f65_6a9f8aa08dc7",
+    "before": {
+      "vertices": 13367,
+      "faces": 13832,
+      "boundary_edges": 277,
+      "junctions": 47
+    },
+    "after": {
+      "vertices": 13351,
+      "faces": 13777,
+      "quads": 12767,
+      "junctions": 0,
+      "winding_errors": 0,
+      "zero_area": 0,
+      "remaining_boundaries": [
+        66,
+        47,
+        47
+      ]
+    },
+    "protected_openings": [
+      {
+        "role": "neck",
+        "vertices": 66
+      },
+      {
+        "role": "eye",
+        "vertices": 47
+      },
+      {
+        "role": "eye",
+        "vertices": 47
+      }
+    ],
+    "patches": [
+      {
+        "boundary_edges": 36,
+        "span": 2,
+        "offset": 14,
+        "quad_faces": 32,
+        "new_vertices": 15,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.322211354970932,
+          0.0629068985581398,
+          0.4067518413066864
+        ]
+      },
+      {
+        "boundary_edges": 36,
+        "span": 1,
+        "offset": 0,
+        "quad_faces": 17,
+        "new_vertices": 0,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.316881000995636,
+          0.054796088486909866,
+          0.4006483256816864
+        ]
+      },
+      {
+        "boundary_edges": 34,
+        "span": 8,
+        "offset": 11,
+        "quad_faces": 72,
+        "new_vertices": 56,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.00022973153681959957,
+          -0.12320484966039658,
+          0.26026827096939087
+        ]
+      },
+      {
+        "boundary_edges": 20,
+        "span": 4,
+        "offset": 6,
+        "quad_faces": 24,
+        "new_vertices": 15,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.21335451304912567,
+          -0.20720212161540985,
+          0.33259278535842896
+        ]
+      },
+      {
+        "boundary_edges": 18,
+        "span": 2,
+        "offset": 4,
+        "quad_faces": 14,
+        "new_vertices": 6,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.2947862148284912,
+          0.0191514752805233,
+          0.513536274433136
+        ]
+      },
+      {
+        "boundary_edges": 16,
+        "span": 1,
+        "offset": 6,
+        "quad_faces": 7,
+        "new_vertices": 0,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.2840881049633026,
+          0.02667236514389515,
+          0.530059814453125
+        ]
+      },
+      {
+        "boundary_edges": 16,
+        "span": 2,
+        "offset": 6,
+        "quad_faces": 12,
+        "new_vertices": 5,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.2950744926929474,
+          0.020507890731096268,
+          0.514068603515625
+        ]
+      },
+      {
+        "boundary_edges": 14,
+        "span": 1,
+        "offset": 4,
+        "quad_faces": 6,
+        "new_vertices": 0,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.3158133029937744,
+          0.0577218271791935,
+          0.5866001844406128
+        ]
+      },
+      {
+        "boundary_edges": 14,
+        "span": 2,
+        "offset": 2,
+        "quad_faces": 10,
+        "new_vertices": 4,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.2770647704601288,
+          -0.004185202531516552,
+          0.4306291937828064
+        ]
+      },
+      {
+        "boundary_edges": 14,
+        "span": 3,
+        "offset": 0,
+        "quad_faces": 12,
+        "new_vertices": 6,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.2219935804605484,
+          -0.2101353257894516,
+          0.3642229437828064
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 1,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.023966556414961815,
+          -0.3916422128677368,
+          0.4026693105697632
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 5,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.3016764223575592,
+          0.0514729879796505,
+          0.5483805537223816
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 0,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.17232255637645721,
+          -0.1739501655101776,
+          0.8906657099723816
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 0,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          -4.0612339944345877e-05,
+          -0.3636474311351776,
+          0.3047282099723816
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 1,
+        "offset": 3,
+        "quad_faces": 5,
+        "new_vertices": 0,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.3192952871322632,
+          0.06091318652033806,
+          0.5880534052848816
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 1,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.00040683121187612414,
+          -0.30517578125,
+          0.2282715141773224
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 1,
+        "offset": 2,
+        "quad_faces": 5,
+        "new_vertices": 0,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.023152586072683334,
+          -0.3953450322151184,
+          0.4020589590072632
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 0,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.217610701918602,
+          -0.266357421875,
+          0.5317789912223816
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 0,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.06030279025435448,
+          -0.1466064453125,
+          0.087443046271801
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 4,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.07482916861772537,
+          -0.3015950322151184,
+          0.53173828125
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 0,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.07482904195785522,
+          -0.3015950322151184,
+          0.53173828125
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 4,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.2504068911075592,
+          -0.2245279997587204,
+          0.4917806088924408
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 1,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.2838541865348816,
+          0.026855548843741417,
+          0.5298258662223816
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 0,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.06604010611772537,
+          -0.3377685248851776,
+          0.2741292715072632
+        ]
+      },
+      {
+        "boundary_edges": 10,
+        "span": 2,
+        "offset": 3,
+        "quad_faces": 6,
+        "new_vertices": 2,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.03828117996454239,
+          -0.3291991949081421,
+          0.32075199484825134
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Male_Body_DollRepair",
+    "source": "ADD_15_tripo_2cc3856d_c166_4137_9a4e_70daa4276a8d",
+    "before": {
+      "vertices": 26127,
+      "faces": 28044,
+      "boundary_edges": 228,
+      "junctions": 8
+    },
+    "after": {
+      "vertices": 26104,
+      "faces": 27967,
+      "quads": 24195,
+      "junctions": 0,
+      "winding_errors": 0,
+      "zero_area": 0,
+      "remaining_boundaries": [
+        46
+      ]
+    },
+    "protected_openings": [
+      {
+        "role": "neck",
+        "vertices": 46
+      }
+    ],
+    "patches": [
+      {
+        "boundary_edges": 26,
+        "span": 5,
+        "offset": 6,
+        "quad_faces": 40,
+        "new_vertices": 28,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.08086688816547394,
+          0.004619959741830826,
+          0.5392878651618958
+        ]
+      },
+      {
+        "boundary_edges": 22,
+        "span": 5,
+        "offset": 2,
+        "quad_faces": 30,
+        "new_vertices": 20,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.1015625,
+          -0.003018375253304839,
+          0.7067649364471436
+        ]
+      },
+      {
+        "boundary_edges": 22,
+        "span": 3,
+        "offset": 0,
+        "quad_faces": 24,
+        "new_vertices": 14,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.48923563957214355,
+          0.02954115718603134,
+          0.7560147643089294
+        ]
+      },
+      {
+        "boundary_edges": 20,
+        "span": 4,
+        "offset": 9,
+        "quad_faces": 24,
+        "new_vertices": 15,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.08469238132238388,
+          -0.002441332209855318,
+          0.7722412347793579
+        ]
+      },
+      {
+        "boundary_edges": 18,
+        "span": 2,
+        "offset": 1,
+        "quad_faces": 14,
+        "new_vertices": 6,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.024983728304505348,
+          0.07215716689825058,
+          0.528564453125
+        ]
+      },
+      {
+        "boundary_edges": 18,
+        "span": 1,
+        "offset": 0,
+        "quad_faces": 8,
+        "new_vertices": 0,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.420654296875,
+          0.042507611215114594,
+          0.716064453125
+        ]
+      },
+      {
+        "boundary_edges": 16,
+        "span": 2,
+        "offset": 0,
+        "quad_faces": 12,
+        "new_vertices": 5,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.4476318359375,
+          0.03744519501924515,
+          0.705291748046875
+        ]
+      },
+      {
+        "boundary_edges": 16,
+        "span": 2,
+        "offset": 6,
+        "quad_faces": 12,
+        "new_vertices": 5,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.47552490234375,
+          0.031005864962935448,
+          0.6883544921875
+        ]
+      },
+      {
+        "boundary_edges": 16,
+        "span": 1,
+        "offset": 0,
+        "quad_faces": 7,
+        "new_vertices": 0,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.49365234375,
+          0.02896132878959179,
+          0.711700439453125
+        ]
+      },
+      {
+        "boundary_edges": 16,
+        "span": 3,
+        "offset": 5,
+        "quad_faces": 15,
+        "new_vertices": 8,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.416778564453125,
+          0.012756481766700745,
+          0.7288818359375
+        ]
+      },
+      {
+        "boundary_edges": 14,
+        "span": 2,
+        "offset": 5,
+        "quad_faces": 10,
+        "new_vertices": 4,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.2911900281906128,
+          0.05196712538599968,
+          0.7150879502296448
+        ]
+      },
+      {
+        "boundary_edges": 14,
+        "span": 2,
+        "offset": 5,
+        "quad_faces": 10,
+        "new_vertices": 4,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.038713738322257996,
+          0.07805531471967697,
+          0.670968234539032
+        ]
+      },
+      {
+        "boundary_edges": 14,
+        "span": 1,
+        "offset": 6,
+        "quad_faces": 6,
+        "new_vertices": 0,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.1695382297039032,
+          -0.03560968488454819,
+          0.02207729034125805
+        ]
+      },
+      {
+        "boundary_edges": 14,
+        "span": 2,
+        "offset": 3,
+        "quad_faces": 10,
+        "new_vertices": 4,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.2911900281906128,
+          0.05196719616651535,
+          0.7150879502296448
+        ]
+      },
+      {
+        "boundary_edges": 14,
+        "span": 2,
+        "offset": 6,
+        "quad_faces": 10,
+        "new_vertices": 4,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.4446847438812256,
+          0.04248049110174179,
+          0.7238770127296448
+        ]
+      },
+      {
+        "boundary_edges": 14,
+        "span": 3,
+        "offset": 4,
+        "quad_faces": 12,
+        "new_vertices": 6,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.1266741156578064,
+          0.06567389518022537,
+          0.7330148220062256
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 4,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.1306559294462204,
+          0.026692736893892288,
+          0.11279296875
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 1,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.0838623046875,
+          -0.00618479959666729,
+          0.7696533203125
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 4,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.0749511793255806,
+          0.047241270542144775,
+          0.6239827871322632
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 3,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.113037109375,
+          0.01623537763953209,
+          0.380615234375
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 0,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.0601806603372097,
+          0.07735197991132736,
+          0.7322591543197632
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 4,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.1593017578125,
+          -0.047932934015989304,
+          0.010213218629360199
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 1,
+        "offset": 4,
+        "quad_faces": 5,
+        "new_vertices": 0,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.03096516989171505,
+          0.002319422084838152,
+          0.8139241933822632
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 0,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.4980875849723816,
+          0.031168770045042038,
+          0.7306315302848816
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 0,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.0404052734375,
+          -0.028523724526166916,
+          0.4495036005973816
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 0,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.4501953125,
+          0.021443821489810944,
+          0.7178141474723816
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 0,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.439208984375,
+          0.03645836189389229,
+          0.750244140625
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 3,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          4.0686496504349634e-05,
+          0.02840174362063408,
+          0.4437255859375
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 4,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.02246093563735485,
+          -0.021525021642446518,
+          0.4631754755973816
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 1,
+        "offset": 0,
+        "quad_faces": 5,
+        "new_vertices": 0,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.013997390866279602,
+          0.058634500950574875,
+          0.5449625849723816
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 0,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.1029866635799408,
+          0.0482177697122097,
+          0.119140625
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 4,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.0029296837747097015,
+          -0.027587804943323135,
+          0.7459310293197632
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 2,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.4501139521598816,
+          0.04268406331539154,
+          0.7345784902572632
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 0,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.4501953125,
+          0.021443702280521393,
+          0.7178141474723816
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 0,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.0339355506002903,
+          0.04130048677325249,
+          0.3754476010799408
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 3,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.4627278745174408,
+          0.028483083471655846,
+          0.6907552480697632
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 1,
+        "offset": 5,
+        "quad_faces": 5,
+        "new_vertices": 0,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.1535237729549408,
+          -0.0013020221376791596,
+          0.7409261465072632
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 4,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.0756429061293602,
+          -0.007039329037070274,
+          0.6280924677848816
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 3,
+        "offset": 0,
+        "quad_faces": 9,
+        "new_vertices": 4,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.4671224057674408,
+          0.027954241260886192,
+          0.6985270380973816
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 1,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.0882975310087204,
+          0.024088550359010696,
+          0.2117919921875
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 1,
+        "offset": 5,
+        "quad_faces": 5,
+        "new_vertices": 0,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.013997404836118221,
+          0.058634500950574875,
+          0.5449625849723816
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 0,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.074951171875,
+          0.047241292893886566,
+          0.6239827871322632
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 1,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.1396484375,
+          -0.0482177659869194,
+          0.02335612289607525
+        ]
+      },
+      {
+        "boundary_edges": 10,
+        "span": 1,
+        "offset": 4,
+        "quad_faces": 4,
+        "new_vertices": 0,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.47187501192092896,
+          0.03154310956597328,
+          0.693603515625
+        ]
+      },
+      {
+        "boundary_edges": 10,
+        "span": 2,
+        "offset": 0,
+        "quad_faces": 6,
+        "new_vertices": 2,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.09731445461511612,
+          -0.011669858358800411,
+          0.7039551138877869
+        ]
+      },
+      {
+        "boundary_edges": 10,
+        "span": 2,
+        "offset": 1,
+        "quad_faces": 6,
+        "new_vertices": 2,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.44111329317092896,
+          0.00546877970919013,
+          0.7860351800918579
+        ]
+      },
+      {
+        "boundary_edges": 10,
+        "span": 2,
+        "offset": 3,
+        "quad_faces": 6,
+        "new_vertices": 2,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.44111329317092896,
+          0.00527358241379261,
+          0.7861328125
+        ]
+      },
+      {
+        "boundary_edges": 10,
+        "span": 2,
+        "offset": 4,
+        "quad_faces": 6,
+        "new_vertices": 2,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.47216796875,
+          0.031445324420928955,
+          0.693652331829071
+        ]
+      },
+      {
+        "boundary_edges": 10,
+        "span": 1,
+        "offset": 1,
+        "quad_faces": 4,
+        "new_vertices": 0,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.49199220538139343,
+          0.028662120923399925,
+          0.708447277545929
+        ]
+      },
+      {
+        "boundary_edges": 10,
+        "span": 2,
+        "offset": 3,
+        "quad_faces": 6,
+        "new_vertices": 2,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.49370118975639343,
+          0.02861342765390873,
+          0.750732421875
+        ]
+      },
+      {
+        "boundary_edges": 10,
+        "span": 2,
+        "offset": 4,
+        "quad_faces": 6,
+        "new_vertices": 2,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.4921875,
+          0.0287599116563797,
+          0.7085937857627869
+        ]
+      },
+      {
+        "boundary_edges": 10,
+        "span": 2,
+        "offset": 0,
+        "quad_faces": 6,
+        "new_vertices": 2,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.4930175840854645,
+          0.029248064383864403,
+          0.755810558795929
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Female_Body_DollRepair",
+    "source": "ADD_10_tripo_105239fe_6293_4e4e_9d9f_d949e0720d54",
+    "before": {
+      "vertices": 26275,
+      "faces": 28422,
+      "boundary_edges": 83,
+      "junctions": 16
+    },
+    "after": {
+      "vertices": 26244,
+      "faces": 28302,
+      "quads": 24152,
+      "junctions": 0,
+      "winding_errors": 0,
+      "zero_area": 0,
+      "remaining_boundaries": [
+        32
+      ]
+    },
+    "protected_openings": [
+      {
+        "role": "neck",
+        "vertices": 32
+      }
+    ],
+    "patches": [
+      {
+        "boundary_edges": 28,
+        "span": 3,
+        "offset": 10,
+        "quad_faces": 33,
+        "new_vertices": 20,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.4984131157398224,
+          0.038347531110048294,
+          0.8856724500656128
+        ]
+      },
+      {
+        "boundary_edges": 20,
+        "span": 3,
+        "offset": 1,
+        "quad_faces": 21,
+        "new_vertices": 12,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.4288085997104645,
+          0.021020658314228058,
+          0.9076904654502869
+        ]
+      },
+      {
+        "boundary_edges": 18,
+        "span": 2,
+        "offset": 1,
+        "quad_faces": 14,
+        "new_vertices": 6,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.492241770029068,
+          0.034071337431669235,
+          0.9092339277267456
+        ]
+      },
+      {
+        "boundary_edges": 18,
+        "span": 2,
+        "offset": 1,
+        "quad_faces": 14,
+        "new_vertices": 6,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.481689453125,
+          0.028754370287060738,
+          0.8857693076133728
+        ]
+      },
+      {
+        "boundary_edges": 14,
+        "span": 3,
+        "offset": 4,
+        "quad_faces": 12,
+        "new_vertices": 6,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.4671107828617096,
+          0.030796747654676437,
+          0.8835101127624512
+        ]
+      },
+      {
+        "boundary_edges": 14,
+        "span": 2,
+        "offset": 6,
+        "quad_faces": 10,
+        "new_vertices": 4,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.4606236219406128,
+          0.022809859365224838,
+          0.8546317219734192
+        ]
+      },
+      {
+        "boundary_edges": 14,
+        "span": 3,
+        "offset": 3,
+        "quad_faces": 12,
+        "new_vertices": 6,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.4819336235523224,
+          0.028704114258289337,
+          0.8851493000984192
+        ]
+      },
+      {
+        "boundary_edges": 14,
+        "span": 1,
+        "offset": 6,
+        "quad_faces": 6,
+        "new_vertices": 0,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.1782924234867096,
+          -0.0538155660033226,
+          0.0201939195394516
+        ]
+      },
+      {
+        "boundary_edges": 14,
+        "span": 3,
+        "offset": 0,
+        "quad_faces": 12,
+        "new_vertices": 6,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.4844796657562256,
+          0.03166855871677399,
+          0.8720355033874512
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 1,
+        "offset": 5,
+        "quad_faces": 5,
+        "new_vertices": 0,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.1689453423023224,
+          -0.0734049454331398,
+          0.010864264331758022
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 3,
+        "offset": 0,
+        "quad_faces": 9,
+        "new_vertices": 4,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.4671224057674408,
+          0.030517607927322388,
+          0.8838297724723816
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 1,
+        "offset": 5,
+        "quad_faces": 5,
+        "new_vertices": 0,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.4591064453125,
+          0.02465835213661194,
+          0.8728841543197632
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 5,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.172444686293602,
+          -0.0585530549287796,
+          0.02038574405014515
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 1,
+        "offset": 2,
+        "quad_faces": 5,
+        "new_vertices": 0,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.1783447563648224,
+          -0.073486328125,
+          0.010864264331758022
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 0,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.1787109375,
+          -0.021118197590112686,
+          0.044677734375
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 0,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.1858723759651184,
+          -0.06380213052034378,
+          0.0169677771627903
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 4,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.1314290463924408,
+          -0.018066395074129105,
+          0.0469156913459301
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 1,
+        "offset": 5,
+        "quad_faces": 5,
+        "new_vertices": 0,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.4849446713924408,
+          0.03365086764097214,
+          0.906005859375
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 2,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.1861979067325592,
+          -0.05912276357412338,
+          0.014444990083575249
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 0,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.4898681640625,
+          0.03287763521075249,
+          0.9123128652572632
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 3,
+        "offset": 0,
+        "quad_faces": 9,
+        "new_vertices": 4,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.47412109375,
+          0.03259280323982239,
+          0.867431640625
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 1,
+        "offset": 3,
+        "quad_faces": 5,
+        "new_vertices": 0,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.1793619990348816,
+          -0.0630289688706398,
+          0.014200850389897823
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 3,
+        "offset": 0,
+        "quad_faces": 9,
+        "new_vertices": 4,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.4742024838924408,
+          0.03141278773546219,
+          0.8527018427848816
+        ]
+      },
+      {
+        "boundary_edges": 12,
+        "span": 2,
+        "offset": 0,
+        "quad_faces": 8,
+        "new_vertices": 3,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.1507161557674408,
+          -0.076904296875,
+          0.0277913436293602
+        ]
+      },
+      {
+        "boundary_edges": 10,
+        "span": 2,
+        "offset": 4,
+        "quad_faces": 6,
+        "new_vertices": 2,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.49272462725639343,
+          0.03374026343226433,
+          0.910595715045929
+        ]
+      },
+      {
+        "boundary_edges": 10,
+        "span": 2,
+        "offset": 0,
+        "quad_faces": 6,
+        "new_vertices": 2,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.4749511778354645,
+          0.023925812914967537,
+          0.907910168170929
+        ]
+      },
+      {
+        "boundary_edges": 10,
+        "span": 2,
+        "offset": 3,
+        "quad_faces": 6,
+        "new_vertices": 2,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.16083985567092896,
+          -0.08491210639476776,
+          0.013281255960464478
+        ]
+      },
+      {
+        "boundary_edges": 10,
+        "span": 1,
+        "offset": 4,
+        "quad_faces": 4,
+        "new_vertices": 0,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.4901367127895355,
+          0.03334964066743851,
+          0.906445324420929
+        ]
+      },
+      {
+        "boundary_edges": 10,
+        "span": 2,
+        "offset": 0,
+        "quad_faces": 6,
+        "new_vertices": 2,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.18046876788139343,
+          -0.06416015326976776,
+          0.019580082967877388
+        ]
+      },
+      {
+        "boundary_edges": 10,
+        "span": 1,
+        "offset": 0,
+        "quad_faces": 4,
+        "new_vertices": 0,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.4867187440395355,
+          0.03085940144956112,
+          0.8661133050918579
+        ]
+      },
+      {
+        "boundary_edges": 10,
+        "span": 2,
+        "offset": 2,
+        "quad_faces": 6,
+        "new_vertices": 2,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.18046873807907104,
+          -0.06416019797325134,
+          0.019580082967877388
+        ]
+      },
+      {
+        "boundary_edges": 10,
+        "span": 1,
+        "offset": 3,
+        "quad_faces": 4,
+        "new_vertices": 0,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.47099611163139343,
+          0.029492337256669998,
+          0.8492187857627869
+        ]
+      },
+      {
+        "boundary_edges": 10,
+        "span": 2,
+        "offset": 0,
+        "quad_faces": 6,
+        "new_vertices": 2,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.17695312201976776,
+          -0.07597660273313522,
+          0.016015630215406418
+        ]
+      },
+      {
+        "boundary_edges": 10,
+        "span": 2,
+        "offset": 3,
+        "quad_faces": 6,
+        "new_vertices": 2,
+        "boundary_displacement_m": 0,
+        "center": [
+          0.17695313692092896,
+          -0.07597655802965164,
+          0.016015630215406418
+        ]
+      },
+      {
+        "boundary_edges": 8,
+        "span": 2,
+        "offset": 1,
+        "quad_faces": 4,
+        "new_vertices": 1,
+        "boundary_displacement_m": 0,
+        "center": [
+          -0.1815185397863388,
+          -0.06549075990915298,
+          0.015502936206758022
+        ]
+      }
+    ]
+  }
+]

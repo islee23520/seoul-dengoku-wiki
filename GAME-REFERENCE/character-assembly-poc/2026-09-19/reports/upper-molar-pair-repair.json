@@ -1,0 +1,32 @@
+{
+  "source": "work/oral-separated-verified.blend",
+  "donor_component": 5,
+  "replaced_component": 4,
+  "reason": "Mutual tooth correspondence; donor0junction/0winding versus recipient4junction/3winding; reflected max discrepancy .00244 source units",
+  "symmetry_plane_x": -0.0007323697209358215,
+  "parts": [
+    {
+      "object": "Male_UpperMolar_positive_Repaired",
+      "vertices": 104,
+      "faces": 132,
+      "root_cap_quads": 9,
+      "boundaries": 0,
+      "junctions": 0,
+      "winding_errors": 0,
+      "signed_volume": 1.1250166689599131e-05,
+      "original_crown_shape_preserved": true
+    },
+    {
+      "object": "Male_UpperMolar_negative_Repaired",
+      "vertices": 104,
+      "faces": 132,
+      "root_cap_quads": 9,
+      "boundaries": 0,
+      "junctions": 0,
+      "winding_errors": 0,
+      "signed_volume": 1.1250166689599094e-05,
+      "original_crown_shape_preserved": true
+    }
+  ],
+  "status": "PAIR_REPAIR_REQUIRES_VISUAL_REVIEW"
+}

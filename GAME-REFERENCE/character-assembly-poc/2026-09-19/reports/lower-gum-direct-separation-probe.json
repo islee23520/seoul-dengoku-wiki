@@ -1,0 +1,297 @@
+{
+  "before_intersections": 17,
+  "remaining_intersections": [],
+  "remaining_contacts": [
+    {
+      "triangles": [
+        52,
+        436
+      ],
+      "type": "NONADJACENT_POINT_CONTACT"
+    },
+    {
+      "triangles": [
+        101,
+        792
+      ],
+      "type": "NONADJACENT_POINT_CONTACT"
+    },
+    {
+      "triangles": [
+        115,
+        792
+      ],
+      "type": "NONADJACENT_POINT_CONTACT"
+    },
+    {
+      "triangles": [
+        121,
+        879
+      ],
+      "type": "NONADJACENT_POINT_CONTACT"
+    },
+    {
+      "triangles": [
+        121,
+        880
+      ],
+      "type": "NONADJACENT_POINT_CONTACT"
+    },
+    {
+      "triangles": [
+        128,
+        879
+      ],
+      "type": "NONADJACENT_POINT_CONTACT"
+    },
+    {
+      "triangles": [
+        128,
+        880
+      ],
+      "type": "NONADJACENT_POINT_CONTACT"
+    },
+    {
+      "triangles": [
+        391,
+        393
+      ],
+      "type": "NONADJACENT_POINT_CONTACT"
+    },
+    {
+      "triangles": [
+        582,
+        613
+      ],
+      "type": "NONADJACENT_POINT_CONTACT"
+    },
+    {
+      "triangles": [
+        819,
+        846
+      ],
+      "type": "NONADJACENT_POINT_CONTACT"
+    },
+    {
+      "triangles": [
+        820,
+        846
+      ],
+      "type": "NONADJACENT_POINT_CONTACT"
+    },
+    {
+      "triangles": [
+        821,
+        846
+      ],
+      "type": "NONADJACENT_POINT_CONTACT"
+    },
+    {
+      "triangles": [
+        822,
+        846
+      ],
+      "type": "NONADJACENT_POINT_CONTACT"
+    },
+    {
+      "triangles": [
+        977,
+        983
+      ],
+      "type": "NONADJACENT_POINT_CONTACT"
+    },
+    {
+      "triangles": [
+        977,
+        984
+      ],
+      "type": "NONADJACENT_POINT_CONTACT"
+    },
+    {
+      "triangles": [
+        978,
+        983
+      ],
+      "type": "NONADJACENT_POINT_CONTACT"
+    },
+    {
+      "triangles": [
+        978,
+        984
+      ],
+      "type": "NONADJACENT_POINT_CONTACT"
+    }
+  ],
+  "steps": [
+    {
+      "fixed_triangle": 444,
+      "moved_triangle": 36,
+      "sign": -1,
+      "remaining_intersections": 16,
+      "contacts": 20,
+      "max_displacement": 1.011332270540165e-07,
+      "socket_boundary_max_displacement": 1.011332270540165e-07,
+      "surface_area_ratio": 0.9999999955219455,
+      "changed_vertices": [
+        26,
+        69
+      ]
+    },
+    {
+      "fixed_triangle": 118,
+      "moved_triangle": 809,
+      "sign": -1,
+      "remaining_intersections": 13,
+      "contacts": 20,
+      "max_displacement": 0.0012513077414524948,
+      "socket_boundary_max_displacement": 0.0012513077414524948,
+      "surface_area_ratio": 0.9998113534558201,
+      "changed_vertices": [
+        26,
+        69,
+        204
+      ]
+    },
+    {
+      "fixed_triangle": 421,
+      "moved_triangle": 51,
+      "sign": 1,
+      "remaining_intersections": 10,
+      "contacts": 20,
+      "max_displacement": 0.0013330846320618278,
+      "socket_boundary_max_displacement": 0.0013330846320618278,
+      "surface_area_ratio": 0.9996227984893193,
+      "changed_vertices": [
+        26,
+        29,
+        69,
+        89,
+        204
+      ]
+    },
+    {
+      "fixed_triangle": 419,
+      "moved_triangle": 421,
+      "sign": 1,
+      "remaining_intersections": 7,
+      "contacts": 20,
+      "max_displacement": 0.0013330846320618278,
+      "socket_boundary_max_displacement": 0.0013330846320618278,
+      "surface_area_ratio": 0.9996404582777582,
+      "changed_vertices": [
+        26,
+        28,
+        29,
+        69,
+        87,
+        89,
+        204
+      ]
+    },
+    {
+      "fixed_triangle": 105,
+      "moved_triangle": 870,
+      "sign": -1,
+      "remaining_intersections": 5,
+      "contacts": 20,
+      "max_displacement": 0.0013330846320618278,
+      "socket_boundary_max_displacement": 0.0013330846320618278,
+      "surface_area_ratio": 0.9996471251240373,
+      "changed_vertices": [
+        26,
+        28,
+        29,
+        69,
+        87,
+        89,
+        179,
+        182,
+        204
+      ]
+    },
+    {
+      "fixed_triangle": 821,
+      "moved_triangle": 823,
+      "sign": 1,
+      "remaining_intersections": 3,
+      "contacts": 20,
+      "max_displacement": 0.0013330846320618278,
+      "socket_boundary_max_displacement": 0.0013330846320618278,
+      "surface_area_ratio": 0.9996211614602326,
+      "changed_vertices": [
+        26,
+        28,
+        29,
+        69,
+        87,
+        89,
+        179,
+        182,
+        204,
+        569
+      ]
+    },
+    {
+      "fixed_triangle": 454,
+      "moved_triangle": 18,
+      "sign": -1,
+      "remaining_intersections": 1,
+      "contacts": 17,
+      "max_displacement": 0.0013330846320618278,
+      "socket_boundary_max_displacement": 0.0013330846320618278,
+      "surface_area_ratio": 0.9995575663804052,
+      "changed_vertices": [
+        26,
+        28,
+        29,
+        36,
+        37,
+        69,
+        87,
+        89,
+        179,
+        182,
+        204,
+        569
+      ]
+    },
+    {
+      "fixed_triangle": 121,
+      "moved_triangle": 127,
+      "sign": -1,
+      "remaining_intersections": 0,
+      "contacts": 17,
+      "max_displacement": 0.0013330846320618278,
+      "socket_boundary_max_displacement": 0.0013330846320618278,
+      "surface_area_ratio": 0.9995561616205938,
+      "changed_vertices": [
+        26,
+        28,
+        29,
+        36,
+        37,
+        69,
+        87,
+        89,
+        179,
+        182,
+        204,
+        209,
+        211,
+        569
+      ]
+    }
+  ],
+  "attempted_candidates": 288,
+  "rejected_shape": 143,
+  "rejected_geometry": 76,
+  "success": true,
+  "source_applied": false,
+  "root_preserved": true,
+  "maximum_allowed_displacement": 0.0015,
+  "area_ratio_limits": [
+    0.995,
+    1.005
+  ],
+  "status": "NUMERIC_CANDIDATE_REQUIRES_NATIVE_AND_VISUAL_REVIEW"
+}

@@ -1,0 +1,69 @@
+[
+  {
+    "role": "upper",
+    "source_graph": "male-upper-gum-graph.json",
+    "remove_face_ids": [
+      0,
+      2,
+      3,
+      6,
+      9,
+      74,
+      115,
+      211,
+      214,
+      216
+    ],
+    "reverse_face_ids": [
+      1,
+      4,
+      101,
+      114,
+      209,
+      475
+    ],
+    "orientation_conflicts": [],
+    "original_faces": 786,
+    "removed_faces": 10,
+    "removed_quads": 0,
+    "retained_surface_area_ratio": 0.9974356420767334,
+    "new_boundary_edges": 13,
+    "root_adjacent_faces_preserved": true,
+    "vertex_positions_changed": false,
+    "status": "ORIENTABLE_SUBSET_CANDIDATE_REQUIRES_BOUNDARY_AND_SHAPE_QA"
+  },
+  {
+    "role": "lower",
+    "source_graph": "male-lower-gum-graph.json",
+    "remove_face_ids": [
+      17,
+      18,
+      29,
+      65,
+      67,
+      93,
+      164,
+      168,
+      171,
+      172,
+      187,
+      191,
+      197,
+      201,
+      381
+    ],
+    "reverse_face_ids": [
+      200,
+      389
+    ],
+    "orientation_conflicts": [],
+    "original_faces": 760,
+    "removed_faces": 15,
+    "removed_quads": 1,
+    "retained_surface_area_ratio": 0.9949732331552206,
+    "new_boundary_edges": 9,
+    "root_adjacent_faces_preserved": true,
+    "vertex_positions_changed": false,
+    "status": "ORIENTABLE_SUBSET_CANDIDATE_REQUIRES_BOUNDARY_AND_SHAPE_QA"
+  }
+]
