@@ -9,11 +9,11 @@ const read = (p) => readFileSync(resolve(root, p), 'utf8')
 const TIER1 = ['역장','위원장','회장','당회장','사령관','대통령','종정','교정원장','대주교','이사장','대표']
 const sixteenRaw = read('LORE/factions/Sixteen-States.md')
 const leaderByState = {}
-const rulerRe = new RegExp('([가-힣]{2,4})은 (대한민국정부|전국경제인연합회|삼성그룹|현대자동차주식회사|대한예수교장로회|천주교 서울대교구|대한불교조계종|원불교|전국민주노동조합총연맹|급수계약정|규격동맹|선로후계정|호위보호정|관문군정|중립호송시|의약중립맹) (' + TIER1.join('|') + ')', 'g')
+const rulerRe = new RegExp('([가-힣]{2,4})은 (대한민국정부|여의도출자연합회|서초전산그룹|양재기공주식회사|설교명부정|본당인준정|승가구휼정|교헌필사정|정동노동총연맹|급수계약정|규격동맹|선로후계정|호위보호정|관문군정|중립호송시|의약중립맹) (' + TIER1.join('|') + ')', 'g')
 for (const m of sixteenRaw.matchAll(rulerRe)) {
   if (!leaderByState[m[2]]) leaderByState[m[2]] = m[1]
 }
-const rulerRe2 = new RegExp('([가-힣]{2,4})(?:는|은) (대한민국정부|전국경제인연합회|삼성그룹|현대자동차주식회사|대한예수교장로회|천주교 서울대교구|대한불교조계종|원불교|전국민주노동조합총연맹|급수계약정|규격동맹|선로후계정|호위보호정|관문군정|중립호송시|의약중립맹) (' + TIER1.join('|') + ')', 'g')
+const rulerRe2 = new RegExp('([가-힣]{2,4})(?:는|은) (대한민국정부|여의도출자연합회|서초전산그룹|양재기공주식회사|설교명부정|본당인준정|승가구휼정|교헌필사정|정동노동총연맹|급수계약정|규격동맹|선로후계정|호위보호정|관문군정|중립호송시|의약중립맹) (' + TIER1.join('|') + ')', 'g')
 for (const m of sixteenRaw.matchAll(rulerRe2)) {
   if (!leaderByState[m[2]]) leaderByState[m[2]] = m[1]
 }
@@ -42,7 +42,7 @@ for (const line of sixteen.split('\n')) {
     isPower: /강국/.test(m[4]) ? '강국' : '약소',
   }
 }
-const stateOrder = ['급수계약정','규격동맹','현대자동차주식회사','대한예수교장로회','호위보호정','대한민국정부','선로후계정','원불교','전국경제인연합회','대한불교조계종','삼성그룹','중립호송시','의약중립맹','관문군정','천주교 서울대교구','전국민주노동조합총연맹']
+const stateOrder = ['급수계약정','규격동맹','양재기공주식회사','설교명부정','호위보호정','대한민국정부','선로후계정','교헌필사정','여의도출자연합회','승가구휼정','서초전산그룹','중립호송시','의약중립맹','관문군정','본당인준정','정동노동총연맹']
 const states = stateOrder.map(name => ({
   name,
   station: tableInfo[name]?.station || '-',
