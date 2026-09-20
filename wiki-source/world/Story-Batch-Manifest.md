@@ -3,7 +3,7 @@
 이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.
 
 - 원본 앵커: `LORE/World-Narrative-Atlas.md`
-- 원본 해시: `787479c303fb1def4a3e0ac94d86041b80e570ea75c465d3e9457b0918e76106`
+- 원본 해시: `d7c536377aa4f5805ef6a76faf31e0d442e7c0836439e1642876f4aab10d45a9`
 
 ## B001
 

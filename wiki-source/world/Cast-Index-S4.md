@@ -1,6 +1,4 @@
-# 개막 S4 당직 명부
-
-이름 있는 인물 1004명 가운데 **추가 578명**이다. 기존 명부와 핵심·무소속 카드는 [인물 총람](/world/Cast-Index)에서 함께 찾는다. 한 사람 산문은 해당 [Cast-State](/world/Cast-State-01)에 있고, 숫자 원장은 [values-cast.json](../name-pools/values-cast.json)이다. 나이는 적지 않는다.
+# 재건기 S4 당직 명부
 
 | 국가 | 추가 S4 |
 |---|---:|
