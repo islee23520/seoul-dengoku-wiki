@@ -22,7 +22,7 @@ How the opening-day Seoul map is built: the 334-station catalog the runtime read
 - Catalog provenance: OSM BBBike Seoul.osm.pbf points (railway=station/halt, station=subway) clipped to KOSTAT 2013 gu polygons — ODbL 1.0 + Statistics Korea attribution stays with the table.
 - Opening-day interior state per station lives in `../regions/station-interiors.json`, not in these docs.
 - Frontmatter is optional here: `Station-Interior-Construction.md` and `Seoul-Station-Catalog.md` carry YAML (domain/title/summary), the rest carry none.
-- Cross-links reach outside LORE (`../economy`, `../factions`, `../regions`, `../../GAME-LOGIC`) and all resolve as of 2026-09-19; several are self-dir-prefixed (`../places/…` from inside places/) — pre-reorg relics that still resolve, but re-check after any file move. Isometric diagrams are remote GitHub URLs; the SVGs live in `GAME-REFERENCE/assets/wiki/`.
+- Cross-links reach outside LORE (`../economy`, `../factions`, `../regions`, `../../GDD`) and must resolve after domain moves. Retired diagrams are no longer publication inputs.
 
 ## ANTI-PATTERNS
 - Observed floor counts stay empty until the 건축물대장 join — never fill them with fiction.

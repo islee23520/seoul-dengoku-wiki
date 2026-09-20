@@ -1,13 +1,8 @@
 # 서울과 지하철 레이어
 
-![지하철 다층 공간의 인물 방향 시야 연결](https://github.com/islee23520/seoul-kenshi/blob/main/GAME-REFERENCE/assets/wiki/isometric-subway-layers.svg?raw=true)
-
 대합실에서 승강장으로 내려가는 계단과, 환승 통로가 꺾이는 모서리가 한 그림에 겹친다.
 
 2026-09-07 위키 도표. 인물이 얼굴을 돌려 시야를 닫고 같은 칸에서 만난다는 문장은 당시 아이소 설명이다. 문서용 평면도이며 실제 게임 화면이 아니다. 세계 여섯 층의 목표 전투 문법이 아니며, 전장 시점은 2026-09-19 채택한 설계 기본안(소유자 직접 답이 아님)으로 3D 자유 지휘다. 일시정지는 이 파티의 닫힌 전투에만 적용한다.
-
-![지하철 중심 다층 도시](https://github.com/islee23520/seoul-kenshi/blob/main/GAME-REFERENCE/assets/wiki/subway-layers.svg?raw=true)
-
 
 ## 세계의 수직 구조
 

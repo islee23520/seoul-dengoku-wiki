@@ -1,0 +1,59 @@
+{
+  "candidate_centers": [
+    {
+      "center": -0.00415,
+      "median_error": 0.0006900705047883093,
+      "p90_error": 0.004621313419193029,
+      "max_error": 0.010632419027388096
+    },
+    {
+      "center": -0.00391,
+      "median_error": 0.000685154867824167,
+      "p90_error": 0.004673974588513374,
+      "max_error": 0.010690472088754177
+    },
+    {
+      "center": -0.0041503384709358215,
+      "median_error": 0.0006905392510816455,
+      "p90_error": 0.004621970467269421,
+      "max_error": 0.010632351972162724
+    },
+    {
+      "center": 0.0,
+      "median_error": 0.0073404014110565186,
+      "p90_error": 0.009341373108327389,
+      "max_error": 0.01269519329071045
+    }
+  ],
+  "selected_center_for_comparison": -0.00391,
+  "halves": [
+    {
+      "side": "negative_x",
+      "vertices": 141,
+      "faces": 129,
+      "edge_angle_median": 15.20441431889317,
+      "edge_angle_p90": 34.62875514854658,
+      "edge_angle_max": 88.32444781804732,
+      "quad_internal_angle_max": 56.99995157324236,
+      "winding": 0,
+      "junctions": 0,
+      "boundary_edges": 8,
+      "surface_area": 0.035995927932162886
+    },
+    {
+      "side": "positive_x",
+      "vertices": 124,
+      "faces": 101,
+      "edge_angle_median": 14.46349930339228,
+      "edge_angle_p90": 30.35312127340626,
+      "edge_angle_max": 52.38656055656815,
+      "quad_internal_angle_max": 41.26907596841924,
+      "winding": 0,
+      "junctions": 0,
+      "boundary_edges": 10,
+      "surface_area": 0.03245651916222414
+    }
+  ],
+  "not_applied": true,
+  "status": "SYMMETRY_ELIGIBILITY_REVIEW_REQUIRED"
+}

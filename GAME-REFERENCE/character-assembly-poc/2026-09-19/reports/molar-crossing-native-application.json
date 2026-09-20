@@ -1,0 +1,30 @@
+[
+  {
+    "object": "Male_UpperMolar_positive_Repaired",
+    "vertices": 104,
+    "faces": 132,
+    "changed_vertices": 19,
+    "max_displacement_source_units": 4.49365757668375e-06,
+    "outside_region_displacement": 0,
+    "uv_unchanged": true,
+    "topology_unchanged": true,
+    "closed_consistent_shell": true,
+    "signed_volume": 1.1249937955092654e-05,
+    "triangle_data": "Male_UpperMolar_positive_Repaired-crossing-repaired-triangles.npz",
+    "source_coordinate_sha256": "2d81e926d2a6701e682335c628e8d04700a34d085caa3b81315f151bbbbac5ce"
+  },
+  {
+    "object": "Male_UpperMolar_negative_Repaired",
+    "vertices": 104,
+    "faces": 132,
+    "changed_vertices": 19,
+    "max_displacement_source_units": 4.49365757668375e-06,
+    "outside_region_displacement": 0,
+    "uv_unchanged": true,
+    "topology_unchanged": true,
+    "closed_consistent_shell": true,
+    "signed_volume": 1.1249937955092662e-05,
+    "triangle_data": "Male_UpperMolar_negative_Repaired-crossing-repaired-triangles.npz",
+    "source_coordinate_sha256": "40b1593437c61ab83ca02d7cf9f6a07696c3d501cdd68c0097069b89c27ea59f"
+  }
+]

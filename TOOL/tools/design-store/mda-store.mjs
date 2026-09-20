@@ -505,7 +505,7 @@ h2 { font-size:18px; margin:0 0 8px; }
 </head>
 <body>
 <main>
-<p class="kicker">MDA + one-page · SQLite · LORE·GAME-LOGIC·GDD 정본</p>
+<p class="kicker">MDA + one-page · SQLite · LORE·GDD 정본</p>
 <h1>서울:전국 — 설계 문서</h1>
 <p>한 장이 아니라 정본 문서를 층별로 채운 목차다. 각 칸은 그 요소가 무엇인지.</p>
 ${sections}

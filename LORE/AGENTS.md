@@ -3,15 +3,15 @@
 Earned its file: score 17 (124 root md files, 16 subdirs, canon→projection architecture feeding the wiki tool); distinct domain — single-source canon plus generated projections. Subdirectories are separate domains with their own AGENTS.md.
 
 ## OVERVIEW
-One hand-edited canon (`World-Narrative-Atlas.md`, WNA-001, ~58k lines) plus ~120 machine-generated read-only projections with manifests, and `README.md` (Korean TOC of the whole LORE corpus).
+The root atlas (`World-Narrative-Atlas.md`) owns machine registries and generated projections. Domain subdirectories hold hand-authored canon under their own AGENTS.md, and `README.md` is the Korean TOC.
 
 ## WHERE TO LOOK
 | Task | Location |
 |------|----------|
-| Change any canon fact | `World-Narrative-Atlas.md` — the only file edited by hand |
+| Change atlas registry facts | `World-Narrative-Atlas.md`; edit generated pages only through the renderer |
 | Corpus TOC | `README.md` (Korean, relative links, links into all subdirs) |
-| Hostile groups G01–G27 | `Hostile-Ecology-Index.md` (3.1k-line index) → `Hostile-Group-Gxx.md`, one group each; scenario blocks `Gxx-SCn` carry escalation tier (`단계: 1–3`), trigger, choices, moral cost |
-| Monster entries `GxxEyy` | `Monster-Batch-M0xx.md` (mostly 10 entities per batch; varies 4–16 — M042 holds 16) + `Monster-Batch-Manifest.md` (batch → entity ledger) |
+| Hostile groups G01–G27 | `bestiary/Hostile-Ecology-Index.md` → `bestiary/groups/Hostile-Group-Gxx.md`; each group page owns ecology, scenarios and every GxxEyy entry |
+| Bestiary entries `GxxEyy` | Group pages contain all 422 authored entries; Mxxx remains source provenance inside each entry and no batch body page is published |
 | Character dossiers | `Story-Batch-B0xx.md` (per character: identity, pre-collapse life, wounds, 3-act arc, branching endings) + `Story-Batch-Manifest.md` (batch → K/H tables) |
 | Steward houses | `Operating-Houses.md` (corporate HC01–HC22 + civic HP01–HP10) |
 | Synthetics | `Synthetic-Actors.md` (humanoid H / facility F / mobile V, 16 each) |
@@ -26,8 +26,8 @@ One hand-edited canon (`World-Narrative-Atlas.md`, WNA-001, ~58k lines) plus ~12
 - Atlas prose contract: Korean 3rd-person limited 한다체 narrative, 합니다체 guidance; `source_kind` separates fact / inference / fiction; one cause-effect per paragraph.
 
 ## ANTI-PATTERNS
-- Never hand-edit a projection (`Hostile-*`, `Monster-Batch-*`, `Story-Batch-*`, `Operating-Houses.md`, `Synthetic-Actors.md`, `Regional-Physical-AI-Arcs.md`, `World-Relation-Ledger.md`, `World-Expansion-Index.md`). Edit the atlas, then re-project via the wiki tool.
-- `Monster-Batch-M007.md`, `Story-Batch-B017.md`, `Story-Batch-B020.md` do not exist by policy (미저작 — unwritten; the wiki tool rejects merging them with `E_EXCLUDED_ID`, and `TOOL/tools/wiki/confirmed-integration-manifest.json` holds the gate). Manifests still enumerate the full ranges; do not "fill the gap" without that gate.
+- Never hand-edit a projection (`bestiary/**`, `Story-Batch-*`, `Operating-Houses.md`, `Synthetic-Actors.md`, `Regional-Physical-AI-Arcs.md`, `World-Relation-Ledger.md`, `World-Expansion-Index.md`). Edit the atlas, then re-project via the wiki tool.
+- M007's ten reserved IDs remain deliberately unwritten in the WNA registry. No `Monster-Batch-*.md` projection exists. `Story-Batch-B017.md` and `Story-Batch-B020.md` also remain excluded.
 - No real company names, logos, slogans, products, or current executives in fiction; no real institution as the subject of fictional crime.
 - Synthetics: no omniscient narration, no infinite energy, no long-term complete memory, no full network access, no facility control outside the assigned sector.
 - Keep the mixed shape when extending the atlas: Korean narrative prose, English structural terms, JSON `연결` fields for cross-links.

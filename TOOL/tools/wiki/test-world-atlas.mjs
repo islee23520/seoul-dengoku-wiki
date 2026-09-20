@@ -5,22 +5,15 @@ import { mkdtemp, readFile, rm, unlink, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { dirname, join, resolve } from 'node:path';
 import { after, test } from 'node:test';
-import { fileURLToPath, pathToFileURL } from 'node:url';
+import { fileURLToPath } from 'node:url';
 
-import { materializeWorldAtlas } from './materialize-world-atlas.mjs';
-import { extractAtlasJson, extractDiagrams } from './world-atlas-parse.mjs';
+import { materializeWorldAtlas, projectionDestination } from './materialize-world-atlas.mjs';
+import { extractAtlasJson } from './world-atlas-parse.mjs';
 import { projectionsFromAtlas } from './world-atlas-render.mjs';
-import {
-  assertIsometricSvgContracts,
-  collectSvgIds,
-  findGeometryViolations,
-} from './world-atlas-isometric.mjs';
-import { ISOMETRIC_DIAGRAM_ASSETS } from './world-atlas-schema.mjs';
 
 const verifier = fileURLToPath(new URL('./verify-world-expansion.mjs', import.meta.url));
 const repositoryRoot = resolve(dirname(verifier), '..', '..', '..');
 const liveDocs = join(repositoryRoot, 'LORE');
-const wikiAssets = join(repositoryRoot, 'GAME-REFERENCE', 'assets', 'wiki');
 const atlasPath = join(liveDocs, 'World-Narrative-Atlas.md');
 const fixtures = [];
 
@@ -30,8 +23,6 @@ function cloneLiveDocs(dir) {
   mkdirSync(join(dir, '.omo', 'research-private'), { recursive: true });
   mkdirSync(join(dir, 'GDD'), { recursive: true });
   cpSync(liveDocs, docs, { recursive: true });
-  cpSync(
-  );
   for (const name of ['Research-Sources.md']) {
     cpSync(join(repositoryRoot, 'GDD', name), join(dir, 'GDD', name));
   }
@@ -63,6 +54,21 @@ test('Given current repository When houses stage Then atlas has 32 houses and Op
 test('Given current repository When theaters stage Then five theaters and External-Theaters projection', () => {
   const result = runVerifier(['--docs', liveDocs, '--stage', 'theaters', '--atlas', atlasPath]);
   assert.equal(result.code, 0, result.output);
+});
+
+test('Given an expanded theater missing route data When theaters stage Then E_THEATER_FIELD', async () => {
+  const dir = await mkdtemp(join(tmpdir(), 'atlas-theater-fields-'));
+  fixtures.push(dir);
+  const docs = cloneLiveDocs(dir);
+  const atlas = join(docs, 'World-Narrative-Atlas.md');
+  const markdown = await readFile(atlas, 'utf8');
+  const parsed = extractAtlasJson(markdown);
+  assert.equal(parsed.ok, true, parsed.error);
+  delete parsed.value.theaters[0].seoul_route;
+  await writeFile(atlas, markdown.replace(/```json\s*[\s\S]*?```/, `\`\`\`json\n${JSON.stringify(parsed.value, null, 2)}\n\`\`\``));
+  const result = runVerifier(['--docs', docs, '--stage', 'theaters', '--atlas', atlas]);
+  assert.equal(result.code, 1);
+  assert.match(result.stderr, /^E_THEATER_FIELD: XT01 missing seoul_route$/m);
 });
 
 test('Given current repository When synthetics stage Then 48 synthetics and Synthetic-Actors projection', () => {
@@ -118,6 +124,36 @@ test('Given two materializer --check runs When generated projections are unchang
   assert.equal(first.atlasHash, written.atlasHash);
 });
 
+test('Given bestiary projections When locating them Then a stale root copy cannot override the bestiary directory', async () => {
+  const dir = await mkdtemp(join(tmpdir(), 'atlas-bestiary-destination-'));
+  fixtures.push(dir);
+  for (const name of ['Hostile-Ecology-Index.md', 'Hostile-Group-G01.md']) {
+    await writeFile(join(dir, name), '# old location\n');
+    assert.equal(
+      projectionDestination(dir, name),
+      name.startsWith('Hostile-Group-') ? join(dir, 'bestiary', 'groups', name) : join(dir, 'bestiary', name),
+    );
+  }
+  assert.equal(projectionDestination(dir, 'Monster-Batch-M042.md'), join(dir, 'Monster-Batch-M042.md'));
+  assert.equal(projectionDestination(dir, 'Story-Batch-B001.md'), join(dir, 'Story-Batch-B001.md'));
+});
+
+test('Given nested unknown and duplicate root bestiary pages When checking Then every invalid location is rejected', async () => {
+  const dir = await mkdtemp(join(tmpdir(), 'atlas-bestiary-locations-'));
+  fixtures.push(dir);
+  await materializeWorldAtlas({ atlasPath, outDir: dir });
+  mkdirSync(join(dir, 'bestiary'), { recursive: true });
+  await writeFile(join(dir, 'bestiary', 'Monster-Batch-M999.md'), '# retired\n');
+  await writeFile(join(dir, 'bestiary', 'Monster-Batch-M007.md'), '# unwritten\n');
+  await writeFile(join(dir, 'Hostile-Ecology-Index.md'), '# duplicate\n');
+  await assert.rejects(() => materializeWorldAtlas({ atlasPath, outDir: dir, check: true }), (error) => {
+    assert.match(error.message, /unexpected bestiary\/Monster-Batch-M999\.md/);
+    assert.match(error.message, /unexpected bestiary\/Monster-Batch-M007\.md/);
+    assert.match(error.message, /misplaced Hostile-Ecology-Index\.md/);
+    return true;
+  });
+});
+
 test('Given a mutated projection When materializer --check Then nonzero', async () => {
   const dir = await mkdtemp(join(tmpdir(), 'atlas-house-check-'));
   fixtures.push(dir);
@@ -157,38 +193,25 @@ test('Given extra M999 B099 G99 files When materializer --check Then nonzero nam
   assert.equal(ok.hashes['Monster-Batch-M999.md'], undefined);
 });
 
-test('Given an altered projected confirmed Monster-Batch-M001 When materializer --check Then it is stale, not unexpected', async () => {
+test('Given a retired Monster-Batch-M001 When materializer checks Then it is unexpected', async () => {
   const dir = await mkdtemp(join(tmpdir(), 'atlas-confirmed-monster-'));
   fixtures.push(dir);
   await materializeWorldAtlas({ atlasPath, outDir: dir, check: false });
-  await writeFile(join(dir, 'Monster-Batch-M001.md'), '# altered confirmed projection\n');
+  await writeFile(join(dir, 'Monster-Batch-M001.md'), '# retired projection\n');
   await assert.rejects(
     () => materializeWorldAtlas({ atlasPath, outDir: dir, check: true }),
     (err) => {
       const message = String(err?.message ?? err);
-      assert.match(message, /stale Monster-Batch-M001\.md/);
-      assert.doesNotMatch(message, /unexpected Monster-Batch-M001\.md/);
+      assert.match(message, /unexpected Monster-Batch-M001\.md/);
       return true;
     },
   );
 });
 
-test('Given live docs When materializer --check Then confirmed monster copies are not unexpected', async () => {
-  try {
-    const ok = await materializeWorldAtlas({
-      atlasPath,
-      outDir: liveDocs,
-      check: true,
-    });
-    assert.ok(ok.hashes['Operating-Houses.md']);
-    assert.match(ok.hashes['Monster-Batch-M001.md'] ?? '', /^[0-9a-f]{64}$/);
-    assert.match(ok.hashes['Monster-Batch-M039.md'] ?? '', /^[0-9a-f]{64}$/);
-  } catch (err) {
-    const message = String(err?.message ?? err);
-    assert.doesNotMatch(message, /unexpected Monster-Batch-M001\.md/);
-    assert.doesNotMatch(message, /unexpected Monster-Batch-M039\.md/);
-    throw err;
-  }
+test('Given live docs When materializer --check Then retired monster batch pages are rejected', async () => {
+  const ok = await materializeWorldAtlas({ atlasPath, outDir: liveDocs, check: true });
+  assert.ok(ok.hashes['Operating-Houses.md']);
+  assert.equal(ok.hashes['Monster-Batch-M001.md'], undefined);
 });
 
 test('Given canonical G19 and G24 records When projecting atlas Then group pages are emitted', () => {
@@ -219,6 +242,39 @@ test('Given canonical G19 and G24 records When projecting atlas Then group pages
   }, 'canonical-g19');
   assert.match(files['Hostile-Group-G19.md'], /^# G19 · /m);
   assert.match(files['Hostile-Group-G24.md'], /^# G24 · /m);
+});
+
+test('Given all authored bestiary entries When rendering Then group rosters link every entry without losing source prose', async () => {
+  const atlas = extractAtlasJson(await readFile(atlasPath, 'utf8')).value;
+  const files = projectionsFromAtlas(atlas, 'bestiary-source');
+  const ids = new Set();
+  for (const [batchId, content] of Object.entries(atlas.monster_contents)) {
+    for (const entry of content.entries) {
+      assert.equal(ids.has(entry.id), false, entry.id);
+      ids.add(entry.id);
+      const group = files[`Hostile-Group-${entry.group_id}.md`];
+      assert.ok(entry.bestiary, `${entry.id}: missing bestiary classification`);
+      assert.match(entry.bestiary.kind, /^(?:common-organism|mutant-organism|machine|biomechanical-organism|habitat|event)$/);
+      assert.match(entry.bestiary.formation, /^(?:single|group|site|event)$/);
+      assert.ok(entry.bestiary.battlefield_role.trim(), entry.id);
+      assert.ok(entry.bestiary.scope_note.trim(), entry.id);
+      assert.ok(group.includes(`<a id="${entry.id.toLowerCase()}"></a>`), entry.id);
+      assert.ok(group.includes(`- 출처 배치: ${batchId}`), entry.id);
+      assert.ok(group.includes(entry.prose.trim()), entry.id);
+    }
+  }
+  assert.equal(ids.size, 422);
+  assert.equal(files['Monster-Batch-M007.md'], undefined);
+  assert.equal(files['Monster-Batch-M001.md'], undefined);
+  assert.equal(files['Monster-Batch-Manifest.md'], undefined);
+  assert.equal(atlas.monster_batches.flatMap((batch) => batch.entry_ids).length, 432);
+  for (const group of atlas.hostile_groups) {
+    assert.ok(group.bestiary?.common_ecology?.trim(), group.id);
+    assert.ok(group.bestiary?.variant_relation?.trim(), group.id);
+    assert.ok(group.bestiary?.command_scope?.trim(), group.id);
+    assert.ok(files['Hostile-Ecology-Index.md'].includes(`(groups/Hostile-Group-${group.id}.md)`), group.id);
+    assert.ok(files[`Hostile-Group-${group.id}.md`].includes(group.dossier_prose.trim()), group.id);
+  }
 });
 
 test('Given seed-only G19 When projecting atlas Then Hostile-Group-G19.md is absent', () => {
@@ -274,7 +330,7 @@ test('Given current G01-G06 When monster-manifest Then dossiers and outlines ver
 test('Given generated G01-G12 group pages When read Then scenario headings exist', async () => {
   const atlas = extractAtlasJson(await readFile(atlasPath, 'utf8')).value;
   for (const group of atlas.hostile_groups.filter((row) => /^G(?:0[1-9]|1[0-2])$/.test(row.id))) {
-    const page = await readFile(join(liveDocs, `Hostile-Group-${group.id}.md`), 'utf8');
+    const page = await readFile(projectionDestination(liveDocs, `Hostile-Group-${group.id}.md`), 'utf8');
     assert.equal((group.scenario_outlines ?? []).length, 3, group.id);
     for (const scenario of group.scenario_outlines) {
       assert.match(page, new RegExp(`^### ${scenario.id} · ${scenario.title}$`, 'm'));
@@ -323,7 +379,7 @@ test('Given G13-G18 dossiers When group-dossiers stage Then IDs scenarios and pr
     for (const scenario of group.scenario_links) {
       assert.match(group.dossier_prose, new RegExp(`^### ${scenario} · `, 'm'));
     }
-    const page = await readFile(join(liveDocs, `Hostile-Group-${group.id}.md`), 'utf8');
+    const page = await readFile(projectionDestination(liveDocs, `Hostile-Group-${group.id}.md`), 'utf8');
     assert.match(page, new RegExp(`^# ${group.id} · ${group.display_name}$`, 'm'));
     assert.ok(page.includes(group.dossier_prose));
   }
@@ -359,88 +415,6 @@ test('Given an incomplete G07 scenario When monster-manifest stage Then E_GROUP_
   const result = runVerifier(['--docs', docs, '--stage', 'monster-manifest', '--atlas', atlas]);
   assert.equal(result.code, 1);
   assert.match(result.stderr, /^E_GROUP_SCENARIO:/m);
-});
-
-test('Given repository isometric atlas views When files exist Then SVG contracts pass', async () => {
-  const markdown = await readFile(atlasPath, 'utf8');
-  const atlas = extractAtlasJson(markdown).value;
-  const diagrams = extractDiagrams(atlas);
-  assert.equal(diagrams.length, 3);
-  assert.deepEqual(diagrams.map((d) => d.asset), [...ISOMETRIC_DIAGRAM_ASSETS]);
-  for (const asset of ISOMETRIC_DIAGRAM_ASSETS) {
-    const svg = await readFile(join(wikiAssets, asset), 'utf8');
-    const diagram = diagrams.find((item) => item.asset === asset);
-    assertIsometricSvgContracts({ svg, diagram, atlas });
-    assert.equal(findGeometryViolations(svg, diagram).length, 0);
-  }
-});
-
-function corpusFile(name) {
-  const roots = ['LORE', 'GAME-LOGIC', 'GDD'].map((dir) => join(repositoryRoot, dir));
-  for (const root of roots) {
-    const direct = join(root, name);
-    if (existsSync(direct)) return direct;
-  }
-  const walk = (dir) => {
-    let entries;
-    try {
-      entries = readdirSync(dir);
-    } catch {
-      return undefined;
-    }
-    for (const entry of entries) {
-      const path = join(dir, entry);
-      let st;
-      try {
-        st = statSync(path);
-      } catch {
-        continue;
-      }
-      if (st.isDirectory()) {
-        const hit = walk(path);
-        if (hit) return hit;
-      } else if (entry === name) return path;
-    }
-    return undefined;
-  };
-  for (const root of roots) {
-    if (!existsSync(root)) continue;
-    const hit = walk(root);
-    if (hit) return hit;
-  }
-  return undefined;
-}
-
-test('Given isometric SVG hrefs When resolved from asset path Then every external target exists', async () => {
-  const origin = 'http://127.0.0.1/';
-  let externalCount = 0;
-  let fragmentCount = 0;
-  for (const asset of ISOMETRIC_DIAGRAM_ASSETS) {
-    const svgPath = resolve(join(wikiAssets, asset));
-    const svg = await readFile(svgPath, 'utf8');
-    const ids = new Set(collectSvgIds(svg));
-    const hrefs = [...svg.matchAll(/<a\b[^>]*\bhref="([^"]*)"/g)].map((match) => match[1]);
-    assert.ok(hrefs.length > 0, `${asset}: expected hrefs`);
-    for (const href of hrefs) {
-      const fromAsset = new URL(href, pathToFileURL(svgPath));
-      const fromServer = new URL(href, new URL(`/assets/wiki/${asset}`, origin));
-      if (href.startsWith('#')) {
-        fragmentCount += 1;
-        const id = decodeURIComponent(href.slice(1));
-        assert.ok(ids.has(id), `${asset}: fragment ${href} has no target id`);
-        continue;
-      }
-      externalCount += 1;
-      const page = decodeURIComponent(fromAsset.pathname.split('/').pop() || '');
-      const assetTarget = corpusFile(page) ?? fileURLToPath(fromAsset);
-      const serverPage = decodeURIComponent(fromServer.pathname.split('/').pop() || '');
-      const serverTarget = corpusFile(serverPage) ?? resolve(join(repositoryRoot, decodeURIComponent(fromServer.pathname).replace(/^\//, '')));
-      assert.equal(existsSync(assetTarget), true, `${asset}: href ${href} missing ${assetTarget}`);
-      assert.equal(existsSync(serverTarget), true, `${asset}: served ${fromServer.pathname} missing ${serverTarget}`);
-    }
-  }
-  assert.ok(externalCount > 0, 'expected external isometric wiki hrefs');
-  assert.ok(fragmentCount > 0, 'expected in-document isometric fragment hrefs');
 });
 
 test('Given company-aliases manifest When real names enter canon Then every real name has a rename target', async () => {

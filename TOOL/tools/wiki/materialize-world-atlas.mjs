@@ -1,16 +1,10 @@
 import { existsSync, readdirSync, statSync } from 'node:fs';
 import { mkdir, readdir, readFile, rename, writeFile } from 'node:fs/promises';
-import { basename, dirname, join, resolve } from 'node:path';
+import { basename, dirname, join, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import confirmedManifest from './confirmed-integration-manifest.json' with { type: 'json' };
 import { extractAtlasJson, sha256Text } from './world-atlas-parse.mjs';
 import { projectionsFromAtlas } from './world-atlas-render.mjs';
-import { ISOMETRIC_DIAGRAM_ASSETS } from './world-atlas-schema.mjs';
-
-const CONFIRMED_MONSTER_PAGES = new Set(
-  (confirmedManifest.monsters ?? []).map((id) => `Monster-Batch-${id}.md`),
-);
 
 function parseArgs(argv) {
   const opts = { atlas: null, out: null, check: false };
@@ -32,6 +26,7 @@ function parseArgs(argv) {
 }
 
 const UNEXPECTED_PROJECTION = /^(Story-Batch-B\d{3}|Monster-Batch-M\d{3}|Hostile-Group-G\d{2})\.md$/;
+const BESTIARY_PROJECTION = /^(Hostile-Ecology-Index|Hostile-Group-G\d{2})\.md$/;
 
 function findExistingFile(root, name) {
   const stack = [root];
@@ -59,26 +54,38 @@ function findExistingFile(root, name) {
 }
 
 export function projectionDestination(outDir, name) {
-  if (ISOMETRIC_DIAGRAM_ASSETS.includes(name)) {
-    const base = basename(outDir);
-    if (base === 'game-logic') return join(dirname(outDir), 'assets', 'wiki', name);
-    if (base === 'LORE') return join(dirname(outDir), 'GAME-REFERENCE', 'assets', 'wiki', name);
-  }
+  if (name === 'Hostile-Ecology-Index.md') return join(outDir, 'bestiary', name);
+  if (/^Hostile-Group-G\d{2}\.md$/.test(name)) return join(outDir, 'bestiary', 'groups', name);
   const existing = existsSync(outDir) ? findExistingFile(outDir, name) : null;
   return existing ?? join(outDir, name);
 }
 
 export async function unexpectedProjectionFiles(outDir, files) {
-  let names = [];
-  try {
-    names = await readdir(outDir);
-  } catch (err) {
-    if (err && err.code === 'ENOENT') return [];
-    throw err;
+  const invalid = [];
+  const stack = [outDir];
+  while (stack.length > 0) {
+    const dir = stack.pop();
+    let entries;
+    try {
+      entries = await readdir(dir, { withFileTypes: true });
+    } catch (err) {
+      if (err && err.code === 'ENOENT') continue;
+      throw err;
+    }
+    for (const entry of entries) {
+      const path = join(dir, entry.name);
+      if (entry.isDirectory()) {
+        stack.push(path);
+        continue;
+      }
+      if (!entry.isFile() || (!UNEXPECTED_PROJECTION.test(entry.name) && !BESTIARY_PROJECTION.test(entry.name))) continue;
+      const expected = files[entry.name] !== undefined;
+      if (!expected || resolve(path) !== resolve(projectionDestination(outDir, entry.name))) {
+        invalid.push(relative(outDir, path).replaceAll('\\', '/'));
+      }
+    }
   }
-  return names
-    .filter((name) => UNEXPECTED_PROJECTION.test(name) && files[name] === undefined && !CONFIRMED_MONSTER_PAGES.has(name))
-    .sort();
+  return invalid.sort();
 }
 
 export async function materializeWorldAtlas({ atlasPath, outDir, check = false }) {
@@ -105,7 +112,8 @@ export async function materializeWorldAtlas({ atlasPath, outDir, check = false }
       if (existing !== body) mismatches.push(`stale ${name}`);
     }
     for (const name of await unexpectedProjectionFiles(outDir, files)) {
-      mismatches.push(`unexpected ${name}`);
+      const expected = files[basename(name)] !== undefined;
+      mismatches.push(`${expected ? 'misplaced' : 'unexpected'} ${name}`);
     }
     if (mismatches.length > 0) {
       const error = new Error(mismatches.join('\n'));

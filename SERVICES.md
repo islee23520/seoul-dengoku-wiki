@@ -1,6 +1,6 @@
 # SERVICES.md — 서비스 레이어 계약
 
-배포 표면의 구성 계약. 각 서비스는 루트 바로 아래 자기 디렉터리 서브 경로로 열린다. 2026-09-19 확인한 루트 `/`는 서울:전국 공식 위키다. 저장소의 이전 허브 `index.html`로 현재 루트를 덮어쓰지 않는다. GitHub Wiki는 유지하지 않는다. 정본은 `GDD/`, `GAME-LOGIC/`, `LORE/`에 두고, VitePress 파생 문서는 `npm --prefix GAME-LOGIC/site run docs:dev`로 확인한다.
+배포 표면의 구성 계약. 각 서비스는 루트 바로 아래 자기 디렉터리 서브 경로로 열린다. 2026-09-19 확인한 루트 `/`는 서울:전국 공식 위키다. 저장소의 이전 허브 `index.html`로 현재 루트를 덮어쓰지 않는다. GitHub Wiki는 유지하지 않는다. 정본은 `GDD/`와 `LORE/`에 두고, VitePress 파생 문서는 `npm --prefix WEB/wiki-source run docs:dev`로 확인한다.
 
 ## 배포 표면 (2026-09-18 전환)
 
@@ -26,6 +26,25 @@ npm --prefix TOOL/tools run deploy:hub -- --host oliver@100.77.98.25
 3. 산출물은 `.omo/deploy/hub/`의 `seoul-dengoku-site.tar`, `deployment-manifest.json`, SHA-256, nginx·Windows 배포·검사 파일이다. `.omo/`는 계속 untracked다.
 4. Windows에서는 `site-next`를 검증한 뒤 `site`와 원자 교체하고 Docker nginx를 재시작한다. 배포 후 232개 공식 위키 문서·호환 URL·회귀 URL과 등록 페이지 전부를 localhost:8080에서 검사한다.
 
+### main 자동 배포
+
+GitHub `main`에 새 커밋이 push되면 `.github/workflows/deploy-windows-hub.yml`이 `desktop-bo514et-seoul-dengoku` self-hosted Windows runner를 깨운다. 같은 workflow는 `workflow_dispatch` 수동 실행도 지원하며 `seoul-dengoku-windows-production` concurrency 그룹으로 배포를 직렬화한다.
+
+- 러너 설치 위치: `E:\git\github-runner-seoul-kenshi`
+- 러너 작업공간: 설치 폴더 아래 `_work` — 사람 작업용 저장소와 분리한다.
+- 배포 위치: `E:\git\seoul-dengoku-web`
+- 빌드·배포 진입점: `TOOL\tools\deploy\deploy-hub-local-windows.ps1`
+- 검증: Docker 전체 빌드, manifest 검사, 원자 승격, nginx readiness, React 전체 문서 HTTP 검사
+- 실패: 기존 `site`로 rollback하고 workflow를 실패로 종료한다.
+
+러너를 다시 등록할 때는 GitHub 저장소 Settings → Actions → Runners의 일회용 토큰을 받아 관리자 PowerShell에서 실행한다.
+
+```powershell
+./TOOL/tools/deploy/setup-github-runner-windows.ps1 `
+  -RepositoryUrl 'https://github.com/islee23520/seoul-dengoku' `
+  -RegistrationToken '<one-time token>'
+```
+
 ## 현재 구성
 
 | 서브 경로 | 저장소 출처 | 비고 |
@@ -41,7 +60,7 @@ npm --prefix TOOL/tools run deploy:hub -- --host oliver@100.77.98.25
 | `/system-design/regions/` | `GDD/system-design/regions/` | 서울 25구·427동 지역 총람. 2026-09-13 |
 | `/design-store/` | `GDD/design-store/` | MDA 시트 + LORE 정본 전량. SQLite에서 렌더한 HTML |
 | `/ui-ux-refs/` | `GAME-REFERENCE/ui-ux-refs/` | UI/UX 레퍼런스 취합. 이슈 #101. 2026-09-14 |
-| `/design/` `/world/` `/rules/` | `GAME-LOGIC/wiki-react/` + 정본 `GDD/`·`LORE/`·`GAME-LOGIC/` | React 공식 위키 셸. VitePress는 정본 렌더·링크 품질 게이트에 사용 |
+| `/design/` `/world/` `/rules/` | `WEB/wiki/` + 정본 `GDD/`·`LORE/` | React 공식 위키 셸. VitePress는 정본 렌더·링크 품질 게이트에 사용 |
 
 ## 등록 기준
 

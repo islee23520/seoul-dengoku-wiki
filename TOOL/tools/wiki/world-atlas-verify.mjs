@@ -1,7 +1,6 @@
 import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
-import { verifyDiagramRecords } from './world-atlas-isometric.mjs';
 import { extractAtlasJson, parseCastIndex } from './world-atlas-parse.mjs';
 import {
   verifyMonsterManifest,
@@ -176,9 +175,6 @@ export async function verifyAtlasStage({ atlasPath, docs, stage, fail, batch = n
   } else {
     const run = STAGE_RUNNERS[stage];
     if (run) run(parsed.value, projections, fail);
-  }
-  if ((parsed.value.diagrams ?? []).length > 0) {
-    verifyDiagramRecords(parsed.value, fail);
   }
   return parsed.value;
 }

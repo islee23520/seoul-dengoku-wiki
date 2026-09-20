@@ -1,7 +1,5 @@
 # 월드맵을 어떻게 구성하나
 
-![지하철 다층 공간의 층과 시야](https://github.com/islee23520/seoul-kenshi/blob/main/GAME-REFERENCE/assets/wiki/isometric-subway-layers.svg?raw=true)
-
 2026-09-07 위키 도표. 층과 시야 칸 그림은 당시 설명이며 전장 격자나 목표 시점이 아니다. 문서용 평면도이며 실제 게임 화면이 아니다.
 
 세계 진실은 종로구에서 강동구까지 평면에 칠한 행정 지도가 아니라 역·층·터널의 그래프다. 서울역과 신도림, 영등포가 그 그래프의 노드로 남고, 재료가 어디서 오는지, 어떤 순서로 붙는지, 런타임이 지금 어디까지 들고 있는지를 이 페이지가 잠근다.
@@ -10,7 +8,7 @@
 
 런타임 \`RouteGraph.CreateSeoul()\`은 카탈로그 역 334와 OSM 인접 435를 로드한다. 영등포—신도림, 신도림—구로는 유지하고 영등포—구로는 없다. \`CreateYeongdeungpoSindorimGuro()\`는 Area 1 세 역 시범 구현·테스트용으로 남긴다. Unity에 OSM PBF를 넣지 않았다. 역 내부 공간·시설 슬롯·16국 캠페인은 아직 없다.
 
-관련 문서: [서울과 지하철 레이어](../places/World-and-Subway-Layers.md), [서울 십육국](../factions/Sixteen-States.md), [서울 지역 설정 데이터](../regions/README.md), [서울 역 카탈로그](../places/Seoul-Station-Catalog.md), [역 내부에 들어가면](../places/Station-Interior-Construction.md), [이동과 조우](../../GAME-LOGIC/Travel-and-Encounters.md).
+관련 문서: [서울과 지하철 레이어](../places/World-and-Subway-Layers.md), [서울 십육국](../factions/Sixteen-States.md), [서울 지역 설정 데이터](../regions/README.md), [서울 역 카탈로그](../places/Seoul-Station-Catalog.md), [역 내부에 들어가면](../places/Station-Interior-Construction.md), [이동과 조우](../../GDD/rules/Travel-and-Encounters.md).
 
 ## 재료
 
@@ -111,7 +109,7 @@ OSM 참고 집계(설계 데이터, 거점 슬롯 아님): 병원·클리닉, �
 
 구 25, 역 334, OSM 노선 관계에서 뽑은 무방향 인접 435를 로드한다. 시범 구현 인접은 영등포—신도림, 신도림—구로를 유지하고 영등포—구로는 없다. 거절은 SameNode, UnknownNode, NotAdjacent이며, 카탈로그에 없는 이름은 UnknownNode다. 빈 카탈로그는 세 역으로 폴백하지 않고 예외를 낸다. 확인된 이동은 틱 +1, 자원 -2이고, 캠페인 호스트는 `CreateSeoul()`을 쓴다. Area 1 콘텐츠 카탈로그는 여전히 역 3개라서 월드 그래프와 섞지 않는다.
 
-캠페인 단계: 거점 준비 → 원정 → 조우 → 해결 → 정산 → 복귀. `CampaignDomain.cs`. 정산은 조우 결과를 한 번만 반영한다. 역 내부를 짓지 않는다. 단계 이름 복귀는 현재 코드의 표기다. 원정 결말은 귀환·정착·정복·방랑·교역이고, 정산이 곧 귀환은 아니다. [원정](../../GAME-LOGIC/Campaign-Loop.md).
+캠페인 단계: 거점 준비 → 원정 → 조우 → 해결 → 정산 → 복귀. `CampaignDomain.cs`. 정산은 조우 결과를 한 번만 반영한다. 역 내부를 짓지 않는다. 단계 이름 복귀는 현재 코드의 표기다. 원정 결말은 귀환·정착·정복·방랑·교역이고, 정산이 곧 귀환은 아니다. [원정](../../GDD/rules/Campaign-Loop.md).
 
 ## 조립 순서 (세계 그래프, 런타임은 일부만)
 
@@ -119,7 +117,7 @@ OSM 참고 집계(설계 데이터, 거점 슬롯 아님): 병원·클리닉, �
 
 먼저 구 25 폴리곤을 읽어 구 슬롯을 만들고 십육국 권역 태그를 구에 붙인다. 이어서 역 카탈로그를 읽어 각 행을 `Station`으로 만들고 구에 소속시킨다. OSM·MVT의 선로·환승은 `TunnelSegment`·`Interchange` 후보로 올리되 출처를 `measured` / `derived` / `fictional`로 남긴다. 정수장·차량기지·시장을 `StrategicSite`로 붙이고 가장 가까운 역과 수직 연결을 적는다. 각 `Station`에 여섯 `StationLayer`를 달되, 없는 층은 지우지 않고 비활성으로 남긴다. 연결 기본값은 정상이고 봉쇄·침수는 사건으로만 바뀐다. 마지막에 `RouteGraph.CreateSeoul()`에 카탈로그 전 역을 넣는다. 원정 화면은 현재 역의 인접 전부를 클릭 버튼으로 띄우고(`GameplayPresenter.SyncDynamicTravel`), 지형은 z11 타일 아홉 청크로 나눠 올리고 런타임이 서울 전체를 한 메시로 들고 있지 않게 한다.
 
-화면은 전략맵에서 서울 전역 지형 위에 노선·역을 그린다. 역을 고르면 그 노드로 시점이 옮겨간다. [Travel-and-Encounters.md](../../GAME-LOGIC/Travel-and-Encounters.md).
+화면은 전략맵에서 서울 전역 지형 위에 노선·역을 그린다. 역을 고르면 그 노드로 시점이 옮겨간다. [Travel-and-Encounters.md](../../GDD/rules/Travel-and-Encounters.md).
 
 ## 하지 말 것
 

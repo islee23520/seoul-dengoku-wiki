@@ -1,0 +1,288 @@
+{
+  "before": {
+    "vertices": 66919,
+    "faces": 67382,
+    "ngons": 48
+  },
+  "after": {
+    "vertices": 66943,
+    "faces": 67430,
+    "face_sizes": {
+      "4": 66362,
+      "3": 1068
+    },
+    "winding_errors": 0,
+    "unexpected_boundaries": 0,
+    "connected_components": 1
+  },
+  "replaced_center_pairs": 24,
+  "old_vertex_max_displacement_m": 0,
+  "symmetry_error_m": 4.656612873077393e-10,
+  "repairs": [
+    {
+      "center": [
+        0.0,
+        0.08345086872577667,
+        0.961640477180481
+      ],
+      "faces_before": 2,
+      "faces_after": 4,
+      "area_before": 4.1646137560746865e-06,
+      "area_after": 4.179969153028651e-06
+    },
+    {
+      "center": [
+        0.0,
+        0.08106397092342377,
+        0.9752144813537598
+      ],
+      "faces_before": 2,
+      "faces_after": 4,
+      "area_before": 5.072347676104982e-06,
+      "area_after": 5.1146661235179636e-06
+    },
+    {
+      "center": [
+        0.0,
+        -0.11664056032896042,
+        1.6853342056274414
+      ],
+      "faces_before": 2,
+      "faces_after": 4,
+      "area_before": 7.590582754346542e-06,
+      "area_after": 7.591441203658178e-06
+    },
+    {
+      "center": [
+        0.0,
+        -0.06891919672489166,
+        1.5561482906341553
+      ],
+      "faces_before": 2,
+      "faces_after": 4,
+      "area_before": 3.935877793992404e-05,
+      "area_after": 3.9398799344780855e-05
+    },
+    {
+      "center": [
+        0.0,
+        0.08561147749423981,
+        0.9718170166015625
+      ],
+      "faces_before": 2,
+      "faces_after": 4,
+      "area_before": 1.0954029676213395e-05,
+      "area_after": 1.1090279031122918e-05
+    },
+    {
+      "center": [
+        0.0,
+        0.0830976665019989,
+        0.9744436740875244
+      ],
+      "faces_before": 2,
+      "faces_after": 4,
+      "area_before": 5.704269824491348e-06,
+      "area_after": 5.73676481963048e-06
+    },
+    {
+      "center": [
+        0.0,
+        0.08647835999727249,
+        0.9689135551452637
+      ],
+      "faces_before": 2,
+      "faces_after": 4,
+      "area_before": 7.77986451794277e-06,
+      "area_after": 7.79566914843599e-06
+    },
+    {
+      "center": [
+        0.0,
+        -0.0881795585155487,
+        1.3151209354400635
+      ],
+      "faces_before": 2,
+      "faces_after": 4,
+      "area_before": 5.758650331699755e-05,
+      "area_after": 5.758651241194457e-05
+    },
+    {
+      "center": [
+        0.0,
+        -0.09549052268266678,
+        1.2605340480804443
+      ],
+      "faces_before": 2,
+      "faces_after": 4,
+      "area_before": 4.401310070534237e-05,
+      "area_after": 4.401310252433177e-05
+    },
+    {
+      "center": [
+        0.0,
+        -0.09915825724601746,
+        1.183215618133545
+      ],
+      "faces_before": 2,
+      "faces_after": 4,
+      "area_before": 2.4943656171672046e-05,
+      "area_after": 2.49436584454088e-05
+    },
+    {
+      "center": [
+        0.0,
+        -0.06856739521026611,
+        1.4060947895050049
+      ],
+      "faces_before": 2,
+      "faces_after": 4,
+      "area_before": 6.621482680202462e-05,
+      "area_after": 6.621495322178816e-05
+    },
+    {
+      "center": [
+        0.0,
+        0.12117763608694077,
+        1.287637710571289
+      ],
+      "faces_before": 2,
+      "faces_after": 4,
+      "area_before": 2.548674001445761e-05,
+      "area_after": 2.5486739104962908e-05
+    },
+    {
+      "center": [
+        0.0,
+        -0.090751051902771,
+        1.3059096336364746
+      ],
+      "faces_before": 2,
+      "faces_after": 4,
+      "area_before": 7.051437478367006e-06,
+      "area_after": 7.05150216617767e-06
+    },
+    {
+      "center": [
+        0.0,
+        -0.09077948331832886,
+        1.305975317955017
+      ],
+      "faces_before": 2,
+      "faces_after": 4,
+      "area_before": 2.3398283701681066e-05,
+      "area_after": 2.3398346002068138e-05
+    },
+    {
+      "center": [
+        0.0,
+        -0.10088008642196655,
+        1.2428748607635498
+      ],
+      "faces_before": 2,
+      "faces_after": 4,
+      "area_before": 1.9993096429971047e-05,
+      "area_after": 1.999310370592866e-05
+    },
+    {
+      "center": [
+        0.0,
+        0.08591744303703308,
+        0.9646928310394287
+      ],
+      "faces_before": 2,
+      "faces_after": 4,
+      "area_before": 6.509868853754597e-06,
+      "area_after": 6.523631782329176e-06
+    },
+    {
+      "center": [
+        0.0,
+        -0.045339539647102356,
+        1.4435192346572876
+      ],
+      "faces_before": 2,
+      "faces_after": 4,
+      "area_before": 2.1738481336797122e-05,
+      "area_after": 2.1738519535574596e-05
+    },
+    {
+      "center": [
+        0.0,
+        0.07319226115942001,
+        1.5673781633377075
+      ],
+      "faces_before": 2,
+      "faces_after": 4,
+      "area_before": 0.00011287345841992646,
+      "area_after": 0.00011335427006997634
+    },
+    {
+      "center": [
+        0.0,
+        -0.10809538513422012,
+        1.0864083766937256
+      ],
+      "faces_before": 2,
+      "faces_after": 4,
+      "area_before": 6.376992314471863e-05,
+      "area_after": 6.37699049548246e-05
+    },
+    {
+      "center": [
+        0.0,
+        -0.024323899298906326,
+        1.4657542705535889
+      ],
+      "faces_before": 2,
+      "faces_after": 4,
+      "area_before": 3.138279316772241e-05,
+      "area_after": 3.138279134873301e-05
+    },
+    {
+      "center": [
+        0.0,
+        -0.02720555290579796,
+        1.4546167850494385
+      ],
+      "faces_before": 2,
+      "faces_after": 4,
+      "area_before": 2.622318879730301e-05,
+      "area_after": 2.6223191071039764e-05
+    },
+    {
+      "center": [
+        0.0,
+        -0.10438127815723419,
+        1.2030378580093384
+      ],
+      "faces_before": 2,
+      "faces_after": 4,
+      "area_before": 2.1421577912406065e-05,
+      "area_after": 2.1421578367153415e-05
+    },
+    {
+      "center": [
+        0.0,
+        -0.09380099922418594,
+        1.1080865859985352
+      ],
+      "faces_before": 2,
+      "faces_after": 4,
+      "area_before": 1.6571450487390393e-06,
+      "area_after": 1.6571493972605822e-06
+    },
+    {
+      "center": [
+        0.0,
+        -0.09391607344150543,
+        1.1085469722747803
+      ],
+      "faces_before": 2,
+      "faces_after": 4,
+      "area_before": 2.250639795420284e-06,
+      "area_after": 2.2506398522637028e-06
+    }
+  ],
+  "status": "CENTER_QUAD_STRUCTURE_PASS_VISUAL_REVIEW_REQUIRED"
+}

@@ -13,7 +13,7 @@ Vanilla-JS browser POC of the campaign core loop; distinct non-Unity domain (sco
 | Seoul map data | `world-data.js` | One-line `window.POC_WORLD` blob, 702KB, OSM snapshot (`asOf` in file) |
 
 ## CONVENTIONS
-- This directory is a staged copy of `GAME-LOGIC/site/dist/play` (currently byte-identical); upstream owns canonical content.
+- This directory is a staged copy of `WEB/wiki-source/dist/play` (currently byte-identical); upstream owns canonical content.
 - `model.mjs` is self-contained: no imports, no DOM access; UI goes through model functions only.
 - State transitions are functional: actions take state and return a copied next state; module data (`CARDS`) is `Object.freeze`d.
 - Battle time is ticks at `TICKS_PER_SECOND = 30`; cooldowns/intervals are tick counts, never seconds.

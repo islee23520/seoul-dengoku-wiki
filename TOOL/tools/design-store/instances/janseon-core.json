@@ -14,7 +14,7 @@
       {
         "heading": "시작",
         "body": "무명으로 흘러드는 것은 착생 갈래 하나다. 혈연과 소속을 가진 몸으로 시작할 수도 있다.",
-        "sourcePath": "GAME-LOGIC/Game-Thesis.md"
+        "sourcePath": "GDD/Game-Thesis.md"
       },
       {
         "heading": "시야",
@@ -29,22 +29,22 @@
       {
         "heading": "격자",
         "body": "전략맵은 3D 하이트맵으로 서울 전역을 세운다(결정 10).",
-        "sourcePath": "GAME-LOGIC/Game-Thesis.md"
+        "sourcePath": "GDD/Game-Thesis.md"
       },
       {
         "heading": "루프",
         "body": "마주치면 말하거나 숨거나 붙는다.",
-        "sourcePath": "GAME-LOGIC/Campaign-Loop.md"
+        "sourcePath": "GDD/rules/Campaign-Loop.md"
       },
       {
         "heading": "전투",
         "body": "직접 조작하는 대상은 개별 영웅이 아니라 선택한 부대다.",
-        "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
+        "sourcePath": "GDD/rules/Realtime-Formation-Card-Battle.md"
       },
       {
         "heading": "정산",
         "body": "실패는 세계에 남는다. 부상, 포획, 죽음, 물자, 원한.",
-        "sourcePath": "GAME-LOGIC/Game-Thesis.md"
+        "sourcePath": "GDD/Game-Thesis.md"
       },
       {
         "heading": "화면",
@@ -54,7 +54,7 @@
       {
         "heading": "인물 표현",
         "body": "제품 목표 인물은 애니메이션풍 정비율이다.",
-        "sourcePath": "GAME-LOGIC/Character-Art-Direction.md"
+        "sourcePath": "GDD/art/Character-Art-Direction.md"
       },
       {
         "heading": "구현 순서",
@@ -74,12 +74,12 @@
       {
         "heading": "요구 부대 명령",
         "body": "확인하면 새 지시가 그 부대의 현재 지시를 교체한다. 취소하면 기존 지시를 그대로 둔다.",
-        "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
+        "sourcePath": "GDD/rules/Realtime-Formation-Card-Battle.md"
       },
       {
         "heading": "요구 전투 결과",
         "body": "각 전투는 위 종료 상태 가운데 하나와 전투 사실을 담은 불변 결과를 한 번만 발행한다.",
-        "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
+        "sourcePath": "GDD/rules/Realtime-Formation-Card-Battle.md"
       }
     ]
   },
@@ -96,23 +96,23 @@
     },
     {
       "body": "전략맵은 3D 하이트맵으로 서울 전역을 세운다(결정 10).",
-      "sourcePath": "GAME-LOGIC/Game-Thesis.md",
+      "sourcePath": "GDD/Game-Thesis.md",
       "name": "격자"
     },
     {
       "body": "전략맵은 3D 하이트맵으로 서울 전역을 세운다(결정 10).",
-      "sourcePath": "GAME-LOGIC/Game-Thesis.md",
+      "sourcePath": "GDD/Game-Thesis.md",
       "name": "타일"
     },
     {
       "name": "규칙 간격",
       "body": "시뮬레이션은 고정된 규칙 간격으로 진행한다.",
-      "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
+      "sourcePath": "GDD/rules/Realtime-Formation-Card-Battle.md"
     },
     {
       "name": "명령 범위",
       "body": "이동, 공격, 방향 전환, 진형 변경, 정지 가운데 하나를 고른다.",
-      "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
+      "sourcePath": "GDD/rules/Realtime-Formation-Card-Battle.md"
     },
     {
       "name": "결정론",
@@ -132,58 +132,58 @@
     {
       "name": "실루엣",
       "body": "애니메이션풍 정비율. SD·2.5등신 목표를 다시 열지 않는다",
-      "sourcePath": "GAME-LOGIC/Character-Art-Direction.md"
+      "sourcePath": "GDD/art/Character-Art-Direction.md"
     },
     {
       "name": "POC 인물",
       "body": "POC 사람 표현은 오드랜드 원본 어셋 as-is다",
-      "sourcePath": "GAME-LOGIC/Character-Art-Direction.md"
+      "sourcePath": "GDD/art/Character-Art-Direction.md"
     }
   ],
   "dynamics": [
     {
       "name": "전투 형태",
       "body": "플레이어는 부대를 골라 지시하며, 전투는 변경할 수 없는 `ResultId` 하나를 내고 끝난다.",
-      "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
+      "sourcePath": "GDD/rules/Realtime-Formation-Card-Battle.md"
     },
     {
       "body": "거점에서 길을 나선다. 반드시 돌아오라는 뜻이 아니다.",
-      "sourcePath": "GAME-LOGIC/Campaign-Loop.md",
+      "sourcePath": "GDD/rules/Campaign-Loop.md",
       "name": "거점 할 일"
     },
     {
       "body": "준비는 같다. 사람, 식량, 약, 통행, 관계.",
-      "sourcePath": "GAME-LOGIC/Campaign-Loop.md",
+      "sourcePath": "GDD/rules/Campaign-Loop.md",
       "name": "원정 준비"
     },
     {
       "body": "마주치면 말하거나 숨거나 붙는다.",
-      "sourcePath": "GAME-LOGIC/Campaign-Loop.md",
+      "sourcePath": "GDD/rules/Campaign-Loop.md",
       "name": "조우 선택"
     },
     {
       "body": "전투 전이나 허용된 재편 상태에서 진형과 정면을 정한다.",
-      "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md",
+      "sourcePath": "GDD/rules/Realtime-Formation-Card-Battle.md",
       "name": "진형"
     },
     {
       "name": "부대 명령",
       "body": "확인하면 새 지시가 그 부대의 현재 지시를 교체한다. 취소하면 기존 지시를 그대로 둔다.",
-      "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
+      "sourcePath": "GDD/rules/Realtime-Formation-Card-Battle.md"
     },
     {
       "name": "일시정지",
       "body": "일시정지 중에도 부대를 선택하고 명령을 미리 본 뒤 확인하거나 취소할 수 있다.",
-      "sourcePath": "GAME-LOGIC/Realtime-Formation-Card-Battle.md"
+      "sourcePath": "GDD/rules/Realtime-Formation-Card-Battle.md"
     },
     {
       "body": "정산 뒤에도 원정은 계속될 수 있으며, 귀환은 저장이나 결과 반영의 다른 이름이 아니다.",
-      "sourcePath": "GAME-LOGIC/Campaign-Loop.md",
+      "sourcePath": "GDD/rules/Campaign-Loop.md",
       "name": "결과 반영"
     },
     {
       "body": "정산 뒤에도 원정은 계속될 수 있으며, 귀환은 저장이나 결과 반영의 다른 이름이 아니다.",
-      "sourcePath": "GAME-LOGIC/Campaign-Loop.md",
+      "sourcePath": "GDD/rules/Campaign-Loop.md",
       "name": "전략 결과"
     }
   ],
@@ -196,12 +196,12 @@
     {
       "kind": "Fantasy",
       "body": "무명으로 흘러드는 것은 착생 갈래 하나다. 혈연과 소속을 가진 몸으로 시작할 수도 있다.",
-      "sourcePath": "GAME-LOGIC/Game-Thesis.md"
+      "sourcePath": "GDD/Game-Thesis.md"
     },
     {
       "kind": "Narrative",
       "body": "서울을 한 나라로 모으는 결말만 두지 않는다. 노선 연합, 독립 역, 강단의 치, 교역망, 기술 복구. 플레이가 만든 정통성이 질서가 된다.",
-      "sourcePath": "GAME-LOGIC/Game-Thesis.md"
+      "sourcePath": "GDD/Game-Thesis.md"
     },
     {
       "kind": "Challenge",
@@ -211,7 +211,7 @@
     {
       "kind": "Fellowship",
       "body": "RPG는 그 사람의 손과 관계와 무공이다. 수리, 의약, 운송, 호위, 교섭, 탐사도 칼만큼 자란다.",
-      "sourcePath": "GAME-LOGIC/Game-Thesis.md"
+      "sourcePath": "GDD/Game-Thesis.md"
     },
     {
       "kind": "Discovery",
@@ -221,7 +221,7 @@
     {
       "kind": "Expression",
       "body": "인물이 정치의 단위다. 품계와 기억과 후계가 나라의 손을 바꾼다.",
-      "sourcePath": "GAME-LOGIC/Game-Thesis.md"
+      "sourcePath": "GDD/Game-Thesis.md"
     },
     {
       "kind": "Submission",

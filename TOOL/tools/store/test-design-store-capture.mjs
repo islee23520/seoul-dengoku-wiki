@@ -11,19 +11,19 @@ function makeFixtureRepo() {
   const root = mkdtempSync(join(tmpdir(), 'ds-capture-repo-'));
   mkdirSync(join(root, 'RESEARCH/canon-reference'), { recursive: true });
   mkdirSync(join(root, 'LORE/name-pools'), { recursive: true });
-  mkdirSync(join(root, 'GAME-LOGIC/site/rules'), { recursive: true });
+  mkdirSync(join(root, 'WEB/wiki-source/rules'), { recursive: true });
   writeFileSync(join(root, 'Concept.md'), '# concept\n');
   writeFileSync(join(root, 'Design.md'), '# design\n');
   writeFileSync(join(root, 'ToDo.md'), '# todo\n');
   writeFileSync(join(root, 'Intent.md'), '# intent\n');
   writeFileSync(join(root, 'LORE/A.md'), 'alpha\n');
-  writeFileSync(join(root, 'GAME-LOGIC/Z.md'), 'omega — unicode ✓\n');
+  writeFileSync(join(root, 'GDD/rules/Z.md'), 'omega — unicode ✓\n');
   writeFileSync(join(root, 'RESEARCH/canon-reference/R1.md'), 'ref\n');
   writeFileSync(join(root, 'LORE/name-pools/p.json'), '{"a":1}\n');
   writeFileSync(join(root, 'LORE/name-pools/q.json'), '{"b":2}\n');
   // site rules: one authored-only, one mounted copy of a game-logic top-level page
-  writeFileSync(join(root, 'GAME-LOGIC/site/rules/Rules-X.md'), 'rules authored\n');
-  writeFileSync(join(root, 'GAME-LOGIC/site/rules/A.md'), 'mounted copy\n');
+  writeFileSync(join(root, 'WEB/wiki-source/rules/Rules-X.md'), 'rules authored\n');
+  writeFileSync(join(root, 'WEB/wiki-source/rules/A.md'), 'mounted copy\n');
   return root;
 }
 
@@ -77,11 +77,11 @@ test('verify FAILS when a DB row is deleted (missing file)', () => {
   try {
     captureCorpus({ repoRoot: repo, outDir: out });
     const db = openDb(out);
-    db.prepare("DELETE FROM source_file WHERE path = 'GAME-LOGIC/Z.md'").run();
+    db.prepare("DELETE FROM source_file WHERE path = 'GDD/rules/Z.md'").run();
     db.close();
     const res = verifyCapture({ repoRoot: repo, outDir: out });
     assert.equal(res.pass, false);
-    assert.ok(res.missing.includes('GAME-LOGIC/Z.md'), JSON.stringify(res.missing));
+    assert.ok(res.missing.includes('GDD/rules/Z.md'), JSON.stringify(res.missing));
   } finally {
     rmSync(repo, { recursive: true, force: true });
     rmSync(out, { recursive: true, force: true });

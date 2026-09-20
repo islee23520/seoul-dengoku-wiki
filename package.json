@@ -10,10 +10,10 @@
   },
   "packageManager": "npm@12.0.2",
   "scripts": {
-    "test": "node TOOL/tools/policy/normalize-creative-names.mjs && node TOOL/tools/wiki/test-build-wiki.mjs && node TOOL/tools/wiki/test-core-isometric-diagrams.mjs && node TOOL/tools/wiki/test-publish-wiki.mjs && node TOOL/tools/wiki/test-wiki-parity.mjs",
+    "test": "node TOOL/tools/policy/normalize-creative-names.mjs && node TOOL/tools/wiki/test-build-wiki.mjs && node TOOL/tools/wiki/test-publish-wiki.mjs && node TOOL/tools/wiki/test-wiki-parity.mjs",
     "wiki:publish": "node TOOL/tools/wiki/publish-wiki.mjs --no-push",
-    "docs:dev": "npm --prefix GAME-LOGIC/site run docs:dev",
-    "docs:build": "npm --prefix GAME-LOGIC/site run docs:build"
+    "docs:dev": "npm --prefix WEB/wiki-source run docs:dev",
+    "docs:build": "npm --prefix WEB/wiki-source run docs:build"
   },
   "dependencies": {
     "entities": "8.0.0",

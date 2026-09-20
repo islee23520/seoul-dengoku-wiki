@@ -1,0 +1,72 @@
+name: Deploy Windows Hub
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: seoul-dengoku-windows-production
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: [self-hosted, Windows, X64, seoul-dengoku]
+    timeout-minutes: 90
+    defaults:
+      run:
+        shell: powershell
+    steps:
+      - name: Repair stale private submodule metadata
+        run: |
+          if (Test-Path "$env:GITHUB_WORKSPACE\.git") {
+            git -C $env:GITHUB_WORKSPACE submodule deinit -f --all
+          }
+          foreach ($path in @(
+            "$env:GITHUB_WORKSPACE\TOOL\portrait-gen",
+            "$env:GITHUB_WORKSPACE\TOOL\unity-remote",
+            "$env:GITHUB_WORKSPACE\.git\modules\TOOL\portrait-gen",
+            "$env:GITHUB_WORKSPACE\.git\modules\TOOL\unity-remote"
+          )) {
+            if (Test-Path $path) { Remove-Item $path -Recurse -Force }
+          }
+
+      - name: Checkout the triggering main commit
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: false
+          clean: false
+          token: ${{ secrets.SUBMODULES_PAT }}
+
+      - name: Verify the dedicated E drive workspace
+        run: |
+          if (-not $env:GITHUB_WORKSPACE.StartsWith('E:\git\', [System.StringComparison]::OrdinalIgnoreCase)) {
+            throw "Runner workspace must live under E:\git, got $env:GITHUB_WORKSPACE"
+          }
+          git fetch origin main --prune
+          if ($env:GITHUB_EVENT_NAME -eq 'push') {
+            git checkout --detach $env:GITHUB_SHA
+          } else {
+            git checkout --detach origin/main
+          }
+          git submodule sync --recursive
+          git submodule update --init --recursive --force
+
+      - name: Build, verify, and atomically deploy the hub
+        run: |
+          & "$env:GITHUB_WORKSPACE\TOOL\tools\deploy\deploy-hub-local-windows.ps1" `
+            -RepositoryRoot $env:GITHUB_WORKSPACE `
+            -DeployRoot 'E:\git\seoul-dengoku-web'
+
+      - name: Upload deployment receipts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seoul-dengoku-deploy-${{ github.sha }}
+          path: .omo/evidence/hub-docker-deploy/latest
+          if-no-files-found: warn
+          retention-days: 30

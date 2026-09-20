@@ -1,0 +1,44 @@
+{
+  "reparameterized_polygons": 2173,
+  "total_polygons": 67430,
+  "unaffected_uv_loops_unchanged": true,
+  "source_uv_preserved": true,
+  "geometry_preserved": true,
+  "uv_only_altitude_clamped_triangles": 4,
+  "minimum_uv_triangle_area": 1.3922196728799463e-12,
+  "half_packing": [
+    {
+      "side": -1,
+      "isolated_charts": 1085,
+      "uniform_chart_scale": 2.6878021788354323,
+      "padding_uv": 0.0001220703125,
+      "reserved_uv_region": [
+        [
+          0.025,
+          0.03
+        ],
+        [
+          0.485,
+          0.235
+        ]
+      ]
+    },
+    {
+      "side": 1,
+      "isolated_charts": 1088,
+      "uniform_chart_scale": 2.6898267468388815,
+      "padding_uv": 0.0001220703125,
+      "reserved_uv_region": [
+        [
+          0.525,
+          0.03
+        ],
+        [
+          0.985,
+          0.235
+        ]
+      ]
+    }
+  ],
+  "positive_area_overlap_check_pending": true
+}

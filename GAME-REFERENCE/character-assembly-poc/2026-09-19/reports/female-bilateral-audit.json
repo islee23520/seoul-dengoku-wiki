@@ -1,0 +1,60 @@
+{
+  "gender": "Female",
+  "vertices": 45182,
+  "faces": 47748,
+  "quads": 42490,
+  "connected_components": 1,
+  "boundary_groups": [
+    63,
+    63
+  ],
+  "junction_edges": 0,
+  "winding_errors": 0,
+  "degenerate_faces": 1,
+  "center_x": 0.0,
+  "sides": {
+    "negative_x": {
+      "vertices": 22444,
+      "faces": 23554,
+      "hard_failures": {
+        "unexpected_boundary": 0,
+        "junctions": 0,
+        "winding": 0,
+        "wire": 0,
+        "degenerate": 1,
+        "duplicates": 0
+      },
+      "structural_pass": false,
+      "neck_sampled": 19400,
+      "neck_angle": {
+        "median": 12.604597153315726,
+        "p90": 33.44063213110129,
+        "max": 179.9443662879774,
+        "over90": 139
+      }
+    },
+    "positive_x": {
+      "vertices": 22436,
+      "faces": 23580,
+      "hard_failures": {
+        "unexpected_boundary": 0,
+        "junctions": 0,
+        "winding": 0,
+        "wire": 0,
+        "degenerate": 0,
+        "duplicates": 0
+      },
+      "structural_pass": true,
+      "neck_sampled": 19521,
+      "neck_angle": {
+        "median": 12.529182046481854,
+        "p90": 33.619956698703206,
+        "max": 180.00000500895632,
+        "over90": 142
+      }
+    }
+  },
+  "route": "REPAIR_FIRST",
+  "geometry_changed": false,
+  "final_goal_pass": false
+}

@@ -8,14 +8,14 @@ summary: 이름 있는 인물을 위키에 넣을 때 복사하는 빈 칸
 
 이름 있는 인물을 새로 넣을 때 이 블록을 복사한다. 칸의 뜻은 [인물 카드 계약](Cast-Profile-Contract.md)이다. 근거가 없으면 임의 값을 넣지 않는다. 미확인·미정·해당 없음은 서로 다른 상태다. 나이는 적지 않는다. 초상 그림은 이 템플릿에 넣지 않는다.
 
-시작 절차는 [기여 시작](../CONTRIBUTING.md)의 인물 절이고, 이슈 규칙은 [기여와 이슈](../CONTRIBUTING.md)다.
+시작 절차는 [기여 시작](../../CONTRIBUTING.md)의 인물 절이고, 이슈 규칙은 [기여와 이슈](../../CONTRIBUTING.md)다.
 
 ## 넣기 전에
 
 1. GitHub 이슈를 연다. 라벨 `인물`, 품질은 보통 `quality:medium`. 게이트와 완료 조건을 본문에 적는다.
-2. 표시 이름이 [인물 총람](Cast-Index.md), [S4 당직 명부](Cast-Index-S4.md), [회랑 인물](Cast-Corridors-Index.md), [values-cast.json](name-pools/values-cast.json)에 없는지 확인한다.
+2. 표시 이름이 [인물 총람](Cast-Index.md), [S4 당직 명부](Cast-Index-S4.md), [회랑 인물](Cast-Corridors-Index.md), [values-cast.json](../name-pools/values-cast.json)에 없는지 확인한다.
 3. 소속을 정한다. 16국이면 `Cast-State-01`–`16` 중 하나. 장부 밖이면 [회랑 인물](Cast-Corridors-Index.md). 무소속이면 새 절 또는 이슈에서 페이지를 잠근다. T0 핵심은 [등장인물](Core-Characters.md)이고 기본이 아니다.
-4. 가치관·욕망 숫자는 [가치관과 정책 척도](Values-and-Policy-Scales.md)와 `values-cast.json`을 같이 맞춘다.
+4. 가치관·욕망 숫자는 [가치관과 정책 척도](../culture/Values-and-Policy-Scales.md)와 `values-cast.json`을 같이 맞춘다.
 5. 칸을 비운 채 올리지 않는다. 템플릿만 열고 머지하지 않는다.
 
 ## 산문 블록
@@ -56,8 +56,8 @@ summary: 이름 있는 인물을 위키에 넣을 때 복사하는 빈 칸
 | --- | --- |
 | [인물 총람](Cast-Index.md) 또는 [S4 당직](Cast-Index-S4.md) 또는 [회랑 인물](Cast-Corridors-Index.md) | 이름·직위·단계·관계 수 한 행 |
 | [관계 원장](Cast-Relations.md) | 송신 간선. 유형은 친족·양자·사제·지휘·계약·빚·맹세·경쟁·원한·보호체류·배신 |
-| [values-cast.json](name-pools/values-cast.json) | `people` 한 객체. `count`는 배열 길이와 같게 |
-| [세계 서사 지도](World-Narrative-Atlas.md) | 서사 원본이 필요하면 지도 절차를 따른다. 투영 페이지만 고치지 않는다 |
+| [values-cast.json](../name-pools/values-cast.json) | `people` 한 객체. `count`는 배열 길이와 같게 |
+| [세계 서사 지도](../World-Narrative-Atlas.md) | 서사 원본이 필요하면 지도 절차를 따른다. 투영 페이지만 고치지 않는다 |
 
 관계 수는 보낸 간선만 센다. 수신만 있는 핵심 인물의 관계 수 0은 고립이 아니다.
 

@@ -309,20 +309,20 @@ test('listMarkdownFiles excludes dependency and build output directories', () =>
 test('canon domain exclusions can omit an authored publication application', () => {
   const dir = freshDir();
   try {
-    const canonRoot = join(dir, 'game-logic');
-    mkdirSync(join(canonRoot, 'wiki-react', 'src', 'content'), { recursive: true });
-    writeFileSync(join(canonRoot, 'Rule.md'), '# 규칙\n');
-    writeFileSync(join(canonRoot, 'wiki-react', 'DESIGN.md'), '# 앱 설계\n');
-    writeFileSync(join(canonRoot, 'wiki-react', 'src', 'content', 'Copy.md'), '# 복사본\n');
+    const canonRoot = join(dir, 'GDD');
+    mkdirSync(join(canonRoot, 'rules'), { recursive: true });
+    mkdirSync(join(canonRoot, 'design-store'), { recursive: true });
+    writeFileSync(join(canonRoot, 'rules', 'Rule.md'), '# 규칙\n');
+    writeFileSync(join(canonRoot, 'design-store', 'Generated.md'), '# 생성물\n');
     const dbPath = join(dir, DB_NAME);
     putDocument({ dbPath, document: SAMPLE });
     const ingested = ingestCanonDir({
       dbPath,
       canonRoot,
-      canonDomains: [{ root: canonRoot, prefix: 'GAME-LOGIC', exclude: (rel) => rel.startsWith('wiki-react/') }],
+      canonDomains: [{ root: canonRoot, prefix: 'GDD', exclude: (rel) => rel.startsWith('design-store/') }],
     });
     assert.equal(ingested.files, 1);
-    assert.deepEqual(listCanonFiles({ dbPath }).map((row) => row.path), ['GAME-LOGIC/Rule.md']);
+    assert.deepEqual(listCanonFiles({ dbPath }).map((row) => row.path), ['GDD/rules/Rule.md']);
   } finally {
     rmSync(dir, { recursive: true, force: true });
   }

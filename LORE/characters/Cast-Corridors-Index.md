@@ -1,6 +1,6 @@
 # 회랑 인물 총람
 
-16국 명부 바깥, [이주민 회랑](Diaspora-Corridors.md)과 [징집 잔존](Conscription-Remnants.md)에 이름이 있는 인물이다. 본문은 회랑 페이지다.
+16국 명부 바깥, [이주민 회랑](../factions/Diaspora-Corridors.md)과 [징집 잔존](../factions/Conscription-Remnants.md)에 이름이 있는 인물이다. 본문은 회랑 페이지다.
 
 | 이름 | 회랑 | 직위 | 징집 이력 | 무장 접근 |
 |---|---|---|---|---|

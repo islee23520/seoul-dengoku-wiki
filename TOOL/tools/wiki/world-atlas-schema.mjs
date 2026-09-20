@@ -136,19 +136,12 @@ export const PROJECTION_FILES = Object.freeze({
   synthetics: 'Synthetic-Actors.md',
   storyManifest: 'Story-Batch-Manifest.md',
   hostileIndex: 'Hostile-Ecology-Index.md',
-  monsterManifest: 'Monster-Batch-Manifest.md',
   chronology: 'Regional-Physical-AI-Arcs.md',
   relationLedger: 'World-Relation-Ledger.md',
   expansionIndex: 'World-Expansion-Index.md',
 });
 
 export const getGroupDossierFilename = (id) => `Hostile-Group-${id}.md`;
-
-export const ISOMETRIC_DIAGRAM_ASSETS = Object.freeze([
-  'world-atlas-isometric.svg',
-  'house-influence-isometric.svg',
-  'hostile-ecology-isometric.svg',
-]);
 
 export const WIKI_PALETTE = Object.freeze({
   paper: '#F6F4EF',

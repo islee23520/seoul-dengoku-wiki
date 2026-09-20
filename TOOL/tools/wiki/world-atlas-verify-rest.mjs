@@ -17,7 +17,13 @@ export function verifyTheaters(atlas, projections, fail) {
   const covered = new Set();
   const seen = new Set();
   for (const theater of theaters) {
-    for (const field of ['id', 'display_name', 'owner', 'source_kind', 'source_anchors', 'verified', 'inference', 'original_fiction', 'states', 'scenario_chains', 'prose', 'japan_bridge_removable']) {
+    for (const field of [
+      'id', 'display_name', 'owner', 'source_kind', 'source_anchors', 'verified', 'inference',
+      'original_fiction', 'states', 'scenario_chains', 'prose', 'japan_bridge_removable',
+      'seoul_route', 'travel_constraints', 'supply_chain', 'checkpoints',
+      'language_rumor_protocol', 'state_interests', 'hostile_ecology_interaction',
+      'opening_event', 'player_entry_points', 'explicit_unknowns',
+    ]) {
       if (theater[field] === undefined || theater[field] === null || theater[field] === '') {
         fail('E_THEATER_FIELD', `${theater.id ?? '?'} missing ${field}`);
       }
@@ -31,7 +37,32 @@ export function verifyTheaters(atlas, projections, fail) {
     if (!Array.isArray(theater.scenario_chains) || theater.scenario_chains.length < 3) {
       fail('E_THEATER_FIELD', `${theater.id} scenario_chains`);
     }
-    for (const stateId of theater.states ?? []) covered.add(stateId);
+    const theaterStates = new Set(theater.states ?? []);
+    for (const stateId of theaterStates) {
+      covered.add(stateId);
+      if (!STATES.some((state) => state.id === stateId)) fail('E_THEATER_STATE', `${theater.id} ${stateId}`);
+    }
+    if (!String(theater.seoul_route?.fixed_duration ?? '').includes('정하지')) {
+      fail('E_THEATER_DURATION', theater.id);
+    }
+    if (!Array.isArray(theater.explicit_unknowns) || theater.explicit_unknowns.length === 0) {
+      fail('E_THEATER_UNKNOWN', theater.id);
+    }
+    for (const row of theater.state_interests ?? []) {
+      if (!theaterStates.has(row.state_id)) fail('E_THEATER_STATE_INTEREST', `${theater.id} ${row.state_id}`);
+      for (const field of ['interest', 'leverage', 'red_line']) {
+        if (!row[field]) fail('E_THEATER_FIELD', `${theater.id} state_interests.${field}`);
+      }
+    }
+    const scenarioIds = new Set((theater.scenario_chains ?? []).map((row) => row.id));
+    if (!scenarioIds.has(theater.opening_event?.scenario_id)) {
+      fail('E_THEATER_SCENARIO', `${theater.id} ${theater.opening_event?.scenario_id}`);
+    }
+    for (const row of theater.hostile_ecology_interaction ?? []) {
+      if (!HOSTILE_GROUPS.some((group) => group.id === row.group_id)) {
+        fail('E_THEATER_ECOLOGY', `${theater.id} ${row.group_id}`);
+      }
+    }
   }
   for (const state of STATES) {
     if (!covered.has(state.id)) fail('E_STATE_UNCOVERED', state.id);
@@ -183,7 +214,6 @@ export function verifyMonsterManifest(atlas, projections, fail) {
   if (flat.length !== 432) fail('E_ENTRY_COUNT', `actual=${flat.length}`);
   if (flat.join(',') !== entryIds.join(',')) fail('E_ENTRY_ORDER', 'row-major mismatch');
   if (!projections[PROJECTION_FILES.hostileIndex]) fail('E_MISSING_PROJECTION', PROJECTION_FILES.hostileIndex);
-  if (!projections[PROJECTION_FILES.monsterManifest]) fail('E_MISSING_PROJECTION', PROJECTION_FILES.monsterManifest);
 }
 
 export function verifySeeds(atlas, projections, fail) {
@@ -279,8 +309,11 @@ export function verifyMonsterContentBatch(atlas, projections, fail, batchId) {
       if (!entry[field]) fail('E_MONSTER_FIELD', `${entry.id} ${field}`);
     }
   }
-  const projName = `Monster-Batch-${batchId}.md`;
-  if (!projections[projName]) fail('E_MISSING_PROJECTION', projName);
+  const groupIds = new Set(entries.map((entry) => entry.group_id));
+  for (const groupId of groupIds) {
+    const projName = `Hostile-Group-${groupId}.md`;
+    if (!projections[projName]) fail('E_MISSING_PROJECTION', projName);
+  }
 }
 
 export function verifyGroupDossiers(atlas, projections, fail, groupIds) {
