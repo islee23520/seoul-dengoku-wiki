@@ -1,0 +1,922 @@
+{
+  "deliverables/final-integration.blend": {
+    "src_sha256": "a34776147eed0f29890f51144e7c46fba9eafc54176698058866e735d53af62c",
+    "packed_images": [
+      "Female_Bake",
+      "Female_SourceBake_2048.png"
+    ],
+    "pack_failures": [],
+    "no_filepath_images": [],
+    "pre_inventory": {
+      "Eye_Core_Sclera_Iris_Pupil.001": {
+        "verts": 2242,
+        "faces": 2304,
+        "quads": 2176
+      },
+      "Eye_Core_Sclera_Iris_Pupil.002": {
+        "verts": 2242,
+        "faces": 2304,
+        "quads": 2176
+      },
+      "Eye_Core_Sclera_Iris_Pupil.003": {
+        "verts": 2242,
+        "faces": 2304,
+        "quads": 2176
+      },
+      "Eye_Core_Sclera_Iris_Pupil.004": {
+        "verts": 2242,
+        "faces": 2304,
+        "quads": 2176
+      },
+      "Eye_Cornea_Lens.001": {
+        "verts": 1666,
+        "faces": 1728,
+        "quads": 1600
+      },
+      "Eye_Cornea_Lens.002": {
+        "verts": 1666,
+        "faces": 1728,
+        "quads": 1600
+      },
+      "Eye_Cornea_Lens.003": {
+        "verts": 1666,
+        "faces": 1728,
+        "quads": 1600
+      },
+      "Eye_Cornea_Lens.004": {
+        "verts": 1666,
+        "faces": 1728,
+        "quads": 1600
+      },
+      "Female_Base_Assembly": {
+        "verts": 45777,
+        "faces": 48382,
+        "quads": 43038
+      },
+      "Male_Base_Symmetric": {
+        "verts": 66943,
+        "faces": 67430,
+        "quads": 66362
+      },
+      "Male_Lower_GumArch": {
+        "verts": 694,
+        "faces": 624,
+        "quads": 467
+      },
+      "Male_Lower_RecoveredCrown1": {
+        "verts": 101,
+        "faces": 121,
+        "quads": 62
+      },
+      "Male_LowerGum_SubsetReview": {
+        "verts": 795,
+        "faces": 745,
+        "quads": 529
+      },
+      "Male_Tongue_Repaired": {
+        "verts": 1129,
+        "faces": 1104,
+        "quads": 1104
+      },
+      "Male_Upper_GumArch": {
+        "verts": 618,
+        "faces": 554,
+        "quads": 409
+      },
+      "Male_Upper_RecoveredCrown1": {
+        "verts": 108,
+        "faces": 124,
+        "quads": 72
+      },
+      "Male_Upper_RecoveredCrown2": {
+        "verts": 50,
+        "faces": 49,
+        "quads": 39
+      },
+      "Male_Upper_RecoveredCrown3": {
+        "verts": 50,
+        "faces": 49,
+        "quads": 39
+      },
+      "Male_UpperGum_SubsetReview": {
+        "verts": 827,
+        "faces": 776,
+        "quads": 558
+      }
+    },
+    "dst_sha256": "295cb6e7abfb6658f9943294a51583aee7b7ba4cadb3df504dc59582ac10622f",
+    "reopen_inventory_equal": true,
+    "post_inventory": {
+      "Eye_Core_Sclera_Iris_Pupil.001": {
+        "verts": 2242,
+        "faces": 2304,
+        "quads": 2176
+      },
+      "Eye_Core_Sclera_Iris_Pupil.002": {
+        "verts": 2242,
+        "faces": 2304,
+        "quads": 2176
+      },
+      "Eye_Core_Sclera_Iris_Pupil.003": {
+        "verts": 2242,
+        "faces": 2304,
+        "quads": 2176
+      },
+      "Eye_Core_Sclera_Iris_Pupil.004": {
+        "verts": 2242,
+        "faces": 2304,
+        "quads": 2176
+      },
+      "Eye_Cornea_Lens.001": {
+        "verts": 1666,
+        "faces": 1728,
+        "quads": 1600
+      },
+      "Eye_Cornea_Lens.002": {
+        "verts": 1666,
+        "faces": 1728,
+        "quads": 1600
+      },
+      "Eye_Cornea_Lens.003": {
+        "verts": 1666,
+        "faces": 1728,
+        "quads": 1600
+      },
+      "Eye_Cornea_Lens.004": {
+        "verts": 1666,
+        "faces": 1728,
+        "quads": 1600
+      },
+      "Female_Base_Assembly": {
+        "verts": 45777,
+        "faces": 48382,
+        "quads": 43038
+      },
+      "Male_Base_Symmetric": {
+        "verts": 66943,
+        "faces": 67430,
+        "quads": 66362
+      },
+      "Male_Lower_GumArch": {
+        "verts": 694,
+        "faces": 624,
+        "quads": 467
+      },
+      "Male_Lower_RecoveredCrown1": {
+        "verts": 101,
+        "faces": 121,
+        "quads": 62
+      },
+      "Male_LowerGum_SubsetReview": {
+        "verts": 795,
+        "faces": 745,
+        "quads": 529
+      },
+      "Male_Tongue_Repaired": {
+        "verts": 1129,
+        "faces": 1104,
+        "quads": 1104
+      },
+      "Male_Upper_GumArch": {
+        "verts": 618,
+        "faces": 554,
+        "quads": 409
+      },
+      "Male_Upper_RecoveredCrown1": {
+        "verts": 108,
+        "faces": 124,
+        "quads": 72
+      },
+      "Male_Upper_RecoveredCrown2": {
+        "verts": 50,
+        "faces": 49,
+        "quads": 39
+      },
+      "Male_Upper_RecoveredCrown3": {
+        "verts": 50,
+        "faces": 49,
+        "quads": 39
+      },
+      "Male_UpperGum_SubsetReview": {
+        "verts": 827,
+        "faces": 776,
+        "quads": 558
+      }
+    },
+    "status": "OK"
+  },
+  "deliverables/shared-eye-master.blend": {
+    "src_sha256": "465f46d1842777ce5315f6badc247da653135709f0897cf398839bcdd0de2e31",
+    "packed_images": [],
+    "pack_failures": [],
+    "no_filepath_images": [],
+    "pre_inventory": {
+      "Eye_Core_Sclera_Iris_Pupil": {
+        "verts": 2242,
+        "faces": 2304,
+        "quads": 2176
+      },
+      "Eye_Cornea_Lens": {
+        "verts": 1666,
+        "faces": 1728,
+        "quads": 1600
+      }
+    },
+    "dst_sha256": "eac5f89d8f1e900a1e6ba8bc60e6eafebf6a8e29e39d3d4ddef66046a5fa07ed",
+    "reopen_inventory_equal": true,
+    "post_inventory": {
+      "Eye_Core_Sclera_Iris_Pupil": {
+        "verts": 2242,
+        "faces": 2304,
+        "quads": 2176
+      },
+      "Eye_Cornea_Lens": {
+        "verts": 1666,
+        "faces": 1728,
+        "quads": 1600
+      }
+    },
+    "status": "OK"
+  },
+  "work/female-base-color-baked.blend": {
+    "src_sha256": "658c39c66d522c56cd6097dbc21fe2f8e76716454f7b539417e1fef1f6ee33b8",
+    "packed_images": [
+      "Female_Bake"
+    ],
+    "pack_failures": [],
+    "no_filepath_images": [],
+    "pre_inventory": {
+      "Female_Base_Assembly": {
+        "verts": 45777,
+        "faces": 48382,
+        "quads": 43038
+      },
+      "tripo_67827e40_968c_4dc4_b460_8c37155f325c": {
+        "verts": 45070,
+        "faces": 57241,
+        "quads": 0
+      },
+      "tripo_705ef0c2_aea4_4acf_aedf_bf55c1c12875": {
+        "verts": 39637,
+        "faces": 50096,
+        "quads": 0
+      }
+    },
+    "dst_sha256": "ad5b0f8885400071beba61d127ca87334f8bee1b7b216f7b08b03e81bdfc577f",
+    "reopen_inventory_equal": true,
+    "post_inventory": {
+      "Female_Base_Assembly": {
+        "verts": 45777,
+        "faces": 48382,
+        "quads": 43038
+      },
+      "tripo_67827e40_968c_4dc4_b460_8c37155f325c": {
+        "verts": 45070,
+        "faces": 57241,
+        "quads": 0
+      },
+      "tripo_705ef0c2_aea4_4acf_aedf_bf55c1c12875": {
+        "verts": 39637,
+        "faces": 50096,
+        "quads": 0
+      }
+    },
+    "status": "OK"
+  },
+  "work/female-base-symmetric.blend": {
+    "src_sha256": "6be1950827201d2ab6ae5516dd38273bf6eeafe56b8053c20149f507b7ca65dd",
+    "packed_images": [],
+    "pack_failures": [],
+    "no_filepath_images": [],
+    "pre_inventory": {
+      "Cube": {
+        "verts": 8,
+        "faces": 6,
+        "quads": 6
+      },
+      "Female_Base_Assembly": {
+        "verts": 45777,
+        "faces": 48382,
+        "quads": 43038
+      }
+    },
+    "dst_sha256": "ad60f8affdef8fb67659214a25b887bc3795c86c207279d224b3ca5da3d0976d",
+    "reopen_inventory_equal": true,
+    "post_inventory": {
+      "Cube": {
+        "verts": 8,
+        "faces": 6,
+        "quads": 6
+      },
+      "Female_Base_Assembly": {
+        "verts": 45777,
+        "faces": 48382,
+        "quads": 43038
+      }
+    },
+    "status": "OK"
+  },
+  "work/female-base-uv-v2.blend": {
+    "src_sha256": "19d91ee57ed43fad8b5e9ef8f8bd64a12cfd9c0e5285ffa1d21099f2dd7fdae2",
+    "packed_images": [],
+    "pack_failures": [],
+    "no_filepath_images": [],
+    "pre_inventory": {
+      "Cube": {
+        "verts": 8,
+        "faces": 6,
+        "quads": 6
+      },
+      "Female_Base_Assembly": {
+        "verts": 45777,
+        "faces": 48382,
+        "quads": 43038
+      }
+    },
+    "dst_sha256": "1c3276b2f183b6d1f0d06a3f0dde7bbac12e49232ce64c904f1fca2f03e17d67",
+    "reopen_inventory_equal": true,
+    "post_inventory": {
+      "Cube": {
+        "verts": 8,
+        "faces": 6,
+        "quads": 6
+      },
+      "Female_Base_Assembly": {
+        "verts": 45777,
+        "faces": 48382,
+        "quads": 43038
+      }
+    },
+    "status": "OK"
+  },
+  "work/male-base-uv-retry.blend": {
+    "src_sha256": "d630640760d1f75e259a1a0726b150a31a9b4474aea5bdd473e2a601beafcf24",
+    "packed_images": [],
+    "pack_failures": [],
+    "no_filepath_images": [],
+    "pre_inventory": {
+      "Cube": {
+        "verts": 8,
+        "faces": 6,
+        "quads": 6
+      },
+      "Male_Base_Symmetric": {
+        "verts": 66943,
+        "faces": 67430,
+        "quads": 66362
+      }
+    },
+    "dst_sha256": "6d2b37460adfd64e4a7f42036c76eb437d956e2dd43b8388b7a115d9f833c16d",
+    "reopen_inventory_equal": true,
+    "post_inventory": {
+      "Cube": {
+        "verts": 8,
+        "faces": 6,
+        "quads": 6
+      },
+      "Male_Base_Symmetric": {
+        "verts": 66943,
+        "faces": 67430,
+        "quads": 66362
+      }
+    },
+    "status": "OK"
+  },
+  "work/male-base-patch-color-review.blend": {
+    "src_sha256": "d2a21a4469909a10a3df7f06621e8ad45ec155f9820ffc5eeeebbb1b5075cf1b",
+    "packed_images": [],
+    "pack_failures": [],
+    "no_filepath_images": [],
+    "pre_inventory": {
+      "Cube": {
+        "verts": 8,
+        "faces": 6,
+        "quads": 6
+      },
+      "Male_Base_Symmetric": {
+        "verts": 66943,
+        "faces": 67430,
+        "quads": 66362
+      }
+    },
+    "dst_sha256": "f9d9ef8a5a7f553a80b78f1166c8fbcd5e563459e3b4c323a815d5c4371d4a63",
+    "reopen_inventory_equal": true,
+    "post_inventory": {
+      "Cube": {
+        "verts": 8,
+        "faces": 6,
+        "quads": 6
+      },
+      "Male_Base_Symmetric": {
+        "verts": 66943,
+        "faces": 67430,
+        "quads": 66362
+      }
+    },
+    "status": "OK"
+  },
+  "work/male-base-local-chart-atlas-review.blend": {
+    "src_sha256": "fd4a2bc1db56564fdb1006dfbf867fd1863b2d6fd9014cad2fb06824a8fca6bd",
+    "packed_images": [],
+    "pack_failures": [],
+    "no_filepath_images": [],
+    "pre_inventory": {
+      "Cube": {
+        "verts": 8,
+        "faces": 6,
+        "quads": 6
+      },
+      "Male_Base_Symmetric": {
+        "verts": 66943,
+        "faces": 67430,
+        "quads": 66362
+      }
+    },
+    "dst_sha256": "af24bfef15653f926eb0a7491985f857272876d267eb543ae00cad54f8de4bb6",
+    "reopen_inventory_equal": true,
+    "post_inventory": {
+      "Cube": {
+        "verts": 8,
+        "faces": 6,
+        "quads": 6
+      },
+      "Male_Base_Symmetric": {
+        "verts": 66943,
+        "faces": 67430,
+        "quads": 66362
+      }
+    },
+    "status": "OK"
+  },
+  "work/recovered-oral-final-contact-review.blend": {
+    "src_sha256": "98d882093edfd48ab5a6abe26c0651a2e6e4079751cc8324c9f197782529bd4b",
+    "packed_images": [],
+    "pack_failures": [],
+    "no_filepath_images": [],
+    "pre_inventory": {
+      "Cube": {
+        "verts": 8,
+        "faces": 6,
+        "quads": 6
+      },
+      "Male_Lower_GumArch": {
+        "verts": 694,
+        "faces": 624,
+        "quads": 467
+      },
+      "Male_Lower_RecoveredCrown1": {
+        "verts": 101,
+        "faces": 121,
+        "quads": 62
+      },
+      "Male_LowerGum_SubsetReview": {
+        "verts": 795,
+        "faces": 745,
+        "quads": 529
+      },
+      "Male_Upper_GumArch": {
+        "verts": 618,
+        "faces": 554,
+        "quads": 409
+      },
+      "Male_Upper_RecoveredCrown1": {
+        "verts": 108,
+        "faces": 124,
+        "quads": 72
+      },
+      "Male_Upper_RecoveredCrown2": {
+        "verts": 50,
+        "faces": 49,
+        "quads": 39
+      },
+      "Male_Upper_RecoveredCrown3": {
+        "verts": 50,
+        "faces": 49,
+        "quads": 39
+      },
+      "Male_UpperGum_SubsetReview": {
+        "verts": 827,
+        "faces": 776,
+        "quads": 558
+      }
+    },
+    "dst_sha256": "edd53c249a8eaa5bc01a215b7f191115c8c4ccfdfabcc828c9a153cb415bd366",
+    "reopen_inventory_equal": true,
+    "post_inventory": {
+      "Cube": {
+        "verts": 8,
+        "faces": 6,
+        "quads": 6
+      },
+      "Male_Lower_GumArch": {
+        "verts": 694,
+        "faces": 624,
+        "quads": 467
+      },
+      "Male_Lower_RecoveredCrown1": {
+        "verts": 101,
+        "faces": 121,
+        "quads": 62
+      },
+      "Male_LowerGum_SubsetReview": {
+        "verts": 795,
+        "faces": 745,
+        "quads": 529
+      },
+      "Male_Upper_GumArch": {
+        "verts": 618,
+        "faces": 554,
+        "quads": 409
+      },
+      "Male_Upper_RecoveredCrown1": {
+        "verts": 108,
+        "faces": 124,
+        "quads": 72
+      },
+      "Male_Upper_RecoveredCrown2": {
+        "verts": 50,
+        "faces": 49,
+        "quads": 39
+      },
+      "Male_Upper_RecoveredCrown3": {
+        "verts": 50,
+        "faces": 49,
+        "quads": 39
+      },
+      "Male_UpperGum_SubsetReview": {
+        "verts": 827,
+        "faces": 776,
+        "quads": 558
+      }
+    },
+    "status": "OK"
+  },
+  "work/male-tongue-curvature-refined-review.blend": {
+    "src_sha256": "014783ca37c465e36e29bdcd16c6a2df3e0f3cc968665e00fd5060e1610a0f0f",
+    "packed_images": [],
+    "pack_failures": [],
+    "no_filepath_images": [],
+    "pre_inventory": {
+      "Cube": {
+        "verts": 8,
+        "faces": 6,
+        "quads": 6
+      },
+      "Male_Tongue_Repaired": {
+        "verts": 1129,
+        "faces": 1104,
+        "quads": 1104
+      }
+    },
+    "dst_sha256": "352e6125516c4105348779c5725f20358db46b10573e3acda0a5d9bd480e9bf9",
+    "reopen_inventory_equal": true,
+    "post_inventory": {
+      "Cube": {
+        "verts": 8,
+        "faces": 6,
+        "quads": 6
+      },
+      "Male_Tongue_Repaired": {
+        "verts": 1129,
+        "faces": 1104,
+        "quads": 1104
+      }
+    },
+    "status": "OK"
+  },
+  "work/male-upper-molar-pair-crossing-repaired.blend": {
+    "src_sha256": "0beafd5fab18c67a2486bfed9ee87b3940910d1573a57afdfdd2ec1270eee69e",
+    "packed_images": [],
+    "pack_failures": [],
+    "no_filepath_images": [],
+    "pre_inventory": {
+      "Cube": {
+        "verts": 8,
+        "faces": 6,
+        "quads": 6
+      },
+      "Male_UpperMolar_negative_Repaired": {
+        "verts": 104,
+        "faces": 132,
+        "quads": 72
+      },
+      "Male_UpperMolar_positive_Repaired": {
+        "verts": 104,
+        "faces": 132,
+        "quads": 72
+      }
+    },
+    "dst_sha256": "398a2f06dfcc7f1a05a5fe6f5df3c59c3482a1a533e50b2b8cbac89d054be1b3",
+    "reopen_inventory_equal": true,
+    "post_inventory": {
+      "Cube": {
+        "verts": 8,
+        "faces": 6,
+        "quads": 6
+      },
+      "Male_UpperMolar_negative_Repaired": {
+        "verts": 104,
+        "faces": 132,
+        "quads": 72
+      },
+      "Male_UpperMolar_positive_Repaired": {
+        "verts": 104,
+        "faces": 132,
+        "quads": 72
+      }
+    },
+    "status": "OK"
+  },
+  "work/inner-mouth-partition-review-v2.blend": {
+    "src_sha256": "a4577ee2f508b74027af0716e0fe16145e7a031e9a1f341a6f3747a1f2717e2c",
+    "packed_images": [],
+    "pack_failures": [],
+    "no_filepath_images": [],
+    "pre_inventory": {
+      "Female_HeadExterior_PartitionReview": {
+        "verts": 18144,
+        "faces": 18544,
+        "quads": 17429
+      },
+      "Female_InnerMouth_Candidate": {
+        "verts": 18817,
+        "faces": 19311,
+        "quads": 18144
+      },
+      "Female_InnerMouth_PartitionReview": {
+        "verts": 822,
+        "faces": 767,
+        "quads": 715
+      },
+      "Male_HeadExterior_PartitionReview": {
+        "verts": 13037,
+        "faces": 13406,
+        "quads": 12383
+      },
+      "Male_InnerMouth_Candidate": {
+        "verts": 13367,
+        "faces": 13832,
+        "quads": 12725
+      },
+      "Male_InnerMouth_PartitionReview": {
+        "verts": 467,
+        "faces": 426,
+        "quads": 342
+      }
+    },
+    "dst_sha256": "80d61d7670a4037ee4b9bd50515a15d291744bedde9a8525c70d80723a2c29dc",
+    "reopen_inventory_equal": true,
+    "post_inventory": {
+      "Female_HeadExterior_PartitionReview": {
+        "verts": 18144,
+        "faces": 18544,
+        "quads": 17429
+      },
+      "Female_InnerMouth_Candidate": {
+        "verts": 18817,
+        "faces": 19311,
+        "quads": 18144
+      },
+      "Female_InnerMouth_PartitionReview": {
+        "verts": 822,
+        "faces": 767,
+        "quads": 715
+      },
+      "Male_HeadExterior_PartitionReview": {
+        "verts": 13037,
+        "faces": 13406,
+        "quads": 12383
+      },
+      "Male_InnerMouth_Candidate": {
+        "verts": 13367,
+        "faces": 13832,
+        "quads": 12725
+      },
+      "Male_InnerMouth_PartitionReview": {
+        "verts": 467,
+        "faces": 426,
+        "quads": 342
+      }
+    },
+    "status": "OK"
+  },
+  "work/oral-separated-verified.blend": {
+    "src_sha256": "e6982ad61070327e4838f1194353fd6c18022e41988d64e6caffce7b5daaa1c2",
+    "packed_images": [],
+    "pack_failures": [],
+    "no_filepath_images": [],
+    "pre_inventory": {
+      "Female_LowerGum_WithTeeth_Review.001": {
+        "verts": 2994,
+        "faces": 3037,
+        "quads": 2645
+      },
+      "Female_Tongue_Review.001": {
+        "verts": 567,
+        "faces": 554,
+        "quads": 548
+      },
+      "Female_UpperGum_WithTeeth_Review.001": {
+        "verts": 3081,
+        "faces": 3108,
+        "quads": 2749
+      },
+      "Male_LowerGum_WithTeeth_Review.001": {
+        "verts": 1827,
+        "faces": 1991,
+        "quads": 1201
+      },
+      "Male_Tongue_Review.001": {
+        "verts": 266,
+        "faces": 268,
+        "quads": 240
+      },
+      "Male_UpperGum_WithTeeth_Review.001": {
+        "verts": 1775,
+        "faces": 1924,
+        "quads": 1148
+      }
+    },
+    "dst_sha256": "edd40903cba1ef663c798a17f732c7814f3e5e28467f2f0c4320a81c74422f9f",
+    "reopen_inventory_equal": true,
+    "post_inventory": {
+      "Female_LowerGum_WithTeeth_Review.001": {
+        "verts": 2994,
+        "faces": 3037,
+        "quads": 2645
+      },
+      "Female_Tongue_Review.001": {
+        "verts": 567,
+        "faces": 554,
+        "quads": 548
+      },
+      "Female_UpperGum_WithTeeth_Review.001": {
+        "verts": 3081,
+        "faces": 3108,
+        "quads": 2749
+      },
+      "Male_LowerGum_WithTeeth_Review.001": {
+        "verts": 1827,
+        "faces": 1991,
+        "quads": 1201
+      },
+      "Male_Tongue_Review.001": {
+        "verts": 266,
+        "faces": 268,
+        "quads": 240
+      },
+      "Male_UpperGum_WithTeeth_Review.001": {
+        "verts": 1775,
+        "faces": 1924,
+        "quads": 1148
+      }
+    },
+    "status": "OK"
+  },
+  "work/shared-eyes-fitted-review.blend": {
+    "src_sha256": "3592a0e8d7d3d1fa8850b41c1f94570790a224f53ca553a97a5ba3006bb0b908",
+    "packed_images": [],
+    "pack_failures": [],
+    "no_filepath_images": [],
+    "pre_inventory": {
+      "Cube": {
+        "verts": 8,
+        "faces": 6,
+        "quads": 6
+      },
+      "Female_Eye_1_Core": {
+        "verts": 2242,
+        "faces": 2304,
+        "quads": 2176
+      },
+      "Female_Eye_1_Cornea": {
+        "verts": 1666,
+        "faces": 1728,
+        "quads": 1600
+      },
+      "Female_Eye_2_Core": {
+        "verts": 2242,
+        "faces": 2304,
+        "quads": 2176
+      },
+      "Female_Eye_2_Cornea": {
+        "verts": 1666,
+        "faces": 1728,
+        "quads": 1600
+      },
+      "Female_Head_EyeFit_Review": {
+        "verts": 25459,
+        "faces": 26010,
+        "quads": 24086
+      },
+      "Male_Eye_1_Core": {
+        "verts": 2242,
+        "faces": 2304,
+        "quads": 2176
+      },
+      "Male_Eye_1_Cornea": {
+        "verts": 1666,
+        "faces": 1728,
+        "quads": 1600
+      },
+      "Male_Eye_2_Core": {
+        "verts": 2242,
+        "faces": 2304,
+        "quads": 2176
+      },
+      "Male_Eye_2_Cornea": {
+        "verts": 1666,
+        "faces": 1728,
+        "quads": 1600
+      },
+      "Male_Head_EyeFit_Review": {
+        "verts": 17235,
+        "faces": 18015,
+        "quads": 15314
+      }
+    },
+    "dst_sha256": "41d2373fa68cf65a981205aec94a795a790cd6cd77d49186b0ed31500605d6d5",
+    "reopen_inventory_equal": true,
+    "post_inventory": {
+      "Cube": {
+        "verts": 8,
+        "faces": 6,
+        "quads": 6
+      },
+      "Female_Eye_1_Core": {
+        "verts": 2242,
+        "faces": 2304,
+        "quads": 2176
+      },
+      "Female_Eye_1_Cornea": {
+        "verts": 1666,
+        "faces": 1728,
+        "quads": 1600
+      },
+      "Female_Eye_2_Core": {
+        "verts": 2242,
+        "faces": 2304,
+        "quads": 2176
+      },
+      "Female_Eye_2_Cornea": {
+        "verts": 1666,
+        "faces": 1728,
+        "quads": 1600
+      },
+      "Female_Head_EyeFit_Review": {
+        "verts": 25459,
+        "faces": 26010,
+        "quads": 24086
+      },
+      "Male_Eye_1_Core": {
+        "verts": 2242,
+        "faces": 2304,
+        "quads": 2176
+      },
+      "Male_Eye_1_Cornea": {
+        "verts": 1666,
+        "faces": 1728,
+        "quads": 1600
+      },
+      "Male_Eye_2_Core": {
+        "verts": 2242,
+        "faces": 2304,
+        "quads": 2176
+      },
+      "Male_Eye_2_Cornea": {
+        "verts": 1666,
+        "faces": 1728,
+        "quads": 1600
+      },
+      "Male_Head_EyeFit_Review": {
+        "verts": 17235,
+        "faces": 18015,
+        "quads": 15314
+      }
+    },
+    "status": "OK"
+  },
+  "work/female-head-oral-groups.blend": {
+    "src_sha256": "23ca3b489d01531c8b562fe36088f5fc736a17174bc111b7b9a79a96ab28ff27",
+    "packed_images": [],
+    "pack_failures": [],
+    "no_filepath_images": [],
+    "pre_inventory": {
+      "tripo_705ef0c2_aea4_4acf_aedf_bf55c1c12875": {
+        "verts": 39637,
+        "faces": 50096,
+        "quads": 0
+      }
+    },
+    "dst_sha256": "2916edf8a3b1d6b9ef06bae545e5f08dfb7441746b45debc19cff353f4398ea7",
+    "reopen_inventory_equal": true,
+    "post_inventory": {
+      "tripo_705ef0c2_aea4_4acf_aedf_bf55c1c12875": {
+        "verts": 39637,
+        "faces": 50096,
+        "quads": 0
+      }
+    },
+    "status": "OK"
+  }
+}

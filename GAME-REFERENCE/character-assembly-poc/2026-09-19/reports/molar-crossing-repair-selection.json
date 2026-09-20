@@ -1,0 +1,148 @@
+{
+  "source": "molar-repair-connectivity.npz",
+  "source_coordinate_sha256": "2d81e926d2a6701e682335c628e8d04700a34d085caa3b81315f151bbbbac5ce",
+  "before_intersection_count": 4,
+  "crossing_seed_vertices": [
+    14,
+    27,
+    40,
+    41,
+    51,
+    66,
+    86
+  ],
+  "editable_vertices": [
+    0,
+    14,
+    15,
+    16,
+    22,
+    23,
+    27,
+    40,
+    41,
+    43,
+    44,
+    46,
+    48,
+    51,
+    52,
+    53,
+    66,
+    86,
+    87
+  ],
+  "fixed_root_z_above": 0.301,
+  "candidates": [
+    {
+      "strength": 0.001,
+      "intersections": 0,
+      "point_contacts": 0,
+      "max_displacement_source_units": 4.49365757668375e-06,
+      "area_ratio": 0.9999654729242718,
+      "volume_ratio": 0.9999750846383375,
+      "minimum_triangle_area": 1.2388592774595892e-06,
+      "outside_region_max_displacement": 0.0,
+      "candidate_eligible": true
+    },
+    {
+      "strength": 0.0025,
+      "intersections": 0,
+      "point_contacts": 0,
+      "max_displacement_source_units": 1.1237345440763186e-05,
+      "area_ratio": 0.9999138107826461,
+      "volume_ratio": 0.9999377449756318,
+      "minimum_triangle_area": 1.2388592774595892e-06,
+      "outside_region_max_displacement": 0.0,
+      "candidate_eligible": true
+    },
+    {
+      "strength": 0.005,
+      "intersections": 0,
+      "point_contacts": 0,
+      "max_displacement_source_units": 2.2445151974809256e-05,
+      "area_ratio": 0.9998277458813197,
+      "volume_ratio": 0.9998755961160916,
+      "minimum_triangle_area": 1.2388592774595892e-06,
+      "outside_region_max_displacement": 0.0,
+      "candidate_eligible": true
+    },
+    {
+      "strength": 0.01,
+      "intersections": 0,
+      "point_contacts": 0,
+      "max_displacement_source_units": 4.467789841676932e-05,
+      "area_ratio": 0.9996573711319382,
+      "volume_ratio": 0.9997521875789889,
+      "minimum_triangle_area": 1.2388592774595892e-06,
+      "outside_region_max_displacement": 0.0,
+      "candidate_eligible": true
+    },
+    {
+      "strength": 0.025,
+      "intersections": 0,
+      "point_contacts": 0,
+      "max_displacement_source_units": 0.00011018231861355914,
+      "area_ratio": 0.9991552607373476,
+      "volume_ratio": 0.9993867332278586,
+      "minimum_triangle_area": 1.2388592774595892e-06,
+      "outside_region_max_displacement": 0.0,
+      "candidate_eligible": true
+    },
+    {
+      "strength": 0.05,
+      "intersections": 0,
+      "point_contacts": 0,
+      "max_displacement_source_units": 0.0002155146382982956,
+      "area_ratio": 0.9983489109385871,
+      "volume_ratio": 0.9987937784818189,
+      "minimum_triangle_area": 1.2103975483185628e-06,
+      "outside_region_max_displacement": 0.0,
+      "candidate_eligible": true
+    },
+    {
+      "strength": 0.1,
+      "intersections": 0,
+      "point_contacts": 0,
+      "max_displacement_source_units": 0.0004131149231177123,
+      "area_ratio": 0.9968402491729594,
+      "volume_ratio": 0.9976635987896192,
+      "minimum_triangle_area": 1.1095517895661897e-06,
+      "outside_region_max_displacement": 0.0,
+      "candidate_eligible": false
+    },
+    {
+      "strength": 0.25,
+      "intersections": 0,
+      "point_contacts": 0,
+      "max_displacement_source_units": 0.0009199496012090982,
+      "area_ratio": 0.9929920427382292,
+      "volume_ratio": 0.9946479108144765,
+      "minimum_triangle_area": 9.962772750204418e-07,
+      "outside_region_max_displacement": 0.0,
+      "candidate_eligible": false
+    }
+  ],
+  "selection": {
+    "strength": 0.001,
+    "intersections": 0,
+    "point_contacts": 0,
+    "max_displacement_source_units": 4.49365757668375e-06,
+    "area_ratio": 0.9999654729242718,
+    "volume_ratio": 0.9999750846383375,
+    "minimum_triangle_area": 1.2388592774595892e-06,
+    "outside_region_max_displacement": 0.0,
+    "candidate_eligible": true
+  },
+  "after_intersection_audit": {
+    "ok": true,
+    "triangles": 204,
+    "tolerance_source_units": 3.515625e-10,
+    "degenerate_triangles": [],
+    "intersections": [],
+    "point_contacts": []
+  },
+  "acceptance_scope": "Sample-specific local shape bounds; not a general tooth standard",
+  "geometry_applied": false,
+  "native_and_render_verification_pending": true
+}
