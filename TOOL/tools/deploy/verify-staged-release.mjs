@@ -28,7 +28,9 @@ for (const artifact of manifest.artifacts) {
   try {
     const info = await stat(path)
     if (info.size !== artifact.bytes) failures.push(`bytes:${artifact.path}`)
-    const digest = createHash('sha256').update(await readFile(path)).digest('hex')
+    const contents = await readFile(path)
+    if (contents.subarray(0, 42).toString('utf8').startsWith('version https://git-lfs.github.com/spec/v1')) failures.push(`lfs-pointer:${artifact.path}`)
+    const digest = createHash('sha256').update(contents).digest('hex')
     if (digest !== artifact.sha256) failures.push(`sha256:${artifact.path}`)
   } catch {
     failures.push(`missing:${artifact.path}`)

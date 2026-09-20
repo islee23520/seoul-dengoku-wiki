@@ -40,6 +40,7 @@ jobs:
           fetch-depth: 0
           submodules: false
           clean: false
+          lfs: true
           token: ${{ secrets.SUBMODULES_PAT }}
 
       - name: Verify the dedicated E drive workspace
@@ -55,6 +56,7 @@ jobs:
           }
           git submodule sync --recursive
           git submodule update --init --recursive --force
+          git lfs pull --include="WEB/wiki/public/state-flags/*.webp"
 
       - name: Build, verify, and atomically deploy the hub
         run: |

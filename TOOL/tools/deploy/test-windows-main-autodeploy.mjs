@@ -14,6 +14,8 @@ test('main pushes deploy through the dedicated Windows runner', async () => {
   assert.match(workflow, /\.git\\modules\\TOOL\\portrait-gen/)
   assert.match(workflow, /\.git\\modules\\TOOL\\unity-remote/)
   assert.match(workflow, /submodules: false/)
+  assert.match(workflow, /lfs: true/)
+  assert.match(workflow, /git lfs pull --include="WEB\/wiki\/public\/state-flags\/\*\.webp"/)
   assert.match(workflow, /git submodule update --init --recursive --force/)
   assert.match(workflow, /token: \$\{\{ secrets\.SUBMODULES_PAT \}\}/)
   assert.match(workflow, /TOOL\\tools\\deploy\\deploy-hub-local-windows\.ps1/)
