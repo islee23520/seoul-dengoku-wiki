@@ -5,6 +5,16 @@ using Janseon.Core.Battle.Contracts;
 
 namespace Janseon.Core.Battle.Sim
 {
+    public struct IntPointMm : IEquatable<IntPointMm>
+    {
+        public int X; public int Y;
+        public IntPointMm(int x, int y) { X = x; Y = y; }
+        public bool Equals(IntPointMm other) => X == other.X && Y == other.Y;
+        public override bool Equals(object obj) => obj is IntPointMm && Equals((IntPointMm)obj);
+        public override int GetHashCode() => (X * 397) ^ Y;
+        public override string ToString() => X + "," + Y;
+    }
+
     internal static class AggregateSurvivorRules
     {
         public static int FromHp(int hp, int maxHp)
@@ -39,6 +49,8 @@ namespace Janseon.Core.Battle.Sim
         public HeroState[] Heroes = new HeroState[0];
         public SquadState[] Squads = new SquadState[0];
         public BattleFrame Frame { get; private set; }
+        public string SpatialHash;
+        public Dictionary<IntPointMm, List<UnitId>> SpatialBuckets = new Dictionary<IntPointMm, List<UnitId>>();
 
         public void PublishFrame()
         {
@@ -49,7 +61,8 @@ namespace Janseon.Core.Battle.Sim
 
         public BattleSimState Clone()
         {
-            var c = new BattleSimState { Tick=Tick, Deployed=Deployed, Outcome=Outcome, ElapsedSeconds=ElapsedSeconds, Rng=Rng == null ? null : Rng.Clone(), Arena=Arena == null ? null : Arena.Clone(), Terrain=Terrain == null ? null : Terrain.Snapshot() };
+            var c = new BattleSimState { Tick=Tick, Deployed=Deployed, Outcome=Outcome, ElapsedSeconds=ElapsedSeconds, Rng=Rng == null ? null : Rng.Clone(), Arena=Arena == null ? null : Arena.Clone(), Terrain=Terrain == null ? null : Terrain.Snapshot(), SpatialHash=SpatialHash, SpatialBuckets=new Dictionary<IntPointMm, List<UnitId>>() };
+            foreach (var pair in SpatialBuckets) c.SpatialBuckets[pair.Key] = new List<UnitId>(pair.Value);
             c.Units = Units == null ? null : Array.ConvertAll(Units, x => x.Clone());
             c.Sides = Sides == null ? null : Array.ConvertAll(Sides, x => x.Clone());
             c.Telegraphs = Telegraphs == null ? null : Array.ConvertAll(Telegraphs, x => x.Clone());
@@ -84,6 +97,7 @@ namespace Janseon.Core.Battle.Sim
     {
         public UnitId Id; public SoldierId SoldierId; public SquadId SquadId; public HeroId HeroId; public int Side; public GridCoord Cell; public CardinalDirection Facing;
         public int Hp; public int MaxHp; public int SurvivorCount; public int Power; public int RangeMin; public int RangeMax;
+        public IntPointMm PositionMm; public int RadiusMm = 500;
         public int MoveTicksPerCell; public int MoveTicksLeft; public int AttackCooldownTicks; public int CooldownTicksLeft; public string State = "Active";
         public BattleOrderKind OrderKind; public GridCoord OrderDestination; public UnitId OrderTargetUnitId;
         public UnitState Clone() { return (UnitState)MemberwiseClone(); }

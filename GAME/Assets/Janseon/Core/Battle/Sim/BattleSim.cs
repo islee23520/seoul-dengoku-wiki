@@ -10,6 +10,50 @@ namespace Janseon.Core.Battle.Sim
 {
     public static class BattleSim
     {
+        public static bool ResolveSoldierSpacing(BattleSimState state, HashSet<GridCoord> blockedCells)
+        {
+            if (state == null || state.Units == null) return false;
+            var ordered = new List<UnitState>(state.Units); ordered.Sort((a, b) => string.CompareOrdinal(a.Id.Value, b.Id.Value));
+            for (var i = 0; i < ordered.Count; i++)
+                if (blockedCells != null && blockedCells.Contains(ordered[i].Cell)) { state.SpatialHash = SpatialFingerprint(ordered); return false; }
+            var cellSize = 1;
+            for (var i = 0; i < ordered.Count; i++) cellSize = Math.Max(cellSize, 2 * ordered[i].RadiusMm);
+            state.SpatialBuckets.Clear();
+            for (var i = 0; i < ordered.Count; i++)
+            {
+                var key = new IntPointMm(FloorDiv(ordered[i].PositionMm.X, cellSize), FloorDiv(ordered[i].PositionMm.Y, cellSize));
+                List<UnitId> bucket;
+                if (!state.SpatialBuckets.TryGetValue(key, out bucket)) state.SpatialBuckets[key] = bucket = new List<UnitId>();
+                bucket.Add(ordered[i].Id);
+            }
+            for (var iteration = 0; iteration < 4; iteration++)
+                for (var i = 0; i < ordered.Count; i++)
+                    for (var j = i + 1; j < ordered.Count; j++)
+                    {
+                        var a = ordered[i]; var b = ordered[j];
+                        var dx = b.PositionMm.X - a.PositionMm.X; var dy = b.PositionMm.Y - a.PositionMm.Y;
+                        var min = a.RadiusMm + b.RadiusMm;
+                        if (Math.Abs(dx) >= min && Math.Abs(dy) >= min) continue;
+                        if (Math.Abs(dx) >= Math.Abs(dy)) { var push = Math.Max(1, min - Math.Abs(dx)); b.PositionMm.X += dx >= 0 ? push : -push; }
+                        else { var push = Math.Max(1, min - Math.Abs(dy)); b.PositionMm.Y += dy >= 0 ? push : -push; }
+                    }
+            state.SpatialHash = SpatialFingerprint(ordered) + ":cell=" + cellSize.ToString(CultureInfo.InvariantCulture);
+            return true;
+        }
+
+        static int FloorDiv(int value, int divisor)
+        {
+            if (value >= 0) return value / divisor;
+            return -(((-value) + divisor - 1) / divisor);
+        }
+
+        static string SpatialFingerprint(List<UnitState> units)
+        {
+            var text = string.Empty;
+            for (var i = 0; i < units.Count; i++) text += units[i].Id.Value + "=" + units[i].PositionMm + ";";
+            return CoreApi.StableHashHex(text);
+        }
+
         public sealed class FormationUnit { public readonly string SoldierId; public readonly int Slot; public FormationUnit(string id, int slot) { SoldierId=id; Slot=slot; } }
         public sealed class BattlefieldSurface
         {

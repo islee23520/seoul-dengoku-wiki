@@ -73,5 +73,39 @@ namespace Janseon.Foundation.Tests
             Assert.That(BattleSim.ProjectFormation(isolated, units, "entry", "exit").Success, Is.False);
             Assert.That(BattleSim.ProjectFormation(surface, units, "entry", "exit", null, false).Error, Does.Contain("tuning"));
         }
+
+        [Test]
+        public void NarrowPassageCrowdIsDeterministic()
+        {
+            var first = CrowdState(new[] { "b", "a", "c" });
+            var second = CrowdState(new[] { "c", "b", "a" });
+            var passage = new System.Collections.Generic.HashSet<GridCoord> { new GridCoord(1, 0) };
+            Assert.That(BattleSim.ResolveSoldierSpacing(first, passage), Is.True);
+            Assert.That(BattleSim.ResolveSoldierSpacing(second, passage), Is.True);
+            Assert.That(first.SpatialHash, Is.EqualTo(second.SpatialHash));
+            Assert.That(Array.Find(first.Units, unit => unit.Id.Value == "a").PositionMm.X, Is.EqualTo(1000));
+            Assert.That(Array.Find(first.Units, unit => unit.Id.Value == "b").PositionMm.X, Is.EqualTo(2004));
+        }
+
+        [Test]
+        public void DenseBlockedFormationDoesNotTeleportOrLoop()
+        {
+            var state = CrowdState(new[] { "a", "b", "c", "d" });
+            var before = state.Units[0].PositionMm;
+            var blocked = new System.Collections.Generic.HashSet<GridCoord> { new GridCoord(0, 0), new GridCoord(1, 0) };
+            Assert.That(BattleSim.ResolveSoldierSpacing(state, blocked), Is.False);
+            Assert.That(state.Units[0].PositionMm, Is.EqualTo(before));
+            Assert.That(state.Units[0].PositionMm.X, Is.LessThan(2000));
+            Assert.That(state.SpatialHash, Is.Not.Null);
+        }
+
+        static BattleSimState CrowdState(string[] ids)
+        {
+            var state = new BattleSimState { Arena = new ArenaState { Width = 3, Height = 1 }, Units = new UnitState[ids.Length] };
+            Array.Sort(ids, StringComparer.Ordinal);
+            for (var i = 0; i < ids.Length; i++)
+                state.Units[i] = new UnitState { Id = new UnitId(ids[i]), SoldierId = new SoldierId(ids[i]), Side = 0, Cell = new GridCoord(0, 0), PositionMm = new IntPointMm(1000 + i * 1000, 0), RadiusMm = 500 };
+            return state;
+        }
     }
 }
