@@ -270,12 +270,24 @@ summary:focus-visible {
 .person-canon-prose section { border-block-end: 1px solid var(--wiki-line); padding-block-end: 0.75rem; }
 .person-canon-prose details { margin-block-start: 1rem; border: 1px solid var(--wiki-line); padding: 0.75rem; }
 .territory-map-section { max-inline-size: none; margin-block-end: 2rem; border-block-end: 2px solid var(--wiki-line); padding-block-end: 1.5rem; }
-.territory-filter { display: flex; align-items: center; gap: 0.75rem; margin-block: 1rem; }
+.territory-toolbar { display: flex; flex-wrap: wrap; align-items: end; gap: 0.75rem; margin-block: 1rem; }
+.territory-toolbar button { border: 1px solid var(--wiki-line); background: var(--wiki-paper); color: var(--wiki-text); padding: 0.5rem 0.75rem; cursor: pointer; font-weight: 700; }
+.territory-controls-help { margin-inline-start: auto; color: var(--wiki-muted); font-size: 0.75rem; font-weight: 700; }
+.territory-filter { display: flex; align-items: center; gap: 0.5rem; }
 .territory-filter span { font-weight: 700; }
 .territory-filter select { border: 1px solid var(--wiki-line); background: var(--wiki-paper); padding: 0.5rem; }
 .territory-map-layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(17rem, 1fr); gap: 1rem; align-items: start; }
 .territory-map-canvas { min-inline-size: 0; overflow: hidden; border: 1px solid var(--wiki-line); background: #e9e5dc; }
-.territory-map-canvas svg { display: block; inline-size: 100%; block-size: auto; }
+.territory-map-canvas-3d { position: relative; min-block-size: 42rem; background: #07151c; isolation: isolate; }
+.territory-map-canvas-3d canvas { position: absolute; inset: 0; display: block; inline-size: 100%; block-size: 100%; cursor: grab; }
+.territory-map-canvas-3d canvas:active { cursor: grabbing; }
+.territory-state-markers { position: absolute; inset: 0; pointer-events: none; }
+.territory-state-marker { position: absolute; z-index: 2; display: inline-flex; align-items: center; gap: 0.35rem; min-inline-size: 8.5rem; max-inline-size: 12rem; border: 1px solid rgb(255 255 255 / 0.55); background: rgb(7 21 28 / 0.86); color: white; padding: 0.28rem 0.4rem; translate: -50% -50%; pointer-events: auto; cursor: pointer; font: inherit; text-align: start; backdrop-filter: blur(2px); }
+.territory-state-marker:hover, .territory-state-marker[aria-pressed="true"] { border-color: #fff; background: rgb(143 45 39 / 0.94); }
+.territory-state-marker:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+.territory-state-marker span { display: grid; min-inline-size: 0; line-height: 1.2; font-size: 0.68rem; overflow-wrap: anywhere; }
+.territory-state-marker strong { font-size: 0.62rem; letter-spacing: 0.08em; }
+.state-flag { flex: 0 0 auto; inline-size: 2rem; aspect-ratio: 3 / 2; border: 1px solid rgb(255 255 255 / 0.65); }
 .territory-region { stroke: #f6f1e8; stroke-width: 1.1; cursor: pointer; vector-effect: non-scaling-stroke; }
 .territory-region:hover, .territory-region.selected { stroke: #111; stroke-width: 3; }
 .territory-region:focus-visible { outline: none; stroke: #fff; stroke-width: 6; filter: drop-shadow(0 0 3px #111); }
@@ -284,9 +296,26 @@ summary:focus-visible {
 .territory-detail h4 { margin-block-end: 0.25rem; }
 .territory-state-link { display: block; margin-block-start: 0.4rem; }
 .territory-legend { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-block: 0.75rem; }
-.territory-legend button { display: inline-flex; align-items: center; gap: 0.35rem; border: 1px solid var(--wiki-line); background: var(--wiki-paper); padding: 0.3rem 0.5rem; font-size: 0.72rem; }
-.territory-legend button span { inline-size: 0.85rem; block-size: 0.85rem; }
+.territory-legend button { display: inline-flex; align-items: center; gap: 0.35rem; border: 1px solid var(--wiki-line); background: var(--wiki-paper); color: var(--wiki-text); padding: 0.3rem 0.5rem; font-size: 0.72rem; cursor: pointer; }
+.territory-legend button[aria-pressed="true"] { border-color: var(--wiki-accent); background: var(--wiki-toc); }
+.territory-legend .state-flag { inline-size: 2.4rem; border-color: var(--wiki-line); }
 .territory-contested-key { align-self: center; padding-inline: 0.4rem; font-size: 0.75rem; font-weight: 700; }
+.timeline-overview { max-inline-size: none; margin-block-end: 2rem; border-block-end: 2px solid var(--wiki-line); padding-block-end: 1.5rem; }
+.timeline-periods { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-block: 1rem; }
+.timeline-periods button { border: 1px solid var(--wiki-line); background: var(--wiki-paper); color: var(--wiki-text); padding: 0.45rem 0.65rem; cursor: pointer; font-weight: 700; }
+.timeline-periods button[aria-pressed="true"] { border-color: var(--wiki-accent); background: var(--wiki-toc); color: var(--wiki-accent-dark); }
+.timeline-overview-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; padding: 0; list-style: none; counter-reset: timeline-year; }
+.timeline-overview-year { border: 1px solid var(--wiki-line); background: var(--wiki-paper); padding: 0.85rem; }
+.timeline-overview-year-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 0.75rem; border-block-end: 1px solid var(--wiki-line); padding-block-end: 0.45rem; }
+.timeline-overview-year-heading a { color: var(--wiki-accent-dark); font-size: 1.05rem; font-weight: 800; }
+.timeline-overview-year-heading span { color: var(--wiki-muted); font-size: 0.7rem; }
+.timeline-overview-summary { margin-block: 0.65rem; line-height: 1.65; }
+.timeline-causality { display: grid; gap: 0.35rem; margin: 0; }
+.timeline-causality div { display: grid; grid-template-columns: 3rem minmax(0, 1fr); gap: 0.5rem; }
+.timeline-causality dt { color: var(--wiki-muted); font-size: 0.72rem; font-weight: 800; }
+.timeline-causality dd { margin: 0; font-size: 0.82rem; line-height: 1.55; }
+.timeline-related-documents { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-block-start: 0.65rem; }
+.timeline-related-documents a { border: 1px solid var(--wiki-line); background: var(--wiki-toc); padding: 0.2rem 0.35rem; font-size: 0.7rem; text-decoration: none; }
 .document-index-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr)); gap: 0.6rem; }
 .document-index-grid a { display: grid; gap: 0.25rem; border: 1px solid var(--wiki-line); background: var(--wiki-paper); color: var(--wiki-text); padding: 0.75rem; text-decoration: none; }
 .document-index-grid a:hover { border-color: var(--wiki-accent); }
