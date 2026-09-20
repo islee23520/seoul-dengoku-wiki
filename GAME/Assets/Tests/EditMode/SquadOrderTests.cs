@@ -37,6 +37,7 @@ namespace Janseon.Foundation.Tests
             BattleSim.Step(state, ledger);
             Assert.AreEqual(BattleOrderKind.Move, state.Units[0].OrderKind);
             var replacement = order.Clone(); replacement.CommandId = new CommandId("order-2"); replacement.Kind = BattleOrderKind.Attack; replacement.TargetUnitId = state.Units[6].Id;
+            Assert.IsTrue(BattleSim.PreviewOrder(state, replacement).Accepted);
             Assert.IsTrue(BattleSim.ConfirmOrder(state, ledger, replacement).Accepted);
             Assert.IsTrue(BattleSim.CancelOrder(state, replacement.CommandId));
             Assert.IsTrue(BattleSim.StopOrder(state, ledger, replacement.CommandId, new[] { "ally-0" }).Accepted);

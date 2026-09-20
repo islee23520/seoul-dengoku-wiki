@@ -65,6 +65,7 @@ namespace Janseon.Core.Battle.Sim
             var c = new BattleSimState { Tick=Tick, Deployed=Deployed, Outcome=Outcome, ElapsedSeconds=ElapsedSeconds, Rng=Rng == null ? null : Rng.Clone(), Arena=Arena == null ? null : Arena.Clone(), Terrain=Terrain == null ? null : Terrain.Snapshot(), SpatialHash=SpatialHash, SpatialBuckets=new Dictionary<IntPointMm, List<UnitId>>() };
             foreach (var pair in SpatialBuckets) c.SpatialBuckets[pair.Key] = new List<UnitId>(pair.Value);
             c.Units = Units == null ? null : Array.ConvertAll(Units, x => x.Clone());
+            c.Heroes = Heroes == null ? null : Array.ConvertAll(Heroes, x => x.Clone());
             c.Sides = Sides == null ? null : Array.ConvertAll(Sides, x => x.Clone());
             c.Telegraphs = Telegraphs == null ? null : Array.ConvertAll(Telegraphs, x => x.Clone());
             c.Pending = Pending == null ? new List<BattleTickCommand>() : new List<BattleTickCommand>(Pending.ConvertAll(x => x.Clone()));
