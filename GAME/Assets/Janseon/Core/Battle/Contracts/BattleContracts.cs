@@ -5,11 +5,39 @@ using Janseon.Core;
 
 namespace Janseon.Core.Battle.Contracts
 {
+    public readonly struct SoldierId : IEquatable<SoldierId>
+    {
+        public readonly string Value;
+        public SoldierId(string value) { Value = value ?? string.Empty; }
+        public bool Equals(SoldierId other) => string.Equals(Value, other.Value, StringComparison.Ordinal);
+        public override bool Equals(object obj) => obj is SoldierId other && Equals(other);
+        public override int GetHashCode() => StringComparer.Ordinal.GetHashCode(Value ?? string.Empty);
+        public override string ToString() => Value;
+    }
+    public readonly struct SquadId : IEquatable<SquadId>
+    {
+        public readonly string Value;
+        public SquadId(string value) { Value = value ?? string.Empty; }
+        public bool Equals(SquadId other) => string.Equals(Value, other.Value, StringComparison.Ordinal);
+        public override bool Equals(object obj) => obj is SquadId other && Equals(other);
+        public override int GetHashCode() => StringComparer.Ordinal.GetHashCode(Value ?? string.Empty);
+        public override string ToString() => Value;
+    }
+    public readonly struct HeroId : IEquatable<HeroId>
+    {
+        public readonly string Value;
+        public HeroId(string value) { Value = value ?? string.Empty; }
+        public bool Equals(HeroId other) => string.Equals(Value, other.Value, StringComparison.Ordinal);
+        public override bool Equals(object obj) => obj is HeroId other && Equals(other);
+        public override int GetHashCode() => StringComparer.Ordinal.GetHashCode(Value ?? string.Empty);
+        public override string ToString() => Value;
+    }
     public enum BattleOutcomeKind { Ongoing, PlayerVictory, EnemyVictory, PlayerRetreat, EnemySurrender, PlayerRout, Draw }
 
     public sealed class RosterUnit
     {
-        public UnitId Id; public int Side; public string Role; public int Hp; public int MaxHp; public int Power;
+        public UnitId Id; public SoldierId SoldierId; public SquadId SquadId; public int Side; public string Role; public int Hp; public int MaxHp; public int Power;
+        public float Morale = 1f;
         public int RangeMin; public int RangeMax; public int MoveTicksPerCell; public int AttackCooldownTicks;
     }
     public sealed class FormationSlot { public UnitId Unit; public int Row; public int Column; public CardinalDirection Facing; }
@@ -20,6 +48,8 @@ namespace Janseon.Core.Battle.Contracts
         public BattleContext Context; public RosterUnit[] PlayerUnits; public RosterUnit[] EnemyUnits;
         public FormationSlot[] PlayerFormation; public FormationSlot[] EnemyFormation; public UnitId EnemyCommanderId;
         public TelegraphPlan[] Telegraphs; public Heightmap Terrain;
+        public HeroId PlayerHeroId;
+        public SquadId PlayerSquadId;
         public static BattleSetup FromContext(BattleContext ctx)
         {
             return FromContext(ctx, null);
@@ -61,6 +91,22 @@ namespace Janseon.Core.Battle.Contracts
 
     public enum BattleTickCommandKind { Deploy, PlayCard, OrderRetreat, DemandSurrender, SetFacing, Move, Attack }
     public enum BattleOrderKind { None, Move, Attack }
+    public sealed class SquadOrder
+    {
+        public CommandId CommandId;
+        public string[] ActorIds;
+        public BattleOrderKind Kind;
+        public GridCoord Destination;
+        public UnitId TargetUnitId;
+        public SquadOrder Clone() => new SquadOrder { CommandId=CommandId, ActorIds=ActorIds == null ? null : (string[])ActorIds.Clone(), Kind=Kind, Destination=Destination, TargetUnitId=TargetUnitId };
+    }
+    public sealed class SquadOrderResult
+    {
+        public bool Accepted;
+        public bool Conflict;
+        public BattleRejection Rejection;
+        public SquadOrder Order;
+    }
     public sealed class BattleTickCommand
     {
         public CommandId Id; public int Seq; public Tick At; public BattleTickCommandKind Kind;
@@ -78,14 +124,14 @@ namespace Janseon.Core.Battle.Contracts
             };
         }
     }
-    public enum BattleRejectReason { TickMismatch, BattleStarted, NotDeployed, CardUnknown, CardRecharging, CardOutOfRadius, CommandsLocked, SurrenderConditionsUnmet, BattleEnded, UnknownActor, MalformedCommand, RetreatUnavailable, CardOwnerRequired, CardInvalidOwner, CardInvalidTarget, CardDestinationBlocked, CardDestinationOutOfBounds }
+    public enum BattleRejectReason { TickMismatch, BattleStarted, NotDeployed, CardUnknown, CardRecharging, CardOutOfRadius, CommandsLocked, SurrenderConditionsUnmet, BattleEnded, UnknownActor, MalformedCommand, RetreatUnavailable, CardOwnerRequired, CardInvalidOwner, CardInvalidTarget, CardDestinationBlocked, CardDestinationOutOfBounds, CommandConflict }
     public enum CardKind { Character, Stronghold }
     public sealed class CardDefinition
     {
         public string Id; public CardKind Kind; public int RechargeTicks; public int Effect; public string EffectKey;
     }
     public sealed class BattleRejection { public BattleRejectReason Reason; public string Detail; }
-    public sealed class BattleRules { public const int TicksPerSecond=30, MoveTicksPerCell=10, AttackCooldownTicks=30, MoraleBase=60, MoraleWarn=40, MoraleRecoverCap=80, MoraleRecoveryPerSecond=5, MoraleLossPerDeath=5, MoraleLossCommanderBelowHalf=10, SurrenderMoraleMax=20, SurrenderCommanderHpPercentMax=50, StrongholdCardSlots=2, CardEffectTicks=150, MaxTicks=9000, CommandRadius=3, MoraleLock=0, FormationRows=3, FormationColumns=3, CardRechargeMinTicks=300, CardRechargeMaxTicks=900; public const string LegacyRulesVersion="poc-rtfc-v1", RulesVersion="rtfc-owner-cards-v2"; }
+    public sealed class BattleRules { public const int TicksPerSecond=30, MoveTicksPerCell=10, AttackCooldownTicks=30, MoraleBase=10000, MoraleWarn=4000, MoraleRecoverCap=10000, MoraleRecoveryPerSecond=500, MoraleLossPerDeath=500, MoraleLossCommanderBelowHalf=1000, SurrenderMoraleMax=2000, SurrenderCommanderHpPercentMax=50, StrongholdCardSlots=2, CardEffectTicks=150, MaxTicks=9000, CommandRadius=3, MoraleLock=0, FormationRows=3, FormationColumns=3, CardRechargeMinTicks=300, CardRechargeMaxTicks=900; public const string LegacyRulesVersion="poc-rtfc-v1", RulesVersion="rtfc-owner-cards-v2"; }
     public static class BattleRoleRules { public static readonly string[] Roles={"근위","돌격","궁수"}; public static readonly int[] MaxHp={30,20,14}; public static readonly int[] Power={4,6,3}; public static readonly int[] RangeMax={1,1,3}; }
 
     public static class RealtimeBattleApi

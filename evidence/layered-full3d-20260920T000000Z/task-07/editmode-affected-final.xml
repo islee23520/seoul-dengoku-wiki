@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="12" result="Failed(Child)" total="12" passed="7" failed="5" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-20 07:47:25Z" end-time="2026-09-20 07:47:25Z" duration="0.0907624">
+  <test-suite type="TestSuite" id="1000" name="서울:전국" fullname="서울:전국" runstate="Runnable" testcasecount="248" result="Failed" site="Child" start-time="2026-09-20 07:47:25Z" end-time="2026-09-20 07:47:25Z" duration="0.090762" total="12" passed="7" failed="5" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1285" name="Janseon.Foundation.EditModeTests.dll" fullname="/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave2-task7/GAME/Library/ScriptAssemblies/Janseon.Foundation.EditModeTests.dll" runstate="Runnable" testcasecount="247" result="Failed" site="Child" start-time="2026-09-20 07:47:25Z" end-time="2026-09-20 07:47:25Z" duration="0.086351" total="12" passed="7" failed="5" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="90860" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1286" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="247" result="Failed" site="Child" start-time="2026-09-20 07:47:25Z" end-time="2026-09-20 07:47:25Z" duration="0.085006" total="12" passed="7" failed="5" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1289" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="210" result="Failed" site="Child" start-time="2026-09-20 07:47:25Z" end-time="2026-09-20 07:47:25Z" duration="0.083647" total="12" passed="7" failed="5" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="1290" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="210" result="Failed" site="Child" start-time="2026-09-20 07:47:25Z" end-time="2026-09-20 07:47:25Z" duration="0.082621" total="12" passed="7" failed="5" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestFixture" id="1086" name="BattleSessionDriverTests" fullname="Janseon.Foundation.Tests.BattleSessionDriverTests" classname="Janseon.Foundation.Tests.BattleSessionDriverTests" runstate="Runnable" testcasecount="10" result="Failed" site="Child" start-time="2026-09-20 07:47:25Z" end-time="2026-09-20 07:47:25Z" duration="0.072202" total="10" passed="5" failed="5" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="1087" name="Driver_IsVContainerTickableEntryPoint" fullname="Janseon.Foundation.Tests.BattleSessionDriverTests.Driver_IsVContainerTickableEntryPoint" methodname="Driver_IsVContainerTickableEntryPoint" classname="Janseon.Foundation.Tests.BattleSessionDriverTests" runstate="Runnable" seed="1127993420" result="Passed" start-time="2026-09-20 07:47:25Z" end-time="2026-09-20 07:47:25Z" duration="0.005284" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1091" name="DriverRun_MatchesDirectReplay_RegardlessOfFrameTiming" fullname="Janseon.Foundation.Tests.BattleSessionDriverTests.DriverRun_MatchesDirectReplay_RegardlessOfFrameTiming" methodname="DriverRun_MatchesDirectReplay_RegardlessOfFrameTiming" classname="Janseon.Foundation.Tests.BattleSessionDriverTests" runstate="Runnable" seed="1380545903" result="Passed" start-time="2026-09-20 07:47:25Z" end-time="2026-09-20 07:47:25Z" duration="0.026592" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1092" name="Enqueue_OwnsRootAndNestedCommandInput_BeforeDueSubmission" fullname="Janseon.Foundation.Tests.BattleSessionDriverTests.Enqueue_OwnsRootAndNestedCommandInput_BeforeDueSubmission" methodname="Enqueue_OwnsRootAndNestedCommandInput_BeforeDueSubmission" classname="Janseon.Foundation.Tests.BattleSessionDriverTests" runstate="Runnable" seed="1062554963" result="Passed" start-time="2026-09-20 07:47:25Z" end-time="2026-09-20 07:47:25Z" duration="0.002045" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1089" name="FrameBurst_ClampsToFourStepsAndBoundsCarry" fullname="Janseon.Foundation.Tests.BattleSessionDriverTests.FrameBurst_ClampsToFourStepsAndBoundsCarry" methodname="FrameBurst_ClampsToFourStepsAndBoundsCarry" classname="Janseon.Foundation.Tests.BattleSessionDriverTests" runstate="Runnable" seed="674111823" result="Failed" start-time="2026-09-20 07:47:25Z" end-time="2026-09-20 07:47:25Z" duration="0.002778" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  cadence resumes at one step per interval
+  Expected: 5
+  But was:  8
+]]></message>
+                  <stack-trace><![CDATA[at Janseon.Foundation.Tests.BattleSessionDriverTests.FrameBurst_ClampsToFourStepsAndBoundsCarry () [0x000aa] in /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave2-task7/GAME/Assets/Tests/EditMode/BattleSessionDriverTests.cs:118
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1090" name="Pause_IsHashNeutral_AndPreservesTimeline" fullname="Janseon.Foundation.Tests.BattleSessionDriverTests.Pause_IsHashNeutral_AndPreservesTimeline" methodname="Pause_IsHashNeutral_AndPreservesTimeline" classname="Janseon.Foundation.Tests.BattleSessionDriverTests" runstate="Runnable" seed="1202865773" result="Failed" start-time="2026-09-20 07:47:25Z" end-time="2026-09-20 07:47:25Z" duration="0.005099" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Expected: 10
+  But was:  40
+]]></message>
+                  <stack-trace><![CDATA[at Janseon.Foundation.Tests.BattleSessionDriverTests.Pause_IsHashNeutral_AndPreservesTimeline () [0x00053] in /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave2-task7/GAME/Assets/Tests/EditMode/BattleSessionDriverTests.cs:133
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1095" name="PausedOrderSubmission_AcceptsPendingIntentWithoutExecution_UntilTheNextStep" fullname="Janseon.Foundation.Tests.BattleSessionDriverTests.PausedOrderSubmission_AcceptsPendingIntentWithoutExecution_UntilTheNextStep" methodname="PausedOrderSubmission_AcceptsPendingIntentWithoutExecution_UntilTheNextStep" classname="Janseon.Foundation.Tests.BattleSessionDriverTests" runstate="Runnable" seed="1071349659" result="Failed" start-time="2026-09-20 07:47:25Z" end-time="2026-09-20 07:47:25Z" duration="0.001541" asserts="0">
+                <properties>
+                  <property name="Category" value="ApprovedUnityOrders" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Expected: 5
+  But was:  8
+]]></message>
+                  <stack-trace><![CDATA[at Janseon.Foundation.Tests.BattleSessionDriverTests.PausedOrderSubmission_AcceptsPendingIntentWithoutExecution_UntilTheNextStep () [0x00297] in /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave2-task7/GAME/Assets/Tests/EditMode/BattleSessionDriverTests.cs:404
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1094" name="StaleEnqueue_IsRejectedWithoutBlockingTheNextDueCommand" fullname="Janseon.Foundation.Tests.BattleSessionDriverTests.StaleEnqueue_IsRejectedWithoutBlockingTheNextDueCommand" methodname="StaleEnqueue_IsRejectedWithoutBlockingTheNextDueCommand" classname="Janseon.Foundation.Tests.BattleSessionDriverTests" runstate="Runnable" seed="516945148" result="Failed" start-time="2026-09-20 07:47:25Z" end-time="2026-09-20 07:47:25Z" duration="0.001007" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  the stale command must be rejected exactly once
+  Expected: 1
+  But was:  2
+]]></message>
+                  <stack-trace><![CDATA[at Janseon.Foundation.Tests.BattleSessionDriverTests.StaleEnqueue_IsRejectedWithoutBlockingTheNextDueCommand () [0x0017d] in /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave2-task7/GAME/Assets/Tests/EditMode/BattleSessionDriverTests.cs:346
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1096" name="TerminalStep_StopsWithinTheFrame_AndDetachesTheSession" fullname="Janseon.Foundation.Tests.BattleSessionDriverTests.TerminalStep_StopsWithinTheFrame_AndDetachesTheSession" methodname="TerminalStep_StopsWithinTheFrame_AndDetachesTheSession" classname="Janseon.Foundation.Tests.BattleSessionDriverTests" runstate="Runnable" seed="1860136456" result="Passed" start-time="2026-09-20 07:47:25Z" end-time="2026-09-20 07:47:25Z" duration="0.000409" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1093" name="TickBudget_StopsSteppingAtMaxTicks" fullname="Janseon.Foundation.Tests.BattleSessionDriverTests.TickBudget_StopsSteppingAtMaxTicks" methodname="TickBudget_StopsSteppingAtMaxTicks" classname="Janseon.Foundation.Tests.BattleSessionDriverTests" runstate="Runnable" seed="1414702117" result="Passed" start-time="2026-09-20 07:47:25Z" end-time="2026-09-20 07:47:25Z" duration="0.000464" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1088" name="TickCadence_AtThirtyHertz_AdvancesExactlyOneStepPerInterval" fullname="Janseon.Foundation.Tests.BattleSessionDriverTests.TickCadence_AtThirtyHertz_AdvancesExactlyOneStepPerInterval" methodname="TickCadence_AtThirtyHertz_AdvancesExactlyOneStepPerInterval" classname="Janseon.Foundation.Tests.BattleSessionDriverTests" runstate="Runnable" seed="637125772" result="Failed" start-time="2026-09-20 07:47:25Z" end-time="2026-09-20 07:47:25Z" duration="0.019510" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  one Step per exact tick interval
+  Expected: 30
+  But was:  120
+]]></message>
+                  <stack-trace><![CDATA[at Janseon.Foundation.Tests.BattleSessionDriverTests.TickCadence_AtThirtyHertz_AdvancesExactlyOneStepPerInterval () [0x00043] in /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave2-task7/GAME/Assets/Tests/EditMode/BattleSessionDriverTests.cs:92
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1147" name="PerSoldierBattleTests" fullname="Janseon.Foundation.Tests.PerSoldierBattleTests" classname="Janseon.Foundation.Tests.PerSoldierBattleTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-09-20 07:47:25Z" end-time="2026-09-20 07:47:25Z" duration="0.003241" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1149" name="RejectHardcodedThirtyHzOversizedSquadAndDuplicateSoldier" fullname="Janseon.Foundation.Tests.PerSoldierBattleTests.RejectHardcodedThirtyHzOversizedSquadAndDuplicateSoldier" methodname="RejectHardcodedThirtyHzOversizedSquadAndDuplicateSoldier" classname="Janseon.Foundation.Tests.PerSoldierBattleTests" runstate="Runnable" seed="1474724444" result="Passed" start-time="2026-09-20 07:47:25Z" end-time="2026-09-20 07:47:25Z" duration="0.000629" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1148" name="UnityFixedDeltaTimeAndRoster" fullname="Janseon.Foundation.Tests.PerSoldierBattleTests.UnityFixedDeltaTimeAndRoster" methodname="UnityFixedDeltaTimeAndRoster" classname="Janseon.Foundation.Tests.PerSoldierBattleTests" runstate="Runnable" seed="570542188" result="Passed" start-time="2026-09-20 07:47:25Z" end-time="2026-09-20 07:47:25Z" duration="0.001734" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: /Users/ilseoblee/Library/Application Support/Janseon Studio/서울_전국/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
