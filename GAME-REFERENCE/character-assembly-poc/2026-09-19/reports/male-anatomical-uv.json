@@ -1,0 +1,38 @@
+{
+  "seam_edges": 3150,
+  "regions": {
+    "foot-L-sole": 4699,
+    "leg-L-back": 2048,
+    "foot-L-top": 1021,
+    "leg-L-front": 1734,
+    "hand-L-palm": 3601,
+    "torso-front": 7690,
+    "torso-back": 4816,
+    "foot-R-top": 1021,
+    "foot-R-sole": 4699,
+    "leg-R-front": 1734,
+    "neck": 1970,
+    "ear-L": 2510,
+    "hand-L-back": 4640,
+    "head-front": 7268,
+    "head-back": 686,
+    "hand-R-palm": 3601,
+    "arm-L-front": 1083,
+    "arm-L-back": 1164,
+    "leg-R-back": 2048,
+    "hand-R-back": 4640,
+    "ear-R": 2510,
+    "arm-R-front": 1083,
+    "arm-R-back": 1164
+  },
+  "geometry_preserved": true,
+  "source_uv_preserved": true,
+  "degenerate_uv_triangles": [],
+  "minimum_uv_area": 3.042632812366719e-11,
+  "texel_density_quantiles": [
+    0.3068463496227245,
+    0.5308182270416606,
+    0.6792571972187424
+  ],
+  "status": "ANATOMICAL_ATLAS_REQUIRES_OVERLAP_AND_CHECKER_QA"
+}

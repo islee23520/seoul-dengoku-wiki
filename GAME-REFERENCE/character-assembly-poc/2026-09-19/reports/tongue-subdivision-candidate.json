@@ -1,0 +1,33 @@
+{
+  "source": "work/male-tongue-symmetric-candidate.blend",
+  "source_coordinate_hash": "6f6201752761653b326b8ea488eab53d76e9a2707e10e7f01355324075d2034a",
+  "operation": "Native Catmull-Clark level1; root vertices/edges fully creased",
+  "before": {
+    "vertices": 287,
+    "faces": 278,
+    "root_edges": 24
+  },
+  "after": {
+    "vertices": 1129,
+    "faces": 1104,
+    "all_quads": true,
+    "root_edges": 48,
+    "connected_components": 1,
+    "junctions": 0,
+    "winding_errors": 0,
+    "degenerate_faces": 0
+  },
+  "root_original_vertex_error": 0.0,
+  "root_polyline_error": 3.7990655851310376e-08,
+  "bidirectional_vertex_to_surface_distance": {
+    "before_to_after_max": 0.0032420812640339136,
+    "after_to_before_max": 0.002759906928986311,
+    "before_to_after_p95": 0.0023068539798259736,
+    "after_to_before_p95": 0.0014119072817265976
+  },
+  "surface_area_ratio": 0.9746424998071994,
+  "bounds_max_change": 0.0021209418773651123,
+  "unit_note": "Original normalized head coordinates; not final meters",
+  "normal_shadow_render_required": true,
+  "status": "CURVATURE_CANDIDATE_NOT_FINAL"
+}

@@ -1,0 +1,55 @@
+{
+  "charts": [
+    {
+      "chart": 7,
+      "triangles": 6784,
+      "boundary_loops": 1,
+      "virtual_cap_vertices": 0,
+      "positive_triangles": 6784,
+      "uv_area_preserved": true
+    },
+    {
+      "chart": 9,
+      "triangles": 9618,
+      "boundary_loops": 1,
+      "virtual_cap_vertices": 0,
+      "positive_triangles": 9618,
+      "uv_area_preserved": true
+    },
+    {
+      "chart": 10,
+      "triangles": 3740,
+      "boundary_loops": 1,
+      "virtual_cap_vertices": 0,
+      "positive_triangles": 3740,
+      "uv_area_preserved": true
+    },
+    {
+      "chart": 11,
+      "triangles": 9280,
+      "boundary_loops": 3,
+      "virtual_cap_vertices": 2,
+      "positive_triangles": 9280,
+      "uv_area_preserved": true
+    },
+    {
+      "chart": 19,
+      "triangles": 6784,
+      "boundary_loops": 1,
+      "virtual_cap_vertices": 0,
+      "positive_triangles": 6784,
+      "uv_area_preserved": true
+    },
+    {
+      "chart": 20,
+      "triangles": 9280,
+      "boundary_loops": 3,
+      "virtual_cap_vertices": 2,
+      "positive_triangles": 9280,
+      "uv_area_preserved": true
+    }
+  ],
+  "total_chart_count": 30,
+  "geometry_changed": false,
+  "status": "INJECTIVE_START_REQUIRES_STRETCH_AND_PACK_QA"
+}

@@ -1,0 +1,143 @@
+{
+  "objects": [
+    {
+      "object": "Male_UpperGum_WithTeeth_Review",
+      "role": "UpperGum_WithTeeth",
+      "vertices": 1775,
+      "faces": 1924,
+      "quads": 1148,
+      "uv_layers": [
+        "Attribute"
+      ],
+      "boundaries": 555,
+      "junctions": 31,
+      "component_indices": [
+        1,
+        5,
+        9,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18,
+        20,
+        22
+      ]
+    },
+    {
+      "object": "Male_LowerGum_WithTeeth_Review",
+      "role": "LowerGum_WithTeeth",
+      "vertices": 1827,
+      "faces": 1991,
+      "quads": 1201,
+      "uv_layers": [
+        "Attribute"
+      ],
+      "boundaries": 546,
+      "junctions": 33,
+      "component_indices": [
+        2,
+        4,
+        6,
+        7,
+        8,
+        10,
+        15,
+        19,
+        21,
+        23
+      ]
+    },
+    {
+      "object": "Male_Tongue_Review",
+      "role": "Tongue",
+      "vertices": 266,
+      "faces": 268,
+      "quads": 240,
+      "uv_layers": [
+        "Attribute"
+      ],
+      "boundaries": 24,
+      "junctions": 0,
+      "component_indices": [
+        3
+      ]
+    },
+    {
+      "object": "Female_UpperGum_WithTeeth_Review",
+      "role": "UpperGum_WithTeeth",
+      "vertices": 2574,
+      "faces": 2626,
+      "quads": 2284,
+      "uv_layers": [
+        "Attribute"
+      ],
+      "boundaries": 218,
+      "junctions": 0,
+      "component_indices": [
+        1,
+        5,
+        7,
+        10,
+        18,
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "object": "Female_LowerGum_WithTeeth_Review",
+      "role": "LowerGum_WithTeeth",
+      "vertices": 3501,
+      "faces": 3519,
+      "quads": 3110,
+      "uv_layers": [
+        "Attribute"
+      ],
+      "boundaries": 339,
+      "junctions": 0,
+      "component_indices": [
+        2,
+        4,
+        6,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        19,
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "object": "Female_Tongue_Review",
+      "role": "Tongue",
+      "vertices": 567,
+      "faces": 554,
+      "quads": 548,
+      "uv_layers": [
+        "Attribute"
+      ],
+      "boundaries": 30,
+      "junctions": 0,
+      "component_indices": [
+        3
+      ]
+    }
+  ],
+  "active_scene_unchanged": true,
+  "inner_mouth_status": "Still integrated with head exterior; not yet separated",
+  "dental_assignment": "Geometric proximity candidate requiring visual review",
+  "repair_applied": false
+}

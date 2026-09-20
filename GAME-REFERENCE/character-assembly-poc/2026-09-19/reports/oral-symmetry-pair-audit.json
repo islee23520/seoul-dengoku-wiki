@@ -1,0 +1,566 @@
+[
+  {
+    "object": "Male_UpperGum_WithTeeth_Review.001",
+    "tooth_pairs": [
+      {
+        "component": 1,
+        "center": [
+          0.07696326822042465,
+          -0.22149214148521423,
+          0.2979883849620819
+        ],
+        "paired_component": 3,
+        "center_distance": 0.012655694549503469,
+        "reflected_vertex_distance_median": 0.0024412870407104492,
+        "reflected_vertex_distance_max": 0.025633500888943672,
+        "source": {
+          "v": 207,
+          "f": 252,
+          "junction": 2,
+          "winding": 1,
+          "boundary": 33
+        },
+        "paired": {
+          "v": 102,
+          "f": 122,
+          "junction": 0,
+          "winding": 0,
+          "boundary": 12
+        }
+      },
+      {
+        "component": 2,
+        "center": [
+          0.06087857112288475,
+          -0.28432247042655945,
+          0.29971256852149963
+        ],
+        "paired_component": 8,
+        "center_distance": 0.008582951280000601,
+        "reflected_vertex_distance_median": 0.0019529834389686584,
+        "reflected_vertex_distance_max": 0.01802014373242855,
+        "source": {
+          "v": 106,
+          "f": 124,
+          "junction": 6,
+          "winding": 1,
+          "boundary": 42
+        },
+        "paired": {
+          "v": 53,
+          "f": 61,
+          "junction": 4,
+          "winding": 0,
+          "boundary": 24
+        }
+      },
+      {
+        "component": 3,
+        "center": [
+          -0.08187805861234665,
+          -0.20983169972896576,
+          0.297775000333786
+        ],
+        "paired_component": 1,
+        "center_distance": 0.012655694549503469,
+        "reflected_vertex_distance_median": 0.0014647245407104492,
+        "reflected_vertex_distance_max": 0.0031265022698789835,
+        "source": {
+          "v": 102,
+          "f": 122,
+          "junction": 0,
+          "winding": 0,
+          "boundary": 12
+        },
+        "paired": {
+          "v": 207,
+          "f": 252,
+          "junction": 2,
+          "winding": 1,
+          "boundary": 33
+        }
+      },
+      {
+        "component": 4,
+        "center": [
+          -0.09050364047288895,
+          -0.1849449872970581,
+          0.29889580607414246
+        ],
+        "paired_component": 5,
+        "center_distance": 0.001481841173562322,
+        "reflected_vertex_distance_median": 0.001464739441871643,
+        "reflected_vertex_distance_max": 0.002441343618556857,
+        "source": {
+          "v": 101,
+          "f": 121,
+          "junction": 4,
+          "winding": 3,
+          "boundary": 14
+        },
+        "paired": {
+          "v": 100,
+          "f": 123,
+          "junction": 0,
+          "winding": 0,
+          "boundary": 12
+        }
+      },
+      {
+        "component": 5,
+        "center": [
+          0.08902832865715027,
+          -0.1848193109035492,
+          0.2989550828933716
+        ],
+        "paired_component": 4,
+        "center_distance": 0.001481841173562322,
+        "reflected_vertex_distance_median": 0.001464739441871643,
+        "reflected_vertex_distance_max": 0.002441322896629572,
+        "source": {
+          "v": 100,
+          "f": 123,
+          "junction": 0,
+          "winding": 0,
+          "boundary": 12
+        },
+        "paired": {
+          "v": 101,
+          "f": 121,
+          "junction": 4,
+          "winding": 3,
+          "boundary": 14
+        }
+      },
+      {
+        "component": 6,
+        "center": [
+          -0.07120522111654282,
+          -0.2563440203666687,
+          0.2998848855495453
+        ],
+        "paired_component": 7,
+        "center_distance": 0.0015234068818195002,
+        "reflected_vertex_distance_median": 0.0014647170901298523,
+        "reflected_vertex_distance_max": 0.0034178346395492554,
+        "source": {
+          "v": 67,
+          "f": 86,
+          "junction": 2,
+          "winding": 3,
+          "boundary": 12
+        },
+        "paired": {
+          "v": 66,
+          "f": 82,
+          "junction": 3,
+          "winding": 5,
+          "boundary": 17
+        }
+      },
+      {
+        "component": 7,
+        "center": [
+          0.06968368589878082,
+          -0.2563772201538086,
+          0.2999526858329773
+        ],
+        "paired_component": 6,
+        "center_distance": 0.0015234068818195002,
+        "reflected_vertex_distance_median": 0.0014647170901298523,
+        "reflected_vertex_distance_max": 0.0015439607668668032,
+        "source": {
+          "v": 66,
+          "f": 82,
+          "junction": 3,
+          "winding": 5,
+          "boundary": 17
+        },
+        "paired": {
+          "v": 67,
+          "f": 86,
+          "junction": 2,
+          "winding": 3,
+          "boundary": 12
+        }
+      },
+      {
+        "component": 8,
+        "center": [
+          -0.05904051661491394,
+          -0.2926785349845886,
+          0.30039432644844055
+        ],
+        "paired_component": 2,
+        "center_distance": 0.008582951280000601,
+        "reflected_vertex_distance_median": 0.0014647096395492554,
+        "reflected_vertex_distance_max": 0.0020131701603531837,
+        "source": {
+          "v": 53,
+          "f": 61,
+          "junction": 4,
+          "winding": 0,
+          "boundary": 24
+        },
+        "paired": {
+          "v": 106,
+          "f": 124,
+          "junction": 6,
+          "winding": 1,
+          "boundary": 42
+        }
+      },
+      {
+        "component": 9,
+        "center": [
+          -0.06560928374528885,
+          -0.27631649374961853,
+          0.29895713925361633
+        ],
+        "paired_component": 2,
+        "center_distance": 0.00932984345763281,
+        "reflected_vertex_distance_median": 0.0014647096395492554,
+        "reflected_vertex_distance_max": 0.001464933156967163,
+        "source": {
+          "v": 53,
+          "f": 60,
+          "junction": 0,
+          "winding": 0,
+          "boundary": 15
+        },
+        "paired": {
+          "v": 106,
+          "f": 124,
+          "junction": 6,
+          "winding": 1,
+          "boundary": 42
+        }
+      },
+      {
+        "component": 10,
+        "center": [
+          -0.04242772236466408,
+          -0.30951765179634094,
+          0.29617610573768616
+        ],
+        "paired_component": 11,
+        "center_distance": 0.0015987332001847403,
+        "reflected_vertex_distance_median": 0.0014647021889686584,
+        "reflected_vertex_distance_max": 0.0019529834389686584,
+        "source": {
+          "v": 51,
+          "f": 55,
+          "junction": 0,
+          "winding": 0,
+          "boundary": 15
+        },
+        "paired": {
+          "v": 51,
+          "f": 52,
+          "junction": 0,
+          "winding": 0,
+          "boundary": 15
+        }
+      },
+      {
+        "component": 11,
+        "center": [
+          0.040829017758369446,
+          -0.3095272183418274,
+          0.29617610573768616
+        ],
+        "paired_component": 10,
+        "center_distance": 0.0015987332001847403,
+        "reflected_vertex_distance_median": 0.0014647021889686584,
+        "reflected_vertex_distance_max": 0.0020714683923870325,
+        "source": {
+          "v": 51,
+          "f": 52,
+          "junction": 0,
+          "winding": 0,
+          "boundary": 15
+        },
+        "paired": {
+          "v": 51,
+          "f": 55,
+          "junction": 0,
+          "winding": 0,
+          "boundary": 15
+        }
+      }
+    ],
+    "gum_halves": [
+      {
+        "side": -1,
+        "faces": 462,
+        "junction": 7,
+        "winding": 4,
+        "boundary": 183
+      },
+      {
+        "side": 1,
+        "faces": 324,
+        "junction": 3,
+        "winding": 1,
+        "boundary": 161
+      }
+    ],
+    "status": "AUDIT_ONLY_NO_DONOR_ASSUMED"
+  },
+  {
+    "object": "Male_LowerGum_WithTeeth_Review.001",
+    "tooth_pairs": [
+      {
+        "component": 1,
+        "center": [
+          -0.07655788958072662,
+          -0.22442235052585602,
+          0.27851566672325134
+        ],
+        "paired_component": 2,
+        "center_distance": 0.010109638303549254,
+        "reflected_vertex_distance_median": 0.0014647245407104492,
+        "reflected_vertex_distance_max": 0.028349772095680237,
+        "source": {
+          "v": 265,
+          "f": 326,
+          "junction": 5,
+          "winding": 2,
+          "boundary": 50
+        },
+        "paired": {
+          "v": 201,
+          "f": 248,
+          "junction": 2,
+          "winding": 1,
+          "boundary": 31
+        }
+      },
+      {
+        "component": 2,
+        "center": [
+          0.07752618938684464,
+          -0.2144368290901184,
+          0.27976328134536743
+        ],
+        "paired_component": 1,
+        "center_distance": 0.010109638303549254,
+        "reflected_vertex_distance_median": 0.0014647245407104492,
+        "reflected_vertex_distance_max": 0.004979540593922138,
+        "source": {
+          "v": 201,
+          "f": 248,
+          "junction": 2,
+          "winding": 1,
+          "boundary": 31
+        },
+        "paired": {
+          "v": 265,
+          "f": 326,
+          "junction": 5,
+          "winding": 2,
+          "boundary": 50
+        }
+      },
+      {
+        "component": 3,
+        "center": [
+          0.04676707834005356,
+          -0.2964680790901184,
+          0.26910609006881714
+        ],
+        "paired_component": 9,
+        "center_distance": 0.021353379928053175,
+        "reflected_vertex_distance_median": 0.018986623734235764,
+        "reflected_vertex_distance_max": 0.048337459564208984,
+        "source": {
+          "v": 147,
+          "f": 177,
+          "junction": 3,
+          "winding": 5,
+          "boundary": 32
+        },
+        "paired": {
+          "v": 48,
+          "f": 53,
+          "junction": 3,
+          "winding": 1,
+          "boundary": 12
+        }
+      },
+      {
+        "component": 4,
+        "center": [
+          -0.08586379140615463,
+          -0.1740400344133377,
+          0.2827425003051758
+        ],
+        "paired_component": 5,
+        "center_distance": 0.0012925745683297245,
+        "reflected_vertex_distance_median": 0.001464739441871643,
+        "reflected_vertex_distance_max": 0.0037505149375647306,
+        "source": {
+          "v": 106,
+          "f": 124,
+          "junction": 0,
+          "winding": 0,
+          "boundary": 15
+        },
+        "paired": {
+          "v": 106,
+          "f": 122,
+          "junction": 0,
+          "winding": 0,
+          "boundary": 11
+        }
+      },
+      {
+        "component": 5,
+        "center": [
+          0.08459243178367615,
+          -0.17427033185958862,
+          0.282779335975647
+        ],
+        "paired_component": 4,
+        "center_distance": 0.0012925745683297245,
+        "reflected_vertex_distance_median": 0.001464739441871643,
+        "reflected_vertex_distance_max": 0.004284585826098919,
+        "source": {
+          "v": 106,
+          "f": 122,
+          "junction": 0,
+          "winding": 0,
+          "boundary": 11
+        },
+        "paired": {
+          "v": 106,
+          "f": 124,
+          "junction": 0,
+          "winding": 0,
+          "boundary": 15
+        }
+      },
+      {
+        "component": 6,
+        "center": [
+          0.06769357621669769,
+          -0.25464606285095215,
+          0.2741551697254181
+        ],
+        "paired_component": 1,
+        "center_distance": 0.03179721327089794,
+        "reflected_vertex_distance_median": 0.0014647170901298523,
+        "reflected_vertex_distance_max": 0.0019529908895492554,
+        "source": {
+          "v": 66,
+          "f": 76,
+          "junction": 0,
+          "winding": 0,
+          "boundary": 17
+        },
+        "paired": {
+          "v": 265,
+          "f": 326,
+          "junction": 5,
+          "winding": 2,
+          "boundary": 50
+        }
+      },
+      {
+        "component": 7,
+        "center": [
+          -0.012671312317252159,
+          -0.31922581791877747,
+          0.2680472731590271
+        ],
+        "paired_component": 8,
+        "center_distance": 0.0017538194776118704,
+        "reflected_vertex_distance_median": 0.00195297971367836,
+        "reflected_vertex_distance_max": 0.0029295918066054583,
+        "source": {
+          "v": 51,
+          "f": 51,
+          "junction": 0,
+          "winding": 0,
+          "boundary": 13
+        },
+        "paired": {
+          "v": 51,
+          "f": 54,
+          "junction": 0,
+          "winding": 0,
+          "boundary": 16
+        }
+      },
+      {
+        "component": 8,
+        "center": [
+          0.010919375345110893,
+          -0.319168359041214,
+          0.267989844083786
+        ],
+        "paired_component": 7,
+        "center_distance": 0.0017538194776118704,
+        "reflected_vertex_distance_median": 0.001760403742082417,
+        "reflected_vertex_distance_max": 0.0029295918066054583,
+        "source": {
+          "v": 51,
+          "f": 54,
+          "junction": 0,
+          "winding": 0,
+          "boundary": 16
+        },
+        "paired": {
+          "v": 51,
+          "f": 51,
+          "junction": 0,
+          "winding": 0,
+          "boundary": 13
+        }
+      },
+      {
+        "component": 9,
+        "center": [
+          -0.033243730664253235,
+          -0.31292724609375,
+          0.2676290273666382
+        ],
+        "paired_component": 3,
+        "center_distance": 0.021353379928053175,
+        "reflected_vertex_distance_median": 0.0016521759098395705,
+        "reflected_vertex_distance_max": 0.0031264370772987604,
+        "source": {
+          "v": 48,
+          "f": 53,
+          "junction": 3,
+          "winding": 1,
+          "boundary": 12
+        },
+        "paired": {
+          "v": 147,
+          "f": 177,
+          "junction": 3,
+          "winding": 5,
+          "boundary": 32
+        }
+      }
+    ],
+    "gum_halves": [
+      {
+        "side": -1,
+        "faces": 445,
+        "junction": 9,
+        "winding": 5,
+        "boundary": 182
+      },
+      {
+        "side": 1,
+        "faces": 315,
+        "junction": 11,
+        "winding": 0,
+        "boundary": 167
+      }
+    ],
+    "status": "AUDIT_ONLY_NO_DONOR_ASSUMED"
+  }
+]
