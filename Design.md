@@ -320,8 +320,8 @@ EditMode·캡처 검사를 추가한다. 장식용 문구에는 기계 이름을
 | 전략 노선도 | `route-rail`, 기존 `station-*` | `strategic-route-panel`, `route-knowledge-{routeId}`, `route-forecast-{routeId}`, `route-selected-detail` |
 | 역간 여행 | `travel-path`, `travel-cost`, `travel-forecast`, `travel-state` | `travel-panel`, `travel-confirm-action` |
 | 조우 | `encounter-choices`, `choice-negotiate`, `choice-bypass`, `choice-combat` | `encounter-panel`, `encounter-context` |
-| 전투 전 진형 편집 | `formation-edit`, `formation-edit-unit-{unitId}`, `formation-edit-slot-{slotId}`, `formation-edit-confirm`, `formation-edit-cancel` | 핵심 조작은 기존 이름으로 충족 |
-| 전투 | `battle-dock`, `battle-hud`, `battle-play-pause`, 기존 카드·사기 이름 | POC 핵심 조작은 기존 이름으로 충족. 결정 11 목표 지휘 HUD는 이 이름을 개명하지 않고 별도 설계 템플릿에 둔다 |
+| 전투 배치 | `formation-edit`, `formation-edit-unit-{unitId}`, `formation-edit-slot-{slotId}`, `formation-edit-confirm`, `formation-edit-cancel`은 POC 역사 계약으로만 유지 | `battle-deployment-panel`, `deployment-unit-{unitId}`, `deployment-position-{positionId}`, `deployment-objective`, `deployment-terrain`, `deployment-retreat-route`, `deployment-confirm-action`, `deployment-cancel-action` |
+| 부대 지휘 | `battle-dock`, `battle-hud`, `battle-play-pause`, 기존 카드·사기 이름은 POC 역사 계약으로만 유지 | `unit-command-panel`, `command-unit-{unitId}`, `command-move-action`, `command-attack-action`, `command-facing-action`, `command-hold-action`, `order-preview-panel`, `order-confirm-action`, `order-cancel-action`, `battle-pause-action`, `withdrawal-review-action` |
 | 정산 | `settlement-panel`, `settlement-outcome`, `return-action` | `settlement-world-change-list`. POC는 복귀를 보여 주고, 목표 화면은 결과 확인 뒤 원정 계속을 연다 |
 
 | 보조 목업 | 신규 안정 요소 이름 |
@@ -339,6 +339,13 @@ EditMode·캡처 검사를 추가한다. 장식용 문구에는 기계 이름을
 `heir-validity`는 `unassigned|eligible-now|invalid-now`를 쓴다.
 후계 최종 판정은 사망 순간에만 일어난다. 사망 결과는 `heir|game-over`,
 작위별 결과는 `inherited|contested|vacant`로 별도 표시한다.
+
+`{positionId}`는 3D 전장의 결정론적 배치 위치 식별자다. 목표 전투는
+`formation-edit-facing-n/e/s/w`, `battle-card-*`, `card-general-recharge`를
+읽지 않는다. `battle-pause-action`은 소유자 직접 결정이 아니라 질문 시간 초과 뒤
+채택한 설계 기본안이며, 이 파티의 닫힌 전투만 멈춘다. 정지 중 확정한 명령은
+`order-preview-panel`에서 검토한 뒤 수락 순서에 기록되고 재개 뒤 다음 시뮬레이션
+단계에서 적용된다.
 
 위 기존 이름과 #101 신규 이름이 해당 화면 계약의 단일 출처다. 문구 리터럴은 테스트하지 않는다.
 
