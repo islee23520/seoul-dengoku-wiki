@@ -43,7 +43,8 @@ seoul-kenshi/
 | Target unit-command UI (docs) | `GDD/system-design/total-war-ui/`, `Design.md` §0 | Documentation templates only; not a runtime claim |
 | Architecture and rollout | `GDD/architecture/Unity-Architecture.md`, `GDD/architecture/Unity-System-Design.md`, `GDD/architecture/Unity-Architecture-Implementation-Plan.md` | All design canon lives under GDD |
 | Save and randomness contracts | `GDD/rules/Save-and-Determinism.md` | Versioning, event records, separated RNG streams |
-| World canon edits | `LORE/AGENTS.md` | Only `World-Narrative-Atlas.md` is hand-edited; other LORE root .md are generated projections |
+| World canon edits | `LORE/AGENTS.md` | Only `World-Narrative-Atlas.md` and `Glossary.md` are hand-edited; other LORE root .md are generated projections |
+| Terminology & Glossary | `LORE/Glossary.md`, `LORE/glossary.json` | Sole source of truth for public terminology and machine-readable dictionary |
 | Cast corpus | `LORE/characters/AGENTS.md`, `LORE/characters/Cast-Index.md` | 16 Cast-State ledgers; edits gated by `verify-cast.mjs` |
 | Naming/value datasets | `LORE/name-pools/AGENTS.md` | `values-cast.json` (schema v2) canon; `verify-hangnyeol` gate |
 | Region atlas content | `LORE/regions/AGENTS.md` | 427-dong data and rebuild contract |

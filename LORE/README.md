@@ -3,6 +3,8 @@
 이 문서는 《서울:전국》 세계관의 설정과 데이터 구조를 정리한 종합 목차입니다. 링크는 이 문서(LORE/README.md) 기준 상대 경로입니다.
 
 ## 1. 개요
+- [용어 사전 (Glossary)](Glossary.md)
+- [기계 판독용 용어 사전 (JSON)](glossary.json)
 - [기동권 이탈](overview/World-Unbinding.md)
 
 ## 2. 사람과 기체
