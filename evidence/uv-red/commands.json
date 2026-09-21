@@ -1,7 +1,0 @@
-{
-  "schema_version": 1,
-  "run_from": "/Users/danny/workspace/seoul-kenshi-character-round2",
-  "red_capture": "uv run --with pytest --with numpy==1.26.4 python GAME-REFERENCE/character-assembly-poc/round2/tests/uv_red/run_red.py",
-  "direct_pytest": "PYTHONDONTWRITEBYTECODE=1 uv run --with pytest --with numpy==1.26.4 pytest GAME-REFERENCE/character-assembly-poc/round2/tests/uv_red/test_round1_uv_false_approval_red.py -vv --tb=short",
-  "native_probe": "/Applications/Blender.app/Contents/MacOS/Blender --background --factory-startup --python-exit-code 1 --python GAME-REFERENCE/character-assembly-poc/round2/tests/uv_red/native_concave_probe.py -- /tmp/native-concave.json"
-}
