@@ -25,4 +25,3 @@ def test_changed_asset_is_rejected(tmp_path: Path) -> None:
     result = check_manifest(manifest)
     assert result["status"] == "FAIL"
     assert result["failures"] == [{"path": "asset.bin", "failure": "HASH_MISMATCH"}]
-

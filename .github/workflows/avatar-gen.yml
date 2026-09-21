@@ -83,4 +83,14 @@ jobs:
           PY
 
       - name: Check diff whitespace
-        run: git diff --check HEAD^
+        run: >-
+          git diff --check HEAD^ --
+          .gitattributes
+          .github/workflows/avatar-gen.yml
+          ART-ASSETS/avatar-gen
+          GAME/Packages/manifest.json
+          GAME/Packages/packages-lock.json
+          GDD/adr/ADR-001-repository-delivery-policy.md
+          GDD/adr/ADR-004-root-domain-structure.md
+          TOOL/avatar-gen
+          TOOL/tools/policy/check-repo-delivery-policy.mjs

@@ -103,4 +103,3 @@ def check_manifest(path: Path = MANIFEST) -> CheckResult:
         "roles": sorted(roles),
         "failures": failures,
     }
-
