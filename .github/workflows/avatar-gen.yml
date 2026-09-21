@@ -53,7 +53,7 @@ jobs:
       - name: Hydrate avatar assets only
         run: |
           git lfs pull --include='ART-ASSETS/avatar-gen/**,TOOL/avatar-gen/fixtures/intersections/**' --exclude='*'
-          git lfs checkout --include='ART-ASSETS/avatar-gen/**,TOOL/avatar-gen/fixtures/intersections/**'
+          git lfs checkout 'ART-ASSETS/avatar-gen/**' 'TOOL/avatar-gen/fixtures/intersections/**'
 
       - name: Install avatar viewer dependencies
         working-directory: TOOL/avatar-gen
