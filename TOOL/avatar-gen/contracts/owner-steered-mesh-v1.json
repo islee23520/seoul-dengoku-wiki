@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "contract_id": "owner-steered-mesh-v1",
+  "source_policy": {
+    "immutable": true,
+    "output_must_differ": true,
+    "record_sha256": true,
+    "fresh_blender_process": true
+  },
+  "hard_failures": [
+    "NON_FINITE_GEOMETRY",
+    "EMPTY_MESH",
+    "UNEXPECTED_BOUNDARY",
+    "WIRE_EDGE",
+    "DEGENERATE_TRIANGLE",
+    "DUPLICATE_FACE",
+    "NON_MANIFOLD_EDGE",
+    "WINDING_CONFLICT",
+    "SELF_INTERSECTION",
+    "PROTECTED_OPENING_CHANGED",
+    "REQUIRED_ROLE_MISSING",
+    "EXTERNAL_TEXTURE_MISSING"
+  ],
+  "score_policy": {
+    "hard_failures_are_non_compensable": true,
+    "compare_only_hard_gate_survivors": true,
+    "unproven_is_not_pass": true
+  },
+  "symmetry": {
+    "mode": "conditional",
+    "audit_both_sides": true,
+    "fixed_donor_side": null,
+    "minimum_match_coverage": 0.95,
+    "maximum_match_error_m": 0.001,
+    "require_explicit_asymmetry_permission": true,
+    "replace_only_after_donor_selection": true,
+    "weld_center_after_reflection": true,
+    "uv_must_be_non_overlapping_after_reflection": true
+  },
+  "protected_openings": [
+    {"semantic_id": "eye-left", "intentional": true},
+    {"semantic_id": "eye-right", "intentional": true},
+    {"semantic_id": "mouth", "intentional": true},
+    {"semantic_id": "neck", "intentional": true}
+  ],
+  "oral_roles": ["upper-gum-teeth", "lower-gum-teeth", "inner-mouth", "tongue"],
+  "eye_contract": {
+    "socket_openings_remain_open": true,
+    "shared_eye_component": true,
+    "material_roles": ["sclera", "iris", "pupil", "cornea"]
+  },
+  "join_contract": {
+    "high_density_face_low_density_body_is_expected": true,
+    "allow_local_head_density_reduction": true,
+    "allow_local_body_density_increase": true,
+    "transition_must_span_adjacent_rows": true,
+    "unequal_loop_triangle_fan_forbidden": true,
+    "double_length_collar_forbidden": true,
+    "normal_recalculation_cannot_hide_geometry_fold": true
+  },
+  "uv_texture_order": [
+    "finalize-geometry",
+    "unwrap-final-geometry",
+    "bake-or-reproject-source-color",
+    "touch-up-seams",
+    "verify-checker-and-texture"
+  ],
+  "visual_review": {
+    "required": true,
+    "modes": ["solid", "wireframe", "face-orientation", "textured"],
+    "views": ["front", "left", "right", "back", "quarter-left", "quarter-right"],
+    "numeric_checks_are_backstop_only": true
+  },
+  "delivery": {
+    "blend_required": true,
+    "fbx_external_textures_required": true,
+    "fresh_reopen_required": true,
+    "independent_reimport_required": true,
+    "holdout_required_for_generalization_claim": true,
+    "repeatability_fingerprint_required": true
+  }
+}

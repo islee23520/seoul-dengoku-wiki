@@ -33,6 +33,22 @@ uv run --python 3.14 --with pytest --with numpy python -m pytest -q TOOL/avatar-
 cd TOOL/avatar-gen && npm ci && npm run export:web && npm test && npm run serve
 ```
 
+## Blender mesh work
+
+사용자 steering에서 고정된 메쉬 방법론은 [BLENDER-MESH-WORKFLOW.md](BLENDER-MESH-WORKFLOW.md)와 `contracts/owner-steered-mesh-v1.json`에 있다.
+
+```bash
+python3 TOOL/avatar-gen/bin/avatar-gen.py route --request "목 접합, 노말, 좌우 감사, 구강과 눈, UV를 검증해"
+python3 TOOL/avatar-gen/bin/avatar-gen.py mesh-work \
+  --request "양쪽을 감사하고 입증된 donor만 대칭 수리 계획에 넣어" \
+  --source /absolute/source.blend \
+  --work-dir /absolute/work/avatar-mesh
+```
+
+`mesh-work`는 기본적으로 읽기 전용 감사와 수리 계획만 만든다. 새 `.blend`에 검증된 안전 수리를 적용하려면 `--apply --output ...`이 필요하다. donor reflection은 현재 계획 단계에서 차단되며 자동 적용되지 않는다. 원본 덮어쓰기는 항상 거부한다.
+
+수리가 실행된 hard gate를 통과해도 visual/UV/texture/reimport/holdout이 실행되지 않았으면 상태는 `REPAIRED_UNPROVEN`이다. 이를 전체 `PASS`로 승격하지 않는다.
+
 Native Blender extractors:
 
 ```bash

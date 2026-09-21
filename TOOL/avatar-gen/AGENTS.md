@@ -17,6 +17,8 @@ This directory is ordinary content in the main repository. It is not a Git submo
 - Per-element visibility must work in both Three.js (`Object3D.visible`) and Unity (`Renderer.enabled`).
 - Do not add upper-body portrait crop/generation; route that to portrait-gen.
 - Do not claim medical anatomical fidelity, official commercial-game shader code, rigging, or animation.
+- Mesh work follows `contracts/owner-steered-mesh-v1.json`: immutable source, bilateral audit before conditional symmetry, non-compensable hard failures, named protected openings, explicit destructive authorization, fresh-process verification.
+- Automated Blender repair is intentionally narrow. Neck retopology, oral repair, eye fitting, UV unwrap and texture bake remain plan/manual-review stages until independently proven automation exists.
 
 ## CHECKS
 
