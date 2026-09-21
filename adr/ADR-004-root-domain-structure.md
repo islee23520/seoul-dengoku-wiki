@@ -26,7 +26,7 @@
 | `store/` | 런 산출물 보존(루트 유지) |
 | `archive/` | 워크트리 청소 스냅샷(sparse `!/archive/`, 루트 유지) |
 
-루트 설정 파일 허용 목록(17종): `.gitattributes` `.gitignore` `.gitmodules` `.vercelignore` `AGENTS.md` `CLAUDE.md` `CONCEPT`류 기획 문서(`Concept.md` `Design.md` `Intent.md` `ToDo.md`) `CONTRIBUTING.md` `README.md` `SERVICES.md` `index.html` `package.json` `package-lock.json` `vercel.json`.
+루트 설정 파일 허용 목록: `.gitattributes` `.gitignore` `.gitmodules` `.vercelignore` `AGENTS.md` `CLAUDE.md` `CONCEPT`류 기획 문서(`Concept.md` `Design.md` `Intent.md` `ToDo.md`) `CONTRIBUTING.md` `README.md` `SERVICES.md` `index.html` `package.json` `package-lock.json` `vercel.json`. 2026-09-21 현재 main에 이미 추적된 진단 유틸리티 `test-regex.mjs`, `update_states.py`는 별도 정리 전까지 legacy root utility로 허용한다. 신규 루트 유틸리티의 추가 권한은 아니다.
 
 ## 규칙
 
