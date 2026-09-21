@@ -68,7 +68,7 @@ export default function OpeningTerritoryMap() {
   const [failed, setFailed] = useState(false)
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const shellRef = useRef<HTMLDivElement>(null)
-  const runtimeRef = useRef<{ reset: () => void; pan: (x: number, z: number) => void; zoom: (factor: number) => void; meshes: RegionMesh[]; lineMaterials: Map<string, THREE.LineBasicMaterial>; render: () => void } | null>(null)
+  const runtimeRef = useRef<{ reset: () => void; pan: (x: number, z: number) => void; orbit: (radians: number) => void; zoom: (factor: number) => void; meshes: RegionMesh[]; lineMaterials: Map<string, THREE.LineBasicMaterial>; render: () => void } | null>(null)
   useEffect(() => {
     const controller = new AbortController()
     void fetch(`${import.meta.env.BASE_URL}opening-territories.json`, { signal: controller.signal })
@@ -233,6 +233,14 @@ export default function OpeningTerritoryMap() {
       controls.update()
       render()
     }
+    const orbit = (radians: number) => {
+      const offset = camera.position.clone().sub(controls.target)
+      offset.applyAxisAngle(new THREE.Vector3(0, 1, 0), radians)
+      camera.position.copy(controls.target).add(offset)
+      camera.lookAt(controls.target)
+      controls.update()
+      render()
+    }
     const zoom = (factor: number) => {
       const offset = camera.position.clone().sub(controls.target)
       const distance = THREE.MathUtils.clamp(offset.length() * factor, controls.minDistance, controls.maxDistance)
@@ -240,7 +248,7 @@ export default function OpeningTerritoryMap() {
       controls.update()
       render()
     }
-    runtimeRef.current = { reset, pan, zoom, meshes, lineMaterials, render }
+    runtimeRef.current = { reset, pan, orbit, zoom, meshes, lineMaterials, render }
 
     let pointerStart: [number, number] | null = null
     const raycaster = new THREE.Raycaster()
@@ -335,6 +343,8 @@ export default function OpeningTerritoryMap() {
           <button type="button" onClick={() => runtimeRef.current?.pan(-6, 0)}>팬 서쪽</button>
           <button type="button" onClick={() => runtimeRef.current?.pan(6, 0)}>팬 동쪽</button>
           <button type="button" onClick={() => runtimeRef.current?.pan(0, 6)}>팬 남쪽</button>
+          <button type="button" onClick={() => runtimeRef.current?.orbit(-Math.PI / 12)}>오빗 왼쪽</button>
+          <button type="button" onClick={() => runtimeRef.current?.orbit(Math.PI / 12)}>오빗 오른쪽</button>
           <button type="button" onClick={() => runtimeRef.current?.zoom(0.78)}>줌인</button>
           <button type="button" onClick={() => runtimeRef.current?.zoom(1.28)}>줌아웃</button>
         </div>
