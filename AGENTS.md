@@ -31,7 +31,7 @@ seoul-kenshi/
 |-- WEB/                   # official React wiki + VitePress staging/gates; never canon
 |-- Backend/               # ASP.NET Core host-session coordinator (server/Coordinator) + tests
 |-- SOCIAL-MEDIA/          # operator X/Threads serial; NOT a hub page (see SOCIAL-MEDIA/AGENTS.md)
-|-- evidence/              # append-only test-evidence bundles (seoul-strategy-map-gdd/, pr-144/); new evidence = new dated dir
+|-- evidence/              # PR-scoped temporary review evidence; new writes only under pr-<number>/ and cleanup PR after merge
 |-- store/                 # frozen design-store capture run-4343cc0-160339 (pinned @ 4343cc0, 2026-09-13); root planning docs are the LIVE copies
 |-- Wikis/                 # legacy remnant (3 files); design-store seed remaps its old paths
 `-- .omo/                  # untracked local state (whole directory ignored, 2026-09-19 owner directive); AGENTS.md is local-only

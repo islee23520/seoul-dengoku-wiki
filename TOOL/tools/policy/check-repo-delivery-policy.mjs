@@ -118,6 +118,7 @@ const REQUIRED_ADR_FIELDS = [
   ['unrelated shooter repository excluded', /shooter/],
   ['derived Wiki assets policy', /[Ww]iki/],
   ['rollback and review policy', /rollback|revert/i],
+  ['PR evidence lifecycle', /evidence\/pr-<number>\/|ADR-007/],
   ['single current delivery rule declared', /only current delivery rule|single current delivery rule|sole current delivery rule/i],
 ];
 if (adr) {

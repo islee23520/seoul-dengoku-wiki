@@ -1,0 +1,29 @@
+name: Evidence Policy
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    paths:
+      - 'evidence/**'
+      - 'GDD/adr/ADR-007-pr-evidence-lifecycle.md'
+      - 'TOOL/tools/policy/check-pr-evidence.mjs'
+      - '.github/workflows/evidence-policy.yml'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Validate PR-scoped evidence
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          HEAD_REF: ${{ github.event.pull_request.head.ref }}
+        run: node TOOL/tools/policy/check-pr-evidence.mjs
