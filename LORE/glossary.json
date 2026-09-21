@@ -50,6 +50,16 @@
     "status": "fiction-original"
   },
   {
+    "term_id": "organization-bupyeong-council",
+    "display_name_ko": "부평역평의회",
+    "reader_definition_ko": "인천 방면 길을 다시 연 탐사대가 부평역에서 만난 독립 생존 공동체. 서울 십육국에 속하지 않는다.",
+    "category": "organization",
+    "owner_path": "LORE/factions",
+    "allowed_context": ["all"],
+    "aliases": [],
+    "status": "fiction-original"
+  },
+  {
     "term_id": "tech-physical-ai",
     "display_name_ko": "피지컬 에이아이",
     "reader_definition_ko": "물리적 신체를 가지고 전술 작전을 수행하는 기계 지능.",
@@ -82,7 +92,7 @@
   {
     "term_id": "person-lensbreath",
     "display_name_ko": "렌즈숨",
-    "reader_definition_ko": "항상 렌즈를 착용하고 기계와 동기화된 채 살아가는 자.",
+    "reader_definition_ko": "감응조준법을 익혀 렌즈를 붙인 채 숨과 조준을 맞추는 자.",
     "category": "person_category",
     "owner_path": "LORE/people-and-machines",
     "allowed_context": ["dialogue", "informal"],
@@ -92,21 +102,91 @@
   {
     "term_id": "martial-aiming",
     "display_name_ko": "감응조준법",
-    "reader_definition_ko": "피지컬 에이아이 렌즈의 센서 정보와 자신의 시각을 동기화하여 사격하는 사격술.",
+    "reader_definition_ko": "회수한 피지컬 에이아이 렌즈의 센서 정보와 자신의 시각을 맞추어 숨과 조준을 익히는 유파.",
     "category": "martial_school",
-    "owner_path": "GDD/rules",
+    "owner_path": "LORE/culture",
     "allowed_context": ["all"],
-    "aliases": ["감응조준"],
+    "aliases": ["렌즈숨"],
+    "status": "fiction-original"
+  },
+  {
+    "term_id": "martial-bamboo",
+    "display_name_ko": "죽검연환법",
+    "reader_definition_ko": "학교 강당의 마루에서 죽대로 간격과 연속 대응을 익히는 유파.",
+    "category": "martial_school",
+    "owner_path": "LORE/culture",
+    "allowed_context": ["all"],
+    "aliases": ["죽대손"],
+    "status": "fiction-original"
+  },
+  {
+    "term_id": "martial-mat",
+    "display_name_ko": "연각권법",
+    "reader_definition_ko": "학교 체육관과 환승역 홀의 매트에서 발과 주먹과 중심 이동을 익히는 유파.",
+    "category": "martial_school",
+    "owner_path": "LORE/culture",
+    "allowed_context": ["all"],
+    "aliases": ["매트손"],
+    "status": "fiction-original"
+  },
+  {
+    "term_id": "martial-bayonet",
+    "display_name_ko": "공탄총검법",
+    "reader_definition_ko": "탄이 없는 소총의 빈 총대와 꽂이날로 자세와 간격을 익히는 유파.",
+    "category": "martial_school",
+    "owner_path": "LORE/culture",
+    "allowed_context": ["all"],
+    "aliases": ["빈탄손"],
     "status": "fiction-original"
   },
   {
     "term_id": "martial-breathing",
     "display_name_ko": "수문호흡법",
-    "reader_definition_ko": "유독 가스가 섞인 하층 공기에서 효율적으로 산소를 확보하는 호흡 기술.",
+    "reader_definition_ko": "정수장과 갑문 당직에서 물과 숨을 함께 읽도록 이어진 유파.",
     "category": "martial_school",
-    "owner_path": "GDD/rules",
+    "owner_path": "LORE/culture",
     "allowed_context": ["all"],
-    "aliases": [],
+    "aliases": ["수문손"],
+    "status": "fiction-original"
+  },
+  {
+    "term_id": "martial-wheel",
+    "display_name_ko": "차륜강체공",
+    "reader_definition_ko": "차량기지 정비에서 몸과 망치를 함께 단련하도록 이어진 유파.",
+    "category": "martial_school",
+    "owner_path": "LORE/culture",
+    "allowed_context": ["all"],
+    "aliases": ["차륜망치"],
+    "status": "fiction-original"
+  },
+  {
+    "term_id": "martial-pulpit",
+    "display_name_ko": "강단호명법",
+    "reader_definition_ko": "예배당 명부와 호명 당직에서 발과 목소리를 함께 다루도록 이어진 유파.",
+    "category": "martial_school",
+    "owner_path": "LORE/culture",
+    "allowed_context": ["all"],
+    "aliases": ["강단발"],
+    "status": "fiction-original"
+  },
+  {
+    "term_id": "martial-guard",
+    "display_name_ko": "호위철벽진",
+    "reader_definition_ko": "경비와 병역 잔존의 방패·간격 훈련에서 이어진 유파.",
+    "category": "martial_school",
+    "owner_path": "LORE/culture",
+    "allowed_context": ["all"],
+    "aliases": ["호위방패"],
+    "status": "fiction-original"
+  },
+  {
+    "term_id": "martial-record",
+    "display_name_ko": "기록단절법",
+    "reader_definition_ko": "등기와 기록 당직의 필사·봉인·절단 작업에서 이어진 유파.",
+    "category": "martial_school",
+    "owner_path": "LORE/culture",
+    "allowed_context": ["all"],
+    "aliases": ["기록칼"],
     "status": "fiction-original"
   },
   {
@@ -122,12 +202,22 @@
   {
     "term_id": "event-collapse",
     "display_name_ko": "대붕괴",
-    "reader_definition_ko": "지상 문명이 파괴되고 생존자들이 서울 지하철망으로 피신하게 된 거대한 재난.",
+    "reader_definition_ko": "2026년에 시작된 살상과 기반시설·제조·통치 권한의 연쇄 붕괴.",
     "category": "event",
     "owner_path": "LORE/chronology",
     "allowed_context": ["all"],
     "aliases": ["붕괴"],
     "status": "generic-unregistered"
+  },
+  {
+    "term_id": "event-prologue",
+    "display_name_ko": "프롤로그",
+    "reader_definition_ko": "2026년 명령·정지 명령·피아 식별 갱신이 끊겨 기계가 마지막 임무를 반복하고, 기반시설과 제조·통치 권한이 연쇄 붕괴한 배경 이야기.",
+    "category": "event",
+    "owner_path": "LORE/overview",
+    "allowed_context": ["all"],
+    "aliases": [],
+    "status": "fiction-original"
   },
   {
     "term_id": "event-present",

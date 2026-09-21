@@ -1,5 +1,12 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+export const REQUIRED_PUBLIC_TERMS = ['수문호흡법', '차륜강체공', '강단호명법', '호위철벽진', '기록단절법', '죽검연환법', '연각권법', '공탄총검법', '감응조준법', '프롤로그', '부평역평의회'];
+
+export const REQUIRED_TERM_CONTRACTS = {
+  '감응조준법': { category: 'martial_school', owner_path: 'LORE/culture', aliases: ['렌즈숨'] },
+};
 
 export function verifyGlossary(jsonPath, repoRoot) {
   const data = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
@@ -41,6 +48,24 @@ export function verifyGlossary(jsonPath, repoRoot) {
     }
   }
 
+  for (const term of REQUIRED_PUBLIC_TERMS) {
+    if (!names.has(term)) errors.push(`Missing required public term: ${term}`);
+  }
+
+  for (const [term, expected] of Object.entries(REQUIRED_TERM_CONTRACTS)) {
+    const entry = data.find((e) => e.display_name_ko === term);
+    if (!entry) continue;
+    if (entry.category !== expected.category) {
+      errors.push(`Term ${term} category must be ${expected.category}, got ${entry.category}`);
+    }
+    if (entry.owner_path !== expected.owner_path) {
+      errors.push(`Term ${term} owner_path must be ${expected.owner_path}, got ${entry.owner_path}`);
+    }
+    if (JSON.stringify(entry.aliases) !== JSON.stringify(expected.aliases)) {
+      errors.push(`Term ${term} aliases must be exactly ${JSON.stringify(expected.aliases)}, got ${JSON.stringify(entry.aliases)}`);
+    }
+  }
+
   if (errors.length > 0) {
     throw new Error(`Glossary validation failed:\n${errors.join('\n')}`);
   }
@@ -49,7 +74,7 @@ export function verifyGlossary(jsonPath, repoRoot) {
 }
 
 // Allow running directly
-if (process.argv[1] && process.argv[1].endsWith('verify-glossary.mjs')) {
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const repoRoot = path.resolve(process.argv[1], '../../../..');
   const jsonPath = path.join(repoRoot, 'LORE/glossary.json');
   try {
