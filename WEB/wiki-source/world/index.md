@@ -36,7 +36,7 @@
 
 ## 문서 판
 
-- [개요](overview/World-Unbinding.html)
+- [프롤로그](overview/World-Unbinding.html)
 - [사람과 기체](people-and-machines/People-and-Machines.html)
 - [연표](chronology/Scenario-Timeline.html)
 - [지명](places/World-and-Subway-Layers.html)
