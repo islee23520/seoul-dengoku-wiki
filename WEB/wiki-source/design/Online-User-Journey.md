@@ -1,7 +1,7 @@
 # 온라인 유저 여정
 
 상태: 2026-09-14 전제 확정, 2026-09-17 사망·후계 정책 개정, 2026-09-17 개막 달력 락, 2026-09-18 온라인 모델을 호스트 세션 기반으로 개정(ADR-005). 구현 완료가 아니다.
-이 문서가 계정부터 사망·재입장까지 유저가 밟는 순서의 정본이다. 착생하는 세계는 [기동권 이탈](/world/World-Unbinding) 이후 100년, 서기 2126의 서울이다.
+이 문서가 계정부터 사망·재입장까지 유저가 밟는 순서의 정본이다. 플레이어가 착생하는 무대는 2026년에 붕괴가 시작된 뒤 100년이 지난 서기 2126의 서울이며, 그 시작은 [프롤로그](/world/World-Unbinding)가 다룬다.
 
 ## 전제
 
@@ -17,7 +17,7 @@
 | # | 단계 | 플레이어가 하는 일 | 이어지는 문서 | 상태 |
 |---|---|---|---|---|
 | 0 | 계정 | 플레이 중인 월드와 인물을 가리키는 계정으로 들어온다. 계정은 인물이 아니다 | 없음 | 벤더·로그인·결제 프로토콜은 **GAP** |
-| 1 | 착생 | 무작위 자리 또는 커스텀 배경으로 세계 인물 하나를 잡는다. 소속·혈연을 여기서 정한다 | [시작 프리셋](/world/Starting-Presets), [인물 카드 계약](/world/Cast-Profile-Contract), [인물 총람](/world/Cast-Index), [후계, 이름 로스터, 세계 원장](/world/Heirs-Names-and-World-Ledger) | 점유 계약 확정. 한 personId당 살아 있는 계정 하나 |
+| 1 | 착생 | 무작위 자리 또는 커스텀 배경으로 세계 인물 하나를 잡는다. 소속·혈연을 여기서 정한다 | [시작 프리셋](/world/Starting-Presets), [인물 카드 계약](../LORE/characters/Cast-Profile-Contract.md), [인물 총람](/world/Cast-Index), [후계, 이름 로스터, 세계 원장](/world/Heirs-Names-and-World-Ledger) | 점유 계약 확정. 한 personId당 살아 있는 계정 하나 |
 | 2 | 입장 | 이미 굴러가는 후세 서울에 그 인물로 나타난다 | [서울 십육국](/world/Sixteen-States), [연표](/world/Scenario-Timeline) | 세션이 열려 있는 동안 흐르는 캠페인 시간. 재접속은 호스트 세션의 현재 월드를 본다 |
 | 3 | 루프 | 거점 → 준비 → 원정 → 조우 → 전투 → 정산 | [원정](/rules/Campaign-Loop), [UI가 코드로 들어오는 길](/design/Ui-Implementation-Pipeline) | 같은 역의 타 유저 파티는 보인다. 전투는 파티 닫힌 세션. 정산 뒤 자동 귀환이 아니다 |
 | 4 | 원장 | 유저 명령과 NPC 결정이 같은 사건 원장에 쌓이고 월드 상태를 바꾼다 | [같은 선택이 같은 결과가 되나](/rules/Save-and-Determinism), [야망](/world/Ambitions-and-Relations), [전략에서 전투로](/rules/Strategy-Battle-Roundtrip) | 호스트의 권위 원장이 정본. 게스트는 투영 |
@@ -52,11 +52,11 @@
 - 후보: 점유되지 않은 이름 있는 인물, 또는 공석이거나 [후계, 이름 로스터, 세계 원장](/world/Heirs-Names-and-World-Ledger)이 만드는 하급 자리.
 - 이미 점유한 personId는 제비에서 뺀다.
 - 자리는 소속·직위·부모 또는 보호자·생업을 이미 가지고 있다. 플레이어는 그 이력을 받는다.
-- [랜덤 추가 로스터](/world/Random-Cast-Roster)는 NPC 후보 실험이다. 착생 명부가 아니다.
+- [랜덤 추가 로스터](../LORE/characters/Random-Cast-Roster.md)는 NPC 후보 실험이다. 착생 명부가 아니다.
 
 ### 커스텀
 
-플레이어가 배경을 직접 적는다. 칸은 [인물 카드 계약](/world/Cast-Profile-Contract)을 따른다.
+플레이어가 배경을 직접 적는다. 칸은 [인물 카드 계약](../LORE/characters/Cast-Profile-Contract.md)을 따른다.
 
 | 칸 | 착생에서 하는 일 |
 |---|---|

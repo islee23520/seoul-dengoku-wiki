@@ -29,7 +29,7 @@
 이름을 바꾸는 뜻이 아닙니다. `출격 인원 선택`은 거점 준비 맥락의 참가자 선택,
 `전투 전 진형 편집`은 조우 이후 교전 전의 위치·방향 편집으로 서로 다릅니다.
 신규 요소 이름의 목표 계약은 [Design §11](/design/Design)에 기록하고,
-현재 `UiElementNames` 구현 여부와 구별합니다. 12면 질문표는 [.omo/decisions/issue-101-ui-ux-decisions.md](../.omo/decisions/issue-101-ui-ux-decisions.md)가 정본입니다. 화면이 그리는 세계는 [기동권 이탈](/world/World-Unbinding) 이후 2126 서울입니다.
+현재 `UiElementNames` 구현 여부와 구별합니다. 12면 질문표는 [.omo/decisions/issue-101-ui-ux-decisions.md](../.omo/decisions/issue-101-ui-ux-decisions.md)가 정본입니다. 화면이 그리는 세계는 2026년 붕괴([프롤로그](/world/World-Unbinding)) 뒤의 2126 서울입니다.
 
 2026-09-19 목표의 부대 지휘 화면은 이 보드를 갈아엎지 않습니다. 문서 초안은 [부대 지휘 UI](system-design/total-war-ui/)에 둡니다. 정산 칸의 「복귀」는 POC 보드 이름이지, 원정의 유일한 결말이 아닙니다.
 
