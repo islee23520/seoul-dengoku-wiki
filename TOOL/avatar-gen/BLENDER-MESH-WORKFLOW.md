@@ -79,6 +79,7 @@ python3 TOOL/avatar-gen/bin/avatar-gen.py mesh-work \
 - `AUDITED`: 원본 감사와 계획 생성 완료, 수리 미적용
 - `READY`: 계획의 자동 적용 가능 action이 있고 차단 없음
 - `BLOCKED`: manual/specialized repair 또는 donor/landmark/threshold 근거 부족
-- `PASS`: 적용된 output이 새 Blender 프로세스의 동일 hard gate를 통과
+- `REPAIRED_UNPROVEN`: 적용한 수리는 새 Blender 프로세스의 실행된 hard gate를 통과했지만 self-intersection, UV/texture, visual, reimport 또는 holdout 증거가 남음
+- `PASS`: 계약의 필수 hard gate와 수동/외부 검증까지 모두 실행되어 미판정이 0인 경우에만 사용
 - `FAIL`: 적용 output에 hard failure가 남음
 - `UNPROVEN`: holdout, visual review, UV/texture 또는 export 증거가 부족

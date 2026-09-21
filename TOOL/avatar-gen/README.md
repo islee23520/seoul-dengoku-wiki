@@ -47,6 +47,8 @@ python3 TOOL/avatar-gen/bin/avatar-gen.py mesh-work \
 
 `mesh-work`는 기본적으로 읽기 전용 감사와 수리 계획만 만든다. 새 `.blend`에 수리를 적용하려면 `--apply --output ...`이 필요하고, donor reflection에는 추가로 `--allow-destructive`가 필요하다. 원본 덮어쓰기는 항상 거부한다.
 
+수리가 실행된 hard gate를 통과해도 visual/UV/texture/reimport/holdout이 실행되지 않았으면 상태는 `REPAIRED_UNPROVEN`이다. 이를 전체 `PASS`로 승격하지 않는다.
+
 Native Blender extractors:
 
 ```bash

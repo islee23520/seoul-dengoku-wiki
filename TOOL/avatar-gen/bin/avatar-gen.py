@@ -59,7 +59,7 @@ def main() -> int:
             allow_destructive=bool(namespace.get("allow_destructive")),
         )
         print(json.dumps(receipt, ensure_ascii=False, indent=2))
-        return 0 if receipt["status"] in {"AUDITED", "PASS"} else 1
+        return 0 if receipt["status"] in {"AUDITED", "PASS", "REPAIRED_UNPROVEN"} else 1
     if command == "list":
         payload = load_manifest(manifest) if manifest else load_manifest()
         print(json.dumps({"status": "PASS", "assets": payload["assets"]}, indent=2))

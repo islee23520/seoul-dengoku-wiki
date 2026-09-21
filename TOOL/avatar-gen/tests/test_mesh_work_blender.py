@@ -28,10 +28,11 @@ def test_winding_fixture_is_audited_planned_repaired_and_reverified(tmp_path: Pa
     ], check=False, capture_output=True, text=True)
     assert completed.returncode == 0, completed.stdout + completed.stderr
     receipt = json.loads((tmp_path / "work/mesh-work-receipt.json").read_text())
-    assert receipt["status"] == "PASS"
+    assert receipt["status"] == "REPAIRED_UNPROVEN"
     assert receipt["applied_actions"] == ["recalculate-normals"]
     assert source.read_bytes() != output.read_bytes()
     assert receipt["source"]["sha256"]
+    assert "VISUAL_REVIEW" in receipt["unproven"]
 
 
 @pytest.mark.skipif(not BLENDER.is_file(), reason="real Blender QA runs on the pinned macOS verification host")

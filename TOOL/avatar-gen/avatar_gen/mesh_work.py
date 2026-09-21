@@ -112,7 +112,12 @@ def execute_mesh_work(
             verification_path = work_dir / "verification-audit.json"
             verified = run_audit(output, job_path, verification_path, blender=blender)
             verified_failures = [str(value) for value in cast(list[object], verified.get("hard_failures", []))]
-            final_status = "PASS" if not verified_failures else "FAIL"
+            if verified_failures:
+                final_status = "FAIL"
+            elif plan["unproven"]:
+                final_status = "REPAIRED_UNPROVEN"
+            else:
+                final_status = "PASS"
     receipt: MeshWorkReceipt = {
         "schema_version": 1,
         "status": final_status,
