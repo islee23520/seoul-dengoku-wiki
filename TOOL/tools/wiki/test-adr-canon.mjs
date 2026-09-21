@@ -12,12 +12,15 @@ const canonRoot = resolve(repoRoot, 'GDD/canon')
 const adrDir = resolve(repoRoot, 'GDD/adr')
 const outputPath = resolve(adrDir, 'ADR-003-real-place-and-station-naming.md')
 const adr002OutputPath = resolve(adrDir, 'ADR-002-character-candidate-retrospective.md')
+const adr001OutputPath = resolve(adrDir, 'ADR-001-repository-delivery-policy.md')
 const files = {
   locale: 'locales/ko-KR/adr-003.json',
   locale002: 'locales/ko-KR/adr-002.json',
+  locale001: 'locales/ko-KR/adr-001.json',
 }
 const BASELINE_SHA = '56c479db4d89478e55f974e691c0819e6ac339648351f934544329af09ff0ad4'
 const BASELINE_SHA_002 = '131249858dc513cb99f8b47923d3cf1c085d75274752bd72f891158ba5247a6e'
+const BASELINE_SHA_001 = '7889c3adfc96b32137790d6d2f4242536425eb520028e83b06a6631fbcb156db'
 const sha256 = (text) => createHash('sha256').update(text, 'utf8').digest('hex')
 
 const canonModule = () => import('./adr-canon.mjs')
@@ -123,6 +126,7 @@ test('materialize check fails on hand-edited markdown and invalid canon leaves o
 test('CLI --check passes against the on-disk markdown', () => {
   const script = resolve(repoRoot, 'TOOL/tools/wiki/adr-render.mjs')
   const stdout = execFileSync('node', [script, '--check'], { encoding: 'utf8' })
+  assert.match(stdout, /adr-001: OK/)
   assert.match(stdout, /adr-002: OK/)
   assert.match(stdout, /adr-003: OK/)
 })
@@ -188,9 +192,10 @@ test('ADR-002 canon has 16 blocks with 8 heading / 2 paragraph / 6 list, no tabl
   assert.deepEqual(kindCounts, { heading: 8, paragraph: 2, list: 6 })
 })
 
-test('CLI --check adr-render passes for both ADR-002 and ADR-003 (collection rendering)', () => {
+test('CLI --check adr-render passes for ADR-001, ADR-002 and ADR-003 (collection rendering)', () => {
   const script = resolve(repoRoot, 'TOOL/tools/wiki/adr-render.mjs')
   const stdout = execFileSync('node', [script, '--check'], { encoding: 'utf8' })
+  assert.match(stdout, /adr-001: OK \(no drift\)/)
   assert.match(stdout, /adr-002: OK \(no drift\)/)
   assert.match(stdout, /adr-003: OK \(no drift\)/)
 })
@@ -210,8 +215,8 @@ test('loadAdrCanonCollection rejects duplicate collection ids and duplicate coll
 test('loadAdrCanonCollection returns documents keyed by id in deterministic collection order', async () => {
   const { loadAdrCanonCollection, ADR_COLLECTION } = await canonModule()
   const canons = await loadAdrCanonCollection(canonRoot)
-  assert.deepEqual([...canons.keys()], ['ADR-002', 'ADR-003'])
-  assert.deepEqual(ADR_COLLECTION.map((entry) => entry.id), ['ADR-002', 'ADR-003'])
+  assert.deepEqual([...canons.keys()], ['ADR-001', 'ADR-002', 'ADR-003'])
+  assert.deepEqual(ADR_COLLECTION.map((entry) => entry.id), ['ADR-001', 'ADR-002', 'ADR-003'])
   const canonsAgain = await loadAdrCanonCollection(canonRoot)
   assert.deepEqual([...canonsAgain.keys()], [...canons.keys()])
 })
@@ -224,21 +229,86 @@ test('materializeAdrCollection emits and drift-checks each document independentl
     const args = { canonRoot: root, adrDir: sandboxAdrDir }
 
     const first = await materializeAdrCollection({ ...args, check: false })
+    assert.equal(first.get('ADR-001').changed, true)
     assert.equal(first.get('ADR-002').changed, true)
     assert.equal(first.get('ADR-003').changed, true)
+    assert.equal(sha256(await readFile(join(sandboxAdrDir, 'ADR-001-repository-delivery-policy.md'), 'utf8')), BASELINE_SHA_001)
     assert.equal(sha256(await readFile(join(sandboxAdrDir, 'ADR-002-character-candidate-retrospective.md'), 'utf8')), BASELINE_SHA_002)
     assert.equal(sha256(await readFile(join(sandboxAdrDir, 'ADR-003-real-place-and-station-naming.md'), 'utf8')), BASELINE_SHA)
 
     const clean = await materializeAdrCollection({ ...args, check: true })
+    assert.equal(clean.get('ADR-001').changed, false)
     assert.equal(clean.get('ADR-002').changed, false)
     assert.equal(clean.get('ADR-003').changed, false)
 
-    // Hand-edit only the ADR-002 output; ADR-003 must remain clean and E_DRIFT must name only ADR-002's path.
+    // Hand-edit only the ADR-002 output; ADR-001 and ADR-003 must remain clean and E_DRIFT must name only ADR-002's path.
     const adr002Path = join(sandboxAdrDir, 'ADR-002-character-candidate-retrospective.md')
     await writeFile(adr002Path, (await readFile(adr002Path, 'utf8')).replace('캐릭터 후보', '캐릭터 시제'))
     const error = await materializeAdrCollection({ ...args, check: true }).catch((e) => e)
     assert.equal(error.code, 'E_DRIFT')
     assert.ok(error.message.includes('ADR-002-character-candidate-retrospective.md'), error.message)
+    assert.ok(!error.message.includes('ADR-001-repository-delivery-policy.md'), error.message)
+    assert.ok(!error.message.includes('ADR-003-real-place-and-station-naming.md'), error.message)
+  })
+})
+
+// --- ADR-001 (first collection member) ---
+
+test('ADR-001 source is characterized by SHA and line count (immutable historical ADR)', async () => {
+  const text = await readFile(adr001OutputPath, 'utf8')
+  assert.equal(sha256(text), BASELINE_SHA_001)
+  assert.equal(text.split('\n').length - 1, 48)
+})
+
+test('ADR-001 rendered markdown is byte-identical to the frozen source and deterministic', async () => {
+  const { loadAdrCanonCollection } = await canonModule()
+  const { renderAdrMarkdown } = await renderModule()
+  const canons = await loadAdrCanonCollection(canonRoot)
+  const canon = canons.get('ADR-001')
+  const first = renderAdrMarkdown(canon)
+  assert.equal(first, renderAdrMarkdown(canon))
+  assert.equal(sha256(first), BASELINE_SHA_001)
+  assert.equal(first, await readFile(adr001OutputPath, 'utf8'))
+})
+
+test('ADR-001 canon preserves the repository delivery decision list and approval receipt blockquote wording byte-for-byte', async () => {
+  const { loadAdrCanonCollection } = await canonModule()
+  const canons = await loadAdrCanonCollection(canonRoot)
+  const canon = canons.get('ADR-001')
+  const decisionList = canon.blocks.find((block) => block.id === 'adr-001.decision.list')
+  assert.equal(decisionList.ordered, true)
+  assert.equal(decisionList.items.length, 6)
+  assert.ok(decisionList.items[0][0].text.startsWith('**Current remote.** The canonical repository is'))
+  const quoteParagraph = canon.blocks.find((block) => block.id === 'adr-001.approval.quote')
+  assert.equal(
+    quoteParagraph.inlines[0].text,
+    '> **[OKAY]**\n>\n> **Summary**: All file references exist, every task has executable QA scenarios (exact commands and expected outcomes), dependencies and commit boundaries are internally consistent, and no contradictions block execution.',
+  )
+})
+
+test('ADR-001 canon has 16 blocks with 5 heading / 7 paragraph / 4 list, no table', async () => {
+  const { loadAdrCanonCollection } = await canonModule()
+  const canons = await loadAdrCanonCollection(canonRoot)
+  const canon = canons.get('ADR-001')
+  assert.equal(canon.blocks.length, 16)
+  const kindCounts = canon.blocks.map((block) => block.kind).reduce((acc, kind) => ({ ...acc, [kind]: (acc[kind] ?? 0) + 1 }), {})
+  assert.deepEqual(kindCounts, { heading: 5, paragraph: 7, list: 4 })
+})
+
+test('materializeAdrCollection: a hand-edit to the ADR-001 output does not affect ADR-002 or ADR-003, and E_DRIFT names only ADR-001', async () => {
+  const { materializeAdrCollection } = await renderModule()
+  await sandbox(async ({ dir, root }) => {
+    const sandboxAdrDir = join(dir, 'adr')
+    await mkdir(sandboxAdrDir, { recursive: true })
+    const args = { canonRoot: root, adrDir: sandboxAdrDir }
+    await materializeAdrCollection({ ...args, check: false })
+
+    const adr001Path = join(sandboxAdrDir, 'ADR-001-repository-delivery-policy.md')
+    await writeFile(adr001Path, (await readFile(adr001Path, 'utf8')).replace('Repository delivery policy', 'Repository shipping policy'))
+    const error = await materializeAdrCollection({ ...args, check: true }).catch((e) => e)
+    assert.equal(error.code, 'E_DRIFT')
+    assert.ok(error.message.includes('ADR-001-repository-delivery-policy.md'), error.message)
+    assert.ok(!error.message.includes('ADR-002-character-candidate-retrospective.md'), error.message)
     assert.ok(!error.message.includes('ADR-003-real-place-and-station-naming.md'), error.message)
   })
 })
