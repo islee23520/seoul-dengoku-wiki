@@ -16,6 +16,7 @@ import { fileURLToPath } from 'node:url';
 const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..', '..');
 const checkerPath = join('Tool', 'tools', 'policy', 'check-repo-delivery-policy.mjs');
 const adrPath = join('GDD', 'adr', 'ADR-001-repository-delivery-policy.md');
+const adr004Path = join('GDD', 'adr', 'ADR-004-root-domain-structure.md');
 const planPath = join('.omo', 'plans', 'seoul-grand-strategy-srpg.md');
 const preAmendmentFixture = join('Tool', 'tools', 'policy', 'fixtures', 'seoul-grand-strategy-srpg-pre-amendment.md');
 const amendedFixture = join('Tool', 'tools', 'policy', 'fixtures', 'seoul-grand-strategy-srpg-amended.md');
@@ -55,13 +56,22 @@ async function createFixture(options = {}) {
     if (adr === 'gutted-merge') {
       text = text
         .replace('2. **Branch and pull request only.** All delivery goes through a dedicated branch and a pull request. Direct push to main is forbidden.\n', '')
-        .replace('3. **No history rewrite.** No force-push, no amend of published commits, no rebase of shared history, no merge performed by agents. The owner merges pull requests.\n', '');
+        .replace('3. **No history rewrite.** No force-push, no amend of published commits, no rebase of shared history, no merge performed by agents. The owner merges pull requests.\n', '')
+        // The PR-evidence clause also mentions "merge"; neutralize it so the
+        // mutation actually drops every /merge/i match and the checker's
+        // no-merge-by-agents field fails for the right reason.
+        .replace('then a separate cleanup PR removes it after merge.', 'then a separate cleanup PR removes it after acceptance.');
     }
     if (adr === 'gutted-wiki') {
       text = text.replace(/[Ww]iki/g, 'external');
     }
     await writeFile(join(root, adrPath), text);
   }
+
+  // The checker fail-closes on the ADR-004 root-structure record, so every
+  // fixture carries the real tracked ADR-004 next to the ADR-001 scenario
+  // copy; only the file under test is mutated or omitted.
+  await cp(join(repositoryRoot, adr004Path), join(root, adr004Path));
 
   if (plan !== 'none') {
     await mkdir(dirname(join(root, planPath)), { recursive: true });
