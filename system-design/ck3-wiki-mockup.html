@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>대한민국정부 — 서울:전국 위키</title>
+  <style>
+    :root {
+      --sidebar: #1a1f2e;
+      --sidebar-2: #141824;
+      --sidebar-line: #2a3144;
+      --sidebar-text: #c5c9d4;
+      --sidebar-muted: #8b91a1;
+      --content: #f8f9fa;
+      --paper: #ffffff;
+      --ink: #1c2330;
+      --muted: #5c6573;
+      --accent: #c0392b;
+      --accent-dark: #922b21;
+      --th: #2c3e50;
+      --alt: #f2f3f5;
+      --line: #c8ced6;
+      --gold: #c9a227;
+      --canon: #1e7a46;
+      --draft: #b7791f;
+      --stub: #7a7f8a;
+      --rail: 220px;
+      --infobox: 280px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font: 14px/1.55 "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Segoe UI", Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--content);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; color: var(--accent-dark); }
+    a:visited { color: #8e2a22; }
+
+    /* ── Sidebar ── */
+    .sidebar {
+      position: fixed;
+      inset: 0 auto 0 0;
+      width: var(--rail);
+      background: linear-gradient(180deg, var(--sidebar) 0%, var(--sidebar-2) 100%);
+      color: var(--sidebar-text);
+      overflow-y: auto;
+      z-index: 40;
+      border-right: 1px solid #0d1018;
+      box-shadow: 2px 0 12px rgba(0, 0, 0, 0.28);
+    }
+    .brand {
+      display: block;
+      padding: 18px 16px 14px;
+      border-bottom: 1px solid var(--sidebar-line);
+      color: #f4f1ea;
+      text-decoration: none;
+    }
+    .brand:hover, .brand:visited { color: #f4f1ea; text-decoration: none; }
+    .brand .mark {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .crest {
+      width: 36px;
+      height: 36px;
+      border: 1px solid var(--gold);
+      background:
+        linear-gradient(135deg, #2b3348 0%, #1a1f2e 55%, #3a2a22 100%);
+      position: relative;
+      flex: 0 0 36px;
+    }
+    .crest::before, .crest::after {
+      content: "";
+      position: absolute;
+      inset: 7px;
+      border: 1px solid rgba(201, 162, 39, 0.7);
+    }
+    .crest::after { inset: 12px; border-color: var(--accent); }
+    .brand h1 {
+      margin: 0;
+      font-size: 16px;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+    }
+    .brand small {
+      display: block;
+      margin-top: 2px;
+      color: var(--sidebar-muted);
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    .side-search {
+      padding: 12px 14px 8px;
+    }
+    .side-search label {
+      display: block;
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--sidebar-muted);
+      margin-bottom: 6px;
+    }
+    .side-search input {
+      width: 100%;
+      background: #0f1320;
+      border: 1px solid #3a4258;
+      color: #e8e6df;
+      padding: 7px 8px;
+      font: inherit;
+      outline: none;
+    }
+    .side-search input:focus { border-color: var(--gold); }
+    .portlet { padding: 10px 0 4px; border-top: 1px solid var(--sidebar-line); }
+    .portlet h2 {
+      margin: 0 14px 6px;
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 700;
+    }
+    .portlet ul { list-style: none; margin: 0; padding: 0; }
+    .portlet li a, .portlet li span {
+      display: block;
+      padding: 5px 16px;
+      color: var(--sidebar-text);
+      text-decoration: none;
+      border-left: 3px solid transparent;
+    }
+    .portlet li a:hover {
+      background: rgba(255, 255, 255, 0.05);
+      color: #fff;
+      text-decoration: none;
+      border-left-color: var(--accent);
+    }
+    .portlet li a.current {
+      background: rgba(192, 57, 43, 0.16);
+      color: #fff;
+      border-left-color: var(--accent);
+    }
+    .portlet .sub { padding-left: 28px; font-size: 13px; color: #a8adba; }
+
+    /* ── Shell ── */
+    .shell { margin-left: var(--rail); min-height: 100vh; }
+    .topbar {
+      background: #e9ecef;
+      border-bottom: 1px solid var(--line);
+      padding: 0 28px;
+      display: flex;
+      align-items: stretch;
+      justify-content: space-between;
+      min-height: 38px;
+    }
+    .tabs { display: flex; gap: 0; }
+    .tabs a {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 16px 8px;
+      color: var(--muted);
+      border: 1px solid transparent;
+      border-bottom: none;
+      margin-bottom: -1px;
+      font-weight: 600;
+      font-size: 13px;
+    }
+    .tabs a:hover { text-decoration: none; color: var(--accent); }
+    .tabs a.on {
+      background: var(--paper);
+      color: var(--ink);
+      border-color: var(--line);
+      border-top: 3px solid var(--accent);
+      padding-top: 7px;
+    }
+    .top-tools {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .top-tools a { color: var(--muted); }
+    .page {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 18px 28px 64px;
+      background: var(--paper);
+      min-height: calc(100vh - 38px);
+      box-shadow: 0 0 0 1px var(--line);
+    }
+    .crumb {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .crumb span { color: #9aa3ae; margin: 0 6px; }
+    .title-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 8px;
+      margin-bottom: 14px;
+    }
+    h1.page-title {
+      margin: 0;
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+    .badges { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      padding: 2px 8px;
+      border: 1px solid;
+    }
+    .badge.canon { color: var(--canon); border-color: #8ec9a6; background: #eef8f1; }
+    .badge.draft { color: var(--draft); border-color: #e2c48a; background: #fbf4e6; }
+    .badge.stub { color: var(--stub); border-color: #c5c9d0; background: #f3f4f6; }
+
+    /* ── Infobox ── */
+    .infobox {
+      float: right;
+      width: var(--infobox);
+      margin: 0 0 18px 22px;
+      border: 1px solid #9aa4b2;
+      background: #f6f7f9;
+      font-size: 13px;
+      line-height: 1.4;
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+    }
+    .infobox .ib-head {
+      background: var(--th);
+      color: #f4f1ea;
+      text-align: center;
+      padding: 8px 10px 7px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+    .ib-sub {
+      text-align: center;
+      font-size: 11px;
+      color: #d7c27a;
+      font-weight: 500;
+      margin-top: 2px;
+    }
+    .ib-art {
+      margin: 0;
+      padding: 10px 10px 8px;
+      background: #ece7dc;
+      border-bottom: 1px solid #cfc6b4;
+      text-align: center;
+    }
+    .ib-seal {
+      width: 100%;
+      height: 92px;
+      background:
+        radial-gradient(circle at 50% 40%, #c0392b 0 10px, transparent 11px),
+        repeating-linear-gradient(90deg, #d9d1c2 0 8px, #d0c7b6 8px 16px);
+      border: 1px solid #b7ad98;
+      position: relative;
+    }
+    .ib-seal span {
+      position: absolute;
+      left: 0; right: 0; bottom: 8px;
+      font-size: 11px;
+      color: #5a5040;
+      letter-spacing: 0.12em;
+    }
+    .ib-cap {
+      margin-top: 6px;
+      font-size: 11px;
+      color: var(--muted);
+    }
+    .ib-section {
+      background: #3b4b5c;
+      color: #fff;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 8px;
+    }
+    .ib-row {
+      display: grid;
+      grid-template-columns: 78px 1fr;
+      border-top: 1px solid #d5dbe3;
+    }
+    .ib-row dt {
+      margin: 0;
+      padding: 5px 8px;
+      background: #e8edf2;
+      font-weight: 700;
+      color: #2c3e50;
+      border-right: 1px solid #d5dbe3;
+    }
+    .ib-row dd { margin: 0; padding: 5px 8px; background: #fff; }
+    .ib-foot {
+      border-top: 1px solid #d5dbe3;
+      padding: 6px 8px;
+      font-size: 11px;
+      color: var(--muted);
+      background: #eef1f4;
+    }
+
+    /* ── Article ── */
+    .lead { font-size: 15px; line-height: 1.7; }
+    .lead strong { font-weight: 700; }
+    h2.sec {
+      color: var(--accent);
+      font-size: 22px;
+      font-weight: 700;
+      margin: 28px 0 10px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid var(--line);
+      clear: none;
+    }
+    h3.sec {
+      color: #7a241c;
+      font-size: 17px;
+      margin: 18px 0 8px;
+    }
+    p { margin: 0 0 12px; }
+    .mw-toc {
+      display: table;
+      background: #f4f5f7;
+      border: 1px solid #c5ccd6;
+      padding: 10px 16px 12px;
+      margin: 8px 0 18px;
+      font-size: 13px;
+    }
+    .mw-toc .toc-title {
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 6px;
+    }
+    .mw-toc ol { margin: 0; padding-left: 18px; }
+    .mw-toc li { margin: 2px 0; }
+    .edit { float: right; font-size: 12px; font-weight: 400; color: var(--muted); }
+    .note {
+      border-left: 4px solid var(--accent);
+      background: #fbf3f2;
+      padding: 8px 12px;
+      margin: 0 0 14px;
+      font-size: 13px;
+    }
+    table.wikitable {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      margin: 8px 0 16px;
+      background: #fff;
+    }
+    table.wikitable th, table.wikitable td {
+      border: 1px solid #b7c0ca;
+      padding: 6px 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+    table.wikitable thead th {
+      background: var(--th);
+      color: #f4f1ea;
+      font-weight: 700;
+      cursor: pointer;
+      user-select: none;
+      white-space: nowrap;
+    }
+    table.wikitable thead th:hover { background: #243342; }
+    table.wikitable thead th .arrow { opacity: 0.45; font-size: 10px; margin-left: 4px; }
+    table.wikitable thead th.sort-asc .arrow,
+    table.wikitable thead th.sort-desc .arrow { opacity: 1; color: var(--gold); }
+    table.wikitable tbody tr:nth-child(even) { background: var(--alt); }
+    table.wikitable tbody tr:hover { background: #ece4dc; }
+    .tag-strong {
+      display: inline-block;
+      min-width: 2.4em;
+      text-align: center;
+      background: #c0392b;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 1px 6px;
+    }
+    .tag-weak {
+      display: inline-block;
+      min-width: 2.4em;
+      text-align: center;
+      background: #6b7380;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 1px 6px;
+    }
+    .catbox {
+      clear: both;
+      border: 1px solid var(--line);
+      background: #f4f5f7;
+      padding: 6px 10px;
+      font-size: 13px;
+      margin-top: 22px;
+    }
+
+    /* ── NavBox ── */
+    .navbox {
+      clear: both;
+      border: 1px solid #9aa4b2;
+      margin-top: 22px;
+      background: #f7f8fa;
+      font-size: 13px;
+    }
+    .navbox summary {
+      list-style: none;
+      cursor: pointer;
+      background: var(--th);
+      color: #f4f1ea;
+      padding: 7px 10px;
+      font-weight: 700;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbox summary::-webkit-details-marker { display: none; }
+    .navbox summary .hint { font-weight: 500; font-size: 11px; color: #d7c27a; }
+    .nav-grid { width: 100%; border-collapse: collapse; }
+    .nav-grid th {
+      width: 72px;
+      background: #e4e8ee;
+      border-top: 1px solid #c5ccd6;
+      border-right: 1px solid #c5ccd6;
+      padding: 6px 8px;
+      text-align: right;
+      color: #2c3e50;
+      font-size: 12px;
+    }
+    .nav-grid td {
+      border-top: 1px solid #c5ccd6;
+      padding: 6px 10px;
+    }
+    .nav-grid td a { margin-right: 10px; }
+    .footer {
+      clear: both;
+      margin-top: 28px;
+      padding-top: 10px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+    }
+    @media (max-width: 980px) {
+      .infobox { float: none; width: 100%; margin: 0 0 16px; }
+    }
+  </style>
+</head>
+<body>
+  <aside class="sidebar" aria-label="전역 사이드바">
+    <a class="brand" href="#index">
+      <div class="mark">
+        <div class="crest" aria-hidden="true"></div>
+        <div>
+          <h1>서울:전국</h1>
+          <small>Unofficial wiki</small>
+        </div>
+      </div>
+    </a>
+    <form class="side-search" action="#" method="get" onsubmit="return false;">
+      <label for="q">검색</label>
+      <input id="q" name="q" type="search" placeholder="문서·인물·역…" autocomplete="off" />
+    </form>
+    <nav class="portlet" aria-label="문서 안내">
+      <h2>문서 안내</h2>
+      <ul>
+        <li><a href="#lead">개요</a></li>
+        <li><a class="sub" href="#origin">연표</a></li>
+        <li><a class="sub" href="#states">지명 · 16국</a></li>
+        <li><a class="sub" href="#rulers">수장</a></li>
+      </ul>
+    </nav>
+    <nav class="portlet" aria-label="세계관">
+      <h2>세계관</h2>
+      <ul>
+        <li><a class="current" href="#states">16국</a></li>
+        <li><a class="sub" href="#rulers">인물</a></li>
+        <li><a class="sub" href="#faith">신앙</a></li>
+        <li><a class="sub" href="#navbox">권역</a></li>
+      </ul>
+    </nav>
+    <nav class="portlet" aria-label="도구">
+      <h2>도구</h2>
+      <ul>
+        <li><a href="#states">최근 바뀜</a></li>
+        <li><a href="#origin">임의 문서</a></li>
+      </ul>
+    </nav>
+    <nav class="portlet" aria-label="바깥 고리">
+      <h2>바깥 고리</h2>
+      <ul>
+        <li><a href="https://github.com/islee23520/seoul-kenshi">깃허브</a></li>
+        <li><a href="#discord">디스코드</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <div class="shell">
+    <header class="topbar">
+      <nav class="tabs" aria-label="문서 탭">
+        <a class="on" href="#lead">본문</a>
+        <a href="#talk">토론</a>
+      </nav>
+      <div class="top-tools">
+        <span>기획서</span> · <span>세계관</span> · <span>게임로직</span>
+      </div>
+    </header>
+
+    <main class="page" id="index">
+      <nav class="crumb" aria-label="경로">
+        <a href="#index">세계관</a><span>›</span>
+        <a href="#states">16국</a><span>›</span>
+        대한민국정부
+      </nav>
+
+      <div class="title-row">
+        <div>
+          <h1 class="page-title">대한민국정부</h1>
+          <div class="badges">
+            <span class="badge canon">정본</span>
+            <span class="badge draft">초안 아님</span>
+            <span class="badge stub">스텁 아님</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="infobox" aria-label="정보상자">
+        <div class="ib-head">
+          대한민국정부
+          <div class="ib-sub">명목 정통 · 광화문 도장</div>
+        </div>
+        <figure class="ib-art">
+          <div class="ib-seal"><span>정부서울청사 본관</span></div>
+          <figcaption class="ib-cap">종로구 세종대로 209 · 중심 광화문역</figcaption>
+        </figure>
+        <div class="ib-section">개막 현황</div>
+        <dl>
+          <div class="ib-row"><dt>국명</dt><dd>대한민국정부</dd></div>
+          <div class="ib-row"><dt>중심역</dt><dd>광화문역</dd></div>
+          <div class="ib-row"><dt>형태</dt><dd>봉건(운영가문) · 관료 문법</dd></div>
+          <div class="ib-row"><dt>강국</dt><dd>약소 — 물·수리·철도는 빌린다</dd></div>
+          <div class="ib-row"><dt>수장</dt><dd><a href="#rulers">윤서린</a> · 대통령</dd></div>
+          <div class="ib-row"><dt>헌장</dt><dd>기록인준례</dd></div>
+        </dl>
+        <div class="ib-foot">정본 <code>LORE/factions/Sixteen-States.md</code></div>
+      </aside>
+
+      <p class="lead" id="lead">
+        <strong>대한민국정부</strong>는 개막 서울 열여섯 나라 가운데 명목 정통성을 쥐는 약소국이다.
+        옛 이름 「인준기록정」의 서울역 축 명목 인준이 정부서울청사 본관으로 옮겨,
+        광화문역에서 「대한민국」이라는 상호를 국호로 읽는다.
+        도장과 징집 명부는 그 청사 당직의 손에서 끊기지 않았다.
+      </p>
+      <p>
+        2026년 청사 당직이 도장과 징집 명부를 쥐고 있었다. 호출망이 죽자 전산 민원은 멈췄고 필사 인준만 남았다.
+        손자의 손자가 광화문역에서 나라를 주장한다. 물과 식량과 전력과 대규모 수리는 이웃에서 빌린다.
+      </p>
+
+      <nav class="mw-toc" aria-label="목차" id="toc">
+        <div class="toc-title">목차</div>
+        <ol>
+          <li><a href="#origin">기원과 형태</a></li>
+          <li><a href="#states">16국 일람</a></li>
+          <li><a href="#layout">권역 배치</a></li>
+          <li><a href="#rulers">수장과 빚</a></li>
+          <li><a href="#faith">헌장</a></li>
+          <li><a href="#navbox">같이 보기</a></li>
+        </ol>
+      </nav>
+
+      <h2 class="sec" id="origin"><a class="edit" href="#edit">편집</a>기원과 형태</h2>
+      <p>
+        국호는 권역 지명이 아니다. 2026년에 사람이 지키던 기관의 이름이다.
+        기능국 일곱은 잠긴 정본 고유명으로 유지하고, 명목 인준 한 나라가 광화문 청사 상호로 옮긴 것이 이 나라다.
+        정부형태는 봉건 셋 가운데 하나이며 주사·당직이 세습된다. T1 직위는 대통령이다.
+      </p>
+      <div class="note">
+        개막의 강국 다섯은 급수계약정·규격동맹·선로후계정·호위보호정·현대자동차주식회사다.
+        대한민국정부는 그 명부에 없다. 강약은 캠페인 시작 시점의 상태이며 고정되지 않는다.
+      </div>
+
+      <h2 class="sec" id="states"><a class="edit" href="#edit">편집</a>16국 일람</h2>
+      <p>
+        열 여섯 나라는 정수와 차량기지와 본사와 총회와 환승과 산성 회랑을 묶어 생활권으로 읽힌다.
+        머리칸을 누르면 정렬된다. 강국은 물·수리·철도·바깥 연결 가운데 둘 이상을 제 손으로 돌리는 나라다.
+      </p>
+      <table class="wikitable" id="states-table">
+        <thead>
+          <tr>
+            <th data-col="0">국명 <span class="arrow">↕</span></th>
+            <th data-col="1">중심역 <span class="arrow">↕</span></th>
+            <th data-col="2">형태 <span class="arrow">↕</span></th>
+            <th data-col="3">강국 <span class="arrow">↕</span></th>
+            <th data-col="4">수장 <span class="arrow">↕</span></th>
+            <th data-col="5">직위 <span class="arrow">↕</span></th>
+            <th data-col="6">권역 <span class="arrow">↕</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>대한민국정부</td><td>광화문역</td><td>봉건</td><td><span class="tag-weak">약소</span></td><td>윤서린</td><td>대통령</td><td>중앙</td></tr>
+          <tr><td>전국경제인연합회</td><td>여의도역</td><td>상업</td><td><span class="tag-weak">약소</span></td><td>최지우</td><td>회장</td><td>서부</td></tr>
+          <tr><td>삼성그룹</td><td>강남역</td><td>상업</td><td><span class="tag-weak">약소</span></td><td>이홍원</td><td>회장</td><td>남부</td></tr>
+          <tr><td>현대자동차주식회사</td><td>양재역</td><td>상업</td><td><span class="tag-strong">강국</span></td><td>정호준</td><td>회장</td><td>남부</td></tr>
+          <tr><td>대한예수교장로회</td><td>삼성역</td><td>신정</td><td><span class="tag-weak">약소</span></td><td>오경재</td><td>당회장</td><td>남부</td></tr>
+          <tr><td>천주교 서울대교구</td><td>명동역</td><td>신정</td><td><span class="tag-weak">약소</span></td><td>남윤경</td><td>대주교</td><td>중앙</td></tr>
+          <tr><td>대한불교조계종</td><td>안국역</td><td>신정</td><td><span class="tag-weak">약소</span></td><td>백온</td><td>종정</td><td>중앙</td></tr>
+          <tr><td>원불교</td><td>흑석역</td><td>신정</td><td><span class="tag-weak">약소</span></td><td>오해린</td><td>교정원장</td><td>남부</td></tr>
+          <tr><td>전국민주노동조합총연맹</td><td>시청역</td><td>상업</td><td><span class="tag-weak">약소</span></td><td>정유라</td><td>위원장</td><td>중앙</td></tr>
+          <tr><td>급수계약정</td><td>영등포역</td><td>봉건</td><td><span class="tag-strong">강국</span></td><td>한재목</td><td>역장</td><td>서부</td></tr>
+          <tr><td>규격동맹</td><td>구로역</td><td>상업</td><td><span class="tag-strong">강국</span></td><td>강민서</td><td>위원장</td><td>서부</td></tr>
+          <tr><td>선로후계정</td><td>용산역</td><td>봉건</td><td><span class="tag-strong">강국</span></td><td>박태겸</td><td>역장</td><td>중앙</td></tr>
+          <tr><td>호위보호정</td><td>암사역</td><td>군정</td><td><span class="tag-strong">강국</span></td><td>배우진</td><td>사령관</td><td>동부</td></tr>
+          <tr><td>관문군정</td><td>구의역</td><td>군정</td><td><span class="tag-weak">약소</span></td><td>고서준</td><td>사령관</td><td>동부</td></tr>
+          <tr><td>중립호송시</td><td>신내역</td><td>상업</td><td><span class="tag-weak">약소</span></td><td>장세화</td><td>대표</td><td>동부</td></tr>
+          <tr><td>의약중립맹</td><td>제기동역</td><td>상업</td><td><span class="tag-weak">약소</span></td><td>류은비</td><td>이사장</td><td>동부</td></tr>
+        </tbody>
+      </table>
+
+      <h2 class="sec" id="layout"><a class="edit" href="#edit">편집</a>권역 배치</h2>
+      <p>
+        서부 수변은 영등포역의 급수계약정, 구로역의 규격동맹, 여의도역의 전국경제인연합회가 나눈다.
+        중앙은 광화문역의 대한민국정부와 시청역의 전국민주노동조합총연맹이 청사 앞을 나눠 맡고,
+        안국역의 대한불교조계종과 명동역의 천주교 서울대교구가 위패와 제대를 지키며 용산역의 선로후계정이 환적을 붙든다.
+      </p>
+      <p>
+        동쪽으로 가면 제기동역의 의약중립맹이 서울 약령을 열고 구의역의 관문군정이 능선을 닫으며
+        신내역의 중립호송시가 말단 기지를 돌리고 암사역의 호위보호정이 동부 정수를 지킨다.
+        남쪽 시계는 강남역의 삼성그룹과 삼성역의 대한예수교장로회와 양재역의 현대자동차주식회사와 흑석역의 원불교가 나눈다.
+      </p>
+
+      <h2 class="sec" id="rulers"><a class="edit" href="#edit">편집</a>수장과 빚</h2>
+      <p>
+        윤서린은 대한민국정부 대통령이다. 광화문 도장으로 계승과 조약을 인준 아래 두려 하나
+        물과 식량과 전력과 대규모 수리를 빌린다. 시청 앞의 정유라 위원장은 약소국 회의의 뼈대로 집결을 쓰고,
+        명동 제대의 남윤경 대주교는 혼인과 위령을 인준한다. 안국 위패는 백온 종정이 지킨다.
+      </p>
+      <p>
+        서부의 한재목 역장은 영등포 정수와 신정 기지를 급수 계약으로 묶고,
+        강민서 위원장은 구로·금천의 볼트 제사를 수리 규격으로 올리려 한다.
+        동부의 배우진 사령관은 암사 정수와 고덕 기지를 비상감독으로 묶으며,
+        남부의 정호준 회장은 양재 정비고의 차체와 현장 휴머노이드 잔존을 공동 원장에 올리려 한다.
+      </p>
+
+      <h2 class="sec" id="faith"><a class="edit" href="#edit">편집</a>헌장</h2>
+      <p>
+        대한민국정부의 문화 키는 <code>center-record</code>이고 주 계열은 원장계다.
+        공개 신앙은 기록인준례이며 제단이 된 잔해는 광화문 도장과 문서고다.
+        물이 나오면 계약이 진실로 읽히고, 안내방송이 나오면 그 말이 사실로 통한다.
+        사람 왕을 먼저 신으로 올리지는 않으며 통치자는 그 시설의 열쇠를 쥐고 정통성을 빌린다.
+      </p>
+
+      <details class="navbox" id="navbox" open>
+        <summary>
+          <span>서울 십육국</span>
+          <span class="hint">펼치기 / 접기 · 권역별 관련 문서</span>
+        </summary>
+        <table class="nav-grid">
+          <tr>
+            <th>서부</th>
+            <td>
+              <a href="#states">급수계약정</a>
+              <a href="#states">규격동맹</a>
+              <a href="#states">전국경제인연합회</a>
+            </td>
+          </tr>
+          <tr>
+            <th>중앙</th>
+            <td>
+              <a href="#lead">대한민국정부</a>
+              <a href="#states">전국민주노동조합총연맹</a>
+              <a href="#states">대한불교조계종</a>
+              <a href="#states">천주교 서울대교구</a>
+              <a href="#states">선로후계정</a>
+            </td>
+          </tr>
+          <tr>
+            <th>동부</th>
+            <td>
+              <a href="#states">의약중립맹</a>
+              <a href="#states">관문군정</a>
+              <a href="#states">중립호송시</a>
+              <a href="#states">호위보호정</a>
+            </td>
+          </tr>
+          <tr>
+            <th>남부</th>
+            <td>
+              <a href="#states">삼성그룹</a>
+              <a href="#states">대한예수교장로회</a>
+              <a href="#states">현대자동차주식회사</a>
+              <a href="#states">원불교</a>
+            </td>
+          </tr>
+        </table>
+      </details>
+
+      <div class="catbox">
+        분류: <a href="#states">16국</a> · <a href="#layout">중앙 권역</a> · <a href="#faith">원장계</a> · <a href="#rulers">약소국</a>
+      </div>
+
+      <section id="talk" hidden></section>
+      <p class="footer">
+        이 화면은 CK3 위키 급 레이아웃 목업이다. 정본은 <code>LORE/factions/Sixteen-States.md</code>.
+        외부 스타일시트·글꼴·스크립트는 없다.
+      </p>
+    </main>
+  </div>
+
+  <script>
+    (function () {
+      var table = document.getElementById("states-table");
+      if (!table) return;
+      var tbody = table.tBodies[0];
+      var heads = table.tHead.rows[0].cells;
+      var dir = {};
+      function cellKey(td, col) {
+        var t = (td.textContent || "").replace(/\s+/g, " ").trim();
+        if (col === 3) return t.indexOf("강국") >= 0 ? "0강국" : "1약소";
+        return t;
+      }
+      Array.prototype.forEach.call(heads, function (th, col) {
+        th.addEventListener("click", function () {
+          var rows = Array.prototype.slice.call(tbody.rows);
+          var asc = dir[col] !== 1;
+          dir = {};
+          dir[col] = asc ? 1 : -1;
+          Array.prototype.forEach.call(heads, function (h) {
+            h.classList.remove("sort-asc", "sort-desc");
+          });
+          th.classList.add(asc ? "sort-asc" : "sort-desc");
+          th.querySelector(".arrow").textContent = asc ? "▲" : "▼";
+          rows.sort(function (a, b) {
+            var ka = cellKey(a.cells[col], col);
+            var kb = cellKey(b.cells[col], col);
+            if (ka < kb) return asc ? -1 : 1;
+            if (ka > kb) return asc ? 1 : -1;
+            return 0;
+          });
+          rows.forEach(function (row) { tbody.appendChild(row); });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
