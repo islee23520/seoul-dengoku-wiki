@@ -18,7 +18,7 @@ const files = {
   details: 'relations/structure-kind-details.json',
   locale: 'locales/ko-KR/structures.json',
 }
-const BASELINE_SHA = '6a979e7858afefc42ab53c41c8b3e8faf745f711b3a22b4f953b2a2fc238e8d5'
+const BASELINE_SHA = 'e3675beca09e2af1a26a91fa36a3889a9b59b3028a846f28b87d333b6cba3bdb'
 const OFFICES_SCHEMA_SHA = 'e871620ada78a182f427a122a97419412a2bee6b03e54229932e37a5d4c77571'
 const sha256 = (text) => createHash('sha256').update(text, 'utf8').digest('hex')
 
@@ -49,7 +49,7 @@ const linkTargets = (text) => [...text.matchAll(/\]\((\.\.\/[^)]+)\)/g)].map((ma
 test('baseline: source is characterized by SHA, size, structure and links', async () => {
   const text = await readFile(outputPath, 'utf8')
   assert.equal(sha256(text), BASELINE_SHA)
-  assert.equal(Buffer.byteLength(text), 10159)
+  assert.equal(Buffer.byteLength(text), 10165)
   assert.equal(text.split('\n').length - 1, 53)
   const lines = text.split('\n')
   assert.equal(lines.filter((line) => /^# /.test(line)).length, 1)
@@ -63,6 +63,8 @@ test('baseline: source is characterized by SHA, size, structure and links', asyn
   assert.equal(new Set(targets).size, 15)
   assert.match(text, /\[프롤로그\]\(\.\.\/overview\/World-Unbinding\.md\)/)
   assert.doesNotMatch(text, /기동권 이탈/)
+  assert.doesNotMatch(text, /창세/)
+  assert.doesNotMatch(text, /개막/)
   for (const target of new Set(targets)) await access(resolve(dirname(outputPath), target))
   const mirror = await readFile(mirrorPath, 'utf8')
   assert.equal(mirror, text.replace(/\]\(\.\.\/[^/]+\/([^/)]+)\.md\)/g, '](/world/$1)'))

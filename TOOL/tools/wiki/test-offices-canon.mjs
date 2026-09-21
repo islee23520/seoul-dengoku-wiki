@@ -18,7 +18,7 @@ const files = {
   titles: 'relations/state-office-titles.json',
   locale: 'locales/ko-KR/offices-and-ranks.json',
 }
-const BASELINE_SHA = 'e03778b8c84dfd69c9972f16b79fd98695b6e869203c328088e6e450c62d86de'
+const BASELINE_SHA = '25d017db67cddef73aee7f2925bde2c094a515756ae469bd0244abba245145e6'
 const sha256 = (text) => createHash('sha256').update(text, 'utf8').digest('hex')
 
 const registry = await loadStateRegistry(atlasPath)
@@ -69,6 +69,12 @@ test('only the S08 heading differs from the baseline and descriptive 원불교 s
   assert.equal(disk.match(/^### 원불교$/gm), null)
   assert.match(disk, /흑석동 서울교당·소태산기념관의 교헌 직제다/)
   assert.equal(disk.includes('원불교'), false)
+})
+
+test('reader-facing 창세/개막 language is absent from the generated document', async () => {
+  const disk = await readFile(outputPath, 'utf8')
+  assert.doesNotMatch(disk, /창세/)
+  assert.doesNotMatch(disk, /개막/)
 })
 
 test('commonTier consumer regex reads the same state-to-titles map as the JSON relation', async () => {

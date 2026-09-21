@@ -26,7 +26,7 @@ test('scenario timeline exposes the century annals, era causality, and all yearl
   const timeline = await readFile(resolve('LORE/chronology/Scenario-Timeline.md'), 'utf8')
   assert.match(timeline, /## 백년실록 시대별 총람/)
   assert.match(timeline, /## 2026–2126 연도별 진입/)
-  assert.match(timeline, /## 개막일 동시 사건/)
+  assert.match(timeline, /## 2126년 첫날 동시 사건/)
   for (let year = 2026; year <= 2126; year += 1) {
     assert.match(timeline, new RegExp(`\\[${year}년\\]\\(Century-Annals\\.md#${year}년\\)`), String(year))
   }
