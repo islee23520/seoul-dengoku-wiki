@@ -53,7 +53,7 @@ export default function HomePage() {
       </div>
 
       <div className="mb-6 rounded-lg border border-toc-border bg-toc-bg p-4">
-        <h3 className="mb-2 text-sm font-bold text-accent-dark">최신 소식</h3>
+        <div className="mb-2 flex items-center justify-between gap-3"><h3 className="text-sm font-bold text-accent-dark">최신 소식</h3><Link to="/updates" className="text-sm text-accent hover:underline">전체 계약 이력</Link></div>
         {wikiUpdates.map((update) => (
           <div key={`${update.date}:${update.title}`} className="home-news-item py-1 text-sm text-gray-700">
             <span className="mr-2 text-accent">•</span><Link to={update.route}>{update.date} — {update.title}</Link>

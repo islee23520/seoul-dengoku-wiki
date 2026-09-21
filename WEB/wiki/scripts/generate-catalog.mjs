@@ -102,7 +102,7 @@ await writeFile(resolve(publicRoot, 'wiki-contract.json'), `${JSON.stringify({ d
 
 const updateHistory = JSON.parse(await readFile(resolve(projectRoot, 'data/update-history.json'), 'utf8'))
 const wikiUpdates = latestUpdates(updateHistory.updates)
-await writeFile(resolve(generatedRoot, 'wikiUpdates.ts'), `export type WikiUpdate = { readonly date: string; readonly title: string; readonly route: string }\n\nexport const wikiUpdates = ${JSON.stringify(wikiUpdates.map(({ date, title, route }) => ({ date, title, route })), null, 2)} as const satisfies readonly WikiUpdate[]\n`)
+await writeFile(resolve(generatedRoot, 'wikiUpdates.ts'), `export type WikiUpdate = { readonly date: string; readonly sequence: number; readonly title: string; readonly category: string; readonly status: string; readonly source: string; readonly route: string }\n\nexport const wikiUpdateHistory = ${JSON.stringify(updateHistory.updates, null, 2)} as const satisfies readonly WikiUpdate[]\n\nexport const wikiUpdates = ${JSON.stringify(wikiUpdates, null, 2)} as const satisfies readonly WikiUpdate[]\n`)
 
 const stateSource = await readFile(resolve(repoRoot, 'LORE/factions/Sixteen-States.md'), 'utf8')
 const officesSource = await readFile(resolve(repoRoot, 'LORE/offices/Offices-and-Ranks.md'), 'utf8')

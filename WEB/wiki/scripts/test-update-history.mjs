@@ -21,16 +21,33 @@ test('wiki update ledger contains the five confirmed changes and Home renders ge
   const ledger = JSON.parse(await readFile(new URL('../data/update-history.json', import.meta.url), 'utf8'))
   const home = await readFile(new URL('../src/pages/HomePage.tsx', import.meta.url), 'utf8')
   const generated = await readFile(new URL('../src/generated/wikiUpdates.ts', import.meta.url), 'utf8')
-  const titles = latestUpdates(ledger.updates).map((entry) => entry.title)
+  const titles = ledger.updates.map((entry) => entry.title)
 
-  assert.deepEqual(titles, [
+  assert.ok(ledger.updates.length > 5)
+  for (const title of [
     '16국 기원 재설계 확정 (대한민국정부·전경련·삼성·현대차·장로회·천주교·조계종·원불교·민주노총)',
     '재벌 수장 항렬 계승 개명 (이홍원·정호준·최지우)',
     '장로회 당회장 오경재 신규 캐스팅',
     'LORE 루트 폴더 재편 완료',
     '문체 계약 락 체결',
-  ])
+  ]) assert.ok(titles.includes(title), title)
+  assert.ok(ledger.updates.every((entry) => entry.date && entry.title && entry.category && entry.status && entry.source && entry.route))
+  assert.equal(ledger.updates.some((entry) => ['백엔드', '게임플레이', '아트 검증'].includes(entry.category)), false)
+  assert.equal(latestUpdates(ledger.updates).length, 5)
   assert.match(home, /wikiUpdates/)
   assert.doesNotMatch(home, /const news =/)
+  assert.match(generated, /export const wikiUpdateHistory/)
   assert.match(generated, /export const wikiUpdates/)
+})
+
+test('all contract history is routed through the official updates page', async () => {
+  const app = await readFile(new URL('../src/App.tsx', import.meta.url), 'utf8')
+  const page = await readFile(new URL('../src/pages/UpdatesPage.tsx', import.meta.url), 'utf8')
+  const home = await readFile(new URL('../src/pages/HomePage.tsx', import.meta.url), 'utf8')
+
+  assert.match(app, /path="\/updates"/)
+  assert.match(page, /wikiUpdateHistory/)
+  assert.match(page, /update\.source/)
+  assert.match(page, /update\.status/)
+  assert.match(home, /전체 계약 이력/)
 })

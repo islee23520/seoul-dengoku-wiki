@@ -2,34 +2,256 @@
   "schema": "seoul-wiki-update-history.v1",
   "updates": [
     {
-      "date": "2026-09-19",
+      "date": "2026-09-21",
+      "sequence": 12,
+      "category": "세계 지도",
+      "status": "검토 중",
+      "title": "국가 선택 시 수도 지역과 국가 상세를 함께 표시",
+      "source": "pull:211",
+      "route": "/world/World-and-Subway-Layers"
+    },
+    {
+      "date": "2026-09-21",
+      "sequence": 11,
+      "category": "세계 지도",
+      "status": "배포됨",
+      "title": "화면 밖 3D 지도 마커 숨김과 WebGL 실패 안내 정정",
+      "source": "commit:c7998481",
+      "route": "/world/World-and-Subway-Layers"
+    },
+    {
+      "date": "2026-09-21",
+      "sequence": 10,
+      "category": "세계 지도",
+      "status": "배포됨",
+      "title": "3D 서울 영토 지도에 명시적 오빗 좌우 조작 추가",
+      "source": "commit:11889b02",
+      "route": "/world/World-and-Subway-Layers"
+    },
+    {
+      "date": "2026-09-21",
+      "sequence": 9,
+      "category": "세계정보 표면",
+      "status": "배포됨",
+      "title": "중복 지역총람을 공식 세계 지도 한 표면으로 연결",
+      "source": "commit:6866fa37",
+      "route": "/world/World-and-Subway-Layers"
+    },
+    {
+      "date": "2026-09-21",
+      "sequence": 8,
+      "category": "문체 게이트",
+      "status": "배포됨",
+      "title": "공개 LORE 문서 Patina human 전수 게이트 추가",
+      "source": "commit:57f4a9d2",
+      "route": "/documents"
+    },
+    {
+      "date": "2026-09-21",
+      "sequence": 7,
+      "category": "설계 게시",
+      "status": "배포됨",
+      "title": "공식 위키와 인증형 GDD 설계 표면 분리",
+      "source": "commit:be74df3c",
+      "route": "/documents"
+    },
+    {
+      "date": "2026-09-21",
+      "sequence": 6,
+      "category": "정본 게시",
+      "status": "배포됨",
+      "title": "정본 병합 뒤 공식 위키 파생물과 계약 복구",
+      "source": "commit:77501e88",
+      "route": "/documents"
+    },
+    {
+      "date": "2026-09-21",
+      "sequence": 5,
+      "category": "정본 게시",
+      "status": "배포됨",
+      "title": "핵심 세계관 문서를 독자용 산문으로 갱신",
+      "source": "commit:ac67294d",
+      "route": "/documents"
+    },
+    {
+      "date": "2026-09-21",
+      "sequence": 4,
+      "category": "정본 게시",
+      "status": "배포됨",
+      "title": "서울 지리·역·지역 문서를 독자용 산문으로 갱신",
+      "source": "commit:0a15a627",
+      "route": "/world/World-and-Subway-Layers"
+    },
+    {
+      "date": "2026-09-21",
       "sequence": 3,
+      "category": "정본 게시",
+      "status": "배포됨",
+      "title": "등장인물 세계관 문서를 독자용 산문으로 갱신",
+      "source": "commit:a7b5b90c",
+      "route": "/people"
+    },
+    {
+      "date": "2026-09-20",
+      "sequence": 5,
+      "category": "게시 계약",
+      "status": "배포됨",
+      "title": "공개 위키 양성 계약만 남기고 내부 판정 문구 제거",
+      "source": "commit:3ba5bec0",
+      "route": "/documents"
+    },
+    {
+      "date": "2026-09-20",
+      "sequence": 4,
+      "category": "게시 계약",
+      "status": "배포됨",
+      "title": "공식 위키를 LORE 중심 공개 표면으로 제한",
+      "source": "commit:77fded02",
+      "route": "/documents"
+    },
+    {
+      "date": "2026-09-20",
+      "sequence": 3,
+      "category": "세계정보 표면",
+      "status": "배포됨",
+      "title": "별도 지역총람 중복 공개 표면 제거",
+      "source": "commit:db8c67eb",
+      "route": "/world/World-and-Subway-Layers"
+    },
+    {
+      "date": "2026-09-20",
+      "sequence": 2,
+      "category": "배포",
+      "status": "배포됨",
+      "title": "공식 위키 자동 배포 캐시 무효화 보장",
+      "source": "commit:cdbc3f93",
+      "route": "/updates"
+    },
+    {
+      "date": "2026-09-20",
+      "sequence": 1,
+      "category": "정본 게시",
+      "status": "배포됨",
+      "title": "최신 정본에서 공식 위키 전체 재생성",
+      "source": "commit:4ea643d4",
+      "route": "/documents"
+    },
+    {
+      "date": "2026-09-19",
+      "sequence": 10,
+      "category": "세계관",
+      "status": "확정",
       "title": "16국 기원 재설계 확정 (대한민국정부·전경련·삼성·현대차·장로회·천주교·조계종·원불교·민주노총)",
+      "source": "LORE/factions/Sixteen-States.md",
       "route": "/world/Sixteen-States"
     },
     {
       "date": "2026-09-19",
-      "sequence": 2,
+      "sequence": 9,
+      "category": "인물·가문",
+      "status": "확정",
       "title": "재벌 수장 항렬 계승 개명 (이홍원·정호준·최지우)",
+      "source": "LORE/factions/Chaebol-Houses-and-Century-Factions.md",
       "route": "/world/Chaebol-Houses-and-Century-Factions"
     },
     {
       "date": "2026-09-19",
-      "sequence": 1,
+      "sequence": 8,
+      "category": "인물",
+      "status": "확정",
       "title": "장로회 당회장 오경재 신규 캐스팅",
+      "source": "LORE/characters/Cast-State-04.md",
       "route": "/world/Sixteen-States"
+    },
+    {
+      "date": "2026-09-19",
+      "sequence": 7,
+      "category": "공식 위키 셸",
+      "status": "배포됨",
+      "title": "React 공식 위키 문서 셸 통합",
+      "source": "commit:956379a3",
+      "route": "/documents"
+    },
+    {
+      "date": "2026-09-19",
+      "sequence": 6,
+      "category": "배포",
+      "status": "활성",
+      "title": "공식 위키를 Windows Docker·Cloudflare Tunnel 자체 호스팅으로 전환",
+      "source": "SERVICES.md",
+      "route": "/updates"
+    },
+    {
+      "date": "2026-09-19",
+      "sequence": 5,
+      "category": "정본 게시",
+      "status": "배포됨",
+      "title": "CK3 공식 위키 수준 색인·정보상자·탐색 계약 통합",
+      "source": "commit:1731d5ee",
+      "route": "/world/"
+    },
+    {
+      "date": "2026-09-18",
+      "sequence": 3,
+      "category": "저장소 구조",
+      "status": "대체됨",
+      "title": "LORE 루트 폴더 재편 완료",
+      "source": "GDD/adr/ADR-004-root-domain-structure.md",
+      "route": "/updates"
     },
     {
       "date": "2026-09-18",
       "sequence": 2,
-      "title": "LORE 루트 폴더 재편 완료",
-      "route": "/documents"
+      "category": "문체",
+      "status": "활성",
+      "title": "문체 계약 락 체결",
+      "source": "TOOL/tools/wiki/AGENTS.md",
+      "route": "/updates"
     },
     {
       "date": "2026-09-18",
       "sequence": 1,
-      "title": "문체 계약 락 체결",
-      "route": "/documents"
+      "category": "정본 구조",
+      "status": "개정 수용됨",
+      "title": "공식 위키는 LORE를 게시하고 의미는 소유하지 않는 구조 확정",
+      "source": "GDD/adr/ADR-004-root-domain-structure.md",
+      "route": "/updates"
+    },
+    {
+      "date": "2026-09-17",
+      "sequence": 2,
+      "category": "게시 정책",
+      "status": "대체됨",
+      "title": "GitHub Wiki 게시 중단과 공식 문서 표면 분리",
+      "source": "commit:f2c0a877",
+      "route": "/updates"
+    },
+    {
+      "date": "2026-09-16",
+      "sequence": 1,
+      "category": "명명 정책",
+      "status": "승인",
+      "title": "창작 명칭을 실제 지역명·지하철역명에 연결",
+      "source": "GDD/adr/ADR-003-real-place-and-station-naming.md",
+      "route": "/world/World-and-Subway-Layers"
+    },
+    {
+      "date": "2026-09-14",
+      "sequence": 2,
+      "category": "세계 지도",
+      "status": "정본 반영",
+      "title": "서울 427동 지역 설정 총람 반영",
+      "source": "commit:d6af3c3d",
+      "route": "/world/World-and-Subway-Layers"
+    },
+    {
+      "date": "2026-09-14",
+      "sequence": 1,
+      "category": "게시 구조",
+      "status": "대체됨",
+      "title": "위키 정본과 문서 사이트 분리 구조 도입",
+      "source": "commit:d31452df",
+      "route": "/updates"
     }
   ]
 }
