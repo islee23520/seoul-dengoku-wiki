@@ -65,6 +65,11 @@ jobs:
       - name: Run portable geometry and UV gates
         run: uv run --python 3.14 --with pytest --with numpy python -m pytest -q TOOL/avatar-gen/tests TOOL/avatar-gen/tests-gates
 
+      - name: Smoke owner-steered mesh routing
+        run: >-
+          python3 TOOL/avatar-gen/bin/avatar-gen.py route
+          --request "목 경계 노말과 웰딩, 좌우 감사, 구강 눈 UV FBX 재임포트를 검증해"
+
       - name: Reject unhydrated avatar pointers
         run: |
           python3 - <<'PY'
