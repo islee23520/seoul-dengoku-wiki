@@ -9,25 +9,26 @@ from __future__ import annotations
 import hashlib
 import json
 import math
+import os
 from collections import defaultdict
 from pathlib import Path
 
 import bpy
 from mathutils import Vector
 
-ROOT = Path("/Users/danny/workspace/seoul-kenshi-character-round2")
-ROUND2 = ROOT / "GAME-REFERENCE/character-assembly-poc/round2"
-ARCHIVE = Path("/Users/danny/workspace/seoul-kenshi/GAME-REFERENCE/character-assembly-poc/2026-09-19")
-EXTERNAL = Path("/Users/danny/Documents/Character-Assembly-POC/2026-09-19")
-OUTPUT = ROUND2 / "evidence/geometry-red"
-BASELINE = ROUND2 / "fixtures/geometry-baseline.json"
+AVATAR_TOOL = Path(__file__).resolve().parents[2]
+REPOSITORY_ROOT = AVATAR_TOOL.parents[1]
+ARCHIVE = Path(os.environ["AVATAR_GEN_ROUND1_ARCHIVE"])
+EXTERNAL = Path(os.environ["AVATAR_GEN_EXTERNAL_ARCHIVE"])
+OUTPUT = Path(os.environ.get("AVATAR_GEN_GEOMETRY_EVIDENCE", AVATAR_TOOL / "evidence/geometry-red"))
+BASELINE = AVATAR_TOOL / "fixtures/geometry-baseline.json"
 
 SOURCES = {
     "unjoined": EXTERNAL / "work/proportion-study-unjoined.blend",
     "female_failed": ARCHIVE / "work/female-base-symmetric.blend",
     "integration": ARCHIVE / "deliverables/final-integration.blend",
     "male_guided": EXTERNAL / "work/male-base-symmetric-review.blend",
-    "source_lock": ROUND2 / "inputs/source-lock.json",
+    "source_lock": Path(os.environ["AVATAR_GEN_SOURCE_LOCK"]),
     "legacy_symmetry": ARCHIVE / "scripts/symmetrize_female.py",
 }
 

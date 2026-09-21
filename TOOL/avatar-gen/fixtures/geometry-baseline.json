@@ -8,37 +8,37 @@
   "extraction": "evaluated dependency graph mesh with native mesh.calc_loop_triangles()",
   "source_hashes": {
     "unjoined": {
-      "path": "/Users/danny/Documents/Character-Assembly-POC/2026-09-19/work/proportion-study-unjoined.blend",
+      "path": "external-archive://work/proportion-study-unjoined.blend",
       "before": "fc1ac9a620f460de3c11753c59f682d4b9678109a8ec069969e95a0be559512e",
       "after": "fc1ac9a620f460de3c11753c59f682d4b9678109a8ec069969e95a0be559512e",
       "unchanged": true
     },
     "female_failed": {
-      "path": "/Users/danny/workspace/seoul-kenshi/GAME-REFERENCE/character-assembly-poc/2026-09-19/work/female-base-symmetric.blend",
+      "path": "round1-archive://work/female-base-symmetric.blend",
       "before": "ad60f8affdef8fb67659214a25b887bc3795c86c207279d224b3ca5da3d0976d",
       "after": "ad60f8affdef8fb67659214a25b887bc3795c86c207279d224b3ca5da3d0976d",
       "unchanged": true
     },
     "integration": {
-      "path": "/Users/danny/workspace/seoul-kenshi/GAME-REFERENCE/character-assembly-poc/2026-09-19/deliverables/final-integration.blend",
+      "path": "round1-archive://deliverables/final-integration.blend",
       "before": "295cb6e7abfb6658f9943294a51583aee7b7ba4cadb3df504dc59582ac10622f",
       "after": "295cb6e7abfb6658f9943294a51583aee7b7ba4cadb3df504dc59582ac10622f",
       "unchanged": true
     },
     "male_guided": {
-      "path": "/Users/danny/Documents/Character-Assembly-POC/2026-09-19/work/male-base-symmetric-review.blend",
+      "path": "external-archive://work/male-base-symmetric-review.blend",
       "before": "c14a95356d45dee26d2de0022ab419e68623ce317f907dad1b3707d0d5f1ed56",
       "after": "c14a95356d45dee26d2de0022ab419e68623ce317f907dad1b3707d0d5f1ed56",
       "unchanged": true
     },
     "source_lock": {
-      "path": "/Users/danny/workspace/seoul-kenshi-character-round2/GAME-REFERENCE/character-assembly-poc/round2/inputs/source-lock.json",
+      "path": "external-source-lock://round2-inputs",
       "before": "da33181861c6884f0b379d1e8a82bc92e802a965dd4ede4f7eb14c7672f8fa66",
       "after": "da33181861c6884f0b379d1e8a82bc92e802a965dd4ede4f7eb14c7672f8fa66",
       "unchanged": true
     },
     "legacy_symmetry": {
-      "path": "/Users/danny/workspace/seoul-kenshi/GAME-REFERENCE/character-assembly-poc/2026-09-19/scripts/symmetrize_female.py",
+      "path": "round1-archive://scripts/symmetrize_female.py",
       "before": "b14bf52f8f3f83022c0794bfca8566f613f2703a1dcae5e610b1f6d0c47168f3",
       "after": "b14bf52f8f3f83022c0794bfca8566f613f2703a1dcae5e610b1f6d0c47168f3",
       "unchanged": true

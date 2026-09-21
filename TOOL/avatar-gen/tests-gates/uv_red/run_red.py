@@ -16,16 +16,11 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Final
 
-WORKTREE: Final = Path("/Users/danny/workspace/seoul-kenshi-character-round2")
-TEST_ROOT: Final = (
-    WORKTREE
-    / "GAME-REFERENCE/character-assembly-poc/round2/tests/uv_red"
-)
+TEST_ROOT: Final = Path(__file__).resolve().parent
+WORKTREE: Final = TEST_ROOT.parents[3]
 EVIDENCE_ROOT: Final = WORKTREE / "evidence/uv-red"
 GREEN_ROOT: Final = TEST_ROOT.parents[1] / "evidence/uv-green"
-ARCHIVE: Final = Path(
-    "/Users/danny/workspace/seoul-kenshi/GAME-REFERENCE/character-assembly-poc/2026-09-19"
-)
+ARCHIVE: Final = Path(os.environ["AVATAR_GEN_ROUND1_ARCHIVE"])
 SOURCE_PATHS: Final = (
     ARCHIVE / "scripts/uv_overlap_audit.py",
     ARCHIVE / "scripts/unwrap_female_uv2.py",

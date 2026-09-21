@@ -1,6 +1,6 @@
 {
   "status": "PASS_HOLDOUT_GATE_REPRODUCTION",
-  "source": "/Users/danny/Downloads/human figure 3d model (1).glb",
+  "source": "external-source://human-figure-3d-model-1.glb",
   "source_sha256": "5c6cac16c138ee55e0134a5087caa3ad42e8eb6bd918a3fe154ecf1354222b0f",
   "outcome": "REJECT_HOLDOUT_IMPORT",
   "reason": "the independent source is materially defective and the pipeline correctly refused promotion",
