@@ -3,7 +3,7 @@
 이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.
 
 - 원본 앵커: `LORE/World-Narrative-Atlas.md`
-- 원본 해시: `d7c536377aa4f5805ef6a76faf31e0d442e7c0836439e1642876f4aab10d45a9`
+- 원본 해시: `3633363017b83226459963999496d7bc8dad625c6cc65a8af294064509adcb5d`
 
 ## 인물 K131 · 나효원
 
