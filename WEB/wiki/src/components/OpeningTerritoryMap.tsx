@@ -208,7 +208,12 @@ export default function OpeningTerritoryMap() {
       renderer.render(scene, camera)
       const projectedStates = data.states.map((state) => {
         const vector = new THREE.Vector3((state.capitalX - data.width / 2) * scale, 2.75, (state.capitalY - data.height / 2) * scale).project(camera)
-        return { id: state.id, left: (vector.x * 0.5 + 0.5) * 100, top: (-vector.y * 0.5 + 0.5) * 100, visible: vector.z > -1 && vector.z < 1 }
+        return {
+          id: state.id,
+          left: (vector.x * 0.5 + 0.5) * 100,
+          top: (-vector.y * 0.5 + 0.5) * 100,
+          visible: vector.x >= -1 && vector.x <= 1 && vector.y >= -1 && vector.y <= 1 && vector.z > -1 && vector.z < 1,
+        }
       })
       setMarkerPositions(resolveMarkerCollisions(projectedStates, Math.max(shell.clientWidth, 1), Math.max(shell.clientHeight, 1)))
       const nextStations: Record<string, MarkerPosition> = {}
@@ -216,7 +221,13 @@ export default function OpeningTerritoryMap() {
         const vector = new THREE.Vector3((station.x - data.width / 2) * scale, 1.82, (station.y - data.height / 2) * scale).project(camera)
         const left = (vector.x * 0.5 + 0.5) * 100
         const top = (-vector.y * 0.5 + 0.5) * 100
-        nextStations[station.id] = { left, top, anchorLeft: left, anchorTop: top, visible: vector.z > -1 && vector.z < 1 }
+        nextStations[station.id] = {
+          left,
+          top,
+          anchorLeft: left,
+          anchorTop: top,
+          visible: vector.x >= -1 && vector.x <= 1 && vector.y >= -1 && vector.y <= 1 && vector.z > -1 && vector.z < 1,
+        }
       }
       setStationMarkerPositions(nextStations)
     }
@@ -327,7 +338,7 @@ export default function OpeningTerritoryMap() {
     runtimeRef.current.render()
   }, [selectedLine])
 
-  if (failed) return <p className="wiki-domain-label">3D 개막 영토 지도를 불러오지 못했습니다. 국가 필터와 정본 링크는 아래 범례에서 확인할 수 있습니다.</p>
+  if (failed) return <p className="wiki-domain-label">3D 서울 영토 지도를 불러오지 못했습니다. 페이지를 새로고침한 뒤에도 계속되면 다른 브라우저에서 다시 시도해 주세요.</p>
   if (!data) return <div className="wiki-loading">서울 427개 동 3D 개막 영토 지도를 불러오고 있습니다.</div>
 
   return (
