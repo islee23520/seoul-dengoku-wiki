@@ -118,3 +118,10 @@ test('territory map is a real Three.js scene with state labels and flags', async
   assert.doesNotMatch(flags, /<svg|<path|<text/)
   assert.match(map, /state-flags\/concept-sheet\.webp/)
 })
+
+test('territory generator reads all sixteen capitals from current state canon', async () => {
+  const generator = await readFile(new URL('./generate-catalog.mjs', import.meta.url), 'utf8')
+  assert.match(generator, /LORE\/factions\/Sixteen-States\.md/)
+  assert.match(generator, /stateIdByName/)
+  assert.doesNotMatch(generator, /Chaebol-Houses-and-Century-Factions\.md/)
+})
