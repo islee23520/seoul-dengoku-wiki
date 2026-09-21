@@ -3,6 +3,7 @@ import assert from 'node:assert/strict'
 import { readFileSync, existsSync } from 'node:fs'
 import { resolve, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { STATES } from './world-atlas-schema.mjs'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '../../..')
 const read = (p) => {
@@ -37,8 +38,10 @@ test('4축 게이트 — 규칙: 컴포넌트 존재·등록 + 십육국 표 16�
   const ss = read('LORE/factions/Sixteen-States.md')
   const dataRows = (ss.match(/^\|(?!\s*국명|\s*---)[^|]+\|/gm) || []).length
   assert.ok(dataRows >= 16, `십육국 표 행 ${dataRows} < 16`)
-  const infoRows = (ss.match(/<InfoRow/g) || []).length
-  assert.ok(infoRows >= 5, `정보상자 필드 ${infoRows} < 5`)
+  const header = ss.match(/^\| 국명 \|[^\n]+$/m)?.[0] ?? ''
+  const fields = header.split('|').map((field) => field.trim()).filter(Boolean)
+  assert.ok(fields.length >= 5, `국가 정본 표 필드 ${fields.length} < 5`)
+  assert.equal(STATES.length, 16, `영구 국가 스키마 ${STATES.length} != 16`)
 })
 
 test('4축 게이트 — 내용물: 이벤트 피드 ≥5', () => {
