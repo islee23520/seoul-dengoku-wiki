@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "fixtures": {
+    "closed_tetra_positive_control": {
+      "vertices": [[0, 0, 0], [1, 0, 0], [0, 1, 0], [0, 0, 1]],
+      "faces": [[0, 2, 1], [0, 1, 3], [1, 2, 3], [2, 0, 3]],
+      "declared_opening_edges": [],
+      "expected": {"unexpected_boundary_edges": 0, "duplicate_faces": 0, "degenerate_triangles": 0, "winding_conflicts": 0}
+    },
+    "hole_missing_tetra_face": {
+      "vertices": [[0, 0, 0], [1, 0, 0], [0, 1, 0], [0, 0, 1]],
+      "faces": [[0, 2, 1], [0, 1, 3], [1, 2, 3]],
+      "declared_opening_edges": [],
+      "expected": {"unexpected_boundary_edges": 3}
+    },
+    "flipped_winding_tetra_face": {
+      "vertices": [[0, 0, 0], [1, 0, 0], [0, 1, 0], [0, 0, 1]],
+      "faces": [[0, 1, 2], [0, 1, 3], [1, 2, 3], [2, 0, 3]],
+      "declared_opening_edges": [],
+      "expected": {"winding_conflicts": 3}
+    },
+    "duplicate_tetra_face": {
+      "vertices": [[0, 0, 0], [1, 0, 0], [0, 1, 0], [0, 0, 1]],
+      "faces": [[0, 2, 1], [0, 1, 3], [1, 2, 3], [2, 0, 3], [0, 2, 1]],
+      "declared_opening_edges": [],
+      "expected": {"duplicate_faces": 1}
+    },
+    "degenerate_collinear_triangle": {
+      "vertices": [[0, 0, 0], [1, 0, 0], [2, 0, 0]],
+      "faces": [[0, 1, 2]],
+      "declared_opening_edges": [[0, 1], [1, 2], [0, 2]],
+      "expected": {"unexpected_boundary_edges": 0, "degenerate_triangles": 1}
+    },
+    "valid_declared_square_opening": {
+      "vertices": [[-1, -1, 0], [1, -1, 0], [1, 1, 0], [-1, 1, 0], [-1, -1, 1], [1, -1, 1], [1, 1, 1], [-1, 1, 1]],
+      "faces": [[0, 1, 2, 3], [0, 4, 5, 1], [1, 5, 6, 2], [2, 6, 7, 3], [3, 7, 4, 0]],
+      "declared_opening_edges": [[4, 5], [5, 6], [6, 7], [4, 7]],
+      "expected": {"boundary_edges": 4, "unexpected_boundary_edges": 0, "duplicate_faces": 0, "degenerate_triangles": 0, "winding_conflicts": 0}
+    }
+  }
+}

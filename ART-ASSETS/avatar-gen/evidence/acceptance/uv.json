@@ -1,0 +1,54 @@
+{
+  "status": "PASS_SIX_MODEL_UV",
+  "canonical_audits": {
+    "male_body": "work/male-free-boundary-uv/renders/audit-report.json: FreeBoundaryUV overlap 0, degenerate 0, 133792 native triangles",
+    "female_body": "work/female-local-uv-final/final-native-verdict.json: AtlasUV PASS, overlap 0, degenerate 0",
+    "female_garment": "work/verified-garment-uv/native-verdict.json: body-independent GarmentUV_4K PASS, combined garment overlap 0",
+    "male_anatomy": "work/six-model-uv/anatomy-uv-receipt.json: AnatomyUV combined overlap 0, degenerate 0, 1676 triangles"
+  },
+  "variants": {
+    "male-underwear": {
+      "file": "work/male-underwear/male-underwear-integrated-candidate.blend",
+      "sha256": "fb19ea2a7331fdd33b56f418fa3d5f353194977882b02d3903baf23df4e40731",
+      "body_uv": "FreeBoundaryUV",
+      "garment_uv": "body-derived FreeBoundaryUV subset"
+    },
+    "male-smooth": {
+      "file": "work/male-smooth/male-smooth-doll-candidate.blend",
+      "sha256": "a93397969dad09f013a3e1b4a3039ce2c573521ada6929485a07ce601154c7f2",
+      "body_uv": "FreeBoundaryUV"
+    },
+    "male-anatomical": {
+      "file": "work/six-model-uv/male-anatomical-uv-final.blend",
+      "sha256": "fc25b197367eb1808d5cfe645d3f65a1f679912a1681827f32aaf3a027514919",
+      "body_uv": "FreeBoundaryUV",
+      "anatomy_uv": "AnatomyUV"
+    },
+    "female-underwear": {
+      "file": "work/female-variants-finalize/female-underwear-final.blend",
+      "sha256": "d071d6963426bb92e129ac9072306c9846b6516abd1ba60d663c9f2771338f8f",
+      "body_uv": "AtlasUV",
+      "garment_uv": "GarmentUV_4K"
+    },
+    "female-smooth": {
+      "file": "work/female-variants-finalize/female-smooth-final.blend",
+      "sha256": "b18259bb2fac4a3c7a682aed353bf64f921e028c3956686a910b24ac888489e2",
+      "body_uv": "AtlasUV"
+    },
+    "female-anatomical": {
+      "file": "work/female-variants-finalize/female-anatomical-final.blend",
+      "sha256": "a71089fcb3636d108d1adeec89b0ddf67990a5ede7cc83d78a49968e5a8bee33",
+      "body_uv": "AtlasUV"
+    }
+  },
+  "checker_evidence": {
+    "male_body": "work/male-free-boundary-uv/checker-contact-sheet.png",
+    "female_body": "work/female-local-uv-final/checker-before-after.png",
+    "female_garment": "work/verified-garment-uv/shared-checker-4096.png",
+    "male_anatomy": "quadrant-packed procedural UV; native overlap audit is authoritative"
+  },
+  "limits": [
+    "oral teeth and cavity use simple role materials and are not part of the body color atlas",
+    "male underwear is a body-derived single-layer surface shell and inherits the corresponding body UV subset"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASS_HOLDOUT_GATE_REPRODUCTION",
+  "source": "external-source://human-figure-3d-model-1.glb",
+  "source_sha256": "5c6cac16c138ee55e0134a5087caa3ad42e8eb6bd918a3fe154ecf1354222b0f",
+  "outcome": "REJECT_HOLDOUT_IMPORT",
+  "reason": "the independent source is materially defective and the pipeline correctly refused promotion",
+  "evidence": {
+    "self_intersections": 17081,
+    "degenerate_geometry_triangles": 7,
+    "nonmanifold_edges": 29879,
+    "uv_overlaps": 78,
+    "degenerate_uv_triangles": 4,
+    "embedded_basecolor": [2048, 2048],
+    "source_unchanged": true
+  },
+  "interpretation": [
+    "holdout reproduction does not require a defective source to become accepted",
+    "the same native geometry and UV gates were applied without source-specific exceptions",
+    "a failing holdout demonstrates natural-language import routing reaches a hard rejection instead of a false approval"
+  ]
+}

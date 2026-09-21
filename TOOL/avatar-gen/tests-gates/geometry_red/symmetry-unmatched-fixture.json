@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "name": "exactly_two_bucket_ignores_unmatched_vertices",
+  "vertices": [
+    [-1.0, 0.0, 0.0],
+    [1.0, 0.0, 0.0],
+    [0.45, 0.25, 0.5],
+    [0.7, 0.4, 0.8],
+    [0.8, 0.4, 0.8],
+    [0.9, 0.4, 0.8]
+  ],
+  "expected_legacy": {"max_x_asymmetry_m": 0.0, "pairs_checked": 1, "ignored_vertices": 4}
+}

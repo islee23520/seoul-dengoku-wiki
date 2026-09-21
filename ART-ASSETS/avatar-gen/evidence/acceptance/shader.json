@@ -1,0 +1,29 @@
+{
+  "status": "PASS_SIX_MODEL_TOON_SHADER_CONTRACT",
+  "claim": "public-evidence-informed project-authored constant-ramp Eevee shader; not official game source",
+  "contract": {
+    "required_nodes": ["ShaderNodeShaderToRGB", "ShaderNodeValToRGB", "ShaderNodeEmission"],
+    "ramp_interpolation": "CONSTANT",
+    "engine": "BLENDER_EEVEE",
+    "geometry_uv_preserved": true,
+    "fresh_reopen": "PASS all six"
+  },
+  "body_color_bindings": {
+    "male": "FreeBoundaryUV:Male_FreeBoundary_SourceColor_4096",
+    "female": "SourceBoundColor"
+  },
+  "variants": {
+    "male-underwear": {"file": "male-underwear-toon.blend", "sha256": "5082ecca1839b67377348442c36397875668be56f87c7e9f7351349dee61bd42"},
+    "male-smooth": {"file": "male-smooth-toon.blend", "sha256": "6da21d302315854e6f45e4040f1838b302a9f62791de0df2007f1b32852d5e86"},
+    "male-anatomical": {"file": "male-anatomical-toon.blend", "sha256": "f64b6efba5b53053e53fde5328e951aebcbaff27e5d23a1a8f0def2124e6e83b"},
+    "female-underwear": {"file": "female-underwear-toon.blend", "sha256": "7b5622633154bbd9e20f1320876cbc9f6e584718895874aef70197a23e261eae"},
+    "female-smooth": {"file": "female-smooth-toon.blend", "sha256": "5257e258b375eb356c3d13f28b045ab7d1a0a112fdcb06edaece93e1a27b6235"},
+    "female-anatomical": {"file": "female-anatomical-toon.blend", "sha256": "459e5c5518175fbcb56ef81cd32e3ede11af894cb1c48ecccc2279257e7cba7b"}
+  },
+  "evidence_basis": [
+    "GDC 2021 public evidence for art-directed character shadows",
+    "project-authored constant threshold ramp",
+    "previous male-public-evidence-shader-v3 research report"
+  ],
+  "limits": ["not a claim of official Genshin equations or channel packing", "multi-light visual render verification remains open"]
+}

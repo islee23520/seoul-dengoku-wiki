@@ -1,0 +1,96 @@
+name: Avatar Gen
+
+on:
+  pull_request:
+    paths:
+      - '.gitattributes'
+      - 'ART-ASSETS/avatar-gen/**'
+      - 'GAME/Packages/manifest.json'
+      - 'GAME/Packages/packages-lock.json'
+      - 'GDD/adr/ADR-004-root-domain-structure.md'
+      - 'TOOL/avatar-gen/**'
+      - 'TOOL/tools/policy/check-repo-delivery-policy.mjs'
+      - '.github/workflows/avatar-gen.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - '.gitattributes'
+      - 'ART-ASSETS/avatar-gen/**'
+      - 'GAME/Packages/manifest.json'
+      - 'GAME/Packages/packages-lock.json'
+      - 'GDD/adr/ADR-004-root-domain-structure.md'
+      - 'TOOL/avatar-gen/**'
+      - 'TOOL/tools/policy/check-repo-delivery-policy.mjs'
+      - '.github/workflows/avatar-gen.yml'
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+          lfs: true
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: TOOL/avatar-gen/package-lock.json
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: '1.4.2'
+
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: '3.14'
+
+      - name: Install avatar viewer dependencies
+        working-directory: TOOL/avatar-gen
+        run: npm ci
+
+      - name: Verify delivery policy
+        run: node TOOL/tools/policy/check-repo-delivery-policy.mjs
+
+      - name: Verify canonical asset manifest
+        run: python3 TOOL/avatar-gen/bin/avatar-gen.py check
+
+      - name: Run avatar viewer tests
+        working-directory: TOOL/avatar-gen
+        run: npm test
+
+      - name: Run portable geometry and UV gates
+        run: uv run --python 3.14 --with pytest --with numpy python -m pytest -q TOOL/avatar-gen/tests TOOL/avatar-gen/tests-gates
+
+      - name: Reject unhydrated avatar pointers
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          roots = [Path('ART-ASSETS/avatar-gen'), Path('TOOL/avatar-gen/fixtures/intersections')]
+          pointers = []
+          for root in roots:
+              for path in root.rglob('*'):
+                  if path.is_file() and path.stat().st_size < 512:
+                      head = path.read_bytes()[:128]
+                      if head.startswith(b'version https://git-lfs.github.com/spec/v1'):
+                          pointers.append(str(path))
+          if pointers:
+              raise SystemExit('Unhydrated LFS pointers:\n' + '\n'.join(pointers))
+          print('AVATAR_LFS_HYDRATED')
+          PY
+
+      - name: Check diff whitespace
+        run: >-
+          git diff --check HEAD^ --
+          .gitattributes
+          .github/workflows/avatar-gen.yml
+          ART-ASSETS/avatar-gen
+          GAME/Packages/manifest.json
+          GAME/Packages/packages-lock.json
+          GDD/adr/ADR-001-repository-delivery-policy.md
+          GDD/adr/ADR-004-root-domain-structure.md
+          TOOL/avatar-gen
+          TOOL/tools/policy/check-repo-delivery-policy.mjs

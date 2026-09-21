@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Blender 커스텀 아바타를 Three.js에서 검사하고 요소별 표시 상태를 제어합니다.">
+  <title>Avatar-gen Viewer</title>
+  <link rel="stylesheet" href="/viewer.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="app-header">
+      <div>
+        <p class="product-label">AVATAR-GEN</p>
+        <h1>전신 아바타 요소 뷰어</h1>
+      </div>
+      <div class="status-cluster" aria-live="polite">
+        <span id="viewer-status" class="status-pill" data-state="loading">불러오는 중</span>
+        <span class="status-pill status-pill--quiet">Three.js · glTF Y-up RH</span>
+        <span class="status-pill status-pill--quiet">Unity · Y-up LH</span>
+      </div>
+    </header>
+    <section class="workspace">
+      <section class="viewport-panel" aria-label="3D 아바타 뷰포트">
+        <button id="viewport" class="viewport" type="button" aria-label="Female Underwear Base 전신 아바타 3D 뷰포트" aria-describedby="viewport-help" disabled></button>
+        <fieldset class="camera-actions">
+          <legend class="sr-only">카메라 조작</legend>
+          <button type="button" id="orbit-left" aria-label="왼쪽으로 회전" disabled>↶</button>
+          <button type="button" id="orbit-right" aria-label="오른쪽으로 회전" disabled>↷</button>
+          <button type="button" id="orbit-up" aria-label="위로 회전" disabled>↑</button>
+          <button type="button" id="orbit-down" aria-label="아래로 회전" disabled>↓</button>
+          <button type="button" id="zoom-in" aria-label="확대" disabled>＋</button>
+          <button type="button" id="zoom-out" aria-label="축소" disabled>−</button>
+          <button type="button" id="fit-avatar" disabled>전신 맞춤</button>
+        </fieldset>
+        <div id="viewport-help" class="viewport-help">방향키: 회전 · Shift+방향키: 이동 · +/−: 확대/축소 · F: 전신 맞춤</div>
+      </section>
+      <aside class="inspector" aria-label="Avatar element inspector">
+        <div class="inspector__header">
+          <div>
+            <p class="product-label">ELEMENTS</p>
+            <h2 id="element-count" role="status" aria-live="polite" aria-atomic="true">0 표시</h2>
+          </div>
+          <div class="inspector__actions">
+            <button type="button" id="show-all">모두 켜기</button>
+            <button type="button" id="hide-all">모두 끄기</button>
+          </div>
+        </div>
+        <label class="search-field">
+          <span>요소 검색</span>
+          <input id="element-filter" type="search" placeholder="body, eye, tooth 또는 객체 이름" autocomplete="off" aria-describedby="filter-status">
+        </label>
+        <p id="filter-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+        <div id="element-list" class="element-list"></div>
+      </aside>
+    </section>
+  </main>
+  <script type="module" src="/avatar-gen.bundle.mjs"></script>
+</body>
+</html>

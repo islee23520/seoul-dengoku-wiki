@@ -1,0 +1,37 @@
+{
+  "status": "PASS_SOURCE_COLOR_LINEAGE",
+  "male": {
+    "texture": "work/male-free-boundary-uv/male-free-boundary-sourcecolor-4k.png",
+    "texture_sha256": "f04b4c1bc32519147f84a5d1f19986ccd98cb5d94e3934c1a49a48ed8735fad2",
+    "uv_layer": "FreeBoundaryUV",
+    "material_binding": "Male_FreeBoundary_SourceColor_* image nodes",
+    "evidence": "male-free-boundary source contact sheet and saved-file exact external texture identity"
+  },
+  "female": {
+    "color_source": "work/female-local-uv-final/female-local-uv-final.blend::SourceBoundColor",
+    "color_source_sha256": "5f22e7587e6acde250b5d1d634fd132658c4f7e2e7cb29ed378f7dc68be8626c",
+    "corner_count": 184862,
+    "material": "Female_AtlasUV_ExternalSourceColor",
+    "binding": "AtlasUV -> external female-sourcecolor-atlas-4096.png",
+    "external_texture": "work/six-model-texture/female-sourcecolor-atlas-4096.png",
+    "external_texture_sha256": "63339f4b2e957ae6914d28f3c54743da7e989ae553465b640be2fecd0331561a",
+    "variants": {
+      "underwear": "work/six-model-texture/female-underwear-external-texture-final.blend",
+      "smooth": "work/six-model-texture/female-smooth-external-texture-final.blend",
+      "anatomical": "work/six-model-texture/female-anatomical-external-texture-final.blend"
+    },
+    "visual_evidence": ["female-material-renders/front.png", "female-material-renders/back.png", "female-material-renders/quarter.png", "female-material-renders/face.png"],
+    "visual_verdict": "continuous source-derived skin color without visible neck or body seam"
+  },
+  "procedural_role_materials": {
+    "oral": "separate gum/teeth/tongue/inner-mouth role colors",
+    "eyes": "shared eye role materials preserved",
+    "male_underwear": "navy cloth material",
+    "female_underwear": "verified garment materials preserved",
+    "male_anatomy": "provisional external-skin material"
+  },
+  "rejected_attempt": {
+    "female_AtlasUV_4K_bake": "rejected because selected-to-active output was black/sparse despite command success; it is not used as production evidence"
+  },
+  "limits": ["female external texture is deterministically baked from verified SourceBoundColor without ray projection"]
+}

@@ -1,6 +1,6 @@
 # ADR-004 — 루트 도메인과 단일 설계 정본
 
-- 상태: 2026-09-20 개정 수용됨 (소유자 결정: GDD 단일 설계 정본)
+- 상태: 2026-09-21 개정 수용됨 (소유자 결정: GDD 단일 설계 정본, ART-ASSETS 원본 아트 정본)
 - 선행: ADR-001 (인도 정책 — 본 구조 재편의 인도는 ADR-001 소유자 권한 아래 수행됐다)
 - 시행 커밋: `befb8da9` (2026-09-18 루트 7도메인 전면 재편)
 
@@ -18,6 +18,7 @@
 | `LORE/` | 세계관 정본(world계 175 + name-pools + regions) |
 | `WEB/` | React 공식 위키와 VitePress 생성·검증 표면. 정본이 아님 |
 | `GAME-REFERENCE/` | 에셋 BOM·UX 레퍼런스·무드보드·POC·지리 데이터(data) |
+| `ART-ASSETS/` | 편집 가능한 원본 아트·Blender·FBX·텍스처·선별 검토 증거의 정본. 실행 도구는 TOOL, Unity 승격본은 GAME이 소유한다. |
 | `RESEARCH/` | canon-reference·verification |
 | `TOOL/` | 저장소 Node 패키지(tools)·skills·서브모듈(unity-remote, character-forge)·Unity 문서 |
 | `GAME/` | Unity 프로젝트(에디터 핀 6000.7.0a5, batchmode 전용) |
@@ -25,13 +26,13 @@
 | `store/` | 런 산출물 보존(루트 유지) |
 | `archive/` | 워크트리 청소 스냅샷(sparse `!/archive/`, 루트 유지) |
 
-루트 설정 파일 허용 목록(17종): `.gitattributes` `.gitignore` `.gitmodules` `.vercelignore` `AGENTS.md` `CLAUDE.md` `CONCEPT`류 기획 문서(`Concept.md` `Design.md` `Intent.md` `ToDo.md`) `CONTRIBUTING.md` `README.md` `SERVICES.md` `index.html` `package.json` `package-lock.json` `vercel.json`.
+루트 설정 파일 허용 목록: `.gitattributes` `.gitignore` `.gitmodules` `.vercelignore` `AGENTS.md` `CLAUDE.md` `CONCEPT`류 기획 문서(`Concept.md` `Design.md` `Intent.md` `ToDo.md`) `CONTRIBUTING.md` `README.md` `SERVICES.md` `index.html` `package.json` `package-lock.json` `vercel.json`. 2026-09-21 현재 main에 이미 추적된 진단 유틸리티 `test-regex.mjs`, `update_states.py`는 별도 정리 전까지 legacy root utility로 허용한다. 신규 루트 유틸리티의 추가 권한은 아니다.
 
 ## 규칙
 
 1. **구조 불변**: 신규 루트 디렉터리·루트 파일 추가는 이 ADR 개정(또는 후속 ADR) 없이 불가다. 정책 검사가 거부한다.
 2. **구 세계 금지**: `Wikis/`·`Design/`·`Reference/`·`data/`·`Research/`·`Tool/`·`Game/`(구 케이스) 최상위 재생성 금지.
-3. **문서 배치 계약**: 세계관은 LORE, 모든 게임 설계와 규칙은 GDD, 시각·실물 참고는 GAME-REFERENCE, 조사는 RESEARCH에만 둔다. WEB은 정본을 읽어 게시할 뿐 의미를 소유하지 않는다.
+3. **문서·자산 배치 계약**: 세계관은 LORE, 모든 게임 설계와 규칙은 GDD, 시각·실물 참고와 실험은 GAME-REFERENCE, 편집 가능한 승인 아트 원본은 ART-ASSETS, 조사는 RESEARCH에만 둔다. TOOL은 자산 처리 코드를 소유하고 GAME은 별도 승격 검사를 통과한 Unity 런타임 import만 소유한다. WEB은 정본을 읽어 게시할 뿐 의미를 소유하지 않는다.
 4. **배포면**: 공개 문서는 `WEB/wiki-source/dist`(로컬 prebuilt, `.vercelignore` 8행 체인)만 쓴다. 서브 경로 서빙은 SERVICES.md 표 + 복합 스테이징을 따른다.
 5. **인도**: 본 구조 변경사항의 인도 절차는 ADR-001을 따른다.
 

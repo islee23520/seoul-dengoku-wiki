@@ -1,0 +1,55 @@
+name: Evidence Cleanup
+
+on:
+  pull_request:
+    types: [closed]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  cleanup:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Remove merged PR evidence
+        id: cleanup
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          path="evidence/pr-${PR_NUMBER}"
+          if [ ! -d "$path" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          rm -rf "$path"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Create cleanup pull request
+        if: steps.cleanup.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          branch="cleanup/evidence-pr-${PR_NUMBER}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add -A "evidence/pr-${PR_NUMBER}"
+          git commit -m "chore(evidence): PR #${PR_NUMBER} 증거를 정리한다"
+          git push --force-with-lease origin "$branch"
+          if gh pr view "$branch" --json url --jq .url >/dev/null 2>&1; then
+            gh pr edit "$branch" \
+              --title "chore(evidence): PR #${PR_NUMBER} 증거 정리" \
+              --body "PR #${PR_NUMBER}이 merge되어 ADR-007에 따라 임시 evidence를 삭제합니다. 이 cleanup PR은 자동 merge되지 않습니다."
+          else
+            gh pr create \
+              --base main \
+              --head "$branch" \
+              --title "chore(evidence): PR #${PR_NUMBER} 증거 정리" \
+              --body "PR #${PR_NUMBER}이 merge되어 ADR-007에 따라 임시 evidence를 삭제합니다. 이 cleanup PR은 자동 merge되지 않습니다."
+          fi

@@ -1,5 +1,9 @@
 {
+  "testables": [
+    "com.seouldengoku.avatar-gen"
+  ],
   "dependencies": {
+    "com.seouldengoku.avatar-gen": "file:../../TOOL/avatar-gen/unity-package",
     "com.islee.unity-remote": "file:../../TOOL/unity-remote/unity-package",
     "com.unity.ide.rider": "3.0.38",
     "com.unity.ide.visualstudio": "2.0.26",

@@ -24,13 +24,14 @@ seoul-kenshi/
 |   |-- regions/           # 427-dong authored atlas content + pipeline contract
 |   `-- places/, factions/, culture/, chronology/ + single-concept dirs (economy, overview, ailments, goods, offices, structures, technology, people-and-machines)
 |-- GAME-REFERENCE/        # asset BOMs, UX refs, geography data, frozen POCs (router AGENTS.md)
+|-- ART-ASSETS/            # canonical editable art, interchange exports, textures and selected review evidence
 |-- RESEARCH/              # citation-tiered canon reference + verification artifacts
 |-- Reference/             # wiki diagram assets (assets/wiki); NOT the same as GAME-REFERENCE
 |-- TOOL/                  # skills/, docs/, tools/ (repo npm package), unity-remote/ (only submodule)
 |-- WEB/                   # official React wiki + VitePress staging/gates; never canon
 |-- Backend/               # ASP.NET Core host-session coordinator (server/Coordinator) + tests
 |-- SOCIAL-MEDIA/          # operator X/Threads serial; NOT a hub page (see SOCIAL-MEDIA/AGENTS.md)
-|-- evidence/              # append-only test-evidence bundles (seoul-strategy-map-gdd/, pr-144/); new evidence = new dated dir
+|-- evidence/              # PR-scoped temporary review evidence; new writes only under pr-<number>/ and cleanup PR after merge
 |-- store/                 # frozen design-store capture run-4343cc0-160339 (pinned @ 4343cc0, 2026-09-13); root planning docs are the LIVE copies
 |-- Wikis/                 # legacy remnant (3 files); design-store seed remaps its old paths
 `-- .omo/                  # untracked local state (whole directory ignored, 2026-09-19 owner directive); AGENTS.md is local-only
@@ -54,6 +55,7 @@ seoul-kenshi/
 | Unity tests and captures | `GAME/Assets/Tests/AGENTS.md` | Test-mode ownership and evidence receipts |
 | Tooling and checks | `TOOL/AGENTS.md`, `TOOL/tools/AGENTS.md` | Child files: art, wiki, design-store, regions, strategy-map |
 | Asset processing | `GDD/Asset-Pipeline.md`, `TOOL/tools/art/AGENTS.md` | Design contract versus executable promotion checks |
+| Canonical authored art | `ART-ASSETS/AGENTS.md`, `ART-ASSETS/avatar-gen/` | Blender/FBX/textures and manifests; tooling stays under `TOOL/` |
 | Wiki/world-atlas pipeline | `TOOL/tools/wiki/AGENTS.md`, `WEB/wiki-source/AGENTS.md` | `mount.mjs` stages canon; `gate.mjs` scans rendered dist |
 | Browser comparison reference | `GAME-REFERENCE/AGENTS.md`, `GAME-REFERENCE/poc/browser/AGENTS.md` | Frozen four-surface prototype, not the product runtime |
 | Web POC runtime copy | `GAME/play/AGENTS.md` | Staged byte-copy of `WEB/wiki-source/dist/play`; `node --test model.test.mjs`; `world-data.js` generated, never hand-edit |

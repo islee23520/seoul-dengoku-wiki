@@ -1,0 +1,18 @@
+{
+  "status": "PASS_REPEATABILITY_AND_REJECTION",
+  "holdout_normalized_fingerprint": {
+    "sha256": "b7cc1d31238c1b8da856686fe542b6ea04637c7f6c8c3165cae533427366040e",
+    "rerun_equal": true,
+    "blend_binary_sha_may_vary": true,
+    "normalization": ["source SHA", "object counts", "world bounds", "geometry verdict", "topology counts", "UV verdict", "material image inventory", "source unchanged", "final verdict"]
+  },
+  "gate_test_suite": {
+    "command": "uv run --with pytest python -m pytest -q tests/test_uv_gate.py tests/test_geometry_gate.py tests/test_intersections.py tests/test_source_inventory.py tests/geometry_red/test_geometry_red.py",
+    "result": "80 passed in 3.04s"
+  },
+  "mutation_rejection": {
+    "uv_adapted_red_transcript": "evidence/uv-green/adapted-red-green.txt",
+    "geometry_red_tests": "tests/geometry_red/test_geometry_red.py",
+    "verdict": "known UV folds, concave-fan false approvals, symmetry mismatches, topology defects and corrupt source inventory are rejected"
+  }
+}

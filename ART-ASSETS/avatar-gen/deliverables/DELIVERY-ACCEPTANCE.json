@@ -1,0 +1,20 @@
+{
+  "status": "PASS_SIX_MODEL_EXPORT_REIMPORT_EXTERNAL_TEXTURES",
+  "working_directory_test": "/tmp",
+  "variants": [
+    {"role": "male-underwear", "blend_sha256": "7bea09398e642be16c85cc70b75d6df2b25b707617b04ecf556ee09f563c7bc1", "fbx_sha256": "fecf660771a46d2fc718ee4e907478dc6c7996ebbdbb6f2d96ecdceb5c93c1eb", "meshes": 32, "vertices": 81068, "faces": 82100, "bounds_max_error_m": 2.980232238769531e-7, "reimport_images": 3},
+    {"role": "male-smooth", "blend_sha256": "ea69158cde022dbacf495b73af446dd2d17049d92e213e0f212c23f924bc8927", "fbx_sha256": "16932500a358900274c7e5849e0524a693700f0f668294a1c4fc2e35f5e23e25", "meshes": 31, "vertices": 79630, "faces": 80790, "bounds_max_error_m": 2.980232238769531e-7, "reimport_images": 3},
+    {"role": "male-anatomical", "blend_sha256": "65a12140d5aea9aba96bfa111a3203474a4d17a9ac9e3e6bc20c57a0df704c04", "fbx_sha256": "36abe58c30d25a6e477560ab2b6e849d725e8808b8927f53025feb4c423edda4", "meshes": 35, "vertices": 80476, "faces": 81680, "bounds_max_error_m": 2.980232238769531e-7, "reimport_images": 3},
+    {"role": "female-underwear", "blend_sha256": "10e61b71ee6edb856d632bf7e73fdcdfbc271b51ec2ec74c2ea7281ed4ffb449", "fbx_sha256": "1c73999d768e381889efbef5e87326956f578dde0b12fd352eec9e8a774aef73", "meshes": 40, "vertices": 62387, "faces": 65068, "bounds_max_error_m": 2.682209014892578e-7, "reimport_images": 2},
+    {"role": "female-smooth", "blend_sha256": "0ab12e65e6168f7aa50593576d46e89627cf4229d653c631c41e48c2f9406152", "fbx_sha256": "5d7ee9b3fa4e3e8c245b207c22cc03293d14862f2ddec3aadf721327f62e7ab7", "meshes": 38, "vertices": 60559, "faces": 63080, "bounds_max_error_m": 2.682209014892578e-7, "reimport_images": 2},
+    {"role": "female-anatomical", "blend_sha256": "a76633b0f9bb6409089864a7bd3780fc21849f3e07c014e7a7274711b5d1110b", "fbx_sha256": "4db3d23b1c144064471cba4396e0e6fdd948869932edd869e6b8ddb2e76e936e", "meshes": 38, "vertices": 60559, "faces": 63080, "bounds_max_error_m": 2.682209014892578e-7, "reimport_images": 2}
+  ],
+  "checks": [
+    "six deliverable .blend files preserve toon node materials",
+    "six FBX files export with FBX-compatible Principled image adapters",
+    "all FBXs reimport from /tmp with mesh, vertex and face counts preserved",
+    "world bounds remain within 3e-7 m",
+    "male and female external source-color PNGs resolve from per-FBX .fbm directories",
+    "all recorded external images exist during independent-directory reimport"
+  ]
+}
