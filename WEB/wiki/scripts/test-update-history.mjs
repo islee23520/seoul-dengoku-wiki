@@ -51,3 +51,15 @@ test('all contract history is routed through the official updates page', async (
   assert.match(page, /update\.status/)
   assert.match(home, /전체 계약 이력/)
 })
+
+test('reader catalog excludes authoring documents and strips only projection headers', async () => {
+  const generator = await readFile(new URL('./generate-catalog.mjs', import.meta.url), 'utf8')
+  const mount = await readFile(new URL('../../wiki-source/scripts/mount.mjs', import.meta.url), 'utf8')
+  const contract = JSON.parse(await readFile(new URL('../public/wiki-contract.json', import.meta.url), 'utf8'))
+  const names = new Set(contract.documents.map((document) => document.slug))
+
+  for (const slug of ['Cast-Profile-Contract', 'Cast-Registration-Template', 'Random-Cast-Roster']) assert.equal(names.has(slug), false)
+  assert.match(mount, /PUBLIC_EXCLUDED_NAMES/)
+  assert.match(generator, /stripProjectionHeader/)
+  assert.match(generator, /original-fiction/)
+})

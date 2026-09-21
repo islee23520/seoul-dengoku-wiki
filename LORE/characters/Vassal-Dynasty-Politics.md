@@ -151,7 +151,7 @@
 | `east-caravan` | 보호 — 관문과 급수를 호위 장부 아래 둠 | 상수행정과 호위단의 이중 장부 / 상수례 | 상수호위·교량 봉쇄·순찰열차 | 보호 명분으로 하위 작위 회수가 열리기 쉽고 `plot` 임계가 낮아짐 |
 | `southeast-ration` | 가격 공개 — 경매가 추대를 흔듦 | 품목별 상인회의 / 기근 배급 / 소각례 | 창고 경비와 호송 입찰 — 상인은 전투원이 아님 | 작위보다 조정권이 후계를 가름하고 소집 조항을 거의 안 받음 |
 
-키트는 위에서 주입하지 않는다. 급수·수리·환승·피난·경매처럼 그 땅의 생업에서 자라고 이주민 회랑은 이 다섯 키를 강제하지 않는다. 성명 표기는 [인물 카드 계약](../characters/Cast-Profile-Contract.md)대로 옆에 두며 회랑의 제례는 혼합 계약의 밸브다.
+키트는 위에서 주입하지 않는다. 급수·수리·환승·피난·경매처럼 그 땅의 생업에서 자라고 이주민 회랑은 이 다섯 키를 강제하지 않는다. 성명과 소속은 [인물 총람](../characters/Cast-Index.md)의 기록을 따르며 회랑의 제례는 혼합 계약의 밸브다.
 
 같은 키라도 인물 야망이 키트를 거스를 수 있다. 임하준이 기술가문의 세습을 두려워하는 것이 그 예이고 키트는 편향이지 감옥이 아닙니다.
 
@@ -231,7 +231,7 @@
 - [Conscription-Remnants.md](../factions/Conscription-Remnants.md)
 - [Characters-Factions-and-Professions.md](../characters/Characters-Factions-and-Professions.md)
 - [Core-Characters.md](../characters/Core-Characters.md)
-- [Cast-Profile-Contract.md](../characters/Cast-Profile-Contract.md)
+- [Cast-Index.md](../characters/Cast-Index.md)
 - [Save-and-Determinism.md](../../GDD/rules/Save-and-Determinism.md)
 - [Economy-and-Production.md](../economy/Economy-and-Production.md)
 - [Campaign-Loop.md](../../GDD/rules/Campaign-Loop.md)

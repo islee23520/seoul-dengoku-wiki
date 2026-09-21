@@ -18,6 +18,16 @@ const normalizeTitle = (markdown, fallback) =>
 
 const githubBlob = 'https://github.com/islee23520/seoul-kenshi/blob/main/'
 
+const stripProjectionHeader = (markdown) => {
+  const lines = markdown.split('\n')
+  const cleaned = lines.filter((line, index) => index >= 12 || !(
+    line === '이 페이지는 World-Narrative-Atlas의 읽기 전용 투영물입니다.' ||
+    /^- 원본 앵커: `LORE\/World-Narrative-Atlas\.md`$/u.test(line) ||
+    /^- 원본 해시: `[a-f0-9]+`$/u.test(line)
+  ))
+  return cleaned.join('\n').replace(/^- 출처층:\s*original-fiction\s*\n/gmu, '')
+}
+
 const rewriteRelativeHref = (href, domain, routeBySlug) => {
   if (href.startsWith('/') || href.startsWith('#') || href.startsWith('http://') || href.startsWith('https://') || href.startsWith('mailto:')) return href
 
@@ -36,11 +46,11 @@ const rewriteRelativeHref = (href, domain, routeBySlug) => {
   return `${githubBlob}${path.replace(/^\.\.\//g, '')}`
 }
 
-const normalizeMarkdown = (markdown, domain, routeBySlug) => markdown
+const normalizeMarkdown = (markdown, domain, routeBySlug) => stripProjectionHeader(markdown
   .replace(/^---\n[\s\S]*?\n---\n/, '')
   .replace(/^#\s+.+\n+/, '')
   .replace(/<InfoBox[\s\S]*?<\/InfoBox>/g, '')
-  .replace(/<NavBox[\s\S]*?<\/NavBox>/g, '')
+  .replace(/<NavBox[\s\S]*?<\/NavBox>/g, ''))
   .replace(/\]\(([^)]+)\)/g, (_full, href) => `](${rewriteRelativeHref(href, domain, routeBySlug)})`)
 
 await rm(contentRoot, { recursive: true, force: true })
