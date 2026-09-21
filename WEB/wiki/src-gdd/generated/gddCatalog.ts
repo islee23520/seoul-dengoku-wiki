@@ -293,14 +293,6 @@ export const gddCatalog = [
   {
     "category": "references",
     "categoryLabel": "레퍼런스 연구",
-    "slug": "Ref-Ravelen-Chronicles",
-    "route": "/references/Ref-Ravelen-Chronicles",
-    "title": "라벨렌 전기: 겨울선 (Ravelen Chronicles: The Winter Line) — 웹 빌드 역설계 백과사전",
-    "sourcePath": "GDD/references/Ref-Ravelen-Chronicles.md"
-  },
-  {
-    "category": "references",
-    "categoryLabel": "레퍼런스 연구",
     "slug": "Ref-Songs-of-Silence",
     "route": "/references/Ref-Songs-of-Silence",
     "title": "Songs of Silence (2024) — 게임 로직 백과사전",
@@ -385,6 +377,14 @@ export const gddCatalog = [
     "route": "/decisions/ADR-006-backend-aspnet-core-coordinator",
     "title": "ADR-006 — 백엔드 구현: Y2K 탈피와 ASP.NET Core 코디네이터",
     "sourcePath": "GDD/adr/ADR-006-backend-aspnet-core-coordinator.md"
+  },
+  {
+    "category": "decisions",
+    "categoryLabel": "결정 기록",
+    "slug": "ADR-007-pr-evidence-lifecycle",
+    "route": "/decisions/ADR-007-pr-evidence-lifecycle",
+    "title": "ADR-007: PR 단위 evidence 생명주기",
+    "sourcePath": "GDD/adr/ADR-007-pr-evidence-lifecycle.md"
   },
   {
     "category": "art",

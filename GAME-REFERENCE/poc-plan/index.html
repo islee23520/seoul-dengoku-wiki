@@ -206,8 +206,7 @@ footer{margin-top:56px;border-top:1px solid var(--stroke-quiet);padding-top:16px
     그 선택이 세 역 POC와 실시간 진형·카드 전투로 어떻게 접히는지, 다음 슬라이스는 어디서 멈추는지를
     이 화면에서 가른다. 문서는 설계이고, 여기 상태 칩은 런타임 확정과 가정을 섞지 않는다.</p>
   <p class="note">공개 표면은 K-시스템이라는 내부 별칭을 쓴다. 목표 형태는 2026-09-07 소유자 결정:
-    <strong>4X + RPG</strong>, 전투는 <strong>실시간 진형·카드</strong>. 기준은 Songs of Silence,
-    전투 바깥 계약의 정밀 참조는 라벨렌 전기.</p>
+    <strong>4X + RPG</strong>, 전투는 <strong>실시간 진형·카드</strong>. 기준은 Songs of Silence.</p>
   <div class="stats">
     <div class="stat"><b>16</b><span>조사 레퍼런스</span></div>
     <div class="stat"><b>rtfc-v2</b><span>전투 규칙 버전</span></div>
@@ -278,7 +277,6 @@ footer{margin-top:56px;border-top:1px solid var(--stroke-quiet);padding-top:16px
     출처 — <a href="../../LORE/Game-References.md">Game-References</a>,
     <a href="../../LORE/Ref-Cross-Synthesis.md">교차 종합</a>,
     <a href="../../LORE/Ref-Songs-of-Silence.md">Songs of Silence</a>,
-    <a href="../../LORE/Ref-Ravelen-Chronicles.md">라벨렌 전기</a>,
     <a href="../../LORE/Realtime-Formation-Card-Battle.md">실시간 진형·카드 전투</a>,
     Intent 결정 3, 이슈 #77. 이 페이지는 구현 완료 주장이 아니라 조사→POC 접힘의 읽기 전용 표면이다.
     단일 HTML, 외부 의존 없음.
@@ -303,14 +301,6 @@ const GAMES = [
     drop:"카드 랜덤 드로우, 카드로 쓰러진 병사 부활, 격자 없는 광역 4X 단순화 전부를 그대로 옮기지 않음.",
     poc:["p0","p2","p3"],
     verdicts:["take","part","drop"]
-  },
-  {
-    id:"ravelen", layer:"battle", name:"라벨렌 전기", year:"웹 빌드",
-    role:"턴제 쪽 마지막 정밀 참조",
-    take:"사기 60/40/80/0, 항복 3조건, 지휘 반경, 인연이 전술 자원, 병참 준비안 2, 예고된 증원.",
-    drop:"턴·페이즈·되감기·유닛 한 칸 명령. 9스탯 전투 공식은 압축 후보로만 남김.",
-    poc:["p2","p3"],
-    verdicts:["take","drop"]
   },
   {
     id:"ksys", layer:"rpg", name:"K-시스템", year:"내부 별칭",
@@ -427,10 +417,10 @@ const SLICES = [
   },
   {
     id:"p2", code:"P2", name:"실시간 진형·카드 코어", status:"poc", statusLabel:"Core 잠김",
-    why:"Songs of Silence가 전투 입력을 배치와 카드 타이밍으로 바꿨고, 라벨렌이 사기·항복을 수치로 남겼다.",
+    why:"Songs of Silence가 전투 입력을 배치와 카드 타이밍으로 바꿨다.",
     do:"30Hz 틱, 인물 카드 소유권, 거점 카드 2, 사기 60/40/80, 항복 3조건, 증원 예고.",
     gate:"이슈 #77. BattleRules와 문서 표가 같아야 함. ownerless 리플레이 거부.",
-    refs:["songs","ravelen","itb","fe","xcom"]
+    refs:["songs","itb","fe","xcom"]
   },
   {
     id:"p3", code:"P3", name:"진형 편집과 전투 HUD", status:"contract", statusLabel:"계약 승인",
@@ -444,14 +434,14 @@ const SLICES = [
     why:"배틀 브라더즈는 결과가 인물에 남고, K-시스템은 쓰러짐을 사망과 가른다. 집계 생존 0..4는 승인됐다.",
     do:"치료로 부활하지 않음. 정산은 UnitId와 남은 HP만. 리더는 연출용.",
     gate:"작업 7 미완료. 작업 6 분대 명령 검증 pending.",
-    refs:["bb","ksys","dd","ravelen"]
+    refs:["bb","ksys","dd"]
   },
   {
     id:"p5", code:"P5", name:"RPG 카드 부여", status:"open", statusLabel:"미설계",
-    why:"Songs of Silence의 영웅 카드와 라벨렌의 인연을 잔선 인물 412명에 붙이는 규칙이 없다.",
+    why:"Songs of Silence의 영웅 카드를 잔선 인물 412명에 붙이는 규칙이 없다.",
     do:"생업·관계·직위가 어떤 카드를 켜는지. 덱 구축 없이 부여만.",
     gate:"로드맵이 명시적으로 미설계. 다음 모듈 전에 소유자 잠금이 필요.",
-    refs:["songs","ravelen","taikou"]
+    refs:["songs","taikou"]
   },
   {
     id:"p6", code:"P6", name:"경량 4X 가정", status:"assume", statusLabel:"설계 가정",

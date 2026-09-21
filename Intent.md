@@ -43,14 +43,13 @@
 ## 결정 3 — 목표 형태: 4X + RPG, 전투는 실시간 진형·카드 전투 (2026-09-07)
 
 - 2026-09-07 소유자 지시: 이 게임은 "**4X with RPG**"이며, 전투는 턴제가 아니라 "**real time battle with formation and card based**"로 만든다. 목표 형태의 기준 레퍼런스는 **Songs of Silence**(Chimera Entertainment, 2024 — 지도 턴 4X + 실시간 자동 전투 + 영웅 카드)다.
-- 같은 날 한국어 웹 전략 라벨렌 전기를 역설계해 턴제 쪽 마지막 정밀 참조로 두었다. 거기서 가져오는 것은 턴 구조가 아니라 사기·항복 3조건·지휘조·인연 등급·병참 준비안·예고된 증원 같은 전투 바깥 계약이다.
 - 유지하는 계약: 1.5m 4방향 타일 격자, 캐릭터 실루엣 계약, 동일 seed + 명령 기록 결정론, 부상 이행, 포획·영입 관계 게이트. 시야·카메라는 결정 5. 바뀌는 것은 전투 안에서 플레이어가 하는 일뿐이다 — 유닛 단위 턴 명령 대신 전투 전 진형 편집, 전투 중 카드(일시정지 가능, 덱 구축·랜덤 드로우 없음), 후퇴·항복 판단.
   - *2026-09-18 결정 10 대체 주석: 이 문장의 4방향 타일 격자·실루엣 계약은 폐기됐다. 결정론·부상·포획 계약은 유효하다.*
   - *2026-09-19 결정 11 대체 주석: 실시간 진형·카드는 제품 목표 전투가 아니다. 목표 입력은 부대 선택과 부대 명령이다. 카드·덱·재충전·소유권 규칙은 POC 역사다. 결정론·부상·포획 계약은 유효하다. 틱 간격·카드 재충전·사기 임계 등 미결 수치는 새 목표에서 만들지 않는다.*
-- 개정한 문서: [실시간 진형·카드 전투](GDD/rules/Realtime-Formation-Card-Battle.md)(옛 전투 문서를 이름 변경), [이 게임이 뭔지](GDD/Game-Thesis.md), [레퍼런스 게임 조사](GDD/Game-References.md), [개발 로드맵](GDD/Development-Roadmap.md), 새 레퍼런스 페이지 [Songs of Silence](GDD/references/Ref-Songs-of-Silence.md)·[라벨렌 전기](GDD/references/Ref-Ravelen-Chronicles.md), [Concept.md](Concept.md), [ToDo.md](ToDo.md) 비목표. 폐기된 POC 도표는 새 목표 화면의 구현 완료 증거가 아니다.
+- 개정한 문서: [실시간 진형·카드 전투](GDD/rules/Realtime-Formation-Card-Battle.md)(옛 전투 문서를 이름 변경), [이 게임이 뭔지](GDD/Game-Thesis.md), [레퍼런스 게임 조사](GDD/Game-References.md), [개발 로드맵](GDD/Development-Roadmap.md), 새 레퍼런스 페이지 [Songs of Silence](GDD/references/Ref-Songs-of-Silence.md), [Concept.md](Concept.md), [ToDo.md](ToDo.md) 비목표. 폐기된 POC 도표는 새 목표 화면의 구현 완료 증거가 아니다.
 - 현재 모듈(`Unity POC 통합 코어 루프`)은 바뀌지 않는다. POC의 동일 격자 턴제 규칙(ToDo 8)은 이 결정이 구현되기 전까지의 과도 상태이며, **다음 모듈은 실시간 진형·카드 전투 코어**로 지정한다(로드맵 6번). 이 단계에서는 구현하지 않는다.
   - *2026-09-19 결정 11 대체 주석: 다음 제품 목표 전투는 부대 지휘다. 카드 코어는 POC로 남고, 이 문서 개정에서 Unity를 바꾸지 않는다.*
-- 미결 사항(다음 모듈 계획에서 잠근다): 틱 간격, 카드 재충전 규칙, 사기 임계 수치, 전투 판정 수치를 라벨렌식 9스탯으로 둠지 Songs of Silence식 소수 수치+특성으로 압축할지, 자동 해결 허용 범위.
+- 미결 사항(다음 모듈 계획에서 잠근다): 틱 간격, 카드 재충전 규칙, 사기 임계 수치, 전투 판정 수치를 Songs of Silence식 소수 수치+특성으로 압축할지, 자동 해결 허용 범위.
 
 ## 결정 4 — 오드랜드 그래픽·SFX·VFX 전량 반입, Spine은 POC 에셋으로 (2026-09-07)
 

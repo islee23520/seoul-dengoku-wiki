@@ -8,7 +8,7 @@ Reference-game mechanics encyclopedia plus verification gate records; score 8 â€
 |------|----------|-------|
 | Encyclopedia entry and template | `canon-reference/MASTER-PLAN.md` | 9-section per-game template; 20 game dossiers |
 | Cross-game synthesis | `canon-reference/CROSS-GAME-SYNTHESIS.md` | Comparisons across the corpus |
-| Per-game dossiers | `canon-reference/<game>.md` | kenshi, battle-brothers, crusader-kings-3, bannerlord, fire-emblem-fft, into-the-breach, farland-wog-triangle, nobunagas-ambition, unicorn-overlord, xcom-2, romance-of-three-kingdoms, songs-of-silence, taikou-risshiden, ravelen-chronicles, darkest-dungeon, open-source-games-mechanisms, Reference-Game-Mechanisms |
+| Per-game dossiers | `canon-reference/<game>.md` | kenshi, battle-brothers, crusader-kings-3, bannerlord, fire-emblem-fft, into-the-breach, farland-wog-triangle, nobunagas-ambition, unicorn-overlord, xcom-2, romance-of-three-kingdoms, songs-of-silence, taikou-risshiden, darkest-dungeon, open-source-games-mechanisms, Reference-Game-Mechanisms |
 | Source ledger | `canon-reference/jaepyo-iyen-source-ledger.md` | Which claims trace to which sources |
 | Verification policy | `verification/verification-policy-notes.md` | What may be pinned and what evidence keeps |
 | Gate outputs | `verification/gate-outputs.txt`, `verification/final-verification-evidence.json` | Named gates with PASS lines |

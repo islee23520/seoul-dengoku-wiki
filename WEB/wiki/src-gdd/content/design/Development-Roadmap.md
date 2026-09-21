@@ -8,7 +8,7 @@
 
 전투 카메라와 일시정지는 질문 시간 만료 뒤 채택한 설계 기본값이며, 소유자가 명시한 결정이 아니다. 카메라는 팬·오빗·줌이 가능한 3D 자유 지휘 시점이다. 각도·FOV 수치는 없다. 일시정지는 그 파티의 닫힌 전투만 멈추고, 정지 중 미리보기·확정을 허용한다. 수락된 명령은 재개 뒤 다음 시뮬레이션 단계에서 입력 순서대로 현재 지시를 교체한다. 감속·배속·명령 큐는 없다. 결정 10의 사이드스크롤을 새 목표 시점으로 다시 쓰지 않는다.
 
-기준 조사 원문은 [Songs of Silence](/references/Ref-Songs-of-Silence)와 [라벨렌 전기](/references/Ref-Ravelen-Chronicles)다. 작품 사실과 당시 차용 기록은 [레퍼런스 게임 조사](/design/Game-References)에 남긴다. 지도 턴·영웅 카드·턴제 SRPG는 현재 목표가 아니다.
+기준 조사 원문은 [Songs of Silence](/references/Ref-Songs-of-Silence)다. 작품 사실과 당시 차용 기록은 [레퍼런스 게임 조사](/design/Game-References)에 남긴다. 지도 턴·영웅 카드·턴제 SRPG는 현재 목표가 아니다.
 
 | 층 | 목표 | 상태 |
 |---|---|---|

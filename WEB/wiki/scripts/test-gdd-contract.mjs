@@ -7,5 +7,6 @@ test('GDD catalog exposes canonical documents and current data summaries', async
   assert.ok(contract.documents.length >= 45)
   assert.equal(new Set(contract.documents.map((document) => document.route)).size, contract.documents.length)
   assert.ok(contract.documents.every((document) => document.sourcePath.startsWith('GDD/')))
+  assert.ok(contract.documents.every((document) => !/ravelen/i.test(`${document.route} ${document.sourcePath}`)), 'retired Ravelen reference must not be in the GDD catalog')
   assert.deepEqual(contract.datasets.map((dataset) => dataset.records), [1004, 1004, 37, 334, 0, 334, 427])
 })
