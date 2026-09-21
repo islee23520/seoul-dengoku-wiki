@@ -1,5 +1,80 @@
 # 인물 총람
 
+붕괴 이후 서울 16국과 무소속 회랑의 이름 있는 인물 1004명을 국가·직위·단계·관계 수로 묶은 명부다. 고유 이름 1004행은 핵심 인물, 16개 국가 장부, 무소속 카드에 모두 연결된다. 16국 장부 바깥의 이주민 회랑과 징집 잔존 인력은 회랑 인물 총람에 따로 묶는다.
+
+표의 `관계 수`는 [관계 원장](/world/Cast-Relations)에서 해당 인물이 보낸 송신 간선만 센다(수신 간선 제외). T0 핵심 인물은 수신 간선으로 연결되므로, 관계 수가 0이어도 고립으로 읽히지는 않는다.
+
+## 게시 문서와 조각 현황
+
+조각 완료는 세계관 완료나 Wiki 게시 완료로 읽히지 않는다.
+
+현재 게시된 인물 원문은 국가별 명부와 [인물 관계](/world/Cast-Relations) [주요 인물](/world/Core-Characters)에서 확인한다.
+
+구세대 `docs/cast-*` 브랜치와 조각은 기계 병합(브랜치별 자동 merge·rerere·ours/theirs 일괄 적용)으로 main에 넣지 않는다.
+
+게시 인물 원본은 `Cast-State-01`–`16` 이 총람 [인물 관계](/world/Cast-Relations) [주요 인물](/world/Core-Characters)이며, 조각은 이 원본에 맞춰 큐레이션한 뒤에만 게시한다.
+
+조각 파일이 있다는 사실만으로 게시 승인이 열리지는 않는다.
+
+아래는 승인된 허브 기록 `fe2d8aa`·`f7521c9`의 39개 항목이다.
+
+게시 기준선 `1872919`에는 이 본문 36개와 그림 3개가 없으므로 모두 미게시·대기로 남긴다.
+
+경로와 SHA는 보관 위치를 추적하는 기록이며, 게시 링크나 통합 승인이 되지는 않는다.
+
+별도 브랜치의 본문·그림은 이번 인덱스에 포함하지 않는다.
+
+2026-09-05 `docs/cast-backstories-houses-physical-ai` @ `4e204e8` 큐레이션(#15–#18) 결과는 게시 상태 칸에 남긴다.
+
+#14 기계 병합 금지로 Story-Batch/Hostile-Group 본문은 이 브랜치에 일괄 추가하지 않는다.
+
+원본 허브에서 B001에 사용한 `confirmed-landed`는 그 브랜치 안의 착지를 뜻하며, main 게시를 뜻하지는 않는다.
+
+G07–G24는 기록된 SHA에는 파일이 없었으나 `ea81bb9` 착지 본문이 main에 있으며, 이슈 #17 큐레이션 결과는 게시 상태 칸에 남긴다.
+
+| 항목 | 게시 상태 | 기록된 경로 · SHA · 브랜치 | 조각 확인 / 남은 일 |
+| --- | --- | --- | --- |
+| B001 | 게시 | `docs/game-logic/Story-Batch-B001.md` @ `8dd66cc72f11fc2d93b062ce33af6a491a84a7ab` (`docs/cast-backstories-houses-physical-ai`) | 게시 확인. K-인물 소속·직위·촉발 사건 Cast-State/Core 일치. H01 한누리는 합성(총람 비등재). 금지 토큰 0 |
+| B002 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B002.md` @ `b6397adb27eabe3503af3011ffda624bc884b33e` (`docs/cast-b002`) | K-인물 Cast-State 이름·소속 일치. H02 서린은 합성(총람 비등재, 윤서린과 비동일). #14로 미게시 |
+| B003 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B003.md` @ `23240675edcb508f327ef903afcb4a56a95d38d0` (`docs/cast-b003`) | K-인물 Cast-State 이름·소속 일치. H03 이도는 합성(총람 비등재). #14로 미게시 |
+| B004 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B004.md` @ `c3f33a7839748ee1408d8113278f7522b5757441` (`docs/cast-b004`) | K-인물 Cast-State 이름·소속 일치. H04 강별은 합성(총람 비등재). #14로 미게시 |
+| B005 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B005.md` @ `406d5e8922450519d847f856f667d2226bb8139f` (`docs/cast-b005`) | K-인물 Cast-State 이름·소속 일치. H05 윤재는 합성(총람 비등재, 지윤재·탁윤재와 비동일). #14로 미게시 |
+| B006 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B006.md` @ `2da40af520c5498b3f8af910b9f2b44712cade97` (`docs/cast-b006`) | K-인물 Cast-State 이름·소속 일치. H06 박솔은 합성(총람 비등재). #14로 미게시 |
+| B007 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B007.md` @ `fb447e42d0010379bbb20d5ed71b85c5281cc906` (`docs/cast-b007`) | K-인물 Cast-State 이름·소속 일치. H07 정우람은 합성(총람 비등재). 본문이 Cast-Index.md#S07 앵커를 잘못 주장. #14로 미게시 |
+| B008 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B008.md` @ `8e1a2d02c450e26c52463e7e08e0b96fb95e5aaa` (`docs/cast-b008`) | K-인물 Cast-State 이름·소속 일치. H08 최다온은 합성(총람 비등재). #14로 미게시 |
+| B009 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B009.md` @ `f9e9a9f74736e3181987307b41482b68aee54032` (`docs/cast-b009`) | K-인물 Cast-State 이름·소속 일치. H09 조하람은 합성(총람 비등재). #14로 미게시 |
+| B010 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B010.md` @ `702c75668c10d26cf05f3d679003239450af3f71` (`docs/cast-b010`) | K-인물 Cast-State 이름·소속 일치. H10 윤새론은 합성(총람 비등재). #14로 미게시 |
+| B011 | 폐기(사유: H11 합성 김도하가 국가03 주민대표 김도하와 동명) | `docs/game-logic/Story-Batch-B011.md` @ `1feb1084269ce3882a220959eea61b10eaf89ca9` (`docs/cast-b011`) | 폐기 확인·사유 정정. 인간 김도하(마곡·방화 주민대표)와 H11 합성 인격이 같은 표시 이름. K-인물 소속은 일치하나 동명 충돌로 게시 불가 |
+| B012 | 폐기(사유: #14 본문 미착지, 큐레이션 통과) | `docs/game-logic/Story-Batch-B012.md` @ `6e6f958e191969c4e4d2ff5427820249ef73e484` (`docs/cast-b012`) | K-인물 Cast-State 이름·소속 일치. H12 이채온은 합성(총람 비등재). #14로 미게시 |
+| G01 | 게시 | `docs/game-logic/Hostile-Group-G01.md` @ `a683b613d81d9c5a3098e01b26a9316e1c774cc0` (`docs/cast-g01-g06`) | Cast-State SoT 대조 완; 이슈 #16 큐레이션 승인 |
+| G02 | 게시 | `docs/game-logic/Hostile-Group-G02.md` @ `a683b613d81d9c5a3098e01b26a9316e1c774cc0` (`docs/cast-g01-g06`) | Cast-State SoT 대조 완; 이슈 #16 큐레이션 승인 |
+| G03 | 게시 | `docs/game-logic/Hostile-Group-G03.md` @ `a683b613d81d9c5a3098e01b26a9316e1c774cc0` (`docs/cast-g01-g06`) | Cast-State SoT 대조 완; 이슈 #16 큐레이션 승인 |
+| G04 | 게시 | `docs/game-logic/Hostile-Group-G04.md` @ `a683b613d81d9c5a3098e01b26a9316e1c774cc0` (`docs/cast-g01-g06`) | Cast-State SoT 대조 완; 이슈 #16 큐레이션 승인 |
+| G05 | 게시 | `docs/game-logic/Hostile-Group-G05.md` @ `a683b613d81d9c5a3098e01b26a9316e1c774cc0` (`docs/cast-g01-g06`) | Cast-State SoT 대조 완; 이슈 #16 큐레이션 승인 |
+| G06 | 게시 | `docs/game-logic/Hostile-Group-G06.md` @ `a683b613d81d9c5a3098e01b26a9316e1c774cc0` (`docs/cast-g01-g06`) | Cast-State SoT 대조 완; 이슈 #16 큐레이션 승인 |
+| G07 | 게시 | `docs/game-logic/Hostile-Group-G07.md` @ `2806eb8e803ad572b0547f9011a62d941fa94120` (`docs/cast-g07-g12`) | ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인 |
+| G08 | 게시 | `docs/game-logic/Hostile-Group-G08.md` @ `2806eb8e803ad572b0547f9011a62d941fa94120` (`docs/cast-g07-g12`) | ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인 |
+| G09 | 게시 | `docs/game-logic/Hostile-Group-G09.md` @ `2806eb8e803ad572b0547f9011a62d941fa94120` (`docs/cast-g07-g12`) | ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인 |
+| G10 | 게시 | `docs/game-logic/Hostile-Group-G10.md` @ `2806eb8e803ad572b0547f9011a62d941fa94120` (`docs/cast-g07-g12`) | ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인 |
+| G11 | 게시 | `docs/game-logic/Hostile-Group-G11.md` @ `2806eb8e803ad572b0547f9011a62d941fa94120` (`docs/cast-g07-g12`) | ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인 |
+| G12 | 게시 | `docs/game-logic/Hostile-Group-G12.md` @ `2806eb8e803ad572b0547f9011a62d941fa94120` (`docs/cast-g07-g12`) | ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인 |
+| G13 | 게시 | `docs/game-logic/Hostile-Group-G13.md` @ `fe644da70821e0205449a7d0530acc9ce7887cdd` (`docs/cast-g13-g18`) | ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인 |
+| G14 | 게시 | `docs/game-logic/Hostile-Group-G14.md` @ `fe644da70821e0205449a7d0530acc9ce7887cdd` (`docs/cast-g13-g18`) | ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인 |
+| G15 | 게시 | `docs/game-logic/Hostile-Group-G15.md` @ `fe644da70821e0205449a7d0530acc9ce7887cdd` (`docs/cast-g13-g18`) | ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인 |
+| G16 | 게시 | `docs/game-logic/Hostile-Group-G16.md` @ `fe644da70821e0205449a7d0530acc9ce7887cdd` (`docs/cast-g13-g18`) | ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인 |
+| G17 | 게시 | `docs/game-logic/Hostile-Group-G17.md` @ `fe644da70821e0205449a7d0530acc9ce7887cdd` (`docs/cast-g13-g18`) | ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인 |
+| G18 | 게시 | `docs/game-logic/Hostile-Group-G18.md` @ `fe644da70821e0205449a7d0530acc9ce7887cdd` (`docs/cast-g13-g18`) | ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인 |
+| G19 | 게시 | `docs/game-logic/Hostile-Group-G19.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`) | ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인 |
+| G20 | 게시 | `docs/game-logic/Hostile-Group-G20.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`) | ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인 |
+| G21 | 게시 | `docs/game-logic/Hostile-Group-G21.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`) | ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인 |
+| G22 | 게시 | `docs/game-logic/Hostile-Group-G22.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`) | ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인 |
+| G23 | 게시 | `docs/game-logic/Hostile-Group-G23.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`) | ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인 |
+| G24 | 게시 | `docs/game-logic/Hostile-Group-G24.md` @ `39abb9f5c5f9835298eab1d518c57059e526c353` (`docs/cast-g19-g24`) | ea81bb9 본문 존재; SoT 이름 일치; 금지 토큰 0; 이슈 #17 큐레이션 승인 |
+| ISO-house-influence | 게시 | `docs/assets/wiki/house-influence-isometric.svg` @ `7b4e27b91510c024e936ed7cc4322714ff280313` (`docs/cast-iso-atlas-v2`) | 게시 승인 (운영가문/HP/HC 라벨 일치, Cast-Relations 및 Operating-Houses.md와 정합, 빌드 fragment 확인) |
+| ISO-hostile-ecology | 게시 | `docs/assets/wiki/hostile-ecology-isometric.svg` @ `7b4e27b91510c024e936ed7cc4322714ff280313` (`docs/cast-iso-atlas-v2`) | 게시 승인 (G01–G24 라벨 및 Hostile-Ecology-Index.md와 일치, G07+ 미완성 무시, 빌드 fragment 확인) |
+
+[국가 01 명부](/world/Cast-State-01) · [국가 02 명부](/world/Cast-State-02) · [국가 03 명부](/world/Cast-State-03) · [국가 04 명부](/world/Cast-State-04) · [국가 05 명부](/world/Cast-State-05) · [국가 06 명부](/world/Cast-State-06) · [국가 07 명부](/world/Cast-State-07) · [국가 08 명부](/world/Cast-State-08) · [국가 09 명부](/world/Cast-State-09) · [국가 10 명부](/world/Cast-State-10) · [국가 11 명부](/world/Cast-State-11) · [국가 12 명부](/world/Cast-State-12) · [국가 13 명부](/world/Cast-State-13) · [국가 14 명부](/world/Cast-State-14) · [국가 15 명부](/world/Cast-State-15) · [국가 16 명부](/world/Cast-State-16)
+
 ## 국가 01 급수계약정
 
 | 이름 | 직위 | 단계 | 관계 수 |
