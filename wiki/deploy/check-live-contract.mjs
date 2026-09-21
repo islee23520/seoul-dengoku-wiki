@@ -13,8 +13,11 @@ const compatibilityRoutes = [
   '/wiki/world/World-Unbinding',
   '/wiki/world/',
 ]
-const regressionRoutes = ['/', '/wiki/', '/wiki/states', '/play/']
-const removedRoutes = ['/system-design/regions/']
+const regressionRoutes = ['/', '/wiki/', '/wiki/states', '/gdd/', '/gdd/documents', '/gdd/data', '/play/']
+const redirectRoutes = new Map([
+  ['/system-design/regions', '/wiki/world/World-and-Subway-Layers'],
+  ['/system-design/regions/', '/wiki/world/World-and-Subway-Layers'],
+])
 const failures = []
 
 const checkReactRoute = async (route, expectedTitle) => {
@@ -33,9 +36,10 @@ for (const route of regressionRoutes) {
   if (response.status !== 200) failures.push(`regression-http:${response.status}:${route}`)
 }
 
-for (const route of removedRoutes) {
+for (const [route, destination] of redirectRoutes) {
   const response = await fetch(`${baseUrl}${route}`, { redirect: 'manual' })
-  if (response.status !== 404) failures.push(`removed-http:${response.status}:${route}`)
+  if (response.status !== 308) failures.push(`redirect-http:${response.status}:${route}`)
+  if (response.headers.get('location') !== destination) failures.push(`redirect-location:${route}:${response.headers.get('location')}`)
 }
 
 const result = {
@@ -44,7 +48,7 @@ const result = {
   documents: documents.length,
   compatibilityRoutes: compatibilityRoutes.length,
   regressionRoutes: regressionRoutes.length,
-  removedRoutes: removedRoutes.length,
+  redirectRoutes: redirectRoutes.size,
   failures,
 }
 
