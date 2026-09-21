@@ -1,0 +1,6 @@
+{
+  "schema": "seoul-station-control.v1",
+  "baseline": "surface-territory",
+  "description": "역 점령은 지표 영토와 독립된 원장이다. 개막 초안은 역 좌표의 지표 영토를 복사하고, 이후 변경은 overrides의 명시적 ControlDelta로만 반영한다.",
+  "overrides": []
+}

@@ -4,6 +4,7 @@ using System.Text;
 using Janseon.Core;
 using Janseon.Core.Battle.Contracts;
 using Janseon.Core.Battle.Sim;
+using Janseon.Core.Data;
 
 namespace Janseon.Foundation.UI
 {
@@ -26,19 +27,14 @@ namespace Janseon.Foundation.UI
         public string CurrentStationElement { get; private set; } = string.Empty;
         public string Fingerprint { get; private set; } = string.Empty;
         public Dictionary<string, bool> NamedFlags { get; } = new Dictionary<string, bool>();
-        public Dictionary<string, string> BattleCellOccupancy { get; } = new Dictionary<string, string>();
         public int BattleHp { get; private set; }
         public int BattleMaxHp { get; private set; }
         public float HpFill01 { get; private set; }
         public int PlayerMorale { get; private set; }
         public int EnemyMorale { get; private set; }
-        public int GeneralRechargeTicksLeft { get; private set; }
-        public string ActingCardOwnerText { get; private set; } = string.Empty;
-        public int ActingCardCooldownTicksLeft { get; private set; }
-        public int NextReinforcementTick { get; private set; } = -1;
+        public double NextReinforcementSeconds { get; private set; } = -1d;
         public int RemainingReinforcementCount { get; private set; }
         public bool BattlePaused { get; private set; }
-        public string FormationSelectionText { get; private set; } = string.Empty;
         public string SettlementOutcomeCode { get; private set; } = string.Empty;
         public string SettlementOutcomeText { get; private set; } = string.Empty;
         public List<string> BattleLogEntries { get; } = new List<string>();
@@ -65,13 +61,6 @@ namespace Janseon.Foundation.UI
         public bool ShowSettleAction { get; private set; }
         public bool ShowBattlePlayPauseAction { get; private set; }
         public bool ShowBattleResetAction { get; private set; }
-        public bool ShowCardGeneralUseAction { get; private set; }
-        public bool ShowEditFormationAction { get; private set; }
-        public bool ShowCardMobilityRegroupAction { get; private set; }
-        public bool CanUseGeneralCard { get; private set; }
-        public bool CanUseGuardCard { get; private set; }
-        public bool CanUsePincerCard { get; private set; }
-        public bool CanUseMobilityCard { get; private set; }
         public bool ShowReturnAction { get; private set; }
 
         public static GameplayUiSnapshot FromCampaign(
@@ -79,7 +68,8 @@ namespace Janseon.Foundation.UI
             BattleSimState battle,
             bool battlePaused = false,
             FormationSlot[] pendingFormation = null,
-            RouteGraph graph = null)
+            RouteGraph graph = null,
+            IReadOnlyCampaignDefinition campaignDefinition = null)
         {
             var snap = new GameplayUiSnapshot { BattlePaused = battlePaused };
             if (campaign == null)
@@ -98,7 +88,7 @@ namespace Janseon.Foundation.UI
                 && campaign.HomeBase.Equals(StationId.Yeongdeungpo);
             snap.NamedFlags[UiElementNames.HubOvernightCopy + ":visible"] = snap.ShowOvernightCopy;
             snap.NamedFlags[UiElementNames.HubBulletinPanel + ":visible"] = snap.ShowBulletinPanel;
-            FillDeployment(snap, campaign);
+            FillDeployment(snap, campaign, campaignDefinition);
             snap.EncounterContext = campaign.Node.Value
                 + " · "
                 + campaign.Stage.ToString()
@@ -115,7 +105,7 @@ namespace Janseon.Foundation.UI
             {
                 snap.VisiblePanel = GameplayPanelId.Battle;
                 ConfigureBattleActions(snap, battle);
-                FillBattle(snap, battle, pendingFormation);
+                FillBattle(snap, battle);
             }
             else if (battle != null && campaign.PendingBattle != null
                      && campaign.Stage == CampaignStage.Resolution
@@ -167,7 +157,7 @@ namespace Janseon.Foundation.UI
             {
                 snap.VisiblePanel = GameplayPanelId.Battle;
                 ConfigureBattleActions(snap, battle);
-                FillBattle(snap, battle, pendingFormation);
+                FillBattle(snap, battle);
             }
             else if (campaign.Stage == CampaignStage.Encounter)
             {
@@ -210,10 +200,16 @@ namespace Janseon.Foundation.UI
             return snap;
         }
 
-        static void FillDeployment(GameplayUiSnapshot snap, CampaignState campaign)
+        static void FillDeployment(
+            GameplayUiSnapshot snap,
+            CampaignState campaign,
+            IReadOnlyCampaignDefinition campaignDefinition)
         {
             DeploymentState deployment = campaign.Deployment
-                ?? DeploymentApi.Create(campaign.PartyMemberCount, campaign.PartyHp);
+                ?? DeploymentApi.Create(
+                    campaign.PartyMemberCount,
+                    campaign.PartyHp,
+                    campaignDefinition?.PersistentPartyMaxHp ?? campaign.PersistentPartyMaxHp);
             for (var i = 0; i < deployment.RosterCount; i++)
             {
                 snap.DeployUnitIds.Add(deployment.UnitIdAt(i));
@@ -288,25 +284,17 @@ namespace Janseon.Foundation.UI
         static void ConfigureBattleActions(GameplayUiSnapshot snap, BattleSimState battle)
         {
             bool ongoing = battle.Outcome == BattleOutcomeKind.Ongoing;
-            snap.ShowEditFormationAction = ongoing && !battle.Deployed;
             snap.ShowBattlePlayPauseAction = ongoing && battle.Deployed;
             snap.ShowBattleResetAction = ongoing;
-            snap.ShowCardGeneralUseAction = ongoing && battle.Deployed;
-            snap.ShowCardMobilityRegroupAction = ongoing && battle.Deployed;
-            snap.NamedFlags[UiElementNames.EditFormation + ":visible"] = snap.ShowEditFormationAction;
             snap.NamedFlags[UiElementNames.BattlePlayPause + ":visible"] = snap.ShowBattlePlayPauseAction;
             snap.NamedFlags[UiElementNames.BattleReset + ":visible"] = snap.ShowBattleResetAction;
-            snap.NamedFlags[UiElementNames.CardGeneralUse + ":visible"] = snap.ShowCardGeneralUseAction;
-            snap.NamedFlags[UiElementNames.MobilityRegroup + ":visible"] = snap.ShowCardMobilityRegroupAction;
         }
 
         static void FillBattle(
             GameplayUiSnapshot snap,
-            BattleSimState battle,
-            FormationSlot[] pendingFormation)
+            BattleSimState battle)
         {
             snap.NamedFlags[UiElementNames.BattleHud + ":visible"] = true;
-            snap.NamedFlags[UiElementNames.BattleGrid + ":visible"] = true;
             snap.NamedFlags[UiElementNames.BattleHp + ":visible"] = true;
             snap.NamedFlags[UiElementNames.BattleHpMeter + ":visible"] = true;
             snap.NamedFlags[UiElementNames.BattleMorale + ":visible"] = true;
@@ -314,25 +302,7 @@ namespace Janseon.Foundation.UI
             snap.NamedFlags[UiElementNames.BattleMoraleEnemy + ":visible"] = true;
             snap.NamedFlags[UiElementNames.BattleReinforcementForecast + ":visible"] = true;
             snap.NamedFlags[UiElementNames.BattleReinforcement + ":visible"] = true;
-            snap.NamedFlags[UiElementNames.BattleCardTray + ":visible"] = true;
-            snap.NamedFlags[UiElementNames.BattleCardOwner + ":visible"] = true;
-            snap.NamedFlags[UiElementNames.BattleCardCooldown + ":visible"] = true;
-            snap.NamedFlags[UiElementNames.BattleCardTargetRing + ":visible"] = true;
-            snap.NamedFlags[UiElementNames.BattleCardCancel + ":visible"] = true;
             snap.NamedFlags[UiElementNames.BattleLog + ":visible"] = true;
-            snap.NamedFlags[UiElementNames.CardGeneralRecharge + ":visible"] = true;
-            snap.NamedFlags[UiElementNames.FormationSelection + ":visible"] = !battle.Deployed;
-            if (!battle.Deployed && pendingFormation != null && pendingFormation.Length >= 2)
-            {
-                FormationSlot first = pendingFormation[0];
-                FormationSlot second = pendingFormation[1];
-                snap.FormationSelectionText = first.Unit + "@"
-                    + first.Row.ToString(CultureInfo.InvariantCulture) + ","
-                    + first.Column.ToString(CultureInfo.InvariantCulture) + " | "
-                    + second.Unit + "@"
-                    + second.Row.ToString(CultureInfo.InvariantCulture) + ","
-                    + second.Column.ToString(CultureInfo.InvariantCulture);
-            }
 
             if (battle.Sides != null && battle.Sides.Length >= 2)
             {
@@ -340,59 +310,36 @@ namespace Janseon.Foundation.UI
                 snap.EnemyMorale = battle.Sides[1].Morale;
             }
 
-            if (battle.Cards != null)
-            {
-                for (var i = 0; i < battle.Cards.Length; i++)
-                {
-                    CardState card = battle.Cards[i];
-                    if (!card.OwnerUnitId.Equals(battle.PlayerCommanderId)) continue;
-                    if (card.Id == "encourage-morale")
-                    {
-                        snap.GeneralRechargeTicksLeft = card.RechargeTicksLeft;
-                        snap.ActingCardCooldownTicksLeft = card.RechargeTicksLeft;
-                        snap.ActingCardOwnerText = battle.PlayerCommanderId.ToString();
-                        snap.CanUseGeneralCard = battle.Deployed && card.RechargeTicksLeft == 0;
-                    }
-                    else if (card.Id == "guard-shieldwall")
-                    {
-                        snap.CanUseGuardCard = battle.Deployed && card.RechargeTicksLeft == 0;
-                    }
-                    else if (card.Id == "pincer-focus")
-                    {
-                        snap.CanUsePincerCard = battle.Deployed && card.RechargeTicksLeft == 0;
-                    }
-                    else if (card.Id == "mobility-regroup")
-                    {
-                        snap.CanUseMobilityCard = battle.Deployed && card.RechargeTicksLeft == 0;
-                    }
-                }
-            }
-
             if (battle.Telegraphs != null)
             {
                 for (var i = 0; i < battle.Telegraphs.Length; i++)
                 {
                     TelegraphState telegraph = battle.Telegraphs[i];
-                    if (telegraph.Arrived) continue;
-                    snap.RemainingReinforcementCount += telegraph.Count;
-                    if (snap.NextReinforcementTick < 0 || telegraph.ArrivalTick < snap.NextReinforcementTick)
+                    if (telegraph.Completed
+                        || telegraph.ElapsedSeconds + telegraph.DurationSeconds <= battle.ElapsedSeconds)
                     {
-                        snap.NextReinforcementTick = telegraph.ArrivalTick;
+                        continue;
+                    }
+                    var arrivalSeconds = telegraph.ElapsedSeconds + telegraph.DurationSeconds;
+                    snap.RemainingReinforcementCount += telegraph.Count;
+                    if (snap.NextReinforcementSeconds < 0d || arrivalSeconds < snap.NextReinforcementSeconds)
+                    {
+                        snap.NextReinforcementSeconds = arrivalSeconds;
                     }
                 }
             }
 
-            snap.BattleForecast = snap.NextReinforcementTick < 0
+            snap.BattleForecast = snap.NextReinforcementSeconds < 0d
                 ? "증원 예고 없음"
                 : "증원 " + snap.RemainingReinforcementCount.ToString(CultureInfo.InvariantCulture)
-                    + "명 · 도착 tick " + snap.NextReinforcementTick.ToString(CultureInfo.InvariantCulture);
+                    + "명 · 도착 " + snap.NextReinforcementSeconds.ToString("R", CultureInfo.InvariantCulture) + "초";
 
             if (battle.Units == null) return;
             UnitState active = null;
             for (var i = 0; i < battle.Units.Length; i++)
             {
                 UnitState unit = battle.Units[i];
-                if (unit != null && unit.Side == 0 && unit.State != "Down")
+                if (unit != null && unit.Side == 0 && unit.Status != BattleUnitStatus.Down)
                 {
                     active = unit;
                     break;
@@ -409,19 +356,13 @@ namespace Janseon.Foundation.UI
             for (var i = 0; i < battle.Units.Length; i++)
             {
                 UnitState unit = battle.Units[i];
-                if (unit == null || unit.State == "Down") continue;
-                int displayX = battle.Arena == null || battle.Arena.Width <= 1
-                    ? 0
-                    : unit.Cell.X * 4 / (battle.Arena.Width - 1);
-                int displayY = battle.Arena == null || battle.Arena.Height <= 1
-                    ? 0
-                    : unit.Cell.Y * 4 / (battle.Arena.Height - 1);
-                string key = UiElementNames.BattleCell(displayX, displayY);
-                snap.BattleCellOccupancy[key] = unit.Side == 0 ? "ally" : "foe";
+                if (unit == null || unit.Status == BattleUnitStatus.Down) continue;
                 snap.BattleLogEntries.Add(
                     (unit.Side == 0 ? "ally" : "foe")
-                    + "@" + unit.Cell.X.ToString(CultureInfo.InvariantCulture)
-                    + "," + unit.Cell.Y.ToString(CultureInfo.InvariantCulture)
+                    + "@" + unit.Position.X.ToString(CultureInfo.InvariantCulture)
+                    + "," + unit.Position.Y.ToString(CultureInfo.InvariantCulture)
+                    + "," + unit.Position.Z.ToString(CultureInfo.InvariantCulture)
+                    + " yaw=" + unit.Facing.YawMilliDegrees.ToString(CultureInfo.InvariantCulture)
                     + " hp=" + unit.Hp.ToString(CultureInfo.InvariantCulture)
                     + "/" + unit.MaxHp.ToString(CultureInfo.InvariantCulture));
                 if (unit.Side == 0)
@@ -505,13 +446,9 @@ namespace Janseon.Foundation.UI
             sb.Append(";hp=").Append(BattleHp.ToString(CultureInfo.InvariantCulture));
             sb.Append(";morale=").Append(PlayerMorale.ToString(CultureInfo.InvariantCulture));
             sb.Append(',').Append(EnemyMorale.ToString(CultureInfo.InvariantCulture));
-            sb.Append(";generalRecharge=").Append(GeneralRechargeTicksLeft.ToString(CultureInfo.InvariantCulture));
-            sb.Append(";cardOwner=").Append(ActingCardOwnerText ?? string.Empty);
-            sb.Append(";cardCooldown=").Append(ActingCardCooldownTicksLeft.ToString(CultureInfo.InvariantCulture));
-            sb.Append(";reinforcement=").Append(NextReinforcementTick.ToString(CultureInfo.InvariantCulture));
+            sb.Append(";reinforcement=").Append(NextReinforcementSeconds.ToString("R", CultureInfo.InvariantCulture));
             sb.Append(',').Append(RemainingReinforcementCount.ToString(CultureInfo.InvariantCulture));
             sb.Append(";paused=").Append(BattlePaused ? '1' : '0');
-            sb.Append(";formation=").Append(FormationSelectionText ?? string.Empty);
             sb.Append(";out=").Append(SettlementOutcomeCode ?? string.Empty);
             sb.Append(";clock=").Append(ClockTick.ToString(CultureInfo.InvariantCulture));
             if (campaign != null)
@@ -545,8 +482,8 @@ namespace Janseon.Foundation.UI
 
             if (battle != null)
             {
-                sb.Append(";btick=").Append(battle.Tick.ToString(CultureInfo.InvariantCulture));
                 sb.Append(";bout=").Append(((int)battle.Outcome).ToString(CultureInfo.InvariantCulture));
+                sb.Append(";elapsed=").Append(battle.ElapsedSeconds.ToString("R", CultureInfo.InvariantCulture));
             }
 
             var keys = new List<string>(NamedFlags.Keys);
@@ -554,13 +491,6 @@ namespace Janseon.Foundation.UI
             for (var i = 0; i < keys.Count; i++)
             {
                 sb.Append('|').Append(keys[i]).Append('=').Append(NamedFlags[keys[i]] ? '1' : '0');
-            }
-
-            var cells = new List<string>(BattleCellOccupancy.Keys);
-            cells.Sort(System.StringComparer.Ordinal);
-            for (var i = 0; i < cells.Count; i++)
-            {
-                sb.Append('#').Append(cells[i]).Append('=').Append(BattleCellOccupancy[cells[i]]);
             }
 
             for (var i = 0; i < BattleLogEntries.Count; i++)

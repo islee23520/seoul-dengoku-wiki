@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="2" result="Passed" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-20 15:41:29Z" end-time="2026-09-20 15:41:31Z" duration="1.8354894">
+  <test-suite type="TestSuite" id="1029" name="서울:전국" fullname="서울:전국" runstate="Runnable" testcasecount="11" result="Passed" start-time="2026-09-20 15:41:29Z" end-time="2026-09-20 15:41:31Z" duration="1.835489" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1022" name="Janseon.Foundation.PlayModeTests.dll" fullname="/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave3-task32/GAME/Library/ScriptAssemblies/Janseon.Foundation.PlayModeTests.dll" runstate="Runnable" testcasecount="11" result="Passed" start-time="2026-09-20 15:41:29Z" end-time="2026-09-20 15:41:31Z" duration="1.831667" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="57326" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1023" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="11" result="Passed" start-time="2026-09-20 15:41:29Z" end-time="2026-09-20 15:41:31Z" duration="1.831169" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1024" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="11" result="Passed" start-time="2026-09-20 15:41:29Z" end-time="2026-09-20 15:41:31Z" duration="1.830780" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1025" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="11" result="Passed" start-time="2026-09-20 15:41:29Z" end-time="2026-09-20 15:41:31Z" duration="1.830458" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1001" name="Area1DataRepositoryPlayModeTests" fullname="Janseon.Foundation.Tests.Area1DataRepositoryPlayModeTests" classname="Janseon.Foundation.Tests.Area1DataRepositoryPlayModeTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-09-20 15:41:29Z" end-time="2026-09-20 15:41:31Z" duration="1.829608" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1002" name="BootstrapToFoundation_ResolvesSerializedCatalogRepositories" fullname="Janseon.Foundation.Tests.Area1DataRepositoryPlayModeTests.BootstrapToFoundation_ResolvesSerializedCatalogRepositories" methodname="BootstrapToFoundation_ResolvesSerializedCatalogRepositories" classname="Janseon.Foundation.Tests.Area1DataRepositoryPlayModeTests" runstate="Runnable" seed="45723634" result="Passed" start-time="2026-09-20 15:41:29Z" end-time="2026-09-20 15:41:31Z" duration="1.820916" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[JANSEON_STARTUP_READY screen=MainTitle
+The character with Unicode value \u2600 was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \U0001F4DC was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+]]></output>
+              </test-case>
+              <test-case id="1003" name="ScopeWithoutIndexProviderRegistration_FailsExplicitly" fullname="Janseon.Foundation.Tests.Area1DataRepositoryPlayModeTests.ScopeWithoutIndexProviderRegistration_FailsExplicitly" methodname="ScopeWithoutIndexProviderRegistration_FailsExplicitly" classname="Janseon.Foundation.Tests.Area1DataRepositoryPlayModeTests" runstate="Runnable" seed="1655794970" result="Passed" start-time="2026-09-20 15:41:31Z" end-time="2026-09-20 15:41:31Z" duration="0.003205" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: /Users/ilseoblee/Library/Application Support/Janseon Studio/서울_전국/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

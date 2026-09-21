@@ -27,7 +27,7 @@ const panels: { title: string; items: PanelItem[] }[] = [
   { title: '지리', items: [
     { label: '지하철 레이어', to: wikiLinks.subway, spa: true },
     { label: '역 카탈로그', to: wikiLinks.stations, spa: true },
-    { label: '지역 설정', to: wikiLinks.regions },
+    { label: '지역 설정', to: wikiLinks.regions, spa: true },
   ]},
   { title: '문화', items: [
     { label: '신앙과 풍속', to: wikiLinks.faith, spa: true },

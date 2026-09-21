@@ -25,7 +25,7 @@ const excludedPrefixes = [
   '.omo/',
   'RESEARCH/canon-reference/',
   'RESEARCH/verification/worktree-cleanup/',
-  'GDD/system-design/regions/',
+  'TOOL/tools/regions/data/',
   'LORE/regions/content/',
   'LORE/regions/sources/',
 ];
@@ -134,13 +134,6 @@ for (const relativePath of trackedFiles) {
   if (original.includes('\0')) continue;
 
   let updated = original;
-  const protectedHolders = [];
-  for (const phrase of ['현대자동차주식회사']) {
-    if (!updated.includes(phrase)) continue;
-    const token = `\u0000P${protectedHolders.length}\u0000`;
-    protectedHolders.push(phrase);
-    updated = updated.split(phrase).join(token);
-  }
   for (const entry of literalReplacements) {
     const matches = entry.regex ? updated.match(entry.regex) : null;
     const count = entry.regex ? (matches?.length ?? 0) : updated.split(entry.old).length - 1;
@@ -156,9 +149,6 @@ for (const relativePath of trackedFiles) {
     updated = updated.replace(entry.regex, entry.new);
     changedOccurrences += matches.length;
   }
-  protectedHolders.forEach((phrase, index) => {
-    updated = updated.split(`\u0000P${index}\u0000`).join(phrase);
-  });
 
   if (updated === current) continue;
   changedFiles += 1;

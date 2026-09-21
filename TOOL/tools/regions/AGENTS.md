@@ -9,6 +9,7 @@ Offline dated-Seoul geography atlas pipeline reading an immutable source bundle;
 | Data-interpretation contract | `README.md` | Authoritative rules: IDs, geometry, membership, quarantine |
 | Atlas build and verify | `build_region_atlas.py`, `verify_region_atlas.py` | `--as-of/--source-root/--boundary/--output`; verify has `--geometry-only` |
 | Authored content | `assemble_region_content.py`, `check_authored_district.py` | Prose assembly and authored-district gate |
+| Official-wiki map input | `data/atlas-data.js` | Generated 427-dong geometry/content projection; not a public viewer |
 | Interior/floor fill | `fill_station_interiors.py`, `fill_building_floors.py` | Structural fill scripts |
 | Shared helpers | `provenance.py`, `spatial.py`, `osm_source.py`, `profiles.py`, `prepare_boundary.py` | SHA-256 provenance, projection, OSM reading, profiles |
 | Tests | `test_region_atlas.py`, `test_content_assembly.py`, `test_publication.py`, `test_station_interiors.py` | unittest discovery pattern |

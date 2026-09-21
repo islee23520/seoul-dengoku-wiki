@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using Janseon.Core;
 using Janseon.Foundation.Composition;
 using Janseon.Foundation.UI;
+using Janseon.Tests.EditMode.Fixtures;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.UI;
@@ -25,7 +26,7 @@ namespace Janseon.Tests.EditMode
         [Test]
         public void FourthParticipant_IsRejectedWithoutMutation()
         {
-            DeploymentState state = DeploymentApi.Create(4, Hp(10, 10, 10, 10));
+            DeploymentState state = DeploymentApi.Create(4, Hp(10, 10, 10, 10), 10);
             Assert.That(state.ParticipantCount, Is.EqualTo(DeploymentApi.DeployCap));
             Assert.That(state.IsParticipating(DeploymentApi.UnitId(3)), Is.False,
                 "the fourth roster member starts in reserve when three slots are occupied");
@@ -52,14 +53,10 @@ namespace Janseon.Tests.EditMode
         [Test]
         public void FourthToggleThroughPresenter_IsRejectedAndRestoredWithoutCampaignMutation()
         {
-            CampaignState campaign = CampaignApi.StartNewGame(
-                23,
-                StationId.Yeongdeungpo,
-                "task-23-fourth-toggle",
-                StartingPreset.Wanderer);
+            CampaignState campaign = CampaignApi.StartNewGame(23, StationId.Yeongdeungpo, "task-23-fourth-toggle", StartingPreset.Wanderer, TestCampaignDefinition.Instance.BattleRulesVersion, TestCampaignDefinition.Instance.PersistentPartyUnitId, TestCampaignDefinition.Instance.PersistentPartyMaxHp);
             campaign.PartyMemberCount = 4;
             campaign.PartyHp = Hp(10, 10, 10, 10);
-            campaign.Deployment = DeploymentApi.Create(4, campaign.PartyHp);
+            campaign.Deployment = DeploymentApi.Create(4, campaign.PartyHp, 10);
 
             RectTransform root = UguiHudBuilder.BuildGameplay(null);
             var presenter = new GameplayPresenter();
@@ -94,7 +91,7 @@ namespace Janseon.Tests.EditMode
         [Test]
         public void WoundedLeftoverHp_DefaultsResting_AndRequiresExplicitOverride()
         {
-            DeploymentState state = DeploymentApi.Create(3, Hp(7, 10, 10));
+            DeploymentState state = DeploymentApi.Create(3, Hp(7, 10, 10), 10);
             string woundedId = DeploymentApi.UnitId(0);
 
             Assert.That(state.IsParticipating(woundedId), Is.False);
@@ -129,11 +126,7 @@ namespace Janseon.Tests.EditMode
         [Test]
         public void WandererThree_StillShowsThreeRealParticipationTogglesAtCap()
         {
-            CampaignState campaign = CampaignApi.StartNewGame(
-                23,
-                StationId.Yeongdeungpo,
-                "task-23-wanderer",
-                StartingPreset.Wanderer);
+            CampaignState campaign = CampaignApi.StartNewGame(23, StationId.Yeongdeungpo, "task-23-wanderer", StartingPreset.Wanderer, TestCampaignDefinition.Instance.BattleRulesVersion, TestCampaignDefinition.Instance.PersistentPartyUnitId, TestCampaignDefinition.Instance.PersistentPartyMaxHp);
             RectTransform root = UguiHudBuilder.BuildGameplay(null);
             var presenter = new GameplayPresenter();
             Assert.That(presenter.BindForTest(root), Is.True);

@@ -20,11 +20,23 @@ const pages = JSON.parse(fs.readFileSync(`${inputRoot}/hub-pages.json`, 'utf8'))
 const failures = []
 const crypto = require('node:crypto')
 
+function requireNoStore(response, route) {
+  const cacheControl = response.headers.get('cache-control') || ''
+  if (!cacheControl.toLowerCase().includes('no-store')) {
+    failures.push(`cache-control:${route}:${cacheControl || 'missing'}`)
+  }
+}
+
 ;(async () => {
+  const rootResponse = await fetch('http://127.0.0.1:8080/')
+  if (rootResponse.status !== 200) failures.push(`${rootResponse.status}:/`)
+  requireNoStore(rootResponse, '/')
+
   for (const page of pages) {
     const route = `/${page.target}/`
     const response = await fetch(`http://127.0.0.1:8080${route}`)
     if (response.status !== 200) failures.push(`${response.status}:${route}`)
+    requireNoStore(response, route)
     if (!manifest.pages.some((row) => row.id === page.id)) failures.push(`manifest:${page.id}`)
   }
   for (const artifact of manifest.artifacts) {

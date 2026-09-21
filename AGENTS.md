@@ -30,6 +30,7 @@ seoul-kenshi/
 |-- TOOL/                  # skills/, docs/, tools/ (repo npm package), unity-remote/ (only submodule)
 |-- WEB/                   # official React wiki + VitePress staging/gates; never canon
 |-- Backend/               # ASP.NET Core host-session coordinator (server/Coordinator) + tests
+|-- SOCIAL-MEDIA/          # operator X/Threads serial; NOT a hub page (see SOCIAL-MEDIA/AGENTS.md)
 |-- evidence/              # append-only test-evidence bundles (seoul-strategy-map-gdd/, pr-144/); new evidence = new dated dir
 |-- store/                 # frozen design-store capture run-4343cc0-160339 (pinned @ 4343cc0, 2026-09-13); root planning docs are the LIVE copies
 |-- Wikis/                 # legacy remnant (3 files); design-store seed remaps its old paths
@@ -61,6 +62,7 @@ seoul-kenshi/
 | Research citation policy | `RESEARCH/AGENTS.md` | Citation tiers, verification records, banned-term JSONs |
 | Delivery and publishing | `GDD/adr/ADR-001-repository-delivery-policy.md` | Accepted authority over historical local-only clauses |
 | Web hub deploy | `SERVICES.md`, `index.html` | `https://seoul-dengoku.linalab.io` self-hosted (docker nginx + cloudflared, Cloudflare Access); Vercel read-only pending removal; hub overlays: `GAME-REFERENCE/ui-layout-moodboard/`, `portrait-demo/`, `ui-ux-refs/` |
+| Operator social serial | `SOCIAL-MEDIA/` | X English / Threads Korean. Not a hub path. |
 
 ## CODE MAP
 Writer-digest LSP/ast-grep findings plus retained root symbols; C# LSP coverage was partial. Repo-wide reference centrality is unmeasured, not zero.
@@ -98,13 +100,13 @@ Writer-digest LSP/ast-grep findings plus retained root symbols; C# LSP coverage 
 - Do not label planned campaign or tactical features as shipped merely because design pages exist; even Home's implementation summary may lag code.
 - No direct push to main, force-push, or shared-history rewrite. ADR-001 requires a dedicated branch and PR, with owner-only merging.
 - Authorized origin: `https://github.com/islee23520/seoul-kenshi.git`; the unrelated shooter repository is not a delivery target. Do not publish or maintain GitHub Wiki.
-- Do not deploy to Vercel — the existing `seoul-kenshi` project is paused (2026-09-19 owner directive). All deployments go to the self-hosted hub at `seoul-dengoku.linalab.io` (see `SERVICES.md`); nested static pages ride that hub as subpaths, never as their own site. `GAME-REFERENCE/codex-ux-refs/` must never be hub-published (legacy `서울켄시` marker baked into its PNGs).
+- Do not deploy to Vercel — the existing `seoul-kenshi` project is paused (2026-09-19 owner directive). All deployments go to the self-hosted hub at `seoul-dengoku.linalab.io` (see `SERVICES.md`); nested static pages ride that hub as subpaths, never as their own site. `GAME-REFERENCE/codex-ux-refs/` must never be hub-published (legacy `서울켄시` marker baked into its PNGs). `SOCIAL-MEDIA/` is operator serial only — never a hub subpath, never VitePress `ROOT_DOCS`.
 - Candidate generation, provider eligibility, or showcase import does not authorize a runtime dependency.
 - Guessed rights, synthetic review hashes, model/software licenses, and zero-cost receipts are not proof of asset-output rights or actual service terms.
 - Do not silently recover unsupported/corrupt saves: the documented save contract requires explicit errors.
 - Do not substitute a backend when TRELLIS is unavailable; its designated execution host is separate from this macOS checkout.
 - Unity execution is batchmode-only in a background session, one Editor per `GAME` path: no GUI, Test Runner, manual Play or unicli. Author serialized assets with Unity APIs/SerializedObject, not hand-edited YAML.
-- Do not invent undecided numbers or content, and do not treat design pages as shipped implementation. Decision 11 does not implement the new combat; Oddland/Unity/POC stay untouched in this docs lane.
+- Do not invent undecided numbers or content, and do not treat design pages as shipped implementation. The layered full-3D/unit-command target is an active implementation authority for the approved plan, not a claim that it is already shipped. Oddland assets remain preserved and are not combatants for the new target; existing Unity/POC surfaces remain historical until the target is implemented and proven.
 
 ## 텍스트 정합성 우선과 웹 검증 범위
 
@@ -122,7 +124,7 @@ Writer-digest LSP/ast-grep findings plus retained root symbols; C# LSP coverage 
 
 ## UNIQUE STYLES
 - The strategy screen is a 3D heightmap map of all Seoul with a perspective free-pan/zoom camera (Intent decision 10, 2026-09-18). Target combat is unit/formation command (decision 11, 2026-09-19). The current battle screen's left/right side-scroll is POC presentation. The target battle camera is a 3D free-command default adopted after the unanswered question timed out, not an owner-explicit decision.
-- The serialized Unity genre contract still keeps `combatResolution: realtime-formation-card` as current POC. Target combat is not card economy or direct hero action. Isometric angles, four-direction grid, tile, and SD silhouette keys are retired (`GenreContractTests` enforces absence).
+- The serialized Unity genre contract still records `combatResolution: realtime-formation-card` as the current historical POC; it is not the target authority. The active target is full-3D unit command with separate heroes and soldiers, a surface plus real-subway layered strategy map, uGUI in 16:9, and Unity PlayerLoop/`FixedUpdate` timing using the project's `Time.fixedDeltaTime` without a fixed-rate lock. Target combat is not card economy or direct hero action. Isometric angles, four-direction grid, tile, and SD silhouette keys are retired (`GenreContractTests` enforces absence).
 - Enabled scene order is Bootstrap -> MainTitle -> Foundation; Bootstrap owns app DI and content screens use exclusive child scopes.
 - Runtime screens use uGUI builders/presenters; retained UXML/USS is not automatically the current surface. Data projects ScriptableObjects into validated Core catalogs and canonical fingerprints.
 - Distinguish the 334-station movement graph, Area 1 three-station content catalog and 427-dong authored atlas. `GAME-REFERENCE/poc-diegetic/DIRECTION.md` is a candidate, not an approved UI mandate.

@@ -1,0 +1,12 @@
+{
+  "schema": "task03-cleanup-v1",
+  "removed": [
+    "/tmp/task3-red-*",
+    "/tmp/task03-verify-*"
+  ],
+  "receipts": {
+    "/tmp/task3-red-*": "ENOENT after rm -rf matching task3-red-* entries",
+    "/tmp/task03-verify-*": "ENOENT"
+  },
+  "timestamp": "2026-09-20"
+}

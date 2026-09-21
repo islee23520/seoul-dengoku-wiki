@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "node policy/normalize-creative-names.mjs && node wiki/test-build-wiki.mjs && node wiki/test-unity-architecture-docs.mjs",
-    "test:names": "node policy/normalize-creative-names.mjs",
+    "test:names": "node policy/normalize-creative-names.mjs && node --test policy/test-private-organization-names.mjs",
     "write:names": "node policy/normalize-creative-names.mjs --write",
     "test:design-store": "node --test store/test-design-store-capture.mjs",
     "test:mda-store": "node --test design-store/test-mda-store.mjs",
@@ -19,6 +19,9 @@
     "test:unity-remote": "node --test unity/test-unity-remote.mjs",
     "deploy:hub:test": "node --test deploy/test-hub-deploy.mjs deploy/test-hub-docker-contract.mjs",
     "test:retired-reference-terms": "node --test wiki/test-retired-reference-terms.mjs",
+    "test:patina-human": "node --test wiki/test-patina-human-gate.mjs",
+    "verify:patina-human": "node wiki/patina-human-gate.mjs verify",
+    "write:patina-human": "node wiki/patina-human-gate.mjs write",
     "deploy:hub:build": "node deploy/build-hub-docker.mjs",
     "deploy:hub": "node deploy/deploy-hub.mjs"
   },

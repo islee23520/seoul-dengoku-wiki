@@ -167,10 +167,14 @@ namespace Janseon.Foundation.Tests
             Assert.That(UguiHudBuilder.Find(hud, UiElementNames.SettlementPanel), Is.Not.Null);
             Button negotiate = UguiHudBuilder.ButtonNamed(hud, UiElementNames.ChoiceNegotiate);
             Assert.That(negotiate.GetComponentInChildren<UnityEngine.UI.Text>(true).text, Does.Contain("-5"));
-            Assert.That(UguiHudBuilder.ButtonNamed(hud, UiElementNames.FormationSwapFront), Is.Not.Null);
-            Assert.That(UguiHudBuilder.ButtonNamed(hud, UiElementNames.EditFormation), Is.Not.Null);
-            Assert.That(UguiHudBuilder.ButtonNamed(hud, UiElementNames.CardGeneralUse), Is.Not.Null);
             Assert.That(UguiHudBuilder.ButtonNamed(hud, UiElementNames.BattlePlayPause), Is.Not.Null);
+            Transform[] hudElements = hud.GetComponentsInChildren<Transform>(true);
+            Assert.That(hudElements.Any(element => element.name.StartsWith("battle-cell-", StringComparison.Ordinal)),
+                Is.False, "retired 5x5 battle grid controls must be absent");
+            Assert.That(hudElements.Any(element => element.name.StartsWith("formation-edit", StringComparison.Ordinal)),
+                Is.False, "retired formation editor controls must be absent");
+            Assert.That(UguiHudBuilder.Find(hud, "formation-swap-front"), Is.Null);
+            Assert.That(UguiHudBuilder.Find(hud, "edit-formation"), Is.Null);
             Assert.That(UguiHudBuilder.Find(hud, UiElementNames.BattleMorale), Is.Not.Null);
             Assert.That(UguiHudBuilder.Find(hud, UiElementNames.BattleReinforcementForecast), Is.Not.Null);
             Assert.That(UguiHudBuilder.Find(hud, "battle-ap"), Is.Null);

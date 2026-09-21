@@ -11,7 +11,7 @@ mkdir -p "$WORK_ROOT" "$OUTPUT_ROOT"
 for path in \
   Concept.md Design.md Intent.md ToDo.md index.html \
   GDD LORE WEB GAME/play GAME-REFERENCE/ui-layout-moodboard \
-  GAME-REFERENCE/portrait-demo GAME-REFERENCE/ui-ux-refs \
+  GAME-REFERENCE/ui-ux-refs \
   GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json \
   RESEARCH/canon-reference RESEARCH/verification TOOL/tools TOOL/portrait-gen; do
   mkdir -p "$WORK_ROOT/$(dirname "$path")"
@@ -36,13 +36,16 @@ node TOOL/tools/design-store/seed-from-canon.mjs
 node GDD/system-design/total-war-ui/generate-map-data.mjs
 
 npm --prefix WEB/wiki run build
+npm --prefix WEB/wiki run build:gdd
 npm --prefix WEB/wiki run test:contract -- --json "$OUTPUT_ROOT/react-contract.json"
+npm --prefix WEB/wiki run test:gdd
 npm --prefix WEB/wiki run test:links
 npm --prefix WEB/wiki run test:states
 npm --prefix WEB/wiki run test:assets
 npm --prefix WEB/wiki run test:people
 npm --prefix WEB/wiki run test:person-details
 npm --prefix WEB/wiki run test:territory-map
+npm --prefix WEB/wiki run test:timeline
 npm --prefix WEB/wiki run test:discovery
 node --test TOOL/tools/wiki/test-retired-reference-terms.mjs
 node --test TOOL/tools/wiki/test-wiki-parity.mjs

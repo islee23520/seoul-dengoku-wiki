@@ -1,4 +1,4 @@
-const wikiDomains = new Set(['world', 'rules', 'design'])
+const wikiDomains = new Set(['world'])
 
 export const wikiBase = '/wiki'
 

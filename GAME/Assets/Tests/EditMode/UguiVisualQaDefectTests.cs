@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using Janseon.Core;
-using Janseon.Core.Battle.Contracts;
-using Janseon.Core.Battle.Sim;
 using Janseon.Foundation.AppFlow;
 using Janseon.Foundation.Composition;
 using Janseon.Foundation.UI;
+using Janseon.Tests.EditMode.Fixtures;
 using NUnit.Framework;
 using UnityEditor;
 using UnityEngine;
@@ -32,56 +31,13 @@ namespace Janseon.Foundation.Tests
             Assert.That(UguiHudBuilder.Find(root, "battle-hp-meter"), Is.Not.Null, "missing battle-hp-meter");
             Assert.That(UguiHudBuilder.Find(root, "battle-hp-fill"), Is.Not.Null, "missing battle-hp-fill");
             Assert.That(UguiHudBuilder.Find(root, UiElementNames.BattleMorale), Is.Not.Null);
-            Assert.That(UguiHudBuilder.Find(root, UiElementNames.CardGeneralRecharge), Is.Not.Null);
             Assert.That(UguiHudBuilder.Find(root, "battle-ap"), Is.Null);
             Assert.That(UguiHudBuilder.Find(root, "battle-log"), Is.Not.Null, "missing battle-log");
 
+            // Settlement outcome must be non-empty after settle.
             var graph = RouteGraph.CreateYeongdeungpoSindorimGuro();
             var ledger = new Ledger();
-            CampaignState s = DriveToResolution(graph, ledger, 90421);
-            object combat = CampaignApi.Apply(graph, s, ledger, new CampaignCommand
-            {
-                Id = new CommandId("c"),
-                Kind = CampaignCommandKind.ChooseCombat,
-            });
-            var ctx = ((BattleRequired)combat).Context;
-            BattleSimState battle = BattleSim.Open(BattleSetup.FromContext(ctx));
-            s = (CampaignState)CampaignApi.AttachPendingBattle(s, ledger, ctx, new CommandId("a"));
-
-            GameplayUiSnapshot battleSnap = GameplayUiSnapshot.FromCampaign(s, battle);
-            // Snapshot must expose bound meter values (not static labels only).
-            var hpProp = typeof(GameplayUiSnapshot).GetProperty("BattleHp");
-            var maxHpProp = typeof(GameplayUiSnapshot).GetProperty("BattleMaxHp");
-            var logProp = typeof(GameplayUiSnapshot).GetProperty("BattleLogEntries");
-            Assert.That(hpProp, Is.Not.Null, "GameplayUiSnapshot.BattleHp missing");
-            Assert.That(maxHpProp, Is.Not.Null, "GameplayUiSnapshot.BattleMaxHp missing");
-            Assert.That(logProp, Is.Not.Null, "GameplayUiSnapshot.BattleLogEntries missing");
-            int battleHp = (int)hpProp.GetValue(battleSnap);
-            int battleMaxHp = (int)maxHpProp.GetValue(battleSnap);
-            var logEntries = logProp.GetValue(battleSnap) as System.Collections.ICollection;
-            Assert.That(battleMaxHp, Is.GreaterThan(0));
-            Assert.That(battleHp, Is.GreaterThan(0));
-            Assert.That(logEntries, Is.Not.Null);
-            Assert.That(logEntries.Count, Is.GreaterThan(0));
-
-            presenter.ApplySnapshot(battleSnap);
-            Assert.That(UguiHudBuilder.Find(root, UiElementNames.RouteRail).gameObject.activeSelf, Is.False,
-                "battle must hide the route rail");
-            Text hp = UguiHudBuilder.Find(root, UiElementNames.BattleHp).GetComponentInChildren<Text>(true);
-            Text morale = UguiHudBuilder.Find(root, UiElementNames.BattleMorale).GetComponentInChildren<Text>(true);
-            Assert.That(hp.text, Does.Contain(battleHp.ToString()), "HP label must show bound value");
-            Assert.That(morale.text, Does.Contain(battle.Sides[0].Morale.ToString()));
-
-            RectTransform hpFill = UguiHudBuilder.Find(root, "battle-hp-fill") as RectTransform;
-            Assert.That(hpFill, Is.Not.Null, "missing battle-hp-fill");
-            Assert.That(hpFill.anchorMax.x, Is.GreaterThan(0f), "hp fill must be painted");
-            Text battleLogText = UguiHudBuilder.Find(root, UiElementNames.BattleLog).GetComponentInChildren<Text>(true);
-            Assert.That(battleLogText.text, Is.Not.Empty, "battle log entries not bound");
-
-            // Settlement outcome must be non-empty after settle.
-            s = DriveToResolution(graph, new Ledger(), 90421);
-            ledger = new Ledger();
-            s = DriveToResolution(graph, ledger, 90422);
+            CampaignState s = DriveToResolution(graph, ledger, 90422);
             s = (CampaignState)CampaignApi.Apply(graph, s, ledger, new CampaignCommand
             {
                 Id = new CommandId("n"),
@@ -99,7 +55,7 @@ namespace Janseon.Foundation.Tests
             Assert.That((string)textProp.GetValue(settleSnap), Is.Not.Null.And.Not.Empty);
             presenter.ApplySnapshot(settleSnap);
             Assert.That(UguiHudBuilder.Find(root, UiElementNames.RouteRail).gameObject.activeSelf, Is.True,
-                "route must return after combat");
+                "route must be visible after settlement");
             Text outcome = UguiHudBuilder.Find(root, UiElementNames.SettlementOutcome).GetComponentInChildren<Text>(true);
             Assert.That(outcome.text, Is.Not.Null.And.Not.Empty, "settlement-outcome must be bound non-empty");
         }
@@ -354,7 +310,7 @@ namespace Janseon.Foundation.Tests
 
         static CampaignState DriveToResolution(RouteGraph graph, Ledger ledger, int seed)
         {
-            CampaignState s = CampaignApi.Start(seed, StationId.Yeongdeungpo, "qa-defect");
+            CampaignState s = CampaignApi.Start(seed, StationId.Yeongdeungpo, "qa-defect", TestCampaignDefinition.Instance.BattleRulesVersion, TestCampaignDefinition.Instance.PersistentPartyUnitId, TestCampaignDefinition.Instance.PersistentPartyMaxHp);
             s = (CampaignState)CampaignApi.Apply(graph, s, ledger, new CampaignCommand
             {
                 Id = new CommandId("d-" + seed),

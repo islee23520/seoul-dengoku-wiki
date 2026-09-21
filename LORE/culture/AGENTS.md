@@ -10,7 +10,7 @@ The value/policy scale system behind cast and org numbers, the faith schism, the
 |------|----------|
 | 10 person value axes + 5 desire axes + org policy slots | `Values-and-Policy-Scales.md` — the numeric ledger lives in `../name-pools/values-cast.json` / `values-orgs.json` |
 | Faith schism | `Faith-Culture-Schism.md` — 2026 religious makeup sourced (Pew 2010); five campaign axes that change rules |
-| Five martial schools | `Martial-Paths.md` — 60 original techniques across 내숨·외손·경보·연장·제압·손고침; unit-command expression only |
+| Nine martial schools | `Martial-Paths.md` — formal Sino-Korean names + field aliases; six technique categories; unit-command expression only |
 | Food / distribution | `Food-Culture.md` — station-window rations first; numbers continue into `../economy/Economy-and-Production.md` |
 | Oral creation story | `Oral-Stories.md` — 대정전 canon; the five oral titles are locked by `../chronology/Scenario-Timeline.md` |
 
@@ -23,7 +23,9 @@ The value/policy scale system behind cast and org numbers, the faith schism, the
 - Food canon keeps the water-first-then-rice habit; the ration chain 영등포 정수 당직 → 신정 기지 밥솔 → 암사 호위 hands off to `../economy/` docs.
 
 ## ANTI-PATTERNS
-- Never add a sixth martial school ("다섯을 더 늘리지 않는다").
+- The original five schools remain canon, but the owner lifted the numerical cap. New schools require a distinct 2026 origin, a fictional 2126 successor name, transmission practice, equipment dependency, failure condition and Patina review.
+- `개방 손` is a martial branch and `환승계` is an independent mobile mutual-aid/information network. Neither is owned by a religion or counted as one of the nine schools.
+- The nine locked formal/field pairs are owned by `Martial-Paths.md`; do not replace them with a later naming suggestion. Follow `../../GDD/Korean-Terminology-and-Naming.md` for Sino-Korean names and loanwords.
 - Don't fill the 422 cast ages from these tables — the no-age canon lives in `../characters/`.
 - `Oral-Stories.md` collects existing testimony and seats only — no new plotlines there; founder-ledger names are never the same body as opening-day persons.
 - No sexual narratives involving minors (restated here from the cast contract).

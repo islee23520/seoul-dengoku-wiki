@@ -14,7 +14,6 @@ Frozen reference material for art, UX, and Seoul geography; score 10 (626 files,
 | Frozen browser POC | `poc/browser/` | Own AGENTS.md; four review surfaces + `SHA256SUMS` baseline |
 | Diegetic UI candidate | `poc-diegetic/` | `DIRECTION.md`, `LAYOUT-DESIGN.md`, `battle-hud/` anchor capture |
 | Full-plan mockup | `poc-plan/index.html` | One large static HTML |
-| Portrait layer composite | `portrait-demo/` | Static page; hub subpath per `SERVICES.md` |
 | UI layout moodboard | `ui-layout-moodboard/` | `index.html`/`preview.html` + `screenshots/` QA captures; hub subpath |
 | UX flow references | `ui-ux-refs/` | Screen-flow diagram + `poc-complete.html`; hub subpath |
 
@@ -25,7 +24,7 @@ Frozen reference material for art, UX, and Seoul geography; score 10 (626 files,
 
 ## ANTI-PATTERNS
 - Do not edit frozen reference copies (`codex-ux-refs/`, `poc/browser/`): provenance is byte/SUMS-based; a change is a new, re-hashed capture.
-- Do not register `codex-ux-refs/` imagery on the public hub; only the `SERVICES.md` overlays (`ui-layout-moodboard/`, `portrait-demo/`, `ui-ux-refs/`) stage there.
+- Do not register `codex-ux-refs/` imagery on the public hub; only the `SERVICES.md` overlays (`ui-layout-moodboard/`, `ui-ux-refs/`) stage there.
 - Do not quote the legacy marker `서울켄시` baked into codex concept PNGs as public wiki text.
 - Do not promote anything from here straight into runtime; reference BOMs and UX captures are not approved runtime art.
 

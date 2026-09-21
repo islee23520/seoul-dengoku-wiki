@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Failed(Child)" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-20 08:13:53Z" end-time="2026-09-20 08:13:53Z" duration="0.0306413">
+  <test-suite type="TestSuite" id="1000" name="서울:전국" fullname="서울:전국" runstate="Runnable" testcasecount="252" result="Failed" site="Child" start-time="2026-09-20 08:13:53Z" end-time="2026-09-20 08:13:53Z" duration="0.030641" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1289" name="Janseon.Foundation.EditModeTests.dll" fullname="/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave2-task9/GAME/Library/ScriptAssemblies/Janseon.Foundation.EditModeTests.dll" runstate="Runnable" testcasecount="251" result="Failed" site="Child" start-time="2026-09-20 08:13:53Z" end-time="2026-09-20 08:13:53Z" duration="0.023180" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="7693" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1290" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="251" result="Failed" site="Child" start-time="2026-09-20 08:13:53Z" end-time="2026-09-20 08:13:53Z" duration="0.021841" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1293" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="214" result="Failed" site="Child" start-time="2026-09-20 08:13:53Z" end-time="2026-09-20 08:13:53Z" duration="0.020391" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="1294" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="214" result="Failed" site="Child" start-time="2026-09-20 08:13:53Z" end-time="2026-09-20 08:13:53Z" duration="0.019231" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestFixture" id="1147" name="PerSoldierBattleTests" fullname="Janseon.Foundation.Tests.PerSoldierBattleTests" classname="Janseon.Foundation.Tests.PerSoldierBattleTests" runstate="Runnable" testcasecount="6" result="Failed" site="Child" start-time="2026-09-20 08:13:53Z" end-time="2026-09-20 08:13:53Z" duration="0.016821" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="1152" name="NarrowPassageCrowdIsDeterministic" fullname="Janseon.Foundation.Tests.PerSoldierBattleTests.NarrowPassageCrowdIsDeterministic" methodname="NarrowPassageCrowdIsDeterministic" classname="Janseon.Foundation.Tests.PerSoldierBattleTests" runstate="Runnable" seed="1891241155" result="Failed" start-time="2026-09-20 08:13:53Z" end-time="2026-09-20 08:13:53Z" duration="0.007984" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Expected: 2000
+  But was:  2004
+]]></message>
+                  <stack-trace><![CDATA[at Janseon.Foundation.Tests.PerSoldierBattleTests.NarrowPassageCrowdIsDeterministic () [0x000dc] in /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave2-task9/GAME/Assets/Tests/EditMode/PerSoldierBattleTests.cs:87
+]]></stack-trace>
+                </failure>
+                <output><![CDATA[Saving results to: /Users/ilseoblee/Library/Application Support/Janseon Studio/서울_전국/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

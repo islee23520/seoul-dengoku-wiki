@@ -8,20 +8,20 @@
 |---|---|---|---|---|
 | [급수계약정](Sixteen-States.html) | 영등포역 | 봉건(운영가문) | 강국 | 한재목 |
 | [규격동맹](Sixteen-States.html) | 구로역 | 상업(조합) | 강국 | 강민서 |
-| [현대자동차주식회사](Sixteen-States.html) | 양재역 | 상업(주식회사) | 강국 | 정호준 |
-| [대한예수교장로회](Sixteen-States.html) | 삼성역 | 신정 | 약소 | 오경재 |
+| [양재기공주식회사](Sixteen-States.html) | 양재역 | 상업(주식회사) | 강국 | 정호준 |
+| [설교명부정](Sixteen-States.html) | 삼성역 | 신정 | 약소 | 오경재 |
 | [호위보호정](Sixteen-States.html) | 암사역 | 군정 | 강국 | 배우진 |
 | [대한민국정부](Sixteen-States.html) | 광화문역 | 봉건(운영가문) | 약소 | 윤서린 |
 | [선로후계정](Sixteen-States.html) | 용산역 | 봉건(선로 가문) | 강국 | 박태겸 |
-| [원불교](Sixteen-States.html) | 흑석역 | 신정 | 약소 | 오해린 |
-| [전국경제인연합회](Sixteen-States.html) | 여의도역 | 상업(기업형) | 약소 | 최지우 |
-| [대한불교조계종](Sixteen-States.html) | 안국역 | 신정 | 약소 | 백온 |
-| [삼성그룹](Sixteen-States.html) | 강남역 | 상업(주식회사) | 약소 | 이홍원 |
+| [교헌필사정](Sixteen-States.html) | 흑석역 | 신정 | 약소 | 오해린 |
+| [여의도출자연합회](Sixteen-States.html) | 여의도역 | 상업(기업형) | 약소 | 최지우 |
+| [승가구휼정](Sixteen-States.html) | 안국역 | 신정 | 약소 | 백온 |
+| [서초전산그룹](Sixteen-States.html) | 강남역 | 상업(주식회사) | 약소 | 이홍원 |
 | [중립호송시](Sixteen-States.html) | 신내역 | 상업(운송 계약) | 약소 | 장세화 |
 | [의약중립맹](Sixteen-States.html) | 제기동역 | 상업(조합) | 약소 | 류은비 |
 | [관문군정](Sixteen-States.html) | 구의역 | 군정 | 강국 | 고서준 |
-| [천주교 서울대교구](Sixteen-States.html) | 명동역 | 신정 | 약소 | 남윤경 |
-| [전국민주노동조합총연맹](Sixteen-States.html) | 시청역 | 상업(총연맹) | 약소 | 정유라 |
+| [본당인준정](Sixteen-States.html) | 명동역 | 신정 | 약소 | 남윤경 |
+| [정동노동총연맹](Sixteen-States.html) | 시청역 | 상업(총연맹) | 약소 | 정유라 |
 
 ## 최신 사건
 

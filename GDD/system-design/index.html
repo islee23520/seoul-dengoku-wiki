@@ -231,7 +231,7 @@
       화면·씬·입력은 <code>Janseon.Foundation</code>이 명령을 보낼 뿐이다.
       2026-09-19 목표에서 전투의 주 입력은 부대 지휘이고, 인물 그림은 애니메이션풍 정비율이다. 카메라·일시정지는 질문 만료 뒤 채택한 설계 기본값(3D 자유 지휘, 닫힌 전투 안에서만 정지 중 명령)이며 소유자 명시 결정이 아니다.
       아래 조립·수치·아이소 그림은 현재 Unity POC 측정이다. 카드 전투와 격자 문법을 새 목표로 읽지 않는다.
-      코어 루프는 POC에서 출발했고 현재 이동 그래프는 OSM 작업 카탈로그를 읽는다. 지역 전체의 면적·시설·내용은 별도의 <a href="regions/">서울 지역 총람</a>에서 확인한다. 부대 지휘 화면 초안은 <a href="total-war-ui/">total-war-ui</a>다. 16국 시뮬레이션과 파일 저장은 아직 구현 범위 밖이다.
+      코어 루프는 POC에서 출발했고 현재 이동 그래프는 OSM 작업 카탈로그를 읽는다. 서울 전체 지도와 개막 영토는 <a href="/wiki/world/World-and-Subway-Layers">서울:전국 공식 위키</a>에서 확인한다. 부대 지휘 화면 초안은 <a href="total-war-ui/">total-war-ui</a>다. 16국 시뮬레이션과 파일 저장은 아직 구현 범위 밖이다.
     </p>
     <p class="src">
       근거:
@@ -250,7 +250,7 @@
       <li><a href="#scenes">씬·FSM</a></li>
       <li><a href="#loop">캠페인 루프</a></li>
       <li><a href="#world">월드맵</a></li>
-      <li><a href="regions/">서울 지역 총람</a></li>
+      <li><a href="/wiki/world/World-and-Subway-Layers">공식 위키 지도</a></li>
       <li><a href="#domains">도메인 API</a></li>
       <li><a href="#battle">전투장</a></li>
       <li><a href="#save">세이브·결정론</a></li>
@@ -465,8 +465,8 @@
         </article>
       </div>
       <article class="card" style="margin-top:12px">
-        <h3>서울 지역 총람 — 경계와 지역 내용</h3>
-        <p><a href="regions/">25개 구 · 427개 동의 지도와 지역별 내용 열기</a></p>
+        <h3>서울 지역 데이터 — 경계와 지역 내용</h3>
+        <p><a href="/wiki/world/World-and-Subway-Layers">25개 구 · 427개 동과 개막 영토 지도 열기</a></p>
         <p>2026-07-01 행정동 경계와 2026-09-04 OSM 스냅샷을 분리해 사용한다. 역 없는 동과 이름 없는 시설도 자료 원장에 남긴다. 지역 저작 데이터와 Unity 내부 공간의 구현 상태는 구별한다.</p>
         <ul class="tight">
           <li>선택 경계는 427개 동의 합집합이며 옛 KOSTAT 2013 경계와의 차이를 기록한다. 공식 최신 경계 인증은 아니다.</li>

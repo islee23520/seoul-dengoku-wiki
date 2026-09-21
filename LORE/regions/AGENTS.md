@@ -14,14 +14,14 @@ Final authored content for Seoul's 427 행정동 (2026-07-01 boundaries): 25 gu 
 | Boundary choice + comparison | `sources/selection.json`, `sources/boundary-comparison.json`; raw geojson is gitignored but present on disk |
 | Observed floor-count joins | `sources/observed-levels-join.md` — 265/334 observed (OA-11572 CSV, OSM, 위키백과); 69 remain empty |
 | Pipeline code | `TOOL/tools/regions/` — prepare_boundary, build_region_atlas, assemble_region_content, verify_region_atlas, check_authored_district, tests |
-| Evidence + view outputs | `.omo/evidence/seoul-regions/` (regenerated, ~291MB); view at `GDD/system-design/regions/` (`index.html`, `atlas-data.js`) |
+| Evidence + map build input | `.omo/evidence/seoul-regions/` (regenerated, ~291MB); official-wiki map input at `TOOL/tools/regions/data/atlas-data.js` |
 
 ## CONVENTIONS
 - Provenance split per dong: places/tags observed; boundary/area/affiliation computed (EPSG:5179); post-collapse inhabitants and events fiction. `source_kind: original-fiction` + `fictional_epoch: opening-day` — verifier-enforced.
 - Verifier-required content keys: title, summary, inhabitants, livelihood, production, shortages, hazard, action, opening_state, connections, uncertainty, anchor_refs, canon_refs, polity_contexts. `buildings` is 1–4 rows: `role` core-station|support (observed use 역 ⇒ core-station), `river` ∈ hangang-north/hangang-south/tributary/inland, `anchor_ref` must be one of that dong's local anchors.
 - `polity_contexts` ⊆ S01–S16 (`verify_region_atlas.py` allowed_polities). `anchor_refs` are OSM ids (`osm:node|way|relation:<id>`).
 - Area denominator is the 427 dong; the 334 stations are the movement graph, not an area roster. The union area 606,223,725.0069752㎡ must survive regeneration.
-- STALE PRE-REORG PATHS (commit befb8ba9 moved docs/game-logic → LORE): README command block says `tools/regions`, `docs/game-logic/regions`, `system-design/regions` — real paths are `TOOL/tools/regions`, `LORE/regions`, `GDD/system-design/regions`; README links `../Building-Reuse-Geography.md` / `../Scenario-Timeline.md` actually live at `../places/` / `../chronology/`.
+- The region assembler writes official-wiki map input to `TOOL/tools/regions/data/atlas-data.js`; it does not create a separate public region viewer.
 - All 427 `canon_refs` in content still carry the `docs/game-logic/…` prefix; `verify_region_atlas.py` resolves each ref against the repo root and emits `invalid_canon_reference` (docs/ no longer exists). Fixing means rewriting refs to `LORE/…` (or restoring a docs alias) — decide once, not per file.
 
 ## ANTI-PATTERNS
@@ -41,7 +41,7 @@ python3 TOOL/tools/regions/build_region_atlas.py --as-of 2026-09-12 \
   --output .omo/evidence/seoul-regions/atlas.json
 python3 TOOL/tools/regions/assemble_region_content.py \
   --atlas .omo/evidence/seoul-regions/atlas.json \
-  --content-dir LORE/regions/content --view-dir GDD/system-design/regions
+  --content-dir LORE/regions/content --map-data TOOL/tools/regions/data/atlas-data.js
 python3 TOOL/tools/regions/verify_region_atlas.py --atlas .omo/evidence/seoul-regions/atlas.json
 ```
 Atlas rebuild needs the external sibling bundle `../seoul-kenshi-data/seoul-geography-20260830` (outside the repo; not present on this checkout).

@@ -7,12 +7,10 @@ test('document index links every generated canon document', async () => {
   const page = await readFile(new URL('../src/pages/DocumentsPage.tsx', import.meta.url), 'utf8')
   const routes = [...catalog.matchAll(/route: '([^']+)'/g)].map((match) => match[1])
   const contentRoot = new URL('../src/content/', import.meta.url)
-  let generatedCount = 0
-  for (const domain of ['world', 'rules', 'design']) {
-    generatedCount += (await readdir(new URL(`${domain}/`, contentRoot))).filter((name) => name.endsWith('.md')).length
-  }
+  const generatedCount = (await readdir(new URL('world/', contentRoot))).filter((name) => name.endsWith('.md')).length
   assert.equal(routes.length, generatedCount)
   assert.equal(new Set(routes).size, routes.length)
+  assert.ok(routes.every((route) => route.startsWith('/world/')))
   assert.match(page, /wikiCatalog\.length/)
   assert.match(page, /to=\{document\.route\}/)
 })

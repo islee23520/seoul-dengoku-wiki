@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="3" result="Passed" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-20 15:30:44Z" end-time="2026-09-20 15:30:44Z" duration="0.0215982">
+  <test-suite type="TestSuite" id="1000" name="서울:전국" fullname="서울:전국" runstate="Runnable" testcasecount="162" result="Passed" start-time="2026-09-20 15:30:44Z" end-time="2026-09-20 15:30:44Z" duration="0.021598" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1189" name="Janseon.Foundation.EditModeTests.dll" fullname="/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave3-task32/GAME/Library/ScriptAssemblies/Janseon.Foundation.EditModeTests.dll" runstate="Runnable" testcasecount="161" result="Passed" start-time="2026-09-20 15:30:44Z" end-time="2026-09-20 15:30:44Z" duration="0.018356" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="16664" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1190" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="161" result="Passed" start-time="2026-09-20 15:30:44Z" end-time="2026-09-20 15:30:44Z" duration="0.017721" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1193" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="124" result="Passed" start-time="2026-09-20 15:30:44Z" end-time="2026-09-20 15:30:44Z" duration="0.017053" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1194" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="124" result="Passed" start-time="2026-09-20 15:30:44Z" end-time="2026-09-20 15:30:44Z" duration="0.016586" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1064" name="Area1CatalogProjectionTests" fullname="Janseon.Foundation.Tests.Area1CatalogProjectionTests" classname="Janseon.Foundation.Tests.Area1CatalogProjectionTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-20 15:30:44Z" end-time="2026-09-20 15:30:44Z" duration="0.015136" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1066" name="Build_ProjectsSerializedCampaignChangeAndChangesCanonicalFingerprint" fullname="Janseon.Foundation.Tests.Area1CatalogProjectionTests.Build_ProjectsSerializedCampaignChangeAndChangesCanonicalFingerprint" methodname="Build_ProjectsSerializedCampaignChangeAndChangesCanonicalFingerprint" classname="Janseon.Foundation.Tests.Area1CatalogProjectionTests" runstate="Runnable" seed="1313194726" result="Passed" start-time="2026-09-20 15:30:44Z" end-time="2026-09-20 15:30:44Z" duration="0.008131" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1065" name="Build_ProjectsSuppliedCampaignAndStationFields" fullname="Janseon.Foundation.Tests.Area1CatalogProjectionTests.Build_ProjectsSuppliedCampaignAndStationFields" methodname="Build_ProjectsSuppliedCampaignAndStationFields" classname="Janseon.Foundation.Tests.Area1CatalogProjectionTests" runstate="Runnable" seed="555992349" result="Passed" start-time="2026-09-20 15:30:44Z" end-time="2026-09-20 15:30:44Z" duration="0.001015" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1067" name="Repositories_LookUpProjectedCampaignAndStations" fullname="Janseon.Foundation.Tests.Area1CatalogProjectionTests.Repositories_LookUpProjectedCampaignAndStations" methodname="Repositories_LookUpProjectedCampaignAndStations" classname="Janseon.Foundation.Tests.Area1CatalogProjectionTests" runstate="Runnable" seed="1049660895" result="Passed" start-time="2026-09-20 15:30:44Z" end-time="2026-09-20 15:30:44Z" duration="0.000374" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: /Users/ilseoblee/Library/Application Support/Janseon Studio/서울_전국/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

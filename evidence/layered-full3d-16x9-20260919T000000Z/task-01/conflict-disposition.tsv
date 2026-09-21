@@ -1,0 +1,11 @@
+path:line	old meaning	new authority	action	status
+AGENTS.md:104	문서 레인에서는 새 전투를 구현하지 않으며 Unity/POC를 그대로 둔다는 해석	풀 3D 부대 지휘·다층 전략맵은 활성 구현 권위이나 아직 출하되지 않음	활성 목표와 미완료 상태를 분리해 문구 교체	active-target-replaced
+AGENTS.md:122	RTFC 카드가 현재 계약처럼 읽힐 수 있음	RTFC는 역사적 POC; 활성 목표는 풀 3D 부대 지휘·16:9 uGUI·FixedUpdate/fixedDeltaTime	POC라는 위상과 새 권위를 명시	active-target-replaced
+CLAUDE.md:11-14	문서 인도만 유효하고 목표 권위가 후속 문서에 머무름	계획의 구현 권위와 미완료 상태를 동시에 명시	활성 계약 섹션 추가	active-target-replaced
+Intent.md:3-6,39-49	결정 3·10의 카드·격자·사이드스크롤·특정 틱 문장이 활성으로 오독될 수 있음	결정 11과 승인 계획이 현재 권위이며 과거 본문은 역사 기록	현재 실행 권위 블록 추가, 역사 본문 보존	historical-nonnormative
+Concept.md:33	30Hz RTFC가 현 전투 기준선으로 보임	RTFC는 POC, 새 시간 기준은 Unity PlayerLoop/FixedUpdate/fixedDeltaTime	현재 구현 범위 문장 교체	active-target-replaced
+Design.md:4,106	POC 해상도·30Hz 카드 표면이 제품 표면과 섞임	제품 HUD는 uGUI 16:9, POC 표면과 30Hz는 역사 기록	해상도·전투 표 문장 교체	historical-nonnormative
+ToDo.md:8,13,47	전투 런타임이 이번 모듈 범위 밖이라 활성 계획과 충돌	후속 구현 작업이며 문서 개정은 완료 주장이 아님	범위·증분·비목표 문장 교체	active-target-replaced
+GAME/AGENTS.md:26,63	사이드스크롤과 RTFC가 런타임 권위처럼 보임	활성 권위는 계획 문서이며 GenreContract는 task25에서 변경	이번 task에서는 변경하지 않음	unchanged-justified
+GAME/Assets/Tests/AGENTS.md:15	GenreContract의 RTFC 강제가 새 목표와 충돌	기계 계약 변경은 task25 소유, task1은 문서 권위만 잠금	변경하지 않음	unchanged-justified
+TOOL/docs/Unity-Headless-Workflow.md:125	LFS 절차가 환경 증거로 실행되지 않음	작업1에서 hydration receipt를 기록	문서 변경 없이 실행 증거에 기록	unchanged-justified

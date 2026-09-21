@@ -4,6 +4,7 @@ import importlib.util
 import copy
 import unittest
 from pathlib import Path
+import tempfile
 
 
 class ContentAssemblyTests(unittest.TestCase):
@@ -93,6 +94,38 @@ class ContentAssemblyTests(unittest.TestCase):
             {"region_id": "region:2", "name": "B", "content": copy.deepcopy(self.content)}]}]
         with self.assertRaisesRegex(ValueError, "duplicate_action_id"):
             module.combine_content(self.atlas, documents)
+
+    def test_map_data_is_written_to_an_explicit_file_without_a_public_view(self):
+        module = self.assembler()
+        atlas = {
+            "schema": "seoul-region-atlas.v1",
+            "as_of": "2026-09-12",
+            "fictional_epoch": {"id": "opening-day", "label": "개막일"},
+            "source_selection": {},
+            "districts": [],
+            "coverage": {
+                "region_count": 0,
+                "district_count": 0,
+                "selected_union_area_m2": 0,
+                "gap_m2": 0,
+                "overlap_m2": 0,
+                "candidate_status_counts": {},
+                "regions_without_stations": 0,
+                "official_real_world_completeness": False,
+            },
+            "regions": [],
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            objects = root / "objects.jsonl.gz"
+            import gzip
+            with gzip.open(objects, "wt", encoding="utf-8"):
+                pass
+            target = root / "wiki" / "region-atlas-data.js"
+            result = module.write_map_data(atlas, target, objects)
+            self.assertTrue(target.is_file())
+            self.assertEqual(result["regions"], 0)
+            self.assertFalse((target.parent / "index.html").exists())
 
 
 if __name__ == "__main__":

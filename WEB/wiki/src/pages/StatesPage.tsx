@@ -19,7 +19,7 @@ const navBox = {
     { label: '서부', links: ['급수계약정', '규격동맹'].map((label) => ({ label, to: links[label] })) },
     { label: '중앙', links: ['대한민국정부', '선로후계정', '전국경제인연합회'].map((label) => ({ label, to: links[label] })) },
     { label: '동부', links: ['호위보호정', '중립호송시', '의약중립맹', '관문군정'].map((label) => ({ label, to: links[label] })) },
-    { label: '동남', links: ['삼성그룹', '현대자동차주식회사', '대한예수교장로회', '천주교 서울대교구', '대한불교조계종', '원불교', '전국민주노동조합총연맹'].map((label) => ({ label, to: links[label] })) },
+     { label: '동남', links: ['서초전산그룹', '양재기공주식회사', '설교명부정', '본당인준정', '승가구휼정', '교헌필사정', '정동노동총연맹'].map((label) => ({ label, to: links[label] })) },
   ],
 }
 

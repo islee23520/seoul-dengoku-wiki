@@ -14,9 +14,15 @@ namespace Janseon.Foundation.Presentation
     /// </summary>
     public sealed class StrategyMapScreen : MonoBehaviour
     {
-        [Inject] private readonly StrategyMapAssetCatalog catalog = null;
+        private IReadOnlyStrategyMapAssetCatalog catalog;
 
         public StrategyMapPresenter Presenter { get; private set; }
+
+        [Inject]
+        public void Construct(IReadOnlyStrategyMapAssetCatalog value)
+        {
+            catalog = value ?? throw new System.ArgumentNullException(nameof(value));
+        }
 
         private void Start()
         {
@@ -25,22 +31,16 @@ namespace Janseon.Foundation.Presentation
 
         public bool Build()
         {
-            if (catalog == null || catalog.ChunkMeshes.Count == 0 || catalog.ChunkTextures.Count == 0)
-            {
-                Debug.LogWarning("[StrategyMapScreen] catalog is empty or missing; strategy map skipped");
-                return false;
-            }
-
             Presenter = StrategyMapPresenter.Build(
                 transform,
-                catalog.ChunkMeshes,
-                catalog.ChunkTextures,
+                catalog.Meshes,
+                catalog.Textures,
                 catalog.BuildingBinaries.Count > 0 ? catalog.BuildingBinaries : null);
             Presenter.EnableStreaming(40f);
 
-            if (catalog.LandmarkPrefabs.Count > 0 && catalog.LandmarkManifest != null)
+            if (catalog.Prefabs.Count > 0 && catalog.Manifest != null)
             {
-                Presenter.AttachLandmarks(catalog.LandmarkPrefabs, catalog.LandmarkManifest.text);
+                Presenter.AttachLandmarks(catalog.Prefabs, catalog.Manifest.text);
             }
 
             return true;

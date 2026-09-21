@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 193a627f9ddbd401286510fb4726b4b5, type: 3}
+  m_Name: TemporaryBattleVisualCatalog
+  m_EditorClassIdentifier: Janseon.Foundation::Janseon.Foundation.Battle.TemporaryBattleVisualCatalog
+  source: unity-generated-blockout
+  use: temporary-gameplay-mesh
+  prefabs:
+  - {fileID: 3324935803431615073, guid: b435816b138064326ba166b6db057484, type: 3}
+  - {fileID: 5632796488237589246, guid: a7716e9cc3b0740b995224d6e6b20b22, type: 3}
+  - {fileID: 8501117683681945972, guid: 6c337821a7f4341e1848f2fd23b35196, type: 3}
+  - {fileID: 1012861357054899253, guid: 35106fa2d79634a47a73ef3a63733b9d, type: 3}
+  entries:
+  - kind: 0
+    prefab: {fileID: 3324935803431615073, guid: b435816b138064326ba166b6db057484, type: 3}
+  - kind: 1
+    prefab: {fileID: 5632796488237589246, guid: a7716e9cc3b0740b995224d6e6b20b22, type: 3}
+  - kind: 2
+    prefab: {fileID: 8501117683681945972, guid: 6c337821a7f4341e1848f2fd23b35196, type: 3}
+  - kind: 3
+    prefab: {fileID: 1012861357054899253, guid: 35106fa2d79634a47a73ef3a63733b9d, type: 3}
