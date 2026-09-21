@@ -1,9 +1,16 @@
 import { CanonError } from '../canon/errors.mjs'
-import { fail, loadSchema, readCanonJson, validateDocumentBlocks } from '../canon/integrity.mjs'
+import { fail, loadSchema, readCanonJson, uniqueBy, validateDocumentBlocks } from '../canon/integrity.mjs'
 
 export const ADR_FILES = Object.freeze({
   locale: 'locales/ko-KR/adr-003.json',
 })
+
+// Ordered manifest of every ADR JSON canon source. Document order here is the deterministic
+// rendering/iteration order for loadAdrCanonCollection/materializeAdrCollection.
+export const ADR_COLLECTION = Object.freeze([
+  Object.freeze({ id: 'ADR-002', locale: 'locales/ko-KR/adr-002.json', outputName: 'ADR-002-character-candidate-retrospective.md' }),
+  Object.freeze({ id: 'ADR-003', locale: ADR_FILES.locale, outputName: 'ADR-003-real-place-and-station-naming.md' }),
+])
 
 const SCHEMA_FILE = 'schema/adr.schema.json'
 
@@ -18,9 +25,21 @@ function validateBlocks(locale) {
   }
 }
 
-export async function loadAdrCanon(canonRoot) {
-  const schema = await loadSchema(canonRoot, SCHEMA_FILE)
-  const locale = await readCanonJson(canonRoot, schema, ADR_FILES.locale)
+async function loadAdrDocument(canonRoot, schema, localePath) {
+  const locale = await readCanonJson(canonRoot, schema, localePath)
   validateBlocks(locale)
   return { document: locale.document, blocks: locale.blocks }
+}
+
+export async function loadAdrCanon(canonRoot) {
+  const schema = await loadSchema(canonRoot, SCHEMA_FILE)
+  return loadAdrDocument(canonRoot, schema, ADR_FILES.locale)
+}
+
+export async function loadAdrCanonCollection(canonRoot, collection = ADR_COLLECTION) {
+  uniqueBy(collection, (entry) => entry.id, 'E_DUPLICATE_COLLECTION_ID', 'adr collection')
+  uniqueBy(collection, (entry) => entry.locale, 'E_DUPLICATE_COLLECTION_PATH', 'adr collection')
+  const schema = await loadSchema(canonRoot, SCHEMA_FILE)
+  const entries = await Promise.all(collection.map(async (entry) => [entry.id, await loadAdrDocument(canonRoot, schema, entry.locale)]))
+  return new Map(entries)
 }
