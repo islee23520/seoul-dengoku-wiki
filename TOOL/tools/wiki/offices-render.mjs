@@ -1,8 +1,10 @@
 #!/usr/bin/env node
-import { readFile, rename, rm, writeFile } from 'node:fs/promises'
+import { readFile } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
+import { emitGenerated } from '../canon/emit.mjs'
+import { renderDocument, renderTableRows } from '../canon/render.mjs'
 import { OfficesCanonError, loadOfficesCanon } from './offices-canon.mjs'
 import { extractAtlasJson } from './world-atlas-parse.mjs'
 
@@ -20,11 +22,7 @@ export async function loadStateRegistry(atlasPath) {
   return new Map(parsed.value.states.map((state) => [state.id, state.display_name]))
 }
 
-const inlineText = (inline) => (inline.kind === 'link' ? `[${inline.text}](${inline.href})` : inline.text)
-const row = (cells) => `| ${cells.join(' | ')} |`
-
 function renderTable(block, canon, registry) {
-  const separator = `|${block.header.map(() => '---').join('|')}|`
   let rows = block.rows
   if (block.source === 'state-office-titles') {
     const texts = new Map(canon.texts.map((entry) => [entry.id, entry.text]))
@@ -34,45 +32,17 @@ function renderTable(block, canon, registry) {
       ...canon.tiers.map((tier) => texts.get(canon.titles.find((title) => title.stateId === stateId && title.tierId === tier.id).titleKey)),
     ])
   }
-  return [row(block.header), separator, ...rows.map(row)].join('\n')
-}
-
-function renderBlock(block, canon, registry) {
-  switch (block.kind) {
-    case 'heading':
-      return `${'#'.repeat(block.level)} ${block.inlines.map(inlineText).join('')}`
-    case 'paragraph':
-      return block.inlines.map(inlineText).join('')
-    case 'table':
-      return renderTable(block, canon, registry)
-    default:
-      throw new OfficesCanonError('E_UNSUPPORTED_BLOCK', `${block.id}: ${block.kind}`)
-  }
+  return renderTableRows(block.header, rows)
 }
 
 export function renderOfficesMarkdown(canon, registry) {
-  const blocksById = new Map(canon.blocks.map((block) => [block.id, block]))
-  return `${canon.document.blockIds.map((id) => renderBlock(blocksById.get(id), canon, registry)).join('\n\n')}\n`
+  return renderDocument(canon, (block) => renderTable(block, canon, registry))
 }
 
 export async function materializeOffices({ canonRoot, atlasPath, outputPath, check }) {
   const registry = await loadStateRegistry(atlasPath)
   const rendered = renderOfficesMarkdown(await loadOfficesCanon(canonRoot, registry), registry)
-  const existing = await readFile(outputPath, 'utf8').catch((error) => {
-    if (error.code === 'ENOENT') return null
-    throw error
-  })
-  if (existing === rendered) return { changed: false }
-  if (check) throw new OfficesCanonError('E_DRIFT', outputPath)
-  const temporary = `${outputPath}.tmp-${process.pid}`
-  try {
-    await writeFile(temporary, rendered)
-    await rename(temporary, outputPath)
-  } catch (error) {
-    await rm(temporary, { force: true })
-    throw error
-  }
-  return { changed: true }
+  return emitGenerated({ outputPath, rendered, check })
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
