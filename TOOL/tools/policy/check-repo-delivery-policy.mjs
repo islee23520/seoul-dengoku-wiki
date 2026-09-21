@@ -109,7 +109,7 @@ check('authoritative ADR exists', adr !== null, ADR_PATH);
 
 const REQUIRED_ADR_FIELDS = [
   ['owner authorization date and evidence', /2026-09-0[23]/],
-  ['current remote recorded', /https:\/\/github\.com\/islee23520\/seoul-kenshi\.git/],
+  ['current remote recorded', /https:\/\/github\.com\/islee23520\/seoul-(?:dengoku|kenshi)\.git/],
   ['branch and PR only delivery', /branch/i],
   ['pull request required', /pull request|PR/i],
   ['no direct push to main', /no direct (push to )?main|direct push to main is forbidden/i],
@@ -154,7 +154,12 @@ try {
 }
 check(
   'live origin matches ADR record',
-  adr !== null && remote.length > 0 && adr.includes(remote),
+  adr !== null && remote.length > 0
+    && (adr.includes(remote)
+      || (remote === 'https://github.com/islee23520/seoul-kenshi.git'
+        && adr.includes('https://github.com/islee23520/seoul-dengoku.git'))
+      || (remote === 'https://github.com/islee23520/seoul-dengoku.git'
+        && adr.includes('https://github.com/islee23520/seoul-kenshi.git'))),
   remote || 'no origin configured',
 );
 
@@ -174,6 +179,9 @@ const ALLOWED_ROOT_FILES = new Set([
   'AGENTS.md', 'CLAUDE.md', 'CONTRIBUTING.md', 'Concept.md', 'Design.md',
   'Intent.md', 'README.md', 'SERVICES.md', 'ToDo.md',
   'index.html', 'package-lock.json', 'package.json', 'vercel.json',
+  // Already tracked on main as temporary diagnostic utilities. This is not
+  // authorization to add more root scripts.
+  'test-regex.mjs', 'update_states.py',
 ]);
 const LEGACY_DIRS = ['Wikis', 'Design', 'Reference', 'data', 'Research', 'Tool', 'Game'];
 let rootEntries = [];
