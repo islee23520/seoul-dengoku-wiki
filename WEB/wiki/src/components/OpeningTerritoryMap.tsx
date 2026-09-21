@@ -4,7 +4,7 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 import { StateFlag } from './StateFlag'
 
-type State = { id: string; name: string; slug: string; power: string; labelX: number; labelY: number; capitalStationId: string; capitalX: number; capitalY: number }
+type State = { id: string; name: string; slug: string; origin: string; government: string; power: string; ruler: string; cause: string; labelX: number; labelY: number; capitalStationId: string; capitalRegionId: string; capitalX: number; capitalY: number }
 type Region = { id: string; name: string; district: string; path: string; polities: string[]; status: 'held' | 'contested'; openingState: string; summary: string; stationCount: number }
 type LineDefinition = { name: string; color: string }
 type StationControl = { source: 'derived-from-surface' | 'outside-surface-atlas' | 'control-delta'; deltaId: string | null; status: 'held' | 'contested' | 'unknown'; polityIds: string[]; polityNames: string[]; surfaceRegionId: string | null; surfaceRegionName: string | null; hierarchy: { state: string; regionalAuthority: string; stationManager: string } }
@@ -83,6 +83,11 @@ export default function OpeningTerritoryMap() {
 
   const states = useMemo(() => new Map(data?.states.map((state, index) => [state.id, { ...state, color: colors[index] }]) ?? []), [data])
   const selected = data?.regions.find((region) => region.id === selectedId)
+  const selectedState = stateFilter === 'all' ? null : states.get(stateFilter) ?? null
+  const selectState = (state: State) => {
+    setStateFilter(state.id)
+    setSelectedId(state.capitalRegionId)
+  }
 
   useEffect(() => {
     if (!data || !canvasRef.current || !shellRef.current) return
@@ -345,7 +350,7 @@ export default function OpeningTerritoryMap() {
     <section className="territory-map-section" aria-labelledby="opening-territory-title">
       <header><p className="wiki-domain-label">서울 전체 · 캠페인 개막 시점 · Three.js</p><h2 id="opening-territory-title">3D 개막 영토 지도</h2><p>서울 25개 구·427개 행정동을 미니어처 지형으로 돌출했습니다. 높이는 지배 상태와 역 분포를 읽기 위해 과장한 표시이며 실제 측량 고도가 아닙니다.</p></header>
       <div className="territory-toolbar">
-        <label className="territory-filter"><span>국가 필터</span><select value={stateFilter} onChange={(event) => setStateFilter(event.target.value)}><option value="all">16국 전체</option>{data.states.map((state) => <option key={state.id} value={state.id}>{state.id} · {state.name}</option>)}</select></label>
+        <label className="territory-filter"><span>국가 필터</span><select value={stateFilter} onChange={(event) => { const state = states.get(event.target.value); if (state) selectState(state); else setStateFilter('all') }}><option value="all">16국 전체</option>{data.states.map((state) => <option key={state.id} value={state.id}>{state.id} · {state.name}</option>)}</select></label>
         <label className="territory-filter"><span>노선 필터</span><select value={selectedLine} onChange={(event) => setSelectedLine(event.target.value)}><option value="all">전체 노선</option>{Object.entries(data.lines).map(([lineId, line]) => <option key={lineId} value={lineId}>{line.name}</option>)}</select></label>
         <label className="territory-filter"><span>지역 선택</span><select value={selectedId ?? ''} onChange={(event) => setSelectedId(event.target.value)}>{data.regions.map((region) => <option key={region.id} value={region.id}>{region.district} · {region.name}</option>)}</select></label>
         <button type="button" onClick={() => runtimeRef.current?.reset()}>전체 보기</button>
@@ -375,7 +380,7 @@ export default function OpeningTerritoryMap() {
             {data.states.map((state) => {
               const position = markerPositions[state.id]
               const capital = data.stations.find((station) => station.id === state.capitalStationId)
-              return <button key={state.id} type="button" className="territory-state-marker territory-capital-marker" data-capital-station-id={state.capitalStationId} aria-pressed={stateFilter === state.id} style={{ left: `${position?.left ?? state.capitalX / data.width * 100}%`, top: `${position?.top ?? state.capitalY / data.height * 100}%`, visibility: position?.visible === false ? 'hidden' : 'visible' }} onClick={() => setStateFilter(state.id)}><StateFlag stateId={state.id} /><span><strong>{state.id} · 수도역 {capital?.name ?? state.capitalStationId}</strong>{state.name}</span></button>
+              return <button key={state.id} type="button" className="territory-state-marker territory-capital-marker" data-capital-station-id={state.capitalStationId} aria-pressed={stateFilter === state.id} style={{ left: `${position?.left ?? state.capitalX / data.width * 100}%`, top: `${position?.top ?? state.capitalY / data.height * 100}%`, visibility: position?.visible === false ? 'hidden' : 'visible' }} onClick={() => selectState(state)}><StateFlag stateId={state.id} /><span><strong>{state.id} · 수도역 {capital?.name ?? state.capitalStationId}</strong>{state.name}</span></button>
             })}
           </div>
           <div className="territory-station-markers" aria-label="주요 지하철역 이름">
@@ -408,10 +413,11 @@ export default function OpeningTerritoryMap() {
           </div>}
         </div>
         <aside className="territory-detail" aria-live="polite">
-          {selected && <><p className="wiki-domain-label">{selected.district}</p><h3>{selected.name}</h3><table className="person-data-table"><tbody><tr><th>지배 상태</th><td>{selected.status === 'held' ? '단독 지배' : '경합·공동 영향권'}</td></tr><tr><th>영토국</th><td>{selected.polities.map((id) => states.get(id)?.name ?? id).join(' · ')}</td></tr><tr><th>역 객체</th><td>{selected.stationCount}개</td></tr></tbody></table><h4>개막 상태</h4><p>{selected.openingState}</p><h4>지역 개요</h4><p>{selected.summary}</p>{selected.polities.map((id) => states.get(id)).filter(Boolean).map((state) => <Link key={state!.id} to={`/states/${state!.slug}`} className="territory-state-link">{state!.id} {state!.name}</Link>)}</>}
+          {selected && <section aria-labelledby="selected-region-title"><p className="wiki-domain-label">선택된 지역 · {selected.district}</p><h3 id="selected-region-title">{selected.name}</h3><table className="person-data-table"><tbody><tr><th>지배 상태</th><td>{selected.status === 'held' ? '단독 지배' : '경합·공동 영향권'}</td></tr><tr><th>영토국</th><td>{selected.polities.map((id) => states.get(id)?.name ?? id).join(' · ')}</td></tr><tr><th>역 객체</th><td>{selected.stationCount}개</td></tr></tbody></table><h4>개막 상태</h4><p>{selected.openingState}</p><h4>지역 개요</h4><p>{selected.summary}</p></section>}
+          {selectedState && <section aria-labelledby="selected-state-title"><p className="wiki-domain-label">선택 국가 · {selectedState.id}</p><h3 id="selected-state-title">{selectedState.name}</h3><table className="person-data-table"><tbody><tr><th>수장</th><td>{selectedState.ruler}</td></tr><tr><th>기원·중심역</th><td>{selectedState.origin}</td></tr><tr><th>정부 형태</th><td>{selectedState.government}</td></tr><tr><th>국력</th><td>{selectedState.power}</td></tr></tbody></table><h4>형성 인과</h4><p>{selectedState.cause}</p><Link to={`/states/${selectedState.slug}`} className="territory-state-link">{selectedState.id} {selectedState.name} 상세 읽기</Link></section>}
         </aside>
       </div>
-      <div className="territory-legend">{data.states.map((state) => <button key={state.id} type="button" onClick={() => setStateFilter(state.id)} aria-pressed={stateFilter === state.id}><StateFlag stateId={state.id} /><span>{state.id} {state.name}</span></button>)}<span className="territory-contested-key">낮은 돌출: 경합지</span></div>
+      <div className="territory-legend">{data.states.map((state) => <button key={state.id} type="button" onClick={() => selectState(state)} aria-pressed={stateFilter === state.id}><StateFlag stateId={state.id} /><span>{state.id} {state.name}</span></button>)}<span className="territory-contested-key">낮은 돌출: 경합지</span></div>
       <div className="territory-line-legend" aria-label="서울 지하철 노선 색상"><button type="button" aria-pressed={selectedLine === 'all'} onClick={() => setSelectedLine('all')}>전체 노선</button>{Object.entries(data.lines).map(([lineId, line]) => <button key={lineId} type="button" aria-pressed={selectedLine === lineId} onClick={() => setSelectedLine(lineId)}><span style={{ backgroundColor: line.color }} />{line.name}</button>)}</div>
       <details className="territory-flag-provenance"><summary>16국 깃발 콘셉트 시트와 채택 자산</summary><p>CLIProxy Gemini로 생성한 4×4 콘셉트 시트를 Artkit으로 16개 셀에 분리해 지도·범례의 실제 깃발 자산으로 사용합니다.</p><img src={`${import.meta.env.BASE_URL}state-flags/concept-sheet.webp`} alt="16국 깃발 4×4 콘셉트 시트" loading="lazy" /></details>
       <p className="wiki-domain-label">{data.epoch.label} · 국기 도안은 국가 기원에서 만든 공식 위키 식별기 · 3D 높이는 가독성용 과장 · {data.attribution}</p>

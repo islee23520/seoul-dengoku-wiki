@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { wikiUpdates } from '../generated/wikiUpdates'
 import { wikiLinks } from '../wikiLinks'
 
 type PanelItem = { label: string; to: string; spa?: boolean }
@@ -41,14 +42,6 @@ const panels: { title: string; items: PanelItem[] }[] = [
   ]},
 ]
 
-const news = [
-  '2026-09-19 — 16국 기원 재설계 확정 (대한민국정부·전경련·삼성·현대차·장로회·천주교·조계종·원불교·민주노총)',
-  '2026-09-19 — 재벌 수장 항렬 계승 개명 (이홍원·정호준·최지우)',
-  '2026-09-19 — 장로회 당회장 오경재 신규 캐스팅',
-  '2026-09-18 — LORE 루트 폴더 재편 완료',
-  '2026-09-18 — 문체 계약 락 체결',
-]
-
 export default function HomePage() {
   return (
     <div>
@@ -61,9 +54,9 @@ export default function HomePage() {
 
       <div className="mb-6 rounded-lg border border-toc-border bg-toc-bg p-4">
         <h3 className="mb-2 text-sm font-bold text-accent-dark">최신 소식</h3>
-        {news.map((n, i) => (
-          <div key={i} className="home-news-item py-1 text-sm text-gray-700">
-            <span className="mr-2 text-accent">•</span>{n}
+        {wikiUpdates.map((update) => (
+          <div key={`${update.date}:${update.title}`} className="home-news-item py-1 text-sm text-gray-700">
+            <span className="mr-2 text-accent">•</span><Link to={update.route}>{update.date} — {update.title}</Link>
           </div>
         ))}
       </div>

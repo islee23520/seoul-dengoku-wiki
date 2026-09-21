@@ -3,6 +3,7 @@ import { basename, dirname, extname, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import proj4 from 'proj4'
 import { STATES } from '../../../TOOL/tools/wiki/world-atlas-schema.mjs'
+import { latestUpdates } from './update-history.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = resolve(projectRoot, '../..')
@@ -98,6 +99,10 @@ const lines = [
 
 await writeFile(resolve(generatedRoot, 'wikiCatalog.ts'), `${lines.join('\n')}\n`)
 await writeFile(resolve(publicRoot, 'wiki-contract.json'), `${JSON.stringify({ documents: documents.map(({ domain, slug, route, title }) => ({ domain, slug, route, title })) }, null, 2)}\n`)
+
+const updateHistory = JSON.parse(await readFile(resolve(projectRoot, 'data/update-history.json'), 'utf8'))
+const wikiUpdates = latestUpdates(updateHistory.updates)
+await writeFile(resolve(generatedRoot, 'wikiUpdates.ts'), `export type WikiUpdate = { readonly date: string; readonly title: string; readonly route: string }\n\nexport const wikiUpdates = ${JSON.stringify(wikiUpdates.map(({ date, title, route }) => ({ date, title, route })), null, 2)} as const satisfies readonly WikiUpdate[]\n`)
 
 const stateSource = await readFile(resolve(repoRoot, 'LORE/factions/Sixteen-States.md'), 'utf8')
 const officesSource = await readFile(resolve(repoRoot, 'LORE/offices/Offices-and-Ranks.md'), 'utf8')
@@ -273,7 +278,24 @@ const territoryStates = [...stateNameById.entries()].sort(([left], [right]) => l
   const capitalStationId = stationIdByName.get(capitalNameByState.get(id))
   const capital = mapStations.find((station) => station.id === capitalStationId)
   if (!capital) throw new Error(`E_CAPITAL_STATION_COORDINATE:${id}`)
-  return { id, name, slug: state.slug, power: state.power, labelX: label.x, labelY: label.y, capitalStationId, capitalX: capital.x, capitalY: capital.y }
+  const capitalRegion = regionAtlas.regions.find((region) => pointInPolygon([capital.x, capital.y], simplifyRing(geometryRings(region.map_geometry)[0]).map(mapPoint)))
+  if (!capitalRegion) throw new Error(`E_CAPITAL_REGION_NOT_FOUND:${id}:${capitalStationId}`)
+  return {
+    id,
+    name,
+    slug: state.slug,
+    origin: state.origin,
+    government: state.government,
+    power: state.power,
+    ruler: state.ruler,
+    cause: state.cause,
+    labelX: label.x,
+    labelY: label.y,
+    capitalStationId,
+    capitalRegionId: capitalRegion.id,
+    capitalX: capital.x,
+    capitalY: capital.y,
+  }
 })
 const openingTerritories = {
   schema: 'seoul-opening-territories.v1',

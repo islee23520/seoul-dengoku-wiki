@@ -131,3 +131,19 @@ test('territory generator reads all sixteen capitals from current state canon', 
   assert.match(generator, /stateIdByName/)
   assert.doesNotMatch(generator, /Chaebol-Houses-and-Century-Factions\.md/)
 })
+
+test('selecting a state also selects its capital region and shows state information', async () => {
+  const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  const map = await readFile(new URL('../src/components/OpeningTerritoryMap.tsx', import.meta.url), 'utf8')
+
+  assert.ok(data.states.every((state) => typeof state.capitalRegionId === 'string' && state.capitalRegionId.length > 0))
+  assert.ok(data.states.every((state) => state.origin.length > 0 && state.government.length > 0 && state.ruler.length > 0 && state.cause.length > 0))
+  assert.match(map, /selectState/)
+  assert.match(map, /setSelectedId\(state\.capitalRegionId\)/)
+  assert.match(map, /selected-region-title/)
+  assert.match(map, /selected-state-title/)
+  assert.match(map, /selectedState\.origin/)
+  assert.match(map, /selectedState\.government/)
+  assert.match(map, /selectedState\.ruler/)
+  assert.match(map, /selectedState\.cause/)
+})
