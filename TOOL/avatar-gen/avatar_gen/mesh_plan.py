@@ -39,7 +39,7 @@ def build_repair_plan(audit: dict[str, object]) -> RepairPlan:
     source = cast(dict[str, object], audit["source"])
     actions: list[RepairAction] = []
     blocked: list[str] = []
-    hard_failures: list[str] = []
+    hard_failures = [str(value) for value in cast(list[object], audit.get("hard_failures", []))]
     donor_decisions: list[dict[str, object]] = []
     for raw in cast(list[object], audit["objects"]):
         if not isinstance(raw, dict):
@@ -67,7 +67,7 @@ def build_repair_plan(audit: dict[str, object]) -> RepairPlan:
             }
             donor_decisions.append(decision)
             if donor in {"left", "right"}:
-                actions.append({"action": "mirror-from-donor", "object_name": name, "parameters": {"donor": donor, "plane_x_m": _number(symmetry_data.get("plane_x_m"), 0.0), "weld_threshold_m": _number(symmetry_data.get("weld_threshold_m"), 0.00001)}, "authorization": "explicit-destructive"})
+                blocked.append(f"DESTRUCTIVE_SYMMETRY_NOT_IMPLEMENTED:{name}:{donor}")
             elif symmetry_data.get("requested") is True and symmetry_data.get("eligible") is True:
                 blocked.append(f"SYMMETRY_DONOR_UNPROVEN:{name}")
         for failure in failures:

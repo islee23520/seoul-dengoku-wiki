@@ -66,7 +66,7 @@ def test_output_may_not_overwrite_source(tmp_path: Path) -> None:
         execute_mesh_work(source, "mesh repair", tmp_path / "work", output=source, apply_repairs=True)
 
 
-def test_donor_plan_requires_explicit_destructive_authorization() -> None:
+def test_donor_plan_is_blocked_until_topology_preserving_reflection_exists() -> None:
     audit = {
         "schema_version": 1,
         "source": {"sha256": "b" * 64},
@@ -79,10 +79,16 @@ def test_donor_plan_requires_explicit_destructive_authorization() -> None:
         "unproven": [],
     }
     plan = build_repair_plan(audit)
-    assert plan["status"] == "READY"
-    assert plan["actions"] == [{
-        "action": "mirror-from-donor",
-        "object_name": "Head",
-        "parameters": {"donor": "right", "plane_x_m": 0.0, "weld_threshold_m": 1e-5},
-        "authorization": "explicit-destructive",
-    }]
+    assert plan["status"] == "BLOCKED"
+    assert plan["actions"] == []
+    assert plan["blocked"] == ["DESTRUCTIVE_SYMMETRY_NOT_IMPLEMENTED:Head:right"]
+
+
+def test_work_artifact_symlink_to_source_is_rejected(tmp_path: Path) -> None:
+    source = tmp_path / "source.blend"
+    source.write_bytes(b"fixture")
+    work = tmp_path / "work"
+    work.mkdir()
+    (work / "mesh-job.json").symlink_to(source)
+    with pytest.raises(ValueError, match="must not be a symlink"):
+        execute_mesh_work(source, "mesh audit", work)

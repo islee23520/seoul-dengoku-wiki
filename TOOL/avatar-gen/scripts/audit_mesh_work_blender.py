@@ -60,30 +60,19 @@ def boundary_cycles(mesh: bpy.types.Mesh) -> list[list[int]]:
         bm.free()
 
 
-def classify_opening(name: str, points: list[Vector], minimum: Vector, maximum: Vector) -> str | None:
-    if not points:
-        return None
-    center = sum(points, Vector()) / len(points)
-    height = max(maximum.z - minimum.z, 1e-6)
-    width = max(maximum.x - minimum.x, 1e-6)
-    relative_z = (center.z - minimum.z) / height
-    relative_x = (center.x - minimum.x) / width
-    extent_x = max(point.x for point in points) - min(point.x for point in points)
-    extent_z = max(point.z for point in points) - min(point.z for point in points)
-    lowered = name.casefold()
-    if any(token in lowered for token in ("tooth", "gum", "tongue", "inner", "mouth", "oral")):
-        return "oral-component-boundary"
-    if any(token in lowered for token in ("eye", "cornea", "iris", "pupil", "sclera")):
-        return "eye-component-boundary"
-    if any(token in lowered for token in ("bandeau", "brief", "underwear", "garment", "cloth")):
-        return "garment-boundary"
-    if relative_z > 0.98 and extent_x > width * 0.12:
-        return "neck"
-    if relative_z > 0.60 and extent_x < width * 0.18 and extent_z < height * 0.12:
-        return "eye-left" if relative_x < 0.5 else "eye-right"
-    if relative_z > 0.48 and extent_x < width * 0.32 and extent_z < height * 0.15:
-        return "mouth"
-    return None
+def declared_boundary_roles(obj: bpy.types.Object) -> list[str]:
+    raw = obj.get("avatar_boundary_roles")
+    if not isinstance(raw, str):
+        return []
+    return [value.strip() for value in raw.split(",") if value.strip()]
+
+
+def centerline_duplicate_pairs(vertices: list[Vector], plane_x: float, center_epsilon: float, threshold: float) -> int:
+    center = [(index, point) for index, point in enumerate(vertices) if abs(point.x - plane_x) <= center_epsilon]
+    count = 0
+    for position, (_, point) in enumerate(center):
+        count += sum((other - point).length <= threshold for _, other in center[position + 1 :])
+    return count
 
 
 def triangle_area(a: Vector, b: Vector, c: Vector) -> float:
@@ -155,8 +144,9 @@ def main() -> int:
             cycles = boundary_cycles(mesh)
             classified = []
             unexpected = []
-            for cycle in cycles:
-                semantic = classify_opening(obj.name, [vertices[index] for index in cycle], minimum, maximum)
+            roles = declared_boundary_roles(obj)
+            for cycle_index, cycle in enumerate(cycles):
+                semantic = roles[cycle_index] if cycle_index < len(roles) else None
                 entry = {"semantic_id": semantic, "vertex_count": len(cycle), "vertex_ids": cycle}
                 (classified if semantic else unexpected).append(entry)
             degenerates = sum(1 for tri in mesh.loop_triangles if triangle_area(*(vertices[index] for index in tri.vertices)) <= 1e-12)
@@ -194,6 +184,9 @@ def main() -> int:
                 hard_failures.append("WIRE_EDGE")
             if winding_conflicts:
                 hard_failures.append("WINDING_CONFLICT")
+            duplicate_center = centerline_duplicate_pairs(vertices, parsed.symmetry_plane_x, parsed.center_epsilon, parsed.center_epsilon)
+            if duplicate_center:
+                hard_failures.append("CENTERLINE_DUPLICATE")
             objects.append({
                 "object_name": obj.name,
                 "vertex_count": len(vertices),
@@ -208,7 +201,7 @@ def main() -> int:
                 "non_manifold_edge_count": non_manifold,
                 "winding_conflict_count": winding_conflicts,
                 "wire_edge_count": wire_edges,
-                "centerline_duplicate_pair_count": 0,
+                "centerline_duplicate_pair_count": duplicate_center,
                 "centerline_weld_threshold_m": parsed.center_epsilon,
                 "inconsistent_normals": winding_conflicts > 0,
                 "hard_failures": hard_failures,
@@ -216,6 +209,11 @@ def main() -> int:
             })
         finally:
             evaluated.to_mesh_clear()
+    scene_empty = not objects
+    scene_hard_failures = sorted({failure for item in objects for failure in item["hard_failures"]})
+    if scene_empty:
+        scene_hard_failures.append("EMPTY_MESH")
+        scene_min = scene_max = Vector((0.0, 0.0, 0.0))
     payload = {
         "schema_version": 1,
         "contract_id": job.get("contract_id"),
@@ -223,8 +221,8 @@ def main() -> int:
         "coordinate_system": {"unit": "meter", "up": "+Z", "forward": "-Y", "space": "world"},
         "scene_bounds_world": {"min": list(scene_min), "max": list(scene_max)},
         "objects": objects,
-        "hard_failures": sorted({failure for item in objects for failure in item["hard_failures"]}),
-        "unproven": ["SELF_INTERSECTION", "UV_OVERLAP", "TEXTURE_CONTINUITY", "VISUAL_REVIEW", "FBX_REIMPORT", "HOLDOUT_REPRODUCTION"],
+        "hard_failures": scene_hard_failures,
+        "unproven": ["SELF_INTERSECTION", "UV_OVERLAP", "TEXTURE_CONTINUITY", "VISUAL_REVIEW", "FBX_REIMPORT", "HOLDOUT_REPRODUCTION", "REQUIRED_ROLES", "PROTECTED_OPENING_PRESERVATION", "EXTERNAL_TEXTURES"],
     }
     parsed.output.parent.mkdir(parents=True, exist_ok=True)
     parsed.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

@@ -90,11 +90,20 @@ def execute_mesh_work(
         raise FileNotFoundError(source)
     if output is not None and source.resolve() == output.resolve():
         raise ValueError("output must not overwrite source")
+    source_resolved = source.resolve()
+    if work_dir.exists() and work_dir.is_symlink():
+        raise ValueError("work-dir must not be a symlink")
     work_dir.mkdir(parents=True, exist_ok=True)
     job = route_request(request, apply_repairs=apply_repairs)
     job_path = work_dir / "mesh-job.json"
     audit_path = work_dir / "baseline-audit.json"
     plan_path = work_dir / "repair-plan.json"
+    receipt_path = work_dir / "mesh-work-receipt.json"
+    for artifact in (job_path, audit_path, plan_path, receipt_path, work_dir / "verification-audit.json"):
+        if artifact.exists() and artifact.is_symlink():
+            raise ValueError(f"work artifact must not be a symlink: {artifact.name}")
+        if artifact.resolve() == source_resolved:
+            raise ValueError(f"work artifact must not overwrite source: {artifact.name}")
     write_job(job_path, job)
     audit = run_audit(source, job_path, audit_path, blender=blender)
     plan = build_repair_plan(audit)
@@ -132,5 +141,5 @@ def execute_mesh_work(
         "applied_actions": applied,
         "unproven": plan["unproven"],
     }
-    (work_dir / "mesh-work-receipt.json").write_text(json.dumps(receipt, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    receipt_path.write_text(json.dumps(receipt, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return receipt

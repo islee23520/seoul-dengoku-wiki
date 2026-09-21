@@ -41,7 +41,7 @@ ROUTES = (
     RouteRule("topology-audit", ("repair", "수리", "hole", "구멍", "weld", "용접", "normal", "노말", "boundary", "경계", "quad", "쿼드", "retopo", "리토포"), "audit topology and protected boundaries before repair"),
     RouteRule("bilateral-audit", ("symmetry", "시메트리", "대칭", "bilateral", "좌우", "양쪽", "left", "왼쪽", "right", "오른쪽", "반대쪽"), "audit both halves before donor selection"),
     RouteRule("join-transition", ("neck", "목", "join", "접합", "density", "밀도", "head", "머리", "body", "몸"), "measure and plan high-density to low-density transition"),
-    RouteRule("oral-eye", ("oral", "mouth", "입안", "잇몸", "치아", "혀", "eye", "눈알", "각막", "동공", "홍채"), "preserve eye openings and require oral/eye roles"),
+    RouteRule("oral-eye", ("oral", "mouth", "입", "구강", "입안", "잇몸", "치아", "혀", "eye", "눈", "눈알", "각막", "동공", "홍채"), "preserve eye openings and require oral/eye roles"),
     RouteRule("uv-texture", ("uv", "texture", "텍스처", "bake", "베이크", "color", "색상"), "validate final-geometry UV and source-color lineage"),
     RouteRule("delivery", ("fbx", "export", "익스포트", "reimport", "재임포트", "unity", "three.js", "threejs"), "verify portable export and independent reimport"),
     RouteRule("holdout", ("holdout", "재현", "repeat", "반복", "다른 메쉬", "자율"), "prove the frozen procedure on independent geometry"),

@@ -41,11 +41,7 @@ python3 TOOL/avatar-gen/bin/avatar-gen.py mesh-work \
   --apply
 ```
 
-대칭 복사는 destructive action이므로 donor가 감사로 입증되어도 추가 플래그가 필요하다.
-
-```bash
-... --apply --allow-destructive
-```
+대칭 복사는 donor와 center-connected topology 보존을 함께 검증한 자동화가 아직 없으므로 현재 CLI에서 실행하지 않는다. donor가 외부 side-local 감사로 제공되어도 계획은 `DESTRUCTIVE_SYMMETRY_NOT_IMPLEMENTED`로 차단한다.
 
 원본과 output 경로가 같으면 항상 거부한다. 적용 뒤 output을 새 Blender 프로세스로 다시 감사한다.
 
@@ -70,7 +66,7 @@ python3 TOOL/avatar-gen/bin/avatar-gen.py mesh-work \
 
 - face normal 재계산: winding 진단이 있고 기하 fold를 해결했다고 주장하지 않음
 - centerline snap/remove-doubles: 감사가 실제 중앙 중복 후보를 보고한 경우
-- donor reflection: 양측 감사가 donor를 입증하고 `--allow-destructive`가 있는 경우
+- donor reflection: 계획과 donor 기록만 가능하며 자동 적용은 차단
 
 목 경계 리토폴로지, 구강 수리, 눈 피팅, UV 재전개, 텍스처 bake는 현재 **계획/검증 단계**로 라우팅되며 자동 적용하지 않는다. 수치만으로 시각 결정을 대체하지 않기 때문이다.
 

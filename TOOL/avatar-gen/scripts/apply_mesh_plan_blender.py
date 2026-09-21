@@ -32,6 +32,8 @@ def recalculate_normals(obj: bpy.types.Object, inside: bool) -> None:
 
 
 def weld_centerline(obj: bpy.types.Object, threshold: float) -> None:
+    if not obj.matrix_world.is_identity:
+        raise RuntimeError(f"centerline weld requires identity object transform: {obj.name}")
     bm = bmesh.new()
     try:
         bm.from_mesh(obj.data)
@@ -40,30 +42,6 @@ def weld_centerline(obj: bpy.types.Object, threshold: float) -> None:
             vertex.co.x = 0.0
         if center:
             bmesh.ops.remove_doubles(bm, verts=center, dist=threshold)
-        bm.to_mesh(obj.data)
-    finally:
-        bm.free()
-
-
-def mirror_from_donor(obj: bpy.types.Object, donor: str, plane_x: float, weld_threshold: float) -> None:
-    if obj.matrix_world != obj.matrix_world.__class__():
-        raise RuntimeError(f"mirror requires identity object transform: {obj.name}")
-    bm = bmesh.new()
-    try:
-        bm.from_mesh(obj.data)
-        keep_left = donor == "left"
-        remove = [vertex for vertex in bm.verts if (vertex.co.x > plane_x + weld_threshold if keep_left else vertex.co.x < plane_x - weld_threshold)]
-        bmesh.ops.delete(bm, geom=remove, context="VERTS")
-        source = [vertex for vertex in bm.verts if (vertex.co.x < plane_x - weld_threshold if keep_left else vertex.co.x > plane_x + weld_threshold)]
-        result = bmesh.ops.duplicate(bm, geom=[*source, *(edge for edge in bm.edges if all(vertex in source for vertex in edge.verts)), *(face for face in bm.faces if all(vertex in source for vertex in face.verts))])
-        for element in result["geom"]:
-            if isinstance(element, bmesh.types.BMVert):
-                element.co.x = 2 * plane_x - element.co.x
-        center = [vertex for vertex in bm.verts if abs(vertex.co.x - plane_x) <= weld_threshold]
-        for vertex in center:
-            vertex.co.x = plane_x
-        bmesh.ops.remove_doubles(bm, verts=center, dist=weld_threshold)
-        bmesh.ops.recalc_face_normals(bm, faces=bm.faces)
         bm.to_mesh(obj.data)
     finally:
         bm.free()
@@ -88,8 +66,6 @@ def main() -> int:
             recalculate_normals(obj, bool(parameters.get("inside", False)))
         elif action["action"] == "weld-centerline":
             weld_centerline(obj, float(parameters["threshold_m"]))
-        elif action["action"] == "mirror-from-donor":
-            mirror_from_donor(obj, str(parameters["donor"]), float(parameters["plane_x_m"]), float(parameters["weld_threshold_m"]))
         else:
             raise RuntimeError(f"unsupported repair action: {action['action']}")
         applied.append(action["action"])
