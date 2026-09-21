@@ -22,7 +22,10 @@
     "female-oral",
     "showcase",
     "male-source-texture",
-    "female-source-texture"
+    "female-source-texture",
+    "female-underwear-web",
+    "female-underwear-contract",
+    "female-underwear-cross-renderer-verification"
   ],
   "assets": [
     {
@@ -179,6 +182,24 @@
       "role": "female-source-texture",
       "path": "ART-ASSETS/avatar-gen/textures/female-sourcecolor-atlas-4096.png",
       "sha256": "63339f4b2e957ae6914d28f3c54743da7e989ae553465b640be2fecd0331561a",
+      "status": "accepted"
+    },
+    {
+      "role": "female-underwear-web",
+      "path": "ART-ASSETS/avatar-gen/runtime/female-underwear/female-underwear.glb",
+      "sha256": "0aa82fd36ddaed8c4c4a0d12e6f4839bd5267258e053597edab21813549201b1",
+      "status": "accepted"
+    },
+    {
+      "role": "female-underwear-contract",
+      "path": "ART-ASSETS/avatar-gen/runtime/female-underwear/avatar-contract.json",
+      "sha256": "f00550e0d628883b7a2dd3d4ada56121f3ca7443582707624261409b30dbfac0",
+      "status": "accepted"
+    },
+    {
+      "role": "female-underwear-cross-renderer-verification",
+      "path": "ART-ASSETS/avatar-gen/runtime/female-underwear/verification.json",
+      "sha256": "aef40be698dcbd1b6021318e9fbebe6536653409a0b0fe0a4763f8a09cfce654",
       "status": "accepted"
     }
   ],

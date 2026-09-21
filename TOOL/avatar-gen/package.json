@@ -1,0 +1,17 @@
+{
+  "name": "avatar-gen",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "export:web": "python3 scripts/export_web_avatar.py",
+    "build:web": "bun build viewer/app.mjs --target=browser --outfile=viewer/avatar-gen.bundle.mjs",
+    "serve": "node server/serve.mjs",
+    "test:web": "node --test tests-web/*.test.mjs",
+    "test": "npm run build:web && npm run test:web",
+    "check": "python3 bin/avatar-gen.py check"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  }
+}

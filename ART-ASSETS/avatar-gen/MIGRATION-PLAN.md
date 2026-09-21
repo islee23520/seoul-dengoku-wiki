@@ -4,6 +4,8 @@
 
 Separate production art from executable tooling. `ART-ASSETS/avatar-gen` becomes the single canonical home for accepted full-body Blender files, FBXs, textures, components, showcase scenes and selected evidence. `TOOL/avatar-gen` remains a reusable validator and pipeline that resolves the art library through a portable manifest.
 
+Avatar-gen's baseline product surface is a custom Blender avatar viewer with per-object/per-element visibility controls. The shared element and coordinate contract must behave equivalently in Three.js and Unity. Upper-body portrait generation belongs to portrait-gen.
+
 ## Non-goals
 
 - Do not promote all Round2 experiments or failed candidates.
@@ -100,7 +102,7 @@ The current parent-repository increment establishes the art library and correcte
 7. Run Blender, API, browser, typecheck, build and lifecycle failure matrices.
 8. Commit the green `portrait-gen` submodule increment, then update only its parent gitlink in a dedicated follow-up commit/PR.
 
-The current PR does not claim that this live Three.js viewer is implemented; it provides the canonical accepted source library and the decision-complete corrected execution plan.
+The avatar-gen full-body viewer is now the baseline product surface. The separate reviewed portrait-gen Three.js plan still owns upper-body portrait generation and fixed portrait framing; it consumes avatar-gen assets rather than duplicating avatar viewing.
 
 ## Migration stages
 

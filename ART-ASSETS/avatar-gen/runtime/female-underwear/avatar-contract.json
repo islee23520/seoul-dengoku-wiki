@@ -1,0 +1,392 @@
+{
+  "schemaVersion": 1,
+  "avatarId": "female-underwear",
+  "displayName": "Female Underwear Base",
+  "productSurface": "full-body-avatar-viewer",
+  "portraitGeneration": false,
+  "source": {
+    "path": "ART-ASSETS/avatar-gen/deliverables/female-underwear.blend",
+    "sha256": "10e61b71ee6edb856d632bf7e73fdcdfbc271b51ec2ec74c2ea7281ed4ffb449"
+  },
+  "coordinateSystems": {
+    "blender": {
+      "axes": {
+        "handedness": "right",
+        "up": "+Z",
+        "forward": "-Y",
+        "unitMeters": 1
+      }
+    },
+    "gltf": {
+      "axes": {
+        "handedness": "right",
+        "up": "+Y",
+        "forward": "+Z",
+        "unitMeters": 1
+      }
+    },
+    "unity": {
+      "axes": {
+        "handedness": "left",
+        "up": "+Y",
+        "forward": "+Z",
+        "unitMeters": 1
+      }
+    },
+    "blenderToGltf": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        -1,
+        0
+      ]
+    ],
+    "blenderToUnity": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "gltfToUnity": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ]
+  },
+  "boundsBlenderMeters": {
+    "min": [
+      -0.7276201844215393,
+      -0.18372133374214172,
+      0.0
+    ],
+    "max": [
+      0.7275757193565369,
+      0.0928158164024353,
+      1.6508512496948242
+    ]
+  },
+  "elements": [
+    {
+      "id": "female-upper-tooth-sourcerank-12",
+      "objectName": "Female_Upper_Tooth_SourceRank_12",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 87
+    },
+    {
+      "id": "female-upper-tooth-sourcerank-11",
+      "objectName": "Female_Upper_Tooth_SourceRank_11",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 87
+    },
+    {
+      "id": "female-upper-tooth-sourcerank-10",
+      "objectName": "Female_Upper_Tooth_SourceRank_10",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 88
+    },
+    {
+      "id": "female-upper-tooth-sourcerank-09",
+      "objectName": "Female_Upper_Tooth_SourceRank_09",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 90
+    },
+    {
+      "id": "female-upper-tooth-sourcerank-08",
+      "objectName": "Female_Upper_Tooth_SourceRank_08",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 131
+    },
+    {
+      "id": "female-upper-tooth-sourcerank-07",
+      "objectName": "Female_Upper_Tooth_SourceRank_07",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 131
+    },
+    {
+      "id": "female-upper-tooth-sourcerank-06",
+      "objectName": "Female_Upper_Tooth_SourceRank_06",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 168
+    },
+    {
+      "id": "female-upper-tooth-sourcerank-05",
+      "objectName": "Female_Upper_Tooth_SourceRank_05",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 168
+    },
+    {
+      "id": "female-upper-tooth-sourcerank-04",
+      "objectName": "Female_Upper_Tooth_SourceRank_04",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 170
+    },
+    {
+      "id": "female-upper-tooth-sourcerank-03",
+      "objectName": "Female_Upper_Tooth_SourceRank_03",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 171
+    },
+    {
+      "id": "female-upper-tooth-sourcerank-02",
+      "objectName": "Female_Upper_Tooth_SourceRank_02",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 185
+    },
+    {
+      "id": "female-upper-tooth-sourcerank-01",
+      "objectName": "Female_Upper_Tooth_SourceRank_01",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 185
+    },
+    {
+      "id": "female-upper-gum-source",
+      "objectName": "Female_Upper_Gum_Source",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 1410
+    },
+    {
+      "id": "female-tongue-geometry",
+      "objectName": "Female_Tongue_Geometry",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 567
+    },
+    {
+      "id": "female-lower-tooth-sourcerank-13",
+      "objectName": "Female_Lower_Tooth_SourceRank_13",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 75
+    },
+    {
+      "id": "female-lower-tooth-sourcerank-12",
+      "objectName": "Female_Lower_Tooth_SourceRank_12",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 75
+    },
+    {
+      "id": "female-lower-tooth-sourcerank-11",
+      "objectName": "Female_Lower_Tooth_SourceRank_11",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 85
+    },
+    {
+      "id": "female-lower-tooth-sourcerank-10",
+      "objectName": "Female_Lower_Tooth_SourceRank_10",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 85
+    },
+    {
+      "id": "female-lower-tooth-sourcerank-09",
+      "objectName": "Female_Lower_Tooth_SourceRank_09",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 131
+    },
+    {
+      "id": "female-lower-tooth-sourcerank-08",
+      "objectName": "Female_Lower_Tooth_SourceRank_08",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 131
+    },
+    {
+      "id": "female-lower-tooth-sourcerank-07",
+      "objectName": "Female_Lower_Tooth_SourceRank_07",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 145
+    },
+    {
+      "id": "female-lower-tooth-sourcerank-06",
+      "objectName": "Female_Lower_Tooth_SourceRank_06",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 166
+    },
+    {
+      "id": "female-lower-tooth-sourcerank-05",
+      "objectName": "Female_Lower_Tooth_SourceRank_05",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 166
+    },
+    {
+      "id": "female-lower-tooth-sourcerank-04",
+      "objectName": "Female_Lower_Tooth_SourceRank_04",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 169
+    },
+    {
+      "id": "female-lower-tooth-sourcerank-03",
+      "objectName": "Female_Lower_Tooth_SourceRank_03",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 170
+    },
+    {
+      "id": "female-lower-tooth-sourcerank-02",
+      "objectName": "Female_Lower_Tooth_SourceRank_02",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 185
+    },
+    {
+      "id": "female-lower-tooth-sourcerank-01",
+      "objectName": "Female_Lower_Tooth_SourceRank_01",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 185
+    },
+    {
+      "id": "female-lower-gum-source",
+      "objectName": "Female_Lower_Gum_Source",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 1222
+    },
+    {
+      "id": "female-innermouth-shortcuff",
+      "objectName": "Female_InnerMouth_ShortCuff",
+      "category": "oral",
+      "defaultVisible": true,
+      "vertexCount": 364
+    },
+    {
+      "id": "female-smoothdoll-body",
+      "objectName": "Female_SmoothDoll_Body",
+      "category": "body",
+      "defaultVisible": true,
+      "vertexCount": 44983
+    },
+    {
+      "id": "female-l-eye-core",
+      "objectName": "Female_L_Eye_Core",
+      "category": "eyes",
+      "defaultVisible": true,
+      "vertexCount": 2242
+    },
+    {
+      "id": "female-l-eye-cornea",
+      "objectName": "Female_L_Eye_Cornea",
+      "category": "eyes",
+      "defaultVisible": true,
+      "vertexCount": 1666
+    },
+    {
+      "id": "female-l-irisdisc",
+      "objectName": "Female_L_IrisDisc",
+      "category": "eyes",
+      "defaultVisible": true,
+      "vertexCount": 192
+    },
+    {
+      "id": "female-l-pupildisc",
+      "objectName": "Female_L_PupilDisc",
+      "category": "eyes",
+      "defaultVisible": true,
+      "vertexCount": 192
+    },
+    {
+      "id": "female-r-eye-core",
+      "objectName": "Female_R_Eye_Core",
+      "category": "eyes",
+      "defaultVisible": true,
+      "vertexCount": 2242
+    },
+    {
+      "id": "female-r-eye-cornea",
+      "objectName": "Female_R_Eye_Cornea",
+      "category": "eyes",
+      "defaultVisible": true,
+      "vertexCount": 1666
+    },
+    {
+      "id": "female-r-irisdisc",
+      "objectName": "Female_R_IrisDisc",
+      "category": "eyes",
+      "defaultVisible": true,
+      "vertexCount": 192
+    },
+    {
+      "id": "female-r-pupildisc",
+      "objectName": "Female_R_PupilDisc",
+      "category": "eyes",
+      "defaultVisible": true,
+      "vertexCount": 192
+    },
+    {
+      "id": "female-bandeau-measured",
+      "objectName": "Female_Bandeau_Measured",
+      "category": "clothing",
+      "defaultVisible": true,
+      "vertexCount": 1084
+    },
+    {
+      "id": "female-briefs-panel",
+      "objectName": "Female_Briefs_Panel",
+      "category": "clothing",
+      "defaultVisible": true,
+      "vertexCount": 744
+    }
+  ],
+  "web": {
+    "format": "glb",
+    "path": "ART-ASSETS/avatar-gen/runtime/female-underwear/female-underwear.glb",
+    "sha256": "0aa82fd36ddaed8c4c4a0d12e6f4839bd5267258e053597edab21813549201b1"
+  },
+  "unity": {
+    "format": "fbx",
+    "path": "ART-ASSETS/avatar-gen/deliverables/female-underwear.fbx",
+    "sha256": "1c73999d768e381889efbef5e87326956f578dde0b12fd352eec9e8a774aef73"
+  }
+}

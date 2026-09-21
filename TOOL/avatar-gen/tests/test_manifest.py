@@ -9,7 +9,7 @@ from avatar_gen.manifest import check_manifest  # type: ignore[import-not-found]
 def test_production_manifest_passes() -> None:
     result = check_manifest()
     assert result["status"] == "PASS"
-    assert result["checked"] == 26
+    assert result["checked"] == 29
     assert result["failures"] == []
 
 

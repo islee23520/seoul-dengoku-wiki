@@ -1,0 +1,34 @@
+{
+  "status": "PASS_CROSS_RENDERER_AVATAR_VIEWER",
+  "avatar_id": "female-underwear",
+  "elements": 40,
+  "threejs": {
+    "status": "PASS",
+    "surface": "TOOL/avatar-gen/viewer",
+    "ready_state": "Ready",
+    "initial_visible": 40,
+    "single_toggle_visible": 39,
+    "hide_all_visible": 0,
+    "show_all_visible": 40,
+    "filter_body_rows": 1,
+    "desktop_capture": "/tmp/avatar-viewer-ready.png",
+    "body_hidden_capture": "/tmp/avatar-viewer-body-hidden.png",
+    "narrow_capture": "/tmp/avatar-viewer-narrow.png",
+    "narrow_horizontal_overflow": false
+  },
+  "unity": {
+    "status": "PASS",
+    "editor": "6000.7.0a5",
+    "import_receipt": "AVATAR_UNITY_IMPORT_OK elements=40 model=Assets/AvatarGen/Imported/female-underwear.fbx",
+    "editmode_tests": { "total": 3, "passed": 3, "failed": 0 }
+  },
+  "coordinates": {
+    "blender_to_gltf": "(x,z,-y)",
+    "blender_to_unity": "(x,z,y)",
+    "gltf_to_unity": "(x,y,-z)"
+  },
+  "product_boundary": {
+    "avatar_gen": "full-body viewing and per-element visibility",
+    "portrait_gen": "upper-body portrait generation and rendering"
+  }
+}
