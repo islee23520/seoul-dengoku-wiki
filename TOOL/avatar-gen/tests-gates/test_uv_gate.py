@@ -235,7 +235,7 @@ def test_cli_audits_json_without_silent_fallback(tmp_path: Path) -> None:
     # When
     completed = subprocess.run(
         [
-            str(ROUND2 / ".venv/bin/python"),
+            sys.executable,
             "-m",
             "gate.uv_report",
             "--input",
@@ -247,6 +247,7 @@ def test_cli_audits_json_without_silent_fallback(tmp_path: Path) -> None:
         capture_output=True,
         text=True,
         timeout=30,
+        cwd=ROUND2,
     )
 
     # Then

@@ -1,0 +1,45 @@
+{
+  "candidate": "male-oral-final-candidate.blend",
+  "candidate_sha256": "9e4821528d04beeb0d590554b90c68bbe5419037cbf41764827fdc2b690a0508",
+  "status": "PASS_MALE_FOUR_PART_ORAL_BASE",
+  "roles": [
+    "Male_UpperGumTeeth",
+    "Male_LowerGumTeeth",
+    "Male_InnerMouth",
+    "Male_Tongue"
+  ],
+  "geometry_gate": {
+    "mesh_objects": 26,
+    "hard_pair_failures": 0,
+    "self_intersection_failures": 0,
+    "degenerate_triangle_failures": 0
+  },
+  "inner_mouth_topology": {
+    "boundary_edges": 208,
+    "boundary_vertices": 208,
+    "boundary_degree_histogram": {"2": 208},
+    "openings": [107, 101],
+    "wire_edges": 0,
+    "verdict": "PASS_TWO_OPENINGS"
+  },
+  "repairs": {
+    "rank03_donor": "same-side Male_Lower_Tooth_SourceRank_04, 1.08x, -10 degrees, source-faithful rigid fit",
+    "tongue_fit_scale_xyz": [0.68, 0.78, 0.78],
+    "tongue_shift_world_m": [0.0, 0.0, 0.001],
+    "source_cavity_intrinsic_width_world_m": 0.010672314079253915,
+    "tiny_source_hole_patch_faces": 1
+  },
+  "viewport_views_read": ["front", "top", "left", "right"],
+  "visual_observations": [
+    "the inner-mouth surface surrounds the centered tongue and remains inside the dental arches in front and top views",
+    "the repaired tooth row remains seated without the previously rejected spike crown",
+    "the tongue remains centered and does not visibly penetrate the tooth rows",
+    "side protrusions are the measured source lip cuff shown without the enclosing head, not an invented external surface"
+  ],
+  "limits": [
+    "this accepts the separated four-part oral base, not final head-face replacement or final textures",
+    "the posterior opening is the deepest collision-free source-conforming boundary; no unsupported throat length is invented",
+    "diagnostic Workbench views are not final material showcase renders"
+  ],
+  "production_accepted": true
+}

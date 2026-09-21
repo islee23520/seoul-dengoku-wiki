@@ -1,0 +1,16 @@
+{
+  "candidate": "six-model-showcase.blend",
+  "candidate_sha256": "462e093a802fe625ebce6760fb480863bde866af76c05dacddd6891cec59fc15",
+  "status": "PASS_SIX_MODEL_SHOWCASE",
+  "models": ["male-underwear", "male-smooth", "male-anatomical", "female-underwear", "female-smooth", "female-anatomical"],
+  "fresh_reopen": {"showcase_markers": 6, "mesh_objects": 214, "camera": "ShowcaseCamera"},
+  "renders": ["showcase-front.png", "showcase-quarter.png"],
+  "visual_observations": [
+    "all six models are fully framed in the final front view",
+    "all six remain visible in the final quarter view",
+    "oral parts, eyes, garments and anatomical additions remain aligned with their bodies",
+    "no helper cubes, floating dental components or hierarchy-offset artifacts remain"
+  ],
+  "showcase_policy": "mesh data are duplicated single-user and world transforms are baked only in the showcase copy; deliverables remain untouched",
+  "production_accepted": true
+}

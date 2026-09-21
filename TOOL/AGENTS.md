@@ -8,6 +8,7 @@ Repo automation plus independently versioned tool checkouts; score 9, distinct i
 |------|----------|-------|
 | Repository gates and generation | `tools/AGENTS.md` | Node/Python scripts owned by this repository |
 | Character / game-art CLI | `portrait-gen/tools/character-tool/README.md`, `portrait-gen/skills/character-tool/SKILL.md` | Owned by portrait-gen; GUI ARP, skin/shape edits, external-texture FBX and Unity staging |
+| Full-body avatar pipeline | `avatar-gen/README.md`, `avatar-gen/AGENTS.md` | Main-repository component: hard mesh/UV gates, accepted full-body packages, eye/oral components and FBX delivery evidence |
 | Unity execution policy | `docs/Unity-Headless-Workflow.md` | Janseon batchmode-only execution contract |
 | Art pipeline bootstrap contracts | `docs/contracts/art-pipeline/` | Project-specific reference and portable execution contract |
 | Remote bridge integration | `docs/Unity-Remote.md`, `docs/Unity-Remote-Development.md` | Setup and integration documentation |
@@ -21,6 +22,7 @@ Repo automation plus independently versioned tool checkouts; score 9, distinct i
 - From repository root use `npm --prefix TOOL/tools ...` and `node TOOL/tools/<domain>/<script>.mjs`.
 - Do not shorten this to `npm --prefix Tool` or `TOOL/art`; neither is the repo-tool package location.
 - Submodules (`unity-remote`, `portrait-gen`) retain independent dependencies, tests and guidance; a parent tooling check does not validate their products.
+- `avatar-gen` is ordinary parent-repository content, not a submodule. It prepares and validates full-body assets; `portrait-gen` renders prepared objects into portrait PNGs.
 - Portrait layer compositing lives in the `portrait-gen` submodule (`tools/portrait/portrait-layer-composite.mjs`); do not revive a copy under `tools/art/`.
 - The external Unity Remote project's interactive workflows do not override Janseon's headless execution policy.
 - Unity runtime/import work belongs to `../Game/`; these wrappers do not make Node checks equivalent to engine evidence.

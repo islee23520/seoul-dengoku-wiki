@@ -1,0 +1,29 @@
+{
+  "status": "PASS_SIX_MODEL_MULTI_LIGHT_RENDER_QA",
+  "variants": ["male-underwear", "male-smooth", "male-anatomical", "female-underwear", "female-smooth", "female-anatomical"],
+  "views_per_variant": ["front-front", "front-left", "front-right", "front-back", "quarter-front"],
+  "render_count": 30,
+  "engine": "BLENDER_EEVEE",
+  "look": "AgX - Medium High Contrast",
+  "visual_findings": [
+    "constant-ramp light regions change between front and back light without visible mesh flicker",
+    "male 4K source-color features remain readable beneath the toon ramp",
+    "female SourceBoundColor remains continuous across neck and body in front, back and quarter views",
+    "underwear silhouettes remain distinct and free of visible penetration",
+    "male provisional anatomy remains bounded and attached under all inspected light views",
+    "shared eyes and oral role materials remain visible at body render scale"
+  ],
+  "limitations": [
+    "these are production QA renders, not claims of official Genshin rendering equations",
+    "female source color is corner-attribute based rather than an external image texture",
+    "no platform-specific render support claim is made"
+  ],
+  "receipts": [
+    "renders/male-underwear-receipt.json",
+    "renders/male-smooth-receipt.json",
+    "renders/male-anatomical-receipt.json",
+    "renders/female-underwear-receipt.json",
+    "renders/female-smooth-receipt.json",
+    "renders/female-anatomical-receipt.json"
+  ]
+}

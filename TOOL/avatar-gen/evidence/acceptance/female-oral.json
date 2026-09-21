@@ -1,0 +1,22 @@
+{
+  "candidate": "female-oral-final-candidate.blend",
+  "candidate_sha256": "da00c8558e4d0f6cb898f8e28f2be6bbcc2a68d73c21841cce10cb1ee41d60c9",
+  "status": "PASS_FEMALE_FOUR_PART_ORAL_BASE",
+  "roles": ["Female_UpperGumTeeth", "Female_LowerGumTeeth", "Female_InnerMouth", "Female_Tongue"],
+  "geometry_gate": {"mesh_objects": 29, "hard_pair_failures": 0, "self_intersection_failures": 0, "degenerate_triangle_failures": 0},
+  "inner_mouth_topology": {"boundary_edges": 272, "boundary_vertices": 272, "boundary_degree_histogram": {"2": 272}, "openings": [150, 122], "wire_edges": 0, "verdict": "PASS_TWO_OPENINGS"},
+  "repairs": {"tooth_transforms": "verified female-only rigid clearance transforms", "tongue_translation_world_m": [0.0, 0.00075, 0.00075], "source_cavity_multiplier": 3, "source_cavity_intrinsic_width_world_m": 0.003776663129820019},
+  "viewport_views_read": ["front", "top", "left", "right"],
+  "visual_observations": [
+    "the source-conforming inner-mouth sheet frames the tongue and both tooth rows in the front view",
+    "the tongue remains centered and seated inside the lower arch",
+    "left and right views show no visible tooth penetration",
+    "the posterior source boundary is retained as the explicit second opening without invented throat length"
+  ],
+  "limits": [
+    "this accepts the separated four-part oral base, not final head-face replacement or final textures",
+    "the long tongue tail is visible because the diagnostic scene has no enclosing head",
+    "diagnostic Workbench views are not final material showcase renders"
+  ],
+  "production_accepted": true
+}
