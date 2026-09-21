@@ -21,5 +21,7 @@ test('home and sidebar expose document and people indexes', async () => {
   for (const source of [home, sidebar]) {
     assert.match(source, /wikiLinks\.documents/)
     assert.match(source, /wikiLinks\.characters/)
+    assert.match(source, /label: '프롤로그'/)
+    assert.doesNotMatch(source, /기동권 이탈/)
   }
 })

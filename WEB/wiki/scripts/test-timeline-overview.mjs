@@ -27,6 +27,8 @@ test('Scenario Timeline mounts the complete timeline overview', async () => {
   assert.match(page, /Scenario-Timeline/)
   assert.match(page, /TimelineOverview/)
   assert.match(component, /전체 101개 연도/)
+  assert.match(component, /재접촉 전야 2115–2126/)
+  assert.doesNotMatch(component, /개막 전야/)
   assert.match(component, /timeline-overview-year/)
   assert.match(component, /relatedDocuments/)
 })

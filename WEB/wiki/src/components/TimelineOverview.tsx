@@ -13,7 +13,7 @@ const periods = [
   { id: 'succession', label: '세습 인준 2070–2084', start: 2070, end: 2084 },
   { id: 'successors', label: '기관 후신 2085–2099', start: 2085, end: 2099 },
   { id: 'capitals', label: '역 수도 확정 2100–2114', start: 2100, end: 2114 },
-  { id: 'opening', label: '개막 전야 2115–2126', start: 2115, end: 2126 },
+  { id: 'opening', label: '재접촉 전야 2115–2126', start: 2115, end: 2126 },
 ] as const
 
 export default function TimelineOverview() {

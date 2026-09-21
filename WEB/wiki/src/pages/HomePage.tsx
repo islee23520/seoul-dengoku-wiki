@@ -8,7 +8,7 @@ const panels: { title: string; items: PanelItem[] }[] = [
   { title: '세계관', items: [
     { label: '정본 문서 전체', to: wikiLinks.documents, spa: true },
     { label: '서울 십육국', to: wikiLinks.states, spa: true },
-    { label: '기동권 이탈', to: wikiLinks.overview, spa: true },
+    { label: '프롤로그', to: wikiLinks.overview, spa: true },
     { label: '연표', to: wikiLinks.timeline, spa: true },
     { label: '사람과 기체', to: wikiLinks.peopleAndMachines, spa: true },
     { label: '질병과 증상', to: wikiLinks.ailments, spa: true },

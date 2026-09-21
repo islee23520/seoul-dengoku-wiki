@@ -344,11 +344,11 @@ export default function OpeningTerritoryMap() {
   }, [selectedLine])
 
   if (failed) return <p className="wiki-domain-label">3D 서울 영토 지도를 불러오지 못했습니다. 페이지를 새로고침한 뒤에도 계속되면 다른 브라우저에서 다시 시도해 주세요.</p>
-  if (!data) return <div className="wiki-loading">서울 427개 동 3D 개막 영토 지도를 불러오고 있습니다.</div>
+  if (!data) return <div className="wiki-loading">서울 427개 동 3D 2126 시점 영토 지도를 불러오고 있습니다.</div>
 
   return (
     <section className="territory-map-section" aria-labelledby="opening-territory-title">
-      <header><p className="wiki-domain-label">서울 전체 · 캠페인 개막 시점 · Three.js</p><h2 id="opening-territory-title">3D 개막 영토 지도</h2><p>서울 25개 구·427개 행정동을 미니어처 지형으로 돌출했습니다. 왼쪽 드래그는 팬, 오른쪽 드래그는 오빗, 휠은 줌입니다. 높이는 지배 상태와 역 분포를 읽기 위해 과장한 표시이며 실제 측량 고도가 아닙니다.</p></header>
+      <header><p className="wiki-domain-label">서울 전체 · 2126 시점 · Three.js</p><h2 id="opening-territory-title">3D 2126 시점 영토 지도</h2><p>서울 25개 구·427개 행정동을 미니어처 지형으로 돌출했습니다. 왼쪽 드래그는 팬, 오른쪽 드래그는 오빗, 휠은 줌입니다. 높이는 지배 상태와 역 분포를 읽기 위해 과장한 표시이며 실제 측량 고도가 아닙니다.</p></header>
       <div className="territory-toolbar">
         <label className="territory-filter"><span>국가 필터</span><select value={stateFilter} onChange={(event) => { const state = states.get(event.target.value); if (state) selectState(state); else setStateFilter('all') }}><option value="all">16국 전체</option>{data.states.map((state) => <option key={state.id} value={state.id}>{state.id} · {state.name}</option>)}</select></label>
         <label className="territory-filter"><span>노선 필터</span><select value={selectedLine} onChange={(event) => setSelectedLine(event.target.value)}><option value="all">전체 노선</option>{Object.entries(data.lines).map(([lineId, line]) => <option key={lineId} value={lineId}>{line.name}</option>)}</select></label>
@@ -368,7 +368,7 @@ export default function OpeningTerritoryMap() {
       </div>
       <div className="territory-map-layout">
         <div className="territory-map-canvas territory-map-canvas-3d" ref={shellRef} data-three-territory-map>
-          <canvas ref={canvasRef} aria-label="서울 427개 동 Three.js 개막 영토 지도" onContextMenu={(event) => event.preventDefault()} />
+          <canvas ref={canvasRef} aria-label="서울 427개 동 Three.js 2126 시점 영토 지도" onContextMenu={(event) => event.preventDefault()} />
           <svg className="territory-marker-connectors" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
             {data.states.map((state) => {
               const position = markerPositions[state.id]
@@ -413,7 +413,7 @@ export default function OpeningTerritoryMap() {
           </div>}
         </div>
         <aside className="territory-detail" aria-live="polite">
-          {selected && <section aria-labelledby="selected-region-title"><p className="wiki-domain-label">선택된 지역 · {selected.district}</p><h3 id="selected-region-title">{selected.name}</h3><table className="person-data-table"><tbody><tr><th>지배 상태</th><td>{selected.status === 'held' ? '단독 지배' : '경합·공동 영향권'}</td></tr><tr><th>영토국</th><td>{selected.polities.map((id) => states.get(id)?.name ?? id).join(' · ')}</td></tr><tr><th>역 객체</th><td>{selected.stationCount}개</td></tr></tbody></table><h4>개막 상태</h4><p>{selected.openingState}</p><h4>지역 개요</h4><p>{selected.summary}</p></section>}
+          {selected && <section aria-labelledby="selected-region-title"><p className="wiki-domain-label">선택된 지역 · {selected.district}</p><h3 id="selected-region-title">{selected.name}</h3><table className="person-data-table"><tbody><tr><th>지배 상태</th><td>{selected.status === 'held' ? '단독 지배' : '경합·공동 영향권'}</td></tr><tr><th>영토국</th><td>{selected.polities.map((id) => states.get(id)?.name ?? id).join(' · ')}</td></tr><tr><th>역 객체</th><td>{selected.stationCount}개</td></tr></tbody></table><h4>2126 시점 상태</h4><p>{selected.openingState}</p><h4>지역 개요</h4><p>{selected.summary}</p></section>}
           {selectedState && <section aria-labelledby="selected-state-title"><p className="wiki-domain-label">선택 국가 · {selectedState.id}</p><h3 id="selected-state-title">{selectedState.name}</h3><table className="person-data-table"><tbody><tr><th>수장</th><td>{selectedState.ruler}</td></tr><tr><th>기원·중심역</th><td>{selectedState.origin}</td></tr><tr><th>정부 형태</th><td>{selectedState.government}</td></tr><tr><th>국력</th><td>{selectedState.power}</td></tr></tbody></table><h4>형성 인과</h4><p>{selectedState.cause}</p><Link to={`/states/${selectedState.slug}`} className="territory-state-link">{selectedState.id} {selectedState.name} 상세 읽기</Link></section>}
         </aside>
       </div>
