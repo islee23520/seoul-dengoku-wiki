@@ -2,7 +2,7 @@
 
 ## OWNERSHIP
 
-This directory is ordinary content in the main `seoul-kenshi` repository. It is not a Git submodule. Full-body mesh validation and accepted full-body assets belong here; portrait PNG rendering remains in the `TOOL/portrait-gen` submodule.
+This directory is ordinary content in the main `seoul-kenshi` repository. It is not a Git submodule. Full-body mesh validation belongs here; accepted binaries belong in `../../ART-ASSETS/avatar-gen/`; portrait PNG rendering remains in the `TOOL/portrait-gen` submodule.
 
 ## CONTRACT
 
@@ -21,5 +21,5 @@ python3 TOOL/avatar-gen/bin/avatar-gen.py check
 uv run --python 3.14 --with pytest --with numpy python -m pytest -q TOOL/avatar-gen/tests TOOL/avatar-gen/tests-gates
 ```
 
-Binary assets use repository Git LFS rules. Do not commit Blender backup files, virtual environments, caches, or exploratory rejected candidates.
+Binary fixtures use repository Git LFS rules. Production Blender/FBX/texture assets must not be stored under `TOOL/`; put them in `ART-ASSETS/avatar-gen`. Do not commit Blender backup files, virtual environments, caches, or exploratory rejected candidates.
 

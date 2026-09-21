@@ -7,8 +7,9 @@ import json
 from pathlib import Path
 from typing import TypedDict, cast
 
-ROOT = Path(__file__).resolve().parents[1]
-MANIFEST = ROOT / "assets" / "manifest.json"
+TOOL_ROOT = Path(__file__).resolve().parents[1]
+REPOSITORY_ROOT = TOOL_ROOT.parents[1]
+MANIFEST = REPOSITORY_ROOT / "ART-ASSETS" / "avatar-gen" / "manifest.json"
 
 
 class AssetEntry(TypedDict):
@@ -72,7 +73,7 @@ def _sha256(path: Path) -> str:
 
 def check_manifest(path: Path = MANIFEST) -> CheckResult:
     payload = load_manifest(path)
-    root = path.parent.parent if path.resolve() == MANIFEST.resolve() else path.parent
+    root = REPOSITORY_ROOT if path.resolve() == MANIFEST.resolve() else path.parent
     failures: list[Failure] = []
     checked = 0
     roles: set[str] = set()

@@ -1,21 +1,21 @@
 # avatar-gen
 
-`avatar-gen` is the repository-owned full-body character preparation and validation component. It complements the independently versioned `TOOL/portrait-gen` submodule:
+`avatar-gen` is the repository-owned full-body character preparation and validation component. Production binaries are owned by `ART-ASSETS/avatar-gen/`; this directory owns executable code, gates, tests and pipeline scripts. It complements the independently versioned `TOOL/portrait-gen` submodule:
 
 - `avatar-gen` owns full-body mesh inspection, hard geometry/UV gates, accepted body packages, and Blender/FBX delivery checks.
 - `portrait-gen` consumes a prepared `.blend`, `.glb`, `.gltf`, or `.fbx` and renders portrait PNGs. It does not approve source-mesh quality.
 
-## Included production assets
+## Canonical production assets
 
-`assets/deliverables/` contains six validated body packages:
+`../../ART-ASSETS/avatar-gen/deliverables/` contains six validated body packages:
 
 - male underwear, smooth doll, and provisional anatomical variants
 - female underwear, smooth doll, and provisional anatomical variants
 - one `.blend` and one external-texture FBX package per variant
 
-`assets/components/` contains the accepted shared eye mesh and male/female oral assemblies. `assets/showcase/` contains the six-model Blender comparison scene and its front/quarter renders.
+`../../ART-ASSETS/avatar-gen/components/` contains the accepted shared eye mesh and male/female oral assemblies. `../../ART-ASSETS/avatar-gen/showcase/` contains the six-model Blender comparison scene and its front/quarter renders.
 
-The portable inventory is `assets/manifest.json`. Local absolute paths from the original production receipts are not used as package identity.
+The portable inventory is `../../ART-ASSETS/avatar-gen/manifest.json`. Local absolute paths from the original production receipts are not used as package identity. `--manifest` can validate another asset library with the same schema.
 
 ## Commands
 

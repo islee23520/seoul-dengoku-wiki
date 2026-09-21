@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "library": "avatar-gen",
+  "owner": "ART-ASSETS/avatar-gen",
+  "tool": "TOOL/avatar-gen",
+  "status": "PASS_PORTABLE_AVATAR_LIBRARY",
+  "required_roles": [
+    "male-underwear",
+    "male-smooth",
+    "male-anatomical",
+    "female-underwear",
+    "female-smooth",
+    "female-anatomical",
+    "male-underwear-texture",
+    "male-smooth-texture",
+    "male-anatomical-texture",
+    "female-underwear-texture",
+    "female-smooth-texture",
+    "female-anatomical-texture",
+    "shared-eyes",
+    "male-oral",
+    "female-oral",
+    "showcase",
+    "male-source-texture",
+    "female-source-texture"
+  ],
+  "assets": [
+    {
+      "role": "male-underwear",
+      "path": "ART-ASSETS/avatar-gen/deliverables/male-underwear.blend",
+      "sha256": "7bea09398e642be16c85cc70b75d6df2b25b707617b04ecf556ee09f563c7bc1",
+      "status": "accepted"
+    },
+    {
+      "role": "male-underwear",
+      "path": "ART-ASSETS/avatar-gen/deliverables/male-underwear.fbx",
+      "sha256": "fecf660771a46d2fc718ee4e907478dc6c7996ebbdbb6f2d96ecdceb5c93c1eb",
+      "status": "accepted"
+    },
+    {
+      "role": "male-underwear-texture",
+      "path": "ART-ASSETS/avatar-gen/deliverables/male-underwear.fbm/male-free-boundary-sourcecolor-4k.png",
+      "sha256": "f04b4c1bc32519147f84a5d1f19986ccd98cb5d94e3934c1a49a48ed8735fad2",
+      "status": "accepted"
+    },
+    {
+      "role": "male-smooth",
+      "path": "ART-ASSETS/avatar-gen/deliverables/male-smooth.blend",
+      "sha256": "ea69158cde022dbacf495b73af446dd2d17049d92e213e0f212c23f924bc8927",
+      "status": "accepted"
+    },
+    {
+      "role": "male-smooth",
+      "path": "ART-ASSETS/avatar-gen/deliverables/male-smooth.fbx",
+      "sha256": "16932500a358900274c7e5849e0524a693700f0f668294a1c4fc2e35f5e23e25",
+      "status": "accepted"
+    },
+    {
+      "role": "male-smooth-texture",
+      "path": "ART-ASSETS/avatar-gen/deliverables/male-smooth.fbm/male-free-boundary-sourcecolor-4k.png",
+      "sha256": "f04b4c1bc32519147f84a5d1f19986ccd98cb5d94e3934c1a49a48ed8735fad2",
+      "status": "accepted"
+    },
+    {
+      "role": "male-anatomical",
+      "path": "ART-ASSETS/avatar-gen/deliverables/male-anatomical.blend",
+      "sha256": "65a12140d5aea9aba96bfa111a3203474a4d17a9ac9e3e6bc20c57a0df704c04",
+      "status": "accepted"
+    },
+    {
+      "role": "male-anatomical",
+      "path": "ART-ASSETS/avatar-gen/deliverables/male-anatomical.fbx",
+      "sha256": "36abe58c30d25a6e477560ab2b6e849d725e8808b8927f53025feb4c423edda4",
+      "status": "accepted"
+    },
+    {
+      "role": "male-anatomical-texture",
+      "path": "ART-ASSETS/avatar-gen/deliverables/male-anatomical.fbm/male-free-boundary-sourcecolor-4k.png",
+      "sha256": "f04b4c1bc32519147f84a5d1f19986ccd98cb5d94e3934c1a49a48ed8735fad2",
+      "status": "accepted"
+    },
+    {
+      "role": "female-underwear",
+      "path": "ART-ASSETS/avatar-gen/deliverables/female-underwear.blend",
+      "sha256": "10e61b71ee6edb856d632bf7e73fdcdfbc271b51ec2ec74c2ea7281ed4ffb449",
+      "status": "accepted"
+    },
+    {
+      "role": "female-underwear",
+      "path": "ART-ASSETS/avatar-gen/deliverables/female-underwear.fbx",
+      "sha256": "1c73999d768e381889efbef5e87326956f578dde0b12fd352eec9e8a774aef73",
+      "status": "accepted"
+    },
+    {
+      "role": "female-underwear-texture",
+      "path": "ART-ASSETS/avatar-gen/deliverables/female-underwear.fbm/female-sourcecolor-atlas-4096.png",
+      "sha256": "63339f4b2e957ae6914d28f3c54743da7e989ae553465b640be2fecd0331561a",
+      "status": "accepted"
+    },
+    {
+      "role": "female-smooth",
+      "path": "ART-ASSETS/avatar-gen/deliverables/female-smooth.blend",
+      "sha256": "0ab12e65e6168f7aa50593576d46e89627cf4229d653c631c41e48c2f9406152",
+      "status": "accepted"
+    },
+    {
+      "role": "female-smooth",
+      "path": "ART-ASSETS/avatar-gen/deliverables/female-smooth.fbx",
+      "sha256": "5d7ee9b3fa4e3e8c245b207c22cc03293d14862f2ddec3aadf721327f62e7ab7",
+      "status": "accepted"
+    },
+    {
+      "role": "female-smooth-texture",
+      "path": "ART-ASSETS/avatar-gen/deliverables/female-smooth.fbm/female-sourcecolor-atlas-4096.png",
+      "sha256": "63339f4b2e957ae6914d28f3c54743da7e989ae553465b640be2fecd0331561a",
+      "status": "accepted"
+    },
+    {
+      "role": "female-anatomical",
+      "path": "ART-ASSETS/avatar-gen/deliverables/female-anatomical.blend",
+      "sha256": "a76633b0f9bb6409089864a7bd3780fc21849f3e07c014e7a7274711b5d1110b",
+      "status": "accepted"
+    },
+    {
+      "role": "female-anatomical",
+      "path": "ART-ASSETS/avatar-gen/deliverables/female-anatomical.fbx",
+      "sha256": "4db3d23b1c144064471cba4396e0e6fdd948869932edd869e6b8ddb2e76e936e",
+      "status": "accepted"
+    },
+    {
+      "role": "female-anatomical-texture",
+      "path": "ART-ASSETS/avatar-gen/deliverables/female-anatomical.fbm/female-sourcecolor-atlas-4096.png",
+      "sha256": "63339f4b2e957ae6914d28f3c54743da7e989ae553465b640be2fecd0331561a",
+      "status": "accepted"
+    },
+    {
+      "role": "shared-eyes",
+      "path": "ART-ASSETS/avatar-gen/components/shared-eyes.blend",
+      "sha256": "7708a67f77ab48c0158a0430e33d8a8775705b75b55f02395e76a48f03fa5b31",
+      "status": "accepted"
+    },
+    {
+      "role": "male-oral",
+      "path": "ART-ASSETS/avatar-gen/components/male-oral.blend",
+      "sha256": "9e4821528d04beeb0d590554b90c68bbe5419037cbf41764827fdc2b690a0508",
+      "status": "accepted"
+    },
+    {
+      "role": "female-oral",
+      "path": "ART-ASSETS/avatar-gen/components/female-oral.blend",
+      "sha256": "da00c8558e4d0f6cb898f8e28f2be6bbcc2a68d73c21841cce10cb1ee41d60c9",
+      "status": "accepted"
+    },
+    {
+      "role": "showcase",
+      "path": "ART-ASSETS/avatar-gen/showcase/six-model-showcase.blend",
+      "sha256": "462e093a802fe625ebce6760fb480863bde866af76c05dacddd6891cec59fc15",
+      "status": "accepted"
+    },
+    {
+      "role": "showcase-front",
+      "path": "ART-ASSETS/avatar-gen/showcase/showcase-front.png",
+      "sha256": "bcd7aa4df6d7b275a95aa703f85bb03c92c9735e6d5c561d04e6a49dc4dc7633",
+      "status": "accepted"
+    },
+    {
+      "role": "showcase-quarter",
+      "path": "ART-ASSETS/avatar-gen/showcase/showcase-quarter.png",
+      "sha256": "110f17cb5b2d7835be26093ba97b7822b837168326e47cb5223a9cd77844e776",
+      "status": "accepted"
+    },
+    {
+      "role": "male-source-texture",
+      "path": "ART-ASSETS/avatar-gen/textures/male-sourcecolor-4096.png",
+      "sha256": "f04b4c1bc32519147f84a5d1f19986ccd98cb5d94e3934c1a49a48ed8735fad2",
+      "status": "accepted"
+    },
+    {
+      "role": "female-source-texture",
+      "path": "ART-ASSETS/avatar-gen/textures/female-sourcecolor-atlas-4096.png",
+      "sha256": "63339f4b2e957ae6914d28f3c54743da7e989ae553465b640be2fecd0331561a",
+      "status": "accepted"
+    }
+  ],
+  "limits": [
+    "anatomical variants are provisional art bases, not medical references",
+    "toon materials are project-authored, not official commercial-game shader code",
+    "rigging and animation are not included"
+  ]
+}
