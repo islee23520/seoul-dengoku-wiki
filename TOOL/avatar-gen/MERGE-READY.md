@@ -35,7 +35,7 @@ PR #203 is ready to merge only when every gate below is current and green.
 
 ## Repository gates
 
-- Avatar web tests, Python geometry/UV/intersection tests and Unity checks pass once from current HEAD.
+- Avatar web tests and portable Python geometry/UV/intersection tests pass from current HEAD in CI. Four Blender-native extractor tests pass separately on the pinned macOS Blender host and are explicitly skipped where Blender is unavailable.
 - `node TOOL/tools/policy/check-repo-delivery-policy.mjs` passes.
 - `npm --prefix TOOL/tools test` passes or any pre-existing unrelated failure is identified separately.
 - `git diff --check` is clean.

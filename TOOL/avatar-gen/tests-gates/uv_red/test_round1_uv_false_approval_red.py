@@ -13,6 +13,7 @@ from pathlib import Path
 from typing import Final
 
 import numpy as np
+import pytest
 
 ROUND2: Final = Path(__file__).resolve().parents[2]
 BLENDER: Final = Path("/Applications/Blender.app/Contents/MacOS/Blender")
@@ -105,6 +106,7 @@ def test_adjacent_positive_area_overlap_cannot_be_exempted() -> None:
     assert len(result.overlaps) == 1
 
 
+@pytest.mark.skipif(not BLENDER.is_file(), reason="Blender native extraction runs on the pinned macOS verification host")
 def test_native_concave_polygon_uses_blender_loop_triangles(tmp_path: Path) -> None:
     # Given
     output_path = tmp_path / "native-concave.json"

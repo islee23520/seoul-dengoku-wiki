@@ -13,6 +13,7 @@ import pytest
 
 ROUND2: Final = Path(__file__).resolve().parents[1]
 GATE: Final = ROUND2 / "gate"
+BLENDER: Final = Path("/Applications/Blender.app/Contents/MacOS/Blender")
 sys.path.insert(0, str(ROUND2))
 
 from gate.uv_audit import audit_triangles
@@ -257,6 +258,7 @@ def test_cli_audits_json_without_silent_fallback(tmp_path: Path) -> None:
     assert verdict["checks"][0]["measurements"]["positive_area_overlap_count"] == 1
 
 
+@pytest.mark.skipif(not BLENDER.is_file(), reason="Blender native extraction runs on the pinned macOS verification host")
 def test_native_extractor_reads_blender_loop_ids_and_uv(tmp_path: Path) -> None:
     # Given: a real Blender fixture containing a concave polygon with loop UVs.
     fixture_script = tmp_path / "create_fixture.py"
@@ -281,7 +283,7 @@ bpy.ops.wm.save_as_mainfile(filepath=str(Path(r'"""
     )
     subprocess.run(
         [
-            "/Applications/Blender.app/Contents/MacOS/Blender",
+            str(BLENDER),
             "--background",
             "--factory-startup",
             "--python-exit-code",
@@ -298,7 +300,7 @@ bpy.ops.wm.save_as_mainfile(filepath=str(Path(r'"""
     # When: the production extractor reads the saved fixture in a fresh process.
     subprocess.run(
         [
-            "/Applications/Blender.app/Contents/MacOS/Blender",
+            str(BLENDER),
             "--background",
             "--factory-startup",
             "--python-exit-code",

@@ -12,6 +12,7 @@ from typing import Final
 import pytest
 
 ROUND2: Final = Path(__file__).resolve().parents[1]
+BLENDER: Final = Path("/Applications/Blender.app/Contents/MacOS/Blender")
 sys.path.insert(0, str(ROUND2))
 
 from gate.geometry_report import audit_extraction
@@ -336,6 +337,7 @@ def test_manifest_criteria_can_validate_real_unannotated_extraction(
         assert "MEASURED_RATIO_TARGETS" in report["unproven"]
 
 
+@pytest.mark.skipif(not BLENDER.is_file(), reason="Blender native extraction runs on the pinned macOS verification host")
 def test_native_blender_extraction_uses_evaluated_world_geometry(tmp_path: Path) -> None:
     fixture_script, fixture_blend, extracted = tmp_path / "create_geometry_fixture.py", tmp_path / "geometry-fixture.blend", tmp_path / "geometry-extracted.json"
     fixture_script.write_text("""import bpy
@@ -350,8 +352,8 @@ modifier.strength=0.125
 modifier.direction='Z'
 bpy.ops.wm.save_as_mainfile(filepath=str(Path(r'""" + str(fixture_blend) + """')))
 """, encoding="utf-8")
-    subprocess.run(["/Applications/Blender.app/Contents/MacOS/Blender", "--background", "--factory-startup", "--python-exit-code", "1", "--python", str(fixture_script)], check=True, capture_output=True, text=True, timeout=60)
-    subprocess.run(["/Applications/Blender.app/Contents/MacOS/Blender", "--background", "--factory-startup", "--python-exit-code", "1", str(fixture_blend), "--python", str(ROUND2 / "scripts/extract_geometry.py"), "--", "--output", str(extracted)], check=True, capture_output=True, text=True, timeout=60)
+    subprocess.run([str(BLENDER), "--background", "--factory-startup", "--python-exit-code", "1", "--python", str(fixture_script)], check=True, capture_output=True, text=True, timeout=60)
+    subprocess.run([str(BLENDER), "--background", "--factory-startup", "--python-exit-code", "1", str(fixture_blend), "--python", str(ROUND2 / "scripts/extract_geometry.py"), "--", "--output", str(extracted)], check=True, capture_output=True, text=True, timeout=60)
     payload = json.loads(extracted.read_text())
     body = next(mesh for mesh in payload["meshes"] if mesh["object_name"] == "Body")
     assert body["triangle_count"] == 4

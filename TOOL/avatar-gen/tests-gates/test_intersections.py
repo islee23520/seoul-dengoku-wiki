@@ -8,6 +8,7 @@ import sys
 from pathlib import Path
 
 import numpy as np
+import pytest
 
 ROUND2 = Path(__file__).resolve().parents[1]
 BLENDER = Path("/Applications/Blender.app/Contents/MacOS/Blender")
@@ -129,6 +130,7 @@ def test_degenerate_triangle_rejects() -> None:
     assert result.degenerate_triangle_ids == (0,)
 
 
+@pytest.mark.skipif(not BLENDER.is_file(), reason="Blender native extraction runs on the pinned macOS verification host")
 def test_native_positive_and_negative_blend_fixtures(tmp_path: Path) -> None:
     fixture_dir = ROUND2 / "fixtures" / "intersections"
     output_dir = tmp_path / "native"
