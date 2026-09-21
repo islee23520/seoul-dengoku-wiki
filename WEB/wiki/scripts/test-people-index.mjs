@@ -59,3 +59,14 @@ test('people table reserves an on-screen semantic column for gender', async () =
   assert.match(css, /\.people-table\s*\{[^}]*table-layout:\s*fixed/s)
   assert.match(css, /\.people-col-gender\s*\{[^}]*inline-size:/s)
 })
+
+test('people page states the confirmed hero contract without auto-assigning proposed classes', async () => {
+  const page = await readFile(new URL('../src/pages/PeoplePage.tsx', import.meta.url), 'utf8')
+  const generator = await readFile(new URL('./generate-catalog.mjs', import.meta.url), 'utf8')
+
+  assert.match(page, /1,004명은 모두 영웅 인물/)
+  assert.match(page, /전투·지원·치유·정보 활동에서 서로 다른 클래스와 특성/)
+  assert.match(page, /전투 클래스 이름과 개인별 배정은 아직 확정되지 않았/)
+  assert.doesNotMatch(generator, /heroClass/)
+  assert.doesNotMatch(generator, /campaignRole/)
+})
