@@ -164,7 +164,7 @@ const adr004 = read(ADR004_PATH);
 check('ADR-004 root structure record exists', adr004 !== null, ADR004_PATH);
 
 const ALLOWED_ROOT_DIRS = new Set([
-  'GDD', 'GAME', 'GAME-REFERENCE', 'LORE', 'RESEARCH', 'TOOL', 'WEB',
+  'GDD', 'GAME', 'GAME-REFERENCE', 'ART-ASSETS', 'LORE', 'RESEARCH', 'TOOL', 'WEB',
   'Backend', 'store', 'archive',
   // Owner directive 2026-09-18: execution evidence is tracked in-repo at evidence/.
   'evidence',
