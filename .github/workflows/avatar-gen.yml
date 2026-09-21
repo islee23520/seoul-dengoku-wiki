@@ -1,6 +1,7 @@
 name: Avatar Gen
 
 on:
+  workflow_dispatch:
   pull_request:
     paths:
       - '.gitattributes'
