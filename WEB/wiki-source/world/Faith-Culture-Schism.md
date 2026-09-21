@@ -377,7 +377,7 @@
 
 읽은 문서의 상대 경로다.
 
-- [기동권 이탈](/world/World-Unbinding)
+- [프롤로그](/world/World-Unbinding)
 - [시나리오 타임라인](/world/Scenario-Timeline)
 - [서울 십육국](/world/Sixteen-States)
 - [관직](/world/Offices-and-Ranks)

@@ -1,0 +1,840 @@
+{
+  "schema": "seoul-dengoku.patina-human.v1",
+  "documents": [
+    {
+      "path": "Ailments.md",
+      "sha256": "7956f449bdf6e3988f32811688570cf5cb831187b45b29749900d100ef9ba3a7",
+      "score": 12,
+      "interpretation": "human"
+    },
+    {
+      "path": "Ambitions-and-Relations.md",
+      "sha256": "1c103aacad695fabf5ccc85621777c7b4e04edf1e02875740f15ea3609753866",
+      "score": 2.6,
+      "interpretation": "human"
+    },
+    {
+      "path": "Building-Reuse-Geography.md",
+      "sha256": "6643504f4db3c9ab4a3c6e58eb172c2bec7d2618f032e4996b0f1a60ef071664",
+      "score": 12,
+      "interpretation": "human"
+    },
+    {
+      "path": "Cast-Corridors-Index.md",
+      "sha256": "453f4e79af242a55256d4575c35a7aaafe18c2d0fcb8ca41e6f44664cfb548a6",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Cast-Index-S4.md",
+      "sha256": "a22b6b5272100f236e463ebd6d29f50f3184f7e6386b1964c8e36aa9cf10a6fb",
+      "score": 25,
+      "interpretation": "mostly human"
+    },
+    {
+      "path": "Cast-Index.md",
+      "sha256": "4cc0be5661917cf1ea19efab6f9fb0bc78646e30ff9765fdd7b66ddf1034d0d5",
+      "score": 25.5,
+      "interpretation": "mostly human"
+    },
+    {
+      "path": "Cast-Relations.md",
+      "sha256": "a0247067b745ad34f8fece8f9040c080f2cf22714956528056a49de339c5aa66",
+      "score": 27.3,
+      "interpretation": "mostly human"
+    },
+    {
+      "path": "Cast-State-01.md",
+      "sha256": "84724dd60dd7e0e99e082978f61117af122e2d2f7f8965813a37a2967e3eb349",
+      "score": 3.1,
+      "interpretation": "human"
+    },
+    {
+      "path": "Cast-State-02.md",
+      "sha256": "b4230b5d73c2ac4f1042b5e5028e36530bdd0eae9adc0acb9120087f6d3cad72",
+      "score": 2.8,
+      "interpretation": "human"
+    },
+    {
+      "path": "Cast-State-03.md",
+      "sha256": "1aebc5b91374a927da34de47208461317046052bbee34db576fa8d1b0ab15ec6",
+      "score": 2,
+      "interpretation": "human"
+    },
+    {
+      "path": "Cast-State-04.md",
+      "sha256": "b1224c8133c7ee59787f47133e36882a0086b6a48f3d1cbaa0bed5cf6e70c00a",
+      "score": 2.4,
+      "interpretation": "human"
+    },
+    {
+      "path": "Cast-State-05.md",
+      "sha256": "a3f73f26e225dbd0fb5fde56e6160cbfba22dd12f8c0e6ab78d63d0f8b343a03",
+      "score": 2.6,
+      "interpretation": "human"
+    },
+    {
+      "path": "Cast-State-06.md",
+      "sha256": "9803ea679e90c51fc464b4923bbef79c0fc37991026872fa6b57c84177acf1ef",
+      "score": 1.5,
+      "interpretation": "human"
+    },
+    {
+      "path": "Cast-State-07.md",
+      "sha256": "94bc84041f854bd27cb4a27ad4beee333e1b52cbdde90cc7eeca0761e86bb595",
+      "score": 1.8,
+      "interpretation": "human"
+    },
+    {
+      "path": "Cast-State-08.md",
+      "sha256": "7568a4edc1de4c9aef672e9eac73c2442f84bfd8b9f17795715a51edaa8c26de",
+      "score": 1.5,
+      "interpretation": "human"
+    },
+    {
+      "path": "Cast-State-09.md",
+      "sha256": "532fde457d455c63b8a20977cf77b261a1fc410f4ae1269642256ec81eb6692e",
+      "score": 1.5,
+      "interpretation": "human"
+    },
+    {
+      "path": "Cast-State-10.md",
+      "sha256": "f2cf66783f80a2e7f0ddb5dfe97994bd590ade56833fe1014184208dbb472635",
+      "score": 1,
+      "interpretation": "human"
+    },
+    {
+      "path": "Cast-State-11.md",
+      "sha256": "bb58d17649a4dad7b1bf79f08716526c9cb790b9bda15afce94a6716901a795e",
+      "score": 1.8,
+      "interpretation": "human"
+    },
+    {
+      "path": "Cast-State-12.md",
+      "sha256": "e29183b8dce5f6d23c0581ea5f201976b6ee030f42e7ca3c11aae7de922b1178",
+      "score": 1.1,
+      "interpretation": "human"
+    },
+    {
+      "path": "Cast-State-13.md",
+      "sha256": "440211ad780ae7c861c2017f3239015f69f0677cd03bedbf863a03f046b88d06",
+      "score": 1,
+      "interpretation": "human"
+    },
+    {
+      "path": "Cast-State-14.md",
+      "sha256": "b27286b958e51609a7772494838d61b08b6b3cae8cf287b2755788276f33aec6",
+      "score": 2,
+      "interpretation": "human"
+    },
+    {
+      "path": "Cast-State-15.md",
+      "sha256": "156dcf04526522f295177e20b8f6f396cf77da0d7a56451383e383968498ef06",
+      "score": 1.2,
+      "interpretation": "human"
+    },
+    {
+      "path": "Cast-State-16.md",
+      "sha256": "f6517f8139ba721e839b9c1c1d71f1fbc5018181fc850e9ba271560e986e981f",
+      "score": 2.3,
+      "interpretation": "human"
+    },
+    {
+      "path": "Cast-Unaffiliated.md",
+      "sha256": "f146aa0da7fd4baa82943d92baa30dd780585c41c6619e8eeb639cd2edab3487",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Century-Annals.md",
+      "sha256": "1e3e2dc325017443b439d23914c7ae28a48890a3a1b23631cfb8946d1cca4355",
+      "score": 18.4,
+      "interpretation": "mostly human"
+    },
+    {
+      "path": "Chaebol-Houses-and-Century-Factions.md",
+      "sha256": "7ecda504d390db92a4751e09c1fd02df29fb4ac0aea2992c1514ab72a2bc9607",
+      "score": 9.1,
+      "interpretation": "human"
+    },
+    {
+      "path": "Characters-Factions-and-Professions.md",
+      "sha256": "96af62a05fa6da692bf68f9e46c337c75e186f211072c4603a2878b0b47d62f9",
+      "score": 12.5,
+      "interpretation": "human"
+    },
+    {
+      "path": "Conscription-Remnants.md",
+      "sha256": "47cfc6e951da22ca1db757e115a575f3dbd01f606b0050d4adb7877567300f72",
+      "score": 21.7,
+      "interpretation": "mostly human"
+    },
+    {
+      "path": "Core-Characters.md",
+      "sha256": "a52ece114c77c715dd011de297b672088aa120e7154a1283d8dea033e1832d71",
+      "score": 24.2,
+      "interpretation": "mostly human"
+    },
+    {
+      "path": "Diaspora-Corridors.md",
+      "sha256": "f4a298693d58791cce1adc90086ac59f44eb37adcf70bab34cac0ea7e120bc80",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Economy-and-Production.md",
+      "sha256": "375e0680b23084154a1b3fe0ed2e7294387e3dc623054ef0f070ca9663d4e879",
+      "score": 15,
+      "interpretation": "human"
+    },
+    {
+      "path": "Era-Arms-and-Tech-Level.md",
+      "sha256": "eb6226deb3f1c1274bfba975945ad58c4e7a1038d944696d658ed056421f1d7a",
+      "score": 18.9,
+      "interpretation": "mostly human"
+    },
+    {
+      "path": "External-Theaters.md",
+      "sha256": "9bc01748e331f699e524383ed7fc191b452536ed9465d04a8f6396fc2f001d3e",
+      "score": 2.3,
+      "interpretation": "human"
+    },
+    {
+      "path": "Factions-and-Diplomacy.md",
+      "sha256": "c66b3e83ad3099c5788be1760a11abbc6efddb283c904d9f1840d50b8422c6d3",
+      "score": 10.3,
+      "interpretation": "human"
+    },
+    {
+      "path": "Faith-Culture-Schism.md",
+      "sha256": "ca4f565b0490ac5c4395ca7549c5c8a524674cd92a825b1f35d2dddd936921e5",
+      "score": 21.3,
+      "interpretation": "mostly human"
+    },
+    {
+      "path": "Food-Culture.md",
+      "sha256": "f486401e3fff503908a10129e41640c229300c8042939e043c373ef4e85963cc",
+      "score": 4.3,
+      "interpretation": "human"
+    },
+    {
+      "path": "Glossary.md",
+      "sha256": "e8837752b0063381fc8b2bdc554a85110f0e3c8a27d7fea6486741a539d8ec00",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hangnyeol-and-Bon-gwan.md",
+      "sha256": "4a1288c092a589ddb01198ae6b27cf36a66dd2ad02ec6a622d21cc0592e42266",
+      "score": 13.5,
+      "interpretation": "human"
+    },
+    {
+      "path": "Heirs-Names-and-World-Ledger.md",
+      "sha256": "b0d8fb54fc79f5fd173d8ed8321f9036777b17be3179544bac67f9ab6297d352",
+      "score": 6.3,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hostile-Ecology-Index.md",
+      "sha256": "bdb64dd263c97f4b300780ff817c4040f9956db39c548205239104bc1daf8a1a",
+      "score": 0.1,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hostile-Group-G01.md",
+      "sha256": "e92b545b8ad35a998e8bd5c347e64128cbaa1b64cee3f46c9f41bdbc300cac6d",
+      "score": 1.3,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hostile-Group-G02.md",
+      "sha256": "1f6f3e4a8f6a6c233cf21ca58ea0a967c47ae2fc2aaaece581a8d7f64cb1b22a",
+      "score": 1.3,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hostile-Group-G03.md",
+      "sha256": "07777f972c9a1cedf7dfbc265481ad85b2991234341f111bfddf44ea12666718",
+      "score": 0.8,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hostile-Group-G04.md",
+      "sha256": "650dddd63ee2f4a258e61ad407f86cfde3862d991e06eecd21dd1c129230d18b",
+      "score": 1.5,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hostile-Group-G05.md",
+      "sha256": "ceb6a813498b355ffe25b72e4edf1133988f3150638b050cbc4b5490d38e7769",
+      "score": 1.3,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hostile-Group-G06.md",
+      "sha256": "ab730406256d3528ff837e895a3457f988e1f50da112fded94854319224ba0e6",
+      "score": 1,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hostile-Group-G07.md",
+      "sha256": "150b484a13af35df250d4060c7f365653644e6a7cf08532a7c487cabd90affdd",
+      "score": 2.4,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hostile-Group-G08.md",
+      "sha256": "beff888497825b46c25113745b3ba3e6e07f4a93c87c8a177b8dc3990a39ac08",
+      "score": 1.3,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hostile-Group-G09.md",
+      "sha256": "459ea64422983548a2ef84cdadd57dc9a1da21be239ea6cc0602ec816ad497a4",
+      "score": 1.6,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hostile-Group-G10.md",
+      "sha256": "17c4586e9ded1c4d7080f2c380f692e42d2fcc720abb7ebb7f0ab0e8fde37138",
+      "score": 1.8,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hostile-Group-G11.md",
+      "sha256": "6eb323f12774035f4782bc538cca923f55241bf225c8ed89057eedb0cb19072d",
+      "score": 1.6,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hostile-Group-G12.md",
+      "sha256": "7e20d4b006e0c5d08d46e425e9932585e51709602d1c54d9bd07622a3dd4b6ec",
+      "score": 2.4,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hostile-Group-G13.md",
+      "sha256": "9266efb793289d3664da03f74629c8d0538bfdbe6e4b4c23b4404d0a4c5636a9",
+      "score": 3.1,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hostile-Group-G14.md",
+      "sha256": "20b6e9791e089c4d61ea744b3bd837f453ececdd59e90f81c897bea8ce823b4f",
+      "score": 1.7,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hostile-Group-G15.md",
+      "sha256": "9694e9b4b34037fe0deaebfb576e2c9436bcaaf680bc4b9525ff1c7adb10b407",
+      "score": 2,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hostile-Group-G16.md",
+      "sha256": "8c7a7fe572648626808ef6dacddf0905eced68bdfc1c14244c07b88a94e07172",
+      "score": 2.9,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hostile-Group-G17.md",
+      "sha256": "0de29876f3928dbd2aa0bef1c84f59d54f687966e778eae1ddb5905d2970c8db",
+      "score": 3.2,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hostile-Group-G18.md",
+      "sha256": "a57f7506f1dee9dc4db5dc9051cc7ff6ac4f564422b98a6af73da45cc954628f",
+      "score": 4,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hostile-Group-G19.md",
+      "sha256": "30da926ac57fbb848d3898c0fa48b9253a7d6cfcf406875f6a584a2fe4715e2c",
+      "score": 1.7,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hostile-Group-G20.md",
+      "sha256": "818b1d09e282bdd9921d154ff3750a932419ccf67b6243ccb4d96cf27a8c996b",
+      "score": 1.6,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hostile-Group-G21.md",
+      "sha256": "4811fdfdd2ccd65ec99fb47fe98c2fd884105dffd20b6d8d4f193a9ba642f3ad",
+      "score": 2.5,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hostile-Group-G22.md",
+      "sha256": "613748a6b765e1cddc52be42b2d493d40c08e15ef206865ade1676e8e94d33d8",
+      "score": 1.6,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hostile-Group-G23.md",
+      "sha256": "5428fff39e290b07df64af50059e94aaacd8c31fd757710cf8880c7efb88f660",
+      "score": 2.5,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hostile-Group-G24.md",
+      "sha256": "aab109d54c4e6995bee09def36ad565eb0ee1ae81bfff73da21440891996bbd7",
+      "score": 0.8,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hostile-Group-G25.md",
+      "sha256": "4b6e4adda1d3a4ee485bd1d72f0f154fd2a518ab658795bee7fb92db239d94fd",
+      "score": 2.2,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hostile-Group-G26.md",
+      "sha256": "40c57b8d95689577449ffd07eaa4e69dc31145a29964d53127e1ee4465ba6e8a",
+      "score": 2.9,
+      "interpretation": "human"
+    },
+    {
+      "path": "Hostile-Group-G27.md",
+      "sha256": "acdbeb7bf39a62807a61ba64e1e4349be41b554da224e4b10d267402bdb505ee",
+      "score": 2.8,
+      "interpretation": "human"
+    },
+    {
+      "path": "Logistics-and-Infrastructure.md",
+      "sha256": "4c9f332d1a12701bb0178f48c5b9e8d15e255a0fd6f792da135d0bcacf7d06d5",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Lost-Technology-Lineage.md",
+      "sha256": "e41315638bcf4f1b32dc62bbe96305ad007cc7865cf7859818a9aaed806b4a27",
+      "score": 20.5,
+      "interpretation": "mostly human"
+    },
+    {
+      "path": "Martial-Paths.md",
+      "sha256": "6ad7cce8ba1742afeb6d09740034b5d156830d78dfa8d8f924be6356c83c9756",
+      "score": 30,
+      "interpretation": "mostly human"
+    },
+    {
+      "path": "Offices-and-Ranks.md",
+      "sha256": "664cfaf12e6df1ad375c9ddba9d96dc291796eb5f945186e83f80457a9d47545",
+      "score": 6.1,
+      "interpretation": "human"
+    },
+    {
+      "path": "Operating-Houses.md",
+      "sha256": "7d88782d4df5388d7f350f6b903da2c363db68a574f24ba92b5aa83b63724565",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Oral-Stories.md",
+      "sha256": "df010c977f54653a89a8b2a61ca1a29f6d6bbf934cd2ce9f246fa7a8555b7c00",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "People-and-Machines.md",
+      "sha256": "cdf4cc302efaed8327d7738cd76ddcc42a276a16e4051bb56ae6cd3d2b3d9a75",
+      "score": 26.1,
+      "interpretation": "mostly human"
+    },
+    {
+      "path": "Regional-Physical-AI-Arcs.md",
+      "sha256": "9dae68864bf157019014f252f73508515db4de7a4bb07672833b92393c9bbdd8",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Scenario-Timeline.md",
+      "sha256": "bc81a4fff658585aaf5f08cdfe4690d650f6c0f79acd60471959e2484af76c29",
+      "score": 19,
+      "interpretation": "mostly human"
+    },
+    {
+      "path": "Seoul-Station-Catalog.md",
+      "sha256": "14495b08e7ff51fc0c1ab0bc04979c502610839febd00ed785efb8441f644314",
+      "score": 13.2,
+      "interpretation": "human"
+    },
+    {
+      "path": "Sixteen-States.md",
+      "sha256": "fbf560c8a14aefa2baae782cc47d6018e9959f44f1bdffa5e8129543ea3b5c17",
+      "score": 15.4,
+      "interpretation": "mostly human"
+    },
+    {
+      "path": "Starting-Presets.md",
+      "sha256": "bf658f079f69b6bbbbb5fbad9fdc62c46325e276a28fbedb13b6d0ae1e82cbad",
+      "score": 25,
+      "interpretation": "mostly human"
+    },
+    {
+      "path": "Station-Interior-Construction.md",
+      "sha256": "eb821d027c61eabaf49d5ded631b57105ec9e154d5bf840ccaafb810abceb1cf",
+      "score": 30,
+      "interpretation": "mostly human"
+    },
+    {
+      "path": "Story-Batch-B001.md",
+      "sha256": "e2aa7de0383d92e44882dc5683b277bc1a2e3aac166ad66e1e2cbfb232ba31a2",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B002.md",
+      "sha256": "748eb12289562fcf0769d37872be5706108df306544cb6f34ad5a3cea4e6af5b",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B003.md",
+      "sha256": "0f36f070a71022fb8603cc7f36b3dd2b6e281c8086daa2d7083647b8ab5ee87b",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B004.md",
+      "sha256": "37b032178bedb2a214cd5f3a66969702616ec865dedc8c645e43bd9ea381245a",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B005.md",
+      "sha256": "e9ca6a2f8d9294b1fcbaa6b704676834280ef12e3b2dcf4336e83b1ace35a1e0",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B006.md",
+      "sha256": "1d13e224a6fde350e12e7bb57b49985acfdf830a83d5246c62c78117523252df",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B007.md",
+      "sha256": "2042b192d6112a7e97570b6ab51c1ca09d886ac795bdb168c8d9dd2fd858b324",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B008.md",
+      "sha256": "521b18cdfa634cb15796af1c24bcf2bc6c1bf0de499a0fa5041653132b0da2ab",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B009.md",
+      "sha256": "0265008201a993b951f879e0ad8eb30dd828cda3f8a1f2b81a0e45c98e764ef3",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B010.md",
+      "sha256": "99e236186e03e6bb10f4ae231cf3d5b19d256886d11c830b56bdf4a6eb6560cf",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B011.md",
+      "sha256": "1c1c95669fed2c00d768daf24a90f31564cab2fa2bc5eec51560cb002193b6d8",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B012.md",
+      "sha256": "d213e29b2fa7de1de13136efbdab827b2e99cea9c8b3f389cf22ebbd0b9ff293",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B013.md",
+      "sha256": "6c12be3e634c8dfe7c6acd56263237687b993bddf196716a9d10c51f428e5164",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B014.md",
+      "sha256": "6609c671952a00b655654f535689d75a9019e0088c0fc0ebbe5da4f84a6c0434",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B015.md",
+      "sha256": "87958049f814faba7f2388c667c960fed22d402ddb71926ec2778e93313614a6",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B016.md",
+      "sha256": "f0b19ff976da1dd702833204565033cc4c007333400837c2e8032191ba77cba9",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B018.md",
+      "sha256": "4c84a7a0dc71efada98b420c15f4e703fc1f8460d8169687384be5bea6bdb829",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B019.md",
+      "sha256": "d3f816e0869b4f04bcaa0e6659415fee5110ec442aa8aff104f6c3be187ac415",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B021.md",
+      "sha256": "83ba32d0174a7df3ae0b880adeede2afee3d4228d94fa7a67d6d9c1b358d3afc",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B022.md",
+      "sha256": "6ac749b6c1d1f5d6e1413fe5d2bed1161551873ab3fe48bfc8db44aa0c592551",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B023.md",
+      "sha256": "37672f171399adf569087117d1940fa5e2ac9886000b2766343e37330f276b7f",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B024.md",
+      "sha256": "206258db6dfe82e1027d214df08b4702c47df3e7c6c5c8e5d3c4aa11f7533608",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B025.md",
+      "sha256": "c8b4f5fd9aaf1c555ff68c826387affce5fa53a7d1bdf28401ebf36e1115d728",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B026.md",
+      "sha256": "9d46e13c50e0c990fe7248ca76ce4000855adfb21dd5e4038174ebd232f582f9",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B027.md",
+      "sha256": "46ef44460422268001c26b3f3291dd617f77ee15cbd5a3771904cd4bc8205797",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B028.md",
+      "sha256": "78f7f70db89a1492aaa508d2dbaeac7f1c63cae3fe10b067ee33aa81d1635aec",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B029.md",
+      "sha256": "e98e673e0328f6a721571a7dceb62022fe17c19b1719fc32a7a8091de73cf1e3",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B030.md",
+      "sha256": "e4bca79ff7ef543e0f2e8fd43443701f031d82554ea6c61586a553e2d92ad3d5",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B031.md",
+      "sha256": "08f1d0f81fff7de7a8e3fef350de929656ad57b6be89b6afd7f70efcd29352e6",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B032.md",
+      "sha256": "1b5807819645fcd8bc478c53e364c4910a5d37ebc786f1656492e1a386e6b569",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B033.md",
+      "sha256": "09adc2e639804f1aab08ea84a01540022bc40bf45521bb71094799c94db78b74",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B034.md",
+      "sha256": "98050890ac5602948a4341a2d571c35811821aa9a8e68386e14677874ea38172",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B035.md",
+      "sha256": "0cb14130dd4cf028a15533e434f982038a8f6916970141d3c8a1711d38ffab53",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B036.md",
+      "sha256": "c2128f17c7367717014b1157740f6e72d948cf1a43e535166d24e91cc0610cc9",
+      "score": 1.4,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B037.md",
+      "sha256": "b4216223a4b7c2d1f00c1a35d63d94eecb4234df482bf5c865e042c618c7101d",
+      "score": 0.3,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B038.md",
+      "sha256": "6b3c29961634df44a1892d9a3f9f8ab968610eee6edeedc34c945591ddd9492b",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B039.md",
+      "sha256": "9a42914f7692a4ed3e84e001a2e8a66cb394c88c80b5f9dd0fa8067eff5a68b1",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B040.md",
+      "sha256": "bdda632d921ae158fac36d77da4c2aa8226cc0474e9f0c87aa32376790aa6e28",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B041.md",
+      "sha256": "64dd19b08898cc49aa2268d54cd2c1d4ff10883610b720bf7020b4a3ef75549f",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B042.md",
+      "sha256": "6cede207dd5aeab3d9c90564a7f022e0d192ad0989f0ec2e6cd50b5448403885",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B043.md",
+      "sha256": "9e36a8db475b1d99fdef2d0d29d1e8a5a80c378060206dab3a9bdb562fe69053",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B044.md",
+      "sha256": "4ae222464dd5ca03734e4225801af493b05005c00970cce4376524a1934404c5",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B045.md",
+      "sha256": "4682b2958cd5b20e6686d65262b58d54eee1295a961e4371ab6340e8309a9aef",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B046.md",
+      "sha256": "26e8ed09fd43bade7bd3e17a23d54a3cfe0c68ce407b00fa68fcf8591491b459",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-B047.md",
+      "sha256": "c30bbea85e2565759a9266a3126cb9e340a7700f874cb9a750b07840fe2da66f",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Story-Batch-Manifest.md",
+      "sha256": "ed7dbe0da410e27b1d08418105f7273cc882318a02174e2897b09ffb0d84fc34",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Strongholds-and-Territory.md",
+      "sha256": "7af108336b4a28a0421dd0812694f49fb4c60ee78274c2150662b8b889feb58e",
+      "score": 12.5,
+      "interpretation": "human"
+    },
+    {
+      "path": "Structures.md",
+      "sha256": "85b1702c893c88f37ee82d0e03a90b2acf2b494be3cae2b522c2acffb382dafa",
+      "score": 29.2,
+      "interpretation": "mostly human"
+    },
+    {
+      "path": "Synthetic-Actors.md",
+      "sha256": "ff3f887d039a3ce2a1919190d799613c2c78bd2d5738b3f8f12cff238bc6f1e6",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "Values-and-Policy-Scales.md",
+      "sha256": "86b602eaf89945fe7efa18e05824225036e4911f93811e3e4aa7cf9acd5238c9",
+      "score": 14.3,
+      "interpretation": "human"
+    },
+    {
+      "path": "Vassal-Dynasty-Politics.md",
+      "sha256": "aff86ed3c4d3a6356a5e1b27af59dd03c45f4cea92f3a4fc31045303b46b6ac1",
+      "score": 25.3,
+      "interpretation": "mostly human"
+    },
+    {
+      "path": "World-Expansion-Index.md",
+      "sha256": "024d786819d732ca67754cfc3948a8ff40594e8522c2741bd315ef107430da22",
+      "score": 0,
+      "interpretation": "human",
+      "skipped": true,
+      "skipReason": "sentences<=2",
+      "manualReview": {
+        "status": "approved",
+        "reviewer": "omo-senpi-gate-reviewer/st_01a0c3ab",
+        "sourceSha256": "024d786819d732ca67754cfc3948a8ff40594e8522c2741bd315ef107430da22"
+      }
+    },
+    {
+      "path": "World-Map-Construction.md",
+      "sha256": "d6a8b4311e9647968087ade52847b293cc4236b68502cc48991808be2f2d6dda",
+      "score": 20.8,
+      "interpretation": "mostly human"
+    },
+    {
+      "path": "World-Narrative-Atlas.md",
+      "sha256": "99b90458004306e3eeb241e29c3716d45ac528ccaa03851b456c863aacddf54b",
+      "score": 23.3,
+      "interpretation": "mostly human"
+    },
+    {
+      "path": "World-Relation-Ledger.md",
+      "sha256": "aafe9f56ef32bbc617ad3a72ae68721df94e6ae2f17423620d1f63339b18e91d",
+      "score": 0,
+      "interpretation": "human"
+    },
+    {
+      "path": "World-Unbinding.md",
+      "sha256": "4cff9465c81eff2f300cdd7ffcbc9a6709fcac0b9cb56b345e48219c77f2adf8",
+      "score": 11.8,
+      "interpretation": "human"
+    },
+    {
+      "path": "World-and-Subway-Layers.md",
+      "sha256": "793f1afd87e1dcf5070abf57ad0974bff7189d1b90b5aad9c4ff958bc3cafcc3",
+      "score": 10,
+      "interpretation": "human"
+    },
+    {
+      "path": "index.md",
+      "sha256": "3e650a83477e2ed000216fe37a5d4ba43a49296c95b5b38c8103f03af1f0391b",
+      "score": 12.5,
+      "interpretation": "human"
+    }
+  ]
+}
