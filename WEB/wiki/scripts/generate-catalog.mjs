@@ -2,6 +2,7 @@ import { mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises'
 import { basename, dirname, extname, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import proj4 from 'proj4'
+import { STATES } from '../../../TOOL/tools/wiki/world-atlas-schema.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = resolve(projectRoot, '../..')
@@ -178,10 +179,11 @@ const pointInPolygon = ([x, y], points) => {
   }
   return inside
 }
-const capitalSource = await readFile(resolve(repoRoot, 'LORE/factions/Chaebol-Houses-and-Century-Factions.md'), 'utf8')
-const capitalTable = capitalSource.match(/\| 국가 \| 수도 \| 티어 1 \| 잠금 수장 \|[\s\S]*?(?=\n## |$)/u)?.[0] ?? ''
-const capitalNameByState = new Map([...capitalTable.matchAll(/^\| (S\d{2}) [^|]+ \| ([^|]+) \|/gm)]
-  .map((match) => [match[1], match[2].trim().replace(/역$/u, '')]))
+const capitalSource = await readFile(resolve(repoRoot, 'LORE/factions/Sixteen-States.md'), 'utf8')
+const stateIdByName = new Map(STATES.map((state) => [state.name, state.id]))
+const capitalNameByState = new Map([...capitalSource.matchAll(/^\| ([^|]+) \| ([^|]*?중심\s+([^|()]+?)역(?:\([^|]*\))?[^|]*) \|/gm)]
+  .map((match) => [stateIdByName.get(match[1].trim()), match[3].trim()])
+  .filter(([stateId]) => stateId !== undefined))
 if (capitalNameByState.size !== 16) throw new Error(`E_CAPITAL_CANON_COVERAGE:${capitalNameByState.size}`)
 const stationById = new Map(seoulGraph.stations.map((station) => [station.id, station]))
 const stationIdByName = new Map(seoulGraph.stations.map((station) => [station.nameKo.replace(/역$/u, ''), station.id]))

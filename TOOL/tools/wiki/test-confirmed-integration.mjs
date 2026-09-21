@@ -86,7 +86,7 @@ const MONSTER_PAGE_PREFIXES = [
 ];
 // Confirmed state-head and hangnyeol revision, including K057/K219/K271 renames.
 // world-atlas-verify.mjs pins the same census: `humans.length !== 422` → E_K_MAP.
-const HUMANS_CENSUS_SHA = '44b0dc099e6dd50c6185a0be248af61df47c6019';
+const HUMANS_CENSUS_SHA = 'ae2d1a51';
 
 function gitAtlas(sha) {
   const errors = [];
