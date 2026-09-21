@@ -1,16 +1,20 @@
 import { readFileSync, writeFileSync, existsSync } from 'node:fs'
 import { resolve, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { STATES } from '../../../TOOL/tools/wiki/world-atlas-schema.mjs'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '../../..')
 const read = (p) => readFileSync(resolve(root, p), 'utf8')
 
-// ── 수장: 영구 국가 ID와 잠금 수장을 한 행에 둔 정본 표에서 파싱 ──
-const housesRaw = read('LORE/factions/Chaebol-Houses-and-Century-Factions.md')
-const leaderByState = Object.fromEntries([...housesRaw.matchAll(/^\| S\d{2} ([^|]+) \| [^|]+ \| [^|]+ \| ([^|]+) \|/gm)]
-  .map((match) => [match[1].trim(), match[2].trim()]))
-// 국명 유사 매칭(소속 축약 대비)
+// ── 수장: 핵심 인물 첫 문장의 국가명·최고 직위에서 파싱 ──
 const core = read('LORE/characters/Core-Characters.md')
+const leaderByState = {}
+for (const match of core.matchAll(/^## ([^\n]+)\n\n([^\n]+)/gm)) {
+  const person = match[1].trim()
+  const intro = match[2].trim()
+  const state = STATES.find((candidate) => intro.startsWith(`${candidate.name} `))
+  if (state) leaderByState[state.name] = person
+}
 
 // ── 16국: 수장 맵의 국가명이 곧 국가 집합(16 tier1 수장 → 16국) ──
 const sixteen = read('LORE/factions/Sixteen-States.md')
@@ -26,9 +30,16 @@ for (const line of sixteen.split('\n')) {
     station: station.replace(/^중심\s*/, ''),
     type: m[3].trim().split('·')[0].trim(),
     isPower: /강국/.test(m[4]) ? '강국' : '약소',
+    originName: origin.split('.')[0].trim(),
   }
 }
-const stateOrder = ['급수계약정','규격동맹','양재기공주식회사','설교명부정','호위보호정','대한민국정부','선로후계정','교헌필사정','여의도출자연합회','승가구휼정','서초전산그룹','중립호송시','의약중립맹','관문군정','본당인준정','정동노동총연맹']
+for (const [stateName, info] of Object.entries(tableInfo)) {
+  if (leaderByState[stateName] || !info.originName) continue
+  for (const match of core.matchAll(/^## ([^\n]+)\n\n([^\n]+)/gm)) {
+    if (match[2].trim().startsWith(`${info.originName} `)) leaderByState[stateName] = match[1].trim()
+  }
+}
+const stateOrder = STATES.map((state) => state.name)
 const states = stateOrder.map(name => ({
   name,
   station: tableInfo[name]?.station || '-',
