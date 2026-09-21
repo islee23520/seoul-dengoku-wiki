@@ -21,10 +21,6 @@ namespace Janseon.Foundation.UI
             Wire(UiElementNames.ActionSettle, presenter.TriggerSettleForTest);
             Wire(UiElementNames.BattlePlayPause, presenter.TriggerBattlePlayPauseForTest);
             Wire(UiElementNames.BattleReset, presenter.TriggerBattleResetForTest);
-            Wire(UiElementNames.CardGeneralUse, presenter.TriggerCardGeneralUseForTest);
-            Wire(UiElementNames.FormationSwapFront, presenter.TriggerFormationSwapFrontForTest);
-            Wire(UiElementNames.EditFormation, presenter.TriggerEditFormationForTest);
-            Wire(UiElementNames.MobilityRegroup, presenter.TriggerMobilityRegroupForTest);
             Wire(UiElementNames.ChoiceNegotiate, presenter.TriggerNegotiateForTest);
             Wire(UiElementNames.ChoiceBypass, presenter.TriggerBypassForTest);
             Wire(UiElementNames.ChoiceCombat, presenter.TriggerCombatForTest);

@@ -1,0 +1,8 @@
+{
+  "rc": 1,
+  "command": "JANSEON_CAMPAIGN_DEFINITION_REQUEST=/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave3-task32/evidence/layered-full3d-16x9/task-33/final-acceptance/authoring/invalid-request.json /Applications/Unity/Hub/Editor/6000.7.0a5/Unity.app/Contents/MacOS/Unity -batchmode -quit -projectPath /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave3-task32/GAME -executeMethod Janseon.Data.Editor.CampaignDefinitionAuthoringCommand.ApplyFromEnvironment -logFile /Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave3/task-33/final-acceptance/authoring/invalid-correct.log",
+  "before": "5f22f0d5be6a6abe2e8282cccdffabcc4c422fa28fbd49604d9164aa591c89e6  invalid.log\nshasum: evidence/layered-full3d-16x9/task-33/final-acceptance/authoring/happy.log: No such file or directory",
+  "after": "5f22f0d5be6a6abe2e8282cccdffabcc4c422fa28fbd49604d9164aa591c89e6  invalid.log\nshasum: evidence/layered-full3d-16x9/task-33/final-acceptance/authoring/happy.log: No such file or directory",
+  "shaUnchanged": true,
+  "nonzeroRequired": true
+}

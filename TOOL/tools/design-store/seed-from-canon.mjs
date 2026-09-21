@@ -130,8 +130,7 @@ for (const document of documents) {
 const ingested = ingestCanonDir({
   dbPath,
   canonDomains: [
-    { root: join(repoRoot, 'LORE'), prefix: 'LORE', exclude: (rel) => rel.endsWith('AGENTS.md') },
-    { root: join(repoRoot, 'GDD'), prefix: 'GDD', exclude: (rel) => rel === 'AGENTS.md' || rel.startsWith('design-store/') },
+    { root: join(repoRoot, 'GDD'), prefix: 'GDD', exclude: (rel) => rel.endsWith('AGENTS.md') || rel.startsWith('design-store/') },
   ],
 });
 exportIndexPage({ dbPath, outPath: join(outRoot, 'index.html') });

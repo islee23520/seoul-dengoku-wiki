@@ -36,7 +36,9 @@ node TOOL/tools/design-store/seed-from-canon.mjs
 node GDD/system-design/total-war-ui/generate-map-data.mjs
 
 npm --prefix WEB/wiki run build
+npm --prefix WEB/wiki run build:gdd
 npm --prefix WEB/wiki run test:contract -- --json "$OUTPUT_ROOT/react-contract.json"
+npm --prefix WEB/wiki run test:gdd
 npm --prefix WEB/wiki run test:links
 npm --prefix WEB/wiki run test:states
 npm --prefix WEB/wiki run test:assets

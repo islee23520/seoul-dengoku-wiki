@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="3" result="Passed" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-20 15:03:50Z" end-time="2026-09-20 15:03:50Z" duration="0.0226204">
+  <test-suite type="TestSuite" id="1000" name="서울:전국" fullname="서울:전국" runstate="Runnable" testcasecount="162" result="Passed" start-time="2026-09-20 15:03:50Z" end-time="2026-09-20 15:03:50Z" duration="0.022620" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1189" name="Janseon.Foundation.EditModeTests.dll" fullname="/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave3-task32/GAME/Library/ScriptAssemblies/Janseon.Foundation.EditModeTests.dll" runstate="Runnable" testcasecount="161" result="Passed" start-time="2026-09-20 15:03:50Z" end-time="2026-09-20 15:03:50Z" duration="0.019199" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="9166" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1190" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="161" result="Passed" start-time="2026-09-20 15:03:50Z" end-time="2026-09-20 15:03:50Z" duration="0.018545" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1193" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="124" result="Passed" start-time="2026-09-20 15:03:50Z" end-time="2026-09-20 15:03:50Z" duration="0.017840" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1194" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="124" result="Passed" start-time="2026-09-20 15:03:50Z" end-time="2026-09-20 15:03:50Z" duration="0.017352" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1072" name="Area1GameDataBuilderTests" fullname="Janseon.Foundation.Tests.Area1GameDataBuilderTests" classname="Janseon.Foundation.Tests.Area1GameDataBuilderTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-20 15:03:50Z" end-time="2026-09-20 15:03:50Z" duration="0.015904" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1075" name="CatalogBuild_InvalidFixtureFailsExplicitly" fullname="Janseon.Foundation.Tests.Area1GameDataBuilderTests.CatalogBuild_InvalidFixtureFailsExplicitly" methodname="CatalogBuild_InvalidFixtureFailsExplicitly" classname="Janseon.Foundation.Tests.Area1GameDataBuilderTests" runstate="Runnable" seed="491673431" result="Passed" start-time="2026-09-20 15:03:50Z" end-time="2026-09-20 15:03:50Z" duration="0.007548" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1074" name="CatalogBuild_SerializedCampaignMutationProjectsExactValueAndChangesFingerprint" fullname="Janseon.Foundation.Tests.Area1GameDataBuilderTests.CatalogBuild_SerializedCampaignMutationProjectsExactValueAndChangesFingerprint" methodname="CatalogBuild_SerializedCampaignMutationProjectsExactValueAndChangesFingerprint" classname="Janseon.Foundation.Tests.Area1GameDataBuilderTests" runstate="Runnable" seed="1877158142" result="Passed" start-time="2026-09-20 15:03:50Z" end-time="2026-09-20 15:03:50Z" duration="0.002227" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1073" name="CatalogBuild_ValidFixtureProducesIndexWithoutChangingItsFingerprint" fullname="Janseon.Foundation.Tests.Area1GameDataBuilderTests.CatalogBuild_ValidFixtureProducesIndexWithoutChangingItsFingerprint" methodname="CatalogBuild_ValidFixtureProducesIndexWithoutChangingItsFingerprint" classname="Janseon.Foundation.Tests.Area1GameDataBuilderTests" runstate="Runnable" seed="1883423142" result="Passed" start-time="2026-09-20 15:03:50Z" end-time="2026-09-20 15:03:50Z" duration="0.000227" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: /Users/ilseoblee/Library/Application Support/Janseon Studio/서울_전국/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

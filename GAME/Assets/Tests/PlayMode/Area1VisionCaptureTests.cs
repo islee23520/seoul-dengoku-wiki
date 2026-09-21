@@ -5,8 +5,6 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-using Janseon.Core;
-using Janseon.Core.Battle.Contracts;
 using Janseon.Core.Data;
 using Janseon.Foundation.AppFlow;
 using Janseon.Foundation.Composition;
@@ -22,6 +20,12 @@ using VContainer;
 
 namespace Janseon.Foundation.Tests
 {
+    /// <summary>
+    /// Area 1 vision gate: the production Foundation gameplay panel must render live
+    /// data-contract receipt text, and the panel must capture to a non-degenerate PNG
+    /// with a fingerprint receipt. Drives the real MainTitle start button; no test seams
+    /// and no card-catalog references.
+    /// </summary>
     public sealed class Area1VisionCaptureTests
     {
         const string EvidenceDirectory = ".omo/evidence/area1-vision";
@@ -43,17 +47,16 @@ namespace Janseon.Foundation.Tests
             await AwaitAsyncOperation(SceneManager.LoadSceneAsync(FoundationScenes.Bootstrap, LoadSceneMode.Single));
             await mainTitleLoaded;
 
-            MainTitleUiHost titleHost = UnityEngine.Object.FindAnyObjectByType<MainTitleUiHost>();
-            Assert.That(titleHost, Is.Not.Null);
-            await titleHost.Ready;
             AppLifetimeScope appScope = UnityEngine.Object.FindObjectsByType<AppLifetimeScope>(FindObjectsSortMode.None).Single();
             ApplicationFlowCoordinator coordinator = appScope.Container.Resolve<ApplicationFlowCoordinator>();
             await coordinator.CurrentTransition;
 
             Task foundationLoaded = WaitForSceneAsync(FoundationScenes.Foundation, TimeSpan.FromSeconds(15));
             Task titleUnloaded = WaitForSceneUnloadedAsync(FoundationScenes.MainTitle, TimeSpan.FromSeconds(15));
+            MainTitleUiHost titleHost = UnityEngine.Object.FindAnyObjectByType<MainTitleUiHost>();
+            Assert.That(titleHost, Is.Not.Null, "MainTitleUiHost missing");
             Button start = UguiHudBuilder.ButtonNamed(titleHost.CanvasRoot, UiElementNames.MainTitleStart);
-            Assert.That(start, Is.Not.Null);
+            Assert.That(start, Is.Not.Null, UiElementNames.MainTitleStart);
             start.onClick.Invoke();
             await foundationLoaded;
             await titleUnloaded;
@@ -71,11 +74,8 @@ namespace Janseon.Foundation.Tests
 
             FoundationLifetimeScope scope = UnityEngine.Object.FindAnyObjectByType<FoundationLifetimeScope>();
             Assert.That(scope, Is.Not.Null);
-            IReadOnlyCardCatalog cards = scope.Container.Resolve<IReadOnlyCardCatalog>();
-            IReadOnlyUnitRoleCatalog roles = scope.Container.Resolve<IReadOnlyUnitRoleCatalog>();
-            IReadOnlyFormationCatalog formations = scope.Container.Resolve<IReadOnlyFormationCatalog>();
-            IReadOnlyStationCatalog stations = scope.Container.Resolve<IReadOnlyStationCatalog>();
-            IContentFingerprint fingerprint = scope.Container.Resolve<IContentFingerprint>();
+            captureContext.Fingerprint = scope.Container.Resolve<IContentFingerprint>();
+            captureContext.StationCount = scope.Container.Resolve<IReadOnlyStationCatalog>().All.Count;
 
             Transform panel = UguiHudBuilder.Find(host.CanvasRoot, UiElementNames.DataContractPanel);
             Assert.That(panel, Is.Not.Null, UiElementNames.DataContractPanel);
@@ -83,12 +83,6 @@ namespace Janseon.Foundation.Tests
             AssertReceiptText(host.CanvasRoot, UiElementNames.DataContentVersion);
             AssertReceiptText(host.CanvasRoot, UiElementNames.DataContentCounts);
             AssertReceiptText(host.CanvasRoot, UiElementNames.DataContentFingerprint);
-
-            captureContext.Fingerprint = fingerprint;
-            captureContext.CardCount = cards.All.Count;
-            captureContext.UnitRoleCount = roles.All.Count;
-            captureContext.FormationCount = formations.All.Count;
-            captureContext.StationCount = stations.All.Count;
         }
 
         void CaptureFoundationPanel()
@@ -148,9 +142,6 @@ namespace Janseon.Foundation.Tests
                 string receipt = BuildReceipt(
                     ReadSourceHead(repoRoot),
                     captureContext.Fingerprint,
-                    captureContext.CardCount,
-                    captureContext.UnitRoleCount,
-                    captureContext.FormationCount,
                     captureContext.StationCount,
                     Sha256Hex(png));
                 File.WriteAllText(receiptPath, receipt, new UTF8Encoding(false));
@@ -170,9 +161,6 @@ namespace Janseon.Foundation.Tests
         {
             public Canvas Canvas;
             public IContentFingerprint Fingerprint;
-            public int CardCount;
-            public int UnitRoleCount;
-            public int FormationCount;
             public int StationCount;
         }
 
@@ -187,22 +175,17 @@ namespace Janseon.Foundation.Tests
         }
 
         static string BuildReceipt(string sourceHead, IContentFingerprint fingerprint,
-            int cardCount, int unitRoleCount, int formationCount, int stationCount, string pngSha256)
+            int stationCount, string pngSha256)
         {
             ContentVersionStamp version = fingerprint.Version;
             return "{\n"
                 + "  \"source_head\": \"" + JsonEscape(sourceHead) + "\",\n"
                 + "  \"scene\": \"Assets/Scenes/Foundation.unity\",\n"
                 + "  \"capture_kind\": \"area1-vision-panel\",\n"
-                + "  \"rules_version\": \"" + JsonEscape(BattleRules.RulesVersion) + "\",\n"
                 + "  \"content_schema\": " + version.ContentSchema + ",\n"
                 + "  \"content_version\": \"" + JsonEscape(version.ContentVersion) + "\",\n"
                 + "  \"fingerprint_version\": \"" + JsonEscape(version.FingerprintVersion) + "\",\n"
                 + "  \"content_fingerprint\": \"" + JsonEscape(fingerprint.Sha256) + "\",\n"
-                + "  \"card_count\": " + cardCount + ",\n"
-                + "  \"unit_role_count\": " + unitRoleCount + ",\n"
-                + "  \"formation_count\": " + formationCount + ",\n"
-                + "  \"station_count\": " + stationCount + ",\n"
                 + "  \"png_sha256\": \"" + pngSha256 + "\"\n"
                 + "}\n";
         }

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="2" result="Failed(Child)" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-20 15:39:30Z" end-time="2026-09-20 15:39:30Z" duration="0.3158343">
+  <test-suite type="TestSuite" id="1029" name="서울:전국" fullname="서울:전국" runstate="Runnable" testcasecount="11" result="Failed" site="Child" start-time="2026-09-20 15:39:30Z" end-time="2026-09-20 15:39:30Z" duration="0.315834" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1022" name="Janseon.Foundation.PlayModeTests.dll" fullname="/Volumes/gameWorkspace/worktrees/seoul-kenshi/layered-full3d-16x9-wave3-task32/GAME/Library/ScriptAssemblies/Janseon.Foundation.PlayModeTests.dll" runstate="Runnable" testcasecount="11" result="Failed" site="Child" start-time="2026-09-20 15:39:30Z" end-time="2026-09-20 15:39:30Z" duration="0.312227" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="51333" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1023" name="Janseon" fullname="Janseon" runstate="Runnable" testcasecount="11" result="Failed" site="Child" start-time="2026-09-20 15:39:30Z" end-time="2026-09-20 15:39:30Z" duration="0.311766" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1024" name="Foundation" fullname="Janseon.Foundation" runstate="Runnable" testcasecount="11" result="Failed" site="Child" start-time="2026-09-20 15:39:30Z" end-time="2026-09-20 15:39:30Z" duration="0.311479" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="1025" name="Tests" fullname="Janseon.Foundation.Tests" runstate="Runnable" testcasecount="11" result="Failed" site="Child" start-time="2026-09-20 15:39:30Z" end-time="2026-09-20 15:39:30Z" duration="0.311156" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestFixture" id="1001" name="Area1DataRepositoryPlayModeTests" fullname="Janseon.Foundation.Tests.Area1DataRepositoryPlayModeTests" classname="Janseon.Foundation.Tests.Area1DataRepositoryPlayModeTests" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2026-09-20 15:39:30Z" end-time="2026-09-20 15:39:30Z" duration="0.310305" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="1002" name="BootstrapToFoundation_ResolvesSerializedCatalogRepositories" fullname="Janseon.Foundation.Tests.Area1DataRepositoryPlayModeTests.BootstrapToFoundation_ResolvesSerializedCatalogRepositories" methodname="BootstrapToFoundation_ResolvesSerializedCatalogRepositories" classname="Janseon.Foundation.Tests.Area1DataRepositoryPlayModeTests" runstate="Runnable" seed="2068947918" result="Failed" start-time="2026-09-20 15:39:30Z" end-time="2026-09-20 15:39:30Z" duration="0.302627" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: Strategy map asset prefabs must contain at least 14 entries.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                  <stack-trace><![CDATA[Janseon.Foundation.Presentation.StrategyMapAssetRepository.CopyMinimum[T] (System.Collections.Generic.IReadOnlyList`1[T] values, System.Int32 minimum, System.String label) (at Assets/Janseon/Foundation/Presentation/StrategyMapAssetRepository.cs:59)
+Janseon.Foundation.Presentation.StrategyMapAssetRepository..ctor (Janseon.Foundation.Presentation.StrategyMapAssetCatalog catalog) (at Assets/Janseon/Foundation/Presentation/StrategyMapAssetRepository.cs:33)
+Janseon.Foundation.Composition.FoundationLifetimeScope.<Configure>b__3_1 (VContainer.IObjectResolver _) (at Assets/Janseon/Foundation/Composition/FoundationLifetimeScope.cs:38)
+VContainer.ContainerBuilderExtensions+<>c__DisplayClass6_0`1[TInterface].<Register>b__0 (VContainer.IObjectResolver container) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/ContainerBuilderExtensions.cs:59)
+VContainer.Internal.FuncInstanceProvider.SpawnInstance (VContainer.IObjectResolver resolver) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Internal/InstanceProviders/FuncInstanceProvider.cs:16)
+VContainer.ScopedContainer+<>c__DisplayClass17_0.<.ctor>b__1 () (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Container.cs:82)
+System.Lazy`1[T].ViaFactory (System.Threading.LazyThreadSafetyMode mode) (at <a145436f8291401f83a99993a54f74b5>:0)
+System.Lazy`1[T].ExecutionAndPublication (System.LazyHelper executionAndPublication, System.Boolean useDefaultConstructor) (at <a145436f8291401f83a99993a54f74b5>:0)
+System.Lazy`1[T].CreateValue () (at <a145436f8291401f83a99993a54f74b5>:0)
+System.Lazy`1[T].get_Value () (at <a145436f8291401f83a99993a54f74b5>:0)
+VContainer.ScopedContainer.Resolve (System.Type type, System.Object key) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Container.cs:91)
+VContainer.IObjectResolverExtensions.ResolveOrParameter (VContainer.IObjectResolver resolver, System.Type parameterType, System.String parameterName, System.Collections.Generic.IReadOnlyList`1[T] parameters, System.Object key) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/IObjectResolverExtensions.cs:50)
+VContainer.Internal.ReflectionInjector.InjectMethods (System.Object obj, VContainer.IObjectResolver resolver, System.Collections.Generic.IReadOnlyList`1[T] parameters) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Internal/ReflectionInjector.cs:105)
+VContainer.Internal.ReflectionInjector.Inject (System.Object instance, VContainer.IObjectResolver resolver, System.Collections.Generic.IReadOnlyList`1[T] parameters) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Internal/ReflectionInjector.cs:29)
+VContainer.Unity.FindComponentProvider.SpawnInstance (VContainer.IObjectResolver resolver) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Unity/InstanceProviders/FindComponentProvider.cs:65)
+VContainer.ScopedContainer+<>c__DisplayClass17_0.<.ctor>b__1 () (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Container.cs:82)
+System.Lazy`1[T].ViaFactory (System.Threading.LazyThreadSafetyMode mode) (at <a145436f8291401f83a99993a54f74b5>:0)
+System.Lazy`1[T].ExecutionAndPublication (System.LazyHelper executionAndPublication, System.Boolean useDefaultConstructor) (at <a145436f8291401f83a99993a54f74b5>:0)
+System.Lazy`1[T].CreateValue () (at <a145436f8291401f83a99993a54f74b5>:0)
+System.Lazy`1[T].get_Value () (at <a145436f8291401f83a99993a54f74b5>:0)
+VContainer.ScopedContainer.Resolve (System.Type type, System.Object key) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Container.cs:91)
+VContainer.Unity.ContainerBuilderUnityExtensions+<>c__DisplayClass8_0.<RegisterComponentInHierarchy>b__0 (VContainer.IObjectResolver container) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Unity/ContainerBuilderUnityExtensions.cs:154)
+VContainer.ScopedContainerBuilder.BuildScope () (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/ContainerBuilder.cs:41)
+VContainer.ScopedContainer.CreateScope (System.Action`1[T] installation) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Container.cs:126)
+VContainer.Container.CreateScope (System.Action`1[T] installation) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Container.cs:263)
+VContainer.Unity.LifetimeScope.Build () (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Unity/LifetimeScope.cs:203)
+VContainer.Unity.LifetimeScope.Awake () (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Unity/LifetimeScope.cs:149)
+UnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)
+
+]]></stack-trace>
+                </failure>
+                <output><![CDATA[JANSEON_STARTUP_READY screen=MainTitle
+The character with Unicode value \u2600 was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+The character with Unicode value \U0001F4DC was not found in the [NanumGothic SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [main-title-preset-station-master-label].
+InvalidOperationException: Strategy map asset prefabs must contain at least 14 entries.
+Janseon.Foundation.Presentation.StrategyMapAssetRepository.CopyMinimum[T] (System.Collections.Generic.IReadOnlyList`1[T] values, System.Int32 minimum, System.String label) (at Assets/Janseon/Foundation/Presentation/StrategyMapAssetRepository.cs:59)
+Janseon.Foundation.Presentation.StrategyMapAssetRepository..ctor (Janseon.Foundation.Presentation.StrategyMapAssetCatalog catalog) (at Assets/Janseon/Foundation/Presentation/StrategyMapAssetRepository.cs:33)
+Janseon.Foundation.Composition.FoundationLifetimeScope.<Configure>b__3_1 (VContainer.IObjectResolver _) (at Assets/Janseon/Foundation/Composition/FoundationLifetimeScope.cs:38)
+VContainer.ContainerBuilderExtensions+<>c__DisplayClass6_0`1[TInterface].<Register>b__0 (VContainer.IObjectResolver container) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/ContainerBuilderExtensions.cs:59)
+VContainer.Internal.FuncInstanceProvider.SpawnInstance (VContainer.IObjectResolver resolver) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Internal/InstanceProviders/FuncInstanceProvider.cs:16)
+VContainer.ScopedContainer+<>c__DisplayClass17_0.<.ctor>b__1 () (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Container.cs:82)
+System.Lazy`1[T].ViaFactory (System.Threading.LazyThreadSafetyMode mode) (at <a145436f8291401f83a99993a54f74b5>:0)
+System.Lazy`1[T].ExecutionAndPublication (System.LazyHelper executionAndPublication, System.Boolean useDefaultConstructor) (at <a145436f8291401f83a99993a54f74b5>:0)
+System.Lazy`1[T].CreateValue () (at <a145436f8291401f83a99993a54f74b5>:0)
+System.Lazy`1[T].get_Value () (at <a145436f8291401f83a99993a54f74b5>:0)
+VContainer.ScopedContainer.Resolve (System.Type type, System.Object key) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Container.cs:91)
+VContainer.IObjectResolverExtensions.ResolveOrParameter (VContainer.IObjectResolver resolver, System.Type parameterType, System.String parameterName, System.Collections.Generic.IReadOnlyList`1[T] parameters, System.Object key) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/IObjectResolverExtensions.cs:50)
+VContainer.Internal.ReflectionInjector.InjectMethods (System.Object obj, VContainer.IObjectResolver resolver, System.Collections.Generic.IReadOnlyList`1[T] parameters) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Internal/ReflectionInjector.cs:105)
+VContainer.Internal.ReflectionInjector.Inject (System.Object instance, VContainer.IObjectResolver resolver, System.Collections.Generic.IReadOnlyList`1[T] parameters) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Internal/ReflectionInjector.cs:29)
+VContainer.Unity.FindComponentProvider.SpawnInstance (VContainer.IObjectResolver resolver) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Unity/InstanceProviders/FindComponentProvider.cs:65)
+VContainer.ScopedContainer+<>c__DisplayClass17_0.<.ctor>b__1 () (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Container.cs:82)
+System.Lazy`1[T].ViaFactory (System.Threading.LazyThreadSafetyMode mode) (at <a145436f8291401f83a99993a54f74b5>:0)
+System.Lazy`1[T].ExecutionAndPublication (System.LazyHelper executionAndPublication, System.Boolean useDefaultConstructor) (at <a145436f8291401f83a99993a54f74b5>:0)
+System.Lazy`1[T].CreateValue () (at <a145436f8291401f83a99993a54f74b5>:0)
+System.Lazy`1[T].get_Value () (at <a145436f8291401f83a99993a54f74b5>:0)
+VContainer.ScopedContainer.Resolve (System.Type type, System.Object key) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Container.cs:91)
+VContainer.Unity.ContainerBuilderUnityExtensions+<>c__DisplayClass8_0.<RegisterComponentInHierarchy>b__0 (VContainer.IObjectResolver container) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Unity/ContainerBuilderUnityExtensions.cs:154)
+VContainer.ScopedContainerBuilder.BuildScope () (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/ContainerBuilder.cs:41)
+VContainer.ScopedContainer.CreateScope (System.Action`1[T] installation) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Container.cs:126)
+VContainer.Container.CreateScope (System.Action`1[T] installation) (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Container.cs:263)
+VContainer.Unity.LifetimeScope.Build () (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Unity/LifetimeScope.cs:203)
+VContainer.Unity.LifetimeScope.Awake () (at ./Library/PackageCache/jp.hadashikick.vcontainer@dcf16cda6a65/Runtime/Unity/LifetimeScope.cs:149)
+UnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)
+
+NullReferenceException: Object reference not set to an instance of an object
+Janseon.Foundation.Presentation.StrategyMapScreen.Build () (at Assets/Janseon/Foundation/Presentation/StrategyMapScreen.cs:34)
+Janseon.Foundation.Presentation.StrategyMapScreen.Start () (at Assets/Janseon/Foundation/Presentation/StrategyMapScreen.cs:29)
+UnityEngine.StackTraceUtility:ExtractStringFromExceptionInternal(Object, String&, String&) (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:50)
+
+]]></output>
+              </test-case>
+              <test-case id="1003" name="ScopeWithoutIndexProviderRegistration_FailsExplicitly" fullname="Janseon.Foundation.Tests.Area1DataRepositoryPlayModeTests.ScopeWithoutIndexProviderRegistration_FailsExplicitly" methodname="ScopeWithoutIndexProviderRegistration_FailsExplicitly" classname="Janseon.Foundation.Tests.Area1DataRepositoryPlayModeTests" runstate="Runnable" seed="1023682303" result="Passed" start-time="2026-09-20 15:39:30Z" end-time="2026-09-20 15:39:30Z" duration="0.002476" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: /Users/ilseoblee/Library/Application Support/Janseon Studio/서울_전국/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

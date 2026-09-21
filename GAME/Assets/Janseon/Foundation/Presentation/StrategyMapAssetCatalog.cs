@@ -21,7 +21,7 @@ namespace Janseon.Foundation.Presentation
         [Header("Building binaries — 9 instancing data (.bytes, sorted by tile x, y)")]
         [SerializeField] private TextAsset[] buildingBinaries = System.Array.Empty<TextAsset>();
 
-        [Header("Landmark prefabs — 14 OBJ imports (sorted by slug)")]
+        [Header("Landmark prefabs — optional reviewed prefabs (sorted by slug)")]
         [SerializeField] private GameObject[] landmarkPrefabs = System.Array.Empty<GameObject>();
 
         [Header("Landmark manifest — positions in world units")]
@@ -32,5 +32,6 @@ namespace Janseon.Foundation.Presentation
         public IReadOnlyList<TextAsset> BuildingBinaries => buildingBinaries;
         public IReadOnlyList<GameObject> LandmarkPrefabs => landmarkPrefabs;
         public TextAsset LandmarkManifest => landmarkManifest;
+
     }
 }

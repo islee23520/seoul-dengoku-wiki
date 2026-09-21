@@ -1,0 +1,3128 @@
+diff --git a/GAME/Assets/Janseon/Core/Battle/Contracts/BattleContracts.cs b/GAME/Assets/Janseon/Core/Battle/Contracts/BattleContracts.cs
+index 195eb359..294fb25f 100644
+--- a/GAME/Assets/Janseon/Core/Battle/Contracts/BattleContracts.cs
++++ b/GAME/Assets/Janseon/Core/Battle/Contracts/BattleContracts.cs
+@@ -1,105 +1,493 @@
+ using System;
+ using System.Collections.Generic;
++using System.Collections.ObjectModel;
+ using System.Globalization;
+-using Janseon.Core;
+ 
+ namespace Janseon.Core.Battle.Contracts
+ {
++    public readonly struct UnitId : IEquatable<UnitId>
++    {
++        public readonly string Value;
++
++        public UnitId(string value)
++        {
++            Value = value ?? string.Empty;
++        }
++
++        public bool Equals(UnitId other)
++        {
++            return string.Equals(Value, other.Value, StringComparison.Ordinal);
++        }
++
++        public override bool Equals(object obj)
++        {
++            return obj is UnitId other && Equals(other);
++        }
++
++        public override int GetHashCode()
++        {
++            return StringComparer.Ordinal.GetHashCode(Value ?? string.Empty);
++        }
++
++        public override string ToString()
++        {
++            return Value ?? string.Empty;
++        }
++    }
++
+     public readonly struct SoldierId : IEquatable<SoldierId>
+     {
+         public readonly string Value;
+-        public SoldierId(string value) { Value = value ?? string.Empty; }
+-        public bool Equals(SoldierId other) => string.Equals(Value, other.Value, StringComparison.Ordinal);
+-        public override bool Equals(object obj) => obj is SoldierId other && Equals(other);
+-        public override int GetHashCode() => StringComparer.Ordinal.GetHashCode(Value ?? string.Empty);
+-        public override string ToString() => Value;
++
++        public SoldierId(string value)
++        {
++            Value = value ?? string.Empty;
++        }
++
++        public bool Equals(SoldierId other)
++        {
++            return string.Equals(Value, other.Value, StringComparison.Ordinal);
++        }
++
++        public override bool Equals(object obj)
++        {
++            return obj is SoldierId other && Equals(other);
++        }
++
++        public override int GetHashCode()
++        {
++            return StringComparer.Ordinal.GetHashCode(Value ?? string.Empty);
++        }
++
++        public override string ToString()
++        {
++            return Value ?? string.Empty;
++        }
+     }
++
+     public readonly struct SquadId : IEquatable<SquadId>
+     {
+         public readonly string Value;
+-        public SquadId(string value) { Value = value ?? string.Empty; }
+-        public bool Equals(SquadId other) => string.Equals(Value, other.Value, StringComparison.Ordinal);
+-        public override bool Equals(object obj) => obj is SquadId other && Equals(other);
+-        public override int GetHashCode() => StringComparer.Ordinal.GetHashCode(Value ?? string.Empty);
+-        public override string ToString() => Value;
++
++        public SquadId(string value)
++        {
++            Value = value ?? string.Empty;
++        }
++
++        public bool Equals(SquadId other)
++        {
++            return string.Equals(Value, other.Value, StringComparison.Ordinal);
++        }
++
++        public override bool Equals(object obj)
++        {
++            return obj is SquadId other && Equals(other);
++        }
++
++        public override int GetHashCode()
++        {
++            return StringComparer.Ordinal.GetHashCode(Value ?? string.Empty);
++        }
++
++        public override string ToString()
++        {
++            return Value ?? string.Empty;
++        }
+     }
++
+     public readonly struct HeroId : IEquatable<HeroId>
+     {
+         public readonly string Value;
+-        public HeroId(string value) { Value = value ?? string.Empty; }
+-        public bool Equals(HeroId other) => string.Equals(Value, other.Value, StringComparison.Ordinal);
+-        public override bool Equals(object obj) => obj is HeroId other && Equals(other);
+-        public override int GetHashCode() => StringComparer.Ordinal.GetHashCode(Value ?? string.Empty);
+-        public override string ToString() => Value;
++
++        public HeroId(string value)
++        {
++            Value = value ?? string.Empty;
++        }
++
++        public bool Equals(HeroId other)
++        {
++            return string.Equals(Value, other.Value, StringComparison.Ordinal);
++        }
++
++        public override bool Equals(object obj)
++        {
++            return obj is HeroId other && Equals(other);
++        }
++
++        public override int GetHashCode()
++        {
++            return StringComparer.Ordinal.GetHashCode(Value ?? string.Empty);
++        }
++
++        public override string ToString()
++        {
++            return Value ?? string.Empty;
++        }
+     }
+-    public enum BattleOutcomeKind { Ongoing, PlayerVictory, EnemyVictory, PlayerRetreat, EnemySurrender, PlayerRout, Draw }
+ 
+-    public sealed class RosterUnit
++    public readonly struct BattlePositionMm : IEquatable<BattlePositionMm>
+     {
+-        public UnitId Id; public SoldierId SoldierId; public SquadId SquadId; public int Side; public string Role; public int Hp; public int MaxHp; public int Power;
+-        public float Morale = 1f;
+-        public int RangeMin; public int RangeMax; public int MoveTicksPerCell; public int AttackCooldownTicks;
++        public readonly int X;
++        public readonly int Y;
++        public readonly int Z;
++
++        public BattlePositionMm(int x, int y, int z)
++        {
++            X = x;
++            Y = y;
++            Z = z;
++        }
++
++        public long DistanceSquaredTo(BattlePositionMm other)
++        {
++            var dx = (long)other.X - X;
++            var dy = (long)other.Y - Y;
++            var dz = (long)other.Z - Z;
++            return dx * dx + dy * dy + dz * dz;
++        }
++
++        public long ManhattanDistanceTo(BattlePositionMm other)
++        {
++            return Math.Abs((long)other.X - X) + Math.Abs((long)other.Y - Y) + Math.Abs((long)other.Z - Z);
++        }
++
++        public bool Equals(BattlePositionMm other)
++        {
++            return X == other.X && Y == other.Y && Z == other.Z;
++        }
++
++        public override bool Equals(object obj)
++        {
++            return obj is BattlePositionMm other && Equals(other);
++        }
++
++        public override int GetHashCode()
++        {
++            return unchecked(((X * 397) ^ Y) * 397 ^ Z);
++        }
++
++        public override string ToString()
++        {
++            return X.ToString(CultureInfo.InvariantCulture) + "," + Y.ToString(CultureInfo.InvariantCulture) + "," + Z.ToString(CultureInfo.InvariantCulture);
++        }
+     }
+-    public sealed class FormationSlot { public UnitId Unit; public int Row; public int Column; public CardinalDirection Facing; }
+-    public sealed class TelegraphPlan { public GridCoord Cell; public int ArrivalTick; public int Count; }
+ 
+-    public sealed class BattleSetup
++    public readonly struct BattleFacing : IEquatable<BattleFacing>
+     {
+-        public BattleContext Context; public RosterUnit[] PlayerUnits; public RosterUnit[] EnemyUnits;
+-        public FormationSlot[] PlayerFormation; public FormationSlot[] EnemyFormation; public UnitId EnemyCommanderId;
+-        public TelegraphPlan[] Telegraphs; public Heightmap Terrain;
+-        public HeroId PlayerHeroId;
+-        public SquadId PlayerSquadId;
+-        public static BattleSetup FromContext(BattleContext ctx)
++        public const int FullTurnMilliDegrees = 360000;
++        public readonly int YawMilliDegrees;
++
++        public BattleFacing(int yawMilliDegrees)
++        {
++            YawMilliDegrees = Normalize(yawMilliDegrees);
++        }
++
++        public static BattleFacing FromDegrees(double degrees)
++        {
++            return new BattleFacing(checked((int)Math.Round(degrees * 1000d, MidpointRounding.AwayFromZero)));
++        }
++
++        public static BattleFacing FromDelta(int deltaX, int deltaZ)
++        {
++            if (deltaX == 0 && deltaZ == 0)
++            {
++                return new BattleFacing(0);
++            }
++            var degrees = Math.Atan2(deltaX, deltaZ) * 180d / Math.PI;
++            return FromDegrees(degrees);
++        }
++
++        public static BattleFacing FromDirection(int deltaX, int deltaZ)
++        {
++            return FromDelta(deltaX, deltaZ);
++        }
++
++        static int Normalize(int value)
++        {
++            var normalized = value % FullTurnMilliDegrees;
++            return normalized < 0 ? normalized + FullTurnMilliDegrees : normalized;
++        }
++
++        public bool Equals(BattleFacing other)
+         {
+-            return FromContext(ctx, null);
++            return YawMilliDegrees == other.YawMilliDegrees;
+         }
+-        public static BattleSetup FromContext(BattleContext ctx, Heightmap terrain)
++
++        public override bool Equals(object obj)
++        {
++            return obj is BattleFacing other && Equals(other);
++        }
++
++        public override int GetHashCode()
++        {
++            return YawMilliDegrees;
++        }
++
++        public override string ToString()
++        {
++            return YawMilliDegrees.ToString(CultureInfo.InvariantCulture);
++        }
++    }
++
++    public sealed class NavNode
++    {
++        public string Id { get; }
++        public BattlePositionMm Position { get; }
++
++        public NavNode(string id, BattlePositionMm position)
++        {
++            if (string.IsNullOrEmpty(id))
++            {
++                throw new ArgumentException("Nav node id is required.", nameof(id));
++            }
++            Id = id;
++            Position = position;
++        }
++    }
++
++    public sealed class NavSegment
++    {
++        public string FromNodeId { get; }
++        public string ToNodeId { get; }
++
++        public NavSegment(string fromNodeId, string toNodeId)
+         {
+-            if (ctx == null) throw new ArgumentNullException(nameof(ctx));
+-            ctx.ValidateIntegrity();
+-            var roles = new[] { "근위", "돌격", "궁수" };
+-            var hp = new[] { 30, 20, 14 }; var power = new[] { 4, 6, 3 }; var range = new[] { 1, 1, 3 };
+-            var player = new RosterUnit[6]; var enemy = new RosterUnit[6];
+-            for (var side = 0; side < 2; side++) for (var i = 0; i < 6; i++)
++            if (string.IsNullOrEmpty(fromNodeId))
+             {
+-                var r = i / 2;
+-                var id = (side == 0 ? RealtimeBattleApi.PlayerUnitPrefix : RealtimeBattleApi.EnemyUnitPrefix)
+-                    + i.ToString(CultureInfo.InvariantCulture);
+-                var maxHp = side == 0 ? RealtimeBattleApi.PersistentMaxHp : hp[r];
+-                var startHp = maxHp;
+-                if (side == 0 && ctx.StartHp != null && ctx.StartHp.TryGet(id, out var storedHp))
++                throw new ArgumentException("From node id is required.", nameof(fromNodeId));
++            }
++            if (string.IsNullOrEmpty(toNodeId))
++            {
++                throw new ArgumentException("To node id is required.", nameof(toNodeId));
++            }
++            if (string.Equals(fromNodeId, toNodeId, StringComparison.Ordinal))
++            {
++                throw new ArgumentException("A nav segment requires distinct endpoints.");
++            }
++            FromNodeId = fromNodeId;
++            ToNodeId = toNodeId;
++        }
++    }
++
++    public sealed class NavPath
++    {
++        readonly ReadOnlyCollection<NavNode> nodes;
++        readonly ReadOnlyCollection<NavSegment> segments;
++        readonly Dictionary<string, NavNode> byId;
++
++        public NavPath(IEnumerable<NavNode> nodes, IEnumerable<NavSegment> segments)
++        {
++            this.nodes = new ReadOnlyCollection<NavNode>(new List<NavNode>(nodes ?? Array.Empty<NavNode>()));
++            this.segments = new ReadOnlyCollection<NavSegment>(new List<NavSegment>(segments ?? Array.Empty<NavSegment>()));
++            byId = new Dictionary<string, NavNode>(StringComparer.Ordinal);
++            Validate();
++        }
++
++        public IReadOnlyList<NavNode> Nodes => nodes;
++        public IReadOnlyList<NavSegment> Segments => segments;
++
++        public void Validate()
++        {
++            if (nodes.Count == 0)
++            {
++                throw new ArgumentException("A nav path requires at least one node.");
++            }
++            byId.Clear();
++            for (var i = 0; i < nodes.Count; i++)
++            {
++                var node = nodes[i];
++                if (node == null || !byId.TryAdd(node.Id, node))
+                 {
+-                    if (storedHp < 0 || storedHp > maxHp)
+-                        throw new ArgumentException("Corrupt start HP for unit '" + id + "'.", nameof(ctx));
+-                    startHp = storedHp;
++                    throw new ArgumentException("Nav nodes must be non-null and uniquely identified.");
+                 }
+-                var u = new RosterUnit { Id = new UnitId(id), Side = side, Role = roles[r], Hp = startHp, MaxHp = maxHp, Power = power[r], RangeMin = 1, RangeMax = range[r], MoveTicksPerCell = BattleRules.MoveTicksPerCell, AttackCooldownTicks = BattleRules.AttackCooldownTicks };
+-                if (side == 0) player[i] = u; else enemy[i] = u;
+             }
+-            var telegraphs = new TelegraphPlan[12];
+-            for (var i = 0; i < telegraphs.Length; i++)
++            for (var i = 0; i < segments.Count; i++)
+             {
+-                var side = i < 6 ? 1 : 0;
+-                var slot = i % 6;
+-                telegraphs[i] = new TelegraphPlan { Cell = new GridCoord(side == 1 ? 9 : 2, 1 + slot), ArrivalTick = 30 + i, Count = 1 };
++                var segment = segments[i];
++                if (segment == null || !byId.ContainsKey(segment.FromNodeId) || !byId.ContainsKey(segment.ToNodeId))
++                {
++                    throw new ArgumentException("Nav segment endpoints must reference authored nodes.");
++                }
+             }
+-            return new BattleSetup { Context = ctx, PlayerUnits = player, EnemyUnits = enemy, PlayerFormation = Formation(player), EnemyFormation = Formation(enemy), EnemyCommanderId = enemy[0].Id, Telegraphs = telegraphs, Terrain = terrain != null ? terrain.Snapshot() : null };
+         }
+-        static FormationSlot[] Formation(RosterUnit[] units) { var a = new FormationSlot[units.Length]; for (var i = 0; i < a.Length; i++) a[i] = new FormationSlot { Unit = units[i].Id, Row = i / 2, Column = i % 2 - 1, Facing = CardinalDirection.East }; return a; }
++
++        public bool Contains(BattlePositionMm position)
++        {
++            for (var i = 0; i < nodes.Count; i++)
++                if (nodes[i].Position.Equals(position))
++                {
++                    return true;
++                }
++            return false;
++        }
++
++        public bool TryGetNode(string id, out NavNode node)
++        {
++            return byId.TryGetValue(id ?? string.Empty, out node);
++        }
++    }
++
++    public enum BattleUnitStatus
++    {
++        Active,
++        Hit,
++        Down,
++        Routing,
++        Dead
++    }
++
++    public enum BattleOutcomeKind
++    {
++        Ongoing,
++        PlayerVictory,
++        EnemyVictory,
++        PlayerRetreat,
++        EnemySurrender,
++        PlayerRout,
++        Draw
++    }
++
++    public sealed class RosterUnit
++    {
++        public UnitId Id;
++        public SoldierId SoldierId;
++        public SquadId SquadId;
++        public int Side;
++        public string Role;
++        public int Hp;
++        public int MaxHp;
++        public int Power;
++        public float Morale;
++        public int RangeMinMm;
++        public int RangeMaxMm;
++        public int MoveMillimetersPerSecond;
++        public double AttackCooldownSeconds;
++        public int RadiusMm;
++        public BattlePositionMm InitialPosition;
++        public BattleFacing InitialFacing;
++        public BattleUnitStatus? InitialStatus;
++    }
++
++    public sealed class FormationSlot
++    {
++        public UnitId Unit;
++        public BattlePositionMm Position;
++        public BattleFacing Facing;
++    }
++
++    public sealed class TelegraphPlan
++    {
++        public BattlePositionMm Position;
++        public double ArrivalSeconds;
++        public int Count;
++    }
++
++    public sealed class BattleDefinition
++    {
++        public int MoraleBase { get; }
++        public int MoraleRecoverCap { get; }
++        public int MoraleRecoveryPerSecond { get; }
++        public int MoraleLossPerDeath { get; }
++        public int MoraleLossCommanderBelowHalf { get; }
++        public int SurrenderMoraleMax { get; }
++        public int SurrenderCommanderHpPercentMax { get; }
++        public int MoraleLock { get; }
++        public double MaximumDurationSeconds { get; }
++        public double DecisionIntervalSeconds { get; }
++
++        public BattleDefinition(int moraleBase, int moraleRecoverCap, int moraleRecoveryPerSecond,
++            int moraleLossPerDeath, int moraleLossCommanderBelowHalf, int surrenderMoraleMax,
++            int surrenderCommanderHpPercentMax, int moraleLock, double maximumDurationSeconds,
++            double decisionIntervalSeconds)
++        {
++            if (moraleBase < 0 || moraleRecoverCap < 0 || moraleRecoveryPerSecond < 0
++                || moraleLossPerDeath < 0 || moraleLossCommanderBelowHalf < 0 || surrenderMoraleMax < 0
++                || surrenderCommanderHpPercentMax < 0 || surrenderCommanderHpPercentMax > 100 || moraleLock < 0
++                || maximumDurationSeconds <= 0 || decisionIntervalSeconds <= 0)
++                throw new ArgumentOutOfRangeException(nameof(moraleBase), "Battle definition values are invalid.");
++            MoraleBase = moraleBase;
++            MoraleRecoverCap = moraleRecoverCap;
++            MoraleRecoveryPerSecond = moraleRecoveryPerSecond;
++            MoraleLossPerDeath = moraleLossPerDeath;
++            MoraleLossCommanderBelowHalf = moraleLossCommanderBelowHalf;
++            SurrenderMoraleMax = surrenderMoraleMax;
++            SurrenderCommanderHpPercentMax = surrenderCommanderHpPercentMax;
++            MoraleLock = moraleLock;
++            MaximumDurationSeconds = maximumDurationSeconds;
++            DecisionIntervalSeconds = decisionIntervalSeconds;
++        }
++    }
++
++    public sealed class HeroDefinition
++    {
++        public HeroId Id;
++        public int Hp;
++        public int MaxHp;
++        public BattlePositionMm Position;
++        public BattleFacing Facing;
++    }
++
++    public sealed class BattleSetup
++    {
++        public BattleContext Context;
++        public BattleDefinition Definition;
++        public RosterUnit[] PlayerUnits;
++        public RosterUnit[] EnemyUnits;
++        public FormationSlot[] PlayerFormation;
++        public FormationSlot[] EnemyFormation;
++        public UnitId PlayerCommanderId;
++        public UnitId EnemyCommanderId;
++        public TelegraphPlan[] Telegraphs;
++        public NavPath Navigation;
++        public HeroId PlayerHeroId;
++        public HeroId EnemyHeroId;
++        public HeroDefinition PlayerHero;
++        public HeroDefinition EnemyHero;
++        public SquadId PlayerSquadId;
++        public BattlePositionMm[] PlayerRetreatAnchors;
++        public BattlePositionMm[] EnemyRetreatAnchors;
++        public BattlePositionMm EnemyObjectivePosition;
++    }
++
++    public enum BattleTickCommandKind
++    {
++        Deploy,
++        OrderRetreat,
++        DemandSurrender,
++        SetFacing,
++        Move,
++        Attack
++    }
++
++    public enum BattleOrderKind
++    {
++        None,
++        Move,
++        Attack
+     }
+ 
+-    public enum BattleTickCommandKind { Deploy, PlayCard, OrderRetreat, DemandSurrender, SetFacing, Move, Attack }
+-    public enum BattleOrderKind { None, Move, Attack }
+     public sealed class SquadOrder
+     {
+         public CommandId CommandId;
+         public string[] ActorIds;
+         public BattleOrderKind Kind;
+-        public GridCoord Destination;
++        public BattlePositionMm Destination;
++        public NavPath Path;
+         public UnitId TargetUnitId;
+-        public SquadOrder Clone() => new SquadOrder { CommandId=CommandId, ActorIds=ActorIds == null ? null : (string[])ActorIds.Clone(), Kind=Kind, Destination=Destination, TargetUnitId=TargetUnitId };
++        public SquadOrder Clone()
++        {
++            return new SquadOrder
++            {
++                CommandId = CommandId,
++                ActorIds = ActorIds == null ? null : (string[])ActorIds.Clone(),
++                Kind = Kind,
++                Destination = Destination,
++                Path = Path,
++                TargetUnitId = TargetUnitId
++            };
++        }
+     }
++
+     public sealed class SquadOrderResult
+     {
+         public bool Accepted;
+@@ -107,51 +495,111 @@ namespace Janseon.Core.Battle.Contracts
+         public BattleRejection Rejection;
+         public SquadOrder Order;
+     }
++
+     public sealed class BattleTickCommand
+     {
+-        public CommandId Id; public int Seq; public Tick At; public BattleTickCommandKind Kind;
+-        public FormationSlot[] Formation; public string CardId; public UnitId ActorUnitId; public UnitId OwnerUnitId; public UnitId TargetUnitId;
+-        public GridCoord Target; public CardinalDirection Facing; public string[] StrongholdCardIds; public string[] StrongholdCards;
++        public CommandId Id;
++        public int Seq;
++        public double AtSeconds;
++        public BattleTickCommandKind Kind;
++        public FormationSlot[] Formation;
++        public UnitId ActorUnitId;
++        public UnitId TargetUnitId;
++        public BattlePositionMm Destination;
++        public NavPath Path;
++        public BattleFacing Facing;
++
+         public BattleTickCommand Clone()
+         {
+             return new BattleTickCommand
+             {
+-                Id=Id, Seq=Seq, At=At, Kind=Kind,
+-                Formation=Formation == null ? null : Array.ConvertAll(Formation, x => new FormationSlot { Unit=x.Unit, Row=x.Row, Column=x.Column, Facing=x.Facing }),
+-                CardId=CardId, ActorUnitId=ActorUnitId, OwnerUnitId=OwnerUnitId, TargetUnitId=TargetUnitId, Target=Target, Facing=Facing,
+-                StrongholdCardIds=StrongholdCardIds == null ? null : (string[])StrongholdCardIds.Clone(),
+-                StrongholdCards=StrongholdCards == null ? null : (string[])StrongholdCards.Clone(),
++                Id = Id,
++                Seq = Seq,
++                AtSeconds = AtSeconds,
++                Kind = Kind,
++                Formation = Formation == null ? null : Array.ConvertAll(Formation, x => new FormationSlot { Unit = x.Unit, Position = x.Position, Facing = x.Facing }),
++                ActorUnitId = ActorUnitId,
++                TargetUnitId = TargetUnitId,
++                Destination = Destination,
++                Path = Path,
++                Facing = Facing,
+             };
+         }
+     }
+-    public enum BattleRejectReason { TickMismatch, BattleStarted, NotDeployed, CardUnknown, CardRecharging, CardOutOfRadius, CommandsLocked, SurrenderConditionsUnmet, BattleEnded, UnknownActor, MalformedCommand, RetreatUnavailable, CardOwnerRequired, CardInvalidOwner, CardInvalidTarget, CardDestinationBlocked, CardDestinationOutOfBounds, CommandConflict }
+-    public enum CardKind { Character, Stronghold }
+-    public sealed class CardDefinition
++
++    public enum BattleRejectReason
+     {
+-        public string Id; public CardKind Kind; public int RechargeTicks; public int Effect; public string EffectKey;
++        TimestampMismatch,
++        BattleStarted,
++        NotDeployed,
++        CommandsLocked,
++        SurrenderConditionsUnmet,
++        BattleEnded,
++        UnknownActor,
++        MalformedCommand,
++        RetreatUnavailable,
++        InvalidTarget,
++        DestinationBlocked,
++        DestinationOffNav,
++        CommandConflict
+     }
+-    public sealed class BattleRejection { public BattleRejectReason Reason; public string Detail; }
+-    public sealed class BattleRules { public const int TicksPerSecond=30, MoveTicksPerCell=10, AttackCooldownTicks=30, MoraleBase=10000, MoraleWarn=4000, MoraleRecoverCap=10000, MoraleRecoveryPerSecond=500, MoraleLossPerDeath=500, MoraleLossCommanderBelowHalf=1000, SurrenderMoraleMax=2000, SurrenderCommanderHpPercentMax=50, StrongholdCardSlots=2, CardEffectTicks=150, MaxTicks=9000, CommandRadius=3, MoraleLock=0, FormationRows=3, FormationColumns=3, CardRechargeMinTicks=300, CardRechargeMaxTicks=900; public const string LegacyRulesVersion="poc-rtfc-v1", RulesVersion="rtfc-owner-cards-v2"; }
+-    public static class BattleRoleRules { public static readonly string[] Roles={"근위","돌격","궁수"}; public static readonly int[] MaxHp={30,20,14}; public static readonly int[] Power={4,6,3}; public static readonly int[] RangeMax={1,1,3}; }
+ 
+-    public static class RealtimeBattleApi
++    public sealed class BattleRejection
+     {
+-        public const string PlayerUnitPrefix = "ally-";
+-        public const string EnemyUnitPrefix = "foe-";
+-        public const string PersistentAllyId = "ally-0";
+-        public const int PersistentMaxHp = 10;
++        public BattleRejectReason Reason;
++        public string Detail;
++    }
++
++    public static class BattleRules
++    {
++    }
++
++    public sealed class BattleSnapshot
++    {
++        public string RulesVersion;
++        public double ElapsedSeconds;
++        public BattleOutcomeKind Outcome;
++        public SideSnapshot[] Sides;
++        public UnitSnapshot[] Units;
++        public TelegraphView[] Telegraphs;
++
++        public sealed class SideSnapshot
++        {
++            public int Morale;
++            public int CommanderHpPercent;
++            public bool RetreatCovered;
++            public bool CommandsLocked;
++        }
++        public sealed class UnitSnapshot
++        {
++            public UnitId Id;
++            public int Side;
++            public BattlePositionMm Position;
++            public BattleFacing Facing;
++            public int Hp;
++            public int SurvivorCount;
++            public BattleUnitStatus Status;
++            public BattleOrderKind OrderKind;
++            public BattlePositionMm OrderDestination;
++            public UnitId OrderTargetUnitId;
++            public double AttackCooldownSecondsRemaining;
++        }
++        public sealed class TelegraphView
++        {
++            public BattlePositionMm Position;
++            public double ArrivalSeconds;
++            public int Count;
++        }
+     }
+ 
+-    public sealed class BattleSnapshot { public string RulesVersion; public int Tick; public BattleOutcomeKind Outcome; public SideSnapshot[] Sides; public UnitSnapshot[] Units; public TelegraphView[] Telegraphs; public CardView[] Cards; public sealed class SideSnapshot { public int Morale; public int CommanderHpPercent; public bool RetreatCovered; public bool CommandsLocked; } public sealed class UnitSnapshot { public UnitId Id; public int Side; public GridCoord Cell; public CardinalDirection Facing; public int Hp; public int SurvivorCount; public string State; public BattleOrderKind OrderKind; public GridCoord OrderDestination; public UnitId OrderTargetUnitId; public int MoveTicksLeft; public int AttackCooldownTicksLeft; } public sealed class TelegraphView { public GridCoord Cell; public int ArrivalTick; public int Count; } public sealed class CardView { public UnitId OwnerUnitId; public string Id; public int RechargeTicksLeft; public int ActiveTicksLeft; } }
+     public sealed class BattleResult
+     {
+         public BattleOutcomeKind Outcome;
+-        public int FinalTick;
++        public double FinalElapsedSeconds;
+         public string ResultHash;
+         public string BattleId;
+         public UnitHpSnapshot UnitHp;
+ 
+-        /// <summary>Maps every terminal realtime outcome without collapsing retreat/rout/surrender/draw into victory.</summary>
+         public EncounterResult ToEncounterResult()
+         {
+             var hash = ResultHash ?? string.Empty;
+diff --git a/GAME/Assets/Janseon/Core/Battle/Sim/BattleSim.cs b/GAME/Assets/Janseon/Core/Battle/Sim/BattleSim.cs
+index 45b82ab2..67ef3432 100644
+--- a/GAME/Assets/Janseon/Core/Battle/Sim/BattleSim.cs
++++ b/GAME/Assets/Janseon/Core/Battle/Sim/BattleSim.cs
+@@ -2,689 +2,1077 @@ using System;
+ using System.Collections.Generic;
+ using System.Globalization;
+ using Janseon.Core.Battle.Contracts;
+-using ContractOutcome = Janseon.Core.Battle.Contracts.BattleOutcomeKind;
+-using ContractRejection = Janseon.Core.Battle.Contracts.BattleRejection;
+-using ContractRejectReason = Janseon.Core.Battle.Contracts.BattleRejectReason;
+ 
+ namespace Janseon.Core.Battle.Sim
+ {
+     public static class BattleSim
+     {
+-        public static bool ResolveSoldierSpacing(BattleSimState state, HashSet<GridCoord> blockedCells)
+-        {
+-            if (state == null || state.Units == null) return false;
+-            var ordered = new List<UnitState>(state.Units); ordered.Sort((a, b) => string.CompareOrdinal(a.Id.Value, b.Id.Value));
+-            for (var i = 0; i < ordered.Count; i++)
+-                if (blockedCells != null && blockedCells.Contains(ordered[i].Cell)) { state.SpatialHash = SpatialFingerprint(ordered); return false; }
+-            var cellSize = 1;
+-            for (var i = 0; i < ordered.Count; i++) cellSize = Math.Max(cellSize, 2 * ordered[i].RadiusMm);
+-            state.SpatialBuckets.Clear();
+-            for (var i = 0; i < ordered.Count; i++)
+-            {
+-                var key = new IntPointMm(FloorDiv(ordered[i].PositionMm.X, cellSize), FloorDiv(ordered[i].PositionMm.Y, cellSize));
+-                List<UnitId> bucket;
+-                if (!state.SpatialBuckets.TryGetValue(key, out bucket)) state.SpatialBuckets[key] = bucket = new List<UnitId>();
+-                bucket.Add(ordered[i].Id);
+-            }
+-            for (var iteration = 0; iteration < 4; iteration++)
+-                for (var i = 0; i < ordered.Count; i++)
+-                    for (var j = i + 1; j < ordered.Count; j++)
+-                    {
+-                        var a = ordered[i]; var b = ordered[j];
+-                        var dx = b.PositionMm.X - a.PositionMm.X; var dy = b.PositionMm.Y - a.PositionMm.Y;
+-                        var min = a.RadiusMm + b.RadiusMm;
+-                        if (Math.Abs(dx) >= min && Math.Abs(dy) >= min) continue;
+-                        if (Math.Abs(dx) >= Math.Abs(dy)) { var push = Math.Max(1, min - Math.Abs(dx)); b.PositionMm.X += dx >= 0 ? push : -push; }
+-                        else { var push = Math.Max(1, min - Math.Abs(dy)); b.PositionMm.Y += dy >= 0 ? push : -push; }
+-                    }
+-            state.SpatialHash = SpatialFingerprint(ordered) + ":cell=" + cellSize.ToString(CultureInfo.InvariantCulture);
+-            return true;
+-        }
+-
+-        static int FloorDiv(int value, int divisor)
++        public static BattleSimState Open(BattleSetup setup)
+         {
+-            if (value >= 0) return value / divisor;
+-            return -(((-value) + divisor - 1) / divisor);
++            if (setup == null)
++            {
++                throw new ArgumentNullException(nameof(setup));
++            }
++            if (setup.Context == null || setup.Definition == null || setup.Navigation == null)
++            {
++                throw new ArgumentException("Battle setup requires explicit context, definition, and navigation.", nameof(setup));
++            }
++            setup.Context.ValidateIntegrity();
++            if (setup.PlayerUnits == null || setup.EnemyUnits == null)
++            {
++                throw new ArgumentException("Both rosters are required.", nameof(setup));
++            }
++            if (setup.PlayerFormation == null || setup.EnemyFormation == null)
++            {
++                throw new ArgumentException("Both formations are required.", nameof(setup));
++            }
++
++            setup.Navigation.Validate();
++            ValidateRoster(setup.PlayerUnits, 0);
++            ValidateRoster(setup.EnemyUnits, 1);
++            ValidateUniqueSoldierIds(setup.PlayerUnits, setup.EnemyUnits);
++            ValidateFormation(setup.Navigation, setup.PlayerFormation, setup.PlayerUnits);
++            ValidateFormation(setup.Navigation, setup.EnemyFormation, setup.EnemyUnits);
++            ValidateCommander(setup.PlayerUnits, setup.PlayerCommanderId, "Player");
++            ValidateCommander(setup.EnemyUnits, setup.EnemyCommanderId, "Enemy");
++            ValidateRetreatAnchors(setup.Navigation, setup.PlayerRetreatAnchors);
++            ValidateRetreatAnchors(setup.Navigation, setup.EnemyRetreatAnchors);
++            if (!setup.Navigation.Contains(setup.EnemyObjectivePosition))
++            {
++                throw new ArgumentException("Enemy objective must reference an authored navigation position.", nameof(setup));
++            }
++
++            var state = new BattleSimState
++            {
++                Context = setup.Context,
++                Definition = setup.Definition,
++                Arena = new ArenaState
++                {
++                    Navigation = setup.Navigation,
++                    PlayerRetreatAnchors = ClonePositions(setup.PlayerRetreatAnchors),
++                    EnemyRetreatAnchors = ClonePositions(setup.EnemyRetreatAnchors),
++                    EnemyObjectivePosition = setup.EnemyObjectivePosition
++                },
++                Outcome = BattleOutcomeKind.Ongoing,
++                Rng = CreateRng(setup.Context),
++                Units = CreateUnits(setup.PlayerUnits, setup.EnemyUnits, setup.PlayerFormation, setup.EnemyFormation),
++                Heroes = CreateHeroes(setup),
++                Sides = new[]
++                {
++                    new SideState { Morale = setup.Definition.MoraleBase },
++                    new SideState { Morale = setup.Definition.MoraleBase }
++                },
++                PlayerCommanderId = setup.PlayerCommanderId,
++                EnemyCommanderId = setup.EnemyCommanderId,
++                NextEnemyDecisionSeconds = setup.Definition.DecisionIntervalSeconds
++            };
++
++            state.Telegraphs = CreateTelegraphs(setup.Telegraphs);
++            state.PreviousHp = new int[state.Units.Length];
++            state.PreviousStatuses = new BattleUnitStatus[state.Units.Length];
++            for (var i = 0; i < state.Units.Length; i++)
++            {
++                state.PreviousHp[i] = state.Units[i].Hp;
++                state.PreviousStatuses[i] = state.Units[i].Status;
++            }
++
++            UpdateCommanderState(state);
++            state.PublishFrame();
++            return state;
+         }
+ 
+-        static string SpatialFingerprint(List<UnitState> units)
++        public static object Submit(BattleSimState state, Ledger ledger, BattleTickCommand command)
+         {
+-            var text = string.Empty;
+-            for (var i = 0; i < units.Count; i++) text += units[i].Id.Value + "=" + units[i].PositionMm + ";";
+-            return CoreApi.StableHashHex(text);
++            if (state == null || ledger == null || command == null)
++            {
++                return Reject(BattleRejectReason.MalformedCommand);
++            }
++            if (command.AtSeconds < state.ElapsedSeconds)
++            {
++                return Reject(BattleRejectReason.TimestampMismatch);
++            }
++            if (state.Outcome != BattleOutcomeKind.Ongoing)
++            {
++                return Reject(BattleRejectReason.BattleEnded);
++            }
++
++            var candidate = state.Clone();
++            BattleRejection rejection;
++            try
++            {
++                rejection = ValidateAndApply(candidate, command.Clone());
++            }
++            catch (ArgumentException exception)
++            {
++                return Reject(BattleRejectReason.MalformedCommand, exception.Message);
++            }
++            if (rejection != null)
++            {
++                return rejection;
++            }
++
++            state.Pending = candidate.Pending;
++            state.Deployed = candidate.Deployed;
++            state.AcceptedOrders = candidate.AcceptedOrders;
++            state.PublishFrame();
++            ledger.Events.Add(new TypedEvent
++            {
++                Id = new EventId(command.Id.Value),
++                CauseId = command.Id,
++                SummaryHash = state.Fingerprint()
++            });
++            return null;
+         }
+ 
+-        public sealed class FormationUnit { public readonly string SoldierId; public readonly int Slot; public FormationUnit(string id, int slot) { SoldierId=id; Slot=slot; } }
+-        public sealed class BattlefieldSurface
++        public static void Step(BattleSimState state, Ledger ledger, double fixedDeltaSeconds)
+         {
+-            readonly bool[] blocked; readonly int[] heights; readonly System.Collections.Generic.Dictionary<string, GridCoord> anchors = new System.Collections.Generic.Dictionary<string, GridCoord>();
+-            BattlefieldSurface(int w, int h) { Width=w; Height=h; blocked=new bool[w*h]; heights=new int[w*h]; for(var i=0;i<heights.Length;i++) heights[i]=1; }
+-            public int Width { get; } public int Height { get; }
+-            public static BattlefieldSurface Create(int w,int h) { return new BattlefieldSurface(w,h); }
+-            public BattlefieldSurface WithHeights(int[] v) { if(v==null||v.Length!=heights.Length) throw new ArgumentException("height data"); Array.Copy(v,heights,v.Length); return this; }
+-            public BattlefieldSurface WithBlocked(params GridCoord[] cells) { foreach(var c in cells) if(In(c)) blocked[c.Y*Width+c.X]=true; return this; }
+-            public BattlefieldSurface WithPassage(GridCoord a, GridCoord b) { if(In(a)&&In(b)){blocked[a.Y*Width+a.X]=false;blocked[b.Y*Width+b.X]=false;} return this; }
+-            public BattlefieldSurface WithAnchor(string id, GridCoord c) { anchors[id]=c; return this; }
+-            bool In(GridCoord c)=>c.X>=0&&c.Y>=0&&c.X<Width&&c.Y<Height;
+-            public sealed class Result { public bool Success; public string Error; public System.Collections.Generic.List<GridCoord> Path=new System.Collections.Generic.List<GridCoord>(); public string FormationHash; }
+-            public Result Project(FormationUnit[] units,string entry,string exit,GridCoord[] requested,bool tuning) { return ProjectFormation(this,units,entry,exit,requested,tuning); }
+-            internal bool IsOpen(GridCoord c)=>In(c)&&!blocked[c.Y*Width+c.X]; internal int HeightAt(GridCoord c)=>heights[c.Y*Width+c.X]; internal bool TryAnchor(string id,out GridCoord c)=>anchors.TryGetValue(id,out c);
++            if (state == null || ledger == null || state.Outcome != BattleOutcomeKind.Ongoing)
++            {
++                return;
++            }
++            if (fixedDeltaSeconds <= 0d)
++            {
++                throw new ArgumentOutOfRangeException(nameof(fixedDeltaSeconds));
++            }
++
++            var previous = state.ElapsedSeconds;
++            state.ElapsedSeconds += fixedDeltaSeconds;
++            state.Pending.Sort(CompareCommands);
++            while (state.Pending.Count > 0 && state.Pending[0].AtSeconds <= state.ElapsedSeconds)
++            {
++                var command = state.Pending[0];
++                state.Pending.RemoveAt(0);
++                ApplyCommand(state, command);
++            }
++
++            MoveUnits(state, fixedDeltaSeconds);
++            ResolveSoldierSpacing(state);
++            ResolveAttacks(state, fixedDeltaSeconds);
++            while (state.NextEnemyDecisionSeconds <= state.ElapsedSeconds)
++            {
++                IssueEnemyCommands(state, state.NextEnemyDecisionSeconds);
++                state.NextEnemyDecisionSeconds += state.Definition.DecisionIntervalSeconds;
++            }
++            ResolveMorale(state, fixedDeltaSeconds);
++            UpdateCommanderState(state);
++            ResolveOutcome(state);
++            if (previous < state.Definition.MaximumDurationSeconds
++                && state.ElapsedSeconds >= state.Definition.MaximumDurationSeconds)
++            {
++                state.Outcome = BattleOutcomeKind.Draw;
++            }
++
++            ledger.Events.Add(new TypedEvent
++            {
++                Id = new EventId(state.Context.BattleId + "@" + state.ElapsedSeconds.ToString("R", CultureInfo.InvariantCulture)),
++                SummaryHash = state.Fingerprint()
++            });
++            state.PublishFrame();
+         }
+-        public static BattlefieldSurface.Result ProjectFormation(BattlefieldSurface s, FormationUnit[] units,string entry,string exit,GridCoord[] requested=null,bool tuning=true)
++
++        public static void Step(BattleSimState state, Ledger ledger, float fixedDeltaSeconds)
+         {
+-            var r=new BattlefieldSurface.Result(); if(s==null||units==null||units.Length==0){r.Error="formation is empty";return r;} if(!tuning){r.Error="missing tuning";return r;}
+-            GridCoord a,b; if(!s.TryAnchor(entry,out a)||!s.TryAnchor(exit,out b)){r.Error="anchor missing";return r;} if(requested!=null) foreach(var c in requested) if(!s.IsOpen(c)){r.Error="formation slot is blocked";return r;}
+-            var q=new System.Collections.Generic.Queue<GridCoord>(); var prev=new System.Collections.Generic.Dictionary<GridCoord,GridCoord>(); q.Enqueue(a); prev[a]=new GridCoord(int.MinValue,int.MinValue);
+-            while(q.Count>0){var c=q.Dequeue(); if(c.Equals(b))break; foreach(var d in new[]{CardinalDirection.North,CardinalDirection.East,CardinalDirection.South,CardinalDirection.West}){var n=c.Step(d); if(s.IsOpen(n)&&!prev.ContainsKey(n)){prev[n]=c;q.Enqueue(n);}}}
+-            if(!prev.ContainsKey(b)){r.Error="anchors disconnected";return r;} for(var c=b;;c=prev[c]){r.Path.Add(c);if(c.Equals(a))break;} r.Path.Reverse(); var text=string.Join(";",r.Path); foreach(var u in units) text+="|"+u.SoldierId+":"+u.Slot; r.FormationHash=CoreApi.StableHashHex(text); r.Success=true; return r;
++            Step(state, ledger, (double)fixedDeltaSeconds);
+         }
+-        public static BattleSimState Open(BattleSetup setup)
++
++        static BattleRejection ValidateAndApply(BattleSimState state, BattleTickCommand command, bool enemy = false)
+         {
+-            if (setup == null) throw new ArgumentNullException(nameof(setup));
+-            if (setup.Context == null) throw new ArgumentException("Battle setup requires context.", nameof(setup));
+-            setup.Context.ValidateIntegrity();
+-            if (setup.Context.RulesVersion != BattleRules.RulesVersion)
+-                throw new NotSupportedException("Unsupported battle rules version '" + setup.Context.RulesVersion + "'.");
+-            var seedHash = setup.Context.SeedIdentityHash ?? setup.Context.ContextHash ?? string.Empty;
+-            var seed = unchecked((int)uint.Parse(CoreApi.StableHashHex(seedHash).Substring(0, 8), NumberStyles.HexNumber, CultureInfo.InvariantCulture));
+-            var terrain = setup.Terrain != null ? setup.Terrain.Snapshot() : null;
+-            var arena = terrain != null ? new ArenaState { Width = terrain.Width, Height = terrain.Height } : new ArenaState();
+-            ValidateRoster(setup.PlayerUnits, 0);
+-            ValidateRoster(setup.EnemyUnits, 1);
+-            if (!string.IsNullOrEmpty(setup.PlayerSquadId.Value))
+-                for (var i = 0; i < setup.PlayerUnits.Length; i++)
+-                    if (!setup.PlayerUnits[i].SquadId.Equals(setup.PlayerSquadId))
+-                        throw new ArgumentException("Soldier does not belong to the declared squad.");
+-            if (!string.IsNullOrEmpty(setup.PlayerSquadId.Value))
+-                for (var i = 0; i < setup.PlayerUnits.Length; i++)
+-                    if (!setup.PlayerUnits[i].SquadId.Equals(setup.PlayerSquadId))
+-                        throw new ArgumentException("Soldier does not belong to the declared squad.");
+-            var s = new BattleSimState { Tick = 0, Outcome = ContractOutcome.Ongoing, Rng = new PurposeRng(seed), Arena = arena, Terrain = terrain, Context = setup.Context };
+-            s.Sides = new[] { new SideState { Morale = BattleRules.MoraleBase, CommanderHpPercent = 100 }, new SideState { Morale = BattleRules.MoraleBase, CommanderHpPercent = 100 } };
+-            s.PlayerCommanderId = setup.PlayerFormation != null && setup.PlayerFormation.Length > 0 ? setup.PlayerFormation[0].Unit : (setup.PlayerUnits != null && setup.PlayerUnits.Length > 0 ? setup.PlayerUnits[0].Id : new UnitId());
+-            s.EnemyCommanderId = setup.EnemyCommanderId;
+-            s.Heroes = string.IsNullOrEmpty(setup.PlayerHeroId.Value) ? new HeroState[0] : new[] { new HeroState { Id = setup.PlayerHeroId, Hp = 100, Cell = new GridCoord(1, 0) } };
+-            var roster = new List<RosterUnit>(); if (setup.PlayerUnits != null) roster.AddRange(setup.PlayerUnits); if (setup.EnemyUnits != null) roster.AddRange(setup.EnemyUnits);
+-            s.Arena.EnemyRetreatEdge = new GridCoord[s.Arena.Height - 2];
+-            for (var y = 0; y < s.Arena.EnemyRetreatEdge.Length; y++) s.Arena.EnemyRetreatEdge[y] = new GridCoord(s.Arena.Width - 1, y + 1);
+-            s.Units = new UnitState[roster.Count];
+-            for (var i = 0; i < roster.Count; i++) { var u = roster[i]; s.Units[i] = new UnitState { Id=u.Id, SoldierId=string.IsNullOrEmpty(u.SoldierId.Value) ? new SoldierId(u.Id.Value) : u.SoldierId, SquadId=u.SquadId, Side=u.Side, Hp=u.Hp, MaxHp=u.MaxHp, SurvivorCount=AggregateSurvivorRules.FromHp(u.Hp, u.MaxHp), Power=u.Power, RangeMin=u.RangeMin, RangeMax=u.RangeMax, MoveTicksPerCell=u.MoveTicksPerCell, AttackCooldownTicks=u.AttackCooldownTicks, Cell=new GridCoord(u.Side == 0 ? 1 : 10, i % 6 + 1), Facing=u.Side == 0 ? CardinalDirection.East : CardinalDirection.West, MoveTicksLeft=u.MoveTicksPerCell }; }
+-            var definitions = CardCatalog.All();
+-            var cardStates = new List<CardState>();
+-            for (var definitionIndex = 0; definitionIndex < definitions.Count; definitionIndex++)
+-            {
+-                var definition = definitions[definitionIndex];
+-                if (definition.Kind == CardKind.Stronghold)
+-                {
+-                    cardStates.Add(new CardState { Id = definition.Id });
+-                    continue;
++            if (command.AtSeconds < state.ElapsedSeconds)
++            {
++                return Reject(BattleRejectReason.TimestampMismatch);
++            }
++            if (command.Kind == BattleTickCommandKind.Deploy)
++            {
++                if (state.Deployed || command.Formation == null)
++                {
++                    return Reject(BattleRejectReason.BattleStarted);
+                 }
+-                for (var unitIndex = 0; unitIndex < s.Units.Length; unitIndex++)
+-                    if (s.Units[unitIndex].Side == 0) cardStates.Add(new CardState { OwnerUnitId = s.Units[unitIndex].Id, Id = definition.Id });
++                ValidateFormation(state.Arena.Navigation, command.Formation, state.Units);
++                state.Pending.Add(command);
++                return null;
+             }
+-            s.Cards = cardStates.ToArray();
+-            s.Squads = new[] { new SquadState { Id = setup.PlayerSquadId, CurrentOrder = BattleOrderKind.None, Formation = setup.PlayerFormation } };
+-            FormationResolver.Resolve(s, setup.EnemyFormation);
+-            if (terrain != null)
++            if (!state.Deployed)
+             {
+-                EnsureLandSpawnCells(s);
++                return Reject(BattleRejectReason.NotDeployed);
+             }
+-            s.PreviousHp = new int[s.Units.Length]; s.PreviousStates = new string[s.Units.Length];
+-            for (var i = 0; i < s.Units.Length; i++) { s.PreviousHp[i] = s.Units[i].Hp; s.PreviousStates[i] = s.Units[i].State; }
+-            var plans = setup.Telegraphs ?? new TelegraphPlan[0]; s.Telegraphs = new TelegraphState[plans.Length]; for (var i=0;i<plans.Length;i++) s.Telegraphs[i] = new TelegraphState { Cell=plans[i].Cell, ArrivalTick=plans[i].ArrivalTick, Count=plans[i].Count };
+-            s.PublishFrame();
+-            return s;
+-        }
+-        public static object PreviewCard(BattleSimState state, BattleTickCommand cmd)
+-        {
+-            CardValidation validation;
+-            return ValidateCard(state, cmd, out validation);
+-        }
+-        public static SquadOrderResult PreviewOrder(BattleSimState state, SquadOrder order)
+-        {
+-            var result = ValidateOrder(state, order);
+-            if (result.Rejection != null) return result;
+-            result.Order = order.Clone();
+-            return result;
+-        }
+-        public static SquadOrderResult ConfirmOrder(BattleSimState state, Ledger ledger, SquadOrder order)
+-        {
+-            var preview = PreviewOrder(state, order);
+-            if (!preview.Accepted && !preview.Conflict) return preview;
+-            if (state.AcceptedOrders.TryGetValue(order.CommandId.Value, out var existing))
++            if (state.Sides[0].CommandsLocked)
+             {
+-                if (OrderEquals(existing, order)) return new SquadOrderResult { Accepted = true, Order = existing.Clone() };
+-                return new SquadOrderResult { Conflict = true, Rejection = new ContractRejection { Reason = ContractRejectReason.CommandConflict, Detail = "commandId payload conflict" } };
++                return Reject(BattleRejectReason.CommandsLocked);
+             }
+-            for (var i = state.Pending.Count - 1; i >= 0; i--)
++            if (command.Kind == BattleTickCommandKind.DemandSurrender)
+             {
+-                var pending = state.Pending[i];
+-                for (var j = 0; j < order.ActorIds.Length; j++)
+-                    if (pending.ActorUnitId.Value == order.ActorIds[j]) { state.Pending.RemoveAt(i); break; }
++                UpdateCommanderState(state);
++                return state.Sides[1].SurrenderConditionsMet
++                    ? Queue(state, command)
++                    : Reject(BattleRejectReason.SurrenderConditionsUnmet);
+             }
+-            for (var i = 0; i < order.ActorIds.Length; i++)
++            if (command.Kind == BattleTickCommandKind.OrderRetreat)
+             {
+-                var oldActor = FindUnit(state, new UnitId(order.ActorIds[i]));
+-                if (oldActor != null) ClearOrder(oldActor);
+-                var oldHero = FindHero(state, order.ActorIds[i]);
+-                if (oldHero != null) { oldHero.OrderKind = BattleOrderKind.None; oldHero.OrderDestination = new GridCoord(); oldHero.OrderTargetUnitId = new UnitId(); }
++                return HasRetreatPath(state, 0)
++                    ? Queue(state, command)
++                    : Reject(BattleRejectReason.RetreatUnavailable);
+             }
+-            var snapshot = state.Clone();
+-            var ledgerCount = ledger.Events.Count;
+-            var commands = new List<BattleTickCommand>();
+-            for (var i = 0; i < order.ActorIds.Length; i++)
++
++            var actor = FindUnit(state, command.ActorUnitId);
++            if (actor == null || (actor.Side != 0 && !(enemy && actor.Side == 1)) || actor.Hp <= 0 || actor.Status != BattleUnitStatus.Active)
++            {
++                return Reject(BattleRejectReason.UnknownActor);
++            }
++            if (command.Kind == BattleTickCommandKind.Move)
+             {
+-                var actor = FindUnit(snapshot, new UnitId(order.ActorIds[i]));
+-                if (actor == null && FindHero(snapshot, order.ActorIds[i]) != null)
++                if (!ValidPath(state.Arena.Navigation, actor.Position, command.Destination, command.Path))
+                 {
+-                    var hero = FindHero(snapshot, order.ActorIds[i]);
+-                    hero.OrderKind = order.Kind; hero.OrderDestination = order.Destination; hero.OrderTargetUnitId = order.TargetUnitId;
+-                    continue;
++                    return Reject(BattleRejectReason.DestinationOffNav);
+                 }
+-                if (actor == null) return new SquadOrderResult { Rejection = new ContractRejection { Reason = ContractRejectReason.UnknownActor } };
+-                commands.Add(new BattleTickCommand { Id = new CommandId(order.CommandId.Value + ":" + i), Seq = i, At = new Tick(state.Tick), Kind = order.Kind == BattleOrderKind.Move ? BattleTickCommandKind.Move : BattleTickCommandKind.Attack, ActorUnitId = actor.Id, Target = order.Destination, TargetUnitId = order.TargetUnitId });
+             }
+-            for (var i = 0; i < commands.Count; i++)
++            else if (command.Kind == BattleTickCommandKind.Attack)
+             {
+-                var rejection = Submit(snapshot, ledger, commands[i]);
+-                if (rejection != null) return new SquadOrderResult { Rejection = (ContractRejection)rejection };
++                var target = FindUnit(state, command.TargetUnitId);
++                if (target == null || target.Side == actor.Side || target.Hp <= 0 || !CanBeTargeted(target.Status))
++                {
++                    return Reject(BattleRejectReason.InvalidTarget);
++                }
+             }
+-            state.Pending = snapshot.Pending;
+-            for (var i = 0; i < order.ActorIds.Length; i++)
++            else
+             {
+-                var targetHero = FindHero(state, order.ActorIds[i]);
+-                if (targetHero != null) { targetHero.OrderKind = order.Kind; targetHero.OrderDestination = order.Destination; targetHero.OrderTargetUnitId = order.TargetUnitId; }
++                return Reject(BattleRejectReason.MalformedCommand);
+             }
+-            while (ledger.Events.Count > ledgerCount) ledger.Events.RemoveAt(ledger.Events.Count - 1);
+-            state.Pending.Sort((a,b) => a.At.Value != b.At.Value ? a.At.Value.CompareTo(b.At.Value) : a.Seq.CompareTo(b.Seq));
+-            state.AcceptedOrders[order.CommandId.Value] = order.Clone();
+-            for (var i = 0; i < state.Heroes.Length; i++)
+-                for (var j = 0; j < order.ActorIds.Length; j++)
+-                    if (state.Heroes[i].Id.Value == order.ActorIds[j]) { state.Heroes[i].OrderKind = order.Kind; state.Heroes[i].OrderDestination = order.Destination; state.Heroes[i].OrderTargetUnitId = order.TargetUnitId; }
+-            return new SquadOrderResult { Accepted = true, Order = order.Clone() };
++
++            state.Pending.Add(command);
++            return null;
+         }
+-        public static SquadOrderResult StopOrder(BattleSimState state, Ledger ledger, CommandId commandId, string[] actorIds)
++
++        static void IssueEnemyCommands(BattleSimState state, double atSeconds)
+         {
+-            var stop = new SquadOrder { CommandId = commandId, ActorIds = actorIds, Kind = BattleOrderKind.None };
+-            for (var i = 0; i < actorIds.Length; i++)
++            var enemies = new List<UnitState>();
++            foreach (var unit in state.Units)
++                if (unit.Side == 1 && unit.Hp > 0 && unit.Status == BattleUnitStatus.Active) enemies.Add(unit);
++            enemies.Sort((left, right) => string.CompareOrdinal(left.Id.Value, right.Id.Value));
++            foreach (var enemy in enemies)
+             {
+-                var actor = FindUnit(state, new UnitId(actorIds[i]));
+-                if (!IsLivingPlayer(actor)) return new SquadOrderResult { Rejection = new ContractRejection { Reason = ContractRejectReason.UnknownActor } };
+-                ClearOrder(actor);
++                var target = FindUnit(state, enemy.OrderTargetUnitId);
++                if (target == null || target.Side != 0 || target.Hp <= 0 || !CanBeTargeted(target.Status))
++                    target = NearestLegalPlayer(state, enemy);
++                if (target != null)
++                {
++                    var distance = enemy.Position.DistanceSquaredTo(target.Position);
++                    var maxRange = (long)enemy.RangeMaxMm * enemy.RangeMaxMm;
++                    var minRange = (long)enemy.RangeMinMm * enemy.RangeMinMm;
++                    if (distance >= minRange && distance <= maxRange)
++                    {
++                        QueueEnemyCommand(state, new BattleTickCommand { AtSeconds = state.ElapsedSeconds, Kind = BattleTickCommandKind.Attack, ActorUnitId = enemy.Id, TargetUnitId = target.Id });
++                        continue;
++                    }
++                    NavPath path;
++                    if (TryBuildPath(state.Arena.Navigation, enemy.Position, target.Position, out path))
++                        QueueEnemyCommand(state, new BattleTickCommand { AtSeconds = state.ElapsedSeconds, Kind = BattleTickCommandKind.Move, ActorUnitId = enemy.Id, Destination = target.Position, Path = path });
++                }
++                else if (TryBuildPath(state.Arena.Navigation, enemy.Position, state.Arena.EnemyObjectivePosition, out var objectivePath))
++                    QueueEnemyCommand(state, new BattleTickCommand { AtSeconds = state.ElapsedSeconds, Kind = BattleTickCommandKind.Move, ActorUnitId = enemy.Id, Destination = state.Arena.EnemyObjectivePosition, Path = objectivePath });
+             }
+-            return new SquadOrderResult { Accepted = true, Order = stop };
+         }
+-        public static bool CancelOrder(BattleSimState state, CommandId commandId)
++
++        static void QueueEnemyCommand(BattleSimState state, BattleTickCommand command)
+         {
+-            if (state == null) return false;
+-            var removed = state.AcceptedOrders.Remove(commandId.Value);
+-            for (var i = state.Pending.Count - 1; i >= 0; i--)
+-                if (state.Pending[i].Id.Value.StartsWith(commandId.Value + ":", StringComparison.Ordinal)) { state.Pending.RemoveAt(i); removed = true; }
+-            return removed;
++            if (ValidateAndApply(state, command, true) == null)
++                ApplyCommand(state, command);
+         }
+-        static SquadOrderResult ValidateOrder(BattleSimState state, SquadOrder order)
++
++        static UnitState NearestLegalPlayer(BattleSimState state, UnitState enemy)
+         {
+-            if (state == null || order == null || order.ActorIds == null || order.ActorIds.Length == 0 || order.Kind == BattleOrderKind.None)
+-                return new SquadOrderResult { Rejection = new ContractRejection { Reason = ContractRejectReason.MalformedCommand } };
+-            if (state.Outcome != ContractOutcome.Ongoing) return new SquadOrderResult { Rejection = new ContractRejection { Reason = ContractRejectReason.BattleEnded } };
+-            var seen = new HashSet<string>(StringComparer.Ordinal);
+-            for (var i = 0; i < order.ActorIds.Length; i++)
++            UnitState result = null;
++            foreach (var unit in state.Units)
++                if (unit.Side == 0 && unit.Hp > 0 && CanBeTargeted(unit.Status)
++                    && (result == null || enemy.Position.DistanceSquaredTo(unit.Position) < enemy.Position.DistanceSquaredTo(result.Position)
++                        || (enemy.Position.DistanceSquaredTo(unit.Position) == enemy.Position.DistanceSquaredTo(result.Position)
++                            && string.CompareOrdinal(unit.Id.Value, result.Id.Value) < 0))) result = unit;
++            return result;
++        }
++
++        static bool TryBuildPath(NavPath navigation, BattlePositionMm origin, BattlePositionMm destination, out NavPath path)
++        {
++            path = null;
++            if (!TryFindNodeId(navigation, origin, out var originId) || !TryFindNodeId(navigation, destination, out var destinationId)) return false;
++            var previous = new Dictionary<string, string>(StringComparer.Ordinal) { [originId] = null };
++            var queue = new Queue<string>(); queue.Enqueue(originId);
++            while (queue.Count > 0)
+             {
+-                if (!seen.Add(order.ActorIds[i])) return new SquadOrderResult { Rejection = new ContractRejection { Reason = ContractRejectReason.MalformedCommand } };
+-                var actor = FindUnit(state, new UnitId(order.ActorIds[i]));
+-                if (actor == null && FindHero(state, order.ActorIds[i]) == null) return new SquadOrderResult { Rejection = new ContractRejection { Reason = ContractRejectReason.UnknownActor } };
+-                if (actor != null && !IsLivingPlayer(actor)) return new SquadOrderResult { Rejection = new ContractRejection { Reason = ContractRejectReason.UnknownActor } };
+-                if (order.Kind == BattleOrderKind.Move && !state.Arena.InBounds(order.Destination)) return new SquadOrderResult { Rejection = new ContractRejection { Reason = ContractRejectReason.CardDestinationOutOfBounds } };
+-                var target = FindUnit(state, order.TargetUnitId);
+-                if (order.Kind == BattleOrderKind.Attack && (target == null || target.Side != 1 || target.State != "Active" || target.Hp <= 0)) return new SquadOrderResult { Rejection = new ContractRejection { Reason = ContractRejectReason.UnknownActor } };
++                var current = queue.Dequeue();
++                var next = new List<NavSegment>();
++                foreach (var segment in navigation.Segments) if (segment.FromNodeId == current) next.Add(segment);
++                next.Sort((a, b) => string.CompareOrdinal(a.ToNodeId, b.ToNodeId));
++                foreach (var segment in next) if (previous.TryAdd(segment.ToNodeId, current)) queue.Enqueue(segment.ToNodeId);
+             }
+-            return new SquadOrderResult { Accepted = true };
++            if (!previous.ContainsKey(destinationId)) return false;
++            var ids = new List<string>(); for (var id = destinationId; id != null; id = previous[id]) ids.Add(id); ids.Reverse();
++            var segments = new List<NavSegment>(); for (var i = 1; i < ids.Count; i++) segments.Add(new NavSegment(ids[i - 1], ids[i]));
++            var nodes = new List<NavNode>(); foreach (var id in ids) { navigation.TryGetNode(id, out var node); nodes.Add(node); }
++            path = new NavPath(nodes, segments); return true;
+         }
+-        static HeroState FindHero(BattleSimState state, string id)
++
++        static BattleRejection Queue(BattleSimState state, BattleTickCommand command)
+         {
+-            if (state.Heroes == null) return null;
+-            for (var i = 0; i < state.Heroes.Length; i++) if (state.Heroes[i].Id.Value == id) return state.Heroes[i];
++            state.Pending.Add(command);
+             return null;
+         }
+-        static bool OrderEquals(SquadOrder a, SquadOrder b)
+-        {
+-            if (a.Kind != b.Kind || !a.Destination.Equals(b.Destination) || !a.TargetUnitId.Equals(b.TargetUnitId) || a.ActorIds.Length != b.ActorIds.Length) return false;
+-            for (var i = 0; i < a.ActorIds.Length; i++) if (a.ActorIds[i] != b.ActorIds[i]) return false;
+-            return true;
+-        }
+-        public static object Submit(BattleSimState state, Ledger ledger, BattleTickCommand cmd)
++
++        static void ApplyCommand(BattleSimState state, BattleTickCommand command)
+         {
+-            if (state == null || ledger == null || cmd == null) return new ContractRejection { Reason=ContractRejectReason.MalformedCommand };
+-            cmd = cmd.Clone();
+-            if (cmd.At.Value != state.Tick) return new ContractRejection { Reason=ContractRejectReason.TickMismatch };
+-            if (state.Outcome != ContractOutcome.Ongoing) return new ContractRejection { Reason=ContractRejectReason.BattleEnded };
+-            if (cmd.Kind == BattleTickCommandKind.DemandSurrender) { if (!OutcomeRules.CanEnemySurrender(state)) return new ContractRejection { Reason=ContractRejectReason.SurrenderConditionsUnmet }; state.Outcome=ContractOutcome.EnemySurrender; ClearAllOrders(state); ledger.Events.Add(new TypedEvent { Id=new EventId("bcmd-"+cmd.At.Value.ToString(CultureInfo.InvariantCulture)+"-"+cmd.Seq.ToString(CultureInfo.InvariantCulture)), At=cmd.At, CauseId=cmd.Id, SummaryHash=state.Fingerprint() }); return null; }
+-            if (cmd.Kind == BattleTickCommandKind.PlayCard)
++            if (command.Kind == BattleTickCommandKind.Deploy)
+             {
+-                CardValidation validation;
+-                var rejection = ValidateCard(state, cmd, out validation);
+-                if (rejection != null) return rejection;
+-                ApplyCard(state, cmd, validation);
++                for (var i = 0; i < command.Formation.Length; i++)
++                {
++                    var unit = FindUnit(state, command.Formation[i].Unit);
++                    unit.Position = command.Formation[i].Position;
++                    unit.Facing = command.Formation[i].Facing;
++                }
++                state.Deployed = true;
++                return;
+             }
+-            else if (!state.Deployed && cmd.Kind != BattleTickCommandKind.Deploy) return new ContractRejection { Reason=ContractRejectReason.NotDeployed };
+-            if (cmd.Kind == BattleTickCommandKind.SetFacing || cmd.Kind == BattleTickCommandKind.Move || cmd.Kind == BattleTickCommandKind.Attack)
++            if (command.Kind == BattleTickCommandKind.OrderRetreat)
+             {
+-                var rejection = ValidateActorCommand(state, cmd);
+-                if (rejection != null) return rejection;
++                if (HasRetreatPath(state, 0))
++                {
++                    state.Outcome = BattleOutcomeKind.PlayerRetreat;
++                }
++                return;
+             }
+-            if (cmd.Kind == BattleTickCommandKind.Deploy)
++            if (command.Kind == BattleTickCommandKind.DemandSurrender)
+             {
+-                var strongholds = cmd.StrongholdCardIds ?? cmd.StrongholdCards;
+-                if (strongholds != null && strongholds.Length > BattleRules.StrongholdCardSlots) return new ContractRejection { Reason=ContractRejectReason.MalformedCommand };
+-                if (strongholds != null) for (var i = 0; i < strongholds.Length; i++)
++                UpdateCommanderState(state);
++                if (state.Sides[1].SurrenderConditionsMet)
+                 {
+-                    var selected = CardCatalog.Find(strongholds[i]);
+-                    if (selected == null || selected.Kind != CardKind.Stronghold) return new ContractRejection { Reason=ContractRejectReason.MalformedCommand };
++                    state.Outcome = BattleOutcomeKind.EnemySurrender;
+                 }
+-                state.StrongholdCardIds = strongholds;
++                return;
++            }
++
++            var actor = FindUnit(state, command.ActorUnitId);
++            if (actor == null)
++            {
++                return;
++            }
++            if (command.Kind == BattleTickCommandKind.Move)
++            {
++                actor.OrderKind = BattleOrderKind.Move;
++                actor.OrderDestination = command.Destination;
++                actor.OrderTargetUnitId = new UnitId();
++                actor.ActivePath = command.Path;
++                actor.ActivePathSegmentIndex = 0;
++                actor.ActivePathSegmentProgressMm = 0d;
++            }
++            else if (command.Kind == BattleTickCommandKind.Attack)
++            {
++                actor.OrderKind = BattleOrderKind.Attack;
++                actor.OrderTargetUnitId = command.TargetUnitId;
++                actor.ActivePath = null;
++                actor.ActivePathSegmentIndex = 0;
++                actor.ActivePathSegmentProgressMm = 0d;
+             }
+-            if (cmd.Kind == BattleTickCommandKind.OrderRetreat && !IsActive(state, "passage-retreat"))
+-                return new ContractRejection { Reason=ContractRejectReason.RetreatUnavailable };
+-            state.Pending.Add(cmd); state.Pending.Sort((a,b) => a.At.Value != b.At.Value ? a.At.Value.CompareTo(b.At.Value) : a.Seq.CompareTo(b.Seq));
+-            if (cmd.Kind == BattleTickCommandKind.Deploy) { state.Deployed=true; FormationResolver.Resolve(state, cmd.Formation); }
+-            ledger.Events.Add(new TypedEvent { Id=new EventId("bcmd-"+cmd.At.Value.ToString(CultureInfo.InvariantCulture)+"-"+cmd.Seq.ToString(CultureInfo.InvariantCulture)), At=cmd.At, CauseId=cmd.Id, SummaryHash=state.Fingerprint() }); return null;
+-        }
+-        public static void Step(BattleSimState state, Ledger ledger)
+-        {
+-            Step(state, ledger, 1f / BattleRules.TicksPerSecond);
+         }
+ 
+-        public static void Step(BattleSimState state, Ledger ledger, float fixedDeltaTime)
++        static void MoveUnits(BattleSimState state, double seconds)
+         {
+-            if (state == null || ledger == null || state.Outcome != ContractOutcome.Ongoing) return;
+-            if (fixedDeltaTime <= 0f) throw new ArgumentOutOfRangeException(nameof(fixedDeltaTime));
+-            state.ElapsedSeconds += fixedDeltaTime;
+-            state.Pending.Sort((a,b) => a.At.Value != b.At.Value ? a.At.Value.CompareTo(b.At.Value) : a.Seq.CompareTo(b.Seq));
+-            while (state.Pending.Count > 0 && state.Pending[0].At.Value == state.Tick)
++            var units = new List<UnitState>(state.Units);
++            units.Sort((left, right) => string.CompareOrdinal(left.Id.Value, right.Id.Value));
++            for (var i = 0; i < units.Count; i++)
+             {
+-                var c = state.Pending[0]; state.Pending.RemoveAt(0);
+-                switch (c.Kind)
++                var unit = units[i];
++                if (unit.OrderKind != BattleOrderKind.Move || unit.Hp <= 0 || unit.Status != BattleUnitStatus.Active
++                    || unit.ActivePath == null)
+                 {
+-                    case BattleTickCommandKind.Deploy: break;
+-                    case BattleTickCommandKind.PlayCard: break;
+-                    case BattleTickCommandKind.OrderRetreat: state.Outcome = ContractOutcome.PlayerRetreat; break;
+-                    case BattleTickCommandKind.DemandSurrender: break;
+-                    case BattleTickCommandKind.SetFacing:
++                    continue;
++                }
++
++                var remaining = unit.MoveSpeedMillimetersPerSecond * seconds;
++                while (remaining > 0d && unit.ActivePathSegmentIndex < unit.ActivePath.Segments.Count)
++                {
++                    var segment = unit.ActivePath.Segments[unit.ActivePathSegmentIndex];
++                    NavNode from;
++                    NavNode to;
++                    if (!unit.ActivePath.TryGetNode(segment.FromNodeId, out from)
++                        || !unit.ActivePath.TryGetNode(segment.ToNodeId, out to))
+                     {
+-                        var actor = FindUnit(state, c.ActorUnitId);
+-                        if (IsLivingPlayer(actor)) actor.Facing = c.Facing;
++                        ClearMoveOrder(unit);
+                         break;
+                     }
+-                    case BattleTickCommandKind.Move:
++
++                    var segmentLength = DistanceMm(from.Position, to.Position);
++                    if (segmentLength <= 0d)
+                     {
+-                        var actor = FindUnit(state, c.ActorUnitId);
+-                        if (IsLivingPlayer(actor))
+-                        {
+-                            actor.OrderKind = BattleOrderKind.Move;
+-                            actor.OrderDestination = c.Target;
+-                            actor.OrderTargetUnitId = new UnitId();
+-                        }
+-                        break;
++                        unit.Position = to.Position;
++                        unit.ActivePathSegmentIndex++;
++                        unit.ActivePathSegmentProgressMm = 0d;
++                        continue;
+                     }
+-                    case BattleTickCommandKind.Attack:
++
++                    var available = segmentLength - unit.ActivePathSegmentProgressMm;
++                    var advance = Math.Min(remaining, available);
++                    unit.ActivePathSegmentProgressMm += advance;
++                    remaining -= advance;
++                    unit.Position = Interpolate(from.Position, to.Position, unit.ActivePathSegmentProgressMm / segmentLength);
++                    unit.Facing = BattleFacing.FromDelta(to.Position.X - from.Position.X, to.Position.Z - from.Position.Z);
++
++                    if (unit.ActivePathSegmentProgressMm + 0.0000001d >= segmentLength)
+                     {
+-                        var actor = FindUnit(state, c.ActorUnitId);
+-                        if (IsLivingPlayer(actor))
+-                        {
+-                            actor.OrderKind = BattleOrderKind.Attack;
+-                            actor.OrderDestination = new GridCoord();
+-                            actor.OrderTargetUnitId = c.TargetUnitId;
+-                        }
+-                        break;
++                        unit.Position = to.Position;
++                        unit.ActivePathSegmentIndex++;
++                        unit.ActivePathSegmentProgressMm = 0d;
+                     }
+-                    default: throw new ArgumentOutOfRangeException();
+-                }
+-            }
+-            ClearUnavailableActorOrders(state);
+-            ReinforcementRules.Resolve(state); if (state.Outcome != ContractOutcome.Ongoing) { ClearAllOrders(state); TickCards(state); ledger.Events.Add(new TypedEvent { Id=new EventId("btick-"+state.Tick.ToString(CultureInfo.InvariantCulture)), At=new Tick(state.Tick), SummaryHash=state.Fingerprint() }); state.Tick++; return; }
+-            var previousElapsed = state.ElapsedSeconds - fixedDeltaTime;
+-            var enemyDecisionInterval = 0.5f;
+-            var enemyDecisionDue = (int)Math.Floor(state.ElapsedSeconds / enemyDecisionInterval) > (int)Math.Floor(previousElapsed / enemyDecisionInterval);
+-            if (enemyDecisionDue) ResolveEnemyIntent(state);
+-            IntentPlanner.Resolve(state); ResolveIndividualCombat(state, fixedDeltaTime); MoraleRules.Resolve(state); state.Sides[1].RetreatCovered = OutcomeRules.RetreatCovered(state);
+-            if (state.Sides[1].Morale <= BattleRules.MoraleLock && HasLivingSide(state, 0)) state.Outcome = ContractOutcome.PlayerRout;
+-            else OutcomeRules.Resolve(state); ClearInvalidOrders(state);
+-            TickCards(state);
+-            ledger.Events.Add(new TypedEvent { Id=new EventId("btick-"+state.Tick.ToString(CultureInfo.InvariantCulture)), At=new Tick(state.Tick), SummaryHash=state.Fingerprint() }); state.Tick++;
+-            state.PublishFrame();
+-        }
++                }
+ 
+-        static void ValidateRoster(RosterUnit[] roster, int side)
+-        {
+-            if (roster == null) return;
+-            if (roster.Length > 20) throw new ArgumentException("A squad may contain at most 20 soldiers.");
+-            var ids = new HashSet<string>(StringComparer.Ordinal);
+-            for (var i = 0; i < roster.Length; i++)
+-                if (roster[i] == null || roster[i].Side != side || string.IsNullOrEmpty(roster[i].Id.Value) || !ids.Add(roster[i].Id.Value))
+-                    throw new ArgumentException("Roster contains an invalid, duplicate, or mismatched soldier.");
++                if (unit.ActivePathSegmentIndex >= unit.ActivePath.Segments.Count)
++                {
++                    unit.Position = unit.OrderDestination;
++                    ClearMoveOrder(unit);
++                }
++            }
+         }
+ 
+-        static void ResolveIndividualCombat(BattleSimState state, float fixedDeltaTime)
++        static void ResolveSoldierSpacing(BattleSimState state)
+         {
+-            var damage = new int[state.Units.Length];
+-            var attackers = new List<UnitState>(state.Units);
+-            attackers.Sort((a, b) => string.CompareOrdinal(a.Id.Value, b.Id.Value));
+-            for (var i = 0; i < attackers.Count; i++)
++            var units = new List<UnitState>();
++            for (var i = 0; i < state.Units.Length; i++)
+             {
+-                var attacker = attackers[i];
+-                if (attacker.CooldownTicksLeft > 0)
+-                    attacker.CooldownTicksLeft = Math.Max(0, attacker.CooldownTicksLeft - Math.Max(1, (int)Math.Round(fixedDeltaTime * BattleRules.TicksPerSecond)));
+-                if (attacker.State != "Active" || attacker.Hp <= 0 || attacker.CooldownTicksLeft > 0) continue;
+-                var targets = new List<int>();
+-                for (var j = 0; j < state.Units.Length; j++) targets.Add(j);
+-                targets.Sort((a, b) =>
++                if (state.Units[i].Hp > 0 && state.Units[i].Status == BattleUnitStatus.Active)
++                {
++                    units.Add(state.Units[i]);
++                }
++            }
++            units.Sort((left, right) => string.CompareOrdinal(left.Id.Value, right.Id.Value));
++
++            for (var pass = 0; pass < units.Count; pass++)
++            {
++                var changed = false;
++                for (var leftIndex = 0; leftIndex < units.Count; leftIndex++)
++                {
++                    for (var rightIndex = leftIndex + 1; rightIndex < units.Count; rightIndex++)
++                    {
++                        changed |= SeparatePair(state.Arena.Navigation, units[leftIndex], units[rightIndex]);
++                    }
++                }
++                if (!changed)
+                 {
+-                    var left = state.Units[a]; var right = state.Units[b];
+-                    var distance = attacker.Cell.ManhattanTo(left.Cell).CompareTo(attacker.Cell.ManhattanTo(right.Cell));
+-                    return distance != 0 ? distance : string.CompareOrdinal(left.Id.Value, right.Id.Value);
+-                });
+-                for (var j = 0; j < targets.Count; j++)
+-                {
+-                    var target = state.Units[targets[j]];
+-                    if (target.Side == attacker.Side || target.State != "Active" || target.Hp <= 0) continue;
+-                    var distance = attacker.Cell.ManhattanTo(target.Cell);
+-                    if (distance < attacker.RangeMin || distance > attacker.RangeMax || !HasLineOfSight(state, attacker.Cell, target.Cell)) continue;
+-                    if (attacker.OrderKind == BattleOrderKind.Attack && !attacker.OrderTargetUnitId.Equals(target.Id)) continue;
+-                    state.Rng.Consume(RngPurpose.Battle);
+-                    damage[targets[j]] += attacker.Power;
+-                    attacker.CooldownTicksLeft = attacker.AttackCooldownTicks;
+                     break;
+                 }
+             }
+-            for (var i = 0; i < state.Units.Length; i++)
++        }
++
++        static bool SeparatePair(NavPath navigation, UnitState left, UnitState right)
++        {
++            var deltaX = (long)right.Position.X - left.Position.X;
++            var deltaZ = (long)right.Position.Z - left.Position.Z;
++            var required = (long)left.RadiusMm + right.RadiusMm;
++            var distanceSquared = deltaX * deltaX + deltaZ * deltaZ;
++            if (distanceSquared >= required * required)
+             {
+-                if (damage[i] <= 0) continue;
+-                var unit = state.Units[i];
+-                unit.Hp = Math.Max(0, unit.Hp - damage[i]);
+-                unit.SurvivorCount = Math.Min(unit.SurvivorCount, unit.Hp <= 0 ? 0 : (int)((4L * unit.Hp + unit.MaxHp - 1L) / unit.MaxHp));
+-                if (unit.Hp == 0) unit.State = "Down";
++                return false;
++            }
++
++            if (distanceSquared == 0)
++            {
++                deltaX = string.CompareOrdinal(left.Id.Value, right.Id.Value) <= 0 ? 1L : -1L;
++                deltaZ = 0L;
+             }
++
++            var distance = Math.Sqrt(deltaX * deltaX + deltaZ * deltaZ);
++            var overlap = required - distance;
++            var unitX = deltaX / distance;
++            var unitZ = deltaZ / distance;
++            var half = overlap / 2d;
++            var leftCandidate = Offset(left.Position, -unitX * half, -unitZ * half);
++            var rightCandidate = Offset(right.Position, unitX * half, unitZ * half);
++            var leftLegal = IsOnNavigation(navigation, leftCandidate);
++            var rightLegal = IsOnNavigation(navigation, rightCandidate);
++
++            if (leftLegal && rightLegal)
++            {
++                left.Position = leftCandidate;
++                right.Position = rightCandidate;
++                return true;
++            }
++
++            if (leftLegal)
++            {
++                left.Position = Offset(left.Position, -unitX * overlap, -unitZ * overlap);
++                return IsOnNavigation(navigation, left.Position);
++            }
++
++            if (rightLegal)
++            {
++                right.Position = Offset(right.Position, unitX * overlap, unitZ * overlap);
++                return IsOnNavigation(navigation, right.Position);
++            }
++
++            return false;
+         }
+ 
+-        static void ResolveEnemyIntent(BattleSimState state)
++        static BattlePositionMm Offset(BattlePositionMm position, double deltaX, double deltaZ)
+         {
+-            var enemies = new List<UnitState>(state.Units);
+-            enemies.Sort((a, b) => string.CompareOrdinal(a.Id.Value, b.Id.Value));
+-            for (var i = 0; i < enemies.Count; i++)
++            return new BattlePositionMm(
++                checked(position.X + (int)Math.Ceiling(deltaX)),
++                position.Y,
++                checked(position.Z + (int)Math.Ceiling(deltaZ)));
++        }
++
++        static bool IsOnNavigation(NavPath navigation, BattlePositionMm position)
++        {
++            if (navigation.Contains(position))
+             {
+-                var enemy = enemies[i];
+-                if (enemy.Side != 1 || enemy.State != "Active" || enemy.Hp <= 0) continue;
+-                var target = FindUnit(state, enemy.OrderTargetUnitId);
+-                if (!IsLivingPlayer(target)) target = NearestLivingPlayer(state, enemy);
+-                if (!IsLivingPlayer(target)) target = BattlefieldTargetAnchor(state, enemy);
+-                if (target == null) continue;
+-                enemy.OrderKind = BattleOrderKind.Attack;
+-                enemy.OrderTargetUnitId = target.Id;
++                return true;
++            }
++
++            for (var i = 0; i < navigation.Segments.Count; i++)
++            {
++                if (!navigation.TryGetNode(navigation.Segments[i].FromNodeId, out var from)
++                    || !navigation.TryGetNode(navigation.Segments[i].ToNodeId, out var to))
++                {
++                    continue;
++                }
++
++                var segmentX = (long)to.Position.X - from.Position.X;
++                var segmentZ = (long)to.Position.Z - from.Position.Z;
++                var pointX = (long)position.X - from.Position.X;
++                var pointZ = (long)position.Z - from.Position.Z;
++                if (segmentX * pointZ != segmentZ * pointX)
++                {
++                    continue;
++                }
++
++                var dot = pointX * segmentX + pointZ * segmentZ;
++                var lengthSquared = segmentX * segmentX + segmentZ * segmentZ;
++                if (dot >= 0 && dot <= lengthSquared && position.Y == from.Position.Y)
++                {
++                    return true;
++                }
+             }
++            return false;
+         }
+ 
+-        static UnitState NearestLivingPlayer(BattleSimState state, UnitState actor)
++        static void ClearMoveOrder(UnitState unit)
++        {
++            unit.OrderKind = BattleOrderKind.None;
++            unit.ActivePath = null;
++            unit.ActivePathSegmentIndex = 0;
++            unit.ActivePathSegmentProgressMm = 0d;
++        }
++
++        static void ResolveAttacks(BattleSimState state, double seconds)
+         {
+-            UnitState best = null; var distance = int.MaxValue;
+             for (var i = 0; i < state.Units.Length; i++)
+             {
+-                var candidate = state.Units[i]; if (!IsLivingPlayer(candidate)) continue;
+-                var d = actor.Cell.ManhattanTo(candidate.Cell);
+-                if (d < distance || d == distance && string.CompareOrdinal(candidate.Id.Value, best == null ? string.Empty : best.Id.Value) < 0) { best = candidate; distance = d; }
++                var attacker = state.Units[i];
++                attacker.AttackCooldownSecondsRemaining = Math.Max(0d, attacker.AttackCooldownSecondsRemaining - seconds);
++                if (attacker.OrderKind != BattleOrderKind.Attack || attacker.AttackCooldownSecondsRemaining > 0d
++                    || attacker.Hp <= 0 || attacker.Status != BattleUnitStatus.Active)
++                {
++                    continue;
++                }
++
++                var target = FindUnit(state, attacker.OrderTargetUnitId);
++                if (target == null || target.Side == attacker.Side || target.Hp <= 0 || !CanBeTargeted(target.Status))
++                {
++                    continue;
++                }
++
++                var distanceSquared = attacker.Position.DistanceSquaredTo(target.Position);
++                var rangeMinSquared = (long)attacker.RangeMinMm * attacker.RangeMinMm;
++                var rangeMaxSquared = (long)attacker.RangeMaxMm * attacker.RangeMaxMm;
++                if (distanceSquared < rangeMinSquared || distanceSquared > rangeMaxSquared)
++                {
++                    continue;
++                }
++
++                target.Hp = Math.Max(0, target.Hp - attacker.Power);
++                target.SurvivorCount = AggregateSurvivorRules.FromHp(target.Hp, target.MaxHp);
++                if (target.Hp == 0)
++                {
++                    target.Status = BattleUnitStatus.Down;
++                }
++                attacker.AttackCooldownSecondsRemaining = attacker.AttackCooldownSeconds;
+             }
+-            return best;
+         }
+ 
+-        static UnitState BattlefieldTargetAnchor(BattleSimState state, UnitState actor)
++        static void ResolveMorale(BattleSimState state, double seconds)
+         {
+-            var best = NearestLivingPlayer(state, actor);
+-            return best;
++            for (var i = 0; i < state.Sides.Length; i++)
++            {
++                state.Sides[i].Morale = Math.Min(
++                    state.Definition.MoraleRecoverCap,
++                    state.Sides[i].Morale + (int)Math.Floor(state.Definition.MoraleRecoveryPerSecond * seconds));
++            }
+         }
+ 
+-        static bool HasLivingSide(BattleSimState state, int side)
++        static void UpdateCommanderState(BattleSimState state)
++        {
++            state.Sides[0].CommanderHpPercent = CommanderHpPercent(state, state.PlayerCommanderId);
++            state.Sides[1].CommanderHpPercent = CommanderHpPercent(state, state.EnemyCommanderId);
++            state.Sides[0].RetreatCovered = HasRetreatPath(state, 0);
++            state.Sides[1].RetreatCovered = HasRetreatPath(state, 1);
++        }
++
++        static int CommanderHpPercent(BattleSimState state, UnitId commanderId)
++        {
++            var commander = FindUnit(state, commanderId);
++            return commander == null || commander.MaxHp <= 0
++                ? 0
++                : (int)Math.Max(0L, Math.Min(100L, (100L * commander.Hp) / commander.MaxHp));
++        }
++
++        static bool HasRetreatPath(BattleSimState state, int side)
+         {
+-            for (var i = 0; i < state.Units.Length; i++) if (state.Units[i].Side == side && state.Units[i].State != "Down" && state.Units[i].Hp > 0) return true;
++            var anchors = side == 0 ? state.Arena.PlayerRetreatAnchors : state.Arena.EnemyRetreatAnchors;
++            if (anchors == null || anchors.Length == 0)
++            {
++                return false;
++            }
++
++            for (var i = 0; i < state.Units.Length; i++)
++            {
++                var unit = state.Units[i];
++                if (unit.Side != side || unit.Hp <= 0 || !CanRetreat(unit.Status))
++                {
++                    continue;
++                }
++                for (var anchorIndex = 0; anchorIndex < anchors.Length; anchorIndex++)
++                {
++                    if (HasNavigationRoute(state.Arena.Navigation, unit.Position, anchors[anchorIndex]))
++                    {
++                        return true;
++                    }
++                }
++            }
+             return false;
+         }
+ 
+-        static bool HasLineOfSight(BattleSimState state, GridCoord from, GridCoord to)
++        static void ResolveOutcome(BattleSimState state)
+         {
+-            if (state.Terrain == null) return true;
+-            var dx = Math.Sign(to.X - from.X); var dy = Math.Sign(to.Y - from.Y);
+-            var x = from.X + dx; var y = from.Y + dy;
+-            while (x != to.X || y != to.Y)
++            var player = HasLivingSide(state, 0);
++            var enemy = HasLivingSide(state, 1);
++            if (!player && !enemy)
+             {
+-                if (state.Terrain.IsWater(x, y)) return false;
+-                x += dx; y += dy;
++                state.Outcome = BattleOutcomeKind.Draw;
++            }
++            else if (!player)
++            {
++                state.Outcome = BattleOutcomeKind.EnemyVictory;
++            }
++            else if (!enemy)
++            {
++                state.Outcome = BattleOutcomeKind.PlayerVictory;
+             }
+-            return true;
+         }
+-        static void TickCards(BattleSimState state)
++
++        static bool ValidPath(NavPath navigation, BattlePositionMm origin, BattlePositionMm destination, NavPath path)
+         {
+-            if (state.Cards == null) return;
+-            for (var i = 0; i < state.Cards.Length; i++)
++            if (navigation == null || path == null || path.Segments.Count == 0)
++            {
++                return false;
++            }
++
++            NavNode firstFrom;
++            NavNode finalTo;
++            if (!path.TryGetNode(path.Segments[0].FromNodeId, out firstFrom)
++                || !path.TryGetNode(path.Segments[path.Segments.Count - 1].ToNodeId, out finalTo)
++                || !firstFrom.Position.Equals(origin)
++                || !finalTo.Position.Equals(destination))
++            {
++                return false;
++            }
++
++            for (var i = 0; i < path.Segments.Count; i++)
+             {
+-                if (state.Cards[i].RechargeTicksLeft > 0) state.Cards[i].RechargeTicksLeft--;
+-                if (state.Cards[i].ActiveTicksLeft > 0) state.Cards[i].ActiveTicksLeft--;
++                var segment = path.Segments[i];
++                NavNode from;
++                NavNode to;
++                NavNode authoredFrom;
++                NavNode authoredTo;
++                if (!path.TryGetNode(segment.FromNodeId, out from)
++                    || !path.TryGetNode(segment.ToNodeId, out to)
++                    || !navigation.TryGetNode(segment.FromNodeId, out authoredFrom)
++                    || !navigation.TryGetNode(segment.ToNodeId, out authoredTo)
++                    || !from.Position.Equals(authoredFrom.Position)
++                    || !to.Position.Equals(authoredTo.Position)
++                    || !ContainsSegment(navigation, segment.FromNodeId, segment.ToNodeId))
++                {
++                    return false;
++                }
++                if (i > 0 && !string.Equals(path.Segments[i - 1].ToNodeId, segment.FromNodeId, StringComparison.Ordinal))
++                {
++                    return false;
++                }
+             }
++            return true;
+         }
+-        sealed class CardValidation
++
++        static bool ContainsSegment(NavPath navigation, string fromNodeId, string toNodeId)
+         {
+-            public CardDefinition Definition;
+-            public CardState State;
+-            public UnitState Owner;
+-            public UnitState Target;
+-            public GridCoord Destination;
++            for (var i = 0; i < navigation.Segments.Count; i++)
++            {
++                var segment = navigation.Segments[i];
++                if (string.Equals(segment.FromNodeId, fromNodeId, StringComparison.Ordinal)
++                    && string.Equals(segment.ToNodeId, toNodeId, StringComparison.Ordinal))
++                {
++                    return true;
++                }
++            }
++            return false;
+         }
+-        static object ValidateCard(BattleSimState state, BattleTickCommand cmd, out CardValidation validation)
++
++        static bool HasNavigationRoute(NavPath navigation, BattlePositionMm origin, BattlePositionMm destination)
+         {
+-            validation = null;
+-            if (state == null || cmd == null || cmd.Kind != BattleTickCommandKind.PlayCard)
+-                return new ContractRejection { Reason = ContractRejectReason.MalformedCommand };
+-            if (cmd.At.Value != state.Tick) return new ContractRejection { Reason = ContractRejectReason.TickMismatch };
+-            if (state.Outcome != ContractOutcome.Ongoing) return new ContractRejection { Reason = ContractRejectReason.BattleEnded };
+-            if (!state.Deployed) return new ContractRejection { Reason = ContractRejectReason.NotDeployed };
+-            if (state.Sides != null && state.Sides.Length > 0 && state.Sides[0].CommandsLocked)
+-                return new ContractRejection { Reason = ContractRejectReason.CommandsLocked };
+-            if (string.IsNullOrEmpty(cmd.CardId)) return new ContractRejection { Reason = ContractRejectReason.MalformedCommand };
+-            var definition = CardCatalog.Find(cmd.CardId);
+-            if (definition == null) return new ContractRejection { Reason = ContractRejectReason.CardUnknown };
+-            if (definition.Kind == CardKind.Stronghold && !Contains(state.StrongholdCardIds, definition.Id))
+-                return new ContractRejection { Reason = ContractRejectReason.CardUnknown };
++            if (origin.Equals(destination))
++            {
++                return true;
++            }
+ 
+-            UnitState owner = null;
+-            if (definition.Kind == CardKind.Character)
++            string originId;
++            string destinationId;
++            if (!TryFindNodeId(navigation, origin, out originId) || !TryFindNodeId(navigation, destination, out destinationId))
+             {
+-                if (string.IsNullOrEmpty(cmd.OwnerUnitId.Value)) return new ContractRejection { Reason = ContractRejectReason.CardOwnerRequired };
+-                owner = FindUnit(state, cmd.OwnerUnitId);
+-                if (!IsLivingPlayer(owner)) return new ContractRejection { Reason = ContractRejectReason.CardInvalidOwner };
++                return false;
+             }
+-            else if (!string.IsNullOrEmpty(cmd.OwnerUnitId.Value))
++
++            var visited = new HashSet<string>(StringComparer.Ordinal) { originId };
++            var queue = new Queue<string>();
++            queue.Enqueue(originId);
++            while (queue.Count > 0)
+             {
+-                owner = FindUnit(state, cmd.OwnerUnitId);
+-                if (!IsLivingPlayer(owner)) return new ContractRejection { Reason = ContractRejectReason.CardInvalidOwner };
++                var current = queue.Dequeue();
++                for (var i = 0; i < navigation.Segments.Count; i++)
++                {
++                    var segment = navigation.Segments[i];
++                    if (!string.Equals(segment.FromNodeId, current, StringComparison.Ordinal) || !visited.Add(segment.ToNodeId))
++                    {
++                        continue;
++                    }
++                    if (string.Equals(segment.ToNodeId, destinationId, StringComparison.Ordinal))
++                    {
++                        return true;
++                    }
++                    queue.Enqueue(segment.ToNodeId);
++                }
+             }
++            return false;
++        }
+ 
+-            UnitState target = null;
+-            if (!string.IsNullOrEmpty(cmd.TargetUnitId.Value))
++        static bool TryFindNodeId(NavPath navigation, BattlePositionMm position, out string id)
++        {
++            for (var i = 0; i < navigation.Nodes.Count; i++)
+             {
+-                target = FindUnit(state, cmd.TargetUnitId);
+-                if (!IsLivingPlayer(target)) return new ContractRejection { Reason = ContractRejectReason.CardInvalidTarget };
++                if (navigation.Nodes[i].Position.Equals(position))
++                {
++                    id = navigation.Nodes[i].Id;
++                    return true;
++                }
+             }
+-            if (definition.EffectKey == "cardinal_reposition" && target == null)
+-                return new ContractRejection { Reason = ContractRejectReason.CardInvalidTarget };
+-            if (target == null) target = owner ?? FindUnit(state, state.PlayerCommanderId);
+-            if (!IsLivingPlayer(target)) return new ContractRejection { Reason = ContractRejectReason.CardInvalidTarget };
++            id = null;
++            return false;
++        }
++
++        static void ValidateRoster(RosterUnit[] roster, int side)
++        {
++            if (roster.Length > 20)
++            {
++                throw new ArgumentException("A battle side cannot contain more than 20 soldiers.");
++            }
++
++            var squadCounts = new Dictionary<string, int>(StringComparer.Ordinal);
++            var ids = new HashSet<string>(StringComparer.Ordinal);
++            for (var i = 0; i < roster.Length; i++)
++            {
++                var unit = roster[i];
++                if (unit == null || unit.Side != side || string.IsNullOrEmpty(unit.Id.Value) || !ids.Add(unit.Id.Value)
++                    || string.IsNullOrEmpty(unit.SoldierId.Value) || unit.MaxHp <= 0 || unit.Hp < 0 || unit.Hp > unit.MaxHp || unit.RadiusMm <= 0
++                    || unit.MoveMillimetersPerSecond <= 0 || unit.AttackCooldownSeconds < 0d
++                    || unit.RangeMinMm < 0 || unit.RangeMaxMm < unit.RangeMinMm || !unit.InitialStatus.HasValue)
++                {
++                    throw new ArgumentException("Roster contains invalid or incomplete authored unit data.");
++                }
+ 
+-            var radiusOrigin = definition.Kind == CardKind.Character
+-                ? owner
+-                : FindUnit(state, state.PlayerCommanderId);
+-            if (!IsLivingPlayer(radiusOrigin)
+-                || radiusOrigin.Cell.ManhattanTo(target.Cell) > BattleRules.CommandRadius)
+-                return new ContractRejection { Reason = ContractRejectReason.CardOutOfRadius };
++                var squadId = unit.SquadId.Value ?? string.Empty;
++                squadCounts.TryGetValue(squadId, out var squadCount);
++                squadCount++;
++                if (squadCount > 20)
++                {
++                    throw new ArgumentException("A squad cannot contain more than 20 soldiers.");
++                }
++                squadCounts[squadId] = squadCount;
++            }
++        }
+ 
+-            var cardState = FindCardState(state, definition, cmd.OwnerUnitId);
+-            if (cardState == null) return new ContractRejection { Reason = ContractRejectReason.CardUnknown };
+-            if (cardState.RechargeTicksLeft > 0) return new ContractRejection { Reason = ContractRejectReason.CardRecharging };
++        static void ValidateUniqueSoldierIds(RosterUnit[] player, RosterUnit[] enemy)
++        {
++            var soldierIds = new HashSet<string>(StringComparer.Ordinal);
++            ValidateUniqueSoldierIds(player, soldierIds);
++            ValidateUniqueSoldierIds(enemy, soldierIds);
++        }
+ 
+-            var destination = target.Cell;
+-            if (definition.EffectKey == "cardinal_reposition")
++        static void ValidateUniqueSoldierIds(RosterUnit[] roster, HashSet<string> soldierIds)
++        {
++            for (var i = 0; i < roster.Length; i++)
+             {
+-                destination = target.Cell.Step(cmd.Facing);
+-                if (!state.Arena.InBounds(destination) || state.Terrain != null && state.Terrain.MoveCost(target.Cell, destination) < 0)
+-                    return new ContractRejection { Reason = ContractRejectReason.CardDestinationOutOfBounds };
+-                if (Occupied(state, destination)) return new ContractRejection { Reason = ContractRejectReason.CardDestinationBlocked };
++                var soldierId = roster[i].SoldierId.Value;
++                if (!string.IsNullOrEmpty(soldierId) && !soldierIds.Add(soldierId))
++                {
++                    throw new ArgumentException("Soldier ids must be unique across the complete battle roster.");
++                }
+             }
++        }
+ 
+-            validation = new CardValidation { Definition = definition, State = cardState, Owner = owner, Target = target, Destination = destination };
+-            return null;
++        static void ValidateCommander(RosterUnit[] roster, UnitId commanderId, string side)
++        {
++            if (string.IsNullOrEmpty(commanderId.Value) || FindRoster(roster, commanderId) == null)
++            {
++                throw new ArgumentException(side + " commander must reference an authored roster unit.");
++            }
+         }
+-        static void ApplyCard(BattleSimState state, BattleTickCommand cmd, CardValidation validation)
++
++        static void ValidateRetreatAnchors(NavPath navigation, BattlePositionMm[] anchors)
+         {
+-            var card = validation.Definition;
+-            validation.State.RechargeTicksLeft = card.RechargeTicks;
+-            if (card.EffectKey == "front_damage" || card.EffectKey == "retreat")
+-                validation.State.ActiveTicksLeft = BattleRules.CardEffectTicks;
+-            if (card.EffectKey == "morale") state.Sides[0].Morale += card.Effect;
+-            if (card.EffectKey == "front_heal")
+-                validation.Target.Hp = System.Math.Min(validation.Target.MaxHp, validation.Target.Hp + card.Effect);
+-            if (card.EffectKey == "cardinal_reposition")
++            if (anchors == null)
+             {
+-                validation.Target.Cell = validation.Destination;
+-                validation.Target.Facing = cmd.Facing;
++                return;
++            }
++            for (var i = 0; i < anchors.Length; i++)
++            {
++                if (!navigation.Contains(anchors[i]))
++                {
++                    throw new ArgumentException("Retreat anchors must reference authored navigation positions.");
++                }
+             }
+         }
+-        static object ValidateActorCommand(BattleSimState state, BattleTickCommand cmd)
++
++        static void ValidateFormation(NavPath navigation, FormationSlot[] formation, RosterUnit[] roster)
+         {
+-            if (state.Sides != null && state.Sides.Length > 0 && state.Sides[0].CommandsLocked)
+-                return new ContractRejection { Reason = ContractRejectReason.CommandsLocked };
+-            var actor = FindUnit(state, cmd.ActorUnitId);
+-            if (!IsLivingPlayer(actor)) return new ContractRejection { Reason = ContractRejectReason.UnknownActor };
+-            if (cmd.Kind == BattleTickCommandKind.Move)
++            var ids = new HashSet<string>(StringComparer.Ordinal);
++            for (var i = 0; i < formation.Length; i++)
+             {
+-                if (!state.Arena.InBounds(cmd.Target)
+-                    || state.Terrain != null && state.Terrain.IsWater(cmd.Target.X, cmd.Target.Y))
+-                    return new ContractRejection { Reason = ContractRejectReason.CardDestinationOutOfBounds };
+-                if (Occupied(state, cmd.Target, actor))
+-                    return new ContractRejection { Reason = ContractRejectReason.CardDestinationBlocked };
++                var slot = formation[i];
++                if (slot == null || !navigation.Contains(slot.Position) || !ids.Add(slot.Unit.Value) || FindRoster(roster, slot.Unit) == null)
++                {
++                    throw new ArgumentException("Formation contains invalid authored position or unit.");
++                }
+             }
+-            if (cmd.Kind == BattleTickCommandKind.Attack)
++            if (ids.Count != roster.Length)
+             {
+-                var target = FindUnit(state, cmd.TargetUnitId);
+-                if (target == null || target.Side == actor.Side || target.State != "Active" || target.Hp <= 0)
+-                    return new ContractRejection { Reason = ContractRejectReason.CardInvalidTarget };
++                throw new ArgumentException("Formation must explicitly place every unit.");
+             }
+-            return null;
+         }
+-        static CardState FindCardState(BattleSimState state, CardDefinition definition, UnitId ownerUnitId)
++
++        static void ValidateFormation(NavPath navigation, FormationSlot[] formation, UnitState[] units)
+         {
+-            if (state.Cards == null) return null;
+-            for (var i = 0; i < state.Cards.Length; i++)
++            var ids = new HashSet<string>(StringComparer.Ordinal);
++            for (var i = 0; i < formation.Length; i++)
+             {
+-                var card = state.Cards[i];
+-                if (card.Id != definition.Id) continue;
+-                if (definition.Kind == CardKind.Stronghold || card.OwnerUnitId.Equals(ownerUnitId)) return card;
++                if (formation[i] == null || !navigation.Contains(formation[i].Position) || !ids.Add(formation[i].Unit.Value)
++                    || FindUnit(units, formation[i].Unit) == null)
++                {
++                    throw new ArgumentException("Formation contains invalid authored position or unit.");
++                }
++            }
++            if (ids.Count != units.Length)
++            {
++                throw new ArgumentException("Formation must explicitly place every unit.");
+             }
+-            return null;
+         }
+-        static UnitState FindUnit(BattleSimState state, UnitId id)
++
++        static HeroState[] CreateHeroes(BattleSetup setup)
+         {
+-            if (state.Units == null) return null;
+-            for (var i = 0; i < state.Units.Length; i++) if (state.Units[i].Id.Equals(id)) return state.Units[i];
+-            return null;
++            var heroes = new List<HeroState>();
++            AddHero(heroes, setup.PlayerHeroId, setup.PlayerHero, "Player");
++            AddHero(heroes, setup.EnemyHeroId, setup.EnemyHero, "Enemy");
++            return heroes.ToArray();
+         }
+-        static bool IsLivingPlayer(UnitState unit)
++
++        static void AddHero(List<HeroState> heroes, HeroId expectedId, HeroDefinition definition, string side)
+         {
+-            return unit != null && unit.Side == 0 && unit.State == "Active" && unit.Hp > 0;
++            if (string.IsNullOrEmpty(expectedId.Value))
++            {
++                if (definition != null)
++                {
++                    throw new ArgumentException(side + " hero definition requires an explicit hero id.");
++                }
++                return;
++            }
++            if (definition == null || !definition.Id.Equals(expectedId)
++                || definition.MaxHp <= 0 || definition.Hp < 0 || definition.Hp > definition.MaxHp)
++            {
++                throw new ArgumentException(side + " hero must be explicitly authored with matching id and valid HP.");
++            }
++
++            heroes.Add(new HeroState
++            {
++                Id = definition.Id,
++                Hp = definition.Hp,
++                Position = definition.Position,
++                Facing = definition.Facing
++            });
+         }
+-        static bool Occupied(BattleSimState state, GridCoord cell)
++
++        static UnitState[] CreateUnits(RosterUnit[] player, RosterUnit[] enemy, FormationSlot[] playerFormation, FormationSlot[] enemyFormation)
+         {
+-            return Occupied(state, cell, null);
++            var all = new List<UnitState>();
++            AddUnits(all, player, playerFormation);
++            AddUnits(all, enemy, enemyFormation);
++            return all.ToArray();
+         }
+-        static bool Occupied(BattleSimState state, GridCoord cell, UnitState except)
++
++        static void AddUnits(List<UnitState> output, RosterUnit[] roster, FormationSlot[] formation)
+         {
+-            for (var i = 0; i < state.Units.Length; i++)
++            for (var i = 0; i < roster.Length; i++)
+             {
+-                var unit = state.Units[i];
+-                if (ReferenceEquals(unit, except)) continue;
+-                if (unit.State != "Down" && unit.State != "Routing" && unit.Hp > 0 && unit.Cell.Equals(cell)) return true;
++                var unit = roster[i];
++                var slot = FindSlot(formation, unit.Id);
++                output.Add(new UnitState
++                {
++                    Id = unit.Id,
++                    SoldierId = unit.SoldierId,
++                    SquadId = unit.SquadId,
++                    Side = unit.Side,
++                    Position = slot.Position,
++                    Facing = slot.Facing,
++                    Hp = unit.Hp,
++                    MaxHp = unit.MaxHp,
++                    SurvivorCount = AggregateSurvivorRules.FromHp(unit.Hp, unit.MaxHp),
++                    Power = unit.Power,
++                    RangeMinMm = unit.RangeMinMm,
++                    RangeMaxMm = unit.RangeMaxMm,
++                    RadiusMm = unit.RadiusMm,
++                    MoveSpeedMillimetersPerSecond = unit.MoveMillimetersPerSecond,
++                    AttackCooldownSeconds = unit.AttackCooldownSeconds,
++                    Status = unit.InitialStatus.Value
++                });
+             }
+-            return false;
+         }
+-        static void ClearUnavailableActorOrders(BattleSimState state)
++
++        static TelegraphState[] CreateTelegraphs(TelegraphPlan[] plans)
+         {
+-            for (var i = 0; i < state.Units.Length; i++)
++            if (plans == null)
+             {
+-                var unit = state.Units[i];
+-                if (unit.OrderKind == BattleOrderKind.None) continue;
+-                if (unit.State != "Active" || unit.Hp <= 0
+-                    || unit.Side >= 0 && unit.Side < state.Sides.Length && state.Sides[unit.Side].CommandsLocked)
+-                    ClearOrder(unit);
++                return new TelegraphState[0];
++            }
++            var result = new TelegraphState[plans.Length];
++            for (var i = 0; i < plans.Length; i++)
++            {
++                result[i] = new TelegraphState
++                {
++                    Position = plans[i].Position,
++                    ElapsedSeconds = 0d,
++                    DurationSeconds = plans[i].ArrivalSeconds,
++                    Count = plans[i].Count
++                };
+             }
++            return result;
+         }
+-        static void ClearInvalidOrders(BattleSimState state)
++
++        static PurposeRng CreateRng(BattleContext context)
+         {
+-            if (state.Outcome != ContractOutcome.Ongoing)
++            var seedHash = context.SeedIdentityHash ?? context.ContextHash ?? string.Empty;
++            var seed = unchecked((int)uint.Parse(
++                CoreApi.StableHashHex(seedHash).Substring(0, 8),
++                NumberStyles.HexNumber,
++                CultureInfo.InvariantCulture));
++            return new PurposeRng(seed);
++        }
++
++        static UnitState FindUnit(BattleSimState state, UnitId id)
++        {
++            return FindUnit(state.Units, id);
++        }
++
++        static UnitState FindUnit(UnitState[] units, UnitId id)
++        {
++            for (var i = 0; i < units.Length; i++)
+             {
+-                ClearAllOrders(state);
+-                return;
++                if (units[i].Id.Equals(id))
++                {
++                    return units[i];
++                }
+             }
+-            ClearUnavailableActorOrders(state);
+-            for (var i = 0; i < state.Units.Length; i++)
++            return null;
++        }
++
++        static RosterUnit FindRoster(RosterUnit[] roster, UnitId id)
++        {
++            for (var i = 0; i < roster.Length; i++)
+             {
+-                var unit = state.Units[i];
+-                if (unit.OrderKind != BattleOrderKind.Attack) continue;
+-                var target = FindUnit(state, unit.OrderTargetUnitId);
+-                if (target == null || target.Side == unit.Side || target.State != "Active" || target.Hp <= 0)
+-                    ClearOrder(unit);
++                if (roster[i].Id.Equals(id))
++                {
++                    return roster[i];
++                }
+             }
++            return null;
+         }
+-        static void ClearAllOrders(BattleSimState state)
++
++        static FormationSlot FindSlot(FormationSlot[] formation, UnitId id)
+         {
+-            state.Pending.Clear();
+-            if (state.Units == null) return;
+-            for (var i = 0; i < state.Units.Length; i++) ClearOrder(state.Units[i]);
++            for (var i = 0; i < formation.Length; i++)
++            {
++                if (formation[i].Unit.Equals(id))
++                {
++                    return formation[i];
++                }
++            }
++            return null;
+         }
+-        static void ClearOrder(UnitState unit)
++
++        static int CompareCommands(BattleTickCommand left, BattleTickCommand right)
+         {
+-            unit.OrderKind = BattleOrderKind.None;
+-            unit.OrderDestination = new GridCoord();
+-            unit.OrderTargetUnitId = new UnitId();
++            var time = left.AtSeconds.CompareTo(right.AtSeconds);
++            return time != 0 ? time : left.Seq.CompareTo(right.Seq);
+         }
+-        static void EnsureLandSpawnCells(BattleSimState state)
++
++        static bool HasLivingSide(BattleSimState state, int side)
+         {
+             for (var i = 0; i < state.Units.Length; i++)
+             {
+                 var unit = state.Units[i];
+-                if (!state.Terrain.IsWater(unit.Cell.X, unit.Cell.Y)) continue;
+-                for (var y = 0; y < state.Arena.Height; y++) for (var x = 0; x < state.Arena.Width; x++)
++                if (unit.Side == side && unit.Hp > 0 && CanRetreat(unit.Status))
+                 {
+-                    var candidate = new GridCoord(x, y);
+-                    if (!state.Terrain.IsWater(x, y) && !Occupied(state, candidate)) { unit.Cell = candidate; x = state.Arena.Width; y = state.Arena.Height; }
++                    return true;
+                 }
+             }
++            return false;
+         }
+-        static bool Contains(string[] values, string value)
++
++        static bool CanBeTargeted(BattleUnitStatus status)
+         {
+-            if (values == null) return false;
+-            for (var i = 0; i < values.Length; i++) if (values[i] == value) return true;
+-            return false;
++            return status != BattleUnitStatus.Down && status != BattleUnitStatus.Dead;
+         }
+-        static bool IsActive(BattleSimState state, string cardId)
++
++        static bool CanRetreat(BattleUnitStatus status)
+         {
+-            if (state.Cards == null) return false;
+-            for (var i = 0; i < state.Cards.Length; i++)
+-                if (state.Cards[i].Id == cardId && state.Cards[i].ActiveTicksLeft > 0) return true;
+-            return false;
++            return status != BattleUnitStatus.Down && status != BattleUnitStatus.Dead;
++        }
++
++        static double DistanceMm(BattlePositionMm from, BattlePositionMm to)
++        {
++            return Math.Sqrt(from.DistanceSquaredTo(to));
++        }
++
++        static BattlePositionMm Interpolate(BattlePositionMm from, BattlePositionMm to, double ratio)
++        {
++            ratio = Math.Max(0d, Math.Min(1d, ratio));
++            return new BattlePositionMm(
++                InterpolateCoordinate(from.X, to.X, ratio),
++                InterpolateCoordinate(from.Y, to.Y, ratio),
++                InterpolateCoordinate(from.Z, to.Z, ratio));
++        }
++
++        static int InterpolateCoordinate(int from, int to, double ratio)
++        {
++            return checked(from + (int)Math.Round((to - (long)from) * ratio, MidpointRounding.AwayFromZero));
++        }
++
++        static BattlePositionMm[] ClonePositions(BattlePositionMm[] positions)
++        {
++            return positions == null ? null : (BattlePositionMm[])positions.Clone();
+         }
+-        public static BattleSnapshot Snapshot(BattleSimState s) { var x=new BattleSnapshot { RulesVersion=s.Context == null ? string.Empty : s.Context.RulesVersion, Tick=s.Tick, Outcome=s.Outcome, Sides=new BattleSnapshot.SideSnapshot[s.Sides.Length], Units=new BattleSnapshot.UnitSnapshot[s.Units.Length], Telegraphs=new BattleSnapshot.TelegraphView[s.Telegraphs.Length], Cards=new BattleSnapshot.CardView[s.Cards == null ? 0 : s.Cards.Length] }; for(var i=0;i<x.Cards.Length;i++) x.Cards[i]=new BattleSnapshot.CardView {OwnerUnitId=s.Cards[i].OwnerUnitId,Id=s.Cards[i].Id,RechargeTicksLeft=s.Cards[i].RechargeTicksLeft,ActiveTicksLeft=s.Cards[i].ActiveTicksLeft}; for(var i=0;i<s.Telegraphs.Length;i++) x.Telegraphs[i]=new BattleSnapshot.TelegraphView {Cell=s.Telegraphs[i].Cell, ArrivalTick=s.Telegraphs[i].ArrivalTick, Count=s.Telegraphs[i].Count}; for(var i=0;i<s.Sides.Length;i++) x.Sides[i]=new BattleSnapshot.SideSnapshot {Morale=s.Sides[i].Morale,CommanderHpPercent=s.Sides[i].CommanderHpPercent,RetreatCovered=s.Sides[i].RetreatCovered,CommandsLocked=s.Sides[i].CommandsLocked}; for(var i=0;i<s.Units.Length;i++) x.Units[i]=new BattleSnapshot.UnitSnapshot {Id=s.Units[i].Id,Side=s.Units[i].Side,Cell=s.Units[i].Cell,Facing=s.Units[i].Facing,Hp=s.Units[i].Hp,SurvivorCount=s.Units[i].SurvivorCount,State=s.Units[i].State,OrderKind=s.Units[i].OrderKind,OrderDestination=s.Units[i].OrderDestination,OrderTargetUnitId=s.Units[i].OrderTargetUnitId,MoveTicksLeft=s.Units[i].MoveTicksLeft,AttackCooldownTicksLeft=s.Units[i].CooldownTicksLeft}; return x; }
+-        public static BattleResult Result(BattleSimState s) { if (s == null) throw new ArgumentNullException(nameof(s)); var hp = new Dictionary<string, int>(); if (s.Units != null) for (var i=0;i<s.Units.Length;i++) if (s.Units[i].Id.ToString() == RealtimeBattleApi.PersistentAllyId) hp[RealtimeBattleApi.PersistentAllyId] = s.Units[i].Hp; return new BattleResult {Outcome=s.Outcome,FinalTick=s.Tick,BattleId=s.Context != null ? s.Context.BattleId : string.Empty,ResultHash=CoreApi.StableHashHex((int)s.Outcome+";"+s.Tick+";"+s.Fingerprint()+";" ),UnitHp=new UnitHpSnapshot(hp)}; }
+-        public static (BattleSimState, Ledger) Replay(BattleSetup setup, IReadOnlyList<BattleTickCommand> commands, int maxTicks)
++
++        static BattleRejection Reject(BattleRejectReason reason, string detail = null)
+         {
+-            if (setup == null) throw new ArgumentNullException(nameof(setup));
+-            if (setup.Context == null || setup.Context.RulesVersion != BattleRules.RulesVersion)
+-                throw new NotSupportedException("Unsupported battle replay rules version '" + (setup.Context == null ? string.Empty : setup.Context.RulesVersion) + "'.");
+-            var s=Open(setup); var l=new Ledger(); var a=new List<BattleTickCommand>(commands??new BattleTickCommand[0]); a.Sort((x,y)=>x.At.Value!=y.At.Value?x.At.Value.CompareTo(y.At.Value):x.Seq.CompareTo(y.Seq)); var next=0; for(var i=0;i<maxTicks&&s.Outcome==ContractOutcome.Ongoing;i++){ while(next<a.Count&&a[next].At.Value==s.Tick){var command=a[next]; var rejection=Submit(s,l,command); if(rejection!=null) throw new InvalidOperationException("Replay command '"+command.Id+"' rejected: "+((ContractRejection)rejection).Reason); next++;} Step(s,l); } return (s,l);
++            return new BattleRejection { Reason = reason, Detail = detail };
+         }
+     }
+ }
+diff --git a/GAME/Assets/Janseon/Core/Battle/Sim/BattleSimState.cs b/GAME/Assets/Janseon/Core/Battle/Sim/BattleSimState.cs
+index f8e39704..c8c2465c 100644
+--- a/GAME/Assets/Janseon/Core/Battle/Sim/BattleSimState.cs
++++ b/GAME/Assets/Janseon/Core/Battle/Sim/BattleSimState.cs
+@@ -1,5 +1,6 @@
+ using System;
+ using System.Collections.Generic;
++using System.Globalization;
+ using Janseon.Core;
+ using Janseon.Core.Battle.Contracts;
+ 
+@@ -7,11 +8,21 @@ namespace Janseon.Core.Battle.Sim
+ {
+     public struct IntPointMm : IEquatable<IntPointMm>
+     {
+-        public int X; public int Y;
+-        public IntPointMm(int x, int y) { X = x; Y = y; }
++        public int X;
++        public int Y;
++
++        public IntPointMm(int x, int y)
++        {
++            X = x;
++            Y = y;
++        }
++
+         public bool Equals(IntPointMm other) => X == other.X && Y == other.Y;
++
+         public override bool Equals(object obj) => obj is IntPointMm && Equals((IntPointMm)obj);
++
+         public override int GetHashCode() => (X * 397) ^ Y;
++
+         public override string ToString() => X + "," + Y;
+     }
+ 
+@@ -19,135 +30,287 @@ namespace Janseon.Core.Battle.Sim
+     {
+         public static int FromHp(int hp, int maxHp)
+         {
+-            if (hp <= 0 || maxHp <= 0) return 0;
+-            return System.Math.Min(4, (int)((4L * hp + maxHp - 1L) / maxHp));
++            if (hp <= 0 || maxHp <= 0)
++            {
++                return 0;
++            }
++
++            return Math.Min(4, (int)((4L * hp + maxHp - 1L) / maxHp));
+         }
+     }
+ 
+     public sealed class BattleSimState
+     {
+-        public int Tick;
+         public bool Deployed;
+         public UnitState[] Units;
++        public HeroState[] Heroes = new HeroState[0];
++        public SquadState[] Squads = new SquadState[0];
+         public SideState[] Sides;
+         public TelegraphState[] Telegraphs;
+         public List<BattleTickCommand> Pending = new List<BattleTickCommand>();
+-        public Janseon.Core.Battle.Contracts.BattleOutcomeKind Outcome;
++        public BattleOutcomeKind Outcome;
+         public PurposeRng Rng;
++        public BattleDefinition Definition;
++        public BattleContext Context;
+         public ArenaState Arena;
+         public Heightmap Terrain;
+         public UnitId PlayerCommanderId;
+         public UnitId EnemyCommanderId;
+         public int[] PreviousHp;
+-        public string[] PreviousStates;
++        public BattleUnitStatus[] PreviousStatuses;
+         public bool[] CommanderBelowHalf;
+-        public CardState[] Cards;
+-        public string[] StrongholdCardIds;
+-        public BattleContext Context;
+-        public float ElapsedSeconds;
+-        public UnitState[] Soldiers => Units ?? new UnitState[0];
+-        public HeroState[] Heroes = new HeroState[0];
+-        public SquadState[] Squads = new SquadState[0];
++        public double ElapsedSeconds;
++        public double NextEnemyDecisionSeconds;
+         public BattleFrame Frame { get; private set; }
+         public string SpatialHash;
+         public Dictionary<IntPointMm, List<UnitId>> SpatialBuckets = new Dictionary<IntPointMm, List<UnitId>>();
+         public Dictionary<string, SquadOrder> AcceptedOrders = new Dictionary<string, SquadOrder>(StringComparer.Ordinal);
+ 
++        public UnitState[] Soldiers => Units ?? new UnitState[0];
++
+         public void PublishFrame()
+         {
+-            var units = Units == null ? new UnitState[0] : Array.ConvertAll(Units, x => x.Clone());
+-            Frame = new BattleFrame(ElapsedSeconds, Tick, units);
++            var units = Units == null ? new UnitState[0] : Array.ConvertAll(Units, unit => unit.Clone());
++            Frame = new BattleFrame(ElapsedSeconds, units);
+         }
+ 
+-
+         public BattleSimState Clone()
+         {
+-            var c = new BattleSimState { Tick=Tick, Deployed=Deployed, Outcome=Outcome, ElapsedSeconds=ElapsedSeconds, Rng=Rng == null ? null : Rng.Clone(), Arena=Arena == null ? null : Arena.Clone(), Terrain=Terrain == null ? null : Terrain.Snapshot(), SpatialHash=SpatialHash, SpatialBuckets=new Dictionary<IntPointMm, List<UnitId>>() };
+-            foreach (var pair in SpatialBuckets) c.SpatialBuckets[pair.Key] = new List<UnitId>(pair.Value);
+-            c.Units = Units == null ? null : Array.ConvertAll(Units, x => x.Clone());
+-            c.Heroes = Heroes == null ? null : Array.ConvertAll(Heroes, x => x.Clone());
+-            c.Sides = Sides == null ? null : Array.ConvertAll(Sides, x => x.Clone());
+-            c.Telegraphs = Telegraphs == null ? null : Array.ConvertAll(Telegraphs, x => x.Clone());
+-            c.Pending = Pending == null ? new List<BattleTickCommand>() : new List<BattleTickCommand>(Pending.ConvertAll(x => x.Clone()));
+-            c.PlayerCommanderId = PlayerCommanderId; c.EnemyCommanderId = EnemyCommanderId;
+-            c.PreviousHp = PreviousHp == null ? null : (int[])PreviousHp.Clone();
+-            c.PreviousStates = PreviousStates == null ? null : (string[])PreviousStates.Clone();
+-            c.CommanderBelowHalf = CommanderBelowHalf == null ? null : (bool[])CommanderBelowHalf.Clone();
+-            c.Cards = Cards == null ? null : System.Array.ConvertAll(Cards, x => x.Clone());
+-            c.StrongholdCardIds = StrongholdCardIds == null ? null : (string[])StrongholdCardIds.Clone();
+-            c.Context = Context;
+-            foreach (var pair in AcceptedOrders) c.AcceptedOrders[pair.Key] = pair.Value.Clone();
+-            return c;
++            var clone = new BattleSimState
++            {
++                Deployed = Deployed,
++                Outcome = Outcome,
++                Rng = Rng == null ? null : Rng.Clone(),
++                Definition = Definition,
++                Context = Context,
++                Arena = Arena == null ? null : Arena.Clone(),
++                Terrain = Terrain == null ? null : Terrain.Snapshot(),
++                PlayerCommanderId = PlayerCommanderId,
++                EnemyCommanderId = EnemyCommanderId,
++                ElapsedSeconds = ElapsedSeconds,
++                NextEnemyDecisionSeconds = NextEnemyDecisionSeconds,
++                SpatialHash = SpatialHash,
++                SpatialBuckets = new Dictionary<IntPointMm, List<UnitId>>()
++            };
++
++            foreach (var pair in SpatialBuckets)
++            {
++                clone.SpatialBuckets[pair.Key] = new List<UnitId>(pair.Value);
++            }
++
++            clone.Units = Units == null ? null : Array.ConvertAll(Units, unit => unit.Clone());
++            clone.Heroes = Heroes == null ? null : Array.ConvertAll(Heroes, hero => hero.Clone());
++            clone.Squads = Squads == null ? null : Array.ConvertAll(Squads, squad => squad.Clone());
++            clone.Sides = Sides == null ? null : Array.ConvertAll(Sides, side => side.Clone());
++            clone.Telegraphs = Telegraphs == null ? null : Array.ConvertAll(Telegraphs, telegraph => telegraph.Clone());
++            clone.Pending = Pending == null
++                ? new List<BattleTickCommand>()
++                : new List<BattleTickCommand>(Pending.ConvertAll(command => command.Clone()));
++            clone.PreviousHp = PreviousHp == null ? null : (int[])PreviousHp.Clone();
++            clone.PreviousStatuses = PreviousStatuses == null ? null : (BattleUnitStatus[])PreviousStatuses.Clone();
++            clone.CommanderBelowHalf = CommanderBelowHalf == null ? null : (bool[])CommanderBelowHalf.Clone();
++            clone.Frame = Frame == null ? null : Frame.Clone();
++
++            foreach (var pair in AcceptedOrders)
++            {
++                clone.AcceptedOrders[pair.Key] = pair.Value.Clone();
++            }
++
++            return clone;
+         }
++
+         public string Fingerprint()
+         {
+-            var s = "rules=" + (Context == null ? string.Empty : Context.RulesVersion) + ";" + Tick + ";" + (int)Outcome + ";" + Deployed;
+-            if (Heroes != null) for (var i=0; i<Heroes.Length; i++) { var h=Heroes[i]; s += ";hero=" + h.Id + ":" + h.Cell + ":" + h.Hp + ":" + (int)h.OrderKind + ":" + h.OrderDestination + ":" + h.OrderTargetUnitId; }
+-            if (Units != null) for (var i=0; i<Units.Length; i++) { var u=Units[i]; s += ";" + u.Id + ":" + u.Cell + ":" + (int)u.Facing + ":" + u.Hp + ":" + u.SurvivorCount + ":" + u.State + ":" + u.MoveTicksLeft + ":" + u.CooldownTicksLeft + ":" + (int)u.OrderKind + ":" + u.OrderDestination + ":" + u.OrderTargetUnitId; }
+-            if (Terrain != null) s += ";terrain=" + Terrain.Fingerprint();
+-            if (Sides != null) for (var i=0; i<Sides.Length; i++) { var x=Sides[i]; s += ";m" + x.Morale + ":" + x.CommandsLocked; }
+-            if (Cards != null) for (var i=0; i<Cards.Length; i++) { var card=Cards[i]; s += ";c" + card.OwnerUnitId + ":" + card.Id + ":" + card.RechargeTicksLeft + ":" + card.ActiveTicksLeft; }
+-            if (StrongholdCardIds != null) for (var i=0; i<StrongholdCardIds.Length; i++) s += ";sh" + StrongholdCardIds[i];
+-            if (Pending != null) for (var i=0; i<Pending.Count; i++) { var command=Pending[i]; s += ";p" + command.At + ":" + command.Seq + ":" + (int)command.Kind + ":" + command.CardId + ":" + command.ActorUnitId + ":" + command.OwnerUnitId + ":" + command.TargetUnitId + ":" + command.Target + ":" + (int)command.Facing; }
+-            return CoreApi.StableHashHex(s);
++            var value = "rules=" + (Context == null ? string.Empty : Context.RulesVersion)
++                + ";elapsed=" + ElapsedSeconds.ToString("R", CultureInfo.InvariantCulture)
++                + ";nextEnemyDecision=" + NextEnemyDecisionSeconds.ToString("R", CultureInfo.InvariantCulture)
++                + ";outcome=" + (int)Outcome
++                + ";deployed=" + Deployed;
++
++            if (Heroes != null)
++            {
++                foreach (var hero in Heroes)
++                {
++                    value += ";hero=" + hero.Id + ":" + hero.Position + ":" + hero.Facing + ":" + hero.Hp
++                        + ":" + (int)hero.OrderKind + ":" + hero.OrderDestination + ":" + hero.OrderTargetUnitId;
++                }
++            }
++
++            if (Units != null)
++            {
++                foreach (var unit in Units)
++                {
++                    value += ";unit=" + unit.Id + ":" + unit.Position + ":" + unit.Facing + ":" + unit.Hp
++                        + ":" + unit.SurvivorCount + ":" + (int)unit.Status
++                        + ":" + unit.AttackCooldownSeconds.ToString("R", CultureInfo.InvariantCulture)
++                        + ":" + unit.AttackCooldownSecondsRemaining.ToString("R", CultureInfo.InvariantCulture)
++                        + ":" + (int)unit.OrderKind + ":" + unit.OrderDestination + ":" + unit.OrderTargetUnitId
++                        + ":" + unit.ActivePathSegmentIndex + ":" + unit.ActivePathSegmentProgressMm.ToString("R", CultureInfo.InvariantCulture);
++                }
++            }
++
++            if (Terrain != null)
++            {
++                value += ";terrain=" + Terrain.Fingerprint();
++            }
++
++            if (Arena != null)
++            {
++                value += ";enemyObjective=" + Arena.EnemyObjectivePosition;
++            }
++
++            if (Sides != null)
++            {
++                foreach (var side in Sides)
++                {
++                    value += ";side=" + side.Morale + ":" + side.CommanderHpPercent + ":" + side.RetreatCovered
++                        + ":" + side.SurrenderConditionsMet + ":" + side.CommandsLocked;
++                }
++            }
++
++            if (Pending != null)
++            {
++                foreach (var command in Pending)
++                {
++                    value += ";pending=" + command.AtSeconds.ToString("R", CultureInfo.InvariantCulture) + ":" + command.Seq + ":" + (int)command.Kind
++                        + ":" + command.ActorUnitId + ":" + command.TargetUnitId
++                        + ":" + command.Destination + ":" + command.Facing;
++                }
++            }
++
++            return CoreApi.StableHashHex(value);
+         }
+     }
+-    public sealed class CardState
+-    {
+-        public UnitId OwnerUnitId; public string Id; public int RechargeTicksLeft; public int ActiveTicksLeft;
+-        public CardState Clone() { return (CardState)MemberwiseClone(); }
+-    }
++
+     public sealed class UnitState
+     {
+-        public UnitId Id; public SoldierId SoldierId; public SquadId SquadId; public HeroId HeroId; public int Side; public GridCoord Cell; public CardinalDirection Facing;
+-        public int Hp; public int MaxHp; public int SurvivorCount; public int Power; public int RangeMin; public int RangeMax;
+-        public IntPointMm PositionMm; public int RadiusMm = 500;
+-        public int MoveTicksPerCell; public int MoveTicksLeft; public int AttackCooldownTicks; public int CooldownTicksLeft; public string State = "Active";
+-        public BattleOrderKind OrderKind; public GridCoord OrderDestination; public UnitId OrderTargetUnitId;
+-        public UnitState Clone() { return (UnitState)MemberwiseClone(); }
++        public UnitId Id;
++        public SoldierId SoldierId;
++        public SquadId SquadId;
++        public HeroId HeroId;
++        public int Side;
++        public BattlePositionMm Position;
++        public BattleFacing Facing;
++        public BattlePositionMm OrderDestination;
++        public UnitId OrderTargetUnitId;
++        public BattleOrderKind OrderKind;
++        public BattleUnitStatus Status;
++        public int Hp;
++        public int MaxHp;
++        public int SurvivorCount;
++        public int Power;
++        public int RangeMinMm;
++        public int RangeMaxMm;
++        public int RadiusMm;
++        public int MoveSpeedMillimetersPerSecond;
++        public double AttackCooldownSeconds;
++        public double AttackCooldownSecondsRemaining;
++        public NavPath ActivePath;
++        public int ActivePathSegmentIndex;
++        public double ActivePathSegmentProgressMm;
++
++        public UnitState Clone()
++        {
++            return (UnitState)MemberwiseClone();
++        }
+     }
++
+     public sealed class BattleFrame
+     {
+-        public readonly float ElapsedSeconds;
+-        public readonly int Tick;
++        public readonly double ElapsedSeconds;
+         public readonly UnitState[] Units;
+-        public BattleFrame(float elapsedSeconds, int tick, UnitState[] units)
++
++        public BattleFrame(double elapsedSeconds, UnitState[] units)
+         {
+             ElapsedSeconds = elapsedSeconds;
+-            Tick = tick;
+             Units = units ?? new UnitState[0];
+         }
++
++        public BattleFrame Clone()
++        {
++            var units = Units == null ? new UnitState[0] : Array.ConvertAll(Units, unit => unit.Clone());
++            return new BattleFrame(ElapsedSeconds, units);
++        }
+     }
++
+     public sealed class HeroState
+     {
+         public HeroId Id;
+         public int Hp;
+-        public GridCoord Cell;
++        public BattlePositionMm Position;
++        public BattleFacing Facing;
+         public BattleOrderKind OrderKind;
+-        public GridCoord OrderDestination;
++        public BattlePositionMm OrderDestination;
+         public UnitId OrderTargetUnitId;
+-        public HeroState Clone() => new HeroState { Id = Id, Hp = Hp, Cell = Cell, OrderKind = OrderKind, OrderDestination = OrderDestination, OrderTargetUnitId = OrderTargetUnitId };
++
++        public HeroState Clone() => new HeroState
++        {
++            Id = Id,
++            Hp = Hp,
++            Position = Position,
++            Facing = Facing,
++            OrderKind = OrderKind,
++            OrderDestination = OrderDestination,
++            OrderTargetUnitId = OrderTargetUnitId
++        };
+     }
++
+     public sealed class SquadState
+     {
+         public SquadId Id;
+         public BattleOrderKind CurrentOrder;
+         public FormationSlot[] Formation;
++
++        public SquadState Clone() => new SquadState
++        {
++            Id = Id,
++            CurrentOrder = CurrentOrder,
++            Formation = Formation == null ? null : (FormationSlot[])Formation.Clone()
++        };
+     }
++
+     public sealed class SideState
+     {
+-        public int Morale; public int CommanderHpPercent; public bool RetreatCovered; public bool CommandsLocked;
+-        public SideState Clone() { return (SideState)MemberwiseClone(); }
++        public int Morale;
++        public int CommanderHpPercent;
++        public bool RetreatCovered;
++        public bool SurrenderConditionsMet;
++        public bool CommandsLocked;
++
++        public SideState Clone() => (SideState)MemberwiseClone();
+     }
++
+     public sealed class TelegraphState
+     {
+-        public GridCoord Cell; public int ArrivalTick; public int Count; public bool Arrived;
+-        public TelegraphState Clone() { return (TelegraphState)MemberwiseClone(); }
++        public BattlePositionMm Position;
++        public double ElapsedSeconds;
++        public double DurationSeconds;
++        public int Count;
++        public bool Completed;
++
++        public TelegraphState Clone() => (TelegraphState)MemberwiseClone();
+     }
++
+     public sealed class ArenaState
+     {
+-        public int Width = 12; public int Height = 8; public GridCoord[] PlayerDeployZone; public GridCoord[] EnemyDeployZone; public GridCoord[] EnemyRetreatEdge;
+-        public ArenaState Clone() { return new ArenaState { Width=Width, Height=Height, PlayerDeployZone=PlayerDeployZone == null ? null : (GridCoord[])PlayerDeployZone.Clone(), EnemyDeployZone=EnemyDeployZone == null ? null : (GridCoord[])EnemyDeployZone.Clone(), EnemyRetreatEdge=EnemyRetreatEdge == null ? null : (GridCoord[])EnemyRetreatEdge.Clone() }; }
+-        public bool InBounds(GridCoord c) { return c.X >= 0 && c.X < Width && c.Y >= 0 && c.Y < Height; }
++        public NavPath Navigation;
++        public BattlePositionMm[] PlayerDeploymentPositions;
++        public BattlePositionMm[] EnemyDeploymentPositions;
++        public BattlePositionMm[] PlayerRetreatAnchors;
++        public BattlePositionMm[] EnemyRetreatAnchors;
++        public BattlePositionMm EnemyObjectivePosition;
++
++        public ArenaState Clone()
++        {
++            return new ArenaState
++            {
++                Navigation = Navigation,
++                PlayerDeploymentPositions = PlayerDeploymentPositions == null ? null : (BattlePositionMm[])PlayerDeploymentPositions.Clone(),
++                EnemyDeploymentPositions = EnemyDeploymentPositions == null ? null : (BattlePositionMm[])EnemyDeploymentPositions.Clone(),
++                PlayerRetreatAnchors = PlayerRetreatAnchors == null ? null : (BattlePositionMm[])PlayerRetreatAnchors.Clone(),
++                EnemyRetreatAnchors = EnemyRetreatAnchors == null ? null : (BattlePositionMm[])EnemyRetreatAnchors.Clone(),
++                EnemyObjectivePosition = EnemyObjectivePosition
++            };
++        }
+     }
+ }
+diff --git a/GAME/Assets/Tests/EditMode/PerSoldierBattleTests.cs b/GAME/Assets/Tests/EditMode/PerSoldierBattleTests.cs
+index dd9fa936..1353d9b3 100644
+--- a/GAME/Assets/Tests/EditMode/PerSoldierBattleTests.cs
++++ b/GAME/Assets/Tests/EditMode/PerSoldierBattleTests.cs
+@@ -1,219 +1,296 @@
+ using System;
++using System.Collections.Generic;
+ using Janseon.Core;
+ using Janseon.Core.Battle.Contracts;
+ using Janseon.Core.Battle.Sim;
++using Janseon.Tests.EditMode.Fixtures;
+ using NUnit.Framework;
+ 
+ namespace Janseon.Foundation.Tests
+ {
++    /// <summary>
++    /// Synthetic boundary fixtures for the continuous per-soldier battle contract.
++    /// Values in this fixture are intentionally not canonical product tuning.
++    /// </summary>
++    [TestFixture]
+     public sealed class PerSoldierBattleTests
+     {
++        const double DeltaSeconds = 0.25d;
++
+         [Test]
+-        public void UnityFixedDeltaTimeAndRoster()
++        public void Open_AllowsTwentySoldiers_AndKeepsHeroSeparateFromSoldierRoster()
+         {
+-            var setup = BattleSetup.FromContext(BattleContext.Create("campaign", default(StationId), 7, new Tick(0), 0, 0, BattleRules.RulesVersion, "task7", UnitHpSnapshot.DefaultParty()));
+-            setup.PlayerUnits = new RosterUnit[20];
+-            for (var i = 0; i < setup.PlayerUnits.Length; i++)
+-                setup.PlayerUnits[i] = new RosterUnit { Id = new UnitId("soldier-" + i), SoldierId = new SoldierId("soldier-" + i), SquadId = new SquadId("squad-1"), Side = 0, Hp = 10, MaxHp = 10, Power = 1 };
+-            setup.PlayerHeroId = new HeroId("hero-1");
++            var setup = Setup(20, 1);
++
+             var state = BattleSim.Open(setup);
+-            var before = state.Fingerprint();
+-            BattleSim.Step(state, new Ledger());
+-            Assert.That(state.Fingerprint(), Is.Not.EqualTo(before));
+-            Assert.That(Array.FindAll(state.Units, unit => unit.Side == 0).Length, Is.EqualTo(20));
+-            Assert.That(state.Units[0].Id.Value, Is.EqualTo("soldier-0"));
+-            Assert.That(state.Units[0].SoldierId.Value, Is.EqualTo("soldier-0"));
+-            Assert.That(state.Units[0].SquadId.Value, Is.EqualTo("squad-1"));
+-            Assert.That(state.Frame, Is.Not.Null);
+-            Assert.That(state.Frame.Units, Is.Not.SameAs(state.Units));
+-            var clone = state.Clone();
+-            clone.PublishFrame();
+-            Assert.That(state.Frame, Is.Not.SameAs(clone.Frame));
+-            Assert.That(state.Heroes.Length, Is.EqualTo(1));
+-            Assert.That(state.Squads.Length, Is.EqualTo(1));
++
++            Assert.That(Array.FindAll(state.Soldiers, unit => unit.Side == 0), Has.Length.EqualTo(20));
++            Assert.That(Array.Exists(state.Soldiers, unit => unit.Id.Equals(new UnitId("hero-boundary"))), Is.False);
++            Assert.That(state.Heroes, Has.Length.EqualTo(1));
++            Assert.That(state.Heroes[0].Id, Is.EqualTo(setup.PlayerHeroId));
++        }
++
++        [Test]
++        public void Open_RejectsTwentyFirstSoldier()
++        {
++            Assert.Throws<ArgumentException>(() => BattleSim.Open(Setup(21, 1)));
+         }
+ 
+         [Test]
+-        public void RejectHardcodedThirtyHzOversizedSquadAndDuplicateSoldier()
++        public void Open_RejectsDuplicateSoldierId()
+         {
+-            var setup = BattleSetup.FromContext(BattleContext.Create("campaign", default(StationId), 7, new Tick(0), 0, 0, BattleRules.RulesVersion, "task7", UnitHpSnapshot.DefaultParty()));
+-            setup.PlayerUnits = new RosterUnit[21];
+-            for (var i = 0; i < setup.PlayerUnits.Length; i++)
+-                setup.PlayerUnits[i] = new RosterUnit { Id = new UnitId(i == 20 ? "soldier-0" : "soldier-" + i), SoldierId = new SoldierId(i == 20 ? "soldier-0" : "soldier-" + i), SquadId = new SquadId("squad-1"), Side = 0, Hp = 10, MaxHp = 10 };
++            var setup = Setup(2, 1);
++            setup.PlayerUnits[1].SoldierId = setup.PlayerUnits[0].SoldierId;
++
+             Assert.Throws<ArgumentException>(() => BattleSim.Open(setup));
+         }
+ 
+         [Test]
+-        public void PathFormationAndNavigationSurface()
++        public void SubmitAndStep_ResolveIndividualMeleeAndRangedCasualtiesAtRangeBoundaries()
+         {
+-            var surface = BattleSim.BattlefieldSurface.Create(5, 3)
+-                .WithHeights(new[] { 3, 3, 4, 4, 4, 3, 3, 4, 4, 4, 3, 3, 4, 4, 4 })
+-                .WithPassage(new GridCoord(2, 0), new GridCoord(2, 1))
+-                .WithAnchor("entry", new GridCoord(0, 1))
+-                .WithAnchor("exit", new GridCoord(4, 1));
+-            var units = new[] { new BattleSim.FormationUnit("soldier-0", 0), new BattleSim.FormationUnit("soldier-1", 1) };
+-            var result = BattleSim.ProjectFormation(surface, units, "entry", "exit");
+-            var repeat = BattleSim.ProjectFormation(surface, units, "entry", "exit");
+-            Assert.That(result.Success, Is.True);
+-            Assert.That(result.Path.Count, Is.GreaterThan(0));
+-            Assert.That(result.FormationHash, Is.EqualTo(repeat.FormationHash));
++            var melee = Setup(1, 1, Position(0), Position(1000));
++            melee.PlayerUnits[0].RangeMinMm = 1000;
++            melee.PlayerUnits[0].RangeMaxMm = 1000;
++            melee.PlayerUnits[0].Power = 3;
++            melee.EnemyUnits[0].Hp = 3;
++            melee.EnemyUnits[0].MaxHp = 3;
++            var meleeState = OpenAndDeploy(melee);
++
++            SubmitAttack(meleeState, "melee", melee.PlayerUnits[0].Id, melee.EnemyUnits[0].Id);
++            BattleSim.Step(meleeState, new Ledger(), DeltaSeconds);
++
++            Assert.That(meleeState.Units[1].Hp, Is.EqualTo(0));
++            Assert.That(meleeState.Units[1].Status, Is.EqualTo(BattleUnitStatus.Down));
++
++            var ranged = Setup(1, 1, Position(0), Position(5000));
++            ranged.PlayerUnits[0].RangeMinMm = 2000;
++            ranged.PlayerUnits[0].RangeMaxMm = 5000;
++            ranged.PlayerUnits[0].Power = 2;
++            ranged.EnemyUnits[0].Hp = 4;
++            ranged.EnemyUnits[0].MaxHp = 4;
++            var rangedState = OpenAndDeploy(ranged);
++
++            SubmitAttack(rangedState, "ranged", ranged.PlayerUnits[0].Id, ranged.EnemyUnits[0].Id);
++            BattleSim.Step(rangedState, new Ledger(), DeltaSeconds);
++
++            Assert.That(rangedState.Units[1].Hp, Is.EqualTo(2));
++            Assert.That(rangedState.Units[1].Status, Is.EqualTo(BattleUnitStatus.Active));
+         }
+ 
+         [Test]
+-        public void RejectFormationInsideWallOrDisconnectedFloor()
++        public void SubmitAndStep_ReplayWithSameDeltaAndCommandsIsDeterministic()
+         {
+-            var surface = BattleSim.BattlefieldSurface.Create(3, 3)
+-                .WithBlocked(new GridCoord(1, 1))
+-                .WithAnchor("entry", new GridCoord(0, 0))
+-                .WithAnchor("exit", new GridCoord(2, 2));
+-            var units = new[] { new BattleSim.FormationUnit("soldier-0", 0) };
+-            Assert.That(BattleSim.ProjectFormation(surface, units, "entry", "exit", new[] { new GridCoord(1, 1) }).Success, Is.False);
+-            Assert.That(BattleSim.ProjectFormation(surface, units, "entry", "missing").Error, Does.Contain("anchor"));
+-            var isolated = BattleSim.BattlefieldSurface.Create(3, 3).WithBlocked(new GridCoord(1, 0), new GridCoord(0, 1), new GridCoord(1, 1), new GridCoord(1, 2), new GridCoord(2, 1)).WithAnchor("entry", new GridCoord(0, 0)).WithAnchor("exit", new GridCoord(2, 2));
+-            Assert.That(BattleSim.ProjectFormation(isolated, units, "entry", "exit").Success, Is.False);
+-            Assert.That(BattleSim.ProjectFormation(surface, units, "entry", "exit", null, false).Error, Does.Contain("tuning"));
++            var setup = Setup(1, 1, Position(0), Position(2000));
++            var first = OpenAndDeploy(setup);
++            var second = OpenAndDeploy(setup);
++            var path = Path(setup.Navigation, "p0", "p1");
++
++            SubmitMove(first, "first", setup.PlayerUnits[0].Id, Position(1000), path);
++            SubmitMove(second, "second", setup.PlayerUnits[0].Id, Position(1000), path);
++            BattleSim.Step(first, new Ledger(), DeltaSeconds);
++            BattleSim.Step(second, new Ledger(), DeltaSeconds);
++
++            Assert.That(first.Fingerprint(), Is.EqualTo(second.Fingerprint()));
++            Assert.That(first.Units[0].Position, Is.EqualTo(new BattlePositionMm(250, 0, 0)));
+         }
+ 
+         [Test]
+-        public void NarrowPassageCrowdIsDeterministic()
++        public void SubmitAndStep_CrowdedMovementDoesNotTeleportOrOverlapSoldierRadii()
+         {
+-            var first = CrowdState(new[] { "b", "a", "c" });
+-            var second = CrowdState(new[] { "c", "b", "a" });
+-            var passage = new System.Collections.Generic.HashSet<GridCoord> { new GridCoord(1, 0) };
+-            Assert.That(BattleSim.ResolveSoldierSpacing(first, passage), Is.True);
+-            Assert.That(BattleSim.ResolveSoldierSpacing(second, passage), Is.True);
+-            Assert.That(first.SpatialHash, Is.EqualTo(second.SpatialHash));
+-            Assert.That(Array.Find(first.Units, unit => unit.Id.Value == "a").PositionMm.X, Is.EqualTo(1000));
+-            Assert.That(Array.Find(first.Units, unit => unit.Id.Value == "b").PositionMm.X, Is.EqualTo(2004));
++            var setup = Setup(2, 1, Position(0), Position(3000));
++            setup.PlayerFormation[1].Position = Position(1000);
++            setup.PlayerUnits[0].RadiusMm = 600;
++            setup.PlayerUnits[1].RadiusMm = 600;
++            var state = OpenAndDeploy(setup);
++            var origin = state.Units[0].Position;
++
++            SubmitMove(state, "crowded-move", setup.PlayerUnits[0].Id, Position(1000), Path(setup.Navigation, "p0", "p1"));
++            BattleSim.Step(state, new Ledger(), DeltaSeconds);
++
++            Assert.That(state.Units[0].Position.DistanceSquaredTo(origin), Is.LessThanOrEqualTo(250L * 250L));
++            Assert.That(state.Units[0].Position.DistanceSquaredTo(state.Units[1].Position),
++                Is.GreaterThanOrEqualTo(1200L * 1200L));
+         }
+ 
+         [Test]
+-        public void DenseBlockedFormationDoesNotTeleportOrLoop()
++        public void Step_UsesAiIntervalAndNonCardinalPath_AndResolvesMoraleAndOutcome()
+         {
+-            var state = CrowdState(new[] { "a", "b", "c", "d" });
+-            var before = state.Units[0].PositionMm;
+-            var blocked = new System.Collections.Generic.HashSet<GridCoord> { new GridCoord(0, 0), new GridCoord(1, 0) };
+-            Assert.That(BattleSim.ResolveSoldierSpacing(state, blocked), Is.False);
+-            Assert.That(state.Units[0].PositionMm, Is.EqualTo(before));
+-            Assert.That(state.Units[0].PositionMm.X, Is.LessThan(2000));
+-            Assert.That(state.SpatialHash, Is.Not.Null);
++            var setup = Setup(1, 1, new BattlePositionMm(1000, 0, 1000), Position(0));
++            setup.Definition = new BattleDefinition(50, 60, 10, 5, 5, 20, 50, 0, 20d, 0.5d);
++            setup.EnemyUnits[0].RangeMinMm = 0;
++            setup.EnemyUnits[0].RangeMaxMm = 0;
++            var state = OpenAndDeploy(setup);
++            var enemy = state.Units[1];
++
++            BattleSim.Step(state, new Ledger(), 0.49d);
++            Assert.That(enemy.Position, Is.EqualTo(Position(0)));
++            Assert.That(state.Sides[0].Morale, Is.EqualTo(54));
++
++            BattleSim.Step(state, new Ledger(), 0.01d);
++            BattleSim.Step(state, new Ledger(), DeltaSeconds);
++
++            Assert.That(enemy.Position, Is.Not.EqualTo(Position(0)));
++            Assert.That(enemy.Facing, Is.EqualTo(BattleFacing.FromDelta(1000, 1000)));
++
++            enemy.Hp = 0;
++            enemy.Status = BattleUnitStatus.Down;
++            BattleSim.Step(state, new Ledger(), DeltaSeconds);
++
++            Assert.That(state.Outcome, Is.EqualTo(BattleOutcomeKind.PlayerVictory));
+         }
+ 
+         [Test]
+-        public void IndividualMeleeAndRangedCasualties()
++        public void Submit_InvalidPathIsRejectedWithoutChangingBattleState()
++        {
++            var setup = Setup(1, 1, Position(0), Position(2000));
++            var state = OpenAndDeploy(setup);
++            var ledger = new Ledger();
++            var before = state.Fingerprint();
++            var invalidPath = new NavPath(
++                new[] { new NavNode("p0", Position(0)), new NavNode("p2", Position(2000)) },
++                new[] { new NavSegment("p0", "p2") });
++
++            var result = BattleSim.Submit(state, ledger, new BattleTickCommand
++            {
++                Id = new CommandId("invalid-path"),
++                Seq = 1,
++                AtSeconds = state.ElapsedSeconds,
++                Kind = BattleTickCommandKind.Move,
++                ActorUnitId = setup.PlayerUnits[0].Id,
++                Destination = Position(2000),
++                Path = invalidPath,
++            });
++
++            Assert.That(result, Is.TypeOf<BattleRejection>());
++            Assert.That(((BattleRejection)result).Reason, Is.EqualTo(BattleRejectReason.DestinationOffNav));
++            Assert.That(state.Fingerprint(), Is.EqualTo(before));
++            Assert.That(ledger.Events, Is.Empty);
++        }
++
++        static BattleSetup Setup(int playerCount, int enemyCount, BattlePositionMm? playerPosition = null, BattlePositionMm? enemyPosition = null)
+         {
+-            var setup = BattleSetup.FromContext(BattleContext.Create("campaign", default(StationId), 7, new Tick(0), 0, 0, BattleRules.RulesVersion, "task10-happy", UnitHpSnapshot.DefaultParty()));
+-            setup.PlayerUnits = new[]
++            var nodeCount = Math.Max(playerCount + enemyCount + 2, 6);
++            var nodes = new List<NavNode>();
++            for (var i = 0; i <= nodeCount; i++) nodes.Add(new NavNode("p" + i, Position(i * 1000)));
++            nodes.Add(new NavNode("diagonal", new BattlePositionMm(1000, 0, 1000)));
++            var segments = new List<NavSegment>();
++            for (var i = 0; i < nodeCount; i++)
++            {
++                segments.Add(new NavSegment("p" + i, "p" + (i + 1)));
++                segments.Add(new NavSegment("p" + (i + 1), "p" + i));
++            }
++            segments.Add(new NavSegment("p0", "diagonal"));
++            segments.Add(new NavSegment("diagonal", "p0"));
++            var navigation = new NavPath(nodes, segments);
++            var players = new RosterUnit[playerCount];
++            var enemies = new RosterUnit[enemyCount];
++            var playerFormation = new FormationSlot[playerCount];
++            var enemyFormation = new FormationSlot[enemyCount];
++
++            for (var i = 0; i < playerCount; i++)
++            {
++                var position = i == 0 && playerPosition.HasValue ? playerPosition.Value : Position(i * 1000);
++                players[i] = Soldier("player-" + i, "player-soldier-" + i, 0, position);
++                playerFormation[i] = new FormationSlot { Unit = players[i].Id, Position = position, Facing = new BattleFacing(45000) };
++            }
++            for (var i = 0; i < enemyCount; i++)
++            {
++                var position = i == 0 && enemyPosition.HasValue ? enemyPosition.Value : Position((playerCount + i + 1) * 1000);
++                enemies[i] = Soldier("enemy-" + i, "enemy-soldier-" + i, 1, position);
++                enemyFormation[i] = new FormationSlot { Unit = enemies[i].Id, Position = position, Facing = new BattleFacing(225000) };
++            }
++
++            return new BattleSetup
+             {
+-                Soldier("ally-a", "A", 1, 1, 1, 1),
+-                Soldier("ally-b", "B", 10, 1, 99, 99),
++                Context = BattleContext.Create("boundary-campaign", default(StationId), 8675309, new Tick(0), 0, 0,
++                    "boundary-fixture-v1", "per-soldier-boundary", TestCampaignDefinition.Instance.MaxHp, TestCampaignDefinition.Instance.MaxHp),
++                Definition = new BattleDefinition(60, 60, 0, 5, 5, 20, 50, 0, 20d, 10d),
++                PlayerUnits = players,
++                EnemyUnits = enemies,
++                PlayerFormation = playerFormation,
++                EnemyFormation = enemyFormation,
++                PlayerCommanderId = players[0].Id,
++                EnemyCommanderId = enemies[0].Id,
++                PlayerHeroId = new HeroId("hero-boundary"),
++                PlayerHero = new HeroDefinition
++                {
++                    Id = new HeroId("hero-boundary"),
++                    Hp = 10,
++                    MaxHp = 10,
++                    Position = playerFormation[0].Position,
++                    Facing = playerFormation[0].Facing,
++                },
++                PlayerSquadId = new SquadId("player-squad"),
++                Navigation = navigation,
++                PlayerRetreatAnchors = new[] { Position(0) },
++                EnemyRetreatAnchors = new[] { Position((playerCount + enemyCount + 1) * 1000) },
++                EnemyObjectivePosition = Position(1000),
+             };
+-            setup.EnemyUnits = new[] { Soldier("foe-a", "E-A", 3, 1, 99, 99, 1) };
+-            var state = BattleSim.Open(setup);
+-            state.Units[0].Cell = new GridCoord(1, 1);
+-            state.Units[1].Cell = new GridCoord(1, 2);
+-            state.Units[2].Cell = new GridCoord(2, 1);
+-            state.Units[2].Hp = 2;
+-            state.Units[2].MaxHp = 2;
+-            state.Units[0].OrderKind = BattleOrderKind.Attack;
+-            state.Units[0].OrderTargetUnitId = state.Units[2].Id;
+-            var ledger = new Ledger();
+-            BattleSim.Step(state, ledger, 1f / 30f);
+-            Assert.That(state.Units[2].Hp, Is.EqualTo(1));
+-            BattleSim.Step(state, ledger, 1f);
+-            Assert.That(state.Units[2].Hp, Is.EqualTo(0));
+-            Assert.That(state.Units[2].State, Is.EqualTo("Down"));
+-            Assert.That(state.Units[0].SoldierId.Value, Is.EqualTo("A"));
+-            Assert.That(state.Units[1].SoldierId.Value, Is.EqualTo("B"));
+         }
+ 
+-        [Test]
+-        public void OccludedTargetAndDeadAttackerCannotDamage()
++        static RosterUnit Soldier(string id, string soldierId, int side, BattlePositionMm position)
+         {
+-            var setup = BattleSetup.FromContext(BattleContext.Create("campaign", default(StationId), 7, new Tick(0), 0, 0, BattleRules.RulesVersion, "task10-failure", UnitHpSnapshot.DefaultParty()));
+-            setup.PlayerUnits = new[] { Soldier("ally-dead", "dead", 0, 10, 1, 3) };
+-            setup.EnemyUnits = new[] { Soldier("foe-target", "target", 10, 1, 1, 3, 1) };
+-            var state = BattleSim.Open(setup);
+-            state.Units[0].Cell = new GridCoord(0, 1);
+-            state.Units[1].Cell = new GridCoord(2, 1);
+-            state.Terrain = new Heightmap(3, 3, 8, 0, 1, LayerId.Surface, new[]
++            return new RosterUnit
+             {
+-                1, 1, 1,
+-                1, 0, 1,
+-                1, 1, 1,
+-            });
+-            state.Units[0].OrderKind = BattleOrderKind.Attack;
+-            state.Units[0].OrderTargetUnitId = state.Units[1].Id;
+-            var before = state.Rng.Peek(RngPurpose.Battle);
+-            var ledger = new Ledger();
+-            BattleSim.Step(state, ledger, 1f / 30f);
+-            Assert.That(state.Units[1].Hp, Is.EqualTo(10));
+-            Assert.That(state.Rng.Peek(RngPurpose.Battle), Is.EqualTo(before));
+-            var replay = BattleSim.Open(setup);
+-            replay.Units[0].Cell = state.Units[0].Cell;
+-            replay.Units[1].Cell = state.Units[1].Cell;
+-            replay.Terrain = state.Terrain.Snapshot();
+-            replay.Units[0].OrderKind = BattleOrderKind.Attack;
+-            replay.Units[0].OrderTargetUnitId = replay.Units[1].Id;
+-            BattleSim.Step(replay, new Ledger(), 1f / 30f);
+-            Assert.That(replay.Fingerprint(), Is.EqualTo(state.Fingerprint()));
++                Id = new UnitId(id), SoldierId = new SoldierId(soldierId),
++                SquadId = new SquadId(side == 0 ? "player-squad" : "enemy-squad"), Side = side,
++                Role = "boundary-fixture", Hp = 10, MaxHp = 10, Power = 1, Morale = 60f,
++                RangeMinMm = 0, RangeMaxMm = 100, MoveMillimetersPerSecond = 1000,
++                AttackCooldownSeconds = 0d, RadiusMm = 500, InitialPosition = position,
++                InitialFacing = new BattleFacing(side == 0 ? 45000 : 225000), InitialStatus = BattleUnitStatus.Active,
++            };
+         }
+ 
+-        [Test]
+-        public void AiMoraleAndTerminalOutcome()
++        static BattleSimState OpenAndDeploy(BattleSetup setup)
+         {
+-            var setup = BattleSetup.FromContext(BattleContext.Create("campaign", default(StationId), 7, new Tick(0), 0, 0, BattleRules.RulesVersion, "task11-happy", UnitHpSnapshot.DefaultParty()));
+-            setup.PlayerUnits = new[] { Soldier("ally-a", "A", 10000, 1, 1, 1) };
+-            setup.EnemyUnits = new[] { Soldier("foe-a", "E-A", 10000, 1, 1, 1, 1) };
+             var state = BattleSim.Open(setup);
+-            state.Units[0].Cell = new GridCoord(3, 3);
+-            state.Units[1].Cell = new GridCoord(8, 3);
+-            var before = state.Units[1].Cell;
+-            BattleSim.Step(state, new Ledger(), 0.5f);
+-            Assert.That(state.Units[1].Cell, Is.Not.EqualTo(before));
+-            state.Units[1].Hp = 0;
+-            state.Sides[1].Morale = 2000;
+-            BattleSim.Step(state, new Ledger(), 0.5f);
+-            Assert.That(state.Sides[1].Morale, Is.LessThan(2000));
+-            Assert.That(state.Outcome, Is.EqualTo(BattleOutcomeKind.PlayerVictory).Or.EqualTo(BattleOutcomeKind.EnemySurrender).Or.EqualTo(BattleOutcomeKind.PlayerRout));
++            var formation = new List<FormationSlot>(setup.PlayerFormation);
++            formation.AddRange(setup.EnemyFormation);
++            var result = BattleSim.Submit(state, new Ledger(), new BattleTickCommand
++            {
++                Id = new CommandId("deploy"), Seq = 0, AtSeconds = 0d,
++                Kind = BattleTickCommandKind.Deploy, Formation = formation.ToArray(),
++            });
++            Assert.That(result, Is.Null);
++            BattleSim.Step(state, new Ledger(), 0.0001d);
++            return state;
+         }
+ 
+-        [Test]
+-        public void BlockedRetreatStillAllowsSurrenderProposal()
++        static void SubmitAttack(BattleSimState state, string id, UnitId actor, UnitId target)
+         {
+-            var setup = BattleSetup.FromContext(BattleContext.Create("campaign", default(StationId), 7, new Tick(0), 0, 0, BattleRules.RulesVersion, "task11-failure", UnitHpSnapshot.DefaultParty()));
+-            setup.PlayerUnits = new[] { Soldier("ally-a", "A", 10000, 1, 1, 1) };
+-            setup.EnemyUnits = new[] { Soldier("foe-a", "E-A", 10000, 1, 1, 1, 1) };
+-            var state = BattleSim.Open(setup);
+-            state.Deployed = true;
+-            state.Sides[1].Morale = 1000;
+-            state.Sides[1].CommanderHpPercent = 10;
+-            state.Arena.EnemyRetreatEdge = new[] { new GridCoord(3, 3) };
+-            state.Units[0].Cell = new GridCoord(2, 3);
+-            var retreat = BattleSim.Submit(state, new Ledger(), new BattleTickCommand { Id = new CommandId("retreat"), At = new Tick(0), Seq = 0, Kind = BattleTickCommandKind.OrderRetreat });
+-            Assert.That(((BattleRejection)retreat).Reason, Is.EqualTo(BattleRejectReason.RetreatUnavailable));
+-            var ledger = new Ledger();
+-            var surrender = BattleSim.Submit(state, ledger, new BattleTickCommand { Id = new CommandId("surrender"), At = new Tick(0), Seq = 1, Kind = BattleTickCommandKind.DemandSurrender });
+-            Assert.That(surrender, Is.Null);
+-            var result = BattleSim.Result(state);
+-            Assert.That(result.Outcome, Is.EqualTo(BattleOutcomeKind.EnemySurrender));
+-            Assert.That(ledger.Events.Count, Is.EqualTo(1));
+-            BattleSim.Step(state, ledger);
+-            Assert.That(ledger.Events.Count, Is.EqualTo(1));
++            Assert.That(BattleSim.Submit(state, new Ledger(), new BattleTickCommand
++            {
++                Id = new CommandId(id), Seq = 1, AtSeconds = state.ElapsedSeconds,
++                Kind = BattleTickCommandKind.Attack, ActorUnitId = actor, TargetUnitId = target,
++            }), Is.Null);
+         }
+ 
+-        static RosterUnit Soldier(string id, string soldierId, int hp, int power, int minRange, int maxRange, int side = 0)
++        static void SubmitMove(BattleSimState state, string id, UnitId actor, BattlePositionMm destination, NavPath path)
+         {
+-            return new RosterUnit { Id = new UnitId(id), SoldierId = new SoldierId(soldierId), SquadId = new SquadId("squad-1"), Side = side, Hp = hp, MaxHp = Math.Max(1, hp), Power = power, RangeMin = minRange, RangeMax = maxRange, AttackCooldownTicks = 30, MoveTicksPerCell = 1 };
++            Assert.That(BattleSim.Submit(state, new Ledger(), new BattleTickCommand
++            {
++                Id = new CommandId(id), Seq = 1, AtSeconds = state.ElapsedSeconds,
++                Kind = BattleTickCommandKind.Move, ActorUnitId = actor, Destination = destination, Path = path,
++            }), Is.Null);
+         }
+ 
+-        static BattleSimState CrowdState(string[] ids)
++        static NavPath Path(NavPath navigation, params string[] ids)
+         {
+-            var state = new BattleSimState { Arena = new ArenaState { Width = 3, Height = 1 }, Units = new UnitState[ids.Length] };
+-            Array.Sort(ids, StringComparer.Ordinal);
++            var nodes = new List<NavNode>();
+             for (var i = 0; i < ids.Length; i++)
+-                state.Units[i] = new UnitState { Id = new UnitId(ids[i]), SoldierId = new SoldierId(ids[i]), Side = 0, Cell = new GridCoord(0, 0), PositionMm = new IntPointMm(1000 + i * 1000, 0), RadiusMm = 500 };
+-            return state;
++            {
++                NavNode node;
++                Assert.That(navigation.TryGetNode(ids[i], out node), Is.True);
++                nodes.Add(node);
++            }
++            var segments = new List<NavSegment>();
++            for (var i = 1; i < ids.Length; i++) segments.Add(new NavSegment(ids[i - 1], ids[i]));
++            return new NavPath(nodes, segments);
++        }
++
++        static BattlePositionMm Position(int x)
++        {
++            return new BattlePositionMm(x, 0, 0);
+         }
+     }
+ }

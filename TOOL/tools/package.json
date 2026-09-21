@@ -19,6 +19,9 @@
     "test:unity-remote": "node --test unity/test-unity-remote.mjs",
     "deploy:hub:test": "node --test deploy/test-hub-deploy.mjs deploy/test-hub-docker-contract.mjs",
     "test:retired-reference-terms": "node --test wiki/test-retired-reference-terms.mjs",
+    "test:patina-human": "node --test wiki/test-patina-human-gate.mjs",
+    "verify:patina-human": "node wiki/patina-human-gate.mjs verify",
+    "write:patina-human": "node wiki/patina-human-gate.mjs write",
     "deploy:hub:build": "node deploy/build-hub-docker.mjs",
     "deploy:hub": "node deploy/deploy-hub.mjs"
   },

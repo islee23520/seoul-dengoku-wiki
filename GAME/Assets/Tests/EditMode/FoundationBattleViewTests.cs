@@ -1,218 +1,156 @@
 using System;
-using System.Linq;
-using Janseon.Core;
 using Janseon.Core.Battle.Contracts;
 using Janseon.Core.Battle.Sim;
 using Janseon.Foundation.Battle;
-using Janseon.Foundation.UI;
 using NUnit.Framework;
 using UnityEngine;
 
 namespace Janseon.Foundation.Tests
 {
+    [TestFixture]
     public sealed class FoundationBattleViewTests
     {
         FoundationBattleView view;
-        BattleSimState battle;
-        OwnerCardTargetingMachine machine;
+        TemporaryBattleVisualCatalog catalog;
+        GameObject[] prefabs;
 
         [SetUp]
         public void SetUp()
         {
-            var context = BattleContext.Create("world-view", default, 271828, new Tick(0), 0, 0,
-                BattleRules.RulesVersion, "world-view", UnitHpSnapshot.DefaultParty());
-            var setup = BattleSetup.FromContext(context);
-            battle = BattleSim.Open(setup);
-            Assert.IsNull(BattleSim.Submit(battle, new Ledger(), new BattleTickCommand
+            catalog = ScriptableObject.CreateInstance<TemporaryBattleVisualCatalog>();
+            prefabs = new GameObject[4];
+            var entries = new TemporaryBattleVisualEntry[4];
+            foreach (TemporaryCombatantKind kind in Enum.GetValues(typeof(TemporaryCombatantKind)))
             {
-                Id = new CommandId("deploy-view"), Kind = BattleTickCommandKind.Deploy, Formation = setup.PlayerFormation,
-            }));
-            machine = new OwnerCardTargetingMachine(battle, _ => Assert.Fail("Presentation must not submit without confirmation"), () => 1);
-            view = FoundationBattleView.Create(null, battle, machine);
+                var prefab = new GameObject("BoundaryPrefab_" + kind);
+                var marker = new GameObject("SelectionMarker");
+                marker.transform.SetParent(prefab.transform, false);
+                var visual = prefab.AddComponent<TemporaryBattleCombatantVisual>();
+                visual.Configure(prefab.transform, Array.Empty<Renderer>(), marker,
+                    Color.blue, Color.yellow, Color.black);
+                prefabs[(int)kind] = prefab;
+                entries[(int)kind] = new TemporaryBattleVisualEntry(kind, prefab);
+            }
+            catalog.SetGeneratedEntries(entries);
         }
 
         [TearDown]
-        public void TearDown() { if (view != null) UnityEngine.Object.DestroyImmediate(view.gameObject); }
+        public void TearDown()
+        {
+            if (view != null) UnityEngine.Object.DestroyImmediate(view.gameObject);
+            if (catalog != null) UnityEngine.Object.DestroyImmediate(catalog);
+            if (prefabs == null) return;
+            foreach (GameObject prefab in prefabs)
+                if (prefab != null) UnityEngine.Object.DestroyImmediate(prefab);
+        }
 
         [Test]
-        public void EveryCoreUnitHasOneWorldPresentation_GridAndFacingAreReadOnly()
+        public void Refresh_MapsMillimetersToMetersAndFacingYawWithoutMutatingSimulation()
         {
-            string before = battle.Fingerprint();
+            var state = State(Unit("first", 1250, -2000, 375, 90250));
+            string before = state.Fingerprint();
+
+            view = FoundationBattleView.Create(null, state, catalog, KindFor);
+
+            Transform visual = view.Units[new UnitId("first")].transform;
+            Assert.That(visual.localPosition, Is.EqualTo(new Vector3(1.25f, -2f, 0.375f)));
+            Assert.That(visual.localRotation.eulerAngles.y, Is.EqualTo(90.25f).Within(0.001f));
+            Assert.That(state.Fingerprint(), Is.EqualTo(before));
+        }
+
+        [Test]
+        public void Refresh_AppliesTypedStatePoseWithoutMutatingSimulation()
+        {
+            var unit = Unit("pose", 0, 0, 0, 0);
+            unit.OrderKind = BattleOrderKind.Move;
+            var state = State(unit);
+            view = FoundationBattleView.Create(null, state, catalog, KindFor);
+            string before = state.Fingerprint();
+
+            Assert.That(view.Units[unit.Id].Pose, Is.EqualTo(TemporaryCombatantPose.Moving));
+
+            UnitState hit = unit.Clone();
+            hit.Status = BattleUnitStatus.Hit;
+            PublishFrame(state, hit);
             view.Refresh();
-            Assert.AreEqual(6, battle.Units.Count(u => u.Side == 0));
-            Assert.Greater(battle.Units.Count(u => u.Side == 1), 0);
-            Assert.AreEqual(battle.Units.Length, view.Units.Count);
-            Assert.AreEqual(battle.Units.Length, view.Units.Values.Select(t => t.position).Distinct().Count());
-            foreach (var unit in battle.Units)
+            Assert.That(view.Units[unit.Id].Pose, Is.EqualTo(TemporaryCombatantPose.Hit));
+
+            UnitState down = hit.Clone();
+            down.Status = BattleUnitStatus.Down;
+            PublishFrame(state, down);
+            view.Refresh();
+            Assert.That(view.Units[unit.Id].Pose, Is.EqualTo(TemporaryCombatantPose.Dead));
+            Assert.That(state.Fingerprint(), Is.EqualTo(before));
+        }
+
+        [Test]
+        public void Select_ActivatesOnlyTheSelectedVisualMarkerWithoutMutatingSimulation()
+        {
+            var first = Unit("first", 0, 0, 0, 0);
+            var second = Unit("second", 1000, 0, 0, 0);
+            var state = State(first, second);
+            view = FoundationBattleView.Create(null, state, catalog, KindFor);
+            string before = state.Fingerprint();
+
+            Assert.That(view.Select(second.Id), Is.True);
+            Assert.That(view.Units[first.Id].IsSelected, Is.False);
+            Assert.That(view.Units[second.Id].IsSelected, Is.True);
+            Assert.That(view.Select(new UnitId("missing")), Is.False);
+            Assert.That(state.Fingerprint(), Is.EqualTo(before));
+        }
+
+        [Test]
+        public void Refresh_RemovesVisualForUnitMissingFromPublishedFrameWithoutMutatingSimulation()
+        {
+            var retained = Unit("retained", 0, 0, 0, 0);
+            var stale = Unit("stale", 1000, 0, 0, 0);
+            var state = State(retained, stale);
+            view = FoundationBattleView.Create(null, state, catalog, KindFor);
+            TemporaryBattleCombatantVisual staleVisual = view.Units[stale.Id];
+            string before = state.Fingerprint();
+
+            PublishFrame(state, retained.Clone());
+            view.Refresh();
+
+            Assert.That(view.Units.ContainsKey(retained.Id), Is.True);
+            Assert.That(view.Units.ContainsKey(stale.Id), Is.False);
+            Assert.That(staleVisual == null, Is.True);
+            Assert.That(state.Fingerprint(), Is.EqualTo(before));
+        }
+
+        static TemporaryCombatantKind KindFor(UnitState unit)
+        {
+            return unit.Side == 0 ? TemporaryCombatantKind.SoldierMelee : TemporaryCombatantKind.SoldierRanged;
+        }
+
+        static BattleSimState State(params UnitState[] units)
+        {
+            var state = new BattleSimState { Units = units };
+            state.PublishFrame();
+            return state;
+        }
+
+        static void PublishFrame(BattleSimState state, params UnitState[] units)
+        {
+            UnitState[] simulationUnits = state.Units;
+            state.Units = units;
+            state.PublishFrame();
+            state.Units = simulationUnits;
+        }
+
+        static UnitState Unit(string id, int x, int y, int z, int yawMilliDegrees)
+        {
+            return new UnitState
             {
-                Assert.AreEqual(view.CellWorld(unit.Cell), view.Units[unit.Id].position);
-                Assert.IsTrue(view.Units[unit.Id].gameObject.activeSelf);
-            }
-            Assert.AreEqual(1.5f, Vector3.Distance(view.CellWorld(new GridCoord(0, 0)), view.CellWorld(new GridCoord(1, 0))));
-            Assert.AreEqual(before, battle.Fingerprint());
-            Assert.AreEqual(0, view.GetComponentsInChildren<Canvas>(true).Length);
-            Assert.AreEqual(0, view.GetComponentsInChildren<TMPro.TMP_Text>(true).Length);
-            Assert.AreEqual(35.264f, view.ViewCamera.transform.eulerAngles.x, 0.001f); // POC presentation camera
-            Assert.AreEqual(45f, view.ViewCamera.transform.eulerAngles.y, 0.001f);
-            Assert.IsTrue(view.ViewCamera.orthographic);
-        }
-
-        [Test]
-        public void SelectionRingFollowsCorePosition_AndDeadUnitIsHidden()
-        {
-            var unit = battle.Units[0];
-            string before = battle.Fingerprint();
-            Assert.IsTrue(view.SelectUnit(unit.Id));
-            Assert.AreEqual(before, battle.Fingerprint());
-            Assert.IsTrue(view.SelectionRing.gameObject.activeSelf);
-            Assert.AreEqual(view.CellWorld(unit.Cell) + Vector3.up * 0.035f, view.SelectionRing.position);
-            Assert.IsInstanceOf<MeshRenderer>(view.SelectionRing.GetComponent<Renderer>());
-            Assert.IsTrue(view.SelectionRing.GetComponent<MeshFilter>().sharedMesh.normals.All(n => n.y > 0.9f));
-            unit.Cell = new GridCoord(4, 4);
-            view.Refresh();
-            Assert.AreEqual(view.CellWorld(unit.Cell) + Vector3.up * 0.035f, view.SelectionRing.position);
-            unit.Hp = 0;
-            view.Refresh();
-            Assert.IsFalse(view.Units[unit.Id].gameObject.activeSelf);
-            Assert.IsFalse(view.SelectionRing.gameObject.activeSelf);
-        }
-
-        [Test]
-        public void OnlyMobilityChoosingDirectionShowsFourWorldArrows_ConfirmAndMoraleDoNot()
-        {
-            var owner = battle.Units[0];
-            var target = battle.Units[1];
-            // Fixture cells isolate direction legality; production view never changes occupancy.
-            for (int i = 0; i < battle.Units.Length; i++) battle.Units[i].Cell = new GridCoord(i, 7);
-            owner.Cell = new GridCoord(3, 4);
-            target.Cell = new GridCoord(4, 3);
-            view.SelectUnit(owner.Id);
-            Assert.IsTrue(machine.BeginCard("mobility-regroup"));
-            view.Refresh();
-            Assert.AreEqual(0, view.VisibleArrowCount);
-            string before = battle.Fingerprint();
-            Assert.IsTrue(view.SelectUnit(target.Id));
-            Assert.AreEqual(CardTargetingStage.ChoosingDirection, machine.Stage);
-            Assert.AreEqual(4, view.VisibleArrowCount);
-            foreach (Transform arrow in view.Arrows)
-            {
-                Assert.AreEqual(1.03f, Vector3.Distance(view.TargetRing.position, arrow.position), 0.0001f);
-                Assert.IsNotNull(arrow.GetComponent<MeshRenderer>());
-                Assert.IsTrue(arrow.GetComponent<MeshFilter>().sharedMesh.normals.All(n => n.y > 0.9f));
-            }
-            Assert.AreEqual(before, battle.Fingerprint());
-            Assert.IsTrue(view.SelectDirection(CardinalDirection.East));
-            Assert.AreEqual(CardTargetingStage.Confirm, machine.Stage);
-            Assert.AreEqual(0, view.VisibleArrowCount);
-            machine.Cancel();
-            Assert.IsTrue(machine.BeginCard("encourage-morale"));
-            Assert.IsTrue(view.SelectUnit(target.Id));
-            Assert.AreEqual(CardTargetingStage.Confirm, machine.Stage);
-            Assert.AreEqual(0, view.VisibleArrowCount);
-            machine.Cancel();
-            view.Refresh();
-            Assert.IsFalse(view.TargetRing.gameObject.activeSelf);
-        }
-
-        [Test]
-        public void IllegalDirectionIsRed_HoverIsGold_AndNeitherMutatesCore()
-        {
-            for (int i = 0; i < battle.Units.Length; i++) battle.Units[i].Cell = new GridCoord(i, 7);
-            battle.Units[0].Cell = new GridCoord(3, 4);
-            battle.Units[1].Cell = new GridCoord(4, 3);
-            battle.Units[2].Cell = new GridCoord(5, 3);
-            view.SelectUnit(battle.Units[0].Id);
-            machine.BeginCard("mobility-regroup");
-            view.SelectUnit(battle.Units[1].Id);
-            string before = battle.Fingerprint();
-            var east = view.Arrows[(int)CardinalDirection.East];
-            Assert.AreEqual(FoundationBattleView.IllegalRed, east.GetComponent<Renderer>().sharedMaterial.color);
-            Assert.IsFalse(view.SelectDirection(CardinalDirection.East));
-            Assert.AreEqual(4, view.VisibleArrowCount);
-            var north = view.Arrows[(int)CardinalDirection.North];
-            view.Point(new Ray(north.position + Vector3.up * 10, Vector3.down), false);
-            Assert.AreEqual(FoundationBattleView.HoverGold, north.GetComponent<Renderer>().sharedMaterial.color);
-            Assert.AreEqual(before, battle.Fingerprint());
-        }
-
-        [Test]
-        public void AlliedCommanderUsesLocalReviewSprite_OthersStayPlaceholderMeshes()
-        {
-            view.Refresh();
-            var commander = Array.Find(battle.Units, unit => unit.Id.Equals(battle.PlayerCommanderId));
-            Assert.IsNotNull(commander);
-            foreach (var unit in battle.Units)
-            {
-                Transform token = view.Units[unit.Id];
-                var sprite = token.GetComponentInChildren<SpriteRenderer>(true);
-                if (unit.Id.Equals(battle.PlayerCommanderId))
-                {
-                    Assert.IsNotNull(sprite);
-                    Assert.IsNotNull(sprite.sprite);
-                    Assert.AreEqual(0, token.GetComponentsInChildren<MeshFilter>(true).Length);
-                }
-                else
-                {
-                    Assert.IsNull(sprite);
-                    Assert.Greater(token.GetComponentsInChildren<MeshFilter>(true).Length, 0);
-                }
-            }
-            Assert.AreEqual(0, view.GetComponentsInChildren<TMPro.TMP_Text>(true).Length);
-        }
-
-        [Test]
-        public void LocalReviewSprite_UsesPilgrimageBakeCellAndWalkRows()
-        {
-            view.Refresh();
-            var commander = Array.Find(battle.Units, unit => unit.Id.Equals(battle.PlayerCommanderId));
-            Assert.IsNotNull(commander);
-            var renderer = view.Units[commander.Id].GetComponentInChildren<SpriteRenderer>(true);
-            Assert.IsNotNull(renderer);
-            Assert.IsNotNull(renderer.sprite);
-            Assert.AreEqual(64f, renderer.sprite.rect.width);
-            Assert.AreEqual(64f, renderer.sprite.rect.height);
-            Rect idle = renderer.sprite.rect;
-            commander.OrderKind = BattleOrderKind.Move;
-            view.Refresh();
-            Assert.AreEqual(64f, renderer.sprite.rect.width);
-            Assert.AreNotEqual(idle.y, renderer.sprite.rect.y);
-            Rect walkingSouth = renderer.sprite.rect;
-            commander.Facing = CardinalDirection.West;
-            view.Refresh();
-            Assert.AreNotEqual(walkingSouth.y, renderer.sprite.rect.y);
-        }
-
-        [Test]
-        public void ZoomFactor_ScalesOrthographicSize_AndDoesNotMutateCore()
-        {
-            view.FrameCamera(16f / 9f);
-            float baseSize = view.ViewCamera.orthographicSize;
-            string before = battle.Fingerprint();
-            view.SetZoom(0.72f);
-            Assert.AreEqual(baseSize / 0.72f, view.ViewCamera.orthographicSize, 0.01f);
-            view.SetZoom(1.75f);
-            Assert.AreEqual(baseSize / 1.75f, view.ViewCamera.orthographicSize, 0.01f);
-            view.SetZoom(1f);
-            Assert.AreEqual(baseSize, view.ViewCamera.orthographicSize, 0.01f);
-            Assert.AreEqual(before, battle.Fingerprint());
-        }
-
-        [Test]
-        public void GameplayHudShowsLocalReviewProvenanceBanner_WorldViewDoesNot()
-        {
-            RectTransform hud = UguiHudBuilder.BuildGameplay(null);
-            try
-            {
-                var banner = UguiHudBuilder.Find(hud, UiElementNames.LocalReviewProvenanceBanner);
-                Assert.IsNotNull(banner);
-                Assert.AreEqual("로컬 리뷰 파생물 · 원본 아틀라스 미수록", banner.GetComponent<TMPro.TMP_Text>().text);
-                Assert.IsNotNull(banner.GetComponentInParent<Canvas>());
-                Assert.AreEqual(0, view.GetComponentsInChildren<TMPro.TMP_Text>(true).Length);
-            }
-            finally
-            {
-                UnityEngine.Object.DestroyImmediate(hud.parent.gameObject);
-            }
+                Id = new UnitId(id),
+                Side = 0,
+                Position = new BattlePositionMm(x, y, z),
+                Facing = new BattleFacing(yawMilliDegrees),
+                Status = BattleUnitStatus.Active,
+                OrderKind = BattleOrderKind.None,
+                Hp = 10,
+                MaxHp = 10,
+            };
         }
     }
 }

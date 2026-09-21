@@ -1,132 +1,251 @@
 using System;
-using System.Reflection;
+using System.IO;
+using System.Security.Cryptography;
+using System.Text;
+using Janseon.Data.Authoring;
+using Janseon.Foundation.Battle;
+using Janseon.Foundation.Composition;
+using Janseon.Foundation.UI;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Janseon.Data.Authoring;
 
 namespace Janseon.Data.Editor
 {
     public static class Area1SceneWireCommand
     {
-        const string ScenePath = "Assets/Scenes/Foundation.unity";
-        const string CatalogPath = "Assets/Janseon/Data/Assets/Area1GameDataCatalog.asset";
-        const string ScopeTypeName = "Janseon.Foundation.Composition.FoundationLifetimeScope";
-        const string FieldName = "gameDataCatalog";
+        const string CatalogGuidEnvironmentVariable = "JANSEON_GAME_DATA_CATALOG_GUID";
+        const string FoundationSceneGuidEnvironmentVariable = "JANSEON_FOUNDATION_SCENE_GUID";
+        const string CatalogPropertyName = "gameDataCatalog";
 
-        [MenuItem("Janseon/Data/Wire Area 1 Foundation Scene")]
+        [MenuItem("Janseon/Data/Wire Selected Catalog Into Selected Foundation Scene")]
         public static void WireFoundationScene()
         {
-            Scene scene = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
-            Debug.Log("[Area1SceneWire] step 1 scene opened: " + ScenePath);
+            string requestedCatalogGuid = RequireEnvironmentVariable(CatalogGuidEnvironmentVariable);
+            string requestedSceneGuid = RequireEnvironmentVariable(FoundationSceneGuidEnvironmentVariable);
+            if (!GUID.TryParse(requestedSceneGuid, out GUID sceneGuid))
+            {
+                throw new InvalidOperationException("The requested Foundation scene GUID is invalid.");
+            }
 
-            AssetDatabase.SaveAssets();
-            AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
-            Debug.Log("[Area1SceneWire] step 2 imports settled");
+            SceneAsset foundationScene = AssetDatabase.LoadAssetByGUID<SceneAsset>(sceneGuid);
+            if (foundationScene == null)
+            {
+                throw new InvalidOperationException("The requested Foundation scene GUID does not identify a scene asset.");
+            }
 
-            GameDataCatalogAsset catalog = AssetDatabase.LoadAssetAtPath<GameDataCatalogAsset>(CatalogPath);
+            string scenePath = AssetDatabase.GetAssetPath(foundationScene);
+            if (string.IsNullOrEmpty(scenePath))
+            {
+                throw new InvalidOperationException("The requested Foundation scene asset does not have an editor path.");
+            }
+
+            if (!GUID.TryParse(requestedCatalogGuid, out GUID catalogGuid))
+            {
+                throw new InvalidOperationException("The requested catalog GUID is invalid.");
+            }
+
+            GameDataCatalogAsset catalog = AssetDatabase.LoadAssetByGUID<GameDataCatalogAsset>(catalogGuid);
             if (catalog == null)
             {
-                throw new InvalidOperationException("Area 1 catalog missing at " + CatalogPath);
-            }
-            string catalogGuid = AssetDatabase.AssetPathToGUID(CatalogPath);
-            Debug.Log("[Area1SceneWire] step 3 catalog loaded: " + catalog.name + " guid=" + catalogGuid);
-
-            Component scope = FindFoundationScope(scene);
-            if (scope == null)
-            {
-                throw new InvalidOperationException("FoundationLifetimeScope missing from " + ScenePath);
+                throw new InvalidOperationException("The requested catalog GUID does not identify a GameDataCatalogAsset.");
             }
 
-            FieldInfo field = scope.GetType().GetField(FieldName, BindingFlags.Instance | BindingFlags.NonPublic);
-            if (field == null)
-            {
-                throw new InvalidOperationException(FieldName + " field missing from " + ScopeTypeName);
-            }
+            Scene scene = EditorSceneManager.OpenScene(scenePath, OpenSceneMode.Single);
+            FoundationLifetimeScope scope = FindSingleComponentInScene<FoundationLifetimeScope>(scene, "FoundationLifetimeScope");
+            GameplayUiHost gameplayHost = FindSingleComponentInScene<GameplayUiHost>(scene, "GameplayUiHost");
+            EnsureExactlyOneComponent<BattleSessionDriverHost>(gameplayHost.gameObject);
+            EnsureExactlyOneComponent<FoundationBattleViewHost>(gameplayHost.gameObject);
 
-            field.SetValue(scope, catalog);
-            GameDataCatalogAsset reflectedCatalog = field.GetValue(scope) as GameDataCatalogAsset;
-            if (reflectedCatalog == null)
-            {
-                catalog = AssetDatabase.LoadAssetAtPath<GameDataCatalogAsset>(CatalogPath);
-                if (catalog == null)
-                {
-                    throw new InvalidOperationException("Area 1 catalog was invalidated after reflection write: " + CatalogPath);
-                }
-                field.SetValue(scope, catalog);
-                reflectedCatalog = field.GetValue(scope) as GameDataCatalogAsset;
-            }
-            if (reflectedCatalog == null)
-            {
-                throw new InvalidOperationException("Area 1 catalog was invalidated after reflection reload: " + CatalogPath);
-            }
-            string reflectedPath = AssetDatabase.GetAssetPath(reflectedCatalog);
-            if (reflectedPath != CatalogPath)
-            {
-                throw new InvalidOperationException(FieldName + " reflection write resolved to unexpected asset path: " + reflectedPath);
-            }
-            Debug.Log("[Area1SceneWire] step 4 scope found and reflection write verified on GameObject " + scope.gameObject.name);
-
+            Undo.RecordObject(scope, "Wire Foundation game data catalog");
             SerializedObject serializedScope = new SerializedObject(scope);
-            SerializedProperty catalogProperty = serializedScope.FindProperty(FieldName);
+            serializedScope.Update();
+            SerializedProperty catalogProperty = serializedScope.FindProperty(CatalogPropertyName);
             if (catalogProperty == null)
             {
-                throw new InvalidOperationException(FieldName + " serialized property missing from " + ScopeTypeName);
+                throw new InvalidOperationException(CatalogPropertyName + " serialized property is missing.");
             }
-            catalogProperty.objectReferenceValue = catalog;
-            serializedScope.ApplyModifiedPropertiesWithoutUndo();
-            Debug.Log("[Area1SceneWire] step 5 SerializedObject write done: " + catalogProperty.objectReferenceValue);
+
+            Debug.Log(
+                "TASK35_DIAGNOSTIC before propertyType=" + catalogProperty.propertyType
+                + " serializedType=" + catalogProperty.type
+                + " sourceEntityId=" + catalog.GetEntityId()
+                + " sourcePath=" + AssetDatabase.GetAssetPath(catalog)
+                + " sourceGuid=" + ReferenceGuid(catalog)
+                + " referencePath=" + AssetDatabase.GetAssetPath(catalogProperty.objectReferenceValue)
+                + " referenceGuid=" + ReferenceGuid(catalogProperty.objectReferenceValue));
+
+            catalogProperty.objectReferenceEntityIdValue = catalog.GetEntityId();
+            bool applied = serializedScope.ApplyModifiedProperties();
+            serializedScope.Update();
+            Debug.Log(
+                "TASK35_DIAGNOSTIC applied=" + applied
+                + " afterApplyPath=" + AssetDatabase.GetAssetPath(catalogProperty.objectReferenceValue)
+                + " afterApplyGuid=" + ReferenceGuid(catalogProperty.objectReferenceValue));
+
+            if (PrefabUtility.IsPartOfPrefabInstance(scope))
+            {
+                PrefabUtility.RecordPrefabInstancePropertyModifications(scope);
+            }
 
             EditorUtility.SetDirty(scope);
+            EditorUtility.SetDirty(gameplayHost.gameObject);
             EditorSceneManager.MarkSceneDirty(scene);
-            Debug.Log("[Area1SceneWire] step 6 scope and scene marked dirty");
+            bool saved = EditorSceneManager.SaveOpenScenes();
+            Debug.Log("TASK35_DIAGNOSTIC saveOpenScenes=" + saved + " sceneDirtyAfterSave=" + scene.isDirty);
+            if (!saved)
+            {
+                throw new InvalidOperationException("Failed to save the requested Foundation scene.");
+            }
 
-            if (!EditorSceneManager.SaveScene(scene))
-            {
-                throw new InvalidOperationException("Failed to save " + ScenePath);
-            }
-            Debug.Log("[Area1SceneWire] step 7 scene saved");
+            AssetDatabase.SaveAssets();
+            AssetDatabase.Refresh();
 
-            Scene reopened = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
-            Component reopenedScope = FindFoundationScope(reopened);
-            if (reopenedScope == null)
+            string sceneFilePath = Path.GetFullPath(Path.Combine(Application.dataPath, "..", scenePath));
+            string sceneYaml = File.ReadAllText(sceneFilePath);
+            string expectedYamlReference = "gameDataCatalog: {fileID: 11400000, guid: " + requestedCatalogGuid + ", type: 2}";
+            bool yamlContainsReference = sceneYaml.Contains(expectedYamlReference);
+            Debug.Log(
+                "TASK35_DIAGNOSTIC yamlSha256=" + Sha256(sceneYaml)
+                + " yamlContainsRequestedReference=" + yamlContainsReference);
+            if (!yamlContainsReference)
             {
-                throw new InvalidOperationException("FoundationLifetimeScope missing after reopening " + ScenePath);
+                throw new InvalidOperationException("Foundation scene YAML did not persist the requested catalog GUID before close.");
             }
-            FieldInfo reopenedField = reopenedScope.GetType().GetField(FieldName, BindingFlags.Instance | BindingFlags.NonPublic);
-            if (reopenedField == null)
+
+            EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
+            if (scene.isLoaded)
             {
-                throw new InvalidOperationException(FieldName + " field missing after reopening " + ScenePath);
+                throw new InvalidOperationException("Failed to unload the requested Foundation scene after saving.");
             }
-            var persisted = reopenedField.GetValue(reopenedScope) as GameDataCatalogAsset;
-            if (persisted == null)
+
+            Scene reopened = EditorSceneManager.OpenScene(scenePath, OpenSceneMode.Single);
+            FoundationLifetimeScope reopenedScope = FindSingleComponentInScene<FoundationLifetimeScope>(reopened, "FoundationLifetimeScope");
+            GameplayUiHost reopenedGameplayHost = FindSingleComponentInScene<GameplayUiHost>(reopened, "GameplayUiHost");
+            RequireExactlyOneComponent<BattleSessionDriverHost>(reopenedGameplayHost.gameObject);
+            RequireExactlyOneComponent<FoundationBattleViewHost>(reopenedGameplayHost.gameObject);
+
+            SerializedObject reopenedSerializedScope = new SerializedObject(reopenedScope);
+            reopenedSerializedScope.Update();
+            SerializedProperty reopenedProperty = reopenedSerializedScope.FindProperty(CatalogPropertyName);
+            GameDataCatalogAsset reopenedCatalog = reopenedProperty.objectReferenceValue as GameDataCatalogAsset;
+            string persistedGuid = ReferenceGuid(reopenedCatalog);
+            if (string.IsNullOrEmpty(persistedGuid) || persistedGuid != requestedCatalogGuid)
             {
-                throw new InvalidOperationException(FieldName + " is null on disk in " + ScenePath);
+                throw new InvalidOperationException("Foundation scene did not persist the requested catalog GUID.");
             }
-            string persistedGuid = AssetDatabase.AssetPathToGUID(AssetDatabase.GetAssetPath(persisted));
-            if (persistedGuid != catalogGuid)
-            {
-                throw new InvalidOperationException(FieldName + " guid mismatch on disk: expected " + catalogGuid + " but was " + persistedGuid);
-            }
-            Debug.Log("[Area1SceneWire] step 8 verified on disk: " + persisted.name + " guid=" + persistedGuid);
+
+            Debug.Log(
+                "TASK35_FOUNDATION_SCENE_AUTHORED catalogGuid=" + persistedGuid
+                + " gameplayHost=" + reopenedGameplayHost.name
+                + " battleSessionDriverHosts=1 foundationBattleViewHosts=1");
+            Debug.Log("TASK35_HOSTS_WIRED");
         }
 
-        static Component FindFoundationScope(Scene scene)
+        static void EnsureExactlyOneComponent<T>(GameObject target) where T : Component
         {
+            T[] components = target.GetComponents<T>();
+            if (components.Length == 0)
+            {
+                Undo.AddComponent<T>(target);
+                EditorUtility.SetDirty(target);
+                return;
+            }
+
+            if (components.Length != 1)
+            {
+                throw new InvalidOperationException(
+                    target.name + " must contain exactly one " + typeof(T).Name + "; found " + components.Length + ".");
+            }
+        }
+
+        static void RequireExactlyOneComponent<T>(GameObject target) where T : Component
+        {
+            int count = target.GetComponents<T>().Length;
+            if (count != 1)
+            {
+                throw new InvalidOperationException(
+                    target.name + " must contain exactly one " + typeof(T).Name + " after scene reopen; found " + count + ".");
+            }
+        }
+
+        static T FindSingleComponentInScene<T>(Scene scene, string label) where T : Component
+        {
+            if (typeof(T) == typeof(GameplayUiHost))
+            {
+                T[] candidates = UnityEngine.Object.FindObjectsByType<T>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+                T foundInScene = null;
+                foreach (T candidate in candidates)
+                {
+                    if (candidate.gameObject.scene != scene)
+                    {
+                        continue;
+                    }
+
+                    if (foundInScene != null)
+                    {
+                        throw new InvalidOperationException("The requested scene contains more than one " + label + ".");
+                    }
+
+                    foundInScene = candidate;
+                }
+
+                if (foundInScene == null)
+                {
+                    throw new InvalidOperationException("The requested scene does not contain a " + label + ".");
+                }
+
+                return foundInScene;
+            }
+
+            T found = null;
             foreach (GameObject root in scene.GetRootGameObjects())
             {
-                Component[] components = root.GetComponentsInChildren<Component>(true);
-                foreach (Component component in components)
+                foreach (T candidate in root.GetComponentsInChildren<T>(true))
                 {
-                    if (component != null && component.GetType().FullName == ScopeTypeName)
+                    if (found != null)
                     {
-                        return component;
+                        throw new InvalidOperationException("The requested scene contains more than one " + label + ".");
                     }
+
+                    found = candidate;
                 }
             }
 
-            return null;
+            if (found == null)
+            {
+                throw new InvalidOperationException("The requested scene does not contain a " + label + ".");
+            }
+
+            return found;
+        }
+
+        static string RequireEnvironmentVariable(string name)
+        {
+            string value = Environment.GetEnvironmentVariable(name);
+            if (string.IsNullOrWhiteSpace(value))
+            {
+                throw new InvalidOperationException(name + " is required.");
+            }
+
+            return value;
+        }
+
+        static string ReferenceGuid(UnityEngine.Object reference)
+        {
+            return reference == null
+                ? string.Empty
+                : AssetDatabase.AssetPathToGUID(AssetDatabase.GetAssetPath(reference));
+        }
+
+        static string Sha256(string value)
+        {
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] hash = sha256.ComputeHash(Encoding.UTF8.GetBytes(value));
+                return BitConverter.ToString(hash).Replace("-", string.Empty).ToLowerInvariant();
+            }
         }
     }
 }

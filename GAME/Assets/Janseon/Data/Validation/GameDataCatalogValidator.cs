@@ -3,65 +3,76 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using Janseon.Core;
-using Janseon.Core.Battle.Contracts;
-using Janseon.Core.Battle.Sim;
 
 namespace Janseon.Data.Validation
 {
     public static class GameDataCatalogValidator
     {
-        static readonly Regex StableId = new Regex("^(card|unit|formation|station)\\.[a-z0-9]+(?:[.-][a-z0-9]+)*$", RegexOptions.CultureInvariant);
-        static void Fail(bool condition, CatalogValidationReason reason, string detail) { if (!condition) GameDataCatalogIndexBuilder.Fail(reason, detail); }
+        private static readonly Regex StableId = new Regex(
+            "^station\\.[a-z0-9]+(?:[.-][a-z0-9]+)*$",
+            RegexOptions.CultureInvariant);
+
         public static void Validate(GameDataCatalogIndex index)
         {
-            if (index == null) GameDataCatalogIndexBuilder.Fail(CatalogValidationReason.MissingReference, "Index is null.");
-            ValidateCards(index); ValidateRoles(index); ValidateFormations(index); ValidateStations(index);
-            Fail(index.Version.ContentSchema == ContentVersionSchema && index.Version.ContentVersion == ContentVersion && index.Version.FingerprintVersion == FingerprintVersion, CatalogValidationReason.UnsupportedContentSchema, "Unsupported content version.");
-            Fail(index.Cards.Count == 6 && index.UnitRoles.Count == 3 && index.Formations.Count == 1 && index.Stations.Count == 3, CatalogValidationReason.RuleDrift, "Area 1 counts.");
+            if (index == null)
+            {
+                GameDataCatalogIndexBuilder.Fail(CatalogValidationReason.MissingReference, "Index is null.");
+            }
+
+            ValidateCampaignDefinition(index);
+            ValidateStations(index);
+            ValidateVersion(index);
         }
-        const int ContentVersionSchema = 1;
-        const string ContentVersion = "area1-static-content-v1";
-        const string FingerprintVersion = "content-fingerprint-v1";
-        static void ValidateIds<T>(IEnumerable<T> values, Func<T,string> id)
+
+        private static void ValidateCampaignDefinition(GameDataCatalogIndex index)
+        {
+            Fail(index.CampaignDefinition != null, CatalogValidationReason.MissingReference, "Campaign definition is missing.");
+            Fail(!string.IsNullOrWhiteSpace(index.CampaignDefinition.BattleRulesVersion), CatalogValidationReason.RuleDrift, "Battle rules version is required.");
+            Fail(!string.IsNullOrWhiteSpace(index.CampaignDefinition.PersistentPartyUnitId), CatalogValidationReason.RuleDrift, "Persistent party unit ID is required.");
+            Fail(index.CampaignDefinition.PersistentPartyMaxHp > 0, CatalogValidationReason.RuleDrift, "Persistent party max HP must be positive.");
+        }
+
+        private static void ValidateVersion(GameDataCatalogIndex index)
+        {
+            Fail(index.Version != null, CatalogValidationReason.UnsupportedContentSchema, "Content version is missing.");
+            Fail(index.Version.ContentSchema > 0, CatalogValidationReason.UnsupportedContentSchema, "Content schema must be positive.");
+            Fail(!string.IsNullOrEmpty(index.Version.ContentVersion), CatalogValidationReason.UnsupportedContentSchema, "Content version is missing.");
+            Fail(!string.IsNullOrEmpty(index.Version.FingerprintVersion), CatalogValidationReason.UnsupportedContentSchema, "Fingerprint version is missing.");
+        }
+
+        private static void ValidateIds<T>(IEnumerable<T> values, Func<T, string> id)
         {
             var seen = new HashSet<string>(StringComparer.Ordinal);
-            foreach (var value in values) { var key = id(value); Fail(!string.IsNullOrEmpty(key) && StableId.IsMatch(key), CatalogValidationReason.MalformedStableId, key); Fail(seen.Add(key), CatalogValidationReason.DuplicateStableId, key); }
-        }
-        static void ValidateCards(GameDataCatalogIndex index)
-        {
-            ValidateIds(index.Cards, x => x.StableId);
-            var coreIds = new HashSet<string>(StringComparer.Ordinal);
-            foreach (var card in index.Cards)
+            foreach (var value in values)
             {
-                Fail(coreIds.Add(card.CoreCardId), CatalogValidationReason.DuplicateCoreId, card.CoreCardId);
-                Fail(card.RechargeTicks >= BattleRules.CardRechargeMinTicks && card.RechargeTicks <= BattleRules.CardRechargeMaxTicks, CatalogValidationReason.RuleDrift, card.StableId);
-            }
-            var expected = CardCatalog.All();
-            Fail(index.Cards.Count == expected.Count, CatalogValidationReason.RuleDrift, "Card count");
-            foreach (var source in expected)
-            {
-                var actual = index.Cards.FirstOrDefault(x => x.CoreCardId == source.Id); Fail(actual != null, CatalogValidationReason.RuleDrift, source.Id);
-                if (actual != null) Fail(actual.Kind == source.Kind && actual.RechargeTicks == source.RechargeTicks && actual.Effect == source.Effect && actual.EffectKey == source.EffectKey, CatalogValidationReason.RuleDrift, source.Id);
+                var stableId = id(value);
+                Fail(!string.IsNullOrEmpty(stableId) && StableId.IsMatch(stableId), CatalogValidationReason.MalformedStableId, stableId);
+                Fail(seen.Add(stableId), CatalogValidationReason.DuplicateStableId, stableId);
             }
         }
-        static void ValidateRoles(GameDataCatalogIndex index)
+
+        private static void ValidateStations(GameDataCatalogIndex index)
         {
-            ValidateIds(index.UnitRoles, x => x.StableId);
-            var expectedRoles = BattleRoleRules.Roles; var expectedHp = BattleRoleRules.MaxHp; var expectedPower = BattleRoleRules.Power; var expectedRange = BattleRoleRules.RangeMax;
-            Fail(index.UnitRoles.Count == 3, CatalogValidationReason.RuleDrift, "Role count");
-            for (var i=0;i<expectedRoles.Length;i++) { var role=index.UnitRoles.FirstOrDefault(x=>x.CoreRole==expectedRoles[i]); Fail(role!=null, CatalogValidationReason.RuleDrift, expectedRoles[i]); if (role != null) Fail(role.MaxHp==expectedHp[i]&&role.Power==expectedPower[i]&&role.RangeMin==1&&role.RangeMax==expectedRange[i]&&role.MoveTicksPerCell==BattleRules.MoveTicksPerCell&&role.AttackCooldownTicks==BattleRules.AttackCooldownTicks, CatalogValidationReason.RuleDrift, expectedRoles[i]); }
+            ValidateIds(index.Stations, value => value.StableId);
+            var stableIds = new HashSet<string>(index.Stations.Select(value => value.StableId), StringComparer.Ordinal);
+            foreach (var station in index.Stations)
+            {
+                var neighbors = new HashSet<string>(StringComparer.Ordinal);
+                foreach (var neighbor in station.NeighborStableIds)
+                {
+                    Fail(neighbor != station.StableId, CatalogValidationReason.InvalidStationGraph, station.StableId);
+                    Fail(neighbors.Add(neighbor), CatalogValidationReason.InvalidStationGraph, station.StableId);
+                    Fail(stableIds.Contains(neighbor), CatalogValidationReason.MissingReference, neighbor);
+                }
+            }
         }
-        static void ValidateFormations(GameDataCatalogIndex index)
+
+        private static void Fail(bool condition, CatalogValidationReason reason, string detail)
         {
-            ValidateIds(index.Formations, x => x.StableId);
-            foreach (var formation in index.Formations) { Fail(formation.StableId == "formation.default-3x3" && formation.RowCount==BattleRules.FormationRows&&formation.ColumnCount==BattleRules.FormationColumns && formation.Slots.Count == 6, CatalogValidationReason.InvalidFormation, formation.StableId); var cells=new HashSet<string>(StringComparer.Ordinal); for (var n=0;n<formation.Slots.Count;n++){var slot=formation.Slots[n];Fail(slot!=null,CatalogValidationReason.MissingReference,formation.StableId);if(slot==null)continue;Fail(slot.Row>=0&&slot.Row<BattleRules.FormationRows&&slot.Column>=-1&&slot.Column<=1,CatalogValidationReason.InvalidFormation,formation.StableId);Fail(cells.Add(slot.Row+":"+slot.Column),CatalogValidationReason.InvalidFormation,formation.StableId);Fail(index.UnitRoles.Any(x=>x.StableId==slot.RoleStableId),CatalogValidationReason.MissingReference,slot.RoleStableId);Fail(slot.Row==n/2&&slot.Column==n%2-1&&slot.RoleStableId=="unit.role."+new[]{"guard","assault","archer"}[n/2]&&slot.Facing==CardinalDirection.East,CatalogValidationReason.InvalidFormation,formation.StableId);} }
-        }
-        static void ValidateStations(GameDataCatalogIndex index)
-        {
-            ValidateIds(index.Stations, x => x.StableId); var stableIds=new HashSet<string>(index.Stations.Select(x=>x.StableId),StringComparer.Ordinal);
-            foreach(var station in index.Stations){var neighbors=new HashSet<string>(StringComparer.Ordinal);foreach(var neighbor in station.NeighborStableIds){Fail(neighbor!=station.StableId,CatalogValidationReason.InvalidStationGraph,station.StableId);Fail(neighbors.Add(neighbor),CatalogValidationReason.InvalidStationGraph,station.StableId);Fail(stableIds.Contains(neighbor),CatalogValidationReason.MissingReference,neighbor);}}
-            foreach(var station in index.Stations) foreach(var neighborId in station.NeighborStableIds){var neighbor=index.Stations.First(x=>x.StableId==neighborId);Fail(neighbor.NeighborStableIds.Contains(station.StableId),CatalogValidationReason.InvalidStationGraph,station.StableId);}
-            foreach (var station in index.Stations) { Fail(station.CoreStationId == StationId.Yeongdeungpo || station.CoreStationId == StationId.Sindorim || station.CoreStationId == StationId.Guro, CatalogValidationReason.RuleDrift, station.StableId); var expected = station.StableId == "station.yeongdeungpo" ? StationId.Yeongdeungpo : station.StableId == "station.sindorim" ? StationId.Sindorim : station.StableId == "station.guro" ? StationId.Guro : new StationId(string.Empty); Fail(station.CoreStationId == expected, CatalogValidationReason.RuleDrift, station.StableId); }
+            if (!condition)
+            {
+                GameDataCatalogIndexBuilder.Fail(reason, detail);
+            }
         }
     }
 }

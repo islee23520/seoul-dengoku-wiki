@@ -1,3 +1,84 @@
-using System;using System.Linq;using NUnit.Framework;using UnityEditor;using Janseon.Core.Battle.Contracts;using Janseon.Core.Data;using Janseon.Data.Authoring;using Janseon.Data.Editor;using Janseon.Data.Fingerprints;using Janseon.Data.Validation;
-namespace Janseon.Foundation.Tests { public sealed class Area1GameDataBuilderTests { const string Root="Assets/TempArea1BuilderTests";[TearDown]public void Cleanup(){AssetDatabase.DeleteAsset(Root);AssetDatabase.Refresh();}[Test]public void BuildTwice_ProducesEquivalentSerializedCatalog(){Area1GameDataBuilder.BuildAtRoot(Root);var firstAsset=AssetDatabase.LoadAssetAtPath<GameDataCatalogAsset>(Root+"/Area1GameDataCatalog.asset");AssertSerializedCatalog(firstAsset);var first=GameDataCatalogIndexBuilder.Build(firstAsset);var firstFingerprint=CanonicalContentFingerprint.Compute(first);Area1GameDataBuilder.BuildAtRoot(Root);var secondAsset=AssetDatabase.LoadAssetAtPath<GameDataCatalogAsset>(Root+"/Area1GameDataCatalog.asset");AssertSerializedCatalog(secondAsset);var second=GameDataCatalogIndexBuilder.Build(secondAsset);var secondFingerprint=CanonicalContentFingerprint.Compute(second);Assert.AreEqual(firstFingerprint,secondFingerprint);string[] expected={"Area1GameDataCatalog.asset","Cards/Card_EncourageMorale.asset","Cards/Card_GuardShieldwall.asset","Cards/Card_MobilityRegroup.asset","Cards/Card_PassageRetreat.asset","Cards/Card_PincerFocus.asset","Cards/Card_SupplyHeal.asset","Formations/Formation_Default3x3.asset","Stations/Station_Guro.asset","Stations/Station_Sindorim.asset","Stations/Station_Yeongdeungpo.asset","UnitRoles/UnitRole_Archer.asset","UnitRoles/UnitRole_Assault.asset","UnitRoles/UnitRole_Guard.asset"};string[] actual=AssetDatabase.FindAssets("t:Object",new[]{Root}).Select(AssetDatabase.GUIDToAssetPath).Where(p=>!AssetDatabase.IsValidFolder(p)).Select(p=>p.Substring(Root.Length+1)).OrderBy(p=>p,StringComparer.Ordinal).ToArray();Assert.AreEqual(expected,actual);}
-static void AssertSerializedCatalog(GameDataCatalogAsset catalog){Assert.IsNotNull(catalog);Assert.AreEqual(6,catalog.cards.Length);Assert.AreEqual(3,catalog.unitRoles.Length);Assert.AreEqual(1,catalog.formations.Length);Assert.AreEqual(3,catalog.stations.Length);var card=catalog.cards[0];Assert.AreEqual("card.guard-shieldwall",card.stableId);Assert.AreEqual("guard-shieldwall",card.coreCardId);Assert.AreEqual(CardKind.Character,card.kind);Assert.AreEqual(300,card.rechargeTicks);Assert.AreEqual(-3,card.effect);Assert.AreEqual("front_damage",card.effectKey);var role=catalog.unitRoles[0];Assert.AreEqual("unit.role.guard",role.stableId);Assert.AreEqual("근위",role.coreRole);Assert.AreEqual(30,role.maxHp);Assert.AreEqual(4,role.power);Assert.AreEqual(1,role.rangeMin);Assert.AreEqual(1,role.rangeMax);Assert.AreEqual(10,role.moveTicksPerCell);Assert.AreEqual(30,role.attackCooldownTicks);var formation=catalog.formations[0];Assert.AreEqual("formation.default-3x3",formation.stableId);Assert.AreEqual(3,formation.rowCount);Assert.AreEqual(3,formation.columnCount);Assert.AreEqual(6,formation.slots.Length);Assert.AreEqual("unit.role.guard",formation.slots[0].roleStableId);Assert.AreEqual(0,formation.slots[0].row);Assert.AreEqual(-1,formation.slots[0].column);Assert.AreEqual(Janseon.Core.CardinalDirection.East,formation.slots[0].facing);Assert.AreEqual("station.sindorim",catalog.stations[0].neighbors[0]);Assert.AreEqual("station.yeongdeungpo",catalog.stations[1].neighbors[0]);Assert.AreEqual("station.guro",catalog.stations[1].neighbors[1]);Assert.AreEqual("station.sindorim",catalog.stations[2].neighbors[0]);}}}
+using Janseon.Data.Fingerprints;
+using Janseon.Data.Validation;
+using Janseon.Foundation.Tests.Fixtures;
+using NUnit.Framework;
+using UnityEditor;
+
+namespace Janseon.Foundation.Tests
+{
+    public sealed class Area1GameDataBuilderTests
+    {
+        [Test]
+        public void CatalogBuild_ValidFixtureProducesIndexWithoutChangingItsFingerprint()
+        {
+            var catalog = TestGameDataCatalog.Create();
+            try
+            {
+                var before = CanonicalContentFingerprint.Compute(GameDataCatalogIndexBuilder.Build(catalog));
+
+                var index = GameDataCatalogIndexBuilder.Build(catalog);
+
+                var after = CanonicalContentFingerprint.Compute(GameDataCatalogIndexBuilder.Build(catalog));
+                Assert.That(index, Is.Not.Null);
+                Assert.That(after, Is.EqualTo(before));
+            }
+            finally
+            {
+                TestGameDataCatalog.Destroy(catalog);
+            }
+        }
+
+        [Test]
+        public void CatalogBuild_SerializedCampaignMutationProjectsExactValueAndChangesFingerprint()
+        {
+            var catalog = TestGameDataCatalog.Create();
+            try
+            {
+                var baseline = GameDataCatalogIndexBuilder.Build(catalog);
+                var baselineFingerprint = CanonicalContentFingerprint.Compute(baseline);
+                var campaign = new SerializedObject(catalog.campaignDefinition);
+                var battleRulesVersion = campaign.FindProperty("battleRulesVersion");
+                var expectedBattleRulesVersion = battleRulesVersion.stringValue + ".mutated";
+                battleRulesVersion.stringValue = expectedBattleRulesVersion;
+                campaign.ApplyModifiedPropertiesWithoutUndo();
+                var sourceBeforeBuilds = EditorJsonUtility.ToJson(catalog.campaignDefinition);
+
+                var projected = GameDataCatalogIndexBuilder.Build(catalog);
+                var projectedFingerprint = CanonicalContentFingerprint.Compute(projected);
+                var rebuilt = GameDataCatalogIndexBuilder.Build(catalog);
+
+                Assert.That(projected.CampaignDefinition.BattleRulesVersion,
+                    Is.EqualTo(catalog.campaignDefinition.BattleRulesVersion));
+                Assert.That(projected.CampaignDefinition.BattleRulesVersion,
+                    Is.EqualTo(expectedBattleRulesVersion));
+                Assert.That(projectedFingerprint, Is.Not.EqualTo(baselineFingerprint));
+                Assert.That(CanonicalContentFingerprint.Compute(rebuilt), Is.EqualTo(projectedFingerprint));
+                Assert.That(EditorJsonUtility.ToJson(rebuilt), Is.EqualTo(EditorJsonUtility.ToJson(projected)));
+                Assert.That(EditorJsonUtility.ToJson(catalog.campaignDefinition), Is.EqualTo(sourceBeforeBuilds));
+            }
+            finally
+            {
+                TestGameDataCatalog.Destroy(catalog);
+            }
+        }
+
+        [Test]
+        public void CatalogBuild_InvalidFixtureFailsExplicitly()
+        {
+            var catalog = TestGameDataCatalog.Create();
+            try
+            {
+                catalog.stations[0].neighbors = new[] { "station.missing" };
+
+                var exception = Assert.Throws<CatalogValidationException>(
+                    () => GameDataCatalogIndexBuilder.Build(catalog));
+
+                Assert.That(exception.Reason, Is.EqualTo(CatalogValidationReason.MissingReference));
+            }
+            finally
+            {
+                TestGameDataCatalog.Destroy(catalog);
+            }
+        }
+    }
+}

@@ -42,3 +42,6 @@ Game/ProjectSettings/*.asset whitespace=-blank-at-eol
 
 # Evidence PNGs stay as plain git objects (small, must render inline on private-repo PRs).
 evidence/**/*.png !filter !diff !merge text=none
+
+# Render evidence must remain byte-exact PNG, not text-normalized.
+evidence/layered-full3d-16x9/task-13/render/*.png -text

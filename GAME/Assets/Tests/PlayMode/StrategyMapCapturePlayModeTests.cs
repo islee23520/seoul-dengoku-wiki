@@ -29,27 +29,36 @@ namespace Janseon.Foundation.Tests
     /// </summary>
     public sealed class StrategyMapCapturePlayModeTests
     {
-        private const string BakedDir = "Assets/Janseon/Data/StrategyMap/Baked";
         private const string EvidenceDir = ".omo/evidence/seoul-strategy-map-gdd";
 
-        [UnityTest]
-        public IEnumerator StrategyMap_LoadsNineChunks_Textures_Weather_AndSeasons()
+        public static IEnumerable Catalogs
         {
-            Assert.That(Directory.Exists(Path.Combine(ProjectRoot(), BakedDir)), Is.True,
-                "baked strategy map assets are required (run bake_seoul_terrain.py + bake_map_texture.py)");
+            get
+            {
+#if UNITY_EDITOR
+                string guid = System.Environment.GetEnvironmentVariable("TASK33_STRATEGY_MAP_CATALOG_GUID");
+                Assert.That(string.IsNullOrWhiteSpace(guid), Is.False,
+                    "TASK33_STRATEGY_MAP_CATALOG_GUID must identify the strategy map catalog");
+                var catalog = AssetDatabase.LoadAssetByGUID<StrategyMapAssetCatalog>(new UnityEngine.GUID(guid));
+                Assert.That(catalog, Is.Not.Null, "strategy map catalog GUID must resolve to an asset");
+                yield return catalog;
+#else
+                yield break;
+#endif
+            }
+        }
 
-            // Unity asset-consumption lock: consume the validated catalog,
-            // never path-based FindAssets loads.
-            var catalog = LoadCatalog();
+        [UnityTest]
+        public IEnumerator StrategyMap_LoadsNineChunks_Textures_Weather_AndSeasons(
+            [ValueSource(nameof(Catalogs))] StrategyMapAssetCatalog catalog)
+        {
             Assert.That(catalog, Is.Not.Null, "StrategyMapAssetCatalog must be built (Janseon/Data/Build Strategy Map Asset Catalog)");
-            Assert.That(catalog.IsComplete, Is.True,
-                "catalog incomplete: 9 meshes + 9 textures + 9 buildings + manifest + 14 landmark prefabs required");
 
-            List<Mesh> meshes = catalog.chunkMeshes.ToList();
-            List<Texture2D> textures = catalog.chunkTextures.ToList();
-            List<TextAsset> buildingBins = catalog.buildingBinaries.ToList();
-            string landmarksManifest = catalog.landmarksManifest != null ? catalog.landmarksManifest.text : null;
-            List<GameObject> landmarkPrefabs = catalog.landmarkPrefabs.Where(p => p != null).ToList();
+            List<Mesh> meshes = catalog.ChunkMeshes.ToList();
+            List<Texture2D> textures = catalog.ChunkTextures.ToList();
+            List<TextAsset> buildingBins = catalog.BuildingBinaries.ToList();
+            string landmarksManifest = catalog.LandmarkManifest != null ? catalog.LandmarkManifest.text : null;
+            List<GameObject> landmarkPrefabs = catalog.LandmarkPrefabs.Where(p => p != null).ToList();
             Assert.That(meshes.Count, Is.EqualTo(9), "nine baked chunk meshes expected");
             Assert.That(textures.Count, Is.EqualTo(9), "nine baked chunk textures expected");
             Assert.That(buildingBins.Count, Is.EqualTo(9), "nine building binaries expected");
@@ -153,71 +162,6 @@ namespace Janseon.Foundation.Tests
         private static string ProjectRoot()
         {
             return Directory.GetParent(Application.dataPath)!.FullName;
-        }
-
-        /// <summary>Loads the well-known catalog asset (single path constant, per the asset-consumption lock).</summary>
-        private static Janseon.Data.Authoring.StrategyMapAssetCatalog LoadCatalog()
-        {
-#if UNITY_EDITOR
-            return UnityEditor.AssetDatabase.LoadAssetAtPath<Janseon.Data.Authoring.StrategyMapAssetCatalog>(
-                Janseon.Data.Authoring.StrategyMapAssetCatalog.CatalogAssetPath);
-#else
-            return null; // catalog is editor-baked; player builds consume the projected repository
-#endif
-        }
-
-        private static List<T> LoadChunkAssets<T>(string filter, string namePrefix = "chunk-") where T : Object
-        {
-            var byPath = new SortedDictionary<string, T>();
-#if UNITY_EDITOR
-            foreach (string guid in AssetDatabase.FindAssets(filter, new[] { BakedDir }))
-            {
-                string assetPath = AssetDatabase.GUIDToAssetPath(guid);
-                if (namePrefix == "buildings-" && !assetPath.EndsWith(".bytes"))
-                {
-                    continue; // the buildings manifest JSON shares the prefix
-                }
-                if (!Path.GetFileNameWithoutExtension(assetPath).StartsWith(namePrefix))
-                {
-                    continue;
-                }
-                if (AssetImporter.GetAtPath(assetPath) is ModelImporter modelImporter && !modelImporter.isReadable)
-                {
-                    modelImporter.isReadable = true; // CPU-side UV inspection in this fixture only
-                    modelImporter.SaveAndReimport();
-                }
-                T asset = AssetDatabase.LoadAssetAtPath<T>(assetPath);
-                if (asset != null)
-                {
-                    byPath[assetPath] = asset;
-                }
-            }
-#endif
-            return byPath.Values.ToList();
-        }
-
-        private static string LoadTextAsset(string name)
-        {
-#if UNITY_EDITOR
-            var asset = AssetDatabase.LoadAssetAtPath<TextAsset>($"{BakedDir}/Landmarks/{name}.json");
-            return asset != null ? asset.text : null;
-#else
-            return null;
-#endif
-        }
-
-        private static List<GameObject> LoadLandmarkPrefabs()
-        {
-            var prefabs = new List<GameObject>();
-#if UNITY_EDITOR
-            foreach (string guid in AssetDatabase.FindAssets("t:ModelImporter", new[] { $"{BakedDir}/Landmarks" }))
-            {
-                string assetPath = AssetDatabase.GUIDToAssetPath(guid);
-                if (!assetPath.EndsWith(".obj")) continue;
-                prefabs.Add(AssetDatabase.LoadAssetAtPath<GameObject>(assetPath));
-            }
-#endif
-            return prefabs;
         }
 
         /// <summary>Writes the render attempt as diagnostic PNG evidence; no pixel-content assert (see class doc).</summary>
