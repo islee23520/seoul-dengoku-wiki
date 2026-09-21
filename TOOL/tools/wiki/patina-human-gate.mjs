@@ -10,7 +10,14 @@ const repoRoot = resolve(here, '../../..')
 const defaultRoot = resolve(repoRoot, 'WEB/wiki-source/world')
 const defaultReceipt = resolve(here, 'patina-human-receipt.json')
 
+const acceptedInterpretations = new Set(['human', 'mostly human'])
+
 const sha256 = (text) => createHash('sha256').update(text).digest('hex')
+
+const isApprovedFor = (review, digest) =>
+  review?.status === 'approved' &&
+  typeof review.reviewer === 'string' && review.reviewer.trim() !== '' &&
+  review.sourceSha256 === digest
 
 export async function listPublicLore(root = defaultRoot) {
   return (await readdir(root, { withFileTypes: true }))
@@ -36,8 +43,13 @@ export async function verifyHumanReceipt({ root = defaultRoot, receiptPath = def
       continue
     }
     const text = await readFile(path, 'utf8')
-    if (document.sha256 !== sha256(text)) failures.push(`sha256:${key}`)
-    if (document.interpretation !== 'human') failures.push(`interpretation:${key}:${document.interpretation}`)
+    const digest = sha256(text)
+    if (document.sha256 !== digest) failures.push(`sha256:${key}`)
+    if (document.skipped === true) {
+      if (!isApprovedFor(document.manualReview, digest)) failures.push(`skipped:${key}:${document.skipReason}`)
+      continue
+    }
+    if (!acceptedInterpretations.has(document.interpretation)) failures.push(`interpretation:${key}:${document.interpretation}`)
   }
 
   for (const key of expected.keys()) {
@@ -72,11 +84,13 @@ export async function writeHumanReceipt({ root = defaultRoot, receiptPath = defa
   for (const path of paths) {
     const text = await readFile(path, 'utf8')
     const result = await scoreWithPatina(path)
+    const deterministic = result.scores?.deterministic
     documents.push({
       path: relative(root, path).replaceAll('\\', '/'),
       sha256: sha256(text),
       score: result.overall,
-      interpretation: result.scores?.deterministic?.interpretation ?? 'unknown',
+      interpretation: deterministic?.interpretation ?? 'unknown',
+      ...(deterministic?.skipped ? { skipped: true, skipReason: deterministic.skipReason } : {}),
     })
   }
   const receipt = { schema: 'seoul-dengoku.patina-human.v1', documents }
