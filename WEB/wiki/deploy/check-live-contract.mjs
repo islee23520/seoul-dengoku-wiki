@@ -39,7 +39,9 @@ for (const route of regressionRoutes) {
 for (const [route, destination] of redirectRoutes) {
   const response = await fetch(`${baseUrl}${route}`, { redirect: 'manual' })
   if (response.status !== 308) failures.push(`redirect-http:${response.status}:${route}`)
-  if (response.headers.get('location') !== destination) failures.push(`redirect-location:${route}:${response.headers.get('location')}`)
+  const location = response.headers.get('location')
+  const pathname = location ? new URL(location, baseUrl).pathname : null
+  if (pathname !== destination) failures.push(`redirect-location:${route}:${location}`)
 }
 
 const result = {

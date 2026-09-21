@@ -85,6 +85,7 @@ test('Docker builder is reproducible and exports the complete deployment contrac
   assert.match(liveContract, /\/system-design\/regions\//)
   assert.match(liveContract, /\/wiki\/world\/World-and-Subway-Layers/)
   assert.match(liveContract, /redirect-location/)
+  assert.match(liveContract, /new URL\(location, baseUrl\)\.pathname/)
   const catalogGenerator = await readFile(resolve(deployDir, '../../../WEB/wiki/scripts/generate-catalog.mjs'), 'utf8')
   assert.match(catalogGenerator, /TOOL\/tools\/regions\/data\/atlas-data\.js/)
   assert.doesNotMatch(catalogGenerator, /GDD\/system-design\/regions\/atlas-data\.js/)
