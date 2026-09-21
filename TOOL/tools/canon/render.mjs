@@ -19,6 +19,12 @@ function renderInline(inline, resolveDocHref) {
   }
 }
 
+function renderList(block, resolveDocHref) {
+  return block.items
+    .map((item, index) => `${block.ordered ? `${index + 1}. ` : '- '}${item.map((inline) => renderInline(inline, resolveDocHref)).join('')}`)
+    .join('\n')
+}
+
 // `renderTable(block)` is the only domain-specific part; every other block kind is shared.
 export function renderDocument({ document, blocks }, renderTable, resolveDocHref) {
   const blocksById = new Map(blocks.map((block) => [block.id, block]))
@@ -28,6 +34,8 @@ export function renderDocument({ document, blocks }, renderTable, resolveDocHref
         return `${'#'.repeat(block.level)} ${block.inlines.map((inline) => renderInline(inline, resolveDocHref)).join('')}`
       case 'paragraph':
         return block.inlines.map((inline) => renderInline(inline, resolveDocHref)).join('')
+      case 'list':
+        return renderList(block, resolveDocHref)
       case 'table':
         return renderTable(block)
       default:

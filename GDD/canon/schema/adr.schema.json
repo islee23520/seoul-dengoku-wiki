@@ -1,0 +1,219 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "adr.schema.json",
+  "title": "ADR canon (third JSON-canon domain, GDD)",
+  "description": "Structural contract for GDD/canon/locales/ko-KR/adr-003.json. Shared definitions are intentionally duplicated from offices.schema.json/structures.schema.json (no cross-file $ref). FK and document-order integrity are enforced by TOOL/tools/wiki/adr-canon.mjs, not by this schema.",
+  "$defs": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "inline": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": [
+            "kind",
+            "text"
+          ],
+          "properties": {
+            "kind": {
+              "const": "text"
+            },
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[^\\n\\r]+$"
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "cell": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[^|\\n\\r]+$"
+    },
+    "block": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": [
+            "id",
+            "kind",
+            "level",
+            "inlines"
+          ],
+          "properties": {
+            "id": {
+              "$ref": "#/$defs/id"
+            },
+            "kind": {
+              "const": "heading"
+            },
+            "level": {
+              "enum": [
+                1,
+                2,
+                3
+              ]
+            },
+            "inlines": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/$defs/inline"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "id",
+            "kind",
+            "inlines"
+          ],
+          "properties": {
+            "id": {
+              "$ref": "#/$defs/id"
+            },
+            "kind": {
+              "const": "paragraph"
+            },
+            "inlines": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/$defs/inline"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "id",
+            "kind",
+            "ordered",
+            "items"
+          ],
+          "properties": {
+            "id": {
+              "$ref": "#/$defs/id"
+            },
+            "kind": {
+              "const": "list"
+            },
+            "ordered": {
+              "enum": [
+                true,
+                false
+              ]
+            },
+            "items": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "$ref": "#/$defs/inline"
+                }
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "id",
+            "kind",
+            "header",
+            "rows"
+          ],
+          "properties": {
+            "id": {
+              "$ref": "#/$defs/id"
+            },
+            "kind": {
+              "const": "table"
+            },
+            "header": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/$defs/cell"
+              }
+            },
+            "rows": {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "$ref": "#/$defs/cell"
+                }
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "oneOf": [
+    {
+      "title": "locales/ko-KR/adr-003.json",
+      "type": "object",
+      "required": [
+        "schemaVersion",
+        "locale",
+        "document",
+        "blocks"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "$ref": "#/$defs/schemaVersion"
+        },
+        "locale": {
+          "const": "ko-KR"
+        },
+        "document": {
+          "type": "object",
+          "required": [
+            "id",
+            "blockIds"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^doc\\.[A-Za-z0-9-]+$"
+            },
+            "blockIds": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "blocks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/block"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  ]
+}

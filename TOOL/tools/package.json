@@ -8,7 +8,7 @@
     "node": ">=20"
   },
   "scripts": {
-    "test": "node policy/normalize-creative-names.mjs && node --test policy/test-pr-evidence.mjs && node wiki/test-build-wiki.mjs && node wiki/test-unity-architecture-docs.mjs && node --test canon/test-canon.mjs wiki/test-offices-canon.mjs wiki/test-structures-canon.mjs",
+    "test": "node policy/normalize-creative-names.mjs && node --test policy/test-pr-evidence.mjs && node wiki/test-build-wiki.mjs && node wiki/test-unity-architecture-docs.mjs && node --test canon/test-canon.mjs wiki/test-offices-canon.mjs wiki/test-structures-canon.mjs wiki/test-adr-canon.mjs",
     "test:names": "node policy/normalize-creative-names.mjs && node --test policy/test-private-organization-names.mjs",
     "write:names": "node policy/normalize-creative-names.mjs --write",
     "test:design-store": "node --test store/test-design-store-capture.mjs",

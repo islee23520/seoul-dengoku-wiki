@@ -32,6 +32,7 @@ const excludedPrefixes = [
 ];
 const excludedFiles = new Set([
   'GDD/adr/ADR-003-real-place-and-station-naming.md',
+  'GDD/canon/locales/ko-KR/adr-003.json',
   'RESEARCH/verification/creative-name-normalization.json',
   'TOOL/tools/wiki/company-aliases.json',
   'TOOL/tools/wiki/world-atlas-schema.mjs',
