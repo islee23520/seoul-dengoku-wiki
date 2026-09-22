@@ -1,8 +1,8 @@
 # ADR-005 — 백엔드 목적: 호스트 세션 기반 멀티플레이
 
-- 상태: 수용됨 (소유자 방향 확정 2026-09-18; 전송·신원·저장 조항은 [ADR-006](ADR-006-backend-aspnet-core-coordinator.md)으로 대체)
-- 선행: ADR-004 (루트 7도메인 — `Backend/` 루트 유지), [온라인 유저 여정](../Online-User-Journey.md) (본 ADR로 온라인 전제 갱신)
-- 후속: [ADR-006](ADR-006-backend-aspnet-core-coordinator.md) (백엔드 구현 Y2K 탈피 — 결정 4·5·6, 규칙 2 저장 예외, 파급 포트·인프라 명세를 대체)
+- 상태: 수용됨 (소유자 방향 확정 2026-09-18; 전송·신원·저장 조항은 [ADR-006](ADR-006-backend-aspnet-core-coordinator.md)으로 대체; 제품 세션 수명·권위 프로세스·참가자 신원 뿌리·월드 보존은 [ADR-008](ADR-008-local-first-steam-sessions.md)으로 개정)
+- 선행: ADR-004 (루트 7도메인 — `Backend/` 루트 유지), [온라인 유저 여정](../Online-User-Journey.md) (본 ADR로 온라인 전제 갱신, 제품 세션은 ADR-008)
+- 후속: [ADR-006](ADR-006-backend-aspnet-core-coordinator.md) (백엔드 구현 Y2K 탈피 — 결정 4·5·6, 규칙 2 저장 예외, 파급 포트·인프라 명세를 대체); [ADR-008](ADR-008-local-first-steam-sessions.md) (제품 로컬 우선 Steam 세션 — 결정 2·3의 제품 해석을 개정. ASP.NET Core 구현은 대체하지 않음)
 
 ## 배경
 
