@@ -116,6 +116,7 @@ for (const name of listMarkdown(referenceDir)) {
 // 후보 수집: LORE는 재귀(평면 스템), 나머지 도메인은 루트 평면 md + 루트 4문서
 const candidates = []
 for (const { domain, dir } of DOMAIN_ROOTS) {
+  if (!['world', 'rules', 'design'].includes(domain)) throw new Error('publisher rejected ' + domain)
   if (domain === 'world') {
     for (const { name, src } of listLoreMarkdown(dir)) {
       candidates.push({ name, src, domain })
