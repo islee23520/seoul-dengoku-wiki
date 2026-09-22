@@ -22,7 +22,7 @@ test('all canonical people are indexed and linked to a canon card', async () => 
   assert.equal(sourceRoutes.filter((route) => route.startsWith('/world/Core-Characters#인물-')).length, 0)
   for (const route of sourceRoutes) {
     const [document, anchor] = route.replace('/world/', '').split('#')
-    const markdown = await readFile(resolve(import.meta.dirname, `../../../LORE/characters/${document}.md`), 'utf8')
+    const markdown = await readFile(resolve(import.meta.dirname, `../../lore/characters/${document}.md`), 'utf8')
     const expected = anchor.startsWith('인물-') ? `### 인물 ${anchor.slice(3)}` : `## ${anchor}`
     assert.ok(markdown.includes(expected), route)
   }
