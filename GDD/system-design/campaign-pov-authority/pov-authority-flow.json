@@ -1,0 +1,72 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "서울:전국 · 캠페인 POV와 권한 전이",
+    "quality_profile": "standard",
+    "legend": { "mode": "hidden" }
+  },
+  "lanes": [
+    { "id": "pov", "label": "현재 인물 시점" },
+    { "id": "role", "label": "권한 층" },
+    { "id": "action", "label": "명령 경로" },
+    { "id": "isolation", "label": "고립과 복원", "variant": "exception" }
+  ],
+  "mainPath": ["povNow", "member", "leader", "office", "ruler", "propose"],
+  "nodes": [
+    { "id": "povNow", "lane": "pov", "col": 0, "type": "frontend", "label": "현재 인물 POV", "sublabel": "위치·지식 불변" },
+    { "id": "member", "lane": "role", "col": 1, "type": "frontend", "label": "일반 구성원", "sublabel": "자기 분대만" },
+    { "id": "leader", "lane": "role", "col": 2, "type": "frontend", "label": "파티 지휘관", "sublabel": "위임된 동행만" },
+    { "id": "office", "lane": "role", "col": 3, "type": "security", "label": "관직 보유자", "sublabel": "관할은 결재" },
+    { "id": "ruler", "lane": "role", "col": 4, "type": "security", "label": "팩션 통치자", "sublabel": "전권 없음" },
+    { "id": "direct", "lane": "action", "col": 2, "type": "backend", "label": "직접 제어", "sublabel": "분대·소유·위임" },
+    { "id": "propose", "lane": "action", "col": 5, "type": "messagebus", "label": "제안·승인·거부", "sublabel": "세력 내 미위임" },
+    { "id": "isolate", "lane": "isolation", "col": 3, "type": "security", "label": "포획·실종·단절", "sublabel": "관직 층은 유지" },
+    { "id": "lock", "lane": "isolation", "col": 4, "type": "security", "label": "신규 원격 잠김", "sublabel": "전송만 정지" },
+    { "id": "restore", "lane": "isolation", "col": 5, "type": "cloud", "label": "복원·지정 대리", "sublabel": "POV 불변" }
+  ],
+  "edges": [
+    { "from": "povNow", "to": "member", "label": "시점 고정", "role": "main" },
+    { "from": "member", "to": "leader", "label": "점진 권한", "role": "main" },
+    { "from": "leader", "to": "office", "label": "관직 수임", "role": "main" },
+    { "from": "office", "to": "ruler", "label": "통치 승계", "role": "main" },
+    { "from": "member", "to": "direct", "label": "자기 분대", "role": "branch" },
+    { "from": "leader", "to": "direct", "label": "명시 위임만", "role": "branch" },
+    { "from": "office", "to": "propose", "label": "관할 결재", "role": "branch" },
+    { "from": "ruler", "to": "propose", "label": "미위임 결재", "role": "main" },
+    { "from": "povNow", "to": "isolate", "label": "포획·단절", "role": "error" },
+    { "from": "isolate", "to": "lock", "label": "신규 전송 잠금", "role": "error" },
+    { "from": "lock", "to": "restore", "label": "복원 또는 대리", "role": "branch" },
+    { "from": "restore", "to": "direct", "label": "위임 채널 재개", "role": "return" }
+  ],
+  "cards": [
+    {
+      "dot": "slate",
+      "title": "POV 불변조건",
+      "items": [
+        "캠페인 시점은 항상 현재 조종 중인 한 인물이다.",
+        "지도의 위치·지식은 그 인물에 묶이며 대리가 바꿔 쓰지 않는다.",
+        "세력 전역을 한 화면에서 직접 조종하는 전권은 없다."
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "점진 권한",
+      "items": [
+        "직접 제어는 현재 인물 분대, 개인 소유, 명시 위임에만 열린다.",
+        "파티 지휘는 동행 전원에 자동으로 열리지 않는다. 동의한 위임 분대만이다.",
+        "관직의 관할은 제안·승인·거부이고, 직접 제어는 별도 위임이 있을 때만이다.",
+        "자기 세력의 미위임 자산은 제안·승인·거부로만 움직인다. 다른 세력은 외교다."
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "고립과 대리",
+      "items": [
+        "포획·실종·통신 단절은 신규 원격 전송만 잠근다. 관직·관할 층은 그대로 보인다.",
+        "현장 개인 행동의 가부는 신체 상태에 따르며 이 도식 밖이다.",
+        "지정 대리는 위임 범위의 수락·집행 채널일 뿐, 플레이어 POV를 바꾸지 않는다."
+      ]
+    }
+  ]
+}
