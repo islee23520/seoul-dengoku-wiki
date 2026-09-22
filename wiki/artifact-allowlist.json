@@ -1,0 +1,32 @@
+{
+  "routes": [
+    {
+      "id": "article",
+      "disposition": "allow"
+    },
+    {
+      "id": "person",
+      "disposition": "allow"
+    },
+    {
+      "id": "state",
+      "disposition": "allow"
+    },
+    {
+      "id": "map",
+      "disposition": "allow"
+    },
+    {
+      "id": "search",
+      "disposition": "allow"
+    },
+    {
+      "id": "update",
+      "disposition": "allow"
+    },
+    {
+      "id": "gdd",
+      "disposition": "allow"
+    }
+  ]
+}
