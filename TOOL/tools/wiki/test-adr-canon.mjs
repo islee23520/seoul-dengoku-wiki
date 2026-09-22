@@ -13,14 +13,17 @@ const adrDir = resolve(repoRoot, 'GDD/adr')
 const outputPath = resolve(adrDir, 'ADR-003-real-place-and-station-naming.md')
 const adr002OutputPath = resolve(adrDir, 'ADR-002-character-candidate-retrospective.md')
 const adr001OutputPath = resolve(adrDir, 'ADR-001-repository-delivery-policy.md')
+const adr004OutputPath = resolve(adrDir, 'ADR-004-root-domain-structure.md')
 const files = {
   locale: 'locales/ko-KR/adr-003.json',
   locale002: 'locales/ko-KR/adr-002.json',
   locale001: 'locales/ko-KR/adr-001.json',
+  locale004: 'locales/ko-KR/adr-004.json',
 }
 const BASELINE_SHA = '56c479db4d89478e55f974e691c0819e6ac339648351f934544329af09ff0ad4'
 const BASELINE_SHA_002 = '131249858dc513cb99f8b47923d3cf1c085d75274752bd72f891158ba5247a6e'
 const BASELINE_SHA_001 = '7889c3adfc96b32137790d6d2f4242536425eb520028e83b06a6631fbcb156db'
+const BASELINE_SHA_004 = 'f0e81d8bf6b248470c7794d377c6855aff069cc9ac1b326dcb8cb2aab2359b07'
 const sha256 = (text) => createHash('sha256').update(text, 'utf8').digest('hex')
 
 const canonModule = () => import('./adr-canon.mjs')
@@ -129,6 +132,7 @@ test('CLI --check passes against the on-disk markdown', () => {
   assert.match(stdout, /adr-001: OK/)
   assert.match(stdout, /adr-002: OK/)
   assert.match(stdout, /adr-003: OK/)
+  assert.match(stdout, /adr-004: OK/)
 })
 
 test('schema $defs are locally duplicated (no cross-file $ref) and reuse the shared block/inline shapes', async () => {
@@ -198,6 +202,7 @@ test('CLI --check adr-render passes for ADR-001, ADR-002 and ADR-003 (collection
   assert.match(stdout, /adr-001: OK \(no drift\)/)
   assert.match(stdout, /adr-002: OK \(no drift\)/)
   assert.match(stdout, /adr-003: OK \(no drift\)/)
+  assert.match(stdout, /adr-004: OK \(no drift\)/)
 })
 
 // --- Collection: duplicate ids/paths, per-doc drift, deterministic ordering ---
@@ -215,8 +220,8 @@ test('loadAdrCanonCollection rejects duplicate collection ids and duplicate coll
 test('loadAdrCanonCollection returns documents keyed by id in deterministic collection order', async () => {
   const { loadAdrCanonCollection, ADR_COLLECTION } = await canonModule()
   const canons = await loadAdrCanonCollection(canonRoot)
-  assert.deepEqual([...canons.keys()], ['ADR-001', 'ADR-002', 'ADR-003'])
-  assert.deepEqual(ADR_COLLECTION.map((entry) => entry.id), ['ADR-001', 'ADR-002', 'ADR-003'])
+  assert.deepEqual([...canons.keys()], ['ADR-001', 'ADR-002', 'ADR-003', 'ADR-004'])
+  assert.deepEqual(ADR_COLLECTION.map((entry) => entry.id), ['ADR-001', 'ADR-002', 'ADR-003', 'ADR-004'])
   const canonsAgain = await loadAdrCanonCollection(canonRoot)
   assert.deepEqual([...canonsAgain.keys()], [...canons.keys()])
 })
@@ -308,6 +313,73 @@ test('materializeAdrCollection: a hand-edit to the ADR-001 output does not affec
     const error = await materializeAdrCollection({ ...args, check: true }).catch((e) => e)
     assert.equal(error.code, 'E_DRIFT')
     assert.ok(error.message.includes('ADR-001-repository-delivery-policy.md'), error.message)
+    assert.ok(!error.message.includes('ADR-002-character-candidate-retrospective.md'), error.message)
+    assert.ok(!error.message.includes('ADR-003-real-place-and-station-naming.md'), error.message)
+  })
+})
+
+// --- ADR-004 (fourth collection member) ---
+
+test('ADR-004 source is characterized by SHA and line count (immutable accepted ADR)', async () => {
+  const text = await readFile(adr004OutputPath, 'utf8')
+  assert.equal(sha256(text), BASELINE_SHA_004)
+  assert.equal(text.split('\n').length - 1, 42)
+})
+
+test('ADR-004 rendered markdown is byte-identical to the frozen source and deterministic', async () => {
+  const { loadAdrCanonCollection } = await canonModule()
+  const { renderAdrMarkdown } = await renderModule()
+  const canons = await loadAdrCanonCollection(canonRoot)
+  const canon = canons.get('ADR-004')
+  const first = renderAdrMarkdown(canon)
+  assert.equal(first, renderAdrMarkdown(canon))
+  assert.equal(sha256(first), BASELINE_SHA_004)
+  assert.equal(first, await readFile(adr004OutputPath, 'utf8'))
+})
+
+test('ADR-004 canon preserves the root allowlist table and legacy root utility exception wording byte-for-byte', async () => {
+  const { loadAdrCanonCollection } = await canonModule()
+  const canons = await loadAdrCanonCollection(canonRoot)
+  const canon = canons.get('ADR-004')
+  const table = canon.blocks.find((block) => block.kind === 'table')
+  assert.equal(table.rows.length, 11)
+  assert.deepEqual(table.rows[0], ['`GDD/`', '모든 게임 설계 정본: 제품·규칙·레퍼런스·아키텍처·아트·ADR·제안·시스템 설계'])
+  assert.deepEqual(table.rows[4], [
+    '`ART-ASSETS/`',
+    '편집 가능한 원본 아트·Blender·FBX·텍스처·선별 검토 증거의 정본. 실행 도구는 TOOL, Unity 승격본은 GAME이 소유한다.',
+  ])
+  const rootFilesParagraph = canon.blocks.find((block) => block.id === 'adr-004.rootfiles.p1')
+  assert.equal(
+    rootFilesParagraph.inlines[0].text,
+    '루트 설정 파일 허용 목록: `.gitattributes` `.gitignore` `.gitmodules` `.vercelignore` `AGENTS.md` `CLAUDE.md` `CONCEPT`류 기획 문서(`Concept.md` `Design.md` `Intent.md` `ToDo.md`) `CONTRIBUTING.md` `README.md` `SERVICES.md` `index.html` `package.json` `package-lock.json` `vercel.json`. 2026-09-21 현재 main에 이미 추적된 진단 유틸리티 `test-regex.mjs`, `update_states.py`는 별도 정리 전까지 legacy root utility로 허용한다. 신규 루트 유틸리티의 추가 권한은 아니다.',
+  )
+  const policyPathParagraph = canon.blocks.find((block) => block.id === 'adr-004.decision.p1')
+  assert.ok(policyPathParagraph.inlines[0].text.includes('`Tool/tools/policy/check-repo-delivery-policy.mjs`'))
+})
+
+test('ADR-004 canon has 12 blocks with 5 heading / 3 paragraph / 3 list / 1 table', async () => {
+  const { loadAdrCanonCollection } = await canonModule()
+  const canons = await loadAdrCanonCollection(canonRoot)
+  const canon = canons.get('ADR-004')
+  assert.equal(canon.blocks.length, 12)
+  const kindCounts = canon.blocks.map((block) => block.kind).reduce((acc, kind) => ({ ...acc, [kind]: (acc[kind] ?? 0) + 1 }), {})
+  assert.deepEqual(kindCounts, { heading: 5, paragraph: 3, list: 3, table: 1 })
+})
+
+test('materializeAdrCollection: a hand-edit to the ADR-004 output does not affect ADR-001..003, and E_DRIFT names only ADR-004', async () => {
+  const { materializeAdrCollection } = await renderModule()
+  await sandbox(async ({ dir, root }) => {
+    const sandboxAdrDir = join(dir, 'adr')
+    await mkdir(sandboxAdrDir, { recursive: true })
+    const args = { canonRoot: root, adrDir: sandboxAdrDir }
+    await materializeAdrCollection({ ...args, check: false })
+
+    const adr004Path = join(sandboxAdrDir, 'ADR-004-root-domain-structure.md')
+    await writeFile(adr004Path, (await readFile(adr004Path, 'utf8')).replace('루트 도메인과 단일 설계 정본', '루트 도메인과 통합 설계 정본'))
+    const error = await materializeAdrCollection({ ...args, check: true }).catch((e) => e)
+    assert.equal(error.code, 'E_DRIFT')
+    assert.ok(error.message.includes('ADR-004-root-domain-structure.md'), error.message)
+    assert.ok(!error.message.includes('ADR-001-repository-delivery-policy.md'), error.message)
     assert.ok(!error.message.includes('ADR-002-character-candidate-retrospective.md'), error.message)
     assert.ok(!error.message.includes('ADR-003-real-place-and-station-naming.md'), error.message)
   })
