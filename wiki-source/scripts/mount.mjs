@@ -52,7 +52,7 @@ function listLoreMarkdown(dir) {
         continue
       }
       if (!st.isFile()) continue
-      if (!name.endsWith('.md') || EXCLUDED_NAMES.has(name) || PUBLIC_EXCLUDED_NAMES.has(name) || name === 'README.md') continue
+      if (!name.endsWith('.md') || name.endsWith('.en.md') || EXCLUDED_NAMES.has(name) || PUBLIC_EXCLUDED_NAMES.has(name) || name === 'README.md') continue
       out.push({ name, src: full })
     }
   }
