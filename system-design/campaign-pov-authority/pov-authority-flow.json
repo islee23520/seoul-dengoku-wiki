@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "캠페인 POV와 권한 전이",
+    "quality_profile": "standard"
+  },
+  "lanes": [
+    { "id": "POV", "label": "캠페인 시점 (POV)" },
+    { "id": "Authority", "label": "권한 상태" },
+    { "id": "Action", "label": "명령 및 전송" }
+  ],
+  "nodes": [
+    { "id": "POV_Current", "lane": "POV", "col": 0, "type": "frontend", "label": "시점: 현재 인물", "sublabel": "위치·지식 기반" },
+    { "id": "Role_Member", "lane": "Authority", "col": 0, "type": "frontend", "label": "일반 인물", "sublabel": "개인 명령" },
+    { "id": "Role_Leader", "lane": "Authority", "col": 1, "type": "frontend", "label": "리더/지휘관", "sublabel": "부대 명령" },
+    { "id": "Remote_Order", "lane": "Action", "col": 2, "type": "frontend", "label": "원격 전송", "sublabel": "지연 발생" },
+    { "id": "Isolation", "lane": "Authority", "col": 3, "type": "frontend", "label": "고립/포획", "sublabel": "전송 잠김" }
+  ],
+  "edges": [
+    { "from": "POV_Current", "to": "Role_Member", "role": "main" },
+    { "from": "Role_Member", "to": "Role_Leader", "label": "승진/위임", "role": "main" },
+    { "from": "Role_Leader", "to": "Remote_Order", "label": "원격 명령", "role": "main" },
+    { "from": "POV_Current", "to": "Isolation", "label": "포획/고립", "role": "branch" }
+  ]
+}
