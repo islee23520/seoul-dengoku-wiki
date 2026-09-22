@@ -22,7 +22,7 @@
     "test:updates": "npm run generate && node --test scripts/test-update-history.mjs",
     "test:timeline": "node --test scripts/test-timeline-overview.mjs",
     "test:common-tiers": "node --test scripts/test-common-tiers.mjs",
-    "test:person-id": "node --test ../lore/name-pools/verify-person-id-candidates.mjs"
+    "test:person-id": "node --test ../lore/name-pools/verify-person-id-candidates.mjs ../lore/name-pools/verify-person-id-registry.mjs"
   },
   "dependencies": {
     "proj4": "2.22.0",
