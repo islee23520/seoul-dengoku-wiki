@@ -32,7 +32,7 @@ POC 사람 표현은 오드랜드 Spine이다. 실행 티켓 [#58](https://githu
 
 ## 화면 목표
 
-화면 목표는 `.omo/design/poc-complete.html` 열 면이다. 색인 [#101](https://github.com/islee23520/seoul-kenshi/issues/101). 보고서 `/ui-ux-refs/`. 현재 Unity 보드 칸 이름은 바꾸지 않는다. 부대 지휘 화면의 문서 초안은 `GDD/system-design/total-war-ui/`에 둔다.
+화면 목표는 [#101 UI/UX 화면 계약](/design/Issue-101-Ui-Ux-Decisions)의 12면과 사망·후계 보조 목업 4개다. 기존 HTML 열 면은 출발 자료이며 현재 목표 개수가 아니다. 색인 [#101](https://github.com/islee23520/seoul-kenshi/issues/101). 보고서 `/ui-ux-refs/`. 현재 Unity 보드 칸 이름은 바꾸지 않는다. 부대 지휘 화면의 문서 초안은 `GDD/system-design/total-war-ui/`에 둔다.
 
 ## 시각 수용
 
