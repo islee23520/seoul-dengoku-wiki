@@ -42,18 +42,19 @@ const markdownComponents: Components = {
   },
 }
 
-export default function ArticlePage() {
+export default function ArticlePage({ lang = 'ko' }: { lang?: 'ko' | 'en' }) {
   const { domain, slug } = useParams()
   if (!isWikiDomain(domain)) return <Navigate to="/" replace />
 
   const normalizedSlug = slug?.replace(/\.html$/, '') || 'index'
-  const wikiDocument = wikiCatalog.find((candidate) => candidate.domain === domain && candidate.slug === normalizedSlug)
+  const wikiDocument = wikiCatalog.find((candidate) => candidate.domain === domain && candidate.slug === normalizedSlug && candidate.lang === lang)
+  const counterpart = wikiCatalog.find((candidate) => candidate.domain === domain && candidate.slug === normalizedSlug && candidate.lang !== lang)
   const [markdown, setMarkdown] = useState<string | null>(null)
   const [loadFailed, setLoadFailed] = useState(false)
 
   useEffect(() => {
     let active = true
-    const load = markdownModules[`../content/${domain}/${normalizedSlug}.md`]
+    const load = markdownModules[`../content/${domain}/${normalizedSlug}${lang === 'en' ? '.en' : ''}.md`]
     setMarkdown(null)
     setLoadFailed(false)
     if (!load) {
@@ -71,7 +72,7 @@ export default function ArticlePage() {
       throw error
     })
     return () => { active = false }
-  }, [domain, normalizedSlug])
+  }, [domain, normalizedSlug, lang])
 
   useEffect(() => {
     if (!wikiDocument) return
@@ -108,7 +109,14 @@ export default function ArticlePage() {
           <p className="wiki-domain-label">서울:전국 공식 위키 · {domain}</p>
           <h1>{wikiDocument.title}</h1>
         </div>
-        <span className="wiki-canon-badge">정본</span>
+        <div className="wiki-article-tools">
+          {counterpart && (
+            <Link to={counterpart.route} className="wiki-lang-toggle" hrefLang={counterpart.lang}>
+              {lang === 'ko' ? 'EN' : '한국어'}
+            </Link>
+          )}
+          <span className="wiki-canon-badge">정본</span>
+        </div>
       </header>
 
       {domain === 'world' && normalizedSlug === 'World-and-Subway-Layers' && <Suspense fallback={<div className="wiki-loading">3D 2126 시점 영토 지도를 준비하고 있습니다.</div>}><OpeningTerritoryMap /></Suspense>}

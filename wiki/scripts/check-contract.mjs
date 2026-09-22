@@ -15,9 +15,32 @@ for (const domain of domains) {
   for (const name of names) {
     const markdown = await readFile(resolve(sourceDir, name), 'utf8')
     const heading = markdown.match(/^#\s+(.+)$/m)?.[1]?.replace(/\s+\{#[^}]+\}\s*$/, '') ?? basename(name, '.md')
-    documents.push({ domain, slug: basename(name, '.md'), title: heading })
+    documents.push({ domain, lang: 'ko', slug: basename(name, '.md'), title: heading })
   }
 }
+
+const EXCLUDED_NAMES = new Set(['_Sidebar.md', '_TEMPLATE.md', 'AGENTS.md', 'README.md', 'Cast-Profile-Contract.md', 'Cast-Registration-Template.md', 'Random-Cast-Roster.md'])
+const LORE_SKIP_DIRS = new Set(['name-pools', 'regions', 'editorial'])
+const collectLoreEnFiles = async (dir) => {
+  const found = []
+  for (const entry of await readdir(dir, { withFileTypes: true })) {
+    if (entry.name.startsWith('.')) continue
+    if (entry.isDirectory()) {
+      if (!LORE_SKIP_DIRS.has(entry.name)) found.push(...await collectLoreEnFiles(resolve(dir, entry.name)))
+      continue
+    }
+    if (entry.isFile() && entry.name.endsWith('.en.md') && !EXCLUDED_NAMES.has(entry.name.replace(/\.en\.md$/, '.md'))) found.push(resolve(dir, entry.name))
+  }
+  return found
+}
+for (const file of (await collectLoreEnFiles(resolve(repoRoot, 'WEB/lore'))).sort()) {
+  const markdown = await readFile(file, 'utf8')
+  const heading = markdown.match(/^#\s+(.+)$/m)?.[1]?.replace(/\s+\{#[^}]+\}\s*$/, '') ?? basename(file, '.en.md')
+  documents.push({ domain: 'world', lang: 'en', slug: basename(file, '.en.md'), title: heading })
+}
+const routeOf = (document) => document.lang === 'en'
+  ? `/${document.domain}/en/${document.slug}`
+  : `/${document.domain}/${document.slug === 'index' ? '' : document.slug}`
 
 const appSource = await readFile(resolve(projectRoot, 'src/App.tsx'), 'utf8')
 const linksSource = await readFile(resolve(projectRoot, 'src/wikiLinks.ts'), 'utf8')
@@ -49,7 +72,7 @@ if (/\.html['"]/.test(linksSource)) failures.push('legacy-html-links-in-react')
 if (!(await readFile(resolve(projectRoot, 'vite.config.ts'), 'utf8')).includes("base: '/wiki/'")) failures.push('missing-wiki-vite-base')
 
 for (const document of documents) {
-  const route = `/${document.domain}/${document.slug === 'index' ? '' : document.slug}`
+  const route = routeOf(document)
   if (!catalogSource.includes(`route: '${route}'`)) failures.push(`missing-route:${route}`)
   if (!catalogSource.includes(`title: ${JSON.stringify(document.title)}`)) failures.push(`missing-title:${route}`)
 }

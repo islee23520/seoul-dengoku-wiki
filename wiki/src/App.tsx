@@ -21,6 +21,7 @@ export default function App() {
         <Route path="/people" element={<Suspense fallback={<div className="wiki-loading">인물 원장을 불러오고 있습니다.</div>}><PeoplePage /></Suspense>} />
         <Route path="/people/:personId" element={<Suspense fallback={<div className="wiki-loading">인물 상세를 불러오고 있습니다.</div>}><PersonDetailPage /></Suspense>} />
         <Route path="/documents" element={<Suspense fallback={<div className="wiki-loading">문서 색인을 불러오고 있습니다.</div>}><DocumentsPage /></Suspense>} />
+        <Route path="/:domain/en/:slug" element={<ArticlePage lang="en" />} />
         <Route path="/:domain/:slug" element={<ArticlePage />} />
         <Route path="/:domain/" element={<ArticlePage />} />
         <Route path="*" element={<HomePage />} />

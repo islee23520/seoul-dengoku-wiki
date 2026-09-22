@@ -102,6 +102,27 @@ summary:focus-visible {
   font-weight: 700;
 }
 
+.wiki-article-tools {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.wiki-lang-toggle {
+  border: 1px solid var(--wiki-accent);
+  color: var(--wiki-accent-dark);
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.wiki-lang-toggle:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
 .wiki-article-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(12rem, 15rem);

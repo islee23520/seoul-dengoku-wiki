@@ -34,7 +34,7 @@ const rewriteRelativeHref = (href, domain, routeBySlug) => {
   if (href.startsWith('/') || href.startsWith('#') || href.startsWith('http://') || href.startsWith('https://') || href.startsWith('mailto:')) return href
 
   const [path, hash = ''] = href.split('#', 2)
-  const slug = basename(path, extname(path))
+  const slug = basename(path, extname(path)).replace(/\.en$/u, '')
   const documentRoute = routeBySlug.get(`${domain}:${slug}`) ?? routeBySlug.get(`any:${slug}`)
   if (documentRoute) return `${documentRoute}${hash ? `#${hash}` : ''}`
 
@@ -50,7 +50,7 @@ const rewriteRelativeHref = (href, domain, routeBySlug) => {
 
 const normalizeMarkdown = (markdown, domain, routeBySlug) => stripProjectionHeader(markdown
   .replace(/^---\n[\s\S]*?\n---\n/, '')
-  .replace(/^#\s+.+\n+/, '')
+  .replace(/^\s*#\s+.+\n+/, '')
   .replace(/<InfoBox[\s\S]*?<\/InfoBox>/g, '')
   .replace(/<NavBox[\s\S]*?<\/NavBox>/g, ''))
   .replace(/\]\(([^)]+)\)/g, (_full, href) => `](${rewriteRelativeHref(href, domain, routeBySlug)})`)
@@ -70,6 +70,7 @@ for (const domain of domains) {
     const markdown = await readFile(resolve(sourceDir, name), 'utf8')
     documents.push({
       domain,
+      lang: 'ko',
       slug,
       route: `/${domain}/${slug === 'index' ? '' : slug}`,
       title: normalizeTitle(markdown, slug),
@@ -79,16 +80,51 @@ for (const domain of domains) {
   }
 }
 
-const routeBySlug = new Map()
-for (const document of documents) {
-  routeBySlug.set(`${document.domain}:${document.slug}`, document.route)
-  if (!routeBySlug.has(`any:${document.slug}`)) routeBySlug.set(`any:${document.slug}`, document.route)
+const EXCLUDED_NAMES = new Set(['_Sidebar.md', '_TEMPLATE.md', 'AGENTS.md', 'README.md', 'Cast-Profile-Contract.md', 'Cast-Registration-Template.md', 'Random-Cast-Roster.md'])
+const LORE_SKIP_DIRS = new Set(['name-pools', 'regions', 'editorial'])
+const collectLoreEnFiles = async (dir) => {
+  const found = []
+  for (const entry of await readdir(dir, { withFileTypes: true })) {
+    if (entry.name.startsWith('.')) continue
+    if (entry.isDirectory()) {
+      if (!LORE_SKIP_DIRS.has(entry.name)) found.push(...await collectLoreEnFiles(resolve(dir, entry.name)))
+      continue
+    }
+    if (entry.isFile() && entry.name.endsWith('.en.md') && !EXCLUDED_NAMES.has(entry.name.replace(/\.en\.md$/, '.md'))) found.push(resolve(dir, entry.name))
+  }
+  return found
 }
+for (const domain of domains) {
+  const loreEnFiles = (await collectLoreEnFiles(resolve(repoRoot, 'WEB/lore'))).sort((left, right) => basename(left).localeCompare(basename(right)))
+  for (const enFile of loreEnFiles) {
+    const slug = basename(enFile, '.en.md')
+    if (!documents.some((document) => document.domain === domain && document.lang === 'ko' && document.slug === slug)) throw new Error(`E_EN_WITHOUT_KO_PAIR:${domain}:${slug}`)
+    const markdown = await readFile(enFile, 'utf8')
+    documents.push({
+      domain,
+      lang: 'en',
+      slug,
+      route: `/${domain}/en/${slug}`,
+      title: normalizeTitle(markdown, slug),
+      markdown,
+      name: `${slug}.en.md`,
+    })
+  }
+}
+
+const routeBySlug = new Map()
+const routeBySlugEn = new Map()
+for (const document of documents) {
+  const target = document.lang === 'en' ? routeBySlugEn : routeBySlug
+  target.set(`${document.domain}:${document.slug}`, document.route)
+  if (!target.has(`any:${document.slug}`)) target.set(`any:${document.slug}`, document.route)
+}
+for (const [key, koRoute] of routeBySlug) if (!routeBySlugEn.has(key)) routeBySlugEn.set(key, koRoute)
 
 for (const document of documents) {
   const targetDir = resolve(contentRoot, document.domain)
   await mkdir(targetDir, { recursive: true })
-  await writeFile(resolve(targetDir, document.name), normalizeMarkdown(document.markdown, document.domain, routeBySlug))
+  await writeFile(resolve(targetDir, document.name), normalizeMarkdown(document.markdown, document.domain, document.lang === 'en' ? routeBySlugEn : routeBySlug))
 }
 
 const lines = [
@@ -99,10 +135,11 @@ const lines = [
   '  readonly slug: string',
   '  readonly route: string',
   '  readonly title: string',
+  "  readonly lang: 'ko' | 'en'",
   '}',
   '',
   'export const wikiCatalog = [',
-  ...documents.map((document) => `  { domain: '${document.domain}', slug: '${document.slug}', route: '${document.route}', title: ${JSON.stringify(document.title)} },`),
+  ...documents.map((document) => `  { domain: '${document.domain}', slug: '${document.slug}', route: '${document.route}', title: ${JSON.stringify(document.title)}, lang: '${document.lang}' },`),
   '] as const satisfies readonly WikiDocument[]',
   '',
   `export const wikiDocumentCount = ${documents.length}`,
@@ -110,7 +147,7 @@ const lines = [
 ]
 
 await writeFile(resolve(generatedRoot, 'wikiCatalog.ts'), `${lines.join('\n')}\n`)
-await writeFile(resolve(publicRoot, 'wiki-contract.json'), `${JSON.stringify({ documents: documents.map(({ domain, slug, route, title }) => ({ domain, slug, route, title })) }, null, 2)}\n`)
+await writeFile(resolve(publicRoot, 'wiki-contract.json'), `${JSON.stringify({ documents: documents.map(({ domain, slug, route, title, lang }) => ({ domain, slug, route, title, lang })) }, null, 2)}\n`)
 
 const updateHistory = JSON.parse(await readFile(resolve(projectRoot, 'data/update-history.json'), 'utf8'))
 const wikiUpdates = latestUpdates(updateHistory.updates)
