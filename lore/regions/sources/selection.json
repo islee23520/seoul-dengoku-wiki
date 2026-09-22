@@ -1,0 +1,59 @@
+{
+  "as_of": "2026-09-12",
+  "selected_boundary": {
+    "source_id": "admdongkor-20260701-7360288",
+    "path": ".omo/evidence/seoul-regions/sources/admdongkor-20260701.geojson",
+    "sha256": "c01ef44a0eb00978662ba7a6240ccb1da287fb52abd85104a1758969d391132f",
+    "source_url": "https://raw.githubusercontent.com/vuski/admdongkor/7360288277dfd12d74e54b959c59bdd66f852e3a/ver20260701/HangJeongDong_ver20260701.geojson",
+    "source_effective_date": "2026-07-01",
+    "publication_commit_date": "2026-08-26T09:55:46Z",
+    "retrieved_on": "2026-09-12",
+    "source_crs": "OGC:CRS84",
+    "measurement_crs": "EPSG:5179",
+    "authority": "SGIS-derived community dataset, not official-current certification",
+    "license": "CC-BY-4.0",
+    "attribution": "통계청 SGIS 행정동 경계(공공누리 제1유형)를 가공한 vuski/admdongkor, CC BY 4.0",
+    "filter": "properties.sido == 11 (string)",
+    "source_regions": 427,
+    "source_districts": 25,
+    "selected_union_area_m2": 606223725.0069752,
+    "overlap_excess_m2": 707.0937968492508,
+    "cleanup_policy": "Sort adm_cd2 ordinal; each region owns its original polygon minus the union of earlier owners. Record every overlap change. Preserve all positive-area fragments. Assert original union equals cleaned union within 0.01 m2 and every source region remains nonempty.",
+    "coverage_tolerance_m2": 0.01,
+    "precision_policy": "No arbitrary translation, coordinate snapping, area deletion, convex hull or gap filling. Canonical polygon calculation in EPSG:5179. Display simplification is separate from canonical geometry."
+  },
+  "comparison_boundary": {
+    "source_id": "kostat-2013",
+    "source_root": "../seoul-kenshi-data/seoul-geography-20260830",
+    "path": "boundaries-kostat-2013/seoul_municipalities_geo.json",
+    "sha256": "cfa0c49df02184981d3f214b52729685fd5444ec1e58f04054bdf99ae4b1e836",
+    "effective_year": 2013,
+    "current_boundary": false,
+    "policy": "Retain dated comparison and source-only fragments as discrepancy overlays. Do not import 2013-only areas as current Seoul or silently omit selected-boundary-only areas."
+  },
+  "osm": {
+    "path": "osm-current-bbbike/Seoul.osm.pbf",
+    "sha256": "eec1fcac44d0b7b1600c81437ba0a0ea56cd645d16f4eaf55a00786597e0e7e8",
+    "snapshot_at": "2026-09-04T23:00:00Z",
+    "snapshot_basis": "PBF osmosis_replication_timestamp read by spatial-audit.py",
+    "modified_at": "2026-09-05T16:19:01Z",
+    "acquired_at": "2026-09-08T08:36:03.027868+00:00",
+    "complete_official_roster": false,
+    "policy": "No name-only deduplication; preserve type and object ID. All candidate nodes/ways/relations accounted; missing geometry quarantined, not counted outside. Preserve stop order without shortcut edges."
+  },
+  "terrain": {
+    "source_object_modified_precision": "month",
+    "source_object_modified_month": "2017-12",
+    "observation_date": null,
+    "observation_date_reason": "S3 modification is not the SRTM/GMTED2010/ETOPO1 observation date.",
+    "policy": "Read per-tile dates/CRS/sha/nodata from original manifest and retain missing observations as unknown."
+  },
+  "fictional_epoch": {
+    "id": "opening-day",
+    "source": "docs/game-logic/Scenario-Timeline.md",
+    "label": "세 번째 급수계약 개막일",
+    "absolute_date": null
+  },
+  "decision_kind": "implementation default for full-area regional content, not legal boundary certification",
+  "reason": "Named dated 427 dongs provide finer local identity than 25 gu or anonymous grid. Original district mask has a large measured discrepancy and includes external stations. New union is explicitly selected and both versions remain traceable."
+}

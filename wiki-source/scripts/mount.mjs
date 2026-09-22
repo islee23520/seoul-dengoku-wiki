@@ -1,5 +1,5 @@
-// mount.mjs v3 — LORE/GDD 단일 정본 + 루트 문서 → WEB/wiki-source/{world,rules,design} 스테이징
-// 폴더=도메인: LORE/**/*.md→world, GDD/{rules,references,architecture}/*.md→rules,
+// mount.mjs v3 — 위키 서브모듈 lore/ + 메인 GDD 정본 + 루트 문서 → wiki-source/{world,rules,design} 스테이징
+// 폴더=도메인: lore/**/*.md→world, GDD/{rules,references,architecture}/*.md→rules,
 // GDD/*.md + GDD/art/*.md + 루트 4문서→design
 // 유니온 pageByFile/pageByStem로 도메인 간 베어 링크 재작성 (스켑틱 #10)
 import { readFileSync, readdirSync, rmSync, statSync, writeFileSync } from 'node:fs'
@@ -8,13 +8,14 @@ import { fileURLToPath } from 'node:url'
 
 const scriptDir = dirname(fileURLToPath(import.meta.url))
 const docsSiteRoot = join(scriptDir, '..')
-const repoRoot = join(docsSiteRoot, '..', '..')
+const wikiRoot = join(docsSiteRoot, '..')
+const repoRoot = join(wikiRoot, '..')
 const referenceDir = join(repoRoot, 'RESEARCH', 'canon-reference')
 
 const GITHUB_WIKI = 'https://github.com/islee23520/seoul-kenshi/blob/main/' + 'retired-reference-assets/'
 
 const DOMAIN_ROOTS = [
-  { domain: 'world', dir: join(repoRoot, 'LORE') },
+  { domain: 'world', dir: join(wikiRoot, 'lore') },
   { domain: 'rules', dir: join(repoRoot, 'GDD', 'rules') },
   { domain: 'rules', dir: join(repoRoot, 'GDD', 'references') },
   { domain: 'rules', dir: join(repoRoot, 'GDD', 'architecture') },
