@@ -5161,10 +5161,10 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
         <rect data-graph-role="structural-frame" data-composition-frame-kind="security-group" data-composition-frame-id="1" data-composition-frame-label="직접 제어 범위" x="40" y="40" width="850" height="138" rx="8" class="c-security-group" stroke-width="1"/>
 
         <!-- Connection paths (before components for correct z-order) -->
-        <path data-edge-from="person" data-edge-to="party" data-edge-label="동행" data-edge-key="0" data-edge-id="person-party" data-composition-points="290,114;360,114" d="M 290 114 L 360 114" class="a-default" stroke-width="1.5" marker-end="url(#arrowhead)"/>
-        <path data-edge-from="party" data-edge-to="squad" data-edge-label="소유·위임" data-edge-key="1" data-edge-id="party-squad" data-composition-points="560,114;630,114" d="M 560 114 L 630 114" class="a-default" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        <path data-edge-from="person" data-edge-to="party" data-edge-label="동행 표시" data-edge-key="0" data-edge-id="person-party" data-composition-points="290,114;360,114" d="M 290 114 L 360 114" class="a-default" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        <path data-edge-from="party" data-edge-to="squad" data-edge-label="동의·위임만" data-edge-key="1" data-edge-id="party-squad" data-composition-points="560,114;630,114" d="M 560 114 L 630 114" class="a-default" stroke-width="1.5" marker-end="url(#arrowhead)"/>
         <path data-edge-from="person" data-edge-to="office" data-edge-label="수임" data-edge-key="2" data-edge-id="person-office" data-composition-points="180,158;180,250" d="M 180 158 L 180 250" class="a-default" stroke-width="1.5" marker-end="url(#arrowhead)"/>
-        <path data-edge-from="office" data-edge-to="faction" data-edge-label="제안·승인" data-edge-key="3" data-edge-id="office-faction" data-composition-points="290,294;360,294" d="M 290 294 L 360 294" class="a-default" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        <path data-edge-from="office" data-edge-to="faction" data-edge-label="관할 결재" data-edge-key="3" data-edge-id="office-faction" data-composition-points="290,294;360,294" d="M 290 294 L 360 294" class="a-default" stroke-width="1.5" marker-end="url(#arrowhead)"/>
         <path data-edge-from="squad" data-edge-to="comms" data-edge-label="원격 추적" data-edge-key="4" data-edge-id="squad-comms" data-composition-points="745,158;745,250" d="M 745 158 L 745 250" class="a-default" stroke-width="1.5" marker-end="url(#arrowhead)"/>
         <path data-edge-from="faction" data-edge-to="comms" data-edge-label="결재 추적" data-edge-key="5" data-edge-id="faction-comms" data-composition-points="560,294;630,294" d="M 560 294 L 630 294" class="a-default" stroke-width="1.5" marker-end="url(#arrowhead)"/>
         <path data-edge-from="faction" data-edge-to="forbidden" data-edge-label="직접 제어 금지" data-edge-key="6" data-edge-id="faction-forbidden" data-composition-points="460,338;460,430" d="M 460 338 L 460 430" class="a-dashed" stroke-width="1.5" marker-end="url(#arrowhead-dashed)"/>
@@ -5185,8 +5185,8 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
         <text data-detail="fine" x="180" y="150" class="t-frontend" font-size="7" text-anchor="middle">한 인물</text>
         </g>
 
-        <g id="node-party" data-node-id="party" data-node-label="파티" tabindex="0" role="button" aria-label="Focus 파티, 동행 범위, 현재 인물이 아는 세계 › 직접 제어 범위" aria-pressed="false" data-node-kind="frontend" data-node-sublabel="동행 범위" data-node-tag="현장" data-node-context="현재 인물이 아는 세계 › 직접 제어 범위">
-          <title>파티 · 동행 범위 · 현재 인물이 아는 세계 › 직접 제어 범위 · 현장</title>
+        <g id="node-party" data-node-id="party" data-node-label="파티" tabindex="0" role="button" aria-label="Focus 파티, 동행≠직접제어, 현재 인물이 아는 세계" aria-pressed="false" data-node-kind="frontend" data-node-sublabel="동행≠직접제어" data-node-tag="표시만" data-node-context="현재 인물이 아는 세계">
+          <title>파티 · 동행≠직접제어 · 현재 인물이 아는 세계 · 표시만</title>
           <rect x="360" y="70" width="200" height="88" rx="6" class="c-mask"/>
           <rect x="360" y="70" width="200" height="88" rx="6" class="c-frontend" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="frontend" class="semantic-sigil s-frontend" transform="translate(366 76) scale(0.6875)">
@@ -5196,24 +5196,24 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
             <circle cx="6.3" cy="4.8" r=".7" class="sigil-fill"/>
           </g>
           <text data-node-label="" data-detail-anchor="" x="460" y="112" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">파티</text>
-        <text data-detail="context" x="460" y="128" class="t-muted" font-size="9" text-anchor="middle">동행 범위</text>
-        <text data-detail="fine" x="460" y="150" class="t-frontend" font-size="7" text-anchor="middle">현장</text>
+        <text data-detail="context" x="460" y="128" class="t-muted" font-size="9" text-anchor="middle">동행≠직접제어</text>
+        <text data-detail="fine" x="460" y="150" class="t-frontend" font-size="7" text-anchor="middle">표시만</text>
         </g>
 
-        <g id="node-squad" data-node-id="squad" data-node-label="소유·위임 분대" tabindex="0" role="button" aria-label="Focus 소유·위임 분대, 원격 직접 제어, 현재 인물이 아는 세계 › 직접 제어 범위" aria-pressed="false" data-node-kind="backend" data-node-sublabel="원격 직접 제어" data-node-tag="위임만" data-node-context="현재 인물이 아는 세계 › 직접 제어 범위">
-          <title>소유·위임 분대 · 원격 직접 제어 · 현재 인물이 아는 세계 › 직접 제어 범위 · 위임만</title>
+        <g id="node-squad" data-node-id="squad" data-node-label="소유·위임 분대" tabindex="0" role="button" aria-label="Focus 소유·위임 분대, 명시 위임만 직접, 현재 인물이 아는 세계 › 직접 제어 범위" aria-pressed="false" data-node-kind="backend" data-node-sublabel="명시 위임만 직접" data-node-tag="직접 제어" data-node-context="현재 인물이 아는 세계 › 직접 제어 범위">
+          <title>소유·위임 분대 · 명시 위임만 직접 · 현재 인물이 아는 세계 › 직접 제어 범위 · 직접 제어</title>
           <rect x="630" y="70" width="230" height="88" rx="6" class="c-mask"/>
           <rect x="630" y="70" width="230" height="88" rx="6" class="c-backend" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="backend" class="semantic-sigil s-backend" transform="translate(636 76) scale(0.6875)">
             <path d="M6 3 3 8l3 5M10 3l3 5-3 5"/>
           </g>
           <text data-node-label="" data-detail-anchor="" x="745" y="112" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">소유·위임 분대</text>
-        <text data-detail="context" x="745" y="128" class="t-muted" font-size="9" text-anchor="middle">원격 직접 제어</text>
-        <text data-detail="fine" x="745" y="150" class="t-backend" font-size="7" text-anchor="middle">위임만</text>
+        <text data-detail="context" x="745" y="128" class="t-muted" font-size="9" text-anchor="middle">명시 위임만 직접</text>
+        <text data-detail="fine" x="745" y="150" class="t-backend" font-size="7" text-anchor="middle">직접 제어</text>
         </g>
 
-        <g id="node-office" data-node-id="office" data-node-label="관직·관할" tabindex="0" role="button" aria-label="Focus 관직·관할, 직위 자산, 현재 인물이 아는 세계" aria-pressed="false" data-node-kind="security" data-node-sublabel="직위 자산" data-node-tag="관할" data-node-context="현재 인물이 아는 세계">
-          <title>관직·관할 · 직위 자산 · 현재 인물이 아는 세계 · 관할</title>
+        <g id="node-office" data-node-id="office" data-node-label="관직·관할" tabindex="0" role="button" aria-label="Focus 관직·관할, 결재 권한, 현재 인물이 아는 세계" aria-pressed="false" data-node-kind="security" data-node-sublabel="결재 권한" data-node-tag="위임 없으면 결재" data-node-context="현재 인물이 아는 세계">
+          <title>관직·관할 · 결재 권한 · 현재 인물이 아는 세계 · 위임 없으면 결재</title>
           <rect x="70" y="250" width="220" height="88" rx="6" class="c-mask"/>
           <rect x="70" y="250" width="220" height="88" rx="6" class="c-security" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="security" class="semantic-sigil s-security" transform="translate(76 256) scale(0.6875)">
@@ -5221,12 +5221,12 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
             <path d="m5.8 8 1.5 1.5 3-3"/>
           </g>
           <text data-node-label="" data-detail-anchor="" x="180" y="292" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">관직·관할</text>
-        <text data-detail="context" x="180" y="308" class="t-muted" font-size="9" text-anchor="middle">직위 자산</text>
-        <text data-detail="fine" x="180" y="330" class="t-security" font-size="7" text-anchor="middle">관할</text>
+        <text data-detail="context" x="180" y="308" class="t-muted" font-size="9" text-anchor="middle">결재 권한</text>
+        <text data-detail="fine" x="180" y="330" class="t-security" font-size="7" text-anchor="middle">위임 없으면 결재</text>
         </g>
 
-        <g id="node-faction" data-node-id="faction" data-node-label="팩션 제안·승인" tabindex="0" role="button" aria-label="Focus 팩션 제안·승인, 승인·거부, 현재 인물이 아는 세계" aria-pressed="false" data-node-kind="messagebus" data-node-sublabel="승인·거부" data-node-tag="전권 없음" data-node-context="현재 인물이 아는 세계">
-          <title>팩션 제안·승인 · 승인·거부 · 현재 인물이 아는 세계 · 전권 없음</title>
+        <g id="node-faction" data-node-id="faction" data-node-label="세력 내 미위임" tabindex="0" role="button" aria-label="Focus 세력 내 미위임, 제안·승인·거부, 현재 인물이 아는 세계" aria-pressed="false" data-node-kind="messagebus" data-node-sublabel="제안·승인·거부" data-node-tag="전권 없음" data-node-context="현재 인물이 아는 세계">
+          <title>세력 내 미위임 · 제안·승인·거부 · 현재 인물이 아는 세계 · 전권 없음</title>
           <rect x="360" y="250" width="200" height="88" rx="6" class="c-mask"/>
           <rect x="360" y="250" width="200" height="88" rx="6" class="c-messagebus" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="messagebus" class="semantic-sigil s-messagebus" transform="translate(366 256) scale(0.6875)">
@@ -5235,8 +5235,8 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
             <circle cx="10.5" cy="8" r="1" class="sigil-fill"/>
             <circle cx="7" cy="11.5" r="1" class="sigil-fill"/>
           </g>
-          <text data-node-label="" data-detail-anchor="" x="460" y="292" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">팩션 제안·승인</text>
-        <text data-detail="context" x="460" y="308" class="t-muted" font-size="9" text-anchor="middle">승인·거부</text>
+          <text data-node-label="" data-detail-anchor="" x="460" y="292" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">세력 내 미위임</text>
+        <text data-detail="context" x="460" y="308" class="t-muted" font-size="9" text-anchor="middle">제안·승인·거부</text>
         <text data-detail="fine" x="460" y="330" class="t-messagebus" font-size="7" text-anchor="middle">전권 없음</text>
         </g>
 
@@ -5252,8 +5252,8 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
         <text data-detail="fine" x="745" y="330" class="t-cloud" font-size="7" text-anchor="middle">원장</text>
         </g>
 
-        <g id="node-forbidden" data-node-id="forbidden" data-node-label="전지적 전권" tabindex="0" role="button" aria-label="Focus 전지적 전권, 팩션 전역 직접 제어, Architecture component" aria-pressed="false" data-node-kind="external" data-node-sublabel="팩션 전역 직접 제어" data-node-tag="금지" data-node-context="Architecture component">
-          <title>전지적 전권 · 팩션 전역 직접 제어 · Architecture component · 금지</title>
+        <g id="node-forbidden" data-node-id="forbidden" data-node-label="전지적 전권" tabindex="0" role="button" aria-label="Focus 전지적 전권, 세력 전역 직접 제어, Architecture component" aria-pressed="false" data-node-kind="external" data-node-sublabel="세력 전역 직접 제어" data-node-tag="금지" data-node-context="Architecture component">
+          <title>전지적 전권 · 세력 전역 직접 제어 · Architecture component · 금지</title>
           <rect x="360" y="430" width="200" height="88" rx="6" class="c-mask"/>
           <rect x="360" y="430" width="200" height="88" rx="6" class="c-external" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="external" class="semantic-sigil s-external" transform="translate(366 436) scale(0.6875)">
@@ -5261,26 +5261,26 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
             <path d="M8 2.5h5.5V8M13.5 2.5 7.5 8.5"/>
           </g>
           <text data-node-label="" data-detail-anchor="" x="460" y="472" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">전지적 전권</text>
-        <text data-detail="context" x="460" y="488" class="t-muted" font-size="9" text-anchor="middle">팩션 전역 직접 제어</text>
+        <text data-detail="context" x="460" y="488" class="t-muted" font-size="9" text-anchor="middle">세력 전역 직접 제어</text>
         <text data-detail="fine" x="460" y="510" class="t-external" font-size="7" text-anchor="middle">금지</text>
         </g>
 
         <!-- Connection labels -->
-        <g data-detail="context" data-edge-from="person" data-edge-to="party" data-edge-label="동행" data-edge-key="0" data-edge-id="person-party">
-          <rect x="310" y="94" width="30" height="14" rx="3" class="c-mask"/>
-          <text x="325" y="104" class="t-muted" font-size="8" text-anchor="middle">동행</text>
+        <g data-detail="context" data-edge-from="person" data-edge-to="party" data-edge-label="동행 표시" data-edge-key="0" data-edge-id="person-party">
+          <rect x="298.4" y="94" width="53.199999999999996" height="14" rx="3" class="c-mask"/>
+          <text x="325" y="104" class="t-muted" font-size="8" text-anchor="middle">동행 표시</text>
         </g>
-        <g data-detail="context" data-edge-from="party" data-edge-to="squad" data-edge-label="소유·위임" data-edge-key="1" data-edge-id="party-squad">
-          <rect x="568.4" y="94" width="53.199999999999996" height="14" rx="3" class="c-mask"/>
-          <text x="595" y="104" class="t-muted" font-size="8" text-anchor="middle">소유·위임</text>
+        <g data-detail="context" data-edge-from="party" data-edge-to="squad" data-edge-label="동의·위임만" data-edge-key="1" data-edge-id="party-squad">
+          <rect x="563.6" y="94" width="62.8" height="14" rx="3" class="c-mask"/>
+          <text x="595" y="104" class="t-muted" font-size="8" text-anchor="middle">동의·위임만</text>
         </g>
         <g data-detail="context" data-edge-from="person" data-edge-to="office" data-edge-label="수임" data-edge-key="2" data-edge-id="person-office">
           <rect x="165" y="162" width="30" height="14" rx="3" class="c-mask"/>
           <text x="180" y="172" class="t-muted" font-size="8" text-anchor="middle">수임</text>
         </g>
-        <g data-detail="context" data-edge-from="office" data-edge-to="faction" data-edge-label="제안·승인" data-edge-key="3" data-edge-id="office-faction">
+        <g data-detail="context" data-edge-from="office" data-edge-to="faction" data-edge-label="관할 결재" data-edge-key="3" data-edge-id="office-faction">
           <rect x="298.4" y="274" width="53.199999999999996" height="14" rx="3" class="c-mask"/>
-          <text x="325" y="284" class="t-muted" font-size="8" text-anchor="middle">제안·승인</text>
+          <text x="325" y="284" class="t-muted" font-size="8" text-anchor="middle">관할 결재</text>
         </g>
         <g data-detail="context" data-edge-from="squad" data-edge-to="comms" data-edge-label="원격 추적" data-edge-key="4" data-edge-id="squad-comms">
           <rect x="718.4" y="162" width="53.199999999999996" height="14" rx="3" class="c-mask"/>
@@ -5500,9 +5500,10 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
           <h3>지도가 보여주는 것</h3>
         </div>
         <ul>
-          <li>&bull; 불변 층은 현재 인물, 그 위치, 그 인물이 아는 정보다.</li>
-          <li>&bull; 파티와 소유·위임 분대만 직접 제어 층이다.</li>
-          <li>&bull; 관직은 관할을 열고, 팩션은 제안·승인 층이다.</li>
+          <li>&bull; 불변 층은 현재 인물, 그 위치, 그 인물이 아는 정보다. 대리가 이 층을 바꾸지 않는다.</li>
+          <li>&bull; 직접 제어 층은 현재 인물 분대, 개인 소유, 명시 위임 분대뿐이다.</li>
+          <li>&bull; 파티 동행은 보이는 범위이지 자동 직접 제어가 아니다.</li>
+          <li>&bull; 관직은 관할의 제안·승인·거부를 열고, 직접 제어는 별도 위임이 있을 때만이다.</li>
         </ul>
       </div>
 
@@ -5512,9 +5513,9 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
           <h3>전지적 전권 금지</h3>
         </div>
         <ul>
-          <li>&bull; 팩션 전역 자산을 한 시점에서 직접 조종하지 않는다.</li>
-          <li>&bull; 타 팩션·미위임 자산은 제안·승인·거부로만 움직인다.</li>
-          <li>&bull; 통신 층은 지연과 영수증을 추적할 뿐 전권을 주지 않는다.</li>
+          <li>&bull; 자기 세력의 미위임 자산은 제안·승인·거부로만 움직인다.</li>
+          <li>&bull; 다른 세력 자산은 이 명령 층이 아니라 외교다.</li>
+          <li>&bull; 세력 전역을 한 시점에서 직접 조종하지 않는다.</li>
         </ul>
       </div>
     </div>
