@@ -1,6 +1,7 @@
 import { mkdir, readFile, readdir, rm, stat, writeFile } from 'node:fs/promises'
 import { basename, dirname, extname, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { assertAllowed } from './check-publisher.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = resolve(projectRoot, '../..')
@@ -26,6 +27,7 @@ await mkdir(generatedRoot, { recursive: true })
 
 const documents = []
 for (const category of categories) {
+  assertAllowed(category.id)
   const sourceDir = resolve(repoRoot, category.dir)
   for (const name of (await readdir(sourceDir)).sort()) {
     if (excluded.has(name) || extname(name) !== '.md') continue

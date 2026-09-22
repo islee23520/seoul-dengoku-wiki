@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url'
 import proj4 from 'proj4'
 import { STATES } from '../../../TOOL/tools/wiki/world-atlas-schema.mjs'
 import { latestUpdates } from './update-history.mjs'
+import { assertAllowed } from './check-publisher.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = resolve(projectRoot, '../..')
@@ -11,6 +12,7 @@ const contentRoot = resolve(projectRoot, 'src/content')
 const generatedRoot = resolve(projectRoot, 'src/generated')
 const publicRoot = resolve(projectRoot, 'public')
 const domains = ['world']
+for (const domain of domains) assertAllowed(domain)
 const wikiAssetTarget = resolve(publicRoot, 'wiki-assets')
 
 const normalizeTitle = (markdown, fallback) =>

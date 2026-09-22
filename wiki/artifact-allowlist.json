@@ -1,6 +1,34 @@
 {
   "routes": [
     {
+      "id": "world",
+      "disposition": "allow"
+    },
+    {
+      "id": "rules",
+      "disposition": "allow"
+    },
+    {
+      "id": "design",
+      "disposition": "allow"
+    },
+    {
+      "id": "architecture",
+      "disposition": "allow"
+    },
+    {
+      "id": "references",
+      "disposition": "allow"
+    },
+    {
+      "id": "art",
+      "disposition": "allow"
+    },
+    {
+      "id": "decisions",
+      "disposition": "allow"
+    },
+    {
       "id": "article",
       "disposition": "allow"
     },
