@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "diagram_type": "lifecycle",
+  "meta": {
+    "title": "서울:전국 — 노드 상태 흐름",
+    "quality_profile": "standard"
+  },
+  "lanes": [
+    { "id": "main", "label": "주경로" },
+    { "id": "hold", "label": "이 전투만 일시정지" }
+  ],
+  "states": [
+    { "id": "prepare", "type": "start", "label": "계획", "lane": "main", "col": 0 },
+    { "id": "encounter", "type": "active", "label": "조우", "lane": "main", "col": 1 },
+    { "id": "battle", "type": "active", "label": "부대 지휘", "lane": "main", "col": 2 },
+    { "id": "pause", "type": "failure", "label": "일시정지", "sublabel": "이 파티만", "lane": "hold", "col": 1 },
+    { "id": "settle", "type": "active", "label": "정산", "lane": "main", "col": 3 },
+    { "id": "ending", "type": "success", "label": "다섯 결말", "lane": "main", "col": 4 }
+  ],
+  "transitions": [
+    { "from": "prepare", "to": "encounter", "label": "이동 중 조우", "labelDy": 55 },
+    { "from": "encounter", "to": "battle", "label": "붙다" },
+    { "from": "encounter", "to": "settle", "label": "비전투 해결", "fromSide": "bottom", "toSide": "bottom", "via": [[248, 250], [556, 250]] },
+    { "from": "battle", "to": "pause", "label": "일시정지" },
+    { "from": "pause", "to": "battle", "label": "재개" },
+    { "from": "battle", "to": "settle", "label": "ResultId 하나", "labelDy": 62 },
+    { "from": "settle", "to": "ending", "label": "정산은 귀환 명령이 아니다", "labelDy": 62 },
+    { "from": "ending", "to": "prepare", "label": "캠페인 계속", "fromSide": "bottom", "toSide": "bottom", "via": [[710, 340], [94, 340]] }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "읽는 법",
+      "items": [
+        "주경로는 계획 → 조우 → 부대 지휘 → 정산 → 다섯 결말이다",
+        "조우는 비전투로도 끝난다. 정산은 귀환 명령이 아니다"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "일시정지",
+      "items": [
+        "이 파티의 닫힌 전투만 멈춘다",
+        "기한 만료 뒤 채택한 설계 기본값이다"
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "뷰어",
+      "items": [
+        "본문은 한국어, 뷰어 UI와 html lang은 영어 폴백",
+        "상태 이름은 gdd-lore-node-states.md 표에서 왔다"
+      ]
+    }
+  ]
+}
