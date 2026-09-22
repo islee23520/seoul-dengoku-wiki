@@ -15,7 +15,7 @@ This page is a read-only projection of the World Narrative Atlas.
 
 ## Common Forms and Variants
 
-A light laid on the floor looked, from far off, like a dotted line announcing the refuge direction. Up close, each dot held six legs and a small loading box, and two files of chassis flowed in opposite directions along the broken cable racks. The Lantern-Ant Swarm, first woken in the Mapo联合 transmission gallery — the Mapo coalition transmission gallery — did not move to light the dark.
+A light laid on the floor looked, from far off, like a dotted line announcing the refuge direction. Up close, each dot held six legs and a small loading box, and two files of chassis flowed in opposite directions along the broken cable racks. The Lantern-Ant Swarm, first woken in the Mapo coalition transmission gallery — did not move to light the dark.
 
 The Lantern-Ant Swarm was not a living ancient organism but a lineage of pre-collapse work machines. The G25E identifiers marked models and derivatives split from existing chassis forms, and meant neither biological breeding nor natural evolution.
 
