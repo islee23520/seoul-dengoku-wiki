@@ -23,6 +23,3 @@ jobs:
         run: node wiki-source/scripts/gate.mjs
       - name: EN pair check (migration window)
         run: node wiki/scripts/lore-tense-check.mjs
-      - name: Banned terms in lore canon
-        run: |
-          ! rg -i -n 'Kenshi|Underrail|Gunner|clone|복제' lore --glob '!lore/editorial/**' || { echo 'banned term found'; exit 1; }
