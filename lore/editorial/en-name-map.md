@@ -1392,3 +1392,42 @@ EN 짝파일 작성에서 로마자화·영역한 고유명의 대조표다. 202
 | 한국철도공사 | Korail |
 | 대현산배수지공원 모노레일 | Daehyeonsan Reservoir Park Monorail |
 | 문화 키트 | culture kit |
+
+## task-16 추가 용어 (생태·경제·물자·기술·질병·관직·개요·구조)
+
+태스크 16(배치A 코퍼스 EN 이관)이 같은 규칙으로 추가한다. 문서 제목과 이관에서 처음 영역한 고유명·조어를 배치 순서로 적는다.
+
+### 배치 1 문서 제목
+
+| 한국어 | English |
+| --- | --- |
+| 구조물 총람 | The Structures Compendium |
+| 질병과 증상 | Ailments and Symptoms |
+| 물류와 기반 시설 | Logistics and Infrastructure |
+| 거점과 영토 | Strongholds and Territory |
+| 경제와 생산 | Economy and Production |
+| 관직 | Offices and Ranks |
+| 이 시대의 기술과 무구 | The Arms and Technology of This Era |
+| 잃어버린 기술 | Lost Technology |
+
+### 배치 1 용어
+
+| 한국어 | English |
+| --- | --- |
+| 철새습지포식군 (G06) | Migratory-Wetland Predator Swarm |
+| 맞춤의료잔존체 (G11) | Custom-Medicine Remnant Bodies |
+| 미세섬유피부군 (G12) | Microfiber Dermis Swarm |
+| 냉각수색인균체 (G19) | Coolant-Index Fungal Body |
+| 철비늘군체 (G20) | Iron-Scale Colony |
+| 통신근균체 (G21) | Communication-Root Fungal Bodies |
+| 폐전지금속군락 (G22) | Dead-Battery Metal Colony |
+| 저온포자막 (G23) | Cryo-Spore Film |
+| 의료조직기계군 (G24) | Medical-Tissue Machine Swarm |
+| 차륜제 | the Wheel Rite |
+| 모선제 | the Busbar Rite |
+| 찍힘제 | the Stamp Rite |
+| 개찰제 | the Gate Rite |
+| 역명판제 | the Nameplate Rite |
+| 안내제 | the Announcement Rite |
+| 앎 / 보유 / 수리 / 제조 | knowing / holding / repairing / manufacturing |
+| 수령·판서·군수·현감·참하 (옛 호칭) | Suryeong · Panseo · Gunsu · Hyeongam · Chamha |
