@@ -14,16 +14,19 @@ const outputPath = resolve(adrDir, 'ADR-003-real-place-and-station-naming.md')
 const adr002OutputPath = resolve(adrDir, 'ADR-002-character-candidate-retrospective.md')
 const adr001OutputPath = resolve(adrDir, 'ADR-001-repository-delivery-policy.md')
 const adr004OutputPath = resolve(adrDir, 'ADR-004-root-domain-structure.md')
+const adr006OutputPath = resolve(adrDir, 'ADR-006-backend-aspnet-core-coordinator.md')
 const files = {
   locale: 'locales/ko-KR/adr-003.json',
   locale002: 'locales/ko-KR/adr-002.json',
   locale001: 'locales/ko-KR/adr-001.json',
   locale004: 'locales/ko-KR/adr-004.json',
+  locale006: 'locales/ko-KR/adr-006.json',
 }
 const BASELINE_SHA = '56c479db4d89478e55f974e691c0819e6ac339648351f934544329af09ff0ad4'
 const BASELINE_SHA_002 = '131249858dc513cb99f8b47923d3cf1c085d75274752bd72f891158ba5247a6e'
 const BASELINE_SHA_001 = '7889c3adfc96b32137790d6d2f4242536425eb520028e83b06a6631fbcb156db'
 const BASELINE_SHA_004 = 'f0e81d8bf6b248470c7794d377c6855aff069cc9ac1b326dcb8cb2aab2359b07'
+const BASELINE_SHA_006 = 'e5058c1788927cd22345739b505790ea78a97edee054981e11954cdcabd281be'
 const sha256 = (text) => createHash('sha256').update(text, 'utf8').digest('hex')
 
 const canonModule = () => import('./adr-canon.mjs')
@@ -133,6 +136,7 @@ test('CLI --check passes against the on-disk markdown', () => {
   assert.match(stdout, /adr-002: OK/)
   assert.match(stdout, /adr-003: OK/)
   assert.match(stdout, /adr-004: OK/)
+  assert.match(stdout, /adr-006: OK/)
 })
 
 test('schema $defs are locally duplicated (no cross-file $ref) and reuse the shared block/inline shapes', async () => {
@@ -141,6 +145,15 @@ test('schema $defs are locally duplicated (no cross-file $ref) and reuse the sha
   assert.deepEqual(Object.keys(schema.$defs).sort(), ['block', 'cell', 'id', 'inline', 'schemaVersion'])
   assert.ok(!schemaText.includes('"$ref": "structures.schema.json'))
   assert.ok(!schemaText.includes('"$ref": "offices.schema.json'))
+})
+
+test('schema declares a oneOf branch for every ADR collection member, including adr-006.json', async () => {
+  const schemaText = await readFile(join(canonRoot, 'schema/adr.schema.json'), 'utf8')
+  const schema = JSON.parse(schemaText)
+  assert.deepEqual(
+    schema.oneOf.map((branch) => branch.title).sort(),
+    ['locales/ko-KR/adr-001.json', 'locales/ko-KR/adr-002.json', 'locales/ko-KR/adr-003.json', 'locales/ko-KR/adr-004.json', 'locales/ko-KR/adr-006.json'],
+  )
 })
 
 test('TOOL package default test runs the ADR canon suite', async () => {
@@ -196,13 +209,14 @@ test('ADR-002 canon has 16 blocks with 8 heading / 2 paragraph / 6 list, no tabl
   assert.deepEqual(kindCounts, { heading: 8, paragraph: 2, list: 6 })
 })
 
-test('CLI --check adr-render passes for ADR-001, ADR-002 and ADR-003 (collection rendering)', () => {
+test('CLI --check adr-render passes for ADR-001, ADR-002, ADR-003, ADR-004 and ADR-006 (collection rendering)', () => {
   const script = resolve(repoRoot, 'TOOL/tools/wiki/adr-render.mjs')
   const stdout = execFileSync('node', [script, '--check'], { encoding: 'utf8' })
   assert.match(stdout, /adr-001: OK \(no drift\)/)
   assert.match(stdout, /adr-002: OK \(no drift\)/)
   assert.match(stdout, /adr-003: OK \(no drift\)/)
   assert.match(stdout, /adr-004: OK \(no drift\)/)
+  assert.match(stdout, /adr-006: OK \(no drift\)/)
 })
 
 // --- Collection: duplicate ids/paths, per-doc drift, deterministic ordering ---
@@ -220,8 +234,8 @@ test('loadAdrCanonCollection rejects duplicate collection ids and duplicate coll
 test('loadAdrCanonCollection returns documents keyed by id in deterministic collection order', async () => {
   const { loadAdrCanonCollection, ADR_COLLECTION } = await canonModule()
   const canons = await loadAdrCanonCollection(canonRoot)
-  assert.deepEqual([...canons.keys()], ['ADR-001', 'ADR-002', 'ADR-003', 'ADR-004'])
-  assert.deepEqual(ADR_COLLECTION.map((entry) => entry.id), ['ADR-001', 'ADR-002', 'ADR-003', 'ADR-004'])
+  assert.deepEqual([...canons.keys()], ['ADR-001', 'ADR-002', 'ADR-003', 'ADR-004', 'ADR-006'])
+  assert.deepEqual(ADR_COLLECTION.map((entry) => entry.id), ['ADR-001', 'ADR-002', 'ADR-003', 'ADR-004', 'ADR-006'])
   const canonsAgain = await loadAdrCanonCollection(canonRoot)
   assert.deepEqual([...canonsAgain.keys()], [...canons.keys()])
 })
@@ -382,5 +396,71 @@ test('materializeAdrCollection: a hand-edit to the ADR-004 output does not affec
     assert.ok(!error.message.includes('ADR-001-repository-delivery-policy.md'), error.message)
     assert.ok(!error.message.includes('ADR-002-character-candidate-retrospective.md'), error.message)
     assert.ok(!error.message.includes('ADR-003-real-place-and-station-naming.md'), error.message)
+  })
+})
+
+// --- ADR-006 (fifth collection member) ---
+
+test('ADR-006 source is characterized by SHA and line count (immutable accepted ADR)', async () => {
+  const text = await readFile(adr006OutputPath, 'utf8')
+  assert.equal(sha256(text), BASELINE_SHA_006)
+  assert.equal(text.split('\n').length - 1, 41)
+})
+
+test('ADR-006 rendered markdown is byte-identical to the frozen source and deterministic', async () => {
+  const { loadAdrCanonCollection } = await canonModule()
+  const { renderAdrMarkdown } = await renderModule()
+  const canons = await loadAdrCanonCollection(canonRoot)
+  const canon = canons.get('ADR-006')
+  const first = renderAdrMarkdown(canon)
+  assert.equal(first, renderAdrMarkdown(canon))
+  assert.equal(sha256(first), BASELINE_SHA_006)
+  assert.equal(first, await readFile(adr006OutputPath, 'utf8'))
+})
+
+test('ADR-006 canon preserves the port, deleted-services and supersession decision wording byte-for-byte', async () => {
+  const { loadAdrCanonCollection } = await canonModule()
+  const canons = await loadAdrCanonCollection(canonRoot)
+  const canon = canons.get('ADR-006')
+  const decisionList = canon.blocks.find((block) => block.id === 'adr-006.decision.list')
+  assert.equal(decisionList.ordered, true)
+  assert.equal(decisionList.items.length, 7)
+  assert.ok(decisionList.items[0][0].text.includes('순수 ASP.NET Core(.NET 8) 단일 Kestrel이고 포트는 1219 하나'))
+  assert.ok(decisionList.items[2][0].text.includes('Auth·Hero·Lobby·Station·Social은 보존이나 아카이브 없이 지운다'))
+  const impactList = canon.blocks.find((block) => block.id === 'adr-006.impact.list')
+  assert.ok(impactList.items[0][0].text.includes('ADR-005 결정 4(기존 Auth 재사용), 결정 5(계정 메타 보존), 결정 6(전송 분리)'))
+  assert.ok(impactList.items[3][0].text.includes('[온라인 유저 여정](../Online-User-Journey.md)'))
+  const deprecatedList = canon.blocks.find((block) => block.id === 'adr-006.deprecated.list')
+  assert.equal(deprecatedList.items.length, 4)
+  assert.ok(deprecatedList.items[0][0].text.includes('`server/Y2K/`'))
+  assert.ok(deprecatedList.items[3][0].text.includes('13306·16379'))
+})
+
+test('ADR-006 canon has 13 blocks with 6 heading / 2 paragraph / 5 list, no table', async () => {
+  const { loadAdrCanonCollection } = await canonModule()
+  const canons = await loadAdrCanonCollection(canonRoot)
+  const canon = canons.get('ADR-006')
+  assert.equal(canon.blocks.length, 13)
+  const kindCounts = canon.blocks.map((block) => block.kind).reduce((acc, kind) => ({ ...acc, [kind]: (acc[kind] ?? 0) + 1 }), {})
+  assert.deepEqual(kindCounts, { heading: 6, paragraph: 2, list: 5 })
+})
+
+test('materializeAdrCollection: a hand-edit to the ADR-006 output does not affect ADR-001..004, and E_DRIFT names only ADR-006', async () => {
+  const { materializeAdrCollection } = await renderModule()
+  await sandbox(async ({ dir, root }) => {
+    const sandboxAdrDir = join(dir, 'adr')
+    await mkdir(sandboxAdrDir, { recursive: true })
+    const args = { canonRoot: root, adrDir: sandboxAdrDir }
+    await materializeAdrCollection({ ...args, check: false })
+
+    const adr006Path = join(sandboxAdrDir, 'ADR-006-backend-aspnet-core-coordinator.md')
+    await writeFile(adr006Path, (await readFile(adr006Path, 'utf8')).replace('Y2K 탈피와 ASP.NET Core 코디네이터', 'Y2K 탈피와 Kestrel 코디네이터'))
+    const error = await materializeAdrCollection({ ...args, check: true }).catch((e) => e)
+    assert.equal(error.code, 'E_DRIFT')
+    assert.ok(error.message.includes('ADR-006-backend-aspnet-core-coordinator.md'), error.message)
+    assert.ok(!error.message.includes('ADR-001-repository-delivery-policy.md'), error.message)
+    assert.ok(!error.message.includes('ADR-002-character-candidate-retrospective.md'), error.message)
+    assert.ok(!error.message.includes('ADR-003-real-place-and-station-naming.md'), error.message)
+    assert.ok(!error.message.includes('ADR-004-root-domain-structure.md'), error.message)
   })
 })

@@ -12,6 +12,7 @@ export const ADR_COLLECTION = Object.freeze([
   Object.freeze({ id: 'ADR-002', locale: 'locales/ko-KR/adr-002.json', outputName: 'ADR-002-character-candidate-retrospective.md' }),
   Object.freeze({ id: 'ADR-003', locale: ADR_FILES.locale, outputName: 'ADR-003-real-place-and-station-naming.md' }),
   Object.freeze({ id: 'ADR-004', locale: 'locales/ko-KR/adr-004.json', outputName: 'ADR-004-root-domain-structure.md' }),
+  Object.freeze({ id: 'ADR-006', locale: 'locales/ko-KR/adr-006.json', outputName: 'ADR-006-backend-aspnet-core-coordinator.md' }),
 ])
 
 const SCHEMA_FILE = 'schema/adr.schema.json'
