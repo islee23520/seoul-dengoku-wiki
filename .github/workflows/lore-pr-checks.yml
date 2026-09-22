@@ -1,0 +1,28 @@
+name: lore-pr-checks
+on:
+  pull_request:
+    paths:
+      - "lore/**"
+      - "wiki-source/**"
+      - "wiki/**"
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - name: Install wiki-source deps
+        run: npm ci --prefix wiki-source
+      - name: Mount canon mirrors
+        run: node wiki-source/scripts/mount.mjs
+      - name: Build site
+        run: npm --prefix wiki-source run docs:build
+      - name: Gate (banned terms, links, sections)
+        run: node wiki-source/scripts/gate.mjs
+      - name: EN pair check (migration window)
+        run: node wiki/scripts/lore-tense-check.mjs
+      - name: Banned terms in lore canon
+        run: |
+          ! rg -i -n 'Kenshi|Underrail|Gunner|clone|복제' lore --glob '!lore/editorial/**' || { echo 'banned term found'; exit 1; }
