@@ -5159,24 +5159,31 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
         <path d="M 72 112 L 908 112" class="a-default" stroke-width="0.8" stroke-dasharray="3,8"/>
         <text x="72" y="100" class="t-dim" font-size="10" font-weight="600">01 / 명령 본선</text>
         <path d="M 72 264 L 908 264" class="a-default" stroke-width="0.8" stroke-dasharray="3,8"/>
-        <text x="72" y="252" class="t-dim" font-size="10" font-weight="600">02 / 지연과 기지 정보 + 통신 잠김</text>
+        <text x="72" y="252" class="t-dim" font-size="10" font-weight="600">02 / 스냅샷과 지연 + 전송 잠김</text>
         <path d="M 72 436 L 908 436" class="a-default" stroke-width="0.8" stroke-dasharray="3,8"/>
-        <text x="72" y="424" class="t-dim" font-size="10" font-weight="600">03 / 거절과 대리</text>
+        <text x="72" y="424" class="t-dim" font-size="10" font-weight="600">03 / 거절과 재평가</text>
 
         <!-- Primary lifecycle rail -->
         <path d="M 154 157 L 748 157" class="a-emphasis" stroke-width="2.2" marker-end="url(#arrowhead-emphasis)"/>
 
         <!-- Transition paths -->
-        <path data-edge-from="decide" data-edge-to="snapshot" data-edge-label="기지 정보" data-edge-key="0" data-edge-id="decide-snapshot" data-composition-points="402,188;402,278" d="M 402 188 L 402 278" class="a-dashed" stroke-width="1.1" marker-end="url(#arrowhead-dashed)"/>
-        <path data-edge-from="execute" data-edge-to="latency" data-edge-label="지연" data-edge-key="1" data-edge-id="execute-latency" data-composition-points="556,188;556,233;556,233;556,278" d="M 556 188 L 556 233 L 556 233 L 556 278" class="a-dashed" stroke-width="1.1" marker-end="url(#arrowhead-dashed)"/>
-        <path data-edge-from="execute" data-edge-to="commsLock" data-edge-label="단절" data-edge-key="2" data-edge-id="execute-lock" data-composition-points="497,150;481,150;481,378;465,378" d="M 497 150 L 489 150 Q 481 150 481 158 L 481 370 Q 481 378 473 378 L 465 378" class="a-security" stroke-width="1.1" marker-end="url(#arrowhead-security)"/>
-        <path data-edge-from="commsLock" data-edge-to="execute" data-edge-label="복원" data-edge-key="3" data-edge-id="lock-execute" data-composition-points="465,392;481,392;481,164;497,164" d="M 465 392 L 473 392 Q 481 392 481 384 L 481 172 Q 481 164 489 164 L 497 164" class="a-emphasis" stroke-width="2" marker-end="url(#arrowhead-emphasis)"/>
-        <path data-edge-from="snapshot" data-edge-to="rejected" data-edge-label="거절 사유" data-edge-key="4" data-edge-id="snapshot-rejected" data-composition-points="402,336;480,336;480,432;402,432;402,450" d="M 402 336 L 470 336 Q 480 336 480 346 L 480 422 Q 480 432 470 432 L 411 432 Q 402 432 402 441 L 402 450" class="a-security" stroke-width="1.1" marker-end="url(#arrowhead-security)"/>
-        <path data-edge-from="latency" data-edge-to="acting" data-edge-label="복원·대리" data-edge-key="5" data-edge-id="latency-acting" data-composition-points="556,336;556,450" d="M 556 336 L 556 450" class="a-security" stroke-width="1.1" marker-end="url(#arrowhead-security)"/>
+        <path data-edge-from="draft" data-edge-to="transmit" data-edge-key="0" data-edge-id="draft-transmit" data-composition-points="153,157;189,157" d="M 153 157 L 189 157" class="a-default" stroke-width="1.1" marker-end="url(#arrowhead)"/>
+        <path data-edge-from="transmit" data-edge-to="decide" data-edge-key="1" data-edge-id="transmit-decide" data-composition-points="307,157;343,157" d="M 307 157 L 343 157" class="a-default" stroke-width="1.1" marker-end="url(#arrowhead)"/>
+        <path data-edge-from="decide" data-edge-to="execute" data-edge-key="2" data-edge-id="decide-execute" data-composition-points="461,150;479,150;479,157;497,157" d="M 461 150 L 475.5 150 Q 479 150 479 153.5 L 479 153.5 Q 479 157 482.5 157 L 497 157" class="a-default" stroke-width="1.1" marker-end="url(#arrowhead)"/>
+        <path data-edge-from="execute" data-edge-to="receipt" data-edge-key="3" data-edge-id="execute-receipt" data-composition-points="615,157;651,157" d="M 615 157 L 651 157" class="a-default" stroke-width="1.1" marker-end="url(#arrowhead)"/>
+        <path data-edge-from="draft" data-edge-to="snapshot" data-edge-label="기지 고정" data-edge-key="4" data-edge-id="draft-snapshot" data-composition-points="94,188;94,220;320,220;320,307;339,307" d="M 94 188 L 94 210 Q 94 220 104 220 L 310 220 Q 320 220 320 230 L 320 297.5 Q 320 307 329.5 307 L 339 307" class="a-dashed" stroke-width="1.1" marker-end="url(#arrowhead-dashed)"/>
+        <path data-edge-from="snapshot" data-edge-to="decide" data-edge-label="판정 입력" data-edge-key="5" data-edge-id="snapshot-decide" data-composition-points="402,278;402,188" d="M 402 278 L 402 188" class="a-dashed" stroke-width="1.1" marker-end="url(#arrowhead-dashed)"/>
+        <path data-edge-from="execute" data-edge-to="latency" data-edge-label="경로 지연" data-edge-key="6" data-edge-id="execute-latency" data-composition-points="556,188;556,233;556,233;556,278" d="M 556 188 L 556 233 L 556 233 L 556 278" class="a-dashed" stroke-width="1.1" marker-end="url(#arrowhead-dashed)"/>
+        <path data-edge-from="latency" data-edge-to="decide" data-edge-label="도착" data-edge-key="7" data-edge-id="latency-decide" data-composition-points="493,307;477,307;477,164;461,164" d="M 493 307 L 485 307 Q 477 307 477 299 L 477 172 Q 477 164 469 164 L 461 164" class="a-emphasis" stroke-width="2" marker-end="url(#arrowhead-emphasis)"/>
+        <path data-edge-from="decide" data-edge-to="rejected" data-edge-label="거절 사유" data-edge-key="8" data-edge-id="decide-rejected" data-composition-points="461,157;480,157;480,479;461,479" d="M 461 157 L 470.5 157 Q 480 157 480 166.5 L 480 469.5 Q 480 479 470.5 479 L 461 479" class="a-security" stroke-width="1.1" marker-end="url(#arrowhead-security)"/>
+        <path data-edge-from="draft" data-edge-to="commsLock" data-edge-label="전송 전 잠금" data-edge-key="9" data-edge-id="draft-lock" data-composition-points="35,157;20,157;20,385;339,385" d="M 35 157 L 27.5 157 Q 20 157 20 164.5 L 20 375 Q 20 385 30 385 L 339 385" class="a-security" stroke-width="1.1" marker-end="url(#arrowhead-security)"/>
+        <path data-edge-from="transmit" data-edge-to="commsLock" data-edge-label="전송 중 잠금" data-edge-key="10" data-edge-id="transmit-lock" data-composition-points="189,157;320,157;320,385;339,385" d="M 189 157 L 310 157 Q 320 157 320 167 L 320 375.5 Q 320 385 329.5 385 L 339 385" class="a-security" stroke-width="1.1" marker-end="url(#arrowhead-security)"/>
+        <path data-edge-from="commsLock" data-edge-to="acting" data-edge-label="복원 또는 대리" data-edge-key="11" data-edge-id="lock-acting" data-composition-points="465,385;481,385;481,479;497,479" d="M 465 385 L 473 385 Q 481 385 481 393 L 481 471 Q 481 479 489 479 L 497 479" class="a-dashed" stroke-width="1.1" marker-end="url(#arrowhead-dashed)"/>
+        <path data-edge-from="acting" data-edge-to="transmit" data-edge-label="재평가 후 재전송" data-edge-key="12" data-edge-id="acting-transmit" data-composition-points="615,479;900,479;900,80;248,80;248,126" d="M 615 479 L 890 479 Q 900 479 900 469 L 900 90 Q 900 80 890 80 L 258 80 Q 248 80 248 90 L 248 126" class="a-emphasis" stroke-width="2" marker-end="url(#arrowhead-emphasis)"/>
 
         <!-- States -->
-        <g id="node-draft" data-node-id="draft" data-node-label="초안" tabindex="0" role="button" aria-label="Focus 초안, 로컬 작성, 명령 본선" aria-pressed="false" data-node-kind="start" data-node-sublabel="로컬 작성" data-node-tag="미전송" data-node-context="명령 본선">
-          <title>초안 · 로컬 작성 · 명령 본선 · 미전송</title>
+        <g id="node-draft" data-node-id="draft" data-node-label="초안" tabindex="0" role="button" aria-label="Focus 초안, 로컬 작성, 명령 본선" aria-pressed="false" data-node-kind="start" data-node-sublabel="로컬 작성" data-node-tag="스냅샷 시작" data-node-context="명령 본선">
+          <title>초안 · 로컬 작성 · 명령 본선 · 스냅샷 시작</title>
           <rect x="35" y="126" width="118" height="62" rx="7" class="c-mask"/>
           <rect x="35" y="126" width="118" height="62" rx="7" class="c-frontend" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="start" class="semantic-sigil s-frontend" transform="translate(136 132) scale(0.6875)">
@@ -5186,7 +5193,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
         <text data-detail="fine" x="45" y="140" class="t-frontend" font-size="7" font-weight="700">01</text>
           <text data-node-label="" data-detail-anchor="" x="94" y="147" class="t-primary" font-size="10" font-weight="600" text-anchor="middle">초안</text>
           <text data-detail="context" x="94" y="163" class="t-muted" font-size="7" text-anchor="middle">로컬 작성</text>
-        <text data-detail="fine" x="94" y="177" class="t-frontend" font-size="7" text-anchor="middle">미전송</text>
+        <text data-detail="fine" x="94" y="177" class="t-frontend" font-size="7" text-anchor="middle">스냅샷 시작</text>
         </g>
 
         <g id="node-transmit" data-node-id="transmit" data-node-label="전송" tabindex="0" role="button" aria-label="Focus 전송, 지연 경로·ETA, 명령 본선" aria-pressed="false" data-node-kind="active" data-node-sublabel="지연 경로·ETA" data-node-tag="책임 명시" data-node-context="명령 본선">
@@ -5202,8 +5209,8 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
         <text data-detail="fine" x="248" y="177" class="t-backend" font-size="7" text-anchor="middle">책임 명시</text>
         </g>
 
-        <g id="node-decide" data-node-id="decide" data-node-label="수락 판정" tabindex="0" role="button" aria-label="Focus 수락 판정, 수락 또는 거절, 명령 본선" aria-pressed="false" data-node-kind="decision" data-node-sublabel="수락 또는 거절" data-node-tag="권위 서버" data-node-context="명령 본선">
-          <title>수락 판정 · 수락 또는 거절 · 명령 본선 · 권위 서버</title>
+        <g id="node-decide" data-node-id="decide" data-node-label="수락 판정" tabindex="0" role="button" aria-label="Focus 수락 판정, 기지 정보만, 명령 본선" aria-pressed="false" data-node-kind="decision" data-node-sublabel="기지 정보만" data-node-tag="권위 서버" data-node-context="명령 본선">
+          <title>수락 판정 · 기지 정보만 · 명령 본선 · 권위 서버</title>
           <rect x="343" y="126" width="118" height="62" rx="7" class="c-mask"/>
           <rect x="343" y="126" width="118" height="62" rx="7" class="c-security" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="neutral" class="semantic-sigil s-external" transform="translate(444 132) scale(0.6875)">
@@ -5212,7 +5219,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
           </g>
         <text data-detail="fine" x="353" y="140" class="t-security" font-size="7" font-weight="700">03</text>
           <text data-node-label="" data-detail-anchor="" x="402" y="147" class="t-primary" font-size="10" font-weight="600" text-anchor="middle">수락 판정</text>
-          <text data-detail="context" x="402" y="163" class="t-muted" font-size="7" text-anchor="middle">수락 또는 거절</text>
+          <text data-detail="context" x="402" y="163" class="t-muted" font-size="7" text-anchor="middle">기지 정보만</text>
         <text data-detail="fine" x="402" y="177" class="t-security" font-size="7" text-anchor="middle">권위 서버</text>
         </g>
 
@@ -5243,20 +5250,20 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
         <text data-detail="fine" x="710" y="177" class="t-database" font-size="7" text-anchor="middle">원장 기록</text>
         </g>
 
-        <g id="node-snapshot" data-node-id="snapshot" data-node-label="기지 스냅샷" tabindex="0" role="button" aria-label="Focus 기지 스냅샷, 알려진 정보, 지연과 기지 정보" aria-pressed="false" data-node-kind="waiting" data-node-sublabel="알려진 정보" data-node-tag="책임·ETA" data-node-context="지연과 기지 정보">
-          <title>기지 스냅샷 · 알려진 정보 · 지연과 기지 정보 · 책임·ETA</title>
+        <g id="node-snapshot" data-node-id="snapshot" data-node-label="기지 스냅샷" tabindex="0" role="button" aria-label="Focus 기지 스냅샷, 작성·전송 시 고정, 스냅샷과 지연" aria-pressed="false" data-node-kind="waiting" data-node-sublabel="작성·전송 시 고정" data-node-tag="판정 입력" data-node-context="스냅샷과 지연">
+          <title>기지 스냅샷 · 작성·전송 시 고정 · 스냅샷과 지연 · 판정 입력</title>
           <rect x="339" y="278" width="126" height="58" rx="7" class="c-mask"/>
           <rect x="339" y="278" width="126" height="58" rx="7" class="c-cloud" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="waiting" class="semantic-sigil s-cloud" transform="translate(448 284) scale(0.6875)">
             <path d="M4 2.5h8M4 13.5h8M5 3c0 2.8 2 3.2 3 5-1 1.8-3 2.2-3 5M11 3c0 2.8-2 3.2-3 5 1 1.8 3 2.2 3 5"/>
           </g>
           <text data-node-label="" data-detail-anchor="" x="402" y="299" class="t-primary" font-size="10" font-weight="600" text-anchor="middle">기지 스냅샷</text>
-          <text data-detail="context" x="402" y="315" class="t-muted" font-size="7" text-anchor="middle">알려진 정보</text>
-        <text data-detail="fine" x="402" y="325" class="t-cloud" font-size="7" text-anchor="middle">책임·ETA</text>
+          <text data-detail="context" x="402" y="315" class="t-muted" font-size="7" text-anchor="middle">작성·전송 시 고정</text>
+        <text data-detail="fine" x="402" y="325" class="t-cloud" font-size="7" text-anchor="middle">판정 입력</text>
         </g>
 
-        <g id="node-latency" data-node-id="latency" data-node-label="전송 지연" tabindex="0" role="button" aria-label="Focus 전송 지연, 도착 전 대기, 지연과 기지 정보" aria-pressed="false" data-node-kind="waiting" data-node-sublabel="도착 전 대기" data-node-tag="잠금 아님" data-node-context="지연과 기지 정보">
-          <title>전송 지연 · 도착 전 대기 · 지연과 기지 정보 · 잠금 아님</title>
+        <g id="node-latency" data-node-id="latency" data-node-label="전송 지연" tabindex="0" role="button" aria-label="Focus 전송 지연, 도착 전 대기, 스냅샷과 지연" aria-pressed="false" data-node-kind="waiting" data-node-sublabel="도착 전 대기" data-node-tag="잠금 아님" data-node-context="스냅샷과 지연">
+          <title>전송 지연 · 도착 전 대기 · 스냅샷과 지연 · 잠금 아님</title>
           <rect x="493" y="278" width="126" height="58" rx="7" class="c-mask"/>
           <rect x="493" y="278" width="126" height="58" rx="7" class="c-cloud" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="waiting" class="semantic-sigil s-cloud" transform="translate(602 284) scale(0.6875)">
@@ -5267,8 +5274,8 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
         <text data-detail="fine" x="556" y="325" class="t-cloud" font-size="7" text-anchor="middle">잠금 아님</text>
         </g>
 
-        <g id="node-commsLock" data-node-id="commsLock" data-node-label="통신 잠김" tabindex="0" role="button" aria-label="Focus 통신 잠김, 포획·단절, 통신 잠김" aria-pressed="false" data-node-kind="failure" data-node-sublabel="포획·단절" data-node-tag="전송 정지" data-node-context="통신 잠김">
-          <title>통신 잠김 · 포획·단절 · 통신 잠김 · 전송 정지</title>
+        <g id="node-commsLock" data-node-id="commsLock" data-node-label="통신 잠김" tabindex="0" role="button" aria-label="Focus 통신 잠김, 전송 전·중 차단, 전송 잠김" aria-pressed="false" data-node-kind="failure" data-node-sublabel="전송 전·중 차단" data-node-tag="신규 전송 정지" data-node-context="전송 잠김">
+          <title>통신 잠김 · 전송 전·중 차단 · 전송 잠김 · 신규 전송 정지</title>
           <rect x="339" y="356" width="126" height="58" rx="7" class="c-mask"/>
           <rect x="339" y="356" width="126" height="58" rx="7" class="c-security" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="failure" class="semantic-sigil s-security" transform="translate(448 362) scale(0.6875)">
@@ -5276,12 +5283,12 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
             <path d="m5.7 5.7 4.6 4.6m0-4.6-4.6 4.6"/>
           </g>
           <text data-node-label="" data-detail-anchor="" x="402" y="377" class="t-primary" font-size="10" font-weight="600" text-anchor="middle">통신 잠김</text>
-          <text data-detail="context" x="402" y="393" class="t-muted" font-size="7" text-anchor="middle">포획·단절</text>
-        <text data-detail="fine" x="402" y="403" class="t-security" font-size="7" text-anchor="middle">전송 정지</text>
+          <text data-detail="context" x="402" y="393" class="t-muted" font-size="7" text-anchor="middle">전송 전·중 차단</text>
+        <text data-detail="fine" x="402" y="403" class="t-security" font-size="7" text-anchor="middle">신규 전송 정지</text>
         </g>
 
-        <g id="node-rejected" data-node-id="rejected" data-node-label="거절" tabindex="0" role="button" aria-label="Focus 거절, 거절 사유, 거절과 대리" aria-pressed="false" data-node-kind="failure" data-node-sublabel="거절 사유" data-node-tag="종결" data-node-context="거절과 대리">
-          <title>거절 · 거절 사유 · 거절과 대리 · 종결</title>
+        <g id="node-rejected" data-node-id="rejected" data-node-label="거절" tabindex="0" role="button" aria-label="Focus 거절, 거절 사유, 거절과 재평가" aria-pressed="false" data-node-kind="failure" data-node-sublabel="거절 사유" data-node-tag="종결" data-node-context="거절과 재평가">
+          <title>거절 · 거절 사유 · 거절과 재평가 · 종결</title>
           <rect x="343" y="450" width="118" height="58" rx="7" class="c-mask"/>
           <rect x="343" y="450" width="118" height="58" rx="7" class="c-security" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="failure" class="semantic-sigil s-security" transform="translate(444 456) scale(0.6875)">
@@ -5293,43 +5300,59 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
         <text data-detail="fine" x="402" y="497" class="t-security" font-size="7" text-anchor="middle">종결</text>
         </g>
 
-        <g id="node-acting" data-node-id="acting" data-node-label="복원·대리" tabindex="0" role="button" aria-label="Focus 복원·대리, 대리 인물, 거절과 대리" aria-pressed="false" data-node-kind="failure" data-node-sublabel="대리 인물" data-node-tag="재평가" data-node-context="거절과 대리">
-          <title>복원·대리 · 대리 인물 · 거절과 대리 · 재평가</title>
+        <g id="node-acting" data-node-id="acting" data-node-label="복원·지정 대리" tabindex="0" role="button" aria-label="Focus 복원·지정 대리, POV 불변, 거절과 재평가" aria-pressed="false" data-node-kind="failure" data-node-sublabel="POV 불변" data-node-tag="재전송" data-node-context="거절과 재평가">
+          <title>복원·지정 대리 · POV 불변 · 거절과 재평가 · 재전송</title>
           <rect x="497" y="450" width="118" height="58" rx="7" class="c-mask"/>
           <rect x="497" y="450" width="118" height="58" rx="7" class="c-security" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="failure" class="semantic-sigil s-security" transform="translate(598 456) scale(0.6875)">
             <circle cx="8" cy="8" r="5.3"/>
             <path d="m5.7 5.7 4.6 4.6m0-4.6-4.6 4.6"/>
           </g>
-          <text data-node-label="" data-detail-anchor="" x="556" y="471" class="t-primary" font-size="10" font-weight="600" text-anchor="middle">복원·대리</text>
-          <text data-detail="context" x="556" y="487" class="t-muted" font-size="7" text-anchor="middle">대리 인물</text>
-        <text data-detail="fine" x="556" y="497" class="t-security" font-size="7" text-anchor="middle">재평가</text>
+          <text data-node-label="" data-detail-anchor="" x="556" y="471" class="t-primary" font-size="10" font-weight="600" text-anchor="middle">복원·지정 대리</text>
+          <text data-detail="context" x="556" y="487" class="t-muted" font-size="7" text-anchor="middle">POV 불변</text>
+        <text data-detail="fine" x="556" y="497" class="t-security" font-size="7" text-anchor="middle">재전송</text>
         </g>
 
         <!-- Transition labels -->
-        <g data-detail="context" data-edge-from="decide" data-edge-to="snapshot" data-edge-label="기지 정보" data-edge-key="0" data-edge-id="decide-snapshot">
-          <rect x="373.95" y="191" width="56.1" height="16" rx="4" class="c-mask"/>
-          <text x="402" y="202" class="t-messagebus" font-size="8" text-anchor="middle">기지 정보</text>
+
+
+
+
+        <g data-detail="context" data-edge-from="draft" data-edge-to="snapshot" data-edge-label="기지 고정" data-edge-key="4" data-edge-id="draft-snapshot">
+          <rect x="178.95" y="199" width="56.1" height="16" rx="4" class="c-mask"/>
+          <text x="207" y="210" class="t-messagebus" font-size="8" text-anchor="middle">기지 고정</text>
         </g>
-        <g data-detail="context" data-edge-from="execute" data-edge-to="latency" data-edge-label="지연" data-edge-key="1" data-edge-id="execute-latency">
-          <rect x="540" y="212" width="32" height="16" rx="4" class="c-mask"/>
-          <text x="556" y="223" class="t-messagebus" font-size="8" text-anchor="middle">지연</text>
+        <g data-detail="context" data-edge-from="snapshot" data-edge-to="decide" data-edge-label="판정 입력" data-edge-key="5" data-edge-id="snapshot-decide">
+          <rect x="373.95" y="257" width="56.1" height="16" rx="4" class="c-mask"/>
+          <text x="402" y="268" class="t-messagebus" font-size="8" text-anchor="middle">판정 입력</text>
         </g>
-        <g data-detail="context" data-edge-from="execute" data-edge-to="commsLock" data-edge-label="단절" data-edge-key="2" data-edge-id="execute-lock">
-          <rect x="465" y="243" width="32" height="16" rx="4" class="c-mask"/>
-          <text x="481" y="254" class="t-security" font-size="8" text-anchor="middle">단절</text>
+        <g data-detail="context" data-edge-from="execute" data-edge-to="latency" data-edge-label="경로 지연" data-edge-key="6" data-edge-id="execute-latency">
+          <rect x="527.95" y="212" width="56.1" height="16" rx="4" class="c-mask"/>
+          <text x="556" y="223" class="t-messagebus" font-size="8" text-anchor="middle">경로 지연</text>
         </g>
-        <g data-detail="context" data-edge-from="commsLock" data-edge-to="execute" data-edge-label="복원" data-edge-key="3" data-edge-id="lock-execute">
-          <rect x="465" y="257" width="32" height="16" rx="4" class="c-mask"/>
-          <text x="481" y="268" class="t-backend" font-size="8" text-anchor="middle">복원</text>
+        <g data-detail="context" data-edge-from="latency" data-edge-to="decide" data-edge-label="도착" data-edge-key="7" data-edge-id="latency-decide">
+          <rect x="461" y="214.5" width="32" height="16" rx="4" class="c-mask"/>
+          <text x="477" y="225.5" class="t-backend" font-size="8" text-anchor="middle">도착</text>
         </g>
-        <g data-detail="context" data-edge-from="snapshot" data-edge-to="rejected" data-edge-label="거절 사유" data-edge-key="4" data-edge-id="snapshot-rejected">
-          <rect x="451.95" y="417" width="56.1" height="16" rx="4" class="c-mask"/>
-          <text x="480" y="428" class="t-security" font-size="8" text-anchor="middle">거절 사유</text>
+        <g data-detail="context" data-edge-from="decide" data-edge-to="rejected" data-edge-label="거절 사유" data-edge-key="8" data-edge-id="decide-rejected">
+          <rect x="531.95" y="239" width="56.1" height="16" rx="4" class="c-mask"/>
+          <text x="560" y="250" class="t-security" font-size="8" text-anchor="middle">거절 사유</text>
         </g>
-        <g data-detail="context" data-edge-from="latency" data-edge-to="acting" data-edge-label="복원·대리" data-edge-key="5" data-edge-id="latency-acting">
-          <rect x="527.95" y="339" width="56.1" height="16" rx="4" class="c-mask"/>
-          <text x="556" y="350" class="t-security" font-size="8" text-anchor="middle">복원·대리</text>
+        <g data-detail="context" data-edge-from="draft" data-edge-to="commsLock" data-edge-label="전송 전 잠금" data-edge-key="9" data-edge-id="draft-lock">
+          <rect x="-15.400000000000006" y="250" width="70.80000000000001" height="16" rx="4" class="c-mask"/>
+          <text x="20" y="261" class="t-security" font-size="8" text-anchor="middle">전송 전 잠금</text>
+        </g>
+        <g data-detail="context" data-edge-from="transmit" data-edge-to="commsLock" data-edge-label="전송 중 잠금" data-edge-key="10" data-edge-id="transmit-lock">
+          <rect x="284.6" y="250" width="70.80000000000001" height="16" rx="4" class="c-mask"/>
+          <text x="320" y="261" class="t-security" font-size="8" text-anchor="middle">전송 중 잠금</text>
+        </g>
+        <g data-detail="context" data-edge-from="commsLock" data-edge-to="acting" data-edge-label="복원 또는 대리" data-edge-key="11" data-edge-id="lock-acting">
+          <rect x="440.7" y="417" width="80.60000000000001" height="16" rx="4" class="c-mask"/>
+          <text x="481" y="428" class="t-messagebus" font-size="8" text-anchor="middle">복원 또는 대리</text>
+        </g>
+        <g data-detail="context" data-edge-from="acting" data-edge-to="transmit" data-edge-label="재평가 후 재전송" data-edge-key="12" data-edge-id="acting-transmit">
+          <rect x="854.8" y="258.5" width="90.4" height="16" rx="4" class="c-mask"/>
+          <text x="900" y="269.5" class="t-backend" font-size="8" text-anchor="middle">재평가 후 재전송</text>
         </g>
 
         <!-- Legend -->
@@ -5527,8 +5550,8 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
         </div>
         <ul>
           <li>&bull; 초안 → 전송 → 수락 또는 거절 → 집행 → 영수증이다.</li>
-          <li>&bull; 전송은 즉시 도착을 가정하지 않으며 ETA와 책임 인물·관직을 남긴다.</li>
-          <li>&bull; 영수증은 집행 결과를 원장에 한 번만 적는다.</li>
+          <li>&bull; 기지 스냅샷은 초안·전송에서 고정된다. 판정은 그 스냅샷만 쓴다.</li>
+          <li>&bull; 지연은 잠김이 아니다. 도착한 뒤에만 수락 판정으로 간다.</li>
         </ul>
       </div>
 
@@ -5538,9 +5561,9 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
           <h3>정보와 책임</h3>
         </div>
         <ul>
-          <li>&bull; 판정은 전송 시점의 알려진 정보 스냅샷만 쓴다.</li>
-          <li>&bull; 각 명령은 책임 인물 또는 관직을 가진다.</li>
+          <li>&bull; 각 명령은 책임 인물 또는 관직과 ETA를 남긴다.</li>
           <li>&bull; 거절에는 사유가 필요하고, 집행에는 결과가 필요하다.</li>
+          <li>&bull; 영수증은 집행 결과를 원장에 한 번만 적는다.</li>
         </ul>
       </div>
 
@@ -5550,9 +5573,9 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
           <h3>잠김과 대리</h3>
         </div>
         <ul>
-          <li>&bull; 지연은 잠김이 아니다. 통신 단절·포획만 전송을 잠근다.</li>
-          <li>&bull; 잠긴 명령은 복원 또는 대리 인물이 확정된 뒤에만 재개한다.</li>
-          <li>&bull; 대리는 새 현재 인물로 권한과 책임을 다시 읽는다.</li>
+          <li>&bull; 통신 단절·포획은 전송 전이나 전송 중에 신규 원격 전송을 잠근다.</li>
+          <li>&bull; 복원 또는 지정 대리는 잠긴 명령을 재평가한 뒤 전송·판정으로 되돌린다.</li>
+          <li>&bull; 대리는 낡은 명령을 바로 집행하지 않으며, 플레이어 POV를 바꾸지 않는다.</li>
         </ul>
       </div>
     </div>

@@ -8,22 +8,22 @@
   },
   "components": [
     { "id": "person", "type": "frontend", "label": "인물·위치·지식", "sublabel": "현재 POV 불변", "pos": [70, 70], "size": [220, 88], "tag": "한 인물" },
-    { "id": "party", "type": "frontend", "label": "파티", "sublabel": "동행 범위", "pos": [360, 70], "size": [200, 88], "tag": "현장" },
-    { "id": "squad", "type": "backend", "label": "소유·위임 분대", "sublabel": "원격 직접 제어", "pos": [630, 70], "size": [230, 88], "tag": "위임만" },
-    { "id": "office", "type": "security", "label": "관직·관할", "sublabel": "직위 자산", "pos": [70, 250], "size": [220, 88], "tag": "관할" },
-    { "id": "faction", "type": "messagebus", "label": "팩션 제안·승인", "sublabel": "승인·거부", "pos": [360, 250], "size": [200, 88], "tag": "전권 없음" },
+    { "id": "party", "type": "frontend", "label": "파티", "sublabel": "동행≠직접제어", "pos": [360, 70], "size": [200, 88], "tag": "표시만" },
+    { "id": "squad", "type": "backend", "label": "소유·위임 분대", "sublabel": "명시 위임만 직접", "pos": [630, 70], "size": [230, 88], "tag": "직접 제어" },
+    { "id": "office", "type": "security", "label": "관직·관할", "sublabel": "결재 권한", "pos": [70, 250], "size": [220, 88], "tag": "위임 없으면 결재" },
+    { "id": "faction", "type": "messagebus", "label": "세력 내 미위임", "sublabel": "제안·승인·거부", "pos": [360, 250], "size": [200, 88], "tag": "전권 없음" },
     { "id": "comms", "type": "cloud", "label": "통신·명령 추적", "sublabel": "지연·영수증", "pos": [630, 250], "size": [230, 88], "tag": "원장" },
-    { "id": "forbidden", "type": "external", "label": "전지적 전권", "sublabel": "팩션 전역 직접 제어", "pos": [360, 430], "size": [200, 88], "tag": "금지" }
+    { "id": "forbidden", "type": "external", "label": "전지적 전권", "sublabel": "세력 전역 직접 제어", "pos": [360, 430], "size": [200, 88], "tag": "금지" }
   ],
   "boundaries": [
     { "kind": "region", "label": "현재 인물이 아는 세계", "wraps": ["person", "party", "squad", "office", "faction", "comms"] },
-    { "kind": "security-group", "label": "직접 제어 범위", "wraps": ["person", "party", "squad"] }
+    { "kind": "security-group", "label": "직접 제어 범위", "wraps": ["person", "squad"] }
   ],
   "connections": [
-    { "id": "person-party", "from": "person", "to": "party", "label": "동행" },
-    { "id": "party-squad", "from": "party", "to": "squad", "label": "소유·위임" },
+    { "id": "person-party", "from": "person", "to": "party", "label": "동행 표시" },
+    { "id": "party-squad", "from": "party", "to": "squad", "label": "동의·위임만" },
     { "id": "person-office", "from": "person", "to": "office", "label": "수임", "labelDy": 24 },
-    { "id": "office-faction", "from": "office", "to": "faction", "label": "제안·승인" },
+    { "id": "office-faction", "from": "office", "to": "faction", "label": "관할 결재" },
     { "id": "squad-comms", "from": "squad", "to": "comms", "label": "원격 추적", "labelDy": 24 },
     { "id": "faction-comms", "from": "faction", "to": "comms", "label": "결재 추적" },
     { "id": "faction-forbidden", "from": "faction", "to": "forbidden", "label": "직접 제어 금지", "variant": "dashed", "labelDy": 24 }
@@ -33,18 +33,19 @@
       "dot": "slate",
       "title": "지도가 보여주는 것",
       "items": [
-        "불변 층은 현재 인물, 그 위치, 그 인물이 아는 정보다.",
-        "파티와 소유·위임 분대만 직접 제어 층이다.",
-        "관직은 관할을 열고, 팩션은 제안·승인 층이다."
+        "불변 층은 현재 인물, 그 위치, 그 인물이 아는 정보다. 대리가 이 층을 바꾸지 않는다.",
+        "직접 제어 층은 현재 인물 분대, 개인 소유, 명시 위임 분대뿐이다.",
+        "파티 동행은 보이는 범위이지 자동 직접 제어가 아니다.",
+        "관직은 관할의 제안·승인·거부를 열고, 직접 제어는 별도 위임이 있을 때만이다."
       ]
     },
     {
       "dot": "rose",
       "title": "전지적 전권 금지",
       "items": [
-        "팩션 전역 자산을 한 시점에서 직접 조종하지 않는다.",
-        "타 팩션·미위임 자산은 제안·승인·거부로만 움직인다.",
-        "통신 층은 지연과 영수증을 추적할 뿐 전권을 주지 않는다."
+        "자기 세력의 미위임 자산은 제안·승인·거부로만 움직인다.",
+        "다른 세력 자산은 이 명령 층이 아니라 외교다.",
+        "세력 전역을 한 시점에서 직접 조종하지 않는다."
       ]
     }
   ]

@@ -4,33 +4,290 @@
   "meta": {
     "title": "서울:전국 · 원격 명령 수명 주기",
     "quality_profile": "standard",
-    "legend": { "mode": "hidden" }
+    "legend": {
+      "mode": "hidden"
+    }
   },
   "lanes": [
-    { "id": "main", "label": "명령 본선" },
-    { "id": "waiting", "label": "지연과 기지 정보" },
-    { "id": "exceptions", "label": "통신 잠김" },
-    { "id": "terminal", "label": "거절과 대리" }
+    {
+      "id": "main",
+      "label": "명령 본선"
+    },
+    {
+      "id": "waiting",
+      "label": "스냅샷과 지연"
+    },
+    {
+      "id": "exceptions",
+      "label": "전송 잠김"
+    },
+    {
+      "id": "terminal",
+      "label": "거절과 재평가"
+    }
   ],
   "states": [
-    { "id": "draft", "type": "start", "label": "초안", "sublabel": "로컬 작성", "lane": "main", "col": 0, "step": "01", "tag": "미전송" },
-    { "id": "transmit", "type": "active", "label": "전송", "sublabel": "지연 경로·ETA", "lane": "main", "col": 1, "step": "02", "tag": "책임 명시" },
-    { "id": "decide", "type": "decision", "label": "수락 판정", "sublabel": "수락 또는 거절", "lane": "main", "col": 2, "step": "03", "tag": "권위 서버" },
-    { "id": "execute", "type": "active", "label": "집행", "sublabel": "현장 수행", "lane": "main", "col": 3, "step": "04", "tag": "결과 대기" },
-    { "id": "receipt", "type": "success", "label": "영수증", "sublabel": "집행 결과", "lane": "main", "col": 4, "step": "05", "tag": "원장 기록" },
-    { "id": "snapshot", "type": "waiting", "label": "기지 스냅샷", "sublabel": "알려진 정보", "lane": "waiting", "col": 0, "tag": "책임·ETA" },
-    { "id": "latency", "type": "waiting", "label": "전송 지연", "sublabel": "도착 전 대기", "lane": "waiting", "col": 1, "tag": "잠금 아님" },
-    { "id": "commsLock", "type": "failure", "label": "통신 잠김", "sublabel": "포획·단절", "lane": "exceptions", "col": 0, "yOffset": 78, "tag": "전송 정지" },
-    { "id": "rejected", "type": "failure", "label": "거절", "sublabel": "거절 사유", "lane": "terminal", "col": 0, "tag": "종결" },
-    { "id": "acting", "type": "failure", "label": "복원·대리", "sublabel": "대리 인물", "lane": "terminal", "col": 1, "tag": "재평가" }
+    {
+      "id": "draft",
+      "type": "start",
+      "label": "초안",
+      "sublabel": "로컬 작성",
+      "lane": "main",
+      "col": 0,
+      "step": "01",
+      "tag": "스냅샷 시작"
+    },
+    {
+      "id": "transmit",
+      "type": "active",
+      "label": "전송",
+      "sublabel": "지연 경로·ETA",
+      "lane": "main",
+      "col": 1,
+      "step": "02",
+      "tag": "책임 명시"
+    },
+    {
+      "id": "decide",
+      "type": "decision",
+      "label": "수락 판정",
+      "sublabel": "기지 정보만",
+      "lane": "main",
+      "col": 2,
+      "step": "03",
+      "tag": "권위 서버"
+    },
+    {
+      "id": "execute",
+      "type": "active",
+      "label": "집행",
+      "sublabel": "현장 수행",
+      "lane": "main",
+      "col": 3,
+      "step": "04",
+      "tag": "결과 대기"
+    },
+    {
+      "id": "receipt",
+      "type": "success",
+      "label": "영수증",
+      "sublabel": "집행 결과",
+      "lane": "main",
+      "col": 4,
+      "step": "05",
+      "tag": "원장 기록"
+    },
+    {
+      "id": "snapshot",
+      "type": "waiting",
+      "label": "기지 스냅샷",
+      "sublabel": "작성·전송 시 고정",
+      "lane": "waiting",
+      "col": 0,
+      "tag": "판정 입력"
+    },
+    {
+      "id": "latency",
+      "type": "waiting",
+      "label": "전송 지연",
+      "sublabel": "도착 전 대기",
+      "lane": "waiting",
+      "col": 1,
+      "tag": "잠금 아님"
+    },
+    {
+      "id": "commsLock",
+      "type": "failure",
+      "label": "통신 잠김",
+      "sublabel": "전송 전·중 차단",
+      "lane": "exceptions",
+      "col": 0,
+      "yOffset": 78,
+      "tag": "신규 전송 정지"
+    },
+    {
+      "id": "rejected",
+      "type": "failure",
+      "label": "거절",
+      "sublabel": "거절 사유",
+      "lane": "terminal",
+      "col": 0,
+      "tag": "종결"
+    },
+    {
+      "id": "acting",
+      "type": "failure",
+      "label": "복원·지정 대리",
+      "sublabel": "POV 불변",
+      "lane": "terminal",
+      "col": 1,
+      "tag": "재전송"
+    }
   ],
   "transitions": [
-    { "id": "decide-snapshot", "from": "decide", "to": "snapshot", "label": "기지 정보", "variant": "dashed", "fromSide": "bottom", "toSide": "top", "route": "straight", "labelDy": 24 },
-    { "id": "execute-latency", "from": "execute", "to": "latency", "label": "지연", "variant": "dashed", "route": "drop" },
-    { "id": "execute-lock", "from": "execute", "to": "commsLock", "label": "단절", "variant": "security" },
-    { "id": "lock-execute", "from": "commsLock", "to": "execute", "label": "복원", "variant": "emphasis" },
-    { "id": "snapshot-rejected", "from": "snapshot", "to": "rejected", "label": "거절 사유", "variant": "security", "fromSide": "bottom", "toSide": "top", "via": [[480, 336], [480, 432], [402, 432]], "labelAt": [480, 428] },
-    { "id": "latency-acting", "from": "latency", "to": "acting", "label": "복원·대리", "variant": "security", "fromSide": "bottom", "toSide": "top", "route": "straight", "labelDy": 24 }
+    {
+      "id": "draft-transmit",
+      "from": "draft",
+      "to": "transmit"
+    },
+    {
+      "id": "transmit-decide",
+      "from": "transmit",
+      "to": "decide"
+    },
+    {
+      "id": "decide-execute",
+      "from": "decide",
+      "to": "execute"
+    },
+    {
+      "id": "execute-receipt",
+      "from": "execute",
+      "to": "receipt"
+    },
+    {
+      "id": "draft-snapshot",
+      "from": "draft",
+      "to": "snapshot",
+      "label": "기지 고정",
+      "variant": "dashed",
+      "fromSide": "bottom",
+      "toSide": "left",
+      "via": [
+        [
+          94,
+          220
+        ],
+        [
+          320,
+          220
+        ],
+        [
+          320,
+          307
+        ]
+      ]
+    },
+    {
+      "id": "snapshot-decide",
+      "from": "snapshot",
+      "to": "decide",
+      "label": "판정 입력",
+      "variant": "dashed",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "route": "straight"
+    },
+    {
+      "id": "execute-latency",
+      "from": "execute",
+      "to": "latency",
+      "label": "경로 지연",
+      "variant": "dashed",
+      "route": "drop"
+    },
+    {
+      "id": "latency-decide",
+      "from": "latency",
+      "to": "decide",
+      "label": "도착",
+      "variant": "emphasis"
+    },
+    {
+      "id": "decide-rejected",
+      "from": "decide",
+      "to": "rejected",
+      "label": "거절 사유",
+      "variant": "security",
+      "fromSide": "right",
+      "toSide": "right",
+      "via": [
+        [
+          480,
+          157
+        ],
+        [
+          480,
+          479
+        ]
+      ],
+      "labelAt": [
+        560,
+        250
+      ]
+    },
+    {
+      "id": "draft-lock",
+      "from": "draft",
+      "to": "commsLock",
+      "label": "전송 전 잠금",
+      "variant": "security",
+      "fromSide": "left",
+      "toSide": "left",
+      "via": [
+        [
+          20,
+          157
+        ],
+        [
+          20,
+          385
+        ]
+      ]
+    },
+    {
+      "id": "transmit-lock",
+      "from": "transmit",
+      "to": "commsLock",
+      "label": "전송 중 잠금",
+      "variant": "security",
+      "fromSide": "left",
+      "toSide": "left",
+      "via": [
+        [
+          320,
+          157
+        ],
+        [
+          320,
+          385
+        ]
+      ]
+    },
+    {
+      "id": "lock-acting",
+      "from": "commsLock",
+      "to": "acting",
+      "label": "복원 또는 대리",
+      "variant": "dashed",
+      "labelAt": [
+        481,
+        428
+      ]
+    },
+    {
+      "id": "acting-transmit",
+      "from": "acting",
+      "to": "transmit",
+      "label": "재평가 후 재전송",
+      "variant": "emphasis",
+      "fromSide": "right",
+      "toSide": "top",
+      "via": [
+        [
+          900,
+          479
+        ],
+        [
+          900,
+          80
+        ],
+        [
+          248,
+          80
+        ]
+      ]
+    }
   ],
   "cards": [
     {
@@ -38,26 +295,26 @@
       "title": "본선",
       "items": [
         "초안 → 전송 → 수락 또는 거절 → 집행 → 영수증이다.",
-        "전송은 즉시 도착을 가정하지 않으며 ETA와 책임 인물·관직을 남긴다.",
-        "영수증은 집행 결과를 원장에 한 번만 적는다."
+        "기지 스냅샷은 초안·전송에서 고정된다. 판정은 그 스냅샷만 쓴다.",
+        "지연은 잠김이 아니다. 도착한 뒤에만 수락 판정으로 간다."
       ]
     },
     {
       "dot": "emerald",
       "title": "정보와 책임",
       "items": [
-        "판정은 전송 시점의 알려진 정보 스냅샷만 쓴다.",
-        "각 명령은 책임 인물 또는 관직을 가진다.",
-        "거절에는 사유가 필요하고, 집행에는 결과가 필요하다."
+        "각 명령은 책임 인물 또는 관직과 ETA를 남긴다.",
+        "거절에는 사유가 필요하고, 집행에는 결과가 필요하다.",
+        "영수증은 집행 결과를 원장에 한 번만 적는다."
       ]
     },
     {
       "dot": "rose",
       "title": "잠김과 대리",
       "items": [
-        "지연은 잠김이 아니다. 통신 단절·포획만 전송을 잠근다.",
-        "잠긴 명령은 복원 또는 대리 인물이 확정된 뒤에만 재개한다.",
-        "대리는 새 현재 인물로 권한과 책임을 다시 읽는다."
+        "통신 단절·포획은 전송 전이나 전송 중에 신규 원격 전송을 잠근다.",
+        "복원 또는 지정 대리는 잠긴 명령을 재평가한 뒤 전송·판정으로 되돌린다.",
+        "대리는 낡은 명령을 바로 집행하지 않으며, 플레이어 POV를 바꾸지 않는다."
       ]
     }
   ]
