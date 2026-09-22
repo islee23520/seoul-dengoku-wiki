@@ -1,0 +1,6418 @@
+{
+  "schema": "wiki-person-id-candidates.v1",
+  "inputSha256": "73395cd7e84fd9f31628f48f3942624bf94317610ef7fc31d2e6e44851b98830",
+  "baseCommit": "580e778250ffcdec4bbfb731934aabc229fb0bd1",
+  "totalPeople": 1004,
+  "existingKCount": 422,
+  "candidateCount": 582,
+  "existingK": [
+    {
+      "id": "K001",
+      "name": "한재목"
+    },
+    {
+      "id": "K002",
+      "name": "이서담"
+    },
+    {
+      "id": "K003",
+      "name": "김태운"
+    },
+    {
+      "id": "K004",
+      "name": "박누리"
+    },
+    {
+      "id": "K005",
+      "name": "최한결"
+    },
+    {
+      "id": "K006",
+      "name": "정모란"
+    },
+    {
+      "id": "K007",
+      "name": "장필규"
+    },
+    {
+      "id": "K008",
+      "name": "임바다"
+    },
+    {
+      "id": "K009",
+      "name": "유세진"
+    },
+    {
+      "id": "K010",
+      "name": "허도담"
+    },
+    {
+      "id": "K011",
+      "name": "구태윤"
+    },
+    {
+      "id": "K012",
+      "name": "진하겸"
+    },
+    {
+      "id": "K013",
+      "name": "채온결"
+    },
+    {
+      "id": "K014",
+      "name": "표시완"
+    },
+    {
+      "id": "K015",
+      "name": "명우재"
+    },
+    {
+      "id": "K016",
+      "name": "제윤"
+    },
+    {
+      "id": "K017",
+      "name": "변고운"
+    },
+    {
+      "id": "K018",
+      "name": "허은찬"
+    },
+    {
+      "id": "K019",
+      "name": "구하온"
+    },
+    {
+      "id": "K020",
+      "name": "진세빈"
+    },
+    {
+      "id": "K021",
+      "name": "채한솔"
+    },
+    {
+      "id": "K022",
+      "name": "고늘결"
+    },
+    {
+      "id": "K023",
+      "name": "배초담"
+    },
+    {
+      "id": "K024",
+      "name": "류한뫼"
+    },
+    {
+      "id": "K025",
+      "name": "엄새울"
+    },
+    {
+      "id": "K026",
+      "name": "여리안"
+    },
+    {
+      "id": "K027",
+      "name": "기바름"
+    },
+    {
+      "id": "K028",
+      "name": "우오름"
+    },
+    {
+      "id": "K029",
+      "name": "강민서"
+    },
+    {
+      "id": "K030",
+      "name": "정시우"
+    },
+    {
+      "id": "K031",
+      "name": "김나율"
+    },
+    {
+      "id": "K032",
+      "name": "이강묵"
+    },
+    {
+      "id": "K033",
+      "name": "박소언"
+    },
+    {
+      "id": "K034",
+      "name": "최다인"
+    },
+    {
+      "id": "K035",
+      "name": "장우석"
+    },
+    {
+      "id": "K036",
+      "name": "임채원"
+    },
+    {
+      "id": "K037",
+      "name": "한지온"
+    },
+    {
+      "id": "K038",
+      "name": "허다온"
+    },
+    {
+      "id": "K039",
+      "name": "구찬솔"
+    },
+    {
+      "id": "K040",
+      "name": "진우람"
+    },
+    {
+      "id": "K041",
+      "name": "채리울"
+    },
+    {
+      "id": "K042",
+      "name": "표강호"
+    },
+    {
+      "id": "K043",
+      "name": "명소이"
+    },
+    {
+      "id": "K044",
+      "name": "제하온"
+    },
+    {
+      "id": "K045",
+      "name": "변시람"
+    },
+    {
+      "id": "K046",
+      "name": "표예담"
+    },
+    {
+      "id": "K047",
+      "name": "명다해"
+    },
+    {
+      "id": "K048",
+      "name": "제문석"
+    },
+    {
+      "id": "K049",
+      "name": "변주아"
+    },
+    {
+      "id": "K050",
+      "name": "종마루"
+    },
+    {
+      "id": "K051",
+      "name": "고모래"
+    },
+    {
+      "id": "K052",
+      "name": "배온결"
+    },
+    {
+      "id": "K053",
+      "name": "류겨레"
+    },
+    {
+      "id": "K054",
+      "name": "엄누리"
+    },
+    {
+      "id": "K055",
+      "name": "여시온"
+    },
+    {
+      "id": "K056",
+      "name": "기필호"
+    },
+    {
+      "id": "K057",
+      "name": "정호준"
+    },
+    {
+      "id": "K058",
+      "name": "정하린"
+    },
+    {
+      "id": "K059",
+      "name": "최은재"
+    },
+    {
+      "id": "K060",
+      "name": "이봄결"
+    },
+    {
+      "id": "K061",
+      "name": "김도하"
+    },
+    {
+      "id": "K062",
+      "name": "유민호"
+    },
+    {
+      "id": "K063",
+      "name": "박진솔"
+    },
+    {
+      "id": "K064",
+      "name": "장예린"
+    },
+    {
+      "id": "K065",
+      "name": "임시온"
+    },
+    {
+      "id": "K066",
+      "name": "허서겸"
+    },
+    {
+      "id": "K067",
+      "name": "구연재"
+    },
+    {
+      "id": "K068",
+      "name": "진채온"
+    },
+    {
+      "id": "K069",
+      "name": "채봄"
+    },
+    {
+      "id": "K070",
+      "name": "표지안"
+    },
+    {
+      "id": "K071",
+      "name": "명해솔"
+    },
+    {
+      "id": "K072",
+      "name": "제라온"
+    },
+    {
+      "id": "K073",
+      "name": "변태온"
+    },
+    {
+      "id": "K074",
+      "name": "허미리"
+    },
+    {
+      "id": "K075",
+      "name": "구선율"
+    },
+    {
+      "id": "K076",
+      "name": "진마루"
+    },
+    {
+      "id": "K077",
+      "name": "채무진"
+    },
+    {
+      "id": "K078",
+      "name": "우다온"
+    },
+    {
+      "id": "K079",
+      "name": "고초윤"
+    },
+    {
+      "id": "K080",
+      "name": "배서율"
+    },
+    {
+      "id": "K081",
+      "name": "류하늘"
+    },
+    {
+      "id": "K082",
+      "name": "엄도한"
+    },
+    {
+      "id": "K083",
+      "name": "여다솜"
+    },
+    {
+      "id": "K084",
+      "name": "기서진"
+    },
+    {
+      "id": "K085",
+      "name": "송별하"
+    },
+    {
+      "id": "K086",
+      "name": "임하준"
+    },
+    {
+      "id": "K087",
+      "name": "임초원"
+    },
+    {
+      "id": "K088",
+      "name": "한소미"
+    },
+    {
+      "id": "K089",
+      "name": "박세린"
+    },
+    {
+      "id": "K090",
+      "name": "김보람"
+    },
+    {
+      "id": "K091",
+      "name": "이준택"
+    },
+    {
+      "id": "K092",
+      "name": "최나래"
+    },
+    {
+      "id": "K093",
+      "name": "정가온"
+    },
+    {
+      "id": "K094",
+      "name": "장민재"
+    },
+    {
+      "id": "K095",
+      "name": "유하은"
+    },
+    {
+      "id": "K096",
+      "name": "허겸"
+    },
+    {
+      "id": "K097",
+      "name": "구도영"
+    },
+    {
+      "id": "K098",
+      "name": "진모래"
+    },
+    {
+      "id": "K099",
+      "name": "채구름"
+    },
+    {
+      "id": "K100",
+      "name": "표산하"
+    },
+    {
+      "id": "K101",
+      "name": "명강산"
+    },
+    {
+      "id": "K102",
+      "name": "제하율"
+    },
+    {
+      "id": "K103",
+      "name": "변오름"
+    },
+    {
+      "id": "K104",
+      "name": "표누리"
+    },
+    {
+      "id": "K105",
+      "name": "명우솔"
+    },
+    {
+      "id": "K106",
+      "name": "제바름"
+    },
+    {
+      "id": "K107",
+      "name": "변석훈"
+    },
+    {
+      "id": "K108",
+      "name": "종나솔"
+    },
+    {
+      "id": "K109",
+      "name": "고은하"
+    },
+    {
+      "id": "K110",
+      "name": "배나경"
+    },
+    {
+      "id": "K111",
+      "name": "류다인"
+    },
+    {
+      "id": "K112",
+      "name": "엄미래"
+    },
+    {
+      "id": "K113",
+      "name": "여민우"
+    },
+    {
+      "id": "K114",
+      "name": "기하겸"
+    },
+    {
+      "id": "K115",
+      "name": "배우진"
+    },
+    {
+      "id": "K116",
+      "name": "김우찬"
+    },
+    {
+      "id": "K117",
+      "name": "정소율"
+    },
+    {
+      "id": "K118",
+      "name": "장석윤"
+    },
+    {
+      "id": "K119",
+      "name": "이윤서"
+    },
+    {
+      "id": "K120",
+      "name": "박하율"
+    },
+    {
+      "id": "K121",
+      "name": "최도윤"
+    },
+    {
+      "id": "K122",
+      "name": "임겨레"
+    },
+    {
+      "id": "K123",
+      "name": "한보라"
+    },
+    {
+      "id": "K124",
+      "name": "양필호"
+    },
+    {
+      "id": "K125",
+      "name": "주은솔"
+    },
+    {
+      "id": "K126",
+      "name": "차나루"
+    },
+    {
+      "id": "K127",
+      "name": "설강우"
+    },
+    {
+      "id": "K128",
+      "name": "지목현"
+    },
+    {
+      "id": "K129",
+      "name": "마길상"
+    },
+    {
+      "id": "K130",
+      "name": "연하진"
+    },
+    {
+      "id": "K131",
+      "name": "나효원"
+    },
+    {
+      "id": "K132",
+      "name": "양기석"
+    },
+    {
+      "id": "K133",
+      "name": "주단아"
+    },
+    {
+      "id": "K134",
+      "name": "차윤목"
+    },
+    {
+      "id": "K135",
+      "name": "설봄이"
+    },
+    {
+      "id": "K136",
+      "name": "우지호"
+    },
+    {
+      "id": "K137",
+      "name": "종하린"
+    },
+    {
+      "id": "K138",
+      "name": "고재민"
+    },
+    {
+      "id": "K139",
+      "name": "배은찬"
+    },
+    {
+      "id": "K140",
+      "name": "류가온"
+    },
+    {
+      "id": "K141",
+      "name": "엄시완"
+    },
+    {
+      "id": "K142",
+      "name": "여서하"
+    },
+    {
+      "id": "K143",
+      "name": "남휘강"
+    },
+    {
+      "id": "K144",
+      "name": "윤서린"
+    },
+    {
+      "id": "K145",
+      "name": "강예준"
+    },
+    {
+      "id": "K146",
+      "name": "조하린"
+    },
+    {
+      "id": "K147",
+      "name": "윤지율"
+    },
+    {
+      "id": "K148",
+      "name": "오서율"
+    },
+    {
+      "id": "K149",
+      "name": "서라온"
+    },
+    {
+      "id": "K150",
+      "name": "지서윤"
+    },
+    {
+      "id": "K151",
+      "name": "마도한"
+    },
+    {
+      "id": "K152",
+      "name": "연지우"
+    },
+    {
+      "id": "K153",
+      "name": "나선재"
+    },
+    {
+      "id": "K154",
+      "name": "양해온"
+    },
+    {
+      "id": "K155",
+      "name": "주리안"
+    },
+    {
+      "id": "K156",
+      "name": "차세온"
+    },
+    {
+      "id": "K157",
+      "name": "설다흰"
+    },
+    {
+      "id": "K158",
+      "name": "지한솔"
+    },
+    {
+      "id": "K159",
+      "name": "마은결"
+    },
+    {
+      "id": "K160",
+      "name": "연태솔"
+    },
+    {
+      "id": "K161",
+      "name": "나봄결"
+    },
+    {
+      "id": "K162",
+      "name": "홍예준"
+    },
+    {
+      "id": "K163",
+      "name": "추서윤"
+    },
+    {
+      "id": "K164",
+      "name": "어태산"
+    },
+    {
+      "id": "K165",
+      "name": "란지호"
+    },
+    {
+      "id": "K166",
+      "name": "섭도윤"
+    },
+    {
+      "id": "K167",
+      "name": "평예준"
+    },
+    {
+      "id": "K168",
+      "name": "조이록"
+    },
+    {
+      "id": "K169",
+      "name": "박태겸"
+    },
+    {
+      "id": "K170",
+      "name": "신가온"
+    },
+    {
+      "id": "K171",
+      "name": "권시온"
+    },
+    {
+      "id": "K172",
+      "name": "황지호"
+    },
+    {
+      "id": "K173",
+      "name": "송이든"
+    },
+    {
+      "id": "K174",
+      "name": "강다은"
+    },
+    {
+      "id": "K175",
+      "name": "양건우"
+    },
+    {
+      "id": "K176",
+      "name": "주서람"
+    },
+    {
+      "id": "K177",
+      "name": "차호민"
+    },
+    {
+      "id": "K178",
+      "name": "설민우"
+    },
+    {
+      "id": "K179",
+      "name": "지온유"
+    },
+    {
+      "id": "K180",
+      "name": "마하린"
+    },
+    {
+      "id": "K181",
+      "name": "연시완"
+    },
+    {
+      "id": "K182",
+      "name": "나길호"
+    },
+    {
+      "id": "K183",
+      "name": "양채윤"
+    },
+    {
+      "id": "K184",
+      "name": "주하음"
+    },
+    {
+      "id": "K185",
+      "name": "차라온"
+    },
+    {
+      "id": "K186",
+      "name": "설우찬"
+    },
+    {
+      "id": "K187",
+      "name": "단시온"
+    },
+    {
+      "id": "K188",
+      "name": "순가온"
+    },
+    {
+      "id": "K189",
+      "name": "홍재민"
+    },
+    {
+      "id": "K190",
+      "name": "추한결"
+    },
+    {
+      "id": "K191",
+      "name": "어지율"
+    },
+    {
+      "id": "K192",
+      "name": "란하율"
+    },
+    {
+      "id": "K193",
+      "name": "권해진"
+    },
+    {
+      "id": "K194",
+      "name": "오해린"
+    },
+    {
+      "id": "K195",
+      "name": "조민재"
+    },
+    {
+      "id": "K196",
+      "name": "윤서하"
+    },
+    {
+      "id": "K197",
+      "name": "신태산"
+    },
+    {
+      "id": "K198",
+      "name": "서나연"
+    },
+    {
+      "id": "K199",
+      "name": "오도윤"
+    },
+    {
+      "id": "K200",
+      "name": "지윤재"
+    },
+    {
+      "id": "K201",
+      "name": "마솔"
+    },
+    {
+      "id": "K202",
+      "name": "연가온"
+    },
+    {
+      "id": "K203",
+      "name": "나태경"
+    },
+    {
+      "id": "K204",
+      "name": "양이든"
+    },
+    {
+      "id": "K205",
+      "name": "주나경"
+    },
+    {
+      "id": "K206",
+      "name": "차진아"
+    },
+    {
+      "id": "K207",
+      "name": "설초아"
+    },
+    {
+      "id": "K208",
+      "name": "지마루"
+    },
+    {
+      "id": "K209",
+      "name": "마하율"
+    },
+    {
+      "id": "K210",
+      "name": "연은재"
+    },
+    {
+      "id": "K211",
+      "name": "나루희"
+    },
+    {
+      "id": "K212",
+      "name": "섭다은"
+    },
+    {
+      "id": "K213",
+      "name": "평서아"
+    },
+    {
+      "id": "K214",
+      "name": "단노을"
+    },
+    {
+      "id": "K215",
+      "name": "순재민"
+    },
+    {
+      "id": "K216",
+      "name": "홍지훈"
+    },
+    {
+      "id": "K217",
+      "name": "추보람"
+    },
+    {
+      "id": "K218",
+      "name": "어도윤"
+    },
+    {
+      "id": "K219",
+      "name": "최지우"
+    },
+    {
+      "id": "K220",
+      "name": "권미래"
+    },
+    {
+      "id": "K221",
+      "name": "황은설"
+    },
+    {
+      "id": "K222",
+      "name": "송재민"
+    },
+    {
+      "id": "K223",
+      "name": "오하늘"
+    },
+    {
+      "id": "K224",
+      "name": "조은우"
+    },
+    {
+      "id": "K225",
+      "name": "두봉"
+    },
+    {
+      "id": "K226",
+      "name": "모봉용"
+    },
+    {
+      "id": "K227",
+      "name": "봉소"
+    },
+    {
+      "id": "K228",
+      "name": "용복"
+    },
+    {
+      "id": "K229",
+      "name": "소감"
+    },
+    {
+      "id": "K230",
+      "name": "복두모"
+    },
+    {
+      "id": "K231",
+      "name": "국두봉"
+    },
+    {
+      "id": "K232",
+      "name": "감봉"
+    },
+    {
+      "id": "K233",
+      "name": "두용"
+    },
+    {
+      "id": "K234",
+      "name": "모국"
+    },
+    {
+      "id": "K235",
+      "name": "봉용"
+    },
+    {
+      "id": "K236",
+      "name": "용소"
+    },
+    {
+      "id": "K237",
+      "name": "란세온"
+    },
+    {
+      "id": "K238",
+      "name": "섭달호"
+    },
+    {
+      "id": "K239",
+      "name": "평지우"
+    },
+    {
+      "id": "K240",
+      "name": "단보람"
+    },
+    {
+      "id": "K241",
+      "name": "순한결"
+    },
+    {
+      "id": "K242",
+      "name": "홍우찬"
+    },
+    {
+      "id": "K243",
+      "name": "추우찬"
+    },
+    {
+      "id": "K244",
+      "name": "류해담"
+    },
+    {
+      "id": "K245",
+      "name": "백온"
+    },
+    {
+      "id": "K246",
+      "name": "신보람"
+    },
+    {
+      "id": "K247",
+      "name": "황세린"
+    },
+    {
+      "id": "K248",
+      "name": "강태산"
+    },
+    {
+      "id": "K249",
+      "name": "윤초아"
+    },
+    {
+      "id": "K250",
+      "name": "오한결"
+    },
+    {
+      "id": "K251",
+      "name": "두감"
+    },
+    {
+      "id": "K252",
+      "name": "모봉"
+    },
+    {
+      "id": "K253",
+      "name": "봉감"
+    },
+    {
+      "id": "K254",
+      "name": "용국"
+    },
+    {
+      "id": "K255",
+      "name": "소두"
+    },
+    {
+      "id": "K256",
+      "name": "복모"
+    },
+    {
+      "id": "K257",
+      "name": "국봉"
+    },
+    {
+      "id": "K258",
+      "name": "감용"
+    },
+    {
+      "id": "K259",
+      "name": "두소"
+    },
+    {
+      "id": "K260",
+      "name": "모감"
+    },
+    {
+      "id": "K261",
+      "name": "봉두"
+    },
+    {
+      "id": "K262",
+      "name": "용두"
+    },
+    {
+      "id": "K263",
+      "name": "어하은"
+    },
+    {
+      "id": "K264",
+      "name": "란민준"
+    },
+    {
+      "id": "K265",
+      "name": "섭서연"
+    },
+    {
+      "id": "K266",
+      "name": "평은우"
+    },
+    {
+      "id": "K267",
+      "name": "단유진"
+    },
+    {
+      "id": "K268",
+      "name": "순지민"
+    },
+    {
+      "id": "K269",
+      "name": "홍은서"
+    },
+    {
+      "id": "K270",
+      "name": "윤산호"
+    },
+    {
+      "id": "K271",
+      "name": "이홍원"
+    },
+    {
+      "id": "K272",
+      "name": "송하율"
+    },
+    {
+      "id": "K273",
+      "name": "조우찬"
+    },
+    {
+      "id": "K274",
+      "name": "서진아"
+    },
+    {
+      "id": "K275",
+      "name": "권도하"
+    },
+    {
+      "id": "K276",
+      "name": "황노을"
+    },
+    {
+      "id": "K277",
+      "name": "두모"
+    },
+    {
+      "id": "K278",
+      "name": "모소"
+    },
+    {
+      "id": "K279",
+      "name": "봉복"
+    },
+    {
+      "id": "K280",
+      "name": "용모"
+    },
+    {
+      "id": "K281",
+      "name": "소봉"
+    },
+    {
+      "id": "K282",
+      "name": "복두"
+    },
+    {
+      "id": "K283",
+      "name": "국두"
+    },
+    {
+      "id": "K284",
+      "name": "감두"
+    },
+    {
+      "id": "K285",
+      "name": "두국"
+    },
+    {
+      "id": "K286",
+      "name": "모복"
+    },
+    {
+      "id": "K287",
+      "name": "봉국"
+    },
+    {
+      "id": "K288",
+      "name": "용두봉"
+    },
+    {
+      "id": "K289",
+      "name": "추지훈"
+    },
+    {
+      "id": "K290",
+      "name": "어예린"
+    },
+    {
+      "id": "K291",
+      "name": "란진아"
+    },
+    {
+      "id": "K292",
+      "name": "섭채원"
+    },
+    {
+      "id": "K293",
+      "name": "평채원"
+    },
+    {
+      "id": "K294",
+      "name": "단건우"
+    },
+    {
+      "id": "K295",
+      "name": "순하준"
+    },
+    {
+      "id": "K296",
+      "name": "장세화"
+    },
+    {
+      "id": "K297",
+      "name": "안도한"
+    },
+    {
+      "id": "K298",
+      "name": "전미리"
+    },
+    {
+      "id": "K299",
+      "name": "문시온"
+    },
+    {
+      "id": "K300",
+      "name": "하세온"
+    },
+    {
+      "id": "K301",
+      "name": "곽태산"
+    },
+    {
+      "id": "K302",
+      "name": "소두감"
+    },
+    {
+      "id": "K303",
+      "name": "복봉"
+    },
+    {
+      "id": "K304",
+      "name": "국용"
+    },
+    {
+      "id": "K305",
+      "name": "감국"
+    },
+    {
+      "id": "K306",
+      "name": "두복"
+    },
+    {
+      "id": "K307",
+      "name": "복감"
+    },
+    {
+      "id": "K308",
+      "name": "봉모"
+    },
+    {
+      "id": "K309",
+      "name": "용봉"
+    },
+    {
+      "id": "K310",
+      "name": "국소"
+    },
+    {
+      "id": "K311",
+      "name": "복용"
+    },
+    {
+      "id": "K312",
+      "name": "국감"
+    },
+    {
+      "id": "K313",
+      "name": "감모"
+    },
+    {
+      "id": "K314",
+      "name": "탁미르"
+    },
+    {
+      "id": "K315",
+      "name": "범온결"
+    },
+    {
+      "id": "K316",
+      "name": "창다흰"
+    },
+    {
+      "id": "K317",
+      "name": "초나루"
+    },
+    {
+      "id": "K318",
+      "name": "석봄우"
+    },
+    {
+      "id": "K319",
+      "name": "근솔이"
+    },
+    {
+      "id": "K320",
+      "name": "흥지완"
+    },
+    {
+      "id": "K321",
+      "name": "서온결"
+    },
+    {
+      "id": "K322",
+      "name": "류은비"
+    },
+    {
+      "id": "K323",
+      "name": "심달호"
+    },
+    {
+      "id": "K324",
+      "name": "은채윤"
+    },
+    {
+      "id": "K325",
+      "name": "라세영"
+    },
+    {
+      "id": "K326",
+      "name": "남호성"
+    },
+    {
+      "id": "K327",
+      "name": "전솔"
+    },
+    {
+      "id": "K328",
+      "name": "천다움"
+    },
+    {
+      "id": "K329",
+      "name": "동늘솔"
+    },
+    {
+      "id": "K330",
+      "name": "방한울"
+    },
+    {
+      "id": "K331",
+      "name": "수초롱"
+    },
+    {
+      "id": "K332",
+      "name": "선나휘"
+    },
+    {
+      "id": "K333",
+      "name": "원미루"
+    },
+    {
+      "id": "K334",
+      "name": "영늘빛"
+    },
+    {
+      "id": "K335",
+      "name": "판한들"
+    },
+    {
+      "id": "K336",
+      "name": "천다올"
+    },
+    {
+      "id": "K337",
+      "name": "동주하"
+    },
+    {
+      "id": "K338",
+      "name": "방미산"
+    },
+    {
+      "id": "K339",
+      "name": "수효은"
+    },
+    {
+      "id": "K340",
+      "name": "매하루"
+    },
+    {
+      "id": "K341",
+      "name": "탁은솔"
+    },
+    {
+      "id": "K342",
+      "name": "범초이"
+    },
+    {
+      "id": "K343",
+      "name": "창해온"
+    },
+    {
+      "id": "K344",
+      "name": "석라온"
+    },
+    {
+      "id": "K345",
+      "name": "근우람"
+    },
+    {
+      "id": "K346",
+      "name": "흥다온"
+    },
+    {
+      "id": "K347",
+      "name": "백여울"
+    },
+    {
+      "id": "K348",
+      "name": "고서준"
+    },
+    {
+      "id": "K349",
+      "name": "문하율"
+    },
+    {
+      "id": "K350",
+      "name": "안기준"
+    },
+    {
+      "id": "K351",
+      "name": "하윤목"
+    },
+    {
+      "id": "K352",
+      "name": "곽민재"
+    },
+    {
+      "id": "K353",
+      "name": "심가은"
+    },
+    {
+      "id": "K354",
+      "name": "선솔우"
+    },
+    {
+      "id": "K355",
+      "name": "원예나"
+    },
+    {
+      "id": "K356",
+      "name": "영석온"
+    },
+    {
+      "id": "K357",
+      "name": "판늘샘"
+    },
+    {
+      "id": "K358",
+      "name": "천초윤"
+    },
+    {
+      "id": "K359",
+      "name": "동새봄"
+    },
+    {
+      "id": "K360",
+      "name": "방마름"
+    },
+    {
+      "id": "K361",
+      "name": "수지완"
+    },
+    {
+      "id": "K362",
+      "name": "선늘봄"
+    },
+    {
+      "id": "K363",
+      "name": "원다결"
+    },
+    {
+      "id": "K364",
+      "name": "영한뫼"
+    },
+    {
+      "id": "K365",
+      "name": "판초담"
+    },
+    {
+      "id": "K366",
+      "name": "매서담"
+    },
+    {
+      "id": "K367",
+      "name": "탁윤재"
+    },
+    {
+      "id": "K368",
+      "name": "범한들"
+    },
+    {
+      "id": "K369",
+      "name": "창지안"
+    },
+    {
+      "id": "K370",
+      "name": "초태온"
+    },
+    {
+      "id": "K371",
+      "name": "석주아"
+    },
+    {
+      "id": "K372",
+      "name": "근바름"
+    },
+    {
+      "id": "K373",
+      "name": "남윤경"
+    },
+    {
+      "id": "K374",
+      "name": "은태호"
+    },
+    {
+      "id": "K375",
+      "name": "라진우"
+    },
+    {
+      "id": "K376",
+      "name": "전나경"
+    },
+    {
+      "id": "K377",
+      "name": "남시윤"
+    },
+    {
+      "id": "K378",
+      "name": "문도윤"
+    },
+    {
+      "id": "K379",
+      "name": "천나솔"
+    },
+    {
+      "id": "K380",
+      "name": "동미온"
+    },
+    {
+      "id": "K381",
+      "name": "방늘재"
+    },
+    {
+      "id": "K382",
+      "name": "수한별"
+    },
+    {
+      "id": "K383",
+      "name": "선다솜"
+    },
+    {
+      "id": "K384",
+      "name": "원주온"
+    },
+    {
+      "id": "K385",
+      "name": "영미결"
+    },
+    {
+      "id": "K386",
+      "name": "판효담"
+    },
+    {
+      "id": "K387",
+      "name": "천솔빛"
+    },
+    {
+      "id": "K388",
+      "name": "동예솔"
+    },
+    {
+      "id": "K389",
+      "name": "방석담"
+    },
+    {
+      "id": "K390",
+      "name": "흥예나"
+    },
+    {
+      "id": "K391",
+      "name": "매리울"
+    },
+    {
+      "id": "K392",
+      "name": "탁필호"
+    },
+    {
+      "id": "K393",
+      "name": "범채온"
+    },
+    {
+      "id": "K394",
+      "name": "창고운"
+    },
+    {
+      "id": "K395",
+      "name": "초시람"
+    },
+    {
+      "id": "K396",
+      "name": "석오름"
+    },
+    {
+      "id": "K397",
+      "name": "함도겸"
+    },
+    {
+      "id": "K398",
+      "name": "정유라"
+    },
+    {
+      "id": "K399",
+      "name": "하서진"
+    },
+    {
+      "id": "K400",
+      "name": "곽은재"
+    },
+    {
+      "id": "K401",
+      "name": "심유리"
+    },
+    {
+      "id": "K402",
+      "name": "은보람"
+    },
+    {
+      "id": "K403",
+      "name": "안태경"
+    },
+    {
+      "id": "K404",
+      "name": "수늘결"
+    },
+    {
+      "id": "K405",
+      "name": "선초별"
+    },
+    {
+      "id": "K406",
+      "name": "원새울"
+    },
+    {
+      "id": "K407",
+      "name": "영마온"
+    },
+    {
+      "id": "K408",
+      "name": "판지솔"
+    },
+    {
+      "id": "K409",
+      "name": "천늘우"
+    },
+    {
+      "id": "K410",
+      "name": "동새결"
+    },
+    {
+      "id": "K411",
+      "name": "방마빛"
+    },
+    {
+      "id": "K412",
+      "name": "선한솜"
+    },
+    {
+      "id": "K413",
+      "name": "원초온"
+    },
+    {
+      "id": "K414",
+      "name": "천늘샘"
+    },
+    {
+      "id": "K415",
+      "name": "근주하"
+    },
+    {
+      "id": "K416",
+      "name": "흥미리"
+    },
+    {
+      "id": "K417",
+      "name": "매도한"
+    },
+    {
+      "id": "K418",
+      "name": "탁세온"
+    },
+    {
+      "id": "K419",
+      "name": "범하겸"
+    },
+    {
+      "id": "K420",
+      "name": "창은찬"
+    },
+    {
+      "id": "K421",
+      "name": "초진솔"
+    },
+    {
+      "id": "K422",
+      "name": "노세람"
+    }
+  ],
+  "candidates": [
+    {
+      "ordinal": 1,
+      "name": "오경재",
+      "stage": "주요",
+      "state": "S04",
+      "title": "당회장",
+      "locked": true
+    },
+    {
+      "ordinal": 2,
+      "name": "이민석",
+      "stage": "S4",
+      "state": "S01",
+      "title": "배급구역 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 3,
+      "name": "박도윤",
+      "stage": "S4",
+      "state": "S02",
+      "title": "작업반 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 4,
+      "name": "최수아",
+      "stage": "S4",
+      "state": "S03",
+      "title": "종자 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 5,
+      "name": "정예은",
+      "stage": "S4",
+      "state": "S04",
+      "title": "유치선 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 6,
+      "name": "강지유",
+      "stage": "S4",
+      "state": "S05",
+      "title": "관문 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 7,
+      "name": "조예준",
+      "stage": "S4",
+      "state": "S06",
+      "title": "증언 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 8,
+      "name": "윤시우",
+      "stage": "S4",
+      "state": "S07",
+      "title": "배차 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 9,
+      "name": "장주원",
+      "stage": "S4",
+      "state": "S08",
+      "title": "경매 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 10,
+      "name": "임유나",
+      "stage": "S4",
+      "state": "S09",
+      "title": "대역 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 11,
+      "name": "한민서",
+      "stage": "S4",
+      "state": "S10",
+      "title": "피난 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 12,
+      "name": "오윤서",
+      "stage": "S4",
+      "state": "S11",
+      "title": "호송 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 13,
+      "name": "서준서",
+      "stage": "S4",
+      "state": "S12",
+      "title": "대기열 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 14,
+      "name": "신승민",
+      "stage": "S4",
+      "state": "S13",
+      "title": "처방 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 15,
+      "name": "권태윤",
+      "stage": "S4",
+      "state": "S14",
+      "title": "능선 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 16,
+      "name": "황지아",
+      "stage": "S4",
+      "state": "S15",
+      "title": "창고 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 17,
+      "name": "안하늘",
+      "stage": "S4",
+      "state": "S16",
+      "title": "공동구 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 18,
+      "name": "송은지",
+      "stage": "S4",
+      "state": "S01",
+      "title": "교량 통행 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 19,
+      "name": "류동현",
+      "stage": "S4",
+      "state": "S02",
+      "title": "전력장치 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 20,
+      "name": "홍상훈",
+      "stage": "S4",
+      "state": "S03",
+      "title": "수질 계측원",
+      "locked": false
+    },
+    {
+      "ordinal": 21,
+      "name": "고영호",
+      "stage": "S4",
+      "state": "S04",
+      "title": "공방 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 22,
+      "name": "문가은",
+      "stage": "S4",
+      "state": "S05",
+      "title": "급수 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 23,
+      "name": "양서현",
+      "stage": "S4",
+      "state": "S06",
+      "title": "사본 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 24,
+      "name": "손나연",
+      "stage": "S4",
+      "state": "S07",
+      "title": "중계 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 25,
+      "name": "배태민",
+      "stage": "S4",
+      "state": "S08",
+      "title": "시장 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 26,
+      "name": "백현석",
+      "stage": "S4",
+      "state": "S09",
+      "title": "송신 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 27,
+      "name": "허진우",
+      "stage": "S4",
+      "state": "S10",
+      "title": "가족 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 28,
+      "name": "유하영",
+      "stage": "S4",
+      "state": "S11",
+      "title": "북문 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 29,
+      "name": "남시은",
+      "stage": "S4",
+      "state": "S12",
+      "title": "의무호송 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 30,
+      "name": "심다현",
+      "stage": "S4",
+      "state": "S13",
+      "title": "방역 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 31,
+      "name": "노윤호",
+      "stage": "S4",
+      "state": "S14",
+      "title": "검역 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 32,
+      "name": "하민재",
+      "stage": "S4",
+      "state": "S15",
+      "title": "경매 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 33,
+      "name": "곽성호",
+      "stage": "S4",
+      "state": "S16",
+      "title": "감사 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 34,
+      "name": "성수현",
+      "stage": "S4",
+      "state": "S01",
+      "title": "관로 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 35,
+      "name": "차예원",
+      "stage": "S4",
+      "state": "S02",
+      "title": "복구복무 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 36,
+      "name": "주다인",
+      "stage": "S4",
+      "state": "S03",
+      "title": "인증 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 37,
+      "name": "우경민",
+      "stage": "S4",
+      "state": "S04",
+      "title": "부품 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 38,
+      "name": "구한결",
+      "stage": "S4",
+      "state": "S05",
+      "title": "상수 호위 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 39,
+      "name": "민시현",
+      "stage": "S4",
+      "state": "S06",
+      "title": "인준 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 40,
+      "name": "진채린",
+      "stage": "S4",
+      "state": "S07",
+      "title": "호송 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 41,
+      "name": "김서연",
+      "stage": "S4",
+      "state": "S08",
+      "title": "얼음 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 42,
+      "name": "이지민",
+      "stage": "S4",
+      "state": "S09",
+      "title": "안테나 정비사",
+      "locked": false
+    },
+    {
+      "ordinal": 43,
+      "name": "박은윤",
+      "stage": "S4",
+      "state": "S10",
+      "title": "주거 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 44,
+      "name": "최지훈",
+      "stage": "S4",
+      "state": "S11",
+      "title": "차륜 정비사",
+      "locked": false
+    },
+    {
+      "ordinal": 45,
+      "name": "정서준",
+      "stage": "S4",
+      "state": "S12",
+      "title": "배차 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 46,
+      "name": "강달유",
+      "stage": "S4",
+      "state": "S13",
+      "title": "약재 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 47,
+      "name": "조채원",
+      "stage": "S4",
+      "state": "S14",
+      "title": "초소 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 48,
+      "name": "윤소율",
+      "stage": "S4",
+      "state": "S15",
+      "title": "호송 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 49,
+      "name": "장돌원",
+      "stage": "S4",
+      "state": "S16",
+      "title": "호송 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 50,
+      "name": "임건우",
+      "stage": "S4",
+      "state": "S01",
+      "title": "배급구역 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 51,
+      "name": "한현우",
+      "stage": "S4",
+      "state": "S02",
+      "title": "작업반 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 52,
+      "name": "오바서",
+      "stage": "S4",
+      "state": "S03",
+      "title": "종자 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 53,
+      "name": "서다은",
+      "stage": "S4",
+      "state": "S04",
+      "title": "유치선 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 54,
+      "name": "신수빈",
+      "stage": "S4",
+      "state": "S05",
+      "title": "관문 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 55,
+      "name": "권금윤",
+      "stage": "S4",
+      "state": "S06",
+      "title": "증언 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 56,
+      "name": "황우진",
+      "stage": "S4",
+      "state": "S07",
+      "title": "배차 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 57,
+      "name": "안성민",
+      "stage": "S4",
+      "state": "S08",
+      "title": "경매 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 58,
+      "name": "송솔지",
+      "stage": "S4",
+      "state": "S09",
+      "title": "대역 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 59,
+      "name": "류소연",
+      "stage": "S4",
+      "state": "S10",
+      "title": "피난 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 60,
+      "name": "홍혜원",
+      "stage": "S4",
+      "state": "S11",
+      "title": "호송 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 61,
+      "name": "고숲호",
+      "stage": "S4",
+      "state": "S12",
+      "title": "대기열 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 62,
+      "name": "문철민",
+      "stage": "S4",
+      "state": "S13",
+      "title": "처방 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 63,
+      "name": "양기태",
+      "stage": "S4",
+      "state": "S14",
+      "title": "능선 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 64,
+      "name": "손마연",
+      "stage": "S4",
+      "state": "S15",
+      "title": "창고 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 65,
+      "name": "배지원",
+      "stage": "S4",
+      "state": "S16",
+      "title": "공동구 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 66,
+      "name": "백미래",
+      "stage": "S4",
+      "state": "S01",
+      "title": "교량 통행 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 67,
+      "name": "허하우",
+      "stage": "S4",
+      "state": "S02",
+      "title": "전력장치 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 68,
+      "name": "유세훈",
+      "stage": "S4",
+      "state": "S03",
+      "title": "수질 계측원",
+      "locked": false
+    },
+    {
+      "ordinal": 69,
+      "name": "남재원",
+      "stage": "S4",
+      "state": "S04",
+      "title": "공방 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 70,
+      "name": "심별현",
+      "stage": "S4",
+      "state": "S05",
+      "title": "급수 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 71,
+      "name": "노주아",
+      "stage": "S4",
+      "state": "S06",
+      "title": "사본 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 72,
+      "name": "하세은",
+      "stage": "S4",
+      "state": "S07",
+      "title": "중계 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 73,
+      "name": "곽다호",
+      "stage": "S4",
+      "state": "S08",
+      "title": "시장 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 74,
+      "name": "성대현",
+      "stage": "S4",
+      "state": "S09",
+      "title": "송신 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 75,
+      "name": "차지환",
+      "stage": "S4",
+      "state": "S10",
+      "title": "가족 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 76,
+      "name": "주라인",
+      "stage": "S4",
+      "state": "S11",
+      "title": "북문 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 77,
+      "name": "우하진",
+      "stage": "S4",
+      "state": "S12",
+      "title": "의무호송 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 78,
+      "name": "구소희",
+      "stage": "S4",
+      "state": "S13",
+      "title": "방역 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 79,
+      "name": "민파현",
+      "stage": "S4",
+      "state": "S14",
+      "title": "검역 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 80,
+      "name": "진준혁",
+      "stage": "S4",
+      "state": "S15",
+      "title": "경매 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 81,
+      "name": "김준호",
+      "stage": "S4",
+      "state": "S16",
+      "title": "감사 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 82,
+      "name": "이늘민",
+      "stage": "S4",
+      "state": "S01",
+      "title": "관로 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 83,
+      "name": "박하은",
+      "stage": "S4",
+      "state": "S02",
+      "title": "복구복무 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 84,
+      "name": "최름아",
+      "stage": "S4",
+      "state": "S03",
+      "title": "인증 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 85,
+      "name": "정바준",
+      "stage": "S4",
+      "state": "S04",
+      "title": "부품 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 86,
+      "name": "강하준",
+      "stage": "S4",
+      "state": "S05",
+      "title": "상수 호위 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 87,
+      "name": "조새준",
+      "stage": "S4",
+      "state": "S06",
+      "title": "인준 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 88,
+      "name": "윤다율",
+      "stage": "S4",
+      "state": "S07",
+      "title": "호송 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 89,
+      "name": "장하린",
+      "stage": "S4",
+      "state": "S08",
+      "title": "얼음 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 90,
+      "name": "임자나",
+      "stage": "S4",
+      "state": "S09",
+      "title": "안테나 정비사",
+      "locked": false
+    },
+    {
+      "ordinal": 91,
+      "name": "한타우",
+      "stage": "S4",
+      "state": "S10",
+      "title": "주거 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 92,
+      "name": "오지호",
+      "stage": "S4",
+      "state": "S11",
+      "title": "차륜 정비사",
+      "locked": false
+    },
+    {
+      "ordinal": 93,
+      "name": "서서서",
+      "stage": "S4",
+      "state": "S12",
+      "title": "배차 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 94,
+      "name": "신하빈",
+      "stage": "S4",
+      "state": "S13",
+      "title": "약재 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 95,
+      "name": "권예린",
+      "stage": "S4",
+      "state": "S14",
+      "title": "초소 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 96,
+      "name": "황구아",
+      "stage": "S4",
+      "state": "S15",
+      "title": "호송 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 97,
+      "name": "안강민",
+      "stage": "S4",
+      "state": "S16",
+      "title": "호송 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 98,
+      "name": "송재현",
+      "stage": "S4",
+      "state": "S01",
+      "title": "배급구역 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 99,
+      "name": "류람현",
+      "stage": "S4",
+      "state": "S02",
+      "title": "작업반 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 100,
+      "name": "홍나원",
+      "stage": "S4",
+      "state": "S03",
+      "title": "종자 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 101,
+      "name": "고유진",
+      "stage": "S4",
+      "state": "S04",
+      "title": "유치선 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 102,
+      "name": "문아은",
+      "stage": "S4",
+      "state": "S05",
+      "title": "관문 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 103,
+      "name": "양카태",
+      "stage": "S4",
+      "state": "S06",
+      "title": "증언 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 104,
+      "name": "손수호",
+      "stage": "S4",
+      "state": "S07",
+      "title": "배차 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 105,
+      "name": "배동민",
+      "stage": "S4",
+      "state": "S08",
+      "title": "경매 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 106,
+      "name": "백북래",
+      "stage": "S4",
+      "state": "S09",
+      "title": "대역 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 107,
+      "name": "허은서",
+      "stage": "S4",
+      "state": "S10",
+      "title": "피난 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 108,
+      "name": "유빛영",
+      "stage": "S4",
+      "state": "S11",
+      "title": "호송 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 109,
+      "name": "남산원",
+      "stage": "S4",
+      "state": "S12",
+      "title": "대기열 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 110,
+      "name": "심태양",
+      "stage": "S4",
+      "state": "S13",
+      "title": "처방 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 111,
+      "name": "노바호",
+      "stage": "S4",
+      "state": "S14",
+      "title": "능선 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 112,
+      "name": "하가은",
+      "stage": "S4",
+      "state": "S15",
+      "title": "창고 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 113,
+      "name": "곽지현",
+      "stage": "S4",
+      "state": "S16",
+      "title": "공동구 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 114,
+      "name": "성사현",
+      "stage": "S4",
+      "state": "S01",
+      "title": "교량 통행 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 115,
+      "name": "차차환",
+      "stage": "S4",
+      "state": "S02",
+      "title": "전력장치 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 116,
+      "name": "주우석",
+      "stage": "S4",
+      "state": "S03",
+      "title": "수질 계측원",
+      "locked": false
+    },
+    {
+      "ordinal": 117,
+      "name": "우은민",
+      "stage": "S4",
+      "state": "S04",
+      "title": "공방 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 118,
+      "name": "구남희",
+      "stage": "S4",
+      "state": "S05",
+      "title": "급수 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 119,
+      "name": "민연우",
+      "stage": "S4",
+      "state": "S06",
+      "title": "사본 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 120,
+      "name": "진달린",
+      "stage": "S4",
+      "state": "S07",
+      "title": "중계 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 121,
+      "name": "김름호",
+      "stage": "S4",
+      "state": "S08",
+      "title": "시장 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 122,
+      "name": "이바석",
+      "stage": "S4",
+      "state": "S09",
+      "title": "송신 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 123,
+      "name": "박돌윤",
+      "stage": "S4",
+      "state": "S10",
+      "title": "가족 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 124,
+      "name": "최새아",
+      "stage": "S4",
+      "state": "S11",
+      "title": "북문 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 125,
+      "name": "정다은",
+      "stage": "S4",
+      "state": "S12",
+      "title": "의무호송 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 126,
+      "name": "강바유",
+      "stage": "S4",
+      "state": "S13",
+      "title": "방역 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 127,
+      "name": "조자준",
+      "stage": "S4",
+      "state": "S14",
+      "title": "검역 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 128,
+      "name": "윤타우",
+      "stage": "S4",
+      "state": "S15",
+      "title": "경매 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 129,
+      "name": "장금원",
+      "stage": "S4",
+      "state": "S16",
+      "title": "감사 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 130,
+      "name": "임서나",
+      "stage": "S4",
+      "state": "S01",
+      "title": "관로 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 131,
+      "name": "한하서",
+      "stage": "S4",
+      "state": "S02",
+      "title": "복구복무 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 132,
+      "name": "오솔서",
+      "stage": "S4",
+      "state": "S03",
+      "title": "인증 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 133,
+      "name": "서구서",
+      "stage": "S4",
+      "state": "S04",
+      "title": "부품 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 134,
+      "name": "신강민",
+      "stage": "S4",
+      "state": "S05",
+      "title": "상수 호위 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 135,
+      "name": "권숲윤",
+      "stage": "S4",
+      "state": "S06",
+      "title": "인준 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 136,
+      "name": "황람아",
+      "stage": "S4",
+      "state": "S07",
+      "title": "호송 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 137,
+      "name": "안나늘",
+      "stage": "S4",
+      "state": "S08",
+      "title": "얼음 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 138,
+      "name": "송마지",
+      "stage": "S4",
+      "state": "S09",
+      "title": "안테나 정비사",
+      "locked": false
+    },
+    {
+      "ordinal": 139,
+      "name": "류아현",
+      "stage": "S4",
+      "state": "S10",
+      "title": "주거 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 140,
+      "name": "홍카훈",
+      "stage": "S4",
+      "state": "S11",
+      "title": "차륜 정비사",
+      "locked": false
+    },
+    {
+      "ordinal": 141,
+      "name": "고하호",
+      "stage": "S4",
+      "state": "S12",
+      "title": "배차 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 142,
+      "name": "문동은",
+      "stage": "S4",
+      "state": "S13",
+      "title": "약재 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 143,
+      "name": "양북현",
+      "stage": "S4",
+      "state": "S14",
+      "title": "초소 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 144,
+      "name": "손별연",
+      "stage": "S4",
+      "state": "S15",
+      "title": "호송 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 145,
+      "name": "배빛민",
+      "stage": "S4",
+      "state": "S16",
+      "title": "호송 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 146,
+      "name": "백산석",
+      "stage": "S4",
+      "state": "S01",
+      "title": "배급구역 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 147,
+      "name": "허다우",
+      "stage": "S4",
+      "state": "S02",
+      "title": "작업반 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 148,
+      "name": "유바영",
+      "stage": "S4",
+      "state": "S03",
+      "title": "종자 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 149,
+      "name": "남가은",
+      "stage": "S4",
+      "state": "S04",
+      "title": "유치선 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 150,
+      "name": "심라현",
+      "stage": "S4",
+      "state": "S05",
+      "title": "관문 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 151,
+      "name": "노사호",
+      "stage": "S4",
+      "state": "S06",
+      "title": "증언 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 152,
+      "name": "하차재",
+      "stage": "S4",
+      "state": "S07",
+      "title": "배차 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 153,
+      "name": "곽파호",
+      "stage": "S4",
+      "state": "S08",
+      "title": "경매 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 154,
+      "name": "성은현",
+      "stage": "S4",
+      "state": "S09",
+      "title": "대역 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 155,
+      "name": "차남원",
+      "stage": "S4",
+      "state": "S10",
+      "title": "피난 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 156,
+      "name": "주늘인",
+      "stage": "S4",
+      "state": "S11",
+      "title": "호송 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 157,
+      "name": "우달민",
+      "stage": "S4",
+      "state": "S12",
+      "title": "대기열 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 158,
+      "name": "구름결",
+      "stage": "S4",
+      "state": "S13",
+      "title": "처방 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 159,
+      "name": "민바현",
+      "stage": "S4",
+      "state": "S14",
+      "title": "능선 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 160,
+      "name": "진돌린",
+      "stage": "S4",
+      "state": "S15",
+      "title": "창고 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 161,
+      "name": "김새연",
+      "stage": "S4",
+      "state": "S16",
+      "title": "공동구 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 162,
+      "name": "이다민",
+      "stage": "S4",
+      "state": "S01",
+      "title": "교량 통행 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 163,
+      "name": "박바윤",
+      "stage": "S4",
+      "state": "S02",
+      "title": "전력장치 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 164,
+      "name": "최자훈",
+      "stage": "S4",
+      "state": "S03",
+      "title": "수질 계측원",
+      "locked": false
+    },
+    {
+      "ordinal": 165,
+      "name": "정타준",
+      "stage": "S4",
+      "state": "S04",
+      "title": "공방 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 166,
+      "name": "강금유",
+      "stage": "S4",
+      "state": "S05",
+      "title": "급수 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 167,
+      "name": "조서원",
+      "stage": "S4",
+      "state": "S06",
+      "title": "사본 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 168,
+      "name": "윤하율",
+      "stage": "S4",
+      "state": "S07",
+      "title": "중계 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 169,
+      "name": "장솔원",
+      "stage": "S4",
+      "state": "S08",
+      "title": "시장 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 170,
+      "name": "임구우",
+      "stage": "S4",
+      "state": "S09",
+      "title": "송신 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 171,
+      "name": "한강우",
+      "stage": "S4",
+      "state": "S10",
+      "title": "가족 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 172,
+      "name": "오숲서",
+      "stage": "S4",
+      "state": "S11",
+      "title": "북문 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 173,
+      "name": "서람은",
+      "stage": "S4",
+      "state": "S12",
+      "title": "의무호송 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 174,
+      "name": "신나빈",
+      "stage": "S4",
+      "state": "S13",
+      "title": "방역 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 175,
+      "name": "권마윤",
+      "stage": "S4",
+      "state": "S14",
+      "title": "검역 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 176,
+      "name": "황아진",
+      "stage": "S4",
+      "state": "S15",
+      "title": "경매 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 177,
+      "name": "안카민",
+      "stage": "S4",
+      "state": "S16",
+      "title": "감사 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 178,
+      "name": "송하지",
+      "stage": "S4",
+      "state": "S01",
+      "title": "관로 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 179,
+      "name": "류동연",
+      "stage": "S4",
+      "state": "S02",
+      "title": "복구복무 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 180,
+      "name": "홍북원",
+      "stage": "S4",
+      "state": "S03",
+      "title": "인증 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 181,
+      "name": "고별호",
+      "stage": "S4",
+      "state": "S04",
+      "title": "부품 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 182,
+      "name": "문빛민",
+      "stage": "S4",
+      "state": "S05",
+      "title": "상수 호위 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 183,
+      "name": "양산태",
+      "stage": "S4",
+      "state": "S06",
+      "title": "인준 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 184,
+      "name": "손다연",
+      "stage": "S4",
+      "state": "S07",
+      "title": "호송 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 185,
+      "name": "배바원",
+      "stage": "S4",
+      "state": "S08",
+      "title": "얼음 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 186,
+      "name": "백가래",
+      "stage": "S4",
+      "state": "S09",
+      "title": "안테나 정비사",
+      "locked": false
+    },
+    {
+      "ordinal": 187,
+      "name": "허라우",
+      "stage": "S4",
+      "state": "S10",
+      "title": "주거 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 188,
+      "name": "유사훈",
+      "stage": "S4",
+      "state": "S11",
+      "title": "차륜 정비사",
+      "locked": false
+    },
+    {
+      "ordinal": 189,
+      "name": "남차원",
+      "stage": "S4",
+      "state": "S12",
+      "title": "배차 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 190,
+      "name": "심파현",
+      "stage": "S4",
+      "state": "S13",
+      "title": "약재 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 191,
+      "name": "노은아",
+      "stage": "S4",
+      "state": "S14",
+      "title": "초소 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 192,
+      "name": "하남은",
+      "stage": "S4",
+      "state": "S15",
+      "title": "호송 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 193,
+      "name": "곽늘호",
+      "stage": "S4",
+      "state": "S16",
+      "title": "호송 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 194,
+      "name": "성달현",
+      "stage": "S4",
+      "state": "S01",
+      "title": "배급구역 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 195,
+      "name": "차름환",
+      "stage": "S4",
+      "state": "S02",
+      "title": "작업반 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 196,
+      "name": "주바인",
+      "stage": "S4",
+      "state": "S03",
+      "title": "종자 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 197,
+      "name": "우돌진",
+      "stage": "S4",
+      "state": "S04",
+      "title": "유치선 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 198,
+      "name": "구새희",
+      "stage": "S4",
+      "state": "S05",
+      "title": "관문 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 199,
+      "name": "민다현",
+      "stage": "S4",
+      "state": "S06",
+      "title": "증언 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 200,
+      "name": "진바혁",
+      "stage": "S4",
+      "state": "S07",
+      "title": "배차 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 201,
+      "name": "김자호",
+      "stage": "S4",
+      "state": "S08",
+      "title": "경매 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 202,
+      "name": "이타민",
+      "stage": "S4",
+      "state": "S09",
+      "title": "대역 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 203,
+      "name": "박금은",
+      "stage": "S4",
+      "state": "S10",
+      "title": "피난 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 204,
+      "name": "최서아",
+      "stage": "S4",
+      "state": "S11",
+      "title": "호송 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 205,
+      "name": "정하준",
+      "stage": "S4",
+      "state": "S12",
+      "title": "대기열 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 206,
+      "name": "강솔준",
+      "stage": "S4",
+      "state": "S13",
+      "title": "처방 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 207,
+      "name": "조구준",
+      "stage": "S4",
+      "state": "S14",
+      "title": "능선 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 208,
+      "name": "윤강율",
+      "stage": "S4",
+      "state": "S15",
+      "title": "창고 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 209,
+      "name": "장숲린",
+      "stage": "S4",
+      "state": "S16",
+      "title": "공동구 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 210,
+      "name": "임람나",
+      "stage": "S4",
+      "state": "S01",
+      "title": "교량 통행 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 211,
+      "name": "한나우",
+      "stage": "S4",
+      "state": "S02",
+      "title": "전력장치 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 212,
+      "name": "오마호",
+      "stage": "S4",
+      "state": "S03",
+      "title": "수질 계측원",
+      "locked": false
+    },
+    {
+      "ordinal": 213,
+      "name": "서아서",
+      "stage": "S4",
+      "state": "S04",
+      "title": "공방 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 214,
+      "name": "신카빈",
+      "stage": "S4",
+      "state": "S05",
+      "title": "급수 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 215,
+      "name": "권하린",
+      "stage": "S4",
+      "state": "S06",
+      "title": "사본 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 216,
+      "name": "황동아",
+      "stage": "S4",
+      "state": "S07",
+      "title": "중계 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 217,
+      "name": "안북민",
+      "stage": "S4",
+      "state": "S08",
+      "title": "시장 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 218,
+      "name": "송별현",
+      "stage": "S4",
+      "state": "S09",
+      "title": "송신 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 219,
+      "name": "류빛현",
+      "stage": "S4",
+      "state": "S10",
+      "title": "가족 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 220,
+      "name": "홍산원",
+      "stage": "S4",
+      "state": "S11",
+      "title": "북문 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 221,
+      "name": "고다진",
+      "stage": "S4",
+      "state": "S12",
+      "title": "의무호송 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 222,
+      "name": "문바은",
+      "stage": "S4",
+      "state": "S13",
+      "title": "방역 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 223,
+      "name": "양가태",
+      "stage": "S4",
+      "state": "S14",
+      "title": "검역 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 224,
+      "name": "손라호",
+      "stage": "S4",
+      "state": "S15",
+      "title": "경매 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 225,
+      "name": "배사민",
+      "stage": "S4",
+      "state": "S16",
+      "title": "감사 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 226,
+      "name": "백차래",
+      "stage": "S4",
+      "state": "S01",
+      "title": "관로 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 227,
+      "name": "허파서",
+      "stage": "S4",
+      "state": "S02",
+      "title": "복구복무 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 228,
+      "name": "유은영",
+      "stage": "S4",
+      "state": "S03",
+      "title": "인증 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 229,
+      "name": "남남원",
+      "stage": "S4",
+      "state": "S04",
+      "title": "부품 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 230,
+      "name": "심늘양",
+      "stage": "S4",
+      "state": "S05",
+      "title": "상수 호위 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 231,
+      "name": "노달호",
+      "stage": "S4",
+      "state": "S06",
+      "title": "인준 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 232,
+      "name": "하름은",
+      "stage": "S4",
+      "state": "S07",
+      "title": "호송 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 233,
+      "name": "곽바현",
+      "stage": "S4",
+      "state": "S08",
+      "title": "얼음 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 234,
+      "name": "성돌현",
+      "stage": "S4",
+      "state": "S09",
+      "title": "안테나 정비사",
+      "locked": false
+    },
+    {
+      "ordinal": 235,
+      "name": "차새환",
+      "stage": "S4",
+      "state": "S10",
+      "title": "주거 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 236,
+      "name": "주다석",
+      "stage": "S4",
+      "state": "S11",
+      "title": "차륜 정비사",
+      "locked": false
+    },
+    {
+      "ordinal": 237,
+      "name": "우바민",
+      "stage": "S4",
+      "state": "S12",
+      "title": "배차 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 238,
+      "name": "구자희",
+      "stage": "S4",
+      "state": "S13",
+      "title": "약재 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 239,
+      "name": "민타우",
+      "stage": "S4",
+      "state": "S14",
+      "title": "초소 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 240,
+      "name": "진금린",
+      "stage": "S4",
+      "state": "S15",
+      "title": "호송 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 241,
+      "name": "김서호",
+      "stage": "S4",
+      "state": "S16",
+      "title": "호송 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 242,
+      "name": "이하석",
+      "stage": "S4",
+      "state": "S01",
+      "title": "배급구역 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 243,
+      "name": "박솔윤",
+      "stage": "S4",
+      "state": "S02",
+      "title": "작업반 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 244,
+      "name": "최구아",
+      "stage": "S4",
+      "state": "S03",
+      "title": "종자 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 245,
+      "name": "정강은",
+      "stage": "S4",
+      "state": "S04",
+      "title": "유치선 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 246,
+      "name": "강숲유",
+      "stage": "S4",
+      "state": "S05",
+      "title": "관문 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 247,
+      "name": "조람준",
+      "stage": "S4",
+      "state": "S06",
+      "title": "증언 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 248,
+      "name": "윤나우",
+      "stage": "S4",
+      "state": "S07",
+      "title": "배차 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 249,
+      "name": "장마원",
+      "stage": "S4",
+      "state": "S08",
+      "title": "경매 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 250,
+      "name": "임아나",
+      "stage": "S4",
+      "state": "S09",
+      "title": "대역 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 251,
+      "name": "한카서",
+      "stage": "S4",
+      "state": "S10",
+      "title": "피난 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 252,
+      "name": "오하서",
+      "stage": "S4",
+      "state": "S11",
+      "title": "호송 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 253,
+      "name": "서동서",
+      "stage": "S4",
+      "state": "S12",
+      "title": "대기열 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 254,
+      "name": "신북민",
+      "stage": "S4",
+      "state": "S13",
+      "title": "처방 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 255,
+      "name": "권별윤",
+      "stage": "S4",
+      "state": "S14",
+      "title": "능선 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 256,
+      "name": "황빛아",
+      "stage": "S4",
+      "state": "S15",
+      "title": "창고 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 257,
+      "name": "안산늘",
+      "stage": "S4",
+      "state": "S16",
+      "title": "공동구 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 258,
+      "name": "송다지",
+      "stage": "S4",
+      "state": "S01",
+      "title": "교량 통행 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 259,
+      "name": "류바현",
+      "stage": "S4",
+      "state": "S02",
+      "title": "전력장치 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 260,
+      "name": "홍가훈",
+      "stage": "S4",
+      "state": "S03",
+      "title": "수질 계측원",
+      "locked": false
+    },
+    {
+      "ordinal": 261,
+      "name": "고라호",
+      "stage": "S4",
+      "state": "S04",
+      "title": "공방 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 262,
+      "name": "문사은",
+      "stage": "S4",
+      "state": "S05",
+      "title": "급수 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 263,
+      "name": "양차현",
+      "stage": "S4",
+      "state": "S06",
+      "title": "사본 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 264,
+      "name": "손파연",
+      "stage": "S4",
+      "state": "S07",
+      "title": "중계 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 265,
+      "name": "배은민",
+      "stage": "S4",
+      "state": "S08",
+      "title": "시장 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 266,
+      "name": "백남석",
+      "stage": "S4",
+      "state": "S09",
+      "title": "송신 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 267,
+      "name": "허늘우",
+      "stage": "S4",
+      "state": "S10",
+      "title": "가족 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 268,
+      "name": "유달영",
+      "stage": "S4",
+      "state": "S11",
+      "title": "북문 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 269,
+      "name": "남름은",
+      "stage": "S4",
+      "state": "S12",
+      "title": "의무호송 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 270,
+      "name": "심바현",
+      "stage": "S4",
+      "state": "S13",
+      "title": "방역 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 271,
+      "name": "노돌호",
+      "stage": "S4",
+      "state": "S14",
+      "title": "검역 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 272,
+      "name": "하새재",
+      "stage": "S4",
+      "state": "S15",
+      "title": "경매 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 273,
+      "name": "성바현",
+      "stage": "S4",
+      "state": "S16",
+      "title": "감사 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 274,
+      "name": "차자원",
+      "stage": "S4",
+      "state": "S01",
+      "title": "관로 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 275,
+      "name": "주타인",
+      "stage": "S4",
+      "state": "S02",
+      "title": "복구복무 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 276,
+      "name": "우금민",
+      "stage": "S4",
+      "state": "S03",
+      "title": "인증 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 277,
+      "name": "구서결",
+      "stage": "S4",
+      "state": "S04",
+      "title": "부품 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 278,
+      "name": "민하현",
+      "stage": "S4",
+      "state": "S05",
+      "title": "상수 호위 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 279,
+      "name": "진솔린",
+      "stage": "S4",
+      "state": "S06",
+      "title": "인준 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 280,
+      "name": "김구연",
+      "stage": "S4",
+      "state": "S07",
+      "title": "호송 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 281,
+      "name": "이강민",
+      "stage": "S4",
+      "state": "S08",
+      "title": "얼음 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 282,
+      "name": "박숲윤",
+      "stage": "S4",
+      "state": "S09",
+      "title": "안테나 정비사",
+      "locked": false
+    },
+    {
+      "ordinal": 283,
+      "name": "최람훈",
+      "stage": "S4",
+      "state": "S10",
+      "title": "주거 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 284,
+      "name": "정나준",
+      "stage": "S4",
+      "state": "S11",
+      "title": "차륜 정비사",
+      "locked": false
+    },
+    {
+      "ordinal": 285,
+      "name": "강마유",
+      "stage": "S4",
+      "state": "S12",
+      "title": "배차 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 286,
+      "name": "조아원",
+      "stage": "S4",
+      "state": "S13",
+      "title": "약재 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 287,
+      "name": "윤카율",
+      "stage": "S4",
+      "state": "S14",
+      "title": "초소 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 288,
+      "name": "장하원",
+      "stage": "S4",
+      "state": "S15",
+      "title": "호송 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 289,
+      "name": "임동우",
+      "stage": "S4",
+      "state": "S16",
+      "title": "호송 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 290,
+      "name": "한북우",
+      "stage": "S4",
+      "state": "S01",
+      "title": "배급구역 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 291,
+      "name": "오별서",
+      "stage": "S4",
+      "state": "S02",
+      "title": "작업반 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 292,
+      "name": "서빛은",
+      "stage": "S4",
+      "state": "S03",
+      "title": "종자 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 293,
+      "name": "신산빈",
+      "stage": "S4",
+      "state": "S04",
+      "title": "유치선 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 294,
+      "name": "권다윤",
+      "stage": "S4",
+      "state": "S05",
+      "title": "관문 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 295,
+      "name": "황바진",
+      "stage": "S4",
+      "state": "S06",
+      "title": "증언 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 296,
+      "name": "안가민",
+      "stage": "S4",
+      "state": "S07",
+      "title": "배차 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 297,
+      "name": "송라지",
+      "stage": "S4",
+      "state": "S08",
+      "title": "경매 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 298,
+      "name": "류사연",
+      "stage": "S4",
+      "state": "S09",
+      "title": "대역 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 299,
+      "name": "홍차원",
+      "stage": "S4",
+      "state": "S10",
+      "title": "피난 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 300,
+      "name": "고파호",
+      "stage": "S4",
+      "state": "S11",
+      "title": "호송 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 301,
+      "name": "문은민",
+      "stage": "S4",
+      "state": "S12",
+      "title": "대기열 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 302,
+      "name": "양남태",
+      "stage": "S4",
+      "state": "S13",
+      "title": "처방 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 303,
+      "name": "손늘연",
+      "stage": "S4",
+      "state": "S14",
+      "title": "능선 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 304,
+      "name": "배달원",
+      "stage": "S4",
+      "state": "S15",
+      "title": "창고 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 305,
+      "name": "백름래",
+      "stage": "S4",
+      "state": "S16",
+      "title": "공동구 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 306,
+      "name": "허바우",
+      "stage": "S4",
+      "state": "S01",
+      "title": "교량 통행 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 307,
+      "name": "유돌훈",
+      "stage": "S4",
+      "state": "S02",
+      "title": "전력장치 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 308,
+      "name": "남새원",
+      "stage": "S4",
+      "state": "S03",
+      "title": "수질 계측원",
+      "locked": false
+    },
+    {
+      "ordinal": 309,
+      "name": "노바아",
+      "stage": "S4",
+      "state": "S04",
+      "title": "공방 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 310,
+      "name": "하자은",
+      "stage": "S4",
+      "state": "S05",
+      "title": "급수 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 311,
+      "name": "곽타호",
+      "stage": "S4",
+      "state": "S06",
+      "title": "사본 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 312,
+      "name": "성금현",
+      "stage": "S4",
+      "state": "S07",
+      "title": "중계 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 313,
+      "name": "차서환",
+      "stage": "S4",
+      "state": "S08",
+      "title": "시장 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 314,
+      "name": "주하인",
+      "stage": "S4",
+      "state": "S09",
+      "title": "송신 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 315,
+      "name": "우솔진",
+      "stage": "S4",
+      "state": "S10",
+      "title": "가족 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 316,
+      "name": "구구희",
+      "stage": "S4",
+      "state": "S11",
+      "title": "북문 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 317,
+      "name": "민강현",
+      "stage": "S4",
+      "state": "S12",
+      "title": "의무호송 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 318,
+      "name": "진숲혁",
+      "stage": "S4",
+      "state": "S13",
+      "title": "방역 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 319,
+      "name": "김람호",
+      "stage": "S4",
+      "state": "S14",
+      "title": "검역 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 320,
+      "name": "이나민",
+      "stage": "S4",
+      "state": "S15",
+      "title": "경매 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 321,
+      "name": "박마은",
+      "stage": "S4",
+      "state": "S16",
+      "title": "감사 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 322,
+      "name": "최아아",
+      "stage": "S4",
+      "state": "S01",
+      "title": "관로 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 323,
+      "name": "정카준",
+      "stage": "S4",
+      "state": "S02",
+      "title": "복구복무 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 324,
+      "name": "조동준",
+      "stage": "S4",
+      "state": "S03",
+      "title": "인증 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 325,
+      "name": "윤북율",
+      "stage": "S4",
+      "state": "S04",
+      "title": "부품 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 326,
+      "name": "장별린",
+      "stage": "S4",
+      "state": "S05",
+      "title": "상수 호위 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 327,
+      "name": "임빛나",
+      "stage": "S4",
+      "state": "S06",
+      "title": "인준 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 328,
+      "name": "한산우",
+      "stage": "S4",
+      "state": "S07",
+      "title": "호송 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 329,
+      "name": "오다호",
+      "stage": "S4",
+      "state": "S08",
+      "title": "얼음 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 330,
+      "name": "서바서",
+      "stage": "S4",
+      "state": "S09",
+      "title": "안테나 정비사",
+      "locked": false
+    },
+    {
+      "ordinal": 331,
+      "name": "신가빈",
+      "stage": "S4",
+      "state": "S10",
+      "title": "주거 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 332,
+      "name": "권라린",
+      "stage": "S4",
+      "state": "S11",
+      "title": "차륜 정비사",
+      "locked": false
+    },
+    {
+      "ordinal": 333,
+      "name": "황사아",
+      "stage": "S4",
+      "state": "S12",
+      "title": "배차 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 334,
+      "name": "안차민",
+      "stage": "S4",
+      "state": "S13",
+      "title": "약재 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 335,
+      "name": "송파현",
+      "stage": "S4",
+      "state": "S14",
+      "title": "초소 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 336,
+      "name": "류은현",
+      "stage": "S4",
+      "state": "S15",
+      "title": "호송 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 337,
+      "name": "홍남원",
+      "stage": "S4",
+      "state": "S16",
+      "title": "호송 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 338,
+      "name": "고늘진",
+      "stage": "S4",
+      "state": "S01",
+      "title": "배급구역 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 339,
+      "name": "문달은",
+      "stage": "S4",
+      "state": "S02",
+      "title": "작업반 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 340,
+      "name": "양름태",
+      "stage": "S4",
+      "state": "S03",
+      "title": "종자 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 341,
+      "name": "손바호",
+      "stage": "S4",
+      "state": "S04",
+      "title": "유치선 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 342,
+      "name": "배돌민",
+      "stage": "S4",
+      "state": "S05",
+      "title": "관문 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 343,
+      "name": "백새래",
+      "stage": "S4",
+      "state": "S06",
+      "title": "증언 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 344,
+      "name": "허다서",
+      "stage": "S4",
+      "state": "S07",
+      "title": "배차 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 345,
+      "name": "남자원",
+      "stage": "S4",
+      "state": "S08",
+      "title": "경매 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 346,
+      "name": "심타양",
+      "stage": "S4",
+      "state": "S09",
+      "title": "대역 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 347,
+      "name": "노금호",
+      "stage": "S4",
+      "state": "S10",
+      "title": "피난 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 348,
+      "name": "하서은",
+      "stage": "S4",
+      "state": "S11",
+      "title": "호송 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 349,
+      "name": "곽하현",
+      "stage": "S4",
+      "state": "S12",
+      "title": "대기열 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 350,
+      "name": "성솔현",
+      "stage": "S4",
+      "state": "S13",
+      "title": "처방 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 351,
+      "name": "차구환",
+      "stage": "S4",
+      "state": "S14",
+      "title": "능선 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 352,
+      "name": "주강석",
+      "stage": "S4",
+      "state": "S15",
+      "title": "창고 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 353,
+      "name": "우숲민",
+      "stage": "S4",
+      "state": "S16",
+      "title": "공동구 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 354,
+      "name": "구람희",
+      "stage": "S4",
+      "state": "S01",
+      "title": "교량 통행 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 355,
+      "name": "민나우",
+      "stage": "S4",
+      "state": "S02",
+      "title": "전력장치 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 356,
+      "name": "진마린",
+      "stage": "S4",
+      "state": "S03",
+      "title": "수질 계측원",
+      "locked": false
+    },
+    {
+      "ordinal": 357,
+      "name": "김아호",
+      "stage": "S4",
+      "state": "S04",
+      "title": "공방 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 358,
+      "name": "이카석",
+      "stage": "S4",
+      "state": "S05",
+      "title": "급수 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 359,
+      "name": "박하윤",
+      "stage": "S4",
+      "state": "S06",
+      "title": "사본 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 360,
+      "name": "최동아",
+      "stage": "S4",
+      "state": "S07",
+      "title": "중계 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 361,
+      "name": "정북은",
+      "stage": "S4",
+      "state": "S08",
+      "title": "시장 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 362,
+      "name": "강별유",
+      "stage": "S4",
+      "state": "S09",
+      "title": "송신 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 363,
+      "name": "조빛준",
+      "stage": "S4",
+      "state": "S10",
+      "title": "가족 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 364,
+      "name": "윤산우",
+      "stage": "S4",
+      "state": "S11",
+      "title": "북문 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 365,
+      "name": "장다원",
+      "stage": "S4",
+      "state": "S12",
+      "title": "의무호송 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 366,
+      "name": "임바나",
+      "stage": "S4",
+      "state": "S13",
+      "title": "방역 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 367,
+      "name": "한가서",
+      "stage": "S4",
+      "state": "S14",
+      "title": "검역 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 368,
+      "name": "오라서",
+      "stage": "S4",
+      "state": "S15",
+      "title": "경매 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 369,
+      "name": "서사서",
+      "stage": "S4",
+      "state": "S16",
+      "title": "감사 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 370,
+      "name": "신차민",
+      "stage": "S4",
+      "state": "S01",
+      "title": "관로 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 371,
+      "name": "권파윤",
+      "stage": "S4",
+      "state": "S02",
+      "title": "복구복무 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 372,
+      "name": "황은아",
+      "stage": "S4",
+      "state": "S03",
+      "title": "인증 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 373,
+      "name": "안남늘",
+      "stage": "S4",
+      "state": "S04",
+      "title": "부품 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 374,
+      "name": "송늘지",
+      "stage": "S4",
+      "state": "S05",
+      "title": "상수 호위 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 375,
+      "name": "류달현",
+      "stage": "S4",
+      "state": "S06",
+      "title": "인준 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 376,
+      "name": "홍름훈",
+      "stage": "S4",
+      "state": "S07",
+      "title": "호송 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 377,
+      "name": "고바호",
+      "stage": "S4",
+      "state": "S08",
+      "title": "얼음 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 378,
+      "name": "문돌은",
+      "stage": "S4",
+      "state": "S09",
+      "title": "안테나 정비사",
+      "locked": false
+    },
+    {
+      "ordinal": 379,
+      "name": "양새현",
+      "stage": "S4",
+      "state": "S10",
+      "title": "주거 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 380,
+      "name": "배바민",
+      "stage": "S4",
+      "state": "S11",
+      "title": "차륜 정비사",
+      "locked": false
+    },
+    {
+      "ordinal": 381,
+      "name": "백자석",
+      "stage": "S4",
+      "state": "S12",
+      "title": "배차 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 382,
+      "name": "허타우",
+      "stage": "S4",
+      "state": "S13",
+      "title": "약재 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 383,
+      "name": "유금영",
+      "stage": "S4",
+      "state": "S14",
+      "title": "초소 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 384,
+      "name": "남서은",
+      "stage": "S4",
+      "state": "S15",
+      "title": "호송 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 385,
+      "name": "심하현",
+      "stage": "S4",
+      "state": "S16",
+      "title": "호송 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 386,
+      "name": "노솔호",
+      "stage": "S4",
+      "state": "S01",
+      "title": "배급구역 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 387,
+      "name": "하구재",
+      "stage": "S4",
+      "state": "S02",
+      "title": "작업반 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 388,
+      "name": "곽강호",
+      "stage": "S4",
+      "state": "S03",
+      "title": "종자 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 389,
+      "name": "성숲현",
+      "stage": "S4",
+      "state": "S04",
+      "title": "유치선 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 390,
+      "name": "차람원",
+      "stage": "S4",
+      "state": "S05",
+      "title": "관문 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 391,
+      "name": "주나인",
+      "stage": "S4",
+      "state": "S06",
+      "title": "증언 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 392,
+      "name": "우마민",
+      "stage": "S4",
+      "state": "S07",
+      "title": "배차 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 393,
+      "name": "구아결",
+      "stage": "S4",
+      "state": "S08",
+      "title": "경매 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 394,
+      "name": "민카현",
+      "stage": "S4",
+      "state": "S09",
+      "title": "대역 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 395,
+      "name": "진하린",
+      "stage": "S4",
+      "state": "S10",
+      "title": "피난 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 396,
+      "name": "김동연",
+      "stage": "S4",
+      "state": "S11",
+      "title": "호송 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 397,
+      "name": "이북민",
+      "stage": "S4",
+      "state": "S12",
+      "title": "대기열 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 398,
+      "name": "박별윤",
+      "stage": "S4",
+      "state": "S13",
+      "title": "처방 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 399,
+      "name": "최빛훈",
+      "stage": "S4",
+      "state": "S14",
+      "title": "능선 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 400,
+      "name": "정산준",
+      "stage": "S4",
+      "state": "S15",
+      "title": "창고 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 401,
+      "name": "강다유",
+      "stage": "S4",
+      "state": "S16",
+      "title": "공동구 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 402,
+      "name": "조바원",
+      "stage": "S4",
+      "state": "S01",
+      "title": "교량 통행 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 403,
+      "name": "윤가율",
+      "stage": "S4",
+      "state": "S02",
+      "title": "전력장치 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 404,
+      "name": "장라원",
+      "stage": "S4",
+      "state": "S03",
+      "title": "수질 계측원",
+      "locked": false
+    },
+    {
+      "ordinal": 405,
+      "name": "임사우",
+      "stage": "S4",
+      "state": "S04",
+      "title": "공방 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 406,
+      "name": "한차우",
+      "stage": "S4",
+      "state": "S05",
+      "title": "급수 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 407,
+      "name": "오파서",
+      "stage": "S4",
+      "state": "S06",
+      "title": "사본 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 408,
+      "name": "서은은",
+      "stage": "S4",
+      "state": "S07",
+      "title": "중계 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 409,
+      "name": "신남빈",
+      "stage": "S4",
+      "state": "S08",
+      "title": "시장 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 410,
+      "name": "권늘윤",
+      "stage": "S4",
+      "state": "S09",
+      "title": "송신 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 411,
+      "name": "황달진",
+      "stage": "S4",
+      "state": "S10",
+      "title": "가족 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 412,
+      "name": "안름민",
+      "stage": "S4",
+      "state": "S11",
+      "title": "북문 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 413,
+      "name": "송바지",
+      "stage": "S4",
+      "state": "S12",
+      "title": "의무호송 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 414,
+      "name": "류돌연",
+      "stage": "S4",
+      "state": "S13",
+      "title": "방역 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 415,
+      "name": "홍새원",
+      "stage": "S4",
+      "state": "S14",
+      "title": "검역 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 416,
+      "name": "고다호",
+      "stage": "S4",
+      "state": "S15",
+      "title": "경매 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 417,
+      "name": "문바민",
+      "stage": "S4",
+      "state": "S16",
+      "title": "감사 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 418,
+      "name": "양자태",
+      "stage": "S4",
+      "state": "S01",
+      "title": "관로 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 419,
+      "name": "손타연",
+      "stage": "S4",
+      "state": "S02",
+      "title": "복구복무 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 420,
+      "name": "배금원",
+      "stage": "S4",
+      "state": "S03",
+      "title": "인증 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 421,
+      "name": "백서래",
+      "stage": "S4",
+      "state": "S04",
+      "title": "부품 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 422,
+      "name": "유솔훈",
+      "stage": "S4",
+      "state": "S05",
+      "title": "상수 호위 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 423,
+      "name": "남구원",
+      "stage": "S4",
+      "state": "S06",
+      "title": "인준 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 424,
+      "name": "심강현",
+      "stage": "S4",
+      "state": "S07",
+      "title": "호송 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 425,
+      "name": "노숲아",
+      "stage": "S4",
+      "state": "S08",
+      "title": "얼음 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 426,
+      "name": "하람은",
+      "stage": "S4",
+      "state": "S09",
+      "title": "안테나 정비사",
+      "locked": false
+    },
+    {
+      "ordinal": 427,
+      "name": "곽나호",
+      "stage": "S4",
+      "state": "S10",
+      "title": "주거 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 428,
+      "name": "성마현",
+      "stage": "S4",
+      "state": "S11",
+      "title": "차륜 정비사",
+      "locked": false
+    },
+    {
+      "ordinal": 429,
+      "name": "차아환",
+      "stage": "S4",
+      "state": "S12",
+      "title": "배차 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 430,
+      "name": "주카인",
+      "stage": "S4",
+      "state": "S13",
+      "title": "약재 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 431,
+      "name": "구동희",
+      "stage": "S4",
+      "state": "S14",
+      "title": "초소 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 432,
+      "name": "민북현",
+      "stage": "S4",
+      "state": "S15",
+      "title": "호송 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 433,
+      "name": "진별혁",
+      "stage": "S4",
+      "state": "S16",
+      "title": "호송 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 434,
+      "name": "김빛호",
+      "stage": "S4",
+      "state": "S01",
+      "title": "배급구역 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 435,
+      "name": "이산민",
+      "stage": "S4",
+      "state": "S02",
+      "title": "작업반 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 436,
+      "name": "박다은",
+      "stage": "S4",
+      "state": "S03",
+      "title": "종자 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 437,
+      "name": "최바아",
+      "stage": "S4",
+      "state": "S04",
+      "title": "유치선 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 438,
+      "name": "정가준",
+      "stage": "S4",
+      "state": "S05",
+      "title": "관문 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 439,
+      "name": "강라준",
+      "stage": "S4",
+      "state": "S06",
+      "title": "증언 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 440,
+      "name": "조사준",
+      "stage": "S4",
+      "state": "S07",
+      "title": "배차 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 441,
+      "name": "윤차율",
+      "stage": "S4",
+      "state": "S08",
+      "title": "경매 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 442,
+      "name": "장파린",
+      "stage": "S4",
+      "state": "S09",
+      "title": "대역 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 443,
+      "name": "임은나",
+      "stage": "S4",
+      "state": "S10",
+      "title": "피난 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 444,
+      "name": "한남우",
+      "stage": "S4",
+      "state": "S11",
+      "title": "호송 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 445,
+      "name": "오늘호",
+      "stage": "S4",
+      "state": "S12",
+      "title": "대기열 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 446,
+      "name": "서달서",
+      "stage": "S4",
+      "state": "S13",
+      "title": "처방 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 447,
+      "name": "신름빈",
+      "stage": "S4",
+      "state": "S14",
+      "title": "능선 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 448,
+      "name": "권바린",
+      "stage": "S4",
+      "state": "S15",
+      "title": "창고 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 449,
+      "name": "황돌아",
+      "stage": "S4",
+      "state": "S16",
+      "title": "공동구 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 450,
+      "name": "안새민",
+      "stage": "S4",
+      "state": "S01",
+      "title": "교량 통행 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 451,
+      "name": "송다현",
+      "stage": "S4",
+      "state": "S02",
+      "title": "전력장치 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 452,
+      "name": "홍자원",
+      "stage": "S4",
+      "state": "S03",
+      "title": "수질 계측원",
+      "locked": false
+    },
+    {
+      "ordinal": 453,
+      "name": "고타진",
+      "stage": "S4",
+      "state": "S04",
+      "title": "공방 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 454,
+      "name": "문금은",
+      "stage": "S4",
+      "state": "S05",
+      "title": "급수 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 455,
+      "name": "양서태",
+      "stage": "S4",
+      "state": "S06",
+      "title": "사본 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 456,
+      "name": "손하호",
+      "stage": "S4",
+      "state": "S07",
+      "title": "중계 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 457,
+      "name": "배솔민",
+      "stage": "S4",
+      "state": "S08",
+      "title": "시장 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 458,
+      "name": "백구래",
+      "stage": "S4",
+      "state": "S09",
+      "title": "송신 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 459,
+      "name": "허강서",
+      "stage": "S4",
+      "state": "S10",
+      "title": "가족 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 460,
+      "name": "유숲영",
+      "stage": "S4",
+      "state": "S11",
+      "title": "북문 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 461,
+      "name": "남람원",
+      "stage": "S4",
+      "state": "S12",
+      "title": "의무호송 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 462,
+      "name": "심나양",
+      "stage": "S4",
+      "state": "S13",
+      "title": "방역 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 463,
+      "name": "노마호",
+      "stage": "S4",
+      "state": "S14",
+      "title": "검역 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 464,
+      "name": "하아은",
+      "stage": "S4",
+      "state": "S15",
+      "title": "경매 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 465,
+      "name": "곽카현",
+      "stage": "S4",
+      "state": "S16",
+      "title": "감사 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 466,
+      "name": "성하현",
+      "stage": "S4",
+      "state": "S01",
+      "title": "관로 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 467,
+      "name": "차동환",
+      "stage": "S4",
+      "state": "S02",
+      "title": "복구복무 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 468,
+      "name": "주북석",
+      "stage": "S4",
+      "state": "S03",
+      "title": "인증 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 469,
+      "name": "우별민",
+      "stage": "S4",
+      "state": "S04",
+      "title": "부품 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 470,
+      "name": "구빛희",
+      "stage": "S4",
+      "state": "S05",
+      "title": "상수 호위 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 471,
+      "name": "민산우",
+      "stage": "S4",
+      "state": "S06",
+      "title": "인준 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 472,
+      "name": "진다린",
+      "stage": "S4",
+      "state": "S07",
+      "title": "호송 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 473,
+      "name": "김바호",
+      "stage": "S4",
+      "state": "S08",
+      "title": "얼음 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 474,
+      "name": "이가석",
+      "stage": "S4",
+      "state": "S09",
+      "title": "안테나 정비사",
+      "locked": false
+    },
+    {
+      "ordinal": 475,
+      "name": "박라윤",
+      "stage": "S4",
+      "state": "S10",
+      "title": "주거 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 476,
+      "name": "최사아",
+      "stage": "S4",
+      "state": "S11",
+      "title": "차륜 정비사",
+      "locked": false
+    },
+    {
+      "ordinal": 477,
+      "name": "정차은",
+      "stage": "S4",
+      "state": "S12",
+      "title": "배차 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 478,
+      "name": "강파유",
+      "stage": "S4",
+      "state": "S13",
+      "title": "약재 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 479,
+      "name": "조은준",
+      "stage": "S4",
+      "state": "S14",
+      "title": "초소 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 480,
+      "name": "윤남우",
+      "stage": "S4",
+      "state": "S15",
+      "title": "호송 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 481,
+      "name": "장늘원",
+      "stage": "S4",
+      "state": "S16",
+      "title": "호송 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 482,
+      "name": "임달나",
+      "stage": "S4",
+      "state": "S01",
+      "title": "배급구역 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 483,
+      "name": "한름서",
+      "stage": "S4",
+      "state": "S02",
+      "title": "작업반 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 484,
+      "name": "서돌서",
+      "stage": "S4",
+      "state": "S03",
+      "title": "종자 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 485,
+      "name": "신새민",
+      "stage": "S4",
+      "state": "S04",
+      "title": "유치선 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 486,
+      "name": "황바아",
+      "stage": "S4",
+      "state": "S05",
+      "title": "관문 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 487,
+      "name": "안자늘",
+      "stage": "S4",
+      "state": "S06",
+      "title": "증언 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 488,
+      "name": "송타지",
+      "stage": "S4",
+      "state": "S07",
+      "title": "배차 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 489,
+      "name": "류금현",
+      "stage": "S4",
+      "state": "S08",
+      "title": "경매 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 490,
+      "name": "홍서훈",
+      "stage": "S4",
+      "state": "S09",
+      "title": "대역 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 491,
+      "name": "문솔은",
+      "stage": "S4",
+      "state": "S10",
+      "title": "피난 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 492,
+      "name": "양구현",
+      "stage": "S4",
+      "state": "S11",
+      "title": "호송 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 493,
+      "name": "손강연",
+      "stage": "S4",
+      "state": "S12",
+      "title": "대기열 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 494,
+      "name": "배숲민",
+      "stage": "S4",
+      "state": "S13",
+      "title": "처방 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 495,
+      "name": "백람석",
+      "stage": "S4",
+      "state": "S14",
+      "title": "능선 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 496,
+      "name": "허나우",
+      "stage": "S4",
+      "state": "S15",
+      "title": "창고 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 497,
+      "name": "유마영",
+      "stage": "S4",
+      "state": "S16",
+      "title": "공동구 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 498,
+      "name": "남아은",
+      "stage": "S4",
+      "state": "S01",
+      "title": "교량 통행 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 499,
+      "name": "심카현",
+      "stage": "S4",
+      "state": "S02",
+      "title": "전력장치 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 500,
+      "name": "노하호",
+      "stage": "S4",
+      "state": "S03",
+      "title": "수질 계측원",
+      "locked": false
+    },
+    {
+      "ordinal": 501,
+      "name": "하동재",
+      "stage": "S4",
+      "state": "S04",
+      "title": "공방 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 502,
+      "name": "곽북호",
+      "stage": "S4",
+      "state": "S05",
+      "title": "급수 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 503,
+      "name": "성별현",
+      "stage": "S4",
+      "state": "S06",
+      "title": "사본 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 504,
+      "name": "차빛원",
+      "stage": "S4",
+      "state": "S07",
+      "title": "중계 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 505,
+      "name": "주산인",
+      "stage": "S4",
+      "state": "S08",
+      "title": "시장 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 506,
+      "name": "우다민",
+      "stage": "S4",
+      "state": "S09",
+      "title": "송신 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 507,
+      "name": "구바결",
+      "stage": "S4",
+      "state": "S10",
+      "title": "가족 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 508,
+      "name": "민가현",
+      "stage": "S4",
+      "state": "S11",
+      "title": "북문 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 509,
+      "name": "진라린",
+      "stage": "S4",
+      "state": "S12",
+      "title": "의무호송 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 510,
+      "name": "김사연",
+      "stage": "S4",
+      "state": "S13",
+      "title": "방역 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 511,
+      "name": "이차민",
+      "stage": "S4",
+      "state": "S14",
+      "title": "검역 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 512,
+      "name": "박파윤",
+      "stage": "S4",
+      "state": "S15",
+      "title": "경매 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 513,
+      "name": "최은훈",
+      "stage": "S4",
+      "state": "S16",
+      "title": "감사 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 514,
+      "name": "정남준",
+      "stage": "S4",
+      "state": "S01",
+      "title": "관로 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 515,
+      "name": "강늘유",
+      "stage": "S4",
+      "state": "S02",
+      "title": "복구복무 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 516,
+      "name": "조달원",
+      "stage": "S4",
+      "state": "S03",
+      "title": "인증 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 517,
+      "name": "윤름율",
+      "stage": "S4",
+      "state": "S04",
+      "title": "부품 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 518,
+      "name": "장바원",
+      "stage": "S4",
+      "state": "S05",
+      "title": "상수 호위 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 519,
+      "name": "임돌우",
+      "stage": "S4",
+      "state": "S06",
+      "title": "인준 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 520,
+      "name": "한새우",
+      "stage": "S4",
+      "state": "S07",
+      "title": "호송 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 521,
+      "name": "오다서",
+      "stage": "S4",
+      "state": "S08",
+      "title": "얼음 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 522,
+      "name": "서바은",
+      "stage": "S4",
+      "state": "S09",
+      "title": "안테나 정비사",
+      "locked": false
+    },
+    {
+      "ordinal": 523,
+      "name": "신자빈",
+      "stage": "S4",
+      "state": "S10",
+      "title": "주거 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 524,
+      "name": "권타윤",
+      "stage": "S4",
+      "state": "S11",
+      "title": "차륜 정비사",
+      "locked": false
+    },
+    {
+      "ordinal": 525,
+      "name": "황금진",
+      "stage": "S4",
+      "state": "S12",
+      "title": "배차 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 526,
+      "name": "안서민",
+      "stage": "S4",
+      "state": "S13",
+      "title": "약재 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 527,
+      "name": "류솔연",
+      "stage": "S4",
+      "state": "S14",
+      "title": "초소 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 528,
+      "name": "홍구원",
+      "stage": "S4",
+      "state": "S15",
+      "title": "호송 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 529,
+      "name": "고강호",
+      "stage": "S4",
+      "state": "S16",
+      "title": "호송 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 530,
+      "name": "문숲민",
+      "stage": "S4",
+      "state": "S01",
+      "title": "배급구역 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 531,
+      "name": "양람태",
+      "stage": "S4",
+      "state": "S02",
+      "title": "작업반 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 532,
+      "name": "배마원",
+      "stage": "S4",
+      "state": "S03",
+      "title": "종자 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 533,
+      "name": "백아래",
+      "stage": "S4",
+      "state": "S04",
+      "title": "유치선 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 534,
+      "name": "허카우",
+      "stage": "S4",
+      "state": "S05",
+      "title": "관문 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 535,
+      "name": "유하훈",
+      "stage": "S4",
+      "state": "S06",
+      "title": "증언 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 536,
+      "name": "남동원",
+      "stage": "S4",
+      "state": "S07",
+      "title": "배차 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 537,
+      "name": "심북현",
+      "stage": "S4",
+      "state": "S08",
+      "title": "경매 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 538,
+      "name": "노별아",
+      "stage": "S4",
+      "state": "S09",
+      "title": "대역 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 539,
+      "name": "하빛은",
+      "stage": "S4",
+      "state": "S10",
+      "title": "피난 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 540,
+      "name": "곽산호",
+      "stage": "S4",
+      "state": "S11",
+      "title": "호송 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 541,
+      "name": "성다현",
+      "stage": "S4",
+      "state": "S12",
+      "title": "대기열 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 542,
+      "name": "차바환",
+      "stage": "S4",
+      "state": "S13",
+      "title": "처방 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 543,
+      "name": "주가인",
+      "stage": "S4",
+      "state": "S14",
+      "title": "능선 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 544,
+      "name": "우라진",
+      "stage": "S4",
+      "state": "S15",
+      "title": "창고 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 545,
+      "name": "구사희",
+      "stage": "S4",
+      "state": "S16",
+      "title": "공동구 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 546,
+      "name": "민차현",
+      "stage": "S4",
+      "state": "S01",
+      "title": "교량 통행 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 547,
+      "name": "진파혁",
+      "stage": "S4",
+      "state": "S02",
+      "title": "전력장치 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 548,
+      "name": "김은호",
+      "stage": "S4",
+      "state": "S03",
+      "title": "수질 계측원",
+      "locked": false
+    },
+    {
+      "ordinal": 549,
+      "name": "이남민",
+      "stage": "S4",
+      "state": "S04",
+      "title": "공방 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 550,
+      "name": "박늘은",
+      "stage": "S4",
+      "state": "S05",
+      "title": "급수 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 551,
+      "name": "최달아",
+      "stage": "S4",
+      "state": "S06",
+      "title": "사본 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 552,
+      "name": "정름준",
+      "stage": "S4",
+      "state": "S07",
+      "title": "중계 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 553,
+      "name": "강바준",
+      "stage": "S4",
+      "state": "S08",
+      "title": "시장 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 554,
+      "name": "조돌준",
+      "stage": "S4",
+      "state": "S09",
+      "title": "송신 당직",
+      "locked": false
+    },
+    {
+      "ordinal": 555,
+      "name": "윤새율",
+      "stage": "S4",
+      "state": "S10",
+      "title": "가족 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 556,
+      "name": "장다린",
+      "stage": "S4",
+      "state": "S11",
+      "title": "북문 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 557,
+      "name": "한자우",
+      "stage": "S4",
+      "state": "S12",
+      "title": "의무호송 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 558,
+      "name": "오타호",
+      "stage": "S4",
+      "state": "S13",
+      "title": "방역 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 559,
+      "name": "서금서",
+      "stage": "S4",
+      "state": "S14",
+      "title": "검역 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 560,
+      "name": "신서빈",
+      "stage": "S4",
+      "state": "S15",
+      "title": "경매 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 561,
+      "name": "황솔아",
+      "stage": "S4",
+      "state": "S16",
+      "title": "감사 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 562,
+      "name": "안구민",
+      "stage": "S4",
+      "state": "S01",
+      "title": "관로 탐사원",
+      "locked": false
+    },
+    {
+      "ordinal": 563,
+      "name": "송강현",
+      "stage": "S4",
+      "state": "S02",
+      "title": "복구복무 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 564,
+      "name": "류숲현",
+      "stage": "S4",
+      "state": "S03",
+      "title": "인증 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 565,
+      "name": "홍람원",
+      "stage": "S4",
+      "state": "S04",
+      "title": "부품 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 566,
+      "name": "고나진",
+      "stage": "S4",
+      "state": "S05",
+      "title": "상수 호위 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 567,
+      "name": "문마은",
+      "stage": "S4",
+      "state": "S06",
+      "title": "인준 기록관",
+      "locked": false
+    },
+    {
+      "ordinal": 568,
+      "name": "양아태",
+      "stage": "S4",
+      "state": "S07",
+      "title": "호송 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 569,
+      "name": "손카호",
+      "stage": "S4",
+      "state": "S08",
+      "title": "얼음 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 570,
+      "name": "배하민",
+      "stage": "S4",
+      "state": "S09",
+      "title": "안테나 정비사",
+      "locked": false
+    },
+    {
+      "ordinal": 571,
+      "name": "백동래",
+      "stage": "S4",
+      "state": "S10",
+      "title": "주거 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 572,
+      "name": "허북서",
+      "stage": "S4",
+      "state": "S11",
+      "title": "차륜 정비사",
+      "locked": false
+    },
+    {
+      "ordinal": 573,
+      "name": "유별영",
+      "stage": "S4",
+      "state": "S12",
+      "title": "배차 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 574,
+      "name": "남빛원",
+      "stage": "S4",
+      "state": "S13",
+      "title": "약재 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 575,
+      "name": "심산양",
+      "stage": "S4",
+      "state": "S14",
+      "title": "초소 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 576,
+      "name": "이일섭",
+      "stage": "S1",
+      "state": "S14",
+      "title": "관문 공동통치 원장 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 577,
+      "name": "노다호",
+      "stage": "S4",
+      "state": "S15",
+      "title": "호송 물류상",
+      "locked": false
+    },
+    {
+      "ordinal": 578,
+      "name": "하바은",
+      "stage": "S4",
+      "state": "S16",
+      "title": "호송 순찰대",
+      "locked": false
+    },
+    {
+      "ordinal": 579,
+      "name": "곽가현",
+      "stage": "S4",
+      "state": "S01",
+      "title": "배급구역 서기",
+      "locked": false
+    },
+    {
+      "ordinal": 580,
+      "name": "성라현",
+      "stage": "S4",
+      "state": "S02",
+      "title": "작업반 전령",
+      "locked": false
+    },
+    {
+      "ordinal": 581,
+      "name": "조재표",
+      "stage": "S1",
+      "state": "S00",
+      "title": "유명 낭인 지휘자",
+      "locked": false
+    },
+    {
+      "ordinal": 582,
+      "name": "이연",
+      "stage": "S1",
+      "state": "S00",
+      "title": "수행 전령",
+      "locked": false
+    }
+  ],
+  "NOTES": [
+    {
+      "type": "core-tier-without-k",
+      "name": "오경재",
+      "detail": "주요 단계 잠금 인물인데 K 식별자가 없다"
+    },
+    {
+      "type": "state-tier-without-k",
+      "name": "이일섭",
+      "detail": "S1 단계 인물인데 K 식별자가 없다"
+    },
+    {
+      "type": "existing-non-k-character-id",
+      "name": "조재표",
+      "detail": "후보에 포함됐으나 무소속 카드에 안정 캐릭터 ID(unaffiliated-jaepyo-jo)가 이미 있다 — K423+ 발급 전 중복 신원 여부를 사람이 확정해야 한다"
+    },
+    {
+      "type": "state-tier-without-k",
+      "name": "조재표",
+      "detail": "S1 단계 인물인데 K 식별자가 없다"
+    },
+    {
+      "type": "existing-non-k-character-id",
+      "name": "이연",
+      "detail": "후보에 포함됐으나 무소속 카드에 안정 캐릭터 ID(iyen)가 이미 있다 — K423+ 발급 전 중복 신원 여부를 사람이 확정해야 한다"
+    },
+    {
+      "type": "state-tier-without-k",
+      "name": "이연",
+      "detail": "S1 단계 인물인데 K 식별자가 없다"
+    },
+    {
+      "type": "ledger-person-not-in-values",
+      "name": "린샤오메이 (임소매)",
+      "detail": "회랑 인물 총람에 이름이 있으나 values-cast.json people에 없어 이 표의 대상 밖이다"
+    },
+    {
+      "type": "ledger-person-not-in-values",
+      "name": "팜반득 (범반득)",
+      "detail": "회랑 인물 총람에 이름이 있으나 values-cast.json people에 없어 이 표의 대상 밖이다"
+    },
+    {
+      "type": "ledger-person-not-in-values",
+      "name": "아미라 카심",
+      "detail": "회랑 인물 총람에 이름이 있으나 values-cast.json people에 없어 이 표의 대상 밖이다"
+    },
+    {
+      "type": "ledger-person-not-in-values",
+      "name": "조엘 박",
+      "detail": "회랑 인물 총람에 이름이 있으나 values-cast.json people에 없어 이 표의 대상 밖이다"
+    },
+    {
+      "type": "ledger-person-not-in-values",
+      "name": "나르기즈 유수포바",
+      "detail": "회랑 인물 총람에 이름이 있으나 values-cast.json people에 없어 이 표의 대상 밖이다"
+    },
+    {
+      "type": "ledger-person-not-in-values",
+      "name": "최일석",
+      "detail": "회랑 인물 총람에 이름이 있으나 values-cast.json people에 없어 이 표의 대상 밖이다"
+    }
+  ]
+}
