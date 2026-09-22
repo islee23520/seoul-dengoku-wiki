@@ -351,6 +351,51 @@
       "additionalProperties": false
     },
     {
+      "title": "locales/ko-KR/adr-005.json",
+      "type": "object",
+      "required": [
+        "schemaVersion",
+        "locale",
+        "document",
+        "blocks"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "$ref": "#/$defs/schemaVersion"
+        },
+        "locale": {
+          "const": "ko-KR"
+        },
+        "document": {
+          "type": "object",
+          "required": [
+            "id",
+            "blockIds"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^doc\\.[A-Za-z0-9-]+$"
+            },
+            "blockIds": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "blocks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/block"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    {
       "title": "locales/ko-KR/adr-006.json",
       "type": "object",
       "required": [
