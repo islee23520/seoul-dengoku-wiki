@@ -1200,4 +1200,151 @@ EN 짝파일 작성에서 로마자화·영역한 고유명의 대조표다. 202
 | 복구복무 | restoration service |
 | 창세 구술 | the creation oral record |
 | 회랑 | corridors |
-| 무주지 | unclaimed territory
+| 무주지 | unclaimed territory |
+
+## chronology·places·factions·culture 추가 용어 (task 15)
+
+태스크 15(연대기·장소·세력·문화 EN 이관)이 같은 규칙으로 추가했다. 문서 제목과 이관에서 처음 영역한 고유명·조어를 배치 순서로 적는다.
+
+### 배치 1 문서 제목
+
+| 한국어 | English |
+| --- | --- |
+| 재벌 가문과 세기 파벌 | Chaebol Houses and the Century Factions |
+| 서울과 지하철 레이어 | Seoul and the Subway Layers |
+| 역 내부에 들어가면 | Entering the Station Interior |
+| 식문화 | Food Culture |
+| 이야기 | The Stories |
+| 징집 잔존과 군 장부 | Conscription Remnants and the Military Registers |
+| 월드맵의 구조 | The Structure of the World Map |
+| 강·구·동 건물 재사용 | River, Gu, and Dong Building Reuse |
+| 서울전국 백년실록 (백년 연초) | The Hundred-Year Annals of Seoul Dengoku |
+
+### 배치 1 용어
+
+| 한국어 | English |
+| --- | --- |
+| 서울:전국 (서울전국) | Seoul Dengoku |
+| 강국 | great power |
+| 약소국 | lesser state |
+| 권역 | sphere |
+| 법통 | legitimacy |
+| 기록청 | Records Bureau |
+| 군사호적 논쟁 | the military-household register dispute |
+| 공신의 겨울 | the Merit Subjects' Winter |
+| 공백의 세기 | the empty century |
+| 생활권 비상위원회 | living-sphere emergency committee |
+| 수방사 잔편 | Capital Defense Command remnants |
+| 개방 손 | the Open Hand |
+| 환승계 | the Transfer Circle |
+| 임진강관문전구 | Imjin River Gate Theater |
+| 서해곡창전구 | West Sea Granary Theater |
+| 대한해협전구 | Korea Strait Theater |
+| 두만강극동전구 | Duman River Far East Theater |
+| 인천신탁전구 | Incheon Trust Theater |
+| 아리수 | Arisu |
+| 손님물 | guest water |
+| 수조 농어 | tank aquaculture |
+| 명부 시민 | register citizens |
+| 제작동맹 | Fabrication Alliance |
+| 급수권 | water right |
+
+### 배치 2 문서 제목
+
+| 한국어 | English |
+| --- | --- |
+| 세력과 외교 | Powers and Diplomacy |
+| 이주민 회랑 | Diaspora Corridors |
+| 가치관과 정책 척도 | Values and Policy Scales |
+| 서울 십육국 | The Sixteen States of Seoul |
+| 시나리오 타임라인 | Scenario Timeline |
+| 무공 | Martial Paths |
+
+### 배치 2 용어
+
+| 한국어 | English |
+| --- | --- |
+| 오경재 | O Gyeongjae |
+| 오호십육국 | the Five Hu and Sixteen States |
+| 호 (다섯 호) | Hu (the five Hu) |
+| 형조 | the Punishment Tribunal |
+| 교정원장 | Kyujeongwon head |
+| 손결 | hand-form |
+| 내숨 | Inner Breath |
+| 외손 | Outer Hand |
+| 경보 | Light Step |
+| 연장 | Tools |
+| 제압 | Restraint |
+| 손고침 | Hand-Mending |
+| 수문호흡법 | Sluice-Breath Method |
+| 차륜강체공 | Wheel-Tempering Work |
+| 강단호명법 | Pulpit-Call Method |
+| 호위철벽진 | Escort Iron-Wall Formation |
+| 기록단절법 | Record-Severance Method |
+| 죽검연환법 | Bamboo-Sword Chain Method |
+| 연각권법 | Linked-Kick Method |
+| 공탄총검법 | Empty-Round Bayonet Method |
+| 감응조준법 | Resonant-Aiming Method |
+| 죽대손 | Bamboo-Stave Hand |
+| 매트손 | Mat Hand |
+| 빈탄손 | Empty-Round Hand |
+| 렌즈숨 | Lens Breath |
+| 견습손 | Apprentice Hand |
+| 당직손 | Watch Hand |
+| 사제손 | Master Hand |
+| 원로손 | Elder Hand |
+| 수문계 | sluice lineage |
+| 제작계 | fabrication lineage |
+| 원장계 | ledger lineage |
+| 노선도계 | route-map lineage |
+| 배전계 | distribution lineage |
+| 안내음성계 | announcement-voice lineage |
+| 동원명부계 | mobilization-register lineage |
+| 선원계 | monastery lineage |
+| 제대계 | altar lineage |
+| 강단계 | pulpit lineage |
+| 급수계약례 | Water-Compact Rite |
+| 공개규격례 | Open-Standards Rite |
+| 정시방송례 | On-Time-Broadcast Rite |
+| 기록인준례 | Record-Accreditation Rite |
+| 계약중재례 | Contract-Mediation Rite |
+| 숙영 맹세 | the lodging oath |
+| 경매공려례 | Auction-Disclosure Rite |
+| 환승맹약 | Transfer Pact |
+| 보호급수례 | Protected-Water Rite |
+| 치료 원칙 | the treatment principle |
+| 비상 급수례 | Emergency-Water Rite |
+| 차륜기동례 | Wheel-Mobility Rite |
+| 펌프공방례 | Pump-Workshop Rite |
+| 결제권례 | Settlement-Right Rite |
+| 소집잔존례 | Muster-Remnant Rite |
+| 점등례 | the lamp-lighting rite |
+| 가문비공개례 | House-Secret Rite |
+| 종점안식 | Terminal Rest |
+| 전파까마귀떼 (G02) | Radio-Wave Crow Flock |
+| 야간분류군 (G13) | Night-Sorting Swarm |
+| 전해질화상군 (G07) | Electrolyte-Burn Swarm |
+| 클린룸변이자 (G08) | Cleanroom Mutant |
+| 유령배차대 (G14) | Phantom Dispatch Corps |
+| 인준기록정 (옛 슬롯) | Accreditation-Records State |
+| 인가평의회 (옛 슬롯) | Licensing Council |
+| 부품헌장 (옛 슬롯) | Parts Charter |
+| 결제상회 (옛 슬롯) | Settlement Guild |
+| 교차검증방송 (옛 슬롯) | Cross-Verification Broadcast |
+| 명부시민맹 (옛 슬롯) | Register-Citizens League |
+| 시험승계방 (옛 슬롯) | Test-Succession House |
+| 식량인준국 (옛 슬롯) | Food Accreditation Office |
+| 보호표준시 (옛 슬롯) | Protection Standard Time |
+| 린샤오메이 (임소매) | Lin Xiaomei (Im Somae) |
+| 팜반득 (범반득) | Phạm Văn Đức (Beom Bandeuk) |
+| 아미라 카심 | Amira Qasim |
+| 조엘 박 (박조엘) | Joel Park (Park Joeol) |
+| 나르기즈 유수포바 | Nargiz Yusupova |
+| 최일석 | Choi Ilseok |
+| 기록연방 | Records Federation |
+| 수문동맹 | Sluice Alliance |
+| 공동기술원 | Joint Technology Institute |
+| 상수보호권 | Waterworks Protection Sphere |
+| 다국가협약 | Multistate Compact |
+| 수문전쟁 | Sluice War |
+| 서울 협약 | Seoul Compact |
