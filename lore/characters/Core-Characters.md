@@ -1,3 +1,8 @@
+---
+tense: past
+source_hash: c4d5e36e19b974d9aa6f19d2e2836990938d6995f6a5cc426567f1e67b2f1c0a
+---
+
 # 등장인물
 
 나라는 손을 들지 않는다. 품계를 가진 사람이 제안하고, 다른 사람이 찍거나 거부한다. 문법은 나무위키 등장인물 항목과 삼국지 무장 항목을 따른다. 관직은 [관직](../offices/Offices-and-Ranks.md). 무공은 [무공](../culture/Martial-Paths.md). 가문은 [가문](../factions/Chaebol-Houses-and-Century-Factions.md)과 [운영가문](../Operating-Houses.md)의 스튜어드 장부가 같은 원장이다.
