@@ -18,6 +18,7 @@
 | [개요](Game-Thesis.md) | 선 자리에서 세계를 민다. 4X이자 RPG |
 | [기동권 이탈](../LORE/overview/World-Unbinding.md) | 2026년 호출권이 떨어진 밤, 개막 2126, 서울만 나라인 까닭 |
 | [온라인 유저 여정](Online-User-Journey.md) | 계정부터 착생·사망·후계까지 |
+| [열린 결정](Open-Decisions.md) | 소유자 미확인·설계 제안·정본 미이관. 새 수치를 만들지 않는다 |
 
 ### 2. 연표
 | 문서 | 설명 |

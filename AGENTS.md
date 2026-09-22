@@ -15,7 +15,8 @@ Single game-design canon: product pages, rules, references, architecture, art di
 | Asset intake pipeline | `Asset-Pipeline.md` | Asset approval flow from intake to acceptance |
 | Roadmap and reference policy | `Development-Roadmap.md`, `Game-References.md`, `Research-Sources.md` | |
 | User-facing flows | `Online-User-Journey.md`, `Ui-Implementation-Pipeline.md` | |
-| Decision records | `adr/ADR-001` … `ADR-006` | One decision each; the status line is authoritative |
+| Decision records | `adr/ADR-001` … `ADR-007` | One decision each; the status line is authoritative. ADR-008 is not on this tip |
+| Open decisions inventory | `Open-Decisions.md` | Owner-pending, design proposal, confirmed-but-not-on-main. Does not invent numbers |
 | Backend decisions | `adr/ADR-005`, `adr/ADR-006` | ADR-006 supersedes ADR-005's transport/identity/storage clauses |
 | Naming policy | `adr/ADR-003` | Creative names anchor to real district/station names |
 | Korean terminology and display names | `Korean-Terminology-and-Naming.md` | Native/Sino-Korean/loanword layers, formal martial names, GDD data display rules |
