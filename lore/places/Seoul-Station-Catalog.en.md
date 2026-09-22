@@ -1,0 +1,470 @@
+---
+domain: world
+title: Seoul Station Catalog
+summary: A design-data catalog of the 334 named stations within Seoul
+tense: past
+source_hash: a540d8bc3ad2269a18fccef1033e3e412fd73f258fbd2b5e53176b760ea59ff1
+---
+
+# Seoul Station Catalog
+
+The 334 named stations within Seoul and the 25 autonomous districts were the table's skeleton. Every station name — Seoul Station and Jonggak, Yeouido, Gangnam, Jamsil — was a point joining the world. Seolleung and Samseong of Gangnam-gu, Gyeongbokgung of Jongno-gu, City Hall of Jung-gu, Yeouinaru of Yeongdeungpo-gu, and Sindorim of Guro-gu stood side by side on one list.
+
+## Gangnam-gu (24)
+
+| Name | English | Latitude | Longitude | Network |
+|---|---|---:|---:|---|
+| 강남구청 | Gangnam-gu Office | 37.51718 | 127.04129 | Seoul Metropolitan Subway |
+| 개포동 | Gaepo-dong | 37.48910 | 127.06604 | Seoul Metropolitan Subway |
+| 구룡 | Guryong | 37.48693 | 127.05946 | Seoul Metropolitan Subway |
+| 대모산입구 | Daemosan | 37.49139 | 127.07275 | Seoul Metropolitan Subway |
+| 대청 | Daecheong | 37.49363 | 127.07955 | Seoul Metropolitan Subway |
+| 대치 | Daechi | 37.49447 | 127.06319 | Seoul Metropolitan Subway |
+| 도곡 | Dogok | 37.49091 | 127.05547 | Seoul Metropolitan Subway |
+| 매봉 | Maebong | 37.48707 | 127.04698 | Seoul Metropolitan Subway |
+| 봉은사 | Bongeunsa | 37.51419 | 127.06024 | Seoul Metropolitan Subway |
+| 삼성 | Samseong | 37.50884 | 127.06314 | Seoul Metropolitan Subway |
+| 삼성(무역센터) | Samseong(World Trade Center Seoul) | 37.50859 | 127.06206 |  |
+| 삼성중앙 | Samseong Jungang | 37.51310 | 127.05347 | Seoul Metropolitan Subway |
+| 선릉 | Seolleung | 37.50447 | 127.04895 | Seoul Metropolitan Subway |
+| 선정릉 | Seonjeongneung | 37.51025 | 127.04386 | Seoul Metropolitan Subway |
+| 수서 | Suseo | 37.48742 | 127.10184 | Seoul Metropolitan Subway |
+| 압구정 | Apgujeong | 37.52618 | 127.02850 | Seoul Metropolitan Subway |
+| 압구정로데오 | Apgujeong Rodeo | 37.52781 | 127.04071 | Seoul Metropolitan Subway |
+| 언주 | Eonju | 37.50732 | 127.03387 | Seoul Metropolitan Subway |
+| 역삼 | Yeoksam | 37.50082 | 127.03696 | Seoul Metropolitan Subway |
+| 일원 | Ilwon | 37.48369 | 127.08438 | Seoul Metropolitan Subway |
+| 청담 | Cheongdam | 37.51909 | 127.05168 | Seoul Metropolitan Subway |
+| 학동 | Hak-dong | 37.51396 | 127.03075 | Seoul Metropolitan Subway |
+| 학여울 | Hangnyeoul | 37.49650 | 127.06988 | Seoul Metropolitan Subway |
+| 한티 | Hanti | 37.49627 | 127.05287 | Seoul Metropolitan Subway |
+
+## Gangdong-gu (14)
+
+| Name | English | Latitude | Longitude | Network |
+|---|---|---:|---:|---|
+| 강동 | Gangdong | 37.53580 | 127.13260 | Seoul Metropolitan Subway |
+| 강일 | Gangil | 37.55748 | 127.17576 | Seoul Metropolitan Subway |
+| 고덕 | Godeok | 37.55534 | 127.15638 | Seoul Metropolitan Subway |
+| 굽은다리 | Gubeundari | 37.54564 | 127.14296 | Seoul Metropolitan Subway |
+| 길동 | Gil-dong | 37.53837 | 127.14020 | Seoul Metropolitan Subway |
+| 둔촌동 | Dunchon-dong | 37.52780 | 127.13624 | Seoul Metropolitan Subway |
+| 둔촌오륜 | Dunchon Oryun | 37.51984 | 127.13842 | Seoul Metropolitan Subway |
+| 명일 | Myeongil | 37.55195 | 127.14408 | Seoul Metropolitan Subway |
+| 상일동 | Sangil-dong | 37.55678 | 127.16678 | Seoul Metropolitan Subway |
+| 생태공원앞 |  | 37.53811 | 127.15235 |  |
+| 암사 | Amsa | 37.55011 | 127.12754 | Seoul Metropolitan Subway |
+| 암사역사공원 | Amsa History Park | 37.55705 | 127.13743 | Seoul Metropolitan Subway |
+| 중앙보훈병원 | VHS Medical Center | 37.52828 | 127.14826 | Seoul Metropolitan Subway |
+| 천호 | Cheonho | 37.53852 | 127.12340 | Seoul Metropolitan Subway |
+
+## Gangbuk-gu (12)
+
+| Name | English | Latitude | Longitude | Network |
+|---|---|---:|---:|---|
+| 4.19민주묘지 | April 19th National Cemetery | 37.64934 | 127.01369 | Seoul Metropolitan Subway |
+| 가오리 | Gaori | 37.64197 | 127.01657 | Seoul Metropolitan Subway |
+| 미아 | Mia | 37.62649 | 127.02611 | Seoul Metropolitan Subway |
+| 미아사거리 | Miasageori | 37.61319 | 127.03009 | Seoul Metropolitan Subway |
+| 북한산우이 | Bukhansan Ui | 37.66332 | 127.01241 | Seoul Metropolitan Subway |
+| 삼양 | Samyang | 37.62692 | 127.01818 | Seoul Metropolitan Subway |
+| 삼양사거리 | Samyang Sageori | 37.62120 | 127.02049 | Seoul Metropolitan Subway |
+| 솔밭공원 | Solbat Park | 37.65607 | 127.01325 | Seoul Metropolitan Subway |
+| 솔샘 | Solsaem | 37.62017 | 127.01384 | Seoul Metropolitan Subway |
+| 수유 | Suyu | 37.63799 | 127.02572 | Seoul Metropolitan Subway |
+| 수유(강북구청) | Suyu (Gangbuk-gu Office) | 37.63799 | 127.02569 | Seoul Metro |
+| 화계 | Hwagye | 37.63403 | 127.01749 | Seoul Metropolitan Subway |
+
+## Gangseo-gu (18)
+
+| Name | English | Latitude | Longitude | Network |
+|---|---|---:|---:|---|
+| 가양 | Gayang | 37.56114 | 126.85510 | Seoul Metropolitan Subway |
+| 개화 | Gaehwa | 37.57854 | 126.79767 | Seoul Metropolitan Subway |
+| 개화산 | Gaehwasan | 37.57288 | 126.80826 | Seoul Metropolitan Subway |
+| 공항시장 | Airport Market | 37.56366 | 126.81060 | Seoul Metropolitan Subway |
+| 김포공항 | Gimpo Int'l Airport | 37.56192 | 126.80139 | Seoul Metropolitan Subway |
+| 까치산 | Kkachisan | 37.53211 | 126.84653 | Seoul Metropolitan Subway |
+| 등촌 | Deungchon | 37.55115 | 126.86457 | Seoul Metropolitan Subway |
+| 마곡 | Magok | 37.56025 | 126.82475 | Seoul Metropolitan Subway |
+| 마곡나루 | Magongnaru | 37.56622 | 126.82792 | Seoul Metropolitan Subway |
+| 발산 | Balsan | 37.55850 | 126.83747 | Seoul Metropolitan Subway |
+| 방화 | Banghwa | 37.57740 | 126.81273 | Seoul Metropolitan Subway |
+| 송정 | Songjeong | 37.56128 | 126.81194 | Seoul Metropolitan Subway |
+| 신방화 | Sinbanghwa | 37.56750 | 126.81659 | Seoul Metropolitan Subway |
+| 양천향교 | Yangcheon Hyanggyo | 37.56845 | 126.84130 | Seoul Metropolitan Subway |
+| 염창 | Yeomchang | 37.54703 | 126.87540 | Seoul Metropolitan Subway |
+| 우장산 | Ujangsan | 37.54889 | 126.83632 | Seoul Metropolitan Subway |
+| 증미 | Jeungmi | 37.55751 | 126.86182 | Seoul Metropolitan Subway |
+| 화곡 | Hwagok | 37.54167 | 126.84040 | Seoul Metropolitan Subway |
+
+## Gwanak-gu (9)
+
+| Name | English | Latitude | Longitude | Network |
+|---|---|---:|---:|---|
+| 관악산 | Gwanaksan | 37.46874 | 126.94533 | Seoul Metropolitan Subway |
+| 낙성대 | Nakseongdae | 37.47706 | 126.96349 | Seoul Metropolitan Subway |
+| 남태령 | Namtaeryeong | 37.46466 | 126.98870 | Seoul Metropolitan Subway |
+| 봉천 | Bongcheon | 37.48239 | 126.94194 | Seoul Metropolitan Subway |
+| 서울대벤처타운 | Seoul Nat'l Univ. Venture Town | 37.47200 | 126.93371 | Seoul Metropolitan Subway |
+| 서울대입구 | Seoul Nat'l Univ. | 37.48122 | 126.95272 | Seoul Metropolitan Subway |
+| 서울대입구(관악구청) | Seoul Nat'l University (Gwanak-gu Office) | 37.48122 | 126.95275 |  |
+| 서원 | Seowon | 37.47821 | 126.93301 | Seoul Metropolitan Subway |
+| 신림 | Sillim | 37.48423 | 126.92968 | Seoul Metropolitan Subway |
+
+## Gwangjin-gu (11)
+
+| Name | English | Latitude | Longitude | Network |
+|---|---|---:|---:|---|
+| 강변 | Gangbyeon | 37.53511 | 127.09474 | Seoul Metropolitan Subway |
+| 강변(동서울터미널) | Gangbyeon(Dongseoul Bus Terminal) | 37.53596 | 127.09418 |  |
+| 건대입구 | Konkuk Univ. | 37.54044 | 127.07086 | Seoul Metropolitan Subway |
+| 광나루 | Gwangnaru | 37.54530 | 127.10353 | Seoul Metropolitan Subway |
+| 구의 | Guui | 37.53717 | 127.08622 | Seoul Metropolitan Subway |
+| 구의(광진구청) | Guui(Gwangjin-gu Office) | 37.53741 | 127.08725 |  |
+| 군자 | Gunja | 37.55724 | 127.07956 | Seoul Metropolitan Subway |
+| 아차산 | Achasan | 37.55170 | 127.08980 | Seoul Metropolitan Subway |
+| 어린이대공원 | Children's Grand Park | 37.54760 | 127.07439 | Seoul Metropolitan Subway |
+| 자양 | Jayang | 37.53153 | 127.06674 | Seoul Metropolitan Subway |
+| 중곡 | Junggok | 37.56631 | 127.08452 | Seoul Metropolitan Subway |
+
+## Guro-gu (11)
+
+| Name | English | Latitude | Longitude | Network |
+|---|---|---:|---:|---|
+| 개봉 | Gaebong | 37.49459 | 126.85875 | Seoul Metropolitan Subway |
+| 광명사거리 | Gwangmyeongsageori | 37.47942 | 126.85446 | Seoul Metro |
+| 구로 | Guro | 37.50345 | 126.88251 | Seoul Metropolitan Subway |
+| 구일 | Guil | 37.49621 | 126.86971 | Seoul Metropolitan Subway |
+| 남구로 | Namguro | 37.48536 | 126.88667 | Seoul Metropolitan Subway |
+| 대림 | Daerim | 37.49344 | 126.89493 | Seoul Metropolitan Subway |
+| 대림(구로구청) | Daerim(Guro-gu Office) | 37.49328 | 126.89496 |  |
+| 신도림 | Sindorim | 37.50894 | 126.89123 | Seoul Metropolitan Subway |
+| 오류동 | Oryu-dong | 37.49435 | 126.84454 | Seoul Metropolitan Subway |
+| 온수 | Onsu | 37.49230 | 126.82353 | Seoul Metropolitan Subway |
+| 천왕 | Cheonwang | 37.48637 | 126.83892 | Seoul Metropolitan Subway |
+
+## Geumcheon-gu (4)
+
+| Name | English | Latitude | Longitude | Network |
+|---|---|---:|---:|---|
+| 가산디지털단지 | Gasan Digital Complex | 37.48159 | 126.88262 | Seoul Metropolitan Subway |
+| 금천구청 | Geumcheon-gu Office | 37.45581 | 126.89390 | Seoul Metropolitan Subway |
+| 독산 | Doksan | 37.46607 | 126.88948 | Seoul Metropolitan Subway |
+| 석수 | Seoksu | 37.43513 | 126.90231 | Korail |
+
+## Nowon-gu (14)
+
+| Name | English | Latitude | Longitude | Network |
+|---|---|---:|---:|---|
+| 공릉 | Gongneung | 37.62564 | 127.07304 | Seoul Metropolitan Subway |
+| 광운대 | Kwangwoon University | 37.62370 | 127.06182 | Seoul Metropolitan Subway |
+| 노원 | Nowon | 37.65459 | 127.06049 | Seoul Metropolitan Subway |
+| 마들 | Madeul | 37.66504 | 127.05772 | Seoul Metropolitan Subway |
+| 봉화산 | Bonghwasan | 37.61742 | 127.09110 | Seoul Metropolitan Subway |
+| 불암산 | Buramsan | 37.67010 | 127.07892 | Seoul Metropolitan Subway |
+| 상계 | Sanggye | 37.66076 | 127.07344 | Seoul Metropolitan Subway |
+| 석계 | Seokgye | 37.61481 | 127.06584 | Seoul Metropolitan Subway |
+| 수락산 | Suraksan | 37.67780 | 127.05534 | Seoul Metropolitan Subway |
+| 월계 | Wolgye | 37.63306 | 127.05887 | Seoul Metropolitan Subway |
+| 중계 | Junggye | 37.64554 | 127.06387 | Seoul Metropolitan Subway |
+| 태릉입구 | Taereung | 37.61769 | 127.07567 | Seoul Metropolitan Subway |
+| 하계 | Hagye | 37.63602 | 127.06825 | Seoul Metropolitan Subway |
+| 화랑대 | Hwarangdae | 37.61978 | 127.08371 | Seoul Metropolitan Subway |
+
+## Dobong-gu (6)
+
+| Name | English | Latitude | Longitude | Network |
+|---|---|---:|---:|---|
+| 녹천 | Nokcheon | 37.64463 | 127.05140 | Seoul Metropolitan Subway |
+| 도봉 | Dobong | 37.67921 | 127.04555 | Seoul Metropolitan Subway |
+| 도봉산 | Dobongsan | 37.68984 | 127.04608 | Seoul Metropolitan Subway |
+| 방학 | Banghak | 37.66769 | 127.04430 | Seoul Metropolitan Subway |
+| 쌍문 | Ssangmun | 37.64840 | 127.03458 | Seoul Metropolitan Subway |
+| 창동 | Chang-Dong | 37.65260 | 127.04798 | Seoul Metropolitan Subway |
+
+## Dongdaemun-gu (9)
+
+| Name | English | Latitude | Longitude | Network |
+|---|---|---:|---:|---|
+| 답십리 | Dapsipri | 37.56681 | 127.05270 | Seoul Metropolitan Subway |
+| 신답 | Sindap | 37.56972 |  127.04713 | Seoul Metropolitan Subway |
+| 신이문 | Sinimun | 37.60164 | 127.06729 | Seoul Metropolitan Subway |
+| 외대앞 | Hankuk Univ. of Foreign Studies | 37.59631 | 127.06374 | Seoul Metropolitan Subway |
+| 용두 | Yongdu | 37.57407 | 127.03807 | Seoul Metropolitan Subway |
+| 장한평 | Janghanpyeong | 37.56149 | 127.06457 | Seoul Metropolitan Subway |
+| 제기동 | Jegi-dong | 37.57838 | 127.03447 | Seoul Metropolitan Subway |
+| 청량리 | Cheongnyangni | 37.57998 | 127.04463 | Seoul Metropolitan Subway |
+| 회기 | Hoegi | 37.58950 | 127.05762 | Seoul Metropolitan Subway |
+
+## Dongjak-gu (16)
+
+| Name | English | Latitude | Longitude | Network |
+|---|---|---:|---:|---|
+| 남성 | Namseong | 37.48435 | 126.97189 | Seoul Metropolitan Subway |
+| 노들 | Nodeul | 37.51297 | 126.95355 | Seoul Metropolitan Subway |
+| 노량진 | Noryangjin | 37.51424 | 126.94204 | Seoul Metropolitan Subway |
+| 당곡 | Danggok | 37.48970 | 126.92780 | Seoul Metropolitan Subway |
+| 동작 | Dongjak | 37.50297 | 126.97820 | Seoul Metropolitan Subway |
+| 보라매병원 | Boramae Medical Center | 37.49296 | 126.92427 | Seoul Metropolitan Subway |
+| 사당 | Sadang | 37.47658 | 126.98167 | Seoul Metropolitan Subway |
+| 상도 | Sangdo | 37.50322 | 126.94767 | Seoul Metropolitan Subway |
+| 숭실대입구 | Soongsil Univ. | 37.49569 | 126.95413 | Seoul Metropolitan Subway |
+| 신대방 | Sindaebang | 37.48759 | 126.91339 | Seoul Metropolitan Subway |
+| 신대방삼거리 | Sindaebangsamgeori | 37.49971 | 126.92822 | Seoul Metropolitan Subway |
+| 이수 | Isu | 37.48545 | 126.98211 | Seoul Metropolitan Subway |
+| 장승배기 | Jangseungbaegi | 37.50502 | 126.93928 | Seoul Metropolitan Subway |
+| 총신대입구 (이수) | Chongsin Univ. (Isu) | 37.48703 | 126.98220 | Seoul Metro |
+| 총신대입구(이수) | Chongshin Univ. (Isu) | 37.48678 | 126.98224 | Seoul Metropolitan Subway |
+| 흑석 | Heukseok | 37.50838 | 126.96395 | Seoul Metropolitan Subway |
+
+## Mapo-gu (13)
+
+| Name | English | Latitude | Longitude | Network |
+|---|---|---:|---:|---|
+| 공덕 | Gongdeok | 37.54365 | 126.95081 | Seoul Metropolitan Subway |
+| 광흥창 | Gwangheungchang | 37.54747 | 126.93196 | Seoul Metropolitan Subway |
+| 대흥 | Daeheung | 37.54770 | 126.94235 | Seoul Metropolitan Subway |
+| 디지털미디어시티 | Digital Media City | 37.57740 | 126.89808 | Seoul Metropolitan Subway |
+| 마포 | Mapo | 37.53964 | 126.94599 | Seoul Metropolitan Subway |
+| 마포구청 | Mapo-gu Office | 37.56356 | 126.90336 | Seoul Metropolitan Subway |
+| 망원 | Mangwon | 37.55603 | 126.91013 | Seoul Metropolitan Subway |
+| 상수 | Sangsu | 37.54776 | 126.92289 | Seoul Metropolitan Subway |
+| 서강대 | Sogang Univ. | 37.55235 | 126.93518 | Seoul Metropolitan Subway |
+| 애오개 | Aeogae | 37.55343 | 126.95670 | Seoul Metropolitan Subway |
+| 월드컵경기장 | World Cup Stadium | 37.57019 | 126.89932 | Seoul Metropolitan Subway |
+| 합정 | Hapjeong | 37.54936 | 126.91366 | Seoul Metropolitan Subway |
+| 홍대입구 | Hongik Univ. | 37.55735 | 126.92691 | Seoul Metropolitan Subway |
+
+## Seodaemun-gu (10)
+
+| Name | English | Latitude | Longitude | Network |
+|---|---|---:|---:|---|
+| 가좌 | Gajwa | 37.56868 | 126.91506 | Seoul Metropolitan Subway |
+| 무악재 | Muakjae | 37.58232 | 126.95035 | Seoul Metropolitan Subway |
+| 신촌 | Sinchon | 37.55515 | 126.93691 | Seoul Metropolitan Subway |
+| 신촌(지하) | Sinchon | 37.55513 | 126.93691 |  |
+| 아현 | Ahyeon | 37.55743 | 126.95612 | Seoul Metropolitan Subway |
+| 아현(추계예술대) | Ahyeon | 37.55740 | 126.95613 |  |
+| 이대 | Ewha Womans Univ. | 37.55677 | 126.94583 | Seoul Metropolitan Subway |
+| 충정로 | Chungjeongno | 37.55937 | 126.96291 | Seoul Metropolitan Subway |
+| 충정로(경기대입구) | Chungjeongno(Kyonggi University) | 37.55933 | 126.96370 | Seoul Metro |
+| 홍제 | Hongje | 37.58869 | 126.94425 | Seoul Metropolitan Subway |
+
+## Seocho-gu (21)
+
+| Name | English | Latitude | Longitude | Network |
+|---|---|---:|---:|---|
+| 강남 | Gangnam | 37.49795 | 127.02756 | Seoul Metropolitan Subway |
+| 고속터미널 | Express Bus Terminal | 37.50504 | 127.00492 | Seoul Metropolitan Subway |
+| 교대 | Seoul Nat'l Univ. of Education | 37.49366 | 127.01370 | Seoul Metropolitan Subway |
+| 교대(법원·검찰청) | Seoul Nat'l Univ. of Education (Court & Public Prosecutors' Office) | 37.49288 | 127.01381 | Seoul Metropolitan Subway |
+| 구반포 | Gubanpo | 37.50129 | 126.98678 | Seoul Metropolitan Subway |
+| 남부터미널 | Nambu Bus Terminal | 37.48494 | 127.01634 | Seoul Metropolitan Subway |
+| 남부터미널(예술의전당) | Nambu Bus Terminal (Seoul Arts Center) | 37.48497 | 127.01629 |  |
+| 내방 | Naebang | 37.48765 | 126.99355 | Seoul Metropolitan Subway |
+| 논현 | Nonhyeon | 37.51098 | 127.02136 | Seoul Metropolitan Subway |
+| 반포 | Banpo | 37.50817 | 127.01163 | Seoul Metropolitan Subway |
+| 방배 | Bangbae | 37.48147 | 126.99771 | Seoul Metropolitan Subway |
+| 방배 (백석예술대) | Bangbae | 37.48148 | 126.99766 |  |
+| 사평 | Sapyeong | 37.50430 | 127.01514 | Seoul Metropolitan Subway |
+| 서초 | Seocho | 37.49177 | 127.00768 | Seoul Metropolitan Subway |
+| 신논현 | Sinnonhyeon | 37.50432 | 127.02453 | Seoul Metropolitan Subway |
+| 신반포 | Sinbanpo | 37.50360 | 126.99642 | Seoul Metropolitan Subway |
+| 신사 | Sinsa | 37.51611 | 127.01952 | Seoul Metropolitan Subway |
+| 양재 | Yangjae | 37.48440 | 127.03415 | Seoul Metropolitan Subway |
+| 양재시민의숲 | Yangjae Citizen's Forest | 37.46971 | 127.03848 | Seoul Metropolitan Subway |
+| 잠원 | Jamwon | 37.51275 | 127.01115 | Seoul Metropolitan Subway |
+| 청계산입구 | Cheonggyesan | 37.44831 | 127.05464 | Seoul Metropolitan Subway |
+
+## Seongdong-gu (12)
+
+| Name | English | Latitude | Longitude | Network |
+|---|---|---:|---:|---|
+| 뚝섬 | Ttukseom | 37.54724 | 127.04741 | Seoul Metropolitan Subway |
+| 마장 | Majang | 37.56610 | 127.04288 | Seoul Metropolitan Subway |
+| 상왕십리 | Sangwangsimni | 37.56439 | 127.02925 | Seoul Metropolitan Subway |
+| 서울숲 | Seoul-forest | 37.54359 | 127.04474 | Seoul Metropolitan Subway |
+| 성수 | Seongsu | 37.54457 | 127.05610 | Seoul Metropolitan Subway |
+| 옥수 | Oksu | 37.54137 | 127.01755 | Seoul Metropolitan Subway |
+| 왕십리 | Wangsimni | 37.56121 | 127.03715 | Seoul Metropolitan Subway |
+| 왕십리(성동구청) | Wangsimni(Seongdong-Gu Office) | 37.56120 | 127.03713 |  |
+| 용답 | Yongdap | 37.56209 | 127.05086 | Seoul Metropolitan Subway |
+| 응봉 | Eungbong | 37.55028 | 127.03473 | Seoul Metropolitan Subway |
+| 한양대 | Hanyang Univ. | 37.55573 | 127.04366 | Seoul Metropolitan Subway |
+| 행당 | Haengdang | 37.55761 | 127.02999 | Seoul Metropolitan Subway |
+
+## Seongbuk-gu (14)
+
+| Name | English | Latitude | Longitude | Network |
+|---|---|---:|---:|---|
+| 고려대 | Korea Univ. | 37.59038 | 127.03601 | Seoul Metropolitan Subway |
+| 길음 | Gireum | 37.60316 | 127.02485 | Seoul Metropolitan Subway |
+| 돌곶이 | Dolgoji | 37.61057 | 127.05649 | Seoul Metropolitan Subway |
+| 보문 | Bomun | 37.58527 | 127.01937 | Seoul Metropolitan Subway |
+| 북한산보국문 | Bukhansan Bogungmun | 37.61218 | 127.00817 | Seoul Metropolitan Subway |
+| 상월곡 | Sangwolgok | 37.60624 | 127.04827 | Seoul Metropolitan Subway |
+| 성신여대입구 | Sungshin Women's University | 37.59268 | 127.01648 | Seoul Metropolitan Subway |
+| 신설동 | Sinseol-dong | 37.57605 | 127.02467 | Seoul Metropolitan Subway |
+| 안암 | Anam | 37.58627 | 127.02928 | Seoul Metropolitan Subway |
+| 월곡 | Wolgok | 37.60192 | 127.04146 | Seoul Metropolitan Subway |
+| 정릉 | Jeongneung | 37.60283 | 127.01336 | Seoul Metropolitan Subway |
+| 창신 | Changsin | 37.57980 | 127.01525 | Seoul Metropolitan Subway |
+| 한성대입구 | Hansung University | 37.58851 | 127.00596 | Seoul Metropolitan Subway |
+| 한성대입구(삼선교) | Hansung Univ. (Samseongyo) | 37.58820 | 127.00532 | Seoul Metro |
+
+## Songpa-gu (24)
+
+| Name | English | Latitude | Longitude | Network |
+|---|---|---:|---:|---|
+| 가락시장 | Garak Market | 37.49253 | 127.11864 | Seoul Metropolitan Subway |
+| 강동구청 | Gangdong-gu Office | 37.53069 | 127.12062 | Seoul Metropolitan Subway |
+| 개롱 | Gaerong | 37.49807 | 127.13484 | Seoul Metropolitan Subway |
+| 거여 | Geoyeo | 37.49335 | 127.14377 | Seoul Metropolitan Subway |
+| 경찰병원 | National Police Hospital | 37.49540 | 127.12390 | Seoul Metropolitan Subway |
+| 마천 | Macheon | 37.49495 | 127.15272 | Seoul Metropolitan Subway |
+| 몽촌토성 | Mongchontoseong | 37.51753 | 127.11267 | Seoul Metropolitan Subway |
+| 문정 | Munjeong | 37.48584 | 127.12252 | Seoul Metropolitan Subway |
+| 방이 | Bangi | 37.50864 | 127.12604 | Seoul Metropolitan Subway |
+| 복정 | Bokjeong | 37.47058 | 127.12671 | Seoul Metropolitan Subway |
+| 삼전 | Samjeon | 37.50453 | 127.08721 | Seoul Metropolitan Subway |
+| 석촌 | Seokchon | 37.50530 | 127.10711 | Seoul Metropolitan Subway |
+| 석촌고분 | Seokchon Gobun | 37.50244 | 127.09661 | Seoul Metropolitan Subway |
+| 송파 | Songpa | 37.49972 | 127.11218 | Seoul Metropolitan Subway |
+| 송파나루 | Songpanaru | 37.51125 | 127.11280 | Seoul Metropolitan Subway |
+| 오금 | Ogeum | 37.50198 | 127.12815 | Seoul Metropolitan Subway |
+| 올림픽공원 | Olympic Park | 37.51615 | 127.13093 | Seoul Metropolitan Subway |
+| 잠실 | Jamsil | 37.51322 | 127.10014 | Seoul Metropolitan Subway |
+| 잠실(송파구청) | Jamsil(Songpa-gu Office) | 37.51292 | 127.09891 |  |
+| 잠실나루 | Jamsillaru | 37.52069 | 127.10383 | Seoul Metropolitan Subway |
+| 잠실새내 | Jamsilsaenae | 37.51159 | 127.08557 | Seoul Metropolitan Subway |
+| 장지 | Jangji | 37.47889 | 127.12607 | Seoul Metropolitan Subway |
+| 종합운동장 | Sports Complex | 37.51106 | 127.07372 | Seoul Metropolitan Subway |
+| 한성백제 | Hanseong Baekje | 37.51667 | 127.11621 | Seoul Metropolitan Subway |
+
+## Yangcheon-gu (7)
+
+| Name | English | Latitude | Longitude | Network |
+|---|---|---:|---:|---|
+| 목동 | Mok-dong | 37.52612 | 126.86452 | Seoul Metropolitan Subway |
+| 신목동 | Sinmokdong | 37.54421 | 126.88318 | Seoul Metropolitan Subway |
+| 신정 | Sinjeong | 37.52504 | 126.85597 | Seoul Metropolitan Subway |
+| 신정네거리 | Sinjeongnegeori | 37.51998 | 126.85305 | Seoul Metropolitan Subway |
+| 양천구청 | Yangcheon-gu Office | 37.51230 | 126.86594 | Seoul Metropolitan Subway |
+| 양평 | Yangpyeong | 37.52563 | 126.88612 | Seoul Metropolitan Subway |
+| 오목교 | Omokgyo | 37.52456 | 126.87512 | Seoul Metropolitan Subway |
+
+## Yeongdeungpo-gu (18)
+
+| Name | English | Latitude | Longitude | Network |
+|---|---|---:|---:|---|
+| 구로디지털단지 | Guro Digital Complex | 37.48528 | 126.90159 | Seoul Metropolitan Subway |
+| 국회의사당 | National Assembly | 37.52802 | 126.91796 | Seoul Metropolitan Subway |
+| 당산 | Dangsan | 37.53460 | 126.90248 | Seoul Metropolitan Subway |
+| 대방 | Daebang | 37.51336 | 126.92648 | Seoul Metropolitan Subway |
+| 도림천 | Dorimcheon | 37.51445 | 126.88268 | Seoul Metropolitan Subway |
+| 문래 | Mullae | 37.51838 | 126.89487 | Seoul Metropolitan Subway |
+| 보라매 | Boramae | 37.49993 | 126.92038 | Seoul Metropolitan Subway |
+| 보라매공원 | Boramae Park | 37.49529 | 126.91819 | Seoul Metropolitan Subway |
+| 샛강 | Saetgang | 37.51736 | 126.92828 | Seoul Metropolitan Subway |
+| 서울지방병무청 | Seoul Regional Office of Military Manpower | 37.50596 | 126.92272 | Seoul Metropolitan Subway |
+| 선유도 | Seonyudo | 37.53786 | 126.89398 | Seoul Metropolitan Subway |
+| 신길 | Singil | 37.51665 | 126.91874 | Seoul Metropolitan Subway |
+| 신풍 | Sinpung | 37.50017 | 126.90888 | Seoul Metropolitan Subway |
+| 여의나루 | Yeouinaru | 37.52685 | 126.93253 | Seoul Metropolitan Subway |
+| 여의도 | Yeouido | 37.52167 | 126.92430 | Seoul Metropolitan Subway |
+| 영등포 | Yeongdeungpo | 37.51536 | 126.90693 | Seoul Metropolitan Subway |
+| 영등포구청 | Yeongdeungpo-gu Office | 37.52402 | 126.89634 | Seoul Metropolitan Subway |
+| 영등포시장 | Yeongdeungpo Market | 37.52269 | 126.90514 | Seoul Metropolitan Subway |
+
+## Yongsan-gu (12)
+
+| Name | English | Latitude | Longitude | Network |
+|---|---|---:|---:|---|
+| 남영 | Namyeong | 37.54054 | 126.97132 | Seoul Metropolitan Subway |
+| 녹사평 | Noksapyeong | 37.53492 | 126.98658 | Seoul Metropolitan Subway |
+| 삼각지 | Samgakji | 37.53548 | 126.97389 | Seoul Metropolitan Subway |
+| 서빙고 | Seobinggo | 37.51957 | 126.98832 | Seoul Metropolitan Subway |
+| 숙대입구 | Sookmyung Women's Univ. | 37.54513 | 126.97196 | Seoul Metropolitan Subway |
+| 신용산 | Sinyongsan | 37.52917 | 126.96786 | Seoul Metropolitan Subway |
+| 용산 | Yongsan | 37.52995 | 126.96483 | Seoul Metropolitan Subway |
+| 이촌 | Ichon | 37.52271 | 126.97337 | Seoul Metropolitan Subway |
+| 이태원 | Itaewon | 37.53450 | 126.99437 | Seoul Metropolitan Subway |
+| 한강진 | Hangangjin | 37.53980 | 127.00175 | Seoul Metropolitan Subway |
+| 한남 | Hannam | 37.52945 | 127.00924 | Seoul Metropolitan Subway |
+| 효창공원앞 | Hyochang Park | 37.53934 | 126.96133 | Seoul Metropolitan Subway |
+
+## Eunpyeong-gu (11)
+
+| Name | English | Latitude | Longitude | Network |
+|---|---|---:|---:|---|
+| 구산 | Gusan | 37.61125 | 126.91722 | Seoul Metropolitan Subway |
+| 구파발 | Gupabal | 37.63689 | 126.91880 | Seoul Metropolitan Subway |
+| 녹번 | Nokbeon | 37.60097 | 126.93573 | Seoul Metropolitan Subway |
+| 독바위 | Dokbawi | 37.61834 | 126.93302 | Seoul Metropolitan Subway |
+| 불광 | Bulgwang | 37.61088 | 126.92963 | Seoul Metropolitan Subway |
+| 새절 | Saejeol | 37.59165 | 126.91379 | Seoul Metropolitan Subway |
+| 수색 | Susaek | 37.58076 | 126.89555 | Seoul Metropolitan Subway |
+| 역촌 | Yeokchon | 37.60607 | 126.92276 | Seoul Metropolitan Subway |
+| 연신내 | Yeonsinnae | 37.61892 | 126.92118 | Seoul Metropolitan Subway |
+| 응암 | Eungam | 37.59843 | 126.91553 | Seoul Metropolitan Subway |
+| 증산 | Jeungsan | 37.58414 | 126.90991 | Seoul Metropolitan Subway |
+
+## Jongno-gu (15)
+
+| Name | English | Latitude | Longitude | Network |
+|---|---|---:|---:|---|
+| 경복궁 | Gyeongbokgung | 37.57579 | 126.97353 | Seoul Metropolitan Subway |
+| 경복궁(정부서울청사) | Gyeongbokgung (Government Complex Seoul) | 37.57576 | 126.97357 |  |
+| 광화문 | Gwanghwamun | 37.57162 | 126.97690 | Seoul Metropolitan Subway |
+| 독립문 | Dongnimmun | 37.57456 | 126.95784 | Seoul Metropolitan Subway |
+| 동대문 | Dongdaemun | 37.57186 | 127.01149 | Seoul Metropolitan Subway |
+| 동묘앞 | Dongmyo | 37.57351 | 127.01743 | Seoul Metropolitan Subway |
+| 서대문 | Seodaemun | 37.56580 | 126.96664 | Seoul Metropolitan Subway |
+| 안국 | Anguk | 37.57683 | 126.98617 | Seoul Metropolitan Subway |
+| 을지로3가 | Euljiro 3(sam)-ga | 37.56634 | 126.99253 | Seoul Metropolitan Subway |
+| 을지로4가 | Euljiro 4(sa)-ga | 37.56664 | 126.99817 | Seoul Metropolitan Subway |
+| 종각 | Jonggak | 37.57017 | 126.98318 | Seoul Metropolitan Subway |
+| 종로3가 | Jongno 3(sam)-ga | 37.57044 | 126.99232 | Seoul Metropolitan Subway |
+| 종로5가 | Jongno 5(o)-ga | 37.57099 | 127.00202 | Seoul Metropolitan Subway |
+| 혜화 | Hyehwa | 37.58214 | 127.00195 | Seoul Metropolitan Subway |
+| 혜화(서울대학교병원) | Hyehwa | 37.58214 | 127.00193 |  |
+
+## Jung-gu (19)
+
+| Name | English | Latitude | Longitude | Network |
+|---|---|---:|---:|---|
+| 금호 | Geumho | 37.54797 | 127.01592 | Seoul Metropolitan Subway |
+| 대현산배수지공원 모노레일 대현산배수지공원승강장 |  | 37.55870 | 127.02142 | Daehyeonsan Reservoir Park Monorail |
+| 대현산배수지공원 모노레일 시점승강장 |  | 37.55941 | 127.02051 | Daehyeonsan Reservoir Park Monorail |
+| 동대문역사문화공원 | Dongdaemun History & Culture Park Station (DDP) | 37.56526 | 127.00812 | Seoul Metropolitan Subway |
+| 동대입구 | Dongguk Univ. | 37.55906 | 127.00573 | Seoul Metropolitan Subway |
+| 메트로호텔 | Metro Hotel Myeongdong | 37.56511 | 126.98362 |  |
+| 명동 | Myeongdong | 37.56090 | 126.98638 | Seoul Metropolitan Subway |
+| 버티고개 | Beotigogae | 37.54823 | 127.00659 | Seoul Metropolitan Subway |
+| 서울 | Seoul | 37.55455 | 126.97078 | Seoul Metropolitan Subway |
+| 서울역 | Seoul Station | 37.55285 | 126.97257 | Seoul Metropolitan Subway |
+| 시청 | City Hall | 37.56548 | 126.97711 | Seoul Metropolitan Subway |
+| 신금호 | Singeumho | 37.55443 | 127.02025 | Seoul Metropolitan Subway |
+| 신당 | Sindang | 37.56538 | 127.01625 | Seoul Metropolitan Subway |
+| 약수 | Yaksu | 37.55475 | 127.01062 | Seoul Metropolitan Subway |
+| 을지로입구 | Euljiro 1(il)-ga | 37.56595 | 126.98262 | Seoul Metropolitan Subway |
+| 청구 | Cheonggu | 37.56023 | 127.01378 | Seoul Metropolitan Subway |
+| 충무로 | Chungmuro | 37.56120 | 126.99411 | Seoul Metropolitan Subway |
+| 회현 | Hoehyeon | 37.55870 | 126.97842 | Seoul Metropolitan Subway |
+| 회현(남대문시장) | Hoehyeon (Namdaemun Market) | 37.55876 | 126.97844 | Seoul Metro |
+
+## Jungnang-gu (10)
+
+| Name | English | Latitude | Longitude | Network |
+|---|---|---:|---:|---|
+| 망우 | Mangu | 37.59963 | 127.09186 | Seoul Metropolitan Subway |
+| 먹골 | Meokgol | 37.61144 | 127.07765 | Seoul Metropolitan Subway |
+| 면목 | Myeonmok | 37.58840 |  127.08760 | Seoul Metropolitan Subway |
+| 사가정 | Sagajeong | 37.58070 | 127.08841 | Seoul Metropolitan Subway |
+| 상봉 | Sangbong | 37.59608 | 127.08559 | Seoul Metropolitan Subway |
+| 신내 | Sinnae | 37.61255 | 127.10409 | Seoul Metropolitan Subway |
+| 양원 | Yangwon | 37.60658 | 127.10793 | Seoul Metropolitan Subway |
+| 용마산 | Yongmasan | 37.57399 | 127.08658 | Seoul Metropolitan Subway |
+| 중랑 | Jungnang | 37.59498 | 127.07631 | Seoul Metropolitan Subway |
+| 중화 | Junghwa | 37.60163 | 127.07952 | Seoul Metropolitan Subway |

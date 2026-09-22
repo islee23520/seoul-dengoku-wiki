@@ -1348,3 +1348,47 @@ EN 짝파일 작성에서 로마자화·영역한 고유명의 대조표다. 202
 | 다국가협약 | Multistate Compact |
 | 수문전쟁 | Sluice War |
 | 서울 협약 | Seoul Compact |
+
+### 배치 3 문서 제목
+
+| 한국어 | English |
+| --- | --- |
+| 신앙과 문화의 분열 | The Faith-and-Culture Schism |
+| 바깥 | Outside |
+| 서울 역 카탈로그 | Seoul Station Catalog |
+
+### 배치 3 용어
+
+| 한국어 | English |
+| --- | --- |
+| 여의도순복음 | Yoido Full Gospel Church |
+| 유통소비계 | distribution-and-consumption lineage |
+| 지폐초상례 | Banknote-Portrait Rite |
+| 광고액자례 | Ad-Frame Rite |
+| 바코드례 | Barcode Rite |
+| 이중가격례 | Dual-Price Rite |
+| 액자님 | the Honored Frame |
+| 축전유물파 | Capacitor-Relic Faction |
+| 침묵분파 | Silent Faction |
+| 노선색분파 | Route-Color Faction |
+| 태고·천태 (종단) | the Taego and Cheontae orders |
+| 경매조정인 | auction mediator |
+| 난민대표 | refugee delegate |
+| 냉동상인 대표 | cold-trade delegate |
+| 범람멧돼지군 (G01) | Flood-Boar Swarm |
+| 유기견철군 (G03) | Abandoned-Dog Iron Pack |
+| 하수너구리족 (G04) | Sewer-Raccoon Pack |
+| 환승쥐군락 (G05) | Transfer-Rat Colony |
+| 저온포자숙주 (G09) | Cryo-Spore Host |
+| 침수곰팡이호흡단 (G10) | Flood-Mold Breath Cluster |
+| 돌봄순환체 (G15) | Care-Circulation Body |
+| 도면유령기계단 (G16) | Blueprint-Ghost Machine Corps |
+| 감시궤도군 (G17) | Surveillance-Orbit Swarm |
+| 폐선보수열차군 (G18) | Retired-Line Maintenance-Train Corps |
+| 시나리오 쇄 | scenario shards |
+| 지부장 | branch chairman |
+| 수도권 전철 | Seoul Metropolitan Subway |
+| 서울교통공사 | Seoul Metro |
+| 한국철도공사 | Korail |
+| 대현산배수지공원 모노레일 | Daehyeonsan Reservoir Park Monorail |
+| 문화 키트 | culture kit |
