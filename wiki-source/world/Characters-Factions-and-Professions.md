@@ -4,7 +4,7 @@
 
 ## 인물
 
-이름 있는 인물은 능력, 생업, 부상, 소속, 직위, 신념과 주요 사건 기억을 가진다. 모든 인물 쌍의 관계를 저장하지 않고, 친족, 사제, 지휘, 계약, 협력과 원한처럼 결정을 바꾸는 관계만 남긴다.
+이름 있는 인물은 능력, 생업, 부상, 소속, 직위, 신념과 주요 사건 기억을 가지며, 모든 인물 쌍의 관계를 저장하지 않고 친족, 사제, 지휘, 계약, 협력과 원한처럼 결정을 바꾸는 관계만 남긴다.
 
 ## 파티
 
@@ -39,11 +39,10 @@
 - [서울 십육국](/world/Sixteen-States): 총16국, 강국5·약소국11의 영토와 기반시설
 - [등장인물](/world/Core-Characters): 국가별 지도자와 후계자의 성격, 야망, 공포와 촉발 사건
 - [인물 총람](/world/Cast-Index) · [관계 원장](/world/Cast-Relations): 16국 인물 412명과 인물 사이 관계 원장
-- [인물 카드 계약](/world/Cast-Profile-Contract): 새 인물의 필수 칸. 출신 공동체, 언어, 징집 이력, 무장 접근
-- [인물 등록 템플릿](/world/Cast-Registration-Template): 산문에 붙이는 빈 칸. 초상 없음
+- [인물 총람](/world/Cast-Index): 새 인물도 출신 공동체, 언어, 징집 이력과 무장 접근을 갖춘 뒤 이 원장에 들어간다
 - [징집 잔존과 군 장부](/world/Conscription-Remnants): 징병제 명부가 동원잔존으로 남는 방식
 - [이주민 회랑](/world/Diaspora-Corridors) · [회랑 인물](/world/Cast-Corridors-Index): 한국 국적만 기본값이 아닌 회랑과 시드 인물
 - [야망](/world/Ambitions-and-Relations): 인물이 전쟁, 동맹, 배신과 계승을 결정하는 규칙
 - [연표](/world/Scenario-Timeline): 붕괴 이전부터 패권전까지 인물 조건으로 분기하는 연대기
-- [가치관과 정책 척도](/world/Values-and-Policy-Scales): 인물 10칸, 조직 가치관·정책, 1000명 생성 경로
+- [가치관과 정책 척도](/world/Values-and-Policy-Scales): 인물 10칸, 조직 가치관·정책, 1004명 원장 기준
 - [가문](/world/Chaebol-Houses-and-Century-Factions): 총수 일가, 구 정부, 외부 세력, 공백의 세기에 생긴 직능 가문

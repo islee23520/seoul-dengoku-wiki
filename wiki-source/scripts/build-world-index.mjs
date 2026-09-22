@@ -64,7 +64,7 @@ const feed = events.slice(-8).reverse()
 
 // ── 섹션 패널 ──
 const sections = [
-  ['개요', 'overview/World-Unbinding.html'], ['사람과 기체', 'people-and-machines/People-and-Machines.html'],
+  ['프롤로그', 'overview/World-Unbinding.html'], ['사람과 기체', 'people-and-machines/People-and-Machines.html'],
   ['연표', 'chronology/Scenario-Timeline.html'], ['지명', 'places/World-and-Subway-Layers.html'],
   ['세력과 집단', 'factions/Sixteen-States.html'], ['직책', 'offices/Offices-and-Ranks.html'],
   ['물건과 물질', 'goods/Era-Arms-and-Tech-Level.html'], ['건축물', 'structures/Structures.html'],

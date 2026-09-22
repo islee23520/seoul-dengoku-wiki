@@ -111,7 +111,7 @@ export default function ArticlePage() {
         <span className="wiki-canon-badge">정본</span>
       </header>
 
-      {domain === 'world' && normalizedSlug === 'World-and-Subway-Layers' && <Suspense fallback={<div className="wiki-loading">3D 개막 영토 지도를 준비하고 있습니다.</div>}><OpeningTerritoryMap /></Suspense>}
+      {domain === 'world' && normalizedSlug === 'World-and-Subway-Layers' && <Suspense fallback={<div className="wiki-loading">3D 2126 시점 영토 지도를 준비하고 있습니다.</div>}><OpeningTerritoryMap /></Suspense>}
       {domain === 'world' && normalizedSlug === 'Scenario-Timeline' && <Suspense fallback={<div className="wiki-loading">백년실록 전체 줄거리를 준비하고 있습니다.</div>}><TimelineOverview /></Suspense>}
 
       <div className="wiki-article-grid">

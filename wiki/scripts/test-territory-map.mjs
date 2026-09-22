@@ -66,7 +66,8 @@ test('World and Subway Layers mounts the opening territory map', async () => {
   assert.match(page, /OpeningTerritoryMap/)
   assert.match(page, /lazy\(\(\) => import\('\.\.\/components\/OpeningTerritoryMap'\)\)/)
   assert.match(page, /<Suspense[^>]*>[\s\S]*<OpeningTerritoryMap \/>[\s\S]*<\/Suspense>\}\s*\n\s*<div className="wiki-article-grid">/)
-  assert.match(map, /개막 영토 지도/)
+  assert.match(map, /2126 시점 영토 지도/)
+  assert.doesNotMatch(map, /개막 영토 지도/)
   assert.match(map, /지배 상태/)
   assert.match(map, /427/)
   assert.match(map, /지역 선택/)
@@ -107,7 +108,7 @@ test('territory map is a real Three.js scene with state labels and flags', async
   assert.match(map, /data-three-territory-map/)
   assert.match(map, /territory-state-marker/)
   assert.match(map, /<StateFlag/)
-  assert.match(map, /드래그 오빗 · 오른쪽 드래그 팬 · 휠 줌/)
+  assert.match(map, /왼쪽 드래그 팬 · 오른쪽 드래그 오빗 · 휠 줌/)
   assert.match(map, /줌인/)
   assert.match(map, /줌아웃/)
   assert.match(map, /팬 북쪽/)
@@ -130,4 +131,29 @@ test('territory generator reads all sixteen capitals from current state canon', 
   assert.match(generator, /LORE\/factions\/Sixteen-States\.md/)
   assert.match(generator, /stateIdByName/)
   assert.doesNotMatch(generator, /Chaebol-Houses-and-Century-Factions\.md/)
+})
+
+test('selecting a state also selects its capital region and shows state information', async () => {
+  const data = JSON.parse(await readFile(new URL('../public/opening-territories.json', import.meta.url), 'utf8'))
+  const map = await readFile(new URL('../src/components/OpeningTerritoryMap.tsx', import.meta.url), 'utf8')
+
+  assert.ok(data.states.every((state) => typeof state.capitalRegionId === 'string' && state.capitalRegionId.length > 0))
+  assert.ok(data.states.every((state) => state.origin.length > 0 && state.government.length > 0 && state.ruler.length > 0 && state.cause.length > 0))
+  assert.match(map, /selectState/)
+  assert.match(map, /setSelectedId\(state\.capitalRegionId\)/)
+  assert.match(map, /selected-region-title/)
+  assert.match(map, /selected-state-title/)
+  assert.match(map, /selectedState\.origin/)
+  assert.match(map, /selectedState\.government/)
+  assert.match(map, /selectedState\.ruler/)
+  assert.match(map, /selectedState\.cause/)
+})
+
+test('mouse controls use left drag for pan, right drag for orbit, and wheel zoom', async () => {
+  const map = await readFile(new URL('../src/components/OpeningTerritoryMap.tsx', import.meta.url), 'utf8')
+
+  assert.match(map, /controls\.mouseButtons\.LEFT = THREE\.MOUSE\.PAN/)
+  assert.match(map, /controls\.mouseButtons\.RIGHT = THREE\.MOUSE\.ROTATE/)
+  assert.match(map, /onContextMenu=\{\(event\) => event\.preventDefault\(\)\}/)
+  assert.doesNotMatch(map, /controls\.enableZoom = false/)
 })

@@ -19,6 +19,7 @@
     "test:person-details": "node --test scripts/test-person-details.mjs",
     "test:discovery": "node --test scripts/test-discovery-index.mjs",
     "test:territory-map": "node --test scripts/test-territory-map.mjs",
+    "test:updates": "npm run generate && node --test scripts/test-update-history.mjs",
     "test:timeline": "node --test scripts/test-timeline-overview.mjs",
     "test:common-tiers": "node --test scripts/test-common-tiers.mjs"
   },
