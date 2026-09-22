@@ -25,7 +25,7 @@ const DOMAIN_ROOTS = [
 const ROOT_DOCS = ['Concept.md', 'Design.md', 'ToDo.md', 'Intent.md']
 
 const EXCLUDED_NAMES = new Set(['_Sidebar.md', '_TEMPLATE.md', 'AGENTS.md'])
-const LORE_SKIP_DIRS = new Set(['name-pools', 'regions'])
+const LORE_SKIP_DIRS = new Set(['name-pools', 'regions', 'editorial'])
 
 function listMarkdown(dir) {
   return readdirSync(dir)
