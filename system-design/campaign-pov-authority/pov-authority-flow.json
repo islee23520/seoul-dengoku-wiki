@@ -2,25 +2,69 @@
   "schema_version": 2,
   "diagram_type": "workflow",
   "meta": {
-    "title": "캠페인 POV와 권한 전이",
-    "quality_profile": "standard"
+    "title": "서울:전국 · 캠페인 POV와 권한 전이",
+    "quality_profile": "standard",
+    "legend": { "mode": "hidden" }
   },
   "lanes": [
-    { "id": "POV", "label": "캠페인 시점 (POV)" },
-    { "id": "Authority", "label": "권한 상태" },
-    { "id": "Action", "label": "명령 및 전송" }
+    { "id": "pov", "label": "현재 인물 시점" },
+    { "id": "role", "label": "권한 층" },
+    { "id": "action", "label": "명령 경로" },
+    { "id": "isolation", "label": "고립과 복원", "variant": "exception" }
   ],
+  "mainPath": ["povNow", "member", "leader", "office", "ruler", "propose"],
   "nodes": [
-    { "id": "POV_Current", "lane": "POV", "col": 0, "type": "frontend", "label": "시점: 현재 인물", "sublabel": "위치·지식 기반" },
-    { "id": "Role_Member", "lane": "Authority", "col": 0, "type": "frontend", "label": "일반 인물", "sublabel": "개인 명령" },
-    { "id": "Role_Leader", "lane": "Authority", "col": 1, "type": "frontend", "label": "리더/지휘관", "sublabel": "부대 명령" },
-    { "id": "Remote_Order", "lane": "Action", "col": 2, "type": "frontend", "label": "원격 전송", "sublabel": "지연 발생" },
-    { "id": "Isolation", "lane": "Authority", "col": 3, "type": "frontend", "label": "고립/포획", "sublabel": "전송 잠김" }
+    { "id": "povNow", "lane": "pov", "col": 0, "type": "frontend", "label": "현재 인물 POV", "sublabel": "위치·지식만" },
+    { "id": "member", "lane": "role", "col": 1, "type": "frontend", "label": "일반 구성원", "sublabel": "개인 명령" },
+    { "id": "leader", "lane": "role", "col": 2, "type": "frontend", "label": "파티 지휘관", "sublabel": "동행 분대" },
+    { "id": "office", "lane": "role", "col": 3, "type": "security", "label": "관직 보유자", "sublabel": "관할 자산" },
+    { "id": "ruler", "lane": "role", "col": 4, "type": "security", "label": "팩션 통치자", "sublabel": "점진 권한" },
+    { "id": "direct", "lane": "action", "col": 2, "type": "backend", "label": "직접 제어", "sublabel": "개인·소유·위임만" },
+    { "id": "propose", "lane": "action", "col": 5, "type": "messagebus", "label": "제안·승인·거부", "sublabel": "타 팩션 자산" },
+    { "id": "isolate", "lane": "isolation", "col": 3, "type": "security", "label": "포획·실종·단절", "sublabel": "통신 고립" },
+    { "id": "lock", "lane": "isolation", "col": 4, "type": "security", "label": "전송 잠김", "sublabel": "원격 명령 정지" },
+    { "id": "restore", "lane": "isolation", "col": 5, "type": "cloud", "label": "복원·대리 인물", "sublabel": "권한 재평가" }
   ],
   "edges": [
-    { "from": "POV_Current", "to": "Role_Member", "role": "main" },
-    { "from": "Role_Member", "to": "Role_Leader", "label": "승진/위임", "role": "main" },
-    { "from": "Role_Leader", "to": "Remote_Order", "label": "원격 명령", "role": "main" },
-    { "from": "POV_Current", "to": "Isolation", "label": "포획/고립", "role": "branch" }
+    { "from": "povNow", "to": "member", "label": "시점 고정", "role": "main" },
+    { "from": "member", "to": "leader", "label": "파티 권한", "role": "main" },
+    { "from": "leader", "to": "office", "label": "관직 수임", "role": "main" },
+    { "from": "office", "to": "ruler", "label": "통치 승계", "role": "main" },
+    { "from": "member", "to": "direct", "label": "개인만", "role": "branch" },
+    { "from": "leader", "to": "direct", "label": "소유·위임", "role": "branch" },
+    { "from": "ruler", "to": "propose", "label": "전권 없음", "role": "main" },
+    { "from": "povNow", "to": "isolate", "label": "포획·단절", "role": "error" },
+    { "from": "isolate", "to": "lock", "label": "전송 잠금", "role": "error" },
+    { "from": "lock", "to": "restore", "label": "복원·대리", "role": "branch" },
+    { "from": "restore", "to": "povNow", "label": "권한 재평가", "role": "return" }
+  ],
+  "cards": [
+    {
+      "dot": "slate",
+      "title": "POV 불변조건",
+      "items": [
+        "캠페인 시점은 항상 현재 조종 중인 한 인물이다.",
+        "보이는 세계는 그 인물의 위치와 알려진 정보에 묶인다.",
+        "팩션 전역을 한 화면에서 직접 조종하는 전권은 없다."
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "점진 권한",
+      "items": [
+        "일반 구성원 → 파티 지휘관 → 관직 보유자 → 팩션 통치자로만 권한이 늘어난다.",
+        "직접 제어는 개인·소유·위임 자산에만 열린다.",
+        "타 팩션 자산은 제안·승인·거부로만 움직인다."
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "고립과 대리",
+      "items": [
+        "포획·실종·통신 단절이면 원격 전송을 잠근다.",
+        "복원되거나 대리 인물이 확정되기 전에는 잠금을 풀지 않는다.",
+        "대리는 새 현재 인물 POV로 권한을 다시 읽는다."
+      ]
+    }
   ]
 }
