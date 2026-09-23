@@ -17,9 +17,6 @@
         },
         "data": {
           "type": "object",
-          "required": [
-            "entries"
-          ],
           "properties": {
             "entries": {
               "type": "array",
@@ -33,6 +30,7 @@
           "additionalProperties": false
         }
       }
-    }
+    },
+    {"if": {"properties": {"id": {"pattern": "^(?:DOC:|__EXAMPLE__)"}}}, "else": {"properties": {"data": {"required": ["entries"]}}}}
   ]
 }

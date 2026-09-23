@@ -17,9 +17,6 @@
         },
         "data": {
           "type": "object",
-          "required": [
-            "supply"
-          ],
           "properties": {
             "supply": {
               "type": "string",
@@ -29,6 +26,7 @@
           "additionalProperties": false
         }
       }
-    }
+    },
+    {"if": {"properties": {"id": {"pattern": "^(?:DOC:|__EXAMPLE__)"}}}, "else": {"properties": {"data": {"required": ["supply"]}}}}
   ]
 }
