@@ -109,7 +109,7 @@
         ["`GDD/`", "모든 게임 설계 정본: 제품·규칙·레퍼런스·아키텍처·아트·ADR·제안·시스템 설계"],
         ["`LORE/`", "세계관 정본(world계 175 + name-pools + regions)"],
         ["`WEB/`", "React 공식 위키와 VitePress 생성·검증 표면. 정본이 아님"],
-        ["`GAME-REFERENCE/`", "에셋 BOM·UX 레퍼런스·무드보드·POC·지리 데이터(data)"],
+        ["`GAME-REFERENCE/`", "에셋 BOM·UX 레퍼런스·무드보드·지리 데이터(data)"],
         ["`ART-ASSETS/`", "편집 가능한 원본 아트·Blender·FBX·텍스처·선별 검토 증거의 정본. 실행 도구는 TOOL, Unity 승격본은 GAME이 소유한다."],
         ["`RESEARCH/`", "canon-reference·verification"],
         ["`TOOL/`", "저장소 Node 패키지(tools)·skills·서브모듈(unity-remote, character-forge)·Unity 문서"],

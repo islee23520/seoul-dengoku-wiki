@@ -127,7 +127,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "현재 [ToDo](../../ToDo.md)는 영등포–신도림–구로 POC 코어 루프를 구현하고 생성 아트 통합과 최종 수용을 진행하는 단계다. 이 문서는 그 범위, 순서, 완료율을 바꾸지 않는다. 새 사건의 구현은 현재 모듈 수용 이후 별도 범위와 이슈로 합의한다. 문서 검토와 종이 실험은 현재 제품 작업의 선행 의존성이 아니다."
+          "text": "이 문서는 현재 [ToDo](../../ToDo.md)의 범위, 순서, 완료율을 바꾸지 않는다. 새 사건의 구현은 별도 범위와 이슈로 합의한다. 문서 검토와 종이 실험은 현재 제품 작업의 선행 의존성이 아니다."
         }
       ]
     },
@@ -470,7 +470,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "[캠페인 루프](../rules/Campaign-Loop.md), [전술 전투](../rules/Realtime-Formation-Card-Battle.md), [전략·전투 왕복](../rules/Strategy-Battle-Roundtrip.md)의 설계와 현재 구현을 구별한다. 특히 수리·호송이 장르 문서에 있다는 이유만으로 현재 POC에 구체적인 문 상호작용, 수송대, 관계 지속이 구현됐다고 쓰지 않는다."
+          "text": "[캠페인 루프](../rules/Campaign-Loop.md), [전술 전투](../rules/Realtime-Formation-Card-Battle.md), [전략·전투 왕복](../rules/Strategy-Battle-Roundtrip.md)의 설계와 구현을 구별한다. 수리·호송이 장르 문서에 있다는 이유만으로 구체적인 문 상호작용, 수송대, 관계 지속의 구현을 주장하지 않는다."
         }
       ]
     },

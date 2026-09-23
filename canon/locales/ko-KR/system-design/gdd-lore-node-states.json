@@ -111,8 +111,8 @@
         ],
         [
           "rules",
-          "현재 제품 목표의 부대 지휘 계약과 2026-09-07 카드 전투 POC 이력은 별개 판본 차원이다.",
-          "`rules → strategy/battle/save`: 확정된 규칙·콘텐츠 판본으로 명령을 검증·기록하고 재생한다. 카드 자원·명령 큐·감속·배속을 현재 목표로 승격하지 않는다.",
+          "현재 제품 목표의 부대 지휘 계약은 확정된 규칙·콘텐츠 판본에 따른다.",
+          "`rules → strategy/battle/save`: 확정된 규칙·콘텐츠 판본으로 명령을 검증·기록하고 재생한다. 명령 큐·감속·배속을 현재 목표로 승격하지 않는다.",
           "`GDD/rules/Realtime-Formation-Card-Battle.md:3`, `GDD/rules/Realtime-Formation-Card-Battle.md:17`, `GDD/rules/Hero-Squads-and-Simultaneous-Turns.md:93`, `GDD/rules/Save-and-Determinism.md:7`, `GDD/rules/Save-and-Determinism.md:17`"
         ],
         [

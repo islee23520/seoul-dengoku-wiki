@@ -96,7 +96,7 @@
         [
           {
             "kind": "text",
-            "text": "이 문서는 Foundation 아키텍처와 기존 Unity POC를 만든 역사적 구현 계획입니다. 현재 부대 지휘 전투 개정은 문서 전용이며 이 계획에 새 런타임 작업을 추가하지 않습니다."
+            "text": "현재 부대 지휘 전투 개정은 문서 전용이며 이 계획에 새 런타임 작업을 추가하지 않습니다."
           }
         ]
       ]
@@ -553,12 +553,6 @@
           {
             "kind": "text",
             "text": "`Bootstrap.unity`: App scope와 bootstrap root만 포함"
-          }
-        ],
-        [
-          {
-            "kind": "text",
-            "text": "`Foundation.unity`: 기존 orthographic camera와 light, Foundation scope 포함"
           }
         ],
         [

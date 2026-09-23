@@ -21,10 +21,8 @@
       "source.b8",
       "source.b9",
       "source.b10",
-      "source.b11",
       "source.b12",
       "source.b13",
-      "source.b14",
       "source.b15",
       "source.b16",
       "source.b17",
@@ -178,16 +176,6 @@
       ]
     },
     {
-      "id": "source.b11",
-      "kind": "paragraph",
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "30Hz 고정 틱, D1 드라이버의 프레임당 최대 4스텝, `(OwnerUnitId, CardId)`와 재충전 수치, 거점 카드 2슬롯, ownerless replay 거부는 2026-09-07 카드 전투 POC 기록입니다. 현재 목표의 카드나 속도 제어 규칙이 아닙니다."
-        }
-      ]
-    },
-    {
       "id": "source.b12",
       "kind": "heading",
       "level": 2,
@@ -205,16 +193,6 @@
         {
           "kind": "text",
           "text": "전투가 끝나면 일반 승리·패배, 명령 철수, 사기 패주, 수락된 항복 가운데 해당 종료 상태와 흐른 시간, 인물의 생사, 새 부상, 장비 소모, 전리품, 파티의 퇴로와 거점 통제 변화를 확정된 결과로 돌려줍니다. 포획은 종료 상태가 아니라 인물 ID에 붙는 구금 결과이며, 항복이나 패주가 자동 투옥을 뜻하지 않습니다."
-        }
-      ]
-    },
-    {
-      "id": "source.b14",
-      "kind": "paragraph",
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "0..4 집계 생존수, 기존 논리 `UnitId`와 남은 `HP`를 쓴 정산, 별도 증원 분대는 카드 전투 POC에서 승인된 표시·정산 계약입니다. 현재 목표에 그대로 구현됐다고 보지 않습니다."
         }
       ]
     },

@@ -12,7 +12,6 @@
     "id": "doc.Realtime-Formation-Card-Battle",
     "blockIds": [
       "source.b1",
-      "source.b2",
       "source.b3",
       "source.b4",
       "source.b5",
@@ -34,9 +33,7 @@
       "source.b21",
       "source.b22",
       "source.b23",
-      "source.b24",
-      "source.b25",
-      "source.b26"
+      "source.b24"
     ]
   },
   "blocks": [
@@ -49,18 +46,6 @@
           "kind": "text",
           "text": "실시간 부대 지휘 전투"
         }
-      ]
-    },
-    {
-      "id": "source.b2",
-      "kind": "blockQuote",
-      "lines": [
-        [
-          {
-            "kind": "text",
-            "text": "위 그림은 2026-09-07 실시간 진형·카드 POC의 역사 자료다. 현재 목표 전투의 시점이나 카드 규칙을 뜻하지 않는다."
-          }
-        ]
       ]
     },
     {
@@ -137,7 +122,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "확정한 지시만 수락된 명령 기록에 들어간다. 여러 지시를 쌓는 큐, 웨이포인트 연쇄, 순서 편집, 감속·배속, 카드 자원과 영웅 직접 행동은 목표 범위가 아니다."
+          "text": "확정한 지시만 수락된 명령 기록에 들어간다. 여러 지시를 쌓는 큐, 웨이포인트 연쇄, 순서 편집, 감속·배속과 영웅 직접 행동은 목표 범위가 아니다."
         }
       ]
     },
@@ -387,27 +372,6 @@
             "text": "동일한 컨텍스트와 수락된 명령 기록이 다른 결과를 내면 검증 실패다."
           }
         ]
-      ]
-    },
-    {
-      "id": "source.b25",
-      "kind": "heading",
-      "level": 2,
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "2026-09-07 카드 전투 POC 기록"
-        }
-      ]
-    },
-    {
-      "id": "source.b26",
-      "kind": "paragraph",
-      "inlines": [
-        {
-          "kind": "text",
-          "text": "이전 카드 전투 POC의 구현·수치·검증 이력은 현재 목표 규칙과 분리해 스튜디오 내부 기록으로 보존한다. 위 그림도 당시 POC의 역사 자료이며 현재 전투 화면이나 카드 규칙을 뜻하지 않는다."
-        }
       ]
     }
   ]
