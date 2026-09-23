@@ -25,7 +25,7 @@ The value/policy scale system behind cast and org numbers, the faith schism, the
 ## ANTI-PATTERNS
 - The original five schools remain canon, but the owner lifted the numerical cap. New schools require a distinct 2026 origin, a fictional 2126 successor name, transmission practice, equipment dependency, failure condition and Patina review.
 - `개방 손` is a martial branch and `환승계` is an independent mobile mutual-aid/information network. Neither is owned by a religion or counted as one of the nine schools.
-- The nine locked formal/field pairs are owned by `Martial-Paths.md`; do not replace them with a later naming suggestion. Follow `../../GDD/Korean-Terminology-and-Naming.md` for Sino-Korean names and loanwords.
+- The nine locked formal/field pairs are owned by `Martial-Paths.md`; do not replace them with a later naming suggestion. Follow [Korean terminology and naming](/design/Korean-Terminology-and-Naming) for Sino-Korean names and loanwords.
 - Don't fill the 422 cast ages from these tables — the no-age canon lives in `../characters/`.
 - `Oral-Stories.md` collects existing testimony and seats only — no new plotlines there; founder-ledger names are never the same body as opening-day persons.
 - No sexual narratives involving minors (restated here from the cast contract).

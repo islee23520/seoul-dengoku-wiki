@@ -4,7 +4,8 @@ import { fileURLToPath } from 'node:url'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = resolve(projectRoot, '../..')
-const gddPagesRoot = process.env.GDD_PAGES_ROOT || resolve(repoRoot, 'GDD')
+const gddPagesRoot = process.env.GDD_PAGES_ROOT
+if (!gddPagesRoot) throw new Error('GDD_PAGES_ROOT is required: materialize GDD JSON canon before generating the catalog')
 const contentRoot = resolve(projectRoot, 'src-gdd/content')
 const generatedRoot = resolve(projectRoot, 'src-gdd/generated')
 const categories = [
@@ -19,7 +20,11 @@ const excluded = new Set(['AGENTS.md', 'README.md'])
 const githubRoot = 'https://github.com/islee23520/seoul-dengoku/blob/main/'
 
 const titleOf = (markdown, fallback) => markdown.match(/^#\s+(.+)$/m)?.[1]?.replace(/\s+\{#[^}]+\}\s*$/, '').trim() ?? fallback
-const sourceKey = (path) => `GDD/${relative(gddPagesRoot, path).replaceAll('\\', '/')}`
+const sourceKey = (path) => {
+  const source = relative(gddPagesRoot, path).replaceAll('\\', '/')
+  const adr = source.match(/^adr\/ADR-(\d{3})-/)
+  return `canon/locales/ko-KR/${adr ? `adr-${adr[1]}` : source.replace(/\.md$/, '').toLowerCase().replace(/^([^/]+)$/, 'root/$1')}.json`
+}
 
 await rm(contentRoot, { recursive: true, force: true })
 await mkdir(contentRoot, { recursive: true })
@@ -42,11 +47,13 @@ const routeBySource = new Map(documents.map((document) => [document.sourcePath, 
 const normalizeHref = (href, source) => {
   if (href.startsWith('#') || href.startsWith('http://') || href.startsWith('https://') || href.startsWith('mailto:')) return href
   const [pathPart, hash = ''] = href.split('#', 2)
-  const resolved = relative(repoRoot, resolve(repoRoot, sourceKey(source), '..', pathPart)).replaceAll('\\', '/')
-  const gddRoute = routeBySource.get(resolved)
+  if (pathPart.includes('system-design/')) return `https://github.com/islee23520/seoul-dengoku-gdd/blob/main/canon/collections/system-design.json${hash ? `#${hash}` : ''}`
+  const resolved = relative(gddPagesRoot, resolve(dirname(source), pathPart)).replaceAll('\\', '/')
+  const gddRoute = routeBySource.get(sourceKey(resolve(gddPagesRoot, resolved)))
   if (gddRoute) return `${gddRoute}${hash ? `#${hash}` : ''}`
-  if (resolved.startsWith('LORE/') && resolved.endsWith('.md')) return `/wiki/world/${basename(resolved, '.md')}${hash ? `#${hash}` : ''}`
-  return `${githubRoot}${resolved}${hash ? `#${hash}` : ''}`
+  if (resolved.startsWith('../LORE/') && resolved.endsWith('.md')) return `/world/${basename(resolved, '.md')}${hash ? `#${hash}` : ''}`
+  if (resolved.startsWith('../')) return `${githubRoot}${resolved.replace(/^\.\.\//, '')}${hash ? `#${hash}` : ''}`
+  return `https://github.com/islee23520/seoul-dengoku-gdd/blob/main/${sourceKey(resolve(gddPagesRoot, resolved))}${hash ? `#${hash}` : ''}`
 }
 
 for (const document of documents) {
@@ -83,5 +90,5 @@ const dataCatalog = [
 const catalogSource = `export const gddCategories = ${JSON.stringify(categories.map(({ id, label }) => ({ id, label })), null, 2)} as const\n\nexport const gddCatalog = ${JSON.stringify(documents.map(({ category, categoryLabel, slug, route, title, sourcePath }) => ({ category, categoryLabel, slug, route, title, sourcePath })), null, 2)} as const\n`
 await writeFile(resolve(generatedRoot, 'gddCatalog.ts'), catalogSource)
 await writeFile(resolve(generatedRoot, 'dataCatalog.ts'), `export const dataCatalog = ${JSON.stringify(dataCatalog, null, 2)} as const\n`)
-await writeFile(resolve(projectRoot, 'gdd-contract.json'), `${JSON.stringify({ documents: documents.map(({ category, route, title, sourcePath }) => ({ category, route, title, sourcePath })), datasets: dataCatalog }, null, 2)}\n`)
+await writeFile(resolve(generatedRoot, 'gdd-contract.json'), `${JSON.stringify({ documents: documents.map(({ category, route, title, sourcePath }) => ({ category, route, title, sourcePath })), datasets: dataCatalog }, null, 2)}\n`)
 console.log(`GDD_CATALOG_GENERATED documents=${documents.length} datasets=${dataCatalog.length}`)

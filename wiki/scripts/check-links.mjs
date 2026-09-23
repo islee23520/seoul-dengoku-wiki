@@ -1,25 +1,22 @@
-import { readFile, stat } from 'node:fs/promises'
+import { readFile, readdir, stat } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
-const repo = resolve(root, '../..')
 const source = await readFile(resolve(root, 'src/wikiLinks.ts'), 'utf8')
-const catalogSource = await readFile(resolve(root, 'src/generated/wikiCatalog.ts'), 'utf8')
 const paths = [...source.matchAll(/:\s*'([^']+)'/g)].map((match) => match[1])
 const spaRoutes = new Set(['/', '/states', '/documents', '/people'])
-const catalogRoutes = new Set([...catalogSource.matchAll(/route: '([^']+)'/g)].map((match) => match[1]))
+const catalogRoutes = new Set((await readdir(resolve(root, '../wiki-source/world')))
+  .filter((name) => name.endsWith('.md'))
+  .map((name) => `/world/${name === 'index.md' ? '' : name.slice(0, -3)}`))
 
 const failures = []
 for (const path of paths) {
   if (path.startsWith('http') || spaRoutes.has(path) || catalogRoutes.has(path)) continue
   const relative = path.replace(/^\//, '')
-  const repoRelative = path.startsWith('/system-design/')
-    ? `GDD/${relative}`
-    : relative
   const candidates = path.endsWith('/')
-    ? [resolve(repo, 'WEB/wiki-source/dist', relative, 'index.html'), resolve(repo, repoRelative, 'index.html')]
-    : [resolve(repo, 'WEB/wiki-source/dist', relative), resolve(repo, repoRelative)]
+    ? [resolve(root, '../wiki-source/dist', relative, 'index.html')]
+    : [resolve(root, '../wiki-source/dist', relative)]
   let found = false
   for (const candidate of candidates) {
     try {

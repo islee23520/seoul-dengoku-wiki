@@ -1,6 +1,4 @@
-// mount.mjs v3 — 위키 서브모듈 lore/ + 메인 GDD 정본 + 루트 문서 → wiki-source/{world,rules,design} 스테이징
-// 폴더=도메인: lore/**/*.md→world, GDD/{rules,references,architecture}/*.md→rules,
-// GDD/*.md + GDD/art/*.md + 루트 4문서→design
+// mount.mjs v3 — lore + materialized GDD pages + root documents → wiki-source/{world,rules,design}
 // 유니온 pageByFile/pageByStem로 도메인 간 베어 링크 재작성 (스켑틱 #10)
 import { existsSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from 'node:fs'
 import { basename, dirname, join } from 'node:path'
@@ -11,7 +9,9 @@ const scriptDir = dirname(fileURLToPath(import.meta.url))
 const docsSiteRoot = join(scriptDir, '..')
 const wikiRoot = join(docsSiteRoot, '..')
 const repoRoot = join(wikiRoot, '..')
-const gddPagesRoot = process.env.GDD_PAGES_ROOT || join(repoRoot, 'GDD')
+const gddPagesRoot = process.env.GDD_PAGES_ROOT
+if (!gddPagesRoot) throw new Error('GDD_PAGES_ROOT is required: materialize GDD JSON canon before mounting')
+const rootDocsRoot = process.env.ROOT_DOCS_ROOT || repoRoot
 const referenceDir = join(repoRoot, 'RESEARCH', 'canon-reference')
 
 const GITHUB_WIKI = 'https://github.com/islee23520/seoul-kenshi/blob/main/' + 'retired-reference-assets/'
@@ -110,6 +110,16 @@ function rewriteHref(href, pageByFile, pageByStem) {
     return `${GITHUB_WIKI}${assetsMatch[1]}?raw=true${hash}`
   }
 
+  const gddMatch = pathPart.match(/(?:^|\/)GDD\/(.+)\.md$/)
+  if (gddMatch) {
+    const source = gddMatch[1]
+    const domain = /^(?:rules|references|architecture)\//.test(source) ? 'rules' : /^(?:art\/)?[^/]+$/.test(source) ? 'design' : null
+    return domain ? `${sitePath(domain, basename(source) + '.md')}${hash}` : `https://github.com/islee23520/seoul-dengoku-gdd/blob/main/canon/locales/ko-KR/${source.toLowerCase()}.json${hash}`
+  }
+  if (pathPart.includes('system-design/') && !pathPart.endsWith('.md')) {
+    return `https://github.com/islee23520/seoul-dengoku-gdd/blob/main/canon/collections/system-design.json${hash}`
+  }
+
   const fileName = basename(pathPart)
   if (fileName.endsWith('.md') && pageByFile.has(fileName)) {
     return `${pageByFile.get(fileName)}${hash}`
@@ -151,7 +161,7 @@ for (const { domain, dir } of DOMAIN_ROOTS) {
   }
 }
 for (const name of ROOT_DOCS) {
-  candidates.push({ name, src: join(repoRoot, name), domain: 'design' })
+  candidates.push({ name, src: join(rootDocsRoot, name), domain: 'design' })
 }
 
 const currentDestinations = new Set(candidates.map(({ name, domain }) => join(docsSiteRoot, domain, name)))

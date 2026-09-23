@@ -8,16 +8,16 @@ VitePress publication layer for the three canon domains — generated mirrors pl
 site/
 |-- .vitepress/   config.mts, theme/      # nav + build config
 |-- scripts/      mount, gate, build-world-index, test-gate
-|-- rules/        <- GDD/{rules,references,architecture}/*.md (+ site-authored Rules-*.md, index.md)
+|-- rules/        <- materialized GDD rules/references/architecture (+ site-authored Rules-*.md, index.md)
 |-- world/        <- LORE/**/*.md         (+ generated index.md)
-|-- design/       <- GDD/*.md + root Concept/Design/ToDo/Intent
+|-- design/       <- materialized GDD root/art + root Concept/Design/ToDo/Intent
 `-- dist/, node_modules/                  # gitignored build output / vendored deps
 ```
 
 ## WHERE TO LOOK
 | Task | Location | Notes |
 |------|----------|-------|
-| Stage canon into the site | `scripts/mount.mjs` | LORE→world, GDD subdomains→rules/design; rewrites cross-domain links and asset URLs |
+| Stage canon into the site | `scripts/mount.mjs` | LORE→world, `GDD_PAGES_ROOT` materialized pages→rules/design; rewrites cross-domain links and asset URLs |
 | Public-term gate | `scripts/gate.mjs` | Scans rendered `dist/`: banned terms, broken links, section counts; unit-tested by `scripts/test-gate.mjs` |
 | World index page | `scripts/build-world-index.mjs` | Generates `world/index.md`; parses rulers out of `LORE/factions/Sixteen-States.md` |
 
