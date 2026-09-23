@@ -149,10 +149,14 @@
             "anchor": {
               "$ref": "#/$defs/anchor"
             },
+            "depth": {"type": "integer", "minimum": 1, "maximum": 6},
             "text": {
               "$ref": "#/$defs/localizedText"
             }
           },
+          "if": {"properties": {"kind": {"const": "heading"}}},
+          "then": {"required": ["depth"]},
+          "else": {"not": {"required": ["depth"]}},
           "additionalProperties": false
         },
         {
