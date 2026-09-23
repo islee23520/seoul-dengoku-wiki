@@ -11,17 +11,18 @@ const scriptDir = dirname(fileURLToPath(import.meta.url))
 const docsSiteRoot = join(scriptDir, '..')
 const wikiRoot = join(docsSiteRoot, '..')
 const repoRoot = join(wikiRoot, '..')
+const gddPagesRoot = process.env.GDD_PAGES_ROOT || join(repoRoot, 'GDD')
 const referenceDir = join(repoRoot, 'RESEARCH', 'canon-reference')
 
 const GITHUB_WIKI = 'https://github.com/islee23520/seoul-kenshi/blob/main/' + 'retired-reference-assets/'
 
 const DOMAIN_ROOTS = [
   { domain: 'world', dir: join(wikiRoot, 'lore') },
-  { domain: 'rules', dir: join(repoRoot, 'GDD', 'rules') },
-  { domain: 'rules', dir: join(repoRoot, 'GDD', 'references') },
-  { domain: 'rules', dir: join(repoRoot, 'GDD', 'architecture') },
-  { domain: 'design', dir: join(repoRoot, 'GDD') },
-  { domain: 'design', dir: join(repoRoot, 'GDD', 'art') },
+  { domain: 'rules', dir: join(gddPagesRoot, 'rules') },
+  { domain: 'rules', dir: join(gddPagesRoot, 'references') },
+  { domain: 'rules', dir: join(gddPagesRoot, 'architecture') },
+  { domain: 'design', dir: gddPagesRoot },
+  { domain: 'design', dir: join(gddPagesRoot, 'art') },
 ]
 const ROOT_DOCS = ['Concept.md', 'Design.md', 'ToDo.md', 'Intent.md']
 

@@ -4,21 +4,22 @@ import { fileURLToPath } from 'node:url'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = resolve(projectRoot, '../..')
+const gddPagesRoot = process.env.GDD_PAGES_ROOT || resolve(repoRoot, 'GDD')
 const contentRoot = resolve(projectRoot, 'src-gdd/content')
 const generatedRoot = resolve(projectRoot, 'src-gdd/generated')
 const categories = [
-  { id: 'design', label: '제품 설계', dir: 'GDD', depth: 0 },
-  { id: 'rules', label: '게임 규칙', dir: 'GDD/rules', depth: 0 },
-  { id: 'architecture', label: '아키텍처', dir: 'GDD/architecture', depth: 0 },
-  { id: 'references', label: '레퍼런스 연구', dir: 'GDD/references', depth: 0 },
-  { id: 'decisions', label: '결정 기록', dir: 'GDD/adr', depth: 0 },
-  { id: 'art', label: '아트 설계', dir: 'GDD/art', depth: 0 },
+  { id: 'design', label: '제품 설계', dir: '', depth: 0 },
+  { id: 'rules', label: '게임 규칙', dir: 'rules', depth: 0 },
+  { id: 'architecture', label: '아키텍처', dir: 'architecture', depth: 0 },
+  { id: 'references', label: '레퍼런스 연구', dir: 'references', depth: 0 },
+  { id: 'decisions', label: '결정 기록', dir: 'adr', depth: 0 },
+  { id: 'art', label: '아트 설계', dir: 'art', depth: 0 },
 ]
 const excluded = new Set(['AGENTS.md', 'README.md'])
 const githubRoot = 'https://github.com/islee23520/seoul-dengoku/blob/main/'
 
 const titleOf = (markdown, fallback) => markdown.match(/^#\s+(.+)$/m)?.[1]?.replace(/\s+\{#[^}]+\}\s*$/, '').trim() ?? fallback
-const sourceKey = (path) => relative(repoRoot, path).replaceAll('\\', '/')
+const sourceKey = (path) => `GDD/${relative(gddPagesRoot, path).replaceAll('\\', '/')}`
 
 await rm(contentRoot, { recursive: true, force: true })
 await mkdir(contentRoot, { recursive: true })
@@ -26,7 +27,7 @@ await mkdir(generatedRoot, { recursive: true })
 
 const documents = []
 for (const category of categories) {
-  const sourceDir = resolve(repoRoot, category.dir)
+  const sourceDir = resolve(gddPagesRoot, category.dir)
   for (const name of (await readdir(sourceDir)).sort()) {
     if (excluded.has(name) || extname(name) !== '.md') continue
     const source = resolve(sourceDir, name)
@@ -41,7 +42,7 @@ const routeBySource = new Map(documents.map((document) => [document.sourcePath, 
 const normalizeHref = (href, source) => {
   if (href.startsWith('#') || href.startsWith('http://') || href.startsWith('https://') || href.startsWith('mailto:')) return href
   const [pathPart, hash = ''] = href.split('#', 2)
-  const resolved = sourceKey(resolve(dirname(source), pathPart))
+  const resolved = relative(repoRoot, resolve(repoRoot, sourceKey(source), '..', pathPart)).replaceAll('\\', '/')
   const gddRoute = routeBySource.get(resolved)
   if (gddRoute) return `${gddRoute}${hash ? `#${hash}` : ''}`
   if (resolved.startsWith('LORE/') && resolved.endsWith('.md')) return `/wiki/world/${basename(resolved, '.md')}${hash ? `#${hash}` : ''}`
