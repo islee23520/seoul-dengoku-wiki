@@ -114,8 +114,8 @@ const updateHistory = JSON.parse(await readFile(resolve(projectRoot, 'data/updat
 const wikiUpdates = latestUpdates(updateHistory.updates)
 await writeFile(resolve(generatedRoot, 'wikiUpdates.ts'), `export type WikiUpdate = { readonly date: string; readonly sequence: number; readonly title: string; readonly category: string; readonly status: string; readonly source: string; readonly route: string }\n\nexport const wikiUpdateHistory = ${JSON.stringify(updateHistory.updates, null, 2)} as const satisfies readonly WikiUpdate[]\n\nexport const wikiUpdates = ${JSON.stringify(wikiUpdates, null, 2)} as const satisfies readonly WikiUpdate[]\n`)
 
-const stateSource = await readFile(resolve(repoRoot, 'LORE/factions/Sixteen-States.md'), 'utf8')
-const officesSource = await readFile(resolve(repoRoot, 'LORE/offices/Offices-and-Ranks.md'), 'utf8')
+const stateSource = await readFile(resolve(repoRoot, 'WEB/lore/factions/Sixteen-States.md'), 'utf8')
+const officesSource = await readFile(resolve(repoRoot, 'WEB/lore/offices/Offices-and-Ranks.md'), 'utf8')
 const officeTable = officesSource.match(/\| 국가 \| 티어1 \|[\s\S]*?(?=\n## )/)?.[0] ?? ''
 const tiersByState = new Map([...officeTable.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$/gm)]
   .map((match) => [match[1].trim(), match.slice(2).map((rank) => rank.trim())]))
@@ -135,22 +135,22 @@ const stateCatalog = stateRows.map(([name, origin, government, power, cause], in
 }))
 await writeFile(resolve(generatedRoot, 'stateCatalog.ts'), `export const stateCatalog = ${JSON.stringify(stateCatalog, null, 2)} as const\n`)
 
-const peopleSource = JSON.parse(await readFile(resolve(repoRoot, 'LORE/name-pools/values-cast.json'), 'utf8')).people
-const genderSource = JSON.parse(await readFile(resolve(repoRoot, 'LORE/name-pools/gender-cast.json'), 'utf8')).people
+const peopleSource = JSON.parse(await readFile(resolve(repoRoot, 'WEB/lore/name-pools/values-cast.json'), 'utf8')).people
+const genderSource = JSON.parse(await readFile(resolve(repoRoot, 'WEB/lore/name-pools/gender-cast.json'), 'utf8')).people
 const genderByName = new Map(genderSource.map((person) => [person.name, person]))
 const stateNameById = new Map(peopleSource.filter((person) => /^S(?:0[1-9]|1[0-6])$/u.test(person.state)).map((person) => [person.state, person.state_name]))
 const regionAtlasSource = await readFile(resolve(repoRoot, 'TOOL/tools/regions/data/atlas-data.js'), 'utf8')
 const regionAtlas = JSON.parse(regionAtlasSource.replace(/^window\.SEOUL_REGION_ATLAS=/, '').replace(/;\s*$/, ''))
 const seoulGraph = JSON.parse(await readFile(resolve(repoRoot, 'GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json'), 'utf8'))
 const officialLineData = JSON.parse(await readFile(resolve(repoRoot, 'WEB/wiki/scripts/official-seoul-lines.json'), 'utf8'))
-const stationControlLedger = JSON.parse(await readFile(resolve(repoRoot, 'LORE/places/station-control-overrides.json'), 'utf8'))
+const stationControlLedger = JSON.parse(await readFile(resolve(repoRoot, 'WEB/lore/places/station-control-overrides.json'), 'utf8'))
 const stationControlOverrides = new Map(stationControlLedger.overrides.map((entry) => [entry.stationId, entry]))
 proj4.defs('EPSG:5179', '+proj=tmerc +lat_0=38 +lon_0=127.5 +k=0.9996 +x_0=1000000 +y_0=2000000 +ellps=GRS80 +units=m +no_defs')
 
 const regionContentById = new Map()
-for (const entry of await readdir(resolve(repoRoot, 'LORE/regions/content'), { withFileTypes: true })) {
+for (const entry of await readdir(resolve(repoRoot, 'WEB/lore/regions/content'), { withFileTypes: true })) {
   if (!entry.isFile() || !/^\d{5}\.json$/u.test(entry.name)) continue
-  const district = JSON.parse(await readFile(resolve(repoRoot, 'LORE/regions/content', entry.name), 'utf8'))
+  const district = JSON.parse(await readFile(resolve(repoRoot, 'WEB/lore/regions/content', entry.name), 'utf8'))
   for (const region of district.regions) regionContentById.set(region.region_id, region.content)
 }
 if (regionContentById.size !== 427) throw new Error(`E_REGION_CONTENT_COVERAGE:${regionContentById.size}`)
@@ -194,7 +194,7 @@ const pointInPolygon = ([x, y], points) => {
   }
   return inside
 }
-const capitalSource = await readFile(resolve(repoRoot, 'LORE/factions/Sixteen-States.md'), 'utf8')
+const capitalSource = await readFile(resolve(repoRoot, 'WEB/lore/factions/Sixteen-States.md'), 'utf8')
 const stateIdByName = new Map(STATES.map((state) => [state.name, state.id]))
 const capitalNameByState = new Map([...capitalSource.matchAll(/^\| ([^|]+) \| ([^|]*?중심\s+([^|()]+?)역(?:\([^|]*\))?[^|]*) \|/gm)]
   .map((match) => [stateIdByName.get(match[1].trim()), match[3].trim()])
@@ -336,7 +336,7 @@ const openingTerritories = {
 }
 await writeFile(resolve(publicRoot, 'opening-territories.json'), `${JSON.stringify(openingTerritories)}\n`)
 
-const centuryAnnalsSource = await readFile(resolve(repoRoot, 'LORE/chronology/Century-Annals.md'), 'utf8')
+const centuryAnnalsSource = await readFile(resolve(repoRoot, 'WEB/lore/chronology/Century-Annals.md'), 'utf8')
 const timelineField = (body, field) => body.match(new RegExp(`^- ${field}:\\s*(.+)$`, 'm'))?.[1]?.trim()
   ?? body.match(new RegExp(`^\\| ${field} \\| (.+) \\|$`, 'm'))?.[1]?.trim()
   ?? ''
@@ -390,14 +390,14 @@ const addPersonCards = (text, file, pattern) => {
 }
 for (let index = 1; index <= 16; index += 1) {
   const file = `Cast-State-${String(index).padStart(2, '0')}.md`
-  const text = await readFile(resolve(repoRoot, 'LORE/characters', file), 'utf8')
+  const text = await readFile(resolve(repoRoot, 'WEB/lore/characters', file), 'utf8')
   addPersonCards(text, file, /^### 인물 (.+)$/gm)
 }
 for (const [file, pattern] of [['Core-Characters.md', /^## (?!인물 목록$)(.+)$/gm], ['Cast-Unaffiliated.md', /^### 인물 (.+)$/gm]]) {
-  const text = await readFile(resolve(repoRoot, 'LORE/characters', file), 'utf8')
+  const text = await readFile(resolve(repoRoot, 'WEB/lore/characters', file), 'utf8')
   addPersonCards(text, file, pattern)
 }
-const relationText = await readFile(resolve(repoRoot, 'LORE/characters/Cast-Relations.md'), 'utf8')
+const relationText = await readFile(resolve(repoRoot, 'WEB/lore/characters/Cast-Relations.md'), 'utf8')
 const relations = [...relationText.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$/gm)]
   .map((match) => ({ from: match[1].trim(), type: match[2].trim(), to: match[3].trim(), basis: match[4].trim() }))
   .filter((relation) => relation.from !== '인물' && !relation.from.startsWith('---'))

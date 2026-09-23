@@ -66,16 +66,16 @@ for (const document of documents) {
   await writeFile(resolve(targetDir, `${document.slug}.md`), normalized)
 }
 
-const valuesCast = JSON.parse(await readFile(resolve(repoRoot, 'LORE/name-pools/values-cast.json'), 'utf8'))
-const genders = JSON.parse(await readFile(resolve(repoRoot, 'LORE/name-pools/gender-cast.json'), 'utf8'))
-const valuesOrgs = JSON.parse(await readFile(resolve(repoRoot, 'LORE/name-pools/values-orgs.json'), 'utf8'))
+const valuesCast = JSON.parse(await readFile(resolve(repoRoot, 'WEB/lore/name-pools/values-cast.json'), 'utf8'))
+const genders = JSON.parse(await readFile(resolve(repoRoot, 'WEB/lore/name-pools/gender-cast.json'), 'utf8'))
+const valuesOrgs = JSON.parse(await readFile(resolve(repoRoot, 'WEB/lore/name-pools/values-orgs.json'), 'utf8'))
 const graph = JSON.parse(await readFile(resolve(repoRoot, 'GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json'), 'utf8'))
-const control = JSON.parse(await readFile(resolve(repoRoot, 'LORE/places/station-control-overrides.json'), 'utf8'))
-const interiors = JSON.parse(await readFile(resolve(repoRoot, 'LORE/regions/station-interiors.json'), 'utf8'))
+const control = JSON.parse(await readFile(resolve(repoRoot, 'WEB/lore/places/station-control-overrides.json'), 'utf8'))
+const interiors = JSON.parse(await readFile(resolve(repoRoot, 'WEB/lore/regions/station-interiors.json'), 'utf8'))
 let regions = 0
-for (const name of await readdir(resolve(repoRoot, 'LORE/regions/content'))) {
+for (const name of await readdir(resolve(repoRoot, 'WEB/lore/regions/content'))) {
   if (!name.endsWith('.json')) continue
-  regions += JSON.parse(await readFile(resolve(repoRoot, 'LORE/regions/content', name), 'utf8')).regions.length
+  regions += JSON.parse(await readFile(resolve(repoRoot, 'WEB/lore/regions/content', name), 'utf8')).regions.length
 }
 const dataCatalog = [
   { id: 'cast-values', title: '인물 가치관·욕망', format: 'JSON', ownerPath: 'LORE/name-pools/values-cast.json', schema: valuesCast.schema, records: valuesCast.people.length, status: '사용 중', validation: 'verify-cast' },
