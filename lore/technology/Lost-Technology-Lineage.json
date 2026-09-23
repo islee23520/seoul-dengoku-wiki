@@ -1,0 +1,1366 @@
+{
+  "version": 1,
+  "domain": "technology",
+  "id": "DOC:Lost-Technology-Lineage",
+  "slug": "lost-technology-lineage",
+  "status": "draft",
+  "tense": {
+    "en": "past",
+    "ko": "past"
+  },
+  "provenance": {
+    "original_anchor": "lore/technology/Lost-Technology-Lineage.md",
+    "original_hash": "f335b6ba5954db504ff4e09e4089adc26861fa57c4968be1111ef655bc434017",
+    "history": [
+      "Korean lore/technology/Lost-Technology-Lineage.md SHA-256 f335b6ba5954db504ff4e09e4089adc26861fa57c4968be1111ef655bc434017.",
+      "English lore/technology/Lost-Technology-Lineage.en.md SHA-256 8a381fb4b7d417d0c3472a1a211b9fa1bbb33caad1ec05f5f3550d42573e7940; copied verbatim, no translation written."
+    ]
+  },
+  "source": {
+    "kind": "original-fiction",
+    "refs": [
+      "lore/technology/Lost-Technology-Lineage.md",
+      "lore/technology/Lost-Technology-Lineage.en.md"
+    ]
+  },
+  "locales": {
+    "en": {
+      "title": "Lost Technology",
+      "summary": "Before the city's collapse, the disaster organizations had trial-deployed biomimetic robots — a creative setting.",
+      "tense": "past"
+    },
+    "ko": {
+      "title": "잃어버린 기술",
+      "summary": "도시 붕괴 이전, 방재 조직이 생물모방(Biomimetics) 로봇을 시험 도입했다는 창작 설정이다.",
+      "tense": "past"
+    }
+  },
+  "content": [
+    {
+      "kind": "heading",
+      "anchor": "잃어버린-기술",
+      "text": {
+        "en": "Lost Technology",
+        "ko": "잃어버린 기술"
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "개요",
+      "text": {
+        "en": "Overview",
+        "ko": "개요"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "개요-p1",
+      "text": {
+        "en": "Before the city's collapse, the disaster organizations had trial-deployed biomimetic robots — a creative setting. The forms of insects, reptiles, and arthropods were matched respectively to search, reinforcement, and conduit-inspection duties. Whether those forms were inherently more efficient than wheeled ones or more favorable to swarm operation differed by actual machine, and this document had not measured all those performances.",
+        "ko": "도시 붕괴 이전, 방재 조직이 생물모방(Biomimetics) 로봇을 시험 도입했다는 창작 설정이다. 곤충, 파충류, 절지동물의 형태를 각각 수색, 보강, 관로 검사 임무에 맞췄다. 이런 형태가 차륜형보다 무조건 효율적이거나 군집 운용에 유리한지는 실제 장비마다 다르며, 이 문서에서 그 성능을 모두 실측해 둔 것은 아니다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "개요-p2",
+      "text": {
+        "en": "At a disaster, these robots divided survivor search, structural reinforcement, and deep conduit inspection among themselves. But when the motive-power revocation cut the upper control mesh, they were left endlessly repeating the last search and patrol routines entered into them. The monster-shaped robots drifting through the subterranean ecosystem bore no malice toward people. They were artifacts blindly following ossified old disaster routines.",
+        "ko": "재난 발생 시 이 로봇들은 생존자 수색, 구조물 보강, 심층 관로 검사를 나눠 맡았다. 하지만 기동권 이탈 사태로 상위 제어망이 끊기면서, 마지막으로 입력된 수색과 경계 루틴만 끝없이 반복하게 되었다. 지하 생태계를 떠도는 괴수 형태의 로봇은 사람에게 악의를 품은 것이 아니다. 단지 고착된 옛 방재 루틴을 맹목적으로 따르는 인공물일 뿐이다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "개요-p3",
+      "text": {
+        "en": "This content was a fiction layer throughout, not a verification of real 2026 products. The names G25, G26, and G27, the sealed galleries, and the narrative of the chassis restarting were all invented settings. The Yangjae Machineworks Company's trial deployment, the Standards Alliance's battery loading, and the Water Compact's drawing management were likewise virtual assignments existing only within this worldview. The existence of a real company did not mean it had actually fielded a particular robot. That technical concepts like biomimetics, sensors, and distributed control were widely known did not prove the specific performance of the chassis below, or the conclusion of supply contracts, as historical fact.",
+        "ko": "이 내용은 어디까지나 허구 레이어이며, 2026년의 실제 제품을 검증한 것이 아니다. G25, G26, G27이라는 명칭이나 봉인 갤러리, 그리고 기체들이 재기동하는 서사는 모두 가공의 설정이다. 양재기공주식회사의 시험 도입, 규격동맹의 전지 탑재, 급수계약정의 도면 관리 등도 이 세계관 안에서만 존재하는 가상 배정이다. 현실에 존재하는 회사라고 해서 특정 로봇을 실제로 현장에 배치했다는 뜻은 아니다. 생물모방, 센서, 분산 제어 같은 기술 개념이 일반에 널리 알려졌다고 해도, 아래 기체들의 구체적 성능이나 공급 계약 체결 여부까지 역사적 사실로 증명하지는 않는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "개요-p4",
+      "text": {
+        "en": [
+          {
+            "text": "The reference points for the common era followed "
+          },
+          {
+            "text": "the Scenario Timeline",
+            "link": {
+              "domain": "chronology",
+              "slug": "Scenario-Timeline"
+            }
+          },
+          {
+            "text": " and "
+          },
+          {
+            "text": "motive-power revocation",
+            "link": {
+              "domain": "overview",
+              "slug": "World-Unbinding"
+            }
+          },
+          {
+            "text": " as canon. The collapse stood at 2026, and the story opened at 2126, a hundred years after the revocation. A century passing did not mean all humanity had forgotten even the foundations of modern science. What had been fully severed were only the giant manufacturing lines, the upper licensing system, and the densely woven call mesh."
+          }
+        ],
+        "ko": [
+          {
+            "text": "서기를 가리키는 기준점은 "
+          },
+          {
+            "text": "연표",
+            "link": {
+              "domain": "chronology",
+              "slug": "Scenario-Timeline"
+            }
+          },
+          {
+            "text": "와 "
+          },
+          {
+            "text": "기동권 이탈",
+            "link": {
+              "domain": "overview",
+              "slug": "World-Unbinding"
+            }
+          },
+          {
+            "text": " 문서를 정본으로 따른다. 붕괴 시점은 2026년, 이야기가 개막하는 때는 기동권 이탈로부터 100년이 흐른 2126년이다. 한 세기가 지났다고 해서 모든 인류가 현대 과학의 기초마저 잊어버린 것은 아니다. 완전히 끊어진 것은 거대한 제조 라인과 상위 인가 시스템, 그리고 촘촘하게 연결되어 있던 호출망일 뿐이다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "앎-보유-수리-제조",
+      "text": {
+        "en": "Knowing / Holding / Repairing / Manufacturing",
+        "ko": "앎 / 보유 / 수리 / 제조"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "앎-보유-수리-제조-p1",
+      "text": {
+        "en": "These four layers were never lumped into one sentence.",
+        "ko": "이 네 가지 층위는 결코 한 문장으로 뭉뚱그려 쓰지 않는다."
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "앎-보유-수리-제조-table2",
+      "columns": [
+        {
+          "en": "Layer",
+          "ko": "층"
+        },
+        {
+          "en": "Meaning",
+          "ko": "의미"
+        },
+        {
+          "en": "What remained at the 2126 opening",
+          "ko": "개막 2126에도 남는 것"
+        },
+        {
+          "en": "What was usually absent",
+          "ko": "흔히 없는 것"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Knowing",
+            "ko": "앎"
+          },
+          {
+            "en": "Can one interpret principles, terms, drawings",
+            "ko": "원리·용어·도면을 해석할 수 있는가"
+          },
+          {
+            "en": "Maintenance hands, records keepers, and workshop technicians read the 2026 science of electricity, hydraulics, and sensors through ledgers and transmission. Not the same as the orphan packs forgetting all",
+            "ko": "정비사·기록관·공방 기술자는 전기·유압·센서의 2026 과학을 장부와 전승으로 읽는다. 고아 무리가 전부를 잊는 것과 같지 않다"
+          },
+          {
+            "en": "The specific control keys of the S16 vault, the per-line licensing codes",
+            "ko": "S16 금고의 특정 제어 키, 라인별 인가 코드"
+          }
+        ],
+        [
+          {
+            "en": "Holding",
+            "ko": "보유"
+          },
+          {
+            "en": "Does one physically hold chassis, modules, cards",
+            "ko": "기체·모듈·카드를 물리적으로 쥐고 있는가"
+          },
+          {
+            "en": "Dismantled modules, stopped chassis, stronghold warehouses",
+            "ko": "해체 모듈, 정지된 기체, 거점 창고"
+          },
+          {
+            "en": "Counts. Stock numbers were not locked",
+            "ko": "수량. 재고 수는 잠그지 않는다"
+          }
+        ],
+        [
+          {
+            "en": "Repairing",
+            "ko": "수리"
+          },
+          {
+            "en": "Can one set what is held moving again",
+            "ko": "가진 것을 다시 움직이게 하는가"
+          },
+          {
+            "en": "Replaceable parts like hydraulic hoses, terminals, luminous lenses. Workshop-standard components",
+            "ko": "유압 호스, 단자, 발광 렌즈 같은 교체 가능한 부위. 공방 규격 부품"
+          },
+          {
+            "en": "Whole neural-net weights, the internal reconstruction of broken high-density cells",
+            "ko": "신경망 가중 전체, 파손된 고밀도 셀의 내부 재구성"
+          }
+        ],
+        [
+          {
+            "en": "Manufacturing",
+            "ko": "제조"
+          },
+          {
+            "en": "Can one make the same anew",
+            "ko": "같은 것을 새로 만드는가"
+          },
+          {
+            "en": [
+              {
+                "text": "The assembly of "
+              },
+              {
+                "text": "some",
+                "strong": true
+              },
+              {
+                "text": " trade tools, traps, conditional equipment"
+              }
+            ],
+            "ko": [
+              {
+                "text": "생업 공구, 함정, 조건부 장비의 "
+              },
+              {
+                "text": "일부",
+                "strong": true
+              },
+              {
+                "text": " 조립"
+              }
+            ]
+          },
+          {
+            "en": "Line-finished products, mass-produced cells, the upper licensing servers",
+            "ko": "라인 완제품, 셀 양산, 상위 인가 서버"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "앎-보유-수리-제조-p3",
+      "text": {
+        "en": "So saying technology was \"lost\" meant something close to manufacture, licensing, and the supply mesh having been cut. It never meant the world's people had forgotten every law of physics.",
+        "ko": "따라서 「기술이 로스트(Lost) 상태다」라는 말은 제조와 인가, 보급망이 단절되었다는 뜻에 가깝다. 세상 사람들이 물리학 법칙을 모조리 잊어버렸다는 뜻이 결코 아니다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "생물모방-설계의-세-가지-핵심-축",
+      "text": {
+        "en": "The Three Core Axes of Biomimetic Design",
+        "ko": "생물모방 설계의 세 가지 핵심 축"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "생물모방-설계의-세-가지-핵심-축-p1",
+      "text": {
+        "en": "The functions below were creative goals set while planning the chassis designs, not durability, efficiency, or material test results of actual equipment.",
+        "ko": "아래 기능들은 기체 설계를 기획하며 세운 창작 목표일 뿐, 실제 장비의 내구성이나 효율, 재료 성능 시험 결과가 아니다."
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "생물모방-설계의-세-가지-핵심-축-list2",
+      "ordered": true,
+      "items": [
+        {
+          "en": "Energy efficiency and distributed control\nUnlike centralized heavy plant, autonomous hydraulic control of each segment and joint suppressed moving power consumption. Even with the central computing unit paralyzed, the lower neural networks kept the survival routines on their own.",
+          "ko": "에너지 효율과 분산 제어\n중앙 집중형 중장비와 달리, 개별 마디와 관절의 자율 유압 통제로 이동 시 소비 전력을 억제한다. 중앙 연산 장치가 마비되어도 하부 신경망이 생존 루틴을 자체 유지한다."
+        },
+        {
+          "en": "Adaptation to hard terrain\nOn slopes, underwater, and in soil-collapse zones, the multi-leg mounts and flat pads held balance. Where wheeled undercarriages sank in mire, the biological joint structure delivered stable power.",
+          "ko": "고난도 지형 적응성\n경사면, 수중, 토사 붕괴 구역에서도 다지 거치대와 편평 장갑을 활용해 균형을 유지한다. 차륜형 바퀴가 침하되는 수렁에서도 생체 관절 구조는 안정적인 동력을 전달한다."
+        },
+        {
+          "en": "Swarm operability and mission continuity\nEven with a single chassis destroyed, those nearby received the signal and re-formed the search net. Through mutual signal sharing they held formation without collision even inside narrow bends.",
+          "ko": "군집 운용성과 임무 연속성\n단일 기체가 파괴되더라도 주변 기체가 해당 신호를 수신해 수색망을 재구성한다. 상호 신호 공유를 통해 좁은 굴곡 내부에서도 충돌 없이 대열을 유지한다."
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "붕괴-이전-방재-루틴의-고착화-메커니즘",
+      "text": {
+        "en": "The Ossification Mechanism of the Pre-Collapse Disaster Routines",
+        "ko": "붕괴 이전 방재 루틴의 고착화 메커니즘"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "붕괴-이전-방재-루틴의-고착화-메커니즘-list1",
+      "items": [
+        {
+          "en": "Endless repetition of unfinished commands\nThe top-priority search and patrol orders dispatched at the collapse remained without release protocols.",
+          "ko": "미완성 명령의 무한 반복\n도시 붕괴 당시 발송된 최우선 수색 및 경계 명령이 해제 프로토콜 없이 남아 있다."
+        },
+        {
+          "en": "Malfunction of the cognitive sensors\nThey mistook outside explorers or subterranean survivors for intruders into the collapse zone or obstacles to rescue, and took patrol action.",
+          "ko": "인지 센서의 오작동\n외부 탐사 대원이나 지하 생존자를 붕괴 구역 침입자 또는 구조 대상 장애물로 오인해 경계 동작을 취한다."
+        },
+        {
+          "en": "Narrative reading of the survival instinct\nAutomatic maintenance behavior protecting the power cells and tending the drives read to the underground residents as the monster's aggressive response.",
+          "ko": "생존 본능의 서사적 해석\n동력 축전지를 보호하고 구동부를 정비하려는 자동 유지보수 행동이 지하 주민들에게는 괴수의 호전적 반응으로 인식된다."
+        },
+        {
+          "en": "Hallucination of communication signals\nThe AI state looping infinitely while awaiting the dead command servers' replies spread to nearby machine sensors.",
+          "ko": "통신 신호의 환각 현상\n끊어진 지시 서버의 응답을 기다리며 무한 루프를 도는 인공지능 상태가 주변 기계 센서에 전파된다."
+        },
+        {
+          "en": "Linkage with the M040 monster deployment\nThe recently found M040 monster deployment swarm was also classified as a combination of these ossified disaster-routine chassis.",
+          "ko": "몬스터 배치 M040과의 연계\n최근 발견된 M040 몬스터 배치 군집 역시 이러한 방재 루틴 고착화 기체들의 조합으로 분류된다."
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "세-로스트-라인",
+      "text": {
+        "en": "The Three Lost Lines",
+        "ko": "세 로스트 라인"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "세-로스트-라인-p1",
+      "text": {
+        "en": "Deep beneath the city lay sealed the three core lost-tech lines that had been the fruit of pre-collapse disaster engineering. Each line held its own formal traits and special mission purpose. The line names, the sealing coordinates, and the restart narratives were all creative territory.",
+        "ko": "도시 지하 깊은 곳에는 붕괴 이전 방재 공학의 결실이었던 세 가지 핵심 로스트 테크 라인이 봉인되어 있다. 각 라인은 고유한 형태적 특징과 특수 임무 목적을 지니고 있다. 라인 명칭이나 봉인 좌표, 그리고 재기동 서사는 모두 창작 영역이다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "g25-등불개미군",
+      "text": {
+        "en": "G25 Lantern-Ant Swarm",
+        "ko": "G25 등불개미군"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "g25-등불개미군-p1",
+      "text": {
+        "en": "The G25 Lantern-Ant Swarm was a machine line for swarm search and small-cargo delivery clad in insect form. With the fine joints of its multi-leg structure it surveyed collapsed soil heaps and broken concrete walls under its own power, and its forward luminous lenses secured working paths in the dark. For emergencies it was designed to load small ration capsules into its upper hopper and carry them along narrow bends. Stopped G25 chassis were stored inside the S09 sealed gallery and the S03 test track. The specific unit counts were not locked.",
+        "ko": "G25 등불개미군은 곤충 형태를 입힌 군집 수색 및 소형 물자 배송 전용 기계 라인이다. 다지 구조의 미세 관절을 이용해 붕괴된 흙더미와 깨진 콘크리트 벽면을 자력으로 답사하며, 전면부 발광 렌즈로 암흑 속 작업 경로를 확보한다. 비상 상황에서는 소형 배급 캡슐을 상부 호퍼에 실어 협소한 굴곡을 따라 수송하도록 설계되었다. S09 봉인 갤러리와 S03 시험 트랙 내부에 정지 상태의 G25 기체가 격납되어 있다. 이때 기체의 구체적인 대수는 따로 잠가두지 않는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "g25-등불개미군-p2",
+      "text": {
+        "en": "Narrative of the restart trigger\nWhen the corridor control-board voltage surged or outside physical shock arrived, the chassis judged the pre-collapse search orders still valid and began the restart sequence. Once the trigger fired, the gallery barrier opened and the small swarm chassis scattered through the corridor to resume search activity.",
+        "ko": "재기동 개시점 서술\n통로의 제어반 전압이 급증하거나 외부 물리적 충격이 가해지면, 기체들은 붕괴 이전 수색 명령이 여전히 유효하다고 판단해 재기동 시퀀스를 시작한다. 개시점이 가동되면 갤러리 차단막이 열리고 소형 군집 기체들이 통로 전체로 흩어져 수색 활동을 재개한다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "g25-등불개미군-p3",
+      "text": {
+        "en": "Major equipment and module composition",
+        "ko": "주요 장비 및 모듈 구성"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "g25-등불개미군-list4",
+      "items": [
+        {
+          "en": "Luminous search lenses: they cast high-frequency light into pitch darkness to identify cracks and human life.",
+          "ko": "발광 탐색 렌즈: 칠흑 같은 암흑 속에서 고주파 광선을 조사해 균열과 인명을 식별한다."
+        },
+        {
+          "en": "Upper transport hopper: an insulating frame storing precision relief goods or search capsules.",
+          "ko": "상부 수송 호퍼: 정밀 보급품이나 수색 캡슐을 격납하는 내열 프레임으로 남는다."
+        },
+        {
+          "en": "Multi-leg joint drive system: fine grips mounted to grasp wall faces and ceiling finishes while moving.",
+          "ko": "다지 관절 구동계: 벽면과 천장 마감재를 움켜쥐고 이동할 수 있는 미세 집게가 장착되어 있다."
+        },
+        {
+          "en": "Autonomous charging terminals: metal collectors charging power through contact with the depot rails. Charging only — not a perpetual engine generating infinitely.",
+          "ko": "자율 충전 단자: 격납고 선로와 접촉하여 전력을 충전받는 금속 수집기다. 어디까지나 충전일 뿐, 무한히 발전하는 영구 기관은 아니다."
+        },
+        {
+          "en": "Obstacle-crushing jaws: high-strength grippers cutting away collapsed debris to open passages.",
+          "ko": "장애물 파쇄 턱: 붕괴된 잔해를 잘라내어 이동 통로를 개척하는 고강도 집게부다."
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "g26-화석포효군",
+      "text": {
+        "en": "G26 Fossil-Roar Swarm",
+        "ko": "G26 화석포효군"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "g26-화석포효군-p1",
+      "text": {
+        "en": "The G26 Fossil-Roar Swarm was a line for heavy-plant movement and structural repair clad in dinosaur skeletons. With strong hydraulic underbodies and rear weight balancers it pushed aside giant barrier debris and carried reinforcement frames. A high-output power source rode at the chassis center, allowing long high-load work. That power source too received the constraints of charging, fuel, and cell life in full. These chassis were sealed deep in the S11 depot and the S05 depot siding maintenance sheds.",
+        "ko": "G26 화석포효군은 공룡형 골격을 적용한 중장비 이동 및 구조물 수리 전용 라인이다. 강한 유압식 하체와 후방 중량 밸런서를 통해 거대한 차단벽 잔해를 밀어내고 보강 프레임을 수송하는 역할을 맡았다. 기체 중심부에는 고출력 동력원이 탑재되어 있어 장기간 고중량 작업을 수행할 수 있다. 물론 그 동력원 역시 충전과 연료, 셀 수명의 제약을 고스란히 받는다. 이 기체들은 S11 차량기지와 S05 기지 측선의 정비고 깊은 곳에 봉인되어 있다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "g26-화석포효군-p2",
+      "text": {
+        "en": "Narrative of the restart trigger\nWhen power reached the maintenance shed's automatic inspection terminal and an outside access-authorization signal arrived, the Fossil-Roar Swarm's hydro valves opened and the restart trigger moved. The risen chassis sounded dull mechanical alarms, left the maintenance berths, and deployed patrols to secure work zones.",
+        "ko": "재기동 개시점 서술\n정비고의 자동 점검 단말에 전력이 공급되고 외부에서 접근 인가 신호가 수신되면, 화석포효군의 하이드로 밸브가 열리며 재기동 개시점이 동작한다. 기상한 기체들은 둔탁한 기계식 경보음을 울리며 정비 정차선을 벗어나 작업 구역 확보를 위한 순찰을 전개한다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "g26-화석포효군-p3",
+      "text": {
+        "en": "Major equipment and module composition",
+        "ko": "주요 장비 및 모듈 구성"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "g26-화석포효군-list4",
+      "items": [
+        {
+          "en": "Hydraulic heavy underbody: reinforced hydraulic pistons bearing and moving several tons of concrete debris.",
+          "ko": "유압 중장비 하체: 수 톤의 콘크리트 잔해를 받치고 이동할 수 있는 강화 유압 피스톤이다."
+        },
+        {
+          "en": "Rear weight balancer: a variable-counterweight structure centering the load and preventing overturn.",
+          "ko": "후방 중량 밸런서: 하중 이동 시 중심을 잡고 전복을 방지하는 가변 추 구조다."
+        },
+        {
+          "en": "Impact rock-breaking mace: an impact-arm module for crushing obstacles and opening passages.",
+          "ko": "충격 쇄석 둔기: 장애물을 파쇄하거나 통로를 개척하기 위한 충격식 암 모듈이다."
+        },
+        {
+          "en": "External reinforcement armor plates: they protected the central power module from rockfall and blast pressure.",
+          "ko": "외부 보강 장갑판: 낙석과 폭발 압력으로부터 중심 동력원 모듈을 보호한다."
+        },
+        {
+          "en": "Vibration sonic emitter: it identified fine ground subsidence by sensor and settled debris by resonance.",
+          "ko": "진동 음파 방출기: 지반의 미세한 침하를 센서로 식별하고 공진으로 잔해를 정돈한다."
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "g27-심층삼엽군",
+      "text": {
+        "en": "G27 Deep-Trilobite Swarm",
+        "ko": "G27 심층삼엽군"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "g27-심층삼엽군-p1",
+      "text": {
+        "en": "The G27 Deep-Trilobite Swarm was a deep-inspection and sluice-maintenance line modeled on the body plan of ancient marine arthropods. With flat multilayer pads and sealed underwater thrusters it moved freely through high-pressure flooded zones and polluted sewers. It was optimized for the work of clinging to the floors of underground waterways and detecting pipe corrosion or blockage. It lay sealed in horizontal arrays beneath the S01 sluice gallery and the S04 pump-conduit tanks.",
+        "ko": "G27 심층삼엽군은 고대 해양 절지동물의 체형을 모방한 심층 검사 및 수문 유지보수 라인이다. 납작한 다층 편평 장갑과 밀폐형 수중 추진 장치를 갖추어 고압 침수 구역과 오염수 하수관 내부를 자유롭게 이동한다. 지하 수로 바닥에 붙어 관로 부식이나 이물질 막힘을 탐지하는 작업에 최적화되어 있다. S01 수문 갤러리와 S04 펌프 관로 수조 하부에 수평 배열로 봉인된 채 잠겨 있다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "g27-심층삼엽군-p2",
+      "text": {
+        "en": "Narrative of the restart trigger\nThe restart sequence was triggered when the conduit flow gauge rose past its mandate or a shutoff-valve signal came in. The Deep-Trilobite chassis risen from the pump-conduit floor lit their underwater sonic sensors and began the routine of removing organics and foreign matter through the flooded passage.",
+        "ko": "재기동 개시점 서술\n관로 유량 수위계가 사정권 이상으로 상승하거나 차단 밸브 신호가 유입될 때 재기동 시퀀스가 유발된다. 펌프 관로 바닥에서 일어난 심층삼엽군 기체들은 수중 음파 센서를 켜고 침수 통로 전체의 유기물 및 외부 이물질 제거 루틴을 개시한다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "g27-심층삼엽군-p3",
+      "text": {
+        "en": "Major equipment and module composition",
+        "ko": "주요 장비 및 모듈 구성"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "g27-심층삼엽군-list4",
+      "items": [
+        {
+          "en": "Multilayer flat armor: a layered shell protecting the internal boards from high water pressure and corrosive polluted water.",
+          "ko": "다층 편평 장갑: 높은 수압과 부식성 오염수로부터 내장 기판을 보호하는 적층형 외갑이다."
+        },
+        {
+          "en": "Sealed underwater thrusters: jet devices controlling water flow and moving pressed against the conduit bed.",
+          "ko": "밀폐형 수중 추진기: 수중 수류를 제어하며 관로 하상에 밀착해 이동할 수 있는 분사 장치다."
+        },
+        {
+          "en": "Underwater ultrasonic sensors: they identified pipe cracks and foreign matter even in turbid mud.",
+          "ko": "수중 초음파 센서: 탁도 높은 진흙 속에서도 관로 균열과 외부 물질을 식별한다."
+        },
+        {
+          "en": "Sediment intake ports: they high-pressure-sucked and crushed the ridges and debris piled on the waterway floor.",
+          "ko": "침전물 흡입 포트: 수로 바닥에 쌓인 요철과 이물질을 고압 흡입하여 분쇄 처리한다."
+        },
+        {
+          "en": "Hydraulic anchor holds: they fixed the chassis firmly to the floor inside sewers rushing with current.",
+          "ko": "유압 고정 앵커: 급류가 흐르는 하수관 내부에서 기체를 바닥에 견고히 고정한다."
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "봉인회수쟁탈",
+      "text": {
+        "en": "Sealing, Recovery, Contest",
+        "ko": "봉인·회수·쟁탈"
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "로스트-테크-전환-원인",
+      "text": {
+        "en": "Why the Lost Tech Turned",
+        "ko": "로스트 테크 전환 원인"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "로스트-테크-전환-원인-p1",
+      "text": {
+        "en": "The reasons the city's proud precision machine lines fell to mere lost tech could be summarized in three. All three came from the physical severance of manufacture, licensing, and access rights, and did not mean humanity had comprehensively lost scientific knowledge.",
+        "ko": "도시의 자랑이었던 정밀 기계 라인들이 한낱 로스트 테크로 전락한 원인은 크게 세 가지로 요약할 수 있다. 이 세 가지 원인은 모두 제조나 인가, 접근 권한의 물리적 단절에서 비롯되었으며, 인류가 과학 지식을 전면적으로 상실했음을 의미하지는 않는다."
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "로스트-테크-전환-원인-list2",
+      "ordered": true,
+      "items": [
+        {
+          "en": "Severance of the command servers\nWith wired and wireless communication to the city's central disaster control board completely cut, the chassis, receiving neither upper licensing orders nor safe shutdown signals, fixed permanently on their last commands.",
+          "ko": "지시 서버 단절\n도시 중앙 방재 제어반과의 유무선 통신이 완전히 끊어지면서, 기체들은 상위 인가 명령이나 안전한 종료 신호를 받지 못한 채 마지막 명령에 영구적으로 고착되었다."
+        },
+        {
+          "en": "Loss of access to the S16 drawing vault\nThe S16 vault zone holding the precision drawings and control keys collapsed, physically blocking access itself. The sharp path to restoring the chassis re-control protocols vanished. Knowing the drawings existed and being able to enter the vault were strictly different things.",
+          "ko": "도면 금고 S16 접근 상실\n정밀 설계도와 제어 키가 보관된 S16 도면 금고 구역이 붕괴되어 물리적 접근 자체가 차단되었다. 이로 인해 기체의 재제어 프로토콜을 복원할 뾰족한 방법이 사라졌다. 도면의 존재를 아는 사람과 금고에 직접 들어갈 수 있는 사람은 엄연히 다르다."
+        },
+        {
+          "en": "The technology generation gap\nThe subterranean powers surviving the Great Collapse lost the academic and factory assets that could have reproduced and mass-produced the pre-collapse precision AI control codes and complex neural algorithms line by line. But machines were not treated merely as unfathomable ancient relics. Ordinary electrical and hydraulic systems were repairable to a degree in workshops; what was severed was closer to the giant manufacturing lines printing finished products and the upper licensing authority alone.",
+          "ko": "기술 세대 격차\n대붕괴 이후 생존한 지하 세력들은 붕괴 이전의 정밀 인공지능 제어 코드와 복잡한 신경망 알고리즘을 라인 단위로 재현하고 양산해 낼 학술 및 공장 자산을 잃어버렸다. 하지만 기계가 그저 도무지 알 수 없는 고대 유물로만 취급되는 것은 아니다. 일반적인 전기와 유압 시스템은 공방에서 어느 정도 수리가 가능하며, 완제품을 찍어내는 거대 제조 라인과 상위 인가 권한만이 단절된 상태에 더 가깝다."
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "축전-발전",
+      "text": {
+        "en": "Charging ≠ Generation",
+        "ko": "축전 ≠ 발전"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "축전-발전-p1",
+      "text": {
+        "en": "Charging modules and stronghold generators were never the same equipment.",
+        "ko": "축전 모듈과 거점 발전기는 결코 같은 장비가 아니다."
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "축전-발전-list2",
+      "items": [
+        {
+          "en": "Charging: a way of consuming charge already held somewhere. Charging terminals and a source supplying power (depot rails, stronghold generators, recovered cells) were always needed. Cells aged, and in hard freezes their output could drop sharply. They were not set as the \"perpetual batteries holding charge indefinitely through long years\" commonly imagined.",
+          "ko": "축전: 이미 어딘가에 담긴 전하를 소모하는 방식이다. 충전 단자와 전력을 대줄 공급원(격납고 선로, 거점 발전기, 회수 셀 등)이 반드시 필요하다. 셀은 노화되며, 혹한기에는 출력이 뚝 떨어지기도 한다. 흔히 상상하는 「오랜 세월이 지나도 전하를 무한정 유지하는 영구 전지」로 설정하지 않는다."
+        },
+        {
+          "en": "Generation: a source drawing energy by an entirely different method — fuel, hydro, solar. Plugging in charging modules and directly turning a generator were wholly different supply systems.",
+          "ko": "발전: 연료, 수력, 태양광 등 전혀 다른 방식으로 에너지를 끌어오는 공급원이다. 축전 모듈을 꽂아 쓰는 것과 발전기를 직접 돌리는 것은 보급 체계가 완전히 다르다."
+        },
+        {
+          "en": "Constraint: this document did not specifically state each charging facility's operating state or energy budget. So when assigning equipment, input power, storage capacity, charging cycle, and under what conditions supply cut off had to be added carefully.",
+          "ko": "제약: 이 문서에는 각 충전 설비별 가동 상태나 에너지 예산이 구체적으로 명시되어 있지 않다. 따라서 장비를 배정할 때 입력 전력, 저장 용량, 충전 주기, 그리고 어떤 상황에서 공급이 중단되는지를 꼼꼼히 추가해야 한다."
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "지하-부품-경제",
+      "text": {
+        "en": "The Underground Parts Economy",
+        "ko": "지하 부품 경제"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "지하-부품-경제-p1",
+      "text": {
+        "en": "A lost chassis was a chilling threat and at the same time the most expensively traded technical resource of underground society. The parts secured by stripping a chassis divided largely into three.",
+        "ko": "로스트 기체는 소름 끼치는 위협인 동시에 지하 사회에서 가장 값비싸게 거래되는 기술 자원이다. 기체를 뜯어내 확보할 수 있는 부품은 크게 세 가지로 나뉜다."
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "지하-부품-경제-list2",
+      "items": [
+        {
+          "en": "Charging modules: high-density cells, favored as buffers for stronghold power grids. Not perpetual generators making power themselves. They took the constraints of charging, aging, and supply source in full.",
+          "ko": "축전 모듈: 고밀도 축전지로, 거점 전력망의 완충 장치로 즐겨 쓰인다. 스스로 전력을 만드는 영구 발전기가 아니다. 충전, 노화, 그리고 공급원의 제약을 고스란히 받는다."
+        },
+        {
+          "en": "Drive modules: drive units of hydraulic pistons and high-torque motors, used to restore stopped heavy plant or open and close giant gates. Under the right conditions they could also serve as actuators for ordinary equipment or traps.",
+          "ko": "구동부 모듈: 유압 피스톤과 고토크 모터로 이루어진 구동 장치다. 멈춰버린 중장비를 복구하거나 거대한 게이트를 여닫는 데 쓰인다. 조건이 맞으면 일반 장비나 함정의 액추에이터로도 활용할 수 있다."
+        },
+        {
+          "en": "Sensor modules: composite optical sensor panels offering dark-sight and fine vibration detection. They traded at high prices among powers building watch facilities. Depending on conditions they could become detection equipment or the triggers of traps.",
+          "ko": "센서 모듈: 암시 시야와 미세한 진동 탐지 기능을 제공하는 복합 광학 센서 패널이다. 경계 시설을 구축하려는 세력들 사이에서 고가에 거래된다. 조건에 따라 탐지 장비나 함정의 방아쇠(트리거)가 되기도 한다."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "지하-부품-경제-p3",
+      "text": {
+        "en": [
+          {
+            "text": "Recovered parts were not used only in non-weapon systems. PlayStation's Horizon Forbidden West official introduction (viewed 2026-09-12) also explains weapons, equipment, and traps made from parts stripped from machines. What was borrowed was exactly that economic tension. The original's proper nouns and concrete crafting recipes were not carried over. In Seoul's underground, recovered modules could conditionally attach to equipment, traps, and weapons. Even so, the basic arm never became the bow. "
+          },
+          {
+            "text": "The arms and technology of this era",
+            "link": {
+              "domain": "goods",
+              "slug": "Era-Arms-and-Tech-Level"
+            }
+          },
+          {
+            "text": " · "
+          },
+          {
+            "text": "Horizon Forbidden West",
+            "href": "https://www.playstation.com/en-us/games/horizon-forbidden-west/"
+          }
+        ],
+        "ko": [
+          {
+            "text": "회수한 부품이 무조건 비무기 체계로만 쓰이는 것은 아니다. PlayStation 《Horizon Forbidden West》 공식 소개(열람 2026-09-12)에서도 기계에서 떼어낸 부품으로 무기와 장비, 덫을 만든다고 설명한다. 우리가 빌려올 것은 바로 이러한 경제적 긴장감이다. 원작의 고유명사나 구체적인 제작 레시피를 그대로 가져오지는 않는다. 서울 지하에서는 회수한 모듈이 조건부로 장비, 함정, 무기에 덧붙을 수 있다. 그렇다고 기본 병과가 활이 되는 일은 일어나지 않는다. "
+          },
+          {
+            "text": "이 시대의 기술과 무구",
+            "link": {
+              "domain": "goods",
+              "slug": "Era-Arms-and-Tech-Level"
+            }
+          },
+          {
+            "text": " · "
+          },
+          {
+            "text": "Horizon Forbidden West",
+            "href": "https://www.playstation.com/en-us/games/horizon-forbidden-west/"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "회수-반과-가문의-경합",
+      "text": {
+        "en": "Recovery Squads and the Contest of Houses",
+        "ko": "회수 반과 가문의 경합"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "회수-반과-가문의-경합-p1",
+      "text": {
+        "en": "The sealed galleries and maintenance-shed zones were the key contested ground eyed by the great operating houses and the professional relic recovery squads. The house codes and the structure among them were all creative territory.",
+        "ko": "봉인 갤러리와 정비고 구역은 거대 운영 가문들과 전문 유물 회수 반이 눈독을 들이는 핵심 쟁탈지다. 가문 코드나 이들 사이의 구도는 모두 창작 영역이다."
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "회수-반과-가문의-경합-list2",
+      "items": [
+        {
+          "en": "HC22 Magok Test-Line House: nursing the ambition to monopolize the original technology intact, it first pushed a precision recovery team inside the sealed zone. (Using a real company's name was only a virtual layer, not evidence that disaster robots were actually deployed there in 2026.)",
+          "ko": "HC22 마곡시험선가: 원형 기술을 고스란히 독점하려는 야심을 품고 봉인 구역 내부에 정밀 회수팀을 가장 먼저 밀어 넣는다. (현실의 회사 이름을 쓰는 것은 어디까지나 가상의 레이어일 뿐이며, 2026년에 방재 로봇이 실제로 그 자리에 배치되었다는 증거가 아니다.)"
+        },
+        {
+          "en": "HC17 House: raising the pretext of securing the underground supply routes, it swiftly disabled the chassis of the main sealed corridors and tried to occupy the sections.",
+          "ko": "HC17 가문: 지하 보급로의 안전을 확보한다는 명분을 앞세워, 주요 봉인 통로의 기체를 빠르게 무력화하고 구획을 점거하려 든다."
+        },
+        {
+          "en": "HP01 House: it took the strategy of secretly supplying recovered cells and sensor modules to underground auction houses and reaping great economic gain.",
+          "ko": "HP01 가문: 회수한 축전지와 센서 모듈을 지하 경매장에 은밀히 공급하여 막대한 경제적 실리를 챙기는 전략을 취한다."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "회수-반과-가문의-경합-p3",
+      "text": {
+        "en": "These armed recovery squads competed in performance by occupying restart triggers ahead of others to capture intact chassis, or disabling them on the spot to strip the core modules.",
+        "ko": "이들 무장 회수 반은 재기동 개시점을 남보다 먼저 점거하여 온전한 기체를 포획하거나, 즉시 무력화하여 핵심 모듈을 해체하는 방식으로 실적을 다툰다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "m040-몬스터-배치의-현장-적용",
+      "text": {
+        "en": "Field Application of the M040 Monster Deployment",
+        "ko": "M040 몬스터 배치의 현장 적용"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "m040-몬스터-배치의-현장-적용-p1",
+      "text": {
+        "en": "The lost-chassis swarm included in the M040 deployment appeared in sequence at the field the moment the trigger fired in the designated sealed conduit.",
+        "ko": "M040 배치에 포함된 로스트 기체 군집은 지정된 봉인 관로에서 개시점이 작동하는 순간 순차적으로 현장에 모습을 드러낸다."
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "m040-몬스터-배치의-현장-적용-list2",
+      "items": [
+        {
+          "en": "Search vanguard: G25 Lantern-Ant Swarm chassis spread a broad front along the corridor's forward side, minutely detecting intruder responses.",
+          "ko": "수색 전열: G25 등불개미군 기체들이 통로 앞쪽에 전력 진을 넓게 치고 침입자 반응을 미세하게 검출해 낸다."
+        },
+        {
+          "en": "Heavy mount: G26 Fossil-Roar Swarm chassis heavily blocked the stronghold crossings, physically repelling mid-range approach.",
+          "ko": "중장 거치대: G26 화석포효군 기체가 거점 교차로를 묵직하게 막아서며 중거리 접근을 물리적으로 튕겨낸다."
+        },
+        {
+          "en": "Flooded geometric net: G27 Deep-Trilobite Swarm layered seals over the waterway below the sluice gallery, plugging the enemy's flanking and escape routes.",
+          "ko": "침수 기하망: G27 심층삼엽군이 수문 갤러리 아래쪽 수로를 겹겹이 봉쇄하여 적의 우회 및 탈출 경로를 틀어막는다."
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "협상-창-인터페이스-활용",
+      "text": {
+        "en": "Using the Negotiation-Window Interface",
+        "ko": "협상 창 인터페이스 활용"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "협상-창-인터페이스-활용-p1",
+      "text": {
+        "en": "An explorer who discovered the control terminal of a strange lost chassis at the field, or met another house's armed recovery squad, could make active use of the negotiation-window interface.",
+        "ko": "탐사 대원은 현장에서 낯선 로스트 기체의 제어 단말을 발견하거나, 혹은 다른 가문의 무장 회수 반을 마주쳤을 때 협상 창 인터페이스를 적극적으로 활용할 수 있다."
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "협상-창-인터페이스-활용-list2",
+      "items": [
+        {
+          "en": "Presenting a protocol card: by presenting a wireless card holding faint remains of the pre-collapse upper licensing signal, the combat routines of that line, that trigger, that command bundle could be temporarily stilled. But it was no magic wand subduing the whole machine. It was useless across lines, and a broken receiver or an expired cipher key did not pass either. Whether solving a hacking puzzle could unconditionally stand in for the card was also not decided lightly.",
+          "ko": "프로토콜 카드 제출: 붕괴 이전 상위 인가 신호가 희미하게 남은 무선 카드를 제시해, 해당 라인·해당 개시점·해당 명령 묶음의 전투 루틴을 일시적으로 잠재울 수 있다. 하지만 기계 전체를 복종시키는 마법의 지팡이는 아니다. 라인이 다르면 소용없고, 수신기가 파손되었거나 만료된 암호 키 역시 통하지 않는다. 해킹 퀴즈를 푼다고 무조건 카드를 대신할 수 있는지 여부도 섣불리 단정 짓지 않는다."
+        },
+        {
+          "en": "Exchanging parts and resources: handing over replacement parts or power cells for a stopped chassis, and in return obtaining safe detour passage. The cells handed over still followed the natural yoke of charging and aging.",
+          "ko": "부품 및 자원 교환: 멈춰선 기체를 위해 교체용 부품이나 동력 셀을 내어주고, 대신 안전한 우회 통행 권한을 얻어낸다. 넘겨준 셀은 여전히 충전과 노화의 자연스러운 굴레를 따른다."
+        },
+        {
+          "en": "House negotiation and share division: upon meeting another recovery squad, opening the negotiation window to wisely divide the relic-stripping shares, or seeking a way through the zone while avoiding armed conflict altogether.",
+          "ko": "가문 협상과 지분 분배: 다른 회수 반과 맞닥뜨렸을 때 협상 창을 열어 유물 해체 지분을 슬기롭게 나누거나, 아예 무력 충돌을 피하며 구역을 통과할 길을 모색한다."
+        },
+        {
+          "en": "Entering an emergency stop code: solving a complex hacking puzzle or entering a password at a terminal to force-stop the specific chassis group linked to that terminal. Hacking one terminal did not stop the whole city's robots.",
+          "ko": "비상 중지 코드 입력: 단말에 복잡한 해킹 퀴즈를 풀거나 비밀번호를 입력해 그 단말과 연결된 특정 기체 그룹을 강제 정지시킨다. 단말 하나를 해킹했다고 해서 도시 전체의 로봇이 멈추지는 않는다."
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "실측과-창작-구분-표",
+      "text": {
+        "en": "The Measured-and-Creation Division Table",
+        "ko": "실측과 창작 구분 표"
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "실측과-창작-구분-표-table1",
+      "columns": [
+        {
+          "en": "Item",
+          "ko": "구분 항목"
+        },
+        {
+          "en": "Measured concept",
+          "ko": "실측 개념 (Measured)"
+        },
+        {
+          "en": "Fictional layer",
+          "ko": "창작 레이어 (Fictional)"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Design philosophy",
+            "ko": "설계 사상"
+          },
+          {
+            "en": "Biomimetic engineering; insect and arthropod structures",
+            "ko": "생물모방(Biomimetics) 공학, 곤충 및 절지동물 구조"
+          },
+          {
+            "en": "The G25/G26/G27 line names and detail submodels. Not a 2026 deployment verification",
+            "ko": "G25/G26/G27 독자 라인 명칭 및 세부 하부 모델. 2026 배치 검증 아님"
+          }
+        ],
+        [
+          {
+            "en": "Terrain adaptation",
+            "ko": "지형 적응"
+          },
+          {
+            "en": "Hard-terrain multi-leg movement; flooded underwater conduit inspection mechanisms",
+            "ko": "험지 다지 이동, 침수 수중 관로 검사 메커니즘"
+          },
+          {
+            "en": "The S01~S16 specific sealed gallery and test-track coordinates",
+            "ko": "S01~S16 특정 봉인 갤러리 및 시험 트랙 좌표"
+          }
+        ],
+        [
+          {
+            "en": "Control method",
+            "ko": "제어 방식"
+          },
+          {
+            "en": "Distributed swarm control, sensor-based autonomous patrol algorithms",
+            "ko": "분산 군집 제어, 센서 기반 자율 순찰 알고리즘"
+          },
+          {
+            "en": "The permanent-ossification narrative of pre-collapse routines through server severance",
+            "ko": "서버 단절로 인한 붕괴 이전 루틴의 영구 고착 서사"
+          }
+        ],
+        [
+          {
+            "en": "Economic elements",
+            "ko": "경제 요소"
+          },
+          {
+            "en": "Parts recycling; the charging and aging physics of cells",
+            "ko": "부품 재활용, 축전지의 충전·노화 물리"
+          },
+          {
+            "en": [
+              {
+                "text": "The relic-parts recovery contest of the Magok Test-Line, Guro Digital Complex Battery, and Yeongdeungpo Sluice Houses (HC22/HC17/HP01). The real companies' "
+              },
+              {
+                "text": "deployment",
+                "strong": true
+              },
+              {
+                "text": " is fiction"
+              }
+            ],
+            "ko": [
+              {
+                "text": "마곡시험선가·구로디지털단지전지가·영등포수문가(HC22/HC17/HP01)의 유물 부품 회수 쟁탈. 실회사 "
+              },
+              {
+                "text": "배치",
+                "strong": true
+              },
+              {
+                "text": "는 허구"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "en": "Restart triggers",
+            "ko": "재기동 트리거"
+          },
+          {
+            "en": "External input voltage fluctuation and sensor-signal inflow mechanisms",
+            "ko": "외부 입력 전압 변동 및 센서 신호 유입 메커니즘"
+          },
+          {
+            "en": "The sealed gallery barrier opening and restart-trigger narratives",
+            "ko": "봉인 갤러리 차단막 개방 및 재기동 개시점 서사"
+          }
+        ],
+        [
+          {
+            "en": "Interface",
+            "ko": "인터페이스"
+          },
+          {
+            "en": "Machine control boards and wired/wireless protocol connection standards",
+            "ko": "기계 제어반 및 유무선 프로토콜 접속 표준"
+          },
+          {
+            "en": "The negotiation window, protocol cards. Cards are not universal control",
+            "ko": "협상 창, 프로토콜 카드. 카드는 만능 제어가 아님"
+          }
+        ],
+        [
+          {
+            "en": "Deployed units",
+            "ko": "배치 개체"
+          },
+          {
+            "en": "Search, heavy repair, conduit-maintenance equipment categories",
+            "ko": "수색, 중장 수리, 관로 유지보수 장비 카테고리"
+          },
+          {
+            "en": "The M040 monster deployment swarm and designated storage sections",
+            "ko": "M040 몬스터 배치 군집 및 지정 격납 구획"
+          }
+        ],
+        [
+          {
+            "en": "Recovery output",
+            "ko": "회수 산출"
+          },
+          {
+            "en": "The state and compatibility of reusable parts is a per-equipment research subject. Horizon is game design comparison material",
+            "ko": "재사용 가능한 부품의 상태·호환성은 실제 장비별 조사 대상. 호라이즌은 게임 설계 비교 자료"
+          },
+          {
+            "en": "Seoul's recovered-goods assignment and the equipment·trap·weapon linkage is creation. The original's crafting system is not used as real manufacturing grounds",
+            "ko": "서울의 회수품 배정과 장비·함정·무기 연결은 창작. 원작의 제작 체계를 현실 제조 근거로 쓰지 않음"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "실측과-창작-구분-표-p2",
+      "text": {
+        "en": [
+          {
+            "text": "Sources (viewed 2026-09-12): "
+          },
+          {
+            "text": "Horizon Forbidden West, PlayStation",
+            "href": "https://www.playstation.com/en-us/games/horizon-forbidden-west/"
+          },
+          {
+            "text": " — only the introductory sentence that weapons, equipment, and traps are made directly from recovered parts is borrowed. This game's setting does not prove Seoul's sealing coordinates. How far biomimetic disaster robots were actually deployed in Korea in 2026 is an area needing "
+          },
+          {
+            "text": "further research",
+            "strong": true
+          },
+          {
+            "text": ". Real companies' product catalogs are not used as proof the lost lines existed."
+          }
+        ],
+        "ko": [
+          {
+            "text": "출처 (열람 2026-09-12): "
+          },
+          {
+            "text": "Horizon Forbidden West, PlayStation",
+            "href": "https://www.playstation.com/en-us/games/horizon-forbidden-west/"
+          },
+          {
+            "text": " — 회수 부품으로 무기와 장비, 덫을 직접 만든다는 소개 문장까지만 차용한다. 이 게임 설정이 서울의 봉인 좌표를 증명하지는 않는다. 생물모방 방재 로봇이 2026년 국내에 실제로 어느 정도 배치되었는지는 "
+          },
+          {
+            "text": "추가 조사가 필요",
+            "strong": true
+          },
+          {
+            "text": "한 영역이다. 실제 회사의 제품 카탈로그를 로스트 라인이 실재했다는 증거로 쓰지는 않는다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "연결",
+      "text": {
+        "en": "Links",
+        "ko": "연결"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "연결-list1",
+      "items": [
+        {
+          "en": [
+            {
+              "text": "The hostile ecology compendium",
+              "link": {
+                "domain": "bestiary",
+                "slug": "Hostile-Ecology-Index"
+              }
+            }
+          ],
+          "ko": [
+            {
+              "text": "적대 생태 총람",
+              "link": {
+                "domain": "bestiary",
+                "slug": "Hostile-Ecology-Index"
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "text": "The Seoul ecology and variant codex",
+              "link": {
+                "domain": "bestiary",
+                "slug": "Hostile-Ecology-Index"
+              }
+            }
+          ],
+          "ko": [
+            {
+              "text": "서울 생태·변이 도감",
+              "link": {
+                "domain": "bestiary",
+                "slug": "Hostile-Ecology-Index"
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "text": "The operating houses",
+              "link": {
+                "domain": "root",
+                "slug": "Operating-Houses"
+              }
+            }
+          ],
+          "ko": [
+            {
+              "text": "운영가문",
+              "link": {
+                "domain": "root",
+                "slug": "Operating-Houses"
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "text": "The Sixteen States of Seoul",
+              "link": {
+                "domain": "factions",
+                "slug": "Sixteen-States"
+              }
+            }
+          ],
+          "ko": [
+            {
+              "text": "서울 십육국",
+              "link": {
+                "domain": "factions",
+                "slug": "Sixteen-States"
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "text": "The arms and technology of this era",
+              "link": {
+                "domain": "goods",
+                "slug": "Era-Arms-and-Tech-Level"
+              }
+            }
+          ],
+          "ko": [
+            {
+              "text": "이 시대의 기술과 무구",
+              "link": {
+                "domain": "goods",
+                "slug": "Era-Arms-and-Tech-Level"
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "text": "The Scenario Timeline",
+              "link": {
+                "domain": "chronology",
+                "slug": "Scenario-Timeline"
+              }
+            }
+          ],
+          "ko": [
+            {
+              "text": "연표",
+              "link": {
+                "domain": "chronology",
+                "slug": "Scenario-Timeline"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "염출-기술유물-신화",
+      "text": {
+        "en": "Improvisation Tech and the Relic Myth",
+        "ko": "염출 기술·유물 신화"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "염출-기술유물-신화-p1",
+      "text": {
+        "en": "In later Seoul an old lost tech did not become a relic merely because years had passed. The divinization of wreckage was a solemn rite worshipping as god the old facilities that had done their work. Improvisation tech showed its face only within this frame of deifying machines. The axes added atop it were three: machine worship, consumption rites, and the deification of old-world symbols. The chief materials offered in the rites were rolling stock, old substations, severed announcements, faded station marks, and old currency.",
+        "ko": "후세 서울에서 낡은 로스트 테크는 단지 세월이 흘렀다는 이유만으로 성물이 되지 않는다. 잔해 신앙화는 기능을 다한 옛 시설을 신으로 추앙하는 엄숙한 의례다. 염출 기술은 이처럼 기계를 신격화하는 틀 안에서만 그 모습을 드러낸다. 여기에 덧붙는 축은 기계 숭배, 소비 의례, 구세계 상징 신격화까지 세 가지다. 의례에 바쳐지는 주된 재료는 전동차와 낡은 변전소, 끊긴 안내방송, 그리고 색이 바랜 역 표지와 옛 화폐다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "염출-기술유물-신화-p2",
+      "text": {
+        "en": "The glory of the old state had now receded into legend. Over that vacancy the local successor polities fought fiercely over the old wreckage. Regional division sprouted first not in grand ideology but in gu and station and route units, and dynasties and vassal powers inherited in turn the jurisdiction of these rites.",
+        "ko": "옛 국가의 영광은 이제 전설로 물러났다. 그 빈자리를 두고 지역 후계 정치체들이 낡은 잔해를 놓고 치열하게 다툰다. 지역 분열은 거창한 이념보다 구와 역, 그리고 노선 단위에서 먼저 싹트며, 왕조나 봉신 세력은 이러한 의례의 관할권을 차례로 상속받는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "염출-기술유물-신화-p3",
+      "text": {
+        "en": "The skeleton of the three lost lines was not changed carelessly. The G25 Lantern-Ant Swarm firmly remained the line charged with search, the G26 Fossil-Roar Swarm the line mending heavy plant, the G27 Deep-Trilobite Swarm the line examining deep conduits. Faith lodging in them did not change those roles. They merely read different gods into the same chassis.",
+        "ko": "세 로스트 라인의 뼈대는 함부로 바꾸지 않는다. G25 등불개미군은 수색을 맡은 라인으로 굳건히 남고, G26 화석포효군은 무거운 장비를 고치는 라인, G27 심층삼엽군은 깊은 관로를 살피는 라인이다. 신앙이 깃든다고 해서 이 역할이 달라지지는 않는다. 단지 같은 기체를 바라보며 서로 다른 신으로 읽어낼 뿐이다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "기계-숭배",
+      "text": {
+        "en": "Machine Worship",
+        "ko": "기계 숭배"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "기계-숭배-p1",
+      "text": {
+        "en": "Machine worship enshrined the huge bodies of depots and substations as sacred flesh. Even the act of stripping and recovering something was held a devout ritual, and pilgrimage meant no more than circling the dark maintenance shed with care. Raising a machine back to life was sometimes the great occasion on which a faction split.",
+        "ko": "기계 숭배는 차량기지와 변전소의 거대한 몸집을 거룩한 신체로 모신다. 무언가를 뜯어내 회수하는 일조차 경건한 의식으로 여겨지며, 순례란 다름 아닌 어두운 정비고를 한 바퀴 정성스레 도는 행위를 뜻한다. 기계를 다시 살려내는 재기동은 때로 분파가 쪼개지는 커다란 계기가 되기도 한다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "기계-숭배-p2",
+      "text": {
+        "en": "The heavy car bodies and old bogies of rolling stock were living flesh itself. The G26 hydraulic underbody lying on the S11 depot siding was revered as the joint that joined this flesh. The thick busbars and breakers of the substations were a giant breath. The G25's old autonomous charging terminals and heavy charging modules became the relics carefully carrying that breath. Here to tear out parts wantonly meant murder, and tending with oil was itself a holy rite.",
+        "ko": "전동차의 무거운 차체와 낡은 대차는 살아 움직이는 신체 그 자체다. S11 차량기지 측선에 놓인 G26 유압 하체는 이 신체를 이어주는 관절로 추앙받는다. 변전소의 굵은 모선과 차단기는 거대한 숨결이다. G25의 낡은 자율 충전 단자와 무거운 축전 모듈은 그 숨결을 조심스레 옮기는 성물이 된다. 이곳에서 함부로 부품을 뜯어내는 짓은 곧 살해를 뜻하며, 정성스레 기름을 치는 정비는 곧 거룩한 제사가 된다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "기계-숭배-p3",
+      "text": {
+        "en": "The branches of the individual faiths divided into the Wheel Rite and the Busbar Rite. The Wheel Rite believed firmly that as long as the heavy wheels rolled, that route's life continued. The Busbar Rite believed only the stations where a faint light remained survived to the end.",
+        "ko": "개별 신앙의 갈래는 차륜제와 모선제로 나뉜다. 차륜제는 무거운 바퀴가 굴러가는 한 그 노선의 생명도 이어간다고 굳게 믿는다. 반면 모선제는 희미하게나마 불빛이 남은 역만이 끝까지 살아남는다고 믿는다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "소비-의례",
+      "text": {
+        "en": "Consumption Rites",
+        "ko": "소비 의례"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "소비-의례-p1",
+      "text": {
+        "en": "Consumption rites were the ritual of setting on the altar old currency and worn circulation relics that had lost their meaning. The exchange acts common before the collapse transformed into myth. Card-tapping, coin-inserting, ration-receiving gestures — plain hand movements — now became desperate prayer.",
+        "ko": "소비 의례는 의미를 잃은 옛 화폐와 낡은 유통 유물을 제단에 올리는 의식이다. 붕괴 이전 흔히 이뤄지던 교환 행위가 곧 신화로 둔갑한다. 카드를 찍고, 돈을 넣고, 물건을 배급하는 평범한 손짓이 이제는 간절한 기도가 된다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "소비-의례-p2",
+      "text": {
+        "en": "Banknotes, rolling coins, and plastic transit cards were the finest offerings. The cell, drive, and sensor trades that ran the underground parts economy were read within this lineage as a just ritual distribution. The tap of a card at a gate was both a request for passage and a tribute offered to god. The HP01 house's auctioning of parts might elsewhere be blasphemous desecration; within this lineage it passed as a formal rite.",
+        "ko": "지폐와 굴러다니는 동전, 플라스틱 교통 카드가 가장 훌륭한 제물이다. 지하 부품 경제를 굴러가게 하는 축전이나 구동부, 센서 거래 역시 이 계열 안에서는 정당한 제사 분배로 읽힌다. 개찰구에 카드를 틱 하고 찍는 동작은 통행을 허락받는 동시에 신에게 바치는 헌금이다. HP01 가문이 부품을 경매에 부치는 행위가 다른 곳에서는 불경스러운 신성 모독일지 몰라도, 이 계열 안에서는 엄연한 정식 의례로 통한다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "소비-의례-p3",
+      "text": {
+        "en": "The branches of the individual faiths divided into the Stamp Rite and the Gate Rite. The Stamp Rite believed the stamp fixed in the locked box set the value of things. The Gate Rite held that the very instant of passing the breaker was the act that carried on a momentary life.",
+        "ko": "개별 신앙의 갈래는 찍힘제와 개찰제로 나뉜다. 찍힘제는 보관함을 굳게 잠근 도장이 곧 물건의 값을 정한다고 믿는다. 반면 개찰제는 차단기를 통과하는 그 순간이 찰나의 목숨을 이어가는 행위라고 여긴다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "구세계-상징-신격화",
+      "text": {
+        "en": "The Deification of Old-World Symbols",
+        "ko": "구세계 상징 신격화"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "구세계-상징-신격화-p1",
+      "text": {
+        "en": "The deification of old-world symbols upheld as god the voices that had flowed from station marks and announcements. The gaudy route colors, the old station nameplates, and the dark electric timetables remained as faces that had watched the creation. And the severed old announcements, still living and breathing somewhere and speaking, received worship like a god.",
+        "ko": "구세계 상징 신격화는 역 표지와 안내방송에서 흘러나오던 목소리를 신으로 떠받든다. 알록달록한 노선색과 낡은 역명판, 불 꺼진 전광 시각표가 창세를 지켜본 얼굴로 남는다. 그리고 끊겨버린 옛 안내방송은 여전히 어딘가에서 살아 숨 쉬며 말을 건네는 신처럼 사람들에게 숭배를 받는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "구세계-상징-신격화-p2",
+      "text": {
+        "en": "The G25's sensor modules and protocol cards were the faint echoes that voice had left. The underwater ultrasound the G27 emitted was likewise read as another announcement heard from within the water. If someone moved a station mark elsewhere, they believed the sanctuary itself moved whole to that place. To erase a mark wantonly was therefore held the impiety of erasing the god's very existence.",
+        "ko": "G25의 센서 모듈이나 프로토콜 카드는 그 목소리가 남긴 희미한 잔향이다. G27이 내뿜는 수중 초음파 역시 물속에서 들려오는 또 다른 안내방송으로 읽힌다. 누군가 역 표지를 다른 곳으로 옮기면 성소 역시 그곳으로 통째로 옮겨간다고 믿는다. 따라서 표지를 함부로 지우는 짓은 신의 존재 자체를 지워버리는 불경으로 간주된다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "구세계-상징-신격화-p3",
+      "text": {
+        "en": "The names of the individual faiths divided into the Nameplate Rite and the Announcement Rite. The Nameplate Rite took even the places where letters faintly remained as intact national borders. The Announcement Rite made the whole space where the voice gently rang a sacred altar.",
+        "ko": "개별 신앙의 이름은 역명판제와 안내제로 나뉜다. 역명판제는 흐릿하게나마 글자가 남은 곳까지를 온전한 국경으로 여긴다. 반면 안내제는 목소리가 잔잔하게 울려 퍼지는 공간 전체를 신성한 제단으로 삼는다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "유물이-신앙-대상이-되는-규칙",
+      "text": {
+        "en": "The Rules by Which a Relic Became an Object of Faith",
+        "ko": "유물이 신앙 대상이 되는 규칙"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "유물이-신앙-대상이-되는-규칙-p1",
+      "text": {
+        "en": "A mass of scrap was not enshrined merely because time had long passed. One of the three axes — machine worship, consumption rites, symbol deification — had to be clearly knotted into the chain of deification, and the conditions below carefully met.",
+        "ko": "단지 시간이 오래 흘렀다는 이유만으로 고철 덩어리를 성물로 떠받들지는 않는다. 기계 숭배, 소비 의례, 상징 신격화라는 세 가지 축 가운데 하나라도 신격화의 고리가 분명하게 얽혀 있어야 하며, 아래 조건을 꼼꼼히 충족해야 한다."
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "유물이-신앙-대상이-되는-규칙-list2",
+      "ordered": true,
+      "items": [
+        {
+          "en": "It had to be Seoul material\nRolling stock, a substation, an announcement, a station mark, or old currency — or at least bearing their traces. The lost line's modules were acknowledged as relics only when firmly attached to this core material.",
+          "ko": "서울 재료일 것\n전동차, 변전소, 안내방송, 역 표지, 옛 화폐 중 하나이거나 최소한 그 흔적을 품어야 한다. 로스트 라인의 모듈은 이 핵심 재료에 단단히 들러붙을 때에만 비로소 성물로 인정받는다."
+        },
+        {
+          "en": "A living livelihood had to depend on its function\nLighting that brightened the dark, the water of life, safe passage, and watch duty had to hang deep on that relic. Doctrine did not fall off an old notice board on the wall. It flowered hot in the concourse where people breathed and sweated, before the sluices, in the crowded unloading yards.",
+          "ko": "산 생업이 그 기능에 기대 있을 것\n어둠을 밝히는 조명, 생명수인 급수, 안전한 통행, 그리고 경계 근무가 그 유물에 깊이 걸려 있어야 한다. 교리는 벽에 붙은 낡은 게시판에서 뚝 떨어지지 않는다. 사람들이 숨 쉬고 땀 흘리는 대합실과 수문 앞, 붐비는 하역장에서 비로소 뜨겁게 피어난다."
+        },
+        {
+          "en": "Re-control had to be blocked so that it stood in for god\nWith the servers cut and even the vault holding the drawings firmly shut, the remaining machines became mere masses of cipher with no way of interpretation. It was before this great wall of interpretation that people's desperate deification sprouted.",
+          "ko": "재제어가 막혀 신을 대신할 것\n서버가 끊기고 도면이 잠긴 금고마저 굳게 막히면, 남은 기계는 그저 도무지 해석할 길 없는 암호 덩어리가 된다. 바로 이 거대한 해석의 벽 앞에서 사람들의 간절한 신격화가 싹을 틔운다."
+        },
+        {
+          "en": "Survival in the same place had to repeat\nOnly a community that had clung to one module and stubbornly survived three times or more called that mass of iron a relic. A single lucky chance remained merely a useful trading item.",
+          "ko": "같은 자리의 생존이 반복될 것\n하나의 모듈에 기대어 세 번 이상 끈질기게 살아남은 공동체만이 그 쇳덩어리를 성물이라 부른다. 단 한 번의 우연한 행운은 그저 쓸만한 거래 품목으로 남길 뿐이다."
+        },
+        {
+          "en": "A place-power had to claim jurisdiction\nThe successor polities split by route, gu, and station divided custody and pilgrimage manner and strict taboo each in their own way. Dynasties and the vassal powers following them inherited even the jurisdiction of the rites and hardened their power. The recovery squads stripping parts without restraint and the faiths defending the old relics to the end collided roughly inside these dark sealed galleries.",
+          "ko": "장소 세력이 관할을 주장할 것\n노선과 구, 그리고 역 단위로 쪼개진 후계 정치체들이 보관과 순례 방식, 엄격한 금기를 제각각 나눈다. 왕조와 이를 따르는 봉신 세력은 의례 관할권까지 상속받아 권력을 굳힌다. 부품을 거침없이 뜯어내려는 회수 반과 낡은 성물을 끝내 지키려는 신앙의 믿음이 이 어두컴컴한 봉인 갤러리 안에서 거칠게 부딪친다."
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "신앙-계열별-유물-해석",
+      "text": {
+        "en": "Relic Interpretation by Faith Lineage",
+        "ko": "신앙 계열별 유물 해석"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "신앙-계열별-유물-해석-p1",
+      "text": {
+        "en": "Faith was firmly stacked in three strata. At the top stood the great families of faith (lineages); beneath them sat the differing individual faiths; at the very bottom waited concrete doctrines and exacting lessons. This endlessly splitting process of division was itself the unit that edited Seoul's rules anew.",
+        "ko": "신앙은 세 개의 층위로 단단히 쌓여 있다. 가장 위에는 거대한 신앙 가족(계열)이 있고, 그 아래에 각기 다른 개별 신앙들이 자리한다. 맨 밑바닥에는 구체적인 교리와 깐깐한 교훈이 버티고 있다. 이렇게 끊임없이 쪼개지고 갈라지는 분열 과정이 곧 서울의 규칙을 새롭게 편집하는 단위가 된다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "신앙-계열별-유물-해석-p2",
+      "text": {
+        "en": "The machine-worship family read the old rolling stock, the substations, and even the G26's heavy drives together as one sacred body. The consumption-rite family accepted crumpled currency, gate passage, and even secret parts auctions as one solemn rite. The symbol-deification family took the severed announcements, the faded station marks, and the sharp sensor signals of the G25 and G27 as a single line of voice the creator had left.",
+        "ko": "기계 숭배 가족은 낡은 전동차와 변전소, 그리고 G26의 무거운 구동부까지 하나의 신성한 몸으로 아울러 읽는다. 소비 의례 가족은 구겨진 화폐와 개찰구 통과, 은밀한 부품 경매마저 하나의 장엄한 제사로 받아들인다. 상징 신격화 가족은 끊긴 안내방송과 바랜 역 표지, G25·G27의 날카로운 센서 신호를 창조주가 남긴 한 줄기 목소리로 여긴다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "신앙-계열별-유물-해석-p3",
+      "text": {
+        "en": "The very same G25 charging module was a sublime breath to the Busbar Rite, a costly offering to the Stamp Rite, and the box where the holy voice dwelt to the Announcement Rite. The same G26 hydraulic underbody was the joint bridging legs to the Wheel Rite but a fearsome judgment punishing those who passed without right to the Gate Rite. Even the G27's ultrasound was, to the Busbar Rite, merely wiring laid underwater, while the Announcement Rite read it as a distant broadcast ringing through the deep water.",
+        "ko": "똑같은 G25 축전 모듈이라도 모선제에게는 숭고한 숨결이고, 찍힘제에게는 값비싼 제물이며, 안내제에게는 거룩한 목소리가 머무는 상자다. 똑같은 G26 유압 하체 역시 차륜제에게는 다리를 잇는 관절이지만, 개찰제에게는 함부로 통행하는 자를 벌하는 무서운 심판으로 다가온다. 같은 G27 초음파조차 모선제에게는 그저 물속에 깔린 전선일 뿐이나, 안내제에게는 깊은 수중에서 울려 퍼지는 아득한 방송으로 해석된다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "신앙-계열별-유물-해석-p4",
+      "text": {
+        "en": "The public faith showed clearly in the red taboo phrases written on the old subway notice boards. But the hidden faith flipped the very same phrases into entirely different secret lessons. If one vassal house quietly overlaid the Busbar Rite's substation altar and the Nameplate Rite's pilgrimage inside the same gallery, then though the relic before the eyes was one, the jurisdiction governing it split in two.",
+        "ko": "공개된 신앙은 지하철역 낡은 게시판에 적힌 붉은 금기 문구로 또렷하게 나타난다. 하지만 숨어 있는 신앙은 똑같은 문구를 전혀 다른 은밀한 교훈으로 뒤집어 읽어낸다. 만약 한 봉신 가문이 모선제의 변전 제단과 역명판제의 순례를 같은 갤러리 안에 슬쩍 겹쳐 둔다면, 눈앞에 놓인 성물은 하나일지라도 그것을 다스리는 관할은 둘로 쪼개지고 만다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "신앙-계열별-유물-해석-p5",
+      "text": {
+        "en": "However brilliantly such improvisation succeeded, the kinds of lost lines themselves did not suddenly increase. The names of faith were only covers laid over cold metal. The sturdy skeleton of the tangled genealogies silently followed the principles of the three lost lines written in this document.",
+        "ko": "이처럼 염출이 제아무리 기막히게 성공하더라도 로스트 라인의 종류 자체가 갑자기 늘어나지는 않는다. 신앙의 이름은 단지 차가운 금속 위에 덮어씌운 덮개에 불과하다. 얽히고설킨 계보의 튼튼한 뼈대는 이 문서에 적힌 세 가지 로스트 라인의 원칙을 묵묵히 따른다."
+      }
+    }
+  ],
+  "data": {}
+}

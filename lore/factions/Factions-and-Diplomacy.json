@@ -1,0 +1,757 @@
+{
+  "version": 1,
+  "domain": "factions",
+  "id": "DOC:Factions-and-Diplomacy",
+  "slug": "factions-and-diplomacy",
+  "status": "draft",
+  "tense": {
+    "en": "past",
+    "ko": "past"
+  },
+  "provenance": {
+    "original_anchor": "lore/factions/Factions-and-Diplomacy.md",
+    "original_hash": "553ed359c2025872d415e62e529678398e8ae22912810fda51912600c1698a29",
+    "history": [
+      "Korean lore/factions/Factions-and-Diplomacy.md SHA-256 553ed359c2025872d415e62e529678398e8ae22912810fda51912600c1698a29.",
+      "English lore/factions/Factions-and-Diplomacy.en.md SHA-256 2961cf2ab8107b65a00736d0073980e5eb6e6c3bb7f39b362fd94d8247201a2a; copied verbatim, no translation written."
+    ]
+  },
+  "source": {
+    "kind": "original-fiction",
+    "refs": [
+      "lore/factions/Factions-and-Diplomacy.md",
+      "lore/factions/Factions-and-Diplomacy.en.md"
+    ]
+  },
+  "locales": {
+    "en": {
+      "title": "Powers and Diplomacy",
+      "summary": "A wiki diagram dated 2026-09-07.",
+      "tense": "past"
+    },
+    "ko": {
+      "title": "세력과 외교",
+      "summary": "2026-09-07 위키 도표.",
+      "tense": "past"
+    }
+  },
+  "content": [
+    {
+      "kind": "heading",
+      "anchor": "세력과-외교",
+      "text": {
+        "en": "Powers and Diplomacy",
+        "ko": "세력과 외교"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "세력과-외교-p1",
+      "text": {
+        "en": "A wiki diagram dated 2026-09-07. The position, direction, and field-of-view cell drawings were the explanation of that day — a flat diagram for documentation, not an actual game screen.",
+        "ko": "2026-09-07 위키 도표. 위치·방향·시야 칸 그림은 당시 설명이다. 문서용 평면도이며 실제 게임 화면이 아니다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "세력과-외교-p2",
+      "text": {
+        "en": "Negotiation between powers and the grant of passage rights were decided by the trust, reputation, and legitimacy of the route and station nodes.",
+        "ko": "세력 간 협상과 통행권 부여는 노선과 역 노드의 신뢰·평판·정통성으로 결정한다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "세력과-외교-p3",
+      "text": {
+        "en": "Politics was not one favorability number but a graph of personal trust, public reputation, local legitimacy, deliverable promises, and collective grievances. The numbers in the tables were design assumptions.",
+        "ko": "정치는 하나의 호감도가 아니라 개인 신뢰, 대중 평판, 지역별 정통성, 이행 가능한 약속과 집단 불만의 그래프다. 표의 수치는 설계 가정으로 둔다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "입력과-출력",
+      "text": {
+        "en": "Inputs and Outputs",
+        "ko": "입력과 출력"
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "입력과-출력-table1",
+      "columns": [
+        {
+          "en": "Input",
+          "ko": "입력"
+        },
+        {
+          "en": "Range · default",
+          "ko": "범위·기본값"
+        },
+        {
+          "en": "Output",
+          "ko": "출력"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Trust `T[A,B]`",
+            "ko": "신뢰 `T[A,B]`"
+          },
+          {
+            "en": "-100~100, default 0",
+            "ko": "-100~100, 기본 0"
+          },
+          {
+            "en": "Cooperation between persons and organs",
+            "ko": "개인·기관 간 협조"
+          }
+        ],
+        [
+          {
+            "en": "Reputation `R[F,a]`",
+            "ko": "평판 `R[F,a]`"
+          },
+          {
+            "en": "-100~100, default 0",
+            "ko": "-100~100, 기본 0"
+          },
+          {
+            "en": "Public evaluation by audience",
+            "ko": "청중별 공개 평가"
+          }
+        ],
+        [
+          {
+            "en": "Legitimacy `L[F,n,k]`",
+            "ko": "정통성 `L[F,n,k]`"
+          },
+          {
+            "en": "0~100, new local claim 20",
+            "ko": "0~100, 현지 신규 주장 20"
+          },
+          {
+            "en": "Approval by ground — food, power, safety",
+            "ko": "식량·전력·안전 등 근거별 승인"
+          }
+        ],
+        [
+          {
+            "en": "Political capital `PC`",
+            "ko": "정치 자본 `PC`"
+          },
+          {
+            "en": "0~100, default 0",
+            "ko": "0~100, 기본 0"
+          },
+          {
+            "en": "Cost of councils, guarantees, coalition action",
+            "ko": "회의·보증·연합 행동 비용"
+          }
+        ],
+        [
+          {
+            "en": "Grievance `G`",
+            "ko": "불만 `G`"
+          },
+          {
+            "en": "0~100, default 0",
+            "ko": "0~100, 기본 0"
+          },
+          {
+            "en": "Petition, strike, blockade, secession pressure",
+            "ko": "청원·파업·봉쇄·분리 압력"
+          }
+        ],
+        [
+          {
+            "en": "Solidarity `C`",
+            "ko": "결속 `C`"
+          },
+          {
+            "en": "0~100, default 0",
+            "ko": "0~100, 기본 0"
+          },
+          {
+            "en": "Capacity to organize collective action",
+            "ko": "집단 행동을 조직하는 능력"
+          }
+        ],
+        [
+          {
+            "en": "Leverage `V`",
+            "ko": "지렛대 `V`"
+          },
+          {
+            "en": "0~1, default 0",
+            "ko": "0~1, 기본 0"
+          },
+          {
+            "en": "Real means to coerce the counterpart",
+            "ko": "상대를 강제할 실질 수단"
+          }
+        ],
+        [
+          {
+            "en": "Reliability `Rel`",
+            "ko": "이행 신뢰도 `Rel`"
+          },
+          {
+            "en": "0~1",
+            "ko": "0~1"
+          },
+          {
+            "en": "Proposal acceptance and contract risk",
+            "ko": "제안 수용과 계약 위험"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "계산-규칙",
+      "text": {
+        "en": "Calculation Rules",
+        "ko": "계산 규칙"
+      }
+    },
+    {
+      "kind": "code",
+      "anchor": "계산-규칙-code1",
+      "language": "text",
+      "text": {
+        "en": "Rel = clamp(1 - 0.50*shortfall - 0.30*isolation - 0.40*overreach, 0, 1)\ntrust-change = clamp(sum(event-impact * credibility), -25, 25)\nT' = clamp(T + trust-change + baseline-shift, -100, 100)\npressure = clamp(0.45*grievance + 0.35*solidarity + 0.20*(100*leverage), 0, 100)",
+        "ko": "Rel = clamp(1 - 0.50*부족 - 0.30*고립 - 0.40*과확장, 0, 1)\n신뢰변화 = clamp(sum(사건영향 * 신빙성), -25, 25)\nT' = clamp(T + 신뢰변화 + 기준선이동, -100, 100)\n압력 = clamp(0.45*불만 + 0.35*결속 + 0.20*(100*지렛대), 0, 100)"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "계산-규칙-p2",
+      "text": {
+        "en": "Of pressure's three inputs, grievance and solidarity sat on 0–100 scales while leverage sat on 0–1, so leverage was multiplied by 100 to normalize it onto the same scale before the weighted sum. Pressure remained a 0–100 value.",
+        "ko": "압력의 세 입력 중 불만과 결속은 0~100 척도이고, 지렛대는 0~1 척도라서 100을 곱해 같은 척도로 정규화한 뒤 가중합한다. 압력은 0~100 값으로 남는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "계산-규칙-p3",
+      "text": {
+        "en": "Every proposal first checked actual routes, goods, authority, and exclusive-contract conflicts. An impossible promise could not be pushed through with high negotiating skill.",
+        "ko": "모든 제안은 먼저 실제 경로, 물자, 권한, 배타 계약 충돌을 검사한다. 불가능한 약속은 높은 교섭 능력으로 통과시킬 수 없다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "기본-수치",
+      "text": {
+        "en": "Base Numbers",
+        "ko": "기본 수치"
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "기본-수치-table1",
+      "columns": [
+        {
+          "en": "Item",
+          "ko": "항목"
+        },
+        {
+          "en": "Default",
+          "ko": "기본값"
+        },
+        {
+          "en": "Min",
+          "ko": "최소"
+        },
+        {
+          "en": "Max",
+          "ko": "최대"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Ordinary council cost",
+            "ko": "일반 회의 비용"
+          },
+          {
+            "en": "5 political capital",
+            "ko": "5 정치 자본"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          },
+          {
+            "en": "100",
+            "ko": "100"
+          }
+        ],
+        [
+          {
+            "en": "Emergency review cost",
+            "ko": "긴급 심의 비용"
+          },
+          {
+            "en": "10 political capital",
+            "ko": "10 정치 자본"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          },
+          {
+            "en": "100",
+            "ko": "100"
+          }
+        ],
+        [
+          {
+            "en": "Coalition-wide agenda",
+            "ko": "연합 전체 안건"
+          },
+          {
+            "en": "20 political capital",
+            "ko": "20 정치 자본"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          },
+          {
+            "en": "100",
+            "ko": "100"
+          }
+        ],
+        [
+          {
+            "en": "Organizing pressure",
+            "ko": "조직화 압력"
+          },
+          {
+            "en": "40",
+            "ko": "40"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          },
+          {
+            "en": "100",
+            "ko": "100"
+          }
+        ],
+        [
+          {
+            "en": "Crisis pressure",
+            "ko": "위기 압력"
+          },
+          {
+            "en": "70",
+            "ko": "70"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          },
+          {
+            "en": "100",
+            "ko": "100"
+          }
+        ],
+        [
+          {
+            "en": "Coercive-demand leverage",
+            "ko": "강제 요구 지렛대"
+          },
+          {
+            "en": "0.75",
+            "ko": "0.75"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          },
+          {
+            "en": "1",
+            "ko": "1"
+          }
+        ],
+        [
+          {
+            "en": "Ordinary pact review",
+            "ko": "일반 협약 재검토"
+          },
+          {
+            "en": "3 weeks",
+            "ko": "3주"
+          },
+          {
+            "en": "1 week",
+            "ko": "1주"
+          },
+          {
+            "en": "12 weeks",
+            "ko": "12주"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "기본-수치-p2",
+      "text": {
+        "en": "Spending political capital did not itself change trust or legitimacy; those values changed only through the recorded outcomes of the actions the spending had backed.",
+        "ko": "정치 자본 지출은 신뢰나 정통성을 직접 바꾸지 못하며, 그 값은 지출이 뒷받침한 행동의 기록된 결과로만 바뀐다."
+      }
+    },
+    {
+      "kind": "code",
+      "anchor": "기본-수치-code3",
+      "language": "mermaid",
+      "text": {
+        "en": "flowchart TD\n  E[contract · structure · combat · shortfall events] --> T[personal trust]\n  E --> R[reputation by audience]\n  E --> L[legitimacy by ground]\n  T --> P[proposal evaluation]\n  R --> P\n  L --> P\n  P -->|accepted| C[pacts and obligations]\n  P -->|refused| G[grievance · coalition pressure]",
+        "ko": "flowchart TD\n  E[계약·구조·전투·부족 사건] --> T[개인 신뢰]\n  E --> R[청중별 평판]\n  E --> L[근거별 정통성]\n  T --> P[제안 평가]\n  R --> P\n  L --> P\n  P -->|수락| C[협약과 의무]\n  P -->|거부| G[불만·연합 압력]"
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "경계-상황",
+      "text": {
+        "en": "Boundary Cases",
+        "ko": "경계 상황"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "경계-상황-list1",
+      "items": [
+        {
+          "en": "The threshold of a relationship checked not trust alone but feasibility, interest, legitimacy, and pact conflicts together.",
+          "ko": "관계 임계치는 신뢰 하나가 아니라 실행 가능성, 이익, 정통성과 협약 충돌을 함께 검사한다."
+        },
+        {
+          "en": "Strike, blockade, and secession-type coercive demands opened only when pressure stayed at 70 or above and leverage at 0.75 or above for two consecutive weeks.",
+          "ko": "압력 70 이상, 지렛대 0.75 이상이 2주 연속일 때만 파업·봉쇄·분리 같은 강제 요구가 열린다."
+        },
+        {
+          "en": "Isolation weakened only outside promises; it did not automatically erode the legitimacy of local rule.",
+          "ko": "고립은 외부 약속만 약화시키며 현지 통치의 정통성을 자동으로 깎지 않는다."
+        },
+        {
+          "en": [
+            {
+              "text": "When a successor changed, personal promises and institutional promises were re-examined separately. The names of new heirs followed "
+            },
+            {
+              "text": "the heir, name-roster, and world ledger",
+              "link": {
+                "domain": "characters",
+                "slug": "Heirs-Names-and-World-Ledger"
+              }
+            },
+            {
+              "text": "."
+            }
+          ],
+          "ko": [
+            {
+              "text": "후계자가 바뀌면 개인 약속과 제도 약속을 구분해 재검토한다. 새 후계의 성명은 "
+            },
+            {
+              "text": "후계, 이름 로스터, 세계 원장",
+              "link": {
+                "domain": "characters",
+                "slug": "Heirs-Names-and-World-Ledger"
+              }
+            },
+            {
+              "text": "을 따른다."
+            }
+          ]
+        },
+        {
+          "en": "Simultaneous proposals were evaluated on the same weekly snapshot and then settled in command-ID order.",
+          "ko": "동시 제안은 같은 주간 스냅샷으로 평가한 뒤 명령 ID 순서로 정산한다."
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "계산-예시",
+      "text": {
+        "en": "Worked Example",
+        "ko": "계산 예시"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "계산-예시-p1",
+      "text": {
+        "en": "With shortfall 0.30, isolation 0.40, and overreach 0.50, the deductions were `0.50*0.30=0.15`, `0.30*0.40=0.12`, and `0.40*0.50=0.20` respectively, so `Rel=clamp(1-0.15-0.12-0.20,0,1)=0.53`. With grievance 80, solidarity 60, and leverage 0.8, `pressure=clamp(0.45*80+0.35*60+0.20*(100*0.8),0,100)=73`, so a coercive demand opened once the leverage condition (0.75 or above) also held for two consecutive weeks. Even with trust at 60, an actual delivery success rate of 53% got a long-term power-supply pact refused, or accepted only with collateral and phased-fulfillment conditions. When the failure was caused by a third party's blockade and notice had been given in advance, the credibility factor could reduce the loss of trust.",
+        "ko": "부족 0.30, 고립 0.40, 과확장 0.50이면 감점은 각각 `0.50*0.30=0.15`, `0.30*0.40=0.12`, `0.40*0.50=0.20`이고 `Rel=clamp(1-0.15-0.12-0.20,0,1)=0.53`이다. 불만 80, 결속 60, 지렛대 0.8이면 `압력=clamp(0.45*80+0.35*60+0.20*(100*0.8),0,100)=73`이므로, 지렛대 조건(0.75 이상)과 함께 2주 연속 유지되면 강제 요구가 열린다. 신뢰 60이더라도 실제 배송 성공률이 53%라면 장기 전력 공급 협약은 거부되거나 담보·단계 이행 조건이 붙는다. 실패 원인이 제3자의 봉쇄이고 사전 통보했다면 신빙성 계수로 신뢰 손실을 줄일 수 있다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "지역-정체성-권력",
+      "text": {
+        "en": "Local-Identity Power",
+        "ko": "지역 정체성 권력"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "지역-정체성-권력-p1",
+      "text": {
+        "en": "Powers did not negotiate under their state names alone. In the Seoul of later days the counterparts at the table were route nodes, gu nodes, and station nodes. Personal trust `T` attached to pairs of persons; reputation `R` and legitimacy `L` attached to the lineages and doctrines of those nodes.",
+        "ko": "세력은 국호만으로 교섭하지 않는다. 후세 서울에서 교섭 상대는 노선 노드와 구 노드와 역 노드다. 개인 신뢰 `T`는 인물 쌍에 붙고, 평판 `R`과 정통성 `L`은 그 노드의 계열과 교리에 붙는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "지역-정체성-권력-p2",
+      "text": {
+        "en": [
+          {
+            "text": "Faith divided into three strata. A lineage was a family raising the same wreckage into godhead; a faith was a community with a chapel and priests. Doctrine and teaching remained the units that changed the rules. Even within one lineage, differing doctrines produced different arms on the passage rights. The state name was not the editing unit; the names belonged to "
+          },
+          {
+            "text": "Faith",
+            "link": {
+              "domain": "culture",
+              "slug": "Faith-Culture-Schism"
+            }
+          },
+          {
+            "text": "."
+          }
+        ],
+        "ko": [
+          {
+            "text": "신앙은 세 층으로 가른다. 계열은 같은 잔해를 신으로 올리는 가족이고, 신앙은 당집과 사제를 가진 공동체다. 교리와 교훈이 규칙을 고치는 단위로 남는다. 같은 계열끼리도 교리가 다르면 통행권 문장이 달라진다. 국호가 편집 단위가 아니며, 이름은 "
+          },
+          {
+            "text": "신앙",
+            "link": {
+              "domain": "culture",
+              "slug": "Faith-Culture-Schism"
+            }
+          },
+          {
+            "text": "을 쓴다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "지역-정체성-권력-p3",
+      "text": {
+        "en": "Lineages did not grow in courts. The sluice lineage grew at the lock gates, and the fabrication lineage grew in the workshops. The announcement-voice lineage grew in the broadcast rooms, the ledger lineage at the notarization windows, the route-map lineage in the concourses, and the distribution lineage in the switchgear rooms. The mobilization-register lineage grew in the armory duty rooms.",
+        "ko": "계열은 궁정이 심지 않는다. 수문계는 갑문에서 자라고, 제작계는 공방에서 자란다. 안내음성계는 방송실에서, 원장계는 공증 창구에서, 노선도계는 대합실에서, 배전계는 배전실에서 자란다. 동원명부계는 탄약고 당직실에서 자란다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "지역-정체성-권력-p4",
+      "text": {
+        "en": "The culture key was the living sphere, not a flat partition. `west-sluice` bound sluices, fabrication, and broadcasting into one corridor; `center-record` bound records, transshipment, and workshops. `north-refuge` bound refuge and wheels, `east-caravan` water, transfers, and herbs, and `southeast-ration` rations and contracts. Powers inside the same key heard passage proposals first; across keys, collateral attached.",
+        "ko": "문화 키는 생활권이며 평면 구획이 아니다. `west-sluice`는 수문과 제작과 방송을 한 회랑으로 묶고, `center-record`는 기록과 환적과 공방을 묶는다. `north-refuge`는 피난과 차륜을, `east-caravan`은 급수와 환승과 약재를, `southeast-ration`은 배급과 계약을 묶는다. 같은 키 안의 세력은 통행 제안을 먼저 듣고, 다른 키면 담보가 붙는다."
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "지역-정체성-권력-table5",
+      "columns": [
+        {
+          "en": "Lineage",
+          "ko": "계열"
+        },
+        {
+          "en": "Place nodes",
+          "ko": "장소 노드"
+        },
+        {
+          "en": "Where negotiation snagged",
+          "ko": "교섭이 걸리는 지점"
+        },
+        {
+          "en": "Legitimacy ground `k`",
+          "ko": "정통성 근거 `k`"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Route-map lineage",
+            "ko": "노선도계"
+          },
+          {
+            "en": "Transfer stations · terminals · depots",
+            "ko": "환승역·종점·차량기지"
+          },
+          {
+            "en": "Transfer pacts and terminal rest",
+            "ko": "환승맹약과 종점안식"
+          },
+          {
+            "en": "Safety",
+            "ko": "안전"
+          }
+        ],
+        [
+          {
+            "en": "Sluice lineage",
+            "ko": "수문계"
+          },
+          {
+            "en": "Sluices · pumps · water districts",
+            "ko": "수문·펌프·급수 구"
+          },
+          {
+            "en": "Water compacts and protected supply",
+            "ko": "급수계약과 보호급수"
+          },
+          {
+            "en": "Water",
+            "ko": "물"
+          }
+        ],
+        [
+          {
+            "en": "Distribution lineage",
+            "ko": "배전계"
+          },
+          {
+            "en": "Switchgear rooms · emergency-light stations",
+            "ko": "배전실·비상등 역"
+          },
+          {
+            "en": "Lighting watches and the capacitor taboo",
+            "ko": "점등 당직과 축전 금기"
+          },
+          {
+            "en": "Power",
+            "ko": "전력"
+          }
+        ],
+        [
+          {
+            "en": "Fabrication lineage",
+            "ko": "제작계"
+          },
+          {
+            "en": "Workshops · depot districts",
+            "ko": "공방·기지 구"
+          },
+          {
+            "en": "Open-standards rites and house secrets",
+            "ko": "공개규격과 가문비공개"
+          },
+          {
+            "en": "Technology",
+            "ko": "기술"
+          }
+        ],
+        [
+          {
+            "en": "Announcement-voice lineage",
+            "ko": "안내음성계"
+          },
+          {
+            "en": "Transmission towers · broadcast stations",
+            "ko": "송신탑·방송실 역"
+          },
+          {
+            "en": "On-time broadcasts and cross-verification",
+            "ko": "정시방송과 교차검증"
+          },
+          {
+            "en": "Legitimacy",
+            "ko": "법통"
+          }
+        ],
+        [
+          {
+            "en": "Mobilization-register lineage",
+            "ko": "동원명부계"
+          },
+          {
+            "en": "Armory duty rooms",
+            "ko": "탄약고 당직실"
+          },
+          {
+            "en": "Muster reading and key drill",
+            "ko": "소집 낭독과 열쇠 제식"
+          },
+          {
+            "en": "Safety",
+            "ko": "안전"
+          }
+        ],
+        [
+          {
+            "en": "Ledger lineage",
+            "ko": "원장계"
+          },
+          {
+            "en": "Notary windows · auction houses · the Jegi-dong district",
+            "ko": "공증 창·경매장·제기동 구"
+          },
+          {
+            "en": "Accreditation, auctions, and treatment order",
+            "ko": "인준과 경매와 치료 순서"
+          },
+          {
+            "en": "Trade",
+            "ko": "교역"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "지역-정체성-권력-p6",
+      "text": {
+        "en": "Powers of the same lineage read proposals first. A heretic was read as the side that had changed doctrine inside the same lineage. When the Open-Standards rite called the House-Secret rite heretical, the two were not bundled into one passage right; signatures were collected station by station.",
+        "ko": "같은 계열의 세력은 제안을 먼저 읽는다. 이단은 같은 계열 안에서 교리를 고친 쪽으로 읽힌다. 공개규격례가 가문비공개례를 이단으로 부르면 한 장의 통행권으로 묶이지 않고, 역마다 따로 서명을 받는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "지역-정체성-권력-p7",
+      "text": {
+        "en": "Hidden faith was a pressure valve. When a great power forced public rites, residents went down into the festival-relic faction, the silent faction, the dual-ledger rite, or the route-color faction. Discovery moved only that station's grievance `G` and reputation `R`. Isolation weakened outside promises; it did not automatically erode the legitimacy of the local chapel.",
+        "ko": "숨은 신앙은 압력 밸브다. 강국이 공개 제사를 강제하면 주민은 축전유물파와 침묵분파와 이중장부례와 노선색분파로 내려간다. 들키면 그 역의 불만 `G`와 평판 `R`만 움직인다. 고립은 외부 약속만 약화하고, 현지 당집의 정통성을 자동으로 깎지 않는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "지역-정체성-권력-p8",
+      "text": {
+        "en": "Grievance `G` did not pile up by state name. When a station watch judged its own teaching ignored, grievance rose at that station alone, and the same held for solidarity `C`. When lodging oaths gathered in one gu, only that gu's solidarity strengthened. Leverage `V` was a place asset. The power to lock a sluice was leverage before the sluice lineage, and the power to cut a broadcast was leverage before the announcement-voice lineage. When the retrieval squad set out with the rite calendar in hand, passage on that section stopped.",
+        "ko": "불만 `G`는 국호 단위로 쌓이지 않는다. 역 당직이 자기 교훈이 무시됐다고 보면 그 역에서만 올라가고, 결속 `C`도 같다. 숙영 맹세가 한 구에서 모이면 그 구의 결속만 센다. 지렛대 `V`는 장소 자산이다. 수문을 잠글 수 있으면 수문계 앞에서 지렛대가 생기고, 방송을 끊을 수 있으면 안내음성계 앞에서 지렛대가 생긴다. 회수 반이 제사 일정을 내밀면 그 구간의 통행이 막힌다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "지역-정체성-권력-p9",
+      "text": {
+        "en": "The pressure formula was as before; only the inputs were cut per node. When one state held two doctrines, two pressure lines came out in the same week, and coercive demands opened only on the higher-pressure node. High trust in another gu did not cover that node.",
+        "ko": "압력 공식은 앞과 같다. 입력만 노드별로 자른다. 한 나라가 두 교리를 품으면 같은 주간에 압력 두 줄이 나오고, 강제 요구는 압력이 높은 노드에서만 열린다. 다른 구의 신뢰가 높아도 그 노드를 덮지 못한다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "지역-정체성-권력-p10",
+      "text": {
+        "en": "Reliability `Rel` read doctrine conflicts once more over paths, goods, and authority. In weeks when the treatment principle refused a great power's exclusive purchase, Jegi-dong's treatment contracts stalled; when the On-Time-Broadcast rite recognized only one announcement as fact, Sangam's verification contracts stalled. Which of the Records Bureau seal, Sangam cross-verification, or Suseo mediation was mandatory for treaty accreditation was decided by doctrine. An impossible promise could not be pushed through with high negotiating skill.",
+        "ko": "이행 신뢰도 `Rel`은 경로와 물자와 권한 위에 교리 충돌을 한 번 더 본다. 치료 원칙이 강국 독점 구매를 거부하는 주간에는 제기동의 치료 계약이 막히고, 정시방송례가 한 발표만 사실로 인정하면 상암의 검증 용역이 막힌다. 조약 인준은 기록청 도장과 상암 교차검증과 수서 중재 가운데 무엇을 필수로 둘지 교리가 정한다. 불가능한 약속은 높은 교섭 능력으로 통과시킬 수 없다."
+      }
+    }
+  ],
+  "data": {}
+}

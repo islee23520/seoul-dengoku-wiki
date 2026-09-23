@@ -1,162 +1,489 @@
-[
-  {
-    "term_id": "state-01",
-    "display_name_ko": "급수계약정",
-    "reader_definition_ko": "수자원 정수와 공급을 독점하여 권력을 유지하는 도시 국가.",
-    "category": "state",
-    "owner_path": "LORE/places",
-    "allowed_context": ["all"],
-    "aliases": ["급수정"],
-    "status": "fact-public"
+{
+  "version": 1,
+  "domain": "root",
+  "id": "DOC:Glossary",
+  "slug": "glossary",
+  "status": "draft",
+  "tense": {
+    "en": "past",
+    "ko": "past"
   },
-  {
-    "term_id": "state-06",
-    "display_name_ko": "대한민국정부",
-    "reader_definition_ko": "대붕괴 이전의 통치 체제를 계승한다고 주장하는 옛 정부 조직.",
-    "category": "state",
-    "owner_path": "LORE/places",
-    "allowed_context": ["all"],
-    "aliases": ["정부", "옛정부"],
-    "status": "fact-public"
+  "provenance": {
+    "original_anchor": "lore/Glossary.md",
+    "original_hash": "6e2e8f6c59abd6d9eff39c35bfac1b33e7fdc0eb109e6e2a763642311a59fa5c",
+    "history": [
+      "Korean lore/Glossary.md SHA-256 6e2e8f6c59abd6d9eff39c35bfac1b33e7fdc0eb109e6e2a763642311a59fa5c.",
+      "English lore/Glossary.en.md SHA-256 1bc3b82104a7ef332b68918aaa428505ea90fcc443036be7cc3982d4f0cd45f2; copied verbatim, no translation written."
+    ]
   },
-  {
-    "term_id": "state-16",
-    "display_name_ko": "정동노동총연맹",
-    "reader_definition_ko": "정동 일대의 지하 노동자들이 결성한 무장 자치 연맹.",
-    "category": "state",
-    "owner_path": "LORE/places",
-    "allowed_context": ["all"],
-    "aliases": ["정동연맹"],
-    "status": "fact-public"
+  "source": {
+    "kind": "original-fiction",
+    "refs": [
+      "lore/Glossary.md",
+      "lore/Glossary.en.md"
+    ]
   },
-  {
-    "term_id": "house-hp01",
-    "display_name_ko": "영등포수문가",
-    "reader_definition_ko": "영등포 일대의 지하 수로와 제어 밸브를 장악한 기술자 가문.",
-    "category": "organization",
-    "owner_path": "LORE/factions",
-    "allowed_context": ["all"],
-    "aliases": ["수문가"],
-    "status": "fiction-original"
+  "locales": {
+    "en": {
+      "title": "용어 사전 (Glossary)",
+      "summary": "This document is an encyclopedia that explains to readers the key concepts and terms frequently used in the 《서울:전국》 worldview.",
+      "tense": "past"
+    },
+    "ko": {
+      "title": "용어 사전 (Glossary)",
+      "summary": "본 문서는 《서울:전국》 세계관에서 자주 쓰이는 주요 개념과 용어를 독자에게 설명하는 백과사전입니다.",
+      "tense": "past"
+    }
   },
-  {
-    "term_id": "house-hc01",
-    "display_name_ko": "여의도전산가",
-    "reader_definition_ko": "구 여의도의 금융 전산망과 데이터 센터를 통제하는 기업 가문.",
-    "category": "organization",
-    "owner_path": "LORE/factions",
-    "allowed_context": ["all"],
-    "aliases": ["전산가"],
-    "status": "fiction-original"
-  },
-  {
-    "term_id": "tech-physical-ai",
-    "display_name_ko": "피지컬 에이아이",
-    "reader_definition_ko": "물리적 신체를 가지고 전술 작전을 수행하는 기계 지능.",
-    "category": "technology",
-    "owner_path": "LORE/technology",
-    "allowed_context": ["all"],
-    "aliases": ["PAI"],
-    "status": "fiction-original"
-  },
-  {
-    "term_id": "tech-lens",
-    "display_name_ko": "렌즈",
-    "reader_definition_ko": "착용자의 시야에 전장 정보와 기계 상태를 겹쳐 보여주는 증강 장비.",
-    "category": "equipment",
-    "owner_path": "LORE/technology",
-    "allowed_context": ["all"],
-    "aliases": ["전술렌즈"],
-    "status": "generic-unregistered"
-  },
-  {
-    "term_id": "person-waterhand",
-    "display_name_ko": "수문손",
-    "reader_definition_ko": "수로 밸브를 조작하거나 관련 기술을 가진 지하 수리공.",
-    "category": "person_category",
-    "owner_path": "LORE/people-and-machines",
-    "allowed_context": ["dialogue", "informal"],
-    "aliases": ["수리공"],
-    "status": "fiction-original"
-  },
-  {
-    "term_id": "person-lensbreath",
-    "display_name_ko": "렌즈숨",
-    "reader_definition_ko": "항상 렌즈를 착용하고 기계와 동기화된 채 살아가는 자.",
-    "category": "person_category",
-    "owner_path": "LORE/people-and-machines",
-    "allowed_context": ["dialogue", "informal"],
-    "aliases": [],
-    "status": "fiction-original"
-  },
-  {
-    "term_id": "martial-aiming",
-    "display_name_ko": "감응조준법",
-    "reader_definition_ko": "피지컬 에이아이 렌즈의 센서 정보와 자신의 시각을 동기화하여 사격하는 사격술.",
-    "category": "martial_school",
-    "owner_path": "GDD/rules",
-    "allowed_context": ["all"],
-    "aliases": ["감응조준"],
-    "status": "fiction-original"
-  },
-  {
-    "term_id": "martial-breathing",
-    "display_name_ko": "수문호흡법",
-    "reader_definition_ko": "유독 가스가 섞인 하층 공기에서 효율적으로 산소를 확보하는 호흡 기술.",
-    "category": "martial_school",
-    "owner_path": "GDD/rules",
-    "allowed_context": ["all"],
-    "aliases": [],
-    "status": "fiction-original"
-  },
-  {
-    "term_id": "geo-deep-tunnel",
-    "display_name_ko": "심층 터널",
-    "reader_definition_ko": "환승 통로 밑바닥에 위치한 가장 깊은 구역으로, 빛이 들지 않고 환기가 되지 않는다.",
-    "category": "geography",
-    "owner_path": "LORE/places",
-    "allowed_context": ["all"],
-    "aliases": ["심층"],
-    "status": "generic-unregistered"
-  },
-  {
-    "term_id": "event-collapse",
-    "display_name_ko": "대붕괴",
-    "reader_definition_ko": "지상 문명이 파괴되고 생존자들이 서울 지하철망으로 피신하게 된 거대한 재난.",
-    "category": "event",
-    "owner_path": "LORE/chronology",
-    "allowed_context": ["all"],
-    "aliases": ["붕괴"],
-    "status": "generic-unregistered"
-  },
-  {
-    "term_id": "event-present",
-    "display_name_ko": "2126년",
-    "reader_definition_ko": "대붕괴 이후 지하 생태계가 안정화되고 16개 국가가 세력 균형을 이룬 현재 시점.",
-    "category": "event",
-    "owner_path": "LORE/chronology",
-    "allowed_context": ["all"],
-    "aliases": ["현재"],
-    "status": "generic-unregistered"
-  },
-  {
-    "term_id": "ailment-spore",
-    "display_name_ko": "포자감염",
-    "reader_definition_ko": "저온 환경의 지하 균류 포자가 폐에 자리 잡아 호흡기를 굳게 만드는 치명적 증상.",
-    "category": "ailment",
-    "owner_path": "LORE/ailments",
-    "allowed_context": ["all"],
-    "aliases": ["포자병"],
-    "status": "fiction-original"
-  },
-  {
-    "term_id": "office-commander",
-    "display_name_ko": "통제권자",
-    "reader_definition_ko": "전술 작전과 자원 분배를 지휘하는 조직 내 상위 책임자.",
-    "category": "office",
-    "owner_path": "LORE/offices",
-    "allowed_context": ["all"],
-    "aliases": ["통제관"],
-    "status": "generic-unregistered"
-  }
-]
+  "content": [
+    {
+      "kind": "heading",
+      "anchor": "용어-사전-glossary",
+      "text": {
+        "en": "용어 사전 (Glossary)",
+        "ko": "용어 사전 (Glossary)"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "용어-사전-glossary-p1",
+      "text": {
+        "en": "This document is an encyclopedia that explains to readers the key concepts and terms frequently used in the 《서울:전국》 worldview. Korean headwords remain the primary keys; the English gloss follows each headword.",
+        "ko": "본 문서는 《서울:전국》 세계관에서 자주 쓰이는 주요 개념과 용어를 독자에게 설명하는 백과사전입니다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "국가-16개국",
+      "text": {
+        "en": "States (the Sixteen)",
+        "ko": "국가 (16개국)"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "국가-16개국-list1",
+      "items": [
+        {
+          "en": [
+            {
+              "text": "급수계약정",
+              "strong": true
+            },
+            {
+              "text": " — *Water Compact*: A city-state that held its power by monopolizing the purification and supply of water. (Alias: 급수정)"
+            }
+          ],
+          "ko": [
+            {
+              "text": "급수계약정",
+              "strong": true
+            },
+            {
+              "text": ": 수자원 정수와 공급을 독점하여 권력을 유지하는 도시 국가. (별칭: 급수정)"
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "text": "대한민국정부",
+              "strong": true
+            },
+            {
+              "text": " — *Republic of Korea Government*: An old government organization that claimed to inherit the ruling system from before the Great Collapse. (Aliases: 정부, 옛정부)"
+            }
+          ],
+          "ko": [
+            {
+              "text": "대한민국정부",
+              "strong": true
+            },
+            {
+              "text": ": 대붕괴 이전의 통치 체제를 계승한다고 주장하는 옛 정부 조직. (별칭: 정부, 옛정부)"
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "text": "정동노동총연맹",
+              "strong": true
+            },
+            {
+              "text": " — *Jeongdong General Labor Union*: An armed autonomous league formed by the underground laborers of the Jeongdong area. (Alias: 정동연맹)"
+            }
+          ],
+          "ko": [
+            {
+              "text": "정동노동총연맹",
+              "strong": true
+            },
+            {
+              "text": ": 정동 일대의 지하 노동자들이 결성한 무장 자치 연맹. (별칭: 정동연맹)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "가문-및-조직",
+      "text": {
+        "en": "Houses and Organizations",
+        "ko": "가문 및 조직"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "가문-및-조직-list1",
+      "items": [
+        {
+          "en": [
+            {
+              "text": "여의도전산가",
+              "strong": true
+            },
+            {
+              "text": " — *Yeouido Computing House*: A corporate house that controlled the financial computing network and data centers of old Yeouido. (Alias: 전산가)"
+            }
+          ],
+          "ko": [
+            {
+              "text": "여의도전산가",
+              "strong": true
+            },
+            {
+              "text": ": 구 여의도의 금융 전산망과 데이터 센터를 통제하는 기업 가문. (별칭: 전산가)"
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "text": "영등포수문가",
+              "strong": true
+            },
+            {
+              "text": " — *Yeongdeungpo Sluice House*: A technician house that seized the underground waterways and control valves of the Yeongdeungpo area. (Alias: 수문가)"
+            }
+          ],
+          "ko": [
+            {
+              "text": "영등포수문가",
+              "strong": true
+            },
+            {
+              "text": ": 영등포 일대의 지하 수로와 제어 밸브를 장악한 기술자 가문. (별칭: 수문가)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "인물-및-직책",
+      "text": {
+        "en": "Persons and Offices",
+        "ko": "인물 및 직책"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "인물-및-직책-list1",
+      "items": [
+        {
+          "en": [
+            {
+              "text": "통제권자",
+              "strong": true
+            },
+            {
+              "text": " — *controller*: A senior post holder inside an organization who commanded tactical operations and resource distribution. (Alias: 통제관)"
+            }
+          ],
+          "ko": [
+            {
+              "text": "통제권자",
+              "strong": true
+            },
+            {
+              "text": ": 전술 작전과 자원 분배를 지휘하는 조직 내 상위 책임자. (별칭: 통제관)"
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "text": "수문손",
+              "strong": true
+            },
+            {
+              "text": " — *Sluice Hand*: An underground hydraulic worker who operated waterway valves or carried the related skills. The word served as common field slang. (Alias: 수리공)"
+            }
+          ],
+          "ko": [
+            {
+              "text": "수문손",
+              "strong": true
+            },
+            {
+              "text": ": 수로 밸브를 조작하거나 관련 기술을 가진 지하 수리공. 현장 은어로 자주 쓰인다. (별칭: 수리공)"
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "text": "렌즈숨",
+              "strong": true
+            },
+            {
+              "text": " — *lens-breather*: One who lived always wearing lenses, synchronized with machines."
+            }
+          ],
+          "ko": [
+            {
+              "text": "렌즈숨",
+              "strong": true
+            },
+            {
+              "text": ": 항상 렌즈를 착용하고 기계와 동기화된 채 살아가는 자."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "기술-및-장비",
+      "text": {
+        "en": "Technology and Equipment",
+        "ko": "기술 및 장비"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "기술-및-장비-list1",
+      "items": [
+        {
+          "en": [
+            {
+              "text": "피지컬 에이아이 (PAI)",
+              "strong": true
+            },
+            {
+              "text": " — *physical AI*: A machine intelligence with a physical body that carried out tactical operations."
+            }
+          ],
+          "ko": [
+            {
+              "text": "피지컬 에이아이 (PAI)",
+              "strong": true
+            },
+            {
+              "text": ": 물리적 신체를 가지고 전술 작전을 수행하는 기계 지능."
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "text": "렌즈",
+              "strong": true
+            },
+            {
+              "text": " — *lens*: An augmentation device that overlaid battlefield information and machine status onto the wearer's field of view. (Alias: 전술렌즈)"
+            }
+          ],
+          "ko": [
+            {
+              "text": "렌즈",
+              "strong": true
+            },
+            {
+              "text": ": 착용자의 시야에 전장 정보와 기계 상태를 겹쳐 보여주는 증강 장비. (별칭: 전술렌즈)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "무공-및-전술",
+      "text": {
+        "en": "Martial Paths and Tactics",
+        "ko": "무공 및 전술"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "무공-및-전술-list1",
+      "items": [
+        {
+          "en": [
+            {
+              "text": "감응조준법",
+              "strong": true
+            },
+            {
+              "text": " — *resonance aiming method*: A marksmanship technique that synchronized the sensor information of a physical AI lens with the shooter's own sight."
+            }
+          ],
+          "ko": [
+            {
+              "text": "감응조준법",
+              "strong": true
+            },
+            {
+              "text": ": 피지컬 에이아이 렌즈의 센서 정보와 자신의 시각을 동기화하여 사격하는 사격술."
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "text": "수문호흡법",
+              "strong": true
+            },
+            {
+              "text": " — *sluice-breathing method*: A breathing technique that secured oxygen efficiently from the toxic-gas-laced air of the lower levels."
+            }
+          ],
+          "ko": [
+            {
+              "text": "수문호흡법",
+              "strong": true
+            },
+            {
+              "text": ": 유독 가스가 섞인 하층 공기에서 효율적으로 산소를 확보하는 호흡 기술."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "시설-및-지리",
+      "text": {
+        "en": "Facilities and Geography",
+        "ko": "시설 및 지리"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "시설-및-지리-list1",
+      "items": [
+        {
+          "en": [
+            {
+              "text": "심층 터널",
+              "strong": true
+            },
+            {
+              "text": " — *deep tunnel*: The deepest zone at the bottom of the transfer passages, where no light entered and no air moved."
+            }
+          ],
+          "ko": [
+            {
+              "text": "심층 터널",
+              "strong": true
+            },
+            {
+              "text": ": 환승 통로 밑바닥에 위치한 가장 깊은 구역으로, 빛이 들지 않고 환기가 되지 않는다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "사건-및-연대",
+      "text": {
+        "en": "Events and Chronology",
+        "ko": "사건 및 연대"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "사건-및-연대-list1",
+      "items": [
+        {
+          "en": [
+            {
+              "text": "대붕괴",
+              "strong": true
+            },
+            {
+              "text": " — *the Great Collapse*: The immense disaster that destroyed surface civilization and drove the survivors into the Seoul subway network. (Alias: 붕괴)"
+            }
+          ],
+          "ko": [
+            {
+              "text": "대붕괴",
+              "strong": true
+            },
+            {
+              "text": ": 지상 문명이 파괴되고 생존자들이 서울 지하철망으로 피신하게 된 거대한 재난. (별칭: 붕괴)"
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "text": "2126년",
+              "strong": true
+            },
+            {
+              "text": " — *the year 2126*: The present point in time, after the Great Collapse, when the underground ecosystem stabilized and the sixteen states settled into a balance of power. (Alias: 현재)"
+            }
+          ],
+          "ko": [
+            {
+              "text": "2126년",
+              "strong": true
+            },
+            {
+              "text": ": 대붕괴 이후 지하 생태계가 안정화되고 16개 국가가 세력 균형을 이룬 현재 시점. (별칭: 현재)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "질병",
+      "text": {
+        "en": "Diseases",
+        "ko": "질병"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "질병-list1",
+      "items": [
+        {
+          "en": [
+            {
+              "text": "포자감염",
+              "strong": true
+            },
+            {
+              "text": " — *spore infection*: A fatal condition in which spores of underground fungi from cold environments lodged in the lungs and hardened the respiratory tract. (Alias: 포자병)"
+            }
+          ],
+          "ko": [
+            {
+              "text": "포자감염",
+              "strong": true
+            },
+            {
+              "text": ": 저온 환경의 지하 균류 포자가 폐에 자리 잡아 호흡기를 굳게 만드는 치명적 증상. (별칭: 포자병)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "data": {}
+}

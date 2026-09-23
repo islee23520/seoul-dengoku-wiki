@@ -1,0 +1,309 @@
+{
+  "version": 1,
+  "domain": "places",
+  "id": "DOC:Station-Interior-Construction",
+  "slug": "station-interior-construction",
+  "status": "draft",
+  "tense": {
+    "en": "past",
+    "ko": "past"
+  },
+  "provenance": {
+    "original_anchor": "lore/places/Station-Interior-Construction.md",
+    "original_hash": "b536b847d9f2b4993b00ab89d07a33b833812012b8d817f36a8d504ad39c0409",
+    "history": [
+      "Korean lore/places/Station-Interior-Construction.md SHA-256 b536b847d9f2b4993b00ab89d07a33b833812012b8d817f36a8d504ad39c0409.",
+      "English lore/places/Station-Interior-Construction.en.md SHA-256 9c76e8b9ee0320eb02b8b05e10462ba76ee06d5126b286ffdb6ab83fb4a17960; copied verbatim, no translation written."
+    ]
+  },
+  "source": {
+    "kind": "original-fiction",
+    "refs": [
+      "lore/places/Station-Interior-Construction.md",
+      "lore/places/Station-Interior-Construction.en.md"
+    ]
+  },
+  "locales": {
+    "en": {
+      "title": "Entering the Station Interior",
+      "summary": "Crossing the threshold of a great station unfolded not a simple corridor but a stronghold built of complex stairways and sectors.",
+      "tense": "past"
+    },
+    "ko": {
+      "title": "역 내부에 들어가면",
+      "summary": "거대한 역의 문턱을 넘으면, 단순한 통로가 아닌 복잡한 층계와 구역들로 이루어진 거점이 펼쳐진다.",
+      "tense": "past"
+    }
+  },
+  "content": [
+    {
+      "kind": "heading",
+      "anchor": "역-내부에-들어가면",
+      "text": {
+        "en": "Entering the Station Interior",
+        "ko": "역 내부에 들어가면"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "역-내부에-들어가면-p1",
+      "text": {
+        "en": "Crossing the threshold of a great station unfolded not a simple corridor but a stronghold built of complex stairways and sectors. The facilities inside the concourse and the platforms opened and ran in sequence, by the rules of the survivors.",
+        "ko": "거대한 역의 문턱을 넘으면, 단순한 통로가 아닌 복잡한 층계와 구역들로 이루어진 거점이 펼쳐진다. 대합실과 승강장 안의 시설들은 생존자들의 규칙에 따라 순차적으로 개방되며 운영된다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "역-내부에-들어가면-p2",
+      "text": {
+        "en": "All 334 named stations within Seoul, the principal treatment plants, the depots, and the markets worked as such three-dimensional strongholds. How the underground facilities and the surface scenery had changed since the change of age decided each stronghold's character.",
+        "ko": "서울 안의 이름 있는 334곳의 역과 주요 정수장, 차량기지, 시장 모두가 이러한 입체적인 거점으로 기능한다. 시대가 바뀐 후 지하 시설과 지상의 풍경이 어떻게 변했는지는 각 거점의 성격을 결정한다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "역-내부에-들어가면-p3",
+      "text": {
+        "en": [
+          {
+            "text": "The related documents were read together with "
+          },
+          {
+            "text": "How the World Map Is Built",
+            "link": {
+              "domain": "places",
+              "slug": "World-Map-Construction"
+            }
+          },
+          {
+            "text": ", "
+          },
+          {
+            "text": "Strongholds and Territory",
+            "link": {
+              "domain": "economy",
+              "slug": "Strongholds-and-Territory"
+            }
+          },
+          {
+            "text": ", "
+          },
+          {
+            "text": "Economy and Production",
+            "link": {
+              "domain": "economy",
+              "slug": "Economy-and-Production"
+            }
+          },
+          {
+            "text": ", and "
+          },
+          {
+            "text": "the Campaign Loop",
+            "link": {
+              "domain": "gdd",
+              "slug": "rules/Campaign-Loop"
+            }
+          },
+          {
+            "text": "."
+          }
+        ],
+        "ko": [
+          {
+            "text": "관련 문서는 "
+          },
+          {
+            "text": "월드맵을 어떻게 구성하나",
+            "link": {
+              "domain": "places",
+              "slug": "World-Map-Construction"
+            }
+          },
+          {
+            "text": ", "
+          },
+          {
+            "text": "거점과 영토",
+            "link": {
+              "domain": "economy",
+              "slug": "Strongholds-and-Territory"
+            }
+          },
+          {
+            "text": ", "
+          },
+          {
+            "text": "경제와 생산",
+            "link": {
+              "domain": "economy",
+              "slug": "Economy-and-Production"
+            }
+          },
+          {
+            "text": ", "
+          },
+          {
+            "text": "원정",
+            "link": {
+              "domain": "gdd",
+              "slug": "rules/Campaign-Loop"
+            }
+          },
+          {
+            "text": "과 같이 읽는다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "입장과-전경",
+      "text": {
+        "en": "Entry and the Panorama",
+        "ko": "입장과 전경"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "입장과-전경-p1",
+      "text": {
+        "en": "After the encounters and the combat, seizing the initiative in a station was only the beginning. This stronghold, where fates, goods, and reputation crossed, showed its true face only when the door was opened and the party stepped in.",
+        "ko": "조우와 전투가 끝나고 역의 주도권을 장악하는 것은 시작에 불과하다. 운명과 물자, 평판이 엇갈리는 이 거점은, 문을 열고 들어섰을 때 비로소 진면목을 드러낸다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "입장과-전경-p2",
+      "text": {
+        "en": "The strongholds recorded in the Seoul station catalog held multi-story structures and convenience-facility sectors of their own. Whether a station was a transfer station or an ordinary one changed the scale of facilities it could seat. The Yeongdeungpo, Ttukseom, and Guui treatment plants, the Sinjeong and Cheonwang depots, Garak Market, and the Noryangjin Fisheries Market stood beside stations, forming vast infrastructure to meet the survivors.",
+        "ko": "서울 역 카탈로그에 기록된 거점들은 다층적인 구조와 각자의 편의 시설 구역을 가진다. 환승역인지 일반 역인지에 따라 들어설 수 있는 시설의 규모도 다르다. 영등포, 뚝섬, 구의 정수장이나 신정, 천왕 차량기지, 가락시장, 노량진 수산시장 등은 역과 인접한 채 거대한 인프라를 형성하며 생존자들을 맞이한다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "내부-개방-절차",
+      "text": {
+        "en": "The Interior Opening Procedure",
+        "ko": "내부 개방 절차"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "내부-개방-절차-p1",
+      "text": {
+        "en": "When the expedition party entered a station, the upper concourse opened by default. The platforms, transfer corridors, and deep tunnels below showed themselves whole only where they stood intact without collapse or flooding, and blocked sectors could be reached only after the restoration conditions were met.",
+        "ko": "탐험대가 역에 진입하면 기본적으로 상단 대합실이 열린다. 아래로 이어지는 승강장, 환승 통로, 심층 터널은 붕괴나 침수 없이 멀쩡한 상태일 때만 온전히 모습을 드러내며, 막힌 구역은 복구 조건을 충족해야만 접근할 수 있다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "내부-개방-절차-p2",
+      "text": {
+        "en": "The interior space was no plane but a complicated solid of entwined floors and sectors. Ordinary stations held small-scale facilities and transfer stations held larger ones. Markets, aid stations, repair workshops, generators, water-supply facilities, warehouses, and signal stations could settle in, and where a station had a unique infrastructure at its side, that character overrode the stronghold's identity.",
+        "ko": "내부 공간은 평면이 아니라 여러 층과 구역이 얽힌 복잡한 입체로 이루어진다. 일반 역은 소규모 시설을, 환승역은 더 큰 규모의 시설을 수용할 수 있다. 시장, 의무소, 수리 공방, 발전기, 급수 시설, 창고, 통신소 등이 자리 잡을 수 있으며, 역 인근에 고유한 기반 시설이 있다면 그 특성이 거점의 정체성을 압도한다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "내부-개방-절차-p3",
+      "text": {
+        "en": "Immediately after occupation, a stronghold's labor, power, and stored goods were unstable, and a seizure taken by force could hardly win the residents' cooperation. The party had to repair what was broken, redeploy labor, and pass the daily settlement day by day to stabilize the stronghold. Beyond the confused state of dispute, through occupation and stabilization, only when authority and cooperation were held for a set span did full integration arrive.",
+        "ko": "점령 직후의 거점은 노동력, 전력, 비축 물자가 불안정하며, 강제로 장악했을 경우 거주민들의 협력을 얻기 어렵다. 탐험대는 파괴된 곳을 수리하고 노동력을 재배치하며 하루하루 정산을 거치면서 거점을 안정화시켜야 한다. 혼란스러운 분쟁 상태를 넘어 점령과 안정화를 거쳐, 일정 기간 권위와 협력이 유지되어야 비로소 완전한 통합에 이른다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "입체적인-층과-전투",
+      "text": {
+        "en": "The Three-Dimensional Layers and Combat",
+        "ko": "입체적인 층과 전투"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "입체적인-층과-전투-p1",
+      "text": {
+        "en": "The station interior was a many-layered battlefield. The battlefield was a three-dimensional space that had to be scanned and commanded freely up, down, left, and right, and the commander could at any moment read the situation and tune the units' positions and formations precisely.",
+        "ko": "역 내부는 전투가 벌어지는 다층적 전장이다. 전장은 상하좌우를 자유롭게 살피고 지휘해야 하는 입체적인 공간이며, 지휘관은 언제든 상황을 판단해 부대의 위치와 진형을 정밀하게 조율할 수 있다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "입체적인-층과-전투-p2",
+      "text": {
+        "en": "A small station house, a tangled transfer station, a terminal where the tracks ended, a collapsed tunnel, surface ruins, a vast depot, a rail bridge crossing the Han — the shape of the battlefield changed with each stronghold's character.",
+        "ko": "작은 역사, 복잡한 환승역, 선로가 끝나는 종착역, 붕괴한 터널, 지상 폐허, 거대한 차량기지, 한강을 가로지르는 철교 등 각 거점의 성격에 따라 전장의 형태도 달라진다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "시설과-물자-배분",
+      "text": {
+        "en": "Facilities and the Distribution of Goods",
+        "ko": "시설과 물자 배분"
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "시설과-물자-배분-table1",
+      "columns": [
+        {
+          "en": "Type",
+          "ko": "종류"
+        },
+        {
+          "en": "Facility capacity",
+          "ko": "시설 수용력"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Ordinary station",
+            "ko": "일반 역"
+          },
+          {
+            "en": "Small (2 zones)",
+            "ko": "소규모 (2구역)"
+          }
+        ],
+        [
+          {
+            "en": "Transfer station",
+            "ko": "환승역"
+          },
+          {
+            "en": "Medium (3 zones)",
+            "ko": "중규모 (3구역)"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "시설과-물자-배분-p2",
+      "text": {
+        "en": "The end of the day closed with the settlement of resource distribution, combat results, and the shifts in authority and cooperation. Reserved goods were laid out, produced resources were consumed, and shortfalls swelled the stronghold's unease.",
+        "ko": "하루의 끝은 자원 배분과 전투 결과, 권위와 협력의 변동을 정산하는 것으로 마무리된다. 예약된 물자가 배치되고, 생산된 자원이 소비되며, 부족한 물자는 거점의 불안을 키운다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "시설과-물자-배분-p3",
+      "text": {
+        "en": "Each facility devoured labor, power, and raw materials to keep turning. A facility cut from power stopped in its tracks, and a stronghold grown past its reach met the limit of its management.",
+        "ko": "각 시설은 돌아가기 위해 노동력과 전력, 원자재를 집어삼킨다. 전력이 끊긴 시설은 멈춰 서며, 과도하게 확장된 거점은 관리의 한계에 부딪힌다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "시설과-물자-배분-p4",
+      "text": {
+        "en": "The expedition's return to the stronghold meant taking up again the interior life that had stood still. The end of a campaign could be a homecoming, a new settlement, a bloody conquest, an endless wandering, or a bond made by trade.",
+        "ko": "탐험대가 거점으로 돌아온다는 것은 멈춰 있던 내부의 삶을 다시 이어가는 것이다. 원정의 끝은 귀환일 수도, 새로운 정착일 수도, 피비린내 나는 정복이나 끝없는 방랑, 혹은 교역으로 맺어질 수도 있다."
+      }
+    }
+  ],
+  "data": {}
+}

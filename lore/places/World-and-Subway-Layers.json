@@ -1,0 +1,265 @@
+{
+  "version": 1,
+  "domain": "places",
+  "id": "DOC:World-and-Subway-Layers",
+  "slug": "world-and-subway-layers",
+  "status": "draft",
+  "tense": {
+    "en": "past",
+    "ko": "past"
+  },
+  "provenance": {
+    "original_anchor": "lore/places/World-and-Subway-Layers.md",
+    "original_hash": "7672631e4bcc7fdd52b6419721a7d32e4b8a1162f204251dcf676449dac7cdc6",
+    "history": [
+      "Korean lore/places/World-and-Subway-Layers.md SHA-256 7672631e4bcc7fdd52b6419721a7d32e4b8a1162f204251dcf676449dac7cdc6.",
+      "English lore/places/World-and-Subway-Layers.en.md SHA-256 716dc11fb6c7476e8ba63682b0f04827c9fa9182bc8715260557e9296b556c11; copied verbatim, no translation written."
+    ]
+  },
+  "source": {
+    "kind": "original-fiction",
+    "refs": [
+      "lore/places/World-and-Subway-Layers.md",
+      "lore/places/World-and-Subway-Layers.en.md"
+    ]
+  },
+  "locales": {
+    "en": {
+      "title": "Seoul and the Subway Layers",
+      "summary": "The stairs that led down from the concourse to the platform, and the corner where a transfer corridor bent, lay over each other in a single picture.",
+      "tense": "past"
+    },
+    "ko": {
+      "title": "서울과 지하철 레이어",
+      "summary": "대합실에서 승강장으로 내려가는 계단과, 환승 통로가 꺾이는 모서리가 한 그림에 겹친다.",
+      "tense": "past"
+    }
+  },
+  "content": [
+    {
+      "kind": "heading",
+      "anchor": "서울과-지하철-레이어",
+      "text": {
+        "en": "Seoul and the Subway Layers",
+        "ko": "서울과 지하철 레이어"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "서울과-지하철-레이어-p1",
+      "text": {
+        "en": "The stairs that led down from the concourse to the platform, and the corner where a transfer corridor bent, lay over each other in a single picture.",
+        "ko": "대합실에서 승강장으로 내려가는 계단과, 환승 통로가 꺾이는 모서리가 한 그림에 겹친다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "세계의-수직-구조",
+      "text": {
+        "en": "The Vertical Structure of the World",
+        "ko": "세계의 수직 구조"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "세계의-수직-구조-p1",
+      "text": {
+        "en": "Read Seoul only as an administrative map painted flat in districts like Jongno-gu, Jung-gu, and Yeongdeungpo-gu, and the ground on which the states of the reconstruction stood never came into view. The places where people actually ate, slept, and passed goods were floors of different heights — the Seoul Station concourse, the Sindorim transfer, the Wangsimni tracks, the deep levels toward Amsa — and each floor carried its own work and its own dangers. The world was the graph that joined those floors.",
+        "ko": "서울을 종로구·중구·영등포구처럼 평면에 칠한 행정 지도로만 읽으면, 재건의 나라가 서는 자리가 보이지 않는다. 사람이 실제로 먹고 자고 물건을 넘기는 곳은 서울역 대합실과 신도림 환승, 왕십리 선로, 암사 쪽 심층처럼 높이가 다른 층들이고, 층마다 위험과 하는 일이 갈린다. 세계는 그 층들을 이은 그래프다."
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "세계의-수직-구조-table2",
+      "columns": [
+        {
+          "en": "Layer",
+          "ko": "층"
+        },
+        {
+          "en": "Primary function",
+          "ko": "주요 기능"
+        },
+        {
+          "en": "Representative risk",
+          "ko": "대표 위험"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Surface ruins",
+            "ko": "지상 폐허"
+          },
+          {
+            "en": "Resource gathering, solar power, long-range observation",
+            "ko": "자원 수집, 태양광, 장거리 관측"
+          },
+          {
+            "en": "Weather, collapse, exposure, clashes between powers",
+            "ko": "기후, 붕괴, 노출, 세력 충돌"
+          }
+        ],
+        [
+          {
+            "en": "Station concourse",
+            "ko": "역사 대합실"
+          },
+          {
+            "en": "Markets, habitation, administration, information",
+            "ko": "시장, 주거, 행정, 정보"
+          },
+          {
+            "en": "Crowding, fire, power struggles",
+            "ko": "과밀, 화재, 권력 분쟁"
+          }
+        ],
+        [
+          {
+            "en": "Platform · tracks",
+            "ko": "승강장·선로"
+          },
+          {
+            "en": "Movement, defensive lines, freight",
+            "ko": "이동, 방어선, 화물 운송"
+          },
+          {
+            "en": "Bottlenecks, ambushes, power cuts",
+            "ko": "병목, 매복, 전력 차단"
+          }
+        ],
+        [
+          {
+            "en": "Transfer corridors",
+            "ko": "환승 통로"
+          },
+          {
+            "en": "Political and logistics links between lines",
+            "ko": "노선 간 정치·물류 연결"
+          },
+          {
+            "en": "Blockades, transit tolls, congestion",
+            "ko": "봉쇄, 통행세, 혼잡"
+          }
+        ],
+        [
+          {
+            "en": "Deep tunnels",
+            "ko": "심층 터널"
+          },
+          {
+            "en": "Covert movement, maintenance facilities",
+            "ko": "은밀 이동, 정비 시설"
+          },
+          {
+            "en": "Flooding, darkness, communications loss",
+            "ko": "침수, 어둠, 통신 단절"
+          }
+        ],
+        [
+          {
+            "en": "Depot-adjacent strongholds",
+            "ko": "차량기지 인접 거점"
+          },
+          {
+            "en": "Repair, parts, bulk storage",
+            "ko": "수리, 부품, 대규모 저장"
+          },
+          {
+            "en": "Strategic sieges, fire",
+            "ko": "전략적 공성, 화재"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "그래프-구성",
+      "text": {
+        "en": "Graph Construction",
+        "ko": "그래프 구성"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "그래프-구성-p1",
+      "text": {
+        "en": "The world-truth graph carried the stations and the sectors and the links between them all at once. The screen raised only the lines needed at the moment and the detail of the chosen station. Choosing Seoul Station unfolded that station's concourse and platforms, and the tunnel running from Yeongdeungpo to Sindorim could be lit on its own.",
+        "ko": "세계 진실 그래프는 역과 구역, 그 사이를 잇는 연결을 한꺼번에 들고 있다. 화면에는 지금 필요한 노선과 고른 역의 상세만 올린다. 서울역을 고르면 그 역의 대합실과 승강장이 펼쳐지고, 영등포에서 신도림으로 가는 터널만 따로 켜 두는 식이다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "동적-연결",
+      "text": {
+        "en": "Dynamic Links",
+        "ko": "동적 연결"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "동적-연결-p1",
+      "text": {
+        "en": "A link was never erased; only its state changed. Every pass from normal to hazardous, controlled, or blockaded, and every turn to flooding, collapse, or temporary repair, recorded its cause alongside. So the same view told why a road had broken and what had to be mended before it opened again.",
+        "ko": "연결은 지워지지 않고 상태만 바뀐다. 정상에서 위험·통제·봉쇄로, 침수와 붕괴와 임시 복구로 넘어갈 때마다 원인을 같이 적는다. 그래서 길이 왜 끊겼는지, 무엇을 손보면 다시 열리는지를 같은 칸에서 확인할 수 있다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "동적-연결-p2",
+      "text": {
+        "en": [
+          {
+            "text": "The effect of these links on actual supply throughput and on isolation and recovery was computed by "
+          },
+          {
+            "text": "Logistics and Infrastructure",
+            "link": {
+              "domain": "economy",
+              "slug": "Logistics-and-Infrastructure"
+            }
+          },
+          {
+            "text": ", and the control and service of the linked stations were owned by "
+          },
+          {
+            "text": "Strongholds and Territory",
+            "link": {
+              "domain": "economy",
+              "slug": "Strongholds-and-Territory"
+            }
+          },
+          {
+            "text": "."
+          }
+        ],
+        "ko": [
+          {
+            "text": "이 연결이 실제 보급 처리량과 고립·복구에 미치는 영향은 "
+          },
+          {
+            "text": "물류와 기반 시설",
+            "link": {
+              "domain": "economy",
+              "slug": "Logistics-and-Infrastructure"
+            }
+          },
+          {
+            "text": "이 계산하고, 연결된 역의 통제와 서비스는 "
+          },
+          {
+            "text": "거점과 영토",
+            "link": {
+              "domain": "economy",
+              "slug": "Strongholds-and-Territory"
+            }
+          },
+          {
+            "text": "가 맡는다."
+          }
+        ]
+      }
+    }
+  ],
+  "data": {}
+}
