@@ -121,12 +121,64 @@
               "type": "array",
               "minItems": 1,
               "items": {
-                "type": "array",
-                "minItems": 1,
-                "items": {
-                  "$ref": "#/$defs/inline"
-                }
+                "oneOf": [
+                  {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "$ref": "#/$defs/inline"
+                    }
+                  },
+                  {
+                    "type": "object",
+                    "required": [
+                      "inlines",
+                      "children"
+                    ],
+                    "properties": {
+                      "inlines": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {
+                          "$ref": "#/$defs/inline"
+                        }
+                      },
+                      "children": {
+                        "type": "object",
+                        "required": [
+                          "ordered",
+                          "indent",
+                          "items"
+                        ],
+                        "properties": {
+                          "ordered": {
+                            "const": false
+                          },
+                          "indent": {
+                            "const": 3
+                          },
+                          "items": {
+                            "type": "array",
+                            "minItems": 1,
+                            "items": {
+                              "type": "array",
+                              "minItems": 1,
+                              "items": {
+                                "$ref": "#/$defs/inline"
+                              }
+                            }
+                          }
+                        },
+                        "additionalProperties": false
+                      }
+                    },
+                    "additionalProperties": false
+                  }
+                ]
               }
+            },
+            "spacedItems": {
+              "const": true
             }
           },
           "additionalProperties": false
@@ -161,6 +213,12 @@
                 "items": {
                   "$ref": "#/$defs/cell"
                 }
+              }
+            },
+            "dividers": {
+              "type": "array",
+              "items": {
+                "const": "---"
               }
             }
           },
@@ -436,6 +494,138 @@
           "items": {
             "$ref": "#/$defs/block"
           }
+        }
+      },
+      "additionalProperties": false
+    },
+    {
+      "title": "locales/ko-KR/adr-007.json",
+      "type": "object",
+      "required": [
+        "schemaVersion",
+        "locale",
+        "document",
+        "blocks",
+        "source"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "$ref": "#/$defs/schemaVersion"
+        },
+        "locale": {
+          "const": "ko-KR"
+        },
+        "document": {
+          "type": "object",
+          "required": [
+            "id",
+            "blockIds",
+            "terminalLineFeeds"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^doc\\.[A-Za-z0-9-]+$"
+            },
+            "blockIds": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              }
+            },
+            "terminalLineFeeds": {
+              "const": 2
+            }
+          },
+          "additionalProperties": false
+        },
+        "blocks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/block"
+          }
+        },
+        "source": {
+          "type": "object",
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "const": "adr/ADR-007-pr-evidence-lifecycle.md"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    {
+      "title": "locales/ko-KR/adr-008.json",
+      "type": "object",
+      "required": [
+        "schemaVersion",
+        "locale",
+        "document",
+        "blocks",
+        "source"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "$ref": "#/$defs/schemaVersion"
+        },
+        "locale": {
+          "const": "ko-KR"
+        },
+        "document": {
+          "type": "object",
+          "required": [
+            "id",
+            "blockIds"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^doc\\.[A-Za-z0-9-]+$"
+            },
+            "blockIds": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/id"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "blocks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/block"
+          }
+        },
+        "source": {
+          "type": "object",
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "const": "adr/ADR-008-local-first-steam-sessions.md"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "additionalProperties": false
         }
       },
       "additionalProperties": false
