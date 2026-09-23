@@ -2,9 +2,10 @@
 // 폴더=도메인: lore/**/*.md→world, GDD/{rules,references,architecture}/*.md→rules,
 // GDD/*.md + GDD/art/*.md + 루트 4문서→design
 // 유니온 pageByFile/pageByStem로 도메인 간 베어 링크 재작성 (스켑틱 #10)
-import { readFileSync, readdirSync, rmSync, statSync, writeFileSync } from 'node:fs'
+import { existsSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from 'node:fs'
 import { basename, dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { renderLoreMarkdown } from './lore-json-render.mjs'
 
 const scriptDir = dirname(fileURLToPath(import.meta.url))
 const docsSiteRoot = join(scriptDir, '..')
@@ -52,12 +53,34 @@ function listLoreMarkdown(dir) {
         continue
       }
       if (!st.isFile()) continue
+      if (name.endsWith('.json') && !name.startsWith('authoring.')) {
+        const document = loreJsonDocument(full)
+        const pageName = name.replace(/\.json$/, '.md')
+        if (document && !EXCLUDED_NAMES.has(pageName) && !PUBLIC_EXCLUDED_NAMES.has(pageName)) out.push({ name: pageName, src: full, document })
+        continue
+      }
       if (!name.endsWith('.md') || EXCLUDED_NAMES.has(name) || PUBLIC_EXCLUDED_NAMES.has(name) || name === 'README.md') continue
       out.push({ name, src: full })
     }
   }
   walk(dir)
-  return out
+  // A page authored as lore JSON replaces its Markdown twin in the same folder.
+  const jsonPages = new Set(out.filter((entry) => entry.document).map((entry) => join(dirname(entry.src), entry.name)))
+  return out.filter((entry) => entry.document || !jsonPages.has(entry.src))
+}
+
+// Lore JSON documents (lore/**/<Page>.json with content + domain) are pages; other JSON files are data.
+function loreJsonDocument(path) {
+  let value
+  try { value = JSON.parse(readFileSync(path, 'utf8')) } catch { return null }
+  return value && typeof value === 'object' && !Array.isArray(value) && typeof value.domain === 'string' && Array.isArray(value.content) ? value : null
+}
+
+// Where a lore link points: a page (.md, or a JSON page staged as .md) or a data file such as name-pools/values-cast.json.
+function loreLinkFile(domain, slug) {
+  const base = join(wikiRoot, 'lore', domain === 'root' ? '' : domain, slug)
+  const dataFile = existsSync(`${base}.json`) && !existsSync(`${base}.md`) && !loreJsonDocument(`${base}.json`)
+  return `lore/${domain === 'root' ? '' : `${domain}/`}${slug}${dataFile ? '.json' : '.md'}`
 }
 
 function sitePath(domain, filename) {
@@ -117,8 +140,8 @@ for (const name of listMarkdown(referenceDir)) {
 const candidates = []
 for (const { domain, dir } of DOMAIN_ROOTS) {
   if (domain === 'world') {
-    for (const { name, src } of listLoreMarkdown(dir)) {
-      candidates.push({ name, src, domain })
+    for (const { name, src, document } of listLoreMarkdown(dir)) {
+      candidates.push({ name, src, domain, document })
     }
     continue
   }
@@ -153,10 +176,10 @@ for (const { name, domain } of candidates) {
   pageByStem.set(name.replace(/\.md$/, ''), path)
 }
 
-for (const { name, src, domain } of candidates) {
+for (const { name, src, domain, document } of candidates) {
   if (rejected.some((r) => r.startsWith(`${name}:`))) continue
   const dest = join(docsSiteRoot, domain, name)
-  const content = readFileSync(src, 'utf8')
+  const content = document ? renderLoreMarkdown(document, 'ko', loreLinkFile) : readFileSync(src, 'utf8')
   writeFileSync(dest, rewriteContent(content, pageByFile, pageByStem))
   acceptedFiles.push(name)
 }
