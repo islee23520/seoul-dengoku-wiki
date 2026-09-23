@@ -1,0 +1,850 @@
+{
+  "version": 1,
+  "domain": "structures",
+  "id": "DOC:Structures",
+  "slug": "structures",
+  "status": "draft",
+  "tense": {
+    "en": "past",
+    "ko": "past"
+  },
+  "provenance": {
+    "original_anchor": "lore/structures/Structures.md",
+    "original_hash": "79dcb217185d87e734d4ad821610bcb2de343a5e5930bdf11071754466408b33",
+    "history": [
+      "Korean source lore/structures/Structures.md blob b6c954a421efc9d04fa955a9276510788db43ead at origin/main f0881f6970f11b06c08adaff0fec016f6a7c9ec4, SHA-256 79dcb217185d87e734d4ad821610bcb2de343a5e5930bdf11071754466408b33.",
+      "English source lore/structures/Structures.en.md blob d71b900ceffe88da30e26432bf0bf6babdbd3ff0 at origin/backup/w1-publisher-en-20260923 7a9eee8401a69a788a0b0f7a4088c4435993fbb1, SHA-256 7333f4f6bea0e4e17c8086f973cdff7d27cff03af4b1361dba5600c633ac33fd. Verbatim; no translation written.",
+      "Markdown sources retained. English front matter (tense, source_hash) is not a content block."
+    ]
+  },
+  "source": {
+    "kind": "original-fiction",
+    "refs": [
+      "lore/structures/Structures.md",
+      "lore/structures/Structures.en.md"
+    ]
+  },
+  "locales": {
+    "en": {
+      "title": "The Structures Compendium",
+      "summary": "The Seoul of the time was not a flat administrative map but a graph of stations, tunnels, and sluices.",
+      "tense": "past"
+    },
+    "ko": {
+      "title": "구조물 총람",
+      "summary": "당시의 서울은 평면 행정구역이 아니라 역과 터널과 수문의 그래프다.",
+      "tense": "past"
+    }
+  },
+  "content": [
+    {
+      "kind": "heading",
+      "anchor": "the-structures-compendium",
+      "text": {
+        "en": "The Structures Compendium",
+        "ko": "구조물 총람"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "the-structures-compendium-p1",
+      "text": {
+        "en": [
+          {
+            "text": "The Seoul of the time was not a flat administrative map but a graph of stations, tunnels, and sluices. Even in 2026 people crossed gu by subway, and the treatment centers and depots sat as the heavy nodes of that graph. On the night of the "
+          },
+          {
+            "text": "motive-power revocation",
+            "link": {
+              "domain": "overview",
+              "slug": "World-Unbinding"
+            }
+          },
+          {
+            "text": ", when remote control died, stations became fortresses and the centers of states, tunnels became licensed passage, and treatment plants and sluices became lock gates that opened only under signature. A century on, the sixteen states of 2126 read those points and lines as living spheres and never changed gu names into state names."
+          }
+        ],
+        "ko": [
+          {
+            "text": "당시의 서울은 평면 행정구역이 아니라 역과 터널과 수문의 그래프다. 2026년에도 사람은 지하철로 구를 넘었고, 정수센터와 차량기지가 그 그래프의 무거운 점으로 앉아 있었다. "
+          },
+          {
+            "text": "기동권 이탈",
+            "link": {
+              "domain": "overview",
+              "slug": "World-Unbinding"
+            }
+          },
+          {
+            "text": "의 밤에 원격 관제가 죽자, 역은 요새이자 나라의 중심지가 되고, 터널은 허가된 통행이 되었으며, 정수장과 수문은 서명이 있어야 열리는 갑문이 됐다. 한 세기가 지난 2126의 십육국은 그 점과 선을 생활권으로 읽을 뿐, 구 이름을 국호로 바꾸지는 않는다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "the-structures-compendium-p2",
+      "text": {
+        "en": [
+          {
+            "text": "This page did not re-describe the stations and gu the geography documents had already locked. The catalog's 334 stations belonged to "
+          },
+          {
+            "text": "the Seoul Station Catalog",
+            "link": {
+              "domain": "places",
+              "slug": "Seoul-Station-Catalog"
+            }
+          },
+          {
+            "text": ", the 25 gu and the assembly order to "
+          },
+          {
+            "text": "the world-map structure",
+            "link": {
+              "domain": "places",
+              "slug": "World-Map-Construction"
+            }
+          },
+          {
+            "text": ", the six layers to "
+          },
+          {
+            "text": "Seoul and the Subway Layers",
+            "link": {
+              "domain": "places",
+              "slug": "World-and-Subway-Layers"
+            }
+          },
+          {
+            "text": ", and the use of buildings to "
+          },
+          {
+            "text": "River, Gu, and Dong Building Reuse",
+            "link": {
+              "domain": "places",
+              "slug": "Building-Reuse-Geography"
+            }
+          },
+          {
+            "text": ". Here only the kinds of structure that held the states up on that skeleton were gathered."
+          }
+        ],
+        "ko": [
+          {
+            "text": "이 페이지는 지명 문서가 이미 잠근 역과 구를 다시 서술하지 않는다. 카탈로그의 334역은 "
+          },
+          {
+            "text": "서울 역 카탈로그",
+            "link": {
+              "domain": "places",
+              "slug": "Seoul-Station-Catalog"
+            }
+          },
+          {
+            "text": ", 구 25와 조립 순서는 "
+          },
+          {
+            "text": "월드맵 구성",
+            "link": {
+              "domain": "places",
+              "slug": "World-Map-Construction"
+            }
+          },
+          {
+            "text": ", 여섯 층은 "
+          },
+          {
+            "text": "서울과 지하철 레이어",
+            "link": {
+              "domain": "places",
+              "slug": "World-and-Subway-Layers"
+            }
+          },
+          {
+            "text": ", 건물 쓰임은 "
+          },
+          {
+            "text": "강·구·동 건물 재사용",
+            "link": {
+              "domain": "places",
+              "slug": "Building-Reuse-Geography"
+            }
+          },
+          {
+            "text": "이 정본이다. 여기서는 그 뼈대가 어떤 종류의 구조물로 나라를 받치는지만 모은다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "the-structures-compendium-h2",
+      "text": {
+        "en": "Stations",
+        "ko": "역"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "the-structures-compendium-h2-p3",
+      "text": {
+        "en": "A station was not a flag completed at occupation but a stronghold whose people, facilities, and connections had to be relit. Where a dong had a subway, that station building became the core facility, and rationing, transit tolls, shelter, and refuge looked to the station first. Schools, community centers, and hospitals were support buildings. When Yeongdeungpo Station held the treatment watch and the unloading floor, the Water Compact's window opened in its concourse; when Seoul Station kept the accreditation seals, the Republic of Korea Government's legitimacy stood and remained at its threshold; when Amsa Station overlapped treatment and escort, the eastern perimeter's protection sphere was read on its platforms. Sindorim was the junction where the door became the state's bottleneck between Yeongdeungpo and Guro, and Suseo the place where the southern depot and contract administration sat under one roof.",
+        "ko": "역은 점령 즉시 완성되는 깃발이 아니라, 사람과 시설과 연결을 다시 켜야 하는 거점이다. 동에 지하철이 있으면 그 역 건물이 핵심 시설이 되고, 배급·통행세·숙영·피난은 역을 먼저 본다. 학교와 주민센터와 병원은 지원 건물이다. 영등포역이 정수 당직과 하역장을 붙들면 급수계약정의 창구가 그 대합실에서 열리고, 서울역이 인준 도장을 지키면 대한민국정부의 법통이 서고 문턱에 남으며, 암사역이 정수와 호위를 겹치면 동부 시계의 보호권이 승강장에서 읽힌다. 신도림은 영등포와 구로 사이에서 문이 국가의 병목이 되는 연결부이고, 수서는 남부 기지와 계약 행정이 한 지붕 아래 붙는 자리다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "the-structures-compendium-h2-p4",
+      "text": {
+        "en": [
+          {
+            "text": "The interior layers were six: surface ruins, the station concourse, platforms and tracks, transfer corridors, deep tunnels, and depot adjacency. The concourse carried markets, habitation, and administration; the platforms movement, defense, and freight; the transfers the politics between lines and the seat of transit tolls. The entry procedure and facility-slot numbers were written as design in "
+          },
+          {
+            "text": "Entering the Station Interior",
+            "link": {
+              "domain": "places",
+              "slug": "Station-Interior-Construction"
+            }
+          },
+          {
+            "text": ", but it did not say the current running map already held the interiors of all 334. A stronghold's authority, cooperation, and integration conditions were computed by "
+          },
+          {
+            "text": "Strongholds and Territory",
+            "link": {
+              "domain": "economy",
+              "slug": "Strongholds-and-Territory"
+            }
+          },
+          {
+            "text": "."
+          }
+        ],
+        "ko": [
+          {
+            "text": "내부 층은 지상 폐허, 역사 대합실, 승강장·선로, 환승 통로, 심층 터널, 차량기지 인접의 여섯이다. 대합실은 시장과 주거와 행정, 승강장은 이동과 방어와 화물, 환승은 노선 사이 정치와 통행세의 자리다. 입장 절차와 시설 슬롯의 숫자는 "
+          },
+          {
+            "text": "역 내부에 들어가면",
+            "link": {
+              "domain": "places",
+              "slug": "Station-Interior-Construction"
+            }
+          },
+          {
+            "text": "에 설계로 적혀 있되, 지금 돌아가는 지도가 334곳의 내부를 이미 갖는다고 쓰지 않는다. 거점의 권위와 협력과 통합 조건은 "
+          },
+          {
+            "text": "거점과 영토",
+            "link": {
+              "domain": "economy",
+              "slug": "Strongholds-and-Territory"
+            }
+          },
+          {
+            "text": "가 계산한다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "the-structures-compendium-h2-p5",
+      "text": {
+        "en": [
+          {
+            "text": "Which station name belonged to which state was left unconfirmed. Only the sphere arms were fixed by "
+          },
+          {
+            "text": "the Sixteen States of Seoul",
+            "link": {
+              "domain": "factions",
+              "slug": "Sixteen-States"
+            }
+          },
+          {
+            "text": ", and occupation went by building-unit dominance. Seoul Station in Jongno and Jung-gu, the rail warehouses of Yongsan, Amsa in Gangdong, the Garak windows in Songpa, and Magok and Banghwa in Gangseo were often called the representative nodes of their spheres. The ban on turning a gu into a state held in this compendium too."
+          }
+        ],
+        "ko": [
+          {
+            "text": "어느 역 이름이 어느 국의 소유인지는 미확인으로 남긴다. 권역 문장만 "
+          },
+          {
+            "text": "서울 십육국",
+            "link": {
+              "domain": "factions",
+              "slug": "Sixteen-States"
+            }
+          },
+          {
+            "text": "이 고정하고, 점령은 건물 단위의 지배력으로 간다. 종로·중구의 서울역, 용산의 철도 창고, 강동의 암사, 송파의 가락 창구, 강서의 마곡·방화가 그 권역의 대표 점으로 자주 불린다. 구를 국가로 바꾸지 않는다는 금지는 총람에서도 같다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "the-structures-compendium-h2-h2",
+      "text": {
+        "en": "Tunnels",
+        "ko": "터널"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "the-structures-compendium-h2-h2-p6",
+      "text": {
+        "en": "Between station and station lay lines that were never erased. Only the states changed — normal, hazardous, controlled, blockaded, flooded, collapsed, provisional repair — and cause and repair conditions followed. Yeongdeungpo–Sindorim and Sindorim–Guro were adjacencies the current map already knew, and no line skipped Yeongdeungpo–Guro in one cell. The full catalog's adjacencies went up as design data as 435 drawn from map points.",
+        "ko": "역과 역 사이는 지워지지 않는 선이다. 정상, 위험, 통제, 봉쇄, 침수, 붕괴, 임시 복구의 상태만 바뀌고, 원인과 복구 조건이 따라붙는다. 영등포—신도림, 신도림—구로는 지금 지도가 이미 아는 인접이고, 영등포—구로를 한 칸으로 건너뛰는 선은 없다. 카탈로그 전체의 인접은 지도 점에서 뽑은 435가 설계 자료로 올라가 있다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "the-structures-compendium-h2-h2-p7",
+      "text": {
+        "en": [
+          {
+            "text": "A transfer station cut from power stopped the traction freight flow even with both tunnels sound. Provisional repair passed only foot and light freight; heavy freight and armed passage took separate approval. The deeps were the seat of covert movement and maintenance, but flooding and communications loss came first. The formulas of throughput, isolation, and overreach were locked in "
+          },
+          {
+            "text": "Logistics and Infrastructure",
+            "link": {
+              "domain": "economy",
+              "slug": "Logistics-and-Infrastructure"
+            }
+          },
+          {
+            "text": "."
+          }
+        ],
+        "ko": [
+          {
+            "text": "전력 차단 환승역은 양쪽 터널이 멀쩡해도 전동 화물 흐름을 멈춘다. 임시 복구는 도보와 경화물만 통과시키고, 중화물과 무장 통과는 별도 승인을 받는다. 심층은 은밀 이동과 정비의 자리이되 침수와 통신 단절이 먼저 온다. 처리량과 고립과 과확장의 식은 "
+          },
+          {
+            "text": "물류와 기반 시설",
+            "link": {
+              "domain": "economy",
+              "slug": "Logistics-and-Infrastructure"
+            }
+          },
+          {
+            "text": "이 잠갔다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "the-structures-compendium-h2-h2-p8",
+      "text": {
+        "en": [
+          {
+            "text": "The looping chassis took these lines as the stage of their last search and patrol routines, and the rat colonies nested in the cable trays under the transfer shopping streets. The bodies beside people were written by "
+          },
+          {
+            "text": "People and Machines",
+            "link": {
+              "domain": "people-and-machines",
+              "slug": "People-and-Machines"
+            }
+          },
+          {
+            "text": ". The creation oral record of a tunnel newly dug was not canon. The 2026 lines remained with only their states changed."
+          }
+        ],
+        "ko": [
+          {
+            "text": "반복하는 기체는 이 선로를 마지막 수색·경계 루틴의 무대로 삼고, 쥐 군락은 환승 상점가 아래 케이블 트레이를 둥지로 쓴다. 사람 옆의 몸체는 "
+          },
+          {
+            "text": "사람과 기체",
+            "link": {
+              "domain": "people-and-machines",
+              "slug": "People-and-Machines"
+            }
+          },
+          {
+            "text": "가 적는다. 터널을 새로 뚫었다는 창세 구술은 정본이 아니다. 2026의 선로가 상태만 바꾼 채 남는다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "the-structures-compendium-h2-h2-h2",
+      "text": {
+        "en": "Depots",
+        "ko": "차량기지"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "the-structures-compendium-h2-h2-h2-p9",
+      "text": {
+        "en": "Depot area was the normal-time memory of rolling stock and maintenance; post-collapse operating volume was creative. The measured names within Seoul were eight: Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae, and Suseo. The Water Compact corresponded to Sinjeong, the Standards Alliance to Cheonwang, the Escort Protection State to Godeok, and the Neutral Convoy City to Sinnae. Banghwa, Gunja, Changdong, and Suseo were no state's capital depot but remained unclaimed or edge corridors. They were the seats emptied of the Magok research, Ttukseom workshops, Changdong wheels, and Suseo protection capitals. Jichuk, Dobong, Moran, and Gimpo remained pressure from outside the Seoul slots.",
+        "ko": "기지 면적은 정상시 유치와 정비의 기억이고, 붕괴 후 가동 량은 창작이다. 서울 안의 실측 이름은 신정, 천왕, 방화, 군자, 고덕, 창동, 신내, 수서 여덟이다. 급수계약정은 신정, 규격동맹은 천왕, 호위보호정은 고덕, 중립호송시는 신내에 대응한다. 방화·군자·창동·수서는 어떤 나라의 수도 기지가 아니라 무주지 또는 가장자리 회랑으로 남는다. 마곡 연구·뚝섬 공방·창동 차륜·수서 보호의 수도를 비운 자리다. 지축·도봉·모란·김포는 서울 슬롯 밖의 압력으로 남는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "the-structures-compendium-h2-h2-h2-p10",
+      "text": {
+        "en": [
+          {
+            "text": "A depot was the seat of repair, bulk storage, and siege. Sinjeong's unloading and Godeok's train maintenance became a state's arms of legitimacy because the hands that moved a stopped train again or sent a convoy were there; Changdong's wheels and brakes lost their owner and remained only as leases in neighboring heads' ledgers. The drainage ponds became the water surface where tank aquaculture and migratory birds overlapped, and in the deep bays of maintenance sheds the sealing of looping chassis attached as a creative layer. The charging terminals and hydraulic hoses were the repair layer of "
+          },
+          {
+            "text": "Lost Technology",
+            "link": {
+              "domain": "technology",
+              "slug": "Lost-Technology-Lineage"
+            }
+          },
+          {
+            "text": "."
+          }
+        ],
+        "ko": [
+          {
+            "text": "기지는 수리와 대형 저장과 공성의 자리다. 신정의 하역, 고덕의 열차 정비가 나라의 정통성 문장이 되는 까닭은 멈춘 열차를 다시 움직이거나 호송을 보내는 손이 거기 있기 때문이고, 창동의 차륜과 제동은 임자를 잃고 이웃 수장 장부에 임대로만 남는다. 배수 연못은 수조 농어와 철새 기착이 겹치는 수면이 되고, 정비고 깊은 칸에는 반복 기체의 봉인이 창작 레이어로 붙는다. 충전 단자와 유압 호스는 "
+          },
+          {
+            "text": "잃어버린 기술",
+            "link": {
+              "domain": "technology",
+              "slug": "Lost-Technology-Lineage"
+            }
+          },
+          {
+            "text": "의 수리 층이다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "the-structures-compendium-h2-h2-h2-p11",
+      "text": {
+        "en": "The industrial blocks of Guro and Geumcheon clung to the depots and used schools for drying parts, and the residential shells of Dobong and Nowon could not hold water without Changdong. Depot names were not raised to state names. The wheels and dispatch that people watched over became the state names.",
+        "ko": "구로·금천의 공단 동은 기지와 붙어 학교를 부품 건조로 쓰고, 도봉·노원의 주거 쉘은 창동 없이 물을 유지하지 못한다. 기지 이름을 국호로 올리지 않는다. 사람이 지켜보는 차륜과 배차가 나라 이름이 된다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "the-structures-compendium-h2-h2-h2-h2",
+      "text": {
+        "en": "Treatment Plants and Sluices",
+        "ko": "정수장과 수문"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "the-structures-compendium-h2-h2-h2-h2-p12",
+      "text": {
+        "en": [
+          {
+            "text": "For water to flow, a person with a name stood before the lock gate. The measured sites within Seoul were the Yeongdeungpo, Ttukseom, Guui, and Amsa Arisu treatment centers; Gangbuk lay in Namyangju and Gwangam in Hanam. The public water-supply districts were not carried over into post-collapse territory as they stood. That the Water Compact held the Yeongdeungpo site and sluices, the Sermon Registry State the Ttukseom pumps and workshops, the Gate Military Government the Guui limited supply, and the Escort Protection State the Amsa treatment and Godeok depot under military superintendence was the creative disposition of the time. The table's source states were canon in "
+          },
+          {
+            "text": "the Sixteen States of Seoul",
+            "link": {
+              "domain": "factions",
+              "slug": "Sixteen-States"
+            }
+          },
+          {
+            "text": "."
+          }
+        ],
+        "ko": [
+          {
+            "text": "물이 나오려면 갑문 앞에 이름이 있는 사람이 선다. 실측 부지는 영등포아리수정수센터, 뚝섬아리수정수센터, 구의아리수정수센터, 암사아리수정수센터가 서울 안에 있고, 강북은 남양주, 광암은 하남에 있다. 공개 급수구역을 붕괴 이후 영토로 그대로 옮기지 않는다. 급수계약정이 영등포 부지와 수문을 장악하고, 설교명부정가 뚝섬의 펌프와 공방을, 관문군정이 구의의 제한 급수를, 호위보호정이 암사 정수와 고덕 기지를 군사 감독하는 배치는 당시의 창작이다. 표의 출처 상태는 "
+          },
+          {
+            "text": "서울 십육국",
+            "link": {
+              "domain": "factions",
+              "slug": "Sixteen-States"
+            }
+          },
+          {
+            "text": "이 정본이다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "the-structures-compendium-h2-h2-h2-h2-p13",
+      "text": {
+        "en": [
+          {
+            "text": "The sluice was the seat where rite and contract shared one handle. The Arisu mark rose as an old-world symbol, and the habit remained that water without the mark was guest water, used in neither the ration pots nor the rites. The oral record that the First and Second Water Compacts bound the watches of Yeouido, Ttukseom, Amsa, and Jegi-dong in one wording was arranged as a list by "
+          },
+          {
+            "text": "The Stories",
+            "link": {
+              "domain": "culture",
+              "slug": "Oral-Stories"
+            }
+          },
+          {
+            "text": ". The symptoms of turbid water becoming waterborne disease and of cooling loops mixing into the drinking ledger were "
+          },
+          {
+            "text": "Ailments and Symptoms",
+            "link": {
+              "domain": "ailments",
+              "slug": "Ailments"
+            }
+          },
+          {
+            "text": "; the order in which the pot waited for the sluice was "
+          },
+          {
+            "text": "Food Culture",
+            "link": {
+              "domain": "culture",
+              "slug": "Food-Culture"
+            }
+          },
+          {
+            "text": "."
+          }
+        ],
+        "ko": [
+          {
+            "text": "수문은 제사와 계약이 한 손잡이를 나누는 자리다. 아리수 표지가 구세계 상징으로 오르고, 표지 없는 물은 손님물이라 배급 솥에도 제사에도 쓰지 않는 습관이 남는다. 첫 급수협약과 둘째 급수협약이 여의도와 뚝섬과 암사와 제기동의 당직을 같은 문구에 묶은 구술은 "
+          },
+          {
+            "text": "이야기",
+            "link": {
+              "domain": "culture",
+              "slug": "Oral-Stories"
+            }
+          },
+          {
+            "text": "가 목록으로 정리한다. 탁한 물이 수인병이 되고 냉각 루프가 식수 원장과 섞이는 증상은 "
+          },
+          {
+            "text": "질병과 증상",
+            "link": {
+              "domain": "ailments",
+              "slug": "Ailments"
+            }
+          },
+          {
+            "text": ", 솥이 수문을 기다리는 순서는 "
+          },
+          {
+            "text": "식문화",
+            "link": {
+              "domain": "culture",
+              "slug": "Food-Culture"
+            }
+          },
+          {
+            "text": "다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "the-structures-compendium-h2-h2-h2-h2-p14",
+      "text": {
+        "en": [
+          {
+            "text": "The first floors north and south of the Han, and the tributaries Jungnang, Anyang, Tan, Cheonggye, and Hongje, decided which dongs got wet. Yeouido, Ichon, Banpo, Jamsil, Mangwon, Hapjeong, Amsa, Guui, and Jayang were read as main-channel waterfront. Habitation pushed above the third floor and the ration windows sat inside the embankment. The details of the waterfront rules were already written by "
+          },
+          {
+            "text": "River, Gu, and Dong Building Reuse",
+            "link": {
+              "domain": "places",
+              "slug": "Building-Reuse-Geography"
+            }
+          },
+          {
+            "text": "."
+          }
+        ],
+        "ko": [
+          {
+            "text": "한강 이북과 이남의 1층, 중랑천·안양천·탄천·청계·홍제의 지천이 어느 동이 젖는지를 가른다. 여의도·이촌·반포·잠실·망원·합정·암사·구의·자양은 본류 수변으로 본다. 거주는 3층 이상, 배급 창구는 제방 안쪽이다. 수변 규칙의 세부는 "
+          },
+          {
+            "text": "강·구·동 건물 재사용",
+            "link": {
+              "domain": "places",
+              "slug": "Building-Reuse-Geography"
+            }
+          },
+          {
+            "text": "이 이미 적었다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "the-structures-compendium-h2-h2-h2-h2-h2",
+      "text": {
+        "en": "Passages",
+        "ko": "통로"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "the-structures-compendium-h2-h2-h2-h2-h2-p15",
+      "text": {
+        "en": [
+          {
+            "text": "Passages were the narrow lines where transfer, maintenance, and refuge overlapped. The transfer corridors were the hubs of politics and logistics between lines, and blockades, transit tolls, and congestion came first. The junctions where the Gangdong and Amsa ration corridors met the Eunpyeong and Seongbuk evacuation stairs became the warm nests of the rat colonies, and the fictional Sindorim junction split the main freight door from the maintenance passage that took only people and packloads, using siege as its stage. The limit that the Sindorim incident's place was one fictional junction unrelated to the catalog's 334 stood in "
+          },
+          {
+            "text": "the Scenario Timeline",
+            "link": {
+              "domain": "chronology",
+              "slug": "Scenario-Timeline"
+            }
+          },
+          {
+            "text": "."
+          }
+        ],
+        "ko": [
+          {
+            "text": "통로는 환승과 정비와 피난이 겹치는 좁은 선이다. 환승 통로는 노선 사이 정치와 물류의 허브이고, 봉쇄와 통행세와 혼잡이 먼저 온다. 강동·암사 쪽 배급 통로와 은평·성북 쪽 대피 계단이 맞물리는 연결부는 쥐 군락의 온열 둥지가 되며, 신도림의 창작 연결부는 주 화물문과 사람·등짐만 지나는 정비 통로를 나눠 공성의 무대로 쓴다. 신도림 사건의 장소는 카탈로그 334와 무관한 창작 연결부 하나라는 한계가 "
+          },
+          {
+            "text": "연표",
+            "link": {
+              "domain": "chronology",
+              "slug": "Scenario-Timeline"
+            }
+          },
+          {
+            "text": "에 있다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "the-structures-compendium-h2-h2-h2-h2-h2-p16",
+      "text": {
+        "en": "The vertical connections were stairs, elevators, and ventilation shafts. Flooded floors showed cause and repair conditions and kept people out — that was the design. The Bukhansan Bogukmun mountain refuge roads, the Jegi-dong herb unloading, and the lower passages under the Noryangjin elevated joined the same graph from outside the stations. Connections were never deleted. Their states changed, and those states changed the times of rice, medicine, and convoys.",
+        "ko": "수직 연결은 계단, 승강기, 환기구다. 침수된 층은 원인과 복구 조건을 보여 주고 못 들어가게 하는 것이 설계다. 북한산보국문의 산악 피난로와 제기동의 약재 하역, 노량진 고가 아래 하층 통로가 역 바깥에서 같은 그래프에 붙는다. 연결은 삭제하지 않는다. 상태가 바뀌고, 그 상태가 밥과 약과 호송의 시간을 바꾼다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "the-structures-compendium-h2-h2-h2-h2-h2-p17",
+      "text": {
+        "en": "The market's four names — Garak Market, Gangseo Market, Yanggok Market, and the Noryangjin Fisheries Market — were surrounding facilities of the stronghold slots and could not replace stations. Garak was the hub of price discovery and not a production site; Noryangjin leaned on frozen and ice credit and was fragile to power cuts. The thousands of convenience stores and clinics were the noise of trades, and went into no cell of this compendium.",
+        "ko": "시장 네 이름—가락시장, 강서시장, 양곡시장, 노량진 수산시장—은 거점 슬롯의 주변 시설이며 역을 대체하지 못한다. 가락은 가격 발견의 허브이고 생산지가 아니며, 노량진은 냉동과 얼음 신용에 기대 전력 단절에 취약하다. 편의점과 의원 수천은 생업 소음이고, 이 총람의 칸으로 올리지 않는다."
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "the-structures-compendium-h2-h2-h2-h2-h2-table",
+      "columns": [
+        {
+          "en": "Structure",
+          "ko": "구조"
+        },
+        {
+          "en": "2026 starting point",
+          "ko": "2026 출발점"
+        },
+        {
+          "en": "Work at the opening",
+          "ko": "개막에 하는 일"
+        },
+        {
+          "en": "Canon for detail",
+          "ko": "상세 정본"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Station",
+            "ko": "역"
+          },
+          {
+            "en": "The 334 named stations, concourses and platforms",
+            "ko": "이름 있는 역 334, 대합실과 승강장"
+          },
+          {
+            "en": "Fortress, ration windows, the centers of states",
+            "ko": "요새, 배급 창구, 나라의 중심지"
+          },
+          {
+            "en": [
+              {
+                "text": "the Seoul Station Catalog",
+                "link": {
+                  "domain": "places",
+                  "slug": "Seoul-Station-Catalog"
+                }
+              }
+            ],
+            "ko": [
+              {
+                "text": "서울 역 카탈로그",
+                "link": {
+                  "domain": "places",
+                  "slug": "Seoul-Station-Catalog"
+                }
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "en": "Tunnel",
+            "ko": "터널"
+          },
+          {
+            "en": "Adjacent lines drawn from map points, transfers",
+            "ko": "지도 점에서 뽑은 인접 선로, 환승"
+          },
+          {
+            "en": "Licensed passage, the states of flooding and blockade",
+            "ko": "허가된 통행, 침수와 봉쇄의 상태"
+          },
+          {
+            "en": [
+              {
+                "text": "Seoul and the Subway Layers",
+                "link": {
+                  "domain": "places",
+                  "slug": "World-and-Subway-Layers"
+                }
+              }
+            ],
+            "ko": [
+              {
+                "text": "서울과 지하철 레이어",
+                "link": {
+                  "domain": "places",
+                  "slug": "World-and-Subway-Layers"
+                }
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "en": "Depot",
+            "ko": "차량기지"
+          },
+          {
+            "en": "Sinjeong·Cheonwang·Banghwa·Gunja·Godeok·Changdong·Sinnae·Suseo",
+            "ko": "신정·천왕·방화·군자·고덕·창동·신내·수서"
+          },
+          {
+            "en": "Repair, rolling stock, wheels and convoys",
+            "ko": "수리, 유치, 차륜과 호송"
+          },
+          {
+            "en": [
+              {
+                "text": "the world-map structure",
+                "link": {
+                  "domain": "places",
+                  "slug": "World-Map-Construction"
+                }
+              }
+            ],
+            "ko": [
+              {
+                "text": "월드맵 구성",
+                "link": {
+                  "domain": "places",
+                  "slug": "World-Map-Construction"
+                }
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "en": "Treatment plant · sluice",
+            "ko": "정수장·수문"
+          },
+          {
+            "en": "Yeongdeungpo·Ttukseom·Guui·Amsa Arisu",
+            "ko": "영등포·뚝섬·구의·암사 아리수"
+          },
+          {
+            "en": "Water signatures, lock-gate watches",
+            "ko": "급수 서명, 갑문 당직"
+          },
+          {
+            "en": [
+              {
+                "text": "the Sixteen States of Seoul",
+                "link": {
+                  "domain": "factions",
+                  "slug": "Sixteen-States"
+                }
+              }
+            ],
+            "ko": [
+              {
+                "text": "서울 십육국",
+                "link": {
+                  "domain": "factions",
+                  "slug": "Sixteen-States"
+                }
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "en": "Passage",
+            "ko": "통로"
+          },
+          {
+            "en": "Transfers, maintenance corridors, refuge stairs",
+            "ko": "환승, 정비 통로, 피난 계단"
+          },
+          {
+            "en": "Transit tolls, leftovers and heat, detours",
+            "ko": "통행세, 잔반과 열, 우회"
+          },
+          {
+            "en": [
+              {
+                "text": "Logistics and Infrastructure",
+                "link": {
+                  "domain": "economy",
+                  "slug": "Logistics-and-Infrastructure"
+                }
+              }
+            ],
+            "ko": [
+              {
+                "text": "물류와 기반 시설",
+                "link": {
+                  "domain": "economy",
+                  "slug": "Logistics-and-Infrastructure"
+                }
+              }
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "data": {
+    "function": "lore/structures/Structures.md"
+  }
+}
