@@ -235,7 +235,8 @@
         "schemaVersion",
         "locale",
         "document",
-        "blocks"
+        "blocks",
+        "source"
       ],
       "properties": {
         "schemaVersion": {
@@ -269,6 +270,24 @@
           "items": {
             "$ref": "#/$defs/block"
           }
+        },
+        "source": {
+          "type": "object",
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "const": "adr/ADR-001-repository-delivery-policy.md"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "additionalProperties": false
         }
       },
       "additionalProperties": false
@@ -280,7 +299,8 @@
         "schemaVersion",
         "locale",
         "document",
-        "blocks"
+        "blocks",
+        "source"
       ],
       "properties": {
         "schemaVersion": {
@@ -314,6 +334,24 @@
           "items": {
             "$ref": "#/$defs/block"
           }
+        },
+        "source": {
+          "type": "object",
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "const": "adr/ADR-002-character-candidate-retrospective.md"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "additionalProperties": false
         }
       },
       "additionalProperties": false
@@ -325,7 +363,8 @@
         "schemaVersion",
         "locale",
         "document",
-        "blocks"
+        "blocks",
+        "source"
       ],
       "properties": {
         "schemaVersion": {
@@ -359,6 +398,24 @@
           "items": {
             "$ref": "#/$defs/block"
           }
+        },
+        "source": {
+          "type": "object",
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "const": "adr/ADR-003-real-place-and-station-naming.md"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "additionalProperties": false
         }
       },
       "additionalProperties": false
@@ -370,7 +427,8 @@
         "schemaVersion",
         "locale",
         "document",
-        "blocks"
+        "blocks",
+        "source"
       ],
       "properties": {
         "schemaVersion": {
@@ -404,6 +462,24 @@
           "items": {
             "$ref": "#/$defs/block"
           }
+        },
+        "source": {
+          "type": "object",
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "const": "adr/ADR-004-root-domain-structure.md"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "additionalProperties": false
         }
       },
       "additionalProperties": false
@@ -415,7 +491,8 @@
         "schemaVersion",
         "locale",
         "document",
-        "blocks"
+        "blocks",
+        "source"
       ],
       "properties": {
         "schemaVersion": {
@@ -449,6 +526,24 @@
           "items": {
             "$ref": "#/$defs/block"
           }
+        },
+        "source": {
+          "type": "object",
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "const": "adr/ADR-005-backend-host-session-multiplayer.md"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "additionalProperties": false
         }
       },
       "additionalProperties": false
@@ -460,7 +555,8 @@
         "schemaVersion",
         "locale",
         "document",
-        "blocks"
+        "blocks",
+        "source"
       ],
       "properties": {
         "schemaVersion": {
@@ -494,6 +590,24 @@
           "items": {
             "$ref": "#/$defs/block"
           }
+        },
+        "source": {
+          "type": "object",
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "const": "adr/ADR-006-backend-aspnet-core-coordinator.md"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          "additionalProperties": false
         }
       },
       "additionalProperties": false
