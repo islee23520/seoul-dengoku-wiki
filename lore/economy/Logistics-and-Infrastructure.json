@@ -190,12 +190,13 @@
       }
     },
     {
-      "kind": "paragraph",
+      "kind": "code",
       "anchor": "logistics-and-infrastructure-calculation-rules-code1",
       "text": {
         "en": "C_e = clamp(B_e * I_e * P_e * X_e * (1-H_e), 0, B_e)\nsupply-rate = clamp(arrivals / max(watch-period-demand, 1), 0, 1)\nshortage-rate = clamp(unmet / max(requirement, 1), 0, 1)\nburden-ratio(numerator, denominator) = if the denominator is 0 then (0 if the numerator is also 0, else 3), else numerator/denominator\noverreach = clamp(max(burden-ratio(required-throughput, actual-flow), burden-ratio(return-requirement, Q), burden-ratio(governance-burden, administrative-capacity)) - 1, 0, 2)\nfull-isolation = 1 if the isolation stage is 2, else 0\nloadΔ = clamp(20 * shortage-rate + 8 * full-isolation + 6 * overreach, 0, 35)\nload A = clamp(A + loadΔ, 0, 100)",
         "ko": "C_e = clamp(B_e * I_e * P_e * X_e * (1-H_e), 0, B_e)\n보급률 = clamp(도착량 / max(감시기간수요, 1), 0, 1)\n부족률 = clamp(미충족량 / max(필요량, 1), 0, 1)\n부담비율(분자, 분모) = 분모가 0이면 (분자도 0이면 0, 아니면 3), 아니면 분자/분모\n과확장 = clamp(max(부담비율(요구처리량, 실제흐름), 부담비율(귀환필요량, Q), 부담비율(통치부담, 행정역량)) - 1, 0, 2)\n완전고립 = 고립 단계가 2이면 1, 아니면 0\n부하Δ = clamp(20 * 부족률 + 8 * 완전고립 + 6 * 과확장, 0, 35)\n부하 A = clamp(A + 부하Δ, 0, 100)"
-      }
+      },
+      "language": "text"
     },
     {
       "kind": "paragraph",
@@ -406,12 +407,13 @@
       ]
     },
     {
-      "kind": "paragraph",
+      "kind": "code",
       "anchor": "logistics-and-infrastructure-base-numbers-mermaid2",
       "text": {
         "en": "flowchart LR\n  S[supply stronghold] -->|throughput| H[transfer hub]\n  H -->|license · power · state| P[expedition]\n  H -. blockade .-> X[a link kept as a mark only]\n  P --> R[return reserves]\n  P --> A[shortage · fatigue · readiness]",
         "ko": "flowchart LR\n  S[공급 거점] -->|처리량| H[환승 허브]\n  H -->|허가·전력·상태| P[원정대]\n  H -. 봉쇄 .-> X[표시만 유지되는 연결]\n  P --> R[귀환 비축]\n  P --> A[부족·피로·준비도]"
-      }
+      },
+      "language": "mermaid"
     },
     {
       "kind": "heading",
