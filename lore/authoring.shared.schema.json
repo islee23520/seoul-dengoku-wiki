@@ -177,6 +177,9 @@
         "domain",
         "id",
         "slug",
+        "status",
+        "tense",
+        "provenance",
         "source",
         "locales",
         "content",
@@ -195,6 +198,28 @@
         "slug": {
           "type": "string",
           "pattern": "^[A-Za-z0-9_][A-Za-z0-9_-]*$"
+        },
+        "status": {
+          "enum": ["draft", "approved", "excluded"]
+        },
+        "tense": {
+          "type": "object",
+          "required": ["en", "ko"],
+          "properties": {
+            "en": {"enum": ["past", "present"]},
+            "ko": {"enum": ["past", "present"]}
+          },
+          "additionalProperties": false
+        },
+        "provenance": {
+          "type": "object",
+          "required": ["original_anchor", "original_hash", "history"],
+          "properties": {
+            "original_anchor": {"type": "string", "minLength": 1},
+            "original_hash": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"},
+            "history": {"type": "array", "items": {"type": "string", "minLength": 1}}
+          },
+          "additionalProperties": false
         },
         "source": {
           "$ref": "#/$defs/source"

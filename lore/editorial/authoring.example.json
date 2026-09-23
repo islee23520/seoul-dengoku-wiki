@@ -3,6 +3,16 @@
   "domain": "editorial",
   "id": "__EXAMPLE__:editorial",
   "slug": "__EXAMPLE__-editorial",
+  "status": "draft",
+  "tense": {
+    "en": "past",
+    "ko": "past"
+  },
+  "provenance": {
+    "original_anchor": "__EXAMPLE__:source-anchor",
+    "original_hash": null,
+    "history": []
+  },
   "source": {
     "kind": "original-fiction",
     "refs": []

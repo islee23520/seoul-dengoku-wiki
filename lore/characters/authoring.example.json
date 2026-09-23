@@ -3,6 +3,16 @@
   "domain": "characters",
   "id": "__EXAMPLE__:characters",
   "slug": "__EXAMPLE__-characters",
+  "status": "draft",
+  "tense": {
+    "en": "past",
+    "ko": "past"
+  },
+  "provenance": {
+    "original_anchor": "__EXAMPLE__:source-anchor",
+    "original_hash": null,
+    "history": []
+  },
   "source": {
     "kind": "original-fiction",
     "refs": []

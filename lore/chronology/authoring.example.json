@@ -3,6 +3,16 @@
   "domain": "chronology",
   "id": "__EXAMPLE__:chronology",
   "slug": "__EXAMPLE__-chronology",
+  "status": "draft",
+  "tense": {
+    "en": "past",
+    "ko": "past"
+  },
+  "provenance": {
+    "original_anchor": "__EXAMPLE__:source-anchor",
+    "original_hash": null,
+    "history": []
+  },
   "source": {
     "kind": "original-fiction",
     "refs": []

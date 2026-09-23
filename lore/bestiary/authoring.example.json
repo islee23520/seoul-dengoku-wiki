@@ -3,6 +3,16 @@
   "domain": "bestiary",
   "id": "__EXAMPLE__:bestiary",
   "slug": "__EXAMPLE__-bestiary",
+  "status": "draft",
+  "tense": {
+    "en": "past",
+    "ko": "past"
+  },
+  "provenance": {
+    "original_anchor": "__EXAMPLE__:source-anchor",
+    "original_hash": null,
+    "history": []
+  },
   "source": {
     "kind": "original-fiction",
     "refs": []
