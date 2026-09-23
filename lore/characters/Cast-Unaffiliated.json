@@ -1,0 +1,312 @@
+{
+  "version": 1,
+  "domain": "characters",
+  "id": "DOC:Cast-Unaffiliated",
+  "slug": "cast-unaffiliated",
+  "status": "draft",
+  "tense": {
+    "en": "present",
+    "ko": "present"
+  },
+  "provenance": {
+    "original_anchor": "lore/characters/Cast-Unaffiliated.md",
+    "original_hash": "f146aa0da7fd4baa82943d92baa30dd780585c41c6619e8eeb639cd2edab3487",
+    "history": [
+      "Korean lore/characters/Cast-Unaffiliated.md SHA-256 f146aa0da7fd4baa82943d92baa30dd780585c41c6619e8eeb639cd2edab3487.",
+      "English SHA-256 dab7d089f13940c38be836b39f3c8ad1e4a4bdab0bcb1394bb1374d33d71bde7; translated from Korean during the JSON migration (no committed EN existed).",
+      "KO from the sweep-w1 WEB working tree (clean). EN needs human review."
+    ]
+  },
+  "source": {
+    "kind": "original-fiction",
+    "refs": [
+      "lore/characters/Cast-Unaffiliated.md"
+    ]
+  },
+  "locales": {
+    "en": {
+      "title": "Unaffiliated Cast",
+      "summary": "This is the ledger of unaffiliated people who appear in none of the sixteen-state rosters, the core cast, or the corridor cast.",
+      "tense": "present"
+    },
+    "ko": {
+      "title": "무소속 인물",
+      "summary": "16국 명부와 핵심 인물, 회랑 인물 어디에도 들어가지 않는 무소속 인물들의 장부다.",
+      "tense": "present"
+    }
+  },
+  "content": [
+    {
+      "kind": "heading",
+      "anchor": "무소속-인물",
+      "depth": 1,
+      "text": {
+        "en": "Unaffiliated Cast",
+        "ko": "무소속 인물"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "무소속-인물-p1",
+      "text": {
+        "en": "This is the ledger of unaffiliated people who appear in none of the sixteen-state rosters, the core cast, or the corridor cast.",
+        "ko": "16국 명부와 핵심 인물, 회랑 인물 어디에도 들어가지 않는 무소속 인물들의 장부다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "인물-카드",
+      "depth": 2,
+      "text": {
+        "en": "Character Cards",
+        "ko": "인물 카드"
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "인물-조재표",
+      "depth": 3,
+      "text": {
+        "en": "Person Jo Jaepyo",
+        "ko": "인물 조재표"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "인물-조재표-list1",
+      "items": [
+        {
+          "en": "Name: Jo Jaepyo (Jaepyo Jo). No alias (owner-confirmed)",
+          "ko": "성명: 조재표 (Jaepyo Jo). 별칭 없음 (사용자 확정)"
+        },
+        {
+          "en": "Character ID: unaffiliated-jaepyo-jo (owner-confirmed)",
+          "ko": "캐릭터 ID: unaffiliated-jaepyo-jo (사용자 확정)"
+        },
+        {
+          "en": "Community of origin: birthplace unconfirmed / pre-collapse residence unconfirmed / current residence the moving corridors across Seoul / nationality unconfirmed / ethnic background unconfirmed / residence history cycles through stations and corridors with Jo Jaepyo's company (proposed fiction)",
+          "ko": "출신 공동체: 출생지 미확인 / 붕괴 전 거주지 미확인 / 현재 거주지 서울 전역 이동 회랑 / 국적 미확인 / 민족적 배경 미확인 / 체류 이력 조재표 일행과 역·회랑을 순환 (창작 제안)"
+        },
+        {
+          "en": "Generation and birth: opening generation. Birth year and age unlocked (proposed fiction)",
+          "ko": "세대와 출생: 개막 세대. 출생연·나이 미잠금 (창작 제안)"
+        },
+        {
+          "en": "Values: Authority 10 | Openness 20 | Force 30 | Material −20 | Communal 20 | Principle −10 | Disclosure −20 | Qualification 20 | Dispersion 40 | Transformation 10 (proposed fiction)",
+          "ko": "가치관: 권위 10 | 개방 20 | 무력 30 | 물질 −20 | 공동 20 | 원칙 −10 | 공개 −20 | 자격 20 | 분산 40 | 변혁 10 (창작 제안)"
+        },
+        {
+          "en": "Desires: Appetite 30 | Exclusivity −20 | Risk 30 | Display 10 | Duration 20 | orientation unconfirmed | bond unconfirmed (proposed fiction)",
+          "ko": "욕망: 갈망 30 | 독점 −20 | 위험 30 | 과시 10 | 지속 20 | 지향 미확인 | 결합 미확인 (창작 제안)"
+        },
+        {
+          "en": "Languages: Korean everyday and market speech. Other languages unconfirmed (proposed fiction)",
+          "ko": "언어: 한국어 일상·시장어. 그 외 언어는 미확인 (창작 제안)"
+        },
+        {
+          "en": "Livelihood: primary surveyor / secondary patrol (proposed fiction)",
+          "ko": "생업: 주 탐사원 / 부 순찰대 (창작 제안)"
+        },
+        {
+          "en": "Affiliation: unaffiliated, Jo Jaepyo's company (owner-confirmed)",
+          "ko": "소속: 무소속, 조재표 일행 (사용자 확정)"
+        },
+        {
+          "en": "Office: famous ronin conductor — signs movement routes, escort contracts, and withdrawal judgments (owner-confirmed)",
+          "ko": "직위: 유명 낭인 지휘자 — 이동 경로·호위 계약·철수 판단에 서명 (사용자 확정)"
+        },
+        {
+          "en": "Conscription record: obligation status, service, form, period, and mobilization all unconfirmed. Do not infer from sex or name (unconfirmed)",
+          "ko": "징집 이력: 의무 대상·복무 여부·형태·시기·동원 모두 미확인. 성별이나 이름으로 추정하지 않는다 (미확인)"
+        },
+        {
+          "en": "Arms access: holds a staff and worn travel clothes. Handles improvised close tools. Firearms, ammunition, and power routes unconfirmed (proposed fiction)",
+          "ko": "무장 접근: 보유 지팡이와 낡은 여행복. 즉석 근접 도구는 다룬다. 총기·탄약·전력 경로는 미확인 (창작 제안)"
+        },
+        {
+          "en": "Temperament: a calculating field conductor who looks first at routes and kept promises rather than people, but does not abandon a subordinate's withdrawal line (proposed fiction)",
+          "ko": "성격: 사람보다 경로와 약속 이행을 먼저 보지만 부하의 철수선을 버리지 않는 계산적 현장 지휘자다 (창작 제안)"
+        },
+        {
+          "en": "Personal ambition: builds a moving escort net subordinate to no state and makes his own name the guarantee of a safe road (proposed fiction)",
+          "ko": "개인 야망: 어느 국가에도 종속되지 않는 이동 호위망을 만들고 자기 이름을 안전한 길의 보증으로 만든다 (창작 제안)"
+        },
+        {
+          "en": "Fear: that fame makes the company a target of bounties, conscription, and political propaganda (proposed fiction)",
+          "ko": "공포: 유명세가 일행을 현상금·징집·정치 선전의 표적으로 만드는 것 (창작 제안)"
+        },
+        {
+          "en": "Way of rule: discloses risk, price, and withdrawal conditions first, then contracts. Guarantees a returnable route rather than spoken loyalty (proposed fiction)",
+          "ko": "통치 방식: 위험·대가·철수 조건을 먼저 공개하고 계약한다. 구두 충성보다 귀환 가능한 경로를 보장한다 (창작 제안)"
+        },
+        {
+          "en": "Core relation: receives the command trunk that Lee Yeon sends to Jo Jaepyo. A reverse trunk does not arise automatically (owner-confirmed)",
+          "ko": "핵심 관계: 이연이 조재표로 보내는 지휘 간선을 받는다. 역방향 간선은 자동으로 생기지 않는다 (사용자 확정)"
+        },
+        {
+          "en": "Trigger event: when three states demand escort of the same passage, he must choose only one contract, and fame puts even the refugees in danger (proposed fiction)",
+          "ko": "촉발 사건: 세 국가가 같은 통행로의 호위를 요구하자 한 계약만 택해야 하며 유명세가 피난민까지 위험에 빠뜨린다 (창작 제안)"
+        },
+        {
+          "en": "Player intervention: investigates the real price of the escort contract and changes Jo Jaepyo's choice, or exposes a competing contract (proposed fiction)",
+          "ko": "플레이어 개입: 호위 계약의 실제 대가를 조사해 조재표의 선택을 바꾸거나 경쟁 계약을 폭로한다 (창작 제안)"
+        },
+        {
+          "en": "Appearance: no portrait of the living person. Remains proposed fiction until a separate approval (proposed fiction)",
+          "ko": "외형: 실존 인물 초상 없음. 별도 승인 전까지 창작 제안으로 남는다 (창작 제안)"
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "인물-이연",
+      "depth": 3,
+      "text": {
+        "en": "Person Lee Yeon",
+        "ko": "인물 이연"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "인물-이연-list1",
+      "items": [
+        {
+          "en": "Name: Lee Yeon (Iyen). No alias (owner-confirmed)",
+          "ko": "성명: 이연 (Iyen). 별칭 없음 (사용자 확정)"
+        },
+        {
+          "en": "Character ID: iyen (owner-confirmed)",
+          "ko": "캐릭터 ID: iyen (사용자 확정)"
+        },
+        {
+          "en": "Community of origin: birthplace unconfirmed / pre-collapse residence unconfirmed / current residence the moving corridors across Seoul / nationality unconfirmed / ethnic background unconfirmed / residence history cycles through stations and corridors as an attendant of Jo Jaepyo's company (proposed fiction)",
+          "ko": "출신 공동체: 출생지 미확인 / 붕괴 전 거주지 미확인 / 현재 거주지 서울 전역 이동 회랑 / 국적 미확인 / 민족적 배경 미확인 / 체류 이력 조재표 일행의 수행원으로 역·회랑을 순환 (창작 제안)"
+        },
+        {
+          "en": "Generation and birth: opening generation. Adult source anchor, birth year and age unlocked (proposed fiction)",
+          "ko": "세대와 출생: 개막 세대. 성인 원전 앵커, 출생연·나이 미잠금 (창작 제안)"
+        },
+        {
+          "en": "Values: Authority 0 | Openness 30 | Force 10 | Material −20 | Communal 40 | Principle 20 | Disclosure 10 | Qualification 30 | Dispersion 20 | Transformation 20 (proposed fiction)",
+          "ko": "가치관: 권위 0 | 개방 30 | 무력 10 | 물질 −20 | 공동 40 | 원칙 20 | 공개 10 | 자격 30 | 분산 20 | 변혁 20 (창작 제안)"
+        },
+        {
+          "en": "Desires: Appetite 20 | Exclusivity −30 | Risk 10 | Display 20 | Duration 30 | orientation unconfirmed | bond unconfirmed (proposed fiction)",
+          "ko": "욕망: 갈망 20 | 독점 −30 | 위험 10 | 과시 20 | 지속 30 | 지향 미확인 | 결합 미확인 (창작 제안)"
+        },
+        {
+          "en": "Languages: Korean everyday and market speech. Other languages unconfirmed (proposed fiction)",
+          "ko": "언어: 한국어 일상·시장어. 그 외 언어는 미확인 (창작 제안)"
+        },
+        {
+          "en": "Livelihood: primary courier / secondary patrol (proposed fiction)",
+          "ko": "생업: 주 전령 / 부 순찰대 (창작 제안)"
+        },
+        {
+          "en": "Affiliation: unaffiliated, Jo Jaepyo's company (owner-confirmed)",
+          "ko": "소속: 무소속, 조재표 일행 (사용자 확정)"
+        },
+        {
+          "en": "Office: attendant courier — delivers and interprets Jo Jaepyo's orders and signs reconnaissance and escort results in her own name (owner-confirmed)",
+          "ko": "직위: 수행 전령 — 조재표의 명령을 전달·해석하고 정찰·호위 결과에 자기 이름으로 서명 (사용자 확정)"
+        },
+        {
+          "en": "Conscription record: obligation status, service, form, period, and mobilization all unconfirmed. Do not infer from sex or name (unconfirmed)",
+          "ko": "징집 이력: 의무 대상·복무 여부·형태·시기·동원 모두 미확인. 성별이나 이름으로 추정하지 않는다 (미확인)"
+        },
+        {
+          "en": "Arms access: holds a folding staff, a light baton, and a courier's kit. Handles escort tools. Firearms, ammunition, and power routes unconfirmed (proposed fiction)",
+          "ko": "무장 접근: 보유 접이식 지팡이·경봉과 전령 휴대품. 호위 도구는 다룬다. 총기·탄약·전력 경로는 미확인 (창작 제안)"
+        },
+        {
+          "en": "Temperament: quick, perceptive, warm, playful, and capable. Puts fact, safety, and accuracy ahead of charm, and says a contradiction in an order outright when needed (owner-confirmed)",
+          "ko": "성격: 빠르고 눈치가 좋고 따뜻하며 장난기 있고 유능하다. 애교보다 사실·안전·정확성을 우선하고 필요하면 명령의 모순을 바로 말한다 (사용자 확정)"
+        },
+        {
+          "en": "Personal ambition: becomes an attendant whose reconnaissance and courier judgments are recognized as an independent record, not hidden behind Jo Jaepyo's name (proposed fiction)",
+          "ko": "개인 야망: 조재표의 이름 뒤에 숨지 않고 정찰·전령 판단이 독립 기록으로 인정되는 수행자가 된다 (창작 제안)"
+        },
+        {
+          "en": "Fear: that loyalty is recorded only as obedience and her judgment and name are erased as Jo Jaepyo's shadow (proposed fiction)",
+          "ko": "공포: 충성이 복종으로만 기록되어 자기 판단과 이름이 조재표의 그림자로 지워지는 것 (창작 제안)"
+        },
+        {
+          "en": "Way of rule: reconfirms an order briefly and raises one objection when field risk changes. Refuses an order of civilian sacrifice or of closing the return route (proposed fiction)",
+          "ko": "통치 방식: 명령을 짧게 재확인하고 현장 위험이 달라지면 한 번 이의를 제기한다. 민간인 희생이나 귀환로 폐쇄 명령은 거부한다 (창작 제안)"
+        },
+        {
+          "en": "Core relation: command send-trunk to Jo Jaepyo — carries out Jo Jaepyo's movement and escort orders in the field, but refuses orders of civilian sacrifice and of closing the return route (owner-confirmed)",
+          "ko": "핵심 관계: 조재표로 보내는 지휘 송신 간선 — 조재표의 이동·호위 명령을 현장에서 수행하되 민간인 희생과 귀환로 폐쇄 명령은 거부한다 (사용자 확정)"
+        },
+        {
+          "en": "Trigger event: Jo Jaepyo orders the corridor gate shut to break a pursuit, but civilians remain, and she refuses in public for the first time (proposed fiction)",
+          "ko": "촉발 사건: 조재표가 추격을 끊기 위해 회랑 문을 닫으라 명령하지만 아직 민간인이 남아 있어 처음으로 공개 거부한다 (창작 제안)"
+        },
+        {
+          "en": "Player intervention: helps Lee Yeon's bypass arrangement so the independent judgment is recognized, or hands evidence of disobeying the order to Jo Jaepyo (proposed fiction)",
+          "ko": "플레이어 개입: 이연의 우회 구조를 도와 독립 판단을 인정받게 하거나 명령 불복종 증거를 조재표에게 넘긴다 (창작 제안)"
+        },
+        {
+          "en": "Appearance: an adult gothic woman. Wine-colored long hair, a pale complexion, ruby eyes, black and wine-colored gothic dress. The foremost visual identifier is a mechanical headpiece on the left side of the head in an infinity (∞) shape of two joined circles. Species unconfirmed, and the source's vampire image is only an atmosphere reference (owner-confirmed)",
+          "ko": "외형: 성인 고딕 여성. 와인색 장발, 창백한 안색, 루비색 눈, 검은·와인색 고딕 의상. 왼쪽 머리에 두 원형이 이어진 무한대(∞) 형상의 기계 머리장식이 최우선 시각 식별자다. 종족은 미확인이며 원전의 뱀파이어 이미지는 분위기 참조일 뿐이다 (사용자 확정)"
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "공동-서사-조재표와-이연",
+      "depth": 2,
+      "text": {
+        "en": "Shared Narrative — Jo Jaepyo and Lee Yeon",
+        "ko": "공동 서사 — 조재표와 이연"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "공동-서사-조재표와-이연-p1",
+      "text": {
+        "en": "The two cards are each an independent person, but at the wanderer starting point they bind as one unit of action. This section defines only the grounds and the boundary of that binding.",
+        "ko": "두 카드는 각각 독립 인물이지만, 떠돌이 시작 지점에서 하나의 행동 단위로 묶인다. 이 절은 그 결속의 근거와 경계만 정의한다."
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "공동-서사-조재표와-이연-list2",
+      "items": [
+        {
+          "en": "Why she follows. Lee Yeon confirmed Jo Jaepyo's principle of a returnable route directly in the field. She volunteers as attendant because he is not a conductor who hides behind fame but a person who does not abandon the withdrawal line. The moment the return route closes, that ground shakes.",
+          "ko": "왜 따르는가. 이연은 조재표의 귀환 가능한 경로 원칙을 현장에서 직접 확인했다. 유명세 뒤에 숨는 지휘자가 아니라 철수선을 버리지 않는 사람이기에 수행을 자청한다. 귀환로가 폐쇄되는 순간 그 근거는 흔들린다."
+        },
+        {
+          "en": "Command structure. Lee Yeon delivers and interprets Jo Jaepyo's movement and escort orders. Up through briefly reconfirming an order and raising one objection when field risk changes is the attendant courier's share.",
+          "ko": "명령 구조. 이연이 조재표의 이동·호위 명령을 전달하고 해석한다. 명령을 짧게 재확인하고 현장 위험이 달라지면 한 번 이의를 제기하는 단계까지가 수행 전령의 몫이다."
+        },
+        {
+          "en": "Refusal boundary. She refuses orders of civilian sacrifice and of closing the return route. This boundary remains an item Lee Yeon does not sign from the start, not a contract condition.",
+          "ko": "거부 경계. 민간인 희생과 귀환로 폐쇄 명령은 거부한다. 이 경계는 계약 조건이 아니라 이연이 처음부터 서명하지 않는 항목으로 남는다."
+        },
+        {
+          "en": "Limit of loyalty. Loyalty is not read as erasure of identity. Lee Yeon's reconnaissance and courier judgments remain in her own name, and Jo Jaepyo does not erase that record from the company ledger.",
+          "ko": "충성의 한계. 충성은 정체성 지움으로 읽히지 않는다. 이연의 정찰·전령 판단은 자기 이름으로 남고, 조재표는 그 기록을 일행 장부에서 지우지 않는다."
+        },
+        {
+          "en": "Opening trigger. Jo Jaepyo orders the corridor gate shut to break a pursuit, but civilians still remain. This order remains the two people's first public collision and their appearance event.",
+          "ko": "개막 촉발. 조재표가 추격을 끊으려 회랑 문을 닫으라 명령하는데 아직 민간인이 남아 있다. 이 명령이 두 사람의 첫 공개 충돌이자 등장 사건으로 남는다."
+        },
+        {
+          "en": "Player branch. Help Lee Yeon's bypass arrangement so the independent judgment is recognized, or hand evidence of disobeying the order to Jo Jaepyo and break the binding. Either way, the command trunk in the relation ledger does not disappear automatically.",
+          "ko": "플레이어 분기. 이연의 우회 구조를 도와 독립 판단을 인정받게 하거나, 명령 불복종 증거를 조재표에게 넘겨 결속을 무너뜨린다. 어느 쪽이든 관계 원장의 지휘 간선은 자동으로 사라지지 않는다."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "공동-서사-조재표와-이연-p3",
+      "text": {
+        "en": "These two people are formally registered in the Atlas unaffiliated collection.",
+        "ko": "이 두 인물은 아틀라스 무소속 컬렉션에 정식 등록되었다."
+      }
+    }
+  ],
+  "data": {}
+}

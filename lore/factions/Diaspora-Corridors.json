@@ -1,0 +1,746 @@
+{
+  "version": 1,
+  "domain": "factions",
+  "id": "DOC:Diaspora-Corridors",
+  "slug": "diaspora-corridors",
+  "status": "draft",
+  "tense": {
+    "en": "past",
+    "ko": "past"
+  },
+  "provenance": {
+    "original_anchor": "lore/factions/Diaspora-Corridors.md",
+    "original_hash": "59ae0f4faeadafd2e468d6d5bea828b9bb5609140326d7f1b6eb601f90960ebf",
+    "history": [
+      "Korean lore/factions/Diaspora-Corridors.md SHA-256 59ae0f4faeadafd2e468d6d5bea828b9bb5609140326d7f1b6eb601f90960ebf.",
+      "English lore/factions/Diaspora-Corridors.en.md SHA-256 2ad199bb3f8e58e5ac7a79362672079866d254ac79aba23d0f89ea3ff8143b0d; copied verbatim, no translation written.",
+      "Built from the sweep-w1 WEB working tree (reviewed uncommitted corrections): KO dirty SHA-256 59ae0f4faeadafd2e468d6d5bea828b9bb5609140326d7f1b6eb601f90960ebf, EN clean SHA-256 2ad199bb3f8e58e5ac7a79362672079866d254ac79aba23d0f89ea3ff8143b0d."
+    ]
+  },
+  "source": {
+    "kind": "original-fiction",
+    "refs": [
+      "lore/factions/Diaspora-Corridors.md",
+      "lore/factions/Diaspora-Corridors.en.md"
+    ]
+  },
+  "locales": {
+    "en": {
+      "title": "Diaspora Corridors",
+      "summary": "Before the collapse, Seoul had already been a city of many foreigners and migrants.",
+      "tense": "past"
+    },
+    "ko": {
+      "title": "이주민 회랑",
+      "summary": "붕괴 전 서울은 이미 외국인·이주민이 많은 도시였다.",
+      "tense": "past"
+    }
+  },
+  "content": [
+    {
+      "kind": "heading",
+      "anchor": "이주민-회랑",
+      "depth": 1,
+      "text": {
+        "en": "Diaspora Corridors",
+        "ko": "이주민 회랑"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "이주민-회랑-p1",
+      "text": {
+        "en": "Before the collapse, Seoul had already been a city of many foreigners and migrants. The Chinese-Korean commercial belt of Daerim and Garibong, the interpretation alleys of Itaewon, the night labor rates of Dongdaemun, the Southeast and Central Asian dormitories of the Guro industrial belt, and the garrison contract work of Yongsan lay layered in one city. The Great Blackout did not erase these people; it cut interpretation and lodging. If the sixteen states were only a one-people roster, that city would not read as Seoul.",
+        "ko": "붕괴 전 서울은 이미 외국인·이주민이 많은 도시였다. 대림·가리봉의 중국동포 상권, 이태원 통역 골목, 동대문 야간 공임, 구로 공단의 동남아시아·중앙아시아 기숙사, 용산의 주둔 용역이 한 도시에 겹쳐 있었다. 대정전이 이들을 지운 것이 아니라, 통역과 숙소를 끊었다. 16국이 한 민족의 나라이기만 하면 그 도시는 서울로 읽히지 않는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "이주민-회랑-p2",
+      "text": {
+        "en": "This page was a corridor laid over the living spheres. It became no seventeenth state. New persons filled the cast card contract.",
+        "ko": [
+          {
+            "text": "이 페이지는 생활권 위에 얹는 회랑이다. 열일곱 번째 나라가 되지는 않는다. 새 인물은 "
+          },
+          {
+            "text": "회랑 인물 총람",
+            "link": {
+              "domain": "characters",
+              "slug": "Cast-Corridors-Index"
+            }
+          },
+          {
+            "text": "에 연결하기 전에 인물 카드 계약을 채운다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "회랑",
+      "depth": 2,
+      "text": {
+        "en": "The Corridors",
+        "ko": "회랑"
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "회랑-table1",
+      "columns": [
+        {
+          "en": "Corridor",
+          "ko": "회랑"
+        },
+        {
+          "en": "Sphere laid upon",
+          "ko": "얹히는 권역"
+        },
+        {
+          "en": "Pre-collapse seat",
+          "ko": "붕괴 전 자리"
+        },
+        {
+          "en": "Work today",
+          "ko": "지금 하는 일"
+        },
+        {
+          "en": "Legitimacy",
+          "ko": "정통성"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Daerim–Garibong interpretation market",
+            "ko": "대림·가리봉 통역시장"
+          },
+          {
+            "en": "South of the Standards Alliance, meeting the Noryangjin market",
+            "ko": "규격동맹 남쪽, 노량진 시장과 맞닿음"
+          },
+          {
+            "en": "Chinese-Korean shop streets, money exchange, hiring",
+            "ko": "중국동포 상점가, 환전, 고용"
+          },
+          {
+            "en": "Dual Chinese–Korean ledgers; interpretation trade in parts and food",
+            "ko": "중국어·한국어 이중 장부, 부품·식량 통역 거래"
+          },
+          {
+            "en": "No contract stands without interpretation",
+            "ko": "통역 없이 계약이 성립하지 않음"
+          }
+        ],
+        [
+          {
+            "en": "Guro industrial dormitory remnants",
+            "ko": "구로공단 기숙 잔존"
+          },
+          {
+            "en": "Standards Alliance",
+            "ko": "규격동맹"
+          },
+          {
+            "en": "Vietnamese, Nepali, and Uzbek dormitories and night lines",
+            "ko": "베트남·네팔·우즈베크 기숙사와 야간 라인"
+          },
+          {
+            "en": "Tool and protective-gear shift work; quarters inside the barrier gates",
+            "ko": "공구·방호복 교대, 차단문 안쪽 숙소"
+          },
+          {
+            "en": "Repair labor came before citizenship",
+            "ko": "수리 노동이 시민권보다 먼저다"
+          }
+        ],
+        [
+          {
+            "en": "Itaewon passage alley",
+            "ko": "이태원 통행 골목"
+          },
+          {
+            "en": "Line Succession State",
+            "ko": "선로후계정"
+          },
+          {
+            "en": "Multinational food, interpretation, lodging",
+            "ko": "다국적 음식·통역·숙박"
+          },
+          {
+            "en": "Passage permits read in many tongues; foreign-origin residence hidden or sold",
+            "ko": "통행증을 여러 말로 읽고, 외국 출신 체류를 숨기거나 팔음"
+          },
+          {
+            "en": "Interpreters could be attached to any faction's train",
+            "ko": "어느 진영 열차에도 통역을 붙일 수 있음"
+          }
+        ],
+        [
+          {
+            "en": "Dongdaemun night labor",
+            "ko": "동대문 야간 공임"
+          },
+          {
+            "en": "Between the Republic of Korea Government and the Amsa commercial belt",
+            "ko": "대한민국정부·암사 상권 사이"
+          },
+          {
+            "en": "Night garment labor",
+            "ko": "의류 야간 노동"
+          },
+          {
+            "en": "Cloth, thread, and insulation sold by the night shift",
+            "ko": "천·실·보온을 야간 단위로 팜"
+          },
+          {
+            "en": "Night production ran even with no name on the day ledger",
+            "ko": "낮 장부에 이름이 없어도 밤 생산이 돈다"
+          }
+        ],
+        [
+          {
+            "en": "Jayang–Konkuk Goryeo-in lodging",
+            "ko": "자양·건대 고려인 하숙"
+          },
+          {
+            "en": "Eastern edge of the Sermon Registry State",
+            "ko": "설교명부정 동녘"
+          },
+          {
+            "en": "Goryeo-in boarding houses and freight",
+            "ko": "고려인 하숙과 화물"
+          },
+          {
+            "en": "Russian-language couriers, tied to the northern refugee flows",
+            "ko": "러시아어 전령, 북부 피난과 맞물림"
+          },
+          {
+            "en": "Refugee registers kept in two tongues",
+            "ko": "피난 명부를 두 말로 씀"
+          }
+        ],
+        [
+          {
+            "en": "Yongsan fence contract labor",
+            "ko": "용산 울타리 용역"
+          },
+          {
+            "en": "Line Succession State",
+            "ko": "선로후계정"
+          },
+          {
+            "en": "Garrison interpretation, cleaning, subcontracting",
+            "ko": "주둔지 통역·청소·하청"
+          },
+          {
+            "en": "Warehouse memory inside the fence; surviving English interpretation",
+            "ko": "울타리 안 창고 기억, 영어 잔존 통역"
+          },
+          {
+            "en": "Keys without arms. Recreation of foreign militaries forbidden",
+            "ko": "열쇠는 있으나 문장은 없음. 외국 군 재현 금지"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "회랑-p2",
+      "text": {
+        "en": "No corridor was left as one state's possession. Where transit tolls and lodging authority overlapped the ledgers of the sixteen states, the contract was written twice.",
+        "ko": "한 회랑을 한 국가의 소유로 두지 않는다. 통행세와 숙소 권한이 16국 장부와 겹치면 계약을 둘로 쓴다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "시드-인물",
+      "depth": 2,
+      "text": {
+        "en": "Seed Persons",
+        "ko": "시드 인물"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "시드-인물-p1",
+      "text": {
+        "en": "The six below were the first corridor persons raised into the atlas. They were added without erasing the existing 422.",
+        "ko": "아래 여섯은 총람에 올리는 첫 회랑 인물이다. 기존 422명을 지우지 않고 덧붙인다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "인물-린샤오메이-임소매",
+      "depth": 3,
+      "text": {
+        "en": "Person Lin Xiaomei (林小梅, Im Somae)",
+        "ko": "인물 린샤오메이 (林小梅, 임소매)"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "인물-린샤오메이-임소매-list1",
+      "items": [
+        {
+          "en": "Name: Lin Xiaomei. Ledger Hangul Im Somae. Xiaomei in Daerim",
+          "ko": "성명: 린샤오메이. 장부 한글 임소매. 대림에서는 샤오메이"
+        },
+        {
+          "en": "Home community: Daerim–Garibong interpretation market; a Chinese-Korean shopkeeping family resident in Korea before the collapse",
+          "ko": "출신 공동체: 대림·가리봉 통역시장. 붕괴 전 한국 체류 중국동포 상점 가계"
+        },
+        {
+          "en": "Languages: Beijing Mandarin and Korean in daily life. Contracts in two copies",
+          "ko": "언어: 일상 북경 관화·한국어. 계약서는 두 장"
+        },
+        {
+          "en": "Trade: Logistics dealer (main), courier (side)",
+          "ko": "생업: 물류상 (주), 전령 (부)"
+        },
+        {
+          "en": "Affiliation: The interpretation-market ledger. Registered with the Standards Alliance market window only as an interpreter",
+          "ko": "소속: 통역시장 장부. 규격동맹 시장 창구에 통역으로만 등록"
+        },
+        {
+          "en": "Position: Daerim dual-ledger brokerage",
+          "ko": "직위: 대림 이중장부 중개"
+        },
+        {
+          "en": "Conscription record: None. No Korean service obligation",
+          "ko": "징집 이력: 없음. 한국 병역 의무 없음"
+        },
+        {
+          "en": "Weapons access: Trade tools. Scales and ledgers. No issue gear",
+          "ko": "무장 접근: 생업 공구. 저울과 장부. 제식 없음"
+        },
+        {
+          "en": "Temperament: Listened for which language the counterpart cursed in before naming a price",
+          "ko": "성격: 가격을 말하기 전에 상대가 어느 말로 욕하는지를 듣는다"
+        },
+        {
+          "en": "Personal ambition: Opened the exchange window under the interpretation market's seal, not the southwestern Fabrication Council's",
+          "ko": "개인 야망: 환전 창구를 서남 제작평의회 도장이 아니라 통역시장 도장으로 연다"
+        },
+        {
+          "en": "Fear: The Chinese-language ledger seized as a \"foreign ledger\" and the Daerim lodging erased whole",
+          "ko": "공포: 중국어 장부가 「외국 장부」로 압수되어 대림 숙소가 통째로 지워지는 것"
+        },
+        {
+          "en": "Rule and negotiation: Refused to sign when a contract arrived in only one language, and took the interpretation fee first",
+          "ko": "통치·교섭 방식: 한쪽 언어 계약만 오면 서명을 거부하고 통역료를 먼저 받는다"
+        },
+        {
+          "en": "Key relations: A parts-for-food contract with Phạm Văn Đức of the Guro dormitories. Passage inspections near feud with the southwestern guard",
+          "ko": "핵심 관계: 구로공단 기숙의 팜반득과 부품 대 식량 계약. 서남 경비대와는 원한에 가까운 통행 검사"
+        },
+        {
+          "en": "Trigger event: When the dual-ledger seizure order fell, trade inside the Guro barrier gates stopped",
+          "ko": "촉발 사건: 이중장부 압수령이 떨어지면 구로 차단문 안쪽 거래가 멈춘다"
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "인물-팜반득-phm-vn-c-범반득",
+      "depth": 3,
+      "text": {
+        "en": "Person Phạm Văn Đức (범반득, Beom Bandeuk)",
+        "ko": "인물 팜반득 (Phạm Văn Đức, 범반득)"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "인물-팜반득-phm-vn-c-범반득-list1",
+      "items": [
+        {
+          "en": "Name: Phạm Văn Đức. Dormitory register Đức. Ledger Hangul Beom Bandeuk",
+          "ko": "성명: 팜반득. 기숙사 명부 덕. 장부 한글 범반득"
+        },
+        {
+          "en": "Home community: Guro industrial dormitory remnants; a Vietnamese machinist of the pre-collapse night lines",
+          "ko": "출신 공동체: 구로공단 기숙 잔존. 붕괴 전 야간 라인 베트남 기능공"
+        },
+        {
+          "en": "Languages: Vietnamese daily, Korean work orders, Chinese numbers only",
+          "ko": "언어: 베트남어 일상, 한국어 작업 지시, 중국어 숫자만"
+        },
+        {
+          "en": "Trade: Maintenance hand",
+          "ko": "생업: 정비사"
+        },
+        {
+          "en": "Affiliation: The dormitory-remnant shift ledger. Named in the southwestern engineers' books as a subcontractor",
+          "ko": "소속: 기숙 잔존 교대 장부. 서남 공병대에 하청으로 이름이 있다"
+        },
+        {
+          "en": "Position: Night maintenance foreman inside the barrier gates",
+          "ko": "직위: 차단문 안쪽 야간 정비 조장"
+        },
+        {
+          "en": "Conscription record: None. No Vietnamese military register. No Korean mobilization register",
+          "ko": "징집 이력: 없음. 베트남 군적 없음. 한국 동원 명부 없음"
+        },
+        {
+          "en": "Weapons access: Trade tools and protective gear. The cutters lent by the engineers carried a return condition",
+          "ko": "무장 접근: 생업 공구·방호복. 공병이 빌려 주는 절단기는 반납 조건"
+        },
+        {
+          "en": "Temperament: When a door closed, counted the bolts before the people",
+          "ko": "성격: 문이 닫히면 사람보다 볼트를 먼저 센다"
+        },
+        {
+          "en": "Personal ambition: Raised the dormitory's generational register to the same rank as the Fabrication Council's citizenship",
+          "ko": "개인 야망: 기숙사 세대 명부를 제작평의회 시민권과 같은 급으로 올린다"
+        },
+        {
+          "en": "Fear: The dormitory side left out of the drill when barrier training came",
+          "ko": "공포: 차단 훈련 때 기숙사 쪽 대피가 빠지는 것"
+        },
+        {
+          "en": "Rule and negotiation: Would not torque a bolt unless a Vietnamese-language rider rode on the Korean contract",
+          "ko": "통치·교섭 방식: 한국어 계약에 베트남어 부절을 붙이지 않으면 볼트를 죄지 않는다"
+        },
+        {
+          "en": "Key relations: A food contract with Lin Xiaomei. Tension with Choi Ilseok, the mobilization-remnant clerk, over the armory subcontract",
+          "ko": "핵심 관계: 린샤오메이와 식량 계약. 동원잔존 서기 최일석과는 탄약고 하청을 두고 긴장"
+        },
+        {
+          "en": "Trigger event: When the night shift was refused, the Guro barrier gate no longer closed by machine",
+          "ko": "촉발 사건: 야간 교대가 거부되면 구로 차단문이 수동으로 안 닫힌다"
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "인물-아미라-카심-amira-qasim-아미라",
+      "depth": 3,
+      "text": {
+        "en": "Person Amira Qasim (아미라)",
+        "ko": "인물 아미라 카심 (Amira Qasim, 아미라)"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "인물-아미라-카심-amira-qasim-아미라-list1",
+      "items": [
+        {
+          "en": "Name: Amira Qasim. \"Amira\" on the Itaewon passage permits. Hangul ledger Amira",
+          "ko": "성명: 아미라 카심. 이태원 통행증에는 Amira. 한글 장부 아미라"
+        },
+        {
+          "en": "Home community: Itaewon passage alley; interpretation and lodging before the collapse",
+          "ko": "출신 공동체: 이태원 통행 골목. 붕괴 전 통역·숙박"
+        },
+        {
+          "en": "Languages: English and Arabic daily, Korean passage vocabulary",
+          "ko": "언어: 영어·아랍어 일상, 한국어 통행 용어"
+        },
+        {
+          "en": "Trade: Courier (main), logistics dealer (side)",
+          "ko": "생업: 전령 (주), 물류상 (부)"
+        },
+        {
+          "en": "Affiliation: The Itaewon passage alley. Interpretation contract at the Line Succession State's dispatch window",
+          "ko": "소속: 이태원 통행 골목. 선로후계정 배차 창구의 통역 용역"
+        },
+        {
+          "en": "Position: Multilingual passage-permit reader",
+          "ko": "직위: 다국어 통행증 판독"
+        },
+        {
+          "en": "Conscription record: None",
+          "ko": "징집 이력: 없음"
+        },
+        {
+          "en": "Weapons access: None. Passage permits and the lodging key",
+          "ko": "무장 접근: 없음. 통행증과 숙소 열쇠"
+        },
+        {
+          "en": "Temperament: Did not name the faction first; asked from which floor the train stopped",
+          "ko": "성격: 진영 이름을 먼저 말하지 않고, 열차가 서는 층부터 묻는다"
+        },
+        {
+          "en": "Personal ambition: Removed every interpreter-less train from the Yongsan transshipment",
+          "ko": "개인 야망: 용산 환적에서 통역 없는 열차를 없앤다"
+        },
+        {
+          "en": "Fear: One faction posting \"foreign-language passage forbidden\" and sealing the alley's lodging",
+          "ko": "공포: 한 진영이 「외국어 통행 금지」를 걸어 골목 숙소를 봉인하는 것"
+        },
+        {
+          "en": "Rule and negotiation: Would not open the elevator when a passage permit carried one language",
+          "ko": "통치·교섭 방식: 통행증 언어가 하나면 승강기를 열지 않는다"
+        },
+        {
+          "en": "Key relations: A contract with Park Taegyeom's dispatch house. Cooperation with Joel Park of the Yongsan fence contract labor",
+          "ko": "핵심 관계: 박태겸의 배차 가문과 계약. 용산 울타리 용역 조엘 박과 협력"
+        },
+        {
+          "en": "Trigger event: When the passage-ban notice went up, the Yongsan transshipment stopped for a day",
+          "ko": "촉발 사건: 통행 금지어가 붙으면 용산 환적이 하루 멈춘다"
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "인물-조엘-박-joel-park",
+      "depth": 3,
+      "text": {
+        "en": "Person Joel Park (조엘 박, Park Joeol)",
+        "ko": "인물 조엘 박 (Joel Park)"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "인물-조엘-박-joel-park-list1",
+      "items": [
+        {
+          "en": "Name: Joel Park. \"Joel\" inside the fence. Post-State ledger Park Joeol",
+          "ko": "성명: 조엘 박. 울타리 안에서는 Joel. 후국 장부 박조엘"
+        },
+        {
+          "en": "Home community: Yongsan fence contract labor. Korean citizenship, English daily. Garrison subcontract interpretation before the collapse",
+          "ko": "출신 공동체: 용산 울타리 용역. 한국 국적, 영어 일상. 붕괴 전 주둔지 하청 통역"
+        },
+        {
+          "en": "Languages: English and Korean. Surviving military vocabulary",
+          "ko": "언어: 영어·한국어. 군 용어 잔존"
+        },
+        {
+          "en": "Trade: Records keeper (main), courier (side)",
+          "ko": "생업: 기록관 (주), 전령 (부)"
+        },
+        {
+          "en": "Affiliation: The fence-labor ledger. Registered with the Line Succession State as warehouse memory",
+          "ko": "소속: 울타리 용역 장부. 선로후계정에 창고 기억으로 등록"
+        },
+        {
+          "en": "Position: Warehouse-access interpretation inside the fence",
+          "ko": "직위: 울타리 안 창고 열람 통역"
+        },
+        {
+          "en": "Conscription record: Korean service completed. The reserve register was torn into the Yongsan remnant's half",
+          "ko": "징집 이력: 한국 병역 필. 예비군 명부는 용산 잔편 쪽에 찢겨 있다"
+        },
+        {
+          "en": "Weapons access: None. Keys only. The regulation extinguisher stayed sealed inside the fence",
+          "ko": "무장 접근: 없음. 열쇠만. 제식 소화기는 울타리 안 봉인"
+        },
+        {
+          "en": "Temperament: Never said a foreign military's name aloud. Spoke only floor numbers and box numbers",
+          "ko": "성격: 외국 군 이름을 입 밖에 내지 않는다. 층수와 상자 번호만 말한다"
+        },
+        {
+          "en": "Personal ambition: Raised the warehouse memory to a formal reading of the Post-State Council and left behind keys without arms",
+          "ko": "개인 야망: 창고 기억을 후국회의 정식 열람으로 올려 문장 없는 열쇠를 남긴다"
+        },
+        {
+          "en": "Fear: Someone drawing the arms onto them and reading the fence as an \"occupation\"",
+          "ko": "공포: 누군가가 문장을 그려 넣어 울타리를 「점령」으로 읽는 것"
+        },
+        {
+          "en": "Rule and negotiation: Returned documents bearing proper military names untranslated",
+          "ko": "통치·교섭 방식: 고유 군 명칭이 적힌 문서는 번역하지 않고 돌려보낸다"
+        },
+        {
+          "en": "Key relations: Passage cooperation with Amira. Contract competition with Park Taegyeom over reading rights",
+          "ko": "핵심 관계: 아미라와 통행 협력. 박태겸과는 열람 권한을 두고 계약 경쟁"
+        },
+        {
+          "en": "Trigger event: When an attempt at recreating the arms appeared, warehouse access was sealed",
+          "ko": "촉발 사건: 문장 재현 시도가 있으면 창고 열람이 봉인된다"
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "인물-나르기즈-유수포바-nargiz-yusupova-나르기즈",
+      "depth": 3,
+      "text": {
+        "en": "Person Nargiz Yusupova (나르기즈)",
+        "ko": "인물 나르기즈 유수포바 (Nargiz Yusupova, 나르기즈)"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "인물-나르기즈-유수포바-nargiz-yusupova-나르기즈-list1",
+      "items": [
+        {
+          "en": "Name: Nargiz Yusupova. \"Nargiz\" at the lodging. Ledger Hangul Nargiz",
+          "ko": "성명: 나르기즈 유수포바. 하숙에서는 나르기즈. 장부 한글 나르기즈"
+        },
+        {
+          "en": "Home community: Jayang–Konkuk Goryeo-in lodging; freight brokerage before the collapse",
+          "ko": "출신 공동체: 자양·건대 고려인 하숙. 붕괴 전 화물 중개"
+        },
+        {
+          "en": "Languages: Russian daily, Korean market speech, surviving Koryo-mar",
+          "ko": "언어: 러시아어 일상, 한국어 시장, 고려말 잔존"
+        },
+        {
+          "en": "Trade: Courier",
+          "ko": "생업: 전령"
+        },
+        {
+          "en": "Affiliation: The Goryeo-in lodging register. Double-registered between the Sermon Registry State and the Sangha Relief State",
+          "ko": "소속: 고려인 하숙 명부. 설교명부정와 승가구휼정 사이에 이중 등록"
+        },
+        {
+          "en": "Position: Courier of the two-tongue refugee register",
+          "ko": "직위: 두 말 피난 명부 전령"
+        },
+        {
+          "en": "Conscription record: None",
+          "ko": "징집 이력: 없음"
+        },
+        {
+          "en": "Weapons access: None",
+          "ko": "무장 접근: 없음"
+        },
+        {
+          "en": "Temperament: Read a line of a register as unread when it held Hangul only",
+          "ko": "성격: 명부에 한글만 있으면 그 줄을 읽지 않은 것으로 본다"
+        },
+        {
+          "en": "Personal ambition: Put a Russian-language line into the Bukhansan Bogukmun refugee columns as an official cell",
+          "ko": "개인 야망: 북한산보국문 피난 행렬에 러시아어 줄을 공식 칸으로 넣는다"
+        },
+        {
+          "en": "Fear: The lodging bundled as \"unregistered foreign\" and caught in the workshop militia's checkpoints",
+          "ko": "공포: 하숙이 「미등록 외국」으로 묶여 공방 민병 검문에 걸리는 것"
+        },
+        {
+          "en": "Rule and negotiation: Did not sign Hangul-only registers",
+          "ko": "통치·교섭 방식: 한글 전용 명부는 서명하지 않는다"
+        },
+        {
+          "en": "Key relations: Cooperation with Baek On, the Bukhansan Bogukmun refugee delegate. A lodging contract with the Ttukseom mobile repair crew",
+          "ko": "핵심 관계: 북한산보국문 난민대표 백온과 협력. 뚝섬 기동 정비조와 숙소 계약"
+        },
+        {
+          "en": "Trigger event: When the double register was refused, the northeastern corridor's couriers were cut",
+          "ko": "촉발 사건: 이중 명부가 거부되면 동북 회랑 전령이 끊긴다"
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "인물-최일석",
+      "depth": 3,
+      "text": {
+        "en": "Person Choi Ilseok (최일석)",
+        "ko": "인물 최일석"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "인물-최일석-list1",
+      "items": [
+        {
+          "en": "Name: Choi Ilseok",
+          "ko": "성명: 최일석"
+        },
+        {
+          "en": "Home community: Guro home-front mobilization remnants. Korean citizenship",
+          "ko": "출신 공동체: 구로 향토 동원잔존. 한국 국적"
+        },
+        {
+          "en": "Languages: Korean",
+          "ko": "언어: 한국어"
+        },
+        {
+          "en": "Trade: Patrol (main). Records keeper (side, registers)",
+          "ko": "생업: 순찰대 (주). 기록관 (부, 명부)"
+        },
+        {
+          "en": "Affiliation: Clerk of the Sinjeong–Bupyeong axis mobilization remnants. \"External armed\" in the Standards Alliance ledger",
+          "ko": "소속: 신정·부평 축 동원잔존 서기. 규격동맹 장부에는 「외부 무장」"
+        },
+        {
+          "en": "Position: Mobilization-register clerk",
+          "ko": "직위: 동원 명부 서기"
+        },
+        {
+          "en": "Conscription record: Service completed. Had been a reserve company clerk and walked out with the registers on the night of the collapse",
+          "ko": "징집 이력: 병 만기. 예비군 중대 서기였고 붕괴 밤 명부를 들고 나왔다"
+        },
+        {
+          "en": "Weapons access: A half-key to the armory key. The regulation extinguisher sealed. His own issue gear a staff",
+          "ko": "무장 접근: 무기고 열쇠의 부키. 제식 소화기는 봉인. 본인은 제식 봉"
+        },
+        {
+          "en": "Temperament: Did not talk ammunition with anyone who had no service number",
+          "ko": "성격: 군번이 없는 사람에게 탄약 이야기를 하지 않는다"
+        },
+        {
+          "en": "Personal ambition: Kept the register under the mobilization ledger, not the Fabrication Council, to stop the turn to private armies",
+          "ko": "개인 야망: 명부를 제작평의회가 아니라 동원 장부로 유지해 사병화를 막는다"
+        },
+        {
+          "en": "Fear: The deserter squad tearing the register and becoming the \"Guro warlord\" seal",
+          "ko": "공포: 탈영 소대가 명부를 찢어 「구로 군벌」도장이 되는 것"
+        },
+        {
+          "en": "Rule and negotiation: Never left a key and a register in the same place",
+          "ko": "통치·교섭 방식: 열쇠 한 개와 명부 한 권을 같은 자리에 두지 않는다"
+        },
+        {
+          "en": "Key relations: Subcontract tension with Phạm Văn Đức. Feud with the deserter squad. Passage inspections with Lin Xiaomei",
+          "ko": "핵심 관계: 팜반득과 하청 긴장. 탈영 소대와는 원한. 린샤오메이와는 통행 검사"
+        },
+        {
+          "en": "Trigger event: When the register turned private-army, the southwestern barrier gates and the armory locked at once",
+          "ko": "촉발 사건: 명부가 사병화되면 서남 차단문과 탄약고가 동시에 잠긴다"
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "총람에-올리는-법",
+      "depth": 2,
+      "text": {
+        "en": "Raising Them into the Atlas",
+        "ko": "총람에 올리는 법"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "총람에-올리는-법-p1",
+      "text": {
+        "en": [
+          {
+            "text": "The six seeds took their names onto the corridor table of "
+          },
+          {
+            "text": "the Cast Index",
+            "link": {
+              "domain": "characters",
+              "slug": "Cast-Index"
+            }
+          },
+          {
+            "text": ", and the body of this page remained the canon. Rewriting the 422 was the next task. Then as now, nothing went up with this contract left empty."
+          }
+        ],
+        "ko": [
+          {
+            "text": "시드 여섯은 "
+          },
+          {
+            "text": "인물 총람",
+            "link": {
+              "domain": "characters",
+              "slug": "Cast-Index"
+            }
+          },
+          {
+            "text": " 회랑 표에 이름을 올리고, 본문은 이 페이지를 정본으로 한다. 422명 재작성은 다음 작업이다. 그때도 이 계약을 비우면 올리지 않는다."
+          }
+        ]
+      }
+    }
+  ],
+  "data": {}
+}

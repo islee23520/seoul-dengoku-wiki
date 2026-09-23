@@ -1,0 +1,3376 @@
+{
+  "version": 1,
+  "domain": "culture",
+  "id": "DOC:Values-and-Policy-Scales",
+  "slug": "values-and-policy-scales",
+  "status": "draft",
+  "tense": {
+    "en": "past",
+    "ko": "past"
+  },
+  "provenance": {
+    "original_anchor": "lore/culture/Values-and-Policy-Scales.md",
+    "original_hash": "395c91d2d46703a514e4fc66f65624f3c2235bfb062e76ea7aa43ef61bc747aa",
+    "history": [
+      "Korean lore/culture/Values-and-Policy-Scales.md SHA-256 395c91d2d46703a514e4fc66f65624f3c2235bfb062e76ea7aa43ef61bc747aa.",
+      "English lore/culture/Values-and-Policy-Scales.en.md SHA-256 a708ca5332aa8da1c1ff1880e44e07f1b7706ab3c9eec314f118efab96baa35c; copied verbatim, no translation written.",
+      "Built from the sweep-w1 WEB working tree (reviewed uncommitted corrections): KO dirty SHA-256 395c91d2d46703a514e4fc66f65624f3c2235bfb062e76ea7aa43ef61bc747aa, EN clean SHA-256 a708ca5332aa8da1c1ff1880e44e07f1b7706ab3c9eec314f118efab96baa35c."
+    ]
+  },
+  "source": {
+    "kind": "original-fiction",
+    "refs": [
+      "lore/culture/Values-and-Policy-Scales.md",
+      "lore/culture/Values-and-Policy-Scales.en.md"
+    ]
+  },
+  "locales": {
+    "en": {
+      "title": "Values and Policy Scales",
+      "summary": "What moved a person was not only temperament, ambition, and fear.",
+      "tense": "past"
+    },
+    "ko": {
+      "title": "가치관과 정책 척도",
+      "summary": "인물이 움직이는 동기는 성격이나 야망, 공포가 전부가 아니다.",
+      "tense": "past"
+    }
+  },
+  "content": [
+    {
+      "kind": "heading",
+      "anchor": "가치관과-정책-척도",
+      "depth": 1,
+      "text": {
+        "en": "Values and Policy Scales",
+        "ko": "가치관과 정책 척도"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "가치관과-정책-척도-p1",
+      "text": {
+        "en": [
+          {
+            "text": "What moved a person was not only temperament, ambition, and fear. Faced with the same issue, the means chosen diverged according to "
+          },
+          {
+            "text": "ten values cells",
+            "strong": true
+          },
+          {
+            "text": ". Organizations likewise took no eternal national personality; they stood on "
+          },
+          {
+            "text": "the values of the current charter",
+            "strong": true
+          },
+          {
+            "text": " and "
+          },
+          {
+            "text": "policy slots",
+            "strong": true
+          },
+          {
+            "text": ". When a leader was replaced, the numbers engraved in the charter went through a natural re-review, in the same vein as the \"no fixed national personality\" principle mentioned in "
+          },
+          {
+            "text": "Ambitions",
+            "link": {
+              "domain": "characters",
+              "slug": "Ambitions-and-Relations"
+            }
+          },
+          {
+            "text": "."
+          }
+        ],
+        "ko": [
+          {
+            "text": "인물이 움직이는 동기는 성격이나 야망, 공포가 전부가 아니다. 똑같은 쟁점을 마주하더라도 "
+          },
+          {
+            "text": "열 칸의 가치관",
+            "strong": true
+          },
+          {
+            "text": "에 따라 선택하는 수단이 엇갈린다. 조직 역시 영원불변한 국가 성격을 띠는 대신, "
+          },
+          {
+            "text": "지금 헌장의 가치관",
+            "strong": true
+          },
+          {
+            "text": "과 "
+          },
+          {
+            "text": "정책 슬롯",
+            "strong": true
+          },
+          {
+            "text": "을 기준으로 삼는다. 지도자가 교체되면 헌장에 새겨진 숫자도 자연스레 재검토 단계를 거치며, 이는 "
+          },
+          {
+            "text": "야망",
+            "link": {
+              "domain": "characters",
+              "slug": "Ambitions-and-Relations"
+            }
+          },
+          {
+            "text": "에서 언급한 「고정 국가 성격 금지」 원칙과 맥을 같이한다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "가치관과-정책-척도-p2",
+      "text": {
+        "en": [
+          {
+            "text": "The scale ran from −100 to 100. Zero meant only that the axis had not yet tipped; it did not stand for the virtue of indifference. When registering a new person or organization, these cells were never left empty. Filling the age indicators of the 422 from this table, however, was to be avoided. The axes of sexual desire and taste that also moved persons were reflected, while sexual narratives involving minors were strictly excluded. The numeric ledgers followed "
+          },
+          {
+            "text": "values-cast.json",
+            "link": {
+              "domain": "name-pools",
+              "slug": "values-cast"
+            }
+          },
+          {
+            "text": " and "
+          },
+          {
+            "text": "values-orgs.json",
+            "link": {
+              "domain": "name-pools",
+              "slug": "values-orgs"
+            }
+          },
+          {
+            "text": "."
+          }
+        ],
+        "ko": [
+          {
+            "text": "눈금은 −100부터 100까지 존재한다. 여기서 0은 해당 축으로 아직 기울지 않았음을 뜻할 뿐, 무관심이라는 미덕을 나타내지는 않는다. 새로운 인물이나 조직을 등록할 때 이 칸을 비워두어서는 안 된다. 다만 422명에 달하는 나이 지표를 이 표로 채우는 방식은 피해야 한다. 인물을 움직이는 또 다른 축인 성적 욕망과 취향을 반영하되, 미성년과 관련된 성적 서사는 철저히 배제한다. 관련 숫자 원장은 "
+          },
+          {
+            "text": "values-cast.json",
+            "link": {
+              "domain": "name-pools",
+              "slug": "values-cast"
+            }
+          },
+          {
+            "text": "과 "
+          },
+          {
+            "text": "values-orgs.json",
+            "link": {
+              "domain": "name-pools",
+              "slug": "values-orgs"
+            }
+          },
+          {
+            "text": "을 따른다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "가치관과-정책-척도-p3",
+      "text": {
+        "en": "As comparison groups, the ethics pairs of Stellaris (authoritarian·egalitarian, xenophobe·xenophile, militarist·pacifist, materialist·spiritualist) and its policy slots, and the central, innovative, and diplomatic slots of Europa Universalis IV, were consulted. But the galaxy-species names of the originals, Christian ideology-group names, and distinctive event lines were not carried over.",
+        "ko": "가져올 비교군으로는 스텔라리스의 윤리 쌍(권위·평등, 배타·개방, 무력·평화, 물질·의례)과 정책 슬롯, 유로파 유니버설리스 4의 중앙·혁신·외교 슬롯을 참고한다. 단, 원작의 은하 종족명이나 크리스천 이념 그룹명, 고유 이벤트 문장까지 그대로 옮겨오지는 않는다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "인물-가치관-10칸",
+      "depth": 2,
+      "text": {
+        "en": "The Ten Person Value Cells",
+        "ko": "인물 가치관 10칸"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "인물-가치관-10칸-p1",
+      "text": {
+        "en": "Left is negative, right is positive.",
+        "ko": "왼쪽이 음수, 오른쪽이 양수다."
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "인물-가치관-10칸-table2",
+      "columns": [
+        {
+          "en": "#",
+          "ko": "#"
+        },
+        {
+          "en": "Axis",
+          "ko": "축"
+        },
+        {
+          "en": "−100",
+          "ko": "−100"
+        },
+        {
+          "en": "+100",
+          "ko": "+100"
+        },
+        {
+          "en": "Where it bears on decisions",
+          "ko": "결정에 쓰는 곳"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "1",
+            "ko": "1"
+          },
+          {
+            "en": "Authority",
+            "ko": "권위"
+          },
+          {
+            "en": "Equality · consensus",
+            "ko": "평등·합의"
+          },
+          {
+            "en": "Command · magistracy",
+            "ko": "명령·집정"
+          },
+          {
+            "en": "Emergency powers, water cutoffs, protection governments",
+            "ko": "비상권한, 단수, 보호정부"
+          }
+        ],
+        [
+          {
+            "en": "2",
+            "ko": "2"
+          },
+          {
+            "en": "Openness",
+            "ko": "개방"
+          },
+          {
+            "en": "Exclusion · quarantine",
+            "ko": "배타·검역"
+          },
+          {
+            "en": "Hospitality · citizenship",
+            "ko": "환대·시민권"
+          },
+          {
+            "en": "Migrants, external theaters, corridors",
+            "ko": "이주민, 외부 전구, 회랑"
+          }
+        ],
+        [
+          {
+            "en": "3",
+            "ko": "3"
+          },
+          {
+            "en": "Force",
+            "ko": "무력"
+          },
+          {
+            "en": "Peace · convoy",
+            "ko": "평화·호송"
+          },
+          {
+            "en": "Preemption · occupation",
+            "ko": "선제·점령"
+          },
+          {
+            "en": "Deployments, blockades, sieges",
+            "ko": "파병, 봉쇄, 공성"
+          }
+        ],
+        [
+          {
+            "en": "4",
+            "ko": "4"
+          },
+          {
+            "en": "Material",
+            "ko": "물질"
+          },
+          {
+            "en": "Rite · sanctity of records",
+            "ko": "의례·기록 신성"
+          },
+          {
+            "en": "Stock · profit",
+            "ko": "재고·이윤"
+          },
+          {
+            "en": "Cooling keys, auctions, parts",
+            "ko": "냉각 키, 경매, 부품"
+          }
+        ],
+        [
+          {
+            "en": "5",
+            "ko": "5"
+          },
+          {
+            "en": "Community",
+            "ko": "공동"
+          },
+          {
+            "en": "Personal survival",
+            "ko": "개인 생존"
+          },
+          {
+            "en": "Family · guild",
+            "ko": "가족·길드"
+          },
+          {
+            "en": "Registers, leagues, hostages",
+            "ko": "명부, 연대, 인질"
+          }
+        ],
+        [
+          {
+            "en": "6",
+            "ko": "6"
+          },
+          {
+            "en": "Principle",
+            "ko": "원칙"
+          },
+          {
+            "en": "Expediency · compromise",
+            "ko": "실리·타협"
+          },
+          {
+            "en": "Charter wording",
+            "ko": "헌장 문구"
+          },
+          {
+            "en": "Treaty breaches, false broadcasts",
+            "ko": "조약 위반, 거짓 방송"
+          }
+        ],
+        [
+          {
+            "en": "7",
+            "ko": "7"
+          },
+          {
+            "en": "Disclosure",
+            "ko": "공개"
+          },
+          {
+            "en": "Secret ledgers",
+            "ko": "비밀 장부"
+          },
+          {
+            "en": "Cross-verified openness",
+            "ko": "교차검증 공개"
+          },
+          {
+            "en": "Wills, price bulletins, transmissions",
+            "ko": "유언, 시세, 송신"
+          }
+        ],
+        [
+          {
+            "en": "8",
+            "ko": "8"
+          },
+          {
+            "en": "Qualification",
+            "ko": "자격"
+          },
+          {
+            "en": "Heredity · bloodline",
+            "ko": "세습·혈통"
+          },
+          {
+            "en": "Examination · apprenticeship",
+            "ko": "시험·도제"
+          },
+          {
+            "en": "Succession, elders, stewards",
+            "ko": "후계, 원로, 총관"
+          }
+        ],
+        [
+          {
+            "en": "9",
+            "ko": "9"
+          },
+          {
+            "en": "Decentralization",
+            "ko": "분산"
+          },
+          {
+            "en": "Central monopoly",
+            "ko": "중앙 독점"
+          },
+          {
+            "en": "Living-sphere partition",
+            "ko": "생활권 분할"
+          },
+          {
+            "en": "Water federations, joint negotiation",
+            "ko": "급수 연방, 공동교섭"
+          }
+        ],
+        [
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "Reform",
+            "ko": "변혁"
+          },
+          {
+            "en": "Preservation · oral record",
+            "ko": "보존·구술"
+          },
+          {
+            "en": "Charter amendment",
+            "ko": "헌장 개정"
+          },
+          {
+            "en": "Empty-century debts, trusts",
+            "ko": "공백의 세기 빚, 신탁"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "인물-가치관-10칸-p3",
+      "text": {
+        "en": "Template (filled in this order every time):",
+        "ko": "템플릿(매번 이 순서로 채운다):"
+      }
+    },
+    {
+      "kind": "code",
+      "anchor": "인물-가치관-10칸-code4",
+      "language": "text",
+      "text": {
+        "en": "Values: authority _ | openness _ | force _ | material _ | community _ | principle _ | disclosure _ | qualification _ | decentralization _ | reform _",
+        "ko": "가치관: 권위 _ | 개방 _ | 무력 _ | 물질 _ | 공동 _ | 원칙 _ | 공개 _ | 자격 _ | 분산 _ | 변혁 _"
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "인물-욕망과-취향",
+      "depth": 2,
+      "text": {
+        "en": "Person Desires and Tastes",
+        "ko": "인물 욕망과 취향"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "인물-욕망과-취향-p1",
+      "text": {
+        "en": [
+          {
+            "text": "If values were the gradient on public issues, desire worked as the axis on which "
+          },
+          {
+            "text": "with whom and how one wanted to entangle",
+            "strong": true
+          },
+          {
+            "text": " shook decisions. It was read together with ambition and fear. Bonds made without the counterpart's consent, abuse of office, and material involving minors did not go into these cells."
+          }
+        ],
+        "ko": [
+          {
+            "text": "가치관이 공공 쟁점의 기울기라면, 욕망은 "
+          },
+          {
+            "text": "누구와 어떻게 얽히고 싶은지",
+            "strong": true
+          },
+          {
+            "text": "가 결정을 뒤흔드는 축으로 작용한다. 야망이나 공포와 함께 엮어 읽어야 한다. 상대의 동의를 구하지 않은 결합이나 직위 남용, 미성년 관련 소재는 이 칸에 올리지 않는다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "인물-욕망과-취향-table2",
+      "columns": [
+        {
+          "en": "#",
+          "ko": "#"
+        },
+        {
+          "en": "Axis",
+          "ko": "축"
+        },
+        {
+          "en": "−100",
+          "ko": "−100"
+        },
+        {
+          "en": "+100",
+          "ko": "+100"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "1",
+            "ko": "1"
+          },
+          {
+            "en": "Longing",
+            "ko": "갈망"
+          },
+          {
+            "en": "Low · restraint",
+            "ko": "낮음·절제"
+          },
+          {
+            "en": "High",
+            "ko": "강함"
+          }
+        ],
+        [
+          {
+            "en": "2",
+            "ko": "2"
+          },
+          {
+            "en": "Possessiveness",
+            "ko": "독점"
+          },
+          {
+            "en": "Sharing · open seats",
+            "ko": "나눔·열린 자리"
+          },
+          {
+            "en": "Monopoly · jealousy",
+            "ko": "독점·질투"
+          }
+        ],
+        [
+          {
+            "en": "3",
+            "ko": "3"
+          },
+          {
+            "en": "Risk",
+            "ko": "위험"
+          },
+          {
+            "en": "Safety · predictability",
+            "ko": "안전·예측"
+          },
+          {
+            "en": "Danger · the forbidden",
+            "ko": "위험·금지"
+          }
+        ],
+        [
+          {
+            "en": "4",
+            "ko": "4"
+          },
+          {
+            "en": "Display",
+            "ko": "과시"
+          },
+          {
+            "en": "Hiding · the private",
+            "ko": "숨김·사적"
+          },
+          {
+            "en": "Display · the public",
+            "ko": "과시·공개"
+          }
+        ],
+        [
+          {
+            "en": "5",
+            "ko": "5"
+          },
+          {
+            "en": "Duration",
+            "ko": "지속"
+          },
+          {
+            "en": "The moment",
+            "ko": "일시"
+          },
+          {
+            "en": "Long companionship",
+            "ko": "장기 동반"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "인물-욕망과-취향-p3",
+      "text": {
+        "en": "Orientation: opposite sex / same sex / both sexes / none / fluid. Bonding: monogamy / multi-partner / contract cohabitation / non-exclusive / none.",
+        "ko": "지향: 이성 / 동성 / 양성 / 무성향 / 유동. 결합: 단혼 / 다자 / 계약동거 / 비독점 / 없음."
+      }
+    },
+    {
+      "kind": "code",
+      "anchor": "인물-욕망과-취향-code4",
+      "language": "text",
+      "text": {
+        "en": "Desires: longing _ | possessiveness _ | risk _ | display _ | duration _ | orientation _ | bonding _",
+        "ko": "욕망: 갈망 _ | 독점 _ | 위험 _ | 과시 _ | 지속 _ | 지향 _ | 결합 _"
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "조직-가치관",
+      "depth": 2,
+      "text": {
+        "en": "Organization Values",
+        "ko": "조직 가치관"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "조직-가치관-p1",
+      "text": {
+        "en": [
+          {
+            "text": "Organization values were likewise built on the "
+          },
+          {
+            "text": "same ten axes",
+            "strong": true
+          },
+          {
+            "text": " as persons. The numbers were scored against the current charter, council majorities, and ledger practice. The authority number Han Jaemok carried as an individual could differ from the authority number of the Water Compact he belonged to, and it was precisely in that difference that issues budded."
+          }
+        ],
+        "ko": [
+          {
+            "text": "조직 가치관 역시 인물과 "
+          },
+          {
+            "text": "동일한 10축",
+            "strong": true
+          },
+          {
+            "text": "으로 구성된다. 값은 현재 헌장, 평의회 다수결, 장부 관행을 기준으로 매긴다. 한재목 개인이 지닌 권위 숫자와 그가 속한 급수계약정의 권위 숫자가 서로 다를 수 있으며, 바로 그 차이에서 쟁점이 피어난다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "조직-정책-8칸",
+      "depth": 2,
+      "text": {
+        "en": "The Eight Organization Policy Cells",
+        "ko": "조직 정책 8칸"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "조직-정책-8칸-p1",
+      "text": {
+        "en": [
+          {
+            "text": "As in the Stellaris policy system, "
+          },
+          {
+            "text": "each slot was given choices.",
+            "strong": true
+          },
+          {
+            "text": " The numbers here were not slot strength but simple choice codes."
+          }
+        ],
+        "ko": [
+          {
+            "text": "스텔라리스의 정책 시스템처럼 "
+          },
+          {
+            "text": "슬롯마다 선택지가 주어진다.",
+            "strong": true
+          },
+          {
+            "text": " 이때 숫자는 슬롯의 강도가 아니라 단순한 선택지 코드를 뜻한다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "조직-정책-8칸-table2",
+      "columns": [
+        {
+          "en": "Slot",
+          "ko": "슬롯"
+        },
+        {
+          "en": "Choices",
+          "ko": "선택지"
+        },
+        {
+          "en": "What it looked like in Seoul",
+          "ko": "서울에서 보이는 일"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "War",
+            "ko": "전쟁"
+          },
+          {
+            "en": "Defense / limited war / preemption",
+            "ko": "방어 / 제한전 / 선제"
+          },
+          {
+            "en": "Garrison only / protection army / preemptive occupation",
+            "ko": "수비대만 / 보호군 / 선제 점령"
+          }
+        ],
+        [
+          {
+            "en": "Migrants",
+            "ko": "이주민"
+          },
+          {
+            "en": "Expulsion / quarantine admission / citizenship",
+            "ko": "추방 / 검역수용 / 시민권"
+          },
+          {
+            "en": "Gate registers",
+            "ko": "관문 명부"
+          }
+        ],
+        [
+          {
+            "en": "Water",
+            "ko": "급수"
+          },
+          {
+            "en": "Contract / minimum line / hostage",
+            "ko": "계약 / 최저선 / 볼모"
+          },
+          {
+            "en": "Cutoff sanctions",
+            "ko": "단수 제재"
+          }
+        ],
+        [
+          {
+            "en": "Labor",
+            "ko": "노동"
+          },
+          {
+            "en": "Forced service / contract / civic service",
+            "ko": "강제복무 / 계약 / 시민복무"
+          },
+          {
+            "en": "The military-household register",
+            "ko": "군사호적"
+          }
+        ],
+        [
+          {
+            "en": "Records",
+            "ko": "기록"
+          },
+          {
+            "en": "Closed / cross-verified / fully public",
+            "ko": "비공개 / 교차검증 / 전면공개"
+          },
+          {
+            "en": "Wills and ledgers",
+            "ko": "유언·원장"
+          }
+        ],
+        [
+          {
+            "en": "Technology",
+            "ko": "기술"
+          },
+          {
+            "en": "House secret / licensed sharing / joint ledger",
+            "ko": "가문비밀 / 면허공유 / 공동원장"
+          },
+          {
+            "en": "Pump and cooling keys",
+            "ko": "펌프·냉각 키"
+          }
+        ],
+        [
+          {
+            "en": "Trade",
+            "ko": "교역"
+          },
+          {
+            "en": "Blockade / licensed / open market",
+            "ko": "봉쇄 / 허가 / 개방시장"
+          },
+          {
+            "en": "Auctions and convoys",
+            "ko": "경매·호송"
+          }
+        ],
+        [
+          {
+            "en": "Succession",
+            "ko": "후계"
+          },
+          {
+            "en": "Bloodline / adoptive apprenticeship / open examination",
+            "ko": "혈통 / 양자도제 / 공개시험"
+          },
+          {
+            "en": "Stewards and elders",
+            "ko": "총관·원로"
+          }
+        ],
+        [
+          {
+            "en": "Bonding",
+            "ko": "결합"
+          },
+          {
+            "en": "Monogamy license / contract cohabitation / house bonding / military-register bonding / open bonding",
+            "ko": "단혼허가 / 계약동거 / 가문결합 / 군호적결합 / 개방결합"
+          },
+          {
+            "en": "Marriage and cohabitation ledgers. Organizations did not assign sexual taste",
+            "ko": "혼인·동거 장부. 성적 취향을 조직이 지정하지 않는다"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "조직-정책-8칸-p3",
+      "text": {
+        "en": "Template:",
+        "ko": "템플릿:"
+      }
+    },
+    {
+      "kind": "code",
+      "anchor": "조직-정책-8칸-code4",
+      "language": "text",
+      "text": {
+        "en": "Policies: war _ | migrants _ | water _ | labor _ | records _ | technology _ | trade _ | succession _ | bonding _",
+        "ko": "정책: 전쟁 _ | 이주민 _ | 급수 _ | 노동 _ | 기록 _ | 기술 _ | 교역 _ | 후계 _ | 결합 _"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "조직-정책-8칸-p5",
+      "text": {
+        "en": [
+          {
+            "text": "The operating houses HC·HP and the external theaters XT shared the same cells. The canon of the house prose was "
+          },
+          {
+            "text": "the World Narrative Atlas",
+            "link": {
+              "domain": "root",
+              "slug": "World-Narrative-Atlas"
+            }
+          },
+          {
+            "text": "; for layer-by-layer detail, see "
+          },
+          {
+            "text": "the Houses",
+            "link": {
+              "domain": "factions",
+              "slug": "Chaebol-Houses-and-Century-Factions"
+            }
+          },
+          {
+            "text": "."
+          }
+        ],
+        "ko": [
+          {
+            "text": "운영가문 HC·HP와 외부전구 XT도 같은 칸을 공유한다. 가문 산문의 정본은 "
+          },
+          {
+            "text": "세계 서사 총람",
+            "link": {
+              "domain": "root",
+              "slug": "World-Narrative-Atlas"
+            }
+          },
+          {
+            "text": "을, 층별 세부 설명은 "
+          },
+          {
+            "text": "가문",
+            "link": {
+              "domain": "factions",
+              "slug": "Chaebol-Houses-and-Century-Factions"
+            }
+          },
+          {
+            "text": "을 참고한다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "개막-핵심-인물-17명",
+      "depth": 2,
+      "text": {
+        "en": "Seventeen Key Persons at the Opening",
+        "ko": "개막 핵심 인물 17명"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "개막-핵심-인물-17명-p1",
+      "text": {
+        "en": "A proposal list to assist creation. Gradients were set to match the temperament, ambition, and fear bodies; ages were not recorded.",
+        "ko": "창작을 돕기 위한 제안 목록이다. 성격, 야망, 공포 본문에 맞춰 기울기를 설정했으며 나이는 따로 적어두지 않았다."
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "개막-핵심-인물-17명-table2",
+      "columns": [
+        {
+          "en": "Person",
+          "ko": "인물"
+        },
+        {
+          "en": "Authority",
+          "ko": "권위"
+        },
+        {
+          "en": "Openness",
+          "ko": "개방"
+        },
+        {
+          "en": "Force",
+          "ko": "무력"
+        },
+        {
+          "en": "Material",
+          "ko": "물질"
+        },
+        {
+          "en": "Community",
+          "ko": "공동"
+        },
+        {
+          "en": "Principle",
+          "ko": "원칙"
+        },
+        {
+          "en": "Disclosure",
+          "ko": "공개"
+        },
+        {
+          "en": "Qualification",
+          "ko": "자격"
+        },
+        {
+          "en": "Decentralization",
+          "ko": "분산"
+        },
+        {
+          "en": "Reform",
+          "ko": "변혁"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Han Jaemok",
+            "ko": "한재목"
+          },
+          {
+            "en": "40",
+            "ko": "40"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          },
+          {
+            "en": "−60",
+            "ko": "−60"
+          },
+          {
+            "en": "−30",
+            "ko": "−30"
+          }
+        ],
+        [
+          {
+            "en": "Gang Minseo",
+            "ko": "강민서"
+          },
+          {
+            "en": "−40",
+            "ko": "−40"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "40",
+            "ko": "40"
+          },
+          {
+            "en": "40",
+            "ko": "40"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "40",
+            "ko": "40"
+          },
+          {
+            "en": "70",
+            "ko": "70"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          }
+        ],
+        [
+          {
+            "en": "Jeong Hojun",
+            "ko": "정호준"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "−40",
+            "ko": "−40"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          },
+          {
+            "en": "50",
+            "ko": "50"
+          },
+          {
+            "en": "50",
+            "ko": "50"
+          },
+          {
+            "en": "60",
+            "ko": "60"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          }
+        ],
+        [
+          {
+            "en": "Im Hajun",
+            "ko": "임하준"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "−30",
+            "ko": "−30"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "−40",
+            "ko": "−40"
+          },
+          {
+            "en": "50",
+            "ko": "50"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          }
+        ],
+        [
+          {
+            "en": "Bae Ujin",
+            "ko": "배우진"
+          },
+          {
+            "en": "70",
+            "ko": "70"
+          },
+          {
+            "en": "−50",
+            "ko": "−50"
+          },
+          {
+            "en": "70",
+            "ko": "70"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "40",
+            "ko": "40"
+          },
+          {
+            "en": "−30",
+            "ko": "−30"
+          },
+          {
+            "en": "−50",
+            "ko": "−50"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "−60",
+            "ko": "−60"
+          },
+          {
+            "en": "−40",
+            "ko": "−40"
+          }
+        ],
+        [
+          {
+            "en": "Im Chowon",
+            "ko": "임초원"
+          },
+          {
+            "en": "−30",
+            "ko": "−30"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "80",
+            "ko": "80"
+          },
+          {
+            "en": "40",
+            "ko": "40"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          }
+        ],
+        [
+          {
+            "en": "Yun Seorin",
+            "ko": "윤서린"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          },
+          {
+            "en": "−30",
+            "ko": "−30"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "40",
+            "ko": "40"
+          },
+          {
+            "en": "−30",
+            "ko": "−30"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          },
+          {
+            "en": "−40",
+            "ko": "−40"
+          },
+          {
+            "en": "−50",
+            "ko": "−50"
+          }
+        ],
+        [
+          {
+            "en": "Park Taegyeom",
+            "ko": "박태겸"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "−30",
+            "ko": "−30"
+          },
+          {
+            "en": "−40",
+            "ko": "−40"
+          },
+          {
+            "en": "−40",
+            "ko": "−40"
+          },
+          {
+            "en": "40",
+            "ko": "40"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          }
+        ],
+        [
+          {
+            "en": "O Haerin",
+            "ko": "오해린"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          },
+          {
+            "en": "40",
+            "ko": "40"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "70",
+            "ko": "70"
+          },
+          {
+            "en": "−40",
+            "ko": "−40"
+          },
+          {
+            "en": "−50",
+            "ko": "−50"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          }
+        ],
+        [
+          {
+            "en": "Choi Jiwoo",
+            "ko": "최지우"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "−40",
+            "ko": "−40"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "70",
+            "ko": "70"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          }
+        ],
+        [
+          {
+            "en": "Baek On",
+            "ko": "백온"
+          },
+          {
+            "en": "−60",
+            "ko": "−60"
+          },
+          {
+            "en": "50",
+            "ko": "50"
+          },
+          {
+            "en": "−50",
+            "ko": "−50"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "50",
+            "ko": "50"
+          },
+          {
+            "en": "40",
+            "ko": "40"
+          },
+          {
+            "en": "40",
+            "ko": "40"
+          },
+          {
+            "en": "40",
+            "ko": "40"
+          },
+          {
+            "en": "50",
+            "ko": "50"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          }
+        ],
+        [
+          {
+            "en": "I Hongwon",
+            "ko": "이홍원"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          },
+          {
+            "en": "80",
+            "ko": "80"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "−30",
+            "ko": "−30"
+          }
+        ],
+        [
+          {
+            "en": "Jang Sehwa",
+            "ko": "장세화"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "40",
+            "ko": "40"
+          },
+          {
+            "en": "−30",
+            "ko": "−30"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "40",
+            "ko": "40"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          }
+        ],
+        [
+          {
+            "en": "Ryu Eunbi",
+            "ko": "류은비"
+          },
+          {
+            "en": "−30",
+            "ko": "−30"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "−60",
+            "ko": "−60"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "50",
+            "ko": "50"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          }
+        ],
+        [
+          {
+            "en": "Go Seojun",
+            "ko": "고서준"
+          },
+          {
+            "en": "40",
+            "ko": "40"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "50",
+            "ko": "50"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          },
+          {
+            "en": "−30",
+            "ko": "−30"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          }
+        ],
+        [
+          {
+            "en": "Nam Yungyeong",
+            "ko": "남윤경"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          },
+          {
+            "en": "60",
+            "ko": "60"
+          },
+          {
+            "en": "−30",
+            "ko": "−30"
+          },
+          {
+            "en": "−60",
+            "ko": "−60"
+          },
+          {
+            "en": "−40",
+            "ko": "−40"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          }
+        ],
+        [
+          {
+            "en": "Jeong Yura",
+            "ko": "정유라"
+          },
+          {
+            "en": "−40",
+            "ko": "−40"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "−40",
+            "ko": "−40"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "40",
+            "ko": "40"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "50",
+            "ko": "50"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "개막-핵심-인물-17명-p3",
+      "text": {
+        "en": "A positive qualification value meant proximity to examinations and apprenticeship. Im Chowon and I Hongwon stood high on this number, and Bae Ujin showed steep gradients on the force and authority items.",
+        "ko": "자격 값이 양수이면 시험이나 도제 쪽에 가깝다는 뜻이다. 임초원과 이홍원이 이 수치가 높은 편이며, 배우진은 무력과 권위 항목에서 높은 기울기를 보인다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "십육국-헌장-개막",
+      "depth": 2,
+      "text": {
+        "en": "The Sixteen-State Charters (Opening)",
+        "ko": "십육국 헌장 (개막)"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "십육국-헌장-개막-p1",
+      "text": {
+        "en": "Values stood for the practice the current majority followed; policies stood for the choices at the moment of opening.",
+        "ko": "가치관은 현재 다수가 따르는 관행을, 정책은 개막 시점의 선택지를 나타낸다."
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "십육국-헌장-개막-table2",
+      "columns": [
+        {
+          "en": "State",
+          "ko": "국"
+        },
+        {
+          "en": "Authority",
+          "ko": "권위"
+        },
+        {
+          "en": "Openness",
+          "ko": "개방"
+        },
+        {
+          "en": "Force",
+          "ko": "무력"
+        },
+        {
+          "en": "Material",
+          "ko": "물질"
+        },
+        {
+          "en": "Community",
+          "ko": "공동"
+        },
+        {
+          "en": "Principle",
+          "ko": "원칙"
+        },
+        {
+          "en": "Disclosure",
+          "ko": "공개"
+        },
+        {
+          "en": "Qualification",
+          "ko": "자격"
+        },
+        {
+          "en": "Decentralization",
+          "ko": "분산"
+        },
+        {
+          "en": "Reform",
+          "ko": "변혁"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "01 Water Compact",
+            "ko": "01 급수계약정"
+          },
+          {
+            "en": "50",
+            "ko": "50"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          },
+          {
+            "en": "−50",
+            "ko": "−50"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          }
+        ],
+        [
+          {
+            "en": "02 Standards Alliance",
+            "ko": "02 규격동맹"
+          },
+          {
+            "en": "−30",
+            "ko": "−30"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          },
+          {
+            "en": "40",
+            "ko": "40"
+          },
+          {
+            "en": "40",
+            "ko": "40"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "50",
+            "ko": "50"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          }
+        ],
+        [
+          {
+            "en": "03 Yangjae Machineworks Company",
+            "ko": "03 양재기공주식회사"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "−30",
+            "ko": "−30"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          },
+          {
+            "en": "50",
+            "ko": "50"
+          },
+          {
+            "en": "40",
+            "ko": "40"
+          },
+          {
+            "en": "40",
+            "ko": "40"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          }
+        ],
+        [
+          {
+            "en": "04 Sermon Registry State",
+            "ko": "04 설교명부정"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          }
+        ],
+        [
+          {
+            "en": "05 Escort Protection State",
+            "ko": "05 호위보호정"
+          },
+          {
+            "en": "60",
+            "ko": "60"
+          },
+          {
+            "en": "−40",
+            "ko": "−40"
+          },
+          {
+            "en": "60",
+            "ko": "60"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "−40",
+            "ko": "−40"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "−50",
+            "ko": "−50"
+          },
+          {
+            "en": "−30",
+            "ko": "−30"
+          }
+        ],
+        [
+          {
+            "en": "06 Republic of Korea Government",
+            "ko": "06 대한민국정부"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          },
+          {
+            "en": "−30",
+            "ko": "−30"
+          },
+          {
+            "en": "−30",
+            "ko": "−30"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "50",
+            "ko": "50"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "−30",
+            "ko": "−30"
+          },
+          {
+            "en": "−40",
+            "ko": "−40"
+          }
+        ],
+        [
+          {
+            "en": "07 Line Succession State",
+            "ko": "07 선로후계정"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          }
+        ],
+        [
+          {
+            "en": "08 Won Buddhism",
+            "ko": "08 원불교"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          },
+          {
+            "en": "40",
+            "ko": "40"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "60",
+            "ko": "60"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "−30",
+            "ko": "−30"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          }
+        ],
+        [
+          {
+            "en": "09 Yeouido Investment Union",
+            "ko": "09 여의도출자연합회"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "−30",
+            "ko": "−30"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "50",
+            "ko": "50"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          }
+        ],
+        [
+          {
+            "en": "10 Sangha Relief State",
+            "ko": "10 승가구휼정"
+          },
+          {
+            "en": "−50",
+            "ko": "−50"
+          },
+          {
+            "en": "50",
+            "ko": "50"
+          },
+          {
+            "en": "−40",
+            "ko": "−40"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "60",
+            "ko": "60"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "50",
+            "ko": "50"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          }
+        ],
+        [
+          {
+            "en": "11 Seocho Computing Group",
+            "ko": "11 서초전산그룹"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          },
+          {
+            "en": "60",
+            "ko": "60"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          }
+        ],
+        [
+          {
+            "en": "12 Neutral Convoy City",
+            "ko": "12 중립호송시"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "40",
+            "ko": "40"
+          },
+          {
+            "en": "−30",
+            "ko": "−30"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "40",
+            "ko": "40"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          }
+        ],
+        [
+          {
+            "en": "13 Medical Neutrality League",
+            "ko": "13 의약중립맹"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "−50",
+            "ko": "−50"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "40",
+            "ko": "40"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          }
+        ],
+        [
+          {
+            "en": "14 Gate Military Government",
+            "ko": "14 관문군정"
+          },
+          {
+            "en": "40",
+            "ko": "40"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "40",
+            "ko": "40"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          }
+        ],
+        [
+          {
+            "en": "15 Cathedral Accreditation State",
+            "ko": "15 본당인준정"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "−10",
+            "ko": "−10"
+          },
+          {
+            "en": "50",
+            "ko": "50"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "−40",
+            "ko": "−40"
+          },
+          {
+            "en": "−20",
+            "ko": "−20"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          }
+        ],
+        [
+          {
+            "en": "16 Jeongdong General Labor Union",
+            "ko": "16 정동노동총연맹"
+          },
+          {
+            "en": "−30",
+            "ko": "−30"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "−30",
+            "ko": "−30"
+          },
+          {
+            "en": "0",
+            "ko": "0"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "30",
+            "ko": "30"
+          },
+          {
+            "en": "20",
+            "ko": "20"
+          },
+          {
+            "en": "40",
+            "ko": "40"
+          },
+          {
+            "en": "10",
+            "ko": "10"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "table",
+      "anchor": "십육국-헌장-개막-table3",
+      "columns": [
+        {
+          "en": "State",
+          "ko": "국"
+        },
+        {
+          "en": "War",
+          "ko": "전쟁"
+        },
+        {
+          "en": "Migrants",
+          "ko": "이주민"
+        },
+        {
+          "en": "Water",
+          "ko": "급수"
+        },
+        {
+          "en": "Labor",
+          "ko": "노동"
+        },
+        {
+          "en": "Records",
+          "ko": "기록"
+        },
+        {
+          "en": "Technology",
+          "ko": "기술"
+        },
+        {
+          "en": "Trade",
+          "ko": "교역"
+        },
+        {
+          "en": "Succession",
+          "ko": "후계"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "01 Yeouido",
+            "ko": "01 여의도"
+          },
+          {
+            "en": "Limited war",
+            "ko": "제한전"
+          },
+          {
+            "en": "Quarantine admission",
+            "ko": "검역수용"
+          },
+          {
+            "en": "Contract",
+            "ko": "계약"
+          },
+          {
+            "en": "Contract",
+            "ko": "계약"
+          },
+          {
+            "en": "Cross-verified",
+            "ko": "교차검증"
+          },
+          {
+            "en": "Licensed sharing",
+            "ko": "면허공유"
+          },
+          {
+            "en": "Licensed",
+            "ko": "허가"
+          },
+          {
+            "en": "Adoptive apprenticeship",
+            "ko": "양자도제"
+          }
+        ],
+        [
+          {
+            "en": "02 Southwest",
+            "ko": "02 서남"
+          },
+          {
+            "en": "Defense",
+            "ko": "방어"
+          },
+          {
+            "en": "Citizenship",
+            "ko": "시민권"
+          },
+          {
+            "en": "Minimum line",
+            "ko": "최저선"
+          },
+          {
+            "en": "Civic service",
+            "ko": "시민복무"
+          },
+          {
+            "en": "Cross-verified",
+            "ko": "교차검증"
+          },
+          {
+            "en": "Joint ledger",
+            "ko": "공동원장"
+          },
+          {
+            "en": "Licensed",
+            "ko": "허가"
+          },
+          {
+            "en": "Open examination",
+            "ko": "공개시험"
+          }
+        ],
+        [
+          {
+            "en": "03 Magok",
+            "ko": "03 마곡"
+          },
+          {
+            "en": "Defense",
+            "ko": "방어"
+          },
+          {
+            "en": "Quarantine admission",
+            "ko": "검역수용"
+          },
+          {
+            "en": "Minimum line",
+            "ko": "최저선"
+          },
+          {
+            "en": "Contract",
+            "ko": "계약"
+          },
+          {
+            "en": "Fully public",
+            "ko": "전면공개"
+          },
+          {
+            "en": "Joint ledger",
+            "ko": "공동원장"
+          },
+          {
+            "en": "Licensed",
+            "ko": "허가"
+          },
+          {
+            "en": "Open examination",
+            "ko": "공개시험"
+          }
+        ],
+        [
+          {
+            "en": "04 Ttukseom",
+            "ko": "04 뚝섬"
+          },
+          {
+            "en": "Defense",
+            "ko": "방어"
+          },
+          {
+            "en": "Quarantine admission",
+            "ko": "검역수용"
+          },
+          {
+            "en": "Contract",
+            "ko": "계약"
+          },
+          {
+            "en": "Contract",
+            "ko": "계약"
+          },
+          {
+            "en": "Closed",
+            "ko": "비공개"
+          },
+          {
+            "en": "House secret",
+            "ko": "가문비밀"
+          },
+          {
+            "en": "Licensed",
+            "ko": "허가"
+          },
+          {
+            "en": "Adoptive apprenticeship",
+            "ko": "양자도제"
+          }
+        ],
+        [
+          {
+            "en": "05 Amsa",
+            "ko": "05 암사"
+          },
+          {
+            "en": "Preemption",
+            "ko": "선제"
+          },
+          {
+            "en": "Expulsion",
+            "ko": "추방"
+          },
+          {
+            "en": "Hostage",
+            "ko": "볼모"
+          },
+          {
+            "en": "Forced service",
+            "ko": "강제복무"
+          },
+          {
+            "en": "Closed",
+            "ko": "비공개"
+          },
+          {
+            "en": "Licensed sharing",
+            "ko": "면허공유"
+          },
+          {
+            "en": "Blockade",
+            "ko": "봉쇄"
+          },
+          {
+            "en": "Bloodline",
+            "ko": "혈통"
+          }
+        ],
+        [
+          {
+            "en": "06 Seoul Station",
+            "ko": "06 서울역"
+          },
+          {
+            "en": "Defense",
+            "ko": "방어"
+          },
+          {
+            "en": "Quarantine admission",
+            "ko": "검역수용"
+          },
+          {
+            "en": "Contract",
+            "ko": "계약"
+          },
+          {
+            "en": "Contract",
+            "ko": "계약"
+          },
+          {
+            "en": "Cross-verified",
+            "ko": "교차검증"
+          },
+          {
+            "en": "Licensed sharing",
+            "ko": "면허공유"
+          },
+          {
+            "en": "Licensed",
+            "ko": "허가"
+          },
+          {
+            "en": "Adoptive apprenticeship",
+            "ko": "양자도제"
+          }
+        ],
+        [
+          {
+            "en": "07 Yongsan",
+            "ko": "07 용산"
+          },
+          {
+            "en": "Limited war",
+            "ko": "제한전"
+          },
+          {
+            "en": "Quarantine admission",
+            "ko": "검역수용"
+          },
+          {
+            "en": "Contract",
+            "ko": "계약"
+          },
+          {
+            "en": "Contract",
+            "ko": "계약"
+          },
+          {
+            "en": "Closed",
+            "ko": "비공개"
+          },
+          {
+            "en": "Licensed sharing",
+            "ko": "면허공유"
+          },
+          {
+            "en": "Licensed",
+            "ko": "허가"
+          },
+          {
+            "en": "Adoptive apprenticeship",
+            "ko": "양자도제"
+          }
+        ],
+        [
+          {
+            "en": "08 Noryangjin",
+            "ko": "08 노량진"
+          },
+          {
+            "en": "Defense",
+            "ko": "방어"
+          },
+          {
+            "en": "Citizenship",
+            "ko": "시민권"
+          },
+          {
+            "en": "Contract",
+            "ko": "계약"
+          },
+          {
+            "en": "Contract",
+            "ko": "계약"
+          },
+          {
+            "en": "Cross-verified",
+            "ko": "교차검증"
+          },
+          {
+            "en": "Licensed sharing",
+            "ko": "면허공유"
+          },
+          {
+            "en": "Open market",
+            "ko": "개방시장"
+          },
+          {
+            "en": "Adoptive apprenticeship",
+            "ko": "양자도제"
+          }
+        ],
+        [
+          {
+            "en": "09 Sangam",
+            "ko": "09 상암"
+          },
+          {
+            "en": "Defense",
+            "ko": "방어"
+          },
+          {
+            "en": "Quarantine admission",
+            "ko": "검역수용"
+          },
+          {
+            "en": "Contract",
+            "ko": "계약"
+          },
+          {
+            "en": "Contract",
+            "ko": "계약"
+          },
+          {
+            "en": "Fully public",
+            "ko": "전면공개"
+          },
+          {
+            "en": "Licensed sharing",
+            "ko": "면허공유"
+          },
+          {
+            "en": "Licensed",
+            "ko": "허가"
+          },
+          {
+            "en": "Open examination",
+            "ko": "공개시험"
+          }
+        ],
+        [
+          {
+            "en": "10 Bukhansan Bogukmun",
+            "ko": "10 북한산보국문"
+          },
+          {
+            "en": "Defense",
+            "ko": "방어"
+          },
+          {
+            "en": "Citizenship",
+            "ko": "시민권"
+          },
+          {
+            "en": "Minimum line",
+            "ko": "최저선"
+          },
+          {
+            "en": "Civic service",
+            "ko": "시민복무"
+          },
+          {
+            "en": "Cross-verified",
+            "ko": "교차검증"
+          },
+          {
+            "en": "Licensed sharing",
+            "ko": "면허공유"
+          },
+          {
+            "en": "Licensed",
+            "ko": "허가"
+          },
+          {
+            "en": "Open examination",
+            "ko": "공개시험"
+          }
+        ],
+        [
+          {
+            "en": "11 Changdong",
+            "ko": "11 창동"
+          },
+          {
+            "en": "Defense",
+            "ko": "방어"
+          },
+          {
+            "en": "Quarantine admission",
+            "ko": "검역수용"
+          },
+          {
+            "en": "Contract",
+            "ko": "계약"
+          },
+          {
+            "en": "Contract",
+            "ko": "계약"
+          },
+          {
+            "en": "Cross-verified",
+            "ko": "교차검증"
+          },
+          {
+            "en": "House secret",
+            "ko": "가문비밀"
+          },
+          {
+            "en": "Licensed",
+            "ko": "허가"
+          },
+          {
+            "en": "Open examination",
+            "ko": "공개시험"
+          }
+        ],
+        [
+          {
+            "en": "12 Sinnae",
+            "ko": "12 신내"
+          },
+          {
+            "en": "Defense",
+            "ko": "방어"
+          },
+          {
+            "en": "Citizenship",
+            "ko": "시민권"
+          },
+          {
+            "en": "Minimum line",
+            "ko": "최저선"
+          },
+          {
+            "en": "Contract",
+            "ko": "계약"
+          },
+          {
+            "en": "Cross-verified",
+            "ko": "교차검증"
+          },
+          {
+            "en": "Licensed sharing",
+            "ko": "면허공유"
+          },
+          {
+            "en": "Licensed",
+            "ko": "허가"
+          },
+          {
+            "en": "Adoptive apprenticeship",
+            "ko": "양자도제"
+          }
+        ],
+        [
+          {
+            "en": "13 Jegi-dong",
+            "ko": "13 제기동"
+          },
+          {
+            "en": "Defense",
+            "ko": "방어"
+          },
+          {
+            "en": "Citizenship",
+            "ko": "시민권"
+          },
+          {
+            "en": "Minimum line",
+            "ko": "최저선"
+          },
+          {
+            "en": "Contract",
+            "ko": "계약"
+          },
+          {
+            "en": "Cross-verified",
+            "ko": "교차검증"
+          },
+          {
+            "en": "Joint ledger",
+            "ko": "공동원장"
+          },
+          {
+            "en": "Licensed",
+            "ko": "허가"
+          },
+          {
+            "en": "Open examination",
+            "ko": "공개시험"
+          }
+        ],
+        [
+          {
+            "en": "14 Achasan",
+            "ko": "14 아차산"
+          },
+          {
+            "en": "Limited war",
+            "ko": "제한전"
+          },
+          {
+            "en": "Expulsion",
+            "ko": "추방"
+          },
+          {
+            "en": "Contract",
+            "ko": "계약"
+          },
+          {
+            "en": "Forced service",
+            "ko": "강제복무"
+          },
+          {
+            "en": "Closed",
+            "ko": "비공개"
+          },
+          {
+            "en": "Licensed sharing",
+            "ko": "면허공유"
+          },
+          {
+            "en": "Blockade",
+            "ko": "봉쇄"
+          },
+          {
+            "en": "Bloodline",
+            "ko": "혈통"
+          }
+        ],
+        [
+          {
+            "en": "15 Garak",
+            "ko": "15 가락"
+          },
+          {
+            "en": "Defense",
+            "ko": "방어"
+          },
+          {
+            "en": "Quarantine admission",
+            "ko": "검역수용"
+          },
+          {
+            "en": "Contract",
+            "ko": "계약"
+          },
+          {
+            "en": "Contract",
+            "ko": "계약"
+          },
+          {
+            "en": "Closed",
+            "ko": "비공개"
+          },
+          {
+            "en": "Licensed sharing",
+            "ko": "면허공유"
+          },
+          {
+            "en": "Open market",
+            "ko": "개방시장"
+          },
+          {
+            "en": "Adoptive apprenticeship",
+            "ko": "양자도제"
+          }
+        ],
+        [
+          {
+            "en": "16 Suseo",
+            "ko": "16 수서"
+          },
+          {
+            "en": "Defense",
+            "ko": "방어"
+          },
+          {
+            "en": "Citizenship",
+            "ko": "시민권"
+          },
+          {
+            "en": "Minimum line",
+            "ko": "최저선"
+          },
+          {
+            "en": "Contract",
+            "ko": "계약"
+          },
+          {
+            "en": "Cross-verified",
+            "ko": "교차검증"
+          },
+          {
+            "en": "Joint ledger",
+            "ko": "공동원장"
+          },
+          {
+            "en": "Licensed",
+            "ko": "허가"
+          },
+          {
+            "en": "Open examination",
+            "ko": "공개시험"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "1001명-생성-경로",
+      "depth": 2,
+      "text": {
+        "en": "The 1001-Person Generation Path",
+        "ko": "1001명 생성 경로"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "1001명-생성-경로-p1",
+      "text": {
+        "en": [
+          {
+            "text": "The canon of named persons was limited to the "
+          },
+          {
+            "text": "1001",
+            "strong": true
+          },
+          {
+            "text": " belonging to the sixteen states. The corridor seeds and the 100 not yet through review (the random additional roster) were not counted into that 1001. Each added person required the cast card contract, the ten cells above, and the desire cells filled without gaps. Generation was not complete by merely spinning a random seed and mechanically copying fear lines."
+          }
+        ],
+        "ko": [
+          {
+            "text": "이름을 지닌 인물의 정본은 16국에 속한 "
+          },
+          {
+            "text": "1001명",
+            "strong": true
+          },
+          {
+            "text": "으로 제한한다. 회랑 시드와 아직 검토를 거치지 않은 후보 100명(랜덤 추가 로스터)은 이 1001명 명단에 포함시키지 않는다. 인물을 한 명 더 추가할 때마다 인물 카드 계약과 위에서 명시한 10칸, 그리고 욕망 칸을 빈틈없이 채워야 한다. 무작위 시드만 돌려놓고 공포 문장을 기계적으로 베껴 오는 방식으로는 생성을 마쳤다고 볼 수 없다. 게시 인물은 "
+          },
+          {
+            "text": "인물 총람",
+            "link": {
+              "domain": "characters",
+              "slug": "Cast-Index"
+            }
+          },
+          {
+            "text": "에서 확인한다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "1001명-생성-경로-p2",
+      "text": {
+        "en": "The order of generation was as follows.",
+        "ko": "생성 순서는 다음과 같다."
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "1001명-생성-경로-list3",
+      "ordered": true,
+      "items": [
+        {
+          "en": "A suitable name was chosen from the name pool, and carefully checked against how the person referred to themselves.",
+          "ko": "이름 풀에서 적절한 성명을 고른 뒤, 인물이 자신을 지칭하는 방식과 어울리는지 꼼꼼히 살핀다."
+        },
+        {
+          "en": "Origin, languages, trade, affiliation, position, conscription record, armament state, and generation were written into their cells. Ages were not filled in without clear grounds.",
+          "ko": "출신, 언어, 생업, 소속, 직위, 징집 이력, 무장 상태, 세대를 각 칸에 맞게 적는다. 이때 나이는 뚜렷한 근거 없이 채워 넣지 않는다."
+        },
+        {
+          "en": "The ten value numbers, the five desire cells, and orientation and bonding information were entered. Whether these settings pointed naturally in the same direction as ambition and fear was reviewed. Sexual narratives involving minors were strictly excluded.",
+          "ko": "가치관 10숫자와 욕망 5칸, 그리고 지향과 결합 정보를 기입한다. 이 설정들이 야망이나 공포와 자연스럽게 같은 방향을 가리키는지 검토한다. 미성년과 얽힌 성적 서사는 철저히 배제한다."
+        },
+        {
+          "en": [
+            {
+              "text": "Values were adjusted so that "
+            },
+            {
+              "text": "at least one axis",
+              "strong": true
+            },
+            {
+              "text": " clashed with the charter values and policies of the affiliated organization. When every number overlapped the organization perfectly, no issue proper to the person arose."
+            }
+          ],
+          "ko": [
+            {
+              "text": "소속 조직의 헌장 가치 및 정책과 "
+            },
+            {
+              "text": "어긋나는 축이 적어도 하나 이상",
+              "strong": true
+            },
+            {
+              "text": " 존재하도록 조정한다. 모든 수치가 조직과 완벽히 겹친다면 인물만의 쟁점이 생겨나지 않기 때문이다."
+            }
+          ]
+        },
+        {
+          "en": "Relations with other persons and the events that triggered conflict were recorded concretely.",
+          "ko": "다른 인물들과의 관계와 갈등을 촉발하는 사건을 구체적으로 기록한다."
+        },
+        {
+          "en": "Only after all of this was a person registered as a pre-approval candidate. As stated, the corridor seeds and the roster-100 candidates were not hastily put into the sixteen-state 1001.",
+          "ko": "이 과정을 모두 거쳐야 비로소 승인 전 후보로 등록된다. 앞서 말했듯 회랑 시드와 roster-100 후보는 16국 1001명 명단에 섣불리 넣지 않는다."
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "1001명-생성-경로-p4",
+      "text": {
+        "en": "When newly writing or revising organization settings (sixteen states, HC, HP, XT, conscription remnants), the ten value cells and the eight policy cells had to be revised together in the same commit.",
+        "ko": "조직(16국, HC, HP, XT, 징집 잔존) 설정을 새로 작성하거나 고칠 때에도 가치 10칸과 정책 8칸을 반드시 같은 커밋 안에서 함께 수정해야 한다."
+      }
+    }
+  ],
+  "data": {}
+}

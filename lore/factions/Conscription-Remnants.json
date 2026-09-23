@@ -1,0 +1,572 @@
+{
+  "version": 1,
+  "domain": "factions",
+  "id": "DOC:Conscription-Remnants",
+  "slug": "conscription-remnants",
+  "status": "draft",
+  "tense": {
+    "en": "past",
+    "ko": "past"
+  },
+  "provenance": {
+    "original_anchor": "lore/factions/Conscription-Remnants.md",
+    "original_hash": "3e627423c32d33ee68b8a6d287cc23ee0a2887b533c429a64fb3454caf3d04a4",
+    "history": [
+      "Korean lore/factions/Conscription-Remnants.md SHA-256 3e627423c32d33ee68b8a6d287cc23ee0a2887b533c429a64fb3454caf3d04a4.",
+      "English lore/factions/Conscription-Remnants.en.md SHA-256 96ad04af16e5db9c68d0017df9e0c4c64f9f5545f602b454a3fc4295311255c1; copied verbatim, no translation written."
+    ]
+  },
+  "source": {
+    "kind": "original-fiction",
+    "refs": [
+      "lore/factions/Conscription-Remnants.md",
+      "lore/factions/Conscription-Remnants.en.md"
+    ]
+  },
+  "locales": {
+    "en": {
+      "title": "Conscription Remnants and the Military Registers",
+      "summary": "Korea's conscription system was taken as the starting point of the remnant military organizations and of service experience.",
+      "tense": "past"
+    },
+    "ko": {
+      "title": "징집 잔존과 군 장부",
+      "summary": "한국의 병역제도를 잔존 군 조직과 복무 경험의 출발점으로 삼는다.",
+      "tense": "past"
+    }
+  },
+  "content": [
+    {
+      "kind": "heading",
+      "anchor": "징집-잔존과-군-장부",
+      "depth": 1,
+      "text": {
+        "en": "Conscription Remnants and the Military Registers",
+        "ko": "징집 잔존과 군 장부"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "징집-잔존과-군-장부-p1",
+      "text": {
+        "en": "Korea's conscription system was taken as the starting point of the remnant military organizations and of service experience. Conscription duty, active service, reserve formation, and equipment holdings were not read as one overlapping register; they read as separate strata. A person's form and period of service remained in verified records or in written biography, and were never decided by gender or name alone. There were also those who enlisted anew after the collapse.",
+        "ko": "한국의 병역제도를 잔존 군 조직과 복무 경험의 출발점으로 삼는다. 병역 의무와 현역 복무, 예비군 편성, 장비 보유는 한 장의 명부로 겹쳐 보이지 않고 서로 다른 층으로 읽힌다. 인물의 복무 형태와 시기는 확인된 기록 또는 창작 전기에 남기며, 성별이나 이름만으로 결정하지 않는다. 붕괴 뒤에 새로 입대한 사람도 있다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "징집-잔존과-군-장부-p2",
+      "text": {
+        "en": [
+          {
+            "text": "These four organizations were creative proposals operating in overlap with the existing "
+          },
+          {
+            "text": "Sixteen States of Seoul",
+            "link": {
+              "domain": "factions",
+              "slug": "Sixteen-States"
+            }
+          },
+          {
+            "text": ". They were not a plan adding four independent states. Units that kept their command systems, units tied into local self-rule, and groups that refused orders could coexist in the same sphere. Troop and ammunition counts remained undecided."
+          }
+        ],
+        "ko": [
+          {
+            "text": "이 네 조직은 기존 "
+          },
+          {
+            "text": "서울 십육국",
+            "link": {
+              "domain": "factions",
+              "slug": "Sixteen-States"
+            }
+          },
+          {
+            "text": "과 겹쳐 활동하는 창작 제안이다. 독립 나라 네 개를 추가하는 안은 아닌 듯하다. 지휘 계통을 유지한 부대, 지방 자치와 결합한 부대, 명령을 거부한 집단이 같은 권역에서 공존할 수 있다. 병력과 탄약 수량은 아직 정하지 않았다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "달력과의-관계",
+      "depth": 2,
+      "text": {
+        "en": "The Relation to the Calendar",
+        "ko": "달력과의 관계"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "달력과의-관계-p1",
+      "text": {
+        "en": [
+          {
+            "text": "The common era from the revocation of 2026 to the opening of 2126 belonged to "
+          },
+          {
+            "text": "the Hundred-Year Annals of Seoul Dengoku",
+            "link": {
+              "domain": "chronology",
+              "slug": "Century-Annals"
+            }
+          },
+          {
+            "text": ". The reserve-formation regulations of the present were not carried over as the institutions of 2126. The military registers of the 2126 generation were not read as units from just after the revocation; they remained as transcribed copies of remnant organizations that had passed through the creation oral record and the empty century."
+          }
+        ],
+        "ko": [
+          {
+            "text": "서기는 이탈 2026부터 개막 2126까지 "
+          },
+          {
+            "text": "서울전국 백년 연초",
+            "link": {
+              "domain": "chronology",
+              "slug": "Century-Annals"
+            }
+          },
+          {
+            "text": "가 소유한다. 현재 예비군 편성 규정을 2126년의 제도로 그대로 옮기지는 않는다. 2126년 세대의 군 장부는 이탈 직후 부대로 읽히지 않고, 창세 구술과 공백의 세기를 지나 필사된 잔존 조직의 사본으로 남는다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "붕괴가-부대를-어떻게-자르는가",
+      "depth": 2,
+      "text": {
+        "en": "How the Collapse Cut the Units",
+        "ko": "붕괴가 부대를 어떻게 자르는가"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "붕괴가-부대를-어떻게-자르는가-p1",
+      "text": {
+        "en": "Even where a unit's name survived, when the communications, the feeding, the maintenance, and the ammunition supply that carried orders broke, it could no longer move in the same way. The fault lines of a remnant unit did not seem to be settled by who knew the service numbers alone. Commanders held the call-up authority, maintenance hands held the judgment on whether equipment ran, and residents held the ration and passage conditions, and they negotiated with one another.",
+        "ko": "부대 이름이 남아 있어도 명령을 전달할 통신, 급식, 정비, 탄약 보급이 끊기면 같은 방식으로 움직일 수 없다. 잔존 부대의 갈등은 누가 군번을 아는지만으로 정해지지 않는 듯하다. 지휘관은 소집권을, 정비 인력은 장비 가동 여부를, 거주민은 배급과 통행 조건을 쥐고 서로 협상한다."
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "붕괴가-부대를-어떻게-자르는가-table2",
+      "columns": [
+        {
+          "en": "Surviving organization · record",
+          "ko": "남은 조직·기록"
+        },
+        {
+          "en": "Function maintained",
+          "ko": "유지하는 기능"
+        },
+        {
+          "en": "Object of conflict",
+          "ko": "갈등의 대상"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Mobilization registers and command systems",
+            "ko": "동원 명부와 지휘 계통"
+          },
+          {
+            "en": "Affiliation and contact nets, order transmission",
+            "ko": "소속과 연락망, 명령 전달"
+          },
+          {
+            "en": "Whether to keep following old orders or accept local self-rule's control",
+            "ko": "옛 명령을 계속 따를지 지역 자치의 통제를 받을지"
+          }
+        ],
+        [
+          {
+            "en": "Weapons, supply, and maintenance handlers",
+            "ko": "무기·보급·정비 담당"
+          },
+          {
+            "en": "Equipment lending, stock management, readiness judgment",
+            "ko": "장비 대여, 재고 관리, 가동 상태 판정"
+          },
+          {
+            "en": "To whom to issue, and which mission to support first",
+            "ko": "누구에게 지급하고 어떤 임무를 먼저 지원할지"
+          }
+        ],
+        [
+          {
+            "en": "Deserters and call-up refusers",
+            "ko": "이탈자·소집 거부자"
+          },
+          {
+            "en": "Survival with family and comrades outside the registers",
+            "ko": "명부 밖에서 가족·동료와 생존"
+          },
+          {
+            "en": "Whether to treat voluntary departure and lost communications as the same desertion",
+            "ko": "자발적 이탈과 통신 두절을 같은 탈영으로 취급할지"
+          }
+        ],
+        [
+          {
+            "en": "Emergency committees, markets, water-supply organizations",
+            "ko": "비상위원회·시장·급수 조직"
+          },
+          {
+            "en": "Rations, housing, passage, civilian delegates' approval",
+            "ko": "배급, 주거, 통행, 민간 대표의 승인"
+          },
+          {
+            "en": "What burden to demand of residents in exchange for military support",
+            "ko": "군 지원을 대가로 주민에게 어떤 부담을 요구할지"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "붕괴가-부대를-어떻게-자르는가-p3",
+      "text": {
+        "en": [
+          {
+            "text": "The initial owning organ of military equipment and its post-collapse owner could differ. Recovery, trade, and new issue were also paths. The "
+          },
+          {
+            "text": "arms-candidate table",
+            "link": {
+              "domain": "goods",
+              "slug": "Era-Arms-and-Tech-Level"
+            }
+          },
+          {
+            "text": " carried public model names such as the K2 with their grounds, but no estimate of actual stock or of any specific depot's location went in."
+          }
+        ],
+        "ko": [
+          {
+            "text": "군용 장비의 초기 소유 기관과 붕괴 후 소유자는 다를 수 있다. 회수·거래·신규 지급도 경로가 된다. "
+          },
+          {
+            "text": "장비 후보 표",
+            "link": {
+              "domain": "goods",
+              "slug": "Era-Arms-and-Tech-Level"
+            }
+          },
+          {
+            "text": "에는 K2 같은 공개 모델명을 근거와 함께 적되, 실제 재고나 특정 창고의 위치를 추정해 넣지 않는다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "생활권에-얹는-위치",
+      "depth": 2,
+      "text": {
+        "en": "Positions Laid Over the Living Spheres",
+        "ko": "생활권에 얹는 위치"
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "생활권에-얹는-위치-table1",
+      "columns": [
+        {
+          "en": "Creative remnant organization",
+          "ko": "창작 잔존 조직"
+        },
+        {
+          "en": "Sphere of activity and existing military",
+          "ko": "활동 권역과 기존 군사"
+        },
+        {
+          "en": "Command and supply interests",
+          "ko": "지휘·보급의 이해관계"
+        },
+        {
+          "en": "Dispute with residents",
+          "ko": "주민과의 쟁점"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Sinjeong–Bupyeong axis mobilization remnants",
+            "ko": "신정·부평 축 동원잔존"
+          },
+          {
+            "en": "Standards Alliance Guro and Geumcheon; distinct from the engineers and the barrier-gate combat teams",
+            "ko": "규격동맹 구로·금천. 공병대·차단문 전투조와 별개"
+          },
+          {
+            "en": "Officers seeking to keep the old call-up registers and the production-first Fabrication Council disputed the division of maintenance and motive power",
+            "ko": "옛 소집 명부를 유지하려는 간부와 생산을 우선하는 제작평의회가 정비·동력 배분을 다툼"
+          },
+          {
+            "en": "Whether restoration labor was a voluntary citizenship contract or forced mobilization. The \"Guro warlord\" preset connects as a splinter of this organization turned private army",
+            "ko": "복구 노동이 자발적 시민권 계약인지 강제 동원인지. 프리셋의 “구로 군벌”은 이 조직 일부가 사병화된 분파로 연결하는 안"
+          }
+        ],
+        [
+          {
+            "en": "Yongsan garrison memory",
+            "ko": "용산 주둔 기억"
+          },
+          {
+            "en": "Line Succession State; remnant personnel holding interpretation, labor-contract, and access records",
+            "ko": "선로후계정. 통역·용역·출입 기록을 가진 잔존 인력"
+          },
+          {
+            "en": "The train-dispatch hand and the access-authorization hand overlapped in authority; negotiation over who divided the recovered radio and motive-power assets",
+            "ko": "열차 배차 담당과 출입 인가 담당의 권한이 겹침. 회수한 무전·동력 자산을 누가 배분할지 협상"
+          },
+          {
+            "en": "Passage rights of residents and contract labor. The actual 2026 return and relocation status and the fictional remnant assets are separate research",
+            "ko": "거주민과 용역 인력의 통행권. 실제 2026 반환·이전 상태와 가상 잔존 자산은 별도 조사"
+          }
+        ],
+        [
+          {
+            "en": "Capital Defense Command remnants",
+            "ko": "수방사 잔편"
+          },
+          {
+            "en": "The edge of the Republic of Korea Government; distinct from the archive ceremonial guard",
+            "ko": "대한민국정부 가장자리. 문서고 의전경비와 별개"
+          },
+          {
+            "en": "Officers holding the emergency call-up seal and the Records Bureau accreditation officers disputed the validity of orders",
+            "ko": "비상 소집 도장을 가진 간부와 기록청 인준 담당이 명령의 효력을 다툼"
+          },
+          {
+            "en": "Whether resident registration was itself consent to service, and who received objections to military orders",
+            "ko": "주민 등록이 곧 복무 동의인지, 군사 명령에 대한 이의 제기를 누가 접수하는지"
+          }
+        ],
+        [
+          {
+            "en": "Northern home-front corridor",
+            "ko": "북부 향토 회랑"
+          },
+          {
+            "en": "Sangha Relief State and Seocho Computing Group; in contact with mountain reconnaissance and rail-cavalry organizations",
+            "ko": "승가구휼정·서초전산그룹. 산악 정찰·궤도기병 조직과 접촉"
+          },
+          {
+            "en": "The remnant company and the dispatch hand disputed the order of refugee transport and military freight",
+            "ko": "잔존 중대와 배차 담당이 피난 수송과 군수 수송의 순서를 다툼"
+          },
+          {
+            "en": "Whether refugee shelter was bound to call-up conditions. Connected to the branches of the military-household register dispute and the Bukhansan Bogukmun columns",
+            "ko": "피난 수용을 소집 조건에 묶을지. 군사호적 논쟁과 북한산보국문 행렬의 분기에 연결"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "생활권에-얹는-위치-p2",
+      "text": {
+        "en": "This table was not to be read as material describing the 2026 stationing or movement of real units. Yongsan's past garrisoning and its return status, and the fictional fences, depots, and watch organizations, had to be recorded as distinct layers. Factual citation of real military names and the post-opening fictional organizations were not to be mixed into one stratum.",
+        "ko": "이 표는 실제 부대의 2026 주둔 위치나 부대 이동을 묘사한 자료로 읽히지는 않는다. 용산의 과거 주둔 사실과 반환 현황, 창작 울타리·창고·당직 조직은 구분해 기록해야 한다. 실재 군사 명칭의 사실 인용과 개막 이후의 창작 조직도 같은 층으로 섞지 않는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "생활권에-얹는-위치-p3",
+      "text": {
+        "en": "The deserter-squad preset's \"good but conspicuous regulation issue\" connected to the setting that the old affiliation was identifiable from issued gear. No rule was kept under which stealing a register alone opened every armory.",
+        "ko": "탈영 소대 프리셋의 “좋지만 눈에 띄는 제식”은 옛 소속이 식별되는 지급품이라는 설정으로 연결한다. 명부만 훔치면 모든 무기고가 열리는 식의 규칙은 두지 않는다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "누가-총을-드는가",
+      "depth": 2,
+      "text": {
+        "en": "Who Carried a Gun",
+        "ko": "누가 총을 드는가"
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "누가-총을-드는가-table1",
+      "columns": [
+        {
+          "en": "Opening-moment person",
+          "ko": "시작 시점의 인물"
+        },
+        {
+          "en": "Record to verify",
+          "ko": "확인할 이력"
+        },
+        {
+          "en": "Initial plan and later approach",
+          "ko": "초기안과 이후 접근"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "The drifter",
+            "ko": "떠돌이"
+          },
+          {
+            "en": "Service experience, possession of recovered goods, trading partners",
+            "ko": "복무 경험, 회수품 보유, 거래 상대"
+          },
+          {
+            "en": "The existing preset is a staff and worn clothes. Not a condition permanently limiting armament afterward",
+            "ko": "기존 프리셋은 봉·낡은 의복. 이후 무장을 영구히 제한하는 조건은 아님"
+          }
+        ],
+        [
+          {
+            "en": "The former patrol officer",
+            "ko": "전직 순찰"
+          },
+          {
+            "en": "Police career and military service verified separately",
+            "ko": "치안 경력과 병역을 각각 확인"
+          },
+          {
+            "en": "The existing preset is a staff and shield. Firearms assigned when issue, purchase, or recovery paths and proficiency are verified",
+            "ko": "기존 프리셋은 봉·방패. 총기는 지급·구매·회수 경로와 숙련이 확인될 때 배정"
+          }
+        ],
+        [
+          {
+            "en": "The deserter squad",
+            "ko": "탈영 소대"
+          },
+          {
+            "en": "Form of service, moment of departure, issued gear brought along",
+            "ko": "복무 형태, 이탈 시점, 가져온 지급품"
+          },
+          {
+            "en": "Candidates for issue weapons and protective gear. Remaining ammunition and maintenance support set separately",
+            "ko": "제식 무기·방호구 후보. 남은 탄약과 정비 지원은 별도로 정함"
+          }
+        ],
+        [
+          {
+            "en": "The stationmaster",
+            "ko": "역장"
+          },
+          {
+            "en": "Personal career distinguished from the stronghold's authority",
+            "ko": "개인 경력과 거점의 권한을 구분"
+          },
+          {
+            "en": "Commanding a stronghold's guard did not automatically confer ownership of or proficiency with any particular rifle",
+            "ko": "거점 경비를 지휘하더라도 특정 소총의 소유·숙련을 자동으로 얻지 않음"
+          }
+        ],
+        [
+          {
+            "en": "The merchant",
+            "ko": "상인"
+          },
+          {
+            "en": "Presence or absence of combat, escort, or service experience",
+            "ko": "전투·호위·복무 경험의 유무"
+          },
+          {
+            "en": "Cart and scales are the default, but a personal combat history may exist",
+            "ko": "카트·저울이 기본이지만 개인 전투 경력이 있을 수 있음"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "누가-총을-드는가-p2",
+      "text": {
+        "en": [
+          {
+            "text": "The initial equipment in the table above connected to the proposal in "
+          },
+          {
+            "text": "Starting Presets",
+            "link": {
+              "domain": "characters",
+              "slug": "Starting-Presets"
+            }
+          },
+          {
+            "text": ". The rule of a specific companion who avoided combat was not applied to all merchants. A person could own equipment without knowing its use, and even a skilled handler could hardly operate it without ammunition or power."
+          }
+        ],
+        "ko": [
+          {
+            "text": "위 표의 초기 장비는 "
+          },
+          {
+            "text": "시작 프리셋",
+            "link": {
+              "domain": "characters",
+              "slug": "Starting-Presets"
+            }
+          },
+          {
+            "text": "의 제안과 연결한 것이다. 전투를 피하는 특정 동료의 규칙을 모든 상인에게 적용하지는 않는다. 개인이 장비를 보유해도 사용할 줄 모를 수 있고, 숙련자라도 탄약이나 전력이 없으면 운용하기 어렵다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "넣지-말-것",
+      "depth": 2,
+      "text": {
+        "en": "What Not to Put In",
+        "ko": "넣지 말 것"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "넣지-말-것-list1",
+      "items": [
+        {
+          "en": "Fixing that a military force of a particular size controlled all of Seoul without order-of-battle or supply grounds",
+          "ko": "편제·보급 근거 없이 특정 규모의 군대가 서울 전체를 통제한다고 확정하는 일"
+        },
+        {
+          "en": "Inferring a real person's service from name or gender, or marking fictional troop counts as measured figures",
+          "ko": "실제 인물의 병역을 이름·성별로 추정하거나 창작 병력 수를 실측으로 표기하는 일"
+        },
+        {
+          "en": "Bringing Core test roles, or the uniforms and insignia of the source fiction, in as fixed worldview settings",
+          "ko": "Core 시험 역할이나 원작 픽션의 군복·문장을 세계관 확정 설정으로 가져오는 일"
+        },
+        {
+          "en": "Rules blanket-banning organized armies, firearm model names, bows, or merchants' combat",
+          "ko": "조직 군대·총기 모델명·활·상인의 전투를 일괄 금지하는 규칙"
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "아직-잠그지-않은-것",
+      "depth": 2,
+      "text": {
+        "en": "Not Yet Locked",
+        "ko": "아직 잠그지 않은 것"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "아직-잠그지-않은-것-p1",
+      "text": {
+        "en": "Each organization's troop counts, officer-to-maintenance ratios, held equipment, and ordnance supply lines were to be settled together with item-by-item research. The base material on conscription and reserve institutions, the records of Yongsan's return and relocation, and the individual biographies were to be checked against one another then. That this document existed did not mean the organization and equipment selection of the military powers was finished.",
+        "ko": "각 조직의 병력, 간부·정비 인력 비율, 보유 장비, 군수품 공급선은 품목별 조사와 함께 정해야 한다. 병역·예비군 제도의 기준 자료, 용산의 반환·이전 자료, 인물별 전기는 그때 대조한다. 이 문서가 만들어졌다는 이유만으로 군 세력의 편제와 장비 선정이 끝난 것은 아니다."
+      }
+    }
+  ],
+  "data": {}
+}

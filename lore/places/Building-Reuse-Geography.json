@@ -1,0 +1,774 @@
+{
+  "version": 1,
+  "domain": "places",
+  "id": "DOC:Building-Reuse-Geography",
+  "slug": "building-reuse-geography",
+  "status": "draft",
+  "tense": {
+    "en": "past",
+    "ko": "past"
+  },
+  "provenance": {
+    "original_anchor": "lore/places/Building-Reuse-Geography.md",
+    "original_hash": "6643504f4db3c9ab4a3c6e58eb172c2bec7d2618f032e4996b0f1a60ef071664",
+    "history": [
+      "Korean lore/places/Building-Reuse-Geography.md SHA-256 6643504f4db3c9ab4a3c6e58eb172c2bec7d2618f032e4996b0f1a60ef071664.",
+      "English lore/places/Building-Reuse-Geography.en.md SHA-256 47fdc7ec0c132d99f501c250137001d806621888482520d2ca39f0b0d469dd6c; copied verbatim, no translation written."
+    ]
+  },
+  "source": {
+    "kind": "original-fiction",
+    "refs": [
+      "lore/places/Building-Reuse-Geography.md",
+      "lore/places/Building-Reuse-Geography.en.md"
+    ]
+  },
+  "locales": {
+    "en": {
+      "title": "River, Gu, and Dong Building Reuse",
+      "summary": "After the collapse, Seoul's buildings were not built anew.",
+      "tense": "past"
+    },
+    "ko": {
+      "title": "강·구·동 건물 재사용",
+      "summary": "붕괴 뒤 서울의 건물은 새로 짓지 않는다.",
+      "tense": "past"
+    }
+  },
+  "content": [
+    {
+      "kind": "heading",
+      "anchor": "강구동-건물-재사용",
+      "depth": 1,
+      "text": {
+        "en": "River, Gu, and Dong Building Reuse",
+        "ko": "강·구·동 건물 재사용"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "강구동-건물-재사용-p1",
+      "text": {
+        "en": "After the collapse, Seoul's buildings were not built anew. The positions and forms of 2026 on the eve of the collapse were the skeleton, and only their use changed on top of it. A past record calling a building a school did not mean it was used as a school now.",
+        "ko": "붕괴 뒤 서울의 건물은 새로 짓지 않는다. 2026년 붕괴 직전의 위치와 형태가 뼈대고, 그 위에서의 쓰임만 바뀐다. 과거 기록에 학교라 적혀 있다고 해서 지금도 학교로 쓰이는 것은 아니다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "세력과-건물",
+      "depth": 2,
+      "text": {
+        "en": "Powers and Buildings",
+        "ko": "세력과 건물"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "세력과-건물-p1",
+      "text": {
+        "en": "The dong remained the cells that divided area, the minimum unit a power could take was the building, and planting a flag on a dong's name occupied nothing.",
+        "ko": "동은 면적을 나누는 칸으로 남고, 세력이 가져가는 최소 단위는 건물이며, 동 이름에 깃발을 꽂는 것으로는 점령하지 않는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "세력과-건물-p2",
+      "text": {
+        "en": "Where a dong held a subway or rail station, rationing, transit tolls, shelter, and refuge looked to that station building first. As with the Yeongdeungpo Station unloading floor, the Seoul Station concourse, and the Jegi-dong transfer, the station became the mouth of life, and schools, community centers, and hospitals remained support buildings.",
+        "ko": "그 동에 지하철역이나 철도역이 있으면 배급·통행세·숙영·피난은 그 역 건물을 먼저 본다. 영등포역 하역장과 서울역 대합실, 제기동 환승처럼 역이 생활의 입구가 되고, 학교·주민센터·병원은 지원 건물로 남는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "세력과-건물-p3",
+      "text": {
+        "en": "A dong held one of three states.",
+        "ko": "동은 세 상태 가운데 하나를 가진다."
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "세력과-건물-table4",
+      "columns": [
+        {
+          "en": "State",
+          "ko": "상태"
+        },
+        {
+          "en": "Meaning",
+          "ko": "뜻"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "`held`",
+            "ko": "`held`"
+          },
+          {
+            "en": "One power held it with dominance of 50 or more.",
+            "ko": "한 세력이 지배력 50 이상으로 가져간다."
+          }
+        ],
+        [
+          {
+            "en": "`contested`",
+            "ko": "`contested`"
+          },
+          {
+            "en": "Two or more powers shared it, or one power's dominance stood below 50.",
+            "ko": "둘 이상이 나눠 가지거나, 한 세력의 지배력이 50 미만이다."
+          }
+        ],
+        [
+          {
+            "en": "`vacant`",
+            "ko": "`vacant`"
+          },
+          {
+            "en": "No power's flag stood. The buildings and the station remained.",
+            "ko": "세력 깃발이 없다. 건물과 역은 있다."
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "세-층",
+      "depth": 2,
+      "text": {
+        "en": "The Three Layers",
+        "ko": "세 층"
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "세-층-table1",
+      "columns": [
+        {
+          "en": "Layer",
+          "ko": "층"
+        },
+        {
+          "en": "Unit",
+          "ko": "단위"
+        },
+        {
+          "en": "Work",
+          "ko": "하는 일"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "River",
+            "ko": "강"
+          },
+          {
+            "en": "The Han's north and south, the tributaries",
+            "ko": "한강 남북, 지천"
+          },
+          {
+            "en": "Flooding, embankments, and berths decided whether the first floor was swallowed.",
+            "ko": "침수·제방·선석이 1층을 먹을지 결정한다."
+          }
+        ],
+        [
+          {
+            "en": "Gu",
+            "ko": "구"
+          },
+          {
+            "en": "The 25 autonomous districts",
+            "ko": "25 자치구"
+          },
+          {
+            "en": "Set which trade took the district's surviving buildings. The district was not turned into a state.",
+            "ko": "어떤 직능이 그 구의 잔존 건물을 가져가는지 정한다. 구를 국가로 바꾸지 않는다."
+          }
+        ],
+        [
+          {
+            "en": "Dong",
+            "ko": "동"
+          },
+          {
+            "en": "The 427 administrative dong",
+            "ko": "427 행정동"
+          },
+          {
+            "en": "For each observation anchor, recorded the pre-collapse use and the post-collapse application.",
+            "ko": "관측 앵커마다 붕괴 전 용도와 붕괴 후 쓰임을 적는다."
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "세-층-p2",
+      "text": {
+        "en": "Place names and functions came from the past, the borders divided, and the present use lay over the top.",
+        "ko": "장소 이름과 기능은 과거에서 오고, 경계는 나뉘며, 현재의 쓰임이 그 위를 덮는다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "한강과-지천",
+      "depth": 2,
+      "text": {
+        "en": "The Han River and the Tributaries",
+        "ko": "한강과 지천"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "한강과-지천-p1",
+      "text": {
+        "en": "The districts set north of the Han were Jongno, Jung-gu, Yongsan, Seongdong, Gwangjin, Dongdaemun, Jungnang, Seongbuk, Gangbuk, Dobong, Nowon, Eunpyeong, Seodaemun, Mapo, and Gangseo; those set south were Yangcheon, Guro, Geumcheon, Yeongdeungpo, Dongjak, Gwanak, Seocho, Gangnam, Songpa, and Gangdong.",
+        "ko": "한강 이북으로 두는 구는 종로·중구·용산·성동·광진·동대문·중랑·성북·강북·도봉·노원·은평·서대문·마포·강서이고, 이남으로 두는 구는 양천·구로·금천·영등포·동작·관악·서초·강남·송파·강동이다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "한강과-지천-p2",
+      "text": {
+        "en": "The tributaries split the districts. The Jungnang Stream ran through Jungnang, Dongdaemun, and Nowon; the Anyang Stream divided western Yangcheon, Guro, and Yeongdeungpo; the Tancheon divided Gangnam and Songpa; the Cheonggye divided Jongno, Jung-gu, and Seongdong; and the Hongje divided Seodaemun and Eunpyeong. Where a dong's name held Yeouido, Ichon, Banpo, Jamsil, Mangwon, Hapjeong, Amsa, Guui, or Jayang, it was read as main-channel waterfront.",
+        "ko": "지천은 구를 가른다. 중랑천이 중랑·동대문·노원을 지나고, 안양천이 양천·구로·영등포 서부를 가르며, 탄천이 강남·송파를, 청계가 종로·중구·성동을, 홍제가 서대문·은평을 가른다. 동 이름에 여의도·이촌·반포·잠실·망원·합정·암사·구의·자양이 들어가면 본류 수변으로 본다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "한강과-지천-p3",
+      "text": {
+        "en": "The waterfront rules were read from the layers first. The first floor of the main channel was monsoon storage or abandoned space, habitation pushed above the third floor, and the ration windows sat inside the embankment. The tributary banks were sewage and flood, wild boar and raccoon dog corridors, and school playgrounds served as detour embankments. Inland highlands like Gwanak and Dobong took slopes and blackouts instead of floods, and the schools became evacuation halls.",
+        "ko": "수변의 규칙은 층에서 먼저 읽힌다. 본류 1층은 우기 창고이거나 포기한 공간이고, 거주는 3층 이상, 배급 창구는 제방 안쪽에 둔다. 지천 변은 오수와 범람, 멧돼지와 너구리 회랑이며, 학교 운동장은 우회 제방으로 쓴다. 관악·도봉처럼 내륙 고지는 침수 대신 경사와 단전을 받고, 학교는 대피 대강당이 된다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "구가-가져가는-직능",
+      "depth": 2,
+      "text": {
+        "en": "The Trades the Districts Took",
+        "ko": "구가 가져가는 직능"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "구가-가져가는-직능-p1",
+      "text": {
+        "en": "The spheres of the sixteen states were laid over the districts, but a district's building trades came out of the district's own facilities. The Yeongdeungpo treatment plant and the Sinjeong depot, the Banghwa depot, the Changdong wheel works, the Noryangjin cold storage, and the Jegi-dong medicinal herbs were the first hands each district kept.",
+        "ko": "십육국 권역을 구 위에 얹되, 건물 직능은 구의 시설에서 나온다. 영등포 정수와 신정 차량기지, 방화 기지, 창동 차륜, 노량진 냉동, 제기동 약재가 그 구에서 먼저 남는 손이다."
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "구가-가져가는-직능-table2",
+      "columns": [
+        {
+          "en": "District",
+          "ko": "구"
+        },
+        {
+          "en": "River side",
+          "ko": "강"
+        },
+        {
+          "en": "Buildings taken first",
+          "ko": "먼저 가져가는 건물"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Yeongdeungpo",
+            "ko": "영등포"
+          },
+          {
+            "en": "South, Han and Anyang",
+            "ko": "남, 한강·안양천"
+          },
+          {
+            "en": "Treatment plant and station unloading floor. The market as a reserved-ration window.",
+            "ko": "정수·역 하역장. 시장은 예약 배급 창구."
+          }
+        ],
+        [
+          {
+            "en": "Yangcheon, Guro, Geumcheon",
+            "ko": "양천·구로·금천"
+          },
+          {
+            "en": "South, Anyang",
+            "ko": "남, 안양천"
+          },
+          {
+            "en": "Depots and industrial blocks. Schools for drying parts.",
+            "ko": "차량기지·공단 동. 학교는 부품 건조."
+          }
+        ],
+        [
+          {
+            "en": "Gangseo",
+            "ko": "강서"
+          },
+          {
+            "en": "North, Han",
+            "ko": "북, 한강"
+          },
+          {
+            "en": "Banghwa depot and research blocks. The airport memory went to storage.",
+            "ko": "방화 기지와 연구동. 공항 기억은 창고용."
+          }
+        ],
+        [
+          {
+            "en": "Yongsan, Mapo",
+            "ko": "용산·마포"
+          },
+          {
+            "en": "North, Han",
+            "ko": "북, 한강"
+          },
+          {
+            "en": "Rail warehouses and berths. Broadcast blocks as record relay.",
+            "ko": "철도 창고·선석. 방송동은 기록 중계."
+          }
+        ],
+        [
+          {
+            "en": "Jongno, Jung-gu",
+            "ko": "종로·중구"
+          },
+          {
+            "en": "North, Cheonggye",
+            "ko": "북, 청계"
+          },
+          {
+            "en": "Administrative blocks and universities. Ledgers and sealed stacks.",
+            "ko": "행정동·대학. 장부와 봉인 서고."
+          }
+        ],
+        [
+          {
+            "en": "Seongdong, Gwangjin",
+            "ko": "성동·광진"
+          },
+          {
+            "en": "North, Han",
+            "ko": "북, 한강"
+          },
+          {
+            "en": "Workshops and bridge approaches. Schools as repair practice.",
+            "ko": "공방·교량 접근. 학교는 수리 실습."
+          }
+        ],
+        [
+          {
+            "en": "Gangdong",
+            "ko": "강동"
+          },
+          {
+            "en": "South, Han",
+            "ko": "남, 한강"
+          },
+          {
+            "en": "Treatment plant and eastern bridges. Hospitals as turbid-water isolation.",
+            "ko": "정수·동부 교량. 병원은 탁수 격리."
+          }
+        ],
+        [
+          {
+            "en": "Songpa, Gangnam, Seocho",
+            "ko": "송파·강남·서초"
+          },
+          {
+            "en": "South, Tancheon and Han",
+            "ko": "남, 탄천·한강"
+          },
+          {
+            "en": "Ration towers and the Jamsil and Suseo windows. Apartment lower floors sealed.",
+            "ko": "배급 타워와 잠실·수서 창구. 아파트 저층은 봉인."
+          }
+        ],
+        [
+          {
+            "en": "Dongjak, Gwanak",
+            "ko": "동작·관악"
+          },
+          {
+            "en": "South",
+            "ko": "남"
+          },
+          {
+            "en": "Noryangjin cold storage, southern-slope evacuation.",
+            "ko": "노량진 냉동, 남부 경사 대피."
+          }
+        ],
+        [
+          {
+            "en": "Eunpyeong, Gangbuk, Seongbuk",
+            "ko": "은평·강북·성북"
+          },
+          {
+            "en": "North, Bukhansan",
+            "ko": "북, 북한산"
+          },
+          {
+            "en": "Evacuation halls, highland warehouses.",
+            "ko": "피난 대강당, 고지 창고."
+          }
+        ],
+        [
+          {
+            "en": "Dobong, Nowon",
+            "ko": "도봉·노원"
+          },
+          {
+            "en": "North, Jungnang",
+            "ko": "북, 중랑천"
+          },
+          {
+            "en": "Changdong wheel works, northern rail quarters.",
+            "ko": "창동 차륜, 북부 철도 숙영."
+          }
+        ],
+        [
+          {
+            "en": "Jungnang, Dongdaemun",
+            "ko": "중랑·동대문"
+          },
+          {
+            "en": "North, Jungnang",
+            "ko": "북, 중랑천"
+          },
+          {
+            "en": "Transfers and Jegi-dong. The market split medicinal herbs and transfer freight.",
+            "ko": "환승·제기동. 시장은 약재와 환승 화물을 나눈다."
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "과거-용도와-현재-쓰임",
+      "depth": 2,
+      "text": {
+        "en": "Past Use and Present Application",
+        "ko": "과거 용도와 현재 쓰임"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "과거-용도와-현재-쓰임-p1",
+      "text": {
+        "en": "Pre-collapse use grounded the present application. What follows was the default, and the river and gu layers lay over it.",
+        "ko": "붕괴 전 용도는 현재 쓰임의 바탕이 된다. 아래를 기본으로 하고, 강·구가 덮는다."
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "과거-용도와-현재-쓰임-table2",
+      "columns": [
+        {
+          "en": "Observed",
+          "ko": "관측"
+        },
+        {
+          "en": "Default use",
+          "ko": "기본 쓰임"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "School",
+            "ko": "학교"
+          },
+          {
+            "en": "Dong militia quarters. The playground for freight marshaling. Special rooms sealed.",
+            "ko": "동 민병 숙영. 운동장은 화물 정렬. 특별실은 봉인."
+          }
+        ],
+        [
+          {
+            "en": "Community center",
+            "ko": "주민센터"
+          },
+          {
+            "en": "The dong's ledgers and the ration window.",
+            "ko": "동 장부와 배급 창구."
+          }
+        ],
+        [
+          {
+            "en": "Hospital · clinic",
+            "ko": "병원·의원"
+          },
+          {
+            "en": "Field medicine. Near the treatment plants, turbid-water isolation.",
+            "ko": "야전 의무. 정수 인근은 탁수 격리."
+          }
+        ],
+        [
+          {
+            "en": "University",
+            "ko": "대학"
+          },
+          {
+            "en": "Record-copying workshops. Laboratory blocks sealed or stripped for parts.",
+            "ko": "기록 사본 공방. 실험동은 봉인하거나 부품 분해."
+          }
+        ],
+        [
+          {
+            "en": "Market",
+            "ko": "시장"
+          },
+          {
+            "en": "Licensed market. Splitting reserved portions from sale portions.",
+            "ko": "허가 장터. 예약분과 판매분을 나눈다."
+          }
+        ],
+        [
+          {
+            "en": "Station",
+            "ko": "역"
+          },
+          {
+            "en": "Hand-off of living freight and the refuge floors. The tracks carried the state's transit toll.",
+            "ko": "생활 화물 인계와 피난 층. 선로는 국가 통행세."
+          }
+        ],
+        [
+          {
+            "en": "Apartment",
+            "ko": "아파트"
+          },
+          {
+            "en": "Habitation only above the third floor. Floors 1–2 flooded storage or abandoned.",
+            "ko": "3층 이상만 거주. 1–2층은 침수 창고이거나 포기."
+          }
+        ],
+        [
+          {
+            "en": "Park · green space",
+            "ko": "공원·녹지"
+          },
+          {
+            "en": "Thin cultivation, grazing, monsoon drainage. Explicitly stated unless used as burial ground.",
+            "ko": "얕은 경작, 방목, 우기 배수. 묘지로 쓰지 않으면 명시한다."
+          }
+        ],
+        [
+          {
+            "en": "Shop · office",
+            "ko": "상점·사무실"
+          },
+          {
+            "en": "Workshop or shutter-sealed.",
+            "ko": "공방이거나 셔터 봉인."
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "층마다",
+      "depth": 2,
+      "text": {
+        "en": "Floor by Floor",
+        "ko": "층마다"
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "층마다-table1",
+      "columns": [
+        {
+          "en": "`state`",
+          "ko": "`state`"
+        },
+        {
+          "en": "Meaning",
+          "ko": "뜻"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "`flooded`",
+            "ko": "`flooded`"
+          },
+          {
+            "en": "Monsoon and tributary water. Habitation forbidden.",
+            "ko": "우기·지천 물. 거주 금지."
+          }
+        ],
+        [
+          {
+            "en": "`sealed`",
+            "ko": "`sealed`"
+          },
+          {
+            "en": "Planks and iron gates. No entry without license.",
+            "ko": "판자·쇠터. 허가 없이면 못 들어간다."
+          }
+        ],
+        [
+          {
+            "en": "`occupied`",
+            "ko": "`occupied`"
+          },
+          {
+            "en": "In human use. Rations, quarters, hand-offs.",
+            "ko": "사람이 쓴다. 배급·숙영·인계."
+          }
+        ],
+        [
+          {
+            "en": "`abandoned`",
+            "ko": "`abandoned`"
+          },
+          {
+            "en": "Corners emptied. Low-intensity searching only.",
+            "ko": "모서리 비웠. 낮은 탐색만."
+          }
+        ],
+        [
+          {
+            "en": "`yard`",
+            "ko": "`yard`"
+          },
+          {
+            "en": "Open air. Playgrounds, freight marshaling.",
+            "ko": "노천. 운동장·화물 정렬."
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "층마다-p2",
+      "text": {
+        "en": "Minimum floors by use:",
+        "ko": "용도별 최소 층:"
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "층마다-table3",
+      "columns": [
+        {
+          "en": "Observed",
+          "ko": "관측"
+        },
+        {
+          "en": "Floors",
+          "ko": "층"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Station",
+            "ko": "역"
+          },
+          {
+            "en": "B2 tracks, B1 platform, first floor concourse, rooftop watchtower",
+            "ko": "지하 2 선로, 지하 1 승강장, 1층 대합실, 옥상 망루"
+          }
+        ],
+        [
+          {
+            "en": "School",
+            "ko": "학교"
+          },
+          {
+            "en": "First floor entrance and playground, second floor classroom quarters, third floor special rooms sealed, rooftop",
+            "ko": "1층 현관·운동장, 2층 교실 숙영, 3층 특별실 봉인, 옥상"
+          }
+        ],
+        [
+          {
+            "en": "Apartment",
+            "ko": "아파트"
+          },
+          {
+            "en": "Floors 1–2 flooded or abandoned, floor 3 habitation, rooftop sealed",
+            "ko": "1–2층 침수 또는 포기, 3층 거주, 옥상 봉인"
+          }
+        ],
+        [
+          {
+            "en": "Community center",
+            "ko": "주민센터"
+          },
+          {
+            "en": "First floor window, second floor stacks sealed",
+            "ko": "1층 창구, 2층 서고 봉인"
+          }
+        ],
+        [
+          {
+            "en": "Hospital · clinic",
+            "ko": "병원·의원"
+          },
+          {
+            "en": "First floor waiting, second floor beds",
+            "ko": "1층 대기, 2층 침상"
+          }
+        ],
+        [
+          {
+            "en": "University",
+            "ko": "대학"
+          },
+          {
+            "en": "First floor copying workshop, laboratory blocks sealed",
+            "ko": "1층 사본 공방, 실험동 봉인"
+          }
+        ],
+        [
+          {
+            "en": "Market",
+            "ko": "시장"
+          },
+          {
+            "en": "Basement warehouses, first floor licensed market",
+            "ko": "지하 창고, 1층 허가 장터"
+          }
+        ],
+        [
+          {
+            "en": "Park · green space",
+            "ko": "공원·녹지"
+          },
+          {
+            "en": "One floor at grade",
+            "ko": "지표면 한 층"
+          }
+        ],
+        [
+          {
+            "en": "Everything else",
+            "ko": "그 밖"
+          },
+          {
+            "en": "First floor, rooftop when needed",
+            "ko": "1층, 필요 시 옥상"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "층마다-p4",
+      "text": {
+        "en": "The waterfront's first floor was `flooded` or storage. Habitation was above the third floor.",
+        "ko": "수변 1층은 `flooded` 또는 창고. 거주는 3층 이상."
+      }
+    }
+  ],
+  "data": {}
+}
