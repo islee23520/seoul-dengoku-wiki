@@ -17,13 +17,26 @@ const categories = [
   { id: 'art', label: '아트 설계', dir: 'art', depth: 0 },
 ]
 const excluded = new Set(['AGENTS.md', 'README.md'])
+const gddRoot = process.env.GDD_ROOT ?? resolve(repoRoot, 'GDD')
+// Rendered page path -> the GDD file that owns it: the JSON canon document, or the exempt Markdown file itself.
+const canonPathByPage = new Map()
+for (const name of await readdir(resolve(gddRoot, 'canon/collections'))) {
+  if (extname(name) !== '.json') continue
+  for (const entry of JSON.parse(await readFile(resolve(gddRoot, 'canon/collections', name), 'utf8')).documents) canonPathByPage.set(entry.source.path, `canon/${entry.path}`)
+}
+for (const name of await readdir(resolve(gddRoot, 'canon/locales/ko-KR'))) {
+  if (!/^adr-\d{3}\.json$/.test(name)) continue
+  canonPathByPage.set(JSON.parse(await readFile(resolve(gddRoot, 'canon/locales/ko-KR', name), 'utf8')).source.path, `canon/locales/ko-KR/${name}`)
+}
 const githubRoot = 'https://github.com/islee23520/seoul-dengoku/blob/main/'
 
 const titleOf = (markdown, fallback) => markdown.match(/^#\s+(.+)$/m)?.[1]?.replace(/\s+\{#[^}]+\}\s*$/, '').trim() ?? fallback
-const sourceKey = (path) => {
-  const source = relative(gddPagesRoot, path).replaceAll('\\', '/')
-  const adr = source.match(/^adr\/ADR-(\d{3})-/)
-  return `canon/locales/ko-KR/${adr ? `adr-${adr[1]}` : source.replace(/\.md$/, '').toLowerCase().replace(/^([^/]+)$/, 'root/$1')}.json`
+const sourceKey = async (path) => {
+  const page = relative(gddPagesRoot, path).replaceAll('\\', '/')
+  const canonPath = canonPathByPage.get(page)
+  if (canonPath) return canonPath
+  if (await stat(resolve(gddRoot, page)).then((entry) => entry.isFile(), () => false)) return page
+  throw new Error(`E_GDD_SOURCE_UNMAPPED: ${page} has no GDD canon document`)
 }
 
 await rm(contentRoot, { recursive: true, force: true })
@@ -39,21 +52,22 @@ for (const category of categories) {
     if (!(await stat(source)).isFile()) continue
     const slug = basename(name, '.md')
     const markdown = await readFile(source, 'utf8')
-    documents.push({ category: category.id, categoryLabel: category.label, slug, route: `/${category.id}/${slug}`, title: titleOf(markdown, slug), source, sourcePath: sourceKey(source), markdown })
+    documents.push({ category: category.id, categoryLabel: category.label, slug, route: `/${category.id}/${slug}`, title: titleOf(markdown, slug), source, sourcePath: await sourceKey(source), markdown })
   }
 }
 
 const routeBySource = new Map(documents.map((document) => [document.sourcePath, document.route]))
-const normalizeHref = (href, source) => {
+const normalizeHref = async (href, source) => {
   if (href.startsWith('#') || href.startsWith('http://') || href.startsWith('https://') || href.startsWith('mailto:')) return href
   const [pathPart, hash = ''] = href.split('#', 2)
   if (pathPart.includes('system-design/')) return `https://github.com/islee23520/seoul-dengoku-gdd/blob/main/canon/collections/system-design.json${hash ? `#${hash}` : ''}`
   const resolved = relative(gddPagesRoot, resolve(dirname(source), pathPart)).replaceAll('\\', '/')
-  const gddRoute = routeBySource.get(sourceKey(resolve(gddPagesRoot, resolved)))
-  if (gddRoute) return `${gddRoute}${hash ? `#${hash}` : ''}`
   if (resolved.startsWith('../LORE/') && resolved.endsWith('.md')) return `/world/${basename(resolved, '.md')}${hash ? `#${hash}` : ''}`
   if (resolved.startsWith('../')) return `${githubRoot}${resolved.replace(/^\.\.\//, '')}${hash ? `#${hash}` : ''}`
-  return `https://github.com/islee23520/seoul-dengoku-gdd/blob/main/${sourceKey(resolve(gddPagesRoot, resolved))}${hash ? `#${hash}` : ''}`
+  const target = await sourceKey(resolve(gddPagesRoot, resolved))
+  const gddRoute = routeBySource.get(target)
+  if (gddRoute) return `${gddRoute}${hash ? `#${hash}` : ''}`
+  return `https://github.com/islee23520/seoul-dengoku-gdd/blob/main/${target}${hash ? `#${hash}` : ''}`
 }
 
 for (const document of documents) {
@@ -62,8 +76,10 @@ for (const document of documents) {
   const normalized = document.markdown
     .replace(/^---\n[\s\S]*?\n---\n/u, '')
     .replace(/^#\s+.+\n+/u, '')
-    .replace(/\]\(([^)]+)\)/g, (_full, href) => `](${normalizeHref(href, document.source)})`)
-  await writeFile(resolve(targetDir, `${document.slug}.md`), normalized)
+  const links = [...normalized.matchAll(/\]\(([^)]+)\)/g)]
+  const hrefs = await Promise.all(links.map((match) => normalizeHref(match[1], document.source)))
+  let index = 0
+  await writeFile(resolve(targetDir, `${document.slug}.md`), normalized.replace(/\]\(([^)]+)\)/g, () => `](${hrefs[index++]})`))
 }
 
 const valuesCast = JSON.parse(await readFile(resolve(repoRoot, 'WEB/lore/name-pools/values-cast.json'), 'utf8'))
