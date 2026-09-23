@@ -26,7 +26,7 @@ VContainer 외 Makcha-Unity 패키지는 현재 모듈에 실제 호출자와 �
 - Repository와 domain contract는 Unity-free 경계를 유지합니다.
 - 같은 seed와 command log는 같은 상태와 원장 hash를 만들어야 합니다.
 
-상세 계약은 [`GDD/architecture/Unity-System-Design.md`](/rules/Unity-System-Design), 실행 순서는 [`GDD/architecture/Unity-Architecture-Implementation-Plan.md`](/rules/Unity-Architecture-Implementation-Plan)를 따릅니다.
+상세 계약은 [`GDD/canon/locales/ko-KR/architecture/unity-system-design.json`](GDD/canon/locales/ko-KR/architecture/unity-system-design.json), 실행 순서는 [`GDD/canon/locales/ko-KR/architecture/unity-architecture-implementation-plan.json`](GDD/canon/locales/ko-KR/architecture/unity-architecture-implementation-plan.json)를 따릅니다.
 
 ## 현재 구현 범위
 
