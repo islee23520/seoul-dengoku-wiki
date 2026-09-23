@@ -6,13 +6,31 @@
   "$defs": {
     "id": { "type": "string", "minLength": 1 },
     "inline": {
-      "type": "object",
-      "required": ["kind", "text"],
-      "properties": {
-        "kind": { "const": "text" },
-        "text": { "type": "string", "minLength": 1, "pattern": "^[^\r\n]+$" }
-      },
-      "additionalProperties": false
+      "oneOf": [
+        {
+          "type": "object", "required": ["kind", "text"],
+          "properties": {
+            "kind": { "const": "text" },
+            "text": { "type": "string", "minLength": 1, "pattern": "^[^\r\n]+$" }
+          }, "additionalProperties": false
+        },
+        {
+          "type": "object", "required": ["kind", "text", "href"],
+          "properties": {
+            "kind": { "const": "link" },
+            "text": { "type": "string", "minLength": 1 },
+            "href": { "type": "string", "minLength": 1 }
+          }, "additionalProperties": false
+        },
+        {
+          "type": "object", "required": ["kind", "text", "targetDocumentId"],
+          "properties": {
+            "kind": { "const": "docLink" },
+            "text": { "type": "string", "minLength": 1 },
+            "targetDocumentId": { "type": "string", "pattern": "^doc\\.[A-Za-z0-9-]+$" }
+          }, "additionalProperties": false
+        }
+      ]
     },
     "cell": { "type": "string", "minLength": 1, "pattern": "^[^|\r\n]+$" },
     "block": {
@@ -21,7 +39,7 @@
           "type": "object", "required": ["id", "kind", "level", "inlines"],
           "properties": {
             "id": { "$ref": "#/$defs/id" }, "kind": { "const": "heading" },
-            "level": { "enum": [1, 2, 3] },
+            "level": { "enum": [1, 2, 3, 4] },
             "inlines": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/inline" } }
           }, "additionalProperties": false
         },
