@@ -6,6 +6,8 @@
 - `status`는 `draft`·`approved`·`excluded` 중 하나다. 예시는 항상 `draft`이며 게시 승인 증거가 아니다. 루트 `tense.en/ko`는 각 언어의 시제를 명시하고, `locales.en/ko.tense`와 같은 값을 사용한다. `provenance.original_anchor`는 원본 위치를 가리키며 `original_hash`는 실제 원본을 확인하기 전에는 `null`로 둔다. `history`는 확인된 전환 기록만 적는다. 예시의 원본 앵커는 예약값으로서 실제 원본을 뜻하지 않는다.
 - `locales.en`이 본문 정본 제목·요약·시제(`past` 또는 `present`)이며 `locales.ko`는 대응 번역이다. `content` 순서는 두 언어가 공유한다. `heading`·`paragraph`는 `text.en/ko`, `list`는 다국어 `items`, `table`은 다국어 `columns/rows`를 쓴다. 모든 노드는 안정적인 `anchor`를 갖는다. 동일 문서 안 앵커 중복, 테이블 행의 열 개수, 두 언어의 시제·의미 동등성은 JSON Schema 단독으로 증명되지 않는다. 전환 시 별도 검증 대상이다.
 - 본문 글줄(`text.en/ko`, 목록 항목, 표 칸)은 문자열이거나 조각(run) 배열이다. 조각은 `text`와 선택적인 `link{domain, slug, anchor?}`(로어 문서 참조) 또는 `href`(`https://` 외부 주소)를 가진다. 둘을 함께 쓰지 않는다. 로어 문서와 별도 GDD 저장소 문서(`domain: "gdd"`)는 `slug: "groups/Hostile-Group-G10"`, `"rules/Warfare-and-Sieges"`처럼 영역 폴더 안 하위 폴더 한 단계까지 가리킨다. 점(`.`)은 쓸 수 없다. 원문의 굵은 글씨는 조각의 `strong: true`로 옮긴다. 마크다운 링크 `[..](..)`를 글줄 안에 두지 않으며, 원문의 링크는 조각으로 옮긴다. 비공개 인물 문서와 존재하지 않는 문서를 가리키는 링크는 검증기가 거부한다.
+- 번호 목록은 `list`에 `ordered: true`를 두고, 1이 아닌 번호로 시작하면 `start`에 시작 번호를 적는다.
+- 원문의 인용 블록(`>`)은 `quote` 노드로 옮긴다. 모양은 `paragraph`와 같아 `text.en/ko` 하나를 갖는다. 인용 블록 하나에는 문단 하나만 담으며, 여러 문단이면 인용 블록을 나눈다.
 - 표 본문 칸이 원문에서 비어 있으면 그 언어 값을 빈 문자열 `""`로 둔다. 공백만 있는 값과 빈 열 제목은 허용하지 않는다.
 - 원문의 코드 울타리(수식, `mermaid` 도표 등)는 `code` 노드로 옮긴다. `language`에 울타리 언어(없으면 `text`)를, 언어 뒤의 나머지 정보 문자열(예: `economy-formula-cases`)은 `info`에 적고 `text.en/ko`에 각 언어 원문을 줄바꿈까지 그대로 담는다. 문단으로 풀어 쓰지 않는다.
 - `source.kind`는 `source-fact`·`observed`·`computed`·`inference`·`original-fiction`을 구별한다. 창작이 아닌 항목은 `source.refs`에 출처를 한 건 이상 기록하고, 실제 원문 바이트가 확인된 경우에만 `source.hash`에 SHA-256을 기록한다. 예시의 빈 출처는 **출처가 확인된 사실이라는 뜻이 아니다**. 지역 지형 실측, 역 수치, 인물 원장 값 등을 예시에서 만들지 않는다.

@@ -142,7 +142,8 @@
             "kind": {
               "enum": [
                 "heading",
-                "paragraph"
+                "paragraph",
+                "quote"
               ]
             },
             "anchor": {
@@ -165,6 +166,8 @@
             "kind": {
               "const": "list"
             },
+            "ordered": {"const": true},
+            "start": {"type": "integer", "minimum": 0},
             "anchor": {
               "$ref": "#/$defs/anchor"
             },
