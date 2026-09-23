@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "domain": "people-and-machines",
+  "id": "__EXAMPLE__:people-and-machines",
+  "slug": "__EXAMPLE__-people-and-machines",
+  "source": {
+    "kind": "original-fiction",
+    "refs": []
+  },
+  "locales": {
+    "en": {
+      "title": "Actor record",
+      "summary": "Example authoring structure; not published canon.",
+      "tense": "past"
+    },
+    "ko": {
+      "title": "예시 people-and-machines 기록",
+      "summary": "게시 정본이 아닌 작성 구조 예시.",
+      "tense": "past"
+    }
+  },
+  "content": [
+    {
+      "kind": "heading",
+      "anchor": "example-heading",
+      "text": {
+        "en": "Actor record",
+        "ko": "예시 people-and-machines 기록"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "example-body",
+      "text": {
+        "en": "Example authoring structure; not published canon.",
+        "ko": "게시 정본이 아닌 작성 구조 예시."
+      }
+    }
+  ],
+  "data": {
+    "dependency": "__EXAMPLE__:value"
+  }
+}

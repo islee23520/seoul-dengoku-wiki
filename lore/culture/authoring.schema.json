@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://seoul-dengoku.linalab.io/lore/culture/authoring.schema.json",
+  "allOf": [
+    {
+      "$ref": "../authoring.shared.schema.json#/$defs/envelope"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "domain": {
+          "const": "culture"
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^(?:__EXAMPLE__:culture|DOC:[A-Za-z0-9-]+)$"
+        },
+        "data": {
+          "type": "object",
+          "required": [
+            "transmission"
+          ],
+          "properties": {
+            "transmission": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    }
+  ]
+}

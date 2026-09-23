@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "domain": "name-pools",
+  "id": "__EXAMPLE__:name-pools",
+  "slug": "__EXAMPLE__-name-pools",
+  "source": {
+    "kind": "original-fiction",
+    "refs": []
+  },
+  "locales": {
+    "en": {
+      "title": "Dataset record",
+      "summary": "Example authoring structure; not published canon.",
+      "tense": "past"
+    },
+    "ko": {
+      "title": "예시 name-pools 기록",
+      "summary": "게시 정본이 아닌 작성 구조 예시.",
+      "tense": "past"
+    }
+  },
+  "content": [
+    {
+      "kind": "heading",
+      "anchor": "example-heading",
+      "text": {
+        "en": "Dataset record",
+        "ko": "예시 name-pools 기록"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "example-body",
+      "text": {
+        "en": "Example authoring structure; not published canon.",
+        "ko": "게시 정본이 아닌 작성 구조 예시."
+      }
+    }
+  ],
+  "data": {
+    "entries": [
+      "__EXAMPLE__:entry"
+    ]
+  }
+}

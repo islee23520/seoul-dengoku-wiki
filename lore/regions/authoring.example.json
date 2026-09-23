@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "domain": "regions",
+  "id": "__EXAMPLE__:regions",
+  "slug": "__EXAMPLE__-regions",
+  "source": {
+    "kind": "original-fiction",
+    "refs": []
+  },
+  "locales": {
+    "en": {
+      "title": "Dong record",
+      "summary": "Example authoring structure; not published canon.",
+      "tense": "past"
+    },
+    "ko": {
+      "title": "예시 regions 기록",
+      "summary": "게시 정본이 아닌 작성 구조 예시.",
+      "tense": "past"
+    }
+  },
+  "content": [
+    {
+      "kind": "heading",
+      "anchor": "example-heading",
+      "text": {
+        "en": "Dong record",
+        "ko": "예시 regions 기록"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "example-body",
+      "text": {
+        "en": "Example authoring structure; not published canon.",
+        "ko": "게시 정본이 아닌 작성 구조 예시."
+      }
+    }
+  ],
+  "data": {
+    "opening_state": "__EXAMPLE__:value"
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "version": 1,
+  "domain": "characters",
+  "id": "__EXAMPLE__:characters",
+  "slug": "__EXAMPLE__-characters",
+  "source": {
+    "kind": "original-fiction",
+    "refs": []
+  },
+  "locales": {
+    "en": {
+      "title": "Character record",
+      "summary": "Example authoring structure; not published canon.",
+      "tense": "past"
+    },
+    "ko": {
+      "title": "예시 characters 기록",
+      "summary": "게시 정본이 아닌 작성 구조 예시.",
+      "tense": "past"
+    }
+  },
+  "content": [
+    {
+      "kind": "heading",
+      "anchor": "example-heading",
+      "text": {
+        "en": "Character record",
+        "ko": "예시 characters 기록"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "example-body",
+      "text": {
+        "en": "Example authoring structure; not published canon.",
+        "ko": "게시 정본이 아닌 작성 구조 예시."
+      }
+    }
+  ],
+  "data": {
+    "identity": {
+      "name": {
+        "status": "known",
+        "value": "__EXAMPLE__:person",
+        "origin": "original-fiction"
+      },
+      "generation": "opening"
+    },
+    "sex": {
+      "status": "known",
+      "value": "male",
+      "origin": "original-fiction"
+    },
+    "rank": {
+      "common_tier": "T3",
+      "polity_title": {
+        "status": "unknown",
+        "reason": "No polity title is claimed by this example."
+      }
+    },
+    "origin": {
+      "status": "known",
+      "value": "__EXAMPLE__:community",
+      "origin": "original-fiction"
+    },
+    "language": {
+      "status": "unknown",
+      "reason": "No language is inferred from a name."
+    },
+    "conscription": {
+      "status": "unknown",
+      "reason": "No service record is supplied."
+    },
+    "arms_access": {
+      "status": "unknown",
+      "reason": "No ownership is inferred from occupation."
+    },
+    "occupation": {
+      "status": "undecided",
+      "reason": "No occupation is assigned."
+    },
+    "affiliation": {
+      "status": "not-applicable",
+      "reason": "The example is not a real polity member."
+    },
+    "values": {
+      "authority": {
+        "status": "known",
+        "value": 0,
+        "origin": "original-fiction"
+      },
+      "openness": {
+        "status": "known",
+        "value": 0,
+        "origin": "original-fiction"
+      },
+      "force": {
+        "status": "known",
+        "value": 0,
+        "origin": "original-fiction"
+      },
+      "material": {
+        "status": "known",
+        "value": 0,
+        "origin": "original-fiction"
+      },
+      "community": {
+        "status": "known",
+        "value": 0,
+        "origin": "original-fiction"
+      },
+      "principle": {
+        "status": "known",
+        "value": 0,
+        "origin": "original-fiction"
+      },
+      "transparency": {
+        "status": "known",
+        "value": 0,
+        "origin": "original-fiction"
+      },
+      "qualification": {
+        "status": "known",
+        "value": 0,
+        "origin": "original-fiction"
+      },
+      "decentralization": {
+        "status": "known",
+        "value": 0,
+        "origin": "original-fiction"
+      },
+      "change": {
+        "status": "known",
+        "value": 0,
+        "origin": "original-fiction"
+      }
+    },
+    "desires": {
+      "longing": {
+        "status": "known",
+        "value": 0,
+        "origin": "original-fiction"
+      },
+      "exclusivity": {
+        "status": "known",
+        "value": 0,
+        "origin": "original-fiction"
+      },
+      "risk": {
+        "status": "known",
+        "value": 0,
+        "origin": "original-fiction"
+      },
+      "display": {
+        "status": "known",
+        "value": 0,
+        "origin": "original-fiction"
+      },
+      "continuity": {
+        "status": "known",
+        "value": 0,
+        "origin": "original-fiction"
+      },
+      "orientation": {
+        "status": "unknown",
+        "reason": "No orientation is asserted."
+      },
+      "union": {
+        "status": "unknown",
+        "reason": "No union is asserted."
+      }
+    },
+    "relations": {
+      "status": "known",
+      "value": [],
+      "origin": "original-fiction"
+    },
+    "politics": {
+      "personality": {
+        "status": "undecided",
+        "reason": "No fictional life story is authored."
+      },
+      "ambition": {
+        "status": "undecided",
+        "reason": "No fictional life story is authored."
+      },
+      "fear": {
+        "status": "undecided",
+        "reason": "No fictional life story is authored."
+      },
+      "governance": {
+        "status": "undecided",
+        "reason": "No fictional life story is authored."
+      },
+      "trigger": {
+        "status": "undecided",
+        "reason": "No fictional life story is authored."
+      },
+      "intervention": {
+        "status": "undecided",
+        "reason": "No fictional life story is authored."
+      }
+    },
+    "biography": {
+      "status": "undecided",
+      "reason": "Example has no character biography."
+    }
+  }
+}
