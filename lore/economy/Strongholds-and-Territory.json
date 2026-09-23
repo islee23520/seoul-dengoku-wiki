@@ -554,7 +554,6 @@
       "kind": "code",
       "anchor": "strongholds-and-territory-base-numbers-code1",
       "language": "mermaid",
-      "info": "stateDiagram-v2",
       "text": {
         "en": "stateDiagram-v2\n  [*] --> Disputed\n  Disputed --> Occupied: outcome of battle or negotiation\n  Occupied --> Stabilized: A>=50, L>=35\n  Stabilized --> Integrated: integration conditions held 3 days\n  Integrated --> Stabilized: shortage · isolation · overreach\n  Stabilized --> Occupied: collapse of authority\n  Occupied --> Disputed: loss of defense or rule",
         "ko": "stateDiagram-v2\n  [*] --> 분쟁\n  분쟁 --> 점령: 전투·협상 결과\n  점령 --> 안정화: A>=50, L>=35\n  안정화 --> 통합: 3일간 통합 조건 충족\n  통합 --> 안정화: 부족·고립·과확장\n  안정화 --> 점령: 권위 붕괴\n  점령 --> 분쟁: 수비·통치 상실"
