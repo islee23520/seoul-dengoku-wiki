@@ -25,6 +25,11 @@ const DOMAIN_ROOTS = [
 const ROOT_DOCS = ['Concept.md', 'Design.md', 'ToDo.md', 'Intent.md']
 
 const EXCLUDED_NAMES = new Set(['_Sidebar.md', '_TEMPLATE.md', 'AGENTS.md', 'AUTHORING-JSON.md'])
+const PUBLIC_EXCLUDED_NAMES = new Set([
+  'Cast-Profile-Contract.md',
+  'Cast-Registration-Template.md',
+  'Random-Cast-Roster.md',
+])
 const LORE_SKIP_DIRS = new Set(['name-pools', 'regions', 'editorial'])
 
 function listMarkdown(dir) {

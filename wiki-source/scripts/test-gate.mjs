@@ -11,7 +11,7 @@ import {
 } from './gate.mjs'
 
 const scriptDir = fileURLToPath(new URL('.', import.meta.url))
-const referenceDir = join(scriptDir, '..', '..', '..', 'Research', 'canon-reference')
+const referenceDir = join(scriptDir, '..', '..', '..', 'RESEARCH', 'canon-reference')
 
 function makeDisposableInventory(count) {
   const dir = mkdtempSync(join(tmpdir(), 'gate-ref-inv-'))
@@ -27,11 +27,11 @@ function countReferenceMarkdown(dir) {
   }).length
 }
 
-test('real canon-reference inventory is exactly 19 markdown files', () => {
+test('real canon-reference inventory is exactly 20 markdown files', () => {
   assert.equal(countReferenceMarkdown(referenceDir), 20)
 })
 
-test('gate constant is locked to the real inventory count of 19', () => {
+test('gate constant is locked to the real inventory count of 20', () => {
   assert.equal(EXPECTED_REFERENCE_EXCLUSIONS, countReferenceMarkdown(referenceDir))
 })
 
@@ -44,18 +44,18 @@ test('disposable 18-file inventory is rejected by the gate exclusion rule', () =
   try {
     const failures = referenceExclusionFailures(dir)
     assert.equal(failures.length, 1)
-    assert.match(failures[0], /expected 19 reference\/\*\.md files, found 18/)
+    assert.match(failures[0], /expected 20 reference\/\*\.md files, found 18/)
   } finally {
     rmSync(dir, { recursive: true, force: true })
   }
 })
 
-test('disposable 20-file inventory is rejected by the gate exclusion rule', () => {
-  const dir = makeDisposableInventory(20)
+test('disposable 21-file inventory is rejected by the gate exclusion rule', () => {
+  const dir = makeDisposableInventory(21)
   try {
     const failures = referenceExclusionFailures(dir)
     assert.equal(failures.length, 1)
-    assert.match(failures[0], /expected 19 reference\/\*\.md files, found 20/)
+    assert.match(failures[0], /expected 20 reference\/\*\.md files, found 21/)
   } finally {
     rmSync(dir, { recursive: true, force: true })
   }
@@ -64,5 +64,5 @@ test('disposable 20-file inventory is rejected by the gate exclusion rule', () =
 test('missing reference directory is reported as an exclusion failure', () => {
   const failures = referenceExclusionFailures(join(tmpdir(), 'gate-ref-missing-does-not-exist'))
   assert.equal(failures.length, 1)
-  assert.match(failures[0], /Research\/canon-reference\/ is missing/)
+  assert.match(failures[0], /RESEARCH\/canon-reference\/ is missing/)
 })
