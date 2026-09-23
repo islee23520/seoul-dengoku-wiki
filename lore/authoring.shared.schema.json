@@ -113,6 +113,15 @@
       "oneOf": [
         {
           "type": "object",
+          "required": ["kind", "anchor"],
+          "properties": {
+            "kind": {"const": "rule"},
+            "anchor": {"$ref": "#/$defs/anchor"}
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
           "required": ["kind", "anchor", "language", "text"],
           "properties": {
             "kind": {"const": "code"},
