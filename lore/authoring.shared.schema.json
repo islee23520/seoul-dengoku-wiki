@@ -30,11 +30,14 @@
           "required": ["domain", "slug"],
           "properties": {
             "domain": {"type": "string", "minLength": 1},
-            "slug": {"type": "string", "pattern": "^[A-Za-z0-9_][A-Za-z0-9_-]*$"},
+            "slug": {"type": "string", "pattern": "^[A-Za-z0-9_][A-Za-z0-9_-]*(/[A-Za-z0-9_][A-Za-z0-9_-]*)?$"},
             "anchor": {"$ref": "#/$defs/anchor"}
           },
+          "if": {"properties": {"domain": {"not": {"const": "gdd"}}}},
+          "then": {"properties": {"slug": {"pattern": "^[A-Za-z0-9_][A-Za-z0-9_-]*$"}}},
           "additionalProperties": false
         },
+        "strong": {"const": true},
         "href": {"type": "string", "pattern": "^https://\\S+$"}
       },
       "not": {"required": ["link", "href"]},
