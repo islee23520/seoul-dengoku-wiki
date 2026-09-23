@@ -13,15 +13,14 @@
     "original_hash": "a7c4ad731b2e45320e18368c71ac845bf16887f441bc4c75818a379cead343ce",
     "history": [
       "Korean lore/characters/Cast-Corridors-Index.md SHA-256 a7c4ad731b2e45320e18368c71ac845bf16887f441bc4c75818a379cead343ce.",
-      "English lore/characters/Cast-Corridors-Index.en.md SHA-256 132d555a1984584bc41c37ea4c73a373ce22690bf9572d624f213841dc7441e9; copied verbatim, no translation written.",
-      "KO built from the sweep-w1 WEB working tree (clean) SHA-256 a7c4ad731b2e45320e18368c71ac845bf16887f441bc4c75818a379cead343ce. The page had no committed EN; EN was translated from KO during the JSON migration (SHA-256 132d555a1984584bc41c37ea4c73a373ce22690bf9572d624f213841dc7441e9) and needs human EN review."
+      "English SHA-256 132d555a1984584bc41c37ea4c73a373ce22690bf9572d624f213841dc7441e9; translated from Korean during the JSON migration (no committed EN existed).",
+      "KO from the sweep-w1 WEB working tree (clean). EN needs human review."
     ]
   },
   "source": {
     "kind": "original-fiction",
     "refs": [
-      "lore/characters/Cast-Corridors-Index.md",
-      "lore/characters/Cast-Corridors-Index.en.md"
+      "lore/characters/Cast-Corridors-Index.md"
     ]
   },
   "locales": {

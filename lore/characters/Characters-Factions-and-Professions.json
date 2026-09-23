@@ -13,15 +13,14 @@
     "original_hash": "ae95a71e0d1b186ad3a89650fb10a6fb8a1915e7b3d72df25a955aabcb5809a3",
     "history": [
       "Korean lore/characters/Characters-Factions-and-Professions.md SHA-256 ae95a71e0d1b186ad3a89650fb10a6fb8a1915e7b3d72df25a955aabcb5809a3.",
-      "English lore/characters/Characters-Factions-and-Professions.en.md SHA-256 200e2e92d8b8618a2b3fccf8a7c4c3fbb34f6bd981f72c2c9643250588a30f33; copied verbatim, no translation written.",
-      "KO built from the sweep-w1 WEB working tree (dirty) SHA-256 ae95a71e0d1b186ad3a89650fb10a6fb8a1915e7b3d72df25a955aabcb5809a3. The page had no committed EN; EN was translated from KO during the JSON migration (SHA-256 200e2e92d8b8618a2b3fccf8a7c4c3fbb34f6bd981f72c2c9643250588a30f33) and needs human EN review."
+      "English SHA-256 200e2e92d8b8618a2b3fccf8a7c4c3fbb34f6bd981f72c2c9643250588a30f33; translated from Korean during the JSON migration (no committed EN existed).",
+      "KO from the sweep-w1 WEB working tree (dirty). EN needs human review."
     ]
   },
   "source": {
     "kind": "original-fiction",
     "refs": [
-      "lore/characters/Characters-Factions-and-Professions.md",
-      "lore/characters/Characters-Factions-and-Professions.en.md"
+      "lore/characters/Characters-Factions-and-Professions.md"
     ]
   },
   "locales": {

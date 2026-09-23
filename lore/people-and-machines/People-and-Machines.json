@@ -13,15 +13,14 @@
     "original_hash": "63381f506cb47af0131d8a19823c5978cbd2ca035f46cc30c9fe8578e186ed4a",
     "history": [
       "Korean lore/people-and-machines/People-and-Machines.md SHA-256 63381f506cb47af0131d8a19823c5978cbd2ca035f46cc30c9fe8578e186ed4a.",
-      "English lore/people-and-machines/People-and-Machines.en.md SHA-256 89b3483ef28737b441ed9b070e0370144970badb97133226746444ce612726f0; copied verbatim, no translation written.",
-      "KO built from the sweep-w1 WEB working tree (clean) SHA-256 63381f506cb47af0131d8a19823c5978cbd2ca035f46cc30c9fe8578e186ed4a. The page had no committed EN; EN was translated from KO during the JSON migration (SHA-256 89b3483ef28737b441ed9b070e0370144970badb97133226746444ce612726f0) and needs human EN review."
+      "English SHA-256 89b3483ef28737b441ed9b070e0370144970badb97133226746444ce612726f0; translated from Korean during the JSON migration (no committed EN existed).",
+      "KO from the sweep-w1 WEB working tree (clean). EN needs human review."
     ]
   },
   "source": {
     "kind": "original-fiction",
     "refs": [
-      "lore/people-and-machines/People-and-Machines.md",
-      "lore/people-and-machines/People-and-Machines.en.md"
+      "lore/people-and-machines/People-and-Machines.md"
     ]
   },
   "locales": {

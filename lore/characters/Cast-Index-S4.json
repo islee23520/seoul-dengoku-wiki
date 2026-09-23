@@ -13,15 +13,14 @@
     "original_hash": "ca4a9a13177a6744971ee4a6d4b7c55614c34b428fb20d27298dad9342eda14c",
     "history": [
       "Korean lore/characters/Cast-Index-S4.md SHA-256 ca4a9a13177a6744971ee4a6d4b7c55614c34b428fb20d27298dad9342eda14c.",
-      "English lore/characters/Cast-Index-S4.en.md SHA-256 fbf0caf78e18feff8013d862749f7d2ebda1b4bd1939ba505dd409003926be8b; copied verbatim, no translation written.",
-      "KO built from the sweep-w1 WEB working tree (clean) SHA-256 ca4a9a13177a6744971ee4a6d4b7c55614c34b428fb20d27298dad9342eda14c. The page had no committed EN; EN was translated from KO during the JSON migration (SHA-256 fbf0caf78e18feff8013d862749f7d2ebda1b4bd1939ba505dd409003926be8b) and needs human EN review."
+      "English SHA-256 fbf0caf78e18feff8013d862749f7d2ebda1b4bd1939ba505dd409003926be8b; translated from Korean during the JSON migration (no committed EN existed).",
+      "KO from the sweep-w1 WEB working tree (clean). EN needs human review."
     ]
   },
   "source": {
     "kind": "original-fiction",
     "refs": [
-      "lore/characters/Cast-Index-S4.md",
-      "lore/characters/Cast-Index-S4.en.md"
+      "lore/characters/Cast-Index-S4.md"
     ]
   },
   "locales": {

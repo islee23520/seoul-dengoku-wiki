@@ -13,8 +13,8 @@
     "original_hash": "e1d76f380166549be3f2046f6234c45b2f45ccb2bbf8a05d9768880e7e25ba42",
     "history": [
       "Korean lore/chronology/Century-Annals.md SHA-256 e1d76f380166549be3f2046f6234c45b2f45ccb2bbf8a05d9768880e7e25ba42.",
-      "English lore/chronology/Century-Annals.en.md SHA-256 267f6c7117f86e2ed20017d9c27026662272f646c68381c4b4e120009acc81fd; copied verbatim, no translation written.",
-      "KO built from the sweep-w1 WEB working tree (clean) SHA-256 eba2f87ad728a945b0eebf55ff3e1f14238270797b2b11f275e86084d6c2a727. EN built from the committed Century-Annals.en.md SHA-256 06a8374382188c403cde745b46f5fc9e85abd33788e2744282a579d5514fb63b. During migration, the 92 narrative paragraphs missing from EN (46 year sections, 2036-2125) were translated from KO. Nine malformed table rows of the form '| Label: value |' (3 KO, 6 EN) were split into two cells. Final KO SHA-256 e1d76f380166549be3f2046f6234c45b2f45ccb2bbf8a05d9768880e7e25ba42; final EN SHA-256 267f6c7117f86e2ed20017d9c27026662272f646c68381c4b4e120009acc81fd."
+      "English SHA-256 267f6c7117f86e2ed20017d9c27026662272f646c68381c4b4e120009acc81fd; committed EN completed by translation from Korean during the JSON migration.",
+      "KO from the sweep-w1 WEB working tree (clean). The committed EN (SHA-256 06a8374382188c403cde745b46f5fc9e85abd33788e2744282a579d5514fb63b) lacked 92 narrative paragraphs in 46 year sections (2036-2125); those were translated from KO. Nine '| Label: value |' table rows (3 KO, 6 EN) were split into two cells. The translated paragraphs need human EN review."
     ]
   },
   "source": {

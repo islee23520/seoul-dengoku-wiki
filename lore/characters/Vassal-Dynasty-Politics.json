@@ -13,15 +13,14 @@
     "original_hash": "8e1a82a6b045313756cc57c32520fae13f97dd62083a449b18ac7d81252c9dc0",
     "history": [
       "Korean lore/characters/Vassal-Dynasty-Politics.md SHA-256 8e1a82a6b045313756cc57c32520fae13f97dd62083a449b18ac7d81252c9dc0.",
-      "English lore/characters/Vassal-Dynasty-Politics.en.md SHA-256 43733f25ab635e14b257b40df93fa43b34991b4dde377c56b26b5f80009c6466; copied verbatim, no translation written.",
-      "KO built from the sweep-w1 WEB working tree (dirty) SHA-256 8e1a82a6b045313756cc57c32520fae13f97dd62083a449b18ac7d81252c9dc0. The page had no committed EN; EN was translated from KO during the JSON migration (SHA-256 43733f25ab635e14b257b40df93fa43b34991b4dde377c56b26b5f80009c6466) and needs human EN review."
+      "English SHA-256 43733f25ab635e14b257b40df93fa43b34991b4dde377c56b26b5f80009c6466; translated from Korean during the JSON migration (no committed EN existed).",
+      "KO from the sweep-w1 WEB working tree (dirty). EN needs human review."
     ]
   },
   "source": {
     "kind": "original-fiction",
     "refs": [
-      "lore/characters/Vassal-Dynasty-Politics.md",
-      "lore/characters/Vassal-Dynasty-Politics.en.md"
+      "lore/characters/Vassal-Dynasty-Politics.md"
     ]
   },
   "locales": {
