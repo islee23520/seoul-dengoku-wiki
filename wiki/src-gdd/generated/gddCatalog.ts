@@ -101,6 +101,14 @@ export const gddCatalog = [
   {
     "category": "design",
     "categoryLabel": "제품 설계",
+    "slug": "LICENSE",
+    "route": "/design/LICENSE",
+    "title": "MIT License",
+    "sourcePath": "LICENSE.md"
+  },
+  {
+    "category": "design",
+    "categoryLabel": "제품 설계",
     "slug": "Online-User-Journey",
     "route": "/design/Online-User-Journey",
     "title": "온라인 유저 여정",
@@ -272,7 +280,7 @@ export const gddCatalog = [
     "slug": "Ref-Fire-Emblem-FFT",
     "route": "/references/Ref-Fire-Emblem-FFT",
     "title": "Fire Emblem Awakening / Final Fantasy Tactics 시스템 대전",
-    "sourcePath": "canon/locales/ko-KR/references/ref-fire-emblem-fft.json"
+    "sourcePath": "canon/locales/ko-KR/references/ref-fire-emblem-f-f-t.json"
   },
   {
     "category": "references",
@@ -344,7 +352,7 @@ export const gddCatalog = [
     "slug": "Ref-XCOM-2",
     "route": "/references/Ref-XCOM-2",
     "title": "XCOM 2 — 게임 로직 백과사전",
-    "sourcePath": "canon/locales/ko-KR/references/ref-xcom-2.json"
+    "sourcePath": "canon/locales/ko-KR/references/ref-x-c-o-m-2.json"
   },
   {
     "category": "decisions",
