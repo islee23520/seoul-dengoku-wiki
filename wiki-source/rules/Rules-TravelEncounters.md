@@ -1,6 +1,6 @@
 # 이동과 조우 규칙
 
-> 출처: `GDD/rules/Travel-and-Encounters.md`, `GDD/rules/Campaign-Loop.md` — 계약 수치는 구현 상수를 우선한다.
+> 출처: [이동·조우](/rules/Travel-and-Encounters), [원정](/rules/Campaign-Loop) — 계약 수치는 구현 상수를 우선한다.
 
 ## 개요
 
@@ -135,7 +135,7 @@
 
 ## 출처
 
-- `GDD/rules/Travel-and-Encounters.md` — 전략맵 구간 이동, 비용 요인, 결정론적 조우와 원정 계속.
-- `GDD/rules/Campaign-Loop.md` — 결과 반영은 귀환 명령이 아니며 귀환·정착·정복·방랑·교역은 서로 다른 결말.
+- [이동·조우](/rules/Travel-and-Encounters) — 전략맵 구간 이동, 비용 요인, 결정론적 조우와 원정 계속.
+- [원정](/rules/Campaign-Loop) — 결과 반영은 귀환 명령이 아니며 귀환·정착·정복·방랑·교역은 서로 다른 결말.
 - 원문은 구간당 고정 숫자 비용과 조우 확률을 적지 않았다.
 - 구현 상수가 있으면 그 값을 우선한다.

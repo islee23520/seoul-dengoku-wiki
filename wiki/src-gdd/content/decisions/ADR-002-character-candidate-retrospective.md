@@ -10,7 +10,6 @@
 
 - 로컬 조립기와 행동 회귀 테스트 13개: 96x128/12fps, idle 4 walk 6 attack 6 hit 3 down 4, 2.5±0.08등신 실측, 셀 경계 이탈 0, atlas 셀 알파 0~255 바이트 보존.
 - Unity 6000.7.0a5 batchmode: 격리 경로 Assets/Janseon/ArtCandidates/Characters import 279텍스처(원본 RGBA 동일, 576x2560 다운스케일 없음), runtime Art 경로 쓰기 거부.
-- 실제 PlayMode: Animator + AnimationClipPlayable 구동으로 276프레임/60클립 전체 캡처, NUnit 1/1 exit 0, 카메라 pitch 35.264 yaw 45 orthographic.
 - 원본 보존: 선행 레인 원본 1,481파일 집합 SHA 작업 전후 동일.
 - 독립 검수: 41파일 + 보강 17파일을 SHA 고정해 4축 검수, 실제 읽기 완료 41/41 58/58 41/41 58/58.
 

@@ -1,6 +1,6 @@
 # 실시간 부대 지휘 전투 규칙
 
-> 출처: `GDD/rules/Realtime-Formation-Card-Battle.md`, `GDD/rules/Strategy-Battle-Roundtrip.md`, `GDD/rules/Warfare-and-Sieges.md` — 현재 목표와 2026-09-07 카드 전투 POC 기록을 구분한다.
+> 출처: [전투](/rules/Realtime-Formation-Card-Battle), [전략·전투 왕복](/rules/Strategy-Battle-Roundtrip), [전쟁·공성](/rules/Warfare-and-Sieges) — 현재 목표와 2026-09-07 카드 전투 POC 기록을 구분한다.
 
 ## 개요
 
@@ -244,9 +244,9 @@ UI의 시각 이동은 Core의 논리 상태를 따라 표현한다.
 
 ## 출처
 
-- `GDD/rules/Realtime-Formation-Card-Battle.md` — 현재 부대 지휘, 카메라·일시정지 기본값, 종료 상태와 POC 역사.
-- `GDD/rules/Strategy-Battle-Roundtrip.md` — 불변 컨텍스트, 명령 교체, 정확히 한 번 정산과 원정 계속.
-- `GDD/rules/Warfare-and-Sieges.md` — `LegalFallback`, 명령 철수·패주·수락된 항복·포획 분리.
+- [전투](/rules/Realtime-Formation-Card-Battle) — 현재 부대 지휘, 카메라·일시정지 기본값, 종료 상태와 POC 역사.
+- [전략·전투 왕복](/rules/Strategy-Battle-Roundtrip) — 불변 컨텍스트, 명령 교체, 정확히 한 번 정산과 원정 계속.
+- [전쟁·공성](/rules/Warfare-and-Sieges) — `LegalFallback`, 명령 철수·패주·수락된 항복·포획 분리.
 - `Intent.md` 결정 11 — 토탈워식 부대 지휘와 카드·격자 목표 폐기.
 - 2026-09-19 새 소유자 결정 — 이름 있는 영웅 액터와 일반 병사 분대 분리, 병사 분대당 최대 20명, 영웅은 20명에서 제외.
 - 현재 목표에는 군단 전체 상한, 분대 최소 인원·수, 영웅 수·능력 자원·특수 밸런스나 새 이동 수치를 만들지 않는다. 표와 공식의 수치는 2026-09-07 카드 전투 POC 역사에만 적용한다.

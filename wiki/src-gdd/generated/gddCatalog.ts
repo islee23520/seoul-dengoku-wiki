@@ -32,7 +32,7 @@ export const gddCatalog = [
     "slug": "Asset-Pipeline",
     "route": "/design/Asset-Pipeline",
     "title": "에셋이 들어오는 길",
-    "sourcePath": "GDD/Asset-Pipeline.md"
+    "sourcePath": "canon/locales/ko-KR/root/asset-pipeline.json"
   },
   {
     "category": "design",
@@ -40,7 +40,7 @@ export const gddCatalog = [
     "slug": "Data-Catalog-and-Schema",
     "route": "/design/Data-Catalog-and-Schema",
     "title": "게임 데이터 원장과 스키마 계약",
-    "sourcePath": "GDD/Data-Catalog-and-Schema.md"
+    "sourcePath": "canon/locales/ko-KR/root/data-catalog-and-schema.json"
   },
   {
     "category": "design",
@@ -48,7 +48,7 @@ export const gddCatalog = [
     "slug": "Design-Requirements",
     "route": "/design/Design-Requirements",
     "title": "설계 요구 티켓",
-    "sourcePath": "GDD/Design-Requirements.md"
+    "sourcePath": "canon/locales/ko-KR/root/design-requirements.json"
   },
   {
     "category": "design",
@@ -56,7 +56,7 @@ export const gddCatalog = [
     "slug": "Development-Roadmap",
     "route": "/design/Development-Roadmap",
     "title": "개발 로드맵",
-    "sourcePath": "GDD/Development-Roadmap.md"
+    "sourcePath": "canon/locales/ko-KR/root/development-roadmap.json"
   },
   {
     "category": "design",
@@ -64,7 +64,7 @@ export const gddCatalog = [
     "slug": "Game-References",
     "route": "/design/Game-References",
     "title": "레퍼런스 게임 조사 — 무엇을 누구에게서 빌렸나",
-    "sourcePath": "GDD/Game-References.md"
+    "sourcePath": "canon/locales/ko-KR/root/game-references.json"
   },
   {
     "category": "design",
@@ -72,7 +72,7 @@ export const gddCatalog = [
     "slug": "Game-Thesis",
     "route": "/design/Game-Thesis",
     "title": "개요",
-    "sourcePath": "GDD/Game-Thesis.md"
+    "sourcePath": "canon/locales/ko-KR/root/game-thesis.json"
   },
   {
     "category": "design",
@@ -80,7 +80,15 @@ export const gddCatalog = [
     "slug": "Home",
     "route": "/design/Home",
     "title": "《서울:전국》",
-    "sourcePath": "GDD/Home.md"
+    "sourcePath": "canon/locales/ko-KR/root/home.json"
+  },
+  {
+    "category": "design",
+    "categoryLabel": "제품 설계",
+    "slug": "Issue-101-Ui-Ux-Decisions",
+    "route": "/design/Issue-101-Ui-Ux-Decisions",
+    "title": "#101 UI/UX 화면 계약 — 확정 결정 1–9",
+    "sourcePath": "canon/locales/ko-KR/root/issue-101-ui-ux-decisions.json"
   },
   {
     "category": "design",
@@ -88,7 +96,15 @@ export const gddCatalog = [
     "slug": "Korean-Terminology-and-Naming",
     "route": "/design/Korean-Terminology-and-Naming",
     "title": "한국어 표기와 명명 규칙",
-    "sourcePath": "GDD/Korean-Terminology-and-Naming.md"
+    "sourcePath": "canon/locales/ko-KR/root/korean-terminology-and-naming.json"
+  },
+  {
+    "category": "design",
+    "categoryLabel": "제품 설계",
+    "slug": "LICENSE",
+    "route": "/design/LICENSE",
+    "title": "MIT License",
+    "sourcePath": "LICENSE.md"
   },
   {
     "category": "design",
@@ -96,7 +112,15 @@ export const gddCatalog = [
     "slug": "Online-User-Journey",
     "route": "/design/Online-User-Journey",
     "title": "온라인 유저 여정",
-    "sourcePath": "GDD/Online-User-Journey.md"
+    "sourcePath": "canon/locales/ko-KR/root/online-user-journey.json"
+  },
+  {
+    "category": "design",
+    "categoryLabel": "제품 설계",
+    "slug": "Open-Decisions",
+    "route": "/design/Open-Decisions",
+    "title": "열린 결정 목록",
+    "sourcePath": "canon/locales/ko-KR/root/open-decisions.json"
   },
   {
     "category": "design",
@@ -104,7 +128,7 @@ export const gddCatalog = [
     "slug": "Research-Sources",
     "route": "/design/Research-Sources",
     "title": "연구 출처 등록부",
-    "sourcePath": "GDD/Research-Sources.md"
+    "sourcePath": "canon/locales/ko-KR/root/research-sources.json"
   },
   {
     "category": "design",
@@ -112,7 +136,7 @@ export const gddCatalog = [
     "slug": "Ui-Implementation-Pipeline",
     "route": "/design/Ui-Implementation-Pipeline",
     "title": "UI가 코드로 들어오는 길",
-    "sourcePath": "GDD/Ui-Implementation-Pipeline.md"
+    "sourcePath": "canon/locales/ko-KR/root/ui-implementation-pipeline.json"
   },
   {
     "category": "rules",
@@ -120,7 +144,7 @@ export const gddCatalog = [
     "slug": "Campaign-Loop",
     "route": "/rules/Campaign-Loop",
     "title": "원정",
-    "sourcePath": "GDD/rules/Campaign-Loop.md"
+    "sourcePath": "canon/locales/ko-KR/rules/campaign-loop.json"
   },
   {
     "category": "rules",
@@ -128,7 +152,7 @@ export const gddCatalog = [
     "slug": "Campaign-Progression",
     "route": "/rules/Campaign-Progression",
     "title": "캠페인 진행과 위기",
-    "sourcePath": "GDD/rules/Campaign-Progression.md"
+    "sourcePath": "canon/locales/ko-KR/rules/campaign-progression.json"
   },
   {
     "category": "rules",
@@ -136,7 +160,7 @@ export const gddCatalog = [
     "slug": "Hero-Squads-and-Simultaneous-Turns",
     "route": "/rules/Hero-Squads-and-Simultaneous-Turns",
     "title": "영웅 분대와 동시 전략 턴",
-    "sourcePath": "GDD/rules/Hero-Squads-and-Simultaneous-Turns.md"
+    "sourcePath": "canon/locales/ko-KR/rules/hero-squads-and-simultaneous-turns.json"
   },
   {
     "category": "rules",
@@ -144,7 +168,7 @@ export const gddCatalog = [
     "slug": "Realtime-Formation-Card-Battle",
     "route": "/rules/Realtime-Formation-Card-Battle",
     "title": "실시간 부대 지휘 전투",
-    "sourcePath": "GDD/rules/Realtime-Formation-Card-Battle.md"
+    "sourcePath": "canon/locales/ko-KR/rules/realtime-formation-card-battle.json"
   },
   {
     "category": "rules",
@@ -152,7 +176,7 @@ export const gddCatalog = [
     "slug": "Save-and-Determinism",
     "route": "/rules/Save-and-Determinism",
     "title": "같은 선택이 같은 결과가 되나",
-    "sourcePath": "GDD/rules/Save-and-Determinism.md"
+    "sourcePath": "canon/locales/ko-KR/rules/save-and-determinism.json"
   },
   {
     "category": "rules",
@@ -160,7 +184,7 @@ export const gddCatalog = [
     "slug": "Strategy-Battle-Roundtrip",
     "route": "/rules/Strategy-Battle-Roundtrip",
     "title": "전략에서 전투로",
-    "sourcePath": "GDD/rules/Strategy-Battle-Roundtrip.md"
+    "sourcePath": "canon/locales/ko-KR/rules/strategy-battle-roundtrip.json"
   },
   {
     "category": "rules",
@@ -168,7 +192,7 @@ export const gddCatalog = [
     "slug": "Travel-and-Encounters",
     "route": "/rules/Travel-and-Encounters",
     "title": "이동과 조우",
-    "sourcePath": "GDD/rules/Travel-and-Encounters.md"
+    "sourcePath": "canon/locales/ko-KR/rules/travel-and-encounters.json"
   },
   {
     "category": "rules",
@@ -176,7 +200,7 @@ export const gddCatalog = [
     "slug": "Warfare-and-Sieges",
     "route": "/rules/Warfare-and-Sieges",
     "title": "전쟁과 공성",
-    "sourcePath": "GDD/rules/Warfare-and-Sieges.md"
+    "sourcePath": "canon/locales/ko-KR/rules/warfare-and-sieges.json"
   },
   {
     "category": "architecture",
@@ -184,7 +208,7 @@ export const gddCatalog = [
     "slug": "Unity-Architecture-Implementation-Plan",
     "route": "/architecture/Unity-Architecture-Implementation-Plan",
     "title": "Unity 아키텍처 구현 계획",
-    "sourcePath": "GDD/architecture/Unity-Architecture-Implementation-Plan.md"
+    "sourcePath": "canon/locales/ko-KR/architecture/unity-architecture-implementation-plan.json"
   },
   {
     "category": "architecture",
@@ -192,7 +216,7 @@ export const gddCatalog = [
     "slug": "Unity-Architecture",
     "route": "/architecture/Unity-Architecture",
     "title": "유니티 구조",
-    "sourcePath": "GDD/architecture/Unity-Architecture.md"
+    "sourcePath": "canon/locales/ko-KR/architecture/unity-architecture.json"
   },
   {
     "category": "architecture",
@@ -200,7 +224,7 @@ export const gddCatalog = [
     "slug": "Unity-System-Design",
     "route": "/architecture/Unity-System-Design",
     "title": "Unity 시스템 설계 계약",
-    "sourcePath": "GDD/architecture/Unity-System-Design.md"
+    "sourcePath": "canon/locales/ko-KR/architecture/unity-system-design.json"
   },
   {
     "category": "references",
@@ -208,7 +232,7 @@ export const gddCatalog = [
     "slug": "Ref-Bannerlord",
     "route": "/references/Ref-Bannerlord",
     "title": "마운트 앤 블레이드 2: 배너로드 (Mount & Blade II: Bannerlord) — 게임 로직 백과사전",
-    "sourcePath": "GDD/references/Ref-Bannerlord.md"
+    "sourcePath": "canon/locales/ko-KR/references/ref-bannerlord.json"
   },
   {
     "category": "references",
@@ -216,7 +240,7 @@ export const gddCatalog = [
     "slug": "Ref-Battle-Brothers",
     "route": "/references/Ref-Battle-Brothers",
     "title": "Battle Brothers 게임 시스템 레퍼런스",
-    "sourcePath": "GDD/references/Ref-Battle-Brothers.md"
+    "sourcePath": "canon/locales/ko-KR/references/ref-battle-brothers.json"
   },
   {
     "category": "references",
@@ -224,7 +248,7 @@ export const gddCatalog = [
     "slug": "Ref-Cross-Synthesis",
     "route": "/references/Ref-Cross-Synthesis",
     "title": "크로스 게임 종합: 치 디멘션 비교 매트릭스 — 서울:전국 설계용",
-    "sourcePath": "GDD/references/Ref-Cross-Synthesis.md"
+    "sourcePath": "canon/locales/ko-KR/references/ref-cross-synthesis.json"
   },
   {
     "category": "references",
@@ -232,7 +256,7 @@ export const gddCatalog = [
     "slug": "Ref-Crusader-Kings-3",
     "route": "/references/Ref-Crusader-Kings-3",
     "title": "Crusader Kings III 게임 메커니즘 레퍼런스",
-    "sourcePath": "GDD/references/Ref-Crusader-Kings-3.md"
+    "sourcePath": "canon/locales/ko-KR/references/ref-crusader-kings-3.json"
   },
   {
     "category": "references",
@@ -240,7 +264,7 @@ export const gddCatalog = [
     "slug": "Ref-Darkest-Dungeon",
     "route": "/references/Ref-Darkest-Dungeon",
     "title": "Darkest Dungeon (2016) — 게임 로직 백과사전",
-    "sourcePath": "GDD/references/Ref-Darkest-Dungeon.md"
+    "sourcePath": "canon/locales/ko-KR/references/ref-darkest-dungeon.json"
   },
   {
     "category": "references",
@@ -248,7 +272,7 @@ export const gddCatalog = [
     "slug": "Ref-Farland-Wog-Triangle",
     "route": "/references/Ref-Farland-Wog-Triangle",
     "title": "파랜드 택틱스 · 창세기전 · Triangle Strategy 게임 시스템 백과",
-    "sourcePath": "GDD/references/Ref-Farland-Wog-Triangle.md"
+    "sourcePath": "canon/locales/ko-KR/references/ref-farland-wog-triangle.json"
   },
   {
     "category": "references",
@@ -256,7 +280,7 @@ export const gddCatalog = [
     "slug": "Ref-Fire-Emblem-FFT",
     "route": "/references/Ref-Fire-Emblem-FFT",
     "title": "Fire Emblem Awakening / Final Fantasy Tactics 시스템 대전",
-    "sourcePath": "GDD/references/Ref-Fire-Emblem-FFT.md"
+    "sourcePath": "canon/locales/ko-KR/references/ref-fire-emblem-f-f-t.json"
   },
   {
     "category": "references",
@@ -264,7 +288,7 @@ export const gddCatalog = [
     "slug": "Ref-Into-The-Breach",
     "route": "/references/Ref-Into-The-Breach",
     "title": "Into the Breach — 게임 로직 백과사전",
-    "sourcePath": "GDD/references/Ref-Into-The-Breach.md"
+    "sourcePath": "canon/locales/ko-KR/references/ref-into-the-breach.json"
   },
   {
     "category": "references",
@@ -272,7 +296,7 @@ export const gddCatalog = [
     "slug": "Ref-K-System",
     "route": "/references/Ref-K-System",
     "title": "K-시스템(원작) 게임 메커니즘 레퍼런스",
-    "sourcePath": "GDD/references/Ref-K-System.md"
+    "sourcePath": "canon/locales/ko-KR/references/ref-k-system.json"
   },
   {
     "category": "references",
@@ -280,7 +304,7 @@ export const gddCatalog = [
     "slug": "Ref-Mechanism-Index",
     "route": "/references/Ref-Mechanism-Index",
     "title": "레퍼런스 게임 메커니즘 데이터베이스",
-    "sourcePath": "GDD/references/Ref-Mechanism-Index.md"
+    "sourcePath": "canon/locales/ko-KR/references/ref-mechanism-index.json"
   },
   {
     "category": "references",
@@ -288,7 +312,7 @@ export const gddCatalog = [
     "slug": "Ref-Nobunagas-Ambition",
     "route": "/references/Ref-Nobunagas-Ambition",
     "title": "노부나가의 야망 게임 메커니즘 백과: 신생과 천상기",
-    "sourcePath": "GDD/references/Ref-Nobunagas-Ambition.md"
+    "sourcePath": "canon/locales/ko-KR/references/ref-nobunagas-ambition.json"
   },
   {
     "category": "references",
@@ -296,7 +320,7 @@ export const gddCatalog = [
     "slug": "Ref-Songs-of-Silence",
     "route": "/references/Ref-Songs-of-Silence",
     "title": "Songs of Silence (2024) — 게임 로직 백과사전",
-    "sourcePath": "GDD/references/Ref-Songs-of-Silence.md"
+    "sourcePath": "canon/locales/ko-KR/references/ref-songs-of-silence.json"
   },
   {
     "category": "references",
@@ -304,7 +328,7 @@ export const gddCatalog = [
     "slug": "Ref-Taikou-Risshiden",
     "route": "/references/Ref-Taikou-Risshiden",
     "title": "태합입지전 V / V DX: 게임 메커니즘 독립 참고서",
-    "sourcePath": "GDD/references/Ref-Taikou-Risshiden.md"
+    "sourcePath": "canon/locales/ko-KR/references/ref-taikou-risshiden.json"
   },
   {
     "category": "references",
@@ -312,7 +336,7 @@ export const gddCatalog = [
     "slug": "Ref-Three-Kingdoms",
     "route": "/references/Ref-Three-Kingdoms",
     "title": "삼국지 XIV 게임 메커니즘 백과",
-    "sourcePath": "GDD/references/Ref-Three-Kingdoms.md"
+    "sourcePath": "canon/locales/ko-KR/references/ref-three-kingdoms.json"
   },
   {
     "category": "references",
@@ -320,7 +344,7 @@ export const gddCatalog = [
     "slug": "Ref-Unicorn-Overlord",
     "route": "/references/Ref-Unicorn-Overlord",
     "title": "Unicorn Overlord (2024) — 게임 로직 백과사전",
-    "sourcePath": "GDD/references/Ref-Unicorn-Overlord.md"
+    "sourcePath": "canon/locales/ko-KR/references/ref-unicorn-overlord.json"
   },
   {
     "category": "references",
@@ -328,7 +352,7 @@ export const gddCatalog = [
     "slug": "Ref-XCOM-2",
     "route": "/references/Ref-XCOM-2",
     "title": "XCOM 2 — 게임 로직 백과사전",
-    "sourcePath": "GDD/references/Ref-XCOM-2.md"
+    "sourcePath": "canon/locales/ko-KR/references/ref-x-c-o-m-2.json"
   },
   {
     "category": "decisions",
@@ -336,7 +360,7 @@ export const gddCatalog = [
     "slug": "ADR-001-repository-delivery-policy",
     "route": "/decisions/ADR-001-repository-delivery-policy",
     "title": "ADR-001: Repository delivery policy",
-    "sourcePath": "GDD/adr/ADR-001-repository-delivery-policy.md"
+    "sourcePath": "canon/locales/ko-KR/adr-001.json"
   },
   {
     "category": "decisions",
@@ -344,7 +368,7 @@ export const gddCatalog = [
     "slug": "ADR-002-character-candidate-retrospective",
     "route": "/decisions/ADR-002-character-candidate-retrospective",
     "title": "ADR-002: 캐릭터 후보 아트 파이프라인 회고와 재발 방지 계약",
-    "sourcePath": "GDD/adr/ADR-002-character-candidate-retrospective.md"
+    "sourcePath": "canon/locales/ko-KR/adr-002.json"
   },
   {
     "category": "decisions",
@@ -352,7 +376,7 @@ export const gddCatalog = [
     "slug": "ADR-003-real-place-and-station-naming",
     "route": "/decisions/ADR-003-real-place-and-station-naming",
     "title": "ADR-003: 창작 명칭은 실제 지역명과 지하철역명을 기준으로 한다",
-    "sourcePath": "GDD/adr/ADR-003-real-place-and-station-naming.md"
+    "sourcePath": "canon/locales/ko-KR/adr-003.json"
   },
   {
     "category": "decisions",
@@ -360,7 +384,7 @@ export const gddCatalog = [
     "slug": "ADR-004-root-domain-structure",
     "route": "/decisions/ADR-004-root-domain-structure",
     "title": "ADR-004 — 루트 도메인과 단일 설계 정본",
-    "sourcePath": "GDD/adr/ADR-004-root-domain-structure.md"
+    "sourcePath": "canon/locales/ko-KR/adr-004.json"
   },
   {
     "category": "decisions",
@@ -368,7 +392,7 @@ export const gddCatalog = [
     "slug": "ADR-005-backend-host-session-multiplayer",
     "route": "/decisions/ADR-005-backend-host-session-multiplayer",
     "title": "ADR-005 — 백엔드 목적: 호스트 세션 기반 멀티플레이",
-    "sourcePath": "GDD/adr/ADR-005-backend-host-session-multiplayer.md"
+    "sourcePath": "canon/locales/ko-KR/adr-005.json"
   },
   {
     "category": "decisions",
@@ -376,7 +400,7 @@ export const gddCatalog = [
     "slug": "ADR-006-backend-aspnet-core-coordinator",
     "route": "/decisions/ADR-006-backend-aspnet-core-coordinator",
     "title": "ADR-006 — 백엔드 구현: Y2K 탈피와 ASP.NET Core 코디네이터",
-    "sourcePath": "GDD/adr/ADR-006-backend-aspnet-core-coordinator.md"
+    "sourcePath": "canon/locales/ko-KR/adr-006.json"
   },
   {
     "category": "decisions",
@@ -384,7 +408,15 @@ export const gddCatalog = [
     "slug": "ADR-007-pr-evidence-lifecycle",
     "route": "/decisions/ADR-007-pr-evidence-lifecycle",
     "title": "ADR-007: PR 단위 evidence 생명주기",
-    "sourcePath": "GDD/adr/ADR-007-pr-evidence-lifecycle.md"
+    "sourcePath": "canon/locales/ko-KR/adr-007.json"
+  },
+  {
+    "category": "decisions",
+    "categoryLabel": "결정 기록",
+    "slug": "ADR-008-local-first-steam-sessions",
+    "route": "/decisions/ADR-008-local-first-steam-sessions",
+    "title": "ADR-008 — 로컬 우선 Steam 세션과 계보 체크포인트",
+    "sourcePath": "canon/locales/ko-KR/adr-008.json"
   },
   {
     "category": "art",
@@ -392,6 +424,6 @@ export const gddCatalog = [
     "slug": "Character-Art-Direction",
     "route": "/art/Character-Art-Direction",
     "title": "캐릭터 미술 방향",
-    "sourcePath": "GDD/art/Character-Art-Direction.md"
+    "sourcePath": "canon/locales/ko-KR/art/character-art-direction.json"
   }
 ] as const

@@ -51,4 +51,4 @@
 - 무검수 생성 에셋, 공식 TRELLIS v1 외 임의 유료 3D 대체
 - 지리 번들 원본 래스터(PBF·GeoTIFF)의 `GAME/Assets` 직접 반입
 
-위 체크리스트가 모두 끝나고 현재 변경이 테스트된 뒤에만 다음 제품 모듈을 착수한다([개발 로드맵](/design/Development-Roadmap), [Intent.md](/design/Intent) 결정 10).
+위 체크리스트가 모두 끝나고 현재 변경이 테스트된 뒤에만 다음 제품 모듈을 착수한다([개발 로드맵](GDD/canon/locales/ko-KR/root/development-roadmap.json), [Intent.md](/design/Intent) 결정 10).

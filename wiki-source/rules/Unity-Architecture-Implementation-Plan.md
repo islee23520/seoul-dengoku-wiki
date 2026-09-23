@@ -2,7 +2,7 @@
 
 이 계획은 [Unity 시스템 설계 계약](/rules/Unity-System-Design)을 코드로 옮기는 순서와 각 단계의 중단 조건을 정의합니다. 설계 계약과 계획이 Wiki에 먼저 합쳐지기 전에는 제품 코드를 변경하지 않습니다.
 
-> 이 문서는 Foundation 아키텍처와 기존 Unity POC를 만든 역사적 구현 계획입니다. 현재 부대 지휘 전투 개정은 문서 전용이며 이 계획에 새 런타임 작업을 추가하지 않습니다.
+> 현재 부대 지휘 전투 개정은 문서 전용이며 이 계획에 새 런타임 작업을 추가하지 않습니다.
 
 ## 계약 요약
 
@@ -85,8 +85,7 @@ Makcha에서 실제 확인한 `jp.hadashikick.vcontainer` `#1.19.0`만 추가합
 Editor builder가 다음 결과를 반복 가능하게 만듭니다.
 
 1. `Bootstrap.unity`: App scope와 bootstrap root만 포함
-2. `Foundation.unity`: 기존 orthographic camera와 light, Foundation scope 포함
-3. Build Settings: Bootstrap 0, Foundation 1
+2. Build Settings: Bootstrap 0, Foundation 1
 
 Bootstrap 외 `DontDestroyOnLoad`를 금지합니다. 화면과 gameplay object는 Foundation unload와 함께 제거됩니다.
 

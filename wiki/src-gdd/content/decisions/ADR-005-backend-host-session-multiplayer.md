@@ -1,6 +1,6 @@
-- 상태: 수용됨 (소유자 방향 확정 2026-09-18; 전송·신원·저장 조항은 [ADR-006](/decisions/ADR-006-backend-aspnet-core-coordinator)으로 대체)
-- 선행: ADR-004 (루트 7도메인 — `Backend/` 루트 유지), [온라인 유저 여정](/design/Online-User-Journey) (본 ADR로 온라인 전제 갱신)
-- 후속: [ADR-006](/decisions/ADR-006-backend-aspnet-core-coordinator) (백엔드 구현 Y2K 탈피 — 결정 4·5·6, 규칙 2 저장 예외, 파급 포트·인프라 명세를 대체)
+- 상태: 수용됨 (소유자 방향 확정 2026-09-18; 전송·신원·저장 조항은 [ADR-006](/decisions/ADR-006-backend-aspnet-core-coordinator)으로 대체; 제품 세션 수명·권위 프로세스·참가자 신원 뿌리·월드 보존은 [ADR-008](/decisions/ADR-008-local-first-steam-sessions)으로 개정)
+- 선행: ADR-004 (루트 7도메인 — `Backend/` 루트 유지), [온라인 유저 여정](/design/Online-User-Journey) (본 ADR로 온라인 전제 갱신, 제품 세션은 ADR-008)
+- 후속: [ADR-006](/decisions/ADR-006-backend-aspnet-core-coordinator) (백엔드 구현 Y2K 탈피 — 결정 4·5·6, 규칙 2 저장 예외, 파급 포트·인프라 명세를 대체); [ADR-008](/decisions/ADR-008-local-first-steam-sessions) (제품 로컬 우선 Steam 세션 — 결정 2·3의 제품 해석을 개정. ASP.NET Core 구현은 대체하지 않음)
 
 ## 배경
 
@@ -27,5 +27,5 @@ Backend는 사내 dotnet-server-template 파생 .NET 8 CoreWCF JSON HTTP 서버�
 ## 파급
 
 - 온라인 유저 여정의 「권위 공유 원장」 전제는 「호스트 원장」으로 갱신되고, 틱 권위 GAP은 「호스트」로 닫힌다(같은 변경 묶음으로 반영).
-- Unity 클라이언트 네트워크 통합(Foundation 드라이버·어댑터)은 현재 ToDo 모듈(POC 코어 루프) 이후의 별도 모듈이며 이 ADR 범위 밖이다.
+- Unity 클라이언트 네트워크 통합(Foundation 드라이버·어댑터)은 별도 모듈이며 이 ADR 범위 밖이다.
 - 서버 실행 시 1219(HTTP)와 1220(WebSocket) 두 포트가 열린다. 도커 인프라(MySQL 13306·Redis 16379) 변화는 없다. *(2026-09-18 폐기, [ADR-006](/decisions/ADR-006-backend-aspnet-core-coordinator): 실행 포트는 Kestrel 1219 하나로 줄고 도커 MySQL·Redis 인프라는 제거된다.)*

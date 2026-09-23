@@ -1,8 +1,8 @@
 # Unity 시스템 설계 계약
 
-이 문서는 코드를 만들기 전에 고정한 아키텍처 계약입니다. 계약 키워드(FSM, VContainer, Singleton, Repository, 저장과 결정성, 실패와 취소, 품질 게이트)는 그대로입니다. 현재 저장소에는 Bootstrap App scope, Foundation 화면 child scope, MainTitle lease, 세 역 POC 루프, uGUI HUD, 실시간 진형·카드 Core가 있습니다. 전투 Core는 현재 POC 구현 사실이며 새 부대 지휘 목표의 구현을 뜻하지 않습니다. 이 문서의 증분 표는 Foundation 분리 계약을 설명하며, 그 계약 이후에 올린 코어·전투·uGUI를 무효화하지 않습니다.
+이 문서는 코드를 만들기 전에 고정한 아키텍처 계약입니다. 계약 키워드(FSM, VContainer, Singleton, Repository, 저장과 결정성, 실패와 취소, 품질 게이트)는 그대로입니다. 이 문서의 증분 표는 Foundation 분리 계약을 설명합니다.
 
-새 전투 문서의 권장 기본값은 3D 자유 지휘 카메라와 파티별 닫힌 전투 일시정지입니다. 카메라 수치를 새로 만들지 않으며, 일시정지는 캠페인 월드나 다른 파티의 scope를 멈추지 않습니다. 일시정지 중 수락된 교체 명령은 안정된 순서를 갖고 재개 뒤 다음 시뮬레이션 스텝에서 적용됩니다. 이 문서 개정은 POC 코드 변경 지시가 아닙니다.
+새 전투 문서의 권장 기본값은 3D 자유 지휘 카메라와 파티별 닫힌 전투 일시정지입니다. 카메라 수치를 새로 만들지 않으며, 일시정지는 캠페인 월드나 다른 파티의 scope를 멈추지 않습니다. 일시정지 중 수락된 교체 명령은 안정된 순서를 갖고 재개 뒤 다음 시뮬레이션 스텝에서 적용됩니다. 이 문서 개정은 런타임 구현 완료를 뜻하지 않습니다.
 
 ## 설계 목표와 비목표
 
@@ -187,8 +187,6 @@ EditMode FSM 테스트:
 5. 진행 중 중복 요청은 Busy이며 추가 load가 없습니다.
 6. load 실패는 staging을 폐기하고 Faulted와 retry 정보를 남깁니다.
 7. Retry는 새 transition ID로 복구합니다.
-
-EditMode `GenreContractTests`는 2026-09-18 POC 장르 계약을 검증합니다. 전략막 팬·줄 카메라, 전투 좌우 페이싱, `realtime-formation-card` 전투 해결이 계약 JSON과 Foundation 씬에 잠겨 있는지를 확인합니다. 이 검사는 실제 POC 이력을 보존하지만 현재 목표의 카메라, 카드나 일시정지를 승인하지 않습니다. 아이소 각도·타일·SD 실루엣 키는 결정 10으로 폐기됐습니다.
 
 PlayMode 테스트와 수동 QA는 실제 Bootstrap에서 Foundation으로 진입하고 public flow 표면에서 허용 전환과 거부 결과를 관찰합니다. 테스트는 fixed sleep을 쓰지 않고 fake completion source나 실제 readiness signal을 먼저 구독합니다.
 

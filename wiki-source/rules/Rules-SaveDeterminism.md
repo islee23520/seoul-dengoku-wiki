@@ -153,7 +153,7 @@
 
 ## 출처
 
-- `GDD/rules/Save-and-Determinism.md`
+- [저장과 결정론](/rules/Save-and-Determinism)
 - 계약 수치는 구현 상수를 우선한다
 - 원문에 잠긴 수치는 없다. 표는 원문 문구만 옮겼다
 - 인물 미시 줄의 임계는 원문에 숫자로 적혀 있지 않다

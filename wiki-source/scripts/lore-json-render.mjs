@@ -1,5 +1,5 @@
 // Render a lore authoring JSON document (lore/**/<Page>.json) back to Markdown for one locale.
-// The wiki pipeline (mount.mjs -> wiki-source/world -> React wiki) consumes Markdown, so JSON pages
+// The wiki pipeline (mount.mjs -> wiki-source/world -> React wiki) consumes rendered Markdown, so JSON pages
 // enter it through this renderer instead of hand-kept .md files.
 import { posix } from 'node:path'
 
@@ -8,9 +8,14 @@ const leafRuns = (leaf) => (typeof leaf === 'string' ? [{ text: leaf }] : leaf)
 function linkTarget(run, fromDir, targetFile) {
   if (run.href) return run.href
   const { domain, slug, anchor } = run.link
-  const path = domain === 'gdd'
-    ? posix.relative(fromDir, `GDD/${slug}.md`)
-    : posix.relative(fromDir, targetFile(domain, slug))
+  if (domain === 'gdd') {
+    const [section, name] = slug.split('/')
+    const route = ['rules', 'references', 'architecture'].includes(section) ? `/rules/${name}`
+      : section === 'art' ? `/design/${name}`
+      : !name ? `/design/${section}` : null
+    return `${route ?? `https://github.com/islee23520/seoul-dengoku-gdd/blob/main/canon/locales/ko-KR/${section}/${name.toLowerCase()}.json`}${anchor ? `#${anchor}` : ''}`
+  }
+  const path = posix.relative(fromDir, targetFile(domain, slug))
   return `${path}${anchor ? `#${anchor}` : ''}`
 }
 

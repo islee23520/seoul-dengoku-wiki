@@ -98,5 +98,13 @@ test('lore links render as paths relative to the page and keep their anchor', ()
     domain: 'culture',
     content: [{ kind: 'paragraph', anchor: 'p1', text: { en: [{ text: 'a', link: { domain: 'overview', slug: 'World-Unbinding', anchor: 'x' } }, { text: ' b', link: { domain: 'gdd', slug: 'rules/Warfare-and-Sieges' } }], ko: 'k' } }],
   }
-  assert.equal(renderLoreMarkdown(document, 'en'), '[a](../overview/World-Unbinding.md#x)[ b](../../GDD/rules/Warfare-and-Sieges.md)\n')
+  assert.equal(renderLoreMarkdown(document, 'en'), '[a](../overview/World-Unbinding.md#x)[ b](/rules/Warfare-and-Sieges)\n')
+})
+
+test('unmounted GDD proposals resolve to their JSON canon', () => {
+  const document = {
+    domain: 'chronology',
+    content: [{ kind: 'paragraph', anchor: 'p1', text: { en: [{ text: 'proposal', link: { domain: 'gdd', slug: 'proposals/Narrative-Direction' } }], ko: '제안' } }],
+  }
+  assert.equal(renderLoreMarkdown(document, 'en'), '[proposal](https://github.com/islee23520/seoul-dengoku-gdd/blob/main/canon/locales/ko-KR/proposals/narrative-direction.json)\n')
 })

@@ -4,21 +4,40 @@ import { fileURLToPath } from 'node:url'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const repoRoot = resolve(projectRoot, '../..')
+const gddPagesRoot = process.env.GDD_PAGES_ROOT
+if (!gddPagesRoot) throw new Error('GDD_PAGES_ROOT is required: materialize GDD JSON canon before generating the catalog')
 const contentRoot = resolve(projectRoot, 'src-gdd/content')
 const generatedRoot = resolve(projectRoot, 'src-gdd/generated')
 const categories = [
-  { id: 'design', label: '제품 설계', dir: 'GDD', depth: 0 },
-  { id: 'rules', label: '게임 규칙', dir: 'GDD/rules', depth: 0 },
-  { id: 'architecture', label: '아키텍처', dir: 'GDD/architecture', depth: 0 },
-  { id: 'references', label: '레퍼런스 연구', dir: 'GDD/references', depth: 0 },
-  { id: 'decisions', label: '결정 기록', dir: 'GDD/adr', depth: 0 },
-  { id: 'art', label: '아트 설계', dir: 'GDD/art', depth: 0 },
+  { id: 'design', label: '제품 설계', dir: '', depth: 0 },
+  { id: 'rules', label: '게임 규칙', dir: 'rules', depth: 0 },
+  { id: 'architecture', label: '아키텍처', dir: 'architecture', depth: 0 },
+  { id: 'references', label: '레퍼런스 연구', dir: 'references', depth: 0 },
+  { id: 'decisions', label: '결정 기록', dir: 'adr', depth: 0 },
+  { id: 'art', label: '아트 설계', dir: 'art', depth: 0 },
 ]
 const excluded = new Set(['AGENTS.md', 'README.md'])
+const gddRoot = process.env.GDD_ROOT ?? resolve(repoRoot, 'GDD')
+// Rendered page path -> the GDD file that owns it: the JSON canon document, or the exempt Markdown file itself.
+const canonPathByPage = new Map()
+for (const name of await readdir(resolve(gddRoot, 'canon/collections'))) {
+  if (extname(name) !== '.json') continue
+  for (const entry of JSON.parse(await readFile(resolve(gddRoot, 'canon/collections', name), 'utf8')).documents) canonPathByPage.set(entry.source.path, `canon/${entry.path}`)
+}
+for (const name of await readdir(resolve(gddRoot, 'canon/locales/ko-KR'))) {
+  if (!/^adr-\d{3}\.json$/.test(name)) continue
+  canonPathByPage.set(JSON.parse(await readFile(resolve(gddRoot, 'canon/locales/ko-KR', name), 'utf8')).source.path, `canon/locales/ko-KR/${name}`)
+}
 const githubRoot = 'https://github.com/islee23520/seoul-dengoku/blob/main/'
 
 const titleOf = (markdown, fallback) => markdown.match(/^#\s+(.+)$/m)?.[1]?.replace(/\s+\{#[^}]+\}\s*$/, '').trim() ?? fallback
-const sourceKey = (path) => relative(repoRoot, path).replaceAll('\\', '/')
+const sourceKey = async (path) => {
+  const page = relative(gddPagesRoot, path).replaceAll('\\', '/')
+  const canonPath = canonPathByPage.get(page)
+  if (canonPath) return canonPath
+  if (await stat(resolve(gddRoot, page)).then((entry) => entry.isFile(), () => false)) return page
+  throw new Error(`E_GDD_SOURCE_UNMAPPED: ${page} has no GDD canon document`)
+}
 
 await rm(contentRoot, { recursive: true, force: true })
 await mkdir(contentRoot, { recursive: true })
@@ -26,26 +45,29 @@ await mkdir(generatedRoot, { recursive: true })
 
 const documents = []
 for (const category of categories) {
-  const sourceDir = resolve(repoRoot, category.dir)
+  const sourceDir = resolve(gddPagesRoot, category.dir)
   for (const name of (await readdir(sourceDir)).sort()) {
     if (excluded.has(name) || extname(name) !== '.md') continue
     const source = resolve(sourceDir, name)
     if (!(await stat(source)).isFile()) continue
     const slug = basename(name, '.md')
     const markdown = await readFile(source, 'utf8')
-    documents.push({ category: category.id, categoryLabel: category.label, slug, route: `/${category.id}/${slug}`, title: titleOf(markdown, slug), source, sourcePath: sourceKey(source), markdown })
+    documents.push({ category: category.id, categoryLabel: category.label, slug, route: `/${category.id}/${slug}`, title: titleOf(markdown, slug), source, sourcePath: await sourceKey(source), markdown })
   }
 }
 
 const routeBySource = new Map(documents.map((document) => [document.sourcePath, document.route]))
-const normalizeHref = (href, source) => {
+const normalizeHref = async (href, source) => {
   if (href.startsWith('#') || href.startsWith('http://') || href.startsWith('https://') || href.startsWith('mailto:')) return href
   const [pathPart, hash = ''] = href.split('#', 2)
-  const resolved = sourceKey(resolve(dirname(source), pathPart))
-  const gddRoute = routeBySource.get(resolved)
+  if (pathPart.includes('system-design/')) return `https://github.com/islee23520/seoul-dengoku-gdd/blob/main/canon/collections/system-design.json${hash ? `#${hash}` : ''}`
+  const resolved = relative(gddPagesRoot, resolve(dirname(source), pathPart)).replaceAll('\\', '/')
+  if (resolved.startsWith('../LORE/') && resolved.endsWith('.md')) return `/world/${basename(resolved, '.md')}${hash ? `#${hash}` : ''}`
+  if (resolved.startsWith('../')) return `${githubRoot}${resolved.replace(/^\.\.\//, '')}${hash ? `#${hash}` : ''}`
+  const target = await sourceKey(resolve(gddPagesRoot, resolved))
+  const gddRoute = routeBySource.get(target)
   if (gddRoute) return `${gddRoute}${hash ? `#${hash}` : ''}`
-  if (resolved.startsWith('LORE/') && resolved.endsWith('.md')) return `/wiki/world/${basename(resolved, '.md')}${hash ? `#${hash}` : ''}`
-  return `${githubRoot}${resolved}${hash ? `#${hash}` : ''}`
+  return `https://github.com/islee23520/seoul-dengoku-gdd/blob/main/${target}${hash ? `#${hash}` : ''}`
 }
 
 for (const document of documents) {
@@ -54,20 +76,22 @@ for (const document of documents) {
   const normalized = document.markdown
     .replace(/^---\n[\s\S]*?\n---\n/u, '')
     .replace(/^#\s+.+\n+/u, '')
-    .replace(/\]\(([^)]+)\)/g, (_full, href) => `](${normalizeHref(href, document.source)})`)
-  await writeFile(resolve(targetDir, `${document.slug}.md`), normalized)
+  const links = [...normalized.matchAll(/\]\(([^)]+)\)/g)]
+  const hrefs = await Promise.all(links.map((match) => normalizeHref(match[1], document.source)))
+  let index = 0
+  await writeFile(resolve(targetDir, `${document.slug}.md`), normalized.replace(/\]\(([^)]+)\)/g, () => `](${hrefs[index++]})`))
 }
 
-const valuesCast = JSON.parse(await readFile(resolve(repoRoot, 'LORE/name-pools/values-cast.json'), 'utf8'))
-const genders = JSON.parse(await readFile(resolve(repoRoot, 'LORE/name-pools/gender-cast.json'), 'utf8'))
-const valuesOrgs = JSON.parse(await readFile(resolve(repoRoot, 'LORE/name-pools/values-orgs.json'), 'utf8'))
+const valuesCast = JSON.parse(await readFile(resolve(repoRoot, 'WEB/lore/name-pools/values-cast.json'), 'utf8'))
+const genders = JSON.parse(await readFile(resolve(repoRoot, 'WEB/lore/name-pools/gender-cast.json'), 'utf8'))
+const valuesOrgs = JSON.parse(await readFile(resolve(repoRoot, 'WEB/lore/name-pools/values-orgs.json'), 'utf8'))
 const graph = JSON.parse(await readFile(resolve(repoRoot, 'GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json'), 'utf8'))
-const control = JSON.parse(await readFile(resolve(repoRoot, 'LORE/places/station-control-overrides.json'), 'utf8'))
-const interiors = JSON.parse(await readFile(resolve(repoRoot, 'LORE/regions/station-interiors.json'), 'utf8'))
+const control = JSON.parse(await readFile(resolve(repoRoot, 'WEB/lore/places/station-control-overrides.json'), 'utf8'))
+const interiors = JSON.parse(await readFile(resolve(repoRoot, 'WEB/lore/regions/station-interiors.json'), 'utf8'))
 let regions = 0
-for (const name of await readdir(resolve(repoRoot, 'LORE/regions/content'))) {
+for (const name of await readdir(resolve(repoRoot, 'WEB/lore/regions/content'))) {
   if (!name.endsWith('.json')) continue
-  regions += JSON.parse(await readFile(resolve(repoRoot, 'LORE/regions/content', name), 'utf8')).regions.length
+  regions += JSON.parse(await readFile(resolve(repoRoot, 'WEB/lore/regions/content', name), 'utf8')).regions.length
 }
 const dataCatalog = [
   { id: 'cast-values', title: '인물 가치관·욕망', format: 'JSON', ownerPath: 'LORE/name-pools/values-cast.json', schema: valuesCast.schema, records: valuesCast.people.length, status: '사용 중', validation: 'verify-cast' },
@@ -82,5 +106,5 @@ const dataCatalog = [
 const catalogSource = `export const gddCategories = ${JSON.stringify(categories.map(({ id, label }) => ({ id, label })), null, 2)} as const\n\nexport const gddCatalog = ${JSON.stringify(documents.map(({ category, categoryLabel, slug, route, title, sourcePath }) => ({ category, categoryLabel, slug, route, title, sourcePath })), null, 2)} as const\n`
 await writeFile(resolve(generatedRoot, 'gddCatalog.ts'), catalogSource)
 await writeFile(resolve(generatedRoot, 'dataCatalog.ts'), `export const dataCatalog = ${JSON.stringify(dataCatalog, null, 2)} as const\n`)
-await writeFile(resolve(projectRoot, 'gdd-contract.json'), `${JSON.stringify({ documents: documents.map(({ category, route, title, sourcePath }) => ({ category, route, title, sourcePath })), datasets: dataCatalog }, null, 2)}\n`)
+await writeFile(resolve(generatedRoot, 'gdd-contract.json'), `${JSON.stringify({ documents: documents.map(({ category, route, title, sourcePath }) => ({ category, route, title, sourcePath })), datasets: dataCatalog }, null, 2)}\n`)
 console.log(`GDD_CATALOG_GENERATED documents=${documents.length} datasets=${dataCatalog.length}`)
