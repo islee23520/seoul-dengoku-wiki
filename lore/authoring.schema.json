@@ -17,9 +17,6 @@
         },
         "data": {
           "type": "object",
-          "required": [
-            "registry"
-          ],
           "properties": {
             "registry": {
               "type": "array",
@@ -73,6 +70,7 @@
           "additionalProperties": false
         }
       }
-    }
+    },
+    {"if": {"properties": {"id": {"pattern": "^(?:DOC:|__EXAMPLE__)"}}}, "else": {"properties": {"data": {"required": ["registry"]}}}}
   ]
 }
