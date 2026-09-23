@@ -1,0 +1,990 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "architecture/Unity-Architecture-Implementation-Plan.md",
+    "lineStart": 1,
+    "lineEnd": 168,
+    "sha256": "ee8ba009ceb893e45b75e884ba9aeddf8621739f48cc6a070d22ee2b4147cb13"
+  },
+  "document": {
+    "id": "doc.Unity-Architecture-Implementation-Plan",
+    "blockIds": [
+      "source.b1",
+      "source.b2",
+      "source.b3",
+      "source.b4",
+      "source.b5",
+      "source.b6",
+      "source.b7",
+      "source.b8",
+      "source.b9",
+      "source.b10",
+      "source.b11",
+      "source.b12",
+      "source.b13",
+      "source.b14",
+      "source.b15",
+      "source.b16",
+      "source.b17",
+      "source.b18",
+      "source.b19",
+      "source.b20",
+      "source.b21",
+      "source.b22",
+      "source.b23",
+      "source.b24",
+      "source.b25",
+      "source.b26",
+      "source.b27",
+      "source.b28",
+      "source.b29",
+      "source.b30",
+      "source.b31",
+      "source.b32",
+      "source.b33",
+      "source.b34",
+      "source.b35",
+      "source.b36",
+      "source.b37",
+      "source.b38",
+      "source.b39",
+      "source.b40",
+      "source.b41",
+      "source.b42",
+      "source.b43",
+      "source.b44",
+      "source.b45",
+      "source.b46",
+      "source.b47",
+      "source.b48",
+      "source.b49",
+      "source.b50",
+      "source.b51",
+      "source.b52",
+      "source.b53",
+      "source.b54"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "source.b1",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "Unity 아키텍처 구현 계획"
+        }
+      ]
+    },
+    {
+      "id": "source.b2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "이 계획은 [Unity 시스템 설계 계약](Unity-System-Design.md)을 코드로 옮기는 순서와 각 단계의 중단 조건을 정의합니다. 설계 계약과 계획이 Wiki에 먼저 합쳐지기 전에는 제품 코드를 변경하지 않습니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b3",
+      "kind": "blockQuote",
+      "lines": [
+        [
+          {
+            "kind": "text",
+            "text": "현재 부대 지휘 전투 개정은 문서 전용이며 이 계획에 새 런타임 작업을 추가하지 않습니다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b4",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "계약 요약"
+        }
+      ]
+    },
+    {
+      "id": "source.b5",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "현재 증분은 `Foundation` 모듈 하나에 한정합니다. `Bootstrap.unity`가 App VContainer scope와 **FSM**을 소유하고, `Foundation.unity`는 명시적 child scope를 가진 화면이 됩니다. static **Singleton**과 service locator를 금지하며, 미래 **Repository**는 Unity-free inward contract로 둡니다. **저장과 결정성**, **실패와 취소**, 테스트 및 **품질 게이트**의 상세 규칙은 시스템 설계 계약을 따릅니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b6",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "구현 순서"
+        }
+      ]
+    },
+    {
+      "id": "source.b7",
+      "kind": "table",
+      "header": [
+        "순서",
+        "작업",
+        "선행 조건",
+        "완료 증거"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "1",
+          "Wiki 계약 고정",
+          "조사·설계 검증 PASS",
+          "Wiki 테스트 RED→GREEN 로그"
+        ],
+        [
+          "2",
+          "루트 작업 계약 고정",
+          "Wiki GREEN",
+          "`Concept.md`, `ToDo.md`, GitHub remote"
+        ],
+        [
+          "3",
+          "FSM 테스트 작성",
+          "제품 코드 변경 전",
+          "올바른 missing type/behavior RED"
+        ],
+        [
+          "4",
+          "VContainer와 최소 FSM 구현",
+          "FSM RED",
+          "EditMode GREEN"
+        ],
+        [
+          "5",
+          "Bootstrap/Foundation 조립",
+          "FSM GREEN",
+          "compile, scope/build-order tests"
+        ],
+        [
+          "6",
+          "정적 품질 게이트 구현",
+          "구조 파일 존재",
+          "mutation RED→cleanup→GREEN"
+        ],
+        [
+          "7",
+          "실제 PlayMode QA",
+          "compile/tests GREEN",
+          "screenshot과 허용·거부 전환 기록"
+        ],
+        [
+          "8",
+          "전체 검증",
+          "모든 증분 완료",
+          "Wiki, gate, Unity tests, 네 리뷰 PASS"
+        ]
+      ]
+    },
+    {
+      "id": "source.b8",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "단계 1 — Wiki 계약"
+        }
+      ]
+    },
+    {
+      "id": "source.b9",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RED"
+        }
+      ]
+    },
+    {
+      "id": "source.b10",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "`node tools/wiki/test-build-wiki.mjs`"
+        }
+      ]
+    },
+    {
+      "id": "source.b11",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "`Unity-System-Design.md`와 이 계획이 없거나 sidebar 연결과 필수 계약(FSM, VContainer, Singleton, Repository, 저장과 결정성, 실패와 취소, 품질 게이트)이 빠지면 실패해야 합니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b12",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "GREEN"
+        }
+      ]
+    },
+    {
+      "id": "source.b13",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "두 문서를 만들고 `_Sidebar.md`와 `Home.md`에서 연결합니다. 빌드된 Wiki에서 링크와 필수 계약을 다시 읽습니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b14",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "단계 2 — 작업 범위 게이트"
+        }
+      ]
+    },
+    {
+      "id": "source.b15",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "제품 코드 변경 전에 루트 `Concept.md`와 `ToDo.md`를 만듭니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b16",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "Concept는 게임과 Unity 6000.7.0a5, VContainer 1.19.0, URP/Input System/Test Framework 기준을 설명합니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "ToDo의 current module은 Foundation architecture 하나뿐입니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "UI 화면 설계 변경이 아니므로 이 증분에서 새 `Design.md`는 만들지 않습니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`git remote -v`에 GitHub remote가 있어야 합니다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b17",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "단계 3 — FSM RED"
+        }
+      ]
+    },
+    {
+      "id": "source.b18",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "EditMode 테스트를 제품 코드보다 먼저 작성합니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b19",
+      "kind": "table",
+      "header": [
+        "사례",
+        "입력",
+        "PASS 조건"
+      ],
+      "dividers": [
+        "---",
+        "---",
+        "---"
+      ],
+      "rows": [
+        [
+          "happy",
+          "`Booting + OpenFoundation`",
+          "`Transitioning`, load 1회"
+        ],
+        [
+          "readiness",
+          "load 완료, ready 미완료",
+          "`Foundation` commit 없음"
+        ],
+        [
+          "success",
+          "`SceneLoadSucceeded`",
+          "`Foundation`, receipt 존재"
+        ],
+        [
+          "illegal",
+          "허용되지 않은 상태/trigger",
+          "typed rejection, 호출 0회"
+        ],
+        [
+          "duplicate",
+          "전환 중 두 번째 요청",
+          "Busy, 추가 load 0회"
+        ],
+        [
+          "failure",
+          "load 또는 scope 실패",
+          "staging dispose, Faulted"
+        ],
+        [
+          "retry",
+          "`Faulted + Retry`",
+          "새 transition ID, 성공 가능"
+        ]
+      ]
+    },
+    {
+      "id": "source.b20",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "RED는 missing type, missing member 또는 기대 동작 불일치여야 합니다. syntax error나 fixture 오류는 증거가 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b21",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "단계 4 — 최소 GREEN"
+        }
+      ]
+    },
+    {
+      "id": "source.b22",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "FSM"
+        }
+      ]
+    },
+    {
+      "id": "source.b23",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "`ApplicationFlowState`"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`ApplicationFlowTrigger`"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "typed `TransitionOutcome`"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "pure transition table"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "single-flight coordinator"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "generation과 transition ID"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b24",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "첫 GREEN은 실제 scene API 없이 fake scene loader로 얻습니다. 상태 commit은 ready signal 이후에만 합니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b25",
+      "kind": "heading",
+      "level": 3,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "VContainer"
+        }
+      ]
+    },
+    {
+      "id": "source.b26",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "Makcha에서 실제 확인한 `jp.hadashikick.vcontainer` `#1.19.0`만 추가합니다. Addressables, Entities, LitMotion 등 호출자가 없는 패키지는 추가하지 않습니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b27",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "`AppLifetimeScope`: FSM, scene catalog, scene loader 등록"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`FoundationLifetimeScope`: 화면 객체만 등록"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "parent enqueue를 사용한 명시적 child 구성"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "scope dispose와 cancellation의 소유권 테스트"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b28",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "단계 5 — 씬 조립"
+        }
+      ]
+    },
+    {
+      "id": "source.b29",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "Editor builder가 다음 결과를 반복 가능하게 만듭니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b30",
+      "kind": "list",
+      "ordered": true,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "`Bootstrap.unity`: App scope와 bootstrap root만 포함"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "Build Settings: Bootstrap 0, Foundation 1"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b31",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "Bootstrap 외 `DontDestroyOnLoad`를 금지합니다. 화면과 gameplay object는 Foundation unload와 함께 제거됩니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b32",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "단계 6 — Repository·Singleton 경계 품질 게이트"
+        }
+      ]
+    },
+    {
+      "id": "source.b33",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "현재 증분에는 campaign Repository 구현을 만들지 않습니다. 대신 검사 가능한 경계를 고정합니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b34",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "Repository/Core 대상 경로에서 UnityEngine과 VContainer import 금지"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "runtime mutable static `Instance`, `Current`, collection 금지"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "service locator와 runtime object search 금지"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "scene load API는 adapter allowlist만 허용"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`DontDestroyOnLoad`는 Bootstrap allowlist만 허용"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b35",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "mutation proof:"
+        }
+      ]
+    },
+    {
+      "id": "source.b36",
+      "kind": "list",
+      "ordered": true,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "임시 runtime 파일에 금지된 `DontDestroyOnLoad` 또는 `Current`를 추가합니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`node tools/architecture/check-unity-architecture.mjs`가 규칙 이름과 파일을 출력하며 nonzero로 끝나야 합니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "임시 파일을 제거합니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "같은 명령이 exit 0이어야 합니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "temp 파일과 프로세스가 남지 않았음을 cleanup receipt에 기록합니다."
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b37",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "단계 7 — 저장과 결정성·실패와 취소 계약 보존"
+        }
+      ]
+    },
+    {
+      "id": "source.b38",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "Foundation 구현은 아직 저장하지 않지만 향후 경계를 침범하지 않아야 합니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b39",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "scene timing, frame count와 wall clock을 FSM 결과에 사용하지 않음"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "모든 transition 요청에 안정 ID와 typed result 사용"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "cancellation을 failure와 구분"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "late callback은 generation 검사"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "child scope dispose가 token을 먼저 취소"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "fire-and-forget과 fixed sleep/polling 금지"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b40",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "미래 Repository와 save adapter는 temp→검증→backup→원자 교체와 목적별 RNG stream 규칙을 따라야 합니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b41",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "단계 8 — Unity 검증"
+        }
+      ]
+    },
+    {
+      "id": "source.b42",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "파일 변경 후 실제 Unity Editor에서 다음을 실행합니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b43",
+      "kind": "codeFence",
+      "fence": "```",
+      "info": "text",
+      "text": "unity run Game --editor-version 6000.7.0a5 -- -nographics -executeMethod Janseon.Foundation.Editor.FoundationProjectBuilder.BuildFoundationScene -logFile -\nunity test Game --editor-version 6000.7.0a5 --mode EditMode --report-format junit --output .omo/evidence/unity/editmode.xml --timeout 600\nunity test Game --editor-version 6000.7.0a5 --mode PlayMode --report-format junit --output .omo/evidence/unity/playmode.xml --timeout 600\n"
+    },
+    {
+      "id": "source.b44",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "Play Mode에서 Bootstrap이 Foundation을 열고 App/child scope가 각각 하나인지 확인합니다. public flow API로 이미 Foundation인 상태의 요청이나 불법 trigger를 보내 typed rejection과 추가 load 0회를 관찰합니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b45",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "시각 검증"
+        }
+      ]
+    },
+    {
+      "id": "source.b46",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "실제 Unity Play Mode를 `-batchmode`로 실행하고 고정 카메라의 RenderTexture 또는 ScreenCapture 결과를 PNG와 JSON receipt로 기록합니다. 다음 네 축을 독립 검토하며 하나라도 명시적 PASS가 아니면 완료가 아닙니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b47",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "COMPOSITION"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "SPRITE_FIDELITY"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "TYPOGRAPHY"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "PRODUCT_POLISH"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b48",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "batchmode PlayMode 캡처나 receipt가 없으면 정적 검증으로 대체하지 않고 미검증으로 기록합니다. 대화형 Editor와 uLoop는 사용하지 않습니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b49",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "최종 품질 게이트"
+        }
+      ]
+    },
+    {
+      "id": "source.b50",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "다음을 한 번씩 clean 상태에서 실행합니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b51",
+      "kind": "list",
+      "ordered": true,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "`node tools/wiki/test-build-wiki.mjs`"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "`node tools/architecture/check-unity-architecture.mjs`"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "Unity compile"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "EditMode tests"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "PlayMode tests"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "실제 Play Mode 허용·거부 시나리오"
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "네 시각 리뷰"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "source.b52",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "모든 임시 mutation, Unity process, capture context와 temp file을 정리한 뒤에만 완료합니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b53",
+      "kind": "heading",
+      "level": 2,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "완료 조건"
+        }
+      ]
+    },
+    {
+      "id": "source.b54",
+      "kind": "list",
+      "ordered": false,
+      "items": [
+        [
+          {
+            "kind": "text",
+            "text": "FSM이 유일한 scene transition 권한입니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "VContainer App/child scope 관계와 dispose가 검증됩니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "static Singleton/service locator가 품질 게이트에서 실패합니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "Repository 경계는 Unity-free 계약으로 보호됩니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "저장과 결정성, 실패와 취소 규칙을 깨는 코드가 없습니다."
+          }
+        ],
+        [
+          {
+            "kind": "text",
+            "text": "Wiki, architecture gate, compile, EditMode, PlayMode와 실제 화면 검증이 모두 PASS합니다."
+          }
+        ]
+      ]
+    }
+  ]
+}

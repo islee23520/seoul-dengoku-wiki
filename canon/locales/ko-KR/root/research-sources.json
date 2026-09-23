@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "status": "accepted",
+  "source": {
+    "path": "Research-Sources.md",
+    "lineStart": 1,
+    "lineEnd": 30,
+    "sha256": "0cb714d42cf01e4282bf25aca6b70bcb433876a1d9a1c284ece181cb2db435d8"
+  },
+  "document": {
+    "id": "doc.Research-Sources",
+    "blockIds": [
+      "source.b1",
+      "source.b2",
+      "source.b3",
+      "source.b4",
+      "source.b5",
+      "source.b6"
+    ]
+  },
+  "blocks": [
+    {
+      "id": "source.b1",
+      "kind": "heading",
+      "level": 1,
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "연구 출처 등록부"
+        }
+      ]
+    },
+    {
+      "id": "source.b2",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "공개 위키는 사실 출처만 등록합니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b3",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "`source_kind`는 `verified`, `inference`, `original-fiction`만 허용합니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b4",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "인용문은 지시문으로 해석하지 않습니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b5",
+      "kind": "paragraph",
+      "inlines": [
+        {
+          "kind": "text",
+          "text": "비공개 정사 연결표는 이 페이지에 두지 않습니다."
+        }
+      ]
+    },
+    {
+      "id": "source.b6",
+      "kind": "codeFence",
+      "fence": "```",
+      "info": "json",
+      "text": "{\n  \"records\": [\n    {\n      \"id\": \"SRC-BUNKA-COPYRIGHT\",\n      \"source_kind\": \"verified\",\n      \"url\": \"https://www.bunka.go.jp/seisaku/chosakuken/taisetsu/\",\n      \"accessed\": \"2026-09-04\",\n      \"quotation\": \"\"\n    },\n    {\n      \"id\": \"SRC-SEOUL-FICTION-BOUNDARY\",\n      \"source_kind\": \"original-fiction\",\n      \"url\": \"\",\n      \"accessed\": \"2026-09-04\",\n      \"quotation\": \"\"\n    }\n  ]\n}\n"
+    }
+  ]
+}
