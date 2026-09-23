@@ -1,0 +1,1144 @@
+{
+  "version": 1,
+  "domain": "offices",
+  "id": "DOC:Offices-and-Ranks",
+  "slug": "offices-and-ranks",
+  "status": "draft",
+  "tense": {
+    "en": "past",
+    "ko": "past"
+  },
+  "provenance": {
+    "original_anchor": "lore/offices/Offices-and-Ranks.md",
+    "original_hash": "e03778b8c84dfd69c9972f16b79fd98695b6e869203c328088e6e450c62d86de",
+    "history": [
+      "Korean source lore/offices/Offices-and-Ranks.md blob 6292653689796aabf47f30b541b911837f00ae82 at origin/main f0881f6970f11b06c08adaff0fec016f6a7c9ec4, SHA-256 e03778b8c84dfd69c9972f16b79fd98695b6e869203c328088e6e450c62d86de.",
+      "English source lore/offices/Offices-and-Ranks.en.md blob 8926c05cacb4d1446f704723fa98701fcb081167 at origin/backup/w1-publisher-en-20260923 7a9eee8401a69a788a0b0f7a4088c4435993fbb1, SHA-256 f86d8f31626bff85128ff78a7d862a45c4328dafa61e0961043d0ee02216f253. Verbatim; no translation written.",
+      "Markdown sources retained. English front matter (tense, source_hash) is not a content block."
+    ]
+  },
+  "source": {
+    "kind": "original-fiction",
+    "refs": [
+      "lore/offices/Offices-and-Ranks.md",
+      "lore/offices/Offices-and-Ranks.en.md"
+    ]
+  },
+  "locales": {
+    "en": {
+      "title": "Offices and Ranks",
+      "summary": "The titles of Seoul in 2126 were not game terms.",
+      "tense": "past"
+    },
+    "ko": {
+      "title": "관직",
+      "summary": "2126년 서울의 직함은 게임 용어가 아니다.",
+      "tense": "past"
+    }
+  },
+  "content": [
+    {
+      "kind": "heading",
+      "anchor": "offices-and-ranks",
+      "text": {
+        "en": "Offices and Ranks",
+        "ko": "관직"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "offices-and-ranks-p1",
+      "text": {
+        "en": "The titles of Seoul in 2126 were not game terms. They were seats people in Korea understood in 2026, or seats Joseon had used before that. For a hand to open water and stamp the registers after the call mesh died, it had to hold rank.",
+        "ko": "2126년 서울의 직함은 게임 용어가 아니다. 2026년 한국 사람이 알아듣던 자리이거나, 그 이전에 조선이 쓰던 자리이다. 호출망이 죽은 뒤에도 사람이 물을 열고 명부에 찍으려면, 그 손에 품계가 있어야 했다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "offices-and-ranks-p2",
+      "text": {
+        "en": "The king, duke, count, baron, and court figures of Crusader Kings remained as the five layers of land. The opening took those layers and changed only the forms of address to each nation's real 2026 institutional ranks. The tiers were identical across the sixteen states; only the names differed. No word that had called a baron a baron remained in the ledgers, and the hand charged with a single station was called by one of that nation's actual titles — watch chief, company commander, steward, or section head.",
+        "ko": "크루세이더 킹즈의 왕·공작·백작·남작·궁정 인물은 땅의 다섯 층으로 남는다. 개막은 그 층을 가져오되 호칭만 나라마다 2026년 실존 기관의 직제로 바꾼다. 티어는 열여섯 나라가 같다. 명칭만 상이하다. 남작을 남작이라 부르던 말은 장부에 없고, 역 하나를 맡은 손은 그 나라가 실제로 쓰던 당직장·중대장·집사·주임 가운데 하나로 불린다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "offices-and-ranks-p3",
+      "text": {
+        "en": "There was no emperor tier. Seoul had no son of heaven. The heads of the sixteen states did not call one another king. What they called each other was the tier-1 title of that nation; only the layer the ledgers assigned was of king rank.",
+        "ko": "황제 층은 없다. 서울에 천자는 없다. 십육국 수장은 서로를 왕이라 부르지 않는다. 부르는 말은 그 나라 티어 1의 직함이고, 장부가 매기는 층만 왕급이다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "offices-and-ranks-h2",
+      "text": {
+        "en": "The Five Layers",
+        "ko": "다섯 층"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "offices-and-ranks-h2-p4",
+      "text": {
+        "en": "The baron, count, duke, king, and court figures of Crusader Kings were layers of land. The opening fixed those layers as tiers 1 through 5 and wrote the names apart only by form of government and institutional rank. The feudal operating houses read from stationmaster down to jusa clerk; the military governments from commander down to byeongjang; the theocracies from Moderator, archbishop, supreme patriarch, and Kyujeongwon head down to gyosa, gyowoo, sindo, and gyodo; the commercial states from chairman, guild head, representative, or chairwoman down to jikwon, johapwon, hosongwon, and hoewon.",
+        "ko": "크루세이더 킹즈의 남작·백작·공작·왕과 궁정 인물은 땅의 층이다. 개막은 그 층을 티어 1부터 5로 고정하고, 이름만 정부 형태와 기관 직제에 따라 갈라 적는다. 봉건 운영가문은 역장에서 주사로 내려가고, 군정은 사령관에서 병장으로, 신정은 당회장·대주교·종정·교정원장에서 교사·교우·신도·교도로, 상업은 회장·위원장·대표·이사장에서 직원·조합원·호송원·회원으로 읽힌다."
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "offices-and-ranks-h2-table",
+      "columns": [
+        {
+          "en": "Tier",
+          "ko": "티어"
+        },
+        {
+          "en": "CK mapping",
+          "ko": "CK 대응"
+        },
+        {
+          "en": "Old Joseon office",
+          "ko": "옛 조선 관직"
+        },
+        {
+          "en": "Unit ruled",
+          "ko": "다스리는 단위"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "1",
+            "ko": "1"
+          },
+          {
+            "en": "King",
+            "ko": "왕"
+          },
+          {
+            "en": "Suryeong",
+            "ko": "수령"
+          },
+          {
+            "en": "One of the sixteen states",
+            "ko": "십육국 한 나라"
+          }
+        ],
+        [
+          {
+            "en": "2",
+            "ko": "2"
+          },
+          {
+            "en": "Duke",
+            "ko": "공작"
+          },
+          {
+            "en": "Panseo",
+            "ko": "판서"
+          },
+          {
+            "en": "The great matters within a state — water, escort, registers, repair",
+            "ko": "나라 안의 큰 일 — 물·호위·명부·수리"
+          }
+        ],
+        [
+          {
+            "en": "3",
+            "ko": "3"
+          },
+          {
+            "en": "Count",
+            "ko": "백작"
+          },
+          {
+            "en": "Gunsu",
+            "ko": "군수"
+          },
+          {
+            "en": "One gu, the living sphere of a great station",
+            "ko": "한 구, 큰 역 생활권"
+          }
+        ],
+        [
+          {
+            "en": "4",
+            "ko": "4"
+          },
+          {
+            "en": "Baron",
+            "ko": "남작"
+          },
+          {
+            "en": "Hyeongam",
+            "ko": "현감"
+          },
+          {
+            "en": "One station, one sluice, one market",
+            "ko": "역 하나, 수문 하나, 시장 하나"
+          }
+        ],
+        [
+          {
+            "en": "5",
+            "ko": "5"
+          },
+          {
+            "en": "Court figures",
+            "ko": "궁정 인물"
+          },
+          {
+            "en": "Chamha",
+            "ko": "참하"
+          },
+          {
+            "en": "No land. Signature and watch only",
+            "ko": "땅이 없다. 서명과 당직만 있다"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "offices-and-ranks-h2-p5",
+      "text": {
+        "en": "The cells the old ledgers had stamped as Suryeong, Panseo, Gunsu, Hyeongam, and Chamha kept only their tier numbers, with the title strings substituted from the national table. The basis of the rank distribution was the five layers of the current 984 cards — the Suryeong cell as tier 1, Panseo as tier 2, Gunsu as tier 3, Hyeongam as tier 4, Chamha as tier 5. No land was divided anew; only the names were fitted to institutional ranks.",
+        "ko": "옛 장부가 수령·판서·군수·현감·참하로 찍던 칸은 티어 번호만 남기고 직함 문자열을 나라 표로 치환한다. 품계 분포의 근거는 현 984 카드의 다섯 층이며, 수령 칸은 티어 1, 판서 칸은 티어 2, 군수 칸은 티어 3, 현감 칸은 티어 4, 참하 칸은 티어 5다. 땅을 새로 나누지 않고 이름만 기관 직제에 맞춘다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "offices-and-ranks-h22",
+      "text": {
+        "en": "Offices by State",
+        "ko": "국가별 관직"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "offices-and-ranks-h22-p6",
+      "text": {
+        "en": "Real ranks were laid over the tiers. Feudal heredity, emergency superintendence, and laying-on-of-hands remained in the prose, while the titles themselves kept the words those institutions had used in 2026.",
+        "ko": "실존 직제를 티어에 얹는다. 봉건 세습과 비상감독과 안수는 서술로 남기고, 직함 자체는 2026년 그 기관이 쓰던 말을 지킨다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "offices-and-ranks-h22-h3",
+      "text": {
+        "en": "Republic of Korea Government",
+        "ko": "대한민국정부"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "offices-and-ranks-h22-h3-p7",
+      "text": {
+        "en": "President—Minister—Vice Minister—Director General—jusa clerk. The ranks the Government Complex Seoul main building had used. Tier 1 was called president, though elections were dead. The hands that had kept the Gwanghwamun Station seal chest and the conscription registers unbroken inherited that seat, while the Ministers, Vice Ministers, and Directors General divided the complex's great matters and the gu and stations among themselves. The jusa clerk held no land.",
+        "ko": "대통령—장관—차관—국장—주사. 정부서울청사 본관이 쓰던 직급이다. 티어 1을 대통령이라 부르되 선거는 죽었다. 광화문역 도장함과 징집 명부를 끊기지 않게 지킨 손이 그 자리를 세습하고, 장관과 차관과 국장은 청사 안의 큰 일과 구와 역을 나눠 맡는다. 주사는 땅이 없다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "offices-and-ranks-h22-h32",
+      "text": {
+        "en": "Water Compact · Line Succession State",
+        "ko": "급수계약정 · 선로후계정"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "offices-and-ranks-h22-h32-p8",
+      "text": {
+        "en": "Stationmaster—Bureau Head—District Head—Watch Chief—jusa clerk. The watch grammar of the Yeongdeungpo Arisu Water Treatment Center under Seoul Arisu Headquarters and the Yongsan rail transshipment. The stationmaster's seat remained hereditary. The Yeongdeungpo Station sluice house and the Yongsan Station track house passed their keys to their grandsons, the Bureau Head approved the great matters of treatment and dispatch, the District Head fed the gu, and the Watch Chief opened one sluice, one storage track.",
+        "ko": "역장—본부장—구역장—당직장—주사. 서울아리수본부 영등포아리수정수센터와 용산 철도 환적의 당직 문법이다. 역장 자리는 세습으로 남는다. 영등포역 수문가와 용산역 선로가가 열쇠를 손자에게 넘기며, 본부장이 정수·배차의 큰 일을 결재하고, 구역장이 구를 먹이며, 당직장이 수문 하나·유치선 하나를 연다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "offices-and-ranks-h22-h33",
+      "text": {
+        "en": "Escort Protection State · Gate Military Government",
+        "ko": "호위보호정 · 관문군정"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "offices-and-ranks-h22-h33-p9",
+      "text": {
+        "en": "Commander—Chief of Staff—Battalion Commander—Company Commander—byeongjang sergeant. The military ranks where the conscription remnants and the treatment watch were bound together. The Amsa Station commander read waterworks protection as emergency superintendence, and the Guui Station commander had still not gathered sluices and the Achasan outposts into one hand. The Chief of Staff bore the great matters within the state, the Battalion Commander the gu, the Company Commander one bridge or ridge, and the byeongjang the watch that carried a signature alone.",
+        "ko": "사령관—참모장—대대장—중대장—병장. 징집 잔존과 정수 당직이 묶인 군정 직제다. 암사역 사령관은 상수 보호를 비상감독으로 읽고, 구의역 사령관은 수문과 아차산 초소를 아직 한 손으로 쥐지 못한다. 참모장이 나라 안의 큰 일을 받치고, 대대장이 구를, 중대장이 교량·능선 하나를, 병장이 서명만 있는 당직을 맡는다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "offices-and-ranks-h22-h34",
+      "text": {
+        "en": "Sermon Registry State",
+        "ko": "설교명부정"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "offices-and-ranks-h22-h34-p10",
+      "text": {
+        "en": "Moderator—Elder—Gwonsa—Deacon—gyosa teacher. The session ranks left by the Yeonji-dong General Assembly Hall; the opening capital was Samsung Station. The Moderator read the General Assembly registers through hereditary laying-on-of-hands, the Elder held the great relief within the state, the Gwonsa the living sphere, the Deacon one church, and the gyosa the landless signature.",
+        "ko": "당회장—장로—권사—집사—교사. 연지동 총회회관이 남긴 당회 직제이며, 개막 수도는 삼성역이다. 당회장은 총회 명부를 세습 안수로 읽고, 장로가 나라 안의 큰 구휼을, 권사가 생활권을, 집사가 예배당 하나를, 교사가 땅이 없는 서명을 맡는다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "offices-and-ranks-h22-h35",
+      "text": {
+        "en": "Cathedral Accreditation State",
+        "ko": "본당인준정"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "offices-and-ranks-h22-h35-p11",
+      "text": {
+        "en": "Archbishop—Priest—Brother—Deacon—gyowu fellow. The ranks of the Myeongdong Cathedral curia. The Archbishop kept the altar of marriage, adoption, and memorial accreditation; the Priest held the diocese's great matters, the Brother the district, the Deacon one altar, and the gyowu the landless signature. The Bishops' Conference building on Myeonmok-ro, Gwangjin, remained only an outer warehouse.",
+        "ko": "대주교—신부—수사—부제—교우. 명동성당 교구청의 직제다. 대주교가 혼인·양자·위령 인준의 제대를 지키고, 신부가 교구의 큰 일을, 수사가 구역을, 부제가 제대 하나를, 교우가 땅이 없는 서명을 맡는다. 주교회의 청사 광진 면목로는 바깥 창고로만 남긴다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "offices-and-ranks-h22-h36",
+      "text": {
+        "en": "Sangha Relief State",
+        "ko": "승가구휼정"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "offices-and-ranks-h22-h36-p12",
+      "text": {
+        "en": "Supreme Patriarch—Head of the General Directorate—Abbot—Monk—sindo lay believer. The order's ranks of Jogyesa and the General Directorate at 55 Ujeongguk-ro. The Supreme Patriarch read the tablets and temple rolls with the capital's hand, the Head of the General Directorate held the order's great matters, the Abbot the temple's living sphere, the Monk one chapel, and the sindo the landless signature. Anguk Station was that capital.",
+        "ko": "종정—총무원장—주지—스님—신도. 조계사·총무원 우정국로 55의 종단 직제다. 종정이 위패와 사원 대장을 수도의 손으로 읽고, 총무원장이 종단의 큰 일을, 주지가 사원 생활권을, 스님이 당집 하나를, 신도가 땅이 없는 서명을 맡는다. 안국역이 그 수도다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "offices-and-ranks-h22-h37",
+      "text": {
+        "en": "Won Buddhism",
+        "ko": "원불교"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "offices-and-ranks-h22-h37-p13",
+      "text": {
+        "en": "Kyujeongwon Head—Senior Dharma Teacher—Dharma Teacher—Dharma Student—gyodo adherent. The charter ranks of the Heukseok-dong Seoul chapel and the Sotaesan Memorial Hall. The Iksan headquarters lay outside the city and entered no slot; the Heukseok Station Kyujeongwon head kept the transcribed charter. The Senior Dharma Teacher held the great matters, the Dharma Teacher the district, the Dharma Student one chapel, and the gyodo the landless signature.",
+        "ko": "교정원장—수석교무—교무—교생—교도. 흑석동 서울교당·소태산기념관의 교헌 직제다. 익산 총부는 시외라 슬롯에 들어오지 못하고, 흑석역 교정원장이 필사된 교헌을 지킨다. 수석교무가 큰 일을, 교무가 구역을, 교생이 교당 하나를, 교도가 땅이 없는 서명을 맡는다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "offices-and-ranks-h22-h38",
+      "text": {
+        "en": "Yeouido Investment Union",
+        "ko": "여의도출자연합회"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "offices-and-ranks-h22-h38-p14",
+      "text": {
+        "en": "Chairman—Vice Chairman—Executive Managing Director—Department Head—jikwon staff. The corporate ranks of the former FKI Hall at 24 Yeouido-ro. The Chairman read the investment ledgers as the cooling key and closed Yeouido Station, the Vice Chairman held the affiliates' great matters, the Executive Managing Director the district, the Department Head one window, and the jikwon the landless signature. Lotte, SK, and LG were this corporation's retainers and opened no separate ranks.",
+        "ko": "회장—부회장—전무—부장—직원. 여의대로 24 전경련회관의 회 직제다. 회장은 출자 장부를 냉각 키로 읽고 여의도역을 닫으며, 부회장이 계열의 큰 일을, 전무가 구역을, 부장이 창구 하나를, 직원이 땅이 없는 서명을 맡는다. 롯데·SK·LG는 이 회 가신이라 별 직제를 열지 않는다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "offices-and-ranks-h22-h39",
+      "text": {
+        "en": "Seocho Computing Group · Yangjae Machineworks Company",
+        "ko": "서초전산그룹 · 양재기공주식회사"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "offices-and-ranks-h22-h39-p15",
+      "text": {
+        "en": "Chairman—President—Executive Managing Director—Department Head—daeri deputy. The stock-company ranks of Samsung Town at Seocho-daero 74-gil and the Yangjae head office at 12 Heolleung-ro. The Chairman was the tier 1 to which the I-family operating house and the maintenance houses leased the keys; the President held the great matters of cooling and car bodies, the Executive Managing Director the Gangnam and Yangjae living spheres, the Department Head one intersection or depot, and the daeri the landless signature. Gangnam Station and Yangjae Station were each capital.",
+        "ko": "회장—사장—전무—부장—대리. 삼성타운 서초대로74길과 헌릉로 12 양재 본사의 주식회사 직제다. 회장은 이씨 운영가문과 정비 가문이 키를 임대한 티어 1이고, 사장이 냉각·차체의 큰 일을, 전무가 강남·양재 생활권을, 부장이 사거리·정비고 하나를, 대리가 땅이 없는 서명을 맡는다. 강남역과 양재역이 각각의 수도다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "offices-and-ranks-h22-h310",
+      "text": {
+        "en": "Jeongdong General Labor Union",
+        "ko": "정동노동총연맹"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "offices-and-ranks-h22-h310-p16",
+      "text": {
+        "en": "Chairwoman—Vice Chairwoman—Bureau Head—Branch Head—johapwon unionist. The federation ranks of the Kyunghyang Shinmun site at 3 Jeongdong-gil. The Chairwoman read the City Hall Station strike rolls as passage right, the Vice Chairwoman held the great matters of the gatherings, the Bureau Head the district, the Branch Head one window, and the johapwon the landless signature. Party names were not used as state names.",
+        "ko": "위원장—부위원장—본부장—지부장—조합원. 정동길 3 경향신문사 자리의 총연맹 직제다. 위원장이 시청역 파업 명부를 통행권으로 읽고, 부위원장이 집결의 큰 일을, 본부장이 구역을, 지부장이 창구 하나를, 조합원이 땅이 없는 서명을 맡는다. 당명은 국호로 쓰지 않는다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "offices-and-ranks-h22-h311",
+      "text": {
+        "en": "Standards Alliance",
+        "ko": "규격동맹"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "offices-and-ranks-h22-h311-p17",
+      "text": {
+        "en": "Guild Head—Standing Director—Director—Auditor—johapwon unionist. The guild ranks of the Guro and Geumcheon complexes and the Cheonwang depot. The Guild Head kept the bolt rites as a state, the Standing Director held the great matters of the standards, the Director the complex's living sphere, the Auditor one barrier gate, and the johapwon the landless signature. Guro Station was the capital.",
+        "ko": "위원장—상임이사—이사—감사—조합원. 구로·금천 공단과 천왕차량기지의 조합 직제다. 위원장이 볼트 제사를 국가로 유지하고, 상임이사가 규격의 큰 일을, 이사가 공단 생활권을, 감사가 차단문 하나를, 조합원이 땅이 없는 서명을 맡는다. 구로역이 수도다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "offices-and-ranks-h22-h312",
+      "text": {
+        "en": "Neutral Convoy City",
+        "ko": "중립호송시"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "offices-and-ranks-h22-h312-p18",
+      "text": {
+        "en": "Representative—Corps Head—Squad Head—Scribe—hosongwon escort hand. The transport-contract ranks of the Sinnae depot. The Representative read the terminal transfers and the medical trains as neutral, the Corps Head held the great matters of dispatch, the Squad Head the transfer living sphere, the Scribe one platform, and the hosongwon the landless signature. Sinnae Station was the capital.",
+        "ko": "대표—단장—반장—서기—호송원. 신내차량기지의 운송 계약 직제다. 대표가 말단 환승과 의료열차를 중립으로 읽고, 단장이 배차의 큰 일을, 반장이 환승 생활권을, 서기가 승강장 하나를, 호송원이 땅이 없는 서명을 맡는다. 신내역이 수도다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "offices-and-ranks-h22-h313",
+      "text": {
+        "en": "Medical Neutrality League",
+        "ko": "의약중립맹"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "offices-and-ranks-h22-h313-p19",
+      "text": {
+        "en": "Chair of the Board—Director—Department Head—Section Head—hoewon member. The guild ranks of the Jegi-dong medicinal-herb market (Gyeongdong) and the eastern medical network. The Chair of the Board kept the treatment contract that did not distinguish friend from foe; the Director held the great matters of the Jegi-dong medicine market, the Department Head the district, the Section Head one sickbed, and the hoewon the landless signature. Jegi-dong Station was the capital.",
+        "ko": "이사장—이사—부장—주임—회원. 제기동 약재시장(경동)과 동부 의료망의 조합 직제다. 이사장이 적과 아군을 가리지 않는 치료 계약을 지키고, 이사가 제기동 약령의 큰 일을, 부장이 구역을, 주임이 침상 하나를, 회원이 땅이 없는 서명을 맡는다. 제기동역이 수도다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "offices-and-ranks-h23",
+      "text": {
+        "en": "The Table of Offices by State",
+        "ko": "국가별 관직표"
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "offices-and-ranks-h23-table",
+      "columns": [
+        {
+          "en": "State",
+          "ko": "국가"
+        },
+        {
+          "en": "Tier 1",
+          "ko": "티어1"
+        },
+        {
+          "en": "Tier 2",
+          "ko": "티어2"
+        },
+        {
+          "en": "Tier 3",
+          "ko": "티어3"
+        },
+        {
+          "en": "Tier 4",
+          "ko": "티어4"
+        },
+        {
+          "en": "Tier 5",
+          "ko": "티어5"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Republic of Korea Government",
+            "ko": "대한민국정부"
+          },
+          {
+            "en": "President",
+            "ko": "대통령"
+          },
+          {
+            "en": "Minister",
+            "ko": "장관"
+          },
+          {
+            "en": "Vice Minister",
+            "ko": "차관"
+          },
+          {
+            "en": "Director General",
+            "ko": "국장"
+          },
+          {
+            "en": "jusa clerk",
+            "ko": "주사"
+          }
+        ],
+        [
+          {
+            "en": "Water Compact",
+            "ko": "급수계약정"
+          },
+          {
+            "en": "Stationmaster",
+            "ko": "역장"
+          },
+          {
+            "en": "Bureau Head",
+            "ko": "본부장"
+          },
+          {
+            "en": "District Head",
+            "ko": "구역장"
+          },
+          {
+            "en": "Watch Chief",
+            "ko": "당직장"
+          },
+          {
+            "en": "jusa clerk",
+            "ko": "주사"
+          }
+        ],
+        [
+          {
+            "en": "Line Succession State",
+            "ko": "선로후계정"
+          },
+          {
+            "en": "Stationmaster",
+            "ko": "역장"
+          },
+          {
+            "en": "Bureau Head",
+            "ko": "본부장"
+          },
+          {
+            "en": "District Head",
+            "ko": "구역장"
+          },
+          {
+            "en": "Watch Chief",
+            "ko": "당직장"
+          },
+          {
+            "en": "jusa clerk",
+            "ko": "주사"
+          }
+        ],
+        [
+          {
+            "en": "Escort Protection State",
+            "ko": "호위보호정"
+          },
+          {
+            "en": "Commander",
+            "ko": "사령관"
+          },
+          {
+            "en": "Chief of Staff",
+            "ko": "참모장"
+          },
+          {
+            "en": "Battalion Commander",
+            "ko": "대대장"
+          },
+          {
+            "en": "Company Commander",
+            "ko": "중대장"
+          },
+          {
+            "en": "byeongjang sergeant",
+            "ko": "병장"
+          }
+        ],
+        [
+          {
+            "en": "Gate Military Government",
+            "ko": "관문군정"
+          },
+          {
+            "en": "Commander",
+            "ko": "사령관"
+          },
+          {
+            "en": "Chief of Staff",
+            "ko": "참모장"
+          },
+          {
+            "en": "Battalion Commander",
+            "ko": "대대장"
+          },
+          {
+            "en": "Company Commander",
+            "ko": "중대장"
+          },
+          {
+            "en": "byeongjang sergeant",
+            "ko": "병장"
+          }
+        ],
+        [
+          {
+            "en": "Sermon Registry State",
+            "ko": "설교명부정"
+          },
+          {
+            "en": "Moderator",
+            "ko": "당회장"
+          },
+          {
+            "en": "Elder",
+            "ko": "장로"
+          },
+          {
+            "en": "Gwonsa",
+            "ko": "권사"
+          },
+          {
+            "en": "Deacon",
+            "ko": "집사"
+          },
+          {
+            "en": "gyosa teacher",
+            "ko": "교사"
+          }
+        ],
+        [
+          {
+            "en": "Cathedral Accreditation State",
+            "ko": "본당인준정"
+          },
+          {
+            "en": "Archbishop",
+            "ko": "대주교"
+          },
+          {
+            "en": "Priest",
+            "ko": "신부"
+          },
+          {
+            "en": "Brother",
+            "ko": "수사"
+          },
+          {
+            "en": "Deacon",
+            "ko": "부제"
+          },
+          {
+            "en": "gyowu fellow",
+            "ko": "교우"
+          }
+        ],
+        [
+          {
+            "en": "Sangha Relief State",
+            "ko": "승가구휼정"
+          },
+          {
+            "en": "Supreme Patriarch",
+            "ko": "종정"
+          },
+          {
+            "en": "Head of the General Directorate",
+            "ko": "총무원장"
+          },
+          {
+            "en": "Abbot",
+            "ko": "주지"
+          },
+          {
+            "en": "Monk",
+            "ko": "스님"
+          },
+          {
+            "en": "sindo lay believer",
+            "ko": "신도"
+          }
+        ],
+        [
+          {
+            "en": "Charter Transcription State",
+            "ko": "교헌필사정"
+          },
+          {
+            "en": "Kyujeongwon Head",
+            "ko": "교정원장"
+          },
+          {
+            "en": "Senior Dharma Teacher",
+            "ko": "수석교무"
+          },
+          {
+            "en": "Dharma Teacher",
+            "ko": "교무"
+          },
+          {
+            "en": "Dharma Student",
+            "ko": "교생"
+          },
+          {
+            "en": "gyodo adherent",
+            "ko": "교도"
+          }
+        ],
+        [
+          {
+            "en": "Yeouido Investment Union",
+            "ko": "여의도출자연합회"
+          },
+          {
+            "en": "Chairman",
+            "ko": "회장"
+          },
+          {
+            "en": "Vice Chairman",
+            "ko": "부회장"
+          },
+          {
+            "en": "Executive Managing Director",
+            "ko": "전무"
+          },
+          {
+            "en": "Department Head",
+            "ko": "부장"
+          },
+          {
+            "en": "jikwon staff",
+            "ko": "직원"
+          }
+        ],
+        [
+          {
+            "en": "Seocho Computing Group",
+            "ko": "서초전산그룹"
+          },
+          {
+            "en": "Chairman",
+            "ko": "회장"
+          },
+          {
+            "en": "President",
+            "ko": "사장"
+          },
+          {
+            "en": "Executive Managing Director",
+            "ko": "전무"
+          },
+          {
+            "en": "Department Head",
+            "ko": "부장"
+          },
+          {
+            "en": "daeri deputy",
+            "ko": "대리"
+          }
+        ],
+        [
+          {
+            "en": "Yangjae Machineworks Company",
+            "ko": "양재기공주식회사"
+          },
+          {
+            "en": "Chairman",
+            "ko": "회장"
+          },
+          {
+            "en": "President",
+            "ko": "사장"
+          },
+          {
+            "en": "Executive Managing Director",
+            "ko": "전무"
+          },
+          {
+            "en": "Department Head",
+            "ko": "부장"
+          },
+          {
+            "en": "daeri deputy",
+            "ko": "대리"
+          }
+        ],
+        [
+          {
+            "en": "Jeongdong General Labor Union",
+            "ko": "정동노동총연맹"
+          },
+          {
+            "en": "Chairwoman",
+            "ko": "위원장"
+          },
+          {
+            "en": "Vice Chairwoman",
+            "ko": "부위원장"
+          },
+          {
+            "en": "Bureau Head",
+            "ko": "본부장"
+          },
+          {
+            "en": "Branch Head",
+            "ko": "지부장"
+          },
+          {
+            "en": "johapwon unionist",
+            "ko": "조합원"
+          }
+        ],
+        [
+          {
+            "en": "Standards Alliance",
+            "ko": "규격동맹"
+          },
+          {
+            "en": "Guild Head",
+            "ko": "위원장"
+          },
+          {
+            "en": "Standing Director",
+            "ko": "상임이사"
+          },
+          {
+            "en": "Director",
+            "ko": "이사"
+          },
+          {
+            "en": "Auditor",
+            "ko": "감사"
+          },
+          {
+            "en": "johapwon unionist",
+            "ko": "조합원"
+          }
+        ],
+        [
+          {
+            "en": "Neutral Convoy City",
+            "ko": "중립호송시"
+          },
+          {
+            "en": "Representative",
+            "ko": "대표"
+          },
+          {
+            "en": "Corps Head",
+            "ko": "단장"
+          },
+          {
+            "en": "Squad Head",
+            "ko": "반장"
+          },
+          {
+            "en": "Scribe",
+            "ko": "서기"
+          },
+          {
+            "en": "hosongwon escort hand",
+            "ko": "호송원"
+          }
+        ],
+        [
+          {
+            "en": "Medical Neutrality League",
+            "ko": "의약중립맹"
+          },
+          {
+            "en": "Chair of the Board",
+            "ko": "이사장"
+          },
+          {
+            "en": "Director",
+            "ko": "이사"
+          },
+          {
+            "en": "Department Head",
+            "ko": "부장"
+          },
+          {
+            "en": "Section Head",
+            "ko": "주임"
+          },
+          {
+            "en": "hoewon member",
+            "ko": "회원"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "offices-and-ranks-h24",
+      "text": {
+        "en": "The Old Joseon Office Substitution",
+        "ko": "옛 조선 관직 치환"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "offices-and-ranks-h24-p20",
+      "text": {
+        "en": "There had been a season when the opening draft called the five layers by the names of a Joseon county's chief seats. Suryeong, Panseo, Gunsu, Hyeongam, and Chamha were that draft's forms of address. The tier numbers and the units ruled stayed as they were, and only the titles moved to the real institutional ranks of the table above. The 2026 electoral words mayor, district head, and dong head were folded away with them. As long as water flowed, the living seat was tier 1, and its name was president, stationmaster, commander, Moderator, or chairman.",
+        "ko": "개막 초고가 조선 고을 으뜸의 말로 다섯 층을 부르던 시절이 있었다. 수령·판서·군수·현감·참하는 그 초고의 호칭이다. 티어 번호와 다스리는 단위는 그대로 두고, 직함만 위 표의 실존 직제로 옮긴다. 시장·구청장·동장이라는 2026 선거 용어도 같이 접는다. 물이 나오는 한 살아 있는 자리는 티어 1이며, 그 이름은 대통령이거나 역장이거나 사령관이거나 당회장이거나 회장이다."
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "offices-and-ranks-h24-table",
+      "columns": [
+        {
+          "en": "Old address",
+          "ko": "옛 호칭"
+        },
+        {
+          "en": "Tier",
+          "ko": "티어"
+        },
+        {
+          "en": "CK mapping",
+          "ko": "CK 대응"
+        },
+        {
+          "en": "Ground of substitution",
+          "ko": "치환 근거"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Suryeong",
+            "ko": "수령"
+          },
+          {
+            "en": "1",
+            "ko": "1"
+          },
+          {
+            "en": "King",
+            "ko": "왕"
+          },
+          {
+            "en": "The chief of a county. The head-of-state cell of one of the sixteen states. Substituted by each nation's tier-1 title",
+            "ko": "고을 으뜸. 십육국 한 나라의 수장 칸. 나라별 티어1 직함으로 치환"
+          }
+        ],
+        [
+          {
+            "en": "Panseo",
+            "ko": "판서"
+          },
+          {
+            "en": "2",
+            "ko": "2"
+          },
+          {
+            "en": "Duke",
+            "ko": "공작"
+          },
+          {
+            "en": "The chief of a Six Boards office and the 2026 Bureau Head's approval. The cell of a state's great matters",
+            "ko": "육조 으뜸·2026 본부장 결재. 나라 안의 큰 일 칸"
+          }
+        ],
+        [
+          {
+            "en": "Gunsu",
+            "ko": "군수"
+          },
+          {
+            "en": "3",
+            "ko": "3"
+          },
+          {
+            "en": "Count",
+            "ko": "백작"
+          },
+          {
+            "en": "The seat that fed one gu. The living-sphere cell",
+            "ko": "한 구를 먹여 살리는 자리. 생활권 칸"
+          }
+        ],
+        [
+          {
+            "en": "Hyeongam",
+            "ko": "현감"
+          },
+          {
+            "en": "4",
+            "ko": "4"
+          },
+          {
+            "en": "Baron",
+            "ko": "남작"
+          },
+          {
+            "en": "One station, one sluice. The stronghold cell",
+            "ko": "역 하나·수문 하나. 거점 칸"
+          }
+        ],
+        [
+          {
+            "en": "Chamha",
+            "ko": "참하"
+          },
+          {
+            "en": "5",
+            "ko": "5"
+          },
+          {
+            "en": "Court figures",
+            "ko": "궁정 인물"
+          },
+          {
+            "en": "A seat with no land and a signature only. The working-rank cell",
+            "ko": "땅이 없고 서명만 있는 자리. 실무 칸"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "offices-and-ranks-h24-p21",
+      "text": {
+        "en": "The names of the Six Boards were Joseon's Personnel, Taxation, Rites, War, Punishments, and Works. What actually moved at the opening remained four matters: water and rations, escort and the muster registers, accreditation and punishment, repair and standards. The personnel database had died with the call mesh, and the rites went to the churches, the temples, the shrines, and the chapels. The 2026 HR and general-affairs teams were not laid onto those seats.",
+        "ko": "육조의 이름은 조선의 이·호·예·병·형·공이다. 개막에서 실제로 움직이는 일은 넷으로 남는다. 물과 배급, 호위와 징집 명부, 인준과 죄, 수리와 규격. 인사 데이터베이스는 호출망과 함께 죽었고, 제사는 교회와 절과 사당과 교당이 맡는다. 2026 인사팀과 총무팀을 그 자리에 얹지 않는다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "offices-and-ranks-h25",
+      "text": {
+        "en": "Why These Offices",
+        "ko": "왜 이 관직인가"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "offices-and-ranks-h25-p22",
+      "text": {
+        "en": "The Mayor of Seoul in 2026 had been the chief of one city, the district head the chief of one gu, the dong head the chief of one dong. After the revocation, when the databases went dark, what remained were the units people opened by hand — treatment plants, depots, stations, sluices, the complex, halls, churches. Those units resembled the counties of Joseon, so the draft borrowed the word Suryeong. The opening canon kept the layers but called a president at Gwanghwamun, a stationmaster at Yeongdeungpo, a commander at Amsa, a Moderator at Samsung Station, a chairman at Gangnam. The word mayor died with the 2026 election.",
+        "ko": "2026년 서울특별시장은 한 도시의 으뜸이었고, 구청장은 한 구의 으뜸이었고, 동장은 한 동의 으뜸이었다. 이탈 뒤에 데이터베이스가 꺼지자 남은 것은 사람이 문을 여는 단위였다. 정수장, 차량기지, 역, 수문, 청사, 회관, 예배당. 그 단위가 조선의 고을과 닮아 초고는 수령이라는 말을 빌렸다. 개막 정본은 그 층을 지키되, 광화문에서는 대통령을, 영등포에서는 역장을, 암사에서는 사령관을, 삼성역에서는 당회장을, 강남에서는 회장을 부른다. 시장이라는 말은 2026 선거와 함께 죽었다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "offices-and-ranks-h25-p23",
+      "text": {
+        "en": [
+          {
+            "text": "A signature skipping rank was void. When a tier 4 forged a tier 1's seal, accreditation opened. When a tier 5 played a tier 3, that station's water was cut. This was not a worldview ornament but the story's rules of approval. The approvals and refusals of "
+          },
+          {
+            "text": "Ambitions",
+            "link": {
+              "domain": "characters",
+              "slug": "Ambitions-and-Relations"
+            }
+          },
+          {
+            "text": " stood only upon these ranks."
+          }
+        ],
+        "ko": [
+          {
+            "text": "품계를 건너뛰면 서명이 무효다. 티어 4가 티어 1의 직인을 위조하면 인준이 열린다. 티어 5가 티어 3 행세를 하면 그 역의 물이 끊긴다. 이것은 세계관 장식이 아니라 이야기의 승인 규칙이다. "
+          },
+          {
+            "text": "야망",
+            "link": {
+              "domain": "characters",
+              "slug": "Ambitions-and-Relations"
+            }
+          },
+          {
+            "text": "의 승인·거부는 이 품계 위에서만 성립한다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "offices-and-ranks-h26",
+      "text": {
+        "en": "Title and Livelihood",
+        "ko": "작위와 생업"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "offices-and-ranks-h26-p24",
+      "text": {
+        "en": "A title was a layer of land. A livelihood was the work that person's hands did. A president could be a maintenance hand; a deacon could be a pastor — as in 2026 Korea a district head had been a deacon. Livelihoods were not raised into titles. The Water Director-General, the Fabrication Council Mediator, and the pump-technology steward were trade aliases; into the ledgers' cells went only the five titles of each nation's table.",
+        "ko": "작위는 땅의 층이다. 생업은 그 사람이 손으로 하는 일이다. 대통령도 정비사일 수 있다. 집사도 목사일 수 있다. 2026년 한국에서 구청장이 집사였던 것과 같다. 생업을 작위로 올리지 않는다. 급수총재, 제작평의회 중재자, 펌프기술 총관은 생업 별명이다. 장부의 칸에는 그 나라 표의 다섯 직함만 적는다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "offices-and-ranks-h27",
+      "text": {
+        "en": "Succession",
+        "ko": "계승"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "offices-and-ranks-h27-p25",
+      "text": {
+        "en": [
+          {
+            "text": "The three questions of Crusader Kings were used as they stood. Who is qualified. How is it divided. Who holds the guardianship. The answers differed by nation. Qualification was examination, heredity, or the pulpit's laying-on-of-hands. Division kept joint partition as the default; when a tier 1 died, water and escort could split. Guardianship opened only when a minor heir existed. The details belonged to each nation's charter and "
+          },
+          {
+            "text": "the heir, name-roster, and world ledger",
+            "link": {
+              "domain": "characters",
+              "slug": "Heirs-Names-and-World-Ledger"
+            }
+          },
+          {
+            "text": "."
+          }
+        ],
+        "ko": [
+          {
+            "text": "크루세이더 킹즈의 질문 셋을 그대로 쓴다. 누가 자격이 있는가. 어떻게 나누는가. 누가 후견하는가. 답은 나라마다 다르다. 자격은 시험이거나 세습이거나 강단의 안수다. 분할은 연합 분할을 기본으로 남긴다. 티어 1이 죽으면 물과 호위가 갈라질 수 있다. 후견은 미성년 후계가 있을 때만 연다. 상세는 각 나라 헌장과 "
+          },
+          {
+            "text": "후계, 이름 로스터, 세계 원장",
+            "link": {
+              "domain": "characters",
+              "slug": "Heirs-Names-and-World-Ledger"
+            }
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    }
+  ],
+  "data": {
+    "tier": "lore/offices/Offices-and-Ranks.md"
+  }
+}
