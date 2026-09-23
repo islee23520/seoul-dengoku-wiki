@@ -150,7 +150,7 @@ Values stood for the practice the current majority followed; policies stood for 
 
 ## The 1001-Person Generation Path
 
-The canon of named persons was limited to the **1001** belonging to the sixteen states. The corridor seeds and the 100 not yet through review ([the random additional roster](../characters/Random-Cast-Roster.md)) were not counted into that 1001. Each added person required the [cast card contract](../characters/Cast-Profile-Contract.md), the ten cells above, and the desire cells filled without gaps. Generation was not complete by merely spinning a random seed and mechanically copying fear lines.
+The canon of named persons was limited to the **1001** belonging to the sixteen states. The corridor seeds and the 100 not yet through review (the random additional roster) were not counted into that 1001. Each added person required the cast card contract, the ten cells above, and the desire cells filled without gaps. Generation was not complete by merely spinning a random seed and mechanically copying fear lines.
 
 The order of generation was as follows.
 

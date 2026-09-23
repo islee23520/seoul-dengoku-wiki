@@ -7,7 +7,7 @@ source_hash: 1226c88cfafc62f8f695a7a77064fead8200cf85adb87860c5fb7eb346fe204e
 
 Before the collapse, Seoul had already been a city of many foreigners and migrants. The Chinese-Korean commercial belt of Daerim and Garibong, the interpretation alleys of Itaewon, the night labor rates of Dongdaemun, the Southeast and Central Asian dormitories of the Guro industrial belt, and the garrison contract work of Yongsan lay layered in one city. The Great Blackout did not erase these people; it cut interpretation and lodging. If the sixteen states were only a one-people roster, that city would not read as Seoul.
 
-This page was a corridor laid over the living spheres. It became no seventeenth state. New persons filled the [cast card contract](../characters/Cast-Profile-Contract.md).
+This page was a corridor laid over the living spheres. It became no seventeenth state. New persons filled the cast card contract.
 
 ## The Corridors
 
