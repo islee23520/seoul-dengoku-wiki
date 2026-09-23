@@ -14,6 +14,15 @@
       },
       "additionalProperties": false
     },
+    "tableCell": {
+      "type": "object",
+      "required": ["en", "ko"],
+      "properties": {
+        "en": {"anyOf": [{"$ref": "#/$defs/textValue"}, {"const": ""}]},
+        "ko": {"anyOf": [{"$ref": "#/$defs/textValue"}, {"const": ""}]}
+      },
+      "additionalProperties": false
+    },
     "textValue": {
       "oneOf": [
         {"type": "string", "minLength": 1},
@@ -198,7 +207,7 @@
                 "type": "array",
                 "minItems": 1,
                 "items": {
-                  "$ref": "#/$defs/localizedText"
+                  "$ref": "#/$defs/tableCell"
                 }
               }
             }
