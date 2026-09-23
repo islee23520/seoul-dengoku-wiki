@@ -48,8 +48,8 @@ function renderNode(node, locale, context) {
 }
 
 // targetFile(domain, slug) returns the repository path a lore link points at, e.g. 'lore/culture/Martial-Paths.md'.
-export function renderLoreMarkdown(document, locale, targetFile = (domain, slug) => `lore/${domain === 'root' ? '' : `${domain}/`}${slug}.md`) {
-  const fromDir = document.domain === 'root' ? 'lore' : `lore/${document.domain}`
+// fromDir: the folder the page lives in (e.g. 'lore/bestiary/groups'); defaults to its domain folder.
+export function renderLoreMarkdown(document, locale, targetFile = (domain, slug) => `lore/${domain === 'root' ? '' : `${domain}/`}${slug}.md`, fromDir = document.domain === 'root' ? 'lore' : `lore/${document.domain}`) {
   const context = { fromDir, targetFile }
   return `${document.content.map((node) => renderNode(node, locale, context)).join('\n\n')}\n`
 }

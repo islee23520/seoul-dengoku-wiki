@@ -3,7 +3,7 @@
 // GDD/*.md + GDD/art/*.md + 루트 4문서→design
 // 유니온 pageByFile/pageByStem로 도메인 간 베어 링크 재작성 (스켑틱 #10)
 import { existsSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from 'node:fs'
-import { basename, dirname, join } from 'node:path'
+import { basename, dirname, join, relative } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { renderLoreMarkdown } from './lore-json-render.mjs'
 
@@ -179,7 +179,7 @@ for (const { name, domain } of candidates) {
 for (const { name, src, domain, document } of candidates) {
   if (rejected.some((r) => r.startsWith(`${name}:`))) continue
   const dest = join(docsSiteRoot, domain, name)
-  const content = document ? renderLoreMarkdown(document, 'ko', loreLinkFile) : readFileSync(src, 'utf8')
+  const content = document ? renderLoreMarkdown(document, 'ko', loreLinkFile, relative(wikiRoot, dirname(src)).replaceAll('\\', '/')) : readFileSync(src, 'utf8')
   writeFileSync(dest, rewriteContent(content, pageByFile, pageByStem))
   acceptedFiles.push(name)
 }
