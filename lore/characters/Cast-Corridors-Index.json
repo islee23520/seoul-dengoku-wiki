@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "domain": "characters",
+  "id": "DOC:Cast-Corridors-Index",
+  "slug": "cast-corridors-index",
+  "status": "draft",
+  "tense": {
+    "en": "present",
+    "ko": "present"
+  },
+  "provenance": {
+    "original_anchor": "lore/characters/Cast-Corridors-Index.md",
+    "original_hash": "a7c4ad731b2e45320e18368c71ac845bf16887f441bc4c75818a379cead343ce",
+    "history": [
+      "Korean lore/characters/Cast-Corridors-Index.md SHA-256 a7c4ad731b2e45320e18368c71ac845bf16887f441bc4c75818a379cead343ce.",
+      "English lore/characters/Cast-Corridors-Index.en.md SHA-256 132d555a1984584bc41c37ea4c73a373ce22690bf9572d624f213841dc7441e9; copied verbatim, no translation written.",
+      "KO built from the sweep-w1 WEB working tree (clean) SHA-256 a7c4ad731b2e45320e18368c71ac845bf16887f441bc4c75818a379cead343ce. The page had no committed EN; EN was translated from KO during the JSON migration (SHA-256 132d555a1984584bc41c37ea4c73a373ce22690bf9572d624f213841dc7441e9) and needs human EN review."
+    ]
+  },
+  "source": {
+    "kind": "original-fiction",
+    "refs": [
+      "lore/characters/Cast-Corridors-Index.md",
+      "lore/characters/Cast-Corridors-Index.en.md"
+    ]
+  },
+  "locales": {
+    "en": {
+      "title": "Corridor Cast Index",
+      "summary": "These are the named people outside the Sixteen States registers, listed in the Diaspora Corridors and the Conscription Remnants.",
+      "tense": "present"
+    },
+    "ko": {
+      "title": "회랑 인물 총람",
+      "summary": "16국 명부 바깥, 이주민 회랑과 징집 잔존에 이름이 있는 인물이다.",
+      "tense": "present"
+    }
+  },
+  "content": [
+    {
+      "kind": "heading",
+      "anchor": "회랑-인물-총람",
+      "text": {
+        "en": "Corridor Cast Index",
+        "ko": "회랑 인물 총람"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "회랑-인물-총람-p1",
+      "text": {
+        "en": [
+          {
+            "text": "These are the named people outside the Sixteen States registers, listed in the "
+          },
+          {
+            "text": "Diaspora Corridors",
+            "link": {
+              "domain": "factions",
+              "slug": "Diaspora-Corridors"
+            }
+          },
+          {
+            "text": " and the "
+          },
+          {
+            "text": "Conscription Remnants",
+            "link": {
+              "domain": "factions",
+              "slug": "Conscription-Remnants"
+            }
+          },
+          {
+            "text": ". The body of the text is on the corridor pages."
+          }
+        ],
+        "ko": [
+          {
+            "text": "16국 명부 바깥, "
+          },
+          {
+            "text": "이주민 회랑",
+            "link": {
+              "domain": "factions",
+              "slug": "Diaspora-Corridors"
+            }
+          },
+          {
+            "text": "과 "
+          },
+          {
+            "text": "징집 잔존",
+            "link": {
+              "domain": "factions",
+              "slug": "Conscription-Remnants"
+            }
+          },
+          {
+            "text": "에 이름이 있는 인물이다. 본문은 회랑 페이지다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "회랑-인물-총람-table2",
+      "columns": [
+        {
+          "en": "Name",
+          "ko": "이름"
+        },
+        {
+          "en": "Corridor",
+          "ko": "회랑"
+        },
+        {
+          "en": "Office",
+          "ko": "직위"
+        },
+        {
+          "en": "Conscription record",
+          "ko": "징집 이력"
+        },
+        {
+          "en": "Arms access",
+          "ko": "무장 접근"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Lin Xiaomei (Im Somae)",
+            "ko": "린샤오메이 (임소매)"
+          },
+          {
+            "en": "Daerim-Gari-bong interpretation market",
+            "ko": "대림·가리봉 통역시장"
+          },
+          {
+            "en": "dual-ledger brokerage",
+            "ko": "이중장부 중개"
+          },
+          {
+            "en": "none",
+            "ko": "없음"
+          },
+          {
+            "en": "livelihood tools",
+            "ko": "생업 공구"
+          }
+        ],
+        [
+          {
+            "en": "Phạm Văn Đức (Beom Bandeuk)",
+            "ko": "팜반득 (범반득)"
+          },
+          {
+            "en": "Guro Industrial Complex dormitory remnant",
+            "ko": "구로공단 기숙 잔존"
+          },
+          {
+            "en": "night maintenance crew chief",
+            "ko": "야간 정비 조장"
+          },
+          {
+            "en": "none",
+            "ko": "없음"
+          },
+          {
+            "en": "tools and protective clothing",
+            "ko": "공구·방호복"
+          }
+        ],
+        [
+          {
+            "en": "Amira Qasim",
+            "ko": "아미라 카심"
+          },
+          {
+            "en": "Itaewon passage alley",
+            "ko": "이태원 통행 골목"
+          },
+          {
+            "en": "multilingual pass reader",
+            "ko": "다국어 통행증 판독"
+          },
+          {
+            "en": "none",
+            "ko": "없음"
+          },
+          {
+            "en": "none",
+            "ko": "없음"
+          }
+        ],
+        [
+          {
+            "en": "Joel Park",
+            "ko": "조엘 박"
+          },
+          {
+            "en": "Yongsan fence contract labor",
+            "ko": "용산 울타리 용역"
+          },
+          {
+            "en": "warehouse-inspection interpreter",
+            "ko": "창고 열람 통역"
+          },
+          {
+            "en": "enlisted term complete",
+            "ko": "병 만기"
+          },
+          {
+            "en": "keys only",
+            "ko": "열쇠만"
+          }
+        ],
+        [
+          {
+            "en": "Nargiz Yusupova",
+            "ko": "나르기즈 유수포바"
+          },
+          {
+            "en": "Jayang-Konkuk Koryo-in boarding house",
+            "ko": "자양·건대 고려인 하숙"
+          },
+          {
+            "en": "two-language refuge courier",
+            "ko": "두 말 피난 전령"
+          },
+          {
+            "en": "none",
+            "ko": "없음"
+          },
+          {
+            "en": "none",
+            "ko": "없음"
+          }
+        ],
+        [
+          {
+            "en": "Choi Ilseok",
+            "ko": "최일석"
+          },
+          {
+            "en": "Sinjeong-Bupyeong mobilization remnant",
+            "ko": "신정·부평 동원잔존"
+          },
+          {
+            "en": "mobilization-register clerk",
+            "ko": "동원 명부 서기"
+          },
+          {
+            "en": "enlisted term complete, reserve clerk",
+            "ko": "병 만기, 예비 서기"
+          },
+          {
+            "en": "hand key, regulation staff",
+            "ko": "부키, 제식 봉"
+          }
+        ]
+      ]
+    }
+  ],
+  "data": {}
+}

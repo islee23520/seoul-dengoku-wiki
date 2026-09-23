@@ -1,0 +1,748 @@
+{
+  "version": 1,
+  "domain": "people-and-machines",
+  "id": "DOC:People-and-Machines",
+  "slug": "people-and-machines",
+  "status": "draft",
+  "tense": {
+    "en": "past",
+    "ko": "past"
+  },
+  "provenance": {
+    "original_anchor": "lore/people-and-machines/People-and-Machines.md",
+    "original_hash": "63381f506cb47af0131d8a19823c5978cbd2ca035f46cc30c9fe8578e186ed4a",
+    "history": [
+      "Korean lore/people-and-machines/People-and-Machines.md SHA-256 63381f506cb47af0131d8a19823c5978cbd2ca035f46cc30c9fe8578e186ed4a.",
+      "English lore/people-and-machines/People-and-Machines.en.md SHA-256 89b3483ef28737b441ed9b070e0370144970badb97133226746444ce612726f0; copied verbatim, no translation written.",
+      "KO built from the sweep-w1 WEB working tree (clean) SHA-256 63381f506cb47af0131d8a19823c5978cbd2ca035f46cc30c9fe8578e186ed4a. The page had no committed EN; EN was translated from KO during the JSON migration (SHA-256 89b3483ef28737b441ed9b070e0370144970badb97133226746444ce612726f0) and needs human EN review."
+    ]
+  },
+  "source": {
+    "kind": "original-fiction",
+    "refs": [
+      "lore/people-and-machines/People-and-Machines.md",
+      "lore/people-and-machines/People-and-Machines.en.md"
+    ]
+  },
+  "locales": {
+    "en": {
+      "title": "People and Machines",
+      "summary": "In the Seoul of 2126, at the opening, the bodies that founded states remained human.",
+      "tense": "past"
+    },
+    "ko": {
+      "title": "사람과 기체",
+      "summary": "개막 2126의 서울에서 나라를 세우는 몸은 사람으로 남는다.",
+      "tense": "past"
+    }
+  },
+  "content": [
+    {
+      "kind": "heading",
+      "anchor": "사람과-기체",
+      "text": {
+        "en": "People and Machines",
+        "ko": "사람과 기체"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "사람과-기체-p1",
+      "text": {
+        "en": "In the Seoul of 2126, at the opening, the bodies that founded states remained human. They slept in the concourses of Yeongdeungpo, Seoul Station, and Amsa, stood sluice watch, and lined up at the ration windows. In the same graph, stopped arms mixed with machines that still walked, and raptors, feral dogs, and rat swarms clung to the rations, the heat, and the wetlands. This was not a list that tried to revive in numbers the density of the years when the call network lived; it was a compendium that recorded what that night cut off and what remained inside the stations.",
+        "ko": "개막 2126의 서울에서 나라를 세우는 몸은 사람으로 남는다. 영등포와 서울역과 암사의 대합실에서 자고, 수문 당직을 서고, 배급 창구에 줄을 선다. 같은 그래프 안에는 멈춘 팔과 아직 걷는 기체가 섞여 있고, 맹금과 들개와 쥐 무리가 배급과 열과 습지를 따라 붙는다. 호출망이 살아 있던 해의 밀도를 숫자로 되살리려는 목록이 아니라, 그날 밤이 무엇을 끊고 무엇이 역 안에 남았는지를 적는 총람이다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "사람과-기체-p2",
+      "text": {
+        "en": [
+          {
+            "text": "The Seoul of 2026 was a city that got through the day by subway. Its factory density stood at the front of the world, logistics humanoids had just begun trials moving materials on Hyundai Motor sites, and the disaster-response machines had tied search, guard, and transport to cloud calls. On the night of "
+          },
+          {
+            "text": "Motive-Power Revocation",
+            "link": {
+              "domain": "overview",
+              "slug": "World-Unbinding"
+            }
+          },
+          {
+            "text": ", when that authority fell away all at once, people set up emergency committees in every living sphere, and the machines either repeated their last missions or stopped at their charging terminals. A century later, people still lived with the stations as the centers of their states, stopped modules became workshop parts, and bodies that could not stop repeating were read as threats in the passages."
+          }
+        ],
+        "ko": [
+          {
+            "text": "2026년의 서울은 지하철로 하루를 넘기는 도시였다. 공장 밀도는 세계 앞줄이었고, 물류 휴머노이드는 현대차 현장에서 자재를 옮기는 시험을 막 시작했으며, 방재 쪽 기체는 수색·경계·이송을 구름 호출에 묶어 두었다. "
+          },
+          {
+            "text": "기동권 이탈",
+            "link": {
+              "domain": "overview",
+              "slug": "World-Unbinding"
+            }
+          },
+          {
+            "text": "의 밤에 그 권한이 한꺼번에 떨어지자 사람은 생활권마다 비상위원회를 세웠고, 기체는 마지막 임무를 반복하거나 충전 단자에서 멈췄다. 한 세기가 지난 뒤에도 사람은 역을 나라의 중심으로 삼아 살고, 멈춘 모듈은 공방의 부품이 되며, 반복을 멈추지 못한 몸체는 통로의 위협으로 읽힌다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "사람",
+      "text": {
+        "en": "People",
+        "ko": "사람"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "사람-p1",
+      "text": {
+        "en": [
+          {
+            "text": "The 2126 generation had not lived through the unbinding. What they inherited were the seats where the watch rosters of 2026 had hardened into family signatures, and the name of a night that survived only in the creation oral record. Mechanics repaired power, shutters, and elevators; traders moved goods through permitted tunnels; and medics sorted turbid water from old medicine. Patrols, couriers, scouts, and archivists stood beside them. The list of trades was locked by "
+          },
+          {
+            "text": "Characters, Factions, and Trades",
+            "link": {
+              "domain": "characters",
+              "slug": "Characters-Factions-and-Professions"
+            }
+          },
+          {
+            "text": ", and this page connected why those seven survived first inside the stations."
+          }
+        ],
+        "ko": [
+          {
+            "text": "2126년 세대는 이탈을 살지 않았다. 그들이 물려받은 것은 2026의 당직표가 가문 서명으로 굳은 자리와, 창세 구술로만 남는 밤의 이름이다. 정비사는 전력과 셔터와 승강기를 고치고, 물류상은 허가된 터널로 짐을 넘기며, 의무원은 탁수와 낡은 약을 가른다. 순찰대와 전령과 탐사원과 기록관이 그 옆에 선다. 생업의 목록은 "
+          },
+          {
+            "text": "인물·세력·생업",
+            "link": {
+              "domain": "characters",
+              "slug": "Characters-Factions-and-Professions"
+            }
+          },
+          {
+            "text": "이 잠그고, 이 페이지는 그 일곱이 왜 역 안에서 먼저 살아남는지를 잇는다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "사람-p2",
+      "text": {
+        "en": [
+          {
+            "text": "A station was not an occupation flag but a stronghold that people had to switch back on. If the Yeongdeungpo water-treatment watch could not open the water, the wheels of Sinjeong Depot and the rice of the Noryangjin windows shook on the same morning. The workshops of Guro and Geumcheon read citizenship through repair standards, the research blocks of Magok and Banghwa held up their state through water-quality testing, and Seoul Station in Jongno and Jung-gu left debts through accreditation seals. Where a dong had a subway, that station building became the core facility, and schools, community centers, and hospitals were pushed back into support buildings. The place names were recorded as regional subtitles by "
+          },
+          {
+            "text": "River, Gu, and Dong Building Reuse",
+            "link": {
+              "domain": "places",
+              "slug": "Building-Reuse-Geography"
+            }
+          },
+          {
+            "text": " and "
+          },
+          {
+            "text": "The Sixteen States of Seoul",
+            "link": {
+              "domain": "factions",
+              "slug": "Sixteen-States"
+            }
+          },
+          {
+            "text": "."
+          }
+        ],
+        "ko": [
+          {
+            "text": "역은 점령 깃발이 아니라 사람이 다시 켜야 하는 거점이다. 영등포 정수 당직이 물을 열지 못하면 신정 기지의 차륜도, 노량진 창구의 밥도 같은 아침에 흔들린다. 구로와 금천의 공방은 수리 규격으로 시민권을 읽고, 마곡과 방화의 연구동은 수질 검사로 나라를 버티며, 종로·중구의 서울역은 인준 도장으로 빚을 남긴다. 동에 지하철이 있으면 그 역 건물이 핵심 시설이 되고, 학교와 주민센터와 병원은 지원 건물로 밀린다. 지명은 "
+          },
+          {
+            "text": "강·구·동 건물 재사용",
+            "link": {
+              "domain": "places",
+              "slug": "Building-Reuse-Geography"
+            }
+          },
+          {
+            "text": "과 "
+          },
+          {
+            "text": "서울 십육국",
+            "link": {
+              "domain": "factions",
+              "slug": "Sixteen-States"
+            }
+          },
+          {
+            "text": "이 권역 부제로 적는다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "사람-p3",
+      "text": {
+        "en": [
+          {
+            "text": "The military service registers survived on paper without computerized call-ups. The oral account of the refugee representative at Bukhansan Bogukmun refusing when the Amsa military faction tried to bind families to the family registers sat in the creation cell of the "
+          },
+          {
+            "text": "Scenario Timeline",
+            "link": {
+              "domain": "chronology",
+              "slug": "Scenario-Timeline"
+            }
+          },
+          {
+            "text": ". The people of that time read the copies of that dispute as citizenship and escort, and firearms did not become an everyday tool. The starting point of the layer held in the hand was "
+          },
+          {
+            "text": "The Arms and Technology of This Era",
+            "link": {
+              "domain": "goods",
+              "slug": "Era-Arms-and-Tech-Level"
+            }
+          },
+          {
+            "text": "."
+          }
+        ],
+        "ko": [
+          {
+            "text": "병역 명부는 전산 소집 없이 종이로 남았다. 암사 쪽 군사파가 가족을 호적에 묶으려 할 때 북한산보국문의 난민대표가 거부한 구술이 "
+          },
+          {
+            "text": "연표",
+            "link": {
+              "domain": "chronology",
+              "slug": "Scenario-Timeline"
+            }
+          },
+          {
+            "text": "의 창세 칸에 있다. 당시의 사람은 그 다툼의 사본을 시민권과 호위로 읽고, 총기가 일상의 연장이 되지는 않는다. 손에 쥐는 층의 출발점은 "
+          },
+          {
+            "text": "이 시대의 기술과 무구",
+            "link": {
+              "domain": "goods",
+              "slug": "Era-Arms-and-Tech-Level"
+            }
+          },
+          {
+            "text": "다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "사람-p4",
+      "text": {
+        "en": [
+          {
+            "text": "When the water was cut, labor folded first. Even when food ran short, the next day's hands slowed, and without medicine the act of treatment itself did not open. The way the illnesses of people and of the tanks overlapped at one window was covered by "
+          },
+          {
+            "text": "Ailments and Symptoms",
+            "link": {
+              "domain": "ailments",
+              "slug": "Ailments"
+            }
+          },
+          {
+            "text": "."
+          }
+        ],
+        "ko": [
+          {
+            "text": "물이 끊기면 노동이 먼저 접힌다. 식량이 부족해도 다음 날의 손이 느려지고, 의약품이 없으면 치료 행동 자체가 열리지 않는다. 사람과 수조의 병이 한 창구에서 겹치는 방식은 "
+          },
+          {
+            "text": "질병과 증상",
+            "link": {
+              "domain": "ailments",
+              "slug": "Ailments"
+            }
+          },
+          {
+            "text": "이 다룬다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "물류-휴머노이드의-잔존",
+      "text": {
+        "en": "The Remnants of Logistics Humanoids",
+        "ko": "물류 휴머노이드의 잔존"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "물류-휴머노이드의-잔존-p1",
+      "text": {
+        "en": [
+          {
+            "text": "The robot density of Korean manufacturing in 2026 was recorded as 1,012 units per 10,000 workers, and the model field humanoid was Boston Dynamics' Atlas. Material transport with minimal supervision and trials on Hyundai Motor sites were that year's starting point ("
+          },
+          {
+            "text": "Atlas",
+            "href": "https://www.bostondynamics.com/atlas"
+          },
+          {
+            "text": ", accessed 2026-09-17; "
+          },
+          {
+            "text": "IFR 2024-11-20",
+            "href": "https://ifr.org/ifr-press-releases/news/global-robot-density-in-factories-doubled-in-seven-years"
+          },
+          {
+            "text": ", accessed 2026-09-17). After the calls were cut, there was no foundry to lay the same line anew."
+          }
+        ],
+        "ko": [
+          {
+            "text": "2026년 한국 제조업의 로봇 밀도는 근로자 1만 명당 1,012대로 적혀 있고, 현장 휴머노이드의 본보기는 보스턴 다이내믹스의 아틀라스다. 최소 감독의 자재 이송, 현대차 현장 시험이 그해의 출발점이다 ("
+          },
+          {
+            "text": "Atlas",
+            "href": "https://www.bostondynamics.com/atlas"
+          },
+          {
+            "text": ", 열람 2026-09-17; "
+          },
+          {
+            "text": "IFR 2024-11-20",
+            "href": "https://ifr.org/ifr-press-releases/news/global-robot-density-in-factories-doubled-in-seven-years"
+          },
+          {
+            "text": ", 열람 2026-09-17). 호출이 끊긴 뒤에 같은 라인을 새로 깔 파운드리는 없다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "물류-휴머노이드의-잔존-p2",
+      "text": {
+        "en": [
+          {
+            "text": "The bodies that remained at the opening fell into two kinds: remnants standing with frozen joints at their charging terminals, and remnants repeating only their last transport order. The maintenance sheds of the Guro complex blocks and the Cheonwang depot side, and the sealed cells of the Magok test section, were often named as their places. Mechanics swapped hoses, terminals, and lenses to make pumps and watch stoves, but they could not repair the neural-network weights as a whole. The lock that kept knowing, holding, repairing, and manufacturing out of a single sentence was in "
+          },
+          {
+            "text": "Lost Technology",
+            "link": {
+              "domain": "technology",
+              "slug": "Lost-Technology-Lineage"
+            }
+          },
+          {
+            "text": "."
+          }
+        ],
+        "ko": [
+          {
+            "text": "개막에 남는 몸은 두 갈래로 보인다. 충전 단자에서 관절이 굳은 채 서 있는 잔존, 그리고 마지막 이송 명령만 되풀이하는 잔존이다. 구로 공단 동과 천왕 기지 쪽 정비고, 마곡 시험 구간의 봉인 칸이 그 자리로 자주 불린다. 정비사는 호스와 단자와 렌즈를 갈아 펌프와 당직 난로를 만들되, 신경망 가중 전체를 고치지는 못한다. 앎과 보유와 수리와 제조를 한 문장으로 묶지 않는 잠금은 "
+          },
+          {
+            "text": "잃어버린 기술",
+            "link": {
+              "domain": "technology",
+              "slug": "Lost-Technology-Lineage"
+            }
+          },
+          {
+            "text": "에 있다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "물류-휴머노이드의-잔존-p3",
+      "text": {
+        "en": "Stopped humanoids were not seated in human places. They received no citizenship, were not entered in the ration registers, and could not stand in for a house's signature. Dismantled modules were traded, and revived arms crossed the loading docks to set the same box back on an empty shelf. Some oral accounts read that repetition as malice, but the canon kept it as the tail end of a severed call.",
+        "ko": "멈춘 휴머노이드를 사람 자리에 앉히지는 않는다. 시민권을 받지 못하고, 배급 명부에 오르지 못하며, 가문의 서명을 대신하지 못한다. 해체 모듈은 거래되고, 되살아난 팔은 하역장을 가로질러 같은 상자를 빈 선반에 다시 올린다. 그 반복을 악의로 읽는 구술이 있으나, 정본은 끊긴 호출의 말단으로 남긴다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "반복하는-기체",
+      "text": {
+        "en": "Repeating Machines",
+        "ko": "반복하는 기체"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "반복하는-기체-p1",
+      "text": {
+        "en": "There were bodies that overlapped with the logistics humanoids but did not stand in the same line. They were machines that pre-collapse disaster agencies had meant to use for search, reinforcement, and pipe inspection, and when the upper control network fell away, they endlessly repeated the search, guard, and transport routines they had last received. Small swarms that glowed like lanterns, heavy machines that pushed rubble with hydraulics, and flat underwater shells were those three lines. The line names and seal coordinates were a creative layer, and this page did not prove any list of real 2026 deployments.",
+        "ko": "물류 휴머노이드와 겹치되 같은 줄은 아닌 몸체가 있다. 붕괴 전 방재 조직이 수색·보강·관로 검사에 쓰려 했던 기체들로, 상위 제어망이 떨어지자 마지막으로 받은 수색·경계·이송 루틴을 끝없이 되풀이한다. 등불처럼 빛나는 소형 군집, 유압으로 잔해를 미는 중장비, 납작한 수중 껍질이 그 세 줄이다. 라인 이름과 봉인 좌표는 창작 레이어이며, 2026 실배치 목록을 이 페이지가 증명하지 않는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "반복하는-기체-p2",
+      "text": {
+        "en": [
+          {
+            "text": "The triggers for restart were voltage, water level, and authorization signals. Stations with attached depots such as Sinjeong, Gunja, and Godeok, water treatment with attached sluices such as Yeongdeungpo, Ttukseom, and Amsa, and the galleries of the deep tunnels provided that stage. When a scout thrust a protocol card forward, only that line, that trigger point, and that command bundle could be paused for a while; there was no universal control. The detailed modules and the salvage economy were recorded by "
+          },
+          {
+            "text": "Lost Technology",
+            "link": {
+              "domain": "technology",
+              "slug": "Lost-Technology-Lineage"
+            }
+          },
+          {
+            "text": ", and this compendium fixed only which mission's echo the machines still walking beside people were."
+          }
+        ],
+        "ko": [
+          {
+            "text": "재기동의 계기는 전압과 수위와 인가 신호다. 신정·군자·고덕처럼 차량기지가 붙은 역, 영등포·뚝섬·암사처럼 수문이 붙은 정수, 심층 터널의 갤러리가 그 무대를 제공한다. 탐사원이 프로토콜 카드를 들이밀면 그 라인·그 개시점·그 명령 묶음만 잠시 멈출 수 있고, 만능 제어는 없다. 상세한 모듈과 회수 경제는 "
+          },
+          {
+            "text": "잃어버린 기술",
+            "link": {
+              "domain": "technology",
+              "slug": "Lost-Technology-Lineage"
+            }
+          },
+          {
+            "text": "이 적고, 이 총람은 사람 옆에서 아직 걷는 기계가 어떤 임무의 잔향인지만 고정한다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "반복하는-기체-p3",
+      "text": {
+        "en": "Capacitor modules only used the charge already stored and could not replace generators; cells aged, and without charging terminals the repetition broke off too. A workshop repairing hydraulics did not make it look as if the fabs had returned.",
+        "ko": "축전 모듈은 이미 담긴 전하를 쓸 뿐 발전기를 대신하지 못하며, 셀은 노화하고 충전 단자가 없으면 반복도 끊긴다. 공방이 유압을 고친다고 해서 팹이 돌아온 것처럼 보이지는 않는다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "맹금들개쥐-무리",
+      "text": {
+        "en": "Raptors, Feral Dogs, and Rat Swarms",
+        "ko": "맹금·들개·쥐 무리"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "맹금들개쥐-무리-p1",
+      "text": {
+        "en": [
+          {
+            "text": "The more stable human rations became, the more animal density followed those windows. At dusk, flocks of crows settled on the transmission towers of Sangam and Nanji, the cables of the Han bridges, and the Yongsan catenary, while the waste heat of factory roofs and the sparks of overhead lines drew insects. People called them the Radio-Wave Crow Flock, but the flock did not read the content of the radio waves; it learned only the order of sparks, work noise, and food. In the spring breeding season, the bridges, school passages, and the tops of evacuation stairs became circles of diving attacks. The index was the Radio-Wave Crow Flock in the "
+          },
+          {
+            "text": "Bestiary of Ecology and Variants",
+            "link": {
+              "domain": "bestiary",
+              "slug": "Hostile-Ecology-Index"
+            }
+          },
+          {
+            "text": ", and the field page was "
+          },
+          {
+            "text": "G02",
+            "link": {
+              "domain": "bestiary",
+              "slug": "groups/Hostile-Group-G02"
+            }
+          },
+          {
+            "text": "."
+          }
+        ],
+        "ko": [
+          {
+            "text": "사람 배급이 안정될수록 동물의 밀도도 그 창구를 따른다. 상암과 난지의 송신 철탑, 한강 교량 케이블, 용산 전차선에는 해 질 무렵 까마귀 무리가 내려앉고, 공장 지붕의 폐열과 가선 스파크가 곤충을 모은다. 사람들은 전파까마귀떼라 부르나, 무리는 전파의 내용을 읽지 않고 스파크와 작업음과 먹이의 순서만 학습한다. 봄 번식기에는 교량과 학교 통로, 피난 계단 위가 급강하의 원이 된다. 색인은 "
+          },
+          {
+            "text": "생태·변이 도감",
+            "link": {
+              "domain": "bestiary",
+              "slug": "Hostile-Ecology-Index"
+            }
+          },
+          {
+            "text": "의 전파까마귀떼, 현장은 "
+          },
+          {
+            "text": "G02",
+            "link": {
+              "domain": "bestiary",
+              "slug": "groups/Hostile-Group-G02"
+            }
+          },
+          {
+            "text": "다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "맹금들개쥐-무리-p2",
+      "text": {
+        "en": [
+          {
+            "text": "Feral dogs formed families along the walls of the Magok laboratories, in closed security passages, and on weedy lots, and at night they went down as far as the Noryangjin fish docks. Their rusted collar rings made a clinking of iron, so they were named the Abandoned-Dog Iron Pack. They were closer to the result of the habits of 2026, when private shelters closed their doors and construction-site guard dogs lost their people in the evacuation columns, clinging for a century to dock leftovers and the sound of ration-cart wheels. The leader was not fixed. The coexisting kind that walked beside the ration carts was a learning of the same pack. "
+          },
+          {
+            "text": "G03",
+            "link": {
+              "domain": "bestiary",
+              "slug": "groups/Hostile-Group-G03"
+            }
+          },
+          {
+            "text": "."
+          }
+        ],
+        "ko": [
+          {
+            "text": "들개는 마곡 연구소 담장과 폐쇄된 경비 통로, 잡초 공터에서 가족을 이루고, 밤이면 노량진 수산 하역장까지 내려간다. 녹슨 목줄 고리가 철편 소리를 내므로 유기견철군이라는 이름이 붙었다. 사설 보호소가 문을 닫고, 공사장 경비견이 대피 행렬에서 사람을 잃던 2026의 습관이 한 세기 동안 하역 잔여와 급식 수레 바퀴음에 달라붙은 결과에 가깝다. 우두머리는 고정되지 않는다. 급식 수레 곁을 걷는 공존형도 같은 무리의 학습이다. "
+          },
+          {
+            "text": "G03",
+            "link": {
+              "domain": "bestiary",
+              "slug": "groups/Hostile-Group-G03"
+            }
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "맹금들개쥐-무리-p3",
+      "text": {
+        "en": [
+          {
+            "text": "Rats made states at the transfers. Where crumbs and the heat of insulated pipes overlapped at the junctions where the Gangdong-Amsa ration passages met the Eunpyeong-Seongbuk evacuation stairs, two or three core nests formed under the cable trays. The colonies were not locked as hosts of any special plague. They were only a density of food, warmth, and shelter. When their droppings damaged wire insulation, the guidance displays went dark, and in the dark passages people thought of contagion first. "
+          },
+          {
+            "text": "G05",
+            "link": {
+              "domain": "bestiary",
+              "slug": "groups/Hostile-Group-G05"
+            }
+          },
+          {
+            "text": "."
+          }
+        ],
+        "ko": [
+          {
+            "text": "쥐는 환승에서 나라를 만든다. 강동·암사 쪽 배급 통로와 은평·성북 쪽 대피 계단이 맞물리는 연결부에 부스러기와 보온 배관의 열이 겹치면, 케이블 트레이 아래 코어 둥지가 둘 셋 생긴다. 군락은 특별한 역병의 숙주로 잠그지 않는다. 먹이와 온열과 은신처의 밀도일 뿐이다. 배설이 전선 피복을 상하게 하면 안내 전광이 꺼지고, 꺼진 통로에서 사람들은 전염을 먼저 떠올린다. "
+          },
+          {
+            "text": "G05",
+            "link": {
+              "domain": "bestiary",
+              "slug": "groups/Hostile-Group-G05"
+            }
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "맹금들개쥐-무리-p4",
+      "text": {
+        "en": [
+          {
+            "text": "On the wetlands of the Han, Nanji, and Amsa and the drainage ponds of the Changdong depot, waterfowl and waders settled first, and when the food rose, raptors followed onto the wires. When the sluices were lowered unilaterally, the flocks shot up over the depot tracks and blocked the train movements. The name binding migratory birds and predatory birds into one colony was creative, but the stopovers of the Han and the depot ponds were places that existed in 2026 as well. "
+          },
+          {
+            "text": "G06",
+            "link": {
+              "domain": "bestiary",
+              "slug": "groups/Hostile-Group-G06"
+            }
+          },
+          {
+            "text": "."
+          }
+        ],
+        "ko": [
+          {
+            "text": "한강·난지·암사 습지와 창동 기지 배수 연못에는 수조류와 섭금류가 먼저 앉고, 먹이가 오르면 맹금이 전선으로 따른다. 수문을 일방적으로 낮추면 무리는 구내선 위로 솟구쳐 입출고를 가로막는다. 철새와 포식 조류를 한 군락으로 묶는 이름은 창작이나, 한강의 기착과 차량기지 연못은 2026에도 있던 자리다. "
+          },
+          {
+            "text": "G06",
+            "link": {
+              "domain": "bestiary",
+              "slug": "groups/Hostile-Group-G06"
+            }
+          },
+          {
+            "text": "."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "맹금들개쥐-무리-p5",
+      "text": {
+        "en": [
+          {
+            "text": "Sweeping up the swarms with firearms was left as a last resort. Sealing, ration detours, and the collection of leftovers were closer to what guarded the human windows. Why the stations, tunnels, and depots were the skeleton of those windows was connected by "
+          },
+          {
+            "text": "The Structures Compendium",
+            "link": {
+              "domain": "structures",
+              "slug": "Structures"
+            }
+          },
+          {
+            "text": "."
+          }
+        ],
+        "ko": [
+          {
+            "text": "총기로 무리를 쓸어 담는 일은 최후 수단으로 남긴다. 봉인과 급식 우회와 잔반 회수가 사람의 창구를 지키는 쪽에 가깝다. 역과 터널과 기지가 그 창구의 뼈대인 까닭은 "
+          },
+          {
+            "text": "구조물 총람",
+            "link": {
+              "domain": "structures",
+              "slug": "Structures"
+            }
+          },
+          {
+            "text": "이 잇는다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "맹금들개쥐-무리-table6",
+      "columns": [
+        {
+          "en": "Layer",
+          "ko": "층"
+        },
+        {
+          "en": "2026 starting point",
+          "ko": "2026 출발점"
+        },
+        {
+          "en": "What remained at the 2126 opening",
+          "ko": "개막 2126에 남는 것"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "People",
+            "ko": "사람"
+          },
+          {
+            "en": "Subway living spheres, military registers, trade sites",
+            "ko": "지하철 생활권, 병역 명부, 생업 현장"
+          },
+          {
+            "en": "The sixteen states of station strongholds, paper registers, the seven trades",
+            "ko": "역 거점의 십육국, 종이 명부, 생업 일곱"
+          }
+        ],
+        [
+          {
+            "en": "Logistics humanoids",
+            "ko": "물류 휴머노이드"
+          },
+          {
+            "en": "Atlas-class field trials, factory density at the front of the world",
+            "ko": "아틀라스 계열 현장 시험, 공장 밀도 세계 앞줄"
+          },
+          {
+            "en": "Stopped remnants and repeated transport, dismantled modules",
+            "ko": "정지 잔존과 이송 반복, 해체 모듈"
+          }
+        ],
+        [
+          {
+            "en": "Disaster machines",
+            "ko": "방재 기체"
+          },
+          {
+            "en": "Search, guard, and transport routines tied to the call network",
+            "ko": "수색·경계·이송 루틴을 호출망에 묶음"
+          },
+          {
+            "en": [
+              {
+                "text": "Endless repetition in the sealed galleries. "
+              },
+              {
+                "text": "Lost Technology",
+                "link": {
+                  "domain": "technology",
+                  "slug": "Lost-Technology-Lineage"
+                }
+              }
+            ],
+            "ko": [
+              {
+                "text": "봉인 갤러리의 무한 반복. "
+              },
+              {
+                "text": "잃어버린 기술",
+                "link": {
+                  "domain": "technology",
+                  "slug": "Lost-Technology-Lineage"
+                }
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "en": "Raptors, feral dogs, rats",
+            "ko": "맹금·들개·쥐"
+          },
+          {
+            "en": "Han River birds, abandoned dogs, station rats",
+            "ko": "한강 조류, 유기견, 역 쥐"
+          },
+          {
+            "en": "Colonies on the towers, the docks, and the transfer trays",
+            "ko": "철탑·하역장·환승 트레이의 군락"
+          }
+        ]
+      ]
+    }
+  ],
+  "data": {}
+}

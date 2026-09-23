@@ -1,0 +1,2228 @@
+{
+  "version": 1,
+  "domain": "characters",
+  "id": "DOC:Vassal-Dynasty-Politics",
+  "slug": "vassal-dynasty-politics",
+  "status": "draft",
+  "tense": {
+    "en": "present",
+    "ko": "present"
+  },
+  "provenance": {
+    "original_anchor": "lore/characters/Vassal-Dynasty-Politics.md",
+    "original_hash": "8e1a82a6b045313756cc57c32520fae13f97dd62083a449b18ac7d81252c9dc0",
+    "history": [
+      "Korean lore/characters/Vassal-Dynasty-Politics.md SHA-256 8e1a82a6b045313756cc57c32520fae13f97dd62083a449b18ac7d81252c9dc0.",
+      "English lore/characters/Vassal-Dynasty-Politics.en.md SHA-256 43733f25ab635e14b257b40df93fa43b34991b4dde377c56b26b5f80009c6466; copied verbatim, no translation written.",
+      "KO built from the sweep-w1 WEB working tree (dirty) SHA-256 8e1a82a6b045313756cc57c32520fae13f97dd62083a449b18ac7d81252c9dc0. The page had no committed EN; EN was translated from KO during the JSON migration (SHA-256 43733f25ab635e14b257b40df93fa43b34991b4dde377c56b26b5f80009c6466) and needs human EN review."
+    ]
+  },
+  "source": {
+    "kind": "original-fiction",
+    "refs": [
+      "lore/characters/Vassal-Dynasty-Politics.md",
+      "lore/characters/Vassal-Dynasty-Politics.en.md"
+    ]
+  },
+  "locales": {
+    "en": {
+      "title": "Dynasty and Vassal Politics",
+      "summary": "In later Seoul the old states and institutions remain only as myth and relic.",
+      "tense": "present"
+    },
+    "ko": {
+      "title": "왕조와 봉신 정치",
+      "summary": "후세 서울에서 옛 국가와 제도는 신화와 유물로만 남는다.",
+      "tense": "present"
+    }
+  },
+  "content": [
+    {
+      "kind": "heading",
+      "anchor": "왕조와-봉신-정치",
+      "text": {
+        "en": "Dynasty and Vassal Politics",
+        "ko": "왕조와 봉신 정치"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "왕조와-봉신-정치-p1",
+      "text": {
+        "en": "In later Seoul the old states and institutions remain only as myth and relic. What moves the board now is the regional successor polity that holds the stations, the lines, and the gu, and titles and vassals alone do not hold this board up. A title attaches when a relic is accredited and loyalty is proven by rite, in a place where faith and culture have split. It reads as the work of a week that an expedition has left empty.",
+        "ko": "후세 서울에서 옛 국가와 제도는 신화와 유물로만 남는다. 지금 판을 흔드는 것은 역과 노선과 구를 쥔 지역 후계 정치체이고 작위와 봉신만으로는 이 판이 서지 않는다. 신앙과 문화가 갈라진 자리에서 유물을 인준하고 의례로 충성을 증명할 때 작위가 붙는다. 원정이 비운 주의 일로 읽힌다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "왕조와-봉신-정치-p2",
+      "text": {
+        "en": [
+          {
+            "text": "The state remains as a vessel. What acts is a named person, and there is no fixed state personality and no betrayal probability. Proposals, approvals, and refusals ride the flow of "
+          },
+          {
+            "text": "Ambitions",
+            "link": {
+              "domain": "characters",
+              "slug": "Ambitions-and-Relations"
+            }
+          },
+          {
+            "text": " as it stands, and this document is the title, vassal, and dynasty rule laid on top of that flow. The ambition, fear, relation, and memory fields do not change."
+          }
+        ],
+        "ko": [
+          {
+            "text": "국가는 그릇으로 남는다. 행동하는 것은 이름 있는 인물이며 고정 국가 성격과 배신 확률은 두지 않는다. 제안과 승인과 거부는 "
+          },
+          {
+            "text": "야망",
+            "link": {
+              "domain": "characters",
+              "slug": "Ambitions-and-Relations"
+            }
+          },
+          {
+            "text": "의 흐름을 그대로 타고 이 문서는 그 흐름 위에 얹는 작위·봉신·왕조 규칙이다. 야망·공포·관계·기억의 칸은 바꾸지 않는다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "왕조와-봉신-정치-p3",
+      "text": {
+        "en": [
+          {
+            "text": "Granting a title, naming an heir, and backing a plot do not touch a state number directly. Only the micro-line of "
+          },
+          {
+            "text": "Heirs, the Name Roster, and the World Ledger",
+            "link": {
+              "domain": "characters",
+              "slug": "Heirs-Names-and-World-Ledger"
+            }
+          },
+          {
+            "text": " is left, and a world event fires once when the sum crosses the threshold. Rite attendance and relic escort accumulate in the same ledger."
+          }
+        ],
+        "ko": [
+          {
+            "text": "작위 수여와 후계 지명과 음모 지원은 국가 수치를 바로 건드리지 않는다. "
+          },
+          {
+            "text": "후계, 이름 로스터, 세계 원장",
+            "link": {
+              "domain": "characters",
+              "slug": "Heirs-Names-and-World-Ledger"
+            }
+          },
+          {
+            "text": "의 미시 줄만 남기고 합이 임계를 넘을 때 세계 사건이 한 번만 난다. 의례 출석과 유물 호송도 같은 원장에 쌓인다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "작위-서열",
+      "text": {
+        "en": "Title Order",
+        "ko": "작위 서열"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "작위-서열-p1",
+      "text": {
+        "en": [
+          {
+            "text": "A title is not a territorial banner. It is an office that holds keys, ledgers, and passage as lawful. It does not attach by occupation alone, and only after a station is integrated in "
+          },
+          {
+            "text": "Strongholds and Territory",
+            "link": {
+              "domain": "economy",
+              "slug": "Strongholds-and-Territory"
+            }
+          },
+          {
+            "text": " does a seat open where a `Station Keeper` can sit. Without a relic rite that seat stays a dispute."
+          }
+        ],
+        "ko": [
+          {
+            "text": "작위는 영토 깃발이 아니라 열쇠와 장부와 통행을 합법으로 쥐는 직위다. 점령만으로 붙지 않고 "
+          },
+          {
+            "text": "거점과 영토",
+            "link": {
+              "domain": "economy",
+              "slug": "Strongholds-and-Territory"
+            }
+          },
+          {
+            "text": "에서 역이 통합된 뒤에야 `역사`가 열릴 자리가 생깁니다. 유물 의례가 없으면 그 자리도 분쟁으로 남는다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "작위-서열-p2",
+      "text": {
+        "en": "The order is the size of the seat, not a person's dignity number. A lower seat does not submit to a higher one automatically, and submission arises only by a vassal contract. The contract records the faith family and the culture key.",
+        "ko": "서열은 자리의 크기이지 인물의 위엄 수치가 아닙니다. 아래가 위에게 자동으로 복속하지 않으며 복속은 봉신 계약으로만 생깁니다. 계약에는 신앙 가족과 문화 키를 적는다."
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "작위-서열-table3",
+      "columns": [
+        {
+          "en": "Order",
+          "ko": "서열"
+        },
+        {
+          "en": "Title",
+          "ko": "작위"
+        },
+        {
+          "en": "Seat",
+          "ko": "자리"
+        },
+        {
+          "en": "Legitimating relic",
+          "ko": "정통 유물"
+        },
+        {
+          "en": "When it opens",
+          "ko": "열리는 때"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "1",
+            "ko": "1"
+          },
+          {
+            "en": "Station Keeper",
+            "ko": "역사"
+          },
+          {
+            "en": "one integrated station",
+            "ko": "통합된 한 역"
+          },
+          {
+            "en": "station nameplate / gate seal",
+            "ko": "역명패 / 개찰 인장"
+          },
+          {
+            "en": "integration condition and gate dedication",
+            "ko": "통합 조건과 개찰 봉헌"
+          }
+        ],
+        [
+          {
+            "en": "2",
+            "ko": "2"
+          },
+          {
+            "en": "Section Keeper",
+            "ko": "구간사"
+          },
+          {
+            "en": "one stretch of tunnel, bridge, or sluice",
+            "ko": "터널·교량·수문 한 구간"
+          },
+          {
+            "en": "section seal key",
+            "ko": "구간 봉인 열쇠"
+          },
+          {
+            "en": "passage ledger and tunnel pilgrimage",
+            "ko": "통행 장부와 터널 순례"
+          }
+        ],
+        [
+          {
+            "en": "3",
+            "ko": "3"
+          },
+          {
+            "en": "District Clerk",
+            "ko": "구주사"
+          },
+          {
+            "en": "ration, patrol, and household register of one surface gu",
+            "ko": "지상 한 구의 배급·순찰·호적"
+          },
+          {
+            "en": "remnant volume of the gu household register",
+            "ko": "구 호적 잔권"
+          },
+          {
+            "en": "gu ledger and ration offering",
+            "ko": "구 장부와 배급 헌납"
+          }
+        ],
+        [
+          {
+            "en": "4",
+            "ko": "4"
+          },
+          {
+            "en": "Line Clerk",
+            "ko": "선주사"
+          },
+          {
+            "en": "one stretch of a line in operation",
+            "ko": "가동 중인 한 노선 구간"
+          },
+          {
+            "en": "dispatch ledger / wheel nameplate",
+            "ko": "배차 원장 / 차륜 제명패"
+          },
+          {
+            "en": "dispatch right and the oil rite",
+            "ko": "배차권과 기름례"
+          }
+        ],
+        [
+          {
+            "en": "5",
+            "ko": "5"
+          },
+          {
+            "en": "Sphere Keeper",
+            "ko": "권역사"
+          },
+          {
+            "en": "the head's seat of a successor polity",
+            "ko": "후계 정치체의 수장 자리"
+          },
+          {
+            "en": "sphere lifeline relic",
+            "ko": "권역 생명선 유물"
+          },
+          {
+            "en": [
+              {
+                "text": "a "
+              },
+              {
+                "text": "Sixteen States of Seoul",
+                "link": {
+                  "domain": "factions",
+                  "slug": "Sixteen-States"
+                }
+              },
+              {
+                "text": " slot and the family rite"
+              }
+            ],
+            "ko": [
+              {
+                "text": "서울 십육국",
+                "link": {
+                  "domain": "factions",
+                  "slug": "Sixteen-States"
+                }
+              },
+              {
+                "text": " 슬롯과 가족 제례"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "en": "6",
+            "ko": "6"
+          },
+          {
+            "en": "Charter Holder",
+            "ko": "헌장주"
+          },
+          {
+            "en": "the nominal peak of a hegemony agenda",
+            "ko": "패권 의제의 명목 꼭대기"
+          },
+          {
+            "en": "charter original",
+            "ko": "헌장 원본"
+          },
+          {
+            "en": "public reading -- one person cannot hold two",
+            "ko": "공개 낭독 — 한 인물이 둘을 쥐지 못함"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "작위-서열-p4",
+      "text": {
+        "en": "A gu is the wreck of a pre-collapse administrative district, not a state. A line is territory and logistics, and a connected stretch weighs more than a single station. The same person can hold several titles, but overextension is not a title cap. It arises when stewards, garrisons, and connections fall short.",
+        "ko": "구는 붕괴 전 행정구의 잔해이지 국가가 아닙니다. 노선은 영토이자 물류이고 역 하나보다 연결된 구간이 무겁다. 같은 인물이 여러 작위를 쥘 수 있으나 과확장은 작위 상한이 아닙니다. 담당자와 주둔과 연결이 모자랄 때 생깁니다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "작위-서열-p5",
+      "text": {
+        "en": "A seat that holds a lifeline, such as a sluice, a purification works, a rolling-stock depot, a transmission tower, or an auction hall, weighs more even inside the same order. The Yeouido sluice, the Amsa waterworks, and the Changdong wheel are the examples, and weight does not raise the order by one step. The relic only grows thicker, and the leverage of the vassal clause only grows larger.",
+        "ko": "수문·정수·차량기지·송신탑·경매장처럼 생명선을 쥐는 자리는 같은 서열 안에서도 무겁다. 여의도 수문과 암사 상수와 창동 차륜이 그 예이고 무겁다고 서열이 한 칸 올라가지는 않는다. 유물이 두꺼워지고 봉신 조항의 지렛대가 커질 뿐이다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "작위-서열-p6",
+      "text": {
+        "en": [
+          {
+            "text": "Each title has only three states, held, vacant, and disputed, and an unnamed holder is not filled in. A title that requires a named person, and whose candidates are empty, has one person made by "
+          },
+          {
+            "text": "Heirs, the Name Roster, and the World Ledger",
+            "link": {
+              "domain": "characters",
+              "slug": "Heirs-Names-and-World-Ledger"
+            }
+          },
+          {
+            "text": ", and if the pool runs dry it is vacant. When only the relic exists and there is no holder, a custodian dispute opens."
+          }
+        ],
+        "ko": [
+          {
+            "text": "작위마다 보유자·공석·분쟁 세 상태만 두고 무명 보유자를 채우지 않는다. 이름 있는 인물을 요구하는 작위인데 후보가 비면 "
+          },
+          {
+            "text": "후계, 이름 로스터, 세계 원장",
+            "link": {
+              "domain": "characters",
+              "slug": "Heirs-Names-and-World-Ledger"
+            }
+          },
+          {
+            "text": "이 한 명을 만들고 풀이 바닥나면 공석이다. 유물만 있고 보유자가 없으면 보관자 쟁점이 열립니다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "유물-인준과-잔해-의례",
+      "text": {
+        "en": "Relic Accreditation and Wreck Rites",
+        "ko": "유물 인준과 잔해 의례"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "유물-인준과-잔해-의례-p1",
+      "text": {
+        "en": "Wreck is not scrap. A stopped machine and a remaining ledger become objects of veneration, and the seal of an old institution becomes myth. A Line Clerk cannot be claimed by laboratory authority alone, and relic technique becomes a title claim only inside this mythic frame.",
+        "ko": "잔해는 고철이 아니다. 멈춘 기계와 남은 장부가 숭배 대상이 되고 옛 제도의 직인은 신화가 된다. 실험실 권위만으로 선주사를 주장하지 못하며 유물 기술은 이 신화 틀 안에서만 작위 명분이 된다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "유물-인준과-잔해-의례-p2",
+      "text": {
+        "en": "Relics fall into three branches. A lifeline relic is a sluice seal, a pump seal, a wheel nameplate, or a switchboard key. A ledger relic is a will original, an auction ledger, a mobilization register, or a transmission key. A consumption relic remains as a first exchange ticket, a famine ration ticket, or a severance burning box.",
+        "ko": "유물은 세 갈래다. 생명선 유물은 수문 인장·펌프 봉인·차륜 제명패·배전반 열쇠다. 장부 유물은 유언 원본·경매 원장·동원 명부·송신키다. 소비 유물은 첫 교환권·기근 배급표·단절 소각함으로 남는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "유물-인준과-잔해-의례-p3",
+      "text": {
+        "en": "A rite is not a command that raises legitimacy directly. Attendance, offering, and escort accumulate as micro-lines, and when the sum crosses the threshold the ground-specific legitimacy `L` moves once.",
+        "ko": "의례는 정통성을 직접 올리는 명령이 아닙니다. 출석과 헌납과 호송이 미시 줄로 쌓이고 합이 임계를 넘으면 근거별 정통성 `L`이 한 번 움직인다."
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "유물-인준과-잔해-의례-table4",
+      "columns": [
+        {
+          "en": "Rite",
+          "ko": "의례"
+        },
+        {
+          "en": "What is offered",
+          "ko": "바치는 것"
+        },
+        {
+          "en": "Family that mainly uses it",
+          "ko": "주로 쓰는 가족"
+        },
+        {
+          "en": "What it does to titles and vassals",
+          "ko": "작위·봉신에 하는 일"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Offering rite",
+            "ko": "헌납례"
+          },
+          {
+            "en": "that day's first water / first power / first quoted price",
+            "ko": "그날 첫 물 / 첫 전력 / 첫 호가"
+          },
+          {
+            "en": "Water Vein / Power Vein / Ledger",
+            "ko": "수맥 / 전맥 / 장부"
+          },
+          {
+            "en": "a lower title offers its share to a superior relic",
+            "ko": "하위 작위가 상급 유물에 몫을 바침"
+          }
+        ],
+        [
+          {
+            "en": "Burning rite",
+            "ko": "소각례"
+          },
+          {
+            "en": "an expired exchange ticket / a false ration ticket",
+            "ko": "만료 교환권 / 거짓 배급표"
+          },
+          {
+            "en": "Ledger / Relief",
+            "ko": "장부 / 구호"
+          },
+          {
+            "en": "it soothes a severance -- if a secret ration is exposed, the claim is lost",
+            "ko": "단절을 달램 — 비밀 배급이 드러나면 명분 상실"
+          }
+        ],
+        [
+          {
+            "en": "Operation rite",
+            "ko": "가동례"
+          },
+          {
+            "en": "turning on a pump, a furnace, or a transmission tower in a fixed order",
+            "ko": "펌프·로·송신탑을 정한 순서로 켬"
+          },
+          {
+            "en": "Power Vein / Track / Transmission",
+            "ko": "전맥 / 궤도 / 송신"
+          },
+          {
+            "en": "operation is piety -- a hidden blackout is a betrayal dispute",
+            "ko": "가동이 경건 — 숨긴 정전은 배신 쟁점"
+          }
+        ],
+        [
+          {
+            "en": "Oil rite",
+            "ko": "기름례"
+          },
+          {
+            "en": "recovered oil applied to wheels and bearings",
+            "ko": "회수한 기름을 차륜과 베어링에 바름"
+          },
+          {
+            "en": "Track",
+            "ko": "궤도"
+          },
+          {
+            "en": "recovery is pilgrimage, and Line Clerk accreditation",
+            "ko": "회수가 순례이며 선주사 인준"
+          }
+        ],
+        [
+          {
+            "en": "Gate dedication",
+            "ko": "개찰 봉헌"
+          },
+          {
+            "en": "stamping the watch seal on the station nameplate",
+            "ko": "역명패에 당직 인을 찍음"
+          },
+          {
+            "en": "Water Vein / Track",
+            "ko": "수맥 / 궤도"
+          },
+          {
+            "en": "Station Keeper accreditation -- integration alone is not enough",
+            "ko": "역사 인준 — 통합만으로는 부족"
+          }
+        ],
+        [
+          {
+            "en": "Relic escort",
+            "ko": "유물 호송"
+          },
+          {
+            "en": "moving a custodian or a relic to another station",
+            "ko": "보관자나 유물을 다른 역으로 옮김"
+          },
+          {
+            "en": "every family",
+            "ko": "전 가족"
+          },
+          {
+            "en": "an `escort` line -- if it is taken, the title is disputed",
+            "ko": "`escort` 줄 — 빼앗기면 작위가 분쟁"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "유물-인준과-잔해-의례-p5",
+      "text": {
+        "en": "A relic custodian and a title holder can split. The Ttukseom assembly method is the example, and if the custodian belongs to another faith family the accreditation path forks into two. A doctrine that recognizes only one shrine treats the other side's escort as heresy.",
+        "ko": "유물 보관자와 작위 보유자는 갈라질 수 있다. 뚝섬 조립법이 그 예이고 보관자가 다른 신앙 가족이면 인준 경로가 둘로 갈립니다. 한쪽 사당만 인정하는 교리는 다른 쪽 호송을 이단으로 봅니다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "유물-인준과-잔해-의례-p6",
+      "text": {
+        "en": "Recovery is read as piety. Offering scrap to a shrine furnace is the Power Vein's pilgrimage, and opening only a joint inspection without handing over the transmission key is Sangam's operation rite. Even if the screen goes dark, the Water Vein treats the water ledger as a relic if that ledger remains.",
+        "ko": "회수는 경건으로 읽힌다. 고철을 사당 로에 바치는 일은 전맥의 순례이고 송신키를 넘기지 않고 공동 점검만 여는 일은 상암의 가동례다. 화면이 꺼져도 급수 원장이 남으면 수맥은 그 원장을 유물로 봅니다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "봉신-계약",
+      "text": {
+        "en": "Vassal Contracts",
+        "ko": "봉신 계약"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "봉신-계약-p1",
+      "text": {
+        "en": [
+          {
+            "text": "A vassal stands not as a state-relation number but as a contract with signatories and clauses. It uses the same vessel as the alliance of "
+          },
+          {
+            "text": "Ambitions",
+            "link": {
+              "domain": "characters",
+              "slug": "Ambitions-and-Relations"
+            }
+          },
+          {
+            "text": ", and only the clauses differ. A contract does not stand if it records only water and passage, and if the public faith, the culture key, and the rite calendar are missing, a re-ratification dispute opens at once."
+          }
+        ],
+        "ko": [
+          {
+            "text": "봉신은 국가 관계 수치가 아니라 서명자와 조항을 가진 계약으로 선다. "
+          },
+          {
+            "text": "야망",
+            "link": {
+              "domain": "characters",
+              "slug": "Ambitions-and-Relations"
+            }
+          },
+          {
+            "text": "의 동맹과 같은 그릇을 쓰고 조항만 다릅니다. 급수와 통행만 적으면 계약이 서지 않으며 공개 신앙과 문화 키와 의례 달력이 빠지면 재비준 쟁점이 바로 열립니다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "봉신-계약-p2",
+      "text": {
+        "en": "The fields put into one contract line are the superior title and the inferior title, the proposer, signatory, and ratifier of both sides, whether it attaches to the office or to the person, and the clauses actually to be performed among water, passage, ration, escort, record accreditation, and muster. The public faith is recorded, and if there is a hidden faith that field stays only in the private ledger. Both sides' `CultureKey`, the rite clause (which of offering, burning, operation, oil, and pilgrimage will actually be attended), whether it is a mixed contract or conversion pressure, and one of automatic continuance, re-ratification, or termination when a signatory dies or loses the office are recorded together.",
+        "ko": "계약 한 줄에 넣는 칸은 상급 작위와 하급 작위, 양측의 제안자·서명자·비준자, 직위에 귀속되는지 인물에 귀속되는지, 급수·통행·배급·호송·기록 인준·소집 가운데 실제로 이행할 조항이다. 공개 신앙을 적고 숨은 신앙이 있으면 그 칸은 비공개 원장에만 둡니다. 양측 `CultureKey`와 의례 조항(헌납·소각·가동·기름·순례 가운데 실제로 출석할 것), 혼합 계약인지 개종 압력인지, 서명자가 죽거나 직위를 잃을 때 자동 유지·재비준·종료 중 하나도 같이 적는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "봉신-계약-p3",
+      "text": {
+        "en": [
+          {
+            "text": "An impossible promise is not passed by a high negotiation. As in "
+          },
+          {
+            "text": "Powers and Diplomacy",
+            "link": {
+              "domain": "factions",
+              "slug": "Factions-and-Diplomacy"
+            }
+          },
+          {
+            "text": ", the path, the goods, the authority, and exclusive-contract collisions are checked first, and if Yeouido water is already bound to another contract the same water cannot be given to two vassals. The same relic cannot sit in two shrines at once."
+          }
+        ],
+        "ko": [
+          {
+            "text": "불가능한 약속은 높은 교섭으로 통과시키지 않는다. "
+          },
+          {
+            "text": "세력과 외교",
+            "link": {
+              "domain": "factions",
+              "slug": "Factions-and-Diplomacy"
+            }
+          },
+          {
+            "text": "처럼 먼저 경로와 물자와 권한과 배타 계약 충돌을 검사하고 여의도 급수를 이미 다른 계약에 묶었으면 같은 물을 두 봉신에게 줄 수 없다. 같은 유물을 두 사당에 동시에 둘 수도 없다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "봉신-계약-p4",
+      "text": {
+        "en": [
+          {
+            "text": "A muster clause does not summon combat troops. It only decides to whom the mobilization register, the armory key, and the desertion ledger of "
+          },
+          {
+            "text": "Conscription Remnants and the Military Registers",
+            "link": {
+              "domain": "factions",
+              "slug": "Conscription-Remnants"
+            }
+          },
+          {
+            "text": " are opened, and if a muster is laid on a merchant livelihood holder the contract is refused. A merchant does not fight by default, and even if the Ledger family venerates the mobilization register, muster and veneration are different."
+          }
+        ],
+        "ko": [
+          {
+            "text": "소집 조항은 전투 병력을 소환하지 않는다. "
+          },
+          {
+            "text": "징집 잔존과 군 장부",
+            "link": {
+              "domain": "factions",
+              "slug": "Conscription-Remnants"
+            }
+          },
+          {
+            "text": "의 동원 명부·무기고 열쇠·탈영 장부를 누구에게 열지 정할 뿐이고 상인 생업자에게 소집을 걸면 계약은 거부된다. 상인은 기본적으로 싸우지 않으며 장부 가족이 동원 명부를 숭배해도 소집과 숭배는 다릅니다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "봉신-계약-p5",
+      "text": {
+        "en": "A protectorate stands as a vassal between Sphere Keeper and Sphere Keeper. Bae Woojin's eastern waterworks protection sphere takes this road, and in its peaceful face it is a joint defense with a term, an audit, and waterworks-rite attendance. In its violent face a protection government, forced service, and conversion pressure open, and lesser-state joint negotiation is the agenda by which Jeong Yura's side tries to block this road.",
+        "ko": "보호국은 권역사와 권역사 사이의 봉신으로 선다. 배우진의 동부 상수보호권이 이 길을 가고 평화면 기간과 감사와 상수례 출석이 있는 공동방위다. 폭력이면 보호정부와 강제복무와 개종 압력이 열리며 약소국 공동교섭은 정유라 쪽에서 이 길을 막으려는 의제다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "봉신-계약-p6",
+      "text": {
+        "en": "Delegation and direct rule can be mixed. If the head holds a Station Keeper directly, it is direct rule, and if it is given to a named vassal it reads as delegation. If only the relic is pulled out without recovering the delegation, a betrayal dispute opens.",
+        "ko": "위임과 직할을 섞을 수 있다. 수장이 역사를 직접 쥐면 직할이고 이름 있는 봉신에게 주면 위임으로 읽힌다. 위임을 거두지 못한 채 유물만 빼면 배신 쟁점이 열립니다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "봉신-계약-p7",
+      "text": {
+        "en": "Vassals can be formed between different faith families as well. Then a mixed contract is the default, and leaving only one rite and erasing the other meets the three conditions of betrayal. The detailed crossing follows the schism matrix.",
+        "ko": "다른 신앙 가족끼리도 봉신을 맺을 수 있다. 그때는 혼합 계약이 기본이고 한 제례만 남기고 다른 제례를 지우면 배신 세 조건을 탑니다. 자세한 교차는 분열 행렬을 따릅니다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "충성은-수치가-아니다",
+      "text": {
+        "en": "Loyalty Is Not a Number",
+        "ko": "충성은 수치가 아니다"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "충성은-수치가-아니다-p1",
+      "text": {
+        "en": "No loyalty slider is made. A vassal's attitude is read only from materials that already exist.",
+        "ko": "충성 슬라이더는 만들지 않는다. 봉신의 태도는 이미 있는 재료로만 읽는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "충성은-수치가-아니다-p2",
+      "text": {
+        "en": "Those materials are the directional relation between signatories (kin, adoption, master, patronage, debt, oath, rivalry, grudge), personal trust `T`, the grounds of local legitimacy `L`, clause-performance reliability `Rel`, and fear (loss of office, siege, exposure of a secret, dependence on a foreign state). The record of rite attendance (the micro-lines of offering, burning, operation, and escort) and the crossing of faith family and culture key are read together, and the matrix gives the weights.",
+        "ko": "서명자 사이의 방향성 관계(친족·양자·사제·후견·빚·맹세·경쟁·원한), 개인 신뢰 `T`, 현지 정통성 `L`의 근거, 조항 이행 신뢰도 `Rel`, 공포(직위 상실·포위·비밀 폭로·외국 의존)가 그 재료다. 의례 출석 기록(헌납·소각·가동·호송의 미시 줄)과 신앙 가족·문화 키의 교차도 같이 읽으며 행렬이 가중치를 줍니다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "충성은-수치가-아니다-p3",
+      "text": {
+        "en": "A person does not hold more than twelve ordinary relations. A vassal oath uses one field as contract and oath, and a master relation opens newly only inside the same family. If it is another family, the person is only a witness of the mixed contract, and even if a low-intensity relation is pushed out the event ledger remains.",
+        "ko": "인물당 일반 관계는 12개를 넘기지 않는다. 봉신 맹세는 계약·맹세로 한 칸을 쓰고 사제 관계는 같은 가족 안에서만 새로 열립니다. 다른 가족이면 혼합 계약의 증인일 뿐이며 낮은 강도의 관계가 밀려나도 사건 원장은 남는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "충성은-수치가-아니다-p4",
+      "text": {
+        "en": "The conditions of betrayal must all three be present. A treaty or a personal oath that can be broken, an order or an arbitrary act by a named person, and a trigger and a motive that the person knows. If a rite refusal is in the clauses, that refusal is the breach, and a commander's arbitrary attack is not an immediate state war. The head chooses whether to punish and pay compensation or to approve after the fact.",
+        "ko": "배신 조건은 세 가지가 모두 있어야 한다. 위반할 조약이나 개인 맹세, 이름 있는 인물의 명령 또는 독단, 그 인물이 아는 촉발과 동기다. 의례 거부가 조항에 있으면 그 거부가 위반이고 군령관의 독단 공격은 즉시 국가전쟁이 아니다. 수장이 처벌하고 배상할지 사후 승인할지 고른다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "충성은-수치가-아니다-p5",
+      "text": {
+        "en": "Political capital is spent on granting a title, reviewing a contract, public accreditation, and summoning a rite. It cannot raise trust and legitimacy directly, and the value changes only by the recorded result of the action that backed it.",
+        "ko": "정치 자본은 작위 수여·계약 재검토·공개 인준·의례 소집에 씁니다. 신뢰와 정통성을 직접 올리지 못하며 값은 뒷받침한 행동의 기록된 결과로만 바뀝니다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "상속과-후계",
+      "text": {
+        "en": "Inheritance and Heirs",
+        "ko": "상속과 후계"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "상속과-후계-p1",
+      "text": {
+        "en": [
+          {
+            "text": "Succession does not use bloodline alone. The order follows "
+          },
+          {
+            "text": "Ambitions",
+            "link": {
+              "domain": "characters",
+              "slug": "Ambitions-and-Relations"
+            }
+          },
+          {
+            "text": " as it stands."
+          }
+        ],
+        "ko": [
+          {
+            "text": "계승은 혈통만 쓰지 않는다. 순서는 "
+          },
+          {
+            "text": "야망",
+            "link": {
+              "domain": "characters",
+              "slug": "Ambitions-and-Relations"
+            }
+          },
+          {
+            "text": "를 그대로 따릅니다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "상속과-후계-list2",
+      "ordered": true,
+      "items": [
+        {
+          "en": "designated heir",
+          "ko": "지정 후계자"
+        },
+        {
+          "en": "deputy head or acting holder",
+          "ko": "부수장 또는 대행자"
+        },
+        {
+          "en": "election and council acclamation",
+          "ko": "선거와 평의회 추대"
+        },
+        {
+          "en": "kin and adoptees",
+          "ko": "친족과 양자"
+        },
+        {
+          "en": "masters and apprentices",
+          "ko": "사제와 도제"
+        },
+        {
+          "en": "craft-guild recommendation",
+          "ko": "직능 길드 추천"
+        },
+        {
+          "en": "military stronghold control",
+          "ko": "군사적 거점 통제"
+        }
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "상속과-후계-p3",
+      "text": {
+        "en": "What changes is that the dispute splits by title. If one head dies holding a Station Keeper, a Line Clerk, and a Sphere Keeper together, the three seats do not vanish at once as a state deletion, and each title opens a vacancy and candidates. If the relic custodian is not the heir, a fourth dispute opens, and if the candidates overlap the `heir-stance` sum changes the designated heir or opens a succession dispute.",
+        "ko": "바뀌는 점은 작위마다 쟁점이 갈라진다는 점이다. 한 수장이 역사와 선주사와 권역사를 함께 쥐고 죽으면 세 자리가 한꺼번에 국가 삭제로 사라지지 않고 작위마다 공석과 후보가 열립니다. 유물 보관자가 후계가 아니면 네 번째 쟁점이 열리고 후보가 겹치면 `heir-stance` 합산이 지정 후계를 바꾸거나 계승 분쟁을 엽니다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "상속과-후계-p4",
+      "text": {
+        "en": "Culture does not erase the succession order. It only changes which field is claimed first. The western sluice attaches the record of contract performance and sluice-rite attendance as the claim of a designated will, and the central record does not treat a succession without a seal as a succession. In the northern refuge an adoptee and a relief master can stand ahead of blood kin, and the eastern caravan brings out the stronghold key, the escort command, and the waterworks rite quickly. The southeastern ration shakes an acclamation with the auction mediation right and the burning rite.",
+        "ko": "문화는 계승 순서를 지우지 않고 어떤 칸을 먼저 주장할지만 바꿉니다. 서부 수문은 계약 이행 기록과 수문례 출석을 지정 유언의 명분으로 붙이고 중앙 기록은 도장 없는 승계를 승계로 보지 않는다. 북부 피난은 양자와 구호 사제가 혈족보다 앞설 수 있으며 동부 상단은 거점 열쇠와 호위 지휘와 상수례를 빨리 꺼냅니다. 동남 배급은 경매 조정권과 소각례로 추대를 흔듭니다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "상속과-후계-p5",
+      "text": {
+        "en": "Faith changes the weight of the master and apprentice field. Inside the same family a master can stand against the designated heir, and in another family the master field does not open and only the witness of the mixed contract remains. If the doctrine splits, a master becomes a heretic even inside the same family, and then apprentice succession is a dispute.",
+        "ko": "신앙은 사제·도제 칸의 무게를 바꿉니다. 같은 가족이면 사제가 지정 후계와 맞설 수 있고 다른 가족이면 사제 칸은 열리지 않으며 혼합 계약의 증인만 남는다. 교리가 갈라지면 같은 가족 안에서도 사제가 이단이 되고 그때 도제 승계는 분쟁이다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "상속과-후계-p6",
+      "text": {
+        "en": "A title that requires a named person, and whose candidates are empty, has one person made from the culture name pool, and on a generation failure it is vacant. A seat that can be held by an acting holder or a caretaker alone is not generated, and if the player names an heir the roster is skipped. Even if the nominee's culture key differs, the personal name is not changed, and even if the faith family differs, the personal name is not changed. Only the rite calendar is reviewed again.",
+        "ko": "이름 있는 인물을 요구하는 작위인데 후보가 비면 문화 성명 풀에서 한 명을 만들고 생성 실패 시 공석이다. 대행자·관리인만으로 버틸 수 있는 자리는 생성하지 않으며 플레이어가 후계를 지명하면 로스터를 건너뜁니다. 지명 대상의 문화 키가 달라도 성명은 바꾸지 않고 신앙 가족이 달라도 성명은 바꾸지 않는다. 의례 달력만 재검토한다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "상속과-후계-p7",
+      "text": {
+        "en": [
+          {
+            "text": "A new person's `CultureKey` remains the sphere of birth. A child follows the guardian's key, and an adoptee can receive the key of the state of enrollment, but the existing personal name is kept. Only a notable house and a ledger house put "
+          },
+          {
+            "text": "Clan Seat and Generation Marker",
+            "link": {
+              "domain": "characters",
+              "slug": "Hangnyeol-and-Bon-gwan"
+            }
+          },
+          {
+            "text": " into the first character of the name, and the generation marker is not forced on every Korean person. A house with the generation marker turned on attaches well to the Ledger family's notarization of wills."
+          }
+        ],
+        "ko": [
+          {
+            "text": "새 인물의 `CultureKey`는 출생 권역으로 남는다. 자식은 보호자 쪽 키를 따르고 양자는 입적 국가의 키를 받을 수 있으나 기존 성명은 유지한다. 명문·장부 집안만 "
+          },
+          {
+            "text": "본관과 항렬",
+            "link": {
+              "domain": "characters",
+              "slug": "Hangnyeol-and-Bon-gwan"
+            }
+          },
+          {
+            "text": "을 이름 앞글자에 넣으며 모든 한국 인물에게 항렬을 강제하지 않는다. 항렬이 켜진 집은 장부 가족의 유언 공증과 잘 붙는다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "상속과-후계-p8",
+      "text": {
+        "en": "When an heir changes, personal promises and institutional promises are distinguished and reviewed again. If a vassal contract attaches to the office, a re-ratification dispute opens, and if it attaches to the person it meets termination or a will clause together with the death. If a relic-escort clause attaches to the person, the title opens as a dispute together with the custodian's death.",
+        "ko": "후계자가 바뀌면 개인 약속과 제도 약속을 구분해 재검토한다. 봉신 계약이 직위에 귀속이면 재비준 쟁점이 열리고 인물에 귀속이면 사망과 함께 종료 또는 유언 조항을 탑니다. 유물 호송 조항이 인물에 귀속이면 보관자 사망과 함께 작위가 분쟁으로 열린다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "음모와-명분",
+      "text": {
+        "en": "Plots and Claims",
+        "ko": "음모와 명분"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "음모와-명분-p1",
+      "text": {
+        "en": "A plot is not a personality number but a micro-record `plot`. One line holds a cause ID, a world time, an actor, a target, a magnitude, and a rule version, and the magnitude is an integer. A world event is not issued twice with the same cause ID.",
+        "ko": "음모는 성격 수치가 아니라 미시 기록 `plot`이다. 한 줄에는 원인 ID와 세계 시간과 주체와 대상과 크기와 규칙 판본이 들어가고 크기는 정수다. 같은 원인 ID로 세계 사건을 두 번 발행하지 않는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "음모와-명분-p2",
+      "text": {
+        "en": "A plot needs a target in order to open. A title holder, a designated heir, a ratifier, a will custodian, a relic custodian, or a master. Conspirators do not make a new relation net and use only the sparse relations that already exist, and putting a master of another faith family into the conspiracy requires the witness field of a mixed contract.",
+        "ko": "음모가 열리려면 대상이 있어야 한다. 작위 보유자, 지정 후계, 비준자, 유언 보관자, 유물 보관자, 사제다. 공모자는 새 관계망을 만들지 않고 이미 있는 희소 관계만 쓰며 다른 신앙 가족의 사제를 공모에 넣으려면 혼합 계약의 증인 칸이 있어야 한다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "음모와-명분-p3",
+      "text": {
+        "en": "Without a claim, a recovery by force meets the three conditions of betrayal. With a claim it becomes a public dispute, and Records Bureau accreditation and transmission verification can attach. The claims that are recognized stay only in the table below.",
+        "ko": "명분이 없으면 무력 회수는 배신 세 조건을 탑니다. 명분이 있으면 공개 쟁점이 되고 기록청 인준과 송신 검증이 붙을 수 있다. 인정하는 명분은 아래 표에만 둔다."
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "음모와-명분-table4",
+      "columns": [
+        {
+          "en": "Claim",
+          "ko": "명분"
+        },
+        {
+          "en": "When it opens",
+          "ko": "열리는 때"
+        },
+        {
+          "en": "If it fails",
+          "ko": "실패하면"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Will mismatch",
+            "ko": "유언 불일치"
+          },
+          {
+            "en": "two or more conflicting wills in the ledger",
+            "ko": "상충하는 유언이 원장에 둘 이상"
+          },
+          {
+            "en": "a forgery brand / the legitimacy ground falls",
+            "ko": "위조 낙인 / 정통성 근거 `법통` 하락"
+          }
+        ],
+        [
+          {
+            "en": "Accreditation refusal",
+            "ko": "인준 거부"
+          },
+          {
+            "en": "the Seoul Station Records Bureau refuses a title grant",
+            "ko": "서울역 기록청이 작위 수여를 거부"
+          },
+          {
+            "en": "a nominal-authority dispute / a compact review",
+            "ko": "명목 권위 분쟁 / 협약 재검토"
+          }
+        ],
+        [
+          {
+            "en": "Water breach",
+            "ko": "급수 위반"
+          },
+          {
+            "en": "contracted water does not come for the threshold period",
+            "ko": "계약한 물이 임계 기간 동안 안 옴"
+          },
+          {
+            "en": "a cutoff retaliation or a protection-sphere claim",
+            "ko": "단수 보복 또는 보호권 주장"
+          }
+        ],
+        [
+          {
+            "en": "Passage withdrawal",
+            "ko": "통행 철회"
+          },
+          {
+            "en": "a lawful path becomes `K=0`",
+            "ko": "합법 경로가 `K=0`이 됨"
+          },
+          {
+            "en": "a blockade claim -- isolation does not automatically cut local legitimacy",
+            "ko": "봉쇄 명분 — 고립은 현지 정통성을 자동으로 안 깎음"
+          }
+        ],
+        [
+          {
+            "en": "Protection abuse",
+            "ko": "보호 남용"
+          },
+          {
+            "en": "a protectorate clause exceeds its term or its audit",
+            "ko": "보호국 조항이 기간·감사를 넘김"
+          },
+          {
+            "en": "joint negotiation or secession pressure",
+            "ko": "공동교섭 또는 분리 압력"
+          }
+        ],
+        [
+          {
+            "en": "Vacancy left standing",
+            "ko": "공석 방치"
+          },
+          {
+            "en": "a named title remains vacant",
+            "ko": "이름 있는 작위가 공석으로 남음"
+          },
+          {
+            "en": "the stronghold-control candidate stands ahead",
+            "ko": "거점 통제 후보가 앞섬"
+          }
+        ],
+        [
+          {
+            "en": "Relic seizure",
+            "ko": "유물 탈취"
+          },
+          {
+            "en": "a legitimating relic leaves the shrine",
+            "ko": "정통 유물이 사당 밖으로 나감"
+          },
+          {
+            "en": "a title dispute / an escort failure is an `escort` sum",
+            "ko": "작위 분쟁 / 호송 실패는 `escort` 합산"
+          }
+        ],
+        [
+          {
+            "en": "Rite refusal",
+            "ko": "의례 거부"
+          },
+          {
+            "en": "a stipulated offering, burning, or operation is not done for the threshold period",
+            "ko": "조항된 헌납·소각·가동을 임계 기간 동안 안 함"
+          },
+          {
+            "en": "piety disqualification -- in a mixed contract, only one rite remaining is betrayal",
+            "ko": "경건 실격 — 혼합 계약이면 한쪽 제례만 남은 것이 배신"
+          }
+        ],
+        [
+          {
+            "en": "Doctrine schism",
+            "ko": "교리 분열"
+          },
+          {
+            "en": "a doctrine splits inside the same faith family",
+            "ko": "같은 신앙 가족 안에서 교리가 갈라짐"
+          },
+          {
+            "en": "a heresy brand / if the faith is hidden, an exposure dispute",
+            "ko": "이단 낙인 / 숨은 신앙이면 폭로 쟁점"
+          }
+        ],
+        [
+          {
+            "en": "Livelihood coercion",
+            "ko": "생업 강요"
+          },
+          {
+            "en": "a muster or a conversion that the culture kit refuses is imposed",
+            "ko": "문화 키트가 거부하는 소집·개종을 걸음"
+          },
+          {
+            "en": "a strike or a blockade -- the pressure formula follows the diplomacy document",
+            "ko": "파업·봉쇄 — 압력 공식은 외교 문서를 따름"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "음모와-명분-p5",
+      "text": {
+        "en": "Coup support and a warning through the official command net remain interventions the player chooses. There is no path that raises a state-relation number directly or forces the war button, and if the `plot` sum crosses the threshold and succeeds the head is replaced. It follows the heir-generation rule, and the relic does not move with the head. The custodian dispute falls separately.",
+        "ko": "쿠데타 지원과 공식 지휘망 경고는 플레이어가 고르는 개입으로 남는다. 국가 관계 수치를 직접 올리거나 전쟁 버튼을 강제로 누르는 길은 없고 `plot` 합이 임계를 넘고 성공하면 수장이 교체된다. 후계 생성 규칙을 타며 유물은 수장과 같이 옮기지 않는다. 보관자 쟁점이 따로 납니다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "음모와-명분-p6",
+      "text": {
+        "en": "If a rumor `rumour` is confirmed across several states, legitimacy falls and compacts are reviewed again. The exposure of a hidden faith is also this field, and a rebuttal is written in the same field. There is no command that edits a slider directly.",
+        "ko": "소문 `rumour`가 여러 국가에 걸쳐 확정되면 정통성이 내리고 협약이 재검토된다. 숨은 신앙의 폭로도 이 칸이고 반증도 같은 칸에 씁니다. 슬라이더를 직접 고치는 명령은 없다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "정통성과-작위-주장",
+      "text": {
+        "en": "Legitimacy and Title Claims",
+        "ko": "정통성과 작위 주장"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "정통성과-작위-주장-p1",
+      "text": {
+        "en": [
+          {
+            "text": "Politics is not a single favorability. It uses as they stand the personal trust, audience-specific reputation, ground-specific legitimacy, political capital, grievance, cohesion, leverage, and performance reliability of "
+          },
+          {
+            "text": "Powers and Diplomacy",
+            "link": {
+              "domain": "factions",
+              "slug": "Factions-and-Diplomacy"
+            }
+          },
+          {
+            "text": ", and it does not make a new scale for titles or a piety slider."
+          }
+        ],
+        "ko": [
+          {
+            "text": "정치는 호감도 하나가 아닙니다. "
+          },
+          {
+            "text": "세력과 외교",
+            "link": {
+              "domain": "factions",
+              "slug": "Factions-and-Diplomacy"
+            }
+          },
+          {
+            "text": "의 개인 신뢰·청중별 평판·근거별 정통성·정치 자본·불만·결속·지렛대·이행 신뢰도를 그대로 쓰고 작위용 새 척도와 경건 슬라이더는 만들지 않는다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "정통성과-작위-주장-p2",
+      "text": {
+        "en": "A title claim attaches a ground `k` to local legitimacy `L[F,n,k]`. Among food, power, safety, `legitimacy`, technique, medicine, and trade, only what that seat actually turns is recognized, and if a relic rite succeeds a weight attaches to the same ground. If the Seoul Station Records Bureau cannot give water, a Line Clerk cannot be claimed by `legitimacy` alone, and if the Amsa escort band swallows the waterworks administration, `safety` rises and `legitimacy` falls. If the waterworks rite is forced, the `technique` ground does not rise.",
+        "ko": "작위 주장은 현지 정통성 `L[F,n,k]`에 근거 `k`를 붙인다. 식량·전력·안전·법통·기술·의료·교역 가운데 그 자리가 실제로 돌리는 것만 인정하고 유물 의례가 성공하면 같은 근거에 가중치가 붙는다. 서울역 기록청이 물을 못 주면 `법통`만으로 선주사를 주장할 수 없고 암사 호위단이 상수행정을 삼키면 `안전`은 오르고 `법통`은 내립니다. 상수례를 강제하면 `기술` 근거는 안 오릅니다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "정통성과-작위-주장-p3",
+      "text": {
+        "en": "A new claim starts low locally and uses the diplomacy document's default for a new local claim. A title claim on an unintegrated stronghold is in the disputed state, and an integration without a relic also remains a dispute. A forced demand such as a strike, a blockade, or a secession opens only when pressure of 70 or above and leverage of 0.75 or above hold for two weeks in a row.",
+        "ko": "신규 주장은 현지에서 낮게 시작하고 외교 문서의 현지 신규 주장 기본값을 씁니다. 통합되지 않은 거점의 작위 주장은 분쟁 상태이고 유물 없는 통합도 분쟁으로 남는다. 압력 70 이상과 지렛대 0.75 이상이 2주 연속일 때만 파업·봉쇄·분리 같은 강제 요구가 열립니다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "정통성과-작위-주장-p4",
+      "text": {
+        "en": "A Charter Holder is read not as territorial legitimacy but as agenda legitimacy. The five are the Sluice Charter, the Fabrication Standards Alliance, the Joint Technology Institute charter, the shared pump-parts standard, and the eastern Waterworks Protection Sphere, and the one who leads is a person. It is not a state's fixed victory condition, and if the charter original is lost the Charter Holder remains vacant.",
+        "ko": "헌장주는 영토 정통성이 아니라 의제 정통성으로 읽힌다. 수문헌장·제작규격동맹·공동기술원장·물부품 공동규격·동부 상수보호권이 그 다섯이고 주도자는 인물이다. 국가의 고정 승리조건이 아니며 헌장 원본이 유실되면 헌장주는 공석으로 남는다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "문화-정체-키트",
+      "text": {
+        "en": "Culture Identity Kits",
+        "ko": "문화 정체 키트"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "문화-정체-키트-p1",
+      "text": {
+        "en": [
+          {
+            "text": "Culture is not a state ID. It is the sphere key of "
+          },
+          {
+            "text": "Heirs, the Name Roster, and the World Ledger",
+            "link": {
+              "domain": "characters",
+              "slug": "Heirs-Names-and-World-Ledger"
+            }
+          },
+          {
+            "text": ", and the key remains even if a state is merged or its state name changes. Even on a change of post, the personal-name pool is not changed."
+          }
+        ],
+        "ko": [
+          {
+            "text": "문화는 국가 ID가 아닙니다. "
+          },
+          {
+            "text": "후계, 이름 로스터, 세계 원장",
+            "link": {
+              "domain": "characters",
+              "slug": "Heirs-Names-and-World-Ledger"
+            }
+          },
+          {
+            "text": "의 권역 키이고 국가가 병합되거나 국호가 바뀌어도 키는 남는다. 이직해도 성명 풀은 바꾸지 않는다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "문화-정체-키트-p2",
+      "text": {
+        "en": "A kit holds temperament, tradition, and arm-custom as one bundle. Temperament is a bias of preferred means and does not overwrite a person's personality, and the personality field stays as it is. Tradition is the local custom attached to title grants, inheritance claims, and the rite calendar, and arm-custom is who takes up a weapon and which muster is lawful. Combat rules are not changed.",
+        "ko": "키트는 기질·전통·병과 관습을 한 묶음으로 둡니다. 기질은 선호하는 수단의 편향이지 인물 성격을 덮어쓰지 않으며 성격 칸은 그대로다. 전통은 작위 수여와 상속 명분과 의례 달력에 붙는 현지 관습이고 병과 관습은 누가 무기를 들고 어떤 소집이 정당한지다. 전투 규칙은 고치지 않는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "문화-정체-키트-p3",
+      "text": {
+        "en": "The numbers below are set as design assumptions. An added weight is only a weight in proposal evaluation, not an automatic approval.",
+        "ko": "아래 수치는 설계 가정으로 둔다. 가산은 제안 평가의 가중치일 뿐 자동 승인이 아닙니다."
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "문화-정체-키트-table4",
+      "columns": [
+        {
+          "en": "Key",
+          "ko": "키"
+        },
+        {
+          "en": "Temperament",
+          "ko": "기질"
+        },
+        {
+          "en": "Tradition",
+          "ko": "전통"
+        },
+        {
+          "en": "Arm-custom",
+          "ko": "병과 관습"
+        },
+        {
+          "en": "Political effect",
+          "ko": "정치 효과"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "`west-sluice`",
+            "ko": "`west-sluice`"
+          },
+          {
+            "en": "faith in ledgers -- trusts the contract wording longer than the person",
+            "ko": "장부 신의 — 사람보다 계약 문구를 오래 믿음"
+          },
+          {
+            "en": "public posting of the water compact / the sluice rite / a collective cutoff on a breach",
+            "ko": "급수계약 공개 게시 / 수문례 / 위반 시 집단 단수"
+          },
+          {
+            "en": "sluice watch duty and maintenance-train escort -- turning the register into private soldiers is a guard dispute",
+            "ko": "수문 당직과 보수열차 호송 — 명부 사병화는 경비대 쟁점"
+          },
+          {
+            "en": "demands water allocation and the offering rite from a vassal as clauses, and attaches the performance record to a designated will",
+            "ko": "봉신에게 물 할당과 헌납례를 조항으로 요구하고 지정 유언에 이행 기록을 붙임"
+          }
+        ],
+        [
+          {
+            "en": "`center-record`",
+            "ko": "`center-record`"
+          },
+          {
+            "en": "accreditation -- a succession without a seal is not a succession",
+            "ko": "인준 — 도장 없는 승계는 승계가 아님"
+          },
+          {
+            "en": "notarization of wills / the generation marker for notable houses only / treaty accreditation",
+            "ko": "유언 공증 / 명문만 항렬 / 조약 인준"
+          },
+          {
+            "en": "archive defense and ceremonial guard -- if it becomes a barracks, `legitimacy` collapses",
+            "ko": "문서고 수비와 의전경비 — 병영이 되면 `법통`이 무너짐"
+          },
+          {
+            "en": "without record accreditation and relic inspection, a title grant is void across the whole sphere",
+            "ko": "작위 수여에 기록 인준과 유물 열람이 없으면 권역 전체에 무효"
+          }
+        ],
+        [
+          {
+            "en": "`north-refuge`",
+            "ko": "`north-refuge`"
+          },
+          {
+            "en": "the refuge oath -- keeps the seat of a person who was driven out",
+            "ko": "피난 맹세 — 추방당한 사람의 자리를 지킴"
+          },
+          {
+            "en": "citizenship by removing a family from the household register / the federation council / the relief rite",
+            "ko": "호적에서 가족을 빼는 시민권 / 연방회의 / 구호례"
+          },
+          {
+            "en": "mountain scouting and corridor ambush -- the mobilization register and refugee reception collide",
+            "ko": "산악 정찰과 회랑 매복 — 동원 명부와 난민 수용이 충돌"
+          },
+          {
+            "en": "refuses a vassal that has a forced-service clause, and an adoptee or a master can stand ahead of blood kin",
+            "ko": "강제복무 조항이 있는 봉신을 거부하고 양자·사제가 혈족보다 앞설 수 있음"
+          }
+        ],
+        [
+          {
+            "en": "`east-caravan`",
+            "ko": "`east-caravan`"
+          },
+          {
+            "en": "protection -- puts the gate and the water under the escort ledger",
+            "ko": "보호 — 관문과 급수를 호위 장부 아래 둠"
+          },
+          {
+            "en": "the dual ledger of the waterworks administration and the escort band / the waterworks rite",
+            "ko": "상수행정과 호위단의 이중 장부 / 상수례"
+          },
+          {
+            "en": "waterworks escort, bridge blockade, patrol train",
+            "ko": "상수호위·교량 봉쇄·순찰열차"
+          },
+          {
+            "en": "recovery of a lower title opens easily on a protection claim, and the `plot` threshold falls",
+            "ko": "보호 명분으로 하위 작위 회수가 열리기 쉽고 `plot` 임계가 낮아짐"
+          }
+        ],
+        [
+          {
+            "en": "`southeast-ration`",
+            "ko": "`southeast-ration`"
+          },
+          {
+            "en": "open prices -- the auction shakes the acclamation",
+            "ko": "가격 공개 — 경매가 추대를 흔듦"
+          },
+          {
+            "en": "a merchant council by item / famine ration / the burning rite",
+            "ko": "품목별 상인회의 / 기근 배급 / 소각례"
+          },
+          {
+            "en": "warehouse guard and escort bidding -- a merchant is not a combatant",
+            "ko": "창고 경비와 호송 입찰 — 상인은 전투원이 아님"
+          },
+          {
+            "en": "the mediation right, more than the title, decides the heir, and a muster clause is barely accepted",
+            "ko": "작위보다 조정권이 후계를 가름하고 소집 조항을 거의 안 받음"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "문화-정체-키트-p5",
+      "text": {
+        "en": "A kit is not injected from above. It grows from the livelihood of that land, such as water, repair, transfer, refuge, and auction, and the Diaspora Corridors do not force these five keys. Personal-name notation is kept beside it under the person-card contract, and a corridor's rite is the valve of a mixed contract.",
+        "ko": "키트는 위에서 주입하지 않는다. 급수·수리·환승·피난·경매처럼 그 땅의 생업에서 자라고 이주민 회랑은 이 다섯 키를 강제하지 않는다. 성명 표기는 인물 카드 계약대로 옆에 두며 회랑의 제례는 혼합 계약의 밸브다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "문화-정체-키트-p6",
+      "text": {
+        "en": "Even with the same key, a person's ambition can go against the kit. Im Hajun fearing the hereditary succession of a technical house is the example, and a kit is a bias, not a prison.",
+        "ko": "같은 키라도 인물 야망이 키트를 거스를 수 있다. 임하준이 기술가문의 세습을 두려워하는 것이 그 예이고 키트는 편향이지 감옥이 아닙니다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "신앙이-작위를-고친다",
+      "text": {
+        "en": "Faith Rewrites Titles",
+        "ko": "신앙이 작위를 고친다"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "신앙이-작위를-고친다-p1",
+      "text": {
+        "en": "Faith and culture split by region, and identity is read as disputed. The structure is three layers -- faith family, individual faith, and doctrine -- and a split doctrine is the unit of rule editing. A whole family is not changed at once.",
+        "ko": "신앙과 문화는 지역마다 갈라지고 정체성은 분쟁적으로 읽힌다. 구조는 세 층 — 신앙 가족, 개별 신앙, 교리 — 이며 분열한 교리가 규칙 편집 단위다. 가족 전체를 한 번에 바꾸지 않는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "신앙이-작위를-고친다-p2",
+      "text": {
+        "en": "The families used at opening stay only in the table below. Names are not borrowed from outside.",
+        "ko": "개막에 쓰는 가족은 아래 표에만 둔다. 이름을 밖에서 빌려오지 않는다."
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "신앙이-작위를-고친다-table3",
+      "columns": [
+        {
+          "en": "Family",
+          "ko": "가족"
+        },
+        {
+          "en": "Livelihood it grows from",
+          "ko": "자라는 생업"
+        },
+        {
+          "en": "Examples of individual faith",
+          "ko": "개별 신앙 예"
+        },
+        {
+          "en": "Rules the doctrine rewrites",
+          "ko": "교리가 고치는 규칙"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Water Vein",
+            "ko": "수맥"
+          },
+          {
+            "en": "purification and sluice watch duty",
+            "ko": "정수와 수문 당직"
+          },
+          {
+            "en": "Yeouido Sluice Rite / Amsa Waterworks Rite / Guui Limit Rite",
+            "ko": "여의수문례 / 암사상수례 / 구의제한례"
+          },
+          {
+            "en": "under `cutoff punishment` a water clause is a harsh sanction, and under `minimum water` a collective cutoff loses its claim",
+            "ko": "`단수징벌`이면 급수 조항이 가혹 제재이고 `최소급수`면 집단 단수가 명분 상실"
+          }
+        ],
+        [
+          {
+            "en": "Track",
+            "ko": "궤도"
+          },
+          {
+            "en": "dispatch, wheels, and transfer",
+            "ko": "배차·차륜·환승"
+          },
+          {
+            "en": "Changdong Wheel Rite / Sinnae Transfer Rite / Yongsan Relay Rite",
+            "ko": "창동차륜례 / 신내환승례 / 용산중계례"
+          },
+          {
+            "en": "under `dispatch neutrality` a muster clause is refused / under `line blockade right` a Section Keeper has a claim to stand against a Line Clerk",
+            "ko": "`배차중립`이면 소집 조항 거부 / `선로봉쇄권`이면 구간사가 선주사에 맞설 명분"
+          }
+        ],
+        [
+          {
+            "en": "Power Vein",
+            "ko": "전맥"
+          },
+          {
+            "en": "power allocation and night watch duty",
+            "ko": "전력 배분과 야간 당직"
+          },
+          {
+            "en": "Magok Safety Rite / Ttukseom Surplus-Heat Rite",
+            "ko": "마곡안전례 / 뚝섬여열례"
+          },
+          {
+            "en": "under `blackout order published` a hidden blackout is betrayal, and under `night priority` sluice watch duty stands ahead of other musters",
+            "ko": "`정전순서공개`면 숨긴 정전이 배신이고 `야간우선`이면 수문 당직이 다른 소집보다 앞섬"
+          }
+        ],
+        [
+          {
+            "en": "Transmission",
+            "ko": "송신"
+          },
+          {
+            "en": "broadcast verification and cipher relay",
+            "ko": "방송 검증과 암호 중계"
+          },
+          {
+            "en": "Sangam Open Rite / the hidden band rite",
+            "ko": "상암공개례 / 숨은 대역례"
+          },
+          {
+            "en": "a public faith helps accreditation, and a hidden faith is revealed only by `rumour`",
+            "ko": "공개 신앙은 인준을 돕고 숨은 신앙은 `rumour`로만 드러남"
+          }
+        ],
+        [
+          {
+            "en": "Ledger",
+            "ko": "장부"
+          },
+          {
+            "en": "notarization, auction, and contract audit",
+            "ko": "공증·경매·계약 감사"
+          },
+          {
+            "en": "Seoul Station Accreditation Rite / Garak Auction Rite / Suseo Mediation Rite",
+            "ko": "서울역인준례 / 가락경매례 / 수서중재례"
+          },
+          {
+            "en": "under `will notarization` the seal stands ahead of the generation marker, and under `open prices` a secret ration loses its claim",
+            "ko": "`유언공증`이면 항렬보다 도장이 앞서고 `가격공개`면 비밀 배급이 명분 상실"
+          }
+        ],
+        [
+          {
+            "en": "Relief",
+            "ko": "구호"
+          },
+          {
+            "en": "refuge, treatment, and household-register relief",
+            "ko": "피난·치료·호적 구제"
+          },
+          {
+            "en": "Bukhansan Bogukmun Refuge Rite / Jegi-dong Treatment Rite",
+            "ko": "북한산보국문피난례 / 제기동치료례"
+          },
+          {
+            "en": "under `no distinction of friend and foe` even an enemy vassal demands a treatment clause, and one breach is fatal",
+            "ko": "`적아부문`이면 적 봉신도 치료 조항을 요구하며 위반 한 번이 치명"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "신앙이-작위를-고친다-p4",
+      "text": {
+        "en": "A hidden faith is not entered in the public ledger. A cipher rite inside the channel guild is the example, and a heresy is a branch of the same family split only in doctrine. Outside culture pressure is a valve, and if conversion is set as a condition of a title grant the `livelihood coercion` claim opens.",
+        "ko": "숨은 신앙은 공개 장부에 안 올립니다. 채널 길드 안의 암호 제례가 그 예이고 이단은 같은 가족에서 교리만 갈라진 가지다. 외부 문화 압력은 밸브이며 개종을 작위 수여 조건으로 걸면 `생업 강요` 명분이 열립니다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "신앙이-작위를-고친다-p5",
+      "text": {
+        "en": "A doctrine schism is settled only by the week, and the day's production loop is not recalculated. If a reform spreads through a sphere, the default of a vassal clause changes, and `cutoff punishment` changing into `minimum water` is the example. If a relic moves to another family's shrine, the accreditation path forks.",
+        "ko": "교리 분열은 주간 단위로만 정산하고 하루 생산 루프를 다시 계산하지 않는다. 개혁이 권역에 퍼지면 봉신 조항의 기본값이 바뀌며 `단수징벌`이 `최소급수`로 바뀌는 식이 그 예다. 유물이 다른 가족 사당으로 옮겨지면 인준 경로가 갈립니다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "작위충성과-분열-행렬",
+      "text": {
+        "en": "The Title, Loyalty, and Schism Matrix",
+        "ko": "작위·충성과 분열 행렬"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "작위충성과-분열-행렬-p1",
+      "text": {
+        "en": "A title does not stand by territorial order alone, and loyalty does not stand as a number. Both are read at the place where a faith family and a culture key cross, and this crossing is the schism matrix. The matrix is not a new slider. It attaches weights to the contract fields, the micro-lines, and the legitimacy grounds that already exist.",
+        "ko": "작위는 영토 서열만으로 서지 않고 충성은 숫자로 서지 않는다. 둘 다 신앙 가족과 문화 키가 교차하는 자리에서 읽히며 이 교차가 분열 행렬이다. 행렬은 새 슬라이더가 아니고 이미 있는 계약 칸과 미시 줄과 정통성 근거에 가중치를 붙인다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "작위충성과-분열-행렬-p2",
+      "text": {
+        "en": "A crossing is read in four fields.",
+        "ko": "교차는 네 칸으로 읽힌다."
+      }
+    },
+    {
+      "kind": "table",
+      "anchor": "작위충성과-분열-행렬-table3",
+      "columns": [
+        {
+          "en": "Crossing",
+          "ko": "교차"
+        },
+        {
+          "en": "Contract default",
+          "ko": "계약 기본"
+        },
+        {
+          "en": "Loyalty reading",
+          "ko": "충성 읽기"
+        },
+        {
+          "en": "Title accreditation",
+          "ko": "작위 인준"
+        },
+        {
+          "en": "If it breaks",
+          "ko": "깨지면"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Same family, same key",
+            "ko": "같은 가족·같은 키"
+          },
+          {
+            "en": "one shared rite line",
+            "ko": "공유 의례 한 줄"
+          },
+          {
+            "en": "only `Rel` and attendance are watched",
+            "ko": "`Rel`과 출석만 봄"
+          },
+          {
+            "en": "one shrine for the relic",
+            "ko": "유물 한 사당"
+          },
+          {
+            "en": "only a failure to perform a clause is betrayal",
+            "ko": "조항 불이행만 배신"
+          }
+        ],
+        [
+          {
+            "en": "Same family, different key",
+            "ko": "같은 가족·다른 키"
+          },
+          {
+            "en": "a mixed calendar -- pilgrimage dates attach to the clauses",
+            "ko": "혼합 달력 — 순례 날짜가 조항에 붙음"
+          },
+          {
+            "en": "a clash of rite dates accumulates as grievance `G`",
+            "ko": "의례 날짜 충돌이 불만 `G`로 쌓임"
+          },
+          {
+            "en": "one relic / two calendars",
+            "ko": "유물은 하나 / 달력은 둘"
+          },
+          {
+            "en": "a `livelihood coercion` claim -- pushing the kit as conversion brings a strike",
+            "ko": "`생업 강요` 명분 — 키트를 개종으로 밀면 파업"
+          }
+        ],
+        [
+          {
+            "en": "Different family, same key",
+            "ko": "다른 가족·같은 키"
+          },
+          {
+            "en": "the public rite and the hidden rite are written side by side",
+            "ko": "공개 제례와 숨은 제례를 병기"
+          },
+          {
+            "en": "the hidden field is revealed only by `rumour`",
+            "ko": "숨은 칸은 `rumour`로만 드러남"
+          },
+          {
+            "en": "the livelihood relic is shared / two shrines",
+            "ko": "생업 유물은 공유 / 사당은 둘"
+          },
+          {
+            "en": "a heresy brand -- recognizing only one shrine brings an escort refusal",
+            "ko": "이단 낙인 — 한쪽 사당만 인정하면 호송 거부"
+          }
+        ],
+        [
+          {
+            "en": "Different family, different key",
+            "ko": "다른 가족·다른 키"
+          },
+          {
+            "en": "protection and conversion pressure open easily",
+            "ko": "보호·개종 압력이 열리기 쉬움"
+          },
+          {
+            "en": "the `plot` threshold falls",
+            "ko": "`plot` 임계가 낮아짐"
+          },
+          {
+            "en": "a higher title cannot be claimed without a relic transfer",
+            "ko": "유물 이전 없이는 상위 작위 주장 불가"
+          },
+          {
+            "en": "secession pressure / a reform event / erasing the mix is betrayal",
+            "ko": "분리 압력 / 개혁 사건 / 혼합을 지우면 배신"
+          }
+        ]
+      ]
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "작위충성과-분열-행렬-p4",
+      "text": {
+        "en": "A heresy inside the same family sits outside the four fields. It is a branch split only in doctrine, and a heretic vassal shares the rite-refusal right with the superior. If the public reading fails, the charter original also remains a dispute.",
+        "ko": "같은 가족 안의 이단은 네 칸 밖에 있다. 교리만 갈라진 가지이고 이단 봉신은 상급자와 의례 거부권을 나눕니다. 공개 낭독이 실패하면 헌장 원본도 분쟁으로 남는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "작위충성과-분열-행렬-p5",
+      "text": {
+        "en": "A mixed contract writes two rites side by side on one line. Erasing one is a breach, and a Diaspora Corridor rite is the valve of this mix. A corridor key is not overwritten with one of the five sphere keys.",
+        "ko": "혼합 계약은 두 제례를 한 줄에 나란히 적는다. 하나를 지우면 위반이고 이주민 회랑의 제례는 이 혼합의 밸브다. 회랑 키를 다섯 권역 키로 덮어쓰지 않는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "작위충성과-분열-행렬-p6",
+      "text": {
+        "en": "A reform is settled as a weekly event. The doctrine changes a sphere's legitimacy ground and rewrites the default of a vassal clause, and the map is not erased at once. The title holder remains and only the accreditation path forks, and if Transmission's hidden faith rises into the open, accreditation quickens and the exposure risk also grows.",
+        "ko": "개혁은 주간 사건으로 정산한다. 교리가 권역 정통성 근거를 바꾸고 봉신 조항 기본값을 다시 쓰며 지도가 한 번에 지워지지는 않는다. 작위 보유자는 남고 인준 경로만 갈리며 송신 숨은 신앙이 공개로 떠오르면 인준은 빨라지고 폭로 위험도 커집니다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "작위충성과-분열-행렬-p7",
+      "text": {
+        "en": "The matrix does not turn loyalty into a number. Even with the same family and the same key, breaking a clause is betrayal, and even with a different family and a different key, `Rel` holds if mixed rites and relic escorts accumulate. What the player touches is helping, intercepting, or exposing attendance, and there is no command that edits a crossing field directly.",
+        "ko": "행렬이 충성을 숫자로 바꾸지 않는다. 같은 가족·같은 키라도 조항을 어기면 배신이고 다른 가족·다른 키라도 혼합 의례와 유물 호송이 쌓이면 `Rel`이 버팁니다. 플레이어가 손대는 일은 출석을 돕거나 가로채거나 폭로하는 것이며 교차 칸을 직접 고치는 명령은 없다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "작위충성과-분열-행렬-p8",
+      "text": {
+        "en": "An opening reading example. Han Jaemok and Gang Minseo share a key and can split by family into Water Vein and Power Vein, so the pump-parts alliance is a different family and the same key. An operation rite that opens only a joint inspection and does not hand over the key remains that contract's rite clause. Baek On and Bae Woojin differ in both key and family, so a protection proposal is a different family and a different key, and if conversion and forced service attach the matrix opens a secession. Yun Seorin's accreditation is the Ledger family stamping a seal on another sphere's title, and a grant without a seal is void across the whole sphere.",
+        "ko": "개막의 읽기 예다. 한재목과 강민서는 키는 같고 가족은 수맥과 전맥으로 갈라질 수 있어 펌프 부품 동맹은 다른 가족·같은 키다. 공동 점검만 열고 키를 넘기지 않는 가동례가 그 계약의 의례 조항으로 남는다. 백온과 배우진은 키도 가족도 달라 보호 제안은 다른 가족·다른 키이며 개종과 강제복무가 붙으면 행렬이 분리를 엽니다. 윤서린의 인준은 장부 가족이 다른 권역 작위에 도장을 찍는 일이고 도장 없는 수여는 권역 전체에 무효다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "원정-사이의-정치",
+      "text": {
+        "en": "Politics Between Expeditions",
+        "ko": "원정 사이의 정치"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "원정-사이의-정치-p1",
+      "text": {
+        "en": [
+          {
+            "text": "These rules are read in the diplomacy, legitimacy, and power-objective fields of one campaign week. A stronghold's daily settlement keeps turning under "
+          },
+          {
+            "text": "Strongholds and Territory",
+            "link": {
+              "domain": "economy",
+              "slug": "Strongholds-and-Territory"
+            }
+          },
+          {
+            "text": " and "
+          },
+          {
+            "text": "Economy and Production",
+            "link": {
+              "domain": "economy",
+              "slug": "Economy-and-Production"
+            }
+          },
+          {
+            "text": ", and the title module reads those receipts. The day is not recalculated, and a rite watches its threshold only in the weekly field."
+          }
+        ],
+        "ko": [
+          {
+            "text": "캠페인 한 주의 외교·정통성·세력 목표 칸에서 이 규칙을 읽는다. 거점의 하루 정산은 "
+          },
+          {
+            "text": "거점과 영토",
+            "link": {
+              "domain": "economy",
+              "slug": "Strongholds-and-Territory"
+            }
+          },
+          {
+            "text": "와 "
+          },
+          {
+            "text": "경제와 생산",
+            "link": {
+              "domain": "economy",
+              "slug": "Economy-and-Production"
+            }
+          },
+          {
+            "text": "이 그대로 돌고 작위 모듈은 그 영수증을 읽는다. 하루를 다시 계산하지 않으며 의례도 주간 칸에서만 임계를 봅니다."
+          }
+        ]
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "원정-사이의-정치-p2",
+      "text": {
+        "en": "What the player touches is the same as before. An audience, a trade of goods, passage, prisoners, and records, public support and disqualification of an heir, escort of a signatory, rebuttal and exposure of a rumor, taking an office and becoming a proposer, an approver, or a veto holder, and coup support or a warning. Granting and recovering a title, re-ratifying a vassal, escorting a relic, and attending a rite attach to the office, escort, and trade fields of this list, and no new command window is made.",
+        "ko": "플레이어가 손대는 일은 기존과 같다. 면담, 물자·통행·포로·기록 거래, 후계 공개 지지와 실격, 서명자 호송, 소문 반증과 폭로, 직위를 얻어 제안자·승인자·거부권자가 되는 일, 쿠데타 지원 또는 경고다. 작위 수여와 회수와 봉신 재비준과 유물 호송과 의례 출석은 이 목록의 직위·호송·거래 칸에 붙이며 새 명령 창구를 만들지 않는다."
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "원정-사이의-정치-p3",
+      "text": {
+        "en": "Random numbers use only the person stream and are not mixed with the battle stream and the encounter stream. A save file holds title held, vacant, and disputed, the clauses, attachment, and faith crossing of a vassal contract, the relic custodian, and the `plot` and `heir-stance` thresholds that have not yet fired. An unsupported save does not recover by drawing titles anew. It raises an error and leaves the previous file.",
+        "ko": "난수는 인물 스트림만 쓰고 전투 스트림과 조우 스트림과 섞지 않는다. 저장 파일에는 작위 보유·공석·분쟁, 봉신 계약의 조항과 귀속과 신앙 교차, 유물 보관자, 아직 안 터진 `plot`·`heir-stance` 임계가 들어갑니다. 지원하지 않는 저장은 작위를 새로 뽑으며 복구하지 않고 오류를 내고 이전 파일을 둡니다."
+      }
+    },
+    {
+      "kind": "heading",
+      "anchor": "넣지-말-것",
+      "text": {
+        "en": "What Not to Put In",
+        "ko": "넣지 말 것"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "넣지-말-것-list1",
+      "items": [
+        {
+          "en": "a fixed state personality, an eternal alliance, a betrayal probability",
+          "ko": "국가 고정 성격, 영원한 동맹, 배신 확률"
+        },
+        {
+          "en": "a loyalty slider, a piety slider, a command that raises legitimacy directly",
+          "ko": "충성 슬라이더, 경건 슬라이더, 정통성을 직접 올리는 명령"
+        },
+        {
+          "en": "a dynasty of bloodline alone, automatic generation of an unnamed leader",
+          "ko": "혈통만의 왕조, 무명 지도자 자동 생성"
+        },
+        {
+          "en": "accrediting a title by territory alone, treating an integration without a relic as complete",
+          "ko": "영토만으로 작위를 인준하기, 유물 없는 통합을 완성으로 보기"
+        },
+        {
+          "en": "a vassal contract without a faith field and a rite calendar",
+          "ko": "신앙 칸과 의례 달력 없는 봉신 계약"
+        },
+        {
+          "en": "an ending that calls the revival of an old state institution a victory",
+          "ko": "옛 국가 제도의 부활을 승리라고 하는 결말"
+        },
+        {
+          "en": "carrying over a proper faith name or a title name from outside Seoul as written",
+          "ko": "서울 밖 고유 신앙명과 작위명을 그대로 옮기기"
+        },
+        {
+          "en": "using a culture key by changing it into a state ID",
+          "ko": "문화 키를 국가 ID로 바꿔 쓰기"
+        },
+        {
+          "en": "changing combat rules by arm-custom",
+          "ko": "병과 관습으로 전투 규칙을 고치기"
+        },
+        {
+          "en": "forcing a muster on a merchant livelihood holder",
+          "ko": "상인 생업자에게 소집 강제"
+        },
+        {
+          "en": "turning the Records Bureau into a barracks and keeping `legitimacy`",
+          "ko": "기록청을 병영으로 만들어 `법통`을 유지하기"
+        },
+        {
+          "en": "a command by which the player edits a crossing field directly",
+          "ko": "교차 칸을 플레이어가 직접 고치는 명령"
+        }
+      ]
+    },
+    {
+      "kind": "heading",
+      "anchor": "출처",
+      "text": {
+        "en": "Sources",
+        "ko": "출처"
+      }
+    },
+    {
+      "kind": "list",
+      "anchor": "출처-list1",
+      "items": [
+        {
+          "en": [
+            {
+              "text": "Ambitions-and-Relations.md",
+              "link": {
+                "domain": "characters",
+                "slug": "Ambitions-and-Relations"
+              }
+            }
+          ],
+          "ko": [
+            {
+              "text": "Ambitions-and-Relations.md",
+              "link": {
+                "domain": "characters",
+                "slug": "Ambitions-and-Relations"
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "text": "Heirs-Names-and-World-Ledger.md",
+              "link": {
+                "domain": "characters",
+                "slug": "Heirs-Names-and-World-Ledger"
+              }
+            }
+          ],
+          "ko": [
+            {
+              "text": "Heirs-Names-and-World-Ledger.md",
+              "link": {
+                "domain": "characters",
+                "slug": "Heirs-Names-and-World-Ledger"
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "text": "Factions-and-Diplomacy.md",
+              "link": {
+                "domain": "factions",
+                "slug": "Factions-and-Diplomacy"
+              }
+            }
+          ],
+          "ko": [
+            {
+              "text": "Factions-and-Diplomacy.md",
+              "link": {
+                "domain": "factions",
+                "slug": "Factions-and-Diplomacy"
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "text": "Hangnyeol-and-Bon-gwan.md",
+              "link": {
+                "domain": "characters",
+                "slug": "Hangnyeol-and-Bon-gwan"
+              }
+            }
+          ],
+          "ko": [
+            {
+              "text": "Hangnyeol-and-Bon-gwan.md",
+              "link": {
+                "domain": "characters",
+                "slug": "Hangnyeol-and-Bon-gwan"
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "text": "Sixteen-States.md",
+              "link": {
+                "domain": "factions",
+                "slug": "Sixteen-States"
+              }
+            }
+          ],
+          "ko": [
+            {
+              "text": "Sixteen-States.md",
+              "link": {
+                "domain": "factions",
+                "slug": "Sixteen-States"
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "text": "Strongholds-and-Territory.md",
+              "link": {
+                "domain": "economy",
+                "slug": "Strongholds-and-Territory"
+              }
+            }
+          ],
+          "ko": [
+            {
+              "text": "Strongholds-and-Territory.md",
+              "link": {
+                "domain": "economy",
+                "slug": "Strongholds-and-Territory"
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "text": "Conscription-Remnants.md",
+              "link": {
+                "domain": "factions",
+                "slug": "Conscription-Remnants"
+              }
+            }
+          ],
+          "ko": [
+            {
+              "text": "Conscription-Remnants.md",
+              "link": {
+                "domain": "factions",
+                "slug": "Conscription-Remnants"
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "text": "Characters-Factions-and-Professions.md",
+              "link": {
+                "domain": "characters",
+                "slug": "Characters-Factions-and-Professions"
+              }
+            }
+          ],
+          "ko": [
+            {
+              "text": "Characters-Factions-and-Professions.md",
+              "link": {
+                "domain": "characters",
+                "slug": "Characters-Factions-and-Professions"
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "text": "Core-Characters.md",
+              "link": {
+                "domain": "characters",
+                "slug": "Core-Characters"
+              }
+            }
+          ],
+          "ko": [
+            {
+              "text": "Core-Characters.md",
+              "link": {
+                "domain": "characters",
+                "slug": "Core-Characters"
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "text": "Cast-Index.md",
+              "link": {
+                "domain": "characters",
+                "slug": "Cast-Index"
+              }
+            }
+          ],
+          "ko": [
+            {
+              "text": "Cast-Index.md",
+              "link": {
+                "domain": "characters",
+                "slug": "Cast-Index"
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "text": "Save-and-Determinism.md",
+              "link": {
+                "domain": "gdd",
+                "slug": "rules/Save-and-Determinism"
+              }
+            }
+          ],
+          "ko": [
+            {
+              "text": "Save-and-Determinism.md",
+              "link": {
+                "domain": "gdd",
+                "slug": "rules/Save-and-Determinism"
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "text": "Economy-and-Production.md",
+              "link": {
+                "domain": "economy",
+                "slug": "Economy-and-Production"
+              }
+            }
+          ],
+          "ko": [
+            {
+              "text": "Economy-and-Production.md",
+              "link": {
+                "domain": "economy",
+                "slug": "Economy-and-Production"
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "text": "Campaign-Loop.md",
+              "link": {
+                "domain": "gdd",
+                "slug": "rules/Campaign-Loop"
+              }
+            }
+          ],
+          "ko": [
+            {
+              "text": "Campaign-Loop.md",
+              "link": {
+                "domain": "gdd",
+                "slug": "rules/Campaign-Loop"
+              }
+            }
+          ]
+        },
+        {
+          "en": [
+            {
+              "text": "Campaign-Progression.md",
+              "link": {
+                "domain": "gdd",
+                "slug": "rules/Campaign-Progression"
+              }
+            }
+          ],
+          "ko": [
+            {
+              "text": "Campaign-Progression.md",
+              "link": {
+                "domain": "gdd",
+                "slug": "rules/Campaign-Progression"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "data": {}
+}
