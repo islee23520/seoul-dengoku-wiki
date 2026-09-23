@@ -3,6 +3,16 @@
   "domain": "name-pools",
   "id": "__EXAMPLE__:name-pools",
   "slug": "__EXAMPLE__-name-pools",
+  "status": "draft",
+  "tense": {
+    "en": "past",
+    "ko": "past"
+  },
+  "provenance": {
+    "original_anchor": "__EXAMPLE__:source-anchor",
+    "original_hash": null,
+    "history": []
+  },
   "source": {
     "kind": "original-fiction",
     "refs": []

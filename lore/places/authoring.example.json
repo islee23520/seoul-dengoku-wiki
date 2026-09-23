@@ -3,6 +3,16 @@
   "domain": "places",
   "id": "__EXAMPLE__:places",
   "slug": "__EXAMPLE__-places",
+  "status": "draft",
+  "tense": {
+    "en": "past",
+    "ko": "past"
+  },
+  "provenance": {
+    "original_anchor": "__EXAMPLE__:source-anchor",
+    "original_hash": null,
+    "history": []
+  },
   "source": {
     "kind": "original-fiction",
     "refs": []

@@ -3,6 +3,16 @@
   "domain": "goods",
   "id": "__EXAMPLE__:goods",
   "slug": "__EXAMPLE__-goods",
+  "status": "draft",
+  "tense": {
+    "en": "past",
+    "ko": "past"
+  },
+  "provenance": {
+    "original_anchor": "__EXAMPLE__:source-anchor",
+    "original_hash": null,
+    "history": []
+  },
   "source": {
     "kind": "original-fiction",
     "refs": []
