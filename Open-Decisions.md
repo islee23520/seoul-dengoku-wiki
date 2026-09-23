@@ -22,7 +22,7 @@
 | ID | 항목 | 현재 상태 | 정본 |
 |---|---|---|---|
 | OD-CAM | 전투 카메라 | 질문 시간 초과 뒤 채택한 3D 자유 지휘 기본안(팬·오빗·줌). 각도·시야각 수치는 없다. 소유자 직접 결정이 아니다 | [Intent.md](../Intent.md) 결정 11, [Design.md](../Design.md) |
-| OD-PAUSE | 전투 일시정지 | 그 파티의 닫힌 전투만 멈추고 정지 중 미리보기·확정을 받는다. 공유 캠페인과 다른 파티는 흐른다. 감속·배속·명령 큐는 없다. 소유자 직접 결정이 아니다 | [Intent.md](../Intent.md) 결정 11, [Design.md](../Design.md), [실시간 진형·카드 전투](rules/Realtime-Formation-Card-Battle.md) |
+| OD-PAUSE | 전투 일시정지 | 그 파티의 닫힌 전투만 멈추고 정지 중 미리보기·확정을 받는다. 공유 캠페인과 다른 파티는 흐른다. 감속·배속·명령 큐는 없다. 소유자 직접 결정이 아니다 | [Intent.md](../Intent.md) 결정 11, [Design.md](../Design.md), [실시간 부대 지휘 전투](rules/Realtime-Formation-Card-Battle.md) |
 
 같은 문장은 [홈](Home.md), [설계 요구](Design-Requirements.md), [이 게임이 뭔지](Game-Thesis.md), [개발 로드맵](Development-Roadmap.md), [ToDo.md](../ToDo.md)에도 반복된다. 기본안을 소유자 확정으로 올리지 않는다.
 
@@ -54,8 +54,8 @@
 
 | ID | 항목 | 잠금 문장 | 정본 |
 |---|---|---|---|
-| OD-ARMYCAP | 전체 분대 수·영웅 수·군단 상한 | 병졸 한 분대 최대 20명만 잠겼다. 나머지 상한은 미정이다 | [Intent.md](../Intent.md) 결정 11, [Design.md](../Design.md), [설계 요구](Design-Requirements.md), [실시간 진형·카드 전투](rules/Realtime-Formation-Card-Battle.md) |
-| OD-SQUADMIN | 분대 최소 인원 | 이 문서가 정하지 않는다 | [실시간 진형·카드 전투](rules/Realtime-Formation-Card-Battle.md) |
+| OD-ARMYCAP | 전체 분대 수·영웅 수·군단 상한 | 병졸 한 분대 최대 20명만 잠겼다. 나머지 상한은 미정이다 | [Intent.md](../Intent.md) 결정 11, [Design.md](../Design.md), [설계 요구](Design-Requirements.md), [실시간 부대 지휘 전투](rules/Realtime-Formation-Card-Battle.md) |
+| OD-SQUADMIN | 분대 최소 인원 | 이 문서가 정하지 않는다 | [실시간 부대 지휘 전투](rules/Realtime-Formation-Card-Battle.md) |
 | OD-FOV | 카메라 각도·시야각 | 새로 잠그지 않는다 | [Intent.md](../Intent.md), [Design.md](../Design.md) |
 | OD-CARDNUM | 틱 간격·카드 재충전·사기 임계 | 결정 3 미결 수치는 결정 11이 새 목표에서 만들지 말라고 주석했다. 카드 코어는 POC다 | [Intent.md](../Intent.md) 결정 3 대체 주석 |
 | OD-CAPTURE | 새 포획 확률·정원 | 결정 11이 만들지 않는다 | [Intent.md](../Intent.md) 결정 11 |
