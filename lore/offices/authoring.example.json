@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "domain": "offices",
+  "id": "__EXAMPLE__:offices",
+  "slug": "__EXAMPLE__-offices",
+  "status": "draft",
+  "tense": {
+    "en": "past",
+    "ko": "past"
+  },
+  "provenance": {
+    "original_anchor": "__EXAMPLE__:source-anchor",
+    "original_hash": null,
+    "history": []
+  },
+  "source": {
+    "kind": "original-fiction",
+    "refs": []
+  },
+  "locales": {
+    "en": {
+      "title": "Office record",
+      "summary": "Example authoring structure; not published canon.",
+      "tense": "past"
+    },
+    "ko": {
+      "title": "예시 offices 기록",
+      "summary": "게시 정본이 아닌 작성 구조 예시.",
+      "tense": "past"
+    }
+  },
+  "content": [
+    {
+      "kind": "heading",
+      "anchor": "example-heading",
+      "text": {
+        "en": "Office record",
+        "ko": "예시 offices 기록"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "example-body",
+      "text": {
+        "en": "Example authoring structure; not published canon.",
+        "ko": "게시 정본이 아닌 작성 구조 예시."
+      }
+    }
+  ],
+  "data": {
+    "tier": "__EXAMPLE__:value"
+  }
+}

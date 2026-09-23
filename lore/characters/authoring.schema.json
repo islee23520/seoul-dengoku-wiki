@@ -1,0 +1,432 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://seoul-dengoku.linalab.io/lore/characters/authoring.schema.json",
+  "allOf": [
+    {
+      "$ref": "../authoring.shared.schema.json#/$defs/envelope"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "domain": {
+          "const": "characters"
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^(?:__EXAMPLE__:characters|(?:K[0-9]{3}|DOC:[A-Za-z0-9-]+))$"
+        },
+        "data": {
+          "type": "object",
+          "required": [
+            "identity",
+            "sex",
+            "rank",
+            "origin",
+            "language",
+            "conscription",
+            "arms_access",
+            "occupation",
+            "affiliation",
+            "values",
+            "desires",
+            "relations",
+            "politics",
+            "biography"
+          ],
+          "properties": {
+            "identity": {
+              "type": "object",
+              "required": [
+                "name",
+                "generation"
+              ],
+              "properties": {
+                "name": {
+                  "$ref": "#/$defs/textCell"
+                },
+                "generation": {
+                  "enum": [
+                    "opening",
+                    "predecessor"
+                  ]
+                }
+              },
+              "additionalProperties": false
+            },
+            "sex": {
+              "type": "object",
+              "required": [
+                "status",
+                "value",
+                "origin"
+              ],
+              "properties": {
+                "status": {
+                  "const": "known"
+                },
+                "value": {
+                  "enum": [
+                    "female",
+                    "male"
+                  ]
+                },
+                "origin": {
+                  "enum": [
+                    "source-fact",
+                    "original-fiction",
+                    "computed"
+                  ]
+                }
+              },
+              "additionalProperties": false
+            },
+            "rank": {
+              "type": "object",
+              "required": [
+                "common_tier",
+                "polity_title"
+              ],
+              "properties": {
+                "common_tier": {
+                  "enum": [
+                    "T1",
+                    "T2",
+                    "T3",
+                    "T4",
+                    "T5"
+                  ]
+                },
+                "polity_title": {
+                  "$ref": "#/$defs/textCell"
+                }
+              },
+              "additionalProperties": false
+            },
+            "origin": {
+              "$ref": "#/$defs/textCell"
+            },
+            "language": {
+              "$ref": "#/$defs/textCell"
+            },
+            "conscription": {
+              "$ref": "#/$defs/textCell"
+            },
+            "arms_access": {
+              "$ref": "#/$defs/textCell"
+            },
+            "occupation": {
+              "$ref": "#/$defs/textCell"
+            },
+            "affiliation": {
+              "$ref": "#/$defs/textCell"
+            },
+            "values": {
+              "type": "object",
+              "required": [
+                "authority",
+                "openness",
+                "force",
+                "material",
+                "community",
+                "principle",
+                "transparency",
+                "qualification",
+                "decentralization",
+                "change"
+              ],
+              "properties": {
+                "authority": {
+                  "$ref": "#/$defs/scoreCell"
+                },
+                "openness": {
+                  "$ref": "#/$defs/scoreCell"
+                },
+                "force": {
+                  "$ref": "#/$defs/scoreCell"
+                },
+                "material": {
+                  "$ref": "#/$defs/scoreCell"
+                },
+                "community": {
+                  "$ref": "#/$defs/scoreCell"
+                },
+                "principle": {
+                  "$ref": "#/$defs/scoreCell"
+                },
+                "transparency": {
+                  "$ref": "#/$defs/scoreCell"
+                },
+                "qualification": {
+                  "$ref": "#/$defs/scoreCell"
+                },
+                "decentralization": {
+                  "$ref": "#/$defs/scoreCell"
+                },
+                "change": {
+                  "$ref": "#/$defs/scoreCell"
+                }
+              },
+              "additionalProperties": false
+            },
+            "desires": {
+              "type": "object",
+              "required": [
+                "longing",
+                "exclusivity",
+                "risk",
+                "display",
+                "continuity",
+                "orientation",
+                "union"
+              ],
+              "properties": {
+                "longing": {
+                  "$ref": "#/$defs/scoreCell"
+                },
+                "exclusivity": {
+                  "$ref": "#/$defs/scoreCell"
+                },
+                "risk": {
+                  "$ref": "#/$defs/scoreCell"
+                },
+                "display": {
+                  "$ref": "#/$defs/scoreCell"
+                },
+                "continuity": {
+                  "$ref": "#/$defs/scoreCell"
+                },
+                "orientation": {
+                  "$ref": "#/$defs/textCell"
+                },
+                "union": {
+                  "$ref": "#/$defs/textCell"
+                }
+              },
+              "additionalProperties": false
+            },
+            "relations": {
+              "$ref": "#/$defs/relationCell"
+            },
+            "politics": {
+              "type": "object",
+              "required": [
+                "personality",
+                "ambition",
+                "fear",
+                "governance",
+                "trigger",
+                "intervention"
+              ],
+              "properties": {
+                "personality": {
+                  "$ref": "#/$defs/textCell"
+                },
+                "ambition": {
+                  "$ref": "#/$defs/textCell"
+                },
+                "fear": {
+                  "$ref": "#/$defs/textCell"
+                },
+                "governance": {
+                  "$ref": "#/$defs/textCell"
+                },
+                "trigger": {
+                  "$ref": "#/$defs/textCell"
+                },
+                "intervention": {
+                  "$ref": "#/$defs/textCell"
+                }
+              },
+              "additionalProperties": false
+            },
+            "biography": {
+              "$ref": "#/$defs/textCell"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "textCell": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": [
+            "status",
+            "value",
+            "origin"
+          ],
+          "properties": {
+            "status": {
+              "const": "known"
+            },
+            "value": {
+              "type": "string",
+              "minLength": 1
+            },
+            "origin": {
+              "enum": [
+                "source-fact",
+                "original-fiction",
+                "computed"
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "status",
+            "reason"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "unknown",
+                "undecided",
+                "not-applicable"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "scoreCell": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": [
+            "status",
+            "value",
+            "origin"
+          ],
+          "properties": {
+            "status": {
+              "const": "known"
+            },
+            "value": {
+              "type": "integer",
+              "minimum": -100,
+              "maximum": 100
+            },
+            "origin": {
+              "enum": [
+                "source-fact",
+                "original-fiction",
+                "computed"
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "status",
+            "reason"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "unknown",
+                "undecided",
+                "not-applicable"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "relationCell": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": [
+            "status",
+            "value",
+            "origin"
+          ],
+          "properties": {
+            "status": {
+              "const": "known"
+            },
+            "value": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "type",
+                  "target_id"
+                ],
+                "properties": {
+                  "type": {
+                    "enum": [
+                      "kinship",
+                      "adoption",
+                      "mentorship",
+                      "command",
+                      "contract",
+                      "debt",
+                      "oath",
+                      "rivalry",
+                      "grievance",
+                      "protected-residence",
+                      "betrayal"
+                    ]
+                  },
+                  "target_id": {
+                    "type": "string",
+                    "pattern": "^(?:__EXAMPLE__:[A-Za-z0-9_-]+|K[0-9]{3}|DOC:[A-Za-z0-9-]+)$"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "origin": {
+              "enum": [
+                "source-fact",
+                "original-fiction",
+                "computed"
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "status",
+            "reason"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "unknown",
+                "undecided",
+                "not-applicable"
+              ]
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    }
+  }
+}

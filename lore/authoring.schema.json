@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://seoul-dengoku.linalab.io/lore/authoring.schema.json",
+  "allOf": [
+    {
+      "$ref": "authoring.shared.schema.json#/$defs/envelope"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "domain": {
+          "const": "root"
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^(?:__EXAMPLE__:root|WNA|B(?!017$|020$)[0-9]{3}|DOC:[A-Za-z0-9-]+)$"
+        },
+        "data": {
+          "type": "object",
+          "required": [
+            "registry"
+          ],
+          "properties": {
+            "registry": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "anchor",
+                  "relations"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "pattern": "^(?:__EXAMPLE__:[A-Za-z0-9_-]+|K[0-9]{3}|S(?:0[1-9]|1[0-6])|HC[0-9]{2}|HP[0-9]{2}|XT0[1-5]|G(?:0[1-9]|1[0-9]|2[0-7])(?:E[0-9]{2})?|[HFV][0-9]{2}|M[0-9]{3}|B[0-9]{3}|ARC:[A-Za-z0-9-]+)$"
+                  },
+                  "anchor": {
+                    "$ref": "authoring.shared.schema.json#/$defs/anchor"
+                  },
+                  "relations": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "type",
+                        "target_id"
+                      ],
+                      "properties": {
+                        "type": {
+                          "enum": [
+                            "operates_in",
+                            "pressures",
+                            "custodied_by",
+                            "rivalry",
+                            "partnership"
+                          ]
+                        },
+                        "target_id": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "additionalProperties": false
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    }
+  ]
+}

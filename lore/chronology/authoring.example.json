@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "domain": "chronology",
+  "id": "__EXAMPLE__:chronology",
+  "slug": "__EXAMPLE__-chronology",
+  "status": "draft",
+  "tense": {
+    "en": "past",
+    "ko": "past"
+  },
+  "provenance": {
+    "original_anchor": "__EXAMPLE__:source-anchor",
+    "original_hash": null,
+    "history": []
+  },
+  "source": {
+    "kind": "original-fiction",
+    "refs": []
+  },
+  "locales": {
+    "en": {
+      "title": "Event record",
+      "summary": "Example authoring structure; not published canon.",
+      "tense": "past"
+    },
+    "ko": {
+      "title": "예시 chronology 기록",
+      "summary": "게시 정본이 아닌 작성 구조 예시.",
+      "tense": "past"
+    }
+  },
+  "content": [
+    {
+      "kind": "heading",
+      "anchor": "example-heading",
+      "text": {
+        "en": "Event record",
+        "ko": "예시 chronology 기록"
+      }
+    },
+    {
+      "kind": "paragraph",
+      "anchor": "example-body",
+      "text": {
+        "en": "Example authoring structure; not published canon.",
+        "ko": "게시 정본이 아닌 작성 구조 예시."
+      }
+    }
+  ],
+  "data": {
+    "sequence": [
+      {
+        "id": "__EXAMPLE__:event",
+        "anchor": "example-heading",
+        "order": 0,
+        "date": {
+          "status": "undecided",
+          "reason": "No event date is asserted by this template."
+        }
+      }
+    ]
+  }
+}
