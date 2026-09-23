@@ -15,7 +15,7 @@
 - 포획·실종·통신 단절은 관직·관할 층을 지우지 않고 **신규 원격 전송만 잠근다**. 현장 개인 행동의 가부는 신체 상태에 따르며 이 도식 밖이다.
 - 복원 또는 **정식 지정 대리**는 위임 범위에서 현장 수락·집행 채널을 연다. 플레이어의 지도 POV는 현재 인물로 남는다. 잠긴 명령을 재평가하지 않고 바로 집행하지 않는다.
 
-수치·클래스 이름·임시 분대장의 세부 권한은 이 도식이 새로 정하지 않는다. 그건 [`Hero-Squads-and-Simultaneous-Turns.md`](../../rules/Hero-Squads-and-Simultaneous-Turns.md)의 설계 제안으로 남긴다.
+수치·클래스 이름·임시 분대장의 세부 권한은 이 도식이 새로 정하지 않는다. 그건 [`hero-squads-and-simultaneous-turns.json`](../../canon/locales/ko-KR/rules/hero-squads-and-simultaneous-turns.json)의 설계 제안으로 남긴다.
 
 ## 역할과 권한
 
