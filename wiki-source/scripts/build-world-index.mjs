@@ -7,7 +7,7 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), '../../..')
 const read = (p) => readFileSync(resolve(root, p), 'utf8')
 
 // ── 수장: 핵심 인물 첫 문장의 국가명·최고 직위에서 파싱 ──
-const core = read('LORE/characters/Core-Characters.md')
+const core = read('WEB/lore/characters/Core-Characters.md')
 const leaderByState = {}
 for (const match of core.matchAll(/^## ([^\n]+)\n\n([^\n]+)/gm)) {
   const person = match[1].trim()
@@ -17,7 +17,7 @@ for (const match of core.matchAll(/^## ([^\n]+)\n\n([^\n]+)/gm)) {
 }
 
 // ── 16국: 수장 맵의 국가명이 곧 국가 집합(16 tier1 수장 → 16국) ──
-const sixteen = read('LORE/factions/Sixteen-States.md')
+const sixteen = read('WEB/lore/factions/Sixteen-States.md')
 const tableInfo = {}
 for (const line of sixteen.split('\n')) {
   const m = line.match(/^\|\s*([^|]+?)\s*\|([^|]*)\|([^|]*)\|([^|]*)\|/)
@@ -49,7 +49,7 @@ const states = stateOrder.map(name => ({
 }))
 
 // ── 이벤트 피드: Scenario-Timeline에서 코드펜스 밖 이벤트 행 ──
-const tl = read('LORE/chronology/Scenario-Timeline.md')
+const tl = read('WEB/lore/chronology/Scenario-Timeline.md')
 let inFence = false
 const events = []
 for (const line of tl.split('\n')) {
