@@ -45,10 +45,18 @@ if (mode === "dump") {
 const spec = JSON.parse(await Bun.file(specPath).text());
 for (const b of j.content) for (const loc of ["ko", "en"]) { const leaf = b.text?.[loc]; if (Array.isArray(leaf)) for (const r of leaf) if ((r.link || r.href) && !urlOf.has(key(r))) linkOf.set(fallbackUrl(r), r.link ? { link: r.link } : { href: r.href }); }
 const byAnchor = new Map(j.content.map((b, i) => [b.anchor, i]));
+// md links the json never carried (md/json out of sync): derive the link object from the relative lore url
+const linkFromUrl = u => {
+  let m = u.match(/^\.\.\/([^/.]+)\/([^/#]+)\.md$/);
+  if (m) return { link: { domain: m[1], slug: m[2] } };
+  m = u.match(/^([^/#]+)\.md$/);
+  if (m) return { link: { domain: doc.split("/")[0], slug: m[1] } };
+  return null;
+};
 const toRuns = s => { const re = /(\*\*([^*]+)\*\*)|\[([^\]]+)\]\(([^)]+)\)/g; const runs = []; let last = 0, m;
   while ((m = re.exec(s))) { if (m.index > last) runs.push({ text: s.slice(last, m.index) });
     if (m[1]) runs.push({ text: m[2], strong: true });
-    else { const l = linkOf.get(m[4]); if (!l) throw new Error(`unknown link url ${m[4]} (use a url that exists in the original md)`); runs.push({ text: m[3], ...l }); }
+    else { const l = linkOf.get(m[4]) ?? linkFromUrl(m[4]); if (!l) throw new Error(`unknown link url ${m[4]} (use a url that exists in the original md)`); runs.push({ text: m[3], ...l }); }
     last = re.lastIndex; }
   if (!runs.length) return s; if (last < s.length) runs.push({ text: s.slice(last) }); return runs; };
 const blocks = [], content = []; let base = j.content[0].anchor, k = 0; const seen = new Set();
