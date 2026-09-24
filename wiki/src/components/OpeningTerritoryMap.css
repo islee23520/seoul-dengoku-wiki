@@ -1,0 +1,302 @@
+.territory-layer-toggle {
+  display: inline-flex;
+  border: 1px solid var(--wiki-line);
+  background: var(--wiki-paper);
+}
+
+.territory-layer-toggle button {
+  border: 0;
+  background: transparent;
+  color: var(--wiki-text);
+  padding: 0.5rem 0.9rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.territory-layer-toggle button + button {
+  border-inline-start: 1px solid var(--wiki-line);
+}
+
+.territory-layer-toggle button[aria-pressed='true'] {
+  background: var(--wiki-nav);
+  color: #fff;
+}
+
+.territory-layer-toggle button:focus-visible {
+  outline: 2px solid var(--wiki-accent);
+  outline-offset: -2px;
+}
+
+.territory-layer-toggle.territory-layer-overlay {
+  position: absolute;
+  inset-block-start: 0.75rem;
+  inset-inline-start: 0.75rem;
+  z-index: 8;
+  border-color: rgb(158 233 255 / 0.55);
+  background: rgb(4 17 23 / 0.9);
+  box-shadow: 0 0 0 2px rgb(7 21 28 / 0.72);
+}
+
+.territory-layer-toggle.territory-layer-overlay button {
+  color: #d9f8ff;
+  padding: 0.45rem 0.85rem;
+}
+
+.territory-layer-toggle.territory-layer-overlay button[aria-pressed='true'] {
+  background: #9ee9ff;
+  color: #04111a;
+}
+
+.territory-map-canvas .territory-state-marker {
+  position: absolute;
+  z-index: 6;
+  display: grid;
+  inline-size: 1.15rem;
+  block-size: 1.15rem;
+  place-items: center;
+  overflow: hidden;
+  border: 2px solid #ffd66b;
+  border-radius: 50%;
+  padding: 0;
+  translate: -50% -50%;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.territory-map-canvas .territory-state-marker::after {
+  content: none;
+}
+
+.territory-map-canvas .territory-state-marker .state-flag {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+.territory-state-marker .state-flag[style*='display: none'] + span,
+.territory-state-marker:not(:has(.state-flag)) {
+  background: inherit;
+}
+
+.territory-state-index {
+  display: grid;
+  gap: 0.4rem;
+  border: 1px solid var(--wiki-line);
+  background: var(--wiki-paper);
+  color: var(--wiki-text);
+  padding: 0.6rem 0.75rem;
+}
+
+.territory-state-index ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 0.2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.territory-state-index li button {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  inline-size: 100%;
+  min-inline-size: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  padding: 0.2rem 0.3rem;
+  font: inherit;
+  font-size: 0.78rem;
+  text-align: start;
+  cursor: pointer;
+}
+
+.territory-state-index li button[aria-pressed='true'],
+.territory-state-index li button:hover,
+.territory-state-index li button:focus-visible {
+  background: color-mix(in srgb, var(--wiki-nav) 12%, transparent);
+}
+
+.territory-state-capital {
+  color: var(--wiki-muted);
+  font-size: 0.72rem;
+}
+
+.territory-state-swatch {
+  flex: none;
+  inline-size: 0.65rem;
+  block-size: 0.65rem;
+  border: 1px solid rgb(255 255 255 / 0.7);
+}
+
+.territory-vassal-markers {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.territory-vassal-marker {
+  position: absolute;
+  z-index: 6;
+  inline-size: 0.85rem;
+  block-size: 0.85rem;
+  border: 2px solid rgb(255 255 255 / 0.8);
+  border-radius: 50%;
+  padding: 0;
+  translate: -50% -50%;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.territory-vassal-marker:hover,
+.territory-vassal-marker:focus-visible {
+  border-color: #ffd66b;
+  outline: none;
+  box-shadow: 0 0 0 3px rgb(255 214 107 / 0.45);
+}
+
+.territory-vassal-inset {
+  display: grid;
+  gap: 0.4rem;
+  border: 1px solid var(--wiki-line);
+  background: var(--wiki-paper);
+  color: var(--wiki-text);
+  padding: 0.6rem 0.75rem;
+}
+
+.territory-vassal-inset-title {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.territory-vassal-inset ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 0.2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.territory-vassal-inset li button {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  inline-size: 100%;
+  min-inline-size: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  padding: 0.2rem 0.3rem;
+  font: inherit;
+  font-size: 0.78rem;
+  text-align: start;
+  cursor: pointer;
+}
+
+.territory-vassal-inset li button:hover,
+.territory-vassal-inset li button:focus-visible {
+  background: color-mix(in srgb, var(--wiki-nav) 12%, transparent);
+}
+
+.territory-vassal-inset li button:focus-visible {
+  outline: 1px solid var(--wiki-accent);
+}
+
+.territory-vassal-dot {
+  flex: none;
+  inline-size: 0.55rem;
+  block-size: 0.55rem;
+  border: 1px solid rgb(255 255 255 / 0.65);
+}
+
+.territory-vassal-city {
+  margin-inline-start: auto;
+  min-inline-size: 0;
+  overflow: hidden;
+  color: var(--wiki-muted);
+  font-size: 0.7rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.territory-marker-connectors .territory-vassal-connector line {
+  stroke: #9ee9ff;
+  stroke-width: 0.35;
+}
+
+.territory-detail .person-data-table th,
+.territory-detail .person-data-table td {
+  padding: 0.3rem 0.5rem;
+  border-block-end: 1px solid var(--wiki-line);
+}
+
+.territory-detail .person-data-table td {
+  background: #ffffff;
+  color: var(--wiki-text);
+}
+
+@media (max-width: 480px) {
+  .territory-vassal-inset {
+    inline-size: 100%;
+  }
+
+  .territory-vassal-city {
+    display: none;
+  }
+}
+
+.territory-tier-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-block: 0.75rem 0.25rem;
+}
+
+.territory-tier-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border: 1px solid var(--wiki-line);
+  background: var(--wiki-paper);
+  color: var(--wiki-text);
+  padding: 0.25rem 0.55rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.territory-tier-chip[data-tier='강국'] {
+  border-color: #b54b4b;
+}
+
+.territory-tier-chip[data-tier='약국'] {
+  border-color: #956f28;
+}
+
+.territory-tier-chip[data-tier='소국'] {
+  border-color: #64708a;
+}
+
+.territory-tier-dot {
+  inline-size: 0.6rem;
+  block-size: 0.6rem;
+  border-radius: 50%;
+}
+
+.territory-tier-note {
+  color: var(--wiki-muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.territory-legend .territory-legend-swatch {
+  flex: none;
+  inline-size: 0.7rem;
+  block-size: 0.7rem;
+  border: 1px solid rgb(255 255 255 / 0.7);
+}
