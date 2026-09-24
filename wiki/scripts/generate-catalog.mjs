@@ -2,11 +2,11 @@ import { mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises'
 import { basename, dirname, extname, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import proj4 from 'proj4'
-import { STATES } from '../../../TOOL/tools/wiki/world-atlas-schema.mjs'
 import { latestUpdates } from './update-history.mjs'
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
-const repoRoot = resolve(projectRoot, '../..')
+const repoRoot = resolve(projectRoot, '..')
+const infraRoot = resolve(projectRoot, '../..')
 const contentRoot = resolve(projectRoot, 'src/content')
 const generatedRoot = resolve(projectRoot, 'src/generated')
 const publicRoot = resolve(projectRoot, 'public')
@@ -61,7 +61,7 @@ await rm(wikiAssetTarget, { recursive: true, force: true })
 
 const documents = []
 for (const domain of domains) {
-  const sourceDir = resolve(repoRoot, 'WEB/wiki-source', domain)
+  const sourceDir = resolve(repoRoot, 'wiki-source', domain)
   const names = (await readdir(sourceDir)).filter((name) => extname(name) === '.md').sort()
   for (const name of names) {
     const slug = basename(name, '.md')
@@ -114,47 +114,78 @@ const updateHistory = JSON.parse(await readFile(resolve(projectRoot, 'data/updat
 const wikiUpdates = latestUpdates(updateHistory.updates)
 await writeFile(resolve(generatedRoot, 'wikiUpdates.ts'), `export type WikiUpdate = { readonly date: string; readonly sequence: number; readonly title: string; readonly category: string; readonly status: string; readonly source: string; readonly route: string }\n\nexport const wikiUpdateHistory = ${JSON.stringify(updateHistory.updates, null, 2)} as const satisfies readonly WikiUpdate[]\n\nexport const wikiUpdates = ${JSON.stringify(wikiUpdates, null, 2)} as const satisfies readonly WikiUpdate[]\n`)
 
-const stateSource = await readFile(resolve(repoRoot, 'WEB/lore/factions/Sixteen-States.md'), 'utf8')
-const officesSource = await readFile(resolve(repoRoot, 'WEB/lore/offices/Offices-and-Ranks.md'), 'utf8')
+const stateSource = await readFile(resolve(repoRoot, 'lore/factions/Sixteen-States.md'), 'utf8')
+const officesSource = await readFile(resolve(infraRoot, 'WEB/lore/offices/Offices-and-Ranks.md'), 'utf8')
 const officeTable = officesSource.match(/\| 국가 \| 티어1 \|[\s\S]*?(?=\n## )/)?.[0] ?? ''
-const tiersByState = new Map([...officeTable.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$/gm)]
-  .map((match) => [match[1].trim(), match.slice(2).map((rank) => rank.trim())]))
-const stateTable = stateSource.match(/\| 국명 \|[\s\S]*?(?=\n## )/)?.[0] ?? ''
-const stateRows = [...stateTable.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$/gm)]
+const stateTable = stateSource.match(/\| ID \| 국명 \|[\s\S]*?(?=\n## )/)?.[0] ?? ''
+const stateRows = [...stateTable.matchAll(/^\| (S[0-1][0-9]) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$/gm)]
   .map((match) => match.slice(1).map((cell) => cell.trim()))
-  .filter(([name]) => name !== '국명' && !name.startsWith('---'))
+
+const stateSlug = (id) => id.toLowerCase()
+const parseName = (raw) => {
+  const match = raw.match(/^([^(]+)\(기원 표기 (.+?)(?:, 유지)?\)$/)
+  return match ? { name: match[1].trim(), origin: match[2].trim() } : { name: raw, origin: raw }
+}
 const rulerByState = new Map([
-  ['대한민국정부', '윤서린'], ['여의도출자연합회', '최지우'], ['서초전산그룹', '이홍원'], ['양재기공주식회사', '정호준'],
-  ['설교명부정', '오경재'], ['본당인준정', '남윤경'], ['승가구휼정', '백온'], ['교헌필사정', '오해린'],
-  ['정동노동총연맹', '정유라'], ['급수계약정', '한재목'], ['규격동맹', '강민서'], ['선로후계정', '박태겸'],
-  ['호위보호정', '배우진'], ['관문군정', '고서준'], ['중립호송시', '장세화'], ['의약중립맹', '류은비'],
+  ['대한민국정부', '윤서린'], ['수문국', '한재목'], ['규격맹', '강민서'], ['환적국', '박태겸'],
+  ['동방사', '배우진'], ['태욱그룹', '정호준'], ['여의도출자연합회', '최지우'], ['흰십자단', '류은비'],
+  ['아관사', '고서준'], ['신내운수', '장세화'], ['명부교회', '오경재'], ['명동대교구', '남윤경'],
+  ['안국총림', '백온'], ['성하그룹', '이홍원'], ['중앙기술보존원', '오해린'], ['정동노총', '정유라'],
 ])
-const stateSlug = (index) => `s${String(index + 1).padStart(2, '0')}`
-const stateCatalog = stateRows.map(([name, origin, government, power, cause], index) => ({
-  slug: stateSlug(index), name, origin, government, power, cause, ruler: rulerByState.get(name) ?? '',
-}))
+const stateCatalog = stateRows.map(([id, rawName, capitalName, tier, government, namedYear, vassalList, religion, relation]) => {
+  const { name, origin } = parseName(rawName)
+  const power = tier.match(/^(강국|약국|소국)/)?.[0] ?? tier
+  return {
+    slug: stateSlug(id),
+    id,
+    name,
+    origin,
+    government,
+    power,
+    cause: relation,
+    ruler: rulerByState.get(name) ?? '',
+    capitalName,
+  }
+})
+if (stateCatalog.length !== 16) throw new Error(`E_STATE_CANON_COVERAGE:${stateCatalog.length}`)
+const stateIdByName = new Map(stateCatalog.flatMap((state) => [[state.name, state.id], [state.origin, state.id]]))
+const tiersByState = new Map([...officeTable.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$/gm)]
+  .filter((match) => match[1].trim() !== '국가')
+  .map((match) => [stateIdByName.get(match[1].trim()) ?? match[1].trim(), match.slice(2).map((rank) => rank.trim())]))
+if (tiersByState.size !== 16) throw new Error(`E_OFFICE_TIER_COVERAGE:${tiersByState.size}`)
 await writeFile(resolve(generatedRoot, 'stateCatalog.ts'), `export const stateCatalog = ${JSON.stringify(stateCatalog, null, 2)} as const\n`)
 
-const peopleSource = JSON.parse(await readFile(resolve(repoRoot, 'WEB/lore/name-pools/values-cast.json'), 'utf8')).people
-const genderSource = JSON.parse(await readFile(resolve(repoRoot, 'WEB/lore/name-pools/gender-cast.json'), 'utf8')).people
+const peopleSource = JSON.parse(await readFile(resolve(repoRoot, 'lore/name-pools/values-cast.json'), 'utf8')).people
+const genderSource = JSON.parse(await readFile(resolve(repoRoot, 'lore/name-pools/gender-cast.json'), 'utf8')).people
 const genderByName = new Map(genderSource.map((person) => [person.name, person]))
-const stateNameById = new Map(peopleSource.filter((person) => /^S(?:0[1-9]|1[0-6])$/u.test(person.state)).map((person) => [person.state, person.state_name]))
-const regionAtlasSource = await readFile(resolve(repoRoot, 'TOOL/tools/regions/data/atlas-data.js'), 'utf8')
+const stateNameById = new Map(stateCatalog.map((state) => [state.id, state.name]))
+const historicalStateName = new Map(stateCatalog.filter((state) => state.origin !== state.name).map((state) => [state.origin, state.name]))
+const projectStateNames = (value) => {
+  if (typeof value === 'string') {
+    let projected = value
+    for (const [oldName, currentName] of [...historicalStateName].sort((left, right) => right[0].length - left[0].length)) projected = projected.split(oldName).join(currentName)
+    return projected
+  }
+  if (Array.isArray(value)) return value.map(projectStateNames)
+  if (value && typeof value === 'object') return Object.fromEntries(Object.entries(value).map(([key, entry]) => [key, projectStateNames(entry)]))
+  return value
+}
+const regionAtlasSource = await readFile(resolve(infraRoot, 'TOOL/tools/regions/data/atlas-data.js'), 'utf8')
 const regionAtlas = JSON.parse(regionAtlasSource.replace(/^window\.SEOUL_REGION_ATLAS=/, '').replace(/;\s*$/, ''))
-const seoulGraph = JSON.parse(await readFile(resolve(repoRoot, 'GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json'), 'utf8'))
-const officialLineData = JSON.parse(await readFile(resolve(repoRoot, 'WEB/wiki/scripts/official-seoul-lines.json'), 'utf8'))
-const stationControlLedger = JSON.parse(await readFile(resolve(repoRoot, 'WEB/lore/places/station-control-overrides.json'), 'utf8'))
+const seoulGraph = JSON.parse(await readFile(resolve(infraRoot, 'GAME/Assets/Janseon/Data/Content/SeoulWorldGraph.json'), 'utf8'))
+const officialLineData = JSON.parse(await readFile(resolve(projectRoot, 'scripts/official-seoul-lines.json'), 'utf8'))
+const stationControlLedger = JSON.parse(await readFile(resolve(repoRoot, 'lore/places/station-control-overrides.json'), 'utf8'))
 const stationControlOverrides = new Map(stationControlLedger.overrides.map((entry) => [entry.stationId, entry]))
 proj4.defs('EPSG:5179', '+proj=tmerc +lat_0=38 +lon_0=127.5 +k=0.9996 +x_0=1000000 +y_0=2000000 +ellps=GRS80 +units=m +no_defs')
 
 const regionContentById = new Map()
-for (const entry of await readdir(resolve(repoRoot, 'WEB/lore/regions/content'), { withFileTypes: true })) {
+for (const entry of await readdir(resolve(repoRoot, 'lore/regions/content'), { withFileTypes: true })) {
   if (!entry.isFile() || !/^\d{5}\.json$/u.test(entry.name)) continue
-  const district = JSON.parse(await readFile(resolve(repoRoot, 'WEB/lore/regions/content', entry.name), 'utf8'))
+  const district = JSON.parse(await readFile(resolve(repoRoot, 'lore/regions/content', entry.name), 'utf8'))
   for (const region of district.regions) regionContentById.set(region.region_id, region.content)
 }
 if (regionContentById.size !== 427) throw new Error(`E_REGION_CONTENT_COVERAGE:${regionContentById.size}`)
-const creativeNameLedger = JSON.parse(await readFile(resolve(repoRoot, 'RESEARCH/verification/creative-name-normalization.json'), 'utf8'))
+const creativeNameLedger = JSON.parse(await readFile(resolve(infraRoot, 'RESEARCH/verification/creative-name-normalization.json'), 'utf8'))
 const normalizePublicNames = (text) => {
   let normalized = text
   for (const entry of [...creativeNameLedger.replacements].sort((left, right) => right.old.length - left.old.length)) {
@@ -194,11 +225,7 @@ const pointInPolygon = ([x, y], points) => {
   }
   return inside
 }
-const capitalSource = await readFile(resolve(repoRoot, 'WEB/lore/factions/Sixteen-States.md'), 'utf8')
-const stateIdByName = new Map(STATES.map((state) => [state.name, state.id]))
-const capitalNameByState = new Map([...capitalSource.matchAll(/^\| ([^|]+) \| ([^|]*?중심\s+([^|()]+?)역(?:\([^|]*\))?[^|]*) \|/gm)]
-  .map((match) => [stateIdByName.get(match[1].trim()), match[3].trim()])
-  .filter(([stateId]) => stateId !== undefined))
+const capitalNameByState = new Map(stateCatalog.map((state) => [state.id, state.capitalName]))
 if (capitalNameByState.size !== 16) throw new Error(`E_CAPITAL_CANON_COVERAGE:${capitalNameByState.size}`)
 const stationById = new Map(seoulGraph.stations.map((station) => [station.id, station]))
 const stationIdByName = new Map(seoulGraph.stations.map((station) => [station.nameKo.replace(/역$/u, ''), station.id]))
@@ -307,6 +334,62 @@ const territoryStates = [...stateNameById.entries()].sort(([left], [right]) => l
     capitalY: capital.y,
   }
 })
+const vassalsTableMatch = stateSource.match(/\| 속국 \| 본국 \|[\s\S]*?(?=\n\n|$)/)?.[0] ?? ''
+const vassalsRows = [...vassalsTableMatch.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$/gm)]
+  .map((match) => match.slice(1).map((cell) => cell.trim()))
+  .filter(([name]) => name !== '속국' && !name.startsWith('---'))
+
+const anchorRules = {
+  '경기도(고양)': '3호선 대화 방면',
+  '제일수문(양평)': '경의중앙 지평 방면',
+  '제이수문(춘천)': '경춘선',
+  '제1분공방(천안·아산, 이씨)': '1호선 남단',
+  '제2분공방(시흥)': '',
+  '제1종착(인천)': '1호선 인천',
+  '제2종착(파주)': '경의중앙 문산',
+  '제1경비지구(하남)': '5호선 하남',
+  '제2경비지구(남양주)': '',
+  '제3경비지구(의정부·연천)': '1호선 북단·7호선 장암',
+  '태욱중공업 성남사업장': '신분당/8호선',
+  '태욱중공업 수원사업장': '수인분당',
+  '영종지점(영종)': '공항철도'
+}
+
+const cityRules = {
+  '경기도(고양)': '고양',
+  '제일수문(양평)': '양평',
+  '제이수문(춘천)': '춘천',
+  '제1분공방(천안·아산, 이씨)': '천안·아산',
+  '제2분공방(시흥)': '시흥',
+  '제1종착(인천)': '인천',
+  '제2종착(파주)': '파주',
+  '제1경비지구(하남)': '하남',
+  '제2경비지구(남양주)': '남양주',
+  '제3경비지구(의정부·연천)': '의정부·연천',
+  '태욱중공업 성남사업장': '성남',
+  '태욱중공업 수원사업장': '수원',
+  '영종지점(영종)': '영종'
+}
+
+const mapVassalName = (rawName) => {
+  if (rawName === '제1분공방(천안·아산, 이씨)') return '제1분공방'
+  const match = rawName.match(/^([^(]+)\(/)
+  return match ? match[1] : rawName
+}
+
+const vassals = vassalsRows.map(([rawName, suzerainName, founded, duty]) => {
+  const suzerainId = stateIdByName.get(suzerainName)
+  if (!suzerainId) throw new Error(`E_VASSAL_SUZERAIN_NOT_FOUND:${suzerainName}`)
+  return {
+    name: mapVassalName(rawName),
+    city: cityRules[rawName] || rawName,
+    suzerain: suzerainId,
+    founded,
+    duty,
+    anchor: anchorRules[rawName] || ''
+  }
+})
+
 const openingTerritories = {
   schema: 'seoul-opening-territories.v1',
   epoch: regionAtlas.fictional_epoch,
@@ -314,6 +397,7 @@ const openingTerritories = {
   height: mapHeight,
   attribution: regionAtlas.attribution,
   states: territoryStates,
+  vassals,
   lines: officialLineData.lines,
   stations: mapStations,
   edges: mapEdges,
@@ -336,7 +420,7 @@ const openingTerritories = {
 }
 await writeFile(resolve(publicRoot, 'opening-territories.json'), `${JSON.stringify(openingTerritories)}\n`)
 
-const centuryAnnalsSource = await readFile(resolve(repoRoot, 'WEB/lore/chronology/Century-Annals.md'), 'utf8')
+const centuryAnnalsSource = await readFile(resolve(infraRoot, 'WEB/lore/chronology/Century-Annals.md'), 'utf8')
 const timelineField = (body, field) => body.match(new RegExp(`^- ${field}:\\s*(.+)$`, 'm'))?.[1]?.trim()
   ?? body.match(new RegExp(`^\\| ${field} \\| (.+) \\|$`, 'm'))?.[1]?.trim()
   ?? ''
@@ -390,14 +474,14 @@ const addPersonCards = (text, file, pattern) => {
 }
 for (let index = 1; index <= 16; index += 1) {
   const file = `Cast-State-${String(index).padStart(2, '0')}.md`
-  const text = await readFile(resolve(repoRoot, 'WEB/lore/characters', file), 'utf8')
+  const text = await readFile(resolve(infraRoot, 'WEB/lore/characters', file), 'utf8')
   addPersonCards(text, file, /^### 인물 (.+)$/gm)
 }
 for (const [file, pattern] of [['Core-Characters.md', /^## (?!인물 목록$)(.+)$/gm], ['Cast-Unaffiliated.md', /^### 인물 (.+)$/gm]]) {
-  const text = await readFile(resolve(repoRoot, 'WEB/lore/characters', file), 'utf8')
+  const text = await readFile(resolve(infraRoot, 'WEB/lore/characters', file), 'utf8')
   addPersonCards(text, file, pattern)
 }
-const relationText = await readFile(resolve(repoRoot, 'WEB/lore/characters/Cast-Relations.md'), 'utf8')
+const relationText = await readFile(resolve(infraRoot, 'WEB/lore/characters/Cast-Relations.md'), 'utf8')
 const relations = [...relationText.matchAll(/^\| ([^|]+) \| ([^|]+) \| ([^|]+) \| ([^|]+) \|$/gm)]
   .map((match) => ({ from: match[1].trim(), type: match[2].trim(), to: match[3].trim(), basis: match[4].trim() }))
   .filter((relation) => relation.from !== '인물' && !relation.from.startsWith('---'))
@@ -424,7 +508,7 @@ const peopleCatalog = peopleSource.map((person, index) => {
   const position = fields['직함'] ?? fields['직위'] ?? office.match(/직함은 ([^.]+)\./u)?.[1]?.trim() ?? person.title
   const rank = fields['품계'] ?? office.match(/품계 ([^.]+)\./u)?.[1]?.trim() ?? '미등록'
   const occupation = fields['생업'] ?? office.match(/생업 별명은 ([^.]+)\./u)?.[1]?.trim() ?? '미등록'
-  const stateTiers = tiersByState.get(person.state_name)
+  const stateTiers = tiersByState.get(person.state)
   const tierIndex = stateTiers?.indexOf(rank) ?? -1
   const commonTier = person.state === 'S00' ? 'T5' : tierIndex >= 0 ? `T${tierIndex + 1}` : (() => { throw new Error(`E_PERSON_TIER_MISSING:${person.name}:${person.state_name}:${rank}`) })()
   return {
@@ -438,7 +522,7 @@ const peopleCatalog = peopleSource.map((person, index) => {
     gender: genderByName.get(person.name)?.gender ?? (() => { throw new Error(`E_PERSON_GENDER_MISSING:${person.name}`) })(),
     stage: person.stage,
     state: person.state,
-    stateName: person.state_name,
+    stateName: stateNameById.get(person.state) ?? person.state_name,
     sourceRoute: `/world/${source}#${anchor}`,
     detailRoute: `/people/person-${String(index + 1).padStart(4, '0')}`,
   }
