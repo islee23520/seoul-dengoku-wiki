@@ -1,5 +1,5 @@
 import { lazy, Suspense, useEffect, useMemo, useState } from 'react'
-import { Link, Navigate, useParams } from 'react-router-dom'
+import { Link, Navigate, useLocation, useParams } from 'react-router-dom'
 import { wikiCatalog, type WikiDomain } from '../generated/wikiCatalog'
 import { WorldBlocks, headingId, plainText, type WorldBlock } from '../components/WorldBlocks'
 
@@ -15,6 +15,7 @@ const isWikiDomain = (value: string | undefined): value is WikiDomain =>
 
 export default function ArticlePage() {
   const { domain, slug } = useParams()
+  const { pathname, hash } = useLocation()
   if (!isWikiDomain(domain)) return <Navigate to="/" replace />
 
   const normalizedSlug = slug?.replace(/\.html$/, '') || 'index'
@@ -44,6 +45,18 @@ export default function ArticlePage() {
     })
     return () => { active = false }
   }, [domain, normalizedSlug])
+
+  useEffect(() => {
+    if (!blocks || !hash) return
+    let targetId: string
+    try {
+      targetId = decodeURIComponent(hash.slice(1))
+    } catch (error: unknown) {
+      if (error instanceof URIError) return
+      throw error
+    }
+    document.getElementById(targetId)?.scrollIntoView()
+  }, [blocks, pathname, hash])
 
   useEffect(() => {
     if (!wikiDocument) return
@@ -82,7 +95,7 @@ export default function ArticlePage() {
       </header>
 
       {domain === 'world' && normalizedSlug === 'World-and-Subway-Layers' && <Suspense fallback={<div className="wiki-loading">3D 2126 시점 영토 지도를 준비하고 있습니다.</div>}><OpeningTerritoryMap /></Suspense>}
-      {domain === 'world' && normalizedSlug === 'Scenario-Timeline' && <Suspense fallback={<div className="wiki-loading">백년실록 전체 줄거리를 준비하고 있습니다.</div>}><TimelineOverview /></Suspense>}
+      {domain === 'world' && normalizedSlug === 'Scenario-Timeline' && <Suspense fallback={<div className="wiki-loading">연표 전체 줄거리를 준비하고 있습니다.</div>}><TimelineOverview /></Suspense>}
 
       <div className="wiki-article-grid">
         <div className="wiki-prose">

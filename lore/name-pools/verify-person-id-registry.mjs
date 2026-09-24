@@ -109,7 +109,8 @@ test("(f) 안정 비-K ID 보유 후보의 aliases에 기존 ID가 정확히 들
 test("(g) approvalRef가 owner 승인각을 그대로 새긴다", () => {
   assert.deepEqual(committed.approvalRef, APPROVED);
   assert.equal(committed.approvalRef.approvedBy, "owner");
-  assert.equal(committed.approvalRef.approvedAt, "2026-09-22");
+  assert.equal(committed.approvalRef.approvedAt, "2026-09-25");
+  assert.equal(committed.approvalRef.ownerRef, "Q1 decisions.json");
   assert.equal(committed.approvalRef.inputSha256, sha256Hex(ctx.valuesBytes));
   assert.equal(committed.approvalRef.candidatesSha256, sha256Hex(ctx.candidatesBytes));
   assert.equal(committed.schema, SCHEMA);
